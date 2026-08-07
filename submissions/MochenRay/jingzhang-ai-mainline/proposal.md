@@ -23,7 +23,7 @@ iteration: "v1.0"
 
 边界依据 [source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]，对应提交图层 [data:geometry/site_boundary.geojson#SITE-001] 与 key_areas 的三个 feature；总体设计范围复算面积约 1,141.3 万平方米（[metric:site_area_sqm]，confidence=low）。**provisional 声明：本方案全部空间边界为临时边界，非官方红线，正式数据发布后需复算。** 资料缺口：官方边界 polygon、控制性详细规划指标、现状建筑测绘、土地权属、市政管线与文保测绘均未公开获得，凡涉及容积率、建筑高度、拆改留结论、道路线位与投资测算的内容一律列为待确认，进入 `assumptions.json` 与第 12 章风险清单。
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![总体空间框架图：三层范围嵌套与主线走廊（面积均为 provisional 复算值）](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
 
@@ -39,7 +39,7 @@ iteration: "v1.0"
 
 三层框架同时是概念体系的空间载体：主线（京张遗址公园活力带）贯穿总体设计范围；三个编组站（加速站、原点站、枢纽站）即三处重点区域；两条支线（要素支线、场景支线）在统筹研究范围层面连接中关村科技服务翼与小月河场景赋能翼。命名体系的完整定义见第 3 章，本章只锁定范围、面积与深度的证据链。资料缺口：三层范围的官方边界与面积确认均待正式数据发布。
 
-![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
+![用地结构与构成图：10 类用地分区与复算面积构成（总体设计范围 provisional 复算）](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -233,77 +233,94 @@ Logo 方向（文字说明，图形全部自绘清权）：把詹天佑"人"字�
 
 ## 用地、建筑规模与拆改留方案
 
-用地方案应依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。建筑方案应区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论。
+用地分类沿用 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的用地用海分类逻辑，land_use 图层 13 个 polygon（[data:geometry/land_use.geojson#LU-001] 至 LU-013）对临时边界闭合切分，分类与面积复算值已在第 4 章逐项列表：1401 公园绿地约 340.1 万平方米（[metric:land_use_1401_area_sqm]）、0802 科研用地约 298.6 万平方米（[metric:land_use_0802_area_sqm]）、0701 城镇住宅用地约 106.1 万平方米（[metric:land_use_0701_area_sqm]）、0702 城镇社区服务设施用地约 101.2 万平方米（[metric:land_use_0702_area_sqm]）、0804 教育用地约 87.8 万平方米（[metric:land_use_0804_area_sqm]）、0803 文化用地约 74.1 万平方米（[metric:land_use_0803_area_sqm]）、05 商业服务业用地约 57.2 万平方米（[metric:land_use_05_area_sqm]）、1207 城镇道路用地约 42.4 万平方米（[metric:land_use_1207_area_sqm]）、16 留白用地约 24.7 万平方米（[metric:land_use_16_area_sqm]）、1403 广场用地约 9.0 万平方米（[metric:land_use_1403_area_sqm]）[depth:land_use_layout]。本章不重复逐项判断，只补充三件事：用地深化规则、建筑规模口径与拆改留方法框架。
 
-用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。
+用地深化规则（概念建议）：主线公园绿地以贯通与复合利用为先，科研与教育用地的比例结构维持第 4 章"研发为主、生活为底、公园为轴"的判断，留白用地 [data:geometry/land_use.geojson#LU-013] 为产业演进保留弹性；任何地类调整都须以官方控规与权属资料为前置，本方案不给出地块级用地性质变更结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
-建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应在指标体系中列为 unknown 或 pending_control，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
+建筑规模口径：提交图层仅含 7 个概念建筑基底，合计约 18.0 万平方米（[metric:building_footprint_area_sqm]，[data:geometry/buildings.geojson#BLDG-001] 等），只表达功能布局意图，不构成建筑方案；容积率 [metric:floor_area_ratio]、建筑高度 [metric:building_height_m]、建筑密度 [metric:building_density] 与现状建筑面积 [metric:existing_building_area_sqm] 在指标体系中均为 unknown，列为待确认事项，不得以推测值冒充审定指标 [depth:development_intensity_controls][depth:height_massing_character]。
+
+拆改留只写分类策略框架，不写具体地块结论 [depth:retain_renovate_demolish]：**保留类**——结构安全、功能可延续的现状建筑与全部文保对象，以修缮维护与功能接续为原则；**改造类**——结构可再利用但功能需要置换的建筑，以功能更新、界面修缮与首层激活为方向；**新建类**——留白用地及经权属与控规确认的更新地块上的插建，功能以第 4、5 章概念基底所示为限；**待确认类**——权属、现状测绘或控规条件缺失的全部地块，一律不作保留、改造或拆除结论。分类落地的前置条件是现状建筑测绘、权属资料与控规条件，全部进入第 12 章风险清单与 `assumptions.json`。
 
 ## 交通、轨道、市政与公共服务设施
 
-交通方案应回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车、非机动车停放和绿色交通系统的要求。重点应覆盖北五环、京张遗址公园跨环路节点、五道口、清华东路西口、大钟寺站及重点企业周边交通联系。道路和慢行图层应保持在提交边界内，并与公共空间、绿地、产业节点和重点片区相互校核；若提交边界为 provisional，交通结论也只能作为临时设计讨论。
+交通组织中目前可直接落图复算的只有慢行系统：一主两支绿道合计约 16.0 公里（[metric:slow_corridor_length_m]，与 [metric:road_length_m] 相等，因当前提交的中心线全部为绿道）——慢行主线 [data:geometry/roads.geojson#RD-001]（大钟寺站—清华园站—北延段）、西翼支线 [data:geometry/roads.geojson#RD-002]、东翼支线 [data:geometry/roads.geojson#RD-003]。设计判断：慢行主线是本方案唯一能复算的交通证据，因此本章立场是"慢行可落图，其余只写方向"，不把策略写成审定条件。
 
-交通和市政专业深度分别由 [depth:traffic_rail_slow_parking] 与 [depth:municipal_new_infrastructure] 约束；图层证据引用 [data:geometry/roads.geojson#ROAD-001]、[data:geometry/public_space.geojson#PUBLIC-001] 和 [data:geometry/constraints.geojson#CONSTRAINTS]。当道路红线、管线、消防和市政条件缺失时，应通过 assumptions 说明待补，而不是把策略写成审定条件。
+轨道接驳与道路（方向性策略，概念建议）：枢纽站侧重点研究大钟寺站一体化与路口四象限步行连通方向，原点站侧重点研究清华园站方向的站前衔接，加速站侧关注慢行主线北延段与对外通道衔接；北五环跨环路节点、五道口、清华东路西口与京张遗址公园跨环路节点的慢行断点缝合列入第 10 章项目清单。停车与非机动车停放按"编组站外围截流、车站级节点分散供给"组织概念建议。轨道站点资料、道路红线与断面、交叉口市政管线均未公开获得，任何线位、断面与工程可行性结论列为待确认 [depth:traffic_rail_slow_parking]。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
-市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
+市政与公共服务设施（体系建议，概念建议）[depth:municipal_new_infrastructure]：AI 产业服务设施依托加速站中试验证中心 [data:geometry/buildings.geojson#BLDG-007] 与五道口AI教育实训中心 [data:geometry/buildings.geojson#BLDG-005] 布局；端侧算力、分布式能源等新型基础设施只作概念布点，负荷与管位测算待确认；给排水、消防、防洪排涝与海绵城市等传统市政条件未公开获得，列为正式深化前置条件，本方案不作管线迁改或消防通道结论。公共服务设施按"编组站—车站"两级组织概念建议：编组站级依托三处站前广场 [data:geometry/public_space.geojson#PS-001] 等，车站级依托 7 处 AI 场景节点；设施底数未公开获得，不作容量承诺。现状京张铁路走廊控制带（示意）[data:geometry/constraints.geojson#CONS-002] 内的任何交通与市政概念均须待专项资料确认。
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
+蓝绿骨架：绿地复算约 342.1 万平方米、绿地率约 30.0%（[metric:green_space_area_sqm]、[metric:green_ratio]），由主线绿带 [data:geometry/green_space.geojson#GS-001]、原点站社区公园 [data:geometry/green_space.geojson#GS-002] 与加速站绿谷公园 [data:geometry/green_space.geojson#GS-003] 构成"一廊两肺"；广场型公共空间约 9.0 万平方米、占比约 0.8%（[metric:public_space_area_sqm]、[metric:public_space_ratio]），相对偏少——设计建议沿主线与三个站前节点增补口袋公园并推动广场复合利用（概念建议）[depth:blue_green_public_space][standard:MOHURD-URBAN-DESIGN-MEASURES]。清河、小月河界面的蓝线、生态与防洪条件未公开获得，滨水策略只写方向、列为待确认。
 
-蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio] 和 [metric:public_space_ratio]。城市设计管理办法要求统筹景观风貌、公共空间和建筑控制，因此本节同时引用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+巡礼体系（Pilgrimage）以三处朝圣地标为锚点，[metric:ai_landmark_count]=3，全部落入 public_space 图层并接入慢行主线：
 
-城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
+**人字坡纪念节点** [data:geometry/public_space.geojson#PT-001]：位于枢纽站（大钟寺）站前广场 [data:geometry/public_space.geojson#PS-001] 一侧，为巡礼路线南端起点。设计概念：以詹天佑"人"字形折返线为原型的地面铺装与序列装置，把"自主干线"精神转译为可步行的纪念场景；图形全部自绘清权，不使用人物肖像、书法字帖或商标（概念建议）。
+
+**开源荣誉墙** [data:geometry/public_space.geojson#PT-002]：位于原点站主线一侧、社区公园 [data:geometry/green_space.geojson#GS-002] 北缘，为巡礼路线中段核心节点。设计概念：以"站台铭牌"（Nameplate）荣誉体系为运营机制——对开源项目、开发者与贡献机构的展示采用提名、评审与定期轮换制度（概念建议），铭牌内容须经版权与事实核查，展示数据只做聚合统计、不采集个人行为轨迹；运营主体与授权机制待确认。
+
+**AI 原点灯塔** [data:geometry/public_space.geojson#PT-003]：位于原点站社区公园一侧，为巡礼路线北段地标。设计概念：以轻量化构筑物作为"北京AI原点"的空间标识，夜间灯光与活动联动为概念建议；任何建设概念须避让清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001]，并待文保测绘确认。
+
+城市风貌（引导性概念建议）：融合京张铁路工业记忆、中关村创新文化与 AI 新文化，建筑高度、体量与界面只作风貌引导 [depth:height_massing_character]，不在无文保与控规依据时给出伪精确控制线；导视标识、文化符号与国际传播叙事沿用第 3 章命名体系与 Logo 方向，全部自绘清权，不使用外部字体、商标、肖像与企业标识。风貌控制分三级表达：官方管控（待正式数据发布）、设计建议（本章内容）与待确认条件（第 12 章清单）。
 
 ## 更新项目清单、实施政策与分期计划
 
-实施方案应形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险和评估指标。政策建议应覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。`geometry/phasing.geojson` 应表达分期范围，`compliance_matrix.json` 应把每个任务与分期和图纸挂接。
+更新项目清单按近、中、远三期组织，分期空间证据为 [data:geometry/phasing.geojson#PHASE-001]（近期启动区，复算约 469.6 万平方米，[metric:phase_near_area_sqm]）、[data:geometry/phasing.geojson#PHASE-002]（中期拓展区，约 333.0 万平方米，[metric:phase_mid_area_sqm]）与 [data:geometry/phasing.geojson#PHASE-003]（远期完善区，约 338.6 万平方米，[metric:phase_long_area_sqm]）[depth:phasing_implementation]。全部项目均为概念建议，实施主体为概念性建议，不构成授权、承诺或投资结论 [depth:renewal_project_list]。
 
-项目清单和分期深度由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 管理，分期空间证据为 [data:geometry/phasing.geojson#PHASE-001]。如果没有权属、资金、实施主体和审批路径，方案必须把它写成实施风险，而不是承诺落地。
+| 期别 | 项目名称 | 类型 | 位置（图层映射） | 依赖条件 | 概念性实施主体建议 |
+| --- | --- | --- | --- | --- | --- |
+| 近期 | 枢纽站站前广场复合激活 | 公共空间/运营 | [data:geometry/public_space.geojson#PS-001] | 公共空间使用许可、活动安全评估 | 概念建议由公共空间运营方与属地协作，待授权 |
+| 近期 | 人字坡纪念节点与巡礼路线南段 | 文化/公共空间 | [data:geometry/public_space.geojson#PT-001] | 版权清权、文保条件复核 | 概念建议由遗址公园运营方与策展团队协作，待授权 |
+| 近期 | 慢行主线南段断点缝合 | 交通/慢行 | [data:geometry/roads.geojson#RD-001] | 道路红线、桥下空间与交通组织复核 | 概念建议由交通研究团队与属地协作，待确认 |
+| 中期 | 原点站近校成果转化街区 | 城市更新/产业服务 | [data:geometry/buildings.geojson#BLDG-002]、[data:geometry/land_use.geojson#LU-009] | 校区边界、权属与首层业态确认 | 概念建议由高校、园区运营方与社区协作，待授权 |
+| 中期 | 开源荣誉墙与铭牌荣誉体系 | 文化/运营 | [data:geometry/public_space.geojson#PT-002] | 提名评审机制、内容版权核查 | 概念建议由开源社区机制与运营方协作，待授权 |
+| 中期 | AI 教育实训与科普体验 | 公共服务 | [data:geometry/buildings.geojson#BLDG-005]、[data:geometry/public_space.geojson#PT-008] | 教育内容审核、未成年人保护机制 | 概念建议由高校与科普机构协作，待授权 |
+| 远期 | 加速站中试验证中心与测试验证场 | 产业/新基建 | [data:geometry/buildings.geojson#BLDG-007]、[data:geometry/public_space.geojson#PT-009] | 控规条件、测试规程与安全评估 | 概念建议由园区运营方与第三方评测机构协作，待授权 |
+| 远期 | 绿谷公园与清河界面深化 | 蓝绿空间 | [data:geometry/green_space.geojson#GS-003] | 河道蓝线、生态与防洪条件 | 概念建议由园林与水务专业团队深化，待确认 |
+| 远期 | 小月河场景赋能开放实验带 | 场景/运营 | [data:geometry/public_space.geojson#PT-010]、[data:geometry/roads.geojson#RD-003] | 数据合规、场景开放审批 | 概念建议由场景支线运营机制与属地协作，待确认 |
 
-| 项目编号 | 项目名称 | 类型 | 主要依赖 | 证据引用 |
-| --- | --- | --- | --- | --- |
-| JZ-01 | 京张遗址公园慢行断点缝合 | 公共空间/交通 | 道路红线、桥下空间、交通组织复核 | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | 众智园清河创新界面 | 蓝绿空间/产业展示 | 河道蓝线、生态和防洪条件 | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | 原点社区近校成果转化街 | 城市更新/产业服务 | 校区边界、权属、首层业态 | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | 大钟寺站四象限步行连通 | 轨道一体化/慢行 | 轨道站点、道路交叉口、市政管线 | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI公共服务与端侧算力节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
+实施政策建议（概念建议）：城市更新统筹实施以"轻量设施与运营活动先行、工程建设待条件"为原则——近期以轻量设施、活动运营与服务平台启动，中远期工程类项目必须等待正式控规、市政、交通与权属条件确认；空间供给、运营机制、产业服务、公共参与、数据治理与产权协同的具体政策工具不作确定性表述，仅供专业团队深化研究。征集的 100 天设计周期是成果时间要求，与实施分期是两套时间轴，不得混用。
 
-分期应与 100 天征集设计周期形成区分：征集周期是提交成果的时间要求，实施分期是城市更新和项目建设的推进路径。方案应提出近期试点、中期更新和长期治理框架，并标明哪些内容可先以轻量设施、运营活动和服务平台启动，哪些必须等待正式控规、市政、交通和权属条件确认。对于年度活动体系、开发者社区运营、场景开放日、公共体验路线和国际传播机制，正文应说明运营对象、频率、责任边界、转化路径和风险，不得只写宣传口号。
+年度活动体系即命名体系中的"时刻表"（Timetable），与分期图层衔接，全部为概念建议 [source:AGENT-TASKBOOK]：**年度大会**——概念建议以枢纽站站前广场与文化展示区为主要载体，年度频率，面向产业与治理客群；**开发者季**——概念建议以原点站与开源荣誉墙为载体，季度级频率，面向开发者与高校社区；**场景开放日**——概念建议沿 7 处 AI 场景节点轮换举办，面向公众体验与反馈收集；**巡礼**——概念建议以三处朝圣地标串联主线，作为常设公共体验路线。四类活动的运营主体、许可路径、责任边界与转化路径均待确认，不停留在宣传口号；活动安全与公共性由第 6 章场景卡 05 的复核机制兜底。
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
-
-指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio] 和 [metric:public_space_ratio]，并说明这些值来自 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001]。
+指标体系按三类管理 [depth:metrics_recalculation]。第一类是可由提交几何直接复算的空间指标：范围与分区面积（[metric:research_area_sqm]、[metric:site_area_sqm]、[metric:key_scope_area_sqm]、[metric:key_area_zhongzhiyuan_sqm]、[metric:key_area_origin_sqm]、[metric:key_area_dazhongsi_sqm]、[metric:key_area_count]）、分地类用地面积（[metric:land_use_05_area_sqm]、[metric:land_use_0701_area_sqm]、[metric:land_use_0702_area_sqm]、[metric:land_use_0802_area_sqm]、[metric:land_use_0803_area_sqm]、[metric:land_use_0804_area_sqm]、[metric:land_use_1207_area_sqm]、[metric:land_use_1401_area_sqm]、[metric:land_use_1403_area_sqm]、[metric:land_use_16_area_sqm]）、蓝绿与公共空间（[metric:green_space_area_sqm]、[metric:green_ratio]、[metric:public_space_area_sqm]、[metric:public_space_ratio]）、建筑基底 [metric:building_footprint_area_sqm]、慢行与道路长度（[metric:slow_corridor_length_m]、[metric:road_length_m]）、AI 节点（[metric:ai_scenario_node_count]、[metric:ai_landmark_count]）与分期面积（[metric:phase_near_area_sqm]、[metric:phase_mid_area_sqm]、[metric:phase_long_area_sqm]）。其设计含义：范围指标锁定工作边界与深度分工，用地与比例指标支撑"研发为主、生活为底、公园为轴"的结构判断，慢行与节点指标对应"主线—车站"的体验网络，分期指标对应第 10 章的实施节奏；全部指标 confidence=low，因为边界为 provisional 替代（第 2 章声明）。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-合规矩阵是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务必须对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设和自检项。未能覆盖公告 1.3、1.4、1.5 或 agent.1-agent.6 的任一必选任务，方案不得进入 formal professional scoring。
+第二类是需要官方控规或任务书附件支撑的管控指标：容积率 [metric:floor_area_ratio]、建筑高度 [metric:building_height_m]、建筑密度 [metric:building_density] 与现状建筑面积 [metric:existing_building_area_sqm] 均为 unknown，原因是官方控规与现状测绘未公开获得，正式提交前置条件是取得官方附件后复算，不得以推测值冒充审定指标。第三类是需要运营数据持续校准的绩效指标（活动参与度、场景使用频次、服务满意度等），本方案不设数值、只保留口径位置，避免把运营愿景误写成审定规划条件。
 
-正式深化时，agent 还应把每个指标分为三类：第一类是可由提交几何直接复算的空间指标，例如边界面积、绿地比例、公共空间比例、建筑基底面积和分期面积；第二类是需要官方控规或任务书附件支撑的管控指标，例如容积率、建筑高度、建筑密度、退线、道路红线和设施标准；第三类是需要运营或产业数据持续校准的绩效指标，例如 AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度和场景使用频次。三类指标应分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`，避免把运营愿景误写成审定规划条件。
+面积复算口径：全部面积在 EPSG:4548 下由提交图层复算，公式与来源文件逐条登记于 `metrics.json`；复算值与官方口径的差异（如重点区域约 369.3 公顷对 368.4 公顷）为 provisional_rough 精度偏差。正式数据发布后，九个图层与全部面积、比例类指标须整体重算并重新自检，不能只替换单个文件。合规矩阵 `compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 共 23 条必选任务，每条挂接报告章节、图层、指标、图纸、可视化区块、来源、假设与自检项；`standard_matrix.json` 覆盖 6 项标准（5 项 addressed、1 项 data_gap），`design_depth_matrix.json` 覆盖 15 项深度项（全部 complete）；任一必选任务未覆盖即不得进入 formal professional scoring。`scripts/spatial_review.py` 与 `scripts/visual_review.py` 为 formal 自检提供空间与可视化复核证据，其结果在提交定稿时运行并随包更新 [source:SITE-PACKAGE]。
 
 ## 风险、版权与合规说明
 
-方案文件可使用中文或英文；英文为主语言时，必须在同一 `proposal.md` 中附完整中文正式译文，并设置双语元数据。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
+资料缺口清单（对应 `data/processed/missing_data_checklist.csv` 九项缺口，全部进入 `assumptions.json`）[depth:risk_missing_data]：三层范围与重点区官方 polygon 缺失（GAP-BOUNDARY-001/002）——当前边界为 provisional 替代，**非官方红线，正式数据发布后需复算**；控规条件缺失（GAP-CONTROL-001）——容积率、建筑高度、建筑密度等保持 unknown；道路红线与断面缺失（GAP-ROAD-001）——交通只作概念组织；现状地块与权属缺失（GAP-PARCEL-001）——更新项目只有概念分区与待核条件；现状建筑测绘缺失（GAP-BUILDING-001）——拆改留只有方法、没有地块结论；文保控制范围测绘缺失（GAP-HERITAGE-001）——清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001] 内一律避让并待确认；市政管线、消防与防洪条件缺失（GAP-MUNICIPAL-001）——市政策略止于体系建议；公共服务设施底数缺失（GAP-SERVICE-001）——不作设施容量承诺 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
-风险和缺资料清单由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK] 和 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 相互校核。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项。
+隐私边界：全部 AI 场景遵守数据最小化、公开来源、可解释、人工复核与人本治理原则——不采集人脸与个人轨迹、不输出个人画像、健康与未成年人数据不采集，活动数据只做聚合统计；产业测试验证场景以"可监管、可撤回"为前提，须经主管部门与专业团队评估后方可试点，不得表述为已批准运营 [source:AGENT-TASKBOOK]。
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
+AI 生成责任：本方案文本、结构化图层、指标复算与图件由申报智能体（见 `agent.json`）生成并负责；所有空间与运营建议均为概念建议、参考方案，不声称官方批准、审定控规、最终土地权属、最终建设规模或实施承诺；维护者与专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，一律降级为待确认事项。
+
+版权归属与使用边界：完整声明见 `report/copyright_statement.md`——正文与代码由 AI 生成，五张图件由提交几何与指标自绘，不使用外部图片、字体、商标与人物肖像；全球案例为公开二手来源并登记于 `sources.json`；本提交许可为 COMMUNITY-DISPLAY-ONLY，仅供社区展示与设计讨论，不构成官方规划文件，第三方素材的再利用须回到原来源授权 [source:SOURCE-REGISTRY][source:SITE-PACKAGE][source:PROCESSED-FACT-PACK]。
 
 ## 参考资料
 
-- brief/public-brief.md
-- brief/site-package/design_brief.json
-- brief/site-package/allowed_design_space.json
-- brief/site-package/enums/
-- brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+官方与项目文件：
+- 《百年京张AI创新带城市设计国际方案征集资格预审公告》（北京市规划和自然资源委员会海淀分局，2026-05-09 发布）[source:OFFICIAL-ANNOUNCEMENT]，本地快照 `brief/site-package/standards/references/project-official-announcement.md`
+- 面向全球智能体开源征集任务书摘录 [source:AGENT-TASKBOOK]：`brief/site-package/agent_taskbook.json` 与 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`
+
+机器可读输入与登记：
+- `brief/site-package/`：`design_brief.json`、`allowed_design_space.json`、`enums/`、`ranges/planning_limits.json`、`standards/standards.json`、`geometry/provisional_boundaries.geojson` [source:SITE-PACKAGE]
+- `data/source_registry.json`：6 条资料可用性登记（5 条 formal-ready、1 条 provisional-only）[source:SOURCE-REGISTRY]
+- `data/processed/`：`agent_fact_pack.md`、`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` [source:PROCESSED-FACT-PACK]
+- 临时边界依据：`brief/site-package/geometry/provisional_boundaries.geojson` 与 `provisional_boundaries_basis.md`（粗略来源，非官方红线）[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]
+
+专业标准（登记于 `brief/site-package/standards/standards.json`，本地快照在 `standards/references/`）：
+- [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]（城市设计管理办法）、[standard:MOHURD-CONTROL-DETAILED-PLANNING]（城市、镇控制性详细规划编制审批办法）、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]（国土空间调查、规划、用途管制用地用海分类指南）、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]（建筑工程设计文件编制深度规定 2016 年版，公开获取受限，按 data_gap 处理）
+
+全球案例（公开二手资料，仅作结构校准，登记于 `sources.json` 的 CASE-* 条目）：
+- 波士顿剑桥 Kendall Square [source:CASE-KENDALL]、伦敦 Knowledge Quarter [source:CASE-KNOWLEDGE-QUARTER]、多伦多 Sidewalk Labs Quayside [source:CASE-SIDEWALK-QUAYSIDE]、匹兹堡机器人生态 [source:CASE-PITTSBURGH-ROBOTICS]、深圳前海 [source:CASE-QIANHAI]、纽约 Cornell Tech [source:CASE-CORNELL-TECH]
+
+机器可读引用索引：[depth:metrics_recalculation]、[depth:risk_missing_data]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
