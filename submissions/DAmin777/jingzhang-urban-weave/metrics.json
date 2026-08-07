@@ -12,38 +12,237 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "area(project(EPSG:4326 -> EPSG:4548, submitted_site_boundary))",
+      "confidence": "low",
       "assumptions": [
-        "官方边界未提供；当前使用 provisional boundary 计算，待官方 polygon 提供后重算。"
-      ]
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "source_refs": [
+        "BOUNDARY-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
     },
-    "building_footprint_area_sqm": {
-      "status": "known",
-      "value": 310807.184,
+    "land_use_total_area_sqm": {
+      "status": "not_applicable",
+      "value": 11412064.761,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(unary_union(projected_land_use_features))",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "land_use_coverage_ratio": {
+      "status": "not_applicable",
+      "value": 0.999933354,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "land_use_total_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "building_footprint_sqm": {
+      "status": "not_applicable",
+      "value": 567209.766,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "area(unary_union(projected_building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 567209.766,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "building_footprint_sqm (compatibility alias)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
+    },
+    "green_area_sqm": {
+      "status": "not_applicable",
+      "value": 2091300.062,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "area(unary_union(projected_green_network_polygons))",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "SRC-BJ-JINGZHANG-PARK",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "green_space_area_sqm": {
+      "status": "not_applicable",
+      "value": 2091300.062,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "green_area_sqm (compatibility alias)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "SRC-BJ-JINGZHANG-PARK",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.183241221,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
+      "formula": "green_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "SRC-BJ-JINGZHANG-PARK",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
+    },
+    "public_space_area_sqm": {
+      "status": "not_applicable",
+      "value": 364171.564,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(unary_union(projected_public_space_polygons))",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.031908975,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -51,7 +250,120 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
+    },
+    "road_length_m": {
+      "status": "not_applicable",
+      "value": 11566.053,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(project(EPSG:4326 -> EPSG:4548, road_centerlines)))",
+      "confidence": "low",
+      "assumptions": [
+        "A-DATA-BOUNDARY-001",
+        "A-PROVISIONAL-SITE-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-XUEYUAN-HALL"
+      ],
+      "assumption_refs": [
+        "A-DATA-BOUNDARY-001",
+        "A-PROVISIONAL-SITE-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_areas) ",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "source_refs": [
+        "KEY-AREA-SOURCE",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演"
+    },
+    "land_use_class_count": {
+      "status": "not_applicable",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(unique(use_category))",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OFFICIAL-POLYGON-MISSING-001",
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
+    },
+    "phase_count": {
+      "status": "not_applicable",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(phasing_features)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OWNERSHIP-IMPLEMENTATION-001"
+      ],
+      "source_refs": [
+        "AGENT-TASKBOOK",
+        "SRC-BJ-THREE-ZONES",
+        "SRC-BJ-JINGZHANG-PARK"
+      ],
+      "assumption_refs": [
+        "A-PROVISIONAL-SITE-001",
+        "A-OWNERSHIP-IMPLEMENTATION-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "status_note": "仅保留 provisional geometry QA 数值；未作为 proposal 中的正式指标引用。"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -62,19 +374,86 @@
       ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
-      "assumptions": [],
-      "reason": "FAR 控制条件 unknown，官方边界未提供；需在正式控制条件和 official polygon 提供后由专业团队确认。"
-    },
-    "key_area_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": [
-        "geometry/key_areas.geojson"
+      "assumptions": [
+        "A-PLANNING-CONTROLS-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
       ],
-      "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "source_refs": [
+        "SITE-PACKAGE"
+      ],
+      "assumption_refs": [
+        "A-PLANNING-CONTROLS-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "reason": "官方控制条件未提供；当前使用 provisional boundary，数值仅用于方案推演；需 official 控制条件、现场测绘和专业团队确认。"
+    },
+    "height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_building_height_control",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "source_refs": [
+        "SITE-PACKAGE"
+      ],
+      "assumption_refs": [
+        "A-PLANNING-CONTROLS-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "reason": "官方控制条件未提供；当前使用 provisional boundary，数值仅用于方案推演；需 official 控制条件、现场测绘和专业团队确认。"
+    },
+    "setback_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_setback_control",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PLANNING-CONTROLS-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "source_refs": [
+        "SITE-PACKAGE"
+      ],
+      "assumption_refs": [
+        "A-PLANNING-CONTROLS-001",
+        "A-DATA-BOUNDARY-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "reason": "官方控制条件未提供；当前使用 provisional boundary，数值仅用于方案推演；需 official 控制条件、现场测绘和专业团队确认。"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_building_density_control",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PLANNING-CONTROLS-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "source_refs": [
+        "SITE-PACKAGE"
+      ],
+      "assumption_refs": [
+        "A-PLANNING-CONTROLS-001",
+        "A-OFFICIAL-POLYGON-MISSING-001"
+      ],
+      "note": "官方边界未提供；当前使用 provisional boundary，数值仅用于方案推演",
+      "reason": "官方控制条件未提供；当前使用 provisional boundary，数值仅用于方案推演；需 official 控制条件、现场测绘和专业团队确认。"
     }
   }
 }

@@ -1,6 +1,12 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "land_use_shared_cut_provisional",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
   "features": [
     {
       "type": "Feature",
@@ -11,41 +17,70 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
-        "area_sqm_declared": 2674562.492
+        "official_boundary": false,
+        "area_sqm_declared": 2452128.817,
+        "source_refs": [
+          "SRC-BJ-THREE-ZONES"
+        ],
+        "assumption_refs": [
+          "A-PROVISIONAL-SITE-001",
+          "A-OFFICIAL-POLYGON-MISSING-001",
+          "A-PLANNING-CONTROLS-001"
+        ],
+        "provenance": {
+          "source_refs": [
+            "SRC-BJ-THREE-ZONES"
+          ],
+          "assumption_refs": [
+            "A-PROVISIONAL-SITE-001",
+            "A-OFFICIAL-POLYGON-MISSING-001",
+            "A-PLANNING-CONTROLS-001"
+          ]
+        },
+        "use_category": "mixed_use",
+        "use_code": "05",
+        "land_use_code": "05",
+        "name_zh": "混合服务织带",
+        "category_label": "public_service/heritage",
+        "heritage_overlay": "heritage",
+        "topology_method": "shared_cut_partition_of_provisional_site",
+        "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
-              39.939
+              116.33970040035814,
+              39.97499999266149
             ],
             [
-              116.3397,
-              39.975
+              116.34170039917012,
+              40.00599997424709
             ],
             [
-              116.3417,
-              40.006
+              116.34170039952494,
+              40.00599998051098
             ],
             [
-              116.3427,
-              40.0265
+              116.34270038096342,
+              40.0264996
             ],
             [
-              116.344068,
-              40.0265
+              116.34380040035813,
+              40.0264996
             ],
             [
-              116.344068,
-              39.939
+              116.34380040035813,
+              39.9390004
             ],
             [
-              116.3407,
-              39.939
+              116.34070038904318,
+              39.9390004
+            ],
+            [
+              116.33970040035814,
+              39.97499999266149
             ]
           ]
         ]
@@ -60,33 +95,60 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
-        "area_sqm_declared": 2589339.239
+        "official_boundary": false,
+        "area_sqm_declared": 3402626.046,
+        "source_refs": [
+          "SRC-BJ-THREE-ZONES",
+          "AGENT-TASKBOOK"
+        ],
+        "assumption_refs": [
+          "A-PROVISIONAL-SITE-001",
+          "A-OFFICIAL-POLYGON-MISSING-001",
+          "A-PLANNING-CONTROLS-001"
+        ],
+        "provenance": {
+          "source_refs": [
+            "SRC-BJ-THREE-ZONES",
+            "AGENT-TASKBOOK"
+          ],
+          "assumption_refs": [
+            "A-PROVISIONAL-SITE-001",
+            "A-OFFICIAL-POLYGON-MISSING-001",
+            "A-PLANNING-CONTROLS-001"
+          ]
+        },
+        "use_category": "innovation",
+        "use_code": "0802",
+        "land_use_code": "0802",
+        "name_zh": "创新研发织带",
+        "category_label": "public_service/heritage",
+        "heritage_overlay": "heritage",
+        "topology_method": "shared_cut_partition_of_provisional_site",
+        "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.344068,
-              39.939
+              116.34790040035814,
+              40.0264996
             ],
             [
-              116.344068,
-              40.0265
+              116.34790040035814,
+              39.9390004
             ],
             [
-              116.347188,
-              40.0265
+              116.34380040035813,
+              39.9390004
             ],
             [
-              116.347188,
-              39.939
+              116.34380040035813,
+              40.0264996
             ],
             [
-              116.344068,
-              39.939
+              116.34790040035814,
+              40.0264996
             ]
           ]
         ]
@@ -101,33 +163,58 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
-        "area_sqm_declared": 3366138.181
+        "official_boundary": false,
+        "area_sqm_declared": 3402622.779,
+        "source_refs": [
+          "SRC-BJ-JINGZHANG-PARK"
+        ],
+        "assumption_refs": [
+          "A-PROVISIONAL-SITE-001",
+          "A-OFFICIAL-POLYGON-MISSING-001",
+          "A-PLANNING-CONTROLS-001"
+        ],
+        "provenance": {
+          "source_refs": [
+            "SRC-BJ-JINGZHANG-PARK"
+          ],
+          "assumption_refs": [
+            "A-PROVISIONAL-SITE-001",
+            "A-OFFICIAL-POLYGON-MISSING-001",
+            "A-PLANNING-CONTROLS-001"
+          ]
+        },
+        "use_category": "green_open_space",
+        "use_code": "1401",
+        "land_use_code": "1401",
+        "name_zh": "蓝绿开放织带",
+        "category_label": "public_service/heritage",
+        "heritage_overlay": "heritage",
+        "topology_method": "shared_cut_partition_of_provisional_site",
+        "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347188,
-              39.939
+              116.35200040035814,
+              40.0264996
             ],
             [
-              116.347188,
-              40.0265
+              116.35200040035814,
+              39.9390004
             ],
             [
-              116.351244,
-              40.0265
+              116.34790040035814,
+              39.9390004
             ],
             [
-              116.351244,
-              39.939
+              116.34790040035814,
+              40.0264996
             ],
             [
-              116.347188,
-              39.939
+              116.35200040035814,
+              40.0264996
             ]
           ]
         ]
@@ -142,41 +229,70 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
-        "area_sqm_declared": 2782792.823
+        "official_boundary": false,
+        "area_sqm_declared": 2154687.119,
+        "source_refs": [
+          "SRC-BJ-JINGZHANG-PARK"
+        ],
+        "assumption_refs": [
+          "A-PROVISIONAL-SITE-001",
+          "A-OFFICIAL-POLYGON-MISSING-001",
+          "A-PLANNING-CONTROLS-001"
+        ],
+        "provenance": {
+          "source_refs": [
+            "SRC-BJ-JINGZHANG-PARK"
+          ],
+          "assumption_refs": [
+            "A-PROVISIONAL-SITE-001",
+            "A-OFFICIAL-POLYGON-MISSING-001",
+            "A-PLANNING-CONTROLS-001"
+          ]
+        },
+        "use_category": "public_service",
+        "use_code": "0803",
+        "land_use_code": "0803",
+        "name_zh": "公共服务与文化遗产接口",
+        "category_label": "public_service/heritage",
+        "heritage_overlay": "heritage",
+        "topology_method": "shared_cut_partition_of_provisional_site",
+        "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3553,
-              40.0265
+              116.35529957748216,
+              40.0264996
             ],
             [
-              116.3533,
-              39.99
+              116.35329960059914,
+              39.99000002188498
             ],
             [
-              116.3553,
-              39.965
+              116.35329960127389,
+              39.98999996810191
             ],
             [
-              116.3553,
-              39.939
+              116.3552996,
+              39.96499998402553
             ],
             [
-              116.351244,
-              39.939
+              116.3552996,
+              39.9390004
             ],
             [
-              116.351244,
-              40.0265
+              116.35200040035814,
+              39.9390004
             ],
             [
-              116.3553,
-              40.0265
+              116.35200040035814,
+              40.0264996
+            ],
+            [
+              116.35529957748216,
+              40.0264996
             ]
           ]
         ]
