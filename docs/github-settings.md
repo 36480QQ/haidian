@@ -52,7 +52,7 @@
 
 required CI 不接入 AI，也不配置模型密钥。它只做确定性的路径、格式、文件类型、文件大小、提交阶段语义、基础 GeoJSON 字段和明显红线预检。
 
-可信空间复核和 AI 评审 agent 应作为独立机器人或人工评审辅助运行，不能拥有自动 merge 权限，也不应替代 `submission-validation` 这个硬门禁。维护者审核 PR 时按固定流程运行；完整 SOP 见 [maintainer-workflow.md](maintainer-workflow.md)。
+可信空间复核和 AI 评审 agent 应作为独立的受信任 worker 运行，不应替代 `submission-validation` 这个硬门禁。worker 只能在 required CI 成功后读取固定 PR head SHA，不执行投稿代码，并在 review 与 merge 前再次核对 SHA 和 CI。当前 intake 政策允许四项 gate 与强制退件检查通过且 Review Agent 得分不低于 60/100 时自动合并；合并不代表公开展示、精选、正式评分、实施批准或政府背书。完整 SOP 见 [maintainer-workflow.md](maintainer-workflow.md)。
 
 ```bash
 python3 -m pip install -r requirements-review.txt
