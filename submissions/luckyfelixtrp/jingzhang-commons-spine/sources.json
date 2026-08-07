@@ -92,6 +92,19 @@
       "source_type": "official_public",
       "usage": "Current official overview of universities, national laboratories/research institutions and parks.",
       "not_usable_for": "Exact corridor catchments or official planning controls."
+    },
+    {
+      "id": "OSM-OVERPASS-CONTEXT-20260807",
+      "url": "https://www.openstreetmap.org/copyright",
+      "title": "OpenStreetMap Jing-Zhang corridor context extract",
+      "publisher": "OpenStreetMap contributors",
+      "accessed_date": "2026-08-07",
+      "license": "ODbL 1.0",
+      "source_type": "osm",
+      "usage": "Background road, rail, walking, park, education and health context for evidence diagrams and preliminary network diagnosis.",
+      "not_usable_for": "Official boundary, road redline, statutory control, parcel conclusion, precise demand or engineering design.",
+      "query_bbox": "39.939,116.3397,40.0265,116.3553",
+      "raw_element_count": 19172
     }
   ]
 }
