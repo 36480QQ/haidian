@@ -1,0 +1,213 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "ROAD-001",
+   "properties": {
+    "id": "ROAD-001",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "arterial",
+    "name_zh": "西侧主干路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3407,
+      39.939
+     ],
+     [
+      116.3407,
+      40.0265
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-002",
+   "properties": {
+    "id": "ROAD-002",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "arterial",
+    "name_zh": "东侧主干路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3553,
+      39.939
+     ],
+     [
+      116.3553,
+      40.0265
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-003",
+   "properties": {
+    "id": "ROAD-003",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "secondary",
+    "name_zh": "中部次干路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3445,
+      39.939
+     ],
+     [
+      116.3445,
+      40.0265
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-004",
+   "properties": {
+    "id": "ROAD-004",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "secondary",
+    "name_zh": "创新服务次干路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3495,
+      39.939
+     ],
+     [
+      116.3495,
+      40.0265
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-005",
+   "properties": {
+    "id": "ROAD-005",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "branch",
+    "name_zh": "东西联络支路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.342,
+      39.952
+     ],
+     [
+      116.3533,
+      39.952
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-006",
+   "properties": {
+    "id": "ROAD-006",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "branch",
+    "name_zh": "校园联络支路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.342,
+      39.972
+     ],
+     [
+      116.3533,
+      39.972
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-007",
+   "properties": {
+    "id": "ROAD-007",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "branch",
+    "name_zh": "遗址公园南侧支路"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.343,
+      39.99
+     ],
+     [
+      116.3533,
+      39.99
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-008",
+   "properties": {
+    "id": "ROAD-008",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_type": "greenway",
+    "name_zh": "加速区慢行主轴"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.343,
+      40.0075
+     ],
+     [
+      116.354,
+      40.0075
+     ]
+    ]
+   }
+  }
+ ]
+}
