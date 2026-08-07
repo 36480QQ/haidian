@@ -86,6 +86,17 @@ class AutoReviewQueueTests(unittest.TestCase):
                 }
             ),
         )
+        self.assertEqual(
+            "success",
+            ci_state(
+                {
+                    "statusCheckRollup": [
+                        {"name": "submission-validation", "conclusion": "SKIPPED"},
+                        {"name": "submission-validation", "conclusion": "SUCCESS"},
+                    ]
+                }
+            ),
+        )
 
 
 if __name__ == "__main__":

@@ -62,7 +62,7 @@ def ci_state(meta: dict[str, Any]) -> str:
     conclusions = check_conclusions(meta)
     if any(item == "FAILURE" for item in conclusions):
         return "failure"
-    if conclusions and all(item == PASS for item in conclusions):
+    if any(item == PASS for item in conclusions):
         return "success"
     return "pending"
 
