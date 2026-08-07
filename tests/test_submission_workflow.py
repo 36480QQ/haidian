@@ -21,6 +21,7 @@ from github_pr_validation import (  # noqa: E402
     safe_manifest_paths,
     validation_paths_for,
 )
+from validate_local_submission import discover_submission_files  # noqa: E402
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -106,6 +107,18 @@ class ManifestHydrationTests(unittest.TestCase):
                 "alice",
             )
         )
+
+    def test_local_full_package_check_ignores_existing_maintainer_feedback(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            submission = root / "submissions" / "alice" / "design"
+            submission.mkdir(parents=True)
+            (submission / "proposal.md").write_text("# Design\n", encoding="utf-8")
+            (submission / "FEEDBACK.md").write_text("# Maintainer feedback\n", encoding="utf-8")
+            self.assertEqual(
+                ["submissions/alice/design/proposal.md"],
+                discover_submission_files(submission, root),
+            )
 
 
 REFERENCE_BLOCK = (
