@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -33,7 +33,7 @@ iteration: "v1.5"
 
 本方案按征集公告的三层范围组织全部工作 [source:OFFICIAL-ANNOUNCEMENT][depth:three_level_scope_framework]：三层范围从产业战略、总体城市设计到重点片区详细设计逐级传导，每一层都回答「设计判断—依据—图层/指标/标准—资料缺口」四件事 [depth:existing_conditions_diagnosis]。
 
-**统筹研究范围（约43.6 km²）**：北至北五环路，东至京藏高速，南至西直门外大街，西至万泉河路 [source:OFFICIAL-ANNOUNCEMENT]。本层回答「世界级AI创新生态如何在海淀生长」：三区两翼产业协同回路、未来AI城市形态、AI文化/社会/城市议题、AI+交通与连续绿色空间体系。成果表达为产业地图、协同回路与绿色网络的概念描述（对应 `geometry/roads.geojson`、`geometry/green_space.geojson` 的概念图层）。该层仅有官方文字四至与约面积，无官方 polygon；本方案不为其生成正式边界，仅作研究框架 [source:PROVISIONAL-BOUNDARIES-2026][assumption:A-GEOM-001]。
+**统筹研究范围（约43.6 km²）**：北至北五环路，东至京藏高速，南至西直门外大街，西至万泉河路 [source:OFFICIAL-ANNOUNCEMENT]。本层回答「世界级AI创新生态如何在海淀生长」：三区两翼产业协同回路、未来AI城市形态、AI文化/社会/城市议题、AI+交通与连续绿色空间体系。成果表达为产业地图、协同回路与绿色网络的概念描述（对应 `geometry/roads.geojson`、`geometry/green_space.geojson` 的概念图层）。该层仅有官方文字四至与约面积，**区域协同背景（v1.5，公开口径）**：本范围地处京津冀协同发展轴带——京津冀主要城市「1至1.5小时交通圈」已基本形成（2026年4月官方表述）[source:SRC-JJJ-CIRCLE-2026]，北京非首都功能疏解标志性项目取得重要进展（国家发改委2025年10月口径）[source:SRC-JJJ-RELOCATE-2025]，中关村牵头的京津冀协同创新共同体持续牵引创新要素跨域流动 [source:SRC-JJJ-INNOV-COMMUNITY-2025]；本方案以「交通轴—创新廊—节点群」逻辑将本范围定位为京津冀协同创新与疏解承接的关键节点（概念，不作为区域规划结论）。无官方 polygon；本方案不为其生成正式边界，仅作研究框架 [source:PROVISIONAL-BOUNDARIES-2026][assumption:A-GEOM-001]。
 
 **总体设计范围（约11.4 km²）**：以京张遗址公园周边1—2公里的城市地区和产业区为规划设计范围 [source:OFFICIAL-ANNOUNCEMENT]。本层把产业战略转译为城市设计：用地结构、蓝绿网络、慢行系统、风貌基调与AI场景布局，达到控制性详细规划的城市设计深度 [depth:overall_spatial_structure][depth:land_use_layout]。成果表达为 `geometry/land_use.geojson`（全带用地分区）、`geometry/buildings.geojson`（概念建筑基底）、`geometry/roads.geojson`（概念路网）、`geometry/public_space.geojson`（公共空间节点）与 `assets/figures/land-use-structure.png`。本层几何采用临时粗略边界 `PROV-SITE-001`（约11.41 km²，`geometry/site_boundary.geojson#SITE-001`），面积复算值为约1141.3公顷 [data:geometry/site_boundary.geojson#SITE-001][metric:site_area_sqm][source:PROVISIONAL-BOUNDARIES-2026]。
 
@@ -86,7 +86,7 @@ iteration: "v1.5"
 | 5 | 新加坡 | AI治理框架（AI Verify）与生活实验室城市试验文化 | 众智园设「AI治理实验室」，输出可信AI测试、评测与标准提案 |
 | 6 | 巴塞罗那（西班牙） | 22@老工业区经「起步—发展—成熟」多阶段更新为知识创新区（AOI演化模型）[source:SRC-22B-AOI]；城市OS与公共数据基础设施 | 活力脊设「人字链数据驾驶舱」，公共空间数据以仪表盘向市民开放 |
 
-失败教训对照：多伦多 Quayside 因数据主权争议搁浅。本方案据此为全部AI场景设置「数据来源、隐私边界、人工复核」三要素强制项，公共空间AI采集数据一律脱敏并经公共数据治理机制复核，避免「黑箱城市」[source:AGENT-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。
+失败教训对照：多伦多 Quayside 因数据主权争议搁浅。本方案据此为全部AI场景设置「数据来源、隐私边界、人工复核」三要素强制项，公共空间AI采集数据一律脱敏并经公共数据治理机制复核，避免「黑箱城市」[source:AGENT-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。**最新动态（2024—2026，媒体口径，v1.5）**：伦敦国王十字凭 DeepMind 等实验室锚定成为 AI 办公集聚地（媒体称伦敦 AI 办公需求集中于国王十字周边）[source:SRC-KINGS-CROSS-AI-2026]——「大学—实验室—头部企业」的知识溢出与人才密度仍是 AI 时代创新区第一性动力，本方案众智园「国家平台锚」与原点社区「高校锚」据此组织。
 
 **AI创新生态图谱与要素机制**：本方案提出「八要素机制」——土地（存量更新释放产业空间）、空间（人字链节产业载体）、产业（1+X+1体系下的AI+融合）、资金（中关村资本翼对接全球配置）、人才（人才特区与开发者社区，衔接海淀青年人才生态示范区政策 [source:SRC-HD-YOUTH-TALENT-2025]）、算力（端侧算力+公共算力调度，北京最大单体智算集群已于2025年在海淀点亮 [source:SRC-HD-COMPUTE-2025]）、数据（数据要素流通试验床）、场景（小月河沙盒+全带场景网络）[source:HAIDIAN-1X1][source:THREE-AREAS-WINGS]。背景事实（公开资料，仅作背景引用）：北京市2023年印发人工智能创新策源地实施方案、2024年印发算力基础设施建设实施方案；海淀区备案大模型104款、约占全市七成，并印发具身智能创新高地三年行动方案 [source:SRC-BJ-AI-POLICY][source:SRC-BJ-COMPUTE][source:SRC-HD-AI-MODELS][source:SRC-BJ-EMBODIED]。本方案不将这些背景数字用于任何边界、面积或控规类结论。八要素可按创新区三大资产框架归组——土地/空间/产业归经济资产，场景/蓝绿骨架/公共空间归物质资产，人才/资金/算力/数据/场景网络归网络资产，作为对国际创新区理论的本地化组织 [source:SRC-INNOVATION-DISTRICTS]。八要素中，土地、空间、场景三项直接落到本方案几何图层（`geometry/land_use.geojson`、`geometry/buildings.geojson`、`geometry/public_space.geojson`），资金、人才、算力、数据四项以机制建议表述，不编造企业名单、投资额或财政承诺 [source:AGENT-TASKBOOK][data:geometry/land_use.geojson#LU-0802-1]。
 
@@ -231,9 +231,9 @@ iteration: "v1.5"
 
 **SC-12「公共安全运营复核」（scenario: public-safety-operations-review）**：覆盖全带公共空间。面向公众与管理运营机构提供AI辅助的公共空间运营状态监测（人流、设施、天气聚合指标，不含个体识别信息）；所有告警由人工复核后处置；运行数据仅限聚合监测指标；监测点位清单与用途公开公示，公示内容依参与式XAI原则由居民参与确定（解释什么指标、以何种界面呈现），而非仅由运营方单方发布 [source:SRC-PARTICIPATORY-XAI]；人工复核明确三要素——触发条件（哪些告警必须人工介入）、责任主体（复核结论由谁签认）、留痕机制（复核记录存档可追溯），避免流于形式 [source:SRC-HITL-LEGAL]；告警阈值与算法版本须公开并接受季度复核；监测数据按「目的限定—最小必要—限期留存」管理：采集仅限达成公示用途所需聚合指标，留存期限与用途对应公开（如客流聚合指标仅保留至分析目的完成即删除），点位投放前完成必要性—相称性评估并纳入DPIA清单（参照EDPB视频设备指南）[source:SRC-EDPB-VIDEO-2019]；监测系统另设年度必要性复核与留存期限表，复核记录、删除记录与告警处置留痕一并归档可审计（参照ICO监视摄像头实务守则）[source:SRC-ICO-CCTV-2017]；运营主体：公共空间运营机构（概念）；对应 `geometry/public_space.geojson`；风险：禁止过度监控，监测范围与用途公开透明。
 
-**SC-13「学院路AI教育共创站」**：位于学院路—西土城路教育带（`geometry/land_use.geojson#LU-0804-1` 与 `public_space.geojson#PS-003` 周边，总体设计范围内、重点区域范围外，响应公告自选区域「AI+教育」场景方向）。面向高校师生、中小学与职业院校、终身学习者及教育科技企业，提供AI辅助教学设计共创、智慧课堂演示、职业教育实训与教育科技产品试用（概念）；运行数据仅限公开课程资料、教育科技企业申报的脱敏数据集与场所客流聚合指标；隐私边界：不采集未成年人个体数据，学生学情仅以聚合统计呈现、不存储个体画像，数据不出教育机构；人工复核：教育内容由教研专家与教育主管部门评审，AI辅导与评价建议不替代教师专业判断；运营主体：教育科技协同体（概念，高校院所、教育企业、社区共建方向）；图层：`land_use.geojson#LU-0804-1`、`public_space.geojson#PS-003`；风险：不得承诺升学或成绩效果，AI评价结果不得用于学生个体排名与处分决策。
+**SC-13「学院路AI教育共创站」**：位于学院路—西土城路教育带（`geometry/land_use.geojson#LU-0804-1` 与 `public_space.geojson#PS-003` 周边，总体设计范围内、重点区域范围外，响应公告自选区域「AI+教育」场景方向）。面向高校师生、中小学与职业院校、终身学习者及教育科技企业，提供AI辅助教学设计共创、智慧课堂演示、职业教育实训与教育科技产品试用（概念）；运行数据仅限公开课程资料、教育科技企业申报的脱敏数据集与场所客流聚合指标；隐私边界：不采集未成年人个体数据，学生学情仅以聚合统计呈现、不存储个体画像，数据不出教育机构；人工复核：教育内容由教研专家与教育主管部门评审，AI辅导与评价建议不替代教师专业判断；运营主体：教育科技协同体（概念，高校院所、教育企业、社区共建方向）；图层：`land_use.geojson#LU-0804-1`、`public_space.geojson#PS-003`；风险：不得承诺升学或成绩效果，AI评价结果不得用于学生个体排名与处分决策。政策衔接（v1.5，公开文件）：教育部部署加强中小学人工智能教育（2030年前基本普及方向）[source:SRC-MOE-AI-EDU-2024]、教育部等五部门《「人工智能+教育」行动计划》（教科信〔2026〕1号）[source:SRC-MOE-AI-PLUS-EDU-2026]、北京市《推进中小学人工智能教育工作方案（2025—2027年）》（中小学全面开设AI通识课、每学年不少于8课时方向）[source:SRC-BJ-AI-SCHOOL-2025]——本站在「育人为本、人机协同」原则下承接上述政策的在地共创空间功能（概念，不承诺课时/课程安排）。
 
-**SC-14「西土城路AI法律服务站」**：位于西土城路—学院路法律服务带与中关村科技服务翼联络点方向（`geometry/land_use.geojson#LU-05-2` 周边，概念位置，响应公告自选区域「AI+法律」场景方向）。面向创业者、中小企业、开发者与居民，提供法规检索、合同条款风险提示、合规自检与办事指引（概念）；运行数据仅限公开法律法规、公开裁判文书与用户授权脱敏文本；隐私边界：当事人信息与未公开案件材料不进入公共模型，文本按次处理、不长期留存；人工复核：输出由执业律师人工复核，法律意见不得表述为律师执业意见；运营主体：法律科技协同体（概念，律协、法学院校、法律科技企业合作方向）；图层：`land_use.geojson#LU-05-2`；风险：不提供诉讼代理与正式法律意见书，提示内容不得被理解为已确定的法律结论。
+**SC-14「西土城路AI法律服务站」**：位于西土城路—学院路法律服务带与中关村科技服务翼联络点方向（`geometry/land_use.geojson#LU-05-2` 周边，概念位置，响应公告自选区域「AI+法律」场景方向）。面向创业者、中小企业、开发者与居民，提供法规检索、合同条款风险提示、合规自检与办事指引（概念）；运行数据仅限公开法律法规、公开裁判文书与用户授权脱敏文本；隐私边界：当事人信息与未公开案件材料不进入公共模型，文本按次处理、不长期留存；人工复核：输出由执业律师人工复核，法律意见不得表述为律师执业意见；运营主体：法律科技协同体（概念，律协、法学院校、法律科技企业合作方向）；图层：`land_use.geojson#LU-05-2`；风险：不提供诉讼代理与正式法律意见书，提示内容不得被理解为已确定的法律结论。政策衔接（v1.5，公开文件）：对标最高人民法院《关于规范和加强人工智能司法应用的意见》（2022年12月发布：安全合法、公平公正、辅助审判、透明可信、公序良俗五项原则，AI生成结果仅为参考、不替代专业判断）[source:SRC-SPC-AI-JUDICIAL-2022]——本站定位为「辅助检索与提示」工具，遵循「人主机辅、透明可溯」原则（概念）。
 
 ### 场景—空间—运营映射
 
@@ -293,7 +293,7 @@ iteration: "v1.5"
 
 ### 蓝绿空间体系
 
-「T形蓝绿骨架」：纵向为京张活力脊（概念公园绿地 `geometry/green_space.geojson#GS-1`，约218.1公顷含两侧绿地，`land_use_1401_area_sqm`）[data:geometry/green_space.geojson#GS-1][metric:land_use_1401_area_sqm]；横向为清河滨水带（概念线位，约40.00—40.01纬度带，以概念线表达「T」形横臂；蓝线以官方管控为准）与成府路绿廊（概念横轴）；小月河滨水带为活力脊东侧并行的第二纵廊（概念位置 `geometry/constraints.geojson#CON-WTR-001`）[data:geometry/constraints.geojson#CON-WTR-001]。概念绿地率约22.5%（`green_ratio`），绿地空间面积约256.7公顷（`green_space_area_sqm`）[metric:green_space_area_sqm][metric:green_ratio]。步道与骑行道体系：活力脊步行脊（`geometry/roads.geojson#RD-009`）南北贯通，小月河滨水骑行道（`RD-010`）与学院路绿廊（`RD-011`）东西联通，形成「南北贯通、东西连通」的连续慢行网络 [data:geometry/roads.geojson#RD-010][data:geometry/roads.geojson#RD-011][source:OFFICIAL-ANNOUNCEMENT][depth:blue_green_public_space]。
+「T形蓝绿骨架」：纵向为京张活力脊（概念公园绿地 `geometry/green_space.geojson#GS-1`，约218.1公顷含两侧绿地，`land_use_1401_area_sqm`）[data:geometry/green_space.geojson#GS-1][metric:land_use_1401_area_sqm]；横向为清河滨水带（概念线位，约40.00—40.01纬度带，以概念线表达「T」形横臂；蓝线以官方管控为准）与成府路绿廊（概念横轴）；小月河滨水带为活力脊东侧并行的第二纵廊（概念位置 `geometry/constraints.geojson#CON-WTR-001`）[data:geometry/constraints.geojson#CON-WTR-001]。概念绿地率约22.5%（`green_ratio`），绿地空间面积约256.7公顷（`green_space_area_sqm`）[metric:green_space_area_sqm][metric:green_ratio]。步道与骑行道体系：活力脊步行脊（`geometry/roads.geojson#RD-009`）南北贯通，小月河滨水骑行道（`RD-010`）与学院路绿廊（`RD-011`）东西联通，形成「南北贯通、东西连通」的连续慢行网络 [data:geometry/roads.geojson#RD-010][data:geometry/roads.geojson#RD-011][source:OFFICIAL-ANNOUNCEMENT][depth:blue_green_public_space]。**绿色低碳衔接（概念，v1.5）**：蓝绿空间同时承担碳汇与低碳场景载体功能——建筑与设施层对标《绿色建筑评价标准》GB/T 50378-2019 五维体系（安全耐久、健康舒适、生活便利、资源节约、环境宜居）[source:SRC-GB-T50378-2019]，园区层衔接光储充一体与近零能耗方向（见新型基础设施）；「碳汇测算—管控引导—平台支撑」应用框架与街区碳账本列为概念深化方向，指标数值以实测与地方导则为准（概念，不作为结论数据）。
 
 ### 公共空间系统
 
@@ -359,7 +359,7 @@ iteration: "v1.5"
 
 ### 京张铁路历史文化资源系统
 
-京张铁路（1905年开工、1909年9月全线通车）是中国人自主修建的第一条干线铁路，其「人字形展线」（青龙桥八达岭段，2006年列入全国重点文物保护单位）、詹天佑工程精神与沿线车站（清华园站、清河站等）构成创新带最深层的历史资源 [source:THREE-AREAS-WINGS][source:SRC-JZ-PARK-OPENING]。京张文化链运营事实（公开报道）：京张高铁开通5年发送旅客超5600万人次（2024年12月）[source:SRC-JZ-HSR-5Y-2024]；百年青龙桥车站（人字形线路所在地）已变身长城文化展览馆（2024年6月）[source:SRC-JZ-QINGLONGQIAO-2024]——远端文化节点的活化运营为创新带「文化+运营」提供同源参照。本方案将其组织为三层资源系统：物质层（铁轨遗迹、车站旧址、枕木道砟等要素——清华园车站旧址概略位置见 `geometry/constraints.geojson#CON-HER-001`，文保范围以官方为准）[data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]；叙事层（自主创新、敢为人先、人字形智慧）；精神层（「把不可能变成可能」的工程精神与AI创新精神同构）。
+京张铁路（1905年开工、1909年9月全线通车）是中国人自主修建的第一条干线铁路，其「人字形展线」（青龙桥八达岭段，2006年列入全国重点文物保护单位）、詹天佑工程精神与沿线车站（清华园站、清河站等）构成创新带最深层的历史资源 [source:THREE-AREAS-WINGS][source:SRC-JZ-PARK-OPENING]。京张文化链运营事实（公开报道）：京张高铁开通5年发送旅客超5600万人次（2024年12月）[source:SRC-JZ-HSR-5Y-2024]；百年青龙桥车站（人字形线路所在地）已变身长城文化展览馆（2024年6月）[source:SRC-JZ-QINGLONGQIAO-2024]——远端文化节点的活化运营为创新带「文化+运营」提供同源参照。本方案将其组织为三层资源系统：物质层（铁轨遗迹、车站旧址、枕木道砟等要素——清华园车站旧址概略位置见 `geometry/constraints.geojson#CON-HER-001`，文保范围以官方为准）[data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]；叙事层（自主创新、敢为人先、人字形智慧）；精神层（「把不可能变成可能」的工程精神与AI创新精神同构）。**保护利用政策工具（v1.5，公开文件）**：北京历史建筑保护已由名录管理走向「一栋一档」精准治理——《北京市历史建筑规划管理工作规程（试行）》2024年1月实施 [source:SRC-BJ-HERITAGE-PROC-2024]，2025年11月《北京市历史建筑保护图则（东城·西城）》发布（274栋（座）历史建筑建立更新档案）[source:SRC-BJ-HERITAGE-GUIDE-2025]；本方案对清华园车站旧址等文保节点的活化利用建议叠加文物建筑开放导则与社会力量参与机制（概念，具体以文物部门审定为准）。
 
 ### 中关村创新文化与AI新文化叙事
 
@@ -507,7 +507,7 @@ iteration: "v1.5"
 | AI 生成标识 | 五图+图纸+页面显式「AI生成」标识 | 按《标识办法》承诺双轨标识+过程记录留存 | v1.2 |
 | 图面与图纸 | 脚本可复算生成（A3 12 页/A0 7 板，含概念剖面示意） | 版本戳统一、字形修复、图面事实注记人工校核 | v0.9、v1.2b、v1.4 |
 
-**可复现性宣言（v1.3）**：本方案全部数值与图形可由包内生成脚本复算——几何（`gen_geometry.py`）、指标（`gen_metrics.py`，EPSG:4548）、矩阵与来源（`gen_matrices.py`）、五图（`gen_figures.py`）、图纸（`gen_drawings.py`）、离线页面（`gen_visual_html.py`）、Logo 与结构化资产（`gen_logo_svg.py`、`gen_structured_assets.py`）；脚本随方案沿革归档于投稿目录外的可复算集（本仓库技能目录与方案 changelog 均声明存在性与用途）。「官方边界发布后一键重算」为本方案承诺的默认动作，非一次性声明 [source:DATA-WORKFLOW][assumption:A-REV-001]。
+**可复现性宣言（v1.3）**：本方案全部数值与图形可由包内生成脚本复算——几何（`gen_geometry.py`）、指标（`gen_metrics.py`，EPSG:4548）、矩阵与来源（`gen_matrices.py`）、五图（`gen_figures.py`）、图纸（`gen_drawings.py`）、离线页面（`gen_visual_html.py`）、Logo 与结构化资产（`gen_logo_svg.py`、`gen_structured_assets.py`）；脚本随方案沿革归档于投稿目录外的可复算集（本仓库技能目录与方案 changelog 均声明存在性与用途）。「官方边界发布后一键重算」为本方案承诺的默认动作，非一次性声明 [source:DATA-WORKFLOW][assumption:A-REV-001]。**学术支撑（v1.5，背景）**：本「AI生成＋人工终审」工作流与 2023—2026 生成式城市设计前沿共识一致——大语言模型与人类专家协作的规划产出在专业评估中可超越 90% 规划师基线（Nature Computational Science 2025，清华—MIT Senseable City Lab）[source:SRC-NCS-LLM-PLANNING-2025]；多模态扩散生成以「分阶段人工介入」保障专业判断嵌入（arXiv:2505.24260）[source:SRC-ARXIV-DIFFUSION-URBAN-2025]；面向规划定制的多智能体框架已验证任务分工价值（ACL 2025 PlanGPT）[source:SRC-ACL-PLANGPT-2025]。上述文献仅作方法学背景支撑，不构成对方案成果的学术背书。
 
 **专业复核需求**：所有provisional几何派生指标须在official polygon发布后重算；建筑规模与高度量级须由专业团队校核；方案须经规划、交通、市政、文保专业复核后方可进入任何实施讨论 [source:DATA-WORKFLOW][assumption:A-REV-001]。
 
