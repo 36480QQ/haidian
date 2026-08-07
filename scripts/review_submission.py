@@ -92,9 +92,10 @@ def infer_author(submission_dir: Path, repo_root: Path) -> str:
 
 
 def script_path(repo_root: Path, name: str) -> Path:
-    candidate = repo_root / "scripts" / name
-    if candidate.exists():
-        return candidate
+    # Review a participant checkout with the maintainer worker's trusted
+    # validation code.  The checkout can predate a validator fix (or contain
+    # participant-controlled scripts), so it must never supply executables to
+    # the review process.
     return SCRIPT_DIR / name
 
 
