@@ -75,6 +75,85 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "data_evidence_anchor_count": {
+      "status": "known",
+      "value": 17,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of [data:geometry/...] evidence anchors in proposal.md",
+      "confidence": "high",
+      "assumptions": [
+        "机器可读证据锚点总数，反映 agent-readable city 的证据密度"
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of AI scenario cards in proposal.md section 6",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 10 张；含 4 个产业测试验证场景（数字孪生/合规/仿真型）"
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of user personas in proposal.md section 6",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 5 类用户画像"
+      ]
+    },
+    "human_review_checkpoint_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of human-review checkpoints across scenario cards",
+      "confidence": "high",
+      "assumptions": [
+        "每张场景卡配一个人工复核节点，复核环的落地证据"
+      ]
+    },
+    "exit_mechanism_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of failure-rollback/exit mechanisms in scenario cards",
+      "confidence": "high",
+      "assumptions": [
+        "每张场景卡自带退出路径；环之为环，可回滚可纠错"
+      ]
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count of AI pilgrimage landmarks (智脉枢纽塔/京张AI纪元馆/钟鸣智环)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 3 个朝圣地标；每重点区一个"
+      ]
     }
   }
 }

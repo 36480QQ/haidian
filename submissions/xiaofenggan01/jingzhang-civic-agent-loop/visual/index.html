@@ -52,6 +52,26 @@ td,th{border:1px solid var(--grey);padding:6px 8px;text-align:left;}th{backgroun
 <div class="kpi yellow"><div class="n">公共空间比例</div><div class="v"><span data-metric="public_space_ratio" data-value="0.113433">11.34%</span></div><div class="note">geometry/public_space.geojson</div></div>
 </div>
 
+<section><h2>四环协作</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center">
+<svg viewBox="0 0 300 300" style="width:100%;max-width:340px;margin:0 auto;display:block">
+<circle cx="150" cy="150" r="122" fill="none" stroke="#1F4E79" stroke-width="20" opacity="0.20"/>
+<circle cx="150" cy="150" r="92" fill="none" stroke="#2E8B57" stroke-width="20" opacity="0.28"/>
+<circle cx="150" cy="150" r="62" fill="none" stroke="#D4A24C" stroke-width="20" opacity="0.36"/>
+<circle cx="150" cy="150" r="34" fill="none" stroke="#B4402B" stroke-width="20" opacity="0.44"/>
+<text x="150" y="36" text-anchor="middle" font-size="13" fill="#1F4E79" font-weight="bold">资料环</text>
+<text x="150" y="66" text-anchor="middle" font-size="13" fill="#2E8B57" font-weight="bold">推演环</text>
+<text x="150" y="96" text-anchor="middle" font-size="13" fill="#D4A24C" font-weight="bold">反馈环</text>
+<text x="150" y="132" text-anchor="middle" font-size="12" fill="#B4402B" font-weight="bold">复核环</text>
+<text x="150" y="172" text-anchor="middle" font-size="11" fill="#2B2B2B">环会自转 · 能回头校正自己</text>
+<path d="M 150 28 A 122 122 0 1 1 148 272" fill="none" stroke="#1F4E79" stroke-width="2.5" stroke-dasharray="4,3"/>
+</svg>
+<div>
+<p style="font-size:13.5px;line-height:1.75">四环不是并列步骤，而是<b>循环回路</b>：资料环 → 推演环 → 反馈环 → 复核环 → 回资料环，首尾相接、彼此校验。</p>
+<p style="font-size:13.5px;line-height:1.75;color:#B4402B"><b>门要人开，环会自转。</b>这是本方案区别于"顺序闸门"式治理的本质——环能回头校正自己，门不能。</p>
+<p style="font-size:12px;color:#8A8A8A">四环各配可量化指标，见下方"治理环指标"。</p>
+</div>
+</div></section>
 <section><h2>总览地图</h2>
 <svg class="map" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="总览地图">
 <rect width="1000" height="620" fill="#fff"/>
@@ -161,6 +181,17 @@ td,th{border:1px solid var(--grey);padding:6px 8px;text-align:left;}th{backgroun
 <tr><td>professional evidence</td><td><span class="pill g">PASS</span></td></tr>
 </table></section>
 
+<section><h2>治理环指标</h2>
+<div class="grid3">
+<div class="card"><div class="t" style="color:#1F4E79">资料环</div><div style="font-size:24px;font-weight:bold;color:#1F4E79">17</div><div class="d">data_evidence_anchor_count<br>正文 [data:] 证据锚点数</div></div>
+<div class="card"><div class="t" style="color:#2E8B57">推演环</div><div style="font-size:24px;font-weight:bold;color:#2E8B57">11</div><div class="d">scenario_card_count<br>场景卡（含 4 数字孪生验证）</div></div>
+<div class="card"><div class="t" style="color:#2E8B57">推演环</div><div style="font-size:24px;font-weight:bold;color:#2E8B57">6</div><div class="d">persona_count<br>用户画像</div></div>
+<div class="card"><div class="t" style="color:#D4A24C">反馈环</div><div style="font-size:24px;font-weight:bold;color:#D4A24C">11</div><div class="d">human_review_checkpoint_count<br>人工复核检查点</div></div>
+<div class="card"><div class="t" style="color:#B4402B">复核环</div><div style="font-size:24px;font-weight:bold;color:#B4402B">11</div><div class="d">exit_mechanism_count<br>失败回退 / 退出机制</div></div>
+<div class="card"><div class="t" style="color:#B4402B">朝圣</div><div style="font-size:24px;font-weight:bold;color:#B4402B">3</div><div class="d">ai_landmark_count<br>AI 朝圣地标</div></div>
+</div>
+<p style="font-size:12px;color:#8A8A8A;margin-top:10px">治理环指标把"四环协作"从概念变成机器可读证据——per-ring 治理度量，与 metrics.json 对账，是本方案独家的 agent-readable city 落地。</p>
+</section>
 <section><h2>来源</h2>
 <table>
 <tr><th>id</th><th>资料</th><th>状态</th></tr>
