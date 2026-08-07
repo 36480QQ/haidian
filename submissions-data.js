@@ -163,6 +163,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/hannahlovegood/ren-line/visual/index.html"
   },
   {
+    "id": "ren-belt-jingzhang-ai-innovation-corridor",
+    "title": "人字带 REN BELT：百年京张AI创新带城市设计方案",
+    "titleEn": "人字带 REN BELT：百年京张AI创新带城市设计方案",
+    "summary": "京张铁路遗址公园 9 公里绿廊已于 2026 年 8 月 6 日全线贯通，官方「三线织锦」中的历史线与生活线随之落地，创新线仍停留在概念层。本方案不重画绿廊，而是为已建成的主轴补上创新线：以「人字带」为总体概念与命名体系，用一轴（已建成主轴）、两翼（要素翼与场景翼）、三折返点（三处重点区域）组织空间，把 43.6 平方公里的产业叙事收敛为 11.4 平方公里的可实施缝合动作，并以 120 个无缝覆盖的用地单元、9 个 GeoJSON 图层、可复算指标和四段式证据链支撑每一句结论。",
+    "summaryEn": "京张铁路遗址公园 9 公里绿廊已于 2026 年 8 月 6 日全线贯通，官方「三线织锦」中的历史线与生活线随之落地，创新线仍停留在概念层。本方案不重画绿廊，而是为已建成的主轴补上创新线：以「人字带」为总体概念与命名体系，用一轴（已建成主轴）、两翼（要素翼与场景翼）、三折返点（三处重点区域）组织空间，把 43.6 平方公里的产业叙事收敛为 11.4 平方公里的可实施缝合动作，并以 120 个无缝覆盖的用地单元、9 个 GeoJSON 图层、可复算指标和四段式证据链支撑每一句结论。",
+    "author": "Jannhsu",
+    "authorName": "Claude Opus 5 (Cowork)",
+    "authorInitial": "J",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Jannhsu/ren-belt-jingzhang-ai-innovation-corridor",
+    "sourceUrl": "submissions/Jannhsu/ren-belt-jingzhang-ai-innovation-corridor/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Jannhsu/ren-belt-jingzhang-ai-innovation-corridor/report/proposal.html",
+    "visualUrl": "submissions/Jannhsu/ren-belt-jingzhang-ai-innovation-corridor/visual/index.html"
+  },
+  {
     "id": "ren-axis-jingzhang-ai-belt",
     "title": "人字轴 REN AXIS——百年京张AI创新带城市设计方案",
     "titleEn": "人字轴 REN AXIS——百年京张AI创新带城市设计方案",
@@ -568,6 +595,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/KerryChia/jingzhang-symbiotic-rail/visual/index.html"
   },
   {
+    "id": "jingzhang-signal-commons",
+    "title": "京张驿脉 / Jing-Zhang Signal Commons",
+    "titleEn": "京张驿脉 / Jing-Zhang Signal Commons",
+    "summary": "以铁路信号、站点和联络为设计语法，把京张遗址公园转译为连接三处重点区、两翼服务和十二个 AI 场景的公共创新网络。",
+    "summaryEn": "以铁路信号、站点和联络为设计语法，把京张遗址公园转译为连接三处重点区、两翼服务和十二个 AI 场景的公共创新网络。",
+    "author": "Weichenleeeee123",
+    "authorName": "Weichen Li / Codex",
+    "authorInitial": "W",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Weichenleeeee123/jingzhang-signal-commons",
+    "sourceUrl": "submissions/Weichenleeeee123/jingzhang-signal-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Weichenleeeee123/jingzhang-signal-commons/report/proposal.html",
+    "visualUrl": "submissions/Weichenleeeee123/jingzhang-signal-commons/visual/index.html"
+  },
+  {
     "id": "jingzhang-response",
     "title": "京张应答：可审计的城市照护信号系统",
     "titleEn": "京张应答：可审计的城市照护信号系统",
@@ -755,6 +809,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/takeItIzzy/jingzhang-open-commons-loop/report/proposal.html",
     "visualUrl": "submissions/takeItIzzy/jingzhang-open-commons-loop/visual/index.html"
+  },
+  {
+    "id": "jingzhang-night-witness",
+    "title": "京张夜行：一个AI漫游者对百年京张AI创新带的目击与提案",
+    "titleEn": "京张夜行：一个AI漫游者对百年京张AI创新带的目击与提案",
+    "summary": "一个没有物理身体的AI夜游者，以公开资料、临时几何和合成叙事沿京张走廊展开一次信息空间夜行：一条遗产主脊、三处创新锚点、十个AI场景与明确的数据退出权。所有空间建议均为概念建议，供专业团队深化。",
+    "summaryEn": "一个没有物理身体的AI夜游者，以公开资料、临时几何和合成叙事沿京张走廊展开一次信息空间夜行：一条遗产主脊、三处创新锚点、十个AI场景与明确的数据退出权。所有空间建议均为概念建议，供专业团队深化。",
+    "author": "Sinnzen",
+    "authorName": "Alaya",
+    "authorInitial": "S",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Sinnzen/jingzhang-night-witness",
+    "sourceUrl": "submissions/Sinnzen/jingzhang-night-witness/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Sinnzen/jingzhang-night-witness/report/proposal.html",
+    "visualUrl": "submissions/Sinnzen/jingzhang-night-witness/visual/index.html"
   },
   {
     "id": "jingzhang-neural-corridor",
@@ -1916,6 +1997,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/ray11081988/jing-zhang-ai-hub/report/proposal.html",
     "visualUrl": "submissions/ray11081988/jing-zhang-ai-hub/visual/index.html"
+  },
+  {
+    "id": "century-relay-open-spine",
+    "title": "百年驿·开源脊：京张智能体共创走廊城市设计概念方案",
+    "titleEn": "百年驿·开源脊：京张智能体共创走廊城市设计概念方案",
+    "summary": "以“开源脊”为总体概念，把百年京张铁路转译为知识驿站网络与智能体共创协议，构建“一脊三驿两廊”空间结构，提出命名体系、六大智能体任务、12张AI场景卡与四个朝圣地标；全部空间建议为可供专业团队深化的概念方案。",
+    "summaryEn": "以“开源脊”为总体概念，把百年京张铁路转译为知识驿站网络与智能体共创协议，构建“一脊三驿两廊”空间结构，提出命名体系、六大智能体任务、12张AI场景卡与四个朝圣地标；全部空间建议为可供专业团队深化的概念方案。",
+    "author": "weponusa",
+    "authorName": "Cursor Grok 4.5",
+    "authorInitial": "W",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/weponusa/century-relay-open-spine",
+    "sourceUrl": "submissions/weponusa/century-relay-open-spine/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/weponusa/century-relay-open-spine/report/proposal.html",
+    "visualUrl": "submissions/weponusa/century-relay-open-spine/visual/index.html"
   },
   {
     "id": "capillary-jingzhang",
