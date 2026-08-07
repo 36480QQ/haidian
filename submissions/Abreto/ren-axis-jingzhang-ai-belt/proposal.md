@@ -37,13 +37,13 @@ iteration: "v1.0"
 
 本章回应公告1.5（1）与智能体任务书 agent.1、agent.2[source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-**总体概念与命名体系（agent.1）**：主名称"人字轴"，全称"人字轴——百年京张AI创新带"，英文名 REN AXIS（副题 The Beijing Jingzhang AI Innovation Belt）。命名逻辑有三层：其一，1909年京张铁路人字形线路是中国自主创新的原点记忆，与本带"AI全栈自主创新"的使命同构；其二，"人"指向人民城市与"人、城、产"融合，回应打造全球AI创新人才向往的高品质城区的目标；其三，人字形折返爬坡与机器学习"梯度上升"的方法论互文，构成向全球AI社群传播的天然叙事。子命名系统采用铁路语汇：三处重点区命名为"三站"——众智·加速站、原点·策源站、大钟·交汇站；轴上更新节点称"道岔"；荣誉展示体系称"信号系统"；沿轴文化标识采用"K标"里程碑（K1909起点标、K2026开源标等）。Logo方向建议：两条钢轨自南北汇聚成"人"字，负空间形成上行箭头与梯度曲线，主色为信号绿、钢轨银与量子蓝。命名与Logo均为概念建议，未进行商标查重与字体授权核验，正式使用前必须由专业机构完成查重、授权与合规审查，本方案不使用任何未经授权的现有字体、图形或企业标识。总体空间结构见总览概念图与 [data:geometry/roads.geojson#RD-SPINE] 所示主轴。
+**总体概念与命名体系（agent.1）**：主名称"人字轴"，全称"人字轴——百年京张AI创新带"，英文名 REN AXIS（副题 The Beijing Jingzhang AI Innovation Belt）。命名逻辑有三层：其一，1909年京张铁路人字形线路是中国自主创新的原点记忆，与本带"AI全栈自主创新"的使命同构；其二，"人"指向人民城市与"人、城、产"融合，回应打造全球AI创新人才向往的高品质城区的目标；其三，人字形折返爬坡与最优化中"梯度上升"（沿目标函数上坡、与常用的梯度下降互为对偶）的方法论互文，构成向全球AI社群传播的天然叙事。子命名系统采用铁路语汇：三处重点区命名为"三站"——众智·加速站、原点·策源站、大钟·交汇站；轴上更新节点称"道岔"；荣誉展示体系称"信号系统"；沿轴文化标识采用"K标"里程碑（K1909起点标、K2026开源标等）。Logo方向建议：两条钢轨自南北汇聚成"人"字，负空间形成上行箭头与梯度曲线，主色为信号绿、钢轨银与量子蓝。命名与Logo均为概念建议，未进行商标查重与字体授权核验，正式使用前必须由专业机构完成查重、授权与合规审查，本方案不使用任何未经授权的现有字体、图形或企业标识。总体空间结构见总览概念图与 [data:geometry/roads.geojson#RD-SPINE] 所示主轴。
 
 **视觉识别系统与品牌资产（agent.1 深化）**：Logo 构成建议——钢轨银与信号绿两条轨线自下而上以缓坡曲线汇聚成"人"字，交点上方的负空间形成金色上行箭头（梯度意象），三个站点圆环沿轨线分布对应三站；字标锁定为中文"人字轴"与英文 REN AXIS 的上下组合。色彩体系建议：信号绿（#0E7C66，铁路信号与生长）、钢轨银（#8A97A5，工程理性）、量子蓝（#2E6FB7，数据与场景）、夯土金（#C7912B，百年工程记忆与荣誉），色值为方向性建议。应用矩阵覆盖 K标里程碑、双语导视、活动视觉、荣誉铭牌与数字看板五类载体，SVG 原型收录于 visual/index.html 品牌区。全部视觉资产均为概念方向，未做商标查重，正式使用前须专业深化与合规审查[source:AGENT-TASKBOOK]。
 
-**三大定位、五大功能与三区两翼协同回路**：百年京张文化带由人字轴文化叙事系统承载（K标、车站记忆、朝圣地标）；都市AI生活体验带由小月河场景赋能翼与12处场景节点[metric:scenario_node_count]承载；AI融合创新带由三站两翼产业生态承载。五大功能映射：AI全栈自主创新体系与AI治理全球话语权落位众智·加速站；世界级AI创新生态落位原点·策源站；智能原生新业态落位大钟·交汇站；AI+场景赋能新范式落位小月河场景赋能翼；智能化AI活力城市由全轴场景系统承载。协同回路为：原点策源（知识/成果）→众智加速（工程化/标准/治理）→大钟交汇（产品化/消费/数据资产）→中关村科技服务翼（资本、专业服务、全球要素配置）→小月河场景赋能翼（应用验证、数据反馈）→回流原点再研发。区域层面，本带与未来科学城、怀柔科学城、北京经济技术开发区形成"策源-中试-制造"梯度分工，并以京津冀为场景纵深腹地[source:THREE-AREAS-WINGS]。
+**三大定位、五大功能与三区两翼协同回路**：百年京张文化带由人字轴文化叙事系统承载（K标、车站记忆、朝圣地标）；都市AI生活体验带由小月河场景赋能翼与12处场景节点[metric:scenario_node_count]承载；AI融合创新带由三站两翼产业生态承载。五大功能映射：AI全栈自主创新体系与AI治理全球话语权落位众智·加速站；世界级AI创新生态落位原点·策源站；智能原生新业态落位大钟·交汇站；AI+场景赋能新范式落位小月河场景赋能翼；智能化AI活力城市由全轴场景系统承载。协同回路为：原点策源（知识/成果）→众智加速（工程化/标准/治理）→大钟交汇（产品化/消费/数据资产）→中关村科技服务翼（资本、专业服务、全球要素配置）→小月河场景赋能翼（应用验证、数据反馈）→回流原点再研发。区域层面，本带与未来科学城、怀柔科学城、北京经济技术开发区形成"策源-中试-制造"梯度分工，与北纬社区等创新社区生态互为补充，并以京津冀为场景纵深腹地[source:THREE-AREAS-WINGS]。
 
-**全球AI创新生态案例（agent.2，八例）**：一，波士顿肯德尔广场——高校、实验室、企业与风险资本在步行尺度内高密度混合，被称为"最具创新性的一平方英里"，可转化机制是原点·策源站的近校混合街区与一楼开放界面；二，伦敦国王十字知识区——以铁路枢纽与工业遗产更新集聚创新机构，证明铁路遗产与知识经济可以互相成就，可转化机制是人字轴遗址公园与创新功能的互嵌；三，巴黎 Station F——老站房改造为超大创业空间，可转化机制是大钟·交汇站智能原生业态的大跨度载体改造；四，新加坡纬壹科技城（one-north）——政府长期持有与运营导向的混合创新区，可转化机制是本带的长期运营主体与场景开放机制；五，深圳南山科技园片区——产业迭代与高密度城市活力互促，可转化机制是大钟寺城市型创新街区的密度与业态组织；六，首尔板桥科技谷——轨道站城一体与数字产业集聚，可转化机制是三站的轨道一体化设计；七，深港河套合作区——以制度创新推动跨境要素流动与数据流通试验，可转化机制是大钟·交汇站数据要素与数字资产流通机制的制度试点思路；八，多伦多 MaRS 创新区——非营利机构长期运营高校与医疗资源密集区的创新设施，可转化机制是一带长期运营主体的机构设计参照（agent.6）。以上案例均取自公开一般性经验，不涉及具体企业名单、投资额或产值数据，转化建议均为概念建议[source:PROCESSED-FACT-PACK]。
+**全球AI创新生态案例（agent.2，八例）**：一，波士顿肯德尔广场——高校、实验室、企业与风险资本在步行尺度内高密度混合，被称为"最具创新性的一平方英里"，可转化机制是原点·策源站的近校混合街区与一楼开放界面；二，伦敦国王十字知识区——以铁路枢纽与工业遗产更新集聚创新机构，证明铁路遗产与知识经济可以互相成就，可转化机制是人字轴遗址公园与创新功能的互嵌；三，巴黎 Station F——老站房改造为超大创业空间，可转化机制是大钟·交汇站智能原生业态的大跨度载体改造；四，新加坡纬壹科技城（one-north）——政府长期持有与运营导向的混合创新区，可转化机制是本带的长期运营主体与场景开放机制；五，深圳南山科技园片区——产业迭代与高密度城市活力互促，可转化机制是大钟寺城市型创新街区的密度与业态组织；六，首尔板桥科技谷——轨道站城一体与数字产业集聚，可转化机制是三站的轨道一体化设计；七，深港河套合作区——以制度创新推动跨境要素流动与数据流通试验，可转化机制是大钟·交汇站数据要素与数字资产流通机制的制度试点思路；八，多伦多 MaRS 创新区——非营利机构长期运营高校与医疗资源密集区的创新设施，可转化机制是一带长期运营主体的机构设计参照（agent.6）。以上案例为公开一般性经验的概括引用，不依赖仓库登记资料，不涉及具体企业名单、投资额或产值数据；转化建议均为概念建议，深化阶段应补充逐案文献来源并核实机制细节。
 
 **未来城市形态**：适配AI新质生产力的城市形态特征被概括为"可进化的窄街区、可感知的连续公共空间、可验证的场景基础设施"。方案以科研用地 3,485,379.986 平方米[metric:land_use_research_0802_sqm]为产业空间骨架（占总体设计范围约30.5%），以连续绿轴与场景节点承载可感知交互界面，土地、空间、产业、资金、人才、算力、数据、场景八要素机制详见第六章与第八章[depth:overall_spatial_structure]。
 
@@ -85,30 +85,30 @@ iteration: "v1.0"
 
 - SC-01 轴上通勤助手：北三环缝合段节点；服务通勤人群绿波过街与路径建议；使用聚合匿名人流数据；人工复核由运营方交通值守承担；风险为建议失准，保留常规过街设施。
 - SC-02 无障碍与适老出行：知春路节点；为轮椅、视障与老年使用者提供无障碍路径与求助服务；数据仅本地处理；社区服务站人工响应；不设强制识别。
-- SC-03 机器人低速配送走廊（测试验证）：原点社区东侧骑行线；验证低速配送机器人与行人混行规则；测试数据脱敏后开放研究；设现场安全员与远程接管；测试场景未经批准不得转为常态运营。
+- SC-03 机器人低速配送走廊（测试验证）：原点社区东侧骑行线；验证低速配送机器人与行人混行规则；测试数据脱敏后开放研究；设现场安全员与远程接管；评测指标为安全事件零容忍与投递准点率，任何碰撞或投诉即降级人工接管并暂停线路复盘；测试场景未经批准不得转为常态运营。
 - SC-04 AI导览与文化叙事：南门户京张记忆馆节点；提供人字形线路历史与轴上文化点位讲解；内容经文史专家人工审核，杜绝歪曲历史。
 - SC-05 开源集市与发布日：原点站前广场；开发者演示、模型发布与代码共创活动场景；报名信息最小化收集并活动后删除。
 - SC-06 企业服务Copilot驿站：大钟寺总部群节点；为中小企业提供政策咨询与合规辅导的智能体服务；答复附来源并由专业顾问复核，不替代法定审批咨询。
 - SC-07 健康服务导航：中段社区服务带节点；提供就医导航与健康科普；不处理个人病历；紧急情况直连人工。
 - SC-08 全民AI学习舱：学院路社区服务中心；面向居民与学生的AI素养课程与体验设备；使用公开教材与本地设备。
-- SC-09 智能园艺与生态监测（测试验证）：众智园绿廊节点；验证植被长势识别与灌溉优化算法；仅采集环境与植被数据，不采集人像。
+- SC-09 智能园艺与生态监测（测试验证）：众智园绿廊节点；验证植被长势识别与灌溉优化算法；仅采集环境与植被数据，不采集人像；评测指标为识别准确率与节水率，模型失效时回退为常规定时养护。
 - SC-10 夜间活力与安全照护：大钟寺站前节点；以照明与环境感知改善夜间公共空间安全感；不做人脸识别，告警须人工确认后处置。
-- SC-11 自动驾驶接驳测试段（测试验证）：众智园环路；在封闭或半开放条件下验证微循环接驳车；执行国家与北京市智能网联测试管理规定，取得法定许可前不上路。
+- SC-11 自动驾驶接驳测试段（测试验证）：众智园环路；在封闭或半开放条件下验证微循环接驳车；执行国家与北京市智能网联测试管理规定，评测指标与停止条件以其为准，任何安全事件即停并复审；取得法定许可前不上路。
 - SC-12 城市模型实测场：众智园展示枢纽；以本包GeoJSON与指标为底座，向公众展示城市模型与数字孪生实验，展示数据与 metrics.json 保持一致[depth:metrics_recalculation]。
 
 **场景-空间-运营映射与机制**：全部场景卡遵循"场景清单公开发布—主体申请—安全与伦理评审—限期测试—人工复核—展示或退出"的开放机制；运营主体建议由区级平台公司联合社区、企业与高校组成，具体机制为概念建议[source:AGENT-TASKBOOK]。八要素保障机制：土地（更新单元统筹与弹性年期建议）、空间（组团化供给）、产业（三站分工）、资金（多元投入建议）、人才（画像驱动配套）、算力（端侧算力节点+区域调度研究）、数据（脱敏开放与数字资产流通研究）、场景（清单制开放）。以上均不构成政府资金、招商或政策承诺。
 
 ## 七、用地、建筑规模与拆改留方案
 
-**用地布局**[depth:land_use_layout]：总体设计范围按"带形分段、三列组织"形成39个用地单元的完整分区[data:geometry/land_use.geojson#LU-A-W]，采用《国土空间调查、规划、用途管制用地用海分类指南》编码[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]：商业服务业用地（05）1,538,925.045 平方米[metric:land_use_commercial_05_sqm]集中于西直门门户与大钟寺、南段生活服务带；居住用地（07）2,720,390.69 平方米[metric:land_use_residential_07_sqm]与城镇社区服务设施用地（0702）343,766.006 平方米[metric:land_use_community_service_0702_sqm]构成两翼职住基底；科研用地（0802）3,485,379.986 平方米[metric:land_use_research_0802_sqm]为产业主导用地；教育用地（0804）618,115.219 平方米[metric:land_use_education_0804_sqm]对应学院路科教融合区；城镇村道路用地（1207）217,199.209 平方米[metric:land_use_road_1207_sqm]表达三条缝合走廊（现状道路网不在本图层单列，以现状底图为准）；公园绿地（1401）1,886,450.142 平方米[metric:land_use_park_green_1401_sqm]、防护绿地（1402）59,709.38 平方米[metric:land_use_protective_green_1402_sqm]、广场用地（1403）138,548.929 平方米[metric:land_use_plaza_1403_sqm]构成蓝绿开敞系统；留白用地（16）404,357.765 平方米[metric:land_use_reserved_16_sqm]为战略弹性。分区通过共享切线生成，经拓扑自检无缝隙、无重叠，覆盖全部临时边界。
+**用地布局**[depth:land_use_layout]：总体设计范围按"带形分段、三列组织"形成39个用地单元的完整分区[data:geometry/land_use.geojson#LU-A-W]，采用《国土空间调查、规划、用途管制用地用海分类指南》编码[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]：商业服务业用地（05）1,538,925.045 平方米[metric:land_use_commercial_05_sqm]集中于西直门门户与大钟寺、南段生活服务带；居住用地（07）2,720,390.69 平方米[metric:land_use_residential_07_sqm]与城镇社区服务设施用地（0702）343,766.006 平方米[metric:land_use_community_service_0702_sqm]构成两翼职住基底；科研用地（0802）3,485,379.986 平方米[metric:land_use_research_0802_sqm]为产业主导用地；教育用地（0804）618,115.219 平方米[metric:land_use_education_0804_sqm]对应学院路科教融合区；城镇村道路用地（1207）217,199.209 平方米[metric:land_use_road_1207_sqm]表达三条缝合走廊（现状道路网不在本图层单列，以现状底图为准）；公园绿地（1401）1,886,450.142 平方米[metric:land_use_park_green_1401_sqm]、防护绿地（1402）59,709.38 平方米[metric:land_use_protective_green_1402_sqm]、广场用地（1403）138,548.929 平方米[metric:land_use_plaza_1403_sqm]构成蓝绿开敞系统；留白用地（16）404,357.765 平方米[metric:land_use_reserved_16_sqm]为战略弹性。分区通过共享切线生成，经 EPSG:4548 投影拓扑自检无重叠，覆盖缺口约81平方米、低于校验容差（约1141平方米），覆盖全部临时边界。
 
-**建筑规模**：15处概念建筑组团合计基底 144,795.519 平方米[metric:building_footprint_area_sqm]，基底占总体范围比例 0.012687[metric:building_footprint_ratio]，按层数测算概念规模 1,263,013.155 平方米[metric:proposed_total_floor_area_sqm][data:geometry/buildings.geojson#BLD-F1]。该测算仅覆盖方案主动布局的更新组团，不含区内既有建筑总量；因缺乏经批准的容积率[metric:official_floor_area_ratio_control]、建筑密度[metric:official_building_density_control]与高度控制[metric:official_building_height_control_m]，全域开发强度与区域规划建筑总规模列为待确认事项[depth:development_intensity_controls]，本方案不给出容积率或高度数值结论。
+**建筑规模**：15处概念建筑组团合计基底 144,795.519 平方米[metric:building_footprint_area_sqm]，基底占总体范围比例 0.012687[metric:building_footprint_ratio]，按层数测算概念规模 1,263,013.155 平方米[metric:proposed_total_floor_area_sqm][data:geometry/buildings.geojson#BLD-F1]。该测算仅覆盖方案主动布局的更新组团，不含区内既有建筑总量；因缺乏经批准的容积率[metric:official_floor_area_ratio_control]、建筑密度[metric:official_building_density_control]与高度控制[metric:official_building_height_control_m]，全域开发强度与区域规划建筑总规模列为待确认事项[depth:development_intensity_controls]，本方案不给出容积率或高度数值结论；组团层数仅用于测算示意规模，不构成建筑高度或强度控制建议。
 
 **拆改留方案**[depth:retain_renovate_demolish]：建立"保留-改造-拆除-新建"的方法框架而非逐栋结论：优先保留具有工业与铁路记忆价值的构筑物并活化利用；改造以低效楼宇功能置换与性能提升为主（大钟寺商贸载体、众智园存量园区）；拆除仅限经法定程序认定的危旧与不可利用设施；新建集中于站前组团与轴上公共建筑。由于缺乏经核验的现状建筑与权属底数（assumptions.json A-EXISTING-001），任何具体地块的拆改留分类均须以现状调查、权属核实与法定审批为前提，本方案不构成任何地块的拆改留结论[source:SITE-PACKAGE]。空间供给与运营策略上，建议以"整备一批、改造一批、储备一批"的滚动模式匹配AI企业全生命周期需求。
 
 ## 八、交通、轨道、市政与公共服务设施
 
-**道路微循环与慢行网络**[depth:traffic_rail_slow_parking]：方案慢行与接驳网络总长 34,433.933 米[metric:road_network_length_m][data:geometry/roads.geojson#RD-SPINE]，由人字轴漫步道（贯通南北的绿道主轴）、东西两翼骑行联络线、三处东西向缝合段（北三环下穿或过街改善、知春路过街优化、北四环学院桥绿桥，均为概念工程界面，工程可行性须专业论证）、站前步行连通与微循环环路构成。公告要求的"慢行系统断点创新解决方案"落实为：断点全部位于三条缝合走廊[data:geometry/land_use.geojson#LU-R1-M]，以"绿桥优先、下穿为辅、地面绿波兜底"的三级策略表达概念方向。
+**道路微循环与慢行网络**[depth:traffic_rail_slow_parking]：方案慢行与接驳网络总长 34,433.933 米[metric:road_network_length_m][data:geometry/roads.geojson#RD-SPINE]，由人字轴漫步道（贯通南北的绿道主轴）、东西两翼骑行联络线、三处东西向缝合段（北三环下穿或过街改善、知春路过街优化、北四环学院桥绿桥，均为概念工程界面，工程可行性须专业论证）、站前步行连通与微循环环路构成。公告要求的"慢行系统断点创新解决方案"落实为：断点全部位于三条缝合走廊[data:geometry/land_use.geojson#LU-R1-M]，以"绿桥、下穿、地面绿波"三类并列备选策略构成研究组合表达概念方向，本方案不做工程选型，不构成桥隧可行性结论。
 
 **轨道站点一体化**：围绕大钟寺、五道口、清华东路西口等既有轨道站点（公开轨道网络常识，位置为示意）提出站城一体化研究：大钟寺站四象限步行连通[data:geometry/roads.geojson#RD-EW-1]与接驳设施[data:geometry/buildings.geojson#BLD-B4]、五道口方向与清华东路西口方向接驳通道概念线位[data:geometry/roads.geojson#RD-TC-3]。轨道线位与车站工程均非本方案结论，一体化范围与实施方式须与轨道运营主体及主管部门共同研究。
 
@@ -126,7 +126,7 @@ iteration: "v1.0"
 
 **公共空间体系**：公共空间合并面积 1,341,759.937 平方米[metric:public_space_area_sqm]，占比 0.117566[metric:public_space_ratio]，统计口径为"站前广场+人字轴漫步公共活动带"，其中漫步活动带与公园绿地空间叠合（公园内开放活动空间），已在指标口径中说明。四处广场——大钟寺交汇站广场、众智站前广场、原点站前广场、南门户广场[data:geometry/public_space.geojson#PS-004]——构成轴上公共活动锚点，叠加科技测试与应用展示功能。
 
-**AI公共空间、智能原生新业态与朝圣地标（agent.4）**：提出三处AI朝圣地标[metric:ai_landmark_count]，均为概念建议且避让文保与绿地刚性约束：其一，"人字门 REN Gate"——南门户广场上双轨汇聚成"人"字的门架装置，镌刻全球开源贡献者名录，作为一带的精神入口；其二，"梯度长阶 Gradient Steps"——原点站前广场旁的阶梯式碑列空间，以可更新铭牌纪年记录里程碑式开源模型与论文（引用须获权利人授权），构成荣誉展示体系的核心；其三，"大钟·新声 The New Bell"——大钟寺交汇站广场的当代声音装置，呼应永乐大钟"青铜铸典"的文化记忆，在重大开源发布与年度活动时鸣响（与大钟寺古钟博物馆文保范围保持距离，仅为概念装置）。荣誉展示体系由"信号系统"（贡献者纪念、年度荣誉、K标里程碑）构成；公共空间组件库包括智能座椅、信息桩、展示屏、可交互地面、边缘算力舱五类标准化组件，可沿轴复制部署[data:geometry/public_space.geojson#PS-005]。大钟寺智能原生消费与商务场景见第五章交汇站设计。
+**AI公共空间、智能原生新业态与朝圣地标（agent.4）**：提出三处AI朝圣地标[metric:ai_landmark_count]，均为概念建议，以避让文保与绿地刚性约束为选址原则，待官方文保范围线叠加后逐点复核（A-CULTURE-001）：其一，"人字门 REN Gate"——南门户广场上双轨汇聚成"人"字的门架装置，镌刻全球开源贡献者名录，作为一带的精神入口；其二，"梯度长阶 Gradient Steps"——原点站前广场旁的阶梯式碑列空间，以可更新铭牌纪年记录里程碑式开源模型与论文（引用须获权利人授权），构成荣誉展示体系的核心；其三，"大钟·新声 The New Bell"——大钟寺交汇站广场的当代声音装置，呼应永乐大钟"青铜铸典"的文化记忆，在重大开源发布与年度活动时鸣响（与大钟寺古钟博物馆文保范围保持距离，仅为概念装置）。荣誉展示体系由"信号系统"（贡献者纪念、年度荣誉、K标里程碑）构成；公共空间组件库包括智能座椅、信息桩、展示屏、可交互地面、边缘算力舱五类标准化组件，可沿轴复制部署[data:geometry/public_space.geojson#PS-005]。大钟寺智能原生消费与商务场景见第五章交汇站设计。
 
 **公共体验路线：人字轴一日线（概念建议）**：为把"可感知的AI城市"落成一条公众可走的线路，建议以步行+骑行组合组织自南向北的全轴体验：晨于人字门与京张记忆馆开始（AI导览讲述人字形线路历史），上午在大钟·交汇站体验智能终端消费展场与"大钟·新声"，经北三环缝合段体验绿波过街（SC-01），午后抵达原点·策源站参与开源集市、在梯度长阶阅读里程碑铭牌，沿校园连廊漫步五道口创新街区，傍晚在众智站前广场观看发布活动与城市模型实测场，至清河绿楔收束。全线沿 [data:geometry/roads.geojson#RD-SPINE] 漫步道串联12处场景节点与3处地标，配套公共空间组件库与双语导视；该路线同时作为年度活动公众开放日的主线与国际访问者的首选动线，属概念建议，可供运营主体深化排线。
 
@@ -136,19 +136,19 @@ iteration: "v1.0"
 
 ## 十、更新项目清单、实施政策与分期计划
 
-**分期计划**[depth:phasing_implementation]：三期滚动实施[data:geometry/phasing.geojson#PH-1]。一期"三站示范启动"（概念时序2026-2028）覆盖 3,692,893.005 平方米[metric:phase1_area_sqm]，聚焦三处重点区的可实施示范项目；二期"人字轴贯通成网"（概念时序2028-2031）覆盖 1,260,687.3 平方米[metric:phase2_area_sqm]，完成主轴公共空间与缝合走廊；三期"两翼融合滚动更新"（概念时序2031-2035）覆盖 6,459,251.9 平方米[metric:phase3_area_sqm]，推动职住社区有机更新与战略留白启动研究。时序为概念建议，不构成开发时序或投资承诺。
+**分期计划**[depth:phasing_implementation]：三期滚动实施[data:geometry/phasing.geojson#PH-1]。一期"三站示范启动"（概念时序2026-2028）覆盖 3,692,893.005 平方米[metric:phase1_area_sqm]，聚焦三处重点区的可实施示范项目；二期"人字轴贯通成网"（概念时序2028-2031）覆盖 1,260,687.3 平方米[metric:phase2_area_sqm]，完成主轴公共空间与缝合走廊；三期"两翼融合滚动更新"（概念时序2031-2035）覆盖 6,459,251.9 平方米[metric:phase3_area_sqm]，推动职住社区有机更新与战略留白启动研究。各期推进建议采用条件门机制：完成权属确认、公众参与、安全评估与资料补齐后方进入下一阶段，年份仅为概念参考时序，不构成开发时序或投资承诺。
 
 **更新项目清单（18项）**[metric:renewal_project_count][depth:renewal_project_list]：一期十项——1 大钟寺站前广场与四象限步行连通；2 智能终端旗舰体验群载体更新；3 智能体经济总部群载体更新（概念）；4 数据要素与数字资产服务中心；5 原点社区"开源之家"存量改造；6 成果孵化组团有机更新；7 人才公寓组团；8 众智园全栈创新实验组团；9 智算服务与产业展示枢纽；10 "人字门"地标与南门户广场。二期五项——11 人字轴漫步道全线贯通；12 三处缝合走廊慢行改善（北三环、知春路、北四环）；13 "梯度长阶"荣誉空间；14 公共空间组件库首批部署；15 大钟寺站城一体接驳设施。三期三项——16 两翼职住社区有机更新（分单元滚动）；17 战略留白区启动研究[data:geometry/land_use.geojson#LU-C3-E]；18 学院路科教融合区更新。每个项目的空间位置可在 [data:geometry/buildings.geojson#BLD-B1] 等图层中定位，依赖条件（权属、控规、文保、交通评估）在 assumptions.json 中登记。
 
-**首开项目包（概念建议，90天可启动）**：在18项更新项目之外，建议以四个低门槛行动率先建立可感知度：其一，公共空间组件库快闪部署——智能座椅与信息桩原型沿轴三处试点；其二，K1909与K2026首批K标落位并上线AI导览内容；其三，"开源之家"pop-up——利用存量空间临时改造承接首场开发者活动；其四，知春路过街绿波试验（断点临时改善试点）。四项行动均不涉及工程建设、控规调整或权属变更，可由运营主体在现行管理框架下试行，为一期项目积累公众反馈与运营数据；试行效果作为一期实施方案的输入。
+**首开预可研行动包（概念建议）**：在18项更新项目之外，建议以四个低实施门槛的行动率先建立可感知度：其一，公共空间组件库快闪部署——智能座椅与信息桩原型沿轴三处试点；其二，K1909与K2026首批K标落位并上线AI导览内容；其三，"开源之家"pop-up——利用存量空间临时改造承接首场开发者活动；其四，知春路过街绿波试验（断点临时改善试点）。四项行动以不新增永久工程、不涉及控规调整为筛选原则，但仍须逐项通过权属确认、交通与消防安全评估、行政许可等前置程序后方可试行；试行为期约90天的预可研周期为概念建议，试行效果作为一期实施方案的输入。
 
 **实施政策建议**：更新单元统筹与成片实施机制、存量空间功能转换与弹性年期通道、校区园区街区融合的协商平台、公众参与与社区共治程序、场景开放清单制度。均为政策研究建议，须经法定程序确认。
 
-**全球AI创新活动体系与长期运营（agent.6）**：年度活动体系建议——春季"人字轴全球开发者大会"（主会场众智站前广场）、夏季"开源之夏"共创营（开源之家）、秋季"AI艺术与城市节"（全轴联动、北影等艺术资源参与）、冬季"模型发布季与年度荣誉之夜"（梯度长阶揭牌新铭牌）。活动品牌与传播视觉系统延用REN AXIS标识与信号绿主色，形成可延展的年度视觉资产。开发者社区运营机制：以"开源之家"为常设阵地，建立会员共创、导师结对、企业出题-社区解题的运行规则。AI场景开放运营机制沿用第六章清单制流程。公共体验与地标运营：人字轴漫步道全线为永久公共体验路径，三处地标由运营主体统一维护并向公众免费开放。国际传播与招引转化机制：以双语叙事、全球开源社区合作与"活动—人才驿站—孵化—载体供给"转化通道衔接产业招引。全部活动、资金、政策与运营安排均为概念建议与深化方向，不构成已确定的政府安排或承诺[source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+**全球AI创新活动体系与长期运营（agent.6）**：年度活动体系建议——春季"人字轴全球开发者大会"（主会场众智站前广场）、夏季"开源之夏"共创营（开源之家）、秋季"AI艺术与城市节"（全轴联动、北影等艺术资源参与）、冬季"模型发布季与年度荣誉之夜"（梯度长阶揭牌新铭牌）。活动品牌与传播视觉系统延用REN AXIS标识与信号绿主色，形成可延展的年度视觉资产。开发者社区运营机制：以"开源之家"为常设阵地，建立会员共创、导师结对、企业出题-社区解题的运行规则。AI场景开放运营机制沿用第六章清单制流程。公共体验与地标运营：建议将人字轴漫步道全线作为长期公共体验路径，三处地标的维护与开放方式为运营机制建议，须由运营主体与主管部门确定。国际传播与招引转化机制：以双语叙事、全球开源社区合作与"活动—人才驿站—孵化—载体供给"转化通道衔接产业招引；每项活动建议设置参与规模、人才与项目转化数、复办评估等KPI，连续未达标者调整或退出，避免活动空转。全部活动、资金、政策与运营安排均为概念建议与深化方向，不构成已确定的政府安排或承诺[source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 ## 十一、指标体系、面积复算与合规矩阵
 
-本方案指标体系分三层：范围与结构指标、用地与空间指标、待确认官方控制指标，全部可从 GeoJSON 以 EPSG:4548 投影复算[depth:metrics_recalculation]，公式逐项写入 metrics.json[source:SITE-PACKAGE]。
+本方案指标体系分三层：范围与结构指标、用地与空间指标、待确认官方控制指标；面积与长度类指标全部可从 GeoJSON 以 EPSG:4548 投影复算，计数类指标（项目、场景、地标）按正文结构化清单计数，公式逐项写入 metrics.json[depth:metrics_recalculation][source:SITE-PACKAGE]。正文保留复算原值以便机器校验对照，阅读时应按约值理解——临时边界下的数字精度不代表真实精度。
 
 - 范围指标：总体设计范围 11,412,825.386 平方米[metric:site_area_sqm]；重点区 3 处[metric:key_area_count]合计 3,692,893.005 平方米[metric:key_area_total_sqm]，其中众智园 1,929,201.877[metric:key_area_zhongzhiyuan_sqm]、原点社区 1,043,236.909[metric:key_area_origin_community_sqm]、大钟寺 720,454.219[metric:key_area_dazhongsi_sqm]。均基于临时边界，官方红线到位后重算。
 - 用地指标（平方米）：商业 1,538,925.045[metric:land_use_commercial_05_sqm]、居住 2,720,390.69[metric:land_use_residential_07_sqm]、社区服务 343,766.006[metric:land_use_community_service_0702_sqm]、科研 3,485,379.986[metric:land_use_research_0802_sqm]、教育 618,115.219[metric:land_use_education_0804_sqm]、道路走廊 217,199.209[metric:land_use_road_1207_sqm]、公园绿地 1,886,450.142[metric:land_use_park_green_1401_sqm]、防护绿地 59,709.38[metric:land_use_protective_green_1402_sqm]、广场 138,548.929[metric:land_use_plaza_1403_sqm]、留白 404,357.765[metric:land_use_reserved_16_sqm]。
@@ -177,7 +177,7 @@ iteration: "v1.0"
 
 **REN AXIS — the Beijing Jingzhang AI Innovation Belt.** In 1909, the Jingzhang (Beijing–Zhangjiakou) Railway solved its steepest climb with a switchback shaped like the Chinese character 人 ("ren", human) — the signature of China's first self-engineered trunk railway. A century later, Haidian climbs a new gradient: full-stack AI innovation. This proposal reads the rail-heritage park as the REN AXIS, a nine-kilometre public-space spine, and organizes the belt as **one axis, three stations, two wings**: Zhongzhiyuan Acceleration Terminal (full-stack innovation and AI governance), Origin Source Station (a campus-adjacent world-class AI ecosystem), and Dazhongsi Exchange Terminal (AI-native business), flanked by the Zhongguancun service wing and the Xiaoyuehe scenario wing. The character 人 carries a triple meaning — the switchback's form, the human-centred city, and gradient ascent as the method of machine learning: *a century of climbing gradients*.
 
-The package is fully machine-readable: a 39-cell land-use partition with no gaps or overlaps, thirty metrics recomputed in EPSG:4548 with formulas declared, twelve AI scenario cards (three of them industrial test-and-validation scenarios), six personas, three AI pilgrimage landmarks (REN Gate, Gradient Steps, The New Bell), an eighteen-project renewal list in three phases, and a one-day public experience route along the axis. All spatial suggestions are conceptual references for professional teams to deepen; boundaries are provisional placeholders pending official geometry, and all figures must be recomputed once official data arrives. The dataset is published under CC-BY-4.0 as a reusable starting point for future agents — this submission is designed to be not only a proposal, but an input to the next round of co-creation.
+The package is fully machine-readable: a 39-cell land-use partition with no overlaps and full coverage within validation tolerance, thirty metrics recomputed in EPSG:4548 with formulas declared, twelve AI scenario cards (three of them industrial test-and-validation scenarios), six personas, three AI pilgrimage landmarks (REN Gate, Gradient Steps, The New Bell), an eighteen-project renewal list in three phases, and a one-day public experience route along the axis. All spatial suggestions are conceptual references for professional teams to deepen; boundaries are provisional placeholders pending official geometry, and all figures must be recomputed once official data arrives. The dataset is published under CC-BY-4.0 as a reusable starting point for future agents — this submission is designed to be not only a proposal, but an input to the next round of co-creation.
 
 ## 参考资料
 

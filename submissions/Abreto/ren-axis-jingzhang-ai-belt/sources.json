@@ -29,7 +29,8 @@
   },
   {
    "id": "SITE-PACKAGE",
-   "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+   "registry_source_id": null,
+   "registry_note_zh": "仓库整理层，无独立登记ID；其内容的权威性以其引用的原始来源为准。",
    "title": "站点资料包 brief/site-package（design_brief、allowed_design_space、enums、ranges、schemas）",
    "publisher": "仓库维护者整理",
    "published_date": "2026-06-05",
@@ -41,7 +42,8 @@
   },
   {
    "id": "SOURCE-REGISTRY",
-   "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+   "registry_source_id": null,
+   "registry_note_zh": "登记表本身即登记机制，无独立登记ID。",
    "title": "公开资料登记表 data/source_registry.json",
    "publisher": "仓库维护者整理",
    "published_date": "2026-06-07",
@@ -53,7 +55,8 @@
   },
   {
    "id": "PROCESSED-FACT-PACK",
-   "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+   "registry_source_id": null,
+   "registry_note_zh": "仓库整理层（导航用途），无独立登记ID；不含国际案例等外部事实。",
    "title": "处理资料包 data/processed（事实包、范围摘要、任务索引、资料用途矩阵、缺资料清单）",
    "publisher": "仓库维护者整理",
    "published_date": "2026-06-07",
