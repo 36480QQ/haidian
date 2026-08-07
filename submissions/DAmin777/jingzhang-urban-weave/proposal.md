@@ -94,6 +94,8 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ### 众智园自主创新站
 
+本重点区直接对齐 [data:geometry/key_areas.geojson#PROV-KEY-001]；当前可引用的结构化指标为 [metric:key_area_count] 与 [metric:green_ratio]，具体片区面积和控制条件仍随 official polygon 与专业确认更新。
+
 - 定位：北部面向全栈自主创新、标准、安全和研发服务的花园型创新站。
 - 空间结构：以“研发庭院—标准工坊—清河绿色接口—对外展示前厅”为主序列，连接智迹长廊和百年回响。
 - 更新逻辑：优先修补企业、校园、河岸和公园之间的公共界面，采用可分期、可复用的低扰动更新；潜力用地、建筑规模、拆改范围 unknown + reason：无项目级控规和建筑现状底图。
@@ -104,6 +106,8 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ### AI原点共创站
 
+本重点区直接对齐 [data:geometry/key_areas.geojson#PROV-KEY-002]；当前可引用的结构化指标为 [metric:key_area_count] 与 [metric:public_space_ratio]，具体片区面积和控制条件仍随 official polygon 与专业确认更新。
+
 - 定位：中部近校、近社区、近人才的原始创新、成果转化和公共共创站。
 - 空间结构：以智织客厅为共享门厅，以开源学堂—共创剧场—社区生活接口为横向链路，以校园/园区/街区慢行缝合为纵向链路。
 - 更新逻辑：以保留可用空间、复合使用和小尺度公共界面改善为先，形成“课堂—原型—展示—反馈”循环；权属、存量项目和改造范围 unknown + reason：缺少地块和建筑清单。
@@ -113,6 +117,8 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 - 实施风险：校园与社区隐私、活动扰民、成果知识产权、算法解释和运营共治边界需通过试点协议确认。
 
 ### 大钟寺应用转化站
+
+本重点区直接对齐 [data:geometry/key_areas.geojson#PROV-KEY-003]；当前可引用的结构化指标为 [metric:key_area_count] 与 [metric:building_footprint_area_sqm]，具体片区面积和控制条件仍随 official polygon 与专业确认更新。
 
 - 定位：南部面向智能体、智能终端、内容消费、专业服务和城市应用观察的应用转化站。
 - 空间结构：以智迹长廊串联应用橱窗、智行生活剧场和轨道站点公共界面，以小月河场景生活翼连接社区与商业服务。
@@ -137,7 +143,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 | 学生与终身学习者 | 需要从一堂课走到可展示原型 | 开源学堂、共创剧场、开发者社区 | 年龄适配、导师审核和内容安全 |
 | 国际访问者与文化传播者 | 需要理解京张历史和当代 AI 文化 | 百年回响、智迹长廊、多语种叙事 | 史实、翻译、版权和文化敏感性 |
 
-画像是设计假设，不是个人数据画像；不采集或推断个人身份、位置、健康、收入和行为标签。[source:AGENT-TASKBOOK] [source:SRC-BJ-TSINGHUA-YUAN] [source:SRC-FI-HELSINKI-AI-REGISTER] [depth:existing_conditions_diagnosis] [depth:scenario_operation_model]
+画像是设计假设，不是个人数据画像；不采集或推断个人身份、位置、健康、收入和行为标签。[source:AGENT-TASKBOOK] [source:SRC-BJ-TSINGHUA-YUAN] [source:SRC-FI-HELSINKI-AI-REGISTER] [depth:existing_conditions_diagnosis] [depth:overall_spatial_structure]
 
 ### AI 场景卡（10 张）
 
@@ -154,7 +160,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 9. **蓝绿微气候观察台**：用户=户外工作者、儿童家庭、运动者；空间节点=公园、河岸、树荫和广场；触发=公开气象与人工体验卡；AI作用=形成热、风、遮阴和休息点的解释图；运营主体=园林/公共空间团队；人工复核=景观与安全人员；数据边界=聚合环境数据，不做人脸识别；可观察成果=季节体验图和维护优先级；风险=气象预测误差和高温误导。
 10. **国际开发者社区翻译台**：用户=开发者、国际访问者、本地学生；空间节点=共创剧场/智织客厅；触发=开发者开放日和问题征集；AI作用=多语种摘要、术语对照、问答归档；运营主体=开发者社区；人工复核=主持人、技术志愿者和版权负责人；数据边界=公开演讲与授权资料；可观察成果=带版本的知识库与问题关闭率；风险=翻译错误、未授权内容和社区排斥。
 
-场景卡证据映射到 [source:SRC-SG-AI-SINGAPORE]、[source:SRC-NL-AMSTERDAM-ALGORITHM]、[source:SRC-FI-HELSINKI-AI-REGISTER] 和 [source:AGENT-TASKBOOK]；空间接口对应 [data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/roads.geojson#ROAD-001]。[depth:scenario_operation_model] [depth:blue_green_public_space] [metric:public_space_ratio]
+场景卡证据映射到 [source:SRC-SG-AI-SINGAPORE]、[source:SRC-NL-AMSTERDAM-ALGORITHM]、[source:SRC-FI-HELSINKI-AI-REGISTER] 和 [source:AGENT-TASKBOOK]；空间接口对应 [data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/roads.geojson#ROAD-001]。[depth:blue_green_public_space] [metric:public_space_ratio]
 
 ## 用地、建筑规模与拆改留方案
 
@@ -203,7 +209,7 @@ compliance_matrix、standard_matrix 和 design_depth_matrix 分别把公告 requ
 
 ### agent.3 场景卡与用户画像
 
-已提供 10 张 AI 场景卡和 6 类用户画像，覆盖课堂、河岸、慢行、应用橱窗、历史叙事、标准安全、社区照护、共享时段、蓝绿观察和开发者社区。每张卡明确用户、节点、触发、AI 作用、运营主体、人工复核、数据边界、成果和风险；优先测试场景为“开源学堂一堂课到一个原型”“河岸实验室让城市会呼吸”“智行生活剧场一条路线，多种城市体验”。[source:AGENT-TASKBOOK] [depth:scenario_operation_model] [metric:public_space_ratio]
+已提供 10 张 AI 场景卡和 6 类用户画像，覆盖课堂、河岸、慢行、应用橱窗、历史叙事、标准安全、社区照护、共享时段、蓝绿观察和开发者社区。每张卡明确用户、节点、触发、AI 作用、运营主体、人工复核、数据边界、成果和风险；优先测试场景为“开源学堂一堂课到一个原型”“河岸实验室让城市会呼吸”“智行生活剧场一条路线，多种城市体验”。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure] [metric:public_space_ratio]
 
 ### agent.4 创新里程碑节点与公共空间
 
@@ -215,7 +221,7 @@ compliance_matrix、standard_matrix 和 design_depth_matrix 分别把公告 requ
 
 ### agent.6 年度活动、开发者社区与场景开放运营
 
-建议形成年度运营节奏：春季“开源学堂周”发布课程原型，夏季“河岸实验室季”做蓝绿观察，秋季“智行生活剧场”做路线体验与无障碍复盘，冬季“应用橱窗与治理复盘”公开版本、风险和退出记录。开发者社区采用月度 office hour、季度场景开放日、年度公开复盘；每次活动由场地运营、技术导师、社区代表、版权/隐私负责人和安全人员组成最小复核组。品牌、活动频率、参与人数、招商和传播效果均为待研究值，不作承诺。[source:AGENT-TASKBOOK] [source:SRC-SG-AI-SINGAPORE] [source:SRC-NL-AMSTERDAM-ALGORITHM] [depth:phasing_implementation] [depth:scenario_operation_model]
+建议形成年度运营节奏：春季“开源学堂周”发布课程原型，夏季“河岸实验室季”做蓝绿观察，秋季“智行生活剧场”做路线体验与无障碍复盘，冬季“应用橱窗与治理复盘”公开版本、风险和退出记录。开发者社区采用月度 office hour、季度场景开放日、年度公开复盘；每次活动由场地运营、技术导师、社区代表、版权/隐私负责人和安全人员组成最小复核组。品牌、活动频率、参与人数、招商和传播效果均为待研究值，不作承诺。[source:AGENT-TASKBOOK] [source:SRC-SG-AI-SINGAPORE] [source:SRC-NL-AMSTERDAM-ALGORITHM] [depth:phasing_implementation]
 
 ## 风险、版权与合规说明
 

@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "官方边界未提供；当前使用 provisional boundary 计算，待官方 polygon 提供后重算。"
       ]
     },
     "building_footprint_area_sqm": {
@@ -63,7 +63,7 @@
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "reason": "FAR 控制条件 unknown，官方边界未提供；需在正式控制条件和 official polygon 提供后由专业团队确认。"
     },
     "key_area_count": {
       "status": "known",
