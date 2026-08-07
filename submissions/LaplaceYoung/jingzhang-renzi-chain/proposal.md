@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.4"
+iteration: "v2.5"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -94,7 +94,7 @@ iteration: "v2.4"
 
 失败教训对照：多伦多 Quayside 因数据主权争议搁浅。本方案据此为全部AI场景设置「数据来源、隐私边界、人工复核」三要素强制项，公共空间AI采集数据一律脱敏并经公共数据治理机制复核，避免「黑箱城市」[source:AGENT-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。**最新动态（2024—2026，媒体口径，v1.5）**：伦敦国王十字凭 DeepMind 等实验室锚定成为 AI 办公集聚地（媒体称伦敦 AI 办公需求集中于国王十字周边）[source:SRC-KINGS-CROSS-AI-2026]——「大学—实验室—头部企业」的知识溢出与人才密度仍是 AI 时代创新区第一性动力，本方案众智园「国家平台锚」与原点社区「高校锚」据此组织。
 
-**AI创新生态图谱与要素机制**：本方案提出「八要素机制」——土地（存量更新释放产业空间）、空间（人字链节产业载体）、产业（1+X+1体系下的AI+融合）、资金（中关村资本翼对接全球配置）、人才（人才特区与开发者社区，衔接海淀青年人才生态示范区政策 [source:SRC-HD-YOUTH-TALENT-2025]）、算力（端侧算力+公共算力调度，北京最大单体智算集群已于2025年在海淀点亮 [source:SRC-HD-COMPUTE-2025]）、数据（数据要素流通试验床）、场景（小月河沙盒+全带场景网络）[source:HAIDIAN-1X1][source:THREE-AREAS-WINGS]。背景事实（公开资料，仅作背景引用）：北京市2023年印发人工智能创新策源地实施方案、2024年印发算力基础设施建设实施方案；海淀区备案大模型104款、约占全市七成，并印发具身智能创新高地三年行动方案 [source:SRC-BJ-AI-POLICY][source:SRC-BJ-COMPUTE][source:SRC-HD-AI-MODELS][source:SRC-BJ-EMBODIED]。本方案不将这些背景数字用于任何边界、面积或控规类结论。八要素可按创新区三大资产框架归组——土地/空间/产业归经济资产，场景/蓝绿骨架/公共空间归物质资产，人才/资金/算力/数据/场景网络归网络资产，作为对国际创新区理论的本地化组织 [source:SRC-INNOVATION-DISTRICTS]。八要素中，土地、空间、场景三项直接落到本方案几何图层（`geometry/land_use.geojson`、`geometry/buildings.geojson`、`geometry/public_space.geojson`），资金、人才、算力、数据四项以机制建议表述，不编造企业名单、投资额或财政承诺 [source:AGENT-TASKBOOK][data:geometry/land_use.geojson#LU-0802-1]。
+**AI创新生态图谱与要素机制**：本方案提出「八要素机制」——土地（存量更新释放产业空间）、空间（人字链节产业载体）、产业（1+X+1体系下的AI+融合）、资金（中关村资本翼对接全球配置）、人才（人才特区与开发者社区，衔接海淀青年人才生态示范区政策 [source:SRC-HD-YOUTH-TALENT-2025]）、算力（端侧算力+公共算力调度，北京最大单体智算集群已于2025年在海淀点亮 [source:SRC-HD-COMPUTE-2025]）、数据（数据要素流通试验床）、场景（小月河沙盒+全带场景网络）[source:HAIDIAN-1X1][source:THREE-AREAS-WINGS]。背景事实（公开资料，仅作背景引用）：北京市2023年印发人工智能创新策源地实施方案、2024年印发算力基础设施建设实施方案；海淀区作为「中国AI硬核引擎」，聚集AI企业超2000家、独角兽26家、备案大模型130款、AI核心产业规模超3500亿元、约占全国30%（2026年4月官方口径 [source:SRC-HD-AI-2026]；2025年9月口径为104款/约占全市七成 [source:SRC-HD-AI-MODELS]），并印发具身智能创新高地三年行动方案 [source:SRC-BJ-AI-POLICY][source:SRC-BJ-COMPUTE][source:SRC-BJ-EMBODIED]。本方案不将这些背景数字用于任何边界、面积或控规类结论。八要素可按创新区三大资产框架归组——土地/空间/产业归经济资产，场景/蓝绿骨架/公共空间归物质资产，人才/资金/算力/数据/场景网络归网络资产，作为对国际创新区理论的本地化组织 [source:SRC-INNOVATION-DISTRICTS]。八要素中，土地、空间、场景三项直接落到本方案几何图层（`geometry/land_use.geojson`、`geometry/buildings.geojson`、`geometry/public_space.geojson`），资金、人才、算力、数据四项以机制建议表述，不编造企业名单、投资额或财政承诺 [source:AGENT-TASKBOOK][data:geometry/land_use.geojson#LU-0802-1]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -383,7 +383,7 @@ iteration: "v2.4"
 
 京张铁路（1905年开工、1909年9月全线通车）是中国人自主修建的第一条干线铁路，其「人字形展线」（青龙桥八达岭段，2006年列入全国重点文物保护单位）、詹天佑工程精神与沿线车站（清华园站、清河站等）构成创新带最深层的历史资源 [source:THREE-AREAS-WINGS][source:SRC-JZ-PARK-OPENING]。京张文化链运营事实（公开报道）：京张高铁开通5年发送旅客超5600万人次（2024年12月）[source:SRC-JZ-HSR-5Y-2024]；百年青龙桥车站（人字形线路所在地）已变身长城文化展览馆（2024年6月）[source:SRC-JZ-QINGLONGQIAO-2024]——远端文化节点的活化运营为创新带「文化+运营」提供同源参照。**申遗动态（公开报道，仅作背景，v1.6）**：2026年全国两会政协委员建议推动京张铁路（含人字形铁路）与京张高铁联合申报世界文化遗产 [source:SRC-JZ-WORLD-HERITAGE-2026]——系委员建议（民间议政渠道），非国家文物局正式立项表态；本方案「京张文化链」叙事与之衔接（概念）。
 
-**上位规划衔接（公开文件）**：文化和旅游部、国家发展改革委、国家体育总局《京张体育文化旅游带建设规划》（2022年1月印发）[source:SRC-JZ-SPORTS-TOURISM-PLAN-2022]为本带提供「体育文化旅游带」上位规划语境——本方案文化叙事、朝圣地标体系与年度活动体系与之衔接（概念，不重复规划内容）。本方案将其组织为三层资源系统：物质层（铁轨遗迹、车站旧址、枕木道砟等要素——清华园车站旧址概略位置见 `geometry/constraints.geojson#CON-HER-001`，文保范围以官方为准）[data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]；叙事层（自主创新、敢为人先、人字形智慧）；精神层（「把不可能变成可能」的工程精神与AI创新精神同构）。
+**上位规划衔接（公开文件）**：文化和旅游部、国家发展改革委、国家体育总局《京张体育文化旅游带建设规划》（2022年1月印发）[source:SRC-JZ-SPORTS-TOURISM-PLAN-2022]为本带提供「体育文化旅游带」上位规划语境——本方案文化叙事、朝圣地标体系与年度活动体系与之衔接（概念，不重复规划内容）。**桥下廊柱历史画廊现实样段（v2.5，公开报道）**：13号线轨道桥桥下空间已完成活化——桥墩彩绘西直门/南口/青龙桥等站名序列、「苏州码子」里程记号与风雨跑步道（北京日报2025年12月报道）[source:SRC-JZ-13LINE-GALLERY-2025]——本方案组件库「廊柱历史画廊」（C-04）与朝圣地标体系据此锚定现实样段，仅补空白区段（概念）。本方案将其组织为三层资源系统：物质层（铁轨遗迹、车站旧址、枕木道砟等要素——清华园车站旧址概略位置见 `geometry/constraints.geojson#CON-HER-001`，文保范围以官方为准）[data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]；叙事层（自主创新、敢为人先、人字形智慧）；精神层（「把不可能变成可能」的工程精神与AI创新精神同构）。
 
 **保护利用政策工具（公开文件）**：北京历史建筑保护已由名录管理走向「一栋一档」精准治理——《北京市历史建筑规划管理工作规程（试行）》2024年1月实施 [source:SRC-BJ-HERITAGE-PROC-2024]，2025年11月《北京市历史建筑保护图则（东城·西城）》发布（274栋（座）历史建筑建立更新档案）[source:SRC-BJ-HERITAGE-GUIDE-2025]；本方案对清华园车站旧址等文保节点的活化利用建议叠加文物建筑开放导则与社会力量参与机制（概念，具体以文物部门审定为准）。
 
