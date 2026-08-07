@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "updated_date": "2026-08-08",
+  "updated_date": "2026-06-07",
   "sources": [
     {
       "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -188,50 +188,13 @@
       "notes_zh": "可用于统一 land_use_code 语义。"
     },
     {
-      "source_id": "DATA-SRC-DAZHONGSI-URBAN-RENEWAL-20260713",
-      "title": "百年京张AI创新带-南部大钟寺AI产业集聚区更新片区",
-      "publisher": "北京市城市更新服务平台",
-      "source_kind": "official_project_notice",
-      "url": "https://www.beijing.gov.cn/fuwu/lqfw/ztzl/bjchshgx/xmgsh/202607/t20260714_4762615.html",
-      "published_date": "2026-07-13",
-      "accessed_date": "2026-08-08",
-      "file_type": "html",
-      "authority_level": "A0",
-      "timeliness_level": "T0",
-      "public_access_status": "public_web",
-      "license_summary": "Official public project notice retained as a source URL and factual boundary-search record.",
-      "review_status": "approved_background_only",
-      "usable_for_formal": "background_only",
-      "allowed_uses": [
-        "official project notice title",
-        "published textual extent of the Dazhongsi renewal area",
-        "boundary data gap verification"
-      ],
-      "prohibited_uses": [
-        "precise official polygon boundary",
-        "drawing a redline from textual extent",
-        "road redline",
-        "statutory planning control"
-      ],
-      "topics": [
-        "dazhongsi",
-        "urban_renewal",
-        "textual_extent",
-        "boundary_data_gap"
-      ],
-      "local_paths": [
-        "docs/data-boundary-decision.md"
-      ],
-      "notes_zh": "公示给出北至北四环、南至转河、西至中关村南三街-中关村东路、东至西土城路的文字范围，但未提供可验证 polygon，不能升级为 official boundary。"
-    },
-    {
       "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
       "publisher": "Repository maintainers",
       "source_kind": "provisional_repository_data",
       "url": "brief/site-package/geometry/provisional_boundaries.geojson",
       "published_date": "2026-06-05",
-      "accessed_date": "2026-06-07",
+      "accessed_date": "2026-08-07",
       "file_type": "geojson",
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
@@ -264,12 +227,13 @@
       ],
       "local_paths": [
         "brief/site-package/geometry/provisional_boundaries.geojson",
+        "brief/site-package/geometry/provisional_boundaries_basis.md",
         "data/processed/agent_fact_pack.md",
         "data/processed/project_scope_summary.csv",
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
     }
   ]
 }
