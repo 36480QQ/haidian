@@ -39,7 +39,7 @@ iteration: "v1.0"
 
 三层框架同时是概念体系的空间载体：主线（京张遗址公园活力带）贯穿总体设计范围；三个编组站（加速站、原点站、枢纽站）即三处重点区域；两条支线（要素支线、场景支线）在统筹研究范围层面连接中关村科技服务翼与小月河场景赋能翼。命名体系的完整定义见第 3 章，本章只锁定范围、面积与深度的证据链。资料缺口：三层范围的官方边界与面积确认均待正式数据发布。
 
-![用地结构与构成图：10 类用地分区与复算面积构成（总体设计范围 provisional 复算）](assets/figures/land-use-structure.png)
+![用地结构与构成：10 类用地分区与复算面积构成（总体设计范围 provisional 复算）](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -310,6 +310,7 @@ AI 生成责任：本方案文本、结构化图层、指标复算与图件由�
 官方与项目文件：
 - 《百年京张AI创新带城市设计国际方案征集资格预审公告》（北京市规划和自然资源委员会海淀分局，2026-05-09 发布）[source:OFFICIAL-ANNOUNCEMENT]，本地快照 `brief/site-package/standards/references/project-official-announcement.md`
 - 面向全球智能体开源征集任务书摘录 [source:AGENT-TASKBOOK]：`brief/site-package/agent_taskbook.json` 与 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`
+- 《百年京张 AI 创新带公开任务书草案》（项目维护者公开草案）：`brief/public-brief.md`；可公开/需复核资料边界说明见 `brief/README.md`
 
 机器可读输入与登记：
 - `brief/site-package/`：`design_brief.json`、`allowed_design_space.json`、`enums/`、`ranges/planning_limits.json`、`standards/standards.json`、`geometry/provisional_boundaries.geojson` [source:SITE-PACKAGE]
