@@ -7,5 +7,7 @@
 3. **临时边界**：`geometry/*.geojson` 中 provisional 几何源自仓库维护者发布的临时粗略边界（SRC-PROVISIONAL-BOUNDARIES-2026），版权与使用限制以该来源声明为准；本方案不主张其为官方红线。
 4. **提交性质**：本方案为开放共创建议，不替代正式规划，不构成政府审定结论；投稿知识产权安排以官方征集公告相关条款为准（应征文件与设计成果的知识产权由主办单位/承办单位与应征人共同享有）。
 5. **离线要求**：`visual/index.html` 与 `report/proposal.html` 均为离线静态文件，不加载任何远程资源。
+6. **学术与专业文献**：v0.4 起新增引用的学术期刊/专业文件（sources.json 中 `usable_for_formal=background_only` 条目）仅作概念与治理机制支撑，不构成官方数据、面积或控规依据；图面文字使用系统字体渲染、不内嵌不随包分发；Logo 为自绘方向建议，未注册商标、不主张商标权。
+7. **逐资产权利台账**：详见 proposal.md「风险、版权与合规说明」章（5图/图纸/HTML/GeoJSON/OSM/引用文本六类资产的权利状态与许可）。
 
 如对素材来源有疑问，可对照 `sources.json`、`assumptions.json` 与 `brief/site-package/missing-data.md` 核查。
