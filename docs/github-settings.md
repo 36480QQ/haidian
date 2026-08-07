@@ -70,7 +70,7 @@ python3 scripts/maintainer_review.py submissions/<login>/<slug> --pr-author <log
 - `formal-review-ready`：可进入正式专业评分。
 - `reject`：触发强制拒绝条件，关闭或拒绝 PR。
 
-合并后，维护者先编辑 `gallery-publication.json`：`published` 控制全部方案页，`featured` 控制首页精选；未登记投稿不公开。人工审核后用 `scripts/generate_submissions_data.py --package-sha <submission-dir>` 生成 `reviewed_package_sha256`，将批准绑定到具体稿件版本；文件变化后必须重新审核。然后更新静态展示索引：
+方案合并到 `main` 后自动进入全部方案页；`gallery-publication.json` 仅用于明确暂停展示或设置首页精选。需要精选时，维护者用 `scripts/generate_submissions_data.py --package-sha <submission-dir>` 生成 `reviewed_package_sha256`，将人工内容、视觉和版权复核绑定到具体稿件版本；文件变化后必须重新审核。然后更新静态展示索引：
 
 ```bash
 python3 scripts/generate_submissions_data.py

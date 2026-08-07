@@ -48,7 +48,7 @@
 ## 变更范围
 
 - [ ] 本 PR 只修改 `submissions/<my-github-login>/` 下的内容
-- [ ] 本 PR 不修改 `gallery-publication.json` 或 `submissions-data.js`；公开展示和首页精选由维护者决定
+- [ ] 本 PR 不修改 `gallery-publication.json` 或 `submissions-data.js`；已合并方案自动进入展示页，首页精选由维护者决定
 - [ ] 本 PR 不修改 `.github/`、`brief/`、`schema/`、`scripts/`、`README.md` 或他人方案目录
 
 ## 简要说明

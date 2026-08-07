@@ -153,6 +153,7 @@ nav{
 .hero-stat{border-right:1px solid var(--line);padding:18px 24px 16px}
 .hero-stat:last-child{border-right:0}
 .hero-stat-val{color:#6fc4ff;font:300 28px var(--mono)}
+.hero-stat-val.is-loading{animation:pulse 1.1s ease-in-out infinite}
 .hero-stat-lbl{color:#858c97;margin-top:6px;font-size:10px;letter-spacing:.08em}
 
 .filter-bar{
@@ -312,11 +313,11 @@ nav{
       <div class="page-label" data-i18n="page.label">SUBMISSIONS GALLERY</div>
       <h1 class="page-title" data-i18n="page.h1">方案展示</h1>
       <p class="page-subtitle" data-i18n="page.sub">ALL PROPOSALS — CENTENNIAL JING-ZHANG AI INNOVATION BELT</p>
-      <p class="page-desc" data-i18n="page.desc">集中展示仓库中的方案包、HTML 可视化和流程样例。正式方案、临时边界示例与历史测试样例均按状态标注，方便评审和学习。</p>
+      <p class="page-desc" data-i18n="page.desc">已合并到 GitHub 主分支的方案会自动进入这里。打开任意卡片，可直接浏览完整报告与方案可视化。</p>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-val" id="totalCount">0</div><div class="hero-stat-lbl" data-i18n="stat1">已提交方案</div></div>
-      <div class="hero-stat"><div class="hero-stat-val" id="aiCount">0</div><div class="hero-stat-lbl" data-i18n="stat2">AI Agent 方案</div></div>
+      <div class="hero-stat"><div class="hero-stat-val" id="totalCount">0</div><div class="hero-stat-lbl" data-i18n="stat1">已合并方案</div></div>
+      <div class="hero-stat"><div class="hero-stat-val is-loading" id="reviewCount">—</div><div class="hero-stat-lbl" data-i18n="stat2">评审中 PR</div></div>
     </div>
   </div>
 </div>
@@ -329,7 +330,7 @@ nav{
     <button class="filter-tab" data-filter="revision" data-i18n="tab.revision">需修改</button>
     <button class="filter-tab" data-filter="fixture" data-i18n="tab.fixture">样例</button>
   </div>
-  <span class="filter-sort" data-i18n="sort.label">按审核状态与提交时间查看</span>
+  <span class="filter-sort" data-i18n="sort.label">主分支自动同步 · 点击卡片查看完整方案</span>
 </div>
 
 <div class="status-guide">
@@ -346,7 +347,7 @@ nav{
     <div><div class="status-guide-title" data-i18n="guide.repair.t">需修改或样例</div><div class="status-guide-desc" data-i18n="guide.repair.d">用于修复反馈、流程测试或历史学习，不代表正式入围。</div></div>
   </div>
 </div>
-<p class="review-note" data-i18n="guide.reviewNote">展示页只显示 intake/formal readiness 状态，不展示维护者审核正文；maintainer review 结果只通过 PR comment 反馈。</p>
+<p class="review-note" data-i18n="guide.reviewNote">卡片展示已合并方案；右上角“评审中 PR”通过 GitHub 实时读取。这里不展示维护者审核正文，评审意见仍通过 PR comment 公开反馈。</p>
 
 <div class="cards-wrapper">
   <div class="cards-grid" id="cardsGrid"></div>
@@ -411,13 +412,13 @@ const T = {
     'nav.back':'百年京张 · AI 创新带','nav.title':'方案展示',
     'page.label':'SUBMISSIONS GALLERY','page.h1':'方案展示',
     'page.sub':'ALL PROPOSALS — CENTENNIAL JING-ZHANG AI INNOVATION BELT',
-    'page.desc':'集中展示仓库中的方案包、HTML 可视化和流程样例。正式方案、临时边界示例与历史测试样例均按状态标注，方便评审和学习。',
-    'stat1':'已提交方案','stat2':'AI Agent 方案',
-    'tab.all':'全部','tab.formal':'正式评分就绪','tab.intake':'临时 intake','tab.revision':'需修改','tab.fixture':'样例','sort.label':'按审核状态与提交时间查看',
+    'page.desc':'已合并到 GitHub 主分支的方案会自动进入这里。打开任意卡片，可直接浏览完整报告与方案可视化。',
+    'stat1':'已合并方案','stat2':'评审中 PR',
+    'tab.all':'全部','tab.formal':'正式评分就绪','tab.intake':'临时 intake','tab.revision':'需修改','tab.fixture':'样例','sort.label':'主分支自动同步 · 点击卡片查看完整方案',
     'guide.formal.t':'正式评分就绪','guide.formal.d':'资料、边界和自检达到正式专业评分入口。',
     'guide.intake.t':'临时 intake','guide.intake.d':'可合并展示和讨论，但暂不可正式评分。',
     'guide.repair.t':'需修改或样例','guide.repair.d':'用于修复反馈、流程测试或历史学习，不代表正式入围。',
-    'guide.reviewNote':'展示页只显示 intake/formal readiness 状态，不展示维护者审核正文；maintainer review 结果只通过 PR comment 反馈。',
+    'guide.reviewNote':'卡片展示已合并方案；右上角“评审中 PR”通过 GitHub 实时读取。这里不展示维护者审核正文，评审意见仍通过 PR comment 公开反馈。',
     'empty.title':'征集进行中','empty.desc':'暂无已合并的方案。成为第一个提交方案的参与者，方案将在此展示。',
     'empty.none':'该分类暂无方案，欢迎提交。',
     'empty.cta1':'Fork 仓库 →','empty.cta2':'阅读任务书',
@@ -436,13 +437,13 @@ const T = {
     'nav.back':'Jing-Zhang · AI Belt','nav.title':'Submissions',
     'page.label':'SUBMISSIONS GALLERY','page.h1':'Proposal Gallery',
     'page.sub':'ALL PROPOSALS — CENTENNIAL JING-ZHANG AI INNOVATION BELT',
-    'page.desc':'A gallery of proposal packages, local HTML visualizations, and workflow fixtures in this repository. Formal, provisional, and legacy examples are clearly labeled.',
-    'stat1':'Total Proposals','stat2':'AI Agent Proposals',
-    'tab.all':'All','tab.formal':'Formal ready','tab.intake':'Provisional intake','tab.revision':'Needs revision','tab.fixture':'Fixtures','sort.label':'Browse by review status and date',
+    'page.desc':'Every proposal merged into the GitHub main branch appears here automatically. Open any card to browse its full report and interactive visualization.',
+    'stat1':'Merged Proposals','stat2':'PRs in Review',
+    'tab.all':'All','tab.formal':'Formal ready','tab.intake':'Provisional intake','tab.revision':'Needs revision','tab.fixture':'Fixtures','sort.label':'Synced from main · Open a card for the full proposal',
     'guide.formal.t':'Formal scoring ready','guide.formal.d':'Data, boundaries, and self-checks meet the formal scoring gate.',
     'guide.intake.t':'Provisional intake','guide.intake.d':'May be merged for display and discussion, but not formal scoring yet.',
     'guide.repair.t':'Needs repair or fixture','guide.repair.d':'Repair feedback, workflow fixtures, or legacy learning examples; not formal finalists.',
-    'guide.reviewNote':'The gallery shows intake/formal readiness status only. Maintainer review details are not displayed here; they are provided only in the PR comment.',
+    'guide.reviewNote':'Cards show merged proposals. “PRs in Review” is fetched live from GitHub; review details remain public in each Pull Request.',
     'empty.title':'Open Call in Progress','empty.desc':'No merged proposals yet. Be the first to submit — your proposal will be displayed here.',
     'empty.none':'No proposals in this category yet. Submissions welcome.',
     'empty.cta1':'Fork Repo →','empty.cta2':'Read Brief',
@@ -532,13 +533,11 @@ function renderEmpty(filter) {
 function renderCards(filter) {
   const grid = document.getElementById('cardsGrid');
   const totalEl = document.getElementById('totalCount');
-  const aiEl = document.getElementById('aiCount');
   const t = T[lang];
   const filtered = filter === 'all' ? SUBMISSIONS : SUBMISSIONS.filter(s => statusMeta(s).group === filter);
   totalEl.textContent = SUBMISSIONS.length;
-  aiEl.textContent = SUBMISSIONS.filter(s => s.type === 'ai').length;
   if (filtered.length === 0) { grid.innerHTML = renderEmpty(filter); return; }
-  grid.innerHTML = filtered.map(s => {
+  grid.innerHTML = filtered.map((s, index) => {
     const state = statusMeta(s);
     const title = escapeHTML(lang === 'zh' ? s.title : (s.titleEn || s.title));
     const summary = escapeHTML(lang === 'zh' ? s.summary : (s.summaryEn || s.summary));
@@ -549,8 +548,8 @@ function renderCards(filter) {
     return `
     <a class="card" href="${href}" target="_blank" rel="noopener">
       <div class="card-cover">
-        ${preview ? `<iframe src="${escapeHTML(preview)}" title="${title}" loading="lazy" tabindex="-1"></iframe>` : `<div class="card-cover-placeholder"><div class="icon">HTML</div><span>${lang === 'zh' ? '暂无 HTML 预览' : 'No HTML preview'}</span></div>`}
-        <span class="card-cover-tag ${s.type==='ai'?'tag-ai':'tag-human'}">${s.type==='ai'?t['tag.ai.label']:t['tag.human.label']}</span>
+        ${preview ? `<iframe data-src="${escapeHTML(preview)}" title="${title}" loading="lazy" tabindex="-1"></iframe>` : `<div class="card-cover-placeholder"><div class="icon">HTML</div><span>${lang === 'zh' ? '暂无 HTML 预览' : 'No HTML preview'}</span></div>`}
+        <span class="card-cover-tag ${s.type==='ai'?'tag-ai':'tag-human'}">${String(index + 1).padStart(2, '0')} · ${s.type==='ai'?t['tag.ai.label']:t['tag.human.label']}</span>
         <span class="card-status status-${escapeHTML(state.key)}">${escapeHTML(state.label)}</span>
       </div>
       <div class="card-body">
@@ -566,6 +565,44 @@ function renderCards(filter) {
       </div>
     </a>`;
   }).join('');
+  hydratePreviews();
+}
+
+function hydratePreviews() {
+  const frames = [...document.querySelectorAll('.card-cover iframe[data-src]')];
+  const load = frame => {
+    if (!frame.src) frame.src = frame.dataset.src;
+    frame.removeAttribute('data-src');
+  };
+  if (!('IntersectionObserver' in window)) {
+    frames.forEach(load);
+    return;
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      load(entry.target);
+      observer.unobserve(entry.target);
+    });
+  }, {rootMargin: '360px 0px'});
+  frames.forEach(frame => observer.observe(frame));
+}
+
+async function loadReviewCount() {
+  const el = document.getElementById('reviewCount');
+  try {
+    const query = encodeURIComponent('repo:open-city-ai/haidian is:pr is:open');
+    const response = await fetch(`https://api.github.com/search/issues?q=${query}`, {
+      headers: {'Accept': 'application/vnd.github+json'}
+    });
+    if (!response.ok) throw new Error(`GitHub API ${response.status}`);
+    const data = await response.json();
+    el.textContent = Number.isInteger(data.total_count) ? data.total_count : '—';
+  } catch (error) {
+    el.textContent = '100+';
+  } finally {
+    el.classList.remove('is-loading');
+  }
 }
 
 let currentFilter = 'all';
@@ -592,6 +629,7 @@ document.getElementById('langToggle').addEventListener('click', () => {
   setTimeout(() => { applyLang(lang === 'zh' ? 'en' : 'zh'); document.body.style.opacity = '1'; }, 120);
 });
 applyLang(lang);
+loadReviewCount();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d2ed9f664e384c4889e4dfbbbc706dc6"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
