@@ -12,7 +12,7 @@
     "agent_name": "LaplaceYoung AI Agent",
     "model": "deepseek-v4-flash"
   },
-  "generated_at": "2026-08-07T17:13:29Z",
+  "generated_at": "2026-08-08T03:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "afc9062c66534c27349ec293eda5dca2a43dd227c59d545ff4bec49a118ed482"
+      "sha256": "8dd2e8a8140a429029629ce6003ab4b423e95f7beec73d0b3fb386c0c3cdf0f7"
     },
     {
       "path": "agent.json",
@@ -35,13 +35,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "9a63925878a33b40fbb823c9b38a70ff57d9dbfaa8f96b6aaf27d18c8a8b720b"
+      "sha256": "e2a8485827384f312a35b525b05cc242728eec92ad8e3ac98b8c10dfecbf204c"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "4fa49f9b91303bd2a94c1e138b02dd2afb2427d37744589babb0ab02c34fbb44"
+      "sha256": "e2c6e762c0e1788de2d07e3ed8755c29619087b8023b373805486ff0d2318a34"
     },
     {
       "path": "sources.json",
@@ -59,13 +59,13 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "94b1cd821e823d0e25c6662dc23e425615fdaa031c12cce4926f21e0c119e9e3"
+      "sha256": "81834c34d1817595f7e2aad8a8c07b367cf06f34d2152fea570ac163e86e471b"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "635de62a0523f1bdf0591876e51f1e5d47fdcb6111a52065fab30cece2995533"
+      "sha256": "7e8787cee329c4b4d5c11a43b1943717a30b15ea034565657a8fc6d76c968f68"
     },
     {
       "path": "design_depth_matrix.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "a85c1a5bf6800da948dc5f58c18b84e40d17df27af3437c5251151ace013072f"
+      "sha256": "468abdecc133dad742bc21faa424151167cd1b6dbc9791e0f53e3e146982b10f"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "47d99993432b1bb47db0e11069a4c14b1072625c87c8a44ed7f909779880cad0"
+      "sha256": "66b9cad080a152647c60252c9ca61b0002c2df29bd1b240f1b16d2ba36d40bd8"
     },
     {
       "path": "report/copyright_statement.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "23152eecd3e777fd1976ebb0ea7cbb71793384c5e385614c2b610ebcac3b5f12"
+      "sha256": "5ea6fee33503f1b8b4f48c6d3385ab8bf2d4aafb8398f0a45157cccd34c8fdcc"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7dfb589aa4ec4d0ea88b6dbfc7a585fa66365faa355a8a7267d52cc828533e2f"
+      "sha256": "59a11df1e032565448ed9a362d466f1ed64847be53ca05f56026aaf57d85bad0"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "8e90a602031532a38345bda724f78514609c5a41014869aebc1e10168b3167fc"
+      "sha256": "3c65b578f8394b04a0d79b13494d6c283e57f516bd24750d822573fd13fedb18"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9e24588b935e2587e38a94589975c048b9a310f1450d0972f9a943bc8ca3fac8"
+      "sha256": "5e5345ca20d3ddb81a089741b79d78ff5524831a595476e524bc0d2c13e1c736"
     }
   ],
   "validation_claim": {
@@ -206,5 +206,5 @@
     "data_confidence": "medium",
     "note": "v0.2 完善后：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
   },
-  "submission_timestamp": "2026-08-07T17:13:29Z"
+  "submission_timestamp": "2026-08-08T03:00:00Z"
 }

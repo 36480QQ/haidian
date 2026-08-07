@@ -23,7 +23,7 @@
       "id": "A-BLD-001",
       "status": "pending_official_data",
       "statement": "现状建筑轮廓、层数、用途、建成年代与保留/改造/拆除状态无公开普查数据。",
-      "impact": "geometry/buildings.geojson 为概念性基底示意（renewal_class 为概念分类）；拆改留比例（留60%/改30%/拆10%）为概念假设，须现状普查修正；不作为地块级拆改留结论。"
+      "impact": "geometry/buildings.geojson 为概念性基底示意（renewal_class 为概念分类）；拆改留为概念示意比例（按基底面积复算：新建约60%/改造约24%/保留约16%，无拆除类属性），须现状普查修正；不作为地块级拆改留结论。"
     },
     {
       "id": "A-TRA-001",
