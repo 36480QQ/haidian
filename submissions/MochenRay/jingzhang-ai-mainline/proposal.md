@@ -3,7 +3,7 @@ title: "京张智能干线 Jing-Zhang AI Mainline"
 author_github: "MochenRay"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "京张智能干线以京张遗址公园活力带为主线、三处重点区为编组站、两翼为支线：空间结论全部基于临时边界复算并可替换重算，10 个 AI 场景节点与 3 个朝圣地标落入结构化图层，全部产业、活动与政策安排均为可供专业团队深化研究的概念建议。"
+summary: "京张智能干线以京张遗址公园活力带为主线、三处重点区为编组站、两翼为支线：空间结论全部基于临时边界复算并可替换重算，10 个 AI 节点（7 处场景节点+3 处朝圣地标）落入结构化图层，全部产业、活动与政策安排均为可供专业团队深化研究的概念建议。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
 iteration: "v1.0"
