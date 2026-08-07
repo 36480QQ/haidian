@@ -1,50 +1,47 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "land_use_design_partition",
   "features": [
     {
       "type": "Feature",
-      "id": "LU-001",
+      "id": "LU-SPINE-PUBLIC",
       "properties": {
-        "id": "LU-001",
+        "id": "LU-SPINE-PUBLIC",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
-        "area_sqm_declared": 2674562.492
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
+        "land_use_code": "0803",
+        "name_zh": "智轨巡礼脊·公共开敞廊道",
+        "name_en": "Spine public pilgrimage corridor",
+        "conceptual_zone": "spine_public_corridor",
+        "area_sqm_declared": 2157781.954
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
+              116.3458,
               39.939
             ],
             [
-              116.3397,
-              39.975
-            ],
-            [
-              116.3417,
-              40.006
-            ],
-            [
-              116.3427,
+              116.3458,
               40.0265
             ],
             [
-              116.344068,
+              116.3484,
               40.0265
             ],
             [
-              116.344068,
+              116.3484,
               39.939
             ],
             [
-              116.3407,
+              116.3458,
               39.939
             ]
           ]
@@ -53,40 +50,45 @@
     },
     {
       "type": "Feature",
-      "id": "LU-002",
+      "id": "LU-GREEN-BUFFER",
       "properties": {
-        "id": "LU-002",
+        "id": "LU-GREEN-BUFFER",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
-        "area_sqm_declared": 2589339.239
+        "name_zh": "蓝绿缓冲与遗址公园带",
+        "name_en": "Blue-green / heritage park buffer",
+        "conceptual_zone": "blue_green_park_buffer",
+        "area_sqm_declared": 2157783.272
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.344068,
-              39.939
-            ],
-            [
-              116.344068,
+              116.3458,
               40.0265
             ],
             [
-              116.347188,
+              116.3458,
+              39.939
+            ],
+            [
+              116.3432,
+              39.939
+            ],
+            [
+              116.3432,
               40.0265
             ],
             [
-              116.347188,
-              39.939
-            ],
-            [
-              116.344068,
-              39.939
+              116.3458,
+              40.0265
             ]
           ]
         ]
@@ -94,40 +96,76 @@
     },
     {
       "type": "Feature",
-      "id": "LU-003",
+      "id": "LU-ZHONG-RD",
       "properties": {
-        "id": "LU-003",
+        "id": "LU-ZHONG-RD",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
-        "area_sqm_declared": 3366138.181
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
+        "land_use_code": "0802",
+        "name_zh": "众智园研发与PoC界面",
+        "name_en": "Zhongzhiyuan R&D + PoC interface",
+        "conceptual_zone": "zhongzhiyuan_rd_poc",
+        "related_key_area": "zhongzhiyuan_ai_acceleration_area",
+        "area_sqm_declared": 1495200.924
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "MultiPolygon",
         "coordinates": [
           [
             [
-              116.347188,
-              39.939
-            ],
+              [
+                116.3417,
+                40.006
+              ],
+              [
+                116.3427,
+                40.0265
+              ],
+              [
+                116.3432,
+                40.0265
+              ],
+              [
+                116.3432,
+                40.005
+              ],
+              [
+                116.3416355,
+                40.005
+              ],
+              [
+                116.3417,
+                40.006
+              ]
+            ]
+          ],
+          [
             [
-              116.347188,
-              40.0265
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
-              116.351244,
-              39.939
-            ],
-            [
-              116.347188,
-              39.939
+              [
+                116.3484,
+                40.0265
+              ],
+              [
+                116.3553,
+                40.0265
+              ],
+              [
+                116.3541219,
+                40.005
+              ],
+              [
+                116.3484,
+                40.005
+              ],
+              [
+                116.3484,
+                40.0265
+              ]
             ]
           ]
         ]
@@ -135,48 +173,277 @@
     },
     {
       "type": "Feature",
-      "id": "LU-004",
+      "id": "LU-ORIGIN-MIX",
       "properties": {
-        "id": "LU-004",
+        "id": "LU-ORIGIN-MIX",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
-        "area_sqm_declared": 2782792.823
+        "name_zh": "原点社区混合创新枢纽",
+        "name_en": "Origin hub mixed innovation",
+        "conceptual_zone": "origin_hub_mixed_innovation",
+        "related_key_area": "beijing_ai_origin_community",
+        "area_sqm_declared": 1991421.764
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "MultiPolygon",
         "coordinates": [
           [
             [
-              116.3553,
-              40.0265
-            ],
+              [
+                116.3432,
+                40.005
+              ],
+              [
+                116.3432,
+                39.978
+              ],
+              [
+                116.3398935,
+                39.978
+              ],
+              [
+                116.3416355,
+                40.005
+              ],
+              [
+                116.3432,
+                40.005
+              ]
+            ]
+          ],
+          [
             [
-              116.3533,
-              39.99
-            ],
+              [
+                116.3484,
+                40.005
+              ],
+              [
+                116.3541219,
+                40.005
+              ],
+              [
+                116.3533,
+                39.99
+              ],
+              [
+                116.35426,
+                39.978
+              ],
+              [
+                116.3484,
+                39.978
+              ],
+              [
+                116.3484,
+                40.005
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-MOBILITY",
+      "properties": {
+        "id": "LU-MOBILITY",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
+        "land_use_code": "1207",
+        "name_zh": "慢行接驳与机动建议廊",
+        "name_en": "Mobility / slow-traffic suggestion corridor",
+        "conceptual_zone": "mobility_corridor",
+        "area_sqm_declared": 1868287.755
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
             [
-              116.3553,
-              39.965
-            ],
+              [
+                116.3432,
+                39.978
+              ],
+              [
+                116.3432,
+                39.958
+              ],
+              [
+                116.3401722,
+                39.958
+              ],
+              [
+                116.3397,
+                39.975
+              ],
+              [
+                116.3398935,
+                39.978
+              ],
+              [
+                116.3432,
+                39.978
+              ]
+            ]
+          ],
+          [
             [
-              116.3553,
-              39.939
-            ],
+              [
+                116.3484,
+                39.978
+              ],
+              [
+                116.35426,
+                39.978
+              ],
+              [
+                116.3553,
+                39.965
+              ],
+              [
+                116.3553,
+                39.958
+              ],
+              [
+                116.3484,
+                39.958
+              ],
+              [
+                116.3484,
+                39.978
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-DAZHONG-COMM",
+      "properties": {
+        "id": "LU-DAZHONG-COMM",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "usage_note": "概念用地分区建议，非控规/法定分区结论。",
+        "land_use_code": "05",
+        "name_zh": "大钟寺商业体验与展示",
+        "name_en": "Dazhongsi commercial-experience",
+        "conceptual_zone": "dazhongsi_commercial_experience",
+        "related_key_area": "dazhongsi_ai_industry_cluster",
+        "area_sqm_declared": 1742394.264
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
             [
-              116.351244,
-              39.939
-            ],
+              [
+                116.3398935,
+                39.978
+              ],
+              [
+                116.3397,
+                39.975
+              ],
+              [
+                116.3417,
+                40.006
+              ],
+              [
+                116.3416355,
+                40.005
+              ],
+              [
+                116.3398935,
+                39.978
+              ]
+            ]
+          ],
+          [
             [
-              116.351244,
-              40.0265
-            ],
+              [
+                116.3432,
+                39.939
+              ],
+              [
+                116.3407,
+                39.939
+              ],
+              [
+                116.3397,
+                39.975
+              ],
+              [
+                116.3401722,
+                39.958
+              ],
+              [
+                116.3432,
+                39.958
+              ],
+              [
+                116.3432,
+                39.939
+              ]
+            ]
+          ],
+          [
             [
-              116.3553,
-              40.0265
+              [
+                116.3484,
+                39.939
+              ],
+              [
+                116.3484,
+                39.958
+              ],
+              [
+                116.3553,
+                39.958
+              ],
+              [
+                116.3553,
+                39.939
+              ],
+              [
+                116.3484,
+                39.939
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                116.3533,
+                39.99
+              ],
+              [
+                116.3553,
+                39.965
+              ],
+              [
+                116.35426,
+                39.978
+              ],
+              [
+                116.3533,
+                39.99
+              ]
             ]
           ]
         ]
