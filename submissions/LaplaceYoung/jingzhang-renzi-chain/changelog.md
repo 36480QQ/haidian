@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-08
+
+- 品牌与结构化成果物批次（响应竞争扫描「成果物完整性」信号工程；对标 Abreto v2.9 包内机器可读台账方向）：
+  - `assets/logo.svg` + `assets/logo-mono.svg`：人字链 Logo 矢量成品双版（几何自绘：左撇铁轨笔画带枕木/右捺链弧带链节/顶点岔道节点；钢轨铜+数据青；未注册商标）
+  - `visual/assets/scenario-cards.json`：14 张场景卡全量结构化数据（治理基线 12 项字段+试点机制，与 proposal「AI场景卡」章逐字一致）
+  - `visual/assets/component-library.json`：公共空间组件库 25 组件（导视/智能/家具/铺装绿化/无障碍五类，含标准方向与AI特性）
+  - 正文引用：导视章节新增「品牌与结构化成果物」段落；场景卡章节回引 scenario-cards.json；逐资产权利台账新增 4 行
+  - visual/index.html 新增「品牌与结构化成果物」卡片（内嵌 Logo 预览）
+  - 校验：自检四类 PASS；advisory 8/8；一致性 ALL CONSISTENT；CI submission-validation success
+- **PR #230**：https://github.com/open-city-ai/haidian/pull/230（v1.2—v1.3，CI success）
+
 ## v1.2 - 2026-08-08
 
 - 第五轮 Swarm 集训（8 路并行联网检索：AI版权司法实践/城市更新投融资/数据要素×与实景三维/全龄友好与嵌入式设施/国际铁路廊道案例/EU AI Act 与算法登记/京张最新动态/竞争方案扫描）：
