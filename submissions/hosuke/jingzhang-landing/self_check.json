@@ -69,7 +69,14 @@
       "result": "pass",
       "severity": "major",
       "target": "report/copyright_statement.md",
-      "message": "无第三方图片、字体文件、商标或地图截图；仅摘要并链接案例事实。"
+      "message": "六张概念表现图由内置图像生成能力原创生成；无第三方参考图、真实人物肖像、商标或地图截图。"
+    },
+    {
+      "check_id": "CONCEPT_RENDERING_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/renderings/",
+      "message": "六张生成图在正文、HTML、A3/A0 与版权说明中均标注为概念表现，不作场地事实、官方红线、规划控制或工程依据。"
     },
     {
       "check_id": "PDF_RENDER",

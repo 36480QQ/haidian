@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以四程三驿两网，把人才、技术与居民由抵达、理解、试用、归属导向持续回馈；以十二个可退出、可人工复核的场景将全球创新生态落实为公共空间。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 京张入城：让每一次抵达成为共同建设的开始
@@ -14,6 +14,8 @@ iteration: "v1.0"
 > **LANDING JINGZHANG**｜让每一次抵达，成为共同建设的开始。
 
 本方案由黄舸洋（厦门，GitHub `hosuke`）与 OpenAI Codex 共同生成。它不是把异地经验贴到北京，而是从“第一次来到京张的人，怎样由访客成为共同建设者”发问：把人才服务、AI 测试、居民共益与百年京张叙事组织成可步行、可体验、可退出、可交接的城市基础设施。全文所述空间、政策、招商、活动与投资皆为概念建议，供后续专业团队依法依规深化。
+
+![AI 生成概念表现：京张遗址公共走廊与三驿总体鸟瞰；仅表达设计意图，不代表现状、官方红线或工程方案](assets/renderings/corridor-aerial-concept-v2.jpg)
 
 ## 设计依据与资料清单
 
@@ -57,9 +59,15 @@ iteration: "v1.0"
 
 **大钟寺 ARRIVE｜城市入口、文化理解、公众首用。** 入口不设实名“城市护照”，而以现场服务台、纸面地图、可下载离线包和多语导览提供平等起点。第一日论坛沿公共空间布置可移动长桌、城市权利卡和 AI 场景说明牌，访客可在不注册的情形下理解可用服务、数据边界及人工窗口；智能原生业态优先选择可当面解释、可现场退出的文化导览、服务导航和小型展示。[data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/public_space.geojson#SCN-01]
 
+![AI 生成概念表现：大钟寺 ARRIVE 的第一日论坛、人工服务台与纸面地图；不代表现状建筑或确定实施方案](assets/renderings/dazhongsi-arrive-v2.jpg)
+
 **北京 AI 原点社区 JOIN｜成果转化、共学生活、社区归属。** 空间以共享首层、邻里客厅、照护友好步行环和短期工作台为骨架。高校团队、外地开发者与居民围绕真实问题组成 30 日小组；Host Council 在立项、过程和结项三次审阅公共收益、数据最小化及非数字替代。共学长桌既可讲模型，也可交换照护、维修、口述史等居民技能，防止知识只按技术等级排序。[data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
 
+![AI 生成概念表现：AI 原点社区 JOIN 的共享首层、无障碍步行环与跨代共学；不代表现状建筑或确定实施方案](assets/renderings/origin-community-join-v2.jpg)
+
 **众智园 BUILD & PROVE｜全栈研发、分级验证、责任交接。** 设虚拟评测室、受控试验庭与限定真实场景三层门槛；模型、机器人、端侧设备和慢行路缘协同先证明安全边界、人工接管、无障碍影响和退役方式，方可提出扩大试点。技术入城门以开放审查台而非纪念高塔表达“可解释地进入城市”；测试报告同时给研发者、运营者与公众可读版本。[data:geometry/key_areas.geojson#PROV-KEY-001]
+
+![AI 生成概念表现：众智园 BUILD & PROVE 的分级试验、物理围合与人工监护；不代表设备认证或工程线位](assets/renderings/zhongzhiyuan-build-prove-v2.jpg)
 
 三处详细设计均采用“公共前场—共同工作层—限定测试层”递进剖面，位置和形态供深化；文化节点遇文保控制缺口须暂停精确落位，交通节点遇客流与道路资料缺口须暂停容量判断。重点图使用 provisional polygon 醒目标注，公告面积与图形代理分列，避免视觉上造成精确红线错觉。
 
@@ -86,6 +94,8 @@ iteration: "v1.0"
 
 其中第 5—8 卡为产业测试验证场景，[metric:test_validation_scenario_count]；每卡均要求人工复核与非数字回退，[metric:human_review_coverage_ratio] [metric:non_digital_fallback_coverage_ratio]。运营建议采用“问题公开—小额试验—居民共评—知识结项—扩大或退役”闭环，失败亦须说明原因并沉淀可复用知识。节点 400 米欧氏缓冲覆盖率 [metric:landing_node_400m_coverage_ratio] 仅检查分布，不能替代真实步行网络、坡度、过街和无障碍调查。[data:geometry/public_space.geojson#SCN-12]
 
+![AI 生成概念表现：人工迎接、无障碍共评、受控机器人测试与社区交接四类场景；具体流程以正文和结构化数据为准](assets/renderings/scenario-gallery-v2.jpg)
+
 ## 用地、建筑规模与拆改留方案
 
 概念用地面积由同一 EPSG:4548 几何复算：商业服务业设施 [metric:land_use_05_area_sqm]，城镇住宅 [metric:land_use_0701_area_sqm]，公共管理与公共服务设施 [metric:land_use_08_area_sqm]，科研 [metric:land_use_0802_area_sqm]，体育 [metric:land_use_0804_area_sqm]，公园绿地 [metric:land_use_1401_area_sqm]，广场 [metric:land_use_1403_area_sqm]。这些数值用于检验功能组合和完整覆盖，不是对现状或法定用地的认定；official boundary、合法地块和控规条件更新后须重新分类、共享边拓扑检查与面积汇总。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:metrics_recalculation]
@@ -109,6 +119,8 @@ iteration: "v1.0"
 绿地与公共空间从 land-use 共享边单元派生：绿地面积 [metric:green_space_area_sqm]、绿地率 [metric:green_ratio]，公共空间面积 [metric:public_space_area_sqm]、公共空间率 [metric:public_space_ratio]。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space] 这些是概念结构比例；后续须区分现状与新增、公共可达与附属、生态与硬质空间，并结合径流、冠层、生境、热环境和维护成本重算。
 
 公共空间以连续日常使用而非大型地标消费为主。四个“朝圣与荣誉节点”皆低体量、可复用：①大钟寺“第一日论坛”，展示新来者第一项公共贡献；②原点社区“共学长桌”，记录居民导师与开源贡献者；③众智园“技术入城门/公众首用庭”，公开测试边界、失败结项和人工接管；④沿园“回馈档案”，以可更新铭牌和离线档案记录维护、修复与交接。节点数 [metric:pilgrimage_landmark_count]；荣誉按公共贡献、维护和教学评议，不按资本规模或流量排序。
+
+![AI 生成概念表现：慢行、雨洪、铁路记忆、人工服务与受控测试共存的公共空间轴测；非精确断面或施工图](assets/renderings/public-realm-axonometric-v2.jpg)
 
 风貌语言从京张铁路“曾缩短人与知识的抵达距离”出发，而非把铁路机械比作代码。新构筑物采用开放门槛、长桌、雨棚、低位信息面和可替换组件，保持历史空间的可读性；高塔、大屏和仿古符号均不作为默认答案。导视形成“百年京张—中关村创新—AI 新文化”三层叙事：史实层须可核验，创新层标明年代与主体，未来层清楚写为设计建议。精确落位须待文保范围和建设控制资料确认，并接受遗产、景观、无障碍与社区共同审阅。
 

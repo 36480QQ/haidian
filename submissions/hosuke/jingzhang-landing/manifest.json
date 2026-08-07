@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI GPT-5 (Codex)"
   },
-  "generated_at": "2026-08-07T10:32:08Z",
+  "generated_at": "2026-08-07T12:06:53Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "bdb844c66863bc007bae474384ce87bf4de905898f2a128dea94ecee05724604"
+      "sha256": "70c217ef73ff406ca5f6e348146513d2fe4f4086de72364c0de8ec6ff8ec77c9"
     },
     {
       "path": "agent.json",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2feb671e684e9dd0b1f3021ba922258edfd2439f8af9bc3911d7c7cf07411b85"
+      "sha256": "3cb3426f65a87862e8b5078a96bd7d731710f03b4bb7ee80425b40b494a21131"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e79db656f3515e2dd2c4db6a28f21c30263bc41537bae040bac664a2aba80165"
+      "sha256": "a7947096edf0dc820a34bb3d040a2e3bf696a805d5385cf1a910e672a61a8878"
     },
     {
       "path": "report/narrative.md",
@@ -89,25 +89,25 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "dbb576165aad5e17be1a63f0b2ca89ebc50ed31665b60a6557c1621c57b0c14a"
+      "sha256": "8a7c63d93a20d9bdfd4fa11de12d982daeec8292f05fd1754126d062bdc2834c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "90fe786a5006607781cc6281f01c747a6bd143d23d74d41bc164233e7f888c2d"
+      "sha256": "f511dd83ad58b84ba488cef3ea037aabe5502c973009f18cf639447fd2be19fe"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "d93f92af9dae63d85011c921093d011d02a026fa7e03c236e3275b8b2e01d780"
+      "sha256": "a0c93979c9c278ada1acf6750ad5d793ca63f0aeee4f862e3f145c61e920dcce"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "504e3ac37f1ba37164e624d22ef7fc8914d5ec4fd9a86bf12561f0ceb6b91056"
+      "sha256": "950c2e67c74a8fe26d1dc1d6890481ef9b67c71e440ef2336948f30d0859a956"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -138,6 +138,42 @@
       "role": "proposal_figure",
       "required": true,
       "sha256": "937c6430a00fcf6ca69f8d8383721e54e58c7ee74813134fc646c53d8f785aba"
+    },
+    {
+      "path": "assets/renderings/corridor-aerial-concept-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "875872111b1c122e108cd0ee788adb7018c9afffa8aa929411b12feb3cbd042b"
+    },
+    {
+      "path": "assets/renderings/dazhongsi-arrive-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "ae3081a21046230977a11ad68668f1f5dac9fc7fb667060606153d1a9a4d7474"
+    },
+    {
+      "path": "assets/renderings/origin-community-join-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "f981122d6d2ad7757f127e526991418be9bf442538868e74428b148c3c4dfb81"
+    },
+    {
+      "path": "assets/renderings/zhongzhiyuan-build-prove-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "56c112bb5248e81d14b3534b85d1ca3e4ce2006205621ff7589e298474ac0fdd"
+    },
+    {
+      "path": "assets/renderings/public-realm-axonometric-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "b0373f099e8cf46d7816789573922851a5cbdda3870f539344830cd33ba76180"
+    },
+    {
+      "path": "assets/renderings/scenario-gallery-v2.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "8e67bf1c092a67501c5336e97247e1a90215492e40a053dbb8b609a176b1e149"
     },
     {
       "path": "geometry/buildings.geojson",
