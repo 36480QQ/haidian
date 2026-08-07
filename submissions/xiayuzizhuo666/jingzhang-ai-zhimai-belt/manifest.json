@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9e0af9381d5a6149f32f651d710b3cf635e30d5ad5da046303c64e93d3e9e031"
+      "sha256": "aae0732194e2033086fd3071381adf1b9866d61d2f59885126ceef680857bf85"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f5a4a6bf7b84c2ab4c464f93686b7e7dbef34eb9f3a24ac7163519bfbf07917b"
+      "sha256": "561c39dfb0d33b56bd55b8bae8ae6922c118f21b4b3c324dfd989b4c881b2256"
     },
     {
       "path": "assumptions.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "f3323b230cf49e49f2c4b41ecde44733da4809e4a48afbe76810fff290386c40"
+      "sha256": "d743178319dba7747bdac778065852da87ca670978e717e67f8c0c9cc5c264ad"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2bbcca8ba006b5bb4511bfb4fd089aab0808c3f43e5d931cfde151f47bea5756"
+      "sha256": "129d922996b192ff3fbab4d3eded20101c3606f500356b3a820638fe82ea9225"
     },
     {
       "path": "report/copyright_statement.md",
@@ -95,31 +95,31 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ac9f2ea1c77ad130b0b37a5919a76324173d260751e8f5644acb53ca38063452"
+      "sha256": "bffe2fe7b99913847a8a8ba3bd28145dfdb98531ee9dca5fc6673954834f3f1b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "f2773033bb44c612e12ae266a7b124ce7e7d04f47253bcf2b848dfd43bcb3ab3"
+      "sha256": "7f5130dd9edd418806831f97804239203b1dc663abbd8c0a32aef63346b8b177"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "0fb29125308108241d7b91f175b6c33a8786867196c9e9083c02d8215150246f"
+      "sha256": "e4ab56f0b9e619d2940354da8be4719ff99b622a5a4b8a19120f59d2cbe19ed9"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "6141335a87fb1a6198f5925e7a5c4cc4c4036d972f962800177bbf7f7aa86b96"
+      "sha256": "da0d0e01353fe27e53532fafac82fb6e0698dc9ae29d1fe13c2665ba71861545"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "7656a40909ea23c1f5ec3d1e8e41590c1749db21d24954112e8f5d484b62e447"
+      "sha256": "db4292cf5eb0b9dce2ca2107cd1f547d1285773db79963e3614b5c9e523ca5a5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -131,13 +131,13 @@
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "2786af3c93bf79012b7b4a71922876119a52094ecbc8f6eb173dfced22f80a4f"
+      "sha256": "05e455437e6e43e4bc5d4d318a9b0b0f47a5ef3820932c64f22adb898cf6f8a2"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8faa5593e243d517ae628bc42a05675dcd95aba382c635f6fc56be60a242bd83"
+      "sha256": "5f881a3885841c7dabb492329aa0c3b1390c778775e7ba35818ab59a248397c5"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -270,6 +270,30 @@
       "role": "scenario_card",
       "required": false,
       "sha256": "4e5305c3ebe52d311ed60fb00a49a5e124f7d6693e0d31c4e0f7c50474570fb3"
+    },
+    {
+      "path": "visual/assets/logo/zhimai-logo-primary.svg",
+      "role": "brand_asset",
+      "required": false,
+      "sha256": "85780ddd302c43c5752c6e56f1a45384823f08d4e062e98b2fc6d7c7e478a599"
+    },
+    {
+      "path": "visual/assets/logo/zhimai-logo-monochrome.svg",
+      "role": "brand_asset",
+      "required": false,
+      "sha256": "abeec6a9018848654eff2860fccb40ec00d5cb78e184314034f05d94008de616"
+    },
+    {
+      "path": "visual/assets/zhimai-component-library.json",
+      "role": "component_library",
+      "required": false,
+      "sha256": "dde35733378c8e76a7e1931bc30b78d7af872d0642f38dcca20a6b1d49102637"
+    },
+    {
+      "path": "visual/assets/zhimai-regional-synergy.json",
+      "role": "regional_synergy",
+      "required": false,
+      "sha256": "f7c160e896ffe13e3a2534f78f1776f4b31aec2a5c7de274cc5f0a5ff4a6b851"
     }
   ],
   "validation_claim": {

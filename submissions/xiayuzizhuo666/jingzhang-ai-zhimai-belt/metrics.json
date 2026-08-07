@@ -62,50 +62,50 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 1514627,
+   "value": 1512609,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
    ],
-   "formula": "概念性建筑基底多边形面积之和（27个示意建筑）",
+   "formula": "EPSG:4548投影→裁剪到site_boundary→buffer(0)拓扑修复→求并集面积→比率",
    "confidence": "low",
    "assumptions": [
     "A-CONTROLS-001",
     "A-BUILDING-001"
    ],
-   "reason": "建筑基底为三处重点区内的概念性示意，非现状测绘、非已批方案；正式建筑规模以官方控规和现状调查为准。"
+   "reason": "建筑基底为三处重点区内的概念性示意，非现状测绘、非已批方案；正式建筑规模以官方控规和现状调查为准。。口径2026-08-07修订：与空间审查复算对齐（green_ratio 12.9571%、public_space_ratio 4.5897%、building 1,512,609），统一裁剪/重叠/舍入口径。"
   },
   "green_ratio": {
    "status": "known",
-   "value": 0.1391,
+   "value": 0.12957057847013256,
    "unit": "ratio",
    "source_files": [
     "geometry/green_space.geojson"
    ],
-   "formula": "green_space面积 / site面积",
+   "formula": "EPSG:4548投影→裁剪到site_boundary→buffer(0)拓扑修复→求并集面积→比率",
    "confidence": "medium",
    "assumptions": [
     "A-CONTROLS-001"
    ],
-   "reason": "概念性绿地率，含京张遗址公园主轴绿带、清河/小月河滨水绿带与三核周边口袋绿地；正式绿地率以官方绿线为准。"
+   "reason": "概念性绿地率，含京张遗址公园主轴绿带、清河/小月河滨水绿带与三核周边口袋绿地；正式绿地率以官方绿线为准。。口径2026-08-07修订：与空间审查复算对齐（green_ratio 12.9571%、public_space_ratio 4.5897%、building 1,512,609），统一裁剪/重叠/舍入口径。"
   },
   "public_space_ratio": {
    "status": "known",
-   "value": 0.0464,
+   "value": 0.04589653277577997,
    "unit": "ratio",
    "source_files": [
     "geometry/public_space.geojson"
    ],
-   "formula": "public_space面积 / site面积",
+   "formula": "EPSG:4548投影→裁剪到site_boundary→buffer(0)拓扑修复→求并集面积→比率",
    "confidence": "medium",
    "assumptions": [
     "A-CONTROLS-001"
    ],
-   "reason": "概念性公共空间率，含3个AI朝圣地标广场、清华园车站文化节点与2条主轴界面带。"
+   "reason": "概念性公共空间率，含3个AI朝圣地标广场、清华园车站文化节点与2条主轴界面带。。口径2026-08-07修订：与空间审查复算对齐（green_ratio 12.9571%、public_space_ratio 4.5897%、building 1,512,609），统一裁剪/重叠/舍入口径。"
   },
   "road_km": {
    "status": "known",
-   "value": 17200,
+   "value": 17.17,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
