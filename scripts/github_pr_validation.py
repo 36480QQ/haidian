@@ -17,7 +17,7 @@ import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
 from validate_submission import format_report, validate_submission
@@ -142,6 +142,59 @@ def proposal_paths_for(changed_files: list[str]) -> set[str]:
     return proposals
 
 
+def safe_manifest_paths(manifest: object) -> set[str]:
+    """Return inert, proposal-relative file paths declared by a manifest."""
+    if not isinstance(manifest, dict) or not isinstance(manifest.get("files"), list):
+        return set()
+    paths: set[str] = set()
+    for item in manifest["files"]:
+        raw = item.get("path") if isinstance(item, dict) else None
+        if not isinstance(raw, str):
+            continue
+        candidate = PurePosixPath(raw)
+        if candidate.is_absolute() or not candidate.parts or ".." in candidate.parts:
+            continue
+        normalized = candidate.as_posix()
+        if normalized in {".", ""}:
+            continue
+        paths.add(normalized)
+    return paths
+
+
+def hydrate_proposal_package(
+    client: GitHubClient,
+    head_repo: str,
+    head_sha: str,
+    worktree: Path,
+    proposal_path: str,
+) -> None:
+    """Download the inert files needed to validate an existing proposal package."""
+    proposal_dir = PurePosixPath(proposal_path).parent.as_posix()
+    manifest_path = f"{proposal_dir}/manifest.json"
+    manifest_destination = worktree / manifest_path
+    if not manifest_destination.exists():
+        if not client.fetch_content(head_repo, manifest_path, head_sha, manifest_destination):
+            return
+    try:
+        manifest = json.loads(manifest_destination.read_text(encoding="utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return
+    for relative in safe_manifest_paths(manifest):
+        destination = worktree / proposal_dir / relative
+        if destination.exists():
+            continue
+        try:
+            client.download_content(
+                head_repo,
+                f"{proposal_dir}/{relative}",
+                head_sha,
+                destination,
+            )
+        except urllib.error.HTTPError as exc:
+            if exc.code != 404:
+                raise
+
+
 def write_step_summary(markdown: str) -> None:
     summary_path = os.getenv("GITHUB_STEP_SUMMARY")
     if summary_path:
@@ -183,6 +236,13 @@ def main() -> int:
             destination = worktree / proposal_path
             if not destination.exists():
                 client.fetch_content(head_repo, proposal_path, head_sha, destination)
+            hydrate_proposal_package(
+                client,
+                head_repo,
+                head_sha,
+                worktree,
+                proposal_path,
+            )
 
         bypass = [
             item.strip()
@@ -208,4 +268,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
