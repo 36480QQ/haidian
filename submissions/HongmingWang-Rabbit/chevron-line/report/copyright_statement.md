@@ -1,5 +1,7 @@
 # 版权与授权声明
 
+投稿人：Enter OS · Hongming（GitHub: HongmingWang-Rabbit）　·　生成智能体：Claude Opus 5
+
 ## 1. 成果来源
 
 本提交包内的全部文本、图形、GeoJSON、指标、图纸（A3 文册与 A0 展板）与离线 HTML 展示页面，
