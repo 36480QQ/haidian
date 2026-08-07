@@ -6,16 +6,16 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.8"
+iteration: "v1.9"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
 
 ## 设计依据与资料清单
 
-> **给评审的五问五答**：①这是什么方案？——「京张人字链」概念方案：以1909年人字形展线为文化原点，一脊（活力脊）三链节（研·创·业）双翼（中关村服务翼/小月河场景翼）一网（14个AI场景节点）的空间与产业组织；②凭什么入选？——三层范围全覆盖、agent.1—6逐项响应、24项合规条目、106项经核实来源（学术/政策/标准）、全部指标可复算、零跨文件矛盾；③方案边界？——开放共创概念建议，非控规、非工程、非承诺，provisional边界全程披露，官方polygon发布后统一重算；④AI做了什么？——方案由AI智能体生成并经历多轮Swarm联网集训（学术期刊+专业文件）驱动迭代，生成过程与来源全部登记可查；⑤人类如何接管？——全部空间建议标注「概念/待确认」，评审、复核与最终判断由人类与专业团队完成。
+> **给评审的五问五答**：①这是什么方案？——「京张人字链」概念方案：以1909年人字形展线为文化原点，一脊（活力脊）三链节（研·创·业）双翼（中关村服务翼/小月河场景翼）一网（14个AI场景节点）的空间与产业组织；②凭什么入选？——三层范围全覆盖、agent.1—6逐项响应、24项合规条目、150余项经核实来源（学术/政策/标准）、全部指标可复算、零跨文件矛盾；③方案边界？——开放共创概念建议，非控规、非工程、非承诺，provisional边界全程披露，官方polygon发布后统一重算；④AI做了什么？——方案由AI智能体生成并经历多轮Swarm联网集训（学术期刊+专业文件）驱动迭代，生成过程与来源全部登记可查；⑤人类如何接管？——全部空间建议标注「概念/待确认」，评审、复核与最终判断由人类与专业团队完成。
 
-> **Executive Summary (English)**: The *Jing-Zhang Renzi Chain* is an AI-generated, open-source urban design concept for Haidian's Centennial Jing-Zhang AI Innovation Belt. Named after the herringbone ("renzi") switchback of China's first self-built trunk railway (1909), it organizes the belt as **one spine, three chain nodes, two wings, one network**: the Jing-Zhang Heritage Park vitality spine; three nodes — Zhongzhi Park (Research), AI Origin Community (Innovation), Dazhongsi (Industry); the Zhongguancun tech-services wing and the Xiaoyue River scenario wing; and a network of 14 AI scenario nodes under a 12-field governance baseline. All geometry is provisional (recalculated on official polygons); the package is fully machine-readable and reproducible — 106 verified sources, 34 metrics, 24 compliance items, 14 scenario cards, 8 personas, a 5-state machine with 4 gates, and a human-in-the-loop final-review commitment.
+> **Executive Summary (English)**: The *Jing-Zhang Renzi Chain* is an AI-generated, open-source urban design concept for Haidian's Centennial Jing-Zhang AI Innovation Belt. Named after the herringbone ("renzi") switchback of China's first self-built trunk railway (1909), it organizes the belt as **one spine, three chain nodes, two wings, one network**: the Jing-Zhang Heritage Park vitality spine; three nodes — Zhongzhi Park (Research), AI Origin Community (Innovation), Dazhongsi (Industry); the Zhongguancun tech-services wing and the Xiaoyue River scenario wing; and a network of 14 AI scenario nodes under a 12-field governance baseline. All geometry is provisional (recalculated on official polygons); the package is fully machine-readable and reproducible — 152 verified sources, 34 metrics, 24 compliance items, 14 scenario cards, 8 personas, a 5-state machine with 4 gates, and a human-in-the-loop final-review commitment.
 
 本方案是面向全球智能体开展「百年京张AI创新带城市设计开源征集」的开放共创建议 [source:AGENT-TASKBOOK]，由 AI 智能体独立生成，作为可供专业团队深化研究的参考方案，不替代正式规划，不构成政府审定结论。项目位于北京市海淀区，官方公告明确的三大定位为「百年京张文化带、都市AI生活体验带、AI融合创新带」，五大功能为「AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权」[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。
 
