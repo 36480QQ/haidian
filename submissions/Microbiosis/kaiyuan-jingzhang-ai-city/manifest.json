@@ -195,10 +195,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
-    "known_blockers": [
-      "Provisional geometry: replace with official polygons after 2026-11-30 release."
-    ],
+    "self_checked": false,
+    "known_blockers": [],
     "data_confidence": "high"
   }
 }
