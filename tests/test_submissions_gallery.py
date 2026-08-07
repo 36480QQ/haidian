@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from generate_submissions_data import load_publication_registry, package_sha256  # noqa: E402
+from generate_submissions_data import build_data, discover_submissions, load_publication_registry, package_sha256  # noqa: E402
 DATA_FILE = ROOT / "submissions-data.js"
 INDEX_FILE = ROOT / "index.html"
 SUBMISSIONS_FILE = ROOT / "submissions.html"
@@ -22,18 +22,77 @@ class TestSubmissionsGallery(unittest.TestCase):
         self.assertIsNotNone(match)
         return json.loads(match.group(1))
 
-    def test_only_maintainer_published_submissions_are_listed(self):
+    def test_every_merged_submission_is_listed_unless_explicitly_held(self):
         registry = json.loads((ROOT / "gallery-publication.json").read_text(encoding="utf-8"))
-        published = {entry["path"] for entry in registry["entries"] if entry["published"]}
+        held = {entry["path"] for entry in registry["entries"] if not entry["published"]}
+        expected = {
+            path.relative_to(ROOT).as_posix()
+            for path in discover_submissions(ROOT)
+            if path.relative_to(ROOT).as_posix() not in held
+        }
         source_paths = {str(Path(item["sourceUrl"]).parent) for item in self.load_gallery_items()}
-        self.assertEqual(published, source_paths)
+        self.assertEqual(expected, source_paths)
 
     def test_homepage_featured_state_comes_from_publication_registry(self):
         registry = json.loads((ROOT / "gallery-publication.json").read_text(encoding="utf-8"))
-        expected = {Path(entry["path"]).name: entry["featured"] for entry in registry["entries"] if entry["published"]}
+        featured = {
+            Path(entry["path"]).name: entry["featured"]
+            for entry in registry["entries"]
+            if entry["published"]
+        }
+        expected = {
+            path.name: featured.get(path.name, False)
+            for path in discover_submissions(ROOT)
+            if path.relative_to(ROOT).as_posix()
+            not in {entry["path"] for entry in registry["entries"] if not entry["published"]}
+        }
         actual = {item["id"]: item["featured"] for item in self.load_gallery_items()}
         self.assertEqual(expected, actual)
         self.assertTrue(all("selectionReason" in item for item in self.load_gallery_items()))
+
+    def test_merged_submission_is_public_without_registry_entry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            submission = root / "submissions" / "alice" / "example"
+            submission.mkdir(parents=True)
+            (submission / "proposal.md").write_text(
+                "---\ntitle: Example proposal\nsummary: A merged proposal\n---\n",
+                encoding="utf-8",
+            )
+            (root / "gallery-publication.json").write_text(
+                '{"version": 1, "entries": []}\n',
+                encoding="utf-8",
+            )
+            items = build_data(root)
+            self.assertEqual(1, len(items))
+            self.assertEqual("example", items[0]["id"])
+            self.assertFalse(items[0]["featured"])
+
+    def test_registry_can_explicitly_hold_a_merged_submission(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            submission = root / "submissions" / "alice" / "example"
+            submission.mkdir(parents=True)
+            (submission / "proposal.md").write_text("# Example\n", encoding="utf-8")
+            entry = {
+                "path": "submissions/alice/example",
+                "published": False,
+                "featured": False,
+                "review_status": "not_approved",
+                "quality_tier": "qualified",
+                "reviewed_by": "maintainer",
+                "reviewed_at": "2026-08-07",
+                "rights_reviewed": False,
+                "reviewed_package_sha256": "0" * 64,
+                "selection_reason_zh": "维护者明确暂停公开展示",
+                "selection_reason_en": "Explicitly held from public display",
+                "selected_at": "2026-08-07",
+            }
+            (root / "gallery-publication.json").write_text(
+                json.dumps({"version": 1, "entries": [entry]}),
+                encoding="utf-8",
+            )
+            self.assertEqual([], build_data(root))
 
     def test_publication_registry_rejects_missing_selection_metadata(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -157,8 +216,8 @@ class TestSubmissionsGallery(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
 
-    def test_public_gallery_stays_empty_without_approved_submissions(self):
-        self.assertEqual([], self.load_gallery_items())
+    def test_public_gallery_contains_current_merged_submissions(self):
+        self.assertGreaterEqual(len(self.load_gallery_items()), 1)
 
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")

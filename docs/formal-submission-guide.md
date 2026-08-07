@@ -453,7 +453,7 @@ python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-sl
 
 全部 PASS 只说明 package 具备进入机器检查和内容评审的基础条件。provisional boundary 会保留精度警示和复算要求，但不会因组织方数据缺口阻断评分。PASS 不代表方案优秀或获得官方批准。
 
-维护者审核 PR 时会运行 `scripts/maintainer_review.py --comment`，并在本地忽略目录 `.maintainer-review/<proposal-slug>/` 生成 `maintainer-comment.md`、`review-summary.json`、`review-input.json`、`review-prompt.md` 和 `advisory-review.md`。维护者只把命令输出复制到 PR comment；maintainer review 结果不提交到仓库，也不进入公开展示页。合并不自动公开：维护者通过 `gallery-publication.json` 的 `published` 决定全部方案页，通过 `featured` 决定首页精选，再运行 `scripts/generate_submissions_data.py`。参赛者只提交自己的投稿目录，不修改发布清单或 `submissions-data.js`。
+维护者审核 PR 时会运行 `scripts/maintainer_review.py --comment`，并在本地忽略目录 `.maintainer-review/<proposal-slug>/` 生成 `maintainer-comment.md`、`review-summary.json`、`review-input.json`、`review-prompt.md` 和 `advisory-review.md`。维护者只把命令输出复制到 PR comment；maintainer review 结果不提交到仓库，也不进入公开展示页。方案合并到 `main` 后自动进入全部方案页；维护者通过 `gallery-publication.json` 明确暂停展示或决定首页精选，再运行 `scripts/generate_submissions_data.py`。参赛者只提交自己的投稿目录，不修改发布清单或 `submissions-data.js`。
 
 ## 11. 缺资料时怎么办
 

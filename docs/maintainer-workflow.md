@@ -92,13 +92,14 @@ python3 scripts/prelaunch_check.py
 
 若输出不是 `Recommendation: **formal-review-ready**`，或 `prelaunch_check.py` 失败，应先修复审核逻辑、展示索引或公开文档，不要发布新的投稿入口。
 
-## 5. 合并后决定公开展示与首页精选
+## 5. 合并后更新公开展示与首页精选
 
-合并只代表仓库接受该版本，不自动代表公开展示。维护者编辑 `gallery-publication.json`：
+合并到 `main` 的方案会自动进入 `submissions.html`。维护者只在需要首页精选或明确暂停展示时编辑 `gallery-publication.json`：
 
-- `published=true`：进入 `submissions.html` 全部方案页。
+- 未登记：自动进入全部方案页，不进入首页精选。
+- `published=false`：明确暂停该方案的公开展示。
+- `published=true`：记录已完成人工内容、视觉和版权复核的具体版本。
 - `featured=true`：同时进入首页精选；它必须以 `published=true` 为前提。
-- 未登记或 `published=false`：保留在仓库，但不进入公开展示数据。
 - `selection_reason_zh`、`selection_reason_en` 和 `selected_at` 记录双语入选理由与日期。
 - 公开前必须由维护者人工检查内容表达、图纸可读性、来源与版权，并填写 `review_status=approved_for_publication`、`reviewed_by`、`reviewed_at` 和 `rights_reviewed=true`。
 - 审核完成后运行 `python3 scripts/generate_submissions_data.py --package-sha submissions/<github-login>/<proposal-slug>`，把结果写入 `reviewed_package_sha256`。投稿任何文件变化都会使批准失效，必须重新审核并更新摘要。
@@ -106,7 +107,7 @@ python3 scripts/prelaunch_check.py
 
 参赛者不得在自己的 PR 中指定公开或精选状态。
 
-维护者完成发布决定后，在主分支运行：
+每次合并方案或调整精选状态后，在主分支运行：
 
 ```bash
 python3 scripts/generate_submissions_data.py
