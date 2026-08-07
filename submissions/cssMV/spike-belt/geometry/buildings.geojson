@@ -1,0 +1,1536 @@
+{
+  "type": "FeatureCollection",
+  "name": "道钉带建筑基底与拆改留",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-001",
+      "properties": {
+        "id": "BLDG-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园全栈自主创新研发楼群",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34393044435461,
+              40.02224287627946
+            ],
+            [
+              116.34392268095719,
+              40.02305337775314
+            ],
+            [
+              116.34567972361884,
+              40.02306331229471
+            ],
+            [
+              116.3456874662287,
+              40.02225281053753
+            ],
+            [
+              116.34393044435461,
+              40.02224287627946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "lab",
+        "name_zh": "众智园开放实验与标准测试楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11700.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34627314038046,
+              40.02225611603746
+            ],
+            [
+              116.34626540469979,
+              40.02306661788897
+            ],
+            [
+              116.34778817596268,
+              40.023075198582134
+            ],
+            [
+              116.34779589362745,
+              40.02226469648576
+            ],
+            [
+              116.34627314038046,
+              40.02225611603746
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "众智园既有厂房改造研发楼",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34394683271644,
+              40.02053181723528
+            ],
+            [
+              116.34393993252438,
+              40.02125226321106
+            ],
+            [
+              116.34569692899258,
+              40.021262197122645
+            ],
+            [
+              116.34570381070843,
+              40.02054175089487
+            ],
+            [
+              116.34394683271644,
+              40.02053181723528
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "incubator",
+        "name_zh": "众智园加速器组团",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 16000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35014286426232,
+              40.021827578906326
+            ],
+            [
+              116.35013432004885,
+              40.022728137272374
+            ],
+            [
+              116.35200849233621,
+              40.02273863263974
+            ],
+            [
+              116.3520170119129,
+              40.02183807394091
+            ],
+            [
+              116.35014286426232,
+              40.021827578906326
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "office",
+        "name_zh": "现状办公保留楼宇",
+        "renewal_action": "retain",
+        "renewal_action_zh": "保留",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12800.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35015824287741,
+              40.02020657348984
+            ],
+            [
+              116.3501514080912,
+              40.02092702039837
+            ],
+            [
+              116.35202553110612,
+              40.02093751510019
+            ],
+            [
+              116.35203234618463,
+              40.02021706792543
+            ],
+            [
+              116.35015824287741,
+              40.02020657348984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "众智园人才公寓",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34378848185885,
+              40.01260557937616
+            ],
+            [
+              116.34378158193684,
+              40.01332602631747
+            ],
+            [
+              116.34542125551658,
+              40.01333529952379
+            ],
+            [
+              116.34542813820099,
+              40.012614852347234
+            ],
+            [
+              116.34378848185885,
+              40.01260557937616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "众智园混合功能更新地块",
+        "renewal_action": "redevelop",
+        "renewal_action_zh": "拆除重建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35034967332426,
+              40.01237236410446
+            ],
+            [
+              116.35034198856796,
+              40.01318286799998
+            ],
+            [
+              116.35209878034114,
+              40.01319270321263
+            ],
+            [
+              116.35210644432,
+              40.012382199036416
+            ],
+            [
+              116.35034967332426,
+              40.01237236410446
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "众智园展示与国际交往中心",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 10400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35108223150606,
+              40.00922434014943
+            ],
+            [
+              116.35107540908928,
+              40.00994478855941
+            ],
+            [
+              116.3525978901847,
+              40.0099533037454
+            ],
+            [
+              116.35260469659771,
+              40.009232855119414
+            ],
+            [
+              116.35108223150606,
+              40.00922434014943
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "清河南社区服务中心改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 10400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34324000640332,
+              40.00872985856574
+            ],
+            [
+              116.34323310166144,
+              40.00945030591114
+            ],
+            [
+              116.34475556939505,
+              40.009458924032494
+            ],
+            [
+              116.34476245813367,
+              40.00873847646849
+            ],
+            [
+              116.34324000640332,
+              40.00872985856574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "清河南现状住区保留",
+        "renewal_action": "retain",
+        "renewal_action_zh": "保留",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34331335393429,
+              40.00107509991153
+            ],
+            [
+              116.34330558905326,
+              40.0018856042544
+            ],
+            [
+              116.34506208879769,
+              40.00189554381755
+            ],
+            [
+              116.34506983291314,
+              40.001085039191
+            ],
+            [
+              116.34331335393429,
+              40.00107509991153
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "清河南住区节能与适老化改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3433478607116,
+              39.997472856996914
+            ],
+            [
+              116.3433400972283,
+              39.99828336185066
+            ],
+            [
+              116.34509650468773,
+              39.998293300153044
+            ],
+            [
+              116.34510424740921,
+              39.99748279501564
+            ],
+            [
+              116.3433478607116,
+              39.997472856996914
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "学院路北现状教育设施保留",
+        "renewal_action": "retain",
+        "renewal_action_zh": "保留",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35074174797836,
+              39.995713292882925
+            ],
+            [
+              116.35073492524488,
+              39.99643374292895
+            ],
+            [
+              116.35237419703338,
+              39.996442914564
+            ],
+            [
+              116.35238100254372,
+              39.99572246428529
+            ],
+            [
+              116.35074174797836,
+              39.995713292882925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-013",
+      "properties": {
+        "id": "BLDG-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "原点社区研发孵化主楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34363377562231,
+              39.992070814722034
+            ],
+            [
+              116.34362601700253,
+              39.99288132037997
+            ],
+            [
+              116.3453822861819,
+              39.992891253243485
+            ],
+            [
+              116.34539002404546,
+              39.99208074730203
+            ],
+            [
+              116.34363377562231,
+              39.992070814722034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-014",
+      "properties": {
+        "id": "BLDG-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "incubator",
+        "name_zh": "原点社区既有楼宇转化孵化器",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34365101587453,
+              39.99026969062619
+            ],
+            [
+              116.34364411995983,
+              39.99099014033265
+            ],
+            [
+              116.34540034070933,
+              39.99100007253464
+            ],
+            [
+              116.34540721817572,
+              39.990279622576196
+            ],
+            [
+              116.34365101587453,
+              39.99026969062619
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-015",
+      "properties": {
+        "id": "BLDG-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "lab",
+        "name_zh": "原点社区开源协作实验楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34366997835981,
+              39.98828845346516
+            ],
+            [
+              116.34366308312784,
+              39.989008903421364
+            ],
+            [
+              116.34541925314615,
+              39.98901883493039
+            ],
+            [
+              116.34542612993165,
+              39.988298384722206
+            ],
+            [
+              116.34366997835981,
+              39.98828845346516
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-016",
+      "properties": {
+        "id": "BLDG-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "talent_apartment",
+        "name_zh": "原点社区人才公寓",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34369066256639,
+              39.986127103051636
+            ],
+            [
+              116.34368376807909,
+              39.986847553280285
+            ],
+            [
+              116.34543988276002,
+              39.98685748403339
+            ],
+            [
+              116.34544675880284,
+              39.98613703355278
+            ],
+            [
+              116.34369066256639,
+              39.986127103051636
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-017",
+      "properties": {
+        "id": "BLDG-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "office",
+        "name_zh": "原点社区东更新办公组团",
+        "renewal_action": "redevelop",
+        "renewal_action_zh": "拆除重建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3498391906083,
+              39.992105790747075
+            ],
+            [
+              116.34983150532737,
+              39.99291629740334
+            ],
+            [
+              116.35158777757239,
+              39.9929261362449
+            ],
+            [
+              116.35159544209694,
+              39.992115629307804
+            ],
+            [
+              116.3498391906083,
+              39.992105790747075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-018",
+      "properties": {
+        "id": "BLDG-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "原点社区东混合功能楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34985797554012,
+              39.99012455177019
+            ],
+            [
+              116.349851144871,
+              39.99084500238668
+            ],
+            [
+              116.35160736407364,
+              39.99085484051058
+            ],
+            [
+              116.35161417629452,
+              39.99013438964447
+            ],
+            [
+              116.34985797554012,
+              39.99012455177019
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-019",
+      "properties": {
+        "id": "BLDG-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "原点社区东商业服务改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 10400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34987675861223,
+              39.98814331210659
+            ],
+            [
+              116.34986992861936,
+              39.98886376297279
+            ],
+            [
+              116.35139194124487,
+              39.9888722902892
+            ],
+            [
+              116.35139875525084,
+              39.98815183920664
+            ],
+            [
+              116.34987675861223,
+              39.98814331210659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-020",
+      "properties": {
+        "id": "BLDG-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "清华园车站文化展示馆（既有遗存活化）",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 14400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35013309968492,
+              39.9858031592183
+            ],
+            [
+              116.3501254195913,
+              39.98661366680587
+            ],
+            [
+              116.35199860462869,
+              39.98662415451095
+            ],
+            [
+              116.35200626258917,
+              39.98581364662402
+            ],
+            [
+              116.35013309968492,
+              39.9858031592183
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-021",
+      "properties": {
+        "id": "BLDG-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "高校毗邻教学科研楼保留",
+        "renewal_action": "retain",
+        "renewal_action_zh": "保留",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34317773902333,
+              39.97855905497208
+            ],
+            [
+              116.34317084099588,
+              39.979279506070185
+            ],
+            [
+              116.34480970034167,
+              39.97928878140624
+            ],
+            [
+              116.3448165811608,
+              39.97856833007279
+            ],
+            [
+              116.34317773902333,
+              39.97855905497208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-022",
+      "properties": {
+        "id": "BLDG-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "小月河全民健身服务楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3509037157265,
+              39.978602577603894
+            ],
+            [
+              116.35089689882422,
+              39.97932302980634
+            ],
+            [
+              116.35253576172975,
+              39.97933219591634
+            ],
+            [
+              116.35254256142356,
+              39.97861174348132
+            ],
+            [
+              116.3509037157265,
+              39.978602577603894
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-023",
+      "properties": {
+        "id": "BLDG-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "学院路科研创新楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12600.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34326394341757,
+              39.96955340858353
+            ],
+            [
+              116.34325618661046,
+              39.97036391733955
+            ],
+            [
+              116.34489483304692,
+              39.97037318976355
+            ],
+            [
+              116.34490257050335,
+              39.969562680742854
+            ],
+            [
+              116.34326394341757,
+              39.96955340858353
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-024",
+      "properties": {
+        "id": "BLDG-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "lab",
+        "name_zh": "小月河场景验证中试楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 10400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35240194532884,
+              39.968704205757504
+            ],
+            [
+              116.35239514654278,
+              39.969424659407615
+            ],
+            [
+              116.35391672871913,
+              39.96943315016011
+            ],
+            [
+              116.35392351153378,
+              39.968712696294546
+            ],
+            [
+              116.35240194532884,
+              39.968704205757504
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-025",
+      "properties": {
+        "id": "BLDG-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "北土城现状住区保留",
+        "renewal_action": "retain",
+        "renewal_action_zh": "保留",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34332426341771,
+              39.963249447669114
+            ],
+            [
+              116.34331737066498,
+              39.963969900696924
+            ],
+            [
+              116.34495586446727,
+              39.96397917103295
+            ],
+            [
+              116.34496274002487,
+              39.96325871776989
+            ],
+            [
+              116.34332426341771,
+              39.963249447669114
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-026",
+      "properties": {
+        "id": "BLDG-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "office",
+        "name_zh": "小月河东办公改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 10400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35293804474554,
+              39.961502278200065
+            ],
+            [
+              116.35293125331894,
+              39.962222732824294
+            ],
+            [
+              116.35445267600561,
+              39.96223121527922
+            ],
+            [
+              116.35445945146657,
+              39.96151076043974
+            ],
+            [
+              116.35293804474554,
+              39.961502278200065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-027",
+      "properties": {
+        "id": "BLDG-027",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "知春路商业服务改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 11200.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34340178979208,
+              39.95514434484932
+            ],
+            [
+              116.34339489983002,
+              39.955864798898666
+            ],
+            [
+              116.34503320022247,
+              39.95587406658851
+            ],
+            [
+              116.34504007299634,
+              39.95515361230399
+            ],
+            [
+              116.34340178979208,
+              39.95514434484932
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-028",
+      "properties": {
+        "id": "BLDG-028",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "验证轴东侧混合功能楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 9600.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35346978151266,
+              39.95475062310824
+            ],
+            [
+              116.35346299728833,
+              39.95547107864976
+            ],
+            [
+              116.35486724947727,
+              39.955478901784886
+            ],
+            [
+              116.35487401896903,
+              39.95475844604484
+            ],
+            [
+              116.35346978151266,
+              39.95475062310824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-029",
+      "properties": {
+        "id": "BLDG-029",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "office",
+        "name_zh": "大钟寺西商务更新组团",
+        "renewal_action": "redevelop",
+        "renewal_action_zh": "拆除重建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 13500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34381739722639,
+              39.948392071079994
+            ],
+            [
+              116.34380965275896,
+              39.94920258289351
+            ],
+            [
+              116.34556480448904,
+              39.949212504031095
+            ],
+            [
+              116.34557252824547,
+              39.94840199193433
+            ],
+            [
+              116.34381739722639,
+              39.948392071079994
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-030",
+      "properties": {
+        "id": "BLDG-030",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "大钟寺西商业改造",
+        "renewal_action": "renovate",
+        "renewal_action_zh": "改造",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438389079905,
+              39.946140648772875
+            ],
+            [
+              116.34383202480922,
+              39.94686110400763
+            ],
+            [
+              116.34558711670986,
+              39.94687102432693
+            ],
+            [
+              116.34559398148347,
+              39.94615056884042
+            ],
+            [
+              116.3438389079905,
+              39.946140648772875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-031",
+      "properties": {
+        "id": "BLDG-031",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
+        "name_zh": "大钟寺智能原生消费综合体",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 14400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3504868997132,
+              39.948429628983085
+            ],
+            [
+              116.35047923394774,
+              39.94924014186892
+            ],
+            [
+              116.35235139933202,
+              39.94925061577761
+            ],
+            [
+              116.3523590430056,
+              39.94844010259274
+            ],
+            [
+              116.3504868997132,
+              39.948429628983085
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-032",
+      "properties": {
+        "id": "BLDG-032",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "大钟寺智能终端研发楼",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12800.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35050648859252,
+              39.946358317752896
+            ],
+            [
+              116.35049967529919,
+              39.94707877391806
+            ],
+            [
+              116.35237178177378,
+              39.947089247029346
+            ],
+            [
+              116.35237857543196,
+              39.94636879059839
+            ],
+            [
+              116.35050648859252,
+              39.946358317752896
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-033",
+      "properties": {
+        "id": "BLDG-033",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "mobility_hub",
+        "name_zh": "大钟寺站综合接驳枢纽",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 16500.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35367919528751,
+              39.944935059647
+            ],
+            [
+              116.35366648320432,
+              39.94628591606275
+            ],
+            [
+              116.35495354224798,
+              39.946293084300535
+            ],
+            [
+              116.35496622902157,
+              39.94494222754369
+            ],
+            [
+              116.35367919528751,
+              39.944935059647
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-034",
+      "properties": {
+        "id": "BLDG-034",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "南门户文化与到访中心",
+        "renewal_action": "new",
+        "renewal_action_zh": "新建",
+        "design_note_zh": "拆改留分类为概念建议，需权属核实与法定程序确认",
+        "statutory_status_zh": "概念建议，非拆改留最终结论",
+        "area_sqm_declared": 12000.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35030996003418,
+              39.942394496173925
+            ],
+            [
+              116.35030314563558,
+              39.943114952805054
+            ],
+            [
+              116.35205814407652,
+              39.9431247744037
+            ],
+            [
+              116.35206494007083,
+              39.9424043175233
+            ],
+            [
+              116.35030996003418,
+              39.942394496173925
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
