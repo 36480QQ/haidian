@@ -4,20 +4,32 @@
     {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "Intensity, height, demolition/retention, and infrastructure conclusions remain pending; the package is a conceptual reference scheme only."
+      "statement": "FAR, height, setbacks, road redlines, ownership, utilities require official confirmation.",
+      "impact": "Morphology guidelines are advisory ranges only."
     },
     {
       "id": "A-BOUNDARY-001",
       "status": "provisional",
-      "statement": "SITE_BOUNDARY and KEY_AREA polygons are provisional_constraint copies from brief/site-package/geometry/provisional_boundaries.geojson.",
-      "impact": "Areas and ratios are recomputed for intake discussion and must be recalculated when official polygons are published."
+      "statement": "SITE_BOUNDARY and KEY_AREA are provisional_constraint copies.",
+      "impact": "All areas/ratios must be recalculated after official polygons."
+    },
+    {
+      "id": "A-REALM-001",
+      "status": "conceptual",
+      "statement": "public_realm_ratio combines green_space and public_space conceptual layers; King's Cross ~40% is a reference aspiration, not a claimed achieved standard.",
+      "impact": "Deepening should increase connected public realm quality and continuity, not chase a single ratio."
+    },
+    {
+      "id": "A-FRONTAGE-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Height bands and frontage rules are conceptual suggestions pending regulatory controls.",
+      "impact": "No statutory skyline or setback claims."
     },
     {
       "id": "A-OPS-001",
       "status": "conceptual",
-      "statement": "Annual AI Open Week, developer community operations, and pilgrimage landmark programs are conceptual suggestions for professional teams to deepen.",
-      "impact": "No government event schedule, budget, or implementation commitment is claimed."
+      "statement": "Open Week calendar and KPI are conceptual operating suggestions.",
+      "impact": "No government event commitment."
     }
   ]
 }

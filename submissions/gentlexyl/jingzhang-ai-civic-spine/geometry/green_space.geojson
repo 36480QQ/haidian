@@ -13,7 +13,9 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园连续绿脊",
-        "area_sqm_declared": 2330405.958
+        "area_sqm_declared": 2330405.958,
+        "hierarchy": "primary",
+        "public_realm_role": "blue_green_spine"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,7 +56,9 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "清河创新界面绿地",
-        "area_sqm_declared": 233234.716
+        "area_sqm_declared": 233234.716,
+        "hierarchy": "secondary",
+        "public_realm_role": "key_area_green"
       },
       "geometry": {
         "type": "Polygon",
@@ -95,7 +99,9 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "大钟寺复合公园节点",
-        "area_sqm_declared": 326408.596
+        "area_sqm_declared": 326408.596,
+        "hierarchy": "secondary",
+        "public_realm_role": "key_area_green"
       },
       "geometry": {
         "type": "Polygon",

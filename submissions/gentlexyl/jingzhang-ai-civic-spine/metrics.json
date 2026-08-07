@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
       "assumptions": [
-        "Submitted boundary is provisional_constraint copied from site-package; recalculate when official polygons arrive."
+        "provisional boundary; recalculate when official polygons arrive"
       ]
     },
     "building_footprint_area_sqm": {
@@ -28,7 +28,7 @@
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
       "assumptions": [
-        "Footprints are conceptual design suggestions for discussion, not surveyed existing buildings."
+        "conceptual footprints"
       ]
     },
     "green_ratio": {
@@ -45,7 +45,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.0773,
+      "value": 0.089098,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -54,6 +54,21 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": []
+    },
+    "public_realm_ratio": {
+      "status": "known",
+      "value": 0.342327,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "(green_space_area_sqm + public_space_area_sqm) / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "conceptual combined public realm share; not King's Cross audited figure"
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -77,6 +92,76 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "land_use_0802_ratio": {
+      "status": "known",
+      "value": 0.143595,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-001)/site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional partition strips"
+      ]
+    },
+    "land_use_1401_ratio": {
+      "status": "known",
+      "value": 0.249568,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-002)/site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional partition strips"
+      ]
+    },
+    "land_use_05_ratio": {
+      "status": "known",
+      "value": 0.238224,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-003)/site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional partition strips"
+      ]
+    },
+    "land_use_0804_ratio": {
+      "status": "known",
+      "value": 0.192848,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-004)/site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional partition strips"
+      ]
+    },
+    "land_use_0702_ratio": {
+      "status": "known",
+      "value": 0.175766,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-005)/site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional partition strips"
+      ]
     }
   }
 }
