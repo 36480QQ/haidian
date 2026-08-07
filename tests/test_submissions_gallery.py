@@ -237,7 +237,15 @@ class TestSubmissionsGallery(unittest.TestCase):
             "metrics.json",
             "standard_matrix.json",
             "design_depth_matrix.json",
+            "assumptions.json",
+            "self_check.json",
             "resolveDataRefs",
+            "normalizeBlockStructure",
+            "normalizeInlineMarkdown",
+            "normalizeTables",
+            "showCitation",
+            "citation-popover",
+            "responsive-table",
             "已解析证据",
         ]:
             self.assertIn(required, viewer)
