@@ -3,7 +3,7 @@ title: "可证京张 PROOFLINE：可验证、可退出、可共治的 AI 城市�
 author_github: "zhy3213"
 language: "zh"
 license: "CC-BY-SA-4.0"
-summary: "以京张铁路的工程求证精神为文化线索，把 AI 从原始创新、受控验证、公众试用到人工决策与可逆退出组织成一条城市证据链；方案采用明确标注的临时边界，并以同源 GeoJSON、指标、图纸和离线网页接受复核。"
+summary: "以京张铁路的工程求证精神为文化线索，把 AI 从原始创新、受控验证、公众试用到人工决策与可逆退出组织成一条城市证据链；方案采用明确标注的临时边界，并以同源 GeoJSON、指标、图纸和离线网页保持设计表达一致。"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed", "ai-health-service-navigation"]
 iteration: "v1.0"
