@@ -14,7 +14,7 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review"]
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》[source:OFFICIAL-ANNOUNCEMENT] 为第一依据，以 [source:AGENT-TASKBOOK] 面向智能体任务书、[source:SITE-PACKAGE] 站点包、[source:SOURCE-REGISTRY] 来源登记、[source:PROCESSED-FACT-PACK] 处理资料包为机器可读依据，并对照 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 四项规划标准组织成果。所有设计判断按可追溯来源、可复算指标、可校验图层、可人工复核假设四层组织。
 
-当前正式可用来源登记 5 条（公告、智能体任务书、三项规划标准），空间边界使用 `brief/site-package/geometry/provisional_boundaries.geojson` 标注 `provisional_constraint`、`official_boundary=false`，仅用于方案生成、自检与设计讨论，不作为红线、审批、面积或法定控制依据；官方 polygon 发布后需按 `allowed_design_space.json` 要求重算全部面积与指标。该组织方数据缺口不阻断内容评分 [data:geometry/site_boundary.geojson#SITE-001]（来源 [source:BOUNDARY-SOURCE]）、[metric:site_area_sqm]。
+当前正式可用来源登记 5 条（公告、智能体任务书、三项规划标准），空间边界使用 `brief/site-package/geometry/provisional_boundaries.geojson` 标注 `provisional_constraint`、`official_boundary=false`，仅用于方案生成、自检与设计讨论，不作为红线、审批、面积或法定控制依据；官方 polygon 发布后需按 `allowed_design_space.json` 要求重算全部面积与指标。该组织方数据缺口不阻断内容评分 [data:geometry/site_boundary.geojson#SITE-001]（来源 [source:BOUNDARY-SOURCE]）、[metric:site_area_sqm]、[metric:floor_area_ratio]。
 
 ![三层范围与场地总览（provisional）](assets/figures/site-overview.png)
 
@@ -45,7 +45,7 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review"]
 | 5 | 伦敦东区 Tech City | 存量更新+创意阶层+活动 IP | 遗址公园活动带 |
 | 6 | 杭州（场景驱动） | 场景开放+平台生态+数商 | 小月河场景翼 |
 
-共性提炼：**成功的 AI 生态 = 策源 × 资本 × 场景 × 文化四要素循环**。生态图谱按"根（高校策源）-干（算力/开源/数据平台）-枝（赛道产业）-叶（场景卡）"组织，图谱见下图 [depth:overall_spatial_structure]。
+共性提炼：**成功的 AI 生态 = 策源 × 资本 × 场景 × 文化四要素循环**。生态图谱按"根（高校策源）-干（算力/开源/数据平台）-枝（赛道产业）-叶（场景卡）"组织，图谱见下图 [depth:overall_spatial_structure]。 案例逐项来源：[source:CASE-SILICON-VALLEY]、[source:CASE-SHENZHEN-NANSHAN]、[source:CASE-TELAVIV]、[source:CASE-ONE-NORTH]、[source:CASE-LONDON-TECHCITY]、[source:CASE-HANGZHOU]。
 
 ![生态功能分区（provisional）](assets/figures/land-use-structure.png)
 
@@ -63,8 +63,9 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review"]
 
 - **生态机制**：八要素机制（空间、土地、产业、资金、人才、算力、数据、场景）[source:AGENT-TASKBOOK] agent.2；
 - **人才画像**：五类核心人群——高校研究者、开源贡献者、创业者、产业工程师、场景消费者，配套人才航线机制；
-- **AI+ 场景卡**：场景卡机制（问题-数据许可-验收标准-开放时限），覆盖 AI+医疗、教育、商业、基础设施；示例场景卡见 `scenarios/`；
-- **运营闭环**：年度活动体系、Homeport 归港 IP、开发者社区运营、国际转化漏斗（开源→沙盒→泊位→集聚）[source:AGENT-TASKBOOK] agent.6。
+- **AI+ 场景卡（10 张）**：场景卡机制（问题-数据许可-验收标准-开放时限、人工复核、申诉与退出），覆盖 AI+医疗（社区智能健康亭）、AI+教育（开源教育实验室）、AI+商业（无感支付体验街）、AI+交通（微出行调度）、AI+城市运行（数据沙盒与城市运行中心）、AI+文化（数字铁路博物馆）、AI+社区（贡献荣誉墙与社区助手）、AI+产业（概念验证泊位与企业 Copilot）、AI+公共安全（人流应急，单列隐私边界、去标识化、误报处置、人工复核、申诉、审计与停止机制，不使用生物识别）、AI+治理（开源治理沙盒，服务"AI治理全球话语权"）；
+- **产业测试验证场景（3 个）**：AI医疗初筛沙盒、微出行调度沙盒、城市运行 AI 沙盒——以真实/去标识化数据验证可靠性，通过后进入试点，全部保留人工复核与数据最小化 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；
+- **运营闭环**：年度活动体系、Homeport 归港 IP、开发者社区运营、国际转化漏斗（开源→沙盒→泊位→集聚）、治理责任与转化 KPI（见年度运营章节）[source:AGENT-TASKBOOK] agent.6。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -95,6 +96,66 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review"]
 - **实施政策建议**：弹性供地、科研-中试混合用地、场景开放目录、数据沙盒许可四类政策方向，作为建议提出并对照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 深度要求 [data:geometry/constraints.geojson#CONSTRAINT-001]。
 
 ![生态机制数量证据](assets/figures/metrics-evidence.png)
+
+
+## 五大功能 × 三区两翼协同矩阵与区域协同
+
+### 五大功能协同回路
+
+| 五大功能 | 三区两翼主载体 | 协同机制 | 可验证输出 |
+| --- | --- | --- | --- |
+| AI全栈自主创新体系 | 众智制造坞（众智园） | 算力-中试-开源硬件闭环 | 算力枢纽+中试车间+开源根节点 [depth:municipal_new_infrastructure] |
+| 世界级AI创新生态 | 原点码头（AI原点社区） | 策源-资本-场景循环 | 概念验证泊位+开源客厅+场景沙盒 |
+| AI+场景赋能新范式 | 小月河场景翼 | 场景卡开放运营 | 10场景卡+3测试验证（见 scenarios/） |
+| 智能化AI活力城市 | 大钟寺贸易港+全域 | 产业-体验-治理联动 | AI零售/微出行/城市运行沙盒 |
+| AI治理全球话语权 | 众智制造坞（治理沙盒） | 开源治理+多边对话 | 算法审计工具+治理开源（见 scenario-ai-governance） |
+
+### 区域协同（agent.1 区域协同性要求）
+
+以"母港-协作带"机制建立跨区域创新协同（建议性表述，非实施承诺）：
+
+| 协同对象 | 交换要素 | 接口 | 建议属性 |
+| --- | --- | --- | --- |
+| 北纬社区 | 开发者/开源人才 | 人才航线+远程泊位 | 人才互认、联合社区 |
+| 未来科学城 | 基础研究/大科学装置 | 策源-转化接口 | 成果转化走廊 |
+| 怀柔科学城 | 基础科研/算力 | 算力协同调度 | 算力互联、联合课题 |
+| 经开区 | 先进制造/场景 | 中试-量产衔接 | 产业链延伸 |
+| 京津冀 | 场景/要素市场 | 场景卡互通 | 区域场景开放网络 |
+
+## 人才画像旅程与包容性用户
+
+### 五类人才画像旅程（agent.3 要求）
+
+| 画像 | 旅程 | 空间触点 |
+| --- | --- | --- |
+| 高校研究者 | 论文→开源→联合课题→产业化 | 论文咖啡馆→开源客厅→概念验证泊位 |
+| 开源贡献者 | 线上贡献→线下活动→泊位入驻 | 双周沙龙→hackathon→开发者泊位 |
+| 创业者 | 点子→场景卡→沙盒→孵化泊位 | 场景卡→数据沙盒→众智园泊位 |
+| 产业工程师 | 培训→中试→产业港 | 算力适配中心→中试车间→大钟寺 |
+| 场景消费者 | 体验→反馈→再消费 | AI体验街→场景卡反馈→迭代 |
+
+### 包容性与数字包容（agent.3/评审要求）
+
+- 覆盖沿线居民、儿童、老年人、残障人士、低收入就业者与非数字用户：公共设施配置无障碍与人工替代通道（现金支付、人工柜台、非AI服务）[standard:MOHURD-URBAN-DESIGN-MEASURES]；
+- AI公共服务场景单列隐私影响评估、人工复核、申诉、审计、停止与退出机制，公共安全场景不使用生物识别（见 scenarios/scenario-cards.json 之 scenario-ai-safety）；
+- 数据最小化与去标识化为默认原则 [depth:risk_missing_data]。
+
+## 年度活动体系与治理责任（agent.6 深化）
+
+### 年度活动表与转化 KPI
+
+| 层级 | 活动 | 频率 | 转化KPI（建议口径） |
+| --- | --- | --- | --- |
+| 品牌级 | 京张AI母港大会 | 年度 | 国际参会/签约意向/媒体报道 |
+| 行业级 | 行业hackathon/大赛 | 季度 | 团队报名/沙盒入驻/融资对接 |
+| 社区级 | 开源周末/demo码头 | 每周/月 | 贡献者活跃/新贡献PR |
+| 地标级 | 遗址公园灯光艺术 | 季节性 | 游客量/公共参与 |
+
+### 治理责任与运营机制
+
+- 责任主体类型：组织方统筹、专业运营机构执行、专家委员会审校、公众参与反馈——每类项目标注责任主体、前置条件、资源需求级别与阶段KPI [depth:phasing_implementation]；
+- 风险阈值与退出机制：AI场景设误报处置、人工复核、申诉、审计、停止与退出流程（见 scenarios/）；
+- 以上均为方案建议，不构成已确定安排或承诺 [source:AGENT-TASKBOOK]。
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -128,3 +189,15 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review"]
 
 
 <!-- final-v3 -->
+
+<!-- p1-v2 -->
+
+<!-- p1-v3 -->
+
+<!-- refinalize -->
+
+<!-- 20260808040524 -->
+
+<!-- 20260808040543 -->
+
+<!-- 20260808040559 -->
