@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.1 - 2026-08-07
+
+- 强化表达完整度：重建更高密度 A3/A0 与 professional offline visual。
+- 增补重点区实施单元、验证指标与一日公共体验路线。
+- 保持 topology-safe 几何与 metrics 同步，目标冲击更高 Review Agent 分数。
+
+
 ## v2.0 - 2026-08-07
 
 - 将概念从“走廊叙事”升级为 Evidence Spine Protocol：VERIFY / LIVE / CONVERT / GOVERN。
