@@ -49,7 +49,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 626359.9,
+      "value": 2285185.6,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -62,7 +62,7 @@
     },
     "land_use_parcel_count": {
       "status": "known",
-      "value": 25,
+      "value": 46,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -148,6 +148,97 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "官方绿地率控制条件未发布，待正式控规条件确认。"
+    },
+    "origin_node_level3_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(land_use where origin_node_level>=3)",
+      "confidence": "high",
+      "assumptions": [
+        "Origin Node 三级节点：全功能服务前台"
+      ]
+    },
+    "origin_node_level2_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(land_use where origin_node_level==2)",
+      "confidence": "high",
+      "assumptions": [
+        "Origin Node 二级节点：社区协同站"
+      ]
+    },
+    "haidian_anchor_parcels": {
+      "status": "known",
+      "value": 25,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "distinct(haidian_ecological_anchor)",
+      "confidence": "medium",
+      "assumptions": [
+        "海淀生态锚点绑定地块数"
+      ]
+    },
+    "building_massing_types": {
+      "status": "known",
+      "value": 119,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(buildings)",
+      "confidence": "medium",
+      "assumptions": [
+        "建筑体量程序化生成总量"
+      ]
+    },
+    "tower_massing_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(massing_type=tower)",
+      "confidence": "medium",
+      "assumptions": [
+        "塔楼体量"
+      ]
+    },
+    "slab_massing_count": {
+      "status": "known",
+      "value": 49,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(massing_type=slab)",
+      "confidence": "medium",
+      "assumptions": [
+        "板楼体量"
+      ]
+    },
+    "courtyard_massing_count": {
+      "status": "known",
+      "value": 46,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(massing_type=courtyard)",
+      "confidence": "medium",
+      "assumptions": [
+        "院落体量"
+      ]
     }
   }
 }

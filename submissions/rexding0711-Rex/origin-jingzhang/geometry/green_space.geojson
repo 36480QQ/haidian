@@ -13,8 +13,8 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园蓝绿空间",
-        "area_sqm_declared": 360243.0,
-        "land_use_ref": "LU-011"
+        "area_sqm_declared": 113750.3,
+        "land_use_ref": "LU-015"
       },
       "geometry": {
         "type": "Polygon",
@@ -22,11 +22,11 @@
           [
             [
               116.3475,
-              40.0075
+              40.0205
             ],
             [
               116.3455,
-              40.0075
+              40.0205
             ],
             [
               116.3455,
@@ -38,7 +38,7 @@
             ],
             [
               116.3475,
-              40.0075
+              40.0205
             ]
           ]
         ]
@@ -55,8 +55,8 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园蓝绿空间",
-        "area_sqm_declared": 265505.3,
-        "land_use_ref": "LU-012"
+        "area_sqm_declared": 123240.6,
+        "land_use_ref": "LU-016"
       },
       "geometry": {
         "type": "Polygon",
@@ -64,23 +64,23 @@
           [
             [
               116.3455,
-              39.9935
+              40.014
             ],
             [
               116.3455,
-              40.0075
+              40.0205
             ],
             [
               116.3475,
-              40.0075
+              40.0205
             ],
             [
               116.3475,
-              39.9935
+              40.014
             ],
             [
               116.3455,
-              39.9935
+              40.014
             ]
           ]
         ]
@@ -97,8 +97,8 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园蓝绿空间",
-        "area_sqm_declared": 189679.5,
-        "land_use_ref": "LU-013"
+        "area_sqm_declared": 123252.1,
+        "land_use_ref": "LU-017"
       },
       "geometry": {
         "type": "Polygon",
@@ -106,23 +106,23 @@
           [
             [
               116.3455,
-              39.9835
+              40.0075
             ],
             [
               116.3455,
-              39.9935
+              40.014
             ],
             [
               116.3475,
-              39.9935
+              40.014
             ],
             [
               116.3475,
-              39.9835
+              40.0075
             ],
             [
               116.3455,
-              39.9835
+              40.0075
             ]
           ]
         ]
@@ -139,8 +139,8 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园蓝绿空间",
-        "area_sqm_declared": 638661.9,
-        "land_use_ref": "LU-014"
+        "area_sqm_declared": 180158.5,
+        "land_use_ref": "LU-018"
       },
       "geometry": {
         "type": "Polygon",
@@ -148,23 +148,23 @@
           [
             [
               116.3455,
-              39.94984
+              39.998
             ],
             [
               116.3455,
-              39.9835
+              40.0075
             ],
             [
               116.3475,
-              39.9835
+              40.0075
             ],
             [
               116.3475,
-              39.94984
+              39.998
             ],
             [
               116.3455,
-              39.94984
+              39.998
             ]
           ]
         ]
@@ -181,8 +181,8 @@
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
         "name_zh": "京张遗址公园蓝绿空间",
-        "area_sqm_declared": 205743.1,
-        "land_use_ref": "LU-015"
+        "area_sqm_declared": 142247.8,
+        "land_use_ref": "LU-019"
       },
       "geometry": {
         "type": "Polygon",
@@ -190,11 +190,137 @@
           [
             [
               116.3455,
-              39.94984
+              39.9905
+            ],
+            [
+              116.3455,
+              39.998
             ],
             [
               116.3475,
-              39.94984
+              39.998
+            ],
+            [
+              116.3475,
+              39.9905
+            ],
+            [
+              116.3455,
+              39.9905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-006",
+      "properties": {
+        "id": "GREEN-006",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "京张遗址公园蓝绿空间",
+        "area_sqm_declared": 132778.5,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3455,
+              39.9835
+            ],
+            [
+              116.3455,
+              39.9905
+            ],
+            [
+              116.3475,
+              39.9905
+            ],
+            [
+              116.3475,
+              39.9835
+            ],
+            [
+              116.3455,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-007",
+      "properties": {
+        "id": "GREEN-007",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "京张遗址公园蓝绿空间",
+        "area_sqm_declared": 350979.1,
+        "land_use_ref": "LU-021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3455,
+              39.965
+            ],
+            [
+              116.3455,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.965
+            ],
+            [
+              116.3455,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GREEN-008",
+      "properties": {
+        "id": "GREEN-008",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "京张遗址公园蓝绿空间",
+        "area_sqm_declared": 493425.9,
+        "land_use_ref": "LU-022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3455,
+              39.965
+            ],
+            [
+              116.3475,
+              39.965
             ],
             [
               116.3475,
@@ -206,7 +332,7 @@
             ],
             [
               116.3455,
-              39.94984
+              39.965
             ]
           ]
         ]
