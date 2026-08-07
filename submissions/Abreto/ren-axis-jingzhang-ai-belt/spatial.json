@@ -100,7 +100,7 @@
    "id": "suture-corridors",
    "type": "corridor",
    "title": "三处缝合走廊",
-   "summary": "北三环、知春路、北四环东西向断点缝合：绿桥、下穿、地面绿波三类并列备选研究策略，不构成工程选型结论。",
+   "summary": "北三环、知春路、北四环东西向断点缝合：绿桥、下穿、地面过街优化三类并列备选研究策略，各廊各自比选，不构成工程选型结论。",
    "source": "proposal.md 八章；geometry/land_use.geojson LU-R1/R2/R3",
    "public_level": "provisional",
    "linked_scenarios": [
@@ -127,7 +127,7 @@
    "id": "k-marker-system",
    "type": "node",
    "title": "K标里程碑系统",
-   "summary": "沿轴布置的里程碑文化标识（K1909起点标、K2026开源标等），承载百年爬坡叙事与导视符号系统。",
+   "summary": "沿轴布置的里程碑文化标识（里程+纪年双编号，如K0·1909南起点标、K8·2026开源标），承载百年爬坡叙事与导视符号系统。",
    "source": "proposal.md 九章",
    "public_level": "public",
    "linked_scenarios": [

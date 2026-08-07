@@ -11,6 +11,7 @@
   "area": "sqm"
  },
  "boundary_basis_zh": "全部面积指标基于 provisional 粗略边界计算，不得作为官方红线或精确面积依据；官方多边形补齐后必须整体重算。",
+ "component_reconciliation_zh": "用地分量合计较 site_area_sqm 约 +17.0 平方米、分期分量合计约 +6.8 平方米，与覆盖缺口（约81平方米）同源——均来自逐要素投影后共享边的微小进出，远低于校验容差（约1141平方米）；官方红线到位后随整体重算消解。",
  "metrics": {
   "site_area_sqm": {
    "status": "known",
