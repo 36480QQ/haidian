@@ -18,9 +18,8 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 def script_path(repo_root: Path, name: str) -> Path:
-    candidate = repo_root / "scripts" / name
-    if candidate.exists():
-        return candidate
+    # Keep every subprocess on the same trusted validator version as this
+    # entrypoint.  repo_root may be an untrusted or older PR checkout.
     return SCRIPT_DIR / name
 
 
