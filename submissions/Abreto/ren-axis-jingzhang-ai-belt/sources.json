@@ -124,6 +124,18 @@
    "not_usable_for_zh": "不用于空间控制结论或指标事实。"
   },
   {
+   "id": "OSM-BASE",
+   "registry_source_id": "SRC-OSM-COPYRIGHT",
+   "title": "OpenStreetMap 现状要素参照（北三环/知春路/北四环/北五环/京藏高速/小月河/清河/京张高铁走廊/13号线地面段）",
+   "publisher": "OpenStreetMap contributors",
+   "published_date": "2026-08-07",
+   "url": "https://www.openstreetmap.org/copyright",
+   "authority_level": "open_data_license",
+   "usable_for_formal": "background_only",
+   "used_for_zh": "existing_condition 现状参照层（constraints.geojson EX-OSM-*）；三条缝合走廊线位校核锚定；图纸与可视化底图语境。ODbL 1.0 署名：© OpenStreetMap contributors。",
+   "not_usable_for_zh": "非测绘级精度；不得作为红线、控制线、精确量测或规划控制依据。"
+  },
+  {
    "id": "OPEN-CALL-LAUNCH-ARTICLE",
    "registry_source_id": null,
    "registry_note_zh": "征集活动发布文章（公众号公开文章），未入公开资料登记表；仅作活动机制背景参照。",

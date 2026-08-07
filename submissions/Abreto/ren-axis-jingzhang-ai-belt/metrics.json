@@ -11,7 +11,7 @@
   "area": "sqm"
  },
  "boundary_basis_zh": "全部面积指标基于 provisional 粗略边界计算，不得作为官方红线或精确面积依据；官方多边形补齐后必须整体重算。",
- "component_reconciliation_zh": "用地分量合计较 site_area_sqm 约 +17.0 平方米、分期分量合计约 +6.8 平方米，与覆盖缺口（约81平方米）同源——均来自逐要素投影后共享边的微小进出，远低于校验容差（约1141平方米）；官方红线到位后随整体重算消解。",
+ "component_reconciliation_zh": "用地分量合计较 site_area_sqm 约 +15.9 平方米、分期分量合计约 +6.8 平方米，与覆盖缺口同源——均来自逐要素投影后共享边的微小进出，远低于校验容差（约1141平方米）；官方红线到位后随整体重算消解。",
  "metrics": {
   "site_area_sqm": {
    "status": "known",
@@ -95,7 +95,7 @@
   },
   "land_use_commercial_05_sqm": {
    "status": "known",
-   "value": 1538925.045,
+   "value": 1932004.649,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -108,7 +108,7 @@
   },
   "land_use_residential_07_sqm": {
    "status": "known",
-   "value": 2720390.69,
+   "value": 2687931.684,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -134,7 +134,7 @@
   },
   "land_use_research_0802_sqm": {
    "status": "known",
-   "value": 3485379.986,
+   "value": 3015060.242,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -160,7 +160,7 @@
   },
   "land_use_road_1207_sqm": {
    "status": "known",
-   "value": 217199.209,
+   "value": 204153.554,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -173,7 +173,7 @@
   },
   "land_use_park_green_1401_sqm": {
    "status": "known",
-   "value": 1886450.142,
+   "value": 1888822.057,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -212,7 +212,7 @@
   },
   "land_use_reserved_16_sqm": {
    "status": "known",
-   "value": 404357.765,
+   "value": 524729.547,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -225,7 +225,7 @@
   },
   "green_space_area_sqm": {
    "status": "known",
-   "value": 1946159.522,
+   "value": 1948531.437,
    "unit": "sqm",
    "source_files": [
     "geometry/green_space.geojson"
@@ -238,7 +238,7 @@
   },
   "green_ratio": {
    "status": "known",
-   "value": 0.170524,
+   "value": 0.170732,
    "unit": "ratio",
    "source_files": [
     "geometry/green_space.geojson",
@@ -279,7 +279,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 144795.519,
+   "value": 144795.418,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -307,7 +307,7 @@
   },
   "proposed_total_floor_area_sqm": {
    "status": "known",
-   "value": 1263013.155,
+   "value": 1263012.65,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -321,7 +321,7 @@
   },
   "road_network_length_m": {
    "status": "known",
-   "value": 34433.933,
+   "value": 34410.544,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
