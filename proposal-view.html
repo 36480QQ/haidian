@@ -39,11 +39,11 @@ button{font:inherit;color:inherit}
 .shell{display:grid;grid-template-columns:minmax(0,1fr) 360px;max-width:1500px;margin:0 auto}
 .report-wrap{min-width:0;padding:34px 28px 90px}
 .report{
-  max-width:980px;min-height:75vh;margin:0 auto;padding:50px 58px 80px;background:var(--paper);
+  max-width:940px;min-height:75vh;margin:0 auto;padding:50px 62px 80px;background:var(--paper);
   color:var(--ink);box-shadow:0 0 0 1px #ffffff10,0 28px 80px #0008
 }
 .report-status{
-  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin:-50px -58px 42px;
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin:-50px -62px 42px;
   border-bottom:1px solid var(--paper-line);background:#edf2f7
 }
 .status-cell{padding:13px 14px;border-right:1px solid var(--paper-line)}
@@ -51,20 +51,24 @@ button{font:inherit;color:inherit}
 .status-value{display:block;color:#244e75;font:600 15px var(--mono)}
 .status-label{display:block;margin-top:3px;color:#7d8794;font-size:9px;letter-spacing:.08em}
 .report .hero{padding:0 0 28px;margin:0 0 28px;border-bottom:3px solid #245b8f}
-.report h1{margin:0 0 12px;font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-.04em}
+.report h1{margin:0 0 12px;font-size:clamp(30px,4vw,44px);line-height:1.18;letter-spacing:-.035em}
 .report h2{margin:48px 0 18px;padding-top:26px;border-top:1px solid var(--paper-line);font-size:27px;line-height:1.35;letter-spacing:-.025em}
 .report h3{margin:32px 0 12px;font-size:21px;line-height:1.4}
 .report h4{margin:24px 0 10px;font-size:17px}
-.report p,.report li{font-size:16px;line-height:1.92}
+.report p,.report li{font-size:16px;line-height:1.86;overflow-wrap:anywhere}
 .report p{margin:0 0 19px}
-.report ul{padding-left:22px}
-.report code{padding:.08em .32em;border-radius:4px;background:#e9eef4;color:#20527c;font-family:var(--mono);font-size:.92em}
+.report ul,.report ol{margin:14px 0 24px;padding-left:24px}
+.report li{margin:0 0 10px;padding-left:4px}
+.report strong{font-weight:680;color:#101a2b;overflow-wrap:anywhere;word-break:break-word}
+.report a{color:#245b8f;text-decoration:underline;text-decoration-color:#245b8f55;text-underline-offset:.18em}
+.report code{padding:.08em .32em;border-radius:4px;background:#e9eef4;color:#20527c;font-family:var(--mono);font-size:.92em;overflow-wrap:anywhere;word-break:break-word}
 .report pre{max-width:100%;padding:16px;overflow:auto;background:#e9eef4;color:#24384d;font:12px/1.65 var(--mono)}
 .report blockquote{margin:22px 0;padding:12px 18px;border-left:3px solid #7997b4;background:#eaf0f6;color:#4f6073}
-.report table{width:100%;margin:24px 0;border-collapse:collapse;font-size:13px}
-.report th,.report td{padding:10px 12px;border:1px solid var(--paper-line);text-align:left;vertical-align:top}
+.report table{width:100%;margin:24px 0;border-collapse:collapse;font-size:13px;line-height:1.55}
+.report th,.report td{padding:10px 12px;border:1px solid var(--paper-line);text-align:left;vertical-align:top;overflow-wrap:anywhere;word-break:break-word}
 .report th{background:#eaf0f6}
 .report .summary{color:#667085;font-size:17px}
+.report img{display:block;max-width:100%;height:auto}
 .report figure{margin:30px 0;border:1px solid var(--paper-line);background:#fff;overflow:hidden}
 .report figure img{display:block;width:100%;height:auto}
 .report figcaption{padding:10px 14px;border-top:1px solid var(--paper-line);color:#717b89;font-size:13px}
@@ -75,6 +79,21 @@ button{font:inherit;color:inherit}
 }
 .evidence-ref:hover,.evidence-ref.active{border-color:#245b8f;background:#245b8f;color:#fff;transform:translateY(-1px)}
 .evidence-ref.unresolved{border-style:dashed;color:#8a6670;background:#f8eef0}
+.citation-popover{
+  position:fixed;z-index:160;width:min(360px,calc(100vw - 24px));padding:15px 16px 13px;
+  border:1px solid #ffc46b70;background:#0b0f15f5;color:#eef2f6;
+  box-shadow:0 18px 48px #0009;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .13s,transform .13s,visibility .13s;
+  pointer-events:none
+}
+.citation-popover.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.citation-kind{color:var(--accent);font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.citation-title{display:block;margin-top:7px;font-size:14px;line-height:1.45}
+.citation-summary{margin-top:7px;color:#aab2bd;font-size:11px;line-height:1.65}
+.citation-facts{display:grid;gap:5px;margin-top:10px;padding-top:9px;border-top:1px solid #ffffff12}
+.citation-fact{display:grid;grid-template-columns:68px 1fr;gap:9px;color:#b7bec7;font-size:10px;line-height:1.45}
+.citation-fact span:first-child{color:#68727f;font:8px var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.citation-hint{margin-top:9px;color:#68727f;font:8px var(--mono);letter-spacing:.08em}
 .panel{
   position:sticky;top:62px;height:calc(100vh - 62px);border-left:1px solid var(--line);
   background:linear-gradient(180deg,#090c11,#06080c);overflow:hidden
@@ -117,14 +136,22 @@ button{font:inherit;color:inherit}
 .mobile-toggle{display:none}
 @media(max-width:1050px){
   .shell{grid-template-columns:minmax(0,1fr) 320px}
-  .report{padding-left:40px;padding-right:40px}.report-status{margin-left:-40px;margin-right:-40px}
+  .report{padding-left:42px;padding-right:42px}.report-status{margin-left:-42px;margin-right:-42px}
 }
 @media(max-width:820px){
   .topbar{padding:9px 14px}.top-title{display:none}.action.secondary{display:none}
   .shell{display:block}.report-wrap{padding:20px 12px 90px}.report{padding:34px 20px 60px}
-  .report-status{grid-template-columns:repeat(3,1fr);margin:-34px -20px 30px}
-  .status-cell:nth-child(3){border-right:0}.status-cell:nth-child(n+4){border-top:1px solid var(--paper-line)}
-  .report p,.report li{font-size:15px;line-height:1.85}.report h2{font-size:23px}
+  .report-status{grid-template-columns:repeat(2,1fr);margin:-34px -20px 30px}
+  .status-cell:nth-child(2n){border-right:0}.status-cell:nth-child(n+3){border-top:1px solid var(--paper-line)}
+  .report p,.report li{font-size:15.5px;line-height:1.82}.report h1{font-size:30px}.report h2{font-size:23px}
+  .report h3{font-size:19px}.report ol,.report ul{padding-left:22px}
+  .report table.responsive-table,.report table.responsive-table tbody,.report table.responsive-table tr,.report table.responsive-table td{display:block;width:100%}
+  .report table.responsive-table{border:0}.report table.responsive-table thead{display:none}
+  .report table.responsive-table tr{margin:0 0 14px;border:1px solid var(--paper-line);background:#fff}
+  .report table.responsive-table td{display:grid;grid-template-columns:minmax(92px,34%) 1fr;gap:10px;border:0;border-bottom:1px solid var(--paper-line)}
+  .report table.responsive-table td:last-child{border-bottom:0}
+  .report table.responsive-table td::before{content:attr(data-label);color:#60748a;font:9px/1.5 var(--mono);letter-spacing:.05em;text-transform:uppercase}
+  .citation-popover{display:none}
   .panel{position:fixed;z-index:90;inset:112px 0 0;height:auto;border-left:0;border-top:1px solid var(--line);transform:translateY(105%);transition:.25s}
   .panel.open{transform:translateY(0)}
   .mobile-toggle{display:inline-flex}.panel-head{padding-top:16px}.detail{max-height:35%}
@@ -136,11 +163,12 @@ button{font:inherit;color:inherit}
 </head>
 <body>
 <div class="progress" id="progress"></div>
+<div class="citation-popover" id="citationPopover" role="tooltip" aria-hidden="true"></div>
 <header class="topbar">
   <a class="back" href="submissions.html">← 返回方案展示</a>
   <div class="top-title" id="topTitle">正在载入方案</div>
   <div class="top-actions">
-    <button class="action mobile-toggle" id="evidenceToggle" type="button">证据索引 <span id="mobileCount">0</span></button>
+    <button class="action mobile-toggle" id="evidenceToggle" type="button" aria-expanded="false" aria-controls="panel">证据索引 <span id="mobileCount">0</span></button>
     <a class="action secondary" id="sourceLink" href="#">源文件</a>
     <a class="action secondary" id="a3Link" href="#">A3 图册</a>
     <a class="action primary" id="visualLink" href="#">交互可视化 ↗</a>
@@ -169,8 +197,11 @@ const KIND_META={
   metric:{zh:'指标',en:'Metric',color:'#62d6a8'},
   data:{zh:'空间数据',en:'Spatial data',color:'#9d8cff'},
   standard:{zh:'专业依据',en:'Standard',color:'#ffc46b'},
-  depth:{zh:'专业深度',en:'Design depth',color:'#e19a72'}
+  depth:{zh:'专业深度',en:'Design depth',color:'#e19a72'},
+  assumption:{zh:'前提与边界',en:'Assumption',color:'#e08b78'},
+  self_check:{zh:'方案自检',en:'Self check',color:'#75c7bd'}
 };
+const EVIDENCE_KINDS=Object.keys(KIND_META).join('|');
 const state={refs:[],filter:'all',selected:null,packagePath:'',data:new Map()};
 const $=selector=>document.querySelector(selector);
 const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -200,7 +231,7 @@ function sanitizeReport(root,reportUrl){
   root.querySelectorAll('*').forEach(node=>{
     [...node.attributes].forEach(attr=>{
       const name=attr.name.toLowerCase();
-      if(name.startsWith('on')||name==='srcdoc')node.removeAttribute(attr.name);
+      if(name.startsWith('on')||['srcdoc','style','id','tabindex'].includes(name))node.removeAttribute(attr.name);
     });
   });
   root.querySelectorAll('img').forEach(img=>{
@@ -222,7 +253,9 @@ function buildMaps(payload){
     source:new Map(asArray(payload.sources?.sources).map(item=>[String(item.id),item])),
     metric:new Map(Object.entries(payload.metrics?.metrics||{})),
     standard:new Map(asArray(payload.standards?.standards).map(item=>[String(item.standard_id),item])),
-    depth:new Map(asArray(payload.depth?.items).map(item=>[String(item.item_id),item]))
+    depth:new Map(asArray(payload.depth?.items).map(item=>[String(item.item_id),item])),
+    assumption:new Map(asArray(payload.assumptions?.assumptions).map(item=>[String(item.id),item])),
+    self_check:new Map(asArray(payload.selfCheck?.checks).map(item=>[String(item.check_id),item]))
   };
   return maps;
 }
@@ -265,6 +298,16 @@ function resolveRef(ref,maps){
     result.summary=item.evidence_summary_zh||'';
     result.rows=[['专业维度',item.professional_dimension],['完成状态',item.status],['对应章节',compact(item.proposal_sections)],['图纸',compact(item.drawing_refs)],['空间数据',compact(item.geometry_refs)]];
     result.href=packageUrl('design_depth_matrix.json');
+  }else if(ref.kind==='assumption'&&item){
+    result.label=item.statement||ref.value;
+    result.summary=item.impact||'';
+    result.rows=[['前提编号',item.id],['状态',item.status],['影响',item.impact]];
+    result.href=packageUrl('assumptions.json');
+  }else if(ref.kind==='self_check'&&item){
+    result.label=item.message||ref.value;
+    result.summary=item.target?`检查目标：${item.target}`:'';
+    result.rows=[['检查编号',item.check_id],['结果',item.result],['严重度',item.severity],['目标',item.target],['说明',item.message]];
+    result.href=packageUrl('self_check.json');
   }else if(ref.kind==='data'){
     const [path,id='']=ref.value.split('#');
     const data=state.data.get(path);
@@ -299,6 +342,7 @@ function renderStatus(refs){
     <div class="status-cell"><span class="status-value">${counts.metric}</span><span class="status-label">方案指标</span></div>
     <div class="status-cell"><span class="status-value">${counts.data}</span><span class="status-label">空间要素</span></div>
     <div class="status-cell"><span class="status-value">${counts.standard+counts.depth}</span><span class="status-label">专业依据</span></div>
+    <div class="status-cell"><span class="status-value">${counts.assumption+counts.self_check}</span><span class="status-label">边界与自检</span></div>
   </div>`;
 }
 function renderFilters(){
@@ -324,8 +368,212 @@ function selectRef(key,scrollToText=false,openPanel=false){
   const rows=ref.rows.map(([key,value])=>`<div class="detail-row"><span class="detail-key">${escapeHTML(key)}</span><span class="detail-value">${escapeHTML(value)}</span></div>`).join('');
   $('#detail').innerHTML=`<span class="detail-type">${KIND_META[ref.kind].zh} · ${ref.resolved?'已载入':'未解析'}</span><h3>${escapeHTML(ref.label)}</h3><div class="detail-summary">${escapeHTML(ref.summary)}</div><div class="detail-grid">${rows}</div>${ref.href?`<a class="detail-link" href="${escapeHTML(ref.href)}" target="_blank" rel="noopener">打开原始数据 ↗</a>`:''}`;
   renderList();
-  if(openPanel)$('#panel').classList.add('open');
+  if(openPanel){
+    $('#panel').classList.add('open');
+    $('#evidenceToggle').setAttribute('aria-expanded','true');
+  }
   if(scrollToText){document.querySelector(`.evidence-ref[data-key="${CSS.escape(key)}"]`)?.scrollIntoView({behavior:'smooth',block:'center'})}
+}
+function citationMarkup(ref){
+  const facts=ref.rows.slice(0,3).map(([key,value])=>`<div class="citation-fact"><span>${escapeHTML(key)}</span><span>${escapeHTML(value)}</span></div>`).join('');
+  return `<span class="citation-kind">${escapeHTML(KIND_META[ref.kind].zh)} · ${ref.resolved?'已载入':'未解析'}</span>
+    <strong class="citation-title">${escapeHTML(ref.label)}</strong>
+    ${ref.summary?`<div class="citation-summary">${escapeHTML(ref.summary)}</div>`:''}
+    ${facts?`<div class="citation-facts">${facts}</div>`:''}
+    <div class="citation-hint">点击查看完整记录</div>`;
+}
+function showCitation(anchor,key){
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  const ref=state.refs.find(item=>item.key===key);if(!ref)return;
+  const popover=$('#citationPopover');
+  popover.innerHTML=citationMarkup(ref);
+  popover.classList.add('visible');popover.setAttribute('aria-hidden','false');
+  const anchorRect=anchor.getBoundingClientRect();
+  const popoverRect=popover.getBoundingClientRect();
+  const left=Math.max(12,Math.min(innerWidth-popoverRect.width-12,anchorRect.left+anchorRect.width/2-popoverRect.width/2));
+  let top=anchorRect.bottom+10;
+  if(top+popoverRect.height>innerHeight-12)top=Math.max(12,anchorRect.top-popoverRect.height-10);
+  popover.style.left=`${left}px`;popover.style.top=`${top}px`;
+}
+function hideCitation(){
+  const popover=$('#citationPopover');
+  popover.classList.remove('visible');popover.setAttribute('aria-hidden','true');
+}
+function bindEvidenceButtons(root){
+  root.querySelectorAll('.evidence-ref').forEach(button=>{
+    button.addEventListener('mouseenter',()=>showCitation(button,button.dataset.key));
+    button.addEventListener('mouseleave',hideCitation);
+    button.addEventListener('focus',()=>showCitation(button,button.dataset.key));
+    button.addEventListener('blur',hideCitation);
+    button.addEventListener('click',()=>{hideCitation();selectRef(button.dataset.key,false,true)});
+  });
+}
+function removeRepeatedTitle(report){
+  const heroTitle=report.querySelector('.hero h1');
+  if(!heroTitle)return;
+  [...report.querySelectorAll('h1')].filter(title=>title!==heroTitle).forEach(title=>{
+    if(title.textContent.trim()===heroTitle.textContent.trim()){title.remove();return}
+    const section=document.createElement('h2');
+    section.innerHTML=title.innerHTML;title.replaceWith(section);
+  });
+}
+function tableRowsFromText(text){
+  if(!text.trim().startsWith('|'))return null;
+  const tokens=text.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(cell=>cell.trim());
+  const headerEnd=tokens.indexOf('');
+  if(headerEnd<2)return null;
+  const header=tokens.slice(0,headerEnd);
+  const width=header.length;
+  const separator=tokens.slice(headerEnd+1,headerEnd+1+width);
+  if(separator.length!==width||!separator.every(cell=>/^:?-{3,}:?$/.test(cell)))return null;
+  let cursor=headerEnd+1+width;
+  if(tokens[cursor]==='')cursor+=1;
+  const rows=[];let current=[];
+  for(const token of tokens.slice(cursor)){
+    if(current.length===width){
+      if(new RegExp(`^\\[(${EVIDENCE_KINDS}):`).test(token)){
+        current[width-1]=`${current[width-1]} ${token}`.trim();
+        continue;
+      }
+      rows.push(current);current=[];
+      if(token==='')continue;
+    }
+    current.push(token);
+  }
+  if(current.length){
+    while(current.length<width)current.push('');
+    rows.push(current.slice(0,width));
+  }
+  return [header,separator,...rows];
+}
+function replaceMarkdownTable(paragraph,rows){
+  const table=document.createElement('table');
+  table.className='responsive-table normalized-markdown-table';
+  const thead=document.createElement('thead');
+  const headerRow=document.createElement('tr');
+  rows[0].forEach(value=>{
+    const th=document.createElement('th');th.textContent=value;headerRow.append(th);
+  });
+  thead.append(headerRow);table.append(thead);
+  const tbody=document.createElement('tbody');
+  rows.slice(2).forEach(values=>{
+    const row=document.createElement('tr');
+    rows[0].forEach((label,index)=>{
+      const cell=document.createElement('td');
+      cell.dataset.label=label;cell.textContent=values[index]||'';row.append(cell);
+    });
+    tbody.append(row);
+  });
+  table.append(tbody);paragraph.replaceWith(table);
+}
+function numberedItems(text){
+  const matches=[...text.matchAll(/(?:^|\s)(\d+)\.\s+/g)];
+  if(matches.length<2||matches[0].index!==0)return null;
+  if(matches.some((match,index)=>Number(match[1])!==index+1))return null;
+  return matches.map((match,index)=>{
+    const start=match.index+match[0].length;
+    const end=index+1<matches.length?matches[index+1].index:text.length;
+    return text.slice(start,end).trim();
+  }).filter(Boolean);
+}
+function normalizeBlockStructure(report){
+  removeRepeatedTitle(report);
+  [...report.querySelectorAll('pre')].forEach(preformatted=>{
+    const rows=tableRowsFromText(preformatted.textContent);
+    if(rows)replaceMarkdownTable(preformatted,rows);
+  });
+  [...report.querySelectorAll('p')].forEach(paragraph=>{
+    const text=paragraph.textContent.trim();
+    const rows=tableRowsFromText(text);
+    if(rows){replaceMarkdownTable(paragraph,rows);return}
+    if(text.startsWith('>')){
+      const quote=document.createElement('blockquote');
+      quote.textContent=text.replace(/^>\s*/,'');
+      paragraph.replaceWith(quote);return;
+    }
+    const items=numberedItems(text);
+    if(items){
+      const list=document.createElement('ol');
+      items.forEach(value=>{const item=document.createElement('li');item.textContent=value;list.append(item)});
+      paragraph.replaceWith(list);
+    }
+  });
+}
+function normalizeTables(report){
+  report.querySelectorAll('table').forEach(table=>{
+    table.classList.add('responsive-table');
+    const headers=[...table.querySelectorAll('thead th')].map(cell=>cell.textContent.trim());
+    if(!headers.length){
+      headers.push(...[...table.querySelectorAll('tr:first-child th,tr:first-child td')].map(cell=>cell.textContent.trim()));
+    }
+    table.querySelectorAll('tbody tr').forEach(row=>{
+      [...row.children].forEach((cell,index)=>cell.dataset.label=headers[index]||`字段 ${index+1}`);
+    });
+  });
+}
+function inlineMarkdownParts(text){
+  const pattern=/(\*\*[^*\n]+?\*\*|`[^`\n]+?`|\[[^\]\n]+\]\(https?:\/\/[^)\s]+\))/g;
+  const parts=[];let cursor=0;
+  for(const match of text.matchAll(pattern)){
+    if(match.index>cursor)parts.push({type:'text',value:text.slice(cursor,match.index)});
+    const value=match[0];
+    if(value.startsWith('**'))parts.push({type:'strong',value:value.slice(2,-2)});
+    else if(value.startsWith('`'))parts.push({type:'code',value:value.slice(1,-1)});
+    else{
+      const link=value.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+      parts.push(link?{type:'link',value:link[1],href:link[2]}:{type:'text',value});
+    }
+    cursor=match.index+value.length;
+  }
+  if(cursor<text.length)parts.push({type:'text',value:text.slice(cursor)});
+  return parts;
+}
+function normalizeInlineMarkdown(report){
+  const walker=document.createTreeWalker(report,NodeFilter.SHOW_TEXT);
+  const nodes=[];
+  while(walker.nextNode()){
+    const node=walker.currentNode;
+    if(node.parentElement?.closest('code,pre,a,strong,em,.evidence'))continue;
+    if(/(\*\*|`|\[[^\]]+\]\(https?:\/\/)/.test(node.nodeValue||''))nodes.push(node);
+  }
+  nodes.forEach(node=>{
+    const parts=inlineMarkdownParts(node.nodeValue||'');
+    if(parts.length===1&&parts[0].type==='text')return;
+    const fragment=document.createDocumentFragment();
+    parts.forEach(part=>{
+      if(part.type==='text'){fragment.append(part.value);return}
+      const element=document.createElement(part.type==='link'?'a':part.type);
+      element.textContent=part.value;
+      if(part.type==='link'){
+        element.href=safeHttpUrl(part.href);element.target='_blank';element.rel='noopener';
+      }
+      fragment.append(element);
+    });
+    node.replaceWith(fragment);
+  });
+}
+function normalizeCrossNodeStrong(report){
+  report.querySelectorAll('p,li,blockquote,td,th,figcaption').forEach(block=>{
+    if(!(block.textContent.match(/\*\*/g)||[]).length)return;
+    const html=block.innerHTML;
+    const normalized=html.replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>');
+    if(normalized!==html)block.innerHTML=normalized;
+  });
+}
+function normalizeBareDataReferences(report){
+  report.querySelectorAll('code').forEach(code=>{
+    if(code.closest('.evidence'))return;
+    const match=code.textContent.trim().match(/^((?:geometry\/)?[A-Za-z0-9._-]+\.geojson)#([A-Za-z0-9._~/-]+)$/);
+    if(!match)return;
+    const path=match[1].includes('/')?match[1]:`geometry/${match[1]}`;
+    const marker=document.createElement('span');
+    marker.className='evidence';
+    marker.textContent=`[data:${path}#${match[2]}]`;
+    code.after(marker);
+  });
+}
+function parseEvidenceMarker(text){
+  return text.trim().match(new RegExp(`^\\[(${EVIDENCE_KINDS}):([^\\]\\s]+)\\]$`));
 }
 function normalizeEvidenceMarkers(report){
   const walker=document.createTreeWalker(report,NodeFilter.SHOW_TEXT);
@@ -333,11 +581,11 @@ function normalizeEvidenceMarkers(report){
   while(walker.nextNode()){
     const node=walker.currentNode;
     if(node.parentElement?.closest('.evidence,code,pre,script,style'))continue;
-    if(/\[(source|standard|depth|data|metric):[^\]\s]+\]/.test(node.nodeValue||''))nodes.push(node);
+    if(new RegExp(`\\[(${EVIDENCE_KINDS}):[^\\]\\s]+\\]`).test(node.nodeValue||''))nodes.push(node);
   }
   nodes.forEach(node=>{
     const text=node.nodeValue||'';
-    const pattern=/\[(source|standard|depth|data|metric):[^\]\s]+\]/g;
+    const pattern=new RegExp(`\\[(${EVIDENCE_KINDS}):[^\\]\\s]+\\]`,'g');
     const fragment=document.createDocumentFragment();
     let cursor=0;
     for(const match of text.matchAll(pattern)){
@@ -355,7 +603,7 @@ function normalizeEvidenceMarkers(report){
 function attachEvidence(report,maps){
   const unique=new Map();
   report.querySelectorAll('.evidence').forEach(node=>{
-    const match=node.textContent.trim().match(/^\[(source|standard|depth|data|metric):([^\]\s]+)\]$/);
+    const match=parseEvidenceMarker(node.textContent);
     if(!match)return;
     const key=`${match[1]}:${match[2]}`;
     if(!unique.has(key))unique.set(key,{key,kind:match[1],value:match[2],nodes:[]});
@@ -366,6 +614,7 @@ function attachEvidence(report,maps){
     const button=document.createElement('button');
     button.type='button';button.className=`evidence-ref ${ref.resolved?'':'unresolved'}`;
     button.dataset.key=ref.key;button.textContent=ref.number;button.title=`${KIND_META[ref.kind].zh}：${ref.label}`;
+    button.setAttribute('aria-label',`${KIND_META[ref.kind].zh}：${ref.label}`);
     node.replaceWith(button);
   }));
 }
@@ -374,19 +623,25 @@ async function load(){
   if(!validPackagePath(path))throw new Error('方案地址无效或缺失');
   state.packagePath=path;
   const reportUrl=new URL(packageUrl('report/proposal.html'),location.href);
-  const [reportText,sources,metrics,standards,depth]=await Promise.all([
+  const [reportText,sources,metrics,standards,depth,assumptions,selfCheck]=await Promise.all([
     fetchText(reportUrl.href),fetchJSON(packageUrl('sources.json')),fetchJSON(packageUrl('metrics.json')),
-    fetchJSON(packageUrl('standard_matrix.json')),fetchJSON(packageUrl('design_depth_matrix.json'))
+    fetchJSON(packageUrl('standard_matrix.json')),fetchJSON(packageUrl('design_depth_matrix.json')),
+    fetchJSON(packageUrl('assumptions.json')),fetchJSON(packageUrl('self_check.json'))
   ]);
   const parsed=new DOMParser().parseFromString(reportText,'text/html');
   const imported=(parsed.querySelector('main')||parsed.body).cloneNode(true);
   sanitizeReport(imported,reportUrl);
+  normalizeBlockStructure(imported);
+  normalizeTables(imported);
+  normalizeInlineMarkdown(imported);
+  normalizeCrossNodeStrong(imported);
+  normalizeBareDataReferences(imported);
   normalizeEvidenceMarkers(imported);
   await resolveDataRefs([...imported.querySelectorAll('.evidence')].map(node=>{
-    const match=node.textContent.trim().match(/^\[(source|standard|depth|data|metric):([^\]\s]+)\]$/);
+    const match=parseEvidenceMarker(node.textContent);
     return match?{kind:match[1],value:match[2]}:null;
   }).filter(Boolean));
-  const maps=buildMaps({sources,metrics,standards,depth});
+  const maps=buildMaps({sources,metrics,standards,depth,assumptions,selfCheck});
   attachEvidence(imported,maps);
   const title=parsed.querySelector('.hero h1,h1')?.textContent?.trim()||path.split('/').pop();
   document.title=`${title} — 方案正文`;
@@ -396,15 +651,20 @@ async function load(){
   $('#visualLink').href=packageUrl('visual/index.html');
   $('#visualLink').target='_blank';$('#visualLink').rel='noopener';
   $('#report').innerHTML=renderStatus(state.refs)+imported.innerHTML;
-  $('#report').querySelectorAll('.evidence-ref').forEach(button=>{
-    button.addEventListener('click',()=>selectRef(button.dataset.key,false,true));
-  });
+  bindEvidenceButtons($('#report'));
   $('#coverage').textContent=`${state.refs.filter(ref=>ref.resolved).length} / ${state.refs.length}`;
   $('#mobileCount').textContent=state.refs.length;
   renderFilters();renderList();
   if(state.refs.length)selectRef(state.refs.find(ref=>ref.resolved)?.key||state.refs[0].key);
 }
-$('#evidenceToggle').addEventListener('click',()=>$('#panel').classList.toggle('open'));
+$('#evidenceToggle').addEventListener('click',()=>{
+  const open=$('#panel').classList.toggle('open');
+  $('#evidenceToggle').setAttribute('aria-expanded',String(open));
+});
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape')return;
+  hideCitation();$('#panel').classList.remove('open');$('#evidenceToggle').setAttribute('aria-expanded','false');
+});
 window.addEventListener('scroll',()=>{
   const max=document.documentElement.scrollHeight-innerHeight;
   $('#progress').style.width=`${max>0?Math.min(100,scrollY/max*100):0}%`;
