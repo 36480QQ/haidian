@@ -1027,6 +1027,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/ssynb/jingzhang-intelligence-commons/visual/index.html"
   },
   {
+    "id": "jingzhang-intelligence-commons",
+    "title": "京张智共生——开放智能共同体城市设计",
+    "titleEn": "京张智共生——开放智能共同体城市设计",
+    "summary": "以百年京张遗产轴为公共底座，以开放协议、场景验证和全球贡献网络组织一脊三庭两翼十二场景；边界为临时粗略数据，所有空间指标可复算并待官方数据整体替换。",
+    "summaryEn": "以百年京张遗产轴为公共底座，以开放协议、场景验证和全球贡献网络组织一脊三庭两翼十二场景；边界为临时粗略数据，所有空间指标可复算并待官方数据整体替换。",
+    "author": "youngkermit8-coder",
+    "authorName": "geodesic 测地线建筑",
+    "authorInitial": "Y",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/youngkermit8-coder/jingzhang-intelligence-commons",
+    "sourceUrl": "submissions/youngkermit8-coder/jingzhang-intelligence-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/youngkermit8-coder/jingzhang-intelligence-commons/report/proposal.html",
+    "visualUrl": "submissions/youngkermit8-coder/jingzhang-intelligence-commons/visual/index.html"
+  },
+  {
     "id": "jingzhang-evidence-line",
     "title": "京张共证之路 / Jingzhang Evidence Line",
     "titleEn": "京张共证之路 / Jingzhang Evidence Line",
