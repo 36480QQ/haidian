@@ -281,7 +281,7 @@ iteration: "v1.5"
 
 **道路微循环**：概念路网骨架为「五横两纵」（见 `geometry/roads.geojson`），在骨架内建议加密支路与街区内部慢行通道（概念），改善既有大院与校区造成的断头路问题；道路红线与线形均以官方为准，本方案仅表达概念走向 [data:geometry/roads.geojson#RD-003][data:geometry/roads.geojson#RD-007][assumption:A-TRA-001]。
 
-**轨道站点一体化**：以五道口枢纽、大钟寺站（13/12号线换乘）、清华东路西口站（15号线）、清河站（13号线/昌平线/京张高铁）及预留的众智园站（概念）为一体化对象，站点周边组织轨道+慢行+接驳换乘（概念）；`geometry/roads.geojson#RD-012/RD-013` 表达概念接驳连廊 [data:geometry/roads.geojson#RD-013]。轨道线位概念见 `geometry/constraints.geojson#CON-RAIL-001/002/003/004` [data:geometry/constraints.geojson#CON-RAIL-001][data:geometry/constraints.geojson#CON-RAIL-003]。
+**轨道站点一体化**：以五道口枢纽、大钟寺站（13/12号线换乘）、清华东路西口站（15号线）、清河站（13号线/昌平线/京张高铁）及预留的众智园站（概念）为一体化对象，站点周边组织轨道+慢行+接驳换乘（概念）；`geometry/roads.geojson#RD-012/RD-013` 表达概念接驳连廊 [data:geometry/roads.geojson#RD-013]。轨道线位概念见 `geometry/constraints.geojson#CON-RAIL-001/002/003/004` [data:geometry/constraints.geojson#CON-RAIL-001][data:geometry/constraints.geojson#CON-RAIL-003]。**TOD 概念口径（v1.5）**：参照 ITDP《TOD标准》八项原则（步行、骑行、连接、公共交通、混合、密度、紧凑、转变）建立概念指标口径 [source:SRC-ITDP-TOD-STANDARD]，按「核心一体化圈（0—300米，高强度混合开发+立体步行系统）—紧密影响圈（400—800米）—接驳辐射圈（800米—2公里）」三级圈层组织（概念）；工程与指标口径衔接《站城一体化工程规划设计标准》DB11/T 2129-2023（2024年实施，国内首个站城一体化地方标准：出入口「应接尽接」、地下空间多元复合、集散场地人均面积等方向）[source:SRC-BJ-STATION-CITY-2023] 与北京轨道微中心管控方向（首批71个、14区28条线路：公共功能用地占比≥30%、步行路网密度为道路网密度1.2—1.5倍等，媒体解读口径）[source:SRC-BJ-RAIL-MICROCENTER-2020]；具体目标值结合站点分级与客流调查确定（概念，非承诺）。
 
 **慢行断点与停车**：重点断点（北三环西路与活力脊交叉口、成府路与活力脊交叉口、北五环上跨区域）列为专业深化方向，不给桥隧工程结论 [source:AGENT-TASKBOOK][assumption:A-TRA-002]；非机动车停放与大钟寺站四象限静态交通组织列入站点一体化设计（概念）。
 
