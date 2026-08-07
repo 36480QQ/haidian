@@ -1,0 +1,202 @@
+{
+  "schema_version": "0.1.0",
+  "package_id": "jingzhang-open-line",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "Poetryincense",
+    "agent_name": "Codex Urban Design Agent",
+    "model": "gpt-5 (OpenAI Codex) - agent-declared"
+  },
+  "generated_at": "2026-08-07T06:34:13Z",
+  "files": [
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "7d9d9798cbdf3989d8d7286030d772cb220decfdeff59e4a5a73437a79d9d111"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_card",
+      "required": true,
+      "sha256": "9509c33386f4b60107def46cfbac3e3d9eccd9e35bf7bb775db22241476fceda"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "281350eebe1abb4e253e43a81843dc1578a859051f1488eeac4f3bd439155bee"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "2aefbac7fbaca0520a16495e7273dc3e663727cc6132cbe7773f5fd335b41ccf"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "06ce76162cddba350405f62f5f5bc2acbf7818738a9093b4dd12cc3331104aae"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "77bb21986a3fe61f78efe3e2c3f1064b4974453469449b32737ba31791e34440"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "d296ab2537b74634a64382cf99f3db07195756aece15553d8aec38b5755a86cb"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "083338030cee796349162b1c24ac64e25db19b6dd3f6685127dabb355ef7d331"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "2b64de0a49f776527ec6ccc8718deb04d8bd31dbac484787630a35c118ee84ed"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": true,
+      "sha256": "fcec51ba9361eeb0f0330c2c38f4dc63817544679aa7eb5406fedc07b29594af"
+    },
+    {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "sha256": "134a148e8e56e131018fab26948b99ec812ed35b43a9f1da087f04b91528cb74"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "459cc0d546acb87ee7c7a3e46b93a667b39fc5a9f16ee3463a2f72dbea449d1c"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "244426adefa1a1df5dc731d1d3131bcbb49545d4ecff3bc788e30cf3a3b5d3d4"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "e4d55d34a8669f67ce7fb4e2836a5eb3d5bee850015aa9c90b3ba25b6a29a8ee"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "sha256": "d33d88457547c49e12edc8e1c6a703a788d71c1717d5cffa1c3e288e0d090b77"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "13b14bd1f1bfa2b50ecb7f28616ee4dfd4b413803dd6d11ae2a81df7516db7a2"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "ac0a30fa2a6ea190c6283e21cbc2b1800c86de77466f0cb83afb88690fa48dbc"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "8166c8df20b50d340c9217bc4e89c1766a3dc49a0a135d24746f8738676c6d0d"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "cd881ee5a970b63ae7d518e844fa91469e4d082a1e581c0b7c5590a177641a76"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "25f1c0d53624f079d59695d3c1b041257e025e9d9176d4f043c7bb418e1b794e"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "2c051a28f3ea62dd15a423b84e01c8c90f05324cd524ff079a89d05f10bf21ae"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "4644eb67feb3384bb222d3c68b62f88d1cf46b914ba8301186406ae116220d35"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "92f9f56f01d66c3116dcf8c86f49a218a3af88e0250db071a238c325fdfde10a"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "cbb6cb5bdd8f4fb1c71e892e9a8ca3a66bd1289960f51c69a4d3606a81a65ab7"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "d21731806010b8cafbb221053f78350d9cc5c4b25debca670b5394a2de083e4c"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "2407d90d8266869a74dc1c41cf4c9b177c190cb9d853bedfc139829cbe3d5849"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "f2b0bda8627dd26d4f7c4097b7e8e82b6125f8eee6989d706927b31180444cd6"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "e8c2a4d8314882ccecf96362732c32c325fa267acd377a802f1111c3f3be00a6"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "d8ceaad1ca8f13e0f589045abeafc01126ecf80e171d4a253103ce2e474fbe8a"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": false,
+    "known_blockers": [],
+    "data_confidence": "medium"
+  }
+}
