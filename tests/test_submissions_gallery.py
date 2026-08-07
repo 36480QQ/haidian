@@ -243,6 +243,11 @@ class TestSubmissionsGallery(unittest.TestCase):
             "normalizeBlockStructure",
             "normalizeInlineMarkdown",
             "normalizeTables",
+            "normalizeBareDataReferences",
+            "dataTokenLabel",
+            "hasRelatedDataMarker",
+            "data-token",
+            "semantic-flag",
             "showCitation",
             "citation-popover",
             "responsive-table",
@@ -261,6 +266,10 @@ class TestSubmissionsGallery(unittest.TestCase):
         self.assertIn("data-filter=\"fixture\"", submissions)
         self.assertIn("formal_review_ready", submissions)
         self.assertIn("intake_provisional", submissions)
+        self.assertIn("renderCover", submissions)
+        self.assertIn("coverHash", submissions)
+        self.assertIn("cover-grid", submissions)
+        self.assertNotIn("<iframe data-src=", submissions)
 
 
 if __name__ == "__main__":

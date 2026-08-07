@@ -62,6 +62,18 @@ button{font:inherit;color:inherit}
 .report strong{font-weight:680;color:#101a2b;overflow-wrap:anywhere;word-break:break-word}
 .report a{color:#245b8f;text-decoration:underline;text-decoration-color:#245b8f55;text-underline-offset:.18em}
 .report code{padding:.08em .32em;border-radius:4px;background:#e9eef4;color:#20527c;font-family:var(--mono);font-size:.92em;overflow-wrap:anywhere;word-break:break-word}
+.report .data-token{
+  display:inline-flex;align-items:baseline;gap:.42em;max-width:100%;padding:.12em .48em;
+  border:1px solid #cbd8e5;border-radius:999px;background:#f1f6fa;color:#244e73;
+  font-family:var(--sans);font-size:.88em;line-height:1.55;vertical-align:.04em
+}
+.report .data-token::before{content:"◇";color:#4e83b4;font-family:var(--mono);font-size:.82em}
+.report .data-token-label{font-weight:620}
+.report .data-token-id{color:#6b7f91;font-family:var(--mono);font-size:.78em;overflow-wrap:anywhere;word-break:break-word}
+.report .semantic-flag{
+  display:inline-flex;align-items:center;padding:.12em .48em;border:1px solid #d7dfe7;border-radius:999px;
+  background:#f7f9fb;color:#526475;font-family:var(--sans);font-size:.88em;line-height:1.55
+}
 .report pre{max-width:100%;padding:16px;overflow:auto;background:#e9eef4;color:#24384d;font:12px/1.65 var(--mono)}
 .report blockquote{margin:22px 0;padding:12px 18px;border-left:3px solid #7997b4;background:#eaf0f6;color:#4f6073}
 .report table{width:100%;margin:24px 0;border-collapse:collapse;font-size:13px;line-height:1.55}
@@ -79,6 +91,7 @@ button{font:inherit;color:inherit}
 }
 .evidence-ref:hover,.evidence-ref.active{border-color:#245b8f;background:#245b8f;color:#fff;transform:translateY(-1px)}
 .evidence-ref.unresolved{border-style:dashed;color:#8a6670;background:#f8eef0}
+.evidence-ref.unresolved::before{content:"!";margin-right:.12em;font-size:.82em}
 .citation-popover{
   position:fixed;z-index:160;width:min(360px,calc(100vw - 24px));padding:15px 16px 13px;
   border:1px solid #ffc46b70;background:#0b0f15f5;color:#eef2f6;
@@ -144,6 +157,7 @@ button{font:inherit;color:inherit}
   .report-status{grid-template-columns:repeat(2,1fr);margin:-34px -20px 30px}
   .status-cell:nth-child(2n){border-right:0}.status-cell:nth-child(n+3){border-top:1px solid var(--paper-line)}
   .report p,.report li{font-size:15.5px;line-height:1.82}.report h1{font-size:30px}.report h2{font-size:23px}
+  .report .data-token{white-space:normal}.report .data-token-id{display:none}
   .report h3{font-size:19px}.report ol,.report ul{padding-left:22px}
   .report table.responsive-table,.report table.responsive-table tbody,.report table.responsive-table tr,.report table.responsive-table td{display:block;width:100%}
   .report table.responsive-table{border:0}.report table.responsive-table thead{display:none}
@@ -323,12 +337,16 @@ function resolveRef(ref,maps){
       result.label=path;
       result.summary=`GeoJSON · ${asArray(data.features).length} 个空间要素`;
       result.rows=[['文件',path],['要素数量',asArray(data.features).length]];
+    }else if(data&&id){
+      const available=asArray(data.features).map(feature=>String(feature?.id||feature?.properties?.id||'')).filter(Boolean);
+      result.summary=`文件已载入，但没有找到编号 ${id}`;
+      result.rows=[['引用编号',id],['文件',path],['文件内编号',available.slice(0,8).join('、')||'未声明']];
     }
     result.href=packageUrl(path);
   }
   if(!result.resolved){
-    result.summary=ref.value.includes('...')?'这是正文中的格式示例，不对应具体数据':'正文包含该引用，但方案包中没有找到同名结构化条目';
-    result.rows=[['原始引用',`${ref.kind}:${ref.value}`],['状态','未解析；保留供复核']];
+    result.summary=result.summary||(ref.value.includes('...')?'这是正文中的格式示例，不对应具体数据':'正文包含该引用，但方案包中没有找到同名结构化条目');
+    result.rows=result.rows.length?[...result.rows,['状态','编号未匹配；保留供复核']]:[['原始引用',`${ref.kind}:${ref.value}`],['状态','未解析；保留供复核']];
   }
   result.rows=result.rows.filter(([,value])=>value!==undefined&&value!==null&&String(value)!=='');
   return result;
@@ -560,16 +578,66 @@ function normalizeCrossNodeStrong(report){
     if(normalized!==html)block.innerHTML=normalized;
   });
 }
+const DATA_PATH_LABELS={
+  site_boundary:'总体范围',
+  key_areas:'重点区域',
+  roads:'道路系统',
+  land_use:'用地结构',
+  buildings:'建筑布局',
+  green_space:'绿地系统',
+  public_space:'公共空间',
+  constraints:'约束条件',
+  phasing:'实施分期'
+};
+const SEMANTIC_FLAGS={
+  'official_boundary=false':'非官方边界',
+  'official_boundary=true':'官方边界',
+  'geometry_role=provisional_constraint':'临时约束范围',
+  'geometry_role=conceptual_design':'概念设计范围',
+  'geometry_role=existing_condition':'现状条件'
+};
+function dataTokenLabel(path,id){
+  const filename=path.split('/').pop().replace(/\.geojson$/i,'');
+  const subject=DATA_PATH_LABELS[filename]||filename.replaceAll('_',' ');
+  const grouped=/^[A-Za-z]+(?:-[A-Za-z]+)*-\d+(?:\/\d+)+$/.test(id);
+  return {subject,detail:grouped?`${id.split('/').length} 个空间要素`:id};
+}
+function hasRelatedDataMarker(code,path,id){
+  const block=code.closest('p,li,td,th,blockquote')||code.parentElement;
+  if(!block)return false;
+  const firstId=id.split('/')[0];
+  return [...block.querySelectorAll('.evidence')].some(node=>{
+    const match=parseEvidenceMarker(node.textContent);
+    if(!match||match[1]!=='data')return false;
+    const [markerPath,markerId='']=match[2].split('#');
+    return markerPath===path&&(markerId===id||markerId===firstId);
+  });
+}
 function normalizeBareDataReferences(report){
   report.querySelectorAll('code').forEach(code=>{
     if(code.closest('.evidence'))return;
-    const match=code.textContent.trim().match(/^((?:geometry\/)?[A-Za-z0-9._-]+\.geojson)#([A-Za-z0-9._~/-]+)$/);
+    const raw=code.textContent.trim();
+    const flagLabel=SEMANTIC_FLAGS[raw];
+    if(flagLabel){
+      code.className='semantic-flag';
+      code.textContent=flagLabel;
+      code.title=raw;
+      return;
+    }
+    const match=raw.match(/^((?:geometry\/)?[A-Za-z0-9._-]+\.geojson)#([A-Za-z0-9._~/-]+)$/);
     if(!match)return;
     const path=match[1].includes('/')?match[1]:`geometry/${match[1]}`;
-    const marker=document.createElement('span');
-    marker.className='evidence';
-    marker.textContent=`[data:${path}#${match[2]}]`;
-    code.after(marker);
+    const id=match[2];
+    if(!hasRelatedDataMarker(code,path,id)){
+      const marker=document.createElement('span');
+      marker.className='evidence';
+      marker.textContent=`[data:${path}#${id}]`;
+      code.after(marker);
+    }
+    const label=dataTokenLabel(path,id);
+    code.className='data-token';
+    code.title=raw;
+    code.innerHTML=`<span class="data-token-label">${escapeHTML(label.subject)}</span><span class="data-token-id">${escapeHTML(label.detail)}</span>`;
   });
 }
 function parseEvidenceMarker(text){
