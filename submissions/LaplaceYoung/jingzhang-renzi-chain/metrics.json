@@ -230,7 +230,7 @@
     },
     "scenario_node_count": {
       "status": "known",
-      "value": 12,
+      "value": 14,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -238,7 +238,7 @@
       "formula": "count(AI场景卡，proposal.md 第AI+场景章)",
       "confidence": "high",
       "assumptions": [
-        "12 张场景卡中 4 张为产业测试验证场景。"
+        "14 张场景卡中 4 张为产业测试验证场景。"
       ]
     },
     "ai_test_scenario_count": {
@@ -254,7 +254,7 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "proposal.md"

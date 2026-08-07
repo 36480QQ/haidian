@@ -17,7 +17,7 @@
     "source_type": "agent_inferred_from_public_data",
     "confidence": "low",
     "geometry_role": "existing_condition",
-    "usage_note": "轨道线位为概念推测，仅用于设计讨论；正式线位以官方图纸为准。",
+    "usage_note": "轨道线位为概念推测，仅用于设计讨论；示意线位须避让文保控制线，正式线位以官方图纸为准。",
     "id": "CON-RAIL-001"
    },
    "geometry": {
@@ -66,6 +66,96 @@
      [
       116.3503,
       40.0265
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "CON-RAIL-002",
+   "properties": {
+    "layer": "EXISTING_RAIL",
+    "name_zh": "轨道12号线（概念线位，大钟寺站换乘）",
+    "source_type": "agent_inferred_from_public_data",
+    "confidence": "low",
+    "geometry_role": "existing_condition",
+    "usage_note": "概念线位，以官方图纸为准；仅用于设计讨论。",
+    "id": "CON-RAIL-002"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.342,
+      39.9472
+     ],
+     [
+      116.347,
+      39.9472
+     ],
+     [
+      116.354,
+      39.9472
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "CON-RAIL-003",
+   "properties": {
+    "layer": "EXISTING_RAIL",
+    "name_zh": "轨道15号线（概念线位，清华东路西口站）",
+    "source_type": "agent_inferred_from_public_data",
+    "confidence": "low",
+    "geometry_role": "existing_condition",
+    "usage_note": "概念线位，以官方图纸为准；仅用于设计讨论。",
+    "id": "CON-RAIL-003"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.342,
+      39.998
+     ],
+     [
+      116.3485,
+      39.998
+     ],
+     [
+      116.354,
+      39.998
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "CON-RAIL-004",
+   "properties": {
+    "layer": "EXISTING_RAIL",
+    "name_zh": "轨道10号线（概念线位，知春路站）",
+    "source_type": "agent_inferred_from_public_data",
+    "confidence": "low",
+    "geometry_role": "existing_condition",
+    "usage_note": "概念线位，以官方图纸为准；仅用于设计讨论。",
+    "id": "CON-RAIL-004"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3405,
+      39.976
+     ],
+     [
+      116.346,
+      39.976
+     ],
+     [
+      116.354,
+      39.976
      ]
     ]
    }
