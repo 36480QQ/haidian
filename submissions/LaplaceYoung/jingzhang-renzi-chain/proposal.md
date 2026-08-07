@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.6"
+iteration: "v2.7"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -192,7 +192,7 @@ iteration: "v2.6"
 
 ### AI场景卡（共14张，其中4张为产业测试验证场景）
 
-`scenario_node_count` 指标为14 [metric:scenario_node_count]，`ai_test_scenario_count` 为4 [metric:ai_test_scenario_count]。每张场景卡均声明统一治理基线（12项）：空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体、对应图层、风险、责任类型、量化KPI（试点前冻结）、退出/退役触发条件、法律接口登记（概念：如个保法最小必要、数安法分类分级、生成式AI服务管理暂行办法与深度合成标识、智能网联测试规定、安防法规等，登记不替代法定义务、不自行作合规认定）；AI生成合成内容的标识义务按《人工智能生成合成内容标识办法》（2025年9月1日施行）执行显式+隐式双轨标识（登记项：标识方式、元数据、核验通道）[source:SRC-CN-AI-LABEL-2025][source:SRC-CN-AIGC-2023]）；其中 SC-01~04 已含试点准入—周期—退出机制，SC-05~14 的 KPI 基线与退出条件在试点前冻结并按同一模板补齐（概念）。全部场景为概念建议，未成熟技术不表述为已可全面部署 [source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+`scenario_node_count` 指标为14 [metric:scenario_node_count]，`ai_test_scenario_count` 为4 [metric:ai_test_scenario_count]。每张场景卡均声明统一治理基线（12项）：空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体、对应图层、风险、责任类型、量化KPI（试点前冻结）、退出/退役触发条件、法律接口登记（概念：如个保法最小必要、数安法分类分级、生成式AI服务管理暂行办法与深度合成标识、智能网联测试规定、安防法规等，登记不替代法定义务、不自行作合规认定）；AI生成合成内容的标识义务按《人工智能生成合成内容标识办法》（2025年9月1日施行）执行显式+隐式双轨标识（登记项：标识方式、元数据、核验通道）[source:SRC-CN-AI-LABEL-2025][source:SRC-CN-AIGC-2023]）；其中 SC-01~04 已含试点准入—周期—退出机制，SC-05~14 的 KPI 基线与退出条件在试点前冻结并按同一模板补齐（概念）。全部场景为概念建议，未成熟技术不表述为已可全面部署 [source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。**国际对标（概念）**：新加坡榜鹅数码园区以真实公共空间开展清扫/巡逻/配送机器人试点 [source:SRC-SG-PUNGGOL-TESTBED-2026]、英国以 test-and-learn 闭环推行公共部门 AI 试点——本方案「沙盒申报—季度评审—脱敏开放—人工复核」分级试点机制与之同构（概念）。
 
 **场景卡量化KPI与退出触发条件（概念，试点前冻结）**：
 
@@ -305,7 +305,7 @@ iteration: "v2.6"
 
 ### 蓝绿空间体系
 
-「T形蓝绿骨架」：纵向为京张活力脊（概念公园绿地 `geometry/green_space.geojson#GS-1`，约218.1公顷含两侧绿地，`land_use_1401_area_sqm`）[data:geometry/green_space.geojson#GS-1][metric:land_use_1401_area_sqm]；横向为清河滨水带（概念线位，约40.00—40.01纬度带，以概念线表达「T」形横臂；蓝线以官方管控为准）与成府路绿廊（概念横轴）；小月河滨水带为活力脊东侧并行的第二纵廊（概念位置 `geometry/constraints.geojson#CON-WTR-001`）[data:geometry/constraints.geojson#CON-WTR-001]。概念绿地率约22.5%（`green_ratio`），绿地空间面积约256.7公顷（`green_space_area_sqm`）[metric:green_space_area_sqm][metric:green_ratio]。步道与骑行道体系：活力脊步行脊（`geometry/roads.geojson#RD-009`）南北贯通，小月河滨水骑行道（`RD-010`）与学院路绿廊（`RD-011`）东西联通，形成「南北贯通、东西连通」的连续慢行网络 [data:geometry/roads.geojson#RD-010][data:geometry/roads.geojson#RD-011][source:OFFICIAL-ANNOUNCEMENT][depth:blue_green_public_space]。**绿色低碳衔接（概念）**：蓝绿空间同时承担碳汇与低碳场景载体功能——建筑与设施层对标《绿色建筑评价标准》GB/T 50378-2019 五维体系（安全耐久、健康舒适、生活便利、资源节约、环境宜居）[source:SRC-GB-T50378-2019]，园区层衔接光储充一体与近零能耗方向（见新型基础设施）；「碳汇测算—管控引导—平台支撑」应用框架与街区碳账本列为概念深化方向，指标数值以实测与地方导则为准（概念，不作为结论数据）。
+「T形蓝绿骨架」：纵向为京张活力脊（概念公园绿地 `geometry/green_space.geojson#GS-1`，约218.1公顷含两侧绿地，`land_use_1401_area_sqm`）[data:geometry/green_space.geojson#GS-1][metric:land_use_1401_area_sqm]；横向为清河滨水带（概念线位，约40.00—40.01纬度带，以概念线表达「T」形横臂；蓝线以官方管控为准）与成府路绿廊（概念横轴）；小月河滨水带为活力脊东侧并行的第二纵廊（概念位置 `geometry/constraints.geojson#CON-WTR-001`）[data:geometry/constraints.geojson#CON-WTR-001]。概念绿地率约22.5%（`green_ratio`），绿地空间面积约256.7公顷（`green_space_area_sqm`）[metric:green_space_area_sqm][metric:green_ratio]。步道与骑行道体系：活力脊步行脊（`geometry/roads.geojson#RD-009`）南北贯通，小月河滨水骑行道（`RD-010`）与学院路绿廊（`RD-011`）东西联通，形成「南北贯通、东西连通」的连续慢行网络 [data:geometry/roads.geojson#RD-010][data:geometry/roads.geojson#RD-011][source:OFFICIAL-ANNOUNCEMENT][depth:blue_green_public_space]。**绿色低碳衔接（概念）**：蓝绿空间同时承担碳汇与低碳场景载体功能——建筑与设施层对标《绿色建筑评价标准》GB/T 50378-2019 五维体系（安全耐久、健康舒适、生活便利、资源节约、环境宜居）[source:SRC-GB-T50378-2019]，园区层衔接光储充一体与近零能耗方向（见新型基础设施）；「碳汇测算—管控引导—平台支撑」应用框架与街区碳账本列为概念深化方向——衔接《「数据要素×」三年行动计划》绿色低碳重点行动（碳排放核算效率、重点产品碳足迹、能耗智能监测方向；国家数据局「数据要素×」大赛绿色低碳案例集已有园区/城市级碳排核算示范）[source:SRC-CN-DATA-ELEMENTS-2024][source:SRC-NDA-GREEN-CASES-2025]，碳账本按「生态碳汇/建筑能耗/居民行为」三层台账设计、与碳普惠权益兑换打通（概念），指标数值以实测与地方导则为准（概念，不作为结论数据）。
 
 ### 公共空间系统
 
@@ -407,7 +407,7 @@ iteration: "v2.6"
 
 ### 年度活动体系（概念）
 
-建议形成「1+4+12+N」活动体系：每年1场「京张AI创新大会」（主品牌活动）；每季度4场「链节开放日」（研/创/业/场景四主题轮换）；每月12场「开发者之夜」与「场景开放日」；常态化N场社区活动（开源工作坊、AI科普、居民体验）。全部活动为概念建议，不表述为已确定安排 [source:AGENT-TASKBOOK]。**京张带运营参照（公开报道）**：京张体育文化旅游带2026年进入「后奥运+十五五」新运营周期——第六届京张全季体育旅游嘉年华7月启幕、全年243项活动、「三地三色三主题」全域活动矩阵（张家口市体育局口径）[source:SRC-JZ-FOUR-SEASON-GAMES-2026]；居庸关花海栈道2026年3月开放（每日限流1500人），S2线「开往春天的列车」客流高峰加车（周末休闲客流增幅超50%，媒体口径）[source:SRC-JYONGGUAN-BLOSSOM-2026]——本方案「1+4+12+N」活动体系与该「旗舰节庆+四季主题+全域活动+常态遗产活化」运营结构同构（概念参照）。
+建议形成「1+4+12+N」活动体系：每年1场「京张AI创新大会」（主品牌活动）；每季度4场「链节开放日」（研/创/业/场景四主题轮换）；每月12场「开发者之夜」与「场景开放日」；常态化N场社区活动（开源工作坊、AI科普、居民体验）。全部活动为概念建议，不表述为已确定安排 [source:AGENT-TASKBOOK]。**京张带运营参照（公开报道）**：京张体育文化旅游带2026年进入「后奥运+十五五」新运营周期——第六届京张全季体育旅游嘉年华7月启幕、全年243项活动、「三地三色三主题」全域活动矩阵（张家口市体育局口径）[source:SRC-JZ-FOUR-SEASON-GAMES-2026]；居庸关花海栈道2026年3月开放（每日限流1500人），S2线「开往春天的列车」客流高峰加车（周末休闲客流增幅超50%，媒体口径）[source:SRC-JYONGGUAN-BLOSSOM-2026]——本方案「1+4+12+N」活动体系与该「旗舰节庆+四季主题+全域活动+常态遗产活化」运营结构同构（概念参照）；崇礼2025年接待游客首破千万（河北省文旅厅官方口径）[source:SRC-CHONGLI-TOURISM-2025]，国家体育总局以「243项赛事串起跟着赛事游京张」组织赛事日历 [source:SRC-GAS-GAMES-JZ-2026]——本方案四季主题季（避暑/骑行/越野/康养承接冬季客流）与月度赛事锚定据此组织（概念）。
 
 **夜间经济衔接（公开文件）**：北京已形成「夜京城」品牌矩阵——2025年12月发布三大榜单（25个地标+84个打卡地+30个生活圈，共139个夜间消费点位）[source:SRC-BJ-NIGHT-ECONOMY-2025]，并规划「夜京城」十四景（场景叙事化方向，2025年10月公开）；《北京市深化改革提振消费专项行动方案》（2025年7月，30条深夜食堂街区、10+商文旅融合商圈方向）[source:SRC-BJ-CONSUMPTION-24-2025]——本方案活动体系按「旗舰地标—特色场景—社区生活圈」三级运营网络与之一致（概念），五道口、大钟寺、学院路节点可与「夜京城」点位体系衔接（不重复申报，仅作概念对齐）。AI科普与居民体验活动对接《提升全民数字素养与技能行动纲要》（2021）要求，建议在原点广场、五道口AI体验街（SC-06）与学院路教育带（SC-13）设置「数字素养驿站」，面向老年、残障与低收入居民提供基础数字技能与AI知识培训，作为全民数字素养提升在街道层面的试点载体（概念建议）[source:SRC-CAC-DIGITAL-LITERACY]。
 
