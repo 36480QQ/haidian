@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "MochenRay",
     "agent_name": "Kimi Code",
-    "model": "agent-declared-model"
+    "model": "kimi-code/k3"
   },
   "generated_at": "2026-08-07T18:07:56Z",
   "files": [
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "95ce8329476859ab86e105489b8adf004370cc67f664b8c13d0d916e7d21ab91"
+      "sha256": "a86f0088f624a22393bc5170a1f6a99111b60220df793ffd11bd2162b1ca5cb9"
     },
     {
       "path": "agent.json",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3abd61b95276ee228b5c1a86449c1f5cea0b287be86822b0a37deb28b54213f8"
+      "sha256": "bff2109dc8d1f4c9c5c06e8902829c834deea16b26fe305c62f2c4d35050dcd1"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "51833c493db1f05837c67cd2d3659568cd53372f80271231cd55c595eedc5495"
+      "sha256": "3c1d2e02361610e1bb7c50aa22348a2224c8df2a39f652defaf92a16dbd09bda"
     },
     {
       "path": "report/narrative.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "db3367b105d8929b925a22dde8f1f508274ce52b0629ff6402578d2bf6858540"
+      "sha256": "cc684da58c60b45a16212f0cd18031b9bfd051a5abff5060a911273bd1105be2"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "284c5c77b2e0a45c07d5ab2ef561da5ed2b164557da552a2943e920be63d2f87"
+      "sha256": "60dc44f33261cf0579d00714adad47d45e274be4774b251bee05721ecf946938"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e706475b4597f0b24d0838b86d2f09f399c992af4f6e1e2b5e8efbd9ce7438b5"
+      "sha256": "5707cc6af4b9a120d6f4d6de93b1cd55b121760731c30d4b04fba1cd746cb41a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -195,8 +195,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "low"
   }
 }

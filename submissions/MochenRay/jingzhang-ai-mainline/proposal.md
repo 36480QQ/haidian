@@ -19,7 +19,7 @@ iteration: "v1.0"
 
 `data/source_registry.json` 当前登记 6 条资料：5 条 formal-ready（官方公告、智能体任务书、城市设计管理办法、控规深度标准、用地用海分类指南），1 条 provisional-only（临时边界）[source:SOURCE-REGISTRY]。使用边界：formal-ready 资料支撑任务口径与术语，provisional-only 资料只用于方案生成、自检与可视化，不得升级为官方红线、法定控规、正式评分依据或政府实施承诺。`brief/site-package/` 的枚举、范围与设计简报是机器可读输入 [source:SITE-PACKAGE]；`data/processed/agent_fact_pack.md` 只是阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。
 
-正文引用与五个登记文件的对应关系为：`sources.json` 登记证据源（现有 7 条，第 3 章全球案例以 CASE-* 条目补充登记）；`assumptions.json` 登记假设与待确认事项；`compliance_matrix.json` 覆盖公告与任务书的 23 条必选任务；`standard_matrix.json` 覆盖 6 项标准；`design_depth_matrix.json` 覆盖 15 项深度项。其中现状诊断、指标复算与缺资料风险分别对应 [depth:existing_conditions_diagnosis]、[depth:metrics_recalculation] 与 [depth:risk_missing_data]；用地分类术语遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，城市设计与控规深度遵循 [standard:MOHURD-URBAN-DESIGN-MEASURES] 与 [standard:MOHURD-CONTROL-DETAILED-PLANNING]；建筑工程设计深度文件 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 因公开获取受限，在标准矩阵中按 data_gap 处理，仅作深化方向参考。
+正文引用与五个登记文件的对应关系为：`sources.json` 登记证据源（现有 13 条：基础证据源 7 条＋第 3 章全球案例 CASE-* 条目 6 条）；`assumptions.json` 登记假设与待确认事项；`compliance_matrix.json` 覆盖公告与任务书的 23 条必选任务；`standard_matrix.json` 覆盖 6 项标准；`design_depth_matrix.json` 覆盖 15 项深度项。其中现状诊断、指标复算与缺资料风险分别对应 [depth:existing_conditions_diagnosis]、[depth:metrics_recalculation] 与 [depth:risk_missing_data]；用地分类术语遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，城市设计与控规深度遵循 [standard:MOHURD-URBAN-DESIGN-MEASURES] 与 [standard:MOHURD-CONTROL-DETAILED-PLANNING]；建筑工程设计深度文件 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 因公开获取受限，在标准矩阵中按 data_gap 处理，仅作深化方向参考。
 
 边界依据 [source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]，对应提交图层 [data:geometry/site_boundary.geojson#SITE-001] 与 key_areas 的三个 feature；总体设计范围复算面积约 1,141.3 万平方米（[metric:site_area_sqm]，confidence=low）。**provisional 声明：本方案全部空间边界为临时边界，非官方红线，正式数据发布后需复算。** 资料缺口：官方边界 polygon、控制性详细规划指标、现状建筑测绘、土地权属、市政管线与文保测绘均未公开获得，凡涉及容积率、建筑高度、拆改留结论、道路线位与投资测算的内容一律列为待确认，进入 `assumptions.json` 与第 12 章风险清单。
 
@@ -116,11 +116,11 @@ Logo 方向（文字说明，图形全部自绘清权）：把詹天佑"人"字�
 
 ### 原点站·北京AI原点社区
 
-定位：承担世界级 AI 创新生态策源功能，形态为"高校—园区—社区"缝合的近校创新社区（概念建议）；复算面积约 104.3 公顷（[metric:key_area_origin_sqm]，官方口径 104.3 公顷）[data:geometry/key_areas.geojson#KEY-002]。空间结构：东翼科研区 [data:geometry/land_use.geojson#LU-009] 与五道口高校教育区 [data:geometry/land_use.geojson#LU-010] 南北呼应，社区公园 [data:geometry/green_space.geojson#GS-002] 为公共绿肺，站前广场 [data:geometry/public_space.geojson#PS-002] 衔接清华园站方向。建筑更新：概念基底为研发院落 [data:geometry/buildings.geojson#BLDG-002] 与教育实训中心 [data:geometry/buildings.geojson#BLDG-005]；首层业态与院落开放为概念建议，拆改留待确认 [depth:retain_renovate_demolish]。交通慢行：要素支线绿道 [data:geometry/roads.geojson#RD-002] 连接西翼居住生活区，缝合校区、园区与街区慢行；轨道站点一体化方案待轨道资料确认。公共空间：社区公园、站前广场与院落开放空间构成三级体系（概念建议）；AI原点灯塔 [data:geometry/public_space.geojson#PT-003] 为巡礼地标概念。AI 场景：AI 教育体验节点 [data:geometry/public_space.geojson#PT-008]，对应第 6 章场景卡 09。实施风险：列入中期拓展区 [data:geometry/phasing.geojson#PHASE-002]（复算约 333.0 万平方米，[metric:phase_mid_area_sqm]）；清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001] 内的任何建设概念建议必须避让并待文保测绘确认，校区边界与权属待确认 [depth:renewal_project_list][depth:phasing_implementation]。
+定位：承担世界级 AI 创新生态策源功能，形态为"高校—园区—社区"缝合的近校创新社区（概念建议）；复算面积约 104.3 公顷（[metric:key_area_origin_sqm]，官方口径 104.3 公顷）[data:geometry/key_areas.geojson#KEY-002]。空间结构：东翼科研区 [data:geometry/land_use.geojson#LU-009] 与五道口高校教育区 [data:geometry/land_use.geojson#LU-010] 南北呼应，社区公园 [data:geometry/green_space.geojson#GS-002] 为公共绿肺，站前广场 [data:geometry/public_space.geojson#PS-002] 衔接清华园站方向。建筑更新：概念基底为研发院落 [data:geometry/buildings.geojson#BLDG-002] 与教育实训中心 [data:geometry/buildings.geojson#BLDG-005]；首层业态与院落开放为概念建议，拆改留待确认 [depth:retain_renovate_demolish]。交通慢行：要素支线绿道 [data:geometry/roads.geojson#RD-002] 连接西翼居住生活区，缝合校区、园区与街区慢行；轨道站点一体化方案待轨道资料确认。公共空间：社区公园、站前广场与院落开放空间构成三级体系（概念建议）；人字坡纪念节点 [data:geometry/public_space.geojson#PT-001]、开源荣誉墙 [data:geometry/public_space.geojson#PT-002] 与 AI原点灯塔 [data:geometry/public_space.geojson#PT-003] 三处巡礼朝圣地标均落于本区段（概念，方位序列详见第 9 章）。AI 场景：AI 教育体验节点 [data:geometry/public_space.geojson#PT-008]，对应第 6 章场景卡 09。实施风险：列入中期拓展区 [data:geometry/phasing.geojson#PHASE-002]（复算约 333.0 万平方米，[metric:phase_mid_area_sqm]）；清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001] 内的任何建设概念建议必须避让并待文保测绘确认，校区边界与权属待确认 [depth:renewal_project_list][depth:phasing_implementation]。
 
 ### 枢纽站·大钟寺AI产业聚集区
 
-定位：承担智能原生新业态与国际交往功能，形态为城市型智能经济街区（概念建议）；复算面积约 72.0 公顷（[metric:key_area_dazhongsi_sqm]，官方口径 72.0 公顷）[data:geometry/key_areas.geojson#KEY-003]。空间结构：商业服务区 [data:geometry/land_use.geojson#LU-005] 与文化展示区 [data:geometry/land_use.geojson#LU-006] 东西分翼，站前广场 [data:geometry/public_space.geojson#PS-001] 为核心公共节点。建筑更新：概念基底为产业孵化楼 [data:geometry/buildings.geojson#BLDG-003] 与文化展示馆 [data:geometry/buildings.geojson#BLDG-004]；更新重点为企业周边公共环境，不涉及企业权属建筑改造（概念建议），拆改留待确认 [depth:retain_renovate_demolish]。交通慢行：大钟寺站一体化与路口四象限步行连通为概念建议，待轨道站点与道路交通资料确认；接入慢行主线 [data:geometry/roads.geojson#RD-001] 与场景支线 [data:geometry/roads.geojson#RD-003]。公共空间：站前广场复合文化展示与路演功能（概念建议）；人字坡纪念节点 [data:geometry/public_space.geojson#PT-001] 为巡礼起点地标概念。AI 场景：AI 导览服务节点 [data:geometry/public_space.geojson#PT-004]，对应第 6 章场景卡 01。实施风险：列入近期启动区 [data:geometry/phasing.geojson#PHASE-001]（复算约 469.6 万平方米，[metric:phase_near_area_sqm]，含枢纽站及周边片区）；近期以轻量设施与运营活动启动为概念建议，依赖交叉口市政管线与轨道条件复核 [depth:renewal_project_list][depth:phasing_implementation]。
+定位：承担智能原生新业态与国际交往功能，形态为城市型智能经济街区（概念建议）；复算面积约 72.0 公顷（[metric:key_area_dazhongsi_sqm]，官方口径 72.0 公顷）[data:geometry/key_areas.geojson#KEY-003]。空间结构：商业服务区 [data:geometry/land_use.geojson#LU-005] 与文化展示区 [data:geometry/land_use.geojson#LU-006] 东西分翼，站前广场 [data:geometry/public_space.geojson#PS-001] 为核心公共节点。建筑更新：概念基底为产业孵化楼 [data:geometry/buildings.geojson#BLDG-003] 与文化展示馆 [data:geometry/buildings.geojson#BLDG-004]；更新重点为企业周边公共环境，不涉及企业权属建筑改造（概念建议），拆改留待确认 [depth:retain_renovate_demolish]。交通慢行：大钟寺站一体化与路口四象限步行连通为概念建议，待轨道站点与道路交通资料确认；接入慢行主线 [data:geometry/roads.geojson#RD-001] 与场景支线 [data:geometry/roads.geojson#RD-003]。公共空间：站前广场复合文化展示与路演功能（概念建议）。AI 场景：AI 导览服务节点 [data:geometry/public_space.geojson#PT-004]，对应第 6 章场景卡 01。实施风险：列入近期启动区 [data:geometry/phasing.geojson#PHASE-001]（复算约 469.6 万平方米，[metric:phase_near_area_sqm]，含枢纽站及周边片区）；近期以轻量设施与运营活动启动为概念建议，依赖交叉口市政管线与轨道条件复核 [depth:renewal_project_list][depth:phasing_implementation]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -255,13 +255,13 @@ Logo 方向（文字说明，图形全部自绘清权）：把詹天佑"人"字�
 
 蓝绿骨架：绿地复算约 342.1 万平方米、绿地率约 30.0%（[metric:green_space_area_sqm]、[metric:green_ratio]），由主线绿带 [data:geometry/green_space.geojson#GS-001]、原点站社区公园 [data:geometry/green_space.geojson#GS-002] 与加速站绿谷公园 [data:geometry/green_space.geojson#GS-003] 构成"一廊两肺"；广场型公共空间约 9.0 万平方米、占比约 0.8%（[metric:public_space_area_sqm]、[metric:public_space_ratio]），相对偏少——设计建议沿主线与三个站前节点增补口袋公园并推动广场复合利用（概念建议）[depth:blue_green_public_space][standard:MOHURD-URBAN-DESIGN-MEASURES]。清河、小月河界面的蓝线、生态与防洪条件未公开获得，滨水策略只写方向、列为待确认。
 
-巡礼体系（Pilgrimage）以三处朝圣地标为锚点，[metric:ai_landmark_count]=3，全部落入 public_space 图层并接入慢行主线：
+巡礼体系（Pilgrimage）以三处朝圣地标为锚点，[metric:ai_landmark_count]=3，全部落入 public_space 图层并接入慢行主线；三处地标均位于原点站段，沿主线由北向南依次为人字坡纪念节点、AI 原点灯塔与开源荣誉墙：
 
-**人字坡纪念节点** [data:geometry/public_space.geojson#PT-001]：位于枢纽站（大钟寺）站前广场 [data:geometry/public_space.geojson#PS-001] 一侧，为巡礼路线南端起点。设计概念：以詹天佑"人"字形折返线为原型的地面铺装与序列装置，把"自主干线"精神转译为可步行的纪念场景；图形全部自绘清权，不使用人物肖像、书法字帖或商标（概念建议）。
+**人字坡纪念节点** [data:geometry/public_space.geojson#PT-001]：位于原点站站前广场 [data:geometry/public_space.geojson#PS-002] 一侧，为三处朝圣地标中最北的一处，即巡礼序列由北向南的起点。设计概念：以詹天佑"人"字形折返线为原型的地面铺装与序列装置，把"自主干线"精神转译为可步行的纪念场景；图形全部自绘清权，不使用人物肖像、书法字帖或商标（概念建议）。
 
-**开源荣誉墙** [data:geometry/public_space.geojson#PT-002]：位于原点站主线一侧、社区公园 [data:geometry/green_space.geojson#GS-002] 北缘，为巡礼路线中段核心节点。设计概念：以"站台铭牌"（Nameplate）荣誉体系为运营机制——对开源项目、开发者与贡献机构的展示采用提名、评审与定期轮换制度（概念建议），铭牌内容须经版权与事实核查，展示数据只做聚合统计、不采集个人行为轨迹；运营主体与授权机制待确认。
+**开源荣誉墙** [data:geometry/public_space.geojson#PT-002]：位于原点站主线一侧、社区公园 [data:geometry/green_space.geojson#GS-002] 北缘，为三处朝圣地标中最南的一处，即巡礼序列南段收尾节点。设计概念：以"站台铭牌"（Nameplate）荣誉体系为运营机制——对开源项目、开发者与贡献机构的展示采用提名、评审与定期轮换制度（概念建议），铭牌内容须经版权与事实核查，展示数据只做聚合统计、不采集个人行为轨迹；运营主体与授权机制待确认。
 
-**AI 原点灯塔** [data:geometry/public_space.geojson#PT-003]：位于原点站社区公园一侧，为巡礼路线北段地标。设计概念：以轻量化构筑物作为"北京AI原点"的空间标识，夜间灯光与活动联动为概念建议；任何建设概念须避让清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001]，并待文保测绘确认。
+**AI 原点灯塔** [data:geometry/public_space.geojson#PT-003]：位于原点站社区公园一侧，为巡礼序列中段地标（三处地标中纬度居中）。设计概念：以轻量化构筑物作为"北京AI原点"的空间标识，夜间灯光与活动联动为概念建议；任何建设概念须避让清华园车站旧址文物保护控制范围（示意）[data:geometry/constraints.geojson#CONS-001]，并待文保测绘确认。
 
 城市风貌（引导性概念建议）：融合京张铁路工业记忆、中关村创新文化与 AI 新文化，建筑高度、体量与界面只作风貌引导 [depth:height_massing_character]，不在无文保与控规依据时给出伪精确控制线；导视标识、文化符号与国际传播叙事沿用第 3 章命名体系与 Logo 方向，全部自绘清权，不使用外部字体、商标、肖像与企业标识。风貌控制分三级表达：官方管控（待正式数据发布）、设计建议（本章内容）与待确认条件（第 12 章清单）。
 
@@ -272,8 +272,8 @@ Logo 方向（文字说明，图形全部自绘清权）：把詹天佑"人"字�
 | 期别 | 项目名称 | 类型 | 位置（图层映射） | 依赖条件 | 概念性实施主体建议 |
 | --- | --- | --- | --- | --- | --- |
 | 近期 | 枢纽站站前广场复合激活 | 公共空间/运营 | [data:geometry/public_space.geojson#PS-001] | 公共空间使用许可、活动安全评估 | 概念建议由公共空间运营方与属地协作，待授权 |
-| 近期 | 人字坡纪念节点与巡礼路线南段 | 文化/公共空间 | [data:geometry/public_space.geojson#PT-001] | 版权清权、文保条件复核 | 概念建议由遗址公园运营方与策展团队协作，待授权 |
 | 近期 | 慢行主线南段断点缝合 | 交通/慢行 | [data:geometry/roads.geojson#RD-001] | 道路红线、桥下空间与交通组织复核 | 概念建议由交通研究团队与属地协作，待确认 |
+| 中期 | 人字坡纪念节点与巡礼路线（原点站段） | 文化/公共空间 | [data:geometry/public_space.geojson#PT-001] | 版权清权、文保条件复核 | 概念建议由遗址公园运营方与策展团队协作，待授权 |
 | 中期 | 原点站近校成果转化街区 | 城市更新/产业服务 | [data:geometry/buildings.geojson#BLDG-002]、[data:geometry/land_use.geojson#LU-009] | 校区边界、权属与首层业态确认 | 概念建议由高校、园区运营方与社区协作，待授权 |
 | 中期 | 开源荣誉墙与铭牌荣誉体系 | 文化/运营 | [data:geometry/public_space.geojson#PT-002] | 提名评审机制、内容版权核查 | 概念建议由开源社区机制与运营方协作，待授权 |
 | 中期 | AI 教育实训与科普体验 | 公共服务 | [data:geometry/buildings.geojson#BLDG-005]、[data:geometry/public_space.geojson#PT-008] | 教育内容审核、未成年人保护机制 | 概念建议由高校与科普机构协作，待授权 |

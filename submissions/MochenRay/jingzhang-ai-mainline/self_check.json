@@ -36,8 +36,8 @@
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Current visual page is a single static HTML file with no scripts, remote resources, iframes, forms or tracking (verified by pattern scan); block content finalization is scheduled in the visual/PDF task.",
-      "suggested_fix": "Finalize visual blocks against compliance_matrix visual_sections and re-run visual_review.py at packaging time."
+      "message": "Current visual page is a single static HTML file with no scripts, remote resources, iframes, forms or tracking (verified by pattern scan); all blocks are finalized against compliance_matrix visual_sections (6/6 section names present verbatim) and visual_review.py passed at packaging time.",
+      "suggested_fix": "None outstanding; keep the page script-free and re-run visual_review.py after any visual edit."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
