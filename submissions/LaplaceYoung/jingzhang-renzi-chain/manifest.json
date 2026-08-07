@@ -12,7 +12,7 @@
     "agent_name": "LaplaceYoung AI Agent",
     "model": "deepseek-v4-flash"
   },
-  "generated_at": "2026-08-07T17:13:29Z",
+  "generated_at": "2026-08-08T03:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "05b5ef281822b63e1d3acf52647be2355de67af0db350ed4eb232feac530b489"
+      "sha256": "df7f2f9f3596f058e3634064886c245be97535c76c5396aaa18d4d2c34877a0d"
     },
     {
       "path": "agent.json",
@@ -77,13 +77,13 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "0f478b456c1e21c1a88e33140c153006506eeecb177647548f8bfc50cd3a62d6"
+      "sha256": "e99df1c0e6b07d8248f7e9cf3669ac9ae9538ea526b11a402e579df98aaf7cea"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a50318de46aba5e447bc22f9fdd4d7da1df9df697df5d69f8cd109f75367069b"
+      "sha256": "66b9cad080a152647c60252c9ca61b0002c2df29bd1b240f1b16d2ba36d40bd8"
     },
     {
       "path": "report/copyright_statement.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "314e13520e6c560833d30d701622cd6bf24b91085cebcb7d97a0c2ce432c179b"
+      "sha256": "5ea6fee33503f1b8b4f48c6d3385ab8bf2d4aafb8398f0a45157cccd34c8fdcc"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "98b7699f43bbac9114e8bbdeb931930ade7697f2bdee857bb6997894e1055ac7"
+      "sha256": "59a11df1e032565448ed9a362d466f1ed64847be53ca05f56026aaf57d85bad0"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "7d4b06bc0284fd9e9e6d8dacbb1ece1f8490a3ce9f1cdf24f548894320dbc36e"
+      "sha256": "89ec38c82bcbc1e7e957b3cdfbb4fdab18139d35503013f48a3480627846bbfc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -206,5 +206,5 @@
     "data_confidence": "medium",
     "note": "v0.2 完善后：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
   },
-  "submission_timestamp": "2026-08-07T17:13:29Z"
+  "submission_timestamp": "2026-08-08T03:00:00Z"
 }

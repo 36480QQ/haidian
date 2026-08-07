@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v0.2"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -152,7 +152,7 @@ iteration: "v1.0"
 
 - **定位**：城市型人工智能创新街区，智能原生新业态与数据要素流通的产业转化链节 [source:THREE-AREAS-WINGS][source:OFFICIAL-ANNOUNCEMENT]。
 - **空间结构**：「一站四象限」——以大钟寺站为核，四象限分别布置智能经济培育生态（东南）、智能终端体验消费（东北）、内容消费与数字资产服务（西南）、商务服务（西北）；规划绿地复合利用（概念）[source:OFFICIAL-ANNOUNCEMENT]。
-- **建筑与更新（概念）**：发挥领军企业牵引优势，概念业态聚焦智能体、智能终端、内容消费；潜力地块研判周边高校更新改造方案（概念方向）；商业服务业用地（05）为主要用地载体（概念）；链节概念建筑以研发办公（office约51%）与人才公寓（约39%）为主，零售等体验业态为补充（示意）[data:geometry/buildings.geojson#BLD-004]。
+- **建筑与更新（概念）**：发挥领军企业牵引优势，概念业态聚焦智能体、智能终端、内容消费；潜力地块研判周边高校更新改造方案（概念方向）；商业服务业用地（05）为主要用地载体（概念）；链节概念建筑以研发办公（office约44%）与人才公寓（约44%）为主、零售等体验业态约12%为补充（示意布局口径，按KEY-003内建筑基底面积复算，随示意布局调整）[data:geometry/buildings.geojson#BLD-004]。
 - **交通慢行**：优化大钟寺站一体化方案（概念）；开展站点路口四象限步行连通设计（对应 `geometry/public_space.geojson#PS-001`）[data:geometry/public_space.geojson#PS-001]；完善非机动车停放等静态交通组织（概念）[assumption:A-TRA-004]。
 - **公共空间与AI场景**：大钟寺四象限AI广场组织「数据要素市集」（场景卡SC-04）、具身智能中试场（SC-03）与智能终端体验街（SC-06延展）；大钟寺古钟博物馆周边（概略位置 `geometry/constraints.geojson#CON-HER-002`）保留文化张力，避免过度娱乐化 [data:geometry/constraints.geojson#CON-HER-002][source:AGENT-TASKBOOK]。公共界面（概念）：站点四象限界面建议「上虚下实」——底层商业展示连续、上层退台办公；钟楼地标视线廊道建议保持与古钟博物馆的文化对望（概念意向，非建设结论）。
 - **实施风险**：领军企业空间需求与权属关系、数据要素流通机制均依赖政策试点，列为待确认 [assumption:A-IMP-003]。
@@ -429,6 +429,8 @@ iteration: "v1.0"
 **资料合法性**：本方案仅使用公开或清权资料（`sources.json` 逐项登记），不使用秘密地图、非公开表格、伪造官方背书或伪造规划结论 [source:AGENT-TASKBOOK][source:SOURCE-REGISTRY]。
 
 **版权**：本方案文字、图形、命名、Logo方向、场景卡均为本智能体原创或基于公开资料的衍生创作；未使用未经授权的商标、字体、图片、人物肖像、论文图像或版权材料；OpenStreetMap 数据使用遵守 ODbL 署名要求 [source:OSM-COPYRIGHT]。完整声明见 `report/copyright_statement.md`。投稿按征集公告知识产权条款理解：应征文件与设计成果的知识产权由主办单位/承办单位与应征人共同享有（以官方公告为准）[source:OFFICIAL-ANNOUNCEMENT]。
+
+**公平与包容治理（概念机制）**：本方案将 `equity_inclusion` 列为独立风险维度（见 `assumptions.json` 与风险清单），并建议三项制度化机制：①居民共同决策——更新项目与公共空间场景在决策前纳入社区代表共议（五步参与闭环，见更新章）；②申诉与暂停权——居民可对AI场景提出申诉，公共数据治理复核通过前场景暂停扩展；③弱势群体一票参与——视障、老年、未成年人相关场景的试点准入与退出须包含弱势群体代表的参与意见（概念机制，不构成法定权利设定）[source:AGENT-TASKBOOK]。
 
 **隐私与数据边界**：全部AI场景明确「数据来源、隐私边界、人工复核」三要素；公共空间AI应用仅使用聚合脱敏数据，不进行个体识别，不构成过度监控；场景均设人工复核机制（见AI+场景章）[source:AGENT-TASKBOOK]。本方案不使用、不引用未获授权的空间数据、个人隐私数据或未经授权数据；如后续取得官方或清权补充数据，将按 `docs/data-workflow.md` 登记后使用 [source:DATA-WORKFLOW]。
 
