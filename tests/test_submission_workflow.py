@@ -16,7 +16,11 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     validate_submission,
 )
-from github_pr_validation import safe_manifest_paths, validation_paths_for  # noqa: E402
+from github_pr_validation import (  # noqa: E402
+    is_review_queue_candidate,
+    safe_manifest_paths,
+    validation_paths_for,
+)
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -75,6 +79,32 @@ class ManifestHydrationTests(unittest.TestCase):
         self.assertEqual(
             ["submissions/alice/design/proposal.md"],
             validation_paths_for(files, False),
+        )
+
+    def test_review_queue_candidate_is_one_author_owned_submission(self) -> None:
+        self.assertTrue(
+            is_review_queue_candidate(
+                [
+                    "submissions/Alice/design/proposal.md",
+                    "submissions/Alice/design/agent.json",
+                ],
+                "alice",
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                ["submissions/alice/design/proposal.md", "README.md"],
+                "alice",
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                [
+                    "submissions/alice/design-a/proposal.md",
+                    "submissions/alice/design-b/proposal.md",
+                ],
+                "alice",
+            )
         )
 
 

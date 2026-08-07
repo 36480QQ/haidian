@@ -120,6 +120,22 @@ class GitHubClient:
                 return
         self.request("POST", f"/repos/{self.repository}/issues/{issue_number}/comments", {"body": body})
 
+    def add_labels(self, issue_number: int, labels: list[str]) -> None:
+        self.request(
+            "POST",
+            f"/repos/{self.repository}/issues/{issue_number}/labels",
+            {"labels": labels},
+        )
+
+    def remove_labels(self, issue_number: int, labels: list[str]) -> None:
+        for label in labels:
+            encoded = urllib.parse.quote(label, safe="")
+            try:
+                self.request("DELETE", f"/repos/{self.repository}/issues/{issue_number}/labels/{encoded}")
+            except urllib.error.HTTPError as exc:
+                if exc.code != 404:
+                    raise
+
 
 def next_link(link_header: str) -> str | None:
     for part in link_header.split(","):
@@ -149,6 +165,17 @@ def validation_paths_for(files: list[dict], maintainer_bypass: bool) -> list[str
         for item in files
         if not (maintainer_bypass and item.get("status") == "removed")
     ]
+
+
+def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
+    """Return true only for a single participant-owned submission directory."""
+    roots: set[str] = set()
+    for filename in changed_files:
+        parts = filename.split("/")
+        if len(parts) < 4 or parts[0] != "submissions" or parts[1].casefold() != pr_author.casefold():
+            return False
+        roots.add("/".join(parts[:3]))
+    return bool(changed_files) and len(roots) == 1
 
 
 def safe_manifest_paths(manifest: object) -> set[str]:
@@ -280,6 +307,17 @@ def main() -> int:
         )
         write_step_summary(comment)
         client.upsert_comment(pr_number, comment)
+
+        queue_candidate = is_review_queue_candidate(changed_files, pr_author)
+        if validation.ok and queue_candidate:
+            client.remove_labels(
+                pr_number,
+                ["review/ci-failed", "review/changes-requested", "review/low-quality"],
+            )
+            client.add_labels(pr_number, ["review/queued"])
+        elif queue_candidate:
+            client.remove_labels(pr_number, ["review/queued"])
+            client.add_labels(pr_number, ["review/ci-failed"])
 
         return 0 if validation.ok else 1
     finally:
