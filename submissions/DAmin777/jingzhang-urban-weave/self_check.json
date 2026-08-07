@@ -3,14 +3,14 @@
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
+      "result": "unknown",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
       "message": "Provisional boundary is present; replace with official redline before professional scoring."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
+      "result": "unknown",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
       "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
@@ -30,11 +30,32 @@
       "message": "Static HTML visualization is generated without external dependencies."
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
+      "check_id": "SCAFFOLD_DRAFT_MARKER",
+      "result": "fail",
       "severity": "major",
       "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "message": "SCAFFOLD-DRAFT marker remains; replace the generated scaffold with the participant's actual proposal before formal review."
+    },
+    {
+      "check_id": "PLACEHOLDER_DRAWINGS",
+      "result": "fail",
+      "severity": "major",
+      "target": "drawings/a0-boards.pdf; drawings/a3-booklet.pdf",
+      "message": "Both drawing PDFs are empty placeholder files with no pages; replace them with actual A0 and A3 drawings before formal review."
+    },
+    {
+      "check_id": "PACKAGE_STATE_SCAFFOLD",
+      "result": "fail",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "manifest.package_state is scaffold; the package is not reviewable until draft content and evidence are replaced and the state is finalized."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "fail",
+      "severity": "major",
+      "target": "proposal.md; manifest.json; drawings/",
+      "message": "Professional evidence is not reviewable in the scaffold baseline because the draft marker, scaffold package state, and placeholder drawings remain."
     }
   ]
 }
