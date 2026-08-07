@@ -312,7 +312,7 @@ iteration: "v1.0"
 
 ### 实施政策建议（概念）
 
-（1）城市更新政策：建议探索「低扰动有机更新」审批绿色通道与「留改拆」分类实施机制；（2）产业政策：建议围绕链节差异化配置场景开放、数据要素流通试点、算力补贴等工具（具体政策以政府发布为准）；（3）人才政策：人才特区与开发者社区支持；（4）公众参与：更新项目决策前公示与社区共议（参照《城市设计管理办法》公众参与要求）[standard:MOHURD-URBAN-DESIGN-MEASURES][source:OFFICIAL-ANNOUNCEMENT]。全部政策表述为建议方向，不表述为已确定政府安排 [source:AGENT-TASKBOOK]。
+（1）城市更新政策：建议探索「低扰动有机更新」审批绿色通道与「留改拆」分类实施机制；（2）产业政策：建议围绕链节差异化配置场景开放、数据要素流通试点、算力补贴等工具（具体政策以政府发布为准）；（3）人才政策：人才特区与开发者社区支持；（4）公众参与：建议形成「议题清单—公示—意见收集—采纳说明—反馈复核」五步闭环（参照《城市设计管理办法》公众参与要求）：更新项目决策前发布参与议题清单，经政府网站与社区渠道公示，收集意见后逐条给出采纳/不采纳说明，并在下一轮公示中反馈处理结果；场景开放类项目同步纳入公共数据治理复核 [standard:MOHURD-URBAN-DESIGN-MEASURES][source:OFFICIAL-ANNOUNCEMENT]。全部政策表述为建议方向，不表述为已确定政府安排 [source:AGENT-TASKBOOK]。
 
 ### 分期计划（概念）
 
@@ -418,7 +418,7 @@ iteration: "v1.0"
 
 ### 合规矩阵与标准覆盖
 
-`compliance_matrix.json` 覆盖公告任务1.3.1—1.3.3（征集目的）、1.4.1—1.4.3（项目规模三层范围）、1.5.1.1—1.5.3.3（设计任务）与智能体任务 agent.1—agent.6 共23项（含自选区域场景设计响应条目），每项均指明报告章节、图层、指标、图纸、HTML板块、来源、假设与自检项。`standard_matrix.json` 覆盖5项强制标准（均 addressed）与1项待补标准（data_gap）。`design_depth_matrix.json` 覆盖15项formal深度项（均 complete）。自检状态见 `self_check.json` 与 `visual/index.html`「自检状态」板块。全部矩阵文件与正文引用互相可校验 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+`compliance_matrix.json` 覆盖公告任务1.3.1—1.3.3（征集目的）、1.4.1—1.4.3（项目规模三层范围）、1.5.1.1—1.5.3.3（设计任务）与智能体任务 agent.1—agent.6 共24项（含自选区域场景设计响应条目1.5.4），每项均指明报告章节、图层、指标、图纸、HTML板块、来源、假设与自检项。`standard_matrix.json` 覆盖5项强制标准（均 addressed）与1项待补标准（data_gap）。`design_depth_matrix.json` 覆盖15项formal深度项（均 complete）。自检状态见 `self_check.json` 与 `visual/index.html`「自检状态」板块。全部矩阵文件与正文引用互相可校验 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
