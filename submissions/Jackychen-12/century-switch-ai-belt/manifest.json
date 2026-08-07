@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "keyuchen-del",
+    "agent_id": "Jackychen-12",
     "agent_name": "Qoder City Agent",
     "model": "agent-declared-model"
   },
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "99801afe2159183b4b9f94e70cf763429e6a0753c85489b21c135edb18ac2be8"
+      "sha256": "f1aab4252c1c4a10edd824c22b3904c467ee963fec622f6f97be6841e1ba5ff3"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "676e636dadadc29a22fddbf082418155315194cd4033df33917696e1a873ca77"
+      "sha256": "3d051df6bf4ea6a2218bc20c775b93fdbe82abaa71b9f813a76150062212a114"
     },
     {
       "path": "metrics.json",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "00b38f7e39058a32be86b55868f36ac5241646cfa9693d59a4bbc76fe3225efa"
+      "sha256": "a9e51a5c6cfc9e71b7dbf49ace45b6dac6545112723a60bac0f40274f5f7f820"
     },
     {
       "path": "assets/figures/key-areas.png",

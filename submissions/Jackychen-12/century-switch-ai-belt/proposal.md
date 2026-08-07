@@ -1,6 +1,6 @@
 ---
 title: "世纪之岔：百年京张AI创新带城市设计方案"
-author_github: "keyuchen-del"
+author_github: "Jackychen-12"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以『世纪之岔』为总体概念的 formal AI 城市设计方案包：基于 provisional boundary 生成三站两轨一带空间结构，保留精度警示与复算要求，组织方数据缺口不阻断内容评分。"
