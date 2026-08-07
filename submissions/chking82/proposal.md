@@ -3,13 +3,23 @@ title: "京张智脉：百年京张AI创新带城市设计方案"
 author_github: "chking82"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张遗址公园为文化主轴、三处重点片区为创新锚点，构建'一带三核、多点场景、蓝绿慢行复合环'的AI创新带城市设计方案；覆盖命名体系、AI生态案例、场景卡、朝圣地标、文化叙事与全球运营机制，全部基于公开/清权资料与可复算的几何、指标证据链。"
+summary: "以京张遗址公园为文化主轴、三处重点片区为创新锚点，构建'一带三核、多点场景、蓝绿慢行复合环'的AI创新带城市设计方案；以'智脉'三级命名体系统一片区/节点/事件，覆盖组件库、荣誉展示、导视符号、AI生态案例、10张场景卡、朝圣地标、文化叙事与全球运营机制，全部基于公开/清权资料与可复算的几何、指标证据链，并附 English Summary 供国际传播。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 京张智脉：百年京张AI创新带城市设计方案
+
+## 方案速览
+
+1909年，京张铁路以青龙桥"人字形"线路破解关沟爬坡难题，成为中国第一条自主设计建造的干线铁路——那是中国工程师第一次用"智慧"征服地理障碍；今天，海淀以 AI 全栈自主创新再次"爬坡"。本方案把京张铁路的"铁轨平行线"读作数据流，把 AI 算力与开发者读作"节点"，提出总体概念——**京张智脉（Jing-Zhang Intelligence Vein，简称 JZ·AI）**：以京张遗址公园为历史与公共空间主轴，以众智园、北京AI原点社区、大钟寺三处重点片区为创新锚点，让"百年铁路之脉"进化为"AI 创新之脉"。
+
+**一句话**：把京张遗址公园读作一条"智脉"——1909年人字形铁路的爬坡智慧，对应今天 AI 全栈自主创新的爬坡，以一条南北贯通的公共空间主轴组织世界级 AI 创新带。
+
+**五个关键判断**：其一，**"一带三核、多点场景、蓝绿慢行复合环"结构**——智脉主轴（京张遗址公园活力带）串联三处重点区（智脉·众智站/智脉·原点站/智脉·大钟站），中关村服务翼与小月河场景翼成环；其二，**"智脉一日线"公共体验路线**串联 10 处 AI 场景与 3 处朝圣地标，让方案可走、可看、可参与；其三，**命名即系统**——"京张智脉"建立从片区、节点到事件的三级命名体系，铁轨双线+数据节点的 Logo 母题延展为导视、活动和荣誉体系；其四，**全包机器可读且"方案即管道"**——11 个用地单元、30+ 可复核指标由确定性管道产出，官方数据到位即可重跑进化；其五，**"智脉"AI 创新指数五维框架**支撑长期运营与品牌资产沉淀。
+
+**统一声明**：本方案为 AI 生成的开放共创建议，基于临时粗略边界（官方红线到位后整体重算），全部空间建议均为概念建议、参考方案，可供专业团队深化研究，不构成政府审定结论——本声明覆盖全文 [source:PROVISIONAL-BOUNDARIES][depth:risk_missing_data]。
 
 ## 设计依据与资料清单
 
@@ -49,6 +59,16 @@ iteration: "v1.0"
 
 - **主名称**：京张智脉（Jing-Zhang Intelligence Vein，英文简称 JZ·AI）。
 - **命名逻辑**："京张"锚定百年铁路文化基因，"智脉"表达 AI 创新带作为城市创新血脉的意象，与"一带"的空间形态和"脉动"的运营节奏形成双关。命名体系覆盖三层：片区级（三处重点区）、节点级（朝圣地标/公共空间）、事件级（年度活动品牌）。
+
+**三级命名体系**（"智脉"母题统一延展）：
+
+| 层级 | 命名规则 | 实例 |
+| --- | --- | --- |
+| 片区级 | "智脉·X站"——以创新功能定位站点 | 智脉·众智站（全栈自主）、智脉·原点站（近校策源）、智脉·大钟站（智能原生） |
+| 节点级 | "X驿/廊/庭/墙"——以公共空间或建筑类型命名 | 开源发布厅、端侧算力驿站、清河低碳廊、智能体贡献荣誉墙、开源成果展示廊 |
+| 事件级 | "智脉·X周/日/赛"——以活动品牌命名 | 智脉全球AI活动周、智脉开源日、智脉开发者大赛、智脉治理对话 |
+
+节点级命名与三级命名体系服务于导视系统（agent.5）：导视"K 标"系统以"智脉 Logo + 节点名 + 双语"三要素统一标识（详见朝圣地标与城市风貌章），保证从片区到节点的可读性、可寻路性与国际传播性；全部命名均为概念建议，涉及商标、字体、图像和标识的后续使用须清权。
 - **Logo 方向**：以京张铁路铁轨的平行双线与 AI 神经网络节点符号融合——两条平行线象征铁轨与数据流，节点象征算力/模型/人；配色采用"铁锈红 + 科技银 + 深空蓝"，铁锈红呼应铁路历史，科技银呼应工业制造，深空蓝呼应 AI 未来。Logo 的图形变体可延展为导视系统、活动主视觉和荣誉碑刻。
 - **视觉规范**：字体采用中文字体思源黑体 + 英文字体 Geist 组合；栅格系统基于铁路枕木的等距节奏；辅助图形包括"轨道节点""脉冲波""开源分叉"三种。
 
@@ -104,11 +124,11 @@ iteration: "v1.0"
 
 ## 重点区域详细设计
 
-三处重点区域详细设计是必选项（公告 1.5.3.1/1.5.3.2/1.5.3.3），达到规划综合实施方案的城市设计深度。三处重点区域引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，面积与官方公告一致（众智园 192.1 ha、原点社区 104.3 ha、大钟寺 72.0 ha，[metric:key_area_count]=3）。若官方 polygon 缺失，本方案暂用 provisional_constraint，正文、HTML、sources、assumptions 和 self_check 均说明其不能作为正式评分或审批依据。
+三处重点区域详细设计是必选项（公告 1.5.3.1/1.5.3.2/1.5.3.3），达到规划综合实施方案的城市设计深度。三处重点区域引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，面积与官方公告一致（众智园 192.1 ha [metric:key_area_zhongzhiyuan_sqm]、原点社区 104.3 ha [metric:key_area_origin_sqm]、大钟寺 72.0 ha [metric:key_area_dazhongsi_sqm]，[metric:key_area_count]=3）。若官方 polygon 缺失，本方案暂用 provisional_constraint，正文、HTML、sources、assumptions 和 self_check 均说明其不能作为正式评分或审批依据。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
-### 众智园AI自主创新加速区（[data:geometry/key_areas.geojson#PROV-KEY-001]）
+### 智脉·众智站——众智园AI自主创新加速区（[data:geometry/key_areas.geojson#PROV-KEY-001]）
 
 - **定位**：花园型全栈自主创新街区，承载国家人工智能平台、全栈自主创新、标准制定、安全治理与产业展示。
 - **空间结构**："一轴两翼"——清河创新界面为轴，产业展示翼 + 低碳创新交往翼。
@@ -118,7 +138,7 @@ iteration: "v1.0"
 - **AI 场景**：自主模型测试场、标准制定工作坊、安全治理展示馆、低碳算力体验点。
 - **实施风险**：清河蓝线、防洪与生态条件待官方确认；对外交通组织依赖道路红线复核。
 
-### 北京AI原点社区（[data:geometry/key_areas.geojson#PROV-KEY-002]）
+### 智脉·原点站——北京AI原点社区（[data:geometry/key_areas.geojson#PROV-KEY-002]）
 
 - **定位**：近校型成果转化与人才社区，服务高校、开源社区与初创团队。
 - **空间结构**："校区-园区-街区"三层慢行缝合，形成近校成果转化街。
@@ -128,7 +148,7 @@ iteration: "v1.0"
 - **AI 场景**：开源社区、成果发布、人才特区服务、近校孵化、AI 教育体验点。
 - **实施风险**：校区边界、权属与首层业态待确认；成果转化涉及知识产权与数据授权边界。
 
-### 大钟寺AI产业聚集区（[data:geometry/key_areas.geojson#PROV-KEY-003]）
+### 智脉·大钟站——大钟寺AI产业聚集区（[data:geometry/key_areas.geojson#PROV-KEY-003]）
 
 - **定位**：城市型智能经济与国际交往街区，服务领军企业、智能体、智能终端与内容消费企业。
 - **空间结构**：以大钟寺站为锚点的四象限步行连通 + 智能原生消费街。
@@ -162,18 +182,20 @@ AI 场景落到空间和治理边界：公共空间场景引用 [data:geometry/p
 
 ### 十张 AI 场景卡（agent.3，不少于 10 张）
 
-| 场景卡 | 空间载体 | 服务对象 | 设计说明 |
-| --- | --- | --- | --- |
-| 01 开源发布厅 | 北京AI原点社区 | 开发者/初创团队 | 成果发布、代码贡献展示、小型路演空间 |
-| 02 安全治理沙盒 | 众智园 | 企业/监管/公众 | 标准制定、安全评测、模型红队测试的展示与协作节点 |
-| 03 端侧算力驿站 | 总体设计范围节点 | 初创/居民 | 与公共服务、低碳能源结合的新型基础设施原型 |
-| 04 AI慢行导航 | 京张遗址公园活力带 | 所有人群 | 可解释导视、低侵入传感识别慢行断点与无障碍需求 |
-| 05 大钟寺国际路演客厅 | 大钟寺AI产业聚集区 | 企业/国际访客 | 展示、洽谈、媒体发布和国际交流 |
-| 06 清河低碳创新廊 | 众智园临清河界面 | 企业/公众 | 绿色空间、雨洪、步行骑行与AI展示结合 |
-| 07 近校成果转化街 | 北京AI原点社区 | 高校/初创 | 孵化、展示、法务、知识产权和投融资服务 |
-| 08 数据要素会客厅 | 大钟寺片区 | 企业/公众 | 以合规、授权、可审计为前提的数据要素流通界面 |
-| 09 AI生活服务样板街 | 社区与商业交汇处 | 居民 | 医疗、教育、法律、生活服务 AI+ 场景小尺度街区 |
-| 10 全球AI活动周路线 | 一带公共空间系统 | 全球参与者 | 从遗址文化、开源社区、产业展示到国际路演的可步行路线 |
+每张场景卡均遵循统一的开放运营机制：**场景清单公开发布 → 主体申请 → 安全与伦理评审 → 限期测试 → 人工复核 → 展示或退出**。每张卡明确空间载体、服务对象、数据边界、人工复核与退出机制，确保可体验、可监管、可退出（[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]）。
+
+| 场景卡 | 空间载体 | 服务对象 | 设计说明 | 数据边界/人工复核/退出机制 |
+| --- | --- | --- | --- | --- |
+| 01 开源发布厅 | 智脉·原点站 | 开发者/初创团队 | 成果发布、代码贡献展示、小型路演空间 | 报名信息最小化收集、活动后删除；现场人工值守；内容审核不通过即下架 |
+| 02 安全治理沙盒 | 智脉·众智站 | 企业/监管/公众 | 标准制定、安全评测、模型红队测试的展示与协作节点 | 测试数据脱敏后开放研究；专家委员会人工复核；任一试运行未过审即暂停 |
+| 03 端侧算力驿站 | 总体设计范围节点 | 初创/居民 | 与公共服务、低碳能源结合的新型基础设施原型 | 算力与数据服务须另行授权；不采集个人行为轨迹；服务异常自动降级人工 |
+| 04 AI慢行导航 | 智脉主轴（遗址公园活力带） | 所有人群 | 可解释导视、低侵入传感识别慢行断点与无障碍需求 | 仅聚合匿名人流数据；不识别个人身份；告警须人工确认后处置，保留常规导视设施 |
+| 05 智脉·大钟站国际路演客厅 | 智脉·大钟站 | 企业/国际访客 | 展示、洽谈、媒体发布和国际交流 | 企业标识与案例须清权；国际传播内容双语文审；未授权内容不得发布 |
+| 06 清河低碳创新廊 | 智脉·众智站临清河界面 | 企业/公众 | 绿色空间、雨洪、步行骑行与AI展示结合 | 仅采集环境与植被数据，不采集人像；生态监测模型失效回退常规定时养护 |
+| 07 近校成果转化街 | 智脉·原点站 | 高校/初创 | 孵化、展示、法务、知识产权和投融资服务 | 校园数据和科研成果须授权；知识产权边界事前约定；争议事项人工仲裁 |
+| 08 数据要素会客厅 | 智脉·大钟站 | 企业/公众 | 以合规、授权、可审计为前提的数据要素流通界面 | 数据流通须合规、授权、可审计；匿名化默认；未清权数据禁止流通 |
+| 09 AI生活服务样板街 | 社区与商业交汇处 | 居民 | 医疗、教育、法律、生活服务 AI+ 场景小尺度街区 | 不处理个人病历与敏感信息；医疗/法律建议附来源并由专业人员复核；紧急情况直连人工 |
+| 10 智脉全球AI活动周路线 | 一带公共空间系统 | 全球参与者 | 从遗址文化、开源社区、产业展示到国际路演的可步行路线 | 参与者信息最小化、活动后删除；活动安全预案与人工疏导；版权素材未清权不展示 |
 
 ### 三个 AI 产业测试验证场景（agent.3，不少于 3 个）
 
@@ -234,6 +256,42 @@ agent 生成的 AI 治理建议遵守数据最小化、公开来源、可解释�
 
 城市风貌融合京张铁路历史文化、中关村创新文化和 AI 创新文化，利用清华园火车站、北影等文化资源，提出城市基调（"铁锈红+科技银+深空蓝"）、建筑风貌（保留铁路工业遗产的砖构与金属构架语汇，新建建筑采用科技感立面）、屋顶形态（遗址公园沿线鼓励第五立面绿化）、体量（沿主轴建筑高度梯度控制）、界面（临公园界面通透开放）和公共艺术（轨道节点、脉冲波、开源分叉主题）引导。导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系的所有品牌、字体、图像、肖像和企业标识都必须有清权来源。
 
+### 公共空间组件库（agent.4）
+
+公共空间组件库是朝圣地标与 AI 公共空间的标准化建造单元，保证一带公共空间"可复制、可组合、可进化"（[depth:blue_green_public_space]）。组件按"模数化、低侵入、可升级"原则设计，全部为概念建议：
+
+| 组件 | 类型 | 功能 | 智能升级接口 |
+| --- | --- | --- | --- |
+| 智脉椅 | 坐憩单元 | 座椅+无线充电+本地化环境感知 | 预留端侧算力接口，不采集个人数据 |
+| 开源展架 | 展示单元 | 开源项目/模型贡献展示，二维码可追溯 | 展示内容人工审核后上架 |
+| 脉冲灯柱 | 照明单元 | 夜间照明+活动氛围+安全感知 | 告警须人工确认，不做人脸识别 |
+| 节点铺装 | 铺装单元 | 轨道节点/脉冲波/开源分叉三种主题铺装 | 导视信息可更换 |
+| 智脉驿站 | 服务单元 | 饮水、充电、信息屏、应急呼叫 | 信息屏内容人工审核，保留非智能通道 |
+| 轨道座椅带 | 边界单元 | 沿铁轨意象的连续座椅+植栽带 | 生态监测数据仅环境维度 |
+
+组件库与 `geometry/public_space.geojson` 的 4 处公共空间（[data:geometry/public_space.geojson#PUBLIC-001] 开源发布厅、PUBLIC-002 前广场、PUBLIC-003 路演广场、PUBLIC-004 社区节点）和 3 处朝圣地标（开源成果展示廊/智能体贡献荣誉墙/人工智能里程碑步道）对应，实现"组件即节点、节点即场景"。
+
+### 荣誉展示体系（agent.4）
+
+荣誉展示体系呼应征集"百年京张，刻上你的 GitHub ID"纪念机制，以"物质+数字"双形态沉淀开发者贡献：
+
+1. **开源成果展示廊**（朝圣地标 1，京张遗址公园北段近智脉·众智站）：以实体展廊+数字屏承载开源项目、模型贡献与开发者荣誉的常态化展示；展示内容经审核上架，贡献者信息以 GitHub ID 与开源许可证为准，避免肖像与个人隐私。
+2. **智能体贡献荣誉墙**（朝圣地标 2，京张遗址公园中段近智脉·原点站）："碑刻/数字化荣誉墙"双形态，纪念 AI 时代开发者与智能体的贡献；碑刻名录公开征募、人工审核，数字化荣誉墙实时可查可追溯。
+3. **人工智能里程碑步道**（朝圣地标 3，京张遗址公园南段近智脉·大钟站）：以步道串联 AI 发展关键里程碑节点，形成可步行、可讲解、可传播的"AI 时间线"公共空间。
+
+荣誉体系与"智脉"品牌资产联动：荣誉名录、展示内容与活动品牌统一清权管理，形成"评测—共识—荣誉"的治理功能组合（概念建议）；所有肖像、商标、企业标识与版权素材在未清权前不进入展示。
+
+### 导视符号系统（agent.5）
+
+导视系统以"智脉 K 标"为核心母题，统一"铁轨双线+数据节点"Logo 与三级命名体系（片区级/节点级/事件级），形成可读、可寻路、可国际传播的符号系统：
+
+1. **K 标层级**：一级片区导视（智脉·众智站/原点站/大钟站）、二级节点导视（各公共空间/朝圣地标）、三级事件导视（活动周/开源日临时标识），双语（中/英）表达。
+2. **符号语言**：铁轨平行线（历史脉）+ 数据节点（创新脉）+ 脉冲波（活力）三种辅助图形，延续 Logo 母题；颜色沿用铁锈红/科技银/深空蓝。
+3. **智慧导视**：以可解释、低侵入的方式提供慢行导航与无障碍指引（对应场景卡 04 AI慢行导航），保留常规导视设施作为非智能通道；不做个人身份识别。
+4. **文化叙事载体**：导视与朝圣地标、里程碑步道、荣誉墙共同构成"百年京张-中关村- AI 新文化"的空间故事线，服务国际传播（agent.5）。
+
+导视系统的全部字体、图标、图像与标识为概念建议，正式使用前须完成版权与商标清权。
+
 ## 更新项目清单、实施政策与分期计划
 
 实施方案形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险和评估指标。政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。`geometry/phasing.geojson` 表达三期范围（[data:geometry/phasing.geojson#PHASE-001] 近期试点、PHASE-002 中期更新、PHASE-003 远期治理），`compliance_matrix.json` 把每个任务与分期和图纸挂接。
@@ -283,6 +341,16 @@ agent 生成的 AI 治理建议遵守数据最小化、公开来源、可解释�
 **版权与合规**：所有图片、图纸、图标、数据和代码资产在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。方案文件使用中文（`language: "zh"`），中文文本为解释依据。
 
 **边界声明**：本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
+
+## 附录：English Summary（国际传播摘要）
+
+**Jing-Zhang Intelligence Vein (JZ·AI)** — Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt
+
+In 1909, the Jing-Zhang Railway conquered the Guanggou mountain pass with its iconic "herringbone" alignment — the first trunk railway designed and built independently by Chinese engineers. Today, Haidian is again "climbing" with full-stack AI self-innovation. This proposal reads the railway's parallel tracks as data streams and AI compute/developers as nodes, organizing the corridor as a single **Intelligence Vein**: one north-south public spine (Jing-Zhang Heritage Park), three innovation anchors (Zhongzhi Station / Origin Station / Dazhong Station), multiple AI scenario nodes, and a blue-green slow-traffic loop.
+
+**Five key propositions**: (1) a "one spine, three cores, multiple scenarios, green loop" spatial structure; (2) a walkable "Intelligence Vein One-Day Route" linking 10 AI scenario cards and 3 AI pilgrimage landmarks; (3) a three-tier naming and wayfinding system (district/node/event) unified under the JZ·AI logo motif of rail-double-lines × data-nodes; (4) a fully machine-readable, pipeline-generated package — 11 land-use units and 30+ recomputable metrics — designed to re-run when official boundaries are released; (5) a five-dimension JZ·AI Innovation Index supporting long-term operation and brand equity.
+
+The package covers the six required agent tasks: overall concept & naming (agent.1), full-stack innovation ecosystem with 6 global cases (agent.2), 10 scenario cards + 3 test scenarios + 5 personas (agent.3), public-space component library & honor display system & 3 pilgrimage landmarks (agent.4), heritage-culture narrative & wayfinding symbol system (agent.5), and a global AI events & long-term operation system (agent.6). All spatial proposals are conceptual suggestions based on provisional boundaries pending official redlines; nothing herein constitutes government-approved planning conclusions.
 
 ## 参考资料
 
