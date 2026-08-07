@@ -723,6 +723,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 "\n".join(report.errors),
             )
 
+    def test_participant_cannot_add_maintainer_feedback(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            feedback = f"{base}/FEEDBACK.md"
+            self.write(root, feedback, "# Maintainer feedback\n")
+            report = validate_submission(root, "alice", [*changed, feedback])
+            self.assertFalse(report.ok)
+            self.assertIn(
+                "only maintainers may add or edit FEEDBACK.md",
+                "\n".join(report.errors),
+            )
+
+    def test_maintainer_can_add_feedback_to_valid_submission(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            feedback = f"{base}/FEEDBACK.md"
+            self.write(root, feedback, "# Maintainer feedback\n")
+            report = validate_submission(
+                root,
+                "maintainer",
+                [feedback],
+                ["maintainer"],
+            )
+            self.assertTrue(report.ok, "\n".join(report.errors))
+            self.assertTrue(report.maintainer_bypass)
+
     def test_review_artifacts_cannot_be_committed(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

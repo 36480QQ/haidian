@@ -1360,7 +1360,7 @@ def validate_proposal_file(
             report.add_error(f"{proposal_path}: missing front matter field `{key}`")
 
     author = metadata.get("author_github", "")
-    if author and author.lower() != pr_author.lower():
+    if author and author.lower() != pr_author.lower() and not report.maintainer_bypass:
         report.add_error(
             f"{proposal_path}: author_github `{author}` must match PR author `{pr_author}`"
         )
@@ -1778,6 +1778,11 @@ def validate_submission(
             proposal_files.add(path)
         elif len(parts) == 4 and parts[3] == "changelog.md":
             changelog_files.add(path)
+        elif len(parts) == 4 and parts[3] == "FEEDBACK.md":
+            if not report.maintainer_bypass:
+                report.add_error(
+                    f"{path}: only maintainers may add or edit FEEDBACK.md"
+                )
         elif len(parts) == 4 and parts[3] == "risk.json":
             risk_files.add(path)
         elif len(parts) == 4 and parts[3] == "spatial.json":
@@ -1816,7 +1821,7 @@ def validate_submission(
                 report.add_error(f"{path}: visual assets must use one of {allowed}")
         else:
             report.add_error(
-                f"{path}: each proposal directory may contain proposal.md, changelog.md, risk.json, spatial.json, simulation.json, AI package files, assets/*, geometry/*, drawings/*, report/*, and visual/index.html plus visual/assets/* only"
+                f"{path}: each proposal directory may contain proposal.md, changelog.md, maintainer-only FEEDBACK.md, risk.json, spatial.json, simulation.json, AI package files, assets/*, geometry/*, drawings/*, report/*, and visual/index.html plus visual/assets/* only"
             )
 
         if not full_path.exists():
