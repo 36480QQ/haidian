@@ -84,7 +84,8 @@
       "formula": "union_area(buildings.geojson) in EPSG:4548",
       "confidence": "low",
       "assumptions": [
-        "概念性建筑基底示意（非现状测绘），建筑面积仅作空间供给量级讨论。"
+        "概念性建筑基底示意（非现状测绘），建筑面积仅作空间供给量级讨论。",
+        "口径说明：本指标按 geometry/buildings.geojson 的 union 面积（EPSG:4548）复算；各特征 area_sqm_declared 之和（约224,775㎡）与 union 值存在约1.7%差异，系相邻基底重叠消解所致，拆改留比例按 declared 面积口径复算。"
       ]
     },
     "building_density": {

@@ -222,6 +222,8 @@ iteration: "v0.2"
 | SC-13 | 学院路教育带 | 师生/教育企业/终身学习者 | 教育科技协同体 | 教研专家与教育部门评审 | land_use, public_space |
 | SC-14 | 西土城路法律服务带 | 创业者/居民 | 法律科技协同体 | 执业律师人工复核 | land_use |
 
+**计数口径说明**：front matter 的 `scenarios` 字段仅登记仓库场景注册表中的 6 个门户场景 ID（供门户索引用）；SC-13/SC-14 为方案内扩展场景卡，场景总数以 `scenario_node_count=14` 为准（本段及各文件计数均一致）。
+
 ### AI场景节点空间分布（概念量化）
 
 14个场景节点按空间锚点分布：众智园链节2个（SC-01/02）、原点社区链节2个（SC-05/06）、活力脊1个（SC-07）、大钟寺链节3个（SC-03/04/11）、学院带与服务翼3个（SC-09/10/14）、全带网络型2个（SC-08/12）、教育带1个（SC-13）——节点与 `geometry/public_space.geojson`、`geometry/land_use.geojson`、`geometry/roads.geojson` 图层锚点一一对应（见「场景—空间—运营映射」表），作为 `scenario_node_count` 指标的空间复核依据 [metric:scenario_node_count]。
