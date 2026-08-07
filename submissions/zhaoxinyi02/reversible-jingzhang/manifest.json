@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9d72b14eb2dafdd6399dccc141bc196a304b1c83ebaa767c615d8949fe8c7894"
+      "sha256": "e132d1c344f01e2da7a50633e8eac1a8a948505ca08849933736d789e53a6ce2"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "491e3a5ae9d1f2a5087601d7086ac73f5623247b7a75734759b03b16770b1f4e"
+      "sha256": "08460e25cc609a2ec666c916cf11852ac1764430ec5fe2d3db7637fd33e50343"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "641a2da6a086702bbaaf0f391b8080e012b9bbd55997d06f1fb30d8c6656f39f"
+      "sha256": "3ff146d1ccc29da4404f7e30415cffc49dcf3ef41ffb2614f33607adaf246dd9"
     },
     {
       "path": "report/narrative.md",
@@ -89,55 +89,55 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f87e89bc58561afa5b9d3d4a323a11376af888dcb9c586482dc21f1f72b9caa1"
+      "sha256": "8ca66b1ebb223b1e3d44f84ee7d8571a706e42f8e2e29efba2fb6089457a986f"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "68ab4853ef4c084d4037a1373b13bcb6520d62115c1fb30cb4340f3a5742274e"
+      "sha256": "62c15f52b9fa78e65652ad8ebb472eca7007411bc1cae0bdb2a9db77a84dc5d2"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "08facf13097862925b217335b1aef96e2bd5dfc2cb8bef95a051316d72ef6aea"
+      "sha256": "d0697e75bd3e05f53d6d3c4a12affa8d53059913d7f384895aed808e6fb48e7f"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "76344e45ac3ea8023cee4b279dba654905a49f085991a89f7dbc8eee5451e06b"
+      "sha256": "c3099c74bc357d5823bfaf42028a4092702dc30d870dfbded0ca530a154ede53"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "0156277056876038807b5931243f8c48abfe1ce64fa73e8c6d840078cc1e89f1"
+      "sha256": "0b8a373210a064d5304bf7048c07196efbc962ee3563f39111af49d4a6dd805b"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "78cf1bbe86b5d2300d5efb00f845609ea69f7349b90a0612e6ad9e5c3cddc491"
+      "sha256": "c2b6a5d79664c7222a97dc76e63546ace5e9068846ccc395378dd06c38d33cd6"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "90b8f227f56f805eb5314ff5e3cedef4e7eab2940a52a7286f7000b69cf6da36"
+      "sha256": "59272037b5b94879d0abe17ab7a6cb8e17ae0756cbf20171d4aba574179485b2"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8f1fc1fb9587b09db2bc03d566b68758cae8340fa9009ddd34fc7c68fa87240b"
+      "sha256": "3aeceb295143828719447af058aa2ff965be6c847115f2764b816c314a82fffd"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "d4f8d9b223838ada68ee3587b0582d98a1d839e999c292040e0cb530c3051afa"
+      "sha256": "1683f5d964275c703b14eabea344aeca1fde79e717f9647982595fdf484f4212"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -179,7 +179,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8ee9a5d08882347354a8c7e4cb67bbb680af826374bb0c84380ade393c348431"
+      "sha256": "cee4b85050422a814753329be1770a1994835740eda94c41021e1e9fd7bc46e9"
     },
     {
       "path": "geometry/roads.geojson",
@@ -192,6 +192,96 @@
       "role": "geometry",
       "required": true,
       "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
+    },
+    {
+      "path": "visual/assets/scenarios/sc01-agent-toolchain-sandbox.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "1bf85a53430da5c67147e1c76b1454dda3456ee4a93b6259ac950c493442b452"
+    },
+    {
+      "path": "visual/assets/scenarios/sc02-embodied-low-speed-sandbox.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "c3a5f77217a67265824c7ea19e11837fbdac6ba6003782306c2f9066165c5613"
+    },
+    {
+      "path": "visual/assets/scenarios/sc03-model-red-team-bay.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "edf938ed98b974b55a4d2bc7031e69c0e6729fbdbf466c6a23a4b5edc7d94080"
+    },
+    {
+      "path": "visual/assets/scenarios/sc04-compute-energy-copilot.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "75e3b8fd441fcbb10cd17aeecef5453d1345b842f5498aeaeea8dec5923e79fa"
+    },
+    {
+      "path": "visual/assets/scenarios/sc05-responsible-ai-retail.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "ebd00ba94bfd6a201e35c64987e3ce8329923d130d1c376614f6be06c77ae80d"
+    },
+    {
+      "path": "visual/assets/scenarios/sc06-civic-explanation-assistant.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "9261996d025efb214a9f78a99ebd09f8ca59016d61cf530593d089ca4aae68aa"
+    },
+    {
+      "path": "visual/assets/scenarios/sc07-age-friendly-life-copilot.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "7d4dc6a73183601ae6ed6187c1b8e2b106a094f3ab057129303d8771deb260e4"
+    },
+    {
+      "path": "visual/assets/scenarios/sc08-accessible-route-companion.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "21677bba636768cd5da827a9df25080be6b69110f62e7759cd55108f0c710a5b"
+    },
+    {
+      "path": "visual/assets/scenarios/sc09-health-service-navigation.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "f73428807ba0f7c350a6b6ad31a7de53c098508aab1cf6512895753ff7d0cbb3"
+    },
+    {
+      "path": "visual/assets/scenarios/sc10-open-ai-literacy-studio.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "a252415e56364b85c7c0ccd7855a330d111afe112fe5f4aff56a2538258b5ad9"
+    },
+    {
+      "path": "visual/assets/scenarios/sc11-railway-evidence-guide.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "2bef85796af4f12cb30983124507e532c2b42d0dbb4b5ae1de83023700dddf51"
+    },
+    {
+      "path": "visual/assets/scenarios/sc12-park-ecology-steward.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "90e61d4bd86226c26cc3bf9bee823fad7b31ca47ae56ec7bc76bf020d541008b"
+    },
+    {
+      "path": "visual/assets/scenarios/sc13-co-governed-night-light.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "7118506ea6127002d1e8ba34b3db090b898dee3aeb81b8e13dfa5cfb58bfb96c"
+    },
+    {
+      "path": "visual/assets/scenarios/sc14-civic-issue-router.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "74e100a10f52a118e684c9a7135e04e874fd0fb8176c301ba00f471837d1f890"
+    },
+    {
+      "path": "visual/assets/scenarios/sc15-global-agent-interop-week.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "d8fa050e72315456e4b6bc9af9708225c609fb22e233433e9d8f260de4b849b7"
     }
   ],
   "validation_claim": {

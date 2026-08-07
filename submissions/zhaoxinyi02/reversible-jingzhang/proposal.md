@@ -12,6 +12,8 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 > **每个未来，都必须带一张回程票。** 不是先问 AI 能做什么，而是先问：错误发生时，谁能停止、如何恢复、谁来修复、城市是否仍能正常生活？第二轮视觉 QA 已将总图、用地、重点区、交通蓝绿和指标证据拆成五种不同图示语法，减少重复总图。
 
+“可逆城”不是把城市反复推倒重来，也不是否定长期建设。它指的是：在 AI 技术尚不稳定、社会影响尚不确定时，先用小范围、可拆卸、有期限、有人负责的方式试验；居民可以拒绝或退出，服务可以切回人工，数据可以删除，模型可以回滚，设施可以撤走，公共空间可以恢复。真正不可逆的铁路遗产、生态基底、人的尊严与基本公共服务反而要被优先保护。简言之：**大方向长期主义，小试验可逆；城市可以学习，但不能让居民替技术承担无法回头的代价。**
+
 ## 设计依据与资料清单
 
 本案把“可逆”作为城市设计、公共治理与产业验证的共同底盘。官方公告给出 43.6 平方公里统筹研究范围、11.4 平方公里总体设计范围、368.4 公顷三处重点区及三层任务；智能体任务书补充三大定位、五大功能、三区两翼、品牌、场景、地标和运营要求。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
@@ -45,6 +47,14 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 八个全球案例只作机制参照，不外推其法律、资金、绩效或机构承诺：Punggol Digital District 的数字孪生先模拟后测试；CitCom.ai 的跨场景测试；Helsinki Mobility Lab 的开放试验；Barcelona Innova Lab 的城市问题征集；Amsterdam 算法登记的透明字段；Mila/Mile-Ex 的研究—转化共址；MassRobotics 的共享原型设施；Sidewalk Toronto 的退出案例提醒“技术完整不等于社会许可”。这些案例均列为背景启发，不支撑本项目法定空间结论。[source:SOURCE-REGISTRY] [metric:global_case_count]
 
 区域协同不是箭头装饰，而是五种接口：北纬社区交换人才生活与近校创新方法；未来科学城交换基础研究与大装置需求；怀柔科学城交换科学智能基准；经开区交换智能制造和具身测试要求；京津冀节点交换场景包与公开评测协议。输出仅是“接口规格、进入条件、证据格式和退出条款”，不假定任何单位已合作。
+
+| 区域接口 | 建议交换内容 | 京张输出 | 进入条件与退出边界 |
+|---|---|---|---|
+| 北纬社区 | 人才生活、近校创新方法 | 人工等价服务与社区复核模板 | 居民主动参与；不得复制个人画像 |
+| 未来科学城 | 基础研究与大装置需求 | 场景问题、公开基准与转化接口 | 无正式合作文件即只保留接口建议 |
+| 怀柔科学城 | 科学智能与评测方法 | 可复现包、失败档案与人审记录 | 数据权利不清或不可复现即退出 |
+| 经开区 | 智能制造、具身测试要求 | 可逆试验协议与公共价值闸门 | 工业测试不得自动外溢到公共街道 |
+| 京津冀节点 | 多地场景与互操作需求 | 开放场景卡、版本与退出条款 | 不宣称统一标准、采购或政策承诺 |
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -114,7 +124,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 ## 蓝绿空间、公共空间与城市风貌
 
-绿色空间是所有试验的恢复基底，而非科技展陈背景。主线绿廊与三座恢复花园形成连续系统；公共空间包含三座地标和三条照护横廊。[data:geometry/green_space.geojson#GREEN-RETURN-001] [data:geometry/public_space.geojson#PUBLIC-LANDMARK-01] [depth:blue_green_public_space] 绿地率与公共空间率来自提交几何 union，二者可能重叠，不能相加冒充开放空间总率。[metric:green_ratio] [metric:public_space_ratio]
+绿色空间是所有试验的恢复基底，而非科技展陈背景。主线绿廊与三座恢复花园形成连续系统；公共空间包含三座地标和六条照护横廊，与 `roads.geojson` 中 ROAD-CARE-01..06 一一对应。道路层表达概念慢行中心线，公共空间层表达其可讨论的步行与停留界面，两者采用不同指标口径但数量一致。[data:geometry/green_space.geojson#GREEN-RETURN-001] [data:geometry/public_space.geojson#PUBLIC-LANDMARK-01] [data:geometry/public_space.geojson#PUBLIC-CARE-06] [depth:blue_green_public_space] 绿地率与公共空间率来自提交几何 union，二者可能重叠，不能相加冒充开放空间总率。[metric:green_ratio] [metric:public_space_ratio]
 
 三座 AI 朝圣地标：**回程票大厅**展示每个场景的退出与恢复承诺；**城市撤回中心**让公众提出暂停、申诉、删除与人工服务请求；**百年版本园**把被采用、被修改、被撤回和失败的公共贡献共同保存。荣誉墙不只刻“成功者”，也记录及时叫停错误方案的人——把负责任的撤回变成城市荣誉。
 

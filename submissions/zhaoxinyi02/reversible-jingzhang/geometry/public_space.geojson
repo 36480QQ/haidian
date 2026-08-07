@@ -859,6 +859,48 @@
         "design_version": "v2-differentiated-visual-qa",
         "name_zh": "城市照护横廊1",
         "design_note": "日常通行优先，试验须主动选择",
+        "area_sqm_declared": 205166.079
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342664,
+              39.951075
+            ],
+            [
+              116.342664,
+              39.953175
+            ],
+            [
+              116.35296,
+              39.953175
+            ],
+            [
+              116.35296,
+              39.951075
+            ],
+            [
+              116.342664,
+              39.951075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-CARE-02",
+      "properties": {
+        "id": "PUBLIC-CARE-02",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_version": "v2-differentiated-visual-qa",
+        "name_zh": "城市照护横廊2",
+        "design_note": "日常通行优先，试验须主动选择",
         "area_sqm_declared": 205127.319
       },
       "geometry": {
@@ -891,15 +933,57 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-CARE-02",
+      "id": "PUBLIC-CARE-03",
       "properties": {
-        "id": "PUBLIC-CARE-02",
+        "id": "PUBLIC-CARE-03",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "design_version": "v2-differentiated-visual-qa",
-        "name_zh": "城市照护横廊2",
+        "name_zh": "城市照护横廊3",
+        "design_note": "日常通行优先，试验须主动选择",
+        "area_sqm_declared": 205088.549
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342664,
+              39.977325
+            ],
+            [
+              116.342664,
+              39.979425
+            ],
+            [
+              116.35296,
+              39.979425
+            ],
+            [
+              116.35296,
+              39.977325
+            ],
+            [
+              116.342664,
+              39.977325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-CARE-04",
+      "properties": {
+        "id": "PUBLIC-CARE-04",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_version": "v2-differentiated-visual-qa",
+        "name_zh": "城市照护横廊4",
         "design_note": "日常通行优先，试验须主动选择",
         "area_sqm_declared": 205049.767
       },
@@ -933,15 +1017,57 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-CARE-03",
+      "id": "PUBLIC-CARE-05",
       "properties": {
-        "id": "PUBLIC-CARE-03",
+        "id": "PUBLIC-CARE-05",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "design_version": "v2-differentiated-visual-qa",
-        "name_zh": "城市照护横廊3",
+        "name_zh": "城市照护横廊5",
+        "design_note": "日常通行优先，试验须主动选择",
+        "area_sqm_declared": 205010.975
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342664,
+              40.003575
+            ],
+            [
+              116.342664,
+              40.005675
+            ],
+            [
+              116.35296,
+              40.005675
+            ],
+            [
+              116.35296,
+              40.003575
+            ],
+            [
+              116.342664,
+              40.003575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-CARE-06",
+      "properties": {
+        "id": "PUBLIC-CARE-06",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_version": "v2-differentiated-visual-qa",
+        "name_zh": "城市照护横廊6",
         "design_note": "日常通行优先，试验须主动选择",
         "area_sqm_declared": 204977.346
       },
