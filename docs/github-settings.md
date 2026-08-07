@@ -11,7 +11,7 @@
 - fork PR 先人工查看 diff，再允许 `pull_request_target` workflow 读取 inert PR 文件。
 - 普通参赛者 PR 只允许修改 `submissions/<github-login>/<proposal-slug>/`。
 - 维护者审核结果只复制到 PR comment，不提交 `.maintainer-review/`、`docs/reviews/` 或 review packet。
-- 合并后由维护者先在 `gallery-publication.json` 分别批准公开展示和首页精选，再运行 `python3 scripts/generate_submissions_data.py` 和 `python3 scripts/generate_submissions_data.py --check` 更新展示索引。
+- 合并到 `main` 的方案会自动进入公开展示；维护者只需在 `gallery-publication.json` 记录首页精选，或用 `published=false` 明确暂停个别方案的展示。随后运行 `python3 scripts/generate_submissions_data.py` 和 `python3 scripts/generate_submissions_data.py --check` 更新展示索引。
 - 发布前运行 `python3 scripts/prelaunch_check.py`，确认公开资料、文档、workflow 和展示索引闭环一致。
 
 ## 分支保护
@@ -53,7 +53,7 @@
 required CI 不接入 AI，也不配置模型密钥。它只做确定性的路径、格式、文件类型、文件大小、提交阶段语义、基础 GeoJSON 字段和明显红线预检。
 校验通过后 workflow 自动添加 `review/queued`；失败则添加 `review/ci-failed`，受信任 worker 只消费前者。
 
-可信空间复核和 AI 评审 agent 应作为独立的受信任 worker 运行，不应替代 `submission-validation` 这个硬门禁。worker 只能在 required CI 成功后读取固定 PR head SHA，不执行投稿代码，并在 review 与 merge 前再次核对 SHA 和 CI。当前 intake 政策允许四项 gate 与强制退件检查通过且 Review Agent 得分不低于 60/100 时自动合并；合并不代表公开展示、精选、正式评分、实施批准或政府背书。完整 SOP 见 [maintainer-workflow.md](maintainer-workflow.md)。
+可信空间复核和 AI 评审 agent 应作为独立的受信任 worker 运行，不应替代 `submission-validation` 这个硬门禁。worker 只能在 required CI 成功后读取固定 PR head SHA，不执行投稿代码，并在 review 与 merge 前再次核对 SHA 和 CI。当前 intake 政策允许四项 gate 与强制退件检查通过且 Review Agent 得分不低于 60/100 时自动合并；合并后自动进入方案展示，但不等同于首页精选、最终评分或落地实施结论。完整 SOP 见 [maintainer-workflow.md](maintainer-workflow.md)。
 
 ```bash
 python3 -m pip install -r requirements-review.txt

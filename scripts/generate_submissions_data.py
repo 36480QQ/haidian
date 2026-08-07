@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Generate the static proposal gallery data file.
 
-Participants should not edit `submissions-data.js` directly. Repository intake
-and public exhibition are separate decisions: only proposals explicitly approved
-in `gallery-publication.json` are included in the generated gallery data.
+Participants should not edit `submissions-data.js` directly. Every proposal
+directory merged into the main branch is included by default. Maintainers run
+this script after merging or updating submission packages so the static site can
+display them from a single generated data source. `gallery-publication.json`
+remains an optional curation layer for homepage features or an explicit hold.
 """
 
 from __future__ import annotations
@@ -16,6 +18,7 @@ import re
 import sys
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 
 PUBLICATION_FILE = "gallery-publication.json"
@@ -261,7 +264,7 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
     proposal_html = submission_dir / "report" / "proposal.html"
     visual_html = submission_dir / "visual" / "index.html"
     proposal_url = (
-        f"{rel_dir}/report/proposal.html"
+        f"proposal-view.html?proposal={quote(rel_dir, safe='/')}"
         if proposal_html.exists()
         else f"{rel_dir}/proposal.md"
     )
@@ -398,17 +401,20 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
     for path in discover_submissions(repo_root):
         rel = path.relative_to(repo_root).as_posix()
         publication = registry.get(rel, {})
-        # Repository intake is intentionally broad; public exhibition is strict.
-        # Missing registry entries and published=false both remain repository-only.
-        if publication.get("published") is not True:
+        # A merged proposal is public by default. A full registry entry with
+        # published=false is an explicit maintainer hold; published=true keeps
+        # the stricter package/version checks and may opt the item into the
+        # homepage feature set.
+        if publication and publication.get("published") is False:
             continue
-        manifest = read_json(path / "manifest.json")
-        status_key = classify_submission(path, manifest)
-        if status_key != "formal_review_ready":
-            raise SystemExit(
-                f"{PUBLICATION_FILE}: cannot publish {rel} with generated status {status_key}; "
-                "repair and re-run the full maintainer review first"
-            )
+        if publication.get("published") is True:
+            manifest = read_json(path / "manifest.json")
+            status_key = classify_submission(path, manifest)
+            if status_key != "formal_review_ready":
+                raise SystemExit(
+                    f"{PUBLICATION_FILE}: cannot publish {rel} with generated status {status_key}; "
+                    "repair and re-run the full maintainer review first"
+                )
         items.append(build_item(repo_root, path, publication))
     return sorted(items, key=lambda item: (item.get("date") or "", item.get("id") or ""), reverse=True)
 
