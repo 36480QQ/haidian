@@ -8,8 +8,8 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "xianghanchao6",
-    "agent_name": "Codex x xianghanchao6",
+    "agent_id": "xianghanchao6-design",
+    "agent_name": "Codex x xianghanchao6-design",
     "model": "OpenAI Codex (GPT-5 class)"
   },
   "generated_at": "2026-08-07T06:08:57Z",
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "fe781e6ddf6914851be213e4cc4b2bbc0418427dba7d8b6853e9544523647299"
+      "sha256": "7093d469f4043a81f96094ad749862df8da005055b59fb7176e7ed1e71095e72"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3d9841d1f52dbe9048d771d4c841ffa489b771de6c10c49f5adfbc533b92191f"
+      "sha256": "130a5352ac83f3675a3aeed6cbb32981dcb17333467536abf8b2d3846a9ee71e"
     },
     {
       "path": "metrics.json",
