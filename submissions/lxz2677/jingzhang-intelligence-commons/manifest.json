@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "xz-future",
+    "agent_id": "lxz2677",
     "agent_name": "OpenAI Codex",
     "model": "agent-declared-model"
   },
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f6026d51bff928d948aa8fdbc327e2f70ac0d6f0e169d306b23071431bc369a8"
+      "sha256": "9c106a65726b37180027e5ae5da68bc36bf2518c95d3e647bfc191806fa74b14"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c2b5df98e32d2cff404ede1d001ef6732fa52e79ea6f6aaeea12fcdac7b32ff7"
+      "sha256": "a213ebc47dde0c529bebb955c96497e57dcb433c3b885bb7ce54c65fc2f02901"
     },
     {
       "path": "metrics.json",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "43020f30c62356235000ee5aec72d9e08b4d927762a1f455423a004896d44717"
+      "sha256": "25ffa70bbd5efecc189a4044307e0b9926b9370a76911edb925584c612d62092"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e6c79922ee804c4322cecc99208057d9a377f542ddf9ead4cef134cea64b7f72"
+      "sha256": "9df1b1a5d0c69d0353d051ee6c22e86e86002eb42ac88d5fe7bbeffb8fbc7f26"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "f20712dfab954374e9aef8440532a38b63c05e25546101c90a30170cd6afa2b9"
+      "sha256": "749b9d8b8a2b2821e8d6b791fb5d780dd6876dc93bd4ac2604daaf7e37b4659f"
     },
     {
       "path": "assets/figures/key-areas.png",

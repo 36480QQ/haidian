@@ -1,6 +1,6 @@
 ---
 title: "京张智脉·共生智廊｜Jing-Zhang Intelligence Commons"
-author_github: "xz-future"
+author_github: "lxz2677"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为公共智脉，以三处重点区为创新锚点，将高校策源、开源协作、产业验证、居民日常与全球活动组织成一条可验证、可审计、可持续运营的 AI 城市共生廊道。"
