@@ -7,7 +7,7 @@
       "id": "CONSTR-HERITAGE-SPINE",
       "properties": {
         "id": "CONSTR-HERITAGE-SPINE",
-        "layer": "CONSTRAINT",
+        "layer": "HERITAGE_PROTECTION",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
@@ -51,7 +51,7 @@
       "id": "CONSTR-GREEN-BLUE",
       "properties": {
         "id": "CONSTR-GREEN-BLUE",
-        "layer": "CONSTRAINT",
+        "layer": "REGULATORY_CONTROL",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
@@ -94,7 +94,7 @@
       "id": "CONSTR-PROVISIONAL-BOUNDARY-NOTE",
       "properties": {
         "id": "CONSTR-PROVISIONAL-BOUNDARY-NOTE",
-        "layer": "CONSTRAINT",
+        "layer": "REGULATORY_CONTROL",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
