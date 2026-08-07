@@ -382,39 +382,6 @@
    "confidence": "medium",
    "assumptions": []
   },
-  "human_review_field_completeness_ratio": {
-   "status": "known",
-   "value": 1.0,
-   "unit": "ratio",
-   "source_files": [
-    "visual/assets/governance-ledger.json"
-   ],
-   "formula": "count(scenarios with non-empty review_accept field)/scenario_node_count — 设计完备率，非运行实测",
-   "confidence": "medium",
-   "assumptions": []
-  },
-  "no_ai_alternative_field_completeness_ratio": {
-   "status": "known",
-   "value": 1.0,
-   "unit": "ratio",
-   "source_files": [
-    "visual/assets/governance-ledger.json"
-   ],
-   "formula": "count(scenarios with non-empty alt field)/scenario_node_count — 设计完备率，非运行实测",
-   "confidence": "medium",
-   "assumptions": []
-  },
-  "appeal_channel_field_completeness_ratio": {
-   "status": "known",
-   "value": 1.0,
-   "unit": "ratio",
-   "source_files": [
-    "visual/assets/governance-ledger.json"
-   ],
-   "formula": "count(scenarios where stop_chain contains 申诉)/scenario_node_count — 设计完备率，非运行实测",
-   "confidence": "medium",
-   "assumptions": []
-  },
   "renewal_project_count": {
    "status": "known",
    "value": 18,
