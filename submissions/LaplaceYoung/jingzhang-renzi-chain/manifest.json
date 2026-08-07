@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9dd4db822f41d81583b1592a18835714ec9b0303008e6df9ff4678be4d046b5a"
+      "sha256": "154be59b04b626b003221d72c067ceeb04a3541949581ba1161cc79d1ac1df61"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "53de6d35c87bfb1b4ed51b7556d5edf17c540315aaf4f70150eb773a03fd4181"
+      "sha256": "322da0cb8236b0eb7cba69fb5d6631d8b24c3f611ec4e72122eaf57a0a89d925"
     },
     {
       "path": "report/narrative.md",
@@ -89,25 +89,25 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "83fc7433cf3a7d94af2e487c21e6de316c9c900642c748638d25692a257e1b62"
+      "sha256": "2a5f8e613a62bcb5f1c1b58409d2a3938473c2027e654e2b92b9aef166abea31"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "d5a9bac9ef5c0f606bdeae6b09917193fe1c71b31422f320a6c05edc74f35488"
+      "sha256": "e89f2103999842a4606301860b036a3f9a6e03623a21b2b7ef6cd560c4234aa7"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "8da3991bd12ee76f97cb1ec14af146789ad700034c5e50bce5ed43fc713604e4"
+      "sha256": "bd39a1c45d21cbd8d36edd5e7acc1ed67c2d4d470194a0e378a3f40587c3315a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "9ee0566c9f57c92e6537cd6ec88cb4af770922d95e10fc492765537e1fac4722"
+      "sha256": "41035a69b982d381f0867fe0da623abe77080d42b26c7b6d3344723f3a7af89e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d3d924afc906c09b28a2b73bb33a6e8bd24144e15abc69afcee9c1c38b7e8356"
+      "sha256": "48d42956173d8ad98b42036ab12fe093f4f563d010c7520b200bb7829f51efba"
     },
     {
       "path": "assets/logo.svg",
@@ -228,7 +228,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "note": "v2.1（经多轮迭代）：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
+    "note": "v3.1（经多轮迭代）：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
   },
   "submission_timestamp": "2026-08-08T03:00:00Z"
 }

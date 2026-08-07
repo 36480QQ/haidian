@@ -9,6 +9,6 @@
 5. **离线要求**：`visual/index.html` 与 `report/proposal.html` 均为离线静态文件，不加载任何远程资源。
 6. **学术与专业文献**：v0.4 起新增引用的学术期刊/专业文件（sources.json 中 `usable_for_formal=background_only` 条目）仅作概念与治理机制支撑，不构成官方数据、面积或控规依据；图面文字使用系统字体渲染、不内嵌不随包分发；Logo 为自绘方向建议，未注册商标、不主张商标权。
 7. **AI生成标识（合规承诺）**：本方案全部AI生成图形（`assets/figures` 五图与 `drawings` 图纸）均标注显式「AI生成·概念示意」标识；创作过程记录（提示词版本、参数、迭代筛选与人工修改记录）留存备查，隐式标识元数据在数字发布版随文件属性提供，并配合传播平台按《人工智能生成合成内容标识办法》（2025年9月1日施行）完成核验。
-8. **逐资产权利台账**：详见 proposal.md「风险、版权与合规说明」章（5图/Logo与结构化资产/图纸与HTML/GeoJSON/学术文献/OSM/正文引用文本八类资产的权利状态与许可）。
+8. **逐资产权利台账**：详见 proposal.md「风险、版权与合规说明」章逐资产权利台账（8行：5图/Logo双版/场景卡与组件库JSON/图纸与HTML/GeoJSON/学术文献/OSM/正文引用文本，权利状态与许可逐项登记）。
 
 如对素材来源有疑问，可对照 `sources.json`、`assumptions.json` 与 `brief/site-package/missing-data.md` 核查。
