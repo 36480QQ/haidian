@@ -240,6 +240,10 @@ python3 scripts/auto_review_queue.py --limit 10 --apply --admin-merge
 PR 不调用模型；draft 不进入队列。合并仅表示仓库 intake，展示、精选、正式评分与
 实施决定继续由 `gallery-publication.json` 的独立流程控制。
 
+`submission-validation` 成功时会自动清除旧的 CI/修改/低质量标签并添加
+`review/queued`；投稿人推送修订后无需维护者手动重新排队。CI 失败时 workflow
+移除 queued 并添加 `review/ci-failed`，因此不会产生付费模型调用。
+
 审计材料保存在 `.maintainer-review/queue/pr-<number>/<head-sha>/`，worktree 默认在
 `.pr-worktree/auto-review/` 并在单稿完成后删除。建议用 launchd/systemd timer 每
 5–10 分钟运行一次，并以进程锁保证同一时间只有一个 worker。执行账号应使用
