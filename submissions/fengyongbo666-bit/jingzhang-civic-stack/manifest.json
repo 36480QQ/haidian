@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-07T16:20:29Z",
+  "generated_at": "2026-08-07T17:19:11Z",
   "files": [
     {
       "path": "manifest.json",
@@ -95,13 +95,13 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "194887ba162a02b3b7c1b20c3e6ded79ae14b66ca3e3d88571c89dafe71e861f"
+      "sha256": "d5679582b24b143e446c1514c2e9e618f003ac5e8527d517914465f7bed7e079"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "963052a31cb6c80fd6a38542e2414b753f756df382b073224d6efabbf4da5d92"
+      "sha256": "f083868a9af7df25ad81b78a3179ae4875aca7b82bf2979b6b5ee66e69b78332"
     },
     {
       "path": "visual/index.html",
@@ -113,31 +113,31 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "adb3e9cecdb26022c70c307d4cdcdcc6aff31b63d76b3ee684f6ca0bae5f5d1f"
+      "sha256": "1fd07522a2e87ebc7e37d67c98932763008ba0a8a00274eba3d4bfdcaab9b0e1"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "6c5001958a9daa20356814bdeaada29355200c8aee275713e69674c642567eff"
+      "sha256": "7769745657d5cdf09b8b9b7d0b39ab9bd2dfd60c4862a37f2564e9f787175c86"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "921076492d837f3f59d624e9720ed59aee4398296fb6825698265d03d52bf322"
+      "sha256": "8e223c6ec0b705cd7c8145795bf2489b63a945e88883bb82f26aea684daefc04"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "4fa864fc26c47187d7fabb13d459d833b4aeb0850b753162de4191679bb019bd"
+      "sha256": "2c334e0e18477586e12d6d0b16d0999602886dea3a994a3dfee6ed2bcf2c7208"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "383b63a3aa113de8cb18ce195df89d45f6d63df447249acfe60a801e3a9e669c"
+      "sha256": "5208ddf39eaac01e906e46a4e57a612ea9ca253e186196add3795a174cd247a6"
     },
     {
       "path": "geometry/buildings.geojson",
