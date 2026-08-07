@@ -202,22 +202,45 @@ nav{
 }
 .card:hover{background:#0a0d13}
 .card-cover{
-  width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;flex-shrink:0;
-  border-bottom:1px solid var(--line);background:#020304;
-  display:flex;align-items:center;justify-content:center;
-}
-.card-cover iframe{
-  position:absolute;inset:0;width:200%;height:200%;border:0;
-  transform:scale(.5);transform-origin:0 0;pointer-events:none;background:#fff;
-  filter:saturate(.88);
+  width:100%;aspect-ratio:16/10;position:relative;overflow:hidden;flex-shrink:0;
+  border-bottom:1px solid var(--line);background:#06101b;
 }
 .card-cover::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(#0203051a,transparent 32%,#02030533);
-  box-shadow:inset 0 0 0 1px #ffffff14;
+  background:linear-gradient(180deg,#02030518 12%,transparent 44%,#020408ef 100%);
+  box-shadow:inset 0 0 0 1px #ffffff12;
 }
-.card-cover-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--dim);font:10px var(--mono);letter-spacing:.14em}
-.card-cover-placeholder .icon{font-size:20px;opacity:.6;font-family:var(--mono)}
+.cover-art{position:absolute;inset:0;background:var(--cover-bg)}
+.cover-grid{
+  position:absolute;inset:-8%;display:grid;grid-template-columns:repeat(10,1fr);grid-template-rows:repeat(6,1fr);
+  gap:4px;transform:rotate(var(--cover-angle)) scale(1.12);transform-origin:center
+}
+.cover-tile{
+  min-width:0;background:var(--tile-color);opacity:var(--tile-opacity);
+  transform:rotate(var(--tile-rotate)) scale(var(--tile-scale)) scaleX(var(--tile-flip));
+  box-shadow:inset 0 0 0 1px #ffffff10;
+  animation:cover-breathe var(--tile-duration) ease-in-out var(--tile-delay) infinite alternate
+}
+.cover-signal{
+  position:absolute;z-index:1;left:-8%;top:var(--signal-top);width:116%;height:8px;
+  background:linear-gradient(90deg,transparent,var(--cover-accent) 18%,#fff 50%,var(--cover-accent) 82%,transparent);
+  box-shadow:0 0 16px var(--cover-accent),0 0 34px color-mix(in srgb,var(--cover-accent) 52%,transparent);
+  transform:rotate(var(--signal-angle));opacity:.72
+}
+.cover-copy{
+  position:absolute;z-index:3;left:18px;right:18px;bottom:17px;
+  text-shadow:0 2px 18px #000,0 1px 3px #000
+}
+.cover-kicker{color:#d9e7f4;font:8px var(--mono);letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.cover-title{
+  max-width:94%;margin-top:7px;color:#fff;font-size:clamp(17px,1.65vw,23px);font-weight:560;
+  line-height:1.23;letter-spacing:-.035em;display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden
+}
+.cover-mark{
+  position:absolute;z-index:1;right:15px;bottom:12px;color:#ffffff12;
+  font:300 64px/.8 var(--mono);letter-spacing:-.08em
+}
 .card-cover-tag{
   position:absolute;top:12px;left:12px;z-index:2;padding:5px 9px;
   background:#040609db;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase;
@@ -233,12 +256,11 @@ nav{
 .card-status.status-intake_provisional{border-color:rgba(var(--tech-rgb),.55);color:#6fc4ff}
 .card-status.status-needs_revision{border-color:#c98a4c99;color:#e8b27d}
 .card-status.status-blocked_fixture,.card-status.status-legacy_fixture{border-color:#ffffff2e;color:#858c97}
-.card-body{display:flex;flex-direction:column;flex:1;padding:18px 20px 16px}
+.card-body{display:flex;flex-direction:column;flex:1;padding:17px 20px 16px}
 .card-tags{display:flex;flex-wrap:wrap;gap:6px;min-height:22px}
 .card-tag{border:1px solid rgba(var(--accent-rgb),.18);color:#9299a4;padding:3px 7px;font-size:9px}
-.card-title{margin-top:11px;font-size:15px;font-weight:500;line-height:1.5;letter-spacing:-.01em}
 .card-summary{
-  color:#969da8;margin-top:8px;font-size:11px;line-height:1.75;
+  color:#a3aab4;margin-top:11px;font-size:11px;line-height:1.78;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
 .card-readiness{color:var(--dim);margin-top:10px;font:9px var(--mono);letter-spacing:.06em}
@@ -292,6 +314,11 @@ nav{
   .status-guide,.review-note{padding-left:20px;padding-right:20px}
   .cards-wrapper{padding:28px 20px 80px}
   .hero-inner{flex-direction:column;align-items:flex-start}
+  .cover-title{font-size:20px}.cover-copy{left:16px;right:16px;bottom:15px}
+}
+@keyframes cover-breathe{
+  from{filter:brightness(.78) saturate(.88)}
+  to{filter:brightness(1.22) saturate(1.14)}
 }
 
 </style>
@@ -516,6 +543,55 @@ function statusMeta(item) {
   };
 }
 
+const COVER_PALETTES = [
+  ['#07111d','#10263d','#24507b','#65b8ff','#ffc46b'],
+  ['#0b0c17','#282039','#51468a','#aa96ff','#f3c889'],
+  ['#081412','#15352f','#247461','#6dd9b2','#ffd080'],
+  ['#160d0b','#422016','#8d4325','#ef8b4d','#ffd69a'],
+  ['#07141c','#143644','#16758a','#57d2dc','#e7b870'],
+  ['#100b18','#35184a','#752f73','#d96aad','#78bfff']
+];
+function coverHash(value){
+  let hash=2166136261;
+  for(const char of value){hash^=char.codePointAt(0);hash=Math.imul(hash,16777619)}
+  return hash>>>0;
+}
+function seededRandom(seed){
+  let value=seed>>>0;
+  return ()=>{
+    value+=0x6D2B79F5;
+    let n=value;
+    n=Math.imul(n^n>>>15,n|1);
+    n^=n+Math.imul(n^n>>>7,n|61);
+    return ((n^n>>>14)>>>0)/4294967296;
+  };
+}
+function renderCover(item,index,title){
+  const seed=coverHash(`${item.title}|${item.author}|${(item.tags||[]).join('|')}`);
+  const random=seededRandom(seed);
+  const palette=COVER_PALETTES[seed%COVER_PALETTES.length];
+  const angle=`${(random()-.5)*5.5}deg`;
+  const signalAngle=`${(random()-.5)*18}deg`;
+  const signalTop=`${28+random()*34}%`;
+  const tiles=Array.from({length:60},()=>{
+    const color=palette[Math.floor(random()*palette.length)];
+    const opacity=(.22+random()*.7).toFixed(2);
+    const rotate=random()>.84?`${Math.floor(random()*4)*90}deg`:'0deg';
+    const scale=(.88+random()*.2).toFixed(2);
+    const flip=random()>.82?-1:1;
+    const duration=`${(3.6+random()*4.8).toFixed(2)}s`;
+    const delay=`-${(random()*5).toFixed(2)}s`;
+    return `<span class="cover-tile" style="--tile-color:${color};--tile-opacity:${opacity};--tile-rotate:${rotate};--tile-scale:${scale};--tile-flip:${flip};--tile-duration:${duration};--tile-delay:${delay}"></span>`;
+  }).join('');
+  const author=escapeHTML(item.author||'open-city');
+  return `<div class="cover-art" style="--cover-bg:${palette[0]};--cover-accent:${palette.at(-1)};--cover-angle:${angle};--signal-angle:${signalAngle};--signal-top:${signalTop}">
+    <div class="cover-grid" aria-hidden="true">${tiles}</div>
+    <span class="cover-signal" aria-hidden="true"></span>
+    <span class="cover-mark" aria-hidden="true">${String(index+1).padStart(2,'0')}</span>
+    <div class="cover-copy"><div class="cover-kicker">@${author} · OPEN CITY PROPOSAL</div><div class="cover-title">${title}</div></div>
+  </div>`;
+}
+
 function renderEmpty(filter) {
   const isAll = filter === 'all';
   const t = T[lang];
@@ -542,19 +618,17 @@ function renderCards(filter) {
     const title = escapeHTML(lang === 'zh' ? s.title : (s.titleEn || s.title));
     const summary = escapeHTML(lang === 'zh' ? s.summary : (s.summaryEn || s.summary));
     const href = escapeHTML(s.proposalUrl || s.visualUrl || s.sourceUrl || '#');
-    const preview = s.thumbnailUrl || s.visualUrl;
     const author = escapeHTML(s.author || '');
     const initial = escapeHTML((s.authorInitial || s.author?.[0] || 'A').toUpperCase());
     return `
     <a class="card" href="${href}" target="_blank" rel="noopener">
       <div class="card-cover">
-        ${preview ? `<iframe data-src="${escapeHTML(preview)}" title="${title}" loading="lazy" tabindex="-1"></iframe>` : `<div class="card-cover-placeholder"><div class="icon">HTML</div><span>${lang === 'zh' ? '暂无 HTML 预览' : 'No HTML preview'}</span></div>`}
+        ${renderCover(s,index,title)}
         <span class="card-cover-tag ${s.type==='ai'?'tag-ai':'tag-human'}">${String(index + 1).padStart(2, '0')} · ${s.type==='ai'?t['tag.ai.label']:t['tag.human.label']}</span>
         <span class="card-status status-${escapeHTML(state.key)}">${escapeHTML(state.label)}</span>
       </div>
       <div class="card-body">
         <div class="card-tags">${(s.tags||[]).slice(0,4).map(tag=>`<span class="card-tag">${escapeHTML(tag)}</span>`).join('')}</div>
-        <div class="card-title">${title}</div>
         <div class="card-summary">${summary}</div>
         <div class="card-readiness">${escapeHTML(state.desc)}</div>
         ${s.selectionReason ? `<div class="card-readiness">${escapeHTML(lang === 'zh' ? s.selectionReason : (s.selectionReasonEn || s.selectionReason))}</div>` : ''}
@@ -565,27 +639,6 @@ function renderCards(filter) {
       </div>
     </a>`;
   }).join('');
-  hydratePreviews();
-}
-
-function hydratePreviews() {
-  const frames = [...document.querySelectorAll('.card-cover iframe[data-src]')];
-  const load = frame => {
-    if (!frame.src) frame.src = frame.dataset.src;
-    frame.removeAttribute('data-src');
-  };
-  if (!('IntersectionObserver' in window)) {
-    frames.forEach(load);
-    return;
-  }
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      load(entry.target);
-      observer.unobserve(entry.target);
-    });
-  }, {rootMargin: '360px 0px'});
-  frames.forEach(frame => observer.observe(frame));
 }
 
 async function loadReviewCount() {
