@@ -23,7 +23,7 @@
                       "path":  "proposal.md",
                       "role":  "narrative",
                       "required":  true,
-                      "sha256":  "d20d9c103acbf5c19f6eeb719a8068796bba1170080bf0de4cf2a7bbc90f3e35"
+                      "sha256":  "e68aff857825a652a400d7fef90a89411ae9d1e05203ec7fa30d40ba841d656f"
                   },
                   {
                       "path":  "agent.json",
@@ -77,7 +77,7 @@
                       "path":  "report/proposal.html",
                       "role":  "rendered_proposal_html",
                       "required":  true,
-                      "sha256":  "2bfdd8e51f894fec417630ccc4718141bcbf54d442fe93932f6f79446e9d3cc8"
+                      "sha256":  "92da1e11a149ad0f85558add6c0fc324b139c76adee32198e5ffdc64e690fe06"
                   },
                   {
                       "path":  "report/narrative.md",
@@ -95,49 +95,49 @@
                       "path":  "drawings/a3-booklet.pdf",
                       "role":  "drawing",
                       "required":  true,
-                      "sha256":  "305f10c5a8a037857cbf53a424f0a2f734c9007385a97be477fb2a38665cd365"
+                      "sha256":  "496dd58cb42de8301198f7091964d3a40e3599716b2208e7b5dee2aabedcbd53"
                   },
                   {
                       "path":  "drawings/a0-boards.pdf",
                       "role":  "drawing",
                       "required":  true,
-                      "sha256":  "b9c99c9c2b55abd254acba7bed736afeda37ab66b5b662acfba0d8a5d1cb5f9b"
+                      "sha256":  "c131b10244706aff483d5e065eb52d337d58031f54ccf1a5148f306dc6999d46"
                   },
                   {
                       "path":  "visual/index.html",
                       "role":  "visualization",
                       "required":  true,
-                      "sha256":  "66ec74062f5b79f6f75c2f348d48f10bf79c2dc62986daffa2564abc585814e5"
+                      "sha256":  "788d91fa8d584adcc3230bda69aa8f080bc731a3b324c5550179b064078e9862"
                   },
                   {
                       "path":  "assets/figures/key-areas.png",
                       "role":  "proposal_figure",
                       "required":  true,
-                      "sha256":  "973804be1277749399e418545ac4a0f5d9984b8ed815a4644d4054c1b09a13cf"
+                      "sha256":  "566f8154878771889aafb6c9df41c7cfdd3f62682a42ebb9064a312dbcb0236a"
                   },
                   {
                       "path":  "assets/figures/land-use-structure.png",
                       "role":  "proposal_figure",
                       "required":  true,
-                      "sha256":  "69a6a8b6499516e98bb5ec3b42372b7932fd140c8e71665cb9239f07363b4310"
+                      "sha256":  "d363f2329b840e058dc8e54b62f1b242d3e4a5362e1f2d53e58724a2cad8f268"
                   },
                   {
                       "path":  "assets/figures/metrics-evidence.png",
                       "role":  "proposal_figure",
                       "required":  true,
-                      "sha256":  "6a3a33b7bdb0d8a208de9ac2f3f26043119a43273fa262d173609d18f00644c8"
+                      "sha256":  "546ea07f2cf9a3eb85739787f7bbc241d4af04d1bfb9457ce0790c02b35bae01"
                   },
                   {
                       "path":  "assets/figures/mobility-bluegreen.png",
                       "role":  "proposal_figure",
                       "required":  true,
-                      "sha256":  "a5b497e3077d19042471d3db8ebd175677879044fb879af53ec5337612b08e64"
+                      "sha256":  "9a4a1be01ed4891bab79d91b19123b7d0b58ad28f62f414c4d3250aec1cbd4d7"
                   },
                   {
                       "path":  "assets/figures/site-overview.png",
                       "role":  "proposal_figure",
                       "required":  true,
-                      "sha256":  "8f829f6e6668d10e8e811d8cb4c094e7f586feaff4614e1c04420eb3a386e579"
+                      "sha256":  "2867165f105275521d3e101577c0cd5b3c7a2b192e1000aff83e7027c28eec36"
                   },
                   {
                       "path":  "geometry/buildings.geojson",
