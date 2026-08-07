@@ -6,7 +6,7 @@ license: "CC-BY-4.0"
 summary: "以1909年京张铁路人字形线路的爬坡智慧为总体概念，构建'一轴三站两翼'的空间-产业-文化结构：京张遗址公园人字轴主轴贯通南北，众智园、AI原点社区、大钟寺三站分别承担加速、策源、交汇职能，以12张AI场景卡、3处AI朝圣地标与年度活动体系支撑世界级AI创新带的概念方案。全部空间建议基于临时粗略边界，可供专业团队深化研究。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # 人字轴 REN AXIS——百年京张AI创新带城市设计方案
@@ -25,7 +25,7 @@ iteration: "v1.6"
 
 空间与数据底座来自站点资料包[source:SITE-PACKAGE]、公开资料登记表[source:SOURCE-REGISTRY]与第一批处理资料（事实包、范围摘要、任务索引、资料用途矩阵、缺资料清单）[source:PROCESSED-FACT-PACK]。产业背景参考海淀区"1+X+1"现代化产业体系公开发布[source:HAIDIAN-1X1]与"三区两翼"公开报道[source:THREE-AREAS-WINGS]；征集活动发布文章[source:OPEN-CALL-LAUNCH-ARTICLE]提供活动机制（Agent 评审、纪念体系、时间安排）的背景参照。三者均仅作背景语境，不用于空间控制结论。
 
-必须特别说明边界数据状态：本仓库尚未取得官方精确红线，本方案全部空间图层基于临时粗略边界 provisional_boundaries[source:PROVISIONAL-BOUNDARIES]生成，站点边界见 [data:geometry/site_boundary.geojson#PROV-SITE-001]，其属性已标注 geometry_role=provisional_constraint、official_boundary=false。该边界仅用于AI生成、可视化与提交自检，不得作为官方红线、审批依据或精确面积依据；官方多边形补齐后，本包全部面积类指标必须整体重算[depth:metrics_recalculation]。现状底图参照：按站点资料包数据政策许可，以 OSM 公开数据收录北三环、知春路、北四环、北五环、京藏高速、小月河、清河及京张高铁走廊（京包客专线）、13号线地面段等现状要素为 existing_condition 参照层[source:OSM-BASE][data:geometry/constraints.geojson#EX-OSM-01]（ODbL 署名见版权声明），三条缝合走廊线位据此校核锚定；OSM 为社区数据、非测绘级精度，仅作现状语境，不用于红线或控制结论。资料与证据链的对应关系由 sources.json、assumptions.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 承载，正文各章以 [source:]、[standard:]、[depth:]、[data:]、[metric:] 标签逐项回引。
+必须特别说明边界数据状态：本仓库尚未取得官方精确红线，本方案全部空间图层基于临时粗略边界 provisional_boundaries[source:PROVISIONAL-BOUNDARIES]生成，站点边界见 [data:geometry/site_boundary.geojson#PROV-SITE-001]，其属性已标注 geometry_role=provisional_constraint、official_boundary=false。该边界仅用于AI生成、可视化与提交自检，不得作为官方红线、审批依据或精确面积依据；官方多边形补齐后，本包全部面积类指标必须整体重算[depth:metrics_recalculation]。现状底图参照：按站点资料包数据政策许可，以 OSM 公开数据收录北三环、知春路、北四环、北五环、京藏高速、小月河、清河及京张高铁走廊（京包客专线）、13号线地面段等现状要素为 existing_condition 参照层[source:OSM-BASE][data:geometry/constraints.geojson#EX-OSM-01]（ODbL 署名见版权声明），三条缝合走廊线位据此校核锚定；另收录16处高校校园与9处轨道站实测点位——因站点资料包图层枚举无教育/站点现状层，点位不写入 geometry/ 而存于生成管道存档（tools/osm_context.json），仅作图纸与可视化的展示层参照。OSM 为社区数据、非测绘级精度，仅作现状语境，不用于红线或控制结论。资料与证据链的对应关系由 sources.json、assumptions.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 承载，正文各章以 [source:]、[standard:]、[depth:]、[data:]、[metric:] 标签逐项回引。
 
 ## 二、三层范围工作框架
 
@@ -55,7 +55,7 @@ iteration: "v1.6"
 
 ## 四、总体设计范围城市更新与控规深度城市设计
 
-**现状诊断（基于公开资料的方法性诊断）**[depth:existing_conditions_diagnosis]：总体设计范围呈南北长约9.7公里、东西宽约1.2-1.3公里的带形城区，京张高铁入地后地面释放为线性公园。基于公告与公开资料可判断的结构性问题包括：其一，东西向被北三环、知春路、北四环等干道切割（三者线位已按 OSM 公开数据校核并收录为现状参照层，缝合走廊据此锚定[data:geometry/constraints.geojson#EX-OSM-01]），遗址公园慢行系统存在断点，公告1.5（2）明确要求"聚焦公园慢行系统断点，创新提出交通系统优化的解决方案"[source:OFFICIAL-ANNOUNCEMENT]；其二，带内存在低效楼宇与传统商贸设施，更新潜力空间分散，需要更新单元统筹；其三，校区、园区、街区之间存在管理边界，融合发展不足。由于缺乏经核验的现状建筑、权属与控规底数，本诊断为方法性框架，逐地块诊断需专业团队在官方资料基础上深化[source:SOURCE-REGISTRY]。
+**现状诊断（基于公开资料的方法性诊断）**[depth:existing_conditions_diagnosis]：总体设计范围呈南北长约9.7公里、东西宽约1.2-1.3公里的带形城区，京张高铁入地后地面释放为线性公园。基于公告与公开资料可判断的结构性问题包括：其一，东西向被北三环、知春路、北四环等干道切割（三者线位已按 OSM 公开数据校核并收录为现状参照层，缝合走廊据此锚定[data:geometry/constraints.geojson#EX-OSM-01]），遗址公园慢行系统存在断点，公告1.5（2）明确要求"聚焦公园慢行系统断点，创新提出交通系统优化的解决方案"[source:OFFICIAL-ANNOUNCEMENT]；其二，带内存在低效楼宇与传统商贸设施，更新潜力空间分散，需要更新单元统筹；其三，校区、园区、街区之间存在管理边界，融合发展不足——经 OSM 校核，临时带内及两缘实测分布约十所高校校园（北航、地质大学、北语、矿业大学、农大东校区、北科大、政法学院路校区、北邮、交大东校区等，即学院路高校群），校区园区街区融合的对象在现状中大量在场[source:OSM-BASE]。由于缺乏经核验的现状建筑、权属与控规底数，本诊断为方法性框架，逐地块诊断需专业团队在官方资料基础上深化[source:SOURCE-REGISTRY]。
 
 **总体空间结构**：形成"一轴、三站、两翼、三廊、多节点"。一轴即人字轴绿廊，公园绿地 1,888,822.057 平方米[metric:land_use_park_green_1401_sqm]沿轴连续布置[data:geometry/green_space.geojson#GRN-01]；三站即三处重点区[data:geometry/key_areas.geojson#PROV-KEY-001]；两翼即中关村科技服务翼（西）与小月河场景赋能翼（东）；三廊即北三环、知春路、北四环三处东西向缝合走廊（道路用地 204,153.554 平方米[metric:land_use_road_1207_sqm]）；多节点即12处AI场景节点与3处朝圣地标[metric:ai_landmark_count]。
 
@@ -73,7 +73,7 @@ iteration: "v1.6"
 
 **众智·加速站（众智园AI自主创新加速区，复算 1,929,201.877 平方米[metric:key_area_zhongzhiyuan_sqm]）**：定位为"更具智慧型与未来感的花园型人工智能创新街区"，承担AI全栈自主创新体系与AI治理全球话语权功能。空间结构为"西核东展、绿轴穿园"：西侧布置全栈创新实验组团[data:geometry/buildings.geojson#BLD-F1]与国家平台协同研发中心（概念），东侧布置AI标准与安全治理中心、智算服务与产业展示枢纽，人字轴绿廊纵贯其间并向北衔接清河文化与北五环防护绿带[data:geometry/land_use.geojson#LU-G-M]。建筑更新以存量园区提质与新组团植入并举，众智会堂·开源礼堂作为轴上公共建筑锚点。交通上提出众智园创新环路（概念微循环）[data:geometry/roads.geojson#RD-EW-6]并结合五环路区域一体化提出对外交通优化研究方向。公共空间以众智站前广场（全栈创新发布场）[data:geometry/public_space.geojson#PS-002]为核心。AI治理全球话语权的空间化建议：AI标准与安全治理中心承载模型安全评测与标准研制的日常功能，众智会堂作为年度国际AI治理对话与全球开发者大会的会址，与信号荣誉系统共同构成"评测—共识—荣誉"的治理功能组合（概念建议）。AI场景布置智能园艺与生态监测、自动驾驶接驳测试段、城市模型实测场三个节点。实施风险：用地权属与既有园区协调、生态空间与建设强度平衡、国家平台建设时序不确定，相关强度与高度指标均为待确认事项。
 
-**原点·策源站（北京AI原点社区，复算 1,043,236.909 平方米[metric:key_area_origin_community_sqm]）**：定位为"更具人才吸引力、创新活力、科技成果转化能力的近校型人工智能创新街区"。空间结构为"西转化、东生活、轴上开源"：西侧成果转化孵化区布置孵化组团[data:geometry/buildings.geojson#BLD-D1]与"开源之家·全球开发者驿站"，东侧人才生活区布置人才公寓组团与成果发布展示中心（概念）。建筑更新采取低扰动、有机更新模式，优先利用存量建筑改造。交通上提出校区园区连廊（概念步行优先街）[data:geometry/roads.geojson#RD-EW-5]，并围绕五道口、清华东路西口方向的轨道站点提出一体化设计研究（接驳通道概念线位见 [data:geometry/roads.geojson#RD-TC-2]）。公共空间以原点站前广场（开源社区场）[data:geometry/public_space.geojson#PS-003]与"梯度长阶"荣誉空间为核心。AI场景布置开源集市与发布日、机器人低速配送走廊等节点。实施风险：高校院所协调机制、人才公寓供给模式、既有社区利益平衡；拆改留分类仅为方法框架，逐栋结论须以现状调查与法定程序为准。
+**原点·策源站（北京AI原点社区，复算 1,043,236.909 平方米[metric:key_area_origin_community_sqm]）**：定位为"更具人才吸引力、创新活力、科技成果转化能力的近校型人工智能创新街区"。"近校"具备实测支撑：经 OSM 校核，临时范围内及紧邻地带分布地质大学、北语、北科大、矿业大学等校园，北航学院路校区在其南缘[source:OSM-BASE]。空间结构为"西转化、东生活、轴上开源"：西侧成果转化孵化区布置孵化组团[data:geometry/buildings.geojson#BLD-D1]与"开源之家·全球开发者驿站"，东侧人才生活区布置人才公寓组团与成果发布展示中心（概念）。建筑更新采取低扰动、有机更新模式，优先利用存量建筑改造。交通上提出校区园区连廊（概念步行优先街）[data:geometry/roads.geojson#RD-EW-5]，并围绕五道口、清华东路西口方向的轨道站点提出一体化设计研究（接驳通道概念线位见 [data:geometry/roads.geojson#RD-TC-2]）。公共空间以原点站前广场（开源社区场）[data:geometry/public_space.geojson#PS-003]与"梯度长阶"荣誉空间为核心。AI场景布置开源集市与发布日、机器人低速配送走廊等节点。实施风险：高校院所协调机制、人才公寓供给模式、既有社区利益平衡；拆改留分类仅为方法框架，逐栋结论须以现状调查与法定程序为准。
 
 **大钟·交汇站（大钟寺AI产业聚集区，复算 720,454.219 平方米[metric:key_area_dazhongsi_sqm]）**：定位为"更具世界影响力、城市发展活力的城市型人工智能创新街区"，承担智能原生新业态功能。空间结构为"站前广场+双组团"：大钟寺交汇站广场[data:geometry/land_use.geojson#LU-B-M]作为智能原生消费展场，西侧智能终端旗舰体验群、东侧智能体经济企业总部群（概念）[data:geometry/buildings.geojson#BLD-B2]与数据要素服务中心，探索数据要素与数字资产流通机制的空间载体。建筑更新以传统商贸载体功能置换为主。交通上落实公告要求，提出大钟寺站四象限步行连通[data:geometry/roads.geojson#RD-EW-1]、站城一体接驳设施（概念）[data:geometry/buildings.geojson#BLD-B4]与非机动车停放组织。公共空间结合规划绿地复合利用。AI场景布置企业服务Copilot驿站、夜间活力与安全照护节点。实施风险：大钟寺古钟博物馆文保约束（本方案地标与更新建议均避让文保范围并仅作概念表达）、三环沿线交通压力、商贸业态转型的市场不确定性[depth:retain_renovate_demolish]。
 
@@ -114,7 +114,7 @@ iteration: "v1.6"
 
 **道路微循环与慢行网络**[depth:traffic_rail_slow_parking]：方案慢行与接驳网络总长 34,410.544 米[metric:road_network_length_m][data:geometry/roads.geojson#RD-SPINE]，由人字轴漫步道（贯通南北的绿道主轴，同时作为面向全球开发者的"开发者散步道"）、东西两翼骑行联络线、三处东西向缝合段（北三环下穿或过街改善、知春路过街优化、北四环学院桥绿桥，均为概念工程界面，工程可行性须专业论证）、站前步行连通与微循环环路构成。公告要求的"慢行系统断点创新解决方案"落实为：断点在本方案中概念设定为集中于三条缝合走廊[data:geometry/land_use.geojson#LU-R1-M]（实际断点分布待现状调查核实），以"绿桥、下穿、地面过街优化"三类并列备选策略构成研究组合，三条走廊各自比选、不预设选型，本方案不构成桥隧可行性结论。东西向连通在三廊主通道之外，依托现状支路网与道岔式接驳加密（概念方向，具体线位待现状路网核实），避免仅靠三廊导致的连通间距过大。
 
-**轨道站点一体化**：围绕大钟寺、五道口、清华东路西口等既有轨道站点（公开轨道网络常识，位置为示意）提出站城一体化研究：大钟寺站四象限步行连通[data:geometry/roads.geojson#RD-EW-1]与接驳设施[data:geometry/buildings.geojson#BLD-B4]、五道口方向与清华东路西口方向接驳通道概念线位[data:geometry/roads.geojson#RD-TC-3]。轨道线位与车站工程均非本方案结论，一体化范围与实施方式须与轨道运营主体及主管部门共同研究。
+**轨道站点一体化**：经 OSM 校核，临时带内实有西土城、蓟门桥、学院桥、六道口、学知园等轨道站点，带缘紧邻大钟寺、知春路、五道口、清华东路西口诸站[source:OSM-BASE]——站城一体化的现状基础比公告文字更丰厚，研究对象应从带缘三站扩展为"带内五站+带缘四站"的站群。围绕上述站点（站位为 OSM 实测参照，非测绘级）提出站城一体化研究：大钟寺站四象限步行连通[data:geometry/roads.geojson#RD-EW-1]与接驳设施[data:geometry/buildings.geojson#BLD-B4]、五道口方向与清华东路西口方向接驳通道概念线位[data:geometry/roads.geojson#RD-TC-3]。轨道线位与车站工程均非本方案结论，一体化范围与实施方式须与轨道运营主体及主管部门共同研究。
 
 **停车与静态交通**：提出站前立体非机动车停放设施、更新组团地下停车共享、路内泊位智能管理的概念方向；大钟寺地铁站周边非机动车停放组织为公告点名任务，建议结合四象限连通同步设计。
 
