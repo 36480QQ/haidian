@@ -16,7 +16,7 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     validate_submission,
 )
-from github_pr_validation import safe_manifest_paths  # noqa: E402
+from github_pr_validation import safe_manifest_paths, validation_paths_for  # noqa: E402
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -62,6 +62,20 @@ class ManifestHydrationTests(unittest.TestCase):
     def test_invalid_manifest_shapes_return_no_paths(self) -> None:
         self.assertEqual(set(), safe_manifest_paths([]))
         self.assertEqual(set(), safe_manifest_paths({"files": "not-a-list"}))
+
+    def test_maintainer_removals_are_not_revalidated_as_missing_files(self) -> None:
+        files = [
+            {"filename": "submissions/alice/design/proposal.md", "status": "removed"},
+            {"filename": "docs/note.md", "status": "modified"},
+        ]
+        self.assertEqual(["docs/note.md"], validation_paths_for(files, True))
+
+    def test_participant_removals_remain_in_validation_scope(self) -> None:
+        files = [{"filename": "submissions/alice/design/proposal.md", "status": "removed"}]
+        self.assertEqual(
+            ["submissions/alice/design/proposal.md"],
+            validation_paths_for(files, False),
+        )
 
 
 REFERENCE_BLOCK = (

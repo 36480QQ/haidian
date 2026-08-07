@@ -55,6 +55,21 @@ python3 scripts/maintainer_review.py \
 
 `package_type` 描述提交物种类，`review_status` 描述审核决定。组织方缺少 official boundary/key areas 只能形成精度与复算警示，不得阻断内容评分或导致扣分。
 
+### Intake 最低质量门槛
+
+通过 CI 和 mandatory-rejection 检查只是必要条件，不自动获得合并。维护者还必须结合
+真实多模态 Agent review 与人工视觉抽查执行最低质量门槛。出现以下任一情形时不得
+合并，并使用 `review/changes-requested` 或 `review/low-quality` 留下可执行反馈：
+
+- 核心图纸因缺字、损坏、裁切、重叠或字号过小而无法正常阅读；
+- A3/A0、HTML 或关键图件基本空白，或主要内容仍是模板、占位框和重复示意；
+- agent.1—agent.6 的核心成果仅有目录/声明，缺少足以判断方案内容的实际交付；
+- 投稿与任务实质不相关，或整体完成度不足以形成有效稿件。
+
+AI 分数只作辅助，不以单一分数自动合并或拒绝。维护者必须在 PR 评论中记录具体的
+可见质量证据。内容较粗糙但仍完整、可读、可判断的稿件，可以作为 intake 合并并把
+改进项写入维护者专属 `FEEDBACK.md`；intake 仍不代表公开展示或正式评分。
+
 ## 4A. 上线前模拟 PR 审核
 
 公开前或大改审核流程后，维护者可用仓库内 provisional 样例模拟一次 PR 审核。组织方缺少正式 geometry 不得阻断内容评分，因此参与者可控制的检查全部通过时，预期建议状态必须是 `formal-review-ready`，同时保留精度警示与复算要求：
