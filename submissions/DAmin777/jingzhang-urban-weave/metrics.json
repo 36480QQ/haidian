@@ -30,7 +30,7 @@
     },
     "land_use_total_area_sqm": {
       "status": "not_applicable",
-      "value": 11412064.761,
+      "value": 11412825.385,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -57,7 +57,7 @@
     },
     "land_use_coverage_ratio": {
       "status": "not_applicable",
-      "value": 0.999933354,
+      "value": 1.0,
       "unit": "ratio",
       "source_files": [
         "geometry/land_use.geojson",
@@ -292,7 +292,7 @@
     },
     "key_area_count": {
       "status": "known",
-      "value": 3,
+      "value": 3.0,
       "unit": "count",
       "source_files": [
         "geometry/key_areas.geojson"
@@ -315,7 +315,7 @@
     },
     "land_use_class_count": {
       "status": "not_applicable",
-      "value": 4,
+      "value": 4.0,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -342,7 +342,7 @@
     },
     "phase_count": {
       "status": "not_applicable",
-      "value": 3,
+      "value": 3.0,
       "unit": "count",
       "source_files": [
         "geometry/phasing.geojson"

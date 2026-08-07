@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "CONSTRAINTS",
+  "name": "candidate_analysis_constraints",
   "crs": {
     "type": "name",
     "properties": {
@@ -13,10 +13,10 @@
       "id": "CONSTRAINT-001",
       "properties": {
         "id": "CONSTRAINT-001",
-        "layer": "REGULATORY_CONTROL",
+        "layer": "HERITAGE_PROTECTION",
         "source_type": "agent_generated_design",
         "confidence": "low",
-        "geometry_role": "provisional_constraint",
+        "geometry_role": "analysis_helper",
         "official_boundary": false,
         "area_sqm_declared": 153648.113,
         "source_refs": [
@@ -41,14 +41,20 @@
             "A-PLANNING-CONTROLS-001"
           ]
         },
-        "constraint_type": "heritage_and_boundary_review_corridor",
-        "constraint_code": "HERITAGE_PROTECTION",
-        "constraint_status": "provisional_only",
+        "constraint_type": "heritage_candidate",
+        "constraint_code": "HERITAGE_CANDIDATE",
+        "constraint_status": "unknown",
         "provisional_only": true,
         "control_value_status": "unknown",
         "proposal_ref": "CONSTRAINTS",
-        "name_zh": "遗产叙事与边界复核廊道（临时）",
-        "usage_note": "仅表达待核验的方案关注带，不代表文保线、红线或法定控制地带。"
+        "name_zh": "遗产语境候选分析带（待核验）",
+        "usage_note": "仅表达待核验的 heritage candidate context；官方文保控制边界未提供，不代表文保线、红线或法定控制地带。",
+        "status": "unknown",
+        "boundary_precision": "provisional_rough",
+        "candidate_status": "待核验",
+        "official_heritage_boundary_provided": false,
+        "layer_semantics": "candidate_analysis",
+        "layer_usage": "candidate_only"
       },
       "geometry": {
         "type": "Polygon",

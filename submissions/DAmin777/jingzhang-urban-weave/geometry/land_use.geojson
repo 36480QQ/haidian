@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_shared_cut_provisional",
+  "name": "land_use_shared_cut_residual_provisional",
   "crs": {
     "type": "name",
     "properties": {
@@ -18,7 +18,7 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "area_sqm_declared": 2452128.817,
+        "area_sqm_declared": 1360257.526,
         "source_refs": [
           "SRC-BJ-THREE-ZONES"
         ],
@@ -42,8 +42,7 @@
         "land_use_code": "05",
         "name_zh": "混合服务织带",
         "category_label": "public_service/heritage",
-        "heritage_overlay": "heritage",
-        "topology_method": "shared_cut_partition_of_provisional_site",
+        "topology_method": "shared_cut_residual_difference_with_numeric_guard",
         "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
@@ -51,36 +50,24 @@
         "coordinates": [
           [
             [
-              116.33970040035814,
-              39.97499999266149
+              116.34382520804677,
+              39.93900015466055
             ],
             [
-              116.34170039917012,
-              40.00599997424709
+              116.3429876141433,
+              40.02650001528043
             ],
             [
-              116.34170039952494,
-              40.00599998051098
+              116.34462769098728,
+              40.026500088773034
             ],
             [
-              116.34270038096342,
-              40.0264996
+              116.34546319410178,
+              39.939000202072904
             ],
             [
-              116.34380040035813,
-              40.0264996
-            ],
-            [
-              116.34380040035813,
-              39.9390004
-            ],
-            [
-              116.34070038904318,
-              39.9390004
-            ],
-            [
-              116.33970040035814,
-              39.97499999266149
+              116.34382520804677,
+              39.93900015466055
             ]
           ]
         ]
@@ -96,7 +83,7 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "area_sqm_declared": 3402626.046,
+        "area_sqm_declared": 6296384.429,
         "source_refs": [
           "SRC-BJ-THREE-ZONES",
           "AGENT-TASKBOOK"
@@ -122,8 +109,7 @@
         "land_use_code": "0802",
         "name_zh": "创新研发织带",
         "category_label": "public_service/heritage",
-        "heritage_overlay": "heritage",
-        "topology_method": "shared_cut_partition_of_provisional_site",
+        "topology_method": "shared_cut_residual_difference_with_numeric_guard",
         "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
@@ -131,24 +117,24 @@
         "coordinates": [
           [
             [
-              116.34790040035814,
-              40.0264996
+              116.34546319410201,
+              39.939000202072904
             ],
             [
-              116.34790040035814,
-              39.9390004
+              116.34462769098754,
+              40.02650008877304
             ],
             [
-              116.34380040035813,
-              39.9390004
+              116.35221931286264,
+              40.02650012654309
             ],
             [
-              116.34380040035813,
-              40.0264996
+              116.3530451380734,
+              39.93900012005262
             ],
             [
-              116.34790040035814,
-              40.0264996
+              116.34546319410201,
+              39.939000202072904
             ]
           ]
         ]
@@ -164,7 +150,7 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "area_sqm_declared": 3402622.779,
+        "area_sqm_declared": 2125718.888,
         "source_refs": [
           "SRC-BJ-JINGZHANG-PARK"
         ],
@@ -188,8 +174,7 @@
         "land_use_code": "1401",
         "name_zh": "蓝绿开放织带",
         "category_label": "public_service/heritage",
-        "heritage_overlay": "heritage",
-        "topology_method": "shared_cut_partition_of_provisional_site",
+        "topology_method": "shared_cut_residual_difference_with_numeric_guard",
         "statutory_status": "provisional_design_partition_only"
       },
       "geometry": {
@@ -197,24 +182,40 @@
         "coordinates": [
           [
             [
-              116.35200040035814,
-              40.0264996
+              116.34070000000014,
+              39.93900000000009
             ],
             [
-              116.35200040035814,
-              39.9390004
+              116.33970000000012,
+              39.97499999999999
             ],
             [
-              116.34790040035814,
-              39.9390004
+              116.34170000000012,
+              40.006
             ],
             [
-              116.34790040035814,
-              40.0264996
+              116.34170000000012,
+              40.006
             ],
             [
-              116.35200040035814,
-              40.0264996
+              116.34170000000012,
+              40.00600000000001
+            ],
+            [
+              116.34270000000011,
+              40.02649999999991
+            ],
+            [
+              116.34298761414307,
+              40.02650001528043
+            ],
+            [
+              116.34382520804654,
+              39.93900015466055
+            ],
+            [
+              116.34070000000014,
+              39.93900000000009
             ]
           ]
         ]
@@ -230,7 +231,7 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "official_boundary": false,
-        "area_sqm_declared": 2154687.119,
+        "area_sqm_declared": 1630464.542,
         "source_refs": [
           "SRC-BJ-JINGZHANG-PARK"
         ],
@@ -254,45 +255,56 @@
         "land_use_code": "0803",
         "name_zh": "公共服务与文化遗产接口",
         "category_label": "public_service/heritage",
-        "heritage_overlay": "heritage",
-        "topology_method": "shared_cut_partition_of_provisional_site",
-        "statutory_status": "provisional_design_partition_only"
+        "heritage_overlay": "candidate_heritage_context",
+        "topology_method": "shared_cut_residual_difference_with_numeric_guard",
+        "statutory_status": "provisional_design_partition_only",
+        "heritage_context_status": "unverified",
+        "heritage_boundary_status": "not_provided",
+        "usage_note": "官方文保控制边界未提供；仅作待核验的 heritage context，不代表官方文保事实。"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35529957748216,
-              40.0264996
+              116.35304513807365,
+              39.93900012005262
             ],
             [
-              116.35329960059914,
-              39.99000002188498
+              116.35221931286289,
+              40.02650012654309
             ],
             [
-              116.35329960127389,
-              39.98999996810191
+              116.35529999999987,
+              40.026499999999906
             ],
             [
-              116.3552996,
-              39.96499998402553
+              116.35329999999988,
+              39.99000000000001
             ],
             [
-              116.3552996,
-              39.9390004
+              116.35329999999988,
+              39.99000000000001
             ],
             [
-              116.35200040035814,
-              39.9390004
+              116.35329999999988,
+              39.989999999999995
             ],
             [
-              116.35200040035814,
-              40.0264996
+              116.35329999999988,
+              39.989999999999995
             ],
             [
-              116.35529957748216,
-              40.0264996
+              116.35529999999987,
+              39.964999999999996
+            ],
+            [
+              116.35529999999987,
+              39.939000000000085
+            ],
+            [
+              116.35304513807365,
+              39.93900012005262
             ]
           ]
         ]
