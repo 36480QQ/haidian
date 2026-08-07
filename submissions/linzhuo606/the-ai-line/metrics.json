@@ -423,6 +423,59 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "现状建筑量底数需官方测绘或权属数据支撑，公开资料包中缺失。"
+    },
+    "tactile_guideway_length_m": {
+      "status": "known",
+      "value": 9715.9,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "EPSG4548_length(greenway centerline RD-13)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界(provisional_rough)计算，官方红线补齐后需整体复算。",
+        "导引带沿绿脊贯通道全线连续敷设并接入十二站站前广场，为概念线位。"
+      ]
+    },
+    "aps_intersection_count": {
+      "status": "known",
+      "value": 36,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(pairwise crossings of road centerlines)",
+      "confidence": "medium",
+      "assumptions": [
+        "概念路网内规划声响信号(APS)全覆盖的路口数；实际路口以道路红线与交通设计为准。"
+      ]
+    },
+    "refuge_island_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(arterial x north-south crossing points)",
+      "confidence": "medium",
+      "assumptions": [
+        "主干走廊过街处规划行人安全岛的概念数量；工程可行性待道路专项论证。"
+      ]
+    },
+    "tactile_model_node_count": {
+      "status": "known",
+      "value": 16,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "station_count + 4 complex-node models",
+      "confidence": "medium",
+      "assumptions": [
+        "12座车站触觉站区模型+原点全线沙盘+五环节点+大钟寺四象限+清华园车站共4处复杂节点模型；全部模型文件开源供3D打印。"
+      ]
     }
   }
 }

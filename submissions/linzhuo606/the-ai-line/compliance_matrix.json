@@ -78,7 +78,8 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "无障碍之线：来自盲人作者的六项第一性原则"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -86,7 +87,8 @@
       ],
       "metrics": [
         "green_ratio",
-        "public_space_ratio"
+        "public_space_ratio",
+        "tactile_guideway_length_m"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -94,14 +96,16 @@
       ],
       "visual_sections": [
         "蓝绿公共空间",
-        "AI 场景"
+        "AI 场景",
+        "无障碍之线"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
-        "A-SCENARIO-001"
+        "A-SCENARIO-001",
+        "A-ACCESS-001"
       ],
       "self_check_ids": [
         "METRICS_RECALC"
@@ -345,7 +349,8 @@
       "title_zh": "总体设计范围：交通轨道市政配套设施",
       "mandatory": true,
       "report_sections": [
-        "交通、轨道、市政与公共服务设施"
+        "交通、轨道、市政与公共服务设施",
+        "无障碍之线：来自盲人作者的六项第一性原则"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -353,20 +358,24 @@
       ],
       "metrics": [
         "road_land_area_sqm",
-        "road_area_ratio"
+        "road_area_ratio",
+        "aps_intersection_count",
+        "refuge_island_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "交通慢行"
+        "交通慢行",
+        "无障碍之线"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "assumption_ids": [
-        "A-ROADS-001"
+        "A-ROADS-001",
+        "A-ACCESS-001"
       ],
       "self_check_ids": [
         "SPATIAL_REVIEW"
@@ -647,7 +656,8 @@
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "report_sections": [
-        "AI 创新生态、人才画像与 AI+ 场景"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "无障碍之线：来自盲人作者的六项第一性原则"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -661,13 +671,15 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "AI 场景"
+        "AI 场景",
+        "无障碍之线"
       ],
       "source_ids": [
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
-        "A-SCENARIO-001"
+        "A-SCENARIO-001",
+        "A-ACCESS-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
@@ -679,7 +691,8 @@
       "mandatory": true,
       "report_sections": [
         "蓝绿空间、公共空间与城市风貌",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "无障碍之线：来自盲人作者的六项第一性原则"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -687,7 +700,8 @@
       ],
       "metrics": [
         "ai_landmark_count",
-        "public_space_ratio"
+        "public_space_ratio",
+        "tactile_model_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -695,14 +709,16 @@
       ],
       "visual_sections": [
         "蓝绿公共空间",
-        "AI 场景"
+        "AI 场景",
+        "无障碍之线"
       ],
       "source_ids": [
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "assumption_ids": [
         "A-SCENARIO-001",
-        "A-CULTURE-001"
+        "A-CULTURE-001",
+        "A-ACCESS-001"
       ],
       "self_check_ids": [
         "METRICS_RECALC"
