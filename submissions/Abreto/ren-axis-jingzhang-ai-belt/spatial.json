@@ -137,6 +137,22 @@
     "mode": "concept",
     "label": "人字轴全线（概念布点）"
    }
+  },
+  {
+   "id": "ren-axis-day-line",
+   "type": "corridor",
+   "title": "人字轴一日线（公共体验路线）",
+   "summary": "自南向北七段式公众体验线：人字门→大钟交汇站→北三环缝合段→原点策源站→校园连廊→众智站前广场→清河绿楔；年度活动公众开放日主线。",
+   "source": "proposal.md 九章；geometry/roads.geojson RD-SPINE",
+   "public_level": "public",
+   "linked_scenarios": [
+    "ai-cultural-guide",
+    "ai-traffic-walkability"
+   ],
+   "geometry": {
+    "mode": "concept",
+    "label": "人字轴漫步道全线（南→北）"
+   }
   }
  ]
 }

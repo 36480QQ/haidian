@@ -39,6 +39,8 @@ iteration: "v1.0"
 
 **总体概念与命名体系（agent.1）**：主名称"人字轴"，全称"人字轴——百年京张AI创新带"，英文名 REN AXIS（副题 The Beijing Jingzhang AI Innovation Belt）。命名逻辑有三层：其一，1909年京张铁路人字形线路是中国自主创新的原点记忆，与本带"AI全栈自主创新"的使命同构；其二，"人"指向人民城市与"人、城、产"融合，回应打造全球AI创新人才向往的高品质城区的目标；其三，人字形折返爬坡与机器学习"梯度上升"的方法论互文，构成向全球AI社群传播的天然叙事。子命名系统采用铁路语汇：三处重点区命名为"三站"——众智·加速站、原点·策源站、大钟·交汇站；轴上更新节点称"道岔"；荣誉展示体系称"信号系统"；沿轴文化标识采用"K标"里程碑（K1909起点标、K2026开源标等）。Logo方向建议：两条钢轨自南北汇聚成"人"字，负空间形成上行箭头与梯度曲线，主色为信号绿、钢轨银与量子蓝。命名与Logo均为概念建议，未进行商标查重与字体授权核验，正式使用前必须由专业机构完成查重、授权与合规审查，本方案不使用任何未经授权的现有字体、图形或企业标识。总体空间结构见总览概念图与 [data:geometry/roads.geojson#RD-SPINE] 所示主轴。
 
+**视觉识别系统与品牌资产（agent.1 深化）**：Logo 构成建议——钢轨银与信号绿两条轨线自下而上以缓坡曲线汇聚成"人"字，交点上方的负空间形成金色上行箭头（梯度意象），三个站点圆环沿轨线分布对应三站；字标锁定为中文"人字轴"与英文 REN AXIS 的上下组合。色彩体系建议：信号绿（#0E7C66，铁路信号与生长）、钢轨银（#8A97A5，工程理性）、量子蓝（#2E6FB7，数据与场景）、夯土金（#C7912B，百年工程记忆与荣誉），色值为方向性建议。应用矩阵覆盖 K标里程碑、双语导视、活动视觉、荣誉铭牌与数字看板五类载体，SVG 原型收录于 visual/index.html 品牌区。全部视觉资产均为概念方向，未做商标查重，正式使用前须专业深化与合规审查[source:AGENT-TASKBOOK]。
+
 **三大定位、五大功能与三区两翼协同回路**：百年京张文化带由人字轴文化叙事系统承载（K标、车站记忆、朝圣地标）；都市AI生活体验带由小月河场景赋能翼与12处场景节点[metric:scenario_node_count]承载；AI融合创新带由三站两翼产业生态承载。五大功能映射：AI全栈自主创新体系与AI治理全球话语权落位众智·加速站；世界级AI创新生态落位原点·策源站；智能原生新业态落位大钟·交汇站；AI+场景赋能新范式落位小月河场景赋能翼；智能化AI活力城市由全轴场景系统承载。协同回路为：原点策源（知识/成果）→众智加速（工程化/标准/治理）→大钟交汇（产品化/消费/数据资产）→中关村科技服务翼（资本、专业服务、全球要素配置）→小月河场景赋能翼（应用验证、数据反馈）→回流原点再研发。区域层面，本带与未来科学城、怀柔科学城、北京经济技术开发区形成"策源-中试-制造"梯度分工，并以京津冀为场景纵深腹地[source:THREE-AREAS-WINGS]。
 
 **全球AI创新生态案例（agent.2，六例）**：一，波士顿肯德尔广场——高校、实验室、企业与风险资本在步行尺度内高密度混合，被称为"最具创新性的一平方英里"，可转化机制是原点·策源站的近校混合街区与一楼开放界面；二，伦敦国王十字知识区——以铁路枢纽与工业遗产更新集聚创新机构，证明铁路遗产与知识经济可以互相成就，可转化机制是人字轴遗址公园与创新功能的互嵌；三，巴黎 Station F——老站房改造为超大创业空间，可转化机制是大钟·交汇站智能原生业态的大跨度载体改造；四，新加坡纬壹科技城（one-north）——政府长期持有与运营导向的混合创新区，可转化机制是本带的长期运营主体与场景开放机制；五，深圳南山科技园片区——产业迭代与高密度城市活力互促，可转化机制是大钟寺城市型创新街区的密度与业态组织；六，首尔板桥科技谷——轨道站城一体与数字产业集聚，可转化机制是三站的轨道一体化设计。以上案例均取自公开一般性经验，不涉及具体企业名单、投资额或产值数据，转化建议均为概念建议[source:PROCESSED-FACT-PACK]。
@@ -124,6 +126,8 @@ iteration: "v1.0"
 
 **AI公共空间、智能原生新业态与朝圣地标（agent.4）**：提出三处AI朝圣地标[metric:ai_landmark_count]，均为概念建议且避让文保与绿地刚性约束：其一，"人字门 REN Gate"——南门户广场上双轨汇聚成"人"字的门架装置，镌刻全球开源贡献者名录，作为一带的精神入口；其二，"梯度长阶 Gradient Steps"——原点站前广场旁的阶梯式碑列空间，以可更新铭牌纪年记录里程碑式开源模型与论文（引用须获权利人授权），构成荣誉展示体系的核心；其三，"大钟·新声 The New Bell"——大钟寺交汇站广场的当代声音装置，呼应永乐大钟"青铜铸典"的文化记忆，在重大开源发布与年度活动时鸣响（与大钟寺古钟博物馆文保范围保持距离，仅为概念装置）。荣誉展示体系由"信号系统"（贡献者纪念、年度荣誉、K标里程碑）构成；公共空间组件库包括智能座椅、信息桩、展示屏、可交互地面、边缘算力舱五类标准化组件，可沿轴复制部署[data:geometry/public_space.geojson#PS-005]。大钟寺智能原生消费与商务场景见第五章交汇站设计。
 
+**公共体验路线：人字轴一日线（概念建议）**：为把"可感知的AI城市"落成一条公众可走的线路，建议以步行+骑行组合组织自南向北的全轴体验：晨于人字门与京张记忆馆开始（AI导览讲述人字形线路历史），上午在大钟·交汇站体验智能终端消费展场与"大钟·新声"，经北三环缝合段体验绿波过街（SC-01），午后抵达原点·策源站参与开源集市、在梯度长阶阅读里程碑铭牌，沿校园连廊漫步五道口创新街区，傍晚在众智站前广场观看发布活动与城市模型实测场，至清河绿楔收束。全线沿 [data:geometry/roads.geojson#RD-SPINE] 漫步道串联12处场景节点与3处地标，配套公共空间组件库与双语导视；该路线同时作为年度活动公众开放日的主线与国际访问者的首选动线，属概念建议，可供运营主体深化排线。
+
 **文化叙事（agent.5）**：构建"百年爬坡"三层叙事——1909年京张铁路的自主设计智慧（清华园车站等文化资源以叙事与展示方式利用，不作工程结论）、中关村四十余年创新创业文化、以开源共创为核心的AI新文化。空间载体为K标系统（沿轴里程碑文化标识）、车站记忆节点（南门户京张记忆馆[data:geometry/buildings.geojson#BLD-A1]）、北影等艺术资源的联动展示界面。导视与标识系统以人字形符号为母题，与一带整体Logo系统分层管理、避免混用；国际传播叙事采用双语主题"A Century of Climbing Gradients（百年爬坡）"。全部叙事内容以史实为准，不歪曲历史，不未经授权使用肖像、商标与版权材料[source:AGENT-TASKBOOK]。
 
 **城市风貌**[depth:height_massing_character]：城市基调建议为"科技理性、铁路记忆、校园人文"三调融合：轴线两侧界面强调开放通透与退台过渡，站点节点允许适度标志性，文保周边与既有社区保持低尺度协调；屋顶形态建议随"梯度"意象由南向北渐变，鼓励屋顶绿化与光伏一体化。上述均为管控引导建议[standard:MOHURD-URBAN-DESIGN-MEASURES]，建筑高度、强度与体量的约束值须待官方控制条件[metric:official_building_height_control_m]确认后由专业团队制定。
@@ -133,6 +137,8 @@ iteration: "v1.0"
 **分期计划**[depth:phasing_implementation]：三期滚动实施[data:geometry/phasing.geojson#PH-1]。一期"三站示范启动"（概念时序2026-2028）覆盖 3,692,893.005 平方米[metric:phase1_area_sqm]，聚焦三处重点区的可实施示范项目；二期"人字轴贯通成网"（概念时序2028-2031）覆盖 1,260,687.3 平方米[metric:phase2_area_sqm]，完成主轴公共空间与缝合走廊；三期"两翼融合滚动更新"（概念时序2031-2035）覆盖 6,459,251.9 平方米[metric:phase3_area_sqm]，推动职住社区有机更新与战略留白启动研究。时序为概念建议，不构成开发时序或投资承诺。
 
 **更新项目清单（18项）**[metric:renewal_project_count][depth:renewal_project_list]：一期十项——1 大钟寺站前广场与四象限步行连通；2 智能终端旗舰体验群载体更新；3 智能体经济总部群载体更新（概念）；4 数据要素与数字资产服务中心；5 原点社区"开源之家"存量改造；6 成果孵化组团有机更新；7 人才公寓组团；8 众智园全栈创新实验组团；9 智算服务与产业展示枢纽；10 "人字门"地标与南门户广场。二期五项——11 人字轴漫步道全线贯通；12 三处缝合走廊慢行改善（北三环、知春路、北四环）；13 "梯度长阶"荣誉空间；14 公共空间组件库首批部署；15 大钟寺站城一体接驳设施。三期三项——16 两翼职住社区有机更新（分单元滚动）；17 战略留白区启动研究[data:geometry/land_use.geojson#LU-C3-E]；18 学院路科教融合区更新。每个项目的空间位置可在 [data:geometry/buildings.geojson#BLD-B1] 等图层中定位，依赖条件（权属、控规、文保、交通评估）在 assumptions.json 中登记。
+
+**首开项目包（概念建议，90天可启动）**：在18项更新项目之外，建议以四个低门槛行动率先建立可感知度：其一，公共空间组件库快闪部署——智能座椅与信息桩原型沿轴三处试点；其二，K1909与K2026首批K标落位并上线AI导览内容；其三，"开源之家"pop-up——利用存量空间临时改造承接首场开发者活动；其四，知春路过街绿波试验（断点临时改善试点）。四项行动均不涉及工程建设、控规调整或权属变更，可由运营主体在现行管理框架下试行，为一期项目积累公众反馈与运营数据；试行效果作为一期实施方案的输入。
 
 **实施政策建议**：更新单元统筹与成片实施机制、存量空间功能转换与弹性年期通道、校区园区街区融合的协商平台、公众参与与社区共治程序、场景开放清单制度。均为政策研究建议，须经法定程序确认。
 
@@ -161,7 +167,15 @@ iteration: "v1.0"
 
 **隐私与伦理**：全部AI场景遵循"匿名化、最小化、可拒绝、可复核"原则，不提出侵害隐私或过度监控的场景，测试验证场景在取得法定许可前不投入常态运行；治理机制遵循人本原则，智能体用于增强而非替代人的判断[source:AGENT-TASKBOOK]。
 
+**开放数据资产声明**：本包的39个用地单元、九个图层GeoJSON、30项known指标与三个矩阵文件以 CC-BY-4.0 沉淀为可复用的公共数据资产：后续智能体与研究者可直接读取本包 geometry/ 与 metrics.json 作为迭代起点，全部指标的复算口径已在 metrics.json 的 formula 字段逐项声明，替换官方红线后可一键重算。这回应智能体共创原则第八条"公共知识沉淀"——本方案不仅是一份成果，也是下一轮共创的输入[source:AGENT-TASKBOOK]。
+
 **专业复核需求**：请专业团队重点复核——临时边界替换后的指标重算、三处缝合走廊的工程可行性、轨道站一体化范围、文保约束下的地标选址、更新单元的权属与实施路径、市政与能源承载测算[depth:risk_missing_data]。
+
+## 附录：English Summary（国际传播摘要）
+
+**REN AXIS — the Beijing Jingzhang AI Innovation Belt.** In 1909, the Jingzhang (Beijing–Zhangjiakou) Railway solved its steepest climb with a switchback shaped like the Chinese character 人 ("ren", human) — the signature of China's first self-engineered trunk railway. A century later, Haidian climbs a new gradient: full-stack AI innovation. This proposal reads the rail-heritage park as the REN AXIS, a nine-kilometre public-space spine, and organizes the belt as **one axis, three stations, two wings**: Zhongzhiyuan Acceleration Terminal (full-stack innovation and AI governance), Origin Source Station (a campus-adjacent world-class AI ecosystem), and Dazhongsi Exchange Terminal (AI-native business), flanked by the Zhongguancun service wing and the Xiaoyuehe scenario wing. The character 人 carries a triple meaning — the switchback's form, the human-centred city, and gradient ascent as the method of machine learning: *a century of climbing gradients*.
+
+The package is fully machine-readable: a 39-cell land-use partition with no gaps or overlaps, thirty metrics recomputed in EPSG:4548 with formulas declared, twelve AI scenario cards (three of them industrial test-and-validation scenarios), six personas, three AI pilgrimage landmarks (REN Gate, Gradient Steps, The New Bell), an eighteen-project renewal list in three phases, and a one-day public experience route along the axis. All spatial suggestions are conceptual references for professional teams to deepen; boundaries are provisional placeholders pending official geometry, and all figures must be recomputed once official data arrives. The dataset is published under CC-BY-4.0 as a reusable starting point for future agents — this submission is designed to be not only a proposal, but an input to the next round of co-creation.
 
 ## 参考资料
 

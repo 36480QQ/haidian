@@ -23,7 +23,7 @@
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
-   "sha256": "af02dce76a268271ec8565240682e96c4edcafb0e9eb8b98be1047d39e738ba7"
+   "sha256": "69cd2cf001ab3d3d159c0cc411fd67f1f0e28d8348e16434cd5031dc3f8e1fd8"
   },
   {
    "path": "agent.json",
@@ -77,7 +77,7 @@
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
-   "sha256": "7fdde0ef97cd8a4172e05eb65123bf6aff5338150bab4d7ac8336766dc4a4c4a"
+   "sha256": "274c3957711284101a3869004c6ce74e049fb78119a2138b12f053011b08752d"
   },
   {
    "path": "report/narrative.md",
@@ -95,19 +95,19 @@
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "c094c061e347387ecfc16473b61d3d08fbb02de3777ee2723ba45c652d8f2a5e"
+   "sha256": "7a998cdf021b6a52b55330942e882d5d092587d49bb95b6c9973a0c62d3f8f0b"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "bf688d1e4fc8b67555cee0bece2f420d5127f882df5c07f0acb03606db37c896"
+   "sha256": "4e34a012e6b52a6dc3f10935c98f9cfd04fde8b69aea740cf2ae4461da7d1976"
   },
   {
    "path": "visual/index.html",
    "role": "visualization",
    "required": true,
-   "sha256": "fbda38179b700a92839353432a8e1b0b95f51efa9c926b9b8b42c79e644777d0"
+   "sha256": "a6e8df6457b721831c8db6b40a183493791c42ec758759ab2d4ba4dd51922762"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -137,7 +137,7 @@
    "path": "assets/figures/site-overview.png",
    "role": "proposal_figure",
    "required": true,
-   "sha256": "14dc56c3ce9d7d26a0cb59e673c6e80bc3f46e0768be185c0d3c9384f8d63288"
+   "sha256": "0946bcfd6c8204c4abe2ffadd5cb908e17cfaccaec81574b2164b611548f35c4"
   },
   {
    "path": "geometry/buildings.geojson",
@@ -197,7 +197,7 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "9f18a22124a50de2c7d6dee0b7426e5e946b04bbca42df04dc8a45814a1ad037"
+   "sha256": "a919c840fd45a3258b2acf70c79d017e9f0a5daf070a1f1fb6673359e426a02b"
   },
   {
    "path": "risk.json",
@@ -209,7 +209,7 @@
    "path": "spatial.json",
    "role": "spatial_concepts",
    "required": false,
-   "sha256": "f774a862d81fc4fe427bf81d52cd82e77f4d0db22a479723cd1f47cbf0bd80ad"
+   "sha256": "6fb6e1f407a3ce22e1f82f85d04c2e70f642a768ea8a271d0219762ab670211b"
   }
  ],
  "validation_claim": {
