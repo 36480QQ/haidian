@@ -507,7 +507,7 @@ iteration: "v1.8"
 | 治理基线 | 11→12 项（新增法律接口登记） | 对标公开 Review Agent 优先事项逐项落实 | v0.8；评审响应对照表 v1.2 |
 | 来源筛选 | 联网检索候选→登记 sources.json | 仅采纳可核验 URL 的公开/学术来源（101 项全正文引用） | v0.4—v1.2 |
 | AI 生成标识 | 五图+图纸+页面显式「AI生成」标识 | 按《标识办法》承诺双轨标识+过程记录留存 | v1.2 |
-| 图面与图纸 | 脚本可复算生成（A3 12 页/A0 7 板，含概念剖面示意） | 版本戳统一、字形修复、图面事实注记人工校核 | v0.9、v1.2b、v1.4 |
+| 图面与图纸 | 脚本可复算生成（A3 13 页/A0 7 板，含概念剖面与三型街道断面） | 版本戳统一、字形修复、图面事实注记人工校核 | v0.9、v1.2b、v1.4、v1.7 |
 
 **可复现性宣言（v1.3）**：本方案全部数值与图形可由包内生成脚本复算——几何（`gen_geometry.py`）、指标（`gen_metrics.py`，EPSG:4548）、矩阵与来源（`gen_matrices.py`）、五图（`gen_figures.py`）、图纸（`gen_drawings.py`）、离线页面（`gen_visual_html.py`）、Logo 与结构化资产（`gen_logo_svg.py`、`gen_structured_assets.py`）；脚本随方案沿革归档于投稿目录外的可复算集（本仓库技能目录与方案 changelog 均声明存在性与用途）。「官方边界发布后一键重算」为本方案承诺的默认动作，非一次性声明 [source:DATA-WORKFLOW][assumption:A-REV-001]。**学术支撑（v1.5，背景）**：本「AI生成＋人工终审」工作流与 2023—2026 生成式城市设计前沿共识一致——大语言模型与人类专家协作的规划产出在专业评估中可超越 90% 规划师基线（Nature Computational Science 2025，清华—MIT Senseable City Lab）[source:SRC-NCS-LLM-PLANNING-2025]；多模态扩散生成以「分阶段人工介入」保障专业判断嵌入（arXiv:2505.24260）[source:SRC-ARXIV-DIFFUSION-URBAN-2025]；面向规划定制的多智能体框架已验证任务分工价值（ACL 2025 PlanGPT）[source:SRC-ACL-PLANGPT-2025]。上述文献仅作方法学背景支撑，不构成对方案成果的学术背书。
 
