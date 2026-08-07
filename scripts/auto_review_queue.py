@@ -8,12 +8,14 @@ the PR and only sends a package to AI after the required deterministic CI passes
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import fcntl
 import json
 import os
 import shutil
 import subprocess
 import sys
+import threading
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -21,6 +23,8 @@ from typing import Any
 
 REVIEW_MARKER = "<!-- haidian-auto-review:{head_sha} -->"
 PASS = "SUCCESS"
+WORKTREE_LOCK = threading.Lock()
+GITHUB_WRITE_LOCK = threading.Lock()
 
 
 class WorkerError(RuntimeError):
@@ -191,10 +195,11 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
     worktree = args.worktree_root / f"pr-{number}-{head_sha[:12]}"
     audit_dir = args.audit_root / f"pr-{number}" / head_sha
     ref = f"refs/codex-auto-review/pr-{number}-{head_sha[:12]}"
-    if worktree.exists():
-        run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
-    run(["git", "fetch", "--force", "origin", f"pull/{number}/head:{ref}"], cwd=repo_root)
-    run(["git", "worktree", "add", "--detach", str(worktree), ref], cwd=repo_root)
+    with WORKTREE_LOCK:
+        if worktree.exists():
+            run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
+        run(["git", "fetch", "--force", "origin", f"pull/{number}/head:{ref}"], cwd=repo_root)
+        run(["git", "worktree", "add", "--detach", str(worktree), ref], cwd=repo_root)
     try:
         checked = run(["git", "rev-parse", "HEAD"], cwd=worktree).stdout.strip()
         if checked != head_sha:
@@ -236,20 +241,22 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
             "package_sha256": ai_decision.get("reviewed_package_sha256"),
         }
         if args.apply:
-            apply_review(
-                args.repo,
-                number,
-                head_sha,
-                outcome,
-                audit_dir / "pr-comment.md",
-                repo_root,
-                admin_merge=args.admin_merge,
-            )
+            with GITHUB_WRITE_LOCK:
+                apply_review(
+                    args.repo,
+                    number,
+                    head_sha,
+                    outcome,
+                    audit_dir / "pr-comment.md",
+                    repo_root,
+                    admin_merge=args.admin_merge,
+                )
             result["applied"] = True
         return result
     finally:
         if worktree.exists() and not args.keep_worktrees:
-            run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
+            with WORKTREE_LOCK:
+                run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
 
 
 def parse_args() -> argparse.Namespace:
@@ -257,6 +264,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--repo", default="open-city-ai/haidian")
     parser.add_argument("--label", default="review/queued")
     parser.add_argument("--limit", type=int, default=10)
+    parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--threshold", type=float, default=60.0)
     parser.add_argument("--model", default=os.getenv("HAIDIAN_REVIEW_MODEL", "gpt-5.6-sol"))
     parser.add_argument("--reasoning-effort", default="high")
@@ -284,6 +292,8 @@ def main() -> int:
     args.worktree_root = args.worktree_root.resolve()
     if args.apply and not os.getenv("OPENAI_API_KEY"):
         raise WorkerError("OPENAI_API_KEY is required with --apply")
+    if args.concurrency < 1:
+        raise WorkerError("--concurrency must be at least 1")
     args.audit_root.mkdir(parents=True, exist_ok=True)
     lock_file = (args.audit_root / ".worker.lock").open("w", encoding="utf-8")
     try:
@@ -306,12 +316,18 @@ def main() -> int:
         ],
         cwd=repo_root,
     )
+    selected = sorted(candidates, key=lambda item: int(item["number"]))[: args.limit]
     results = []
-    for meta in sorted(candidates, key=lambda item: int(item["number"]))[: args.limit]:
-        try:
-            results.append(process_pr(args, meta, repo_root))
-        except WorkerError as exc:
-            results.append({"number": meta.get("number"), "result": "error", "error": str(exc)})
+    with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
+        futures = {executor.submit(process_pr, args, meta, repo_root): meta for meta in selected}
+        for future in as_completed(futures):
+            meta = futures[future]
+            try:
+                results.append(future.result())
+            except Exception as exc:  # Keep independent PR failures from stopping the queue.
+                results.append({"number": meta.get("number"), "result": "error", "error": str(exc)})
+            print(json.dumps(results[-1], ensure_ascii=False), flush=True)
+    results.sort(key=lambda item: int(item.get("number") or 0))
     print(json.dumps(results, ensure_ascii=False, indent=2))
     return 1 if any(item.get("result") == "error" for item in results) else 0
 
