@@ -20,7 +20,7 @@ import urllib.request
 from pathlib import Path, PurePosixPath
 from typing import Any
 
-from validate_submission import format_report, validate_submission
+from validate_submission import ValidationReport, format_report, validate_submission
 
 
 COMMENT_MARKER = "<!-- haidian-submission-validation -->"
@@ -142,6 +142,15 @@ def proposal_paths_for(changed_files: list[str]) -> set[str]:
     return proposals
 
 
+def validation_paths_for(files: list[dict], maintainer_bypass: bool) -> list[str]:
+    """Exclude maintainer-authorized removals from content validation."""
+    return [
+        item["filename"]
+        for item in files
+        if not (maintainer_bypass and item.get("status") == "removed")
+    ]
+
+
 def safe_manifest_paths(manifest: object) -> set[str]:
     """Return inert, proposal-relative file paths declared by a manifest."""
     if not isinstance(manifest, dict) or not isinstance(manifest.get("files"), list):
@@ -223,6 +232,13 @@ def main() -> int:
 
     files = client.paginate(f"/repos/{repository}/pulls/{pr_number}/files?per_page=100")
     changed_files = [item["filename"] for item in files]
+    bypass = [
+        item.strip()
+        for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
+        if item.strip()
+    ]
+    maintainer_bypass = pr_author.lower() in {item.lower() for item in bypass}
+    validation_files = validation_paths_for(files, maintainer_bypass)
 
     worktree = Path(tempfile.mkdtemp(prefix="haidian-pr-"))
     try:
@@ -232,7 +248,7 @@ def main() -> int:
                 continue
             client.download_content(head_repo, filename, head_sha, worktree / filename)
 
-        for proposal_path in proposal_paths_for(changed_files):
+        for proposal_path in proposal_paths_for(validation_files):
             destination = worktree / proposal_path
             if not destination.exists():
                 client.fetch_content(head_repo, proposal_path, head_sha, destination)
@@ -244,12 +260,16 @@ def main() -> int:
                 proposal_path,
             )
 
-        bypass = [
-            item.strip()
-            for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
-            if item.strip()
-        ]
-        validation = validate_submission(worktree, pr_author, changed_files, bypass)
+        if not validation_files and maintainer_bypass:
+            validation = ValidationReport(
+                changed_files=changed_files,
+                maintainer_bypass=True,
+            )
+            validation.add_warning(
+                "maintainer-authorized deletion-only PR; removed files were not executed or content-validated"
+            )
+        else:
+            validation = validate_submission(worktree, pr_author, validation_files, bypass)
         validation_markdown = format_report(validation)
 
         comment = (
