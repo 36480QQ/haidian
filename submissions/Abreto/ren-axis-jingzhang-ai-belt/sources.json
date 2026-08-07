@@ -179,7 +179,7 @@
    "url": "https://www.openstreetmap.org/copyright",
    "authority_level": "open_data_license",
    "usable_for_formal": "background_only",
-   "used_for_zh": "existing_condition 现状参照层（constraints.geojson EX-OSM-*）；三条缝合走廊线位校核锚定；16处高校校园与9处轨道站点位（因站点资料包图层枚举无教育/站点现状层，点位存于生成管道 tools/osm_context.json，仅作图纸与可视化展示层参照）。ODbL 1.0 署名：© OpenStreetMap contributors。",
+   "used_for_zh": "existing_condition 现状参照层（constraints.geojson EX-OSM-*）；三条缝合走廊线位校核锚定；16处高校校园与9处轨道站点位（因站点资料包图层枚举无教育/站点现状层，点位不入 geometry/，完整上下文存档随包交付于 visual/assets/osm-context.json，含 Overpass 查询、获取日期与 ODbL 署名，可逐点复核）。ODbL 1.0 署名：© OpenStreetMap contributors。",
    "not_usable_for_zh": "非测绘级精度；不得作为红线、控制线、精确量测或规划控制依据。"
   },
   {

@@ -6,7 +6,7 @@ license: "CC-BY-4.0"
 summary: "以1909年京张铁路人字形线路的爬坡智慧为总体概念，构建'一轴三站两翼'的空间-产业-文化结构：京张遗址公园人字轴主轴贯通南北，众智园、AI原点社区、大钟寺三站分别承担加速、策源、交汇职能，以12张AI场景卡、3处AI朝圣地标与年度活动体系支撑世界级AI创新带的概念方案。全部空间建议基于临时粗略边界，可供专业团队深化研究。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot"]
-iteration: "v2.4"
+iteration: "v2.5"
 ---
 
 # 人字轴 REN AXIS——百年京张AI创新带城市设计方案
@@ -25,7 +25,7 @@ iteration: "v2.4"
 
 空间与数据底座来自站点资料包[source:SITE-PACKAGE]、公开资料登记表[source:SOURCE-REGISTRY]与第一批处理资料（事实包、范围摘要、任务索引、资料用途矩阵、缺资料清单）[source:PROCESSED-FACT-PACK]。产业背景参考海淀区"1+X+1"现代化产业体系公开发布[source:HAIDIAN-1X1]与"三区两翼"公开报道[source:THREE-AREAS-WINGS]；征集活动发布文章[source:OPEN-CALL-LAUNCH-ARTICLE]提供活动机制（Agent 评审、纪念体系、时间安排）的背景参照。三者均仅作背景语境，不用于空间控制结论。
 
-必须特别说明边界数据状态：本仓库尚未取得官方精确红线，本方案全部空间图层基于临时粗略边界 provisional_boundaries[source:PROVISIONAL-BOUNDARIES]生成，站点边界见 [data:geometry/site_boundary.geojson#PROV-SITE-001]，其属性已标注 geometry_role=provisional_constraint、official_boundary=false。该边界仅用于AI生成、可视化与提交自检，不得作为官方红线、审批依据或精确面积依据；官方多边形补齐后，本包全部面积类指标必须整体重算[depth:metrics_recalculation]。现状底图参照：按站点资料包数据政策许可，以 OSM 公开数据收录北三环、知春路、北四环、北五环、京藏高速、小月河、清河及京张高铁走廊（京包客专线）、13号线地面段等现状要素为 existing_condition 参照层[source:OSM-BASE][data:geometry/constraints.geojson#EX-OSM-01]（ODbL 署名见版权声明），三条缝合走廊线位据此校核锚定；另收录16处高校校园与9处轨道站实测点位——因站点资料包图层枚举无教育/站点现状层，点位不写入 geometry/ 而存于提交包外的生成管道存档，包内证据为 constraints.geojson 现状层（EX-OSM-*）与图纸/可视化标注，仅作展示层参照。统一量测口径声明：本文全部距离、邻近关系与线位判断均为基于 OSM 公开要素的概念级量测——非现场实测、非测绘成果，不作为审批或工程依据，须由具资质单位复核；OSM 为社区数据，仅作现状语境，不用于红线或控制结论。资料与证据链的对应关系由 sources.json、assumptions.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 承载，正文各章以 [source:]、[standard:]、[depth:]、[data:]、[metric:] 标签逐项回引。
+必须特别说明边界数据状态：本仓库尚未取得官方精确红线，本方案全部空间图层基于临时粗略边界 provisional_boundaries[source:PROVISIONAL-BOUNDARIES]生成，站点边界见 [data:geometry/site_boundary.geojson#PROV-SITE-001]，其属性已标注 geometry_role=provisional_constraint、official_boundary=false。该边界仅用于AI生成、可视化与提交自检，不得作为官方红线、审批依据或精确面积依据；官方多边形补齐后，本包全部面积类指标必须整体重算[depth:metrics_recalculation]。现状底图参照：按站点资料包数据政策许可，以 OSM 公开数据收录北三环、知春路、北四环、北五环、京藏高速、小月河、清河及京张高铁走廊（京包客专线）、13号线地面段等现状要素为 existing_condition 参照层[source:OSM-BASE][data:geometry/constraints.geojson#EX-OSM-01]（ODbL 署名见版权声明），三条缝合走廊线位据此校核锚定；另收录16处高校校园与9处轨道站实测点位——因站点资料包图层枚举无教育/站点现状层，点位不写入 geometry/ 而完整上下文存档随包交付（visual/assets/osm-context.json，含 Overpass 查询语句、获取日期与 ODbL 署名，线要素与点位可逐点复核），矢量现状层证据另见 constraints.geojson（EX-OSM-*），均仅作展示层参照。统一量测口径声明：本文全部距离、邻近关系与线位判断均为基于 OSM 公开要素的概念级量测——非现场实测、非测绘成果，不作为审批或工程依据，须由具资质单位复核；OSM 为社区数据，仅作现状语境，不用于红线或控制结论。资料与证据链的对应关系由 sources.json、assumptions.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 承载，正文各章以 [source:]、[standard:]、[depth:]、[data:]、[metric:] 标签逐项回引。
 
 ## 二、三层范围工作框架
 
