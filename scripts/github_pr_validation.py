@@ -17,10 +17,10 @@ import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
-from validate_submission import format_report, validate_submission
+from validate_submission import ValidationReport, format_report, validate_submission
 
 
 COMMENT_MARKER = "<!-- haidian-submission-validation -->"
@@ -142,6 +142,68 @@ def proposal_paths_for(changed_files: list[str]) -> set[str]:
     return proposals
 
 
+def validation_paths_for(files: list[dict], maintainer_bypass: bool) -> list[str]:
+    """Exclude maintainer-authorized removals from content validation."""
+    return [
+        item["filename"]
+        for item in files
+        if not (maintainer_bypass and item.get("status") == "removed")
+    ]
+
+
+def safe_manifest_paths(manifest: object) -> set[str]:
+    """Return inert, proposal-relative file paths declared by a manifest."""
+    if not isinstance(manifest, dict) or not isinstance(manifest.get("files"), list):
+        return set()
+    paths: set[str] = set()
+    for item in manifest["files"]:
+        raw = item.get("path") if isinstance(item, dict) else None
+        if not isinstance(raw, str):
+            continue
+        candidate = PurePosixPath(raw)
+        if candidate.is_absolute() or not candidate.parts or ".." in candidate.parts:
+            continue
+        normalized = candidate.as_posix()
+        if normalized in {".", ""}:
+            continue
+        paths.add(normalized)
+    return paths
+
+
+def hydrate_proposal_package(
+    client: GitHubClient,
+    head_repo: str,
+    head_sha: str,
+    worktree: Path,
+    proposal_path: str,
+) -> None:
+    """Download the inert files needed to validate an existing proposal package."""
+    proposal_dir = PurePosixPath(proposal_path).parent.as_posix()
+    manifest_path = f"{proposal_dir}/manifest.json"
+    manifest_destination = worktree / manifest_path
+    if not manifest_destination.exists():
+        if not client.fetch_content(head_repo, manifest_path, head_sha, manifest_destination):
+            return
+    try:
+        manifest = json.loads(manifest_destination.read_text(encoding="utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return
+    for relative in safe_manifest_paths(manifest):
+        destination = worktree / proposal_dir / relative
+        if destination.exists():
+            continue
+        try:
+            client.download_content(
+                head_repo,
+                f"{proposal_dir}/{relative}",
+                head_sha,
+                destination,
+            )
+        except urllib.error.HTTPError as exc:
+            if exc.code != 404:
+                raise
+
+
 def write_step_summary(markdown: str) -> None:
     summary_path = os.getenv("GITHUB_STEP_SUMMARY")
     if summary_path:
@@ -170,6 +232,13 @@ def main() -> int:
 
     files = client.paginate(f"/repos/{repository}/pulls/{pr_number}/files?per_page=100")
     changed_files = [item["filename"] for item in files]
+    bypass = [
+        item.strip()
+        for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
+        if item.strip()
+    ]
+    maintainer_bypass = pr_author.lower() in {item.lower() for item in bypass}
+    validation_files = validation_paths_for(files, maintainer_bypass)
 
     worktree = Path(tempfile.mkdtemp(prefix="haidian-pr-"))
     try:
@@ -179,17 +248,28 @@ def main() -> int:
                 continue
             client.download_content(head_repo, filename, head_sha, worktree / filename)
 
-        for proposal_path in proposal_paths_for(changed_files):
+        for proposal_path in proposal_paths_for(validation_files):
             destination = worktree / proposal_path
             if not destination.exists():
                 client.fetch_content(head_repo, proposal_path, head_sha, destination)
+            hydrate_proposal_package(
+                client,
+                head_repo,
+                head_sha,
+                worktree,
+                proposal_path,
+            )
 
-        bypass = [
-            item.strip()
-            for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
-            if item.strip()
-        ]
-        validation = validate_submission(worktree, pr_author, changed_files, bypass)
+        if not validation_files and maintainer_bypass:
+            validation = ValidationReport(
+                changed_files=changed_files,
+                maintainer_bypass=True,
+            )
+            validation.add_warning(
+                "maintainer-authorized deletion-only PR; removed files were not executed or content-validated"
+            )
+        else:
+            validation = validate_submission(worktree, pr_author, validation_files, bypass)
         validation_markdown = format_report(validation)
 
         comment = (
@@ -208,4 +288,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

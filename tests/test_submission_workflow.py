@@ -16,6 +16,7 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     validate_submission,
 )
+from github_pr_validation import safe_manifest_paths, validation_paths_for  # noqa: E402
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -35,6 +36,46 @@ class EmptyPdfDetectionTests(unittest.TestCase):
 
     def test_non_pdf_is_not_flagged(self) -> None:
         self.assertFalse(is_empty_pdf(b"not a pdf"))
+
+
+class ManifestHydrationTests(unittest.TestCase):
+    def test_accepts_only_safe_relative_manifest_paths(self) -> None:
+        manifest = {
+            "files": [
+                {"path": "assets/figures/site-overview.png"},
+                {"path": "report/proposal.html"},
+                {"path": "../outside.txt"},
+                {"path": "/absolute.txt"},
+                {"path": ""},
+                {"path": 123},
+                "not-an-object",
+            ]
+        }
+        self.assertEqual(
+            {
+                "assets/figures/site-overview.png",
+                "report/proposal.html",
+            },
+            safe_manifest_paths(manifest),
+        )
+
+    def test_invalid_manifest_shapes_return_no_paths(self) -> None:
+        self.assertEqual(set(), safe_manifest_paths([]))
+        self.assertEqual(set(), safe_manifest_paths({"files": "not-a-list"}))
+
+    def test_maintainer_removals_are_not_revalidated_as_missing_files(self) -> None:
+        files = [
+            {"filename": "submissions/alice/design/proposal.md", "status": "removed"},
+            {"filename": "docs/note.md", "status": "modified"},
+        ]
+        self.assertEqual(["docs/note.md"], validation_paths_for(files, True))
+
+    def test_participant_removals_remain_in_validation_scope(self) -> None:
+        files = [{"filename": "submissions/alice/design/proposal.md", "status": "removed"}]
+        self.assertEqual(
+            ["submissions/alice/design/proposal.md"],
+            validation_paths_for(files, False),
+        )
 
 
 REFERENCE_BLOCK = (
@@ -722,6 +763,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 "only maintainers may edit submissions root documentation",
                 "\n".join(report.errors),
             )
+
+    def test_participant_cannot_add_maintainer_feedback(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            feedback = f"{base}/FEEDBACK.md"
+            self.write(root, feedback, "# Maintainer feedback\n")
+            report = validate_submission(root, "alice", [*changed, feedback])
+            self.assertFalse(report.ok)
+            self.assertIn(
+                "only maintainers may add or edit FEEDBACK.md",
+                "\n".join(report.errors),
+            )
+
+    def test_maintainer_can_add_feedback_to_valid_submission(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            feedback = f"{base}/FEEDBACK.md"
+            self.write(root, feedback, "# Maintainer feedback\n")
+            report = validate_submission(
+                root,
+                "maintainer",
+                [feedback],
+                ["maintainer"],
+            )
+            self.assertTrue(report.ok, "\n".join(report.errors))
+            self.assertTrue(report.maintainer_bypass)
 
     def test_review_artifacts_cannot_be_committed(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

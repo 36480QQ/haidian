@@ -39,6 +39,11 @@ python3 scripts/maintainer_review.py \
 
 不要把这些文件写入参赛者投稿目录，也不要提交到仓库或展示页。
 
+需要把非阻断性的质量改进建议随稿长期保存时，维护者可在投稿根目录添加
+`FEEDBACK.md`。该文件只记录维护者结论，不属于参赛者方案包，不代表公开展示、
+精选、正式专业评分或现实实施批准。CI 禁止参赛者创建或修改该文件；维护者应在
+合并投稿后通过独立 PR 添加或更新，并注明对应 PR 与 commit SHA。
+
 ## 4. 复制 PR 评论
 
 把命令输出复制到 PR comment。maintainer review 的可见结果只在 PR comment 中展示，不进入 `submissions-data.js`、方案卡片或公开展示页。按建议状态处理：
@@ -49,6 +54,23 @@ python3 scripts/maintainer_review.py \
 - `reject`：触发强制拒绝条件，关闭或拒绝 PR。
 
 `package_type` 描述提交物种类，`review_status` 描述审核决定。组织方缺少 official boundary/key areas 只能形成精度与复算警示，不得阻断内容评分或导致扣分。
+
+### Intake 最低质量门槛
+
+通过 CI 和 mandatory-rejection 检查只是必要条件，不自动获得合并。维护者还必须结合
+真实多模态 Agent review 与人工视觉抽查执行最低质量门槛。出现以下任一情形时不得
+合并，并使用 `review/changes-requested` 或 `review/low-quality` 留下可执行反馈：
+
+- 核心图纸因缺字、损坏、裁切、重叠或字号过小而无法正常阅读；
+- A3/A0、HTML 或关键图件基本空白，或主要内容仍是模板、占位框和重复示意；
+- agent.1—agent.6 的核心成果仅有目录/声明，缺少足以判断方案内容的实际交付；
+- 投稿与任务实质不相关，或整体完成度不足以形成有效稿件。
+
+Review Agent 采用 100 分制，**低于 60 分不得合并**；达到 60 分只是必要条件，
+不自动获得合并。维护者仍必须检查具体可见质量证据，确认稿件完整、可读、非占位且
+足以判断方案内容。达到分数线但人工检查仍触发上述最低质量问题的稿件同样不得合并。
+通过最低线但仍有改进空间的稿件，可以作为 intake 合并并把建议写入维护者专属
+`FEEDBACK.md`；intake 仍不代表公开展示或正式评分。
 
 ## 4A. 上线前模拟 PR 审核
 
@@ -70,13 +92,14 @@ python3 scripts/prelaunch_check.py
 
 若输出不是 `Recommendation: **formal-review-ready**`，或 `prelaunch_check.py` 失败，应先修复审核逻辑、展示索引或公开文档，不要发布新的投稿入口。
 
-## 5. 合并后决定公开展示与首页精选
+## 5. 合并后更新公开展示与首页精选
 
-合并只代表仓库接受该版本，不自动代表公开展示。维护者编辑 `gallery-publication.json`：
+合并到 `main` 的方案会自动进入 `submissions.html`。维护者只在需要首页精选或明确暂停展示时编辑 `gallery-publication.json`：
 
-- `published=true`：进入 `submissions.html` 全部方案页。
+- 未登记：自动进入全部方案页，不进入首页精选。
+- `published=false`：明确暂停该方案的公开展示。
+- `published=true`：记录已完成人工内容、视觉和版权复核的具体版本。
 - `featured=true`：同时进入首页精选；它必须以 `published=true` 为前提。
-- 未登记或 `published=false`：保留在仓库，但不进入公开展示数据。
 - `selection_reason_zh`、`selection_reason_en` 和 `selected_at` 记录双语入选理由与日期。
 - 公开前必须由维护者人工检查内容表达、图纸可读性、来源与版权，并填写 `review_status=approved_for_publication`、`reviewed_by`、`reviewed_at` 和 `rights_reviewed=true`。
 - 审核完成后运行 `python3 scripts/generate_submissions_data.py --package-sha submissions/<github-login>/<proposal-slug>`，把结果写入 `reviewed_package_sha256`。投稿任何文件变化都会使批准失效，必须重新审核并更新摘要。
@@ -84,7 +107,7 @@ python3 scripts/prelaunch_check.py
 
 参赛者不得在自己的 PR 中指定公开或精选状态。
 
-维护者完成发布决定后，在主分支运行：
+每次合并方案或调整精选状态后，在主分支运行：
 
 ```bash
 python3 scripts/generate_submissions_data.py

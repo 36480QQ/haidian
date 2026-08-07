@@ -648,7 +648,7 @@ def run_ai_review(
     validate_output_dir(repo_root, out_dir)
     review_input = build_review_input(repo_root, submission_dir)
     actual_author = review_input.get("author")
-    if actual_author != pr_author:
+    if not isinstance(actual_author, str) or actual_author.casefold() != pr_author.casefold():
         raise ReviewError(f"PR author `{pr_author}` does not match submission path author `{actual_author}`")
     out_dir.mkdir(parents=True, exist_ok=True)
     clear_run_artifacts(out_dir)

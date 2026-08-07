@@ -927,7 +927,7 @@ footer{border-top:1px solid var(--line);background:#040608}
     <div class="section-header fade">
       <div class="section-eyebrow" data-i18n="gallery.eyebrow">Proposal Gallery</div>
       <h2 class="section-title" data-i18n="gallery.title">方案展示</h2>
-      <p class="section-sub" data-i18n="gallery.sub">浏览已提交方案的 HTML 可视化缩略图。每张卡片进入该方案的人类可读成果或提交源文件。</p>
+      <p class="section-sub" data-i18n="gallery.sub">已合并到 GitHub 主分支的方案自动进入展厅。这里先展示最新方案，点击卡片可浏览完整报告与可视化。</p>
     </div>
     <div class="proposal-actions fade">
       <button class="proposal-nav-btn" id="proposalPrev" type="button" aria-label="Previous proposals">‹</button>
@@ -1226,7 +1226,7 @@ const T = {
     'tag7a': 'AI 应用', 'tag7b': '智能场景',
     'gallery.eyebrow': 'Proposal Gallery',
     'gallery.title': '方案展示',
-    'gallery.sub': '浏览已提交方案的 HTML 可视化缩略图。每张卡片进入该方案的人类可读成果或提交源文件。',
+    'gallery.sub': '已合并到 GitHub 主分支的方案自动进入展厅。这里先展示最新方案，点击卡片可浏览完整报告与可视化。',
     'gallery.more': '查看全部方案',
     'gallery.empty': '暂无可展示方案',
     'gallery.noPreview': '暂无 HTML 预览',
@@ -1330,7 +1330,7 @@ const T = {
     'tag7a': 'AI Applications', 'tag7b': 'Smart Scenarios',
     'gallery.eyebrow': 'Proposal Gallery',
     'gallery.title': 'Proposal Gallery',
-    'gallery.sub': 'Browse local HTML previews of submitted schemes. Each card opens the human-readable proposal or source file.',
+    'gallery.sub': 'Proposals merged into the GitHub main branch enter the gallery automatically. This preview shows the latest work; open a card for the full report and visualization.',
     'gallery.more': 'View All Proposals',
     'gallery.empty': 'No proposals to display yet',
     'gallery.noPreview': 'No HTML preview',
@@ -1448,9 +1448,10 @@ function renderHomeSubmissions() {
   const track = document.getElementById('homeSubmissionsTrack');
   if (!track) return;
   const t = T[lang];
-  const items = (window.HAIDIAN_SUBMISSIONS || [])
-    .filter(item => item.featured !== false)
-    .slice(0, 8);
+  const allItems = (window.HAIDIAN_SUBMISSIONS || [])
+    .filter(item => item.statusKey !== 'blocked_fixture');
+  const featuredItems = allItems.filter(item => item.featured === true);
+  const items = (featuredItems.length ? featuredItems : allItems).slice(0, 8);
   if (!items.length) {
     track.innerHTML = `<div class="proposal-card"><div class="proposal-body"><div class="proposal-title">${t['gallery.empty']}</div></div></div>`;
     return;

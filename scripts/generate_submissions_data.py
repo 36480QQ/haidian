@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Generate the static proposal gallery data file.
 
-Participants should not edit `submissions-data.js` directly. Maintainers run
+Participants should not edit `submissions-data.js` directly. Every proposal
+directory merged into the main branch is included by default. Maintainers run
 this script after merging or updating submission packages so the static site can
-display all proposals from a single generated data source.
+display them from a single generated data source. `gallery-publication.json`
+remains an optional curation layer for homepage features or an explicit hold.
 """
 
 from __future__ import annotations
@@ -397,8 +399,14 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
     items = []
     for path in discover_submissions(repo_root):
         rel = path.relative_to(repo_root).as_posix()
-        publication = registry.get(rel)
-        if publication and publication.get("published") is True:
+        publication = registry.get(rel, {})
+        # A merged proposal is public by default. A full registry entry with
+        # published=false is an explicit maintainer hold; published=true keeps
+        # the stricter package/version checks and may opt the item into the
+        # homepage feature set.
+        if publication and publication.get("published") is False:
+            continue
+        if publication.get("published") is True:
             manifest = read_json(path / "manifest.json")
             status_key = classify_submission(path, manifest)
             if status_key != "formal_review_ready":
@@ -406,7 +414,7 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
                     f"{PUBLICATION_FILE}: cannot publish {rel} with generated status {status_key}; "
                     "repair and re-run the full maintainer review first"
                 )
-            items.append(build_item(repo_root, path, publication))
+        items.append(build_item(repo_root, path, publication))
     return sorted(items, key=lambda item: (item.get("date") or "", item.get("id") or ""), reverse=True)
 
 

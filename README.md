@@ -154,7 +154,7 @@ python3 scripts/scaffold_ai_submission.py \
 
 7. 按 formal 模板完善 `proposal.md`、图纸、HTML 可视化、合规矩阵、标准矩阵、深度矩阵和自检结果。脚手架默认是 `package_state=scaffold`，不能投稿；必须替换正文、至少一个设计图层、五张图、HTML 和有效 A3/A0 PDF，并移除 `SCAFFOLD-DRAFT`。每次手动修改 `proposal.md` 后，重新生成 `report/proposal.html`。
 8. 运行 `python3 scripts/finalize_submission.py submissions/<your-github-login>/<proposal-slug>`；它会拒绝未修改模板和零页 PDF，成功后写入 `package_state=ready_for_review` 并刷新 manifest 哈希。随后运行一键自检，修复到 PASS 后发起 Pull Request。PR 作者只能修改自己 GitHub 用户名对应的目录。
-9. 合并不等于公开或精选。维护者完成人工内容、视觉和版权审核后，在 `gallery-publication.json` 记录审核人、审核日期、版权确认、整包 `reviewed_package_sha256`、`published` 和质量等级；任何稿件文件变化都会使批准失效。只有 `quality_tier=featured` 的高质量稿件可设为首页 `featured`。然后运行 `scripts/generate_submissions_data.py`；参赛者不得修改该清单或 `submissions-data.js`。
+9. 方案合并到 `main` 后会自动进入公开展示页。`gallery-publication.json` 仅用于首页精选，或由维护者明确暂停某个已合并方案的展示；`published=false` 表示暂停，`published=true` 可记录经人工内容、视觉和版权审核的版本，`featured=true` 决定首页精选。然后运行 `scripts/generate_submissions_data.py`；参赛者不得修改该清单或 `submissions-data.js`。
 
 示例：
 
@@ -359,10 +359,10 @@ python3 scripts/export_review_packet.py --all
 
 该命令默认在 `.maintainer-review/` 下生成 `review-packet.md`、`review-packet.html` 和 `packet-manifest.json`；如本机安装 `wkhtmltopdf` 或 Chromium，可加 `--pdf` 生成 `review-packet.pdf`。评审包不提交到仓库，完整说明见 [docs/review-packets.md](docs/review-packets.md)。
 
-维护者批准公开/精选后更新展示页索引：
+每次合并方案后更新展示页索引：
 
 ```bash
-# 先编辑 gallery-publication.json：published 控制全部方案页，featured 控制首页
+# 已合并方案默认公开；gallery-publication.json 只控制明确暂停与首页精选
 python3 scripts/generate_submissions_data.py
 python3 scripts/generate_submissions_data.py --check
 ```
