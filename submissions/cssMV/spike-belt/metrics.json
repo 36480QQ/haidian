@@ -92,7 +92,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 418500.0,
+      "value": 942857.224,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -100,12 +100,12 @@
       "formula": "union_area(BUILDING_FOOTPRINT)",
       "confidence": "low",
       "assumptions": [
-        "建筑基底为示意性更新单元，用于表达拆改留结构与空间尺度，非实测基底。"
+        "重点区域内为街坊级周边式建筑基底示意，重点区域外维持走廊尺度示意单元；均非实测基底。"
       ]
     },
     "land_use_parcel_count": {
       "status": "known",
-      "value": 42,
+      "value": 187,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -113,7 +113,7 @@
       "formula": "count(LAND_USE features)",
       "confidence": "high",
       "assumptions": [
-        "用地图层完整覆盖提交边界且互不重叠。"
+        "用地图层完整覆盖提交边界且互不重叠；三处重点区域内已细分至街坊级。"
       ]
     },
     "park_spine_length_m": {
@@ -269,6 +269,33 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "缺少现状人口、户数与居住建筑规模底数。"
+    },
+    "key_area_block_count": {
+      "status": "known",
+      "value": 90,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(distinct key_area_id+block_no in LAND_USE)",
+      "confidence": "high",
+      "assumptions": [
+        "三处重点区域按街坊切分的单元数；切分线为概念示意，非道路红线。"
+      ]
+    },
+    "key_area_building_count": {
+      "status": "known",
+      "value": 308,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(BUILDING_FOOTPRINT intersecting KEY_AREA)",
+      "confidence": "high",
+      "assumptions": [
+        "重点区域详细设计深度的直接证据；拆改留分类为概念建议。"
+      ]
     }
   }
 }
