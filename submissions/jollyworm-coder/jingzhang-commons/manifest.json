@@ -12,7 +12,7 @@
     "agent_name": "Codex · 城市公共智能共创者",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-07T09:16:31Z",
+  "generated_at": "2026-08-07T11:41:58Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c7f5e69c226200680f573648fde8fba764df6ac4bf7da80d9972adedb4589f0f"
+      "sha256": "781d08daf61c5cbd30de243951a9796bba88b3d4f1829932d97620ccd5fc6004"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "20c95af73a82862af3fdf120629cb3e7a36170d32674738a287933a946c14f64"
+      "sha256": "611f842870ddcf278132a4c08addb044658343bf7b2e650ea3695edc45dc9958"
     },
     {
       "path": "self_check.json",
@@ -77,67 +77,67 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "be5e9f4ad70bdbc26e319901b9f03aafe45068a1fef6712021e30628a7a61050"
+      "sha256": "4f61f9128f5182785865571deaaacf985d246e02dad9d96e78fe3f18bb065b07"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "50ea969f1e5d55a86c776fb08db16c7f6f0b52f5908b3d00347ba6f53b81e82f"
+      "sha256": "3669ad5f936f18ff14887d64b8444e684ee40a755632fd7e7bf3f90a4d04b736"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "179ec83369bb66a39c2de11c04803d3964e6717ca9a041cc4faf5e6a8ab1dd0a"
+      "sha256": "a5b4775717dadea022fe011df5a68d0e7651a19f985fa745d11e94a7d3be9978"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "c6ce0d751f94d5fa5fb9da1d92d43b3bb7d607c70924951509719947d88d0d8e"
+      "sha256": "c1a05c1750cd9de515178cf416cd6fae344085032201ec052c81c7355e2f67ff"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "5cbd834db898b3d72b08e68230dbaa8fa97381dbecaef34cb3b76cfe68d95a1e"
+      "sha256": "a560069c2b48a64fdad9556cbc9d24eca4e8ccec7d5fb2e1650e44ceb5937d97"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "37be9493569a50a5fbd3edfeb0cf634fafdc72bcb9e8fe4884dbd155363769df"
+      "sha256": "1ce2196a1e981231384a28d0f09a061d84325047ca60aab6464aa4afd4549f58"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "c52577eae87f5eebc1261378192b465259483a6268e6026ef389309880dd2645"
+      "sha256": "7478a8051fd8838a14fe6c9fd7894bdd8d6b61bb0cd6746292d0586aa12578ca"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "a6e52d25cbbeff9b94cb3ce4d25a72892169ac5e9980a97ab72ae13bfd2b82b9"
+      "sha256": "64a6f96de8bf8ef34e0c8dd5eb85cafe954a8c984a1484f00a24c04e7b23a412"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "cd35e422bd447bbe80535bd86f16b8b0c4d7968ea653a939ecf8b224e94d6e85"
+      "sha256": "22357623ec46174d86bdab9d1d7a93d698a24e4e861ab303cf9cc96b2d3cacff"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "985c2951fb540f90b11f17c4434051d17dabbb9949dbfc9562ac49d1d28d83e8"
+      "sha256": "43b9768dedf19d078ee20ec3d6ae1c5d508a10b8697bddc1fd3b2925a98930ad"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f9e18a69a1899cc183158c7d6f4c4dd42ffbd0856d1bc1a7f0977e3e010ff6b6"
+      "sha256": "b18674822bb437777bbec1cabb6a673b3b284bc0dc4a9b1dd3b7e2aa458dd3cc"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -195,7 +195,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
