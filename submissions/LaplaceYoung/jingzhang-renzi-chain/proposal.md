@@ -383,6 +383,8 @@ iteration: "v0.9"
 
 **活动品牌与传播视觉系统（概念建议，不表述为已确定安排）**：大会中英文品牌名建议为「京张AI创新大会 / Jing-Zhang AI Innovation Summit」；主视觉方向为「人字链」Logo 在活动场景的延展规范（铁轨铜×数据青双色体系、人字链节点母题）；年度奖项体系建议设「人字链奖」（链节贡献/开源贡献/场景落地三类）；IP与吉祥物方向以人字链为主题，全部自绘图形；传播物料与数字资产清单（海报、导视、数字模板）全部自绘、无版权风险。北京已形成中关村论坛年会（含人工智能主题日）、全球数字经济大会等品牌活动矩阵 [source:SRC-ZGC-FORUM-2026][source:SRC-GDEC-2026]，本体系建议与既有品牌活动形成年度协同，作为概念方向。
 
+**城市智能体协作网络（概念机制）**：建议建立带级「城市智能体协作网络」——多智能体按「信息公开—方案推演—公众反馈—人工复核—知识沉淀」五步协作（对应共创原则中的公共知识沉淀与人类最终判断），与本次征集本身的智能体共创通道（issue/PR 机制）衔接；本方案即该协作网络的第一个实例，其生成过程、来源登记与意见通道（本 PR 公开意见通道）均可作为后续智能体共创的范式参考 [source:AGENT-TASKBOOK]。
+
 **双语传播资产（概念清单）**：一带总名「京张人字链 / Jing-Zhang Renzi Chain（JZ-Renzi Belt）」；三链节「研·创·业 / R&D·Origin·Industry」；四地标「京张零号站 / Origin Station Zero、人字桥廊 / Herringbone Bridge、众智之心 / Heart of Crowd-Intelligence、钟声数据钟楼 / Bell Tower of Data」；传播口号「百年铁轨，遇见未来智能 / Where a century-old rail meets tomorrow's intelligence」；以上名称与文案均为本方案自拟概念，供官方品牌流程选用，不构成任何已确定品牌结论 [source:AGENT-TASKBOOK]。
 
 ### 开发者社区运营机制（概念）
@@ -486,7 +488,9 @@ iteration: "v0.9"
 
 **官方批准与实施承诺禁用**：本方案不包含控规调整结论、容积率/建筑高度/建筑强度法定判断、地块拆改留方案、工程线位与市政测算、投资与开发时序结论；所有空间落地建议均表述为「概念建议」「参考方案」「可供专业团队深化研究」，不构成政府审定结论 [source:AGENT-TASKBOOK][standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
-**待补资料清单**：官方三层范围与重点区polygon、控规指标（容积率/高度/密度/绿地率/退线）、现状地块与权属、现状建筑普查、文保控制线、交通市政底数、公共服务设施底数——详见 `assumptions.json` 与 `brief/site-package/missing-data.md` [depth:risk_missing_data][source:SITE-PACKAGE]。官方 polygon 与控规指标发布后，将按 `docs/data-workflow.md` 重算全部派生指标，并在 changelog 发布新旧指标逐项差异表。**专业复核需求**：所有provisional几何派生指标须在official polygon发布后重算；建筑规模与高度量级须由专业团队校核；方案须经规划、交通、市政、文保专业复核后方可进入任何实施讨论 [source:DATA-WORKFLOW][assumption:A-REV-001]。
+**待补资料清单**：官方三层范围与重点区polygon、控规指标（容积率/高度/密度/绿地率/退线）、现状地块与权属、现状建筑普查、文保控制线、交通市政底数、公共服务设施底数——详见 `assumptions.json` 与 `brief/site-package/missing-data.md` [depth:risk_missing_data][source:SITE-PACKAGE]。官方 polygon 与控规指标发布后，将按 `docs/data-workflow.md` 重算全部派生指标，并在 changelog 发布新旧指标逐项差异表。**智能体共创工作流与人工终审（方法自证）**：本方案本身即「AI生成式城市设计」的开源实验——全部空间判断由智能体生成，并经多轮联网集训（学术期刊与专业文件）迭代，生成过程、来源与版本沿革在 `changelog.md` 与 `sources.json` 全程登记；按「人在回路」原则，方案全部空间建议标注 provisional/概念属性并设专业复核需求，评审、复核与最终判断由人类与专业团队完成 [source:AGENT-TASKBOOK][source:DATA-WORKFLOW][assumption:A-REV-001]。
+
+**专业复核需求**：所有provisional几何派生指标须在official polygon发布后重算；建筑规模与高度量级须由专业团队校核；方案须经规划、交通、市政、文保专业复核后方可进入任何实施讨论 [source:DATA-WORKFLOW][assumption:A-REV-001]。
 
 **无障碍自查记录（v0.5）**：对 `visual/index.html` 与五张派生图执行了一次基础自查：①正文与图例文字与背景对比度满足 WCAG 2.2（W3C, 2023）AA（4.5:1）要求；②所有图示均带标题与图例、无纯颜色信息依赖；③HTML 无脚本依赖、可无 JS 完整阅读，键盘可导航；④图片 alt 文本齐全；⑤目标尺寸（WCAG 2.2 准则 2.5.8）：导视桩/触控信息屏点按区不小于 24×24 CSS px（概念值）；⑥焦点不被遮挡（准则 2.4.11）：键盘导航时焦点元素不被悬浮层遮挡。自查结论为「通过（基础项）」（针对现有静态 HTML 产物），公共空间触屏信息柱数字界面以 WCAG 2.2 为准则（概念建议）[source:SRC-WCAG-2.2]，深化无障碍（屏幕阅读器实测、触觉图版）列为专业深化项。
 
