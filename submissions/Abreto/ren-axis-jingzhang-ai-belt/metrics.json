@@ -382,6 +382,39 @@
    "confidence": "medium",
    "assumptions": []
   },
+  "human_review_coverage_ratio": {
+   "status": "known",
+   "value": 1.0,
+   "unit": "ratio",
+   "source_files": [
+    "tools ledger via visual/A3 台账"
+   ],
+   "formula": "count(scenario cards with staffed human review)/scenario_node_count",
+   "confidence": "medium",
+   "assumptions": []
+  },
+  "no_ai_alternative_ratio": {
+   "status": "known",
+   "value": 1.0,
+   "unit": "ratio",
+   "source_files": [
+    "tools ledger via visual/A3 台账"
+   ],
+   "formula": "count(scenario cards with non-AI equivalent path)/scenario_node_count",
+   "confidence": "medium",
+   "assumptions": []
+  },
+  "appeal_channel_coverage_ratio": {
+   "status": "known",
+   "value": 1.0,
+   "unit": "ratio",
+   "source_files": [
+    "tools ledger via visual/A3 台账"
+   ],
+   "formula": "count(scenario cards with appeal channel)/scenario_node_count",
+   "confidence": "medium",
+   "assumptions": []
+  },
   "renewal_project_count": {
    "status": "known",
    "value": 18,
