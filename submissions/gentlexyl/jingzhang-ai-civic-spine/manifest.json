@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "1e26425a885e6766ee729b93bab8f2fff06345856d035b557a2d326360662772"
+      "sha256": "b559c68fb1e3c0dc924ceff9370c86f77bcf5c5b9c40ebc91722f1d50d651968"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9a2c9d67668092081ffe78ed80f4fbf9caf714ff94d21c05dfab4a5c32c6200c"
+      "sha256": "d71798ec3f24358978b0bda9a538a9642e3150e3a2bc3fe2db1ca8d40beb2b2e"
     },
     {
       "path": "report/narrative.md",
@@ -89,7 +89,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2962ec675713bccbe3e0c41ce458517377b72d91e5fba544defff33a8c80d9b8"
+      "sha256": "6680b7f9d481d328e1eb0f6199163edf4a219faf4379c6c5ab4c16b0c5815de7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "96aa2f6d982460d890ffcb74cfdcf1e39481885b514a66e4ca1bd8ff85e554b4"
+      "sha256": "209b38fd9a5622efd3fbaadd32202a39a5ed80c8fa0ed0d9fc2780ed58e411ff"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -192,6 +192,42 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "assets/figures/axon-dazhongsi.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "11765c29d26be4d0df415def732aec336613ab2aab26177db421e087682b9ec9"
+    },
+    {
+      "path": "assets/figures/axon-origin-community.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "ef9ab9c2135c630d07fe742a116155efaea4068a9ec0da419c8de3308a795f3d"
+    },
+    {
+      "path": "assets/figures/axon-pilgrimage-landmarks.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "4b6a6378c935276663d1ac77fc29eb0c962b928e3e4ce4442aec1e8291179d99"
+    },
+    {
+      "path": "assets/figures/axon-spine-overview.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "13ee87e9fd4035867a92d38f8dc92414ad91b413e5cc6d46f77f603be2016e6e"
+    },
+    {
+      "path": "assets/figures/axon-street-corridor.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "6d424c806d253f7ad3108f3a0a7757f4be0f1a3836534ce8a29cd3a1754c93fe"
+    },
+    {
+      "path": "assets/figures/axon-zhongzhiyuan.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "7de83cd8cb2ec5e80c4ece0e8d3625be9be0f4adf5a7e92140b80ff8faa91334"
     }
   ],
   "validation_claim": {

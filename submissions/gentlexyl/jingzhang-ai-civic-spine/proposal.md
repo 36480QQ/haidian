@@ -76,6 +76,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 用地与建筑证据：[data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001]、[metric:building_footprint_area_sqm]=692404.76；道路 [data:geometry/roads.geojson#ROAD-001]。更新优先识别：慢行断点、清河界面、近校转化街、大钟寺四象限、开源荣誉节点。政策建议：公共空间与场景可先试，重资产等待权属/控规/市政。
 
+![京张智脊公共领域与建筑群轴测概念图](assets/figures/axon-spine-overview.jpg)
+
+上图为概念轴测（isometric），表达“绿脊骨架先行、建筑体积回应公共界面”的三维关系；不替代 GeoJSON，也不构成审批总平面。
+
 ## 重点区域详细设计
 
 三核详图由 [depth:three_key_area_detailed_design] 约束，索引 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]。下列均为概念建议，不构成地块级拆改留或工程可行性结论。
@@ -91,6 +95,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **场景**：安全治理沙盒、自主模型评测开放日。  
 - **风险待确认**：河道蓝线、防洪、园区权属、对外道路条件。
 
+![众智园加速核轴测概念图：治理庭院与研发簇群](assets/figures/axon-zhongzhiyuan.jpg)
+
 ### 北京AI原点社区（PROV-KEY-002，约104.3 ha）
 
 - **定位**：近校型开源协作与成果转化社区（Kendall 短路径）。  
@@ -100,6 +106,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **场景**：开源发布厅、校企转化客厅、人才生活管家。  
 - **风险待确认**：校园边界、首层业态、居住配套、站点一体化。
 
+![原点社区轴测概念图：荣誉广场与开源发布厅](assets/figures/axon-origin-community.jpg)
+
 ### 大钟寺AI产业聚集区（PROV-KEY-003，约72.0 ha）
 
 - **定位**：城市型智能原生经济与国际交往港。  
@@ -108,6 +116,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **更新方法**：优先缝合交叉口步行；商业界面更新；重资产待权属。  
 - **场景**：国际路演、数据要素会客厅、智能终端展示。  
 - **风险待确认**：轨道接口、交叉口组织、管线、夜间经济管理。
+
+![大钟寺产业聚集区轴测概念图：站城界面与路演广场](assets/figures/axon-dazhongsi.jpg)
 
 | 片区 | 结构动作 | 证据 |
 | --- | --- | --- |
@@ -178,6 +188,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | B 缝合步行街 | ROAD-002/003 | 共享路面+活跃首层 | 围墙接口/校区边界 |
 | C 站点接驳 | ROAD-004 | 四象限步行优先 | 交叉口通达 |
 
+![智脊绿道三维街道走廊概念图](assets/figures/axon-street-corridor.jpg)
+
 轨道聚焦大钟寺站一体化讨论，不新提未论证线位。停车与非机动车在公共空间边缘分级设置，细节待专项。市政与端侧算力驿站为原型建议；管线消防排水列为前置条件。
 
 ## 蓝绿空间、公共空间与城市风貌
@@ -187,6 +199,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **公共领域三级**：一级绿脊 GREEN-001；二级核庭 PUBLIC-001/002/003；三级口袋 PUBLIC-004/005。
 
 **朝圣地标（agent.4，≥3）**：1）智能体贡献荣誉墙（PUBLIC-001）；2）开源成果展示廊（沿 ROAD-001/GREEN-001）；3）京张铁路记忆站（BLDG-005）。形式与位置以最终审批为准。
+
+![三处AI朝圣地标轴测概念图：荣誉墙、开源廊、记忆站](assets/figures/axon-pilgrimage-landmarks.jpg)
 
 **文化叙事（agent.5）**：自主工程精神→中关村开源→可信AI公共文化。导视可用里程记号+开源提交隐喻，但文化标识与一带Logo分层。风貌原则：低干扰界面、连续树冠、夜间安全照明分级；无文保精细图时不给伪精确控制线。
 
