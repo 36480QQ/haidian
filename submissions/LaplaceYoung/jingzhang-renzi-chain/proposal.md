@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.5"
+iteration: "v2.6"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -357,7 +357,7 @@ iteration: "v2.5"
 
 ### 实施政策建议（概念）
 
-（1）城市更新政策：建议探索「低扰动有机更新」审批绿色通道与「留改拆」分类实施机制；建议将全带14个概念项目按《北京市城市更新实施单元划定工作指引（试行）》组织为若干「更新实施单元」（如原点社区单元、大钟寺单元、学院路界面单元），以单元为单位打包实施、内部资金统筹平衡，实现「片区统筹」而非单点申报 [source:SRC-BJ-RENEWAL-UNIT-GUIDE]；各单元对接责任规划师，负责单元更新方案与控规/街区详规的衔接和全流程跟踪 [source:SRC-BJ-RENEWAL-PLANNER]；
+（1）城市更新政策：建议探索「低扰动有机更新」审批绿色通道与「留改拆」分类实施机制；建议将全带14个概念项目按《北京市城市更新实施单元划定工作指引（试行）》组织为若干「更新实施单元」（如原点社区单元、大钟寺单元、学院路界面单元），以单元为单位打包实施、内部资金统筹平衡，实现「片区统筹」而非单点申报 [source:SRC-BJ-RENEWAL-UNIT-GUIDE]；各单元对接责任规划师，负责单元更新方案与控规/街区详规的衔接和全流程跟踪 [source:SRC-BJ-RENEWAL-PLANNER]；区级衔接：《海淀区城市更新导则（2025年版）》《海淀区城市更新实施指引（2025年版）》（2025年7月印发）明确聚焦人工智能创新街区、轨道交通站点一体化区域（含轨道微中心）与重点商圈用地楼宇高效复合利用、以产城融合与站城融合为目标 [source:SRC-HD-RENEWAL-GUIDE-2025]——本带实施单元机制与该导则衔接（概念）；
 
 （2）产业政策：建议围绕链节差异化配置场景开放、数据要素流通试点、算力补贴等工具（具体政策以政府发布为准）；上位接口（公开文件，仅作衔接，兑现以主管部门当期申报指南为准）：国务院《关于深入实施「人工智能+」行动的意见》（国发〔2025〕11号）[source:SRC-NAT-AI-PLUS-2025]、海淀「加快建设具有全球影响力人工智能产业高地」措施（公开报道称超10亿元资金矩阵，媒体口径）[source:SRC-HD-AI-HUB-2025]、《北京具身智能科技创新与产业培育行动计划（2025—2027年）》[source:SRC-BJ-EMBODIED-PLAN-2025]、北京数据要素「一区三中心」布局 [source:SRC-BJ-DATA-123-2025]；
 
