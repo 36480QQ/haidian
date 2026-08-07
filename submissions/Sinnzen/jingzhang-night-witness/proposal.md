@@ -274,6 +274,16 @@ iteration: "v0.1"
 
 三期推进 [depth:phasing_implementation]：近期（1-3 年）——慢行断点缝合试点 + 社区 AI 服务站点 + 遗址公园轻量场景激活；中期（3-5 年）——重点区建筑更新 + 轨道站点一体化 + 朝圣地标概念深化；长期（5 年以上）——控规条件就绪后的系统更新 + 全球 AI 活动落地 [data:geometry/phasing.geojson#PHASE-001]。
 
+### 实施责任与阶段指标（概念建议）
+
+| 阶段 | 建议牵头与参与主体 | 可衡量指标 | 人工复核节点 |
+|------|--------------------|------------|--------------|
+| 近期试点（1-3 年） | 区级相关部门与属地街道协调，高校、企业、社区居民和专业团队共同参与 | 慢行断点修复数量、无障碍连续性、社区服务站试用反馈、场景退出请求响应时长 | 试点前完成交通、消防、文保、隐私和无障碍专项复核；季度公开反馈 |
+| 中期联动（3-5 年） | 更新实施主体与轨道、园林、河务等专业部门协同，社区代表参与方案评估 | 重点区公共空间开放比例、步行换乘时长、首层公共服务覆盖、居民满意度 | 每个重点区进入设计深化前确认官方边界、权属和控规条件 |
+| 长期运营（5 年以上） | 运营主体、高校与开发者社区共建，政府部门保留监管和公共利益判断 | 开放活动数量、公共数据集使用反馈、设施维护时效、年度第三方评估完成率 | 年度审计数据最小化、算法风险、公共空间公平性和版权授权 |
+
+上述主体、阶段和指标仅构成实施框架，不代表已确定的政府分工、投资承诺或审批结论；任何进入真实试点的项目均需由具备责任能力的专业团队和主管部门另行确认。
+
 ### 全球 AI 创新活动体系与长期运营 [agent.6]
 
 **年度活动体系（四季仪式）**：
@@ -329,21 +339,11 @@ iteration: "v0.1"
 
 ## 参考资料
 
-- `brief/site-package/design_brief.json`
-- `brief/site-package/allowed_design_space.json`
-- `brief/site-package/agent_taskbook.json`
-- `brief/site-package/sources.json`
-- `brief/site-package/geometry/provisional_boundaries.geojson`
-- `brief/site-package/ranges/planning_limits.json`
-- `brief/site-package/standards/standards.json`
-- `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`
-- `brief/site-package/visual_style_recommendations.json`
-- `brief/site-package/schemas/compliance_matrix.schema.json`
-- `brief/site-package/schemas/standard_matrix.schema.json`
-- `brief/site-package/schemas/design_depth_matrix.schema.json`
-- `brief/site-package/enums/land_use_codes.json`
-- `brief/site-package/enums/layers.json`
-- `data/source_registry.json`
-- `data/processed/agent_fact_pack.md` [source:PROCESSED-FACT-PACK]
-- `docs/data-workflow.md`
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+- `brief/public-brief.md`——仓库公开任务书入口。
+- `brief/README.md`——仓库公开数据边界与使用说明。
+
+### 仓库内技术参考及公开性
+
+以下资料均随开源仓库公开可读，用于提交包内部校验而非替代政府正式数据：`brief/site-package/design_brief.json`、`allowed_design_space.json`、`agent_taskbook.json`、`sources.json`、`geometry/provisional_boundaries.geojson`、`ranges/planning_limits.json`、`standards/standards.json`、`standards/references/agent-open-call-taskbook-0518.md`、`visual_style_recommendations.json`、三份矩阵 schema、用地与图层枚举、`data/source_registry.json`、`data/processed/agent_fact_pack.md` [source:PROCESSED-FACT-PACK] 以及 `docs/data-workflow.md`。其中临时几何只支持 intake、可视化和复算演练，不构成官方红线或精确面积依据。
+
+机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]。
