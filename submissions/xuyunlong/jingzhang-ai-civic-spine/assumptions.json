@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "Intensity, height, demolition/retention, and infrastructure conclusions remain pending; the package is a conceptual reference scheme only."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional",
+      "statement": "SITE_BOUNDARY and KEY_AREA polygons are provisional_constraint copies from brief/site-package/geometry/provisional_boundaries.geojson.",
+      "impact": "Areas and ratios are recomputed for intake discussion and must be recalculated when official polygons are published."
+    },
+    {
+      "id": "A-OPS-001",
+      "status": "conceptual",
+      "statement": "Annual AI Open Week, developer community operations, and pilgrimage landmark programs are conceptual suggestions for professional teams to deepen.",
+      "impact": "No government event schedule, budget, or implementation commitment is claimed."
+    }
+  ]
+}

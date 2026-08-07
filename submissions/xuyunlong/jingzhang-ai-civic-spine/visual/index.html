@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>京张智脊 · 离线展示板</title>
+<style>
+:root { --ink:#0f172a; --muted:#475569; --line:#cbd5e1; --bg:#eef2f6; --ai:#0f766e; --park:#15803d; --work:#b45309; --blue:#0369a1; --gold:#b7791f; }
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.wrap{max-width:1280px;margin:auto} header{background:#101827;color:#fff;border-bottom:5px solid var(--gold)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;padding:28px 22px}
+.eyebrow{color:#99f6e4;letter-spacing:.16em;text-transform:uppercase;font-size:12px;margin-bottom:10px}
+h1{font-size:30px;margin:0 0 10px;line-height:1.2} h2{font-size:20px;margin:0 0 12px} h3{font-size:16px;margin:0 0 8px}
+p{margin:0 0 10px} .hero-copy{color:#d8e3ef}
+.status-box{border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:14px;background:rgba(255,255,255,.06)}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill,.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:#134e4a;color:#ccfbf1;font-size:12px}
+main{padding:18px 16px 40px} .sheet{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin:0 0 16px}
+.sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1.4fr .8fr;gap:16px}
+.board{border:1px solid var(--line);border-radius:10px;padding:12px;background:linear-gradient(180deg,#f8fafc,#eef2ff)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:13px;color:var(--muted)}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px}
+.metric-list .metric{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.area-card,.scenario-card{border:1px solid var(--line);border-radius:10px;padding:12px;background:#f8fafc}
+.scenario-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.risk-card{border-left:4px solid var(--gold);padding:10px 12px;background:#fffbeb}
+.warn{border-left-color:#b45309}
+.source-line{font-size:12px;color:var(--muted);margin-top:8px}
+@media (max-width:900px){.hero,.grid2,.matrix,.scenario-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">OPEN CITY · HAIDIAN · FORMAL PACKAGE</div>
+      <h1>京张智脊：百年京张AI创新带城市设计概念建议</h1>
+      <p class="hero-copy">以京张铁路遗址公园为公共主轴，构建一带三核、两翼协同、开源朝圣地标网络。本页为离线展示板，指标与图层均可回溯到提交包 JSON/GeoJSON。</p>
+      <div class="pill-row"><span class="pill">provisional boundary</span><span class="pill">agent.1-6 covered</span><span class="pill">offline only</span></div>
+    </div>
+    <div class="status-box">
+      <strong>自检状态</strong>
+      <p>package_state 将设为 ready_for_review。边界为 provisional_constraint，正式红线发布后需整体复算。</p>
+      <p>作者：xuyunlong / Composer Auto (Cursor)</p>
+    </div>
+  </div>
+</header>
+<main>
+<section class="sheet">
+  <div class="sheet-head"><div><h2>总览地图</h2><p>主叙事：智脊廊道与三核节点；虚线框仅为 provisional 约束。</p></div><span class="tag">site overview</span></div>
+  <div class="grid2">
+    <div class="board">
+      <svg viewBox="0 0 1100 640" width="100%" height="auto" role="img" aria-label="京张智脊总览示意">
+        <rect x="40" y="40" width="1020" height="560" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="10 8"/>
+        <text x="60" y="70" font-size="16" fill="#64748b">provisional SITE_BOUNDARY</text>
+        <rect x="360" y="70" width="180" height="480" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+        <text x="450" y="310" text-anchor="middle" font-size="18" fill="#166534">京张蓝绿智脊</text>
+        <path d="M450 90 C470 220 500 340 530 560" fill="none" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+        <path d="M450 90 C470 220 500 340 530 560" fill="none" stroke="#ccfbf1" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="430" cy="140" r="42" fill="#0369a1"/><text x="430" y="146" text-anchor="middle" fill="#fff" font-size="16">众智园</text>
+        <circle cx="500" cy="330" r="42" fill="#7c3aed"/><text x="500" y="336" text-anchor="middle" fill="#fff" font-size="16">原点</text>
+        <circle cx="560" cy="520" r="42" fill="#b45309"/><text x="560" y="526" text-anchor="middle" fill="#fff" font-size="16">大钟寺</text>
+        <rect x="120" y="120" width="160" height="90" fill="#e0f2fe" stroke="#0284c7"/><text x="200" y="172" text-anchor="middle" font-size="15">中关村科技服务翼</text>
+        <rect x="780" y="420" width="180" height="90" fill="#fef3c7" stroke="#d97706"/><text x="870" y="472" text-anchor="middle" font-size="15">小月河场景赋能翼</text>
+        <g fill="#0f172a"><circle cx="470" cy="250" r="7"/><circle cx="520" cy="400" r="7"/><circle cx="490" cy="180" r="7"/></g>
+        <text x="60" y="575" font-size="15" fill="#475569">朝圣地标：荣誉墙 / 开源成果廊 / 铁路记忆站</text>
+      </svg>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--ai)"></i>用地分区</span>
+        <span><i class="sw" style="background:var(--park)"></i>蓝绿公共空间</span>
+        <span><i class="sw" style="background:var(--work)"></i>建筑与更新项目</span>
+        <span><i class="sw" style="background:var(--blue)"></i>交通慢行</span>
+      </div>
+    </div>
+    <aside>
+      <h3>核心指标</h3>
+      <div class="metric-list">
+        <div class="metric"><span>site_area_sqm</span><strong data-metric="site_area_sqm" data-value="11412825.386">11412825.386</strong></div>
+        <div class="metric"><span>green_ratio</span><strong data-metric="green_ratio" data-value="0.253228">0.253228</strong></div>
+        <div class="metric"><span>public_space_ratio</span><strong data-metric="public_space_ratio" data-value="0.0773">0.0773</strong></div>
+      </div>
+      <div class="risk-card warn" style="margin-top:14px">
+        <h3>自检状态</h3>
+        <p>deterministic validation、spatial review、visual packaging check 与 professional evidence review 必须全部通过。当前边界状态：provisional intake。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>三层范围</h2><p>统筹研究、总体设计、重点区域逐级落到图层与指标。</p></div><span class="tag">scopes</span></div>
+<div class="matrix">
+<article class="area-card"><h3>统筹研究范围</h3><p>43.6 km²：世界级AI生态、三区两翼、文化叙事与全球活动。</p></article>
+<article class="area-card"><h3>总体设计范围</h3><p>11.4 km²：城市更新、用地、交通市政、京张智脊活力带。</p></article>
+<article class="area-card"><h3>重点区域范围</h3><p>368.4 ha：众智园、原点社区、大钟寺详细设计。</p></article>
+</div></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>重点区域</h2><p>三核分别回应全栈创新、开源转化与智能原生经济。</p></div><span class="tag">key areas</span></div>
+<div class="matrix">
+<article class="area-card"><h3>众智园AI自主创新加速区</h3><p>花园型全栈街区：标准治理、安全评测、清河低碳交往与对外交通组织。</p></article>
+<article class="area-card"><h3>北京AI原点社区</h3><p>近校型开源社区：成果发布、人才特区服务、校区园区慢行缝合。</p></article>
+<article class="area-card"><h3>大钟寺AI产业聚集区</h3><p>城市型智能经济区：站城一体、智能终端与内容消费、国际路演。</p></article>
+</div></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>用地分区</h2><p>MNR 分类码条带分区，覆盖提交边界且无重叠。</p></div><span class="tag">land use</span></div>
+<p>0802 科研 · 1401 公园绿地 · 05 商业服务业 · 0804 教育 · 0702 社区服务。详见 geometry/land_use.geojson。</p></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>交通慢行</h2><p>智脊主廊与三横连廊，服务轨道接驳与东西缝合。</p></div><span class="tag">mobility</span></div>
+<p>ROAD-001 京张智脊慢行主廊；ROAD-002/003/004 对应众智园、原点社区、大钟寺横向缝合。</p></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>蓝绿公共空间</h2><p>绿脊连续 + 广场节点 + 朝圣地标。</p></div><span class="tag">blue-green</span></div>
+<p>GREEN-001/002/003 与 PUBLIC-001/002/003 共同构成可步行、可活动、可展示的公共系统。</p></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>建筑</h2><p>概念建筑基底，用于讨论更新类型与公共界面，不构成拆改留法定结论。</p></div><span class="tag">buildings</span></div>
+<p>建筑基底合计 692404.76 sqm（metric:building_footprint_area_sqm）。</p></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>更新项目</h2><p>分期表达近期试点、中期更新、远期协同。</p></div><span class="tag">phasing</span></div>
+<p>PHASE-001/002/003 对应智脊公共空间试点、北中片更新、南片与两翼完善。</p></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>AI 场景</h2><p>场景绑定空间载体、用户、隐私边界与人工复核。</p></div><span class="tag">scenarios</span></div>
+<div class="scenario-grid">
+<article class="scenario-card"><b>01 开源发布厅</b><p>原点社区成果发布与模型评测。</p></article>
+<article class="scenario-card"><b>02 安全治理沙盒</b><p>众智园标准与红队测试展示。</p></article>
+<article class="scenario-card"><b>03 慢行断点诊断</b><p>智脊廊道可解释导视与人工复核。</p></article>
+<article class="scenario-card"><b>04 人才生活管家</b><p>社区配套聚合服务，不做个人画像滥用。</p></article>
+<article class="scenario-card"><b>05 校企转化客厅</b><p>近校孵化、法务与知识产权服务。</p></article>
+<article class="scenario-card"><b>06 国际路演客厅</b><p>大钟寺智能体与终端展示洽谈。</p></article>
+<article class="scenario-card"><b>07 数据要素会客厅</b><p>授权、可审计的数据流通界面。</p></article>
+<article class="scenario-card"><b>08 低碳算力驿站</b><p>端侧算力与公共服务设施融合原型。</p></article>
+<article class="scenario-card"><b>09 京张记忆线路</b><p>铁路文脉与AI新文化导览。</p></article>
+<article class="scenario-card"><b>10 全球AI活动周</b><p>开发者节、开放日与城市体验路线。</p></article>
+</div></section>
+
+<section class="sheet"><div class="sheet-head"><div><h2>任务覆盖</h2><p>compliance_matrix 覆盖公告 1.3–1.5 与 agent.1–agent.6。</p></div><span class="tag">matrices</span></div>
+<div class="grid2">
+<div><h3>来源</h3><p>sources.json、agent_taskbook、standards/references。本页不加载 CDN、远程瓦片、外部脚本、外部字体、API 或 iframe。</p><div class="source-line">sources.json / standard_matrix.json / design_depth_matrix.json</div></div>
+<div><h3>假设</h3><p>控规、道路红线、权属、市政、文保与工程条件待确认，见 assumptions.json。</p><div class="source-line">assumptions.json / self_check.json</div></div>
+</div></section>
+</main>
+</div>
+</body>
+</html>

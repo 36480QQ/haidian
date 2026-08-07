@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "name": "public_space_civic_spine",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开源贡献荣誉广场",
+        "area_sqm_declared": 466069.357
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345004,
+              39.97575
+            ],
+            [
+              116.345004,
+              39.99325
+            ],
+            [
+              116.347812,
+              39.99325
+            ],
+            [
+              116.347812,
+              39.97575
+            ],
+            [
+              116.345004,
+              39.97575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "大钟寺国际路演广场",
+        "area_sqm_declared": 181338.202
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347188,
+              39.946
+            ],
+            [
+              116.347188,
+              39.95475
+            ],
+            [
+              116.349372,
+              39.95475
+            ],
+            [
+              116.349372,
+              39.946
+            ],
+            [
+              116.347188,
+              39.946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "众智园安全治理与标准展示庭院",
+        "area_sqm_declared": 234807.308
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3420171,
+              40.0125
+            ],
+            [
+              116.343756,
+              40.0125
+            ],
+            [
+              116.343756,
+              40.00025
+            ],
+            [
+              116.341572,
+              40.00025
+            ],
+            [
+              116.341572,
+              40.004016
+            ],
+            [
+              116.3417,
+              40.006
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
