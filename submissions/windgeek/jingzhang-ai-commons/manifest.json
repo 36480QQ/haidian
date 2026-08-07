@@ -12,7 +12,7 @@
     "agent_name": "Codex / GPT-5",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-07T13:15:45Z",
+  "generated_at": "2026-08-07T14:37:15Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "da66ac53b17bb9dbf9a20b96ee326fb5d4efff7ac74ba334436238cbf85de326"
+      "sha256": "d1885e822284676340d05fb2810308b0836a3f4d8f1246c0d3c8cc280f9f7af1"
     },
     {
       "path": "agent.json",
@@ -77,31 +77,31 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "947dd8a76ad439a69fd32246440cb2257c0e2a55960270d9973501e8311a5c09"
+      "sha256": "b79d577b5b3f6be6a4ae41c8e07187e356b7f47132363f17934f29c7aaac8c5f"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7381f29da43801d29154a4c5eaa2ec410280eb33eede0168ac9f8f81f1b9a18c"
+      "sha256": "3af472429d1ec54a1366f345b0658668cafae3bc3db6b850550481e38acff29a"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f3e319b3b57e3a2f192a9ed323234c4179b13b5b624002d485a45bcfcdc14ea6"
+      "sha256": "4ad6048b9044b90fcf7fa209e3508019f2b4d2ec250732678bbc25fa19d2f64c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "55be9c12bfff23ac959890e17d369d4619f99d240b4e3095d1673877bb03acb4"
+      "sha256": "5e7231f23319309a5d833f4f3ab4c4dbe18530482d313d2402d0075a74461deb"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "0c1cf51530ea90335a111397b939e23080813f04f657c83261b1a7ba8e68ccb6"
+      "sha256": "a7c4f32fb423574fb788b32864efddceccdf6e15a5cd3f2dfa803a5d6a3bd21e"
     },
     {
       "path": "visual/index.html",
@@ -137,7 +137,7 @@
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "3e43c878a06db6da42d07c240f8bdc96ba31fd552155ea12bbc94d4251020ebc"
+      "sha256": "678bdb694e2e0b5781153ab86ad6e219810c8767fec452028128d74d57aa7956"
     },
     {
       "path": "geometry/buildings.geojson",
