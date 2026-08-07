@@ -7,18 +7,18 @@
  "metrics": {
   "site_area_sqm": {
    "status": "known",
-   "value": 11425715,
+   "value": 11412825,
    "unit": "sqm",
    "source_files": [
     "geometry/site_boundary.geojson"
    ],
-   "formula": "EPSG:4326球面近似面积（北京纬度等距圆柱修正），provisional polygon复算",
+   "formula": "EPSG:4548投影面积（CGCS2000 / 3-degree Gauss-Kruger CM 117E），provisional polygon复算",
    "confidence": "medium",
    "assumptions": [
     "A-BOUNDARY-001",
     "A-CONTROLS-001"
    ],
-   "reason": "公告总体设计范围约11.4平方公里；provisional polygon复算11.43平方公里，差值0.3%在provisional精度容差内。"
+   "reason": "公告总体设计范围约11.4平方公里；provisional polygon按EPSG:4548复算11,412,825平方米（11.41平方公里），差值0.1%在provisional精度容差内。"
   },
   "key_area_count": {
    "status": "known",
@@ -34,17 +34,17 @@
   },
   "key_area_total_sqm": {
    "status": "known",
-   "value": 3697820,
+   "value": 3692893,
    "unit": "sqm",
    "source_files": [
     "geometry/key_areas.geojson"
    ],
-   "formula": "三处重点区provisional polygon面积之和",
+   "formula": "三处重点区provisional polygon按EPSG:4548投影面积之和（1929201.88+1043236.91+720454.22）",
    "confidence": "medium",
    "assumptions": [
     "A-BOUNDARY-001"
    ],
-   "reason": "公告重点区域合计约368.4公顷（3,684,000平方米）；provisional复算3,697,820平方米，差值0.4%。"
+   "reason": "公告重点区域合计约368.4公顷（3,684,000平方米）；provisional按EPSG:4548复算3,692,893平方米（369.3公顷），差值0.2%。"
   },
   "land_use_area_sqm": {
    "status": "known",
@@ -105,17 +105,17 @@
   },
   "road_km": {
    "status": "known",
-   "value": 17.2,
+   "value": 17200,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
    ],
-   "formula": "概念性道路与慢行轴线长度之和（1条主轴+3条横向联系路+1条轨道接驳线）",
+   "formula": "概念性道路与慢行轴线长度之和（1条主轴+3条横向联系路+1条轨道接驳线），按米计",
    "confidence": "low",
    "assumptions": [
     "A-ROAD-001"
    ],
-   "reason": "概念性道路轴线长度；正式道路红线、断面以官方交通规划为准。"
+   "reason": "概念性道路轴线长度17.2km=17200m；正式道路红线、断面以官方交通规划为准。"
   },
   "scenario_card_count": {
    "status": "known",

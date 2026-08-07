@@ -19,7 +19,7 @@ iteration: "v1.0"
 
 本方案正文使用可校验引用格式：`[source:...]` 指向来源、`[standard:...]` 指向专业标准、`[depth:...]` 指向成果深度项、`[data:geometry/*.geojson#feature]` 指向空间图层、`[metric:...]` 指向复算指标。核心空间判断均可从 `geometry/*.geojson` 与 `metrics.json` 复算回溯，专业标准响应见 `standard_matrix.json`，成果深度证明见 `design_depth_matrix.json`，任务覆盖见 `compliance_matrix.json` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:three_level_scope_framework]。
 
-**边界诚实声明**：官方精确红线与三处重点区域官方polygon尚未发布，本方案使用provisional边界生成正式提交包。所有面积复算（site_area_sqm=11,425,715平方米 [metric:site_area_sqm]，key_area_total_sqm=3,697,820平方米 [metric:key_area_total_sqm]）均为临时复算结果，官方polygon发布后须全部重算 [source:BOUNDARY-SOURCE]。该组织方数据缺口不阻断内容评分，但本方案不将provisional边界表述为官方红线或法定控制结论。
+**边界诚实声明**：官方精确红线与三处重点区域官方polygon尚未发布，本方案使用provisional边界生成正式提交包。所有面积复算（site_area_sqm=11,412,825平方米 [metric:site_area_sqm]，key_area_total_sqm=3,692,893平方米 [metric:key_area_total_sqm]）均为临时复算结果（EPSG:4548口径），官方polygon发布后须全部重算 [source:BOUNDARY-SOURCE]。该组织方数据缺口不阻断内容评分，但本方案不将provisional边界表述为官方红线或法定控制结论。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -166,7 +166,7 @@ iteration: "v1.0"
 
 ### 6.2 AI场景卡（13张）
 
-方案形成13张AI场景卡（[metric:scenario_card_count]张，含[metric:test_scenario_count]个测试验证场景）（SC-01至SC-13，详见 `agents_content/scenario_cards.md` 与正文映射），覆盖AI+信软、AI+医疗、AI+教育、AI+法律、AI+生活服务、AI+交通、AI+公共空间、AI+文化导览等方向 [source:AGENT-TASKBOOK] [depth:ai_persona_and_scenarios]。核心场景如下：
+方案形成13张AI场景卡（[metric:scenario_card_count]张，含[metric:test_scenario_count]个测试验证场景）（SC-01至SC-13，详见 `report/narrative.md` 场景卡全集与 `visual/assets/scenarios/*.json` 结构化卡片，以及正文映射），覆盖AI+信软、AI+医疗、AI+教育、AI+法律、AI+生活服务、AI+交通、AI+公共空间、AI+文化导览等方向 [source:AGENT-TASKBOOK] [depth:ai_persona_and_scenarios]。核心场景如下：
 
 **SC-01 AI创业者「智脉护航」一站式服务终端**（众智园）：聚合公开政策数据提供创业服务匹配，关键事项强制人工复核，不追踪个人身份。
 
@@ -201,6 +201,25 @@ TV-01 京张遗址公园AI文化导览（SC-04）；TV-02 无人配送试点走�
 ### 6.4 场景-空间-运营映射
 
 13张场景卡映射至三区两翼与遗址公园主轴，形成「场景→空间→运营主体→人工复核」完整链条：众智园承载全栈验证与服务场景（SC-01/09）、原点社区承载策源与协作场景（SC-02/05/08）、大钟寺承载产业与商务场景（SC-03/10/13）、中关村科技服务翼承载资本与IP场景（SC-06）、小月河场景赋能翼承载生活服务场景（SC-07）、遗址公园主轴承载公共体验与安全感知场景（SC-04/12）[source:AGENT-TASKBOOK]。
+
+### 6.5 AI场景与空间设计的咬合（概念建议）
+
+方案坚持「场景驱动空间需求、空间反向定义场景边界」的双向咬合原则 [depth:ai_persona_and_scenarios]：
+
+- **场景驱动空间**：AI+无人配送（SC-09）需要路侧边缘计算节点——相应空间设计在试点路段建筑退线预留「算力舱」位置，地面预埋供电与光纤接口 [data:geometry/roads.geojson]；AI+公共空间感知（SC-12）需要传感网络——遗址公园广场施工图阶段预留地下传感器管网与边缘节点 [data:geometry/public_space.geojson#PUBLIC-004]。
+- **空间反向约束技术**：清华园车站文保节点（SC-08）禁止大规模视觉装置——相应AI方案采用端侧推理、毫米波感知等低侵入技术路径 [assumption:A-HERITAGE-001]；遗址公园历史地段控制传感器密度，优先聚合统计 [source:AGENT-TASKBOOK]。
+- **体验流线串联**：形成「京张一小时」AI体验环——市民从清华东南门出发，步行串联AI+教育（SC-05）→AI+生活服务（SC-07）→AI+文化导览（SC-04）→AI+公共空间（SC-12），1小时内完成完整AI场景体验 [source:AGENT-TASKBOOK]。
+- **基础设施即载体**：综合管廊概念建议除水电气外预留「光纤+算力+传感器」三合一智廊通道，使AI场景具备物理底座 [data:geometry/buildings.geojson]。
+
+### 6.6 城市智能体治理（civic-agent-governance 差异化设计）
+
+针对官方track「城市智能体治理」[source:AGENT-TASKBOOK]，方案提出**「三层治理智能体架构」**（概念建议，治理机制方向，非系统实现承诺）：
+
+1. **信息智能体**：公开读取规划方案、政策文件与市民反馈，自动生成面向不同利益相关者的可读摘要与差异对比——「一策多读」；
+2. **推演智能体**：在城市数字孪生框架下推演规划方案变更的交通、环境、日照等影响，输出多情景对比与风险提示——「先推演、后决策」；
+3. **协商智能体**：在公众参与环节汇总多渠道市民意见，识别共识区与分歧区，生成「协商议题包」供人工主持的线下协商使用——「AI辅助、人类裁决」。
+
+**治理原则（方案建议）**：人类最终决策权不可让渡；AI建议必须可解释；受影响方有权要求人工复核。建议以「治理信息亭」形式沿遗址公园每800m设置公众参与节点，并设立「AI治理体验馆」作为市民可触摸交互的城市智能体治理展示空间 [data:geometry/public_space.geojson]。本部分为机制方向建议，不构成系统建设承诺或政府安排 [assumption:A-OPERATION-001]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -275,7 +294,21 @@ TV-01 京张遗址公园AI文化导览（SC-04）；TV-02 无人配送试点走�
 
 **近期（2026-2028）**：三处重点区域启动区（PHASE-001/002）——全栈验证平台、开源广场、产业集聚载体先行；**中期（2028-2030）**：京张主轴贯通段（PHASE-003）与大钟寺更新区（PHASE-004）——慢行体系缝合、智能原生消费场景落地；**远期（2030-2035）**：两翼协同完善区（PHASE-005）——全域功能完善、运营机制成熟 [data:geometry/phasing.geojson]。分期为概念建议，非开发时序承诺。
 
-### 10.3 全球AI创新活动体系与长期运营
+**分期锚点（公开节点）**：以可验证的公开事件锚定实施节奏——2026年方案征集与综合规划整合（公告明确流程节点）、2027年中关村论坛（年度全球AI交流平台，真实存在）作为首发项目发布窗口、2028-2030年进入重点区建设期、2031-2035年与城市更新行动长期目标衔接。分期逻辑为方案建议，不构成政府实施承诺 [source:AGENT-TASKBOOK] [assumption:A-OPERATION-001]。
+
+### 10.3 实施机制与政策框架（概念建议）
+
+**机制设计原则**：在官方控规、权属与现状数据发布前，本方案仅提出机制框架与政策工具方向，不指定具体企业、不承诺投资额、不推定政府安排。方案建议在控规稳定后通过法定程序推进实施 [source:AGENT-TASKBOOK]。
+
+**统筹与实施机制方向**：①「片区统筹」思路——参照城市更新通行做法，以实施单元方式组织多主体协同，经营性项目与公益性项目捆绑平衡（"肥瘦搭配"原则）；②「校区-园区-街区」三区融合——依托海淀高校密集禀赋，建立高校策源、园区转化、街区承载的协同机制 [source:OFFICIAL-ANNOUNCEMENT]；③「全生命周期管理」——从策划、设计、建设到运营的分阶段管控，责任规划师/建筑师等专业力量全程参与（概念建议，机制方向）[depth:renewal_project_list]。
+
+**政策工具方向（真实公开框架，不编造条款）**：①北京市已出台城市更新专项法规并建立实施单元与统筹主体制度——方案建议在控规完成后按该制度框架确定实施主体（描述制度路径，不指定主体）；②国家层面持续推动城市更新行动并支持符合条件的项目通过专项债券、基础设施REITs等渠道融资——方案建议在实施阶段评估适用性（渠道为公开政策方向，不承诺资金）；③海淀区「1+X+1」现代产业体系与「AI+」融合方向为产业导入提供政策环境——方案产业定位与之对齐 [source:OFFICIAL-ANNOUNCEMENT] [source:CASE-GLOBAL-AI-ECOSYSTEM]。
+
+**投资模式方向**：建议采取「政府引导+市场运作」组合，资金来源渠道可探讨专项债、REITs、市场化基金、经营性收益反哺等公开政策允许渠道的组合（均为渠道方向建议，不含具体金额，不推定资金安排）[assumption:A-OPERATION-001]。
+
+**实施风险识别**：①控规数据缺口（容积率/高度/权属未知）——方案以建议区间呈现，控规发布后校核；②边界不确定性——provisional边界，官方polygon发布后重算；③市场与政策环境变化——分期计划保持弹性，设置年度体检与中期评估机制（概念建议）[depth:risk_missing_data] [assumption:A-CONTROLS-001]。
+
+### 10.4 全球AI创新活动体系与长期运营
 
 **年度活动体系**（概念建议）[source:AGENT-TASKBOOK]：春季京张AI开源周+年度战略发布会；夏季全球AI开发者大会+AI+城市场景黑客松；秋季AI安全与治理国际对话+中关村创新文化周；冬季AI创新带年度成果展；全年按需全球AI创业加速营、AI场景开放日（月度）、学术前沿沙龙（双周）。
 
@@ -295,7 +328,7 @@ TV-01 京张遗址公园AI文化导览（SC-04）；TV-02 无人配送试点走�
 
 方案建立以下指标（详见 `metrics.json` 与 `assets/figures/metrics-evidence.png`）[metric:site_area_sqm] [metric:key_area_total_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:road_km]：
 
-- **空间规模**：总体设计范围11.43平方公里（公告11.4平方公里，provisional复算）；重点区域合计369.8公顷（公告368.4公顷）；
+- **空间规模**：总体设计范围11.41平方公里（公告11.4平方公里，EPSG:4548复算）；重点区域合计369.3公顷（公告368.4公顷）；
 - **绿色与公共空间**：绿地率13.9%（概念）、公共空间率4.6%（概念）——支撑人才生活品质与创新交往；
 - **慢行网络**：概念性道路与慢行轴线17.2公里；
 - **AI场景**：13张场景卡、3个测试验证场景、6类用户画像、3个朝圣地标；
@@ -303,7 +336,7 @@ TV-01 京张遗址公园AI文化导览（SC-04）；TV-02 无人配送试点走�
 
 ### 11.2 面积复算
 
-面积基于EPSG:4326球面近似（北京纬度等距圆柱修正）复算 [data:geometry/site_boundary.geojson#SITE-001]。provisional边界复算值与公告数值差值均<0.5%：site（11,425,715 vs 11,400,000）、key areas（3,697,820 vs 3,684,000）[metric:site_area_sqm] [metric:key_area_total_sqm]。官方polygon发布后须全部重算 [assumption:A-BOUNDARY-001]。
+面积按仓库规定口径 EPSG:4548（CGCS2000 / 3-degree Gauss-Kruger CM 117E）投影复算 [data:geometry/site_boundary.geojson#SITE-001] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。provisional边界复算值与公告数值差值均<0.5%：site（11,412,825 vs 11,400,000）、key areas（3,692,893 vs 3,684,000）[metric:site_area_sqm] [metric:key_area_total_sqm]。官方polygon发布后须全部重算 [assumption:A-BOUNDARY-001]。
 
 ### 11.3 合规矩阵
 

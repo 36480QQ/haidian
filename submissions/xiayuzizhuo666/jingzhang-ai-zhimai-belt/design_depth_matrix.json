@@ -471,7 +471,7 @@
    "self_check_ids": [
     "EVIDENCE_TRACE"
    ],
-   "evidence_summary_zh": "全部指标从GeoJSON复算（EPSG:4326球面近似），与公告数值差值<0.5%，官方边界发布后须重算。"
+   "evidence_summary_zh": "全部指标从GeoJSON按仓库规定口径EPSG:4548投影复算，与公告数值差值<0.5%，官方边界发布后须重算。"
   },
   {
    "item_id": "risk_missing_data",
