@@ -12,7 +12,7 @@
     "confidence": "medium",
     "geometry_role": "design_proposal",
     "road_class": "greenway",
-    "name_zh": "人字轴漫步道（京张遗址公园主轴慢行道）",
+    "name_zh": "人字轴漫步道·未来臂（京张高铁走廊方向主轴慢行道）",
     "note_zh": "慢行与接驳概念线位，仅为参考方案，不构成道路红线或工程线形结论。"
    },
    "geometry": {
@@ -25,6 +25,45 @@
      [
       116.34725,
       40.026
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "RD-ARM-HIST",
+   "properties": {
+    "id": "RD-ARM-HIST",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "greenway",
+    "name_zh": "人字历史臂·京张故线走廊漫步道（沿故线实测走向，出带衔接大钟寺站、知春路站、五道口、清华园车站方向）",
+    "note_zh": "慢行与接驳概念线位，仅为参考方案，不构成道路红线或工程线形结论。"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3468,
+      39.9405
+     ],
+     [
+      116.3458,
+      39.944
+     ],
+     [
+      116.3439,
+      39.9498
+     ],
+     [
+      116.342,
+      39.9555
+     ],
+     [
+      116.3404,
+      39.9598
      ]
     ]
    }
