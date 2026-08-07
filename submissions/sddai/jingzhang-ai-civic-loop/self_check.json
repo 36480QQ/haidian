@@ -27,7 +27,7 @@
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "message": "离线 HTML、五张核心图和 A3/A0 均由同一 GeoJSON/metrics 数据生成；无远程资源，图中核心指标与 metrics.json 一致。"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
