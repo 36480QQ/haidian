@@ -3,7 +3,7 @@ title: "京张智脉：面向公共智能的开放城市共生带"
 author_github: "Alpaca233114514"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张铁路记忆为公共空间脊柱，以开放验证、开源转化和智能经济三类重点区为锚点，构建可复算、可审计、可供专业团队深化的公共智能城市共生带。"
+summary: "以“一脊三锚六站”为唯一总体空间结构：京张铁路遗产与南北公共智能/蓝绿慢行主轴为脊，三处重点区为锚，六个公共客厅为站，并以四条东西缝合线和蓝绿慢行专项系统支撑可复算、可审计的公共智能城市共生带。"
 iteration: "v1.0"
 version: "1.0.0"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -26,7 +26,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源。[source:PROCESSED-FACT-PACK] 只帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；所有事实判断仍回到 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]。
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![一脊三锚六站总体空间结构与资料边界图](assets/figures/site-overview.png)
 
 本方案在 official `SITE_BOUNDARY` 与三处 `KEY_AREA` 尚未取得时，使用仓库 `provisional_boundaries.geojson` 作为临时生成约束。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均保持 `provisional_constraint`、`official_boundary=false`；它们只用于 intake 生成、自检、可视化和设计讨论，不作为 official redline、审批依据或精确面积依据。official polygons 到位后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing、metrics、五张图、HTML 与 PDF 必须作为一个整体重新生成。
 
@@ -44,7 +44,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三层工作不是互相割裂的图纸集合。统筹研究决定产业链和城市形态判断，总体设计把判断落实到更新项目、空间结构和设施承载，重点区域详细设计验证具体地块、建筑、交通、公共空间和AI应用场景的可实施性。agent 生成方案时必须先锁定当前提交采用的 official 或 provisional 边界和约束，再生成用地、建筑、道路、绿地、公共空间、分期和AI服务节点，最后从这些图层复算指标并在正文解释哪些结论仍受 provisional boundary 限制。任何无法从结构化数据复算的面积、比例、规模或项目数量，不得写入正式结论。
 
-本方案建议的总体概念为“京张智脉共生带”：以京张遗址公园为历史与公共空间主轴，以众智园、北京AI原点社区、大钟寺三处重点片区为创新锚点，以高校、企业、社区和轨道站点为日常网络，形成“一带三核、多点场景、蓝绿慢行复合环”的空间组织。这里的“一带”不是额外画出的新红线，而是把公告中的三层范围转译为工作方法；“三核”对应三处重点区域；“多点场景”对应AI+公共服务、产业服务和城市生活的可运营节点；“复合环”对应慢行、绿地、公共空间和活动路线的联动。
+本方案以“一脊三锚六站”作为唯一的总体空间结构，不再并列使用另一套总结构口号。“一脊”是京张铁路遗产公共空间与南北公共智能/蓝绿慢行主轴的复合体；“三锚”是众智园、北京AI原点社区和大钟寺三处重点区域；“六站”是沿主脊布置的六个公共客厅，把技术能力翻译为日常可理解、可退出、可复核的城市服务。四条东西缝合线属于横向连接系统，负责校区、园区、街区和轨道站点之间的联系；“全栈验证—开源转化—智能经济”是三锚分别承担的功能主题；蓝绿慢行复合环是交通与公共空间专项系统，不与总体空间结构平级。该层级同时回应公告要求的三层工作范围：“一脊三锚六站”组织空间，产业生态链组织功能，专项系统组织实施接口。
 
 | 层级 | 设计问题 | 方案回答 | 数据落点 |
 | --- | --- | --- | --- |
@@ -62,7 +62,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 品牌与命名系统：JINGZHANG COMMONS
 
-主名称“京张智脉”把铁路的线性记忆与公共智能的网络逻辑叠合；英文名 **JINGZHANG COMMONS** 强调 AI 资源不是封闭园区福利，而是可被研究者、企业、居民和访客共同使用的城市公共能力。命名系统分为五层：南北主脊“Commons Spine”、众智园“Open Stack Gardens”、原点社区“Origin Commons”、大钟寺“Agent Agora”、年度公共体验路线“Memory Loop”。Logo 方向采用两条平行轨道、三个站点圆与一条开放回路组成的抽象“京/J”组合标，不使用任何企业商标或未授权字体；单色、16px 小图标和黑白打印均可识别。视觉色彩以深海军蓝表示可信治理、轨道青表示开放协作、信号琥珀表示公共交互，并以灰色虚线专门表示 provisional 边界。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+主名称“京张智脉”把铁路的线性记忆与公共智能的网络逻辑叠合；英文名 **JINGZHANG COMMONS** 强调 AI 资源不是封闭园区福利，而是可被研究者、企业、居民和访客共同使用的城市公共能力。命名系统服从“一脊三锚六站”的空间层级：南北主脊为“Commons Spine”，众智园、原点社区和大钟寺三锚分别为“Open Stack Gardens”“Origin Commons”“Agent Agora”，六个公共客厅统一使用“Commons Station”节点语法；年度公共体验路线“Memory Loop”属于运营品牌，不另立空间总结构。Logo 方向采用两条平行轨道、三个锚点圆与一组开放站点组成的抽象“京/J”组合标，不使用任何企业商标或未授权字体；单色、16px 小图标和黑白打印均可识别。视觉色彩以深海军蓝表示可信治理、轨道青表示开放协作、信号琥珀表示公共交互，并以灰色虚线专门表示 provisional 边界。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
 ### 全球案例转译：从“复制园区”转向“提取机制”
 
@@ -82,21 +82,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠，`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底，`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系，`metrics.json` 应复算核心面积、比例和图层数量。
 
-本方案把 provisional 总体范围用两条南北共同切线与四条东西共同切线切分为 15 个拓扑安全单元，形成“中央公园与开放空间脊 + 两侧复合功能带”。中央 1401 公园绿地不是孤立色带，而是承载文化导览、无障碍慢行、低侵入式 AI 服务和六个公共客厅的城市共享界面；北段以 0802 科研和 05 科技服务支撑开放验证，中段以 0804 教育科研、0702 社区服务和 0803 文化展示支撑开源转化，南段以 0701 生活支持和 05 智能经济支撑大钟寺城市型创新街区。15 个单元共享边界坐标，面积总和与提交边界一致。[data:geometry/land_use.geojson#LU-001] [metric:land_use_partition_area_sqm]
+本方案把 provisional 总体范围用两条南北共同切线与四条东西共同切线切分为 15 个拓扑安全单元，形成“一脊两侧”的用地支撑关系。中央 1401 公园绿地承载京张遗产叙事、无障碍慢行、低侵入式 AI 服务和六个公共客厅，是“一脊”的城市共享界面；两侧复合功能单元为“三锚”提供差异化支撑：北部众智园以 0802 科研和 05 科技服务承接全栈验证，中部原点社区以 0804 教育科研、0702 社区服务和 0803 文化展示承接开源转化，南部大钟寺以 0701 生活支持和 05 科技服务承接智能经济与国际交往。上述三类主题是锚点分工，不是新的空间层级。15 个单元共享边界坐标，面积总和与提交边界一致。[data:geometry/land_use.geojson#LU-001] [metric:land_use_partition_area_sqm]
 
 建筑图层布置 12 个参考原型，分别对应开放验证院、协作加速器、开源学院、成果转化坊、铁路记忆工坊、公共智能生活实验室、青年共居、智能体协同办公和步行服务核等。它们只用于验证“功能-公共空间-慢行”的组合关系，统一标为 `conceptual_reference_prototype`；不代表现状建筑，不指认产权，也不作具体拆除、新建或工程可行性结论。[data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]
 
 本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达交通组织，[metric:building_footprint_area_sqm] 用于复核建筑基底面积，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
 
-总体设计以一条南北公共智能廊和四条东西缝合线组织慢行与服务：众智园清河创新缝合线、原点社区校园街区协同线、中段文化创新联系线和大钟寺四象限慢行联系线。它们表达要解决的连接关系，不表达道路红线或工程线位。市政层面提出“端侧服务柜-街区共享机房-区域算力服务”的三级概念架构，所有能源、管线、消防、防洪和运维容量均待 official 专项资料确认。[data:geometry/roads.geojson#ROAD-001] [metric:road_centerline_length_m] [depth:municipal_new_infrastructure]
+总体设计的交通与服务网络服从“一脊三锚六站”：南北公共智能廊与京张遗产、蓝绿慢行空间共同构成“一脊”；众智园清河创新缝合线、原点社区校园街区协同线、中段文化创新联系线和大钟寺四象限慢行联系线构成四条横向连接系统；六个公共客厅作为沿脊服务节点。由主脊、横向缝合线和局部活动路线共同形成的蓝绿慢行复合环，只是交通与公共空间专项系统，不另立总体结构。所有联系线仅表达待解决的连接关系，不表达道路红线或工程线位。市政层面提出“端侧服务柜-街区共享机房-区域算力服务”的三级概念架构，所有能源、管线、消防、防洪和运维容量均待 official 专项资料确认。[data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:road_centerline_length_m] [depth:municipal_new_infrastructure]
 
-## 重点区域详细设计
+## 三锚：重点区域详细设计
 
 重点区域详细设计是必选项。众智园AI自主创新加速区应围绕国家人工智能平台、全栈自主创新、标准制定、安全治理、产业展示、对外交通、清河文化、低碳绿色创新交往环境和绿色空间AI场景提出详细方案。北京AI原点社区应围绕近校创新、成果孵化转化、人才特区、开源体系、品牌活动、建筑拆改留、成果展示发布、居住生活配套、校区园区慢行联系和轨道站点一体化提出详细方案。大钟寺AI产业聚集区应围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通提出详细方案。
 
 三处重点区域详细设计必须引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，并由 [depth:three_key_area_detailed_design] 检查是否达到规划综合实施方案深度。若只描述“打造示范区”而没有功能、建筑、交通、公共空间和实施项目证据，应被视为未完成。
 
-![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
+![三锚功能分工与重点区域设计任务图](assets/figures/key-areas.png)
 
 三处重点区域必须在 `geometry/key_areas.geojson` 中出现。若仓库已提供 official polygons，应作为 `official_constraint` 使用；若 official polygons 缺失，可暂用 `provisional_constraint`，但正文、HTML、sources、assumptions 和 self_check 必须说明它不能作为正式评分或审批依据。`compliance_matrix.json` 应分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。设计表达应包含功能业态、建筑规模、建筑形态、拆改留分类、公共空间系统、交通组织、慢行连通和实施项目。HTML 页面应能切换查看三处重点区域，A3 文册和 A0 展板应至少包含重点片区总图、局部详图和指标说明。
 
@@ -164,13 +164,15 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 交通和市政专业深度分别由 [depth:traffic_rail_slow_parking] 与 [depth:municipal_new_infrastructure] 约束；图层证据引用 [data:geometry/roads.geojson#ROAD-001]、[data:geometry/public_space.geojson#PUBLIC-001] 和 [data:geometry/constraints.geojson#CONSTRAINTS]。当道路红线、管线、消防和市政条件缺失时，应通过 assumptions 说明待补，而不是把策略写成审定条件。
 
-![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
+![一脊下的四条东西缝合线、六站与蓝绿慢行专项系统图](assets/figures/mobility-bluegreen.png)
 
 市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
+专项层级：蓝绿慢行复合环。
+
+蓝绿慢行复合环是“一脊三锚六站”下的专项系统：以京张遗址公园活力带主脊为骨架，通过四条东西缝合线和局部活动回路，统筹清河、小月河、周边高校、企业、社区出行需求，形成南北贯通、东西连通的步道、骑行道和绿色空间体系。它不承担总体结构命名，只负责慢行连续性、生态联系和公共活动组织。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
 
 蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio] 和 [metric:public_space_ratio]。城市设计管理办法要求统筹景观风貌、公共空间和建筑控制，因此本节同时引用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
