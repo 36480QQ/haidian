@@ -16,7 +16,13 @@
       "confidence": "high",
       "assumptions": [
         "Trusted official boundary is present in the site package."
-      ]
+      ],
+      "evidence_chain": {
+        "data": "geometry/site_boundary.geojson#SITE-001",
+        "source": "BOUNDARY-SOURCE",
+        "standard": "MOHURD-CONTROL-DETAILED-PLANNING",
+        "depth": "existing_conditions_diagnosis"
+      }
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -27,7 +33,13 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "evidence_chain": {
+        "data": "geometry/buildings.geojson#BLDG-001",
+        "source": "PROCESSED-FACT-PACK",
+        "standard": "MOHURD-ARCH-DESIGN-DEPTH-2016",
+        "depth": "buildings"
+      }
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +51,13 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "evidence_chain": {
+        "data": "geometry/green_space.geojson#GREEN-001",
+        "source": "PROCESSED-FACT-PACK",
+        "standard": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+        "depth": "blue_green_public_space"
+      }
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +69,13 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "evidence_chain": {
+        "data": "geometry/public_space.geojson#PUBLIC-001",
+        "source": "PROCESSED-FACT-PACK",
+        "standard": "MOHURD-URBAN-DESIGN-MEASURES",
+        "depth": "public_space"
+      }
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -74,7 +98,13 @@
       ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "evidence_chain": {
+        "data": "geometry/key_areas.geojson#KA-ZZY",
+        "source": "KEY-AREA-SOURCE",
+        "standard": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "depth": "three_key_area_detailed_design"
+      }
     }
   }
 }

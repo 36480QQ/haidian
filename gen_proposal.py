@@ -1,23 +1,23 @@
----
+"""Generate the full proposal.md for 开源京张：AI 场景之都."""
+import json
+
+OUT = "submissions/Microbiosis/kaiyuan-jingzhang-ai-city/proposal.md"
+
+with open("submissions/Microbiosis/kaiyuan-jingzhang-ai-city/metrics.json") as f:
+    metrics_raw = json.load(f)
+
+md = r'''---
 title: "开源京张：AI 场景之都"
 author_github: "Microbiosis"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以'AI 场景操作系统'为总体概念，把百年京张文化带、都市AI生活体验带、AI融合创新带整合为可编排、可测试、可运营的城市级开源平台；众智园做全栈自主创新，AI原点社区做生态与场景，大钟寺做产业聚集，三处重点区沿京张铁路遗址公园活力带形成 AI 场景走廊。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "ai-origin-community"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide", "ai-health-service-navigation"]
+tracks: ["ai-enterprise-ecosystem", "ai-scenario-innovation", "ai-cultural-pilgrimage"]
+scenarios: ["ai-enterprise-ecosystem", "ai-scenario-innovation", "ai-culture-pilgrimage"]
 iteration: "v1.0"
 ---
 
 # 开源京张：AI 场景之都
-
-## Executive Summary
-
-本方案以"AI 场景操作系统"为总体概念，将百年京张文化带、都市AI生活体验带、AI融合创新带整合为可编排、可测试、可运营的城市级开源平台。三处重点区（众智园192ha / AI原点社区104ha / 大钟寺72ha，合计368.4ha）沿10公里京张遗址公园活力带形成AI场景走廊，三区两翼（中关村科技服务翼+小月河场景赋能翼）构成"全栈技术→生态孵化→产业转化"协同回路。
-
-方案包含10张AI场景卡（含3张产业测试验证SC-TEST-001~003）、5类用户画像、3处朝圣地标、7个全球对标案例、5类年度活动体系。空间结论均基于provisional geometry，标注为"概念建议/参考方案"，待官方polygon 2026-11-30发布后重算核心指标。
-
-所有证据链均可追溯：9层GeoJSON → metrics.json → sources.json → compliance/standard/design_depth三矩阵 → agent.1~6全覆盖。
 
 ## 设计依据与资料清单
 
@@ -25,7 +25,7 @@ iteration: "v1.0"
 
 本方案在生成前完整读取了 `data/source_registry.json`，并按登记状态区分资料用途：formal-ready 资料 5 条（公告、任务书、城市设计管理办法、控规办法、用地分类指南），provisional-only 资料 1 条（临时粗略边界）。[source:SOURCE-REGISTRY] **本方案所有空间落地判断均表述为"概念建议"或"参考方案"，不替代正式规划，不构成政府审定结论。** [agent.1]
 
-三层范围和三处重点区的官方精确 polygon 目前处于"密码保护/未公开"状态，本方案使用维护者登记的临时粗略 polygon [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:PROCESSED-FACT-PACK] 完成几何生成、指标复算和可视化，但以下内容明确受其精度限制：
+三层范围和三处重点区的官方精确 polygon 目前处于"密码保护/未公开"状态，本方案使用维护者登记的临时粗略 polygon [source:BOUNDARY-SOURCE] 完成几何生成、指标复算和可视化，但以下内容明确受其精度限制：
 - 用地布局比例、建筑规模、重点区面积等精确指标 [metric:land_use_ration]、[metric:key_area_count]、[metric:site_area]
 - 蓝绿空间比例、慢行连通性指标 [metric:green_ratio]、[metric:public_space_ratio]
 - A3/A0 图纸中的边界线条和用地色块
@@ -104,7 +104,7 @@ iteration: "v1.0"
 
 ### 世界级 AI 创新生态体系
 
-海淀区 2026 年"1+X+1"现代化产业体系以 AI 为核心产业 [source:HAIDIAN-1X1]，中关村"三区两翼"战略以众智园、AI 原点、大钟寺为核心三区 [source:THREE-AREAS-WINGS]。截至 2025 年 6 月，海淀区已集聚 AI 企业 1900 余家、备案大模型 89 款（占全国三分之一）、AI 学者 1.23 万人、独角兽企业 26 家 [source:HAIDIAN-AI-2025-REPORT]；2026 年区级计划继续强化算力、数据、场景和人才四位一体支撑 [source:HAIDIAN-2026-PLAN]。2026 中关村论坛 AI 主题日同步发布 AI 产业创新发展与投资生态全景 [source:ZGC-AI-FORUM-2026]。本方案把这一产业战略映射为空间结构，提出 **AI 场景操作系统（AI Scenario OS）** 的总体概念：
+海淀区 2026 年"1+X+1"现代化产业体系以 AI 为核心产业 [source:HAIDIAN-1X1]，中关村"三区两翼"战略以众智园、AI 原点、大钟寺为核心三区 [source:THREE-AREAS-WINGS]。本方案把这一产业战略映射为空间结构，提出 **AI 场景操作系统（AI Scenario OS）** 的总体概念：
 
 - **场景即产品**：AI 能力通过城市场景交付，而非以 SDK 或 API 形式
 - **数据即 API**：公共数据、场景数据、仿真数据以可控方式向开发者开放
@@ -352,8 +352,6 @@ AI 人才分五类：
 
 ## 蓝绿空间、公共空间与城市风貌
 
-本节引用 [source:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio]。
-
 ### 京张遗址公园活力带
 
 京张铁路遗址公园作为南北贯通的活力带（约 10 km），是"AI 公共空间"的核心载体 [agent.4]：
@@ -386,8 +384,6 @@ AI 人才分五类：
 - 数据可视化景观装置
 
 ## 更新项目清单、实施政策与分期计划
-
-本节引用 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:renewal_project_list] [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001]。
 
 ### 更新项目清单（概念性）
 
@@ -532,9 +528,6 @@ AI 人才分五类：
 - [source:SITE-PACKAGE] brief/site-package/
 - [source:BOUNDARY-SOURCE] brief/site-package/geometry/provisional_boundaries.geojson
 - [source:HAIDIAN-1X1] 海淀区"1+X+1"现代化产业体系建设布局，2026-03-02
-- [source:HAIDIAN-AI-2025-REPORT] 新京报贝壳财经联合中关村科学城管委会，《海淀是"源"的——2025海淀人工智能创新图鉴》，2025-07-17
-- [source:HAIDIAN-2026-PLAN] 北京市海淀区人民政府办公室，《关于海淀区2025年国民经济和社会发展计划执行情况与2026年国民经济和社会发展计划的报告》，2026-02-06
-- [source:ZGC-AI-FORUM-2026] 2026中关村论坛年会"人工智能主题日"AI未来论坛，2026-03-31
 - [source:THREE-AREAS-WINGS] 北京市科委、中关村管委会，"三区两翼"打造世界级AI集聚地，2026-04-03
 - [standard:MOHURD-URBAN-DESIGN-MEASURES] 住建部《城市设计管理办法》，2017
 - [standard:MOHURD-CONTROL-DETAILED-PLANNING] 住建部《城市、镇控制性详细规划编制审批办法》
@@ -557,77 +550,9 @@ AI 人才分五类：
 - [agent.4] AI公共空间、智能原生新业态与朝圣地标设计
 - [agent.5] 百年京张文化、中关村文化与AI新文化融合叙事设计
 - [agent.6] 一带全球AI创新活动体系与长期运营设计
+'''
 
-## 结构化证据索引（Evidence Chain Appendix）
+with open(OUT, "w", encoding="utf-8") as f:
+    f.write(md)
 
-本节集中列出本方案的全部结构化证据引用，供 validator 校验和评审快速定位。
-
-### 地理空间图层索引 [data:geometry/site_boundary.geojson#SITE-001]
-
-| 图层文件 | Feature ID | 说明 | 引用位置 |
-|---------|-----------|------|---------|
-| `geometry/site_boundary.geojson` | SITE-001 | 总体设计范围边界（临时粗略） | 三层范围 |
-| `geometry/key_areas.geojson` | KA-ZZY | 众智园 AI 自主创新加速区 | 重点区域详细设计 |
-| `geometry/key_areas.geojson` | KA-OCT | 北京 AI 原点社区 | 重点区域详细设计 |
-| `geometry/key_areas.geojson` | KA-DZS | 大钟寺 AI 产业集聚区 | 重点区域详细设计 |
-| `geometry/land_use.geojson` | LU-001 | 用地分区：科研/创新 | 用地布局 |
-| `geometry/land_use.geojson` | LU-002 | 用地分区：商服/消费 | 用地布局 |
-| `geometry/land_use.geojson` | LU-003 | 用地分区：居住/社区 | 用地布局 |
-| `geometry/land_use.geojson` | LU-004 | 用地分区：公园绿地/蓝绿 | 用地布局 |
-| `geometry/buildings.geojson` | BLDG-001 | 建筑体量分布（概念性） | 建筑规模与开发强度 [data:geometry/buildings.geojson#BLDG-001] [depth:height_massing_character] |
-| `geometry/roads.geojson` | ROAD-001 | 道路与慢行网络 | 交通轨道与市政 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking] |
-| `geometry/green_space.geojson` | GREEN-001 | 绿地与蓝绿空间 | 蓝绿空间与公共空间 [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space] |
-| `geometry/public_space.geojson` | PUBLIC-001 | 公共空间节点 | 蓝绿空间与公共空间 [data:geometry/public_space.geojson#PUBLIC-001] [depth:public_space] |
-| `geometry/constraints.geojson` | CONST-001 | 约束条件（文保、生态等，待补） | 风险与待补资料 [data:geometry/constraints.geojson#CONST-001] [depth:risk_missing_data] |
-| `geometry/phasing.geojson` | PHASE-001 | 分期实施（概念性） | 分期计划 [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] |
-
-### 指标索引 [metric:site_area_sqm]
-
-| 指标 ID | 值 | 说明 |
-|---------|---|------|
-| [metric:site_area_sqm] | 11,412,825 m² | 总体设计面积（基于临时 polygon） |
-| [metric:building_footprint_area_sqm] | 待重算 | 建筑基底面积 |
-| [metric:floor_area_ratio] | 待官方控规确认 | 容积率（概念性） |
-| [metric:green_ratio] | ~20% | 绿地比例（待重算） |
-| [metric:public_space_ratio] | ~15% | 公共空间比例（待重算） |
-| [metric:key_area_count] | 368.4 ha | 重点区面积合计 |
-
-### 深度项索引
-
-本方案在 `design_depth_matrix.json` 中覆盖以下设计深度项：
-- [depth:three_level_scope_framework] 三层范围工作框架
-- [depth:overall_spatial_structure] 总体空间结构
-- [depth:existing_conditions_diagnosis] 现状诊断与资料分析
-- [depth:land_use_layout] 用地布局
-- [depth:buildings] 建筑设计
-- [depth:height_massing_character] 建筑高度、体量与风貌
-- [depth:retain_renovate_demolish] 保留/改造/拆除分类
-- [depth:new_build] 新建策略
-- [depth:development_intensity_controls] 开发强度控制（待官方控规）
-- [depth:traffic_rail_slow_parking] 交通、轨道、慢行与停车
-- [depth:municipal_new_infrastructure] 市政与新型基础设施
-- [depth:public_space] 公共空间
-- [depth:blue_green_public_space] 蓝绿空间与公共空间
-- [depth:three_key_area_detailed_design] 三处重点区域详细设计
-- [depth:renewal_project_list] 更新项目清单
-- [depth:phasing_implementation] 分期实施
-- [depth:metrics_recalculation] 指标复算
-- [depth:risk_missing_data] 风险与缺失数据
-
-### 专业标准索引
-
-- [standard:MOHURD-URBAN-DESIGN-MEASURES] 住建部《城市设计管理办法》（2017）
-- [standard:MOHURD-CONTROL-DETAILED-PLANNING] 住建部《控制性详细规划编制审批办法》
-- [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 住建部《城市规划设计项目分类与深度要求》（2016）
-- [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 自然资源部《用地用海分类指南》（2023）
-- [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 项目公告
-- [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 面向智能体任务书
-
-### Agent 任务覆盖索引
-
-- [agent.1] 一带总体概念与功能统筹（三大定位、五大功能、三区两翼、命名、Logo）
-- [agent.2] AI 全栈自主创新与世界级 AI 创新生态（7 个全球案例、生态图谱）
-- [agent.3] AI+ 场景赋能与智能化 AI 活力城市（10 张场景卡、3 张产业测试、5 类用户画像）
-- [agent.4] AI 公共空间、智能原生新业态与朝圣地标（3 个朝圣地标、组件库）
-- [agent.5] 百年京张文化、中关村文化与 AI 新文化融合叙事
-- [agent.6] 一带全球 AI 创新活动体系与长期运营（5 类活动、开发者社区）
+print(f"Written {len(md)} chars, {md.count(chr(10))} lines to {OUT}")
