@@ -1,5 +1,5 @@
 ---
-title: "京张智脉：面向公共智能的开放城市共生带"
+title: "京张原点：面向公共智能的开放城市共生带"
 author_github: "Alpaca233114514"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -10,7 +10,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 京张智脉：面向公共智能的开放城市共生带
+# 京张原点：面向公共智能的开放城市共生带
 
 ## 设计依据与资料清单
 
@@ -62,7 +62,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 品牌与命名系统：JINGZHANG COMMONS
 
-主名称“京张智脉”把铁路的线性记忆与公共智能的网络逻辑叠合；英文名 **JINGZHANG COMMONS** 强调 AI 资源不是封闭园区福利，而是可被研究者、企业、居民和访客共同使用的城市公共能力。命名系统服从“一脊三锚六站”的空间层级：南北主脊为“Commons Spine”，众智园、原点社区和大钟寺三锚分别为“Open Stack Gardens”“Origin Commons”“Agent Agora”，六个公共客厅统一使用“Commons Station”节点语法；年度公共体验路线“Memory Loop”属于运营品牌，不另立空间总结构。Logo 方向采用两条平行轨道、三个锚点圆与一组开放站点组成的抽象“京/J”组合标，不使用任何企业商标或未授权字体；单色、16px 小图标和黑白打印均可识别。视觉色彩以深海军蓝表示可信治理、轨道青表示开放协作、信号琥珀表示公共交互，并以灰色虚线专门表示 provisional 边界。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+主名称“京张原点”以京张铁路遗产为时间原点、以北京 AI 原点社区为创新策源锚点，并把整条廊带定义为公共智能持续发生与扩散的城市起点；英文名 **JINGZHANG COMMONS** 强调 AI 资源不是封闭园区福利，而是可被研究者、企业、居民和访客共同使用的城市公共能力。命名系统服从“一脊三锚六站”的空间层级：南北主脊为“Commons Spine”，众智园、原点社区和大钟寺三锚分别为“Open Stack Gardens”“Origin Commons”“Agent Agora”，六个公共客厅统一使用“Commons Station”节点语法；年度公共体验路线“Memory Loop”属于运营品牌，不另立空间总结构。Logo 方向采用两条平行轨道、三个锚点圆与一组开放站点组成的抽象“京/J”组合标，不使用任何企业商标或未授权字体；单色、16px 小图标和黑白打印均可识别。视觉色彩以深海军蓝表示可信治理、轨道青表示开放协作、信号琥珀表示公共交互，并以灰色虚线专门表示 provisional 边界。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
 ### 全球案例转译：从“复制园区”转向“提取机制”
 
@@ -195,7 +195,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ### 年度运营闭环
 
-“京张智脉年”按四季而非一次性节庆组织：春季 Commons Brief 发布公共问题与开放数据边界；夏季 Open Stack Season 在众智园开展限定范围的安全、端侧和数据治理验证；秋季 Origin Week 在原点社区进行开源发布、成果转化和公众评议；冬季 Memory Assembly 在大钟寺与京张公共空间总结采用证据、失败案例和下一年度议题。每季都经过“公开征题-规则审查-小规模验证-公众解释-人工复核-是否扩大”的闭环。
+“京张原点年”按四季而非一次性节庆组织：春季 Commons Brief 发布公共问题与开放数据边界；夏季 Open Stack Season 在众智园开展限定范围的安全、端侧和数据治理验证；秋季 Origin Week 在原点社区进行开源发布、成果转化和公众评议；冬季 Memory Assembly 在大钟寺与京张公共空间总结采用证据、失败案例和下一年度议题。每季都经过“公开征题-规则审查-小规模验证-公众解释-人工复核-是否扩大”的闭环。
 
 开发者社区采用贡献护照记录代码、标准、空间维护和公众讲解等多种贡献，不设置只奖励技术明星的单一排行；居民、规划师、运营者和无障碍体验者可通过同一证据链获得署名。场景开放运营设置场景负责人、数据负责人、安全负责人和公众联络人四个角色。国际传播只发布已清权的聚合成果，通过中英双语任务、开放复盘和远程协作吸引后续参与，不把活动、招商、政策或资金写成政府确定承诺。[source:AGENT-TASKBOOK] [depth:phasing_implementation]
 

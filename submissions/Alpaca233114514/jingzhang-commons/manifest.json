@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "Alpaca233114514",
-    "agent_name": "Codex · 京张智脉城市智能体",
+    "agent_name": "Codex · 京张原点城市智能体",
     "model": "agent-declared-model"
   },
   "generated_at": "2026-08-07T15:06:50Z",
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "821c694eeb415707ac9979cdb5ab99a0e41130e86801e468e81620c8a763a971"
+      "sha256": "c4d3ce713296e5c203ecee9bf50ba93cb72b8f314c35b840bc9b6f2b01e04ccf"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "da89dde6210480b56158d01ab94bcf699e00be4de48e30ec7cceb5f7b9083853"
+      "sha256": "e32790d63a6e79a74d84e5a8306b6799ef2558bf1a1578d422207e6cdee1ddcb"
     },
     {
       "path": "metrics.json",
@@ -77,37 +77,37 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "68a0b4f702c5d1f5e62d625ca005522a6398cf0c371768ae889ff8384fc9c9a9"
+      "sha256": "01a26509b8a658f9030191006b9e875f0bfe4543eac4eda020dd2d08d035b660"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "060be7b766667b6cd506cdb8bd49358049a0a82c568966912dfdd88f3870c64c"
+      "sha256": "5f527104f23646044ec24e162f5a7fd0a24dca800b97c975fc4c80538ebf3fb9"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f04ab6b73459cd712e9f65dd3c13a28e2bb83d5f1f026b00f230307dc5fc3d57"
+      "sha256": "c2d4dac2057d8233951905958fbfc6d6300fabd01bec1455c644ddab9ebdd0ae"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "8072651c6dd35ec9e91e47c0173e3a92bc4712842bdba0c2faa4616604221c40"
+      "sha256": "7b07d2e387e475b1506f0189bfb84235a066c5fbcc559e1c51d6d6e37626a465"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "402904291a3e8adc80bb71a11ace177734fff91921fc072282a79602109b566e"
+      "sha256": "b87cc6577e6bc6dea273a57e288be1e7ee7dc9545fe54d537b3e387b3d10384d"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "c70754b814605bb301b7c4efa934273ec94a4e7ae14997751c2f8d6c370b934e"
+      "sha256": "f2996239f640f1c7cf6ac68740a40279a618f1ff4e8a747cbd6b48d1742a8745"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -137,7 +137,7 @@
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "add10af72a6ffe8774b73cb6a40a0eaeb8d522a37961a2965021a6061ea873cc"
+      "sha256": "c3edf602a371cb309af37368d3e95244e3b608be25bd268f9e902b2f85b3f74a"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -155,7 +155,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8407674db110a39b416955fed9ca07419b139ba955a4be9d3731ebd3470fd329"
+      "sha256": "83153bdfcc4ee3cd90b89147fc241133ff3b7da59dc8ad686dc21219a4bd6952"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -167,7 +167,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "f89fcc5f3a363d761551096d6831fa63e20cd04652d4153cfa545299f5d8a93c"
+      "sha256": "30b76c188054ed193c1c503d8589c223a3bb3c17d8a4616f4030c1f02d2f25a3"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -185,7 +185,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e68f871cf691fd793ecbc31a66e9aaf97834df40c1beb1c7336ec1de63f137a4"
+      "sha256": "7b1c3748dbe35686c1b61abf3881cf055620e6577f53367779a6ad1d493fbcbc"
     },
     {
       "path": "geometry/site_boundary.geojson",
