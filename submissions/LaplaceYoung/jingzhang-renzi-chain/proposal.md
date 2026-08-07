@@ -96,7 +96,7 @@ iteration: "v1.0"
 
 ### 城市更新总体框架
 
-**设计判断**：以「针灸式更新+链节式更新」双模式：链节内部以街区为单元整体更新（原点社区、大钟寺、众智园），链节之间以活力脊缝合断点（过街、上跨、骑行贯通）[source:OFFICIAL-ANNOUNCEMENT][depth:urban_renewal]。拆改留为概念比例建议：保留约60%、改造约30%、拆除约10%（需现状建筑普查修正），对应 `geometry/buildings.geojson` 中 `renewal_class` 属性（`retain`/`renovate`/`new_build`）[depth:retain_renovate_demolish][data:geometry/buildings.geojson#BLD-002]。全部拆改留表述为概念建议，不作为地块级拆改留结论 [source:AGENT-TASKBOOK]。
+**设计判断**：以「针灸式更新+链节式更新」双模式：链节内部以街区为单元整体更新（原点社区、大钟寺、众智园），链节之间以活力脊缝合断点（过街、上跨、骑行贯通）[source:OFFICIAL-ANNOUNCEMENT][depth:urban_renewal]。拆改留为概念示意（按 `geometry/buildings.geojson` 中 `renewal_class` 属性以基底面积复算：新建约60%、改造约24%、保留约16%，详见「用地、建筑规模与拆改留方案」章）[depth:retain_renovate_demolish][data:geometry/buildings.geojson#BLD-002]。全部拆改留表述为概念建议，不作为地块级拆改留结论 [source:AGENT-TASKBOOK]。
 
 **更新对象与功能业态**：更新对象分四类——（1）低效产业楼宇改造为AI研发与孵化载体；（2）老旧居住区综合整治（加装智能服务设施、不拆主体）；（3）沿活力脊低效空间植入公共体验功能；（4）留白用地（16类，约46.0公顷）作为远期战略预留 [metric:land_use_16_area_sqm][data:geometry/land_use.geojson#LU-16-1]。更新实施路径建议为「校—园—街」融合：高校开放共享（校园边界柔性化）、园区功能复合（底层公共化）、街区服务补位（15分钟AI服务圈）[depth:renewal_project_list]。
 
@@ -222,9 +222,13 @@ iteration: "v1.0"
 | SC-13 | 学院路教育带 | 师生/教育企业/终身学习者 | 教育科技协同体 | 教研专家与教育部门评审 | land_use, public_space |
 | SC-14 | 西土城路法律服务带 | 创业者/居民 | 法律科技协同体 | 执业律师人工复核 | land_use |
 
+### AI场景节点空间分布（概念量化）
+
+14个场景节点按空间锚点分布：众智园链节2个（SC-01/02）、原点社区链节2个（SC-05/06）、活力脊1个（SC-07）、大钟寺链节3个（SC-03/04/11）、学院带与服务翼3个（SC-09/10/14）、全带网络型2个（SC-08/12）、教育带1个（SC-13）——节点与 `geometry/public_space.geojson`、`geometry/land_use.geojson`、`geometry/roads.geojson` 图层锚点一一对应（见「场景—空间—运营映射」表），作为 `scenario_node_count` 指标的空间复核依据 [metric:scenario_node_count]。
+
 ### 小月河场景赋能翼与公共体验路径
 
-小月河场景赋能翼作为「链翼·场景」：沿小月河滨水带（概念位置 `geometry/constraints.geojson#CON-WTR-001`）组织场景试验与公共体验，建议设置「场景开放季」机制（每季度开放一批沙盒场景申报）[data:geometry/constraints.geojson#CON-WTR-001][source:THREE-AREAS-WINGS]。公共体验路径建议为「原点—脊—业」三线：原点线（清华园—五道口，文化+开源）、脊线（活力脊全程，蓝绿+AI体验）、业线（大钟寺—学院路，产业+消费），路径上的场景节点全部纳入 `visual/index.html` 的「AI 场景」板块。
+小月河场景赋能翼作为「链翼·场景」：沿小月河滨水带（概念位置 `geometry/constraints.geojson#CON-WTR-001`）组织场景试验与公共体验，建议设置「场景开放季」机制（每季度开放一批沙盒场景申报）[data:geometry/constraints.geojson#CON-WTR-001][source:THREE-AREAS-WINGS]。公共体验路径建议为「原点—脊—业」三线：原点线（清华园—五道口，文化+开源）、脊线（活力脊全程，蓝绿+AI体验）、业线（大钟寺—学院路，产业+消费），路径上的场景节点全部纳入 `visual/index.html` 的「AI 场景」板块。包容性旅程（概念）：老年居民可沿脊线以「人工服务点+纸面导览+语音提示」完成全流程体验；视障人士可经无障碍导视桩与触觉地图使用「原点线」文化导览（SC-07提供语音与触觉替代）；所有体验点均设「人工接管」呼叫机制——具体设施以无障碍专项设计与公众共测为准 [source:AGENT-TASKBOOK]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -252,7 +256,7 @@ iteration: "v1.0"
 
 **慢行断点与停车**：重点断点（北三环西路与活力脊交叉口、成府路与活力脊交叉口、北五环上跨区域）列为专业深化方向，不给桥隧工程结论 [source:AGENT-TASKBOOK][assumption:A-TRA-002]；非机动车停放与大钟寺站四象限静态交通组织列入站点一体化设计（概念）。
 
-**新型基础设施**：探索「端侧算力+分布式能源+AI服务设施」与传统市政设施融合（概念方向）：产业建筑预留边缘算力节点空间与光储充接口；公共空间杆件采用「供电/数据/遮阳/导视」四合一集成（见公共空间组件库）；市政容量、能源负荷不作测算结论 [depth:municipal_new_infrastructure][source:OFFICIAL-ANNOUNCEMENT][assumption:A-MUN-001]。
+**新型基础设施**：探索「端侧算力+分布式能源+AI服务设施」与传统市政设施融合（概念方向）：产业建筑预留边缘算力节点空间与光储充接口；公共空间杆件采用「供电/数据/遮阳/导视」四合一集成（见公共空间组件库）；市政容量、能源负荷不作测算结论 [depth:municipal_new_infrastructure][source:OFFICIAL-ANNOUNCEMENT][assumption:A-MUN-001]。概念布局（示意）：端侧算力节点沿三链节核心组团与轨道站点一体化区布置（数量级约20—30处，以实际工程条件为准）；分布式能源以园区级光储充一体为方向（详见 `assumptions.json` A-MUN-001 与 A-ENG-001 边界）。
 
 **公共服务设施体系**：按「三级服务圈」组织——链节级（15分钟）：社区服务中心、文化展示、体育设施（0805类，待补布局）；带级（30分钟）：创新服务平台（公共算力调度、模型评测、标准服务）、人才生活服务（国际社区服务、子女教育配套）；区域级：依托海淀既有公共服务设施。设施底数缺失项列入 `assumptions.json`（A-PUB-001）[assumption:A-PUB-001]。
 
@@ -265,6 +269,8 @@ iteration: "v1.0"
 ### 公共空间系统
 
 8处概念性公共广场节点（`geometry/public_space.geojson`，总面积约9.5公顷，`public_space_area_sqm`/`public_space_ratio`）[metric:public_space_area_sqm][metric:public_space_ratio][data:geometry/public_space.geojson#PS-003][data:geometry/public_space.geojson#PS-006][data:geometry/public_space.geojson#PS-008]：大钟寺四象限AI广场、学院路科创街角广场、北三环智汇广场、五道口枢纽广场、清华园站前AI原点广场、清华科技园开放广场、众智园科技广场、活力脊北端绿地广场（清河滨水带概念位置）。广场体系承担「创新交往、场景展示、活动集散、文化叙事」四类功能，与14个场景节点（`scenario_node_count`）协同 [metric:scenario_node_count]。
+
+**包容性与无障碍（概念要求）**：全部AI场景与公共空间须提供非数字替代通道（人工服务、纸面信息、电话办理），无障碍导视桩与适老化设施纳入公共空间组件库；场景体验遵循「可拒绝、可退出、可人工接管」原则，适老与残障群体体验由共测机制参与验证（概念机制，不作为承诺）[source:AGENT-TASKBOOK]。
 
 ### AI朝圣地标与荣誉展示体系
 
@@ -310,11 +316,11 @@ iteration: "v1.0"
 
 ### 分期计划（概念）
 
-`geometry/phasing.geojson` 将全带分为三期（概念范围，`phase_phase-1/2/3_area_sqm` 指标）[data:geometry/phasing.geojson#PHASE-2-1][data:geometry/phasing.geojson#PHASE-3-1][metric:phase_phase-1_area_sqm][metric:phase_phase-2_area_sqm][metric:phase_phase-3_area_sqm]：
+`geometry/phasing.geojson` 将全带分为三期（概念范围，`phase_phase-1/2/3_area_sqm` 指标）[data:geometry/phasing.geojson#PHASE-2-1][data:geometry/phasing.geojson#PHASE-3-1][metric:phase_phase-1_area_sqm][metric:phase_phase-2_area_sqm][metric:phase_phase-3_area_sqm]。概念时序年表（示意，非开发时序承诺）：近期 2026—2028、中期 2029—2031、远期 2032—2035，各期以「启动项目+量化目标」锚定：
 
-- **PHASE-1 近期（原点社区链节先行）**：约122.6公顷。以原点社区为启动区（人才活力+场景可感知度最高），同步实施活力脊南段贯通与五道口体验街；以「快赢项目」建立品牌与社区信任 [data:geometry/phasing.geojson#PHASE-1-1]。
-- **PHASE-2 中期（大钟寺与学院带更新）**：约626.4公顷。实施大钟寺四象限步行连通、产业载体更新与学院路界面整治，形成「创—业」转化闭环。
-- **PHASE-3 远期（众智园与北端完善）**：约392.3公顷。依托国家AI平台契机实施众智园链节与北端留白演进，完成全带贯通与朝圣地标体系。
+- **PHASE-1 近期（2026—2028，原点社区链节先行）**：约122.6公顷。以原点社区为启动区（人才活力+场景可感知度最高），同步实施活力脊南段贯通与五道口体验街；以「快赢项目」建立品牌与社区信任。概念量化目标（示意，非承诺）：落地原点广场与开源工坊2处节点、完成五道口体验街首段改造、贯通活力脊南段慢行约3公里 [data:geometry/phasing.geojson#PHASE-1-1]。
+- **PHASE-2 中期（2029—2031，大钟寺与学院带更新）**：约626.4公顷。实施大钟寺四象限步行连通、产业载体更新与学院路界面整治，形成「创—业」转化闭环。概念量化目标（示意，非承诺）：完成大钟寺站四象限步行连通设计并启动首象限改造、新增概念产业载体约10万平方米量级（以控规与招商为准）、完成学院路「AI橱窗」界面示范段。
+- **PHASE-3 远期（2032—2035，众智园与北端完善）**：约392.3公顷。依托国家AI平台契机实施众智园链节与北端留白演进，完成全带贯通与朝圣地标体系。概念量化目标（示意，非承诺）：建成众智园科技广场与治理实验室组团首期、完成4处朝圣地标体系、实现全带慢行贯通（贯通率以官方边界与工程条件为准）。
 
 ## 文化叙事、导视与国际传播（agent.5响应）
 
@@ -390,9 +396,9 @@ iteration: "v1.0"
 | [metric:key_area_zhongzhiyuan_area_sqm] 众智园面积 | 1929201.877 | sqm | polygon_area(PROV-KEY-001) | 临时粗略面积，待官方复算 |
 | [metric:key_area_origin_area_sqm] 原点社区面积 | 1043236.909 | sqm | polygon_area(PROV-KEY-002) | 临时粗略面积，待官方复算 |
 | [metric:key_area_dazhongsi_area_sqm] 大钟寺面积 | 720454.219 | sqm | polygon_area(PROV-KEY-003) | 临时粗略面积，待官方复算 |
-| [metric:scenario_node_count] AI场景节点数 | 12 | count | count(场景卡) | 12张场景卡 |
+| [metric:scenario_node_count] AI场景节点数 | 14 | count | count(场景卡) | 14张场景卡（含4个测试验证场景） |
 | [metric:ai_test_scenario_count] 测试验证场景数 | 4 | count | count(测试场景卡) | SC-01~04 |
-| [metric:persona_count] 用户画像数 | 6 | count | count(画像表) | P1~P6 |
+| [metric:persona_count] 用户画像数 | 8 | count | count(画像表) | P1~P8 |
 | [metric:ai_landmark_count] AI朝圣地标数 | 4 | count | count(地标清单) | 零号站/桥廊/众智之心/钟楼 |
 | [metric:renewal_project_count] 更新项目数 | 14 | count | count(项目清单) | U01~U14 |
 | [metric:land_use_05_area_sqm] 商业服务业用地 | 922579.376 | sqm | Σ(05类) | 大钟寺/五道口商业载体 |
