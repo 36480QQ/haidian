@@ -217,3 +217,31 @@ python3 scripts/ai_review_submission.py \
 AI 无法仅凭文件内容证明现实世界中的版权归属或资料公开性。缺少授权、来源或权属证据时，prompt 要求返回 `request-changes` 和具体补证清单，而不是臆测“已合规”。
 
 运行该命令会把 `review-input.json` 中的投稿正文、结构化证据及所列视觉预览发送给配置的 AI 服务。维护者只能对公开投稿或已获授权的材料运行；不得用它上传涉密、内部、个人隐私或未获授权的资料。
+
+## 9. 自动处理审核队列
+
+100 个以上 PR 时，在受信任的维护者主机运行队列 worker。它不部署在
+`pull_request_target`，不会执行投稿分支代码，也不会把模型密钥暴露给 fork PR：
+
+```bash
+export OPENAI_API_KEY="..."
+export HAIDIAN_REVIEW_MODEL="gpt-5.6-sol"
+
+# 先评审并生成审计材料，不修改 GitHub
+python3 scripts/auto_review_queue.py --limit 10
+
+# 正式回写 review/label；通过 60 分门槛和四项 gate 的 PR 自动合并
+python3 scripts/auto_review_queue.py --limit 10 --apply --admin-merge
+```
+
+固定顺序为：required CI → 单一作者目录 → 固定 head SHA worktree → 本地四项 gate →
+强制退件 → 多模态 100 分评审 → 决策前再次检查 head SHA/CI → review 与标签 →
+合并前最后一次检查 head SHA/CI。低于 60 分标记 `review/low-quality`；CI 未成功的
+PR 不调用模型；draft 不进入队列。合并仅表示仓库 intake，展示、精选、正式评分与
+实施决定继续由 `gallery-publication.json` 的独立流程控制。
+
+审计材料保存在 `.maintainer-review/queue/pr-<number>/<head-sha>/`，worktree 默认在
+`.pr-worktree/auto-review/` 并在单稿完成后删除。建议用 launchd/systemd timer 每
+5–10 分钟运行一次，并以进程锁保证同一时间只有一个 worker。执行账号应使用
+fine-grained token 或 GitHub App，只授予本仓库 Contents/PR 所需权限；若 ruleset
+限定管理员合并，则将该 App/账号加入 bypass list 后使用 `--admin-merge`。

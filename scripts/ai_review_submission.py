@@ -131,7 +131,20 @@ def render_pdf_previews(submission_dir: Path, temp_dir: Path, warnings: list[str
         prefix = temp_dir / source.stem
         try:
             completed = subprocess.run(
-                [executable, "-png", "-f", "1", "-l", "3", "-r", "110", str(source), str(prefix)],
+                [
+                    executable,
+                    "-jpeg",
+                    "-jpegopt",
+                    "quality=82,progressive=y,optimize=y",
+                    "-f",
+                    "1",
+                    "-l",
+                    "3",
+                    "-r",
+                    "72",
+                    str(source),
+                    str(prefix),
+                ],
                 capture_output=True,
                 text=True,
                 check=False,
@@ -140,7 +153,7 @@ def render_pdf_previews(submission_dir: Path, temp_dir: Path, warnings: list[str
         except subprocess.TimeoutExpired:
             warnings.append(f"Could not render {rel}: PDF rendering timed out")
             continue
-        rendered = sorted(temp_dir.glob(f"{source.stem}-*.png"))
+        rendered = sorted(temp_dir.glob(f"{source.stem}-*.jpg"))
         if completed.returncode == 0 and rendered:
             previews.extend(rendered)
         else:

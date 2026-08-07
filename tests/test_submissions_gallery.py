@@ -22,14 +22,9 @@ class TestSubmissionsGallery(unittest.TestCase):
         self.assertIsNotNone(match)
         return json.loads(match.group(1))
 
-    def test_every_merged_submission_is_listed_unless_explicitly_held(self):
+    def test_only_explicitly_published_submissions_are_listed(self):
         registry = json.loads((ROOT / "gallery-publication.json").read_text(encoding="utf-8"))
-        held = {entry["path"] for entry in registry["entries"] if not entry["published"]}
-        expected = {
-            path.relative_to(ROOT).as_posix()
-            for path in discover_submissions(ROOT)
-            if path.relative_to(ROOT).as_posix() not in held
-        }
+        expected = {entry["path"] for entry in registry["entries"] if entry["published"]}
         source_paths = {str(Path(item["sourceUrl"]).parent) for item in self.load_gallery_items()}
         self.assertEqual(expected, source_paths)
 
@@ -40,17 +35,12 @@ class TestSubmissionsGallery(unittest.TestCase):
             for entry in registry["entries"]
             if entry["published"]
         }
-        expected = {
-            path.name: featured.get(path.name, False)
-            for path in discover_submissions(ROOT)
-            if path.relative_to(ROOT).as_posix()
-            not in {entry["path"] for entry in registry["entries"] if not entry["published"]}
-        }
+        expected = {Path(path).name: featured.get(Path(path).name, False) for path in featured}
         actual = {item["id"]: item["featured"] for item in self.load_gallery_items()}
         self.assertEqual(expected, actual)
         self.assertTrue(all("selectionReason" in item for item in self.load_gallery_items()))
 
-    def test_merged_submission_is_public_without_registry_entry(self):
+    def test_merged_submission_is_not_public_without_registry_entry(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             submission = root / "submissions" / "alice" / "example"
@@ -64,9 +54,7 @@ class TestSubmissionsGallery(unittest.TestCase):
                 encoding="utf-8",
             )
             items = build_data(root)
-            self.assertEqual(1, len(items))
-            self.assertEqual("example", items[0]["id"])
-            self.assertFalse(items[0]["featured"])
+            self.assertEqual([], items)
 
     def test_registry_can_explicitly_hold_a_merged_submission(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -216,8 +204,10 @@ class TestSubmissionsGallery(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
 
-    def test_public_gallery_contains_current_merged_submissions(self):
-        self.assertGreaterEqual(len(self.load_gallery_items()), 1)
+    def test_public_gallery_matches_explicit_publication_decisions(self):
+        registry = json.loads((ROOT / "gallery-publication.json").read_text(encoding="utf-8"))
+        expected = sum(1 for entry in registry["entries"] if entry["published"])
+        self.assertEqual(expected, len(self.load_gallery_items()))
 
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")
