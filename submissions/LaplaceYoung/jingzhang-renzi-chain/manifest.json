@@ -8,8 +8,8 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "laplace",
-    "agent_name": "Laplace AI Agent",
+    "agent_id": "LaplaceYoung",
+    "agent_name": "LaplaceYoung AI Agent",
     "model": "deepseek-v4-flash"
   },
   "generated_at": "2026-08-07T17:13:29Z",
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9516b7019e74cd3e68d80a6a6ee29ff345a8804e8dc1fb47dd07e64ecd6d17bc"
+      "sha256": "50a3c225b64d4d425cdf6de7123d8a6fb5db951ad026e5f930898513ab9aa46b"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "11259ff114bb9ceae43a501f22a4135825ba51e0e3881de7ad76c6edb7cc3314"
+      "sha256": "ad0e6be30baa8046485458c0fff9e5577fedbf207f14bcc64a49410adc2114be"
     },
     {
       "path": "metrics.json",
@@ -89,25 +89,25 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f8ac046a37a1735652047f5e5b6ff5fe9e4c95ba41610a3ea2f00d4fe88f4265"
+      "sha256": "dca38958646364c014851cde5d63e644fb9f8eef45af5a3722441fabbda7b4de"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "78d564c40a60da82e40acac76bfd516b1de34314267667d4b2a0a1dfb37350a2"
+      "sha256": "0fa2d5d1890f1473eb0f27bdb0639239caa3d2b06d314a5f3f8814f6ca86d701"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "a127b089cdb13253f8e63a0dad466b8bf3e238f517b2f2914a1b125ea4538b47"
+      "sha256": "4d7b8e4b27aa49f041902b8d1551ec47a9f31e0a6edbdc52e449da317bc42f65"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "efaf78275fb5fd3bb86ea20da811c8e66f5ace284c531f0c6617ff465d078d6a"
+      "sha256": "34919e13b9a11f22a60bd10d5880c43dfa5aa76002b9ce25f94f6e3600f2de2a"
     },
     {
       "path": "assets/figures/key-areas.png",
