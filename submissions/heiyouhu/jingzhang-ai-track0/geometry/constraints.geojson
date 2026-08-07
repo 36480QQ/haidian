@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "name": "constraints_scaffold",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CONSTRAINTS",
+      "properties": {
+        "id": "CONSTRAINTS",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "文保与市政待核控制界面（概念）",
+        "constraint_type": "heritage_municipal_review",
+        "area_sqm_declared": 8535578.621
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354,
+              39.944
+            ],
+            [
+              116.343,
+              39.944
+            ],
+            [
+              116.343,
+              40.0265
+            ],
+            [
+              116.354,
+              40.0265
+            ],
+            [
+              116.354,
+              40.002774999999936
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.354,
+              39.981250000000045
+            ],
+            [
+              116.354,
+              39.944
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
