@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "项目brief、枚举、允许设计空间、范围、模式文件；任务书与公告的结构化整理。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "公开/清权/provisional 来源可用性登记表；区分 formal-ready、background-only、provisional-only 与 needs-review。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "范围、任务、来源使用边界与缺资料清单的导航层；非新权威来源。",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "官方资格预审公告：项目名称、三层范围、三处重点区、设计任务1.3/1.4/1.5、语言与成果要求。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "url": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "面向智能体开源征集任务书：三大定位、五大功能、三区两翼、六项任务、共创原则、边界条款。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "THREE-AREAS-WINGS",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202604/t20260403_4573808.html",
+      "source_type": "official_public",
+      "usage": "「三区两翼」打造世界级AI集聚地公开报道：产业语境与区域协同背景。",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "id": "HAIDIAN-1X1",
+      "url": "https://www.bjhd.gov.cn/ztzx/2026/2026jjshgzlfzdh/yw/202603/t20260303_4806875.shtml",
+      "source_type": "official_public",
+      "usage": "海淀「1+X+1」现代化产业体系：AI核心产业与科技服务业语境。",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "id": "PROVISIONAL-BOUNDARIES-2026",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "提交的总体设计边界与三处重点区边界（provisional_constraint）；仅用于生成、可视化与临时自检。",
+      "usable_for_formal": "provisional_only"
+    },
+    {
+      "id": "DATA-WORKFLOW",
+      "path": "docs/data-workflow.md",
+      "source_type": "repository_documentation",
+      "usage": "资料登记、边界转换与面积复算工作流；official polygon 发布后的重算要求。",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2023/art_17339_775476.html",
+      "source_type": "official_public",
+      "usage": "《城市设计管理办法》（住建部令第35号）：城市设计地位、重点地区城市设计、建筑高度体量风格色彩控制要求。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "url": "https://www.gov.cn/zhengce/2022-01/25/content_5711967.htm",
+      "source_type": "official_public",
+      "usage": "《城市、镇控制性详细规划编制审批办法》（住建部令第7号）：控规法定地位、指标与四线管控。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "MNR-LAND-USE-CLASSIFICATION",
+      "url": "https://www.gov.cn/zhengce/zhengceku/202311/content_6917279.htm",
+      "source_type": "official_public",
+      "usage": "《国土空间调查、规划、用途管制用地用海分类指南》（自然资发〔2023〕234号）：用地分类代码体系。",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
+      "path": "brief/site-package/standards/references/mohurd-arch-design-depth-2016.md",
+      "source_type": "needs_official_file",
+      "usage": "《建筑工程设计文件编制深度规定（2016年版）》：官方文件未取得，登记为待补资料项，不作为建筑深度权威依据。",
+      "usable_for_formal": "no"
+    },
+    {
+      "id": "OSM-COPYRIGHT",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "open_data_license",
+      "usage": "OpenStreetMap 版权与 ODbL 许可；本方案未将 OSM 用作边界或面积依据。",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "id": "VISUAL-STYLE-RECOMMENDATIONS",
+      "path": "brief/site-package/visual_style_recommendations.json",
+      "source_type": "repository_processed_reference",
+      "usage": "图面与HTML视觉风格建议（专业城市设计图/轨道网络图/仪表盘方向）。",
+      "usable_for_formal": "background_only"
+    }
+  ]
+}
