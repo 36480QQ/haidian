@@ -39,6 +39,11 @@ python3 scripts/maintainer_review.py \
 
 不要把这些文件写入参赛者投稿目录，也不要提交到仓库或展示页。
 
+需要把非阻断性的质量改进建议随稿长期保存时，维护者可在投稿根目录添加
+`FEEDBACK.md`。该文件只记录维护者结论，不属于参赛者方案包，不代表公开展示、
+精选、正式专业评分或现实实施批准。CI 禁止参赛者创建或修改该文件；维护者应在
+合并投稿后通过独立 PR 添加或更新，并注明对应 PR 与 commit SHA。
+
 ## 4. 复制 PR 评论
 
 把命令输出复制到 PR comment。maintainer review 的可见结果只在 PR comment 中展示，不进入 `submissions-data.js`、方案卡片或公开展示页。按建议状态处理：
