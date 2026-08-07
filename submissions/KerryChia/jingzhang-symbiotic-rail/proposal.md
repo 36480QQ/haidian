@@ -45,11 +45,11 @@ iteration: "v0.3"
 
 | 案例 | 核心机制 | 可转化空间/运营动作 |
 | --- | --- | --- |
-| 硅谷·大学路（Palo Alto） | 高校策源—企业孵化—资本集中的近校创新走廊 | AI原点社区近校成果转化街 |
-| 波士顿·肯德尔广场（Kendall Square） | 楼宇内研究—人才—服务高密度共生 | 众智园高密度产研综合体 |
-| 伦敦·国王十字（King's Cross） | 铁路遗址更新为创新门户与公共客厅 | 京张遗址公园活力带 |
-| 多伦多·滨水智能区 | 数据、场景与公共治理协同的智能城区试点 | 小月河场景赋能翼 |
-| 深圳·南山区科技园 | 全链条企业与测试验证环境 | 大钟寺产业测试验证场景 |
+| 硅谷·大学路（Palo Alto）[source:CASE-PALO-ALTO] | 高校策源—企业孵化—资本集中的近校创新走廊 | AI原点社区近校成果转化街 |
+| 波士顿·肯德尔广场（Kendall Square）[source:CASE-KENDALL-SQUARE] | 楼宇内研究—人才—服务高密度共生 | 众智园高密度产研综合体 |
+| 伦敦·国王十字（King's Cross）[source:CASE-KINGS-CROSS] | 铁路遗址更新为创新门户与公共客厅 | 京张遗址公园活力带 |
+| 多伦多·滨水智能区 [source:CASE-TORONTO-WATERFRONT] | 数据、场景与公共治理协同的智能城区试点（含失败面镜鉴） | 小月河场景赋能翼 |
+| 深圳·南山区科技园 [source:CASE-SHENZHEN-NANSHAN] | 全链条企业与测试验证环境 | 大钟寺产业测试验证场景 |
 
 未来城市形态研究回应“AI文化、社会与城市”如何改变工作、生活、社交、学习、交通与公共服务。方案把AI交通系统、连续绿色空间、创新服务设施与国际化工作生活氛围落实为可定位的功能区、节点、廊道与场景，而非泛泛技术愿景。产业战略指标、AI创新指数、人才密度、空间供给类型与AI+垂直应用重点区域写入指标体系，并标明官方、设计建议与待校准三类属性；全球AI活动、开发者社区、开放场景或朝圣路线均表述为“概念建议/参考方案/可供专业团队深化研究”，不写成已确定的政府活动或实施安排 [source:AGENT-TASKBOOK]。
 
@@ -157,6 +157,21 @@ iteration: "v0.3"
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
 合规矩阵是任务响应性主控文件。`compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 全部必答任务，`standard_matrix.json` 覆盖全部强制专业标准，`design_depth_matrix.json` 覆盖全部 required 深度项，每条均绑定章节、图层、指标、图纸、HTML 页面、来源、假设与自检项。三类矩阵与 `self_check.json`、`sources.json`、`assumptions.json` 共同保证方案可追溯、可复算、可人工复核。
+
+## 深化附件与资产台账
+
+为回应评审对表达完整度、证据链与治理机制的要求，本方案在 `report/narrative.md` 与 `report/copyright_statement.md` 中提供以下深化附件（与正文、图层、图纸交叉引用）：
+
+- **品牌识别系统（agent.1）**：`assets/figures/brand-identity.png` 给出 Logo 主标、中英双语组合、标准色（科技蓝/京张砖红/金/墨）、单色与反白变体、最小尺寸、禁用示例与字体许可；`assets/renders/logo-mark.jpg` 为 AI 辅助生成的品牌主标图形。
+- **统一 12 张场景卡（agent.2–4）**：`report/narrative.md` 深化附件二逐卡登记空间载体、类型、成熟度、数据字段、人工责任、试点资源、运维成本级别、失败阈值与退出条件，全部遵循"标准轨距"四项校准。
+- **产业生态/要素图谱（agent.2）**：`report/narrative.md` 深化附件三覆盖土地、资金、人才、算力、数据、场景六要素的供需与治理机制，并挂接对应图层。
+- **外部区域协同矩阵（agent.6）**：`report/narrative.md` 深化附件四覆盖北纬社区、未来科学城、怀柔科学城、经开区与京津冀的可检验协作方向与候选指标。
+- **包容性评估**：`report/narrative.md` 深化附件五覆盖儿童、老年人、残障人士、低收入群体、非数字用户与既有商户，含无障碍、可负担性、更新扰动、公众参与与申诉救济候选指标。
+- **长期运营治理（agent.6）**：`report/narrative.md` 深化附件六给出治理主体类型、资源级别、年度活动、里程碑、人才/企业转化漏斗与长期评估指标，均为概念建议措辞。
+- **逐资产版权台账**：`report/copyright_statement.md` 逐项登记全部字体、AI 生成渲染图、算法图件、PDF、GeoJSON 与 HTML 的作者、生成方法、来源、许可证/授权、字体嵌入权与复用范围，并澄清 COMMUNITY-DISPLAY-ONLY 完整条款。
+- **三大 AI 朝圣地标**：`assets/figures/landmarks.png` 与 `assets/renders/` 下的地标渲染图（京张原点灯塔、众智园治理观象台、大钟寺国际路演客厅）为概念建议，需清权后深化，非已批准建设。
+
+所有 AI 生成渲染图与算法图件的生成方法、字体嵌入权（Noto Sans CJK SC，SIL OFL 1.1，fsType=0 可嵌入）与复用范围均在 `report/copyright_statement.md` 登记；三个历史来源与五个国际案例的书目信息已在 `sources.json` 标注 background-only，未经 source_registry 审核批准前不作为正式空间或史实依据。
 
 ## 风险、版权与合规说明
 
