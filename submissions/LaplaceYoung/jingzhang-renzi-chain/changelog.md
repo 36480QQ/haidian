@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v3.1 - 2026-08-08
+
+- 计数同步批次（第二轮对抗性评审预备修复）：英文 Executive Summary 来源数 157→172；五问五答「150余项」→「170余项」；决策分叉台账「现 157 项」→「现 172 项」（v2.5—v3.0 三轮增量未同步，已同步）
+- 版本戳统一 v3.1（front matter/visual/A3/A0）
+- 校验：自检四类 PASS；advisory 8/8；一致性 ALL CONSISTENT；172 项来源全部正文引用
+- **PR #240**：https://github.com/open-city-ai/haidian/pull/240（v2.0—v3.1，CI success）
+
 ## v3.0 - 2026-08-08
 
 - 第十五轮 Swarm 集训（3 路并行：铁路遗产数字文创IP/AI设计评估标准/城市指标无障碍框架，底稿备份 `研究备份-swarm-r15/`）：
