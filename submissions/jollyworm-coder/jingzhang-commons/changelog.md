@@ -13,9 +13,3 @@ Competition upgrade：
 - 补充品牌识别、双语传播语和英文执行摘要。
 - 重做五张固定评审图、A3 文册前三页和 A0 三张展板，提高多模态评审的首屏信息密度。
 - 保留 provisional geometry 的醒目标注；未改变其非官方、非精确、非审批依据属性。
-
-## v1.0.0 - 2026-08-07
-
-Initial formal package：
-
-- 完成 formal professional design package、GeoJSON、指标矩阵、五张核心图、A3/A0、离线 HTML 和四类自检。
