@@ -53,7 +53,17 @@ iteration: "v1.0"
 
 **三区两翼协同回路**：本方案把五区组织为「人字协同回路」——原点社区「创」提出问题与原始创新（人字左上笔起点），众智园「研」攻克问题与标准治理（人字顶点），大钟寺「业」转化问题为产品与业态（人字右下笔落点），中关村科技服务翼提供要素、IP与资本（左笔延伸），小月河场景赋能翼提供试验场与用户反馈（右笔延伸）。回路为「提出—攻克—转化—赋能—反馈」，任一环节产出回流至其他环节；例如大钟寺产业转化后的数据与需求反哺原点社区的开源社区，小月河试验反馈反哺众智园的研发选型 [source:AGENT-TASKBOOK][depth:industry_ecology]。
 
-**区域创新协同**：研究范围层面，本方案建议与北纬社区、未来科学城、怀柔科学城、经开区及京津冀的创新组团建立「人字链外延协同」：向北经清河—沙河与未来科学城联动算力与中试；向东北与怀柔科学城联动基础研究与仪器；向南与经开区联动智能终端制造；向西经中关村大街与北纬社区联动科技服务。协同机制为概念建议，作为专业团队深化区域战略的素材 [source:AGENT-TASKBOOK]。
+**区域创新协同（协同图·概念）**：研究范围层面，本方案建议与北纬社区、未来科学城、怀柔科学城、经开区及京津冀的创新组团建立「人字链外延协同」，协同对象—机制—载体对应如下 [source:AGENT-TASKBOOK]：
+
+| 协同对象 | 协同机制（概念） | 空间载体（概念） |
+|---|---|---|
+| 北纬社区 | 科技服务与社区创新联动 | 中关村科技服务翼联络点 |
+| 未来科学城 | 算力与中试共享 | 清河—沙河方向联动走廊 |
+| 怀柔科学城 | 基础研究与大科学装置外溢承接 | 众智园基础研究承接组团 |
+| 经开区 | 智能终端制造与中试转化 | 大钟寺中试—制造协作通道 |
+| 京津冀 | 场景开放与要素流动 | 小月河场景翼跨域场景申报 |
+
+协同机制均为概念建议，作为专业团队深化区域战略的素材。
 
 **未来AI城市形态（概念定义）**：本方案提出「自适应街区」概念——街区以「数据可见、场景可换、界面可塑」为特征：公共空间预留标准化智能接口（供电/数据/遮阳/导视四合一杆件），业态空间按「6年一周期」柔性换装（产业功能模块化），街道空间按「时段—人流—天气」动态调配（活动日/工作日双模式）。AI文化：京张铁路「敢为人先」精神与开源文化、AI新文化融合；AI社会：以人本治理为纲，公共空间AI应用一律「可解释、可退出、可人工接管」[source:AGENT-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
@@ -124,7 +134,7 @@ iteration: "v1.0"
 - **空间结构**：「一园两轴三组团」——中央科技广场（`geometry/public_space.geojson#PS-007` 众智园科技广场）为园心；东西向生态轴（清河文化展示）与南北向活力脊延伸轴交汇；研发加速组团、标准治理组团、宜居服务组团环绕 [data:geometry/public_space.geojson#PS-007]（本方案众智园概念用地以0802科研/1401绿地/16留白为主，居住与商业功能为兼容承载，待控规确认）。
 - **建筑与更新（概念）**：以科研用地（0802）为主体（本链节内概念科研建筑占比最高，见 `geometry/buildings.geojson` 中 `ai_r_and_d`/`lab`/`incubator` 类型分布），建议新建组团采用「实验室—中试—展示」垂直复合塔楼（底层公共展示、中部实验室、顶部中试），既有低效楼宇改造为孵化与公共服务载体 [data:geometry/buildings.geojson#BLD-003][depth:retain_renovate_demolish]。
 - **交通慢行**：结合五环路区域一体化规划提出对外交通优化方向（概念），园区内以绿道串联组团；概念接驳线见 `geometry/roads.geojson#RD-013` [data:geometry/roads.geojson#RD-013][assumption:A-TRA-003]。
-- **公共空间与AI场景**：中央科技广场设置「算力之芯」公共装置（AI算力实时可视化，见场景卡SC-01/SC-02）；清河滨水绿带（概念，`geometry/green_space.geojson` 北段）组织低碳创新交往空间 [data:geometry/green_space.geojson#GS-2]。
+- **公共空间与AI场景**：中央科技广场设置「算力之芯」公共装置（AI算力实时可视化，见场景卡SC-01/SC-02）；清河滨水绿带（概念，`geometry/green_space.geojson` 北段）组织低碳创新交往空间 [data:geometry/green_space.geojson#GS-2]。公共界面（概念）：沿中央广场周边建筑底层连续通透、设置可进入式展廊；街道尺度建议以8—15米断面为基本模数（概念意向，非道路红线结论）。
 - **实施风险**：国家平台政策依赖度高、对外交通改善依赖五环一体化工程，均列为待确认事项 [assumption:A-IMP-001]。
 
 ### 北京AI原点社区（约104.3公顷）——「链节·创」
@@ -133,7 +143,7 @@ iteration: "v1.0"
 - **空间结构**：「一轴一心两翼」——清华园车站旧址文化区（`geometry/land_use.geojson` 中0803文化用地）为「原点之心」；活力脊为轴；西翼人才安居（0701），东翼科研转化（0802，清华科技园方向）[data:geometry/land_use.geojson#LU-0803-1]。
 - **建筑与更新（概念）**：围绕清华、北大、中科院原始创新策源，规划科技成果孵化区与转化区；沿街低效空间改造为「开发者会客厅」；更新以低扰动、有机更新为主，以改造与新建结合为概念方向 [source:OFFICIAL-ANNOUNCEMENT][depth:retain_renovate_demolish]。
 - **交通慢行**：围绕五道口、清华东路西口等轨道站点一体化设计（概念）；优化校区—园区慢行联系，重点缝合清华东路与成府路沿线断点；概念接驳连廊见 `geometry/roads.geojson#RD-012` [data:geometry/roads.geojson#RD-012]。
-- **公共空间与AI场景**：五道口枢纽广场（`geometry/public_space.geojson#PS-004`）与清华园站前AI原点广场（`PS-005`）构成「双广场」体系 [data:geometry/public_space.geojson#PS-004][data:geometry/public_space.geojson#PS-005]；开源社区、成果发布厅（场景卡SC-05/SC-06）围绕原点广场布局；荣誉展示体系（开源贡献墙、开发者星轨）设于原点广场（见朝圣地标章）。
+- **公共空间与AI场景**：五道口枢纽广场（`geometry/public_space.geojson#PS-004`）与清华园站前AI原点广场（`PS-005`）构成「双广场」体系 [data:geometry/public_space.geojson#PS-004][data:geometry/public_space.geojson#PS-005]；开源社区、成果发布厅（场景卡SC-05/SC-06）围绕原点广场布局；荣誉展示体系（开源贡献墙、开发者星轨）设于原点广场（见朝圣地标章）。公共界面（概念）：沿清华东路—成府路界面建议「低层连续、骑楼连通」处理，保持校城融合的街道尺度；原点广场剖面意向为「站房—广场—绿脊」三段递进（概念剖面，非工程方案）。
 - **实施风险**：校区边界柔性化涉及高校权属，成果展示与居住配套功能比例需与控规衔接，列为待确认 [assumption:A-IMP-002]。
 
 ### 大钟寺AI产业聚集区（约72.0公顷）——「链节·业」
@@ -144,7 +154,7 @@ iteration: "v1.0"
 - **空间结构**：「一站四象限」——以大钟寺站为核，四象限分别布置智能经济培育生态（东南）、智能终端体验消费（东北）、内容消费与数字资产服务（西南）、商务服务（西北）；规划绿地复合利用（概念）[source:OFFICIAL-ANNOUNCEMENT]。
 - **建筑与更新（概念）**：发挥领军企业牵引优势，概念业态聚焦智能体、智能终端、内容消费；潜力地块研判周边高校更新改造方案（概念方向）；商业服务业用地（05）为主要用地载体（概念）；链节概念建筑以研发办公（office约51%）与人才公寓（约39%）为主，零售等体验业态为补充（示意）[data:geometry/buildings.geojson#BLD-004]。
 - **交通慢行**：优化大钟寺站一体化方案（概念）；开展站点路口四象限步行连通设计（对应 `geometry/public_space.geojson#PS-001`）[data:geometry/public_space.geojson#PS-001]；完善非机动车停放等静态交通组织（概念）[assumption:A-TRA-004]。
-- **公共空间与AI场景**：大钟寺四象限AI广场组织「数据要素市集」（场景卡SC-04）、具身智能中试场（SC-03）与智能终端体验街（SC-06延展）；大钟寺古钟博物馆周边（概略位置 `geometry/constraints.geojson#CON-HER-002`）保留文化张力，避免过度娱乐化 [data:geometry/constraints.geojson#CON-HER-002][source:AGENT-TASKBOOK]。
+- **公共空间与AI场景**：大钟寺四象限AI广场组织「数据要素市集」（场景卡SC-04）、具身智能中试场（SC-03）与智能终端体验街（SC-06延展）；大钟寺古钟博物馆周边（概略位置 `geometry/constraints.geojson#CON-HER-002`）保留文化张力，避免过度娱乐化 [data:geometry/constraints.geojson#CON-HER-002][source:AGENT-TASKBOOK]。公共界面（概念）：站点四象限界面建议「上虚下实」——底层商业展示连续、上层退台办公；钟楼地标视线廊道建议保持与古钟博物馆的文化对望（概念意向，非建设结论）。
 - **实施风险**：领军企业空间需求与权属关系、数据要素流通机制均依赖政策试点，列为待确认 [assumption:A-IMP-003]。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
@@ -170,13 +180,13 @@ iteration: "v1.0"
 
 `scenario_node_count` 指标为14 [metric:scenario_node_count]，`ai_test_scenario_count` 为4 [metric:ai_test_scenario_count]。每张场景卡均声明：空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体、对应图层、风险。全部场景为概念建议，未成熟技术不表述为已可全面部署 [source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-**SC-01「算力之芯」公共算力可视化装置（测试验证场景①）**：位于众智园科技广场（`geometry/public_space.geojson#PS-007`）。展示公共算力池的实时调度状态（脱敏聚合数据）；服务对象为公众与开发者；运行数据仅限算力调度聚合指标；隐私边界：不采集个人数据；人工复核：月度公共数据治理复核；运营主体：公共算力运营平台（概念）；图层：`public_space.geojson`；风险：算力指标被误解为园区产能承诺。
+**SC-01「算力之芯」公共算力可视化装置（测试验证场景①）**：位于众智园科技广场（`geometry/public_space.geojson#PS-007`）。展示公共算力池的实时调度状态（脱敏聚合数据）；服务对象为公众与开发者；运行数据仅限算力调度聚合指标；隐私边界：不采集个人数据；人工复核：月度公共数据治理复核；运营主体：公共算力运营平台（概念）；图层：`public_space.geojson`；风险：算力指标被误解为园区产能承诺。试点机制（概念）：试点范围限定众智园科技广场单点；准入条件为设备与数据合规审查通过；试点周期建议6个月后评估续展；退出条件为连续两期评估未达公共价值目标。
 
-**SC-02「AI治理沙盒」（测试验证场景②）**：位于众智园标准治理组团。面向企业提供可信AI测试、评测与标准提案服务；数据为申报企业脱敏数据集；人工复核：沙盒准入与退出由治理委员会评审；运营主体：治理实验室（概念）；对应 `geometry/land_use.geojson` 中0802类科研用地；风险：测试结论不得表述为官方认证。
+**SC-02「AI治理沙盒」（测试验证场景②）**：位于众智园标准治理组团。面向企业提供可信AI测试、评测与标准提案服务；数据为申报企业脱敏数据集；人工复核：沙盒准入与退出由治理委员会评审；运营主体：治理实验室（概念）；对应 `geometry/land_use.geojson` 中0802类科研用地；风险：测试结论不得表述为官方认证。试点机制（概念）：沙盒准入实行季度申报制，单季容量建议10—20家；测试结论分级（内部迭代/公开发布/标准提案）并逐级复核；试点周期12个月后评估制度化。
 
-**SC-03「具身智能中试场」（测试验证场景③）**：位于大钟寺链节产业组团。面向具身智能企业提供「原型—打样—小批量」中试服务（参照深圳硬件闭环案例转化）；人工复核：安全评估与保险机制；运营主体：产业运营公司（概念）；对应 `geometry/buildings.geojson` 中 `lab` 类型建筑；风险：中试范围与产能不得表述为已确定投资。
+**SC-03「具身智能中试场」（测试验证场景③）**：位于大钟寺链节产业组团。面向具身智能企业提供「原型—打样—小批量」中试服务（参照深圳硬件闭环案例转化）；人工复核：安全评估与保险机制；运营主体：产业运营公司（概念）；对应 `geometry/buildings.geojson` 中 `lab` 类型建筑；风险：中试范围与产能不得表述为已确定投资。试点机制（概念）：入驻企业须通过安全与合规双审；中试批次与场地容量按季核定；试点周期18个月，评估指标含良品率、安全事件率与转化签约数。
 
-**SC-04「数据要素流通试验床」（测试验证场景④）**：位于大钟寺链节。探索数据要素与数字资产流通机制（概念试验）；数据全部为公开/授权脱敏数据；人工复核：数据治理委员会逐项评审；运营主体：数据要素服务组织（概念）；风险：不得使用非公开数据或个人隐私作为必要条件。
+**SC-04「数据要素流通试验床」（测试验证场景④）**：位于大钟寺链节。探索数据要素与数字资产流通机制（概念试验）；数据全部为公开/授权脱敏数据；人工复核：数据治理委员会逐项评审；运营主体：数据要素服务组织（概念）；风险：不得使用非公开数据或个人隐私作为必要条件。试点机制（概念）：试验品种类与流通规则须经治理委员会逐项批准并公示；单笔试验规模设上限；试点周期12个月，评估后形成制度化建议（不作为政策承诺）。
 
 **SC-05「原点开源工坊」**：位于清华园站前AI原点广场（`geometry/public_space.geojson#PS-005`）周边。提供开发者工位、代码托管镜像、开源社区活动；服务对象为P3开发者；运营主体：开发者社区联盟（概念）；对应 `public_space.geojson` 与0803文化用地；风险：社区活动不表述为已确定安排。
 
@@ -292,7 +302,7 @@ iteration: "v1.0"
 | U13 | 人才公寓与社区服务补位 | 安居带 | 居住配套 | 用地条件 | 保障房主体 |
 | U14 | 小月河场景沙盒基地 | 场景翼 | 场景设施 | 场景政策 | 场景运营方 |
 
-以上项目全部为概念建议，不构成已确定实施安排、投资测算或审批判断 [source:AGENT-TASKBOOK][depth:renewal_project_list]。
+权利链说明：上表所列项目均为概念建议；每个项目的用地权属、建筑权属、资产许可与清权状态均需逐资产登记（本方案 `assumptions.json` 已登记权属类假设），在进入实施讨论前由专业团队补齐「逐资产权利链台账」——含地块权属、既有建筑产权、公共空间管理主体、数据与场景运营授权四项，本方案不推定任何权属结论 [source:AGENT-TASKBOOK][depth:renewal_project_list][assumption:A-IMP-002]。
 
 ### 实施政策建议（概念）
 
@@ -335,6 +345,8 @@ iteration: "v1.0"
 建议形成「1+4+12+N」活动体系：每年1场「京张AI创新大会」（主品牌活动）；每季度4场「链节开放日」（研/创/业/场景四主题轮换）；每月12场「开发者之夜」与「场景开放日」；常态化N场社区活动（开源工作坊、AI科普、居民体验）。全部活动为概念建议，不表述为已确定安排 [source:AGENT-TASKBOOK]。
 
 **活动品牌与传播视觉系统（概念建议，不表述为已确定安排）**：大会中英文品牌名建议为「京张AI创新大会 / Jing-Zhang AI Innovation Summit」；主视觉方向为「人字链」Logo 在活动场景的延展规范（铁轨铜×数据青双色体系、人字链节点母题）；年度奖项体系建议设「人字链奖」（链节贡献/开源贡献/场景落地三类）；IP与吉祥物方向以人字链为主题，全部自绘图形；传播物料与数字资产清单（海报、导视、数字模板）全部自绘、无版权风险。北京已形成中关村论坛年会（含人工智能主题日）、全球数字经济大会等品牌活动矩阵 [source:SRC-ZGC-FORUM-2026][source:SRC-GDEC-2026]，本体系建议与既有品牌活动形成年度协同，作为概念方向。
+
+**双语传播资产（概念清单）**：一带总名「京张人字链 / Jing-Zhang Renzi Chain（JZ-Renzi Belt）」；三链节「研·创·业 / R&D·Origin·Industry」；四地标「京张零号站 / Origin Station Zero、人字桥廊 / Herringbone Bridge、众智之心 / Heart of Crowd-Intelligence、钟声数据钟楼 / Bell Tower of Data」；传播口号「百年铁轨，遇见未来智能 / Where a century-old rail meets tomorrow's intelligence」；以上名称与文案均为本方案自拟概念，供官方品牌流程选用，不构成任何已确定品牌结论 [source:AGENT-TASKBOOK]。
 
 ### 开发者社区运营机制（概念）
 
@@ -420,16 +432,15 @@ iteration: "v1.0"
 
 ## 参考资料
 
-- `brief/site-package/design_brief.json`（项目定义、三层范围、面积、坐标政策）
-- `brief/site-package/allowed_design_space.json`（可编辑/锁定图层、provisional边界政策）
-- `brief/site-package/agent_taskbook.json`（智能体任务书：定位、功能、三区两翼、六项任务、共创原则、边界条款）
-- `brief/site-package/sources.json` 与 `data/source_registry.json`（来源登记与可用性规则）
-- `brief/site-package/geometry/provisional_boundaries.geojson`（临时粗略边界）
-- `brief/site-package/standards/standards.json` 与 `references/*.md`（专业标准本地参考库）
-- `brief/site-package/ranges/planning_limits.json`（已知官方面积与缺失控规指标）
-- `brief/site-package/enums/*.json`（图层、用地代码、道路等级、建筑类型、来源类型枚举）
-- `brief/site-package/schemas/*.json`（本包JSON模式）
-- `brief/site-package/visual_style_recommendations.json`（视觉风格建议，本方案图面采用专业城市设计图/轨道网络图/仪表盘风格）[source:VISUAL-STYLE-RECOMMENDATIONS]
-- `docs/data-workflow.md`（资料工作流）[source:DATA-WORKFLOW]
-- `data/processed/agent_fact_pack.md`（事实包导航层）
-- `templates/proposal.md`（本文件结构模板）
+本方案全部设计判断基于公开或清权资料：官方资格预审公告、智能体开源征集任务书、站点资料包与公开资料登记表（详见 `sources.json` 逐项登记与 `data/source_registry.json` 可用性规则）；专业标准依据《城市设计管理办法》《城市、镇控制性详细规划编制审批办法》《国土空间调查、规划、用途管制用地用海分类指南》；空间几何基于仓库维护者发布的临时粗略边界（provisional），官方 polygon 发布后须按 `docs/data-workflow.md` 重算全部面积派生指标 [source:SOURCE-REGISTRY][source:DATA-WORKFLOW][standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
+
+- `brief/public-brief.md`：公开任务书草案（项目目标、愿景、重点方向与评审维度）。
+- `brief/README.md`：公开任务书资料边界说明。
+
+### 站点资料清单（site-package）
+
+`brief/site-package/design_brief.json`（项目定义、三层范围、面积、坐标政策）；`allowed_design_space.json`（可编辑/锁定图层、provisional边界政策）；`agent_taskbook.json`（任务书：定位、功能、三区两翼、六项任务、共创原则、边界条款）；`ranges/planning_limits.json`（已知官方面积与缺失控规指标）；`enums/*.json`（图层、用地代码、道路等级、建筑类型、来源类型枚举）；`schemas/*.json`（本包JSON模式）；`standards/standards.json` 与 `references/*.md`（专业标准本地参考库）；`geometry/provisional_boundaries.geojson`（临时粗略边界）；`visual_style_recommendations.json`（视觉风格建议，本方案图面采用专业城市设计图/轨道网络图/仪表盘风格）[source:SITE-PACKAGE][source:VISUAL-STYLE-RECOMMENDATIONS]。
+
+### 处理资料与工作流
+
+`data/processed/agent_fact_pack.md`（事实包导航层）[source:PROCESSED-FACT-PACK]；`docs/data-workflow.md`（资料工作流）[source:DATA-WORKFLOW]；`templates/proposal.md`（本文件结构模板）。
