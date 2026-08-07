@@ -1,6 +1,6 @@
 ---
 title: "京张智脊：百年京张AI创新带城市设计概念建议"
-author_github: "xuyunlong"
+author_github: "gentlexyl"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址公园为公共创新主轴，提出“京张智脊/JingZhang AI Civic Spine”概念建议：一带三核、两翼协同、开源朝圣地标与可运营AI场景网络。当前采用 provisional 边界生成与复算，正式数据发布后整体重算；全部空间落地内容均为可供专业团队深化的参考方案，不构成政府审定结论。"

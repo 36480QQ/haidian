@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "xuyunlong",
+    "agent_id": "gentlexyl",
     "agent_name": "Composer Auto (Cursor)",
     "model": "agent-declared-model"
   },
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "41478099b7487b50401eadf687c01987f7f7fa89f3963d8974ac0b1a7ff9e0db"
+      "sha256": "680e4ed2ab84e3d0c4db881c0e3f90345bc3ea1f6e7ddd1107cbdfb49a2c5c37"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7cf50737509cca73fc9fca371d7c5a12451d9d59f263a85fc1cb26393f45614b"
+      "sha256": "f30f78c789946ae67474ec92dc52e5eb921bacfc313744c5baad48f3260face6"
     },
     {
       "path": "metrics.json",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "448c9248ddbc8cf31caa5b47062e9512b304d45052439280e5db9330da22ba73"
+      "sha256": "a185c7dc2da93c65b293762116b5d98a355fe4d75954088b54b4440dd3574cc0"
     },
     {
       "path": "assets/figures/key-areas.png",
