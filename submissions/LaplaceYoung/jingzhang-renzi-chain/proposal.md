@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.7"
+iteration: "v2.8"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -431,7 +431,7 @@ iteration: "v2.7"
 
 ### 国际传播与招引转化机制（概念）
 
-国际传播：依托「Renzi Belt」概念与开发者社区国际节点（开源基金会合作方向）形成传播网络；年度大会邀请国际生态案例城市（硅谷、肯德尔、特拉维夫等概念案例）对话。招引转化：会议流量→链节考察→沙盒申报→落地服务，形成「传播—体验—测试—落地」转化路径；人才转化：国际访客→开发者社区→人才特区服务。全部机制为概念建议 [source:AGENT-TASKBOOK]。
+国际传播：依托「Renzi Belt」概念与开发者社区国际节点（开源基金会合作方向）形成传播网络；年度大会邀请国际生态案例城市（硅谷、肯德尔、特拉维夫等概念案例）对话。招引转化：会议流量→链节考察→沙盒申报→落地服务，形成「传播—体验—测试—落地」转化路径；人才转化：国际访客→开发者社区→人才特区服务。全部机制为概念建议 [source:AGENT-TASKBOOK]。**治理话语权路径（概念，v2.8）**：依托众智园治理实验室与 SC-02「AI治理沙盒」形成「沙盒测试—标准提案—国际互认」话语权路径——年度大会设「AI 城市治理」国际对话板块，输出治理经验样本（概念）；治理机制与国际实践互相对标（阿姆斯特丹/赫尔辛基算法登记册、欧盟《人工智能法案》合规窗口，见风险章「国际治理对标」）[source:SRC-NL-ALGO-REGISTRY-2020][source:SRC-EU-AI-ACT-2026]，使「AI治理全球话语权」功能从空间映射落到机制路径（概念，不作为政策承诺）。
 
 ## 指标体系、面积复算与合规矩阵
 
