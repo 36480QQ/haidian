@@ -53,7 +53,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "现状依据、临时边界和九类资料缺口在设计依据及风险章节明确披露。",
+      "evidence_refs": [
+        "proposal.md#设计依据与资料清单",
+        "proposal.md#风险版权与合规说明",
+        "geometry/constraints.geojson#CONSTRAINTS",
+        "assumptions.json#A-CONTROLS-001"
+      ]
     },
     {
       "item_id": "three_level_scope_framework",
@@ -107,7 +113,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "统筹研究、总体设计、重点区域三层分别说明设计问题、方案回答和数据落点。",
+      "evidence_refs": [
+        "proposal.md#三层范围工作框架",
+        "assets/figures/land-use-structure.png",
+        "geometry/site_boundary.geojson#SITE-001",
+        "geometry/key_areas.geojson"
+      ]
     },
     {
       "item_id": "overall_spatial_structure",
@@ -161,7 +173,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "一带三核、多点场景、蓝绿慢行复合环由正文、结构图和多图层共同表达。",
+      "evidence_refs": [
+        "proposal.md#三层范围工作框架",
+        "assets/figures/land-use-structure.png",
+        "geometry/land_use.geojson#LU-001",
+        "geometry/roads.geojson#ROAD-001"
+      ]
     },
     {
       "item_id": "land_use_layout",
@@ -215,7 +233,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "四类概念用地分区覆盖临时边界，具体面积由提交几何复算。",
+      "evidence_refs": [
+        "proposal.md#用地建筑规模与拆改留方案",
+        "geometry/land_use.geojson",
+        "assets/figures/land-use-structure.png",
+        "metrics.json#site_area_sqm"
+      ]
     },
     {
       "item_id": "development_intensity_controls",
@@ -269,7 +293,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "建筑基底提供可复算基线；容积率、高度和密度因缺少官方条件明确列为待确认。",
+      "evidence_refs": [
+        "proposal.md#总体设计范围城市更新与控规深度城市设计",
+        "proposal.md#用地建筑规模与拆改留方案",
+        "geometry/buildings.geojson#BLDG-001",
+        "metrics.json#building_footprint_area_sqm"
+      ]
     },
     {
       "item_id": "height_massing_character",
@@ -323,7 +353,12 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "风貌、屋顶、体量和界面仅提出引导方向，具体高度控制等待控规、文保和现状条件。",
+      "evidence_refs": [
+        "proposal.md#蓝绿空间公共空间与城市风貌",
+        "proposal.md#用地建筑规模与拆改留方案",
+        "assumptions.json#A-CONTROLS-001"
+      ]
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -377,7 +412,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "以保留和适应性改造优先；因建筑普查、结构和权属缺失，不作地块级拆改留结论。",
+      "evidence_refs": [
+        "proposal.md#核心命题",
+        "proposal.md#用地建筑规模与拆改留方案",
+        "geometry/buildings.geojson#BLDG-001",
+        "proposal.md#三个低碳验证试点"
+      ]
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -431,7 +472,12 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "道路微循环、轨道接驳、骑行步行和停车深化条件形成独立章节与线性图层。",
+      "evidence_refs": [
+        "proposal.md#交通轨道市政与公共服务设施",
+        "geometry/roads.geojson#ROAD-001",
+        "assets/figures/mobility-bluegreen.png"
+      ]
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -485,7 +531,12 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "分布式能源、需求响应、端侧算力及传统市政协同明确为待审计策略。",
+      "evidence_refs": [
+        "proposal.md#交通轨道市政与公共服务设施",
+        "proposal.md#三个低碳验证试点",
+        "geometry/constraints.geojson#CONSTRAINTS"
+      ]
     },
     {
       "item_id": "blue_green_public_space",
@@ -539,7 +590,14 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "京张遗址公园、河道界面、慢行和公共活动由绿地及公共空间图层与比例指标复算。",
+      "evidence_refs": [
+        "proposal.md#蓝绿空间公共空间与城市风貌",
+        "geometry/green_space.geojson#GREEN-001",
+        "geometry/public_space.geojson#PUBLIC-001",
+        "metrics.json#green_ratio",
+        "metrics.json#public_space_ratio"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -593,7 +651,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "众智园、AI原点社区和大钟寺分别给出定位、空间动作、运营场景、试点及退出条件。",
+      "evidence_refs": [
+        "proposal.md#重点区域详细设计",
+        "proposal.md#三个低碳验证试点",
+        "geometry/key_areas.geojson",
+        "assets/figures/key-areas.png"
+      ]
     },
     {
       "item_id": "renewal_project_list",
@@ -647,7 +711,12 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "JZ-01至JZ-06逐项列明类型、依赖条件和空间证据。",
+      "evidence_refs": [
+        "proposal.md#更新项目清单实施政策与分期计划",
+        "geometry/phasing.geojson#PHASE-001",
+        "geometry/buildings.geojson#BLDG-001"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -701,7 +770,12 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "近期试点、中期更新、长期治理与年度运营闭环均以审批和数据条件为前提。",
+      "evidence_refs": [
+        "proposal.md#更新项目清单实施政策与分期计划",
+        "proposal.md#年度运营闭环",
+        "geometry/phasing.geojson#PHASE-001"
+      ]
     },
     {
       "item_id": "metrics_recalculation",
@@ -755,7 +829,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "五项已知指标分别回指 site、key areas、buildings、green space 和 public space 几何。",
+      "evidence_refs": [
+        "proposal.md#指标体系面积复算与合规矩阵",
+        "metrics.json",
+        "assets/figures/metrics-evidence.png",
+        "geometry/site_boundary.geojson#SITE-001"
+      ]
     },
     {
       "item_id": "risk_missing_data",
@@ -809,7 +889,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "官方红线、控规、权属、市政、交通、能源和文保缺口均降级为待确认，不形成实施承诺。",
+      "evidence_refs": [
+        "proposal.md#风险版权与合规说明",
+        "assumptions.json",
+        "self_check.json#BOUNDARY_TRUST",
+        "geometry/constraints.geojson#CONSTRAINTS"
+      ]
     }
   ]
 }
