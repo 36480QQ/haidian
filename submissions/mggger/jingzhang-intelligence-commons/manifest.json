@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "cc6a33c45a433ca0a4e7dec51a8448b6b3fb5bf7f4cadbff82a38f7051267c8b"
+      "sha256": "5387aef7d6762b293a438bb45319a2b0f87ecbb8afed963d75eae827cf1da432"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "99d9b9081770587254e3dd789af7bfd3909329e0e1626a24e11374834edb194f"
+      "sha256": "a26c1a98a2fcdd251996c4520c4c850406e7cd0f21f592918d4af63ad3f02469"
     },
     {
       "path": "report/narrative.md",
@@ -89,55 +89,55 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "b968235a955aee7f2cf654e718e4bcdcd3e7a08032682751f148703c2c5bf3e3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "6e97c180558661ba88b11529518d313d4c3418e03f20682577c6364b1a743a1a"
+      "sha256": "f23a99f7e0fa0d470b2cb91180f9485fd31ffc7d77d2c60393bd1d7920364a55"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "1c7c7e036f99585fc821b5b2b8d5aa202c58fe836f09110878171149e4b9fe1b"
+      "sha256": "0db963eb922e90caae1b7dd21768597ced2c5aa587d6fd99c9787563cbeb7134"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "55dc58970f97ae89fd48ecfcb344556074789483e0d0b65df6debb33777320d5"
+      "sha256": "0393a822621b74f4e3ff82e79bf113e9c6499e917881e3bbdaaecc0872e9bb0f"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "a8c305d3706fd637a69774930bdbcdd999c47abe7ec52e266ae1120ce4921958"
+      "sha256": "84ba2c373efd7a4e54bb475d74d8b59ee5ead3be6671846dd8a8e76a08b61bbd"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5e1e4b0185298b41904e499d8e7b01c929265f34b7fe446b0f5819fe012093bf"
+      "sha256": "38e0d57d95d8e136c026e1c532fee1de1242ba91b234e84c634518b6b487cecb"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "2aa7212e39b3db4ba8928693b54b15554202e06482796c95dc49db7b97cb6a6b"
+      "sha256": "27d0d91cb5b19969003162ad65412436bc35cc4a35b3239bf7725ccb74c6c2bf"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "2ec5e15e2f6d1e59fb7b7c037e8605d48e9de99f2fbd76f16d4d43c1aa4ec20b"
+      "sha256": "253f15f0057f5c9a0f559d97c8541d88fbc59d14c4e44fb1c8e9942dab0f31f4"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "0b393e6c8e22f47a9d058adcf8870dc4ded101a9fb2a2d9ef5eb48c5da713eea"
+      "sha256": "da37fa1ed1a058da5aa182e49418fb322ebf3959490c505b23860cd7fb3f5522"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -167,7 +167,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "36bc3c39d8cc971635b2a57aa61cd53e6773b3ad80d1593274ac167f1a84e8ed"
+      "sha256": "0af66c3a17528c7e3987c85594feb6e1abbed35dab437bcf3f0ac7781a10daef"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -192,6 +192,30 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "assets/visions/00-jingzhang-ai-commons-hero.jpg",
+      "role": "concept_visualization",
+      "required": false,
+      "sha256": "aa8bbd7093d68ca260acdbeba505c6912eb65ae0b08f0a8bf42d1e6b81e9afb3"
+    },
+    {
+      "path": "assets/visions/01-zhongzhiyuan-trust-lab.jpg",
+      "role": "concept_visualization",
+      "required": false,
+      "sha256": "343eeeddaeeedb6632db5ba66add61d35021979c9643ade749013990e23f0b72"
+    },
+    {
+      "path": "assets/visions/02-ai-origin-open-source-community.jpg",
+      "role": "concept_visualization",
+      "required": false,
+      "sha256": "b2a2a5caeed6a28a74406cdc84571af776e62754cb6018c03719dcc4495b8dde"
+    },
+    {
+      "path": "assets/visions/03-dazhongsi-intelligent-economy.jpg",
+      "role": "concept_visualization",
+      "required": false,
+      "sha256": "effb0fa3a347258b3af3b0881e17e078ddbb4b3851c8055e224a11f02922edfd"
     }
   ],
   "validation_claim": {

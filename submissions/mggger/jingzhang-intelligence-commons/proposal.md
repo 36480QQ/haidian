@@ -10,6 +10,25 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张智链公园：可验证、可漫游、可共创的AI创新城市带
 
+## 视觉序章：从铁路遗产到智能城市共同体
+
+![京张智链公园总体愿景](assets/visions/00-jingzhang-ai-commons-hero.jpg)
+
+主视觉把京张铁路遗产、线性公园、公共 AI 实验室和三处创新锚点组织成一条连续的城市公共界面。它表达的是空间气质与使用想象，不是现实照片、官方效果图或法定规划证据；边界、面积和指标仍以 GeoJSON 与 metrics 为准。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
+
+| 众智园：可信技术试场 | AI 原点：开源人才社区 | 大钟寺：智能经济客厅 |
+| --- | --- | --- |
+| ![众智园概念愿景](assets/visions/01-zhongzhiyuan-trust-lab.jpg) | ![AI原点概念愿景](assets/visions/02-ai-origin-open-source-community.jpg) | ![大钟寺概念愿景](assets/visions/03-dazhongsi-intelligent-economy.jpg) |
+| 受控验证、标准治理、低碳算力 | 开源协作、成果转化、人才日常 | 站城缝合、智能消费、国际交流 |
+
+四张图由 OpenAI 内置 GPT Image 能力生成，提示词由本方案作者编写，未使用外部图片、品牌或现实项目照片；仅用于概念氛围表达。[source:AGENT-TASKBOOK]
+
+v2.2 视觉修订以大幅城市愿景图建立情绪入口，以深色科技版式建立统一识别，再以浅底结构图承接可复核的专业证据。
+
+v2.3 完成印刷字体兼容与中英文字体分工校正，确保 A3/A0 不出现缺字方块。
+
+v2.4 仅优化图像传输体积，保留构图、色彩和版式，不改变设计判断或证据链。
+
 ## 核心提案：京张智链公园
 
 “京张智链公园 / Jing-Zhang Intelligence Commons”不是封闭园区，而是一条把百年铁路遗产变成公共创新接口的城市共同体。识别系统采用“轨枕 + 链路 + 开放括号”的抽象符号：深蓝代表可信基础，青色代表开放协作，青柠代表生活与生态，珊瑚色标出需要人工复核的公共界面；字形和图形均为本方案原创方向稿，正式应用前再做商标与字体清权。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
