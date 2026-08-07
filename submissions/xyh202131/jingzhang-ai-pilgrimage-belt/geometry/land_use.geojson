@@ -1,0 +1,268 @@
+{
+  "type": "FeatureCollection",
+  "name": "land_use_design",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-001",
+      "properties": {
+        "id": "LU-001",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0701",
+        "name_zh": "城镇住宅更新区",
+        "area_sqm_declared": 926664.163
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.341884,
+              40.009771999999835
+            ],
+            [
+              116.341884,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-002",
+      "properties": {
+        "id": "LU-002",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "AI研发创新区",
+        "area_sqm_declared": 2006828.715
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341884,
+              39.939
+            ],
+            [
+              116.341884,
+              40.009771999999835
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.34438,
+              40.0265
+            ],
+            [
+              116.34438,
+              39.939
+            ],
+            [
+              116.341884,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-003",
+      "properties": {
+        "id": "LU-003",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "京张绿廊公园带",
+        "area_sqm_declared": 2589339.05
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34438,
+              39.939
+            ],
+            [
+              116.34438,
+              40.0265
+            ],
+            [
+              116.3475,
+              40.0265
+            ],
+            [
+              116.3475,
+              39.939
+            ],
+            [
+              116.34438,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-004",
+      "properties": {
+        "id": "LU-004",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "成果转化与孵化区",
+        "area_sqm_declared": 2589337.157
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3475,
+              39.939
+            ],
+            [
+              116.3475,
+              40.0265
+            ],
+            [
+              116.35061999999999,
+              40.0265
+            ],
+            [
+              116.35061999999999,
+              39.939
+            ],
+            [
+              116.3475,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-005",
+      "properties": {
+        "id": "LU-005",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "05",
+        "name_zh": "大钟寺科创商业区",
+        "area_sqm_declared": 1812534.888
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35061999999999,
+              39.939
+            ],
+            [
+              116.35061999999999,
+              40.0265
+            ],
+            [
+              116.35280399999999,
+              40.0265
+            ],
+            [
+              116.35280399999999,
+              39.939
+            ],
+            [
+              116.35061999999999,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-006",
+      "properties": {
+        "id": "LU-006",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "16",
+        "name_zh": "留白提升区",
+        "area_sqm_declared": 1488125.141
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.35280399999999,
+              39.939
+            ],
+            [
+              116.35280399999999,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

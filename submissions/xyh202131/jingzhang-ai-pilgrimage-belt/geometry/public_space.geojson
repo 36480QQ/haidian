@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "name": "public_space_design",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI 公共活动广场",
+        "area_sqm_declared": 336703.501
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342196,
+              39.953
+            ],
+            [
+              116.342196,
+              39.97575
+            ],
+            [
+              116.343756,
+              39.97575
+            ],
+            [
+              116.343756,
+              39.953
+            ],
+            [
+              116.342196,
+              39.953
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

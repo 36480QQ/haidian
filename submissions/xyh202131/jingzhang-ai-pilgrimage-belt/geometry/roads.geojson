@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_design",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "主题慢行绿廊"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3402,
+            39.982749999999996
+          ],
+          [
+            116.35388,
+            39.982749999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "secondary",
+        "name_zh": "城市支路"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3475,
+            39.939
+          ],
+          [
+            116.3475,
+            40.0265
+          ]
+        ]
+      }
+    }
+  ]
+}
