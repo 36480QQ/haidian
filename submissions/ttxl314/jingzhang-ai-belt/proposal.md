@@ -105,11 +105,11 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 
 ### 城市更新总体框架
 
-更新逻辑遵循「**保文脉、活存量、插新芽**」三原则 [depth:existing_conditions_diagnosis]：保文脉——铁路遗址、清华园车站旧址、高校边界肌理与老社区格局作为不可移动资产 [data:geometry/constraints.geojson#CON-001]；活存量——老旧楼宇、低效园区以「保留+改造」为主，功能置换为创新服务与人才居住 [data:geometry/buildings.geojson#BLDG-001]；插新芽——新增建筑与公共空间节点仅作为「少量针灸式」插入，不追求大拆大建。建筑基底概念面积约 142.5 万 m²（占范围 12.5%，[metric:building_footprint_area_sqm]），拆改留分类以概念示意表达 [depth:retain_renovate_demolish]，具体地块结论须以现状测绘、权属与官方控规条件为准，本方案不作出任何地块级拆改留结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+更新逻辑遵循「**保文脉、活存量、插新芽**」三原则 [depth:existing_conditions_diagnosis]：保文脉——铁路遗址、清华园车站旧址、高校边界肌理与老社区格局作为不可移动资产 [data:geometry/constraints.geojson#CON-001]；活存量——老旧楼宇、低效园区以「保留+改造」为主，功能置换为创新服务与人才居住 [data:geometry/buildings.geojson#BLDG-001]；插新芽——新增建筑集中布局于研发创新用地沿线节点，以存量更新为主基调、新建与改造并举，单点规模受控。建筑基底概念面积约 142.5 万 m²（占范围 12.5%，[metric:building_footprint_area_sqm]），拆改留分类以概念示意表达 [depth:retain_renovate_demolish]，具体地块结论须以现状测绘、权属与官方控规条件为准，本方案不作出任何地块级拆改留结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ### 功能布局与产业比例（概念）
 
-24 个概念用地图斑分为四类 [data:geometry/land_use.geojson#LU-001] [metric:land_use_parcel_count]：AI 研发创新用地（众智园、原点社区，0701 类）、科研教育与高校协同用地（0802 类）、生活服务与产城融合用地（0702 类）、京张创新走廊综合用地（0701 类，沿铁路带）——大钟寺片区概念地块以科研、社区服务与走廊综合用地为主，智能原生商服功能的用地代码与比例由专业团队在控规深化阶段落实；用地代码遵循《国土空间调查、规划、用途管制用地用海分类指南》表达逻辑 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。产业功能比例（研发创新约 45%、产业服务与商业约 25%、教育与科研约 15%、生活服务约 15%）为概念目标值，作为专业团队深化参考，不构成控规指标。
+24 个概念用地图斑分为三类概念用地代码 [data:geometry/land_use.geojson#LU-001] [metric:land_use_parcel_count]：AI 研发创新用地（众智园、原点社区与京张创新走廊，0701 类）、科研教育与高校协同用地（0802 类）、生活服务与产城融合用地（0702 类）——大钟寺片区概念地块以科研、社区服务与走廊综合用地为主，智能原生商服功能的用地代码与比例由专业团队在控规深化阶段落实；用地代码遵循《国土空间调查、规划、用途管制用地用海分类指南》表达逻辑 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。产业功能比例按概念用地代码实测：AI 研发创新与走廊综合（0701 类）约 45%、生活服务与产城融合（0702 类）约 28%、科研教育（0802 类）约 27%，均为概念目标值，作为专业团队深化参考，不构成控规指标。
 
 ### 控规深度条件声明
 
@@ -166,7 +166,7 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 
 ### 12 张 AI 场景卡（agent.3 核心响应）
 
-每张场景卡包含：场景定位、空间落点、服务对象、运行数据边界、隐私与人工复核、运营主体（概念）、对应图层与风险。以下为可读摘要，完整字段见 compliance_matrix.json 与 visual/index.html 的场景章节。
+每张场景卡包含：场景定位、空间落点、服务对象、运行数据边界、隐私与人工复核、运营主体（概念）、对应图层与风险。以下为可读摘要卡（编号、主题、落点与核心机制，见 visual/index.html 场景章节）；服务对象、运营主体与数据边界等完整字段在深化阶段随场景详细设计逐卡展开。
 
 | ID | 场景 | 空间落点 | 类型 |
 | --- | --- | --- | --- |
@@ -189,14 +189,14 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 
 ## 用地、建筑规模与拆改留方案
 
-- **用地布局**：24 个概念用地图斑完整覆盖设计边界（覆盖率 100% 无重叠，[metric:land_use_coverage]），四类用地沿廊道两侧组织：研发创新居西、生活服务居东、教育科研守校园周边、商服功能意向聚大钟寺（概念地块以科研与社区服务为主，商服用地比例待控规深化阶段落实）[data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。
-- **建筑规模（概念）**：建筑基底 142.5 万 m²、占比 12.5% [metric:building_footprint_area_sqm] [metric:building_footprint_ratio]；概念建筑簇 84 个（[metric:building_block_count]），街块尺度 80-160 m，符合 TOD 步行街区尺度；建筑高度、容积率、密度为待确认项（A-CONTROLS-001）[depth:development_intensity_controls]。
-- **拆改留（概念）**：保留类（高校科研、文保与老社区肌理）约 35%、改造类（低效楼宇功能置换）约 40%、新建类（针灸式节点）约 25%——以建筑簇 action_class 字段表达 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。**本分类为概念示意，不构成任何地块拆改留结论**，须以官方控规、权属与现状测绘复核 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+- **用地布局**：24 个概念用地图斑完整覆盖设计边界（覆盖率 100% 无重叠，[metric:land_use_coverage]），三类概念用地代码沿廊道两侧组织：研发创新居西、生活服务居东、教育科研守校园周边、商服功能意向聚大钟寺（概念地块以科研与社区服务为主，商服用地比例待控规深化阶段落实）[data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。
+- **建筑规模（概念）**：建筑基底 142.5 万 m²、占比 12.5% [metric:building_footprint_area_sqm] [metric:building_footprint_ratio]；概念建筑簇 84 个（[metric:building_block_count]），街块尺度以 80-160 m 为主（实测约三成达 160-180 m），整体符合 TOD 步行街区尺度；建筑高度、容积率、密度为待确认项（A-CONTROLS-001）[depth:development_intensity_controls]。
+- **拆改留（概念）**：保留类（高校科研、文保与老社区肌理）约 26%、改造类（低效楼宇功能置换）约 27%、新建类（研发创新用地节点）约 47%——以建筑簇 action_class 字段按面积实测表达 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。**本分类为概念示意，不构成任何地块拆改留结论**，须以官方控规、权属与现状测绘复核 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 - **空间供给与运营**：创新空间「保基本+弹性」：保障型（政府平台持有 20%）与市场型（80%）双轨供给，弹性空间可转换会议/展示/测试用途。
 
 ## 交通、轨道、市政与公共服务设施
 
-- **道路微循环**：概念路网 = 1 条慢行主廊道（ROAD-001）+ 7 条东西联络道（ROAD-002 至 008）+ 10 座人行桥（RAIL+Bridge 关沟记忆桥谱系）[data:geometry/roads.geojson#ROAD-001] [metric:bridge_count]，概念路网线位约 19.7 km [metric:road_centerline_length_m]，桥系另计约 3.0 km [metric:bridge_length_m]；均为概念线位，非道路红线 [depth:traffic_rail_slow_parking]。
+- **道路微循环**：概念路网 = 1 条慢行主廊道（ROAD-001）+ 7 条东西联络道（ROAD-002 至 008）+ 10 座人行桥（RAIL+Bridge 关沟记忆桥谱系）[data:geometry/roads.geojson#ROAD-001] [metric:bridge_count]，概念路网线位合计约 19.7 km [metric:road_centerline_length_m]（含 10 座桥系约 3.0 km [metric:bridge_length_m]）；均为概念线位，非道路红线 [depth:traffic_rail_slow_parking]。
 - **轨道站点一体化**（概念节点）：五道口（13 号线）、西土城/知春路（10 号线、昌平线南延）、大钟寺（12 号线）、清河（13 号线、京张高铁）——以「站城一体、最后一公里慢行优先」组织 [data:geometry/constraints.geojson#CON-004]。
 - **慢行断点缝合与跨街桥**：以廊道为脊，东西联络道加密过街；跨街主题廊桥（BRIDGE-001「学院号」、BRIDGE-002「西土城号」、BRIDGE-003「大钟寺号」）在人行高度跨越学院路、西土城路、大钟寺东路等南北干道，把被干道切割的绿廊与街区重新缝合，行人在桥上获得「列车穿街」的沉浸视角 [data:geometry/roads.geojson#BRIDGE-001]；非机动车停放按站点 300 m 圈层配置。
 - **市政与新基建（概念）**：分布式能源（光伏雨棚、地源热泵试验）、端侧算力节点（边缘盒沿廊道布点）、传统市政管线与数字孪生管网融合；市政容量与能源负荷专业测算列入待确认（A-MUNI-001）[depth:municipal_new_infrastructure]。
@@ -322,7 +322,7 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 
 **先导项目包（P1 种子，概念）**：建议以「开发者散步道南段（含关沟回响纪念桥）+ 原点广场 + 智轨接驳试验段」三项目为第一波先导——分别验证公共空间、站城一体与 AI 测试场景三类机制，形成「可复制单元」后向 P2/P3 滚动复制 [depth:phasing_implementation]。
 
-对应 `geometry/phasing.geojson` 三期概念分区 [data:geometry/phasing.geojson#PHASE-001] [metric:phasing_count] [depth:phasing_implementation]：**P1 近期启动带（2026-2028）**＝原点社区 + 遗址公园活力带；**P2 中期拓展带（2028-2031）**＝众智园 + 廊道南北贯通；**P3 远期缝合带（2031-2035）**＝大钟寺新业态 + 两翼整体缝合 [depth:renewal_project_list]。分期为概念建议，非开发时序结论。
+对应 `geometry/phasing.geojson` 三期概念分区 [data:geometry/phasing.geojson#PHASE-001] [metric:phasing_count] [depth:phasing_implementation]：**P1 近期启动带（2026-2028）**＝原点社区 + 遗址公园活力带；**P2 中期拓展带（2028-2031）**＝众智园 + 廊道南北贯通；**P3 远期缝合带（2031-2035）**＝大钟寺新业态 + 两翼整体缝合 [depth:renewal_project_list]。分期为概念建议，非开发时序结论；分期图层当前与三重点区空间范围对应（概念示意），两翼与其余区域的分期边界由专业团队在深化阶段补充。
 
 ### 全球 AI 创新活动体系与长期运营（agent.6 核心响应）
 
@@ -340,7 +340,7 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 | --- | --- | --- | --- |
 | site_area_sqm | 11,412,825 | m² | 总体设计范围概念面积（provisional） |
 | land_use_coverage | 1.0000 | 比率 | 用地划分完整性：24 图斑无缝隙无重叠 [depth:land_use_layout] |
-| green_ratio | 0.0891 | 比率 | 概念绿地率：支撑人才生活的公园可达性（500 m 覆盖概念） |
+| green_ratio | 0.0891 | 比率 | 概念绿地率：以 500 m 慢行圈可达为设计意图（概念，可达性分析待深化阶段验证） |
 | public_space_ratio | 0.0211 | 比率 | 概念公共空间率：创新交往与朝圣活动的物质载体 [metric:public_space_ratio] |
 | building_footprint_area_sqm | 1,425,185 | m² | 概念建筑基底：产业空间供给规模上限示意 |
 | corridor_pedestrian_length_m | 9,557 | m | 京张慢行廊道长度：串联全部核心场景的「城市脊线」 |
@@ -365,7 +365,7 @@ AI 将改变工作（分布式创造）、生活（按需服务）、学习（�
 
 - **资料合规**：全部设计判断基于公开官方资料、仓库登记的清权资料与 provisional 边界；未使用也未声称使用非公开规划图件、内部指标或个人隐私数据 [source:SOURCE-REGISTRY]。
 - **版权授权**：本包文本、图表、Logo 方向与视觉规范均为 agent 原创生成；引用的标准与公告为官方公开文件，按规范标注来源；不引用第三方商标、字体、图片或人物肖像 [source:AGENT-TASKBOOK]。声明见 `report/copyright_statement.md`。
-- **AI 生成责任**：本方案由 AI agent 生成，作者对事实、引用、版权与最终表达负责；生成方法已披露（agent.json 与 changelog 记录）。
+- **AI 生成责任**：本方案由 AI agent 生成，作者对事实、引用、版权与最终表达负责；生成方法已披露（agent.json）。
 - **禁用承诺**：本方案不含任何官方批准、已实施安排、投资与开发时序承诺；所有「待确认」项（控规指标、市政容量、文保审批、权属、桥体工程）在 assumptions.json 登记。
 - **专业复核需求**：空间几何、面积、拆改留分类、交通线位、桥体设计与活动运营需专业规划与桥梁团队复核；官方边界发布后整体复算 [depth:risk_missing_data]。
 - **风险矩阵**：数据隐私、实施复杂度、公众接受度、运维成本、政策不确定性、空间争议、技术成熟度、公平包容八维风险按 1-5 分评估（概念），见风险说明章节附录与 visual/index.html。
