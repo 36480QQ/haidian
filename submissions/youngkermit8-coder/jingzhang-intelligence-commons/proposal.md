@@ -10,8 +10,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张智共生——开放智能共同体城市设计
 
-**投稿署名：geodesic 测地线建筑**
-
 > Jing-Zhang Intelligence Commons / 开放智能共同体。方案把“AI创新带”理解为一套可以被研究者、企业、居民、学生、城市管理者和国际访客共同使用、共同测试、共同治理的城市基础设施，而不是封闭园区或一次性形象工程。当前边界均为临时粗略数据，图纸与指标仅服务本次开源征集和专业讨论。
 
 ## 设计依据与资料清单
@@ -98,11 +96,39 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 文本、原创图形、代码和设计数据按 CC-BY-SA-4.0 发布；OSM 派生背景继续遵守 ODbL 并署名“© OpenStreetMap contributors”。案例页面仅用于研究引用，不复制其图片、标志或大段文字。离线HTML不加载远程脚本、地图瓦片、字体、iframe、表单或追踪器。本方案不声称官方批准、法定控规、最终权属或确定实施，维护者和专业团队可依据正式资料校正。
 
+## 数字化城市设计协议：从图形到可计算决策
+
+V2不把“数字化”理解为屏幕、传感器或视觉风格，而是建立一条可追踪的决策链：**场地参数 → 空间规则 → 情景模拟 → 性能阈值 → 人工签署 → 版本差异**。这一方法参考AA Landscape Urbanism对多尺度制图、GIS、脚本模拟与政策设计的结合；参考Foster式的基础设施—公共空间整合，以及Arup式的交通、水、能源、数据和实施系统协同，但不声称任何机构参与或背书。[source:AA-LU-DIGITAL] [source:AA-LU-PROJECTS] [source:FOSTER-URBAN] [source:ARUP-MASTERPLANNING]
+
+案例转译不复制形式，而是进入计算协议：Masdar的紧凑遮阴街区、公共交通邻近和“建成—评估—再迭代”的弹性分期，被转译为京张主脊的步行阈值、热舒适验证和每阶段公开差异；Constanța的工业片区再生、社区调查、遗构复用、绿道缝合与建设前修复，被转译为三庭缺失功能清单、既有资产台账、东西连接线和土壤/结构/市政前置调查。二手页面仅用于交叉阅读，所有设计依据优先引用事务所官方页面，且不复用参考文章图像。[source:CASE-MASDAR-FOSTER] [source:CASE-MASDAR-ARCHIPOSITION] [source:CASE-CONSTANTA-FOSTER] [source:CASE-CONSTANTA-GOOOOD]
+
+空间模型由六组参数控制：临时范围、主脊走向、东西缝合位置、三庭公共地面、干预包络和分期门槛。`visual/assets/computation_protocol.json`记录参数、依赖文件、重算顺序和人工审查点；正式边界到位后，模型必须先生成差异表，再更新图层、指标、正文、HTML与图纸。算法只负责暴露关系与备选项，不自动决定拆留、容积率、道路组织或公共资源分配。
+
+## 三庭差异化与城市剖面
+
+众智协议庭采用“低密测试院落”：长向公共庭院连接研发、红队和端侧测试，永久建筑与可撤回设施分层管理；原点开源站采用“斜向交换站厅”：把高校—社区—园区的日常穿行引入共享首层；大钟未来广场采用“站城双场”：用两侧城市客厅与中央无障碍连接形成四象限换乘和活动界面。三者不再使用同一矩形模板，其公共地面、建筑包络和慢行环均在GeoJSON中分别建模。[data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-010]
+
+重点区深化遵循“地下市政—地面慢行与雨洪—首层公共界面—上部研发/生活—屋顶能源与生境”的五层剖面。尺寸、树冠、管线、结构与消防数据缺失，因此图纸表达设计规则和测试门槛，不伪造施工级断面。
+
+## 综合性能、实施与AI系统卡
+
+`visual/assets/performance_targets.json`把竞赛阶段目标分成可达性、无障碍、热舒适、雨洪、资源、运营和AI治理七类。5/10/15分钟仅作为400/800/1200米方法半径，正式评价必须基于真实出入口、过街、坡度、障碍和人口网络；树荫、径流、碳和能源均须由后续模型与监测验证，当前不计为已实现成绩。
+
+`visual/assets/implementation_matrix.json`为八个项目列出牵头主体类型、协作方、前置条件、审批门、CAPEX/OPEX量级、KPI与停止条件。近期只实施可逆、低土建的三庭原型和数据治理底座；中期在道路红线、市政、权属和结构调查齐备后推进连续慢行与适应性更新；长期站城工程须进入法定规划、交通影响、工程和公众参与程序。
+
+`visual/assets/ai_system_cards.json`把场景拆成目的、用户、禁止用途、数据合同、基线、离线评测、在线阈值、人工回退、事件响应和退役条件；治理结构对应NIST AI RMF的Govern—Map—Measure—Manage循环。任何对个人权益、公共安全或资源分配有实质影响的输出必须100%人工复核，且保留非数字服务通道。[source:NIST-AI-RMF]
+
+## 同行作品校准与原创边界
+
+本次征集Issues/PR作品被用作交付深度基准。V2吸收同行在资产台账、责任许可、KPI、复核退出和重算差异表方面的公开经验，并将其推进为可计算协议、差异化节点与综合工程绩效；不复制其命名、图形、几何或文本。[source:PEER-REN-AXIS-167] [source:PEER-NEURAL-COMMONS-174]
+
 ## 参考资料
+
+- `brief/public-brief.md`
 
 研究与提交遵循以下机器可读证据索引。国际案例均为机构或政府官方页面；其结论只用于机制比较。边界、控规与专业深度的最终判断仍以北京官方材料、仓库登记资料和后续正式附件为准。
 
-来源：[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:OSM-CONTEXT] [source:CASE-MIT-KENDALL] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-AISG] [source:CASE-SEOUL] [source:CASE-ETH]
+来源：[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:AA-LU-DIGITAL] [source:AA-LU-PROJECTS] [source:FOSTER-URBAN] [source:ARUP-MASTERPLANNING] [source:NIST-AI-RMF] [source:BEIJING-STREET-UPDATE] [source:PEER-REN-AXIS-167] [source:PEER-NEURAL-COMMONS-174] [source:OSM-CONTEXT] [source:CASE-MIT-KENDALL] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-AISG] [source:CASE-SEOUL] [source:CASE-ETH] [source:CASE-MASDAR-FOSTER] [source:CASE-MASDAR-ARCHIPOSITION] [source:CASE-CONSTANTA-FOSTER] [source:CASE-CONSTANTA-GOOOOD]
 
 标准：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -110,4 +136,4 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 空间：[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/phasing.geojson#PHASE-001]
 
-指标：[metric:site_area_sqm] [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [metric:building_footprint_area_sqm] [metric:design_building_footprint_ratio] [metric:road_centerline_length_m] [metric:key_area_count] [metric:scenario_node_count] [metric:phase_count] [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]
+指标：[metric:site_area_sqm] [metric:design_green_overlay_area_sqm] [metric:design_green_overlay_ratio] [metric:green_space_area_sqm] [metric:green_ratio] [metric:design_civic_ground_area_sqm] [metric:design_civic_ground_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [metric:design_intervention_footprint_area_sqm] [metric:building_footprint_area_sqm] [metric:design_building_footprint_ratio] [metric:conceptual_mobility_network_length_m] [metric:road_centerline_length_m] [metric:conceptual_mobility_network_density] [metric:key_area_count] [metric:scenario_node_count] [metric:phase_count] [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]

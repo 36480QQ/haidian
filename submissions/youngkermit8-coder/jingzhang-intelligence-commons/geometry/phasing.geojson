@@ -11,9 +11,13 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "近期原型验证",
+        "name_zh": "近期：三庭最小可行原型",
         "phase": "phase_1",
-        "implementation_status": "conceptual_sequence",
+        "implementation_status": "conceptual_stage_gate",
+        "gate": [
+          "data_ready",
+          "professional_review"
+        ],
         "area_sqm_declared": 4145970.725
       },
       "geometry": {
@@ -57,9 +61,14 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "中期三庭联网",
+        "name_zh": "中期：连续网络与适应性改造",
         "phase": "phase_2",
-        "implementation_status": "conceptual_sequence",
+        "implementation_status": "conceptual_stage_gate",
+        "gate": [
+          "data_ready",
+          "professional_review",
+          "reversible_pilot"
+        ],
         "area_sqm_declared": 3801720.759
       },
       "geometry": {
@@ -107,9 +116,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "长期全球社区运营",
+        "name_zh": "长期：站城共同体与全球运营",
         "phase": "phase_3",
-        "implementation_status": "conceptual_sequence",
+        "implementation_status": "conceptual_stage_gate",
+        "gate": [
+          "data_ready",
+          "professional_review",
+          "reversible_pilot",
+          "public_evaluation"
+        ],
         "area_sqm_declared": 3465133.902
       },
       "geometry": {

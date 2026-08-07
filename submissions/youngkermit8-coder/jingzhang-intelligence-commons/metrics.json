@@ -12,91 +12,186 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "area(site_boundary, EPSG:4548)",
+      "formula": "area(provisional site, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "采用临时粗略边界，仅用于方案复算"
-      ]
+        "临时粗略边界"
+      ],
+      "scope_note": "非官方规划面积"
     },
-    "green_space_area_sqm": {
+    "design_green_overlay_area_sqm": {
       "status": "known",
-      "value": 1759123.70428,
+      "value": 1839145.137447,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "area(union(green_space), EPSG:4548)",
+      "formula": "area(union design green overlay, EPSG:4548)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "设计覆盖层，非现状绿地或法定绿地"
     },
-    "green_ratio": {
+    "design_green_overlay_ratio": {
       "status": "known",
-      "value": 0.154136,
+      "value": 0.161147,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
+      "formula": "design_green_overlay_area / provisional_site_area",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "概念设计覆盖率"
     },
-    "public_space_area_sqm": {
+    "green_space_area_sqm": {
       "status": "known",
-      "value": 124200.0,
+      "value": 1839145.137447,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "compatibility alias: design green overlay area",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；不得解释为法定绿地面积"
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.161147,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "compatibility alias: design green overlay ratio",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；不得解释为绿地率"
+    },
+    "design_civic_ground_area_sqm": {
+      "status": "known",
+      "value": 161057.796411,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "area(union(public_space polygons), EPSG:4548)",
+      "formula": "area(union three conceptual civic grounds, EPSG:4548)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "三庭详细设计对象，不代表全域公共空间"
     },
-    "public_space_ratio": {
+    "design_civic_ground_ratio": {
       "status": "known",
-      "value": 0.010882,
+      "value": 0.014112,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
+      "formula": "design civic ground / provisional site",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "设计对象比例"
     },
-    "building_footprint_area_sqm": {
+    "public_space_area_sqm": {
       "status": "known",
-      "value": 102816.0,
+      "value": 161057.796411,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "compatibility alias: three court design area",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；非全域公共空间存量"
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.014112,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "compatibility alias: three court ratio",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；非公共空间率"
+    },
+    "design_intervention_footprint_area_sqm": {
+      "status": "known",
+      "value": 135414.000001,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "area(union(building footprints), EPSG:4548)",
+      "formula": "area(union conceptual intervention envelopes, EPSG:4548)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "概念干预包络，不是现状建筑基底"
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 135414.000001,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "compatibility alias: conceptual intervention envelope",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；非现状建筑面积"
     },
     "design_building_footprint_ratio": {
       "status": "known",
-      "value": 0.009009,
+      "value": 0.011865,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "formula": "concept intervention envelope / provisional site",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "概念干预比例，不是建筑密度"
     },
-    "road_centerline_length_m": {
+    "conceptual_mobility_network_length_m": {
       "status": "known",
-      "value": 15350.253025,
+      "value": 27464.458417,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(length(road centerlines), EPSG:4548)",
+      "formula": "sum(conceptual walk-cycle centerlines, EPSG:4548)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "scope_note": "概念网络长度，不是现状道路总长"
+    },
+    "road_centerline_length_m": {
+      "status": "known",
+      "value": 27464.458417,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "compatibility alias: conceptual mobility network",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "兼容字段；非完整道路网密度依据"
+    },
+    "conceptual_mobility_network_density": {
+      "status": "known",
+      "value": 0.002406,
+      "unit": "index",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "conceptual_mobility_network_length_m / provisional_site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [],
+      "scope_note": "km per km² numerically equivalent; concept network only"
     },
     "key_area_count": {
       "status": "known",
@@ -116,7 +211,7 @@
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "count(features where scenario_id exists)",
+      "formula": "count(features with scenario_id)",
       "confidence": "high",
       "assumptions": []
     },
@@ -127,7 +222,7 @@
       "source_files": [
         "geometry/phasing.geojson"
       ],
-      "formula": "count(phasing polygons)",
+      "formula": "count(non-overlapping phase polygons)",
       "confidence": "high",
       "assumptions": []
     },
@@ -171,12 +266,12 @@
       "source_files": [
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "sum(building floor area)",
+      "formula": "sum(official building floor area)",
       "confidence": "unknown",
       "assumptions": [
-        "待官方控规与工程资料确认"
+        "待官方控规、测绘或工程资料确认"
       ],
-      "reason": "缺少官方建筑规模与现状测绘。"
+      "reason": "缺少官方建筑规模、现状测绘和权属。"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -185,10 +280,10 @@
       "source_files": [
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "formula": "official floor area / official site area",
       "confidence": "unknown",
       "assumptions": [
-        "待官方控规与工程资料确认"
+        "待官方控规、测绘或工程资料确认"
       ],
       "reason": "缺少正式控规和官方边界。"
     },
@@ -202,9 +297,9 @@
       "formula": "official building footprint / official site area",
       "confidence": "unknown",
       "assumptions": [
-        "待官方控规与工程资料确认"
+        "待官方控规、测绘或工程资料确认"
       ],
-      "reason": "当前建筑仅为设计原型，不代表审定建筑密度。"
+      "reason": "当前仅有概念干预包络。"
     },
     "building_height_m": {
       "status": "unknown",
@@ -216,9 +311,9 @@
       "formula": "official height control",
       "confidence": "unknown",
       "assumptions": [
-        "待官方控规与工程资料确认"
+        "待官方控规、测绘或工程资料确认"
       ],
-      "reason": "缺少高度、航空、景观与文保控制条件。"
+      "reason": "缺少高度、航空、景观和文保条件。"
     },
     "setback_m": {
       "status": "unknown",
@@ -230,9 +325,37 @@
       "formula": "official setback control",
       "confidence": "unknown",
       "assumptions": [
-        "待官方控规与工程资料确认"
+        "待官方控规、测绘或工程资料确认"
       ],
-      "reason": "缺少道路红线、地块线与消防条件。"
+      "reason": "缺少道路红线、地块线和消防条件。"
+    },
+    "network_5min_population_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "network service area intersect verified population grid",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规、测绘或工程资料确认"
+      ],
+      "reason": "缺少正式出入口、可达网络与人口栅格。"
+    },
+    "summer_route_shade_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "hourly shaded route length / priority route length",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规、测绘或工程资料确认"
+      ],
+      "reason": "缺少树冠、建筑高度和逐时日照模型。"
     }
   }
 }
