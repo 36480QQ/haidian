@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "6d35bc8aaa5287c8fe328e1079c7335461771230af1422a57a1444911a4bd6f6"
+      "sha256": "ee099183350a94ba85c2da361abfa3efee5347cdd96f931ffb972b81db481c1c"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "85a050e228548433a1a9db3c438abb807dfda46d1007d481955c5befc02fd712"
+      "sha256": "eee3e46a6ddb857cc5fd6ded4c72f72e7b043646096cc28e78e487113024cf42"
     },
     {
       "path": "self_check.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "40d85acf20db7bb5df87a3dd74e2e93b848654ea9ec83583111516a93e7999a9"
+      "sha256": "93dded37ceb0c23ace697f49d317781264c789090fde6b2f97bc9bf5d68e7205"
     },
     {
       "path": "report/narrative.md",
@@ -89,25 +89,25 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f971729c89537dabd45cf4fa1beb4362c5ca834bee45fa801e8a15eee9443f96"
+      "sha256": "83fc7433cf3a7d94af2e487c21e6de316c9c900642c748638d25692a257e1b62"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "69eea9b99864fc9ddc55c3206cdbfe53be075a915f1f2bb8783b83dcf8d36c7e"
+      "sha256": "05cc9261dd7a48b434171bb701e1c634093292eced85c7dc75bd3320522d6e15"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "2ace8eb5d527c59cc9a36c7186e99063d2e7e41b72e590bbedbe861e41caa876"
+      "sha256": "a94b294ae952956b32ab9ff63bb84674e94f64803a6b3f404f3019a44a98d9c0"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "ebb0a9e16c2e33b7b6203505fc757bb4d19536b4d2bb8d1e9c44646b1eab04fc"
+      "sha256": "3a30d5edee6fdc3ccd5dec6556843ae659c1045f363b99326fa6767079b7009d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7ad59a3e3421553116352e6a52578f6ae6b2823b0778b0f286fd2f3d1c6084d5"
+      "sha256": "542c5f492185b514b57794b7ec0c5dfc85dddd8c40de553fe01dbb4c4b4bf9bd"
     },
     {
       "path": "assets/logo.svg",
@@ -228,7 +228,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "note": "v0.2 完善后：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
+    "note": "v2.1（经多轮迭代）：确定性/空间/可视化封装/专业证据四类校验PASS；provisional边界已如实披露，官方polygon发布后重算全部面积派生指标。"
   },
   "submission_timestamp": "2026-08-08T03:00:00Z"
 }
