@@ -382,36 +382,36 @@
    "confidence": "medium",
    "assumptions": []
   },
-  "human_review_coverage_ratio": {
+  "human_review_field_completeness_ratio": {
    "status": "known",
    "value": 1.0,
    "unit": "ratio",
    "source_files": [
-    "tools ledger via visual/A3 台账"
+    "visual/assets/governance-ledger.json"
    ],
-   "formula": "count(scenario cards with staffed human review)/scenario_node_count",
+   "formula": "count(scenarios with non-empty review_accept field)/scenario_node_count — 设计完备率，非运行实测",
    "confidence": "medium",
    "assumptions": []
   },
-  "no_ai_alternative_ratio": {
+  "no_ai_alternative_field_completeness_ratio": {
    "status": "known",
    "value": 1.0,
    "unit": "ratio",
    "source_files": [
-    "tools ledger via visual/A3 台账"
+    "visual/assets/governance-ledger.json"
    ],
-   "formula": "count(scenario cards with non-AI equivalent path)/scenario_node_count",
+   "formula": "count(scenarios with non-empty alt field)/scenario_node_count — 设计完备率，非运行实测",
    "confidence": "medium",
    "assumptions": []
   },
-  "appeal_channel_coverage_ratio": {
+  "appeal_channel_field_completeness_ratio": {
    "status": "known",
    "value": 1.0,
    "unit": "ratio",
    "source_files": [
-    "tools ledger via visual/A3 台账"
+    "visual/assets/governance-ledger.json"
    ],
-   "formula": "count(scenario cards with appeal channel)/scenario_node_count",
+   "formula": "count(scenarios where stop_chain contains 申诉)/scenario_node_count — 设计完备率，非运行实测",
    "confidence": "medium",
    "assumptions": []
   },

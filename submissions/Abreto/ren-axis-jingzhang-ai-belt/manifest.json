@@ -23,7 +23,7 @@
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
-   "sha256": "7a5d9dcd087e35d3b95989eeff515a416b61553aea8dfce57dab3718e6e59346"
+   "sha256": "dacf767e92260c31786ea1e2650a6ca36763d4d992196500fee443e99f821c69"
   },
   {
    "path": "agent.json",
@@ -35,7 +35,7 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "1294102a4d357dd239e8976f6aa174a1f5cde17bf42b5c75a69efda66295ac69"
+   "sha256": "fde9c1176e3d8595d52a59f418faf92cb6515db2447c48e94c993646b1be2dad"
   },
   {
    "path": "assumptions.json",
@@ -47,7 +47,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "57e5481f9b91c7a203877f315a17887dd1f63797898f8091f36b0111cfc43afe"
+   "sha256": "b304b120ebbf19a3b053911d96683e597abf917804259e0e13983f3fa30a11fb"
   },
   {
    "path": "self_check.json",
@@ -77,7 +77,7 @@
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
-   "sha256": "5dde1893d4b57e84d8cca0c04a7b5b61ff45abd570c344a65cdf56e5fc32e073"
+   "sha256": "39a985db976ea7cf7187c4b76a4b513a4a24f0ec26354b79374285110cd5f47d"
   },
   {
    "path": "report/narrative.md",
@@ -95,19 +95,19 @@
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "3b495a2ecee6baa8869d3e81ab9b109efbcd09284fd0d50bf86a8a0e97f94b45"
+   "sha256": "baaf16914bf11c8849a4b1264eb72ee8889ac8f6348f7fdaa158aaef95e355b1"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "9a12c0afd473ca830f5f764574f031e9a101c6636663cb6d7cbeb69cb0150452"
+   "sha256": "f6dacd4f89086f2ac9db212bd27fe26b5f3a6b975666e43a2c81d8dae3bd70f9"
   },
   {
    "path": "visual/index.html",
    "role": "visualization",
    "required": true,
-   "sha256": "f3cc14a9572c942d73a87803c9104f4e1fbe39e6bc337cce2b0f66bb3a277b38"
+   "sha256": "c9d288b5d02a58b6d3017518282415296768af782d4d9d42debeaba2bbd17a88"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "1b54c46c6392b328b5b274dd1cdd830a72c3d2162387eaa06da9f3bea1914970"
+   "sha256": "49e3348c0e5170d63f4df343e6c9e6c616be25c6f2e7a19d040f6c3fb9674620"
   },
   {
    "path": "risk.json",
@@ -216,6 +216,12 @@
    "role": "osm_context_archive",
    "required": false,
    "sha256": "09d1de65367f42a3c49a42994fb17b74d093760c0acca7d1ec3bb66ac45caa83"
+  },
+  {
+   "path": "visual/assets/governance-ledger.json",
+   "role": "governance_ledger",
+   "required": false,
+   "sha256": "97ff580f7773a640d1c6b2b15096a1770be8c559bd4be31e813c61e7b754476c"
   }
  ],
  "validation_claim": {
