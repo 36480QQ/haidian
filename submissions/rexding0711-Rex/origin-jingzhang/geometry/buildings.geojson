@@ -1,0 +1,4798 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_buildings",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-001",
+      "properties": {
+        "id": "BLDG-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 1572.5,
+        "land_use_ref": "LU-001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              40.0083
+            ],
+            [
+              116.342,
+              40.0075
+            ],
+            [
+              116.34177317073171,
+              40.0075
+            ],
+            [
+              116.34181219512196,
+              40.0083
+            ],
+            [
+              116.342,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 980.5,
+        "land_use_ref": "LU-001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              40.0099
+            ],
+            [
+              116.342,
+              40.009100000000004
+            ],
+            [
+              116.3418512195122,
+              40.009100000000004
+            ],
+            [
+              116.34189024390244,
+              40.0099
+            ],
+            [
+              116.342,
+              40.0099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 388.5,
+        "land_use_ref": "LU-001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              40.0115
+            ],
+            [
+              116.342,
+              40.0107
+            ],
+            [
+              116.34192926829269,
+              40.0107
+            ],
+            [
+              116.34196829268292,
+              40.0115
+            ],
+            [
+              116.342,
+              40.0115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5873.5,
+        "land_use_ref": "LU-002"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3416935483871,
+              39.994299999999996
+            ],
+            [
+              116.3416935483871,
+              39.9935
+            ],
+            [
+              116.3408935483871,
+              39.9935
+            ],
+            [
+              116.34094516129032,
+              39.994299999999996
+            ],
+            [
+              116.3416935483871,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5090.2,
+        "land_use_ref": "LU-002"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3416935483871,
+              39.9959
+            ],
+            [
+              116.3416935483871,
+              39.9951
+            ],
+            [
+              116.34099677419356,
+              39.9951
+            ],
+            [
+              116.34104838709678,
+              39.9959
+            ],
+            [
+              116.3416935483871,
+              39.9959
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4307.0,
+        "land_use_ref": "LU-002"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3416935483871,
+              39.997499999999995
+            ],
+            [
+              116.3416935483871,
+              39.9967
+            ],
+            [
+              116.3411,
+              39.9967
+            ],
+            [
+              116.34115161290323,
+              39.997499999999995
+            ],
+            [
+              116.3416935483871,
+              39.997499999999995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5874.3,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34104838709676,
+              39.9843
+            ],
+            [
+              116.34104838709676,
+              39.9835
+            ],
+            [
+              116.34024838709676,
+              39.9835
+            ],
+            [
+              116.34029999999998,
+              39.9843
+            ],
+            [
+              116.34104838709676,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5091.0,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34104838709676,
+              39.9859
+            ],
+            [
+              116.34104838709676,
+              39.9851
+            ],
+            [
+              116.34035161290322,
+              39.9851
+            ],
+            [
+              116.34040322580644,
+              39.9859
+            ],
+            [
+              116.34104838709676,
+              39.9859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4307.7,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34104838709676,
+              39.9875
+            ],
+            [
+              116.34104838709676,
+              39.9867
+            ],
+            [
+              116.34045483870968,
+              39.9867
+            ],
+            [
+              116.3405064516129,
+              39.9875
+            ],
+            [
+              116.34104838709676,
+              39.9875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 1150.4,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34184838709676,
+              39.9843
+            ],
+            [
+              116.342,
+              39.9843
+            ],
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.34184838709676,
+              39.9835
+            ],
+            [
+              116.34184838709676,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 1150.4,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34184838709676,
+              39.9851
+            ],
+            [
+              116.34184838709676,
+              39.9859
+            ],
+            [
+              116.342,
+              39.9859
+            ],
+            [
+              116.342,
+              39.9851
+            ],
+            [
+              116.34184838709676,
+              39.9851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 1150.3,
+        "land_use_ref": "LU-003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34184838709676,
+              39.9867
+            ],
+            [
+              116.34184838709676,
+              39.9875
+            ],
+            [
+              116.342,
+              39.9875
+            ],
+            [
+              116.342,
+              39.9867
+            ],
+            [
+              116.34184838709676,
+              39.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-013",
+      "properties": {
+        "id": "BLDG-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 1824.3,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3406,
+              39.95074
+            ],
+            [
+              116.3406,
+              39.94984
+            ],
+            [
+              116.34039888888888,
+              39.94984
+            ],
+            [
+              116.34037388888889,
+              39.95074
+            ],
+            [
+              116.3406,
+              39.95074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-014",
+      "properties": {
+        "id": "BLDG-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2251.3,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3406,
+              39.952540000000006
+            ],
+            [
+              116.3406,
+              39.951640000000005
+            ],
+            [
+              116.34034888888888,
+              39.951640000000005
+            ],
+            [
+              116.34032388888889,
+              39.952540000000006
+            ],
+            [
+              116.3406,
+              39.952540000000006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-015",
+      "properties": {
+        "id": "BLDG-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2678.2,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3406,
+              39.95434
+            ],
+            [
+              116.3406,
+              39.95344
+            ],
+            [
+              116.34029888888888,
+              39.95344
+            ],
+            [
+              116.34027388888889,
+              39.95434
+            ],
+            [
+              116.3406,
+              39.95434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-016",
+      "properties": {
+        "id": "BLDG-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4270.1,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3415,
+              39.95074
+            ],
+            [
+              116.342,
+              39.95074
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.3415,
+              39.94984
+            ],
+            [
+              116.3415,
+              39.95074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-017",
+      "properties": {
+        "id": "BLDG-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4270.0,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3415,
+              39.951640000000005
+            ],
+            [
+              116.3415,
+              39.952540000000006
+            ],
+            [
+              116.342,
+              39.952540000000006
+            ],
+            [
+              116.342,
+              39.951640000000005
+            ],
+            [
+              116.3415,
+              39.951640000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-018",
+      "properties": {
+        "id": "BLDG-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "residential",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4269.9,
+        "land_use_ref": "LU-004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3415,
+              39.95344
+            ],
+            [
+              116.3415,
+              39.95434
+            ],
+            [
+              116.342,
+              39.95434
+            ],
+            [
+              116.342,
+              39.95344
+            ],
+            [
+              116.3415,
+              39.95344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-019",
+      "properties": {
+        "id": "BLDG-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 3872.2,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34119888888888,
+              39.9398
+            ],
+            [
+              116.34119888888888,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.34067777777777,
+              39.9398
+            ],
+            [
+              116.34119888888888,
+              39.9398
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-020",
+      "properties": {
+        "id": "BLDG-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4209.6,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34119888888888,
+              39.9414
+            ],
+            [
+              116.34119888888888,
+              39.9406
+            ],
+            [
+              116.34065555555556,
+              39.9406
+            ],
+            [
+              116.34063333333333,
+              39.9414
+            ],
+            [
+              116.34119888888888,
+              39.9414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-021",
+      "properties": {
+        "id": "BLDG-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4546.9,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34119888888888,
+              39.943
+            ],
+            [
+              116.34119888888888,
+              39.9422
+            ],
+            [
+              116.3406111111111,
+              39.9422
+            ],
+            [
+              116.34058888888889,
+              39.943
+            ],
+            [
+              116.34119888888888,
+              39.943
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-022",
+      "properties": {
+        "id": "BLDG-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 8.4,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34199888888888,
+              39.9398
+            ],
+            [
+              116.342,
+              39.9398
+            ],
+            [
+              116.342,
+              39.939
+            ],
+            [
+              116.34199888888888,
+              39.939
+            ],
+            [
+              116.34199888888888,
+              39.9398
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-023",
+      "properties": {
+        "id": "BLDG-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 8.4,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34199888888888,
+              39.9406
+            ],
+            [
+              116.34199888888888,
+              39.9414
+            ],
+            [
+              116.342,
+              39.9414
+            ],
+            [
+              116.342,
+              39.9406
+            ],
+            [
+              116.34199888888888,
+              39.9406
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-024",
+      "properties": {
+        "id": "BLDG-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "community_service",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 8.4,
+        "land_use_ref": "LU-005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34199888888888,
+              39.9422
+            ],
+            [
+              116.34199888888888,
+              39.943
+            ],
+            [
+              116.342,
+              39.943
+            ],
+            [
+              116.342,
+              39.9422
+            ],
+            [
+              116.34199888888888,
+              39.9422
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-025",
+      "properties": {
+        "id": "BLDG-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.1,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              40.0083
+            ],
+            [
+              116.3428,
+              40.0075
+            ],
+            [
+              116.342,
+              40.0075
+            ],
+            [
+              116.342,
+              40.0083
+            ],
+            [
+              116.3428,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-026",
+      "properties": {
+        "id": "BLDG-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              40.0099
+            ],
+            [
+              116.3428,
+              40.009100000000004
+            ],
+            [
+              116.342,
+              40.009100000000004
+            ],
+            [
+              116.342,
+              40.0099
+            ],
+            [
+              116.3428,
+              40.0099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-027",
+      "properties": {
+        "id": "BLDG-027",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              40.0115
+            ],
+            [
+              116.3428,
+              40.0107
+            ],
+            [
+              116.342,
+              40.0107
+            ],
+            [
+              116.342,
+              40.0115
+            ],
+            [
+              116.3428,
+              40.0115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-028",
+      "properties": {
+        "id": "BLDG-028",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.0,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              40.0083
+            ],
+            [
+              116.3444,
+              40.0083
+            ],
+            [
+              116.3444,
+              40.0075
+            ],
+            [
+              116.3436,
+              40.0075
+            ],
+            [
+              116.3436,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-029",
+      "properties": {
+        "id": "BLDG-029",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              40.009100000000004
+            ],
+            [
+              116.3436,
+              40.0099
+            ],
+            [
+              116.3444,
+              40.0099
+            ],
+            [
+              116.3444,
+              40.009100000000004
+            ],
+            [
+              116.3436,
+              40.009100000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-030",
+      "properties": {
+        "id": "BLDG-030",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              40.0107
+            ],
+            [
+              116.3436,
+              40.0115
+            ],
+            [
+              116.3444,
+              40.0115
+            ],
+            [
+              116.3444,
+              40.0107
+            ],
+            [
+              116.3436,
+              40.0107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-031",
+      "properties": {
+        "id": "BLDG-031",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2275.5,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              40.0083
+            ],
+            [
+              116.3455,
+              40.0083
+            ],
+            [
+              116.3455,
+              40.0075
+            ],
+            [
+              116.3452,
+              40.0075
+            ],
+            [
+              116.3452,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-032",
+      "properties": {
+        "id": "BLDG-032",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2275.5,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              40.009100000000004
+            ],
+            [
+              116.3452,
+              40.0099
+            ],
+            [
+              116.3455,
+              40.0099
+            ],
+            [
+              116.3455,
+              40.009100000000004
+            ],
+            [
+              116.3452,
+              40.009100000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-033",
+      "properties": {
+        "id": "BLDG-033",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2275.4,
+        "land_use_ref": "LU-006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              40.0107
+            ],
+            [
+              116.3452,
+              40.0115
+            ],
+            [
+              116.3455,
+              40.0115
+            ],
+            [
+              116.3455,
+              40.0107
+            ],
+            [
+              116.3452,
+              40.0107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-034",
+      "properties": {
+        "id": "BLDG-034",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.3,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.994299999999996
+            ],
+            [
+              116.3428,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.342,
+              39.994299999999996
+            ],
+            [
+              116.3428,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-035",
+      "properties": {
+        "id": "BLDG-035",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.1,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.9959
+            ],
+            [
+              116.3428,
+              39.9951
+            ],
+            [
+              116.342,
+              39.9951
+            ],
+            [
+              116.342,
+              39.9959
+            ],
+            [
+              116.3428,
+              39.9959
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-036",
+      "properties": {
+        "id": "BLDG-036",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.0,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.997499999999995
+            ],
+            [
+              116.3428,
+              39.9967
+            ],
+            [
+              116.342,
+              39.9967
+            ],
+            [
+              116.342,
+              39.997499999999995
+            ],
+            [
+              116.3428,
+              39.997499999999995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-037",
+      "properties": {
+        "id": "BLDG-037",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.3,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.994299999999996
+            ],
+            [
+              116.3444,
+              39.994299999999996
+            ],
+            [
+              116.3444,
+              39.9935
+            ],
+            [
+              116.3436,
+              39.9935
+            ],
+            [
+              116.3436,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-038",
+      "properties": {
+        "id": "BLDG-038",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.1,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.9951
+            ],
+            [
+              116.3436,
+              39.9959
+            ],
+            [
+              116.3444,
+              39.9959
+            ],
+            [
+              116.3444,
+              39.9951
+            ],
+            [
+              116.3436,
+              39.9951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-039",
+      "properties": {
+        "id": "BLDG-039",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.0,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.9967
+            ],
+            [
+              116.3436,
+              39.997499999999995
+            ],
+            [
+              116.3444,
+              39.997499999999995
+            ],
+            [
+              116.3444,
+              39.9967
+            ],
+            [
+              116.3436,
+              39.9967
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-040",
+      "properties": {
+        "id": "BLDG-040",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2276.0,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.994299999999996
+            ],
+            [
+              116.3455,
+              39.994299999999996
+            ],
+            [
+              116.3455,
+              39.9935
+            ],
+            [
+              116.3452,
+              39.9935
+            ],
+            [
+              116.3452,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-041",
+      "properties": {
+        "id": "BLDG-041",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2275.9,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.9951
+            ],
+            [
+              116.3452,
+              39.9959
+            ],
+            [
+              116.3455,
+              39.9959
+            ],
+            [
+              116.3455,
+              39.9951
+            ],
+            [
+              116.3452,
+              39.9951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-042",
+      "properties": {
+        "id": "BLDG-042",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2275.9,
+        "land_use_ref": "LU-007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.9967
+            ],
+            [
+              116.3452,
+              39.997499999999995
+            ],
+            [
+              116.3455,
+              39.997499999999995
+            ],
+            [
+              116.3455,
+              39.9967
+            ],
+            [
+              116.3452,
+              39.9967
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-043",
+      "properties": {
+        "id": "BLDG-043",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.2,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.9843
+            ],
+            [
+              116.3428,
+              39.9835
+            ],
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.342,
+              39.9843
+            ],
+            [
+              116.3428,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-044",
+      "properties": {
+        "id": "BLDG-044",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.0,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.9859
+            ],
+            [
+              116.3428,
+              39.9851
+            ],
+            [
+              116.342,
+              39.9851
+            ],
+            [
+              116.342,
+              39.9859
+            ],
+            [
+              116.3428,
+              39.9859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-045",
+      "properties": {
+        "id": "BLDG-045",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.9,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3428,
+              39.9875
+            ],
+            [
+              116.3428,
+              39.9867
+            ],
+            [
+              116.342,
+              39.9867
+            ],
+            [
+              116.342,
+              39.9875
+            ],
+            [
+              116.3428,
+              39.9875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-046",
+      "properties": {
+        "id": "BLDG-046",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.1,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.9843
+            ],
+            [
+              116.3444,
+              39.9843
+            ],
+            [
+              116.3444,
+              39.9835
+            ],
+            [
+              116.3436,
+              39.9835
+            ],
+            [
+              116.3436,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-047",
+      "properties": {
+        "id": "BLDG-047",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.0,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.9851
+            ],
+            [
+              116.3436,
+              39.9859
+            ],
+            [
+              116.3444,
+              39.9859
+            ],
+            [
+              116.3444,
+              39.9851
+            ],
+            [
+              116.3436,
+              39.9851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-048",
+      "properties": {
+        "id": "BLDG-048",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.9,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3436,
+              39.9867
+            ],
+            [
+              116.3436,
+              39.9875
+            ],
+            [
+              116.3444,
+              39.9875
+            ],
+            [
+              116.3444,
+              39.9867
+            ],
+            [
+              116.3436,
+              39.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-049",
+      "properties": {
+        "id": "BLDG-049",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2276.3,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.9843
+            ],
+            [
+              116.3455,
+              39.9843
+            ],
+            [
+              116.3455,
+              39.9835
+            ],
+            [
+              116.3452,
+              39.9835
+            ],
+            [
+              116.3452,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-050",
+      "properties": {
+        "id": "BLDG-050",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2276.3,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.9851
+            ],
+            [
+              116.3452,
+              39.9859
+            ],
+            [
+              116.3455,
+              39.9859
+            ],
+            [
+              116.3455,
+              39.9851
+            ],
+            [
+              116.3452,
+              39.9851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-051",
+      "properties": {
+        "id": "BLDG-051",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2276.2,
+        "land_use_ref": "LU-008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3452,
+              39.9867
+            ],
+            [
+              116.3452,
+              39.9875
+            ],
+            [
+              116.3455,
+              39.9875
+            ],
+            [
+              116.3455,
+              39.9867
+            ],
+            [
+              116.3452,
+              39.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-052",
+      "properties": {
+        "id": "BLDG-052",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7686.3,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.95074
+            ],
+            [
+              116.3429,
+              39.94984
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.342,
+              39.95074
+            ],
+            [
+              116.3429,
+              39.95074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-053",
+      "properties": {
+        "id": "BLDG-053",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7686.1,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.952540000000006
+            ],
+            [
+              116.3429,
+              39.951640000000005
+            ],
+            [
+              116.342,
+              39.951640000000005
+            ],
+            [
+              116.342,
+              39.952540000000006
+            ],
+            [
+              116.3429,
+              39.952540000000006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-054",
+      "properties": {
+        "id": "BLDG-054",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7685.9,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.95434
+            ],
+            [
+              116.3429,
+              39.95344
+            ],
+            [
+              116.342,
+              39.95344
+            ],
+            [
+              116.342,
+              39.95434
+            ],
+            [
+              116.3429,
+              39.95434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-055",
+      "properties": {
+        "id": "BLDG-055",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7686.3,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.95074
+            ],
+            [
+              116.3447,
+              39.95074
+            ],
+            [
+              116.3447,
+              39.94984
+            ],
+            [
+              116.3438,
+              39.94984
+            ],
+            [
+              116.3438,
+              39.95074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-056",
+      "properties": {
+        "id": "BLDG-056",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7686.1,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.951640000000005
+            ],
+            [
+              116.3438,
+              39.952540000000006
+            ],
+            [
+              116.3447,
+              39.952540000000006
+            ],
+            [
+              116.3447,
+              39.951640000000005
+            ],
+            [
+              116.3438,
+              39.951640000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-057",
+      "properties": {
+        "id": "BLDG-057",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7685.9,
+        "land_use_ref": "LU-009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.95344
+            ],
+            [
+              116.3438,
+              39.95434
+            ],
+            [
+              116.3447,
+              39.95434
+            ],
+            [
+              116.3447,
+              39.95344
+            ],
+            [
+              116.3438,
+              39.95344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-058",
+      "properties": {
+        "id": "BLDG-058",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.5,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.9399
+            ],
+            [
+              116.3429,
+              39.939
+            ],
+            [
+              116.342,
+              39.939
+            ],
+            [
+              116.342,
+              39.9399
+            ],
+            [
+              116.3429,
+              39.9399
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-059",
+      "properties": {
+        "id": "BLDG-059",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.3,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.941700000000004
+            ],
+            [
+              116.3429,
+              39.9408
+            ],
+            [
+              116.342,
+              39.9408
+            ],
+            [
+              116.342,
+              39.941700000000004
+            ],
+            [
+              116.3429,
+              39.941700000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-060",
+      "properties": {
+        "id": "BLDG-060",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.1,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3429,
+              39.9435
+            ],
+            [
+              116.3429,
+              39.9426
+            ],
+            [
+              116.342,
+              39.9426
+            ],
+            [
+              116.342,
+              39.9435
+            ],
+            [
+              116.3429,
+              39.9435
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-061",
+      "properties": {
+        "id": "BLDG-061",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.5,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.9399
+            ],
+            [
+              116.3447,
+              39.9399
+            ],
+            [
+              116.3447,
+              39.939
+            ],
+            [
+              116.3438,
+              39.939
+            ],
+            [
+              116.3438,
+              39.9399
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-062",
+      "properties": {
+        "id": "BLDG-062",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.3,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.9408
+            ],
+            [
+              116.3438,
+              39.941700000000004
+            ],
+            [
+              116.3447,
+              39.941700000000004
+            ],
+            [
+              116.3447,
+              39.9408
+            ],
+            [
+              116.3438,
+              39.9408
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-063",
+      "properties": {
+        "id": "BLDG-063",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 7687.1,
+        "land_use_ref": "LU-010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3438,
+              39.9426
+            ],
+            [
+              116.3438,
+              39.9435
+            ],
+            [
+              116.3447,
+              39.9435
+            ],
+            [
+              116.3447,
+              39.9426
+            ],
+            [
+              116.3438,
+              39.9426
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-064",
+      "properties": {
+        "id": "BLDG-064",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.0,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              40.0083
+            ],
+            [
+              116.3483,
+              40.0075
+            ],
+            [
+              116.3475,
+              40.0075
+            ],
+            [
+              116.3475,
+              40.0083
+            ],
+            [
+              116.3483,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-065",
+      "properties": {
+        "id": "BLDG-065",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              40.0099
+            ],
+            [
+              116.3483,
+              40.009100000000004
+            ],
+            [
+              116.3475,
+              40.009100000000004
+            ],
+            [
+              116.3475,
+              40.0099
+            ],
+            [
+              116.3483,
+              40.0099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-066",
+      "properties": {
+        "id": "BLDG-066",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              40.0115
+            ],
+            [
+              116.3483,
+              40.0107
+            ],
+            [
+              116.3475,
+              40.0107
+            ],
+            [
+              116.3475,
+              40.0115
+            ],
+            [
+              116.3483,
+              40.0115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-067",
+      "properties": {
+        "id": "BLDG-067",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.0,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              40.0083
+            ],
+            [
+              116.34989999999999,
+              40.0083
+            ],
+            [
+              116.34989999999999,
+              40.0075
+            ],
+            [
+              116.34909999999999,
+              40.0075
+            ],
+            [
+              116.34909999999999,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-068",
+      "properties": {
+        "id": "BLDG-068",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              40.009100000000004
+            ],
+            [
+              116.34909999999999,
+              40.0099
+            ],
+            [
+              116.34989999999999,
+              40.0099
+            ],
+            [
+              116.34989999999999,
+              40.009100000000004
+            ],
+            [
+              116.34909999999999,
+              40.009100000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-069",
+      "properties": {
+        "id": "BLDG-069",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              40.0107
+            ],
+            [
+              116.34909999999999,
+              40.0115
+            ],
+            [
+              116.34989999999999,
+              40.0115
+            ],
+            [
+              116.34989999999999,
+              40.0107
+            ],
+            [
+              116.34909999999999,
+              40.0107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-070",
+      "properties": {
+        "id": "BLDG-070",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.0,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              40.0083
+            ],
+            [
+              116.3515,
+              40.0083
+            ],
+            [
+              116.3515,
+              40.0075
+            ],
+            [
+              116.3507,
+              40.0075
+            ],
+            [
+              116.3507,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-071",
+      "properties": {
+        "id": "BLDG-071",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              40.009100000000004
+            ],
+            [
+              116.3507,
+              40.0099
+            ],
+            [
+              116.3515,
+              40.0099
+            ],
+            [
+              116.3515,
+              40.009100000000004
+            ],
+            [
+              116.3507,
+              40.009100000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-072",
+      "properties": {
+        "id": "BLDG-072",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              40.0107
+            ],
+            [
+              116.3507,
+              40.0115
+            ],
+            [
+              116.3515,
+              40.0115
+            ],
+            [
+              116.3515,
+              40.0107
+            ],
+            [
+              116.3507,
+              40.0107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-073",
+      "properties": {
+        "id": "BLDG-073",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.3,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.994299999999996
+            ],
+            [
+              116.3483,
+              39.9935
+            ],
+            [
+              116.3475,
+              39.9935
+            ],
+            [
+              116.3475,
+              39.994299999999996
+            ],
+            [
+              116.3483,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-074",
+      "properties": {
+        "id": "BLDG-074",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.1,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.9959
+            ],
+            [
+              116.3483,
+              39.9951
+            ],
+            [
+              116.3475,
+              39.9951
+            ],
+            [
+              116.3475,
+              39.9959
+            ],
+            [
+              116.3483,
+              39.9959
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-075",
+      "properties": {
+        "id": "BLDG-075",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.0,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.997499999999995
+            ],
+            [
+              116.3483,
+              39.9967
+            ],
+            [
+              116.3475,
+              39.9967
+            ],
+            [
+              116.3475,
+              39.997499999999995
+            ],
+            [
+              116.3483,
+              39.997499999999995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-076",
+      "properties": {
+        "id": "BLDG-076",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.3,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.994299999999996
+            ],
+            [
+              116.34989999999999,
+              39.994299999999996
+            ],
+            [
+              116.34989999999999,
+              39.9935
+            ],
+            [
+              116.34909999999999,
+              39.9935
+            ],
+            [
+              116.34909999999999,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-077",
+      "properties": {
+        "id": "BLDG-077",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.1,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.9951
+            ],
+            [
+              116.34909999999999,
+              39.9959
+            ],
+            [
+              116.34989999999999,
+              39.9959
+            ],
+            [
+              116.34989999999999,
+              39.9951
+            ],
+            [
+              116.34909999999999,
+              39.9951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-078",
+      "properties": {
+        "id": "BLDG-078",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.0,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.9967
+            ],
+            [
+              116.34909999999999,
+              39.997499999999995
+            ],
+            [
+              116.34989999999999,
+              39.997499999999995
+            ],
+            [
+              116.34989999999999,
+              39.9967
+            ],
+            [
+              116.34909999999999,
+              39.9967
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-079",
+      "properties": {
+        "id": "BLDG-079",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.3,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.994299999999996
+            ],
+            [
+              116.3515,
+              39.994299999999996
+            ],
+            [
+              116.3515,
+              39.9935
+            ],
+            [
+              116.3507,
+              39.9935
+            ],
+            [
+              116.3507,
+              39.994299999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-080",
+      "properties": {
+        "id": "BLDG-080",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.1,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.9951
+            ],
+            [
+              116.3507,
+              39.9959
+            ],
+            [
+              116.3515,
+              39.9959
+            ],
+            [
+              116.3515,
+              39.9951
+            ],
+            [
+              116.3507,
+              39.9951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-081",
+      "properties": {
+        "id": "BLDG-081",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "education",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.0,
+        "land_use_ref": "LU-017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.9967
+            ],
+            [
+              116.3507,
+              39.997499999999995
+            ],
+            [
+              116.3515,
+              39.997499999999995
+            ],
+            [
+              116.3515,
+              39.9967
+            ],
+            [
+              116.3507,
+              39.9967
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-082",
+      "properties": {
+        "id": "BLDG-082",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.1,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.9843
+            ],
+            [
+              116.3483,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.9843
+            ],
+            [
+              116.3483,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-083",
+      "properties": {
+        "id": "BLDG-083",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.0,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.9859
+            ],
+            [
+              116.3483,
+              39.9851
+            ],
+            [
+              116.3475,
+              39.9851
+            ],
+            [
+              116.3475,
+              39.9859
+            ],
+            [
+              116.3483,
+              39.9859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-084",
+      "properties": {
+        "id": "BLDG-084",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.9,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3483,
+              39.9875
+            ],
+            [
+              116.3483,
+              39.9867
+            ],
+            [
+              116.3475,
+              39.9867
+            ],
+            [
+              116.3475,
+              39.9875
+            ],
+            [
+              116.3483,
+              39.9875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-085",
+      "properties": {
+        "id": "BLDG-085",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.1,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.9843
+            ],
+            [
+              116.34989999999999,
+              39.9843
+            ],
+            [
+              116.34989999999999,
+              39.9835
+            ],
+            [
+              116.34909999999999,
+              39.9835
+            ],
+            [
+              116.34909999999999,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-086",
+      "properties": {
+        "id": "BLDG-086",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.0,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.9851
+            ],
+            [
+              116.34909999999999,
+              39.9859
+            ],
+            [
+              116.34989999999999,
+              39.9859
+            ],
+            [
+              116.34989999999999,
+              39.9851
+            ],
+            [
+              116.34909999999999,
+              39.9851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-087",
+      "properties": {
+        "id": "BLDG-087",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.9,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34909999999999,
+              39.9867
+            ],
+            [
+              116.34909999999999,
+              39.9875
+            ],
+            [
+              116.34989999999999,
+              39.9875
+            ],
+            [
+              116.34989999999999,
+              39.9867
+            ],
+            [
+              116.34909999999999,
+              39.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-088",
+      "properties": {
+        "id": "BLDG-088",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.1,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.9843
+            ],
+            [
+              116.3515,
+              39.9843
+            ],
+            [
+              116.3515,
+              39.9835
+            ],
+            [
+              116.3507,
+              39.9835
+            ],
+            [
+              116.3507,
+              39.9843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-089",
+      "properties": {
+        "id": "BLDG-089",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6070.0,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.9851
+            ],
+            [
+              116.3507,
+              39.9859
+            ],
+            [
+              116.3515,
+              39.9859
+            ],
+            [
+              116.3515,
+              39.9851
+            ],
+            [
+              116.3507,
+              39.9851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-090",
+      "properties": {
+        "id": "BLDG-090",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6069.9,
+        "land_use_ref": "LU-018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3507,
+              39.9867
+            ],
+            [
+              116.3507,
+              39.9875
+            ],
+            [
+              116.3515,
+              39.9875
+            ],
+            [
+              116.3515,
+              39.9867
+            ],
+            [
+              116.3507,
+              39.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-091",
+      "properties": {
+        "id": "BLDG-091",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.7,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3485,
+              39.94
+            ],
+            [
+              116.3485,
+              39.939
+            ],
+            [
+              116.3475,
+              39.939
+            ],
+            [
+              116.3475,
+              39.94
+            ],
+            [
+              116.3485,
+              39.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-092",
+      "properties": {
+        "id": "BLDG-092",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.4,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3485,
+              39.942
+            ],
+            [
+              116.3485,
+              39.941
+            ],
+            [
+              116.3475,
+              39.941
+            ],
+            [
+              116.3475,
+              39.942
+            ],
+            [
+              116.3485,
+              39.942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-093",
+      "properties": {
+        "id": "BLDG-093",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.1,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3485,
+              39.943999999999996
+            ],
+            [
+              116.3485,
+              39.943
+            ],
+            [
+              116.3475,
+              39.943
+            ],
+            [
+              116.3475,
+              39.943999999999996
+            ],
+            [
+              116.3485,
+              39.943999999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-094",
+      "properties": {
+        "id": "BLDG-094",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.7,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34949999999999,
+              39.94
+            ],
+            [
+              116.3505,
+              39.94
+            ],
+            [
+              116.3505,
+              39.939
+            ],
+            [
+              116.34949999999999,
+              39.939
+            ],
+            [
+              116.34949999999999,
+              39.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-095",
+      "properties": {
+        "id": "BLDG-095",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.4,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34949999999999,
+              39.941
+            ],
+            [
+              116.34949999999999,
+              39.942
+            ],
+            [
+              116.3505,
+              39.942
+            ],
+            [
+              116.3505,
+              39.941
+            ],
+            [
+              116.34949999999999,
+              39.941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-096",
+      "properties": {
+        "id": "BLDG-096",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.1,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34949999999999,
+              39.943
+            ],
+            [
+              116.34949999999999,
+              39.943999999999996
+            ],
+            [
+              116.3505,
+              39.943999999999996
+            ],
+            [
+              116.3505,
+              39.943
+            ],
+            [
+              116.34949999999999,
+              39.943
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-097",
+      "properties": {
+        "id": "BLDG-097",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.7,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3515,
+              39.94
+            ],
+            [
+              116.3525,
+              39.94
+            ],
+            [
+              116.3525,
+              39.939
+            ],
+            [
+              116.3515,
+              39.939
+            ],
+            [
+              116.3515,
+              39.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-098",
+      "properties": {
+        "id": "BLDG-098",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.4,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3515,
+              39.941
+            ],
+            [
+              116.3515,
+              39.942
+            ],
+            [
+              116.3525,
+              39.942
+            ],
+            [
+              116.3525,
+              39.941
+            ],
+            [
+              116.3515,
+              39.941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-099",
+      "properties": {
+        "id": "BLDG-099",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.1,
+        "land_use_ref": "LU-020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3515,
+              39.943
+            ],
+            [
+              116.3515,
+              39.943999999999996
+            ],
+            [
+              116.3525,
+              39.943999999999996
+            ],
+            [
+              116.3525,
+              39.943
+            ],
+            [
+              116.3515,
+              39.943
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-100",
+      "properties": {
+        "id": "BLDG-100",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6068.0,
+        "land_use_ref": "LU-021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35379999999999,
+              40.0083
+            ],
+            [
+              116.35379999999999,
+              40.0075
+            ],
+            [
+              116.353,
+              40.0075
+            ],
+            [
+              116.353,
+              40.0083
+            ],
+            [
+              116.35379999999999,
+              40.0083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-101",
+      "properties": {
+        "id": "BLDG-101",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.9,
+        "land_use_ref": "LU-021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35379999999999,
+              40.0099
+            ],
+            [
+              116.35379999999999,
+              40.009100000000004
+            ],
+            [
+              116.353,
+              40.009100000000004
+            ],
+            [
+              116.353,
+              40.0099
+            ],
+            [
+              116.35379999999999,
+              40.0099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-102",
+      "properties": {
+        "id": "BLDG-102",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6067.8,
+        "land_use_ref": "LU-021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35379999999999,
+              40.0115
+            ],
+            [
+              116.35379999999999,
+              40.0107
+            ],
+            [
+              116.353,
+              40.0107
+            ],
+            [
+              116.353,
+              40.0115
+            ],
+            [
+              116.35379999999999,
+              40.0115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-103",
+      "properties": {
+        "id": "BLDG-103",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4407.7,
+        "land_use_ref": "LU-022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35354109589042,
+              39.9944
+            ],
+            [
+              116.35349178082193,
+              39.9935
+            ],
+            [
+              116.353,
+              39.9935
+            ],
+            [
+              116.353,
+              39.9944
+            ],
+            [
+              116.35354109589042,
+              39.9944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-104",
+      "properties": {
+        "id": "BLDG-104",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5249.4,
+        "land_use_ref": "LU-022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35363972602741,
+              39.9962
+            ],
+            [
+              116.35359041095892,
+              39.9953
+            ],
+            [
+              116.353,
+              39.9953
+            ],
+            [
+              116.353,
+              39.9962
+            ],
+            [
+              116.35363972602741,
+              39.9962
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-105",
+      "properties": {
+        "id": "BLDG-105",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "retail",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 6091.0,
+        "land_use_ref": "LU-022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35373835616438,
+              39.998
+            ],
+            [
+              116.35368904109589,
+              39.997099999999996
+            ],
+            [
+              116.353,
+              39.997099999999996
+            ],
+            [
+              116.353,
+              39.998
+            ],
+            [
+              116.35373835616438,
+              39.998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-106",
+      "properties": {
+        "id": "BLDG-106",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5955.4,
+        "land_use_ref": "LU-023"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35379999999999,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9843
+            ],
+            [
+              116.353756,
+              39.9843
+            ],
+            [
+              116.35379999999999,
+              39.98375000000008
+            ],
+            [
+              116.35379999999999,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-107",
+      "properties": {
+        "id": "BLDG-107",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 5007.7,
+        "land_use_ref": "LU-023"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353628,
+              39.9859
+            ],
+            [
+              116.353692,
+              39.9851
+            ],
+            [
+              116.353,
+              39.9851
+            ],
+            [
+              116.353,
+              39.9859
+            ],
+            [
+              116.353628,
+              39.9859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-108",
+      "properties": {
+        "id": "BLDG-108",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "ai_r_and_d",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 4036.5,
+        "land_use_ref": "LU-023"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3535,
+              39.9875
+            ],
+            [
+              116.353564,
+              39.9867
+            ],
+            [
+              116.353,
+              39.9867
+            ],
+            [
+              116.353,
+              39.9875
+            ],
+            [
+              116.3535,
+              39.9875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-109",
+      "properties": {
+        "id": "BLDG-109",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.7,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354,
+              39.94
+            ],
+            [
+              116.354,
+              39.939
+            ],
+            [
+              116.353,
+              39.939
+            ],
+            [
+              116.353,
+              39.94
+            ],
+            [
+              116.354,
+              39.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-110",
+      "properties": {
+        "id": "BLDG-110",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.4,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354,
+              39.942
+            ],
+            [
+              116.354,
+              39.941
+            ],
+            [
+              116.353,
+              39.941
+            ],
+            [
+              116.353,
+              39.942
+            ],
+            [
+              116.354,
+              39.942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-111",
+      "properties": {
+        "id": "BLDG-111",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 9490.1,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354,
+              39.943999999999996
+            ],
+            [
+              116.354,
+              39.943
+            ],
+            [
+              116.353,
+              39.943
+            ],
+            [
+              116.353,
+              39.943999999999996
+            ],
+            [
+              116.354,
+              39.943999999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-112",
+      "properties": {
+        "id": "BLDG-112",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2847.2,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35499999999999,
+              39.94
+            ],
+            [
+              116.3553,
+              39.94
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.35499999999999,
+              39.939
+            ],
+            [
+              116.35499999999999,
+              39.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-113",
+      "properties": {
+        "id": "BLDG-113",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2847.1,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35499999999999,
+              39.941
+            ],
+            [
+              116.35499999999999,
+              39.942
+            ],
+            [
+              116.3553,
+              39.942
+            ],
+            [
+              116.3553,
+              39.941
+            ],
+            [
+              116.35499999999999,
+              39.941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-114",
+      "properties": {
+        "id": "BLDG-114",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
+        "name_zh": "示意建筑基底（待控规确认）",
+        "area_sqm_declared": 2847.0,
+        "land_use_ref": "LU-025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35499999999999,
+              39.943
+            ],
+            [
+              116.35499999999999,
+              39.943999999999996
+            ],
+            [
+              116.3553,
+              39.943999999999996
+            ],
+            [
+              116.3553,
+              39.943
+            ],
+            [
+              116.35499999999999,
+              39.943
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
