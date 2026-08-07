@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "42ec79295f956c15ea88798a9dbb3095b92b4c933eb641733defc4e983a076f0"
+      "sha256": "5db64536bd331cc8ed65a9a825560ca16e3d98b0d2e7fc2855391955e329ddc3"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "487356d25ae7c7a0978e641065354931702e75cad3f52d2ef5464dace8f14f1c"
+      "sha256": "fce84e85caa41e75b9f36a904c41de60d83172d063723d0cd2767791e26481ab"
     },
     {
       "path": "assumptions.json",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "4c06e8df60d3fc11e2a40fc08ee1029fe3719610ff695d0468d783b8994de4ff"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "70f019d007c1bb970923823a00e50a59b28ef7300fa70293c7a796552ba55996"
+      "sha256": "4297c2e3744bfd4a663f09e450460c4c842b907f7053c8abbcc6d78f60b3a7fd"
     },
     {
       "path": "report/narrative.md",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "296e4f0b7f2976d85426e176a1b593cf6d881881a7eff89bfa2471b911cb633c"
+      "sha256": "6fcf1eb4437c7908f76da4d40bf885b05acef1d7bc798afa76b1a98cea062334"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -119,13 +119,13 @@
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "814b0c24b7f7f1bfe63f720297efe05282df8c506116d73c9c8cbca112867327"
+      "sha256": "1a7bdf27c2f5821704ebf1b7a90b3affdf29cc767ac9a16cbe975ed67dd9b332"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "d82aa3b51a0efb1c4bb19b8c4780be9c03812db6a8fb53f1d0ab60d407094abe"
+      "sha256": "11d3f288bc46c4e3daeb0b2e241d94fcb2f7d6b93f5bb7150739a8f0244a5481"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -167,7 +167,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "4ca0c246b84ae5f331b9bf82216e7aac00a3a3898179d6d2b6df536661c78898"
+      "sha256": "02db266b62ba7b03c9434ead9524e7287ba5df15984ba3dc50f403cca87a40fa"
     },
     {
       "path": "geometry/phasing.geojson",
