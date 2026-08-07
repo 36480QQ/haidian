@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "OSM-CONTEXT",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "open_data_background_only",
+      "usage": "轨道、车站、主要道路与水系背景；© OpenStreetMap contributors，ODbL；不作为边界、法定控制或面积依据。"
+    },
+    {
+      "id": "CASE-MIT-KENDALL",
+      "url": "https://kendallsquare.mit.edu/",
+      "source_type": "official_case_reference",
+      "usage": "混合功能、开放空间、研究与创新空间协同的背景案例。"
+    },
+    {
+      "id": "CASE-MILA",
+      "url": "https://mila.quebec/en/about/about-mila",
+      "source_type": "official_case_reference",
+      "usage": "开放科学、伦理、人才社区和产业合作机制背景案例。"
+    },
+    {
+      "id": "CASE-VECTOR",
+      "url": "https://vectorinstitute.ai/about/",
+      "source_type": "official_case_reference",
+      "usage": "从研究到产业采用、可信AI与公共讲座机制背景案例。"
+    },
+    {
+      "id": "CASE-AISG",
+      "url": "https://aisingapore.org/",
+      "source_type": "official_case_reference",
+      "usage": "国家问题挑战、人才培养、开源产品与企业共创机制背景案例。"
+    },
+    {
+      "id": "CASE-SEOUL",
+      "url": "https://english.seoul.go.kr/seoul-policy-archive/seoul-ai-hub/",
+      "source_type": "official_case_reference",
+      "usage": "教育、孵化、研发基础设施及产学研协同背景案例。"
+    },
+    {
+      "id": "CASE-ETH",
+      "url": "https://ai.ethz.ch/about-us.html",
+      "source_type": "official_case_reference",
+      "usage": "跨学科、可信包容AI、创业与公众沟通机制背景案例。"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.385554,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(site_boundary, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "采用临时粗略边界，仅用于方案复算"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1759123.70428,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "area(union(green_space), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.154136,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 124200.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(union(public_space polygons), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.010882,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 102816.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "area(union(building footprints), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "design_building_footprint_ratio": {
+      "status": "known",
+      "value": 0.009009,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "road_centerline_length_m": {
+      "status": "known",
+      "value": 15350.253025,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(road centerlines), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(required key areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_node_count": {
+      "status": "known",
+      "value": 12.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features where scenario_id exists)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(phasing polygons)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_1_area_sqm": {
+      "status": "known",
+      "value": 4145970.725303,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-001, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "phase_2_area_sqm": {
+      "status": "known",
+      "value": 3801720.758624,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-002, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "phase_3_area_sqm": {
+      "status": "known",
+      "value": 3465133.901624,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-003, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "sum(building floor area)",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规与工程资料确认"
+      ],
+      "reason": "缺少官方建筑规模与现状测绘。"
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规与工程资料确认"
+      ],
+      "reason": "缺少正式控规和官方边界。"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official building footprint / official site area",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规与工程资料确认"
+      ],
+      "reason": "当前建筑仅为设计原型，不代表审定建筑密度。"
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official height control",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规与工程资料确认"
+      ],
+      "reason": "缺少高度、航空、景观与文保控制条件。"
+    },
+    "setback_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official setback control",
+      "confidence": "unknown",
+      "assumptions": [
+        "待官方控规与工程资料确认"
+      ],
+      "reason": "缺少道路红线、地块线与消防条件。"
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "type": "FeatureCollection",
+  "name": "public_space",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "众智协议庭",
+        "public_space_type": "innovation_court",
+        "area_sqm_declared": 41400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34714533901715,
+              40.01755264399511
+            ],
+            [
+              116.34983925685647,
+              40.01756778943039
+            ],
+            [
+              116.3498546403372,
+              40.0159467829164
+            ],
+            [
+              116.34716078622778,
+              40.01593163834555
+            ],
+            [
+              116.34714533901715,
+              40.01755264399511
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "原点开源站",
+        "public_space_type": "innovation_court",
+        "area_sqm_declared": 41400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34614588419933,
+              39.989302930171135
+            ],
+            [
+              116.34883869146205,
+              39.98931809001719
+            ],
+            [
+              116.34885408322205,
+              39.98769707590007
+            ],
+            [
+              116.34616133959925,
+              39.98768191691943
+            ],
+            [
+              116.34614588419933,
+              39.989302930171135
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "大钟未来广场",
+        "public_space_type": "innovation_court",
+        "area_sqm_declared": 41400.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347146719759,
+              39.94772308473021
+            ],
+            [
+              116.34983789658153,
+              39.94773820835237
+            ],
+            [
+              116.34985324212359,
+              39.94611718225087
+            ],
+            [
+              116.34716212880895,
+              39.9461020594923
+            ],
+            [
+              116.347146719759,
+              39.94772308473021
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-01",
+      "properties": {
+        "id": "SCENE-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开源模型共创站",
+        "scenario_id": "scene-01",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34562406274462,
+          39.946435935664475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-02",
+      "properties": {
+        "id": "SCENE-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "城市问题挑战台",
+        "scenario_id": "scene-02",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34911015284271,
+          39.953045078907174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-03",
+      "properties": {
+        "id": "SCENE-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "可信数据沙盒",
+        "scenario_id": "scene-03",
+        "test_validation": true,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34697956239026,
+          39.95962260786409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-04",
+      "properties": {
+        "id": "SCENE-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "模型安全红队场",
+        "scenario_id": "scene-04",
+        "test_validation": true,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3496009651035,
+          39.96623505504301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-05",
+      "properties": {
+        "id": "SCENE-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "端侧智能与机器人慢行测试环",
+        "scenario_id": "scene-05",
+        "test_validation": true,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34619975573564,
+          39.9728174602157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-06",
+      "properties": {
+        "id": "SCENE-06",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "无障碍随行助手",
+        "scenario_id": "scene-06",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34841684540078,
+          39.979431475709696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-07",
+      "properties": {
+        "id": "SCENE-07",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "百年京张多语记忆导览",
+        "scenario_id": "scene-07",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34544961784215,
+          39.98601371383747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-08",
+      "properties": {
+        "id": "SCENE-08",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI人才生活管家",
+        "scenario_id": "scene-08",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34885796991915,
+          39.99262739680994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-09",
+      "properties": {
+        "id": "SCENE-09",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "研究—产业匹配会客厅",
+        "scenario_id": "scene-09",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34664638574638,
+          39.9992094281283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-10",
+      "properties": {
+        "id": "SCENE-10",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI原生商业共创市集",
+        "scenario_id": "scene-10",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3498589804051,
+          40.00582389487817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-11",
+      "properties": {
+        "id": "SCENE-11",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "气候与蓝绿共护平台",
+        "scenario_id": "scene-11",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34654325431232,
+          40.01241054885752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENE-12",
+      "properties": {
+        "id": "SCENE-12",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "全球贡献荣誉档案与直播论坛",
+        "scenario_id": "scene-12",
+        "test_validation": false,
+        "privacy_rule": "data_minimization_and_human_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34884908923104,
+          40.01902882324642
+        ]
+      }
+    }
+  ]
+}

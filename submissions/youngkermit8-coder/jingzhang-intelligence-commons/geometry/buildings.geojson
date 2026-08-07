@@ -1,0 +1,780 @@
+{
+  "type": "FeatureCollection",
+  "name": "buildings",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-001",
+      "properties": {
+        "id": "BLDG-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型1",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34524014357581,
+              40.01394433260813
+            ],
+            [
+              116.34622395679709,
+              40.01394988700457
+            ],
+            [
+              116.34622980004785,
+              40.01333750687724
+            ],
+            [
+              116.34524599561809,
+              40.013331952600566
+            ],
+            [
+              116.34524014357581,
+              40.01394433260813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型2",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34803386159875,
+              40.01396008351771
+            ],
+            [
+              116.34901767559393,
+              40.01396561419974
+            ],
+            [
+              116.3490234938796,
+              40.013353233733284
+            ],
+            [
+              116.34803968867594,
+              40.01334770317052
+            ],
+            [
+              116.34803386159875,
+              40.01396008351771
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型3",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35082758181625,
+              40.01397576708583
+            ],
+            [
+              116.351811396582,
+              40.01398127405339
+            ],
+            [
+              116.35181718990249,
+              40.01336889324928
+            ],
+            [
+              116.35083338392829,
+              40.01336338640046
+            ],
+            [
+              116.35082758181625,
+              40.01397576708583
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型4",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34518100963894,
+              40.020131278102625
+            ],
+            [
+              116.34616491169683,
+              40.02013683370921
+            ],
+            [
+              116.34617075675473,
+              40.01952445424487
+            ],
+            [
+              116.34518686349107,
+              40.019518898758086
+            ],
+            [
+              116.34518100963894,
+              40.020131278102625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型5",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34797497992989,
+              40.02014703244386
+            ],
+            [
+              116.34895888276192,
+              40.02015256433085
+            ],
+            [
+              116.34896470284703,
+              40.01954018452734
+            ],
+            [
+              116.34798080880923,
+              40.01953465275962
+            ],
+            [
+              116.34797497992989,
+              40.02014703244386
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型6",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35076895241613,
+              40.020162719428946
+            ],
+            [
+              116.35175285601902,
+              40.02016822759632
+            ],
+            [
+              116.35175865113122,
+              40.01955584745509
+            ],
+            [
+              116.3507747563226,
+              40.01955033940648
+            ],
+            [
+              116.35076895241613,
+              40.020162719428946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型7",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34424734537072,
+              39.987110996776124
+            ],
+            [
+              116.3452307733731,
+              39.98711655652412
+            ],
+            [
+              116.34523661994596,
+              39.98650417367444
+            ],
+            [
+              116.34425320072332,
+              39.98649861404634
+            ],
+            [
+              116.34424734537072,
+              39.987110996776124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型8",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34702092683787,
+              39.987126655623086
+            ],
+            [
+              116.34800435560918,
+              39.98713219184064
+            ],
+            [
+              116.34801017742046,
+              39.98651980865376
+            ],
+            [
+              116.34702675742885,
+              39.986514272555596
+            ],
+            [
+              116.34702092683787,
+              39.987126655623086
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型9",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34979451047072,
+              39.98714224810663
+            ],
+            [
+              116.3507779400077,
+              39.98714776079369
+            ],
+            [
+              116.35078373705727,
+              39.98653537727104
+            ],
+            [
+              116.34980031630005,
+              39.98652986470287
+            ],
+            [
+              116.34979451047072,
+              39.98714224810663
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型10",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34421527458392,
+              39.99046479020029
+            ],
+            [
+              116.34519875067424,
+              39.990470350604994
+            ],
+            [
+              116.34520459822706,
+              39.98985796811465
+            ],
+            [
+              116.3442211309179,
+              39.989852407829865
+            ],
+            [
+              116.34421527458392,
+              39.99046479020029
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型11",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34698899167459,
+              39.990480450896825
+            ],
+            [
+              116.34797246853404,
+              39.990485987768295
+            ],
+            [
+              116.34797829132108,
+              39.989873604940726
+            ],
+            [
+              116.34699482324285,
+              39.989868068188656
+            ],
+            [
+              116.34698899167459,
+              39.990480450896825
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型12",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34976271093142,
+              39.990496045222095
+            ],
+            [
+              116.35074618855666,
+              39.9905015585603
+            ],
+            [
+              116.35075198657786,
+              39.98988917539693
+            ],
+            [
+              116.34976851773384,
+              39.989883662177625
+            ],
+            [
+              116.34976271093142,
+              39.990496045222095
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-013",
+      "properties": {
+        "id": "BLDG-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型13",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34475110229215,
+              39.946219756616614
+            ],
+            [
+              116.34573394465238,
+              39.94622530740357
+            ],
+            [
+              116.34573977828325,
+              39.94561292015944
+            ],
+            [
+              116.34475694468478,
+              39.94560736949223
+            ],
+            [
+              116.34475110229215,
+              39.946219756616614
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-014",
+      "properties": {
+        "id": "BLDG-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型14",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34801474387594,
+              39.946238156540474
+            ],
+            [
+              116.34899758713897,
+              39.946243679662786
+            ],
+            [
+              116.34900339167523,
+              39.94563129202234
+            ],
+            [
+              116.34802055717404,
+              39.945625769019166
+            ],
+            [
+              116.34801474387594,
+              39.946238156540474
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-015",
+      "properties": {
+        "id": "BLDG-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型15",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35127838845231,
+              39.94625646460064
+            ],
+            [
+              116.3522612326136,
+              39.946261960058244
+            ],
+            [
+              116.3522670080552,
+              39.94564957202345
+            ],
+            [
+              116.35128417265575,
+              39.945644076684395
+            ],
+            [
+              116.35127838845231,
+              39.94625646460064
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-016",
+      "properties": {
+        "id": "BLDG-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型16",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "retain_retrofit",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34473229787072,
+              39.94819066829474
+            ],
+            [
+              116.34571516843178,
+              39.94819621946709
+            ],
+            [
+              116.34572100263708,
+              39.94758383243408
+            ],
+            [
+              116.34473814083867,
+              39.947578281381475
+            ],
+            [
+              116.34473229787072,
+              39.94819066829474
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-017",
+      "properties": {
+        "id": "BLDG-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型17",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "adaptive_reuse",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34799603309874,
+              39.94820906949611
+            ],
+            [
+              116.34897890456267,
+              39.94821459300189
+            ],
+            [
+              116.34898470967052,
+              39.94760220557253
+            ],
+            [
+              116.34800184696927,
+              39.947596682185896
+            ],
+            [
+              116.34799603309874,
+              39.94820906949611
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-018",
+      "properties": {
+        "id": "BLDG-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放智能共同体建筑原型18",
+        "building_type": "mixed_use",
+        "retain_renovate_demolish": "new_infill",
+        "height_control": "pending_official_control",
+        "area_sqm_declared": 5712.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35125977131966,
+              39.9482273788274
+            ],
+            [
+              116.35224264368198,
+              39.94823287466654
+            ],
+            [
+              116.35224841969226,
+              39.947620486842816
+            ],
+            [
+              116.35126555609266,
+              39.94761499112223
+            ],
+            [
+              116.35125977131966,
+              39.9482273788274
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

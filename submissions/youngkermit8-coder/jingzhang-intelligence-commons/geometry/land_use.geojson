@@ -1,0 +1,274 @@
+{
+  "type": "FeatureCollection",
+  "name": "land_use",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-001",
+      "properties": {
+        "id": "LU-001",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI研发与开源协作用地",
+        "land_use_code": "0802",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 1303790.169
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34070000000001,
+              39.93899999999999
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.34169999999999,
+              40.00600000000001
+            ],
+            [
+              116.34206510384186,
+              40.013485860521165
+            ],
+            [
+              116.34277902368578,
+              39.93900011226727
+            ],
+            [
+              116.34070000000001,
+              39.93899999999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-002",
+      "properties": {
+        "id": "LU-002",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "京张遗址公园与生态开敞空间",
+        "land_use_code": "1401",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 2222633.682
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34277902368578,
+              39.93900011226727
+            ],
+            [
+              116.34206510384186,
+              40.013485860521165
+            ],
+            [
+              116.34270000000001,
+              40.0265
+            ],
+            [
+              116.34467645889394,
+              40.026500090603044
+            ],
+            [
+              116.34551189983854,
+              39.93900020312833
+            ],
+            [
+              116.34277902368578,
+              39.93900011226727
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-003",
+      "properties": {
+        "id": "LU-003",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "科技服务与活力商业用地",
+        "land_use_code": "05",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 2136003.491
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34551189983854,
+              39.93900020312833
+            ],
+            [
+              116.34467645889394,
+              40.026500090603044
+            ],
+            [
+              116.34725186158894,
+              40.02650015807753
+            ],
+            [
+              116.34808401937774,
+              39.93900022979663
+            ],
+            [
+              116.34551189983854,
+              39.93900020312833
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-004",
+      "properties": {
+        "id": "LU-004",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "科研教育与成果转化用地",
+        "land_use_code": "0803",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 2136003.39
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34808401937774,
+              39.93900022979663
+            ],
+            [
+              116.34725186158894,
+              40.02650015807753
+            ],
+            [
+              116.34982726506324,
+              40.026500168311166
+            ],
+            [
+              116.35065613969219,
+              39.93900019940018
+            ],
+            [
+              116.34808401937774,
+              39.93900022979663
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-005",
+      "properties": {
+        "id": "LU-005",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "人才社区与生活服务用地",
+        "land_use_code": "0701",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 2136003.289
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35065613969219,
+              39.93900019940018
+            ],
+            [
+              116.34982726506324,
+              40.026500168311166
+            ],
+            [
+              116.35240266930948,
+              40.026500121303926
+            ],
+            [
+              116.3532282607746,
+              39.93900011193896
+            ],
+            [
+              116.35065613969219,
+              39.93900019940018
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-006",
+      "properties": {
+        "id": "LU-006",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "城市轨道与综合交通设施用地",
+        "land_use_code": "1207",
+        "design_status": "conceptual_partition",
+        "area_sqm_declared": 1478391.364
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3533,
+              39.989999999999995
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3532282607746,
+              39.93900011193896
+            ],
+            [
+              116.35240266930948,
+              40.026500121303926
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3533,
+              39.989999999999995
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

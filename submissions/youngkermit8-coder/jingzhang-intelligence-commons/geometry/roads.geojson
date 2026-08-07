@@ -1,0 +1,174 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "百年智轨慢行主脊",
+        "road_class": "greenway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34635042556094,
+            39.93985050772524
+          ],
+          [
+            116.34859990992888,
+            39.961731074748535
+          ],
+          [
+            116.34663601873272,
+            39.9836127504506
+          ],
+          [
+            116.34854360795683,
+            40.004640430908815
+          ],
+          [
+            116.34693829710848,
+            40.025623358111034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西缝合慢行廊道1",
+        "road_class": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34045918525057,
+            39.947673658201836
+          ],
+          [
+            116.35530001476778,
+            39.947757137732225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西缝合慢行廊道2",
+        "road_class": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34012871766681,
+            39.96693742439393
+          ],
+          [
+            116.35513830755562,
+            39.96702189497779
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西缝合慢行廊道3",
+        "road_class": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34047920696477,
+            39.987080709419224
+          ],
+          [
+            116.35352774242791,
+            39.98715422354151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西缝合慢行廊道4",
+        "road_class": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34166626210805,
+            40.005477271990664
+          ],
+          [
+            116.35415168885669,
+            40.00554752387584
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西缝合慢行廊道5",
+        "road_class": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34227264677128,
+            40.01774055923836
+          ],
+          [
+            116.35482372593194,
+            40.01781111651133
+          ]
+        ]
+      }
+    }
+  ]
+}
