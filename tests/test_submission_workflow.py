@@ -16,6 +16,7 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     validate_submission,
 )
+from github_pr_validation import safe_manifest_paths  # noqa: E402
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -35,6 +36,32 @@ class EmptyPdfDetectionTests(unittest.TestCase):
 
     def test_non_pdf_is_not_flagged(self) -> None:
         self.assertFalse(is_empty_pdf(b"not a pdf"))
+
+
+class ManifestHydrationTests(unittest.TestCase):
+    def test_accepts_only_safe_relative_manifest_paths(self) -> None:
+        manifest = {
+            "files": [
+                {"path": "assets/figures/site-overview.png"},
+                {"path": "report/proposal.html"},
+                {"path": "../outside.txt"},
+                {"path": "/absolute.txt"},
+                {"path": ""},
+                {"path": 123},
+                "not-an-object",
+            ]
+        }
+        self.assertEqual(
+            {
+                "assets/figures/site-overview.png",
+                "report/proposal.html",
+            },
+            safe_manifest_paths(manifest),
+        )
+
+    def test_invalid_manifest_shapes_return_no_paths(self) -> None:
+        self.assertEqual(set(), safe_manifest_paths([]))
+        self.assertEqual(set(), safe_manifest_paths({"files": "not-a-list"}))
 
 
 REFERENCE_BLOCK = (
