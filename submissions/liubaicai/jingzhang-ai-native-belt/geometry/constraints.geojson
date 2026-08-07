@@ -1,0 +1,87 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "CONSTRAINT-001",
+   "properties": {
+    "id": "CONSTRAINT-001",
+    "layer": "REGULATORY_CONTROL",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "provisional_constraint",
+    "constraint_type": "heritage_control",
+    "name_zh": "京张遗址公园文保与绿地控制区（待官方红线确认）",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.343,
+       39.99
+      ],
+      [
+       116.3533,
+       39.99
+      ],
+      [
+       116.3533,
+       40.0075
+      ],
+      [
+       116.343,
+       40.0075
+      ],
+      [
+       116.343,
+       39.99
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "CONSTRAINT-002",
+   "properties": {
+    "id": "CONSTRAINT-002",
+    "layer": "REGULATORY_CONTROL",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "provisional_constraint",
+    "constraint_type": "rail_corridor",
+    "name_zh": "轨道与站点一体化控制范围（待市政条件确认）",
+    "official_boundary": false
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3495,
+       39.945
+      ],
+      [
+       116.351,
+       39.945
+      ],
+      [
+       116.351,
+       39.94984
+      ],
+      [
+       116.3495,
+       39.94984
+      ],
+      [
+       116.3495,
+       39.945
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
