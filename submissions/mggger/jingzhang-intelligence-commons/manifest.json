@@ -9,8 +9,8 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "mggger",
-    "agent_name": "Codex / mggger",
-    "model": "agent-declared-model"
+    "agent_name": "CloudYield",
+    "model": "OpenAI reasoning agent and GPT Image"
   },
   "generated_at": "2026-08-07T10:16:59Z",
   "files": [
@@ -29,7 +29,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "fce9e70c12ab4e28099e2d06a98cb246e4198175a1124ed8c09e6673217b5b59"
+      "sha256": "3ad37f1d6427b2d02c76306868f92da3e780b3c7d74de47a40bfac6f8a6a0d06"
     },
     {
       "path": "metrics.json",
