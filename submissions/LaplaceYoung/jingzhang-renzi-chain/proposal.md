@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.9"
+iteration: "v3.0"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
@@ -317,7 +317,7 @@ iteration: "v2.9"
 
 按任务书要求提出不少于3个AI朝圣地标（本方案提出4个，`ai_landmark_count` 指标）[metric:ai_landmark_count][source:AGENT-TASKBOOK][depth:ai_cultural_narrative]：
 
-1. **京张零号站（原点圣地，概念命名）**：以清华园车站旧址（概略位置 `geometry/constraints.geojson#CON-HER-001`）为核心，建立「百年京张—AI原点」叙事锚点。史实底座（公开资料）：站房1910年竣工、站名匾额为詹天佑亲笔题写，2016年为京张高铁建设停运，2023年列入北京市文物保护单位（2021年列为北京市首批不可移动革命文物 [source:SRC-QHY-REVOLUTIONARY-2025]），1949年3月党中央「进京赶考」专列抵京第一站在此下车 [source:SRC-QHY-STATION]。设「原点刻度」公共艺术装置（1909→AI元年双轨时间轴；「AI元年」为本方案设定的叙事刻度，非历史纪年）与荣誉展示墙；文保管控以官方为准，本方案仅表达概念意向 [data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]。
+1. **京张零号站（原点圣地，概念命名）**：以清华园车站旧址（概略位置 `geometry/constraints.geojson#CON-HER-001`）为核心，建立「百年京张—AI原点」叙事锚点。史实底座（公开资料）：站房1910年竣工、站名匾额为詹天佑亲笔题写，2016年为京张高铁建设停运，2023年列入北京市文物保护单位（2021年列为北京市首批不可移动革命文物 [source:SRC-QHY-REVOLUTIONARY-2025]），1949年3月党中央「进京赶考」专列抵京第一站在此下车 [source:SRC-QHY-STATION]。设「原点刻度」公共艺术装置（1909→AI元年双轨时间轴；「AI元年」为本方案设定的叙事刻度，非历史纪年）与荣誉展示墙；文保管控以官方为准，本方案仅表达概念意向 [data:geometry/constraints.geojson#CON-HER-001][assumption:A-HER-001]。**数字文创先例（v3.0，公开报道）**：2022年8月我国首个铁路工业主题数字文化产品以京张铁路为主题发行（青龙桥站房/八达岭南洞桥/之字形折返线/窑顶沟24号桥4款，天工数藏平台，由工信部工业文化发展中心创立运营）[source:SRC-JZ-NFT-2022]——本方案「原点刻度」打卡体系可衔接该「限量稀缺+铁路工业叙事+平台背书」范式（概念）。
 2. **人字桥廊（脊上地标）**：于北五环上跨活力脊区域（概念）设置「人字形」景观构筑物，象征人字形展线的新生（原版「人」字形展线位于青龙桥八达岭段，本构筑物为其象征性再现，非原址复原）；工程可行性不属于本方案结论，仅作概念地标意向 [source:OFFICIAL-ANNOUNCEMENT][assumption:A-ENG-001]。
 3. **众智之心（研之圣地）**：众智园科技广场中央设置「算力之芯」装置（SC-01），以公共算力实时可视化象征「自主创新心脏」；广场周边设「治理宣言墙」（AI治理原则公共展示）。
 4. **钟声数据钟楼（业之圣地）**：大钟寺四象限广场设「数据钟楼」概念装置，以古钟文化+数据流通为意象，组织「数据要素市集」（SC-04）。史实底座（公开资料）：大钟寺（觉生寺）始建于1733年，珍藏明永乐大钟（高约6.75米、重约46.5吨），1996年列入全国重点文物保护单位 [source:SRC-DZS-MUSEUM]；保持与古钟博物馆的文化协调，避免过度娱乐化 [source:AGENT-TASKBOOK]。
@@ -481,7 +481,7 @@ iteration: "v2.9"
 
 ### 运营绩效指标与基准框架（概念）
 
-本方案另设运营绩效监测视角，与正式指标体系分离：运营绩效指标不进入正式计算、不作结论数据，仅作运营监测概念，无目标值。监测框架建议对标国家高新区综合评价指标体系（科技部火炬中心2021年修订官方解读）的评价维度（概念分组，不主张排名达标）[source:SRC-KPI-TORCH-2021]；按 GIID 创新区「经济—物质—网络资产」三分法组织概念指标组（企业/人才/资本；公共空间使用率、设施密度；活动/社群/开放合作）[source:SRC-KPI-GIID]；借鉴欧盟 JRC 创新区影响测度框架，分投入（空间/设施/平台）、产出（企业/岗位/活动）、影响（创新产出/社会影响）三层概念监测 [source:SRC-KPI-JRC-2021]。
+本方案另设运营绩效监测视角，与正式指标体系分离：运营绩效指标不进入正式计算、不作结论数据，仅作运营监测概念，无目标值。监测框架建议对标国家高新区综合评价指标体系（科技部火炬中心2021年修订官方解读）的评价维度（概念分组，不主张排名达标）[source:SRC-KPI-TORCH-2021]；按 GIID 创新区「经济—物质—网络资产」三分法组织概念指标组（企业/人才/资本；公共空间使用率、设施密度；活动/社群/开放合作）[source:SRC-KPI-GIID]；借鉴欧盟 JRC 创新区影响测度框架，分投入（空间/设施/平台）、产出（企业/岗位/活动）、影响（创新产出/社会影响）三层概念监测 [source:SRC-KPI-JRC-2021]；无障碍与包容指标层参照 ISO 37120/37124 城市服务与生活质量指标组织方式 [source:SRC-ISO-37124-2024] 与 SDG 11.2.1/11.7.1 口径（按性别、年龄与残疾状况分列的方向），设「量化可达—过程治理—国际校准」三层（概念，试点前冻结基线）。
 
 **概念指标说明（待测）**：本方案另登记两项概念指标——`slow_network_continuity_score`（慢行网络连续性评分）与 `service_ring_15min_function_coverage`（15分钟服务圈功能域覆盖数，0—6域），status=concept、概念待测，不进入上述 known 指标表，不作为任何结论数据；其度量方法参照空间句法与15分钟城市研究（background），数据与口径由专业团队确定 [source:SRC-SPACE-SYNTAX-1984][source:SRC-15MIN-CITY-2021]。
 
@@ -549,7 +549,7 @@ iteration: "v2.9"
 | AI 生成标识 | 五图+图纸+页面显式「AI生成」标识 | 按《标识办法》承诺双轨标识+过程记录留存 | v1.2 |
 | 图面与图纸 | 脚本可复算生成（A3 14 页/A0 7 板，含概念剖面/三型街道断面/形态转译页） | 版本戳统一、字形修复、图面事实注记人工校核 | v0.9、v1.2、v1.4、v1.7、v2.0—v2.1 |
 
-**可复现性宣言（v1.3）**：本方案全部数值与图形可由包内生成脚本复算——几何（`gen_geometry.py`）、指标（`gen_metrics.py`，EPSG:4548）、矩阵与来源（`gen_matrices.py`）、五图（`gen_figures.py`）、图纸（`gen_drawings.py`）、离线页面（`gen_visual_html.py`）、Logo 与结构化资产（`gen_logo_svg.py`、`gen_structured_assets.py`）；脚本随方案沿革归档于投稿目录外的可复算集（本仓库技能目录与方案 changelog 均声明存在性与用途）。「官方边界发布后一键重算」为本方案承诺的默认动作，非一次性声明 [source:DATA-WORKFLOW][assumption:A-REV-001]。**学术支撑（背景）**：本「AI生成＋人工终审」工作流与 2023—2026 生成式城市设计前沿共识一致——大语言模型与人类专家协作的规划产出在专业评估中可超越 90% 规划师基线（Nature Computational Science 2025，清华—MIT Senseable City Lab）[source:SRC-NCS-LLM-PLANNING-2025]；多模态扩散生成以「分阶段人工介入」保障专业判断嵌入（arXiv:2505.24260）[source:SRC-ARXIV-DIFFUSION-URBAN-2025]；面向规划定制的多智能体框架已验证任务分工价值（ACL 2025 PlanGPT）[source:SRC-ACL-PLANGPT-2025]。上述文献仅作方法学背景支撑，不构成对方案成果的学术背书。
+**可复现性宣言（v1.3）**：本方案全部数值与图形可由包内生成脚本复算——几何（`gen_geometry.py`）、指标（`gen_metrics.py`，EPSG:4548）、矩阵与来源（`gen_matrices.py`）、五图（`gen_figures.py`）、图纸（`gen_drawings.py`）、离线页面（`gen_visual_html.py`）、Logo 与结构化资产（`gen_logo_svg.py`、`gen_structured_assets.py`）；脚本随方案沿革归档于投稿目录外的可复算集（本仓库技能目录与方案 changelog 均声明存在性与用途）。「官方边界发布后一键重算」为本方案承诺的默认动作，非一次性声明 [source:DATA-WORKFLOW][assumption:A-REV-001]。**学术支撑（背景）**：本「AI生成＋人工终审」工作流与 2023—2026 生成式城市设计前沿共识一致——大语言模型与人类专家协作的规划产出在专业评估中可超越 90% 规划师基线（Nature Computational Science 2025，清华—MIT Senseable City Lab）[source:SRC-NCS-LLM-PLANNING-2025]；多模态扩散生成以「分阶段人工介入」保障专业判断嵌入（arXiv:2505.24260）[source:SRC-ARXIV-DIFFUSION-URBAN-2025]；面向规划定制的多智能体框架已验证任务分工价值（ACL 2025 PlanGPT）[source:SRC-ACL-PLANGPT-2025]。上述文献仅作方法学背景支撑，不构成对方案成果的学术背书。**评估口径（v3.0，概念）**：方案自证采「确定性校验—专业复核—评审对照」三层口径——确定性校验（指标与设计通则逐项比对、全参数可复算）、专业复核（注册规划师统一评分表独立打分+一致性系数报告）、评审对照（与人工基准双盲对比）[source:SRC-ARXIV-URBANPLANBENCH-2025]——AI 方案能力的标准化衡量可参照 UrbanPlanBench 类综合基准（概念，试点前冻结）。
 
 **专业复核需求**：所有provisional几何派生指标须在official polygon发布后重算；建筑规模与高度量级须由专业团队校核；方案须经规划、交通、市政、文保专业复核后方可进入任何实施讨论 [source:DATA-WORKFLOW][assumption:A-REV-001]。
 

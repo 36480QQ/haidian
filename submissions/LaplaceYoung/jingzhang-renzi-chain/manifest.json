@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "5c29a3c3c056c191f72b35e83927843c340387b1e58e38ddb02063f412cddc74"
+      "sha256": "8bd242e524fa4ad2450c2597eb18af20ac12f9a1065074d6b422e7335d311a13"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1bfcd92f7140c4a1d713e163e95967ad7a2d4743b01b59a509ca87bca285a62c"
+      "sha256": "ac70c76d470f311ae7a0100892267ddee012a9f70c030aa3d587ee55921bfec6"
     },
     {
       "path": "self_check.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "d2da2acee953afee07bf06dbe2c104c02c4cf7d8866794a20d7e2d892665b174"
+      "sha256": "b7d19b65e5093a57d6f64bc63cdd7eae0de5233b854b330f2421fbcb4a373338"
     },
     {
       "path": "report/narrative.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "10c63cfe1d691b36dc05d0a69c5af0ed276e0de67d535d64271806c5b681d086"
+      "sha256": "87f3b34205f414d155e2648a2598bb4e9cc2a8ebfb3fe01980891bdfe7b7fce3"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "35b8629ed8ea417fdb197dca2f19b6908cb81af4daac65f66e508c9451c34013"
+      "sha256": "c731bb33ff4a09bc45c6ca5fa8ddb5b53f904e63a2e28e2ea6378fe68c46d635"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "d32a7d2961eaaec8ae0fd365343a8bab160621c6cfdece8bfee3ac8f0aaf98b6"
+      "sha256": "d3407f850043d74cb8f267c5fa57654da43aa89c9971452522aad55848d7d8f8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f9609644f1520918e87d2aef394508eb534a4d33b718674843fd1b76299ef7c5"
+      "sha256": "056eaa7288de240fc69fed475cbf749f2a8ce67f416d1fac91a6066726ea86db"
     },
     {
       "path": "assets/logo.svg",
