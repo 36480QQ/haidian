@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b1993608794978fc7b8ca65a5550532a19e3e873fa94624b95a6adecdb8d421b"
+      "sha256": "aa35b9bba4305baa0e0d91b537aecec323326adabb3b4c12ed75e1b886f636de"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "331778eacb5f0e34aacef69f2fcbac2c899bf3b27131c439b91bc1dd772ad165"
+      "sha256": "060029508b8992a1c4541cf3d588e7574ce9c2e21846e6d18c40759b23a793b3"
     },
     {
       "path": "self_check.json",
@@ -77,31 +77,31 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "454b34b4cf15547856af799423d0cbf933f87e2142d3730526d148b5a594760c"
+      "sha256": "9fd911c78f974bf09380c5124b70aa89eb317b7fee7ae9fcdb6571808c994841"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7ef0e2b418d2a4df43f6fab688b206b029f769f6a0cc43d969f0342306786c8d"
+      "sha256": "c717af32b59a36b33a8c9c86424f43a82fa7f322b342b631aa54ef9ad214ab1d"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "53c3d2027d08b9c0cddc76415a3affe2eb7a2afe3389ac0fca29285610d0a218"
+      "sha256": "4863ccb43a7f12ee4f302007b119a9e3646cdf01e5c84da8d7bfbacfcfe6c8e9"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "12b18701e8f2c183d41210153200bed5c8aa24f5624d2206d4c29fc4666b3a82"
+      "sha256": "85e53fe96af245da9a3f748038afc42150f062c4b6b92be9b4e29f2ef1f75213"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "76760ab918eab14aa4c8760b23ea835d11be18c967a65fa730205e65e4cb72ae"
+      "sha256": "2013cf3846e7986f426ea03cc92f7a01b0124057e18196f79efc662cf39092ce"
     },
     {
       "path": "visual/index.html",
@@ -113,31 +113,31 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "92ef1d7f206bdb35ce6b40dc691f731f441cf3e281a118c63a9cf1b415524468"
+      "sha256": "f5df8065d8458e79db7a6f7feaf1a73a96ac7de2af2e60c15950ce9d55db7156"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "fe65111d40d0a7aa25b9b37df749c359d7ef639758462e7704eeefdb7be31ea9"
+      "sha256": "a0ef76f6e57914d30e8fc98c9dd7c15510d892d3138a8f52a5938cdb889f2d76"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f9818c11a2ab7708c6745ca0eeeffdaf2709ff03b867f6c12cdff631be3c8147"
+      "sha256": "99faca7773c3291bceeeda26b8f68a7330bee4e8eeb1421c9ee2376c113326d0"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "fd59476cd0376435fadcc2246c646acab4c7465b2d2e48722d40677fa6dd134f"
+      "sha256": "469492a89a8536a160011ed1d2ce9cfd966142140f43984bac4aaee7306d7c11"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "ff129d1c4d421292eee0c74ed54f07c3e2abc430a129efa3752168b234667b64"
+      "sha256": "ccc3a12edd7dddaea275a02486fce6e705350d6afe569d5827b5d3dfe8f42919"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -192,6 +192,78 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "assets/figures/brand-identity.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "0e9eca6f5ff3467dcdbc93321b15fc12ed75954af37484b7d1887c5d006af221"
+    },
+    {
+      "path": "assets/figures/landmarks.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "1b8840753c967fcc87f83299bc614edb1cef425f6c32912c55935690b2203c57"
+    },
+    {
+      "path": "assets/figures/phasing-plan.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "28655feea581dd5bad635944ea577020278019b0a65e90018bc73bd51f074c74"
+    },
+    {
+      "path": "assets/figures/scenario-nodes.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "ac5620811a5cbebc9558c9f5bfa6c9772d34002f56eaf031a3514c9fec42039b"
+    },
+    {
+      "path": "assets/figures/spatial-structure.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "b6d8488c5202e002349dc9061d69c4a567547be8b41ac9df80904f905be5b815"
+    },
+    {
+      "path": "changelog.md",
+      "role": "supporting",
+      "required": false,
+      "sha256": "aa92d55514040693a935919ce8cb17840db7484c3318cc44f0b0244b754858f9"
+    },
+    {
+      "path": "assets/renders/landmark-dazhongsi-roadshow.jpg",
+      "role": "concept_render",
+      "required": false,
+      "sha256": "0c7b230019c99af5a11a07916734f35889532602d0f81c7ecbe5601e05f32fb0"
+    },
+    {
+      "path": "assets/renders/landmark-governance-observatory.jpg",
+      "role": "concept_render",
+      "required": false,
+      "sha256": "1d831360744d3d601a5c101a9ec6826e7d79bf2fbbe0d485fc01b68e8ffef755"
+    },
+    {
+      "path": "assets/renders/landmark-origin-lighthouse.jpg",
+      "role": "concept_render",
+      "required": false,
+      "sha256": "fc96a234e2d2b489365d5d156070165a6e0bf1301b61e33c40a9fc199dd5eb96"
+    },
+    {
+      "path": "assets/renders/logo-mark.jpg",
+      "role": "concept_render",
+      "required": false,
+      "sha256": "f1bdda50336e150bff16397699ed661e49072af94696aaefd8ba11234c1aa034"
+    },
+    {
+      "path": "assets/renders/scene-park-ai-experience.jpg",
+      "role": "concept_render",
+      "required": false,
+      "sha256": "1765531a1d18458b7b7f04c9ee074a478f70141c98842159763fa2723f8cd349"
+    },
+    {
+      "path": "FEEDBACK.md",
+      "role": "feedback",
+      "required": false,
+      "sha256": "a4e41044275cca3a8863d404b344f7cbf81fbd933869dca3c3635d6bde248d3c"
     }
   ],
   "validation_claim": {
