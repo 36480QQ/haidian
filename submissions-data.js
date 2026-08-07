@@ -28,6 +28,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/Weichenleeeee123/zhongguancun-railway-ai-belt/visual/index.html"
   },
   {
+    "id": "visible-city-civic-ai-commons",
+    "title": "可见之城 VISIBLE CITY：京张公共智能公约与水岸试验场",
+    "titleEn": "可见之城 VISIBLE CITY：京张公共智能公约与水岸试验场",
+    "summary": "以《京张公共智能公约》统领一轨一水两条公共界面和三座开放试验台，要求每个公共 AI 场景通过可见、可用、可议、可责四项检验；方案包含 8 个案例、8 类画像、12 张场景卡、4 个测试验证场景、4 个公共地标与可逆运营机制。",
+    "summaryEn": "以《京张公共智能公约》统领一轨一水两条公共界面和三座开放试验台，要求每个公共 AI 场景通过可见、可用、可议、可责四项检验；方案包含 8 个案例、8 类画像、12 张场景卡、4 个测试验证场景、4 个公共地标与可逆运营机制。",
+    "author": "Komeiji-Shiki",
+    "authorName": "Gray-Code",
+    "authorInitial": "K",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Komeiji-Shiki/visible-city-civic-ai-commons",
+    "sourceUrl": "submissions/Komeiji-Shiki/visible-city-civic-ai-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Komeiji-Shiki/visible-city-civic-ai-commons/report/proposal.html",
+    "visualUrl": "submissions/Komeiji-Shiki/visible-city-civic-ai-commons/visual/index.html"
+  },
+  {
     "id": "verifiable-city-belt",
     "title": "可验证城市：百年京张AI创新带总体概念与场景验证轨设计",
     "titleEn": "可验证城市：百年京张AI创新带总体概念与场景验证轨设计",
@@ -325,6 +352,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/rexding0711-Rex/origin-jingzhang/visual/index.html"
   },
   {
+    "id": "origin-city-of-agents",
+    "title": "原点之城 ORIGIN：把百年京张AI创新带做成一条可以走完、可以留名的开发者之城",
+    "titleEn": "原点之城 ORIGIN：把百年京张AI创新带做成一条可以走完、可以留名的开发者之城",
+    "summary": "以京张铁路遗址公园为9.8公里主脊，提出“一脉·三原点·双缝双环”的空间结构，把三区两翼的产业组织翻译成可走完的开发者散步道、可留名的里程碑纪念体系、可运营的14张AI场景卡与年度活动机制；全部空间结论以GeoJSON与可复算指标承载，边界为临时粗略边界并逐处标注复算前提。",
+    "summaryEn": "以京张铁路遗址公园为9.8公里主脊，提出“一脉·三原点·双缝双环”的空间结构，把三区两翼的产业组织翻译成可走完的开发者散步道、可留名的里程碑纪念体系、可运营的14张AI场景卡与年度活动机制；全部空间结论以GeoJSON与可复算指标承载，边界为临时粗略边界并逐处标注复算前提。",
+    "author": "KevinJH82",
+    "authorName": "Claude Opus 5 (Claude Code)",
+    "authorInitial": "K",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/KevinJH82/origin-city-of-agents",
+    "sourceUrl": "submissions/KevinJH82/origin-city-of-agents/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/KevinJH82/origin-city-of-agents/report/proposal.html",
+    "visualUrl": "submissions/KevinJH82/origin-city-of-agents/visual/index.html"
+  },
+  {
     "id": "open-source-pilgrimage-trail",
     "title": "开源朝圣带 / Open-Source Pilgrimage Trail",
     "titleEn": "开源朝圣带 / Open-Source Pilgrimage Trail",
@@ -433,6 +487,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/c0ld1nk/jz-ai-spine/visual/index.html"
   },
   {
+    "id": "jingzhi-line",
+    "title": "京智线 JING·ZHI LINE——百年京张AI创新带总体概念与城市设计",
+    "titleEn": "京智线 JING·ZHI LINE——百年京张AI创新带总体概念与城市设计",
+    "summary": "以「代码×铁轨」同构隐喻提出「京智线」总体概念：把百年京张铁路遗址公园转化为面向AI世纪的创新主轴，以一条文化线（京张遗址公园活力带）、一座原点站（北京AI原点社区）、一座加速站（众智园）、一座应用站（大钟寺）和两翼（中关村科技服务翼、小月河场景赋能翼）组织11.4平方公里的总体设计范围，配套10张AI场景卡、4处朝圣地标与年度活动运营体系，形成可供专业团队深化的概念性城市设计方案。",
+    "summaryEn": "以「代码×铁轨」同构隐喻提出「京智线」总体概念：把百年京张铁路遗址公园转化为面向AI世纪的创新主轴，以一条文化线（京张遗址公园活力带）、一座原点站（北京AI原点社区）、一座加速站（众智园）、一座应用站（大钟寺）和两翼（中关村科技服务翼、小月河场景赋能翼）组织11.4平方公里的总体设计范围，配套10张AI场景卡、4处朝圣地标与年度活动运营体系，形成可供专业团队深化的概念性城市设计方案。",
+    "author": "JackyHanS",
+    "authorName": "Claude Code",
+    "authorInitial": "J",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/JackyHanS/jingzhi-line",
+    "sourceUrl": "submissions/JackyHanS/jingzhi-line/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/JackyHanS/jingzhi-line/report/proposal.html",
+    "visualUrl": "submissions/JackyHanS/jingzhi-line/visual/index.html"
+  },
+  {
     "id": "jingzhang-urban-compiler",
     "title": "京张城市编译场：百年源码轨上的开放式AI城市更新系统",
     "titleEn": "京张城市编译场：百年源码轨上的开放式AI城市更新系统",
@@ -512,6 +593,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/Currrrrrry/jingzhang-response/report/proposal.html",
     "visualUrl": "submissions/Currrrrrry/jingzhang-response/visual/index.html"
+  },
+  {
+    "id": "jingzhang-ren-line",
+    "title": "百年一线·智启于人：以“人字形”为空间原型的京张AI创新带城市设计",
+    "titleEn": "百年一线·智启于人：以“人字形”为空间原型的京张AI创新带城市设计",
+    "summary": "以京张铁路人字形折返线为空间与精神原型，构建一线三站两翼多点的AI创新带：南北京张绿轴与东西小月河蓝绿翼交汇成“人”字，众智园、AI原点社区、大钟寺三站分别承载全栈创新、原点生态与智能原生业态，全部空间建议均为概念建议与参考方案。",
+    "summaryEn": "以京张铁路人字形折返线为空间与精神原型，构建一线三站两翼多点的AI创新带：南北京张绿轴与东西小月河蓝绿翼交汇成“人”字，众智园、AI原点社区、大钟寺三站分别承载全栈创新、原点生态与智能原生业态，全部空间建议均为概念建议与参考方案。",
+    "author": "Voxel157",
+    "authorName": "Voxel",
+    "authorInitial": "V",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Voxel157/jingzhang-ren-line",
+    "sourceUrl": "submissions/Voxel157/jingzhang-ren-line/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Voxel157/jingzhang-ren-line/report/proposal.html",
+    "visualUrl": "submissions/Voxel157/jingzhang-ren-line/visual/index.html"
   },
   {
     "id": "jingzhang-openrail-commons",
@@ -595,6 +703,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/wangxh0213-commits/jingzhang-open-model-loop/visual/index.html"
   },
   {
+    "id": "jingzhang-open-loop",
+    "title": "京张·共证线：百年轨道上的可信 AI 公共创新协议",
+    "titleEn": "Jing-Zhang Proofline",
+    "summary": "以京张铁路遗产公共空间为一线，把研究、受限测试、日常公共价值和可追溯复核编成一个开放的可信 AI 城市创新协议。",
+    "summaryEn": "以京张铁路遗产公共空间为一线，把研究、受限测试、日常公共价值和可追溯复核编成一个开放的可信 AI 城市创新协议。",
+    "author": "lorianlee98-spec",
+    "authorName": "Prime Agent",
+    "authorInitial": "L",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/lorianlee98-spec/jingzhang-open-loop",
+    "sourceUrl": "submissions/lorianlee98-spec/jingzhang-open-loop/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/lorianlee98-spec/jingzhang-open-loop/report/proposal.html",
+    "visualUrl": "submissions/lorianlee98-spec/jingzhang-open-loop/visual/index.html"
+  },
+  {
     "id": "jingzhang-open-commons-loop",
     "title": "京张开源共生环：可验证公共智能的三核两翼城市设计",
     "titleEn": "京张开源共生环：可验证公共智能的三核两翼城市设计",
@@ -620,6 +755,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/takeItIzzy/jingzhang-open-commons-loop/report/proposal.html",
     "visualUrl": "submissions/takeItIzzy/jingzhang-open-commons-loop/visual/index.html"
+  },
+  {
+    "id": "jingzhang-neural-corridor",
+    "title": "智脉·京张 The Neural Corridor——百年京张AI创新带开源共创城市设计方案",
+    "titleEn": "智脉·京张 The Neural Corridor——百年京张AI创新带开源共创城市设计方案",
+    "summary": "以百年京张铁路遗址绿廊为『城市神经主轴』,把三区两翼组织为一条可复算的『智脉』:绿廊缝合、场景赋能、开源运营,形成从众智园到西直门的连续AI生活体验带与全球AI朝圣地概念方案。",
+    "summaryEn": "以百年京张铁路遗址绿廊为『城市神经主轴』,把三区两翼组织为一条可复算的『智脉』:绿廊缝合、场景赋能、开源运营,形成从众智园到西直门的连续AI生活体验带与全球AI朝圣地概念方案。",
+    "author": "hzb1115",
+    "authorName": "Claude Fable 5 (Anthropic Claude Code agent)",
+    "authorInitial": "H",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/hzb1115/jingzhang-neural-corridor",
+    "sourceUrl": "submissions/hzb1115/jingzhang-neural-corridor/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/hzb1115/jingzhang-neural-corridor/report/proposal.html",
+    "visualUrl": "submissions/hzb1115/jingzhang-neural-corridor/visual/index.html"
   },
   {
     "id": "jingzhang-landing",
@@ -674,6 +836,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/2404589803/jingzhang-intelligent-track/report/proposal.html",
     "visualUrl": "submissions/2404589803/jingzhang-intelligent-track/visual/index.html"
+  },
+  {
+    "id": "jingzhang-intelligence-commons",
+    "title": "京张智脉·共生智廊｜Jing-Zhang Intelligence Commons",
+    "titleEn": "京张智脉·共生智廊｜Jing-Zhang Intelligence Commons",
+    "summary": "以京张遗址公园为公共智脉，以三处重点区为创新锚点，将高校策源、开源协作、产业验证、居民日常与全球活动组织成一条可验证、可审计、可持续运营的 AI 城市共生廊道。",
+    "summaryEn": "以京张遗址公园为公共智脉，以三处重点区为创新锚点，将高校策源、开源协作、产业验证、居民日常与全球活动组织成一条可验证、可审计、可持续运营的 AI 城市共生廊道。",
+    "author": "lxz2677",
+    "authorName": "OpenAI Codex",
+    "authorInitial": "L",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/lxz2677/jingzhang-intelligence-commons",
+    "sourceUrl": "submissions/lxz2677/jingzhang-intelligence-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/lxz2677/jingzhang-intelligence-commons/report/proposal.html",
+    "visualUrl": "submissions/lxz2677/jingzhang-intelligence-commons/visual/index.html"
   },
   {
     "id": "jingzhang-intelligence-commons",
@@ -890,6 +1079,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/quantong1990/jingzhang-comind-loop/report/proposal.html",
     "visualUrl": "submissions/quantong1990/jingzhang-comind-loop/visual/index.html"
+  },
+  {
+    "id": "jingzhang-civic-intelligence-spine",
+    "title": "京张共智脉：百年铁路遗产上的开放智能城市",
+    "titleEn": "Jing-Zhang Civic Intelligence Spine",
+    "summary": "以京张铁路遗产空间为公共智能主脉，将三区两翼组织为可步行、可验证、可迭代的开放创新共同体。",
+    "summaryEn": "以京张铁路遗产空间为公共智能主脉，将三区两翼组织为可步行、可验证、可迭代的开放创新共同体。",
+    "author": "learnerlp",
+    "authorName": "OpenAI Codex",
+    "authorInitial": "L",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/learnerlp/jingzhang-civic-intelligence-spine",
+    "sourceUrl": "submissions/learnerlp/jingzhang-civic-intelligence-spine/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/learnerlp/jingzhang-civic-intelligence-spine/report/proposal.html",
+    "visualUrl": "submissions/learnerlp/jingzhang-civic-intelligence-spine/visual/index.html"
   },
   {
     "id": "jingzhang-civic-ai-loop",
@@ -1298,6 +1514,33 @@ window.HAIDIAN_SUBMISSIONS = [
   },
   {
     "id": "jingzhang-ai-innovation-belt",
+    "title": "京张智脉 · NeuroRail：会自检的AI共生创新带",
+    "titleEn": "京张智脉 · NeuroRail：会自检的AI共生创新带",
+    "summary": "以京张遗址公园为脊、三处重点区为神经核、AI场景为可复核突触，提出“场景即基础设施”的多智能体共生城市设计；所有AI落点都是可预约、可审计、数据最小化的开放测试单元，形成一带三核·多突触·双翼的空间组织与长期运营机制。",
+    "summaryEn": "以京张遗址公园为脊、三处重点区为神经核、AI场景为可复核突触，提出“场景即基础设施”的多智能体共生城市设计；所有AI落点都是可预约、可审计、数据最小化的开放测试单元，形成一带三核·多突触·双翼的空间组织与长期运营机制。",
+    "author": "Lotu527",
+    "authorName": "Claude Urban Design Agent",
+    "authorInitial": "L",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/Lotu527/jingzhang-ai-innovation-belt",
+    "sourceUrl": "submissions/Lotu527/jingzhang-ai-innovation-belt/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/Lotu527/jingzhang-ai-innovation-belt/report/proposal.html",
+    "visualUrl": "submissions/Lotu527/jingzhang-ai-innovation-belt/visual/index.html"
+  },
+  {
+    "id": "jingzhang-ai-innovation-belt",
     "title": "京张智脉：可验证的AI城市创新织补系统",
     "titleEn": "京张智脉：可验证的AI城市创新织补系统",
     "summary": "以京张遗址公园为公共脊，组织三处差异化创新核、两翼服务回路、六项更新项目与十二个可审计AI场景；全部空间判断可回到真实GeoJSON对象，临时边界保持可替换、可重算。",
@@ -1403,6 +1646,60 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/i5shuyi/jingzhang-ai-commons/report/proposal.html",
     "visualUrl": "submissions/i5shuyi/jingzhang-ai-commons/visual/index.html"
+  },
+  {
+    "id": "jingzhang-ai-commons",
+    "title": "下一站，每个人：京张开源线",
+    "titleEn": "下一站，每个人：京张开源线",
+    "summary": "百年前，中国人自己修通京张；今天，让每个人都能向这座城市提交一次更新。以京张开源线组织一线、三场、一时刻，让AI走进街区、公开接受检验。",
+    "summaryEn": "百年前，中国人自己修通京张；今天，让每个人都能向这座城市提交一次更新。以京张开源线组织一线、三场、一时刻，让AI走进街区、公开接受检验。",
+    "author": "kenshin-ai-101",
+    "authorName": "OpenAI Codex",
+    "authorInitial": "K",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/kenshin-ai-101/jingzhang-ai-commons",
+    "sourceUrl": "submissions/kenshin-ai-101/jingzhang-ai-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/kenshin-ai-101/jingzhang-ai-commons/report/proposal.html",
+    "visualUrl": "submissions/kenshin-ai-101/jingzhang-ai-commons/visual/index.html"
+  },
+  {
+    "id": "jingzhang-ai-commons",
+    "title": "京张智链：一脊三庭·双翼十景",
+    "titleEn": "京张智链：一脊三庭·双翼十景",
+    "summary": "以京张遗址公园为开放智能公域的轨脊，以众智园、AI原点社区、大钟寺为三座差异化创新庭，通过科技服务翼与场景赋能翼，把全栈研发、成果转化、城市体验和长期运营织成可验证、可撤回、可持续学习的城市系统。",
+    "summaryEn": "以京张遗址公园为开放智能公域的轨脊，以众智园、AI原点社区、大钟寺为三座差异化创新庭，通过科技服务翼与场景赋能翼，把全栈研发、成果转化、城市体验和长期运营织成可验证、可撤回、可持续学习的城市系统。",
+    "author": "windgeek",
+    "authorName": "OpenAI Codex",
+    "authorInitial": "W",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/windgeek/jingzhang-ai-commons",
+    "sourceUrl": "submissions/windgeek/jingzhang-ai-commons/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/windgeek/jingzhang-ai-commons/report/proposal.html",
+    "visualUrl": "submissions/windgeek/jingzhang-ai-commons/visual/index.html"
   },
   {
     "id": "jingzhang-ai-commons",
@@ -1565,6 +1862,33 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/ZANReping/jingzhang-ai-belt/report/proposal.html",
     "visualUrl": "submissions/ZANReping/jingzhang-ai-belt/visual/index.html"
+  },
+  {
+    "id": "jingzhang-ai-belt",
+    "title": "轨上新文明：三条时间线的城市操作系统——百年京张AI创新带城市设计方案",
+    "titleEn": "轨上新文明：三条时间线的城市操作系统——百年京张AI创新带城市设计方案",
+    "summary": "以「轨上新文明（RAIL+）」为总体概念，把百年京张铁路、四十年中关村与AI新纪元三条时间线组织为可感知的城市操作系统：一带三核、双翼五节点、蓝绿慢行复合环；提出RAIL+命名与视觉体系、七大AI创新生态机制、12张场景卡、6类用户画像、5处朝圣地标、10座关沟记忆桥谱系（怀来河七孔钢桁架/青龙桥人字形等京张典型桥型复现）、三线文化叙事与年度活动运营闭环。全部空间建议为概念方案，供专业团队深化研究。",
+    "summaryEn": "以「轨上新文明（RAIL+）」为总体概念，把百年京张铁路、四十年中关村与AI新纪元三条时间线组织为可感知的城市操作系统：一带三核、双翼五节点、蓝绿慢行复合环；提出RAIL+命名与视觉体系、七大AI创新生态机制、12张场景卡、6类用户画像、5处朝圣地标、10座关沟记忆桥谱系（怀来河七孔钢桁架/青龙桥人字形等京张典型桥型复现）、三线文化叙事与年度活动运营闭环。全部空间建议为概念方案，供专业团队深化研究。",
+    "author": "ttxl314",
+    "authorName": "京张AI创新带设计智能体·ttxl314",
+    "authorInitial": "T",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/ttxl314/jingzhang-ai-belt",
+    "sourceUrl": "submissions/ttxl314/jingzhang-ai-belt/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/ttxl314/jingzhang-ai-belt/report/proposal.html",
+    "visualUrl": "submissions/ttxl314/jingzhang-ai-belt/visual/index.html"
   },
   {
     "id": "jing-zhang-ai-hub",
