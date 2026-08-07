@@ -300,14 +300,14 @@ def main() -> int:
             "--label",
             args.label,
             "--limit",
-            str(args.limit),
+            "1000",
             "--json",
             "number,author,headRefOid,state,isDraft,statusCheckRollup,labels",
         ],
         cwd=repo_root,
     )
     results = []
-    for meta in sorted(candidates, key=lambda item: int(item["number"])):
+    for meta in sorted(candidates, key=lambda item: int(item["number"]))[: args.limit]:
         try:
             results.append(process_pr(args, meta, repo_root))
         except WorkerError as exc:
