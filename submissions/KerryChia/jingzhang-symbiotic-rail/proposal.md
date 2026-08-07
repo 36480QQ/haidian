@@ -3,10 +3,10 @@ title: "双轨共生：百年京张AI创新带城市设计方案"
 author_github: "KerryChia"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "本方案以京张遗址公园为主轴、AI产业创新带为副轴，提出‘双轨共生’总体结构，将众智园、北京AI原点社区、大钟寺三处重点区锚定为创新核心，并落地为可复算的用地、蓝绿、交通、公共空间、分期图层与指标体系；当前采用 provisional 边界，保留精度警示与复算要求。"
+summary: "以京张遗址公园为文化主轴、AI产业创新带为数字副轴，提出「双轨共生」总体概念：双轨不是两条平行线，而是历史承诺与未来承诺的空间叠加——让 AI 的每一次决策，像京张铁轨一样可被后人站在原地复核。提出「标准轨距」机制作为双轨互操作的底线，把众智园、北京AI原点社区、大钟寺锚定为三核，并落地为可复算的用地、蓝绿、交通、公共空间、分期图层与指标体系；当前采用 provisional 边界，保留精度警示与复算要求。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.2"
+iteration: "v0.3"
 ---
 
 # 双轨共生：百年京张AI创新带城市设计方案
@@ -32,6 +32,12 @@ iteration: "v0.2"
 ## 统筹研究范围产业与未来城市研究
 
 统筹研究范围的核心任务是构建世界级 AI 创新生态体系。本方案提出“双轨共生”作为一带总体概念：以京张遗址公园为历史与公共空间的“文化主轴”，以沿线高校—园区—企业—站点为“AI创新副轴”，两轨在众智园、AI原点社区、大钟寺三处交汇成核心锚点，形成“一带双轨、三核多点、蓝绿复合环”的空间组织。命名体系上，建议中文主名沿用“百年京张AI创新带”，英文建议 **Jingzhang AI Innovation Belt（缩写 JZ-AI Belt）**，Logo 方向以“双轨 + 遗址拱线”为母题，辅以海淀科技蓝与京张砖红双色，既能呼应京张铁路历史、又具备国际传播辨识度 [source:AGENT-TASKBOOK]。此命名与视觉方向属概念建议，具体字体、图像、商标与人物肖像均需在深化阶段完成清权。
+
+**双轨共生的立场性定义（本方案区别于一般“结构描述”的判断）。** 双轨不是两条平行线的并置，而是**历史承诺与未来承诺的空间叠加**。文化主轴承载的是京张铁路“承认约束、把判断留在空间里让人复核”的百年承诺 [source:RESEARCH-JZ-RAILWAY]；AI创新副轴要承载的是当代城市“让算法决策透明、可解释、可退出”的承诺 [source:AGENT-TASKBOOK]。所谓“共生”，即两轨在空间上交汇、在机制上互锁：任何 AI 场景要接入这条带，都必须像铁轨接入路网一样，先在“标准轨距”上被校准。因此“双轨”不是装饰性的构词，而是一把可被检验的尺——它把“AI 治理的全球话语权”从口号变成一种**可复核的城市基础设施**。
+
+**标准轨距机制（本方案独有的机制点）。** 京张铁路修建时，詹天佑坚持采用统一标准轨距（1435 毫米），使这条铁路能与全国路网互联互通、避免“窄轨孤岛” [source:RESEARCH-JZ-RAILWAY]。这一史实为双轨共生提供了直接机制原型：本方案主张为创新带建立一套“标准轨距”式的场景互操作底线——任何进入带内的 AI 场景、数据接口与设备，都必须满足四项可复核条件：（1）**接口标准**——数据与交互遵循公开、可迁移的协议，不锁定于指定供应商 [source:AGENT-TASKBOOK]；（2）**数据最小化**——只采集运行所需数据，明示用途与留存期限；（3）**人工复核**——涉及权益的决策必须留有可追溯的人工责任主体；（4）**可退出**——任何场景都保留人工通道与离线替代，避免“智能”挤占基本公共服务 [standard:MOHURD-URBAN-DESIGN-MEASURES]。这四项“轨距”校准，是双轨能够并行而不互斥、共生而不吞噬的前提，也是本方案回应“AI 治理全球话语权”的空间化机制，最终落到公共空间、场景卡与运营的每一条可复核记录上 [data:geometry/public_space.geojson#PUBLIC-001] [depth:overall_spatial_structure]。
+
+**史实锚点与空间对应。** 本方案把双轨的历史承诺落实为可追溯的空间坐标：清华园车站（1910 年设立，京张铁路出西直门后的第一座车站，站名由詹天佑题写）作为“AI原点社区”的文化前厅与原点灯塔 [source:RESEARCH-QHY-STATION]；京张铁路遗址公园一期（2023 年 6 月开放，位于清华东路至知春路、长约 2.5 公里）作为“文化主轴”已建成的基础，本方案在其上叠加 AI 体验轨与换乘节点，而非新建 [source:RESEARCH-PARK-2023]。这些史实仅作为叙事与机制坐标，不据此推定任何现状权属、文保范围或工程条件。
 
 面向智能体任务书要求的“三大定位、五大功能、三区两翼协同回路”，本方案在统筹层面给出协同框架：众智园承担全栈自主创新与治理话语权，AI原点社区承担世界级创新生态与场景赋能，大钟寺承担智能原生新业态，中关村科技服务翼承担要素全球化配置与中关村IP资本赋能，小月河场景赋能翼承担AI场景落地与活力城市生活 [source:AGENT-TASKBOOK]。该协同框架由 [standard:MOHURD-URBAN-DESIGN-MEASURES] 要求的公共空间、景观风貌与建筑布局统筹落到空间结构，回接 [data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#PUBLIC-001] 与 [depth:overall_spatial_structure]。
 
@@ -98,6 +104,15 @@ iteration: "v0.2"
 
 所有AI场景遵循数据最小化、公开来源、可解释与人工复核原则，不得替代规划审批、不得输出未经授权的个人画像、不得声称获得官方实施承诺 [source:AGENT-TASKBOOK]。场景节点与蓝绿公共空间、慢行交通、产业用地的对应关系见 [data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/roads.geojson#ROAD-001] 与 [data:geometry/green_space.geojson#GREEN-001]。
 
+**标准轨距认证闭环（场景卡如何落地为运营，而非贴标签）。** 本方案把 12 张场景卡接入一套“提交—校准—试点—结项”的可复核闭环，回应任务书对“场景开放运营”和“人工复核”的要求 [source:AGENT-TASKBOOK]：
+
+1. **提交（轨距自检）**——场景提案方填写场景申请表，声明其接口是否公开、数据是否最小化、人工责任主体是否明确、是否保留离线替代，即四项“标准轨距”条件 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+2. **校准（评审公示）**——由场景运营方与专业评审按公开标准核验四项条件，未达标不进入试点，评审结论公示可追溯。
+3. **试点（限定运营）**——以受控时段、路段或空间先行，现场设责任人、可人工接管与紧急下线；试点数据仅聚合公开，不做个人画像。
+4. **结项（可退可留）**——每期结项公开“成功/失败/转向”记录，成功者进入开放运营并点亮荣誉节点，失败者沉淀为可复用知识并说明原因，不掩盖失败。
+
+这一闭环的空间落点是公共空间与场景节点的荣誉记录体系 [data:geometry/public_space.geojson#PUBLIC-001]，并贯穿场景 02 安全治理沙盒、场景 05 国际路演客厅与场景 12 城市智能体治理沙盒的运营 [source:AGENT-TASKBOOK]。它把“双轨共生”的标准轨距从理念变成可被第三方复核的流程——任何场景、数据或设备接入这条带，都须先在“轨距”上被校准，这正是本方案对“AI 治理全球话语权”最具体的机制化回答 [depth:municipal_new_infrastructure]。
+
 ## 用地、建筑规模与拆改留方案
 
 用地方案以国土空间用地用海分类指南为依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，形成完整、闭合、无缝的用地分区，覆盖全部提交边界 [data:geometry/land_use.geojson#LU-001]。产业功能比例方面，AI研发创新用地比例约 10%，绿地与开敞空间约 13.5%，公共空间约 7.7%，产业服务与商业服务、社区服务、教育科研、居住用地共同构成完整城市功能 [metric:land_use_rd_ratio][metric:green_ratio][metric:public_space_ratio]。
@@ -117,6 +132,8 @@ iteration: "v0.2"
 蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业与社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [data:geometry/green_space.geojson#GREEN-001]。城市设计管理办法要求统筹景观风貌、公共空间与建筑控制 [standard:MOHURD-URBAN-DESIGN-MEASURES]，因此方案将公共活动空间、科技测试与应用展示、历史文化展示与城市基调统一组织。
 
 城市风貌融合京张铁路历史文化、中关村创新文化与AI创新文化，利用清华园火车站等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面与公共艺术引导。针对任务书要求，本方案提出 3 个 AI 朝圣地标或荣誉展示节点：**京张原点灯塔**（AI原点社区，致敬铁路起点与创新原点）、**众智园治理观象台**（标准与安全治理展示）、**大钟寺国际路演客厅**（国际交流与成果发布）。这些地标属概念建议，与京张遗址公园、中关村创新文化、开发者社区和公共空间系统关联；所有品牌、字体、图像、肖像与企业标识均须清权，不得过度娱乐化或把概念地标写成已批准建设 [source:AGENT-TASKBOOK]。城市风貌控制由 [depth:blue_green_public_space] 校核，公共空间指标见 [metric:public_space_ratio]。
+
+**文化叙事主线：从“统一轨距”到“可复核场景”。** 本方案的文化叙事不止于“传承与创新”的并列，而是找出京张铁路、中关村创新与 AI 新文化共享的结构：**承认约束 → 做出判断 → 公开留痕 → 接受检验。** 京张铁路修建时詹天佑坚持统一标准轨距，使铁路能接入全国路网、避免窄轨孤岛 [source:RESEARCH-JZ-RAILWAY]；清华园车站作为京张铁路出西直门后的第一站、站名由詹天佑题写，是“原点”叙事的史实坐标 [source:RESEARCH-QHY-STATION]。中关村创新文化的内核是“允许失败并公开复盘”。AI 新文化最紧迫的需求则是可解释与可复核。三者共享的正是这条“留痕—检验”的结构，也是本方案“标准轨距”机制的叙事来源：让 AI 场景像铁轨接入路网一样，先被统一标准校准，再进入公共空间。这一主线通过导视、荣誉墙与原点灯塔的空间叙事表达，历史标识与 AI 新文化标识“同源不同层”，并列展示而非混同，史实内容一律经人工复核 [source:AGENT-TASKBOOK] [depth:blue_green_public_space]。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -164,4 +181,5 @@ iteration: "v0.2"
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+- 已核实史实来源：京张铁路史 [source:RESEARCH-JZ-RAILWAY]、清华园车站 [source:RESEARCH-QHY-STATION]、京张铁路遗址公园一期开放 [source:RESEARCH-PARK-2023]
+- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:RESEARCH-JZ-RAILWAY]、[source:RESEARCH-QHY-STATION]、[source:RESEARCH-PARK-2023]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
