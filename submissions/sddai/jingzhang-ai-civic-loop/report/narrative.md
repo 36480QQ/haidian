@@ -21,7 +21,7 @@ iteration: "v0.2"
 
 当前仍缺官方精确红线、三处重点区 official polygons、控规指标、道路红线、权属、现状建筑、文保和市政资料。边界采用仓库 provisional geometry，仅用于 intake、可视化与概念讨论；不得视为 official redline、审批依据或精确面积依据。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:risk_missing_data]
 
-![城市可验证协议总览](assets/figures/site-overview.png)
+![图01：同源空间证据与城市协议栈](../assets/figures/site-overview.png)
 
 ## 三层范围工作框架
 
@@ -78,7 +78,7 @@ iteration: "v0.2"
 
 总体更新采用四类低参数动作：首层开源、慢行断点缝合、可替换样机插槽、空间时段复用。`land_use.geojson` 是完整的概念 partition；`buildings.geojson` 仅提供一个概念建筑证据层，不代表现状建筑全量调查；`constraints.geojson` 为空，明确表示未取得可入库的正式控制线，而不是“没有约束”。[data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINTS-PENDING] [depth:land_use_layout] [depth:retain_renovate_demolish]
 
-![微调式更新与时段复用](assets/figures/land-use-structure.png)
+![图02：概念用地骨架、可逆插件与24小时时段复用](../assets/figures/land-use-structure.png)
 
 ### 控制语言前置，虚假数值后退
 
@@ -90,7 +90,7 @@ iteration: "v0.2"
 
 ## 重点区域详细设计
 
-![三处重点区域差异化任务](assets/figures/key-areas.png)
+![图03：训练、转译、验证三处重点区模型价值链](../assets/figures/key-areas.png)
 
 ### 01 众智园：TRAIN / 全栈攻关花园
 
@@ -148,7 +148,7 @@ iteration: "v0.2"
 
 市政与新基建采用“普通功能先成立”的失效安全原则：智能灯先是合格路灯，服务亭先有人工窗口，机器人路径先是无障碍步道，数字看板关闭后仍保留纸质导视。[depth:municipal_new_infrastructure]
 
-![失效安全的慢行与蓝绿公共空间](assets/figures/mobility-bluegreen.png)
+![图04：慢行、蓝绿、公共知识与四级失效安全网络](../assets/figures/mobility-bluegreen.png)
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -172,7 +172,7 @@ iteration: "v0.2"
 
 ## 指标体系、面积复算与合规矩阵
 
-![一数一式一边界：指标证据链](assets/figures/metrics-evidence.png)
+![图05：GeoJSON到指标、HTML、PDF与自检的证据链](../assets/figures/metrics-evidence.png)
 
 | 指标 | 当前值 | 公式/来源 | 解释边界 |
 | --- | ---: | --- | --- |

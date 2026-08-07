@@ -91,7 +91,7 @@ code {
 <p>本方案依据官方公告确认项目名称、三层范围、约面积与设计任务；依据清权的智能体任务书确认六项 agent 任务、三大定位、五大功能、场景与运营要求；依据本地专业标准快照建立城市设计、控规边界与用地分类语言。<span class="evidence evidence-source">[source:OFFICIAL-ANNOUNCEMENT]</span> <span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span> <span class="evidence evidence-source">[source:SITE-PACKAGE]</span> <span class="evidence evidence-source">[source:SOURCE-REGISTRY]</span> <span class="evidence evidence-standard">[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</span> <span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span></p>
 <p>提交包的权威顺序为 GeoJSON → metrics → matrices → manifest/assumptions → proposal → figures/PDF/HTML。图像负责解释设计，不负责制造精度。<span class="evidence evidence-source">[source:PROCESSED-FACT-PACK]</span> <span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span> <span class="evidence evidence-metric">[metric:site_area_sqm]</span> <span class="evidence evidence-depth">[depth:metrics_recalculation]</span></p>
 <p>当前仍缺官方精确红线、三处重点区 official polygons、控规指标、道路红线、权属、现状建筑、文保和市政资料。边界采用仓库 provisional geometry，仅用于 intake、可视化与概念讨论；不得视为 official redline、审批依据或精确面积依据。<span class="evidence evidence-source">[source:BOUNDARY-SOURCE]</span> <span class="evidence evidence-source">[source:KEY-AREA-SOURCE]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-002]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-003]</span> <span class="evidence evidence-depth">[depth:risk_missing_data]</span></p>
-<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="城市可验证协议总览"><figcaption>城市可验证协议总览</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="图01：同源空间证据与城市协议栈"><figcaption>图01：同源空间证据与城市协议栈</figcaption></figure>
 <h2>三层范围工作框架</h2>
 <h3>从“空间层级”改写为“证据分辨率”</h3>
 <p>| 层级 | 公告范围 | 本方案回答的问题 | 可验证输出 | | --- | ---: | --- | --- | | 统筹研究范围 | 约 43.6 km² | AI 生态如何跨越高校、园区、社区和两翼协同 | 机制、角色、案例转译、年度回路 | | 总体设计范围 | 约 11.4 km² | 公共知识脊柱如何组织用地、慢行、蓝绿和更新 | topology-safe 图层、指标、分期 | | 三处重点区 | 约 368.4 ha | 研发、转译、验证分别需要什么空间与治理 | 三套差异化任务书、场景护照 |</p>
@@ -111,13 +111,13 @@ code {
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <h3>LoRA Urbanism：少改参数，多保留城市记忆</h3>
 <p>总体更新采用四类低参数动作：首层开源、慢行断点缝合、可替换样机插槽、空间时段复用。<code>land_use.geojson</code> 是完整的概念 partition；<code>buildings.geojson</code> 仅提供一个概念建筑证据层，不代表现状建筑全量调查；<code>constraints.geojson</code> 为空，明确表示未取得可入库的正式控制线，而不是“没有约束”。<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-001]</span> <span class="evidence evidence-data">[data:geometry/buildings.geojson#BLDG-001]</span> <span class="evidence evidence-data">[data:geometry/constraints.geojson#CONSTRAINTS-PENDING]</span> <span class="evidence evidence-depth">[depth:land_use_layout]</span> <span class="evidence evidence-depth">[depth:retain_renovate_demolish]</span></p>
-<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="微调式更新与时段复用"><figcaption>微调式更新与时段复用</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="图02：概念用地骨架、可逆插件与24小时时段复用"><figcaption>图02：概念用地骨架、可逆插件与24小时时段复用</figcaption></figure>
 <h3>控制语言前置，虚假数值后退</h3>
 <p>在 official 控规、权属、道路、市政、消防和文保资料到位前，本方案只提出公共界面、慢行连续、蓝绿渗透、可撤回测试和人类复核等控制意图。容积率、建筑高度、建筑密度、建设规模、停车供给均保持 unknown，不以渲染图反推数值。<span class="evidence evidence-metric">[metric:floor_area_ratio]</span> <span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span> <span class="evidence evidence-standard">[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]</span> <span class="evidence evidence-depth">[depth:development_intensity_controls]</span> <span class="evidence evidence-depth">[depth:height_massing_character]</span></p>
 <h3>交通、市政与公共服务：先连接，再承载，后增量</h3>
 <p>近期优先修复步行/骑行断点、非机动车秩序与导览；中期研究站点一体化和存量首层开放；远期仅在容量与权属清楚后评估端侧算力、分布式能源、充换电与地下空间。任何横向连通、站点改造和设备布局均为概念组织，不是工程线位。<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-001]</span> <span class="evidence evidence-depth">[depth:traffic_rail_slow_parking]</span> <span class="evidence evidence-depth">[depth:municipal_new_infrastructure]</span></p>
 <h2>重点区域详细设计</h2>
-<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区域差异化任务"><figcaption>三处重点区域差异化任务</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="图03：训练、转译、验证三处重点区模型价值链"><figcaption>图03：训练、转译、验证三处重点区模型价值链</figcaption></figure>
 <h3>01 众智园：TRAIN / 全栈攻关花园</h3>
 <p>围绕安静研发院落、端侧样机庭院、低速机器人环与安全治理桌组织空间。测试采用公开基准或合成样本；低速设备由安全员接管；清河与绿地界面保持低扰动。先行项目是首层开放、测试预约和撤场规则，不是新增建设规模。<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span> <span class="evidence evidence-depth">[depth:three_key_area_detailed_design]</span></p>
 <h3>02 北京 AI 原点社区：TRANSLATE / 近校转译客厅</h3>
@@ -137,7 +137,7 @@ code {
 <h2>交通、轨道、市政与公共服务设施</h2>
 <p>南北向依托公共知识脊柱，东西向以三类缝合动作连接高校、社区与站点：可直接实施的导览/非机动车整理，可逆的街角/首层开放，需专项论证的跨路/站点工程。三类动作在图面中必须使用不同线型，避免把概念桥隧画成既定工程。<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-001]</span> <span class="evidence evidence-depth">[depth:traffic_rail_slow_parking]</span></p>
 <p>市政与新基建采用“普通功能先成立”的失效安全原则：智能灯先是合格路灯，服务亭先有人工窗口，机器人路径先是无障碍步道，数字看板关闭后仍保留纸质导视。<span class="evidence evidence-depth">[depth:municipal_new_infrastructure]</span></p>
-<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="失效安全的慢行与蓝绿公共空间"><figcaption>失效安全的慢行与蓝绿公共空间</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="图04：慢行、蓝绿、公共知识与四级失效安全网络"><figcaption>图04：慢行、蓝绿、公共知识与四级失效安全网络</figcaption></figure>
 <h2>蓝绿空间、公共空间与城市风貌</h2>
 <p><code>green_space.geojson</code> 和 <code>public_space.geojson</code> 表达概念供给，不替代绿线、蓝线、公园实施边界或文保控制。公共知识脊柱设置四级失效安全：无手机、无授权、无网络、系统撤场；每一级都保持基本服务连续。<span class="evidence evidence-data">[data:geometry/green_space.geojson#GREEN-001]</span> <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-001]</span> <span class="evidence evidence-metric">[metric:green_ratio]</span> <span class="evidence evidence-metric">[metric:public_space_ratio]</span> <span class="evidence evidence-depth">[depth:blue_green_public_space]</span></p>
 <p>三处朝圣地标不做巨型科技雕塑，而做可积累的公共知识基础设施：**京张百年算法站**记录工程史与模型史；**开源贡献索引**展示可授权的代码、论文与公共服务贡献；**城市样机剧场**公开展示场景如何被测试、质疑、修正和撤回。地标价值来自持续编辑，不来自造价与屏幕面积。<span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span></p>
@@ -147,7 +147,7 @@ code {
 <p><code>phasing.geojson</code> 仅表达一期概念范围。实施策略以“可逆先行、证据换永久”为原则：临时项目不是低质量项目，而是以真实使用证据换取下一步决策权。<span class="evidence evidence-data">[data:geometry/phasing.geojson#PHASE-001]</span> <span class="evidence evidence-depth">[depth:renewal_project_list]</span> <span class="evidence evidence-depth">[depth:phasing_implementation]</span></p>
 <p>年度运营不办一场“总大会”解决所有问题，而形成四季复盘：春季开源工具链周、夏季城市测试季、秋季国际开发者城市周、冬季公共价值审计展。每季留下可公开的 issue、退出记录与下一轮假设；活动均为概念建议，不构成政府日程、资金或招商承诺。<span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span></p>
 <h2>指标体系、面积复算与合规矩阵</h2>
-<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="一数一式一边界：指标证据链"><figcaption>一数一式一边界：指标证据链</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="图05：GeoJSON到指标、HTML、PDF与自检的证据链"><figcaption>图05：GeoJSON到指标、HTML、PDF与自检的证据链</figcaption></figure>
 <p>| 指标 | 当前值 | 公式/来源 | 解释边界 | | --- | ---: | --- | --- | | site_area_sqm | 11,412,825.386 ㎡ | provisional site polygon | 非精确 official area | | green_ratio | 12.3423% | green / site | 概念层，不替代绿地率控制 | | public_space_ratio | 7.3281% | public / site | 概念层，不替代法定指标 | | key_area_count | 3 | count(key areas) | polygons 为 provisional | | scenario_card_count | 10 | 正文可读护照 | 运营设想，不代表已批准 | | persona_count | 5（机器最低口径） | 任务书自检 | 正文扩展为 6 类 |</p>
 <p>容积率、建筑高度、建筑密度、道路红线和市政容量明确显示为 unknown，而不是 0。<span class="evidence evidence-metric">[metric:site_area_sqm]</span> <span class="evidence evidence-metric">[metric:green_ratio]</span> <span class="evidence evidence-metric">[metric:public_space_ratio]</span> <span class="evidence evidence-metric">[metric:key_area_count]</span> <span class="evidence evidence-metric">[metric:scenario_card_count]</span> <span class="evidence evidence-metric">[metric:persona_count]</span> <span class="evidence evidence-depth">[depth:metrics_recalculation]</span></p>
 <p>合规矩阵覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6；标准矩阵覆盖项目公告、清权任务书、城市设计、控规与用地分类；十五项设计深度均有正文、图层、图纸、来源、假设与自检证据。</p>
