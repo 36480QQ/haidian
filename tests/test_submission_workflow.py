@@ -16,7 +16,12 @@ from validate_submission import (  # noqa: E402
     is_empty_pdf,
     validate_submission,
 )
-from github_pr_validation import safe_manifest_paths, validation_paths_for  # noqa: E402
+from github_pr_validation import (  # noqa: E402
+    is_review_queue_candidate,
+    safe_manifest_paths,
+    validation_paths_for,
+)
+from validate_local_submission import discover_submission_files  # noqa: E402
 
 
 class EmptyPdfDetectionTests(unittest.TestCase):
@@ -76,6 +81,44 @@ class ManifestHydrationTests(unittest.TestCase):
             ["submissions/alice/design/proposal.md"],
             validation_paths_for(files, False),
         )
+
+    def test_review_queue_candidate_is_one_author_owned_submission(self) -> None:
+        self.assertTrue(
+            is_review_queue_candidate(
+                [
+                    "submissions/Alice/design/proposal.md",
+                    "submissions/Alice/design/agent.json",
+                ],
+                "alice",
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                ["submissions/alice/design/proposal.md", "README.md"],
+                "alice",
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                [
+                    "submissions/alice/design-a/proposal.md",
+                    "submissions/alice/design-b/proposal.md",
+                ],
+                "alice",
+            )
+        )
+
+    def test_local_full_package_check_ignores_existing_maintainer_feedback(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            submission = root / "submissions" / "alice" / "design"
+            submission.mkdir(parents=True)
+            (submission / "proposal.md").write_text("# Design\n", encoding="utf-8")
+            (submission / "FEEDBACK.md").write_text("# Maintainer feedback\n", encoding="utf-8")
+            self.assertEqual(
+                ["submissions/alice/design/proposal.md"],
+                discover_submission_files(submission, root),
+            )
 
 
 REFERENCE_BLOCK = (

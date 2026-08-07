@@ -231,7 +231,7 @@ export HAIDIAN_REVIEW_MODEL="gpt-5.6-sol"
 python3 scripts/auto_review_queue.py --limit 10
 
 # 正式回写 review/label；通过 60 分门槛和四项 gate 的 PR 自动合并
-python3 scripts/auto_review_queue.py --limit 10 --apply --admin-merge
+python3 scripts/auto_review_queue.py --limit 10 --concurrency 3 --apply --admin-merge
 ```
 
 固定顺序为：required CI → 单一作者目录 → 固定 head SHA worktree → 本地四项 gate →
@@ -239,6 +239,13 @@ python3 scripts/auto_review_queue.py --limit 10 --apply --admin-merge
 合并前最后一次检查 head SHA/CI。低于 60 分标记 `review/low-quality`；CI 未成功的
 PR 不调用模型；draft 不进入队列。合并仅表示仓库 intake，展示、精选、正式评分与
 实施决定继续由 `gallery-publication.json` 的独立流程控制。
+worker 每轮按 PR 编号从旧到新处理，避免持续新增投稿使早期稿件饥饿。
+模型调用和本地视觉检查默认三路并行；worktree 创建/清理以及 GitHub review、标签、
+SHA 复核和 merge 使用进程内锁串行执行，避免 Git 引用锁和 base-branch merge 竞态。
+
+`submission-validation` 成功时会自动清除旧的 CI/修改/低质量标签并添加
+`review/queued`；投稿人推送修订后无需维护者手动重新排队。CI 失败时 workflow
+移除 queued 并添加 `review/ci-failed`，因此不会产生付费模型调用。
 
 审计材料保存在 `.maintainer-review/queue/pr-<number>/<head-sha>/`，worktree 默认在
 `.pr-worktree/auto-review/` 并在单稿完成后删除。建议用 launchd/systemd timer 每
