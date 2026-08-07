@@ -14,6 +14,11 @@
         "phase": "phase_1",
         "name_zh": "轻量公共场景与三港先导",
         "decision_gate": "public_space_permission_and_safety_review",
+        "governance_protocol_id": "G0-G4",
+        "evidence_review_date": "2026-08-07",
+        "auto_advance": false,
+        "allowed_outcomes": ["pilot", "revise", "pause", "stop"],
+        "required_public_record": "purpose_data_owner_human_fallback_complaints_failures_exit",
         "area_sqm_declared": 3889571.43
       },
       "geometry": {
@@ -1086,6 +1091,10 @@
         "phase": "phase_2",
         "name_zh": "南北智脉与东西缝合",
         "decision_gate": "official_boundary_transport_heritage_and_municipal_review",
+        "governance_protocol_id": "G0-G4",
+        "auto_advance": false,
+        "allowed_outcomes": ["expand", "pilot_again", "revise", "stop"],
+        "required_public_record": "official_layers_professional_reviews_public_feedback_maintenance",
         "area_sqm_declared": 824015.488
       },
       "geometry": {
@@ -2270,6 +2279,10 @@
         "phase": "phase_3",
         "name_zh": "街区更新与长期运营",
         "decision_gate": "regulatory_plan_ownership_finance_and_professional_design",
+        "governance_protocol_id": "G0-G4",
+        "auto_advance": false,
+        "allowed_outcomes": ["long_term", "pilot_again", "manual_service", "restore_baseline"],
+        "required_public_record": "statutory_basis_owner_budget_operator_benefits_exit_or_restore",
         "area_sqm_declared": 6699238.468
       },
       "geometry": {
