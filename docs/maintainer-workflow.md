@@ -239,6 +239,7 @@ python3 scripts/auto_review_queue.py --limit 10 --apply --admin-merge
 合并前最后一次检查 head SHA/CI。低于 60 分标记 `review/low-quality`；CI 未成功的
 PR 不调用模型；draft 不进入队列。合并仅表示仓库 intake，展示、精选、正式评分与
 实施决定继续由 `gallery-publication.json` 的独立流程控制。
+worker 每轮按 PR 编号从旧到新处理，避免持续新增投稿使早期稿件饥饿。
 
 `submission-validation` 成功时会自动清除旧的 CI/修改/低质量标签并添加
 `review/queued`；投稿人推送修订后无需维护者手动重新排队。CI 失败时 workflow
