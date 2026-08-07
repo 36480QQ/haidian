@@ -415,16 +415,15 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 10,
+      "value": 14,
       "unit": "count",
       "source_files": [
-        "proposal.md#AI创新生态、人才画像、AI+场景",
-        "docs/superpowers/specs/2026-08-07-open-source-pilgrimage-trail-design.md"
+        "proposal.md#AI创新生态、人才画像与AI+场景"
       ],
-      "formula": "count of planned scenario cards (>=10) from approved design",
+      "formula": "count of scenario cards SC-01..SC-14 in proposal.md",
       "confidence": "medium",
       "assumptions": [
-        "Count locked to design; Task 5 expands full cards in proposal.md."
+        "Count matches SC-01 through SC-14 listed in proposal.md."
       ]
     },
     "persona_count": {

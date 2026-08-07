@@ -39,7 +39,7 @@ iteration: "v1.0"
 
 证据索引文件：`sources.json`、`assumptions.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`。现状诊断与缺口披露对应 [depth:existing_conditions_diagnosis]。
 
-![场地总览](assets/figures/site-overview.png)
+![场地总览：总体设计范围、智轨脊与三重点区](assets/figures/site-overview.png)
 
 主证据锚点：[data:geometry/site_boundary.geojson#SITE-OVERALL-001]、[data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area]、[metric:site_area_sqm]、[metric:key_area_count]。
 
@@ -57,7 +57,7 @@ iteration: "v1.0"
 
 智轨巡礼脊四段（概念廊道，非工程定线）：文脉段 → 开源巡礼径（开发者散步道 + 成果廊 + 信号黄灯阵）→ 荣誉段 → 东西缝合高校—园区—社区。慢行主轴长度见 [data:geometry/roads.geojson#ROAD-SPINE-SLOW]、[metric:pilgrimage_corridor_length_m]（约 9.2 km）。
 
-![用地结构](assets/figures/land-use-structure.png)
+![用地结构：分码用地与智轨脊叠合示意](assets/figures/land-use-structure.png)
 
 **Provisional 限制**：当前边界为粗略 intake；用地、道路、蓝绿、建筑、分期与 metrics 均为讨论值。官方数据到位后须按 [A-RECALC-AFTER-OFFICIAL-003] 全量复算，不得只替换单文件。
 
@@ -134,7 +134,7 @@ iteration: "v1.0"
 
 三处重点区均来自 provisional KEY_AREA [source:KEY-AREA-SOURCE][depth:three_key_area_detailed_design]；面积为讨论复算值。
 
-![重点区域](assets/figures/key-areas.png)
+![重点区域：众智园、原点社区与大钟寺详细设计](assets/figures/key-areas.png)
 
 ### 众智园 AI 自主创新加速区（约 192.1 ha 公告 / provisional 约 192.9 ha）
 
@@ -163,7 +163,7 @@ iteration: "v1.0"
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-本节展开 agent.3 所需可读内容：画像、场景卡、产业测试验证；生态案例见统筹研究章节 [metric:persona_count]=5、[metric:scenario_card_count]=10、[metric:test_scenario_count]=3。
+本节展开 agent.3 所需可读内容：画像、场景卡、产业测试验证；生态案例见统筹研究章节 [metric:persona_count]=5、[metric:scenario_card_count]=14、[metric:test_scenario_count]=3。
 
 ### 用户画像（≥5）
 
@@ -244,7 +244,7 @@ iteration: "v1.0"
 
 道路中心线合计讨论长度 [metric:road_centerline_length_m]≈12.6 km。北五环上跨、大钟寺站一体化、清华东路西口等节点仅作研究议题，不作工程可行性结论。道路红线缺失时全部降级为概念 [A-CONTROLS-001]。
 
-![交通与蓝绿](assets/figures/mobility-bluegreen.png)
+![交通与蓝绿：慢行脊、接驳与蓝绿公共空间](assets/figures/mobility-bluegreen.png)
 
 市政与新基建 [depth:municipal_new_infrastructure]：创新服务平台、人才生活服务、端侧算力与分布式能源等写为待深化设施清单；缺管线/消防/排水资料时不给容量结论。公共服务强调预约制测试界面、导览与降阶互动的轻运营，而非重资产承诺。
 
@@ -331,10 +331,10 @@ iteration: "v1.0"
 | [metric:pilgrimage_corridor_length_m] | ≈9.2 km | 智轨巡礼慢行脊长度 |
 | [metric:signal_light_array_length_m] | ≈8.2 km | 公开指标灯阵概念长度 |
 | [metric:landmark_count] | 4 | LM-01…04 |
-| [metric:scenario_card_count] / [metric:persona_count] / [metric:test_scenario_count] / [metric:ecosystem_case_count] | 10 / 5 / 3 / 8 | 任务书定量覆盖 |
+| [metric:scenario_card_count] / [metric:persona_count] / [metric:test_scenario_count] / [metric:ecosystem_case_count] | 14 / 5 / 3 / 8 | 任务书定量覆盖 |
 | [metric:floor_area_ratio] / [metric:total_floor_area_sqm] | unknown | 缺法定控规，不作审定 |
 
-![指标与证据](assets/figures/metrics-evidence.png)
+![指标与证据：面积复算、场景卡与合规证据摘要](assets/figures/metrics-evidence.png)
 
 合规覆盖：公告 1.3 / 1.4 / 1.5 与 agent.1–agent.6 均在 `compliance_matrix.json` 映射到本章及相邻章节、图层、指标、图纸与假设。标准响应见 `standard_matrix.json`；深度项见 `design_depth_matrix.json`（正文展开后供 finalize/self-check 刷新状态）。
 
