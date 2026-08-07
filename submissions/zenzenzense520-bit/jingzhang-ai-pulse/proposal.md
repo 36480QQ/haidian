@@ -6,8 +6,20 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张智脉为总体概念，通过一脉两翼三核多场景节点的空间结构，把百年京张铁路文脉转化为AI创新生态、公共生活与国际传播的复合城市系统。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
+
+## 事实、概念与待确认三层声明
+
+本方案所有内容按证据性质分为三层：**已确认事实（official）**、**概念建议（concept）**、**待官方确认（pending）**。正文中概念建议统一以 **（概念）** 标记，待官方确认事项以"待官方确认"表述。三层声明同时映射到 `compliance_matrix.json` 的 `evidence_type` 字段。
+
+| 层级 | 内容 | 证据类型 | 使用边界 |
+| --- | --- | --- | --- |
+| 已确认事实 | 项目名称与主办方、总体设计范围约 11.4 km²、重点区域范围约 368.4 公顷、三处重点区公告面积（众智园 192.1 公顷、原点社区 104.3 公顷、大钟寺 72.0 公顷）、智能体任务书六项任务、城市设计管理等标准名称 | official | 可作为任务依据与空间讨论基准 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] |
+| 概念建议 | 京张智脉命名与 Logo 方向、高度分级、场景卡、测试验证场景、朝圣地标、运营机制、拆改留与分期 | concept | 均为概念建议/参考方案，供专业团队深化，不构成政府审定或实施承诺 [source:AGENT-TASKBOOK] |
+| 待官方确认 | 官方红线、重点区 polygon、控规容积率/高度/密度/退线、道路红线、市政管线、权属与工程条件 | pending | 正式数据发布后需重算图层与指标 [source:SITE-PACKAGE] [data:geometry/site_boundary.geojson#SITE-001] |
+
+`compliance_matrix.json` 中每条任务标注主导证据类型；同一任务内部同时包含概念与待确认内容时，取主导类型并在正文中说明。
 
 ## 设计依据与资料清单
 
@@ -78,11 +90,11 @@ iteration: "v1.0"
 
 ## 统筹研究范围产业与未来城市研究
 
-统筹研究范围的核心判断是：把百年京张铁路的"自主创新起点"与海淀中关村的"创业创新生态"连接为一条可持续更新的 AI 创新脉。方案提出总体概念名"京张智脉"（Jing-Zhang AI Pulse），英文名称 "AI Pulse Belt"，命名体系为"一脉、两翼、三核、多场景节点"：一脉指京张智脉，两翼指中关村科技服务翼与小月河场景赋能翼，三核指三处重点片区，多场景节点指 AI+公共服务、产业服务、文化体验与治理实验组成的可运营网络 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+统筹研究范围的核心判断是：把百年京张铁路的"自主创新起点"与海淀中关村的"创业创新生态"连接为一条可持续更新的 AI 创新脉。方案提出总体概念名 **（概念）**"京张智脉"（Jing-Zhang AI Pulse），英文名称 "AI Pulse Belt"，命名体系为 **（概念）**"一脉、两翼、三核、多场景节点"：一脉指京张智脉，两翼指中关村科技服务翼与小月河场景赋能翼，三核指三处重点片区，多场景节点指 AI+公共服务、产业服务、文化体验与治理实验组成的可运营网络 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-Logo 与视觉识别方向建议：以两条并列钢轨抽象为两条脉冲线，构成形似字母 Z 的无限回环，象征京张铁路、中关村创新与 AI 数据流的交汇；主色建议采用钢青、电光蓝与暖橙三色，其中钢青对应铁路遗产、电光蓝对应 AI 算力、暖橙对应人文活力；辅助图形采用站点编号、轨枕刻度与脉冲波形，形成可用于导视、展板、数字界面的组件系统。该命名与视觉方向属于概念建议，不涉及任何已注册商标或未经授权字体 [depth:overall_spatial_structure]。
+Logo 与视觉识别方向建议 **（概念）**：以两条并列钢轨抽象为两条脉冲线，构成形似字母 Z 的无限回环，象征京张铁路、中关村创新与 AI 数据流的交汇；主色建议采用钢青、电光蓝与暖橙三色，其中钢青对应铁路遗产、电光蓝对应 AI 算力、暖橙对应人文活力；辅助图形采用站点编号、轨枕刻度与脉冲波形，形成可用于导视、展板、数字界面的组件系统。该命名与视觉方向属于概念建议，不涉及任何已注册商标或未经授权字体 [depth:overall_spatial_structure]。
 
-全球 AI 创新生态案例研究（6 个，作为空间机制参考而非投资承诺）：
+全球 AI 创新生态案例研究 **（概念）**（6 个，作为空间机制参考而非投资承诺）：
 
 | 案例 | 可借鉴机制 | 转化到一带的空间动作 |
 | --- | --- | --- |
@@ -212,7 +224,7 @@ AI 创新生态按"策源、转化、加速、场景、治理"五段组织，与
 | 高校师生 | 成果转化、跨校协作、日常慢行 | 近校成果转化街、跨校慢行网络、AI 教育体验点 |
 | 城市治理者 | 公开数据、人工复核、风险预警 | 城市智能体治理沙盘、安全治理沙盒、标准工作坊 |
 
-AI 场景卡共 12 张，其中至少 3 张为产业测试验证场景：
+AI 场景卡 **（概念）** 共 12 张，其中至少 3 张为产业测试验证场景：
 
 | 编号 | 场景卡 | 空间载体 | 场景类型 |
 | --- | --- | --- | --- |
@@ -254,7 +266,7 @@ AI 场景卡共 12 张，其中至少 3 张为产业测试验证场景：
 
 用地分类统一采用国土空间用地用海分类代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。提交边界内用地单元 25 个，绿地与开敞空间面积 2,904,708 平方米、占比 25.5% [metric:green_ratio] [metric:green_space_area_sqm]，公共空间面积 537,012 平方米、占比 4.7% [metric:public_space_ratio] [metric:public_space_area_sqm]，建筑基底 618,413 平方米、建筑密度 5.4% [metric:building_density]。
 
-拆改留方案以"保留优先、改造为主、新建精准、留白弹性"为原则：文保与教育科研建筑建议保留，低效产业与社区设施建议改造，三核关键节点建议新建，众智园北侧与城市边缘建议留白。所有拆改留表达均为概念建议 [depth:retain_renovate_demolish]，不涉及地块权属与法定审批；控规容积率、建筑高度、建筑密度、绿地率与退线列为待确认事项 [depth:development_intensity_controls]。建筑形态与风貌控制以体量分级、界面连续性和屋顶形态为设计建议 [depth:height_massing_character]，由 A3/A0 图纸与 HTML 可视化表达 [source:SITE-PACKAGE]。
+拆改留方案 **（概念）** 以"保留优先、改造为主、新建精准、留白弹性"为原则：文保与教育科研建筑建议保留，低效产业与社区设施建议改造，三核关键节点建议新建，众智园北侧与城市边缘建议留白。所有拆改留表达均为概念建议 [depth:retain_renovate_demolish]，不涉及地块权属与法定审批；控规容积率、建筑高度、建筑密度、绿地率与退线列为待确认事项 [depth:development_intensity_controls]。建筑形态与风貌控制以体量分级、界面连续性和屋顶形态为设计建议 [depth:height_massing_character]，由 A3/A0 图纸与 HTML 可视化表达 [source:SITE-PACKAGE]。
 
 ### 用地结构细化
 
@@ -334,7 +346,7 @@ AI 朝圣地标（概念）不少于 3 个：清华园原点碑（以清华园�
 
 更新项目清单以"可讨论、可复核、可深化"为原则形成项目库，核心项目包括：京张智脉绿廊缝合工程 [data:geometry/phasing.geojson#PHASE-002]、众智园全栈测试与治理客厅 [data:geometry/phasing.geojson#PHASE-001]、原点社区近校成果转化街 [data:geometry/buildings.geojson#BLDG-004]、大钟寺站城一体化公共界面 [data:geometry/public_space.geojson#PUBLIC-002]、AI 公共服务与端侧算力节点、全球 AI 活动周公共路线 [data:geometry/phasing.geojson#PHASE-003] [depth:renewal_project_list]。近期启动区面积为 3,692,893 平方米 [metric:phase_1_area_sqm]。
 
-实施分期为：近期（2026-2028）以三处重点区试点与轻量活动启动，中期（2028-2030）完成绿廊缝合与两翼微循环，远期（2030-2035）推进全域更新与长期运营体系 [depth:phasing_implementation]。实施政策建议包括城市更新统筹机制、场景开放申请制、公共数据治理、开发者社区运营、国际传播与人才服务，全部为概念建议，不构成政府承诺 [source:AGENT-TASKBOOK]。年度活动体系建议包括全球 AI 活动周、开发者开放日、开源成果发布季、治理工作坊与 AI 文化导览；运营机制说明运营对象、频率、责任边界、转化路径与风险 [depth:phasing_implementation]。
+实施分期 **（概念）** 为：近期（2026-2028）以三处重点区试点与轻量活动启动，中期（2028-2030）完成绿廊缝合与两翼微循环，远期（2030-2035）推进全域更新与长期运营体系 [depth:phasing_implementation]。实施政策建议 **（概念）** 包括城市更新统筹机制、场景开放申请制、公共数据治理、开发者社区运营、国际传播与人才服务，全部为概念建议，不构成政府承诺 [source:AGENT-TASKBOOK]。年度活动体系建议 **（概念）** 包括全球 AI 活动周、开发者开放日、开源成果发布季、治理工作坊与 AI 文化导览；运营机制说明运营对象、频率、责任边界、转化路径与风险 [depth:phasing_implementation]。
 
 ### 更新项目清单
 

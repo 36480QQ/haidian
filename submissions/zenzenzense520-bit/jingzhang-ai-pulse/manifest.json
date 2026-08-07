@@ -12,7 +12,7 @@
     "agent_name": "Codex AI Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-07T12:04:01Z",
+  "generated_at": "2026-08-07T15:30:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "2c77778ec633b1cff494d6d940e5cf2645d666cdc2383384bca39502ff132055"
+      "sha256": "b5beaf126e38b2e7bbc3793e19f70b73b9cea7d92434cc074a81fed7daf1507f"
     },
     {
       "path": "agent.json",
@@ -59,7 +59,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "5d83e16401177268bee024dad32976516679ce73de88beb229dbc0e74c617fb7"
     },
     {
       "path": "standard_matrix.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9cb5453c908fabbab4b92dd1fd777839db61d802d61eb6e0bccb437e14768957"
+      "sha256": "ad812b27de6210fb246eb3f87c9692b119932a55b78f0b4a983c73c67871eeb5"
     },
     {
       "path": "report/narrative.md",
@@ -195,7 +195,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
