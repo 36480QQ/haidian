@@ -20,7 +20,18 @@
         "area_sqm_calculated": 1929201.877,
         "source_id": "PROVISIONAL-BOUNDARY-TEXT-AND-BBOX",
         "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
-        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "design_role_zh": "众智园AI许可与安全试验核",
+        "scenario_ids": [
+          "SC-01",
+          "SC-02",
+          "SC-12"
+        ],
+        "project_ids": [
+          "JZ-02",
+          "JZ-03"
+        ],
+        "implementation_status": "concept_pending_official_polygon_and_professional_review"
       },
       "geometry": {
         "type": "Polygon",
@@ -68,7 +79,19 @@
         "area_sqm_calculated": 1043236.909,
         "source_id": "PROVISIONAL-BOUNDARY-TEXT-AND-BBOX",
         "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
-        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "design_role_zh": "AI原点开源转化与公共登记核",
+        "scenario_ids": [
+          "SC-03",
+          "SC-04",
+          "SC-07"
+        ],
+        "project_ids": [
+          "JZ-04",
+          "JZ-05",
+          "JZ-06"
+        ],
+        "implementation_status": "concept_pending_official_polygon_and_professional_review"
       },
       "geometry": {
         "type": "Polygon",
@@ -116,7 +139,18 @@
         "area_sqm_calculated": 720454.221,
         "source_id": "PROVISIONAL-BOUNDARY-TEXT-AND-BBOX",
         "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
-        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "design_role_zh": "大钟寺站城交往与数据权益核",
+        "scenario_ids": [
+          "SC-08",
+          "SC-09",
+          "SC-10"
+        ],
+        "project_ids": [
+          "JZ-07",
+          "JZ-08"
+        ],
+        "implementation_status": "concept_pending_official_polygon_and_professional_review"
       },
       "geometry": {
         "type": "Polygon",
