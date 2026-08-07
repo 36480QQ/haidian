@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "command": "python scripts/self_check_submission.py submissions/ttxl314/jingzhang-ai-belt --pr-author ttxl314",
+  "run_at": "2026-08-07T19:55:00+08:00",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present and disclosed (A-BOUNDARY-001); replace with official redline before statutory use. Provisional boundary does not block content scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas (PROV-KEY-001/002/003) are provisional and disclosed in proposal.md, visual/index.html, sources.json, assumptions.json, and self_check.json."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Deterministic validation passed: package_state=ready_for_review, manifest sha256 matched, enums valid, proposal evidence references complete, drawing PDFs non-empty."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "Spatial review passed: layers inside site boundary, land-use full coverage without gaps or overlaps, metrics match EPSG:4548 recomputation within tolerance."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Visual packaging check passed: offline static HTML, all 14 required sections visible, data-metric/data-value consistent with metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Professional evidence review passed: every source/standard/depth/geometry/metric reference chain complete in proposal.md."
+    }
+  ]
+}
