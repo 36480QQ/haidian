@@ -16,7 +16,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 0,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -29,7 +32,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BUILDING-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 0,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "green_space_area_sqm": {
       "status": "known",
@@ -42,7 +48,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 0,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "green_ratio": {
       "status": "known",
@@ -56,7 +65,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 4,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -69,7 +81,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 0,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "public_space_ratio": {
       "status": "known",
@@ -83,7 +98,10 @@
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 4,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "conceptual_mobility_length_m": {
       "status": "known",
@@ -96,7 +114,10 @@
       "confidence": "low",
       "assumptions": [
         "A-ROAD-001"
-      ]
+      ],
+      "provisional": true,
+      "display_precision_decimals": 0,
+      "publication_label": "PROVISIONAL / LOW CONFIDENCE / 待官方数据复算"
     },
     "key_area_count": {
       "status": "known",
@@ -109,14 +130,16 @@
       "confidence": "high",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "provisional_geometry": true,
+      "publication_label": "数量来自任务书；边界为低置信度示意"
     },
     "scenario_card_count": {
       "status": "known",
       "value": 12,
       "unit": "count",
       "source_files": [
-        "proposal.md"
+        "simulation.json"
       ],
       "formula": "count(documented_scenario_cards)",
       "confidence": "high",
