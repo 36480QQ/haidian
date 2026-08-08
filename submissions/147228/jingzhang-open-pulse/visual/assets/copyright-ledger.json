@@ -996,6 +996,23 @@
       "hash_sha256": "f67b119db5c6dd847285807cc39bb3dbfaf357eea3272f9bd05fe28a49dc57c2"
     },
     {
+      "path": "visual/assets/wind-health-validation-plan.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "8f8d60f576d9b03e44991d38c5fc7ccb8e298a2d0986b6dc0c9428d7400b52c2"
+    },
+    {
       "path": "visual/index.en.html",
       "asset_class": "offline_html",
       "author": "许丙南 / Codex",
