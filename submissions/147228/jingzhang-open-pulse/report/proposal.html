@@ -162,6 +162,7 @@ code {
 <li>**水风险：**雨水花园、调蓄和超标行泄是 <code>design_target</code>，但关键无障碍路线避开危险水深/流速的核验比例为 <code>unknown</code>。正式深化需用 DEM、管网、出水口、土壤、地下水、水质、设计暴雨及二维地表模型验证；在此之前不作“无内涝”“聚水生财”或健康收益承诺。<span class="evidence evidence-metric">[metric:water_risk_exceedance_route_verified_ratio]</span> [assumption:A-DRAINAGE-SYSTEM-001]</li>
 </ul>
 <p>这里的状态规则是：<code>visual/assets/evidence-ledger.json</code> 中的 <code>design_target</code> 只说明未来要达到的审查门；<code>metrics.json</code> 中上述六项 <code>unknown</code> 才是当前证据状态。只有模拟输入、校准记录、现场观测、公式、误差和专业责任人齐全后，才能更新为 <code>known</code>，且仍需分开报告舒适、污染、热和水风险，不能合并成一个“风水健康分”。</p>
+<p>为避免把“以后再测”写成空泛承诺，本轮增加 <code>visual/assets/wind-health-validation-plan.json</code> 作为证据合同：它把六项指标分别绑定到几何版本、风热边界、排放源、现场采样、校准误差、责任人和停止条件，并规定缺任何一项时继续保持 <code>unknown</code>。该文件是验证协议，不是海淀现场数据、CFD 结果、健康结论或工程/审批文件；三篇风环境论文只用于方法边界，不迁移个案数值。</p>
 <h3>3. 三处重点区的差异化压力测试</h3>
 <ul>
 <li>**众智园：**把清河界面作为风、水、低碳构件和具身智能封闭测试的共同实验场；先验证排水、冬季防滑、机器人失效和数据安全，再开放展示。</li>

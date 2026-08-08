@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5ec55d2bcdab79c3f4f593689985bc4f0c0904d2873cf2d0525aa255050d08a0"
+      "sha256": "a532f7cf0c95c9d6a74ef2dbfe423c55cc25e2e3d4cb6f88defa7d09751f92ab"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "91a3939643d68ee569b93962ef33b996368d80893606f5c2e863417046a4423b"
+      "sha256": "66e4432e81975e906bc7ff3c4aafeb9f6e995133397faeb872468a8d7573c370"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "93280c568d25953c33779fed7bd76f5fc0dcd3af4c25a455d6316f078fc090f2"
+      "sha256": "cc3acfd107f4ce063bba4c7d8997fb708a02f379683daee6cbf8f922f67b9522"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "27ef0a5ff9a5331285f0ccbc1e39682bcbe33c85fdbb00d67195257bc0b33e02"
+      "sha256": "1a15af27e933dc97481968c3d49764b6938e4be841d59b9a98f0a7be8759bcb8"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "cf5816952fa94e1a5a3f046735a7b438d4d80246c53da9c5d2e7ec3dc7ab30ed"
+      "sha256": "eb94a587f81ec2540151ec7da4df383c1c1695cf7786d17cb083e0d68ed65c65"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -370,6 +370,12 @@
       "role": "evidence_ledger",
       "required": true,
       "sha256": "c034fd0651ee7d7765160c9eb775fdcc4f74f5c8068fddae26a7ad32032e8120"
+    },
+    {
+      "path": "visual/assets/wind-health-validation-plan.json",
+      "role": "wind_health_validation_plan",
+      "required": true,
+      "sha256": "8f8d60f576d9b03e44991d38c5fc7ccb8e298a2d0986b6dc0c9428d7400b52c2"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",

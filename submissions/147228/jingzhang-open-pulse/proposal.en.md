@@ -210,6 +210,8 @@ The expressions *cang feng ju qi* (藏风聚气) and *feng shui* may be used onl
 
 The `design_target` entries in `visual/assets/evidence-ledger.json` are future review gates; the six `unknown` entries in `metrics.json` are the present evidence state. None of the three cited research cases is represented as Jing-Zhang CFD, monitoring or health evidence, and no published case percentage is transferred to this site. [assumption:A-AIR-WIND-001]
 
+To keep “measure it later” from becoming an empty promise, `visual/assets/wind-health-validation-plan.json` defines an evidence contract for all six indicators. It binds each gate to a geometry version, wind/heat boundary cases, emission sources where relevant, field sampling, calibration error, accountable professional review and stop conditions. It is a validation protocol—not Haidian field data, CFD output, a health outcome or an engineering/approval document; the three ventilation papers supply method boundaries only and no case value is transferred.
+
 ## References
 
 See `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, `data/source_registry.json`, and the repository taskbook for the complete source and standard registry. The package intentionally preserves the distinction between official public information, user/repository-provided material, provisional geometry, modeled design scores, conceptual partnerships and future implementation requirements.
