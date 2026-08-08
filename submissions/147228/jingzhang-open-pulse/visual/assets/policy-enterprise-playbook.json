@@ -527,6 +527,29 @@
         "CASE-HELSINKI-AI-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-032",
+      "title": "安全漏洞披露与修复 SLA 卡",
+      "policy_instrument": "security_disclosure_and_patch_sla",
+      "enterprise_stage": "operational_readiness",
+      "problem": "A supplier may discover a security weakness after a pilot while the public operator lacks a disclosure channel, patch deadline or safe temporary mode.",
+      "jingzhang_interface": "For S04/S08/S09, name a vulnerability contact, severity rubric, disclosure route, patch target, temporary manual mode and evidence that the fix did not break the earlier acceptance test.",
+      "operator": "supplier security lead + district security reviewer + service owner",
+      "required_evidence": [
+        "disclosure contact",
+        "severity rubric",
+        "patch target",
+        "temporary safe mode",
+        "regression test"
+      ],
+      "metric": "public_ai_services_with_disclosure_route_and_verified_patch_path",
+      "stop_gate": "No disclosure route, overdue critical patch or failed regression test suspends the service.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-UK-ATRS"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
