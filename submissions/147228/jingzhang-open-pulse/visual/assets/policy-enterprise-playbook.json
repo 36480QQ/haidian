@@ -458,6 +458,29 @@
         "CASE-AMSTERDAM-ALGORITHM-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-029",
+      "title": "里程碑付款与证据交付卡",
+      "policy_instrument": "evidence_linked_pilot_payment",
+      "enterprise_stage": "pilot_finance",
+      "problem": "Paying for activity or a demo can reward volume while leaving the public team without safety records, service outcomes or a usable exit.",
+      "jingzhang_interface": "For an S04/S08 pilot, split any future commercial decision into evidence milestones: setup and rights check, staffed test, independent review, public-service handover and scale-or-retire decision.",
+      "operator": "finance lead + procurement lead + service owner",
+      "required_evidence": [
+        "milestone schedule",
+        "rights and safety gate",
+        "independent review",
+        "handover record",
+        "retirement or scale decision"
+      ],
+      "metric": "pilot_payments_linked_to_verified_evidence_milestones",
+      "stop_gate": "A missed safety, rights or handover milestone freezes the next payment and keeps the service on the manual route.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
