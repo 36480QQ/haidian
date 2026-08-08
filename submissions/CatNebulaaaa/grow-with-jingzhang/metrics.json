@@ -105,6 +105,58 @@
       "formula": "count(numbered scenario cards)",
       "confidence": "high",
       "assumptions": []
+    },
+    "osm_context_feature_count": {
+      "status": "known",
+      "value": 7606,
+      "unit": "features",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "sum(Overpass feature counts by category)",
+      "confidence": "medium",
+      "assumptions": [
+        "Background context only; feature completeness varies by category."
+      ]
+    },
+    "climate_heat_days_ge_35c_per_year": {
+      "status": "known",
+      "value": 22.3,
+      "unit": "days/year",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "mean annual count(T2M_MAX >= 35 C), 2015-2024",
+      "confidence": "medium",
+      "assumptions": [
+        "NASA POWER point-grid baseline; concept-stage use only."
+      ]
+    },
+    "climate_annual_precip_mm": {
+      "status": "known",
+      "value": 649.1,
+      "unit": "mm/year",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "mean annual sum(PRECTOTCORR), 2015-2024",
+      "confidence": "medium",
+      "assumptions": [
+        "NASA POWER point-grid baseline; not drainage design rainfall."
+      ]
+    },
+    "climate_mean_solar_kwh_m2_day": {
+      "status": "known",
+      "value": 4.05,
+      "unit": "kWh/m2/day",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "mean(ALLSKY_SFC_SW_DWN), 2015-2024",
+      "confidence": "medium",
+      "assumptions": [
+        "Supports concept-stage seasonal-space strategy only."
+      ]
     }
   }
 }

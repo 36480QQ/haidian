@@ -36,6 +36,24 @@
       "status": "pending_approval_funding_ownership",
       "statement": "Projects, operators and phases are proposals rather than public commitments.",
       "impact": "Implementation requires statutory review, ownership coordination, financing and public participation."
+    },
+    {
+      "id": "A-OSM-001",
+      "status": "background_context_only",
+      "statement": "OSM features are community-maintained and incomplete; the 2026-08-08 extract is not an official planning or survey dataset.",
+      "impact": "Context massing and network graphics support orientation only; statutory decisions require authoritative GIS and field verification."
+    },
+    {
+      "id": "A-CLIMATE-001",
+      "status": "concept_stage_baseline",
+      "statement": "NASA POWER values are gridded/reanalysis-derived daily data for one corridor-centroid point during 2015-2024.",
+      "impact": "They inform concept-stage priorities, while drainage, wind, thermal comfort and energy sizing require local monitoring and engineering models."
+    },
+    {
+      "id": "A-VISUAL-001",
+      "status": "conceptual_visualisation",
+      "statement": "Blender and image-generation scenes communicate spatial intent and atmosphere; people, planting maturity, materials and building form are illustrative.",
+      "impact": "No rendered element should be read as an approved construction, heritage, ownership or existing-condition record."
     }
   ]
 }

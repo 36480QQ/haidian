@@ -102,6 +102,63 @@
       "url": "https://www.amsterdam.nl/en/policy/circular-economy/",
       "source_type": "background_only",
       "usage": "Reuse-first and circular renovation principle."
+    },
+    {
+      "id": "OSM-CONTEXT-20260808",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "background_only_open_data",
+      "retrieved": "2026-08-08",
+      "license": "OpenStreetMap contributors, ODbL 1.0",
+      "usage": "Context buildings, street/rail/water structure and amenity counts only; never used as statutory redlines, ownership or survey evidence."
+    },
+    {
+      "id": "NASA-POWER-2015-2024",
+      "url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+      "source_type": "background_only_climate_data",
+      "retrieved": "2026-08-08",
+      "usage": "Ten-year gridded point climate baseline for concept-stage shade, rain, wind and solar strategy; not an engineering weather station record."
+    },
+    {
+      "id": "BEIJING-SPONGE-CITY",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_60725.html",
+      "source_type": "background_only_policy",
+      "usage": "Principle-level sponge-city and source-control background; no parcel-specific compliance claim."
+    },
+    {
+      "id": "BEIJING-RESILIENT-CITY",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202403/t20240325_3599383.html",
+      "source_type": "background_only_policy",
+      "usage": "Resilience planning framework used to structure reversible pilots and stress-test gates."
+    },
+    {
+      "id": "BEIJING-CLIMATE-ADAPTATION",
+      "url": "https://sthjj.beijing.gov.cn/bjhrb/index/xxgk69/zfxxgk43/fdzdgknr2/zcfb/2024bzcwj/543352535/index.html",
+      "source_type": "background_only_policy",
+      "usage": "Climate-adaptation principles for heat, extreme rain and public-health co-benefits."
+    },
+    {
+      "id": "BEIJING-RAIN-GARDEN-STANDARD",
+      "url": "https://yllhj.beijing.gov.cn/sdlh/ylkj/bzgf/202302/t20230222_2921741.shtml",
+      "source_type": "background_only_technical_standard",
+      "usage": "Local rain-collecting green-space method reference; detailed sizing remains pending professional hydrology."
+    },
+    {
+      "id": "BLENDER-52-MODEL",
+      "path": "assets/renders/",
+      "source_type": "agent_generated_professional_visualisation",
+      "usage": "Data-driven conceptual massing and human-scale scene bases generated in Blender 5.2 LTS; not BIM or as-built evidence."
+    },
+    {
+      "id": "THREEJS-OFFLINE-EXHIBIT",
+      "path": "visual/index.html",
+      "source_type": "agent_generated_interactive_visualisation",
+      "usage": "Offline WebGL evidence viewer using locally bundled Three.js 0.185.1 and inlined project data."
+    },
+    {
+      "id": "OPENAI-IMAGEGEN-SCENES",
+      "path": "assets/generated-scenes/",
+      "source_type": "agent_generated_concept_imagery",
+      "usage": "Clearly labelled atmospheric concept scenes conditioned on the project Blender model; not photographs of existing conditions."
     }
   ]
 }

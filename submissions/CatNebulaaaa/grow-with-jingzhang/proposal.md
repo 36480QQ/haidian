@@ -63,13 +63,19 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 承担“把创新变成可问责原型”的角色。沿绿色界面布置低速机器人 8–80 路测环、儿童安全对话代理红队室、端侧设备离线/能耗测试台与维修学徒工坊。测试结果以公众可读的“模型营养标签”展示：用途、数据、失败情形、人工负责人、退出方式和下次复审日期。空间由安静观察廊、受控试验庭、维护后场和公众审议台组成，互不干扰。[data:geometry/key_areas.geojson#PROV-KEY-001]
 
+![责任试作院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-responsible-prototyping.png)
+
 ### 2. 北京 AI 原点社区：共同学习院 / Co-learning Commons
 
 承担“让知识跨代流动”的角色。将高校、社区、开源团队与人才生活服务组织在可步行的共享首层网络中：青年城市问题工作室、跨代数字诊所、开源发布厨房、教师审核的学习辅助台、短租与家庭支持服务并置。Kendall Square 与 Paris-Saclay 的价值不是复制形态，而是提醒创新空间必须与住房、服务、公共空间和透明审议同场。[source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
+![共同学习院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-co-learning-commons.png)
+
 ### 3. 大钟寺：好奇入城院 / Curious Arrival Commons
 
 承担“把第一公里变成公共 AI 素养”的角色。从轨道到街区的四象限步行联系，以低认知负担导视、人工咨询台、家庭友好停留点和多语言城市说明构成到达序列。AI 不主动识别个体；访客可自愿扫描获取扩展信息，也可只凭实体导视完成全程。商业展示必须同时说明限制、维修和数据权利。[data:geometry/key_areas.geojson#PROV-KEY-003]
+
+![好奇入城院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-curious-arrival.png)
 
 三处片区的临时多边形只用于区位与设计讨论；建筑、交通、功能与公共空间均须在正式边界和现状调查后深化。[depth:three_key_area_detailed_design] [assumption:A-BOUNDARY-001]
 
@@ -130,6 +136,16 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 分三期推进：近期“先开放、先校验”，用低成本、可逆设施和四类验证场建立证据；中期“再缝合、再适配”，在法定与工程条件确认后实施空间更新；远期“持续共治、滚动更新”，以年度审计决定保留、修改或退出。[data:geometry/phasing.geojson#PHASE-01] [depth:renewal_project_list] [depth:phasing_implementation]
 
 运营采用四张公开账：场景账记录用途与风险，数据账记录来源与删除，维护账记录停机与成本，公共账记录谁受益、谁被排除。每季度小型复盘，每年“共长周”集中展示；任何活动均为概念建议，须另行审批和确定主体。[assumption:A-IMPLEMENTATION-001]
+
+## 专业数据底座与气候适应策略
+
+本轮深化新增真实城市背景与十年气候基线，但不把背景数据伪装为法定依据。2026-08-08 的 OSM Overpass 抽取用于表达现状城市纹理和网络关系：建筑 2899、道路 3646、轨道 135、水系 15、公共交通点 384、设施点 527；© OpenStreetMap contributors，ODbL 1.0。它不替代官方红线、产权或现状测绘。[source:OSM-CONTEXT-20260808] [metric:osm_context_feature_count]
+
+NASA POWER 的 2015–2024 日尺度点数据提供概念阶段压力测试：日最高温 P95 为 35.58°C、≥35°C 日数约 22.3 日/年、年降水约 649.1 mm、日降水 P95 为 10.15 mm、太阳辐射均值 4.05 kWh/m²/日。由此将“绿化”拆成可核查动作：连续遮阴、雨水源头消纳与安全溢流、冬季向阳避风、监测后再固化。排水、风热和能源参数仍须由现场监测及专业模型确认。[source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [metric:climate_heat_days_ge_35c_per_year] [metric:climate_annual_precip_mm] [metric:climate_mean_solar_kwh_m2_day]
+
+![Blender 数据驱动走廊轴测](assets/renders/blender-corridor-overview.png)
+
+三处重点区域的空间基模由 Blender 生成，再以图像模型深化为明确标注的“概念氛围图”；人物、植栽成熟度、材料和建筑形态均为设计意向，而非现状摄影或施工图。完整的数据、来源与限制分别记录于 `sources.json`、`assumptions.json` 与 `metrics.json`；离线三维证据查看器见 `visual/index.html`。[source:BLENDER-52-MODEL] [source:OPENAI-IMAGEGEN-SCENES] [source:THREEJS-OFFLINE-EXHIBIT]
 
 ## 指标体系、面积复算与合规矩阵
 
