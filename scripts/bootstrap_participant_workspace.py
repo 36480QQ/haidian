@@ -65,6 +65,18 @@ def validate_identity(login: str | None, slug: str | None) -> None:
         )
 
 
+def resolve_github_identity(args: argparse.Namespace) -> None:
+    """Use the authenticated GitHub login so directory casing stays canonical."""
+    if args.proposal_slug and not args.github_login:
+        if not shutil.which("gh"):
+            raise BootstrapError(
+                "--github-login is required when GitHub CLI is unavailable; preserve its exact letter case"
+            )
+        args.github_login = run(["gh", "api", "user", "--jq", ".login"])
+    if args.github_login and not args.fork_owner and args.repo_url == CANONICAL_REPO:
+        args.fork_owner = args.github_login
+
+
 def directory_size(path: Path) -> int:
     return sum(item.stat().st_size for item in path.rglob("*") if item.is_file())
 
@@ -209,6 +221,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.depth < 1:
             raise BootstrapError("--depth must be positive")
+        resolve_github_identity(args)
         validate_identity(args.github_login, args.proposal_slug)
         if not shutil.which("git"):
             raise BootstrapError("git is required")

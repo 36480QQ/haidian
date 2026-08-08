@@ -11,14 +11,12 @@ curl -fsSLo /tmp/bootstrap_participant_workspace.py \
   https://raw.githubusercontent.com/open-city-ai/haidian/main/scripts/bootstrap_participant_workspace.py
 python3 /tmp/bootstrap_participant_workspace.py --help
 python3 /tmp/bootstrap_participant_workspace.py \
-  --fork-owner <github-login> \
-  --github-login <github-login> \
   --proposal-slug <proposal-slug> \
   --target haidian
 cd haidian
 ```
 
-The helper uses a blobless partial clone, sparse checkout, and limited commit depth. It clones the participant's fork as `origin`, adds `open-city-ai/haidian` as `upstream`, synchronizes the local base branch from upstream, exposes only the participation materials, and creates the participant branch and proposal path.
+The helper uses the authenticated GitHub CLI login, including its canonical letter case. It then uses a blobless partial clone, sparse checkout, and limited commit depth. It clones the participant's fork as `origin`, adds `open-city-ai/haidian` as `upstream`, synchronizes the local base branch from upstream, exposes only the participation materials, and creates the participant branch and proposal path. If GitHub CLI is unavailable, pass the exact login with both `--github-login` and `--fork-owner`.
 
 If the fork does not exist, create it first with the GitHub UI or:
 

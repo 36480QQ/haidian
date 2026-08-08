@@ -15,9 +15,11 @@ Use a blobless sparse workspace by default. Do not fully clone other submissions
 gh repo fork open-city-ai/haidian --clone=false
 curl -fsSLo /tmp/bootstrap_participant_workspace.py https://raw.githubusercontent.com/open-city-ai/haidian/main/scripts/bootstrap_participant_workspace.py
 python3 /tmp/bootstrap_participant_workspace.py --help
-python3 /tmp/bootstrap_participant_workspace.py --fork-owner <github-login> --github-login <github-login> --proposal-slug <proposal-slug> --target haidian
+python3 /tmp/bootstrap_participant_workspace.py --proposal-slug <proposal-slug> --target haidian
 cd haidian
 ```
+
+The helper reads the canonical, case-preserving login from the authenticated GitHub CLI. If `gh` is unavailable, pass the exact login explicitly with `--github-login` and `--fork-owner`; changing only its letter case can create an invalid duplicate directory on Linux and break checkout on macOS.
 
 Then prepare and validate the package:
 
