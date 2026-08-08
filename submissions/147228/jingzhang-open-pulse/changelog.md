@@ -1,5 +1,27 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-08
+
+- 针对上一轮 Review Agent 93/100 暴露的审阅可读性缺口，新增中英文“一页执行摘要”和生成/复核方法，把命题、空间、实施、公共价值、证据状态和决策边界放到首屏。
+- 新增通过仓库 schema 校验的顶层 `risk.json`，将临时几何与规则、风热空气与具身智能、排水实施、包容性、数据隐私与清权、活动接受度、维护成本、空间接口登记为八个风险维度，逐项绑定触发、缓解和停止条件。
+- 更新 agent 模型声明为 OpenAI GPT-5 family via Codex，双语版本号统一为 v2.6，并将风险登记、执行摘要和复核方法接入视觉索引与 QA 记录。
+- 新增双语 `construction-participation` 证据图，并把五道建设/开放闸门与当前参与状态放入正文、离线视觉索引和 A3 图册；图中明确 `unknown` / `not_started`，不把概念闸门写成现场通过或居民同意。
+- 将同一闸门链压缩进固定采集的 `metrics-evidence(.en).png`，使正式评审的核心指标图同时呈现“先过闸门、再谈效果”的顺序，不依赖评审者打开附加 JSON。
+- 统一正文、英文审阅稿、版权声明和视觉索引的当前版本标识为 v2.6；历史迭代标题保留，便于回读变更来源。
+
+## v2.5 - 2026-08-08
+
+- 跟进 `upstream/main` 最新合并后的评审基线，新增 `construction-readiness.json` 五道建设/开放就绪闸门、`participation-cycle.json` 回传日志、四类构件接口和五本资源账，补足从概念到专业交接的低扰动路径。
+- 明确现场基线、居民咨询和公共试点仍未完成；不新增官方几何、现场绩效、居民同意、预算或实施批准声明。
+- 重新编排双语 A3 图册与 A0 展板：以五张核心空间/指标图和运营、区域、身份证据图为主体，补足图册阅读密度与 A0 展示层级。
+- 统一四份 PDF 的物理页面规格为横向 A3（420 × 297 mm）与横向 A0（1189 × 841 mm），补充 v2.5 版本、作者、社区展示许可和 provisional geometry 页脚；所有图件仍保留“展示/QA，不构成红线、审批或实施依据”的边界。
+- 补齐英文审阅稿与中文正文的 source / standard / depth / metric / data 证据交叉索引，明确两种语言的引用集合一致，并保留正式、背景和 provisional 来源的用途边界。
+- 双语正文、视觉索引、QA 记录、manifest 与逐资产清权台账同步更新。
+
+## v2.4.1 - 2026-08-08
+
+- 跟进主线合并后的评审基线，重新渲染中英文离线报告，并刷新 manifest 与逐资产版权台账哈希。
+- 保持八类公共使用者镜头、三类产业验证窗、四类责任/荣誉节点和八项运维行动包在双语正文与视觉索引中的可回读链接。
 ## v2.4 - 2026-08-08
 
 - 将最新主线的政策/企业成长接口、具身智能凭证和 QA 记录与 v2.1 的三类验证窗、八类公共使用者镜头、四类责任/荣誉节点统一为一个可审阅版本。
@@ -11,6 +33,12 @@
 - 修复中英文离线报告的 Markdown 表格渲染，改为可滚动的语义 HTML 表格，并同步更新英文版本标识。
 - 增加 `open-pulse-relay-receipt.schema.json` 与完全合成的 S02 具身智能沙盒凭证，把人工接管、无 App 替代、清权、维护和退出写成可复核记录。
 - 增加 `qa-readiness.json`，记录本地 QA 通过项和 provisional/unknown 边界；三项新资产同步进入 manifest 与逐资产清权台账。
+
+## v2.0.1 - 2026-08-08
+
+- 补齐英文主文的全状态城市操作系统：11 项决策维度、S0–S4 与 50,000 次压力抽样、八类气候/运维压力、具身智能分级开放、风水文化边界和六项风热水健康审查门。
+- 将“人—环境—机器—资产”压力测试和断网/断电/急停/维护逾期回退写成可拍摄的五镜头、30 秒导演脚本，并与 evidence ledger 绑定。
+- 新增 `visual/assets/operations-matrix.json` 八项运维行动包，以及 `visual/assets/resource-accounts.json` 五本资源账，补齐责任、依赖、验收、停止、维护、备件和扩散/退出交接链。
 
 ## v1.7 - 2026-08-08
 
@@ -66,3 +94,4 @@ reviewable deliverables and bilingual review surface.
 - Added `visual/assets/wind-health-field-protocol.json` as a pre-registered field observation, calibration, model-alignment and stop-condition contract for the six health/wind/water metrics.
 - Added AIJ pedestrian-wind CFD and ISO 7726 catalogue method references with explicit boundaries; no local measurement, CFD result, comfort threshold or health outcome was fabricated or transferred.
 - Kept all six local metrics `unknown` until versioned geometry, field data, calibration/QC, model comparison, uncertainty and professional sign-off are available.
+- Added `visual/assets/wind-health-point-register.json` with 18 provisional, not-measured planning slots across the three key areas; no coordinates or local readings were invented.

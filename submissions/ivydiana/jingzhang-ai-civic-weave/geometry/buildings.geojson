@@ -1,0 +1,406 @@
+{
+  "type": "FeatureCollection",
+  "name": "civic_weave_building_reference_units",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-001",
+      "properties": {
+        "id": "BLDG-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "ai_r_and_d",
+        "intervention_status": "retain_candidate",
+        "name_zh": "议织单元 1",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 67599.752
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34173017376912,
+              39.94208348862405
+            ],
+            [
+              116.34160767376912,
+              39.94649348862405
+            ],
+            [
+              116.34328417376912,
+              39.94649348862405
+            ],
+            [
+              116.34328417376912,
+              39.94208348862405
+            ],
+            [
+              116.34173017376912,
+              39.94208348862405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "incubator",
+        "intervention_status": "renovate_candidate",
+        "name_zh": "议织单元 2",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 65036.377
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349073,
+              39.942045
+            ],
+            [
+              116.349073,
+              39.946455
+            ],
+            [
+              116.35062699999999,
+              39.946455
+            ],
+            [
+              116.35062699999999,
+              39.942045
+            ],
+            [
+              116.349073,
+              39.942045
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "mixed_use",
+        "intervention_status": "new_build_reference",
+        "name_zh": "议织单元 3",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 106130.502
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34113864507371,
+              39.971995276103115
+            ],
+            [
+              116.34308554829951,
+              39.971995276103115
+            ],
+            [
+              116.34308554829951,
+              39.96611527610312
+            ],
+            [
+              116.34126321496619,
+              39.96611527610312
+            ],
+            [
+              116.34111154829952,
+              39.97157527610312
+            ],
+            [
+              116.34113864507371,
+              39.971995276103115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "community_service",
+        "intervention_status": "retain_candidate",
+        "name_zh": "议织单元 4",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 86684.282
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349073,
+              39.966060000000006
+            ],
+            [
+              116.349073,
+              39.971940000000004
+            ],
+            [
+              116.35062699999999,
+              39.971940000000004
+            ],
+            [
+              116.35062699999999,
+              39.966060000000006
+            ],
+            [
+              116.349073,
+              39.966060000000006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "cultural",
+        "intervention_status": "renovate_candidate",
+        "name_zh": "议织单元 5",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 101109.995
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34163228039381,
+              39.98613769220846
+            ],
+            [
+              116.34318628039381,
+              39.98613769220846
+            ],
+            [
+              116.34318628039381,
+              39.98004769220846
+            ],
+            [
+              116.34123937716801,
+              39.98004769220846
+            ],
+            [
+              116.34163228039381,
+              39.98613769220846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "talent_apartment",
+        "intervention_status": "new_build_reference",
+        "name_zh": "议织单元 6",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 89761.723
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349073,
+              39.980205
+            ],
+            [
+              116.349073,
+              39.986295
+            ],
+            [
+              116.35062699999999,
+              39.986295
+            ],
+            [
+              116.35062699999999,
+              39.980205
+            ],
+            [
+              116.349073,
+              39.980205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "ai_r_and_d",
+        "intervention_status": "retain_candidate",
+        "name_zh": "议织单元 7",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 73720.886
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3422594810978,
+              39.99991091403162
+            ],
+            [
+              116.34344767464617,
+              39.99991091403162
+            ],
+            [
+              116.34344767464617,
+              39.99424091403162
+            ],
+            [
+              116.34189367464617,
+              39.99424091403162
+            ],
+            [
+              116.3422594810978,
+              39.99991091403162
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "incubator",
+        "intervention_status": "renovate_candidate",
+        "name_zh": "议织单元 8",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 34345.244
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34382949057235,
+              40.02332211346633
+            ],
+            [
+              116.34382949057235,
+              40.01891211346633
+            ],
+            [
+              116.34290036862112,
+              40.01891211346633
+            ],
+            [
+              116.34311549057233,
+              40.02332211346633
+            ],
+            [
+              116.34382949057235,
+              40.02332211346633
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "building_type": "mixed_use",
+        "intervention_status": "new_build_reference",
+        "name_zh": "议织单元 9",
+        "usage_note": "概念性建筑基底，不代表现状测绘、权属、拆改留或审定建设规模。",
+        "area_sqm_declared": 64964.267
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35062699999999,
+              40.023455
+            ],
+            [
+              116.35062699999999,
+              40.01904499999999
+            ],
+            [
+              116.349073,
+              40.01904499999999
+            ],
+            [
+              116.349073,
+              40.023455
+            ],
+            [
+              116.35062699999999,
+              40.023455
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

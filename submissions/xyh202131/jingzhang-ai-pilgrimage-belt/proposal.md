@@ -42,6 +42,10 @@ scenarios:
 | 指标偏几何 | 没有护照、人工兜底、非 AI 通道和安静无屏指标 | 指标扩展为空间、治理、公共价值、产业验证、文化可信、运营和韧性七类 |
 | 运营只有组织与年报 | 缺少年度节律、准入门、成果转化和失败公开 | 建立问题季—开源季—城市 Beta 季—Proof Week 四季协议 |
 
+### 创新不是口号：可证伪登记表
+
+V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、四门制、可逆公共空间和失败公开，但“看起来新”仍不能证明“创新成立”。新增 `visual/assets/innovation-register.json`，把五项核心创新逐一绑定到基线不足、新颖性主张、可证伪假设、最小证据、通过标准、失败信号和退出动作；缺少失败信号或退出动作的主张不得登记为正式创新，尚未发生的运营结果继续保持 `unknown` [data:visual/assets/innovation-register.json#INNOV-001] [data:visual/assets/innovation-register.json#INNOV-005]。这使评审者不仅能问“新在哪里”，还可以直接判断“什么证据会证明它没有成立”。
+
 依据分为四级。第一级是征集公告、智能体任务书和项目场地包 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]；第二级是仓库资料登记、标准索引和处理导航 [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]；第三级是北京市关于原点社区、百年京张实景测试和“一核多点”创新街区的公开背景，只用于判断协同方向，不代表项目已批准或任何机构承诺参与 [source:BEIJING-AI-ORIGIN-2026] [source:BEIJING-AI-DISTRICTS-2026]；第四级是六个全球案例和国家数据、AI 内容标识政策，仅用于机制启发和治理边界 [source:NATIONAL-DATA-INFRA-2025] [source:AI-CONTENT-LABEL-2025] [source:AI-PLUS-2025]。
 
 专业响应覆盖 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 与 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。当前精确红线、现状建筑、权属、控规指标、市政、交通工程与文保控制仍未取得；`geometry/site_boundary.geojson` 和三处重点区继续使用仓库临时替代范围，均不得用于审批、征地、精确面积或工程实施 [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001]。
@@ -130,6 +134,10 @@ Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺�
 | 周边居民 | 安静、可达、日常服务 | 噪声、拥挤、监控与排斥 | 日常优先、静音无屏、申诉与暂停权 |
 | 老年人与行动不便者 | 连续无障碍和人工帮助 | 被数字门槛排除 | 非 AI 通道、共同测试、人工服务不撤销 |
 | 游客与国际来访者 | 可信多语言文化内容 | 错误叙事和过度采集 | 来源标识、策展复核、无账户浏览 |
+
+### 非 AI 选项必须能完成同一基本任务
+
+现有指标能证明九处公共节点写入了非 AI 通道、十二个场景写入了人工兜底，却不能证明这些替代路径真的可用。新增 `visual/assets/non-ai-parity-contract.json`，要求任何申请进入 G2/G3 的公共服务同时比较开放时段、基本结果、费用、权利与申诉、安全与无障碍、完成时间六个维度；非 AI 使用者不得因不用账户、智能手机或算法而获得较低资格、较高费用或较弱复核权。当前没有现场共测结果，四条测试旅程全部保持 `unknown`，完成时间容许差也必须在取得基线后预注册，而不是在方案中虚构 [data:visual/assets/non-ai-parity-contract.json#PARITY-001] [data:visual/assets/non-ai-parity-contract.json#PARITY-004]。
 
 ### 四门制与场景护照
 
