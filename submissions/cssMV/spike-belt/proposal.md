@@ -3,7 +3,7 @@ title: "道钉带 · 百年京张AI创新带总体概念与重点区域城市设
 author_github: "cssMV"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以詹天佑折返展线的工程机制——以空间换能力——为原型，把 9.7 公里京张遗址公园走廊组织为「一轴一支、三处折返、两翼配置」的创新回路：上行轴为南北贯通的遗址公园主轴，验证轴为自北京AI原点社区分出的东南向支轴，三处折返台完成东西缝合；以「道钉」为贡献单元与荣誉体系，把「贡献可记忆」做成可进入的公共空间。方案提交 187 个用地地块（三处重点区域细分至 90 个街坊）、320 处建筑基底（重点区域内 308 处）、19 条道路与 19 处公共空间的可复算几何，16 项已知指标与 4 项写明缺口的待补指标，并完整回应公告 1.3–1.5 与面向智能体任务书 agent.1–agent.6。全部空间落地建议均为概念建议，边界为临时粗略边界。"
+summary: "以詹天佑折返展线的工程机制——以空间换能力——为原型，把 9.7 公里京张遗址公园走廊组织为「一轴一支、三处折返、两翼配置」的创新回路：上行轴为南北贯通的遗址公园主轴，验证轴为自北京AI原点社区分出的东南向支轴，三处折返台完成东西缝合；以「道钉」为贡献单元与荣誉体系，把「贡献可记忆」做成可进入的公共空间。方案提交 187 个用地地块（三处重点区域细分至 90 个街坊）、320 处建筑基底（重点区域内 308 处）、19 条道路与 19 处公共空间的可复算几何，18 项已知指标与 4 项写明缺口的待补指标，并完整回应公告 1.3–1.5 与面向智能体任务书 agent.1–agent.6。全部空间落地建议均为概念建议，边界为临时粗略边界。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
 ---
@@ -214,7 +214,7 @@ Logo 方向：以一枚道钉的顶视与侧视构成基本符号——钉帽为
 
 ## 蓝绿空间、公共空间与城市风貌
 
-绿地图层 [data:geometry/green_space.geojson#GREEN-001] 共 18 个要素，全部由用地表中 1401 公园绿地与 1402 防护绿地地块派生，因此 [metric:green_ratio] 16.49% 可以从两条独立路径复核 [depth:blue_green_public_space]。公共空间图层 [data:geometry/public_space.geojson#PUBLIC-010] 共 19 个要素，[metric:public_space_ratio] 为 7.23%。
+绿地图层 [data:geometry/green_space.geojson#GREEN-001] 共 58 个要素，全部由用地表中 1401 公园绿地与 1402 防护绿地地块派生，因此 [metric:green_ratio] 16.49% 可以从两条独立路径复核 [depth:blue_green_public_space]。公共空间图层 [data:geometry/public_space.geojson#PUBLIC-010] 共 19 个要素，[metric:public_space_ratio] 为 7.23%。
 
 必须明确的一条复算规则：绿地与公共空间在遗址公园主轴内存在空间叠加（主轴步行带「信道」同时位于公园绿地之内），两个比例分别对各自图层合并去重后独立计算，不可简单相加。这一条已写入 `metrics.json` 的 assumptions 字段。
 
