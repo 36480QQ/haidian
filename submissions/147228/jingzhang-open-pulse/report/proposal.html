@@ -256,6 +256,7 @@ code {
 <h3>2. 十四条场景—空间—运营矩阵</h3>
 <p>新增的 <code>visual/assets/scenario-operation-matrix.json</code> 将原有十张场景卡扩展为 14 行，并为每行补齐空间载体、触发器、最小数据、RACI、SLA、相对成本带、留存期限、非 AI 等价服务、停止条件、成功指标和阶段。场景包括慢行断点诊断、低速配送机器人、自主慢行辅助、模型安全红队、开源发布厅、京张文化导视、AI 医疗导航、企业服务柜台、数据要素会客厅、智能原生零售街、公共安全复盘、全球 AI 周路线、雨洪树池维护和夜间低照度安静链。</p>
 <p>每个场景都保留五道公共性门槛：不以数字设备作为服务前提；人工复核不可移除；无障碍主链不断；状态、投诉和责任人可被公众看到；停止与回滚已经演练。矩阵中的 <code>low/medium/high</code> 是相对规划类别，不是预算或采购估算；SLA 是待运营方确认的设计门槛，不是法定服务标准。</p>
+<p>为了让“场景卡”可以被复核而不是只被阅读，本包新增 <code>visual/assets/open-pulse-relay-receipt.schema.json</code> 与 <code>visual/assets/example-s02-embodied-receipt.json</code>。后者是一个完全合成的 S02 低速配送机器人沙盒凭证：它把临时道路引用、无 App 人工替代、最小字段、急停与人类观察员、清权/申诉/删除、维护责任和退出资产计划放在同一条记录里；<code>performance_results</code> 保持 <code>null</code>，不把凭证格式冒充为机器人性能或现场验收。任何真实试点都必须重新签发凭证并由无障碍、安全、维护和公众代表共同过门。</p>
 <figure class="proposal-figure"><img src="../assets/figures/component-operations.png" alt="一枚令牌的生命周期"><figcaption>一枚令牌的生命周期</figcaption></figure>
 <h3>3.1 节点级概念计划与公共利益审计</h3>
 <p>三处重点区不再只停留在定位口号。<code>visual/assets/key-area-node-plans.json</code> 把众智园、AI 原点和大钟寺分别拆成到达—公共状态板—空间组件—运营窗口—普通公共使用的连续序列，并为每处写出组件、专业前置闸门和 acceptance test。它仍是 <code>provisional_concept_for_professional_refinement</code>，不替代官方地块、权属、道路、消防、生态、文保或市政条件。</p>
@@ -271,6 +272,7 @@ code {
 <p>隐私和公共性不靠一句“以人为本”收尾：场景不做人脸识别或个体轨迹留存，医疗导航不诊断，数据展示留在沙盒，公共状态板给出人工等价服务和投诉入口；老人、照护者、夜班者、残障者、访客和维护人员均有不依赖 App 的路径。发生安全、清权、排水、无障碍或居民影响闸门失败时，场景转人工或撤回。</p>
 <h3>5. 双语审阅与版本复核</h3>
 <p><code>proposal.en.md</code> 是完整英文审阅译本，<code>report/proposal.en.html</code> 和 <code>visual/index.en.html</code> 是离线审阅入口；中文正文保留既有指标、来源、风险和 v1.6 量化实验。<code>changelog.md</code> 记录本次版本变更，manifest 将双语文件和新证据资产逐项登记。英文译本不增加中文正文没有的法定事实；区域伙伴、成本带、SLA 和空间边界均明确标为概念或待正式数据确认。</p>
+<p>本版的可见 QA 记录在 <code>visual/assets/qa-readiness.json</code>：报告表格已语义化、双语图件和 A3/A0 成果均为本地资源、离线页面无远程运行依赖；同时把临时边界和现场基线未知作为已知限制，不将本地预检误写成现场、无障碍或专业批准。</p>
 <p>本轮成果的目标不是用更多效果图制造“完成感”，而是让评审者可以沿着一条路径工作：任务 → 章节 → 图件/JSON → 指标/来源 → acceptance test → 停止或回滚。官方边界和控规资料发布后，仍需重算面积、连通、雨洪、交通、维护和量化指标，再进入专业深化。</p>
 <h2>v1.8 评审可见证据层：定位、功能、节点与公共性一页回读</h2>
 <p>v1.7 的机器可读资产保留不变；v1.8 把最影响内容评分的证据直接写回 <code>proposal.md</code>，让不打开附加 JSON 的评审者也能逐项复核。这一节只复述任务书和本方案的概念接口，不把设计建议升级为政府决策或法定规划条件。<span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span> <span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span></p>
