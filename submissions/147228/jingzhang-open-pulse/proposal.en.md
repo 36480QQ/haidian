@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v2.0"
+iteration: "v2.4"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -15,7 +15,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
 **Author:** 许丙南 / GitHub `147228`  
-**Review copy:** English translation of `proposal.md`, v2.0
+**Review copy:** English translation of `proposal.md`, v2.4
 **Status:** formal submission package; all new spatial interfaces remain provisional concepts until official polygons, professional safety review and community review are available.
 
 ## Design Basis and Source List
