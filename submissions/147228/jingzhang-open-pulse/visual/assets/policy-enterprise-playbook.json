@@ -118,6 +118,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-013",
+      "title": "企业供应商安全基线卡",
+      "policy_instrument": "supplier_security_and_access_baseline",
+      "enterprise_stage": "supplier_qualification",
+      "problem": "A public pilot exposes interfaces, accounts and operational context; a promising model cannot substitute for access control, logging and patch ownership.",
+      "jingzhang_interface": "Before S04 or S09 access, require least privilege, credential rotation, audit logs, dependency inventory, vulnerability contact and an offline shutdown procedure.",
+      "operator": "information-security lead + test-room operator + supplier security contact",
+      "required_evidence": ["access matrix", "audit-log sample", "dependency list", "shutdown drill", "patch owner"],
+      "metric": "suppliers_with_verified_access_log_and_shutdown_drill",
+      "stop_gate": "Unknown privileged access or no shutdown owner blocks the token even if model metrics pass.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-UK-ATRS"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
