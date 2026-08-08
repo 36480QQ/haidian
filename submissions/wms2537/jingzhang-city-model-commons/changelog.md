@@ -9,3 +9,4 @@
 - Normalized provisional-boundary provenance to the canonical registry source ID and expanded external-case metadata.
 - Regenerated the readable report, visual index and drawing PDFs after the content and evidence updates.
 - Restored the required 12-page A3 booklet and added implementation-depth, governance, and package-QA review sheets.
+- Reconciled the repository-validator receipt to the current upstream main commit and corrected the taskbook snapshot hash for reproducible provenance.
