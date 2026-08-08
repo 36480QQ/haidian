@@ -1527,18 +1527,11 @@ function addLights(){
 /* ---------- 几何工具 ---------- */
 function shapeFromRings(rings){
   const s = new THREE.Shape();
-  const outer = rings[0];
+  // rings 为点数组格式：[[x,y],[x,y],...]
+  const outer = rings;
   s.moveTo(outer[0][0], outer[0][1]);
   for(let i=1;i<outer.length;i++) s.lineTo(outer[i][0], outer[i][1]);
   s.closePath();
-  for(let r=1;r<rings.length;r++){
-    const h = new THREE.Path();
-    const rr = rings[r];
-    h.moveTo(rr[0][0], rr[0][1]);
-    for(let i=1;i<rr.length;i++) h.lineTo(rr[i][0], rr[i][1]);
-    h.closePath();
-    s.holes.push(h);
-  }
   return s;
 }
 function extrude(rings, depth, opts){
@@ -1554,7 +1547,7 @@ function flatShape(rings, z, opts){
   return mesh;
 }
 function roofOutline(rings, color, z, opacity){
-  const pts = rings[0].map(p=>new THREE.Vector3(p[0], p[1], z));
+  const pts = rings.map(p=>new THREE.Vector3(p[0], p[1], z));
   const g = new THREE.BufferGeometry().setFromPoints(pts);
   const l = new THREE.Line(g, new THREE.LineBasicMaterial({color, transparent:true, opacity:opacity||.5}));
   return l;
@@ -1566,7 +1559,7 @@ function edgesOf(mesh, color, yOff){
   return line;
 }
 function lineLoop(rings, color, y, dashed){
-  const pts = rings[0].map(p=>new THREE.Vector3(p[0], p[1], y));
+  const pts = rings.map(p=>new THREE.Vector3(p[0], p[1], y));
   const g = new THREE.BufferGeometry().setFromPoints(pts);
   const mat = dashed ? new THREE.LineDashedMaterial({color, dashSize:26, gapSize:16})
                     : new THREE.LineBasicMaterial({color});
@@ -1593,8 +1586,8 @@ function cssLabel(text, x, y, z, cls){
 /* ---------- 场景元素 ---------- */
 function buildGrid(){
   const step = 1000;
-  const minx = Math.min(...D.site.rings[0].map(p=>p[0])), maxx = Math.max(...D.site.rings[0].map(p=>p[0]));
-  const miny = Math.min(...D.site.rings[0].map(p=>p[1])), maxy = Math.max(...D.site.rings[0].map(p=>p[1]));
+  const minx = Math.min(...D.site.rings.map(p=>p[0])), maxx = Math.max(...D.site.rings.map(p=>p[0]));
+  const miny = Math.min(...D.site.rings.map(p=>p[1])), maxy = Math.max(...D.site.rings.map(p=>p[1]));
   const pts = [];
   for(let x=Math.floor(minx/step)*step; x<=maxx; x+=step){
     pts.push(x, miny, .02, x, maxy, .02);
@@ -1664,7 +1657,7 @@ function buildKeyAreas(){
     groups.keyAreas.add(m);
     const l = lineLoop(ka.rings, 0xFFD166, 2.0, true);
     groups.keyAreas.add(l);
-    const xs = ka.rings[0].map(p=>p[0]), ys = ka.rings[0].map(p=>p[1]);
+    const xs = ka.rings.map(p=>p[0]), ys = ka.rings.map(p=>p[1]);
     const lx = xs.reduce((a,b)=>a+b,0)/xs.length, ly = ys.reduce((a,b)=>a+b,0)/ys.length;
     groups.keyAreas.add(cssLabel(ka.short+'  '+ka.area+'ha', lx, ly, BASE + 60, 'ka'));
     pickables.push({mesh:m, kind:'ka', data:ka});
