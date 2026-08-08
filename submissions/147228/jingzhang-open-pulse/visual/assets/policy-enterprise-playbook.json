@@ -74,6 +74,20 @@
       "stop_gate": "No measurable public outcome or no manual comparator means no scale procurement.",
       "source_ids": ["CASE-UK-ATRS", "CASE-SEOUL-AI-FOUNDATION"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-006",
+      "title": "公开问题清单与初创挑战赛卡",
+      "policy_instrument": "public_challenge_brief",
+      "enterprise_stage": "problem_discovery",
+      "problem": "Startups need a real service problem and a bounded data boundary, while public teams need to avoid buying a solution before defining the problem.",
+      "jingzhang_interface": "Publish quarterly S08/S09 challenge briefs with user, service failure, non-AI baseline, allowed data, review owner, test window and no-go claims.",
+      "operator": "enterprise service lead + university/community problem owner",
+      "required_evidence": ["problem brief", "baseline interview log", "data boundary", "supplier-neutral acceptance test"],
+      "metric": "challenge_briefs_with_public_problem_and_non_ai_baseline",
+      "stop_gate": "No named problem owner or no non-AI baseline means the challenge is research only, not a procurement lead.",
+      "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
