@@ -12,11 +12,13 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(submitted_provisional_site_boundary); recompute_on_official_geometry",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "Current value is an intake-only computation from explicitly provisional geometry; it is not an official area, regulatory indicator, approval basis, or final design quantity. Replace all derived layers and recompute after organizer-supplied official polygons are available."
+      ],
+      "calculation_context": "provisional_intake_only",
+      "display_precision": "approximate; rounded for presentation"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -25,9 +27,13 @@
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "sum(concept_building_footprints_in_provisional_intake_geometry); recompute_on_official_geometry",
+      "confidence": "low",
+      "assumptions": [
+        "Current value is an intake-only computation from explicitly provisional geometry; it is not an official area, regulatory indicator, approval basis, or final design quantity. Replace all derived layers and recompute after organizer-supplied official polygons are available."
+      ],
+      "calculation_context": "provisional_intake_only",
+      "display_precision": "approximate; rounded for presentation"
     },
     "green_ratio": {
       "status": "known",
@@ -37,9 +43,13 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "green_space_area_sqm / provisional_site_area_sqm; recompute_on_official_geometry",
+      "confidence": "low",
+      "assumptions": [
+        "Current value is an intake-only computation from explicitly provisional geometry; it is not an official area, regulatory indicator, approval basis, or final design quantity. Replace all derived layers and recompute after organizer-supplied official polygons are available."
+      ],
+      "calculation_context": "provisional_intake_only",
+      "display_precision": "approximate; rounded for presentation"
     },
     "public_space_ratio": {
       "status": "known",
@@ -49,9 +59,13 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "public_space_area_sqm / provisional_site_area_sqm; recompute_on_official_geometry",
+      "confidence": "low",
+      "assumptions": [
+        "Current value is an intake-only computation from explicitly provisional geometry; it is not an official area, regulatory indicator, approval basis, or final design quantity. Replace all derived layers and recompute after organizer-supplied official polygons are available."
+      ],
+      "calculation_context": "provisional_intake_only",
+      "display_precision": "approximate; rounded for presentation"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +87,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "The count represents three organizer-named provisional key-area placeholders, not official polygons."
+      ]
     }
   }
 }
