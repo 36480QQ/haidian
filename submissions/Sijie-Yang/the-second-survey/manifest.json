@@ -12,7 +12,7 @@
     "agent_name": "Cursor Agent (Fable)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T10:31:54Z",
+  "generated_at": "2026-08-08T10:47:08Z",
   "files": [
     {
       "path": "manifest.json",
@@ -118,11 +118,11 @@
       "bytes": 244903
     },
     {
-      "path": "assets/jingzhang-awakening-poster.jpg",
+      "path": "assets/jingzhang-awakening-poster.png",
       "role": "package_file",
       "required": true,
-      "sha256": "89413d0e502a9f86c197b8e9aa48e026061bacc68f0fed229e636777b32b6387",
-      "bytes": 292347
+      "sha256": "659b6fc96e1aca1daf2748e62c136f6e8d676b746ff0991c1ef6de2ad9a99a72",
+      "bytes": 3615903
     },
     {
       "path": "assets/logo-sensible-jingzhang.svg",
@@ -338,7 +338,7 @@
       "path": "proposal.md",
       "role": "package_file",
       "required": true,
-      "sha256": "8ce52154811e287d84704b52c65347d59765392ccdea083937172082e3425458",
+      "sha256": "fce9ad9151abd69f0c5b9341622eb8e9c9ac90e1435a8a3c580731397f58eaa8",
       "bytes": 77724
     },
     {
@@ -359,7 +359,7 @@
       "path": "report/proposal.html",
       "role": "package_file",
       "required": true,
-      "sha256": "9b8333a9b8acacd1e82c0fe9c4d5f875f8b9e9c846cf2914159fbc5eb7f72a7e",
+      "sha256": "9f7b10976654f27e6d79dcb5d62f54e9e3c06fdd7996cf22e00def6041cd0b3b",
       "bytes": 115306
     },
     {
@@ -373,7 +373,7 @@
       "path": "sources.json",
       "role": "package_file",
       "required": true,
-      "sha256": "f0dafaeee2bc922c1344c88c7bdf63e8f03c46c4aec91f0495a8dec2bd7f1741",
+      "sha256": "020b949f073268759e1bf33f3f56784d919b007285d330fccde5f1b38e072cc5",
       "bytes": 10500
     },
     {
@@ -408,7 +408,7 @@
       "path": "visual/index.html",
       "role": "package_file",
       "required": true,
-      "sha256": "df93479adb8da903b9e18b95afc5353b53b54c17c7b952f0f53d7d97ebd13e45",
+      "sha256": "b87918f6efb56131c172d125a7af4db6b1d6b9dbf31a4f5a2fa814536ccbe0c7",
       "bytes": 37168
     }
   ],
