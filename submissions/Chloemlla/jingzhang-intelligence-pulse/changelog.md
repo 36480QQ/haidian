@@ -1,6 +1,12 @@
-# Changelog
+# 方案迭代记录
 
-## v0.1 — 2026-08-08（正式提交）
+## v0.2 - 2026-08-08
+
+- 修复 deterministic CI：manifest.json 全部登记文件 sha256 已按 LF 检出行重算，与 CI 检出字节一致。
+- 修复 changelog.md 结构：补齐 `# 方案迭代记录` 标题与版本标题格式。
+- 补充说明：site_boundary 与重点区域为临时粗略范围（provisional），官方 polygon 到位后需重算全部面积类指标。
+
+## v0.1 - 2026-08-08
 
 - 建立"京张智脉"总体概念与"一带三核两翼"空间结构，完成命名与 Logo 概念。
 - 使用临时粗略边界（provisional）生成 formal 提交包：site_boundary、三处重点区域，均标注 `official_boundary=false`，替换官方 polygon 后需重算面积类指标。
