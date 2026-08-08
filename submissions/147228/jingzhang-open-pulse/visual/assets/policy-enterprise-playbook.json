@@ -104,6 +104,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-012",
+      "title": "人工等价服务与响应时限卡",
+      "policy_instrument": "human_fallback_service_level",
+      "enterprise_stage": "service_reliability_before_scale",
+      "problem": "An AI feature is not a public service if people cannot reach a person when it is unavailable, wrong, inaccessible or inappropriate.",
+      "jingzhang_interface": "Every S07, S08 or S09 card declares the physical/phone route, response time, correction owner, outage notice and data retention of the non-AI equivalent.",
+      "operator": "service owner + community counter operator + supplier support lead",
+      "required_evidence": ["fallback route test", "response-time log", "outage notice", "correction record"],
+      "metric": "ai_service_windows_with_tested_manual_equivalent",
+      "stop_gate": "A missing or slower-than-declared manual route pauses the AI feature without penalising the user.",
+      "source_ids": ["CASE-HELSINKI-AI-REGISTER", "CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
