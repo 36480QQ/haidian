@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把铁路交接班转化为AI城市治理协议：一条连续交接线串联研发、验证、开源与公共服务，十二个可逆场景都设置人工接管、无AI等价服务与退出条件。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.3"
+iteration: "v1.6.4"
 ---
 
 # 京张交接线 / JING-ZHANG HANDOVER LINE
@@ -30,7 +30,7 @@ iteration: "v1.6.3"
 | 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | [metric:site_area_sqm]、[source:HAIDIAN-2025-STATISTICAL-BULLETIN] |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不是法定规划或政府承诺 | 风险章节、退出条件、assumptions.json |
 
-**English brief.** Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
+English brief — Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
 
 ## 设计依据与资料清单
 
@@ -311,13 +311,11 @@ iteration: "v1.6.3"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-这一组界面要求同时成立：人工窗口、可触及的物理停用入口、被限制在专用道内的机器服务、以及一条不被打断的无障碍路径。下图把它们画在同一个断面里。
-
-![交接线公共界面概念表现：值班人员当面交接、步道旁的物理停用柱、限定在专用道内的配送机器人、连续无障碍路径与人工窗口并存](assets/figures/handover-scene.jpg)
-
-上图是**AI 生成的概念表现图** [source:IMAGEGEN-CONCEPT-SCENE]，不是现状照片、测绘成果或批准方案，画面中的人物为虚构形象，不指认任何真实地点、单位或品牌；它只用来说明一件事——当人工接管、物理停用入口、机器人专用道与无障碍路径必须同时存在时，公共界面大致是什么样子。生成模型、完整提示词、用途与限制记录在 report/copyright_statement.md 与 sources.json。所有可复算的空间结论仍以九类几何与 metrics.json 为准，不以任何图面为准。
-
 蓝绿系统以2,264,695.802平方米概念绿地 [metric:green_space_area_sqm] 形成0.198434的结构性绿地比例 [metric:green_ratio]，公共交接面1,039,257.211平方米 [metric:public_space_area_sqm]，占比0.091060 [metric:public_space_ratio]。两者分别见 [data:geometry/green_space.geojson#GREEN-01] 与 [data:geometry/public_space.geojson#PUBLIC-01]。这些是基于临时范围的设计面积，并非现状绿地率或审定控规指标；它们用于验证连续树荫、雨洪、休息、慢行和公共测试是否有足够空间承载。空间策略响应 [depth:blue_green_public_space]。
+
+公共界面的成立与否，不取决于任何一件设施做得多好，而取决于要素的次序。人工窗口、连续无障碍步道与物理停用入口三者必须连续可达，机器专用道不得插入其间；保留铁轨齐平嵌入铺装，是线索而不是障碍。下面的断面只固定这一层——次序与相邻规则。宽度、标高与工程做法取决于道路红线和现状测绘，公开资料包尚未提供，因此本图不标注任何尺寸，道路面积与道路率在 metrics.json 中继续保持 [metric:road_area_sqm]、[metric:road_ratio] 未赋值。
+
+![交接断面：首层交接台—无障碍步道—零号接管亭—保留铁轨—机器专用道—绿化休憩带的次序与相邻规则；不表达尺寸](assets/figures/handover-scene.jpg)
 
 公共空间不靠一次性定制，而靠一套可复制、可撤除、可维护的组件库。十个组件共用煤黑—信号红—电气青—米白四色语汇与同一套标识规则，任何一处都能在不改动周边的前提下增设或撤除；组件本身不含摄像与人脸能力，智能层一律作为可拔插附件。
 
