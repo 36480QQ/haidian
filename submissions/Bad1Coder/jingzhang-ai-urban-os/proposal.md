@@ -145,7 +145,7 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 为让生命周期命题可被实施团队接手，新增记录 `long_life_public_frame_area_sqm=4,380,279.928`、`prototype_node_count=12`、`ai_service_zone_count=12`、`ai_service_zone_area_sqm=59,736.002` 和 `repair_reuse_node_count=2`；其中公共框架是绿地与前场并集，感知包络是概念退线/视场，不是隐私法定边界。[metric:long_life_public_frame_area_sqm] [metric:ai_service_zone_count] [data:geometry/constraints.geojson#ZONE-001]
 
-`registered_exposure_coverage_ratio` 记录感知地籍字段的登记完整度。[metric:registered_exposure_coverage_ratio] `service_room_adaptability_count`、`replaceable_component_schedule_coverage`、`non_digital_service_retention_ratio`、`component_reuse_rate`、`feedback_closure_time_hours`、`low_exposure_route_continuity_ratio`、`off_state_verified_ratio` 和 `public_mode_hours_ratio` 在正式运营前保持未知，并在 `metrics.json` 写明原因、公式和待采集方法。
+`registered_exposure_coverage_ratio` 记录感知地籍字段的登记完整度。[metric:registered_exposure_coverage_ratio] `service_room_adaptability_count`、`replaceable_component_schedule_coverage`、`non_digital_service_retention_ratio`、`component_reuse_rate`、`feedback_closure_time_hours`、`off_state_verified_ratio` 和 `public_mode_hours_ratio` 在正式运营前保持未知，并在 `metrics.json` 写明原因、公式和待采集方法。`low_exposure_route_continuity_ratio=1.0` 仅是当前概念几何读数，现场可达性、隐私和运营连续性仍待实测。
 
 公共利益不以“覆盖率”代替实测：老年、残障、儿童照护、夜班、非数字用户的服务完成时间，一线维护人员负担，活动对普通公共服务的挤占，以及投诉补救时限均列为待正式数据补齐的基线，试点时按分组匿名记录并由无障碍与公共服务专业人员复核。[metric:equity_service_completion_time_minutes]
 
