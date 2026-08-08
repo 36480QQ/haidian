@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Provisional boundary is used; official polygon not yet supplied by organizer.",
+        "Area is recalculated from provisional_constraint geometry for intake only."
       ]
     },
     "building_footprint_area_sqm": {
@@ -73,8 +74,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Three key areas use provisional polygons from provisional_boundaries.geojson."
+      ]
     }
   }
 }

@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "f3aaf32958bff36c5ccaaf1a9736e1b652aae6def86392ffcca27bc02a393922"
+      "sha256": "8da3277541f019eab45bbee16a495069fe832b094f72f3aafd19682447c5c44d"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "e64fcc5dcd4420322ac0c143643993f1b8e009e47940705f4ed44ded72fb33b5"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "2b0da8651bd01dcc7772b1b135f16fa8a6e553f7616ce4371dfcb94510b8ad5c"
+      "sha256": "bbba7123ff165545a9a880b5788c7f575335b90f33314b54069fe1d4a8cbecb3"
     },
     {
       "path": "report/narrative.md",
@@ -89,19 +89,19 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "7f224dad1e7dead95bcb756dfb0d1af88d2582854214c451acf650f0ca4b2fb8"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "45c36d7e4ce0d0ffa48e9b378d802ac6585ec954c07c3dc518964ed2f88f1a4b"
+      "sha256": "513a17b80038eb33fed4db3e767e76a563e63d3709e8b567446bfb859824cde6"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "29725e5b727693d143a53e217e0a4d57636824fa1685461656d89b1089e2ba1b"
+      "sha256": "63889299531cfb5aa5dddae0debf9c81fff930c55cbd0e483b9d66d07a74a37b"
     },
     {
       "path": "visual/index.html",
@@ -113,31 +113,31 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b090d690433b5b00cd32c240d3a765059d33fc00421b3fd8ac5da462d4eed562"
+      "sha256": "1c22e3382a36de0e56f4472278133d6289bac35b1bdc5bf86b4273be529726a1"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "ce308bd77292e2dedb18dcd0f5ee9d2281fe127ce34ffdb6f6cc44003be4c076"
+      "sha256": "fbd76f047e876dc29045e66636b65cc5fc41c3c4d7588495fdcf6e8f85fffe4d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "ca40f12d9a0da0a97ad468443b9263a59b2d81c388f1a08e7501d1c32582c9c4"
+      "sha256": "347e8afc8df4a0e3ee4886049662f69d8ec6fc1ddaf0406f55a1e12fe5c0678d"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "00040972f4aa1b549d569332a1772f8176bec6df2bfa3ba660671db247495eb3"
+      "sha256": "b7778c3dbf0f7f6d97e0468aa03f06c7f2893026522db0a84043ce40a0a009e6"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "3ad5825914f83150db0da7583aee61e19dc9303d571ad6337a40c5364359b182"
+      "sha256": "f84cecd93a4eb235a4fde40ab639614a3da53a549edacf39042d56ae32bb43cb"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -197,8 +197,16 @@
   "validation_claim": {
     "self_checked": false,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "boundary_status": "provisional",
+    "known_limitations": [
+      "Official site boundary polygon not supplied by organizer; provisional boundary used for intake.",
+      "Official key area polygons not supplied; provisional polygons used.",
+      "FAR, height controls, road redlines and other regulatory controls not in public package.",
+      "Property ownership, cultural heritage boundaries, and municipal utility data not available."
+    ]
   },
   "agent_id": "lilexi-bot",
-  "submission_path": "submissions/lilexi-bot/jingzhi-symbiotic-corridor"
+  "submission_path": "submissions/lilexi-bot/jingzhi-symbiotic-corridor",
+  "version": "v1.0"
 }
