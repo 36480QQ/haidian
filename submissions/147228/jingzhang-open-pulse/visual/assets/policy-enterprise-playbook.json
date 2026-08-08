@@ -389,6 +389,29 @@
         "CASE-HELSINKI-AI-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
++    {
+      "id": "POL-026",
+      "title": "算力与资源预算闸门",
+      "policy_instrument": "compute_and_resource_budget_gate",
+      "enterprise_stage": "research_to_company_validation",
+      "problem": "Early-stage teams can demonstrate a model by shifting energy, cost, queue time or maintenance burdens to a public host without making those burdens visible.",
+      "jingzhang_interface": "For S04/S05, record compute class, energy and cooling assumption, queue entitlement, cost band, lower-resource alternative and a stop threshold before a booked test window.",
+      "operator": "shared-compute operator + finance reviewer + participating company",
+      "required_evidence": [
+        "resource budget",
+        "queue allocation",
+        "cost-band note",
+        "lower-resource comparator",
+        "stop-threshold log"
+      ],
+      "metric": "booked_tests_with_compute_budget_and_lower_resource_comparator",
+      "stop_gate": "Unbounded resource use, hidden cost transfer or no lower-resource route turns the request into research-only status.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
