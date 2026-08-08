@@ -326,7 +326,20 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 机器可读的边界、输入、输出、责任和回流路径见 `visual/assets/regional-ecosystem.json`；图中“originate—engineer—book—test—publish evidence—scale or retire”是运营建议，不是已签署的组织架构。
 
-为避免把“国际案例”写成未经清权的城市故事，新增 `visual/assets/case-mechanism-matrix.json` 采用“机制模式比较”而不是虚构案例背书。六种模式分别是站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法；每行都写明可借鉴机制、不可照搬事项、京张测试接口和正式引用前必须补齐的证据。后续专业团队可在完成来源核验后替换为有链接、有许可、有绩效边界的真实案例。
+为补齐 agent.2 要求的 5—8 个 AI 生态案例，新增 `visual/assets/case-mechanism-matrix.json`，把六个官方公开案例与六种可迁移机制分开记录。案例只回答“它公开展示了什么机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：
+
+| 案例 | 已核验机制 | 京张转译接口 | 不照搬边界 |
+| --- | --- | --- | --- |
+| Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 为每个公共空间试点设置目的、数据边界、责任人、状态板和投诉路由 | 登记表不能替代无障碍、安全、采购和居民同意审查 [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | 公开说明城市算法用于什么服务，并形成 Civic AI Lab 语境 | 测试前发布 plain-language record，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规，也不越过保密审查 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 众智园设置预约、人工主导的 assurance window，附 model card、测试记录和回滚 | 工具包不是认证、采购批准或无同意测试许可 [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | 可追溯的线上参与与线下参与、开放协作软件 | 贡献墙与在线台账同时提供纸面、窗口和多语种参与，公开“哪些意见改变了什么” | 数字参与不能替代无设备、无账号或需要线下支持的人 [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | 以标准化公开记录说明算法为何使用、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 的 preflight 记录 | 这是英国公共部门标准，不是北京地方强制要求 [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | 以城市级机构串联研究、公共服务、人才和全球协作 | 以责任明确的小型接口连接高校策源、公共验证、人才服务和国际交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
+
+这六个案例都标为 `official_public_case` 或 `official_public_secondary_case`，来源、访问日期和用途边界在 `sources.json` 登记；它们是机制比较，不是本地现状证据、工程可行性证明或竞赛排名。六种模式（站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法）仍保留在同一 JSON 的 `rows` 中，供专业团队把案例机制映射到三处重点区的节点计划。
+
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。
 
 ### 2. 十四条场景—空间—运营矩阵
 
@@ -447,13 +460,5 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 ## 参考资料
 
 - brief/public-brief.md
-- brief/site-package/design_brief.json
-- brief/site-package/allowed_design_space.json
-- brief/site-package/enums/
-- brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+
+完整的机器可读来源、标准、资料用途、处理资料和指标引用分别登记在 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`data/processed/agent_fact_pack.md` 和 `metrics.json`。[source:OFFICIAL-ANNOUNCEMENT] 与 [source:SOURCE-REGISTRY] 是这条证据链的入口。其中，`sources.json` 新增的六个国际案例均保留官方公开 URL、访问日期、用途和“不构成合作或本地绩效证明”的边界；它们是提交包内的详细来源账本，不冒充仓库 `sources/public-sources.json` 的公共索引条目。
