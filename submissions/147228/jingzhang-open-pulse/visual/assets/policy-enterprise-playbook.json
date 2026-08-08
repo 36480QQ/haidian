@@ -90,6 +90,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-018",
+      "title": "企业服务一站式人工柜台卡",
+      "policy_instrument": "human_led_enterprise_service_desk",
+      "enterprise_stage": "company_formation_and_operation",
+      "problem": "Small firms lose time when registration, IP, data, test access, safety review and public feedback are scattered across unconnected channels.",
+      "jingzhang_interface": "Use the AI Origin Community and Dazhongsi service nodes as a human-led directory and handoff point, with published process steps and no automated legal decision.",
+      "operator": "enterprise service lead + IP/data/safety referral roster",
+      "required_evidence": ["process map", "human referral roster", "source-linked checklist", "response-time record"],
+      "metric": "enterprise_requests_with_human_handoff_and_source_link",
+      "stop_gate": "If a question cannot be routed to a named human owner, the AI assistant must not invent an answer.",
+      "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-AMSTERDAM-ALGORITHM-REGISTER"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-010",
       "title": "共享算力与低碳服务准入",
       "policy_instrument": "shared_compute_and_energy_gate",
