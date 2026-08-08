@@ -325,7 +325,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 | UK ATRS | 标准化公开记录说明算法为何、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 记录 | 不是北京地方强制要求，仍需本地法律和采购审查 [source:CASE-UK-ATRS] |
 | Seoul AI Foundation | 串联研究、公共服务、人才和全球协作的机构能力 | 以责任明确的接口连接高校策源、企业服务、公共验证和交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
 
-政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成可执行的成长阶段卡，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规和低速具身智能三条产业测试验证窗。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成可执行的成长阶段卡，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规和低速具身智能三条产业测试验证窗；`visual/assets/landmark-honor-crosswalk.json` 把责任台、贡献档案和安全治理节点绑定到政策与企业接口。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
 
 ### 2. 十四条场景—空间—运营矩阵
 
