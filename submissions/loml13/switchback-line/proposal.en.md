@@ -90,7 +90,16 @@ All mechanisms are concept suggestions for professional teams to deepen; none is
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The overall design area is the ~11.4 km² corridor of urban districts and industry zones within 1–2 km of the Jingzhang heritage park [source:OFFICIAL-ANNOUNCEMENT]. At regulatory-plan urban-design depth the proposal sets a structure of "one spine, three folds, six stitching corridors, two wings" [depth:overall_spatial_structure]:
+The overall design area is the ~11.4 km² corridor of urban districts and industry zones within 1–2 km of the Jingzhang heritage park [source:OFFICIAL-ANNOUNCEMENT]. Design judgments start from an existing-conditions diagnosis (schematic reading from public knowledge, not survey data) [depth:existing_conditions_diagnosis]:
+
+- **D1 east–west severance**: 5–8 minute walking detours across the rail corridor — the direct basis for the stitching corridors;
+- **D2 slow-mobility gaps**: no continuous north–south slow link and no direct station–park frontage — answered by the spine greenway and three connection spurs;
+- **D3 public-space discontinuity**: the heritage park is fragmented without themed nodes or evening use — answered by the eight themed public nodes;
+- **D4 unlinked industry anchors**: no conversion or release node between the north and south anchors — answered by AI Origin's "release station" role.
+
+![Existing-conditions diagnosis: severance, gaps, discontinuity, missing links](assets/figures/existing-diagnosis.png)
+
+At regulatory-plan urban-design depth the proposal sets a structure of "one spine, three folds, six stitching corridors, two wings" [depth:overall_spatial_structure]:
 
 - **One spine**: the Jingzhang heritage-park vitality belt along the historic alignment [data:geometry/constraints.geojson#CX-001] (land-use code 1401, area [metric:land_use_area_1401_sqm]), the shared carrier of culture and experience belts [data:geometry/green_space.geojson#GS-001].
 - **Three folds**: three switchback nodes at the key areas — Dazhongsi (departure), AI Origin (release), Zhongzhiyuan (acceleration) — detailed in the next chapter.
@@ -129,7 +138,7 @@ The ecosystem is organized as factors–scenarios–operations: factors (land, s
 | P2 developer / engineer | community, toolchain, affordable collaboration space | AI Origin developer street, SC-03 |
 | P3 local resident (incl. long-time) | undisturbed life, better services, participation | west housing renewal cells, SC-08 |
 | P4 university student | internships, courses, showcases, affordable culture | education innovation streets, SC-01/02 |
-| P5 city visitor / AI pilgrim | legible, shareable experience routes | landmarks and wayfinding, SC-12 |
+| P5 city visitor / AI innovation visitor | legible, shareable experience routes | landmarks and wayfinding, SC-12 |
 | P6 merchant / operator | footfall, rule certainty, data compliance | Dazhongsi commercial cells, SC-07 |
 
 ### AI scenario cards (12; SC-04/05/06 are industrial test-and-validation scenarios)
@@ -149,7 +158,7 @@ Each card lists its spatial anchor, users, data boundary, and human-review mecha
 | SC-09 | Xiaoyuehe ecological sensing | waterfront greenway | P3 | environmental data only | manual incident handling |
 | SC-10 | Station-integrated MaaS | three connection spurs | all | de-identified trips | human-approved dispatch |
 | SC-11 | City-governance "switchback ticket" | whole belt | P3/P6 | per government data rules | AI dispatch with human fallback |
-| SC-12 | International developer pilgrimage guide | three landmarks [metric:ai_pilgrimage_landmark_count] | P5/P2 | multilingual public content | compliance review |
+| SC-12 | international developer innovation guide | three landmarks [metric:ai_innovation_landmark_count] | P5/P2 | multilingual public content | compliance review |
 
 Privacy and review principle: all scenarios follow the charter's "human final judgment" clause [source:AGENT-TASKBOOK]; no non-public data, no mandatory vendor, no immature technology presented as deployable.
 
@@ -168,7 +177,7 @@ Making the scenarios perceptible:
 - **SC-09 ecological sensing**: a morning runner on the waterfront reads today's water quality and bird report from bank sensors; anomalies go to maintenance staff.
 - **SC-10 MaaS**: a visitor leaving Dazhongsi station gets a route — "6 minutes via the stitching corridor to the launch event" — with live crowding hints.
 - **SC-11 switchback ticket**: a merchant photographs a blocked storefront, AI dispatches the ticket to the grid, and the resolution returns with on-site photos, appealable throughout.
-- **SC-12 pilgrimage guide**: an international developer walks the three landmarks with the multilingual guide, scans at the switchback landmark, and submits an open-source project link for Honor Wall review.
+- **SC-12 innovation guide**: an international developer walks the three landmarks with the multilingual guide, scans at the switchback landmark, and submits an open-source project link for Honor Wall review.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -188,13 +197,15 @@ Municipal and new infrastructure [depth:municipal_new_infrastructure]: edge-comp
 
 Blue-green system: the heritage-park spine and the Xiaoyuehe waterfront greenway form the "one spine, one greenway" skeleton; green area [metric:green_space_area_sqm], green ratio [metric:green_ratio] (provisional recalculation) [depth:blue_green_public_space]. Public-space system: eight themed nodes (South Gateway Plaza, Switchback Theatre, Maker Crossing, AI Origin Plaza, Memory Courtyard, Switchback Viewpoint, Test-Port Plaza, Cloud-Top Plaza) plus two heritage-park promenades; public-space area [metric:public_space_area_sqm], ratio [metric:public_space_ratio] [data:geometry/public_space.geojson#PS-001].
 
-Urban character: a two-rail vocabulary (heritage rail · data rail) unifies paving, wayfinding, and street furniture; the herringbone motif recurs across parapets, paving, and signage, forming a recognizable urban temperament [standard:MOHURD-URBAN-DESIGN-MEASURES].
+Urban character: a two-rail vocabulary (heritage rail · data rail) unifies paving, wayfinding, and street furniture; the herringbone motif recurs across parapets, paving, and signage, forming a recognizable urban temperament [standard:MOHURD-URBAN-DESIGN-MEASURES]. The intended spatial scale is expressed in a typical section: within the 120 m spine, retained rails on display, herringbone paving, and slow-mobility priority; 24 m promenades on both sides; active ground floors of the research and commercial frontages opening to the park; massing low at the park and higher at the wings (concept proportions, not engineering design).
 
-### AI pilgrimage landmarks and honor display (agent.4)
+![Typical section: heritage spine × stitching corridor (AI Origin segment)](assets/figures/section-spine.png)
 
-Three AI pilgrimage landmarks (concept suggestions at public-art scale, not engineering conclusions) [metric:ai_pilgrimage_landmark_count]:
+### AI innovation landmarks and honor display (agent.4)
 
-1. **The Switchback Station spirit landmark** (AI Origin Plaza): two rail strokes meeting at a glowing dot; the ground carries twin timelines of Jingzhang railway history and AI history — the pilgrim stands on the crossing, between two ascents.
+Three AI innovation landmarks (answering the taskbook's pilgrimage-landmark requirement; this proposal names them "AI innovation landmarks" to stress their public character — accessible, participatory, auditable public innovation destinations rather than objects of tech worship; concept suggestions at public-art scale, not engineering conclusions) [metric:ai_innovation_landmark_count]:
+
+1. **The Switchback Station spirit landmark** (AI Origin Plaza): two rail strokes meeting at a glowing dot; the ground carries twin timelines of Jingzhang railway history and AI history — the visitor stands on the crossing, between two ascents.
 2. **Jingzhang 1909 Time Gate** (Dazhongsi south gateway): an arrival-sequence portal abstracted from the historic station arch; at night a data-light band replays the "train arriving" image.
 3. **Zhongzhiyuan Cloud-Rail Tower** (Cloud-Top Plaza): a concept tower combining lookout and compute display, visualizing audited public test data in real time.
 
@@ -240,7 +251,7 @@ Metrics sit in three tiers: announcement-constrained (areas), design-intent (con
 | Slow corridors | [metric:slow_greenway_length_m] m | greenway + cycling + walking |
 | Historic alignment | [metric:heritage_spine_length_m] m | schematic alignment |
 | Phasing areas | near/mid/far | [metric:phasing_area_2026_2028_sqm] / [metric:phasing_area_2028_2031_sqm] / [metric:phasing_area_2031_2035_sqm] |
-| Scenario nodes / landmarks | [metric:scenario_node_count] / [metric:ai_pilgrimage_landmark_count] | 12 cards mapped to 8 nodes and 6 corridors |
+| Scenario nodes / landmarks | [metric:scenario_node_count] / [metric:ai_innovation_landmark_count] | 12 cards mapped to 8 nodes and 6 corridors |
 
 Land-use breakdown: research [metric:land_use_area_0802_sqm], education [metric:land_use_area_0804_sqm], residential [metric:land_use_area_0701_sqm], commercial [metric:land_use_area_05_sqm], cultural [metric:land_use_area_0803_sqm], park green [metric:land_use_area_1401_sqm], reserve [metric:land_use_area_16_sqm]. Compliance coverage: all 17 mandatory announcement tasks (1.3.1–1.5.3.3) and all 6 agent tasks (agent.1–agent.6) are registered in `compliance_matrix.json` and supported by the sections above; standard responses in `standard_matrix.json`; depth evidence in `design_depth_matrix.json` (all 15 items complete).
 

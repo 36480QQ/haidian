@@ -91,7 +91,16 @@ AI 全栈自主创新体系需要把"土地、空间、资金、人才、算力�
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围是以京张遗址公园周边 1-2 公里城市地区和产业区为对象的 11.4 km² 廊道 [source:OFFICIAL-ANNOUNCEMENT]。本方案在控规深度城市设计层面提出"一脊三折、六廊缝合、两翼联动"的空间结构 [depth:overall_spatial_structure]：
+总体设计范围是以京张遗址公园周边 1-2 公里城市地区和产业区为对象的 11.4 km² 廊道 [source:OFFICIAL-ANNOUNCEMENT]。设计判断从现状诊断出发（公开常识示意性判读，非测绘数据）[depth:existing_conditions_diagnosis]：
+
+- **D1 东西割裂**：铁路廊道两侧步行绕行 5-8 分钟——这是缝合廊道的直接依据；
+- **D2 慢行断点**：南北向连续慢行缺失、站点与公园无直达界面——对应绿脊慢行主轴与三处接驳动线；
+- **D3 公共空间断档**：遗址公园分段未成网、缺主题节点与夜间使用——对应 8 个主题公共节点系统；
+- **D4 产业锚点无联动**：南北产业锚点之间缺转换与发布节点——对应 AI 原点"中途发布站"的角色设置。
+
+![现状诊断图：割裂、断点、断档、无联动](assets/figures/existing-diagnosis.png)
+
+本方案在控规深度城市设计层面提出"一脊三折、六廊缝合、两翼联动"的空间结构 [depth:overall_spatial_structure]：
 
 - **一脊**：京张遗址公园活力带，即沿历史线位 [data:geometry/constraints.geojson#CX-001] 的中央公园绿脊（用地代码 1401，面积 [metric:land_use_area_1401_sqm]），是文化带与体验带的共享载体 [data:geometry/green_space.geojson#GS-001]。
 - **三折**：三个人字折返节点对应三处重点区——大钟寺（始发）、AI原点（发布）、众智园（加速），详见下章。
@@ -130,7 +139,7 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 | P2 开发者/工程师 | 社区、工具链、低成本的协作空间 | AI 原点开发者街区、SC-03 |
 | P3 在地居民（含老住户） | 生活不被打扰、服务升级、参与感 | 西侧居住更新单元、SC-08 |
 | P4 高校学生 | 实习、课程、展示、低成本文化消费 | 教育创新街区、SC-01/02 |
-| P5 城市游客/AI 朝圣者 | 可理解、可传播的体验动线 | 朝圣地标与导览、SC-12 |
+| P5 城市游客/AI 创新访客 | 可理解、可传播的体验动线 | 创新地标与导览、SC-12 |
 | P6 商户/运营者 | 客流、规则确定性、数据合规 | 大钟寺商业单元、SC-07 |
 
 ### AI 场景卡（12 张，其中 SC-04/05/06 为产业测试验证场景）
@@ -150,7 +159,7 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 | SC-09 | 小月河生态感知管护 | 滨水绿廊 | P3 | 只采环境数据 | 异常事件人工处置 |
 | SC-10 | 轨道站点一体化接驳 MaaS | 三处接驳动线 | 全部 | 行程数据脱敏 | 调度策略人工审批 |
 | SC-11 | 城市治理"人字工单" | 全带 | P3/P6 | 工单数据按政务规范 | AI 派单人工复核兜底 |
-| SC-12 | 国际开发者朝圣导览 | 三大地标 [metric:ai_pilgrimage_landmark_count] | P5/P2 | 多语公开内容 | 内容合规人工审核 |
+| SC-12 | 国际开发者创新导览 | 三大地标 [metric:ai_innovation_landmark_count] | P5/P2 | 多语公开内容 | 内容合规人工审核 |
 
 隐私与人工复核总原则：所有场景遵循共创宪章"人类最终判断"条款 [source:AGENT-TASKBOOK]，不使用非公开数据，不以指定供应商为必要条件，不把未成熟技术写成可全面部署。
 
@@ -169,13 +178,13 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 - **SC-09 生态感知**：晨跑者在滨水绿廊看到今日水质与鸟种播报，数据来自河岸传感器，异常由管护人员处置。
 - **SC-10 接驳 MaaS**：出大钟寺站的访客收到一条"步行 6 分钟经缝合廊道到发布会"的路线，含实时人流提示。
 - **SC-11 人字工单**：商户拍下占道的施工围挡上传，AI 派单到网格，处置结果附现场照片回传，全程可申诉。
-- **SC-12 朝圣导览**：国际开发者按多语导览走完三大地标，在折返站地标扫码留下自己的开源项目链接，经审核后进入荣誉墙候选。
+- **SC-12 创新导览**：国际开发者按多语导览走完三大地标，在折返站地标扫码留下自己的开源项目链接，经审核后进入荣誉墙候选。
 
 ## 用地、建筑规模与拆改留方案
 
 用地布局以临时边界的拓扑安全划分为基础：全部 19 个用地单元由场地边界统一切分生成，相邻单元共享边界坐标，无重叠、无缝隙，覆盖整个提交边界 [data:geometry/land_use.geojson#LU-001][depth:land_use_layout]。用地构成（临时边界复算值）：科研用地 [metric:land_use_area_0802_sqm]、教育用地 [metric:land_use_area_0804_sqm]、居住用地 [metric:land_use_area_0701_sqm]、商业服务业用地 [metric:land_use_area_05_sqm]、文化用地 [metric:land_use_area_0803_sqm]、公园绿地 [metric:land_use_area_1401_sqm]、留白用地 [metric:land_use_area_16_sqm]。
 
-建筑规模：概念建筑基底合计 [metric:building_footprint_area_sqm]，建筑密度（基底/场地）[metric:building_density]，概念总建筑规模 [metric:total_floor_area_sqm]（按类型假定层数推算：科研 10 层、商业 8 层、教育 7 层、人才公寓 12 层、文化 4 层，均为设计意向）。拆改留分类：保留类——历史线位、清华园站旧址、大钟寺等文化锚点与既有优质楼宇；改造类——沿线低效产业与社区楼宇的功能置换与立面更新；新建类——三处重点区内的概念体量 [data:geometry/buildings.geojson#BD-001]。开发强度控制、建筑高度与风貌以控规为准，本方案不给出容积率、高度或拆改留的审定结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING][depth:development_intensity_controls]；建筑高度体量的概念意向是"公园低、两翼高、节点标高"，朝圣地标仅为公共文化装置尺度，不涉及工程建设结论 [depth:height_massing_character]。
+建筑规模：概念建筑基底合计 [metric:building_footprint_area_sqm]，建筑密度（基底/场地）[metric:building_density]，概念总建筑规模 [metric:total_floor_area_sqm]（按类型假定层数推算：科研 10 层、商业 8 层、教育 7 层、人才公寓 12 层、文化 4 层，均为设计意向）。拆改留分类：保留类——历史线位、清华园站旧址、大钟寺等文化锚点与既有优质楼宇；改造类——沿线低效产业与社区楼宇的功能置换与立面更新；新建类——三处重点区内的概念体量 [data:geometry/buildings.geojson#BD-001]。开发强度控制、建筑高度与风貌以控规为准，本方案不给出容积率、高度或拆改留的审定结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING][depth:development_intensity_controls]；建筑高度体量的概念意向是"公园低、两翼高、节点标高"，创新地标仅为公共文化装置尺度，不涉及工程建设结论 [depth:height_massing_character]。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -189,13 +198,15 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 
 蓝绿系统：京张遗址公园活力带（绿脊）与小月河滨水绿廊构成"一脊一廊"的蓝绿骨架，绿地面积 [metric:green_space_area_sqm]、绿地率 [metric:green_ratio]（临时边界复算）[depth:blue_green_public_space]。公共空间系统：8 个主题公共节点（南门户广场、折返剧场、创客十字、AI原点广场、记忆庭院、折返观景台、测试港广场、云顶广场）加两条遗址公园漫步带，公共空间面积 [metric:public_space_area_sqm]、公共空间率 [metric:public_space_ratio] [data:geometry/public_space.geojson#PS-001]。
 
-城市风貌：以"历史轨·数据轨"的双轨语汇统一铺装、导视与城市家具；人字形纹样作为母题贯穿栏板、铺装与标识，形成可识别的城市气质 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+城市风貌：以"历史轨·数据轨"的双轨语汇统一铺装、导视与城市家具；人字形纹样作为母题贯穿栏板、铺装与标识，形成可识别的城市气质 [standard:MOHURD-URBAN-DESIGN-MEASURES]。空间尺度的设计意向用一张典型剖面表达：绿脊 120m 内保留铁轨展示、人字形铺装与慢行优先，两侧 24m 漫步带，外侧研发与商业界面的首层向公园开放，体量上"公园低、两翼高"（概念比例，非工程设计）。
 
-### AI 朝圣地标与荣誉展示体系（agent.4）
+![典型剖面：遗址公园绿脊与缝合廊道（AI原点段）](assets/figures/section-spine.png)
 
-三处 AI 朝圣地标（均为公共文化装置尺度的概念建议，非建设工程结论）[metric:ai_pilgrimage_landmark_count]：
+### AI 创新地标与荣誉展示体系（agent.4）
 
-1. **"折返站"精神地标**（AI 原点广场）：以人字形双轨与发光节点构成的公共装置，地面镌刻京张铁路大事记与 AI 发展大事记的双时间线——朝圣人站在交点上，即站在两次爬坡之间。
+三处 AI 创新地标（对应任务书 agent.4 的朝圣地标要求；本方案统一命名为「AI 创新地标」以强调公共属性——它们是可进入、可参与、可复核的公共创新目的地，而非技术崇拜物；均为公共文化装置尺度的概念建议，非建设工程结论）[metric:ai_innovation_landmark_count]：
+
+1. **"折返站"精神地标**（AI 原点广场）：以人字形双轨与发光节点构成的公共装置，地面镌刻京张铁路大事记与 AI 发展大事记的双时间线——访客站在交点上，即站在两次爬坡之间。
 2. **京张1909时光闸口**（大钟寺南门户）：到达序列的门户装置，闸口形态抽象自历史站房拱窗，夜间以数据流光带呈现"列车进站"意象。
 3. **众智园云轨塔**（众智园云顶广场）：观景与算力展示复合的概念塔，塔身实时可视化开放测试数据（经审核的公共数据），成为"会呼吸"的产业地标。
 
@@ -241,7 +252,7 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 | 慢行廊道长 | [metric:slow_greenway_length_m] m | 绿道+骑行+步行 |
 | 历史线位长 | [metric:heritage_spine_length_m] m | 示意性线位 |
 | 分期面积 | 近/中/远 | [metric:phasing_area_2026_2028_sqm]／[metric:phasing_area_2028_2031_sqm]／[metric:phasing_area_2031_2035_sqm] |
-| 场景节点/朝圣地标 | [metric:scenario_node_count]／[metric:ai_pilgrimage_landmark_count] | 12 张场景卡映射 8 节点与 6 廊道 |
+| 场景节点/创新地标 | [metric:scenario_node_count]／[metric:ai_innovation_landmark_count] | 12 张场景卡映射 8 节点与 6 廊道 |
 
 用地分项面积：科研 [metric:land_use_area_0802_sqm]、教育 [metric:land_use_area_0804_sqm]、居住 [metric:land_use_area_0701_sqm]、商业 [metric:land_use_area_05_sqm]、文化 [metric:land_use_area_0803_sqm]、公园绿地 [metric:land_use_area_1401_sqm]、留白 [metric:land_use_area_16_sqm]。合规矩阵覆盖：公告 1.3.1-1.5.3.3 全部 17 项必选任务与 agent.1-agent.6 全部 6 项智能体任务均在 `compliance_matrix.json` 登记并由本文章节支撑；专业标准响应见 `standard_matrix.json`；设计深度证据见 `design_depth_matrix.json`（15 个深度项全部 complete）。
 

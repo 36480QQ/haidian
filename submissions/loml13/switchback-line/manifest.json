@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4ae0c52aafd333fbbc8b110c3a8dbc22739072c1b7a22eb06b4288cabeae6da3"
+      "sha256": "a37c276a49c8c56425e21e15b2a7eb7cc7bfb2402df909159409d0489fdecbfc"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d83d69a08be83df275f02ee999ccc37b1c6d9ce16399eee73bcd4b5783539403"
+      "sha256": "daa05397c6c6b96ccca0262935cb85f67d5c8ff5d3b26b24a79e9d0380f91109"
     },
     {
       "path": "assumptions.json",
@@ -60,26 +60,26 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "5c68909042a3fe8c637b2ca4bc811ebc6618842ad0a6497c88cad26089c23dfb"
+      "sha256": "60c38d58024f2d4bd33c71e4b8a874110d52bd23125832091c5e2e9d47770eb7"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "71a6ffdc5edf79a56aa77066aed773614835ef72250e20f2046b1515fb6cf8ee"
+      "sha256": "e09888bbb2e53485017686e8661e8bf606863b57fc1263b158510af98d2151b6"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "38443120da3ecdd96f16f8a21a835b3b47be78a9a4d9a8173985980439ba313e"
+      "sha256": "5c2ca13164bbcbb92588b96ee07fcd0b091e519c0800d6cc6a1ca2a67d55e653"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ca72c69d17cb5ba33ada7817c480b54172e86b520e718994c6ac4753750a4f5a"
+      "sha256": "3efd743e71ffd1b91e128b4f7906c7dfc42cdcb2b9fad25c2d324778358fbd4e"
     },
     {
       "path": "report/narrative.md",
@@ -98,21 +98,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "94567b724664771906a4e9437623e8b99309791b11883494a6b230485b6d43cf"
+      "sha256": "e9ef22c3ec9afdeab223473266c81d302a8b966f50bd5ee5d28b7300b8c8c6ca"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "77b053247caacb26defbcf384dbdba56351cc5976466e0077b718ccd22693292"
+      "sha256": "7ba92d46499f222b77e33e4b284b9b9e1d146e5fcf6f535eb4acf834a651cf05"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "01f3cb67121f42c077518c434e05012c16739d9fd94643dc1280c94ac87b4651"
+      "sha256": "b23147f5c14576e969236bd78e1f551997ff46c027557c11a6e9a409074e0615"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b1235129219b5dd8155b347b1ec8648b8cdef548c2960c8995fd5c6d47030565"
+      "sha256": "3ae22d485295feb70998176ebf4f4b7d7d87e51d568f0411c1e7d28d520c7be8"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,14 +217,14 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "91033e91935511959842e8a49fb2f69cb671a88a4fcec4296ab0b026a64854a5"
+      "sha256": "b2115df0ddeea627cfd23f37084084246bd0968288c6428d03c914368ca497a2"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "7acd3f9c0849c4d9f5c241b28975568b9b164538c75b54f9007296db1c7f0f4d"
+      "sha256": "ec5b09755ddb621afa134e923aee284c737b6ca8f6cd5e0f3e99e89c41af470d"
     },
     {
       "path": "assets/figures/switchback-logo.svg",
@@ -279,7 +279,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "dd84cde939b9ee45c7d6f54546596c4c1f708ca4376e0a148b92517887660506"
+      "sha256": "4abfaa194f52c5f32a00a2a0e0f14f69b3ae710cca1400d5e2307084146f4a8c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -287,7 +287,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8aef3da6fc3ed196563e507cdf70f1c8ba3b3c8ea40deaf8b8d324242c85a9e3"
+      "sha256": "c56b63dd1444b5c97df114558ef0ba35dec8103e08e7c6b039784c5e8cc40946"
     },
     {
       "path": "visual/index.en.html",
@@ -295,7 +295,67 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4bcdb64171c65a2e8196444aebaa5438b83a33190ab5f4f4f76e14003dff8534"
+      "sha256": "c810eea8eabaae7b8ae8a05c64663ea9f8175c15a9c476341272223d33f5a460"
+    },
+    {
+      "path": "assets/figures/existing-diagnosis.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "6e06485eef62c013fbe47a0f9a10db5f9198c75ac4b2f1548c84af60e4619079"
+    },
+    {
+      "path": "assets/figures/existing-diagnosis.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/existing-diagnosis.png",
+      "sha256": "8849370a20a8e1ef8253b1d9fe560b8a328812be737b31fdeafc9d3d7a0465d1"
+    },
+    {
+      "path": "visual/assets/existing-diagnosis.png",
+      "role": "visual_asset",
+      "required": false,
+      "language": "zh",
+      "sha256": "6e06485eef62c013fbe47a0f9a10db5f9198c75ac4b2f1548c84af60e4619079"
+    },
+    {
+      "path": "visual/assets/existing-diagnosis.en.png",
+      "role": "visual_asset",
+      "required": false,
+      "language": "en",
+      "translation_of": "visual/assets/existing-diagnosis.png",
+      "sha256": "8849370a20a8e1ef8253b1d9fe560b8a328812be737b31fdeafc9d3d7a0465d1"
+    },
+    {
+      "path": "assets/figures/section-spine.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "f583e6b4ba0967ac4395a2f1618baa6683afd4d39385050ed515da28b784562a"
+    },
+    {
+      "path": "assets/figures/section-spine.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/section-spine.png",
+      "sha256": "4e9907363d5deb1dc1f2f1f0b3283887394dc2a60d5f25d05fca78b91dd2184d"
+    },
+    {
+      "path": "visual/assets/section-spine.png",
+      "role": "visual_asset",
+      "required": false,
+      "language": "zh",
+      "sha256": "f583e6b4ba0967ac4395a2f1618baa6683afd4d39385050ed515da28b784562a"
+    },
+    {
+      "path": "visual/assets/section-spine.en.png",
+      "role": "visual_asset",
+      "required": false,
+      "language": "en",
+      "translation_of": "visual/assets/section-spine.png",
+      "sha256": "4e9907363d5deb1dc1f2f1f0b3283887394dc2a60d5f25d05fca78b91dd2184d"
     }
   ],
   "validation_claim": {
