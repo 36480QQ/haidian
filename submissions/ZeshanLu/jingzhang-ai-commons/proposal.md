@@ -1,192 +1,298 @@
 ---
 title: "智轨共生：京张 AI 公共创新带"
+subtitle: "Jingzhang AI Commons"
 author_github: "ZeshanLu"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
+summary: "以京张铁路历史轴为公共底盘，把中关村创新网络和可问责的 AI 服务织入日常城市生活的开放共创建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-<!-- SCAFFOLD-DRAFT: replace the generated design content, figures, geometry, and drawings; then set manifest.package_state to ready_for_review. -->
+# 智轨共生：京张 AI 公共创新带｜Jingzhang AI Commons
 
-# 智轨共生：京张 AI 公共创新带
+本方案把“轨”同时理解为京张铁路的历史轨迹、创新成果走向公共价值的转化轨道，以及 AI 必须遵守的治理轨则。它不是企业技术展厅，也不是法定规划或政府实施决定，而是一套可供公众、专业团队与运营机构共同校验的概念建议。所有空间动作均须在官方边界、文保、权属、控规、交通、市政与安全条件补齐后深化。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
-## 设计依据与资料清单
+## 01 读懂京张
 
-本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前必须读取 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
+### 01.1 从临时边界开始，而不是从假精确开始
 
-本节证据链引用 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案不是独立愿景文本，而是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织成果。
+当前提交使用 `SITE-001` 粗略替代总体设计范围，复算面积为 11,412,825.386 平方米，约 11.4 平方千米；其置信度为 low，且不是 official boundary。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [assumption:A-OFFICIAL-GEOMETRY-001] 三个重点区 `PROV-KEY-001`、`PROV-KEY-002`、`PROV-KEY-003` 同样只是 low-confidence 临时边界，三者面积与总数均是临时边界派生值，待官方 polygon 到位后替换并整体复算。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_count] [assumption:A-RECOMPUTE-001]
 
-资料登记表的使用边界如下：
+因此，本方案只对“一带、三核、两翼、六站”的组织逻辑和项目准入提出建议，不给出审定容积率、建筑高度、道路红线或具体拆改留结论。总建筑面积与 FAR 为 unknown；道路仅有中心线长度，缺少确认宽度，故道路面积与道路率也为 unknown。[metric:total_floor_area_sqm] [metric:floor_area_ratio] [metric:road_area_sqm] [metric:road_ratio] [depth:development_intensity_controls] 对现有建筑的“再利用或轻量补建”仅指后续调查方向，须先完成产权、结构、消防、文保与现状测绘。[assumption:A-CONTROLS-001]
 
-- data/source_registry.json 登记公开、清权与临时资料的用途边界。
-- 当前登记摘要：formal 可用资料 5 条，背景资料 0 条，provisional-only 资料 1 条。
-- agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
+OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信度 low，不能代替轨道运营方资料或工程测量。例如西直门背景点 `OSM-STATION-XIZHIMEN` 只支持讨论换乘关系，不支持推断出入口、客流或施工边界。[data:geometry/constraints.geojson#OSM-STATION-XIZHIMEN] [assumption:A-OSM-BACKGROUND-001]
 
-`data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源。[source:PROCESSED-FACT-PACK] 只帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；所有事实判断仍回到 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]。
+![当前临时边界与证据等级总览，待官方边界替换复算](assets/figures/site-overview.png)
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+### 01.2 三个真实矛盾与一个机会窗口
 
-本脚手架在官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均必须标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
+第一，铁路遗产的南北连续叙事与现实东西通行需求相互叠加。设计意图不是跨越铁路“画桥”，而是先盘点合法既有通道、地面过街、站点接口和无障碍绕行，再以小尺度公共空间补齐到达链。第二，高校、研究机构、园区和企业密集，但成果从实验室到中试、采购、公共体验的路径碎片化。第三，AI 服务往往先服务熟练用户，老人、儿童、残障人士和数字技能不足居民反而承担试错成本。
 
-本次脚手架生成的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
+机会在于京张遗址公园可成为共同的公共底盘：以连续慢行、绿色开放空间、六处服务站和三处创新核心，把“铁路文化—中关村创新—AI 公共文化”从展陈线索转为日常服务链。该判断对应概念绿脊 `GREEN-001`、六处公共空间 `PUBLIC-001` 至 `PUBLIC-006` 与慢行主线 `ROAD-BELT-001`；这些均为 medium-confidence 概念设计几何，不是工程线位。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-006] [data:geometry/roads.geojson#ROAD-BELT-001] [depth:blue_green_public_space]
 
-边界和重点区域的可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 和 [metric:site_area_sqm]、[metric:key_area_count]。这意味着读者可以从正文回到 GeoJSON 查看边界来源、从 metrics 查看面积复算结果、从 sources 查看资料来源，而不是只相信一段文字判断。
+### 01.3 谁拥有这条带：八类用户与公共权利
 
-## 三层范围工作框架
-
-方案按照公告确定的三个层次组织工作：统筹研究范围关注 43.6 平方公里的AI产业生态、战略定位、创新链和未来城市形态；总体设计范围关注 11.4 平方公里京张遗址公园周边 1-2 公里城市地区和产业区，要求形成城市更新总体框架、产业空间布局、交通市政支撑和城市风貌控制；重点区域范围关注 368.4 公顷三处详细设计地区，要求明确功能业态、建筑规模、拆改留分类、公共空间连通和交通组织。三层范围在 `compliance_matrix.json` 中逐条映射，保证公告 1.3、1.4、1.5 与 agent.1-agent.6 的必选任务都有章节、图层、指标、图纸和 HTML 证据。
-
-三层工作框架的深度项由 [depth:three_level_scope_framework] 和 [depth:overall_spatial_structure] 约束，空间证据以 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001] 为准，任务依据以 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 为准，范围索引以 [source:PROCESSED-FACT-PACK] 中 `project_scope_summary.csv` 的三层范围表为导航。
-
-![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
-
-三层工作不是互相割裂的图纸集合。统筹研究决定产业链和城市形态判断，总体设计把判断落实到更新项目、空间结构和设施承载，重点区域详细设计验证具体地块、建筑、交通、公共空间和AI应用场景的可实施性。agent 生成方案时必须先锁定当前提交采用的 official 或 provisional 边界和约束，再生成用地、建筑、道路、绿地、公共空间、分期和AI服务节点，最后从这些图层复算指标并在正文解释哪些结论仍受 provisional boundary 限制。任何无法从结构化数据复算的面积、比例、规模或项目数量，不得写入正式结论。
-
-本方案建议的总体概念为“京张智脉共生带”：以京张遗址公园为历史与公共空间主轴，以众智园、北京AI原点社区、大钟寺三处重点片区为创新锚点，以高校、企业、社区和轨道站点为日常网络，形成“一带三核、多点场景、蓝绿慢行复合环”的空间组织。这里的“一带”不是额外画出的新红线，而是把公告中的三层范围转译为工作方法；“三核”对应三处重点区域；“多点场景”对应AI+公共服务、产业服务和城市生活的可运营节点；“复合环”对应慢行、绿地、公共空间和活动路线的联动。
-
-| 层级 | 设计问题 | 方案回答 | 数据落点 |
+| 用户 | 核心需要 | 可测权利保障 | 不允许的替代 |
 | --- | --- | --- | --- |
-| 统筹研究范围 | AI产业生态和未来城市形态如何组织 | 建立“高校策源-开源协作-企业转化-公共体验-国际传播”的创新链 | compliance_matrix.json、standard_matrix.json |
-| 总体设计范围 | 产业空间、城市更新、交通市政和风貌如何落图 | 用地、建筑、道路、绿地、公共空间和分期图层共同表达 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
-| 重点区域范围 | 三处片区如何达到详细设计深度 | 分别提出定位、空间动作、AI场景和实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] |
+| 青年与初入职场者 | 夜间学习、低门槛试验、就业连接 | 免费开放时段占比；实习与导师匹配完成率 | 以消费门槛换取公共空间使用权 |
+| 老年人 | 清晰导视、线下窗口、健康服务导航 | 人工窗口等待时间；大字版与语音入口可用率 | 强迫下载 App 或用人脸换便利 |
+| 儿童及照护者 | 安全游戏、AI 素养、亲子设施 | 儿童友好活动次数；看护视线与无障碍厕所审查 | 收集儿童画像或用于商业推荐 |
+| 残障人士 | 连续无障碍链、多模态信息、可申诉 | 无障碍断点闭环率；人工协助响应时间 | 以“智能化”替代坡道、电梯与人员 |
+| 高校师生 | 数据沙盒、中试接口、开放课程 | 可复现实验数；跨校项目数 | 默认开放未清权科研数据 |
+| 周边居民 | 安静、安全、可参与的日常公共空间 | 居民席位比例；噪声投诉按期闭环率 | 活动流量挤占休憩与通行 |
+| 中小企业与创业者 | 公平准入、低成本验证、采购路径 | 中小企业试点占比；平均准入周期 | 指定供应商绑定或“展示即采购” |
+| 城市服务人员与访客 | 可解释工具、双语信息、应急人工服务 | 培训覆盖率；人工接管成功率；双语信息完整率 | 用模型结论替代专业判断 |
 
-## 统筹研究范围产业与未来城市研究
+公共利益底线是：沿带基础通行、休憩、饮水、厕所、无障碍和基础信息服务不以注册、消费或数据授权为条件；商业活动不得独占连续公共空间；每项数字服务均提供非数字替代、申诉和退出路径。年度评估至少公开年龄友好、无障碍、免费时段、中小企业准入、投诉处置和数据事件六组指标。[standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-统筹研究范围的核心任务是构建世界级 AI 创新生态体系。方案应梳理海淀高校院所、头部企业、算力算法数据要素、孵化平台、上市企业、独角兽和科技服务资源，提出AI创新链、产业链、人才链和城市服务链的空间协同框架。命名方案和 logo 设计应服务于“百年京张文化带、都市AI生活体验带、AI融合创新带”的整体辨识度，不能只停留在口号，应说明与产业生态、公共空间和文化资源的关联。面向智能体任务书还要求回应“五大功能”和“三区两翼”协同，形成可继续深化的命名系统、视觉识别、总体空间结构图、场景开放和运营机制；本节必须用 [source:AGENT-TASKBOOK] 与 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 标注这些要求来自 agent 开源征集任务，而不是法定规划控制。
+## 02 定义京张
 
-统筹研究并不新增伪精确红线；它通过 [standard:MOHURD-URBAN-DESIGN-MEASURES] 要求的城市风貌、公共空间和建筑布局统筹，回接 [data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#PUBLIC-001] 与 [depth:overall_spatial_structure]，说明产业策略最终要落到可见、可复核的空间结构。
+### 02.1 名称、理念与三代叙事
 
-未来城市形态研究应回答人工智能如何改变工作、生活、社交、学习、交通和公共服务。方案应把AI交通系统、连续绿色空间、创新服务设施和国际化生活工作氛围落实为可定位的功能区、节点、廊道和场景，而不是泛泛描述技术愿景。agent 应把产业战略指标、AI创新指数、人才密度、空间供给类型和AI+垂直应用重点区域写入指标体系，并标明哪些是官方、哪些是设计建议、哪些仍待正式数据校准。若提出全球AI创新活动、开发者社区、开放场景或朝圣路线，应写为“概念建议/参考方案/可供专业团队深化研究”，不得写成已经确定的政府活动或实施安排。
+正式名称为“智轨共生：京张 AI 公共创新带”，英文副标题为 “Jingzhang AI Commons”。“智轨”保留京张辨识度又指向创新转化；“共生”强调遗产、产业、社区和生态互不替代；“Commons”明确技术设施首先是公共知识和公共服务基础设施。视觉识别建议使用两条不闭合的平行线：一条取自铁路轨枕节奏，一条由可组合数据节点构成；只用原创几何和开源/系统字体，不挪用铁路、学校、企业商标。
 
-## 总体设计范围城市更新与控规深度城市设计
+叙事分三代：第一代“铁路把知识与城市连接起来”，以工程史、站场记忆和真实档案为证，不制造历史事件；第二代“中关村把科研与产业连接起来”，以高校—实验室—创业—服务网络解释创新文化；第三代“AI 把创新与公共生活连接起来”，但必须以最小数据、人工复核和公共可及为轨则。三代叙事沿六站展开：识史、开源、共学、共护、中试、共治，形成可重复到访而非一次性打卡的课程与服务链。[source:SRC-HAIDIAN-DISTRICT-PLAN-2017-2035] [depth:overall_spatial_structure]
 
-总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠，`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底，`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系，`metrics.json` 应复算核心面积、比例和图层数量。
+### 02.2 七个案例：借机制，不复制形象
 
-本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达交通组织，[metric:building_footprint_area_sqm] 用于复核建筑基底面积，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
+下表案例仅作经验参照，不是本项目事实依据；均访问于 2026-08-08，待 Task 11 在 `sources.json` 登记。正文不复制案例图片、图纸或长段文字。
 
-总体设计还必须支撑交通、轨道、市政和配套设施。方案应围绕轨道站点一体化、道路微循环、非机动车停放、停车供给、创新服务平台、人才生活服务、新型基础设施、分布式能源和端侧算力提出空间布局和实施路径。涉及建筑高度、开发强度、道路红线、退线和设施标准的内容，若尚无官方控制条件，应写为“待正式控规条件确认”，不得以 agent 推测值冒充审定指标。
-
-## 重点区域详细设计
-
-重点区域详细设计是必选项。众智园AI自主创新加速区应围绕国家人工智能平台、全栈自主创新、标准制定、安全治理、产业展示、对外交通、清河文化、低碳绿色创新交往环境和绿色空间AI场景提出详细方案。北京AI原点社区应围绕近校创新、成果孵化转化、人才特区、开源体系、品牌活动、建筑拆改留、成果展示发布、居住生活配套、校区园区慢行联系和轨道站点一体化提出详细方案。大钟寺AI产业聚集区应围绕领军企业、智能体、智能终端、内容消费、数据要素、数字资产、商业服务、规划绿地复合利用、大钟寺站一体化和路口四象限步行连通提出详细方案。
-
-三处重点区域详细设计必须引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，并由 [depth:three_key_area_detailed_design] 检查是否达到规划综合实施方案深度。若只描述“打造示范区”而没有功能、建筑、交通、公共空间和实施项目证据，应被视为未完成。
-
-![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
-
-三处重点区域必须在 `geometry/key_areas.geojson` 中出现。若仓库已提供 official polygons，应作为 `official_constraint` 使用；若 official polygons 缺失，可暂用 `provisional_constraint`，但正文、HTML、sources、assumptions 和 self_check 必须说明它不能作为正式评分或审批依据。`compliance_matrix.json` 应分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。设计表达应包含功能业态、建筑规模、建筑形态、拆改留分类、公共空间系统、交通组织、慢行连通和实施项目。HTML 页面应能切换查看三处重点区域，A3 文册和 A0 展板应至少包含重点片区总图、局部详图和指标说明。
-
-| 重点片区 | 设计定位 | 空间动作 | AI产业与运营场景 | 证据引用 |
-| --- | --- | --- | --- | --- |
-| 众智园AI自主创新加速区 | 花园型全栈自主创新街区 | 强化清河界面、产业展示、低碳创新交往和对外交通组织；以绿色空间承载开放测试与标准治理展示 | 自主模型测试、标准制定工作坊、安全治理展示、低碳算力体验 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[depth:three_key_area_detailed_design] |
-| 北京AI原点社区 | 近校型成果转化与人才社区 | 组织校区、园区、街区慢行缝合；补足成果发布、人才服务、居住生活和开源协作空间 | 开源社区、成果发布、人才特区服务、近校孵化 | [data:geometry/key_areas.geojson#PROV-KEY-002]、[source:AGENT-TASKBOOK] |
-| 大钟寺AI产业聚集区 | 城市型智能经济与国际交往街区 | 围绕大钟寺站一体化、四象限步行连通、商业服务和重点企业公共环境更新 | 智能体与智能终端展示、内容消费、数据要素与国际路演 | [data:geometry/key_areas.geojson#PROV-KEY-003]、[metric:key_area_count] |
-
-## AI 创新生态、人才画像与 AI+ 场景
-
-方案应建立面向AI人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往。AI+场景应围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和AI赋能城市功能场景。每个场景应说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。
-
-AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行与交通场景引用 [data:geometry/roads.geojson#ROAD-001]，开放空间场景引用 [data:geometry/green_space.geojson#GREEN-001] 和 [metric:public_space_ratio]、[metric:green_ratio]。这些引用让评审者知道场景不是口号，而是位于具体图层和指标中的设计对象。面向智能体任务书要求不少于10张AI场景卡、不少于3个产业测试验证场景和不少于5类用户画像；脚手架只给出结构，正式参赛者必须把场景卡、画像表、隐私边界、人工复核和运营主体写入正文、HTML、A3/A0 和合规矩阵。
-
-| 用户画像 | 典型需求 | 空间响应 | 自检边界 |
-| --- | --- | --- | --- |
-| 开源开发者 | 发布、协作、测试、社区声誉 | 原点社区开源发布厅、公共代码墙、夜间协作空间 | 不采集个人行为轨迹；活动数据只做聚合统计 |
-| 初创团队 | 低成本办公、算力入口、产品试验场 | 众智园共享测试场、端侧算力服务点、标准治理咨询 | 算力和数据服务需另行授权 |
-| 头部企业访客 | 展示、商务、国际接待、人才招聘 | 大钟寺国际路演客厅、轨道站点接驳、重点企业周边公共空间 | 企业标识和案例须清权 |
-| 周边居民 | 通勤、休闲、社区服务、低扰动更新 | 京张遗址公园慢行环、社区服务嵌入、夜间照明和活动分级 | 不将居民画像用于商业推荐 |
-| 高校师生 | 成果转化、跨校协作、日常慢行 | 校区-园区慢行缝合、成果转化驿站、AI教育体验点 | 校园数据和科研成果需授权 |
-
-| 场景卡 | 空间载体 | 设计说明 |
+| 案例与一手来源 | 可借鉴点 | 不可照搬的边界 |
 | --- | --- | --- |
-| 01 开源发布厅 | 北京AI原点社区 | 面向高校、开源社区和初创团队，提供成果发布、代码贡献展示和小型路演空间 |
-| 02 安全治理沙盒 | 众智园 | 将标准制定、安全评测、模型红队测试转译为可参观、可预约、可监管的展示和协作节点 |
-| 03 端侧算力驿站 | 总体设计范围节点 | 与公共服务、企业服务和低碳能源策略结合，作为待深化的新型基础设施原型 |
-| 04 AI慢行导航 | 京张遗址公园活力带 | 用可解释导视和低侵入传感帮助识别慢行断点、拥挤节点和无障碍需求 |
-| 05 大钟寺国际路演客厅 | 大钟寺AI产业聚集区 | 服务智能体、智能终端和内容消费企业的展示、洽谈、媒体发布和国际交流 |
-| 06 清河低碳创新廊 | 众智园临清河界面 | 把绿色空间、雨洪、步行骑行和AI展示结合，作为园区公共客厅 |
-| 07 近校成果转化街 | 北京AI原点社区 | 面向高校成果转化，组织孵化、展示、法务、知识产权和投融资服务 |
-| 08 数据要素会客厅 | 大钟寺片区 | 以合规、授权、可审计为前提，展示数据要素和数字资产流通的城市服务界面 |
-| 09 AI生活服务样板街 | 社区与商业交汇处 | 将医疗、教育、法律、生活服务等AI+场景落到可运营的小尺度街区空间 |
-| 10 全球AI活动周路线 | 一带公共空间系统 | 形成从遗址文化、开源社区、产业展示到国际路演的可步行、可传播体验路线 |
+| 新加坡 Punggol Digital District，JTC：[官方项目页](https://www.jtc.gov.sg/punggoldigitaldistrict) | 高校、产业、社区共址；开放数字平台和数字孪生支持试验 | 集中建设、传感器规模和生物识别方式不可直接套用；本方案坚持最小采集和分级开放 |
+| 芬兰赫尔辛基 Jätkäsaari 配送机器人，City of Helsinki：[试点指南](https://mobilitylab.hel.fi/app/uploads/2022/09/Logistics-robots-how-does-piloting-work-in-Helsinki.pdf) | 许可、城市街道协商、真实环境小规模试点与退出流程 | 芬兰道路法规和测试牌照不适用于北京；只借鉴 ODD、责任人与复盘方法 |
+| 加拿大 Toronto Quayside，Waterfront Toronto：[公众简报](https://www.waterfrontoronto.ca/sites/default/files/documents/final-public-briefing-overview-presentation-nov-19-2019.pdf) | 把数字原则、数据用途和隐私讨论置于开发之前 | 治理制度、数据本地化规则和项目条件不同；不能把“智慧城市”视为默认授权 |
+| 日本 Toyota Woven City，Toyota：[Phase 1 官方说明](https://pressroom.toyota.com/toyota-woven-city-a-test-course-for-mobility-completes-phase-1-construction-and-prepares-for-launch/) | 明确“测试场”身份、分期入住、发明者与居民共创 | 企业自有封闭园区不能替代开放城区治理；京张公共空间不得公司化 |
+| 韩国 Seoul AI Hub，Seoul Metropolitan Government：[政策档案](https://english.seoul.go.kr/seoul-policy-archive/seoul-ai-hub/) | 教育、孵化、算力、PoC 和开放创新按成长阶段衔接 | 资金强度、机构名单和绩效不可移植或冒充本地承诺 |
+| 美国 MIT Kendall Square Initiative，MIT：[项目页](https://kendallsquare.mit.edu/) | 将实验室、住房、零售、创新空间、博物馆和开放空间混合，并让社区参与塑造计划 | 单一机构土地条件不同；不能推导京张的权属、开发强度或拆建方案 |
+| 河套深港科技创新合作区深圳园区，官方运营平台：[园区概况](https://htcz.sz.gov.cn/ht/) | 科研、中试、规则对接、人才服务构成转化链 | 跨境制度与规划指标是河套特定条件；不作为京张面积、强度或政策依据 |
 
-agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解释和人工复核原则。城市智能体可以辅助识别慢行断点、公共空间热力、设施维护、企业服务需求和活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺。所有AI场景节点应进入结构化图层或合规矩阵，便于评审者看到它们与产业、空间和公共利益之间的关系。
+从案例提炼的共同机制是“开放接口—有界测试—独立评估—公共反馈—是否扩围”，而非“先铺设备再找用途”。京张的适配版本以中小企业可进入、居民可退出、数据可删除、运营可更换为基本准入条件。[source:AGENT-TASKBOOK]
 
-## 用地、建筑规模与拆改留方案
+### 02.3 产业生态：从论文到公共价值的五段链
 
-用地方案应依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。建筑方案应区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论。
+产业生态建议组织为“问题发布—合规沙盒—原型中试—公共验证—采购/推广评估”五段链。高校师生和居民提出问题；平台运营方完成数据分级、伦理和无障碍审查；企业在受控环境做原型；独立评估者记录失败；采购主体依据公开指标另行决策。空间上，西翼 `LU-005` 承载公共知识与共学，东翼 `LU-006` 承载产业验证，三核 `LU-002`—`LU-004` 分别聚焦全栈自主、成果转化与智能原生服务；这只是空间组织建议，不改变法定用地性质。[data:geometry/land_use.geojson#LU-002] [data:geometry/land_use.geojson#LU-005] [data:geometry/land_use.geojson#LU-006] [depth:land_use_layout]
 
-用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。
+产业指标不以虚构产值为目标，而以转化质量衡量：年度公开问题数、完成伦理审查的试点数、中小企业参与率、跨校团队率、原型复现率、从试点到第三方评估的中位时长、失败项目公开复盘率、公共价值 KPI 达标率。资金、企业名单、算力规模和政策补贴均待相关主体依法确定，不写成既定安排。
 
-建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应在指标体系中列为 unknown 或 pending_control，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
+![当前概念用地结构与一带三核两翼关系，非控规用地图](assets/figures/land-use-structure.png)
 
-## 交通、轨道、市政与公共服务设施
+### 02.4 三处创新朝圣节点：可学习、可验证、可再来
 
-交通方案应回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车、非机动车停放和绿色交通系统的要求。重点应覆盖北五环、京张遗址公园跨环路节点、五道口、清华东路西口、大钟寺站及重点企业周边交通联系。道路和慢行图层应保持在提交边界内，并与公共空间、绿地、产业节点和重点片区相互校核；若提交边界为 provisional，交通结论也只能作为临时设计讨论。
-
-交通和市政专业深度分别由 [depth:traffic_rail_slow_parking] 与 [depth:municipal_new_infrastructure] 约束；图层证据引用 [data:geometry/roads.geojson#ROAD-001]、[data:geometry/public_space.geojson#PUBLIC-001] 和 [data:geometry/constraints.geojson#CONSTRAINTS]。当道路红线、管线、消防和市政条件缺失时，应通过 assumptions 说明待补，而不是把策略写成审定条件。
-
-![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
-
-市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
-
-## 蓝绿空间、公共空间与城市风貌
-
-蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
-
-蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio] 和 [metric:public_space_ratio]。城市设计管理办法要求统筹景观风貌、公共空间和建筑控制，因此本节同时引用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
-
-城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
-
-## 更新项目清单、实施政策与分期计划
-
-实施方案应形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险和评估指标。政策建议应覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。`geometry/phasing.geojson` 应表达分期范围，`compliance_matrix.json` 应把每个任务与分期和图纸挂接。
-
-项目清单和分期深度由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 管理，分期空间证据为 [data:geometry/phasing.geojson#PHASE-001]。如果没有权属、资金、实施主体和审批路径，方案必须把它写成实施风险，而不是承诺落地。
-
-| 项目编号 | 项目名称 | 类型 | 主要依赖 | 证据引用 |
+| 节点 | 三代叙事 | 空间动作 | 运营与指标 | 前置条件 |
 | --- | --- | --- | --- | --- |
-| JZ-01 | 京张遗址公园慢行断点缝合 | 公共空间/交通 | 道路红线、桥下空间、交通组织复核 | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | 众智园清河创新界面 | 蓝绿空间/产业展示 | 河道蓝线、生态和防洪条件 | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | 原点社区近校成果转化街 | 城市更新/产业服务 | 校区边界、权属、首层业态 | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | 大钟寺站四象限步行连通 | 轨道一体化/慢行 | 轨道站点、道路交叉口、市政管线 | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI公共服务与端侧算力节点 | 新基建/公共服务 | 能源、算力、安全和运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
+| “零公里·共创站” | 铁路里程/工程史—中关村创业史—AI 公共问题发布 | 在既有可开放空间设置档案桌、问题墙、无屏障讲解与开放课程 | 公共/高校联合策划；档案来源标注率 100%，免费活动占多数 | 文保核查、场地产权和消防确认 |
+| “开源信号所” | 铁路信号—计算网络—模型透明与安全 | 可逆展陈、模型卡阅览、红队演练室、离线演示 | 高校/行业组织建议运营；复现实验、漏洞闭环和公众课程计数 | 数据分级、网络隔离、无商业品牌独占 |
+| “未来交接场” | 货运交接—成果转化—机器人与公共服务交接 | 封闭 ODD 测试环、人工接管席、观众安全廊和失败案例库 | 独立测试机构建议主责；接管成功率、零严重伤害、退出完成率 | 获批 ODD、安全认证、保险和应急预案 |
 
-分期应与 100 天征集设计周期形成区分：征集周期是提交成果的时间要求，实施分期是城市更新和项目建设的推进路径。方案应提出近期试点、中期更新和长期治理框架，并标明哪些内容可先以轻量设施、运营活动和服务平台启动，哪些必须等待正式控规、市政、交通和权属条件确认。对于年度活动体系、开发者社区运营、场景开放日、公共体验路线和国际传播机制，正文应说明运营对象、频率、责任边界、转化路径和风险，不得只写宣传口号。
+“朝圣”指专业学习与公共参与的持续吸引力，不造巨型地标、不消费遗产。三个节点分别把历史证据、开源能力与真实验证变成可参与的公共仪式，并通过课程护照串联，但不采集个体轨迹。[data:geometry/public_space.geojson#PUBLIC-002] [data:geometry/public_space.geojson#PUBLIC-005] [data:geometry/public_space.geojson#PUBLIC-006]
 
-## 指标体系、面积复算与合规矩阵
+## 03 设计京张
 
-指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
+### 03.1 一带三核两翼六站：六个总体动作
 
-指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]，并说明这些值来自 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001]。
+#### 03.1.1 动作一：保留铁路时间轴
 
-![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
+设计意图是先让历史可读，再叠加新功能。沿 `GREEN-001` 建议以可逆铺装、轨枕节奏座椅、档案二维码和人工讲解形成连续叙事；任何标识先核对档案出处和文保要求。运营由遗产研究、园林与社区代表共同策展，KPI 为来源标注率、无障碍讲解覆盖率、季度内容纠错闭环率。缺口是文物本体、保护范围、建设控制地带和树木调查。[data:geometry/green_space.geojson#GREEN-001] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-合规矩阵是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务必须对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设和自检项。未能覆盖公告 1.3、1.4、1.5 或 agent.1-agent.6 的任一必选任务，方案不得进入 formal professional scoring。
+#### 03.1.2 动作二：用六站缝合东西
 
-正式深化时，agent 还应把每个指标分为三类：第一类是可由提交几何直接复算的空间指标，例如边界面积、绿地比例、公共空间比例、建筑基底面积和分期面积；第二类是需要官方控规或任务书附件支撑的管控指标，例如容积率、建筑高度、建筑密度、退线、道路红线和设施标准；第三类是需要运营或产业数据持续校准的绩效指标，例如 AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度和场景使用频次。三类指标应分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`，避免把运营愿景误写成审定规划条件。
+六个 `NODE-STATION-*` 是服务站概念点，不是轨道车站。每站优先利用依法可开放的既有通道和地面空间，形成“过街—休憩—问询—无障碍协助”一体节点；桥隧、地下空间和新出入口均不作可行性结论。运营方按日巡检，KPI 为无障碍连续率、夜间照明故障闭环时间、平均绕行距离改善；前置是交通组织、产权、消防与地下管线核查。[data:geometry/roads.geojson#NODE-STATION-001] [data:geometry/roads.geojson#NODE-STATION-006] [assumption:A-CONTROLS-001]
 
-## 风险、版权与合规说明
+#### 03.1.3 动作三：三核承接不同创新阶段
 
-方案主文件可使用中文或英文，并应通过 `proposal.en.md` 或 `proposal.zh.md` 提供完整对照译文；缺少译文只产生 non-blocking warning，不阻断投稿、合并或内容审稿。A3/A0、HTML 和含文字图件也应提供对应语言副本，并优先使用 `docs/terminology-glossary.md` 的赛事推荐译法。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
+众智园侧重全栈自主与安全验证，AI 原点社区侧重高校成果转化与人才生活，大钟寺侧重智能原生服务与公共体验。三核通过 `ROAD-CORE-001` 至 `ROAD-CORE-003` 接入主带，而不是彼此复制。运营采用统一准入、分核专业评估，KPI 为跨核转介率、试点复现率与中小企业占比；正式边界到位前不按当前面积分配投资。[data:geometry/roads.geojson#ROAD-CORE-001] [data:geometry/roads.geojson#ROAD-CORE-003] [depth:three_key_area_detailed_design]
 
-风险和缺资料清单由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK] 和 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 相互校核。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项。
+#### 03.1.4 动作四：两翼补齐知识与中试
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
+西翼为公共知识翼，组织高校课程、居民 AI 素养、老年数字协助和无障碍共创；东翼为产业验证翼，提供隔离算力、仿真、检测、合规咨询和小批量展示。两翼以公开目录共享能力，禁止以厂商专有协议锁定。KPI 为开放课程覆盖人次、合规审查周期、跨翼项目数和可迁移接口比例；前置是数据、算力、消防与采购制度。[data:geometry/roads.geojson#ROAD-WING-W-001] [data:geometry/roads.geojson#ROAD-WING-E-001]
 
-## 参考资料
+#### 03.1.5 动作五：把交通、市政与新基建做成公共服务
 
-- brief/public-brief.md
-- brief/site-package/design_brief.json
-- brief/site-package/allowed_design_space.json
-- brief/site-package/enums/
-- brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+交通侧先做步行、自行车、公交/轨道接驳和静态交通调查，再讨论获批 ODD 内的自动驾驶接驳、机器人和无人配送。新基建采用分层架构：公共信息层只用开放非个人数据；运营层使用聚合设备状态；受限试验层物理/网络隔离、到期删除。边缘计算节点不采集人脸或连续个体轨迹。KPI 为慢行断点闭环、服务可用率、人工接管时间、能耗强度与安全事件数；市政容量、机房、供电、通信和道路断面均待专业核查。[metric:road_centerline_length_m] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+
+#### 03.1.6 动作六：以公共空间而非展厅统筹日常
+
+六处 `PUBLIC-*` 分别容纳青年共创、开源学习、夜间自习、包容运动、学生原型市集和代际数字帮助；基础设施免费使用，商业展示限时、限面、可撤。当前公共空间合计面积指标来自概念几何，不能视为法定供给。[data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_area_sqm] 运营委员会中居民、残障人士、青年和中小企业代表应有明确席位；KPI 为免费时段、活动噪声投诉、不同用户到访与公共空间商业占用比例。
+
+![当前慢行蓝绿与六站关系证据快照，非工程线位](assets/figures/mobility-bluegreen.png)
+
+### 03.2 众智园 AI 自主创新加速区
+
+#### 03.2.1 花园型全栈验证院
+
+在 `PROV-KEY-001` 内建议以现有可再利用空间为优先，布置模型安全评测、开源适配、软硬件协同和低碳算力演示，不以新增大体量建筑为前提。空间动作是“实验室—隔离沙盒—公众解释廊—清河生态界面”四段串联；公众只能看到脱敏结果和模型卡，生产数据不出安全域。建议由高校、检测机构与园区运营方协同，KPI 为复现实验比例、漏洞修复周期、能耗披露完整率。正式片区边界、清河蓝线、权属、算力负荷与文保资料是准入前置。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
+
+#### 03.2.2 安全治理与开放标准客厅
+
+设置不绑定厂商的标准工作坊、红队演练和公众问答，每个项目提交数据卡、模型卡、威胁模型、人工接管和终止方案。开放日不等于开放敏感系统；演示使用合成或匿名数据。运营以第三方测试和公众观察员共同见证，KPI 为问题公开率、整改闭环率、供应商可替换测试通过率。涉及国家、商业或个人敏感信息时停止公开展示并转入受控环境。
+
+### 03.3 北京AI原点社区
+
+#### 03.3.1 校园—园区—社区成果转化街
+
+在 `PROV-KEY-002` 内建议沿既有慢行联系布置共享课程、原型诊所、知识产权与合规服务、人才生活支持和可短期租用的中试空间。`BLDG-005`—`BLDG-010` 只表达概念性再利用或轻量补建簇，不代表具体建筑处置。[data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/buildings.geojson#BLDG-005] [data:geometry/buildings.geojson#BLDG-010] 运营采取公开征集和阶段评审，KPI 为跨校项目、中小企业准入、居民问题转化及失败复盘。前置是建筑逐栋测绘、产权同意、消防和租赁机制。
+
+#### 03.3.2 人才生活与低扰动更新
+
+将托育、健康导航、夜间学习、运动、餐饮和无障碍服务与创新空间同等对待，避免“只有工位没有生活”。施工建议分时分段，保留居民通行和安静时段；活动需设噪声、照明、垃圾和人流上限。KPI 为 15 分钟服务可达性调查、夜间投诉闭环、女性与照护者参与率。总建面、建筑高度和拆改留分类在控制条件不足时保持 unknown。[metric:total_floor_area_sqm] [depth:retain_renovate_demolish]
+
+### 03.4 大钟寺AI产业聚集区
+
+#### 03.4.1 智能原生服务交汇场
+
+在 `PROV-KEY-003` 内建议将智能终端、内容工具、企业服务与社区需求匹配，形成可试用、可退出、可人工申诉的服务场，而不是屏幕密集的商业展厅。地铁站四象限的步行连通先以现状调查和可逆导视验证；不推断新增出入口或地下工程可行性。[data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/roads.geojson#NODE-STATION-001] KPI 为步行绕行改善、公共服务使用率、无障碍问题闭环和商业占用上限执行率。
+
+#### 03.4.2 企业共性服务与静态交通治理
+
+建议用共享会议、合规、算力预约、招聘、测试和物流微枢纽降低中小企业成本；停车与装卸采用预约错峰，数据只保留聚合占用，不追踪个人。运营主体可由园区平台通过公开采购确定，服务接口和数据须可迁移。KPI 为共享服务使用率、平均响应时间、装卸冲突和供应商切换演练结果。前置是停车普查、产权、道路断面、消防和地铁运营资料。
+
+![三处临时重点区索引及 low-confidence 边界警示](assets/figures/key-areas.png)
+
+## 04 激活京张
+
+### 04.1 六张日常公共服务场景卡
+
+#### 04.1.1 场景卡01：AI 慢行与无障碍导航
+
+**服务对象**：老人、残障人士、儿童照护者、访客。**空间载体**：`ROAD-BELT-001` 与六处服务站。[data:geometry/roads.geojson#ROAD-BELT-001] **输入数据**：经核验的坡度、台阶、施工封闭、照明和公共设施状态；OSM 仅作 partial 背景。**隐私边界**：不做人脸、不保存连续个体轨迹，定位可仅在端侧处理。**人工接管/退出**：一键转人工服务站；提供纸质地图和现场导视；用户可清除本次路线。**运营主体**：建议由公共空间运营方牵头，残障组织参与审查。**KPI**：无障碍断点闭环率、错误路线纠正时长、人工转接成功率。**试点阶段**：阶段一，以单站—单段步行为封闭评测范围，达标后扩展。
+
+#### 04.1.2 场景卡02：社区健康服务导航
+
+**服务对象**：老人、慢病居民、访客。**空间载体**：`PUBLIC-006` 代际帮助站。[data:geometry/public_space.geojson#PUBLIC-006] **输入数据**：公开的机构、科室、开放时间和无障碍信息，不接入病历。**隐私边界**：不做诊断、不存健康问答原文，敏感问题默认离线。**人工接管/退出**：转接现场社工或官方热线；紧急情况提示拨打急救电话；用户可选择纸质清单。**运营主体**：建议由社区公共服务机构牵头，医疗专业人员审核知识库。**KPI**：错误转介率、人工复核覆盖率、老年用户完成率。**试点阶段**：阶段一，仅做信息导航；医疗 AI 不替代医生判断。
+
+#### 04.1.3 场景卡03：开放课程与学习伴侣
+
+**服务对象**：儿童、青年、高校师生、居民。**空间载体**：`PUBLIC-002` 开源学习台阶。[data:geometry/public_space.geojson#PUBLIC-002] **输入数据**：清权课程、开放资料、教师审核题库。**隐私边界**：不建立儿童商业画像，不把学习对话用于模型训练。**人工接管/退出**：教师可关闭生成内容并切换离线教案；家长/学生可删除记录。**运营主体**：建议由高校与社区教育机构共管。**KPI**：课程免费覆盖、事实错误纠正时长、教师复核率、无障碍版本覆盖。**试点阶段**：阶段一，小班、离线沙盒；教育 AI 不替代教师评价。
+
+#### 04.1.4 场景卡04：铁路文化可信导览
+
+**服务对象**：居民、学生、游客、研究者。**空间载体**：`GREEN-001` 线性遗产叙事轴。[data:geometry/green_space.geojson#GREEN-001] **输入数据**：档案馆、博物馆及经专家审核的公开史料。**隐私边界**：不追踪参观路径，不基于身份差异化推送商业内容。**人工接管/退出**：每条生成解说显示来源并可转人工讲解；争议内容下线复核。**运营主体**：建议由遗产研究机构、园林运营和社区共同编辑。**KPI**：来源标注率、纠错闭环、人工讲解场次、无障碍音频覆盖。**试点阶段**：阶段一，从三处史料核验点开始。
+
+#### 04.1.5 场景卡05：包容运动与儿童共玩助手
+
+**服务对象**：儿童、青年、老人、残障人士及照护者。**空间载体**：`PUBLIC-004` 包容运动场。[data:geometry/public_space.geojson#PUBLIC-004] **输入数据**：设施开放状态、天气、活动预约和匿名设备故障。**隐私边界**：不采集儿童影像或生物特征；客流仅做不可逆聚合。**人工接管/退出**：现场管理员有停机权；保留无设备的自由活动时段。**运营主体**：建议由社区体育机构与无障碍顾问共管。**KPI**：跨年龄活动次数、设施故障闭环、免费时段、伤害事件。**试点阶段**：阶段二，先以非联网互动设施验证。
+
+#### 04.1.6 场景卡06：公共事务问答与申诉台
+
+**服务对象**：居民、中小企业、访客、城市服务人员。**空间载体**：`PUBLIC-001` 青年公共前场。[data:geometry/public_space.geojson#PUBLIC-001] **输入数据**：公开办事指南、活动规则和服务目录。**隐私边界**：不处理身份证明原件，不跨用途拼接咨询记录。**人工接管/退出**：低置信答案拒答并转人工；纸质/电话渠道并行；可申请删除会话。**运营主体**：建议由公共服务窗口负责内容，技术方仅提供工具。**KPI**：转人工率、错误答案率、申诉闭环时长、非数字渠道可用率。**试点阶段**：阶段一，仅覆盖低风险公开信息。
+
+### 04.2 六张产业与城市验证场景卡
+
+#### 04.2.1 场景卡07：产业验证一—模型安全与开源适配
+
+**服务对象**：高校师生、中小企业、开发者、检测机构。**空间载体**：众智园受控实验室。**输入数据**：合成数据、清权测试集、模型卡和威胁模型。**隐私边界**：生产数据不得进入；测试数据按项目隔离和到期删除。**人工接管/退出**：安全负责人可断网、停算、撤销凭据并封存日志。**运营主体**：建议由独立检测机构牵头，高校和园区协同。**KPI**：漏洞发现/闭环、可复现实验率、供应商可替换率、零敏感数据外泄。**试点阶段**：阶段一，完全隔离沙盒；未通过红队评测不得外场部署。[data:geometry/key_areas.geojson#PROV-KEY-001]
+
+#### 04.2.2 场景卡08：产业验证二—机器人共道测试
+
+**服务对象**：机器人企业、配送员、残障人士、园区运维。**空间载体**：未来交接场的封闭测试环。**输入数据**：设备状态、匿名障碍物类别、人工标注险情。**隐私边界**：不做人脸识别；视频短期本地留存且仅用于事故复盘。**人工接管/退出**：现场急停、远程接管与人工搬离三重机制；任何人可触发安全停机。**运营主体**：建议由有资质测试机构与场地运营方负责。**KPI**：每千公里人工接管、冲突、最小通行宽度占用、零严重伤害。**试点阶段**：阶段一仅封闭 ODD；阶段二仅在获得主管部门批准后讨论扩围。
+
+#### 04.2.3 场景卡09：产业验证三—低速自动驾驶接驳
+
+**服务对象**：通勤者、访客、行动不便者、车辆研发团队。**空间载体**：受控园区道路或获批 ODD，不以 `ROAD-BELT-001` 作为自动获批线位。**输入数据**：车辆状态、道路设施、天气和匿名事件标签。**隐私边界**：乘客身份与运行日志分离；不保留连续个体轨迹。**人工接管/退出**：安全员、远程接管、固定上下客点和替代摆渡车；越界或通信异常立即降级停车。**运营主体**：建议由获许可运营者负责，交通与场地管理方监督。**KPI**：接管率、准点率、无障碍乘车成功率、最小风险状态成功率。**试点阶段**：阶段二，仅封闭或依法获批 ODD，未获批不得上公共道路。
+
+#### 04.2.4 场景卡10：无人配送微枢纽
+
+**服务对象**：居民、商户、配送员、园区后勤。**空间载体**：大钟寺微枢纽与获批短路线。**输入数据**：订单编号、箱体状态、路线障碍和预约时窗。**隐私边界**：地址与设备日志分离，最短留存，不采人脸。**人工接管/退出**：配送员接替、远程急停、人工取件柜；用户可选择传统配送。**运营主体**：建议由持证物流运营者负责，街区运营方协调。**KPI**：人行冲突、超时率、人工接替时长、投诉闭环、配送员劳动影响评估。**试点阶段**：阶段二，先封闭园区；公共道路必须另行获批 ODD。[data:geometry/key_areas.geojson#PROV-KEY-003]
+
+#### 04.2.5 场景卡11：建筑能耗与空间运维数字孪生
+
+**服务对象**：设施运维、中小企业、研究者、公共空间使用者。**空间载体**：经产权方授权的单栋既有建筑和 `PUBLIC-003` 周边。[data:geometry/public_space.geojson#PUBLIC-003] **输入数据**：分项能耗、设备故障、室内环境和匿名聚合占用。**隐私边界**：不使用个体门禁、工位或 Wi-Fi 轨迹；研究接口只给聚合数据。**人工接管/退出**：运维人员可切回手动控制；模型不得直接越权控制生命安全系统。**运营主体**：建议由设施管理方负责，第三方审计模型与节能基线。**KPI**：故障提前发现率、误报率、能耗改善、手动回退成功率。**试点阶段**：阶段二，从单栋非关键系统开始。
+
+#### 04.2.6 场景卡12：中小企业场景撮合与采购前验证
+
+**服务对象**：中小企业、创业者、高校团队、居民问题提出者、潜在采购方。**空间载体**：`PUBLIC-005` 学生原型市集与东翼验证空间。[data:geometry/public_space.geojson#PUBLIC-005] **输入数据**：公开问题清单、能力声明、评测报告和利益冲突披露。**隐私边界**：不公开商业秘密；评审数据与营销名单隔离。**人工接管/退出**：评审委员会可暂停项目；企业可带走数据并删除平台副本；未达标即退出，不暗示采购承诺。**运营主体**：建议由中立平台牵头，居民、专家和采购代表分席评审。**KPI**：中小企业占比、平均准入周期、第三方复现率、失败复盘公开率、供应商切换成本。**试点阶段**：阶段一建立规则，阶段二开展小额原型验证。
+
+## 05 落地京张
+
+### 05.1 四阶段推进：每一步都可停止
+
+时间窗口从取得必要授权和基础资料之日（T0）起算，不代表已确定工期。`PHASE-001`—`PHASE-004` 是 medium-confidence 概念分区，其面积只用于当前模型复算，官方边界替换后需重算。[data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-004] [metric:phasing_total_area_sqm]
+
+| 阶段 | 时间窗口与空间范围 | 建议牵头/协同主体 | 准入与退出条件 | 资金及运维来源建议 | 可量化 KPI 与复盘门槛 |
+| --- | --- | --- | --- | --- | --- |
+| 一：先导验证 | T0—T0+18 月；单站、单栋、封闭测试环和公开信息服务 | 区级统筹平台建议牵头；高校、社区、残障组织、测试机构协同 | 有权使用场地、数据清权、伦理/安全审查、人工接管、保险；发生严重伤害、敏感数据泄露或无法回退即停 | 专项研究、运营预算、公开征集试点资金；企业承担自身测试与撤场 | 12 卡中至少 6 卡完成；100% 有退出演练；重大事件为 0；未达 80% KPI 或连续两次复盘不通过则不扩围 |
+| 二：空间缝合 | T0+12—36 月；六站、既有合法过街、公共空间与慢行断点 | 公共空间/交通管理主体建议牵头；园林、街道、运营方协同 | 交通、文保、树木、管线、无障碍和消防审查；投诉或通行冲突超阈值则缩减活动/恢复原状 | 城市更新与公共空间维护资金为主，公益合作为辅；商业活动反哺但不得换独占权 | 六站无障碍链审查；断点闭环率≥90%；免费时段占比≥70%；季度投诉按期闭环≥90% |
+| 三：片区更新 | T0+30—72 月；三核两翼内经确认的既有建筑与公共界面 | 片区实施主体建议牵头；产权方、专业团队、产业平台协同 | 官方边界、控规、权属、结构消防和市政容量明确；未取得产权同意或专业许可即退出相应地块 | 依法安排的更新资金、物业运维、服务采购和可审计社会资金 | 三个产业验证场景完成独立评估；中小企业参与≥50%；供应商迁移演练通过；扰民指标连续两季合格 |
+| 四：长期治理 | T0+60 月起滚动；全带网络及成熟外部协同节点 | 多方治理理事会建议牵头；公共部门、社区、高校、企业、专业机构协同 | 只有前阶段公共价值、安全、财务与运维均通过才纳入常态；年度审计不合格则降级或终止 | 基础公共服务预算、场地运维收入、课程/活动合作、竞争性服务采购；分账公开 | 年度公开报告；数据事件闭环 100%；居民/残障/青年席位落实；每两年供应商退出演练；连续两年净公共价值为负则终止项目 |
+
+各阶段面积值不用于投资承诺；阶段顺序允许重叠，但每个项目必须独立过闸。[metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm] [metric:phase_4_area_sqm] [depth:phasing_implementation]
+
+### 05.2 长期运营：一个理事会、四个中心、两本账
+
+建议建立“京张 AI 公共创新理事会”，其中公共管理、居民、青年、残障人士、高校、中小企业、运营与独立专家分席表决，技术供应商不得单独形成控制权。四个执行中心分别是：公共空间与遗产、场景准入与安全、产业转化与人才、数据与数字基础设施。所有主体均为建议角色，不冒充机构承诺。
+
+两本账分别记录公共价值和财务运维。公共价值账公开免费服务、包容性、安全、投诉、环境和知识产出；财务账公开公共资金、服务采购、场地收入、赞助边界、维护与撤场成本。年度活动采用“小月河公共问题季—高校开源月—产业验证周—铁路文化共学日”的循环，活动后必须进入导师、试点、独立评估或退出路径，避免只做传播。品牌合作不得覆盖历史标识、基础导视和公共设施命名。
+
+采购采用开放接口、数据可携、源代码托管/文档交付、分段合同和退出预算；关键服务至少每两年进行供应商切换演练。场景目录按“征集—预审—伦理/安全—封闭验证—公众反馈—独立评估—扩围/退出”运行。年度报告须同时公布成功、失败和终止案例。[depth:renewal_project_list]
+
+### 05.3 风险登记表：责任、触发、缓解、剩余风险与停机规则
+
+| 风险 | Owner（建议） | Trigger | Mitigation | Residual | Stop-rule |
+| --- | --- | --- | --- | --- | --- |
+| 数据来源不明或 OSM partial 被误作官方 | 数据治理中心 | 图层缺 source/confidence 或用 OSM 推断红线 | 自动校验、人工抽检、显著水印、官方资料替换复算 | 背景仍可能遗漏 | 无来源或无法说明许可的图层下线 |
+| 隐私侵害与用途漂移 | 数据保护负责人 | 收集人脸、连续轨迹、儿童画像或跨用途拼接 | 数据最小化、端侧处理、分区隔离、短留存、删除接口 | 聚合数据仍有重识别可能 | 发现敏感数据泄露立即停服、封存并通知 |
+| 模型错误、偏差或不可解释 | 场景负责人 | 高风险错误、群体差异超阈值、无法复现 | 模型卡、分群测试、拒答、人工复核、独立评估 | 长尾错误不可消除 | 医疗/教育/法律建议无专业复核即停用 |
+| 网络与供应链安全 | 安全负责人 | 异常访问、依赖漏洞、远程接管失效 | 零信任、最小权限、离线降级、SBOM、红队测试 | 零日漏洞 | 关键系统无法隔离或回退立即断网停机 |
+| 自动驾驶、机器人、无人配送越界 | 交通/测试负责人 | 离开封闭或获批 ODD、通信中断、近失事件超阈值 | 地理围栏、安全员、急停、最小风险状态、保险 | 复杂混行仍不可完全预测 | 未获批不得上公共道路；严重伤害或越界即终止试点 |
+| 无障碍失败与数字鸿沟 | 包容性负责人 | 关键路径中断、无人工/纸质替代、弱势用户完成率过低 | 残障共创、WCAG/线下审查、人工窗口、培训 | 部分障碍需工程整改 | 基础服务若只能数字访问则暂停上线 |
+| 历史文化误读或建设影响 | 遗产负责人 | 史料无出处、触及保护对象、施工振动异常 | 档案核验、文保评估、可逆设施、监测 | 新解释仍可能有争议 | 未获文保许可不得施工；发现遗存立即停工 |
+| 施工与活动扰民 | 空间运营负责人 | 噪声、照明、人流、垃圾投诉超阈值 | 分时施工、安静时段、容量预约、快速清运 | 大型活动仍有短时影响 | 连续两期超阈值则取消或缩减活动 |
+| 采购锁定与运维断供 | 采购负责人 | 数据不可导出、接口封闭、单一供应商失联 | 开放标准、托管文档、分段合同、退出预算、迁移演练 | 专有硬件替换仍有成本 | 迁移演练失败不得续约关键服务 |
+| 财务不可持续或公共空间商业化 | 理事会财务委员 | 维护缺口扩大、收费/广告挤占基础服务 | 两本账、商业占用上限、多元资金、年度审计 | 公益项目收入波动 | 基础服务受损或商业占用越线则终止相关合作 |
+
+### 05.4 权利保障与可测包容
+
+任何人享有知情、拒绝自动化、人工复核、删除可删数据、申诉、无障碍和非数字替代权。AI 不在医疗、教育、法律或公共安全领域替代专业判断；紧急调度和生命安全系统始终由有资质人员负责。儿童数据默认不收集，残障人士不是“测试对象”而是共同决策者；配送员、保安、保洁和客服的劳动影响纳入试点评估。
+
+每季度发布七项包容 KPI：基础公共空间免费开放时段≥70%；数字服务人工替代覆盖率 100%；高风险输出人工复核率 100%；无障碍问题按期闭环≥90%；儿童活动零商业画像；中小企业试点占比≥50%；居民代表提出的整改按期回应≥90%。阈值是本方案建议，须由治理主体与公众审议后确认；连续两季未达标的服务降级或退出。
+
+## 06 证明京张
+
+### 06.1 指标证据：只报告能复算的内容
+
+当前几何模型可复算总体面积、各概念用地块、绿地、公共空间、建筑基底、道路中心线、四阶段与三处临时重点区；其中受 `SITE-001` 影响的比例指标取最弱输入置信度。例如绿地率 0.085343、公共空间率 0.005123、建筑密度 0.015368 都是 low confidence，只说明当前概念几何，不是规划控制指标。[metric:green_ratio] [metric:public_space_ratio] [metric:building_density] 建筑基底合计 175,394.943 平方米为 medium-confidence 概念基底复算，也不能推导总建面或 FAR。[metric:building_footprint_area_sqm]
+
+![指标复算、置信度与资料缺口的当前证据快照](assets/figures/metrics-evidence.png)
+
+| 结论 | 证据链 | 置信度与用途 |
+| --- | --- | --- |
+| 总体工作范围约 11.4 平方千米 | `SITE-001` → `site_area_sqm` | low；待官方边界替换复算，不作审批依据 |
+| 三处重点区存在于模型 | `PROV-KEY-001/002/003` → `key_area_count` | low；只作内容组织和方案讨论 |
+| 线性公共绿脊与六处公共空间有几何表达 | `GREEN-001`、`PUBLIC-001`—`PUBLIC-006` | medium；概念设计，不是法定绿地或工程放线 |
+| 四阶段覆盖模型范围 | `PHASE-001`—`PHASE-004` → `phasing_total_area_sqm` | medium；概念分期，不是建设时序承诺 |
+| 总建面、FAR、道路面积、道路率不可得 | 对应 metrics 状态为 unknown | 不补数；待控规、层数/FAR、道路宽度资料 |
+
+所有数值均须按 [assumption:A-PROVISIONAL-GEOMETRY-001] 和 [assumption:A-RECOMPUTE-001] 管理；区级规划指标仅为方向参考，不能当作项目实测目标。[assumption:A-DISTRICT-PLAN-001] [depth:metrics_recalculation]
+
+为保证机器完整读取，以下列出 `metrics.json` 中其余全部 known 指标。十个概念用地分块面积为 [metric:land_use_lu_001_area_sqm] [metric:land_use_lu_002_area_sqm] [metric:land_use_lu_003_area_sqm] [metric:land_use_lu_004_area_sqm] [metric:land_use_lu_005_area_sqm] [metric:land_use_lu_006_area_sqm] [metric:land_use_lu_007_area_sqm] [metric:land_use_lu_008_area_sqm] [metric:land_use_lu_009_area_sqm] [metric:land_use_lu_010_area_sqm]；按代码汇总为 [metric:land_use_code_05_area_sqm] [metric:land_use_code_0702_area_sqm] [metric:land_use_code_0801_area_sqm] [metric:land_use_code_0802_area_sqm] [metric:land_use_code_1401_area_sqm]，并以 [metric:land_use_total_area_sqm] 复核总和。它们均是概念几何值，不改变法定用途。
+
+绿地绝对面积为 [metric:green_space_area_sqm]；十二个建筑概念基底分别为 [metric:building_bldg_001_footprint_area_sqm] [metric:building_bldg_002_footprint_area_sqm] [metric:building_bldg_003_footprint_area_sqm] [metric:building_bldg_004_footprint_area_sqm] [metric:building_bldg_005_footprint_area_sqm] [metric:building_bldg_006_footprint_area_sqm] [metric:building_bldg_007_footprint_area_sqm] [metric:building_bldg_008_footprint_area_sqm] [metric:building_bldg_009_footprint_area_sqm] [metric:building_bldg_010_footprint_area_sqm] [metric:building_bldg_011_footprint_area_sqm] [metric:building_bldg_012_footprint_area_sqm]。单体值仅用于总和审计，不代表现状测绘、楼层、产权或拆改留决定。
+
+三个临时重点区分别为 [metric:key_area_prov_key_001_area_sqm] [metric:key_area_prov_key_002_area_sqm] [metric:key_area_prov_key_003_area_sqm]，总和为 [metric:key_area_total_area_sqm]；全部为 low confidence。以上完整索引用于可追溯，不鼓励把数值堆砌成设计结论。
+
+### 06.2 六类任务的闭环检查
+
+| 任务 | 本文回答 | 结构化证据 | 尚需专业深化 |
+| --- | --- | --- | --- |
+| 理念与辨识 | “智轨共生”名称、英文副标题、原创双轨视觉方向 | [source:AGENT-TASKBOOK] | Logo 比例、字体许可和应用手册 |
+| 产业生态/指标/网络/空间组织 | 五段转化链、三核两翼、七案例和公共价值指标 | [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure] | 企业需求、产业基线、空间权属与财务模型 |
+| AI 文化社会城市/场景 | 八类用户、12 张场景卡、三代叙事 | [data:geometry/public_space.geojson#PUBLIC-003] | 用户研究、伦理评审和真实可用性测试 |
+| 交通/公共/创新服务/新基建 | 慢行优先、六站、分层数据与有界 ODD | [data:geometry/roads.geojson#ROAD-BELT-001] [depth:municipal_new_infrastructure] | 交通量、断面、管线、供电、通信和消防 |
+| 遗址公园活力带与缝合 | 历史轴、既有合法通道优先、可逆公共空间 | [data:geometry/green_space.geojson#GREEN-002] | 文保、树木、蓝线、工程与产权核查 |
+| 京张+中关村+AI文化及长期运营 | 三代叙事、三朝圣节点、理事会/四中心/两本账 | [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] | 机构授权、章程、采购与稳定资金来源 |
+
+AI+交通、医疗、教育、机器人、自动驾驶、无人配送均已进入具体场景卡，并分别设置数据边界、人工接管和停止规则。场景卡是试点建议，不代表批准或常态运营。[depth:risk_missing_data]
+
+### 06.3 资料缺口与下一轮决策清单
+
+优先级 A：取得官方总体和三重点区 polygon、文保范围、权属、控规、现状建筑测绘、道路红线/断面、轨道站点和市政管线资料；完成后重跑全部 geometry、metrics 与图层一致性检查。优先级 B：开展用户研究、无障碍审计、交通/停车/人流、生态树木、噪声照明、能源通信和产业需求调查。优先级 C：为每项试点建立 DPIA/伦理评估、网络安全等级、保险、ODD、人工接管、撤场和供应商迁移文件。
+
+资料未补齐时，允许继续进行的是公开资料研究、共创、离线原型、合成数据测试和可逆活动；不允许的是推断法定控制、开挖施工、占用铁路/文保/绿地、在公共道路部署自动设备、接入敏感数据或以本方案名义作政府承诺。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:height_massing_character]
+
+### 06.4 可追溯性与成果状态声明
+
+正文证据标签采用 source、standard、depth、data、metric、assumption 六类方括号标记，均回指当前提交包内真实 ID；data 标签同时包含相对路径与要素 ID。案例表中的七个外部网页仅作经验参照，已给直接 URL、访问日期、可借鉴点和不可照搬边界，待 Task 11 登记，不改变 `sources.json`。
+
+本阶段完成的是 `proposal.md` 主体文本与版权/生成声明。本文不声称计划中的新图件、HTML、PDF、正式视觉识别或工程设计已完成；现有展示层如需引用本轮正文，须在后续任务中重新生成并独立校验。最终判断仍由公众、专业团队和有权主体作出。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
