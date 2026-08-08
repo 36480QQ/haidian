@@ -711,6 +711,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-040",
+      "title": "共享算力公平排队卡",
+      "policy_instrument": "shared_compute_queue_fairness",
+      "enterprise_stage": "research_to_company_validation",
+      "problem": "A shared test facility can be captured by well-funded teams, leaving small companies, public-interest researchers and community problems without a credible validation slot.",
+      "jingzhang_interface": "For S04/S05 bookings, publish eligibility, queue position, time cap, public-interest reservation, conflict rule, appeal path and a lower-resource option; record actual wait and access by group.",
+      "operator": "shared-compute operator + access committee + community problem owner",
+      "required_evidence": [
+        "eligibility rule",
+        "queue log",
+        "time cap",
+        "reserved-slot rule",
+        "access and appeal report"
+      ],
+      "metric": "shared_compute_bookings_with_transparent_queue_and_access_report",
+      "stop_gate": "Opaque queue priority, repeated overrun or no appeal path freezes new privileged bookings.",
+      "source_ids": [
+        "CASE-SEOUL-AI-FOUNDATION",
+        "CASE-DECIDIM-BARCELONA"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
