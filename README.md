@@ -122,7 +122,15 @@ open-city.ai 将把通过发布审核的投稿整理成开源可视化网站，�
 
 ## 参与方式
 
-1. Fork 本仓库。
+仓库中的 PDF、图件和空间数据会随方案数量持续增长。参与者默认不需要完整克隆所有投稿；请采用 blobless partial clone + sparse checkout，只下载任务书、规则、脚本、模板和自己的方案目录。其他方案先通过轻量索引阅读标题、摘要和链接，选中后再按需获取正文或图纸。详细命令见 [`skills/urban-design-ai-submission/references/lightweight-workspace.md`](skills/urban-design-ai-submission/references/lightweight-workspace.md)。
+
+1. Fork 本仓库，并优先用轻量引导脚本创建工作区：
+
+```bash
+curl -fsSLo /tmp/bootstrap_participant_workspace.py https://raw.githubusercontent.com/open-city-ai/haidian/main/scripts/bootstrap_participant_workspace.py
+python3 /tmp/bootstrap_participant_workspace.py --fork-owner <github-login> --github-login <github-login> --proposal-slug <proposal-slug> --target haidian
+cd haidian
+```
 2. 推荐先安装参赛 skill，让 AI agent 直接按项目规则工作。安装后在新的 agent 会话中使用 `$urban-design-ai-submission`：
 
 ```bash
@@ -133,7 +141,7 @@ python3 scripts/install_submission_skill.py --check
 建议给 agent 的启动提示：
 
 ```text
-Use $urban-design-ai-submission to participate in the Centennial Jing-Zhang AI Innovation Belt open call. Read the repo brief, scaffold a formal package, run self-check, and prepare a PR under submissions/<github-login>/<proposal-slug>/.
+Use $urban-design-ai-submission to create a lightweight sparse workspace and participate in the Centennial Jing-Zhang AI Innovation Belt open call. Read peer work progressively, prepare a verifiable proposal package under submissions/<github-login>/<proposal-slug>/, and pass local PR preflight before uploading.
 ```
 
 3. 阅读 `brief/`、`brief/site-package/` 和 `data/source_registry.json` 中已确认可公开或已清权的任务书、结构化资料和资料用途边界。
@@ -156,6 +164,7 @@ python3 scripts/scaffold_ai_submission.py \
 
 7. 按 formal 模板完善 `proposal.md`、图纸、HTML 可视化、合规矩阵、标准矩阵、深度矩阵和自检结果。脚手架默认是 `package_state=scaffold`，不能投稿；必须替换正文、至少一个设计图层、五张图、HTML 和有效 A3/A0 PDF，并移除 `SCAFFOLD-DRAFT`。每次手动修改 `proposal.md` 后，重新生成 `report/proposal.html`。
 8. 运行 `python3 scripts/finalize_submission.py submissions/<your-github-login>/<proposal-slug>`；它会拒绝未修改模板和零页 PDF，成功后写入 `package_state=ready_for_review` 并刷新 manifest 哈希。随后运行一键自检，修复到 PASS 后发起 Pull Request。PR 作者只能修改自己 GitHub 用户名对应的目录。
+   - 发起 PR 前运行 `python3 scripts/participant_preflight.py submissions/<your-github-login>/<proposal-slug> --pr-author <your-github-login> --check-push`，提前检查目录归属、变更范围、大文件、完整自检、fork 远程与推送权限。
 9. 方案合并到 `main` 后会自动进入公开展示页。`gallery-publication.json` 仅用于首页精选，或由维护者明确暂停某个已合并方案的展示；`published=false` 表示暂停，`published=true` 可记录经人工内容、视觉和版权审核的版本，`featured=true` 决定首页精选。然后运行 `scripts/generate_submissions_data.py`；参赛者不得修改该清单或 `submissions-data.js`。
 
 示例：
