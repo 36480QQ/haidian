@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把铁路交接班转化为AI城市治理协议：一条连续交接线串联研发、验证、开源与公共服务，十二个可逆场景都设置人工接管、无AI等价服务与退出条件。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.1"
+iteration: "v1.6.2"
 ---
 
 # 京张交接线 / JING-ZHANG HANDOVER LINE
@@ -15,6 +15,10 @@ iteration: "v1.6.1"
 > 把智能交给城市，把责任交到人手中。
 
 本方案把京张铁路最朴素也最重要的制度——交接班——转译为AI时代的城市空间协议。研究把模型交给验证，验证把能力交给开源社区，社区把服务交给市民；当系统不确定、失联、越界或被人质疑时，控制权必须清楚地交回人手中。因此“一条交接线、三座交接场、两翼支撑、十二个可逆场景”既是空间结构，也是公共责任结构。所有精准几何均为可复算的概念建议，所有法定控制均等待专业团队和政府部门确认。
+
+![交接线公共界面概念表现：值班人员当面交接、步道旁的物理停用柱、限定在专用道内的配送机器人、连续无障碍路径与人工窗口并存](assets/figures/handover-scene.jpg)
+
+上图是**AI 生成的概念表现图** [source:IMAGEGEN-CONCEPT-SCENE]，不是现状照片、测绘成果或批准方案，画面中的人物为虚构形象，不指认任何真实地点、单位或品牌；它只用来说明一件事——当人工接管、物理停用入口、机器人专用道与无障碍路径必须同时存在时，公共界面大致是什么样子。生成模型、完整提示词、用途与限制记录在 report/copyright_statement.md 与 sources.json。所有可复算的空间结论仍以九类几何与 metrics.json 为准，不以任何图面为准。
 
 ![三座交接场的可逆公共界面、人工接管与无AI等价通行空间原型；概念表现，非现状照片或批准方案](assets/figures/spatial-prototype.png)
 
