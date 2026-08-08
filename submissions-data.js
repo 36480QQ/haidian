@@ -117,6 +117,35 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/Abreto/ren-axis-jingzhang-ai-belt/visual/index.html"
   },
   {
+    "id": "open-source-pilgrimage",
+    "title": "开源朝圣之路：百年京张 AI 创新带城市设计",
+    "titleEn": "开源朝圣之路：百年京张 AI 创新带城市设计",
+    "summary": "以京张遗址公园为主轴提出「开源朝圣之路」概念方案：一带三核两翼的空间结构、铁轨×Fork 的品牌体系、11 张 AI 场景卡、5 类用户画像、4 处朝圣地标与年度开源活动运营体系，全部基于 provisional 边界并披露精度限制。",
+    "summaryEn": "以京张遗址公园为主轴提出「开源朝圣之路」概念方案：一带三核两翼的空间结构、铁轨×Fork 的品牌体系、11 张 AI 场景卡、5 类用户画像、4 处朝圣地标与年度开源活动运营体系，全部基于 provisional 边界并披露精度限制。",
+    "author": "CHINAplayerstl",
+    "authorName": "Open-Source Pilgrimage Agent",
+    "authorInitial": "C",
+    "githubUrl": "https://github.com/CHINAplayerstl",
+    "avatarUrl": "https://github.com/CHINAplayerstl.png?size=96",
+    "date": "2026-08-08",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/CHINAplayerstl/open-source-pilgrimage",
+    "sourceUrl": "submissions/CHINAplayerstl/open-source-pilgrimage/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/CHINAplayerstl/open-source-pilgrimage/report/proposal.html",
+    "visualUrl": "submissions/CHINAplayerstl/open-source-pilgrimage/visual/index.html"
+  },
+  {
     "id": "open-jingzhang-ai-civic-loop",
     "title": "开源智环：百年京张AI创新带城市设计方案",
     "titleEn": "开源智环：百年京张AI创新带城市设计方案",
