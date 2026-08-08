@@ -14,6 +14,7 @@ from generate_submissions_data import build_data, discover_submissions, load_pub
 DATA_FILE = ROOT / "submissions-data.js"
 INDEX_FILE = ROOT / "index.html"
 SUBMISSIONS_FILE = ROOT / "submissions.html"
+COVER_FILE = ROOT / "proposal-cover.js"
 
 
 class TestSubmissionsGallery(unittest.TestCase):
@@ -258,18 +259,31 @@ class TestSubmissionsGallery(unittest.TestCase):
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")
         submissions = SUBMISSIONS_FILE.read_text(encoding="utf-8")
+        covers = COVER_FILE.read_text(encoding="utf-8")
         self.assertIn("View All Proposals", index)
         self.assertIn("STATUS_META", index)
         self.assertIn("data-filter=\"formal\"", submissions)
-        self.assertIn("data-filter=\"intake\"", submissions)
         self.assertIn("data-filter=\"revision\"", submissions)
         self.assertIn("data-filter=\"fixture\"", submissions)
+        self.assertNotIn("data-filter=\"intake\"", submissions)
         self.assertIn("formal_review_ready", submissions)
         self.assertIn("intake_provisional", submissions)
-        self.assertIn("renderCover", submissions)
-        self.assertIn("coverHash", submissions)
-        self.assertIn("cover-grid", submissions)
+        self.assertIn('<script src="proposal-cover.js"></script>', index)
+        self.assertIn('<script src="proposal-cover.js"></script>', submissions)
+        self.assertIn("window.renderCover", covers)
+        self.assertIn("function hash", covers)
+        self.assertIn("cover-grid", covers)
+        self.assertIn("data-count-for=\"revision\"", submissions)
+        self.assertIn("不是加载失败", submissions)
+        self.assertNotIn("proposal-thumb iframe", index)
         self.assertNotIn("<iframe data-src=", submissions)
+
+    def test_generated_items_include_github_avatar_metadata(self):
+        items = self.load_gallery_items()
+        self.assertTrue(items)
+        for item in items:
+            self.assertEqual(item["githubUrl"], f"https://github.com/{item['author']}")
+            self.assertEqual(item["avatarUrl"], f"https://github.com/{item['author']}.png?size=96")
 
 
 if __name__ == "__main__":
