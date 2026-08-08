@@ -1,0 +1,290 @@
+{
+  "type": "FeatureCollection",
+  "name": "jingzhang_ai_symbiosis_belt_land_use",
+  "metadata": {
+    "schema_version": "0.1.0",
+    "coordinate_reference_system": "EPSG:4326",
+    "area_calculation_crs": "EPSG:4548",
+    "partition_method": "horizontal_strips_tracing_site_boundary",
+    "boundary_status": "derived_from_provisional_site_boundary",
+    "usage_note": "所有用地分区均为基于临时边界派生的概念设计方案，不构成官方控规用地。"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-001",
+      "properties": {
+        "id": "LU-001",
+        "layer": "LAND_USE",
+        "name_zh": "大钟寺AI商业创新区",
+        "name_en": "Dazhongsi AI Commercial Innovation Zone",
+        "land_use_code": "05",
+        "land_use_category": "商业用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "south",
+        "description_zh": "以大钟寺为核心，融合AI商业体验、智能零售、产业展示与商务办公。对应大钟寺AI产业集聚区。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.340283,
+              39.954
+            ],
+            [
+              116.3553,
+              39.954
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.340283,
+              39.954
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-002",
+      "properties": {
+        "id": "LU-002",
+        "layer": "LAND_USE",
+        "name_zh": "南部城市更新混合区",
+        "name_en": "Southern Urban Renewal Mixed-Use Zone",
+        "land_use_code": "0701",
+        "land_use_category": "城镇住宅用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "south_transition",
+        "description_zh": "大钟寺至AI原点之间的过渡地带，以城市更新为导向的居住与社区服务混合区。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.340283,
+              39.954
+            ],
+            [
+              116.3553,
+              39.954
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.340283,
+              39.965
+            ],
+            [
+              116.340283,
+              39.954
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-003",
+      "properties": {
+        "id": "LU-003",
+        "layer": "LAND_USE",
+        "name_zh": "AI原点社区科研创新区",
+        "name_en": "AI Origin Community Research Zone",
+        "land_use_code": "0802",
+        "land_use_category": "科研用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "ai_origin",
+        "description_zh": "毗邻清华、北大等高校，布局AI基础研究、产学研协同创新空间。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34025,
+              39.9835
+            ],
+            [
+              116.35382,
+              39.9835
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.340283,
+              39.965
+            ],
+            [
+              116.34025,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-004",
+      "properties": {
+        "id": "LU-004",
+        "layer": "LAND_USE",
+        "name_zh": "AI原点核心公共文化与创新服务区",
+        "name_en": "AI Origin Core Public Culture & Innovation Service Zone",
+        "land_use_code": "0803",
+        "land_use_category": "文化设施用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "ai_origin_core",
+        "description_zh": "AI原点社区核心区。布局开源广场、智能体荣誉墙、AI公共体验馆、创客工坊与国际交流中心。对应北京AI原点社区重点区。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34089,
+              39.9935
+            ],
+            [
+              116.35349,
+              39.9935
+            ],
+            [
+              116.35382,
+              39.9835
+            ],
+            [
+              116.34025,
+              39.9835
+            ],
+            [
+              116.34089,
+              39.9935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-005",
+      "properties": {
+        "id": "LU-005",
+        "layer": "LAND_USE",
+        "name_zh": "北部研发与生态过渡区",
+        "name_en": "Northern R&D & Ecological Transition Zone",
+        "land_use_code": "0802",
+        "land_use_category": "工业研发用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "north_transition",
+        "description_zh": "AI原点到众智园之间的过渡地带，布局研发设计、产业服务与生态缓冲空间。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34177,
+              40.0075
+            ],
+            [
+              116.35426,
+              40.0075
+            ],
+            [
+              116.35349,
+              39.9935
+            ],
+            [
+              116.34089,
+              39.9935
+            ],
+            [
+              116.34177,
+              40.0075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-006",
+      "properties": {
+        "id": "LU-006",
+        "layer": "LAND_USE",
+        "name_zh": "众智园AI自主创新加速区",
+        "name_en": "Zhongzhiyuan AI Autonomous Innovation Acceleration Zone",
+        "land_use_code": "0802",
+        "land_use_category": "工业研发用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "scope_zone": "zhongzhiyuan",
+        "description_zh": "布局AI基础研究、算力基础设施、AI治理研究中心与自主创新园区。对应众智园AI自主创新加速区重点区。",
+        "usage_note": "概念设计方案。不构成官方控规用地或确权依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34177,
+              40.0075
+            ],
+            [
+              116.35426,
+              40.0075
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.34177,
+              40.0075
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
