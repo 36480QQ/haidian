@@ -6,18 +6,18 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "本方案以1909年詹天佑京张铁路人字形展线为文化原点，提出「京张人字链」总体概念：以京张遗址公园活力脊为纵笔，以中关村科技服务翼、小月河场景赋能翼为两撇，以众智园「研」、原点社区「创」、大钟寺「业」为三链节，构建可感知、可复算、可深化的一带概念方案与AI场景体系。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["enterprise-service-copilot", "robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v3.2"
+iteration: "v3.3"
 ---
 
 # 京张人字链：百年铁轨上的新“人”字形AI创新带
 
 ## 设计依据与资料清单
 
-> **给评审的五问五答**：①这是什么方案？——「京张人字链」概念方案：以1909年人字形展线为文化原点，一脊（活力脊）三链节（研·创·业）双翼（中关村服务翼/小月河场景翼）一网（14个AI场景节点）的空间与产业组织；②凭什么入选？——三层范围全覆盖、agent.1—6逐项响应、24项合规条目、172项经核实来源（学术/政策/标准）、全部指标可复算、一致性断言以 CI 校验为准；③方案边界？——开放共创概念建议，非控规、非工程、非承诺，provisional边界全程披露，官方polygon发布后统一重算；④AI做了什么？——方案由AI智能体生成并经历多轮Swarm联网集训（学术期刊+专业文件）驱动迭代，生成过程与来源全部登记可查；⑤人类如何接管？——全部空间建议标注「概念/待确认」，评审、复核与最终判断由人类与专业团队完成。
+> **给评审的五问五答**：①这是什么方案？——「京张人字链」概念方案：以1909年人字形展线为文化原点，一脊（活力脊）三链节（研·创·业）双翼（中关村服务翼/小月河场景翼）一网（14个AI场景节点）的空间与产业组织；②凭什么入选？——三层范围全覆盖、agent.1—6逐项响应、24项合规条目、173项经核实来源（学术/政策/标准）、全部指标可复算、一致性断言以 CI 校验为准；③方案边界？——开放共创概念建议，非控规、非工程、非承诺，provisional边界全程披露，官方polygon发布后统一重算；④AI做了什么？——方案由AI智能体生成并经历多轮Swarm联网集训（学术期刊+专业文件）驱动迭代，生成过程与来源全部登记可查；⑤人类如何接管？——全部空间建议标注「概念/待确认」，评审、复核与最终判断由人类与专业团队完成。
 
 > **Executive Summary (English)**: The *Jing-Zhang Renzi Chain* is an AI-generated, open-source urban design concept for Haidian's Centennial Jing-Zhang AI Innovation Belt. Named after the herringbone ("renzi") switchback of China's first self-built trunk railway (1909), it organizes the belt as 
 
-**one spine, three chain nodes, two wings, one network**: the Jing-Zhang Heritage Park vitality spine; three nodes — Zhongzhi Park (Research), AI Origin Community (Innovation), Dazhongsi (Industry); the Zhongguancun tech-services wing and the Xiaoyue River scenario wing; and a network of 14 AI scenario nodes under a 12-field governance baseline. All geometry is provisional (recalculated on official polygons); the package is fully machine-readable and reproducible — 172 verified sources, 34 metrics, 24 compliance items, 14 scenario cards, 8 personas, a 5-state machine with 4 gates, and a human-in-the-loop final-review commitment.
+**one spine, three chain nodes, two wings, one network**: the Jing-Zhang Heritage Park vitality spine; three nodes — Zhongzhi Park (Research), AI Origin Community (Innovation), Dazhongsi (Industry); the Zhongguancun tech-services wing and the Xiaoyue River scenario wing; and a network of 14 AI scenario nodes under a 12-field governance baseline. All geometry is provisional (recalculated on official polygons); the package is fully machine-readable and reproducible — 173 verified sources, 34 metrics, 24 compliance items, 14 scenario cards, 8 personas, a 5-state machine with 4 gates, and a human-in-the-loop final-review commitment.
 
 本方案是面向全球智能体开展「百年京张AI创新带城市设计开源征集」的开放共创建议 [source:AGENT-TASKBOOK]，由 AI 智能体独立生成，作为可供专业团队深化研究的参考方案，不替代正式规划，不构成政府审定结论。项目位于北京市海淀区，官方公告明确的三大定位为「百年京张文化带、都市AI生活体验带、AI融合创新带」，五大功能为「AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权」[source:OFFICIAL-ANNOUNCEMENT][source:AGENT-TASKBOOK]。
 
@@ -28,6 +28,8 @@ iteration: "v3.2"
 **控规成果架构衔接（公开文件）**：《北京市控制性详细规划实施管理办法》（2024年12月印发）确立「管控图则+引导导则」的控规成果架构 [source:SRC-BJ-CONTROL-PLAN-2024]——本方案图则式引导按「通则图+分项图」编排、数值以区间与比例表达，为深化设计留出弹性（概念，落地以审批通过的控规与规划许可为准）。
 
 **产业背景资料**：海淀区「1+X+1」现代化产业体系建设布局以人工智能为核心产业方向之一 [source:HAIDIAN-1X1]；北京市科委、中关村管委会关于「三区两翼」打造世界级AI集聚地的公开报道提供了三区两翼的产业语境 [source:THREE-AREAS-WINGS]。最新背景（公开报道，仅作背景，不用于任何边界/面积/控规结论）：北京经开区2025年发布「具身智能机器人十条」并印发配套措施 [source:SRC-BJ-EMBODIED-YZQ10]，截至2026年2月亦庄已集聚机器人企业300余家 [source:SRC-BJ-EMBODIED-300]；北京2024年7月入选首批智能网联汽车「车路云一体化」应用试点城市 [source:SRC-BJ-V2X-PILOT]，截至2025年底超400家企业参与北京车路云一体化产业生态 [source:SRC-BJ-V2X-400]；低空经济方面，国家四部门印发《通用航空装备创新应用实施方案（2024—2030年）》[source:SRC-NAT-LAE-GEAA]，北京印发《促进低空经济产业高质量发展行动方案（2024—2027年）》[source:SRC-BJ-LAE-ACTION]。OpenStreetMap 数据仅用于底图定位与概念引导，须遵守 ODbL 署名要求 [source:OSM-COPYRIGHT]。
+
+**征集成果整合路径（官方采购意向，2026-08-07 公开）**：中关村科学城管委会政府采购意向公开「百年京张AI创新带综合规划方案编制项目」——预计2026年9月启动综合规划编制，其中「城市设计整合」专项将整合国际方案征集阶段各方案成果、取5家入围团队方案亮点综合形成整合报告，区域规划统筹、产业发展与政策研究、交通专项研究同步开展，全部工作于2026年11月30日前完成 [source:SRC-ZGC-PROC-2026]——本方案据此定位为官方整合流程的开放共创参考输入（背景口径，不改变本方案任何设计结论，亦不构成对任何入围结果的主张）。
 
 **证据链文件**：本方案对应的机器可读证据包括 `sources.json`（全部引用源）、`assumptions.json`（全部假设与待补项）、`compliance_matrix.json`（公告1.3/1.4/1.5与智能体任务六项任务覆盖）、`standard_matrix.json`（专业标准响应）、`design_depth_matrix.json`（设计深度证据链）、`metrics.json`（面积与指标复算）、`geometry/*.geojson`（九类空间图层）。正文使用 source/standard/depth/data/metric 五类机器可读引用标签（如「source:来源ID」「data:geometry/图层文件#要素ID」）可校验引用，并嵌入五张本地派生图（`assets/figures/*.png`）。图与HTML均为解释层，权威数据仍是 GeoJSON 与 JSON。
 
@@ -545,7 +547,7 @@ iteration: "v3.2"
 | 面积指标口径 | EPSG:4548 投影复算自 geometry | 量测口径统一声明（概念级量测非测绘成果） | v0.2；metrics 复算章节 |
 | 场景卡数量 | 由任务缺口审计决定 12→14 张 | 补齐 AI+教育（SC-13）/AI+法律（SC-14）自选区域 | v0.2；一致性断言 |
 | 治理基线 | 11→12 项（新增法律接口登记） | 对标公开 Review Agent 优先事项逐项落实 | v0.8；评审响应对照表 v1.2 |
-| 来源筛选 | 联网检索候选→登记 sources.json | 仅采纳可核验 URL 的公开/学术来源（101 项为 v1.2 时点值，现 172 项） | v0.4—v1.2 |
+| 来源筛选 | 联网检索候选→登记 sources.json | 仅采纳可核验 URL 的公开/学术来源（101 项为 v1.2 时点值，现 173 项） | v0.4—v1.2 |
 | AI 生成标识 | 五图+图纸+页面显式「AI生成」标识 | 按《标识办法》承诺双轨标识+过程记录留存 | v1.2 |
 | 图面与图纸 | 脚本可复算生成（A3 14 页/A0 7 板，含概念剖面/三型街道断面/形态转译页） | 版本戳统一、字形修复、图面事实注记人工校核 | v0.9、v1.2、v1.4、v1.7、v2.0—v2.1 |
 
