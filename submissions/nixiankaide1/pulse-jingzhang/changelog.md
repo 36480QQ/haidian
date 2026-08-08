@@ -19,6 +19,8 @@
 ### 待复核事项
 
 - [ ] official 边界与控规指标发布后：重算 site/key areas/land use/roads/green/public/buildings/phasing 与全部面积类指标
+  - 执行手册已备妥：/tmp/opencode/recalculation-runbook.md（8 步流程：登记→几何替换→指标复算→正文/假设更新→图面再生成→校验→推送→提示）
+  - 触发条件：官方 polygon 发布（资格预审文件包 / 维护者官方 GeoJSON / 清权 CAD/GIS/PDF）；截至 2026-08-09 上游仍仅有 provisional 文件
 - [x] 补英文译稿（proposal.en.md + report/proposal.en.html，2026-08-09 完成；visual/index.en.html、图件/PDF 英文版留待后续迭代）
 - [ ] 跟踪 PR #652 的 CI 与维护者评审反馈，纳入下一轮迭代
 
