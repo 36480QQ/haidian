@@ -42,6 +42,50 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "BEIJING-SLOW-MOBILITY",
+      "url": "https://jtw.beijing.gov.cn/xxgk/xwfbh/202304/t20230423_3063783.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-08",
+      "usage": "City-level policy and method reference for walking/cycling priority, network continuity, intersection improvement and links between streets, greenways and waterfront routes; not a local baseline."
+    },
+    {
+      "id": "JINGZHANG-PUBLIC-FEEDBACK",
+      "url": "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202502/t20250207_4005553.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-08",
+      "usage": "Local public-participation evidence that North Third Ring Road, Sidaokou Road, Jingbao Road and Zhichun Road junction types require careful factual and engineering review; not an adopted project control for this submission."
+    },
+    {
+      "id": "JINGZHANG-PARK-CATALOG",
+      "url": "https://yllhj.beijing.gov.cn/ggfw/bjsggml/zhgy/hdq/202507/t20250724_4156668.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-08",
+      "usage": "Public-service context for 24-hour opening, stated accessibility condition and absence of on-site public parking; catalogue text requires field verification."
+    },
+    {
+      "id": "BEIJING-15-MINUTE-LIFE-CIRCLE",
+      "url": "https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/zhengce/mc/zwmcck/bsfw/bmfw/202302/t20230214_2916917.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-08",
+      "usage": "Resident-oriented service principle: everyday basic and quality services should be accessible within roughly a 15-minute walk; used as a design objective, not proof of current coverage."
+    },
+    {
+      "id": "JINGZHANG-FUTURE-BELT-2026",
+      "url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202604/t20260403_4574351.html",
+      "source_type": "official_public_secondary",
+      "accessed_date": "2026-08-08",
+      "usage": "Future-development background for the approximately 9 km innovation link, three-area/two-wing network and integration of spatial, transport and development planning; reported figures are not official polygons or statutory controls."
+    },
+    {
+      "id": "OSM-TRANSPORT-CONTEXT",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "osm",
+      "license": "ODbL 1.0; © OpenStreetMap contributors",
+      "accessed_date": "2026-08-08",
+      "query_extent": "provisional site boundary plus 800 m analytical buffer",
+      "usage": "Background-only transport accessibility screening for mapped station names, crossings and walking/cycling line density. Not used for official boundaries, road redlines, engineering feasibility or precise capacity conclusions."
     }
   ]
 }

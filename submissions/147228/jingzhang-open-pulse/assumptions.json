@@ -6,6 +6,24 @@
       "status": "pending_professional_confirmation",
       "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
       "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-TRANSPORT-OSM-001",
+      "status": "background_screening_only",
+      "statement": "The transport context screen uses an OpenStreetMap Overpass snapshot accessed on 2026-08-08, clipped against the provisional submission boundary and an 800 m analytical buffer.",
+      "impact": "Mapped station names, crossings and line densities indicate where field audits should start, but they do not establish official station entrances, road classification, capacity, right-of-way, accessibility quality or statutory controls."
+    },
+    {
+      "id": "A-RESIDENT-EXPERIENCE-001",
+      "status": "requires_baseline_and_participation",
+      "statement": "Resident satisfaction, night-time comfort, perceived safety, noise, crowding and service access currently lack a project-specific baseline survey.",
+      "impact": "Resident-experience targets are evaluation gates for reversible pilots, not claims about current conditions or guaranteed future performance."
+    },
+    {
+      "id": "A-TRANSPORT-OPERATIONS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Peak-hour passenger demand, intersection delay, parking occupancy, freight/service access and event-day traffic management data are not available for the full design area.",
+      "impact": "No new interchange, bridge, tunnel, road widening, parking supply or signal plan is committed; each requires traffic modelling, field counts, safety audit and approval."
     }
   ]
 }

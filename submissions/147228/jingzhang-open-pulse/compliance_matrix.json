@@ -9,7 +9,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "交通、轨道、市政与公共服务设施",
+        "report/narrative.md"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -24,7 +26,13 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "design_north_south_spine_length_m",
+        "design_east_west_connector_count",
+        "design_slow_mobility_network_length_m",
+        "osm_mapped_station_names_within_800m_count",
+        "osm_mapped_crossing_count",
+        "resident_transport_satisfaction_index"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -42,10 +50,18 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BEIJING-SLOW-MOBILITY",
+        "JINGZHANG-PUBLIC-FEEDBACK",
+        "JINGZHANG-PARK-CATALOG",
+        "BEIJING-15-MINUTE-LIFE-CIRCLE",
+        "OSM-TRANSPORT-CONTEXT"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-TRANSPORT-OSM-001",
+        "A-RESIDENT-EXPERIENCE-001",
+        "A-TRANSPORT-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
