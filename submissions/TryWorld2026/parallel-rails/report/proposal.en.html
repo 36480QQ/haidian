@@ -80,8 +80,8 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 </tr>
 <tr>
 <td>Evidence status</td>
-<td>All boundaries and metrics are recomputable (EPSG:4548); statutory controls honestly unknown; OSM real-site anchors verify the narrative direction; full recalculation after official polygons are published.</td>
-<td>metrics.json (30 items), assumptions.json (8 items), three matrices, 8 registered sources</td>
+<td>All boundaries and metrics are recomputable (EPSG:4548); statutory controls honestly unknown; OSM real-site anchors and the Haidian statistical bulletin calibrate narrative and design direction; full recalculation after official polygons are published.</td>
+<td>metrics.json (30 items), assumptions.json (8 items), three matrices, 9 registered sources</td>
 </tr>
 <tr>
 <td>Decision boundary</td>
@@ -133,6 +133,36 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 </tr>
 </tbody></table>
 <p>Conclusion: the three stations (Zhongzhi/Origin/Dazhong) and the spine narrative all find corresponding nodes on the real city map, and the provisional boundary&#x27;s spatial orientation is consistent with the real urban fabric. This verification only strengthens narrative credibility; coordinates are not used for area, distance or redline judgements, and official geometry, once published, remains authoritative with the same recalculation path.</p>
+<h3>Administrative-Scale Public Statistics Calibration (Haidian 2025 Statistical Bulletin)</h3>
+<p>To calibrate design actions rather than pile up numbers, this package draws on the Haidian District 2025 National Economic and Social Development Statistical Bulletin <span class="evidence evidence-source">[source:DATA-SRC-HAIDIAN-2025-STATISTICAL-BULLETIN]</span> (published 2026-04-10 by the Haidian Statistics Bureau, A0 official public page; only factual figures are excerpted with publisher, title and original link preserved; <code>statistical_scope=Haidian District 2025 administrative statistics</code>, <code>not_spatially_allocable=true</code>—these are district-wide administrative figures that <strong>do not enter metrics.json and do not alter any GeoJSON/area/alignment/phasing</strong>; they only inform what the scheme should add):</p>
+<table>
+<thead><tr>
+<th>Verifiable public statistic</th>
+<th>Design judgement (why it changes design action)</th>
+<th>What it does not prove</th>
+</tr></thead><tbody>
+<tr>
+<td>92 national key laboratories in the district (63.4% of the city, 17.9% of the country)</td>
+<td>Innovation <strong>supply</strong> is already highly concentrated in Haidian; the belt&#x27;s incremental value is not &quot;more innovation space&quot; but <strong>verification, transfer and governance interfaces</strong>—Zhongzhi shifts from &quot;new R&amp;D clustering&quot; to &quot;standard sandbox &amp; interoperability verification hub&quot;</td>
+<td>These laboratories are on the corridor, willing to participate, or generate any ridership or performance</td>
+</tr>
+<tr>
+<td>123 registered foundation models (60% of the city)</td>
+<td>Model supply is likewise concentrated; Zhongzhi is calibrated as &quot;full-stack verification + compute/data hub&quot; rather than a new model base</td>
+<td>Model vendors cluster on the corridor or the belt carries their compute load</td>
+</tr>
+<tr>
+<td>599 high-value invention patents per 10,000 people (up ~59 YoY)</td>
+<td>Innovation density is already high; Origin is calibrated as &quot;transfer channel + campus clinic&quot; rather than additional R&amp;D volume</td>
+<td>Corridor patent distribution, conversion rate or enterprise siting</td>
+</tr>
+<tr>
+<td>57,900 technology contracts, RMB 405.31 billion turnover (+6.5%)</td>
+<td>Technology trading is active; the three stations should add <strong>scenario premiere, standards governance and international communication outlets</strong> that turn trading volume into perceptible standard consensus</td>
+<td>Contracts occur on the corridor or convert into belt performance</td>
+</tr>
+</tbody></table>
+<p><strong>Calibration conclusion</strong>: Haidian&#x27;s innovation supply side is already highly concentrated (laboratories, foundation models, patents and technology contracts all rank among the country&#x27;s leaders); the Jing-Zhang AI Innovation Belt&#x27;s differentiated value is not in stacking more research facilities but in supplying the <strong>standard interface layer</strong> of &quot;verification—transfer—standards—scenario&quot;—which is the administrative-statistics support for this scheme&#x27;s &quot;gauge = the standard&quot; concept: the first rail (history) joined China&#x27;s railways to the world standards network, and the second rail (intelligence) joins Haidian&#x27;s innovation supply to the global consensus-and-governance network. These statistics serve as background calibration only, all marked <code>background_only</code>, and do not replace any official planning conclusion.</p>
 <h2>Coordinated Research Area: Industry and Future City Research</h2>
 <h3>Naming System and Visual Identity (agent.1)</h3>
 <p>Primary name <strong>「双轨·百年」/ &quot;Parallel Rails&quot;</strong>, English <strong>The Parallel Rails</strong>, subtitle An Open Standard Belt. The naming rests on &quot;three scales of the gauge&quot;: <strong>physical scale</strong>—1435mm was then the internationally prevailing standard gauge (historical boundary: the gauge was an existing international standard; the Jing-Zhang Railway was China&#x27;s first autonomous answer through self-built construction and autonomous adoption of that standard—this text uses &quot;standard choice&quot; as a metaphorical starting point, not a historical conclusion), and the Jing-Zhang Railway was China&#x27;s first autonomous answer on a standard question: neither adopting colonial narrow gauge nor deferring to foreign gauge systems, connecting Chinese railways into the world&#x27;s standard network; <strong>institutional scale</strong>—the AI-era &quot;gauge&quot; is protocols, licenses, interoperability specs and governance rules; whoever defines them in 2026 holds the right of way in the intelligent era, directly serving the &quot;global discourse power in AI governance&quot; function; <strong>civilisational scale</strong>—two rails run parallel forever, never crossing, yet bearing weight and direction together: history and future, engineering and algorithms, the Zhongguancun technology-service wing and the Xiaoyuehe scenario-empowerment wing, humanity and AI.</p>
@@ -673,5 +703,5 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 <h2>References</h2>
 <p>Primary controlling basis: <span class="evidence evidence-source">[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]</span> <span class="evidence evidence-source">[source:DATA-SRC-AGENT-TASKBOOK-20260518]</span> and <span class="evidence evidence-standard">[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</span> <span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span>. Itemised list:</p>
 <ul><li><code>brief/site-package/design_brief.json</code> — structured project brief</li><li><code>brief/site-package/agent_taskbook.json</code> — agent taskbook (six tasks, charter, review dimensions)</li><li><code>brief/site-package/allowed_design_space.json</code> — layer permissions and data policy</li><li><code>brief/site-package/ranges/planning_limits.json</code> — known official areas and missing controls</li><li><code>brief/site-package/standards/standards.json</code> and local snapshots under <code>standards/references/</code></li><li><code>brief/site-package/geometry/provisional_boundaries.geojson</code> — provisional boundaries and derivation basis</li><li><code>brief/site-package/sources.json</code>, <code>data/source_registry.json</code> — source registry</li><li><code>brief/site-package/schemas/*.json</code> — validation schemas</li><li><code>data/processed/agent_fact_pack.md</code> — fact-pack navigation</li><li><code>brief/public-brief.md</code> — public brief draft (background context)</li><li>Package evidence files: <code>geometry/*.geojson</code>, <code>metrics.json</code>, <code>sources.json</code>, <code>assumptions.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code>, <code>design_depth_matrix.json</code>, <code>visual/index.html</code>, <code>drawings/a3-booklet.pdf</code>, <code>drawings/a0-boards.pdf</code></li></ul></main>
-<footer>双轨·百年 The Parallel Rails · 京张AI创新带城市设计 · v0.1.8 · 全部内容为开放共创建议，不替代正式规划 | 边界为 provisional（official_boundary=false）</footer>
+<footer>双轨·百年 The Parallel Rails · 京张AI创新带城市设计 · v0.1.9 · 全部内容为开放共创建议，不替代正式规划 | 边界为 provisional（official_boundary=false）</footer>
 </body></html>

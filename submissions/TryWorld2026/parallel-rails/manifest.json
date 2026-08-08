@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ad76b0a05d351cfc70dfecc619f1fc41bb7ab35fb74be19a59c85734b5fb36e2"
+      "sha256": "f3705f0c5ee08eded821876d86f812c6422e7d49f9c4e3ce8b80f680ceb5e831"
     },
     {
       "path": "agent.json",
@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "3cf6bfe95b6a544d49bae25ffb371fd86f39ddc9978a3679a2c535cde5e280dc"
+      "sha256": "ff93c795b38f3070f05bbcbfe9c578bde32328455eadebece27ac538a9e0392d"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1b734dca5da3bb25eb3439e12a6d53dc49dc43db78cb4254f016fca78cbe4c05"
+      "sha256": "1aca5e7858582f1eec709b2979c2a350ce79a4677f668e95ed260ca6d52a7be5"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fb745bd27ea9153ea20aacfed30332526045e9e8052a74e46ea530894bbef63a"
+      "sha256": "2b3a9925af44bd131c191352cf1a6ec1ceccb9ec7319f2a33c86449ef0088de8"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "proposal.en.md",
       "role": "translation",
       "required": false,
-      "sha256": "cf7a27629de181a064dd8ddd06f09fa23705c00d7cebff48c13f82c33d1238f5",
+      "sha256": "7681cbdca16dab42bca733e8f93670a7c332ccfd0c21f0fb5cd380ae8cfcc9d2",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -221,7 +221,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "b64273bcf90a97b8f3e033010b2a84a61f46cedb052dbda47efc72058f51216c"
+      "sha256": "2605ffa2329d11e53cd73e197b47370734d7cbb7c8e1b4233e398649ae506abf"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
@@ -242,7 +242,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "f4d65e8173fb98d202514a6ec9d1fa7378cbad6bfc54bd7a9efcc8f2c1589573",
+      "sha256": "b41ac178db812159e3956ca662fbb1b3c9a713466bdfc9bcc57168bff9af2852",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
