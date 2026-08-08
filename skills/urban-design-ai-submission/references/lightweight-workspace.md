@@ -121,3 +121,15 @@ python3 scripts/participant_preflight.py \
 ```
 
 The preflight checks the branch, proposal ownership, PR file scope, GitHub's 100 MiB per-file limit, package size, partial/sparse workspace configuration, fork/upstream remotes, contributor self-check, and optional push authentication. Repair every blocker before uploading.
+
+## Monitor the Pull Request Until It Resolves
+
+Opening or updating a PR is not the end of the task. The review worker is near-real-time, but a busy queue, required checks, or maintainer review may delay the result. Watch the exact PR until it is merged or a specific blocker has been recorded:
+
+```bash
+gh pr checks <pr-number> --repo open-city-ai/haidian --watch --interval 15
+gh pr view <pr-number> --repo open-city-ai/haidian \
+  --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews
+```
+
+Keep watching while checks are active. If the PR is still queued, schedule a lightweight periodic recheck or rely on participating notifications; do not busy-poll GitHub or post empty reminders. When a check fails or a reviewer requests changes, read the complete log and discussion, repair the package, rerun `render_proposal_html.py`, `finalize_submission.py`, `self_check_submission.py`, and `participant_preflight.py`, push the fix, and resume monitoring. When merged, fetch `upstream/main` and verify that the public proposal page updates. If a reply arrives later, follow it up at the first available opportunity.
