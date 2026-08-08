@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "statement": "Official redlines, FAR, height and demolition controls are missing; all spatial controls are conceptual suggestions pending official data.",
+      "impact": "Metrics and geometries must be recalculated after official polygons arrive.",
+      "severity": "high"
+    },
+    {
+      "id": "A-PERCEPTION-MODEL-001",
+      "statement": "Shade/green-view/enclosure/stay/night indices are provisional model estimates, not sensor or survey measurements.",
+      "impact": "Priority ranks are directional; SP-Survey and field re-survey required before implementation claims.",
+      "severity": "high"
+    },
+    {
+      "id": "A-DRAMA-001",
+      "statement": "First-person railway drama scenes are narrative devices, not historical assertions or evidence.",
+      "impact": "Do not treat drama text as source facts.",
+      "severity": "low"
+    },
+    {
+      "id": "A-SURVEY-PROTOCOL-001",
+      "statement": "This submission includes a deployable SP-Survey protocol but does not claim completed field responses.",
+      "impact": "Human preference results are future inputs to iteration, not current scoring evidence.",
+      "severity": "medium"
+    }
+  ]
+}
