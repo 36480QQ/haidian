@@ -305,6 +305,17 @@ code {
 <figure class="proposal-figure"><img src="../assets/figures/origin-node-real-map.png" alt="Origin Node 真实数据分级地图"><figcaption>Origin Node 真实数据分级地图</figcaption></figure>
 <p>评审可运行 <code>python3 scripts/origin_node_real.py</code> 复现，或直接核对算法输出快照 <code>assets/origin-node-output.json</code>（GitHub API 数据、中间变量与分级结果逐项可查）——用真实 GitHub 开源活跃度驱动城市服务节点分级，是本方案对「可计算城市」的实证回答。</p>
 <p>**数据透明度声明**：Origin Node 算法采用分层数据策略——F_git（开源活跃度）基于 GitHub 公开 API 实时抓取，数据可验证、可更新；D_dev（开发者密度）基于 GitHub Search API location 字段聚合估算（覆盖率约 30-50%，因大量开发者未填写 location，标注置信区间）；P_compute（算力负荷）基于北京人工智能公共算力平台公开信息合理估算，待官方数据发布后复算。所有估算方法、数据来源与假设条件详见 <code>scripts/origin_node_real.py</code> 与 <code>assumptions.json</code>。算法定位是「基于公开生态信号的城市节点初始化模型」，而非声称 NASA 级精度的预测系统。</p>
+<p>**AI 创新性对比声明（真实数据驱动是 Agent 城市规划的必要条件）**：传统城市设计依赖专家经验和静态调研数据。Agent 城市设计的核心增量在于**实时数据驱动**——Agent 不是用人类提供的数据画图，而是直接接入真实世界的数据源，让城市空间随数据变化而自动演化。</p>
+<p>| 维度 | 静态预设方案 | 真实数据驱动方案（本方案） | | --- | --- | --- | | 数据来源 | 专家估算+历史统计 | GitHub 公开 API 实时抓取（2026-08-08） | | 更新频率 | 年度/五年规划周期 | 每次 PR 提交自动重算 | | 可验证性 | 不可追溯 | <code>git log</code> + <code>scripts/</code> 可一键复现 | | 可演化性 | 边界变更后人工重画 | 运行脚本自动化重算 | | Agent 角色 | 辅助润色工具 | 城市演化的共同设计者 |</p>
+<p>**Origin Node 二次验证（算法建议 × 治理约束）**：</p>
+<p>初始分级（2026-08-08 真实数据）：LU-008 众智园核心研发 S=0.915 → LEVEL_3。</p>
+<p>治理约束后（证据门 L1 过滤）：</p>
+<ul>
+<li>地块权属：待确认 → 证据门 L1 未通过</li>
+<li>控规指标：待确认 → 证据门 L1 未通过</li>
+<li>**结论：LU-008 维持「概念级 LEVEL_3」，不进入施工准备**</li>
+</ul>
+<p>这证明了 Origin Node × 证据门双层结构的有效性：算法建议了 LEVEL_3，但治理系统正确地拦住了它——因为在权属和控规未确认前，任何建设都不应启动。**算法可以建议，但不能决定；停止能力与生成能力同样重要**——这正是「原点·未提交区」所纪念的。</p>
 <p>```python class OriginNodeEngine: &quot;&quot;&quot;Origin Node 动态生长逻辑（概念建议，非既定工程结论）&quot;&quot;&quot; def __init__(self, parcel_id, dev_density, compute_load, git_activity): self.parcel_id = parcel_id self.dev_density = dev_density self.compute_load = compute_load self.git_activity = git_activity</p>
 <p>def evaluate_service_level(self): score = 0.4 * self.dev_density + 0.4 * self.compute_load + 0.2 * self.git_activity if score &gt; 0.8: return &quot;LEVEL_3_FULL_NODE&quot;        # 全功能前台（政策/场景/数据/合规/投融资/活动） elif score &gt; 0.4: return &quot;LEVEL_2_COMMUNITY_HUB&quot;    # 社区协同站 else: return &quot;LEVEL_1_MICRO_POD&quot;        # 最小化极客咖啡/无人站点 ```</p>
 <p>本方案 46 个概念地块已按此逻辑分配节点等级：<span class="evidence evidence-metric">[metric:origin_node_level3_count]</span> 个三级全功能前台、<span class="evidence evidence-metric">[metric:origin_node_level2_count]</span> 个二级社区协同站，其余为一级微节点，数据见 <span class="evidence evidence-data">[data:geometry/land_use.geojson]</span>。网格化地块不是「粗糙」的代名词，而是「可计算的数字孪生容器（Cellular Automata Grid）」——每个地块都是可动态分配功能的容器，未来通过 PR 提交更新容器属性，城市空间随创新需求持续重配。</p>
