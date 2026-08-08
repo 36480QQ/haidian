@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-interest proving ground where urban AI must earn trust before it scales."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.8"
-iteration: 8
+version: "1.9"
+iteration: 9
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-> **v1.8 visual-correction review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+> **v1.9 evidence-routing review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 **Motto: Every urban intelligence must withstand public scrutiny.**
 
@@ -25,6 +25,22 @@ The scarce asset is not another closed compute room but a walkable public infras
 The six Taskbook agents become one delivery contract: 12 scenario cards, three falsifiable pilot protocols, AP0—AP7 action packages, G0—G4 gates, five resource ledgers and a civic-agent receipt. The first 90 days prepare evidence, repair one accessible public chain, establish staffed/paper/phone fallback and run synthetic-data rehearsals. Only P1 may begin after G0—G2 evidence is complete; any unresolved severe safety, rights or data issue stops the trial. Boundaries, title, statutory controls, cost, procurement, real operators and performance baselines remain **unknown/pending** until lawfully verified.
 
 Four machine-readable artefacts make the proposal handover-ready: `visual/assets/delivery-matrix.json`, `pilot-protocols.json`, `civic-agent-receipt.schema.json` and `asset-rights.json`. The included receipt is a synthetic example, not evidence of a live project.
+
+### Seven-dimension evidence route: every conclusion returns to a file, place and stop line
+
+This table adds no unverified fact. It routes the seven review judgements to evidence already inside the package; one defect is not repackaged across dimensions, and unavailable statutory inputs remain unknown/pending.
+
+|Review dimension|Reviewable evidence|Boundary and falsification condition|
+|---|---|---|
+|Brief alignment|Three positions, five functions, three areas/two wings and agent.1—agent.6 each map to scenes, space and action packages [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]|A Taskbook item with only rhetoric and no deliverable remains incomplete|
+|Originality|The public acceptance line, failure theatre and Civic-Agent Receipt turn railway line/station grammar into infrastructure that can be contested, exited and retested [metric:receipt_required_field_count]|Technical novelty cannot compensate if analogue access, human service or post-exit public value fails|
+|AI–planning innovation|AI operates only through walking, ground-floor, blue-green, public-service and three bounded test interfaces with data gates, human takeover and spatial degradation [data:geometry/public_space.geojson#PS-001] [depth:spatial_control_book]|Screen/robot counts and conceptual geometry are not evidence of urban intelligence|
+|Implementation feasibility|AP0—AP7, G0—G4, 90-day low-regret preparation, P1—P3 protocols and responsibility/budget gates [depth:implementation_policy_phasing] [metric:action_package_count] [metric:decision_gate_count]|Title, budget, procurement price, real operator and quantities remain pending [assumption:A-OPERATIONS-001]|
+|Public interest and inclusion|Six user groups, worst-group results, analogue channels, accessible task chain, staffed appeal and minority opinions [depth:overall_spatial_structure]|Any trial that weakens human service, basic access or disabled-user completion stops|
+|Risk and compliance|Data minimisation, synthetic/cleared data, purpose separation, deletion proof, independent review and asset rights [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [assumption:A-DATA-001]|Missing privacy, heritage, fire, rights or provenance proof blocks the next gate|
+|Expression completeness|Bilingual proposals, five figures, A3/A0, HTML, GeoJSON, metric/standard/depth matrices and machine contracts cross-reference one another [depth:risk_missing_data]|On conflict, the sourced, confidence-labelled machine record governs and triggers recalculation|
+
+**One end-to-end acceptance chain.** A public problem card enters G0, sources and spatial conditions are checked, then an analogue baseline and worst-group definition are fixed. A prototype rehearses only on synthetic or cleared data and reaches a bounded, timed, staffed real task only after G2. Every run produces a receipt; independent review decides scale, repair or exit. A hard stop overrides averages and publicity. The chain links agent.1 brand/collaboration, agent.2—3 spatial work, agent.4 protocols, agent.5 public narrative and agent.6 delivery/operations. [source:AGENT-TASKBOOK] [metric:pilot_protocol_count] [metric:machine_readable_contract_count]
 
 ## Taskbook at a glance: three positions, five functions, three areas and two wings
 
@@ -204,7 +220,7 @@ The plan is also tested against adverse conditions. If official geometry conflic
 
 ## 19. The first 100 metres as a Civic AI Failure Theatre
 
-v1.8 preserves the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: **A daily** keeps analogue routes and human service; **B contest** enables explanation, refusal and takeover; **C failure** stops devices, opens a physical bypass and onsite help; **D replay** publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:spatial_control_book] [metric:spatial_interface_type_count]
+v1.9 preserves and tightens the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: **A daily** keeps analogue routes and human service; **B contest** enables explanation, refusal and takeover; **C failure** stops devices, opens a physical bypass and onsite help; **D replay** publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:spatial_control_book] [metric:spatial_interface_type_count]
 
 The five figures and the first A3/A0 pages now share one visual grammar: an evidence ladder limits precision; five-layer sections control space; three task cards control everyday operations; three non-conflicting routes control safe degradation; and a public decision room chooses **scale, repair or exit**. These are visible indexes into the machine contracts, not renderings used as substitutes for professional evidence. [metric:receipt_required_field_count]
 
