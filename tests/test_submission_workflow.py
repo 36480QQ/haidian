@@ -27,6 +27,7 @@ from validate_submission import (  # noqa: E402
 )
 from github_pr_validation import (  # noqa: E402
     GitHubClient,
+    MAX_DOWNLOAD_BYTES,
     _is_retryable_http_error,
     is_non_submission_pr,
     is_review_queue_candidate,
@@ -137,6 +138,29 @@ class EmptyPdfDetectionTests(unittest.TestCase):
 
 
 class ManifestHydrationTests(unittest.TestCase):
+    def test_download_content_accepts_ten_mib_file(self) -> None:
+        client = GitHubClient("token", "owner/repo")
+        with tempfile.TemporaryDirectory() as tmp:
+            destination = Path(tmp) / "artifact.pdf"
+            with patch(
+                "github_pr_validation.urllib.request.urlopen",
+                return_value=_Response(b"x" * MAX_DOWNLOAD_BYTES),
+            ):
+                client.download_content("owner/repo", "artifact.pdf", "sha", destination)
+            self.assertEqual(MAX_DOWNLOAD_BYTES, destination.stat().st_size)
+
+    def test_download_content_rejects_file_over_ten_mib(self) -> None:
+        client = GitHubClient("token", "owner/repo")
+        with tempfile.TemporaryDirectory() as tmp:
+            destination = Path(tmp) / "artifact.pdf"
+            with patch(
+                "github_pr_validation.urllib.request.urlopen",
+                return_value=_Response(b"x" * (MAX_DOWNLOAD_BYTES + 1)),
+            ):
+                with self.assertRaisesRegex(RuntimeError, "file exceeds download cap"):
+                    client.download_content("owner/repo", "artifact.pdf", "sha", destination)
+            self.assertFalse(destination.exists())
+
     def test_accepts_only_safe_relative_manifest_paths(self) -> None:
         manifest = {
             "files": [
