@@ -1,0 +1,263 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "recalculation_crs": "EPSG:4548",
+  "exchange_crs": "EPSG:4326",
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary only; recalculate when official polygon arrives."
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 73031.437,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual interface footprints, not cadastral buildings."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.122682,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual green proposals on provisional boundary."
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.013333,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "Includes perception sections and landmark plazas as public-space proposal nodes."
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "perception_section_count": {
+      "status": "known",
+      "value": 18,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(public_space features where space_kind=perception_section)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "mean_perception_shortfall": {
+      "status": "known",
+      "value": 0.4163,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "mean(1 - weighted(shade,green_view,enclosure,stay,night))",
+      "confidence": "low",
+      "assumptions": [
+        "Model estimates from open proxies; not field measurements."
+      ]
+    },
+    "high_shortfall_section_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(sections with shortfall_score >= 0.45)",
+      "confidence": "low",
+      "assumptions": [
+        "Threshold 0.45 is a concept priority cut for Phase-1."
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario cards in proposal)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "test_validation_scenario_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(industry test/validation scenarios)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(user personas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(ai_landmark_plaza)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ecosystem_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(global ecosystem cases)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(renewal projects in proposal)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual project list for professional deepening."
+      ]
+    },
+    "phasing_stage_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(phase features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "park_spine_length_m": {
+      "status": "known",
+      "value": 9271.7,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(RD-SPINE) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "land_use_parcel_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(land_use features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "road_network_density_km_per_sqkm": {
+      "status": "known",
+      "value": 1.2833,
+      "unit": "km_per_sqkm",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "(sum(road_length_m)/1000) / (site_area_sqm/1e6)",
+      "confidence": "medium",
+      "assumptions": [
+        "Only conceptual greenway/pedestrian connectors counted."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+    },
+    "building_height_control_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "statutory height control",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official height controls are not in the cleared public package."
+    },
+    "resident_population_capacity": {
+      "status": "unknown",
+      "value": null,
+      "unit": "persons",
+      "source_files": [],
+      "formula": "capacity model pending official program",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No cleared population/capacity baseline for formal scoring."
+    }
+  }
+}

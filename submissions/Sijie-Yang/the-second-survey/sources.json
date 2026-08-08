@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Source usability registry."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent navigation layer only."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Provisional site boundary."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Provisional key areas."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks and scopes."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Six agent tasks and boundary clause."
+    },
+    {
+      "id": "VATA-PAPER",
+      "url": "https://github.com/Sijie-Yang/Thermal-Comfort-In-Sight",
+      "source_type": "academic_paper",
+      "usage": "Method background for thermal/visual affordance assessment; not statutory evidence."
+    },
+    {
+      "id": "SP-SURVEY-PAPER",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360132325000514",
+      "source_type": "academic_paper",
+      "usage": "SP-Survey platform method paper for human preference protocols."
+    },
+    {
+      "id": "SP-SURVEY-PLATFORM",
+      "url": "https://sp-survey.org",
+      "source_type": "user_provided_cleared",
+      "usage": "Deployable visual survey tool referenced by protocol config."
+    },
+    {
+      "id": "CITY-LANDSCAPE-INSIGHT",
+      "url": "https://doi.org/10.1016/j.landurbplan.2026.105734",
+      "source_type": "academic_paper",
+      "usage": "Eye-level view perception research background."
+    },
+    {
+      "id": "AWAKENING-POSTER",
+      "path": "assets/jingzhang-awakening-poster.png",
+      "source_type": "agent_generated_design",
+      "usage": "Self-generated narrative poster/IP image; not formal spatial evidence."
+    },
+    {
+      "id": "OSM-CONTEXT",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "osm",
+      "usage": "Background geographic context only; not used as official boundary."
+    },
+    {
+      "id": "SP-SURVEY-PROTOCOL",
+      "path": "report/narrative.md",
+      "source_type": "agent_generated_design",
+      "usage": "Human-in-the-loop survey protocol included with this package."
+    }
+  ]
+}
