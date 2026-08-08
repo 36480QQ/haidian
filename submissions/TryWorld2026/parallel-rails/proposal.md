@@ -26,7 +26,7 @@ iteration: "v0.2.0"
 | 场景与体验 | 12 张 AI 场景卡（含 3 个产业测试验证场景）、6 类用户画像、5 处 AI 朝圣地标（双轨碑·标准之源/源点广场/轨距博物馆/道岔广场/鸣钟广场）。 | 场景卡清单、画像表、场景-空间-运营映射、地标目录 |
 | 实施起点 | 近期"三站先行"（约 406.3 万 m²）：双轨碑一期、道岔广场等低争议 quick win；15 项核心更新项目，五方分工建议。 | 分期 geometry、更新项目清单、实施政策四条 |
 | 公共价值 | 双生接口（AI 场景均配同级非 AI 通道，标识公示率 100%）、每站 1 处非智能替代服务点、无障碍出行覆盖全线慢行、15 分钟生活圈社区服务、公共空间全免费无障碍开放。 | 包容性可计数指标、民生与包容性安排、双生接口原则 |
-| 证据状态 | 全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点＋海淀统计公报校准叙事与设计方向；官方 polygon 公布后整体重算。 | metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 9 项 |
+| 证据状态 | 全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点＋海淀统计公报校准叙事与设计方向；官方 polygon 公布后整体重算。 | metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 9 项、标准权契约 schema/轨距门证据梯/GEI 指数（3 项机器可读资产） |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不替代法定规划、不构成政府审定或投资承诺。 | 风险章节、禁用声明、版权声明 |
 
 **English brief.** The Parallel Rails turns the gauge — the quietest contract of the railway age — into a first-principles urban design: in 1909 the Jing-Zhang Railway made China's first autonomous standard choice (1435 mm standard gauge, joining the world network); in 2026 the Jing-Zhang AI Innovation Belt makes the second — how compute interconnects, how data interoperates, how open source is governed, and how AI is governed. The spatial translation is "One Spine · Two Rails · Three Stations": the heritage park spine as the roadbed, the Zhongguancun Technology Services Wing and the Xiaoyue River Scenario Enablement Wing as twin rails, and Zhongzhi / Origin / Dazhong stations as nodes, with a topologically complete 19-unit land-use partition. 12 AI scenario cards, 6 personas, 5 pilgrimage landmarks, 15 renewal projects and a Gauge Day operations system make the concept countable. Everything is a conceptual proposal for professional deepening — not statutory planning, not a government decision, not an investment commitment.
@@ -354,7 +354,7 @@ Logo 视觉规范（概念方向）：以"双轨×刻度"为母题——两条�
 
 **分期计划** [depth:phasing_implementation]：近期"三站先行"（2026–2028，概念年份）[data:geometry/phasing.geojson#PHASE-001-1] 约 406.3 万 m² [metric:phase1_area_sqm]——三站与主脊公共空间同步启动，优先落地双轨碑一期、道岔广场等低争议 quick win，产业载体随控规条件成熟分批启动；中期"走廊缝合"（2029–2031）约 606.2 万 m² [metric:phase2_area_sqm]——科教走廊、东西连通、荣誉带贯通；远期"门户织补"（2032–2035）约 128.8 万 m² [metric:phase3_area_sqm]——南端源点门户与过渡段。年份区间为概念节奏示意，实施时序以政府安排为准。实施政策四条（机制建议）：更新项目与场景开放捆绑供给；留白用地年度评审滚动激活；校区界面"协议开放+运营补偿"；公众参与嵌入城市 issue 机制全程公开。运营维护：公共空间与地标由统一主体维护（建议），记录纳入数字荣誉档案公开。
 
-**轨距门 Gauge Gates（试点决策门，概念建议）**：为把"概念→试点→扩大→常态"的每个台阶钉在可核验条件上，三站先行的每一类项目设四道轨距门，任一门未过则停在当前轨道、只扩大不冒进——这是"标准权契约"在实施层的落地 [depth:phasing_implementation]。每道门绑定**证据梯**（evidence ladder）——E0 概念叙事→E1 公开来源→E2 包内复算→E3 现场观察→E4 专业签注→E5 限期试点独立复核，任何决策不得依赖低于其轨距门级别的证据（概念建议，与标准权契约的 `evidence.evidence_level` 字段一致，机器可读形式见 `visual/assets/gauge-gates.json`）：
+**轨距门 Gauge Gates（试点决策门，概念建议）**：为把"概念→试点→扩大→常态"的每个台阶钉在可核验条件上，三站先行的每一类项目设四道轨距门，任一门未过则停在当前轨道、只扩大不冒进——这是"标准权契约"在实施层的落地 [depth:phasing_implementation]。四道门是**独立并行检查**（非顺序管线），不同方面需要不同证据等级。每道门绑定**证据梯**（evidence ladder）——E0 概念叙事→E1 公开来源→E2 包内复算→E3 现场观察→E4 专业签注→E5 限期试点独立复核，任何决策不得依赖低于其轨距门级别的证据（概念建议，与标准权契约的 `evidence.evidence_level` 字段一致，机器可读形式见 `visual/assets/gauge-gates.json`）：
 
 | 轨距门 | 通过条件（全部可核验） | 最低证据等级 | 未通过的处置 |
 |--------|------------------------|-------------|--------------|
