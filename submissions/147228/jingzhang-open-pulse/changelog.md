@@ -33,5 +33,6 @@ reviewable deliverables and bilingual review surface.
 
 - Added six officially sourced public AI ecosystem cases and a policy–enterprise crosswalk that binds each mechanism to a local scenario, acceptance evidence and a do-not-copy boundary.
 - Added `visual/assets/wind-health-validation-plan.json`, a six-gate evidence contract that keeps wind comfort, pollutant stagnation, heat, shade, blue-green access and water risk `unknown` until geometry, field, calibration and professional-review evidence is complete.
+- Registered three official data-route records for the Haidian climate-normals catalogue, the district meteorological network and Qinghe Station wind monitoring; they are acquisition/context routes only and do not replace local measurements.
 - Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
 - Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.

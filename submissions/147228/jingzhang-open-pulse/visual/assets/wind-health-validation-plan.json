@@ -23,6 +23,27 @@
     "field protocol, instrument calibration records, timestamps, locations and missing-data log",
     "reproducible formulas, model settings, uncertainty/error report and responsible professional sign-off"
   ],
+  "official_input_routes": {
+    "status": "identified_not_downloaded",
+    "routes": [
+      {
+        "source": "HAIDIAN-CLIMATE-NORMS-DATASET-2025",
+        "role": "request station metadata and climate-normal fields through the Beijing public-data platform",
+        "boundary": "registered-user access is required; a catalogue record is not a local measurement"
+      },
+      {
+        "source": "HAIDIAN-METEOROLOGICAL-NETWORK-2023",
+        "role": "coordinate a lawful request for relevant monitoring/forecast context and identify responsible data owners",
+        "boundary": "the reported 1+21+65+100 network does not prove conditions inside any Jing-Zhang route"
+      },
+      {
+        "source": "QINGHE-STATION-WIND-MONITORING-2021",
+        "role": "use the station report to define a nearby monitoring-context dependency",
+        "boundary": "nearby station context cannot replace key-area anemometer observations or CFD calibration"
+      }
+    ],
+    "rule": "Until a lawful, versioned dataset is obtained and its station-to-site relevance is reviewed, all six local metrics remain unknown."
+  },
   "state_transition": {
     "current_state": "unknown",
     "allowed_next_state": "known",

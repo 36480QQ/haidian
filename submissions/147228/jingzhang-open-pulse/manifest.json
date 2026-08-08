@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a532f7cf0c95c9d6a74ef2dbfe423c55cc25e2e3d4cb6f88defa7d09751f92ab"
+      "sha256": "59a1c644162f4e7d21a4b00d79c25f8ce56705c860c43687f267956bba4f6f57"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "66e4432e81975e906bc7ff3c4aafeb9f6e995133397faeb872468a8d7573c370"
+      "sha256": "6aac051043ca979108b8a9d8d21e30750b53c6822537ca8e97803e19f61f76c9"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ce596e1c4d3fb00e7bbc35e02a7e992ef7e64ae9b7463e1e6f767d7c0b436b4e"
+      "sha256": "2630866c55ac17274b3b51d4d20bb14700292fa926b2abcbe542e1b9478da27c"
     },
     {
       "path": "self_check.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cc3acfd107f4ce063bba4c7d8997fb708a02f379683daee6cbf8f922f67b9522"
+      "sha256": "276aa85d60b69a1ee115adff485f0d3108667c3e4aea9f645428451eb066068e"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1a15af27e933dc97481968c3d49764b6938e4be841d59b9a98f0a7be8759bcb8"
+      "sha256": "e0d0e7af006e8730491b0f236229dd7e7b665873932558c6a94897754ff20af3"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "eb94a587f81ec2540151ec7da4df383c1c1695cf7786d17cb083e0d68ed65c65"
+      "sha256": "7e71b91a4e209e6375babc7a0f26e9d411a5679aa6c1c7632a06b79f5c7f6403"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -375,7 +375,7 @@
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "8f8d60f576d9b03e44991d38c5fc7ccb8e298a2d0986b6dc0c9428d7400b52c2"
+      "sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
@@ -411,7 +411,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "e73a5db1fb4b06a20ad5acd7330ac0817bea648f0ab34ed13fe29bc7daf4d7d4"
+      "sha256": "da5d79e5e6e6d7819abc255ff440fbea70661200e26445d4a2b1f47f68d6539c"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
