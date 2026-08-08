@@ -56,14 +56,14 @@ AI agent 在生成方案前已读取 `design_brief.json`、`agent_taskbook.json`
 
 | 案例 | 地点 | 核心模式 | 可转化经验 | 来源 |
 |------|------|---------|-----------|------|
-| 多伦多MaRS Discovery District | 加拿大 | 高校-医院-企业三方协作，向量研究院为技术核 | 原点社区"近校型创新"：清华-北大-中科院成果转化机制 | [source:GLOBAL-CASE-001] |
-| 伦敦国王十字知识区 | 英国 | 旧工业区改造+Google/Meta入驻+UCL城市实验室 | 大钟寺产业更新：AI伦理前置型实验+国际企业入驻 | [source:GLOBAL-CASE-002] |
-| 波士顿Kendall Square | 美国 | MIT为核、生物医药与AI交叉、风投密度全球第一 | 原点社区"技术策源地"定位：基础研究到产业转化最短路径 | [source:GLOBAL-CASE-003] |
-| 东京品川-台场机器人带 | 日本 | "先机构后家庭"策略、护理机器人先行、政企学协同 | 海淀AI+医疗/养老场景落地路径 | [source:GLOBAL-CASE-004] |
-| 新加坡国家机器人计划NRP | 新加坡 | 4.5亿新元国家投入、302家企业、城市级试验场 | 众智园"国家级AI平台"建设机制：政策-资金-场景三位一体 | [source:GLOBAL-CASE-005] |
-| 深圳地铁配送机器人 | 中国 | 利用存量基础设施、机器人自主乘梯换乘、场景驱动 | 京张遗址公园+地铁站点AI物流接驳 | [source:GLOBAL-CASE-006] |
-| 北京亦庄机器人城 | 中国 | 300+企业、具身智能4S店、马拉松赛事IP | 众智园AI应用展示+赛事运营：技术-场景-传播闭环 | [source:GLOBAL-CASE-007] |
-| 首尔Digital Media City | 韩国 | 媒体+IT+内容产业融合、直播与内容消费新业态 | 大钟寺"智能原生消费"场景：内容生产-消费-交易一体化 | [source:GLOBAL-CASE-008] |
+| 多伦多MaRS Discovery District | 加拿大 | 高校-医院-企业三方协作，向量研究院为技术核 | 原点社区"近校型创新"：清华-北大-中科院成果转化机制 | [source:GLOBAL-CASE-001] https://signalandform.ca/areas/toronto/mars-discovery-district |
+| 伦敦国王十字知识区 | 英国 | 旧工业区改造+Google/Meta入驻+UCL城市实验室 | 大钟寺产业更新：AI伦理前置型实验+国际企业入驻 | [source:GLOBAL-CASE-002] https://www.knowledgequarter.london/ |
+| 波士顿Kendall Square | 美国 | MIT为核、生物医药与AI交叉、风投密度全球第一 | 原点社区"技术策源地"定位：基础研究到产业转化最短路径 | [source:GLOBAL-CASE-003] https://www.industryandbusiness.ca/how-us-biotech-hubs-are-reshaping-canadas-innovation-landscape/ |
+| 东京品川-台场创新走廊 | 日本 | 川崎重工机器人展示馆+欧姆龙自动化中心，体现日本工业机器人传统优势 | 海淀AI+医疗/养老场景落地路径 | [source:GLOBAL-CASE-004] https://kawasakirobotics.com/jp-sp/robostage/；https://www.omron.com/global/en/news/2020/01/c0122.html |
+| 新加坡国家机器人计划NRP | 新加坡 | 国家级机器人研发推动计划，聚焦工业/服务/医疗机器人 | 众智园"国家级AI平台"建设机制：政策-资金-场景三位一体 | [source:GLOBAL-CASE-005] https://grants.sg/grants/astar-nrp |
+| 深圳地铁配送机器人 | 中国 | 全球首个地铁系统内自主配送机器人，41台机器人满足100+7-Eleven门店需求 | 京张遗址公园+地铁站点AI物流接驳 | [source:GLOBAL-CASE-006] https://www.sz.gov.cn/en_szgov/business/news/content/post_12286305.html |
+| 北京亦庄机器人城 | 中国 | 300+企业、百亿级产业链、世界机器人大会永久举办地 | 众智园AI应用展示+赛事运营：技术-场景-传播闭环 | [source:GLOBAL-CASE-007] https://paper.people.com.cn/rmrbhwb/pc/content/202602/24/content_30141547.html |
+| 首尔Digital Media City | 韩国 | 57万㎡媒体城、20,000+媒体公司、亚洲最大媒体城之一 | 大钟寺"智能原生消费"场景：内容生产-消费-交易一体化 | [source:GLOBAL-CASE-008] https://www.seoulsolution.kr/en/content/seoul%E2%80%99s-digital-media-city-dmc |
 
 ### 3.2 一带总体概念与命名体系（回应 agent.1）
 

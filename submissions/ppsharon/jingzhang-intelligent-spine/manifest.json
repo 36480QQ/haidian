@@ -17,13 +17,14 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": "3a897d3d296dae7d94974366e615ced865d06fc04a45b655a28c4932a4dc88c7"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "6237046f6f59badcd743fddd0523d07dc6127372a3d176a8130e6c0cd57db270"
+      "sha256": "b28e8692be9250e78a5a533bafa017e750b0aa555ac3eb63d388347a0d739700"
     },
     {
       "path": "agent.json",
@@ -95,13 +96,13 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "4a3ebb33c5f7b5c2d5f488f94692da82a2d082135aa15c14b5a2a1b4bc9e9b9f"
+      "sha256": "6bb41e0abab812bee46a1383750f1bacce9ee804d4e2da39b0cb6024668a7f6f"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "0f67e47616bddce4fdec794c1e44d5aeec34b0041863a60f0e3d0ac2631a2609"
+      "sha256": "e57c15ed68aeb633f962162ad12535030dd12b5ffe4480b4917f2a4345b6a25a"
     },
     {
       "path": "visual/index.html",
@@ -192,6 +193,16 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "proposal.en.md",
+      "sha256": "9f104d0841b40f33c235be211931db237670bcc3b81920aefdde1430fd86cd1e",
+      "description": "English proposal summary"
+    },
+    {
+      "path": "report/global_case_sources.md",
+      "sha256": "d487aba2b86d9e3c0cbc4f4c64b8694db84a72219c89346ad41ebe2d47c7b447",
+      "description": "Global case verifiable sources"
     }
   ],
   "validation_claim": {
