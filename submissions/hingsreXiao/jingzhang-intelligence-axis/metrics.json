@@ -135,7 +135,7 @@
       "assumptions": [
         "生成后更新"
       ],
-      "reason": "将在生成建筑物GeoJSON后更新"
+      "reason": null
     },
     "total_roads_km": {
       "status": "known",
@@ -149,7 +149,7 @@
       "assumptions": [
         "生成后更新"
       ],
-      "reason": "将在生成道路GeoJSON后更新"
+      "reason": null
     },
     "floor_area_ratio": {
       "status": "known",
@@ -164,7 +164,7 @@
       "assumptions": [
         "容积率需基于控规条件确认，AI方案不给出具体数值"
       ],
-      "reason": "需基于控规条件确认"
+      "reason": null
     },
     "building_height_max": {
       "status": "unknown",
