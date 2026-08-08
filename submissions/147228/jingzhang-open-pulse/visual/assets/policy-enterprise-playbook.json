@@ -734,6 +734,29 @@
         "CASE-DECIDIM-BARCELONA"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-041",
+      "title": "标准贡献与互认记录卡",
+      "policy_instrument": "standards_contribution_and_reuse_record",
+      "enterprise_stage": "prototype_to_commercial_offer",
+      "problem": "A company may claim standards leadership without showing which test, public problem or reusable artefact the contribution actually improves.",
+      "jingzhang_interface": "For S04/S05/S08 outputs, record the problem addressed, versioned test evidence, contributor rights, proposed change, review status, reuse conditions and what remains a local concept.",
+      "operator": "standards-workshop lead + rights reviewer + participating company",
+      "required_evidence": [
+        "contribution record",
+        "versioned evidence",
+        "rights clearance",
+        "review status",
+        "reuse boundary"
+      ],
+      "metric": "public_enterprise_outputs_with_traceable_standards_contribution",
+      "stop_gate": "No reproducible evidence, unclear rights or a claim of endorsement without review keeps the contribution unpublished.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-DECIDIM-BARCELONA"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
