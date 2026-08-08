@@ -366,6 +366,29 @@
         "CASE-UK-ATRS"
       ],
       "status": "conceptual_suggestion"
+    },
++    {
+      "id": "POL-025",
+      "title": "无障碍与包容性服务验收卡",
+      "policy_instrument": "accessibility_and_inclusion_acceptance",
+      "enterprise_stage": "public_service_use",
+      "problem": "A product may improve an average journey while making the route harder for disabled residents, older people, carers or people without accounts.",
+      "jingzhang_interface": "Before S02, S08 or S09 use, pair AI-assisted and ordinary routes; test step-free access, plain-language communication, staffed help, complaint correction and opt-out with affected users.",
+      "operator": "accessibility lead + service owner + paid community reviewers",
+      "required_evidence": [
+        "paired route test",
+        "accessible communication sample",
+        "staffed-help drill",
+        "complaint correction record",
+        "opt-out record"
+      ],
+      "metric": "public_ai_services_passing_paired_accessibility_and_fallback_test",
+      "stop_gate": "A blocked accessible route, app-only service or uncorrected group-specific failure stops the window.",
+      "source_ids": [
+        "CASE-DECIDIM-BARCELONA",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
