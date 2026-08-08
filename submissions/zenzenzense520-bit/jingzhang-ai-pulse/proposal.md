@@ -21,6 +21,24 @@ iteration: "v1.1"
 
 `compliance_matrix.json` 中每条任务标注主导证据类型；同一任务内部同时包含概念与待确认内容时，取主导类型并在正文中说明。
 
+### 已确认结论、概念建议与待确认清单
+
+为避免把设计建议误读为审定结论，正文按"已确认结论 / 概念建议 / 待官方确认"三层组织。**已确认结论**只保留公告、任务书、标准与官方数据状态等可核验内容；**概念建议**统一以 **（概念）** 标注，仅供专业团队深化；**待官方确认**表示官方数据尚未发布，任何取值不得视为已审定。
+
+| 层级 | 内容 | 依据/依赖 |
+| --- | --- | --- |
+| 已确认结论 | 三个空间层次公告面积（统筹研究约 43.6 km²、总体设计约 11.4 km²、重点区域约 368.4 公顷）与三处重点区公告面积（众智园 192.1 公顷、原点社区 104.3 公顷、大钟寺 72.0 公顷） | [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] |
+| 已确认结论 | 智能体任务书六项任务、三大定位、五大功能与三区两翼协同回路 | [source:AGENT-TASKBOOK] |
+| 已确认结论 | 城市设计管理、控规编制审批、用地用海分类与建筑设计深度等标准名称 | [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] |
+| 已确认结论 | 官方控规指标状态：FAR、建筑高度、建筑密度、绿地率、退线均为 missing，需由官方控规附件补充 | [source:SITE-PACKAGE] [data:ranges/planning_limits.json] |
+| 已确认结论 | 道路分类枚举体系（快速路/主干路/次干路/支路/地块出入道路/步行/自行车/绿道/轨道接驳） | [source:SITE-PACKAGE] |
+| 概念建议 | 京张智脉命名、Logo 方向、高度分级、场景卡、朝圣地标、运营机制、拆改留与分期 | [source:AGENT-TASKBOOK] [depth:height_massing_character] [depth:phasing_implementation] |
+| 概念建议 | FAR 与建筑密度概念区间、界面与屋顶形态引导 | [depth:development_intensity_controls] [depth:height_massing_character] |
+| 概念建议 | 道路网络、轨道站点一体化与市政新型基础设施布局 | [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] |
+| 待官方确认 | 官方红线、重点区 polygon、控规容积率/高度/密度/绿地率/退线、道路红线、轨道线位、市政管线、权属与现状建筑底数 | [source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK] |
+
+正文中已确认结论不额外加标记；概念建议统一加 **（概念）**；待官方确认事项行文使用"待官方确认"。本清单与 `compliance_matrix.json` 的 `evidence_type` 字段一一对应。
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局 2026 年 5 月发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向全球智能体的开源征集任务书摘录为智能体任务依据 [source:AGENT-TASKBOOK]，并完整读取 `brief/site-package/` 中的结构化任务书、枚举、允许设计空间、规划指标区间和 JSON Schema [source:SITE-PACKAGE]。资料权威性按照 `data/source_registry.json` 区分：公告正文和已清权任务书可用于正式任务响应，临时粗略边界只允许用于方案生成、自检与可视化 [source:SOURCE-REGISTRY]；`data/processed/agent_fact_pack.md` 作为导航层帮助把三层范围、六项智能体任务、资料用途与缺资料清单组织成可读方案 [source:PROCESSED-FACT-PACK]。
@@ -125,6 +143,14 @@ Logo 与视觉识别方向建议 **（概念）**：以两条并列钢轨抽象�
 用地结构以"中部生态文化、西部科技服务、东部产业生活"为主：提交边界内共划分 25 个用地单元 [data:geometry/land_use.geojson#LU-001]，其中科研用地覆盖 AI 研发与成果转化 [data:geometry/land_use.geojson#LU-013]、商业服务业用地覆盖产业服务与智能消费 [data:geometry/land_use.geojson#LU-010]、公园绿地构成京张智脉绿廊 [data:geometry/land_use.geojson#LU-006]，其余为教育、文化、居住、社区服务、公共广场、留白与道路用地。建筑基底总面积为 1,703,291 平方米 [metric:building_footprint_area_sqm]，建筑密度 14.9%，作为概念空间供给基数，不代表审批容积率 [depth:land_use_layout]。
 
 开发强度、建筑高度、建筑密度、绿地率与退线等指标属于官方控规条件，当前 `brief/site-package/ranges/planning_limits.json` 中全部为缺失状态 [source:SITE-PACKAGE]。因此本方案不设定审定容积率或建筑高度，而是在 [depth:development_intensity_controls] 中明确"待正式控规确认"的清单，并以设计建议层级表达建筑体量与界面关系 [depth:height_massing_character]。更新对象采用"保留、改造、新建、留白"四类表达 [depth:retain_renovate_demolish]：教育科研与历史文脉相关建筑建议保留为主，低效产业空间建议改造更新，重点片区关键功能节点建议新建，众智园北侧与城市边缘建议留白弹性空间 [data:geometry/buildings.geojson#BLDG-001]。
+
+| 管控指标 | 官方状态 | 概念建议区间 **（概念）** | 使用边界 |
+| --- | --- | --- | --- |
+| 容积率 FAR | missing（待官方控规） | 重点区门户 2.0-4.0、一般街区 1.0-2.5 | 仅用于体量推演，不构成审定容积率 [metric:floor_area_ratio] |
+| 建筑高度 | missing（待官方控规） | 低层带 12-24m、中层带 24-60m、高层带 60-100m | 最终以控规、航空、文保与视廊评估为准 [metric:building_height_max_m] |
+| 建筑密度 | missing（待官方控规） | 概念 25%-45% | 仅作形态参考，不代替官方密度控制 [metric:building_density] |
+| 绿地率 | missing（待官方控规） | 概念下限 30% | 以官方控规或地方绿地标准为准 [metric:green_ratio] |
+| 退线 | missing（待官方控规） | 主要街道退线 5-15m（概念） | 以官方道路红线与建筑控制线为准 |
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
@@ -293,6 +319,14 @@ AI 场景卡 **（概念）** 共 12 张，其中至少 3 张为产业测试验�
 ## 交通、轨道、市政与公共服务设施
 
 交通方案以"轨道站城一体、绿廊慢行贯通、两翼微循环缝合"为框架 [data:geometry/roads.geojson#ROAD-006]。提交边界内概念道路总长约 92,722 米 [metric:road_length_m]，其中绿道与自行车道慢行系统长约 30,786 米 [metric:greenway_length_m]；南北主轴两线 [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] 与东西联络线 [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/roads.geojson#ROAD-005] 共同缝合三核与两翼 [depth:traffic_rail_slow_parking]。轨道站点一体化以五道口、清华东路西口、大钟寺站等为概念研究对象，道路红线、轨道线位、桥梁隧道与市政管线均列为待官方确认条件 [source:OFFICIAL-ANNOUNCEMENT]。
+
+| 条件类别 | 官方状态 | 本方案表达 | 复核依赖 |
+| --- | --- | --- | --- |
+| 道路红线与断面 | 待官方确认 | 概念道路网络与五级分类 [data:geometry/roads.geojson#ROAD-006] | 官方道路红线、交通影响评估 |
+| 轨道站点边界与线位 | 待官方确认 | 五道口、清华东路西口、大钟寺站一体化概念 [depth:traffic_rail_slow_parking] | 轨道专项设计 |
+| 市政管线与综合管廊 | 待官方确认 | 端侧算力、分布式能源、智慧市政概念 [depth:municipal_new_infrastructure] | 市政专项、管线综合 |
+| 停车与接驳 | 待官方确认 | 步行优先 + 公交接驳 + 共享单车 + 集约停车（概念） | 交通评估与运营条件 |
+| 现状建筑与公共服务底数 | 待官方确认 | 15 分钟生活圈概念布局 | 现状普查与官方底图 |
 
 市政与新型基础设施建议采用"传统市政 + 端侧算力 + 分布式能源"复合模式：在社区服务环与产业节点布置端侧算力驿站，在滨河与绿廊空间试点低碳能源展示，在重点区地下空间与管廊条件明确前不作出工程结论 [depth:municipal_new_infrastructure]。公共服务设施按 15 分钟生活圈组织社区服务、医疗健康、文化教育与体育设施，AI 健康服务综合体 [data:geometry/buildings.geojson#BLDG-010] 与社区服务综合体作为概念样例 [depth:traffic_rail_slow_parking]。
 
