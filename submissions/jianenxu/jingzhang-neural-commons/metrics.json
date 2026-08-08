@@ -75,6 +75,46 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/index.html"
+      ],
+      "formula": "count(agent.3 scenario-space-operation registry rows)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts are concept-program records, not approved operating sites."
+      ]
+    },
+    "test_validation_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(agent.3 scenarios explicitly marked as controlled test validation)",
+      "confidence": "high",
+      "assumptions": [
+        "Every test requires separate professional, safety, and operator confirmation before any operation."
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(persona table rows)",
+      "confidence": "high",
+      "assumptions": [
+        "Personas are design research categories and do not represent personal-data profiling."
+      ]
     }
   }
 }
