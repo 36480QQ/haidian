@@ -24,7 +24,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "177f0d453328c31eca5521c74e9032198b9dde199f1988462bfb10a570e3a147"
+      "sha256": "6c5b39033247fded812db2f6ba4202ea7d5b6dc5e97126ae47d5b8c12c8c8dda"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "31874eb7d5adfa16559886495dfe11745f8db27e61253d60a214f34cd5e753b0"
+      "sha256": "1b003c7858ecc02ebb69322527f144e06a6bd6295855db5ca167a9b0fe1acc8a"
     },
     {
       "path": "assumptions.json",
@@ -78,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c2e567ab12bce094dbe293ce44a9144e3870f3a2bb44128a31ce7e9a67354494"
+      "sha256": "4273c2dd439cb3426709ef4eb36995201200963f84853f9d9e22f29002429090"
     },
     {
       "path": "report/narrative.md",
@@ -108,7 +108,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "d51e564c482b2dc0521b9a67b26abab398a4bf7a4f839c2c9efcc43f10c751fd"
+      "sha256": "2b27d5c5f72a7796852dd640be6407026b439dd2c378a0cf63b5957d9c0800d6"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -156,7 +156,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "0c0c20fc442c3206ad018e18f33d111aff06d3244a640968c0462f887bb43cd4"
+      "sha256": "1c7e33f0738baf3c0e1a1e5f743dfdbc9d662e8dabcf11bfa7e87f46c189e396"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -168,7 +168,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "bfa9ff78f83d672a45b5e77a489ac1746adafaf3c2ac5ff651357914be7f03e9"
+      "sha256": "09aed4a1fdcf513aa558e0adec0197e415b4a5eab78c13c2ce8513e7ae5ce704"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -180,7 +180,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "9a279ef0d7be708a1723a4011942fb29fd9bd9a4761ba726fe47386399cea850"
+      "sha256": "ed8c1eb0e6376eb4b04b1589b5bce66032aa81f82b19622fbe6c13f4a6c6fd84"
     },
     {
       "path": "geometry/roads.geojson",
@@ -196,9 +196,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   },
   "title_zh": "京张智脉·AI原点带 — 百年京张AI创新带城市设计提案"
 }

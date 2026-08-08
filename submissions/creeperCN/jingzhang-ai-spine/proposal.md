@@ -212,7 +212,7 @@ v4 场景设计原则："民生痛点驱动+AI原生+人民参与+人本治理"�
 
 **城市风貌**：挖掘京张铁路历史文化、中关村创新文化，与AI创新文化相融合，提出百年京张AI创新带的城市基调（人文温润暖色系）。充分展示与利用清华园火车站等文化资源，以及北影等艺术资源，规划彰显地域特色的景观风貌系统 [standard:MOHURD-URBAN-DESIGN-MEASURES]。对具备更新潜力的区域，提出建筑高度、强度、风貌、屋顶形态、体量等管控引导要求（概念建议，待官方控规确认）[assumption:A02]。
 
-**公共空间指标**：绿地率≥35%（概念建议）[metric:M02_green_space_ratio]，公共空间比例≥18% [metric:M03_public_space_ratio]。当公园实施边界和文保控制线缺失时（GAP-HERITAGE-001），不得给出工程实施结论 [assumption:A13]。
+**公共空间指标**：绿地率28%（spatial_review复算值）[metric:green_ratio][metric:M02_green_space_ratio]，公共空间比例20%（spatial_review复算值）[metric:public_space_ratio] [metric:M03_public_space_ratio]。当公园实施边界和文保控制线缺失时（GAP-HERITAGE-001），不得给出工程实施结论 [assumption:A13]。
 
 ## 更新项目清单、实施政策与分期计划（agent.6）
 
