@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-interest proving ground where urban AI must earn trust before it scales."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "2.0"
-iteration: 10
+version: "2.1"
+iteration: 11
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-v2.0 prototype-narrative review status. Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+v2.1 public-proof-walk review status. Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 Motto: Every urban intelligence must withstand public scrutiny.
 
@@ -33,6 +33,14 @@ Four machine-readable artefacts make the proposal handover-ready: `visual/assets
 - One receipt: every urban-AI run records version, evidence, accountable human, worst-group result, appeal, expiry and disposition. Independent review then chooses scale, repair or exit; a hard stop overrides averages and publicity. [source:AGENT-TASKBOOK] [depth:overall_spatial_structure] [metric:machine_readable_contract_count] [metric:receipt_required_field_count]
 
 This “railway line-and-station grammar—public acceptance space—run receipt” is the proposal's original closed loop: space is not a technology container but a civic interface where urban AI can be questioned, refused and retested. Responsibility, budget and data remain pending until statutory inputs are verified [assumption:A-OPERATIONS-001] [assumption:A-DATA-001].
+
+**A 90-minute public proof walk turns abstract governance into observable acts.** A visitor collects an anonymous task ticket at Zhongzhiyuan, compares the AI route with the ordinary route in the failure theatre, and triggers one staffed takeover. At the AI Origin Community, a wheelchair user, older resident or first-time visitor repeats the same task; the display foregrounds the worst-group result rather than the average. At Dazhongsi, an independent appeal desk reveals the version, accountable human, data expiry and stop status before the visitor records “scale / repair / exit”. The ticket becomes a Run Receipt; its QR code resolves only to a de-identified evidence package. If the ordinary route, staffed desk or appeal entrance fails at any station, the demonstration fails regardless of spectacle. The walk is simultaneously a spatial itinerary, public-learning device and mandatory acceptance script. Ninety minutes is a conceptual service target to be recalibrated through an accessible walk audit. [depth:detailed_public_space_design] [metric:receipt_required_field_count]
+
+|Action along the line|Spatial interface|Evidence left behind|Failure response|
+|---|---|---|---|
+|Zhongzhiyuan: trigger takeover|Dual-route entrance, lay-by, staffed desk|Trigger reason, takeover latency, accountable role|Return to the ordinary route and stop automation|
+|AI Origin: cross-group retest|Continuous accessible surface, quiet waiting point, paper ticket|Worst-group completion, barrier log, minority note|Do not proceed until the issue closes|
+|Dazhongsi: public disposition|Independent appeal desk, version board, exit gate|Scale / repair / exit vote and disposition deadline|Unresolved overdue case automatically pauses|
 
 ## Taskbook at a glance: three positions, five functions, three areas and two wings
 
@@ -230,7 +238,7 @@ The plan is also tested against adverse conditions. If official geometry conflic
 
 ## 19. The first 100 metres as a Civic AI Failure Theatre
 
-v2.0 preserves and tightens the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: A daily keeps analogue routes and human service; B contest enables explanation, refusal and takeover; C failure stops devices, opens a physical bypass and onsite help; D replay publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:overall_spatial_structure] [metric:spatial_interface_type_count]
+v2.1 preserves and tightens the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: A daily keeps analogue routes and human service; B contest enables explanation, refusal and takeover; C failure stops devices, opens a physical bypass and onsite help; D replay publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:overall_spatial_structure] [metric:spatial_interface_type_count]
 
 The five figures and the first A3/A0 pages now share one visual grammar: an evidence ladder limits precision; five-layer sections control space; three task cards control everyday operations; three non-conflicting routes control safe degradation; and a public decision room chooses scale, repair or exit. These are visible indexes into the machine contracts, not renderings used as substitutes for professional evidence. [metric:receipt_required_field_count]
 
