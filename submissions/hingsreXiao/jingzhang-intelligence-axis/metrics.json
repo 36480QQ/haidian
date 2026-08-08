@@ -78,7 +78,7 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(area(LAND_USE where code == '09'))",
+      "formula": "sum(area(LAND_USE where code='05'))",
       "confidence": "medium",
       "assumptions": [
         "基于AI生成用地布局"
