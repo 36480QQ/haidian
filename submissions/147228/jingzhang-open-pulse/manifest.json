@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d7d591397c4c8bb3b09b11aa5efa6ba7d7bf7edd8cac5cc6a3b0b2c43ee12fc1"
+      "sha256": "cf6573e4daec41b54af29d85f4e4bf8926ff6f35c069ce92ddf8d46202b1f9c2"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b2d8a0a476df774565a60bbbb2bd439db109e2f0035218b0f8a4a79ede662bad"
+      "sha256": "6b7f1ba6269a2dc7556b691e1996a3d637d792016613c61e49e15debe213cc09"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1fa63a23f96cf6c9a9d1a5f194cef8a17b6470ab0f8d267d6236ef3ca1ae7079"
+      "sha256": "777592afd6dc74e1682a37d1e7ce1c68fbc06dc31f5e27e0f9199d77ce783f91"
     },
     {
       "path": "self_check.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6bc54a4adee85c1130a68ecd38293ef06ff62a1dbe84c9101816b0b0bf5a386d"
+      "sha256": "f81a83d48acef392e493d8ea89144e12afefeed46681b43375ace38f4389b5f6"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9cb2f8260e3122d740f071462e81c0364a5cbd241e5f2dbd20b3a1d359ace94c"
+      "sha256": "ef3245bf58c78405554c2041b2f7c302c3615bf810302328eb56e459c55bfeed"
     },
     {
       "path": "report/narrative.md",
@@ -107,13 +107,13 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "efadd213394d540871d75a3cc267177249f8311cd48eaf978ecd79eca23722ac"
+      "sha256": "13f842083dd097d19225d99be7c8c60dec0f122d4b95716f1746fb181586a225"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f66fd2a6c302cb6a0aacabede0ccd00c384eaa55f7558386f1a527b0c3c42e20"
+      "sha256": "7adfa792b25566f2b1d5325e68a55e008bd6f4c7bd27dc3779b952bb912edd55"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d79c52f52384111be08dbbe02f67c5c6940ab8ce15698dfbd2a992e8c6803869"
+      "sha256": "3cbe4c30e10c1389e83b35512a5f93dbf80c91497e8fdec35bf5bdbc6731cde8"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f875c17b2238f3b3b1f801d246c875952787648f2e895007323c73ee8d58bba3"
+      "sha256": "347f409c769b4412d9875dbbc2ddc1337b10672ef5f70ac5523b5d8b8aff62a8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -375,7 +375,13 @@
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
+      "sha256": "dbac8b51f677af14edc086fef4b428bbbe538c87ef76b8c18d4f76147cfc83cf"
+    },
+    {
+      "path": "visual/assets/wind-health-field-protocol.json",
+      "role": "wind_health_field_protocol",
+      "required": true,
+      "sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
@@ -411,7 +417,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "0c7ac9a505f2646c8eae6864fa7ae68c0af16af7a9824e695182cd9314c4fe87"
+      "sha256": "504ea35d51f72f9a507094dd45d9a6d804848bb315fc9e2616af303b0cd6b603"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -436,6 +442,27 @@
       "role": "public_interest_audit",
       "required": true,
       "sha256": "58b5d4ef4a685dfc2f3ccc956eb51319a766a146efd0161db70ae4a282363468"
+    },
+    {
+      "path": "visual/assets/open-pulse-relay-receipt.schema.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4218af7cac1335cb2c3e7d20620f67b26b2cd449054e1d6bed658dbc49d43a6a"
+    },
+    {
+      "path": "visual/assets/example-s02-embodied-receipt.json",
+      "role": "visualization",
+      "required": false,
+      "language": "zh",
+      "sha256": "4a1877b58d3ff17cfec763e2e471a8553375b603cd6e8b5df8f720dbdec4587f"
+    },
+    {
+      "path": "visual/assets/qa-readiness.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b89375ee9305dabf628ad885f82d051fdbcfcf4e361f514ca0ea046021bb1a8b"
     },
     {
       "path": "visual/assets/policy-enterprise-playbook.json",

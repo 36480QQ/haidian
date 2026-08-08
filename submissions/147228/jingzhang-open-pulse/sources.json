@@ -364,6 +364,28 @@
       "usage": "Research on roof geometry, canyon aspect ratio and pollutant dynamics used only to identify parameters for later professional modelling. It does not prove that deeper canyons ventilate better on this site and supplies no local CFD or measured baseline."
     },
     {
+      "id": "AIJ-CFD-PEDESTRIAN-WIND-2008",
+      "url": "https://doi.org/10.1016/j.jweia.2008.02.058",
+      "doi": "10.1016/j.jweia.2008.02.058",
+      "source_type": "peer_reviewed_guideline",
+      "accessed_date": "2026-08-08",
+      "usage": "AIJ pedestrian-wind CFD guideline used to require declared computational conditions and cross-comparison with field or benchmark evidence. It is a method boundary only, not a Jing-Zhang result or a transferred comfort threshold."
+    },
+    {
+      "id": "AIJ-CFD-GUIDEBOOK",
+      "url": "https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm",
+      "source_type": "official_research_public",
+      "accessed_date": "2026-08-08",
+      "usage": "Architectural Institute of Japan guidebook page describing pedestrian-wind CFD validation benchmarks and the importance of geometry, inflow conditions and measurement points. Used as a public method route; the submission does not claim to have run an AIJ benchmark."
+    },
+    {
+      "id": "ISO-7726-INSTRUMENTS-2025",
+      "url": "https://www.iso.org/standard/78238.html?browse=ics",
+      "source_type": "official_standard_catalogue",
+      "accessed_date": "2026-08-08",
+      "usage": "ISO catalogue record for the 2025 thermal-environment instrumentation standard. Used only to require professional review of instrument characteristics and measurement methods; the licensed standard text and any local thermal result are not included."
+    },
+    {
       "id": "PROJECT-SCOPE-SUMMARY",
       "path": "data/processed/project_scope_summary.csv",
       "source_type": "repository_processed_reference",
