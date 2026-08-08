@@ -42,6 +42,30 @@
       "status": "provisional_partition",
       "statement": "Land-use partition is a topology-complete design partition of the provisional site boundary (no gaps/overlaps) using MNR land-use codes; it is not an approved regulatory land-use plan.",
       "impact": "Land-use ratios are design-proposal values awaiting official regulatory plan confirmation."
+    },
+    {
+      "id": "A-CASES-001",
+      "status": "background_reference",
+      "statement": "Six global AI ecosystem cases (Kendall Square, King's Cross, one-north, Sand Hill Road, Yunqi Town, Seoul DMC) are background research references registered in sources.json with URL, accessed date 2026-08-08, and usage limits; they are not verified comparative research or spatial/industry evidence.",
+      "impact": "Case lessons are conceptual transfers only; no case-derived spatial or industry conclusions are claimed."
+    },
+    {
+      "id": "A-COPYRIGHT-001",
+      "status": "asset_manifest_disclosed",
+      "statement": "All assets (text, geometry, figures, PDFs, HTML) are AI-agent programmatic originals using only system fonts and repo-provided data; per-file authorship, generation method, source, and license status are listed in report/copyright_statement.md. No absolute guarantee beyond verifiable records is made.",
+      "impact": "No third-party proprietary assets are included; licensing for further professional use to be agreed with organizers."
+    },
+    {
+      "id": "A-INCLUSION-001",
+      "status": "pending_specialist_review",
+      "statement": "Inclusive design requirements (accessibility, non-digital alternatives, night safety, public participation) are proposed at concept level; children/elderly/disabled/low-income service workers' needs assessment and accessibility compliance review require specialist input and local data.",
+      "impact": "Inclusion measures are directional suggestions pending accessibility audit and community consultation."
+    },
+    {
+      "id": "A-REGION-001",
+      "status": "conceptual_suggestion",
+      "statement": "Regional collaboration matrix (Beiwai community, Future Science City, Huairou Science City, Economic-Technological Development Area, Beijing-Tianjin-Hebei) is a conceptual suggestion of interfaces only; no administrative or fiscal arrangements are claimed.",
+      "impact": "Collaboration interfaces require bilateral agreement to materialize."
     }
   ]
 }
