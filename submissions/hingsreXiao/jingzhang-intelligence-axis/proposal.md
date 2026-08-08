@@ -233,13 +233,12 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 ## 用地、建筑规模与拆改留方案
 
 用地分区依据自然资源部《国土空间调查、规划、用途管制用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。在约11.4 km²总体设计范围内，概念用地分配（基于临时边界EPSG:4548估算[metric:site_area_sqm]）：
-- 绿地与开敞空间（14）：约2.80M m²（商业24.6%）[metric:green_ratio]
-- 产业研发（10）：约4.03M m²（35.3%）
-- 科研教育（0803）：约4.03M m²（35.3%）[metric:industrial_rd_area_sqm]
-- 商务金融（0902）与商业（0901）：约2.80M m²（商业24.6%）[metric:commercial_area_sqm]
-- 居住（07）：约1.27M m²（居住11.1%）[metric:residential_area_sqm]
-- 公共服务（08）：约3.31M m²（公服29.0%）[metric:public_facility_area_sqm]
-- 市政设施与道路：约1,600,000 m²（14%）
+- 绿地与开敞空间（14）：约4.03M m²（35.3%）[metric:green_ratio]
+- 商业服务业（05）：约2.80M m²（24.6%）[metric:commercial_area_sqm]
+- 居住（07）：约1.27M m²（11.1%）[metric:residential_area_sqm]
+- 公共管理与公共服务（08）：约3.31M m²（29.0%）[metric:public_facility_area_sqm]
+- 独立产业用地（10）：本次概念分区中未单独划分，产业研发功能由公服(08)和商业(05)混合承载[metric:industrial_rd_area_sqm]
+- 道路与市政设施：约1.60M m²（14%，基于道路网络估算）
 
 **拆改留分类原则**（概念方向）：
 - **保留**：已建成的品质住宅区、高校院所、地铁站点及附属设施、永久性绿地
@@ -371,7 +370,7 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 | 公共空间比例 | 约0.4% | low | 估算值[metric:public_space_ratio] |
 | 重点区数量 | 3 | medium | 官方公告[metric:key_area_count] |
 | 重点区总面积 | 约3,684,000 m² | medium | 临时边界[metric:key_area_total_sqm] |
-| 容积率 | N/A | unknown | 待控规[metric:floor_area_ratio] |
+| 容积率 | ~0.15(概念测算) | low | AI生成建筑体量[metric:floor_area_ratio] |
 | 建筑限高 | N/A | unknown | 待控规[metric:building_height_max] |
 
 ### 合规矩阵覆盖

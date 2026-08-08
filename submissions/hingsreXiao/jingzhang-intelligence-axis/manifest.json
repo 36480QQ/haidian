@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "01169ad60217785886d5470327ee03c89bbf1a41ac47ce9df969b9ace705208f"
+      "sha256": "b5576933605d15abd697344192cb6b17a025fa2229aa71f4dfcc37ba93cc9b69"
     },
     {
       "path": "agent.json",
@@ -195,7 +195,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
     "self_check_summary": "deterministic validation / spatial review / visual packaging / professional evidence: pending auto-check"
