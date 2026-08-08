@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "337f35a64e4946391b64da9b405c772b5765212b5ac62d26ff3d734769356574"
+      "sha256": "169791d5289de13b7952d2f5e9249a03eedbdc35948b80ffcad4c079332cae07"
     },
     {
       "path": "agent.json",
@@ -49,7 +49,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c81652dc2676a1004112de49e48458f1cbc622cdac66e74579854b50b508d3e2"
+      "sha256": "5551025bb522bb4dc81f8b55d040383616d472c44ad23949c862108b89c60939"
     },
     {
       "path": "self_check.json",
@@ -104,19 +104,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "948473f8680843da1fc81548c01b8fe62cf688cf3252543e302dfde85449f3af"
+      "sha256": "c0199ba95797b929ef02cdc3ee19452d59282c0ebf4729e746a0816e70535faf"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "54b9e3efb524420dd73296a345e1594e905dfd68c5dbd79de899bc271478a2b4"
+      "sha256": "b9582517306a63c7aa0c7de523499f261c20aa7d8cde1d25309c2494b1f6f9e5"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "8eae533db9619e8f4b628fce75299538cbd91d67f6eb8afaf007da097383d0f9"
+      "sha256": "1a2c919b15b7775c107add55be1c2168a46835181f2cca4961272bb53258c81d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -248,7 +248,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6c87b995892ab16dd3253602db8263bab803c7ffe4c2b089fb9322f3c1521d6a"
+      "sha256": "a570008d3efeb2b297eb30a94f5cebfba92cc025ad6bd2e70c8d8a5bbe64c7c0"
     },
     {
       "path": "report/proposal.en.html",
@@ -256,7 +256,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e2b431af6d4c7daba88ed06758e4b004cf3ae74eb448a5adbbd411a9fc6b8d68"
+      "sha256": "9e92235e471e5d992587c53203fdafdc36ddc8189365772af0323ba2f7f319fd"
     },
     {
       "path": "visual/index.en.html",
