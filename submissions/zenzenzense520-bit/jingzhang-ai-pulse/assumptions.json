@@ -24,6 +24,12 @@
       "status": "cleared_or_public",
       "statement": "All spatial evidence and narrative facts use public or user-provided cleared sources listed in sources.json and data/source_registry.json.",
       "impact": "Unlicensed, non-public, or unapproved materials are excluded from the submission package."
+    },
+    {
+      "id": "A-POLYGON-REPLACEMENT-001",
+      "status": "workflow_requirement",
+      "statement": "When official redlines are published, geometry/site_boundary.geojson and geometry/key_areas.geojson must be replaced, geometry regenerated, metrics recalculated, and charts, HTML, and manifest checksums updated.",
+      "impact": "Area narrative and all derived metrics remain provisional until the official polygon replacement workflow is executed."
     }
   ]
 }

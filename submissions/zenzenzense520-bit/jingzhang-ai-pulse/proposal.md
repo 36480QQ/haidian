@@ -109,12 +109,12 @@ Logo 与视觉识别方向建议 **（概念）**：以两条并列钢轨抽象�
 
 ### 区域协同与创新网络
 
-一带不是孤立片区，而是海淀与更大创新网络连接的枢纽。本方案提出"四个圈层"协同框架 [source:OFFICIAL-ANNOUNCEMENT]：
+一带不是孤立片区，而是海淀与更大创新网络连接的枢纽。本方案提出"四个圈层"协同框架，并明确每个圈层的空间接口与协同机制 [source:OFFICIAL-ANNOUNCEMENT]：
 
-1. **与北纬社区协同**：北纬社区及周边居住与科创社区为一带提供人才生活与日常服务腹地。建议通过京张智脉绿廊与社区慢行环连接，把社区公共客厅、教育设施与 AI 场景节点组织进同一服务网络，避免重点区与社区生活割裂 [data:geometry/roads.geojson#ROAD-008]。
-2. **与未来科学城协同**：未来科学城承担大科学装置、能源材料和先进制造等硬科技研发。一带可承接其成果转化的城市服务端，形成"未来科学城源头研发、海淀一带场景转化与总部服务"的分工 [depth:overall_spatial_structure]。
-3. **与怀柔科学城协同**：怀柔科学城以基础研究和国家实验室为特色。一带通过高校院所网络、数据要素会客厅和国际路演客厅，为基础研究成果提供算法、数据、算力与资本的中试和发布界面 [data:geometry/buildings.geojson#BLDG-008]。
-4. **与京津冀协同**：依托京张铁路历史通道和京冀高速铁路网，一带可形成"京津雄研发、海淀创新带总部与场景、京张沿线制造与算力节点"的梯度协同，把百年京张通道转化为面向全球的 AI 产业协作走廊 [source:AGENT-TASKBOOK]。
+1. **与北纬社区协同**：北纬社区及周边居住与科创社区为一带提供人才生活与日常服务腹地。协同接口是京张智脉绿廊与社区慢行环，通过社区公共客厅、教育设施与 AI 场景节点组织同一服务网络，避免重点区与社区生活割裂 [data:geometry/roads.geojson#ROAD-008]。
+2. **与未来科学城协同**：未来科学城承担大科学装置、能源材料和先进制造等硬科技研发。一带承接其成果转化的城市服务端，形成"未来科学城源头研发、海淀一带场景转化与总部服务"的分工；协同机制以成果转化街和测试验证节点为接口 [depth:overall_spatial_structure]。
+3. **与怀柔科学城协同**：怀柔科学城以基础研究和国家实验室为特色。一带通过高校院所网络、数据要素会客厅和国际路演客厅，为基础研究成果提供算法、数据、算力与资本的中试和发布界面，形成"基础研究—中试转化—国际发布"的接力机制 [data:geometry/buildings.geojson#BLDG-008]。
+4. **与京津冀协同**：依托京张铁路历史通道和京冀高速铁路网，一带可形成"京津雄研发、海淀创新带总部与场景、京张沿线制造与算力节点"的梯度协同；协同机制是把百年京张通道转化为面向全球的 AI 产业协作走廊 [source:AGENT-TASKBOOK]。
 
 区域协同结论均为概念建议，不涉及跨区域行政边界调整或已确定产业布局；正式深化时应与相关区县规划、科技园区规划和区域协同政策校核 [source:PROCESSED-FACT-PACK]。
 
@@ -122,7 +122,7 @@ Logo 与视觉识别方向建议 **（概念）**：以两条并列钢轨抽象�
 
 总体设计范围的城市更新框架为"绿廊缝合、两翼焕新、三核点亮"。绿廊缝合指以京张遗址公园活力带为南北主轴，缝合被铁路分割的东西城市片区 [data:geometry/green_space.geojson#GREEN-002]；两翼焕新指中关村科技服务翼强化要素服务、小月河场景赋能翼强化场景测试与公共服务；三核点亮指三处重点片区形成可运营的 AI 创新锚点 [data:geometry/key_areas.geojson#PROV-KEY-002]。
 
-用地结构以"中部生态文化、西部科技服务、东部产业生活"为主：提交边界内共划分 25 个用地单元 [data:geometry/land_use.geojson#LU-001]，其中科研用地覆盖 AI 研发与成果转化 [data:geometry/land_use.geojson#LU-013]、商业服务业用地覆盖产业服务与智能消费 [data:geometry/land_use.geojson#LU-010]、公园绿地构成京张智脉绿廊 [data:geometry/land_use.geojson#LU-006]，其余为教育、文化、居住、社区服务、公共广场、留白与道路用地。建筑基底总面积为 618,413 平方米 [metric:building_footprint_area_sqm]，建筑密度 5.4%，作为概念空间供给基数，不代表审批容积率 [depth:land_use_layout]。
+用地结构以"中部生态文化、西部科技服务、东部产业生活"为主：提交边界内共划分 25 个用地单元 [data:geometry/land_use.geojson#LU-001]，其中科研用地覆盖 AI 研发与成果转化 [data:geometry/land_use.geojson#LU-013]、商业服务业用地覆盖产业服务与智能消费 [data:geometry/land_use.geojson#LU-010]、公园绿地构成京张智脉绿廊 [data:geometry/land_use.geojson#LU-006]，其余为教育、文化、居住、社区服务、公共广场、留白与道路用地。建筑基底总面积为 1,703,291 平方米 [metric:building_footprint_area_sqm]，建筑密度 14.9%，作为概念空间供给基数，不代表审批容积率 [depth:land_use_layout]。
 
 开发强度、建筑高度、建筑密度、绿地率与退线等指标属于官方控规条件，当前 `brief/site-package/ranges/planning_limits.json` 中全部为缺失状态 [source:SITE-PACKAGE]。因此本方案不设定审定容积率或建筑高度，而是在 [depth:development_intensity_controls] 中明确"待正式控规确认"的清单，并以设计建议层级表达建筑体量与界面关系 [depth:height_massing_character]。更新对象采用"保留、改造、新建、留白"四类表达 [depth:retain_renovate_demolish]：教育科研与历史文脉相关建筑建议保留为主，低效产业空间建议改造更新，重点片区关键功能节点建议新建，众智园北侧与城市边缘建议留白弹性空间 [data:geometry/buildings.geojson#BLDG-001]。
 
@@ -171,15 +171,15 @@ Logo 与视觉识别方向建议 **（概念）**：以两条并列钢轨抽象�
 
 ### 众智园AI自主创新加速区
 
-定位为"全栈自主创新与安全治理客厅"。空间结构采用"一廊两带一谷"：清河低碳创新廊串联滨河绿色空间与低碳算力展示 [data:geometry/green_space.geojson#GREEN-003]，两带指创新研发带与测试验证带，一谷指众智园中央创新谷。建筑更新以 AI 研发中心 [data:geometry/buildings.geojson#BLDG-001]、开源孵化器 [data:geometry/buildings.geojson#BLDG-002]、全栈测试实验室 [data:geometry/buildings.geojson#BLDG-003] 为概念抓手；公共空间以众智园测试展示广场 [data:geometry/public_space.geojson#PUBLIC-005] 承载开放评测、标准工作坊与安全治理展示 [depth:three_key_area_detailed_design]。实施风险：河道蓝线、生态与防洪条件、控规条件均待官方确认 [source:PROCESSED-FACT-PACK]。
+定位为"全栈自主创新与安全治理客厅"。空间结构采用"一廊两带一谷"：清河低碳创新廊串联滨河绿色空间与低碳算力展示 [data:geometry/green_space.geojson#GREEN-003]，两带指创新研发带与测试验证带，一谷指众智园中央创新谷。建筑更新以 AI 研发中心 [data:geometry/buildings.geojson#BLDG-001]、开源孵化器 [data:geometry/buildings.geojson#BLDG-002]、全栈测试实验室 [data:geometry/buildings.geojson#BLDG-003] 为概念抓手；公共空间以众智园测试展示广场 [data:geometry/public_space.geojson#PUBLIC-005] 承载开放评测、标准工作坊与安全治理展示 [depth:three_key_area_detailed_design]。差异化产品逻辑 **（概念）** 是"同址闭环"：模型研发、算力调度、安全测试与治理标准在同一园区形成可公开演示的完整链路，使企业可带着模型来、现场测试、现场发布，减少跨园区往返。实施风险：河道蓝线、生态与防洪条件、控规条件均待官方确认 [source:PROCESSED-FACT-PACK]。
 
 ### 北京AI原点社区
 
-定位为"近校成果转化与开源人才社区"。空间结构采用"街区缝合、发布轴带、社区服务环"：通过成果转化街 [data:geometry/buildings.geojson#BLDG-004] 缝合校区、园区与街区，以成果发布厅 [data:geometry/buildings.geojson#BLDG-005] 和原点社区发布广场 [data:geometry/public_space.geojson#PUBLIC-004] 形成面向开源社区与高校师生的发布轴带，以人才公寓 [data:geometry/buildings.geojson#BLDG-006] 和社区服务形成完整生活环。重点区详细设计与轨道站点一体化、慢行缝合和首层业态共同组织 [depth:three_key_area_detailed_design]。实施风险：校区边界、权属与首层业态调整需专业深化 [source:AGENT-TASKBOOK]。
+定位为"近校成果转化与开源人才社区"。空间结构采用"街区缝合、发布轴带、社区服务环"：通过成果转化街 [data:geometry/buildings.geojson#BLDG-004] 缝合校区、园区与街区，以成果发布厅 [data:geometry/buildings.geojson#BLDG-005] 和原点社区发布广场 [data:geometry/public_space.geojson#PUBLIC-004] 形成面向开源社区与高校师生的发布轴带，以人才公寓 [data:geometry/buildings.geojson#BLDG-006] 和社区服务形成完整生活环。差异化产品逻辑 **（概念）** 是"近校转化—开源发布—人才居住"三段链条：成果转化街承接高校项目，发布轴带完成开源版本与商业路演，人才公寓和社区服务环把参与者变成长期居民，形成从校园到街区的自循环。重点区详细设计与轨道站点一体化、慢行缝合和首层业态共同组织 [depth:three_key_area_detailed_design]。实施风险：校区边界、权属与首层业态调整需专业深化 [source:AGENT-TASKBOOK]。
 
 ### 大钟寺AI产业聚集区
 
-定位为"智能原生消费与国际交往客厅"。空间结构采用"站城一体、四象限连通、文化商业复合"：以智能消费综合体 [data:geometry/buildings.geojson#BLDG-007] 和 AI 文化展示馆 [data:geometry/buildings.geojson#BLDG-008] 形成站前复合界面，以大钟寺站前广场 [data:geometry/public_space.geojson#PUBLIC-002] 实现四象限步行连通 [data:geometry/roads.geojson#ROAD-003]，以数据要素会客厅与国际路演客厅承载产业服务 [depth:three_key_area_detailed_design]。实施风险：轨道站点、道路交叉口与市政管线条件待官方附件确认 [source:OFFICIAL-ANNOUNCEMENT]。
+定位为"智能原生消费与国际交往客厅"。空间结构采用"站城一体、四象限连通、文化商业复合"：以智能消费综合体 [data:geometry/buildings.geojson#BLDG-007] 和 AI 文化展示馆 [data:geometry/buildings.geojson#BLDG-008] 形成站前复合界面，以大钟寺站前广场 [data:geometry/public_space.geojson#PUBLIC-002] 实现四象限步行连通 [data:geometry/roads.geojson#ROAD-003]，以数据要素会客厅与国际路演客厅承载产业服务 [depth:three_key_area_detailed_design]。差异化产品逻辑 **（概念）** 是"轨道到达即进入城市"：大钟寺站四象限出口直接接驳智能消费、文化展示、国际路演与酒店会议，出站动线即商业动线，减少换乘绕行，使国际访客从车站到发布现场的时间成为可预期的城市体验。实施风险：轨道站点、道路交叉口与市政管线条件待官方附件确认 [source:OFFICIAL-ANNOUNCEMENT]。
 
 三处重点区共同构成 [metric:key_area_count] 个详细设计单元，全部在提交边界内且互不重叠，详细设计深度由 [depth:three_key_area_detailed_design] 统一校核。
 
@@ -264,7 +264,7 @@ AI 场景卡 **（概念）** 共 12 张，其中至少 3 张为产业测试验�
 
 ## 用地、建筑规模与拆改留方案
 
-用地分类统一采用国土空间用地用海分类代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。提交边界内用地单元 25 个，绿地与开敞空间面积 2,904,708 平方米、占比 25.5% [metric:green_ratio] [metric:green_space_area_sqm]，公共空间面积 537,012 平方米、占比 4.7% [metric:public_space_ratio] [metric:public_space_area_sqm]，建筑基底 618,413 平方米、建筑密度 5.4% [metric:building_density]。
+用地分类统一采用国土空间用地用海分类代码 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。提交边界内用地单元 25 个，绿地与开敞空间面积 3,141,601 平方米、占比 27.5% [metric:green_ratio] [metric:green_space_area_sqm]，公共空间面积 813,108 平方米、占比 7.1% [metric:public_space_ratio] [metric:public_space_area_sqm]，建筑基底 1,703,291 平方米、建筑密度 14.9% [metric:building_density]。
 
 拆改留方案 **（概念）** 以"保留优先、改造为主、新建精准、留白弹性"为原则：文保与教育科研建筑建议保留，低效产业与社区设施建议改造，三核关键节点建议新建，众智园北侧与城市边缘建议留白。所有拆改留表达均为概念建议 [depth:retain_renovate_demolish]，不涉及地块权属与法定审批；控规容积率、建筑高度、建筑密度、绿地率与退线列为待确认事项 [depth:development_intensity_controls]。建筑形态与风貌控制以体量分级、界面连续性和屋顶形态为设计建议 [depth:height_massing_character]，由 A3/A0 图纸与 HTML 可视化表达 [source:SITE-PACKAGE]。
 
@@ -286,13 +286,13 @@ AI 场景卡 **（概念）** 共 12 张，其中至少 3 张为产业测试验�
 
 #### 建筑规模与空间供给
 
-- 建筑基底总面积 618,413 平方米、建筑密度 5.4%，作为概念空间供给基数 [metric:building_footprint_area_sqm]。
+- 建筑基底总面积 1,703,291 平方米、建筑密度 14.9%，作为概念空间供给基数 [metric:building_footprint_area_sqm]。
 - 建议产业空间、人才居住与公共服务按"五三二"概念结构配置，即产业与创新空间约占 50%、居住社区约占 30%、公共服务与配套约占 20%，具体比例以控规与市场评估为准 [depth:land_use_layout]。
 - 新建与改造项目优先利用低效工业与仓储空间，严格控制新增建设用地，突出存量更新导向 [depth:retain_renovate_demolish]。
 
 ## 交通、轨道、市政与公共服务设施
 
-交通方案以"轨道站城一体、绿廊慢行贯通、两翼微循环缝合"为框架 [data:geometry/roads.geojson#ROAD-006]。提交边界内概念道路总长约 51,642 米 [metric:road_length_m]，其中绿道与自行车道慢行系统长约 15,354 米 [metric:greenway_length_m]；南北主轴两线 [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] 与东西联络线 [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/roads.geojson#ROAD-005] 共同缝合三核与两翼 [depth:traffic_rail_slow_parking]。轨道站点一体化以五道口、清华东路西口、大钟寺站等为概念研究对象，道路红线、轨道线位、桥梁隧道与市政管线均列为待官方确认条件 [source:OFFICIAL-ANNOUNCEMENT]。
+交通方案以"轨道站城一体、绿廊慢行贯通、两翼微循环缝合"为框架 [data:geometry/roads.geojson#ROAD-006]。提交边界内概念道路总长约 92,722 米 [metric:road_length_m]，其中绿道与自行车道慢行系统长约 30,786 米 [metric:greenway_length_m]；南北主轴两线 [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] 与东西联络线 [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/roads.geojson#ROAD-005] 共同缝合三核与两翼 [depth:traffic_rail_slow_parking]。轨道站点一体化以五道口、清华东路西口、大钟寺站等为概念研究对象，道路红线、轨道线位、桥梁隧道与市政管线均列为待官方确认条件 [source:OFFICIAL-ANNOUNCEMENT]。
 
 市政与新型基础设施建议采用"传统市政 + 端侧算力 + 分布式能源"复合模式：在社区服务环与产业节点布置端侧算力驿站，在滨河与绿廊空间试点低碳能源展示，在重点区地下空间与管廊条件明确前不作出工程结论 [depth:municipal_new_infrastructure]。公共服务设施按 15 分钟生活圈组织社区服务、医疗健康、文化教育与体育设施，AI 健康服务综合体 [data:geometry/buildings.geojson#BLDG-010] 与社区服务综合体作为概念样例 [depth:traffic_rail_slow_parking]。
 
@@ -302,7 +302,7 @@ AI 场景卡 **（概念）** 共 12 张，其中至少 3 张为产业测试验�
 
 #### 道路与慢行
 
-- **道路等级**：建议形成"快速路-主干路-次干路-支路-慢行绿道"五级网络；提交边界内概念道路总长 51,642 米 [metric:road_length_m]，其中慢行绿道 15,354 米 [metric:greenway_length_m]。
+- **道路等级**：建议形成"快速路-主干路-次干路-支路-慢行绿道"五级网络；提交边界内概念道路总长 92,722 米 [metric:road_length_m]，其中慢行绿道 30,786 米 [metric:greenway_length_m]。
 - **慢行断点缝合**：优先处理京张绿廊与北五环、学院路、西土城路等交叉节点，采用过街天桥、地面信号或地下通道等多种方案比较，不预设工程结论 [data:geometry/roads.geojson#ROAD-006]。
 - **停车与接驳**：建议轨道站点周边采用"步行优先 + 公交接驳 + 共享单车 + 集约停车"模式，重点企业周边设置分时共享停车 [data:geometry/public_space.geojson#PUBLIC-002]。
 
@@ -344,9 +344,17 @@ AI 朝圣地标（概念）不少于 3 个：清华园原点碑（以清华园�
 
 ## 更新项目清单、实施政策与分期计划
 
-更新项目清单以"可讨论、可复核、可深化"为原则形成项目库，核心项目包括：京张智脉绿廊缝合工程 [data:geometry/phasing.geojson#PHASE-002]、众智园全栈测试与治理客厅 [data:geometry/phasing.geojson#PHASE-001]、原点社区近校成果转化街 [data:geometry/buildings.geojson#BLDG-004]、大钟寺站城一体化公共界面 [data:geometry/public_space.geojson#PUBLIC-002]、AI 公共服务与端侧算力节点、全球 AI 活动周公共路线 [data:geometry/phasing.geojson#PHASE-003] [depth:renewal_project_list]。近期启动区面积为 3,692,893 平方米 [metric:phase_1_area_sqm]。
+更新项目清单以"可讨论、可复核、可深化"为原则形成项目库，核心项目包括：京张智脉绿廊缝合工程 [data:geometry/phasing.geojson#PHASE-002]、众智园全栈测试与治理客厅 [data:geometry/phasing.geojson#PHASE-001]、原点社区近校成果转化街 [data:geometry/buildings.geojson#BLDG-004]、大钟寺站城一体化公共界面 [data:geometry/public_space.geojson#PUBLIC-002]、AI 公共服务与端侧算力节点、全球 AI 活动周公共路线 [data:geometry/phasing.geojson#PHASE-003] [depth:renewal_project_list]。近期启动区面积为 3,056,480 平方米 [metric:phase_1_area_sqm]。
 
-实施分期 **（概念）** 为：近期（2026-2028）以三处重点区试点与轻量活动启动，中期（2028-2030）完成绿廊缝合与两翼微循环，远期（2030-2035）推进全域更新与长期运营体系 [depth:phasing_implementation]。实施政策建议 **（概念）** 包括城市更新统筹机制、场景开放申请制、公共数据治理、开发者社区运营、国际传播与人才服务，全部为概念建议，不构成政府承诺 [source:AGENT-TASKBOOK]。年度活动体系建议 **（概念）** 包括全球 AI 活动周、开发者开放日、开源成果发布季、治理工作坊与 AI 文化导览；运营机制说明运营对象、频率、责任边界、转化路径与风险 [depth:phasing_implementation]。
+实施分期 **（概念）** 以"主轴先通、三核先导、两翼缝合"为时序逻辑，不再按三处重点区简单并集铺开：近期（2026-2028）先打通京张智脉主轴向公众开放，同步启动三处重点区门户节点与首轮轻量活动，以较低改造成本建立可见运营；中期（2028-2030）完成三核主体建设与绿廊缝合，接入两翼微循环；远期（2030-2035）推进全域更新与长期运营体系 [depth:phasing_implementation]。投资与开放时序按"启动包—主体包—运营包"组织：
+
+| 分期 **（概念）** | 启动包 **（概念）** | 投资侧重 **（概念）** | 开放对象 **（概念）** | 关键依赖 **（概念）** |
+| --- | --- | --- | --- | --- |
+| 近期（2026-2028） | 主轴先通与三核门户：绿廊北段慢行贯通、站前广场、测试展示广场、发布广场 | 公共空间与慢行设施优先，控制土建规模 | 周边居民、高校师生、开源开发者 | 公共空间许可、道路红线与桥下空间条件 |
+| 中期（2028-2030） | 三核主体与两翼缝合：成果转化街、全栈测试实验室、站城一体界面 | 产业载体与场景基础设施 | 初创团队、头部企业、国际访客 | 控规、权属、轨道与市政工程条件 |
+| 远期（2030-2035） | 全域运营网络：两翼街区更新、算力节点与年度活动体系 | 运营基金与城市更新统筹 | 全域居民、企业、活动运营方 | 片区统筹机制、运营授权与资金安排 |
+
+实施政策建议 **（概念）** 包括城市更新统筹机制、场景开放申请制、公共数据治理、开发者社区运营、国际传播与人才服务，全部为概念建议，不构成政府承诺 [source:AGENT-TASKBOOK]。年度活动体系建议 **（概念）** 包括全球 AI 活动周、开发者开放日、开源成果发布季、治理工作坊与 AI 文化导览；运营机制说明运营对象、频率、责任边界、转化路径与风险 [depth:phasing_implementation]。
 
 ### 更新项目清单
 
@@ -367,7 +375,7 @@ AI 朝圣地标（概念）不少于 3 个：清华园原点碑（以清华园�
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系分为三类：第一类为可从提交几何直接复算的空间指标，包括提交边界面积 11,412,825 平方米 [metric:site_area_sqm]、三处重点区面积合计 3,692,893 平方米 [metric:key_area_total_sqm]、用地单元数 25 [metric:land_use_count]、绿地面积 2,904,708 平方米与绿地率 25.5% [metric:green_ratio]、公共空间面积 537,012 平方米与占比 4.7% [metric:public_space_ratio]、建筑基底面积 618,413 平方米 [metric:building_footprint_area_sqm]、建筑密度 5.4% [metric:building_density]、道路总长 51,642 米 [metric:road_length_m]、慢行绿道长 15,354 米 [metric:greenway_length_m]、近期启动区面积 3,692,893 平方米 [metric:phase_1_area_sqm] 与 AI 场景卡数量 12 [metric:ai_scenario_node_count]；第二类为需要官方控规支撑的管控指标，如容积率与建筑高度，当前列为 unknown [depth:metrics_recalculation]；第三类为需要运营与产业数据持续校准的绩效指标，作为未来评估方向。
+指标体系分为三类：第一类为可从提交几何直接复算的空间指标，包括提交边界面积 11,412,825 平方米 [metric:site_area_sqm]、三处重点区面积合计 3,692,893 平方米 [metric:key_area_total_sqm]、用地单元数 25 [metric:land_use_count]、绿地面积 3,141,601 平方米与绿地率 27.5% [metric:green_ratio]、公共空间面积 813,108 平方米与占比 7.1% [metric:public_space_ratio]、建筑基底面积 1,703,291 平方米 [metric:building_footprint_area_sqm]、建筑密度 14.9% [metric:building_density]、道路总长 92,722 米 [metric:road_length_m]、慢行绿道长 30,786 米 [metric:greenway_length_m]、近期启动区面积 3,056,480 平方米 [metric:phase_1_area_sqm] 与 AI 场景卡数量 12 [metric:ai_scenario_node_count]；第二类为需要官方控规支撑的管控指标，如容积率与建筑高度，当前列为 unknown [depth:metrics_recalculation]；第三类为需要运营与产业数据持续校准的绩效指标，作为未来评估方向。
 
 合规矩阵覆盖公告 1.3、1.4、1.5 全部任务与 agent.1 至 agent.6 六项智能体任务 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，每条任务对应报告章节、几何图层、指标、图纸、HTML 页面、来源、假设与自检项。标准矩阵覆盖城市设计、控规、用地分类等强制标准 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；设计深度矩阵覆盖现状诊断、三层框架、空间结构、用地布局、开发强度、建筑形态、拆改留、交通市政、蓝绿空间、重点区详设、项目清单、分期实施、指标复算与风险缺资料 [depth:risk_missing_data]。
 
@@ -395,7 +403,7 @@ AI 朝圣地标（概念）不少于 3 个：清华园原点碑（以清华园�
 
 | 风险编号 | 风险 | 影响 | 应对策略 | 复核阶段 |
 | --- | --- | --- | --- | --- |
-| R-01 | provisional 边界精度不足 | 面积、图层与指标可能偏移 | 保留精度警示，正式红线发布后重算全部图层与指标 | 官方数据发布时 |
+| R-01 | provisional 边界精度不足 | 面积、图层与指标可能偏移 | 保留精度警示；官方红线发布后按流程替换：更新 geometry/site_boundary.geojson 与 geometry/key_areas.geojson → 重跑几何生成与指标复算 → 更新 metrics.json、图纸、HTML 与 manifest 校验和 | 官方数据发布时 |
 | R-02 | 控规条件缺失 | 容积率、高度、密度等结论不可审定 | 全部管控指标标注 unknown，深化前取得官方控规附件 | 专业深化前 |
 | R-03 | 道路与市政工程条件缺失 | 交通与市政结论仅为方向 | 不预设工程方案，深化前完成红线、管线和交通评估 | 专业深化前 |
 | R-04 | 权属与实施边界不清 | 更新项目难以落地 | 以"保留/改造/新建/留白"概念表达，深化前完成权属校核 | 实施准备阶段 |
