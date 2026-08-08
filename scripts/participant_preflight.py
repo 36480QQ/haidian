@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -17,6 +18,9 @@ LARGE_PACKAGE_WARNING = 200 * 1024 * 1024
 
 
 def run(command: list[str], cwd: Path) -> subprocess.CompletedProcess[str]:
+    environment = os.environ.copy()
+    environment["PYTHONUTF8"] = "1"
+    environment["PYTHONIOENCODING"] = "utf-8"
     return subprocess.run(
         command,
         cwd=cwd,
@@ -24,6 +28,7 @@ def run(command: list[str], cwd: Path) -> subprocess.CompletedProcess[str]:
         text=True,
         encoding="utf-8",
         errors="replace",
+        env=environment,
         check=False,
     )
 
