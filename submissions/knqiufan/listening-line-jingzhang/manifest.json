@@ -88,6 +88,13 @@
       "sha256": "aa54d2cf4dc2e7a25738c470069a5563d640e69e389499f2661783f586914efb"
     },
     {
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "required": false,
+      "language": "zh",
+      "sha256": "c4c22b03d6a4df672960f2d01b2d9d654aa3a92ea3c287e7097ad83023d92cf3"
+    },
+    {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
@@ -265,7 +272,7 @@
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/key-areas.png",
       "sha256": "0a86d0422f0ca0da9810be7d65dacb51ebcbc76e2538ea8ca825cc5328f62e55"
     },
@@ -273,7 +280,7 @@
       "path": "assets/figures/land-use-structure.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
       "sha256": "b45a2df025b37aa751cfb0182c0bd4416526d5561a6c25a365a09b96d2c91c17"
     },
@@ -281,7 +288,7 @@
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
       "sha256": "40dbd50eaebf7cb8f5c11a2398b50dc40aa347cf66d7d532aed7340c709124c4"
     },
@@ -289,7 +296,7 @@
       "path": "assets/figures/mobility-bluegreen.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
       "sha256": "ef387a924e3f1c24bc51d32c5a1a546559d57a7ed78a7cfe2bfc0df572d978ac"
     },
@@ -297,7 +304,7 @@
       "path": "assets/figures/site-overview.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "ec496784e3c335d5b0e5beb4f5be6871fdc87c076ece85342a4466375851dada"
     }
