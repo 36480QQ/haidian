@@ -1,16 +1,24 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-08
+
+- 针对上一轮 Review Agent 93/100 暴露的审阅可读性缺口，新增中英文“一页执行摘要”和生成/复核方法，把命题、空间、实施、公共价值、证据状态和决策边界放到首屏。
+- 新增通过仓库 schema 校验的顶层 `risk.json`，将临时几何与规则、风热空气与具身智能、排水实施、包容性、数据隐私与清权、活动接受度、维护成本、空间接口登记为八个风险维度，逐项绑定触发、缓解和停止条件。
+- 更新 agent 模型声明为 OpenAI GPT-5 family via Codex，双语版本号统一为 v2.6，并将风险登记、执行摘要和复核方法接入视觉索引与 QA 记录。
+
 ## v2.5 - 2026-08-08
 
-- 跟进 `origin/main` 最新竞品与评审面后，新增 `construction-readiness.json` 五道建设/开放就绪闸门和四类构件接口，补足从概念到专业交接的低扰动路径。
-- 新增 `participation-cycle.json`，把同步、复核、同类比较、现场基线、有人窗口和保留/改造/退出写成连续回传日志；明确现场基线、居民咨询和公共试点仍未完成。
-- 双语正文、视觉索引、QA 记录、manifest 与逐资产清权台账同步更新；不新增官方几何、现场绩效、居民同意、预算或实施批准声明。
+- 跟进 `upstream/main` 最新合并后的评审基线，新增 `construction-readiness.json` 五道建设/开放就绪闸门、`participation-cycle.json` 回传日志、四类构件接口和五本资源账，补足从概念到专业交接的低扰动路径。
+- 明确现场基线、居民咨询和公共试点仍未完成；不新增官方几何、现场绩效、居民同意、预算或实施批准声明。
+- 重新编排双语 A3 图册与 A0 展板：以五张核心空间/指标图和运营、区域、身份证据图为主体，补足图册阅读密度与 A0 展示层级。
+- 统一四份 PDF 的物理页面规格为横向 A3（420 × 297 mm）与横向 A0（1189 × 841 mm），补充 v2.4 版本、作者、社区展示许可和 provisional geometry 页脚；所有图件仍保留“展示/QA，不构成红线、审批或实施依据”的边界。
+- 补齐英文审阅稿与中文正文的 source / standard / depth / metric / data 证据交叉索引，明确两种语言的引用集合一致，并保留正式、背景和 provisional 来源的用途边界。
+- 双语正文、视觉索引、QA 记录、manifest 与逐资产清权台账同步更新。
 
 ## v2.4.1 - 2026-08-08
 
-- 跟进最新 `origin/main` 合并后的评审基线，重新渲染中英文离线报告，并刷新 manifest 与逐资产版权台账哈希。
-- 保持八类公共使用者镜头、三类产业验证窗、四类责任/荣誉节点、八项运维行动包和五本资源账在双语正文与视觉索引中的可回读链接。
-
+- 跟进主线合并后的评审基线，重新渲染中英文离线报告，并刷新 manifest 与逐资产版权台账哈希。
+- 保持八类公共使用者镜头、三类产业验证窗、四类责任/荣誉节点和八项运维行动包在双语正文与视觉索引中的可回读链接。
 ## v2.4 - 2026-08-08
 
 - 将最新主线的政策/企业成长接口、具身智能凭证和 QA 记录与 v2.1 的三类验证窗、八类公共使用者镜头、四类责任/荣誉节点统一为一个可审阅版本。
@@ -83,3 +91,4 @@ reviewable deliverables and bilingual review surface.
 - Added `visual/assets/wind-health-field-protocol.json` as a pre-registered field observation, calibration, model-alignment and stop-condition contract for the six health/wind/water metrics.
 - Added AIJ pedestrian-wind CFD and ISO 7726 catalogue method references with explicit boundaries; no local measurement, CFD result, comfort threshold or health outcome was fabricated or transferred.
 - Kept all six local metrics `unknown` until versioned geometry, field data, calibration/QC, model comparison, uncertainty and professional sign-off are available.
+- Added `visual/assets/wind-health-point-register.json` with 18 provisional, not-measured planning slots across the three key areas; no coordinates or local readings were invented.

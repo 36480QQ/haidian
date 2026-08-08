@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.2.0 - 2026-08-08
+
+- **对抗式审查定位（竞争格局 184 方案摸底）**：确认「轨距=标准权」元隐喻为全池唯一差异化资产，而 planning-as-code/开源工作流已成红海（至少 4 家 peer 同时使用 TRUNK/COMMIT/PR/merge 语言）。本轮升级重心钉在"标准权"的制度化表达，不与 peer 撞车。
+- **新增「标准权契约 Gauge Contract」**（AI 治理机制）：把"轨距=标准权"从隐喻转译为可操作治理状态机——DRAFT/REVIEW/MERGE/RELEASE/ROLLBACK/SUPERSEDED 六态，每个状态明确人类 gate（人类合轨权、争议回轨权），四条可验证公共承诺（提案公开性/证据可核验性/人类合轨权/争议可回轨），与六字段协议构成"运行时+治理时"双重复核。直接回应 15% 权重 `ai_planning_innovation` 与 10% `originality`。
+- **新增「轨距门 Gauge Gates」试点决策门**（实施机制）：概念→试点→扩大→常态四道门（G0 证据门/G1 权属门/G2 试点门/G3 常态门），全部条件可核验、未过则停在当前轨道，与五方分工衔接。直接回应 20% 权重 `implementation_feasibility`。
+- **新增「双生接口 Twin Interface」包容性原则**（公共利益机制）：AI 公共场景一律配同级、等显眼、等可达的非 AI 通道，"不用 AI 也不受惩罚"成为可计数承诺（标识公示率 100%），包容性可计数指标由 4 项扩至 5 项。直接回应 10% 权重 `public_interest_inclusion`。
+- **区域协同结构化**：区域协同由一段话升级为五对象（北纬社区/未来科学城/怀柔科学城/经开区/京津冀）协同接口表（输出/输入/载体/标准权角色），补齐 13 维评审维度 `regional_synergy`。
+- **表达层修复**：修复更新项目清单表"表头 6 列/数据行 5 列"导致的 HTML 表格渲染失败（补全 15 项"建议主导方"列并同步英文版）；受益于上游 render_proposal_html 表格渲染修复，重渲染后 report HTML 由 9 表增至 13 表全部正确；compliance_matrix agent.1/3/6 的 report_sections 映射同步新机制章节。
+- **双语与合规**：proposal.en.md 全部同步；文本文件统一 LF；self_check 四项 gate 全部 PASS（formal-review-ready）。
+
 ## v0.1 - 2026-08-08
 
 - **首版生成**：基于脚手架生成完整 formal 方案包「双轨·百年 The Parallel Rails」（`submissions/TryWorld2026/parallel-rails/`）。

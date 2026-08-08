@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "Codex",
-    "model": "agent-declared-model"
+    "model": "OpenAI GPT-5 family via Codex"
   },
   "generated_at": "2026-08-08T12:40:03Z",
   "files": [
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f94f9fa1022ef0f17f8d0b09768571b304428c9fb307b75df8274576b066bb58"
+      "sha256": "d2c8162a30ee0706ab3e75dfe0eb72af422064642db18effe0253819c56a1c54"
     },
     {
       "path": "proposal.en.md",
@@ -32,19 +32,19 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a6e4e98544fb8ca1d627f692da70a7b078e99e87fc1aebb2f5a401619e997dbf"
+      "sha256": "8c44e600efc3f40d9ad64a3e49e5c90b3b36040bb4dc51c2b83c85d504b7593e"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c57e050fce1a6a28310aed171a103e126d8bf93e70e571144c34c962f8e31a85"
+      "sha256": "ed9a67eb3d4de08c78843c3f87a09da717df60cbbf0fb35cf0e4e5441f711abb"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4ddae714b43b3a5edaac95fe44f92557299dfc31735a6df7c0047629ea578767"
+      "sha256": "f6ef36e0b0d4efe5765385dbadea5e75732f3fb92167e30fb655d13bb88b85d3"
     },
     {
       "path": "assumptions.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "93f05c1a0d916281254135cd8d1b1155c9a0b63858962b398789643e5512c6fa"
+      "sha256": "707d1091dfe95a31d480fa6811a9aed7292dadc560bbd783b998ddae5324692c"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a45a8948c154ea4d7c28d40e51925e653a0850fa2a9e00c330b4f25a0b1d6f1f"
+      "sha256": "fffc46f52527c8a3341e106bc699ed699161cbc6115b5fc0771c8e1418e9cdb2"
     },
     {
       "path": "report/narrative.md",
@@ -107,27 +107,27 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b4039155950367c968623462d439a5913f728fa34d87e9434f4234d4df76fc92"
+      "sha256": "9bd121bf1297a61d3d9ba9ae56086a66495d6919cd9c6b33840d2b9d2135cd3f"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "3d8ff1c2e5bf55e2b845ca4846be257876fbcc8f386b79947b8d50a1964c40c6"
+      "sha256": "ec976f8cbc7413f7c10a349022dfd19da707e1e4b77d6258b86486c5c459557c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "24f4a7f5028b673e8b5c15402dbf7bd68169342278e21ad21de8c68c3301bab1"
+      "sha256": "22f0092556a54bb50e87bd5b5c1a163fee1ac33fea7e1d7e814b5c74df6528fe"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "37a99ce70a166350bb17fbbdbb8f03e7c703f7294d86a1587e338dbfa06996b5"
+      "sha256": "9f6db013b4f63b7bcc95ff852dc159be52b1dfa20eb75b43a4278b8ba52dec5b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -135,7 +135,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "18c1ddecf8ee244a143bff78034a76f2a77f4af7b562996801e5bb0b19a21634"
+      "sha256": "5ba0e57a7fb4ac1df7a093b9615cdc2d657ba6859da3b7b3340028795cd69e3e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -143,14 +143,14 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3537affcfe747c40d979b7a4980de436b88d1b3a5149e864940a5baf489f4ecf"
+      "sha256": "a34ec28db5921610e1803f4c045a53937991bb0d9c75f7ea4b4dd2d3e9350371"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "282a5cd51363cac6ccc5699780bcd118e813acfc2ef625014077e8523749c684"
+      "sha256": "de0088af2c117e2a7cab788941baec271f524c5568ebc072f30a365098c1bca2"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7c82d042f5cac2a501d1a79e3e33a43d2a8ce58f5424fab41a39fbc5e4f4e227"
+      "sha256": "8d4a9d1f0344d229163fe45af5a48d30ed50e2149bb12b25461176783a96f555"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -375,13 +375,19 @@
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "dbac8b51f677af14edc086fef4b428bbbe538c87ef76b8c18d4f76147cfc83cf"
+      "sha256": "7b8a39aab375dcc2c0a611b6afb3f159b817a9c0d6d31ad4ad6487087f46632f"
     },
     {
       "path": "visual/assets/wind-health-field-protocol.json",
       "role": "wind_health_field_protocol",
       "required": true,
-      "sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
+      "sha256": "edca3895fb5f9db87299e74d4bfadbebf6993c2ba2cb4c1d6eef48a6eba0069f"
+    },
+    {
+      "path": "visual/assets/wind-health-point-register.json",
+      "role": "wind_health_point_register",
+      "required": true,
+      "sha256": "a9931339f62497804b588cf90b03a4e1892beaf5c073a634f1dfee72ebb835b8"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
@@ -417,7 +423,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "fc955c17628d332abfef3cda45e8b991a260bf8c9a5900ed4af0b1aa17b185ad"
+      "sha256": "266dc35bbf3d160ce4b91076152a28463da187258feacc6bf576e6ad8d5ba8ba"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -462,7 +468,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "c363449eed3a5f012653b90c9c137ffcf7176fc9ad7ec36931c9dedf11393b32"
+      "sha256": "a4358369de1e30f5a1b93cd159fb496b744b8ffa34b96f9b2ec537e5dcae544f"
     },
     {
       "path": "visual/assets/operations-matrix.json",
@@ -511,6 +517,12 @@
       "role": "continuous_participation_cycle",
       "required": true,
       "sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
+    },
+    {
+      "path": "risk.json",
+      "role": "risk_register",
+      "required": true,
+      "sha256": "a634f732194e69396ea9b79153969d90b915e7b2534b2f5053e8c6e276589fb4"
     }
   ],
   "validation_claim": {

@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v2.4"
+iteration: "v2.6"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -13,6 +13,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ---
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
+
+> **One-page conclusion:** Turn the century-old railway's track, nodes and mile logic into a public AI belt organized as public question → bounded window → human review → evidence return → scale/redesign/retire. The package has passed its local package gates and entered repository intake; provisional geometry, field baselines, resident consultation and public pilots remain respectively `provisional`, `unknown` or `not_started`. This is not a statutory plan, engineering approval, procurement, budget, award or government endorsement.
+
+## One-page Execution Brief
+
+| Review question | Jing-Zhang Open Pulse answer | Reviewable outputs |
+| --- | --- | --- |
+| Core proposition | AI is not a device count; it is a visible, challengeable, withdrawable and reviewable civic process, with human service before model service | 14-row scenario–space–operation matrix, relay receipt and public state board |
+| Spatial response | One belt, three nodes and two service wings with a blue-green walking loop; Zhongzhi Garden, AI Origin Community and Dazhongsi carry different public capabilities | 9 GeoJSON layers, bilingual figures, A3/A0, offline HTML and visual indexes |
+| Implementation start | Lock official/ownership evidence, build a passive mock-up, coordinate wind/heat/water/lifelines, run a staffed time-limited window, then publish retain/redesign/retire | 8 operations packages, 5 construction-readiness gates and 5 resource accounts |
+| Public value | Older people, disabled users, carers, night workers, visitors, developers and maintenance crews have paper/staffed/no-app routes; group harm cannot be hidden by an average | 8 public-user lenses, 7 participation lenses and public-interest audit |
+| Evidence state | Structured geometry and historical series are reproducible; wind, heat, air, blue-green access, water risk, accessibility and resident experience stay `unknown` without field evidence | metrics, assumptions, wind-health protocols and risk register |
+| Decision boundary | S4 is a low-regret model candidate, not a field promise that every metric is 90+; every expansion re-enters professional, rights, safety, maintenance and public-interest gates | 50,000 draws, risk register, construction/participation logs and full clearance ledger |
+
+**Author: 许丙南.** This is a revisable concept for professional, operational, public and maintenance review. Repository intake, Review Agent scores and local self-checks are not award selection, publication, implementation or government approval.
 
 **Author:** 许丙南 / GitHub `147228`  
 **Review copy:** English translation of `proposal.md`, v2.4
@@ -23,6 +38,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 This proposal follows the official open-call announcement, the repository site package and the agent taskbook. The machine-readable evidence chain is registered in `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, and `visual/assets/evidence-ledger.json`. The most important source IDs are `[source:OFFICIAL-ANNOUNCEMENT]`, `[source:AGENT-TASKBOOK]`, `[source:SITE-PACKAGE]`, `[source:SOURCE-REGISTRY]`, `[source:PROCESSED-FACT-PACK]`, `[source:BOUNDARY-SOURCE]`, and `[source:KEY-AREA-SOURCE]`.
 
 The package uses the repository's maintained provisional geometry where official boundary polygons are not available. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` therefore remain `official_boundary=false` and `provisional_constraint`. They are suitable for design discussion, visualisation and self-checking, but not for a statutory red line, approval, precise land-area claim or government commitment. When official polygons arrive, all land use, roads, buildings, green space, public space, phasing and metrics must be recalculated.
+
+### Generation and Review Method
+
+1. **Read task and evidence boundaries first.** The announcement, agent taskbook, site package, source registry, maintained standards and missing-data checklist define the allowed evidence. Unregistered web pages, maps, personal data, enterprise material and remote runtime assets do not enter the package.
+2. **Generate space and metrics second.** One provisional geometry set derives land use, buildings, roads, green space, public space and phasing; areas and lengths are recalculated in EPSG:4548. Computable values enter `metrics.json`; unsupported values remain `unknown` and are never inferred from a render.
+3. **Run state experiments third.** S0–S4, five weighting profiles, eight stresses and 50,000 fixed-seed draws compare low regret. Offline, unpowered, emergency-stop, capacity-reduction, overdue-maintenance, post-rain recovery and retirement states are triggers, not forecasts.
+4. **Review the handoff last.** Every scenario returns to RACI, SLA, minimum data, non-AI equivalent, stop condition, maintenance and rights record. Reports, visual indexes, manifest, clearance ledger and local gates are refreshed together; field survey, public participation, professional sign-off and statutory process remain external next-stage evidence.
 
 ## Three-Level Scope Framework
 
@@ -160,7 +182,7 @@ The eight stresses are a +2°C heatwave, +20% cloudburst, 30% irrigation reducti
 - blue-green accessible-route overlap, requiring field verification of entrances, gradients, continuity, safety, water quality and maintenance, without inferring health benefit from proximity; [metric:blue_green_accessible_route_overlap_ratio] [source:WHO-URBAN-HEALTH-AND-GREEN]
 - water-risk exceedance-route verification, requiring DEM, drainage, outfalls, soils, groundwater, water quality, design storms and calibrated surface-flow modelling before any flood-free statement. [metric:water_risk_exceedance_route_verified_ratio] [assumption:A-DRAINAGE-SYSTEM-001]
 
-`design_target` in `visual/assets/evidence-ledger.json` is a future review gate; the six `unknown` entries in `metrics.json` are the current evidence state. They may become `known` only when simulation input, calibration, field observation, formula, error and a responsible professional are all documented. `wind-health-validation-plan.json` and `wind-health-field-protocol.json` bind every observation to a geometry version, boundary case, source schedule, point ID, instrument, height, wind, PM2.5, thermal variables, canopy state and QC flag. Missing geometry alignment, calibration, safe field conditions, source/detection-limit information or pre-registered sampling stops interpretation and keeps the metric `unknown`. The identified Beijing climate-normal dataset, Haidian `1+21+65+100` network and Qinghe Station wind-monitoring route are lawful acquisition and context routes only, not site observations. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025] [source:HAIDIAN-CLIMATE-NORMALS-DATASET-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
+`design_target` in `visual/assets/evidence-ledger.json` is a future review gate; the six `unknown` entries in `metrics.json` are the current evidence state. They may become `known` only when simulation input, calibration, field observation, formula, error and a responsible professional are all documented. `wind-health-validation-plan.json` and `wind-health-field-protocol.json` bind every observation to a geometry version, boundary case, source schedule, point ID, instrument, height, wind, PM2.5, thermal variables, canopy state and QC flag. Missing geometry alignment, calibration, safe field conditions, source/detection-limit information or pre-registered sampling stops interpretation and keeps the metric `unknown`. The identified Beijing climate-normal dataset, Haidian `1+21+65+100` network and Qinghe Station wind-monitoring route are lawful acquisition and context routes only, not site observations. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025] [source:HAIDIAN-CLIMATE-NORMS-DATASET-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
 
 ### Key-area stress tests and trigger-based rollback
 
@@ -215,6 +237,8 @@ The preferred indicators are district income per capita, district GDP per capita
 Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
 
 ## Risk, Copyright, and Compliance
+
+`risk.json` registers eight validated risk dimensions [metric:risk_class_count]—policy/climate/rule uncertainty; wind/heat/air and embodied intelligence; drainage and implementation; equity/inclusion; privacy and rights; event acceptance; operations cost; and spatial interfaces—with state, trigger, evidence, mitigation, stop condition and accountable role. It is a release-gate register, not a safety case, engineering calculation, insurance document or approval.
 
 The package includes a path-level `visual/assets/copyright-ledger.json` and an expanded `report/copyright_statement.md`. Text, geometry, diagrams, offline HTML and figures are authored or derived in this worktree by 许丙南 / Codex. Official public data retain their source attribution. No third-party images, maps or remote runtime assets are embedded; local system fonts are used only for rendering and are not redistributed. The identity mark is a concept direction, not a registered trademark.
 
@@ -315,6 +339,41 @@ Long-term operation is seasonal rather than promotional: spring gathers public q
 
 The proposal is not considered implemented because it is written. It is reviewable because each task can be traced to a section, a spatial or operational artifact, a source/assumption, an acceptance test and a stop/rollback path. Official polygons, planning controls, ownership, municipal, heritage, traffic, weather, drainage and measured-experience data must replace the provisional and unknown fields before professional implementation.
 
+## Full-depth evidence crosswalk for the English review surface
+
+The Chinese proposal remains the primary interpretation surface, but the English review copy now exposes the same formal evidence routes rather than asking a reviewer to infer them from filenames. The tables below are an index into the package; they do not promote provisional geometry, modeled values or conceptual interfaces into official facts.
+
+### Professional standards and design depth
+
+| Review layer | Registered evidence route |
+| --- | --- |
+| Task and statutory basis | [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:STANDARD-MATRIX] |
+| Scope, spatial structure and renewal | [depth:three_level_scope_framework] [depth:existing_conditions_diagnosis] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:retain_renovate_demolish] [depth:development_intensity_controls] [depth:renewal_project_list] |
+| Public network and implementation | [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data] [depth:height_massing_character] |
+
+### Geometry and recomputable metrics
+
+| Evidence family | Review route |
+| --- | --- |
+| Submitted spatial layers | [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/phasing.geojson#PHASE-001] [data:geometry/constraints.geojson#CONSTRAINTS] |
+| Supporting evidence records | [data:visual/assets/evidence-ledger.json#cfd-validation] [data:visual/assets/evidence-ledger.json#climate-risk-baseline] [data:visual/assets/evidence-ledger.json#commitment-register] [data:visual/assets/evidence-ledger.json#film-storyboard] [data:visual/assets/persona-and-inclusion-matrix.json#P-01] [data:visual/assets/persona-and-inclusion-matrix.json#P-08] [data:PUBLIC-DATA-REGISTRY] |
+| Area, land-use and public-network metrics | [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:building_footprint_ratio] [metric:green_ratio] [metric:public_space_ratio] [metric:design_north_south_spine_length_m] [metric:design_east_west_connector_count] [metric:design_slow_mobility_network_length_m] [metric:key_area_count] [metric:osm_mapped_station_names_within_800m_count] [metric:osm_mapped_crossing_count] |
+| Scenario, inclusion and public-marker metrics | [metric:scenario_card_count] [metric:industry_validation_case_count] [metric:policy_enterprise_playbook_card_count] [metric:user_persona_count] [metric:ai_landmark_count] [metric:resident_transport_satisfaction_index] |
+| Decision-experiment metrics | [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws] [metric:resilience_v13_selected_win_rate] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_mean_regret] [metric:resilience_v13_selected_min_stress_score] [metric:resilience_v13_hard_gates_passed] [metric:METRIC-LINEAGE] |
+| Unknown wind, health and water gates | [metric:pedestrian_wind_comfort_acceptable_area_ratio] [metric:pollutant_stagnation_hotspot_count] [metric:mean_radiant_temperature_baseline_c] [metric:continuous_shaded_accessible_route_ratio] [metric:blue_green_accessible_route_overlap_ratio] [metric:water_risk_exceedance_route_verified_ratio] |
+
+The values shown in this package are either recomputed from the submitted provisional layers, registered public statistical transformations, or explicit `unknown` states. `green_ratio`, `public_space_ratio`, the OSM station/crossing screens and all modeled resilience values are not statutory controls, field measurements, safety approvals or resident outcomes. The English display layer follows the same rule as the Chinese source: official polygons, resident surveys, traffic/accessibility audits, drainage data and professional sign-off must trigger a full rerun.
+
+### Source parity and use boundaries
+
+The formal source registry contains the announcement, taskbook, processed navigation tables, local planning and mobility references, official statistical routes, standards snapshots and method references. The English copy uses the same boundaries through this compact index:
+
+- **Task and processed-data routes:** [source:AGENT-TASK-REQUIREMENTS] [source:PROJECT-SCOPE-SUMMARY] [source:SOURCE-USE-MATRIX] [source:MISSING-DATA-CHECKLIST] [source:JINGZHANG-FUTURE-BELT-2026] [source:JINGZHANG-PUBLIC-FEEDBACK] [source:JINGZHANG-PARK-CATALOG]
+- **Beijing planning, climate, access and public-realm routes:** [source:BEIJING-BULLETIN-2024] [source:BEIJING-BULLETIN-2025] [source:BEIJING-CLIMATE-ADAPTATION-2024] [source:BEIJING-FLOOD-PLAN-2021-2025] [source:BEIJING-LIGHTING-GUIDE-2025] [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [source:BEIJING-ROAD-MAINTENANCE-2026] [source:BEIJING-SLOW-MOBILITY] [source:BEIJING-VENTILATION-NETWORK-2035] [source:BEIJING-WALK-CYCLE-DB11-1761] [source:BEIJING-WATER-REPORT-2024] [source:BEIJING-YEARBOOK-2024] [source:HAIDIAN-SPONGE-CITY-PLAN] [source:REGIONAL-YEARBOOK-2024-2] [source:BEIJING-15-MINUTE-LIFE-CIRCLE] [source:BEIJING-ACCESSIBILITY-REGULATION] [source:BEIJING-BIRD-BIODIVERSITY-2024]
+- **AI, infrastructure, safety and people-centred method routes:** [source:BEIJING-EMBODIED-INTELLIGENCE-2025-2027] [source:IPCC-AR6-URBAN-RISK] [source:NIST-HUMAN-CENTERED-AI] [source:RESILIENT-CITY-INFRASTRUCTURE-2024] [source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES] [source:WHO-HEAT-HEALTH-2026] [source:ISO-13482-SERVICE-ROBOT-SAFETY] [source:ISO-55001-2024] [source:ISO-TR-4448-PUBLIC-MOBILE-ROBOTS] [source:SERVICE-ROBOT-INFOSEC-GB45502] [source:ASSET-MANAGEMENT-GBT33172] [source:OSM-TRANSPORT-CONTEXT]
+
+These registry entries are not all equivalent: some are formal-ready, some are background or provisional acquisition routes, and the proposal states that distinction wherever it affects a boundary, metric or implementation decision. The complete records, access dates and allowed/disabled uses remain in `sources.json`; this index exists to make bilingual review parity visible.
+
 ## Cultural “Feng Shui” Narrative and the Wind–Water–Health Evidence Gate
 
 The expressions *cang feng ju qi* (藏风聚气) and *feng shui* may be used only as cultural landscape narratives linked to spatial memory. They are not medical findings, public-health causation, air-quality evidence, hydrological rules, engineering models or approval criteria. The narrative is therefore translated into six separate, auditable indicators whose current baselines remain `unknown`:
@@ -330,6 +389,8 @@ The `design_target` entries in `visual/assets/evidence-ledger.json` are future r
 To keep “measure it later” from becoming an empty promise, `visual/assets/wind-health-validation-plan.json` defines an evidence contract for all six indicators. It binds each gate to a geometry version, wind/heat boundary cases, emission sources where relevant, field sampling, calibration error, accountable professional review and stop conditions. It is a validation protocol—not Haidian field data, CFD output, a health outcome or an engineering/approval document; the three ventilation papers supply method boundaries only and no case value is transferred.
 
 This round adds `visual/assets/wind-health-field-protocol.json` to make “measure it later” a pre-registrable work package. Each observation must carry a stable `point_id`, `geometry_version`, timestamp, instrument, height, wind speed/direction, PM2.5, thermal variables, canopy state and QC flag. Wind, pollution and thermal observations are kept separate, with collocation/calibration, background and source schedules, same-point model–field alignment, and error reporting. The professional team must register point counts, repeats and final comfort thresholds before seeing the result; a convenience walk cannot stand in for a representative sample. Missing geometry alignment or calibration, unsafe field conditions, missing source or detection-limit information, or any attempt to turn “cang feng ju qi/feng shui” into causal evidence stops interpretation and keeps the metric `unknown`. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025]
+
+To make those rules directly usable by the survey and field teams, this round adds `visual/assets/wind-health-point-register.json`. It registers six planning slots for each of the three key areas—open edge, paired windward/leeward points, accessible connection, source interface and background reference—for 18 stable `point_id` values, tied to the relationships in `PROV-KEY-001—003` and `ROAD-001—004`. Coordinates, height, entrances, obstructions, canopy, permission and safety status are explicitly `pending_survey`; this is an expandable measurement plan, not a claim that the rough boundary is field truth. The background point does not presume Qinghe Station is representative; a professional must select it from the wind and source relationship. Every slot is currently `not_measured`, so all six metrics remain `unknown`. [source:AIJ-CFD-GUIDEBOOK] [source:HAIDIAN-CLIMATE-NORMS-DATASET-2025] [source:QINGHE-STATION-WIND-MONITORING-2021]
 
 The data routes are separately recorded as **identified but not downloaded**: the Beijing public-data platform lists a Haidian ground-climate-normals dataset; a Haidian government report describes a `1+21+65+100` meteorological monitoring network; and a station-authority report documents wind monitoring at Qinghe Station. These are lawful acquisition, coordination and nearby-context routes only. They do not replace three-key-area observations or CFD calibration, and all six local metrics remain `unknown` until a versioned dataset is obtained and its station-to-site relevance is reviewed. [source:HAIDIAN-CLIMATE-NORMS-DATASET-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
 
