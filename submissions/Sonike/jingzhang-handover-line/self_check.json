@@ -76,7 +76,7 @@
       "result": "pass",
       "severity": "major",
       "target": "sources.json",
-      "message": "十七条来源逐条登记权威等级、证据类别、采集方法、时空覆盖、许可状态与可用/不可用边界；涉及单位换算的写明原文表述、换算方法与入库值，行政尺度事实标记 not_spatially_allocable=true。"
+      "message": "二十一条来源（含 4 条构建工具链与字体登记）逐条登记权威等级、证据类别、采集方法、时空覆盖、许可状态与可用/不可用边界；涉及单位换算的写明原文表述、换算方法与入库值，行政尺度事实标记 not_spatially_allocable=true。"
     },
     {
       "check_id": "BACKGROUND_NOT_SPATIAL",
@@ -147,6 +147,34 @@
       "severity": "major",
       "target": "report/copyright_statement.md",
       "message": "图件、图标、排版与几何均为本方案程序化原创；外部案例仅作文字转述并逐项列源；Codex与用户操作的Claude Opus 5跨轮次协作已如实披露。"
+    },
+    {
+      "check_id": "FONT_EMBEDDING_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/a3-booklet.pdf; drawings/a0-boards.pdf; assets/figures/",
+      "message": "pdffonts 对四套 PDF 逐一核验：Helvetica 系列为 Type 1/WinAnsi/emb=no，STSong-Light 与 Song 为 CID Type 0/UniGB/emb=no，即全部按标准字体名引用，未嵌入或再分发任何字体文件；PNG 图件为字形栅格，包内无 .ttc/.ttf。已知限制：CJK 依赖阅读器字体包，正式出版前须改为嵌入获授权字体。"
+    },
+    {
+      "check_id": "TOOLCHAIN_LICENSE_LEDGER",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json#TOOLCHAIN-BUILD; proposal.md",
+      "message": "生成工具链版本与许可逐个读取依赖自身分发元数据：Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业)。PyMuPDF 仅作工具用于页脚重刷，未分发其代码、未链接进交付物。"
+    },
+    {
+      "check_id": "BUILD_PROVENANCE",
+      "result": "pass",
+      "severity": "minor",
+      "target": "proposal.md; manifest.json; changelog.md",
+      "message": "正文与结构化文件为 v1.9，图纸与双语 HTML 页脚为 v1.6，PNG 图件页脚为 v1.0；差异原因是后两类内容自该版本起未改变、故未重新渲染，已在正文写明。成果时效以 manifest sha256 与 changelog 为准，不以页脚数字为准。"
+    },
+    {
+      "check_id": "LICENSE_MARKER_SCOPE",
+      "result": "pass",
+      "severity": "minor",
+      "target": "proposal.md; schema/proposal.schema.json",
+      "message": "COMMUNITY-DISPLAY-ONLY 是仓库 schema 的 license 枚举值而非标准许可证，仓库未发布其条款文本；本包在正文自述其含义与边界，不冒充标准许可证，也不代第三方清权。"
     }
   ]
 }

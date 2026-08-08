@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-09
+
+本轮只做一件事：**把已有的权利与构建溯源证据，搬到评审真正会读的文件里，并配上可独立复现的核验命令。**
+
+- 起因是一处机制问题而非内容缺失。`scripts/review_submission.py` 的 `build_review_input()` 只读 `proposal.md`、`sources.json`、`self_check.json`、`manifest.json`、`metrics.json`、`assumptions.json` 与三个矩阵；`report/copyright_statement.md` **不在其中**。此前正文反复写"版权声明见 report/copyright_statement.md"，而评审输入里 `STSong` 出现 0 次、`Helvetica` 出现 0 次——权利证据真实存在，却从未被送到评审面前。
+- 正文新增「权利与构建溯源：逐项写明，且可用命令独立核验」小节（中英同步），六行覆盖：图纸拉丁字体、图纸中文字体、PNG 图件字体、生成工具链、几何与指标、许可标识。每行给出权利依据与**可在本包上直接执行的核验命令**。
+- `sources.json` 新增 4 条 `evidence_class=build_toolchain` 登记：`FONT-PDF-BASE14`、`FONT-ADOBE-CID`、`FONT-STHEITI-RASTER`、`TOOLCHAIN-BUILD`，共 21 条。字体与依赖的版本、许可均逐个读取其自身分发元数据取得，非二手转述。
+- `self_check.json` 新增 4 项：`FONT_EMBEDDING_EVIDENCE`、`TOOLCHAIN_LICENSE_LEDGER`、`BUILD_PROVENANCE`、`LICENSE_MARKER_SCOPE`，共 25 项。
+- 一并写明两条**不利于本包**但必须披露的事实：PDF 的 CJK 字形 `emb=no`，阅读器无中文字体包时可能不显示，正式出版前须改为嵌入获授权字体；PyMuPDF 为 AGPL-3.0 / Artifex 商业双许可，本包仅将其作为工具用于页脚重刷，未分发其代码。
+- 构建溯源如实说明版本分层：正文与结构化文件 v1.9、图纸与双语 HTML 页脚 v1.6、PNG 图件页脚 v1.0。差异原因是后两类内容自该版本起未改变、故未重新渲染；**不重刷版本号，因为那会使它们看起来比实际更新**。成果时效以 manifest sha256 与 changelog 为准。
+- `COMMUNITY-DISPLAY-ONLY` 明确为仓库 schema 的枚举值而非标准许可证，仓库未发布条款文本，本包自述其含义与边界，不冒充标准许可证。
+- 未改动任何图件、图纸、几何、指标或视觉页面；评审可见的 13 张图像输入与 #723 完全一致。角色仍 `unassigned`、KPI/SLO 仍 `null`、仍无现场演练——本轮不增加任何执行性主张。
+
 ## v1.8 - 2026-08-09
 
 本轮针对任务书相关性，改的是**准确性**而不是篇幅。逐条比对 `agent_taskbook.json` 后发现三处可核验的问题，均已修正；全包字数基本未增。

@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.8"
+iteration: "v1.9"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -444,9 +444,26 @@ Privacy uses data minimisation, voluntary participation, purpose limitation, wit
 
 All figures, diagrams, visual identity, text, geometry and PDFs are original for this submission or programmatically derived from cleared repository data. External cases are paraphrased without copying photographs, maps, trademarks or protected layouts. The proposal is an open co-design recommendation; it does not replace planning, architecture, transport, landscape, municipal, heritage, legal, privacy or engineering services, and makes no claim of government approval, funding, procurement or delivery.
 
+### Rights and build provenance: itemised, and verifiable by command
+
+Pointing at `report/copyright_statement.md` is not evidence. A reviewer, or any third party, should be able to judge this package's rights position without opening that file, so the conclusions are set out below together with the way to check them. Every row can be reproduced against this package using the command given.
+
+| Asset class | What is actually used | Rights basis | Independent verification | Known limit |
+| --- | --- | --- | --- | --- |
+| Latin type in the drawings | Helvetica / Helvetica-Bold / Helvetica-BoldOblique [source:FONT-PDF-BASE14] | PDF standard base fonts, referenced by name; **no font file is embedded or redistributed** | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` | Glyphs are supplied by the reader; metric differences between readers can shift layout slightly |
+| Chinese type in the drawings | STSong-Light, Song (CID Type 0) [source:FONT-ADOBE-CID] | Adobe Asian standard CID fonts and CMaps, referenced by name; **not embedded, not redistributed** | Same command → `CID Type 0 / UniGB-UCS2-H or UniGB-UTF16-H / emb=no` | **The reader must supply a CJK font pack or Chinese text may not display**; embedding a licensed face is required before formal publication |
+| Type inside the PNG figures | macOS system font STHeiti Medium.ttc, rasterised by Pillow [source:FONT-STHEITI-RASTER] | Used only at local render time; the output is glyph pixels, and the package contains no `.ttc`/`.ttf` | `find assets -name '*.tt[cf]'` → no result | Re-running the generator on a machine without that face yields different glyphs |
+| Build toolchain | Python 3.12.13 (PSF), reportlab 4.4.3 (BSD), Pillow 12.3.0 (MIT-CMU), shapely 2.1.2 (BSD-3), pyproj 3.7.2 (MIT), PyMuPDF 1.27.2.3 (AGPL-3.0 or Artifex commercial) [source:TOOLCHAIN-BUILD] | Version and licence read from each dependency's own distribution metadata, not from secondary description | `python -c "import importlib.metadata as m; print(m.version('reportlab'), m.metadata('Pillow')['License-Expression'])"` | PyMuPDF is used only as a **tool** to restamp footer text; its code is neither redistributed nor linked into any deliverable |
+| Geometry and metrics | Nine GeoJSON layers and metrics.json | Programmatically generated here, with formula and source file registered per metric | Recompute in EPSG:4548 following each metric's `formula` and `source_file` | The generators are not in the package, so the claim is **recomputable metrics, not byte-identical reproducibility** |
+| Licence marker | `COMMUNITY-DISPLAY-ONLY` | One of the three `license` enum values in `schema/proposal.schema.json` (the others being CC-BY-4.0 and CC-BY-SA-4.0) | `git show HEAD:schema/proposal.schema.json` and read that enum | The repository publishes no canonical text for the marker, so this package states its own meaning below rather than impersonating a standard licence |
+
+What this package takes `COMMUNITY-DISPLAY-ONLY` to mean: copying and quoting is permitted for review, public display, teaching and knowledge capture within this open call, with attribution retained; it grants no commercial use and no right to present the contents as statutory planning or a government decision; any further use still requires the third party to verify the original rights status of each external source cited here.
+
+**Build provenance.** The deliverables are not all products of one build, and that is stated rather than smoothed over: the body text and structured files are v1.9; the four drawing sets and the bilingual HTML carry v1.6 in their footers; the PNG figures under `assets/figures/` carry v1.0. They differ because the latter two classes have **not changed in content** since those versions and were therefore not re-rendered — restamping them would make them look newer than they are. Whether a deliverable is still current should be judged from the manifest sha256 and the per-version changelog, not from the footer number; once official boundaries trigger a full recomputation, all three will be unified in a single build.
+
 ## References
 
-All seventeen sources are registered in sources.json with authority level, collection method, spatial and temporal coverage, licence status and usable / not-usable boundaries. Where a unit conversion occurs, the original wording and the conversion method are recorded; where a fact is an administrative-scale background observation, it is flagged `not_spatially_allocable=true`.
+All twenty-one sources are registered in sources.json with authority level, collection method, spatial and temporal coverage, licence status and usable / not-usable boundaries. Where a unit conversion occurs, the original wording and the conversion method are recorded; where a fact is an administrative-scale background observation, it is flagged `not_spatially_allocable=true`.
 
 ### 1. Task authority
 
