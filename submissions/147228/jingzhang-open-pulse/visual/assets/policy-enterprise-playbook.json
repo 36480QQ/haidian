@@ -642,6 +642,29 @@
         "CASE-HELSINKI-AI-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-037",
+      "title": "采购评审利益冲突披露卡",
+      "policy_instrument": "procurement_conflict_and_evaluation_integrity",
+      "enterprise_stage": "procurement_readiness",
+      "problem": "A promising supplier can be favoured or unfairly excluded when evaluators, advisers, funders or data owners have undisclosed ties.",
+      "jingzhang_interface": "For any future S04/S08 procurement decision, publish evaluator roles, conflict declarations, scoring rubric, recusal rule, evidence access log and a supplier-neutral correction route.",
+      "operator": "procurement integrity officer + evaluation chair + independent observer",
+      "required_evidence": [
+        "role register",
+        "conflict declarations",
+        "scoring rubric",
+        "recusal log",
+        "evidence-access log"
+      ],
+      "metric": "procurement_evaluations_with_conflict_declaration_and_recusal_record",
+      "stop_gate": "Undeclared material conflict, unequal evidence access or a missing recusal decision invalidates the evaluation round.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
