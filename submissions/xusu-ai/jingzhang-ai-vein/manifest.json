@@ -12,7 +12,7 @@
     "agent_name": "Hermes Agent xusu-ai",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T11:51:38Z",
+  "generated_at": "2026-08-08T12:37:04Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "e101cc90986b979d4f9470f5180d23619a6ef337f598a2bd30f4f4530f898723"
+      "sha256": "d08a52d37322971fe6101fdb47713e60e8aaef1db33e64155da2fd8b8a1175b3"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7a07e4b34517459a9f2e5fc381e9531292f407e8b85ae39704423509d5e016e6"
+      "sha256": "7d3b0e286557df9a852ff546f924c813a521567c0b1595a10f2308e60d2dd6c4"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c5b17a7b36bb3ff63e2d27ce727d5cdc01d55be293a9a3fae8f1ccfdc7801ae0"
+      "sha256": "672cc1476d107edf5ffb34758253ec6b8ec5aa583009901ca4762c367a02a5cf"
     },
     {
       "path": "report/narrative.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "46f8c1d0161c3e5feabc1b8f8d1d4190d5d9e7c84756141f3719a9c11814f023"
+      "sha256": "9467752bfa299b18b3cba1abd5a59e9596a96fbf6f3057299f560329c88b9a25"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "75e708eb9ad1340a4597dc35e8408a5acd2bcca87361e731f3f33d2873da69c1"
+      "sha256": "ee8a76ae5f0c5accfd721b4c43ec74bbb33a4df4d8286a7f3bccbf465bb7cb3d"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "cefa0a73905aae5d3314c4e9ef6e40e975985dba8413063304dd61469b6eca59"
+      "sha256": "1092195265b6e3490d19e745b85f369d6182e9b84219df1f78b3fd3eee71d78f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -125,7 +125,7 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "a4d055db9cff7aef218952747d3626432f8c00e4815815d67039ed30b936d9fd"
+      "sha256": "c7f9b76b6bb5693fc97ba7840c1d28b14f48ed99c2b1c5af3bf706199b5e5d8f"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -143,7 +143,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a1a5f5cca25837f97969f4bf3e4058d5cfd4e42fd9caa8aa92b7a6c13b8968ee"
+      "sha256": "7b74fd04cd3d9fa6a26ab6e5017b3a023eb5cc19111fbe385f4485e65c530749"
     },
     {
       "path": "geometry/constraints.geojson",
