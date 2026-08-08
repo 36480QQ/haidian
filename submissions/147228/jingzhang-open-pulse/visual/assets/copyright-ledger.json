@@ -1031,6 +1031,23 @@
       "hash_sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
     },
     {
+      "path": "visual/assets/wind-health-point-register.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from the registered public method routes and existing geometry references; no remote asset fetch at render time",
+      "source_inputs": [
+        "provisional key-area and conceptual route layers",
+        "AIJ public CFD guidebook route",
+        "registered Haidian climate data routes"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "The register contains planning references only; coordinates and measurements are intentionally absent and sources are registered in sources.json.",
+      "font_note": "Not applicable; JSON evidence asset.",
+      "hash_sha256": "a9931339f62497804b588cf90b03a4e1892beaf5c073a634f1dfee72ebb835b8"
+    },
+    {
       "path": "visual/index.en.html",
       "asset_class": "offline_html",
       "author": "许丙南 / Codex",
