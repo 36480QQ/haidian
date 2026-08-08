@@ -2,7 +2,7 @@
 
 **Submission:** Jing-Zhang Open Pulse / 京张开源脉冲
 **Author:** 许丙南 (`147228`)
-**Iteration:** v2.9 (including v2.8 proof-mile and v2.9 review-surface closure)
+**Iteration:** v3.0 (including v2.8 proof-mile and v3.0 fixed-figure closure)
 **Display licence:** `COMMUNITY-DISPLAY-ONLY`
 
 ## Scope of this statement
