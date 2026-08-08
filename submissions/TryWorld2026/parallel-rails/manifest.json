@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6af47be0accca3a4626a48d6c643f16752fd7ac525761f43a48a692afa17fc21"
+      "sha256": "ab9e57d6fe28659755a3d59c552ac849058ea456058b723efe8ddf7ef9b97369"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "02ffe80ab961f9cc15d9e0ca1fd498b24982ca6fbeef545bd9a6c2d2a12e5aef"
+      "sha256": "b2bb51505066d1888ec0718b743155cff7a7ff7c39308ffe1b3ecc11882018e0"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "proposal.en.md",
       "role": "translation",
       "required": false,
-      "sha256": "47773f461cd76774780dfb7f6dd15498affd3126f487ae86348b15170b22747d",
+      "sha256": "8837435dd376c9c86ec817b5e8bd89f595ae734c6504606068a72a9503ff6028",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -242,7 +242,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "6ca7f73ee8fc5c0d5c11f95b82210b1227b47c203353ca1aa5d516903c8e3a7c",
+      "sha256": "32cb2df47689707316f85841a8e287c7c69357b6f9d0ed486df83b7346968896",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -315,6 +315,24 @@
       "language": "en",
       "sha256": "2e2d56fc46f2c78653b2dff3e1ca00223e3ccd40785e1b6b1982076be827c74c",
       "translation_of": "drawings/a0-boards.pdf"
+    },
+    {
+      "path": "visual/assets/gauge-contract.schema.json",
+      "role": "supplementary_evidence",
+      "required": false,
+      "sha256": "b782e7da54fd1896452a461d234ace84725f9d463e04bf77fb3c168ca4c18cbc"
+    },
+    {
+      "path": "visual/assets/gauge-gates.json",
+      "role": "supplementary_evidence",
+      "required": false,
+      "sha256": "d01cd0b13ee46212f43b3679bea064165c68bff8fca3fa6b6195bef1dd5c4ab6"
+    },
+    {
+      "path": "visual/assets/gauge-equivalence-index.json",
+      "role": "supplementary_evidence",
+      "required": false,
+      "sha256": "555097eb8f2ebd377275409ee06155d0c80d26f7d254eb592d62a7264954e34f"
     }
   ],
   "validation_claim": {
