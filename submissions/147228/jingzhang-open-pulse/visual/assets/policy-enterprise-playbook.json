@@ -481,6 +481,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-030",
+      "title": "研究成果转企业的权利选项卡",
+      "policy_instrument": "research_to_company_rights_option",
+      "enterprise_stage": "research_to_company_validation",
+      "problem": "University or community research can stall at the handoff because publication, licensing, maintenance, student contribution and public-interest rights were never separated.",
+      "jingzhang_interface": "For S05 or S08 transfer windows, record contributor attribution, publication timing, licence option, maintenance owner, public-use boundary, commercial route and withdrawal procedure before a company receives a test slot.",
+      "operator": "technology-transfer lead + researcher/community contributor + company rights lead",
+      "required_evidence": [
+        "contributor ledger",
+        "licence options",
+        "publication plan",
+        "maintenance owner",
+        "withdrawal procedure"
+      ],
+      "metric": "research_transfer_windows_with_rights_and_maintenance_plan",
+      "stop_gate": "Unresolved contributor rights, no maintenance owner or no public-interest boundary keeps the work in an open research room.",
+      "source_ids": [
+        "CASE-DECIDIM-BARCELONA",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
