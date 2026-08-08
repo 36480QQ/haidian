@@ -130,6 +130,25 @@ AI 原点社区的核心是“近校型创新生活共同体”。概念上把�
 
 其中 S04、S05、S10 是不少于 [metric:ai_test_validation_scenario_count] 个产业测试/验证场景。每张卡都要求“场景—空间—运营”三联表：场景在何处被感知，谁负责值守，什么结果可公开，什么风险必须暂停，谁拥有最终判断。这样 AI 不是给传统空间贴标签，而是成为可检查的城市服务协议。
 
+### 场景—空间—运营责任矩阵
+
+场景卡与空间节点不是机械的一卡一地：同一处经过值守的公共节点可以承载多个低风险服务协议，产业验证场景则共享可回放、可审计的测试底座。下表把十张卡落实到 `constraints.geojson` 的概念节点，并明确主要画像、人工责任与暂停条件；节点是参考载体，不代表获批设施或确定运营安排。
+
+| 场景卡 | 概念空间节点与载体 | 主要用户画像 | 人工责任与暂停条件 |
+| --- | --- | --- | --- |
+| S01 开放证据图书馆 | [data:geometry/constraints.geojson#SCENARIO-001] · AI 原点客厅 | 研究者、居民、国际访客、专业审议者 | 资料管理员复核来源、许可和版本；来源不清或含个人轨迹即暂停发布。 |
+| S02 城市服务协作副驾 | [data:geometry/constraints.geojson#SCENARIO-009] · 公共服务翻译台 | 居民/家庭、国际访客 | 人工服务台确认最终解释；涉及法律、医疗或官方决定时停止自动答复并转人工。 |
+| S03 开发者沙盒预约 | [data:geometry/constraints.geojson#SCENARIO-008] · 开发者夜校 | 学生/青年开发者、初创团队、研究者 | 场地运营者审核用途并提供删除通道；超出授权数据或设备范围即暂停预约。 |
+| S04 人机协作街道安全审议 ★ | [data:geometry/constraints.geojson#SCENARIO-003] · 具身安全沙盒 | 研究者/工程师、专业审议者 | 安全负责人只允许离线回放或仿真；出现现实交通控制请求即停止测试。 |
+| S05 聚合健康服务模拟 ★ | [data:geometry/constraints.geojson#SCENARIO-010] · 产业验证台的脱敏模拟工位 | 初创团队、研究者、专业审议者 | 数据管理员核验合成/脱敏来源；出现真实健康档案或临床有效性主张即暂停。 |
+| S06 学习与教育代理工作坊 | [data:geometry/constraints.geojson#SCENARIO-008] · 开发者夜校的教育工坊 | 学生/青年开发者、教育者、居民家庭 | 教师保留教学判断；工具无法解释、无法退出或替代教师评价时停止使用。 |
+| S07 法律与伦理解释台 | [data:geometry/constraints.geojson#SCENARIO-001] · 开放证据图书馆的审议桌 | 开发者、居民、专业审议者 | 专业人员确认风险清单；个案法律建议、监管结论或伦理审批请求必须转介。 |
+| S08 小月河环境观察 | [data:geometry/constraints.geojson#SCENARIO-007] · 小月河场景翼 | 居民/家庭、运营者 | 社区运营者审核聚合结果；出现个体识别、自动执法或未经核实的污染指控即暂停。 |
+| S09 铁路记忆采集台 | [data:geometry/constraints.geojson#SCENARIO-006] · 京张记忆主轴 | 居民、国际访客 | 文化内容管理员核对授权、肖像和版权；无法确认授权或文保事实时不公开。 |
+| S10 AI 产业验证台 ★ | [data:geometry/constraints.geojson#SCENARIO-010] · 大钟寺“用”的城市接口 | 初创团队、研究者、专业审议者 | 测试负责人保存版本、回放与审议记录；无法回滚、无法审计或拟直接公共部署时停止。 |
+
+`SCENARIO-002` 原点贡献墙、`SCENARIO-004` 智能原生街角和 `SCENARIO-005` 人才生活协作站是跨场景的展示、服务与荣誉空间组件，不另行重复计入十张场景卡。标有 ★ 的 S04、S05、S10 构成三类产业测试/验证协议；六类画像均至少进入一条场景—空间—运营链路。
+
 ## 用地、建筑规模与拆改留方案
 
 `geometry/land_use.geojson` 以站点边界为母体完成无缝分区，覆盖率 [metric:land_use_coverage_ratio]；绿地面积 [metric:green_space_area_sqm]、绿地比例 [metric:green_ratio]、公共空间面积 [metric:public_space_area_sqm]、公共空间比例 [metric:public_space_ratio] 均从对应 GeoJSON union 复算。建筑层 [data:geometry/buildings.geojson#BLDG-001] 只用于表达空间载体和更新逻辑，不是现状建筑调查。现状建筑轮廓、层数、用途、年代、权属和拆改留状态均待补。
