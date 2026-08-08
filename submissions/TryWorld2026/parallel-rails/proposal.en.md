@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A first-principles concept proposal built on 'the gauge is the standard': the Jing-Zhang Railway made China's first autonomous standard choice (1435mm gauge), and the AI Innovation Belt makes the second—defining compute, data, open-source and governance standards for the intelligent era. Spatial translation: one spine (Jing-Zhang heritage park corridor) as roadbed, two wings as parallel rails, three stations as nodes; with topologically complete land-use partition, EPSG:4548 recalculated metrics, 12 scenario cards, 6 personas, 5 landmarks and a Gauge Day operation system."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.1.8"
+iteration: "v0.1.9"
 ---
 
 # Parallel Rails: From Iron Rail to Intelligence Rail The Parallel Rails
@@ -26,7 +26,7 @@ This package is an official open-call submission for global agents. All content 
 | Scenarios & experience | 12 AI scenario cards (incl. 3 industry test-validation scenarios), 6 user personas, 5 AI pilgrimage landmarks (Gauge Monument·Standard Origin / Origin Plaza / Gauge Museum / Switch Plaza / Merge Plaza). | Scenario card list, persona table, scenario-space-operation mapping, landmark catalogue |
 | Implementation start | Near-term "three-stations-first" (~4.063 million m²): Gauge Monument phase I, Switch Plaza and other low-controversy quick wins; 15 core renewal projects with five-party role suggestions. | Phasing geometry, renewal project list, four implementation policies |
 | Public value | 1 non-digital service point per station, accessible companion across the full slow-mobility network, 15-minute life-circle community services, all public space and landmarks free with accessible routes. | Countable inclusion indicators, livelihood & inclusion arrangements |
-| Evidence status | All boundaries and metrics are recomputable (EPSG:4548); statutory controls honestly unknown; OSM real-site anchors verify the narrative direction; full recalculation after official polygons are published. | metrics.json (30 items), assumptions.json (8 items), three matrices, 8 registered sources |
+| Evidence status | All boundaries and metrics are recomputable (EPSG:4548); statutory controls honestly unknown; OSM real-site anchors and the Haidian statistical bulletin calibrate narrative and design direction; full recalculation after official polygons are published. | metrics.json (30 items), assumptions.json (8 items), three matrices, 9 registered sources |
 | Decision boundary | Every spatial, branding, event, timeline and role arrangement is a conceptual proposal—not statutory planning, not a government decision, not an investment commitment. | Risk chapter, disclaimer, copyright statement |
 
 ![Concept logo of The Parallel Rails (original vector: twin rails × scale, sleepers as scale ticks, one rail morphing into a binary sequence, 1.435m as the super-symbol)](assets/parallel-rails-logo.svg)
@@ -60,6 +60,19 @@ To anchor the scheme to the real site, this package verified key nodes along the
 | Wudaokou | 39.987, 116.331 | Real location of Origin Station's innovation-consumption district |
 
 Conclusion: the three stations (Zhongzhi/Origin/Dazhong) and the spine narrative all find corresponding nodes on the real city map, and the provisional boundary's spatial orientation is consistent with the real urban fabric. This verification only strengthens narrative credibility; coordinates are not used for area, distance or redline judgements, and official geometry, once published, remains authoritative with the same recalculation path.
+
+### Administrative-Scale Public Statistics Calibration (Haidian 2025 Statistical Bulletin)
+
+To calibrate design actions rather than pile up numbers, this package draws on the Haidian District 2025 National Economic and Social Development Statistical Bulletin [source:DATA-SRC-HAIDIAN-2025-STATISTICAL-BULLETIN] (published 2026-04-10 by the Haidian Statistics Bureau, A0 official public page; only factual figures are excerpted with publisher, title and original link preserved; `statistical_scope=Haidian District 2025 administrative statistics`, `not_spatially_allocable=true`—these are district-wide administrative figures that **do not enter metrics.json and do not alter any GeoJSON/area/alignment/phasing**; they only inform what the scheme should add):
+
+| Verifiable public statistic | Design judgement (why it changes design action) | What it does not prove |
+| --- | --- | --- |
+| 92 national key laboratories in the district (63.4% of the city, 17.9% of the country) | Innovation **supply** is already highly concentrated in Haidian; the belt's incremental value is not "more innovation space" but **verification, transfer and governance interfaces**—Zhongzhi shifts from "new R&D clustering" to "standard sandbox & interoperability verification hub" | These laboratories are on the corridor, willing to participate, or generate any ridership or performance |
+| 123 registered foundation models (60% of the city) | Model supply is likewise concentrated; Zhongzhi is calibrated as "full-stack verification + compute/data hub" rather than a new model base | Model vendors cluster on the corridor or the belt carries their compute load |
+| 599 high-value invention patents per 10,000 people (up ~59 YoY) | Innovation density is already high; Origin is calibrated as "transfer channel + campus clinic" rather than additional R&D volume | Corridor patent distribution, conversion rate or enterprise siting |
+| 57,900 technology contracts, RMB 405.31 billion turnover (+6.5%) | Technology trading is active; the three stations should add **scenario premiere, standards governance and international communication outlets** that turn trading volume into perceptible standard consensus | Contracts occur on the corridor or convert into belt performance |
+
+**Calibration conclusion**: Haidian's innovation supply side is already highly concentrated (laboratories, foundation models, patents and technology contracts all rank among the country's leaders); the Jing-Zhang AI Innovation Belt's differentiated value is not in stacking more research facilities but in supplying the **standard interface layer** of "verification—transfer—standards—scenario"—which is the administrative-statistics support for this scheme's "gauge = the standard" concept: the first rail (history) joined China's railways to the world standards network, and the second rail (intelligence) joins Haidian's innovation supply to the global consensus-and-governance network. These statistics serve as background calibration only, all marked `background_only`, and do not replace any official planning conclusion.
 
 ## Coordinated Research Area: Industry and Future City Research
 
