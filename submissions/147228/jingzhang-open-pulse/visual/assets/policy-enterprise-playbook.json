@@ -60,6 +60,20 @@
       "stop_gate": "If offline participants cannot reach the same review path, the pilot cannot claim representative feedback.",
       "source_ids": ["CASE-DECIDIM-BARCELONA"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-005",
+      "title": "结果导向的公共 AI 采购闸门",
+      "policy_instrument": "outcome_based_public_procurement",
+      "enterprise_stage": "pilot_to_scale",
+      "problem": "A successful demonstration is not enough to justify scale; buyers need observable service outcomes, cost boundaries and an exit path.",
+      "jingzhang_interface": "For S08 or S09, define outcome, baseline, manual comparator, ownership, data retention, service level, total lifecycle cost and scale-or-retire decision before a second window.",
+      "operator": "district procurement lead + accountable service owner + finance reviewer",
+      "required_evidence": ["baseline and comparator", "service outcome log", "lifecycle cost note", "scale-or-retire decision"],
+      "metric": "scaled_pilots_with_public_outcome_and_cost_record",
+      "stop_gate": "No measurable public outcome or no manual comparator means no scale procurement.",
+      "source_ids": ["CASE-UK-ATRS", "CASE-SEOUL-AI-FOUNDATION"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
