@@ -285,6 +285,12 @@
       "sha256": "1c53b577e92ce9e4b40f3b0c9fdc37a0cda26068dba238a6cfc730bcbd1c674d",
       "language": "en",
       "translation_of": "visual/index.html"
+    },
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true,
+      "sha256": "7fcd405dc22d81df8afdd9374a68670531e8adee"
     }
   ],
   "validation_claim": {
