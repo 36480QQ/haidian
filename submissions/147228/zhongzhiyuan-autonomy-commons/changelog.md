@@ -50,3 +50,9 @@ reviewable deliverables and bilingual review surface.
 - Corrected `autonomy_metric_count` from 9 to 11 so the metric ledger matches the 11 autonomy-specific keys in `metrics.json` (4 known, 7 unknown).
 - Added bilingual responsive evidence-ledger dashboards with a status ring, exact spatial ratios and a clear rule that unknown is not pass.
 - Updated visualization and metrics hashes in `manifest.json`; no performance claim, permit claim or local road-opening claim was added.
+
+## v2.3 - 2026-08-08
+
+- Replaced the coral “known coverage 36.36%” bar with “unknown share 63.64%” (`7 ÷ 11`) in both languages.
+- Aligned the ring, status cards, ratio bar and legend so coral consistently means pending field evidence.
+- Confirmed the dashboard hierarchy at tablet and 390-pixel mobile widths; no metric value or project claim changed.
