@@ -16,7 +16,11 @@
         "category_zh": "产业测试验证",
         "test_validation": true,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "评测范围越界、模型卡不完整或人工复核不可用",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -40,7 +44,11 @@
         "category_zh": "产业测试验证",
         "test_validation": true,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "数据许可不清、设备失控或隔离失败",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -64,7 +72,11 @@
         "category_zh": "产业测试验证",
         "test_validation": true,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "人机冲突、无障碍通道受阻或现场接管失败",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -88,7 +100,11 @@
         "category_zh": "公共文化",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "历史内容无法核验、导览误导或退出入口失效",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -112,7 +128,11 @@
         "category_zh": "公共服务",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "定位失准、等价路线缺失或人工协助不可用",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -136,7 +156,11 @@
         "category_zh": "创新服务",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "知识产权状态不清或排队外溢影响公共通行",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -160,7 +184,11 @@
         "category_zh": "数据治理",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "许可、撤销或保存期限无法说明",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -184,7 +212,11 @@
         "category_zh": "新型基础设施",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "过热、能耗异常、噪声或设备维护失效",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -208,7 +240,11 @@
         "category_zh": "公共服务",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "专业事项被模型替代决定或人工窗口不可用",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -232,7 +268,11 @@
         "category_zh": "全球交流",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "活动超出批准范围、翻译不可核验或疏散受阻",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -256,7 +296,11 @@
         "category_zh": "智能原生业态",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "设备安全异常、商业推荐越界或普通通行受阻",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -280,7 +324,11 @@
         "category_zh": "公共治理",
         "test_validation": false,
         "privacy_boundary_zh": "最小必要、聚合优先、明确告知、可退出、人工复核",
-        "operation_status": "conceptual_pilot_subject_to_authorization"
+        "operation_status": "conceptual_pilot_subject_to_authorization",
+        "admission_protocol": "G0-G4",
+        "pause_condition_zh": "复核者无法履责、通信失效或事件记录中断",
+        "ordinary_access_fallback": true,
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -376,7 +424,9 @@
         "node_type": "park_command",
         "role_zh": "复用既有建筑的概念联合席位，汇总分区状态、活动许可、投诉、应急与人工接管；不自动执法。",
         "staffing_status": "unknown_pending_operator_and_department_confirmation",
-        "manual_override": true
+        "manual_override": true,
+        "responsibility_role_zh": "跨分区联络与人工态势汇总；不因位置取得行政权力",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -402,7 +452,9 @@
         "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
         "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
         "manual_override": true,
-        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+        "module_strategy": "reuse_first_or_demountable_low_impact_post",
+        "responsibility_role_zh": "服务、记录、人工接管与执法联络；不替代法定决定",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -428,7 +480,9 @@
         "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
         "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
         "manual_override": true,
-        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+        "module_strategy": "reuse_first_or_demountable_low_impact_post",
+        "responsibility_role_zh": "服务、记录、人工接管与执法联络；不替代法定决定",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -454,7 +508,9 @@
         "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
         "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
         "manual_override": true,
-        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+        "module_strategy": "reuse_first_or_demountable_low_impact_post",
+        "responsibility_role_zh": "服务、记录、人工接管与执法联络；不替代法定决定",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -480,7 +536,9 @@
         "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
         "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
         "manual_override": true,
-        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+        "module_strategy": "reuse_first_or_demountable_low_impact_post",
+        "responsibility_role_zh": "服务、记录、人工接管与执法联络；不替代法定决定",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -506,7 +564,9 @@
         "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
         "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
         "manual_override": true,
-        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+        "module_strategy": "reuse_first_or_demountable_low_impact_post",
+        "responsibility_role_zh": "服务、记录、人工接管与执法联络；不替代法定决定",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -530,7 +590,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -554,7 +616,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -578,7 +642,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -602,7 +668,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -626,7 +694,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -650,7 +720,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -674,7 +746,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
@@ -698,7 +772,9 @@
         "node_type": "emergency_logistics_gate",
         "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
         "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
-        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review",
+        "responsibility_role_zh": "经批准预案下的平急转换；平时保持步行环境",
+        "evidence_revision": "v1.2.1"
       },
       "geometry": {
         "type": "Point",
