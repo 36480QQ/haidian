@@ -7,6 +7,7 @@ summary: "Using the Jingzhang Heritage Park as the cultural spine and the AI-ind
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v0.3.en"
+translation_of: "proposal.md"
 ---
 
 # Symbiotic Dual-Rail: Centennial Jingzhang AI Innovation Belt — Urban Design Proposal
