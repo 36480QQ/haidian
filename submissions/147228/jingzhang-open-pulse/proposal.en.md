@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **v2.7 design declaration:** Jing-Zhang does not treat AI as a set of glowing objects. It treats AI as a public protocol in which people come before models, evidence comes before scale, and an ordinary route always remains available. The railway's track, stations and mile markers become a six-part civic loop: question, permission, bounded test, human decision, public receipt, then scale/repair/retire.
+> **v2.8 design declaration:** Jing-Zhang does not treat AI as a set of glowing objects. It treats AI as a public protocol in which people come before models, evidence comes before scale, and an ordinary route always remains available. The railway's track, stations and mile markers become a six-part civic loop: question, permission, bounded test, human decision, public receipt, then scale/repair/retire.
 
 ## v2.8 One-page civic operating system: public loop and proof-mile
 
