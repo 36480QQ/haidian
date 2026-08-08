@@ -13,7 +13,7 @@
       ],
       "evidence_summary_zh": "以来源分级、临时约束层和缺失数据清单建立现状诊断底板。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/site-overview.png"
       ],
       "geometry_refs": [
         "geometry/constraints.geojson#PROV-SITE-001"
@@ -36,12 +36,10 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
       ],
       "status": "complete",
       "title_zh": "现状诊断图与资料缺口"
@@ -59,7 +57,7 @@
       ],
       "evidence_summary_zh": "区分43.6平方公里研究层、约11.4平方公里总体层和三处重点区详细层。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/site-overview.png"
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson#PROV-SITE-001",
@@ -83,12 +81,10 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
       ],
       "status": "complete",
       "title_zh": "三层范围工作框架"
@@ -136,6 +132,7 @@
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "status": "complete",
@@ -178,12 +175,12 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "用地布局"
@@ -201,7 +198,7 @@
       ],
       "evidence_summary_zh": "明确概念建筑基底可量测，但法定容积率、总建面和密度保持未知。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/key-areas.png"
       ],
       "geometry_refs": [
         "geometry/buildings.geojson#BLDG-001"
@@ -226,12 +223,11 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "开发强度或待确认控规条件"
@@ -249,7 +245,7 @@
       ],
       "evidence_summary_zh": "提出色彩、屋顶与公共界面方向，不虚构高度、体量或文保控制值。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/key-areas.png"
       ],
       "geometry_refs": [
         "geometry/buildings.geojson#BLDG-003",
@@ -273,7 +269,6 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
@@ -296,7 +291,7 @@
       ],
       "evidence_summary_zh": "采用保留优先、可逆改造和新增待论证三类概念策略，拆除结论保持待调查。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/key-areas.png"
       ],
       "geometry_refs": [
         "geometry/buildings.geojson#BLDG-001",
@@ -319,12 +314,12 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "建筑拆改留分类"
@@ -342,7 +337,7 @@
       ],
       "evidence_summary_zh": "以四条概念联系线、慢行客厅和停车问题清单表达交通组织，不作工程线位判断。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/mobility-bluegreen.png"
       ],
       "geometry_refs": [
         "geometry/roads.geojson#ROAD-001",
@@ -367,12 +362,11 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "道路、轨道、慢行与停车组织"
@@ -383,18 +377,18 @@
         "A-CONTROLS-001"
       ],
       "control_status": "conceptual_or_provisional",
-      "design_action_zh": "提出端侧算力、能源通信、安全与失败转人工复核清单，容量保持未知。",
+      "design_action_zh": "提出端侧算力、能源通信、安全与失败转人工复核清单，容量保持未知并回指约束与资料缺口。",
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
-      "evidence_summary_zh": "提出端侧算力、能源通信、安全与失败转人工复核清单，容量保持未知。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
+      "evidence_summary_zh": "提出端侧算力、能源通信、安全与失败转人工复核清单，容量保持未知并回指约束与资料缺口。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/metrics-evidence.png"
       ],
       "geometry_refs": [
-        "geometry/roads.geojson#ROAD-004",
-        "geometry/land_use.geojson#LU-001"
+        "geometry/constraints.geojson#PROV-SITE-001",
+        "geometry/roads.geojson#ROAD-004"
       ],
       "item_id": "municipal_new_infrastructure",
       "limitation_zh": "本项完成指概念响应和证据链完整，不表示官方控制、现状调查、工程可行性、项目授权或运营结果已经确认。",
@@ -406,6 +400,7 @@
       "professional_follow_up_zh": "取得官方资料后由规划、建筑、交通、市政、景观、运营及法律/数据保护专业团队按职责复核并版本化更新。",
       "proposal_sections": [
         "交通、轨道、市政与公共服务设施",
+        "缺失数据与使用纪律",
         "九项生态机制系统"
       ],
       "required": true,
@@ -415,12 +410,11 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "市政与新型基础设施策略"
@@ -438,7 +432,7 @@
       ],
       "evidence_summary_zh": "以一条蓝绿廊、三座地标和四张分布式网络组织公共空间，并复算概念占比。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/mobility-bluegreen.png"
       ],
       "geometry_refs": [
         "geometry/green_space.geojson#GREEN-001",
@@ -464,7 +458,6 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
@@ -487,7 +480,7 @@
       ],
       "evidence_summary_zh": "逐区给出产业、建筑、公共空间、交通、运营和风险响应，并引用实际 feature。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/key-areas.png"
       ],
       "geometry_refs": [
         "geometry/key_areas.geojson#PROV-KEY-001",
@@ -517,7 +510,8 @@
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "三大重点片区详细设计"
@@ -535,7 +529,7 @@
       ],
       "evidence_summary_zh": "六项目表逐行包含责任角色、阶段门、审批/复核、资源包络、停止条件和验收判据。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/metrics-evidence.png"
       ],
       "geometry_refs": [
         "geometry/phasing.geojson#PHASE-001",
@@ -564,7 +558,8 @@
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "更新项目清单"
@@ -582,7 +577,7 @@
       ],
       "evidence_summary_zh": "六项目以A—C阶段门串联责任角色、审批/复核、资源包络、停止条件和验收字段。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
-        "assets/figures/land-use-structure.png"
+        "assets/figures/metrics-evidence.png"
       ],
       "geometry_refs": [
         "geometry/phasing.geojson#PHASE-001",
@@ -612,7 +607,8 @@
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "分期实施计划"
@@ -654,13 +650,12 @@
         "BOUNDARY_TRUST"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "status": "complete",
       "title_zh": "指标复算"
@@ -708,7 +703,7 @@
       ],
       "standard_refs": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "status": "complete",
       "title_zh": "风险与缺资料清单"

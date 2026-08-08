@@ -341,7 +341,8 @@
         "CASE-OODI-OFFICIAL"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "title_zh": "统筹研究范围：AI创新生态体系",
       "visual_sections": [
@@ -393,7 +394,9 @@
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "title_zh": "统筹研究范围：适配人工智能的未来城市形态",
       "visual_sections": [
@@ -445,7 +448,9 @@
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-CONTROL-DETAILED-PLANNING",
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE"
       ],
       "title_zh": "总体设计范围：产业目标与功能布局",
       "visual_sections": [
@@ -497,7 +502,8 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "总体设计范围：城市更新总体框架",
       "visual_sections": [
@@ -545,7 +551,8 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "总体设计范围：交通轨道市政配套设施",
       "visual_sections": [
@@ -595,7 +602,9 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "总体设计范围：京张遗址公园活力带",
       "visual_sections": [
@@ -647,7 +656,8 @@
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "title_zh": "总体设计范围：城市风貌",
       "visual_sections": [
@@ -698,7 +708,9 @@
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "重点区域范围详细设计必选项",
       "visual_sections": [
@@ -749,7 +761,9 @@
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "众智园AI自主创新加速区",
       "visual_sections": [
@@ -800,7 +814,9 @@
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "北京AI原点社区",
       "visual_sections": [
@@ -851,7 +867,9 @@
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "大钟寺AI产业聚集区",
       "visual_sections": [
@@ -902,7 +920,8 @@
         "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_refs": [
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
       ],
       "title_zh": "一带总体概念与功能统筹方案设计",
       "visual_sections": [
@@ -1019,29 +1038,36 @@
       "depth_refs": [
         "risk_missing_data"
       ],
-      "design_action_zh": "以百工留存站、万技开局厅、传承作品场三座技能地标和倡议桌、共声画廊、慢行客厅、邻里平台四张分布式网络构成公共空间系统。",
+      "design_action_zh": "以东西缝合、南北贯通连接三座技能地标；大钟寺只做自愿技能作品展示、无障碍测试、服务交换和小规模服务原型；荣誉展示不排名且适用撤回；四张分布式网络均保留非数字后备。",
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
-      "evidence_summary_zh": "三座地标和四张分布式网络在七个 PUBLIC feature 中登记为概念性项目特征。",
+      "evidence_summary_zh": "三座地标与倡议桌、共声画廊、慢行客厅、邻里平台分别解析到 PUBLIC-001—PUBLIC-007；重点区图表达地标，交通蓝绿图表达概念连接和分布式网络。",
       "figure_refs": [
-        "assets/figures/key-areas.png"
+        "assets/figures/key-areas.png",
+        "assets/figures/mobility-bluegreen.png"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson#PUBLIC-001",
         "geometry/public_space.geojson#PUBLIC-002",
         "geometry/public_space.geojson#PUBLIC-003",
-        "geometry/public_space.geojson#PUBLIC-004"
+        "geometry/public_space.geojson#PUBLIC-004",
+        "geometry/public_space.geojson#PUBLIC-005",
+        "geometry/public_space.geojson#PUBLIC-006",
+        "geometry/public_space.geojson#PUBLIC-007",
+        "geometry/roads.geojson#ROAD-001"
       ],
       "limitation_zh": "响应在概念层完成；空间控制使用低置信度临时边界或智能体设计，不构成现状事实、法定控规、审批、投资或运营承诺。",
       "mandatory": true,
       "metrics": [
         "community_touchpoint_count",
-        "public_space_ratio"
+        "public_space_ratio",
+        "green_public_space_ratio"
       ],
       "professional_follow_up_zh": "取得官方红线、控规、现状、权属及设施资料后，由规划、建筑、交通、市政、运营与法律/数据保护专业人员复核并更新证据。",
       "report_sections": [
+        "AI 公共空间、智能原生服务与组件库",
         "技能留存打卡地与“技能里程卡”",
         "重点区域详细设计"
       ],
@@ -1054,11 +1080,13 @@
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "standard_refs": [
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "visual_sections": [
-        "assets/figures/key-areas.png"
+        "assets/figures/key-areas.png",
+        "assets/figures/mobility-bluegreen.png"
       ]
     },
     {
@@ -1104,7 +1132,8 @@
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
       ],
       "standard_refs": [
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "visual_sections": [
@@ -1120,12 +1149,12 @@
       "depth_refs": [
         "risk_missing_data"
       ],
-      "design_action_zh": "以周月季年运营节律、共治与授权机制，以及六项目A—C阶段门、停止条件和验收指标组织长期运营。",
+      "design_action_zh": "以京张万技节、百工夜校活动子品牌和无障碍传播工具包承载运营节律，并以公众发现—同意登记—共创—受控试点—证据复核—社区/开放组件—专业/法律/主管部门复核—可能合作的八个阶段门组织转化。",
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
-      "evidence_summary_zh": "运营回应、六项目表、三个分期 feature 和待测运营指标共同形成项目闸门证据。",
+      "evidence_summary_zh": "活动品牌章节、六项目表、三个分期 feature 和待测运营指标逐门记录人工责任与停止条件；不保证转化、合作或收益。",
       "figure_refs": [
         "assets/figures/metrics-evidence.png"
       ],
@@ -1143,6 +1172,7 @@
       ],
       "professional_follow_up_zh": "取得官方红线、控规、现状、权属及设施资料后，由规划、建筑、交通、市政、运营与法律/数据保护专业人员复核并更新证据。",
       "report_sections": [
+        "活动品牌、长期运营与转化路径",
         "更新项目清单、实施政策与分期计划",
         "面向智能体任务书逐项回应"
       ],
@@ -1155,7 +1185,8 @@
         "DATA-SRC-AGENT-TASKBOOK-20260518"
       ],
       "standard_refs": [
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "visual_sections": [
