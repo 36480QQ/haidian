@@ -18,3 +18,12 @@
 
 ## v1.0 - 2026-08-07
 - 首次正式方案包；PR #70 合并入库，Review Agent 71/100。
+
+
+## v1.2 — evidence-to-implementation sprint
+
+- Expanded the professional narrative with a three-layer urban section, five interface controls, a 15-minute public-value loop, retain/adapt/remove decision tree, and operational designs for all three key areas.
+- Added three falsifiable first-phase pilot protocols, G0–G4 gates, responsibility/veto rights, budget method, shutdown resources, accessibility QA, subgroup fairness evaluation and multi-channel appeal.
+- Added an auditable multi-agent operating model, Urban Agent Passport, E0–E4 evidence ladder, decision-rights matrix, failure knowledge base, detailed indicator dictionary and public evaluation card.
+- Added a complete English proposal, HTML/visual counterparts, five original English diagrams and English A0/A3 PDFs; recorded their generation chain and rights.
+- Preserved low-confidence provisional geometry and the requirement for coordinated replacement and recalculation when official inputs arrive.

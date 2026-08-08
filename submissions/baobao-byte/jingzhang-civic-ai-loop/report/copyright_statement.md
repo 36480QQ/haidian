@@ -33,3 +33,11 @@ PDF 为跨设备中文显示嵌入运行环境所提供文泉驿正黑字体子�
 3. HTML 离线扫描：不得出现远程脚本、样式、字体、图片、iframe 或 API 请求。
 4. PDF/PNG 人工视觉检查：标题、图例、状态水印、四边安全区与中文可读性。
 5. 法律边界：机器检查不替代最终确权；若维护者发现权利疑点，投稿人将更正或撤下对应资产。
+
+
+## v1.2 bilingual assets
+
+- `proposal.en.md`, `report/proposal.en.html`, `visual/index.en.html`: English counterpart authored for this iteration from the Chinese proposal; no machine service, remote asset or third-party template is embedded. Terminology and boundary statements were manually aligned with the primary file.
+- `assets/figures/*.en.png`: five original English display diagrams generated locally with Pillow from submission-authored text and geometric primitives. Font: system DejaVu Sans (`/usr/share/fonts/truetype/dejavu/`), distributed under the Bitstream Vera-derived permissive licence; glyphs are rasterised, no font file is redistributed.
+- `drawings/a0-boards.en.pdf`, `drawings/a3-booklet.en.pdf`: locally assembled only from the five English raster diagrams above. No external photograph, map tile, logo, iframe, script, tracker or API is included.
+- Reviewer action before public display: compare Chinese/English meaning, confirm text fit and contrast, run accessibility review, and retain the provisional-geometry warning. These counterparts are generated communication artefacts, not independently approved translations.
