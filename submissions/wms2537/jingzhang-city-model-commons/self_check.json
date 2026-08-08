@@ -62,7 +62,7 @@
       "result": "pass",
       "severity": "info",
       "target": "scripts/self_check_submission.py",
-      "message": "已在上游 main ed1ab7008117fe3a89fa5940c70b1eca8df4ce2f 上运行官方 self_check_submission.py；deterministic、spatial、visual 与 professional 四项检查均 PASS，Can enter formal review: YES。"
+      "message": "已在当前上游 main 5c9d9fb6b22fa1f799cfbd64c170e8e787ae2580 上运行官方 self_check_submission.py；deterministic、spatial、visual 与 professional 四项检查均 PASS，Can enter formal review: YES。"
     },
     {
       "check_id": "FIGURE_DIMENSIONS",
@@ -90,7 +90,7 @@
       "result": "pass",
       "severity": "major",
       "target": "drawings/a3-booklet.pdf + drawings/a0-boards.pdf",
-      "message": "A3 方案册 9 页、A0 展板 3 页按正确纸张尺寸生成并逐页渲染复核；未发现裁切、重叠、乱码或黑块。"
+      "message": "A3 方案册 12 页、A0 展板 3 页按正确纸张尺寸生成并逐页渲染复核；未发现裁切、重叠、乱码或黑块。"
     },
     {
       "check_id": "VISUAL_METRIC_HOOKS",
