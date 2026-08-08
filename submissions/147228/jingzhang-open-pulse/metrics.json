@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "The submitted boundary is an explicitly provisional geometry. Its calculated area is a working value for intake and design comparison, not a precise official scoring area."
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 310807.184,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.123423,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.073281,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "design_north_south_spine_length_m": {
+      "status": "known",
+      "value": 9604.8,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "projected_length(ROAD-001, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "ROAD-001 is a conceptual network alignment inside the provisional boundary, not an engineering centreline or statutory road."
+      ]
+    },
+    "design_east_west_connector_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(features where network_role=east_west_connector)",
+      "confidence": "medium",
+      "assumptions": [
+        "Each connector expresses a required cross-corridor relationship at one key area; final routes depend on official road, rail, river, campus and ownership data."
+      ]
+    },
+    "design_slow_mobility_network_length_m": {
+      "status": "known",
+      "value": 13013.9,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(projected_length(all ROAD_CENTERLINE features, EPSG:4548))",
+      "confidence": "medium",
+      "assumptions": [
+        "The network is a conceptual accessibility framework and must be snapped to verified public rights-of-way after professional review."
+      ]
+    },
+    "osm_mapped_station_names_within_800m_count": {
+      "status": "known",
+      "value": 16,
+      "unit": "count",
+      "source_files": [
+        "sources.json",
+        "report/narrative.md"
+      ],
+      "formula": "count(distinct mapped railway/subway station names within an 800 m projected buffer of the provisional boundary)",
+      "confidence": "low",
+      "assumptions": [
+        "OpenStreetMap Overpass snapshot accessed 2026-08-08; station names and positions may be incomplete, duplicated, changed or not represent accessible entrances."
+      ]
+    },
+    "osm_mapped_crossing_count": {
+      "status": "known",
+      "value": 189,
+      "unit": "count",
+      "source_files": [
+        "sources.json",
+        "report/narrative.md"
+      ],
+      "formula": "count(OSM nodes tagged highway=crossing inside provisional boundary)",
+      "confidence": "low",
+      "assumptions": [
+        "This is a mapping completeness screen, not a safety or accessibility rating; every critical crossing requires field audit."
+      ]
+    },
+    "resident_transport_satisfaction_index": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "source_files": [
+        "report/narrative.md"
+      ],
+      "formula": "weighted mean of resident ratings for walking continuity, crossing safety, cycling comfort, transit transfer, night-time comfort and service access",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No project-specific resident baseline survey has been completed.",
+      "pilot_target_min": 80,
+      "pilot_target_scale": "0-100"
+    }
+  }
+}
