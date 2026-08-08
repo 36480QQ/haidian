@@ -389,9 +389,9 @@ AI agent 在生成方案前已读取 `design_brief.json`、`agent_taskbook.json`
 | 原点社区面积 | 1,043,237 | m² | [data:geometry/key_areas.geojson#PROV-KEY-002] | known |
 | 大钟寺面积 | 720,454 | m² | [data:geometry/key_areas.geojson#PROV-KEY-003] | known |
 | 重点区域数量 [metric:key_area_count] | 3 | 个 | [data:geometry/key_areas.geojson] | known |
-| 绿地率 [metric:green_ratio] | 待复算 | % | [data:geometry/green_space.geojson] | pending |
-| 公共空间比例 [metric:public_space_ratio] | 待复算 | % | [data:geometry/public_space.geojson] | pending |
-| 建筑基底面积 | 待复算 | m² | [data:geometry/buildings.geojson] | pending |
+| 绿地率 [metric:green_ratio] | 61.64 | % | [data:geometry/green_space.geojson] | provisional |
+| 公共空间比例 [metric:public_space_ratio] | 0.39 | % | [data:geometry/public_space.geojson] | provisional |
+| 建筑基底面积 | 310,807 | m² | [data:geometry/buildings.geojson] | provisional |
 | 容积率 | 待控规确认 | - | - | unknown |
 | 建筑高度 | 待控规确认 | m | - | unknown |
 
