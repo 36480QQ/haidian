@@ -596,6 +596,29 @@
         "CASE-UK-ATRS"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-035",
+      "title": "岗位重设计与工作质量闸门",
+      "policy_instrument": "job_redesign_and_work_quality_review",
+      "enterprise_stage": "capability_and_talent_growth",
+      "problem": "Automation can raise throughput while increasing hidden checking, emotional labour or precarious work for frontline staff.",
+      "jingzhang_interface": "Before S08/S09 expansion, compare task allocation before and after assistance, record training time, discretion, escalation load, break quality and a worker-led stop or redesign route.",
+      "operator": "workforce lead + frontline worker panel + service owner",
+      "required_evidence": [
+        "before-after task map",
+        "training record",
+        "escalation-load note",
+        "worker feedback",
+        "redesign decision"
+      ],
+      "metric": "enterprise_ai_rollouts_with_worker_task_and_quality_review",
+      "stop_gate": "Higher unrecognised checking load, lost escalation authority or no worker feedback route triggers redesign before expansion.",
+      "source_ids": [
+        "CASE-SEOUL-AI-FOUNDATION",
+        "CASE-DECIDIM-BARCELONA"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
