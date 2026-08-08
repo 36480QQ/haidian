@@ -114,6 +114,13 @@
       "message": "正文、矩阵、几何、图纸、指标、来源和假设构成交叉引用的专业证据链。"
     },
     {
+      "check_id": "NO_GENERATIVE_IMAGE_ASSET",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "包内 26 张图件全部为 PIL/reportlab 程序化绘制，无生成式图像素材。v1.6.2—v1.6.3 曾包含一张 gpt-image-2 概念表现图，自 v1.6.4 起其内容已整体替换为程序化绘制的《交接断面》；路径保留而非删除，是因为参赛者 PR 无法删除文件（Issue #647，修复 PR #668/#671 未合并）。"
+    },
+    {
       "check_id": "COPYRIGHT_TRACEABILITY",
       "result": "pass",
       "severity": "major",

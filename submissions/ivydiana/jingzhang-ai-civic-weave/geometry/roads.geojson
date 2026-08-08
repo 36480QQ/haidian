@@ -1,0 +1,254 @@
+{
+  "type": "FeatureCollection",
+  "name": "civic_weave_walking_cycling_network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "greenway",
+        "name_zh": "公共证据主脊",
+        "design_role": "north_south_civic_evidence_spine"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.348,
+            39.94
+          ],
+          [
+            116.3487,
+            39.951
+          ],
+          [
+            116.3474,
+            39.9635
+          ],
+          [
+            116.3488,
+            39.9775
+          ],
+          [
+            116.3477,
+            39.991
+          ],
+          [
+            116.3489,
+            40.0045
+          ],
+          [
+            116.3479,
+            40.017
+          ],
+          [
+            116.3485,
+            40.0258
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "cycleway",
+        "name_zh": "东西议事缝合线 1",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34048333333332,
+            39.9468
+          ],
+          [
+            116.3553,
+            39.9468
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "pedestrian",
+        "name_zh": "东西议事缝合线 2",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34017222222222,
+            39.958
+          ],
+          [
+            116.3553,
+            39.958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "cycleway",
+        "name_zh": "东西议事缝合线 3",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3398111111111,
+            39.971
+          ],
+          [
+            116.35482,
+            39.971
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "pedestrian",
+        "name_zh": "东西议事缝合线 4",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34040967741934,
+            39.986
+          ],
+          [
+            116.35362,
+            39.986
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "cycleway",
+        "name_zh": "东西议事缝合线 5",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34134516129032,
+            40.0005
+          ],
+          [
+            116.35387534246576,
+            40.0005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "pedestrian",
+        "name_zh": "东西议事缝合线 6",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34194390243903,
+            40.011
+          ],
+          [
+            116.3544506849315,
+            40.011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "road_class": "cycleway",
+        "name_zh": "东西议事缝合线 7",
+        "design_role": "east_west_civic_stitch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34240731707317,
+            40.0205
+          ],
+          [
+            116.35497123287671,
+            40.0205
+          ]
+        ]
+      }
+    }
+  ]
+}

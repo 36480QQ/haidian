@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6"
+iteration: "v1.6.4"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -154,6 +154,8 @@ The adaptive, evolvable development model has a concrete definition here: treat 
 
 To make "handover" more than a field count, v1.6 adds the original Dual-Control Shift Ledger 0.3. The outgoing shift records scope, version, inputs, known failures and the no-AI service floor. The incoming shift must independently reproduce the packet and explicitly accept or refuse it; an unresolved item cannot vanish between shifts. The machine-readable contract is [data:visual/assets/governance/shift-ledger.schema.json]. Its minimum example uses the low-risk SCN-05 accessible-route copilot with synthetic obstacle cards only: no personal data, no live service connection, `deployment_mode=sandbox_only`, human roles unassigned and performance results `null` [data:visual/assets/governance/example-scn05-shift-ledger.json]. The instance passes JSON Schema structural validation [metric:machine_readable_shift_protocol_count] [metric:schema_valid_synthetic_shift_count] [metric:shift_protocol_validation_error_count], recorded in [data:visual/assets/governance/validation-report.json]. Zero structural errors proves only that the synthetic record is machine-readable; it does not prove route correctness, service availability, legal compliance or readiness for field use.
 
+![Dual-Control Shift Ledger: outgoing and incoming shifts decide separately, and no unresolved item may vanish between them](assets/figures/shift-ledger.en.png)
+
 The three phases are not a timetable but three merge gates—data, ownership and professional assessment must pass before a merge; if they do not, the state rolls back to the last working one. Being reversible is the precondition for being evolvable, which is exactly why every component in the library must be removable and why "reversible insertion" precedes "investigate" in the four-step building decision. A city that cannot undo its own decisions cannot adapt.
 
 ![A reversible city: versioned renewal, agent separation and sensing boundaries](assets/figures/adaptive-model.en.png)
@@ -293,7 +295,11 @@ These are system and basis proposals; actual provision ratios, capacity and conn
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The concept contains about 226.5 hectares of green space [metric:green_space_area_sqm], an approximately 19.8% ratio [metric:green_ratio], and about 103.9 hectares of public handover ground [metric:public_space_area_sqm], an approximately 9.1% ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
+The concept contains 2,264,695.802 m² of green space [metric:green_space_area_sqm], a 0.198434 ratio [metric:green_ratio], and 1,039,257.211 m² of public handover ground [metric:public_space_area_sqm], a 0.091060 ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
+
+Whether the public interface holds does not depend on how well any single fitting is made; it depends on the order of the elements. The staffed counter, the continuous accessible walk and the physical stop control must stay continuously reachable, and the machine-only lane never comes between them; the retained track sits flush in the paving as a trace rather than an obstacle. The section below fixes only that layer — order and adjacency. Widths, levels and construction depend on road redlines and survey data the public package does not supply, so the drawing carries no dimensions, and road area and road ratio stay unassigned in metrics.json as [metric:road_area_sqm] and [metric:road_ratio].
+
+![The handover section: the order and adjacency rules binding counter, accessible walk, Takeover Kiosk Zero, retained track, machine-only lane and planting; no dimensions expressed](assets/figures/handover-scene.en.jpg)
 
 Public space is not custom-built once; it runs on a component library that can be repeated, removed and maintained. Ten components share the coal-black / signal-red / electric-cyan / bone-white vocabulary and one signage rule, so any of them can be added or withdrawn without altering its surroundings. No component carries camera or face-recognition capability; the smart layer is always a removable accessory.
 

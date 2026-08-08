@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "任务、标准、枚举、范围和 schema；按单项用途限制使用。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "区分 formal-ready、provisional-only 与禁止用途。"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "阅读导航层，不是新增权威来源。"
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "临时生成、可视化与自检；不得作为 official redline 或精确面积依据。"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "三处临时重点区；不得作为地块、道路或权属边界。"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "accessed_date": "2026-08-09",
+      "source_type": "official_public",
+      "usage": "项目名称、三层范围文字与约面积、设计任务、成果语境；不用于 polygon 和控规。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "title": "面向全球智能体开源征集任务书摘录",
+      "path": "brief/site-package/agent_taskbook.json",
+      "accessed_date": "2026-08-09",
+      "source_type": "user_provided_cleared",
+      "usage": "六项智能体任务、场景、品牌、运营与边界条款。"
+    },
+    {
+      "id": "CASE-PDD",
+      "title": "Punggol Digital District",
+      "publisher": "JTC, Government of Singapore",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict",
+      "accessed_date": "2026-08-09",
+      "source_type": "official_public_case",
+      "usage": "产业-大学-社区协同、慢行网络、living lab 与完整生活设施的机制比较；不用于北京场地事实。"
+    },
+    {
+      "id": "CASE-STATION-F",
+      "title": "STATION F and Flatmates",
+      "publisher": "STATION F",
+      "url": "https://flatmates.stationf.co/",
+      "accessed_date": "2026-08-09",
+      "source_type": "primary_case_source",
+      "usage": "创业服务与居住支持相邻的机制比较；不使用价格和绩效作为京张预测。"
+    },
+    {
+      "id": "CASE-MARIA01",
+      "title": "Maria 01 Campus",
+      "publisher": "Maria 01",
+      "url": "https://maria.io/campus/",
+      "accessed_date": "2026-08-09",
+      "source_type": "primary_case_source",
+      "usage": "既有医院更新为创业社区及运营成长机制；不用于京张文保结论。"
+    },
+    {
+      "id": "CASE-MARS",
+      "title": "MaRS Discovery District",
+      "publisher": "MaRS Discovery District",
+      "url": "https://www.marsdd.com/about/",
+      "accessed_date": "2026-08-09",
+      "source_type": "primary_case_source",
+      "usage": "研究、实验室、创业与技术采用服务共址；不照搬绩效数据。"
+    },
+    {
+      "id": "CASE-22AT",
+      "title": "Barcelona 22@ mixed-use renewal",
+      "publisher": "Barcelona Municipal Institute of Urban Planning",
+      "url": "https://ajuntament.barcelona.cat/instituturbanisme/sites/default/files/2025-06/EN-Memoria_IMU24_web.pdf",
+      "accessed_date": "2026-08-09",
+      "source_type": "official_public_case",
+      "usage": "混合生产、日常生活、公共设施和绿色空间更新机制；不照搬规划指标。"
+    },
+    {
+      "id": "CASE-CORTEX",
+      "title": "Cortex Innovation District",
+      "publisher": "Cortex Innovation Community",
+      "url": "https://www.cortexstl.org/about/",
+      "accessed_date": "2026-08-09",
+      "source_type": "primary_case_source",
+      "usage": "包容性增长、公共空间、培训与多方治理机制；不照搬投资和就业规模。"
+    }
+  ]
+}
