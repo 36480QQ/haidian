@@ -5,12 +5,13 @@ from __future__ import annotations
 
 import argparse
 import html
+import os
 import re
 from pathlib import Path, PurePosixPath
 
 
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
-REFERENCE_RE = re.compile(r"\[(source|standard|depth|data|metric|assumption):([^\]\s]+)\]")
+REFERENCE_RE = re.compile(r"\[(source|standard|depth|data|metric):([^\]\s]+)\]")
 INLINE_CODE_RE = re.compile(r"`([^`]+)`")
 
 
@@ -46,27 +47,11 @@ def normalize_image_src(submission_dir: Path, raw_src: str) -> str:
 def render_inline(text: str) -> str:
     escaped = html.escape(text)
     escaped = INLINE_CODE_RE.sub(lambda m: f"<code>{html.escape(m.group(1))}</code>", escaped)
-    escaped = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
 
     def replace_ref(match: re.Match[str]) -> str:
         kind = match.group(1)
         value = match.group(2)
-        labels = {
-            "source": ("源", "来源"),
-            "standard": ("标", "标准"),
-            "depth": ("深", "设计深度"),
-            "data": ("数", "数据图层"),
-            "metric": ("指标", "指标"),
-            "assumption": ("设", "假设"),
-        }
-        short, label = labels[kind]
-        full = f"[{kind}:{value}]"
-        return (
-            f'<details class="ev ev-{kind}">'
-            f'<summary title="{html.escape(full)}">{short}</summary>'
-            f'<div class="ev-card"><b>{label}</b><code>{html.escape(full)}</code></div>'
-            "</details>"
-        )
+        return f'<span class="evidence evidence-{kind}">[{kind}:{html.escape(value)}]</span>'
 
     return REFERENCE_RE.sub(replace_ref, escaped)
 
@@ -75,8 +60,6 @@ def render_markdown_body(submission_dir: Path, markdown: str) -> str:
     blocks: list[str] = []
     paragraph: list[str] = []
     in_list = False
-    in_ordered_list = False
-    table_rows: list[list[str]] = []
 
     def flush_paragraph() -> None:
         nonlocal paragraph
@@ -85,47 +68,13 @@ def render_markdown_body(submission_dir: Path, markdown: str) -> str:
             paragraph = []
 
     def close_list() -> None:
-        nonlocal in_list, in_ordered_list
+        nonlocal in_list
         if in_list:
             blocks.append("</ul>")
             in_list = False
-        if in_ordered_list:
-            blocks.append("</ol>")
-            in_ordered_list = False
-
-    def flush_table() -> None:
-        nonlocal table_rows
-        if not table_rows:
-            return
-        rows = table_rows
-        table_rows = []
-        if len(rows) > 1 and all(re.fullmatch(r":?-{3,}:?", cell) for cell in rows[1]):
-            header = rows[0]
-            body_rows = rows[2:]
-        else:
-            header = rows[0]
-            body_rows = rows[1:]
-        head = "".join(f"<th>{render_inline(cell)}</th>" for cell in header)
-        body = "".join(
-            "<tr>" + "".join(f"<td>{render_inline(cell)}</td>" for cell in row) + "</tr>"
-            for row in body_rows
-        )
-        blocks.append(
-            '<div class="table-wrap"><table><thead><tr>'
-            + head
-            + "</tr></thead><tbody>"
-            + body
-            + "</tbody></table></div>"
-        )
 
     for raw_line in markdown.splitlines():
         line = raw_line.rstrip()
-        if line.strip().startswith("|") and line.strip().endswith("|"):
-            flush_paragraph()
-            close_list()
-            table_rows.append([cell.strip() for cell in line.strip()[1:-1].split("|")])
-            continue
-        flush_table()
         if not line.strip():
             flush_paragraph()
             close_list()
@@ -153,43 +102,27 @@ def render_markdown_body(submission_dir: Path, markdown: str) -> str:
             blocks.append(f"<h{level}>{render_inline(title)}</h{level}>")
             continue
 
-        if line.startswith("> "):
-            flush_paragraph()
-            close_list()
-            blocks.append(f"<blockquote>{render_inline(line[2:].strip())}</blockquote>")
-            continue
-
         if line.startswith("- "):
             flush_paragraph()
-            if in_ordered_list:
-                close_list()
             if not in_list:
                 blocks.append("<ul>")
                 in_list = True
             blocks.append(f"<li>{render_inline(line[2:].strip())}</li>")
             continue
 
-        ordered_match = re.match(r"^\d+\.\s+(.+)$", line)
-        if ordered_match:
-            flush_paragraph()
-            if in_list:
-                close_list()
-            if not in_ordered_list:
-                blocks.append("<ol>")
-                in_ordered_list = True
-            blocks.append(f"<li>{render_inline(ordered_match.group(1))}</li>")
-            continue
-
         paragraph.append(line.strip())
 
     flush_paragraph()
     close_list()
-    flush_table()
     return "\n".join(blocks)
 
 
-def render_html(submission_dir: Path) -> str:
-    proposal_path = submission_dir / "proposal.md"
+def render_html(
+    submission_dir: Path,
+    proposal_name: str = "proposal.md",
+    translation_href: str | None = None,
+) -> str:
+    proposal_path = submission_dir / proposal_name
     metadata, body = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
     title = metadata.get("title") or submission_dir.name
     summary = metadata.get("summary", "")
@@ -206,6 +139,14 @@ def render_html(submission_dir: Path) -> str:
         )
     else:
         rendered_body = render_markdown_body(submission_dir, body)
+    translation_link = ""
+    if translation_href:
+        link_label = "Read in English" if language == "zh" else "阅读中文版本"
+        translation_link = (
+            '<p class="translation-link">'
+            f'<a href="{html.escape(translation_href)}">{link_label}</a>'
+            "</p>"
+        )
     return f"""<!doctype html>
 <html lang="{document_lang}">
 <head>
@@ -214,18 +155,17 @@ def render_html(submission_dir: Path) -> str:
 <title>{html.escape(title)} - proposal report</title>
 <style>
 :root {{
-  --ink: #2b2118;
-  --muted: #6b5b4b;
-  --line: #c9b8a0;
-  --paper: #fbf6ec;
-  --bg: #efe3cf;
-  --accent: #b33a2b;
-  --celadon: #3e7a62;
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
 }}
 * {{ box-sizing: border-box; }}
 body {{
   margin: 0;
-  font-family: "Songti SC", "STSong", "PingFang SC", "Microsoft YaHei", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -247,53 +187,14 @@ h1 {{ font-size: 34px; line-height: 1.22; margin: 0 0 10px; }}
 h2 {{ font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }}
 h3 {{ font-size: 20px; margin: 26px 0 10px; }}
 p, li {{ font-size: 16px; }}
-blockquote {{
-  margin: 10px 0 16px;
-  padding: 10px 14px;
-  border-left: 3px solid #c29b48;
-  background: #f7f0e2;
-  color: var(--muted);
-}}
 code {{
-  background: #f0e6d4;
-  color: var(--ink);
+  background: #eef2f7;
+  color: #1d4f7a;
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }}
 .summary {{ color: var(--muted); font-size: 17px; }}
-.toolbar {{
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 0;
-  background: linear-gradient(var(--paper) 75%, transparent);
-}}
-.ev-toggle {{ position: absolute; opacity: 0; pointer-events: none; }}
-.ev-toggle-label {{
-  font-size: 13px;
-  border: 1px solid var(--line);
-  background: #f7f0e2;
-  padding: 6px 12px;
-  cursor: pointer;
-}}
-.ev-toggle:checked + .ev-toggle-label {{
-  background: #f8e8df;
-  border-color: var(--accent);
-  color: #6e2c22;
-}}
-.hint {{ font-size: 12px; color: var(--muted); }}
-.note {{
-  background: #f8e8df;
-  border: 1px solid var(--accent);
-  color: #6e2c22;
-  padding: 10px 12px;
-  font-size: 13px;
-  margin: 0 0 16px;
-}}
+.translation-link a {{ color: var(--accent); font-weight: 700; }}
 .proposal-figure {{
   margin: 22px 0 28px;
   border: 1px solid var(--line);
@@ -312,44 +213,15 @@ code {{
   border-top: 1px solid var(--line);
   font-size: 14px;
 }}
-.table-wrap {{ overflow-x: auto; margin: 14px 0 20px; border: 1px solid var(--line); }}
-table {{ width: 100%; border-collapse: collapse; background: #fff; }}
-th, td {{ padding: 8px 9px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }}
-th {{ background: #efe3cf; }}
-.ev {{ display: none; position: relative; margin-left: 3px; vertical-align: super; }}
-body:has(.ev-toggle:checked) .ev {{ display: inline-block; }}
-.ev > summary {{
-  list-style: none;
-  cursor: pointer;
-  font-size: 11px;
-  line-height: 1;
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 1px 5px;
-  color: var(--muted);
-  background: #f7f0e2;
+.evidence {{
+  white-space: nowrap;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #31506f;
+  border-radius: 4px;
+  padding: 0.03em 0.32em;
+  font-size: 0.92em;
 }}
-.ev > summary::-webkit-details-marker {{ display: none; }}
-.ev[open] > summary {{ border-color: var(--accent); color: var(--accent); }}
-.ev-metric > summary {{ color: var(--accent); border-color: #e2b8b0; }}
-.ev-source > summary {{ color: var(--celadon); border-color: #b7d0c4; }}
-.ev-card {{
-  position: absolute;
-  left: 0;
-  top: 1.6em;
-  z-index: 30;
-  min-width: 220px;
-  max-width: 300px;
-  padding: 10px 12px;
-  background: #2b2118;
-  color: #f8f0e0;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
-  font-size: 12px;
-  line-height: 1.45;
-}}
-.ev-card b {{ display: block; color: #e2c98a; margin-bottom: 4px; }}
-.ev-card code {{ display: block; background: rgba(255, 255, 255, 0.08); color: #f8f0e0; word-break: break-all; }}
 @media (max-width: 720px) {{
   main {{ padding: 26px 16px 52px; }}
   h1 {{ font-size: 26px; }}
@@ -362,13 +234,8 @@ body:has(.ev-toggle:checked) .ev {{ display: inline-block; }}
 <section class="hero">
 <h1>{html.escape(title)}</h1>
 <p class="summary">{html.escape(summary)}</p>
+{translation_link}
 </section>
-<div class="toolbar">
-  <input class="ev-toggle" type="checkbox" id="toggle-ev">
-  <label class="ev-toggle-label" for="toggle-ev">显示证据角标</label>
-  <span class="hint">默认隐藏；需要技术核对时打开，再点击角标查看完整编号。</span>
-</div>
-<div class="note">正文优先呈现规划判断和可读指标；来源、标准、数据、假设等技术标签默认隐藏。</div>
 {rendered_body}
 </main>
 </body>
@@ -386,10 +253,30 @@ def main() -> int:
     out_path = submission_dir / args.out
     if not (submission_dir / "proposal.md").exists():
         raise SystemExit(f"{submission_dir}/proposal.md is missing")
-    html_text = render_html(submission_dir)
+    primary_path = submission_dir / "proposal.md"
+    metadata, _ = parse_front_matter(primary_path.read_text(encoding="utf-8"))
+    translation_name = metadata.get("translation_file", "")
+    translation_path = submission_dir / translation_name if translation_name else None
+    translation_output = None
+    if translation_path and translation_path.is_file() and translation_name in {"proposal.zh.md", "proposal.en.md"}:
+        language = "zh" if translation_name == "proposal.zh.md" else "en"
+        translation_output = submission_dir / f"report/proposal.{language}.html"
+
+    primary_translation_href = None
+    if translation_output:
+        primary_translation_href = os.path.relpath(translation_output, out_path.parent)
+    html_text = render_html(submission_dir, translation_href=primary_translation_href)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html_text, encoding="utf-8")
     print(out_path)
+    if translation_output and translation_path:
+        translation_output.parent.mkdir(parents=True, exist_ok=True)
+        primary_href = os.path.relpath(out_path, translation_output.parent)
+        translation_output.write_text(
+            render_html(submission_dir, translation_name, translation_href=primary_href),
+            encoding="utf-8",
+        )
+        print(translation_output)
     return 0
 
 
