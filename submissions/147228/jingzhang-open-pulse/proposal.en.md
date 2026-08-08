@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v1.8"
+iteration: "v2.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -15,7 +15,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
 **Author:** 许丙南 / GitHub `147228`  
-**Review copy:** English translation of `proposal.md`, v1.7  
+**Review copy:** English translation of `proposal.md`, v2.0
 **Status:** formal submission package; all new spatial interfaces remain provisional concepts until official polygons, professional safety review and community review are available.
 
 ## Design Basis and Source List
@@ -103,6 +103,8 @@ The package separates three industry-validation windows from the 14 scenario car
 
 The original five industry personas and the expanded eight public-user lenses serve different purposes. The eight-lens design-target count is [metric:user_persona_count]; it is not a population count. The machine-readable matrix gives each lens a spatial response, fallback, test and safeguard: [data:visual/assets/persona-and-inclusion-matrix.json#P-01], [data:visual/assets/persona-and-inclusion-matrix.json#P-02], [data:visual/assets/persona-and-inclusion-matrix.json#P-03], [data:visual/assets/persona-and-inclusion-matrix.json#P-04], [data:visual/assets/persona-and-inclusion-matrix.json#P-05], [data:visual/assets/persona-and-inclusion-matrix.json#P-06], [data:visual/assets/persona-and-inclusion-matrix.json#P-07] and [data:visual/assets/persona-and-inclusion-matrix.json#P-08]. The lenses are: older/resident users; wheelchair, cane and guide-dog users; carers and children; night-shift workers; visitors; small businesses and community service workers; developers/startups/university teams; and maintenance/operators. No facial recognition, individual trajectory retention, biometric eligibility or commercial profiling is permitted.
 
+To make a scenario card reproducible rather than merely readable, this package adds `visual/assets/open-pulse-relay-receipt.schema.json` and `visual/assets/example-s02-embodied-receipt.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox receipt: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, rights/appeal/deletion rules, maintenance responsibility and exit-asset plan in one record. `performance_results` remains `null`; the receipt format is not robot performance or field acceptance. Any real pilot must issue a new receipt and pass accessibility, safety, maintenance and public-review gates.
+
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
 
 ### Node-level concepts and public-interest audit
@@ -178,6 +180,8 @@ This iteration directly repairs review gaps found in high-scoring repository sub
 - `proposal.md`, this English translation, two offline report pages, the offline visual index and `changelog.md` keep the bilingual review surface aligned.
 
 These are reviewable design deliverables, not claims that a project has been commissioned. Their value is that a reviewer can find the requirement, inspect the evidence, test the stop gate and identify what must be confirmed before implementation.
+
+The local review-surface record is `visual/assets/qa-readiness.json`. It records semantic HTML tables, locally linked bilingual figures and A3/A0 outputs, the offline-only runtime boundary, and the known limits that provisional geometry and unknown field baselines still require professional and public review.
 
 ## v1.8 Reviewer-Visible Evidence Layer
 
