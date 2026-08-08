@@ -19,7 +19,7 @@ iteration: "v0.1"
 
 **三层范围与三处重点区的面积基准**：统筹研究范围约43.6平方公里、总体设计范围约11.4平方公里、重点区域范围约368.4公顷；三处重点区为众智园AI自主创新加速区（约192.1公顷）、北京AI原点社区（约104.3公顷）、大钟寺AI产业集聚区（约72.0公顷）[source:OFFICIAL-ANNOUNCEMENT]。本方案提交的 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area] 等要素均为**provisional_constraint**（`official_boundary=false`、`boundary_precision="provisional_rough"`），仅用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论 [source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE][source:PROCESSED-FACT-PACK]。用 EPSG:4548 复算的总体设计范围面积为 11,412,825 m²，与公告 11.4 平方公里一致；三处重点区复算合计 3,692,893 m²（3处，[metric:key_area_count]），与公告 368.4 公顷一致（误差约0.2%）[metric:site_area_sqm][metric:key_area_area_sqm]。现状底数与资料缺口清单见 [depth:existing_conditions_diagnosis] 与 `data/processed/missing_data_checklist.csv`。组织方数据缺口不阻断内容评分，官方多边形发布后须整体替换并重算。
 
-**核心事实基线（公开来源）**：京张铁路1905-1909年由詹天佑主持修建，是中国人自行设计建造的第一条铁路，青龙桥"人"字形展线为标志 [source:SRC-JINGZHANG-HISTORY]；2016年清华园站停办客运、老京张铁路五环内线路停用 [source:SRC-TSINGHUAYUAN-STOP]；2019年12月30日京张高铁开通，自北京北站出站约270米后入地经清华园隧道，原地面空间改造为京张铁路遗址公园 [source:SRC-JINGZHANG-HSR]。遗址公园全长约9公里、约70公顷、服务海淀9个街镇 [source:SRC-HERITAGE-PARK-PLAN]，一期2023年6月开放（知春路至清华东路约2.4公里），**二期2026年8月6日竣工开放，西直门至北五环全线贯通，覆盖70个社区约45万居民** [source:SRC-HERITAGE-PARK-PHASE2]。
+**核心事实基线（公开来源）**：京张铁路1905-1909年由詹天佑主持修建，是中国人自行设计建造的第一条铁路，青龙桥"人"字形展线为标志 [source:SRC-JINGZHANG-HISTORY]；2016年清华园站停办客运、老京张铁路五环内线路停用 [source:SRC-TSINGHUAYUAN-STOP]；2019年12月30日京张高铁开通，自北京北站出站约270米后入地经清华园隧道，原地面空间改造为京张铁路遗址公园 [source:SRC-JINGZHANG-HSR]。遗址公园全长约9公里、约70公顷、服务海淀9个街镇 [source:SRC-HERITAGE-PARK-PLAN]，一期2023年6月开放（知春路至清华东路约2.4公里），**二期2026年8月6日竣工开放，西直门至北五环全线贯通，总用地约53公顷，覆盖70个社区约45万居民** [source:SRC-HERITAGE-PARK-PHASE2]。二期核心成果：①全线构建"三道一绿"无缝慢行系统（独立步行道、慢跑道、自行车道全线无断点，骑行路网衔接回龙观自行车专用路），拆除全部围挡打造无边界开放式公园，打通9条城市支路；②南段社区活力段复原约2.4公里百年旧线铁轨原貌、复刻四道口历史风貌、活化利用焊轨厂工业遗迹（工业遗产创新工坊）；③北段自然休闲段衔接郊野公园与清河绿廊，建成"京张之环"主题广场；④预留青年科创市集活动场地，兼顾全年龄段使用需求 [source:SRC-HERITAGE-PARK-PHASE2]。
 
 **三区两翼官方框架**：海淀区政府与北京市科委明确，创新带以9公里京张铁路遗址公园为"创新链路"，布局三区（众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区）与两翼（西侧中关村科技服务翼、东侧小月河场景赋能翼）[source:SRC-HAIDIAN-3AREAS-2WINGS][source:SRC-BJ-KW-3AREAS-2WINGS]。本方案的空间概念建立在该官方框架之上，不另造红线。
 
@@ -140,6 +140,8 @@ iteration: "v0.1"
 
 **设计动作**（概念建议）：①以轨道微中心为核心组织TOD接驳与公共空间（[data:geometry/roads.geojson#ROAD-006]）；②AI研发用地（0802）占本区主导，配套产业服务与商业（05）、人才居住（0701）；③设置"青龙桥人字纹广场"作为公共节点（[data:geometry/public_space.geojson#PUBLIC-001]）；④西侧预留与腾讯新总部的功能协同界面（概念方向，不涉及企业承诺）[depth:three_key_area_detailed_design]。
 
+**工业遗产AI活化——"焊轨×算法"创新工坊**（概念建议）：公园二期完整保留的焊轨厂工业遗迹（钢轨、路桥等原生工业构件），可改造为"焊轨×算法"创新工坊——以"从焊接铁轨到焊接模型"为叙事主线，将重工业制造技艺类比AI模型训练/微调/对齐（model alignment），保留的旧线铁轨与焊轨设备作为空间母题，植入AI开源协作工位、模型评测实验室与工业遗产参观动线，形成"铁轨→算法"的遗产活化体验节点 [source:SRC-HERITAGE-PARK-PHASE2]。此为概念建议，具体改造方案须经文物与规划主管部门审批。
+
 **AI场景**：AI全栈加速（算力、算法、数据、模型的开源协作测试场）、轨道微中心智能接驳、AI企业服务Copilot（[scenario:enterprise-service-copilot]）。
 
 **实施风险**：加速区为在建更新项目，方案以"片区协同"视角补充公共空间与接驳，不改变园区法定实施内容；轨道站点与园区连通的精确界面待工程图纸确认。
@@ -160,13 +162,13 @@ iteration: "v0.1"
 
 **定位**：城市型人工智能创新街区，重点发展智能体、智能终端、内容消费等AI原生和AI+融合新业态 [source:SRC-HAIDIAN-3AREAS-2WINGS]。
 
-**空间结构**："古钟新声"——以大钟寺古钟博物馆（觉生寺）为文化锚点 [source:SRC-DAZHONGSI-MUSEUM]，蓝景丽家改造的"国际交流中心"为产业锚点 [source:SRC-DAZHONGSI-RENEWAL]，大钟寺地铁站一体化与路口四象限步行连通为交通锚点。
+**空间结构**："古钟新声"——以大钟寺古钟博物馆（觉生寺）为文化锚点 [source:SRC-DAZHONGSI-MUSEUM]，蓝景丽家改造的"国际交流中心"为产业锚点 [source:SRC-DAZHONGSI-RENEWAL]，大钟寺地铁站一体化与路口四象限步行连通为交通锚点。**政策锚定**：蓝景丽家项目为**全市首个获批市级建筑规模指标（6784㎡）的城市更新项目**，新增总建筑规模13569㎡、预计拉动社会投资约48.8亿元，采用"政府统筹+社会资本参与+挂牌出让"模式，建成后与方恒广场、中坤广场形成功能互补的科创交流三中心集群 [source:SRC-DAZHONGSI-LANJINGLIJIA]。
 
-**设计动作**（概念建议）：①AI原生新业态商业（05）与AI应用研发测试（0802）双主导；②设置"AI场景体验广场"（[data:geometry/public_space.geojson#PUBLIC-003]）；③优化大钟寺地铁站一体化方案与四象限步行连通（[data:geometry/roads.geojson#ROAD-008]）；④古钟博物馆周边设"AI编钟声景装置"（概念地标）[depth:three_key_area_detailed_design]。
+**设计动作**（概念建议）：①AI原生新业态商业（05）与AI应用研发测试（0802）双主导；②设置"AI场景体验广场"（[data:geometry/public_space.geojson#PUBLIC-003]）；③优化大钟寺地铁站一体化方案与四象限步行连通（[data:geometry/roads.geojson#ROAD-008]）；④古钟博物馆至蓝景丽家改造区之间设"AI编钟声景装置"（概念地标），以古钟声学结合AI生成音乐——选址位于文化锚点（古钟博物馆）与产业锚点（国际交流中心）之间的公共步行通廊，强化"古钟新声"的空间叙事连续性 [depth:three_key_area_detailed_design]。
 
 **AI场景**：智能体内容消费街区、AI+影视/内容制作测试、机器人低速配送（[scenario:robot-delivery-low-speed]）。
 
-**实施风险**：国际交流中心为公示中的更新项目，本方案以周边协同视角补充公共空间与场景，不干预法定更新内容。
+**实施风险**：国际交流中心为已获批市级指标的更新项目（2026-08），本方案以周边协同视角补充公共空间与场景，不干预法定更新内容。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -229,6 +231,8 @@ iteration: "v0.1"
 ## 交通、轨道、市政与公共服务设施
 
 **道路与慢行**：提交 8 条道路中心线（[data:geometry/roads.geojson]），京张铁路老线遗址带作为既有约束登记于 [data:geometry/constraints.geojson#CON-001]，总长 22,004 m [metric:road_length_m]：京张绿带东西两侧慢行主廊道（greenway，对应官方"南北贯通步道骑行道"要求 [source:OFFICIAL-ANNOUNCEMENT]）、三处重点区东西向次干路（secondary）、三处轨道接驳连线（transit_connection，站点位置为概念假设）。慢行断点与无障碍路径按 [scenario:ai-traffic-walkability] 评估方向深化 [depth:traffic_rail_slow_parking]。
+
+**"轨上AI实验室"——旧线铁轨AI体验廊道**（概念建议）：公园二期复原的约2.4公里百年旧线铁轨 [source:SRC-HERITAGE-PARK-PHASE2] 可在"三道一绿"慢行系统之外，打造为第四道——"AI体验道"：沿旧铁轨布设轻量级AI交互节点（历史知识问答、AR历史场景叠加、声景故事播放、AI生成诗/音乐与京张历史对话），形成"走在百年铁轨上体验未来AI"的沉浸式廊道；青年科创市集结合每周固定时段（如周六）组织"AI Demo Day"成果展示，把公园的物理空间转化为AI创新文化的日常载体。全部为概念建议，不改变公园法定用途与管理权属 [depth:traffic_rail_slow_parking]。
 
 **轨道与一体化**：众智园依托昌平线学知园站轨道微中心 [source:SRC-ZHONGZHIYUAN]；大钟寺依托地铁站一体化与四象限步行连通 [source:SRC-HAIDIAN-3AREAS-2WINGS]；京张高铁入地段（清华园隧道）不影响地面慢行贯通 [source:SRC-JINGZHANG-HSR]。
 
