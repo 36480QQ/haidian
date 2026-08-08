@@ -1,15 +1,15 @@
 ---
-title: "《京张醒来之后》——京张铁路遗址公园感知提升与智慧慢行系统规划（第二次测量）"
+title: "我，百年京张铁路，今天觉醒了感知系统——第二次测量：可感京张感知基线带"
 author_github: "Sijie-Yang"
 language: "zh"
 license: "CC-BY-4.0"
 summary: "一部关于「第二次测量」的规划纪事：一百多年前，京张铁路测量的是这座城市能通向多远；这一次，我们测量的是人走在这条线上是否好走、好停、好用。全篇以故事推进、以规划落地，形成「一脊、三区、十八断面」的空间结构，用遮阴、绿视、驻留与夜间安全四项可复算指标决定更新顺序，把人工智能与低速智能设备放进明确的空间位置与运行规则，并建立公众调研、建设后评估与年度监测的回写机制。全套成果含 13 张规划图、13 张概念效果图与 1 张文化主视觉，每章各有一图一景。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "public-safety-operations-review"]
-iteration: "v0.7.0"
+iteration: "v0.7.1"
 ---
 
-# 《京张醒来之后》：第二次测量
+# 我，百年京张铁路，今天觉醒了感知系统——第二次测量：可感京张感知基线带
 
 ![文化主视觉：以青绿山水长卷为底，铁路测量仪化作一只巨眼，注视着京张沿线的城市与人](assets/jingzhang-awakening-poster.png)
 
