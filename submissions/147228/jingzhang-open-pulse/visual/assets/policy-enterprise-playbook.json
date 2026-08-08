@@ -90,6 +90,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-011",
+      "title": "AI 服务事故披露与修复卡",
+      "policy_instrument": "ai_incident_disclosure_and_remediation",
+      "enterprise_stage": "live_pilot_accountability",
+      "problem": "A pilot can fail through bad data, model drift, operator error or unsafe integration; silent correction destroys public trust and supplier learning.",
+      "jingzhang_interface": "For every S04, S08 or S09 window, record incident time, affected service, immediate fallback, accountable reviewer, correction, user notice and re-entry evidence.",
+      "operator": "service owner + supplier incident lead + public information contact",
+      "required_evidence": ["incident log", "fallback timestamp", "correction note", "re-entry approval"],
+      "metric": "incidents_with_fallback_notice_and_reentry_evidence",
+      "stop_gate": "Unreported material incident or repeated unexplained failure suspends the supplier's next window.",
+      "source_ids": ["CASE-UK-ATRS", "CASE-AMSTERDAM-ALGORITHM-REGISTER"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
