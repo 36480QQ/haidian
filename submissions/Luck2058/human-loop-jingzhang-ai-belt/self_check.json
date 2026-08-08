@@ -9,6 +9,21 @@
     "scripts/professional_review.py",
     "scripts/self_check_submission.py"
   ],
+  "reproducible_validation": {
+    "run_at": "2026-08-08T17:50:00+08:00",
+    "environment": "WorkBuddy venv python 3.13; git branch human-loop-jingzhang-ai-belt @ 3a6da00; core.autocrlf=false",
+    "commands": [
+      "python scripts/validate_submission.py --repo-root . --pr-author Luck2058 --changed-files-list changed_all.txt",
+      "python scripts/self_check_submission.py submissions/Luck2058/human-loop-jingzhang-ai-belt --pr-author Luck2058 --repo-root .",
+      "python scripts/spatial_review.py submissions/Luck2058/human-loop-jingzhang-ai-belt --repo-root . --stage formal"
+    ],
+    "results": {
+      "validate_submission": "PASS — 29 changed files, 1 proposal file, AI package stage=formal; non-blocking warnings only (missing en counterparts, provisional site boundary).",
+      "self_check_submission": "PASS — review status formal-review-ready, can enter formal review: YES; deterministic/spatial/visual/professional evidence all PASS.",
+      "spatial_review": "PASS — stage formal; building_footprint_area_sqm=2095148.014, green_ratio=0.187782, public_space_ratio=0.082786; 3x KEY_AREA_PROVISIONAL minor (content scoring eligible)."
+    },
+    "conclusion": "All three local gates PASS with zero known blockers; manifest.validation_claim.self_checked set to true to reflect this successful preflight."
+  },
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",

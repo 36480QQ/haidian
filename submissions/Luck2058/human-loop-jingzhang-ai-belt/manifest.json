@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b7c57786866802631e28fa002e0b8926e0ecc7d522722699790eaedeffbf8b00"
+      "sha256": "c332806738598873f618be19b58f57f8e6495bb42642aef354ea9c99af96046e"
     },
     {
       "path": "compliance_matrix.json",
@@ -205,7 +205,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
