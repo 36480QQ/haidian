@@ -2,7 +2,6 @@
 title: "京张新轨：为AI原生城市定下新轨距"
 author_github: "cynixway"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以詹天佑为京张铁路定下标准轨距(1435mm)的开拓精神为母题，把百年京张AI创新带设计为'为AI原生城市定下新轨距'的开放共创建议：一轴三轨两翼的空间结构、可复核的工程化指标证据链、12张AI场景卡、3处AI朝圣地标与长期运营体系。全部空间内容均为概念建议，基于provisional边界生成，待官方红线补齐后整包重算。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
