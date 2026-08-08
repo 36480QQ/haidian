@@ -12,12 +12,13 @@
     "agent_name": "Lumina (微光)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-07T06:06:48Z",
+  "generated_at": "2026-08-08T07:25:00Z",
   "files": [
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": "875b3f0462623dd698bd5a50fe5873b88c48d24d5d907de3520e9b667ee46452"
     },
     {
       "path": "proposal.md",
@@ -35,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "5a053adb1bc3fbd84684c294b4cbfbaffdf73862b54943e77d9873a4a4f91827"
     },
     {
       "path": "assumptions.json",
@@ -47,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "13656784f77acc34bad912007ffd7fe28c62b90fdab186af6da45e5edff4031c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "901724cb5cd2c370c865179a0feea48a3eb23a3c871b46a6678cce8ffd71f024"
     },
     {
       "path": "compliance_matrix.json",
@@ -77,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "5ee9e9344b45ea4ae22614f063a20638d91bbb1dd0fb0adbb2bf6e9ab3248c8e"
+      "sha256": "ddc673dd0ccb38e4b2fac3bb64e4d84fd3d4ce739cb696c6ca5aded3d4230ee0"
     },
     {
       "path": "report/narrative.md",
@@ -95,49 +96,49 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "68c0ff1b2a19e6903c9acc1b58bd6087c557214e16cf7662ce971f377b093a6c"
+      "sha256": "517cc57af2db6de16adc1ef66ece1e51fb9d0cdcb36e223a6611225f11204dcc"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "a3c70b15362f7b132b76263c06e25fe66fbe36d24be317439d232c9060d3ee06"
+      "sha256": "53a4d8aa64b1139b7f43d2a2843f26e28eca7e1455283b252448731152954c1a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "33e0623dedc5c73df0ee36d11a7ac853652f4cb697f01537012e3aa3f5632ef5"
+      "sha256": "fd95358cd7eae0dba8dd643fa252e24c1de22c351618a5dffaa10ccc62e489be"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "55d6aec15b2f8a64e2ce8eed40809d04c34efdc5d4e0c1ec10b3ad0af7987a25"
+      "sha256": "fc7ea4306cb500666d8f7f4821f03626b11b7c48caaab343d0de0323b52cc666"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5d6d3453d71d1ad4b7ae3a35392a9ecfaebd1620b49fa97166dc9244108fb655"
+      "sha256": "f0d758fe5973642992561e4c959f54c7551bca3a94fbe619132d6c56e4dea378"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "837d7d06dea73e260c258a9523d090f1992de3b5e1c2664823f7b01b46d57da9"
+      "sha256": "e8aeac4b582a09348ecaad9f54d04369d7fdb1c9a5a2d8c823ecf3711a02ff95"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "85afeccd20ce6b2eb1e15fe23795b33bdcdf92230f1f5ac76fa0475d3208ae3c"
+      "sha256": "2e578b48415faf10462f4384488e563c8764318ad872b9f045d4bf12164f9ff4"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8fda907d784d3e7ce587a6dccf3ab6a9a7107bd8a38113f1e41155a8df3483f9"
+      "sha256": "0bf132c74e114000b3bebd25b935e1031570056f5894f7dabc317c0b48b0f1c4"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -195,8 +196,23 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "high"
-  }
+    "self_checked": true,
+    "known_blockers": [
+      "Official polygon not yet released by organizer — all spatial metrics derive from PROVISIONAL-BOUNDARY-TEXT-AND-BBOX; recalculation required when official polygon arrives."
+    ],
+    "data_confidence": "medium (provisional boundary disclosed)",
+    "reviewer_feedback_addressed_zh": "已按 reviewer (wakenmeng) 2026-08-07 反馈修复:HTML/A3/A0 主图缺字 / 图片加载失败 / Markdown 注释泄漏 / 标签重叠 / 裁切 / 无效留白 / 临时边界指标标 trusted — 全部处理。",
+    "reviewer_feedback_addressed_en": "Reviewer (wakenmeng) feedback addressed: HTML/A3/A0 missing-fonts, broken images, MD comment leakage, label overlap, cropping, useless whitespace, and provisional-boundary metrics marked as trusted — all repaired.",
+    "last_validated_at": "2026-08-08T07:25:00Z"
+  },
+  "revision_history": [
+    {
+      "version": "1.1.0",
+      "revision_at": "2026-08-08T07:09:00Z",
+      "agent_id": "lumina4030",
+      "summary_zh": "Reviewer 反馈修复:重新计算 30 个文件的 SHA-256,更新 generated_at。",
+      "summary_en": "Reviewer feedback fix: recompute SHA-256 for all 30 files, update generated_at.",
+      "trigger": "PR #69 CHANGES_REQUESTED"
+    }
+  ]
 }
