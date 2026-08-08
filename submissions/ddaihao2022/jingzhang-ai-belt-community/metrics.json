@@ -17,7 +17,9 @@
       "assumptions": [
         "Boundary is PROVISIONAL (provisional_boundaries.geojson, official_boundary=false). All area/ratio values are provisional estimates and MUST be recomputed once the official redline is supplied."
       ],
-      "provisional": true
+      "provisional": true,
+      "precision": "provisional boundary, block-level estimate; exact value pending official redline",
+      "recomputation_trigger": "replace geometry/site_boundary.geojson with official redline (official_boundary=true) -> recompute site_area_sqm and all ratios"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -29,7 +31,9 @@
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "low",
       "assumptions": [],
-      "provisional": true
+      "provisional": true,
+      "precision": "sum of provisional building footprints; footprint extents are provisional",
+      "recomputation_trigger": "supply official building footprints -> recompute building_footprint_area_sqm"
     },
     "green_ratio": {
       "status": "known",
@@ -42,7 +46,9 @@
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [],
-      "provisional": true
+      "provisional": true,
+      "precision": "derived from provisional green_space and site areas; ratio precision limited by both",
+      "recomputation_trigger": "official redline + official green_space -> recompute green_ratio"
     },
     "public_space_ratio": {
       "status": "known",
@@ -55,7 +61,9 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [],
-      "provisional": true
+      "provisional": true,
+      "precision": "derived from provisional public_space and site areas",
+      "recomputation_trigger": "official redline + official public_space -> recompute public_space_ratio"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -67,7 +75,9 @@
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package.",
+      "precision": "unknown; not computable without official FAR controls and approved floor area",
+      "recomputation_trigger": "approved FAR controls + official boundary supplied -> compute floor_area_ratio"
     },
     "key_area_count": {
       "status": "known",
@@ -79,7 +89,9 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "medium",
       "assumptions": [],
-      "provisional": true
+      "provisional": true,
+      "precision": "count of provisional key areas from official announcement; count is stable",
+      "recomputation_trigger": "official key-area designation change -> recompute key_area_count"
     }
   }
 }
