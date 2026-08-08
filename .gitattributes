@@ -1,0 +1,5 @@
+# Force LF line endings for submission files (CI runs on Linux)
+submissions/Shanshui2024/jingzhang-proof-commons/*.json text eol=lf
+submissions/Shanshui2024/jingzhang-proof-commons/*.geojson text eol=lf
+submissions/Shanshui2024/jingzhang-proof-commons/*.html text eol=lf
+submissions/Shanshui2024/jingzhang-proof-commons/*.md text eol=lf
