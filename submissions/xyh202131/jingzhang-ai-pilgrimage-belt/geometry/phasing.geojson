@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing_design",
+  "name": "implementation_research_phases",
   "features": [
     {
       "type": "Feature",
@@ -12,8 +12,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "phase": "phase_1",
-        "name_zh": "近期启动区",
-        "area_sqm_declared": 4979198.562
+        "name_zh": "近期可逆试点",
+        "area_sqm_declared": 4232697.16
       },
       "geometry": {
         "type": "Polygon",
@@ -24,12 +24,12 @@
               39.939
             ],
             [
-              116.33972777777777,
-              39.974
+              116.3398736111111,
+              39.96875
             ],
             [
-              116.35458,
-              39.974
+              116.355,
+              39.96875
             ],
             [
               116.3553,
@@ -57,8 +57,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "phase": "phase_2",
-        "name_zh": "中期发展区",
-        "area_sqm_declared": 3106999.229
+        "name_zh": "中期空间更新",
+        "area_sqm_declared": 3957616.967
       },
       "geometry": {
         "type": "Polygon",
@@ -69,24 +69,24 @@
               39.99
             ],
             [
-              116.35458,
-              39.974
+              116.355,
+              39.96875
             ],
             [
-              116.33972777777777,
-              39.974
+              116.3398736111111,
+              39.96875
             ],
             [
               116.3397,
               39.975
             ],
             [
-              116.34121612903226,
-              39.9985
+              116.34127258064517,
+              39.999375
             ],
             [
-              116.35376575342467,
-              39.9985
+              116.35381369863013,
+              39.999375
             ],
             [
               116.3533,
@@ -106,20 +106,20 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "phase": "phase_3",
-        "name_zh": "远期协同区",
-        "area_sqm_declared": 3326616.036
+        "name_zh": "远期协同评估",
+        "area_sqm_declared": 3222526.322
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35376575342467,
-              39.9985
+              116.35381369863013,
+              39.999375
             ],
             [
-              116.34121612903226,
-              39.9985
+              116.34127258064517,
+              39.999375
             ],
             [
               116.3417,
@@ -134,8 +134,8 @@
               40.0265
             ],
             [
-              116.35376575342467,
-              39.9985
+              116.35381369863013,
+              39.999375
             ]
           ]
         ]
