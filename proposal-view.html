@@ -890,7 +890,6 @@ function togglePackage(force){
   drawer.hidden=!open;
   $('#packageToggle').setAttribute('aria-expanded',String(open));
   $('#packageToggle').querySelector('.package-entry-cta').textContent=open?'收起资料展厅 ↑':'展开可视化资料库 ↓';
-  if(open)state.artifactViewer?.hydrate();
 }
 $('#packageToggle').addEventListener('click',()=>togglePackage());
 $('#packageClose').addEventListener('click',()=>togglePackage(false));

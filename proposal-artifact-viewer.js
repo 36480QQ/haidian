@@ -46,9 +46,9 @@
     const kind = fileKind(path);
     const url = config.url(path);
     if (kind === 'image') return `<img src="${escapeHTML(url)}" alt="" loading="lazy" decoding="async">`;
-    if (kind === 'geojson') return `<div class="preview-grid" data-preview-path="${escapeHTML(path)}" data-preview-kind="geojson"><span class="preview-caption">正在绘制空间图层</span></div>`;
-    if (kind === 'json' || kind === 'table') return `<div class="preview-data" data-preview-path="${escapeHTML(path)}" data-preview-kind="${kind}">${dataPattern(path)}<span class="preview-caption">正在读取结构化内容</span></div>`;
-    if (kind === 'markdown' || kind === 'text') return `<div class="preview-document" data-preview-path="${escapeHTML(path)}" data-preview-kind="${kind}"><span></span><span></span><span></span><span></span><span></span><span class="preview-caption">正在读取文档结构</span></div>`;
+    if (kind === 'geojson') return '<div class="preview-grid"><span class="preview-caption">点击后绘制空间图层</span></div>';
+    if (kind === 'json' || kind === 'table') return `<div class="preview-data">${dataPattern(path)}<span class="preview-caption">点击后读取结构化内容</span></div>`;
+    if (kind === 'markdown' || kind === 'text') return '<div class="preview-document"><span></span><span></span><span></span><span></span><span></span><span class="preview-caption">点击后渲染文档</span></div>';
     if (kind === 'pdf') return '<div class="preview-pdf"></div>';
     if (kind === 'html') return '<div class="preview-web"></div>';
     return `<div class="preview-unknown">${escapeHTML(config.type(path))}</div>`;
@@ -68,7 +68,6 @@
     root.querySelectorAll('[data-artifact-path]').forEach(button => {
       button.addEventListener('click', () => open(button.dataset.artifactPath));
     });
-    hydratePreviews();
   }
 
   async function readText(path) {
@@ -390,7 +389,7 @@
     config = options;
     renderCards();
     bindViewer();
-    return {open, close, hydrate: hydratePreviews};
+    return {open, close};
   }
 
   window.ProposalArtifactViewer = {mount, open, close, hydrate: hydratePreviews, fileKind};

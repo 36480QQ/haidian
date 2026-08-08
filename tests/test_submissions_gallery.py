@@ -275,6 +275,8 @@ class TestSubmissionsGallery(unittest.TestCase):
             'sandbox="allow-scripts allow-forms allow-modals allow-popups"',
             "hydratePreviews",
             "window.ProposalArtifactViewer",
+            "点击后绘制空间图层",
+            "点击后读取结构化内容",
         ]:
             self.assertIn(required, artifact_viewer)
         for required in [
