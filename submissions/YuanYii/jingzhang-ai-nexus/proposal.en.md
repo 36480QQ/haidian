@@ -30,7 +30,7 @@ Reference trail includes: [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK
 | Planning Tier | Core Issue | Design Solution | Data Linkage |
 | --- | --- | --- | --- |
 | Coordinated Research Area (43.6 km²) | Global AI ecosystem & urban form | Full-chain innovation axis: Academia - Open Source - Enterprise - Public | compliance_matrix.json |
-| Overall Design Area (11.4 km²) | Land use, renewal & mobility | 32.5% green ratio & seamless non-motorized trail network | [data:geometry/land_use.geojson#LU-001] |
+| Overall Design Area (11.4 km²) | Land use, renewal & mobility | 31.1% green ratio & seamless non-motorized trail network | [data:geometry/land_use.geojson#LU-001] |
 | Key Detailed Areas (368.4 ha) | Detailed urban design depth | Precision spatial actions for 3 key innovation clusters | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 ## Key Detailed Design Areas
@@ -62,11 +62,12 @@ Includes 5 user personas (Open-Source Developer, Startup Team, Enterprise Visito
 
 ![Metrics Verification Matrix](assets/figures/metrics-evidence.en.png)
 
-- **Total Design Area [metric:site_area_sqm]**: 11.4 km²
+- **Total Design Area [metric:site_area_sqm]**: 11,412,825 m² (11.4 km²)
 - **Key Areas Count [metric:key_area_count]**: 3 zones (368.4 ha)
-- **Building Footprint [metric:building_footprint_area_sqm]**: 3.25 km²
-- **Green Space Ratio [metric:green_ratio]**: 32.5%
-- **Public Space Ratio [metric:public_space_ratio]**: 28.4%
+- **Building Footprint [metric:building_footprint_area_sqm]**: 1,803,086 m² (1.80 km²)
+- **Green Space Ratio [metric:green_ratio]**: 31.1% (3,546,478 m² / 11,412,825 m²)
+- **Public Space Ratio [metric:public_space_ratio]**: 25.3% (2,887,678 m² / 11,412,825 m²)
+- **Floor Area Ratio [metric:floor_area_ratio]**: Pending official control plan release
 
 ## Compliance & Disclaimer
 

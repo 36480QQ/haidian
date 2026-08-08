@@ -39,7 +39,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 | 层级 | 设计核心问题 | 方案解答 | 数据与数据落点 |
 | --- | --- | --- | --- |
 | 统筹研究范围 (43.6 km²) | 全球 AI 创新生态与未来城市形态如何统筹 | 建立“高校策源 - 开源协作 - 企业转化 - 公共体验 - 国际传播”的全链条生态轴 | compliance_matrix.json、standard_matrix.json |
-| 总体设计范围 (11.4 km²) | 产业更新、用地结构与蓝绿慢行如何落图 | 优化四类功能用地，打造 32.5% 绿地率与连续无障碍慢行网络 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
+| 总体设计范围 (11.4 km²) | 产业更新、用地结构与蓝绿慢行如何落图 | 优化四类功能用地，打造 31.1% 绿地率与连续无障碍慢行网络 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
 | 重点区域范围 (368.4 ha) | 三处重点片区如何达到控规与实施深度 | 分别赋予花园型加速区、近校型原点社区、城市型集聚区定位与精细化空间动作 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] |
 
 ## 统筹研究范围产业与未来城市研究
@@ -59,12 +59,12 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 总体设计范围（11.4 km²）达到控制性详细规划的城市设计深度，并符合 [depth:land_use_layout] 与 [depth:development_intensity_controls] 规定的要求。方案在 `geometry/land_use.geojson` 中规划了四大类功能分区：
 
-- **LU-001：AI研发创新与全栈自主创新用地（279.3 ha）**：聚焦模型研发、算法攻关与软硬件协同。
-- **LU-002：京张绿意无界公园与开敞空间（370.5 ha）**：南北贯通的绿化带与水系公园，绿地率达到 32.5%。
-- **LU-003：AI产业服务与商业总部用地（323.8 ha）**：集聚产业总部、国际路演中心与金融科技服务。
-- **LU-004：AI原点国际人才社区与高品质生活配套用地（166.4 ha）**：提供青年科学家公寓、近校孵化器与生活样板街。
+- **LU-001：AI研发创新与全栈自主创新用地（311.9 ha）**：聚焦模型研发、算法攻关与软硬件协同，位于走廊北段众智园片区。
+- **LU-002：京张绿意无界公园与开敞空间（270.8 ha）**：南北贯通的绿化带与水系公园，由线性主脊公园、口袋公园和滨水绿地组成，绿地率达到 31.1%。
+- **LU-003：AI产业服务与商业总部用地（309.4 ha）**：集聚产业总部、国际路演中心与金融科技服务，位于走廊南段大钟寺片区。
+- **LU-004：AI原点国际人才社区与高品质生活配套用地（249.2 ha）**：提供青年科学家公寓、近校孵化器与生活样板街，位于走廊中段原点社区。
 
-控规深度内容由 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 约束：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达交通组织，[metric:building_footprint_area_sqm] 用于复核 3.25 km² 建筑基底总面积。
+控规深度内容由 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 约束：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001] 表达交通组织，[metric:building_footprint_area_sqm] 用于复核 1.80 km² 建筑基底总面积。
 
 在建筑形态与强度控制方面，建立“沿遗址公园梯度退台”的风貌控规，公园两侧第一界面控制在 24 米以内，后排核心区控制在 60-80 米，重点地标建筑控制在 100-120 米，确保公园天际线的通透与蓝绿空间的开敞度。
 
@@ -136,7 +136,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 - **改造与提质（Renovate）**：占比 35%，对沿线老旧厂房、低效楼宇进行结构加固、外立面现代化改造与智能化微循环提升。
 - **拆除与更新（Demolish & Rebuild）**：占比 20%，拆除违章建筑与严重安全隐患的临时构筑物，释放土地用于京张公园绿带与 AI 研发总部建设。
 
-建筑规模指标：总体设计范围内规划建筑基底面积总计 3.25 km²（[metric:building_footprint_area_sqm]），地上总建筑面积约 1680 万平方米，平均容积率控制在 1.47，实现高品质、低密度的花园式创新街区。
+建筑规模指标：总体设计范围内规划建筑基底面积总计 1.80 km²（[metric:building_footprint_area_sqm]），建筑密度约 15.8%。由于官方控规容积率与总建筑面积指标尚未发布（[metric:floor_area_ratio] 状态为 unknown），本方案不预设容积率与地上总建筑面积具体数值，待官方红线与控规指标明确后据实测算。当前建筑基底以花园式低密度创新街区为导向进行布局。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -160,7 +160,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 蓝绿空间方案符合 [depth:blue_green_public_space] 的设计要求，以京张遗址公园为南北生态主轴，结合清河与小月河水系，构建“一轴、两河、多廊、百园”的公园城市格局。
 
-- **绿地率与公共空间**：总体设计范围内公园绿地面积达到 3.705 km²，绿地率达到 32.5%（[metric:green_ratio]），公共开敞空间比例达到 28.4%（[metric:public_space_ratio]）。
+- **绿地率与公共空间**：总体设计范围内公园绿地面积达到 3.55 km²，绿地率达到 31.1%（[metric:green_ratio]），公共开敞空间比例达到 25.3%（[metric:public_space_ratio]）。
 - **城市风貌引导**：融合“百年京张工业红砖”、“中关村科技灰铝板”与“未来 AI 透明玻璃”三种材质语言，塑造历史底蕴与未来感并重的建筑界面。通过连续无界的公园绿道连接周边 12 处重点社区与高校，打造舒适宜人的微气候环境与丰富的植物四季景观。
 
 ## 更新项目清单、实施政策与分期计划
@@ -182,11 +182,12 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 方案建立完整定量指标复算体系，所有已知指标均与 GeoJSON 特征精确匹配：
 
-- **总体设计范围面积 [metric:site_area_sqm]**：11,400,000 m² (11.4 km²)
+- **总体设计范围面积 [metric:site_area_sqm]**：11,412,825 m² (11.4 km²)
 - **重点区域数量 [metric:key_area_count]**：3 处片区，总面积 3,684,000 m² (368.4 ha)
-- **建筑基底总面积 [metric:building_footprint_area_sqm]**：3,250,000 m² (3.25 km²)
-- **绿地率 [metric:green_ratio]**：32.5%
-- **公共空间比例 [metric:public_space_ratio]**：28.4%
+- **建筑基底总面积 [metric:building_footprint_area_sqm]**：1,803,086 m² (1.80 km²)
+- **绿地率 [metric:green_ratio]**：31.1%（3,546,478 m² / 11,412,825 m²）
+- **公共空间比例 [metric:public_space_ratio]**：25.3%（2,887,678 m² / 11,412,825 m²）
+- **容积率 [metric:floor_area_ratio]**：待官方控规指标发布后测算
 - **合规矩阵响应度**：100% 覆盖公告任务 1.3、1.4、1.5 及面向智能体任务 agent.1 - agent.6。
 
 ## 风险、版权与合规说明
