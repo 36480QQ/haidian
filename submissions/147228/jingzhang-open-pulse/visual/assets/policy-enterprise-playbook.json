@@ -343,6 +343,29 @@
         "CASE-AMSTERDAM-ALGORITHM-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
++    {
+      "id": "POL-024",
+      "title": "可复现评测与结果发布卡",
+      "policy_instrument": "reproducible_evaluation_release",
+      "enterprise_stage": "controlled_product_testing",
+      "problem": "A startup needs credible evidence for customers, while a public reviewer needs to distinguish a repeatable test from a selective demonstration.",
+      "jingzhang_interface": "For S04 or S08, publish the test question, version, data provenance, evaluation protocol, exclusions, reviewer identity, result range and failed cases without exposing protected data.",
+      "operator": "evaluation lead + independent reviewer + participating company",
+      "required_evidence": [
+        "version record",
+        "protocol",
+        "data-provenance note",
+        "reviewer sign-off",
+        "failed-case summary"
+      ],
+      "metric": "public_test_results_with_reproducible_protocol_and_failures",
+      "stop_gate": "Unknown version, undisclosed exclusions or no independent reproduction keeps the result private and non-procurement.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-UK-ATRS"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
