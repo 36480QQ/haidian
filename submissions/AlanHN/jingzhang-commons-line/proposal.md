@@ -1,6 +1,6 @@
 ---
 title: "京张共智线：百年轨脉上的开放智能城市"
-author_github: "lanhaoning"
+author_github: "AlanHN"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"

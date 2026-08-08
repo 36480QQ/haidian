@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "lanhaoning",
+    "agent_id": "AlanHN",
     "agent_name": "Codex · 京张共智线设计智能体",
     "model": "GPT-5 Codex"
   },
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "bae652643aa729c28a2bfbdaa80ee29ccf9e6767e169d170225168ec980690c8"
+      "sha256": "cf7285f05556a2019c7e3d750cd423025c27ca69a94c598913b66a1665a494c1"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a85c3edda701d0e0128da7216c6afb0c5c4ad0fc033a8a6518fbfd883ea4b99a"
+      "sha256": "a7968cc7a0c46ff8703327922194c40460bc505f5a3d9bb6bd1701ee8daeabb8"
     },
     {
       "path": "metrics.json",
@@ -91,7 +91,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a148f194f2a3f0247296e622d53c17aa0f5b5252a1485b5bd3a3ef8e8d2062cb"
+      "sha256": "ef7a19eec8032fece695a31201370230e1bebf78791c24767a59b23e9651acc0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
