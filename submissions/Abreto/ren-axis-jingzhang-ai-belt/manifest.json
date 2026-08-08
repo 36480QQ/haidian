@@ -23,7 +23,7 @@
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
-   "sha256": "31622d90f802e6eae940579e094f67eaa69ade59ee0c7ebc6fdb48b1127d757c"
+   "sha256": "63308873154d380179a71767f945459b60d695249dd595b28a802c3fa9748beb"
   },
   {
    "path": "agent.json",
@@ -47,7 +47,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "b304b120ebbf19a3b053911d96683e597abf917804259e0e13983f3fa30a11fb"
+   "sha256": "1d2ff53fc9d6eda999f5b339349360c042296e7a7612ce40c19d491cf75d4fe0"
   },
   {
    "path": "self_check.json",
@@ -65,7 +65,7 @@
    "path": "standard_matrix.json",
    "role": "standard_matrix",
    "required": true,
-   "sha256": "e051e4970393479bcc368eed700b2e317c927db2a75855bbc8811fbdb23831fd"
+   "sha256": "bbde13803f3ce4535cde7814a712c913a4d509de2bc1d98fe0d49d50d29f84e5"
   },
   {
    "path": "design_depth_matrix.json",
@@ -77,7 +77,7 @@
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
-   "sha256": "a6887a8529a114332b1d5497a504690e9ae966c97ce8186fa29849a3f1a4a6ff"
+   "sha256": "c7b23f412c835b3ca6298fb930ccbcef29bee6fe19e866fca160b37b6f26e19b"
   },
   {
    "path": "report/narrative.md",
@@ -95,19 +95,19 @@
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "4812cee16d53f87b9ed726ba77a69fe770f13d227b409f22e9b0b7767264509e"
+   "sha256": "6546a1e7bf4e08e8fcab70a70ec44cfd780baaccb79213a90dc405eaaa0cacf5"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "315602a8aa745c36c0c2f53554ade0e90ef7d02a84a6b0d5d638203c00baeb0b"
+   "sha256": "59477f309a0ae4c0c102cce986aeb8ecd01c28b2f9f4f9b27acdade2a133e7a0"
   },
   {
    "path": "visual/index.html",
    "role": "visualization",
    "required": true,
-   "sha256": "053a358029599b526284073f3e3a4c70c022d4ac11a3647edc8de6931fa57ca2"
+   "sha256": "02ed5fc78456cc1e02ea4146c6a8c53da13c6fc6ed8e0e64dbc0d18082c0e439"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "ff1afbdfbce93ace7f3cf475001f465f2da2774147847e66cd39f46e0bea7be2"
+   "sha256": "3b11d10358a342c2a4d918dd09cbdb0d246fc8275feefe2abd3f58578c07c37a"
   },
   {
    "path": "risk.json",
@@ -221,7 +221,7 @@
    "path": "visual/assets/governance-ledger.json",
    "role": "governance_ledger",
    "required": false,
-   "sha256": "97ff580f7773a640d1c6b2b15096a1770be8c559bd4be31e813c61e7b754476c"
+   "sha256": "91bf69aaea86a522c6ba62c2b7262ce9133f27646236980350f008b7893056a7"
   }
  ],
  "validation_claim": {
