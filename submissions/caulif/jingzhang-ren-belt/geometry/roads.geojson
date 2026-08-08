@@ -12,7 +12,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "greenway",
-        "name_zh": "京张遗址公园慢行主廊"
+        "name_zh": "京张遗址公园慢行主廊",
+        "coordinate_note": "WGS84 lon/lat schematic centerline; corrected from invalid mixed-coordinate draft on 2026-08-08."
       },
       "geometry": {
         "type": "LineString",
@@ -38,18 +39,19 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "secondary",
-        "name_zh": "众智园东西连通廊"
+        "name_zh": "众智园东西连通廊",
+        "coordinate_note": "WGS84 lon/lat schematic centerline; corrected from invalid mixed-coordinate draft on 2026-08-08."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -61.937089781860244,
-            61.6647288420443
+            116.3403,
+            40.0176
           ],
           [
-            -61.96126057179962,
-            61.664914338093304
+            116.3542,
+            40.0176
           ]
         ]
       }
@@ -64,18 +66,19 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "secondary",
-        "name_zh": "原点社区东西缝合道"
+        "name_zh": "原点社区东西缝合道",
+        "coordinate_note": "WGS84 lon/lat schematic centerline; corrected from invalid mixed-coordinate draft on 2026-08-08."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -61.9374675992981,
-            61.64107788978018
+            116.341,
+            39.9887
           ],
           [
-            -61.961629802889625,
-            61.64126335501078
+            116.353,
+            39.9887
           ]
         ]
       }
@@ -90,18 +93,19 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "secondary",
-        "name_zh": "大钟寺四象限连通道"
+        "name_zh": "大钟寺四象限连通道",
+        "coordinate_note": "WGS84 lon/lat schematic centerline; corrected from invalid mixed-coordinate draft on 2026-08-08."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -61.93802905743276,
-            61.60590831017672
+            116.3414,
+            39.947
           ],
           [
-            -61.9621785012141,
-            61.60609372929627
+            116.3544,
+            39.947
           ]
         ]
       }

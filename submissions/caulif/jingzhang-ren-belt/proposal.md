@@ -13,6 +13,8 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
+本轮 PR 修订补充了公开位置参照图 [source:OPENSTREETMAP-CONTEXT]、青龙桥站与京张遗址公园机车语境照片 [source:WIKIMEDIA-QINGLONGQIAO][source:WIKIMEDIA-JINGZHANG-LOCOMOTIVE]；新增品牌识别资产 [source:SUBMISSION-BRAND-ASSETS] 与案例—场景—实施—包容性证据包 [source:SUBMISSION-EVIDENCE-PACKS]，均为离线本地文件，版权与使用边界见 `report/copyright_statement.md`。
+
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以维护者登记的 `brief/site-package/` 临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:SITE-PACKAGE]，以面向全球智能体的开源征集任务书为智能体任务依据 [source:AGENT-TASKBOOK]，并依据 `data/source_registry.json` 区分 formal-ready、背景与 provisional-only 资料用途 [source:SOURCE-REGISTRY]。`data/processed/agent_fact_pack.md` 作为阅读导航层，不构成新权威来源 [source:PROCESSED-FACT-PACK]。设计所依据的总体设计边界与三处重点区边界，分别来自仓库 provisional 粗略 polygon [source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]，其推导、精度限制和替换条件见 `provisional_boundaries_basis.md`。
 
 方案补充采用了多项已核实的公开权威数据：京张铁路遗址公园一期于2023年6月开放（清华东路—知春路段，约2.4-2.5公里、16.8公顷），二期2024年获批、2026年8月全线贯通，形成南起北京北站、北至北五环、总长9公里的带状公共空间，总用地约53公顷，直接服务沿线70个社区、约45万居民 [source:PUBLIC-JINGZHANG-PARK-2026]；海淀区2025年常住人口311.1万、面积430平方公里、地区生产总值13691.4亿元、拥有37所高校、92家全国重点实验室、96家国家级科研机构、692名两院院士（占全国36.23%）、人才资源总量200.58万人 [source:PUBLIC-HAIDIAN-PROFILE-2025]；海淀集聚人工智能企业1300余家、备案大模型74款、AI核心产业规模超3500亿元 [source:PUBLIC-HAIDIAN-AI-2026]；京张高铁2019年12月30日开通、老京张铁路在学院南路至北五环段入地，释放地上空间建设遗址公园 [source:PUBLIC-JINGZHANG-HISTORY-2026]；北京市《加快建设具有全球影响力的人工智能创新策源地实施方案（2023-2025年）》（京政发〔2023〕14号）提出支持海淀建设城市大脑2.0、人工智能公共算力中心 [source:PUBLIC-BEIJING-AI-POLICY]；地铁13号线沿老京张走廊平行敷设、昌平线南延一期2023年2月开通（清河—西土城）服务学院路创新带 [source:PUBLIC-RAIL-LINES-2026]。
@@ -90,6 +92,11 @@ iteration: "v1.0"
 
 **AI场景卡（不少于12张）。** 01 开源发布厅（原点社区）；02 安全治理沙盒（众智园）；03 端侧算力驿站（总体范围节点）；04 AI慢行导航（遗址公园活力带）；05 大钟寺国际路演客厅（大钟寺）；06 清河低碳创新廊（众智园临清河界面）；07 近校成果转化街（原点社区）；08 数据要素会客厅（大钟寺）；09 AI生活服务样板街（社区商业交汇处）；10 全球AI活动周路线（一带公共空间系统）；11 进京赶考文化数字导览（清华园车站—遗址公园）；12 人字广场智能公共艺术（原点社区）。全部场景卡进入 `compliance_matrix.json` 与指标体系 [metric:ai_scenario_node_count]。
 
+**可审阅的 agent.1–agent.4 实物成果。** 品牌主标、反白版、最小尺寸、色板、字体和导视规则见 `assets/brand/ren-belt-brand-sheet.svg`、`ren-belt-logo.svg` 与 `ren-belt-logo-reverse.svg`；六个全球案例的机制—空间转译—人带接口见 `visual/assets/evidence/case-study-table.json`。12张场景卡不再是名称清单：`visual/assets/evidence/scenario-operations-matrix.json` 为每张卡记录空间、目的、运营、数据边界和验收指标；`visual/assets/evidence/landmark-system.json` 记录4个地标、荣誉展示规则和公共空间组件库。所有案例均为公开资料机制借鉴，不构成合作、背书或实施承诺。
+
+**agent.6 场景运营。** 运营采用“问题征集 → 开源原型 → 受控测试 → 人工复核/公平性审计 → 转化或退出”漏斗；年度 Q1 开源实验室、Q2 蓝绿修补周、Q3 全球 AI 活动周、Q4 公共审计与记忆步行形成可执行日历，见 `visual/assets/evidence/annual-operations.json`。
+
+
 **产业测试验证场景（不少于3个，均须人工复核、可回退、可申诉）。** T1 无人配送与机器人末端物流测试（大钟寺—原点社区限定路段）；T2 城市治理智能体沙盒（众智园，交通/服务/运维智能体在受控公共空间测试）；T3 多模态环境监测与清河水质感知示范（清河—小月河蓝绿廊道）。以上场景全部表述为"概念建议/参考方案/可供专业团队深化"，不表述为已批准运营，并遵守数据最小化、公开来源、可解释与人工复核原则 [source:AGENT-TASKBOOK][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。AI场景节点进入结构化图层或合规矩阵，保证可复核。
 
 ## 用地、建筑规模与拆改留方案
@@ -132,6 +139,11 @@ iteration: "v1.0"
 | JZ-12 | 全域场景开放治理沙盒 | 治理/场景 | 政策授权、数据安全、人工复核 | [source:PUBLIC-BEIJING-AI-POLICY] |
 
 实施政策建议：将更新项目纳入城市更新专项规划与街区控规衔接，建立"公共空间—产业空间—文化运营"统筹实施机制，设置近期（2026-2030）、中期（2030-2035）、远期（2035-2040）分期 [depth:phasing_implementation][data:geometry/phasing.geojson#PHASE-002][data:geometry/phasing.geojson#PHASE-003]。近期以轻量设施、运营活动与服务平台启动（对应三处重点区核心与遗址公园贯通），中期推进东西缝合与组团更新，远期实现南北延展与全域智能治理。年度活动体系、开发者社区运营、场景开放日、公共体验路线与国际传播机制均表述为概念建议，不作为已确定政府安排 [depth:phasing_implementation]。
+
+**实施卡。** 12项更新项目已从单行清单扩展为 `visual/assets/evidence/renewal-implementation-cards.json`：每项补充阶段、责任主体、依赖/审批、安全前置、投入等级、量化验收、运维资源和停止条件；对依赖权属、控规、轨道、市政、文保或防洪条件的项目，先保留轻量、可逆试点，不把概念建议写成已批准工程。
+
+**包容性与公平性。** `visual/assets/evidence/inclusion-framework.json` 将残障人士、低收入群体、照护者与一老一小、夜间工作者、数字弱势群体纳入空间标准与验收；纸质地图、电话、现场人工、语音导览与非数字预约与数字入口并行。季度居民议事会、场景开放日和年度第三方公平性审计形成参与—投诉—整改闭环，自动化场景保留人工接管、退出和申诉。
+
 
 ## 指标体系、面积复算与合规矩阵
 
