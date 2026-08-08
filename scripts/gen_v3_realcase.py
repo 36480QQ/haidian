@@ -161,11 +161,10 @@ def gen_culture(pid, x0, x1, y0, y1, tag):
     bld_box(pid, bx, by, bx+130, by+60, 12, 3, "mixed_use", "文化商业配套", "#FF8FA3",
             f"文化商业底商·参考北京文化园区配套商业(≤3层)")
 
-# ---- 3.3 居住地块：纯住宅（板式南低北高 5 排 + 点式四角贴边界），无教育/底商 ----
-# 排布逻辑：① 住宅区仅住宅（删除配建学校/底商，用户要求"住宅区里不要有其他的楼"）
-# ② 6排→5排（用户要求更疏，排距 350m ≈ 7.8×最高楼高）
-# ③ 四角贴边界：西南/东南点式 30m + 西北/东北点式 45m（与北排同高不遮挡），板楼居中
-# ④ 南低北高：南排 30m → 北排 45m 每排+3m，北京阳光自南射入任何一排不被遮挡
+# ---- 3.3 居住地块：纯住宅统一规格板楼贴边排布（无点式/教育/底商） ----
+# 排布逻辑：① 住宅区仅住宅，全部统一 60×14m 板楼（无 45/55/65 混搭、无点式塔楼）
+# ② 5 排南低北高（30→45m 每排+3m，北京阳光自南射入任何一排不被遮挡）
+# ③ 每排按该位置地块实际宽度自适应栋数，左右贴边界排满（四角自然有楼贴边）
 def gen_residential(pid, x0, x1, y0, y1, tag):
     # 用实际可用区域（设计矩形∩场地）——西翼居住地块边界不规则
     clip = box(x0+15, y0+15, x1-15, y1-15).intersection(SITE_POLY)
@@ -175,37 +174,35 @@ def gen_residential(pid, x0, x1, y0, y1, tag):
     w = cx1 - cx0; hgt_span = cy1 - cy0
     x0, y0 = cx0, cy0
     bd = 14  # 板楼进深（北京板楼常规 12-16m）
-    # 5 排南低北高均匀分布：高度从南到北 30→45m 每排+3m（利于日照）
-    # 排距 0.22×hgt_span ≈ 350m ≈ 7.8×最高楼高，远超北京板楼日照间距系数 1.5-1.7
-    rows = [
-        # (y 位置比例, 起点偏移, 楼栋长度序列, 高度/层数, 颜色, 案例名)  ← y 增=向北，高度递增=南低北高
-        (0.06,  60, [45,55,45,65], 30, 10, "#C9952F", "万柳书院(10层/30m)"),
-        (0.28,  85, [55,45,65,45], 33, 11, "#D9A23F", "使馆壹号院(11层/33m)"),
-        (0.50,  48, [45,65,45,55], 36, 12, "#E8B84C", "融创北京壹号院(12层/36m)"),
-        (0.72,  80, [65,45,55,45], 39, 13, "#F2CD66", "融创北京壹号院(13层/39m)"),
-        (0.94,  35, [55,45,65,45], 45, 15, "#FCE796", "金茂府(15层/45m)"),
-    ]
-    for ri, (ry, off, lens, h, fl, color, case) in enumerate(rows):
+    BL = 60  # 统一板楼长度 60m（同一种规格）
+    gap = 22  # 山墙距 22m（≥13m消防间距，22 使东翼窄段也能排 5 栋贴边）
+    # 5 排南低北高：高度从南到北 30→45m 每排+3m（利于日照）
+    # 排距 0.24×hgt_span ≈ 380m ≈ 8.4×最高楼高，远超北京板楼日照间距系数 1.5-1.7
+    rows_y = [0.02, 0.26, 0.50, 0.74, 0.98]  # 贴南北边界
+    heights = [30, 33, 36, 39, 45]
+    floors  = [10, 11, 12, 13, 15]
+    colors  = ["#C9952F", "#D9A23F", "#E8B84C", "#F2CD66", "#FCE796"]
+    cases   = ["万柳书院(10层/30m)", "使馆壹号院(11层/33m)", "融创北京壹号院(12层/36m)",
+               "融创北京壹号院(13层/39m)", "金茂府(15层/45m)"]
+    from shapely.geometry import LineString as _LS
+    for ry, h, fl, color, case in zip(rows_y, heights, floors, colors, cases):
         row_y = y0 + hgt_span * ry
-        x_cursor = x0 + off
-        for li, L in enumerate(lens):
-            bld_box(pid, x_cursor, row_y, x_cursor+L, row_y+bd, h, fl, "residential", "板式住宅", color,
-                    f"板式住宅·参考北京{case}/长{L}m×14m")
-            x_cursor += L + (26 if li % 2 == 0 else 24)  # 山墙距24-26m（高端社区大间距，≥13m消防间距）
-    # 点式塔楼四角贴边界（4 栋）：西南/东南 30m（南角矮），西北/东北 45m（与北排同高避免遮挡）
-    # 西北角避开西翼斜边界（x<-550 处场地内缩），用 x 比例 0.22 贴斜边界
-    towers = [
-        # (x比例, y比例, 见方, 高度, 层数, 案例名)
-        (0.03, 0.03, 30, 30, 10, "万柳书院式点式楼(10层/30m)"),   # 西南角（贴西/南边界）
-        (0.88, 0.03, 30, 30, 10, "万柳书院式点式楼(10层/30m)"),   # 东南角（贴东/南边界）
-        (0.22, 0.96, 30, 45, 15, "使馆壹号院式点式楼(15层/45m)"),  # 西北角（贴斜边界）
-        (0.88, 0.96, 30, 45, 15, "使馆壹号院式点式楼(15层/45m)"),  # 东北角（贴东/北边界）
-    ]
-    for tx, ty, sz, h, fl, case in towers:
-        bx = x0 + w*tx; by = y0 + hgt_span*ty
-        bld_box(pid, bx, by, bx+sz, by+sz, h, fl, "residential", "点式住宅", "#D9A23F",
-                f"点式住宅·参考北京{case}")
-    # 住宅区无教育/底商（纯住宅，用户要求）
+        # 该排位置的实际可用宽度（水平线与 clip 求交）
+        inter = _LS([(x0-10, row_y), (x1+10, row_y)]).intersection(clip)
+        if inter.is_empty:
+            continue
+        avail = inter.length
+        n = max(4, int((avail + gap) // (BL + gap)))  # 自适应栋数，贴满左右边界
+        total = n * BL + (n - 1) * gap
+        off = max(0.0, (avail - total) / 2)
+        xs = list(inter.coords)
+        left = min(p[0] for p in xs)
+        x_cursor = left + off
+        for i in range(n):
+            bld_box(pid, x_cursor, row_y, x_cursor+BL, row_y+bd, h, fl, "residential", "板式住宅", color,
+                    f"板式住宅·参考北京{case}/统一长60m×14m")
+            x_cursor += BL + gap
+    # 住宅区无点式/教育/底商（纯住宅，统一规格板楼，用户要求）
 
 # ---- 3.4 商业地块：商业综合体（案例：朝阳大悦城/西单大悦城）+ 底商 ----
 def gen_commercial(pid, x0, x1, y0, y1, tag, is_dazhongsi=False):
