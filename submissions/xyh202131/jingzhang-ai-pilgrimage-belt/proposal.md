@@ -2,6 +2,7 @@
 title: "AI 朝圣·铁轨新生带——京张可验证场景线"
 author_github: "xyh202131"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从承载AI应用的线性走廊升级为一条可共创、可验证、可暂停、可复现、可向社会交付的AI公共创新生产线。"
 tracks:
