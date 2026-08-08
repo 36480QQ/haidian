@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.1"
+iteration: "v1.6.2"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -15,6 +15,10 @@ iteration: "v1.6.1"
 > Intelligence moves. Responsibility stays visible.
 
 The proposal translates a durable railway practice—shift handover—into a civic protocol for the AI era. Research hands a capability to validation; validation hands it to an open community; the community hands a service to residents. When the system is uncertain, offline, outside its boundary or challenged by a person, control must move back to an accountable human. “One line, three yards, two support wings and twelve reversible scenarios” is therefore both a spatial structure and a public-duty structure.
+
+![Concept rendering of the handover interface: duty staff handing over in person, a physical stop control beside the footway, a delivery robot confined to its own lane, and a continuous accessible path alongside a staffed counter](assets/figures/handover-scene.en.jpg)
+
+The image above is an **AI-generated concept rendering** [source:IMAGEGEN-CONCEPT-SCENE]. It is not a photograph, a survey or an approved scheme; the people in it are fictional and it identifies no real place, organisation or brand. It illustrates one thing only — what a public interface roughly looks like when human takeover, a physical stop control, a robot-only lane and a continuous accessible path all have to coexist. The model, the full prompt, the intended use and the limits are recorded in report/copyright_statement.md and sources.json. Every recomputable spatial conclusion still rests on the nine geometry layers and metrics.json, never on a drawing.
 
 ![Spatial prototypes for reversible civic interfaces, human takeover and equivalent no-AI passage; concept illustration, not an existing photograph or approved scheme](assets/figures/spatial-prototype.en.png)
 
