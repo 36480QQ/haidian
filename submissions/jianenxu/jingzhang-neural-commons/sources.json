@@ -96,6 +96,33 @@
       "source_type": "official_public",
       "usage": "Background precedent for Haidian dual-intelligence traffic scenario applications using spatial intelligence, video analysis, and AI models.",
       "limitations": "Referenced only as local context for a low-risk, human-reviewed pilot. It does not provide a route, camera deployment, enforcement authority, data access, or project approval."
+    },
+    {
+      "id": "NIST-AI-RMF-2023",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "publisher": "National Institute of Standards and Technology",
+      "published_date": "2023-01-26",
+      "source_type": "official_public",
+      "usage": "Background reference for the Govern, Map, Measure, and Manage lifecycle used to structure an internal evaluation record.",
+      "limitations": "Voluntary U.S. framework; referenced only as an evaluation-method vocabulary, not a certification or legal requirement for this project."
+    },
+    {
+      "id": "CAC-GENAI-MEASURES-2023",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "publisher": "国家互联网信息办公室等",
+      "published_date": "2023-07-13",
+      "source_type": "official_public",
+      "usage": "Background reference for public-service data minimisation, complaints handling, appropriate security evaluation, and service-provider duties.",
+      "limitations": "The proposal does not determine applicability, filing, security-assessment, or licensing obligations; those require a qualified legal and regulatory review for the actual service."
+    },
+    {
+      "id": "EU-AI-SANDBOX-ARTICLE-57",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-57",
+      "publisher": "European Commission AI Act Service Desk",
+      "accessed_date": "2026-08-08",
+      "source_type": "official_public",
+      "usage": "Background precedent for a time-limited, controlled test plan with guidance, supervision, safeguards, and exit reporting.",
+      "limitations": "EU law does not govern this Beijing proposal; only the controlled-test and exit-report pattern is referenced."
     }
   ]
 }
