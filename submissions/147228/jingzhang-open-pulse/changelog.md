@@ -53,3 +53,4 @@ reviewable deliverables and bilingual review surface.
 - Added `visual/assets/wind-health-field-protocol.json` as a pre-registered field observation, calibration, model-alignment and stop-condition contract for the six health/wind/water metrics.
 - Added AIJ pedestrian-wind CFD and ISO 7726 catalogue method references with explicit boundaries; no local measurement, CFD result, comfort threshold or health outcome was fabricated or transferred.
 - Kept all six local metrics `unknown` until versioned geometry, field data, calibration/QC, model comparison, uncertainty and professional sign-off are available.
+- Added `visual/assets/wind-health-point-register.json` with 18 provisional, not-measured planning slots across the three key areas; no coordinates or local readings were invented.

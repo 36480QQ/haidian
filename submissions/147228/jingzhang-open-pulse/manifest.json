@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cf6573e4daec41b54af29d85f4e4bf8926ff6f35c069ce92ddf8d46202b1f9c2"
+      "sha256": "e5e3ae28a32e910ebd4ed794df799ce797e7d8682a518b5c5262f203cbab3e40"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6b7f1ba6269a2dc7556b691e1996a3d637d792016613c61e49e15debe213cc09"
+      "sha256": "09528f1452291e30711938adfd4171d25a750e576fa861d59615baed4612b68e"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f81a83d48acef392e493d8ea89144e12afefeed46681b43375ace38f4389b5f6"
+      "sha256": "444a5d19faa89536cf44e3135704aa672e33eeec0648fc4aab739fa79cca8aa6"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ef3245bf58c78405554c2041b2f7c302c3615bf810302328eb56e459c55bfeed"
+      "sha256": "f1183c54b10448e814590aec27742c66b10d62d12e6f69f4559c74a4a263491a"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7adfa792b25566f2b1d5325e68a55e008bd6f4c7bd27dc3779b952bb912edd55"
+      "sha256": "9f948115943bb739b80829ebe2c5ae8580eb882a54d0e2d140e64fcb777e29b8"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -375,13 +375,19 @@
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "dbac8b51f677af14edc086fef4b428bbbe538c87ef76b8c18d4f76147cfc83cf"
+      "sha256": "7b8a39aab375dcc2c0a611b6afb3f159b817a9c0d6d31ad4ad6487087f46632f"
     },
     {
       "path": "visual/assets/wind-health-field-protocol.json",
       "role": "wind_health_field_protocol",
       "required": true,
-      "sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
+      "sha256": "edca3895fb5f9db87299e74d4bfadbebf6993c2ba2cb4c1d6eef48a6eba0069f"
+    },
+    {
+      "path": "visual/assets/wind-health-point-register.json",
+      "role": "wind_health_point_register",
+      "required": true,
+      "sha256": "a9931339f62497804b588cf90b03a4e1892beaf5c073a634f1dfee72ebb835b8"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
@@ -417,7 +423,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "504ea35d51f72f9a507094dd45d9a6d804848bb315fc9e2616af303b0cd6b603"
+      "sha256": "e6bb179fff78de5ee851fe1fd898bde98674cbcaedb9fa9c58893b044f7b7cfb"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
