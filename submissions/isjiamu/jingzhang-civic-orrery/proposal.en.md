@@ -91,6 +91,8 @@ Rent escalation, low-income displacement, removal of traditional service, and ma
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
+The overall design turns “public comparison of futures” into spatial, project, and accountability relationships rather than a technological skin. It first locks the provisional boundary and the evidence gaps that must not be fabricated. A complete land-use topology, conceptual building footprints, civic meridian, six transverse rooms, blue-green system, and three learning phases then form an auditable mother structure. Every spatial move answers three questions: how ordinary people use it, who maintains it, and how service returns to a non-AI path when it fails. The provisional computed scope supports package consistency only; it is not an official area, development capacity, or engineering condition. FAR, height, road area, and utility capacity remain unknown until official data and professional review replace the entire evidence chain.[depth:overall_spatial_structure] [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
+
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 ### One Meridian and Six Transverse Public Rooms
@@ -339,4 +341,6 @@ This is an open co-creation urban-design proposal, not a statutory plan, approva
 
 ## References
 
-The complete source register is in `sources.json`. Professional standards, task coverage, and design-depth evidence are in `standard_matrix.json`, `compliance_matrix.json`, and `design_depth_matrix.json`. Every online source records publisher, title, URL, retrieval date, use, transformation, and limitation.
+The complete source register is in `sources.json`. Professional standards, task coverage, and design-depth evidence are in `standard_matrix.json`, `compliance_matrix.json`, and `design_depth_matrix.json`. Every online source records publisher, title, URL, retrieval date, use, transformation, and limitation.[source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
+
+Sources have three roles. The official announcement and agent taskbook define tasks but do not substitute for parcel controls. The repository site package, registry, fact pack, and provisional geometry support a recalculable package without becoming an official redline. Eight global cases and two Jing-Zhang historical sources support mechanism comparison and contextual checking only; they do not prove local engineering, legal, or operational feasibility. The narrative, figures, and PDFs embed no third-party photography, protected drawing, or mark. If a source changes, a link fails, or official polygons are released, source status and assumptions must be updated first, followed by regeneration of GeoJSON, metrics, matrices, figures, HTML, and PDFs—not narrative-only correction.

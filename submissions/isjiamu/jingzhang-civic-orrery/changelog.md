@@ -1,9 +1,11 @@
-# Changelog
+# 方案迭代记录
 
-## 2026-08-08 — Initial formal proposal build
+## v0.1 - 2026-08-08
 
-- Created the second independent `京张万象仪 / JINGZHANG CIVIC ORRERY` submission.
-- Based geometry on repository `provisional_constraint` data; no official redline is claimed.
-- Defined plural-model counterfactual comparison and public future rehearsal as the main mechanism, distinct from the merged `京张校准场` proposal's AI-entry verification mechanism.
-- Planned twelve complete scene cards, three regulated tests, seven personas, four pilgrimage landmarks, and bilingual formal artifacts.
-- Recorded source, copyright, translation, planning-control, data-governance, operation, and phasing limitations.
+- 创建第二份独立投稿“京张万象仪 / JINGZHANG CIVIC ORRERY”。
+- 以“多模型公开比较—可逆城市排演—人工决定—有用失败入档”为核心机制，区别于已有方案的技术准入校准机制，也不复用首份投稿的轨距、道岔、时刻表与 context protocol。
+- 使用仓库 `provisional_constraint` 作为临时边界和重点区代理，不声称官方红线、法定用地、开发强度或工程可行性。
+- 建成一条公民经线、三座仪器屋、十二个未来观测站、两翼、六个横向公共房间和无感知花园的机器可读空间系统。
+- 完成 12 张十三字段场景卡、3 个受规制试验、7 类人物、4 个朝圣地标、三种公共路线、年度活动与长期运营闭环。
+- 完成中英双语 Markdown、10 张证据图、双语离线 HTML、双语报告 HTML、33 页双语 A3 文册与 7 页双语 A0 展板。
+- 记录来源、版权、翻译、规划控制、数据治理、运营、分期、人工复核、非数字替代和到期关闭边界。

@@ -99,6 +99,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
+总体设计把“公开比较未来”落实为空间、项目和责任关系，而不是在现状之上叠加一层科技装饰。设计先锁定临时边界和不可伪造的资料缺口，再以完整用地拓扑、概念建筑基底、公民经线、六个横向公共房间、蓝绿系统和三阶段学习门槛组成可校验的母结构。每项空间动作都回答三个问题：普通人如何使用，谁负责维护，失效时如何回到非 AI 服务。临时总体范围复算值只服务包内一致性，不作为官方面积、开发容量或工程条件；容积率、高度、道路面积和市政容量保持 unknown，待官方资料和专业审查后整体替换。总体结构见 [depth:overall_spatial_structure]、[data:geometry/site_boundary.geojson#SITE-001] 与 [metric:site_area_sqm]。
+
 ## 交通、轨道、市政与公共服务设施
 
 ### 一条经线、六个横向公共房间
@@ -408,4 +410,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 参考资料
 
-完整来源登记见 `sources.json`；专业标准、任务覆盖和设计深度证据分别见 `standard_matrix.json`、`compliance_matrix.json` 与 `design_depth_matrix.json`。所有在线来源均记录发布者、标题、URL、检索日期、用途、转译方式与使用限制。
+完整来源登记见 `sources.json`；专业标准、任务覆盖和设计深度证据分别见 `standard_matrix.json`、`compliance_matrix.json` 与 `design_depth_matrix.json`。所有在线来源均记录发布者、标题、URL、检索日期、用途、转译方式与使用限制。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
+
+来源被分成三类使用：官方公告和面向智能体任务书界定任务，不代替地块控制；仓库 site package、source registry、fact pack 和临时 geometry 支撑可复算包，但不升级为官方红线；八个国际案例与两项京张历史来源只用于比较机制和核对背景，不证明本地工程、法律或运营可行。正文、图件和 PDF 不嵌入第三方摄影、受保护图纸或商标。若来源更新、链接失效或官方 polygon 发布，须先更新来源状态与假设，再重算 GeoJSON、指标、矩阵、图件、HTML 和 PDF，不能只改叙述。
