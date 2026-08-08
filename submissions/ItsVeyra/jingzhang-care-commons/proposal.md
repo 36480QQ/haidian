@@ -310,7 +310,7 @@ AI 只协助整理口述、生成待核对标签和授权范围，原作者逐�
 
 隐私伦理风险：每项作品、联系人、可见范围、AI 使用和保留期分别同意；默认最小可见；不做连续跟踪、情绪评分、信用排名、自动诊断或黑箱资格判断；高风险输出必须人工复核并具备失败转人工路径。[depth:risk_missing_data]
 
-来源与权利分三类：第一，仓库维护者提供的临时总体/重点区约束坐标依据 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] 原坐标不变复制到约束图层，只允许临时约束、自检和讨论，提交者不主张其官方性或坐标权利；第二，智能体生成的设计图层、派生指标、文本、图解、版式与代码派生图受提交许可和仓库规则约束，但仍是概念设计；第三，外部公共案例事实、标准和记录保留来源归属，仅作注明限制的引用/释义，证据元数据见 `report/source-evidence.md`。GeoJSON 包含仓库约束层和智能体设计层，不是单一生成来源；不包含真实居民私密故事或作品，AI 修复必须标注。详见 `report/copyright_statement.md`。
+来源与权利分三类：第一，仓库维护者提供的临时总体/重点区约束坐标依据 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] 原坐标不变复制到约束图层，只允许临时约束、自检和讨论，提交者不主张其官方性或坐标权利；第二，智能体生成的设计图层、派生指标、文本、图解、版式与代码派生图受提交许可和仓库规则约束，但仍是概念设计；第三，外部公共案例事实、标准和记录保留来源归属，仅作注明限制的引用/释义，访问状态、规范化载荷哈希、机制摘要与限制均内嵌登记于 `sources.json` 的 `evidence_metadata`。GeoJSON 包含仓库约束层和智能体设计层，不是单一生成来源；不包含真实居民私密故事或作品，AI 修复必须标注。详见 `report/copyright_statement.md`。
 
 本方案不代表审批、投资、工程可行性、运营授权或时间承诺。其价值在于提出一套可追溯、可撤回、可试点、可复算的概念方案，供居民、组织者和专业团队共同修正。
 
@@ -331,6 +331,6 @@ AI 只协助整理口述、生成待核对标签和授权范围，原作者逐�
 - 任务、标准与深度：`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`。
 - 空间与指标：`geometry/*.geojson`、`metrics.json`。
 - 版权与衍生摘要：`report/copyright_statement.md`、`report/narrative.md`。
-- 国际案例证据日志：`report/source-evidence.md`（元数据、简要释义和规范化载荷哈希）。
+- 国际案例证据日志：`sources.json` 各案例的 `evidence_metadata`（访问元数据、简要释义和规范化载荷哈希）。
 
 参考资料的分工是：公告和任务书界定为什么设计，专业标准约束应达到何种表达深度，临时 GeoJSON 与指标只校验概念结构是否自洽，案例页面只比较运营机制。空间建议必须回到具体 feature 和近似指标，例如总体临时边界 [data:geometry/site_boundary.geojson#PROV-SITE-001] 与 [metric:site_area_sqm]；取得正式 polygon、现状建筑、权属、道路、市政、文保和设施资料后，需重跑面积、拓扑及矩阵审查。[standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:metrics_recalculation] 任何来源层级变化都应同步更新 `sources.json`、假设、正文和图件，避免背景材料被误用为控制证据。
