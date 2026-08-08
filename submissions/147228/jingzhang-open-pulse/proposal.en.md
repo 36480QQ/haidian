@@ -195,6 +195,18 @@ The case file compares six mechanism patterns—station-as-public-room, bounded 
 
 The proposal is not considered implemented because it is written. It is reviewable because each task can be traced to a section, a spatial or operational artifact, a source/assumption, an acceptance test and a stop/rollback path. Official polygons, planning controls, ownership, municipal, heritage, traffic, weather, drainage and measured-experience data must replace the provisional and unknown fields before professional implementation.
 
+## Cultural “Feng Shui” Narrative and the Wind–Water–Health Evidence Gate
+
+The expressions *cang feng ju qi* (藏风聚气) and *feng shui* may be used only as cultural landscape narratives linked to spatial memory. They are not medical findings, public-health causation, air-quality evidence, hydrological rules, engineering models or approval criteria. The narrative is therefore translated into six separate, auditable indicators whose current baselines remain `unknown`:
+
+- pedestrian wind-comfort acceptable-area ratio, to be tested across seasonal wind directions and leaf-on/leaf-off states with calibrated pedestrian-level CFD and field wind measurements; [metric:pedestrian_wind_comfort_acceptable_area_ratio] [source:LIU-URBAN-VENTILATION-2017]
+- pollutant-stagnation hotspot count, requiring an emissions inventory, boundary conditions, PM2.5 observations and a professionally accepted air-age or ventilation-effectiveness method; [metric:pollutant_stagnation_hotspot_count] [source:MENG-WIND-HEAT-PM25-2022] [source:NOSEK-STREET-CANYON-2025]
+- mean-radiant-temperature baseline and continuous shaded accessible-route ratio, requiring seasonal solar/tree-canopy modelling, MRT measurements and accompanied-route tests; [metric:mean_radiant_temperature_baseline_c] [metric:continuous_shaded_accessible_route_ratio]
+- blue-green accessible-route overlap, requiring field verification of entrances, gradients, continuity, safety, water quality and maintenance, with no direct inference of physical or mental-health improvement from proximity; [metric:blue_green_accessible_route_overlap_ratio] [source:WHO-URBAN-HEALTH-AND-GREEN]
+- water-risk exceedance-route verification, requiring a DEM, drainage network, outfalls, soils, groundwater, water quality, design storms and calibrated surface-flow modelling before any flood-free claim. [metric:water_risk_exceedance_route_verified_ratio] [assumption:A-DRAINAGE-SYSTEM-001]
+
+The `design_target` entries in `visual/assets/evidence-ledger.json` are future review gates; the six `unknown` entries in `metrics.json` are the present evidence state. None of the three cited research cases is represented as Jing-Zhang CFD, monitoring or health evidence, and no published case percentage is transferred to this site. [assumption:A-AIR-WIND-001]
+
 ## References
 
 See `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, `data/source_registry.json`, and the repository taskbook for the complete source and standard registry. The package intentionally preserves the distinction between official public information, user/repository-provided material, provisional geometry, modeled design scores, conceptual partnerships and future implementation requirements.
