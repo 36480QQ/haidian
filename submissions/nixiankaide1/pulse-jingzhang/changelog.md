@@ -37,3 +37,20 @@
 - 首个提交 CI run（31266255720）因 GitHub API 瞬时 404（download_content）失败，属基础设施问题，与方案内容无关；本地四层校验全 PASS
 - 已开 Issue open-city-ai/haidian#658 跟踪 404 未纳入重试集合的问题
 - PR #652 评论区已说明情况；第二个提交（含英文版）排队等待 CI 复跑
+
+## v0.3 - 2026-08-09
+
+英文展示材料补齐（全部非阻断，提升国际传播力维度）。
+
+- 新增 5 张英文图件（assets/figures/*.en.png，标签与中文版同构、仅文字为英文）
+- 新增 visual/index.en.html（英文离线展示页，23 项 data-metric 与中文版逐一一致）
+- 新增 drawings/a3-booklet.en.pdf（10 页）与 a0-boards.en.pdf（4 页）英文图纸
+- manifest 已注册 10 个英文翻译条目（translation_of 链完整），共 40 文件
+- self_check 复跑 PASS（formal-review-ready）；participant_preflight PASS（12.6 MiB）
+
+### CI 记录
+
+- 31266255720（首个提交）：failure —— GitHub API 瞬时 404（download_content），基础设施问题（Issue #658），与内容无关
+- 31266630783（英文译稿提交）：success
+- 31266771056（changelog 提交）：success
+- 本次英文材料推送触发的新 run 排队中
