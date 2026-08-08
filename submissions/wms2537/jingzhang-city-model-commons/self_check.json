@@ -90,7 +90,7 @@
       "result": "pass",
       "severity": "major",
       "target": "drawings/a3-booklet.pdf + drawings/a0-boards.pdf",
-      "message": "A3 方案册 9 页、A0 展板 3 页按正确纸张尺寸生成并逐页渲染复核；未发现裁切、重叠、乱码或黑块。"
+      "message": "A3 方案册 12 页、A0 展板 3 页按正确纸张尺寸生成并逐页渲染复核；未发现裁切、重叠、乱码或黑块。"
     },
     {
       "check_id": "VISUAL_METRIC_HOOKS",
