@@ -146,6 +146,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-015",
+      "title": "企业试点责任与保险前置卡",
+      "policy_instrument": "liability_and_insurance_gate",
+      "enterprise_stage": "physical_or_public_pilot",
+      "problem": "A public-space trial can create safety, property or service harm; naming a model is not the same as naming who responds and pays for correction.",
+      "jingzhang_interface": "Before S02 or S04, record operator, accountable party, emergency contact, maintenance duty, incident escalation, insurance/compensation assumption and withdrawal authority.",
+      "operator": "district safety lead + site operator + supplier accountable executive",
+      "required_evidence": ["RACI record", "emergency contact drill", "maintenance duty", "insurance/compensation review", "withdrawal authority"],
+      "metric": "physical_pilots_with_verified_responsibility_and_escalation",
+      "stop_gate": "Unclear responsibility or unavailable emergency contact blocks public operation.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-SEOUL-AI-FOUNDATION"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
