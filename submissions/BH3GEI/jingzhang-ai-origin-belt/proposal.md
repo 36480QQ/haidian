@@ -82,7 +82,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | 重点片区 | 定位 | 空间动作 | AI 产业与运营场景 | 证据 |
 | --- | --- | --- | --- | --- |
 | **A1 众智园AI自主创新加速区**（约192.1公顷） | 全栈自主创新·花园街区 | 强化清河低碳创新界面、产业展示与对外交通；绿色空间承载开放测试与标准治理展示 | 自主模型测试、标准制定工作坊、安全治理沙盒、具身智能验证 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
-| **A2 北京AI原点社区**（约104.3公顷） | 近校成果转化·人才社区 | 校区—园区—街区慢行缝合；补足开源发布、人才服务、居住配套；设 AI 原点纪念地标 | 开源发布厅、城市大模型开放平台、近校孵化、人才特区 | [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| **A2 北京AI原点社区**（约104.3公顷） | 近校成果转化·人才社区 | 校区—园区—街区慢行缝合；补足开源发布、人才服务、居住配套；设 AI 原点纪念地标与纪念广场 [data:geometry/public_space.geojson#PUBLIC-004] | 开源发布厅、城市大模型开放平台、近校孵化、人才特区 | [data:geometry/key_areas.geojson#PROV-KEY-002] |
 | **A3 大钟寺AI产业聚集区**（约72.0公顷） | 城市智能经济·国际交往 | 大钟寺站四象限步行连通、商业服务与重点企业公共环境更新 | 智能终端与内容消费、数据要素会客厅、国际路演 | [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
 三处片区的建筑形态、拆改留分类、公共空间与交通组织在第七、八、九节统一控制；HTML 电子展示页可分区查看，A3 文册与 A0 展板含重点片区总图、局部详图与指标说明。
@@ -97,7 +97,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | 02 | 安全治理沙盒 ★ | 众智园 | 标准制定、安全评测、模型红队测试的可参观可监管节点 |
 | 03 | 具身智能验证场 ★ | 众智园 | 机器人/具身智能低速可控试验（巡检、配送、导览） |
 | 04 | 城市大模型开放平台 ★ | AI原点社区 | 合规授权数据训练城市服务大模型的场景开放平台 |
-| 05 | 自动驾驶低速接驳 | 小月河廊道 | 园区—站点低速接驳与慢行断点识别，可解释可监管 |
+| 05 | 自动驾驶低速接驳 | 小月河廊道 + 活力带接驳环 | 园区—站点低速接驳与慢行断点识别，可解释可监管 [data:geometry/roads.geojson#ROAD-019] |
 | 06 | AI 慢行导航 | 遗址公园活力带 | 低侵入传感辅助识别慢行断点、拥挤与无障碍需求 |
 | 07 | 大钟寺国际路演客厅 | 大钟寺片区 | 智能终端与内容消费企业的展示、洽谈、媒体与国际交流 |
 | 08 | 数据要素会客厅 | 大钟寺片区 | 合规、授权、可审计前提下的数据要素与数字资产流通界面 |
@@ -129,7 +129,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 ## 交通、轨道、市政与公共服务设施
 
-**交通、轨道、慢行、停车** [depth:traffic_rail_slow_parking]：以活力带慢行主轴 + 8 条东西缝合连接道 + 外围衔接环路组织路网，道路中心线总长约 [metric:road_centerline_length_m]（见 [data:geometry/roads.geojson#ROAD-001]）。重点解决京张遗址公园上跨北五环的慢行断点、大钟寺站四象限步行连通、五道口/清华东路西口的校城接驳；结合自动驾驶低速接驳与无人配送环等 AI 场景节点。京张铁路遗址走向与小月河/清河水系以示意线标注（非官方线位/蓝线），见 [data:geometry/constraints.geojson#CONSTRAINT-RAIL-1]。
+**交通、轨道、慢行、停车** [depth:traffic_rail_slow_parking]：以活力带慢行主轴 + 8 条东西缝合连接道 + 外围衔接环路组织路网，道路中心线总长约 [metric:road_centerline_length_m]（见 [data:geometry/roads.geojson#ROAD-001]）。重点解决京张遗址公园上跨北五环的慢行断点、大钟寺站四象限步行连通、五道口/清华东路西口的校城接驳；提出沿活力带连接三核的 AI 低速接驳环（概念，[data:geometry/roads.geojson#ROAD-019]），结合自动驾驶低速接驳与无人配送环等 AI 场景节点。京张铁路遗址走向与小月河/清河水系以示意线标注（非官方线位/蓝线），见 [data:geometry/constraints.geojson#CONSTRAINT-RAIL-1]。
 
 **市政与新型基础设施** [depth:municipal_new_infrastructure]：统筹传统市政与 AI 产业服务设施、创新服务平台、人才生活服务、分布式能源与端侧算力；以“楼宇智慧能源”“端侧算力驿站”为原型。管线、能源、排水、防洪、消防等工程条件缺失时列为正式深化前置条件，写入 assumptions。
 
@@ -175,7 +175,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | 绿地面积 / 绿地率 | [metric:green_space_area_sqm] / [metric:green_ratio] | 空间复算（设计建议） |
 | 公共空间面积 / 比例 | [metric:public_space_area_sqm] / [metric:public_space_ratio] | 空间复算（设计建议） |
 | 建筑基底面积 / 密度 | [metric:building_footprint_area_sqm] / [metric:building_density] | 示意（待控规） |
-| 道路中心线长度 | [metric:road_centerline_length_m] | 空间复算 |
+| 道路中心线长度（含 AI 接驳环概念线） | [metric:road_centerline_length_m] | 空间复算 |
 | 分期面积 | [metric:phasing_area_sqm] | 空间复算 |
 | 用地分区数 / 建筑数 | [metric:land_use_polygon_count] / [metric:building_count] | 计数 |
 | 重点区数 / 更新项目数 / 场景卡数 | [metric:key_area_count] / [metric:renewal_project_count] / [metric:ai_scenario_card_count] | 计数 |

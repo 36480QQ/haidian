@@ -551,6 +551,48 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PUBLIC-004",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "AI原点纪念广场",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 11700.0,
+        "function_zh": "开源贡献者GitHub署名镌刻与荣誉展示、公共交往、朝圣停留",
+        "parent_area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3469787,
+              39.9879118
+            ],
+            [
+              116.3469676,
+              39.9890825
+            ],
+            [
+              116.3480213,
+              39.9890885
+            ],
+            [
+              116.3480324,
+              39.9879177
+            ],
+            [
+              116.3469787,
+              39.9879118
+            ]
+          ]
+        ]
+      },
+      "id": "PUBLIC-004"
     }
   ]
 }

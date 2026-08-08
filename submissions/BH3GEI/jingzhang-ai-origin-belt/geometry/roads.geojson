@@ -469,6 +469,38 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-019",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "AI低速接驳环（概念）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "length_m": 7755.8,
+        "function_zh": "自动驾驶低速接驳与无人配送环，连接三核，可解释可监管试点"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3485,
+            40.0167501
+          ],
+          [
+            116.3475,
+            39.9885001
+          ],
+          [
+            116.3485,
+            39.9469202
+          ]
+        ]
+      },
+      "id": "ROAD-019"
     }
   ]
 }

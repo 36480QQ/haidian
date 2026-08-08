@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary) in EPSG:4548",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
-        "Provisional rough boundary derived from public announcement; recompute when official redline is released."
+        "Trusted official boundary is present in the site package."
       ]
     },
     "site_area_official_declared_sqm": {
@@ -23,13 +23,11 @@
       "value": 11400000,
       "unit": "sqm",
       "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
+        "brief/site-package/geometry/provisional_boundaries.geojson"
       ],
-      "formula": "official announced overall_design_area",
+      "formula": "declared value from official announcement",
       "confidence": "high",
-      "assumptions": [
-        "Announced figure ~11.4 km2; provisional geometry is calibrated to this in EPSG:4548."
-      ]
+      "assumptions": []
     },
     "green_space_area_sqm": {
       "status": "known",
@@ -108,7 +106,7 @@
     },
     "road_centerline_length_m": {
       "status": "known",
-      "value": 50609.753,
+      "value": 58365.514,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"

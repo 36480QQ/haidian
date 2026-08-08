@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3b571fadf592b82ec1627f06aed55bb1acb269f023c9708ad1a45964a7e06658"
+      "sha256": "5ea1d78da51ca9d8c517f0db5aafdf17a5211cb3ab1e2db36da376667c6fe865"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "927770288920a0f101aeb0c286078d51e39d0ece18247fb72497fdc1328554f9"
+      "sha256": "f6b2c89d9fbbc29c4e26ccec1ae221d6bbf4e71dc5e4c27046dcaf77806ef786"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "39c130eaca1985dccf8a9ad7c0fcb49d286cf0f8812539f4672ceadb0d2902ca"
+      "sha256": "dd52ca631adb58395801de412950782a54c8de92de69e7130611e04012afea43"
     },
     {
       "path": "report/narrative.md",
@@ -98,56 +98,56 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0d4bc89780162de335813107b7c1609cf43b82a05f0dfaeb67ff5a70c633870d"
+      "sha256": "611c2363526bf5e1ddd4041ffd69bf5c6a5819bfc884c1ffb757292c1ea1e6af"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8ea178a245c62415505ea802f034016ecf17ea3b9624008cd62e74debffdcb4e"
+      "sha256": "1ada007aca75faed31642139adb4e8fa492c73fbe484851733d06f8bd84dc09c"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3b56481fc7fe96987c4b5afe394bd4dac20e851b75bd88b63cb508be51ff1119"
+      "sha256": "79c8748d7dfbaebdfa1b24458be2286ec1616224676ea66db2e77f9d4a10f0ea"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "ec429306a38adedf706147f4fe1e6be88f9d5e3fa736e5500bb9ac24d02179fc"
+      "sha256": "60d047c4637901bd9c977107f05d7b6e9f27769246676ba65e470d9e11d978c8"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8bf668e58bcc495c26cc30a23f4bc762358ee0d146c22ceb2a3bd87171f3c0da"
+      "sha256": "2f8a87bb5655e69134a4107b88b78b5320c85545fb1715bebe6d07b913572e60"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "992228c0dc41be5e5275ebf96e5e2863cedfa5c06306a7b94da9507a3bd80b40"
+      "sha256": "1ab4448fda25389c08ace2f0125c51d073d7f0db39d01ad7ffac2cc4d4dc6ab9"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5245c17c193d4b9163f41e59db20efa1f640851270ed2f12b9e1ea69279085a7"
+      "sha256": "0bea14cd2da028c467a4c9bcd3c04e20e25e207af14dc73edd7d49c97c20227f"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "439c298656e8d5ad3abcc98ccf5ccef480fad77009bc4bec837408c2416aee49"
+      "sha256": "89f182a8dbbba7fd6da9b6f31fc6a2ed326b6850ffafc0f00665383333c9b33a"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -189,13 +189,13 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6ceee6d9719d43c426e85952e52ba3adf8e8704dc7c9f67f1a7c10acbfd45780"
+      "sha256": "14b06697f5393046f66c3e2957d17e3cd6731ac558ef2ea20ccdd39fe9fcd9a7"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ac77cef21f1c8cd6389d43fa4d82c786bbf889287660f3638cbd75b49373792e"
+      "sha256": "92560c3da69e061dfdce5490535b9dba2affb12410867ba6c49f799c53a5eddb"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -209,7 +209,15 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a85404d1a22798a4eb03434213ac19393fd5a3dd2bfd339da826655bb3412db8"
+      "sha256": "90dfc9ce53af8fdf35e3ce4e24f3231e082c55b5f8451cb0d49c5f93cea8311c"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "required": false,
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "70b4a6c19e310f60fb0a57a69db15dab5bff8ce6d1cc81c34da0dceb0a4b0152"
     }
   ],
   "validation_claim": {
