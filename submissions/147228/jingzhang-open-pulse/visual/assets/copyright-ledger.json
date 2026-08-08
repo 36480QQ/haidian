@@ -364,7 +364,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "e1f0141cfd521b22c4e783d8b3e829b04b09154c83b2bc7b1df690773aea8f6a"
+      "hash_sha256": "bf972ff9e9de131eebd2a3fcd6649e81d93cefb4fe5dfa91945c9385694fd882"
     },
     {
       "path": "compliance_matrix.json",
@@ -653,7 +653,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d64c947c1406e55d0840bae1e35f16b0c806979fc6c614e133ac19fa99c9bb01"
+      "hash_sha256": "3fc77651e40212400a06127e8368633ca0ba47c95441cd55d80ef9e2fc5003b9"
     },
     {
       "path": "proposal.md",
@@ -670,7 +670,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "141b4e5225aaa3d5014c391138b36c3232289e1db3921c17507428b52a30c162"
+      "hash_sha256": "1644e4d813f6a1510c12ed4f747778f50a4c3b3a10d574cedd1ae7e61b8f11fd"
     },
     {
       "path": "report/copyright_statement.md",
@@ -721,7 +721,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "6f29ef9f249c49286d2770b96789341538388773f40d5d48bae79641d254c9fb"
+      "hash_sha256": "1e3c2d9f9c695e193269dc88571cba64a1a53cb3a5bde50d0bc93d6d1c2a4fd8"
     },
     {
       "path": "report/proposal.html",
@@ -738,7 +738,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "fb2a935b58c3e05e2ae17e95dab3a1a67ff71d1368135e42422430d79d3fb394"
+      "hash_sha256": "60db474d5f0ba06570c8e7eb933826cd6bc421d1380430a980a4a2f460befd76"
     },
     {
       "path": "sources.json",
@@ -755,7 +755,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "2630866c55ac17274b3b51d4d20bb14700292fa926b2abcbe542e1b9478da27c"
+      "hash_sha256": "d62cb44ab5934fb79acde310873bb3292d0d7cfd6d0273c951c9d28db0990c4e"
     },
     {
       "path": "standard_matrix.json",
@@ -1010,7 +1010,25 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
+      "hash_sha256": "dbac8b51f677af14edc086fef4b428bbbe538c87ef76b8c18d4f76147cfc83cf"
+    },
+    {
+      "path": "visual/assets/wind-health-field-protocol.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from the registered public method sources; no remote asset fetch at render time",
+      "source_inputs": [
+        "official AIJ public CFD guidebook route",
+        "peer-reviewed AIJ CFD guideline",
+        "ISO 7726 public catalogue record",
+        "repository brief and existing wind-health validation contract"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Method boundaries and URLs are registered in sources.json; the artifact contains no copied paper text or local measurement values.",
+      "font_note": "Not applicable; JSON evidence asset.",
+      "hash_sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
     },
     {
       "path": "visual/index.en.html",

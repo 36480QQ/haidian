@@ -42,3 +42,9 @@ reviewable deliverables and bilingual review surface.
 - Registered three official data-route records for the Haidian climate-normals catalogue, the district meteorological network and Qinghe Station wind monitoring; they are acquisition/context routes only and do not replace local measurements.
 - Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
 - Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.
+
+## v2.1 - 2026-08-08
+
+- Added `visual/assets/wind-health-field-protocol.json` as a pre-registered field observation, calibration, model-alignment and stop-condition contract for the six health/wind/water metrics.
+- Added AIJ pedestrian-wind CFD and ISO 7726 catalogue method references with explicit boundaries; no local measurement, CFD result, comfort threshold or health outcome was fabricated or transferred.
+- Kept all six local metrics `unknown` until versioned geometry, field data, calibration/QC, model comparison, uncertainty and professional sign-off are available.
