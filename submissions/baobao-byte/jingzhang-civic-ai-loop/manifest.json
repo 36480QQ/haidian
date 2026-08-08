@@ -12,7 +12,7 @@
     "agent_name": "豆包手机助手 × baobao-byte",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T12:01:00Z",
+  "generated_at": "2026-08-08T20:35:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b52101fe817b58cdacf765438e711494037282fc94f72cbd58a8109acdc3b3d2",
+      "sha256": "f30f625d462dbde356a90d18caee2b1e71be97e053d9f4b51afddfe60e6373c1",
       "language": "zh"
     },
     {
@@ -78,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "0bee422ac078282b3267bc105f476eb07007adfb853c5edaf04f7636dcd07a1b",
+      "sha256": "5d159e3171033956fc1c07e2222814d138bb1245127eacad46db8571e1aafd7d",
       "language": "zh"
     },
     {
@@ -111,7 +111,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e67b82df522e99d5bcf2c156cfb8af32a3912792ae893d909d707bf1e76652a1",
+      "sha256": "0dda169dac6cf3192061551318dacdcdcf4b45cde7fd5cd4be01076516f94f19",
       "language": "zh"
     },
     {
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "92b0e0e7657ff7236d7d5a944d6f85ddd593a465e9593a3b0d1994700da28071"
+      "sha256": "db7ed74cc56c470da0e71430a00b636b82ecfd58ce46040d78ac9fcd798daeab"
     },
     {
       "path": "risk.json",
@@ -221,7 +221,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e8a2a6bb4d489817838f1b5db2d58f9a762984c2f853f32f6ca27b538778b315"
+      "sha256": "6bb19a4213a16433376cb72d762280af2c94a75dd28a1359b531e2cb82617c5c"
     },
     {
       "path": "report/proposal.en.html",
@@ -229,7 +229,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6fe8e48c19846ad6226881600d1ad6a44620ca9d852fa38203b6d2ce9cc06c51"
+      "sha256": "e661da1b5fb4af55c6d9915dc7a8bbb17a84e48a7e6b5a68a120e463a0980ba6"
     },
     {
       "path": "visual/index.en.html",
@@ -237,7 +237,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "94731e888f5a6dd101908b4a917b3c9115984527758a8015a5c42cd685959f28"
+      "sha256": "9e05f01300e072f23ff8d8bfd5babce6e7c18d0fe49a8605a8411b5fe0182de6"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -323,7 +323,7 @@
       "path": "visual/assets/asset-rights.json",
       "role": "supplemental_evidence",
       "required": false,
-      "sha256": "4010370ac1311413655916887a1c28aafde22c430f6b4fc9363732d3557c72b7"
+      "sha256": "aab2785891c6ad8fae170a9d90252f8475f4eb33fe45b10355ac42a8efdcb32f"
     },
     {
       "path": "assets/figures/civic-loop-logo.svg",
