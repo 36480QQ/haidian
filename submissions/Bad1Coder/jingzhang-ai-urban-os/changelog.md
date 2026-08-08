@@ -1,5 +1,25 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-09
+
+- Rebuilt the bilingual A3/A0 drawing sets from the reproducible ReportLab script after visual QA: source figures retain their native ratio, while the boards now expose reading order, role-specific AI controls, a public stop transition, and a compact delivery register.
+- Added phase handoff fields (asset, operator, reviewer, permit/stop, evidence/rights) to the A0 evidence board; all entries remain conceptual recommendations pending official geometry, title, capacity, funding and field calibration.
+- Re-rendered the offline proposal reports after the v1.6 narrative/structured-evidence edits; no remote resources were introduced.
+
+## v1.6 - 2026-08-09
+
+- Added a delivery register to all three phase envelopes with candidate asset/operations roles, independent review, suggested funding type, permit gate, stop signal, maintenance owner, capacity basis, and delivery evidence.
+- Added scenario-specific AI input/role, operator, independent reviewer, stop trigger, human equivalent, exit action, and evidence-template fields for all 12 node/zone pairs.
+- Added a bilingual public-rights protocol covering pause requests, complaint remedy, independent appeal, front-line worker protection, and night/non-digital parity; all timing and staffing values remain calibration starting points.
+- Added documentation-only coverage metrics for implementation, scenario controls, and public rights, with explicit non-readiness assumptions.
+
+## v1.5 - 2026-08-09
+
+- Added a bilingual six-field protocol for the three industry prototypes: 1:1 test bay, baseline/entry evidence, proposed pass evidence, stop trigger, human/offline equivalent, and recovery or retirement.
+- Reframed stopping as a visible four-state physical transition: not deployed, 1:1 in use, safely stopped, and ground restored/component relocated; an AI_SERVICE_ZONE returns to N0 while ordinary service continues.
+- Added `industry_prototype_gate_coverage_ratio=1.0` as documentation completeness only, with an explicit assumption that it is not pilot readiness, measured performance, or a regulatory threshold.
+- Updated the bilingual proposal, offline visual boards, evidence figure, and A3/A0 drawing language to expose the entry/stop/restore chain.
+
 ## v1.4 - 2026-08-09
 
 - Added MNR-style classification labels and proposal-only design shares for all six non-overlapping land-use polygons; the two 0802 polygons remain separate lifecycle interfaces.

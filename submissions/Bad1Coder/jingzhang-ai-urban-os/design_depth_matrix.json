@@ -389,7 +389,8 @@
       "metric_refs": [
         "key_area_count",
         "registered_exposure_coverage_ratio",
-        "ai_service_zone_count"
+        "ai_service_zone_count",
+        "industry_prototype_gate_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -398,13 +399,14 @@
       ],
       "assumption_ids": [
         "A-GEOMETRY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-GATES-010"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "三处分别落实 MAKE、TRANSLATE、USE，并各有对象尺度空间、运营字段和 N0-N3 感知等级。",
+      "evidence_summary_zh": "三处分别落实 MAKE、TRANSLATE、USE，并各有对象尺度空间、运营字段、N0-N3 感知等级和四态物理验收链。",
       "figure_refs": ["assets/figures/key-areas.png", "assets/figures/mobility-bluegreen.png"],
       "feature_refs": ["PROV-KEY-001", "PROV-KEY-002", "PROV-KEY-003", "PUBLIC-001", "PUBLIC-002", "PUBLIC-003", "ZONE-004", "ZONE-008", "ZONE-009"],
       "acceptance_boundary_zh": "三区需分别完成制作、转译、采用的空间—运营—风险说明；重点区 polygon 仍为临时约束，不作精确红线。"
@@ -428,7 +430,8 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "repair_reuse_node_count"
+        "repair_reuse_node_count",
+        "implementation_register_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -436,7 +439,9 @@
         "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-011",
+        "A-RIGHTS-012"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
@@ -463,7 +468,9 @@
       ],
       "metric_refs": [
         "off_state_verified_ratio",
-        "component_reuse_rate"
+        "component_reuse_rate",
+        "implementation_register_coverage_ratio",
+        "public_rights_protocol_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -471,7 +478,9 @@
         "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
-        "A-OPERATIONS-003"
+        "A-OPERATIONS-003",
+        "A-IMPLEMENTATION-011",
+        "A-RIGHTS-012"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
@@ -511,7 +520,8 @@
         "road_centerline_length_m",
         "road_connector_length_m",
         "ai_service_zone_area_sqm",
-        "registered_exposure_coverage_ratio"
+        "registered_exposure_coverage_ratio",
+        "industry_prototype_gate_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -519,13 +529,14 @@
         "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
-        "A-GEOMETRY-001"
+        "A-GEOMETRY-001",
+        "A-PILOT-GATES-010"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "面积比例、对象尺度前场与长寿命公共框架、道路总长与连接线以及 AI_SERVICE_ZONE 包络均按 EPSG:4548 复算；运营绩效保持待采集直到有现场协议。",
+      "evidence_summary_zh": "面积比例、对象尺度前场与长寿命公共框架、道路总长与连接线以及 AI_SERVICE_ZONE 包络均按 EPSG:4548 复算；产业原型闸门指标只表示六字段文档完整率，运营绩效保持待采集直到有现场协议。",
       "figure_refs": ["assets/figures/metrics-evidence.png"],
       "feature_refs": ["SITE-001", "BLDG-001", "PUBLIC-001", "ZONE-001", "ROAD-001"],
       "acceptance_boundary_zh": "known 只表示提交几何可复算；任何法定面积、建筑密度、视场退线或运营绩效须待正式资料和现场日志。"
@@ -550,7 +561,9 @@
       ],
       "metric_refs": [
         "non_digital_service_retention_ratio",
-        "feedback_closure_time_hours"
+        "feedback_closure_time_hours",
+        "public_rights_protocol_coverage_ratio",
+        "scenario_control_record_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -561,7 +574,9 @@
         "A-GEOMETRY-001",
         "A-CONTROLS-001",
         "A-DATA-002",
-        "A-OPERATIONS-003"
+        "A-OPERATIONS-003",
+        "A-IMPLEMENTATION-011",
+        "A-RIGHTS-012"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",

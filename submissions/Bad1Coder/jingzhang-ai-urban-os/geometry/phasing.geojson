@@ -47,7 +47,20 @@
         "evidence_status": "conceptual_reference_proposal",
         "area_semantics": "priority_action_envelope; overlaps phase_2 where implementation interfaces coincide",
         "overlap_allowed": true,
-        "area_basis": "projected_polygon_area_epsg4548"
+      "area_basis": "projected_polygon_area_epsg4548"
+      ,"delivery_register": {
+        "candidate_asset_owner": "existing public-ground or park asset holder (to be named after title check)",
+        "candidate_operator": "district public-space or park operations team (conceptual role)",
+        "independent_reviewer": "accessibility + public-service reviewer independent of prototype supplier",
+        "funding_type": "conceptual public-benefit maintenance/renewal budget; no funding commitment",
+        "permit_gate": "official boundary, title, rail/river interfaces, fire and accessibility review",
+        "stop_signal": "ordinary service route unavailable, safety/privacy/accessibility threshold exceeded, or complaint not acknowledged",
+        "maintenance_owner": "named daily steward plus a separate maintenance lead (both pending confirmation)",
+        "minimum_spatial_parameters": "continuous accessible bypass; service room and porch dimensions to be field measured",
+        "capacity_basis": "capacity and staffing to be set from observed service demand, not assumed from polygon area",
+        "delivery_evidence": ["signed site/title checklist", "independent access walk", "public opening log", "repair and complaint log"],
+        "rights_protocol_ref": "RIGHTS-01"
+      }
       },
       "geometry": {
         "type": "Polygon",
@@ -108,7 +121,20 @@
         "evidence_status": "conceptual_reference_proposal",
         "area_semantics": "priority_action_envelope; overlaps phase_1 and phase_3 where implementation interfaces coincide",
         "overlap_allowed": true,
-        "area_basis": "projected_polygon_area_epsg4548"
+      "area_basis": "projected_polygon_area_epsg4548"
+      ,"delivery_register": {
+        "candidate_asset_owner": "existing education, innovation or community asset holder (to be named after title check)",
+        "candidate_operator": "community service-room operator with school/enterprise liaison (conceptual role)",
+        "independent_reviewer": "privacy, IP and care-service reviewer independent of the operator",
+        "funding_type": "conceptual shared-service and small-repair grant; no funding commitment",
+        "permit_gate": "official boundary, title, campus edge, fire, safeguarding, night access and utility review",
+        "stop_signal": "loss of offline equivalent, unapproved data/rights use, unsafe crowding, or unresolved access complaint",
+        "maintenance_owner": "service-room steward plus facilities technician; named people and rota pending confirmation",
+        "minimum_spatial_parameters": "step-free counter, quiet/care corner, paper route and clear egress; dimensions to be surveyed",
+        "capacity_basis": "staffed seats, queue and class capacity to be set after a two-week manual baseline",
+        "delivery_evidence": ["title and safeguarding checklist", "offline drill record", "rights withdrawal log", "night-access walk"],
+        "rights_protocol_ref": "RIGHTS-02"
+      }
       },
       "geometry": {
         "type": "Polygon",
@@ -169,7 +195,20 @@
         "evidence_status": "conceptual_reference_proposal",
         "area_semantics": "priority_action_envelope; overlaps phase_2 where implementation interfaces coincide",
         "overlap_allowed": true,
-        "area_basis": "projected_polygon_area_epsg4548"
+      "area_basis": "projected_polygon_area_epsg4548"
+      ,"delivery_register": {
+        "candidate_asset_owner": "station-front/commercial or park-interface asset holder (to be named after title check)",
+        "candidate_operator": "station and public-realm interface operator with repair desk (conceptual role)",
+        "independent_reviewer": "mobility, heritage and public-safety reviewer independent of terminal supplier",
+        "funding_type": "conceptual reversible-public-realm pilot allocation; no capital or procurement commitment",
+        "permit_gate": "official boundary, station/rail interface, pedestrian safety, heritage, fire, utilities and traffic review",
+        "stop_signal": "conflict at station frontage, blocked accessible route, heritage rights complaint, or manual service capacity below baseline",
+        "maintenance_owner": "frontage steward plus repair/reuse lead; supplier exit handover required",
+        "minimum_spatial_parameters": "step-free interchange, unobstructed service edge, staffed repair point and removable fixing grid",
+        "capacity_basis": "arrival, queue, maintenance and event capacity to be observed before any permanent work",
+        "delivery_evidence": ["station-interface walk", "heritage rights clearance", "manual-equivalent drill", "de-installation rehearsal"],
+        "rights_protocol_ref": "RIGHTS-03"
+      }
       },
       "geometry": {
         "type": "Polygon",

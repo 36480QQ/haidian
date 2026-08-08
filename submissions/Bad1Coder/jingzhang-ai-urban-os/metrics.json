@@ -528,6 +528,23 @@
         "test designation is a proposal requirement response"
       ]
     },
+    "industry_prototype_gate_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "assumptions.json"
+      ],
+      "formula": "count(documented industry prototypes with spatial_test_bay, baseline_entry, pass_evidence, stop_trigger, human_offline_equivalent, and recovery_or_retirement fields) / 3",
+      "confidence": "high",
+      "assumptions": [
+        "the six-field protocols are conceptual documentation/control proposals, not measured pilot readiness or operating performance",
+        "professional teams must calibrate the evidence and witness conditions before any field trial"
+      ],
+      "interpretation": "documentation_completeness_not_pilot_readiness_or_performance"
+    },
     "persona_count": {
       "status": "known",
       "value": 6,
@@ -866,6 +883,47 @@
         "requires a named accountable operator, accessible reporting channel, and public issue log"
       ],
       "reason": "No pilot operator or complaint/remedy log has been established."
+    },
+    "implementation_register_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "phasing features with candidate owner, independent reviewer, funding type, permit gate, stop signal, maintenance owner, capacity basis and delivery evidence / submitted phasing features",
+      "confidence": "medium",
+      "assumptions": [
+        "documentation completeness only; roles, capacity and funding are conceptual proposals pending professional and asset-holder confirmation"
+      ]
+    },
+    "scenario_control_record_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "scenario nodes with scenario-specific operator, reviewer, AI role, pause trigger, human equivalent, exit action and evidence template / 12 scenario nodes",
+      "confidence": "medium",
+      "assumptions": [
+        "field-witness completeness is zero until a pilot log exists; this ratio measures only structured record coverage"
+      ]
+    },
+    "public_rights_protocol_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "assumptions.json",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "documented rights protocol dimensions (pause request, complaint acknowledgement, temporary remedy, appeal/review, worker protection) / five proposed dimensions",
+      "confidence": "low",
+      "assumptions": [
+        "conceptual protocol completeness only; time limits, staffing and authority require professional, community and asset-holder calibration"
+      ]
     }
   }
 }

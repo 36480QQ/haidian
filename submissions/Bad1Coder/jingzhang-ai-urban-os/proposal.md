@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把 AI 从屏幕推到一比一的街道、家具、服务界面和可拆回构件，让城市成为从模型到实物、从使用到维修再利用的公共原型生产网。以四层寿命框架和临时参考几何提出可复核的城市设计建议，待正式 polygon 发布后整体复算。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.4-jz-1x1-mesh"
+iteration: "v1.5-jz-1x1-mesh-gates"
 ---
 
 # 京张 1:1 原型网：把模型做成城市
@@ -103,6 +103,16 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 11. **低速服务设备试用**（小月河场景赋能翼）：限定速度、时段、天气和人工接管，设备不是必选项，冲突即停测。
 12. **公共韧性提示**（清河/小月河）：只读聚合雨量、水位和设施状态，防汛/园林人员巡检闭环，不接入住户摄像。
 
+前三项产业原型再经过一层明确的入场闸门。以下字段是供专业团队校准的概念试点控制，表内“通过证据”是拟议的现场见证方式，不是已经取得的性能结果；任何停止触发都先恢复普通公共模式。[metric:industry_prototype_gate_coverage_ratio] [assumption:A-PILOT-GATES-010]
+
+本案把闸门画成四种可验收的物理状态：**未进场 → 1:1 在用 → 安全停用 → 场地复原/构件转场**。停止不是后台按钮，而是公共空间的可见状态转换：AI_SERVICE_ZONE 退回 N0，普通服务不断，构件拆回，地面复原，材料有下一站。
+
+| 原型 / 1:1 试验湾 | 基线与入场证据 | 通过证据（拟议） | 停止触发 | 人工/离线等价 | 恢复或退役 |
+| --- | --- | --- | --- | --- | --- |
+| 无障碍多语言导视 / MAKE 原型房 + 原型院 | AI 生成候选词/语音仅用清权文本；无障碍路线、视听和触觉审阅；静态导视先可用；责任人登记 | 分组用户见证完成目标路线并可回到人工引导；误导记录闭合 | 未解决的误导、遮挡、语音冲突，或无障碍旁路不可用 | 静态多语导视、触觉/纸图、人工引导 | `AI_SERVICE_ZONE → N0`；恢复基线导视，修订后复审，或拆回转移 |
+| 可调公共家具 / MAKE 原型院 | AI 辅助生成尺寸/调节候选；材料护照；结构、无障碍、耐候审阅；工具可达紧固件；普通通行带畅通 | 见证 AI 候选与实体人因适配、稳定使用、无夹伤风险、通行净空和可维修性；部件台账完整 | 不稳定、夹伤风险、阻塞通行，或缺少部件记录 | 固定普通座椅和无遮挡通行带 | `AI_SERVICE_ZONE → N0`；隔离并恢复普通座椅/路径，修复复审，或拆解复用 |
+| 离线服务界面 / MAKE → TRANSLATE 服务房 | AI 界面只读版本化公开信息；核心任务清单；人工席位与纸面流程演练；数据最小化 | 断网或拒答时，所有核心任务仍由人工/纸面路径闭环；版本和责任人可追溯 | 任一核心任务失去非 AI 路径，或信息版本/责任人不明 | 人工窗口、纸面表单、电话/现场转介 | `AI_SERVICE_ZONE → N0`；关闭 AI 界面并保持人工服务，补齐信息/容量后复审，或撤下接口 |
+
 产业原型的空间—运营映射为“提交模型卡 → 领取材料/接口 → 1:1 试用 → 现场复盘 → 拆卸/复用”；城市功能则采用“人工服务并行 → 可选 AI 辅助 → 公众主动反馈 → 到期退役”。每张场景卡同时填写感知地籍字段和空间—时段暴露预算：何时开启、谁在现场、何时自动关闭、何时恢复普通公共模式。所有场景遵循 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，不替代审批、医疗诊断、交通指挥或安全责任。[depth:three_key_area_detailed_design]
 
 ## 用地、建筑规模与拆改留方案
@@ -140,13 +150,42 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 项目清单为 JZ-01 公园审阅面、JZ-02 众智园原型院、JZ-03 原点服务房、JZ-04 大钟寺采用门廊、JZ-05 维修再利用台、JZ-06 原型交换周。每项均以概念建议提交，权属、审批、运营主体、容量和经费待确认。[depth:renewal_project_list] [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001]
 
+为使项目清单可以交给下一阶段专业团队，`phasing.geojson` 增加一张实施登记。登记中的主体是候选角色，不是已经确认的部门；资金写成建议类型，不是预算承诺；“通过”只能由独立复核和现场记录证明。[metric:implementation_register_coverage_ratio] [assumption:A-IMPLEMENTATION-011]
+
+| 项目 | 空间交付与最小条件 | 候选责任 / 独立复核 | 建议资金类型 / 许可门 | 停止与维护证据 |
+| --- | --- | --- | --- | --- |
+| JZ-01 公园审阅面与无障碍接口 | 既有公共地面、连续无障碍旁路、遮荫和可撤展陈；尺寸待现场测量 | 公园/公共地面资产主体 + 日常 steward；无障碍与公共服务复核 | 公共地面维护/小修建议；边界、权属、文保、消防、防洪门 | 旁路中断或投诉未确认即停展；开放日志、无障碍步行记录、维修单 |
+| JZ-02 众智园公共原型院 | 原型房、半室外院、材料护照墙、工具可达紧固件；容量待人工基线 | 园区/创新资产主体 + 原型运营者；结构、安全、材料复用独立复核 | 可逆试点/小额维修建议；权属、河道、消防、结构、网络安全门 | 结构或隐私阈值触发即 N0；入场清单、红队记录、拆装演练 |
+| JZ-03 原点社区共享服务房 | 无台阶人工窗口、纸面路线、照护角、可变隔断和清晰疏散；班次待校准 | 社区服务资产主体 + 服务房 operator；照护、隐私、语言可达性复核 | 共享公共服务/课程小修建议；校园边界、权利许可、夜间安全门 | AI 拒答也不能中断核心任务；离线演练、版本签名、投诉结案 |
+| JZ-04 大钟寺站前 USE 门廊 | 站前可见门廊、维修台、无障碍接驳和可拆接口盒；排队容量待观测 | 站前/商业前场资产主体 + 接口运营者；交通、铁路遗产、公共安全复核 | 可逆公共界面试点建议；轨道接口、交通、文保、消防、市政门 | 冲突或人工容量不足即撤回终端；站前步行复核、人工服务日志、退场排演 |
+| JZ-05 维修与再利用目录节点 | 可上锁的部件存放、维修台、清点台和安全装卸边界；工具及工时待测 | 公共设施/维修资产主体 + 维修 lead；一线工人安全和材料来源复核 | 维护与材料回收建议；权属、职业安全、危废和装卸门 | 不安全工序或来源不明即隔离；工单、部件护照、下一去向收据 |
+| JZ-06 原型交换周 | 不新增永久建筑；活动只占用已核验前场，活动外恢复普通座椅/通行 | 活动/公共空间 operator；独立公共利益与无障碍复核 | 公共活动与小额可逆布置建议；活动许可、消防、人流、版权门 | 挤占普通服务或无法补救即缩小/取消；活动占用时数、人工替代和复原照片 |
+
+登记覆盖率 100% 只表示六个字段组已写入三期记录，不表示机构、许可、容量或资金已经落实。[metric:implementation_register_coverage_ratio]
+
 长期运营为“季度原型交换 + 年度全球 AI 地面周 + 开发者维修社区”：开放目录记录版本、材料和贡献者；社区成员可提交公共课题、申请 90 天节点、查看退役记录；国际活动采用中英双语和可下载模型卡。向外部账号发布内容前需取得账号所有者授权，投稿、评审、入选和实施状态分开表述。
+
+### 公共权利与责任协议（概念模板）
+
+空间开放不等于把暂停和补救责任交给用户。以下五项是现场协议的最小字段；“当班确认 / 24 小时 / 72 小时”等只是待专业校准的起点，不是行政 SLA。[metric:public_rights_protocol_coverage_ratio] [assumption:A-RIGHTS-012]
+
+| 权利动作 | 谁可以启动 / 受理角色 | 建议的可审计时序（待校准） | 现场保护与等价路径 |
+| --- | --- | --- | --- |
+| 暂停请求 | 任何使用者、邻里、维护人员；人工窗口、纸面簿、电话和可选数字入口均可 | 当班确认；先切 N0 并记录原因，之后由独立复核决定修复、复测或退役 | 普通服务不断；无障碍旁路和纸面说明始终保留 |
+| 投诉与临时补救 | 公共空间 operator 受理，指定一名 accountable owner | 建议 24 小时内给出临时补救，72 小时内公开结案或说明延期；均待容量校准 | 不能要求投诉人先使用 AI；可匿名/分组记录，不收集无关身份 |
+| 独立复核与申诉 | 与供应商无利益关系的无障碍、隐私、遗产或安全复核人 | 建议五个工作日内给出复核意见；争议期间保持 N0 普通模式 | 复核材料可纸面取得；权利人可撤回内容或要求下架 |
+| 一线维护人员保护 | 维护 lead 受理停工/拒绝不安全操作，资产主体负责保护 | 任何维护人员可即时停工；班次内记录，复盘不以个人承担故障责任 | 提供安全工具、培训、合理工时和不受惩罚的报告路径 |
+| 夜间、非数字与参与补偿 | 夜班 operator + 社区服务窗口；有偿试用由项目 operator 负责 | 22:00—06:00 等价服务和试用补偿方式须先做容量与劳动校准 | 纸面/电话/人工路径与可选 AI 同时存在；参与者获得时间/交通等合理补偿建议 |
+
+权利协议覆盖率 100% 只表示五个动作都有字段，不表示投诉时限、人员数量或补偿已经被批准。[metric:public_rights_protocol_coverage_ratio]
 
 ## 指标体系、面积复算与合规矩阵
 
 当前可复算指标为：`site_area_sqm=11,412,825.386`、`building_footprint_area_sqm=23,943.999`、`green_ratio=0.381786`、`public_space_area_sqm=23,024.999`、`public_space_ratio=0.002017`、`land_use_polygon_count=6`、`land_use_share_sum_ratio=1.0`、`key_area_count=3`。建筑和公共空间现在均是 12 个对象尺度原型房/门廊与 4 个前场，不再把片区包络称为单栋建筑或公共广场；面积仍来自概念几何，不是现状普查或法定指标。[data:geometry/buildings.geojson#BLDG-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:building_footprint_area_sqm]
 
 为让生命周期命题可被实施团队接手，新增记录 `long_life_public_frame_area_sqm=4,380,279.928`、`public_frame_ratio=0.383803`、`public_forecourt_count=4`、`prototype_node_count=12`、`ai_service_zone_count=12`、`ai_service_zone_area_sqm=59,736.002` 和 `repair_reuse_node_count=2`；其中公共框架是绿地与前场并集，感知包络是概念退线/视场，不是隐私法定边界。[metric:long_life_public_frame_area_sqm] [metric:public_frame_ratio] [metric:ai_service_zone_count]
+
+新增 `implementation_register_coverage_ratio=1.0`、`scenario_control_record_coverage_ratio=1.0` 和 `public_rights_protocol_coverage_ratio=1.0` 只表示实施、场景控制和公共权利字段已登记完整，不表示责任主体、试点性能、投诉时限、人员容量或资金已经落实。[metric:implementation_register_coverage_ratio] [metric:scenario_control_record_coverage_ratio] [metric:public_rights_protocol_coverage_ratio]
 
 道路证据也拆成两层：`road_centerline_length_m=21,716.922` 是六条概念中心线总长，`road_connector_length_m=12,496.182` 是五条重点区/蓝绿连接关系线的投影后合计；两者均不是道路面积、宽度、权属或工程红线。[metric:road_centerline_length_m] [metric:road_connector_length_m] [assumption:A-CONTROLS-001]
 
