@@ -15,7 +15,7 @@
         "area_sqm_declared": 836345.643,
         "design_concept_zh": "屁股正义 / 平等落座权",
         "design_concept_en": "Seating Justice / Equal Right to Sit",
-        "design_revision": "v0.4-seating-justice",
+        "design_revision": "v0.5-human-nature-city",
         "design_status": "conceptual_suggestion",
         "seating_prototypes": [
           "applause_circle",
@@ -40,7 +40,28 @@
           "no_emotion_inference",
           "no_social_scoring",
           "human_confirmed_minutes"
-        ]
+        ],
+        "inclusive_groups": [
+          "children",
+          "youth",
+          "older_adults",
+          "disabled_people",
+          "low_digital_literacy_users",
+          "night_shift_workers",
+          "low_income_service_workers",
+          "residents",
+          "students",
+          "visitors"
+        ],
+        "intergenerational_programs": [
+          "reciprocal_ai_companionship",
+          "fraud_and_privacy_literacy",
+          "repair_cafe",
+          "railway_memory_exchange",
+          "community_service_and_public_review"
+        ],
+        "pilgrimage_landmark_system": "grounded_ai_rail_three_walkable_nodes",
+        "campus_city_interface": "time_shared_zone_managed_non_digital_access"
       },
       "geometry": {
         "type": "Polygon",

@@ -12,7 +12,17 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "greenway",
-        "name_zh": "慢行与创新服务廊道"
+        "name_zh": "慢行与创新服务廊道",
+        "surface_priority": "walk_cycle_accessibility_and_slow_life",
+        "underground_logistics_status": "conceptual_study_only",
+        "underground_logistics_conditions": [
+          "prefer_existing_underground_space",
+          "low_speed",
+          "zoned_operation",
+          "human_takeover",
+          "no_hazardous_goods",
+          "geotechnical_utility_fire_flood_review_required"
+        ]
       },
       "geometry": {
         "type": "LineString",
