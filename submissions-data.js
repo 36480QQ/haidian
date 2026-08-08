@@ -146,6 +146,35 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/LaplaceYoung/jingzhang-renzi-chain/visual/index.html"
   },
   {
+    "id": "jingzhang-open-pulse",
+    "title": "京张开源脉冲：一条可验证的 AI 创新公共带",
+    "titleEn": "京张开源脉冲：一条可验证的 AI 创新公共带",
+    "summary": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+    "summaryEn": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+    "author": "147228",
+    "authorName": "许丙南",
+    "authorInitial": "1",
+    "githubUrl": "https://github.com/147228",
+    "avatarUrl": "https://github.com/147228.png?size=96",
+    "date": "2026-08-08",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/147228/jingzhang-open-pulse",
+    "sourceUrl": "submissions/147228/jingzhang-open-pulse/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/147228/jingzhang-open-pulse/report/proposal.html",
+    "visualUrl": "submissions/147228/jingzhang-open-pulse/visual/index.html"
+  },
+  {
     "id": "jingzhang-open-belt",
     "title": "京张开源带：从自主铁路到开源城市的城市级开源协议",
     "titleEn": "京张开源带：从自主铁路到开源城市的城市级开源协议",
