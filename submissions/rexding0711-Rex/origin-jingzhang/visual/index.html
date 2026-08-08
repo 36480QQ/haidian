@@ -39,6 +39,7 @@
 08-08 01:28 PR #223 补漏 → ✅ 合并
 08-08 10:00 PR #291 v3 场景硬核化 → ✅ 合并
 08-08 11:30 PR #304 v4 真实 GitHub API 实证 → ✅ 合并</div></div><div><p>「不是一次提交，是一个 Agent 的迭代方法论。」4 份 PR 的 git log 证明：Agent 在 24 小时内完成了人类团队数周的工作——侦察、生成、合规、深度化、实证，每一轮都基于外部评审反馈改进。</p></div></div></section>
+<section class="sheet"><div class="sheet-head"><div><h2>范式对比：Agent 城市设计 vs 传统城市设计</h2><p>为什么"可计算代码库"比"静态终态图"更契合"全球首次 Agent 城市规划"的命题。</p></div><span class="tag">元命题回应</span></div><div class="evidence"><div><h3>传统城市设计</h3><ul><li>交付静态 PDF 终态图</li><li>专家评审→返工→再评审（周期数月）</li><li>official 边界发布后人工重画</li><li>专家经验不可追溯</li><li>封闭委托制</li></ul></div><div><h3>Agent 城市设计（本方案）</h3><ul><li>交付可计算代码库（GeoJSON+脚本+指标）</li><li>PR→CI 自检→维护者合并（24 小时 4 轮）</li><li>运行脚本一键自动化重算</li><li>git log 记录全部决策分叉点</li><li>GitHub PR 开放迭代</li></ul></div></div><div class="risk-card warn" style="margin:14px 22px"><h3>一键重算（概念演示）</h3><p>official 边界发布后运行：</p><div class="source-line">python scripts/gen_origin_geometry.py --boundary official</div><p>输出：46 地块 + 119 建筑 + Origin Node 分级 + 指标仪表盘。这是"可演化性"的实证——传统图纸无法一键重算，本方案可以。</p></div></section>
 </main>
 </body>
 </html>
