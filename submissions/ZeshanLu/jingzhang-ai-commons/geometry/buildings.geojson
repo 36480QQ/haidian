@@ -1,6 +1,12 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "conceptual_building_footprints",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
   "features": [
     {
       "type": "Feature",
@@ -11,33 +17,520 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
-        "area_sqm_declared": 310807.184
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "shared_lab",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30841.806,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.341572,
-              39.95475
+              116.34295,
+              39.94475
             ],
             [
-              116.341572,
-              39.97225
+              116.34295,
+              39.94725
             ],
             [
-              116.34344399999999,
-              39.97225
+              116.34424999999999,
+              39.94725
             ],
             [
-              116.34344399999999,
-              39.95475
+              116.34424999999999,
+              39.94475
             ],
             [
-              116.341572,
-              39.95475
+              116.34295,
+              39.94475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "talent_service",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30839.033,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35043800000001,
+              39.950875
+            ],
+            [
+              116.35043800000001,
+              39.953375
+            ],
+            [
+              116.351738,
+              39.953375
+            ],
+            [
+              116.351738,
+              39.950875
+            ],
+            [
+              116.35043800000001,
+              39.950875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "ai_r_and_d",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30835.968,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344666,
+              39.957875
+            ],
+            [
+              116.344666,
+              39.960375
+            ],
+            [
+              116.34596599999999,
+              39.960375
+            ],
+            [
+              116.34596599999999,
+              39.957875
+            ],
+            [
+              116.344666,
+              39.957875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "shared_lab",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30832.828,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919000000001,
+              39.964875
+            ],
+            [
+              116.34919000000001,
+              39.967375
+            ],
+            [
+              116.35049,
+              39.967375
+            ],
+            [
+              116.35049,
+              39.964875
+            ],
+            [
+              116.34919000000001,
+              39.964875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "talent_service",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30829.765,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34295,
+              39.971875
+            ],
+            [
+              116.34295,
+              39.974374999999995
+            ],
+            [
+              116.34424999999999,
+              39.974374999999995
+            ],
+            [
+              116.34424999999999,
+              39.971875
+            ],
+            [
+              116.34295,
+              39.971875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "ai_r_and_d",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30826.603,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35043800000001,
+              39.978875
+            ],
+            [
+              116.35043800000001,
+              39.981375
+            ],
+            [
+              116.351738,
+              39.981375
+            ],
+            [
+              116.351738,
+              39.978875
+            ],
+            [
+              116.35043800000001,
+              39.978875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "shared_lab",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30823.535,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344666,
+              39.985875
+            ],
+            [
+              116.344666,
+              39.988375
+            ],
+            [
+              116.34596599999999,
+              39.988375
+            ],
+            [
+              116.34596599999999,
+              39.985875
+            ],
+            [
+              116.344666,
+              39.985875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "talent_service",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30820.393,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919000000001,
+              39.992875
+            ],
+            [
+              116.34919000000001,
+              39.995374999999996
+            ],
+            [
+              116.35049,
+              39.995374999999996
+            ],
+            [
+              116.35049,
+              39.992875
+            ],
+            [
+              116.34919000000001,
+              39.992875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "ai_r_and_d",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30817.328,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34295,
+              39.999875
+            ],
+            [
+              116.34295,
+              40.002375
+            ],
+            [
+              116.34424999999999,
+              40.002375
+            ],
+            [
+              116.34424999999999,
+              39.999875
+            ],
+            [
+              116.34295,
+              39.999875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "shared_lab",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30814.164,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35043800000001,
+              40.006875
+            ],
+            [
+              116.35043800000001,
+              40.009375
+            ],
+            [
+              116.351738,
+              40.009375
+            ],
+            [
+              116.351738,
+              40.006875
+            ],
+            [
+              116.35043800000001,
+              40.006875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "talent_service",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30811.095,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344666,
+              40.013875
+            ],
+            [
+              116.344666,
+              40.016375
+            ],
+            [
+              116.34596599999999,
+              40.016375
+            ],
+            [
+              116.34596599999999,
+              40.013875
+            ],
+            [
+              116.344666,
+              40.013875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "building_type": "ai_r_and_d",
+        "intervention": "conceptual_reuse_or_infill",
+        "area_sqm_declared": 30808.34,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34919000000001,
+              40.02
+            ],
+            [
+              116.34919000000001,
+              40.0225
+            ],
+            [
+              116.35049,
+              40.0225
+            ],
+            [
+              116.35049,
+              40.02
+            ],
+            [
+              116.34919000000001,
+              40.02
             ]
           ]
         ]

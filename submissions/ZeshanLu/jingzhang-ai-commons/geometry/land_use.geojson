@@ -1,6 +1,12 @@
 {
   "type": "FeatureCollection",
   "name": "land_use_topology_partition",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
   "features": [
     {
       "type": "Feature",
@@ -11,9 +17,12 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
         "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
-        "area_sqm_declared": 2674562.492
+        "name_en": "AI research and innovation",
+        "area_sqm_declared": 1638826.442,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
@@ -36,11 +45,11 @@
               40.0265
             ],
             [
-              116.344068,
+              116.34281999999999,
               40.0265
             ],
             [
-              116.344068,
+              116.34281999999999,
               39.939
             ],
             [
@@ -60,32 +69,35 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
-        "area_sqm_declared": 2589339.239
+        "name_en": "continuous green and ecological open space",
+        "area_sqm_declared": 2589339.999,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.344068,
+              116.34281999999999,
               39.939
             ],
             [
-              116.344068,
+              116.34281999999999,
               40.0265
             ],
             [
-              116.347188,
+              116.34594,
               40.0265
             ],
             [
-              116.347188,
+              116.34594,
               39.939
             ],
             [
-              116.344068,
+              116.34281999999999,
               39.939
             ]
           ]
@@ -101,32 +113,35 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
         "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
-        "area_sqm_declared": 3366138.181
+        "name_en": "AI industry and production services",
+        "area_sqm_declared": 2718804.957,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347188,
+              116.34594,
               39.939
             ],
             [
-              116.347188,
+              116.34594,
               40.0265
             ],
             [
-              116.351244,
+              116.349216,
               40.0265
             ],
             [
-              116.351244,
+              116.349216,
               39.939
             ],
             [
-              116.347188,
+              116.34594,
               39.939
             ]
           ]
@@ -142,14 +157,69 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
-        "area_sqm_declared": 2782792.823
+        "name_en": "talent community and supporting services",
+        "area_sqm_declared": 2589336.119,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.349216,
+              39.939
+            ],
+            [
+              116.349216,
+              40.0265
+            ],
+            [
+              116.352336,
+              40.0265
+            ],
+            [
+              116.352336,
+              39.939
+            ],
+            [
+              116.349216,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-005",
+      "properties": {
+        "id": "LU-005",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "land_use_code": "0801",
+        "name_en": "public culture and shared intelligence services",
+        "area_sqm_declared": 1876525.396,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352336,
+              39.939
+            ],
+            [
+              116.352336,
+              40.0265
+            ],
             [
               116.3553,
               40.0265
@@ -167,16 +237,8 @@
               39.939
             ],
             [
-              116.351244,
+              116.352336,
               39.939
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
-              116.3553,
-              40.0265
             ]
           ]
         ]

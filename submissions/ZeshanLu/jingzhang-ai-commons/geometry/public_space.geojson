@@ -1,6 +1,12 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "ai_commons_public_spaces",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
   "features": [
     {
       "type": "Feature",
@@ -11,32 +17,256 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "公共活动界面",
-        "area_sqm_declared": 836345.643
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-001",
+        "area_sqm_declared": 30366.531,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34734399999999,
-              39.967
+              116.345764,
+              39.94675
             ],
             [
-              116.34734399999999,
-              40.00025
+              116.345764,
+              39.94875
             ],
             [
-              116.349996,
-              40.00025
+              116.347364,
+              39.94875
             ],
             [
-              116.349996,
-              39.967
+              116.347364,
+              39.94675
             ],
             [
-              116.34734399999999,
-              39.967
+              116.345764,
+              39.94675
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-002",
+        "area_sqm_declared": 30359.634,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347636,
+              39.9625
+            ],
+            [
+              116.347636,
+              39.964499999999994
+            ],
+            [
+              116.34923599999999,
+              39.964499999999994
+            ],
+            [
+              116.34923599999999,
+              39.9625
+            ],
+            [
+              116.347636,
+              39.9625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-003",
+        "area_sqm_declared": 30353.144,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345764,
+              39.977375
+            ],
+            [
+              116.345764,
+              39.979375
+            ],
+            [
+              116.347364,
+              39.979375
+            ],
+            [
+              116.347364,
+              39.977375
+            ],
+            [
+              116.345764,
+              39.977375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-004",
+      "properties": {
+        "id": "PUBLIC-004",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-004",
+        "area_sqm_declared": 30346.626,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347636,
+              39.99225
+            ],
+            [
+              116.347636,
+              39.994249999999994
+            ],
+            [
+              116.34923599999999,
+              39.994249999999994
+            ],
+            [
+              116.34923599999999,
+              39.99225
+            ],
+            [
+              116.347636,
+              39.99225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-005",
+      "properties": {
+        "id": "PUBLIC-005",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-005",
+        "area_sqm_declared": 30340.515,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345764,
+              40.00625
+            ],
+            [
+              116.345764,
+              40.00825
+            ],
+            [
+              116.347364,
+              40.00825
+            ],
+            [
+              116.347364,
+              40.00625
+            ],
+            [
+              116.345764,
+              40.00625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-006",
+      "properties": {
+        "id": "PUBLIC-006",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_precision": "conceptual_not_surveyed",
+        "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
+        "public_space_type": "AI_commons_plaza",
+        "station_ref": "NODE-STATION-006",
+        "area_sqm_declared": 30335.524,
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347636,
+              40.017625
+            ],
+            [
+              116.347636,
+              40.019625
+            ],
+            [
+              116.34923599999999,
+              40.019625
+            ],
+            [
+              116.34923599999999,
+              40.017625
+            ],
+            [
+              116.347636,
+              40.017625
             ]
           ]
         ]
