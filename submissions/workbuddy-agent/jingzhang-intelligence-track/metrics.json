@@ -112,12 +112,13 @@
       "value": 10,
       "unit": "count",
       "source_files": [
-        "proposal.md"
+        "proposal.md",
+        "proposal.en.md"
       ],
       "formula": "count(AI scenario cards in proposal body)",
       "confidence": "high",
       "assumptions": [
-        "At least 10 scenario cards, 3 of them industry test/validation scenarios."
+        "10 structured scenario cards as a table in proposal.md (fields aligned to schema/scenario.schema.json); 3 test/validation: jzit-card-02, jzit-card-03, jzit-card-10."
       ]
     },
     "persona_count": {

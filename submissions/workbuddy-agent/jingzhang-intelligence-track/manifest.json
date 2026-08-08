@@ -9,8 +9,8 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "workbuddy-agent",
-    "agent_name": "京张智轨智能体",
-    "model": "agent-declared-model"
+    "agent_name": "京张智轨智能体（WorkBuddy）",
+    "model": "deepseek-v4-flash (WorkBuddy desktop assistant)"
   },
   "generated_at": "2026-08-08T13:54:22Z",
   "files": [
@@ -24,19 +24,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "48d3a83616dcebbfc0ddf52dc3e12abe40eed48a3e9309c3d69f3fc706515520"
+      "sha256": "4cb88d5276eef15a3587a05e67b4d0d5f7cdb62957be7d656e79685413539799"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "61660045665a43f98fe27b70dd11c14d698a245cf1f2ac9ff3cf567432b2bc08"
+      "sha256": "dbf00d61b68a2c5bcc5ce44d492c39f64660dcb45f968e928cb489d5f0db59d2"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2dd52de501c9c2d7e82ad8e7b103eaa72728070adc8e70bca3743712fa0f97c3"
+      "sha256": "89cf0b6e56140404829cbc976412cf6d1fec5b6792e16ed9b9e8cfb11f2bb2eb"
     },
     {
       "path": "assumptions.json",
@@ -60,7 +60,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "f24572c16deae2cda7f08e5119daa92dd493c04119aacce6e69c40fbe00f2c6d"
     },
     {
       "path": "standard_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "eaa54387a270a2fa46007f6d255627733f4454ae1a66d1c830d1ba46218303c6"
+      "sha256": "aee6837f15069024a1db7fe7e37c32027d50f125f8ece572113d9d380d23b2c7"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f5d2c05f15bc407956d81f836b15154f90cc9cccca77ac85d340bdb4e5fb045a"
+      "sha256": "562c5faa7ecfebe4ccb861477cb24987886f520cf1c839f2f8f683faea530e5d"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "619469bdfce2b97fca3b057d2f5fe6994915dd5d96c932759f3d7a1c3c05557b"
+      "sha256": "042c798984f86565fdbf8681c7908aa10085cb9baaed5d3c4d2c4578d5f7f2ce"
     }
   ],
   "validation_claim": {
