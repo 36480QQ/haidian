@@ -13,7 +13,9 @@
     "geometry_role": "design_proposal",
     "name_zh": "近期·示范启动（南站-大钟寺-遗址公园-原点社区）",
     "phase_id": "P1",
-    "area_sqm_declared": 1517411.504
+    "area_sqm_declared": 1517411.504,
+    "label": "示范启动",
+    "revision_note": "命名与 proposal 分期表一致; 面积按 EPSG:4548 复算(union)"
    },
    "geometry": {
     "type": "Polygon",
@@ -102,7 +104,9 @@
     "geometry_role": "design_proposal",
     "name_zh": "中期·织网贯通（居住带-转化走廊-清河）",
     "phase_id": "P2",
-    "area_sqm_declared": 7162643.658
+    "area_sqm_declared": 7162643.658,
+    "label": "织网贯通",
+    "revision_note": "命名与 proposal 分期表一致; 面积按 EPSG:4548 复算(union)"
    },
    "geometry": {
     "type": "Polygon",
@@ -243,7 +247,9 @@
     "geometry_role": "design_proposal",
     "name_zh": "远期·北延成带（清河-智汇园-众智园）",
     "phase_id": "P3",
-    "area_sqm_declared": 2732790.624
+    "area_sqm_declared": 2732790.624,
+    "label": "北延成带",
+    "revision_note": "命名与 proposal 分期表一致; 面积按 EPSG:4548 复算(union)"
    },
    "geometry": {
     "type": "Polygon",
