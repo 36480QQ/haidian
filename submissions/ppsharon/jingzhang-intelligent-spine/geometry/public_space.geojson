@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "name": "public_space",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "type": "plaza",
+        "name_zh": "詹天佑AI纪念碑广场",
+        "name_en": "Zhan Tianyou AI Monument Plaza",
+        "area_sqm_estimated": 12000,
+        "capacity_people": 3000,
+        "ai_scene": "开源星河廊·全球贡献可视化",
+        "note": "京张铁路文化叙事核心节点",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346,
+          39.988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "type": "cultural",
+        "name_zh": "开源发布厅",
+        "name_en": "Open Source Launch Hall",
+        "area_sqm_estimated": 3500,
+        "capacity_people": 500,
+        "ai_scene": "SC-01 成果发布+代码展示+路演",
+        "note": "原点社区核心公共空间",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347,
+          39.988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "type": "exhibition",
+        "name_zh": "安全治理沙盒展示馆",
+        "name_en": "AI Safety Sandbox Pavilion",
+        "area_sqm_estimated": 5000,
+        "ai_scene": "SC-02 标准制定+红队测试展示",
+        "note": "众智园AI治理展示节点",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          40.018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-004",
+      "properties": {
+        "id": "PUBLIC-004",
+        "layer": "PUBLIC_SPACE",
+        "type": "commercial",
+        "name_zh": "AI市集",
+        "name_en": "AI Market",
+        "area_sqm_estimated": 8000,
+        "capacity_people": 2000,
+        "ai_scene": "SC-06 智能终端体验+无人零售",
+        "note": "大钟寺智能原生消费场景",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          39.947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-005",
+      "properties": {
+        "id": "PUBLIC-005",
+        "layer": "PUBLIC_SPACE",
+        "type": "plaza",
+        "name_zh": "AI原点柱广场",
+        "name_en": "AI Origin Pillar Plaza",
+        "area_sqm_estimated": 6000,
+        "capacity_people": 1500,
+        "ai_scene": "SC-03 AI发展里程碑纪念",
+        "note": "五道口原点社区地标",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347,
+          39.9885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-006",
+      "properties": {
+        "id": "PUBLIC-006",
+        "layer": "PUBLIC_SPACE",
+        "type": "tech",
+        "name_zh": "智算穹顶",
+        "name_en": "Intelligent Computing Dome",
+        "area_sqm_estimated": 10000,
+        "ai_scene": "SC-09 实时算力可视化+科普展示",
+        "note": "众智园核心公共空间地标",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          40.0185
+        ]
+      }
+    }
+  ]
+}
