@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "conceptual_building_footprints",
+  "name": "station_and_core_anchored_building_clusters",
   "crs": {
     "type": "name",
     "properties": {
@@ -17,11 +17,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "shared_lab",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30841.806,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-001",
+        "anchor_core_ref": "PROV-KEY-003",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -29,24 +34,24 @@
         "coordinates": [
           [
             [
-              116.34295,
-              39.94475
+              116.345355018,
+              39.946598426
             ],
             [
-              116.34295,
-              39.94725
+              116.34661868,
+              39.946605555
             ],
             [
-              116.34424999999999,
-              39.94725
+              116.346631017,
+              39.945308735
             ],
             [
-              116.34424999999999,
-              39.94475
+              116.345367379,
+              39.945301606
             ],
             [
-              116.34295,
-              39.94475
+              116.345355018,
+              39.946598426
             ]
           ]
         ]
@@ -61,11 +66,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "talent_service",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30839.033,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-001",
+        "anchor_core_ref": "PROV-KEY-003",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -73,24 +83,24 @@
         "coordinates": [
           [
             [
-              116.35043800000001,
-              39.950875
+              116.34945022,
+              39.946621478
             ],
             [
-              116.35043800000001,
-              39.953375
+              116.350713883,
+              39.946628562
             ],
             [
-              116.351738,
-              39.953375
+              116.350726142,
+              39.945331741
             ],
             [
-              116.351738,
-              39.950875
+              116.349462503,
+              39.945324657
             ],
             [
-              116.35043800000001,
-              39.950875
+              116.34945022,
+              39.946621478
             ]
           ]
         ]
@@ -105,11 +115,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "ai_r_and_d",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30835.968,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-002",
+        "anchor_core_ref": "PROV-KEY-003",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -117,24 +132,24 @@
         "coordinates": [
           [
             [
-              116.344666,
-              39.957875
+              116.345221424,
+              39.960609063
             ],
             [
-              116.344666,
-              39.960375
+              116.346485344,
+              39.960616195
             ],
             [
-              116.34596599999999,
-              39.960375
+              116.346497689,
+              39.959319378
             ],
             [
-              116.34596599999999,
-              39.957875
+              116.345233793,
+              39.959312246
             ],
             [
-              116.344666,
-              39.957875
+              116.345221424,
+              39.960609063
             ]
           ]
         ]
@@ -149,11 +164,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "shared_lab",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30832.828,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-002",
+        "anchor_core_ref": "PROV-KEY-003",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -161,24 +181,24 @@
         "coordinates": [
           [
             [
-              116.34919000000001,
-              39.964875
+              116.349317461,
+              39.960632126
             ],
             [
-              116.34919000000001,
-              39.967375
+              116.350581382,
+              39.960639214
             ],
             [
-              116.35049,
-              39.967375
+              116.35059365,
+              39.959342395
             ],
             [
-              116.35049,
-              39.964875
+              116.349329753,
+              39.959335308
             ],
             [
-              116.34919000000001,
-              39.964875
+              116.349317461,
+              39.960632126
             ]
           ]
         ]
@@ -193,11 +213,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "talent_service",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30829.765,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-003",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -205,24 +230,24 @@
         "coordinates": [
           [
             [
-              116.34295,
-              39.971875
+              116.345087737,
+              39.974619665
             ],
             [
-              116.34295,
-              39.974374999999995
+              116.346351914,
+              39.9746268
             ],
             [
-              116.34424999999999,
-              39.974374999999995
+              116.346364268,
+              39.973329986
             ],
             [
-              116.34424999999999,
-              39.971875
+              116.345100115,
+              39.973322851
             ],
             [
-              116.34295,
-              39.971875
+              116.345087737,
+              39.974619665
             ]
           ]
         ]
@@ -237,11 +262,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "ai_r_and_d",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30826.603,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-003",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -249,24 +279,24 @@
         "coordinates": [
           [
             [
-              116.35043800000001,
-              39.978875
+              116.34918461,
+              39.974642739
             ],
             [
-              116.35043800000001,
-              39.981375
+              116.350448789,
+              39.974649831
             ],
             [
-              116.351738,
-              39.981375
+              116.350461065,
+              39.973353016
             ],
             [
-              116.351738,
-              39.978875
+              116.34919691,
+              39.973345925
             ],
             [
-              116.35043800000001,
-              39.978875
+              116.34918461,
+              39.974642739
             ]
           ]
         ]
@@ -281,11 +311,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "shared_lab",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30823.535,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-004",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -293,24 +328,24 @@
         "coordinates": [
           [
             [
-              116.344666,
-              39.985875
+              116.344953955,
+              39.988630232
             ],
             [
-              116.344666,
-              39.988375
+              116.346218391,
+              39.988637371
             ],
             [
-              116.34596599999999,
-              39.988375
+              116.346230754,
+              39.987340561
             ],
             [
-              116.34596599999999,
-              39.985875
+              116.344966342,
+              39.987333422
             ],
             [
-              116.344666,
-              39.985875
+              116.344953955,
+              39.988630232
             ]
           ]
         ]
@@ -325,11 +360,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "talent_service",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30820.393,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-004",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -337,24 +377,24 @@
         "coordinates": [
           [
             [
-              116.34919000000001,
-              39.992875
+              116.349051665,
+              39.988653319
             ],
             [
-              116.34919000000001,
-              39.995374999999996
+              116.350316102,
+              39.988660413
             ],
             [
-              116.35049,
-              39.995374999999996
+              116.350328388,
+              39.987363601
             ],
             [
-              116.35049,
-              39.992875
+              116.349063974,
+              39.987356507
             ],
             [
-              116.34919000000001,
-              39.992875
+              116.349051665,
+              39.988653319
             ]
           ]
         ]
@@ -369,11 +409,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "ai_r_and_d",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30817.328,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-005",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -381,24 +426,24 @@
         "coordinates": [
           [
             [
-              116.34295,
-              39.999875
+              116.34482008,
+              40.002640766
             ],
             [
-              116.34295,
-              40.002375
+              116.346084774,
+              40.002647908
             ],
             [
-              116.34424999999999,
-              40.002375
+              116.346097146,
+              40.001351101
             ],
             [
-              116.34424999999999,
-              39.999875
+              116.344832476,
+              40.001343958
             ],
             [
-              116.34295,
-              39.999875
+              116.34482008,
+              40.002640766
             ]
           ]
         ]
@@ -413,11 +458,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "shared_lab",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30814.164,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-005",
+        "anchor_core_ref": "PROV-KEY-002",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -425,24 +475,24 @@
         "coordinates": [
           [
             [
-              116.35043800000001,
-              40.006875
+              116.348918628,
+              40.002663863
             ],
             [
-              116.35043800000001,
-              40.009375
+              116.350183323,
+              40.002670961
             ],
             [
-              116.351738,
-              40.009375
+              116.350195617,
+              40.001374153
             ],
             [
-              116.351738,
-              40.006875
+              116.348930945,
+              40.001367055
             ],
             [
-              116.35043800000001,
-              40.006875
+              116.348918628,
+              40.002663863
             ]
           ]
         ]
@@ -457,11 +507,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "talent_service",
+        "building_type": "lightweight_infill_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30811.095,
+        "cluster_side": "west",
+        "anchor_station_ref": "NODE-STATION-006",
+        "anchor_core_ref": "PROV-KEY-001",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 15552.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -469,24 +524,24 @@
         "coordinates": [
           [
             [
-              116.344666,
-              40.013875
+              116.344686112,
+              40.016651265
             ],
             [
-              116.344666,
-              40.016375
+              116.345951064,
+              40.016658411
             ],
             [
-              116.34596599999999,
-              40.016375
+              116.345963444,
+              40.015361606
             ],
             [
-              116.34596599999999,
-              40.013875
+              116.344698516,
+              40.01535446
             ],
             [
-              116.344666,
-              40.013875
+              116.344686112,
+              40.016651265
             ]
           ]
         ]
@@ -501,11 +556,16 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "building_type": "ai_r_and_d",
+        "building_type": "adaptive_reuse_cluster",
         "intervention": "conceptual_reuse_or_infill",
-        "area_sqm_declared": 30808.34,
+        "cluster_side": "east",
+        "anchor_station_ref": "NODE-STATION-006",
+        "anchor_core_ref": "PROV-KEY-001",
+        "siting_rule": "avoid_green_and_public_space",
+        "conflict_clearance_m": 8,
+        "area_sqm_declared": 4322.9,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -513,24 +573,48 @@
         "coordinates": [
           [
             [
-              116.34919000000001,
-              40.02
+              116.348796805,
+              40.015484738
             ],
             [
-              116.34919000000001,
-              40.0225
+              116.348838858,
+              40.015488162
             ],
             [
-              116.35049,
-              40.0225
+              116.349152439,
+              40.01556323
             ],
             [
-              116.35049,
-              40.02
+              116.34944095,
+              40.015683895
             ],
             [
-              116.34919000000001,
-              40.02
+              116.349693302,
+              40.015845517
+            ],
+            [
+              116.349899798,
+              40.016041888
+            ],
+            [
+              116.350052502,
+              40.01626546
+            ],
+            [
+              116.350054352,
+              40.016270275
+            ],
+            [
+              116.350062753,
+              40.01538467
+            ],
+            [
+              116.348797823,
+              40.015377569
+            ],
+            [
+              116.348796805,
+              40.015484738
             ]
           ]
         ]

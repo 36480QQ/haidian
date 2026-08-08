@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "ai_commons_public_spaces",
+  "name": "station_anchored_youth_commons",
   "crs": {
     "type": "name",
     "properties": {
@@ -17,11 +17,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-001",
-        "area_sqm_declared": 30366.531,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "youth maker forecourt",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -29,24 +33,24 @@
         "coordinates": [
           [
             [
-              116.345764,
-              39.94675
+              116.347365572,
+              39.945583057
             ],
             [
-              116.345764,
-              39.94875
+              116.347358383,
+              39.946339536
             ],
             [
-              116.347364,
-              39.94875
+              116.348715645,
+              39.946347169
             ],
             [
-              116.347364,
-              39.94675
+              116.348722818,
+              39.94559069
             ],
             [
-              116.345764,
-              39.94675
+              116.347365572,
+              39.945583057
             ]
           ]
         ]
@@ -61,11 +65,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-002",
-        "area_sqm_declared": 30359.634,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "open-source learning terrace",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -73,24 +81,24 @@
         "coordinates": [
           [
             [
-              116.347636,
-              39.9625
+              116.347232393,
+              39.959593702
             ],
             [
-              116.347636,
-              39.964499999999994
+              116.347225199,
+              39.960350179
             ],
             [
-              116.34923599999999,
-              39.964499999999994
+              116.348582738,
+              39.960357815
             ],
             [
-              116.34923599999999,
-              39.9625
+              116.348589916,
+              39.959601338
             ],
             [
-              116.347636,
-              39.9625
+              116.347232393,
+              39.959593702
             ]
           ]
         ]
@@ -105,11 +113,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-003",
-        "area_sqm_declared": 30353.144,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "night-study commons",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -117,24 +129,24 @@
         "coordinates": [
           [
             [
-              116.345764,
-              39.977375
+              116.34709912,
+              39.973604312
             ],
             [
-              116.345764,
-              39.979375
+              116.347091922,
+              39.974360787
             ],
             [
-              116.347364,
-              39.979375
+              116.348449738,
+              39.974368427
             ],
             [
-              116.347364,
-              39.977375
+              116.348456921,
+              39.973611952
             ],
             [
-              116.345764,
-              39.977375
+              116.34709912,
+              39.973604312
             ]
           ]
         ]
@@ -149,11 +161,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-004",
-        "area_sqm_declared": 30346.626,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "inclusive sports and play court",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -161,24 +177,24 @@
         "coordinates": [
           [
             [
-              116.347636,
-              39.99225
+              116.346965755,
+              39.987614888
             ],
             [
-              116.347636,
-              39.994249999999994
+              116.346958551,
+              39.988371361
             ],
             [
-              116.34923599999999,
-              39.994249999999994
+              116.348316644,
+              39.988379005
             ],
             [
-              116.34923599999999,
-              39.99225
+              116.348323833,
+              39.987622531
             ],
             [
-              116.347636,
-              39.99225
+              116.346965755,
+              39.987614888
             ]
           ]
         ]
@@ -193,11 +209,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-005",
-        "area_sqm_declared": 30340.515,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "student prototype market",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -205,24 +225,24 @@
         "coordinates": [
           [
             [
-              116.345764,
-              40.00625
+              116.346832296,
+              40.001625429
             ],
             [
-              116.345764,
-              40.00825
+              116.346825087,
+              40.0023819
             ],
             [
-              116.347364,
-              40.00825
+              116.348183458,
+              40.002389548
             ],
             [
-              116.347364,
-              40.00625
+              116.348190651,
+              40.001633077
             ],
             [
-              116.345764,
-              40.00625
+              116.346832296,
+              40.001625429
             ]
           ]
         ]
@@ -237,11 +257,15 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "design_precision": "conceptual_not_surveyed",
+        "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "public_space_type": "AI_commons_plaza",
+        "public_space_type": "station_anchored_youth_commons",
         "station_ref": "NODE-STATION-006",
-        "area_sqm_declared": 30335.524,
+        "anchor_type": "design_service_station",
+        "youth_friendly_program": "intergenerational AI help desk",
+        "station_distance_target_m": 0,
+        "green_relationship": "integrated hardscape clearing within the linear commons",
+        "area_sqm_declared": 9744.0,
         "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
       },
       "geometry": {
@@ -249,24 +273,24 @@
         "coordinates": [
           [
             [
-              116.347636,
-              40.017625
+              116.346698743,
+              40.015635936
             ],
             [
-              116.347636,
-              40.019625
+              116.34669153,
+              40.016392406
             ],
             [
-              116.34923599999999,
-              40.019625
+              116.348050178,
+              40.016400057
             ],
             [
-              116.34923599999999,
-              40.017625
+              116.348057377,
+              40.015643588
             ],
             [
-              116.347636,
-              40.017625
+              116.346698743,
+              40.015635936
             ]
           ]
         ]
