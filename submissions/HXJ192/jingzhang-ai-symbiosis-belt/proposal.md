@@ -524,7 +524,7 @@ iteration: "v0.1"
 - `standard_matrix.json` 覆盖全部5项mandatory专业标准
 - `design_depth_matrix.json`
 
-指标引用：[metric:site_area_sqm] [metric:ai_landmarks] [metric:ai_scenario_nodes] [metric:global_case_studies] [metric:personas] [metric:site_area] [metric:green_ratio] [metric:public_space_ratio]
+指标引用：[metric:site_area_sqm] [metric:site_area_km2] [metric:ai_landmarks] [metric:ai_scenario_nodes] [metric:global_case_studies] [metric:personas] [metric:site_area] [metric:green_ratio] [metric:public_space_ratio]
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
 
@@ -597,7 +597,7 @@ iteration: "v0.1"
 - `standard_matrix.json`
 - `design_depth_matrix.json`
 
-指标引用：[metric:site_area_sqm] [metric:ai_landmarks] [metric:ai_scenario_nodes] [metric:global_case_studies] [metric:personas] [metric:site_area] [metric:green_ratio] [metric:public_space_ratio]
+指标引用：[metric:site_area_sqm] [metric:site_area_km2] [metric:ai_landmarks] [metric:ai_scenario_nodes] [metric:global_case_studies] [metric:personas] [metric:site_area] [metric:green_ratio] [metric:public_space_ratio]
 - `sources.json`
 - `assumptions.json`
 - `self_check.json`
