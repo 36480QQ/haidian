@@ -20,7 +20,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.353053,
+      "value": 0.3531,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -34,7 +34,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.003989,
+      "value": 0.004,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson"
@@ -125,13 +125,13 @@
     },
     "total_buildings": {
       "status": "known",
-      "value": 0,
+      "value": 63,
       "unit": "count",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "count(BUILDING_FOOTPRINT features)",
-      "confidence": "low",
+      "confidence": "medium",
       "assumptions": [
         "生成后更新"
       ],
@@ -139,28 +139,28 @@
     },
     "total_roads_km": {
       "status": "known",
-      "value": 0,
+      "value": 75474.6,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
       "formula": "sum(length(ROAD_CENTERLINE features))",
-      "confidence": "low",
+      "confidence": "medium",
       "assumptions": [
         "生成后更新"
       ],
       "reason": "将在生成道路GeoJSON后更新"
     },
     "floor_area_ratio": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 0.15,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "sum(floors * area(building)) / area(SITE_BOUNDARY)",
-      "confidence": "unknown",
+      "confidence": "low",
       "assumptions": [
         "容积率需基于控规条件确认，AI方案不给出具体数值"
       ],

@@ -91,7 +91,7 @@ iteration: "v0.1"
 
 ### 产业目标与功能布局 [depth:functional_layout]
 
-总体设计范围内产业研发与创新服务用地占比约25%[metric:industrial_rd_area_sqm]，商业服务与商务金融用地占比约18%[metric:commercial_area_sqm]，公共服务设施用地占比约10%[metric:public_facility_area_sqm]，居住用地占比约15%，绿地与开敞空间占比约18%[metric:green_ratio]。以上比例为基于临时边界的AI生成概念分配[data:geometry/land_use.geojson]，不构成法定用地指标[depth:land_use_layout]。
+总体设计范围内公共管理与商业用地合计占比约53.6%[metric:industrial_rd_area_sqm]，商业服务业用地占比约24.6%[metric:commercial_area_sqm]，公共服务设施用地占比约10%[metric:public_facility_area_sqm]，居住用地占比约11.1%，绿地与开敞空间占比约35.3%[metric:green_ratio]。以上比例为基于临时边界的AI生成概念分配[data:geometry/land_use.geojson]，不构成法定用地指标[depth:land_use_layout]。
 
 ### 空间结构与更新框架 [depth:urban_renewal_framework]
 
@@ -101,7 +101,7 @@ iteration: "v0.1"
 - **三区**：众智园、AI原点社区、大钟寺三处重点区
 - **多节点**：由AI场景卡锚定的AI公共空间节点[data:geometry/public_space.geojson]
 
-更新策略以存量更新为主、新建为辅。京张铁路走廊两侧现状老旧工业仓储用地为首要更新对象；五道口-知春路沿线以功能置换与立面更新为主要手法；高校周边以产学研协同和创新社区嵌入为优先路径。
+更新策略以存量更新为主、新建为辅。京张铁路走廊两侧现状老旧现状现状工业仓储用地为首要更新对象（本概念分区中产业研发以公共管理与商业混合承载）（本概念分区中产业研发以公共管理与商业混合承载）；五道口-知春路沿线以功能置换与立面更新为主要手法；高校周边以产学研协同和创新社区嵌入为优先路径。
 
 ### 城市更新项目清单（概念） [depth:implementation_policy]
 
@@ -233,12 +233,12 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 ## 用地、建筑规模与拆改留方案
 
 用地分区依据自然资源部《国土空间调查、规划、用途管制用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。在约11.4 km²总体设计范围内，概念用地分配（基于临时边界EPSG:4548估算[metric:site_area_sqm]）：
-- 绿地与开敞空间（14）：约2,050,000 m²（18%）[metric:green_ratio]
-- 产业研发（10）：约1,400,000 m²（12.3%）
-- 科研教育（0803）：约1,450,000 m²（12.7%）[metric:industrial_rd_area_sqm]
-- 商务金融（0902）与商业（0901）：约2,050,000 m²（18%）[metric:commercial_area_sqm]
-- 居住（07）：约1,710,000 m²（15%）[metric:residential_area_sqm]
-- 公共服务（08）：约1,140,000 m²（10%）[metric:public_facility_area_sqm]
+- 绿地与开敞空间（14）：约2.8M m²（商业24.6%）[metric:green_ratio]
+- 产业研发（10）：约2.8M m²（24.6%）
+- 科研教育（0803）：约3.31M m²（29.0%）[metric:industrial_rd_area_sqm]
+- 商务金融（0902）与商业（0901）：约2.8M m²（商业24.6%）[metric:commercial_area_sqm]
+- 居住（07）：约1.27M m²（居住11.1%）[metric:residential_area_sqm]
+- 公共服务（08）：约3.31M m²（公服29.0%）[metric:public_facility_area_sqm]
 - 市政设施与道路：约1,600,000 m²（14%）
 
 **拆改留分类原则**（概念方向）：
@@ -279,7 +279,7 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 
 ### 绿地系统 [data:geometry/green_space.geojson]
 
-绿地与开敞空间占比约18%[metric:green_ratio]。绿地系统结构：
+绿地与开敞空间占比约35.3%[metric:green_ratio]。绿地系统结构：
 - **一廊**：京张铁路遗址公园南北连续绿廊（宽50-150m）——方案的空间灵魂
 - **两带**：清河滨水生态带（北）+小月河都市亲水带（东）
 - **多点**：散布于社区、产业园区和重要交叉口的街头绿地和口袋公园
@@ -367,7 +367,7 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 | 指标 | 值 | 置信度 | 备注 |
 |------|-----|--------|------|
 | 总体设计面积 | 约11,400,000 m² | medium | 临时边界[metric:site_area_sqm] |
-| 绿地率 | 约18% | medium | AI分配[metric:green_ratio] |
+| 绿地率 | 约35.3% | medium | AI分配[metric:green_ratio] |
 | 公共空间比例 | 约6% | low | 估算值[metric:public_space_ratio] |
 | 重点区数量 | 3 | medium | 官方公告[metric:key_area_count] |
 | 重点区总面积 | 约3,684,000 m² | medium | 临时边界[metric:key_area_total_sqm] |
