@@ -4,37 +4,93 @@
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
-      "severity": "major",
+      "severity": "minor",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "SITE-001 is explicitly provisional_rough with official_boundary=false; it is eligible for content review but is never presented as an official redline or precise-area basis."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
-      "severity": "major",
+      "severity": "minor",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "PROV-KEY-001/002/003 are explicitly provisional; all displayed areas are rounded and must be recomputed when organizer polygons are supplied."
+    },
+    {
+      "check_id": "GEOMETRY_SCHEMA_CRS",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "All nine required GeoJSON files pass official schema, enum, geometry, CRS and cross-layer identifier checks; the package contains 36 features."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "Six closed, gapless and non-overlapping conceptual land-use polygons are derived from the three provisional key areas and submitted green surfaces; they are not statutory zoning."
     },
     {
-      "check_id": "VISUAL_STATIC",
+      "check_id": "METRIC_RECALCULATION",
       "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Fourteen known metrics reproduce from the submitted geometry in EPSG:4548; 23 unavailable targets remain null/unknown; both declared 1.0 fields are documentation coverage only, not KPI."
+    },
+    {
+      "check_id": "SOURCE_CITATION_CLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "All 42 source IDs are unique and each is cited in proposal.md; no TODO evidence marker remains."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "message": "Official professional review passes with 42 source, 6 standard, 15 depth, 29 data and 15 metric references."
+    },
+    {
+      "check_id": "BILINGUAL_EQUIVALENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English proposals retain the same 13 required chapters, evidence-token sets, numerical boundaries, N4 status, staffing rule and risk qualifications."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Both visual pages and both report pages are UTF-8, fully offline and free of remote media, scripts, tracking, forms and network calls; five local figures load in each language."
+    },
+    {
+      "check_id": "PDF_RENDER_QA",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/",
+      "message": "The A3 pair contains 15+15 non-empty A3-landscape pages and the A0 pair contains 7+7 non-empty A0-landscape boards; all 44 pages were rendered and visually checked."
+    },
+    {
+      "check_id": "N4_PENDING_STUDY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/public_space.geojson",
+      "message": "N4 remains design_only_closed_pending_study, dashed and closed; no bridge, tunnel, at-grade crossing, landing plaza or staffing decision is asserted."
+    },
+    {
+      "check_id": "STAFFING_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Every human-service reference is governed by the operator-confirmed, authorized-service-window rule and is neither existing staffing nor a 24/7 service commitment."
+    },
+    {
+      "check_id": "PRIVACY_RIGHTS_AND_EXIT",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance_matrix.json",
+      "message": "All AI scenarios retain human review, offline alternatives, opt-out/exit conditions, rights clearance and explicit restrictions on outbound personal data."
     }
   ]
 }

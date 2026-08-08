@@ -4,12 +4,10 @@ author_github: "harry-water"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；中英文正文、42 条来源、概念几何、指标、假设、五对双语图件、双语 HTML 及 A3/A0 PDF 对均已形成并通过本轮内部检查；manifest 清单与哈希刷新、scaffold 标记移除及包终态化仍待完成。"
+summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；中英文正文、42 条来源、概念几何、指标、假设、五对双语图件、双语离线 HTML 及 A3/A0 PDF 对均已形成；manifest 以 ready_for_review 登记全包清单和哈希。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
-
-<!-- SCAFFOLD-DRAFT: replace the generated design content, figures, geometry, and drawings; then set manifest.package_state to ready_for_review. -->
 
 # 海淀新轴：百年京张，从运煤到运算
 
@@ -535,7 +533,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 回到第一章的主线，本章是它的最后一环：**遗产主线 → 三站分工 → 两翼供给/反馈 → 六类空间原型 → 十个运行场景 → 一套年度账本**。账本不是附加的统计工作，而是唯一能反过来判断前五环是否仍然成立的手段——主线是否仍连续、站点是否仍差异化、原型是否被用对、场景是否仍保留退出权，都在年度审计中被重新检验。
 
-**当前包状态说明**：本包 `package_state` 仍为 `scaffold`，`SCAFFOLD-DRAFT` 标记保留；中英文完整正文、42 条已登记来源、概念几何、指标、假设（`geometry/*.geojson`、`metrics.json`、`assumptions.json`）、五对双语图件、双语 HTML 与 A3/A0 PDF 对均已形成并通过本轮内部检查，**正文中的指标引用即指向上述内部检查通过的复算口径与数值（低置信度、临时边界口径）**；manifest 清单与哈希刷新、scaffold 标记移除与包终态化仍待完成，在这些终态化事项关闭之前包状态保持不变。
+**当前包状态说明**：本包 `package_state` 为 `ready_for_review`；中英文完整正文、42 条已登记来源、概念几何、指标、假设（`geometry/*.geojson`、`metrics.json`、`assumptions.json`）、五对双语图件、双语离线 HTML 与 A3/A0 PDF 对均已形成，manifest 统一登记全包清单、双语映射与哈希。**正文中的指标引用指向该包内的复算口径与数值（低置信度、临时边界口径）**；此后任何已登记文件变更都必须刷新相应哈希并重新运行完整校验。
 
 **设计判断**：把指标按可复算／待官方条件／待长期校准三类分开，并把 14 项 `known` 指标与 `metrics.json` 同源对照、明确其机器值与展示口径。
 **判断理由**：把机器精确值与展示圆整值、申报口径分开，才能既保证同源可审计，又不把临时边界的复算冒充规划精度；分类表述让集成方准确知道官方数据到位后该重算什么。
@@ -550,7 +548,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **隐私与人工否决风险**：所有 AI 场景都必须保留人工复核、离线替代与退出条件；人工可以否决自动化处置结论；不采集个人身份、生物特征、未成年人、健康与轨迹数据用于外送任务；不将居民画像用于商业推荐。若任一场景无法满足这三项，应当停止该场景而不是降低标准。
 
-**版权与合规**：所有图片、图纸、图标、字体、数据与代码资产的来源、许可与授权状态须在 `sources.json` 与 `report/copyright_statement.md` 中登记；不使用未授权的商标、肖像、论文图像与版权材料；不复制北京中轴线或世界遗产官方视觉。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。主文件为中文，`proposal.en.md` 提供完整等义译文；英文图件、HTML 与 PDF 尚待同源生成。
+**版权与合规**：所有图片、图纸、图标、字体、数据与代码资产的来源、许可与授权状态须在 `sources.json` 与 `report/copyright_statement.md` 中登记；不使用未授权的商标、肖像、论文图像与版权材料；不复制北京中轴线或世界遗产官方视觉。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。主文件为中文，`proposal.en.md` 提供完整等义译文；五对英文图件、英文离线 HTML 与英文 A3/A0 PDF 已与中文版本同源生成并登记。
 
 **协议依赖风险**：海乌相关的调度、账本与测试场景全部依赖项目专属协议；在项目专属的协议、SLA 或数据集被提供给本提交并核验之前，账本只能是空表结构与计量口径，相关场景卡只能以测试规范形式存在。
 
@@ -591,5 +589,5 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **设计判断**：参考资料分为“仓库内依据”“已登记外部一手来源索引”“机器可读引用索引”三段，35 条外部来源已逐条登记 `sources.json` 并在正文标注引用，唯官方控制线数据仍如实标注为未登记缺口，不为其编造标识。
 **判断理由**：本方案的核心主张大量依赖仓库外的公开一手材料；逐条登记并标注 `authority_level`、`usage`、`risk_note` 才能让审查方复核每一句设计判断的证据等级，而不是把一批材料笼统合并成一条来源；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
-**图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条 scaffold + 35 条已登记）、6 条 standard、15 条 depth、15 项 metric（14 项 `known` 与 1 项 `unknown`）与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
-**资料缺口**：官方控制线数据仍未登记，见上文“未解决的来源缺口”；英文图件、HTML 与 PDF 尚未生成。
+**图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条初始仓库依据 + 35 条已登记外部来源）、6 条 standard、15 条 depth、15 项 metric（14 项 `known` 与 1 项 `unknown`）与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
+**资料缺口**：官方控制线数据仍未登记，见上文“未解决的来源缺口”；双语图件、HTML 与 PDF 已生成，缺口仅保留在组织方尚未提供的官方边界、控制线与现状资料。
