@@ -320,6 +320,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
++    {
+      "id": "POL-023",
+      "title": "互操作与数据可携带闸门",
+      "policy_instrument": "interoperability_and_portability_gate",
+      "enterprise_stage": "pilot_to_scale",
+      "problem": "A successful pilot can become a lock-in if data, evaluation results and service workflows cannot move to another supplier or a manual route.",
+      "jingzhang_interface": "Before a second S08/S09 window, require exportable records, documented interfaces, human-readable formats, replacement drill and a public-service continuity plan.",
+      "operator": "enterprise architecture lead + service owner + procurement reviewer",
+      "required_evidence": [
+        "interface note",
+        "portable export sample",
+        "replacement drill",
+        "continuity plan",
+        "manual fallback"
+      ],
+      "metric": "scaled_pilots_with_portable_records_and_replacement_drill",
+      "stop_gate": "Non-exportable material records or a failed replacement drill blocks scale-up.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-AMSTERDAM-ALGORITHM-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
