@@ -76,6 +76,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-017",
+      "title": "企业试点扩容或退出复盘卡",
+      "policy_instrument": "scale_or_retire_review",
+      "enterprise_stage": "post_pilot_decision",
+      "problem": "A pilot can survive because it is visible, not because it works; a public innovation belt needs an explicit way to stop, revise or hand over a service.",
+      "jingzhang_interface": "At the end of each S02/S04/S08/S09 window, compare baseline, manual alternative, public benefit, risk, maintenance burden and cost, then choose scale, revise, hold or retire.",
+      "operator": "review panel with service owner, supplier, residents/SMEs and safety/data reviewers",
+      "required_evidence": ["before/after record", "manual comparator", "complaint and incident summary", "decision rationale"],
+      "metric": "pilots_with_documented_scale_revise_hold_or_retire_decision",
+      "stop_gate": "No independent review or no documented exit decision means the pilot cannot renew its token.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-010",
       "title": "共享算力与低碳服务准入",
       "policy_instrument": "shared_compute_and_energy_gate",
