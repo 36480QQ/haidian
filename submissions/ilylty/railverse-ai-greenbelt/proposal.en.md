@@ -71,6 +71,16 @@ All three key areas use provisional boundaries ([data:geometry/key_areas.geojson
 
 **10 AI scenario cards (incl. 3 industry test/validation scenarios)**: 01 open-source showcase; 02 innovation corridor; 03 LLM benchmark testing (Velocity); 04 safety governance red-team lab (test); 05 open city scenarios · traffic/health AI assist (test, Xiaoyuehe corridor); 06 AI heritage guide along Heritage spine; 07 smart navigation; 08 smart retail; 09 AI legal consultation (human-in-the-loop); 10 city-brain experience hall. [metric:ai_scenario_card_count]=10, [metric:user_persona_count]=6. Every scenario states data source, privacy boundary (de-identification, consent, human review), operator (conceptual).
 
+### Scenario–Space–Operations Matrix
+
+Each of the 10 cards maps one-to-one to a `public_space.geojson` node (SC-01..SC-10) with a conceptual operator, human takeover point, exit gate, and monitorable indicator (baselines pending official data) [data:geometry/public_space.geojson#PUBLIC-001] [metric:ai_scenario_card_count]. Example rows: SC-01 LLM benchmark → Zhongzhiyuan operator, dual-sign review, delist on failed benchmark, metrics = pass rate / false-positive rate; SC-09 legal consultation → law firm, lawyer review, transfer-to-human when unverifiable, metrics = human-transfer rate / review turnaround.
+
+### Safety-assurance plan for the 3 industrial test/validation scenarios**
+SC-01 (LLM benchmark): risk = test-data leakage; controls = de-identified closed loop, version-locked benchmark set, human review; emergency = immediate offline on anomalies; review = quarterly transparency report. SC-02 (red-team drill): risk = script reaching live systems; controls = isolated network/sandbox, least privilege, safety-officer emergency stop; emergency = disconnect environment; review = annual red-blue post-mortem. SC-03 (mid-test & standards building): risk = transitional equipment impact; controls = buffer zone, structural/fire review; emergency = halt nonconforming items; review = defect closure list per batch. All three require an operator + safety guardian + public observer trio; no public demo without all three present [depth:risk_missing_data].
+
+### Vulnerable- and low-digital-literacy guarantee**
+Accessibility is embedded in five layers: (1) spatial — barrier-free routes, handrails, tactile paving, rest seats at all public nodes (concept requirement, pending accessibility review); (2) service — every AI scenario carries a non-AI fallback (in-person counter/phone/on-site assistant); no digital service is the only entry; (3) language — bilingual signage, graphic symbols, voice; (4) governance — accessibility issue-closure rate enters project KPIs (R-01), collected via community survey and on-site observation; (5) exception — elderly, children, persons with disabilities, and low-digital-literacy users may refuse AI service and switch to human service; no personal tracking profiles.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish
 
 Land use [data:geometry/land_use.geojson#LU-001~005] fully covers the site with no gaps/overlaps; building footprints [BLDG-001~004] are conceptual ([metric:building_footprint_area_sqm]); demolish decisions withheld until official baseline data ([depth:retain_renovate_demolition]).
