@@ -10,6 +10,40 @@
   },
   "assets": [
     {
+      "path": "assets/figures/construction-participation.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "f14ad536c21903aac95e92daec404dade8ad1e702d8b94b453edab8b2a458743"
+    },
+    {
+      "path": "assets/figures/construction-participation.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "df0393705911726e1533280eb6aca1c76e51efebdc1e9dd237191d9020300b04"
+    },
+    {
       "path": "agent.json",
       "asset_class": "metadata_or_matrix",
       "author": "许丙南 / Codex",
