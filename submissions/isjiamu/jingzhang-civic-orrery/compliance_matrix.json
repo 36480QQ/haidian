@@ -45,7 +45,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -98,7 +99,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -151,7 +153,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -204,7 +207,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -257,7 +261,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -310,7 +315,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY",
+        "A-PROVISIONAL-KEY-AREAS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -363,7 +370,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -416,7 +424,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -469,7 +478,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -522,7 +532,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -575,7 +586,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-MOBILITY-CONNECTIONS",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -628,7 +641,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -681,7 +695,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -734,7 +749,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY",
+        "A-PROVISIONAL-KEY-AREAS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -787,7 +804,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY",
+        "A-PROVISIONAL-KEY-AREAS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -840,7 +859,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY",
+        "A-PROVISIONAL-KEY-AREAS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -893,7 +914,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY",
+        "A-PROVISIONAL-KEY-AREAS"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -946,7 +969,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -999,7 +1023,10 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE",
+        "A-NO-SENSING-SPACE",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1052,7 +1079,10 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE",
+        "A-NO-SENSING-SPACE",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1105,7 +1135,10 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE",
+        "A-NO-SENSING-SPACE",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1158,7 +1191,10 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE",
+        "A-NO-SENSING-SPACE",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1211,7 +1247,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OPERATIONS",
+        "A-PROVISIONAL-BOUNDARY"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
