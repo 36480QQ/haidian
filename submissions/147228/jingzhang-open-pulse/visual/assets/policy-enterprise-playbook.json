@@ -504,6 +504,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-031",
+      "title": "公共价值回流与收益边界卡",
+      "policy_instrument": "public_value_shareback_condition",
+      "enterprise_stage": "product_market_fit_with_public_users",
+      "problem": "An enterprise can learn from a public test and capture private value without returning evidence, service improvements or a clear boundary on public data use.",
+      "jingzhang_interface": "Before S08/S09 expansion, publish what the company receives, what the public receives, which data remain excluded, how corrections return to the service and whether the window is still non-commercial.",
+      "operator": "service owner + enterprise accountable executive + community reviewer",
+      "required_evidence": [
+        "value exchange note",
+        "data-use boundary",
+        "public improvement commitment",
+        "correction loop",
+        "commercial-status notice"
+      ],
+      "metric": "public_pilots_with_explicit_value_exchange_and_data_boundary",
+      "stop_gate": "Unstated commercial reuse, no public improvement or an unbounded data claim prevents expansion.",
+      "source_ids": [
+        "CASE-DECIDIM-BARCELONA",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
