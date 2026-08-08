@@ -33,7 +33,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 682799.988,
+      "value": 694642.969,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -41,7 +41,7 @@
       "formula": "sum(polygon_area(public_space_projected))",
       "confidence": "medium",
       "assumptions": [
-        "Three key-area plaza nodes; public realm may be larger when combined with green space."
+        "Three key-area plaza nodes plus 10 AI scenario nodes (SC-01..SC-10); public realm may be larger when combined with green space."
       ]
     },
     "building_footprint_area_sqm": {
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.059827,
+      "value": 0.060865,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",

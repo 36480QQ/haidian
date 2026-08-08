@@ -36,10 +36,13 @@ The proposal follows the official three-level scope: 43.6 km² coordinated resea
 ## Coordinated Research Area: Industry and Future City Researches
 
 ### Concept and Naming (agent.1)
-**Jingzhang Zhimai (RailLink)**: "rail" connects the century-old Jing-Zhang Railway heritage; "link" connects history/future and the city to the world. Naming: Origin Hub (AI Origin Community), Velocity Hub (Zhongzhiyuan), Milestone Hub (Dazhongsi), Capital Wing (Zhongguancun service), Scenario Lane (Xiaoyuehe empowerment). Logo direction: three rails converging into a luminous node; rust-red + tech-blue + Haidian-green; original concept only.
+**Jingzhang Zhimai (RailLink)**: "rail" connects the century-old Jing-Zhang Railway heritage; "link" connects history/future and the city to the world. Naming: Origin Hub (AI Origin Community), Velocity Hub (Zhongzhiyuan), Milestone Hub (Dazhongsi), Capital Wing (Zhongguancun service), Scenario Lane (Xiaoyuehe empowerment). Logo direction: three rails (rust-red=culture, tech-blue=AI, Haidian-green=ecology) converging into a signal-light node; original concept only.
+
+### Four Clearance Gates (railway signal-block method)
+This proposal's core method mirrors the railway signal-block system: **Gate ① Data Clearance** (source, license, de-identification), **Gate ② Human Review** (professional verification, safety testing), **Gate ③ Public Trial** (time-boxed trial, appeal, exit), **Gate ④ Operations Ledger** (public ledger, KPI tracking, annual review). A scenario cannot enter the next gate without passing the previous one; no AI scenario enters public trial without human takeover and a non-AI fallback.
 
 ### Global Case Research (agent.2, 5–8 examples)
-① Silicon Valley (university-venture-enterprise axis); ② Kendall Square (mixed lab-incubator-enterprise campus); ③ King's Cross, London (former rail station turned knowledge district); ④ Tel Aviv (civil-military fusion); ⑤ Shenzhen Nanshan (park-within-park + public platforms); ⑥ Hangzhou Cloud Town / City Brain (scenario-city); ⑦ Tsukuba (R&D + slow life); ⑧ festival-driven brand spillover (SXSW). [source:CASE-STUDIES]
+① Silicon Valley (university-venture-enterprise axis); ② Kendall Square (mixed lab-incubator-enterprise campus); ③ King's Cross, London ([source:CASE-KINGS-CROSS]); ④ Tel Aviv ([source:CASE-TEL-AVIV]); ⑤ Shenzhen Nanshan ([source:CASE-SHENZHEN-NANSHAN]); ⑥ Hangzhou Cloud Town / City Brain ([source:CASE-HANGZHOU-YUNQI]); ⑦ Tsukuba ([source:CASE-TSUKUBA]); ⑧ festival-driven brand spillover ([source:CASE-ANNUAL-EVENTS]).
 
 ### Five Functions and 3+2 Coordination
 AI full-stack self-reliance → Zhongzhiyuan; world-class AI ecology → Origin Community; AI+ scenario empowerment → Xiaoyuehe Wing; intelligent vibrant city → city-wide smart infrastructure; global AI governance voice → Zhongzhiyuan governance exhibition center.
@@ -66,7 +69,7 @@ All three key areas use provisional boundaries ([data:geometry/key_areas.geojson
 
 **5 personas**: researchers/students; open-source developers; startups; AI company staff/international talent; residents.
 
-**10 AI scenario cards (incl. 3 industry test/validation scenarios)**: 01 open-source showcase; 02 innovation corridor; 03 LLM benchmark testing (Velocity); 04 safety governance red-team lab (test); 05 open city scenarios · traffic/health AI assist (test, Xiaoyuehe corridor); 06 AI heritage guide along Heritage spine; 07 smart navigation; 08 smart retail; 09 AI legal consultation (human-in-the-loop); 10 city-brain experience hall. [metric:ai_scenario_card_count]=10, [metric:user_persona_count]=5. Every scenario states data source, privacy boundary (de-identification, consent, human review), operator (conceptual).
+**10 AI scenario cards (incl. 3 industry test/validation scenarios)**: 01 open-source showcase; 02 innovation corridor; 03 LLM benchmark testing (Velocity); 04 safety governance red-team lab (test); 05 open city scenarios · traffic/health AI assist (test, Xiaoyuehe corridor); 06 AI heritage guide along Heritage spine; 07 smart navigation; 08 smart retail; 09 AI legal consultation (human-in-the-loop); 10 city-brain experience hall. [metric:ai_scenario_card_count]=10, [metric:user_persona_count]=6. Every scenario states data source, privacy boundary (de-identification, consent, human review), operator (conceptual).
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish
 
