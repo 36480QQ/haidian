@@ -27,6 +27,7 @@ from validate_submission import ValidationReport, format_report, validate_submis
 COMMENT_MARKER = "<!-- haidian-submission-validation -->"
 API_ROOT = "https://api.github.com"
 MAX_API_ATTEMPTS = 4
+MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024
 MAX_RETRY_DELAY_SECONDS = 30
 RETRYABLE_METHODS = frozenset({"GET", "HEAD", "OPTIONS"})
 RETRYABLE_STATUS_CODES = frozenset({429, 500, 502, 503, 504})
@@ -135,7 +136,7 @@ class GitHubClient:
         path: str,
         ref: str,
         destination: Path,
-        max_bytes: int = 6 * 1024 * 1024,
+        max_bytes: int = MAX_DOWNLOAD_BYTES,
     ) -> None:
         # Fetch raw bytes through the Contents API on api.github.com. Unlike the
         # github.com raw_url, this honors the Bearer token on private repos (the

@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.3"
+iteration: "v1.6.4"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -295,13 +295,11 @@ These are system and basis proposals; actual provision ratios, capacity and conn
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-These interfaces have to hold at once: a staffed counter, a reachable physical stop control, machine service confined to its own lane, and an accessible path that is never interrupted. The rendering below places them in a single section.
+The concept contains 2,264,695.802 m² of green space [metric:green_space_area_sqm], a 0.198434 ratio [metric:green_ratio], and 1,039,257.211 m² of public handover ground [metric:public_space_area_sqm], a 0.091060 ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
 
-![Concept rendering of the handover interface: duty staff handing over in person, a physical stop control beside the footway, a delivery robot confined to its own lane, and a continuous accessible path alongside a staffed counter](assets/figures/handover-scene.en.jpg)
+Whether the public interface holds does not depend on how well any single fitting is made; it depends on the order of the elements. The staffed counter, the continuous accessible walk and the physical stop control must stay continuously reachable, and the machine-only lane never comes between them; the retained track sits flush in the paving as a trace rather than an obstacle. The section below fixes only that layer — order and adjacency. Widths, levels and construction depend on road redlines and survey data the public package does not supply, so the drawing carries no dimensions, and road area and road ratio stay unassigned in metrics.json as [metric:road_area_sqm] and [metric:road_ratio].
 
-The image above is an **AI-generated concept rendering** [source:IMAGEGEN-CONCEPT-SCENE]. It is not a photograph, a survey or an approved scheme; the people in it are fictional and it identifies no real place, organisation or brand. It illustrates one thing only — what a public interface roughly looks like when human takeover, a physical stop control, a robot-only lane and a continuous accessible path all have to coexist. The model, the full prompt, the intended use and the limits are recorded in report/copyright_statement.md and sources.json. Every recomputable spatial conclusion still rests on the nine geometry layers and metrics.json, never on a drawing.
-
-The concept contains about 226.5 hectares of green space [metric:green_space_area_sqm], an approximately 19.8% ratio [metric:green_ratio], and about 103.9 hectares of public handover ground [metric:public_space_area_sqm], an approximately 9.1% ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
+![The handover section: the order and adjacency rules binding counter, accessible walk, Takeover Kiosk Zero, retained track, machine-only lane and planting; no dimensions expressed](assets/figures/handover-scene.en.jpg)
 
 Public space is not custom-built once; it runs on a component library that can be repeated, removed and maintained. Ten components share the coal-black / signal-red / electric-cyan / bone-white vocabulary and one signage rule, so any of them can be added or withdrawn without altering its surroundings. No component carries camera or face-recognition capability; the smart layer is always a removable accessory.
 

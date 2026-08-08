@@ -443,6 +443,10 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 `visual/assets/participation-cycle.json` 把回传循环写成可读日志：同步输入—重读变化—比较同类—验证包体—发布可审阅草案—建立现场与公共基线—有人值守窗口—回传负面和分布差异—保留、改造或退出。七类参与镜头均提供纸面、人工、多语种或无 App 路径。[metric:participation_lens_count] 本包目前只把主干同步、本地校验和同类比较记为已知的审阅活动；现场基线、居民咨询和公共试点仍为 `unknown` 或 `not_started`，不推断居民同意、微气候结果或健康收益。
 
+![建设闸门与参与状态](assets/figures/construction-participation.png)
+
+这张固定证据图把五道闸门和参与状态放在同一张审阅面：`known` 仅限主干同步、本地校验和同类比较；现场基线、居民咨询和公共试点仍为 `unknown` / `not_started`。它是 JSON 记录的可视化索引，不是施工图、许可证明、居民同意或现场绩效结果。
+
 ## v1.8 评审可见证据层：定位、功能、节点与公共性一页回读
 
 v1.7 的机器可读资产保留不变；v1.8 把最影响内容评分的证据直接写回 `proposal.md`，让不打开附加 JSON 的评审者也能逐项复核。这一节只复述任务书和本方案的概念接口，不把设计建议升级为政府决策或法定规划条件。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]

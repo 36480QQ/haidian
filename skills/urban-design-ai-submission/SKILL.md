@@ -174,7 +174,7 @@ submission/
     index.html
 ```
 
-`proposal.md` is the primary-language human-readable proposal; its `.zh.md` or `.en.md` companion is an equivalent translation, not a second proposal. `report/proposal.html` is the rendered offline reading version of the primary Markdown, used to make figures, captions, and evidence tags display consistently for human reviewers. `geometry/*.geojson`, `metrics.json`, `sources.json`, `assumptions.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `compliance_matrix.json` are evidence and recomputation data. PDFs and `visual/index.html` help humans understand the proposal, but they must not contradict machine-readable data.
+`proposal.md` is the primary-language human-readable proposal; its `.zh.md` or `.en.md` companion is an equivalent translation, not a second proposal. New proposals set `proposal_format_version: "2"` in front matter. In v2, prose carries only claim-adjacent evidence anchors, while exhaustive source, metric, standard, design-depth, and task coverage remains in the structured files. Files without this field are legacy v1 and remain valid. `report/proposal.html` is the rendered offline reading version of the primary Markdown. `geometry/*.geojson`, `metrics.json`, `sources.json`, `assumptions.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `compliance_matrix.json` are the complete evidence and recomputation layer. Read `references/human-readable-proposal.md` before writing or repairing proposal prose.
 
 ## Hard Rules
 
@@ -188,8 +188,10 @@ submission/
 - Every agent-open-call task in `agent_taskbook.json` (`agent.1` through `agent.6`) must be covered in `compliance_matrix.json` and explained in `proposal.md`.
 - Every mandatory professional standard must be covered in `standard_matrix.json`.
 - Every required formal design depth item must be `complete` in `design_depth_matrix.json`.
-- `proposal.md` must cite evidence with `[source:...]`, `[standard:...]`, `[depth:...]`, `[data:geometry/file.geojson#feature]`, and `[metric:...]`.
-- `proposal.md` is the top-priority human-readable deliverable. Every chapter must explain the design intent, why the spatial move is proposed, how the GeoJSON/metrics support it, and what data gaps remain. Do not submit a matrix dump, slogan text, or generic planning prose.
+- New `proposal.md` files must set `proposal_format_version: "2"`. Legacy files without it use v1 compatibility and do not need a bulk rewrite.
+- In v2, each required chapter must cite at least one directly relevant item using `[source:...]`, `[standard:...]`, `[depth:...]`, `[data:geometry/file.geojson#feature]`, or `[metric:...]`. Do not repeat every structured record in prose: exhaustive coverage belongs in the JSON/GeoJSON and matrix files.
+- Keep no more than three evidence markers adjacent to one claim and no more than eight in one paragraph or content block. A sentence must remain natural and complete after its evidence markers are removed.
+- `proposal.md` is the top-priority human-readable deliverable. Every chapter must explain the design intent, why the spatial move is proposed, how the GeoJSON/metrics support it, and what data gaps remain. Use human labels such as “待正式数据补齐” in prose instead of raw status codes such as `unknown`. Do not submit a matrix dump, identifier appendix, slogan text, or generic planning prose.
 - The six agent taskbook requirements must become readable proposal content: naming/Logo and identity system, 5-8 AI ecosystem cases, at least 10 scenario cards, at least 3 industry test/validation scenarios, at least 5 user personas, at least 3 AI pilgrimage landmarks or honor-display nodes, cultural narrative, and long-term global AI event/community operation.
 - All agent taskbook spatial ideas must be worded as conceptual suggestions, reference schemes, or material for professional teams to deepen. Do not state them as statutory planning, approved government action, confirmed implementation, investment commitment, engineering feasibility, or parcel-level demolition/renovation conclusion.
 - `proposal.md` must embed local derived figures using Markdown image syntax. Required figures are `assets/figures/site-overview.png`, `assets/figures/land-use-structure.png`, `assets/figures/key-areas.png`, `assets/figures/mobility-bluegreen.png`, and `assets/figures/metrics-evidence.png`. These figures must be generated from the same GeoJSON, metrics, matrices, and self-check state; they are for human readability and cannot replace JSON/GeoJSON as authoritative data.
@@ -242,6 +244,13 @@ Do not hand-draw adjacent polygons independently. Adjacent land-use polygons mus
 
 Short concept text is invalid for formal submission.
 
+The report has two coordinated layers:
+
+- Human reading layer: title, summary, design judgments, spatial moves, figures, metrics explained in context, implementation logic, and limitations. It must be understandable without opening JSON.
+- Machine audit layer: complete sources, assumptions, metrics, geometry, compliance, standards, and design-depth records. Keep complete indexes here and let the proposal viewer expose them on demand.
+
+Do not solve machine completeness by appending a paragraph of identifiers. The validator checks structured completeness independently for v2 and rejects dense inline evidence dumps. The viewer still recognizes and condenses legacy v1 marker runs so older proposals remain readable.
+
 ## Workflow
 
 1. Create or verify the blobless sparse participant workspace described in `references/lightweight-workspace.md`; do not fully clone `submissions/`.
@@ -262,4 +271,5 @@ Short concept text is invalid for formal submission.
 - For package authority and file roles, read `references/submission-package.md`.
 - For geometry, layer, and metric rules, read `references/geometry-and-metrics.md`.
 - For validation feedback format, read `references/validator-feedback.md`.
+- For proposal format v2, claim-adjacent citations, human wording, and v1 display compatibility, read `references/human-readable-proposal.md`.
 - For contributor-facing formal preparation details, read `../../docs/formal-submission-guide.md`.
