@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-interest proving ground where urban AI must earn trust before it scales."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.2"
-iteration: 3
+version: "1.3"
+iteration: 4
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-> **v1.2 review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+> **v1.3 review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 **Motto: Every urban intelligence must withstand public scrutiny.**
 
@@ -125,6 +125,31 @@ International line: **A century-old railway becomes an open civic proving ground
 - After 36 months: select elements for statutory/specialist development through lawful process and human judgment.
 
 The Public Value Committee includes resident and accessibility representatives; separate technology/safety, spatial/heritage, independent evaluation and operations teams hold defined duties. High-impact health, safety, rights, enforcement or allocation decisions are never automated. Data collection defaults to off; where necessary it is minimised, purpose-separated, time-limited, revocable and auditable.
+
+## Six task contracts and eight action packages
+
+The six taskbook items are converted from a compliance index into delivery contracts. Each names a spatial carrier, first deliverable, accountable interface, acceptance evidence and an explicit non-claim. Agent.1 delivers a quarterly problem–capability–scenario map rather than an invented investment list. Agent.2 delivers the heritage civic spine, five interfaces and an official-data replacement list rather than statutory controls. Agent.3 delivers one ordinary-day prototype in each key area rather than three interchangeable AI parks. Agent.4 delivers twelve scenario cards, three pilots, Agent Passports and public evaluation cards rather than automated high-impact decisions. Agent.5 delivers fact-checked bilingual wayfinding, failure cases and contributor records rather than unlicensed imagery. Agent.6 delivers action packages, gates, resource ledgers and exit provision rather than an unverified budget or operator.
+
+|Package|Minimum deliverable|Dependency|Hard stop / acceptance|
+|---|---|---|---|
+|AP0 evidence base|Official-data replacement list and registers for title, heritage, fire, utilities, flood and accessibility|Authoritative records and licensed professionals|No siting while coordinate, version, source or permission is unresolved|
+|AP1 continuous public chain|One field-audited existing walking chain|AP0 and maintenance interface|Disabled users complete real tasks; unsafe break blocks digital navigation|
+|AP2 staffed fallback|Visible desk, paper information, telephone and numbered work order in each area|Operator, roster and training|Basic service survives digital failure; weakening the staffed channel pauses launch|
+|AP3 public evidence room|Problem, version, complaint, incident and decision ledgers|Privacy, archive and disclosure rules|Every decision traces to evidence and a human; no export means no scaling|
+|AP4 accessibility co-test|P1 route, before/after control and repair closure|AP0–3 and repair owner|Any severe safety misdirection is a stop event|
+|AP5 open agent evaluation|P2 locked set, blind test, red team, handoff and result card|AP2–3 and independent evaluator|Unresolved severe factual error, missing source or failed handoff blocks G4|
+|AP6 low-speed sandbox|P3 physical boundary, time/speed limits, safety officer and takeover drill|Road, fire, insurance, cyber and access reviews|Injury, blocked tactile route, localisation or takeover failure stops testing|
+|AP7 exit and restoration|Deletion proof, removal/restoration, notice, archive and contract close-out|Funded alongside every package|No timely review means automatic pause; non-restorable space blocks G2|
+
+Five ledgers make feasibility visible: space and hours; accountable people and rosters; data purpose/retention/deletion; equipment version/maintenance/energy/retirement; and public trust including complaints, near misses, group gaps and minority opinions. Before feasibility study, cost is shown only by seven classes—survey/design, reversible space works, equipment/safety, staffed operation, independent evaluation, maintenance, and exit/restoration—with quantity basis, quotation or norm source, uncertainty range and approval status. No total investment is invented.
+
+## Civic Agent Receipt and feasibility stress test
+
+Any run that may affect a route, service choice or field device creates a minimal receipt about the system, not a surveillance record about the person: receipt ID; scenario/model version; purpose; data classes and retention; evidence; confidence/refusal; output; accountable human; takeover; incident/appeal IDs; expiry; and disposition. Identity is absent by default and contact details, where necessary, are stored separately. Evidence conflict causes uncertainty and review; a request for a person freezes automation; a complaint locks the version; an overdue review changes status to paused.
+
+The architecture has four hard boundaries: edge-first processing, sandbox/production separation, least-privilege agents, and replaceable models/vendors with exportable receipts and tests. AP2 takes over during outage or vendor exit.
+
+The plan is also tested against adverse conditions. If official geometry conflicts, engineering quantities freeze and all geometry-linked outputs are recalculated while the governance protocol remains useful. If only one pilot can be funded, AP0–3 and P1 precede robotics. If trust declines, recruitment and promotion stop while independent review and non-digital service continue. In extreme weather or outage, devices close and staffed safety operations remain. If no operator, roster, SLA, maintenance and insurance are confirmed, the project cannot enter G2. A pilot that disproves its hypothesis and exits transparently is a valid result.
 
 ## Risk, rights and limitations
 The current empty constraints layer means title, heritage, utilities, fire, flood and road controls have not been obtained; it does **not** mean no constraints exist [data:geometry/constraints.geojson#CONSTRAINTS-PENDING]. Provisional site/key-area geometry cannot support FAR, height, demolition, precise area, ownership or engineering. Official polygons trigger coordinated replacement of layers, metrics, figures, PDFs, HTML, matrices and change record.
