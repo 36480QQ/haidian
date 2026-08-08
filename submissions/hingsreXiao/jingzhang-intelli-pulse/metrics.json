@@ -152,15 +152,15 @@
       "reason": null
     },
     "floor_area_ratio": {
-      "status": "known",
-      "value": 0.15,
+      "status": "unknown",
+      "value": null,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "sum(floors * area(building)) / area(SITE_BOUNDARY)",
-      "confidence": "low",
+      "confidence": "unknown",
       "assumptions": [
         "容积率需基于控规条件确认，AI方案不给出具体数值"
       ],
