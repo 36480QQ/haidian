@@ -4,6 +4,7 @@
 
 - 响应 #706 对结构性来源与许可边界的复核：移除此前带有 peer-derived 结构的 Relay Receipt schema 与 S02 样例，不把署名当作改编许可的替代物。
 - 以 Open Pulse 自行设计的 `open-pulse-test-window-record.schema.json` 和合成 S02 测试窗口记录替代；新的字段组织直接对应有界窗口、普通路径、公共接口、人类控制、数据合同、观察、释放决定和恢复普通使用八个审阅问题。
+- 将区域协同首屏补成“三区两翼”可读框架，并在 `regional-ecosystem.json` 中标注为 conceptual_suggestion；不新增法定边界、合作关系或实施承诺。
 - 同步更新中英正文、离线 HTML、资源账、风险证据、逐资产清权台账与 manifest；新资产登记为 self-generated，不再有待权利人确认的 peer-attributed adaptation。
 
 ## v3.1 - 2026-08-09
