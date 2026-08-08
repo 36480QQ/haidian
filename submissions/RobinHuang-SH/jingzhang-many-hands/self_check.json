@@ -34,7 +34,21 @@
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "正文引用标准、深度项、九个图层、指标、来源与假设。"
+      "message": "v2正文保留判断邻接引用，完整来源、指标、假设和图层索引留在结构化文件。"
+    },
+    {
+      "check_id": "EXTERNAL_DATA_GRAIN",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "官方统计、平台报告和开放地图均登记地域、时间、变换、许可、质量等级与局限。"
+    },
+    {
+      "check_id": "FLOW_PROXY_LABEL",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/mobility-bluegreen.png",
+      "message": "500米功能压力代理明确标注非客流、非订单、非实时轨迹热力。"
     }
   ]
 }

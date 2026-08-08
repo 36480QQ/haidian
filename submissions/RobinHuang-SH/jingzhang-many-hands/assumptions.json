@@ -60,6 +60,30 @@
       "status": "pending_professional_confirmation",
       "statement": "场景默认数据最小化、人工复核和非数字兜底。",
       "impact": "具体系统仍需隐私影响评估、安全测试和退出机制。"
+    },
+    {
+      "id": "A-DATA-GRAIN-001",
+      "status": "pending_professional_confirmation",
+      "statement": "新增统计资料分别采用全国、北京市或海淀区口径。",
+      "impact": "只用于确定产业与运营量级，不直接分配到临时地块或推断走廊内人数。"
+    },
+    {
+      "id": "A-OSM-001",
+      "status": "pending_professional_confirmation",
+      "statement": "开放地图快照存在漏标、更新滞后、分类不一致和同一设施多要素表达。",
+      "impact": "图中数量仅作可复核的功能环境代理，实施前须用政府设施名录和现场调查校正。"
+    },
+    {
+      "id": "A-HEAT-PROXY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "缺少合法可公开的骑手、网约车、快递与手机信令地块级轨迹。",
+      "impact": "本方案不制作伪实时热力图，以500米开放地图功能要素矩阵替代，并明确非客流观测。"
+    },
+    {
+      "id": "A-PLATFORM-001",
+      "status": "pending_professional_confirmation",
+      "statement": "骑手数据来自美团年度职业报告，属于单一平台自报与调查口径。",
+      "impact": "只校准休息、申诉、收入稳定与疲劳风险需求，不外推为本地骑手规模或全行业结论。"
     }
   ]
 }

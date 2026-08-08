@@ -209,6 +209,323 @@
       "confidence": "high",
       "assumptions": []
     },
+    "nbs_digital_core_employment_2023": {
+      "status": "known",
+      "value": 36159000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#NBS-DIGITAL-ECONOMY-2023"
+      ],
+      "formula": "official_2023_employment_total",
+      "confidence": "high",
+      "assumptions": [
+        "全国数字经济核心产业法人单位从业人员，不能下推到京张走廊。"
+      ]
+    },
+    "nbs_scitech_services_employment_2023": {
+      "status": "known",
+      "value": 17003000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#NBS-SCITECH-SERVICES-2023"
+      ],
+      "formula": "official_2023_employment_total",
+      "confidence": "high",
+      "assumptions": [
+        "全国科学研究和技术服务业法人单位从业人员，作为产业量级背景。"
+      ]
+    },
+    "haidian_info_it_enterprise_employment_2023": {
+      "status": "known",
+      "value": 724573,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-SERVICES-2023"
+      ],
+      "formula": "official_enterprise_legal_entity_employment",
+      "confidence": "high",
+      "assumptions": [
+        "海淀区信息传输、软件和信息技术服务业企业法人单位口径。"
+      ]
+    },
+    "haidian_software_it_enterprise_employment_2023": {
+      "status": "known",
+      "value": 609995,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-SERVICES-2023"
+      ],
+      "formula": "official_enterprise_legal_entity_employment",
+      "confidence": "high",
+      "assumptions": [
+        "海淀区软件和信息技术服务业企业法人单位口径。"
+      ]
+    },
+    "haidian_scitech_services_employment_2023": {
+      "status": "known",
+      "value": 370000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-OVERALL-2023"
+      ],
+      "formula": "official_employment_rounded_to_10k",
+      "confidence": "high",
+      "assumptions": [
+        "海淀区第五次全国经济普查公报的法人单位从业人员，原表按万人公布。"
+      ]
+    },
+    "haidian_selected_daily_service_employment_2023": {
+      "status": "known",
+      "value": 393000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-OVERALL-2023"
+      ],
+      "formula": "171000 + 12000 + 89000 + 89000 + 32000",
+      "confidence": "medium",
+      "assumptions": [
+        "零售、交通运输仓储邮政、住宿餐饮、房地产、居民服务修理五类法人单位从业人员之和；不覆盖全部平台灵活就业者。"
+      ]
+    },
+    "haidian_education_employment_2023": {
+      "status": "known",
+      "value": 215000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-OVERALL-2023"
+      ],
+      "formula": "official_employment_rounded_to_10k",
+      "confidence": "high",
+      "assumptions": [
+        "海淀区教育行业法人单位从业人员，原表按万人公布。"
+      ]
+    },
+    "haidian_female_employment_share_2023": {
+      "status": "known",
+      "value": 0.419274,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#HAIDIAN-ECON-CENSUS-OVERALL-2023"
+      ],
+      "formula": "1005000 / 2397000",
+      "confidence": "medium",
+      "assumptions": [
+        "由全区二、三产业法人单位女性从业人员与总从业人员推算。"
+      ]
+    },
+    "haidian_population_2025": {
+      "status": "known",
+      "value": 3111000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#HAIDIAN-STAT-BULLETIN-2025"
+      ],
+      "formula": "official_year_end_resident_population",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "haidian_nonlocal_population_share_2025": {
+      "status": "known",
+      "value": 0.33,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#HAIDIAN-STAT-BULLETIN-2025"
+      ],
+      "formula": "official_nonlocal_resident_population_share",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "haidian_school_kindergarten_count_2025": {
+      "status": "known",
+      "value": 396,
+      "unit": "count",
+      "source_files": [
+        "sources.json#HAIDIAN-STAT-BULLETIN-2025"
+      ],
+      "formula": "90_middle_schools + 93_primary_schools + 213_kindergartens",
+      "confidence": "medium",
+      "assumptions": [
+        "机构类别直接相加，仅作区级公共服务底盘，不代表校区或走廊服务半径。"
+      ]
+    },
+    "beijing_express_volume_2025": {
+      "status": "known",
+      "value": 2745000000,
+      "unit": "pieces",
+      "source_files": [
+        "sources.json#BEIJING-POSTAL-2025"
+      ],
+      "formula": "official_annual_express_volume",
+      "confidence": "high",
+      "assumptions": [
+        "北京市全年总量，不能解释具体地块配送需求。"
+      ]
+    },
+    "beijing_express_daily_average_2025": {
+      "status": "known",
+      "value": 7520548,
+      "unit": "pieces_per_day",
+      "source_files": [
+        "sources.json#BEIJING-POSTAL-2025"
+      ],
+      "formula": "2745000000 / 365",
+      "confidence": "medium",
+      "assumptions": [
+        "年总量的算术日均，不代表任一日或京张走廊流量。"
+      ]
+    },
+    "beijing_same_city_express_volume_2025": {
+      "status": "known",
+      "value": 622000000,
+      "unit": "pieces",
+      "source_files": [
+        "sources.json#BEIJING-POSTAL-2025"
+      ],
+      "formula": "official_annual_same_city_express_volume",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "beijing_postal_outlet_count_2025": {
+      "status": "known",
+      "value": 5914,
+      "unit": "count",
+      "source_files": [
+        "sources.json#BEIJING-POSTAL-2025"
+      ],
+      "formula": "official_year_end_outlet_count",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "national_ridehail_orders_2025_12": {
+      "status": "known",
+      "value": 963000000,
+      "unit": "orders_per_month",
+      "source_files": [
+        "sources.json#MOT-RIDEHAIL-2025-12"
+      ],
+      "formula": "official_monthly_order_total",
+      "confidence": "high",
+      "assumptions": [
+        "全国网约车监管信息交互系统月度量，只作平台交通量级背景。"
+      ]
+    },
+    "beijing_green_travel_share_2025": {
+      "status": "known",
+      "value": 0.765,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#BEIJING-TRANSPORT-2025"
+      ],
+      "formula": "official_center_city_green_travel_share",
+      "confidence": "high",
+      "assumptions": [
+        "中心城区口径，不代表走廊内实测方式分担率。"
+      ]
+    },
+    "meituan_monthly_income_earning_riders_2024": {
+      "status": "known",
+      "value": 3363000,
+      "unit": "persons",
+      "source_files": [
+        "sources.json#MEITUAN-RIDER-2024-2025"
+      ],
+      "formula": "platform_report_monthly_average",
+      "confidence": "medium",
+      "assumptions": [
+        "美团平台自报口径，不代表全国全部骑手或京张走廊人数。"
+      ]
+    },
+    "meituan_rider_sole_household_income_share": {
+      "status": "known",
+      "value": 0.537,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#MEITUAN-RIDER-2024-2025"
+      ],
+      "formula": "platform_report_survey_share",
+      "confidence": "medium",
+      "assumptions": [
+        "平台报告调查口径，抽样与外推限制详见原报告。"
+      ]
+    },
+    "meituan_rider_under_three_month_savings_share": {
+      "status": "known",
+      "value": 0.447,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#MEITUAN-RIDER-2024-2025"
+      ],
+      "formula": "platform_report_survey_share",
+      "confidence": "medium",
+      "assumptions": [
+        "平台报告调查口径，不用于估算本地贫困或债务人口。"
+      ]
+    },
+    "meituan_fatigue_forced_offline_share_pilot": {
+      "status": "known",
+      "value": 0.0018,
+      "unit": "ratio",
+      "source_files": [
+        "sources.json#MEITUAN-RIDER-2024-2025"
+      ],
+      "formula": "platform_fatigue_rule_pilot_share",
+      "confidence": "medium",
+      "assumptions": [
+        "平台试点命中比例，只用于提示连续工作风险和人工申诉接口。"
+      ]
+    },
+    "osm_named_education_features_corridor_20260809": {
+      "status": "known",
+      "value": 63,
+      "unit": "count",
+      "source_files": [
+        "sources.json#OSM-CORRIDOR-SNAPSHOT-20260809"
+      ],
+      "formula": "named(college=24 + school=17 + university=16 + kindergarten=6)",
+      "confidence": "low",
+      "assumptions": [
+        "开放地图命名要素快照，可能漏标、重复或分类不一致，不是官方教育设施普查。"
+      ]
+    },
+    "osm_dazhongsi_mobility_features_500m": {
+      "status": "known",
+      "value": 28,
+      "unit": "count",
+      "source_files": [
+        "sources.json#OSM-CORRIDOR-SNAPSHOT-20260809"
+      ],
+      "formula": "named_mobility_features_intersect(500m_buffer)",
+      "confidence": "low",
+      "assumptions": [
+        "功能压力代理，不是实时人流、订单或轨迹热力。"
+      ]
+    },
+    "osm_ai_origin_education_features_500m": {
+      "status": "known",
+      "value": 25,
+      "unit": "count",
+      "source_files": [
+        "sources.json#OSM-CORRIDOR-SNAPSHOT-20260809"
+      ],
+      "formula": "named_education_features_intersect(500m_buffer)",
+      "confidence": "low",
+      "assumptions": [
+        "功能压力代理，不是招生规模或步行可达性评价。"
+      ]
+    },
+    "osm_zhongzhiyuan_care_support_features_500m": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "sources.json#OSM-CORRIDOR-SNAPSHOT-20260809"
+      ],
+      "formula": "named_health_toilets_community_features_intersect(500m_buffer)",
+      "confidence": "low",
+      "assumptions": [
+        "开放地图缺失会放大服务短板，必须现场核验。"
+      ]
+    },
     "total_floor_area_sqm": {
       "status": "unknown",
       "value": null,

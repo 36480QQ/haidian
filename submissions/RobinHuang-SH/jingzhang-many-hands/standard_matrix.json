@@ -46,14 +46,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -62,7 +81,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -109,14 +128,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -125,7 +163,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -172,14 +210,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -188,7 +245,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -235,14 +292,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -251,7 +327,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -298,14 +374,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -314,7 +409,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -361,14 +456,33 @@
         "PLANNING-LIMITS",
         "MNR-LAND-USE",
         "MOHURD-URBAN-DESIGN",
-        "MOHURD-CONTROL-PLAN"
+        "MOHURD-CONTROL-PLAN",
+        "NBS-DIGITAL-ECONOMY-2023",
+        "NBS-SCITECH-SERVICES-2023",
+        "HAIDIAN-ECON-CENSUS-OVERALL-2023",
+        "HAIDIAN-ECON-CENSUS-SERVICES-2023",
+        "HAIDIAN-STAT-BULLETIN-2025",
+        "BEIJING-POSTAL-2025",
+        "MOT-RIDEHAIL-2025-12",
+        "BEIJING-TRANSPORT-2025",
+        "MEITUAN-RIDER-2024-2025",
+        "OSM-CORRIDOR-SNAPSHOT-20260809"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-EXISTING-001",
         "A-MOBILITY-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-LABOR-001",
+        "A-SCENARIO-001",
+        "A-OPERATIONS-001",
+        "A-BRAND-001",
+        "A-PRIVACY-001",
+        "A-DATA-GRAIN-001",
+        "A-OSM-001",
+        "A-HEAT-PROXY-001",
+        "A-PLATFORM-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -377,7 +491,7 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "百工线以正文、九个可追溯图层、低置信度复算指标、A3/A0 图纸和离线网页共同响应；所有法定数据缺口保持 unknown。"
+      "evidence_summary_zh": "百工线以正文、九个可追溯图层、官方产业统计、透明派生指标、A3/A0图纸和离线网页共同响应；平台与开放地图代理明确偏差，法定数据缺口保持unknown。"
     }
   ]
 }
