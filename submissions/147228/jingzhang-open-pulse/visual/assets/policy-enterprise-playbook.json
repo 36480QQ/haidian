@@ -284,6 +284,20 @@
       "stop_gate": "Unclear ownership or incompatible license keeps the artifact private and out of the public showcase.",
       "source_ids": ["CASE-DECIDIM-BARCELONA"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-021",
+      "title": "政策影响评估与退出闸门",
+      "policy_instrument": "algorithmic_policy_impact_review",
+      "enterprise_stage": "pre_pilot_go_no_go",
+      "problem": "A company can pass a technical test while the proposed service still shifts access, workload or risk onto residents and frontline staff.",
+      "jingzhang_interface": "Before any S02, S08 or S09 test window, publish the affected groups, service baseline, human workload change, plausible failure modes, manual route and a scale-or-retire decision owner.",
+      "operator": "service owner + community reviewer + enterprise accountable executive",
+      "required_evidence": ["impact statement", "affected-group review", "manual baseline", "frontline workload note", "go-or-retire record"],
+      "metric": "pre_pilot_policy_impact_reviews_with_public_baseline",
+      "stop_gate": "Unknown affected groups, unpriced human workload or no withdrawal owner keeps the proposal in research status.",
+      "source_ids": ["CASE-UK-ATRS", "CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
