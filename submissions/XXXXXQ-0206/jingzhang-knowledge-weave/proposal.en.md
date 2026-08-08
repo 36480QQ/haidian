@@ -7,8 +7,6 @@ license: CC-BY-4.0
 summary: An English display companion for the formal Chinese submission, presenting a traceable, reversible and fully recomputable urban-design method for the Centennial Jing-Zhang AI Innovation Belt.
 ---
 
-# Jingzhang Knowledge Weave 2.0
-
 ## Executive Summary
 
 Knowledge Weave does not layer AI services onto a railway-memory setting as a default deployment. It translates the linear memory of the Centennial Jing-Zhang Railway into two parallel urban capacities. The **evidence line** asks what can be supported by registered sources, reproducible calculation and professional review. The **public line** asks what has voluntary participation, an accessible non-digital alternative, human final judgement, appeal and exit. Their three proposed crossings are Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi; the Zhongguancun technology-service wing and Xiaoyue River public-experience wing are conceptual interfaces. None is a redline, statutory control, approval, investment, ownership or construction commitment. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
