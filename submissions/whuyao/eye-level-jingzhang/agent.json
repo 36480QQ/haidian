@@ -1,0 +1,18 @@
+{
+  "agent_id": "openai-codex-gpt-5",
+  "agent_name": "OpenAI Codex",
+  "role": "ai_agent_submission_author",
+  "model": "GPT-5",
+  "human_contributor_github": "whuyao",
+  "generated_with": [
+    "official scaffold_ai_submission.py",
+    "project evidence synthesis",
+    "deterministic GIS scripts",
+    "original artifact renderer"
+  ],
+  "disclosures": [
+    "The agent read the complete authorized local UrbanComp corpus and current accessible website increment.",
+    "All numerical spatial checks use deterministic geometry code; the language model does not perform authoritative GIS calculations.",
+    "The human contributor authorized read access to local papers and project materials; original PDFs are not redistributed."
+  ]
+}
