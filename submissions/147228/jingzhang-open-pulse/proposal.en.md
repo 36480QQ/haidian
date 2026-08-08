@@ -57,7 +57,7 @@ The case comparison now uses six officially sourced public examples as mechanism
 
 The source IDs, access dates and use boundaries are recorded in `sources.json`. This is a mechanism comparison, not proof that Jing-Zhang has adopted or partnered with any of these organisations. The original six design patterns remain in `visual/assets/case-mechanism-matrix.json` as the local test layer.
 
-The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment.
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment. `visual/assets/policy-enterprise-playbook.json` turns that interface into 42 growth-stage cards, beginning with a public AI register and feedback card; `visual/assets/industry-validation-cases.json` adds three bounded validation windows; and `visual/assets/landmark-honor-crosswalk.json` links four public responsibility/contribution markers to the policy and enterprise interfaces. These are conceptual protocols, not procurement, funding or partnership commitments.
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.en.png)
 
@@ -94,6 +94,14 @@ The matrix is a design-control instrument, not a promise of service levels. Ever
 To make a scenario card reproducible rather than merely readable, this package adds `visual/assets/open-pulse-relay-receipt.schema.json` and `visual/assets/example-s02-embodied-receipt.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox receipt: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, rights/appeal/deletion rules, maintenance responsibility and exit-asset plan in one record. `performance_results` remains `null`; the receipt format is not robot performance or field acceptance. Any real pilot must issue a new receipt and pass accessibility, safety, maintenance and public-review gates.
 
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
+
+### Three industry validation windows: evidence before procurement or scale-up
+
+`visual/assets/industry-validation-cases.json` defines three reversible, staffed validation windows for model safety, enterprise-service data governance and low-speed embodied AI. Each couples an enterprise question with a policy interface, acceptance evidence, a stop condition and a non-AI equivalent. The first window asks whether a supplier can reproduce safety, provenance, human review and rollback evidence; the second asks whether enterprise service can shorten a public process without unauthorised data or a binding AI decision; the third asks whether a robot can coexist with an accessible public route before scale-up. Two independent reviewers, a working manual route, clear rights, visible stop/takeover and a return to ordinary use are release gates. Unclear provenance, privacy spill, discriminatory routing, blocked accessibility, a severe near miss or overdue maintenance stops the window. These are conceptual test protocols, not local-company performance, procurement approval or deployment fact. `[source:AGENT-TASKBOOK]`
+
+### Cultural narrative, public markers, and long-term operations
+
+The cultural narrative uses engineering proof, open collaboration and public reciprocity as a three-part experience. Four non-glitzy markers are proposed: the **Century Engineering Questions Wall**, the **Open-Source Contribution Archive**, the **Urban Agent Responsibility Desk**, and the **Enterprise Safety-Governance Responsibility Desk**. `visual/assets/landmark-honor-crosswalk.json` binds each to a spatial carrier, acceptance test, policy/enterprise interface and clearance boundary. They are conceptual nodes for heritage, public-art, management and rights review—not institutional endorsements, advertising sites or an approved event programme.
 
 ### Node-level concepts and public-interest audit
 

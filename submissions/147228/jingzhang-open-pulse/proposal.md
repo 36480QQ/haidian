@@ -18,6 +18,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本节证据链引用 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案不是独立愿景文本，而是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织成果。
 
+三层范围、agent 任务、资料用途和缺口清单分别回读 [source:PROJECT-SCOPE-SUMMARY]、[source:AGENT-TASK-REQUIREMENTS]、[source:SOURCE-USE-MATRIX]、[source:MISSING-DATA-CHECKLIST]；这些 processed reference 只是导航层，不把临时资料升级为 official boundary、法定控规或实施承诺。
+
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
@@ -97,6 +99,8 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 | 头部企业访客 | 展示、商务、国际接待、人才招聘 | 大钟寺国际路演客厅、轨道站点接驳、重点企业周边公共空间 | 企业标识和案例须清权 |
 | 周边居民 | 通勤、休闲、社区服务、低扰动更新 | 京张遗址公园慢行环、社区服务嵌入、夜间照明和活动分级 | 不将居民画像用于商业推荐 |
 | 高校师生 | 成果转化、跨校协作、日常慢行 | 校区-园区慢行缝合、成果转化驿站、AI教育体验点 | 校园数据和科研成果需授权 |
+
+以上五类用户画像是设计视角而非个人画像或自动化决策，[metric:user_persona_count]；完整场景卡数量为 14 条，[metric:scenario_card_count]，均以 `scenario-operation-matrix.json` 的空间载体、责任、非 AI 等价和停止条件为准。
 
 | 场景卡 | 空间载体 | 设计说明 |
 | --- | --- | --- |
@@ -347,7 +351,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 `visual/assets/operations-matrix.json` 把方案拆成八个有责任人的行动包：官方边界替换、现场基线、风热水验证、具身智能窗口、开源清权、活动降容复原、雨洪/安静链维护，以及年度扩散/重做/退出复盘。`visual/assets/resource-accounts.json` 把空间权属、气候水务生态、算力模型与数据权利、人类体验参与、资产备件维护五类前置资源单独记账；这是审查条件，不是预算、资金或采购承诺。
 
-政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡，[metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出三条产业测试验证窗，[metric:industry_validation_case_count]，分别覆盖模型安全、企业服务数据合规和低速具身智能；`visual/assets/landmark-honor-crosswalk.json` 把四个责任台、贡献档案和安全治理节点绑定到政策与企业接口，[metric:ai_landmark_count]。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。
 
 ### 2. 十四条场景—空间—运营矩阵
 
@@ -358,6 +362,14 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 为了让“场景卡”可以被复核而不是只被阅读，本包新增 `visual/assets/open-pulse-relay-receipt.schema.json` 与 `visual/assets/example-s02-embodied-receipt.json`。后者是一个完全合成的 S02 低速配送机器人沙盒凭证：它把临时道路引用、无 App 人工替代、最小字段、急停与人类观察员、清权/申诉/删除、维护责任和退出资产计划放在同一条记录里；`performance_results` 保持 `null`，不把凭证格式冒充为机器人性能或现场验收。任何真实试点都必须重新签发凭证并由无障碍、安全、维护和公众代表共同过门。
 
 ![一枚令牌的生命周期](assets/figures/component-operations.png)
+
+### 三条产业测试验证窗：先有证据，再谈采购或扩容
+
+`visual/assets/industry-validation-cases.json` 定义三条可逆、有人值守的验证窗：模型安全与透明、企业服务数据合规、低速具身智能安全与运维。每条都把企业问题绑定到政策接口、验收证据、停止条件和非 AI 等价服务；独立复核、人工路线、清权、可见急停/接管和回到普通公共使用是释放门。来源不明、隐私外泄、歧视性路由、无障碍被阻断、严重近失或维护逾期时停止窗口。这些是概念测试协议，不是本地企业绩效、采购批准或已部署事实。[source:AGENT-TASKBOOK]
+
+### 文化叙事、公共标记与长期运营
+
+文化叙事由工程证明、开源协作和公共回馈三部分组成。建议四个不追求炫技的公共标记：**百年工程问题墙**、**开源贡献档案**、**城市智能体责任台**、**企业安全治理责任台**。`visual/assets/landmark-honor-crosswalk.json` 将每个标记绑定空间载体、验收测试、政策/企业接口和清权边界；它们是供文保、公共艺术、管理和权利审查的概念节点，不是机构背书、广告位或已批准活动。
 
 ### 3.1 节点级概念计划与公共利益审计
 
