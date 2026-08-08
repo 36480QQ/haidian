@@ -104,6 +104,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-019",
+      "title": "研究—企业—公共服务人才轮岗卡",
+      "policy_instrument": "research_enterprise_service_rotation",
+      "enterprise_stage": "capability_and_talent_growth",
+      "problem": "Research, product, operations and public-service teams often use different definitions of success, slowing transfer and leaving safety work unowned.",
+      "jingzhang_interface": "Create short, bounded S04/S08 rotations with a named learning question, confidentiality boundary, public-interest review, contribution record and return-to-role plan.",
+      "operator": "university transfer desk + enterprise service lead + participating employer",
+      "required_evidence": ["rotation charter", "learning question", "rights/confidentiality note", "handoff record"],
+      "metric": "rotations_with_documented_learning_and_service_handoff",
+      "stop_gate": "No supervisor, rights boundary or return plan means no public-facing rotation.",
+      "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-010",
       "title": "共享算力与低碳服务准入",
       "policy_instrument": "shared_compute_and_energy_gate",
