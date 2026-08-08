@@ -42,7 +42,7 @@
   },
   "total_floor_area_sqm": {
    "status": "known",
-   "value": 4212008.3,
+   "value": 4219505.5,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -55,7 +55,7 @@
   },
   "floor_area_ratio": {
    "status": "known",
-   "value": 0.3691,
+   "value": 0.3697,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -69,7 +69,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.0457,
+   "value": 0.0428,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -83,7 +83,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 521003.0,
+   "value": 487936.6,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -134,7 +134,7 @@
   },
   "building_count": {
    "status": "known",
-   "value": 140,
+   "value": 132,
    "unit": "count",
    "source_files": [
     "geometry/buildings.geojson"
@@ -206,16 +206,16 @@
     "code": "0802",
     "name": "科研用地",
     "area_ha": 53.4,
-    "coverage_pct": 12.9,
-    "buildings": 21
+    "coverage_pct": 10.4,
+    "buildings": 11
    },
    {
     "id": "LU-002",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 84.5,
-    "coverage_pct": 8.1,
-    "buildings": 21
+    "coverage_pct": 6.6,
+    "buildings": 11
    },
    {
     "id": "LU-003",
@@ -238,16 +238,16 @@
     "code": "0701",
     "name": "居住用地",
     "area_ha": 76.6,
-    "coverage_pct": 3.1,
-    "buildings": 19
+    "coverage_pct": 4.3,
+    "buildings": 35
    },
    {
     "id": "LU-006",
     "code": "0701",
     "name": "居住用地",
     "area_ha": 65.7,
-    "coverage_pct": 3.7,
-    "buildings": 19
+    "coverage_pct": 5.4,
+    "buildings": 35
    },
    {
     "id": "LU-007",
@@ -286,16 +286,16 @@
     "code": "0802",
     "name": "科研用地",
     "area_ha": 79.0,
-    "coverage_pct": 8.8,
-    "buildings": 21
+    "coverage_pct": 7.1,
+    "buildings": 11
    },
    {
     "id": "LU-012",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 90.1,
-    "coverage_pct": 7.7,
-    "buildings": 21
+    "coverage_pct": 6.2,
+    "buildings": 11
    }
   ]
  }
