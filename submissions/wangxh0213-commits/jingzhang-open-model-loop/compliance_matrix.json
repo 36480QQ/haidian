@@ -548,13 +548,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -572,10 +577,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -601,13 +611,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -625,10 +640,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -919,13 +939,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -943,10 +968,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1025,13 +1055,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1049,10 +1084,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1078,13 +1118,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1102,10 +1147,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1184,13 +1234,18 @@
         "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "management_sector_count",
+        "joint_command_point_count",
+        "emergency_logistics_gate_count",
+        "peak_visitor_capacity_persons"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1208,10 +1263,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "BUCEA-GOOD-HOUSE-20250626",
+        "BUCEA-TIANQIAO-WALK-20250626",
+        "HANGZHOU-CITY-BRAIN-20201022"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CAPACITY-001",
+        "A-OPERATIONS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",

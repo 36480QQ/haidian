@@ -1,12 +1,13 @@
 ---
 title: "京张智轨开放模型回路：遗址公园驱动的AI验证城市"
 author_github: "wangxh0213-commits"
+author_display_name: "XHioiMX_"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张遗址公园为公共主轴，把众智园验证、AI原点社区开源转化和大钟寺城市型应用组织成可步行、可验证、可展示、可治理的开放模型回路。"
+summary: "以京张遗址公园为公共主轴，用1+5+8管理骨架、分级活动规则和低成本可拆模块，把众智园、AI原点社区与大钟寺组织成高容量、可治理、可人工接管的开放模型回路。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 京张智轨开放模型回路：遗址公园驱动的AI验证城市
@@ -18,6 +19,12 @@ iteration: "v1.0"
 资料分为三组：第一组是可支撑任务事实的 official/cleared 资料，包括公告、任务书和本地专业标准快照；第二组是 provisional-only 几何，只支撑临时图层和复算；第三组是尚缺资料，进入 `assumptions.json` 并触发结论降级。项目资料包定义允许值、范围和结构化成果约束。[source:SITE-PACKAGE] `data/processed/agent_fact_pack.md` 仅作导航，不升级原始来源的权威等级。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] 现状诊断因此不编造企业名单、建筑高度或交通流量，而聚焦可由任务确认的结构性矛盾：一条纵向遗址公共空间尚未被转译为三区协作基础设施；AI能力多在机构内部发生，公众难以理解其测试边界；人才服务、产业验证和城市体验缺少同一条可达、可审计的空间回路。[depth:existing_conditions_diagnosis]
 
 专业依据采用《城市设计管理办法》对公共空间、城市风貌、建筑体量和重点地区协同的原则，[standard:MOHURD-URBAN-DESIGN-MEASURES] 采用《城市、镇控制性详细规划编制审批办法》区分法定控制、概念建议与待确认条件，[standard:MOHURD-CONTROL-DETAILED-PLANNING] 采用国土空间用地分类指南的仓库子集表达用地代码。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 建筑工程设计深度参考项缺少官方可访问正文，因此只登记为资料缺口，不把它写成已满足的权威依据。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+
+### 北建大方法校准与杭州数字治理启发
+
+本轮深化不复制任何院校作品图像或具体方案，而把北京建筑大学公开教学与实践中的方法转译为本项目自己的证据语言：以人为本、全生命周期、空间灵活性和数字化运维共同进入设计；遗产更新采用小微物理介入叠加数字内容与多方协作，先解决真实使用和维护问题，再增加互动技术。[source:BUCEA-GOOD-HOUSE-20250626] [source:BUCEA-TIANQIAO-WALK-20250626] 图面因此增加“总体结构—管理分区—场地剖面—模块构造—运营规则”的层级，保留北建大常见的分析性表达取向，但不声称代表该校官方设计风格。
+
+杭州城市大脑案例提供的是分层治理启发：中枢汇总、跨部门协同、驾驶舱显示与具体场景服务应彼此分开，数字系统服务人工决策而非替代执法。[source:HANGZHOU-CITY-BRAIN-20201022] 本方案据此采用“现场标识/人工服务—分区站—联合指挥点”三级架构；预约只管理活动区，不把普通游园通行绑定到 App；断网时回落到纸质预案、固定导视、无线电和人工巡查。上述案例均为 background-only，不支撑本项目红线、容量、造价或工程可行性结论。
 
 ![总体概念、三处重点区与开放模型回路](assets/figures/site-overview.png)
 
@@ -75,6 +82,12 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 法定容积率、建筑高度、建筑密度、绿地率、退线、道路红线和四线全部保持 unknown。方案只提出可供专业团队深化的形态原则：遗址公园界面采用小体量、多入口、可穿行首层；近校界面优先适应性再用和共享空间；轨道门户允许形成清晰城市界面但须服从高度、消防、交通和文保条件；重要天际线与屋顶设备需在 official 控规和景观视廊到位后校核。[depth:development_intensity_controls] [depth:height_massing_character]
 
 总体设计的创新指标不追求伪精确“产业产值”，而关注能否被持续审计：模型卡公开率、测试场景人工复核闭环率、公共空间等价退出路径覆盖率、开发者贡献归档量、居民投诉响应时间、无障碍问题修复率和 official 数据补齐率。它们需在未来运营中形成基线，本次不填造绩效数值。
+
+### 高容量大型公园的空间承载逻辑
+
+“容纳人数多”不等于造一个超大硬质广场，而是把高峰人流分散到五个管理分区、三处可预约活动客厅和连续普通游园带。空间上采用多入口、多目的地、可绕行环线、双向日常通行和活动区可局部围合；运营上把大型活动拆成多个同步小场景，避免所有观众在同一时间压向单一门户。提交图层增加 1 个联合运行与人工指挥点、5 个管理/服务站和 8 个应急后勤转换口。[data:geometry/constraints.geojson#CMD-01] [metric:management_sector_count] [metric:joint_command_point_count] [metric:emergency_logistics_gate_count]
+
+峰值人数不在本轮虚构。正式容量应取“可用活动面积容量、净疏散能力、公共交通承载、现场人员配置、急救/消防响应能力”五者中的最小值，并按每种活动布置单独核定。[metric:peak_visitor_capacity_persons] 净疏散宽度也保持 unknown，[metric:minimum_clear_egress_width_m] 需在道路红线、围栏、摊位、树池、无障碍和消防通道共同落位后计算。[depth:metrics_recalculation]
 
 ## 重点区域详细设计
 
@@ -148,6 +161,19 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 
 公共服务以人而非技术分类：人才服务站整合法务、知识产权、标准和生活信息；社区协作台保留人工窗口；公共卫生、教育、养老等设施不编造容量，只在 official 设施底数到位后评估缺口。AI 只能辅助查询、翻译和问题归类，不替代专业服务与行政决定。
 
+### 1+5+8 公园管理与执法联络骨架
+
+`CMD-01` 是联合运行与人工指挥点，优先复用经调查适宜的既有建筑，不预设新建指挥中心；5 个 `MGMT-*` 站点分别服务五个功能分区，承担问询、设施报修、秩序观察、失物与走失协助、急救呼叫、活动签到和执法联络；8 个 `GATE-*` 对应主廊两端和三条横街两端，平时保持步行环境，事件时按批准预案转换为急救、消防、维护或后勤接入。[data:geometry/constraints.geojson#MGMT-01] [data:geometry/constraints.geojson#GATE-01]
+
+管理站不自行扩大行政权力。自动识别结果只能形成待核提示，不能直接处罚、拒绝入园或建立个人轨迹；行政执法决定、强制措施、活动许可和事件指挥由有权限人员依法作出。每个站点保留人工记录、现场广播、电源隔离和设备物理关闭能力，停电、断网或模型异常时切换到固定导视、纸质清单、无线电和人工巡查。[depth:municipal_new_infrastructure]
+
+| 运行等级 | 适用状态 | 空间动作 | 管理与执法边界 |
+| --- | --- | --- | --- |
+| L0 日常开放 | 普通游园、通勤和小型活动 | 主廊双向开放，活动设施收拢 | 分区巡查与人工服务；不要求预约 |
+| L1 繁忙日 | 周末、节庆前后和局部客流上升 | 开启分区计数与替代路线，增加临时服务 | 只做提示和现场核验；不自动限流 |
+| L2 预约活动 | 路演、演出、测试和市集 | 仅活动区凭预约进入，普通通道保持连续 | 许可、安保、医疗和疏散方案经人工批准 |
+| L3 事件/极端天气 | 拥挤、设备故障、风雨雪、火情等 | 局部停用、反向疏散或全线分段关闭 | 现场指挥者决定；数字系统只提供状态与建议 |
+
 ![交通慢行、蓝绿空间、场景节点与公共准入协议](assets/figures/mobility-bluegreen.png)
 
 ## 蓝绿空间、公共空间与城市风貌
@@ -164,6 +190,14 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 
 公共空间组件库包括双线导视、可逆贡献展示架、无屏幕休息点、可关闭传感杆、移动测试围栏、人工复核台和等价退出标识。所有组件采用可逆、低扰动和易维护原则，必须服从文保、绿地、蓝线、消防、交通和无障碍约束。文化叙事从“铁路缩短物理距离—中关村缩短知识转化距离—开放模型缩短技术与公共理解距离”展开，国际传播语为 `From Railway Link to Open Model Loop`，不歪曲历史，也不使用未清权图像。
 
+### 低成本模块、建筑物理与结构合理性边界
+
+建设策略采用“既有空间复用优先—地面微更新—可拆服务盒—必要时再做永久工程”的成本阶梯。近期只配置涂装导视、二维码/纸质双轨信息、可移动座椅和人工规则；第二级增加标准化遮阳、饮水、急救和管理模块；第三级才在取得权属、结构和市政条件后改造共享首层或公共客厅。总投资与年运维费保持 unknown，[metric:concept_capex_cny] [metric:annual_operating_cost_cny] 以经复核工程量、基准期单价、维护更换周期和风险预备费计算，不用“低价”口号替代造价文件。
+
+模块原型采用 3 m 协调网格和不大于约 6 m 的概念单跨作为排布起点，便于普通运输、重复拼装和部件替换；这只是早期协调模数，不是结构定案。建议优先使用螺栓连接的轻型镀锌钢框架、可替换遮阳板和干式内装，端部或适当位置设置支撑跨；构件尺寸、节点、柱脚、基础、抗震、风雪荷载、冲击与疲劳必须由注册结构专业人员计算。基础优先研究可逆的地上配重或低扰动做法，但是否可用取决于岩土、地下管线、树根和文保条件。[data:geometry/buildings.geojson#BLDG-001]
+
+建筑物理采用“少空调盒、多开放遮阴”的分层方式：连续顶棚负责夏季遮阳和降雨停留，封闭服务盒才承担冬季保温与设备保护；开敞模块保持对向通风，封闭入口设置可调风障或门斗；屋面坡向、溢流、积雪、冷凝、防水节点和地表排水须专项计算。透水铺装、浅沟和树池只作为源头减排概念，不占用消防净宽，不在缺少地下水与防洪资料时布置地下空间。日照、遮阳深度、风环境、热舒适、照明眩光、能耗和噪声均需基于北京逐时气象及具体场地模型复核。[depth:height_massing_character] [depth:risk_missing_data]
+
 ## 更新项目清单、实施政策与分期计划
 
 分期图层把临时范围分为三段概念时序，[data:geometry/phasing.geojson#PHASE-001] 不是承诺开工日期。[depth:renewal_project_list] [depth:phasing_implementation] 近期优先可逆、低成本、无需法定控规调整的公共运营与调查；中期在数据和协商基础上深化原点社区及横向界面；远期必须以 official 红线、控规、市政、文保和权属条件为前提。
@@ -178,6 +212,8 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 | JZ-06 三条协作横街 | 中期 | 慢行、无障碍、非机动车和公共界面修补 | 道路红线、站点、交通与市政专项 |
 | JZ-07 众智园可信评测核 | 中期/远期 | 模型评测、安全治理和标准展示 | 专业资质、数据授权、算力与能源条件 |
 | JZ-08 全带蓝绿与市政协同深化 | 远期 | 绿廊、雨洪、照明、能源和维护一体化 | official polygons、河道、文保和市政资料 |
+| JZ-09 1+5+8 公园管理试点 | 近期/中期 | 复用联合席位、五个可拆服务站、八个转换口标识 | 运营主体、执法权限、消防、道路与活动许可 |
+| JZ-10 低成本模块样段 | 近期 | 3 m 协调网格的遮阳、座椅、管理和设备接口样段 | 文保、树木、结构、岩土、市政和全寿命成本复核 |
 
 实施政策建议围绕四个公共机制：建立“临时试点不自动转长期”的日落条款；建立模型卡、数据许可、投诉、退出和事件修复公开档案；建立由居民、开发者、企业、专业者和维护者组成的多方复核机制；建立 official 数据补齐清单并在每次版本更新时重新跑空间和视觉校验。以上均为参考机制，不是已确定政策或政府承诺。
 
@@ -196,6 +232,9 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 | 开放模型主廊 | known，约 9.33 km | ROAD-001 length [metric:open_model_loop_length_m] | 比较南北连续性，不是工程里程 |
 | AI场景节点 | known，12 | count SC-* [metric:scenario_node_count] | 覆盖任务书的场景数量要求 |
 | 重点区域 | known，3 | count KEY_AREA [metric:key_area_count] | 数量确定，polygon 和面积仍 provisional |
+| 管理分区 / 联合指挥点 / 转换口 | known，5 / 1 / 8 | count operations layers [metric:management_sector_count] [metric:joint_command_point_count] [metric:emergency_logistics_gate_count] | 表达概念责任骨架，不代表编制或执法管辖 |
+| 峰值人数 / 净疏散宽度 | unknown | 五类能力取最小值、专业净宽计算 [metric:peak_visitor_capacity_persons] [metric:minimum_clear_egress_width_m] | 高容量目标不得越过消防、交通和人员配置 |
+| 建设投资 / 年运维费 | unknown | 工程量×复核单价+风险；批准服务水平 [metric:concept_capex_cny] [metric:annual_operating_cost_cny] | 以模块化和再利用控制全寿命成本 |
 | 容积率、建筑高度 | unknown | official 控规和专项缺失 | 禁止从概念基底反推 |
 | 运营绩效 | baseline pending | 试点日志、投诉与人工复核记录 | 不在无运行数据时编造成果 |
 
@@ -215,6 +254,9 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 | AI隐私、偏差与安全 | 最小必要、显性告知、可退出、有人审、可追溯 | 数据保护、伦理、安全与责任主体审查 |
 | 版权与传播 | 不用外部图像、商标、肖像和远程资产 | 所有新增素材逐项登记许可 |
 | 运营和承诺越界 | 全部活动、政策和分期写为参考机制 | 人类决策、正式审批、资金与实施条件另行确认 |
+| 高峰容量和执法责任不清 | 峰值人数、净宽、人员配置保持 unknown；只画联络骨架 | 人群仿真、活动方案、消防/交通/急救评审与部门授权 |
+| 轻型设施结构与气候性能 | 只给协调网格、构造原则和待算项目 | 岩土、结构、抗震、风雪、日照、风环境、排水与能耗计算 |
+| 成本目标被误读为投资承诺 | 只给成本阶梯和可替换部件策略 | 工程量、基准单价、采购边界、维护周期和风险预备费 |
 
 风险与缺资料主控见 [depth:risk_missing_data] 和 `assumptions.json`。建筑专业深度标准的本地条目未取得官方正文，因此 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 只作为待补项，不能支撑“甲级院式”或施工图深度声明。版权说明见 `report/copyright_statement.md`：正文、GeoJSON、图像、HTML 与 PDF 均由本 AI agent 基于公开或清权材料生成；核心图不含外部地图截图、远程瓦片、企业标识或人物肖像；离线 HTML 不加载 CDN、远程字体、iframe、表单、API 或跟踪代码。
 
@@ -228,6 +270,9 @@ Logo 方向采用两条平行钢轨在三个节点处闭合为循环，负形形
 - [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES] 《城市设计管理办法》本地官方参考快照。
 - [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] 《城市、镇控制性详细规划编制审批办法》本地官方参考快照。
 - [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311] 国土空间用地用海分类指南本地参考快照。
+- [source:BUCEA-GOOD-HOUSE-20250626] 北建大“好房子”公开访谈：以人为本、全生命周期、灵活适应与数字运维，background-only。
+- [source:BUCEA-TIANQIAO-WALK-20250626] 北建大“天桥 Walk+”实践：小微更新与物理—数字—社会空间融合，background-only。
+- [source:HANGZHOU-CITY-BRAIN-20201022] 央视网报道的杭州城市大脑实践：分层数字治理与跨部门协同启发，background-only。
 - `brief/site-package/design_brief.json`
 - `brief/site-package/allowed_design_space.json`
 - `brief/site-package/agent_taskbook.json`

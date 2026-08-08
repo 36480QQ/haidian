@@ -361,6 +361,352 @@
           40.01675
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "CMD-01",
+      "properties": {
+        "id": "CMD-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "联合运行与人工指挥点",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_command",
+        "role_zh": "复用既有建筑的概念联合席位，汇总分区状态、活动许可、投诉、应急与人工接管；不自动执法。",
+        "staffing_status": "unknown_pending_operator_and_department_confirmation",
+        "manual_override": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34763226605534,
+          39.98275535167723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MGMT-01",
+      "properties": {
+        "id": "MGMT-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南门户秩序与访客服务站",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_management_post",
+        "management_sector": 1,
+        "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
+        "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
+        "manual_override": true,
+        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34745616357337,
+          39.94747526435786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MGMT-02",
+      "properties": {
+        "id": "MGMT-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "人才社区综合服务站",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_management_post",
+        "management_sector": 2,
+        "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
+        "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
+        "manual_override": true,
+        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34758439401202,
+          39.964281773473054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MGMT-03",
+      "properties": {
+        "id": "MGMT-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "原点社区活动与执法联络站",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_management_post",
+        "management_sector": 3,
+        "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
+        "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
+        "manual_override": true,
+        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34763226605534,
+          39.98275535167723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MGMT-04",
+      "properties": {
+        "id": "MGMT-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "遗址公园文化与维护站",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_management_post",
+        "management_sector": 4,
+        "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
+        "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
+        "manual_override": true,
+        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34741559805289,
+          39.99954697214287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MGMT-05",
+      "properties": {
+        "id": "MGMT-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "众智园测试准入与安全站",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "park_management_post",
+        "management_sector": 5,
+        "role_zh": "游客服务、设施报修、秩序观察、执法联络与急救呼叫的模块化共用站点。",
+        "law_enforcement_boundary_zh": "只提供联络和现场记录；行政执法决定由有权限人员依法作出。",
+        "manual_override": true,
+        "module_strategy": "reuse_first_or_demountable_low_impact_post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347625998518,
+          40.018027679558635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-01",
+      "properties": {
+        "id": "GATE-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 1",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347656,
+          39.94075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-02",
+      "properties": {
+        "id": "GATE-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 2",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34734399999999,
+          40.02475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-03",
+      "properties": {
+        "id": "GATE-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 3",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3422243902439,
+          40.01675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-04",
+      "properties": {
+        "id": "GATE-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 4",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35374,
+          40.01675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-05",
+      "properties": {
+        "id": "GATE-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 5",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34125999999999,
+          39.9885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-06",
+      "properties": {
+        "id": "GATE-06",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 6",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35342,
+          39.9885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-07",
+      "properties": {
+        "id": "GATE-07",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 7",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.34125999999999,
+          39.946920000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GATE-08",
+      "properties": {
+        "id": "GATE-08",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "应急与后勤转换口 8",
+        "design_status": "conceptual_pending_professional_review",
+        "node_type": "emergency_logistics_gate",
+        "role_zh": "平时保持步行环境，活动和应急时按许可转换为急救、消防、维护或后勤接入点。",
+        "clear_width_status": "unknown_pending_fire_crowd_and_accessibility_calculation",
+        "vehicle_access_status": "conceptual_pending_road_redline_and_turning_review"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35374,
+          39.946920000000006
+        ]
+      }
     }
   ]
 }
