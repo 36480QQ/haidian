@@ -301,6 +301,22 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
 
+### 弱势群体与无障碍设计验证
+
+本方案将老年人、儿童、残障人士、低收入劳动者和非数字用户作为独立设计验证对象，不只在通用画像中一笔带过：
+
+| 画像 | 核心需求 | 空间响应 | 服务替代 | 验证指标 |
+|---|---|---|---|---|
+| 老年人（60+） | 安全步行、就近休憩、数字辅助 | 连续无高差步行路径、每200m休憩节点、AI导览终端大字模式 | 人工导览员保留岗、社区志愿者结对 | 无障碍路径覆盖率、休憩节点密度 |
+| 儿童（0-12） | 安全活动空间、亲子互动 | 三处重点区各设儿童友好活动节点、遗址公园自然探索角 | 节假日亲子活动日历 | 儿童活动场地数量 |
+| 残障人士 | 全程无障碍、信息可达 | 地面盲道系统、建筑首层全顺接、AI导航含语音/触觉路径 | 线下无障碍服务站、手语导览预约 | 无障碍路径连通率 |
+| 低收入劳动者 | 就近就业、低成本通勤 | 产业服务岗位就近布局、慢行优先保证15分钟通勤 | 社区就业信息站、技能培训日历 | 15分钟通勤覆盖率 |
+| 非数字用户 | 线下服务不被边缘化 | 所有AI场景必须配套线下替代入口、人工接管窗口 | 一键呼叫人工、社区代办点 | 线下替代入口覆盖率 |
+
+**公众参与与申诉机制**：设立社区共治委员会（居民代表4席+企业代表3席+高校代表2席+政府观察员1席），季度公开会议审议场景清单和运营数据摘要。投诉申诉渠道包括：线上表单、社区代办点、12345热线转接，承诺15个工作日内书面回复。算法纠错机制：当AI推荐结果被3次以上投诉时触发自动降级，转为人工审核模式直到根因修复。活动扰民控制：夜间（22:00后）声量限值55dB，低噪声活动优先安排在距居住区100m以外。
+
+[metric:building_count]、[metric:road_segment_count]、[metric:green_space_count]、[metric:public_space_count] 用于核验空间供给密度。[standard:MOHURD-URBAN-DESIGN-MEASURES] 第十八条要求城市设计兼顾无障碍和公共利益，本节以此为依据。所有弱势群体设计验证均为概念建议，需在正式控规和建设审批阶段由专业团队深化。
+
 ## 更新项目清单、实施政策与分期计划
 
 实施方案应形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险和评估指标。政策建议应覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理和产权协同。`geometry/phasing.geojson` 应表达分期范围，`compliance_matrix.json` 应把每个任务与分期和图纸挂接。
@@ -340,14 +356,31 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ## 参考资料
 
-- brief/public-brief.md
-- brief/site-package/design_brief.json
-- brief/site-package/allowed_design_space.json
-- brief/site-package/enums/
-- brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+以下资料均来自公开或已清权来源，按来源等级排列：
+
+### A0 级：官方公开公告
+
+- [source:OFFICIAL-ANNOUNCEMENT] 北京市规划和自然资源委员会海淀分局，百年京张AI创新带城市设计国际方案征集资格预审公告，2026-05-09，https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html
+- [source:AGENT-TASKBOOK] 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录，2026-05-18，用户提供清权文档
+
+### A1 级：仓库维护者登记的公开/处理资料
+
+- [source:SITE-PACKAGE] brief/site-package/，维护者登记的项目用地包（含枚举、范围、指标、schema）
+- [source:SOURCE-REGISTRY] data/source_registry.json，仓库公开资料可用性登记
+- [source:PROCESSED-FACT-PACK] data/processed/agent_fact_pack.md，仓库处理的阅读导航层
+- [source:BOUNDARY-SOURCE] brief/site-package/geometry/provisional_boundaries.geojson，临时粗略边界（provisional）
+- [source:KEY-AREA-SOURCE] brief/site-package/geometry/provisional_boundaries.geojson，三处重点区临时范围（provisional）
+
+### 标准与规范
+
+- [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 资格预审公告 1.3-1.5 节
+- [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 面向智能体任务书
+- [standard:MOHURD-URBAN-DESIGN-MEASURES] 城市设计管理办法
+- [standard:MOHURD-CONTROL-DETAILED-PLANNING] 控制性详细规划编制审批管理办法
+- [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 国土利用分类指南
+- [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 建筑设计文件编制深度规定
+
+### 限制声明
+
+以上资料中，provisional_only 边界仅用于 AI 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。所有面积、比例和空间图层在正式 geometry 发布后必须整体复算。
+
