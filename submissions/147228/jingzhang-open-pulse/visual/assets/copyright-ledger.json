@@ -1,0 +1,1370 @@
+{
+  "schema_version": "1.0.0",
+  "title_zh": "逐资产作者、来源与清权台账",
+  "author": "许丙南",
+  "global_rules": {
+    "no_remote_runtime_assets": true,
+    "no_unlicensed_images": true,
+    "official_data_attribution_required": true,
+    "provisional_geometry_not_official": true
+  },
+  "assets": [
+    {
+      "path": "assets/figures/construction-participation.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "d2b4255c15c9052c343bb2bda03cb98613e39d21b8c190167ecdcdd086ec0f70"
+    },
+    {
+      "path": "assets/figures/construction-participation.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "3f7cacb81b36d3c55f5f024b826c3e943b02d869475c12dab762babc939f4c8e"
+    },
+    {
+      "path": "agent.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "ed9a67eb3d4de08c78843c3f87a09da717df60cbbf0fb35cf0e4e5441f711abb"
+    },
+    {
+      "path": "assets/figures/component-operations.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "09d203c59e168effcc30cae7dc73e485fcb79e2f0ec1c4fd02cf64a9615bf9a1"
+    },
+    {
+      "path": "assets/figures/component-operations.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "f789e68a079de9d13ccec41e52cee77dcc2be16d5d5f0544d9d1a70c2cca4c88"
+    },
+    {
+      "path": "assets/figures/identity-system.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "5b3213db4bb14183b134e492ec59c3f3b879ff0f2f2fc67167ff8589ec539549"
+    },
+    {
+      "path": "assets/figures/identity-system.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "15d08cef9366544ba6a45ea80a3251cb73ee83b323983ae7ecfbb9f8c4611ae9"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "3d255e4d199eabd9db0eb818e461c66e7761dfbf95b2f96c3ea53fb273b469ac"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "7cd4dc864bb4fbf2eae7572d01c0618afe1d926d978bc837d8739af6ac9e3099"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "40048bb75d1cf92937eb0c041d9b1eb60fb24c1aecfd99e2af9c1d7423c78d69"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "870a9e6ccaa44097b0adc352de7837c472107c34537319b70550850c27d9fd04"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "ded61f5a5ce7a75944c4de0dcf7a8c8c9e08976825659aca899009bf7583c8ca"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "da998b72d27d1b816fa4bd87db85a030b412c8b5b362b63a70daf7693f48f711"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "6c224eb74a7a0fdf06b9ef6a27969aed58b994ac78e798ee5f0967b4259c5f24"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "84357de77a73ec0f16fe0105b7d00acbfdfc3ba80dbcf909acdc906b68a98456"
+    },
+    {
+      "path": "assets/figures/regional-ecosystem.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "d717c341b142b31475de865d08c7176b1ca0f1b005a6bf63742cb6549eedadd2"
+    },
+    {
+      "path": "assets/figures/regional-ecosystem.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "6275e5c796e9b99d8c829993f96c1772e63670d5bea0f4ef3710a4f1223d69f7"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "52890885e2170f207079e6cc4bf60966a85af1169dcccca9f614615cfbfe86a3"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "fbc76c2075a4e0faba6d281502607677f12c8888fa502427ede9d8b90eeb6e37"
+    },
+    {
+      "path": "assets/figures/sustainability-timeseries.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "9cb2efec7ba8cec298f95073ffaeb51fe873c25f647893dbf306bd49817f129c"
+    },
+    {
+      "path": "assets/identity/open-pulse-mark.svg",
+      "asset_class": "identity_asset",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "ded282131c4a851a15d34b84c292ca119305eb4378f78ddf44fe8b200f44769e"
+    },
+    {
+      "path": "assumptions.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "17f9bfdc0dc91f96a01f7f67a33265948a57e010f1018a8dfd53c5f453b6c8b5"
+    },
+    {
+      "path": "changelog.md",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "d8b1583ec8fc1209cf09ecd61d3627ee40a82117cac878a85534b26b64324bda"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "63e34c27677ed4417704bf46802e73cc95a41aa142182577be0682a0134762f2"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "9c11a92bdef9589d0526cc1659f2471efe480785450710b3caecaa95aab8cb3d"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "asset_class": "drawing_pdf",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "eb724f04d1d0202ca380b856d257dc10c14099793ab9ef94bf15070ea4b5d17d"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "asset_class": "drawing_pdf",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "812be8189278094992a3fcbd9e06ee29a822dbbc5fb51ca03558d4a8f97ee2f8"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "asset_class": "drawing_pdf",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "46365cd2ea86a20464866aa5525e110635e1cbc7d6ec838118b88413efcda534"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "asset_class": "drawing_pdf",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "f55ebffcf732baf664b6ecdf555561ef2e31196da589c7239477ba3430a8077a"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "48dfc663d6427423b7722181dce6b09a4b6515c3838ba536da75bdbc2b82651e"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "94fbe0c9fcb05ab37902c861c0795a818efedceb395fae35526cb2ae1d857b6f"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "4e73798cabef55dcfc25bb7464e2e583e1a31351828b098ac6aa28e0bbd3f0c9"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "566926817504a2938e081390879095fdc300a0df9328ddcbc6131b1e861718d3"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "36513991c908e4db270255903650cb04546348b6d4c2edfa69f345569706c0b5"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "8b7f40b6f77af9a1d6d84f8d531daf0f1b5ffc1d55d3620338e55e53d619f7c8"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "2db94ee82f46f8ce8aa4dd0edd8c58833c3e9b9636b86776b61b006360531cf5"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "da5206e2d0edf56d3b3862163cbae78b59b5093d704e5a2a7efdc115e345b594"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "asset_class": "geometry",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
+    },
+    {
+      "path": "metrics.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "d9e952252734d622d0397c7f0cdfb203865a01d0be349ad4b29d1d2b5c788832"
+    },
+    {
+      "path": "proposal.en.md",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "6577382d038822ab3bd7b011897955c82a679601c337a5347140bc6a5aefb33b"
+    },
+    {
+      "path": "proposal.md",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "6ebb5d7779c7d536c0d044852cbb2b459baeeccefa63baf7c85ac6262f5a5306"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "27c47ecef9cd1bb6d7d89dad2a6ab90da5c834863faa61e2721a4c6792a7447b"
+    },
+    {
+      "path": "report/narrative.md",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "c6b31bb00de4acb7353902ef619105ebf2dabc78f5dc0db9aae5718249f13d7d"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "b3b4a0e4a4dbe7172ca4256432091af97ac016e0f9de336021a48aa55b1155dd"
+    },
+    {
+      "path": "report/proposal.html",
+      "asset_class": "narrative_or_report",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "4d79627b5339b5506aefcefa11d32be6f7fbe84da10413902cd31396fafac9c8"
+    },
+    {
+      "path": "sources.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "777592afd6dc74e1682a37d1e7ce1c68fbc06dc31f5e27e0f9199d77ce783f91"
+    },
+    {
+      "path": "standard_matrix.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+    },
+    {
+      "path": "visual/assets/case-mechanism-matrix.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "8fc6590e8fde612b8a35e8a0946470598613d5c01d06e4d99845095d563849a2"
+    },
+    {
+      "path": "visual/assets/case-policy-enterprise-crosswalk.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "dd66b107dc4b3a3771bf8bc369b0256a54e1b43b72c9f13804488d822e9295ae"
+    },
+    {
+      "path": "visual/assets/component-library.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "358f27d6f9e598917bb637620f6243e7e07d16707badd510bcdafe8d02a3eab6"
+    },
+    {
+      "path": "visual/assets/evidence-ledger.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "c034fd0651ee7d7765160c9eb775fdcc4f74f5c8068fddae26a7ad32032e8120"
+    },
+    {
+      "path": "visual/assets/identity-system.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "674108609af10ff1e6e75a0bad68222ce0bd8d7c2dac0026a353a94c76db0b4d"
+    },
+    {
+      "path": "visual/assets/indicator-selection.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "7cba19a3d1483b982523d0ac86e92f86fc069679650fafd2c1fd27b5e5c6b5bf"
+    },
+    {
+      "path": "visual/assets/key-area-node-plans.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "d7c0779ca0c5c182b76ee137e8fa9f2f38a9eda969ab72d16dfa587d57237a1d"
+    },
+    {
+      "path": "visual/assets/model-backtest.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "b17b785b2ca8aaff0e0ef7ec0b9cfb315791313257009df76dd8603bea73620f"
+    },
+    {
+      "path": "visual/assets/public-interest-audit.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "58b5d4ef4a685dfc2f3ccc956eb51319a766a146efd0161db70ae4a282363468"
+    },
+    {
+      "path": "visual/assets/regional-ecosystem.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "9a0a825caa678106948a984f0ec75aeed2c91e5983cd1328e8442b42e81638b7"
+    },
+    {
+      "path": "visual/assets/scenario-operation-matrix.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "398f6581b3965138a6ed58ffbc924c7f64e6b7e63ab99daad44873ded9fc175a"
+    },
+    {
+      "path": "visual/assets/sustainability-timeseries.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "b7b5d9ca9844e6b905eeb77b3c11ea3baaba8ae543f15f5567fc84158bc5c123"
+    },
+    {
+      "path": "visual/assets/taskbook-crosswalk.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "8dc0c8afd2861ccc99fdad7cdbbaa1034e102e502646d8da514f265359f498e2"
+    },
+    {
+      "path": "visual/assets/wind-health-validation-plan.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "7b8a39aab375dcc2c0a611b6afb3f159b817a9c0d6d31ad4ad6487087f46632f"
+    },
+    {
+      "path": "visual/assets/wind-health-field-protocol.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from the registered public method sources; no remote asset fetch at render time",
+      "source_inputs": [
+        "official AIJ public CFD guidebook route",
+        "peer-reviewed AIJ CFD guideline",
+        "ISO 7726 public catalogue record",
+        "repository brief and existing wind-health validation contract"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Method boundaries and URLs are registered in sources.json; the artifact contains no copied paper text or local measurement values.",
+      "font_note": "Not applicable; JSON evidence asset.",
+      "hash_sha256": "edca3895fb5f9db87299e74d4bfadbebf6993c2ba2cb4c1d6eef48a6eba0069f"
+    },
+    {
+      "path": "visual/assets/wind-health-point-register.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from the registered public method routes and existing geometry references; no remote asset fetch at render time",
+      "source_inputs": [
+        "provisional key-area and conceptual route layers",
+        "AIJ public CFD guidebook route",
+        "registered Haidian climate data routes"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "The register contains planning references only; coordinates and measurements are intentionally absent and sources are registered in sources.json.",
+      "font_note": "Not applicable; JSON evidence asset.",
+      "hash_sha256": "a9931339f62497804b588cf90b03a4e1892beaf5c073a634f1dfee72ebb835b8"
+    },
+    {
+      "path": "visual/index.en.html",
+      "asset_class": "offline_html",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "6d1818346b12eae8c2f0c66a578571cfebffc9cc2a47fd9d15726c1fe5c5622f"
+    },
+    {
+      "path": "visual/index.html",
+      "asset_class": "offline_html",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "285662cb815a0b5eb901b573029b50c354066c493a34f30fd64344a6c57a5f4d"
+    },
+    {
+      "path": "visual/assets/open-pulse-relay-receipt.schema.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "scenario-operation-matrix.json",
+        "repository self-check output"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
+      "font_note": "JSON asset; no font file is redistributed.",
+      "hash_sha256": "4218af7cac1335cb2c3e7d20620f67b26b2cd449054e1d6bed658dbc49d43a6a"
+    },
+    {
+      "path": "visual/assets/example-s02-embodied-receipt.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "scenario-operation-matrix.json",
+        "repository self-check output"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
+      "font_note": "JSON asset; no font file is redistributed.",
+      "hash_sha256": "4a1877b58d3ff17cfec763e2e471a8553375b603cd6e8b5df8f720dbdec4587f"
+    },
+    {
+      "path": "visual/assets/qa-readiness.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "scenario-operation-matrix.json",
+        "repository self-check output"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
+      "font_note": "JSON asset; no font file is redistributed.",
+      "hash_sha256": "9ad78ccfd9691efd6d36fa36d40386742607e00f494c4f116077cb372f682def"
+    },
+    {
+      "path": "visual/assets/operations-matrix.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "scenario-operation-matrix.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "23c6c2619c7c2c85b26ea24dd6cdf6fbb2418b58f2f5ea263858ab51a7ef31dd"
+    },
+    {
+      "path": "visual/assets/resource-accounts.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "scenario-operation-matrix.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "9bb9ffe605c7922571418b15e9ee0d0997095d42e3658a511817cbc33fe8abbd"
+    },
+    {
+      "path": "visual/assets/policy-enterprise-playbook.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from official case mechanisms and local scenario gates; no remote asset fetch at render time",
+      "source_inputs": [
+        "visual/assets/case-policy-enterprise-crosswalk.json",
+        "visual/assets/scenario-operation-matrix.json",
+        "official public case records in sources.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and the case crosswalk; this card is a design policy instrument, not a current policy claim.",
+      "font_note": "No embedded font or remote runtime asset.",
+      "hash_sha256": "1be797e557d32cdf3cd5d5a01bbc5da88ff4916169f23559282ae55af400d627"
+    },
+    {
+      "path": "visual/assets/industry-validation-cases.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as bounded policy and enterprise validation scenarios; no remote asset fetch at render time",
+      "source_inputs": [
+        "visual/assets/policy-enterprise-playbook.json",
+        "visual/assets/scenario-operation-matrix.json",
+        "visual/assets/case-policy-enterprise-crosswalk.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual validation cases only; see sources.json and policy crosswalk.",
+      "font_note": "No embedded font or remote runtime asset.",
+      "hash_sha256": "84b99f67c4c041fab6edbe975a2ec58936437e61cc055d2b1ce81e1a539f2fd4"
+    },
+    {
+      "path": "visual/assets/landmark-honor-crosswalk.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as policy, enterprise and public-accountability node concepts; no remote asset fetch at render time",
+      "source_inputs": [
+        "visual/assets/industry-validation-cases.json",
+        "visual/assets/case-policy-enterprise-crosswalk.json",
+        "visual/assets/component-library.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual public markers only; all displayed materials require source and rights review.",
+      "font_note": "No embedded font or remote runtime asset.",
+      "hash_sha256": "00d671ab7fb41fa13d0f0072c9d2e680d73be708548dbc620fd6d18ba737ec0c"
+    },
+    {
+      "path": "visual/assets/persona-and-inclusion-matrix.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as non-identifying public-user design lenses; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/scenario-operation-matrix.json",
+        "visual/assets/public-interest-audit.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Self-generated non-identifying design lenses; no personal data or inferred profile is included.",
+      "font_note": "No embedded font or remote runtime asset.",
+      "hash_sha256": "a1d8274a0cd6fe01f3554359b46704fa322ecd265b1f06ac9e48f97733992bf8"
+    },
+    {
+      "path": "visual/assets/construction-readiness.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/resource-accounts.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "attribution": "Conceptual construction/opening gates authored by 许丙南 / Codex; not construction drawings, cost estimates or approvals.",
+      "hash_sha256": "353d7f387cf5047b9bf36c621e7547a4e1bccf833e2e9e9f0610f0f930d8fa15"
+    },
+    {
+      "path": "visual/assets/participation-cycle.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/resource-accounts.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "attribution": "Conceptual continuous-participation and return-pass log authored by 许丙南 / Codex; not resident consent or consultation results.",
+      "hash_sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
+    },
+    {
+      "path": "risk.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual risk and release-gate register; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/construction-readiness.json",
+        "visual/assets/participation-cycle.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual risk register authored by 许丙南 / Codex; not a safety case, engineering calculation, insurance document or approval.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "a634f732194e69396ea9b79153969d90b915e7b2534b2f5053e8c6e276589fb4"
+    },
+    {
+      "path": "visual/assets/civic-pulse-protocol.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual six-stage civic operating protocol; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "risk.json",
+        "visual/assets/key-area-node-plans.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual civic pulse handoff authored by 许丙南 / Codex; not a digital-city implementation approval or resident-consent record.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "044dcda691f9d96b37bd42c6d20386eb79fd893a1b5f803687ca34e2767d117d"
+    },
+    {
+      "path": "visual/assets/proof-mile-delivery.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual component-level delivery and retirement protocol; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/construction-readiness.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual proof-mile handoff authored by 许丙南 / Codex; not a construction drawing, procurement specification, field acceptance or government approval.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "67daa5c504c8ec106b500f9b0d037c250ec9a981082b6565827380b261bcb9ff"
+    }
+  ],
+  "review_protocol": [
+    "verify each manifest path against this ledger",
+    "verify official source attribution and table URL",
+    "verify no third-party fonts/images/maps are embedded",
+    "re-run hashes after any edit"
+  ],
+  "known_limit": "This ledger records submission-side authorship and clearance evidence; it is not a legal opinion or a substitute for rights-holder confirmation where a future team adds new assets."
+}

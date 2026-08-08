@@ -27,6 +27,8 @@
 
 这些边界只可用于 AI 生成、可视化、intake 自检和设计讨论；不得作为 official redline、审批依据、精确面积依据或正式专业评分依据。
 
+截至 2026-08-07 的公开来源复核结果：官方公告正文未附精确边界，征集组织机构页面所列资格预审文件下载入口需要密码，公开渠道仍未找到可验证坐标系的官方 polygon/CAD/GIS。现有临时边界已按公告文字四至、位置线索和约面积在 EPSG:4548 下复核；完整推定依据与误差见 `brief/site-package/geometry/provisional_boundaries_basis.md`。
+
 ## 可由维护者继续公开采集
 
 - OpenStreetMap 道路、轨道、水系、绿地、POI 基础图层。
