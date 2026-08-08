@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "audited_upstream_commit": "5181eee7a70b5963a814f30890b1cc8786957e47",
+  "audited_at": "2026-08-09",
+  "proposal_main_files": 255,
+  "method": "Read all checked-out proposal.md front-matter titles and summaries, then search full text for selected exact Chinese terms. This is a collision audit, not a semantic ranking or judgment of peer quality.",
+  "exact_full_text_term_counts": {
+    "租金": 24,
+    "可负担": 27,
+    "原居民": 3,
+    "迁出": 0,
+    "排挤": 3,
+    "绅士化": 6,
+    "商户续": 0,
+    "商户留": 1,
+    "住房负担": 0
+  },
+  "collision_findings": [
+    {
+      "discarded_direction": "公共时间红利",
+      "peer_paths": [
+        "submissions/oukeming64-tech/jingzhang-ai-commons/proposal.md",
+        "submissions/FA555/jingzhang-chrono-commons/proposal.md"
+      ],
+      "decision": "Do not keep public-time dividend as the primary thesis."
+    },
+    {
+      "discarded_direction": "存量余量与分时共享",
+      "peer_paths": [
+        "submissions/JAVA-LW/jingzhang-reassembly-yard/proposal.md",
+        "submissions/FA555/jingzhang-chrono-commons/proposal.md"
+      ],
+      "decision": "Do not use latent capacity or time sharing as the primary thesis."
+    },
+    {
+      "discarded_direction": "算力能耗与微气候回报",
+      "peer_paths": [
+        "submissions/PelyYan/shade-the-cloud/proposal.md"
+      ],
+      "decision": "Do not use AI physical metabolism or climate commons as the primary thesis."
+    },
+    {
+      "discarded_direction": "人才完整生活圈",
+      "peer_paths": [
+        "submissions/ChrysFu/jingzhang-ai-talent-living-lab/proposal.md",
+        "submissions/whatevertogo/arrive-belong/proposal.md"
+      ],
+      "decision": "Do not submit another generic talent-living or complete-neighborhood concept."
+    }
+  ],
+  "selected_white_space": {
+    "thesis": "Make community retention and anti-displacement a release gate for every AI innovation and urban-renewal project.",
+    "difference_from_existing_mentions": "Several peers mention affordability, original residents, rent, or gentrification as one risk or KPI. Rooted Jing-Zhang makes the evidence contract, retention stress test, shop continuity, essential-worker access, and no-automated-displacement rule the organizing spatial and operating system.",
+    "limitations": [
+      "Exact-term counts miss synonyms and do not prove complete semantic uniqueness.",
+      "Peer proposals continue to update; this audit must be refreshed before each major iteration.",
+      "No peer text, figure, layout, or proprietary idea is copied; titles and paths are recorded only for collision avoidance and attribution."
+    ]
+  }
+}
+
