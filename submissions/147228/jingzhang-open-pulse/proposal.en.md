@@ -44,20 +44,18 @@ The research-area strategy is a public-facing innovation chain: university and c
 
 The eight mechanisms are **land, space, industry, capital, talent, compute, data and scenario**. Each mechanism has an inbound need, an outbound return and an accountable future operator in `visual/assets/regional-ecosystem.json`. No partnership, funding, land allocation, or government commitment is asserted. The regional return loop is: originate → engineer → book → test → publish evidence → scale or retire.
 
-The case comparison now uses six officially sourced public examples as mechanism references, not as local performance claims. The official pages are [source:CASE-HELSINKI-AI-REGISTER], [source:CASE-AMSTERDAM-ALGORITHM-REGISTER], [source:CASE-SINGAPORE-AI-VERIFY], [source:CASE-DECIDIM-BARCELONA], [source:CASE-UK-ATRS] and [source:CASE-SEOUL-AI-FOUNDATION].
+To satisfy the taskbook's request for 5–8 AI ecosystem cases, `visual/assets/case-mechanism-matrix.json` separates six officially sourced public examples from six transferable patterns. The examples answer what policy or enterprise-development mechanism the official page makes visible; they do not transfer foreign performance, law or partnership claims to Haidian:
 
-| Official example | Verified mechanism | Jing-Zhang interface | Boundary | Source |
-| --- | --- | --- | --- | --- |
-| Helsinki AI Register | Public inventory and feedback route for city AI systems | Status board with purpose, data boundary, accountable lead, state and complaint route | Does not replace safety, accessibility, procurement or consent review | [source:CASE-HELSINKI-AI-REGISTER] |
-| Amsterdam Algorithm Register | Plain-language public explanation of municipal algorithm use | Preflight record linked to review, stop and redress paths | Not Chinese legal compliance; protected details require review | [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
-| Singapore AI Verify | Standardised AI testing, open-source collaboration and assurance sandbox | Booked human-led assurance window with model card, test note and rollback | Not certification, procurement approval or permission to test residents | [source:CASE-SINGAPORE-AI-VERIFY] |
-| Decidim Barcelona | Traceable digital and face-to-face participation infrastructure | Contribution wall plus paper, walk-in and multilingual routes; publish what changed | Digital participation cannot replace access for people without accounts or devices | [source:CASE-DECIDIM-BARCELONA] |
-| UK ATRS | Standardised public record of why and how algorithmic tools are used | Compact record for purpose, owner, data, human review, alternatives, limits and incidents | Not a Beijing statutory requirement; local legal review remains necessary | [source:CASE-UK-ATRS] |
-| Seoul AI Foundation | Institutional capacity linking research, public-service application, talent and global exchange | Named interface among research, talent, public service and exchange | No partnership, funding or city mandate is implied | [source:CASE-SEOUL-AI-FOUNDATION] |
+| Case | Policy / enterprise mechanism | Jing-Zhang interface | Do-not-copy boundary |
+| --- | --- | --- | --- |
+| Helsinki AI Register | Public inventory, detail pages and feedback route for city AI systems | Pilot card states purpose, data boundary, accountable lead, state and complaint route | A register does not replace safety, accessibility, procurement or consent review [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | Plain-language explanation of what municipal algorithms are used for | Preflight record links purpose to review, stop and redress paths | Not Chinese legal compliance [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | Standardised AI testing, open-source collaboration and assurance sandbox | Booked, human-led test window for startups with model card and rollback record | Not certification, procurement approval or permission to test residents [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | Traceable digital and face-to-face participation infrastructure | Contribution wall plus paper, walk-in and multilingual routes; publish what changed | Digital participation cannot replace access for people without accounts or devices [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | Standardised public record of why and how algorithmic tools are used | Record purpose, owner, data, human review, alternatives, limits, incidents and update | Not a Beijing statutory requirement; local legal and procurement review remains necessary [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | Institutional capacity linking research, public service, talent and global exchange | Named interface among research, enterprise service, public testing and exchange | No Seoul partnership, funding or Jing-Zhang mandate is implied [source:CASE-SEOUL-AI-FOUNDATION] |
 
-The source IDs, access dates and use boundaries are recorded in `sources.json`. This is a mechanism comparison, not proof that Jing-Zhang has adopted or partnered with any of these organisations. The original six design patterns remain in `visual/assets/case-mechanism-matrix.json` as the local test layer.
-
-The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment.
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. `visual/assets/policy-enterprise-playbook.json` turns that interface into executable growth-stage cards, beginning with a public AI register and feedback card. `visual/assets/industry-validation-cases.json` adds three bounded validation windows for model safety, enterprise-service data governance and low-speed embodied AI. `visual/assets/landmark-honor-crosswalk.json` connects responsibility desks, contribution archives and safety-governance markers to the policy and enterprise interfaces. The six design patterns remain in the `rows` array, while sources, access dates and use boundaries are recorded in `sources.json`.
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.en.png)
 
@@ -85,27 +83,33 @@ Each key-area polygon is provisional and each node proposal is a concept for pro
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path. These are non-identifying design lenses, not inferred profiles or automated eligibility categories.
+The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path.
+
+The eight non-identifying public-user lenses are recorded in `visual/assets/persona-and-inclusion-matrix.json`: older/resident users; wheelchair, cane and guide-dog users; carers and children; night-shift workers; visitors; small businesses and community-service workers; developers/startups/university teams; and maintenance/operators. `user_persona_count` is a design-target count, not a population statistic or eligibility system. Each lens has a spatial response, offline fallback, test and safeguard, and the package prohibits facial recognition, individual trajectory retention, biometrics and commercial profiling. The matrix rows P-01 through P-08 remain conceptual until informed, opt-out and compensable participation is completed.
 
 The package contains 14 scenario cards in `visual/assets/scenario-operation-matrix.json`. They cover walking-gap diagnosis, low-speed delivery robots, autonomous-mobility assistance, model red-teaming, open publishing, Jing-Zhang cultural wayfinding, health-service navigation, enterprise service, data-governance demonstrations, intelligent retail, public-safety review, an international AI week walk, rainwater/tree-pit maintenance, and a low-light quiet chain.
 
 The matrix is a design-control instrument, not a promise of service levels. Every row states: spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, data retention, non-AI equivalent, stop condition, success metric and phase. The universal gates are: no digital precondition; human review cannot be removed; an accessible route remains continuous; a public status and complaint path exists; and stop/rollback has been tested.
 
-### Three bounded industry validation windows and eight public-user lenses
-
-The package separates three industry-validation windows from the 14 scenario cards. They answer what an enterprise or public-service team must prove before entering a real workflow. They are conceptual suggestions, not procurement approvals, investment commitments, public deployments or local performance evidence. The design-target count is [metric:industry_validation_case_count]; inputs, acceptance tests and stop conditions are recorded at [data:visual/assets/industry-validation-cases.json#IV-01], [data:visual/assets/industry-validation-cases.json#IV-02] and [data:visual/assets/industry-validation-cases.json#IV-03].
-
-| Window | Place and question | Pass / stop | Non-AI equivalent |
-| --- | --- | --- | --- |
-| IV-01 model safety and transparency | Zhongzhi Garden booked test room; can a supplier reproduce safety, rights, human-review and rollback evidence? | Two independent reviewers reproduce the note; unclear rights, missing reviewer or failed takeover stops the token | Paper protocol and expert review |
-| IV-02 enterprise service and data compliance | Origin / Dazhongsi service nodes; can assisted service remain source-traceable and equivalent to a manual route? | AI and manual routes both complete; every material answer has a source and correction owner; leakage or no counter stops | Staffed counter, paper process and in-person advice |
-| IV-03 low-speed embodied-AI safety | Zhongzhi Garden–Jing-Zhang park interface; can a robot coexist without occupying the accessible chain? | Stop, takeover, route clearance and ordinary-use recovery all pass; failed stop, severe near miss or maintenance lapse exits | Human delivery, guidance and static wayfinding |
-
-The original five industry personas and the expanded eight public-user lenses serve different purposes. The eight-lens design-target count is [metric:user_persona_count]; it is not a population count. The machine-readable matrix gives each lens a spatial response, fallback, test and safeguard: [data:visual/assets/persona-and-inclusion-matrix.json#P-01], [data:visual/assets/persona-and-inclusion-matrix.json#P-02], [data:visual/assets/persona-and-inclusion-matrix.json#P-03], [data:visual/assets/persona-and-inclusion-matrix.json#P-04], [data:visual/assets/persona-and-inclusion-matrix.json#P-05], [data:visual/assets/persona-and-inclusion-matrix.json#P-06], [data:visual/assets/persona-and-inclusion-matrix.json#P-07] and [data:visual/assets/persona-and-inclusion-matrix.json#P-08]. The lenses are: older/resident users; wheelchair, cane and guide-dog users; carers and children; night-shift workers; visitors; small businesses and community service workers; developers/startups/university teams; and maintenance/operators. No facial recognition, individual trajectory retention, biometric eligibility or commercial profiling is permitted.
-
 To make a scenario card reproducible rather than merely readable, this package adds `visual/assets/open-pulse-relay-receipt.schema.json` and `visual/assets/example-s02-embodied-receipt.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox receipt: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, rights/appeal/deletion rules, maintenance responsibility and exit-asset plan in one record. `performance_results` remains `null`; the receipt format is not robot performance or field acceptance. Any real pilot must issue a new receipt and pass accessibility, safety, maintenance and public-review gates.
 
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
+
+### Three industry validation windows: evidence before procurement or scale-up
+
+To connect policy tools to enterprise development rather than leave them as case summaries, `visual/assets/industry-validation-cases.json` defines three reversible validation windows. They are conceptual test protocols for organisers, suppliers and public-service teams—not procurement approvals, deployment facts, investment commitments or evidence of local-company performance. Each window couples an enterprise question with a policy interface, acceptance evidence, a stop condition and a non-AI equivalent:
+
+| Validation window | Enterprise-development question | Policy interface | Acceptance and stop gate |
+| --- | --- | --- | --- |
+| Model safety and transparency | Can a startup or supplier show reproducible safety, provenance, human review and rollback evidence before expansion? | Pre-procurement assurance record: model/data boundary, red-team result, accountable reviewer, non-AI route and stop decision | Two independent reviewers reproduce the test note; unclear rights, no human reviewer or failed takeover drill stops the window. S04 / Zhongzhi Garden. |
+| Enterprise service and data-governance compliance | Can an enterprise-service team shorten a public process without exposing unauthorised data or turning an AI answer into a binding decision? | Service preflight record: public source, authorised documents, human decision owner, correction path, retention and manual-counter equivalent | AI-assisted and manual routes both work and material answers have sources and a correction route; unverifiable documents, privacy spill, discriminatory routing or no manual counter stops the window. S08/S09 / Origin–Dazhongsi. |
+| Low-speed embodied-AI safety and operations | Can a robot or embodied-AI supplier demonstrate safe coexistence with an accessible public route before scale-up or procurement? | Public test permit: route, speed/priority rule, emergency stop, human takeover, incident log, privacy boundary, maintenance owner and withdrawal trigger | A staffed drill completes stop, takeover, route clearance and return to ordinary use; blocked accessibility, a severe near miss or overdue maintenance stops the window. S02/S03 / Zhongzhi–Jing-Zhang park edge. |
+
+All three windows start small, staffed and reviewable, then decide whether to scale, redesign or retire. “Success” means that acceptance evidence is complete; it does not mean product effectiveness, investment return or government procurement has been established. `[source:AGENT-TASKBOOK]`
+
+### Cultural narrative, markers and long-term operations
+
+The cultural narrative uses engineering proof, open collaboration and public reciprocity as a three-part experience. Four non-glitzy public markers are proposed: the **Century Engineering Questions Wall**, the **Open-Source Contribution Archive**, the **Urban Agent Responsibility Desk**, and the **Enterprise Safety-Governance Responsibility Desk**. Their policy and enterprise value, acceptance tests, spatial links and clearance boundaries are recorded in `visual/assets/landmark-honor-crosswalk.json`. These are conceptual nodes for heritage, public-art, management and rights review, not institutional endorsements or advertising sites.
 
 ### Node-level concepts and public-interest audit
 
@@ -165,7 +169,7 @@ Public-interest checks cover accessibility, older residents, carers, night worke
 
 The v1.6 time-series section is retained in the Chinese source document and its machine-readable assets. It records the official statistical source boundary, the 2023 baseline frame and the four scenario comparison. It does not turn modeled outcomes into official forecasts. Readers should use the time-series figure and ledger to inspect source years, transformations, missing values and guardrails.
 
-## v2.1 Review-Gap Closure: From Concept to Reviewable Deliverables
+## v1.7 Top-Rank Repair: From Concept to Reviewable Deliverables
 
 This iteration directly repairs review gaps found in high-scoring repository submissions and the repository's detailed validator feedback:
 
@@ -175,8 +179,7 @@ This iteration directly repairs review gaps found in high-scoring repository sub
 - `visual/assets/component-library.json` gives eight physical, legible and maintainable public-space components.
 - `visual/assets/identity-system.json` and the identity figure provide a real, inspectable identity and wayfinding grammar.
 - `visual/assets/copyright-ledger.json` makes authorship, sources, licenses, hashes and future-clearance duties auditable.
-- `visual/assets/case-mechanism-matrix.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
-- `visual/assets/industry-validation-cases.json`, `persona-and-inclusion-matrix.json` and `landmark-honor-crosswalk.json` make three bounded enterprise test windows, eight public-user lenses and four honor markers independently inspectable.
+- `visual/assets/case-mechanism-matrix.json`, `visual/assets/case-policy-enterprise-crosswalk.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, policy-tool, enterprise-interface, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
 - `proposal.md`, this English translation, two offline report pages, the offline visual index and `changelog.md` keep the bilingual review surface aligned.
 
 These are reviewable design deliverables, not claims that a project has been commissioned. Their value is that a reviewer can find the requirement, inspect the evidence, test the stop gate and identify what must be confirmed before implementation.
@@ -210,10 +213,6 @@ The 14-row matrix gives every scenario a spatial carrier, trigger, minimum data,
 The baseline is deliberately **unknown until surveyed**. Older residents, disabled people, carers, night workers, children and guardians, visitors, small businesses and maintenance crews are named participants. Step-free continuity, service without an app, complaint response, group differences and night light/noise are audited through paired walks, staffed tests, stratified listening and public status boards. A conflict pauses the scenario, shows the disputed evidence, offers a non-AI equivalent and publishes remedy or withdrawal.
 
 The case file compares six mechanism patterns—station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method—rather than inventing international project facts. Each pattern says what to borrow, what not to copy, the Jing-Zhang test interface and what must be sourced before a formal citation. This preserves international communication while keeping the rights and evidence boundary auditable.
-
-### Honor markers and public responsibility
-
-The cultural sequence is tied to four proposed public markers: the century engineering-question wall, open-source contribution archive, city-agent responsibility desk and enterprise safety-governance responsibility desk. The design-target count is [metric:ai_landmark_count]. They are indexed at [data:visual/assets/landmark-honor-crosswalk.json#HONOR-01], [data:visual/assets/landmark-honor-crosswalk.json#HONOR-02], [data:visual/assets/landmark-honor-crosswalk.json#HONOR-03] and [data:visual/assets/landmark-honor-crosswalk.json#HONOR-04]. Each marker requires a rights record, plain-language explanation, accountable owner, correction/removal route and professional heritage/public-art/safety review; none is an approved structure, advertising site or institutional endorsement.
 
 ### Acceptance rule
 

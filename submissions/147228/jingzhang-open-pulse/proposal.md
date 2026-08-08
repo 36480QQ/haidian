@@ -267,7 +267,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 ### 本方案的空间承诺：以“可验证的公共性”替代“AI 装置秀”
 
-本方案将“京张开源脉冲（Jing-Zhang Open Pulse）”定义为一条以遗址公园为公共底板、以三处重点区为创新锚点、以可审计的场景开放为运营机制的城市协作带；本次提交为 v2.1，新增可复算交通网络、居民体验门槛、气候—雨洪—具身智能—维护压力测试、可逆试点协议、三类产业验证窗、八类公共使用者镜头、四个荣誉节点以及双语、区域协同、组件维护和逐资产清权证据，并继续以“数据约束想象力”的证据型展板系统表达空间主张。Logo 方向为“并行双线与开放节点”：两条不等宽的线对应百年铁路与持续迭代的数字协作，三个节点对应众智园、AI 原点和大钟寺；仅作为概念视觉系统，后续应由专业团队完成商标、字体和无障碍识别审查。[source:AGENT-TASKBOOK] [data:geometry/roads.geojson#ROAD-001]
+本方案将“京张开源脉冲（Jing-Zhang Open Pulse）”定义为一条以遗址公园为公共底板、以三处重点区为创新锚点、以可审计的场景开放为运营机制的城市协作带；本次提交为 v1.7，新增可复算交通网络、居民体验门槛、气候—雨洪—具身智能—维护压力测试、可逆试点协议以及双语、区域协同、组件维护和逐资产清权证据，并继续以“数据约束想象力”的证据型展板系统表达空间主张。Logo 方向为“并行双线与开放节点”：两条不等宽的线对应百年铁路与持续迭代的数字协作，三个节点对应众智园、AI 原点和大钟寺；仅作为概念视觉系统，后续应由专业团队完成商标、字体和无障碍识别审查。[source:AGENT-TASKBOOK] [data:geometry/roads.geojson#ROAD-001]
 
 空间上采用“一轴、三站、两张网”：一轴是京张文化与日常慢行轴；三站是众智园的可信研发与测试、AI 原点的开源转化与人才生活、大钟寺的产业发布与国际会客；两张网分别是串联绿地和公共空间的“慢行交往网”，以及串联场景卡、人工复核和数据最小化的“公共服务网”。它不提出新的法定道路、容积率、拆改留或工程结论，而是给专业团队一套可随官方边界、控规与权属资料到位后复算的空间—运营接口。[depth:overall_spatial_structure] [metric:green_ratio]
 
@@ -296,32 +296,30 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 五类画像为开源开发者、初创团队、产业访客、周边居民和高校师生；它们不是基于个人画像的自动决策对象，而是公共服务和空间供给的设计视角。所有测试场景均为概念建议，须经过专业、安全、隐私与运营审查后方可试点。[source:AGENT-TASKBOOK] [depth:risk_missing_data]
 
-为把“产业测试验证场景”从场景卡中单独拎出，新增三个有界验证窗。它们回答企业或公共服务团队在进入真实流程前要证明什么，不是采购、招商、投资或部署承诺；当前三个验证窗的设计目标计数为 [metric:industry_validation_case_count]，逐项输入、验收与停止条件见 [data:visual/assets/industry-validation-cases.json#IV-01]、[data:visual/assets/industry-validation-cases.json#IV-02]、[data:visual/assets/industry-validation-cases.json#IV-03]。
+五类产业画像之外，方案用八个不识别个人的公共使用者镜头检查谁能进入、使用、投诉和退出：周边/老年居民、轮椅/盲杖/导盲犬使用者、照护者与儿童、夜班劳动者、游客/首次到访者、小商户/社区服务者、开发者/初创团队/高校师生、维护人员/运营责任人。八类镜头的设计目标计数为 [metric:user_persona_count]，不是人口统计，也不生成个体资格；每类都有空间响应、无数字兜底、测试和隐私/安全闸门，见 [data:visual/assets/persona-and-inclusion-matrix.json#P-01]—[data:visual/assets/persona-and-inclusion-matrix.json#P-08]。方案禁止人脸识别、个体轨迹留存、生物识别和商业画像；官方边界和基线未知时，先做知情、可退出、可补偿的参与审计。
 
-| 验证窗 | 空间与问题 | 通过/停止 | 非 AI 等价路径 |
-| --- | --- | --- | --- |
-| IV-01 模型安全与透明度 | 众智园预约测试房；企业能否复现安全、清权、人工复核与回滚证据 | 两名独立复核者可复现测试记录；清权不明、缺人工复核或接管演练失败即停 | 纸面测试协议与专家评审 |
-| IV-02 企业服务与数据要素合规 | AI 原点/大钟寺企业服务节点；AI 辅助是否与人工流程等价且不泄露未授权资料 | AI 与人工路径均可完成、每条关键回答有来源和纠错人；资料不可核验、个人信息外泄或无人工柜台即停 | 人工柜台、纸面流程、现场咨询 |
-| IV-03 低速具身智能安全与运营 | 众智园—京张公园慢行界面；机器人能否在不占用无障碍主链的情况下安全共处 | 急停、人工接管、清空路线和恢复普通使用全部演练通过；急停失败、严重险情或维护逾期即退出 | 人工配送、人工引导、静态导视 |
-
-原有五类产业画像与八类公共使用者设计镜头并行：前者用于产业服务，后者用于检验谁能进入、使用、投诉和退出。八类设计镜头的目标计数为 [metric:user_persona_count]，不代表人口统计，也不生成个体资格；每一类均有空间响应、无数字兜底、测试指标和隐私/安全闸门，详见 [data:visual/assets/persona-and-inclusion-matrix.json#P-01]、[data:visual/assets/persona-and-inclusion-matrix.json#P-02]、[data:visual/assets/persona-and-inclusion-matrix.json#P-03]、[data:visual/assets/persona-and-inclusion-matrix.json#P-04]、[data:visual/assets/persona-and-inclusion-matrix.json#P-05]、[data:visual/assets/persona-and-inclusion-matrix.json#P-06]、[data:visual/assets/persona-and-inclusion-matrix.json#P-07]、[data:visual/assets/persona-and-inclusion-matrix.json#P-08]。
-
-| 设计镜头 | 主要空间响应 | 测试与兜底 |
+| 公共使用者镜头 | 空间与服务回应 | 无数字兜底/停止条件 |
 | --- | --- | --- |
-| 周边/老年居民 | 无障碍主链、安静座椅、公共状态板 | 陪行与无 App 服务测试；实体导视、人工问询 |
-| 轮椅、盲杖与导盲犬使用者 | 平整路面、盲文/高对比/语音、可见急停 | 障碍复核与路线清空演练；人工引导、触觉导视 |
-| 照护者与儿童 | 照护停留、饮水、低速活动边界 | 推车陪行与活动撤场；人工广播、活动取消 |
-| 夜班劳动者 | 低照度主链、安静座椅、夜间值守 | 照度/噪声配对记录；固定照明、人工值守 |
-| 游客/首次到访者 | 双语导视、工程问题墙、责任台 | 可理解性与入口发现测试；纸质地图、人工讲解 |
-| 小商户/社区服务者 | 企业服务柜台、公开规则、人工申诉 | AI/人工路径等价测试；纸面流程、人工客流管理 |
-| 开发者/初创团队/高校师生 | 开源发布厅、评测沙盒、贡献档案廊 | 复现、清权、接管与撤回测试；专家评审、静态模型卡 |
-| 维护人员/运营责任人 | 资产台账、责任台、实体检修口 | 维护时钟、断网、急停、恢复演练；纸面巡检与人工派单 |
+| 周边/老年居民；轮椅、盲杖与导盲犬使用者 | 连续无障碍主链、安静座椅、盲文/高对比/语音、可见急停 | 陪行、实体导视与人工问询；路线清空或障碍复核失败即停 |
+| 照护者与儿童；夜班劳动者 | 照护停留与低速边界；低照度主链、安静座椅、夜间值守 | 人工广播、固定照明和人工值守；照度/噪声配对不合格即调整或撤回 |
+| 游客/首次到访者；小商户/社区服务者 | 双语导视、工程问题墙、责任台；企业服务柜台、公开规则、人工申诉 | 纸质地图、人工讲解和纸面流程；关键材料不可核验即不启用 AI 辅助 |
+| 开发者/初创团队/高校师生；维护人员/运营责任人 | 开源发布厅、评测沙盒、贡献档案廊；资产台账、责任台、实体检修口 | 专家评审、静态模型卡、纸面巡检和人工派单；清权、接管、维护或撤回演练失败即停 |
 
-八类镜头均不使用人脸识别、个体轨迹留存、生物识别或商业画像；基线必须通过知情、可退出、可补偿和无障碍参与建立。所有测试场景均为概念建议，须经过专业、安全、隐私与运营审查后方可试点。[source:AGENT-TASKBOOK] [depth:risk_missing_data]
+### 三个产业测试验证场：先证据，后采购或扩容
+
+为把“政策工具”真正接到企业发展，而不是停留在案例罗列，`visual/assets/industry-validation-cases.json` 设置三个可撤回的验证窗。它们是面向组织方、企业和公共服务团队的概念测试协议，不是采购批准、部署事实、投资承诺或本地企业绩效证明。每个验证窗都要求企业问题、政策接口、验收证据、停止条件和非 AI 等价服务同时出现：
+
+| 验证场 | 企业发展问题 | 政策接口 | 关键验收与停止条件 |
+| --- | --- | --- | --- |
+| 模型安全与透明度验证窗 | 初创团队或供应商能否在扩容前提交可复现的安全、数据来源、人工复核和回退证据 | 采购前 assurance record：模型/数据边界、红队结果、责任审查人、非 AI 方案和停止决定 | 两名独立审查人可复现测试记录；权属不清、缺少人工审查人或接管演练失败即停止。对应 S04、众智园。 |
+| 企业服务与数据要素合规验证窗 | 企业服务团队能否缩短公开流程，同时不暴露未授权数据、不把 AI 答复变成行政决定 | 服务 preflight record：公开来源、授权材料、人工决策责任人、更正路径、留存期限和人工柜台等价路径 | AI 辅助与人工路径都能走通，关键答复均有来源和人工更正路由；材料不可核验、隐私泄露、歧视性分流或缺少人工柜台即停止。对应 S08/S09、原点社区/大钟寺。 |
+| 低速具身智能安全与运营验证窗 | 机器人或具身智能供应商能否在任何规模化部署或采购决定前证明与无障碍公共路线安全共存 | 公共测试许可包：路线、速度/优先规则、急停、人工接管、事件日志、隐私边界、维护责任和撤回触发器 | 现场演练完成急停、人工接管、清空路线和恢复普通公共使用；阻断无障碍链、严重险情或维护逾期即停止。对应 S02/S03、众智园—京张公园界面。 |
+
+三类验证场都先走小规模、有人值守、可复盘的测试窗，再决定扩容、改设计或退出；任何“成功”只表示验收证据完整，不表示产品效果、投资回报或政府采购已经成立。三类验证场的机器可读计数为 [metric:industry_validation_case_count]，正文场景卡总量为 [metric:scenario_card_count]，五类画像对应 [metric:user_persona_count]。[source:AGENT-TASKBOOK] [depth:risk_missing_data]
 
 ### 文化叙事、地标与长期运营
 
-文化叙事不是把铁路当作科技背景板，而是把“工程求证—开放协作—公共回馈”作为三段式体验：京张铁路的工程理性、中关村的自主创新、AI 时代的可验证公共性。建议设置四类非炫耀性地标/荣誉节点：**百年工程问题墙**（以清权史料讲述问题与求解）、**开源贡献档案廊**（展示可公开验证的项目记录）、**城市智能体责任台**（展示场景数据边界、申诉与人工复核路径）、**企业安全治理责任台**（公开测试为何启动、停止或回到普通使用）。四个节点的设计目标计数为 [metric:ai_landmark_count]，分别对应 [data:visual/assets/landmark-honor-crosswalk.json#HONOR-01]、[data:visual/assets/landmark-honor-crosswalk.json#HONOR-02]、[data:visual/assets/landmark-honor-crosswalk.json#HONOR-03]、[data:visual/assets/landmark-honor-crosswalk.json#HONOR-04]；每项均要求来源/清权、通俗说明、责任人和撤下路径。它们均为概念节点，需在文保、公共艺术、管理、版权与安全审查后深化。[source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]
+文化叙事不是把铁路当作科技背景板，而是把“工程求证—开放协作—公共回馈”作为三段式体验：京张铁路的工程理性、中关村的自主创新、AI 时代的可验证公共性。建议设置四类非炫耀性地标/荣誉节点：**百年工程问题墙**（以清权史料讲述问题与求解）、**开源贡献档案廊**（展示可公开验证的项目记录）、**城市智能体责任台**（展示场景数据边界、申诉与人工复核路径）、**企业安全治理责任台**（展示企业测试的安全证据、停止理由和恢复普通公共使用的条件）。四个节点的政策与企业价值、验收测试、关联图层和清权边界见 `visual/assets/landmark-honor-crosswalk.json`；机器可读节点计数为 [metric:ai_landmark_count]。它们均为概念节点，需在文保、公共艺术、管理与版权审查后深化，不构成机构背书或企业广告位。[source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]
 
 运营上建议形成“春季问题征集、夏季场景开放、秋季开发者周、冬季证据复盘”的年度闭环；每次活动留存开放议题、证据链接、公众反馈和人工复盘，而不以到场人数或招商金额制造绩效。开发者社区以公开议题库、可复现实验、贡献署名和问题申诉为核心；场景开放以小规模预约测试—第三方复核—公开复盘为核心。这是供组织方、专业团队与社区协商的运营原型，不代表已确定的活动、资金、政策或招引承诺。[source:AGENT-TASKBOOK] [depth:phasing_implementation]
 
@@ -355,20 +353,18 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 机器可读的边界、输入、输出、责任和回流路径见 `visual/assets/regional-ecosystem.json`；图中“originate—engineer—book—test—publish evidence—scale or retire”是运营建议，不是已签署的组织架构。
 
-为补齐 agent.2 要求的 5—8 个 AI 生态案例，新增 `visual/assets/case-mechanism-matrix.json`，把六个官方公开案例与六种可迁移机制分开记录。案例只回答“它公开展示了什么机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：
+为补齐 agent.2 要求的 5—8 个 AI 生态案例，`visual/assets/case-mechanism-matrix.json` 把六个官方公开案例与六种可迁移机制分开记录。案例只回答“官方页面公开展示了什么政策或企业发展机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：
 
-| 案例 | 已核验机制 | 京张转译接口 | 不照搬边界 |
+| 案例 | 政策/企业机制 | 京张接口 | 不照搬边界 |
 | --- | --- | --- | --- |
-| Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 为每个公共空间试点设置目的、数据边界、责任人、状态板和投诉路由 | 登记表不能替代无障碍、安全、采购和居民同意审查 [source:CASE-HELSINKI-AI-REGISTER] |
-| Amsterdam Algorithm Register | 公开说明城市算法用于什么服务，并形成 Civic AI Lab 语境 | 测试前发布 plain-language record，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规，也不越过保密审查 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
-| Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 众智园设置预约、人工主导的 assurance window，附 model card、测试记录和回滚 | 工具包不是认证、采购批准或无同意测试许可 [source:CASE-SINGAPORE-AI-VERIFY] |
-| Decidim Barcelona | 可追溯的线上参与与线下参与、开放协作软件 | 贡献墙与在线台账同时提供纸面、窗口和多语种参与，公开“哪些意见改变了什么” | 数字参与不能替代无设备、无账号或需要线下支持的人 [source:CASE-DECIDIM-BARCELONA] |
-| UK ATRS | 以标准化公开记录说明算法为何使用、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 的 preflight 记录 | 这是英国公共部门标准，不是北京地方强制要求 [source:CASE-UK-ATRS] |
-| Seoul AI Foundation | 以城市级机构串联研究、公共服务、人才和全球协作 | 以责任明确的小型接口连接高校策源、公共验证、人才服务和国际交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
+| Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 试点卡写明目的、数据边界、责任人、状态和投诉路由 | 登记不能替代安全、无障碍、采购和居民同意审查 [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | 公开说明城市算法用于什么服务 | 测试前发布说明，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 为初创团队提供预约、人工主导的测试窗口、模型卡和回滚记录 | 工具包不是认证、采购批准或无同意测试许可 [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | 可追溯的线上与线下参与基础设施 | 贡献墙同时提供纸面、窗口和多语种渠道，公开意见如何改变决定 | 数字参与不能替代无账号、无设备或需要线下支持的人 [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | 标准化公开记录说明算法为何、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 记录 | 不是北京地方强制要求，仍需本地法律和采购审查 [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | 串联研究、公共服务、人才和全球协作的机构能力 | 以责任明确的接口连接高校策源、企业服务、公共验证和交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
 
-这六个案例都标为 `official_public_case` 或 `official_public_secondary_case`，来源、访问日期和用途边界在 `sources.json` 登记；它们是机制比较，不是本地现状证据、工程可行性证明或竞赛排名。六种模式（站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法）仍保留在同一 JSON 的 `rows` 中，供专业团队把案例机制映射到三处重点区的节点计划。
-
-政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡 [metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规和低速具身智能三条产业测试验证窗；`visual/assets/landmark-honor-crosswalk.json` 把责任台、贡献档案和安全治理节点绑定到政策与企业接口。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
 
 ### 2. 十四条场景—空间—运营矩阵
 
@@ -496,5 +492,13 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 ## 参考资料
 
 - brief/public-brief.md
-
-完整的机器可读来源、标准、资料用途、处理资料和指标引用分别登记在 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`data/processed/agent_fact_pack.md` 和 `metrics.json`。[source:OFFICIAL-ANNOUNCEMENT] 与 [source:SOURCE-REGISTRY] 是这条证据链的入口。其中，`sources.json` 新增的六个国际案例均保留官方公开 URL、访问日期、用途和“不构成合作或本地绩效证明”的边界；它们是提交包内的详细来源账本，不冒充仓库 `sources/public-sources.json` 的公共索引条目。
+- brief/site-package/design_brief.json
+- brief/site-package/allowed_design_space.json
+- brief/site-package/enums/
+- brief/site-package/ranges/planning_limits.json
+- data/processed/agent_fact_pack.md
+- data/processed/project_scope_summary.csv
+- data/processed/agent_task_requirements.csv
+- data/processed/source_use_matrix.csv
+- data/processed/missing_data_checklist.csv
+- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:PROJECT-SCOPE-SUMMARY]、[source:AGENT-TASK-REQUIREMENTS]、[source:SOURCE-USE-MATRIX]、[source:MISSING-DATA-CHECKLIST]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
