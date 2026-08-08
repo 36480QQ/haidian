@@ -335,4 +335,8 @@ The data routes are separately recorded as **identified but not downloaded**: th
 
 ## References
 
+## v2.0 Reviewable Evidence Gate Registry
+
+To keep “a proposal exists” separate from “the proposal has been verified,” this iteration adds visual/assets/v2-evidence-gate-index.json and 40 individual gates. Each gate binds sources, inputs, procedure, pass rule, stop rule, accountable role, non-AI equivalent and evidence output. All are design_target: none claims that the provisional boundary, an unknown baseline or a future operator has passed the gate.
+
 See `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, `data/source_registry.json`, and the repository taskbook for the complete source and standard registry. The package intentionally preserves the distinction between official public information, user/repository-provided material, provisional geometry, modeled design scores, conceptual partnerships and future implementation requirements.
