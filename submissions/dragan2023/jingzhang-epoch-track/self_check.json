@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json + proposal.md",
+      "message": "确定性校验通过：路径归属、格式完整度、正文章节、证据引用、图纸与 HTML 均符合 formal 要求。",
+      "suggested_fix": "保持当前状态；任何文件修改后需刷新 manifest 哈希并重新自检。"
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "总体设计范围采用 provisional 边界（official_boundary=false），已按规则标注精度限制；官方红线发布后必须整体复算。",
+      "suggested_fix": "取得官方红线后替换并复算全部面积与指标。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区均为 provisional 粗略多边形，已在正文/HTML/来源/假设中披露，不作为 official polygon 或精确面积依据。",
+      "suggested_fix": "以官方重点区 polygon 替换后复算。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "用地分区由提交边界无缝划分，无缝隙、无重叠，land_use_code 使用枚举分类。",
+      "suggested_fix": "无。"
+    },
+    {
+      "check_id": "GEOMETRY_INSIDE_SITE",
+      "result": "pass",
+      "severity": "info",
+      "target": "geometry/buildings.geojson",
+      "message": "建筑、绿地、公共空间图层均在提交边界内。",
+      "suggested_fix": "无。"
+    },
+    {
+      "check_id": "METRIC_RECALC",
+      "result": "pass",
+      "severity": "info",
+      "target": "metrics.json",
+      "message": "全部已知指标由 geometry 在 EPSG:4548 下复算，与空间校验一致；FAR/密度/总规模等缺失控制指标如实标为 unknown。",
+      "suggested_fix": "官方数据补齐后统一更新。"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "空间校验通过；仅保留 provisional 边界 minor 提示，不阻断内容评分。",
+      "suggested_fix": "无。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "可视化页面为离线静态 HTML，不加载外部资源、脚本或跟踪代码，指标标记与 metrics.json 一致。",
+      "suggested_fix": "无。"
+    },
+    {
+      "check_id": "VISUAL_REVIEW",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "可视化包装检查通过：总览地图、三层范围、重点区域、用地分区、交通慢行、蓝绿公共空间、建筑、更新项目、AI 场景、核心指标、任务覆盖、自检状态、来源与假设齐全。",
+      "suggested_fix": "无。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "专业证据评审通过：6 项标准、15 项设计深度、9 个核心图层与 18 个已知指标均被正文引用。",
+      "suggested_fix": "无。"
+    }
+  ]
+}

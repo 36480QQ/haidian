@@ -1,0 +1,370 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_epoch_rail",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "京张遗址公园活力带慢行主轴"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3471,
+            39.939
+          ],
+          [
+            116.3471,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "南北向次干路/支路 116.3426"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3426,
+            39.939
+          ],
+          [
+            116.3426,
+            40.0244500000002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "secondary",
+        "name_zh": "南北向次干路/支路 116.3454"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3454,
+            39.939
+          ],
+          [
+            116.3454,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "secondary",
+        "name_zh": "南北向次干路/支路 116.3488"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3488,
+            39.939
+          ],
+          [
+            116.3488,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "南北向次干路/支路 116.3520"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.352,
+            39.939
+          ],
+          [
+            116.352,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9445"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34054722222221,
+            39.9445
+          ],
+          [
+            116.3553,
+            39.9445
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9505"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34038055555556,
+            39.9505
+          ],
+          [
+            116.3553,
+            39.9505
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9620"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34006111111111,
+            39.962
+          ],
+          [
+            116.3553,
+            39.962
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-009",
+      "properties": {
+        "id": "ROAD-009",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9780"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3398935483871,
+            39.978
+          ],
+          [
+            116.35426,
+            39.978
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-010",
+      "properties": {
+        "id": "ROAD-010",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9845"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34031290322581,
+            39.9845
+          ],
+          [
+            116.35374,
+            39.9845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-011",
+      "properties": {
+        "id": "ROAD-011",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9900"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34066774193548,
+            39.99
+          ],
+          [
+            116.3533,
+            39.99
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-012",
+      "properties": {
+        "id": "ROAD-012",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 39.9975"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34115161290323,
+            39.9975
+          ],
+          [
+            116.35371095890412,
+            39.9975
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-013",
+      "properties": {
+        "id": "ROAD-013",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 40.0100"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34189512195123,
+            40.01
+          ],
+          [
+            116.35439589041096,
+            40.01
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-014",
+      "properties": {
+        "id": "ROAD-014",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "branch",
+        "name_zh": "东西向支路 40.0200"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34238292682926,
+            40.02
+          ],
+          [
+            116.35494383561644,
+            40.02
+          ]
+        ]
+      }
+    }
+  ]
+}
