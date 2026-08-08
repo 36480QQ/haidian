@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-08
+
+- 修复中英文离线报告的 Markdown 表格渲染，改为可滚动的语义 HTML 表格，并同步更新英文版本标识。
+- 增加 `open-pulse-relay-receipt.schema.json` 与完全合成的 S02 具身智能沙盒凭证，把人工接管、无 App 替代、清权、维护和退出写成可复核记录。
+- 增加 `qa-readiness.json`，记录本地 QA 通过项和 provisional/unknown 边界；三项新资产同步进入 manifest 与逐资产清权台账。
+
 ## v1.7 - 2026-08-08
 
 reviewable deliverables and bilingual review surface.
