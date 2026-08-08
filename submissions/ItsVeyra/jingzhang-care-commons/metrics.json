@@ -16,6 +16,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -29,10 +30,12 @@
     },
     "community_touchpoint_count": {
       "assumptions": [
-        "A-DESIGN-001: counts proposed touchpoints, not built or operating facilities."
+        "A-DESIGN-001: counts seven conceptual public-space program features, not seven built or operating physical locations."
       ],
       "confidence": "low",
-      "formula": "count(features in conceptual public_space layer)",
+      "description": "Seven conceptual public-space program features: 3 landmark point programs and 4 distributed network feature types; these are not seven built or operating physical locations.",
+      "formula": "count(3 conceptual landmark point-program features + 4 conceptual distributed-network feature types) = 7",
+      "label": "Conceptual public-space program feature count",
       "source_files": [
         "geometry/public_space.geojson"
       ],
@@ -42,7 +45,8 @@
     },
     "consent_withdrawal_completion_rate": {
       "assumptions": [
-        "Baseline requires granular-consent and withdrawal logs, a defined service window, and auditable completion criteria."
+        "A-OUTCOMES-001: baseline requires a defined service window and auditable completion criteria.",
+        "A-CONSENT-001: granular-consent and withdrawal logs are required."
       ],
       "confidence": "unknown",
       "formula": "verified_withdrawal_requests_completed_within_service_window / all_verified_withdrawal_requests",
@@ -54,7 +58,7 @@
     },
     "elder_initiated_activity_share": {
       "assumptions": [
-        "Baseline must be collected during the pilot from consented activity records with an agreed elder-age definition."
+        "A-OUTCOMES-001: baseline must be collected during the pilot from consented activity records with an agreed elder-age definition."
       ],
       "confidence": "unknown",
       "formula": "elder_initiated_activities / all_eligible_activities",
@@ -66,7 +70,7 @@
     },
     "first_launch_completion_rate": {
       "assumptions": [
-        "Baseline numerator and denominator must be collected during the pilot under one documented completion rule."
+        "A-OUTCOMES-001: baseline numerator and denominator must be collected during the pilot under one documented completion rule."
       ],
       "confidence": "unknown",
       "formula": "participants_completing_first_launch / participants_starting_first_launch",
@@ -94,6 +98,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -111,6 +116,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -127,6 +133,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -141,7 +148,9 @@
     },
     "human_review_timeliness_rate": {
       "assumptions": [
-        "Baseline requires versioned AI-output logs, a defined service window, reviewer timestamps, and failure-to-human records."
+        "A-OUTCOMES-001: baseline requires a fixed service window and eligible-output definition.",
+        "A-SAFETY-001: reviewer timestamps and failure-to-human records are required.",
+        "A-AI-CONTENT-001: reviewed AI-derived outputs require labeling and versioned provenance."
       ],
       "confidence": "unknown",
       "formula": "eligible_ai_outputs_reviewed_within_service_window / all_eligible_ai_outputs_requiring_review",
@@ -154,7 +163,8 @@
     "key_area_count": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
-        "Areas must be recalculated when an official georeferenced boundary is supplied."
+        "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy."
       ],
       "confidence": "low",
       "formula": "count(features in key_areas.geojson)",
@@ -168,7 +178,8 @@
     "key_area_total_sqm": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
-        "Areas must be recalculated when an official georeferenced boundary is supplied."
+        "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy."
       ],
       "confidence": "low",
       "formula": "area(union(key_areas) projected EPSG:4326 -> EPSG:4548)",
@@ -183,6 +194,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -198,6 +210,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -213,6 +226,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -228,6 +242,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -243,6 +258,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -258,6 +274,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -273,6 +290,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -288,6 +306,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -303,6 +322,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -318,38 +338,41 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
-      "formula": "area(union(land_use) intersect site in EPSG:4548) / area(site in EPSG:4548)",
+      "formula": "if source-CRS union(land_use) topologically equals site: 1; else area(projected union intersect site in EPSG:4548) / area(site in EPSG:4548)",
       "source_files": [
         "geometry/land_use.geojson",
         "geometry/site_boundary.geojson"
       ],
       "status": "known",
       "unit": "ratio",
-      "value": 0.999998519
+      "value": 1.0
     },
     "phasing_area_total_sqm": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
-      "formula": "area(union(phasing) intersect site projected EPSG:4326 -> EPSG:4548)",
+      "formula": "if source-CRS union(phasing) topologically equals site: area(site in EPSG:4548); else area(projected union intersect site in EPSG:4548)",
       "source_files": [
         "geometry/phasing.geojson",
         "geometry/site_boundary.geojson"
       ],
       "status": "known",
       "unit": "sqm",
-      "value": 11412791.398812
+      "value": 11412825.385554
     },
     "public_space_area_sqm": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -366,6 +389,7 @@
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
         "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy.",
         "A-DESIGN-001: the measured layer is a conceptual generated design layer, not an approved plan or observed condition."
       ],
       "confidence": "low",
@@ -380,7 +404,7 @@
     },
     "repeat_participation_rate": {
       "assumptions": [
-        "Baseline cohort and return window must be fixed before pilot collection and deduplicated with consent."
+        "A-OUTCOMES-001: baseline cohort and return window must be fixed before pilot collection and deduplicated with consent."
       ],
       "confidence": "unknown",
       "formula": "eligible_participants_returning_in_measurement_window / eligible_first_time_participants",
@@ -392,7 +416,7 @@
     },
     "resident_agency_score": {
       "assumptions": [
-        "Baseline survey instrument, scale, sampling frame, and minimum response count must be approved before collection."
+        "A-OUTCOMES-001: baseline survey instrument, scale, sampling frame, and minimum response count must be approved before collection."
       ],
       "confidence": "unknown",
       "formula": "sum(resident_agency_item_scores) / sum(maximum_item_scores)",
@@ -404,7 +428,7 @@
     },
     "road_area_ratio": {
       "assumptions": [
-        "A-TRANSPORT-001: baseline requires official road redlines, widths, and site boundary."
+        "A-INFRASTRUCTURE-001: baseline requires official road redlines, widths, and site boundary."
       ],
       "confidence": "unknown",
       "formula": "road_area_sqm / official_site_area_sqm",
@@ -416,7 +440,7 @@
     },
     "road_area_sqm": {
       "assumptions": [
-        "A-TRANSPORT-001: baseline requires official road redlines and surveyed cross-sections."
+        "A-INFRASTRUCTURE-001: baseline requires official road redlines and surveyed cross-sections."
       ],
       "confidence": "unknown",
       "formula": "sum(road_surface_polygon_area_sqm)",
@@ -429,7 +453,8 @@
     "site_area_sqm": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
-        "Areas must be recalculated when an official georeferenced boundary is supplied."
+        "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy."
       ],
       "confidence": "low",
       "formula": "area(union(site_boundary) projected EPSG:4326 -> EPSG:4548)",
@@ -443,7 +468,8 @@
     "submitted_site_area_sqm": {
       "assumptions": [
         "A-BOUNDARY-001: submitted geometry is provisional and is not an official redline or precise statutory area basis.",
-        "Areas must be recalculated when an official georeferenced boundary is supplied."
+        "Areas must be recalculated when an official georeferenced boundary is supplied.",
+        "A-BOUNDARY-001: JSON retains deterministic raw values for recomputation; narrative and figures must round provisional areas and ratios to defensible display precision and never imply survey accuracy."
       ],
       "confidence": "low",
       "formula": "area(union(submitted site_boundary) projected EPSG:4326 -> EPSG:4548)",

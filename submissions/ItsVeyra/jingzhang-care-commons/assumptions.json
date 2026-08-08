@@ -2,7 +2,7 @@
   "assumptions": [
     {
       "id": "A-BOUNDARY-001",
-      "impact": "All geometry-derived areas and ratios are low-confidence submission measurements and must be recomputed from official georeferenced redlines before statutory or professional scoring use.",
+      "impact": "All geometry-derived areas and ratios are low-confidence submission measurements and must be recomputed from official georeferenced redlines before statutory or professional scoring use. JSON retains deterministic raw values for audit and recomputation, while narrative and figures must round provisional values to defensible display precision and never imply survey accuracy.",
       "statement": "Repository provisional geometry is used because no official redline is available; it is not an official boundary or precise statutory area basis.",
       "status": "pending_official_data"
     },
