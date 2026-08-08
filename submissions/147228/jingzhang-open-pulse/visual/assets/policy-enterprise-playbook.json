@@ -132,6 +132,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-014",
+      "title": "企业服务申诉与纠错卡",
+      "policy_instrument": "redress_and_complaint_route",
+      "enterprise_stage": "public_service_use",
+      "problem": "A company and a resident need a clear way to challenge an AI-assisted answer without needing to understand the model or accept an automated decision.",
+      "jingzhang_interface": "For S08/S09, show the source of each material answer, human decision owner, correction route, expected response time and record-retention boundary.",
+      "operator": "enterprise service lead + legal/rights reviewer + human counter",
+      "required_evidence": ["plain-language notice", "correction route", "response-time log", "appeal outcome record"],
+      "metric": "material_ai_answers_with_source_and_human_correction_route",
+      "stop_gate": "Untraceable material answer or no human correction route forces immediate manual handling.",
+      "source_ids": ["CASE-AMSTERDAM-ALGORITHM-REGISTER", "CASE-HELSINKI-AI-REGISTER"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
