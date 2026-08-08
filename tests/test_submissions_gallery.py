@@ -234,6 +234,7 @@ class TestSubmissionsGallery(unittest.TestCase):
     def test_human_readable_report_viewer_loads_structured_evidence(self):
         viewer = (ROOT / "proposal-view.html").read_text(encoding="utf-8")
         for required in [
+            "manifest.json",
             "sources.json",
             "metrics.json",
             "standard_matrix.json",
@@ -253,6 +254,11 @@ class TestSubmissionsGallery(unittest.TestCase):
             "citation-popover",
             "responsive-table",
             "已解析证据",
+            "完整方案资料包",
+            "artifact-groups",
+            "packageToggle",
+            "activateFilter",
+            "点击下面任意数字筛选证据",
         ]:
             self.assertIn(required, viewer)
 
