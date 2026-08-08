@@ -44,3 +44,9 @@ reviewable deliverables and bilingual review surface.
 - Added explicit boundary language for Beijing AV testing policy: designated roads, safety assessment, qualified subjects and human fallback are prerequisites; no local road, permit, operator or vehicle is claimed.
 - Rebuilt the five primary figures and bilingual A3/A0 boards around human continuity, curb states, stop conditions and evidence gates.
 - Added autonomous-mobility coverage to the compliance, standards and design-depth matrices; unknown baselines remain unknown until field and professional review evidence exists.
+
+## v2.2 - 2026-08-08
+
+- Corrected `autonomy_metric_count` from 9 to 11 so the metric ledger matches the 11 autonomy-specific keys in `metrics.json` (4 known, 7 unknown).
+- Added bilingual responsive evidence-ledger dashboards with a status ring, exact spatial ratios and a clear rule that unknown is not pass.
+- Updated visualization and metrics hashes in `manifest.json`; no performance claim, permit claim or local road-opening claim was added.
