@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "8fa05df656131bf350ffd34424fa4e3d2394c22a08ca5376378db29347b1dbe3"
+      "sha256": "1934f4e7865713e2e107a0fd54fefcf8246bb9b33c6594733de227cc03be1636"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "93c2407271f95b7ef0d137c46e92d103bb171698e6d4344cbd5bd3e5edfca25a"
+      "sha256": "3a901093146e6d296944ae9d8df44a77b1ee578775fbfb755940a0afbd247c9d"
     },
     {
       "path": "report/narrative.md",
@@ -95,19 +95,19 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "7c7af54b1c146e9432325152cbfdc94a19181314ba231051bd17ea58c9ec23cc"
+      "sha256": "1460bd4dee2218f21c006a4d11d2114b8428ad6c21d5704e319ae0191a951110"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "1769a66eec3b19d3869bbe02eae140ef989c3c72d4f8201868a8ae7a174a4253"
+      "sha256": "2377fbdea408a7a179fe8ec925933d04ae93057f491c8bba5e71baa697e6802e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "411051002c04206d8a4742c26eeb65c1215fe7e1277b3a3eef4d690213fd4195"
+      "sha256": "71efe94cddefa87a11db0e738e5f2580b11763972590651a9063df326f7c550d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -125,13 +125,13 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5b9e622e34aae21794f019f96670ff62cdfb9f52187547d0e50796ce4d87744c"
+      "sha256": "50fd62ee6b1be36773f9245fe944f9b39daca831e79d03c12ae3181f8c13bcea"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8fe1d9451dfa058a269987077e4b9dcf0cde9c7f5dceef1850ef4188d7559b1c"
+      "sha256": "770c3d1801e624ffe208317d5302b980ebfa8bf3011fb4f9d1faa443daa80da5"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -197,6 +197,7 @@
   "validation_claim": {
     "self_checked": false,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "self_check_note": "Files edited after last full self-check (figures/PDFs/proposal regenerated for AI review P0/P1 fixes); re-run self_check_submission.py"
   }
 }
