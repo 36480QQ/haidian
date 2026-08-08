@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "title_zh": "政策工具与企业成长阶段卡库",
+  "author": "许丙南",
+  "status": "design_policy_instruments",
+  "boundary_note": "These are proposed policy and enterprise-development instruments for a bounded AI innovation belt. They are not current policy, procurement approval, funding,招商承诺, legal advice or evidence of local enterprise performance.",
+  "cards": [
+    {
+      "id": "POL-001",
+      "title": "公共 AI 系统登记与反馈卡",
+      "policy_instrument": "public_ai_register",
+      "enterprise_stage": "trust_before_pilot",
+      "problem": "A supplier and a public client need a shared plain-language record before a pilot enters a public workflow.",
+      "jingzhang_interface": "Every S04 or S08 pilot publishes purpose, data boundary, accountable operator, current state, non-AI equivalent and complaint route on the status board.",
+      "operator": "district service lead + named pilot operator",
+      "required_evidence": ["published pilot card", "feedback route tested", "manual fallback available"],
+      "metric": "pilot_cards_with_current_owner_and_feedback_route",
+      "stop_gate": "No card or no accountable operator means no public test window.",
+      "source_ids": ["CASE-HELSINKI-AI-REGISTER", "CASE-UK-ATRS"],
+      "status": "conceptual_suggestion"
+    }
+  ]
+}

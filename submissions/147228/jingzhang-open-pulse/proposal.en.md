@@ -55,7 +55,7 @@ To satisfy the taskbook's request for 5–8 AI ecosystem cases, `visual/assets/c
 | UK ATRS | Standardised public record of why and how algorithmic tools are used | Record purpose, owner, data, human review, alternatives, limits, incidents and update | Not a Beijing statutory requirement; local legal and procurement review remains necessary [source:CASE-UK-ATRS] |
 | Seoul AI Foundation | Institutional capacity linking research, public service, talent and global exchange | Named interface among research, enterprise service, public testing and exchange | No Seoul partnership, funding or Jing-Zhang mandate is implied [source:CASE-SEOUL-AI-FOUNDATION] |
 
-The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. The six design patterns remain in the `rows` array, while sources, access dates and use boundaries are recorded in `sources.json`.
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. `visual/assets/policy-enterprise-playbook.json` turns that interface into executable growth-stage cards, beginning with a public AI register and feedback card. The six design patterns remain in the `rows` array, while sources, access dates and use boundaries are recorded in `sources.json`.
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.png)
 
