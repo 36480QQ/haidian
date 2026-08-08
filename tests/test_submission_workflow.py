@@ -5,6 +5,7 @@ import json
 import subprocess
 import hashlib
 import io
+import re
 import urllib.error
 from pathlib import Path
 from unittest.mock import patch
@@ -249,6 +250,21 @@ class ProposalSchemaTests(unittest.TestCase):
         payload["sections"] = REQUIRED_SECTIONS
         with self.assertRaises(jsonschema.ValidationError):
             jsonschema.validate(payload, schema)
+
+    def test_contract_accepts_human_readable_v2_metadata(self) -> None:
+        schema = json.loads((REPO_ROOT / "schema" / "proposal.schema.json").read_text(encoding="utf-8"))
+        payload = {
+            "metadata": {
+                "title": "可读方案",
+                "author_github": "alice",
+                "language": "zh",
+                "proposal_format_version": "2",
+                "license": "CC-BY-4.0",
+                "summary": "将人类可读正文与完整机器核验索引分层组织。",
+            },
+            "sections": REQUIRED_SECTIONS,
+        }
+        jsonschema.validate(payload, schema)
 
 
 REFERENCE_BLOCK = (
@@ -1715,6 +1731,51 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             self.assertIn("missing data reference [data:geometry/land_use.geojson#...]", "\n".join(report.errors))
+
+    def test_v2_uses_section_anchors_without_repeating_complete_index(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            proposal_path = root / base / "proposal.md"
+            text = proposal_path.read_text(encoding="utf-8")
+            text = text.replace('language: "zh"', 'language: "zh"\nproposal_format_version: "2"', 1)
+            text = re.sub(r"\[(?:source|standard|depth|data|metric):[^\]\s]+\]", "", text)
+            readable_explanation = re.sub(
+                r"\[(?:source|standard|depth|data|metric):[^\]\s]+\]",
+                "",
+                FORMAL_PARAGRAPH,
+            )
+            for heading in REQUIRED_SECTIONS:
+                text = text.replace(
+                    f"## {heading}\n",
+                    f"## {heading}\n\n本节关键判断依据 [source:SITE-PACKAGE]。{readable_explanation}\n",
+                    1,
+                )
+            proposal_path.write_text(text, encoding="utf-8")
+            report = validate_submission(root, "alice", changed)
+            self.assertTrue(report.ok, "\n".join(report.errors))
+            self.assertNotIn("missing known metric reference", "\n".join(report.errors))
+
+    def test_v2_rejects_dense_inline_evidence_dump(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            proposal_path = root / base / "proposal.md"
+            text = proposal_path.read_text(encoding="utf-8")
+            text = text.replace('language: "zh"', 'language: "zh"\nproposal_format_version: "2"', 1)
+            text = text.replace(
+                "## 设计依据与资料清单\n",
+                "## 设计依据与资料清单\n\n完整索引 "
+                "[source:SITE-PACKAGE] [source:OFFICIAL-ANNOUNCEMENT] "
+                "[source:AGENT-TASKBOOK] [source:BOUNDARY-SOURCE]\n",
+                1,
+            )
+            proposal_path.write_text(text, encoding="utf-8")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            self.assertIn("consecutive evidence markers", "\n".join(report.errors))
 
     def test_non_formal_stage_fails_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
