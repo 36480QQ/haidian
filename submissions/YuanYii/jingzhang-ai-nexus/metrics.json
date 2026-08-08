@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "provisional_only"
       ]
     },
     "building_footprint_area_sqm": {
