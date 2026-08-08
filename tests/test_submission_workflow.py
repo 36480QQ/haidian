@@ -353,6 +353,8 @@ class ProposalSchemaTests(unittest.TestCase):
         del payload["metadata"]["translation_file"]
         with self.assertRaises(jsonschema.ValidationError):
             jsonschema.validate(payload, schema)
+        del payload["metadata"]["bilingual_contract_version"]
+        jsonschema.validate(payload, schema)
 
 
 REFERENCE_BLOCK = (
@@ -1639,6 +1641,32 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", [f"{base}/manifest.json"])
             self.assertFalse(report.ok)
             self.assertIn("bilingual contract requires", "\n".join(report.errors))
+
+    def test_bilingual_contract_checks_manifest_only_text_bearing_figures(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.add_bilingual_v2_display(root, base, changed)
+            extra = root / base / "assets" / "figures" / "report-only.png"
+            extra.write_bytes(b"text-bearing report figure")
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {
+                    "path": "assets/figures/report-only.png",
+                    "role": "proposal_figure",
+                    "required": True,
+                    "language": "zh",
+                    "sha256": hashlib.sha256(extra.read_bytes()).hexdigest(),
+                }
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            report = validate_submission(root, "alice", [f"{base}/manifest.json"])
+            self.assertFalse(report.ok)
+            self.assertIn("report-only.en.png", "\n".join(report.errors))
 
     def test_complete_bilingual_display_mapping_has_no_bilingual_warning(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

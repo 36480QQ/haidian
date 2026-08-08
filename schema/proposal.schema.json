@@ -50,7 +50,7 @@
         "bilingual_contract_version": {
           "type": "string",
           "const": "1",
-          "description": "Explicit opt-in to the blocking Chinese-English display contract. New scaffolds set this field; historical packages without it retain compatibility."
+          "description": "Explicit opt-in for proposal format v2 to the blocking Chinese-English display contract. New scaffolds set this field; historical packages without it retain compatibility."
         },
         "translation_of": {
           "type": "string",
@@ -130,8 +130,11 @@
       "if": {
         "properties": {
           "metadata": {
-            "properties": {"bilingual_contract_version": {"const": "1"}},
-            "required": ["bilingual_contract_version"]
+            "properties": {
+              "proposal_format_version": {"const": "2"},
+              "bilingual_contract_version": {"const": "1"}
+            },
+            "required": ["proposal_format_version", "bilingual_contract_version"]
           }
         }
       },

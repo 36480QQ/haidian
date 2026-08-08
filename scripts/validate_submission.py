@@ -389,7 +389,7 @@ def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
         metadata, _ = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
     except UnicodeDecodeError:
         return False
-    return metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
+    return requires_bilingual_contract(metadata)
 
 
 def parse_track_metadata(raw_value: object) -> list[str]:
@@ -555,6 +555,14 @@ def has_readability_reference(text: str) -> bool:
 def proposal_format_version(metadata: dict[str, str]) -> str:
     """Return the explicit proposal contract version, preserving legacy files as v1."""
     return metadata.get("proposal_format_version", "1").strip() or "1"
+
+
+def requires_bilingual_contract(metadata: dict[str, str]) -> bool:
+    """Return whether a v2 proposal explicitly accepts the bilingual gate."""
+    return (
+        proposal_format_version(metadata) == PROPOSAL_FORMAT_VERSION
+        and metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
+    )
 
 
 def reference_density_issues(body: str) -> list[str]:
@@ -1528,6 +1536,18 @@ def validate_bilingual_display(
         }
 
     display_files = {path for path in DISPLAY_BASE_FILES if (base / path).is_file()}
+    if strict_bilingual:
+        # The manifest is the package inventory. Some text-bearing figures are
+        # used only by the rendered report or visual page and are not linked
+        # directly from proposal.md, so they must not bypass the language gate.
+        for path, item in manifest_items.items():
+            if (
+                path.startswith("assets/figures/")
+                and primary_path_from_localized(path) is None
+                and item.get("language") != "neutral"
+                and (base / path).is_file()
+            ):
+                display_files.add(path)
     for match in MARKDOWN_IMAGE_RE.finditer(body):
         raw = match.group(2).split("#", 1)[0].split("?", 1)[0]
         image_path = PurePosixPath(raw)
@@ -1756,6 +1776,10 @@ def validate_proposal_file(
     if bilingual_contract_version and bilingual_contract_version != BILINGUAL_CONTRACT_VERSION:
         report.add_error(
             f"{proposal_path}: bilingual_contract_version must be {BILINGUAL_CONTRACT_VERSION}"
+        )
+    if bilingual_contract_version and format_version != PROPOSAL_FORMAT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version requires proposal_format_version={PROPOSAL_FORMAT_VERSION}"
         )
     validation_body = body
     if language == "en":
