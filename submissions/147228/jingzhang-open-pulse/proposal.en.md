@@ -257,6 +257,14 @@ The v1.8 revision places the highest-impact taskbook evidence directly in `propo
 
 The regional chain explicitly includes the **Beijing North Latitude Community / Haidian universities and institutes**, Huairou Science City, Future Science City, Beijing E-Town and the Beijing-Tianjin-Hebei network. Each interface has an input, an output, a future owner and evidence required before activation. All are conceptual suggestions; no partnership, funding, land allocation or government commitment is asserted.
 
+| Regional interface | Input | Jing-Zhang output | Responsibility or evidence to confirm |
+| --- | --- | --- | --- |
+| North Latitude Community / Haidian universities | Resident questions, talent, open-source topics | Public scenario briefs, participation feedback, reproducible experiments | Community consent, participation support, privacy boundary |
+| Huairou Science City | Upstream science and facility capacity | Explainable public displays and validation questions | Facility operator consent and data clearance |
+| Future Science City | Materials, energy and engineering tests | Low-carbon components, drainage and robot-interface prototypes | Engineering, ecology and municipal review |
+| Beijing E-Town | Manufacturing, industrialisation and deployment | Public-validation evidence after safety gates | Enterprise/park cooperation, procurement and liability boundary |
+| Beijing-Tianjin-Hebei network | Diverse urban contexts and comparative feedback | Diffusion, reuse or retirement records | Regional authorities and operators |
+
 ### Node and operations table
 
 | Node | Human sequence | Embodied-intelligence boundary | Gate and acceptance test |
@@ -267,11 +275,31 @@ The regional chain explicitly includes the **Beijing North Latitude Community / 
 
 The 14-row matrix gives every scenario a spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, retention, non-AI equivalent and stop condition. In review shorthand: the walking and accessibility group pauses on a broken route; robot testing exits on a serious conflict or failed stop; red-team testing rejects unclear provenance; public publishing removes uncleared material; health navigation never diagnoses; events reduce to zero if fire, quiet or resident-access gates fail; rain and quiet-chain pilots freeze on overdue drains or threshold breaches.
 
+| Scenario group | Spatial carrier | Trigger and minimum data | Responsibility and recovery gate | Non-AI equivalent / exit |
+| --- | --- | --- | --- | --- |
+| Walking-gap diagnosis and accessibility assistance | Roads and public space | Manual counts, obstacle log, accessible route | Transport/accessibility lead; seasonal check and 7–14 day complaint response | Human guide and physical signs; stop if the primary chain breaks |
+| Low-speed delivery robot | Road constraints and withdrawal bay | Geofence, emergency stop, spotter, event log | Operator responsible, safety lead accountable; 24-hour review | Human delivery/handcart; exit after severe conflict or failed stop |
+| Model red-team and data sandbox | Controlled test room and status board | Cleared sample, model card, evaluation log | Evaluation team and lab operator; publish window summary | Paper review/expert panel; reject unclear provenance |
+| Open publishing, enterprise service and data room | Origin Community/service node | Authorised materials, public process, audit log | Community/service lead; 7-day record and correction route | Staffed counter and notice board; fuse on withdrawal |
+| Health navigation and cultural wayfinding | Community node and green space | Non-diagnostic flow, cleared history, tactile/high-contrast guide | Service/park lead; staffed window always available | Human explanation, paper and audio; remove on diagnostic risk or unclear source |
+| Intelligent retail and global AI week | Dazhongsi commercial sequence | Aggregate crowd, fire, quiet zone and event content | Event control/culture lead; 30-minute return and 14-day review | Ordinary retail/park opening; reduce capacity or cancel on threshold breach |
+| Rain/tree-pit and quiet night chain | Green space, drainage and public space | Pre/post-rain ponding, light/noise log, manual inspection | Asset lead; 24-hour pre-rain and 48-hour post-rain closure | Manual clearing and physical wayfinding; freeze on overdue inlet or threshold breach |
+
 ### Public-interest and case-comparison evidence
 
 The baseline is deliberately **unknown until surveyed**. Older residents, disabled people, carers, night workers, children and guardians, visitors, small businesses and maintenance crews are named participants. Step-free continuity, service without an app, complaint response, group differences and night light/noise are audited through paired walks, staffed tests, stratified listening and public status boards. A conflict pauses the scenario, shows the disputed evidence, offers a non-AI equivalent and publishes remedy or withdrawal.
 
+| Public-interest audit | Current state | Pre-pilot evidence | Conflict response |
+| --- | --- | --- | --- |
+| Step-free continuity and night access | Unknown; no invented baseline | Paired day/night walks, light and sound records | Pause, provide a manual route and publish repair |
+| Service without an app | Unknown; included in service inventory | Paper, staffed, voice and multilingual route tests | Keep staffed window; digital layer cannot be a precondition |
+| Group impact difference | Unknown; stratified survey required | Older/disabled/carer/night-worker/child/visitor/small-business/maintenance participation | Publish disagreement; do not hide it with an average |
+| Complaint and response | Unknown; public status board to be established | Confirm clock and accountable owner for each case | Respond in 7–14 days or withdraw if unresolved |
+| Privacy and rights clearance | Minimum data only; no individual trajectory | Source, consent, retention, deletion and hash review | Fuse on withdrawal or unauthorised access |
+
 The case file compares six mechanism patterns—station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method—rather than inventing international project facts. Each pattern says what to borrow, what not to copy, the Jing-Zhang test interface and what must be sourced before a formal citation. This preserves international communication while keeping the rights and evidence boundary auditable.
+
+Long-term operation is seasonal rather than promotional: spring gathers public questions, summer opens bounded scenes, autumn hosts a developer/maintenance review, and winter publishes evidence and decides scale, redesign or retirement. Each season records RACI, rights clearance, maintenance, complaint handling and exit. This is an operational concept for professional, community and communications teams to deepen, not an approved event calendar or funding commitment.
 
 ### Acceptance rule
 
