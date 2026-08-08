@@ -665,6 +665,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-038",
+      "title": "留存期限与删除验证卡",
+      "policy_instrument": "retention_and_deletion_verification",
+      "enterprise_stage": "operational_readiness",
+      "problem": "A test can be described as time-bounded while logs, prompts, images or derived records remain in backups and supplier systems without a verified deletion path.",
+      "jingzhang_interface": "For S04/S08/S09, classify records, set minimum and maximum retention, assign deletion authority, test backup expiry and issue a deletion receipt without collecting extra personal data.",
+      "operator": "data governance lead + supplier data steward + rights reviewer",
+      "required_evidence": [
+        "record classification",
+        "retention schedule",
+        "deletion authority",
+        "backup-expiry test",
+        "deletion receipt"
+      ],
+      "metric": "pilot_records_with_verified_retention_and_deletion_receipt",
+      "stop_gate": "Unknown retention, untested backups or no deletion authority blocks the next test window.",
+      "source_ids": [
+        "CASE-AMSTERDAM-ALGORITHM-REGISTER",
+        "CASE-SINGAPORE-AI-VERIFY"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
