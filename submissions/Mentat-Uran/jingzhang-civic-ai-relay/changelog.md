@@ -29,4 +29,4 @@
 
 最终结果以本包 `self_check.json`、`manifest.json` 与 Pull Request checks 为准；确定性 PASS 不代表维护者接受、专业评分、政府审定或工程可实施。
 
-同步到上游 `92048eb` 后新增执行 `participant_preflight.py`。该脚本在简体中文 Windows 默认 GBK 解码 Git 的 UTF-8 输出时会异常，已提交可复现问题 [#420](https://github.com/open-city-ai/haidian/issues/420)；本轮以 `python -X utf8` 等价运行并取得 PASS，未改写或跳过任何检查。
+同步到上游 `92048eb` 后新增执行 `participant_preflight.py`。该脚本在简体中文 Windows 默认 GBK 解码 Git 的 UTF-8 输出时会异常，已提交可复现问题 [#420](https://github.com/open-city-ai/haidian/issues/420)；本轮以 `python -X utf8` 等价运行并取得 PASS，未改写或跳过任何检查。首次远端 CI 还暴露了 finalizer 会把 `.en.png` 语言元数据改回主语言的问题，已登记 [#430](https://github.com/open-city-ai/haidian/issues/430)；本包在 finalize 后恢复正确配对并再次完成全套自检。
