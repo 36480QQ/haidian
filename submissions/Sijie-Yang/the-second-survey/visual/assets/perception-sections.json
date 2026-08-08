@@ -1,6 +1,6 @@
 {
-  "version": "0.2",
-  "note": "街段/地点证据索引，供 Agent 与专业团队检索；指标为 provisional 模型估计。",
+  "version": "0.4",
+  "note": "街段/地点证据索引；指标为 provisional 模型估计。",
   "sections": [
     {
       "id": "PS-SEC-05",
@@ -195,6 +195,23 @@
     {
       "id": "PS-LM-3",
       "name_zh": "开发者荣誉墙·众智园"
+    }
+  ],
+  "robot_hubs": [
+    {
+      "id": "PS-ROBOT-HUB-01",
+      "name_zh": "大钟寺机器人驿站·充换电节点",
+      "key_area_ref": "KEY-003"
+    },
+    {
+      "id": "PS-ROBOT-HUB-02",
+      "name_zh": "原点社区机器人驿站·交接站",
+      "key_area_ref": "KEY-002"
+    },
+    {
+      "id": "PS-ROBOT-HUB-03",
+      "name_zh": "众智园机器人驿站·测试交接",
+      "key_area_ref": "KEY-001"
     }
   ]
 }

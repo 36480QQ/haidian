@@ -49,7 +49,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.013333,
+      "value": 0.013418,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -111,7 +111,7 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 12,
+      "value": 16,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -122,7 +122,7 @@
     },
     "test_validation_scenario_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md"
@@ -155,28 +155,29 @@
     },
     "ecosystem_case_count": {
       "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(global ecosystem cases)",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "renewal_project_count": {
-      "status": "known",
-      "value": 9,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md",
-        "geometry/phasing.geojson"
+        "sources.json"
       ],
-      "formula": "count(renewal projects in proposal)",
-      "confidence": "medium",
+      "formula": "count of global cases translated in proposal",
+      "confidence": "high",
       "assumptions": [
-        "Conceptual project list for professional deepening."
+        "Mechanism translation only; no scale/investment copy."
       ]
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/index.html"
+      ],
+      "formula": "count(renewal projects)",
+      "confidence": "high",
+      "assumptions": []
     },
     "phasing_stage_count": {
       "status": "known",
@@ -213,7 +214,7 @@
     },
     "road_network_density_km_per_sqkm": {
       "status": "known",
-      "value": 1.2833,
+      "value": 2.9263,
       "unit": "km_per_sqkm",
       "source_files": [
         "geometry/roads.geojson",
@@ -258,6 +259,45 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "No cleared population/capacity baseline for formal scoring."
+    },
+    "robot_corridor_length_m": {
+      "status": "known",
+      "value": 18751.1,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length_m of roads with facility_role=robot_low_speed_shared_corridor) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual robot shared corridors using local_access/branch classes; speed cap ≤6 km/h; not official lane designation."
+      ]
+    },
+    "robot_hub_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(public_space features with space_kind=robot_service_hub)",
+      "confidence": "medium",
+      "assumptions": [
+        "One concept hub per key area for charging/handoff; pending property and fire approval."
+      ]
+    },
+    "robot_hub_area_sqm": {
+      "status": "known",
+      "value": 972.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(area of robot_service_hub polygons) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Concept 18m×18m hubs; not legal land take."
+      ]
     }
   }
 }

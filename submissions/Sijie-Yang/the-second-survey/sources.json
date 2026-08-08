@@ -69,9 +69,15 @@
     },
     {
       "id": "AWAKENING-POSTER",
-      "path": "assets/jingzhang-awakening-poster.png",
+      "path": "assets/jingzhang-awakening-poster.jpg",
       "source_type": "agent_generated_design",
       "usage": "Self-generated narrative poster/IP image; not formal spatial evidence."
+    },
+    {
+      "id": "RENDERS-SUITE",
+      "path": "assets/renders/",
+      "source_type": "agent_generated_design",
+      "usage": "Concept architectural visualizations (R01–R09) including twelve-acts storyboard and finale; not built-condition evidence."
     },
     {
       "id": "OSM-CONTEXT",
@@ -84,6 +90,54 @@
       "path": "report/narrative.md",
       "source_type": "agent_generated_design",
       "usage": "Human-in-the-loop survey protocol included with this package."
+    },
+    {
+      "id": "CASE-SG-PDD",
+      "url": "https://www.jtc.gov.sg/about-jtc/news-and-stories/press-releases/singapore-government-and-8-industry-leaders-to-research-test-and-deploy-physical-ai-in-pdd",
+      "source_type": "official_public",
+      "usage": "Singapore PDD Physical AI testbed mechanism translation only."
+    },
+    {
+      "id": "CASE-SG-IMDA",
+      "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2021/autonomous-robots-trial-to-provide-on-demand-parcel-and-grocery-delivery-to-punggol-residents",
+      "source_type": "official_public",
+      "usage": "Singapore autonomous delivery robot trial mechanism reference."
+    },
+    {
+      "id": "CASE-SG-URA",
+      "url": "https://www.ura.gov.sg/-/media/Corporate/Media-Room/2024/Nov/pr24-52c.pdf",
+      "source_type": "official_public",
+      "usage": "URA annex on last-mile robots and path infrastructure discussion."
+    },
+    {
+      "id": "CASE-BCN-SUPERBLOCK",
+      "url": "https://ajuntament.barcelona.cat/usosdeltemps/en/actuacio/barcelona-superblock-programme",
+      "source_type": "official_public",
+      "usage": "Barcelona Superblock pedestrian-priority street redesign mechanism."
+    },
+    {
+      "id": "CASE-MEADOWAY",
+      "url": "https://futurelandscapes.ca/the-meadoway",
+      "source_type": "official_public",
+      "usage": "Linear-park visualization toolkit reference for public communication."
+    },
+    {
+      "id": "CASE-CHOUTEAU",
+      "url": "https://greatriversgreenway.org/wp-content/uploads/2024/08/Chouteau-Greenway-JCFO-Design-Report.pdf",
+      "source_type": "official_public",
+      "usage": "Chouteau Greenway competition report; heritage rail + innovation stitch mechanism."
+    },
+    {
+      "id": "CASE-HEL-TESTBED",
+      "url": "https://testbed.hel.fi/en/smart-mobility/mobility-lab-helsinki-lessons-learned-from-our-smart-mobility-testbed/",
+      "source_type": "official_public",
+      "usage": "Helsinki Mobility Lab lessons: real-city tests and digital twin; trial ≠ procurement."
+    },
+    {
+      "id": "CASE-QUAYSIDE-LESSON",
+      "url": "https://theconversation.com/sidewalk-labs-smart-city-plans-for-toronto-are-dead-whats-next-138175",
+      "source_type": "academic_paper",
+      "usage": "Negative reference on data governance before vendor-led smart-city partnerships."
     }
   ]
 }

@@ -1,5 +1,12 @@
 {
   "schema_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "can_enter_formal_review": true,
+  "deterministic_validation": "PASS",
+  "spatial_review": "PASS",
+  "visual_packaging_check": "PASS",
+  "professional_evidence_review": "PASS",
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -16,18 +23,29 @@
       "message": "三处重点区域为临时粗略范围，互不重叠且均在提交边界之内；非官方 polygon。"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "ROBOT_LAYER",
       "result": "pass",
       "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "用地图层已覆盖站点范围且无显著重叠（概念分区）。"
+      "target": "geometry/roads.geojson",
+      "message": "机器人低速共享通道与驿站为概念层（facility_role / space_kind），已声明非法定车道，限速为设计意图。"
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "major",
       "target": "visual/index.html",
-      "message": "离线静态展示页包含必需要模块与 data-metric。"
+      "message": "离线静态页含总览/用地/建筑/慢行/场景/更新项目/来源/假设等必需模块，并含效果图廊与机器人层。"
+    },
+    {
+      "check_id": "RENDERS_CONCEPT",
+      "result": "pass",
+      "severity": "minor",
+      "target": "assets/renders/",
+      "message": "七张概念效果图已标注非实景，不作建成证据。"
     }
+  ],
+  "notes": [
+    "v0.4 local self-check PASS / formal-review-ready",
+    "Only expected residual: KEY_AREA_PROVISIONAL warnings"
   ]
 }
