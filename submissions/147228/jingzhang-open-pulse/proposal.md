@@ -618,4 +618,4 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 - 机器可读引用索引分为三层：任务与资料入口为 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]；结构化导航为 [source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:PROJECT-SCOPE-SUMMARY]。
 
 - 任务细项与缺口为 [source:AGENT-TASK-REQUIREMENTS]、[source:SOURCE-USE-MATRIX]、[source:MISSING-DATA-CHECKLIST]；成果复算由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 和 [depth:metrics_recalculation] 约束。
-- 空间复算入口是 [data:geometry/site_boundary.geojson#SITE-001]，总体设计范围面积对应 [metric:site_area_sqm]。
+空间复算入口是 [data:geometry/site_boundary.geojson#SITE-001]，总体设计范围面积对应 [metric:site_area_sqm]；这是机器可读审计入口，不是独立来源条目。
