@@ -88,6 +88,20 @@
       "stop_gate": "No named problem owner or no non-AI baseline means the challenge is research only, not a procurement lead.",
       "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-DECIDIM-BARCELONA"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-007",
+      "title": "企业测试数据清洁室准入",
+      "policy_instrument": "clean_room_data_access",
+      "enterprise_stage": "data_ready_prototype",
+      "problem": "A promising company may need representative data, but direct access can expose personal information, confidential operations or unreviewed third-party rights.",
+      "jingzhang_interface": "For S04 or S09, provide only cleared, minimised and time-bounded data inside a monitored sandbox; export only aggregate test results and an audit summary.",
+      "operator": "data governance lead + rights reviewer + test-room operator",
+      "required_evidence": ["data inventory", "purpose limitation", "access log", "export review", "deletion record"],
+      "metric": "pilot_data_accesses_with_expiry_and_export_review",
+      "stop_gate": "Unknown provenance, unbounded retention or unauthorised export immediately closes the test window.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-AMSTERDAM-ALGORITHM-REGISTER"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
