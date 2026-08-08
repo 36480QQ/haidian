@@ -17,7 +17,7 @@ iteration: "v0.1"
 
 当前仓库尚未提供官方精确红线和三处重点区官方 polygon，本包按规则使用经维护者登记的临时粗略边界 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]，即 `geometry/site_boundary.geojson#SITE-001` [data:geometry/site_boundary.geojson#SITE-001] 与三处重点区 [data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/key_areas.geojson#PROV-KEY-002][data:geometry/key_areas.geojson#PROV-KEY-003]。该边界仅用于 AI 生成、可视化、自检与设计讨论，**不得**作为官方红线、审批依据、精确面积复算或法定控制结论；官方数据发布后，全部图层与指标需重新复算 [metric:site_area_sqm]。这一数据缺口本身不阻断内容评分，方案正文中的所有空间落点均以"概念建议/参考方案/可供专业团队深化研究"表述。
 
-资料登记与用途边界如下：公告、任务书、城市设计管理办法、控规办法、用地分类指南为 `usable_for_formal="yes"` 的正式依据；临时边界为 `provisional_only`。本方案未使用、也不引用任何内部资料、非公开规划资料或未授权数据。全球创新生态案例（硅谷斯坦福研究园、伦敦国王十字知识区、剑桥肯德尔广场、新加坡纬壹科技城、柏林阿德勒斯霍夫、柏之叶智慧城市、首尔数字媒体城、深圳南山）均引用公开机构页面或政府公开介绍，作为背景研究资料并在 `sources.json` 登记用途与限制 [source:DATA-SRC-CASE-STANFORD-RP][source:DATA-SRC-CASE-KNOWLEDGE-QUARTER][source:DATA-SRC-CASE-KENDALL-SQUARE][source:DATA-SRC-CASE-ONE-NORTH][source:DATA-SRC-CASE-ADLERSHOF][source:DATA-SRC-CASE-KASHIWANOHA][source:DATA-SRC-CASE-SEOUL-DMC][source:DATA-SRC-CASE-SHENZHEN-NANSHAN]。所有引用不构成对任何企业、园区或政府的背书承诺。
+资料登记与用途边界如下：公告、任务书、城市设计管理办法、控规办法、用地分类指南为 `usable_for_formal="yes"` 的正式依据；临时边界为 `provisional_only`。本方案未使用、也不引用任何未授权资料、未经公开的规划资料或未授权数据。全球创新生态案例（硅谷斯坦福研究园、伦敦国王十字知识区、剑桥肯德尔广场、新加坡纬壹科技城、柏林阿德勒斯霍夫、柏之叶智慧城市、首尔数字媒体城、深圳南山）均引用公开机构页面或政府公开介绍，作为背景研究资料并在 `sources.json` 登记用途与限制 [source:DATA-SRC-CASE-STANFORD-RP][source:DATA-SRC-CASE-KNOWLEDGE-QUARTER][source:DATA-SRC-CASE-KENDALL-SQUARE][source:DATA-SRC-CASE-ONE-NORTH][source:DATA-SRC-CASE-ADLERSHOF][source:DATA-SRC-CASE-KASHIWANOHA][source:DATA-SRC-CASE-SEOUL-DMC][source:DATA-SRC-CASE-SHENZHEN-NANSHAN]。所有引用不构成对任何企业、园区或政府的背书承诺。
 
 方案成果链关系为：`proposal.md`（可读正文）→ `assets/figures/*.png`（解释性图纸）→ `geometry/*.geojson`（可复算空间图层）→ `metrics.json`（指标复算）→ `compliance_matrix.json`/`standard_matrix.json`/`design_depth_matrix.json`（任务、标准与深度覆盖）→ `visual/index.html`（离线可视化）→ `drawings/a3-booklet.pdf`、`drawings/a0-boards.pdf`（展板）。正文引用 [depth:existing_conditions_diagnosis][depth:three_level_scope_framework][depth:overall_spatial_structure][depth:land_use_layout][depth:development_intensity_controls][depth:height_massing_character][depth:retain_renovate_demolish][depth:traffic_rail_slow_parking][depth:municipal_new_infrastructure][depth:blue_green_public_space][depth:three_key_area_detailed_design][depth:renewal_project_list][depth:phasing_implementation][depth:metrics_recalculation][depth:risk_missing_data] 十五项设计深度，指标与图层均可在 `geometry/` 与 `metrics.json` 中复核。
 
@@ -310,7 +310,7 @@ iteration: "v0.1"
 
 ### 11.3 边界声明
 
-本方案所有空间落地建议均为"概念建议/参考方案/可供专业团队深化研究"，不替代正式规划、不构成政府审定结论、不承诺实施 [source:DATA-SRC-AGENT-TASKBOOK-20260518]。本方案不给出控规调整、容积率、建筑高度、建筑强度等法定规划判断，不给出具体地块拆改留、道路红线、轨道线位、桥隧与市政管线工程方案，不给出土地权属、投资测算、开发时序与审批判断，不使用非公开政府数据、企业内部数据或个人隐私数据 [depth:risk_missing_data][depth:development_intensity_controls]。
+本方案所有空间落地建议均为"概念建议/参考方案/可供专业团队深化研究"，不替代正式规划、不构成政府审定结论、不承诺实施 [source:DATA-SRC-AGENT-TASKBOOK-20260518]。本方案不给出控规调整、容积率、建筑高度、建筑强度等法定规划判断，不给出具体地块拆改留、道路红线、轨道线位、桥隧与市政管线工程方案，不给出土地权属、投资测算、开发时序与审批判断，不使用非公开政府数据、企业私有数据或个人隐私数据 [depth:risk_missing_data][depth:development_intensity_controls]。
 
 ## 风险、版权与合规说明
 
