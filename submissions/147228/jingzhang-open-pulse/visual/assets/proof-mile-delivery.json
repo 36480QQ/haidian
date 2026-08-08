@@ -36,6 +36,8 @@
   "components": [
     {
       "id": "K01",
+      "component_id": "K01",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "普通导视与人工帮助点",
       "name_en": "Ordinary wayfinding and staffed help point",
       "station_ids": ["ST-01", "ST-02", "ST-03"],
@@ -44,11 +46,19 @@
       "ordinary_equivalent": "实体导视、纸面地图、电话和人工窗口",
       "evidence_output": ["服务路线图", "人工响应记录", "无数字兜底检查"],
       "owner_role": "public-space operator with accountable human lead",
+      "accountable_owner": "public-space operator with accountable human lead",
+      "minimum_data_and_retention": "仅记录匿名服务时间、问题类别、响应结果和无障碍阻断；公开回执保留版本与处理状态，个人信息不进入试点台账。",
+      "human_takeover": "人工窗口、电话和纸面地图始终可用；导视或数字服务失效时由现场负责人接管并暂停智能层。",
       "maintenance": "巡检、可读性复核和损坏更换由资产台账记录；缺少责任人不开放。",
-      "stop_condition": "导视误导、无障碍净宽被占、人工响应不可用或投诉无法回执时冻结该构件。"
+      "maintenance_record": "巡检、可读性复核和损坏更换由资产台账记录；缺少责任人不开放。",
+      "positive_and_negative_evidence": {"positive": ["路线可读且人工响应有回执"], "negative": ["导视误导、无障碍净宽被占、人工响应不可用或投诉无法回执"]},
+      "stop_condition": "导视误导、无障碍净宽被占、人工响应不可用或投诉无法回执时冻结该构件。",
+      "stop_and_retirement_decision": "由现场负责人记录冻结决定；连续复核仍不满足普通路径或人工服务要求时撤回构件，恢复纸面导视和人工帮助。"
     },
     {
       "id": "K02",
+      "component_id": "K02",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "无障碍树荫休息与服务湾",
       "name_en": "Step-free shade, rest and service bay",
       "station_ids": ["ST-02", "ST-03"],
@@ -57,11 +67,19 @@
       "ordinary_equivalent": "固定座椅、遮阴、饮水、人工陪行和无障碍卫生间指引",
       "evidence_output": ["路线连续性记录", "热/眩光/噪声现场基线", "维护与树木根域复核"],
       "owner_role": "landscape and accessibility lead with maintenance crew",
+      "accountable_owner": "landscape and accessibility lead with maintenance crew",
+      "minimum_data_and_retention": "仅记录路线连续性、热/眩光/噪声基线、设施状态和匿名使用反馈；个体健康信息不采集。",
+      "human_takeover": "人工陪行、固定座椅、遮阴、饮水和无障碍卫生间指引作为普通服务；现场负责人可关闭试验设施。",
       "maintenance": "树池、座椅、照明和防滑部件按季节巡检；现场基线未完成只允许被动试样。",
-      "stop_condition": "积水、绊倒、眩光、热风险或群体差异未被复核时不扩容。"
+      "maintenance_record": "树池、座椅、照明和防滑部件按季节巡检；现场基线未完成只允许被动试样。",
+      "positive_and_negative_evidence": {"positive": ["连续无障碍路径、休息和遮阴服务可用且有维护记录"], "negative": ["积水、绊倒、眩光、热风险或群体差异未被复核"]},
+      "stop_condition": "积水、绊倒、眩光、热风险或群体差异未被复核时不扩容。",
+      "stop_and_retirement_decision": "由无障碍负责人记录不扩容或撤回决定；无法恢复安全普通路径时撤除试验构件，仅保留人工服务。"
     },
     {
       "id": "K03",
+      "component_id": "K03",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "蓝绿雨水边缘单元",
       "name_en": "Blue-green rainwater edge unit",
       "station_ids": ["ST-01"],
@@ -70,11 +88,19 @@
       "ordinary_equivalent": "可见雨水口、人工清疏、临时围挡和超标行泄指引",
       "evidence_output": ["入渗/污染/溢流检查", "雨前雨后工单", "超标行泄路线回执"],
       "owner_role": "water and public-space maintenance lead",
+      "accountable_owner": "water and public-space maintenance lead",
+      "minimum_data_and_retention": "只记录雨前后水位、积水、污染、清疏和路线状态；工单按维护周期保留，未经清权不记录可识别个人信息。",
+      "human_takeover": "可见雨水口、人工清疏、临时围挡和超标行泄指引优先；暴雨或资料缺失时由维护负责人关闭试验单元。",
       "maintenance": "雨前预检、雨后复核、沉积物清理和资产责任写入工单；管线与蓝线资料缺失不作工程结论。",
-      "stop_condition": "入渗、污染、溢流或清疏责任不明时保持概念状态并回到人工服务。"
+      "maintenance_record": "雨前预检、雨后复核、沉积物清理和资产责任写入工单；管线与蓝线资料缺失不作工程结论。",
+      "positive_and_negative_evidence": {"positive": ["雨前后检查、清疏责任和普通路线回执齐全"], "negative": ["入渗、污染、溢流或清疏责任不明"]},
+      "stop_condition": "入渗、污染、溢流或清疏责任不明时保持概念状态并回到人工服务。",
+      "stop_and_retirement_decision": "由水务维护负责人记录停止开放；若连续事件无法由维护工单闭环，则撤回构件并恢复临时人工行泄方案。"
     },
     {
       "id": "K04",
+      "component_id": "K04",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "可关闭智证信息亭",
       "name_en": "Closable civic-evidence kiosk",
       "station_ids": ["ST-02", "ST-03"],
@@ -83,11 +109,19 @@
       "ordinary_equivalent": "纸面回执、公告栏、人工讲解和现场申诉箱",
       "evidence_output": ["版本化公共回执", "来源/权利卡", "删除与撤回记录"],
       "owner_role": "civic information steward and rights reviewer",
+      "accountable_owner": "civic information steward and rights reviewer",
+      "minimum_data_and_retention": "只保留内容版本、来源/权利状态、删除/撤回工单和匿名访问故障；个人数据默认不采集，必要台账到期删除。",
+      "human_takeover": "公告栏、纸面回执、人工讲解和现场申诉箱替代信息亭；断网、低电量或权利状态不明时关闭智能展示。",
       "maintenance": "内容版本、屏幕关闭、纸面替代和数据删除周期由责任台记录；未清权材料不得展示。",
-      "stop_condition": "来源、版权、删除规则或离线替代不可验证时关闭智能层。"
+      "maintenance_record": "内容版本、屏幕关闭、纸面替代和数据删除周期由责任台记录；未清权材料不得展示。",
+      "positive_and_negative_evidence": {"positive": ["来源/权利卡、版本回执和删除记录可核验"], "negative": ["来源、版权、删除规则或离线替代不可验证"]},
+      "stop_condition": "来源、版权、删除规则或离线替代不可验证时关闭智能层。",
+      "stop_and_retirement_decision": "由权利复核人记录关闭或撤回；清权失败时删除智能内容，保留可核验的普通纸面信息。"
     },
     {
       "id": "K05",
+      "component_id": "K05",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "低速机器人边界与急停节点",
       "name_en": "Low-speed embodied-AI boundary and stop node",
       "station_ids": ["ST-01"],
@@ -96,11 +130,19 @@
       "ordinary_equivalent": "人工配送、人工引导、静态路线和普通公共使用",
       "evidence_output": ["急停/接管演练", "事件与近失记录", "隐私最小化和维护回执"],
       "owner_role": "embodied-AI safety lead with on-site human spotter",
+      "accountable_owner": "embodied-AI safety lead with on-site human spotter",
+      "minimum_data_and_retention": "仅保留急停、接管、事件/近失、设备状态和隐私审计结果；原始影像默认不留存，必要日志限期删除。",
+      "human_takeover": "现场安全员可随时急停、接管、隔离和撤回；断网、失联或异常时自动回到人工配送与静态路线。",
       "maintenance": "每次开放前后检查边界、急停、消防隔离、充电和日志；一次严重近失即暂停。",
-      "stop_condition": "不能急停、断网后不能回到安全状态、阻断无障碍链或责任人缺席时立即撤回。"
+      "maintenance_record": "每次开放前后检查边界、急停、消防隔离、充电和日志；一次严重近失即暂停。",
+      "positive_and_negative_evidence": {"positive": ["急停/接管演练、事件记录和隐私最小化审计通过"], "negative": ["不能急停、断网后不能回到安全状态、阻断无障碍链或责任人缺席"]},
+      "stop_condition": "不能急停、断网后不能回到安全状态、阻断无障碍链或责任人缺席时立即撤回。",
+      "stop_and_retirement_decision": "安全负责人记录立即停用；一次严重近失或无法证明安全回退即撤回具身智能，只恢复人工配送和普通公共路线。"
     },
     {
       "id": "K06",
+      "component_id": "K06",
+      "geometry_version": "v2.8-provisional-2026-08-08",
       "name_zh": "贡献谱系与铁路记忆展架",
       "name_en": "Contribution lineage and railway-memory rack",
       "station_ids": ["ST-02", "ST-03"],
@@ -109,8 +151,14 @@
       "ordinary_equivalent": "纸质档案、人工讲解、可撤回署名和无障碍阅读",
       "evidence_output": ["来源与授权卡", "正负结果档案", "贡献者撤回记录"],
       "owner_role": "heritage, rights and public-programme steward",
+      "accountable_owner": "heritage, rights and public-programme steward",
+      "minimum_data_and_retention": "只保留公开来源、授权状态、版本、贡献与撤回工单；肖像和可识别个人信息遵循最小化与到期删除。",
+      "human_takeover": "纸质档案、人工讲解、可撤回署名和无障碍阅读替代数字展示；文保或清权不明时不附着遗产本体。",
       "maintenance": "内容权利、材料耐久、夜间照明和无障碍阅读按年度复核；未完成文保与清权不附着遗产本体。",
-      "stop_condition": "历史来源、肖像/版权、文保边界或撤回路径不清时只保留普通纸面叙事。"
+      "maintenance_record": "内容权利、材料耐久、夜间照明和无障碍阅读按年度复核；未完成文保与清权不附着遗产本体。",
+      "positive_and_negative_evidence": {"positive": ["来源授权卡、无障碍阅读和撤回记录可核验"], "negative": ["历史来源、肖像/版权、文保边界或撤回路径不清"]},
+      "stop_condition": "历史来源、肖像/版权、文保边界或撤回路径不清时只保留普通纸面叙事。",
+      "stop_and_retirement_decision": "由遗产与权利负责人记录降级或撤回；权利/文保闭环失败时移除相关内容，不把失败记录从普通档案中抹除。"
     }
   ],
   "release_contract": {
