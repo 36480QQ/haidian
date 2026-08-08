@@ -412,6 +412,29 @@
         "CASE-SEOUL-AI-FOUNDATION"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-027",
+      "title": "模型更新与变更通知闸门",
+      "policy_instrument": "model_change_control_notice",
+      "enterprise_stage": "prototype_to_reliable_service",
+      "problem": "A service can change model version, data source or fallback behaviour after approval, making an earlier safety and procurement record misleading.",
+      "jingzhang_interface": "For S04/S08/S09, require a versioned change note, affected functions, regression test, human-review impact, user notice, rollback package and re-approval threshold.",
+      "operator": "service owner + model risk reviewer + supplier release manager",
+      "required_evidence": [
+        "versioned change note",
+        "regression result",
+        "human-review impact note",
+        "user notice",
+        "rollback package"
+      ],
+      "metric": "live_services_with_reviewed_material_model_change_records",
+      "stop_gate": "Unreviewed material change, missing rollback or silent loss of human fallback pauses service and returns to the prior version or manual route.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
