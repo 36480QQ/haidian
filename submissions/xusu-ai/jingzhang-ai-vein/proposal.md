@@ -343,6 +343,29 @@ V3 框架：中轴公园带以**保留**京张铁路遗址肌理为主；双翼�
 - **资金渠道（建议）**：财政引导 + 产业基金 + 场景运营收入 + 数据服务收入；维护成本与社区治理机制须在实施阶段与属地政府协商确定。
 - **国际传播**：英文概要（见 report/）、关键图英文版（i18n 已内置）、术语表（proposal 术语中英对照）。
 
+### 6.2f AI 场景隐私与治理矩阵（agent.3 响应）
+
+| 场景 | 数据最小化 | 人工复核 | 失败回退 | 安全回退 |
+|------|-----------|---------|---------|---------|
+| 01 开源发布厅 | 公开数据，涉企脱敏 | 专家抽检+年审 4 次 | 人工路演 | 线下登记 |
+| 02 智能体沙盒 | 真实数据仅脱敏聚合 | 放行安全评审签字 | 人工测试 | 仿真熔断 |
+| 03 慢行断点 | 轨迹匿名聚合 | 断点人工复核 100% | 人工巡检 | 历史均值回退 |
+| 04 生活管家 | 最小必要+可撤回 | 高敏操作人工确认 | 人工客服 | 标准服务目录 |
+| 05 安全治理廊 | 仅公开/脱敏案例 | 专家会签 | 人工咨询 | 争议仲裁 |
+| 06 校企转化 | 授权范围内 | 法务审查 | 人工对接 | 线下撮合 |
+| 07 数据剧场 | 全部脱敏展示 | 合规审核 100% | 静态展板 | 争议下架 |
+| 08 算力驿站 | 聚合统计 | 月度审计 | 规则调度 | 备电切换 |
+| 09 记忆线路 | 位置聚合热力 | 文保专家审核 | 纸质导览 | 内容复核 |
+| 10 活动周 | 报名最小收集 | 涉外人工审核 | 线下签到 | 人流限流 |
+
+### 6.2g 公共利益与包容性保障（agent.6 响应）
+
+- **弱势群体**：识别儿童、老年人、残障人士、低收入居民、租户、既有商户及受更新影响居民；重点区实施前须完成影响评估与居民协商。
+- **无障碍与数字排斥**：全部公共空间按无障碍标准设计（坡道/盲道/信息无障碍）；提供非数字替代服务（人工柜台/电话/纸质导览），AI 场景均保留人工通道。
+- **可负担与防驱逐**：人才社区设置可负担住房比例与租金稳定机制（概念建议）；更新项目以"留改拆"优先保留既有商户与居民，防置换驱逐。
+- **参与机制**：社区理事会 + 规划公示 + 场景开放日反馈；更新决策设咨询门（居民同意门槛），不满意可申诉（人工复核通道）。
+- **问责**：场景运营主体 + 数据保护责任人 + 年度透明报告；AI 决策提供申诉与退出机制。
+
 ### 6.3 AI 朝圣节点与文化叙事（agent.5 响应）
 
 3 个 AI 朝圣地标：① 中轴北端「开源圣火台」（众智园）② 中轴中央「原点之光」（AI原点社区）③ 中轴南端「数据方舟」（大钟寺）（[depth:ai_pilgrimage_landmarks]）。文化叙事：**京张铁路（百年工业文明）→ 中关村（信息文明）→ AI 原点（智能文明）**三段式文化转译，中轴即为时空叙事轴（[depth:cultural_narrative]）。
@@ -353,7 +376,7 @@ V3 框架：中轴公园带以**保留**京张铁路遗址肌理为主；双翼�
 
 **用地平衡**（[data:geometry/land_use.geojson]，EPSG:4548 复算）：科研 0802 约 30.8%、文化 0803 约 12.1%、居住 0701 约 12.5%、商业 05 约 30.6%、公园绿地 1401 约 14.0%（provisional 边界内概念比例，正式控规条件到位后需复核）。
 
-**建筑规模**（[metric:total_floor_area_sqm]）：概念总建筑面积约 396 万 m²，FAR 约 0.35（[metric:floor_area_ratio]），建筑密度约 4.0%（[metric:building_density]），建筑 110 栋（**全部以中轴 x=0 左右镜像排布（设计意图）**，[metric:building_count]）。**高度换覆盖率策略**：大基底点式写字楼以 4.0% 低密度支撑 0.35 FAR（对比 V2 密度 12.2%/FAR 0.56，建筑占地减少约 67%），释放大量地面空间。层数构成：科研大基底点式写字楼 11-20 层（45-80m，单层 3000-5500㎡ 超中国尊级，层高 3.6-4.2m，参照中国尊/正大中心/国贸三期单层面积）、文化馆 3-4 层（30-36m，参照首博/科技馆）、居住纯住宅 10-15 层（30-45m，**48 栋**，层高 3.0m，参照万柳书院/使馆壹号院/融创北京壹号院——统一 60×14m 板楼 5 排南低北高中轴镜像贴边，无点式/教育/底商）、商业综合体 5-8 层（24-36m，参照清河万象汇）、底商与裙房 ≤3 层（9-12m）。**高度上限**：全方案最高 80m，仅为北京最高楼中国尊（528m）的 15%。
+**建筑规模**（[metric:total_floor_area_sqm]）：概念总建筑面积约 396 万 m²，FAR 约 0.35（[metric:floor_area_ratio]），建筑密度约 4.0%（[metric:building_density]），建筑 110 栋（**全部以中轴 x=0 左右镜像排布（设计意图）**，[metric:building_count]，对称性验证见 [metric:bilateral_symmetry] 与 assets/symmetry-test.png）。**高度换覆盖率策略**：大基底点式写字楼以 4.0% 低密度支撑 0.35 FAR（对比 V2 密度 12.2%/FAR 0.56，建筑占地减少约 67%），释放大量地面空间。层数构成：科研大基底点式写字楼 11-20 层（45-80m，单层 3000-5500㎡ 超中国尊级，层高 3.6-4.2m，参照中国尊/正大中心/国贸三期单层面积）、文化馆 3-4 层（30-36m，参照首博/科技馆）、居住纯住宅 10-15 层（30-45m，**48 栋**，层高 3.0m，参照万柳书院/使馆壹号院/融创北京壹号院——统一 60×14m 板楼 5 排南低北高中轴镜像贴边，无点式/教育/底商）、商业综合体 5-8 层（24-36m，参照清河万象汇）、底商与裙房 ≤3 层（9-12m）。**高度上限**：全方案最高 80m，仅为北京最高楼中国尊（528m）的 15%。
 
 **拆改留逻辑**（[depth:retain_renovate_demolish]）：中轴保留铁路遗址肌理（保留 15%）；双翼居住区综合整治更新（更新 33%）；南北科研/商业新建为主（新建 52%）。该比例是概念建议，正式结论需以产权调查、文保评估与居民意愿为前提。**数据缺口**：官方控规的 FAR/高度/密度限制在 `planning_limits.json` 中标记 missing，本方案值为概念建议，不构成法定控制。
 
@@ -470,3 +493,46 @@ V3 框架：中轴公园带以**保留**京张铁路遗址肌理为主；双翼�
 - 深度 [depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:existing_conditions_diagnosis]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:three_key_area_detailed_design]、[depth:traffic_rail_slow_parking]、[depth:blue_green_public_space]、[depth:retain_renovate_demolish]、[depth:renewal_project_list]、[depth:municipal_new_infrastructure]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]
 - 指标 [metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:key_area_count]、[metric:key_area_details]、[metric:phasing_area_sqm]、[metric:road_length_m]、[metric:floor_area_ratio]、[metric:building_density]、[metric:total_floor_area_sqm]、[metric:building_count]、[metric:land_use_area_by_code]
 - 数据 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/land_use.geojson]、[data:geometry/buildings.geojson]、[data:geometry/roads.geojson]、[data:geometry/green_space.geojson]、[data:geometry/public_space.geojson]、[data:geometry/key_areas.geojson]、[data:geometry/phasing.geojson]、[data:geometry/constraints.geojson]
+
+
+---
+
+## 附录 A · English Summary（Executive Brief）
+
+# Jingzhang AI Vein — English Summary (Executive Brief)
+
+## Centennial Jing-Zhang AI Innovation Belt Urban Design
+
+**Location**: Beijing, along the former Jing-Zhang Railway heritage corridor (North 5th Ring to West Zhimen Outer Street, ~11.4 km² overall-design scope; 43.6 km² coordination-study scope).
+
+**Concept**: A "dual-track central axis + mirrored wings + three key districts" urban design for an AI innovation belt — transforming the century-old railway heritage (industrial civilization) through Zhongguancun's information age into an AI-origin era (intelligent civilization).
+
+## Structure
+
+| Tier | Scope | Key Moves |
+|------|-------|-----------|
+| Coordination Study | 43.6 km² | AI industrial ecology, three-zone two-wing coordination, cultural narrative |
+| Overall Design | 11.4 km² | Urban renewal, land-use structure, transport & municipal, heritage park vitality belt |
+| Key Areas | 369.2 ha | Zhongzhi Park AI Accelerator (192.9 ha), AI Origin Community (104.3 ha), Dazhongsi AI Cluster (72.0 ha) |
+
+## Core Metrics (concept, EPSG:4548 recalculation)
+
+- Site area 11.41 km² · Floor area ~3.96M m² · FAR ~0.35 · Building density ~4.0%
+- 110 buildings (mirrored about the central axis, 100% pair rate, tolerance 12 m)
+- Green ratio 18.7% · Road length 37.2 km · 15 parcels (12 buildable + 3 green spine)
+- 10 AI scenario cards (3 industry test-verification), 5 user profiles, 3 AI pilgrimage landmarks
+
+## AI Scenarios & Governance
+
+Ten scenarios (open-source release hall, city agent sandbox, slow-traffic gap diagnosis, talent life butler, AI safety governance gallery, university-enterprise transfer lounge, data-element theater, low-carbon compute station, Jing-Zhang memory route, global AI week route) each specify input data, AI capability, physical facilities, service flow, operator, human review, privacy minimization, failure fallback, pilot period and KPIs. A privacy & governance matrix covers data minimization, human review, and safety fallback per scenario.
+
+## Public Interest
+
+Universal design, non-digital alternatives, affordable housing and anti-displacement measures, community council participation, complaint/appeal channels, and operational accountability are included as concept commitments pending professional review.
+
+## Boundary & Data Status
+
+All site and key-area boundaries are **provisional** (`provisional_constraint`) — official polygons and regulatory controls are organizer-owned missing inputs. All metrics must be recalculated from the single generation pipeline once official geometry is supplied. This document is a concept proposal, not a statutory plan, government approval, investment commitment, or engineering conclusion.
+
+*Generated 2026-08-08 by the declared AI agent. Bilingual counterparts are an advisory enhancement.*
+

@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c5a89c6d0168ca60550aa851f6ef67a5ec8ce91ba19085e597cc1d3bf1015fb1"
+      "sha256": "4acc6701c5e4d6605a6a9e57b871a26f69c088968b6b02e8e26e21f18a8f237c"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "83fad53fb05a33a10a95b99501d14d78c8f662684e1351ef3b26a9552babf318"
+      "sha256": "49f747a5f5b4dd8ef56b98af4560932f1dba7ad5bee5209c5e4c7d8baa48e8fa"
     },
     {
       "path": "assumptions.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "8419b38a89e708598fc97e578ffc5c956267e337154036ea6ddf6620b13733c7"
+      "sha256": "677bf51c4c3da7243514ef6b5cbaa293149bd1dfeb2ce9f4844ba25568090876"
     },
     {
       "path": "report/narrative.md",
@@ -95,13 +95,13 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "14d0d119131248ef8d818ada7533d1f568205329c048f2a1b38ab66bd9aca816"
+      "sha256": "24c21a4bf504e96acdb438fc207c795b6ce90b8d636e8134795a9af4fb3c6110"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e0f54a773191e04f7bd24d6a2c88be705430795b9b78d8410f38b763106c1860"
+      "sha256": "0174bb11e06091e5fa1f05e6845b6d23262aba725cc22d89844771435be13aa7"
     },
     {
       "path": "visual/index.html",
@@ -198,6 +198,24 @@
       "role": "brand_asset",
       "required": true,
       "sha256": "10a3d5b76c9a3107264126877d065aa8c6c629135485bded3840ac1e0dcc0600"
+    },
+    {
+      "path": "assets/ecosystem-map.svg",
+      "role": "ecosystem_map",
+      "required": true,
+      "sha256": "29c88deade561b0baad9fc585e06ef6afe24a9192091a2dc313fe55b02b49ef9"
+    },
+    {
+      "path": "assets/regional-collaboration.svg",
+      "role": "regional_collaboration_diagram",
+      "required": true,
+      "sha256": "fd119ca742b8f7feb0b6fd3c63944f0bdf7c09f842f1773e8e2e7a7fe22c7101"
+    },
+    {
+      "path": "assets/symmetry-test.png",
+      "role": "symmetry_test",
+      "required": true,
+      "sha256": "9ecab619084b0b4ab1df643f45e9eb8a7f46a5c39ee69f641039f2e4c28f4325"
     }
   ],
   "validation_claim": {

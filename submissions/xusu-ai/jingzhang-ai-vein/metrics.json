@@ -196,6 +196,17 @@
           "area_sqm": 720002.2
         }
       ]
+    },
+    "bilateral_symmetry": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "formula": "paired_buildings/total (tolerance 12.0m, axis x=0)",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "confidence": "high",
+      "note": "110 栋全部成对（55 对），镜像配对率 100%；对称为概念设计意图"
     }
   },
   "v3_plan_summary": {
