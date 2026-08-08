@@ -90,7 +90,7 @@ The three key areas are designed directionally on the provisional key-area polyg
 - **Building renewal**: replacement of low-efficiency space with R&D carriers while retaining the existing skeleton, demo blocks Zhongzhi Accel Tower [data:geometry/buildings.geojson#BLDG-001] and Upstream Release Hall [data:geometry/buildings.geojson#BLDG-002], `capacity_test_only`, no demolish–renovate–retain conclusions;
 - **Mobility**: continuous shade and sensor-free tributary path along the Qing River, merge-choice threshold, and the Zigzag Viewing Bridge at the north overpass node (see landmarks);
 - **Public space**: Upstream Release Plaza and merge-threshold markers, industrial display along the spine;
-- **AI scenarios**: Integration Yard, low-speed robot shared-road test, Upstream evaluation yard (SCENE-01/02/03);
+- **AI scenarios**: Integration Yard, low-speed robot shared-road test, Upstream evaluation yard, Public Merge Review Station (SCENE-01/02/03/04);
 - **Implementation risks**: Fifth Ring link and Qing River blue-line scope unconfirmed; related suggestions are conceptual only.
 
 **AI Origin Community = Maintainers (approx. 104.3 ha)** [data:geometry/key_areas.geojson#PROV-KEY-002]
@@ -99,7 +99,7 @@ The three key areas are designed directionally on the provisional key-area polyg
 - **Building renewal**: campus–park interface opening first with low-disturbance renewal, demo blocks Open-Source Conversion Lab and Quiet Commons Hall [data:geometry/buildings.geojson#BLDG-004];
 - **Mobility**: around-the-clock walking and cycling stitching campus–park–community, with transit-station walking/cycling/accessibility gap improvement (MR-05);
 - **Public space**: **Quiet Commons Hall** — paper reservations, human inquiry, and account-free service, testing whether technology aids collaboration without turning participation into "install an app"; open-source lawn;
-- **AI scenarios**: Public Merge Review Station, AI-enabled cultural guide (SCENE-04/06);
+- **AI scenarios**: AI-enabled cultural guide, enterprise service copilot (SCENE-06/08);
 - **Implementation risks**: university land ownership and heritage scope unconfirmed; interface opening requires negotiated agreements.
 
 **Dazhongsi = Release (approx. 72.0 ha)** [data:geometry/key_areas.geojson#PROV-KEY-003]
@@ -108,7 +108,7 @@ The three key areas are designed directionally on the provisional key-area polyg
 - **Building renewal**: upgrading existing commercial carriers, demo blocks Dazhongsi Smart Living Room and Merge Review Center [data:geometry/buildings.geojson#BLDG-006], no block-level demolish–renovate–retain conclusions;
 - **Mobility**: four-quadrant walking continuity in front of the station, direct connection to key parcels, retaining ordinary ticketing and human channels;
 - **Public space**: **First-Merge Stone** and **Merge Monument** in front of the station; any personalized explanation is optional; **Review Chamber** (southern end of the heritage park, see landmarks);
-- **AI scenarios**: enterprise service copilot, Annual Merge Day drill (SCENE-08/12);
+- **AI scenarios**: Annual Merge Day drill, unmanned last-mile delivery (SCENE-12/16);
 - **Implementation risks**: heritage scope and station boundary not obtained; four-quadrant connectivity is conceptual.
 
 The three prototypes answer function, building interface, mobility and slow access, blue-green public space, AI scenarios, human takeover, implementation dependencies, and exit routes, connected via the mainline [data:geometry/roads.geojson#ROAD-001] and east–west public tributaries; all drawings carry provisional labels to prevent rectangular temporary ranges from being read as blocks or redlines.
@@ -126,11 +126,11 @@ Sixteen scenario cards [metric:scenario_card_count] are registered in [data:geom
 | 01 | Integration Yard (integration-test environment) | Upstream reserve [SCENE-01] | Industry teams | ★ Industry test/validation | Public time window/equipment scope/exit route; human review before access |
 | 02 | Low-speed robot-delivery shared-road test | Mid-corridor tributary [SCENE-02] | Industry teams | ★ Industry test/validation | Time/speed limited; on-site stoppers; full event replay review |
 | 03 | Upstream Evaluation Yard (open model/safety/standard evaluation) | Zhongzhiyuan west [SCENE-03] | Developers/regulators | ★ Industry test/validation | Anonymous inputs; results published desensitized; evaluation list human-approved |
-| 04 | Public Merge Review Station (citizens submit merge requests, human review) | Origin Community [SCENE-04] | Citizens/co-creators | Public service | Only public issues and opinion summaries, no personal tracking; adoption decided by humans |
+| 04 | Public Merge Review Station (citizens submit merge requests, human review) | Upstream [SCENE-04] | Citizens/co-creators | Public service | Only public issues and opinion summaries, no personal tracking; adoption decided by humans |
 | 05 | Review Chamber open day (multi-party negotiation and arbitration drill) | Heritage park south [SCENE-05] | Multi-party stakeholders | Public service | Footage managed per rules; rulings made at the human final-adjudication desk |
 | 06 | AI-enabled cultural guide (immersive Jing-Zhang memory tour) | Landmarks along the belt [SCENE-06] | Visitors | Urban experience | Anonymous interaction, no conversation retention; scripts human-reviewed |
 | 07 | AI-enabled traffic and walkability assessment (gap diagnosis) | Mainline slow network [SCENE-07] | Residents/planners | Urban experience | Aggregate statistics only, no personal tracking; results human-reviewed |
-| 08 | Enterprise service copilot | Dazhongsi Release [SCENE-08] | Enterprises | Industrial service | Identity data by two-way authorization; disputed transactions human-reviewed |
+| 08 | Enterprise service copilot | Origin Community [SCENE-08] | Enterprises | Industrial service | Identity data by two-way authorization; disputed transactions human-reviewed |
 | 09 | Quiet Commons Hall (account-free, human-counter fallback) | Origin Community [SCENE-09] | All public | Tributary guarantee | Usable without an account; minimal paper records; human-counter fallback |
 | 10 | Night quiet-window monitoring | Whole corridor [SCENE-10] | Residents along the belt | Urban operation | Environmental aggregates only (e.g. decibels), no voiceprint; alerts human-confirmed |
 | 11 | Accessibility routing (tributary-first) | Full slow network [SCENE-11] | People with disabilities | Tributary guarantee | Opt-in, on-device first; human customer-service fallback |
