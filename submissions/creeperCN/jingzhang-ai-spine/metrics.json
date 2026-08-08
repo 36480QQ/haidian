@@ -467,6 +467,52 @@
       "target_conceptual": "12-15年（含土地增值8-10年）",
       "responsible_party": "京张智脉运营公司",
       "reason": "官方控规条件缺失(GAP-CONTROL-001)或需实地调研确认基线数据，目标值为概念建议"
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11400000,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "official announced area for overall design area",
+      "confidence": "high",
+      "assumptions": [
+        "公告面积值，非精确复算"
+      ],
+      "reason": "公告面积约值，official polygon补齐后复算"
+    },
+    "green_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area / site_area",
+      "confidence": "low",
+      "assumptions": [
+        "概念建议值32%",
+        "待官方控规确认"
+      ],
+      "reason": "绿地比例为概念建议，待官方控规确认"
+    },
+    "public_space_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area / site_area",
+      "confidence": "low",
+      "assumptions": [
+        "概念建议值18%",
+        "待官方控规确认"
+      ],
+      "reason": "公共空间比例为概念建议，待官方控规确认"
     }
   },
   "official_planning_controls_status": {

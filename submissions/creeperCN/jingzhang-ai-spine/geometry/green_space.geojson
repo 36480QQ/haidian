@@ -16,48 +16,33 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "label_zh": "遗址公园带绿地",
+        "label_zh": "遗址公园带绿地（部分覆盖，概念性）",
         "green_type": "heritage_park",
-        "land_use_code": "1401"
+        "land_use_code": "1401",
+        "conceptual": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
+              116.3397,
               39.939
             ],
             [
-              116.3553,
+              116.344692,
               39.939
             ],
             [
-              116.3553,
-              39.965
-            ],
-            [
-              116.3533,
-              39.99
-            ],
-            [
-              116.3553,
+              116.344692,
               40.0265
-            ],
-            [
-              116.3427,
-              40.0265
-            ],
-            [
-              116.3417,
-              40.006
             ],
             [
               116.3397,
-              39.975
+              40.0265
             ],
             [
-              116.3407,
+              116.3397,
               39.939
             ]
           ]
