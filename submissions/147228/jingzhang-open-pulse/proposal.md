@@ -5,7 +5,7 @@ language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 translation_file: "proposal.en.md"
-iteration: "v2.7"
+iteration: "v2.8"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **v2.7 设计宣言：** 京张不再把 AI 当作一组会发光的装置，而把它设计成一条“人先于模型、证据先于扩散、普通路径永远存在”的城市公共协议。百年铁路留下的是轨迹、站点和里程；今天我们把它转译为“提问—获准—小测—裁决—回执—扩散/修复/退出”的六段公共回路。
 
-## 一页城市操作系统
+## v2.8 一页城市操作系统：公共回路与智证里程
 
 | 公共回路 | 空间化动作 | AI 能做什么 | 人与普通路径 | 不通过就停止 |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,23 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 三处重点区不是三个同质“AI 展厅”：众智园是**可信测试花园**（模型、具身智能、能源与环境门）；AI 原点社区是**开放转化街**（成果、版权、教育与人才生活门）；大钟寺是**城市体验客厅**（站城步行、商业服务、文化传播与日常安静使用门）。五大功能分别落到“自主验证、创新生态、场景赋能、活力公共空间、治理话语权”五条可回执的责任链；agent.1—agent.6 的任务则分别由总体结构、生态图谱、场景协议、公共空间/地标、文化导视和年度运营六组成果承接。[source:AGENT-TASKBOOK] [data:visual/assets/civic-pulse-protocol.json#CIVIC-PULSE]
 
 这不是一项已批准的数字城市工程。协议的价值在于让任何专业团队都能从同一组字段开始下一轮：谁提出、在哪里、用什么最小数据、谁在现场、什么是普通替代、何时停止、谁维护、结果如何回流。`civic-pulse-protocol.json` 是这个交接面的机器可读版本，`risk.json`、`construction-readiness.json` 与 `participation-cycle.json` 是它的三本闸门账；当前协议包含 [metric:civic_pulse_stage_count] 个阶段、[metric:civic_pulse_station_count] 个差异化站点，风险账包含 [metric:risk_class_count] 个风险维度。
+
+## v2.8 一构件一智证里程：把公共协议落到可维护构件
+
+上一轮的 civic pulse 解决了“何时允许 AI 工作”，本轮再解决“什么东西可以被交接”。一构件一智证里程不是新增红线，而是一种专业团队可继续深化的交付语法：每个构件先回答一个公共问题，再锁定 provisional geometry 版本、普通等价路径、最小数据、现场责任人、维护记录和退出决定；一个构件通过不等于整条带通过。[source:AGENT-TASKBOOK] [data:visual/assets/proof-mile-delivery.json#OPEN-PULSE-PROOF-MILE]
+
+| 构件 | 主要站点与空间锚点 | 人的普通路径 | 必须留下的智证 | 触发退出 |
+| --- | --- | --- | --- | --- |
+| K01 普通导视与人工帮助点 | 三站；`ROAD-001` / `PUBLIC-001` | 实体导视、纸面地图、电话和人工窗口 | 路线图、人工响应、无数字兜底检查 | 导视误导、净宽被占或人工服务消失 |
+| K02 无障碍树荫休息与服务湾 | 原点/大钟寺；`GREEN-001` / `PUBLIC-001` | 座椅、遮阴、饮水、陪行和卫生间指引 | 连续性、热/眩光/噪声基线与树池维护 | 积水、绊倒、眩光或群体差异未复核 |
+| K03 蓝绿雨水边缘单元 | 众智园；`GREEN-001` / `CONSTRAINTS` | 可见雨水口、人工清疏和超标行泄指引 | 入渗/污染/溢流检查、雨前后工单 | 管线、溢流或清疏责任不明 |
+| K04 可关闭智证信息亭 | 原点/大钟寺；`PUBLIC-001` / `PROV-KEY-002` | 纸面回执、公告栏、人工讲解和申诉箱 | 版本回执、来源/权利卡、删除记录 | 清权、来源或离线替代不可验证 |
+| K05 低速机器人边界与急停节点 | 众智园；`ROAD-002` / `PUBLIC-001` | 人工配送、人工引导和静态路线 | 急停/接管演练、近失记录、维护回执 | 不能急停、阻断无障碍链或无人负责 |
+| K06 贡献谱系与铁路记忆展架 | 原点/大钟寺；`PUBLIC-001` / `PROV-KEY-003` | 纸质档案、人工讲解、可撤回署名 | 来源授权卡、正负结果、撤回记录 | 文保、肖像/版权或撤回路径不清 |
+
+六个构件的完整字段、责任角色、维护规则、五道建设/开放闸门和六段 civic pulse 交接见 `visual/assets/proof-mile-delivery.json`；机器可读计数为 [metric:proof_mile_component_count] 个构件、[metric:proof_mile_station_handoff_count] 个站点交接。它把“空间动作—公共体验—具身智能—排水—维护—清权”放到同一张可追责卡上，但不把任何未知现场基线写成已达标。[data:visual/assets/construction-readiness.json#CR-01] [data:visual/assets/participation-cycle.json#PARTICIPATION-CYCLE]
+
+交付顺序固定为：普通服务基座先可用 → 可逆样机做小测 → 人工裁决正负证据 → 公共回执与申诉 → 维护/扩散或拆除。若官方边界、权属、市政、无障碍、气候水务、消防或文保资料缺失，构件停在概念状态；若试点失败，普通路径保持开放，材料、数据和临时导视按退出记录归还。这个顺序是对可实施性的加固，不是施工图、采购规格、预算或政府许可。
 
 ## 设计依据与资料清单
 
