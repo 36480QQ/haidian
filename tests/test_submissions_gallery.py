@@ -291,6 +291,21 @@ class TestSubmissionsGallery(unittest.TestCase):
             self.assertEqual(item["githubUrl"], f"https://github.com/{item['author']}")
             self.assertEqual(item["avatarUrl"], f"https://github.com/{item['author']}.png?size=96")
 
+    def test_gallery_paginates_without_rendering_every_card(self):
+        submissions = SUBMISSIONS_FILE.read_text(encoding="utf-8")
+        for required in [
+            "const PAGE_SIZE = 50",
+            "filtered.slice(offset, offset + PAGE_SIZE)",
+            'id="galleryRange"',
+            'id="pagination"',
+            "pageItems(currentPage, totalPages)",
+            "url.searchParams.set('page', String(currentPage))",
+            "window.addEventListener('popstate'",
+            "每页 50 个方案",
+            "50 proposals per page",
+        ]:
+            self.assertIn(required, submissions)
+
 
 if __name__ == "__main__":
     unittest.main()
