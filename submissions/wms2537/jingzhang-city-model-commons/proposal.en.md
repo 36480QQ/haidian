@@ -7,7 +7,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 summary: "A public spatial-intelligence commons built from an open 3D semantic city model, reproducible experiments, controlled field validation, and public audit. Three key areas support benchmark validation, open co-creation, and everyday service while keeping AI understandable, simulatable, accountable, and reversible."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # Jing-Zhang City Model Commons

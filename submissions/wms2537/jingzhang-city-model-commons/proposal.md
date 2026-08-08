@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
 summary: "以百年京张铁路遗产为公共版本线，建设由开放三维语义城模、可复现实验、受控实地验证和公众审计共同组成的空间智能公地。三处重点区分别承担基准验证、开源共创与日常服务，把AI从城市表面的设备标签转化为可理解、可模拟、可问责、可回滚的公共能力。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # 京张城模公地
