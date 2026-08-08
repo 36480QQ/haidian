@@ -239,6 +239,8 @@ This iteration directly repairs review gaps found in high-scoring repository sub
 - `visual/assets/case-mechanism-matrix.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
 - `visual/assets/operations-matrix.json` turns the design into eight accountable action packages—from official-boundary replacement and field baselines to embodied-intelligence windows, drainage maintenance and annual scale/redesign/retire decisions.
 - `visual/assets/resource-accounts.json` makes five dependencies auditable: spatial rights, climate/water/ecology, model/data rights, human experience/participation, and assets/spares/maintenance. These are resource requirements, not budgets or funding commitments.
+- `visual/assets/construction-readiness.json` adds five construction-to-opening gates and four passive/connected component interfaces; it does not add a construction drawing, quantity, budget or approval claim.
+- `visual/assets/participation-cycle.json` records the return-pass process, participant lenses, current known/unknown states and the evidence required before a public window; it does not represent resident consent or a completed consultation.
 - `proposal.md`, this English translation, two offline report pages, the offline visual index and `changelog.md` keep the bilingual review surface aligned.
 
 These are reviewable design deliverables, not claims that a project has been commissioned. Their value is that a reviewer can find the requirement, inspect the evidence, test the stop gate and identify what must be confirmed before implementation.
@@ -246,6 +248,12 @@ These are reviewable design deliverables, not claims that a project has been com
 The local review-surface record is `visual/assets/qa-readiness.json`. It records semantic HTML tables, locally linked bilingual figures and A3/A0 outputs, the offline-only runtime boundary, and the known limits that provisional geometry and unknown field baselines still require professional and public review.
 
 The implementation handoff is deliberately inspectable: `operations-matrix.json` gives each package an owner, accountable reviewer, dependency, acceptance test, stop condition, maintenance rule and relative cost band; `resource-accounts.json` states which evidence and capacity must exist before a package is released. Together with the scenario matrix and relay receipt, these files form a reviewable chain from a public question to a bounded window, a human handoff, an evidence record and a scale/redesign/retire decision.
+
+### Construction readiness and continuous participation
+
+The package now separates “ready to discuss” from “ready to build or open”. `visual/assets/construction-readiness.json` applies five gates: evidence/site lock; a public-route and passive-component mock-up; wind, heat, water and lifeline coordination; a bounded, staffed and time-limited window; and a public retain/redesign/retire decision. Each gate names entry evidence, outputs, pass and stop conditions, an ordinary non-AI baseline and a maintenance response. It explicitly rejects construction drawings, statutory plans, procurement specifications, cost estimates and implementation approval.
+
+`visual/assets/participation-cycle.json` makes the return pass inspectable: synchronize inputs, reread changed requirements, compare peers, validate the package, publish a bounded review draft, establish field and public baselines, run a staffed window, return negative and distributional evidence, then retain, redesign or retire. Seven participant lenses have paper, staffed, multilingual or no-app routes. The current package records repository sync, local validation and peer comparison as known review activities, while field baseline, resident consultation and public pilot remain `unknown` or `not_started`; no consent, microclimate result or health outcome is inferred.
 
 ## v1.8 Reviewer-Visible Evidence Layer
 

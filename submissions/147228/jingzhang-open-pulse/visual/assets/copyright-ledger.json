@@ -364,7 +364,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "80af875e308cd514814d17d08068f770c06e194aa5747c08490c47a777079c72"
+      "hash_sha256": "3d8ff1c2e5bf55e2b845ca4846be257876fbcc8f386b79947b8d50a1964c40c6"
     },
     {
       "path": "compliance_matrix.json",
@@ -653,7 +653,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "b9d7bf60d3ff251f61df7a65f69904553e0c916921499edbd74cec327851e620"
+      "hash_sha256": "0e1a667e2f6c5a1a3528dec5005e206c1de3863a16e78b588ea1fe8b27998e90"
     },
     {
       "path": "proposal.md",
@@ -670,7 +670,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "368a0f38c25b53841c436cc11a501a6009bd22ec3a5aa271b5d27c57065fd7c8"
+      "hash_sha256": "2897568b52317aa6e7f1b25ad0e8f401ee27e832832f618eca63876c63febacc"
     },
     {
       "path": "report/copyright_statement.md",
@@ -721,7 +721,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "27433be420e3360eb76f6a8dc96aeeec22f4be2b285283bd96371a9c7099e03f"
+      "hash_sha256": "837ea442baa83aeaea69d7914545a54a2aac11214f933c5d0e6e2a96371aed62"
     },
     {
       "path": "report/proposal.html",
@@ -738,7 +738,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d0f686ed95ffb114291eaf56327c204227f46447838aab2165e132a6e5ebd071"
+      "hash_sha256": "2b5ab01057684a05e4d567e53f8b20166947fc05d77931ed90ee68d2a44f08de"
     },
     {
       "path": "sources.json",
@@ -1045,7 +1045,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "db2e55f2bb1898a5ec008c81cb97a41370a7e6a725da6da9efb87956665eaf2c"
+      "hash_sha256": "7c82d042f5cac2a501d1a79e3e33a43d2a8ce58f5424fab41a39fbc5e4f4e227"
     },
     {
       "path": "visual/index.html",
@@ -1062,7 +1062,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "3b3ecaa491e240fc8d11dbaba2f2fb337c7e76c5bcb7048c0c4b6a31a8ee1c9a"
+      "hash_sha256": "282a5cd51363cac6ccc5699780bcd118e813acfc2ef625014077e8523749c684"
     },
     {
       "path": "visual/assets/open-pulse-relay-receipt.schema.json",
@@ -1113,7 +1113,7 @@
       "clearance_status": "self_generated",
       "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
       "font_note": "JSON asset; no font file is redistributed.",
-      "hash_sha256": "1233c90902287658f83a9410519130d7659025830bb763dc37a1656c3b7fc76a"
+      "hash_sha256": "c363449eed3a5f012653b90c9c137ffcf7176fc9ad7ec36931c9dedf11393b32"
     },
     {
       "path": "visual/assets/operations-matrix.json",
@@ -1216,6 +1216,42 @@
       "attribution": "Self-generated non-identifying design lenses; no personal data or inferred profile is included.",
       "font_note": "No embedded font or remote runtime asset.",
       "hash_sha256": "a1d8274a0cd6fe01f3554359b46704fa322ecd265b1f06ac9e48f97733992bf8"
+    },
+    {
+      "path": "visual/assets/construction-readiness.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/resource-accounts.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "attribution": "Conceptual construction/opening gates authored by 许丙南 / Codex; not construction drawings, cost estimates or approvals.",
+      "hash_sha256": "353d7f387cf5047b9bf36c621e7547a4e1bccf833e2e9e9f0610f0f930d8fa15"
+    },
+    {
+      "path": "visual/assets/participation-cycle.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/resource-accounts.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "attribution": "Conceptual continuous-participation and return-pass log authored by 许丙南 / Codex; not resident consent or consultation results.",
+      "hash_sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
     }
   ],
   "review_protocol": [
