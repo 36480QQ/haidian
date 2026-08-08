@@ -688,6 +688,29 @@
         "CASE-SINGAPORE-AI-VERIFY"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-039",
+      "title": "环境资源外部性与扩容闸门",
+      "policy_instrument": "environmental_resource_externality_gate",
+      "enterprise_stage": "pilot_to_scale",
+      "problem": "Enterprise growth can hide water, energy, heat, noise, waste or maintenance burdens that a public host must absorb.",
+      "jingzhang_interface": "Before scaling S04/S05/S09, publish a relative resource ledger, local operating assumptions, lower-resource alternative, affected maintenance team and a threshold that triggers redesign or retirement.",
+      "operator": "sustainability lead + facilities operator + enterprise accountable executive",
+      "required_evidence": [
+        "resource ledger",
+        "local assumption note",
+        "lower-resource alternative",
+        "maintenance impact note",
+        "threshold decision"
+      ],
+      "metric": "scaled_ai_services_with_resource_externality_and_alternative_record",
+      "stop_gate": "Unpriced material burden, no lower-resource route or threshold breach prevents scale-up.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
