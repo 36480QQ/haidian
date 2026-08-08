@@ -56,6 +56,37 @@ Reference trail includes: [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK
 
 Includes 5 user personas (Open-Source Developer, Startup Team, Enterprise Visitor, Resident, University Faculty & Student) and 10 spatial AI scenario cards (e.g., 01 Open Source Hall, 02 Security Sandbox, 03 Edge Compute Station, 04 AI Pedestrian Guide, 05 Dazhongsi International Lounge, 06 Qinghe Low-Carbon Riverfront, 07 Tech Transfer Street, 08 Data Asset Lounge, 09 AI Living Service Street, 10 Global AI Week Trail).
 
+## Global Benchmarks & Regional Synergy
+
+The proposal benchmarks against 6 global AI innovation ecosystems:
+1. **Mission Bay, San Francisco**: Adopting its university-adjacent industry-academia integration and VC clustering for the Origin Community.
+2. **Tech City, London**: Leveraging its high-density urban renewal and creative industry fusion for Dazhongsi.
+3. **MaRS Discovery District, Toronto**: Adapting its innovation hub and centralized research sharing for Zhongzhiyuan.
+4. **Cornell Tech, New York**: Applying its open campus and corporate co-creation sandbox model.
+5. **Kendall Square, Boston**: Emulating its high walkability and dense innovation exchange network.
+6. **Punggol Digital District, Singapore**: Learning from its system-level interconnectivity, smart grid, and environmental governance.
+
+**Regional Synergy**:
+The strategy builds a "Two-Wing" synergy framework: connecting westward with the Zhongguancun tech service wing for capital, and eastward with the Xiaoyue River scenario wing. Northward, it absorbs foundational research from Future Science City and Huairou Science City; southward, it extends to E-Town (BDA) for hardware manufacturing, forming a complete Jing-Jin-Ji AI industry loop. 
+
+## AI Scenario Admission, Operations & Governance
+
+An executable governance mechanism is established for AI testing grounds and computing facilities:
+
+### 1. Scenario Admission & Management Matrix
+- **Autonomous Delivery Routes**: Open to L4+ fleets; requires off-peak closed-course data; exit triggered by two active-liability accidents.
+- **Open-Source Evaluation Sandbox**: Open to university teams and registered enterprises; provides air-gapped compute environments; requires code security and bias audits.
+- **Embodied AI Patrol Park**: Open to security and environmental robots; restricted to non-peak hours with a whitelist management system.
+
+### 2. Community Governance & Annual Events
+Establishes an "Open Source Governance Committee" and an honors component library, featuring a "Code Wall" in the Origin Community to display top contributors. Curates an event system (Annual Developer Conference, Quarterly Algorithm Challenges, Monthly Geek Salons) to create a "Talent Gathering - Idea Validation - Investment Incubation" conversion loop.
+
+### 3. AI Ethics, Privacy & Safety Review
+- **Data Minimization**: "Sensory vision" and "environmental monitoring" must adhere to non-collection of biometrics, local anonymization, and regular data destruction.
+- **Human-in-the-Loop & Appeal**: Public AI services (e.g., smart guides, unmanned retail) must provide one-touch human operator transfer and on-site appeal devices to prevent algorithmic bias.
+- **Inclusive Design**: Emphasizes child-friendly, barrier-free facilities, and non-digital alternative services (retaining physical signs and manual service posts).
+
+
 ## Mobility, Infrastructure & Verification Metrics
 
 ![Mobility & Blue-Green System](assets/figures/mobility-bluegreen.en.png)
