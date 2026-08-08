@@ -298,6 +298,28 @@
       "stop_gate": "Unknown affected groups, unpriced human workload or no withdrawal owner keeps the proposal in research status.",
       "source_ids": ["CASE-UK-ATRS", "CASE-DECIDIM-BARCELONA"],
       "status": "conceptual_suggestion"
+    },
++    {
+      "id": "POL-022",
+      "title": "供应商中立的市场摸底卡",
+      "policy_instrument": "supplier_neutral_market_sounding",
+      "enterprise_stage": "problem_discovery",
+      "problem": "A public team may write a solution-shaped brief that excludes capable smaller suppliers before the service problem and acceptance test are understood.",
+      "jingzhang_interface": "For S08/S09 challenge briefs, publish the problem, non-AI baseline, data boundary and acceptance test first; record questions from multiple suppliers without giving any bidder privileged access.",
+      "operator": "procurement lead + service owner + independent market-sounding moderator",
+      "required_evidence": [
+        "problem-first brief",
+        "supplier question log",
+        "conflict disclosure",
+        "supplier-neutral acceptance test"
+      ],
+      "metric": "market_soundings_with_supplier_neutral_problem_and_baseline",
+      "stop_gate": "A solution-named brief, undisclosed privileged information or a missing baseline pauses the market sounding.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-SEOUL-AI-FOUNDATION"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
