@@ -10,7 +10,9 @@
 - 生态图谱补齐四层结构图（标准层→要素层→节点层→场景层）。
 - 公共空间组件库细化为6个组件表（模数/功能/无障碍）。
 - 指标精度舍入：provisional 派生面积舍入到 100 m²、比率舍入到 4 位（避免虚假精度）。
-- 补充英文对应件：proposal.en.md + proposal.en.html + figures.en.png + drawings.en.pdf + visual/index.en.html。
+
+- 补充英文对应件
+- re-trigger CI after ready_for_review：proposal.en.md + proposal.en.html + figures.en.png + drawings.en.pdf + visual/index.en.html。
 
 ## v3.0 - 2026-08-08
 
