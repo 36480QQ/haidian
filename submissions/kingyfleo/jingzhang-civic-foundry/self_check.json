@@ -37,6 +37,13 @@
       "message": "面积与长度使用EPSG:4548复算，known指标含公式和来源。"
     },
     {
+      "check_id": "ADOPTION_FRAMEWORK",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "一核一链三区三品五账在正文、图件、网页与图纸中使用同一命名。"
+    },
+    {
       "check_id": "AI_SCENE_COUNT",
       "result": "pass",
       "severity": "major",

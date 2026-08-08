@@ -253,6 +253,17 @@
       "confidence": "medium",
       "assumptions": []
     },
+    "adoption_core_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(culture_driven_civic_ai_adoption_core)",
+      "confidence": "medium",
+      "assumptions": []
+    },
     "workflow_stage_count": {
       "status": "known",
       "value": 7,
@@ -261,6 +272,29 @@
         "proposal.md"
       ],
       "formula": "count(brief_to_public_reinvestment_stages)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "flagship_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(named_flagship_area_roles)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "civic_product_type_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(reusable_content_experience_service_outputs)",
       "confidence": "medium",
       "assumptions": []
     },
