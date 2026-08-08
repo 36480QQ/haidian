@@ -342,12 +342,16 @@ class ProposalSchemaTests(unittest.TestCase):
                 "author_github": "alice",
                 "language": "zh",
                 "proposal_format_version": "2",
+                "translation_file": "proposal.en.md",
                 "license": "CC-BY-4.0",
                 "summary": "将人类可读正文与完整机器核验索引分层组织。",
             },
             "sections": REQUIRED_SECTIONS,
         }
         jsonschema.validate(payload, schema)
+        del payload["metadata"]["translation_file"]
+        with self.assertRaises(jsonschema.ValidationError):
+            jsonschema.validate(payload, schema)
 
 
 REFERENCE_BLOCK = (
@@ -907,6 +911,70 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><title>Figure</title><rect width="10" height="10"/></svg>',
             )
         return [proposal] + [f"{base}/{item}" for item in required]
+
+    def add_bilingual_v2_display(self, root: Path, base: str, changed: list[str]) -> None:
+        primary = root / base / "proposal.md"
+        text = primary.read_text(encoding="utf-8")
+        if 'proposal_format_version: "2"' not in text:
+            text = text.replace(
+                'language: "zh"',
+                'language: "zh"\nproposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+                1,
+            )
+        elif 'translation_file: "proposal.en.md"' not in text:
+            text = text.replace(
+                'proposal_format_version: "2"',
+                'proposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+                1,
+            )
+        primary.write_text(text, encoding="utf-8")
+        translated = text.replace(
+            'language: "zh"\nproposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+            'language: "en"\nproposal_format_version: "2"\ntranslation_of: "proposal.md"',
+            1,
+        )
+        (root / base / "proposal.en.md").write_text(translated, encoding="utf-8")
+        display_paths = [
+            "proposal.md",
+            "report/proposal.html",
+            "visual/index.html",
+            "drawings/a3-booklet.pdf",
+            "drawings/a0-boards.pdf",
+            "assets/figures/site-overview.png",
+            "assets/figures/land-use-structure.png",
+            "assets/figures/key-areas.png",
+            "assets/figures/mobility-bluegreen.png",
+            "assets/figures/metrics-evidence.png",
+        ]
+        manifest_path = root / base / "manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        items = {item["path"]: item for item in manifest["files"]}
+        if "proposal.md" not in items:
+            item = {"path": "proposal.md", "role": "narrative", "required": True}
+            manifest["files"].append(item)
+            items["proposal.md"] = item
+        for rel in display_paths:
+            source = root / base / rel
+            localized_rel = "proposal.en.md" if rel == "proposal.md" else source.with_name(
+                f"{source.stem}.en{source.suffix}"
+            ).relative_to(root / base).as_posix()
+            localized = root / base / localized_rel
+            if rel != "proposal.md":
+                localized.write_bytes(source.read_bytes())
+            items[rel]["language"] = "zh"
+            items[rel]["sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
+            manifest["files"].append(
+                {
+                    "path": localized_rel,
+                    "role": items[rel]["role"],
+                    "required": True,
+                    "language": "en",
+                    "translation_of": rel,
+                    "sha256": hashlib.sha256(localized.read_bytes()).hexdigest(),
+                }
+            )
+            changed.append(f"{base}/{localized_rel}")
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     def update_json(self, root: Path, rel: str, updater) -> None:
         path = root / rel
@@ -1494,7 +1562,25 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", changed)
             self.assertTrue(report.ok, report.errors)
             self.assertIn("proposal.zh.md", "\n".join(report.warnings))
-            self.assertIn("submission and review remain allowed", "\n".join(report.warnings))
+            self.assertIn("legacy v1 package remains compatible", "\n".join(report.warnings))
+
+    def test_v2_submission_without_bilingual_counterparts_is_blocked(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            path = root / base / "proposal.md"
+            path.write_text(
+                path.read_text(encoding="utf-8").replace(
+                    'language: "zh"',
+                    'language: "zh"\nproposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+                    1,
+                ),
+                encoding="utf-8",
+            )
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            self.assertIn("v2 bilingual submission requires", "\n".join(report.errors))
 
     def test_complete_bilingual_display_mapping_has_no_bilingual_warning(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -1504,13 +1590,32 @@ class SubmissionWorkflowTests(unittest.TestCase):
             primary = root / base / "proposal.md"
             primary.write_text(
                 primary.read_text(encoding="utf-8").replace(
-                    'language: "zh"', 'language: "zh"\ntranslation_file: "proposal.en.md"', 1
+                    'language: "zh"',
+                    'language: "zh"\nproposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+                    1,
                 ),
                 encoding="utf-8",
             )
+            readable = re.sub(
+                r"\[(?:source|standard|depth|data|metric):[^\]\s]+\]",
+                "",
+                primary.read_text(encoding="utf-8"),
+            )
+            readable_explanation = re.sub(
+                r"\[(?:source|standard|depth|data|metric):[^\]\s]+\]",
+                "",
+                FORMAL_PARAGRAPH,
+            )
+            for heading in REQUIRED_SECTIONS:
+                readable = readable.replace(
+                    f"## {heading}\n",
+                    f"## {heading}\n\n本节关键判断依据 [source:SITE-PACKAGE]。{readable_explanation}\n",
+                    1,
+                )
+            primary.write_text(readable, encoding="utf-8")
             translated = primary.read_text(encoding="utf-8").replace(
-                'language: "zh"\ntranslation_file: "proposal.en.md"',
-                'language: "en"\ntranslation_of: "proposal.md"',
+                'language: "zh"\nproposal_format_version: "2"\ntranslation_file: "proposal.en.md"',
+                'language: "en"\nproposal_format_version: "2"\ntranslation_of: "proposal.md"',
                 1,
             )
             (root / base / "proposal.en.md").write_text(translated, encoding="utf-8")
@@ -1836,6 +1941,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
                     1,
                 )
             proposal_path.write_text(text, encoding="utf-8")
+            self.add_bilingual_v2_display(root, base, changed)
             report = validate_submission(root, "alice", changed)
             self.assertTrue(report.ok, "\n".join(report.errors))
             self.assertNotIn("missing known metric reference", "\n".join(report.errors))
@@ -1856,6 +1962,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 1,
             )
             proposal_path.write_text(text, encoding="utf-8")
+            self.add_bilingual_v2_display(root, base, changed)
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             self.assertIn("consecutive evidence markers", "\n".join(report.errors))

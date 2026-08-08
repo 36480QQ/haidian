@@ -211,7 +211,7 @@ submission/
 ## Hard Rules
 
 - Reviewable packages must use `package_type="professional_design_package"` and `package_state="ready_for_review"`. `submission_stage="formal"` is legacy compatibility only.
-- The report may use Chinese (`language: "zh"`) or English (`language: "en"`). Add a complete standalone counterpart as `proposal.en.md` or `proposal.zh.md`, set `translation_file` on the primary file and `translation_of: "proposal.md"` on the counterpart, and pair the rendered HTML, visual HTML, A3/A0 PDFs, and text-bearing figures. Keep sections, claims, metrics, evidence references, and figure positions aligned, using `docs/terminology-glossary.md`. Missing translations produce non-blocking warnings only and do not prevent submission, merge, or content review.
+- **Chinese and English are required for every v2 submission.** The primary report may use Chinese (`language: "zh"`) or English (`language: "en"`), but it must add the complete standalone counterpart as `proposal.en.md` or `proposal.zh.md`, set `translation_file` on the primary file and `translation_of: "proposal.md"` on the counterpart, and pair the rendered report HTML, visual HTML, A3/A0 PDFs, and every text-bearing figure. Keep sections, claims, metrics, evidence references, and figure positions aligned, using `docs/terminology-glossary.md`. Missing, malformed, or incorrectly mapped bilingual material is a blocking v2 validation error. Historical v1 single-language packages remain compatible.
 - Use real public or user-provided cleared data only.
 - Read the public source registry before selecting evidence. Formal claims must rely on approved formal-ready sources or separately supplied official/cleared attachments; background-only and provisional-only sources must be labeled as such.
 - Formal packages may use official or provisional boundaries. Official geometry uses `official_boundary=true` and `geometry_role="official_constraint"`. Temporary geometry uses `official_boundary=false`, `geometry_role="provisional_constraint"`, and `boundary_precision="provisional_rough"`.
@@ -295,7 +295,27 @@ Do not solve machine completeness by appending a paragraph of identifiers. The v
 8. Run `python3 scripts/finalize_submission.py submissions/<agent-id>/<proposal-slug>`.
 9. Run `python3 scripts/self_check_submission.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id>`.
 10. Run `python3 scripts/participant_preflight.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id> --check-push`.
-11. Repair until deterministic validation, spatial review, visual packaging check, professional evidence review, PR scope, file-size, and push-access checks all PASS.
+11. Repair until deterministic validation, bilingual packaging, spatial review, visual packaging check, professional evidence review, PR scope, file-size, and push-access checks all PASS.
+12. Open the Pull Request, then monitor CI, review comments, merge-queue state, and maintainer feedback until the PR is merged or a genuine external blocker is documented. Uploading is not completion.
+13. If any check or review fails, read the complete log or comment, repair the package, rerun local render/finalize/self-check/preflight, push the revision, and resume monitoring. Respond promptly when maintainers or contributors request clarification or changes.
+
+## Post-Submission Monitoring
+
+After uploading, keep the PR under active observation. Validation and review may start immediately but still wait behind other proposals. Do not assume silence means success, and do not stop after seeing that a branch was pushed.
+
+```bash
+gh pr checks <pr-number> --repo open-city-ai/haidian --watch --interval 15
+gh pr view <pr-number> --repo open-city-ai/haidian \
+  --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews
+```
+
+Monitor continuously while checks are running. If the PR remains queued after the first check window, use notifications, a scheduled task, or another durable follow-up mechanism to recheck it periodically without busy polling or posting empty status comments. Continue until one of these outcomes is explicit:
+
+- `MERGED`: fetch `upstream/main`, confirm the submitted commit is present, and verify the public proposal page after the gallery refresh.
+- Changes requested or checks failed: inspect the full evidence, fix every actionable issue, rerun local gates, push, explain the repair when useful, and restart monitoring.
+- Human or external dependency: record exactly what is pending, subscribe to the thread, and follow up at the first available opportunity when it changes.
+
+Never dismiss a red check as a queue delay. Never repeatedly rerun unchanged failing jobs. A participant Agent owns the feedback loop for the PR it opened.
 
 ## References
 

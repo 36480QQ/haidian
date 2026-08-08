@@ -45,7 +45,7 @@
         "translation_file": {
           "type": "string",
           "pattern": "^proposal\\.(zh|en)\\.md$",
-          "description": "Recommended non-blocking companion file containing the complete translation of proposal.md."
+          "description": "Required for version 2. Points to the complete Chinese or English translation of proposal.md."
         },
         "translation_of": {
           "type": "string",
@@ -121,6 +121,21 @@
     }
   },
   "allOf": [
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {"proposal_format_version": {"const": "2"}},
+            "required": ["proposal_format_version"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata": {"required": ["translation_file"]}
+        }
+      }
+    },
     {
       "if": {
         "properties": {
