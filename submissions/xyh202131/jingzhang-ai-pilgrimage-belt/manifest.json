@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "46ab23cef0bc7afc387bbcc3cc9267576518845ff64b73fc534b7b2c74906155"
+      "sha256": "f9f8a6642241bbcea7f659c6110cfd0cfc25f8d1431168d4d6656590fbe52078"
     },
     {
       "path": "agent.json",
@@ -74,10 +74,16 @@
       "sha256": "5b03c25751d4dd67f0adfd54f34ae1575ca04e24ad9d08882da6f05188e14ce0"
     },
     {
+      "path": "visual/assets/non-ai-parity-contract.json",
+      "role": "public_interest_evidence",
+      "required": true,
+      "sha256": "cb07e41c1fdd5b814326f5b3704a768cb4203bf9e4f5896852b500f0160edd18"
+    },
+    {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c7e6f55067c84e70d27e37df0dc9d8cfd8217be58d423ce4af5c862d02f33c01"
+      "sha256": "34181af6b176a3c229d7924cf59d23e34f07def20a1f54da280d53d1f4f1d1bb"
     },
     {
       "path": "report/narrative.md",
