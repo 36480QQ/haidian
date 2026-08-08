@@ -20,6 +20,30 @@
       "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
     },
     {
+      "id": "PROJECT-SCOPE-SUMMARY",
+      "path": "data/processed/project_scope_summary.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed navigation table for the three scope levels and their taskbook descriptors; not an official polygon or statutory planning control."
+    },
+    {
+      "id": "AGENT-TASK-REQUIREMENTS",
+      "path": "data/processed/agent_task_requirements.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed navigation table for agent task requirements; the taskbook JSON and official announcement remain the governing evidence."
+    },
+    {
+      "id": "SOURCE-USE-MATRIX",
+      "path": "data/processed/source_use_matrix.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed source-use and boundary navigation table; it does not upgrade provisional or background material into formal evidence."
+    },
+    {
+      "id": "MISSING-DATA-CHECKLIST",
+      "path": "data/processed/missing_data_checklist.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed checklist of official boundary, control, ownership, infrastructure and public-service gaps that must be confirmed before implementation."
+    },
+    {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
