@@ -18,6 +18,20 @@
       "stop_gate": "No card or no accountable operator means no public test window.",
       "source_ids": ["CASE-HELSINKI-AI-REGISTER", "CASE-UK-ATRS"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-002",
+      "title": "算法服务采购前置记录",
+      "policy_instrument": "algorithm_preflight_record",
+      "enterprise_stage": "procurement_readiness",
+      "problem": "Public buyers and suppliers often discuss model capability before agreeing on purpose, limits, human review and remedy.",
+      "jingzhang_interface": "Before S04, S08 or S09 expands, publish a compact record covering purpose, affected service, data owner, review owner, alternatives, stop condition and redress route.",
+      "operator": "district procurement lead + service owner + supplier compliance lead",
+      "required_evidence": ["plain-language preflight", "rights and risk review", "manual alternative documented", "incident correction path"],
+      "metric": "pilots_with_completed_preflight_and_manual_alternative",
+      "stop_gate": "Missing purpose, data owner or human review blocks procurement and public testing.",
+      "source_ids": ["CASE-AMSTERDAM-ALGORITHM-REGISTER", "CASE-UK-ATRS"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
