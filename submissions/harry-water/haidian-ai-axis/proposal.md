@@ -4,7 +4,7 @@ author_github: "harry-water"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；中英文完整正文、42 条已登记来源均已形成，本包概念几何、指标、假设已通过本轮内部评审，双语图件、双语 HTML、A3/A0 PDF、manifest 清单与哈希及包终态化仍待完成，本包在上述下游事项关闭前保持 scaffold 状态。"
+summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；中英文正文、42 条来源、概念几何、指标、假设、五对双语图件、双语 HTML 及 A3/A0 PDF 对均已形成并通过本轮内部检查；manifest 清单与哈希刷新、scaffold 标记移除及包终态化仍待完成。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -535,7 +535,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 回到第一章的主线，本章是它的最后一环：**遗产主线 → 三站分工 → 两翼供给/反馈 → 六类空间原型 → 十个运行场景 → 一套年度账本**。账本不是附加的统计工作，而是唯一能反过来判断前五环是否仍然成立的手段——主线是否仍连续、站点是否仍差异化、原型是否被用对、场景是否仍保留退出权，都在年度审计中被重新检验。
 
-**当前包状态说明**：本包 `package_state` 仍为 `scaffold`，`SCAFFOLD-DRAFT` 标记保留；中英文完整正文、42 条已登记来源均已形成，本包概念几何、指标、假设（`geometry/*.geojson`、`metrics.json`、`assumptions.json`）已通过本轮内部评审，**正文中的指标引用即指向上述通过本轮内部评审的复算口径与数值（低置信度、临时边界口径）**；五对双语图件、双语 HTML、A3/A0 PDF 对、manifest 清单与哈希刷新、scaffold 标记移除与包终态化仍待完成，在这些下游事项关闭之前包状态保持不变。
+**当前包状态说明**：本包 `package_state` 仍为 `scaffold`，`SCAFFOLD-DRAFT` 标记保留；中英文完整正文、42 条已登记来源、概念几何、指标、假设（`geometry/*.geojson`、`metrics.json`、`assumptions.json`）、五对双语图件、双语 HTML 与 A3/A0 PDF 对均已形成并通过本轮内部检查，**正文中的指标引用即指向上述内部检查通过的复算口径与数值（低置信度、临时边界口径）**；manifest 清单与哈希刷新、scaffold 标记移除与包终态化仍待完成，在这些终态化事项关闭之前包状态保持不变。
 
 **设计判断**：把指标按可复算／待官方条件／待长期校准三类分开，并把 14 项 `known` 指标与 `metrics.json` 同源对照、明确其机器值与展示口径。
 **判断理由**：把机器精确值与展示圆整值、申报口径分开，才能既保证同源可审计，又不把临时边界的复算冒充规划精度；分类表述让集成方准确知道官方数据到位后该重算什么。

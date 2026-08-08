@@ -4,7 +4,7 @@ author_github: "harry-water"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using “海淀新轴 / HAIDIAN AI AXIS” as the conceptual framework, the proposal starts from the Jing-Zhang heritage spine and successively organizes the three-station division of roles, the two wings' supply and feedback, six spatial prototypes, ten operating scenarios, and one annual ledger; the complete Chinese and English bodies and 42 registered sources now exist, and the current-package concept geometry, metrics, and assumptions have passed this round's internal review, while the bilingual figure pairs, bilingual HTML, A3/A0 PDF pairs, manifest listing and hashes, and package finalization remain pending; the package stays in scaffold state until those downstream items are closed."
+summary: "Using “海淀新轴 / HAIDIAN AI AXIS” as the conceptual framework, the proposal organizes the Jing-Zhang heritage spine, three-station division of roles, two-wing supply and feedback, six spatial prototypes, ten operating scenarios, and one annual ledger; the bilingual bodies, 42 sources, concept geometry, metrics, assumptions, five bilingual figure pairs, bilingual HTML and A3/A0 PDF pairs now exist and have passed this round's internal checks; manifest listing and hash refresh, scaffold-marker removal and package finalization remain pending."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -43,7 +43,7 @@ This proposal uses a four-tier evidence system; every design statement must be t
 
 `data/source_registry.json` currently registers 5 formal-ready sources, 1 provisional-only source, and 0 background_only sources. Agents must not upgrade provisional or background material into official boundary, statutory regulatory detailed planning, formal scoring basis, or government implementation commitments. This proposal has additionally registered 35 external primary sources in the package `sources.json` (5 on the Jing-Zhang Railway and the Ping-Sui–Jing-Bao evolution, 4 on the Beijing Central Axis heritage description and protection management plan, 5 Beijing water resources bulletins and yearbooks, 5 annual PM2.5 releases by the Beijing Municipal Ecology and Environment Bureau, 5 government and ministry materials on Haidian–Ulanqab compute coordination, and 11 project-party and host-organization materials for the five Middle East cases), each annotated with `authority_level`, `usage`, and `risk_note` and cited in the body using tags of the form `source:ID`. Official control-line data (heritage-protection purple lines, river blue lines, green lines, road red lines, rail control lines) still cannot be found in public channels with verifiable provenance; this proposal does not fabricate source records for them, and continues to flag them in Chapter 13 as an unresolved data gap, citing [source:SOURCE-REGISTRY].
 
-![Evidence chain and submission package relationship diagram](assets/figures/site-overview.png)
+![Evidence chain and submission package relationship diagram](assets/figures/site-overview.en.png)
 
 Until the official `SITE_BOUNDARY` and the three `KEY_AREA` polygons are obtained, both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are labeled `official_boundary=false`, `geometry_role="provisional_constraint"`, and `boundary_precision="provisional_rough"`, and may only be used for proposal generation, self-checks, visualization, and design discussion [data:geometry/site_boundary.geojson#SITE-001], [data:geometry/key_areas.geojson#PROV-KEY-001]. The corresponding [metric:site_area_sqm] and [metric:key_area_count] are recalculated from the submitted geometry and are not official areas. The organizer-side data gap does not itself block content scoring; once the official polygons are in place, the site boundary, key areas, land use, roads, green space, public space, buildings, phasing, and all metrics must be recalculated as a whole, not by swapping a single file.
 
@@ -64,7 +64,7 @@ This proposal organizes its work by the three levels defined in the announcement
 
 The depth of the three levels is constrained by [depth:three_level_scope_framework] and [depth:overall_spatial_structure]; the task basis is [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]; scope navigation uses `project_scope_summary.csv` in [source:PROCESSED-FACT-PACK]; and the spatial evidence is [data:geometry/site_boundary.geojson#SITE-001] and [data:geometry/key_areas.geojson#PROV-KEY-002].
 
-![Three-level scope and spatial work framework diagram](assets/figures/land-use-structure.png)
+![Three-level scope and spatial work framework diagram](assets/figures/land-use-structure.en.png)
 
 **The Haidian AI Axis does not draw a new red line outside the three-level scope.** It is a working method that reorganizes the three levels: the Coordinated Research Area answers “what does this northbound corridor exchange in the AI era,” the Overall Design Area answers “how does that exchange become urban space that is walkable, lingerable, and exitable,” and the key areas answer “how do the three stations each take on exchange, validation, and launch.” The three levels implement each other step by step; they are not three unrelated sets of drawings.
 
@@ -202,7 +202,7 @@ The polygons of the three key areas are all currently provisional [data:geometry
 
 Each key area first receives an area-level mini-scheme, then **two concept node cards**, six in total. The node cards are an attempt to land the “six spatial prototypes” in concrete public-space forms: each card has a recognizable physical form (courtyard, yard, stitch node, street, crossing surface), not merely an operating brand. No node card contains coordinates, dimensions, findings of existing conditions, engineering conclusions, or judgments on ownership or building condition; each card's “assumed existing conditions” are design assumptions pending survey verification, not verified descriptions of the present state. Wherever the node cards mention staffed service, staffed call points, or human guidance, these denote design targets to be realized only during authorized service windows after an operator is confirmed; they do not represent existing staffing or a commitment to around-the-clock attendance.
 
-![Index and design-task diagram of the three key areas](assets/figures/key-areas.png)
+![Index and design-task diagram of the three key areas](assets/figures/key-areas.en.png)
 
 ### Zhongzhiyuan AI Independent Innovation Acceleration Area | Compute Exchange (approx. 192.1 ha)
 
@@ -413,7 +413,7 @@ Building-footprint evidence is the three submitted conceptual intervention envel
 
 The core of the transport strategy is not adding vehicular corridors but **restoring the east–west connections severed by the railway, ring roads, and waterways, and making the north–south spine continuously walkable**. Constrained by [depth:traffic_rail_slow_parking], the main actions include: stitching walking-and-cycling break points in the Jing-Zhang Railway Heritage Park; improving pedestrian and cycling continuity at nodes crossing the ring roads; upgrading the pedestrian environment around existing transport nodes such as Wudaokou, Qinghua East Road West Entrance, and Dazhongsi stations; and organizing non-motorized parking and rail-station connections. For everything involving road alignments, rail alignments, bridge and tunnel works, and utilities, this proposal **gives no engineering conclusions**, only a list of questions requiring dedicated study.
 
-![Composite diagram of walking-cycling mobility and blue-green public space](assets/figures/mobility-bluegreen.png)
+![Composite diagram of walking-cycling mobility and blue-green public space](assets/figures/mobility-bluegreen.en.png)
 
 Municipal and new infrastructure are constrained by [depth:municipal_new_infrastructure]; the focus is turning “invisible compute” into urban facilities with a location and a responsible party:
 
@@ -496,7 +496,7 @@ Metrics fall into three categories, governed by [depth:metrics_recalculation] an
 | Control metrics pending official conditions | [metric:floor_area_ratio] | Status `unknown`; no approved FAR controls or official boundary, so no value is filled in this round |
 | Performance metrics pending long-term calibration | Ledger metrics (latency, queueing, failure rate, energy use, green-power share, carbon, water, switchover time); operations metrics (conversion projects initiated, exit rate, barrier-free break points, night lighting compliance rate) | Only metering definitions and empty table structures are published; no values filled before real operating data are obtained |
 
-![Core metric recalculation and evidence chain diagram](assets/figures/metrics-evidence.png)
+![Core metric recalculation and evidence chain diagram](assets/figures/metrics-evidence.en.png)
 
 ### Known-metric source-synchronized table (aligned with `metrics.json`)
 
@@ -535,7 +535,7 @@ The compliance matrix is the master control document of task responsiveness: eve
 
 Returning to the spine of Chapter 1, this chapter is its final link: **heritage spine → three-station division of roles → two-wing supply/feedback → six spatial prototypes → ten operating scenarios → one annual ledger**. The ledger is not an appended statistical exercise but the only means of judging in reverse whether the first five links still hold — whether the spine remains continuous, the stations remain differentiated, the prototypes are used as intended, and the scenarios retain the right of exit are all re-examined in the annual audit.
 
-**Current package status note**: This package's `package_state` remains `scaffold` and the `SCAFFOLD-DRAFT` marker is retained; the complete Chinese and English bodies and the 42 registered sources now exist, and the current-package concept geometry, metrics, and assumptions (`geometry/*.geojson`, `metrics.json`, `assumptions.json`) have passed this round's internal review; **metric references in the body point to those internally reviewed recalculation definitions and values (low-confidence, provisional-boundary basis)**; the five bilingual figure pairs, the bilingual HTML, the A3/A0 PDF pairs, the manifest listing and hash refresh, the removal of the scaffold marker, and package finalization remain pending, and the package state stays unchanged until those downstream items are closed.
+**Current package status note**: This package's `package_state` remains `scaffold` and the `SCAFFOLD-DRAFT` marker is retained; the complete Chinese and English bodies, 42 registered sources, concept geometry, metrics, assumptions (`geometry/*.geojson`, `metrics.json`, `assumptions.json`), five bilingual figure pairs, bilingual HTML and A3/A0 PDF pairs now exist and have passed this round's internal checks; **metric references in the body point to those internally checked recalculation definitions and values (low-confidence, provisional-boundary basis)**; the manifest listing and hash refresh, removal of the scaffold marker and package finalization remain pending, and the package state stays unchanged until those finalization items are closed.
 
 **Design judgment**: Separate metrics into the three categories recomputable / pending official conditions / pending long-term calibration, and cross-reference the 14 `known` metrics with `metrics.json`, distinguishing machine values from display guidance.
 **Rationale**: Only by separating exact machine values from rounded display values and declaration bases can the package stay source-synchronized and auditable without presenting provisional-boundary recalculations as planning precision; categorized statements let the integrator know exactly what to recompute once official data arrive.
