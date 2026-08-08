@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "title_zh": "v2.0 可审查证据闸门注册表",
+  "author": "许丙南",
+  "status": "iterative_review_registry",
+  "planned_gate_total": 40,
+  "registered_gate_count": 1,
+  "boundary_note": "The registry turns unknown baselines and design suggestions into explicit future evidence gates. It does not claim official boundary, completed survey, appointed operator, procurement approval or local performance.",
+  "gates": [
+    {
+      "gate_id": "GATE-01",
+      "path": "visual/assets/gates/01-boundary-handoff.json",
+      "domain": "spatial",
+      "title_zh": "官方边界交接与复算",
+      "status": "design_target",
+      "source_ids": [
+        "BOUNDARY-SOURCE",
+        "SITE-PACKAGE"
+      ],
+      "evidence_output": "boundary handoff receipt"
+    },
+    {
+      "_append_marker": "keep-last"
+    }
+  ]
+}

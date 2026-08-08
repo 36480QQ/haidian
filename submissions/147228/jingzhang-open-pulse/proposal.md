@@ -472,6 +472,10 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 
 ## 参考资料
 
+## v2.0 可审查证据闸门注册表
+
+为避免把“有方案”误写成“已验证”，本轮新增 visual/assets/v2-evidence-gate-index.json 与 40 个逐项闸门。每个闸门都绑定来源、输入、操作步骤、通过规则、停止规则、责任角色、非 AI 等价路径和证据输出；当前均为 design_target，不代表临时边界、未知基线或未来运营方已经通过。它们把风、热、污染、雨洪、无障碍、隐私、机器人、版权、维护和扩容从口号变成下一步可回读的工作单。
+
 - brief/public-brief.md
 
 完整的机器可读来源、标准、资料用途、处理资料和指标引用分别登记在 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`data/processed/agent_fact_pack.md` 和 `metrics.json`。[source:OFFICIAL-ANNOUNCEMENT] 与 [source:SOURCE-REGISTRY] 是这条证据链的入口。其中，`sources.json` 新增的六个国际案例均保留官方公开 URL、访问日期、用途和“不构成合作或本地绩效证明”的边界；它们是提交包内的详细来源账本，不冒充仓库 `sources/public-sources.json` 的公共索引条目。
