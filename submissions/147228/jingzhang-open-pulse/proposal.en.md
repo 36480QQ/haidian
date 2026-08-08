@@ -25,7 +25,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Implementation feasibility | Move from ordinary service base to bounded prototype, supervised public window, then scale, repair or retire; eight action packages specify owners, dependencies, acceptance and stop rules. | operations-matrix.json, construction-readiness.json, phasing chapter |
 | Public interest | Residents, older/disabled people, caregivers, night workers, visitors, merchants, developers and maintainers retain ordinary routes; paper, human and account-free services cannot be replaced by AI. | persona-and-inclusion-matrix.json, public-interest-audit.json |
 | Risk and compliance | Provisional boundaries, unknown baselines, design targets and paper methods are not upgraded into official red lines, existing facts or approvals. Missing rights, fire, heritage, privacy, maintenance or takeover proof stops the concept. | sources.json, risk.json, v2-evidence-gate-index.json |
-| Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger. | manifest.json, metrics.json, qa-readiness.json |
+| Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger; v3.2 also exposes an eight-class, non-overlapping provisional land-use partition and its recomputation entry. | manifest.json, metrics.json, geometry/land_use.geojson, qa-readiness.json |
 
 ## v3.2 Three key areas: spatial moves before technology labels
 
