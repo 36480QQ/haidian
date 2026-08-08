@@ -274,6 +274,8 @@ class TestSubmissionsGallery(unittest.TestCase):
             "parseDelimited",
             'sandbox="allow-scripts allow-forms allow-modals allow-popups"',
             "hydratePreviews",
+            "data-line",
+            "--data-width",
             "window.ProposalArtifactViewer",
             "点击后绘制空间图层",
             "点击后读取结构化内容",
@@ -283,6 +285,7 @@ class TestSubmissionsGallery(unittest.TestCase):
             ".artifact-card",
             "grid-template-columns:62px minmax(0,1fr)",
             "width:62px;height:66px",
+            ".preview-data .data-line.accent",
             ".artifact-viewer",
             ".artifact-map-canvas",
             ".artifact-document",
@@ -291,6 +294,7 @@ class TestSubmissionsGallery(unittest.TestCase):
             self.assertIn(required, artifact_styles)
         self.assertNotIn(".artifact-preview{height:105px}", artifact_styles)
         self.assertNotIn(".artifact-preview{height:132px}", artifact_styles)
+        self.assertNotIn("--data-color", artifact_styles)
 
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")
