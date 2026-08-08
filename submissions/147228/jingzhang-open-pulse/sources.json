@@ -340,22 +340,74 @@
       "usage": "Seoul Metropolitan Government public account of the Seoul AI Foundation: policy execution, public services, research, talent development and global collaboration. Used as an institutional-capacity case; it does not establish any partnership or implementation commitment for Jing-Zhang."
     },
     {
-      "id":"LIU-URBAN-VENTILATION-2017","url":"https://doi.org/10.3390/atmos8090164","doi":"10.3390/atmos8090164","source_type":"peer_reviewed_research","accessed_date":"2026-08-08","usage":"Street-canyon CFD case study used to define future checks for pedestrian airflow, air age and pollutant-removal conditions. It is method evidence only: it provides no Jing-Zhang geometry, boundary condition, measurement or performance result."
+      "id": "LIU-URBAN-VENTILATION-2017",
+      "url": "https://doi.org/10.3390/atmos8090164",
+      "doi": "10.3390/atmos8090164",
+      "source_type": "peer_reviewed_research",
+      "accessed_date": "2026-08-08",
+      "usage": "Street-canyon CFD case study used to define future checks for pedestrian airflow, air age and pollutant-removal conditions. It is method evidence only: it provides no Jing-Zhang geometry, boundary condition, measurement or performance result."
     },
     {
-      "id":"MENG-WIND-HEAT-PM25-2022","url":"https://doi.org/10.1177/1420326X221076815","doi":"10.1177/1420326X221076815","source_type":"peer_reviewed_research","accessed_date":"2026-08-08","usage":"Case-specific monitoring and CFD study used to require joint review of prevailing wind, heat and PM2.5 trade-offs. Reported case percentages are not transferred to Jing-Zhang, and the paper is not evidence of local health outcomes."
+      "id": "MENG-WIND-HEAT-PM25-2022",
+      "url": "https://doi.org/10.1177/1420326X221076815",
+      "doi": "10.1177/1420326X221076815",
+      "source_type": "peer_reviewed_research",
+      "accessed_date": "2026-08-08",
+      "usage": "Case-specific monitoring and CFD study used to require joint review of prevailing wind, heat and PM2.5 trade-offs. Reported case percentages are not transferred to Jing-Zhang, and the paper is not evidence of local health outcomes."
     },
     {
-      "id":"NOSEK-STREET-CANYON-2025","url":"https://doi.org/10.1016/j.buildenv.2025.112528","doi":"10.1016/j.buildenv.2025.112528","source_type":"peer_reviewed_research","accessed_date":"2026-08-08","usage":"Research on roof geometry, canyon aspect ratio and pollutant dynamics used only to identify parameters for later professional modelling. It does not prove that deeper canyons ventilate better on this site and supplies no local CFD or measured baseline."
+      "id": "NOSEK-STREET-CANYON-2025",
+      "url": "https://doi.org/10.1016/j.buildenv.2025.112528",
+      "doi": "10.1016/j.buildenv.2025.112528",
+      "source_type": "peer_reviewed_research",
+      "accessed_date": "2026-08-08",
+      "usage": "Research on roof geometry, canyon aspect ratio and pollutant dynamics used only to identify parameters for later professional modelling. It does not prove that deeper canyons ventilate better on this site and supplies no local CFD or measured baseline."
     },
     {
-      "id":"AIJ-CFD-PEDESTRIAN-WIND-2008","url":"https://doi.org/10.1016/j.jweia.2008.02.058","doi":"10.1016/j.jweia.2008.02.058","source_type":"peer_reviewed_guideline","accessed_date":"2026-08-08","usage":"AIJ pedestrian-wind CFD guideline used to require declared computational conditions and cross-comparison with field or benchmark evidence. It is a method boundary only, not a Jing-Zhang result or a transferred comfort threshold."
+      "id": "AIJ-CFD-PEDESTRIAN-WIND-2008",
+      "url": "https://doi.org/10.1016/j.jweia.2008.02.058",
+      "doi": "10.1016/j.jweia.2008.02.058",
+      "source_type": "peer_reviewed_guideline",
+      "accessed_date": "2026-08-08",
+      "usage": "AIJ pedestrian-wind CFD guideline used to require declared computational conditions and cross-comparison with field or benchmark evidence. It is a method boundary only, not a Jing-Zhang result or a transferred comfort threshold."
     },
     {
-      "id":"AIJ-CFD-GUIDEBOOK","url":"https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm","source_type":"official_research_public","accessed_date":"2026-08-08","usage":"Architectural Institute of Japan guidebook page describing pedestrian-wind CFD validation benchmarks and the importance of geometry, inflow conditions and measurement points. Used as a public method route; the submission does not claim to have run an AIJ benchmark."
+      "id": "AIJ-CFD-GUIDEBOOK",
+      "url": "https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm",
+      "source_type": "official_research_public",
+      "accessed_date": "2026-08-08",
+      "usage": "Architectural Institute of Japan guidebook page describing pedestrian-wind CFD validation benchmarks and the importance of geometry, inflow conditions and measurement points. Used as a public method route; the submission does not claim to have run an AIJ benchmark."
     },
     {
-      "id":"ISO-7726-INSTRUMENTS-2025","url":"https://www.iso.org/standard/78238.html?browse=ics","source_type":"official_standard_catalogue","accessed_date":"2026-08-08","usage":"ISO catalogue record for the 2025 thermal-environment instrumentation standard. Used only to require professional review of instrument characteristics and measurement methods; the licensed standard text and any local thermal result are not included."
+      "id": "ISO-7726-INSTRUMENTS-2025",
+      "url": "https://www.iso.org/standard/78238.html?browse=ics",
+      "source_type": "official_standard_catalogue",
+      "accessed_date": "2026-08-08",
+      "usage": "ISO catalogue record for the 2025 thermal-environment instrumentation standard. Used only to require professional review of instrument characteristics and measurement methods; the licensed standard text and any local thermal result are not included."
+    },
+    {
+      "id": "PROJECT-SCOPE-SUMMARY",
+      "path": "data/processed/project_scope_summary.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed navigation table for the three scope levels and their taskbook descriptors; not an official polygon or statutory planning control."
+    },
+    {
+      "id": "AGENT-TASK-REQUIREMENTS",
+      "path": "data/processed/agent_task_requirements.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed navigation table for agent task requirements; the taskbook JSON and official announcement remain the governing evidence."
+    },
+    {
+      "id": "SOURCE-USE-MATRIX",
+      "path": "data/processed/source_use_matrix.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed source-use and boundary navigation table; it does not upgrade provisional or background material into formal evidence."
+    },
+    {
+      "id": "MISSING-DATA-CHECKLIST",
+      "path": "data/processed/missing_data_checklist.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Processed checklist of official boundary, control, ownership, infrastructure and public-service gaps that must be confirmed before implementation."
     }
   ]
 }
