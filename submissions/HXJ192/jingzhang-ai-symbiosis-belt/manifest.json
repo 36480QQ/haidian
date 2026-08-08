@@ -17,8 +17,7 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "42d02df4cb27cb0227dd1030ffb78a570d8990e3e58e5b982155219d9337c7c4"
+      "required": true
     },
     {
       "path": "proposal.md",
@@ -37,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "74ab6acd933f38fc4c0871d41a992e64a24e48b4efb8b4db79808361a18aba8a"
+      "sha256": "8a58b008dd2690bfdd9bd1a05938d78086ad4eab0a8a769b9b027fe539f660ee"
     },
     {
       "path": "assumptions.json",
