@@ -573,6 +573,29 @@
         "CASE-HELSINKI-AI-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-034",
+      "title": "评测异议与结果复核卡",
+      "policy_instrument": "evaluation_contestation_protocol",
+      "enterprise_stage": "controlled_product_testing",
+      "problem": "A supplier or affected group may dispute an evaluation result, but without a fixed challenge route the public team may either ignore a real error or reopen the test without discipline.",
+      "jingzhang_interface": "For S04/S08, publish the evaluation scope, evidence-retention period, challenge window, independent reviewer, correction notice and rule for rerunning only the disputed component.",
+      "operator": "evaluation steward + independent reviewer + affected supplier or community representative",
+      "required_evidence": [
+        "evaluation scope",
+        "challenge window",
+        "retained evidence",
+        "independent review",
+        "correction notice"
+      ],
+      "metric": "public_evaluations_with_time_bounded_challenge_and_correction_route",
+      "stop_gate": "Missing retained evidence, undisclosed rerun scope or an unresolved material challenge keeps the result from procurement use.",
+      "source_ids": [
+        "CASE-DECIDIM-BARCELONA",
+        "CASE-UK-ATRS"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
