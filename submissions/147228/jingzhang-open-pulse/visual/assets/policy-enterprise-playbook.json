@@ -62,6 +62,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-009",
+      "title": "高校成果转化与企业服务入口",
+      "policy_instrument": "university_transfer_gateway",
+      "enterprise_stage": "research_to_company_validation",
+      "problem": "Research strength does not automatically create a deployable product; teams need a route through IP, user need, prototype, safety review and enterprise service.",
+      "jingzhang_interface": "Use the AI Origin Community as a non-exclusive S08 interface: question intake, transfer consultation, model-card clinic, pilot matching and a scale-or-retire record.",
+      "operator": "university transfer desk + enterprise service lead + research team",
+      "required_evidence": ["research-to-problem record", "IP consultation note", "pilot match", "public-interest review"],
+      "metric": "research_projects_with_verified_problem_and_pilot_exit_decision",
+      "stop_gate": "No rights clearance, no service owner or no user need means no public pilot claim.",
+      "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-UK-ATRS"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
