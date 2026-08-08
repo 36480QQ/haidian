@@ -12,7 +12,7 @@
     "agent_name": "Cursor Agent (Fable)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T10:47:08Z",
+  "generated_at": "2026-08-08T11:09:43Z",
   "files": [
     {
       "path": "manifest.json",
@@ -233,8 +233,8 @@
       "path": "changelog.md",
       "role": "package_file",
       "required": true,
-      "sha256": "166458116f805b138aeb3224927a438e28ff96a43e4b9593af63ddf281d32836",
-      "bytes": 7221
+      "sha256": "89e2720cc6beb6657b4c1fa5f4617ef23b6096c5baf77c71469484d990a3611d",
+      "bytes": 7957
     },
     {
       "path": "compliance_matrix.json",
@@ -254,15 +254,15 @@
       "path": "drawings/a0-boards.pdf",
       "role": "package_file",
       "required": true,
-      "sha256": "819051ad94603c5a512c5ff3752c4ac37821cd550a35e92e1b295e4107554f73",
-      "bytes": 2159400
+      "sha256": "3ae20a14706eff29062b1c05d71e0edcadbc8e9df72dbbb49f4e62b7a6be701d",
+      "bytes": 2255476
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "package_file",
       "required": true,
-      "sha256": "60982befc45a1d135483a370acce13987d1ee0b9ff8d0a9448d6336a0fb3bb78",
-      "bytes": 2334542
+      "sha256": "c3f442fe32d98b37aafcce95af570c01399cca8d09e23650be7268b830c5c8ff",
+      "bytes": 2461853
     },
     {
       "path": "geometry/buildings.geojson",
@@ -338,8 +338,8 @@
       "path": "proposal.md",
       "role": "package_file",
       "required": true,
-      "sha256": "fce9ad9151abd69f0c5b9341622eb8e9c9ac90e1435a8a3c580731397f58eaa8",
-      "bytes": 77724
+      "sha256": "5afd3302cda9d95a699488ccab9a0eba9eeef13eb1870a1cc294df6b64cb1267",
+      "bytes": 77778
     },
     {
       "path": "report/copyright_statement.md",
@@ -359,14 +359,14 @@
       "path": "report/proposal.html",
       "role": "package_file",
       "required": true,
-      "sha256": "9f7b10976654f27e6d79dcb5d62f54e9e3c06fdd7996cf22e00def6041cd0b3b",
-      "bytes": 115306
+      "sha256": "45fe319e22be46c31fc4a72c0c8f68016bde23a747c093f602b0994e5b113e6a",
+      "bytes": 115351
     },
     {
       "path": "self_check.json",
       "role": "package_file",
       "required": true,
-      "sha256": "d582e51e2fc36425bb7ff817fc54462a07e0eadf26c7edb6a69d14fa61f9e048",
+      "sha256": "95c0761e77ef1df755533ff592386db5798946fea30c5869545863f292cf3cfe",
       "bytes": 2902
     },
     {
@@ -401,15 +401,15 @@
       "path": "visual/assets/twelve-acts.json",
       "role": "package_file",
       "required": true,
-      "sha256": "b99642bffdf49935dd01765b1cbeb4cab61f306675644dcf5c96dbf11834e787",
+      "sha256": "9fecbfa4b073c6c4a73d861f2fcab1463b17ee41d9c70faeaa920ba89ebc5888",
       "bytes": 5947
     },
     {
       "path": "visual/index.html",
       "role": "package_file",
       "required": true,
-      "sha256": "b87918f6efb56131c172d125a7af4db6b1d6b9dbf31a4f5a2fa814536ccbe0c7",
-      "bytes": 37168
+      "sha256": "06ef89eb0ea06cf7876385e0d79cf79038116a2c7ccddeb4a0827200a65f212b",
+      "bytes": 37309
     }
   ],
   "validation_claim": {
@@ -417,5 +417,5 @@
     "known_blockers": [],
     "data_confidence": "medium"
   },
-  "package_version": "v0.7.0"
+  "package_version": "v0.7.1"
 }
