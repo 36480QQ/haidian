@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audited_upstream_commit": "5a89b7d2a47b2293410d4f88eef1633c5530ebd9",
+  "audited_upstream_commit": "1018f25a99614986ab440313e5119913c29f8b85",
   "audited_at": "2026-08-09",
   "proposal_main_files": 261,
   "method": "Read all checked-out proposal.md front-matter titles and summaries, then search full text for selected exact Chinese terms. This is a collision audit, not a semantic ranking or judgment of peer quality.",
@@ -68,6 +68,11 @@
       "peer_path": "submissions/baobao-byte/jingzhang-civic-ai-loop/proposal.md",
       "overlap": "公开验证、非 AI 基线、人工申诉与退出，以及最差群体证据",
       "difference": "其主系统是面向公共 AI 运营过程的收据与审计闭环；本方案主系统是住房、商户、劳动和参与四类社区留存证据共同放行，并禁止个人搬迁风险评分。"
+    },
+    {
+      "peer_path": "submissions/147228/jingzhang-open-pulse/proposal.md",
+      "overlap": "人先于模型、证据闸门、非 AI 等价服务、群体影响与退出机制",
+      "difference": "其主系统是 AI 场景从提问到退出的公共协议；本方案主系统是住房可负担、商户续存、一线劳动和真实参与四类在地关系能否留下，且不允许用其他维度抵消失败。"
     }
   ],
   "selected_white_space": {
