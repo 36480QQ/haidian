@@ -21,7 +21,6 @@ iteration: "v1.0"
 
 本方案在设计深度和规范响应上，依次对照 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 的程序性要求，在专业技术层面遵循 [standard:MOHURD-URBAN-DESIGN-MEASURES]（城市设计管理办法）关于城市设计编制内容的规定，在控规深度衔接上参照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 的技术要点，用地分类对接 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的国土空间用地用海分类指南，建筑设计深度参照 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 的建筑工程设计文件编制深度规定（注：此标准在正式控规深度层面标注为 data_gap，即相关精确参数待官方下发后确认）。设计前期已完成 [depth:existing_conditions_diagnosis] 级别的现状诊断分析，覆盖用地构成、建筑质量、交通条件、蓝绿资源、历史文脉五个维度，形成可追溯的诊断图与缺口清单。
 
-![场地总体概况与临时边界范围图](assets/figures/site-overview-map.png)
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
 本方案编制期间，组织方提供的场地数据包存在部分数据缺口（包括但不限于精确控制线、地下管线详图、产权边界、文保范围等），上述缺口不影响方案层面的设计推演和内容评分，但所有涉及精确工程参数的结论均须在后续阶段以正式数据复算确认。本方案中所有空间落地建议均为"概念建议"或"参考方案"，可供专业团队深化研究，不得直接作为施工或审批依据。当官方边界和重点区域 polygon 更新后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重新运行复算。边界状态统一为 provisional_constraint, official_boundary=false。指标置信度统一为 medium。
@@ -40,7 +39,6 @@ iteration: "v1.0"
 | 总体设计范围 | 约 11.4 km² [metric:site_area_sqm] | 产业空间、城市更新、交通市政和风貌如何落图 | 用地、建筑、道路、绿地、公共空间和分期图层共同表达 | [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] |
 | 重点区域范围 | 约 368.4 公顷 [metric:key_area_count] | 三处片区如何达到详细设计深度 | 分别提出定位、空间动作、AI场景和实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] |
 
-![三层范围与用地结构图](assets/figures/land-use-map.png)
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
 本方案采用的场地边界 [data:geometry/site_boundary.geojson#SITE-001] 为临时工作边界（provisional_constraint, official_boundary=false），重点区域 [data:geometry/key_areas.geojson#PROV-KEY-001] 同样为指示性范围。所有基于该边界推算的面积指标（[metric:site_area_sqm] 等）均为概念估值（confidence=medium），须在正式控规数据下发后进行复算。三层范围之间的面积关系统计仅用于设计推演，不构成法定规划面积分配。该空间结构为概念建议，可供专业团队深化研究。
@@ -173,7 +171,6 @@ iteration: "v1.0"
 
 本方案在 [source:AGENT-TASKBOOK] 指示的三处重点区域范围内开展详细设计，对应 [data:geometry/key_areas.geojson#PROV-KEY-001]（众智园AI自主创新加速区）、[data:geometry/key_areas.geojson#PROV-KEY-002]（北京AI原点社区）、[data:geometry/key_areas.geojson#PROV-KEY-003]（大钟寺AI产业聚集区）三个空间要素，[metric:key_area_count] 统计为三处。设计深度达到 [depth:three_key_area_detailed_design] 级别，涵盖功能策划、空间结构、公共空间系统、建筑形态指引、慢行组织五个子维度。每处重点区域均设定差异化主题定位，避免同质化竞争，形成互补共生的功能生态。三处重点区域必须在 `geometry/key_areas.geojson` 中出现，当前为 provisional_constraint，正文和自检已说明其不能作为正式评分或审批依据。
 
-![三处重点区域与详细设计任务图](assets/figures/key-areas-map.png)
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
 | 重点区域编号 | 主题定位 | 核心功能 | 空间策略（概念建议） | 场景植入 |
@@ -307,7 +304,6 @@ iteration: "v1.0"
 
 上述场景均为概念建议，可供专业团队深化研究。AI治理建议遵守数据最小化、公开来源、可解释和人工复核原则，城市智能体可辅助识别慢行断点、公共空间热力、设施维护需求，但不能替代规划审批、不能输出未经授权的个人画像。
 
-![AI场景空间分布与验证矩阵图](assets/figures/scenario-matrix.png)
 
 ## 7. 用地、建筑规模与拆改留方案
 
@@ -346,7 +342,6 @@ iteration: "v1.0"
 
 上述道路宽度为概念建议，须以正式控规道路红线为准。具体道路红线宽度、退线距离和断面参数待官方控规确认。
 
-![交通慢行与蓝绿公共空间复合系统图](assets/figures/ecosystem-diagram.png)
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
 **慢行系统详细概念：** 京张遗址公园活力带慢行主轴概念建议宽度为15-30米（根据路段条件弹性调整），其中步行道宽度不小于4米，骑行道宽度不小于3米，两者以绿化带或高差分隔。跨北五环节点概念建议采用立体跨越方式（上跨或下穿），具体方案须经专业工程可行性研究后确定。沿线设置慢行驿站（间距约500-800米），提供休憩、饮水、充电、信息查询等服务。小月河副轴概念建议滨水步道宽度不小于3米，串联沿岸社区入口和公共空间节点。
@@ -599,7 +594,6 @@ agent 提出导视标识、文化符号、国际传播叙事、AI朝圣地标、
 
 本方案在指标体系构建上对应 [depth:metrics_recalculation] 层级，核心指标包括 [metric:site_area_sqm]（场地面积，约 11,412,825 平方米，confidence=medium）、[metric:key_area_count]（重点区域数量，3 处，confidence=medium）、[metric:building_footprint_area_sqm]（建筑footprint面积，约 310,807 平方米，confidence=medium）、[metric:green_ratio]（绿地率，约 0.1234，confidence=medium）、[metric:public_space_ratio]（公共空间占比，约 0.0733，confidence=medium）。空间数据基础涉及 [data:geometry/site_boundary.geojson#SITE-001] 场地边界、[data:geometry/key_areas.geojson#PROV-KEY-001] 重点区域、[data:geometry/buildings.geojson#BLDG-001] 建筑、[data:geometry/green_space.geojson#GREEN-001] 绿地和 [data:geometry/public_space.geojson#PUBLIC-001] 公共空间。所有 known 指标必须能从 GeoJSON 或可信来源复算，unknown 指标必须给出原因和正式提交前置条件。
 
-![核心指标复算与分期实施图](assets/figures/phasing-map.png)
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
 **三类指标分类：** （1）空间复算指标——基于临时边界和现有数据可直接推算的指标，如场地总面积、建筑footprint总面积、绿地率、公共空间占比等，但精度受边界数据限制，须在正式边界下发后复算。所有空间复算指标 confidence=medium。（2）待官方控规指标——涉及容积率（floor_area_ratio，当前 status=unknown）、建筑限高、建筑密度、退线、道路红线等管控参数，本方案不给出具体数值，须以正式控规为准。（3）待运营数据指标——涉及AI场景使用率、公共服务满意度、碳排放削减量、AI创新指数、人才密度、慢行可达性、活动参与度等运营层面指标，须在项目运营后采集验证。
