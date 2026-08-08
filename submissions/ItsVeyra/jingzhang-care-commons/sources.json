@@ -1,7 +1,7 @@
 {
   "registry_updated_date": "2026-06-07",
   "schema_version": "0.1.0",
-  "selection_scope": "Only registered sources used for the proposal basis, mandatory standards, and provisional geometry are included.",
+  "selection_scope": "Repository-authority records support the formal basis; seven separately registered authoritative public case pages are background-only comparative evidence.",
   "sources": [
     {
       "accessed_date": "2026-06-03",
@@ -241,6 +241,223 @@
       ],
       "url": "brief/site-package/geometry/provisional_boundaries.geojson",
       "usable_for_formal": "provisional_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on elder-led community roles and place-based participation"
+      ],
+      "authority_level": "PRIMARY_INSTITUTIONAL",
+      "id": "CASE-IBASHO-OFFICIAL",
+      "license_summary": "Public institutional webpage; facts are quoted with attribution, not reproduced as an asset.",
+      "local_paths": [],
+      "notes_zh": "仅用于机制比较；不同治理、文化和运营条件下的案例不能证明海淀实施成效。",
+      "prohibited_uses": [
+        "Haidian spatial control",
+        "local outcome prediction",
+        "government commitment"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "Ibasho",
+      "review_status": "background_only",
+      "source_id": "CASE-IBASHO-OFFICIAL",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "About Ibasho",
+      "topics": [
+        "elder_agency",
+        "community_operation",
+        "comparative_case"
+      ],
+      "url": "https://ibasho.org/about-ibasho",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on co-locating housing, community, care and public-space functions"
+      ],
+      "authority_level": "OFFICIAL_PUBLIC_AGENCY",
+      "id": "CASE-KAMPUNG-ADMIRALTY-HDB",
+      "license_summary": "Official public-agency webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "官方页面存在但命令行访问受限；仅采用页面所述复合功能机制，不采用未经核验的成效数字。",
+      "prohibited_uses": [
+        "Haidian spatial control",
+        "local development capacity",
+        "local outcome prediction"
+      ],
+      "public_access_status": "public_webpage_access_restricted",
+      "published_date": "n.d.",
+      "publisher": "Housing & Development Board, Singapore",
+      "review_status": "background_only",
+      "source_id": "CASE-KAMPUNG-ADMIRALTY-HDB",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "Kampung Admiralty",
+      "topics": [
+        "mixed_use",
+        "age_friendly",
+        "comparative_case"
+      ],
+      "url": "https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/kampung-admiralty",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on human-supported digital social connection for older residents"
+      ],
+      "authority_level": "OFFICIAL_MUNICIPAL",
+      "id": "CASE-VINCLES-BCN-CITY",
+      "license_summary": "Official municipal webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "仅比较数字联系与线下支持机制，不移植用户规模或效果主张。",
+      "prohibited_uses": [
+        "continuous tracking justification",
+        "local outcome prediction",
+        "Haidian implementation proof"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "Ajuntament de Barcelona",
+      "review_status": "background_only",
+      "source_id": "CASE-VINCLES-BCN-CITY",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "Vincles BCN | Barcelona Digital City",
+      "topics": [
+        "social_connection",
+        "digital_inclusion",
+        "comparative_case"
+      ],
+      "url": "https://ajuntament.barcelona.cat/digital/en/technology-accessible-everyone/fight-against-digital-inequality/fight-against-digital-inequality-4",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on an open civic living room with learning and making functions"
+      ],
+      "authority_level": "PRIMARY_PUBLIC_INSTITUTION",
+      "id": "CASE-OODI-OFFICIAL",
+      "license_summary": "Official institutional webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "仅用于公共客厅和共创空间机制比较。",
+      "prohibited_uses": [
+        "Haidian floor-area control",
+        "local attendance prediction",
+        "implementation commitment"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "Helsinki Central Library Oodi",
+      "review_status": "background_only",
+      "source_id": "CASE-OODI-OFFICIAL",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "What is Oodi?",
+      "topics": [
+        "civic_living_room",
+        "making",
+        "comparative_case"
+      ],
+      "url": "https://oodihelsinki.fi/en/what-is-oodi/",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on peer-led making and side-by-side social participation"
+      ],
+      "authority_level": "PRIMARY_NETWORK",
+      "id": "CASE-MENS-SHEDS-UK",
+      "license_summary": "Official network webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "迁移的是并肩做事和同伴互助机制，本方案须保持性别与年龄包容。",
+      "prohibited_uses": [
+        "gender-exclusive local service design",
+        "local outcome prediction",
+        "spatial control"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "UK Men’s Sheds Association",
+      "review_status": "background_only",
+      "source_id": "CASE-MENS-SHEDS-UK",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "What is a Men’s Shed?",
+      "topics": [
+        "peer_learning",
+        "making",
+        "comparative_case"
+      ],
+      "url": "https://menssheds.org.uk/what-is-a-mens-shed/",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on volunteer repair, skill exchange and reusable event formats"
+      ],
+      "authority_level": "PRIMARY_NETWORK",
+      "id": "CASE-REPAIR-CAFE-NETWORK",
+      "license_summary": "Official network webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "仅迁移可复用活动协议与技能交换机制，不引用未经本地试点验证的环境成效。",
+      "prohibited_uses": [
+        "local waste-reduction claim",
+        "local volunteer supply assumption",
+        "spatial control"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "Repair Café International Foundation",
+      "review_status": "background_only",
+      "source_id": "CASE-REPAIR-CAFE-NETWORK",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "About Repair Café",
+      "topics": [
+        "repair",
+        "skill_exchange",
+        "comparative_case"
+      ],
+      "url": "https://www.repaircafe.org/en/about/",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on age-friendly environments and participatory improvement cycles"
+      ],
+      "authority_level": "INTERGOVERNMENTAL",
+      "id": "CASE-WHO-AGE-FRIENDLY",
+      "license_summary": "WHO public webpage; facts are cited with attribution only.",
+      "local_paths": [],
+      "notes_zh": "WHO 框架用于检查维度和参与方法，不构成认证或本地成效证明。",
+      "prohibited_uses": [
+        "certification claim",
+        "Haidian outcome prediction",
+        "statutory control"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "World Health Organization",
+      "review_status": "background_only",
+      "source_id": "CASE-WHO-AGE-FRIENDLY",
+      "source_kind": "comparative_case",
+      "timeliness_level": "T1",
+      "title": "Creating age-friendly cities and communities",
+      "topics": [
+        "age_friendly",
+        "participation",
+        "comparative_case"
+      ],
+      "url": "https://www.who.int/activities/creating-age-friendly-cities-and-communities",
+      "usable_for_formal": "background_only"
     }
   ]
 }
