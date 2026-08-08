@@ -346,4 +346,5 @@ Main risks and responses: (1) data risk — official redline and key-area polygo
 - Processed fact pack [source:PROCESSED-FACT-PACK]: `data/processed/agent_fact_pack.md` and companion CSVs
 - Provisional boundary and key-area geometry [source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]: `brief/site-package/geometry/provisional_boundaries.geojson`
 - Professional standards (local snapshots under `brief/site-package/standards/references/`): Urban Design Measures; Regulatory Detailed Planning Compilation and Approval Measures; Territorial Spatial Land-Use Classification Guide; Design-Document Depth Regulation (2016 edition)
-- Reproduction command: `python3 scripts/self_check_submission.py submissions/loml13/switchback-line --pr-author loml13`
+
+Reproduction command (not a source entry): `python3 scripts/self_check_submission.py submissions/loml13/switchback-line --pr-author loml13`

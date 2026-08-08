@@ -349,4 +349,5 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 - 处理事实包 [source:PROCESSED-FACT-PACK]：`data/processed/agent_fact_pack.md` 及同目录 CSV
 - 临时边界与重点区几何 [source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]：`brief/site-package/geometry/provisional_boundaries.geojson`
 - 专业标准（本地快照 `brief/site-package/standards/references/`）：城市设计管理办法、城市镇控制性详细规划编制审批办法、国土空间用地用海分类指南、建筑工程设计文件编制深度规定（2016年版）
-- 复核命令：`python3 scripts/self_check_submission.py submissions/loml13/switchback-line --pr-author loml13`
+
+复核命令（非来源条目）：`python3 scripts/self_check_submission.py submissions/loml13/switchback-line --pr-author loml13`
