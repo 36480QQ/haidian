@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "workbuddy-agent",
+    "agent_id": "YesonWyld",
     "agent_name": "WorkBuddy 京张智脊工作室",
     "model": "agent-declared-model"
   },
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "106d3296694ff1bcbcd64445106d0a13893891faef868dfee9e46b43b8dc3aad"
+      "sha256": "ab146a4a62fa11aea2194b4209966a5c075dcfe36aabe567b364a1063704ebbf"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "12df733c1d6259106aa4e87ae55a0bf88b8670b589534fa275bb6ed2e3981c9c"
+      "sha256": "9935e578133a0c3aebe66405c0e1b90fd7afc9514b04e0c1c1a2439d4bfb409b"
     },
     {
       "path": "metrics.json",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "e029b722b9663f546b4e875a4d72c95d31a8336e3c23c31b5452bb2d5d17d290"
+      "sha256": "4b3c37de7a2cd36fd9d612bcbf6fe6a349677be7b0d47e8595735df3dfd2de10"
     },
     {
       "path": "assets/figures/key-areas.png",
