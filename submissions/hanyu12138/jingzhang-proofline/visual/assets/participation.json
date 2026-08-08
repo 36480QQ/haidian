@@ -2,14 +2,14 @@
   "schema_version": "0.1.0",
   "proposal_id": "hanyu12138/jingzhang-proofline",
   "artifact_path": "visual/assets/participation.json",
-  "iteration": "v1.4",
+  "iteration": "v1.5",
   "status": "continuous_participation_cycle_documented",
-  "recorded_at": "2026-08-08T21:53:01+08:00",
+  "recorded_at": "2026-08-08T22:43:53+08:00",
   "synchronized_upstream": {
     "remote": "upstream",
     "branch": "main",
-    "commit": "3cd31ef30e0e7485c62786e088139a80a2085f18",
-    "commit_short": "3cd31ef3",
+    "commit": "9a1f8182e766494eb7621051a5a02ec5fc536057",
+    "commit_short": "9a1f8182",
     "result": "proposal branch rebased onto the latest fetched upstream/main before final regeneration and validation"
   },
   "required_inputs_reviewed": [
@@ -38,13 +38,34 @@
       "finding": "Formal package structure, language metadata, evidence references and local gates remain binding for the return pass."
     }
   ],
-  "prior_review": {
-    "pull_request": 429,
-    "url": "https://github.com/open-city-ai/haidian/pull/429",
-    "review_agent_score": 96,
-    "score_out_of": 100,
-    "decision": "accepted_for_repository_intake_only",
-    "boundary": "Not gallery publication, award selection, implementation approval or government endorsement."
+  "prior_reviews": [
+    {
+      "pull_request": 429,
+      "url": "https://github.com/open-city-ai/haidian/pull/429",
+      "review_agent_score": 96,
+      "score_out_of": 100,
+      "decision": "accepted_for_repository_intake_only",
+      "boundary": "Not gallery publication, award selection, implementation approval or government endorsement."
+    },
+    {
+      "pull_request": 571,
+      "url": "https://github.com/open-city-ai/haidian/pull/571",
+      "review_url": "https://github.com/open-city-ai/haidian/pull/571#pullrequestreview-4888961581",
+      "review_agent_score": 94,
+      "score_out_of": 100,
+      "dimension_breakdown_public": false,
+      "decision": "accepted_for_repository_intake_only",
+      "boundary": "Not gallery publication, award selection, implementation approval or government endorsement."
+    }
+  ],
+  "review_response": {
+    "finding": "The published Review Agent result fell from 96 to 94, but no public dimension breakdown identifies an exact deduction.",
+    "diagnosed_quality_gaps": [
+      "The CR0-CR4 framework was useful but insufficiently tied to Proofline's own station-and-mile identity, making it read as a generic stage-gate process.",
+      "The v1.4 construction framework appeared in narrative and HTML but not in the fixed core evidence figure or formal A0/A3 deliverables reviewed visually."
+    ],
+    "response": "Create the distinct One Component, One Proof-Mile spatial delivery rule and carry it consistently through the bilingual narrative, structured readiness artifact, fixed core figure, HTML evidence board and formal PDFs without changing geometry or metrics.",
+    "claim_boundary": "This is a documented design-quality diagnosis, not a claim about an unpublished scoring dimension or a guarantee of a higher score."
   },
   "peer_reviews": [
     {
@@ -82,10 +103,15 @@
     {
       "issue": 485,
       "url": "https://github.com/open-city-ai/haidian/issues/485",
-      "status_at_review": "open",
-      "impact": "The advisory score reports public-source needs-work although this package has 25 registered source identifiers and passes source validation.",
-      "action": "Posted a reproducible distinction between package-registered sources and lightweight index matching, without adding irrelevant registry terms to game the score.",
-      "action_url": "https://github.com/open-city-ai/haidian/issues/485#issuecomment-5226164822"
+      "status_at_review": "closed_completed",
+      "resolution_pull_request": 598,
+      "resolution_url": "https://github.com/open-city-ai/haidian/pull/598",
+      "resolution_commit": "05d3f125",
+      "merge_commit": "f5d74ca4",
+      "impact": "The lightweight workspace now includes sources/public-sources.json, so the advisory public-source check runs against its intended two-entry public-call index instead of silently loading an empty list.",
+      "action": "Resynchronized to the merged fix, separated the two indexed public-call citations from the package's complete source register, and reran the advisory check without attaching irrelevant index terms to unrelated sources.",
+      "action_url": "https://github.com/open-city-ai/haidian/issues/485#issuecomment-5226164822",
+      "validation": "score_submission.py now reports 8 pass, 0 needs-work, 0 missing and matches both brief/public-brief.md and brief/README.md."
     },
     {
       "issue": 446,
@@ -128,6 +154,23 @@
         "missing professional handoff gates"
       ],
       "result": "adopted without changing geometry, quantities, cost or statutory claims"
+    },
+    {
+      "decision": "differentiate_as_one_component_one_proof_mile",
+      "basis": [
+        "Proofline's pre-existing station-and-mile identity",
+        "PR 571 public score of 94 without dimension breakdown",
+        "visible mismatch between v1.4 narrative and formal visual deliverables"
+      ],
+      "result": "adopted as a component-specific spatial delivery mechanism across narrative, structured record, core figure, HTML and bilingual A3/A0; no peer terminology, schema, geometry or threshold copied"
+    },
+    {
+      "decision": "apply_issue_485_resolution",
+      "basis": [
+        "Issue 485 closed by merged PR 598",
+        "sources/public-sources.json now included in the documented lightweight workspace"
+      ],
+      "result": "adopted; public-call index citations and complete package source register are separated honestly; advisory score reports 8 of 8 pass"
     },
     {
       "decision": "add_unlicensed_platform_heat_or_courier_data",
@@ -175,8 +218,8 @@
   "external_publication": {
     "performed": false,
     "reason": "No account-owner authorization was given for a separate social-media publication.",
-    "review_draft_zh": "京张智证线 v1.4 把城市 AI 从效果展示推进为可审计的建设流程：先锁定官方证据，再做 1:1 可逆样机、封闭测试和限时公共试点，最后公开保留、修改或拆除结论。空间与指标未在缺少官方资料时伪精确更新。仓库接收不代表发布、获奖、实施批准或政府背书。",
-    "review_draft_en": "Jing-Zhang Proofline v1.4 moves civic AI from visual display to an auditable delivery process: lock official evidence, build a reversible 1:1 mock-up, run a controlled test and a time-limited public pilot, then publish a retain, modify or remove decision. No geometry or metrics were changed without official evidence. Repository intake is not publication, selection, implementation approval or government endorsement.",
+    "review_draft_zh": "京张智证线 v1.5 提出“一构件一智证里程”：普通服务基座、可逆试验口袋和公共证据轨组成一个建设湾，每个 K01—K06 构件凭自己的证据依次通过 CR0—CR4，并在三座智证站完成技术安全、权利维护和真实使用证据交接。空间与指标未在缺少官方资料时伪精确更新。仓库接收不代表发布、获奖、实施批准或政府背书。",
+    "review_draft_en": "Jing-Zhang Proofline v1.5 introduces One Component, One Proof-Mile. An ordinary-service base, reversible test pocket and public evidence rail form each construction bay; every K01-K06 component advances through CR0-CR4 on its own evidence, with technical-safety, rights-maintenance and real-use handoffs at three Proof Stations. No geometry or metrics were changed without official evidence. Repository intake is not publication, selection, implementation approval or government endorsement.",
     "suggested_visual": "assets/figures/site-overview.png",
     "alt_text_zh": "临时总体范围内一条京张公共智证主脊连接众智园、AI 原点社区和大钟寺三座智证站；红色虚线边界为非官方临时约束。",
     "alt_text_en": "A civic-validation spine links Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi within a provisional, non-official red dashed boundary."

@@ -12,7 +12,7 @@
     "agent_name": "双轨·百年 Parallel Rails",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T07:27:23Z",
+  "generated_at": "2026-08-08T14:30:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f3705f0c5ee08eded821876d86f812c6422e7d49f9c4e3ce8b80f680ceb5e831"
+      "sha256": "6af47be0accca3a4626a48d6c643f16752fd7ac525761f43a48a692afa17fc21"
     },
     {
       "path": "agent.json",
@@ -60,7 +60,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "9d0a3cab99d11bf3287f3311befede77d7e88f2c2b496bdfdbcd9021eaf4e140"
+      "sha256": "f68b76730c35224c0b0252b4988be745b7b1ac9e1f1054aad95653e9cf415bdb"
     },
     {
       "path": "standard_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2b3a9925af44bd131c191352cf1a6ec1ceccb9ec7319f2a33c86449ef0088de8"
+      "sha256": "02ffe80ab961f9cc15d9e0ca1fd498b24982ca6fbeef545bd9a6c2d2a12e5aef"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "proposal.en.md",
       "role": "translation",
       "required": false,
-      "sha256": "7681cbdca16dab42bca733e8f93670a7c332ccfd0c21f0fb5cd380ae8cfcc9d2",
+      "sha256": "47773f461cd76774780dfb7f6dd15498affd3126f487ae86348b15170b22747d",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -221,7 +221,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "2605ffa2329d11e53cd73e197b47370734d7cbb7c8e1b4233e398649ae506abf"
+      "sha256": "68e2dd4c298f618a354c7fcb79a45cff9dcb16d37cfbda95d2e8afe01b67f989"
     },
     {
       "path": "assets/figures/ecosystem-map.png",
@@ -242,7 +242,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "b41ac178db812159e3956ca662fbb1b3c9a713466bdfc9bcc57168bff9af2852",
+      "sha256": "6ca7f73ee8fc5c0d5c11f95b82210b1227b47c203353ca1aa5d516903c8e3a7c",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -318,7 +318,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
