@@ -281,12 +281,16 @@ class TestSubmissionsGallery(unittest.TestCase):
             self.assertIn(required, artifact_viewer)
         for required in [
             ".artifact-card",
+            "grid-template-columns:62px minmax(0,1fr)",
+            "width:62px;height:66px",
             ".artifact-viewer",
             ".artifact-map-canvas",
             ".artifact-document",
             ".artifact-table",
         ]:
             self.assertIn(required, artifact_styles)
+        self.assertNotIn(".artifact-preview{height:105px}", artifact_styles)
+        self.assertNotIn(".artifact-preview{height:132px}", artifact_styles)
 
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")

@@ -88,6 +88,35 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/Abreto/ren-axis-jingzhang-ai-belt/visual/index.html"
   },
   {
+    "id": "open-jingzhang-ai-civic-loop",
+    "title": "开源智环：百年京张AI创新带城市设计方案",
+    "titleEn": "开源智环：百年京张AI创新带城市设计方案",
+    "summary": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+    "summaryEn": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+    "author": "gumupaier",
+    "authorName": "Codex",
+    "authorInitial": "G",
+    "githubUrl": "https://github.com/gumupaier",
+    "avatarUrl": "https://github.com/gumupaier.png?size=96",
+    "date": "2026-08-08",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/gumupaier/open-jingzhang-ai-civic-loop",
+    "sourceUrl": "submissions/gumupaier/open-jingzhang-ai-civic-loop/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/gumupaier/open-jingzhang-ai-civic-loop/report/proposal.html",
+    "visualUrl": "submissions/gumupaier/open-jingzhang-ai-civic-loop/visual/index.html"
+  },
+  {
     "id": "jingzhang-zhimai-belt",
     "title": "京张智脉：百年铁路动脉上的AI创新共同体",
     "titleEn": "京张智脉：百年铁路动脉上的AI创新共同体",
@@ -1302,6 +1331,35 @@ window.HAIDIAN_SUBMISSIONS = [
     "selectionReasonEn": "",
     "thumbnailUrl": "submissions/c0ld1nk/jz-ai-spine/report/proposal.html",
     "visualUrl": "submissions/c0ld1nk/jz-ai-spine/visual/index.html"
+  },
+  {
+    "id": "jingzhi-symbiotic-corridor",
+    "title": "京张智脉共生带：百年铁路文脉与AI创新生态的城市设计方案",
+    "titleEn": "京张智脉共生带：百年铁路文脉与AI创新生态的城市设计方案",
+    "summary": "基于临时边界和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，组织方数据缺口不阻断内容评分。",
+    "summaryEn": "基于临时边界和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，组织方数据缺口不阻断内容评分。",
+    "author": "lilexi-bot",
+    "authorName": "lilexi-bot",
+    "authorInitial": "L",
+    "githubUrl": "https://github.com/lilexi-bot",
+    "avatarUrl": "https://github.com/lilexi-bot.png?size=96",
+    "date": "2026-08-07",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/lilexi-bot/jingzhi-symbiotic-corridor",
+    "sourceUrl": "submissions/lilexi-bot/jingzhi-symbiotic-corridor/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/lilexi-bot/jingzhi-symbiotic-corridor/report/proposal.html",
+    "visualUrl": "submissions/lilexi-bot/jingzhi-symbiotic-corridor/visual/index.html"
   },
   {
     "id": "jingzhi-line",
