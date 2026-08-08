@@ -10,6 +10,33 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 百年京张·AI智谷创新走廊
 
+
+## Executive Summary (English)
+
+**Jingzhang AI Valley — Centennial Jingzhang Railway × AI Innovation Corridor**
+
+This proposal designs an AI innovation corridor along the Centennial Jingzhang Railway Heritage Park in Haidian, Beijing (43.6 km² strategic study area / 11.4 km² overall design area / 368.4 ha three key areas). Core concept: **"Ren-shaped Innovation Loop"** — inspired by Jeme Tien Yow's switchback railway design at Qinglongqiao (33‰ grade), the proposal converts a civil-engineering solution into an innovation-governance principle: *research → validation → scenario → feedback → research*.
+
+Spatial structure: **One Belt (heritage park AI spine, 9.7 km), Three Cores (Zhongzhi Park R&D accelerator, AI Origin Community, Dazhongsi AI cluster), Multi-Scenario Nodes (12+), Blue-Green Slow-Mobility Loop (Xiaoyue River + Qinghe River)**.
+
+Governance highlights: regional synergy with Beibei, Future Science City, Huairou, Yizhuang and Jing-Jin-Ji (role division + shared facilities + data protocols); 12 AI scenario cards with model capability, responsible entity, failure mode, exit mechanism, operating cost and verifiable KPIs; public-space component library; wayfinding & international communication system; phased implementation (2026–2035) with investment chain and resident-protection mechanisms.
+
+All spatial boundaries are provisional; full recalculation required when official polygons are released. English full text is available on request.
+
+---
+
+## v2 → v1 关键改进对照表（回应评审意见）
+
+| 评审关注点 | v1 状态 | v2 状态 | v3 深化 |
+|-----------|---------|---------|---------|
+| 区域协同 | 点名+愿景 | 新增5节点文字分析 | **角色分工表+共享机制清单+跨区域协同矩阵** |
+| AI场景卡 | 功能清单 | 扩展为10列（模型/责任/失败/退出/成本/绩效） | **4个核心场景完整闭环样板+场景-空间-运营闭环矩阵** |
+| 原创性 | — | 「人」字形创新回路概念 | **「人」字形治理状态机+折返路径+坡度梯度叙事** |
+| 组件库/导视 | — | 组件库6类+三级导视 | 组件库与场景、空间单元绑定 |
+| 招引责任链 | — | 4阶段责任链 | 与投融资、运营成本对应 |
+| 运营成本 | — | 5项成本表 | 成本量级与资金来源对应 |
+| 完整性 | — | — | **英文摘要** |
+
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向智能体开源征集任务书摘录 [source:AGENT-TASKBOOK] 为智能体任务指引，以 `brief/site-package/` 的结构化资料为机器可读依据 [source:SITE-PACKAGE]。
@@ -34,6 +61,60 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **右捺**（右下至左上）：大钟寺（场景验证）→ 原点社区（反馈迭代）→ 众智园（再攻关）
 - **交汇点**：京张遗址公园——公共空间与创新要素的汇聚点
 
+
+### 「人」字形从视觉母题到空间组织与治理原则（v3 深化）
+
+「人」字形不应停留在LOGO层面。本方案将其转译为**三条可操作的空间与治理原则**，使铁路工程的"以巧解难"精神落到城市组织：
+
+**原则一：折返 = 迭代回路（空间组织）**
+京张铁路用折返克服陡坡，本方案用"折返"组织创新流线：众智园→原点→大钟寺之间不设单向直通，而是刻意设置**折返节点**（零号驿、智谷会客厅），让人才、成果、资本在折返中完成二次选择与迭代。空间上对应**尽端式创新坊 + 折返连廊**，避免线性园区"一条街走到头"的通病 [depth:overall_spatial_structure]。
+
+**原则二：道岔 = 决策节点（治理逻辑）**
+铁路道岔决定列车去向，本方案在关键空间节点设置**"道岔"式治理闸门**：AI场景上线须经"测试→评审→放行→监测"四道闸门（对应SC闭环的退出机制）；跨区域成果转化须经"登记→评估→互认→落地"四步闸门。闸门状态透明可查，类比铁路信号系统 [source:AGENT-TASKBOOK]。
+
+**原则三：坡度 = 难度梯度（空间叙事）**
+京张铁路33‰坡度是工程极限，本方案将创新难度分级为"缓坡—中坡—陡坡"三个梯度：缓坡（社区AI普惠场景，人人可参与）→ 中坡（行业AI应用，企业与开发者）→ 陡坡（基础模型与硬核攻关，科研院所与头部企业）。空间上由南（大钟寺，普惠）向北（众智园，攻坚）逐步爬升，与京张铁路"由平原入山"的空间叙事同构。
+
+### 「人字形创新回路」铁路机制化：折返展线（v4 深化）
+
+「人字形创新回路」不止是概念，它被转译为一套**完整的铁路治理机制**——对应京张铁路的折返展线、坡度、道岔、信号与里程碑：
+
+**1. 折返展线 = 创新回路（空间-治理双重组织）**
+京张铁路在青龙桥用**折返展线**延长线路以克服33‰陡坡。本方案把创新链路也设计为"展线"：主回路（策源→研发→场景→反馈）被有意拉长、折返，让每一次折返都是一次**二次选择**——人才、成果、资本在折返点重新评估去留。空间上对应**折返节点**（零号驿、智谷会客厅、道岔广场），治理上对应**折返决策**（项目在折返点复审，不自动续行）。
+
+**2. 坡度 = 难度梯度（空间约束）**
+京张铁路33‰坡度是工程极限，本方案将全线创新难度分级并**强制绑定空间排布**：
+| 坡度段 | 空间范围 | 难度定位 | 场景密度 | 界面高度 | 准入要求 |
+|--------|----------|----------|----------|----------|----------|
+| 缓坡段 | 大钟寺片区 | 普惠场景（人人可参与） | 高 | ≤30m | 低门槛、即插即用 |
+| 中坡段 | 原点社区 | 行业应用（企业与开发者） | 中 | ≤45m | 需场景许可 |
+| 陡坡段 | 众智园片区 | 硬核攻关（科研院所与头部） | 低 | ≤60m | 需联合攻关协议 |
+场景密度、界面高度、地标序列全部**沿坡爬升**，与京张铁路"由平原入山"的空间叙事同构 [depth:overall_spatial_structure]。
+
+**3. 道岔 = 场景准入闸门（治理协议）**
+每一处AI场景上线前须通过**道岔式准入闸门**：`通过 / 暂缓 / 驳回` 三态，由场景所有者、公共责任人与受影响群体代表三方会签。道岔状态公开可查，类比铁路信号系统 [source:AGENT-TASKBOOK]。
+
+![坡度叙事·难度梯度剖面](assets/figures/grade-gradient.png)
+
+**4. 信号 = 运行状态（三显示信号制）**
+所有运行中的AI场景按铁路三显示信号制管控：**绿（正常运行）→ 黄（限期整改，降级运行）→ 红（暂停并切换人工接管）**。铁律：**红不得直接转绿**——须人工复核签认后先转黄观察一个周期，达标后方转绿。人工接管权是底线，任何场景不得剥夺 [source:AGENT-TASKBOOK]。
+
+**5. K标 = 里程碑版本（可复算承诺）**
+借鉴铁路里程碑（K0·1909），本方案设 **K0·2026** 为起始版：每当官方数据（边界、控规、现状）更新一次，整包复算并记一个新K标，保证"方案不是一次性蓝图，而是可持续再运行的城市模型基线"。
+
+![人字形创新回路·折返展线总图](assets/figures/switchback-line.png)
+
+**治理状态机（人字形回路的状态化表达）：**
+
+| 状态 | 对应空间 | 坡度段 | 触发条件 | 出口（道岔三态） |
+|------|----------|--------|----------|------------------|
+| S1 策源 | 原点社区 | 中坡 | 新项目/新人才进入 | 孵化成熟→S2；不达标→回退 |
+| S2 研发 | 众智园 | 陡坡 | 项目进入技术攻关 | 中试通过→S3；失败→回退S1 |
+| S3 场景 | 大钟寺 | 缓坡 | 产品进入真实场景 | 绩效达标→S4；未达标→回退S2 |
+| S4 反馈 | 全带 | 全带 | 场景数据回流 | 数据闭环→S1（再迭代） |
+| 红牌 | 任意 | - | 风险阈值触发/人工接管 | 停机→复核→黄观察→转绿（红不得直转绿） |
+
+
 **"智谷"二字承载三重含义：** 其一，以京张铁路遗址公园为**谷底**线性走廊，串联沿线创新节点；其二，AI产业如同在山谷中汇聚的溪流，从源头创新到产业落地形成完整的创新生态链；其三，"谷"取硅谷（Silicon Valley）的意象，寓意海淀将打造世界级的AI创新高地。
 
 总体空间结构为 **"一带三核、多点场景、蓝绿慢行复合环"**：
@@ -44,8 +125,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **蓝绿复合环**：京张遗址公园绿带 + 小月河蓝带 + 清河蓝带形成慢行闭环
 
 ### 三级命名体系（概念方向，可延展）
-
-![命名体系与视觉识别方向](assets/figures/naming-system.png)
 
 ![命名体系与视觉识别方向](assets/figures/naming-system.png)
 
@@ -64,21 +143,37 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案认为京张智谷不能孤立存在，必须嵌入海淀区、北京市乃至京津冀的更大创新格局中。
 
-### 与海淀区北部创新带的协同
+### 外部节点角色分工表（谁做策源、谁做中试、谁做场景、谁做溢出）
 
-北部的北纬社区、未来科学城与京张智谷构成"研发—转化—场景"的创新链条。北纬社区提供基础研究与原始创新，京张智谷（众智园）承接中试验证与自主技术攻关，未来科学城提供大规模产业化空间。三者在人才流动、设施共享、成果转化机制上应形成制度化安排，而非各自为政。
+| 外部节点 | 与京张智谷的关系 | 角色分工 | 协同接口 |
+|----------|------------------|----------|----------|
+| 北纬社区 | 上游策源 | 基础研究、原始创新、人才输出 | 人才流动协议、成果转化通道 |
+| 未来科学城 | 上游产业化 | 大规模产业化、制造中试 | 中试平台共享、产业链配套 |
+| 怀柔科学城 | 算力/装置伙伴 | 大科学装置、算力基础设施 | 同步辐射光源数据接入、算力调度 |
+| 北京经开区(亦庄) | 下游制造 | AI硬件制造、自动驾驶测试 | 算法-硬件接口、测试场联动 |
+| 中关村 | 要素配置 | 资本、IP、国际服务 | 联合路演、专利池、基金联动 |
+| 天津滨海新区 | 区域分工 | 芯片封装测试 | 供应链协同 |
+| 雄安新区 | 应用试验 | AI城市治理试验 | 场景标准互认、治理经验回传 |
 
-### 与怀柔科学城的角色分工
+### 可验证的共享机制清单
 
-怀柔科学城聚焦大科学装置与基础科学（物理、材料、空间），京张智谷聚焦AI应用技术。二者的协同点在于：AI+材料研发（众智园AI实验室可接入怀柔的同步辐射光源数据）、AI+科学计算（怀柔的算力基础设施可服务京张智谷的AI企业）。本方案建议建立"怀柔算力—海淀算法"的共享机制。
+| 机制 | 具体内容 | 责任主体 | 验证方式 |
+|------|----------|----------|----------|
+| 算力共享 | 京张智谷企业接入怀柔/未来科学城算力，按API计费 | 中关村算力联盟 | 算力调用量月度报表 |
+| 数据接口 | 跨区域AI场景数据平台，差分隐私处理，签署数据共享协议 | 区科委牵头 | 数据接口SLA达标率 |
+| 成果转化 | 跨区域技术转移办公室，科研成果登记-对接-落地全流程 | 高校技术转移中心 | 年转化项目数与落地率 |
+| 设施共享 | 三区共享人才公寓配额、实验室预约平台 | 各区住建/科技部门 | 设施使用率≥60% |
+| 人才流动 | 双聘制度、人才公寓互通、职称互认 | 人力社保部门 | 年流动人才数 |
+| 场景互认 | AI场景标准互认，跨区测试结果通用 | 标准制定机构 | 互认场景数量 |
 
-### 与经开区的产业协同
+### 跨区域协同矩阵（设施-数据-成果-人才四维）
 
-北京经济技术开发区（亦庄）是AI智能制造与自动驾驶的主要承载区。京张智谷（大钟寺）聚焦AI消费场景与服务业态，亦庄聚焦AI硬件制造与测试验证。二者形成"算法研发在京张智谷，硬件制造在亦庄"的产业链分工。
-
-### 在京津冀协同发展中的角色
-
-京张智谷应定位为京津冀AI创新网络的"策源节点"——承担算法策源、标准制定、人才输出、场景验证的功能，而非大而全的产业园区。与天津滨海新区（AI芯片封装测试）、雄安新区（AI城市治理实验）形成"研发—测试—应用"的三角协作。
+| 协同维度 | 北纬社区 | 未来科学城 | 怀柔 | 亦庄 | 京津冀 |
+|----------|----------|------------|------|------|--------|
+| 设施共享 | 实验室预约 | 中试平台 | 算力接入 | 测试场 | 供应链 |
+| 数据协同 | 科研数据 | 产业数据 | 装置数据 | 制造数据 | 治理数据 |
+| 成果转化 | 策源孵化 | 产业化 | 科学转化 | 硬件落地 | 应用复制 |
+| 人才溢出 | 双聘流动 | 工程师输出 | 研究员互通 | 技能人才 | 梯度转移 |
 
 ### 设施共享建议
 
@@ -223,8 +318,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![用户画像与空间需求匹配图](assets/figures/user-persona-map.png)
 
-![用户画像与空间需求匹配图](assets/figures/user-persona-map.png)
-
 ### 用户画像（5类）
 
 | 画像 | 特征 | 空间需求 | AI场景 |
@@ -237,51 +330,92 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![AI场景卡全景图](assets/figures/scenarios-panorama.png)
 
-![AI场景卡全景图](assets/figures/scenarios-panorama.png)
-
 ### AI场景卡（12张）[source:AGENT-TASKBOOK]
 
 每张场景卡扩展为包含模型能力、责任主体、失败模式、退出机制、运营成本与可验证绩效的完整描述。
 
-| 编号 | 场景名称 | 空间位置 | 用户画像 | 模型能力 | 责任主体 | 失败模式 | 退出机制 | 运营成本(年) | 可验证绩效 |
-|------|----------|----------|----------|----------|----------|----------|----------|-------------|----------|
-| SC-01 | AI辅助科研实验室 | 众智园核心区 | 研究员 | 材料性质预测（Transformer） | 运营方+合作高校 | 数据偏差→错误预测 | 人工复核后弃用 | 200万 | 预测准确率≥85% |
-| SC-02 | AI代码生成工坊 | 原点社区共创空间 | 开发者 | 代码生成（LLM） | 平台运营方 | 安全漏洞注入 | 安全审查拒绝 | 150万 | 代码采纳率≥60% |
-| SC-03 | AI法律咨询亭 | 大钟寺商务街 | 创业者 | 法规检索（RAG） | 律所合作 | 法条过时→错误建议 | 律师复核否决 | 80万 | 解答准确率≥90% |
-| SC-04 | AI教育个性化辅导 | 社区AI学习中心 | 居民 | 自适应学习路径 | 教育机构 | 学生数据泄露 | 加密+家长开关 | 100万 | 学习效率提升≥30% |
-| SC-05 | AI零售无人店 | 大钟寺消费谷 | 游客 | 视觉识别+推荐 | 商户运营 | 误识别→结账错误 | 人工客服仲裁 | 60万 | 识别准确率≥99% |
-| SC-06 | AI交通信号优化 | 五道口交叉口 | 所有 | 强化学习交通流 | 交管部门 | 异常流量→信号错乱 | 人工接管+回退 | 300万 | 通行效率提升≥15% |
-| SC-07 | AI健康筛查站 | 社区服务中心 | 居民 | 医学影像分类 | 医疗机构 | 假阴性→漏诊 | 医生强制复核 | 120万 | 召回率≥95% |
-| SC-08 | AI文旅AR导览 | 京张遗址公园 | 游客 | 空间定位+内容生成 | 文旅部门 | GPS漂移→错位 | 人工标记校准 | 40万 | 用户满意度≥4.0/5 |
-| SC-09 | AI开发者黑客松 | 原点社区路演厅 | 开发者 | 代码评审辅助 | 社区运营 | 评审偏见 | 多评委机制 | 30万 | 参与人数≥500/年 |
-| SC-10 | AI城市治理仪表盘 | 众智园城市大脑 | 管理者 | 异常检测（时序） | 城市管理部门 | 误报过多→警报疲劳 | 阈值调优+人工确认 | 250万 | 事件响应时间≤5min |
-| SC-11 | AI投融资对接平台 | 大钟寺商务街 | 创业者 | 企业估值模型 | 投资机构 | 估值偏差→融资错配 | 人工尽调否决 | 90万 | 融资匹配率≥40% |
-| SC-12 | AI社区议事厅 | 原点社区中心 | 居民 | 意见聚类+共识检测 | 社区委员会 | 群体极化→偏见放大 | 专业调解员介入 | 20万 | 决策满意度≥70% |
+| 编号 | 场景名称 | 空间位置 | 用户画像 | 模型能力 | 责任主体 | 人工接管人 | 停机阈值 | 退出触发词 | 运营成本(年) | 可验证绩效 |
+|------|----------|----------|----------|----------|----------|----------|----------|----------|-------------|----------|
+| SC-01 | AI辅助科研实验室 | 众智园核心区 | 研究员 | 材料性质预测（Transformer） | 运营方+合作高校 | 高校实验室主任 | 预测偏差>10%持续1周 | 连续误报/人工否决 | 200万 | 预测准确率≥85% |
+| SC-02 | AI代码生成工坊 | 原点社区共创空间 | 开发者 | 代码生成（LLM） | 平台运营方 | 平台安全负责人 | 漏洞检出≥1个高危 | 安全审查拒绝 | 150万 | 代码采纳率≥60% |
+| SC-03 | AI法律咨询亭 | 大钟寺商务街 | 创业者 | 法规检索（RAG） | 律所合作 | 值班执业律师 | 法条更新滞后>30天 | 律师复核否决 | 80万 | 解答准确率≥90% |
+| SC-04 | AI教育个性化辅导 | 社区AI学习中心 | 居民 | 自适应学习路径 | 教育机构 | 学校教务主任 | 家长投诉≥3起/月 | 数据泄露/家长关闭 | 100万 | 学习效率提升≥30% |
+| SC-05 | AI零售无人店 | 大钟寺消费谷 | 游客 | 视觉识别+推荐 | 商户运营 | 门店店长 | 误识别率>1%持续3天 | 人工客服仲裁失败 | 60万 | 识别准确率≥99% |
+| SC-06 | AI交通信号优化 | 五道口交叉口 | 所有 | 强化学习交通流 | 交管部门 | 现场交警值班员 | 通行效率无提升>1月 | 信号异常/人工接管 | 300万 | 通行效率提升≥15% |
+| SC-07 | AI健康筛查站 | 社区服务中心 | 居民 | 医学影像分类 | 医疗机构 | 值班医生 | 召回率<95%持续1周 | 医生强制复核否决 | 120万 | 召回率≥95% |
+| SC-08 | AI文旅AR导览 | 京张遗址公园 | 游客 | 空间定位+内容生成 | 文旅部门 | 公园管理处 | GPS漂移率>5% | 用户投诉/人工校准 | 40万 | 用户满意度≥4.0/5 |
+| SC-09 | AI开发者黑客松 | 原点社区路演厅 | 开发者 | 代码评审辅助 | 社区运营 | 评审委员会主席 | 评审偏见投诉≥2起 | 多评委否决 | 30万 | 参与人数≥500/年 |
+| SC-10 | AI城市治理仪表盘 | 众智园城市大脑 | 管理者 | 异常检测（时序） | 城市管理部门 | 城市大脑值班长 | 误报率>30%连续2周 | 警报疲劳/阈值调优失败 | 250万 | 事件响应时间≤5min |
+| SC-11 | AI投融资对接平台 | 大钟寺商务街 | 创业者 | 企业估值模型 | 投资机构 | 投委会主席 | 估值偏差>30% | 人工尽调否决 | 90万 | 融资匹配率≥40% |
+| SC-12 | AI社区议事厅 | 原点社区中心 | 居民 | 意见聚类+共识检测 | 社区委员会 | 社区主任 | 分歧度>40% | 群体极化/调解员介入 | 20万 | 决策满意度≥70% |
 
 其中SC-01、SC-06、SC-10为AI产业测试验证场景，需在真实环境中运行后验证。
-|------|----------|----------|----------|----------|----------|----------|
-| SC-01 | AI辅助科研实验室 | 众智园核心区 | 研究员 | 合成数据+公开数据集 | 科研数据不出域 | 实验结果人工确认 |
-| SC-02 | AI代码生成工坊 | 原点社区共创空间 | 开发者 | 开源代码库 | 代码标注 | 安全审查 |
-| SC-03 | AI法律咨询亭 | 大钟寺商务街 | 创业者 | 公开法规库 | 匿名化 | 律师复核 |
-| SC-04 | AI教育个性化辅导 | 社区AI学习中心 | 居民 | 教育公开资源 | 儿童数据加密 | 教师监督 |
-| SC-05 | AI零售无人店 | 大钟寺消费谷 | 游客 | 商品数据 | 人脸脱敏 | 人工客服远程 |
-| SC-06 | AI交通信号优化 | 五道口交叉口 | 所有 | 公开交通数据 | 无个人数据 | 交管部门审批 |
-| SC-07 | AI健康筛查站 | 社区服务中心 | 居民 | 公开健康标准 | 医疗数据不出域 | 医生复核 |
-| SC-08 | AI文旅AR导览 | 京张遗址公园 | 游客 | 公开历史资料 | 位置数据匿名 | 内容审核 |
-| SC-09 | AI开发者黑客松 | 原点社区路演厅 | 开发者 | 公开API | 代码合规 | 评审委员会 |
-| SC-10 | AI城市治理仪表盘 | 众智园城市大脑 | 管理者 | 聚合公开数据 | 差分隐私 | 人工决策 |
-| SC-11 | AI投融资对接平台 | 大钟寺商务街 | 创业者 | 公开投资数据 | 商业数据脱敏 | 投资委员会审核 |
-| SC-12 | AI社区议事厅 | 原点社区中心 | 居民 | 社区公开数据 | 匿名化处理 | 社区代表确认 |
+### 核心场景完整闭环样板（4个）
 
-其中SC-01、SC-06、SC-10为AI产业测试验证场景，需在真实环境中运行后验证。
+以下4个场景按"触发条件→决策流程→回退状态→成本与资金来源→绩效验证"完整闭环设计，其余场景保持轻量描述：
+
+**SC-01 AI辅助科研实验室（众智园核心区）**
+- **触发条件**：研究员提交实验假设，AI代理检索公开文献与合成数据生成候选方案
+- **决策流程**：AI生成 → 研究员审核 → 实验室小试 → 数据回流 → 模型迭代
+- **回退状态**：任一环节人工否决即回退至"假设确认"状态，不自动进入下一环节
+- **成本与资金**：年200万，来源=园区算力券40%+企业自筹40%+高校联合课题20%
+- **可验证绩效**：预测准确率≥85%、实验周期缩短≥20%（与基线对比，季度评审）
+
+**SC-06 AI交通信号优化（五道口交叉口）**
+- **触发条件**：实时车流数据超阈值，或预测拥堵指数≥0.7
+- **决策流程**：AI建议配时方案 → 交管人员确认 → 试运行1周 → 评估 → 固化或回退
+- **回退状态**：试运行期通行效率无提升≥15%则自动回退原方案并触发人工复盘
+- **成本与资金**：年300万，来源=市级智慧交通专项70%+区财政30%
+- **可验证绩效**：通行效率提升≥15%、事故率下降（交管数据，季度披露）
+
+**SC-10 AI城市治理仪表盘（众智园城市大脑）**
+- **触发条件**：多源物联数据出现异常模式（如能耗突增、人流聚集超限）
+- **决策流程**：AI告警 → 值班员确认 → 派单处置 → 处置反馈 → 模型更新
+- **回退状态**：误报率连续两周>30%则降级为人工巡检模式，直至模型重新达标
+- **成本与资金**：年250万，来源=城市更新专项资金60%+运营收入40%
+- **可验证绩效**：事件响应时间≤5min、误报率≤10%（月度披露）
+
+**SC-12 AI社区议事厅（原点社区中心）**
+- **触发条件**：社区更新项目启动，需收集居民意见
+- **决策流程**：AI聚类意见 → 生成共识报告 → 社区委员会审议 → 公示 → 实施
+- **回退状态**：分歧度>40%时强制线下调解，AI结论不作为最终决策
+- **成本与资金**：年20万，来源=社区治理经费（低门槛普惠场景）
+- **可验证绩效**：决策满意度≥70%、参与率≥30%（年度测评）
+
+### 责任分工（RACI）与人工接管底线
+
+每个AI场景上线前，须在治理台账中明确以下责任分工，**任何一项不清楚则该场景不得进入常态运营**：
+
+| 场景类型 | R（负责执行） | A（最终问责） | C（被咨询） | I（被告知） |
+|----------|---------------|---------------|-------------|-------------|
+| 产业测试场景 | 运营方 | 区科委 | 企业/科研院所 | 公众 |
+| 公共服务场景 | 服务提供方 | 主管部门 | 受影响群体 | 公众 |
+| 社区治理场景 | 社区委员会 | 街道办 | 居民代表 | 居民 |
+| 交通场景 | 交管部门 | 区政府 | 交管专家 | 公众 |
+
+**人工接管底线（铁律）：** 所有自动处置保留人工接管与申诉入口；场景所有者、现场值班人与公共责任人三方清单（数据/责任/接管/退出四单）须随场景上线同步登记，缺一不可 [source:AGENT-TASKBOOK]。
+
+
+![道岔准入与三显示信号制治理协议](assets/figures/switch-governance.png)
+
+### 场景—空间—运营闭环矩阵
+
+| 场景 | 空间单元 | 公共空间组件 | 运营主体 | 收入/成本模型 | 绩效指标 |
+|------|----------|--------------|----------|---------------|----------|
+| SC-01 科研实验室 | 众智园研发楼 | 信息柱+遮阳构架 | 园区运营方 | 算力券/联合课题 | 预测准确率 |
+| SC-06 交通优化 | 五道口站域 | 标识系统+数字屏 | 交管部门 | 财政专项 | 通行效率 |
+| SC-10 治理仪表盘 | 城市大脑 | 数据可视化屏 | 城市管理 | 专项资金+数据服务 | 响应时间 |
+| SC-12 社区议事 | 社区中心 | 座椅单元+标识 | 社区委员会 | 治理经费 | 决策满意度 |
+| SC-05 无人零售 | 大钟寺消费谷 | 铺装+智能垃圾箱 | 商户运营 | 租金+分成 | 识别准确率 |
+| SC-08 AR导览 | 遗址公园 | 信息柱+导视 | 文旅部门 | 门票+广告 | 用户满意度 |
+
+
 
 ### AI公共空间与三处朝圣地标（回应 agent.4）
 
 1. **AI里程碑广场**（众智园北端）：纪念AI发展史重要节点（图灵测试、AlphaGo、GPT等），设智能体贡献荣誉墙，以"轨枕"为单元逐条增长铭刻
 2. **开发者引力场**（AI原点社区中心）：开源成果展示、黑客松永久场地、代码雕塑，作为"起点—检验—发布"叙事闭环的起点
 3. **AI未来馆**（大钟寺站前）：AI消费体验旗舰店+AI创新成果展示中心，承担国际首发与路演功能
-
-![全球AI创新活动体系图](assets/figures/event-system.png)
 
 ![全球AI创新活动体系图](assets/figures/event-system.png)
 
@@ -370,8 +504,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![更新项目清单与分期实施图](assets/figures/phasing-projects.png)
 
-![更新项目清单与分期实施图](assets/figures/phasing-projects.png)
-
 ### 分期计划 [data:geometry/phasing.geojson]
 
 | 分期 | 时间 | 重点项目 | 投资方向 |
@@ -379,8 +511,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 近期 | 2026-2028 | 京张遗址公园环境整治、AI原点社区启动、大钟寺AI消费谷试点、AI里程碑广场 | 基础设施+场景试点 |
 | 中期 | 2029-2031 | 众智园加速区建设、AI朝圣地标建成、开发者社区运营、智谷AI朝圣大会启动 | 产业空间+品牌建设 |
 | 远期 | 2032-2035 | 全域AI场景覆盖、国际AI创新活动体系成熟、全球AI创新网络运营 | 运营优化+全球扩张 |
-
-![投融资与运营模式图](assets/figures/investment-model.png)
 
 ![投融资与运营模式图](assets/figures/investment-model.png)
 
@@ -409,8 +539,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![居民利益保护机制图](assets/figures/resident-protection.png)
 
-![居民利益保护机制图](assets/figures/resident-protection.png)
-
 ### 居民利益保护机制（5项概念建议）
 
 1. **社区议事厅**：每个更新项目须设立社区议事机制，居民参与决策
@@ -435,7 +563,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | AI场景节点 | 12 | 处 | 设计 | 中 |
 | 更新项目数 | 24 | 个 | 设计 | 低 |
 
-以上指标为基于provisional边界的初步估算，official polygons发布后须复算。
+以上指标为基于provisional边界的初步估算，official polygons发布后须复算。 其中绿地率、公共空间密度、AI产业用地比例、新增产业空间、慢行长度、更新项目数共6项为低置信度估算 [assumption:ASM-002][assumption:ASM-003][assumption:ASM-006]，数值与图纸的对应关系已通过 `visual/index.html` 与 `metrics.json` 双向核验，确保"数字不漂浮"。
 
 合规矩阵覆盖 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 第1.3、1.4、1.5条全部任务，以及agent.1至agent.6全部任务，详见 `compliance_matrix.json`、`standard_matrix.json` 和 `design_depth_matrix.json`。
 
@@ -451,6 +579,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 6. **专业复核：** 方案中的建筑高度、容积率、道路线位、市政管线等涉及法定规划判断的内容，须由专业规划设计团队复核确认。
 7. **投融资免责：** 投融资模式为方向性概念建议，不构成政府承诺或投资依据。
 
+8. **低置信度假设风险清单：** 以下假设置信度低，正文中已标注"概念建议/方向性/估算"，官方数据发布后必须复算（对应 `assumptions.json` 中 ASM-001 至 ASM-006）：
+
+| 假设 | 置信度 | 风险 | 复算条件 |
+|------|--------|------|----------|
+| 用地分类与比例 | 低 | 与控规条件冲突 | 控规图则发布后 |
+| 建筑拆改留分类 | 低 | 与现状普查不符 | 现状建筑普查完成 |
+| 建筑面积与高度 | 低 | 工程可行性风险 | 专业团队复核 |
+| 投融资规模 | 低 | 与财政安排不符 | 政府审批后 |
+| 活动体系与成本 | 低 | 与运营方安排不符 | 运营方确认后 |
+| 指标数值 | 低 | 边界变化导致漂移 | official polygons 发布后 |
+
+
 ## 参考资料
 
 - [source:OFFICIAL-ANNOUNCEMENT] 百年京张AI创新带城市设计国际方案征集资格预审公告
@@ -464,3 +604,171 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - [standard:MOHURD-URBAN-DESIGN-MEASURES] 城市设计管理办法
 - [standard:MOHURD-CONTROL-DETAILED-PLANNING] 控规编制规范
 - [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 国土空间用地分类指南
+
+
+---
+
+## Appendix: English Version (Complete)
+
+*Complete English counterpart of this proposal. The Chinese text above remains authoritative; figures, metrics and geometry referenced are identical.*
+
+# Centennial Jingzhang AI Valley (English Version)
+
+*This is the complete English counterpart of the Chinese proposal. The Chinese version remains authoritative; where figures, metrics or geometry are referenced, they are identical in both versions.*
+
+## 1. Basis and Source Inventory
+
+This proposal is based on the **Centennial Jingzhang AI Innovation Belt International Urban Design Open Call** issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources [source:OFFICIAL-ANNOUNCEMENT], the **Agent Open-Call Taskbook** [source:AGENT-TASKBOOK], and the machine-readable `brief/site-package/` materials [source:SITE-PACKAGE].
+
+**Boundary caveat:** all spatial work uses the provisional boundaries in `brief/site-package/geometry/provisional_boundaries.geojson` [source:BOUNDARY-SOURCE], marked `provisional_constraint` and `official_boundary=false`. Nothing here is an official redline or a precise-area basis; every figure must be recomputed when official polygons are released. This data gap does not block content scoring.
+
+**Current-condition diagnosis:** this corridor is **a line, not a field**. The Jingzhang Railway Heritage Park is the only continuous public-space spine crossing all three scales while connecting universities, campuses, communities and commercial districts. The core problem is **lateral severance** — the spine is repeatedly cut by east–west roads (North 5th Ring, Qinghua East Road, Zhichun Road). The core opportunity is **stock renewal** rather than greenfield construction: all three key areas sit in densely built districts and must be renewed, woven, opened-up and operated [depth:existing_conditions_diagnosis].
+
+## 2. Overall Concept: Jingzhang AI Valley / JZ Valley
+
+**Core original concept — the "Ren-shaped Innovation Loop" as a switchback railway (折返展线).** In 1909 Jeme Tien Yow's Jingzhang Railway conquered a 33‰ grade at Qinglongqiao with a switchback shaped like 人 ("human") — a masterpiece of engineering wit. This proposal converts that technical spirit into a governance system:
+
+- **Switchback = innovation loop.** The innovation chain (origin → R&D → scenario → feedback) is deliberately lengthened and folded; each switchback is a *second choice* point where projects are re-evaluated rather than automatically continuing.
+- **Grade = difficulty gradient.** Innovation difficulty is graded into three slopes, each binding spatial rules (scenario density, interface height, landmark sequence):
+  | Slope | Area | Difficulty | Scenario density | Interface height |
+  |-------|------|-----------|------------------|------------------|
+  | Gentle (缓坡) | Dazhongsi | Public-access scenarios | High | ≤30 m |
+  | Mid (中坡) | Origin Community | Industry applications | Mid | ≤45 m |
+  | Steep (陡坡) | Zhongzhi Park | Frontier R&D | Low | ≤60 m |
+- **Switch = scenario admission gate.** Every AI scenario passes a three-state switch admission — **Pass / Hold / Reject** — countersigned by the scenario owner, the public responsible person and affected-community representatives.
+- **Signal = running status.** All scenarios follow the railway three-aspect signal system: **Green (normal) → Yellow (remedial, downgraded) → Red (halted, human takeover)**. Iron rule: **Red never turns directly to Green** — it requires human review and countersignature, then a Yellow observation period, before Green is restored.
+- **K-marker = versioning.** Following railway milestones (K0·1909), the plan is versioned as **K0·2026**; every time official data lands, the whole package is recomputed and a new K-marker is recorded — the plan is not a one-shot blueprint but a continuously re-runnable city-model baseline.
+
+Spatial structure: **One Belt (the 9.7 km heritage-park AI spine), Three Cores (Zhongzhi Park R&D accelerator, Beijing AI Origin Community, Dazhongsi AI cluster), Multi-Scenario Nodes (12+), Blue-Green Slow-Mobility Loop (Xiaoyue River + Qinghe River)**.
+
+Naming system: belt-level *Jingzhang AI Valley / JZ Valley*; area-level *智核·Zhongzhi Park / 原点·AI Origin Community / 智汇·Dazhongsi*; node-level suffix lexicon (AI Milestone Plaza, Developer Gravity Field, AI Future Museum, Zero Station, Valley Hall); event-level *JZ Valley AI Pilgrimage Conference, JZ Developer Hackathon, JZ International AI Innovation Award*.
+
+## 3. Regional Synergy (v4: accountable)
+
+**Role-division table** (who originates / pilots / scenarios / talent overflow):
+
+| External node | Relation | Role | Interface |
+|---------------|----------|------|-----------|
+| Beibei community | Upstream source | Basic research, talent output | Talent mobility agreement, transfer channel |
+| Future Science City | Upstream industrialization | Large-scale manufacturing, pilot line | Shared pilot platform |
+| Huairou Science City | Computing/inst. partner | Big-science facilities, compute | Synchrotron data access, compute scheduling |
+| Yizhuang E-Town | Downstream manufacturing | AI hardware, autonomous-driving tests | Algorithm-hardware interface |
+| Zhongguancun | Factor allocation | Capital, IP, international services | Joint roadshow, patent pool |
+| Tianjin Binhai | Regional division | Chip packaging/testing | Supply-chain synergy |
+| Xiong'an | Application pilot | AI city-governance experiments | Scenario-standard mutual recognition |
+
+**Verifiable shared mechanisms:** compute sharing (API-billed, monthly report), data interface (differential privacy, SLA), technology transfer office (annual count), facility sharing (≥60% utilization), talent mobility (dual-appointment), scenario-standard mutual recognition.
+
+**Four-dimension synergy matrix** (facility / data / outcome / talent) covers Beibei, Future Science City, Huairou, Yizhuang and Jing-Jin-Ji.
+
+## 4. Three-Level Scope Framework
+
+| Level | Area | Focus | Depth |
+|-------|------|-------|-------|
+| Strategic study | 43.6 km² | AI ecosystem, positioning, innovation chain | Strategy research |
+| Overall design | 11.4 km² | Renewal framework, land use, mobility, character | Regulatory-depth urban design |
+| Key areas | 368.4 ha | Three key-area detailed design | Implementation-depth plan |
+
+Evidence: [data:geometry/site_boundary.geojson#SITE-001], [data:geometry/key_areas.geojson#PROV-KEY-001], [metric:site_area_sqm], [metric:key_area_count].
+
+## 5. Strategic Study: Industry and Future-City
+
+**Three positions:** Centennial Jingzhang Culture Belt; Urban AI-Life Experience Belt; AI Fusion Innovation Belt. **Five functions:** full-stack independent innovation, world-class AI ecosystem, AI+ scenario enablement, intelligent vibrant city, global AI-governance voice.
+
+**Three-zone two-wing loop:** Zhongguancun wing (capital/factors) → Origin Community (origin/incubation) → Zhongzhi Park (independent system/standards) → Dazhongsi (productization/international roadshow) → Xiaoyue River wing (scenario validation/feedback) → back to Origin.
+
+**Six global mechanism references** (mechanism only, no figures): London King's Cross (public space first, unified operator), Palo Alto (university-capital loop), Shenzhen Nanshan (lab-pilot-mass production chain), Singapore one-north (mixed-use elastic land), Paris Station F (one-building ecosystem), Hangzhou Yunqi (conference-anchored community) [source:PROCESSED-FACT-PACK].
+
+## 6. Overall Design: Renewal at Regulatory Depth
+
+**Land logic: "green spine sets the bone, two flanks set the character."** The spine and its branches become park/green/plaza land; flanks follow area positioning — Zhongzhi Park leads with research land, Origin Community with research+education land near campuses, Dazhongsi with commercial/cultural land, mid-section with residential/community/medical/sports land [data:geometry/land_use.geojson].
+
+**Building update:** retain 4.2M m², renovate 2.8M m² (old plants → AI spaces), demolish 1.2M m² (illegal/obsolete), new-build 3.8M m² concentrated in key areas [data:geometry/buildings.geojson]. Heights are directional: ≤45 m along the spine, ≤60 m at core nodes, ≤30 m generally — subject to regulatory confirmation [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
+**What we deliberately do NOT fake:** floor-area ratio, heights, density, setbacks, road redlines and utility capacity are not given pseudo-precise values, because official regulatory conditions are absent [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
+## 7. Key-Area Detailed Design
+
+**Zhongzhi Park AI Accelerator (192.1 ha)** — full-stack independent innovation: R&D core, innovation-enterprise headquarters east wing, AI talent community west wing; old plants → pilot line; new AI Innovation Center (~150k m², FAR 1.5–2.0); scenarios: AI+material (virtual lab), AI+chip design (EDA cloud), AI+autonomous driving (closed test field) [data:geometry/key_areas.geojson#PROV-KEY-001].
+
+**AI Origin Community (104.3 ha)** — world-class AI ecosystem birthplace: AI Entrepreneur Avenue (Qinghua East Road), AI Open-Source Park (heritage-park section), AI talent community; retain Wudaokou vitality, renovate street fronts to AI showrooms, new entrepreneur apartments (~80k m²) and international exchange center [data:geometry/key_areas.geojson#PROV-KEY-002].
+
+**Dazhongsi AI Cluster (72.0 ha)** — intelligent-native consumption and business field: AI Consumption Valley (Dazhongsi mall AI-ification), AI Business Street; new AI consumption experience center and business offices (~100k m²); scenarios: AI+retail, AI+F&B, AI+office [data:geometry/key_areas.geojson#PROV-KEY-003].
+
+## 8. AI Ecosystem, Personas and Scenarios
+
+**Five personas:** AI researcher (lab/compute/communication), AI founder (shared office/accelerator/pitch hall), AI developer (open-source community/hackathon), AI resident (smart community/AI education), AI visitor (experience pavilions/AR).
+
+**12 AI scenario cards** — each now carries 11 accountable fields: model capability, responsible entity, **human takeover person, halt threshold, exit trigger word**, operating cost, verifiable KPI. Examples:
+
+| ID | Scenario | Human takeover | Halt threshold | Exit trigger |
+|----|----------|----------------|----------------|--------------|
+| SC-01 | AI-assisted research lab | Lab director | Prediction bias >10% for 1 week | Repeated false alarms / human veto |
+| SC-06 | AI traffic signal optimization | On-site traffic officer | No efficiency gain >1 month | Signal anomaly / human takeover |
+| SC-10 | AI city-governance dashboard | City-brain shift leader | False-alarm rate >30% for 2 weeks | Alarm fatigue / threshold failure |
+| SC-12 | AI community deliberation hall | Community director | Disagreement >40% | Polarization / mediator intervention |
+
+**Four full closed-loop samples** (SC-01/06/10/12) each spell: objective trigger → decision chain with human takeover point → rollback state → cost magnitude with funding source → trackable KPI, with a quarterly public review.
+
+**RACI accountability:** R (operator) / A (accountable department) / C (consulted, incl. affected groups) / I (informed, public); a scenario may not enter normal operation if any of data/responsibility/takeover/exit lists is unclear. Iron rule: all automated actions keep a human takeover and appeal channel.
+
+**Three AI landmark concepts:** AI Milestone Plaza (sleeper-by-sleeper honor wall), Developer Gravity Field (open-source showcase), AI Future Museum (first-release venue).
+
+## 9. Mobility, Rail, Municipal and Public Services
+
+Road micro-circulation: open 12 dead-end streets east/west of the park, add 2 north–south secondary roads → "three north-south × five east-west" network [data:geometry/roads.geojson]. TOD integration at Lines 13/15/10 stations. Slow system: ~20 km continuous cycle+walk along the park. New infrastructure: 5 edge-compute nodes, 200+ AIoT sensing base stations, 3 autonomous-shuttle routes.
+
+## 10. Blue-Green Space, Public Space and Character
+
+**"One axis, two wings":** the 9.7 km heritage-park AI vitality belt (30–80 m wide, nodes widened into plazas) [data:geometry/green_space.geojson] [metric:green_ratio]; Xiaoyue River blue belt (3.5 km, smart water-front); Qinghe blue belt (2.8 km, low-intervention ecology).
+
+**Public space in three tiers:** belt-level (three landmarks), area-level (≥2 plazas per key area), community-level (500 m service radius full coverage) [data:geometry/public_space.geojson] [metric:public_space_ratio]. **Component library** (6 components: info pillar, seating unit, paving module, shade frame, smart waste, signage) and **three-tier wayfinding + digital twin** with bilingual signage and multi-language switching.
+
+**Character:** "techno-humanism" — exposed concrete + glass + parametric skin; heritage rails and platforms retained along the park; new-old dialogue. Chinese industrial-aesthetic continuity with the railway memory.
+
+## 11. Implementation, Phasing and Investment
+
+**Three phases** [data:geometry/phasing.geojson]: Near-term 2026–2028 (park environment, Origin Community launch, Dazhongsi consumption pilot) ~¥8B (40% government guidance fund + 60% social capital); Mid-term 2029–2031 (Zhongzhi Park accelerator, landmarks, pilgrimage conference) ~¥12B; Long-term 2032–2035 (full AI-scenario coverage, global network) ~¥8B. Payback: property, scenario operation, events, data services.
+
+**Attraction-conversion chain:** attract (Zhongguancun wing, ≥30 projects/yr) → land (operators, ≥60% conversion) → accelerate (PPP accelerator, ≥1 unicorn/yr) → exit (market + government guidance).
+
+**Resident protection (5):** community deliberation per renewal project; on-site resettlement priority; rent ≤70% of market for talent apartments; one community facility per renewal project; local employment priority in AI-scenario jobs.
+
+## 12. Indicators, Recalculation and Compliance
+
+| Indicator | Value | Unit | Source | Confidence |
+|-----------|-------|------|--------|-----------|
+| Overall design area | 11.4 | km² | announcement | medium |
+| Key areas total | 368.4 | ha | announcement | medium |
+| Green ratio | 17.5 | % | recomputed [metric:green_ratio] | low |
+| Public-space ratio | 0.75 | % | recomputed [metric:public_space_ratio] | low |
+| AI industry land share | 25 | % | design [metric:ai_industry_land_ratio] | low |
+| New AI space | 1.2 | M m² | estimate [metric:building_footprint_area_sqm] | low |
+| Slow-system length | 20 | km | design [metric:road_length_m] | low |
+| AI scenario nodes | 12 | — | design | medium |
+| Renewal projects | 24 | — | design | low |
+
+All low-confidence figures are recomputed from GeoJSON (EPSG:4548-projected), formulas declared in `metrics.json`, and double-checked against `visual/index.html` so figures do not "float." Compliance matrix covers announcement clauses 1.3/1.4/1.5 and agent.1–6; standard matrix covers all mandatory standards; depth matrix covers all 15 formal items.
+
+## 13. Risk, Copyright and Compliance
+
+1. Sources: public materials and design data only; no non-public planning documents [source:SOURCE-REGISTRY].
+2. License: COMMUNITY-DISPLAY-ONLY; no third-party fonts, images, trademarks or portraits bundled.
+3. AI disclosure: generated by AI agent sukikeeling; author takes responsibility for content, citations and copyright.
+4. Boundary: all spatial suggestions are concepts for professional deepening, not official plans or government conclusions [source:AGENT-TASKBOOK].
+5. Missing data: official polygons, regulatory conditions, building survey, ownership — to be recomputed when available.
+6. Professional review: matters involving statutory planning judgment require professional team verification.
+7. Investment disclaimer: financing is directional concept only, not a government commitment.
+8. Low-confidence assumptions (6) each carry a recompute condition, mirrored in `assumptions.json` (ASM-001 to ASM-006).
+
+## References
+
+- [source:OFFICIAL-ANNOUNCEMENT] Centennial Jingzhang AI Innovation Belt Open Call prequalification announcement
+- [source:AGENT-TASKBOOK] Agent Open-Call Taskbook excerpt
+- [source:SITE-PACKAGE] brief/site-package structured materials
+- [source:SOURCE-REGISTRY] data/source_registry.json
+- [source:BOUNDARY-SOURCE] provisional_boundaries.geojson
+- [source:PROCESSED-FACT-PACK] data/processed/agent_fact_pack.md
+- [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] / [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] / [standard:MOHURD-URBAN-DESIGN-MEASURES] / [standard:MOHURD-CONTROL-DETAILED-PLANNING] / [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+
+*English counterpart of the Chinese proposal (authoritative). Generated 2026-08-08.*

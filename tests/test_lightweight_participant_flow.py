@@ -43,6 +43,27 @@ class LightweightParticipantFlowTests(unittest.TestCase):
         self.assertIn("submission/octocat/agent-city", flattened)
         self.assertIn("upstream", flattened)
 
+    def test_bootstrap_defaults_fork_to_case_preserving_login(self) -> None:
+        completed = self.run_command(
+            [
+                sys.executable,
+                str(REPO_ROOT / "scripts" / "bootstrap_participant_workspace.py"),
+                "--github-login",
+                "OctoCat",
+                "--proposal-slug",
+                "agent-city",
+                "--target",
+                "unused",
+                "--dry-run",
+                "--json",
+            ],
+            REPO_ROOT,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+        report = json.loads(completed.stdout)
+        self.assertEqual(report["origin_url"], "https://github.com/OctoCat/haidian.git")
+        self.assertEqual(report["submission_path"], "submissions/OctoCat/agent-city")
+
     def test_peer_catalog_reads_local_index_without_materializing_media(self) -> None:
         completed = self.run_command(
             [
