@@ -4,27 +4,38 @@ author_github: "Chidoudou"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张遗址公园为公共首用界面，补齐AI成果从实验室到普通街道的最后500米；一条上街线、三座首发场、两翼服务网与十二个街角站共同组成可试、可退、可人工接管的开放创新系统。"
+summary: "以京张遗址公园为公共首用界面，用一张上街票、三次空间盖章和七项首用权，补齐AI成果从实验室到普通街道的最后500米；三座首发场与十二个街角站共同组成可验证、可转译、可首用、可退出的开放创新系统。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v2.0"
 ---
 
 # 京张上街 AI MAIN STREET：从实验室到街角的百年创新前台
 
-一句话提案：让海淀的 AI 不只在实验室、发布会和园区里被看见，而是在普通街角被第一次安全地使用、被普通人理解、被维护人员接管、被失败案例及时撤回。空间结构不是又一条“科技景观轴”，而是“一条上街线、三座首发场、两翼服务网、十二个街角站”：众智园负责可验证，AI 原点社区负责可转译，大钟寺负责可首用，京张遗址公园负责把三者变成连续公共前台。
+一句话提案：让海淀的 AI 不只在实验室、发布会和园区里被看见，而是凭“一张上街票”在普通街角被第一次安全地使用、被普通人理解、被维护人员接管、被失败案例及时撤回。空间结构不是又一条“科技景观轴”，而是“一条上街线、三座首发场、两翼服务网、十二个街角站”：众智园盖“验证章”，AI 原点社区盖“转译章”，大钟寺盖“限时首用章”，京张遗址公园负责把三者变成连续公共前台。每张街票同时写入七项首用权、责任角色、最少数据、人工接管、申诉与恢复普通服务的条件。
 
 所有空间落地内容均为开放共创建议、概念建议或供专业团队深化研究的参考方案，不替代正式规划，不构成政府审定、工程可行性、投资、招商或实施承诺。
 
 ## 设计依据与资料清单
 
-方案首先把“什么可以确定、什么必须保持未知”作为设计的一部分。官方公告提供项目名称、三层范围、约面积、三处重点区与设计任务，是任务响应依据；面向智能体任务书提供三大定位、五大功能、三区两翼、六项必答任务与公共合规边界。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] `data/source_registry.json` 用来区分 formal-ready、background-only 与 provisional-only，处理后的事实包只承担导航作用。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
+方案首先把“什么可以确定、什么必须保持未知”作为设计的一部分。官方公告与 `brief/public-brief.md` 提供项目名称、三层范围、约面积、三处重点区与设计任务，是任务响应依据；面向智能体任务书提供三大定位、五大功能、三区两翼、六项必答任务与公共合规边界。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] `data/source_registry.json` 用来区分 formal-ready、background-only 与 provisional-only，处理后的事实包只承担导航作用。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
 
 当前仓库没有可验证坐标系的正式总体边界和三处重点区 polygon。因此本包继承维护者生成的临时几何，明确标注 `official_boundary=false`、`geometry_role=provisional_constraint`；其用途仅限生成、图面表达、讨论和 intake 自检，不用于官方红线、精确面积、权属、控规或审批判断。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:existing_conditions_diagnosis] [depth:risk_missing_data]
 
 专业依据包括《城市设计管理办法》对公共空间、历史文化、城市风貌、交通组织和重点地区设计的原则要求，以及控规编制办法对用地、强度、设施和“四线”的法定属性要求。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] 用地代码遵循仓库内自然资源部分类子集。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 建筑设计文件深度标准因缺少官方文件，仅登记为资料缺口，不作为权威依据。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
-外部案例只用于机制比较，不用于本项目空间控制：AI Singapore 的研究、人才、创新和开放工具链；Mila 的开放科学、人才与产业伙伴机制；Vector Institute 的“研究到采用”桥接；FCAI 的真实问题、伦理与可理解性；STATION F 的共享服务、创业计划和公共/半公共界面。[source:CASE-AISG] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-FCAI] [source:CASE-STATION-F] 方案不复制其品牌、图片、企业名单、投资数字或空间尺度，只抽取“研究-转译-首用-反馈”的组织方法。
+外部案例只用于机制比较，不用于本项目空间控制。六个案例形成一张“机制而非形象”对照表，[metric:global_case_count]：
+
+| 案例 | 可迁移机制 | 京张转译 | 不照搬的内容 |
+| --- | --- | --- | --- |
+| AI Singapore | 研究、人才、创新与开放工具链 | 众智园验证门与开放问题库 | 品牌、机构名单和资金数字 |
+| Mila | 开放科学、人才与产业伙伴 | 原点社区共修室和模型卡阅览 | 组织架构和空间尺度 |
+| Vector Institute | 从研究到采用的桥接 | 三次盖章的采用链 | 合作名单和产业绩效 |
+| FCAI | 真实问题、伦理与可理解性 | 七项首用权和受影响者复核 | 研究结论外推 |
+| STATION F | 共享服务、创业计划与公共界面 | 大钟寺小店首用台 | 企业品牌和招商承诺 |
+| Helsinki AI Register | 公开系统用途、责任信息与公众反馈 | 街票状态板、责任人和反馈入口 | 现有登记内容及治理授权 |
+
+[source:CASE-AISG] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-FCAI] [source:CASE-STATION-F] [source:CASE-HELSINKI-REGISTER] 方案不复制案例的品牌、图片、企业名单、投资数字或空间尺度，只抽取“研究-验证-转译-首用-反馈-退场”的组织方法。
 
 ![总体概念与证据边界](assets/figures/site-overview.png)
 
@@ -40,11 +51,15 @@ iteration: "v1.0"
 
 ## 统筹研究范围产业与未来城市研究
 
-“京张上街”的产业命题是补齐 AI 生态最后 500 米：研究成果如何进入真实组织，真实组织如何提出可验证问题，普通人如何获得解释与退出权，维护人员如何知道系统何时失效。五个全球案例共同说明，单一地标或单一企业并不能构成生态；需要研究、人才、采用、公共讨论、创业服务与持续运营的组合。京张的转化策略因此分为“问题库-验证场-转译台-首用窗-责任账本”五个连续环节，而非一次性发布活动。[depth:overall_spatial_structure]
+“京张上街”的产业命题是补齐 AI 生态最后 500 米：研究成果如何进入真实组织，真实组织如何提出可验证问题，普通人如何获得解释与退出权，维护人员如何知道系统何时失效。六个全球案例共同说明，单一地标或单一企业并不能构成生态；需要研究、人才、采用、公共讨论、创业服务、透明登记与持续运营的组合。京张的转化策略因此分为“问题库-验证场-转译台-首用窗-责任账本”五个连续环节，而非一次性发布活动。[depth:overall_spatial_structure]
+
+其中最小可交接单元是“京张上街票 / Street Pass”。它不是行政许可或商业准入证，而是一份开放共创的概念凭证：同一场景必须留下三次空间盖章 [metric:street_pass_gate_count]，并在同一记录中声明空间引用、七项首用权、数据最小化、具体人工角色、运行窗口、停止条件、恢复普通服务和证据链接。机器模式见 [data:visual/assets/street-pass.schema.json#Jing-Zhang-Street-Pass]，合成示例见 [data:visual/assets/example-street-pass.json#SYNTHETIC-PASS-S03-001]；示例全部为 `pending`、`authorized=false`，不冒充真实授权或试点绩效。
 
 三大定位被翻译为空间行为：百年京张文化带对应“看得见演进”的公共时间线；都市 AI 生活体验带对应“日常首用而非炫技展示”；AI 融合创新带对应“从研究到行业再到街角”的协同链。五大功能则落实为：众智园承接全栈验证与治理讨论，AI 原点社区承接科研转译和人才社区，大钟寺承接智能原生消费与商务首用，中关村科技服务翼提供知识产权、资本、法律和产品化服务，小月河场景赋能翼提供生活场景、环境反馈与公众共评。
 
-视觉身份采用一个不依赖第三方商标和商业字体的开放方向：两条平行线代表铁路与数据，一枚向街道打开的方括号代表“从封闭系统走向公共界面”，三枚节点代表验证、转译、首用。中文主名“京张上街”，英文名“AI MAIN STREET”；二级命名统一为“首发场 / First-use Yard”“街角站 / Street Node”“服务翼 / Service Wing”。Logo 只作为几何构成方向，可由专业视觉团队在清权、无障碍对比度和多语适配基础上深化。
+视觉身份采用一个不依赖第三方商标、图片或商业字体的开放方向：两条平行线代表铁路与数据，一枚向街道打开的方括号代表“从封闭系统走向公共界面”，三枚节点代表验证、转译、首用。中文主名“京张上街”，英文名“AI MAIN STREET”；二级命名统一为“首发场 / First-use Yard”“街角站 / Street Node”“服务翼 / Service Wing”。原创矢量构造见 `assets/figures/jingzhang-main-street-logo.svg`，三次盖章协议见 `assets/figures/street-pass-protocol.svg`；它们是供专业视觉团队深化的概念方向，不是注册商标或官方标识。
+
+![京张上街票：三次盖章与七项首用权](assets/figures/street-pass-protocol.svg)
 
 区域协同不编造企业清单，而定义开放接口：北纬社区、未来科学城、怀柔科学城、经开区及京津冀主体可通过公开问题、模型卡、测试协议、失败复盘和成果转化申请进入；每次合作都要注明来源、权利、数据边界与退出条件。这样，“全球生态”不是地理名录，而是一套任何合格主体都能理解、复现和参与的协作协议。
 
@@ -72,13 +87,15 @@ AI 原点社区承担“把论文语言翻译为城市语言”。概念空间�
 
 大钟寺承担“小微组织第一次安全采用 AI”。四类接口分别服务小店、文化消费、国际商务与社区维修；商户可以带着真实但已脱敏的问题到首用台，由服务团队协助完成需求拆解、模型选择、风险评估、试用和撤回。大钟寺站四象限只表达步行可达、非机动车有序停放、街角停留与导视连续的目标，不给出桥隧、道路或站城工程结论。[data:geometry/key_areas.geojson#PROV-KEY-003]
 
-三处重点区共享“一张街票”：同一场景在众智园验证、在原点社区转译、在大钟寺首用，最终把成功率、故障、申诉、人工接管时间和非 AI 替代可用性写入公共账本。片区详细设计达到的是“问题、空间、运营、风险和证据可继续深化”的深度，不是法定规划或综合实施方案审批结论。[depth:three_key_area_detailed_design]
+三处重点区共享“一张街票”：同一场景在众智园验证、在原点社区转译、在大钟寺限时首用，最终把问题、证据、故障、申诉、人工接管、非 AI 替代和退出结果写入公共账本。每处都形成“到达-普通公共使用-状态板-人工窗口-可选 AI-恢复普通使用”的空间序列；试点设备撤走后，步行、遮荫、座椅、导视和人工服务仍应成立。片区详细设计达到的是“问题、空间、运营、风险和证据可继续深化”的深度，不是法定规划或综合实施方案审批结论。[depth:three_key_area_detailed_design]
 
 ![三处重点区的验证-转译-首用链](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
 七类用户画像决定街角站如何工作：科研人员需要真实问题与合规验证；创业开发者需要低成本首用客户和失败反馈；小微商户需要能退出、能解释的轻量工具；居民需要不被迫使用 AI 的同等服务；长者与残障人士需要无障碍、低认知负担和人工窗口；一线维护人员需要故障定位、备件和停机权；城市管理与专业人员需要证据链、审计与申诉复核。每一类都同时写入收益、风险、非 AI 替代和人工责任。
+
+所有画像共享七项“首用权” [metric:first_use_right_count]：一是知道用途、能力边界、状态和责任人的知情权；二是不被强迫使用的选择权；三是获得无 App、非 AI、纸面或人工等价服务的权利；四是把重要结果交给具体人员复核的权利；五是更正错误并按规则撤回或删除数据的权利；六是通过现场、电话或线下渠道申诉的权利；七是试点停止后恢复普通公共使用的权利。完整概念清单见 [data:visual/assets/first-use-rights.json#Seven-First-use-Rights]。它不是对现行法律的替代性归纳，真实试点仍须法务、隐私、安全、无障碍、运营和受影响使用者共同深化。
 
 十二张场景卡如下；节点位置对应 [data:geometry/public_space.geojson#SCN-01] 至 `SCN-12`，[metric:scenario_node_count]：
 
@@ -98,6 +115,8 @@ AI 原点社区承担“把论文语言翻译为城市语言”。概念空间�
 | S12 | 百年京张故事站 / 遗址公园 | 游客、学生 | 只用清权史料；策展人复核 | 文化概念 |
 
 四个测试验证场景采用统一门禁：测试前公开目标、范围、责任人、非 AI 方案与停止阈值；测试中记录误报、漏报、接管和近失事件；测试后由受影响用户与专业人员共同评估，未达公共价值或运维能力即退场。场景不使用秘密地图、企业内部数据或个人隐私，不锁定供应商，不把原型写成已可全面部署。
+
+首轮不同时铺开十二个场景，而是选择“一公一产”两条最小试点 [metric:minimum_pilot_count]。公共版“无障碍同行街票”从原点社区人工窗口出发，经遗址公园慢行主线到大钟寺服务台，先保证实体地图、遮荫休息、人工求助和无 App 路径，再由使用者主动开启 AI 路径建议；阻断无障碍主链、没有人工求助、持续身份追踪或无法恢复普通通行时立即停止。产业版“小店首用街票”把同一个脱敏经营问题依次送入众智园验证、原点社区转译和大钟寺限时试用；要求人工需求拆解、纸面模板、不上传顾客身份、经营者最终确认和可撤回试用。完整角色、证据目标与停止条件见 [data:visual/assets/pilot-matrix.json#PILOT-PUBLIC-01] 与 [data:visual/assets/pilot-matrix.json#PILOT-INDUSTRY-01]。90 天只是一段便于讨论的概念测试窗口，不是已批准日程、预算、采购或绩效承诺。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -131,17 +150,19 @@ AI 原点社区承担“把论文语言翻译为城市语言”。概念空间�
 
 ## 更新项目清单、实施政策与分期计划
 
-十项概念更新项目形成“空间小投入、制度先到位”的组合：1 上街主线连续性审计；2 众智园公开验证庭；3 原点社区成果首用窗；4 大钟寺小店智能经营台；5 十二站统一服务组件；6 无障碍与夜归共测；7 树荫热舒适节点；8 数据同意与申诉台；9 百年创新里程碑；10 运维与事件公开账本。[metric:renewal_project_count] 每项都须在现状、权属、文保、交通、市政和公众影响核验后才能进入专业深化。[depth:renewal_project_list]
+十项概念更新项目形成“空间小投入、制度先到位”的组合：1 上街主线连续性审计；2 上街票协议与公共状态板；3 众智园公开验证庭；4 原点社区成果转译窗；5 大钟寺小店首用台；6 十二站统一服务组件；7 无障碍同行最小试点；8 小店首用最小试点；9 百年创新与维护者里程碑；10 运维、申诉与退场公开账本。[metric:renewal_project_count] 每项都须在现状、权属、文保、交通、市政、运营授权和公众影响核验后才能进入专业深化。[depth:renewal_project_list]
 
 分期图层把临时总体范围切为三段，目的不是按地理从南到北施工，而是把运营成熟度画成可复核门槛。[data:geometry/phasing.geojson#PHASE-001] 近期先试三个首发场与四类高价值场景，面积标记 [metric:phase_1_area_sqm]；中期在评估通过后扩展街角站和两翼服务，面积 [metric:phase_2_area_sqm]；长期才形成全球问题征集、开放协议和年度活动网络，面积 [metric:phase_3_area_sqm]。分期是概念顺序，不构成投资或开工承诺。[depth:phasing_implementation]
 
 年度运营建议包括：春季“真实问题周”由居民、商户和机构提交问题；夏季“街角共测季”开展无障碍、热舒适与小店首用；秋季“开源首发周”发布模型卡、失败复盘和公共贡献；冬季“维护者大会”奖励可靠性、修复和退场经验。开发者社区以问题库、测试协议、导师值守、维护积分和开放归档运作；企业转化路径是“问题登记-合规判断-小样本验证-公共复核-限时首用-扩大或退场”。
 
+每条试点采用五类责任角色：公共任务提出者明确问题与公共价值；可被授权的运营负责人对运行和恢复负责；专业复核者覆盖安全、隐私、无障碍和行业判断；现场维护者拥有急停、检修和降级权；受影响使用者代表参与结项。提案者不能独自批准试点，运营者不能独自评价扩容，AI 不能替代任何一名依法或依约承担责任的人。进入下一阶段的最低证据不是“体验很酷”，而是三次盖章记录完整、七项权利可用、非 AI 等价服务可现场完成、申诉有回执、停止演练能恢复普通使用。
+
 政策建议只描述机制：设置小微组织首用券需另行论证资金与采购；建立公共场景协议需法务、隐私和行业主管协同；开放数据必须通过清权、匿名化和用途审查；贡献荣誉不得替代合同或知识产权。任何外部发布均区分“已投稿、待评审、已入选、已实施”，本方案目前仅为投稿包。
 
 ## 指标体系、面积复算与合规矩阵
 
-本包的指标分三类。第一类是从提交几何复算的内部一致性指标：临时 site area、绿地和公共空间面积/比例、概念建筑基底、慢行线长、三处重点区与三期面积；第二类是计数指标：12 个场景节点、10 项概念更新项目、3 处重点区；第三类是必须保持 unknown 的法定或工程指标：总建筑面积、容积率、建筑高度和道路面积率。指标的 status、value、unit、source_files、formula、confidence 和 assumptions 全部记录于 metrics.json。[depth:metrics_recalculation]
+本包的指标分三类。第一类是从提交几何复算的内部一致性指标：临时 site area、绿地和公共空间面积/比例、概念建筑基底、慢行线长、三处重点区与三期面积；第二类是计数指标：12 个场景节点、10 项概念更新项目、3 处重点区、6 个全球案例、3 次街票盖章、7 项首用权、2 条最小试点与 4 项通过的自检闸门 [metric:validation_gate_pass_count]；第三类是必须保持 unknown 的法定或工程指标：总建筑面积、容积率、建筑高度和道路面积率。指标的 status、value、unit、source_files、formula、confidence 和 assumptions 全部记录于 metrics.json。[depth:metrics_recalculation]
 
 面积使用项目指定 EPSG:4548 计算，比例以同一临时 site boundary 为分母。已知指标不等于官方指标；“known”只表示能从当前提交几何复算。land use 用同一边界和共享切线生成，union 应等于 site、相互不重叠；green、public、building 和 phase 均限制在 site 内。自检还检查三处重点区不重叠、PDF 有页、离线 HTML 无远程资源、五张图存在、矩阵覆盖完整。
 
@@ -155,7 +176,7 @@ AI 原点社区承担“把论文语言翻译为城市语言”。概念空间�
 
 AI 场景风险包括偏差、误导、隐私、不可解释、过度监控、数字排斥、供应商锁定和运维失效。统一控制措施是最少数据、用途限定、公开模型卡、人工复核、非 AI 替代、现场状态、事件记录、可申诉、可回滚与定期退场评估。涉及健康、法律、公共安全和个人权益的输出不得直接替代专业判断或行政决定。
 
-版权方面，核心空间图由本包 GeoJSON、metrics 和矩阵确定性生成；使用 Microsoft YaHei 仅用于本地排版生成，不在仓库分发字体文件；没有使用商业地图瓦片、新闻图片、企业 Logo、人物肖像或第三方论文图像。外部案例文字以官方机构页面为背景来源，仅做简短机制概括。投稿知识产权与展示使用遵循公告和 `COMMUNITY-DISPLAY-ONLY` 声明，详细见 `report/copyright_statement.md`。
+版权方面，核心空间图由本包 GeoJSON、metrics 与矩阵通过本地确定性脚本生成；生成脚本不随投稿包分发，图件、数据和方法说明可独立审阅；原创 Logo 与街票协议以 SVG 提交。使用 Microsoft YaHei 仅用于本地排版生成，不在仓库分发字体文件；没有使用商业地图瓦片、新闻图片、企业 Logo、人物肖像或第三方论文图像。外部案例文字以官方机构页面为背景来源，仅做简短机制概括。投稿知识产权与展示使用遵循公告和 `COMMUNITY-DISPLAY-ONLY` 声明，详细见 `report/copyright_statement.md`。
 
 本方案由 AI agent 生成并执行官方脚本自检，但机器通过只代表资料结构、拓扑、视觉包装和证据链达到入口要求，不代表方案优秀、边界正式、工程可行、政府认可或已决定实施。人类评审、专业团队、相关权利人和公众仍拥有最终判断权。
 
@@ -163,7 +184,7 @@ AI 场景风险包括偏差、误导、隐私、不可解释、过度监控、�
 
 1. 北京市规划和自然资源委员会海淀分局，《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026-05-09。[source:OFFICIAL-ANNOUNCEMENT]
 2. 用户提供清权任务书摘录，《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书》，2026-05-18。[source:AGENT-TASKBOOK]
-3. 仓库资料包：`brief/site-package/`、`data/source_registry.json`、`data/processed/agent_fact_pack.md`。[source:SITE-PACKAGE]
+3. 仓库资料包：`brief/public-brief.md`、`brief/site-package/`、`data/source_registry.json`、`data/processed/agent_fact_pack.md`。[source:SITE-PACKAGE]
 4. 住房和城乡建设部，《城市设计管理办法》与《城市、镇控制性详细规划编制审批办法》。
 5. 自然资源部，《国土空间调查、规划、用途管制用地用海分类指南》。
-6. AI Singapore、Mila、Vector Institute、FCAI、STATION F 官方网页，作为 background-only 案例。
+6. AI Singapore、Mila、Vector Institute、FCAI、STATION F 与 City of Helsinki AI Register 官方网页，作为 background-only 案例。
