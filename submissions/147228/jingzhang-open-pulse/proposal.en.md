@@ -44,7 +44,20 @@ The research-area strategy is a public-facing innovation chain: university and c
 
 The eight mechanisms are **land, space, industry, capital, talent, compute, data and scenario**. Each mechanism has an inbound need, an outbound return and an accountable future operator in `visual/assets/regional-ecosystem.json`. No partnership, funding, land allocation, or government commitment is asserted. The regional return loop is: originate → engineer → book → test → publish evidence → scale or retire.
 
-To avoid turning “international cases” into unsourced city stories, `visual/assets/case-mechanism-matrix.json` compares six transferable patterns rather than claiming project facts: station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method. Each row says what to borrow, what not to copy, the Jing-Zhang test interface and which evidence must be sourced before a formal case citation is added.
+The case comparison now uses six officially sourced public examples as mechanism references, not as local performance claims. The official pages are [source:CASE-HELSINKI-AI-REGISTER], [source:CASE-AMSTERDAM-ALGORITHM-REGISTER], [source:CASE-SINGAPORE-AI-VERIFY], [source:CASE-DECIDIM-BARCELONA], [source:CASE-UK-ATRS] and [source:CASE-SEOUL-AI-FOUNDATION].
+
+| Official example | Verified mechanism | Jing-Zhang interface | Boundary | Source |
+| --- | --- | --- | --- | --- |
+| Helsinki AI Register | Public inventory and feedback route for city AI systems | Status board with purpose, data boundary, accountable lead, state and complaint route | Does not replace safety, accessibility, procurement or consent review | [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | Plain-language public explanation of municipal algorithm use | Preflight record linked to review, stop and redress paths | Not Chinese legal compliance; protected details require review | [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | Standardised AI testing, open-source collaboration and assurance sandbox | Booked human-led assurance window with model card, test note and rollback | Not certification, procurement approval or permission to test residents | [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | Traceable digital and face-to-face participation infrastructure | Contribution wall plus paper, walk-in and multilingual routes; publish what changed | Digital participation cannot replace access for people without accounts or devices | [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | Standardised public record of why and how algorithmic tools are used | Compact record for purpose, owner, data, human review, alternatives, limits and incidents | Not a Beijing statutory requirement; local legal review remains necessary | [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | Institutional capacity linking research, public-service application, talent and global exchange | Named interface among research, talent, public service and exchange | No partnership, funding or city mandate is implied | [source:CASE-SEOUL-AI-FOUNDATION] |
+
+The source IDs, access dates and use boundaries are recorded in `sources.json`. This is a mechanism comparison, not proof that Jing-Zhang has adopted or partnered with any of these organisations. The original six design patterns remain in `visual/assets/case-mechanism-matrix.json` as the local test layer.
+
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment.
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.png)
 
