@@ -619,6 +619,29 @@
         "CASE-DECIDIM-BARCELONA"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-036",
+      "title": "本地维护与备件可得性卡",
+      "policy_instrument": "local_maintenance_and_spares_gate",
+      "enterprise_stage": "physical_or_public_pilot",
+      "problem": "A public-facing device or robot may work in a demonstration but fail because service staff, spare parts and safe shutdown procedures are not locally available.",
+      "jingzhang_interface": "Before S02/S03 deployment, record maintenance owner, inspection frequency, spare-part lead time, safe storage, accessible route impact, shutdown drill and return-to-normal responsibility.",
+      "operator": "site operations lead + supplier maintenance owner + accessibility reviewer",
+      "required_evidence": [
+        "maintenance schedule",
+        "spares note",
+        "safe-storage plan",
+        "shutdown drill",
+        "return-to-normal record"
+      ],
+      "metric": "physical_pilots_with_local_maintenance_and_spares_evidence",
+      "stop_gate": "No local maintainer, inaccessible service route or overdue inspection closes the physical test window.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
