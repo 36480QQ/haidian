@@ -550,6 +550,29 @@
         "CASE-UK-ATRS"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-033",
+      "title": "退出托管与供应商替换卡",
+      "policy_instrument": "exit_escrow_and_supplier_transition",
+      "enterprise_stage": "service_reliability_before_scale",
+      "problem": "A public service can be technically portable yet still fail when a supplier exits because configuration, credentials, runbooks and trained operators are unavailable.",
+      "jingzhang_interface": "Before S08/S09 scale-up, define a bounded transition package: configuration export, data handover, runbook, contact list, training record, manual continuation and a tabletop supplier-exit drill.",
+      "operator": "service continuity owner + procurement lead + incumbent and replacement suppliers",
+      "required_evidence": [
+        "transition package",
+        "runbook",
+        "operator training",
+        "manual continuation plan",
+        "exit tabletop record"
+      ],
+      "metric": "scaled_services_with_verified_supplier_exit_and_manual_continuity",
+      "stop_gate": "Missing handover material, no trained successor or failed exit drill blocks renewal or expansion.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
