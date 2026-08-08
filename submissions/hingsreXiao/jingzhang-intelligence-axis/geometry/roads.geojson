@@ -1,0 +1,486 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "RD-NS-001",
+      "properties": {
+        "id": "RD-NS-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-1",
+        "road_class": "secondary",
+        "width_m": 20,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34164999999999,
+            39.939
+          ],
+          [
+            116.34174749999998,
+            23.989649999999997
+          ],
+          [
+            116.34164999999999,
+            39.982749999999996
+          ],
+          [
+            116.34155249999999,
+            55.975849999999994
+          ],
+          [
+            116.34164999999999,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-002",
+      "properties": {
+        "id": "RD-NS-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-2",
+        "road_class": "secondary",
+        "width_m": 30,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3436,
+            39.939
+          ],
+          [
+            116.34369749999999,
+            23.989649999999997
+          ],
+          [
+            116.3436,
+            39.982749999999996
+          ],
+          [
+            116.3435025,
+            55.975849999999994
+          ],
+          [
+            116.3436,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-003",
+      "properties": {
+        "id": "RD-NS-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-3",
+        "road_class": "secondary",
+        "width_m": 20,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34555,
+            39.939
+          ],
+          [
+            116.3456475,
+            23.989649999999997
+          ],
+          [
+            116.34555,
+            39.982749999999996
+          ],
+          [
+            116.34545250000001,
+            55.975849999999994
+          ],
+          [
+            116.34555,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-004",
+      "properties": {
+        "id": "RD-NS-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-4",
+        "road_class": "secondary",
+        "width_m": 20,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3475,
+            39.939
+          ],
+          [
+            116.34759749999999,
+            23.989649999999997
+          ],
+          [
+            116.3475,
+            39.982749999999996
+          ],
+          [
+            116.3474025,
+            55.975849999999994
+          ],
+          [
+            116.3475,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-005",
+      "properties": {
+        "id": "RD-NS-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-5",
+        "road_class": "secondary",
+        "width_m": 20,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34944999999999,
+            39.939
+          ],
+          [
+            116.34954749999999,
+            23.989649999999997
+          ],
+          [
+            116.34944999999999,
+            39.982749999999996
+          ],
+          [
+            116.3493525,
+            55.975849999999994
+          ],
+          [
+            116.34944999999999,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-006",
+      "properties": {
+        "id": "RD-NS-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-6",
+        "road_class": "secondary",
+        "width_m": 30,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3514,
+            39.939
+          ],
+          [
+            116.3514975,
+            23.989649999999997
+          ],
+          [
+            116.3514,
+            39.982749999999996
+          ],
+          [
+            116.3513025,
+            55.975849999999994
+          ],
+          [
+            116.3514,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-NS-007",
+      "properties": {
+        "id": "RD-NS-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "南北向道路-NS-7",
+        "road_class": "secondary",
+        "width_m": 20,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35335,
+            39.939
+          ],
+          [
+            116.3534475,
+            23.989649999999997
+          ],
+          [
+            116.35335,
+            39.982749999999996
+          ],
+          [
+            116.35325250000001,
+            55.975849999999994
+          ],
+          [
+            116.35335,
+            40.0265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-EW-008",
+      "properties": {
+        "id": "RD-EW-008",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西向道路-EW-1",
+        "road_class": "secondary",
+        "width_m": 25,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3397,
+            39.953583333333334
+          ],
+          [
+            69.8085,
+            39.95402083333333
+          ],
+          [
+            116.3475,
+            39.953583333333334
+          ],
+          [
+            162.88649999999998,
+            39.95314583333334
+          ],
+          [
+            116.3553,
+            39.953583333333334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-EW-009",
+      "properties": {
+        "id": "RD-EW-009",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西向道路-EW-2",
+        "road_class": "secondary",
+        "width_m": 25,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3397,
+            39.96816666666667
+          ],
+          [
+            69.8085,
+            39.968604166666665
+          ],
+          [
+            116.3475,
+            39.96816666666667
+          ],
+          [
+            162.88649999999998,
+            39.96772916666667
+          ],
+          [
+            116.3553,
+            39.96816666666667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-EW-010",
+      "properties": {
+        "id": "RD-EW-010",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西向道路-EW-3",
+        "road_class": "arterial",
+        "width_m": 40,
+        "road_class_code": "primary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3397,
+            39.982749999999996
+          ],
+          [
+            69.8085,
+            39.98318749999999
+          ],
+          [
+            116.3475,
+            39.982749999999996
+          ],
+          [
+            162.88649999999998,
+            39.9823125
+          ],
+          [
+            116.3553,
+            39.982749999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-EW-011",
+      "properties": {
+        "id": "RD-EW-011",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西向道路-EW-4",
+        "road_class": "secondary",
+        "width_m": 25,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3397,
+            39.99733333333333
+          ],
+          [
+            69.8085,
+            39.99777083333333
+          ],
+          [
+            116.3475,
+            39.99733333333333
+          ],
+          [
+            162.88649999999998,
+            39.99689583333333
+          ],
+          [
+            116.3553,
+            39.99733333333333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RD-EW-012",
+      "properties": {
+        "id": "RD-EW-012",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "东西向道路-EW-5",
+        "road_class": "secondary",
+        "width_m": 25,
+        "road_class_code": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3397,
+            40.011916666666664
+          ],
+          [
+            69.8085,
+            40.01235416666666
+          ],
+          [
+            116.3475,
+            40.011916666666664
+          ],
+          [
+            162.88649999999998,
+            40.01147916666667
+          ],
+          [
+            116.3553,
+            40.011916666666664
+          ]
+        ]
+      }
+    }
+  ]
+}
