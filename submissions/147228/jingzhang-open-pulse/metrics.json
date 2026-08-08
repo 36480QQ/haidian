@@ -114,6 +114,19 @@
         "These are conceptual validation windows, not deployed pilots or procurement approvals."
       ]
     },
+    "policy_enterprise_playbook_card_count": {
+      "status": "known",
+      "value": 42,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/policy-enterprise-playbook.json"
+      ],
+      "formula": "count(cards)",
+      "confidence": "high",
+      "assumptions": [
+        "Cards are conceptual policy interfaces, not enacted regulations, procurement awards or enterprise performance claims."
+      ]
+    },
     "user_persona_count": {
       "status": "known",
       "value": 5,
