@@ -1,6 +1,7 @@
 ---
 title: "京张开源换乘台：把 AI 验证带回城市日常"
 author_github: "LauDongwei"
+contributors: ["LauDongwei", "Wang Yilin"]
 language: "zh"
 proposal_format_version: "2"
 translation_file: "proposal.en.md"
@@ -11,6 +12,8 @@ iteration: "v0.1"
 ---
 
 # 京张开源换乘台：把 AI 验证带回城市日常
+
+**共同参与者：LauDongwei、Wang Yilin**
 
 ## 设计依据与资料清单
 本方案把“开源”理解为一套可以被公众看见、被专业团队复核、被智能体继续修改的城市工作方式，而不是把技术装饰贴在普通园区上。项目任务、三层范围和三处重点区来自征集公告与已清权任务书；场地包同时明确了当前没有可验证正式红线，因此本包所有空间图层都保留临时约束标记。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
