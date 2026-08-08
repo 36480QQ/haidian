@@ -42,7 +42,7 @@
   },
   "total_floor_area_sqm": {
    "status": "known",
-   "value": 3690505.8,
+   "value": 4212008.3,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -55,7 +55,7 @@
   },
   "floor_area_ratio": {
    "status": "known",
-   "value": 0.3234,
+   "value": 0.3691,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -69,7 +69,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.0304,
+   "value": 0.0457,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -83,7 +83,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 346817.2,
+   "value": 521003.0,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -134,7 +134,7 @@
   },
   "building_count": {
    "status": "known",
-   "value": 96,
+   "value": 140,
    "unit": "count",
    "source_files": [
     "geometry/buildings.geojson"
@@ -206,23 +206,23 @@
     "code": "0802",
     "name": "科研用地",
     "area_ha": 53.4,
-    "coverage_pct": 2.8,
-    "buildings": 9
+    "coverage_pct": 12.9,
+    "buildings": 21
    },
    {
     "id": "LU-002",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 84.5,
-    "coverage_pct": 3.7,
-    "buildings": 11
+    "coverage_pct": 8.1,
+    "buildings": 21
    },
    {
     "id": "LU-003",
     "code": "0803",
     "name": "文化用地",
     "area_ha": 63.8,
-    "coverage_pct": 3.9,
+    "coverage_pct": 4.7,
     "buildings": 3
    },
    {
@@ -238,8 +238,8 @@
     "code": "0701",
     "name": "居住用地",
     "area_ha": 76.6,
-    "coverage_pct": 2.8,
-    "buildings": 18
+    "coverage_pct": 3.1,
+    "buildings": 19
    },
    {
     "id": "LU-006",
@@ -247,7 +247,7 @@
     "name": "居住用地",
     "area_ha": 65.7,
     "coverage_pct": 3.7,
-    "buildings": 18
+    "buildings": 19
    },
    {
     "id": "LU-007",
@@ -286,16 +286,16 @@
     "code": "0802",
     "name": "科研用地",
     "area_ha": 79.0,
-    "coverage_pct": 4.0,
-    "buildings": 11
+    "coverage_pct": 8.8,
+    "buildings": 21
    },
    {
     "id": "LU-012",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 90.1,
-    "coverage_pct": 3.5,
-    "buildings": 11
+    "coverage_pct": 7.7,
+    "buildings": 21
    }
   ]
  }
