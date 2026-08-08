@@ -62,6 +62,8 @@ Six global references contribute mechanisms, not copied form or performance clai
 | Kendall Square K2C2 [source:CASE-KENDALL] | Land use, transport, urban design and action in one study | Nine geometry layers, metrics and depth matrix generated from one model | Zoning code and community review procedure |
 | Knowledge Quarter London [source:CASE-KNOWLEDGE-QUARTER] | Consortium knowledge exchange with public access | Public Handover Table and Global Handover Week as common ground | Voluntary institutional alliance and existing cultural density |
 
+![AI innovation ecosystem map: eight shared stacks and the three-areas-two-wings loop](assets/figures/ecosystem-map.en.png)
+
 Eight shared stacks replace an invented company list: land, space, industry, finance navigation, talent, compute, data and scenarios. Each stack has an interface, access conditions and a responsible operator. Residents should see not just an AI output but who owns the duty, how the system stops and where an appeal goes.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
