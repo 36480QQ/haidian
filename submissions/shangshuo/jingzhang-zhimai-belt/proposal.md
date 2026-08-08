@@ -378,8 +378,26 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 
 ## 参考资料
 
-本方案的全部设计依据、数据来源和合规标准已在 sources.json 中完整登记（共19条，按 authority_level 分为 approved_formal、provisional_only 和 background_reference 三级）。关键技术数据可以从 submitted GeoJSON 图层直接复算（见 metrics.json 和 spatial_review 结果），所有指标复算均在 EPSG:4548 投影下完成。
+本方案全部设计依据和合规标准已在 sources.json 中完整登记（共19条，按 authority_level 三级分类）。所有面积指标均从 submitted GeoJSON 在 EPSG:4548 投影下复算，结果记录于 metrics.json。
 
-下述来源在正文的合规对照章节中有对应的 [source:] 标签引用——官方公告 [source:OFFICIAL-ANNOUNCEMENT]、智能体任务书 [source:AGENT-TASKBOOK]、site-package [source:SITE-PACKAGE]、临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]、海淀城市更新指引 [source:SRC-HAIDIAN-URBAN-RENEWAL-GUIDE-2025]、北京并联审批方案 [source:SRC-BEIJING-URBAN-RENEWAL-PARALLEL-2024]；法律法规类 [source:SRC-PIPL-2021] [source:SRC-NETWORK-DATA-REG-2025]；无障碍标准 [source:SRC-GB50763-2012] [source:SRC-GB55019-2021] [source:SRC-GB-T45158-2024] [source:SRC-MOHURD-ACCESSIBILITY-NOTICE-2025]；产业背景 [source:SRC-KW-THREE-AREAS-WINGS]；案例参考 [source:SRC-CASE-ZIJINGANG-AI-DEV] [source:SRC-CASE-XUHUI-AI-ECOSYSTEM] [source:SRC-CASE-PUNGGOL-DIGITAL-DISTRICT]。[data:geometry/site_boundary.geojson#SITE-0001] 为总体范围的空间基准。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm] [metric:key_area_count] 为可复算核心指标。[depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data] 为15项设计深度约束。完整索引见 compliance_matrix.json、standard_matrix.json 和 design_depth_matrix.json。
+**官方公告与仓库资料**：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]。
+
+**地方政策与法规**：[source:SRC-HAIDIAN-URBAN-RENEWAL-GUIDE-2025]、[source:SRC-BEIJING-URBAN-RENEWAL-PARALLEL-2024]、[source:SRC-PIPL-2021]、[source:SRC-NETWORK-DATA-REG-2025]。
+
+**无障碍与适老化标准**：[source:SRC-GB50763-2012]、[source:SRC-GB55019-2021]、[source:SRC-GB-T45158-2024]、[source:SRC-MOHURD-ACCESSIBILITY-NOTICE-2025]。
+
+**产业政策与全球案例**：[source:SRC-KW-THREE-AREAS-WINGS]、[source:SRC-CASE-ZIJINGANG-AI-DEV]、[source:SRC-CASE-XUHUI-AI-ECOSYSTEM]、[source:SRC-CASE-PUNGGOL-DIGITAL-DISTRICT]。
+
+**空间数据基准**：[data:geometry/site_boundary.geojson#SITE-0001]。
+
+**核心指标**：[metric:site_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:building_footprint_area_sqm]、[metric:key_area_count]。
+
+**设计深度约束**：[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]（前5项）。
+
+另有 [depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]（中部5项）。
+
+以及 [depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]（后5项，共15项）。
+
+完整交叉索引见 compliance_matrix.json、standard_matrix.json、design_depth_matrix.json。
 
 详见附录「技术指标与合规证据」中的合规标准引用表和sources.json中的完整来源登记。关键引用包括：以上全部来源的完整登记见 sources.json（共19条，含14条 approved_formal、2条 provisional_only、3条 background_reference），各来源的权威等级、使用范围和可复用许可已在 sources.json 中逐条注明。。完整列表见sources.json，所有引用均已在正文和相应合规章节中使用对应的[source:]和[depth:]标签进行交叉引用。
