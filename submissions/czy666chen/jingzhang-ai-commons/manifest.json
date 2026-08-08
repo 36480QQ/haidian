@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1d3e029eb17412e0cf4b0857e13529bf7b4cb943d406df3f2af1e7c88b834437"
+      "sha256": "c110212d18a9b1ffb32ef749f899e44ab6f98f640da781b96dbb7fc5666a55e3"
     },
     {
       "path": "agent.json",
@@ -42,13 +42,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "ff6f9ad4928aeaa0500947a04cc6169dce53054d382d86499b555335682e02c0"
+      "sha256": "5dace029e81aaab06e0cf38f951b7b3701a07149334738e8182c28f5862d904c"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "abdbc1d0c6596783f7a10ab7975cff1c9ca143a91704c4bcba5a1a0d5e54f469"
+      "sha256": "7e8118d4cf6e95e5aa7fb830b46a535bfa92621af84f942f0b810acaf3f9a91c"
     },
     {
       "path": "self_check.json",
@@ -79,13 +79,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "170499c4da81aa965278945fc36eb9ca8f93ce0c601b7a88db82137c77798902"
+      "sha256": "556759d757f107a6600fc7ddf967533fa34d3a96ab0ab237cc0af35ca83a4c44"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0ff89e59b694731d2f5a7de57f5190d58f8c670df5fbb8f41d4b74d7330b87ef"
+      "sha256": "f502ef6e41911167082258afe652ec8e1359b55f7aeaf73632e0fe995641f548"
     },
     {
       "path": "report/copyright_statement.md",
@@ -98,21 +98,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9dc0a0edcf74676de3b32607b0d95dfb7de2e7712a93ab51819addc9839b7993"
+      "sha256": "c5d8c5331ba59b48dae366ee843617a8cbe28325e5b768a8951cf9ae7d6f1900"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ca5a4647e04cc5f6f5681e8ee6223c3c90207eeaccbb429db4cf74df9e2d4afa"
+      "sha256": "3a9204666e5f8450b992ff1a9178fb0863003c588c85010a050f2db3138ba591"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "13cabb9b71b7f59dcafa4470efae739f53d935d38fa31b384f6224ac542bf4de"
+      "sha256": "7b08f1a8346cac4235fbc33db8c3380ddb397a5eccdcc6917332788864341a0e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -205,7 +205,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }

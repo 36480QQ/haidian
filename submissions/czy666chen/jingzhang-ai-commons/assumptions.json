@@ -24,6 +24,18 @@
       "status": "pending_professional_confirmation",
       "statement": "No parcel ownership, building survey or approved height/FAR controls are available.",
       "impact": "Building and renewal moves remain method statements rather than parcel-level decisions."
+    },
+    {
+      "id": "A-UNSCANNED-005",
+      "status": "conceptual",
+      "statement": "The Unscanned Line and AI Pause Station are public-space design principles, not a claim that legally required public-safety systems can be removed.",
+      "impact": "Detailed design must separate statutory public-safety duties from commercial sensing, identity recognition, behavioural scoring and optional experience systems."
+    },
+    {
+      "id": "A-RESOURCE-006",
+      "status": "pending_baseline",
+      "statement": "No measured electricity, water, carbon, network-resilience or non-AI usage baseline is available for the proposed AI service nodes.",
+      "impact": "Resource and continuity thresholds must be set after metering and service observation; Beijing data-centre PUE policy cannot be directly applied to small edge devices."
     }
   ]
 }
