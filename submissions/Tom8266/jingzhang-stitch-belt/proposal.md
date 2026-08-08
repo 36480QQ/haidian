@@ -142,7 +142,7 @@ iteration: "v1.0"
 
 ### AI 场景卡（12 张，含 3 张产业测试验证场景）
 
-每张场景卡均映射到空间图层与运营机制 [data:geometry/public_space.geojson#PUB-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [metric:public_space_ratio]：
+每张场景卡均映射到空间图层与运营机制 [data:geometry/public_space.geojson#PUB-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001]，并以公共空间比例指标校核 [metric:public_space_ratio]：
 
 | # | 场景卡 | 空间载体 | 服务对象 | 人工复核机制 | 运营主体建议 |
 | --- | --- | --- | --- | --- | --- |

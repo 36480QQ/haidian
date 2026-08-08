@@ -142,7 +142,7 @@ All three key areas are expressed with provisional polygons ([data:geometry/key_
 
 ### AI Scenario Cards (12 cards, including 3 industrial test-validation scenarios)
 
-Each scenario card maps to spatial layers and operating mechanisms [data:geometry/public_space.geojson#PUB-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [metric:public_space_ratio]:
+Each scenario card maps to spatial layers and operating mechanisms [data:geometry/public_space.geojson#PUB-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001], and is checked against the public-space ratio metric [metric:public_space_ratio]:
 
 | # | Scenario Card | Spatial Carrier | Service Target | Human Review Mechanism | Suggested Operator |
 | --- | --- | --- | --- | --- | --- |
