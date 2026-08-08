@@ -1,5 +1,5 @@
 # Narrative Summary
 
-证据脊梁（Jingzhang Evidence Spine）以可复算证据组织百年京张AI创新带：中央蓝绿文化脊梁串联众智园、AI原点社区与大钟寺，形成一脊三核、两翼多点的概念结构。
+证据脊梁 v2（Jingzhang Evidence Spine）把百年京张AI创新带组织为 VERIFY · LIVE · CONVERT · GOVERN 的可审计公共证据链。
 
-Package authority order remains GeoJSON -> metrics -> matrices -> proposal -> figures/PDF/HTML. Official polygon arrival triggers full recalculation.
+Authority order: GeoJSON -> metrics -> matrices -> proposal -> figures/PDF/HTML.
