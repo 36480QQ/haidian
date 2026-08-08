@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A first-principles concept proposal built on 'the gauge is the standard': the Jing-Zhang Railway made China's first autonomous standard choice (1435mm gauge), and the AI Innovation Belt makes the second—defining compute, data, open-source and governance standards for the intelligent era. Spatial translation: one spine (Jing-Zhang heritage park corridor) as roadbed, two wings as parallel rails, three stations as nodes; with topologically complete land-use partition, EPSG:4548 recalculated metrics, 12 scenario cards, 6 personas, 5 landmarks and a Gauge Day operation system."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.1.2"
+iteration: "v0.1.3"
 ---
 
 # Parallel Rails: From Iron Rail to Intelligence Rail The Parallel Rails
@@ -29,6 +29,20 @@ The scheme adopts the open-call taskbook as its co-creation charter [standard:PR
 Three levels each play their role, tightening progressively [depth:three_level_scope_framework]: the **Coordinated Research Area (approx. 43.6 km²)** answers "where the belt goes"—AI industrial ecosystem, three-areas-two-wings synergy loop, gradient division with Future Science City / Huairou Science City / Beijing E-Town, and the international communication framing of the Parallel Rails naming system. The **Overall Design Area (approx. 11.4 km²)** answers "how the belt is organized"—the one-spine-two-rails-three-stations spatial structure, a topologically complete partition of 19 land-use units, the renewal framework, and transport/blue-green systems. The **Key Areas (announced total approx. 368.4 ha; provisional recalculation 369.3 ha)** answers "how nodes land"—detailed design at regulatory-implementation depth for the Zhongzhi, Origin and Dazhong stations.
 
 The submitted boundary is a provisional rough replacement [data:geometry/site_boundary.geojson#SITE-001], inferred from the announcement's textual extents and the approx. 11.4 km² area constraint, recalculated at 11,412,825 m² in EPSG:4548 [metric:site_area_sqm], deviating 0.1% from the announced value. The [metric:key_area_count] key areas total approx. 3.69 million m² [metric:key_area_total_sqm], all provisional [data:geometry/key_areas.geojson#PROV-KEY-001]. Three hard limits run through the package: not an official redline, not an approval basis, not a basis for precise area recalculation; once official polygons are published, the land-use partition, area metrics and five drawings must be fully regenerated through the same script chain, with the recalculation path fixed in the `metrics.json` formula fields. The organizer's data gap does not block content scoring, but all precision-sensitive conclusions are downgraded to "directional design" wording. The near-term phase (approx. [metric:phase1_area_sqm] m²) starts with the three stations, aligning with the September landing rhythm detailed in Chapter 10.
+
+### Real-Site Anchor Verification (OpenStreetMap public data)
+
+To anchor the scheme to the real site, this package verified key nodes along the belt using OpenStreetMap public data (ODbL) retrieved via Nominatim geocoding with manual review [source:DATA-SRC-OSM-ANCHORS-20260808] (for narrative anchoring and spatial orientation only; coordinates are not official redlines, precise measurements or area basis):
+
+| Real node | Approx. OSM coordinate | Spatial relation in the scheme |
+|-----------|------------------------|-------------------------------|
+| Jing-Zhang Railway Heritage Park | 39.983, 116.334 | Real carrier of the spine concept, around Wudaokou/Xueyuan Road |
+| Beijing North Station | 39.945, 116.346 | Southern gateway connection of the overall design area |
+| Dazhongsi Station | 39.965, 116.339 | Station-city node of Dazhong Station (Dazhongsi AI Industry Cluster) |
+| Qinghuayuan Station (former site) | 39.981, 116.334 | Heritage anchor west of Origin Station; Gauge Museum siting reference |
+| Wudaokou | 39.987, 116.331 | Real location of Origin Station's innovation-consumption district |
+
+Conclusion: the three stations (Zhongzhi/Origin/Dazhong) and the spine narrative all find corresponding nodes on the real city map, and the provisional boundary's spatial orientation is consistent with the real urban fabric. This verification only strengthens narrative credibility; coordinates are not used for area, distance or redline judgements, and official geometry, once published, remains authoritative with the same recalculation path.
 
 ## Coordinated Research Area: Industry and Future City Research
 
