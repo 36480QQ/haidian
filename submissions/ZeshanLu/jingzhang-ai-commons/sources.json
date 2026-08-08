@@ -42,6 +42,44 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "SRC-HAIDIAN-DISTRICT-PLAN-2017-2035",
+      "title": "海淀分区规划（国土空间规划）（2017年—2035年）",
+      "publisher": "北京市规划和自然资源委员会",
+      "source_kind": "official_open_data",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/ghcg/fqgh/202002/P020200213595742434523.pdf",
+      "published_date": null,
+      "accessed_date": "2026-08-08",
+      "file_type": "pdf",
+      "authority_level": "A0",
+      "timeliness_level": "T2",
+      "public_access_status": "public_url",
+      "license_summary": "Official public planning PDF; retained by URL and SHA-256 for citation and evidentiary use.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "source_type": "official_public",
+      "sha256": "225BC4E7590E3DB78A5DEF9D2F800FF04A8E2A2E4DAFD93A9DEA969682D568BC",
+      "usage": "Directional upper-level evidence only for innovation space, green corridors, public services, and transport context.",
+      "allowed_uses": [
+        "upper-level direction",
+        "innovation-space evidence",
+        "green-corridor evidence",
+        "public-service evidence",
+        "transport evidence"
+      ],
+      "prohibited_uses": [
+        "competition's exact boundary",
+        "parcel control",
+        "project-area metric"
+      ],
+      "topics": [
+        "upper_level_direction",
+        "innovation_space",
+        "green_corridor",
+        "public_service",
+        "transport"
+      ]
     }
   ]
 }
