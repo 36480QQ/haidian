@@ -3,6 +3,7 @@
 ## v1.3 - 2026-08-09
 
 - Opted into the repository's bilingual contract v1 after verifying all ten localized display pairs and manifest hashes.
+- Simplified the human References index so structured GeoJSON evidence stays in the machine audit layer without duplicate citation noise.
 - Reframed the proposal after an originality audit as **JZ 1:1 Prototype Mesh / Model to Matter**.
 - Differentiated the three key areas as MAKE, TRANSLATE, and USE.
 - Added the 100-year public ground, 30-year public frame, 3-year service room, and 90-day removable-kit lifecycle.

@@ -170,4 +170,3 @@ History, oral accounts, images, logos, typefaces, people, institutions, and mode
 - [source:SOURCE-REGISTRY] `data/source_registry.json`: source usability, licence, and uncertainty registry.
 - [source:PROCESSED-FACT-PACK] `data/processed/agent_fact_pack.md`: task and missing-data navigation, not a new authority.
 - [source:BOUNDARY-SOURCE] `brief/site-package/geometry/provisional_boundaries.geojson`: provisional geometry, not an official redline.
-- [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001], [data:geometry/roads.geojson#ROAD-001], [data:geometry/green_space.geojson#GREEN-001], [data:geometry/public_space.geojson#PUBLIC-001], [data:geometry/constraints.geojson#NODE-007], and [data:geometry/phasing.geojson#PHASE-001]: submitted design layers and recomputation sources.

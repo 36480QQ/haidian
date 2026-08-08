@@ -174,6 +174,3 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 - [source:SOURCE-REGISTRY] `data/source_registry.json`：来源可用性、许可和待核边界。
 - [source:PROCESSED-FACT-PACK] `data/processed/agent_fact_pack.md`：任务和缺资料导航，不是新权威来源。
 - [source:BOUNDARY-SOURCE] `brief/site-package/geometry/provisional_boundaries.geojson`：临时几何，非官方红线。
-- [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 与 [data:geometry/roads.geojson#ROAD-001]：用地、建筑和交通空间建议。
-- [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001] 与 [data:geometry/constraints.geojson#NODE-007]：公共框架和场景节点建议。
-- [data:geometry/phasing.geojson#PHASE-001]：分期工作包建议。
