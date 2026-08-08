@@ -4,7 +4,7 @@ author_github: "clawsphere-io"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "面向百年京张AI创新带开源征集的 formal 城市设计方案包，覆盖三层范围、三处重点区域、AI创新生态、场景、文化叙事与长期运营，全部空间结论以 provisional 边界标注并待官方数据复算。"
+summary: "面向百年京张AI创新带开源征集的 formal 城市设计方案包，覆盖三层范围、三处重点区域，并实际交付 agent.1-agent.6 的品牌系统、生态案例图谱、场景卡/画像/测试场景、朝圣地标与组件库、文化叙事、年度运营等结构化成果（见 visual/assets/），全部空间结论以 provisional 边界标注并待官方数据复算。"
 tracks: ["ai-traffic-walkability", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -59,11 +59,53 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | 北京AI原点社区 | 近校型成果转化与人才社区 | 组织校区、园区、街区慢行缝合，补足成果发布与开源协作空间 | 开源社区、成果发布、人才特区服务 |
 | 大钟寺AI产业聚集区 | 城市型智能经济与国际交往街区 | 围绕大钟寺站一体化、四象限步行连通与商业服务更新 | 智能体与智能终端展示、内容消费、国际路演 |
 
+## 品牌系统、命名体系与视觉识别方向（agent.1）
+
+针对 agent.1「一带总体概念与功能统筹方案设计」，方案给出可审查的命名体系与视觉识别方向，而非口号式命名。主概念为「京张智脉共生带」，英文名 `Jing-Zhang Intelligence-Meridian Symbiosis Belt`，短码 `JZ-IMB`，命名以「京张」锚定历史地理原点、「智脉」表达AI创新能量沿遗址带生长、「共生」强调人本治理与多主体协同 [data:visual/assets/agent1-overall-concept.json]。视觉识别以京张铁路轨道线与AI神经元节点叠加为核心图形（轨道线表达历史连续性与交通骨架，节点表达AI策源到应用的上扬势能），色彩取铁路青灰、中关村活力蓝与创新光绿，不使用未经授权的字体、图标或商标 [depth:blue_green_public_space]。此方向为概念性视觉识别建议，正式Logo需专业品牌设计并完成字体、图形与商标清权后方可使用 [source:AGENT-TASKBOOK]。
+
+三大定位、五大功能与「三区两翼」在 `three_areas_two_wings` 协同回路中统筹：AI原点社区承担近校策源，众智园承担全栈自主创新与AI治理话语权，大钟寺承担智能原生新业态；中关村科技服务翼承担要素全球化配置与中关村IP赋能，小月河场景赋能翼承担AI场景落地与活力城市营造 [data:visual/assets/agent1-overall-concept.json]。
+
+## 区域协同与跨界联动（agent.1 / P2）
+
+统筹研究层补充区域协同关系，把方案放进更大空间尺度，而非孤立画一条边界 [source:AGENT-TASKBOOK]：
+
+| 协同方向 | 协同对象 | 协同内容 | 性质 |
+| --- | --- | --- | --- |
+| 向北 | 未来科学城、怀柔科学城 | 大科学装置与基础研究资源作为源头策应与联合研发通道 | 概念协同判断 |
+| 向东 | 北纬社区、经开区 | 承接制造、算力与场景规模化落地 | 概念协同判断 |
+| 向外 | 京津冀创新节点 | 中关村服务网络延伸与要素配置 | 概念协同判断 |
+
+上述区域协同为统筹研究层的空间-产业协同判断（concept level），不构成法定区域规划结论 [depth:overall_spatial_structure]。
+
+## AI创新生态、全球案例与生态图谱（agent.2）
+
+针对 agent.2「AI全栈自主创新体系与世界级AI创新生态设计」，方案实际交付生态案例与机制，而非仅在矩阵中宣称。整理 7 个全球AI创新生态形态作为比较参照 [data:visual/assets/agent2-ecosystem.json]：旧金山湾区（高校策源-资本催化-开源协作）、波士顿剑桥（近校转化-人才特区）、伦敦国王十字（铁路遗产活化-公共空间先行）、柏林Adlershof（科研园区-企业孵育）、新加坡One North（产业园区-人才居住）、杭州（头部企业-生态平台）、深圳/上海（科创走廊-制造转化）。以上基于公开资料整理的形态作为参照，不主张复制，不编造企业名单、投资额或产值 [source:AGENT-TASKBOOK]。
+
+AI创新生态图谱按「策源-自主-转化-落地-赋能」五层组织，并给出土地/空间/产业/资金/人才/算力/数据/场景八维机制表，落地到可复算用地分区 [data:visual/assets/agent2-ecosystem.json]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-005]。产业招商、资金与政策安排不作为已确定事项声明。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 方案建立面向AI人才与企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲与国际交往 [source:AGENT-TASKBOOK]。AI+场景围绕交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景与AI赋能城市功能场景，每个场景说明服务对象、空间位置、数据来源、隐私边界、人工复核机制与运营主体 [depth:three_key_area_detailed_design]。AI场景必须落到空间与治理边界：公共空间场景引用 [data:geometry/public_space.geojson#PUBLIC-001]，慢行与交通场景引用 [data:geometry/roads.geojson#ROAD-001]，开放空间场景引用 [data:geometry/green_space.geojson#GREEN-001] 与 [metric:green_ratio]、[metric:public_space_ratio]。
 
-用户画像与场景卡不少于5类与10张，产业测试验证场景不少于3个，均写入正文、HTML、A3/A0与合规矩阵 [source:AGENT-TASKBOOK]。方案建立的人才与场景体系、AI朝圣地标、荣誉展示体系与文化叙事见agent.3、agent.4、agent.5对应的合规矩阵条目 [depth:renewal_project_list]。所有AI治理建议遵守数据最小化、公开来源、可解释与人工复核原则，不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺 [source:AGENT-TASKBOOK]。
+针对 agent.3，方案实际交付不少于 10 张AI场景卡、3 个AI产业测试验证场景、5 类用户画像及场景-空间-运营矩阵，结构化存储于 [data:visual/assets/agent3-scenarios.json]，并在正文给出清单 [source:AGENT-TASKBOOK]：
+
+- **场景卡（10张，SC-01…SC-10）**：AI交通信号协同、慢行安全预警、企业服务Copilot、AI文化导览、开源协作空间预约、成果发布与路演、智能原生消费、AI治理安全展示、人才服务与安居导航、公共空间AI运营辅助；每张注明服务对象、空间落点、隐私与人工复核边界、运营状态（均为concept）[data:visual/assets/agent3-scenarios.json]。
+- **测试验证场景（3个，TS-01…TS-03）**：京张遗址带慢行接驳仿真、原点社区开源生态服务、大钟寺智能原生消费；明确标注为 concept，不写成已批准运营。
+- **用户画像（5类，US-01…US-05）**：AI研发人才、创业者与转化团队、科技企业员工、居民与家庭、游客与访客，各注空间需求落点。
+
+方案建立的人才与场景体系、AI朝圣地标、荣誉展示体系与文化叙事见agent.3、agent.4、agent.5对应的合规矩阵条目与结构化数据 [depth:renewal_project_list]。所有AI治理建议遵守数据最小化、公开来源、可解释与人工复核原则，不追踪个体、不输出未经授权的个人画像、不把测试场景写成已批准运营、不声称获得官方实施承诺 [source:AGENT-TASKBOOK]。
+
+## AI朝圣地标、荣誉展示与公共空间组件库（agent.4）
+
+针对 agent.4，方案交付 3 个AI朝圣地标、荣誉展示体系与公共空间组件库，结构化存储于 [data:visual/assets/agent4-landmarks.json]：智脉原点广场（文化/教育）、自主创新之光装置（科技/展示）、智能原生生活馆（商业/体验），均尊重文保、绿地、蓝线与交通约束，不含桥隧、地下空间或工程可行性结论 [source:AGENT-TASKBOOK]。荣誉展示体系面向人、企业与智能体贡献者，满足共创宪章「贡献可记忆」原则，展示内容须完成肖像、商标与版权清权 [depth:blue_green_public_space]。公共空间组件库提供AI公共座椅、无障碍导视、活动场地模块、慢行标准段与公共艺术组件的可复用建议。
+
+## 文化叙事、导视与国际传播（agent.5）
+
+针对 agent.5，方案以「京张铁路历史-中关村创新-AI新文化」三层递进叙事融合文化系统，结构化存储于 [data:visual/assets/agent5-culture.json]：起点层为清华园火车站与京张历史遗迹，过渡层为中关村创新街区，当代层为AI公共艺术、贡献墙与朝圣地标 [source:AGENT-TASKBOOK]。导视标识采用统一语义与无障碍规范，独立于一带整体Logo系统，避免混淆。国际传播叙事聚焦「首次把Agent引入真实城市设计的共创实践」，区分 submitted/reviewed/selected/implemented 状态，不把概念描述为已批准或已建成，发布外部账号前须取得授权并完成清权。
+
+## 年度活动体系与长期运营（agent.6）
+
+针对 agent.6，方案交付年度活动体系、品牌IP、开发者社区运营、场景开放机制、公共体验运营与国际传播招引转化路径，结构化存储于 [data:visual/assets/agent6-operations.json]：全球AI活动周（年度）、开源共创日（季度）、成果发布与路演（月度）、公共体验开放（常态化），均标注空间落点与运营机制 [depth:phasing_implementation]。开发者社区以开源协作空间为依托建立准入、贡献、荣誉与公共知识沉淀机制；AI场景开放运营覆盖申请、数据边界、人工复核、试点验收与停用回退。转化路径为「活动获客-开源共创-成果转化-人才落地-国际招引」。活动与招商均作为运营机制设想，不写成已确定安排，不夸大政府承诺或活动效果 [source:AGENT-TASKBOOK]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -98,6 +140,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 | JZ-05 | AI公共服务与端侧算力节点 | 新基建/公共服务 | 能源、算力、安全与运营主体 | [data:geometry/constraints.geojson#CONSTRAINTS-001] |
 | JZ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、活动安全、版权清权 | [data:geometry/phasing.geojson#PHASE-001] |
 
+为提升可实施性，方案为 JZ-01…JZ-06 及每个AI场景补充实施责任矩阵，明确牵头主体类型、协作方、前置条件、成本级别、试点周期、KPI、审批接口、隐私与人工复核、停止/回退条件与长期运维责任。全部列为试点/建议级别，不写成已确定审批结论 [depth:renewal_project_list]、[depth:phasing_implementation]：
+
+| 项目 | 牵头主体类型 | 协作方 | 前置条件 | 成本级别 | 试点周期 | KPI建议 | 审批接口 | 隐私/人工复核 | 停止/回退 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | 区级/公共空间部门 | 交通、轨道运营 | 道路红线、桥下空间复核 | 中 | 近期 | 慢行断点缝合率、通行时间 | 交通审批 | 匿名流量，人工复核 | 暂停试点恢复现状 |
+| JZ-02 | 水务/园林部门 | 产业运营方 | 河道蓝线、防洪条件 | 高 | 中期 | 界面开放度、绿地率 | 水务/规划审批 | 公开数据 | 遇防洪风险停止 |
+| JZ-03 | 城市更新平台 | 高校、权属方 | 校区边界、权属、首层业态 | 高 | 中期 | 成果转化项目数 | 更新/规划审批 | 企业授权数据，人工复核 | 权属未决时暂停 |
+| JZ-04 | 轨道/交通部门 | 市政、慢行设计 | 轨道站点、管线、交叉口 | 高 | 中期 | 四象限步行连通度 | 轨道/交通审批 | 匿名客流 | 施工风险时回退 |
+| JZ-05 | 新基建/公共服务 | 算力、能源、运营主体 | 能源、算力、安全 | 中 | 近期 | 服务节点数、可用性 | 基建/网信审批 | 端侧算力，数据最小化 | 安全不达标停用 |
+| JZ-06 | 品牌/运营平台 | 社区、活动机构 | 公共空间许可、版权清权 | 低 | 近期 | 参与人次、传播触达 | 活动审批 | 不追踪个人，人工审核 | 安全/舆情风险中止 |
+| 每个AI场景 | 场景运营主体 | 数据、技术、安全方 | 数据边界、合规评审 | 视场景 | 试点 | 场景KPI+成效指标 | 网信/行业审批 | 数据最小化+人工复核 | 违规即停并回退 |
+
+## 包容性、公平与无障碍（P2）
+
+方案补充包容性与无障碍专章，回应原有居民、儿童、老年人、残障人士、低收入群体、非技术劳动者与数字弱势群体的需求与影响 [source:AGENT-TASKBOOK]：
+
+- **无障碍**：公共空间、慢行、公共座椅、导视与组件库采用无障碍规范，机器视觉检查不能证明无障碍合规，需专项无障碍审查确认 [depth:blue_green_public_space]。
+- **数字包容**：AI场景保留非数字化等效服务（人工窗口、纸质导览），避免数字排斥；个性化推荐可关闭，保障可负担性。
+- **公众参与与申诉**：建立公众参与、投诉与申诉机制，利益分配指标纳入运营评估，算法决策保留人工申诉渠道。
+- **影响分析**：方案声明缺少对原有居民、儿童、老人、残障与低收入群体影响的量化证据，相关需求与影响分析列为待专项调研补齐的数据缺口，不作为已完整覆盖事项 [depth:risk_missing_data]。
+
 分期应与100天征集设计周期区分：征集周期是提交成果的时间要求，实施分期是城市更新与项目建设的推进路径 [source:PROCESSED-FACT-PACK]。方案提出近期试点（约11.4平方公里内的轻量设施与运营活动）、中期更新（建筑更新与公共空间成型）与长期治理（品牌资产与国际运营）三个阶段。对于年度活动体系、开发者社区运营、场景开放日、公共体验路线与国际传播机制，正文说明运营对象、频率、责任边界、转化路径与风险，不写宣传口号 [depth:phasing_implementation]。
 
 ## 指标体系、面积复算与合规矩阵
@@ -106,7 +169,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
-合规矩阵是任务响应性的主控文件。每条公告任务与agent_taskbook任务对应到报告章节、图层、指标、图纸、HTML页面、来源、假设与自检项 [source:OFFICIAL-ANNOUNCEMENT]。未能覆盖公告1.3、1.4、1.5或agent.1-agent.6的任一必选任务，方案不得进入formal professional scoring [source:AGENT-TASKBOOK]。指标分三类：第一类可由提交几何直接复算的空间指标；第二类需官方控规或任务书附件支撑的管控指标；第三类需运营或产业数据持续校准的绩效指标。三类指标分别进入`metrics.json`、`assumptions.json`与`compliance_matrix.json`。
+合规矩阵是任务响应性的主控文件。每条公告任务与agent_taskbook任务对应到报告章节、图层、指标、图纸、HTML页面、来源、假设与自检项，并为每条补充 evidence 与诚实证据状态（delivered / partial / data_gap），不再以模板化「complete」覆盖证据不足条目 [source:OFFICIAL-ANNOUNCEMENT]。未能覆盖公告1.3、1.4、1.5或agent.1-agent.6的任一必选任务，方案不得进入formal professional scoring [source:AGENT-TASKBOOK]。agent.1-agent.6 的 evidence 引用 visual/assets/ 下结构化数据文件作为实际交付证据。指标分三类：第一类可由提交几何直接复算的空间指标；第二类需官方控规或任务书附件支撑的管控指标；第三类需运营或产业数据持续校准的绩效指标。三类指标分别进入`metrics.json`、`assumptions.json`与`compliance_matrix.json`。
 
 ## 风险、版权与合规说明
 
@@ -128,3 +191,4 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
 - 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+- 结构化交付物（agent.1-6 实际成果，允许的 machine-readable 数据）：visual/assets/agent1-overall-concept.json、agent2-ecosystem.json、agent3-scenarios.json、agent4-landmarks.json、agent5-culture.json、agent6-operations.json
