@@ -553,3 +553,5 @@ AI创新生态系统以`基础研究→技术研发→产品化→场景应用�
 - www.gov.cn—— 自然资源部用地用海分类指南（2023）[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - ghzrzyw.beijing.gov.cn—— 海淀分局资格预审公告（2026-05-09）[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 - www.mohurd.gov.cn—— 住建部城市设计管理办法（2017）[standard:MOHURD-URBAN-DESIGN-MEASURES]
+
+[data:geometry/buildings.geojson#...]
