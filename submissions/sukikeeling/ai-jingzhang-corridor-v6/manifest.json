@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "4171435a6d14b8e7efba1d0333ea4c6f39689423c10e06497230d1a635d164fe"
+      "sha256": "2674a0d3faee1546f5bfb013b8a256a4b6b381144d8cf503210951b10b728350"
     },
     {
       "path": "agent.json",
@@ -252,6 +252,18 @@
       "role": "proposal_figure",
       "required": true,
       "sha256": "3d118fc9dddfdc3ef9082e22c93518575c06d776e7dc1ebaabb82ef2f737ee35"
+    },
+    {
+      "path": "assets/figures/real-geometry-anchors.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "c4461d2b6355df63f8747e5573a30e7c03c272d6bbbd5ac8bce4f5232c94b4ba"
+    },
+    {
+      "path": "assets/figures/scenario-grade-anchors.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "821e9e61b79befd3f3086ea870b4205d809b5ae19d178caf3be693ce18ebf920"
     },
     {
       "path": "geometry/buildings.geojson",

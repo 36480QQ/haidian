@@ -104,6 +104,8 @@ All spatial boundaries are provisional; full recalculation required when officia
 - **多点场景**：沿轨道站点和公共空间布局AI+场景节点（不少于12处）
 - **蓝绿复合环**：京张遗址公园绿带 + 小月河蓝带 + 清河蓝带形成慢行闭环
 
+![真实几何锚点：人字形长在可验证的空间事实上](assets/figures/real-geometry-anchors.png)
+
 ### 三级命名体系（概念方向，可延展）
 
 ![命名体系与视觉识别方向](assets/figures/naming-system.png)
@@ -316,6 +318,8 @@ All spatial boundaries are provisional; full recalculation required when officia
 ![AI场景卡全景图](assets/figures/scenarios-panorama.png)
 
 ### AI场景卡（12张）[source:AGENT-TASKBOOK]
+
+![坡度梯度 × 场景分布 × 空间锚点](assets/figures/scenario-grade-anchors.png)
 
 每张场景卡的完整可复核字段（空间锚点/运营模型/责任角色/数据边界/人工复核/退出条件/成本量级/可验证绩效）见 **visual/assets/scenario_operations.json**，空间锚点对应 `geometry/public_space.geojson#NODE-XX` 共 [metric:scenario_node_count] 个节点 [data:geometry/public_space.geojson]；数量由 [metric:scenario_card_count] 复核。
 
