@@ -32,7 +32,7 @@ This is why the belt is not "an AI label on a conventional plan". Its name, its 
 
 Every spatial move below is a conceptual suggestion, a reference scheme, or material for professional teams to deepen. Nothing here is statutory planning, an approved government action, a confirmed implementation, an investment commitment, or a parcel-level demolition conclusion.
 
-## Design Basis and Source Inventory｜设计依据与资料清单
+## Design Basis and Source List｜设计依据与资料清单
 
 This package is built from the machine-readable brief in this repository, not from a private data set. The design basis is the official announcement's task structure and scope definitions [source:OFFICIAL-ANNOUNCEMENT], the agent-facing open-call taskbook with its ten co-creation principles and six required tasks [source:AGENT-TASKBOOK], and the registered site package of enums, ranges, schemas and allowed design space [source:SITE-PACKAGE]. Source usability was screened against the public registry before any evidence was cited [source:SOURCE-REGISTRY], and the processed navigation layer was used to organise scopes, tasks and gaps into a work list rather than as a new authority [source:PROCESSED-FACT-PACK].
 
@@ -60,7 +60,7 @@ The transmission between levels is explicit and checkable. The line is divided i
 | Overall design 11.4 km² | Sequence, continuity, interface | 18-cell land-use partition, six structural bands | [data:geometry/land_use.geojson#LU-001] |
 | Key areas 368.4 ha | What opens, what is the handle | Three stations, renewal handles, operating protocol | [data:geometry/key_areas.geojson#PROV-KEY-002] |
 
-## Coordinated Research Area: Industry and Future City｜统筹研究范围产业与未来城市研究
+## Coordinated Research Area: Industry and Future City Research｜统筹研究范围产业与未来城市研究
 
 **The three positionings and the five functions, mapped onto one line.** The centennial Jing-Zhang cultural belt is the main line itself; the urban AI life-experience belt is what happens at the three stations; the AI convergence-innovation belt is what the two switches let in. The five functions are not distributed evenly — each is anchored where the geography already supports it: the full-stack autonomous innovation system and global AI governance voice at the Marshalling Yard (S6), the world-class innovation ecosystem at the Zero-Kilometre Station (S4), the AI+ scenario-empowerment paradigm along the whole line and concentrated at the Down Switch (S2), the intelligent vibrant city at the Arrival Yard (S1) and the Up Switch (S5).
 
@@ -88,7 +88,7 @@ The mechanism is deliberately not co-location but **through-running**: a capabil
 
 ![Spatial structure and the transmission from three-level scope into land use](assets/figures/land-use-structure.png)
 
-## Overall Design Area: Urban Renewal at Regulatory-Plan Urban Design Depth｜总体设计范围城市更新与控规深度城市设计
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design｜总体设计范围城市更新与控规深度城市设计
 
 The overall design area is organised as one spine and six bands. The spine is the heritage park corridor, carried as a continuous designed alignment that widens at the three stations and narrows through the running sections — a curvature and rhythm read directly from the operating logic, not applied as styling. Flanking each spine segment, a west and an east cell take a land-use code appropriate to that band's role, giving an 18-cell partition that covers the submitted boundary with no gaps and no overlaps [data:geometry/land_use.geojson#LU-001] [metric:land_use_total_area_sqm] [depth:land_use_layout].
 
@@ -98,7 +98,7 @@ On development intensity this package stops where the data stops. Floor area rat
 
 **本节要点（中文）**：总体设计范围采用「一脊六段」的空间结构模式，脊即遗址公园廊道，六段对应三站两岔一区间。城市更新的抓手是三类低效状态的对应机制——东西向断裂由六条缝合线修复，背向廊道的产业界面由两翼转向重新组织，站区首层不参与公共生活由三处站台广场解决。用地分区完整覆盖提交边界，形成可复算的空间体系。开发强度指标（容积率、建筑高度、建筑密度）因官方管控条件缺失一律留空，仅给出在任何管控条件下均成立的相对体量意图：脊缘最低、向外抬升、最高体量退离历史线位且不得沿线形成连续墙面。
 
-## Detailed Design of the Three Key Areas｜重点区域详细设计
+## Detailed Design of Key Areas｜重点区域详细设计
 
 The three key areas are deliberately given *different* jobs rather than three variations of the same innovation park. Their differentiation is the design.
 
@@ -112,7 +112,7 @@ All three carry the same caveat: the polygons are provisional, so parcel-level c
 
 ![The three key areas: differentiated roles, connections, renewal handles and data conditions](assets/figures/key-areas.png)
 
-## AI 创新生态、人才画像与 AI+ 场景
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios｜AI 创新生态、人才画像与 AI+ 场景
 
 **The token protocol.** Every scenario below runs under one published protocol, built directly on the railway token rule: **one token, one section, returned before the next is issued.** A token grants a named operator exclusive use of one bookable segment for one window, and carries with it a stated data boundary, a human review point, and a defined end date after which the space returns to ordinary public use. The interlock is the important part — a segment cannot issue a second token while the first is out, which is what stops an "open scenario district" from silently becoming a permanently occupied one. No scenario in this package requires non-public data, individual profiling, or a designated vendor as a precondition. No scenario claims approved operating status.
 
@@ -148,13 +148,13 @@ All three carry the same caveat: the polygons are provisional, so parcel-level c
 
 **Scenario–space–operation mapping.** Each card binds to a layer and a metric so that a reviewer can check it is located rather than sloganised: spine and stitches to [data:geometry/roads.geojson#CROSS-A] and [metric:slow_mobility_length_m], plazas to [data:geometry/public_space.geojson#PUBLIC-004] and [metric:public_space_ratio], green continuity to [data:geometry/green_space.geojson#GREEN-001] and [metric:green_ratio], bookable segments and located scenario nodes to [data:geometry/constraints.geojson#TRACK-S3] and [data:geometry/constraints.geojson#SCEN-02]. Governance follows data minimisation, public-source-only inputs, explainability, and a human review point that cannot be automated away.
 
-## Land Use, Building Scale and Retain / Renovate / Demolish Logic｜用地、建筑规模与拆改留方案
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy｜用地、建筑规模与拆改留方案
 
 Land use is expressed with the public classification subset [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] as a complete partition of the submitted boundary. Research land is the largest single category at [metric:land_use_area_research_0802_sqm], concentrated in the two innovation stations; community service facilities at [metric:land_use_area_community_facilities_0702_sqm] and residential land at [metric:land_use_area_urban_residential_0701_sqm] keep the belt inhabited rather than purely productive; commercial and business services at [metric:land_use_area_commercial_services_05_sqm] concentrate at the Arrival Yard and the Up Switch; culture at [metric:land_use_area_culture_0803_sqm] and education at [metric:land_use_area_education_0804_sqm] hold the narrative and the campus edge; park green at [metric:land_use_area_park_green_1401_sqm] and square land at [metric:land_use_area_square_1403_sqm] form the spine itself.
 
 On retain / renovate / demolish, this package states a **method and a refusal**. The method: the thirteen indicative footprints [metric:renewal_building_count] each carry a suggested action — retain, renovate or new build — chosen from the structural role of their band, not from any judgement about a specific existing building. The refusal: because there is no current-building survey, no ownership data, no approved regulatory condition and no official parcel geometry in the public package, **this proposal does not issue a demolition conclusion for any real parcel** [depth:retain_renovate_demolish]. The indicative coverage of these handles inside the key areas is [metric:building_footprint_ratio_key_areas] over [metric:building_footprint_area_sqm] of footprint — an illustration of grain and intensity of intervention, explicitly not an approved building-density control.
 
-## Mobility, Rail, Municipal and Public Service Facilities｜交通、轨道、市政与公共服务设施
+## Transport, Rail, Municipal Infrastructure, and Public Services｜交通、轨道、市政与公共服务设施
 
 The mobility proposal is built on one observation: the corridor's defining problem is that it is continuous north–south and broken east–west. The design accepts and amplifies the first, and repairs the second.
 
@@ -166,7 +166,7 @@ Municipal and new-infrastructure strategy follows the same track logic: edge com
 
 ![Slow mobility, rail connection, blue-green continuity and AI scenario nodes](assets/figures/mobility-bluegreen.png)
 
-## Blue-Green Space, Public Space and Urban Character｜蓝绿空间、公共空间与城市风貌
+## Blue-Green Network, Public Space, and Urban Character｜蓝绿空间、公共空间与城市风貌
 
 The spine is simultaneously the heritage park, the ecological base and the test track — one space, three jobs, which is the proposal's central spatial economy. Green space totals [metric:green_space_area_sqm], a ratio of [metric:green_ratio] of the submitted boundary; public space totals [metric:public_space_area_sqm] at [metric:public_space_ratio] [depth:blue_green_public_space] [standard:MOHURD-URBAN-DESIGN-MEASURES]. Continuity is the controlling requirement: the green spine is unbroken along its full length, and every station plaza is a widening of it rather than a separate object [data:geometry/green_space.geojson#GREEN-002].
 
@@ -184,7 +184,7 @@ Fourth, **legibility for everyone**. Signage is physical, high-contrast and mult
 
 **Cultural narrative.** Three layers are braided rather than stacked: the centennial Jing-Zhang engineering heritage, the Zhongguancun innovation culture, and the new AI culture. The connective idea is that all three are about *making a line work* — surveying and building it, opening it to enterprise, and now operating it as a computational public utility. The token is the thread that ties them: the brass staff a driver carried through a single-track section, the access token that governs a computer network, and the token an AI model reads are the same idea in three centuries — **a small object that grants a bounded right and must be given back.** A belt that inherits a railway does not have to inherit only its shape; it can inherit its discipline. The railway token system is presented here as widely documented public railway history used as a design reference, and this package makes no specific documentary claim about the signalling equipment of the Jing-Zhang line itself, which would require official archival sources. Signage, wayfinding and symbol system take the railway lexicon consistently: kilometre marks along the spine, platform edges at stations, switch markers at wings. Historical facts are presented as history, not converted into decoration; no portrait, trademark, typeface, photograph or paper figure is used without clearance [depth:height_massing_character].
 
-## Renewal Project List, Policy and Phasing｜更新项目清单、实施政策与分期计划
+## Renewal Projects, Implementation Policy, and Phasing｜更新项目清单、实施政策与分期计划
 
 | # | Project | Type | Band | Dependency | Evidence |
 | --- | --- | --- | --- | --- | --- |
@@ -228,7 +228,7 @@ The separation is the point. The Line Operator has an incentive to fill the cale
 
 **Operations and the annual system.** The belt is proposed to run an annual Global AI Week using the line itself as the venue, a rolling scenario-open calendar publishing which segments are bookable, a developer community anchored at the Zero-Kilometre release hall, and a conversion pathway that moves a team from open-source contributor to bookable-track user to tenant. Brand assets accumulate in the belt rather than in any single event: the line, the station names, the marker, the board. All of this is an operating proposal for professional and operating teams to develop — not a confirmed government programme, funding commitment, investment arrangement or approved event schedule.
 
-## Metrics, Area Recomputation and Compliance Matrix｜指标体系、面积复算与合规矩阵
+## Metrics, Area Recalculation, and Compliance Matrix｜指标体系、面积复算与合规矩阵
 
 Metrics are split into three honest classes. **Class A — recomputable from submitted geometry**: every value below is reproduced by projecting the layers to EPSG:4548 and recomputing, and is checked against `spatial_review.py`. **Class B — pending official regulatory conditions**: floor area ratio, total floor area, building height, road area and road area ratio are recorded as `unknown` with reasons. **Class C — performance indicators** requiring operating data over time, which this package does not pretend to know [depth:metrics_recalculation].
 
@@ -261,7 +261,7 @@ The compliance matrix maps all seventeen announcement tasks (1.3, 1.4, 1.5) and 
 
 ![Metric provenance, recomputation chain, pending controls and self-check state](assets/figures/metrics-evidence.png)
 
-## Risk, Copyright and Compliance｜风险、版权与合规说明
+## Risk, Copyright, and Compliance｜风险、版权与合规说明
 
 **The dominant risk is geometric, and it is disclosed rather than managed away.** The submitted boundary and key areas are provisional. If official polygons differ materially, every area, ratio and partition in this package changes. The mitigation is structural: the design's load is carried by sequence and relation, which survive a boundary correction, and the geometry is generated by a re-runnable partition rather than hand-drawn, so recomputation is a re-run and not a redraw [data:geometry/constraints.geojson#TRACK-S6] [depth:risk_missing_data].
 
