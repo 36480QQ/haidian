@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "repository_public_site_package",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "usage": "Design brief, allowed design space, enumerations, ranges, schemas and visual guardrails.",
+      "limitations": "Does not replace official project attachments that are not present in the repository."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "usage": "Separates formal-ready, background-only and provisional-only sources and records allowed uses.",
+      "limitations": "Registry metadata is not an official spatial boundary or control condition."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "review_status": "approved",
+      "usable_for_formal": "navigation_only",
+      "usage": "Readable navigation for scope levels, task requirements, source-use boundaries and missing-data checklist.",
+      "limitations": "It is not a new authority source; facts must return to the registered sources."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "usage": "Temporary AI generation boundary, visualization, topology self-check and design discussion.",
+      "limitations": "Not an official redline, precise area basis, approval basis or professional scoring geometry."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "usage": "Temporary polygons for the three required detailed-design areas.",
+      "limitations": "The three key-area rectangles are not official parcel, road or ownership boundaries."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "path": "brief/site-package/standards/references/project-official-announcement.md",
+      "source_type": "official_public",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "usage": "Project name, location, three scope levels, announced areas, design tasks and deliverable context.",
+      "limitations": "Textual four-side descriptions and announced areas do not replace official GIS/CAD polygons or regulatory controls."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "usage": "Ten co-creation principles, three positioning statements, five functions, three areas and two wings, six agent tasks, scenario, branding, cultural and operations requirements.",
+      "limitations": "It is not an official redline, statutory plan, engineering source or implementation commitment."
+    }
+  ]
+}

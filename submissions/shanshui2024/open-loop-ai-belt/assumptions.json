@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "boundary_status": "provisional_intake",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_geometry",
+      "statement": "The submitted SITE_BOUNDARY and three KEY_AREA polygons are repository-maintained provisional rough geometry.",
+      "impact": "Boundary-sensitive areas, ratios, drawings and spatial conclusions must be recalculated after official or cleared polygons are provided.",
+      "required_for_formal_submission": true,
+      "source_ids": ["BOUNDARY-SOURCE", "KEY-AREA-SOURCE"]
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Official FAR, building height, building density, green-ratio, setback, skyline and other regulatory controls are not present in the cleared site package.",
+      "impact": "The proposal uses conceptual land-use, building and public-space roles and does not state statutory numerical controls.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SITE-PACKAGE", "SOURCE-REGISTRY"]
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "pending_transport_confirmation",
+      "statement": "Road redlines, cross-sections, station integration drawings, bicycle parking inventory and activity-day traffic conditions are not present.",
+      "impact": "Road and rail content remains a conceptual slow-mobility and station-connection strategy, not an engineering alignment.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SOURCE-REGISTRY"]
+    },
+    {
+      "id": "A-PARCEL-001",
+      "status": "pending_rights_confirmation",
+      "statement": "Parcel boundaries, ownership, existing leases and implementation responsibilities are not present.",
+      "impact": "Retain, renovate, demolish and new-build labels are conceptual update categories and cannot be treated as parcel decisions.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SOURCE-REGISTRY"]
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_existing_survey",
+      "statement": "Existing building footprints, heights, uses, ages and structural conditions are not available.",
+      "impact": "The building layer expresses proposed spatial roles only; building footprint area is not existing floor area or approved development scale.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SOURCE-REGISTRY"]
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_heritage_confirmation",
+      "statement": "Heritage protection boundaries and construction-control zones for the Jing-Zhang railway heritage resources are not included.",
+      "impact": "Cultural nodes, signage and public-space components must be reviewed by heritage professionals before any physical implementation.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SOURCE-REGISTRY", "AGENT-TASKBOOK"]
+    },
+    {
+      "id": "A-MUNICIPAL-001",
+      "status": "pending_municipal_confirmation",
+      "statement": "Municipal utilities, drainage, flood control, fire access, energy and end-side computing conditions are not available.",
+      "impact": "Low-carbon, edge-computing and public-service scenarios are bounded prototypes for professional deepening, not capacity or feasibility conclusions.",
+      "required_for_formal_submission": true,
+      "source_ids": ["SOURCE-REGISTRY"]
+    },
+    {
+      "id": "A-SCENARIO-001",
+      "status": "pending_human_review",
+      "statement": "All AI scenario cards are conceptual suggestions and require public explanation, data minimization, human review, exit conditions and accountable operators.",
+      "impact": "No scenario is described as approved, fully deployed, or dependent on a named vendor or private dataset.",
+      "required_for_formal_submission": true,
+      "source_ids": ["AGENT-TASKBOOK"]
+    },
+    {
+      "id": "A-COPYRIGHT-001",
+      "status": "cleared_for_package",
+      "statement": "The package uses original generated text, diagrams and offline HTML plus public or cleared repository sources; no external visual asset is required.",
+      "impact": "Any future replacement asset must be checked for license, attribution and authorization before inclusion.",
+      "required_for_formal_submission": false,
+      "source_ids": ["SOURCE-REGISTRY"]
+    }
+  ]
+}

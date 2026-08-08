@@ -1,0 +1,220 @@
+{
+  "type": "FeatureCollection",
+  "name": "open_loop_slow_mobility_network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "京张开放城市环主慢行线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.344224,
+            39.94075
+          ],
+          [
+            116.3436,
+            39.963499999999996
+          ],
+          [
+            116.34453599999999,
+            39.9845
+          ],
+          [
+            116.34391199999999,
+            40.0055
+          ],
+          [
+            116.344692,
+            40.02475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "西侧校园园区自行车联络线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34063599999999,
+            39.9425
+          ],
+          [
+            116.341572,
+            39.963499999999996
+          ],
+          [
+            116.342196,
+            39.988
+          ],
+          [
+            116.3418142435168,
+            40.008341992094145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "东侧生活服务步行线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.351868,
+            39.941625
+          ],
+          [
+            116.351088,
+            39.964375
+          ],
+          [
+            116.35218,
+            39.990625
+          ],
+          [
+            116.351556,
+            40.02125
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "重点区之间轨道接驳概念线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34198977081009,
+            40.01194030160666
+          ],
+          [
+            116.34500399999999,
+            40.009
+          ],
+          [
+            116.348748,
+            40.01075
+          ],
+          [
+            116.353428,
+            40.00725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "原点社区东西缝合线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340948,
+            39.982749999999996
+          ],
+          [
+            116.344068,
+            39.982749999999996
+          ],
+          [
+            116.3475,
+            39.982749999999996
+          ],
+          [
+            116.351868,
+            39.982749999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "清河文化展示支线",
+        "design_note": "概念性慢行/接驳组织，不代表道路红线、工程线位或已批准交通方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.346564,
+            40.022999999999996
+          ],
+          [
+            116.348124,
+            40.011625
+          ],
+          [
+            116.349372,
+            39.9985
+          ],
+          [
+            116.350308,
+            39.9845
+          ]
+        ]
+      }
+    }
+  ]
+}
