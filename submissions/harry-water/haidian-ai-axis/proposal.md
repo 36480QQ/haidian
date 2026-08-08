@@ -40,7 +40,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | E3 公开一手数据 | 政府部门公开统计、公报、政策文件与官方报道 | 区域气候背景、区域算力政策与合作背景、历史事实 | 不得把全市值当场地值，不得把报道口径当实测 SLA |
 | E4 项目方材料 | 中东案例的项目官网与主办机构发布 | 机制参考、运营组织方式 | 不得当作绩效已兑现的独立证明 |
 
-`data/source_registry.json` 当前登记的 formal 可用资料为 5 条、provisional-only 资料 1 条、background_only 资料 0 条。agent 不得把 provisional 或 background 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本方案还使用了若干尚未进入提交包 `sources.json` 的公开一手材料（京张铁路与平绥—京包演进、鸡鸣山煤矿支线、北京中轴线遗产说明与保护管理规划、北京市水资源公报与年鉴、北京市生态环境局 PM2.5 年度数据、国家算力枢纽节点复函、内蒙古自治区政府光缆与合作报道、工信部数据中心材料、海淀区政府海乌合作材料、五个中东案例的项目方与主办机构材料）。这些材料在本轮不新造 source 标识，统一以 `TODO(EVIDENCE-ID)` 交由集成方登记，详见第十三章。
+`data/source_registry.json` 当前登记的 formal 可用资料为 5 条、provisional-only 资料 1 条、background_only 资料 0 条。agent 不得把 provisional 或 background 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本方案进一步在提交包 `sources.json` 中登记了 35 条外部一手来源（京张铁路与平绥—京包演进 5 条、北京中轴线遗产说明与保护管理规划 4 条、北京市水资源公报与年鉴 5 条、北京市生态环境局 PM2.5 年度数据 5 条、海淀—乌兰察布算力协同政府与部委材料 5 条、五个中东案例的项目方与主办机构材料 11 条），逐条标注 `authority_level`、`usage` 与 `risk_note`，并在正文中以 `source:ID` 形式的标签引用；官方控制线数据（文保紫线、河道蓝线、绿线、道路红线、轨道控制线）在公开渠道仍未找到可核验来源，本方案不为其编造 source 记录，继续在第十三章标注为未解决的数据缺口并引用 [source:SOURCE-REGISTRY]。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -82,7 +82,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 北京中轴线：三项独特对应与三项本地规划推论（agent.1／agent.5）
 
-北京中轴线全长 7.8 公里，由五类十五个遗产构成要素、居中道路及相关环境共同组成，是城市建筑与遗址的组合体，其选址、格局与城市形态展现了中国传统理想都城秩序（`TODO(EVIDENCE-ID)`：需为 UNESCO 世界遗产名录条目与北京市文化和旅游局、市规自委、《北京中轴线保护管理规划》相关公开页面登记 `sources.json` 条目）。海淀新轴与北京中轴线是两个不同的地理与规划对象。
+北京中轴线全长 7.8 公里，由五类十五个遗产构成要素、居中道路及相关环境共同组成，是城市建筑与遗址的组合体，其选址、格局与城市形态展现了中国传统理想都城秩序 [source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]。海淀新轴与北京中轴线是两个不同的地理与规划对象；上述来源仅证明中轴线自身的遗产列入事实与保护规划范围，不构成海淀新轴与其存在遗产关联或规划隶属关系的证据。
 
 本方案区分两类内容，避免把一般规划常识挂到世界遗产权威之下：**第一组是中轴线相对独特、值得专门援引的三项对应；第二组是由第一组推导出的三项本地规划推论**。第二组是当代规划中的通行做法，本方案不主张它们为北京中轴线所独有，也不以世界遗产地位为这些通行原则背书。
 
@@ -106,7 +106,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 从运煤到运算：百年北向通道的功能转换（agent.5）
 
-1909 年建成的京张铁路是中国人自主勘测、设计、施工与管理的第一条国有干线铁路，连接北京丰台柳村与张家口（`TODO(EVIDENCE-ID)`：需为国家铁路局“京张铁路”公开页面登记 `sources.json` 条目）。此后线路向绥远方向延伸并纳入平绥铁路，1949 年后平绥铁路改称京包铁路，由此形成北京连接张家口、内蒙古与北方地区的长期铁路通道（`TODO(EVIDENCE-ID)`：需为内蒙古自治区党委机构编制委员会办公室京绥铁路历史遗存页面与国家铁路局京张高铁工程概况页面登记条目）。历史资料还记载京张铁路设**鸡鸣山煤矿支线**，便于下花园附近煤矿的煤炭运输，既降低京张全路的燃料与转运成本，也支持煤炭运销各处；因此本方案将其定位为“服务煤炭外运、同时支持铁路自身运行的**能源供给支线**”，不夸大为整个北京的能源命脉（`TODO(EVIDENCE-ID)`：需为北京交通大学与新京报相关公开报道登记条目）。
+1909 年建成的京张铁路是中国人自主勘测、设计、施工与管理的第一条国有干线铁路，连接北京丰台柳村与张家口 [source:NRA-JINGZHANG-LINE]。此后线路向绥远方向延伸并纳入平绥铁路，1949 年后平绥铁路改称京包铁路，由此形成北京连接张家口、内蒙古与北方地区的长期铁路通道 [source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]。历史资料还记载京张铁路设**鸡鸣山煤矿支线**，便于下花园附近煤矿的煤炭运输，既降低京张全路的燃料与转运成本，也支持煤炭运销各处；因此本方案将其定位为“服务煤炭外运、同时支持铁路自身运行的**能源供给支线**”，不夸大为整个北京的能源命脉 [source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]。
 
 | 时代 | 北向通道运载什么 | 为北京／海淀提供什么 | 海淀向外输出什么 |
 | --- | --- | --- | --- |
@@ -134,7 +134,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 中东五案例：不做案例墙，组成一条机制链（agent.2）
 
-以下五个案例的绩效表述均为项目方或其官方主办机构的公开主张，只能证明其机制设计与组织方式，不能单独证明绩效已经兑现；本方案提取**机制**，不提取巨构、法律制度、投资规模或未经核验的结果（`TODO(EVIDENCE-ID)`：需为 Masdar City、MBZUAI、Dubai AI Campus / DIFC、HUMAIN / PIF / AWS、NEOM THE LINE 的项目方与主办机构公开页面分别登记 `sources.json` 条目，并标注 `authority_level` 为项目方材料）。
+以下五个案例的绩效表述均为项目方或其官方主办机构的公开主张，只能证明其机制设计与组织方式，不能单独证明绩效已经兑现；本方案提取**机制**，不提取巨构、法律制度、投资规模或未经核验的结果 [source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]，其 `authority_level` 均登记为项目方或主办机构自述材料，不得单独作为绩效已兑现的独立证明。
 
 | 案例 | 项目方／主办机构材料支持的机制 | 海淀新轴的空间与运营落点 | 明确不复制／不可推断 | 该机制在本地失效／不适用的条件 |
 | --- | --- | --- | --- | --- |
@@ -142,13 +142,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | MBZUAI | 大学研究—真实场景验证—原型展示—孵化—产业合作闭环 | AI 原点社区：高校研究与社区需求对接、模型验证、伦理复核、开源展示 | 不认为高校与企业共址就自然产生创新；必须明确数据、伦理、知识产权、退出与长期资金 | 若缺少稳定的长期经费、明确的知识产权归属或校方参与意愿，闭环会退化为共址办公；海淀高校密度高但机构自主性强，无统一主体时该机制不成立 |
 | Dubai AI Campus | “空间＋合规服务＋资本＋加速器＋企业采购＋人才训练”的常设运营机构 | 大钟寺发布站与新轴运营平台：不只建空间，而是设常设运营职能 | 不移植 DIFC 法律与牌照制度；不做封闭办公园区；招商目标不等于创新绩效 | 该机制依赖单一辖区内的特殊监管与牌照安排；本地不具备等价制度容器，若只复制物理空间而无常设运营职能与持续预算，将退化为出租型园区 |
 | HUMAIN / AWS AI Zone | 芯片—网络—平台—模型—应用—人才的全栈组织链 | 众智园与海乌算力协同：把算力、验证、开发者训练、企业试用与场景采购编成持续服务 | 不用投资额、设备量代替利用率与城市公共价值；不引用为本项目的资金或容量依据 | 全栈链条依赖单一主导方对各环节的统一调配；海乌协同为多主体协议关系，协议未定时链条只能以测试规范形式存在，任何“全栈已就绪”的表述都不成立 |
-| NEOM THE LINE | 近邻服务单元、数字孪生预演、按需动态配置 | 全轴场景测试与运营模拟：以孪生预演公共空间调度与气候响应 | 不复制 170 公里巨构与绿地新城逻辑；不声称人口、零碳与预测服务已兑现；必须补同意、最小化、退出与人工复核 | 该机制以新建、可全量建模的场地为前提；海淀为高度建成区，孪生数据必然不完整，一旦用其结果限制人员通行或替代人工判断即应停用 |
+| NEOM THE LINE | 分期与按需驱动的开发方式、服务与工作与文化功能之间的近接与连通性、项目方倡导的可持续、宜居与创新原则 | 全轴场景测试与运营模拟：以分期实施与按需响应组织公共空间开放节奏与场景接入顺序 | 不复制 170 公里巨构与绿地新城逻辑；不引用五分钟生活圈、AI 自动化服务、认知城市或数字孪生等该官方页面已不再展示的旧主张；气候数字孪生是本方案自身提出的模拟方法，不是 NEOM 已证实的成果；必须补同意、最小化、退出与人工复核 | 该机制以真正的分期与需求响应为前提；若海淀新轴无法分阶段实施或响应实际使用需求，该机制不成立；气候数字孪生的可信度取决于本方案自身数据完整性与模型验证，不依赖 NEOM 数据或案例 |
 
 本地化后的组合顺序是：**气候公共空间 → 科研与人才锚点 → 常设运营机构 → 双城绿色算力协作 → 有权利边界的数字孪生**。顺序本身就是设计判断：先把公共空间做成不依赖设备也成立的好空间，再叠加智能系统。上表最后一列的作用是让后续团队在深化时先检查失效条件是否已经出现——若已出现，应当替换机制而不是继续套用案例。本轮不新增其他地区案例，因为其证据尚未登记。
 
 ### 未来城市形态的区域背景
 
-区域气候背景显示：2021—2025 年北京**全市**年降水量在 482—924 mm 之间，五年均值 766.4 mm，呈现总体偏湿但丰枯波动显著的特征；同一年份内北京各区之间差异明显（`TODO(EVIDENCE-ID)`：需为北京市水务局历年水资源公报与水务统计年鉴登记条目）。空气质量方面，2021—2025 年北京 PM2.5 年均浓度总体下降，2025 年海淀区均值低于全市均值（`TODO(EVIDENCE-ID)`：需为北京市生态环境局历年公开发布登记条目）。**这些是全市或区级口径，不能冒充 43.6 平方公里研究区的站点观测**，因此本方案只用它们支撑“旱涝并存、需要三态切换的公共空间”这一设计前提，不用它们推导任何工程容量。
+区域气候背景显示：2021—2025 年北京**全市**年降水量在 482—924 mm 之间，五年均值 766.4 mm，呈现总体偏湿但丰枯波动显著的特征；同一年份内北京各区之间差异明显 [source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]。空气质量方面，2021—2025 年北京 PM2.5 年均浓度总体下降，2025 年海淀区均值低于全市均值 [source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]。**这些是全市或区级口径，不能冒充 43.6 平方公里研究区的站点观测**，因此本方案只用它们支撑“旱涝并存、需要三态切换的公共空间”这一设计前提，不用它们推导任何工程容量。
 
 **设计判断**：以中轴线的三项独特对应加三项本地规划推论确立空间组织方式，再用五个中东机制及其失效条件确立运营组织方式，两者按固定顺序组合。
 **判断理由**：世界级创新生态不是案例堆叠，而是把可复核的组织机制按顺序装进空间；顺序错了（先上智能设备再补公共空间）会导致公共价值流失。
@@ -358,7 +358,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 海淀—乌兰察布长期运营模型
 
-乌兰察布集宁大数据产业园属于国家算力枢纽起步区，并面向京津冀高实时性需求（`TODO(EVIDENCE-ID)`：需为国家发展改革委发改高技〔2021〕1843 号复函登记条目）；内蒙古自治区政府公开报道提到两条直通北京的 144 芯点对点光缆及约 4.2 ms 的端到端时延（`TODO(EVIDENCE-ID)`：需为自治区政府 2025-06-25 与 2024-07-10 报道登记条目）；工信部公开材料记录了乌兰察布**某一特定数据中心**当时的年均 PUE 1.32、自然冷却月份月度 PUE 约 1.22、可再生能源占比 40% 以上与约 10 个月自然冷源条件（`TODO(EVIDENCE-ID)`：需为工信部 2021-03-25 公开材料登记条目）；海淀区与乌兰察布市已签署人工智能产业合作备忘录，政府报道亦提到“海乌绿色智算服务平台”合作（`TODO(EVIDENCE-ID)`：需为海淀区政府 2024-04-15 与自治区政府 2025-06-25 材料登记条目）。
+乌兰察布集宁大数据产业园属于国家算力枢纽起步区，并面向京津冀高实时性需求 [source:NDRC-COMPUTE-HUB-REPLY-2021]；内蒙古自治区政府公开报道提到两条直通北京的 144 芯点对点光缆及约 4.2 ms 的端到端时延 [source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]；工信部公开材料记录了乌兰察布**某一特定数据中心**当时的年均 PUE 1.32、自然冷却月份月度 PUE 约 1.22、可再生能源占比 40% 以上与约 10 个月自然冷源条件 [source:MIIT-DATACENTER-CASE-2021]；海淀区与乌兰察布市已签署人工智能产业合作备忘录，政府报道亦提到“海乌绿色智算服务平台”合作 [source:BJHD-COOPERATION-2024]、[source:NMG-NETWORK-REPORT-2025]。
 
 必须同时声明这些条件的**适用边界**：光缆直达北京／亦庄不等于物理直达海淀；约 4.2 ms 是报道口径的链路指标，不是应用级 SLA，本方案不写“4.2 ms 直达海淀”；起步区 PUE 目标是集群建设目标，不是所有中心的实测值，也不能推广为全乌兰察布或当前平均水平；已签署的合作备忘录不能证明容量、价格、SLA、合同或预算；未见公开的技术架构、运营审计与计费方式，因此不得称其为成熟运行系统。**“双城计算架构”是本方案基于上述既有条件提出的可审计调度模型（proposal inference），不是官方已经定型的系统。**
 
@@ -420,7 +420,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **故障转移的城市侧表现**：当外部链路失效时，站点显示降级状态并切换到人工服务；不允许出现“设备黑屏但无人可问”的情况。
 - **传统市政融合**：供水、排水、供电、通信与环卫的现状容量未知，本方案把它们列为正式深化的前置条件，不做负荷测算。
 
-约束图层 `geometry/constraints.geojson` 当前为空要素集合 [data:geometry/constraints.geojson#CONSTRAINTS]，`#CONSTRAINTS` 目前只是占位锚点；文保紫线、河道蓝线、绿线、道路红线与轨道控制线数据到位后才能填充，并据此复核上述全部空间动作（`TODO(EVIDENCE-ID)`：需为官方控制线数据登记来源条目并同步更新该图层）。
+约束图层 `geometry/constraints.geojson` 当前为空要素集合 [data:geometry/constraints.geojson#CONSTRAINTS]，`#CONSTRAINTS` 目前只是占位锚点；文保紫线、河道蓝线、绿线、道路红线与轨道控制线数据到位后才能填充，并据此复核上述全部空间动作。**本轮检索未在公开渠道找到可核验坐标系与审批状态的官方控制线数据源**，因此不为其编造来源记录，继续标注为未解决的数据缺口，其可用性判定依据仍为 [source:SOURCE-REGISTRY]。
 
 **设计判断**：交通与市政以“缝合断点＋把算力变成有人负责的城市设施”为主，不做工程方案。
 **判断理由**：本项目最影响日常体验的不是新建道路，而是既有断点；同时端侧算力若不与日常服务合设，就会变成无人使用的孤立设备。
@@ -552,28 +552,24 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - `templates/proposal.md`、`skills/urban-design-ai-submission/SKILL.md`
 - 本提交包：`sources.json`、`assumptions.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`report/copyright_statement.md`
 
-### 待集成方登记的外部一手来源（TODO(EVIDENCE-ID)）
+### 已登记的外部一手来源索引
 
-以下材料已在正文中按其适用边界使用，但尚未进入本包 `sources.json`；本轮不新造 source 标识，请集成方按 `data/source_registry.json` 的字段规范登记后回填引用：
+以下 35 条外部一手来源已按 `data/source_registry.json` 的字段规范登记进本包 `sources.json`，并在正文中以 `source:ID` 形式的标签引用；每条记录均包含 `title`、`publisher`、`published_date`、`accessed_date=2026-08-08`、`url`、`source_type`、`authority_level`、`usage`、`license_summary` 与 `risk_note`。
 
-1. `TODO(EVIDENCE-ID)`：国家铁路局“京张铁路”公开页面——1909 年京张本线的起讫与自主建设事实。
-2. `TODO(EVIDENCE-ID)`：内蒙古自治区党委机构编制委员会办公室京绥铁路历史遗存页面、国家铁路局京张高铁工程概况页面——平绥／京包演进链。
-3. `TODO(EVIDENCE-ID)`：北京交通大学与新京报相关公开报道——鸡鸣山煤矿支线的煤炭外运与铁路燃料供给功能。
-4. `TODO(EVIDENCE-ID)`：UNESCO 世界遗产名录第 1714 号条目、北京市文化和旅游局、北京市规划和自然资源委员会及《北京中轴线保护管理规划》公开页面——中轴线长度、构成要素与保护要求。
-5. `TODO(EVIDENCE-ID)`：北京市水务局 2021—2025 年水资源公报与水务统计年鉴——全市年降水量序列与区间差异。
-6. `TODO(EVIDENCE-ID)`：北京市生态环境局 2021—2025 年 PM2.5 年度发布——全市与海淀区年均浓度。
-7. `TODO(EVIDENCE-ID)`：国家发展改革委发改高技〔2021〕1843 号复函——国家算力枢纽节点与起步区定位。
-8. `TODO(EVIDENCE-ID)`：内蒙古自治区政府 2025-06-25 与 2024-07-10 公开报道——144 芯点对点光缆与端到端时延报道口径、海乌绿色智算服务平台合作。
-9. `TODO(EVIDENCE-ID)`：工业和信息化部 2021-03-25 公开材料——特定数据中心的年均／月度 PUE、可再生能源占比与自然冷源月数。
-10. `TODO(EVIDENCE-ID)`：北京市海淀区政府 2024-04-15 公开材料——海淀与乌兰察布人工智能产业合作备忘录。
-11. `TODO(EVIDENCE-ID)`：Masdar City、MBZUAI、Dubai AI Campus / DIFC、HUMAIN（PIF、AWS）、NEOM THE LINE 的项目方与主办机构公开页面——五个案例的机制说明，须登记为项目方材料等级。
-12. `TODO(EVIDENCE-ID)`：官方控制线数据（文保紫线、河道蓝线、绿线、道路红线、轨道控制线）——用于填充 `geometry/constraints.geojson` 并复核 `#CONSTRAINTS` 锚点。
+1. 京张铁路与平绥—京包演进（5 条）：[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]——1909 年京张本线起讫、平绥—京包后续演进链、鸡鸣山煤矿支线的能源供给史事实。
+2. 北京中轴线遗产说明与保护管理规划（4 条）：[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]——中轴线遗产列入事实、构成要素与保护规划范围，仅支撑设计方法转译，不构成遗产关联证据。
+3. 北京市水资源公报与年鉴（5 条）：[source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]——2021—2025 年全市年降水量序列。
+4. 北京市生态环境局 PM2.5 年度发布（5 条）：[source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]——2021—2025 年全市与 2025 年海淀区 PM2.5 年均浓度。
+5. 海淀—乌兰察布算力协同政府与部委材料（5 条）：[source:NDRC-COMPUTE-HUB-REPLY-2021]、[source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]、[source:MIIT-DATACENTER-CASE-2021]、[source:BJHD-COOPERATION-2024]——国家算力枢纽节点定位、光缆与时延报道口径、特定数据中心 PUE 案例、海乌合作备忘录。
+6. 中东五案例的项目方与主办机构材料（11 条）：[source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]——五个案例的机制说明，`authority_level` 均登记为项目方或主办机构自述材料，不能单独证明绩效已经兑现。
+
+**未解决的来源缺口**：官方控制线数据（文保紫线、河道蓝线、绿线、道路红线、轨道控制线）在本轮检索的公开渠道中仍未找到可核验坐标系与审批状态的来源；本方案不为其编造 source 记录，继续标注为数据缺口，其可用性判定依据为 [source:SOURCE-REGISTRY]，并据此约束 `geometry/constraints.geojson#CONSTRAINTS` 与相关空间动作的复核顺序。
 
 ### 机器可读引用索引
 
-[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]；[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]；[metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:floor_area_ratio]；[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-004]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CONSTRAINTS]、[data:geometry/phasing.geojson#PHASE-001]。
+[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]、[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]、[source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]、[source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]、[source:NDRC-COMPUTE-HUB-REPLY-2021]、[source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]、[source:MIIT-DATACENTER-CASE-2021]、[source:BJHD-COOPERATION-2024]、[source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]；[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]；[metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:floor_area_ratio]；[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-004]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CONSTRAINTS]、[data:geometry/phasing.geojson#PHASE-001]。
 
-**设计判断**：参考资料分为“仓库内依据”“待登记外部一手来源”“机器可读引用索引”三段，外部来源一律以 `TODO(EVIDENCE-ID)` 待登记，不先行造标识。
-**判断理由**：本方案的核心主张大量依赖仓库外的公开一手材料；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
-**图层／指标／标准对应**：本章索引覆盖全部 7 条 source、6 条 standard、15 条 depth、6 项 metric 与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
-**资料缺口**：上列 12 项外部来源尚未进入 `sources.json`；`proposal.en.md` 译文尚未生成。
+**设计判断**：参考资料分为“仓库内依据”“已登记外部一手来源索引”“机器可读引用索引”三段，35 条外部来源已逐条登记 `sources.json` 并在正文标注引用，唯官方控制线数据仍如实标注为未登记缺口，不为其编造标识。
+**判断理由**：本方案的核心主张大量依赖仓库外的公开一手材料；逐条登记并标注 `authority_level`、`usage`、`risk_note` 才能让审查方复核每一句设计判断的证据等级，而不是把一批材料笼统合并成一条来源；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
+**图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条 scaffold + 35 条新登记）、6 条 standard、15 条 depth、6 项 metric 与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
+**资料缺口**：官方控制线数据仍未登记，见上文“未解决的来源缺口”；`proposal.en.md` 译文尚未生成。
