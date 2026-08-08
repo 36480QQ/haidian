@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 | Review question | Readable answer | Primary verification entry |
 | --- | --- | --- |
-| Brief alignment | Three scopes, three key areas, three positions, five functions and agent.1–agent.6 form one belt–three nodes–scenarios–operations chain. | compliance_matrix.json, taskbook-crosswalk.json, scope chapters |
+| Brief alignment | Three scopes, three key areas, three zones/two wings, three positions, five functions and agent.1–agent.6 form one belt–three nodes–scenarios–operations chain; regional interfaces remain conceptual suggestions, not partnership commitments. | compliance_matrix.json, taskbook-crosswalk.json, regional-ecosystem.json, scope chapters |
 | Originality | “Civic pulse + One Component, One Proof-Mile”: every scenario has an ordinary equivalent, an accountable owner, positive/negative evidence, a receipt and a retirement decision. | civic-pulse-protocol.json, proof-mile-delivery.json |
 | AI and planning innovation | AI organizes questions, supplies explainable assistance and returns evidence; it does not replace planning, procurement, medical or legal decisions. Spatial moves land in three stations, slow routes, public space and bounded tests. | scenario-operation-matrix.json, key-area-node-plans.json |
 | Implementation feasibility | Move from ordinary service base to bounded prototype, supervised public window, then scale, repair or retire; eight action packages specify owners, dependencies, acceptance and stop rules. | operations-matrix.json, construction-readiness.json, phasing chapter |
