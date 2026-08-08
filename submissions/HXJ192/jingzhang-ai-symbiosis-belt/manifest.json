@@ -202,6 +202,13 @@
       "role": "geometry",
       "required": true,
       "sha256": "2a708bab96f3255e9135394061e9648f5cc243b8ee4b88935a59fdc506473c25"
+    },
+    {
+      "path": "assets/figures/logo-concept.png",
+      "role": "brand_logo_concept",
+      "sha256": "pending",
+      "required": false,
+      "note": "Logo concept for brand identity"
     }
   ],
   "validation_claim": {
