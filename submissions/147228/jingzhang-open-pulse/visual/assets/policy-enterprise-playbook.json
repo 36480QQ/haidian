@@ -76,6 +76,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-010",
+      "title": "共享算力与低碳服务准入",
+      "policy_instrument": "shared_compute_and_energy_gate",
+      "enterprise_stage": "prototype_to_reliable_service",
+      "problem": "Small firms may need compute access, but hidden energy, queue, security and maintenance costs can make a prototype impossible to operate responsibly.",
+      "jingzhang_interface": "At the Zhongzhi Garden test room, publish queue rules, workload boundary, energy state, offline fallback, security owner, service window and lifecycle cost note.",
+      "operator": "compute service operator + energy lead + test-room safety lead",
+      "required_evidence": ["access and queue record", "energy and load note", "security review", "offline fallback drill"],
+      "metric": "shared_compute_windows_with_energy_security_and_fallback_record",
+      "stop_gate": "No accountable operator or no safe fallback means the service remains a closed lab capability.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-SEOUL-AI-FOUNDATION"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-005",
       "title": "结果导向的公共 AI 采购闸门",
       "policy_instrument": "outcome_based_public_procurement",
