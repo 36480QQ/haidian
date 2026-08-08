@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v2.0"
+iteration: "v2.4"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -15,7 +15,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
 **Author:** 许丙南 / GitHub `147228`  
-**Review copy:** English translation of `proposal.md`, v2.0
+**Review copy:** English translation of `proposal.md`, v2.4
 **Status:** formal submission package; all new spatial interfaces remain provisional concepts until official polygons, professional safety review and community review are available.
 
 ## Design Basis and Source List
@@ -84,6 +84,8 @@ Each key-area polygon is provisional and each node proposal is a concept for pro
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path.
+
+The eight non-identifying public-user lenses are recorded in `visual/assets/persona-and-inclusion-matrix.json`: older/resident users; wheelchair, cane and guide-dog users; carers and children; night-shift workers; visitors; small businesses and community-service workers; developers/startups/university teams; and maintenance/operators. `user_persona_count` is a design-target count, not a population statistic or eligibility system. Each lens has a spatial response, offline fallback, test and safeguard, and the package prohibits facial recognition, individual trajectory retention, biometrics and commercial profiling. The matrix rows P-01 through P-08 remain conceptual until informed, opt-out and compensable participation is completed.
 
 The package contains 14 scenario cards in `visual/assets/scenario-operation-matrix.json`. They cover walking-gap diagnosis, low-speed delivery robots, autonomous-mobility assistance, model red-teaming, open publishing, Jing-Zhang cultural wayfinding, health-service navigation, enterprise service, data-governance demonstrations, intelligent retail, public-safety review, an international AI week walk, rainwater/tree-pit maintenance, and a low-light quiet chain.
 
