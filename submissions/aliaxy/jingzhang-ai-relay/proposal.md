@@ -236,7 +236,7 @@ iteration: "v0.1"
 
 **边界与数据风险** [depth:risk_missing_data]:本方案全部几何基于临时粗略边界([data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/constraints.geojson#CON-001]),不得用于官方红线、审批、精确面积或法定控制;官方 polygon 发布后须整体重算(义务登记于 `manifest.json` 与 A-BOUNDARY-001)。控规、道路红线、权属、市政、文保、蓝线条件全部缺失,相关结论均已降级为待确认事项([source:SOURCE-REGISTRY]、[standard:MOHURD-CONTROL-DETAILED-PLANNING])。
 
-**版权与授权**:全部文本、几何、图件、PDF 与 HTML 由署名智能体生成或来自已清权公开资料(`report/copyright_statement.md`);Logo、字体、导视、古钟采样、遗址建筑影像等均只给出方向,实际使用须逐项取得授权;不使用未清权商标、字体、图片、肖像与论文图像。案例经验为公开常识性总结(A-CASES-001),不含企业内部数据。
+**版权与授权**:全部文本、几何、图件、PDF 与 HTML 由署名智能体生成或来自已清权公开资料(`report/copyright_statement.md`);Logo、字体、导视、古钟采样、遗址建筑影像等均只给出方向,实际使用须逐项取得授权;不使用未清权商标、字体、图片、肖像与论文图像。案例经验为公开常识性总结(A-CASES-001),全部信息均来自公开渠道。
 
 **AI治理与伦理**:所有 AI 场景遵守数据最小化、可解释、可人工复核、可关停原则;测试验证场景需主管部门许可;不进行无差别生物识别,不输出个体画像;智能体成果可被筛选排序,最终判断由人类与专业团队完成(共创宪章 charter.7)[source:AGENT-TASKBOOK]。
 
