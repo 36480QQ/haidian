@@ -1,11 +1,59 @@
 {
-  "schema_version": "0.1.0",
   "assumptions": [
     {
+      "id": "A-BOUNDARY-001",
+      "impact": "All geometry-derived areas and ratios are low-confidence submission measurements and must be recomputed from official georeferenced redlines before statutory or professional scoring use.",
+      "statement": "Repository provisional geometry is used because no official redline is available; it is not an official boundary or precise statutory area basis.",
+      "status": "pending_official_data"
+    },
+    {
       "id": "A-CONTROLS-001",
-      "status": "pending_professional_confirmation",
-      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
-      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+      "impact": "Development intensity remains unknown; conceptual values cannot be presented as approved planning controls.",
+      "statement": "Statutory controls, including FAR, height, density, setbacks, control lines, and approved land-use conditions, are missing.",
+      "status": "pending_official_data"
+    },
+    {
+      "id": "A-EXISTING-001",
+      "impact": "Retain-renovate-demolish, capacity, displacement, and implementation claims remain conceptual pending survey and title review.",
+      "statement": "Existing building footprints, heights, uses, ages, condition, parcel boundaries, and ownership records are missing.",
+      "status": "pending_official_data"
+    },
+    {
+      "id": "A-INFRASTRUCTURE-001",
+      "impact": "Mobility and infrastructure layers are organizational concepts, not engineering alignments or feasibility conclusions.",
+      "statement": "Official transport redlines, sections and operations data, and municipal, utility, fire, flood, heritage, and public-facility data are missing.",
+      "status": "pending_official_data"
+    },
+    {
+      "id": "A-DESIGN-001",
+      "impact": "These layers communicate a proposal only and are not observed conditions, statutory controls, approvals, or construction documents.",
+      "statement": "Land use, building, road, green-space, public-space, and phasing layers are conceptual generated design layers clipped to provisional geometry.",
+      "status": "conceptual_proposal"
+    },
+    {
+      "id": "A-CONSENT-001",
+      "impact": "No archive item may be collected, published, reused for AI, or retained beyond its consent scope; withdrawal must propagate to every governed copy and index.",
+      "statement": "The skill-archive requires granular consent for each contribution, separate visibility choices, revocable permissions, and an accessible withdrawal workflow.",
+      "status": "required_before_pilot"
+    },
+    {
+      "id": "A-AI-CONTENT-001",
+      "impact": "Unlabeled or unversioned AI-derived content cannot enter the public archive or support an outcome claim.",
+      "statement": "AI-derived content requires clear labeling, provenance links, model and prompt-context versioning, edit history, and a visible distinction from resident-authored material.",
+      "status": "required_before_pilot"
+    },
+    {
+      "id": "A-SAFETY-001",
+      "impact": "Affected content or activity must pause safely, preserve an audit record, and route to an accountable trained reviewer before publication or action.",
+      "statement": "Activity safety requires human review for sensitive, contested, or higher-risk outputs, plus a documented failure-to-human path when automation is uncertain, unavailable, or challenged.",
+      "status": "required_before_pilot"
+    },
+    {
+      "id": "A-OUTCOMES-001",
+      "impact": "Outcome values remain unknown and may only be reported after consented, quality-checked pilot measurement with versioned definitions.",
+      "statement": "Pilot outcome metrics have no observed baseline; numerator, denominator, cohort, service window, sampling, consent, and exclusion rules must be fixed before collection.",
+      "status": "to_be_measured"
     }
-  ]
+  ],
+  "schema_version": "0.1.0"
 }
