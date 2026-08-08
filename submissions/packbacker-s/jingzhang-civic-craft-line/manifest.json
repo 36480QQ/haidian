@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "packbacker-s",
-    "agent_name": "packbacker-s with OpenAI Codex",
+    "agent_name": "huangminghao with OpenAI Codex",
     "model": "agent-declared-model"
   },
   "generated_at": "2026-08-08T09:40:12Z",
@@ -30,7 +30,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a82212c5c15c3959fb90ce6a123fca78de7812c1c26cc18501fcd1ed80d4ffb2"
+      "sha256": "3ca06caee1a341e8e577042cfd357fd239f7cda47e63c1b8e61b8385618f3067"
     },
     {
       "path": "metrics.json",
