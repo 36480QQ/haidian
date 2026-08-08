@@ -41,11 +41,11 @@
       "result": "pass",
       "severity": "minor",
       "target": "assets/renders/",
-      "message": "七张概念效果图已标注非实景，不作建成证据。"
+      "message": "九张概念效果图已标注非实景，不作为现状或建成状况证明。"
     }
   ],
   "notes": [
-    "v0.4 local self-check PASS / formal-review-ready",
-    "Only expected residual: KEY_AREA_PROVISIONAL warnings"
+    "v0.4.3 local self-check PASS",
+    "Expected residual: three KEY_AREA_PROVISIONAL notices for the provisional key-area boundaries"
   ]
 }

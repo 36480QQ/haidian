@@ -144,8 +144,8 @@
       "path": "changelog.md",
       "role": "package_file",
       "required": true,
-      "sha256": "d2bf6d4f54b344e731cef59aa822afd1438e09a1c58b2cf9a137d8085ac65adc",
-      "bytes": 2552
+      "sha256": "b5f47afd2367de05b6a27c30fcb7431940fd121efee35ed65d035fbbc74d8a5f",
+      "bytes": 3024
     },
     {
       "path": "compliance_matrix.json",
@@ -214,8 +214,8 @@
       "path": "geometry/phasing.geojson",
       "role": "package_file",
       "required": true,
-      "sha256": "4c3780bc411403b9de1e8123693c355b66955a113f1ec8605aadeaa39933b623",
-      "bytes": 242592
+      "sha256": "e42a1f2d46da93561cd1fd5f103e746e23a41932107528ac893a42ba1d8bf007",
+      "bytes": 242633
     },
     {
       "path": "geometry/public_space.geojson",
@@ -247,15 +247,15 @@
       "path": "metrics.json",
       "role": "package_file",
       "required": true,
-      "sha256": "7d0c52d492553190b733a6ab941e4a3949554680c0ec5a3a7d9e7b912ecce00a",
-      "bytes": 8452
+      "sha256": "3f6d941d9b9b739bee31dc15e41cd6de3849a032da5c5268584eeac607ae0728",
+      "bytes": 8980
     },
     {
       "path": "proposal.md",
       "role": "package_file",
       "required": true,
-      "sha256": "48e7463326440e5ac8d385377167b95ee083aae9a614a23f8b180f468030fd29",
-      "bytes": 42749
+      "sha256": "e7d5e75bde67753842ad4591f652110edf57c9e2485fa10cf7ebdf57328cfa49",
+      "bytes": 44228
     },
     {
       "path": "report/copyright_statement.md",
@@ -268,29 +268,29 @@
       "path": "report/narrative.md",
       "role": "package_file",
       "required": true,
-      "sha256": "a65c2059f93ff20b9f83132ef8f7713feb849114206c4d486542b5415e161ab3",
-      "bytes": 3366
+      "sha256": "8b4747fc92232a8bac9e20970b4292df4f2075dfa07b613d9591e0126488d417",
+      "bytes": 3499
     },
     {
       "path": "report/proposal.html",
       "role": "package_file",
       "required": true,
-      "sha256": "73401639b228b518d4f6e24f187a9b6fd32334a55082fee945cc013bdf69e192",
-      "bytes": 56223
+      "sha256": "9fedaca1508fb738080ba924e9ed36d220852edbab923306a9a17d52510056a9",
+      "bytes": 96578
     },
     {
       "path": "self_check.json",
       "role": "package_file",
       "required": true,
-      "sha256": "362cdfe06e6c6f3221be807e546529f310508c4767eb86783c68dc9cadb9f941",
-      "bytes": 1854
+      "sha256": "882391d2621b98647206430e996a29eba6e7341909b26755424fc9e8397b0351",
+      "bytes": 1892
     },
     {
       "path": "sources.json",
       "role": "package_file",
       "required": true,
-      "sha256": "f800a5b045ba895eeeeb555d6f2a7663bb906b4d9e41b6ab83d394fcc6d3e21e",
-      "bytes": 10421
+      "sha256": "f0dafaeee2bc922c1344c88c7bdf63e8f03c46c4aec91f0495a8dec2bd7f1741",
+      "bytes": 10500
     },
     {
       "path": "standard_matrix.json",
@@ -310,26 +310,26 @@
       "path": "visual/assets/scenario-cards.json",
       "role": "package_file",
       "required": true,
-      "sha256": "4d027ac4a9d8243039cc0b8268d2b9fcac41952b3106ce245053e48b199ae6e8",
-      "bytes": 2676
+      "sha256": "2cff91d20f452c251f5005c5b89ece006a6e9a3d68cc1f7b843a80034e4a8efd",
+      "bytes": 2709
     },
     {
       "path": "visual/assets/twelve-acts.json",
       "role": "package_file",
       "required": true,
-      "sha256": "24fe58ea54201f26767ceae9cd7502bf9024b0faf7413ba941d2c2f3c50893ac",
-      "bytes": 3939
+      "sha256": "12c86b859213a848abd2672b0797e10f9d3e4138e7b158fbe4bbbaccd84b7396",
+      "bytes": 3996
     },
     {
       "path": "visual/index.html",
       "role": "package_file",
       "required": true,
-      "sha256": "724c326dde6e51340bb0d1b8c899872489a0240e53f4dd4fb91f854ff1713860",
-      "bytes": 25266
+      "sha256": "144d1b0a9fe44855cd23a9f66c363fffd510defc8b18ddc81409b864e5e0d3a8",
+      "bytes": 26893
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
   }

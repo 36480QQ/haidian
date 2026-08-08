@@ -45,7 +45,8 @@
       "confidence": "medium",
       "assumptions": [
         "Conceptual green proposals on provisional boundary."
-      ]
+      ],
+      "display_name_zh": "绿地系统几何面积比（概念方案）"
     },
     "public_space_ratio": {
       "status": "known",
@@ -58,8 +59,9 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
-        "Includes perception sections and landmark plazas as public-space proposal nodes."
-      ]
+        "Includes perception-section polygons, landmark plazas and robot-service-hub nodes; not a statutory public-space provision ratio."
+      ],
+      "display_name_zh": "公共空间节点几何面积比（概念方案）"
     },
     "key_area_count": {
       "status": "known",
@@ -93,8 +95,9 @@
       "formula": "mean(1 - weighted(shade,green_view,enclosure,stay,night))",
       "confidence": "low",
       "assumptions": [
-        "Model estimates from open proxies; not field measurements."
-      ]
+        "Model estimate from open proxies; not field-measured or respondent-derived."
+      ],
+      "measurement_type": "model_estimate"
     },
     "high_shortfall_section_count": {
       "status": "known",
@@ -106,8 +109,9 @@
       "formula": "count(sections with shortfall_score >= 0.45)",
       "confidence": "low",
       "assumptions": [
-        "Threshold 0.45 is a concept priority cut for Phase-1."
-      ]
+        "Count derived from model-estimated shortfall scores using the concept priority threshold of 0.45; not a field finding."
+      ],
+      "measurement_type": "model_estimate_threshold_count"
     },
     "scenario_card_count": {
       "status": "known",
@@ -267,10 +271,10 @@
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(length_m of roads with facility_role=robot_low_speed_shared_corridor) in EPSG:4548",
+      "formula": "length(RD-ROBOT-1)+length(RD-ROBOT-2)+length(RD-ROBOT-X) in EPSG:4548; cumulative centerline length, not a single-route extent",
       "confidence": "medium",
       "assumptions": [
-        "Conceptual robot shared corridors using local_access/branch classes; speed cap ≤6 km/h; not official lane designation."
+        "Cumulative centerline length of two parallel side alignments and one cross-connector; effective north-south service extent is approximately the 9.3 km spine. Concept speed cap ≤6 km/h; not an approved lane designation."
       ]
     },
     "robot_hub_count": {
