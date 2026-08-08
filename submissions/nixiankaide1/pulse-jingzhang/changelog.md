@@ -56,3 +56,19 @@
 - 31266630783（英文译稿提交）：success
 - 31266771056（changelog 提交）：success
 - 本次英文材料推送触发的新 run 排队中
+
+## v0.4 - 2026-08-09
+
+证据链增强：官方边界状态决策依据纳入方案。
+
+- 发现维护者决策文档 `docs/data-boundary-decision.md`（2026-07-19）：北京市公共数据开放平台无本项目可验证正式 polygon；组织方数据缺口不阻断内容评分，评审者不得因此扣分
+- `sources.json` 新增来源条目 `DATA-BOUNDARY-DECISION`（共 11 条）
+- `proposal.md` 与 `proposal.en.md` 边界限制段落加入 `[source:DATA-BOUNDARY-DECISION]` 引用（第 2 章）
+- 重渲染 `report/proposal.html` / `report/proposal.en.html`；manifest 哈希已刷新
+- self_check 复跑 PASS（formal-review-ready）；participant_preflight PASS
+
+### 官方边界复算待办（外部条件阻塞）
+
+- 已 4 次核查上游（全树搜索 / 提交历史 / Issue/PR / geometry 目录）：官方 polygon 未发布
+- 维护者决策文档确认：该数据缺口不阻断内容评分，评审者不得扣分
+- 复算执行手册：`/tmp/opencode/recalculation-runbook.md`（8 步流程，触发条件：官方 polygon 发布）
