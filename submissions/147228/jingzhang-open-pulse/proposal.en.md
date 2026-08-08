@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v2.4"
+iteration: "v2.6"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -15,7 +15,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
 **Author:** 许丙南 / GitHub `147228`  
-**Review copy:** English translation of `proposal.md`, v2.4
+**Review copy:** English translation of `proposal.md`, v2.6
 **Status:** formal submission package; all new spatial interfaces remain provisional concepts until official polygons, professional safety review and community review are available.
 
 ## Design Basis and Source List
@@ -254,6 +254,10 @@ The implementation handoff is deliberately inspectable: `operations-matrix.json`
 The package now separates “ready to discuss” from “ready to build or open”. `visual/assets/construction-readiness.json` applies five gates: evidence/site lock; a public-route and passive-component mock-up; wind, heat, water and lifeline coordination; a bounded, staffed and time-limited window; and a public retain/redesign/retire decision [metric:construction_readiness_gate_count]. Each gate names entry evidence, outputs, pass and stop conditions, an ordinary non-AI baseline and a maintenance response. It explicitly rejects construction drawings, statutory plans, procurement specifications, cost estimates and implementation approval.
 
 `visual/assets/participation-cycle.json` makes the return pass inspectable: synchronize inputs, reread changed requirements, compare peers, validate the package, publish a bounded review draft, establish field and public baselines, run a staffed window, return negative and distributional evidence, then retain, redesign or retire. Seven participant lenses [metric:participation_lens_count] have paper, staffed, multilingual or no-app routes. The current package records repository sync, local validation and peer comparison as known review activities, while field baseline, resident consultation and public pilot remain `unknown` or `not_started`; no consent, microclimate result or health outcome is inferred.
+
+![Construction gates and participation state](assets/figures/construction-participation.en.png)
+
+This fixed evidence figure puts the five gates and the participation state on one review surface: `known` is limited to repository sync, local validation and peer comparison; field baseline, resident consultation and public pilot remain `unknown` / `not_started`. It is a visual index of the JSON records, not a construction drawing, permit, resident-consent record or field-performance result.
 
 ## v1.8 Reviewer-Visible Evidence Layer
 

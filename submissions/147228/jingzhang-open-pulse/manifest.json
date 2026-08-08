@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "05d3632dd50bae0ee6f7cbf5c0c1a3306ca8c0d1e9f8e729c482897a138b411a"
+      "sha256": "6b9e467f89b5b5bd24f972874b58adfcfa8d83334985db2372372982a31f25fd"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "314670c899f89aa7c8569e803258a78d877ca1ef3cce990c56fd67ed931d3d9b"
+      "sha256": "e97d367ac8573be60d8b3c60b60b19706b7b5c810d75be1f5b1eadab5333edbc"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8dce4caa5ffac2d520870b21c22f277c23b5e6eea674eb5ac9cc2d1f359a6b4e"
+      "sha256": "478e893ee95756dee0e6588a072d9cad64ad6124a44f9bf98eac4d51fbd512b0"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a095b206c7d910570e4b0303bc353ee278866ce3227e0d40ea38bfe2c3c3f18d"
+      "sha256": "dbbacab8dc5db7b90a5a554887f67919e2a6ab2230a577b4b136aaf1ae3520be"
     },
     {
       "path": "report/narrative.md",
@@ -107,20 +107,20 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9bd121bf1297a61d3d9ba9ae56086a66495d6919cd9c6b33840d2b9d2135cd3f"
+      "sha256": "f69128c417239c40774bb74e2b6b7ebb7915b175495015436da06ee04b4eaa4a"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9e7cd3107b91aae2f0978958fa812319577413e4b67ab9697342408a3b711d42"
+      "sha256": "6dad15a21b843da4502762db549a48b524b170e0612275235132b4218dcaf40e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "22f0092556a54bb50e87bd5b5c1a163fee1ac33fea7e1d7e814b5c74df6528fe"
+      "sha256": "0555b770cc51cc633f281b683e5d12c38e5392cdd3c2d50c326cf3fc3b6ec02e"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -135,7 +135,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5ba0e57a7fb4ac1df7a093b9615cdc2d657ba6859da3b7b3340028795cd69e3e"
+      "sha256": "9adb032ba96c82ef35a09a9592ce0e39955b145a75cef261f487b404dfc44ff3"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "282a5cd51363cac6ccc5699780bcd118e813acfc2ef625014077e8523749c684"
+      "sha256": "5257987f36c604491b5b14b6716980ac3186f83b5fec9b926b9441372a10eae7"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7c82d042f5cac2a501d1a79e3e33a43d2a8ce58f5424fab41a39fbc5e4f4e227"
+      "sha256": "abc939853c0f63e27d0740275b8db98cd77a67f502773a2e8254f5e81e856567"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -423,7 +423,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "556baa64149be950faceb66dbd062a0ca3ba010a9657fd192ef2f5d4903ab3c8"
+      "sha256": "cd220646a272ed5b4507e8b4f560aea38e95d5000eeb363b0bed946cffc56928"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -517,6 +517,21 @@
       "role": "continuous_participation_cycle",
       "required": true,
       "sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
+    },
+    {
+      "path": "assets/figures/construction-participation.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "df0393705911726e1533280eb6aca1c76e51efebdc1e9dd237191d9020300b04"
+    },
+    {
+      "path": "assets/figures/construction-participation.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/construction-participation.png",
+      "sha256": "f14ad536c21903aac95e92daec404dade8ad1e702d8b94b453edab8b2a458743"
     }
   ],
   "validation_claim": {
