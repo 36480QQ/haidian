@@ -3,19 +3,19 @@ title: "Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt"
 author_github: "147228"
 language: "en"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v3.1 review-first edition: spatial decisions, public protocol, release gates and evidence entry points are visible before the full professional dossier."
+summary: "v3.2 review-first edition: spatial decisions, public protocol, release gates and evidence entry points are visible before the full professional dossier."
 translation_of: "proposal.md"
 proposal_format_version: "2"
-iteration: "v3.1"
+iteration: "v3.2"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **v3.1 review-first abstract:** First make the reviewer see what happens where, why it happens, who can refuse, and how it stops. The proposal carries design judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
+> **v3.2 review-first abstract:** First make the reviewer see what happens where, why it happens, who can refuse, and how it stops. The proposal carries design judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
 
-## v3.1 One-page review map: seven questions, seven evidence chains
+## v3.2 One-page review map: seven questions, seven evidence chains
 
 | Review question | Readable answer | Primary verification entry |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Risk and compliance | Provisional boundaries, unknown baselines, design targets and paper methods are not upgraded into official red lines, existing facts or approvals. Missing rights, fire, heritage, privacy, maintenance or takeover proof stops the concept. | sources.json, risk.json, v2-evidence-gate-index.json |
 | Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger. | manifest.json, metrics.json, qa-readiness.json |
 
-## v3.1 Three key areas: spatial moves before technology labels
+## v3.2 Three key areas: spatial moves before technology labels
 
 | Area | Spatial problem | Design move and perceptible deliverable | Release boundary |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 The three areas correspond to PROV-KEY-001, PROV-KEY-002 and PROV-KEY-003; these are provisional design constraints, not official red lines. The moves are conceptual suggestions for professional deepening after formal geometry, rights, controls, fire, heritage and municipal conditions are available.
 
-## v3.1 Shortest implementation contract: an ordinary route and an exit at every step
+## v3.2 Shortest implementation contract: an ordinary route and an exit at every step
 
 1. **Review:** lock the official/provisional geometry version, field baseline, rights and accountable owner; if a critical input is missing, keep the state unknown.
 2. **Base:** provide physical wayfinding, paper maps, human windows, seating/shade, water, drainage and account-free help first; ordinary service never waits for model recovery.
@@ -94,7 +94,7 @@ The policy and enterprise-development interface is recorded separately in `visua
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The overall design uses a renewal-first structure. Low-efficiency spaces are not assigned invented floor-area ratios or heights; instead, they receive a retain–renovate–demolish decision gate and a requirement for later official-control confirmation. The geometry package expresses land use, building footprints, roads, green space, public space and phasing, while `metrics.json` reports what can be recomputed from those layers.
+The overall design uses a renewal-first structure. Low-efficiency spaces are not assigned invented floor-area ratios or heights; instead, they receive a retain–renovate–demolish decision gate and a requirement for later official-control confirmation. In v3.2, the land-use layer is an eight-class, non-overlapping design partition with recomputable shares; `geometry/land_use.geojson` and `metrics.json` expose the class count and coverage while keeping every polygon provisional and non-statutory. The geometry package also expresses building footprints, roads, green space, public space and phasing.
 
 Transport and municipal systems are designed as a continuous human network: rail-station interfaces, step-free crossings, low-speed logistics windows, cycle parking, emergency access, rainwater tree pits, shade, drainage maintenance and ordinary public use. AI may assist observation or scheduling, but a resident must still be able to walk, ask, complain, receive service and leave without an app, account or biometric identification.
 
@@ -280,7 +280,7 @@ These are reviewable design deliverables, not claims that a project has been com
 
 The local review-surface record is `visual/assets/qa-readiness.json`. It records semantic HTML tables, locally linked bilingual figures and A3/A0 outputs, the offline-only runtime boundary, and the known limits that provisional geometry and unknown field baselines still require professional and public review.
 
-The implementation handoff is deliberately inspectable: `operations-matrix.json` gives each package an owner, accountable reviewer, dependency, acceptance test, stop condition, maintenance rule and relative cost band; `resource-accounts.json` states which evidence and capacity must exist before a package is released. Together with the scenario matrix and relay receipt, these files form a reviewable chain from a public question to a bounded window, a human handoff, an evidence record and a scale/redesign/retire decision.
+The implementation handoff is deliberately inspectable: `operations-matrix.json` gives each package an owner, accountable reviewer, dependency, acceptance test, stop condition, maintenance rule and relative cost band; `resource-accounts.json` states which evidence and capacity must exist before a package is released. Together with the scenario matrix and the Open Pulse test-window record, these files form a reviewable chain from a public question to a bounded window, a human handoff, an evidence record and a scale/redesign/retire decision.
 
 ### Construction readiness and continuous participation
 

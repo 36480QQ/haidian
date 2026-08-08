@@ -9,7 +9,7 @@
 
 This statement covers the formal package under `submissions/147228/jingzhang-open-pulse/`: Markdown narratives and translation, JSON metadata and analytical tables, GeoJSON geometry, generated figures, A3/A0 PDFs, offline HTML, and validation metadata. The path-level inventory is `visual/assets/copyright-ledger.json`; `manifest.json` records the package hashes. The ledger must be regenerated after any asset is edited.
 
-The v3.1 drawing set contains bilingual ten-page landscape A3 booklets (420 × 297 mm) and bilingual three-page landscape A0 boards (1189 × 841 mm). These are presentation exports of the local evidence figures, not construction documents; the PDF metadata and page boxes record the physical sizes so a reviewer can verify the intended print scale without treating the drawings as an official survey or approval set.
+The v3.2 drawing set contains bilingual ten-page landscape A3 booklets (420 × 297 mm) and bilingual three-page landscape A0 boards (1189 × 841 mm). These are presentation exports of the local evidence figures, not construction documents; the PDF metadata and page boxes record the physical sizes so a reviewer can verify the intended print scale without treating the drawings as an official survey or approval set.
 
 ## Authorship and generation
 
