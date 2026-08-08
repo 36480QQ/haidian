@@ -43,6 +43,10 @@ scenarios:
 
 依据分为四级。第一级是征集公告、智能体任务书和项目场地包 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]；第二级是仓库资料登记、标准索引和处理导航 [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]；第三级是北京市关于原点社区、百年京张实景测试和“一核多点”创新街区的公开背景，只用于判断协同方向，不代表项目已批准或任何机构承诺参与 [source:BEIJING-AI-ORIGIN-2026] [source:BEIJING-AI-DISTRICTS-2026]；第四级是六个全球案例和国家数据、AI 内容标识政策，仅用于机制启发和治理边界 [source:NATIONAL-DATA-INFRA-2025] [source:AI-CONTENT-LABEL-2025] [source:AI-PLUS-2025]。
 
+### 证据不是一次性快照：失效必须向下游传播
+
+`sources.json` 已记录 25 条来源及访问日期，但同一天访问不等于内容永久有效，也不能发现修订、替代、失联或临时边界被正式资料取代。新增 `visual/assets/evidence-freshness-policy.json`，把来源分成项目资料、临时空间数据、城市背景、政策标准和案例参考五类，规定复核触发点、建议最长未核时间、责任角色和失效动作；来源变为 `review_due`、`superseded` 或 `unavailable` 时，受影响主张、矩阵项和场景门级必须同步降级或冻结。当前只确认已有访问日期，尚未形成带内容摘要的刷新审计，因此完成刷新审计数保持为 0，临时空间数据无论多新也仍然只是 `provisional_only` [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02]。
+
 专业响应覆盖 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 与 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。当前精确红线、现状建筑、权属、控规指标、市政、交通工程与文保控制仍未取得；`geometry/site_boundary.geojson` 和三处重点区继续使用仓库临时替代范围，均不得用于审批、征地、精确面积或工程实施 [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001]。
 
 ![二次规划：从不足到任务单](assets/figures/implementation-roadmap.png)

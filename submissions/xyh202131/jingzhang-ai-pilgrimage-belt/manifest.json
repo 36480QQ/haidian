@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "46ab23cef0bc7afc387bbcc3cc9267576518845ff64b73fc534b7b2c74906155"
+      "sha256": "f2d4feac45e005d6320aa5ae7f838d7e2860fafa7b2bd39bfb182f4a2da42580"
     },
     {
       "path": "agent.json",
@@ -74,10 +74,16 @@
       "sha256": "5b03c25751d4dd67f0adfd54f34ae1575ca04e24ad9d08882da6f05188e14ce0"
     },
     {
+      "path": "visual/assets/evidence-freshness-policy.json",
+      "role": "source_governance_evidence",
+      "required": true,
+      "sha256": "f18c96994aa45c1fbf31476811dd0a96f1c4897420b0df2fefd82765b9acc44f"
+    },
+    {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c7e6f55067c84e70d27e37df0dc9d8cfd8217be58d423ce4af5c862d02f33c01"
+      "sha256": "7d181d13fbd9ce9e28d16b2462f036f6451cf113fe75e1556f6d3ec7ae00f163"
     },
     {
       "path": "report/narrative.md",
