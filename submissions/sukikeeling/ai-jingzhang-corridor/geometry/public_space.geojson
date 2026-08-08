@@ -160,46 +160,6 @@
           ]
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "id": "PUB-005",
-      "properties": {
-        "id": "PUB-005",
-        "layer": "PUBLIC_SPACE",
-        "space_type": "AI_Public_Space",
-        "source_type": "agent_generated_design",
-        "confidence": "low",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3515,
-              40.03525
-            ],
-            [
-              116.353,
-              40.03525
-            ],
-            [
-              116.353,
-              40.03675
-            ],
-            [
-              116.3515,
-              40.03675
-            ],
-            [
-              116.3515,
-              40.03525
-            ]
-          ]
-        ]
-      }
     }
   ]
 }

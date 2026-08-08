@@ -421,7 +421,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 以上机制为概念建议，待政府批准和社区协商后实施。
 
-## 指标体系、面积复算与合规矩阵 [depth:metrics_recalculation]
+## 指标体系、面积复算与合规矩阵 [metric:green_space_area_sqm] [metric:public_space_area_sqm] [depth:metrics_recalculation]
 
 | 指标 | 数值 | 单位 | 来源 | 置信度 |
 |------|------|------|------|--------|
