@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "项目说明、枚举、范围与结构化规则。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "核对正式、背景与临时资料的可用边界。"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "任务与缺口导航，不作为新增权威来源。"
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "总体设计范围临时粗略边界。"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "三处重点区域临时粗略边界。"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "征集范围、任务、面积和成果要求。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "智能体六项任务、十项原则、场景与运营要求。"
+    },
+    {
+      "id": "PLANNING-LIMITS",
+      "path": "brief/site-package/ranges/planning_limits.json",
+      "source_type": "repository_public_registry",
+      "usage": "确认法定指标缺失并禁止伪造精度。"
+    },
+    {
+      "id": "MNR-LAND-USE",
+      "path": "brief/site-package/standards/mnr_land_use_classification.md",
+      "source_type": "official_public",
+      "usage": "用地分类编码与口径。"
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN",
+      "path": "brief/site-package/standards/mohurd_urban_design_measures.md",
+      "source_type": "official_public",
+      "usage": "城市设计管理和成果深度参考。"
+    },
+    {
+      "id": "MOHURD-CONTROL-PLAN",
+      "path": "brief/site-package/standards/mohurd_control_detailed_planning.md",
+      "source_type": "official_public",
+      "usage": "控规深度和法定边界提醒。"
+    },
+    {
+      "id": "CASE-NIST-AIRMF",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "source_type": "background_only",
+      "usage": "Govern—Map—Measure—Manage 的场景风险治理框架。"
+    },
+    {
+      "id": "CASE-EU-TEF",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/testing-and-experimentation-facilities",
+      "source_type": "background_only",
+      "usage": "真实环境 AI 测试与实验设施组织方式。"
+    },
+    {
+      "id": "CASE-PUNGGOL",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict/",
+      "source_type": "background_only",
+      "usage": "产业、教育、社区和开放数字平台的区级协同。"
+    },
+    {
+      "id": "CASE-KALASATAMA",
+      "url": "https://forumvirium.fi/en/smart-kalasatama/",
+      "source_type": "background_only",
+      "usage": "居民共创与敏捷试点。"
+    },
+    {
+      "id": "CASE-SHIFT-LONDON",
+      "url": "https://shiftlondon.co.uk/dep-home/",
+      "source_type": "background_only",
+      "usage": "包容性创新区和真实城市测试床。"
+    },
+    {
+      "id": "CASE-BARCELONA-22AT",
+      "url": "https://bcnroc.ajuntament.barcelona.cat/jspui/handle/11703/123349",
+      "source_type": "background_only",
+      "usage": "生产、居住、公共服务混合的创新街区更新。"
+    },
+    {
+      "id": "CASE-QUAYSIDE",
+      "url": "https://www.waterfrontoronto.ca/news/waterfront-toronto-concludes-digital-panel-and-thanks-panelists-lasting-impact",
+      "source_type": "background_only",
+      "usage": "数字治理、隐私、独立监督和退出机制的反面提醒。"
+    }
+  ]
+}

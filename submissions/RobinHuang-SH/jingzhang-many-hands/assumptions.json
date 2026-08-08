@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "总体及三处重点区采用维护者临时粗略 polygon。",
+      "impact": "所有面积和空间关系仅供概念评审；正式红线发布后必须全量重算。"
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "容积率、高度、密度、退线和道路红线等法定控制尚未公开。",
+      "impact": "本方案不提出审批值，只给出空间原型和后续校核接口。"
+    },
+    {
+      "id": "A-EXISTING-001",
+      "status": "pending_professional_confirmation",
+      "statement": "缺少完整现状建筑、权属与拆改留调查。",
+      "impact": "建筑图层是新建概念原型，不是现状认定。"
+    },
+    {
+      "id": "A-MOBILITY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "缺少道路断面、交通量、轨道出入口和停车数据。",
+      "impact": "慢行网络仅表达连接原则，需交通专项深化。"
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_professional_confirmation",
+      "statement": "缺少完整铁路遗产名录和保护控制线。",
+      "impact": "绿脊遵循低扰动原则，所有介入需文保专项审查。"
+    },
+    {
+      "id": "A-LABOR-001",
+      "status": "pending_professional_confirmation",
+      "statement": "七类人物画像来自任务导向的设计研究框架而非统计抽样。",
+      "impact": "实施前需劳动者、社区和企业共同校正需求权重。"
+    },
+    {
+      "id": "A-SCENARIO-001",
+      "status": "pending_professional_confirmation",
+      "statement": "十二个场景是待验证假设。",
+      "impact": "必须通过公开测试、申诉机制和独立评估后才能扩展。"
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "项目运营主体、预算和长期维护协议尚未确定。",
+      "impact": "分期以触发条件而非政府承诺表达。"
+    },
+    {
+      "id": "A-BRAND-001",
+      "status": "pending_professional_confirmation",
+      "statement": "百工线品牌与标识为开源概念。",
+      "impact": "正式使用前需商标、导视和无障碍识别测试。"
+    },
+    {
+      "id": "A-PRIVACY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "场景默认数据最小化、人工复核和非数字兜底。",
+      "impact": "具体系统仍需隐私影响评估、安全测试和退出机制。"
+    }
+  ]
+}
