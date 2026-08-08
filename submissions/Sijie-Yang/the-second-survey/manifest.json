@@ -25,36 +25,43 @@
       "path": "assets/figures/key-areas.png",
       "role": "package_file",
       "required": true,
-      "sha256": "d01f3ed0fc231fdce47e54019f4a3d66428a0dcbdcb955c46469804d36266d70",
-      "bytes": 390356
+      "sha256": "9e5bb46007fadf7d1ef27fddba23c40669d950b39947ba7005ca1ea830518200",
+      "bytes": 396102
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "package_file",
       "required": true,
-      "sha256": "b9bcaa6e0819aba34ccf4638f37af0002838c0f9d48eeeec62def0279230835a",
-      "bytes": 194009
+      "sha256": "d47028b880592e4672854aa39af34f87b8bf525e63301338aa1948b0e764d3c3",
+      "bytes": 221106
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "package_file",
       "required": true,
-      "sha256": "a457b28d9de5b39612b61f8a4d915225c945bfb07f71edc67cc3f2b503ed9cb7",
-      "bytes": 260935
+      "sha256": "a04be1f697b901f2d99c17b58a812cc2059435d80bbfacd447f3fbbdc22679be",
+      "bytes": 285606
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "package_file",
       "required": true,
-      "sha256": "b2ed411f834e82b65d526077f2e8354e9476a13c3abc13c3b541953ebde6a9d1",
-      "bytes": 229642
+      "sha256": "1708aae4d323e5d17f32730191074a85d360330abc3d02fa76b00792e2bf67e7",
+      "bytes": 247255
+    },
+    {
+      "path": "assets/figures/planning-roadmap.png",
+      "role": "package_file",
+      "required": true,
+      "sha256": "197a408261299b40c024fd000a7b249f2d1efb30f7880c37b27f3963a12de7d1",
+      "bytes": 333284
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "package_file",
       "required": true,
-      "sha256": "e0e26eaeef4e10750793a9fca56f5de5db8dddde53b4873c675186c97f807f41",
-      "bytes": 302288
+      "sha256": "7e51439227f837d4ea01633c681d5f6767fc2d0e7551be2a353c3155f4fbe07c",
+      "bytes": 321686
     },
     {
       "path": "assets/jingzhang-awakening-poster.jpg",
@@ -144,8 +151,8 @@
       "path": "changelog.md",
       "role": "package_file",
       "required": true,
-      "sha256": "b5f47afd2367de05b6a27c30fcb7431940fd121efee35ed65d035fbbc74d8a5f",
-      "bytes": 3024
+      "sha256": "8fc77bb7c4274ed65b7c888988ac185c2f6a315307fb91613ff7b324bff13438",
+      "bytes": 5335
     },
     {
       "path": "compliance_matrix.json",
@@ -165,15 +172,15 @@
       "path": "drawings/a0-boards.pdf",
       "role": "package_file",
       "required": true,
-      "sha256": "7b77a730a5beeb0373f2b85ef7a819c7c37c49d3bbed45eb9b52e20eed8dfc43",
-      "bytes": 6650640
+      "sha256": "eaa08d0c3e3a4d188cb5faa2e55acf79ed6179878eeda9f2cc0251f094beedbb",
+      "bytes": 1450565
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "package_file",
       "required": true,
-      "sha256": "773ccff0a9acd79d03892b4ecfa787127377eec4fe145be2766346d35e5968fe",
-      "bytes": 5272833
+      "sha256": "2c846f0241cda3bfa5df838f8365ac0ba7855fb97fd8c984140caad120cad02f",
+      "bytes": 1450850
     },
     {
       "path": "geometry/buildings.geojson",
@@ -221,8 +228,8 @@
       "path": "geometry/public_space.geojson",
       "role": "package_file",
       "required": true,
-      "sha256": "3a9945cf2f8db2babfe48ad7897d27318bccb4490e53c128251c88e76b926f67",
-      "bytes": 149807
+      "sha256": "a3fc2ec85a675668b24f01e8e6ffd212976108b303597ee4d8518b01d5619c25",
+      "bytes": 149810
     },
     {
       "path": "geometry/roads.geojson",
@@ -254,8 +261,8 @@
       "path": "proposal.md",
       "role": "package_file",
       "required": true,
-      "sha256": "e7d5e75bde67753842ad4591f652110edf57c9e2485fa10cf7ebdf57328cfa49",
-      "bytes": 44228
+      "sha256": "68a6cecc3e5a678b3b3ec717450ea037c8a0baf3c4081897b1b348e82f306afb",
+      "bytes": 97014
     },
     {
       "path": "report/copyright_statement.md",
@@ -268,22 +275,22 @@
       "path": "report/narrative.md",
       "role": "package_file",
       "required": true,
-      "sha256": "8b4747fc92232a8bac9e20970b4292df4f2075dfa07b613d9591e0126488d417",
-      "bytes": 3499
+      "sha256": "0c3d4613d9be63c1297199b44de8425da74458a036979d6aa0427af1b667e283",
+      "bytes": 3895
     },
     {
       "path": "report/proposal.html",
       "role": "package_file",
       "required": true,
-      "sha256": "9fedaca1508fb738080ba924e9ed36d220852edbab923306a9a17d52510056a9",
-      "bytes": 96578
+      "sha256": "ad646b6f1215c1c6f2f90ba5e0a5ce3a4926d5a0abfcacf2fcf3fdc395ce5ee8",
+      "bytes": 169066
     },
     {
       "path": "self_check.json",
       "role": "package_file",
       "required": true,
-      "sha256": "882391d2621b98647206430e996a29eba6e7341909b26755424fc9e8397b0351",
-      "bytes": 1892
+      "sha256": "f83e68528c9e160e45d8fca360cac76164c4ef2e90ad06d49a35ea58f5129126",
+      "bytes": 2573
     },
     {
       "path": "sources.json",
@@ -303,29 +310,29 @@
       "path": "visual/assets/perception-sections.json",
       "role": "package_file",
       "required": true,
-      "sha256": "d4b12ebc5cfe9df8a8bfb085fedb92e0ebfb0ac6d704d0456025d95bd52e96eb",
-      "bytes": 5455
+      "sha256": "3128353bd5a0b9993209751e7daa21d3ecab484126d1166074cb4ba0b0a2ae82",
+      "bytes": 5500
     },
     {
       "path": "visual/assets/scenario-cards.json",
       "role": "package_file",
       "required": true,
-      "sha256": "2cff91d20f452c251f5005c5b89ece006a6e9a3d68cc1f7b843a80034e4a8efd",
-      "bytes": 2709
+      "sha256": "081b3a9774a5ebca38d86455edcf82d0c5fb53a9aba163e03c5789cb7f42d036",
+      "bytes": 3075
     },
     {
       "path": "visual/assets/twelve-acts.json",
       "role": "package_file",
       "required": true,
-      "sha256": "12c86b859213a848abd2672b0797e10f9d3e4138e7b158fbe4bbbaccd84b7396",
-      "bytes": 3996
+      "sha256": "d6aa8683026a443982c025d14baa8a0857d8b708774c42411b3475098423ab95",
+      "bytes": 8218
     },
     {
       "path": "visual/index.html",
       "role": "package_file",
       "required": true,
-      "sha256": "144d1b0a9fe44855cd23a9f66c363fffd510defc8b18ddc81409b864e5e0d3a8",
-      "bytes": 26893
+      "sha256": "ef91a6153d1162e275f3777deca077fc2a8614a72805b7968c8a7d6e04ad8a19",
+      "bytes": 47578
     }
   ],
   "validation_claim": {
