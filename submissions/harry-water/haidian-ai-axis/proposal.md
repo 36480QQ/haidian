@@ -4,7 +4,7 @@ author_github: "harry-water"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；本包仍为 scaffold 状态，几何、指标、图件与 PDF 为占位，待官方边界发布后重算。"
+summary: "以“海淀新轴 / HAIDIAN AI AXIS”为概念框架，从京张遗产主线出发依次组织三站分工、两翼供给与反馈、六类空间原型、十个运行场景与一套年度账本；中英文完整正文、42 条已登记来源均已形成，本包概念几何、指标、假设已通过本轮内部评审，双语图件、双语 HTML、A3/A0 PDF、manifest 清单与哈希及包终态化仍待完成，本包在上述下游事项关闭前保持 scaffold 状态。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -17,11 +17,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案提出的创新带概念名称为**海淀新轴**，英文品牌名为 **HAIDIAN AI AXIS**，封面完整标题为《海淀新轴：百年京张，从运煤到运算》，英文完整标题为 *HAIDIAN AI AXIS: FROM COAL TO COMPUTE*，礼仪性组合字为“百年京张·海淀新轴”，中文品牌句为“百年京张，向新而行”，英文传播句为 *Railway Heritage. AI Innovation. Everyday Life.*，提交目录 slug 为 `haidian-ai-axis`。“**从运煤到运算**”指的是同一条北向区域交换通道在不同时代承担的功能转换：铁路时代向北京输送煤炭、货物与人员，AI 时代由具备政策与网络条件的近域伙伴承担适宜外送的算力任务，而海淀持续向外输出算法、模型、标准、人才与场景需求。它是历史功能与区域联系方向的延续，**不是**宣称当代光纤与京张铁路物理同线。
 
-在展开任何空间判断之前，本方案先声明三条不可越界的事实边界：
+在展开任何空间判断之前，本方案先声明以下不可协商的事实与操作边界：
 
 1. **“海淀新轴 / HAIDIAN AI AXIS”是本方案提出的空间与功能协同框架，不是法定规划轴线、不是北京中轴线的延长线或第二中轴、不是世界遗产关联项目或“第十六个遗产构成要素”，也不是政府审定名称。**本方案只转译北京中轴线组织城市的方法，不主张遗产延伸、形态复制或官方规划关系。
 2. **1909 年建成的京张铁路连接北京丰台柳村与张家口，并不直接进入今天的内蒙古自治区。**通往内蒙古与北方地区的联系属于其后向绥远方向延伸并纳入平绥铁路、1949 年后改称京包铁路的后续演进链，不得倒写进 1909 年京张本线。
 3. **海淀—乌兰察布双城算力协同是本方案基于已核验的政策、合作与网络条件提出的可审计调度模型（proposal inference），不是已经批准、已经定型或已经投运的官方架构。**本方案不承诺容量、价格、SLA、投资额、财政资金或建设时序。
+4. **【全局人员配置规则】全文任何位置出现的人工服务台、人工值守入口、人工问询、人工可呼叫点、人工引导、人工值守与转人工服务等表述，均只是待运营主体确认后、在经授权服务时段内才可实现的设计目标，不表示已有人员配置、不表示全时段可用，也不构成服务承诺。**该规则统一约束全文所有相关表述，各章若重复出现同类限定语，仅为强调，不改变该全局效力。
 
 全文只有一条阅读主线，各章均为这条主线上的一环：
 
@@ -141,7 +142,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Masdar City | 被动式气候设计先于智能设备：遮阴、通风、围护、步行优先 | 整条公共主线的气候策略：连续遮阴、冬季日照、通风廊、雨水转输与休息／降温点网络（覆盖为设计目标，见第十一章） | 不复制沙漠参数、街宽与风向；不引用项目方节能宣传值；北京须兼顾冬季日照与夏季热雨 | 若照搬干热气候的窄街密荫模式，将牺牲北京冬季日照与夏季排涝；本地既有街廓与铁路界面固定、无法整体重排时，被动策略只能局部实现，此时不得以“已按 Masdar 方法设计”表述 |
 | MBZUAI | 大学研究—真实场景验证—原型展示—孵化—产业合作闭环 | AI 原点社区：高校研究与社区需求对接、模型验证、伦理复核、开源展示 | 不认为高校与企业共址就自然产生创新；必须明确数据、伦理、知识产权、退出与长期资金 | 若缺少稳定的长期经费、明确的知识产权归属或校方参与意愿，闭环会退化为共址办公；海淀高校密度高但机构自主性强，无统一主体时该机制不成立 |
 | Dubai AI Campus | “空间＋合规服务＋资本＋加速器＋企业采购＋人才训练”的常设运营机构 | 大钟寺发布站与新轴运营平台：不只建空间，而是设常设运营职能 | 不移植 DIFC 法律与牌照制度；不做封闭办公园区；招商目标不等于创新绩效 | 该机制依赖单一辖区内的特殊监管与牌照安排；本地不具备等价制度容器，若只复制物理空间而无常设运营职能与持续预算，将退化为出租型园区 |
-| HUMAIN / AWS AI Zone | 芯片—网络—平台—模型—应用—人才的全栈组织链 | 众智园与海乌算力协同：把算力、验证、开发者训练、企业试用与场景采购编成持续服务 | 不用投资额、设备量代替利用率与城市公共价值；不引用为本项目的资金或容量依据 | 全栈链条依赖单一主导方对各环节的统一调配；海乌协同为多主体协议关系，协议未定时链条只能以测试规范形式存在，任何“全栈已就绪”的表述都不成立 |
+| HUMAIN / AWS AI Zone | 芯片—网络—平台—模型—应用—人才的全栈组织链 | 众智园与海乌算力协同：把算力、验证、开发者训练、企业试用与场景采购编成持续服务 | 不用投资额、设备量代替利用率与城市公共价值；不引用为本项目的资金或容量依据 | 全栈链条依赖单一主导方对各环节的统一调配；海乌协同为多主体协议关系，在项目专属协议提供并核验之前链条只能以测试规范形式存在，任何“全栈已就绪”的表述都不成立 |
 | NEOM THE LINE | 分期与按需驱动的开发方式、服务与工作与文化功能之间的近接与连通性、项目方倡导的可持续、宜居与创新原则 | 全轴场景测试与运营模拟：以分期实施与按需响应组织公共空间开放节奏与场景接入顺序 | 不复制 170 公里巨构与绿地新城逻辑；不引用五分钟生活圈、AI 自动化服务、认知城市或数字孪生等该官方页面已不再展示的旧主张；气候数字孪生是本方案自身提出的模拟方法，不是 NEOM 已证实的成果；必须补同意、最小化、退出与人工复核 | 该机制以真正的分期与需求响应为前提；若海淀新轴无法分阶段实施或响应实际使用需求，该机制不成立；气候数字孪生的可信度取决于本方案自身数据完整性与模型验证，不依赖 NEOM 数据或案例 |
 
 本地化后的组合顺序是：**气候公共空间 → 科研与人才锚点 → 常设运营机构 → 双城绿色算力协作 → 有权利边界的数字孪生**。顺序本身就是设计判断：先把公共空间做成不依赖设备也成立的好空间，再叠加智能系统。上表最后一列的作用是让后续团队在深化时先检查失效条件是否已经出现——若已出现，应当替换机制而不是继续套用案例。本轮不新增其他地区案例，因为其证据尚未登记。
@@ -152,7 +153,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **设计判断**：以中轴线的三项独特对应加三项本地规划推论确立空间组织方式，再用五个中东机制及其失效条件确立运营组织方式，两者按固定顺序组合。
 **判断理由**：世界级创新生态不是案例堆叠，而是把可复核的组织机制按顺序装进空间；顺序错了（先上智能设备再补公共空间）会导致公共价值流失。
-**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:public_space_ratio]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:overall_spatial_structure]。
+**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-001]、[data:geometry/public_space.geojson#N3]、[data:geometry/roads.geojson#ROAD-WING-TECH-001]、[data:geometry/roads.geojson#ROAD-WING-XIAOYUE-001]、[metric:public_space_ratio]、[metric:wing_count]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:overall_spatial_structure]。
 **资料缺口**：海淀站点降水与小时雨强、街谷通风与热舒适实测、五个中东案例的第三方绩效评估、开源社区与企业分布的可公开统计口径。
 
 ## 总体设计范围城市更新与控规深度城市设计
@@ -165,12 +166,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 | 空间类型 | 城市职能 | 典型设计动作 | 对应图层 |
 | --- | --- | --- | --- |
-| 门 / Gateway | 进入新轴的信息、无障碍与公共服务界面 | 站点出入口、导视、人工服务台、无障碍坡道；不建仿古门楼 | [data:geometry/public_space.geojson#PUBLIC-001] |
+| 门 / Gateway | 进入新轴的信息、无障碍与公共服务界面 | 站点出入口、导视、人工服务台、无障碍坡道；不建仿古门楼 | [data:geometry/public_space.geojson#N5] |
 | 庭 / Courtyard | 研究交流、社区课程、休息与小型测试 | 半开放庭院、可预约测试位、遮阴与座椅 | [data:geometry/land_use.geojson#LU-004] |
-| 站 / Station | 算力、交通、服务或活动的换装节点 | 端侧算力点、接驳、活动集散；必须保留人工与非数字入口 | [data:geometry/roads.geojson#ROAD-001] |
+| 站 / Station | 算力、交通、服务或活动的换装节点 | 端侧算力点、接驳、活动集散；必须保留人工与非数字入口 | [data:geometry/roads.geojson#ROAD-AXIS-001] |
 | 市 / Market | 成果展示、企业采购、文化消费与日常商业 | 开放街面、首层活化、可临时布展 | [data:geometry/land_use.geojson#LU-003] |
-| 园 / Garden | 遮阴、冬季日照、雨水调蓄与安静休息 | 气候公共空间、可淹没绿地、雨水花园 | [data:geometry/green_space.geojson#GREEN-001] |
-| 桥 / Stitch | 跨越铁路、道路与水系阻隔的东西向联系 | 慢行缝合与生态联系；工程可行性另行论证 | [data:geometry/roads.geojson#ROAD-001] |
+| 园 / Garden | 遮阴、冬季日照、雨水调蓄与安静休息 | 气候公共空间、可淹没绿地、雨水花园 | [data:geometry/green_space.geojson#GREEN-AXIS-001] |
+| 缝 / Stitch | 跨越铁路、道路与水系阻隔的东西向联系 | 慢行缝合与生态联系；工程可行性另行论证 | [data:geometry/roads.geojson#ROAD-STITCH-N4] |
 
 六类空间不是固定建筑清单，而是提供给后续专业设计团队的可组合原型，属概念建议。
 
@@ -178,7 +179,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 按 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 与 [depth:land_use_layout]、[depth:development_intensity_controls] 的要求，本方案把所有控规深度内容分为三级并分别标注：
 
-1. **可由提交几何直接复算的结论**：用地结构 [data:geometry/land_use.geojson#LU-002]、建筑基底 [data:geometry/buildings.geojson#BLDG-001]、绿地与公共空间比例 [metric:green_ratio]、[metric:public_space_ratio]、建筑基底面积 [metric:building_footprint_area_sqm]。当前均基于 provisional 边界，仅供讨论。
+1. **可由提交几何直接复算的结论**：用地结构 [data:geometry/land_use.geojson#LU-002]、建筑基底 [data:geometry/buildings.geojson#BLDG-ST01-001]、绿地与公共空间比例 [metric:green_ratio]、[metric:public_space_ratio]、建筑基底面积 [metric:building_footprint_area_sqm]。当前均基于 provisional 边界，仅供讨论。
 2. **需官方控规或任务书附件支撑的管控指标**：容积率 [metric:floor_area_ratio]、建筑高度、建筑密度、退线、道路红线与设施标准。这些在本轮一律标注为 `unknown` 或“待正式控规条件确认”，**不以推测值冒充审定指标**。
 3. **需运营或产业数据持续校准的绩效指标**：AI 创新指数、人才密度、慢行可达性、场景使用频次、活动参与度。这些进入年度复核机制，而不是写成规划结论。
 
@@ -192,14 +193,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **设计判断**：用“一轴三站两翼六空间”替代泛化的“打造活力带”，并把控规内容按可复算／待确认／待校准三级分开表述。
 **判断理由**：控规深度的可信度来自区分度而非精确度；把待确认项伪装成确定值，会让整份方案的可审计性归零。
-**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/buildings.geojson#BLDG-001]、[metric:building_footprint_area_sqm]、[metric:floor_area_ratio]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[depth:land_use_layout]、[depth:development_intensity_controls]。
+**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/buildings.geojson#BLDG-ST01-001]、[metric:building_footprint_area_sqm]、[metric:floor_area_ratio]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[depth:land_use_layout]、[depth:development_intensity_controls]。
 **资料缺口**：控规图则、现状建筑与权属、道路红线、市政管线、河道蓝线与防洪标准、文保紫线。
 
 ## 重点区域详细设计
 
 三处重点区的 polygon 当前均为 provisional [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]，因此以下结论只能作为**方向性设计与概念建议**，达到可供专业团队深化的组织深度，由 [depth:three_key_area_detailed_design] 校核。
 
-每处重点区先给出区级小方案，再给出**两个概念节点卡**，共六个。节点卡是把“六类空间原型”落到具体公共空间形态的一次尝试：每张卡都有可识别的物理形态（院、场、桥、街、过街面），而不只是一个运营品牌。所有节点卡不含坐标、尺寸、现状事实认定、工程结论、权属或建筑状况判断；其“现状假设”均为待普查验证的设计假设，不是已核实的现状描述。
+每处重点区先给出区级小方案，再给出**两个概念节点卡**，共六个。节点卡是把“六类空间原型”落到具体公共空间形态的一次尝试：每张卡都有可识别的物理形态（院、场、缝合节点、街、过街面），而不只是一个运营品牌。所有节点卡不含坐标、尺寸、现状事实认定、工程结论、权属或建筑状况判断；其“现状假设”均为待普查验证的设计假设，不是已核实的现状描述。各节点卡中出现的人工服务、人工值守、人工可呼叫与人工引导，均指在运营主体确认后、经授权服务时段内实现的设计目标，不表示已有人员配置或全时段值守承诺。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
@@ -250,14 +251,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **实施前置条件**：校区边界与出入管理的协商、沿街首层的使用同意与业态调整、庭院用地权属与养护主体、居民参与和异议渠道的制度安排。
 - **状态**：概念节点，为可供专业团队深化的参考方案，不含坐标、尺寸与建筑状况认定。
 
-#### 节点卡 N4｜校—站缝合节点 / Campus–Station Stitch（形态：跨越阻隔的慢行联系＋两端落地小广场）
+#### 节点卡 N4｜校—站缝合节点 / Campus–Station Stitch（形态意向待论证：跨越阻隔的慢行缝合，mobility_stitch 原型）
 
+- **当前状态（design_only_closed_pending_study）**：本节点 [data:geometry/public_space.geojson#N4] 为 `mobility_stitch` 原型，仅为设计意向；在交通、无障碍与工程三项专项论证完成之前视为未开通，不提供任何通行服务。上跨、下穿、平面改造、连续遮蔽段、两端落地小广场、绕行组织与人工值守均为待论证的概念选项，本方案不把其中任何一项表述为已决定的方案。
 - **现状假设（待普查验证）**：校区、园区与轨道站点之间存在铁路、道路或围墙形成的绕行，慢行者被迫走出较长的迂回路径，夜间与雨雪天尤其不便。
-- **空间动作**：在阻隔两侧各设一处落地小广场作为集散与等候空间，中间以连续、有遮蔽、全程无高差障碍的慢行连接贯通；连接体本身即公共空间而非纯通道，设座椅与照明；属“桥＋站”原型。工程形式（上跨、下穿或平面改造）须由专业团队论证，本方案不预设。
-- **昼／夜／极端天气模式**：昼——通学、通勤与校园—园区往返的主要路径；夜——全程照明与可视性优先，两端小广场保留人工可呼叫点；极端天气——遮蔽段作为临时避雨与避雪空间，结冰或积水时按预案封闭并启用地面替代路径与人工引导。
-- **主要使用者**：高校师生、通勤者、夜班人员、学生与家长、使用轮椅与其他行动受限者。
-- **实施前置条件**：铁路与道路的安全控制要求、轨道站点出入口条件、跨越形式的工程可行性论证、两端落地空间的权属与市政管线条件。
-- **状态**：概念节点，形式与位置均为示意，不构成桥隧工程结论、线位判断或权属安排。
+- **空间意向（全部待论证）**：一条连续、无高差障碍的校—站慢行缝合是本节点的设计目标；可能的组成要素——两端集散等候空间、遮蔽、座椅与照明、接驳线 [data:geometry/roads.geojson#ROAD-STITCH-N4]——均以概念选项提出，属“缝＋站”原型；跨越形式与任何构成要素须由专业团队论证后才能确定。
+- **开通后运行意向（仅为设计目标）**：昼——通学、通勤与校园—园区往返路径；夜——照明与可视性优先；极端天气——按预案封闭并启用替代路径。人工值守与人工引导仅指在运营主体确认后、经授权服务时段内的设计目标。
+- **主要使用者（论证通过并开通后）**：高校师生、通勤者、夜班人员、学生与家长、使用轮椅与其他行动受限者。
+- **实施前置条件**：交通、无障碍与工程三项专项论证，铁路与道路的安全控制要求，轨道站点出入口条件，两端落地空间的权属与市政管线条件。
+- **状态**：概念节点，形式与位置均为示意，不构成桥梁、地道、平面过街、遮蔽段、落地广场、绕行组织或人员配置的任何决定，也不构成线位判断或权属安排。
 
 ### 大钟寺 AI 产业聚集区｜新轴发布站 / Axis Launch Station（约 72.0 公顷）
 
@@ -289,7 +291,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **设计判断**：三处重点区差异化承担换装、验证、发布，各自形成“定位＋空间结构＋建筑更新＋交通慢行＋公共空间＋AI 场景＋实施风险”的小方案，并各落两个有物理形态的概念节点（N1–N6）。
 **判断理由**：若三处都写成同质“示范区”，差异化节点序列失效，新轴退化为一条画在图上的线；而只有区级方案没有节点卡时，六类空间原型仍停留在语汇层面，专业团队无从接手。
-**图层／指标／标准对应**：[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[metric:key_area_count]、[depth:three_key_area_detailed_design]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+**图层／指标／标准对应**：[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/public_space.geojson#N1]、[data:geometry/public_space.geojson#N2]、[data:geometry/public_space.geojson#N3]、[data:geometry/public_space.geojson#N4]、[data:geometry/public_space.geojson#N5]、[data:geometry/public_space.geojson#N6]、[metric:key_area_count]、[metric:prototype_node_count]、[depth:three_key_area_detailed_design]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 **资料缺口**：三处重点区官方四至、现状建筑与权属、轨道与道路工程条件、河道与文保控制线；建筑专业深度规定的官方文件尚未取得，本轮只能按方向性判断表述。
 
 ## AI 创新生态、人才画像与 AI+ 场景
@@ -306,7 +308,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 十张 AI 场景卡（agent.3）
 
-十张场景卡的共同规则：每张卡都必须写明位置、服务对象、触发条件、数据来源、隐私边界、人工复核、离线替代、运营主体、退出条件与指标；**任何一张卡在断网、断电或系统失效时都必须有可用的非数字替代**；**任何一张卡都必须允许使用者退出而不丧失基本公共服务**。运营主体在本轮均写为“待明确的运营机构（概念建议）”，不指定企业，也不写成已确定的政府安排；其责任划分见下节的治理矩阵。
+十张场景卡的共同规则：每张卡都必须写明位置、服务对象、触发条件、数据来源、隐私边界、人工复核、离线替代、运营主体、退出条件与指标；**任何一张卡在断网、断电或系统失效时都必须有可用的非数字替代**；**任何一张卡都必须允许使用者退出而不丧失基本公共服务**。运营主体在本轮均写为“待明确的运营机构（概念建议）”，不指定企业，也不写成已确定的政府安排；其责任划分见下节的治理矩阵。所有涉及人工值守、人工可呼叫与人工引导的表述，均为待运营主体确认后、在经授权服务时段内实现的设计目标，不构成全时段人员配置承诺。
 
 表中“核心指标”一列列出的是**待验证设计目标的观测量**，不是服务承诺：恢复时间、人工到位时间、求助响应时间、故障修复时长、覆盖与达标率等在取得人流、运营时段、人力配置与现状普查数据之前一律为 `unknown`，口径见第十一章“可验证设计目标”表。卡 04 名称中的“72 小时”指新来者到达后的需求窗口，用于界定服务对象，不表示在 72 小时内完成安顿的承诺。
 
@@ -354,13 +356,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 极端天气与暴雨切换场景
 
-除上述十卡外，公共空间的三态切换（暴雨滞蓄、极端高温与寒冷避难）作为**空间运行工况**内嵌在第四章与第九章，而不是单独的技术场景卡：暴雨时启用可淹没绿地与分级蓄排，高温与严寒时开放遮阴／取暖休息点并延长人工值守。这一处理方式的理由是，气候避险必须在没有任何智能系统时也成立。
+除上述十卡外，公共空间的三态切换（暴雨滞蓄、极端高温与寒冷避难）作为**空间运行工况**内嵌在第四章与第九章，而不是单独的技术场景卡：暴雨时启用可淹没绿地与分级蓄排，高温与严寒时开放遮阴／取暖休息点；人工值守时段的延长仅为运营主体确认后、经授权服务时段内实现的设计目标，不构成服务承诺。这一处理方式的理由是，气候避险必须在没有任何智能系统时也成立。
 
 ### 海淀—乌兰察布长期运营模型
 
 乌兰察布集宁大数据产业园属于国家算力枢纽起步区，并面向京津冀高实时性需求 [source:NDRC-COMPUTE-HUB-REPLY-2021]；内蒙古自治区政府公开报道提到两条直通北京的 144 芯点对点光缆及约 4.2 ms 的端到端时延 [source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]；工信部公开材料记录了乌兰察布**某一特定数据中心**当时的年均 PUE 1.32、自然冷却月份月度 PUE 约 1.22、可再生能源占比 40% 以上与约 10 个月自然冷源条件 [source:MIIT-DATACENTER-CASE-2021]；海淀区与乌兰察布市已签署人工智能产业合作备忘录，政府报道亦提到“海乌绿色智算服务平台”合作 [source:BJHD-COOPERATION-2024]、[source:NMG-NETWORK-REPORT-2025]。
 
-必须同时声明这些条件的**适用边界**：光缆直达北京／亦庄不等于物理直达海淀；约 4.2 ms 是报道口径的链路指标，不是应用级 SLA，本方案不写“4.2 ms 直达海淀”；上述 PUE 1.32／1.22 仅是该特定中心在资料所述时期的口径，不代表起步区、乌兰察布全市或当前平均水平；已签署的合作备忘录不能证明容量、价格、SLA、合同或预算；未见公开的技术架构、运营审计与计费方式，因此不得称其为成熟运行系统。**“双城计算架构”是本方案基于上述既有条件提出的可审计调度模型（proposal inference），不是官方已经定型的系统。**
+必须同时声明这些条件的**适用边界**：光缆直达北京／亦庄不等于物理直达海淀；约 4.2 ms 是报道口径的链路指标，不是应用级 SLA，本方案不写“4.2 ms 直达海淀”；上述 PUE 1.32／1.22 仅是该特定中心在资料所述时期的口径，不代表起步区、乌兰察布全市或当前平均水平；已签署的合作备忘录不能证明容量、价格、SLA、合同或预算；上述海淀—乌兰察布公开合作事实并不构成本方案专属调度架构的证据——截至 2026-08-08，尚无任何项目专属的协议、SLA、数据集或审批、运行证据被提供给本提交或经本提交独立核验，因此不得称其为成熟运行系统。**“双城计算架构”是本方案基于上述既有条件提出的可审计调度模型（proposal inference），不是官方已经定型的系统。**
 
 **任务分级**（决定任务在哪里计算）：
 
@@ -380,11 +382,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **年度复核**：每年一次公开测试季与账本复核，评估任务分级是否仍然合理、隐私边界是否被侵蚀、公共服务是否仍有非数字替代；复核结论公开发布，并可反向修改任务分级规则。
 
-场景与空间的对应证据为 [data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-001]，比例指标为 [metric:public_space_ratio] 与 [metric:green_ratio]；任务依据为 [source:AGENT-TASKBOOK]。
+场景与空间的对应证据为 [data:geometry/public_space.geojson#N1]、[data:geometry/roads.geojson#ROAD-AXIS-001]、[data:geometry/green_space.geojson#GREEN-AXIS-001]，比例指标为 [metric:public_space_ratio] 与 [metric:green_ratio]，场景与产业测试计数为 [metric:scenario_count] 与 [metric:industry_test_count]；任务依据为 [source:AGENT-TASKBOOK]。
 
 **设计判断**：五类画像与十张场景卡共用一套权利边界（人工复核、离线替代、退出条件），并由海乌任务分级决定计算去向。
 **判断理由**：AI 城市场景的风险不在功能不足，而在没有退出与兜底；把权利边界写进每张卡，才能让场景在评审后仍可被专业团队安全深化。
-**图层／指标／标准对应**：[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/roads.geojson#ROAD-001]、[metric:public_space_ratio]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+**图层／指标／标准对应**：[data:geometry/public_space.geojson#N3]、[data:geometry/roads.geojson#ROAD-AXIS-001]、[metric:public_space_ratio]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 **资料缺口**：海乌合作的公开技术架构与计量口径、真实运行账本、公共空间人流与无障碍现状普查、夜间照明现状。
 
 ## 用地、建筑规模与拆改留方案
@@ -400,11 +402,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 可逆加建 | 需要新增展示、测试、休息或服务空间处 | 采用可拆除、可迁移的轻质结构 | 消防、结构与规划许可 |
 | 待核验新建 | 现有空间无法满足公共功能处 | 仅标注位置意图，不给规模与高度 | 控规、权属、市政与交通条件全部确认 |
 
-建筑基底证据为 [data:geometry/buildings.geojson#BLDG-001]，复算值为 [metric:building_footprint_area_sqm]。**建筑总规模、容积率、建筑高度、建筑密度、退线与建筑控制线在本轮全部列为待确认**：[metric:floor_area_ratio] 状态为 `unknown`，原因是公开资料包中没有经批准的 FAR 控制与官方场地边界。本方案不提供任何地块级拆改留结论。
+建筑基底证据为三个提交概念干预包络 [data:geometry/buildings.geojson#BLDG-ST01-001]、[data:geometry/buildings.geojson#BLDG-ST02-001]、[data:geometry/buildings.geojson#BLDG-ST03-001]，复算值为 [metric:building_footprint_area_sqm]（仅为三个提交概念干预包络之和，不是现状建筑基底、GFA 或 FAR 量）。**建筑总规模、容积率、建筑高度、建筑密度、退线与建筑控制线在本轮全部列为待确认**：[metric:floor_area_ratio] 状态为 `unknown`，原因是公开资料包中没有经批准的 FAR 控制与官方场地边界。本方案不提供任何地块级拆改留结论。
 
 **设计判断**：以“保留—轻改造—可逆加建—待核验新建”四级替代地块级拆改留结论。
 **判断理由**：在没有现状建筑、权属与控规资料的条件下，地块级结论必然是虚构；四级分类既能表达设计意图，又能在资料到位后直接细化。
-**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-003]、[data:geometry/buildings.geojson#BLDG-001]、[metric:building_footprint_area_sqm]、[metric:floor_area_ratio]、[depth:retain_renovate_demolish]、[depth:height_massing_character]。
+**图层／指标／标准对应**：[data:geometry/land_use.geojson#LU-003]、[data:geometry/buildings.geojson#BLDG-ST01-001]、[metric:building_footprint_area_sqm]、[metric:floor_area_ratio]、[depth:retain_renovate_demolish]、[depth:height_massing_character]。
 **资料缺口**：现状建筑普查、权属、结构与消防条件、控规图则与用地性质、既有产业空间存量。
 
 ## 交通、轨道、市政与公共服务设施
@@ -420,34 +422,34 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **故障转移的城市侧表现**：当外部链路失效时，站点显示降级状态并切换到人工服务；不允许出现“设备黑屏但无人可问”的情况。
 - **传统市政融合**：供水、排水、供电、通信与环卫的现状容量未知，本方案把它们列为正式深化的前置条件，不做负荷测算。
 
-约束图层 `geometry/constraints.geojson` 当前为空要素集合 [data:geometry/constraints.geojson#CONSTRAINTS]，`#CONSTRAINTS` 目前只是占位锚点；文保紫线、河道蓝线、绿线、道路红线与轨道控制线数据到位后才能填充，并据此复核上述全部空间动作。**本轮检索未在公开渠道找到可核验坐标系与审批状态的官方控制线数据源**，因此不为其编造来源记录，继续标注为未解决的数据缺口，其可用性判定依据仍为 [source:SOURCE-REGISTRY]。
+约束图层 `geometry/constraints.geojson` 当前承载三个分析辅助面：`#CONSTRAINTS` 是覆盖全域的缺数据适用性／实施前置校验总览面 [data:geometry/constraints.geojson#CONSTRAINTS]，其属性逐项列出缺失的官方数据；它是校验与提醒图层，不是法定管控线，也不是 AI 服务覆盖范围或承诺。两翼概念服务范围面 [data:geometry/constraints.geojson#WING-TECH-001] 与 [data:geometry/constraints.geojson#WING-XIAOYUE-001] 只表达审查关注区，不是用地分配或规划控制线。文保紫线、河道蓝线、绿线、道路红线与轨道控制线数据仍然缺失，到位后须据此复核上述全部空间动作。**本轮检索未在公开渠道找到可核验坐标系与审批状态的官方控制线数据源**，因此不为其编造来源记录，继续标注为未解决的数据缺口，其可用性判定依据仍为 [source:SOURCE-REGISTRY]。
 
 **设计判断**：交通与市政以“缝合断点＋把算力变成有人负责的城市设施”为主，不做工程方案。
 **判断理由**：本项目最影响日常体验的不是新建道路，而是既有断点；同时端侧算力若不与日常服务合设，就会变成无人使用的孤立设备。
-**图层／指标／标准对应**：[data:geometry/roads.geojson#ROAD-001]、[data:geometry/constraints.geojson#CONSTRAINTS]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]。
+**图层／指标／标准对应**：[data:geometry/roads.geojson#ROAD-AXIS-001]、[data:geometry/roads.geojson#ROAD-STITCH-N4]、[data:geometry/roads.geojson#ROAD-STITCH-N5]、[data:geometry/constraints.geojson#CONSTRAINTS]、[metric:conceptual_mobility_length_m]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]。
 **资料缺口**：道路红线与断面、轨道线位与站点出入口、管线与市政容量、慢行断点现状普查、既有停车与非机动车停放供给。
 
 ## 蓝绿空间、公共空间与城市风貌
 
-京张遗址公园主线是新轴的骨架，清河与小月河构成东西向蓝绿横联，两者共同支撑第四章的三态运行。绿地与公共空间证据为 [data:geometry/green_space.geojson#GREEN-001] 与 [data:geometry/public_space.geojson#PUBLIC-001]，比例指标为 [metric:green_ratio] 与 [metric:public_space_ratio]，深度由 [depth:blue_green_public_space] 校核，风貌统筹依据 [standard:MOHURD-URBAN-DESIGN-MEASURES]。绿地比例在本方案中不只是达标数字，它决定遮阴与调蓄能力，也直接决定极端天气工况能否成立；公共空间比例则决定创新交往与日常生活能否在同一条主线上共存。
+京张遗址公园主线是新轴的骨架，清河与小月河构成东西向蓝绿横联，两者共同支撑第四章的三态运行。绿地与公共空间证据为 [data:geometry/green_space.geojson#GREEN-AXIS-001]、[data:geometry/green_space.geojson#GREEN-QINGHE-001]、[data:geometry/green_space.geojson#GREEN-XIAOYUE-001] 与 [data:geometry/public_space.geojson#N1]，比例指标为 [metric:green_ratio] 与 [metric:public_space_ratio]，深度由 [depth:blue_green_public_space] 校核，风貌统筹依据 [standard:MOHURD-URBAN-DESIGN-MEASURES]。绿地比例在本方案中不只是达标数字，它决定遮阴与调蓄能力，也直接决定极端天气工况能否成立；公共空间比例则决定创新交往与日常生活能否在同一条主线上共存。
 
 ### 三处 AI 朝圣地标与荣誉展示体系（agent.4）
 
-三处地标均为**概念建议**，必须是真正可进入、可停留、有人工服务的公共空间，而不是巨屏、封闭指挥中心或纯企业展厅：
+三处地标均为**概念建议**，必须是真正可进入、可停留的公共空间，人工服务为运营主体确认后、在经授权服务时段内实现的设计目标，而不是巨屏、封闭指挥中心或纯企业展厅：
 
 1. **算力换装站 / Compute Exchange（众智园）**：以公众可读的调度与账本界面为核心，把“任务去哪里算”这一决策过程变成可参观、可提问的公共内容。荣誉展示对象是公开的测试记录与评测报告，而非企业排名。
 2. **原点公共庭院 / Origin Commons（AI 原点社区）**：以开源荣誉墙、社区口述与模型验证现场为核心，记录贡献者与贡献事件；展示可随时应贡献者要求撤下。
 3. **新轴发布站 / Axis Launch Station（大钟寺）**：以年度“新轴时刻表”与成果发布为核心，兼作日常城市客厅；国际交流内容与本地日常使用共用同一空间，不做只在活动日开放的封闭场地。
 
-**公共空间组件库**即第四章的门、庭、站、市、园、桥六类原型，配合统一里程与导视系统，形成可复制的街区节奏。所有地标、导视、Logo、字体、图像、人物与企业标识必须清权，不得过度娱乐化或网红化，不得写成已批准建设项目。
+**公共空间组件库**即第四章的门、庭、站、市、园、缝六类原型，配合统一里程与导视系统，形成可复制的街区节奏。所有地标、导视、Logo、字体、图像、人物与企业标识必须清权，不得过度娱乐化或网红化，不得写成已批准建设项目。
 
 ### 文化叙事与导视符号系统（agent.5）
 
 风貌叙事由三层记忆叠合：京张铁路遗存与鸡鸣山煤矿支线所代表的**能源供给史**、中关村科研与普通劳动所代表的**创新与日常史**、AI 公共生活所代表的**当代史**。导视系统以“里程＋站点＋方向”为基本语法呼应铁路秩序，用统一里程标记替代景观小品式装置；符号系统只使用抽象线性元素，不复制古建构件、不挪用国家礼仪等级、不使用世界遗产官方视觉。国际传播叙事统一使用 `HAIDIAN AI AXIS: FROM COAL TO COMPUTE` 与 `Railway Heritage. AI Innovation. Everyday Life.`，并在每一次对外表达中同时说明本方案的概念建议属性。
 
-**设计判断**：蓝绿与公共空间先满足气候与日常使用，再承载地标与文化表达；三处地标以“可进入、有人工服务”为硬性前提。
+**设计判断**：蓝绿与公共空间先满足气候与日常使用，再承载地标与文化表达；三处地标以“可进入”为硬性前提，人工服务为运营主体确认后、经授权服务时段内实现的设计目标。
 **判断理由**：朝圣地标若做成封闭展厅或巨屏装置，会与第三章“公共共享”推论直接冲突，也无法支撑长期运营。
-**图层／指标／标准对应**：[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio]、[metric:public_space_ratio]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[depth:blue_green_public_space]。
+**图层／指标／标准对应**：[data:geometry/green_space.geojson#GREEN-AXIS-001]、[data:geometry/public_space.geojson#N6]、[metric:green_ratio]、[metric:public_space_ratio]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[depth:blue_green_public_space]。
 **资料缺口**：文保与历史建筑清单、河道蓝线与绿线、既有绿地权属与养护主体、遗址公园现状设施与开放时间。
 
 ## 更新项目清单、实施政策与分期计划
@@ -488,13 +490,31 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | --- | --- | --- |
 | 可复算空间指标 | [metric:site_area_sqm] | 由提交边界复算 [data:geometry/site_boundary.geojson#SITE-001]；当前基于 provisional 边界，只作口径参考 |
 | 可复算空间指标 | [metric:key_area_count] | 三处重点区计数 [data:geometry/key_areas.geojson#PROV-KEY-003]；验证“差异化节点序列”是否落到三处不同分工的站点 |
-| 可复算空间指标 | [metric:building_footprint_area_sqm] | 由 [data:geometry/buildings.geojson#BLDG-001] 复算；用于校核建筑更新四级策略的作用范围 |
-| 可复算空间指标 | [metric:green_ratio] | 由 [data:geometry/green_space.geojson#GREEN-001] 与边界复算；直接关系遮阴、调蓄与极端天气工况能否成立 |
-| 可复算空间指标 | [metric:public_space_ratio] | 由 [data:geometry/public_space.geojson#PUBLIC-001] 与边界复算；关系创新交往与日常生活能否共存于同一主线 |
+| 可复算空间指标 | [metric:building_footprint_area_sqm] | 由 [data:geometry/buildings.geojson#BLDG-ST01-001]、[data:geometry/buildings.geojson#BLDG-ST02-001]、[data:geometry/buildings.geojson#BLDG-ST03-001] 复算，仅为三个提交概念干预包络；用于校核建筑更新四级策略的作用范围 |
+| 可复算空间指标 | [metric:green_ratio] | 由 [data:geometry/green_space.geojson#GREEN-AXIS-001] 等六个概念绿地面与边界复算；直接关系遮阴、调蓄与极端天气工况能否成立 |
+| 可复算空间指标 | [metric:public_space_ratio] | 由 [data:geometry/public_space.geojson#N1] 至 [data:geometry/public_space.geojson#N6] 与边界复算；关系创新交往与日常生活能否共存于同一主线 |
 | 待官方条件的管控指标 | [metric:floor_area_ratio] | 状态 `unknown`；缺经批准的 FAR 控制与官方边界，本轮不填值 |
 | 待长期校准的绩效指标 | 账本类（时延、排队、失败率、能耗、绿电比例、碳、水、切换时间）；运营类（转化立项数、退出率、无障碍断点数、夜间照明达标率） | 仅发布计量口径与空表结构，取得真实运行数据前不填值 |
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
+
+### 已知指标同源对照表（与 `metrics.json` 同步）
+
+下表把 `metrics.json` 当前 14 项 `known` 指标按三种性质分组同源对照。“机器值”列是 `metrics.json` 的精确输出，只有在明确标注为机器复算结果时才可使用精确值；对外表达建议采用“展示口径”列的圆整值并附低置信度说明。全部 14 项均为基于临时粗略边界与本包提交概念几何的低置信度输出，**不是现状条件数据、规划管控指标、建设工程量、服务绩效或已实现 KPI**。
+
+| 分组 | 指标 | 机器值（`metrics.json`） | 展示口径建议 | 含义与限制 |
+| --- | --- | --- | --- | --- |
+| 临时／设计几何数学 | [metric:site_area_sqm] | 11412825.386 m² | 约 11.4 km² | 临时粗略边界的复算面积，不是官方面积 |
+| 临时／设计几何数学 | [metric:building_footprint_area_sqm] | 35851.926 m² | 约 3.6 万 m² | 仅为三个提交概念干预包络之和，不是现状建筑基底、GFA 或 FAR 量 |
+| 临时／设计几何数学 | [metric:green_ratio] | 0.113434 | 约 11.3% | 六个概念绿地面并集 ÷ 临时边界面积 |
+| 临时／设计几何数学 | [metric:public_space_ratio] | 0.044371 | 约 4.4% | N1–N6 六个原型面并集 ÷ 临时边界面积 |
+| 临时／设计几何数学 | [metric:conceptual_mobility_length_m] | 11437.434 m | 约 11.4 km | 五条概念慢行连线长度之和，不是现状道路或工程线位长度 |
+| 已申报设计计数 | [metric:key_area_count]、[metric:station_count]、[metric:wing_count] | 3、3、2 | 直接使用整数 | 三处临时重点区、三个站点概念包络、两翼概念连线的申报计数 |
+| 已申报设计计数 | [metric:prototype_node_count]、[metric:scenario_count]、[metric:industry_test_count]、[metric:phase_count] | 6、10、3、3 | 直接使用整数 | N1–N6 原型、S01–S10 场景、S08–S10 产业测试、三期分期的申报计数 |
+| 申报／文档覆盖度 | [metric:declared_reversible_prototype_ratio] | 1.0 | 100%（申报口径） | N1–N6 全部在提交图层中申报 `reversible=true` 的覆盖度声明；不是运行绩效、有效性、可逆性验证或治理承诺 |
+| 申报／文档覆盖度 | [metric:declared_manual_fallback_documentation_ratio] | 1.0 | 100%（申报口径） | N1–N6 全部填写人工／离线兜底字段的文档覆盖度声明；不是绩效、有效性、人员配置保证或已测试证据 |
+
+再次强调：两项 `declared_*` 指标只描述申报与文档覆盖情况，任何场合不得称其为绩效或有效性指标；[metric:floor_area_ratio] 仍为 `unknown`，待官方控规条件确认后填报。
 
 ### 可验证设计目标
 
@@ -515,28 +535,28 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 回到第一章的主线，本章是它的最后一环：**遗产主线 → 三站分工 → 两翼供给/反馈 → 六类空间原型 → 十个运行场景 → 一套年度账本**。账本不是附加的统计工作，而是唯一能反过来判断前五环是否仍然成立的手段——主线是否仍连续、站点是否仍差异化、原型是否被用对、场景是否仍保留退出权，都在年度审计中被重新检验。
 
-**当前包状态说明**：本包 `package_state` 仍为 `scaffold`；中英文主体正文已经形成，几何、指标、五张图件、HTML 与 A3/A0 PDF 仍为占位产物，尚未同源更新，因此**正文中的指标引用只指向计算口径与设计含义，不指向已完成的复算结果**。
+**当前包状态说明**：本包 `package_state` 仍为 `scaffold`，`SCAFFOLD-DRAFT` 标记保留；中英文完整正文、42 条已登记来源均已形成，本包概念几何、指标、假设（`geometry/*.geojson`、`metrics.json`、`assumptions.json`）已通过本轮内部评审，**正文中的指标引用即指向上述通过本轮内部评审的复算口径与数值（低置信度、临时边界口径）**；五对双语图件、双语 HTML、A3/A0 PDF 对、manifest 清单与哈希刷新、scaffold 标记移除与包终态化仍待完成，在这些下游事项关闭之前包状态保持不变。
 
-**设计判断**：把指标按可复算／待官方条件／待长期校准三类分开，并明确本轮不产生新的指标值。
-**判断理由**：在 scaffold 状态下宣称指标已复算，会让整套证据链失去可信度；分类表述可以让集成方准确知道下一步该算什么。
-**图层／指标／标准对应**：全部九个几何图层、六项 metrics、[depth:metrics_recalculation]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+**设计判断**：把指标按可复算／待官方条件／待长期校准三类分开，并把 14 项 `known` 指标与 `metrics.json` 同源对照、明确其机器值与展示口径。
+**判断理由**：把机器精确值与展示圆整值、申报口径分开，才能既保证同源可审计，又不把临时边界的复算冒充规划精度；分类表述让集成方准确知道官方数据到位后该重算什么。
+**图层／指标／标准对应**：全部九个几何图层、15 项指标引用（14 项 `known` 与 1 项 `unknown`）、[depth:metrics_recalculation]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 **资料缺口**：官方边界与重点区 polygon、控规管控指标、真实运行账本数据、现状普查数据。
 
 ## 风险、版权与合规说明
 
 **事实与表述风险**：本方案最主要的风险是被误读为官方结论。为此重申：海淀新轴不是法定规划轴线、不是北京中轴线延长线或世界遗产关联项目；1909 年京张本线止于张家口，通往内蒙古属于其后平绥—京包的演进；海淀—乌兰察布双城计算是基于已核验政策、合作与网络条件的**设计推演**，不是官方架构；本方案不宣称零碳算力、不宣称 4.2 ms 直达海淀、不使用全乌兰察布口径的 PUE、不承诺投资、容量、SLA 或资金；中东案例的绩效均为项目方或主办机构主张，本方案只转移机制。
 
-**数据与几何风险**：提交边界与三处重点区 polygon 为 provisional，矩形边不得解释为地块或道路红线；`geometry/constraints.geojson` 为空，控制线尚未纳入校核；缺少控规、现状建筑、权属、市政、消防与文保条件，全部相关结论已降级为待确认事项，并记入 `assumptions.json`（当前为 `A-CONTROLS-001`）。风险与缺口由 [depth:risk_missing_data] 管理，并与 [source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK] 及 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 相互校核。
+**数据与几何风险**：提交边界与三处重点区 polygon 为 provisional，矩形边不得解释为地块或道路红线；`geometry/constraints.geojson` 现为缺数据适用性／实施前置校验总览面与两翼概念服务范围面，不含任何法定控制线，官方控制线仍未纳入校核；缺少控规、现状建筑、权属、市政、消防与文保条件，全部相关结论已降级为待确认事项，并记入 `assumptions.json`（`A-CONTROLS-001` 及各图层假设条目）。风险与缺口由 [depth:risk_missing_data] 管理，并与 [source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK] 及 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 相互校核。
 
 **隐私与人工否决风险**：所有 AI 场景都必须保留人工复核、离线替代与退出条件；人工可以否决自动化处置结论；不采集个人身份、生物特征、未成年人、健康与轨迹数据用于外送任务；不将居民画像用于商业推荐。若任一场景无法满足这三项，应当停止该场景而不是降低标准。
 
 **版权与合规**：所有图片、图纸、图标、字体、数据与代码资产的来源、许可与授权状态须在 `sources.json` 与 `report/copyright_statement.md` 中登记；不使用未授权的商标、肖像、论文图像与版权材料；不复制北京中轴线或世界遗产官方视觉。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。主文件为中文，`proposal.en.md` 提供完整等义译文；英文图件、HTML 与 PDF 尚待同源生成。
 
-**协议依赖风险**：海乌相关的调度、账本与测试场景全部依赖后续协议；协议未定时，账本只能是空表结构与计量口径，相关场景卡只能以测试规范形式存在。
+**协议依赖风险**：海乌相关的调度、账本与测试场景全部依赖项目专属协议；在项目专属的协议、SLA 或数据集被提供给本提交并核验之前，账本只能是空表结构与计量口径，相关场景卡只能以测试规范形式存在。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施；一切空间落地建议均为“概念建议／参考方案／可供专业团队深化研究”。最终判断由人类和专业团队完成。
 
-**设计判断**：全文的边界声明只保留三处——第一章开篇的三条事实边界、各表格内与具体机制绑定的“不复制／不可推断”列、本章的风险总表；中间各章不再重复免责。
+**设计判断**：全文的边界声明只保留三处——第一章开篇的不可协商的事实与操作边界、各表格内与具体机制绑定的“不复制／不可推断”列、本章的风险总表；中间各章若重复出现同类限定语，仅为强调，不改变该全局效力。
 **判断理由**：免责语句重复越多，读者越容易跳过，真正关键的三条反而被稀释；把边界绑定到具体表格行，比在每段末尾追加声明更能在深化阶段被执行。
 **图层／指标／标准对应**：[data:geometry/constraints.geojson#CONSTRAINTS]、[depth:risk_missing_data]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 **资料缺口**：见各章“资料缺口”与 `missing_data_checklist.csv`；本轮新增的待登记来源见下章。
@@ -567,9 +587,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 机器可读引用索引
 
-[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]、[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]、[source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]、[source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]、[source:NDRC-COMPUTE-HUB-REPLY-2021]、[source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]、[source:MIIT-DATACENTER-CASE-2021]、[source:BJHD-COOPERATION-2024]、[source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]；[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]；[metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:floor_area_ratio]；[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-004]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CONSTRAINTS]、[data:geometry/phasing.geojson#PHASE-001]。
+[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]、[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]、[source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]、[source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]、[source:NDRC-COMPUTE-HUB-REPLY-2021]、[source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]、[source:MIIT-DATACENTER-CASE-2021]、[source:BJHD-COOPERATION-2024]、[source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]；[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]；[metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:key_area_count]、[metric:station_count]、[metric:wing_count]、[metric:prototype_node_count]、[metric:scenario_count]、[metric:industry_test_count]、[metric:phase_count]、[metric:conceptual_mobility_length_m]、[metric:declared_reversible_prototype_ratio]、[metric:declared_manual_fallback_documentation_ratio]、[metric:floor_area_ratio]；[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-004]、[data:geometry/buildings.geojson#BLDG-ST01-001]、[data:geometry/buildings.geojson#BLDG-ST02-001]、[data:geometry/buildings.geojson#BLDG-ST03-001]、[data:geometry/roads.geojson#ROAD-AXIS-001]、[data:geometry/roads.geojson#ROAD-WING-TECH-001]、[data:geometry/roads.geojson#ROAD-WING-XIAOYUE-001]、[data:geometry/roads.geojson#ROAD-STITCH-N4]、[data:geometry/roads.geojson#ROAD-STITCH-N5]、[data:geometry/green_space.geojson#GREEN-AXIS-001]、[data:geometry/green_space.geojson#GREEN-QINGHE-001]、[data:geometry/green_space.geojson#GREEN-XIAOYUE-001]、[data:geometry/public_space.geojson#N1]、[data:geometry/public_space.geojson#N2]、[data:geometry/public_space.geojson#N3]、[data:geometry/public_space.geojson#N4]、[data:geometry/public_space.geojson#N5]、[data:geometry/public_space.geojson#N6]、[data:geometry/constraints.geojson#CONSTRAINTS]、[data:geometry/constraints.geojson#WING-TECH-001]、[data:geometry/constraints.geojson#WING-XIAOYUE-001]、[data:geometry/phasing.geojson#PHASE-001]。
 
 **设计判断**：参考资料分为“仓库内依据”“已登记外部一手来源索引”“机器可读引用索引”三段，35 条外部来源已逐条登记 `sources.json` 并在正文标注引用，唯官方控制线数据仍如实标注为未登记缺口，不为其编造标识。
 **判断理由**：本方案的核心主张大量依赖仓库外的公开一手材料；逐条登记并标注 `authority_level`、`usage`、`risk_note` 才能让审查方复核每一句设计判断的证据等级，而不是把一批材料笼统合并成一条来源；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
-**图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条 scaffold + 35 条新登记）、6 条 standard、15 条 depth、6 项 metric 与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
+**图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条 scaffold + 35 条已登记）、6 条 standard、15 条 depth、15 项 metric（14 项 `known` 与 1 项 `unknown`）与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
 **资料缺口**：官方控制线数据仍未登记，见上文“未解决的来源缺口”；英文图件、HTML 与 PDF 尚未生成。
