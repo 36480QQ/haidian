@@ -2,8 +2,10 @@
   "items": [
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-INFRASTRUCTURE-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "以来源分级、临时约束层和缺失数据清单建立现状诊断底板。",
@@ -46,8 +48,8 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "区分43.6平方公里研究层、约11.4平方公里总体层和三处重点区详细层。",
@@ -91,8 +93,10 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-INFRASTRUCTURE-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "以一廊三核多触点组织总体空间结构，并分别登记地标与分布式网络。",
@@ -140,8 +144,9 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "用九个标准代码概念分区完整覆盖临时边界，并按代码复算面积。",
@@ -187,8 +192,10 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "明确概念建筑基底可量测，但法定容积率、总建面和密度保持未知。",
@@ -234,8 +241,9 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "提出色彩、屋顶与公共界面方向，不虚构高度、体量或文保控制值。",
@@ -280,8 +288,9 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "采用保留优先、可逆改造和新增待论证三类概念策略，拆除结论保持待调查。",
@@ -326,16 +335,18 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-INFRASTRUCTURE-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
-      "design_action_zh": "以四条概念联系线、慢行客厅和停车问题清单表达交通组织，不作工程线位判断。",
+      "design_action_zh": "以四条概念联系线、慢行客厅网络和停车问题清单表达交通组织，不作工程线位判断。",
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
-      "evidence_summary_zh": "以四条概念联系线、慢行客厅和停车问题清单表达交通组织，不作工程线位判断。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
+      "evidence_summary_zh": "以四条概念联系线、慢行客厅网络和停车问题清单表达交通组织，不作工程线位判断。 正文标题、实际 geometry feature、metric ID、图件和自检项可交叉解析。",
       "figure_refs": [
         "assets/figures/mobility-bluegreen.png"
       ],
@@ -373,8 +384,10 @@
     },
     {
       "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-INFRASTRUCTURE-001",
         "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-SAFETY-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "提出端侧算力、能源通信、安全与失败转人工复核清单，容量保持未知并回指约束与资料缺口。",
@@ -421,8 +434,9 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-INFRASTRUCTURE-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "以一条蓝绿廊、三座地标和四张分布式网络组织公共空间，并复算概念占比。",
@@ -469,8 +483,11 @@
     },
     {
       "assumption_ids": [
-        "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-INFRASTRUCTURE-001",
+        "A-DESIGN-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "逐区给出产业、建筑、公共空间、交通、运营和风险响应，并引用实际 feature。",
@@ -518,8 +535,14 @@
     },
     {
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-INFRASTRUCTURE-001",
         "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-CONSENT-001",
+        "A-SAFETY-001",
+        "A-OUTCOMES-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "六项目表逐行包含责任角色、阶段门、审批/复核、资源包络、停止条件和验收判据。",
@@ -566,8 +589,12 @@
     },
     {
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-INFRASTRUCTURE-001",
         "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-OUTCOMES-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "六项目以A—C阶段门串联责任角色、审批/复核、资源包络、停止条件和验收字段。",
@@ -615,8 +642,10 @@
     },
     {
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
         "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-OUTCOMES-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "在EPSG:4548复算已知空间指标，并把没有基线的试点结果保留为空。",
@@ -662,8 +691,15 @@
     },
     {
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-EXISTING-001",
+        "A-INFRASTRUCTURE-001",
         "A-DESIGN-001",
-        "A-CONTROLS-001"
+        "A-CONSENT-001",
+        "A-AI-CONTENT-001",
+        "A-SAFETY-001",
+        "A-OUTCOMES-001"
       ],
       "control_status": "conceptual_or_provisional",
       "design_action_zh": "集中披露边界、控规、现状、设施、授权、AI内容、运营结果和专业责任缺口。",
