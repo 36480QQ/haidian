@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is clearly labeled and must be replaced before official spatial use."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas remain provisional rough polygons."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Six shared-edge bands partition the submitted boundary without gaps or overlap."
+    },
+    {
+      "check_id": "TIME_CLAIM_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "No real minutes-saved benefit is claimed; the time-dividend outcome metric remains unknown."
+    },
+    {
+      "check_id": "SCENARIO_SAFETY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All twelve scenarios declare human review, no-AI access or stop conditions in the shared protocol."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Offline static HTML uses only local assets and inline CSS."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal links standards, depth items, geometry, metrics, sources and assumptions."
+    }
+  ]
+}
