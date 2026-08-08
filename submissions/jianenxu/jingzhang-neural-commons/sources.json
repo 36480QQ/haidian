@@ -42,6 +42,51 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "BEIJING-ICV-ITERATION-2025",
+      "url": "https://www.nda.gov.cn/sjj/ywpd/szsh/0117/20250117135550122741899_mobile.html",
+      "publisher": "国家数据局",
+      "published_date": "2025-01-22",
+      "source_type": "official_public",
+      "usage": "Background precedent for staged pilot governance: test environment, small-scale deployment, scaled application, and iterative optimisation. It does not authorise any transport deployment in this proposal.",
+      "limitations": "A connected-vehicle demonstration precedent; transfer is limited to staged-governance method, not technical scope, roads, permits, data, or implementation claims."
+    },
+    {
+      "id": "BEIJING-SCENE-OPEN-2025",
+      "url": "https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4567967.html",
+      "publisher": "北京市政务服务和数据管理局",
+      "published_date": "2026-03-27",
+      "source_type": "official_public",
+      "usage": "Background precedent for publishing demand lists and matching a responsible scene owner with solution providers.",
+      "limitations": "The notice is citywide and does not create a Haidian project, budget, procurement, or approval commitment."
+    },
+    {
+      "id": "SHENZHEN-CITY-AI-SCENES-2025",
+      "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tzgg/content/mpost_12533842.html",
+      "publisher": "深圳市工业和信息化局、深圳市政务和数据局、深圳市国资委",
+      "published_date": "2025-12-05",
+      "source_type": "official_public",
+      "usage": "Background precedent for a multi-department AI scene list and responsible-unit coordination.",
+      "limitations": "A Shenzhen policy practice; only the coordination pattern is referenced."
+    },
+    {
+      "id": "SINGAPORE-AI-VERIFY",
+      "url": "https://www.smartnation.gov.sg/initiatives/national-ai-strategy/?dbe437e9_page=3",
+      "publisher": "Smart Nation Singapore",
+      "accessed_date": "2026-08-08",
+      "source_type": "official_public",
+      "usage": "Background precedent for assessing responsible AI implementation with a documented testing framework.",
+      "limitations": "Referenced for evaluation discipline only; no assertion of using Singapore tools, standards, or certification."
+    },
+    {
+      "id": "HELSINKI-AI-REGISTER",
+      "url": "https://ai.hel.fi/en/ai-register/",
+      "publisher": "City of Helsinki",
+      "accessed_date": "2026-08-08",
+      "source_type": "official_public",
+      "usage": "Background precedent for a public-facing register describing municipal AI use cases and receiving feedback.",
+      "limitations": "Referenced for transparency and feedback design only; no cross-jurisdictional data or system transfer is implied."
     }
   ]
 }
