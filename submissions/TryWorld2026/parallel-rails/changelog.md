@@ -24,3 +24,8 @@
 - **实施可行性**：新增"参与主体分工建议"五方分工（政府定标准/设计院深化/企业运营/社区共治/开发者贡献场景）。
 - **表达完整度**：英文版按 `docs/terminology-glossary.md` 对齐关键术语（Jing-Zhang Railway Heritage Park、Zhongguancun Technology Services Wing、Xiaoyue River Scenario Enablement Wing、Zhongzhiyuan AI Independent Innovation Acceleration Area 等）。
 - 四项本地 gate 重新验证 PASS。
+
+## v0.1.3 - 2026-08-08
+
+- **真实数据锚定（信息不对称迭代）**：按任务书 external_data_guidance，引入 OpenStreetMap（ODbL）公开数据，经 Nominatim 地理编码核验沿线 5 个真实节点（京张铁路遗址公园、北京北站、大钟寺站、清华园站旧址、五道口），新增"真实场地锚点核验"小节并登记来源 DATA-SRC-OSM-ANCHORS-20260808（background_only，仅叙事锚定，不作为红线/测量/面积依据）。
+- 三项本地 gate 与 CI 校验重新验证 PASS。
