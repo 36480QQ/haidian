@@ -24,19 +24,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5006ed537e21ef715efda1eb05364fd3993059a8fa03955fb35232620c81e15e"
+      "sha256": "7065912890ebf5ceba547810c5b42015cc892d822749eea167ff95c08137e8af"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "9619216fa61635af5a28638a1879f589bf41ca6a1ac2f30260693667726cada5"
+      "sha256": "08f271108e8d219ecc059ecbcd9e95bb18b77c27cf685eb1aa1755b15a5f1d97"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "5ffb7e2249a705f10c083360cc1ba649c2ca53a0c40850ca6dc6ee07d65c8d65"
+      "sha256": "daa875029394b594dce376ff3a4349b355822b6c1e68a84d68b1ac1b4f46c3cb"
     },
     {
       "path": "assumptions.json",
@@ -91,63 +91,63 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "ca9cc251363b4d498e2bce55e2d2c2073cdf94ca410c4058248abd9aadddbdf3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "97c3250a0ea64b1c77d8972599db4f92e0c790a465fbe9f6e4aa2ce42ae4d418"
+      "sha256": "6289dc48bd1082a6bfde3f01a360e0c83f35cdcd6d56cd93b79dde431988668a"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fa58be64c9815659a5fc71a7cad7d6d2896fcb2f0d9f817e31e8d92ea0ab5949"
+      "sha256": "0ff67368a5aa617458aeaeeda22c73fe031b68ed47ad30be0421d031e65f6135"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7affb8aab24b0d1b8e1c08ac6f025c5c875a1bae2633a8b313ad828488e0e37b"
+      "sha256": "ecfaf4a7468cbee0d5f787f7cd623cbc082b155bc1c7e2172290ba6abc235017"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d8d956ddd00c521469ae630070e0456076f15c9ad073a7eb0e8477274a1097c5"
+      "sha256": "243c6f6d8ee0874372595fd5faf16ec76216a2866523cdad8db0a82cf7a22fa3"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "65e225805449adabb9896860618eca587170d07ce458b77a7012e13db033af35"
+      "sha256": "941bd4343528be61934be7d1d1ac60ec0bc955a2b921850a3acf5680992f2d27"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "d392fea3cb52eddeb4ebeaf0667591ed62ccd1fd1bcb5c3b83e90cb048acdd1b"
+      "sha256": "2d25d5cae5eb05b8b758956c3668b157965ee2762994b28aed51dd9479dfe6d1"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8993eef2b2b4d0a82d8643b3a62c3792cf6c81f1f79d6f465fb29a71b5853df6"
+      "sha256": "6f68d3aa5a887a402871102c32734482b9e181085e583075eb8ebfad2dcd20fe"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8b4e0ed3b3d178aefe8d3c4bb6417aafd3b89d96c85d3a2dacd458b4fc47d04b"
+      "sha256": "0125463d5cfc0b4bd43ccb1919d1c47fc5404df6fe5942136c1d57a8ade017bd"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -206,7 +206,9 @@
   ],
   "validation_claim": {
     "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "high"
+    "known_blockers": [
+      "Provisional boundary: geometry/site_boundary.geojson uses agent_inferred_from_public_data, not official redline. Organizer data gap does not block content scoring; recalculate when official geometry is supplied."
+    ],
+    "data_confidence": "medium"
   }
 }
