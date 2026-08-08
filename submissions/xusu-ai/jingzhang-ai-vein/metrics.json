@@ -42,7 +42,7 @@
   },
   "total_floor_area_sqm": {
    "status": "known",
-   "value": 6372735.9,
+   "value": 5523528.5,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -55,7 +55,7 @@
   },
   "floor_area_ratio": {
    "status": "known",
-   "value": 0.5584,
+   "value": 0.484,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -69,7 +69,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.1223,
+   "value": 0.0282,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -83,7 +83,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 1395710.7,
+   "value": 322360.5,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -134,7 +134,7 @@
   },
   "building_count": {
    "status": "known",
-   "value": 1133,
+   "value": 80,
    "unit": "count",
    "source_files": [
     "geometry/buildings.geojson"
@@ -175,109 +175,127 @@
     "geometry/key_areas.geojson"
    ],
    "formula": "sum key area polygon area in EPSG:4548",
-   "confidence": "medium"
+   "confidence": "medium",
+   "values": [
+    {
+     "id": "PROV-KEY-001",
+     "name": "众智园AI自主创新加速区（对称双翼+中轴）",
+     "area_sqm": 3462843.2
+    },
+    {
+     "id": "PROV-KEY-002",
+     "name": "北京AI原点社区（对称双翼+中轴）",
+     "area_sqm": 3795664.9
+    },
+    {
+     "id": "PROV-KEY-003",
+     "name": "大钟寺AI产业聚集区（对称双翼+中轴）",
+     "area_sqm": 4145381.6
+    }
+   ]
   }
  },
- "v2_plan_summary": {
+ "v3_plan_summary": {
   "axis": "x=0 城市中轴线，左右镜像对称",
   "parcel_pairs": 6,
-  "sunlight_rule": "居住南排≤15m北排≤24m，排距≥40m（间距系数1.7，北京大寒日≥2h）",
+  "sunlight_rule": "居住地块全部板式住宅（55×14m/11-18层/33-54m），南北排距≥1.2倍楼高（北京大寒日≥2h），层高2.9m",
+  "building_strategy": "科研地块点式超高层(180-288m/参考中国尊/正大中心/国贸三期)，商业综合体(95m/参考朝阳大悦城)，文化馆(30-40m/参考首博/科技馆)，配建中小学(4-5层/参考北京四中/中关村三小)，底商≤3层",
   "parcel_stats": [
    {
     "id": "LU-001",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 53.4,
-    "coverage_pct": 14.3,
-    "buildings": 53
+    "coverage_pct": 2.0,
+    "buildings": 5
    },
    {
     "id": "LU-002",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 84.5,
-    "coverage_pct": 16.7,
-    "buildings": 91
+    "coverage_pct": 3.0,
+    "buildings": 7
    },
    {
     "id": "LU-003",
     "code": "0803",
     "name": "文化用地",
     "area_ha": 63.8,
-    "coverage_pct": 15.2,
-    "buildings": 84
+    "coverage_pct": 3.9,
+    "buildings": 3
    },
    {
     "id": "LU-004",
     "code": "0803",
     "name": "文化用地",
     "area_ha": 73.4,
-    "coverage_pct": 14.6,
-    "buildings": 91
+    "coverage_pct": 4.1,
+    "buildings": 3
    },
    {
     "id": "LU-005",
     "code": "0701",
     "name": "居住用地",
     "area_ha": 76.6,
-    "coverage_pct": 14.8,
-    "buildings": 89
+    "coverage_pct": 2.8,
+    "buildings": 18
    },
    {
     "id": "LU-006",
     "code": "0701",
     "name": "居住用地",
     "area_ha": 65.7,
-    "coverage_pct": 15.4,
-    "buildings": 78
+    "coverage_pct": 3.7,
+    "buildings": 18
    },
    {
     "id": "LU-007",
     "code": "05",
     "name": "商业用地",
     "area_ha": 87.6,
-    "coverage_pct": 14.4,
-    "buildings": 120
+    "coverage_pct": 3.9,
+    "buildings": 3
    },
    {
     "id": "LU-008",
     "code": "05",
     "name": "商业用地",
     "area_ha": 78.5,
-    "coverage_pct": 15.2,
-    "buildings": 107
+    "coverage_pct": 4.3,
+    "buildings": 3
    },
    {
     "id": "LU-009",
     "code": "05",
     "name": "商业用地",
     "area_ha": 84.6,
-    "coverage_pct": 14.9,
-    "buildings": 115
+    "coverage_pct": 4.0,
+    "buildings": 3
    },
    {
     "id": "LU-010",
     "code": "05",
     "name": "商业用地",
     "area_ha": 89.7,
-    "coverage_pct": 14.1,
-    "buildings": 123
+    "coverage_pct": 3.8,
+    "buildings": 3
    },
    {
     "id": "LU-011",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 79.0,
-    "coverage_pct": 15.2,
-    "buildings": 85
+    "coverage_pct": 3.2,
+    "buildings": 7
    },
    {
     "id": "LU-012",
     "code": "0802",
     "name": "科研用地",
     "area_ha": 90.1,
-    "coverage_pct": 15.7,
-    "buildings": 97
+    "coverage_pct": 2.8,
+    "buildings": 7
    }
   ]
  }

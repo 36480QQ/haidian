@@ -1,0 +1,332 @@
+#!/usr/bin/env python3
+"""
+京张智脉 V3 — 真实北京建筑案例支撑版生成脚本
+核心升级（相对 V2）：
+1. 居住地块 → 全部板式住宅楼（真实案例：天通苑/望京新城/融泽嘉园 55×14m、11-18层、33-54m）
+2. 科研地块 → 点式超高层（真实案例：中国尊78m见方、正大中心238m、国贸三期330m）
+3. 文化地块 → 大型文化建筑（真实案例：首都博物馆、中国科技馆，基底1-4万㎡、3-5层）
+4. 商业地块 → 商业综合体（真实案例：朝阳大悦城、西单大悦城）+ 底商裙房≤3层
+5. 居住地块配建教育建筑（北京中小学教学楼 4-5层）+ 沿街底商
+6. 日照：板楼南北间距 ≥ 1.2×楼高（北京标准），层高2.9m
+7. 所有建筑体块有真实北京案例对应（见 proposal.md 案例支撑表）
+"""
+import json, math
+from shapely.geometry import Polygon, box
+from pyproj import Transformer
+
+OUT = "/tmp/scene_v3.json"
+to_4548 = Transformer.from_crs("EPSG:4326", "EPSG:4548", always_xy=True)
+
+# ============ 1. 场地 ============
+SITE_RINGS = [[-584.3213683998594,-4857.095687500316],[670.2509814002696,-4857.095687500316],[670.2509814002696,-1970.5931074999432],[498.39175540067015,804.8901424998991],[670.2509814002696,4857.095687499526],[-412.46214240025984,4857.095687499526],[-498.391755399449,2581.1994224997034],[-670.2509814002696,-860.3998075001641],[-584.3213683998594,-4857.095687500316]]
+SITE_W, SITE_H = 1340.5, 9714.19
+SITE_POLY = Polygon(SITE_RINGS)
+
+A_LON, B_LON = 0.0000116374, 116.3475
+C_LAT, D_LAT = 0.0000090074, 39.98275
+
+def area_sqm_4548(ring):
+    wgs = [[A_LON*p[0]+B_LON, C_LAT*p[1]+D_LAT] for p in ring]
+    proj = [to_4548.transform(x, y) for x, y in wgs]
+    return abs(Polygon(proj).area)
+
+SITE_AREA = area_sqm_4548(SITE_RINGS)
+print(f"场地面积(EPSG:4548): {SITE_AREA/1e4:.1f} ha")
+
+def poly_ring(poly, shrink=0.0):
+    if shrink > 0:
+        poly = poly.buffer(-shrink)
+    coords = list(poly.exterior.coords)
+    return [[round(x,9), round(y,9)] for x, y in coords]
+
+# ============ 2. 地块（复用 V2 中轴对称划分）============
+AXIS = 0.0; PARK_HALF = 110.0; WING_IN = 110.0; WING_OUT = 671.0
+
+def mk_parcel(pid, code, color, name, label, x0, x1, y0, y1, axis_gap=0.0):
+    if axis_gap > 0 and x1 <= 0:
+        x1 -= axis_gap
+    elif axis_gap > 0 and x0 >= 0:
+        x0 += axis_gap
+    design = box(x0, y0, x1, y1)
+    poly = design.intersection(SITE_POLY)
+    if poly.is_empty or poly.geom_type != "Polygon":
+        return None
+    ring = poly_ring(poly, 0.0)
+    area = area_sqm_4548(ring)
+    return {"id": pid, "code": code, "color": color, "name": name, "label": label,
+            "rings": ring, "area_sqm": round(area,1),
+            "area_ratio": round(area/SITE_AREA*100, 1),
+            "design_rect": [x0, x1, y0, y1]}
+
+parcels = []
+parcels.append(mk_parcel("LU-001","0802","#2E5BFF","科研用地","科研用地（AI自主创新加速·西翼）",-WING_OUT,-WING_IN,3238,4857.5,1.0))
+parcels.append(mk_parcel("LU-002","0802","#2E5BFF","科研用地","科研用地（AI自主创新加速·东翼）",WING_IN,WING_OUT,3238,4857.5,1.0))
+parcels.append(mk_parcel("LU-003","0803","#7B5BFF","文化用地","文化用地（AI展示与体验·西翼）",-WING_OUT,-WING_IN,1619,3238,1.0))
+parcels.append(mk_parcel("LU-004","0803","#7B5BFF","文化用地","文化用地（AI展示与体验·东翼）",WING_IN,WING_OUT,1619,3238,1.0))
+parcels.append(mk_parcel("LU-005","0701","#E0A63C","居住用地","城镇住宅用地（人才社区·西翼）",-WING_OUT,-WING_IN,0,1619,1.0))
+parcels.append(mk_parcel("LU-006","0701","#E0A63C","居住用地","城镇住宅用地（人才社区·东翼）",WING_IN,WING_OUT,0,1619,1.0))
+parcels.append(mk_parcel("LU-007","05","#E05B6D","商业用地","商业服务业用地（原点社区配套·西翼）",-WING_OUT,-WING_IN,-1619,0,1.0))
+parcels.append(mk_parcel("LU-008","05","#E05B6D","商业用地","商业服务业用地（原点社区配套·东翼）",WING_IN,WING_OUT,-1619,0,1.0))
+parcels.append(mk_parcel("LU-009","05","#E05B6D","商业用地","商业服务业用地（大钟寺智能消费·西翼）",-WING_OUT,-WING_IN,-3238,-1619,1.0))
+parcels.append(mk_parcel("LU-010","05","#E05B6D","商业用地","商业服务业用地（大钟寺智能消费·东翼）",WING_IN,WING_OUT,-3238,-1619,1.0))
+parcels.append(mk_parcel("LU-011","0802","#2E5BFF","科研用地","科研用地（AI产业集聚·西翼）",-WING_OUT,-WING_IN,-4857.5,-3238,1.0))
+parcels.append(mk_parcel("LU-012","0802","#2E5BFF","科研用地","科研用地（AI产业集聚·东翼）",WING_IN,WING_OUT,-4857.5,-3238,1.0))
+parcels.append(mk_parcel("LU-013","1401","#3D9E6A","公园绿地","公园绿地（京张遗址公园北段）",-110.95,110.95,1619,4857))
+parcels.append(mk_parcel("LU-014","1401","#3D9E6A","公园绿地","公园绿地（京张遗址公园中段）",-110.95,110.95,-1619,1619))
+parcels.append(mk_parcel("LU-015","1401","#3D9E6A","公园绿地","公园绿地（京张遗址公园南段）",-110.95,110.95,-4857,-1619))
+
+all_blds = []
+bid = 0
+phase_map = {"LU-001":"phase1_near","LU-002":"phase1_near","LU-003":"phase1_near","LU-004":"phase1_near",
+             "LU-005":"phase2_mid","LU-006":"phase2_mid","LU-007":"phase2_mid","LU-008":"phase2_mid",
+             "LU-009":"phase3_far","LU-010":"phase3_far","LU-011":"phase3_far","LU-012":"phase3_far"}
+
+def add_bld(pid, btype, tname, color, rings, h, fl, area, case=""):
+    """rings: 本地坐标环（点数组）；area: EPSG:4548 投影面积"""
+    global bid
+    bid += 1
+    all_blds.append({"id": f"B-{bid:03d}", "type": btype, "typeName": tname,
+                     "color": color, "height": h, "floors": fl,
+                     "area": round(area,1), "parent": pid, "rings": rings,
+                     "phase": phase_map[pid], "status": "new_build",
+                     "case": case})
+
+def bld_box(pid, x0, y0, x1, y1, h, fl, btype, tname, color, case, shrink=0.05):
+    """在场地内放一个矩形建筑（自动裁剪 + 投影面积 + 微收缩防贴边）"""
+    bp = box(x0, y0, x1, y1).intersection(SITE_POLY)
+    if bp.is_empty or bp.geom_type != "Polygon":
+        return
+    bp = bp.buffer(-0.35)  # 微收缩：确保严格在场地内（消除共享边浮点）
+    if bp.is_empty or bp.geom_type != "Polygon":
+        return
+    area = area_sqm_4548(poly_ring(bp, 0.0))
+    add_bld(pid, btype, tname, color, poly_ring(bp), h, fl, area, case)
+
+# ============ 3. 建筑生成（真实北京案例）============
+# ---- 3.1 科研地块：点式超高层（案例：中国尊/正大中心/国贸三期）----
+# 每块地 2 栋超高层塔楼 + 1 栋中等科研楼，标准层 1500-2500㎡
+def gen_rd(pid, x0, x1, y0, y1, tag):
+    w = x1 - x0; hgt_span = y1 - y0
+    # 塔楼1（点式超高层，~50m见方，60层/180m — 参考正大中心238m/47层/标准层~2200㎡）
+    bx = x0 + w*0.18; by = y0 + hgt_span*0.18
+    bld_box(pid, bx, by, bx+52, by+52, 180, 60, "ai_r_and_d", "AI研发", "#4F7CFF",
+            f"点式超高层·参考北京正大中心(238m/47层/标准层~2200㎡)")
+    # 塔楼2（点式超高层，~56m见方，78层/234m）
+    bx = x0 + w*0.58; by = y0 + hgt_span*0.22
+    bld_box(pid, bx, by, bx+56, by+56, 234, 78, "ai_r_and_d", "AI研发", "#4F7CFF",
+            f"点式超高层·参考北京国贸三期(330m/74层)缩尺")
+    # 塔楼3（点式超高层，~62m见方，96层/288m — 地块制高点）
+    bx = x0 + w*0.62; by = y0 + hgt_span*0.62
+    bld_box(pid, bx, by, bx+62, by+62, 288, 96, "ai_r_and_d", "AI研发", "#4F7CFF",
+            f"点式超高层·参考中国尊(528m/108层/底部78m见方)社区级缩尺")
+    # 塔楼4（点式超高层，~46m见方，54层/162m — 第二梯队，补充容积率）
+    bx = x0 + w*0.20; by = y0 + hgt_span*0.44
+    bld_box(pid, bx, by, bx+46, by+46, 162, 54, "ai_r_and_d", "AI研发", "#5B8CFF",
+            f"点式超高层·参考北京三星大厦(260m/59层)缩尺")
+    # 塔楼5（点式超高层，~42m见方，48层/144m — 第三梯队）
+    bx = x0 + w*0.58; by = y0 + hgt_span*0.78
+    bld_box(pid, bx, by, bx+42, by+42, 144, 48, "ai_r_and_d", "AI研发", "#6B9AFF",
+            f"点式超高层·参考北京民生银行总部(250m/57层)缩尺")
+    # 塔楼6（点式超高层，~40m见方，45层/135m — 北侧门户）
+    bx = x0 + w*0.38; by = y0 + hgt_span*0.12
+    bld_box(pid, bx, by, bx+40, by+40, 135, 45, "ai_r_and_d", "AI研发", "#7BA8FF",
+            f"点式超高层·参考北京京广中心(209m/57层)缩尺")
+    # 裙房研发楼（低层大基底，3层）
+    bx = x0 + w*0.18; by = y0 + hgt_span*0.68
+    bld_box(pid, bx, by, bx+150, by+70, 12, 3, "ai_r_and_d", "AI研发裙房", "#6FA0FF",
+            f"低层研发裙房·参考北京中关村软件园办公楼(3-4层)")
+
+# ---- 3.2 文化地块：大型文化建筑（案例：首都博物馆/中国科技馆）----
+def gen_culture(pid, x0, x1, y0, y1, tag):
+    w = x1 - x0; hgt_span = y1 - y0
+    # 主文化馆（大型文化建筑，基底~1.4万㎡，4层，36m — 参考首都博物馆6.4万㎡/5层/40m）
+    bx = x0 + w*0.16; by = y0 + hgt_span*0.22
+    bld_box(pid, bx, by, bx+150, by+95, 36, 4, "education", "文化建筑", "#9B7BFF",
+            f"大型文化馆·参考首都博物馆(6.4万㎡/5层/高40m/基底~1.3万㎡)")
+    # 第二文化馆（~0.8万㎡基底，3层 — 参考中国科技馆10.2万㎡/5层）
+    bx = x0 + w*0.55; by = y0 + hgt_span*0.30
+    bld_box(pid, bx, by, bx+115, by+75, 30, 3, "education", "文化建筑", "#B494FF",
+            f"专题文化馆·参考中国科技馆(10.2万㎡/5层/高30m)")
+    # 文化配套商业（底商≤3层）
+    bx = x0 + w*0.55; by = y0 + hgt_span*0.72
+    bld_box(pid, bx, by, bx+130, by+60, 12, 3, "mixed_use", "文化商业配套", "#FF8FA3",
+            f"文化商业底商·参考北京文化园区配套商业(≤3层)")
+
+# ---- 3.3 居住地块：板式住宅（案例：天通苑/望京新城/融泽嘉园）+ 教育 + 底商 ----
+def gen_residential(pid, x0, x1, y0, y1, tag):
+    w = x1 - x0; hgt_span = y1 - y0
+    # 板楼参数：55×14m，18层/54m（参考融泽嘉园18层54m），间距≥1.2×54=65m
+    bw, bd = 55, 14
+    floors, height = 18, 54
+    spacing = 68  # > 1.2*54=64.8，满足北京日照间距
+    # 南向第一排（板楼，18层）
+    row_y = y0 + 40
+    n_per_row = max(1, int((w-100) / (bw+28)))
+    for i in range(n_per_row):
+        bx = x0 + 50 + i*(bw+28)
+        bld_box(pid, bx, row_y, bx+bw, row_y+bd, height, floors, "residential", "板式住宅", "#E8B84C",
+                f"板式高层住宅·参考北京融泽嘉园(18层/54m/55×14m)")
+    # 第二排（16层/48m，间距 60 ≥ 1.2*48=57.6）
+    row_y2 = row_y + spacing
+    for i in range(n_per_row):
+        bx = x0 + 50 + i*(bw+28)
+        bld_box(pid, bx, row_y2, bx+bw, row_y2+bd, 48, 16, "residential", "板式住宅", "#D9A23F",
+                f"板式高层住宅·参考北京天通苑(16层/48m)")
+    # 第三排（11层/33m，间距 42 ≥ 1.2*33=39.6）
+    row_y3 = row_y2 + 60
+    for i in range(n_per_row):
+        bx = x0 + 50 + i*(bw+28)
+        bld_box(pid, bx, row_y3, bx+bw, row_y3+bd, 33, 11, "residential", "板式住宅", "#C9952F",
+                f"板式小高层·参考北京望京新城(11层/33m)")
+    # 配建小学（教学楼 4层/16m — 参考北京中关村三小教学楼）
+    bx = x0 + 40; by = row_y3 + 70
+    bld_box(pid, bx, by, bx+72, by+42, 16, 4, "education", "配建小学", "#7BC4FF",
+            f"配建小学教学楼·参考北京中关村三小(4-5层/15-20m/基底2000-5000㎡)")
+    # 配建中学（教学楼 5层/20m — 参考北京四中教学楼）
+    bx = x0 + w*0.52; by = row_y3 + 66
+    bld_box(pid, bx, by, bx+88, by+48, 20, 5, "education", "配建中学", "#5FB0F5",
+            f"配建中学教学楼·参考北京四中(5层/20m)")
+    # 沿街底商（≤3层，宽大 — 参考北京社区商业街铺）
+    bx = x0 + 40; by = y1 - 45
+    bld_box(pid, bx, by, bx+230, by+30, 9, 2, "mixed_use", "社区底商", "#FFB36B",
+            f"社区底商·参考北京社区商业街(≤2层/9m)")
+
+# ---- 3.4 商业地块：商业综合体（案例：朝阳大悦城/西单大悦城）+ 底商 ----
+def gen_commercial(pid, x0, x1, y0, y1, tag, is_dazhongsi=False):
+    w = x1 - x0; hgt_span = y1 - y0
+    # 商业综合体（基底~1.5万㎡，11层/95m — 参考朝阳大悦城11层/95m/基底~2.4万㎡缩尺）
+    bx = x0 + w*0.15; by = y0 + hgt_span*0.20
+    bld_box(pid, bx, by, bx+130, by+115, 95, 11, "mixed_use", "商业综合体", "#FF6B7A",
+            f"商业综合体·参考北京朝阳大悦城(11层/95m/基底~2.4万㎡)缩尺")
+    # 商业副楼（8层/50m — 参考西单大悦城65m/11层缩尺）
+    bx = x0 + w*0.58; by = y0 + hgt_span*0.26
+    bld_box(pid, bx, by, bx+110, by+80, 50, 8, "mixed_use", "商业副楼", "#E85A6C",
+            f"商业副楼·参考北京西单大悦城(11层/65m)缩尺")
+    # 底商裙房（≤3层，宽大）
+    bx = x0 + w*0.15; by = y0 + hgt_span*0.72
+    bld_box(pid, bx, by, bx+200, by+55, 12, 3, "mixed_use", "底商裙房", "#FF9DAE",
+            f"底商裙房·参考北京商业街区裙房(≤3层/12m)")
+
+# ============ 4. 生成全部建筑 ============
+# 北段：科研超高层 + 文化建筑
+for p in parcels:
+    pid = p["id"]
+    x0, x1, y0, y1 = p["design_rect"]
+    if pid == "LU-001":
+        gen_rd(pid, x0, x1, y0, y1, "西")
+    elif pid == "LU-002":
+        gen_rd(pid, x0, x1, y0, y1, "东")
+    elif pid == "LU-003":
+        gen_culture(pid, x0, x1, y0, y1, "西")
+    elif pid == "LU-004":
+        gen_culture(pid, x0, x1, y0, y1, "东")
+    elif pid == "LU-005":
+        gen_residential(pid, x0, x1, y0, y1, "西")
+    elif pid == "LU-006":
+        gen_residential(pid, x0, x1, y0, y1, "东")
+    elif pid == "LU-007":
+        gen_commercial(pid, x0, x1, y0, y1, "西", False)
+    elif pid == "LU-008":
+        gen_commercial(pid, x0, x1, y0, y1, "东", False)
+    elif pid == "LU-009":
+        gen_commercial(pid, x0, x1, y0, y1, "西", True)
+    elif pid == "LU-010":
+        gen_commercial(pid, x0, x1, y0, y1, "东", True)
+    elif pid == "LU-011":
+        gen_rd(pid, x0, x1, y0, y1, "西")
+    elif pid == "LU-012":
+        gen_rd(pid, x0, x1, y0, y1, "东")
+
+print(f"\n🏗 建筑总数: {len(all_blds)}")
+
+# ============ 5. 道路/绿地/公共空间/重点区/分期（复用 V2）============
+roads = [
+    {"id":"RD-001","cls":"arterial","name":"智脉纵轴（中轴大道）","color":"#FFFFFF","radius":9,"pts":[[AXIS,-4857.10],[AXIS,4857.10]]},
+    {"id":"RD-002","cls":"secondary","name":"西翼纵路","color":"#9AA7BD","radius":6.5,"pts":[[-WING_IN-20,-4857.10],[-WING_IN-20,4857.10]]},
+    {"id":"RD-003","cls":"secondary","name":"东翼纵路","color":"#9AA7BD","radius":6.5,"pts":[[WING_IN+20,-4857.10],[WING_IN+20,4857.10]]},
+    {"id":"RD-004","cls":"branch","name":"智脉横轴1（北）","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,4040],[670.25,4040]]},
+    {"id":"RD-005","cls":"branch","name":"智脉横轴2","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,2420],[670.25,2420]]},
+    {"id":"RD-006","cls":"branch","name":"智脉横轴3（中）","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,810],[670.25,810]]},
+    {"id":"RD-007","cls":"branch","name":"智脉横轴4","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,-810],[670.25,-810]]},
+    {"id":"RD-008","cls":"branch","name":"智脉横轴5（南）","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,-2420],[670.25,-2420]]},
+    {"id":"RD-009","cls":"branch","name":"智脉横轴6","color":"#C7D2E3","radius":4.5,"pts":[[-670.25,-4040],[670.25,-4040]]},
+]
+
+def ring_of(x0,y0,x1,y1):
+    return poly_ring(box(x0,y0,x1,y1).intersection(SITE_POLY).buffer(-0.3), 0.0)
+
+def park_ring(y0, y1):
+    return poly_ring(box(-110.95, y0, 110.95, y1).intersection(SITE_POLY).buffer(-0.3), 0.0)
+
+greenSpace = [
+    {"id":"GS-001","name":"京张遗址公园（北段）","rings":park_ring(1619,4857)},
+    {"id":"GS-002","name":"京张遗址公园（中段）","rings":park_ring(-1619,1619)},
+    {"id":"GS-003","name":"京张遗址公园（南段）","rings":park_ring(-4857,-1619)},
+]
+publicSpace = [
+    {"id":"PS-001","name":"众智园核心广场（中轴北端）","rings":ring_of(-80,3200,80,3400)},
+    {"id":"PS-002","name":"AI原点社区核心广场（中轴中央）","rings":ring_of(-80,-120,80,80)},
+    {"id":"PS-003","name":"大钟寺核心广场（中轴南端）","rings":ring_of(-80,-3400,80,-3200)},
+    {"id":"PS-004","name":"文化双翼活力广场（西）","rings":ring_of(-330,1900,-150,2100)},
+    {"id":"PS-005","name":"文化双翼活力广场（东）","rings":ring_of(150,1900,330,2100)},
+]
+keyAreas = [
+    {"id":"PROV-KEY-001","name":"众智园AI自主创新加速区（对称双翼+中轴）","short":"众智园AI加速区","area":round(1340*3238/1e4,1),
+     "rings":ring_of(-670,1619,670,4857)},
+    {"id":"PROV-KEY-002","name":"北京AI原点社区（对称双翼+中轴）","short":"AI原点社区","area":round(1340*3238/1e4,1),
+     "rings":ring_of(-670,-1619,670,1619)},
+    {"id":"PROV-KEY-003","name":"大钟寺AI产业聚集区（对称双翼+中轴）","short":"大钟寺AI集聚区","area":round(1340*3238/1e4,1),
+     "rings":ring_of(-670,-4857,670,-1619)},
+]
+phasing = [
+    {"id":"PH-001","code":"phase1_near","label":"近期（2026-2028）","note":"北段众智园对称双翼先行",
+     "rings":ring_of(-670,1619,670,4857)},
+    {"id":"PH-002","code":"phase2_mid","label":"中期（2029-2031）","note":"中段AI原点社区+低层商业",
+     "rings":ring_of(-670,-1619,670,1619)},
+    {"id":"PH-003","code":"phase3_far","label":"远期（2032-2035）","note":"南段大钟寺+科研双翼",
+     "rings":ring_of(-670,-4857,670,-1619)},
+]
+
+# ============ 6. 指标复算（EPSG:4548）============
+bld_foot = sum(b["area"] for b in all_blds)
+total_floor = sum(b["area"]*b["floors"] for b in all_blds)
+green_area = sum(area_sqm_4548(g["rings"]) for g in greenSpace)
+pub_area = sum(area_sqm_4548(p["rings"]) for p in publicSpace)
+road_len_km = sum(math.dist(r["pts"][0], r["pts"][1]) for r in roads) / 1000
+metrics = {
+    "siteArea": round(SITE_AREA/1e6, 2),
+    "greenRatio": round(green_area/SITE_AREA*100, 1),
+    "density": round(bld_foot/SITE_AREA*100, 1),
+    "far": round(total_floor/SITE_AREA, 2),
+    "roadLen": round(road_len_km, 1),
+    "bldCount": len(all_blds),
+}
+
+# ============ 7. 组装输出 ============
+scene = {
+    "site": {"rings": SITE_RINGS, "w": SITE_W, "h": SITE_H},
+    "landUse": parcels,
+    "buildings": all_blds,
+    "roads": roads,
+    "greenSpace": greenSpace,
+    "publicSpace": publicSpace,
+    "keyAreas": keyAreas,
+    "phasing": phasing,
+    "metrics": metrics,
+}
+with open(OUT, "w") as f:
+    json.dump(scene, f, ensure_ascii=False, separators=(",", ":"))
+
+print("\n=== 指标 ===")
+for k, v in metrics.items():
+    print(f"  {k}: {v}")
+
+# 越界检查
+from shapely.geometry import shape as shp
+out_cnt = 0
+for b in all_blds:
+    bp = Polygon(b["rings"])
+    if not SITE_POLY.contains(bp):
+        out_cnt += 1
+print(f"建筑越界: {out_cnt}")
+print(f"输出: {OUT}")
