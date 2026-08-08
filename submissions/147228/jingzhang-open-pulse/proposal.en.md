@@ -126,6 +126,8 @@ The matrix is a design-control instrument, not a promise of service levels. Ever
 
 To make a scenario card reproducible rather than merely readable, this package adds `visual/assets/open-pulse-relay-receipt.schema.json` and `visual/assets/example-s02-embodied-receipt.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox receipt: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, rights/appeal/deletion rules, maintenance responsibility and exit-asset plan in one record. `performance_results` remains `null`; the receipt format is not robot performance or field acceptance. Any real pilot must issue a new receipt and pass accessibility, safety, maintenance and public-review gates.
 
+The Relay Receipt schema is structurally referenced from Mentat-Uran (PR #426, commit `d501100a`). Open Pulse rewrites the `$id`, title, scenario scope, status values, field restrictions and synthetic fixture for this concept-only package. Attribution is not adaptation permission; any further reuse remains subject to maintainer and rights-holder review.
+
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
 
 ### Three industry validation windows: evidence before procurement or scale-up
