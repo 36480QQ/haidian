@@ -232,7 +232,58 @@ Concept renewal project list (not project-approval conclusions) [depth:renewal_p
 
 Phasing: near (2026–2028, concept area [metric:phasing_area_2026_2028_sqm]) twin-core launch; mid (2028–2031, [metric:phasing_area_2028_2031_sqm]) stitching into a network; far (2031–2035, [metric:phasing_area_2031_2035_sqm]) Zhongzhiyuan leadership [data:geometry/phasing.geojson#PH-001][depth:phasing_implementation]. Policy suggestions (concept level): a design–test–evaluate–diffuse scenario-opening mechanism; elastic use control for reserve land; negotiated micro-renewal as principle, with no ownership-level demolition conclusions.
 
-Long-term operations (agent.6): annual program — spring Switchback Developer Conference, summer Switchback Festival × AI art season, autumn Model First-Release Week (with SC-04), winter Jingzhang culture season; brand IP — primary "THE SWITCHBACK LINE" plus "Switchback Station" sub-brands; developer community — the Switchback Club with contribution points linked to the Honor Wall; scenario opening — four steps (apply, sandbox, evaluate, publish); international communication — the "Second Ascent" narrative joining global AI-city networks, with a conversion path from event participation to scenario testing, team landing, and community retention. All events and operations are concept suggestions, not government commitments or investment-attraction policy [source:AGENT-TASKBOOK].
+### Three demonstration implementation packages (concept suggestions for professional teams and operators)
+
+From the twelve scenario cards, the three industrial test-and-validation scenarios are developed into startable implementation packages using ten elements: user problem, space and facilities, one-minute flow, data and compute, operating body, preconditions, cost magnitude, phases, metrics, and exit. All cost figures are order-of-magnitude estimates from public market-price knowledge, with assumptions stated; none is an investment commitment.
+
+#### DP-1 Public first-release model evaluation (SC-04 @ AI Origin Plaza [data:geometry/public_space.geojson#PS-004])
+
+| Element | Content |
+| --- | --- |
+| User problem | AI startups lack a credible public evaluation and first-release channel; the public lacks a legible interface to model capabilities |
+| Space and facilities | release and audience zones at Origin Plaza (open space), a concept 200–300 sqm evaluation-prep and media area, livestream and on-screen data equipment |
+| One-minute flow | team submits model → sandbox pre-evaluation → public benchmark day with live results → audience votes on interpretability → expert panel review → public report |
+| Data / compute / equipment | licensed public evaluation datasets; sandbox compute linked with DP-3; large screen, livestream, timing equipment |
+| Operating body (suggested types) | third-party evaluation institution leads, community co-governance committee supervises; partner types: universities, open-source communities, tech media |
+| Preconditions | large-event safety permit, temporary-structure fire safety, data-licensing review, published expert-review rules |
+| Cost magnitude (assumptions) | CAPEX in the order of several million RMB (plaza retrofit and equipment); OPEX roughly 10^5 RMB per event, assuming 6–10 events/year — order-of-magnitude estimates |
+| Phases | 0–1 yr: two pilot evaluations; 1–3 yrs: quarterly first-release weeks; 3–5 yrs: annual branded program and international evaluation calendar |
+| Metrics and review | baseline zero events; targets: annual events, participating teams, 100% public reports, review timeliness; sources: operation logs and public reports; quarterly review |
+| Failure and exit | participation below threshold for two consecutive seasons → switch to online releases plus small roadshows; the plaza installation is reversible and returns to public use |
+
+#### DP-2 Open robotics test port (SC-05 @ Qinghe Test-Port Plaza [data:geometry/public_space.geojson#PS-007])
+
+| Element | Content |
+| --- | --- |
+| User problem | service-robotics firms lack compliant test grounds in real urban environments; lab data cannot support deployment confidence in public space |
+| Space and facilities | fenced/marked test zones, a public viewing gallery with explainer screens, equipment room and safety-officer post, swappable test-prop store |
+| One-minute flow | booking → safety briefing and insurance check → zoned tests (obstacle avoidance / delivery / interaction) → simplified public replay of decisions → safety officer sign-off |
+| Data / compute / equipment | graded test-data management; IP-sensitive data never leaves the domain; simplified public replays; on-device recording |
+| Operating body (suggested types) | professional test operator plus park platform company; partner types: robotics firms, insurers, university labs |
+| Preconditions | site-use approval and public-safety assessment, liability insurance, emergency drills, fire and electrical safety |
+| Cost magnitude (assumptions) | CAPEX below roughly one million RMB (light retrofit, demountable facilities); OPEX roughly one million RMB/year (staff, maintenance, insurance) — order-of-magnitude estimates |
+| Phases | 0–1 yr: weekday tests plus weekend public open days; 1–3 yrs: test standards and data formats published as open documents; 3–5 yrs: a replicable urban test-ground operating model |
+| Metrics and review | test sessions and participating firms, zero safety incidents, replay publication rate, open-day attendance; monthly safety review plus quarterly operations review |
+| Failure and exit | utilization below 30% for two consecutive seasons → convert to a public science-experience ground; fences and props are demountable and the site returns to park use |
+
+#### DP-3 Edge compute and data sandbox (SC-06 @ Zhongzhiyuan R&D core; public showcase window at Dazhongsi, linked with SC-07)
+
+| Element | Content |
+| --- | --- |
+| User problem | small teams and researchers lack affordable compute and compliant urban data environments; public-data opening lacks an auditable technical carrier |
+| Space and facilities | containerized edge-compute micro-facility, sandbox operations area and audit room (concept ~500 sqm); the Dazhongsi computational-consumption lab serves as the public understanding window |
+| One-minute flow | application with purpose statement → in-sandbox training with data staying in-domain → audit (data provenance, de-identification, outputs) → only audited model weights leave → quarterly public audit summaries |
+| Data / compute / equipment | graded opening of public data after legality review and de-identification; shared compute pool by application; trusted computing and log-audit equipment |
+| Operating body (suggested types) | data-governance task force plus professional technical operator; partner types: universities and institutes, open-source foundations, compliance advisers |
+| Preconditions | data-provenance legality review, classified cybersecurity protection, power capacity and cooling, published audit rules |
+| Cost magnitude (assumptions) | CAPEX in the order of tens of millions RMB depending on scale; OPEX in the order of millions RMB/year (power, operations, audits) — order-of-magnitude estimates |
+| Phases | 0–1 yr: invitation-only pilot; 1–3 yrs: application-based opening with quarterly public audits; 3–5 yrs: an auditable public-data infrastructure model |
+| Metrics and review | hosted projects, published audit summaries, zero data-exfiltration events, compute utilization; quarterly dual review of audits and operations |
+| Failure and exit | persistently low utilization → compute shifts to university teaching and public research sharing; general-purpose equipment can be repurposed wholesale; sandbox data destroyed on schedule |
+
+All three packages share three principles: reversible (sites return to public use), auditable (reports and audit summaries are public), exitable (explicit failure conditions and reuse mechanisms). The Dazhongsi key area gains its implementation handle through DP-3's public showcase window linked with SC-07; its standalone package is suggested for a second phase once regulatory conditions are available.
+
+Long-term operations (agent.6): annual program — spring Switchback Developer Conference, summer Switchback Festival × AI art season, autumn Model First-Release Week (with SC-04), winter Jingzhang culture season; the annual flagship **Switchback Hackathon**: a 48-hour developer competition whose problem statements all come from real urban needs surfaced by the twelve scenario cards (slow-mobility gap detection, heritage interpretation, community elder-care ticketing, etc.); winning teams receive priority access to the data sandbox and the robotics test port, plugging directly into the DP-1/DP-2/DP-3 demonstration packages, and reviewed open-source outcomes enter the public knowledge base — forming a conversion chain of "hackathon → scenario testing → team landing → community retention"; brand IP — primary "THE SWITCHBACK LINE" plus "Switchback Station" sub-brands; developer community — the Switchback Club with contribution points linked to the Honor Wall; scenario opening — four steps (apply, sandbox, evaluate, publish); international communication — the "Second Ascent" narrative joining global AI-city networks. All events and operations are concept suggestions, not government commitments or investment-attraction policy [source:AGENT-TASKBOOK].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
