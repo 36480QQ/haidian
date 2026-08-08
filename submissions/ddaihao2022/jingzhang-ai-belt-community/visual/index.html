@@ -1,29 +1,79 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>京张智脉共生带 - visual index</title>
+<title>京张智脉共生带 · 离线可视化</title>
 <style>
-:root{--ink:#162033;--muted:#667085;--paper:#fff;--line:#d7dee8;--navy:#172235;--gold:#c79838;--ai:#4f46e5;--park:#15803d;--work:#b7791f;--civic:#b42318;--blue:#0f7490}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:#eef2f6;color:var(--ink);line-height:1.58}.wrap{max-width:1280px;margin:auto}header{background:#101827;color:#fff}h1{font-size:30px;margin:0}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 10px}.hero{padding:30px 26px}.pill{display:inline-block;border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:6px 10px;font-size:12px;margin:4px}main{padding:22px}.sheet{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:0 auto 18px;box-shadow:0 10px 30px rgba(22,32,51,.08)}.head{padding:18px 22px;border-bottom:1px solid #e6ebf2}.body{padding:18px 22px}img{max-width:100%;border:1px solid #cbd5e1;border-radius:8px}.met{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}.met div{background:#f6f8fb;border:1px solid var(--line);border-radius:8px;padding:12px 16px}.met strong{display:block;font-size:20px;color:var(--navy)}.risk{border-left:4px solid var(--gold);background:#fffaf0;padding:12px 16px;border-radius:6px}
+  body{font-family:'Microsoft YaHei',sans-serif;margin:0;color:#282c34;background:#fff}
+  .warn{background:#b47814;color:#fff;padding:8px 14px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:16px}
+  .card{border:1px solid #e2e5ea;border-radius:8px;padding:14px}
+  h1{font-size:24px;margin:0;padding:16px} h2{font-size:18px;margin:6px 0}
+  .metric{display:flex;gap:18px;flex-wrap:wrap;padding:8px 16px}
+  .metric div{background:#f3f5f8;border-radius:8px;padding:12px 18px;min-width:150px}
+  .metric b{font-size:22px;color:#9e4a33;display:block}
+  table{border-collapse:collapse;width:100%;font-size:13px} td,th{border:1px solid #ddd;padding:6px}
+  .map{border:1px solid #e2e5ea;border-radius:8px;overflow:hidden}
+  .tag{display:inline-block;background:#eef1f5;border-radius:4px;padding:2px 8px;margin:2px;font-size:12px}
 </style>
 </head>
 <body>
-<header><div class="wrap hero"><h1>京张智脉共生带 · 可视化总览</h1><p class="hero">离线电子展示成果；权威数据以 GeoJSON、metrics.json、矩阵与自检结果为准。本页汇总总览地图、三层范围、重点区域、用地分区、交通慢行、蓝绿公共空间、建筑、更新项目、AI 场景、核心指标、任务覆盖、自检状态、来源与假设。</p><span class="pill">总览地图</span><span class="pill">三层范围</span><span class="pill">重点区域</span><span class="pill">用地分区</span><span class="pill">交通慢行</span><span class="pill">蓝绿公共空间</span><span class="pill">建筑</span><span class="pill">更新项目</span><span class="pill">AI 场景</span><span class="pill">核心指标</span><span class="pill">任务覆盖</span><span class="pill">自检状态</span><span class="pill">来源</span><span class="pill">假设</span></div></header>
-<main class="wrap">
-<section class="sheet"><div class="head"><h2>总览地图</h2></div><div class="body"><img src="assets/figures/site-overview.png" alt="总览地图 站点边界与重点区域"><p>总览地图把用地分区、交通慢行、蓝绿公共空间、建筑与更新项目、AI 场景节点放在同一证据图中。</p></div></section>
-<section class="sheet"><div class="head"><h2>三层范围</h2></div><div class="body"><p>统筹研究范围 43.6 km²、总体设计范围 11.4 km²、重点区域 368.4 ha。三层范围逐级把产业判断、城市更新和重点片区设计绑定到图层与指标。</p></div></section>
-<section class="sheet"><div class="head"><h2>重点区域</h2></div><div class="body"><img src="assets/figures/key-areas.png" alt="重点区域 三处详细设计片区"><p>众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区，均使用 provisional_constraint 边界。</p></div></section>
-<section class="sheet"><div class="head"><h2>用地分区</h2></div><div class="body"><img src="assets/figures/land-use-structure.png" alt="用地分区 拓扑闭合分区"><p>用地分区完整覆盖提交边界，无重叠无空隙。</p></div></section>
-<section class="sheet"><div class="head"><h2>交通慢行与蓝绿公共空间</h2></div><div class="body"><img src="assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间"><p>roads、green_space、public_space 图层共同支撑慢行与公共空间判断。</p></div></section>
-<section class="sheet"><div class="head"><h2>建筑与更新项目</h2></div><div class="body"><img src="assets/figures/key-areas.png" alt="建筑更新项目"><p>buildings 图层表达 AI 研发、实验、孵化、产业服务与保留更新建筑基底，作为更新项目落点。</p></div></section>
-<section class="sheet"><div class="head"><h2>AI 场景</h2></div><div class="body"><p>开源发布厅、安全治理沙盒、端侧算力驿站、AI慢行导航、大钟寺国际路演客厅、清河低碳创新廊、近校成果转化街、数据要素会客厅、AI生活服务样板街、全球AI活动周路线。</p></div></section>
-<section class="sheet"><div class="head"><h2>核心指标</h2></div><div class="body"><div class="met"><div>site_area_sqm<strong data-metric="site_area_sqm" data-value="11412825.386">11412825.386</strong></div><div>green_ratio<strong data-metric="green_ratio" data-value="0.123423">0.123423</strong></div><div>public_space_ratio<strong data-metric="public_space_ratio" data-value="0.073281">0.073281</strong></div></div><p>数值与 metrics.json 一致，由几何复算。</p></div></section>
-<section class="sheet"><div class="head"><h2>任务覆盖</h2></div><div class="body"><p>compliance_matrix.json 覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；standard_matrix.json 与 design_depth_matrix.json 证明专业标准与成果深度响应。</p></div></section>
-<section class="sheet"><div class="head"><h2>自检状态</h2></div><div class="body"><div class="risk"><p>deterministic validation、spatial review、visual packaging check 与 professional evidence review 必须全部通过。当前边界为 provisional，仅支持 intake 讨论与返修，不作为正式专业评分或审批依据。</p></div></div></section>
-<section class="sheet"><div class="head"><h2>来源</h2></div><div class="body"><p>来源见 sources.json、agent_taskbook.json、data/processed/agent_fact_pack.md 与 standards/references。本页不加载远程脚本、地图瓦片、外部字体、iframe、表单或 API。</p></div></section>
-<section class="sheet"><div class="head"><h2>假设</h2></div><div class="body"><p>待补控规、道路红线、权属、市政、文保与工程条件已在 assumptions.json 列明，并在正文风险章节解释对设计结论的影响。官方边界与重点区 polygon 发布后须整体重算。</p></div></section>
-</main>
+<div class="warn">PROVISIONAL BOUNDARY · 临时边界（official_boundary=false）· 非官方红线 · 面积/比例为临时估算，待官方几何到位后全量复算 · 不声称官方批准</div>
+<h1>京张智脉共生带 · 百年京张AI创新带城市设计提案</h1>
+
+<h2>① 总览地图</h2>
+<div class="map"><svg viewBox="0 0 900 600" width="100%" preserveAspectRatio="xMidYMid meet"><rect width="900" height="600" fill="#f7f8fa"/><polygon points="411.1,550.0 405.4,344.3 416.9,167.1 422.6,50.0 430.4,50.0 430.4,550.0 411.1,550.0" fill="rgb(222,226,230)" stroke="#969ba3" stroke-width="1"/><polygon points="430.4,550.0 430.4,50.0 448.2,50.0 448.2,550.0 430.4,550.0" fill="rgb(205,214,222)" stroke="#969ba3" stroke-width="1"/><polygon points="448.2,550.0 448.2,50.0 471.4,50.0 471.4,550.0 448.2,550.0" fill="rgb(188,200,212)" stroke="#969ba3" stroke-width="1"/><polygon points="494.6,50.0 483.1,258.6 494.6,401.4 494.6,550.0 471.4,550.0 471.4,50.0 494.6,50.0" fill="rgb(170,186,202)" stroke="#969ba3" stroke-width="1"/><polygon points="432.2,470.0 432.2,130.0 446.4,130.0 446.4,470.0 432.2,470.0" fill="#7ab07a" stroke="#467846" stroke-width="1"/><polygon points="449.1,390.0 449.1,200.0 464.3,200.0 464.3,390.0 449.1,390.0" fill="#568ec4" stroke="#325a96" stroke-width="1"/><polyline points="412.6,290.0 485.7,290.0" fill="none" stroke="#5a5a5a" stroke-width="4"/><polygon points="424.3,158.6 487.1,158.6 487.1,52.9 424.3,52.9 424.3,158.6" fill="rgba(192,74,51,0.45)" stroke="rgb(192,74,51)" stroke-width="3"/><polygon points="418.6,295.7 481.4,295.7 481.4,238.6 418.6,238.6 418.6,295.7" fill="rgba(44,110,143,0.45)" stroke="rgb(44,110,143)" stroke-width="3"/><polygon points="418.6,521.4 492.9,521.4 492.9,488.1 418.6,488.1 418.6,521.4" fill="rgba(90,138,74,0.45)" stroke="rgb(90,138,74)" stroke-width="3"/><polygon points="411.1,550.0 494.6,550.0 494.6,401.4 483.1,258.6 494.6,50.0 422.6,50.0 416.9,167.1 405.4,344.3 411.1,550.0" fill="none" stroke="#3c3c3c" stroke-width="3"/></svg></div>
+
+<h2>② 三层范围</h2>
+<div class="card">统筹研究范围 ≈43.6km²（AI产业生态/创新链/未来城市形态） · 总体设计范围 ≈11.4km²（城市更新/产业/交通市政/风貌） · 重点区域范围 ≈368.4ha（三片区详细设计）</div>
+
+<h2>③ 重点区域</h2>
+<div class="card">
+  <span class="tag">PROV-KEY-001 众智园AI自主创新加速区</span>
+  <span class="tag">PROV-KEY-002 北京AI原点社区</span>
+  <span class="tag">PROV-KEY-003 大钟寺AI产业聚集区</span>
+  （均 provisional_constraint，待官方 polygon 复算）
+</div>
+
+<h2>④ 用地分区</h2>
+<div class="card">LU-001~004 闭合无缝用地分区：[data:geometry/land_use.geojson#LU-001] 表达研发/更新/公共/交通混合业态，依规 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。</div>
+
+<h2>⑤ 交通慢行</h2>
+<div class="card">[data:geometry/roads.geojson#ROAD-001] 表达微循环/慢行/轨道接驳；蓝绿慢行复合环串联三片区与地标。</div>
+
+<h2>⑥ 蓝绿公共空间</h2>
+<div class="card">[data:geometry/green_space.geojson#GREEN-001] + [data:geometry/public_space.geojson#PUBLIC-001]；绿地率 [metric:green_ratio]、公共空间率 [metric:public_space_ratio]。</div>
+
+<h2>⑦ 建筑</h2>
+<div class="card">[data:geometry/buildings.geojson#BLDG-001] 20 个更新/保留建筑基底（design_proposal）；建筑基底面积 [metric:building_footprint_area_sqm]。</div>
+
+<h2>⑧ 更新项目</h2>
+<table><tr><th>编号</th><th>项目</th><th>类型</th></tr>
+<tr><td>JZ-01</td><td>京张遗址公园慢行断点缝合</td><td>公共空间/交通</td></tr><tr><td>JZ-02</td><td>众智园清河创新界面</td><td>蓝绿/产业展示</td></tr><tr><td>JZ-03</td><td>原点社区近校成果转化街</td><td>城市更新/产业服务</td></tr><tr><td>JZ-04</td><td>大钟寺站四象限步行连通</td><td>轨道一体化/慢行</td></tr><tr><td>JZ-05</td><td>AI公共服务与端侧算力节点</td><td>新基建/公共服务</td></tr><tr><td>JZ-06</td><td>全球AI活动周公共路线</td><td>运营/品牌</td></tr></table>
+
+<h2>⑨ AI 场景</h2>
+<div class="card"><span class="tag">S-01 AI慢行导航与无障碍</span> <span class="tag">S-02 企业服务Copilot</span> <span class="tag">S-03 公共安全人工复核</span> <span class="tag">S-04 低碳空间能耗优化</span> <span class="tag">S-05 端侧算力驿站</span> <span class="tag">S-06 开源发布厅</span> <span class="tag">S-07 治理沙盒</span> <span class="tag">S-08 社区健康陪伴</span> <span class="tag">S-09 文化叙事增强</span> <span class="tag">S-10 国际访客服务</span></div>
+
+<h2>⑩ 核心指标</h2>
+<div class="metric">
+  <div><span>site_area_sqm</span><b data-metric="site_area_sqm" data-value="11412825.0">11,412,825 m²</b></div>
+  <div><span>green_ratio</span><b data-metric="green_ratio" data-value="0.123">0.123</b></div>
+  <div><span>public_space_ratio</span><b data-metric="public_space_ratio" data-value="0.073">0.073</b></div>
+  <div><span>key_area_count</span><b data-metric="key_area_count" data-value="3">3</b></div>
+</div>
+
+<h2>⑪ 任务覆盖</h2>
+<div class="card">公告 1.3/1.4/1.5 与 agent.1-agent.6 在 compliance_matrix.json 逐条映射；agent.1 品牌/agent.2 案例/agent.3 场景/agent.4 地标/agent.5 导视/agent.6 运营均有正文交付。</div>
+
+<h2>⑫ 自检状态</h2>
+<div class="card">本地四关 deterministic / spatial / visual / professional 均 PASS；self_checked=true；data_confidence=low（provisional 边界）。[depth:risk_missing_data]</div>
+
+<h2>⑬ 来源</h2>
+<div class="card">[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]</div>
+
+<h2>⑭ 假设</h2>
+<div class="card">[depth:risk_missing_data] 边界与重点区为 provisional，所有面积/比例指标待官方红线复算；FAR 为 unknown；不声称官方批准或保证实施。</div>
+
 </body>
 </html>

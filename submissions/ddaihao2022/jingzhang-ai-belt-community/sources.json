@@ -22,14 +22,14 @@
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "source_type": "agent_inferred_provisional_only",
+      "usage": "Submitted site boundary geometry source (provisional). MARKED provisional_only: not official boundary, not approval basis, not precise-area basis."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "source_type": "agent_inferred_provisional_only",
+      "usage": "Three required detailed-design key area boundaries (provisional). MARKED provisional_only: not official boundary, not approval basis, not precise-area basis."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -42,6 +42,12 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "SOURCE-REGISTRY-SUMMARY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Registry summary confirms: formal-ready sources 5, background-only 0, provisional-only 1. The single provisional-only source is the site boundary / key areas used here."
     }
   ]
 }

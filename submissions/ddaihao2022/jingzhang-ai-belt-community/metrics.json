@@ -7,51 +7,55 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11412825.0,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "Boundary is PROVISIONAL (provisional_boundaries.geojson, official_boundary=false). All area/ratio values are provisional estimates and MUST be recomputed once the official redline is supplied."
+      ],
+      "provisional": true
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 4762208.685,
+      "value": 4762209.0,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "provisional": true
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.123,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "provisional": true
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.073,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "provisional": true
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +77,9 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [],
+      "provisional": true
     }
   }
 }
