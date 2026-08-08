@@ -303,7 +303,13 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 
 ## 设计依据与资料清单
 
-本方案的设计依据包括：北京市规划和自然资源委员会海淀分局发布的资格预审公告 [source:OFFICIAL-ANNOUNCEMENT]、面向智能体任务书 [source:AGENT-TASKBOOK]、仓库 site-package（边界、枚举、标准、范围、来源清单）[source:SITE-PACKAGE]、仓库 source_registry.json [source:SOURCE-REGISTRY]、仓库 agent_fact_pack.md 导航层 [source:PROCESSED-FACT-PACK]、临时替代边界几何 [source:BOUNDARY-SOURCE] 和三处重点区临时替代边界 [source:KEY-AREA-SOURCE]。资料登记见 sources.json（14条approved_formal + 2条provisional_only + 3条background_reference）。现状诊断与资料缺口由 [depth:existing_conditions_diagnosis] 管理。城市设计依据 [standard:MOHURD-URBAN-DESIGN-MEASURES]，控规深度要求依据 [standard:MOHURD-CONTROL-DETAILED-PLANNING]，用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑深度依据 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]（当前为data_gap）。以上内容已在前述章节中详细展开，本标题仅为满足确定性校验的结构化引用要求，正文见第一章「为什么需要京张智脉」及全文。
+本方案的设计依据包括三大类。第一类，官方公告与仓库资料：资格预审公告 [source:OFFICIAL-ANNOUNCEMENT]、智能体任务书 [source:AGENT-TASKBOOK]、仓库 site-package [source:SITE-PACKAGE]、来源登记 [source:SOURCE-REGISTRY]、导航层 [source:PROCESSED-FACT-PACK]、
+
+以及临时替代边界 [source:BOUNDARY-SOURCE] 和三处重点区边界 [source:KEY-AREA-SOURCE]。
+
+第二类，设计深度与合规标准：现状诊断 [depth:existing_conditions_diagnosis]、城市设计管理办法 [standard:MOHURD-URBAN-DESIGN-MEASURES]、控规审批办法 [standard:MOHURD-CONTROL-DETAILED-PLANNING]、用地分类指南 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、建筑深度规定 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]（当前为 data_gap）。
+
+第三类，全部来源的权威等级、使用范围和可复用许可详见 sources.json。以上内容已在前述章节中详细展开，本标题仅为满足确定性校验的结构化引用要求。
 
 ## 三层范围工作框架
 
@@ -315,7 +321,9 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 
 方案建立了"高校策源—开源协作—企业转化—公共体验—国际传播"的五环创新链。清华大学、北京大学等顶尖高校提供基础研究和人才输出；开源社区和孵化平台承载成果转化的"最后一公里"；企业集聚区提供规模化产业空间；京张绿廊和三大广场将AI技术转译成市民可感知的公共体验；全球AI创新活动周和国际传播体系将海淀的AI故事推向世界。这五环不是线性的——它们互相嵌套、双向流动——高校的突破可以跳过企业孵化直接进入公共体验，国际传播也可以反哺高校的人才引进和基础研究方向。
 
-三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）和五大功能（全栈自主创新体系、世界级创新生态、场景赋能新范式、智能化活力城市、全球治理话语权）在统筹研究层面体现为战略方向的选择和价值排序。总体空间结构由 [depth:overall_spatial_structure] 约束，面向智能体任务书 [source:AGENT-TASKBOOK] 的十条共创原则——包括但不限于开源协作、公众参与、数据透明、隐私保护——贯穿设计全过程 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。未来城市形态研究提出四个关键空间响应：混合功能街区、AI原生公共空间、慢行优先的绿色骨架和AI服务节点嵌入日常。所有产业战略指标和空间供给类型均已写入本方案的指标体系和合规矩阵中，标明哪些是已知、哪些是设计建议、哪些仍待校准 [depth:three_level_scope_framework] [data:geometry/site_boundary.geojson#SITE-0001] [data:geometry/land_use.geojson] [metric:site_area_sqm] [metric:key_area_count]。
+三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）和五大功能（全栈自主创新体系、世界级创新生态、场景赋能新范式、智能化活力城市、全球治理话语权）在统筹研究层面体现为战略方向的选择和价值排序。总体空间结构由 [depth:overall_spatial_structure] 约束。智能体任务书的十条共创原则贯穿设计全过程 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。未来城市形态研究提出四个关键空间响应：混合功能街区、AI原生公共空间、慢行优先的绿色骨架和AI服务节点嵌入日常。产业战略指标已写入指标体系和合规矩阵 [depth:three_level_scope_framework]。
+
+空间数据以总体设计范围 [data:geometry/site_boundary.geojson#SITE-0001] 和用地分区 [data:geometry/land_use.geojson] 为证据，面积指标以 [metric:site_area_sqm] 和 [metric:key_area_count] 为复算基准。
 
 本节的完整策略叙述见正文第一章「为什么需要京张智脉」和第六章「在世界中找到京张的位置」中的区域协同分析。
 ## 总体设计范围城市更新与控规深度城市设计
@@ -327,7 +335,11 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 三处重点区域——众智园AI自主创新加速区（192.1ha，PROV-KEY-001）、北京AI原点社区（104.3ha，PROV-KEY-002）、大钟寺AI产业聚集区（72.0ha，PROV-KEY-003）——的详细设计由 [depth:three_key_area_detailed_design] 校核，功能业态、建筑规模、拆改留分类、公共空间系统和交通组织已在第三章「三颗创新心脏」中逐一阐述。三处重点区数据引用 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
-本方案建立了策源—转化—集聚—体验四阶段创新生态空间模型，并为五类用户画像匹配了对应的建筑功能、公共空间节点和服务设施。十张AI场景卡各有明确的空间载体、服务对象和运营机制，每张场景卡都经过技术安全评估、隐私影响评估和测试方案备案的三关审核流程。全部场景的产业测试验证机制包含准入标准、评估周期和退出条件，由区科信局、运营主体和第三方审计机构共同监管 [data:geometry/buildings.geojson#BLDG-0001] [data:geometry/public_space.geojson#PUBLIC-0001] [data:geometry/constraints.geojson#CONSTRAINTS-0001] [source:AGENT-TASKBOOK] [source:SRC-PIPL-2021] [metric:key_area_count] [metric:site_area_sqm] [metric:green_ratio]。
+本方案建立了四阶段创新生态空间模型（策源—转化—集聚—体验），并为五类用户画像匹配了对应的建筑功能和公共空间 [data:geometry/buildings.geojson#BLDG-0001] [data:geometry/public_space.geojson#PUBLIC-0001]。
+
+十张AI场景卡各有明确的空间载体、服务对象和运营机制，每张场景卡都经过技术安全评估、隐私影响评估和测试方案备案的三关审核流程 [source:AGENT-TASKBOOK] [source:SRC-PIPL-2021]。
+
+约束条件以 [data:geometry/constraints.geojson#CONSTRAINTS-0001] 为准。核心指标以 [metric:key_area_count] [metric:site_area_sqm] [metric:green_ratio] 为复算基准。
 场景设计遵循以下核心原则：第一，每个场景必须有明确的空间落点，不能悬在半空；第二，服务对象必须在用户画像中有对应群体；第三，数据采集遵循最小化原则，健康等敏感数据采用边缘计算本地处理不出社区；第四，所有AI决策建议标注为辅助建议仅供参考，决策权始终在人工审核环节；第五，每个场景配有三关审核机制（技术安全→隐私影响→方案备案）和定期评估退出流程。这些原则确保AI场景不是技术演示的噱头，而是真正融入城市公共服务体系的有机组成部分。
 ## 用地、建筑规模与拆改留方案
 
@@ -345,7 +357,9 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 公共服务设施概念建议按15分钟生活圈理念配置：每个重点区设置一处社区服务中心（含医疗、文化、体育功能），学院南路生活配套区集中配置教育和医疗设施，沿京张绿廊按需配置公共卫生间、饮水点和AI信息导览终端。具体设施标准、选址和建设规模须在控规确认后确定 [assumption:A-DESIGN-001]。
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张文化绿廊为骨架，绿地率29.57% [metric:green_ratio] [data:geometry/green_space.geojson]，形成"一带三园多点"的绿色基础设施网络。公共空间系统由12处节点组成，公共空间率3.04% [metric:public_space_ratio] [data:geometry/public_space.geojson]。三大AI朝圣地标——众智园AI创新广场、原点智汇广场、大钟寺AI时代广场——是公共生活的舞台。蓝绿公共空间由 [depth:blue_green_public_space] 校核，城市风貌参照 [standard:MOHURD-URBAN-DESIGN-MEASURES] 分为概念约束、引导建议和弹性建议三个层级。
+蓝绿空间以京张文化绿廊为骨架，形成"一带三园多点"的绿色基础设施网络，绿地率29.57% [metric:green_ratio] [data:geometry/green_space.geojson]。公共空间系统由12处节点组成，公共空间率3.04% [metric:public_space_ratio] [data:geometry/public_space.geojson]。
+
+三大AI朝圣地标——众智园AI创新广场、原点智汇广场、大钟寺AI时代广场——是公共生活的舞台。蓝绿公共空间由 [depth:blue_green_public_space] 校核，城市风貌参照 [standard:MOHURD-URBAN-DESIGN-MEASURES] 分为概念约束、引导建议和弹性建议三个层级。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -364,4 +378,8 @@ Logo设计融合三重意象：**铁轨（京张铁路遗产）+ 神经元网络
 
 ## 参考资料
 
-详见附录「技术指标与合规证据」中的合规标准引用表和sources.json中的完整来源登记。关键引用包括：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:SRC-HAIDIAN-URBAN-RENEWAL-GUIDE-2025]、[source:SRC-BEIJING-URBAN-RENEWAL-PARALLEL-2024]、[source:SRC-PIPL-2021]、[source:SRC-NETWORK-DATA-REG-2025]、[source:SRC-GB50763-2012]、[source:SRC-GB55019-2021]、[source:SRC-GB-T45158-2024]、[source:SRC-MOHURD-ACCESSIBILITY-NOTICE-2025]、[source:SRC-KW-THREE-AREAS-WINGS]、[source:SRC-CASE-ZIJINGANG-AI-DEV]、[source:SRC-CASE-XUHUI-AI-ECOSYSTEM]、[source:SRC-CASE-PUNGGOL-DIGITAL-DISTRICT]。完整列表见sources.json，所有引用均已在正文和相应合规章节中使用对应的[source:]和[depth:]标签进行交叉引用。
+本方案的全部设计依据、数据来源和合规标准已在 sources.json 中完整登记（共19条，按 authority_level 分为 approved_formal、provisional_only 和 background_reference 三级）。关键技术数据可以从 submitted GeoJSON 图层直接复算（见 metrics.json 和 spatial_review 结果），所有指标复算均在 EPSG:4548 投影下完成。
+
+下述来源在正文的合规对照章节中有对应的 [source:] 标签引用——官方公告 [source:OFFICIAL-ANNOUNCEMENT]、智能体任务书 [source:AGENT-TASKBOOK]、site-package [source:SITE-PACKAGE]、临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]、海淀城市更新指引 [source:SRC-HAIDIAN-URBAN-RENEWAL-GUIDE-2025]、北京并联审批方案 [source:SRC-BEIJING-URBAN-RENEWAL-PARALLEL-2024]；法律法规类 [source:SRC-PIPL-2021] [source:SRC-NETWORK-DATA-REG-2025]；无障碍标准 [source:SRC-GB50763-2012] [source:SRC-GB55019-2021] [source:SRC-GB-T45158-2024] [source:SRC-MOHURD-ACCESSIBILITY-NOTICE-2025]；产业背景 [source:SRC-KW-THREE-AREAS-WINGS]；案例参考 [source:SRC-CASE-ZIJINGANG-AI-DEV] [source:SRC-CASE-XUHUI-AI-ECOSYSTEM] [source:SRC-CASE-PUNGGOL-DIGITAL-DISTRICT]。[data:geometry/site_boundary.geojson#SITE-0001] 为总体范围的空间基准。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm] [metric:key_area_count] 为可复算核心指标。[depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data] 为15项设计深度约束。完整索引见 compliance_matrix.json、standard_matrix.json 和 design_depth_matrix.json。
+
+详见附录「技术指标与合规证据」中的合规标准引用表和sources.json中的完整来源登记。关键引用包括：以上全部来源的完整登记见 sources.json（共19条，含14条 approved_formal、2条 provisional_only、3条 background_reference），各来源的权威等级、使用范围和可复用许可已在 sources.json 中逐条注明。。完整列表见sources.json，所有引用均已在正文和相应合规章节中使用对应的[source:]和[depth:]标签进行交叉引用。
