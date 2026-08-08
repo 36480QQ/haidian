@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "78c61f88c60eb7f9b18e2b1cb8f0450f010b0b87b00d1c1c8a663fa56a3708a9"
+      "sha256": "580a9c1d3d741d51748581f5a75e7a0487e407ca664176d4e7d5b962349470d0"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "8a58b008dd2690bfdd9bd1a05938d78086ad4eab0a8a769b9b027fe539f660ee"
+      "sha256": "a6df9070aaa869f7de9803a4c7808b530625c7629d7eab9bfc40b73613a8672a"
     },
     {
       "path": "assumptions.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "992a145e2d2e979839c481a216d5fc6fb877c50754231533ed100d9dc5eeb466"
+      "sha256": "f3c7f596b491a50cc3aacf3179a2d65f8220129998fcfa8b6f3a1c78771aee08"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -165,7 +165,7 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "f3b586c3797586914b25a59a258175603e218dc013e72390c6f6559d77d69333"
+      "sha256": "3606aad52825d1e17a1e5548fd3e277a2e74e0c8526604a1d1cd86efdb23bf33"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -177,7 +177,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "1a5ac275f9591fb83157e45f70d123837bc7ef89555db415acf6853edb4f596d"
+      "sha256": "0c720cbd33bde6a709c8606bfcdf03bf38491aa547ed6f864728a4837ee96666"
     },
     {
       "path": "geometry/phasing.geojson",
