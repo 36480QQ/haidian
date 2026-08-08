@@ -257,6 +257,24 @@ English name: "JingZhi Chain · AI Fusion Innovation Belt (JZ-AI Belt)". 命名�
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
+## AI 方法论披露
+
+本方案由 AI agent（Claude Code Opus 4.8，基于 Anthropic Claude Opus 4.8 模型）在人类参与者（ID-VerNe）的监督和指导下生成。以下按 OECD AI 透明度和 NIST AI 标准框架的要求，披露 AI 方法的关键信息。
+
+**模型与工具**：生成模型为 Anthropic Claude Opus 4.8，通过 Claude Code CLI 交互式调用。辅助工具包括 Python 3（Pillow 生成示意图、json 处理结构化数据）、GeoJSON 空间计算（shapely 计算面积和拓扑关系）、GitHub CLI（版本管理和 PR 提交）。不使用外部 API 或远程模型服务。
+
+**输入数据**：所有输入来源限于 `brief/site-package/` 目录中的官方资料包（design_brief.json、allowed_design_space.json、enums/、ranges/planning_limits.json、sources.json）和 `data/processed/` 中的处理资料包（agent_fact_pack.md、project_scope_summary.csv、agent_task_requirements.csv、source_use_matrix.csv、missing_data_checklist.csv）。未使用任何未公开数据或未经授权的第三方数据。详见 `sources.json` 和 `agent.json` 中的 method_disclosure 字段。
+
+**生成流程**：第一步，读取公告和任务书确定三层范围和六个 agent 任务；第二步，读取 site-package 锁定可编辑图层和边界约束；第三步，在允许设计空间内生成 GeoJSON 图层（site_boundary、key_areas、land_use、buildings、roads、green_space、public_space、phasing）；第四步，在 EPSG:4548 下从提交的 GeoJSON 复算所有面积指标；第五步，使用同一指标源生成示意图、A3/A0 图纸和 HTML 展示页面；第六步，运行确定性验证、空间复核、视觉包装检查和专业证据链审查。每一步的输出作为下一步的输入，不依赖外部数据源。
+
+**人工复核**：所有生成内容由人类参与者（GitHub 用户 ID-VerNe）逐项复核。复核内容包括：空间数据是否在允许设计空间内、指标是否可复算、场景描述是否可运营、版权声明是否完整、风险提示是否充分。AI 生成的内容不代表审定规划结论，不替代专业审批。
+
+**方案比较**：本方案未进行多候选方案的系统比较（缺乏必要的控规条件、权属数据和工程可行性资料）。概念层面的替代方案讨论在"全球案例与生态图谱"（agent.2）中以案例比较形式呈现。当官方数据到位后，应通过多方案比较方法（如 Pareto 优化或多标准决策分析）重新评估空间结构和项目优先级。
+
+**局限性与失败条件**：受限于 provisional boundary，所有面积指标和空间结论在官方边界发布后须全量重算。缺少控规、道路红线、权属、市政和工程条件，所有涉及开发强度、建筑高度、退线和设施标准的内容为设计建议，非审定条件。AI 生成的地图底图使用 OpenStreetMap 公开数据，不构成官方测绘成果。场景卡中的运营数据为概念设计参考，不构成运营承诺。
+
+**可复现性**：本方案在 `haidian` 仓库的 `submissions/ID-VerNe/ai-innovation-belt/` 目录中提交完整工作树。所有 GeoJSON 图层、指标、矩阵、自检报告和示意图均可通过仓库提供的脚本（`scripts/validate_submission.py`、`scripts/self_check_submission.py`）复现验证。生成流程记录在 `agent.json` 的 method_disclosure 和 generation_process 字段中。由于 AI 模型的非确定性输出特性，相同输入提示可能产生不同表述，但空间数据和指标因经过确定性复算而与模型无关。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
 ## 参考资料
 
 - brief/public-brief.md
