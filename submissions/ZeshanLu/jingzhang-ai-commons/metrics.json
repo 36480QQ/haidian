@@ -246,12 +246,12 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 989636.512,
+      "value": 974002.192,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "sum(EPSG:4548 area of output GREEN_SPACE features)",
+      "formula": "area(unary_union(EPSG:4548 output GREEN_SPACE feature geometries))",
       "confidence": "medium",
       "assumptions": [
         "A-PROVISIONAL-GEOMETRY-001",
@@ -260,18 +260,19 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.086713,
+      "value": 0.085343,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-RECOMPUTE-001"
-      ]
+      ],
+      "confidence_rule": "weakest input confidence: provisional site_area_sqm is low, so the derived ratio is low"
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -296,11 +297,12 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-RECOMPUTE-001"
-      ]
+      ],
+      "confidence_rule": "weakest input confidence: provisional site_area_sqm is low, so the derived ratio is low"
     },
     "building_bldg_001_footprint_area_sqm": {
       "status": "known",
@@ -493,11 +495,12 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "building_footprint_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-RECOMPUTE-001"
-      ]
+      ],
+      "confidence_rule": "weakest input confidence: provisional site_area_sqm is low, so the derived ratio is low"
     },
     "total_floor_area_sqm": {
       "status": "unknown",

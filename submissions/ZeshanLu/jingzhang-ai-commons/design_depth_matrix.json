@@ -14,107 +14,43 @@
         "drawings/a3-booklet.pdf#depth-existing-conditions-diagnosis"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson",
+        "geometry/site_boundary.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "site_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "现状诊断图与资料缺口已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
+      "evidence_summary_zh": "现状诊断图与资料缺口仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
+        {
+          "kind": "geojson",
+          "ref": "geometry/constraints.geojson",
+          "status": "complete"
+        },
         {
           "kind": "geojson",
           "ref": "geometry/site_boundary.geojson",
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
           "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -124,22 +60,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
           "status": "complete"
         },
         {
@@ -149,32 +70,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -189,6 +90,12 @@
           "ref": "proposal.md#depth-existing-conditions-diagnosis",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -218,41 +125,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-OFFICIAL-GEOMETRY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三层范围工作框架已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
+      "evidence_summary_zh": "三层范围工作框架仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
@@ -266,73 +162,18 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
           "ref": "metric:site_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:key_area_count",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
           "status": "complete"
         },
         {
@@ -356,16 +197,6 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
           "status": "complete"
@@ -373,11 +204,6 @@
         {
           "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -392,6 +218,12 @@
           "ref": "proposal.md#depth-three-level-scope-framework",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -420,62 +252,37 @@
         "drawings/a3-booklet.pdf#depth-overall-spatial-structure"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
         "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "road_centerline_length_m",
+        "key_area_count"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
+        "KEY_AREAS_TRUST",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "总体空间结构已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
+      "evidence_summary_zh": "总体空间结构仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
           "status": "complete"
         },
         {
@@ -485,22 +292,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
+          "ref": "geometry/key_areas.geojson",
           "status": "complete"
         },
         {
@@ -510,22 +302,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:key_area_count",
           "status": "complete"
         },
         {
@@ -535,17 +317,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -555,32 +327,17 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:LAND_USE_TOPOLOGY",
+          "status": "complete"
+        },
+        {
+          "kind": "self_check",
+          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
@@ -595,6 +352,12 @@
           "ref": "proposal.md#depth-overall-spatial-structure",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -623,14 +386,7 @@
         "drawings/a3-booklet.pdf#depth-land-use-layout"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
         "land_use_total_area_sqm",
@@ -641,66 +397,24 @@
         "land_use_code_1401_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "用地布局已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
+      "evidence_summary_zh": "用地布局仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
           "status": "complete"
         },
         {
@@ -739,58 +453,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
@@ -810,6 +474,12 @@
           "ref": "proposal.md#depth-land-use-layout",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -838,59 +508,32 @@
         "drawings/a3-booklet.pdf#depth-development-intensity-controls"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/site_boundary.geojson"
       ],
       "metric_refs": [
-        "building_footprint_area_sqm",
         "building_density",
         "total_floor_area_sqm",
         "floor_area_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OFFICIAL-GEOMETRY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "开发强度或待确认控规条件已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
+      "evidence_summary_zh": "开发强度或待确认控规条件仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/buildings.geojson",
@@ -898,27 +541,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
+          "ref": "geometry/site_boundary.geojson",
           "status": "complete"
         },
         {
@@ -938,47 +561,12 @@
         },
         {
           "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -987,18 +575,13 @@
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -1013,6 +596,12 @@
           "ref": "proposal.md#depth-development-intensity-controls",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1041,59 +630,31 @@
         "drawings/a3-booklet.pdf#depth-height-massing-character"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/site_boundary.geojson"
       ],
       "metric_refs": [
         "building_footprint_area_sqm",
-        "building_density",
         "total_floor_area_sqm",
         "floor_area_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OFFICIAL-GEOMETRY-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "建筑高度、体量与风貌控制已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
+      "evidence_summary_zh": "建筑高度、体量与风貌控制仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/buildings.geojson",
@@ -1101,32 +662,12 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/site_boundary.geojson",
           "status": "complete"
         },
         {
           "kind": "metric",
           "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
           "status": "complete"
         },
         {
@@ -1150,58 +691,13 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
+          "kind": "assumption",
+          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
           "status": "complete"
         },
         {
@@ -1216,6 +712,12 @@
           "ref": "proposal.md#depth-height-massing-character",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1244,92 +746,30 @@
         "drawings/a3-booklet.pdf#depth-retain-renovate-demolish"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "建筑拆改留分类已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
+      "evidence_summary_zh": "建筑拆改留分类仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
           "status": "complete"
         },
         {
@@ -1338,53 +778,8 @@
           "status": "complete"
         },
         {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
           "kind": "source",
           "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
           "status": "complete"
         },
         {
@@ -1399,16 +794,6 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:PROFESSIONAL_EVIDENCE",
           "status": "pending",
           "delivery_task": "Task 11",
@@ -1419,6 +804,12 @@
           "ref": "proposal.md#depth-retain-renovate-demolish",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1447,14 +838,8 @@
         "drawings/a3-booklet.pdf#depth-traffic-rail-slow-parking"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "road_centerline_length_m",
@@ -1462,48 +847,23 @@
         "road_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "道路、轨道、慢行与停车组织已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "evidence_summary_zh": "道路、轨道、慢行与停车组织仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/roads.geojson",
@@ -1511,17 +871,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
@@ -1541,7 +891,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:SITE-PACKAGE",
+          "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
@@ -1550,58 +900,18 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -1616,6 +926,12 @@
           "ref": "proposal.md#depth-traffic-rail-slow-parking",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1644,57 +960,33 @@
         "drawings/a3-booklet.pdf#depth-municipal-new-infrastructure"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "road_centerline_length_m",
+        "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "市政与新型基础设施策略已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "evidence_summary_zh": "市政与新型基础设施策略仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
+          "ref": "geometry/roads.geojson",
           "status": "complete"
         },
         {
@@ -1703,53 +995,13 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "metric",
           "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
@@ -1759,32 +1011,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -1799,16 +1026,6 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:PROFESSIONAL_EVIDENCE",
           "status": "pending",
           "delivery_task": "Task 11",
@@ -1819,6 +1036,12 @@
           "ref": "proposal.md#depth-municipal-new-infrastructure",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1847,14 +1070,8 @@
         "drawings/a3-booklet.pdf#depth-blue-green-public-space"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
         "green_space_area_sqm",
@@ -1863,53 +1080,22 @@
         "public_space_ratio"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "蓝绿系统与公共空间已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "evidence_summary_zh": "蓝绿系统与公共空间仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/green_space.geojson",
@@ -1918,11 +1104,6 @@
         {
           "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
           "status": "complete"
         },
         {
@@ -1951,38 +1132,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
           "status": "complete"
         },
         {
@@ -1991,23 +1142,8 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2022,6 +1158,12 @@
           "ref": "proposal.md#depth-blue-green-public-space",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2050,14 +1192,9 @@
         "drawings/a3-booklet.pdf#depth-three-key-area-detailed-design"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
         "key_area_count",
@@ -2066,41 +1203,27 @@
         "key_area_prov_key_003_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三大重点片区详细设计已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
+      "evidence_summary_zh": "三大重点片区详细设计仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
           "status": "complete"
         },
         {
@@ -2110,22 +1233,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
           "status": "complete"
         },
         {
@@ -2150,27 +1258,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
         {
@@ -2190,27 +1278,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2225,6 +1298,12 @@
           "ref": "proposal.md#depth-three-key-area-detailed-design",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2253,77 +1332,33 @@
         "drawings/a3-booklet.pdf#depth-renewal-project-list"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
         "building_footprint_area_sqm",
-        "building_density"
+        "phasing_total_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "更新项目清单已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
+      "evidence_summary_zh": "更新项目清单仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
           "status": "complete"
         },
         {
@@ -2333,22 +1368,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
           "ref": "metric:building_footprint_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
+          "ref": "metric:phasing_total_area_sqm",
           "status": "complete"
         },
         {
@@ -2357,38 +1382,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
+          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
@@ -2397,23 +1392,8 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2428,6 +1408,12 @@
           "ref": "proposal.md#depth-renewal-project-list",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2456,13 +1442,6 @@
         "drawings/a3-booklet.pdf#depth-phasing-implementation"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
@@ -2473,63 +1452,22 @@
         "phasing_total_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "分期实施计划已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。 后续须明确分阶段路径、牵头与协同主体、准入条件、量化KPI/验证门槛、资金与运维逻辑。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
+      "evidence_summary_zh": "分期实施计划仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。 后续落实分阶段路径、牵头与协同主体、准入条件、量化KPI/验证门槛、资金与运维逻辑。",
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/phasing.geojson",
@@ -2566,38 +1504,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
           "status": "complete"
         },
         {
@@ -2606,23 +1514,8 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2637,6 +1530,12 @@
           "ref": "proposal.md#depth-phasing-implementation",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2666,13 +1565,13 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson",
+        "geometry/phasing.geojson",
+        "geometry/key_areas.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
@@ -2690,9 +1589,6 @@
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
@@ -2708,7 +1604,10 @@
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "指标复算已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
+      "evidence_summary_zh": "指标复算仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。",
       "evidence_status": "mixed",
       "evidence": [
         {
@@ -2718,22 +1617,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
           "status": "complete"
         },
         {
@@ -2748,7 +1632,22 @@
         },
         {
           "kind": "geojson",
+          "ref": "geometry/buildings.geojson",
+          "status": "complete"
+        },
+        {
+          "kind": "geojson",
+          "ref": "geometry/roads.geojson",
+          "status": "complete"
+        },
+        {
+          "kind": "geojson",
           "ref": "geometry/phasing.geojson",
+          "status": "complete"
+        },
+        {
+          "kind": "geojson",
+          "ref": "geometry/key_areas.geojson",
           "status": "complete"
         },
         {
@@ -2818,21 +1717,6 @@
         },
         {
           "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
@@ -2890,6 +1774,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#depth-metrics-recalculation",
           "status": "planned",
@@ -2918,40 +1808,36 @@
       "geometry_refs": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "key_area_total_area_sqm",
+        "total_floor_area_sqm",
+        "road_area_sqm"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "SRC-HAIDIAN-DISTRICT-PLAN-2017-2035"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DISTRICT-PLAN-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "风险与缺资料清单已有结构化空间与指标证据；正式正文、图纸和HTML仍为 planned，故当前不虚假标 complete。 风险清单覆盖数据来源、公开边界、隐私、网络安全、模型安全、自动驾驶和机器人运行边界、无障碍、历史文化、施工风险、运营风险、人工接管与退出机制。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
+      "evidence_summary_zh": "风险与缺资料清单仅列主题相关结构化证据；正文、图片、图纸和HTML仍为 planned，当前不标 complete。 风险覆盖公开边界、数据来源、隐私、网络安全、模型安全、无障碍、历史文化、施工风险、运营风险和退出机制。",
       "evidence_status": "mixed",
       "evidence": [
         {
@@ -2966,32 +1852,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
@@ -3001,37 +1862,22 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:key_area_total_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
+          "ref": "metric:total_floor_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
+          "ref": "metric:road_area_sqm",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
           "status": "complete"
         },
         {
@@ -3042,6 +1888,11 @@
         {
           "kind": "source",
           "ref": "source:KEY-AREA-SOURCE",
+          "status": "complete"
+        },
+        {
+          "kind": "source",
+          "ref": "source:SRC-HAIDIAN-DISTRICT-PLAN-2017-2035",
           "status": "complete"
         },
         {
@@ -3056,12 +1907,17 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
+          "ref": "assumption:A-DISTRICT-PLAN-001",
+          "status": "complete"
+        },
+        {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
           "status": "complete"
         },
         {
@@ -3076,11 +1932,6 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:PROFESSIONAL_EVIDENCE",
           "status": "pending",
           "delivery_task": "Task 11",
@@ -3091,6 +1942,12 @@
           "ref": "proposal.md#depth-risk-missing-data",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",

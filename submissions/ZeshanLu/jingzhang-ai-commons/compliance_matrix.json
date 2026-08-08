@@ -11,20 +11,12 @@
         "proposal.md#task-1-3-1"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-3-1"
@@ -33,45 +25,21 @@
         "visual/index.html#task-1-3-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/land_use.geojson",
@@ -79,32 +47,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
           "status": "complete"
         },
         {
@@ -114,22 +57,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
@@ -139,47 +67,12 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
@@ -201,6 +94,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#task-1-3-1",
           "status": "planned",
@@ -219,25 +118,18 @@
       "title_zh": "建设适配AI新质生产力的新型城市形态",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "以一带三核两翼、慢行网络和轻量化空间供给承载可验证场景。",
+      "response_summary_zh": "以一带三核两翼、慢行网络和轻量空间供给承载可验证场景。",
       "report_sections": [
         "proposal.md#task-1-3-2"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/roads.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "building_density",
+        "road_centerline_length_m"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-3-2"
@@ -246,45 +138,25 @@
         "visual/index.html#task-1-3-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
         "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/land_use.geojson",
@@ -301,48 +173,13 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
           "ref": "metric:building_density",
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "kind": "metric",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
@@ -352,7 +189,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -361,18 +198,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
           "status": "complete"
         },
         {
@@ -388,11 +215,6 @@
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
@@ -414,6 +236,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#task-1-3-2",
           "status": "planned",
@@ -432,28 +260,16 @@
       "title_zh": "打造全球AI创新人才向往的高品质城区",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "以青年友好、全龄无障碍和蓝绿公共空间改善创新人才日常体验。",
+      "response_summary_zh": "以全龄无障碍和蓝绿公共空间改善人才与社区日常体验。",
       "report_sections": [
         "proposal.md#task-1-3-3"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
-        "green_space_area_sqm",
         "green_ratio",
-        "public_space_area_sqm",
         "public_space_ratio"
       ],
       "drawings": [
@@ -463,60 +279,23 @@
         "visual/index.html#task-1-3-3"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
+      "inclusion_zh": "公共空间和服务以无障碍连续性、可负担性和昼夜安全为人才与社区共同底线。",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/green_space.geojson",
@@ -528,43 +307,8 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:green_space_area_sqm",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
           "ref": "metric:green_ratio",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
@@ -574,32 +318,12 @@
         },
         {
           "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -609,32 +333,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -649,6 +353,12 @@
           "ref": "proposal.md#task-1-3-3",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -669,25 +379,16 @@
       "title_zh": "统筹研究范围",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "只引用上位方向，不把海淀区指标伪装为本项目实测。",
+      "response_summary_zh": "仅引用上位方向，不把海淀区指标伪装为项目实测。",
       "report_sections": [
         "proposal.md#task-1-4-1"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-4-1"
@@ -696,34 +397,24 @@
         "visual/index.html#task-1-4-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SRC-HAIDIAN-DISTRICT-PLAN-2017-2035",
+        "SOURCE-REGISTRY",
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001",
-        "A-DISTRICT-PLAN-001"
+        "A-DISTRICT-PLAN-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
@@ -733,67 +424,12 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
           "kind": "metric",
           "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
@@ -803,17 +439,17 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
+          "ref": "source:SRC-HAIDIAN-DISTRICT-PLAN-2017-2035",
+          "status": "complete"
+        },
+        {
+          "kind": "source",
+          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
           "status": "complete"
         },
         {
@@ -828,32 +464,17 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-DISTRICT-PLAN-001",
+          "status": "complete"
+        },
+        {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -868,6 +489,12 @@
           "ref": "proposal.md#task-1-4-1",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -888,24 +515,19 @@
       "title_zh": "总体设计范围",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "以 provisional 输出边界组织完整用地分区，官方边界到达后整体重算。",
+      "response_summary_zh": "以 provisional 输出边界组织完整分区，官方边界到达后整体重算。",
       "report_sections": [
         "proposal.md#task-1-4-2"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/roads.geojson"
       ],
       "metrics": [
         "site_area_sqm",
         "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
         "building_density"
       ],
       "drawings": [
@@ -915,12 +537,9 @@
         "visual/index.html#task-1-4-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
@@ -930,28 +549,17 @@
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
           "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
           "status": "complete"
         },
         {
@@ -970,21 +578,6 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
           "ref": "metric:site_area_sqm",
           "status": "complete"
@@ -996,22 +589,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
           "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
@@ -1021,17 +599,12 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
           "status": "complete"
         },
         {
@@ -1061,11 +634,6 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
@@ -1081,6 +649,12 @@
           "ref": "proposal.md#task-1-4-2",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1106,20 +680,9 @@
         "proposal.md#task-1-4-3"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "key_area_count",
         "key_area_total_area_sqm"
       ],
@@ -1130,93 +693,26 @@
         "visual/index.html#task-1-4-3"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
           "status": "complete"
         },
         {
@@ -1231,27 +727,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
         {
@@ -1275,23 +751,8 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -1306,6 +767,12 @@
           "ref": "proposal.md#task-1-4-3",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1326,25 +793,19 @@
       "title_zh": "统筹研究范围：AI创新生态体系",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "形成科研、开源、中试、企业服务和公共科普的协同机制。",
+      "response_summary_zh": "形成科研、开源、中试、企业服务和公共科普协同机制。",
       "report_sections": [
         "proposal.md#task-1-5-1-1"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "land_use_total_area_sqm",
         "building_footprint_area_sqm",
-        "building_density"
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-1-1"
@@ -1353,46 +814,23 @@
         "visual/index.html#task-1-5-1-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "PROCESSED-FACT-PACK"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001",
-        "A-DISTRICT-PLAN-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/land_use.geojson",
@@ -1405,27 +843,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
           "status": "complete"
         },
         {
@@ -1440,17 +858,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
@@ -1460,32 +868,12 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:PROCESSED-FACT-PACK",
           "status": "complete"
         },
         {
@@ -1495,17 +883,7 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-DISTRICT-PLAN-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
+          "ref": "assumption:A-RECOMPUTE-001",
           "status": "complete"
         },
         {
@@ -1527,6 +905,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#task-1-5-1-1",
           "status": "planned",
@@ -1545,25 +929,18 @@
       "title_zh": "统筹研究范围：适配人工智能的未来城市形态",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "AI场景必须先沙盒验证，再决定扩围、暂停或退出。",
+      "response_summary_zh": "AI场景先沙盒验证，再决定扩围、暂停或退出。",
       "report_sections": [
         "proposal.md#task-1-5-1-2"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "road_centerline_length_m",
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-1-2"
@@ -1572,63 +949,27 @@
         "visual/index.html#task-1-5-1-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
+      "risk_controls_zh": "数据来源与公开边界留痕；隐私、网络安全和模型安全审查未通过不得开放城市级AI服务。",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
           "status": "complete"
         },
         {
@@ -1638,27 +979,22 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
+          "kind": "source",
+          "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
@@ -1672,58 +1008,18 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -1738,6 +1034,12 @@
           "ref": "proposal.md#task-1-5-1-2",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -1763,20 +1065,16 @@
         "proposal.md#task-1-5-2-1"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "land_use_code_05_area_sqm",
+        "land_use_code_0702_area_sqm",
+        "land_use_code_0801_area_sqm",
+        "land_use_code_0802_area_sqm",
+        "land_use_code_1401_area_sqm",
+        "building_footprint_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-2-1"
@@ -1785,45 +1083,22 @@
         "visual/index.html#task-1-5-2-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/land_use.geojson",
@@ -1835,53 +1110,33 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "kind": "metric",
+          "ref": "metric:land_use_code_05_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
+          "ref": "metric:land_use_code_0702_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:land_use_code_0801_area_sqm",
+          "status": "complete"
+        },
+        {
+          "kind": "metric",
+          "ref": "metric:land_use_code_0802_area_sqm",
+          "status": "complete"
+        },
+        {
+          "kind": "metric",
+          "ref": "metric:land_use_code_1401_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
           "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
@@ -1891,32 +1146,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -1925,13 +1155,8 @@
           "status": "complete"
         },
         {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
+          "kind": "assumption",
+          "ref": "assumption:A-RECOMPUTE-001",
           "status": "complete"
         },
         {
@@ -1953,6 +1178,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#task-1-5-2-1",
           "status": "planned",
@@ -1971,27 +1202,20 @@
       "title_zh": "总体设计范围：城市更新总体框架",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "保留、适应性改造与轻量新建须经资产、消防、结构和需求准入。",
+      "response_summary_zh": "保留、改造与轻量新建须经资产、消防、结构和需求准入。",
       "report_sections": [
         "proposal.md#task-1-5-2-2"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
         "building_footprint_area_sqm",
         "building_density",
         "total_floor_area_sqm",
-        "floor_area_ratio"
+        "floor_area_ratio",
+        "phasing_total_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-2-2"
@@ -2000,50 +1224,29 @@
         "visual/index.html#task-1-5-2-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
       "evidence_status": "mixed",
+      "implementation_review": {
+        "phasing_path": "分阶段路径：资产核验—安全评估—低扰动改造—使用后评估。",
+        "lead_and_partners": "牵头主体为属地更新平台（待确认）；协同产权方、社区、设计与消防结构团队。",
+        "entry_conditions": "准入条件：权属、控规、消防、结构、无障碍和施工组织审查通过。",
+        "kpi_gates": "量化KPI/验证门槛：空间启用率、改造碳排、投诉响应和安全事件均达标再扩围。",
+        "funding_operations": "资金按公共底座与经营空间分账；运维、保险、折旧和退出成本在立项前锁定。"
+      },
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/buildings.geojson",
@@ -2051,32 +1254,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
           "status": "complete"
         },
         {
@@ -2100,13 +1278,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "kind": "metric",
+          "ref": "metric:phasing_total_area_sqm",
           "status": "complete"
         },
         {
@@ -2116,32 +1289,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -2150,18 +1298,13 @@
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-RECOMPUTE-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2176,6 +1319,12 @@
           "ref": "proposal.md#task-1-5-2-2",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2201,22 +1350,13 @@
         "proposal.md#task-1-5-2-3"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "road_centerline_length_m",
-        "road_area_sqm"
+        "road_area_sqm",
+        "road_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-2-3"
@@ -2225,55 +1365,24 @@
         "visual/index.html#task-1-5-2-3"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
+      "risk_controls_zh": "道路红线、停车与市政容量待官方核验；施工风险和运营风险分别由施工组织与运营许可控制。",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/roads.geojson",
@@ -2281,37 +1390,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
@@ -2325,6 +1404,16 @@
           "status": "complete"
         },
         {
+          "kind": "metric",
+          "ref": "metric:road_ratio",
+          "status": "complete"
+        },
+        {
+          "kind": "source",
+          "ref": "source:OFFICIAL-ANNOUNCEMENT",
+          "status": "complete"
+        },
+        {
           "kind": "source",
           "ref": "source:SITE-PACKAGE",
           "status": "complete"
@@ -2335,58 +1424,18 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2401,6 +1450,12 @@
           "ref": "proposal.md#task-1-5-2-3",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2421,33 +1476,21 @@
       "title_zh": "总体设计范围：京张遗址公园活力带",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "连续绿带与六个公共服务站形成可分期运营的公共骨架。",
+      "response_summary_zh": "连续绿带与六个公共服务站形成可分期运营公共骨架。",
       "report_sections": [
         "proposal.md#task-1-5-2-4"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/roads.geojson",
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "green_space_area_sqm",
-        "green_ratio",
         "public_space_area_sqm",
-        "public_space_ratio",
-        "phase_1_area_sqm",
-        "phase_2_area_sqm",
-        "phase_3_area_sqm",
-        "phase_4_area_sqm"
+        "road_centerline_length_m",
+        "phasing_total_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-2-4"
@@ -2456,60 +1499,22 @@
         "visual/index.html#task-1-5-2-4"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/green_space.geojson",
@@ -2522,27 +1527,12 @@
         },
         {
           "kind": "geojson",
+          "ref": "geometry/roads.geojson",
+          "status": "complete"
+        },
+        {
+          "kind": "geojson",
           "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
           "status": "complete"
         },
         {
@@ -2552,47 +1542,17 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:green_ratio",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
           "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:public_space_ratio",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:phase_1_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_2_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_3_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_4_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:phasing_total_area_sqm",
           "status": "complete"
         },
         {
@@ -2602,17 +1562,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -2622,32 +1572,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2662,6 +1592,12 @@
           "ref": "proposal.md#task-1-5-2-4",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2682,27 +1618,17 @@
       "title_zh": "总体设计范围：城市风貌",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "历史文化识别先行，建筑高度、体量与色彩留待正式条件确认。",
+      "response_summary_zh": "建筑高度、体量与色彩留待正式控制条件确认。",
       "report_sections": [
         "proposal.md#task-1-5-2-5"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
         "building_footprint_area_sqm",
-        "building_density",
-        "total_floor_area_sqm",
-        "floor_area_ratio"
+        "total_floor_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-2-5"
@@ -2711,50 +1637,23 @@
         "visual/index.html#task-1-5-2-5"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/buildings.geojson",
@@ -2762,32 +1661,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
@@ -2797,17 +1671,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
           "ref": "metric:total_floor_area_sqm",
           "status": "complete"
         },
         {
-          "kind": "metric",
-          "ref": "metric:floor_area_ratio",
+          "kind": "source",
+          "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
@@ -2821,58 +1690,18 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
+          "kind": "assumption",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
+          "status": "complete"
+        },
+        {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -2887,6 +1716,12 @@
           "ref": "proposal.md#task-1-5-2-5",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -2907,27 +1742,22 @@
       "title_zh": "重点区域范围详细设计必选项",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "每区均须补齐业态、规模、拆改留、公共空间、交通与实施项目证据。",
+      "response_summary_zh": "每区须补齐业态、规模、拆改留、公共空间、交通和实施证据。",
       "report_sections": [
         "proposal.md#task-1-5-3-required"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/roads.geojson",
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "key_area_count",
-        "key_area_total_area_sqm"
+        "building_footprint_area_sqm",
+        "public_space_area_sqm",
+        "road_centerline_length_m"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-3-required"
@@ -2936,48 +1766,35 @@
         "visual/index.html#task-1-5-3-required"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
+        "SITE-PACKAGE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
       "evidence_status": "mixed",
+      "implementation_review": {
+        "phasing_path": "分阶段路径：官方边界替换—三片区联合审查—单区试点—复盘后推广。",
+        "lead_and_partners": "牵头主体由三片区属地统筹机构确认；协同高校、企业、社区和专业团队。",
+        "entry_conditions": "准入条件：官方重点区边界、权属、交通市政容量和公共参与结论齐备。",
+        "kpi_gates": "量化KPI/验证门槛：慢行连通、公共空间覆盖、企业服务和居民满意度达标。",
+        "funding_operations": "资金分片区建账，公共设施与商业运营边界清晰；运维责任随项目清单落实。"
+      },
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
           "status": "complete"
         },
         {
@@ -2987,17 +1804,12 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
+          "status": "complete"
+        },
+        {
+          "kind": "geojson",
+          "ref": "geometry/roads.geojson",
           "status": "complete"
         },
         {
@@ -3007,12 +1819,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:key_area_count",
           "status": "complete"
         },
         {
@@ -3022,27 +1829,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:key_area_count",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
@@ -3052,12 +1844,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -3077,27 +1864,17 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
+          "kind": "assumption",
+          "ref": "assumption:A-RECOMPUTE-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -3112,6 +1889,12 @@
           "ref": "proposal.md#task-1-5-3-required",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -3132,28 +1915,19 @@
       "title_zh": "众智园AI自主创新加速区",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "面向校园师生、科研团队和中小企业设置开源验证与成果展示。",
+      "response_summary_zh": "面向校园师生、科研团队和中小企业设置开源验证与展示。",
       "report_sections": [
         "proposal.md#task-1-5-3-1"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
+        "key_area_prov_key_001_area_sqm",
         "building_footprint_area_sqm",
-        "building_density",
-        "key_area_count",
-        "key_area_total_area_sqm",
-        "key_area_prov_key_001_area_sqm"
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-3-1"
@@ -3162,48 +1936,26 @@
         "visual/index.html#task-1-5-3-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
           "status": "complete"
         },
         {
@@ -3213,32 +1965,12 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:key_area_prov_key_001_area_sqm",
           "status": "complete"
         },
         {
@@ -3248,47 +1980,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_count",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_prov_key_001_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
         {
@@ -3308,27 +2005,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -3343,6 +2025,12 @@
           "ref": "proposal.md#task-1-5-3-1",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -3363,28 +2051,19 @@
       "title_zh": "北京AI原点社区",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "面向社区居民、老人、儿童和残障人士设置日常AI服务与人工柜台。",
+      "response_summary_zh": "面向社区居民和全龄群体设置日常AI服务与人工柜台。",
       "report_sections": [
         "proposal.md#task-1-5-3-2"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
-        "key_area_count",
-        "key_area_total_area_sqm",
-        "key_area_prov_key_002_area_sqm"
+        "key_area_prov_key_002_area_sqm",
+        "public_space_area_sqm",
+        "green_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-3-2"
@@ -3393,63 +2072,26 @@
         "visual/index.html#task-1-5-3-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
           "status": "complete"
         },
         {
@@ -3459,37 +2101,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_count",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_total_area_sqm",
+          "ref": "geometry/green_space.geojson",
           "status": "complete"
         },
         {
@@ -3498,28 +2110,18 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
+          "kind": "metric",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "kind": "metric",
+          "ref": "metric:green_space_area_sqm",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
         {
@@ -3543,23 +2145,8 @@
           "status": "complete"
         },
         {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
           "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -3574,6 +2161,12 @@
           "ref": "proposal.md#task-1-5-3-2",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -3594,28 +2187,19 @@
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "面向中小企业提供共享算力、合规辅导和可撤场的验证空间。",
+      "response_summary_zh": "面向中小企业提供共享算力、合规辅导和可撤场验证空间。",
       "report_sections": [
         "proposal.md#task-1-5-3-3"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/roads.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
+        "key_area_prov_key_003_area_sqm",
         "building_footprint_area_sqm",
-        "building_density",
-        "key_area_count",
-        "key_area_total_area_sqm",
-        "key_area_prov_key_003_area_sqm"
+        "road_centerline_length_m"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-1-5-3-3"
@@ -3624,48 +2208,26 @@
         "visual/index.html#task-1-5-3-3"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
         "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/key-areas.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
           "status": "complete"
         },
         {
@@ -3679,28 +2241,8 @@
           "status": "complete"
         },
         {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
           "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
+          "ref": "metric:key_area_prov_key_003_area_sqm",
           "status": "complete"
         },
         {
@@ -3710,47 +2252,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_count",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:key_area_prov_key_003_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "source",
           "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
           "status": "complete"
         },
         {
@@ -3770,27 +2277,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -3805,6 +2297,12 @@
           "ref": "proposal.md#task-1-5-3-3",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/key-areas.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -3825,29 +2323,19 @@
       "title_zh": "一带总体概念与功能统筹方案设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "一带三核两翼把空间结构、品牌识别、公共服务和分阶段实施统一。",
+      "response_summary_zh": "一带三核两翼统筹空间结构、公共服务和阶段实施。",
       "report_sections": [
         "proposal.md#task-agent-1"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
-        "phase_1_area_sqm",
-        "phase_2_area_sqm",
-        "phase_3_area_sqm",
-        "phase_4_area_sqm"
+        "road_centerline_length_m",
+        "key_area_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-1"
@@ -3856,53 +2344,26 @@
         "visual/index.html#task-agent-1"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
+        "KEY_AREAS_TRUST",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
         {
           "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
           "status": "complete"
         },
         {
@@ -3912,22 +2373,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
+          "ref": "geometry/key_areas.geojson",
           "status": "complete"
         },
         {
@@ -3937,47 +2383,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
+          "ref": "metric:road_centerline_length_m",
           "status": "complete"
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_1_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_2_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_3_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:phase_4_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
+          "ref": "metric:key_area_count",
           "status": "complete"
         },
         {
@@ -3987,12 +2398,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -4002,32 +2408,17 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:LAND_USE_TOPOLOGY",
+          "status": "complete"
+        },
+        {
+          "kind": "self_check",
+          "ref": "self_check:KEY_AREAS_TRUST",
           "status": "complete"
         },
         {
@@ -4042,6 +2433,12 @@
           "ref": "proposal.md#task-agent-1",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -4062,25 +2459,19 @@
       "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "从高校策源到企业验证设置数据、模型和知识产权准入门槛。",
+      "response_summary_zh": "从高校策源到企业验证设置数据、模型和知识产权准入。",
       "report_sections": [
         "proposal.md#task-agent-2"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "land_use_total_area_sqm",
         "building_footprint_area_sqm",
-        "building_density"
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-2"
@@ -4089,45 +2480,23 @@
         "visual/index.html#task-agent-2"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/land-use-structure.png"
+      ],
       "evidence_status": "mixed",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/land_use.geojson",
@@ -4140,27 +2509,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
           "status": "complete"
         },
         {
@@ -4175,7 +2524,12 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:building_density",
+          "ref": "metric:public_space_area_sqm",
+          "status": "complete"
+        },
+        {
+          "kind": "source",
+          "ref": "source:AGENT-TASKBOOK",
           "status": "complete"
         },
         {
@@ -4189,53 +2543,13 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:AGENT-TASKBOOK",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
           "kind": "assumption",
           "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
-          "kind": "self_check",
-          "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
+          "kind": "assumption",
+          "ref": "assumption:A-RECOMPUTE-001",
           "status": "complete"
         },
         {
@@ -4257,6 +2571,12 @@
           "delivery_task": "Task 7"
         },
         {
+          "kind": "figure",
+          "ref": "assets/figures/land-use-structure.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
+        },
+        {
           "kind": "drawing",
           "ref": "drawings/a3-booklet.pdf#task-agent-2",
           "status": "planned",
@@ -4275,27 +2595,17 @@
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "自动驾驶和机器人限定速度、时段、地理围栏，异常由人工接管并可退出。",
+      "response_summary_zh": "自动驾驶和机器人在限定边界内试点并保留人工接管。",
       "report_sections": [
         "proposal.md#task-agent-3"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
         "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "road_centerline_length_m",
-        "road_area_sqm"
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-3"
@@ -4304,55 +2614,22 @@
         "visual/index.html#task-agent-3"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
+      "risk_controls_zh": "自动驾驶与机器人采用地理围栏、限速限时、网络安全与模型安全监测；异常人工接管并启动退出机制。",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/roads.geojson",
@@ -4360,37 +2637,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
           "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
           "status": "complete"
         },
         {
@@ -4400,22 +2647,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:road_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
@@ -4425,27 +2657,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-PROVISIONAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -4460,16 +2672,6 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
           "ref": "self_check:PROFESSIONAL_EVIDENCE",
           "status": "pending",
           "delivery_task": "Task 11",
@@ -4480,6 +2682,12 @@
           "ref": "proposal.md#task-agent-3",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -4500,29 +2708,17 @@
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "公共空间同时服务青年、老人、儿童、残障人士、校园师生、社区居民及中小企业。",
+      "response_summary_zh": "公共空间服务全龄人群、校园社区与中小企业。",
       "report_sections": [
         "proposal.md#task-agent-4"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
-        "green_space_area_sqm",
-        "green_ratio",
         "public_space_area_sqm",
-        "public_space_ratio"
+        "green_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-4"
@@ -4531,65 +2727,23 @@
         "visual/index.html#task-agent-4"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
       "evidence_status": "mixed",
+      "inclusion_zh": "青年、老人、儿童、残障人士、校园师生、社区居民和中小企业均有明确使用时段、无障碍路径与反馈入口。",
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/public_space.geojson",
@@ -4597,37 +2751,7 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:green_space_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:green_ratio",
+          "ref": "geometry/green_space.geojson",
           "status": "complete"
         },
         {
@@ -4637,22 +2761,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:public_space_ratio",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
+          "ref": "metric:green_space_area_sqm",
           "status": "complete"
         },
         {
@@ -4662,12 +2771,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -4677,32 +2781,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -4717,6 +2801,12 @@
           "ref": "proposal.md#task-agent-4",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/mobility-bluegreen.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -4737,25 +2827,16 @@
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "历史文化真实性审查优先，数字叙事保留来源、版权和人工纠错渠道。",
+      "response_summary_zh": "历史真实性、来源和版权审查先于数字叙事发布。",
       "report_sections": [
         "proposal.md#task-agent-5"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density"
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-5"
@@ -4764,34 +2845,22 @@
         "visual/index.html#task-agent-5"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-OSM-BACKGROUND-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/site-overview.png"
+      ],
       "evidence_status": "mixed",
+      "risk_controls_zh": "历史文化真实性、数据来源和版权逐项核验；争议内容下线并保留人工纠错和退出机制。",
       "evidence": [
         {
           "kind": "geojson",
@@ -4800,72 +2869,12 @@
         },
         {
           "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/phasing.geojson",
+          "ref": "geometry/constraints.geojson",
           "status": "complete"
         },
         {
           "kind": "metric",
           "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
           "status": "complete"
         },
         {
@@ -4875,12 +2884,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SOURCE-REGISTRY",
           "status": "complete"
         },
         {
@@ -4890,32 +2894,12 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
+          "ref": "assumption:A-OSM-BACKGROUND-001",
           "status": "complete"
         },
         {
           "kind": "self_check",
           "ref": "self_check:BOUNDARY_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
           "status": "complete"
         },
         {
@@ -4930,6 +2914,12 @@
           "ref": "proposal.md#task-agent-5",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/site-overview.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
@@ -4950,29 +2940,20 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "response_status": "planned_with_current_spatial_evidence",
-      "response_summary_zh": "年度活动以资金平衡、场地运维、参与覆盖和安全复盘作为续办门槛。",
+      "response_summary_zh": "活动以资金平衡、运维能力、参与覆盖和安全复盘作为续办门槛。",
       "report_sections": [
         "proposal.md#task-agent-6"
       ],
       "geojson_layers": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
-        "land_use_total_area_sqm",
-        "building_footprint_area_sqm",
-        "building_density",
         "phase_1_area_sqm",
         "phase_2_area_sqm",
         "phase_3_area_sqm",
-        "phase_4_area_sqm"
+        "phase_4_area_sqm",
+        "public_space_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#task-agent-6"
@@ -4981,93 +2962,38 @@
         "visual/index.html#task-agent-6"
       ],
       "source_ids": [
-        "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-PROVISIONAL-GEOMETRY-001",
-        "A-OFFICIAL-GEOMETRY-001",
-        "A-RECOMPUTE-001",
-        "A-CONTROLS-001"
+        "A-RECOMPUTE-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
+        "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "implementation_review": {
-        "phasing_path": "分阶段路径：证据校准—轻量试点—网络联动—评估后扩围或退出。",
-        "lead_and_partners": "牵头主体由属地统筹平台待确认；协同主体包括高校、社区、专业设计团队、运营方和中小企业。",
-        "entry_conditions": "准入条件包括官方边界、权属、控规、消防、结构、无障碍、隐私和安全评审。",
-        "kpi_gates": "量化KPI/验证门槛包括服务覆盖、无障碍可用率、事件响应时间、场景使用率和公众满意度；未达门槛不得扩围。",
-        "funding_operations": "资金采用公共底座、项目共建和活动收入分类核算；运维责任、折旧、保险和退出成本须在立项前锁定。"
-      },
-      "risk_and_public_interest": "数据来源与公开边界全程留痕；覆盖隐私、网络安全、模型安全、无障碍、历史文化、施工风险和运营风险。自动驾驶与机器人只在地理围栏、限速限时和人工接管条件下运行，并设置退出机制。受益对象包括青年、老人、儿童、残障人士、校园师生、社区居民和中小企业。",
+      "figure_refs": [
+        "assets/figures/metrics-evidence.png"
+      ],
       "evidence_status": "mixed",
+      "implementation_review": {
+        "phasing_path": "分阶段路径：季度小型活动—年度旗舰活动—国际协作网络，逐级评估续办。",
+        "lead_and_partners": "牵头主体为公开遴选的非营利运营平台；协同高校、社区、企业和场地方。",
+        "entry_conditions": "准入条件：内容版权、嘉宾授权、隐私影响、安保疏散和应急预案通过。",
+        "kpi_gates": "量化KPI/验证门槛：多群体参与率、复访率、安全零重大事故和赞助集中度上限。",
+        "funding_operations": "资金来自公共文化支持、合规赞助和票务分层；运维设置年度审计与退出准备金。"
+      },
       "evidence": [
-        {
-          "kind": "geojson",
-          "ref": "geometry/site_boundary.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/key_areas.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/land_use.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/buildings.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/roads.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/green_space.geojson",
-          "status": "complete"
-        },
-        {
-          "kind": "geojson",
-          "ref": "geometry/public_space.geojson",
-          "status": "complete"
-        },
         {
           "kind": "geojson",
           "ref": "geometry/phasing.geojson",
           "status": "complete"
         },
         {
-          "kind": "metric",
-          "ref": "metric:site_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:land_use_total_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_footprint_area_sqm",
-          "status": "complete"
-        },
-        {
-          "kind": "metric",
-          "ref": "metric:building_density",
+          "kind": "geojson",
+          "ref": "geometry/public_space.geojson",
           "status": "complete"
         },
         {
@@ -5091,18 +3017,8 @@
           "status": "complete"
         },
         {
-          "kind": "source",
-          "ref": "source:SITE-PACKAGE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:SOURCE-REGISTRY",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:OFFICIAL-ANNOUNCEMENT",
+          "kind": "metric",
+          "ref": "metric:public_space_area_sqm",
           "status": "complete"
         },
         {
@@ -5112,12 +3028,7 @@
         },
         {
           "kind": "source",
-          "ref": "source:BOUNDARY-SOURCE",
-          "status": "complete"
-        },
-        {
-          "kind": "source",
-          "ref": "source:KEY-AREA-SOURCE",
+          "ref": "source:SITE-PACKAGE",
           "status": "complete"
         },
         {
@@ -5127,17 +3038,7 @@
         },
         {
           "kind": "assumption",
-          "ref": "assumption:A-OFFICIAL-GEOMETRY-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
           "ref": "assumption:A-RECOMPUTE-001",
-          "status": "complete"
-        },
-        {
-          "kind": "assumption",
-          "ref": "assumption:A-CONTROLS-001",
           "status": "complete"
         },
         {
@@ -5147,12 +3048,7 @@
         },
         {
           "kind": "self_check",
-          "ref": "self_check:KEY_AREAS_TRUST",
-          "status": "complete"
-        },
-        {
-          "kind": "self_check",
-          "ref": "self_check:LAND_USE_TOPOLOGY",
+          "ref": "self_check:VISUAL_STATIC",
           "status": "complete"
         },
         {
@@ -5167,6 +3063,12 @@
           "ref": "proposal.md#task-agent-6",
           "status": "planned",
           "delivery_task": "Task 7"
+        },
+        {
+          "kind": "figure",
+          "ref": "assets/figures/metrics-evidence.png",
+          "status": "planned",
+          "delivery_task": "Task 8"
         },
         {
           "kind": "drawing",
