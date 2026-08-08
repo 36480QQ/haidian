@@ -473,9 +473,9 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 每个场景都保留五道公共性门槛：不以数字设备作为服务前提；人工复核不可移除；无障碍主链不断；状态、投诉和责任人可被公众看到；停止与回滚已经演练。矩阵中的 `low/medium/high` 是相对规划类别，不是预算或采购估算；SLA 是待运营方确认的设计门槛，不是法定服务标准。
 
-为了让“场景卡”可以被复核而不是只被阅读，本包新增 `visual/assets/open-pulse-relay-receipt.schema.json` 与 `visual/assets/example-s02-embodied-receipt.json`。后者是一个完全合成的 S02 低速配送机器人沙盒凭证：它把临时道路引用、无 App 人工替代、最小字段、急停与人类观察员、清权/申诉/删除、维护责任和退出资产计划放在同一条记录里；`performance_results` 保持 `null`，不把凭证格式冒充为机器人性能或现场验收。任何真实试点都必须重新签发凭证并由无障碍、安全、维护和公众代表共同过门。
+为了让“场景卡”可以被复核而不是只被阅读，本包新增独立设计的 `visual/assets/open-pulse-test-window-record.schema.json` 与 `visual/assets/example-s02-embodied-test-window.json`。后者是一个完全合成的 S02 低速配送机器人沙盒测试窗口记录：它把临时道路引用、无 App 人工替代、最小字段、急停与人类观察员、公众申诉、维护责任和退出资产计划放在同一条记录里；结果状态保持 `not_run`，不把记录格式冒充为机器人性能或现场验收。任何真实试点都必须重新建立记录并由无障碍、安全、维护和公众代表共同过门。
 
-该 Relay Receipt schema 的结构参考 Mentat-Uran（PR #426，commit `d501100a`）；Open Pulse 对 `$id`、标题、场景范围、状态值、字段限制和合成样例作项目化改写。这里保留署名，不等于取得改编许可；任何进一步复用仍需维护者与权利人复核。
+为回应 #706 暴露的结构性来源与许可边界，本版本移除此前带有 peer-derived 结构的 Relay Receipt 文件，改用 Open Pulse 独立设计的“有界测试窗口记录”。新记录围绕 `window`、`place_window`、`public_interface`、`human_control`、`data_contract`、`observation`、`release_decision` 和 `restoration` 组织，不复用 #426 的 schema 骨架；该文件仍是概念性审阅接口，不代表部署许可或现场结果。
 
 ![一枚令牌的生命周期](assets/figures/component-operations.png)
 
