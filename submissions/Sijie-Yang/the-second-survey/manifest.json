@@ -137,15 +137,15 @@
       "path": "assumptions.json",
       "role": "package_file",
       "required": true,
-      "sha256": "1f262a636800703081f440a5eb9afc8fbed7a947243c62c21f8cae6c917a1b81",
-      "bytes": 4771
+      "sha256": "8f18ab149f342fac30d7929678f2b9f02192a03fd59652f0e346229592db8699",
+      "bytes": 5331
     },
     {
       "path": "changelog.md",
       "role": "package_file",
       "required": true,
-      "sha256": "e1bb3b4822b194580700c0d5e23696221536f01b0824c9158d8f8717090c2d37",
-      "bytes": 2086
+      "sha256": "d2bf6d4f54b344e731cef59aa822afd1438e09a1c58b2cf9a137d8085ac65adc",
+      "bytes": 2552
     },
     {
       "path": "compliance_matrix.json",
@@ -254,8 +254,8 @@
       "path": "proposal.md",
       "role": "package_file",
       "required": true,
-      "sha256": "1c32fb36c11dc061d31cb44f53466153e4a3df32ebd0d3eac200dc9b0617b5f0",
-      "bytes": 28311
+      "sha256": "48e7463326440e5ac8d385377167b95ee083aae9a614a23f8b180f468030fd29",
+      "bytes": 42749
     },
     {
       "path": "report/copyright_statement.md",
@@ -275,8 +275,8 @@
       "path": "report/proposal.html",
       "role": "package_file",
       "required": true,
-      "sha256": "8ee47e37f164c912910dfd6549763dd86b267e829a087f100ddbe2eb746dad13",
-      "bytes": 38096
+      "sha256": "73401639b228b518d4f6e24f187a9b6fd32334a55082fee945cc013bdf69e192",
+      "bytes": 56223
     },
     {
       "path": "self_check.json",
@@ -289,8 +289,8 @@
       "path": "sources.json",
       "role": "package_file",
       "required": true,
-      "sha256": "4005744b4760de6f7ba26e411a6a823072505206aaa31dfa6d40f933a799f42d",
-      "bytes": 5690
+      "sha256": "f800a5b045ba895eeeeb555d6f2a7663bb906b4d9e41b6ab83d394fcc6d3e21e",
+      "bytes": 10421
     },
     {
       "path": "standard_matrix.json",
@@ -324,8 +324,8 @@
       "path": "visual/index.html",
       "role": "package_file",
       "required": true,
-      "sha256": "f72434723f751748c240c2ea0fc50f213dd13d625b795d2ccd1914404c173486",
-      "bytes": 23846
+      "sha256": "724c326dde6e51340bb0d1b8c899872489a0240e53f4dd4fb91f854ff1713860",
+      "bytes": 25266
     }
   ],
   "validation_claim": {

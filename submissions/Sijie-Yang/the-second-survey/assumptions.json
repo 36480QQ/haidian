@@ -96,6 +96,12 @@
       "statement": "First-person railway drama scenes are narrative devices, not historical assertions or evidence.",
       "impact": "Do not treat drama text as source facts.",
       "severity": "low"
+    },
+    {
+      "id": "A-THEORY-001",
+      "statement": "Urban design and urban science citations (Lynch, Gehl, Jacobs, Whyte, Space Syntax, 15-minute city, Complete Streets, CPTED, PPS, NACTO, etc.) are methodological background for translating mechanisms; they are not statutory standards for Haidian and do not claim local empirical validation.",
+      "impact": "Do not treat theory citations as compliance proof or as measured local scores (e.g. Walk Score, space-syntax integration) unless recalculated with approved data.",
+      "severity": "high"
     }
   ]
 }

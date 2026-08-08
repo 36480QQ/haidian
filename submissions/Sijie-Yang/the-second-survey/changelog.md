@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.4.2 - 2026-08-08
+
+- 各规划模块补全「模块说明 + 理论依据 + 操作描述」，禁止省略式一笔带过。
+- 新增 16 条城市设计/城市科学理论来源（Lynch、Gehl、Jacobs、Whyte、PPS、Space Syntax、Walk Score、15分钟城市及批判、NACTO、Complete Streets、CPTED、绿色基础设施、Oldenburg、UN-Habitat）。
+- 文末新增理论与方法转译表；assumptions 增 A-THEORY-001；visual 增加理论速览表。
+
 ## v0.4.1 - 2026-08-08
 
 - 补全京张十二幕：`visual/assets/twelve-acts.json` 与 proposal 完整幕表（梗概/空间锚点/联动场景卡）。
