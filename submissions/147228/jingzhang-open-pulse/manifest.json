@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "Codex",
-    "model": "agent-declared-model"
+    "model": "OpenAI GPT-5 family via Codex"
   },
   "generated_at": "2026-08-08T12:40:03Z",
   "files": [
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "05d3632dd50bae0ee6f7cbf5c0c1a3306ca8c0d1e9f8e729c482897a138b411a"
+      "sha256": "d2c8162a30ee0706ab3e75dfe0eb72af422064642db18effe0253819c56a1c54"
     },
     {
       "path": "proposal.en.md",
@@ -32,19 +32,19 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ba1b63d8cb31584b856e26c47fa05b871a2b5982df92571f2740ff73047dc25b"
+      "sha256": "9f2aa43eeca6613db08ee44bc7ead4c4219237c5b05521478f1375395ab08ddb"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c57e050fce1a6a28310aed171a103e126d8bf93e70e571144c34c962f8e31a85"
+      "sha256": "ed9a67eb3d4de08c78843c3f87a09da717df60cbbf0fb35cf0e4e5441f711abb"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4ddae714b43b3a5edaac95fe44f92557299dfc31735a6df7c0047629ea578767"
+      "sha256": "f6ef36e0b0d4efe5765385dbadea5e75732f3fb92167e30fb655d13bb88b85d3"
     },
     {
       "path": "assumptions.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a355df8549ffb12ca4a5a3f4090a6f4bc2fd7c958ba73a205195aa8feb6deb2b"
+      "sha256": "15fa6b29a9b0c282965eb29e327dbb70912c09ad2c870f3966514444fcb39a85"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ca652b89664fe5c3dd652202ca4e5a0d15440b06e217be275478716379f03d80"
+      "sha256": "958e2423b6ca321526af13185467a0b61463514eca9883a0132871f72ef41bab"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a0387fb198acf027130ea5603534c00e0c753f73873d4d83236de8d05d0ee884"
+      "sha256": "1011ef39dfb769d9def13949e87f04a3f785df632556d0da45989fc035b85a16"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "282a5cd51363cac6ccc5699780bcd118e813acfc2ef625014077e8523749c684"
+      "sha256": "de0088af2c117e2a7cab788941baec271f524c5568ebc072f30a365098c1bca2"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7c82d042f5cac2a501d1a79e3e33a43d2a8ce58f5424fab41a39fbc5e4f4e227"
+      "sha256": "8d4a9d1f0344d229163fe45af5a48d30ed50e2149bb12b25461176783a96f555"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -423,7 +423,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "b06301bc9d8159b8f808eab13ac69b3e639ffd41f7cd7033e55724b606721c04"
+      "sha256": "7a8f0121371802888c21582244e7e5fb96d7cde57504517b8eae8fcaefab0a89"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -468,7 +468,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "c363449eed3a5f012653b90c9c137ffcf7176fc9ad7ec36931c9dedf11393b32"
+      "sha256": "a4358369de1e30f5a1b93cd159fb496b744b8ffa34b96f9b2ec537e5dcae544f"
     },
     {
       "path": "visual/assets/operations-matrix.json",
@@ -517,6 +517,12 @@
       "role": "continuous_participation_cycle",
       "required": true,
       "sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
+    },
+    {
+      "path": "risk.json",
+      "role": "risk_register",
+      "required": true,
+      "sha256": "a634f732194e69396ea9b79153969d90b915e7b2534b2f5053e8c6e276589fb4"
     }
   ],
   "validation_claim": {
