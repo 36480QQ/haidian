@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张转化为一套公开比较多种未来、进行可逆城市排演并由人作最终决定的公民基础设施。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human-first-ai-service"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # 京张万象仪 / JINGZHANG CIVIC ORRERY
@@ -99,11 +99,15 @@ scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human
 
 ## 总体设计范围城市更新与控规深度城市设计
 
+## 交通、轨道、市政与公共服务设施
+
 ### 一条经线、六个横向公共房间
 
 京张遗址公园被读取为可步行的“公民经线”，串联工程记忆、当代生活与未来试验。六条东西向公共房间提供快、凉、无障碍和社交等并行选择，先以标识、树荫、临时铺装、座椅和全尺度样板验证，不声明道路、桥隧或轨道工程可行性。[data:geometry/roads.geojson#PS-MERIDIAN-001] [data:geometry/roads.geojson#PS-TRANSVERSE-001] [metric:concept_walk_length_m] [depth:traffic_rail_slow_parking]
 
 轨道站点策略是“出口即公共仪器”：把站外第一段步行的方向、无障碍断点、遮阴、夜间帮助和人工服务做得可见。停车、接驳、非机动车和物流只提出分层原则；容量、红线和工程措施待正式交通调查与专业深化。
+
+## 用地、建筑规模与拆改留方案
 
 ### 完整用地分区，但不是法定用地
 
@@ -121,11 +125,15 @@ scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human
 
 每个公共 AI 服务必须同时显示 `AI_ON`、`HUMAN_REVIEW`、`MANUAL_MODE`、`OFF_EXPIRED` 四种状态；缺数据、断网或未知状态必须显示不可用，不能伪装正常。场景禁止人脸识别、社会评分、隐蔽跨服务画像和自动决定权利。
 
+## 蓝绿空间、公共空间与城市风貌
+
 ### 蓝绿系统与城市风貌
 
 连续树冠、小月河生命感知湿地、北部模型林、大钟寺日常花园和无感知花园构成蓝绿公共空间。感知设备只针对必要的非个人环境参数，位置和责任人公开；无感知花园不安装传感器、不要求注册、不要求使用 AI。[data:geometry/green_space.geojson#PS-NO-SENSING-GARDEN] [data:geometry/constraints.geojson#CONSTRAINT-NO-SENSING-001] [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [depth:blue_green_public_space]
 
 风貌不是“铁路元素贴皮”，而是继承工程的方法：尺寸可读、节点可拆、材料可修、状态可见、错误可记录。历史对象和公园日常功能始终是第一层；新装置服从遗产、生态、无障碍与安全审查。
+
+## 更新项目清单、实施政策与分期计划
 
 ### 更新项目清单
 
@@ -160,7 +168,9 @@ scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human
 
 ![三座仪器屋与两翼](assets/figures/key-areas.png)
 
-## 十二张完整 AI 城市场景卡
+## AI 创新生态、人才画像与 AI+ 场景
+
+### 十二张完整 AI 城市场景卡
 
 每张卡均包含十三项：核心用户、地点、普通一天、AI 角色、空间变化、合法数据、人工/隐私/退出、运营/维护、近期试点、公共价值、风险、停止条件、图纸。任何字段缺失，场景不得进入试验。十二节点落位见 [metric:scenario_node_count]，人工复核和非数字替代覆盖见 [metric:human_review_coverage_ratio]、[metric:non_digital_fallback_coverage_ratio]。
 
@@ -382,6 +392,8 @@ scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human
 
 ## 风险、版权与合规说明
 
+[depth:risk_missing_data]
+
 1. **边界风险**：总体边界和重点区都是 provisional；官方资料到达后全量复算，而非只换底图。
 2. **规划与工程风险**：不宣称 FAR、高度、拆改留、道路、市政、消防、防洪、文保或投资可行性；由相应专业团队深化。
 3. **治理风险**：任何默认人脸、社会评分、跨服务画像、自动权利决定、无人工等价服务或无到期的方案不进入试验。
@@ -393,3 +405,7 @@ scenarios: ["plural-model-public-decision", "reversible-urban-rehearsal", "human
 本项目是开源共创城市设计提案，不是法定规划、审批文件、政府采购、招商承诺、施工图或法律意见。中文文本控制解释；英文文本按章节、主张、数字、证据标签与图件位置对齐。公开展示许可及归属见 `report/copyright_statement.md`。
 
 最终判断只有一句：**未来，不由机器宣布；由城市共同校准。**
+
+## 参考资料
+
+完整来源登记见 `sources.json`；专业标准、任务覆盖和设计深度证据分别见 `standard_matrix.json`、`compliance_matrix.json` 与 `design_depth_matrix.json`。所有在线来源均记录发布者、标题、URL、检索日期、用途、转译方式与使用限制。

@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "isjiamu",
     "agent_name": "小甲 / Renaissance Future City Architect",
-    "model": "agent-declared-model"
+    "model": "GPT-5 (Codex)"
   },
   "generated_at": "2026-08-08T14:39:40Z",
   "files": [
@@ -24,7 +24,15 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
+      "translation_file": "proposal.en.md",
       "sha256": "b67964613a734a490c13c97069b56abd45b65a152204125325242e77a168f4c9"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "language": "en",
+      "translation_of": "proposal.md"
     },
     {
       "path": "agent.json",
