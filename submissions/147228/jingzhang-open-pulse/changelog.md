@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-08
+
+- 将最新主线的政策/企业成长接口、具身智能凭证和 QA 记录与 v2.1 的三类验证窗、八类公共使用者镜头、四类责任/荣誉节点统一为一个可审阅版本。
+- 修复指标文件的重复键风险，明确 `user_persona_count=8` 的唯一来源，并同步双语正文、任务交叉索引、视觉索引、manifest 与版权台账。
+- 保留 provisional geometry、未知现场基线、人工兜底和专业复核边界；本版本不把概念验证写成部署、采购或实施事实。
+
 ## v2.0 - 2026-08-08
 
 - 修复中英文离线报告的 Markdown 表格渲染，改为可滚动的语义 HTML 表格，并同步更新英文版本标识。
@@ -53,6 +59,13 @@ reviewable deliverables and bilingual review surface.
 - Registered three official data-route records for the Haidian climate-normals catalogue, the district meteorological network and Qinghe Station wind monitoring; they are acquisition/context routes only and do not replace local measurements.
 - Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
 - Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.
+
+## v2.1 review-gap closure - 2026-08-08
+
+- Added three bounded industry validation windows with inputs, acceptance tests, stop conditions and non-AI equivalents.
+- Added an eight-row non-identifying public-user and inclusion matrix with spatial responses, fallbacks and safeguards.
+- Added a four-node honor/landmark crosswalk and linked it to the taskbook acceptance tests.
+- Added design-target metrics for validation windows, user lenses and public markers; all remain conceptual and require professional, rights, safety and community review.
 
 ## v2.1 - 2026-08-08
 

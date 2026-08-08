@@ -5,7 +5,7 @@ language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 translation_file: "proposal.en.md"
-iteration: "v2.0"
+iteration: "v2.4"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -17,8 +17,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前必须读取 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
 
 本节证据链引用 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案不是独立愿景文本，而是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织成果。
-
-三层范围、agent 任务、资料用途和缺口清单分别回读 [source:PROJECT-SCOPE-SUMMARY]、[source:AGENT-TASK-REQUIREMENTS]、[source:SOURCE-USE-MATRIX]、[source:MISSING-DATA-CHECKLIST]；这些 processed reference 只是导航层，不把临时资料升级为 official boundary、法定控规或实施承诺。
 
 资料登记表的使用边界如下：
 
@@ -99,8 +97,6 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 | 头部企业访客 | 展示、商务、国际接待、人才招聘 | 大钟寺国际路演客厅、轨道站点接驳、重点企业周边公共空间 | 企业标识和案例须清权 |
 | 周边居民 | 通勤、休闲、社区服务、低扰动更新 | 京张遗址公园慢行环、社区服务嵌入、夜间照明和活动分级 | 不将居民画像用于商业推荐 |
 | 高校师生 | 成果转化、跨校协作、日常慢行 | 校区-园区慢行缝合、成果转化驿站、AI教育体验点 | 校园数据和科研成果需授权 |
-
-以上五类用户画像是设计视角而非个人画像或自动化决策，[metric:user_persona_count]；完整场景卡数量为 14 条，[metric:scenario_card_count]，均以 `scenario-operation-matrix.json` 的空间载体、责任、非 AI 等价和停止条件为准。
 
 | 场景卡 | 空间载体 | 设计说明 |
 | --- | --- | --- |
@@ -300,9 +296,30 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 五类画像为开源开发者、初创团队、产业访客、周边居民和高校师生；它们不是基于个人画像的自动决策对象，而是公共服务和空间供给的设计视角。所有测试场景均为概念建议，须经过专业、安全、隐私与运营审查后方可试点。[source:AGENT-TASKBOOK] [depth:risk_missing_data]
 
+五类产业画像之外，方案用八个不识别个人的公共使用者镜头检查谁能进入、使用、投诉和退出：周边/老年居民、轮椅/盲杖/导盲犬使用者、照护者与儿童、夜班劳动者、游客/首次到访者、小商户/社区服务者、开发者/初创团队/高校师生、维护人员/运营责任人。八类镜头的设计目标计数为 [metric:user_persona_count]，不是人口统计，也不生成个体资格；每类都有空间响应、无数字兜底、测试和隐私/安全闸门，见 [data:visual/assets/persona-and-inclusion-matrix.json#P-01]—[data:visual/assets/persona-and-inclusion-matrix.json#P-08]。方案禁止人脸识别、个体轨迹留存、生物识别和商业画像；官方边界和基线未知时，先做知情、可退出、可补偿的参与审计。
+
+| 公共使用者镜头 | 空间与服务回应 | 无数字兜底/停止条件 |
+| --- | --- | --- |
+| 周边/老年居民；轮椅、盲杖与导盲犬使用者 | 连续无障碍主链、安静座椅、盲文/高对比/语音、可见急停 | 陪行、实体导视与人工问询；路线清空或障碍复核失败即停 |
+| 照护者与儿童；夜班劳动者 | 照护停留与低速边界；低照度主链、安静座椅、夜间值守 | 人工广播、固定照明和人工值守；照度/噪声配对不合格即调整或撤回 |
+| 游客/首次到访者；小商户/社区服务者 | 双语导视、工程问题墙、责任台；企业服务柜台、公开规则、人工申诉 | 纸质地图、人工讲解和纸面流程；关键材料不可核验即不启用 AI 辅助 |
+| 开发者/初创团队/高校师生；维护人员/运营责任人 | 开源发布厅、评测沙盒、贡献档案廊；资产台账、责任台、实体检修口 | 专家评审、静态模型卡、纸面巡检和人工派单；清权、接管、维护或撤回演练失败即停 |
+
+### 三个产业测试验证场：先证据，后采购或扩容
+
+为把“政策工具”真正接到企业发展，而不是停留在案例罗列，`visual/assets/industry-validation-cases.json` 设置三个可撤回的验证窗。它们是面向组织方、企业和公共服务团队的概念测试协议，不是采购批准、部署事实、投资承诺或本地企业绩效证明。每个验证窗都要求企业问题、政策接口、验收证据、停止条件和非 AI 等价服务同时出现：
+
+| 验证场 | 企业发展问题 | 政策接口 | 关键验收与停止条件 |
+| --- | --- | --- | --- |
+| 模型安全与透明度验证窗 | 初创团队或供应商能否在扩容前提交可复现的安全、数据来源、人工复核和回退证据 | 采购前 assurance record：模型/数据边界、红队结果、责任审查人、非 AI 方案和停止决定 | 两名独立审查人可复现测试记录；权属不清、缺少人工审查人或接管演练失败即停止。对应 S04、众智园。 |
+| 企业服务与数据要素合规验证窗 | 企业服务团队能否缩短公开流程，同时不暴露未授权数据、不把 AI 答复变成行政决定 | 服务 preflight record：公开来源、授权材料、人工决策责任人、更正路径、留存期限和人工柜台等价路径 | AI 辅助与人工路径都能走通，关键答复均有来源和人工更正路由；材料不可核验、隐私泄露、歧视性分流或缺少人工柜台即停止。对应 S08/S09、原点社区/大钟寺。 |
+| 低速具身智能安全与运营验证窗 | 机器人或具身智能供应商能否在任何规模化部署或采购决定前证明与无障碍公共路线安全共存 | 公共测试许可包：路线、速度/优先规则、急停、人工接管、事件日志、隐私边界、维护责任和撤回触发器 | 现场演练完成急停、人工接管、清空路线和恢复普通公共使用；阻断无障碍链、严重险情或维护逾期即停止。对应 S02/S03、众智园—京张公园界面。 |
+
+三类验证场都先走小规模、有人值守、可复盘的测试窗，再决定扩容、改设计或退出；任何“成功”只表示验收证据完整，不表示产品效果、投资回报或政府采购已经成立。三类验证场的机器可读计数为 [metric:industry_validation_case_count]，正文场景卡总量为 [metric:scenario_card_count]，八类公共使用者镜头对应 [metric:user_persona_count]。[source:AGENT-TASKBOOK] [depth:risk_missing_data]
+
 ### 文化叙事、地标与长期运营
 
-文化叙事不是把铁路当作科技背景板，而是把“工程求证—开放协作—公共回馈”作为三段式体验：京张铁路的工程理性、中关村的自主创新、AI 时代的可验证公共性。建议设置三类非炫耀性地标：**百年工程问题墙**（以清权史料讲述问题与求解）、**开源贡献档案廊**（展示可公开验证的项目记录）、**城市智能体责任台**（展示场景数据边界、申诉与人工复核路径）。它们均为概念节点，需在文保、公共艺术、管理与版权审查后深化。[source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]
+文化叙事不是把铁路当作科技背景板，而是把“工程求证—开放协作—公共回馈”作为三段式体验：京张铁路的工程理性、中关村的自主创新、AI 时代的可验证公共性。建议设置四类非炫耀性地标/荣誉节点：**百年工程问题墙**（以清权史料讲述问题与求解）、**开源贡献档案廊**（展示可公开验证的项目记录）、**城市智能体责任台**（展示场景数据边界、申诉与人工复核路径）、**企业安全治理责任台**（展示企业测试的安全证据、停止理由和恢复普通公共使用的条件）。四个节点的政策与企业价值、验收测试、关联图层和清权边界见 `visual/assets/landmark-honor-crosswalk.json`；机器可读节点计数为 [metric:ai_landmark_count]。它们均为概念节点，需在文保、公共艺术、管理与版权审查后深化，不构成机构背书或企业广告位。[source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]
 
 运营上建议形成“春季问题征集、夏季场景开放、秋季开发者周、冬季证据复盘”的年度闭环；每次活动留存开放议题、证据链接、公众反馈和人工复盘，而不以到场人数或招商金额制造绩效。开发者社区以公开议题库、可复现实验、贡献署名和问题申诉为核心；场景开放以小规模预约测试—第三方复核—公开复盘为核心。这是供组织方、专业团队与社区协商的运营原型，不代表已确定的活动、资金、政策或招引承诺。[source:AGENT-TASKBOOK] [depth:phasing_implementation]
 
@@ -336,22 +353,20 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 机器可读的边界、输入、输出、责任和回流路径见 `visual/assets/regional-ecosystem.json`；图中“originate—engineer—book—test—publish evidence—scale or retire”是运营建议，不是已签署的组织架构。
 
-为补齐 agent.2 要求的 5—8 个 AI 生态案例，新增 `visual/assets/case-mechanism-matrix.json`，把六个官方公开案例与六种可迁移机制分开记录。案例只回答“它公开展示了什么机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：
+为补齐 agent.2 要求的 5—8 个 AI 生态案例，`visual/assets/case-mechanism-matrix.json` 把六个官方公开案例与六种可迁移机制分开记录。案例只回答“官方页面公开展示了什么政策或企业发展机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：
 
-| 案例 | 已核验机制 | 京张转译接口 | 不照搬边界 |
+| 案例 | 政策/企业机制 | 京张接口 | 不照搬边界 |
 | --- | --- | --- | --- |
-| Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 为每个公共空间试点设置目的、数据边界、责任人、状态板和投诉路由 | 登记表不能替代无障碍、安全、采购和居民同意审查 [source:CASE-HELSINKI-AI-REGISTER] |
-| Amsterdam Algorithm Register | 公开说明城市算法用于什么服务，并形成 Civic AI Lab 语境 | 测试前发布 plain-language record，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规，也不越过保密审查 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
-| Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 众智园设置预约、人工主导的 assurance window，附 model card、测试记录和回滚 | 工具包不是认证、采购批准或无同意测试许可 [source:CASE-SINGAPORE-AI-VERIFY] |
-| Decidim Barcelona | 可追溯的线上参与与线下参与、开放协作软件 | 贡献墙与在线台账同时提供纸面、窗口和多语种参与，公开“哪些意见改变了什么” | 数字参与不能替代无设备、无账号或需要线下支持的人 [source:CASE-DECIDIM-BARCELONA] |
-| UK ATRS | 以标准化公开记录说明算法为何使用、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 的 preflight 记录 | 这是英国公共部门标准，不是北京地方强制要求 [source:CASE-UK-ATRS] |
-| Seoul AI Foundation | 以城市级机构串联研究、公共服务、人才和全球协作 | 以责任明确的小型接口连接高校策源、公共验证、人才服务和国际交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
+| Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 试点卡写明目的、数据边界、责任人、状态和投诉路由 | 登记不能替代安全、无障碍、采购和居民同意审查 [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | 公开说明城市算法用于什么服务 | 测试前发布说明，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规 [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 为初创团队提供预约、人工主导的测试窗口、模型卡和回滚记录 | 工具包不是认证、采购批准或无同意测试许可 [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | 可追溯的线上与线下参与基础设施 | 贡献墙同时提供纸面、窗口和多语种渠道，公开意见如何改变决定 | 数字参与不能替代无账号、无设备或需要线下支持的人 [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | 标准化公开记录说明算法为何、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 记录 | 不是北京地方强制要求，仍需本地法律和采购审查 [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | 串联研究、公共服务、人才和全球协作的机构能力 | 以责任明确的接口连接高校策源、企业服务、公共验证和交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
 
-这六个案例都标为 `official_public_case` 或 `official_public_secondary_case`，来源、访问日期和用途边界在 `sources.json` 登记；它们是机制比较，不是本地现状证据、工程可行性证明或竞赛排名。六种模式（站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法）仍保留在同一 JSON 的 `rows` 中，供专业团队把案例机制映射到三处重点区的节点计划。
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡 [metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规和低速具身智能三条产业测试验证窗；`visual/assets/landmark-honor-crosswalk.json` 把责任台、贡献档案和安全治理节点绑定到政策与企业接口。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
 
-`visual/assets/operations-matrix.json` 把方案拆成八个有责任人的行动包：官方边界替换、现场基线、风热水验证、具身智能窗口、开源清权、活动降容复原、雨洪/安静链维护，以及年度扩散/重做/退出复盘。`visual/assets/resource-accounts.json` 把空间权属、气候水务生态、算力模型与数据权利、人类体验参与、资产备件维护五类前置资源单独记账；这是审查条件，不是预算、资金或采购承诺。
-
-政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡，[metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出三条产业测试验证窗，[metric:industry_validation_case_count]，分别覆盖模型安全、企业服务数据合规和低速具身智能；`visual/assets/landmark-honor-crosswalk.json` 把四个责任台、贡献档案和安全治理节点绑定到政策与企业接口，[metric:ai_landmark_count]。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。
+`visual/assets/operations-matrix.json` 将后续工作拆成八个有责任人的行动包：官方边界替换、现场基线、风热水验证、具身智能窗口、开源清权、活动降容复原、雨洪/安静链维护，以及年度扩散/重做/退出复盘；`visual/assets/resource-accounts.json` 为五类前置资源记账：空间权属、气候水务生态、算力模型与数据权利、人类体验参与、资产备件维护。这些是释放窗口前的审查条件，不是预算、资金或采购承诺。
 
 ### 2. 十四条场景—空间—运营矩阵
 
@@ -362,14 +377,6 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 为了让“场景卡”可以被复核而不是只被阅读，本包新增 `visual/assets/open-pulse-relay-receipt.schema.json` 与 `visual/assets/example-s02-embodied-receipt.json`。后者是一个完全合成的 S02 低速配送机器人沙盒凭证：它把临时道路引用、无 App 人工替代、最小字段、急停与人类观察员、清权/申诉/删除、维护责任和退出资产计划放在同一条记录里；`performance_results` 保持 `null`，不把凭证格式冒充为机器人性能或现场验收。任何真实试点都必须重新签发凭证并由无障碍、安全、维护和公众代表共同过门。
 
 ![一枚令牌的生命周期](assets/figures/component-operations.png)
-
-### 三条产业测试验证窗：先有证据，再谈采购或扩容
-
-`visual/assets/industry-validation-cases.json` 定义三条可逆、有人值守的验证窗：模型安全与透明、企业服务数据合规、低速具身智能安全与运维。每条都把企业问题绑定到政策接口、验收证据、停止条件和非 AI 等价服务；独立复核、人工路线、清权、可见急停/接管和回到普通公共使用是释放门。来源不明、隐私外泄、歧视性路由、无障碍被阻断、严重近失或维护逾期时停止窗口。这些是概念测试协议，不是本地企业绩效、采购批准或已部署事实。[source:AGENT-TASKBOOK]
-
-### 文化叙事、公共标记与长期运营
-
-文化叙事由工程证明、开源协作和公共回馈三部分组成。建议四个不追求炫技的公共标记：**百年工程问题墙**、**开源贡献档案**、**城市智能体责任台**、**企业安全治理责任台**。`visual/assets/landmark-honor-crosswalk.json` 将每个标记绑定空间载体、验收测试、政策/企业接口和清权边界；它们是供文保、公共艺术、管理和权利审查的概念节点，不是机构背书、广告位或已批准活动。
 
 ### 3.1 节点级概念计划与公共利益审计
 
@@ -402,7 +409,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 本轮成果的目标不是用更多效果图制造“完成感”，而是让评审者可以沿着一条路径工作：任务 → 章节 → 图件/JSON → 指标/来源 → acceptance test → 停止或回滚。官方边界和控规资料发布后，仍需重算面积、连通、雨洪、交通、维护和量化指标，再进入专业深化。
 
-实施交接由 `visual/assets/operations-matrix.json` 与 `visual/assets/resource-accounts.json` 直接呈现：每个行动包都有责任人、问责人、依赖、验收、停止、维护和相对成本带；每本资源账都说明释放窗口前必须补齐的资料与能力。它们与十四条场景矩阵、Relay Receipt schema 一起，把“一个公共问题”接到“一个有界窗口、一次人工接管、一条证据记录和一次扩散/重做/退出决定”。
+实施交接由 `operations-matrix.json`、`resource-accounts.json`、十四条场景矩阵和 Relay Receipt 一起呈现：每个行动包都有责任、依赖、验收、停止、维护和相对成本带；每本资源账都说明释放窗口前必须补齐的资料与能力。
 
 ## v1.8 评审可见证据层：定位、功能、节点与公共性一页回读
 
@@ -489,5 +496,13 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 ## 参考资料
 
 - brief/public-brief.md
-
-完整的机器可读来源、标准、资料用途、处理资料和指标引用分别登记在 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`data/processed/agent_fact_pack.md` 和 `metrics.json`。[source:OFFICIAL-ANNOUNCEMENT] 与 [source:SOURCE-REGISTRY] 是这条证据链的入口。其中，`sources.json` 新增的六个国际案例均保留官方公开 URL、访问日期、用途和“不构成合作或本地绩效证明”的边界；它们是提交包内的详细来源账本，不冒充仓库 `sources/public-sources.json` 的公共索引条目。
+- brief/site-package/design_brief.json
+- brief/site-package/allowed_design_space.json
+- brief/site-package/enums/
+- brief/site-package/ranges/planning_limits.json
+- data/processed/agent_fact_pack.md
+- data/processed/project_scope_summary.csv
+- data/processed/agent_task_requirements.csv
+- data/processed/source_use_matrix.csv
+- data/processed/missing_data_checklist.csv
+- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:PROJECT-SCOPE-SUMMARY]、[source:AGENT-TASK-REQUIREMENTS]、[source:SOURCE-USE-MATRIX]、[source:MISSING-DATA-CHECKLIST]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
