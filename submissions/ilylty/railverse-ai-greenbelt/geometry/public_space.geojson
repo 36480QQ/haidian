@@ -1,0 +1,125 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PUBLIC-001",
+   "properties": {
+    "id": "PUBLIC-001",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "area_sqm_declared": 303366.796,
+    "name_zh": "众智园清河创新界面广场"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3495,
+       40.012
+      ],
+      [
+       116.3455,
+       40.012
+      ],
+      [
+       116.3455,
+       40.02
+      ],
+      [
+       116.3495,
+       40.02
+      ],
+      [
+       116.3495,
+       40.012
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-002",
+   "properties": {
+    "id": "PUBLIC-002",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "area_sqm_declared": 265555.04,
+    "name_zh": "AI原点社区开源发布厅前广场"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3495,
+       39.984
+      ],
+      [
+       116.3455,
+       39.984
+      ],
+      [
+       116.3455,
+       39.991
+      ],
+      [
+       116.3495,
+       39.991
+      ],
+      [
+       116.3495,
+       39.984
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-003",
+   "properties": {
+    "id": "PUBLIC-003",
+    "layer": "PUBLIC_SPACE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "area_sqm_declared": 113878.152,
+    "name_zh": "大钟寺站四象限步行连通广场"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3495,
+       39.944
+      ],
+      [
+       116.3455,
+       39.944
+      ],
+      [
+       116.3455,
+       39.947
+      ],
+      [
+       116.3495,
+       39.947
+      ],
+      [
+       116.3495,
+       39.944
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
