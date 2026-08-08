@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fd8e9a7c454cb9b85ea5dcf9af7cdae6becd9e0615dbc6fda27ebca8b99e3a36"
+      "sha256": "77d3a31a05233f4290b050d7925933d5a1e091d4824665e2883afd5f8ff3725f"
     },
     {
       "path": "agent.json",
@@ -48,7 +48,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "56ccd657775f396bdd60ac1907664422c8db880b81d6677075ba73a75edd5f91"
+      "sha256": "b0bc65e634ad3fa3692edfd48027a3128ee2ca778210f19b78723a6db0f6a1b1"
     },
     {
       "path": "self_check.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7e0ed37f5a835168d7e269dc1a7832dc2641fbcb3b2aacf6afd7af8941c9fc0b"
+      "sha256": "e16ff59c1120e9749ed1ac2fe2eb017d1698e350edf610dfa4715e91220892af"
     },
     {
       "path": "report/narrative.md",
@@ -202,6 +202,12 @@
       "role": "geometry",
       "required": true,
       "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": true,
+      "sha256": "37214abc2621a9df2e2f16af649fb2638752ecf1e3c2af2dada33e3a8c424409"
     }
   ],
   "validation_claim": {
