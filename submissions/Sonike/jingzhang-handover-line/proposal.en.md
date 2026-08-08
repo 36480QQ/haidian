@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.7"
+iteration: "v1.8"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -56,7 +56,17 @@ The table also explains why reversibility precedes intelligence here: under stan
 
 The three scopes form one evidence chain. The coordinated research area asks how Haidian could build a globally connected ecosystem around open collaboration and trustworthy validation. The overall design area turns those mechanisms into land use, renewal, movement, blue-green space, civic facilities and implementation gates. Three key areas then test whether a real place can combine programme, building, access, public space, AI governance and delivery conditions. This cascade is governed by [depth:three_level_scope_framework] and [depth:overall_spatial_structure].
 
-The provisional overall polygon computes to about 11.4 square kilometres [metric:site_area_sqm] for internal concept comparison only; it is not a precise redline or statutory area. Three provisional key areas are represented [metric:key_area_count]. North, centre and south host Build→Verify, Verify→Share and Share→Serve. A technology-services wing provides legal, IP, talent, standards and finance navigation; a scenario-enablement wing provides civic, environmental and everyday-life tests. Feedback, maintenance and shutdown records travel north again so the system learns from the city rather than merely deploying into it.
+The provisional overall polygon computes to about 11.4 square kilometres [metric:site_area_sqm] for internal concept comparison only; it is not a precise redline or statutory area. Three provisional key areas are represented [metric:key_area_count]. The taskbook already assigns a function to each of the five areas, so this proposal does not invent a competing division of labour. It lands each official function on one identifiable handover action; the left two columns below are the taskbook's own wording, the right two are what this proposal contributes.
+
+| Area (official name) | Function assigned by the taskbook | Handover action this proposal lands | Evidence entry |
+| --- | --- | --- | --- |
+| Zhongzhiyuan AI Acceleration Area | Full-stack self-reliant AI system and a global voice in AI governance | Build→Verify Yard: red-team desk, robot right-of-way sandbox, edge-energy station; the version, accountable role and stop record of every test batch form a governance output an outsider can re-examine | [data:geometry/key_areas.geojson#PROV-KEY-001], R-TEST-SAFETY |
+| Beijing AI Origin Community | World-class AI innovation ecosystem | Verify→Share Yard: result relay, licensing and withdrawal, human counter; anything published carries source, licence, accountable role and a way to withdraw it | [data:geometry/key_areas.geojson#PROV-KEY-002], R-SERVICE-OPS |
+| Dazhongsi AI Industry Cluster | AI-native new business forms | Share→Serve Yard: City Handover Hall, Century Logbook, oral-history booth; new business forms are admitted only where ordinary passage stays free of any spending or app condition | [data:geometry/public_space.geojson#SCN-11], R-CULTURE-VENUE |
+| Zhongguancun Technology Services Wing | Global allocation of production factors, Zhongguancun IP and capital enablement | Eight shared stacks as the factor intake: legal, IP, talent, finance and standards reach the belt as interface plus rule plus reviewable record, replacing no existing institution | [depth:overall_spatial_structure], [data:geometry/land_use.geojson#LU-001] |
+| Xiaoyuehe Scenario Enablement Wing | AI scenario enablement and an intelligent, vibrant AI city | The wing carries civic, environmental and everyday-life tests; the no-AI equivalent of each of the twelve reversible scenarios is proven here before it is repeated along the belt | [metric:scenario_node_count], [depth:blue_green_public_space] |
+
+Capability does not only travel outward: complaints, maintenance records and shutdown reasons travel north again, closing a build–verify–share–serve–feedback loop. That loop is where "a global voice in AI governance" actually lands in space — the standing comes from records an outsider can re-examine, not from scale.
 
 ![Three-level scope and land-use structure](assets/figures/land-use-structure.en.png)
 
