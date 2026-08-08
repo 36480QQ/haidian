@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-interest proving ground where urban AI must earn trust before it scales."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.6"
-iteration: 7
+version: "1.7"
+iteration: 8
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-> **v1.6 spatial-delivery review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+> **v1.7 visual-evidence review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 **Motto: Every urban intelligence must withstand public scrutiny.**
 
@@ -199,6 +199,12 @@ Any run that may affect a route, service choice or field device creates a minima
 The architecture has four hard boundaries: edge-first processing, sandbox/production separation, least-privilege agents, and replaceable models/vendors with exportable receipts and tests. AP2 takes over during outage or vendor exit.
 
 The plan is also tested against adverse conditions. If official geometry conflicts, engineering quantities freeze and all geometry-linked outputs are recalculated while the governance protocol remains useful. If only one pilot can be funded, AP0–3 and P1 precede robotics. If trust declines, recruitment and promotion stop while independent review and non-digital service continue. In extreme weather or outage, devices close and staffed safety operations remain. If no operator, roster, SLA, maintenance and insurance are confirmed, the project cannot enter G2. A pilot that disproves its hypothesis and exits transparently is a valid result.
+
+## 19. The first 100 metres as a Civic AI Failure Theatre
+
+v1.7 condenses spatial evidence into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: **A daily** keeps analogue routes and human service; **B contest** enables explanation, refusal and takeover; **C failure** stops devices, opens a physical bypass and onsite help; **D replay** publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:spatial_control_book] [metric:spatial_interface_type_count]
+
+The five figures and the first A3/A0 pages now share one visual grammar: an evidence ladder limits precision; five-layer sections control space; three task cards control everyday operations; three non-conflicting routes control safe degradation; and a public decision room chooses **scale, repair or exit**. These are visible indexes into the machine contracts, not renderings used as substitutes for professional evidence. [metric:receipt_required_field_count]
 
 ## Risk, rights and limitations
 The current empty constraints layer means title, heritage, utilities, fire, flood and road controls have not been obtained; it does **not** mean no constraints exist [data:geometry/constraints.geojson#CONSTRAINTS-PENDING]. Provisional site/key-area geometry cannot support FAR, height, demolition, precise area, ownership or engineering. Official polygons trigger coordinated replacement of layers, metrics, figures, PDFs, HTML, matrices and change record.

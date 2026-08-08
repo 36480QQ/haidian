@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为公共价值主轴，建立城市AI上线前评测、上线中监督、上线后复盘的开放创新带。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.6"
-iteration: 7
+version: "1.7"
+iteration: 8
 ---
 
 # 京张共智环：可验证城市智能体开放带
 
-> **v1.6 空间—交付深化版｜状态口径**：四项包级自检已通过；空间数值与图形仍基于仓库 provisional geometry，聚合数据置信度为 **low**。可用于概念内容复审，不是官方红线、法定控制或精确面积依据。逐资产权利与生成链见 `report/copyright_statement.md`，整改差异见 `changelog.md`。
+> **v1.7 可视证据深化版｜状态口径**：四项包级自检已通过；空间数值与图形仍基于仓库 provisional geometry，聚合数据置信度为 **low**。可用于概念内容复审，不是官方红线、法定控制或精确面积依据。逐资产权利与生成链见 `report/copyright_statement.md`，整改差异见 `changelog.md`。
 
 **英文名：Jing-Zhang Civic AI Loop；口号：让每一次城市智能，都经得起公众检验。**
 
@@ -435,6 +435,20 @@ A“模型上街前”评测场：偏见、幻觉、鲁棒、隐私和无障碍�
 |运营主体未落实|排班、SLA、维护和保险空缺|不进入G2，保留可逆空间微更新|公园与首层公共空间不因数字项目关闭|
 
 首期成功不是“上线三个AI”，而是完成三项可证伪判断：P1是否比原渠道更快关闭无障碍障碍、P2是否在不削弱真人服务下拦截严重误导、P3是否能在行人优先条件下可靠停机。若答案是否定，退出本身就是合格结果；公开失败原因比扩大一个未经证明的示范更有公共价值。
+
+## 19. 百米故障剧场：把“可退出”画成一段真实街道
+
+v1.7 将首期空间证据收敛为每个重点区可复核的**首个100米**，不是新增工程范围或精确尺寸承诺。其剖面固定叠加五层：铁路记忆线、雨洪树荫带、连续步行骑行、可逆试验口袋、既有建筑首层；尺寸均标注“现场待实测”，法定控制与权属未核前不得用于施工。[depth:spatial_control_book] [data:geometry/public_space.geojson#PS-001]
+
+这100米同时是面向普通人的“故障剧场”：A日常态保持普通路径与人工服务；B争议态允许解释、拒绝和人工接管；C故障态停机、物理绕行并开放现场求助；D复盘态发布运行收据、修复证明和少数意见。AI设备撤除后，连续通行、遮荫雨洪、座椅饮水、历史导视和人工窗口仍成立，因而数字采购失败不等于公共空间投资归零。[metric:spatial_interface_type_count] [metric:receipt_required_field_count]
+
+|重点区首个100米|可见的日常任务|故障时不丢失的公共价值|进入下一门槛的证据|
+|---|---|---|---|
+|众智园|小团队提交服务智能体，先合成题集后限域测试|普通步行、人工咨询、消防与维护通道|版本化评测卡、严重误导停机记录|
+|AI原点社区|轮椅用户报告并跟踪一个无障碍断点|普通报修、连续无障碍绕行、线下派单|最差组结果、48小时未闭环转人工证据|
+|大钟寺|访客比较AI与人工服务并质疑推荐|明码信息、人工服务、退出与申诉入口|权益恢复收据、删除证明、暗黑模式检查|
+
+五张核心图与A3/A0前三页采用同一视觉语法：**证据梯控制精度、五层剖面控制空间、三任务卡控制日常运营、三流线控制安全降级、公共决策室控制扩展/返修/退出**。它们是正文与机器合同的可见索引，不以效果图替代专业证据。
 
 ## 风险、版权与合规说明
 现状约束图层目前为空，明确表示权属、文保、市政、消防、洪涝与道路红线尚未获得，不得误读为“无约束” [data:geometry/constraints.geojson#CONSTRAINTS-PENDING] [depth:risk_missing_data] [source:SOURCE-REGISTRY]。
