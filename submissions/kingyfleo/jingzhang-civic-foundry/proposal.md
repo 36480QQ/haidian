@@ -3,12 +3,13 @@ title: "京张万象工场｜文化生产驱动的AI城市采用带"
 title_en: "JING-ZHANG CIVIC FOUNDRY | A CULTURAL PRODUCTION BELT FOR CIVIC AI ADOPTION"
 author_github: "kingyfleo"
 language: "zh"
+proposal_format_version: "2"
 translation_file: "proposal.en.md"
 license: "CC-BY-SA-4.0"
-summary: "以文化生产为中介，解决AI从技术能力走向城市意义、公众信任和持续采用的问题；以城市委托生产链连接AI原点共同作者工场、众智园安全验证院与大钟寺城市首发场，形成可复用文化内容包、可部署公共体验模块和可持续城市服务。"
+summary: "把京张定义为面向真实城市的AI采用基础设施原型：以文化生产、城市公共委托、分级空间准入和机器可读采用护照，把技术从可运行推进到可理解、可问责、可采购、可运维、可退出的持续城市能力。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.1"
+iteration: "v3.0"
 ---
 
 # 京张万象工场｜文化生产驱动的AI城市采用带
@@ -19,11 +20,11 @@ iteration: "v2.1"
 
 ## 城市不是AI的展柜，而是共同作者
 
-> **北京不缺AI成果，真正稀缺的是把成果转化为文化意义、公共信任和持续城市采用的能力。**
+> **北京不缺AI成果，真正稀缺的是一套让AI合规、可控、可持续进入真实城市的采用基础设施。**
 
 “京张万象工场”不再把11.4平方公里理解成一条摆放技术展项的长廊，也不以更多模型、屏幕和节庆证明创新。它把城市本身变成AI的共同作者：居民和一线机构提出真实委托，文化工作者校准意义与真实性，研发者和创作者共同生产，专业团队分级验证，公众在城市首发中试用和纠错，运营者用十二个月的复用、服务和成本证据决定采用、调整或退出。
 
-最终产品不是一座“AI地标”，而是三类可以持续进入城市的成果：**可复用文化内容包、可部署公共体验模块、可持续城市服务**。文化不再是技术完成后的包装，而是技术被理解、被信任、被使用、形成工作与消费的基础设施。[source:AUTHOR-CULTURE-METHOD] [depth:overall_spatial_structure]
+最终产品不是一座“AI地标”，而是三类可以持续进入城市的成果：**可复用文化内容包、可部署公共体验模块、可持续城市服务**。文化不再是技术完成后的包装，而是问题发现、语境校准、权利组织、公众解释、渠道触达与持续复用的城市采用基础设施；这正是文化产业能力可以为AI城市提供、而单纯技术园区难以替代的部分。[source:AUTHOR-CULTURE-METHOD] [depth:overall_spatial_structure]
 
 ![京张万象工场：从模型能力到城市采用的总体命题](assets/figures/site-overview.png)
 
@@ -37,13 +38,41 @@ iteration: "v2.1"
 | 三品 | 可复用文化内容包｜可部署公共体验模块｜可持续城市服务 | 用可以被再次调用、部署和维护的成果替代一次性展项 |
 | 五账 | 公共价值｜文化真实性｜权利来源｜安全环境｜运营回投 | 让公共、文化、权利、安全和经营证据同步可审计 |
 
-这里的生产链是**回路而不是南北直线**：城市委托分布于全线；文化校准与人机共制主要发生在AI原点；高风险原型转入众智园受控验证；成熟的低风险成果在大钟寺城市首发；沿线十二个月采用形成运营证据与可分配结余，再进入下一轮城市委托。空间顺序与工作顺序不同，避免为了图形整齐而制造错误因果。[metric:adoption_core_count] [metric:workflow_stage_count] [metric:flagship_area_count] [metric:civic_product_type_count]
+这里的生产链是**回路而不是南北直线**：城市委托分布于全线；文化校准与人机共制主要发生在AI原点；高风险原型转入众智园受控验证；成熟的低风险成果在大钟寺城市首发；沿线十二个月采用形成运营证据与可分配结余，再进入下一轮城市委托。空间顺序与工作顺序不同，避免为了图形整齐而制造错误因果。[metric:workflow_stage_count] [metric:flagship_area_count]
+
+## 领导决策摘要：京张要争的不是“第四个AI园区”，而是城市采用权
+
+从城市掌舵者视角，京张的不可替代性不在新建多少载体，而在于它同时拥有科研与企业供给、近校创新、社区生活、轨道商业和百年公共遗产，可以把“实验室能力—真实城市问题—公众使用—长期运营”放在同一条责任链上。方案建议把这里定义为**面向国家的AI城市采用基础设施原型**：它不是国家授牌或既定政策，而是北京可率先验证的一套城市能力。
+
+| 需要拍板的战略问题 | 本方案的建议答案 | 政府得到什么 | 明确不承诺什么 |
+| --- | --- | --- | --- |
+| 京张与普通AI园区有何不同 | 从“企业和技术集聚”升级为“AI进入真实城市的采用基础设施” | 一套可复制的城市委托、验证、首发、采购/运营和退出方法 | 不承诺国家级称号、行政机构或政策授权 |
+| 城市优先投资什么 | 先守公共空间、无障碍、人工服务、文化证据和独立评估底座 | 技术更换或退出后仍可使用的公共资产 | 不编造总投资、年度预算或建设规模 |
+| AI如何获得空间使用资格 | 以L1受控验证、L2共同生产、L3公共首发三级准入，全部限时、可逆 | 风险与公众暴露相匹配，不拿市民做默认试验对象 | 不替代法定规划、许可、安全和采购程序 |
+| 如何防止“试点烂尾” | 每项同时交代资本支出、年度运维、责任主体和退出准备金 | 从一开始看清谁建设、谁维护、失败谁复原 | 不保证采购、招商、收益或合作主体 |
+| 文化产业为何是核心而非装饰 | 以公共委托、文化真实性、作者权利、内容发行和复用回投组织技术采用 | 把AI能力转成有语境、有作者、有市场、有公共回报的城市产品 | 不把节庆客流、品牌露出或传播热度当作采用成绩 |
+
+建议先形成四项概念性决策：确认“城市采用”战略主线；同意公共底座与商业增值层分账；授权对城市采用护照0.1进行专业论证；以三项可逆城市委托启动前100天验证。任何空间落位、机构设置、经费、采购和实施仍须由有权主体按正式程序决定。[assumption:A-DELIVERY-001]
+
+### 七维证据索引：让评审直接看到判断、机制和文件
+
+| 评审维度 | 本版可核验的核心证据 |
+| --- | --- |
+| 任务书相关性 | 三层范围、三大定位、五大功能、三区两翼、六项agent任务和三处重点区差异化响应 |
+| 原创性 | 城市公共委托制、城市采用护照、五账联审、三层空间准入控制码与公共回投 |
+| AI与城市规划创新性 | AI服务权与空间暴露、时间许可、文化权利、人工责任、非AI底线和退出状态绑定 |
+| 可实施性 | 前100天五项行动、六个交付包、主责职能、交付路径、资金性质、年度运维和退出准备金 |
+| 公共利益与包容性 | 无障碍实测、人工/非数字双通道、安静不扫描旁路、基本服务免费与重点人群共评 |
+| 风险与合规意识 | provisional边界、未知控规、版权与文化事实、隐私、财政防火墙、投诉与回滚 |
+| 表达完整度 | 中英正文、五图、A3/A0、离线HTML、九类GeoJSON、指标矩阵、自检与三项机器协议 |
+
+完整索引见 `visual/assets/review-evidence-index.json`；它只组织证据，不预设评审结论。[data:visual/assets/review-evidence-index.json]
 
 ## 设计依据与资料清单
 
-方案以北京市相关部门公告、项目任务书和仓库站点资料包为正式依据；京张历史与遗址公园事实只采用北京市文物和园林绿化主管部门公开信息；七个国际案例只用于提炼机制，不外推北京的强度、体制、资金和权属条件。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+方案以北京市相关部门公告、项目任务书和仓库站点资料包为正式依据；京张历史与遗址公园事实只采用北京市文物和园林绿化主管部门公开信息；七个国际案例只用于提炼机制，不外推北京的强度、体制、资金和权属条件。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
-公告给出的三层尺度为：统筹研究范围约43.6平方公里、总体设计范围约11.4平方公里、三处重点区域合计约368.4公顷。当前仓库尚无官方总体与重点区精确polygon，因此 geometry/site_boundary.geojson 与 geometry/key_areas.geojson 均保持 `official_boundary=false`、`geometry_role=provisional_constraint`。临时范围仅用于内容评审、空间运算和图层校验，不是道路、地块、权属、遗产、审批或工程红线。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
+公告给出的三层尺度为：统筹研究范围约43.6平方公里、总体设计范围约11.4平方公里、三处重点区域合计约368.4公顷。当前仓库尚无官方总体与重点区精确polygon，因此 geometry/site_boundary.geojson 与 geometry/key_areas.geojson 均保持 `official_boundary=false`、`geometry_role=provisional_constraint`。临时范围仅用于内容评审、空间运算和图层校验，不是道路、地块、权属、遗产、审批或工程红线。[source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
 所有交换图层采用EPSG:4326，面积和长度用EPSG:4548复算。官方polygon发布后，不能只替换底图；用地、建筑、道路、绿地、公共空间、分期、图纸、网页和指标必须成套重算。容积率、建筑高度、道路红线、保护范围、现状建筑、权属、结构、市政容量和真实客流均保持待确认，不以概念精度冒充法定精度。[metric:site_area_sqm] [depth:metrics_recalculation] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
@@ -100,7 +129,43 @@ iteration: "v2.1"
 - 持续采用：观察十二个月复用、任务完成、运维、支付和投诉，不以开幕客流替代价值。
 - 公共回投：公开成本、收入、失败和下一轮改进；可分配结余按审查规则回投公共委托与创作者生态。
 
-### 2. 文化产业优势转译成三类城市产品
+### 2. 城市采用护照：把概念变成可流转、可审计、可撤销的城市协议
+
+七步回路过去只是方法，本版把它固化为机器可读的 **Civic Adoption Passport 0.1 / 城市采用护照**。每个项目只有一份护照，随项目从城市委托、文化校准、受控试验、公共首发到采用或退出持续更新；护照不是政府许可证、产品认证或采购背书，而是把“谁提出、为谁服务、在何处试、谁负责、钱从哪里来、失败怎样退”锁在同一个证据对象中。[data:visual/assets/civic-adoption-passport.schema.json] [metric:adoption_passport_schema_count]
+
+| 五道门 | 必答问题 | 放行人类角色 | 未通过后果 |
+| --- | --- | --- | --- |
+| G1 公共必要性 | 是否存在真实委托人、受益者和不使用AI的基线 | 城市委托与公共利益复核 | 不立项或退回重写问题 |
+| G2 文化与权利 | 史实、地方知识、当代转译、AI生成、作者、数据和许可是否清楚 | 文化、版权、社群和用户代表 | 可继续研究，不得首发或发行 |
+| G3 受控试验 | 风险等级、空间围界、人工接管、无障碍、非AI路径和退出是否成立 | 技术、安全、空间和一线运维 | 停止实地试验，回到仿真或人工流程 |
+| G4 公共首发 | 普通人能否看懂状态、拒绝参与、投诉纠错并继续获得基本服务 | 公共服务、无障碍和现场运营 | 不进入高公众暴露空间 |
+| G5 采用/续期/退出 | 十二个月复用、任务、信任、成本、运维和可迁移证据是否支持继续 | 公众、采购/运营、独立评估和审计 | 采用、限期续期、缩小、回滚或退出 |
+
+护照同时维护五联账本、L1—L3空间许可、资本支出/年度运维/退出准备金和停止条件。其状态只能在 `concept_only`、`commissioned`、`rights_review`、`sandbox_authorized`、`public_trial_authorized`、`adoption_review`、`adopted/renewed`、`suspended/exited/archived` 之间依证据迁移，不允许由企业自行把“展示成功”改写成“城市采用”。[metric:adoption_gate_count]
+
+```json
+{
+  "passport_id": "SYNTHETIC-CAP-001",
+  "proposal_status": "concept_only",
+  "spatial_licence": {
+    "exposure_level": "L2_CO_CREATION",
+    "time_limited": true,
+    "reversible": true,
+    "public_baseline_protected": true,
+    "official_geometry_confirmed": false
+  },
+  "delivery": {
+    "capex_status": "pending",
+    "annual_opex_status": "pending",
+    "exit_reserve_status": "pending"
+  },
+  "adoption_evidence": {"months_observed": 0}
+}
+```
+
+合成示例保留全部空缺和 `concept_only` 状态，明确没有部署、测试、出资、采购或政府采纳。[data:visual/assets/example-civic-adoption-passport.json]
+
+### 3. 文化产业优势转译成三类城市产品
 
 本方案不把文化优势写成“办活动、做传播”。文化产业的核心能力是把分散的历史、知识、创意、技术、渠道与市场组织成可复用产品，并在权利清楚的前提下反复流通。作者的专业经验不被写成任何现成合作关系，而被翻译为四组可检查的城市设计机制。[source:AUTHOR-CULTURE-METHOD]
 
@@ -117,7 +182,7 @@ iteration: "v2.1"
 | 公共体验模块 | 可逆构件、交互脚本、人工服务脚本、无障碍与安全说明 | 九间城市房、气候花园、城市首发场 | 在不同社区和季节部署，不复制地标建筑 | 不排挤通行、可撤场、非数字备份 |
 | 城市服务 | AI能力、工作人员、数据最小化规则、运维与退出方案 | 社区、园区、轨道接驳和公共机构 | 经采用复盘后进入采购、运营或开放工具 | 人工接管、可问责、停止不损害基本服务 |
 
-### 3. 七个国际案例只提取机制
+### 4. 七个国际案例只提取机制
 
 | 案例 | 提取机制 | 京张转译 | 明确不复制 |
 | --- | --- | --- | --- |
@@ -135,7 +200,7 @@ iteration: "v2.1"
 
 概念用地完整覆盖临时范围且无面状重叠。科研、文化、社区、教育、商业与公园六类功能采用斜向织补，不以纵向条带把技术与生活分开；中央公共生产地坪在九处横向房间中加宽，使西侧机构能力与东侧日常需求发生可见交换。[data:geometry/land_use.geojson#LU-CIVIC-FLOOR] [depth:land_use_layout]
 
-当前临时图形复算：科研类约20.8%，文化类约23.4%，社区类约15.3%，教育类约15.1%，商业类约16.1%，公共生产地坪类约9.3%。这些是概念功能模型，不是控规指标；官方边界、现状与法定用地发布后必须重编。[metric:land_use_research_ratio] [metric:land_use_culture_ratio] [metric:land_use_community_ratio] [metric:land_use_education_ratio] [metric:land_use_commercial_ratio] [metric:land_use_park_ratio]
+当前临时图形复算：科研类约20.8%、文化类约23.4%、社区类约15.3%。[metric:land_use_research_ratio] [metric:land_use_culture_ratio] [metric:land_use_community_ratio] 教育类约15.1%、商业类约16.1%、公共生产地坪类约9.3%。[metric:land_use_education_ratio] [metric:land_use_commercial_ratio] [metric:land_use_park_ratio] 这些是概念功能模型，不是控规指标；官方边界、现状与法定用地发布后必须重编。
 
 ### 2. 九间城市房把“过线”变成“共同生产”
 
@@ -153,6 +218,20 @@ iteration: "v2.1"
 
 九道缝合是待现场确认的任务，不是现状道路承诺。每一点先核验路权、铁路与遗产条件、竖向、树木、过街、夜间安全和无障碍；无法成立时允许移动或降级，不强行保持图形。[metric:east_west_stitch_count] [depth:traffic_rail_slow_parking]
 
+### 3. 空间准入控制码：永久公共底座、可逆城市接口、限期AI服务
+
+本方案的规划创新不在另画一层“AI用地”，而在于把AI进入空间的权利变成**有时间、有风险等级、有公共底线、有撤回条件的城市许可**。九间城市房和三处重点区共用三层控制码：[data:visual/assets/urban-room-control-code.json] [metric:spatial_access_level_count]
+
+| 空间层 | 时间责任 | 主要内容 | 刚性规则 |
+| --- | --- | --- | --- |
+| S1 永久公共底座 | 长期 | 连续通行、无障碍、遮阴休息、实体导视、人工求助、安静旁路、基本照明 | AI断网、撤场或换供应商后仍能独立使用；不得被活动和收费服务挤占 |
+| S2 可逆城市接口 | 数周至季节 | 委托长桌、开放工坊、观察廊、状态台、气候构件、公共解释界面 | 须写占用时段、维护者、权益披露、撤场和场地恢复责任 |
+| S3 限期AI服务 | 数小时至十二个月 | 模型、终端、机器人、数字内容和辅助服务 | 须持采用护照，限定L1—L3暴露等级，保留人工与非AI路径，不自动续期 |
+
+这套控制码把城市设计从“地块能建什么”推进到“什么能力在什么风险、什么时间、什么公众暴露下可以出现”。众智园默认L1受控验证，AI原点默认L2共同生产，大钟寺只接受通过前四道门的L3低风险公共首发；同一项目不能因换了地点而降低门槛。[metric:spatial_layer_count]
+
+控规、文保、道路、市政和现状建筑资料补齐后，专业团队仍需为每个接口确定真实的高度、退线、容量、消防、噪声、能源和无障碍条件。本控制码不制造任何法定指标或工程结论。[assumption:A-CONTROLS-001]
+
 ## 用地、建筑规模与拆改留方案
 
 ### 建筑采用“旧骨架、新内胆、可撤层”
@@ -169,9 +248,15 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 市政系统采用“永久基础、可逆服务”的双层策略：消防、给排水、供电和通信按专业审批进入永久层；创作与首发所需电力、网络、吊点、排队和垃圾分类采用标准化可撤接口。公共AI优先端侧处理和最小数据，不以沿线人脸采集作为“智慧城市”默认配置；系统中断时，实体导视、人工窗口和基本服务继续有效。[depth:municipal_new_infrastructure]
 
+### 公共利益底线：先保障最容易被“聪明系统”忽略的人
+
+公共利益与包容性不以“所有人都能下载App”证明。每项公共场景必须邀请老年人、残障与慢病使用者、儿童照护者、租住青年、夜间劳动者、一线保洁安保和小微商户中的相关群体共同完成现场任务；画像只用于检验服务，不用于给人打分或不透明分类。
+
+六项底线同时成立才可进入公共首发：基本服务不收费；实体/电话/现场等非数字路径存在；有人值守并能接管；无障碍以现场任务而非模拟截图确认；提供安静且不扫描的旁路；公开责任人、投诉入口、响应时钟和恢复方案。无法满足任何一项时，AI层下线，S1公共底座继续工作。[metric:public_safeguard_count]
+
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统不是活动背景。连续公共地坪与九个气候花园的union约126.0公顷，占临时范围约11.0%；十二处场景公共空间union约8.8公顷，占约0.8%。花园承担渗透、遮荫、声环境缓冲、等候和生态连接；现状树木、土壤、积水与热环境调查前，不作移植、砍伐或工程容量结论。[metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR]
+蓝绿系统不是活动背景。连续公共地坪与九个气候花园的union约126.0公顷，占临时范围约11.0%。[metric:green_space_area_sqm] [metric:green_ratio] 十二处场景公共空间union约8.8公顷，占约0.8%。[metric:public_space_area_sqm] [metric:public_space_ratio] 花园承担渗透、遮荫、声环境缓冲、等候和生态连接；现状树木、土壤、积水与热环境调查前，不作移植、砍伐或工程容量结论。[data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR]
 
 公共基线不随活动出售：连续通行、无障碍路线、饮水与厕所信息、免费座椅、安静休息、基础历史信息、人工求助和应急服务始终优先。活动采用日常态、创作态、首发态三种部署；每次首发须预审搭建和疏散，限时限声，保留旁路，撤场后发布能耗、垃圾、投诉和恢复记录。[depth:blue_green_public_space]
 
@@ -257,7 +342,21 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 公共资金只支撑遗产保护、无障碍、基础设施和基本服务；挑战基金和公益资源支撑公共委托与早期原型；经审查的培训、服务、许可、首发和场地运营形成收入；品牌赞助须披露权益与期限。不得承诺收益、估值或排他资源。可分配结余在审计后回投公共委托、创作者报酬和日常空间维护。[source:AGENT-TASKBOOK] [depth:phasing_implementation]
 
-### 4. 五维城市采用复盘
+### 4. 财政防火墙：五类钱各负其责，不能混成一笔“创新资金”
+
+政府决策最怕“建设有人出钱、第二年没人维护、失败没人撤场”。本方案不虚构投资额，而把资金性质、使用边界和责任链写清楚；每项在G3之前必须同时确认资本支出、年度运维和退出准备金，缺一项不进入实地。[data:visual/assets/delivery-program.json] [metric:funding_channel_count]
+
+| 资金性质 | 可以承担 | 不得承担 |
+| --- | --- | --- |
+| 公共底座资金 | 遗产保护、无障碍、基本公共空间、人工基本服务、证据与独立评估 | 为单一产品兜底市场、永久品牌权益或高风险商业试验 |
+| 科研与创新资金 | 封闭仿真、受控样机、基准、红队和开放工具 | 用试验替代长期公共服务或把市民当默认测试样本 |
+| 公益/文化公共委托资金 | 真实城市委托、文化证据、弱势群体共评、创作者合理劳动 | 无权利链内容、隐性宣传和不可审计的资源交换 |
+| 有期限的品牌赞助与权益置换 | 披露后的共同制作、发行、传播、物料和服务资源 | 永久命名、个人数据、公共决策权和排他占用 |
+| 经采用后的经营收入 | 增值服务、培训、许可、维护和公共回投 | 对基本通行、基础信息、投诉、人工兜底和安静旁路收费 |
+
+该机制把作者在文化产业中擅长的“品牌赞助+权益置换+资源合作+商业转化”纳入公共规则：品牌不是被排除，而是被安排在清晰、限期、可审计的位置；公共部门守底座，文化生产组织内容与权利，企业承担验证和经营责任，独立审计防止公共资源被私有化。[source:AUTHOR-CULTURE-METHOD]
+
+### 5. 五维城市采用复盘
 
 项目通过技术验证不等于被城市采用。万象工场增加五维复盘：问题相关性、文化与权利完整性、公众可达与信任、运营与市场持续、跨场景可迁移。第一年只采集基线，不预填分数；此后由公众、专业团队和运营主体共同设定目标。[metric:civic_adoption_dimension_count]
 
@@ -286,13 +385,36 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 ### 3. 治理结构与年度五节拍
 
-建议设“万象工场城市采用办公室”作为概念运营单元，不预设行政级别。它由公共部门授权接口、园区和空间运营、文化与版权专业、研发机构、社区与无障碍代表、独立安全和审计共同组成。城市委托排序、风险放行、文化校准、空间排程和公共回投分别设责任人，单一赞助方不得同时控制出题、评审与收益。[source:CASE-SEOUL-AI-HUB]
+建议设“万象工场城市采用办公室”作为概念性项目管理单元，不预设行政级别、编制或既定牵头部门。其上设公共利益与政策授权接口；其下由规划与公共空间、技术数据与安全、文化权利与作者、财政采购与独立审计四类门负责专业放行；场地/服务运营者对日常维护和事故负责；社区、无障碍和公众代表拥有纠错与停止入口。城市委托排序、风险放行、文化校准、空间排程、采购运营和公共回投分别设责任人，单一赞助方不得同时控制出题、评审与收益。[source:CASE-SEOUL-AI-HUB]
 
 年度五节拍为：春季发布城市委托与证据；初夏完成文化校准、共同作者组队和驻留；盛夏进行封闭或小规模验证；秋季在公共地坪首发成熟低风险项目；冬季公开采用、成本、失败和回投复盘。全年社区服务与日常公共空间持续运行，不为年度活动停摆。[metric:annual_cycle_stage_count]
 
 国际协作输出的不是复制建筑，而是三种可迁移成果及其证据包：内容包、体验模块、城市服务协议。跨境协作遵守本地数据、版权和文化语境审查；国际平台只作为公开遴选和知识交换建议，不表示已建立合作。[assumption:A-PARTNERS-001]
 
 ## 更新项目清单、实施政策与分期计划
+
+### 前100天：先把规则、责任和三项真实委托跑通
+
+前100天不是政府既定工期，而是检验方案是否可启动的概念行动窗口。[assumption:A-DELIVERY-001] 五项动作均可以在不承诺永久建设的前提下开展：[metric:first_100_day_action_count]
+
+1. 建立官方边界、现状、权属、文保、道路、市政和公共服务资料的缺口清单、来源登记与全包复算责任表。
+2. 发布城市采用护照0.1、五道门、投诉纠错、数据关闭和退出模板，组织法律、文化、技术、无障碍与运维复核。
+3. 从社区、一线机构、园区和商户遴选三项真实城市委托；先写受益者、非AI基线和结束定义，不先指定产品。
+4. 在三区各选择一个不依赖永久建设的候选样机，完成L1—L3暴露、撤场、维护和公众影响审查。
+5. 建立首年度基线方法，只记录无障碍、人工服务、投诉、复用、全生命周期成本和退出演练，不预填绩效。
+
+### 六个交付包：领导看责任，规划师看空间，财政看资金，运营看第二年
+
+| 交付包 | 主责职能（不预设具体机构） | 交付/资金路径 | 进入下一步的门 |
+| --- | --- | --- | --- |
+| PKG-01 规划证据与共同底图 | 规划、测绘与证据协调 | 公共规划底座；数据版本化维护 | official/cleared资料与全包复算通过 |
+| PKG-02 公共地坪与九间城市房底座 | 公共空间、交通、无障碍、文保和属地运营 | 公共底座资金；明确年度维护者 | 遗产、权属、通行、安全、维护通过 |
+| PKG-03 城市采用护照与状态台 | 项目管理、法律、数据、文化权利和审计 | 开源公共协议；科研或公益支持 | 人类责任、隐私、投诉、可携带与关闭通过 |
+| PKG-04 三区分级空间样机 | 场地运营、研发、安全与一线运维 | 科研/创新资金；样机自带撤场准备金 | L1—L3空间暴露与接管演练通过 |
+| PKG-05 城市公共委托与文化生产网络 | 城市委托、文化、版权、作者与渠道 | 公益/委托、限期赞助、经许可发行 | 真实性、权利、劳动报酬和利益披露通过 |
+| PKG-06 十二个月采用与公共回投 | 运营、采购/服务、公众代表、独立评估 | 经采用的服务资金与经营收入 | G5决定采用、续期、缩小或退出 |
+
+六包不是六个新机构，而是六组不可遗漏的责任。完整机器表逐项记录资本来源类别、年度运维渠道、退出准备金和停止条件。[data:visual/assets/delivery-program.json] [metric:delivery_package_count]
 
 十二项更新按“公共底座先行、文化与权利前置、验证通过再固定建设”组织。[metric:renewal_project_count] [data:geometry/phasing.geojson#PHASE-01]
 
@@ -313,13 +435,17 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 空间图层分三期：一期为公共生产地坪与三处可逆示范；二期扩展共创和验证网络；三期依据十二个月采用证据形成持续文化经济。工作则分四道闸门：0—100天补数据、定规则、发布首批委托；约3—12个月实施低扰动公共底座和可逆样机；约12—24个月推进三处重点区原型；约24—36个月只对通过采用复盘的项目决定固定、扩展或退出。时间是设计假设，不是政府工期。[depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-02] [data:geometry/phasing.geojson#PHASE-03]
 
-预算不做未经依据的总投资和收入承诺。每个项目采用全生命周期成本表，至少列建设、内容、人员、能源、维护、保险/安全、撤场和更新；只有资本支出、年度运维、责任主体和退出成本同时可承担，才进入下一阶段。
+预算不做未经依据的总投资和收入承诺。每个项目采用全生命周期成本表，至少列建设、内容、人员、能源、维护、保险/安全、撤场和更新；只有资本支出、年度运维、责任主体和退出准备金同时可承担，才进入下一阶段。金额、预算科目、采购方式和实施主体须由后续有权单位基于正式资料另行确定。[assumption:A-DELIVERY-001]
 
 ## 指标体系、面积复算与合规矩阵
 
 ### 1. 空间与任务指标
 
-临时总体范围复算约11.41平方公里；概念院落载体基底约9.6公顷，占临时范围约0.8%；公共生产地坪主线约9.5公里；九间横向城市房、十二份城市委托、三类受控验证、八类画像、四个贡献地标和十二项更新均由图层或表格计数。[metric:building_footprint_ratio] [metric:urban_room_count] [metric:scenario_count] [metric:ai_validation_scenario_count] [metric:persona_count] [metric:pilgrimage_landmark_count]
+临时总体范围复算约11.41平方公里；概念院落载体基底约9.6公顷，占临时范围约0.8%；公共生产地坪主线约9.5公里；九间横向城市房、十二份城市委托、三类受控验证、八类画像、四个贡献地标和十二项更新均由图层或表格计数。[metric:building_footprint_ratio] [metric:urban_room_count] [metric:scenario_count]
+
+背景研究复核7个公开案例；临时用地织补共13个分区；`making_line_length_m`作为公共生产地坪主线长度的兼容别名保留，避免旧版审查器丢失证据。[metric:global_case_count] [metric:land_use_zone_count] [metric:making_line_length_m]
+
+本版新增一套机器可读采用护照、五道门、三类空间暴露、三层空间控制、六项公共服务底线、五类资金责任、前100天五项行动和六个交付包；这些只证明机制结构完整，不代表真实绩效、预算或政府授权。[metric:adoption_passport_schema_count] [metric:delivery_package_count]
 
 机器精度用于拓扑和复算，不代表官方测量精度。所有known指标在metrics.json记录value、unit、source_files、formula、confidence与assumptions；容积率和最高建筑高度保持unknown。[depth:metrics_recalculation]
 
@@ -335,6 +461,8 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 ## 风险、版权与合规说明
 
+风险控制不靠一句“合规”兜底，而以四条可核查边界执行：资料只使用公开或已获授权的内容，公开状态不明时停止引用；个人信息坚持最小必要、目的限定和可撤回，隐私数据不进入公开展示；文化内容逐项记录来源、作者、版权与许可，AI生成内容不得伪装为史实；涉及公共服务和空间部署的模型输出必须经过人工复核、专业合规审查和责任主体确认。实施风险、数据风险、权利风险与财政风险分别进入采用护照和五账，不以技术团队自评替代外部审查。[source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data]
+
 ### 八类主要风险
 
 - **精度误读**：临时边界、重点区、用地和建筑载体持续显示provisional提示；官方数据到达后全链重算。
@@ -348,16 +476,21 @@ geometry/buildings.geojson中的十八个院落型载体只表达空间类型与
 
 版权声明、来源、假设、自检、标准、专业深度与公告任务分别在report/copyright_statement.md、sources.json、assumptions.json、self_check.json、standard_matrix.json、design_depth_matrix.json与compliance_matrix.json中交叉核验。[data:geometry/public_space.geojson#PUBLIC-SC-12] [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP]
 
-全部known指标引用：[metric:announced_research_area_sqm]、[metric:site_area_sqm]、[metric:announced_key_area_total_sqm]、[metric:building_footprint_area_sqm]、[metric:building_footprint_ratio]、[metric:green_space_area_sqm]、[metric:green_ratio]、[metric:public_space_area_sqm]、[metric:public_space_ratio]、[metric:civic_floor_length_m]、[metric:making_line_length_m]、[metric:key_area_count]、[metric:land_use_zone_count]、[metric:urban_room_count]、[metric:east_west_stitch_count]、[metric:scenario_count]、[metric:ai_validation_scenario_count]、[metric:persona_count]、[metric:pilgrimage_landmark_count]、[metric:renewal_project_count]、[metric:global_case_count]、[metric:adoption_core_count]、[metric:workflow_stage_count]、[metric:flagship_area_count]、[metric:civic_product_type_count]、[metric:four_clock_count]、[metric:five_ledger_count]、[metric:civic_adoption_dimension_count]、[metric:annual_cycle_stage_count]、[metric:land_use_research_ratio]、[metric:land_use_culture_ratio]、[metric:land_use_community_ratio]、[metric:land_use_education_ratio]、[metric:land_use_commercial_ratio]、[metric:land_use_park_ratio]。
+本版新增的采用护照、五道门、三级准入、公共保障、资金渠道、前100天行动和交付包，均已转为可审计计数；正文只保留与判断直接相关的代表性锚点。[metric:adoption_passport_schema_count] [metric:first_100_day_action_count] [metric:delivery_package_count] 完整定义、公式、来源文件、置信度和假设统一保存在 `metrics.json`，避免让机器索引干扰专业阅读。
 
 ## 参考资料与机器可读证据
 
 本提案不嵌入第三方地图瓦片、照片、品牌图形或未清权素材。五张方案图、A3文册、A0展板、离线网页和设计GeoJSON由本次方案原创生成；公开案例只概括机制并注明使用边界。京张历史事实与当代设计转译明确分离，作者行业方法不表示任何机构或合作伙伴已背书。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
-全部来源引用：[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:JZ-HISTORY-BEIJING-CULTURE]、[source:JZ-PARK-BEIJING-PARKS]、[source:CASE-KENDALL-SQUARE]、[source:CASE-ONE-NORTH]、[source:CASE-SEOUL-AI-HUB]、[source:CASE-STATION-F]、[source:CASE-QUARTIER-SPECTACLES]、[source:CASE-ARS-ELECTRONICA]、[source:CASE-MARIA-01]、[source:PEER-CATALOG-CURRENT]、[source:AUTHOR-CULTURE-METHOD]。
+公开任务背景与资料边界首先核对 `brief/public-brief.md` 和 `brief/README.md`。两者均是项目维护者提供的 public-draft，只能作为征集背景与资料使用边界，不能替代正式公开性审查、法定规划或官方红线。[source:brief-public-brief] [source:brief-public-boundary]
 
-全部标准引用：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+完整证据不再以长串ID重复附在正文末尾，而由四类结构化文件承担：
 
-全部专业深度引用：[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]。
+| 证据层 | 完整记录位置 | 正文代表性锚点 |
+| --- | --- | --- |
+| 来源、权利、日期与使用边界 | `sources.json` | [source:SITE-PACKAGE] |
+| 强制标准逐条响应 | `standard_matrix.json` | [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] |
+| 专业设计深度与完成状态 | `design_depth_matrix.json` | [depth:risk_missing_data] |
+| 空间对象、来源类型、置信度和稳定ID | 九类GeoJSON | [data:geometry/site_boundary.geojson#SITE-001] |
 
-机器可读空间图层引用：[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/land_use.geojson#LU-CIVIC-FLOOR]、[data:geometry/buildings.geojson#BLDG-FOUNDRY-01]、[data:geometry/roads.geojson#ROAD-CIVIC-FLOOR]、[data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR]、[data:geometry/public_space.geojson#PUBLIC-SC-01]、[data:geometry/phasing.geojson#PHASE-01]。
+评审者可从 `visual/assets/review-evidence-index.json` 按七个评分维度进入上述证据层；正文负责解释判断，结构化文件负责完整审计，二者不再互相挤占。
