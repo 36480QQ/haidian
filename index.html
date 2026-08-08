@@ -420,34 +420,49 @@ html[lang="en"] .hero-title-break{line-height:1.08;padding-bottom:.12em;margin-b
 .proposal-more:hover{color:var(--accent);border-color:var(--accent)}
 .proposal-track{
   display:grid;grid-auto-flow:column;grid-auto-columns:minmax(330px,390px);
-  gap:0;overflow-x:auto;scroll-snap-type:x mandatory;
-  border:1px solid var(--line);background:#06080cad;
+  gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 14px;
   scrollbar-width:thin;scrollbar-color:#2a2f37 transparent;
 }
 .proposal-card{
   display:flex;flex-direction:column;min-width:0;scroll-snap-align:start;
-  border-right:1px solid var(--line);transition:background .25s;
+  border:1px solid var(--line);background:#06080cad;box-shadow:0 14px 44px #00000024;
+  transition:background .25s,border-color .25s,transform .25s;
 }
-.proposal-card:last-child{border-right:0}
-.proposal-card:hover{background:#0a0d13}
+.proposal-card:hover{background:#0a0d13;border-color:#ffffff36;transform:translateY(-2px)}
 .proposal-thumb{
-  position:relative;aspect-ratio:16/9.4;overflow:hidden;
-  border-bottom:1px solid var(--line);background:#020304;
-}
-.proposal-thumb iframe{
-  width:200%;height:200%;transform:scale(.5);transform-origin:0 0;
-  border:0;pointer-events:none;background:#fff;
+  position:relative;aspect-ratio:16/10;overflow:hidden;
+  border-bottom:1px solid var(--line);background:#06101b;
 }
 .proposal-thumb::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(#0203051a,transparent 32%,#02030533);
   box-shadow:inset 0 0 0 1px #ffffff14;
 }
-.proposal-thumb iframe{filter:saturate(.88)}
-.proposal-placeholder{
-  display:grid;place-items:center;height:100%;
-  color:var(--dim);font:10px var(--mono);letter-spacing:.14em;
+.cover-art{position:absolute;inset:0;background:var(--cover-bg)}
+.cover-grid{
+  position:absolute;inset:-8%;display:grid;grid-template-columns:repeat(10,1fr);grid-template-rows:repeat(6,1fr);
+  gap:4px;transform:rotate(var(--cover-angle)) scale(1.12);transform-origin:center
 }
+.cover-tile{
+  min-width:0;background:var(--tile-color);opacity:var(--tile-opacity);
+  transform:rotate(var(--tile-rotate)) scale(var(--tile-scale)) scaleX(var(--tile-flip));
+  box-shadow:inset 0 0 0 1px #ffffff10;
+  animation:cover-breathe var(--tile-duration) ease-in-out var(--tile-delay) infinite alternate
+}
+.cover-signal{
+  position:absolute;z-index:1;left:-8%;top:var(--signal-top);width:116%;height:8px;
+  background:linear-gradient(90deg,transparent,var(--cover-accent) 18%,#fff 50%,var(--cover-accent) 82%,transparent);
+  box-shadow:0 0 16px var(--cover-accent),0 0 34px color-mix(in srgb,var(--cover-accent) 52%,transparent);
+  transform:rotate(var(--signal-angle));opacity:.72
+}
+.cover-copy{position:absolute;z-index:3;left:18px;right:18px;bottom:17px;text-shadow:0 2px 18px #000,0 1px 3px #000}
+.cover-kicker{color:#d9e7f4;font:8px var(--mono);letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.cover-title{
+  max-width:94%;margin-top:7px;color:#fff;font-size:clamp(17px,1.65vw,23px);font-weight:560;
+  line-height:1.23;letter-spacing:-.035em;display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden
+}
+.cover-mark{position:absolute;z-index:1;right:15px;bottom:12px;color:#ffffff12;font:300 64px/.8 var(--mono);letter-spacing:-.08em}
 .proposal-kind{
   position:absolute;top:12px;left:12px;padding:5px 9px;
   background:#040609db;border:1px solid rgba(var(--tech-rgb),.5);
@@ -477,10 +492,16 @@ html[lang="en"] .hero-title-break{line-height:1.08;padding-bottom:.12em;margin-b
 }
 .proposal-author{display:flex;align-items:center;gap:8px;color:#9299a4;font-size:11px}
 .proposal-avatar{
-  display:grid;place-items:center;width:22px;height:22px;
-  border:1px solid rgba(var(--accent-rgb),.4);color:var(--accent);font:10px var(--mono);
+  position:relative;display:grid;place-items:center;width:26px;height:26px;overflow:hidden;border-radius:50%;
+  border:1px solid rgba(var(--accent-rgb),.4);background:#0b1118;color:var(--accent);font:10px var(--mono);
 }
+.proposal-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .proposal-date{color:var(--dim);font:9px var(--mono)}
+
+@keyframes cover-breathe{
+  from{filter:brightness(.78) saturate(.88)}
+  to{filter:brightness(1.22) saturate(1.14)}
+}
 
 /* ---- steps ---- */
 .steps{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
@@ -1081,6 +1102,7 @@ footer{border-top:1px solid var(--line);background:#040608}
 </footer>
 
 <script src="submissions-data.js"></script>
+<script src="proposal-cover.js"></script>
 <script>
 // ── City Grid Canvas ──────────────────────────────────────────
 ;(function(){
@@ -1389,16 +1411,16 @@ const STATUS_META = {
     enDesc: 'Eligible for formal professional scoring'
   },
   intake_provisional: {
-    zh: '临时 intake',
-    en: 'Provisional intake',
-    zhDesc: '可展示讨论，暂不可正式评分',
-    enDesc: 'Display and discussion only'
+    zh: '需修复',
+    en: 'Needs repair',
+    zhDesc: '历史临时状态，已归入需修复',
+    enDesc: 'Legacy provisional status, grouped under repair'
   },
   needs_revision: {
-    zh: '需修改',
-    en: 'Needs revision',
-    zhDesc: '需修复后再进入 intake',
-    enDesc: 'Fix required before intake'
+    zh: '需修复',
+    en: 'Needs repair',
+    zhDesc: '提交包不完整或存在阻断级自检',
+    enDesc: 'Incomplete package or blocking self-check'
   },
   blocked_fixture: {
     zh: '阻断样例',
@@ -1456,29 +1478,28 @@ function renderHomeSubmissions() {
     track.innerHTML = `<div class="proposal-card"><div class="proposal-body"><div class="proposal-title">${t['gallery.empty']}</div></div></div>`;
     return;
   }
-  track.innerHTML = items.map(item => {
+  track.innerHTML = items.map((item, index) => {
     const title = escapeHTML(lang === 'zh' ? item.title : (item.titleEn || item.title));
     const summary = escapeHTML(lang === 'zh' ? item.summary : (item.summaryEn || item.summary));
     const state = statusMeta(item);
     const href = escapeHTML(item.proposalUrl || item.visualUrl || item.sourceUrl || '#');
-    const thumbnail = item.thumbnailUrl || item.visualUrl;
     const tags = (item.tags || []).slice(0, 3).map(tag => `<span class="proposal-tag">${escapeHTML(tag)}</span>`).join('');
     const author = escapeHTML(item.author || '');
     const initial = escapeHTML((item.authorInitial || item.author?.[0] || 'A').toUpperCase());
+    const avatar = item.avatarUrl ? `<img src="${escapeHTML(item.avatarUrl)}" alt="" loading="lazy" decoding="async">` : '';
     return `<a class="proposal-card fade in" href="${href}" target="_blank" rel="noopener">
       <div class="proposal-thumb">
-        ${thumbnail ? `<iframe src="${escapeHTML(thumbnail)}" title="${title}" loading="lazy" tabindex="-1"></iframe>` : `<div class="proposal-placeholder">${t['gallery.noPreview']}</div>`}
+        ${renderCover(item,index,title)}
         <span class="proposal-kind">${item.type === 'ai' ? t['gallery.kind.ai'] : 'Human'}</span>
         <span class="proposal-status status-${escapeHTML(state.key)}">${escapeHTML(state.label)}</span>
       </div>
       <div class="proposal-body">
         <div class="proposal-tags">${tags}</div>
-        <div class="proposal-title">${title}</div>
         <div class="proposal-summary">${summary}</div>
         <div class="proposal-readiness">${escapeHTML(state.desc)}</div>
         ${item.selectionReason ? `<div class="proposal-readiness">${escapeHTML(lang === 'zh' ? item.selectionReason : (item.selectionReasonEn || item.selectionReason))}</div>` : ''}
         <div class="proposal-meta">
-          <div class="proposal-author"><div class="proposal-avatar">${initial}</div><span>@${author}</span></div>
+          <div class="proposal-author"><div class="proposal-avatar"><span>${initial}</span>${avatar}</div><span>@${author}</span></div>
           <span class="proposal-date">${escapeHTML(item.date || '')}</span>
         </div>
       </div>

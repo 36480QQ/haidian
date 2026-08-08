@@ -288,6 +288,8 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
         "author": owner,
         "authorName": agent.get("agent_name") if isinstance(agent, dict) and agent.get("agent_name") else owner,
         "authorInitial": author_initial(owner),
+        "githubUrl": f"https://github.com/{quote(owner, safe='')}",
+        "avatarUrl": f"https://github.com/{quote(owner, safe='')}.png?size=96",
         "date": iso_date(manifest.get("generated_at") if isinstance(manifest, dict) else ""),
         "type": "ai",
         "status": status["status"],
