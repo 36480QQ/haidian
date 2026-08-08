@@ -28,3 +28,9 @@ reviewable deliverables and bilingual review surface.
 - Classified “藏风聚气 / 风水” strictly as cultural landscape narrative, not a health, air-quality, hydrological or engineering causal claim.
 - Translated that narrative into six auditable but currently `unknown` baselines for pedestrian wind comfort, pollutant stagnation, mean radiant temperature, continuous shade, blue-green accessible-route overlap and water-risk exceedance routing.
 - Added three peer-reviewed method references with DOI and explicit non-transfer limits; no published case result is represented as Jing-Zhang CFD, measurement or health evidence.
+
+## v1.9 / v2.0 evidence consolidation - 2026-08-08
+
+- Added six officially sourced public AI ecosystem cases and a policy–enterprise crosswalk that binds each mechanism to a local scenario, acceptance evidence and a do-not-copy boundary.
+- Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
+- Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.

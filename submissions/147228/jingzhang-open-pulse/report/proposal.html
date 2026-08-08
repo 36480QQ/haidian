@@ -228,7 +228,10 @@ code {
 <p>区域协同不写成未经确认的招商名单，而是写成八要素能力回路：**土地、空间、产业、资本、人才、算力、数据、场景**。海淀高校/社区负责提出问题和人才回流，怀柔科学城对应上游科研，未来科学城对应工程与低碳验证，北京经开区对应规模化转化，京津冀网络负责比较与扩散，京张带只承担公开、可撤回、可审计的城市验证界面。全部关系标为 <code>conceptual_suggestion</code>，不声称合作、资金、供地或政府承诺。</p>
 <figure class="proposal-figure"><img src="../assets/figures/regional-ecosystem.png" alt="区域协同生态回路"><figcaption>区域协同生态回路</figcaption></figure>
 <p>机器可读的边界、输入、输出、责任和回流路径见 <code>visual/assets/regional-ecosystem.json</code>；图中“originate—engineer—book—test—publish evidence—scale or retire”是运营建议，不是已签署的组织架构。</p>
-<p>为避免把“国际案例”写成未经清权的城市故事，新增 <code>visual/assets/case-mechanism-matrix.json</code> 采用“机制模式比较”而不是虚构案例背书。六种模式分别是站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法；每行都写明可借鉴机制、不可照搬事项、京张测试接口和正式引用前必须补齐的证据。后续专业团队可在完成来源核验后替换为有链接、有许可、有绩效边界的真实案例。</p>
+<p>为补齐 agent.2 要求的 5—8 个 AI 生态案例，新增 <code>visual/assets/case-mechanism-matrix.json</code>，把六个官方公开案例与六种可迁移机制分开记录。案例只回答“它公开展示了什么机制”，不把外部城市的成绩、法律制度或合作关系移植到海淀：</p>
+<p>| 案例 | 已核验机制 | 京张转译接口 | 不照搬边界 | | --- | --- | --- | --- | | Helsinki AI Register | 城市 AI 系统登记、详情页与反馈入口 | 为每个公共空间试点设置目的、数据边界、责任人、状态板和投诉路由 | 登记表不能替代无障碍、安全、采购和居民同意审查 <span class="evidence evidence-source">[source:CASE-HELSINKI-AI-REGISTER]</span> | | Amsterdam Algorithm Register | 公开说明城市算法用于什么服务，并形成 Civic AI Lab 语境 | 测试前发布 plain-language record，连接审查、停止和补救路径 | 不把外部登记机制当作中国法律合规，也不越过保密审查 <span class="evidence evidence-source">[source:CASE-AMSTERDAM-ALGORITHM-REGISTER]</span> | | Singapore AI Verify | 标准化 AI 测试、开源协作与 assurance sandbox | 众智园设置预约、人工主导的 assurance window，附 model card、测试记录和回滚 | 工具包不是认证、采购批准或无同意测试许可 <span class="evidence evidence-source">[source:CASE-SINGAPORE-AI-VERIFY]</span> | | Decidim Barcelona | 可追溯的线上参与与线下参与、开放协作软件 | 贡献墙与在线台账同时提供纸面、窗口和多语种参与，公开“哪些意见改变了什么” | 数字参与不能替代无设备、无账号或需要线下支持的人 <span class="evidence evidence-source">[source:CASE-DECIDIM-BARCELONA]</span> | | UK ATRS | 以标准化公开记录说明算法为何使用、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 的 preflight 记录 | 这是英国公共部门标准，不是北京地方强制要求 <span class="evidence evidence-source">[source:CASE-UK-ATRS]</span> | | Seoul AI Foundation | 以城市级机构串联研究、公共服务、人才和全球协作 | 以责任明确的小型接口连接高校策源、公共验证、人才服务和国际交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 <span class="evidence evidence-source">[source:CASE-SEOUL-AI-FOUNDATION]</span> |</p>
+<p>这六个案例都标为 <code>official_public_case</code> 或 <code>official_public_secondary_case</code>，来源、访问日期和用途边界在 <code>sources.json</code> 登记；它们是机制比较，不是本地现状证据、工程可行性证明或竞赛排名。六种模式（站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络和文化作为方法）仍保留在同一 JSON 的 <code>rows</code> 中，供专业团队把案例机制映射到三处重点区的节点计划。</p>
+<p>政策工具与企业发展接口进一步写入 <code>visual/assets/case-policy-enterprise-crosswalk.json</code>：每个案例都绑定一个政策工具、一个企业发展问题、一个本地场景、可回读的验收证据和不照搬边界。它把“看过案例”推进到“企业如何进入测试、采购、服务和复盘链条”，但不把设计建议写成招商、资金或政府承诺。</p>
 <h3>2. 十四条场景—空间—运营矩阵</h3>
 <p>新增的 <code>visual/assets/scenario-operation-matrix.json</code> 将原有十张场景卡扩展为 14 行，并为每行补齐空间载体、触发器、最小数据、RACI、SLA、相对成本带、留存期限、非 AI 等价服务、停止条件、成功指标和阶段。场景包括慢行断点诊断、低速配送机器人、自主慢行辅助、模型安全红队、开源发布厅、京张文化导视、AI 医疗导航、企业服务柜台、数据要素会客厅、智能原生零售街、公共安全复盘、全球 AI 周路线、雨洪树池维护和夜间低照度安静链。</p>
 <p>每个场景都保留五道公共性门槛：不以数字设备作为服务前提；人工复核不可移除；无障碍主链不断；状态、投诉和责任人可被公众看到；停止与回滚已经演练。矩阵中的 <code>low/medium/high</code> 是相对规划类别，不是预算或采购估算；SLA 是待运营方确认的设计门槛，不是法定服务标准。</p>
@@ -238,8 +241,10 @@ code {
 <p><code>visual/assets/public-interest-audit.json</code> 明确不填造假基线：老年人、残障者、照护者、夜班者、儿童及监护人、访客、小商户和维护人员均列为待参与群体；无障碍连续、无 App 服务、投诉响应、分组影响差异、夜间照度/噪声均先做 baseline survey，再进入试点。参与必须有纸面、人工和多语种通道，冲突时先暂停场景、展示争议数据、给出非 AI 等价服务并公开补救或撤回。</p>
 <h3>3. 身份系统、公共空间组件与具身智能</h3>
 <p>身份系统把“百年铁路—开源协作—公共回馈”压缩成两条平行线、三个开放节点和两个切换菱形：众智园、AI 原点、大钟寺是公共节点，东西两翼可以接入不同的试点，但不改变普通公共使用。<code>visual/assets/identity-system.json</code> 和 <code>assets/figures/identity-system.png</code> 给出构造规则、色板、导视、盲文/高对比/语音替代和清权边界；当前只是概念方向，不是注册商标或 VI 定稿。</p>
+<p>本轮把身份方向落实为一个可评估的矢量标记 <code>assets/identity/open-pulse-mark.svg</code>：两条并行线、三个开放节点、两个切换菱形与中英文命名均可缩放，旁边的 kilometre ticks、站点牌、盲文/高对比/语音替代遵循同一构造规则。它是许丙南 / Codex 的概念资产，不是注册商标、政府标识或已完成的 VI 定稿；正式使用前仍需商标、字体、无障碍和公共传播审查。</p>
 <p><code>visual/assets/component-library.json</code> 给出八个实体组件：双线身份标、令牌入口板、缝合阈、雨水树池单元、安静链座椅、低照度呼吸灯、开放贡献墙和可撤回停靠位。每个组件都能离线服务人类、写明维护频率和故障触发，并要求机器人断网或传感器失效时不破坏排水、无障碍和安全。具身智能只能在有界窗口低速运行，急停、消防隔离和人工接管可见；组件不是产品认证、施工图或采购承诺。</p>
 <figure class="proposal-figure"><img src="../assets/figures/identity-system.png" alt="京张开源脉冲身份系统与公共组件构造规则图"><figcaption>京张开源脉冲身份系统与公共组件构造规则图</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/identity/open-pulse-mark.svg" alt="京张开源脉冲矢量标记概念"><figcaption>京张开源脉冲矢量标记概念</figcaption></figure>
 <h3>4. 版权、隐私与公共利益清权</h3>
 <p><code>report/copyright_statement.md</code> 从短声明升级为可审计协议，<code>visual/assets/copyright-ledger.json</code> 逐项记录路径、作者、生成方式、输入来源、第三方材料、许可、归属、字体处理和 SHA-256。文本、几何、图件、离线 HTML 和 JSON 由许丙南 / Codex 在提交工作树中创作或派生；官方统计资料保留来源署名；不嵌入第三方图片、地图、远程字体或运行时外链。未来新增素材必须先登记授权和哈希；该台账是提交证据，不是法律意见。</p>
 <p>隐私和公共性不靠一句“以人为本”收尾：场景不做人脸识别或个体轨迹留存，医疗导航不诊断，数据展示留在沙盒，公共状态板给出人工等价服务和投诉入口；老人、照护者、夜班者、残障者、访客和维护人员均有不依赖 App 的路径。发生安全、清权、排水、无障碍或居民影响闸门失败时，场景转人工或撤回。</p>
@@ -270,17 +275,8 @@ code {
 <h2>参考资料</h2>
 <ul>
 <li>brief/public-brief.md</li>
-<li>brief/site-package/design_brief.json</li>
-<li>brief/site-package/allowed_design_space.json</li>
-<li>brief/site-package/enums/</li>
-<li>brief/site-package/ranges/planning_limits.json</li>
-<li>data/processed/agent_fact_pack.md</li>
-<li>data/processed/project_scope_summary.csv</li>
-<li>data/processed/agent_task_requirements.csv</li>
-<li>data/processed/source_use_matrix.csv</li>
-<li>data/processed/missing_data_checklist.csv</li>
-<li>机器可读引用索引：<span class="evidence evidence-source">[source:OFFICIAL-ANNOUNCEMENT]</span>、<span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span>、<span class="evidence evidence-source">[source:SITE-PACKAGE]</span>、<span class="evidence evidence-source">[source:SOURCE-REGISTRY]</span>、<span class="evidence evidence-source">[source:PROCESSED-FACT-PACK]</span>、<span class="evidence evidence-standard">[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</span>、<span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span>、<span class="evidence evidence-depth">[depth:metrics_recalculation]</span>、<span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span>、<span class="evidence evidence-metric">[metric:site_area_sqm]</span></li>
 </ul>
+<p>完整的机器可读来源、标准、资料用途、处理资料和指标引用分别登记在 <code>sources.json</code>、<code>standard_matrix.json</code>、<code>design_depth_matrix.json</code>、<code>compliance_matrix.json</code>、<code>data/source_registry.json</code>、<code>data/processed/agent_fact_pack.md</code> 和 <code>metrics.json</code>。<span class="evidence evidence-source">[source:OFFICIAL-ANNOUNCEMENT]</span> 与 <span class="evidence evidence-source">[source:SOURCE-REGISTRY]</span> 是这条证据链的入口。其中，<code>sources.json</code> 新增的六个国际案例均保留官方公开 URL、访问日期、用途和“不构成合作或本地绩效证明”的边界；它们是提交包内的详细来源账本，不冒充仓库 <code>sources/public-sources.json</code> 的公共索引条目。</p>
 </main>
 </body>
 </html>

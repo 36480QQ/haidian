@@ -36,7 +36,7 @@ The spatial idea is **one belt, three nodes, many scenes, and a blue-green walki
 | Overall design | How do renewal, industry, transport, municipal systems and character fit together? | Linked geometry layers, metrics and phasing. |
 | Key areas | How does each area become experienced, operated and reversible? | Node concepts, 14 scenario rows and component library. |
 
-![Three-level scope](assets/figures/land-use-structure.png)
+![Three-level scope](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -59,7 +59,7 @@ The source IDs, access dates and use boundaries are recorded in `sources.json`. 
 
 The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment.
 
-![Regional ecology loop](assets/figures/regional-ecosystem.png)
+![Regional ecology loop](assets/figures/regional-ecosystem.en.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -91,7 +91,7 @@ The package contains 14 scenario cards in `visual/assets/scenario-operation-matr
 
 The matrix is a design-control instrument, not a promise of service levels. Every row states: spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, data retention, non-AI equivalent, stop condition, success metric and phase. The universal gates are: no digital precondition; human review cannot be removed; an accessible route remains continuous; a public status and complaint path exists; and stop/rollback has been tested.
 
-![Token and operations lifecycle](assets/figures/component-operations.png)
+![Token and operations lifecycle](assets/figures/component-operations.en.png)
 
 ### Node-level concepts and public-interest audit
 
@@ -115,7 +115,10 @@ The blue-green loop is a climate adaptation and social infrastructure, not a dec
 
 The identity system is **two parallel rails, three open nodes and two switch diamonds**. It turns the railway memory into a contemporary public grammar without using un-cleared historical images. The palette and wayfinding rules, including high contrast, tactile and audible alternatives, are machine-readable in `visual/assets/identity-system.json`.
 
-![Identity system](assets/figures/identity-system.png)
+This iteration also makes the identity direction inspectable as a vector mark in `assets/identity/open-pulse-mark.svg`: two parallel rails, three open nodes, two switch diamonds and bilingual naming remain legible at different scales. It is a concept asset authored by Xu Bingnan / Codex, not a registered trademark, government emblem or finished VI system; trademark, font, accessibility and public-communications review remain required before use.
+
+![Identity system](assets/figures/identity-system.en.png)
+![Open Pulse vector mark concept](assets/identity/open-pulse-mark.svg)
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
