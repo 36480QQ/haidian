@@ -6,6 +6,7 @@ reviewable deliverables and bilingual review surface.
 
 ## v1.8 - 2026-08-08
 
+- Added six officially sourced policy and enterprise-development cases, plus a crosswalk from each mechanism to local scenarios, acceptance evidence and do-not-copy boundaries.
 - Put the taskbook's three positions, five functions and three-area/two-wing mapping directly into `proposal.md`.
 - Added reviewer-visible tables for North Latitude Community/regional interfaces, node-level plans, 14 scenario gates, public-interest audit and transferable mechanism comparison.
 - Added explicit `language: zh` metadata for the primary proposal, report and visual index to remove deterministic intake warnings.

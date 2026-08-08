@@ -44,7 +44,18 @@ The research-area strategy is a public-facing innovation chain: university and c
 
 The eight mechanisms are **land, space, industry, capital, talent, compute, data and scenario**. Each mechanism has an inbound need, an outbound return and an accountable future operator in `visual/assets/regional-ecosystem.json`. No partnership, funding, land allocation, or government commitment is asserted. The regional return loop is: originate → engineer → book → test → publish evidence → scale or retire.
 
-To avoid turning “international cases” into unsourced city stories, `visual/assets/case-mechanism-matrix.json` compares six transferable patterns rather than claiming project facts: station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method. Each row says what to borrow, what not to copy, the Jing-Zhang test interface and which evidence must be sourced before a formal case citation is added.
+To satisfy the taskbook's request for 5–8 AI ecosystem cases, `visual/assets/case-mechanism-matrix.json` separates six officially sourced public examples from six transferable patterns. The examples answer what policy or enterprise-development mechanism the official page makes visible; they do not transfer foreign performance, law or partnership claims to Haidian:
+
+| Case | Policy / enterprise mechanism | Jing-Zhang interface | Do-not-copy boundary |
+| --- | --- | --- | --- |
+| Helsinki AI Register | Public inventory, detail pages and feedback route for city AI systems | Pilot card states purpose, data boundary, accountable lead, state and complaint route | A register does not replace safety, accessibility, procurement or consent review [source:CASE-HELSINKI-AI-REGISTER] |
+| Amsterdam Algorithm Register | Plain-language explanation of what municipal algorithms are used for | Preflight record links purpose to review, stop and redress paths | Not Chinese legal compliance [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Singapore AI Verify | Standardised AI testing, open-source collaboration and assurance sandbox | Booked, human-led test window for startups with model card and rollback record | Not certification, procurement approval or permission to test residents [source:CASE-SINGAPORE-AI-VERIFY] |
+| Decidim Barcelona | Traceable digital and face-to-face participation infrastructure | Contribution wall plus paper, walk-in and multilingual routes; publish what changed | Digital participation cannot replace access for people without accounts or devices [source:CASE-DECIDIM-BARCELONA] |
+| UK ATRS | Standardised public record of why and how algorithmic tools are used | Record purpose, owner, data, human review, alternatives, limits, incidents and update | Not a Beijing statutory requirement; local legal and procurement review remains necessary [source:CASE-UK-ATRS] |
+| Seoul AI Foundation | Institutional capacity linking research, public service, talent and global exchange | Named interface among research, enterprise service, public testing and exchange | No Seoul partnership, funding or Jing-Zhang mandate is implied [source:CASE-SEOUL-AI-FOUNDATION] |
+
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. The six design patterns remain in the `rows` array, while sources, access dates and use boundaries are recorded in `sources.json`.
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.png)
 
@@ -145,7 +156,7 @@ This iteration directly repairs review gaps found in high-scoring repository sub
 - `visual/assets/component-library.json` gives eight physical, legible and maintainable public-space components.
 - `visual/assets/identity-system.json` and the identity figure provide a real, inspectable identity and wayfinding grammar.
 - `visual/assets/copyright-ledger.json` makes authorship, sources, licenses, hashes and future-clearance duties auditable.
-- `visual/assets/case-mechanism-matrix.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
+- `visual/assets/case-mechanism-matrix.json`, `visual/assets/case-policy-enterprise-crosswalk.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, policy-tool, enterprise-interface, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
 - `proposal.md`, this English translation, two offline report pages, the offline visual index and `changelog.md` keep the bilingual review surface aligned.
 
 These are reviewable design deliverables, not claims that a project has been commissioned. Their value is that a reviewer can find the requirement, inspect the evidence, test the stop gate and identify what must be confirmed before implementation.
