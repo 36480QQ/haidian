@@ -91,6 +91,22 @@ The matrix is a design-control instrument, not a promise of service levels. Ever
 
 ![Token and operations lifecycle](assets/figures/component-operations.png)
 
+### Three industry validation windows: evidence before procurement or scale-up
+
+To connect policy tools to enterprise development rather than leave them as case summaries, `visual/assets/industry-validation-cases.json` defines three reversible validation windows. They are conceptual test protocols for organisers, suppliers and public-service teams—not procurement approvals, deployment facts, investment commitments or evidence of local-company performance. Each window couples an enterprise question with a policy interface, acceptance evidence, a stop condition and a non-AI equivalent:
+
+| Validation window | Enterprise-development question | Policy interface | Acceptance and stop gate |
+| --- | --- | --- | --- |
+| Model safety and transparency | Can a startup or supplier show reproducible safety, provenance, human review and rollback evidence before expansion? | Pre-procurement assurance record: model/data boundary, red-team result, accountable reviewer, non-AI route and stop decision | Two independent reviewers reproduce the test note; unclear rights, no human reviewer or failed takeover drill stops the window. S04 / Zhongzhi Garden. |
+| Enterprise service and data-governance compliance | Can an enterprise-service team shorten a public process without exposing unauthorised data or turning an AI answer into a binding decision? | Service preflight record: public source, authorised documents, human decision owner, correction path, retention and manual-counter equivalent | AI-assisted and manual routes both work and material answers have sources and a correction route; unverifiable documents, privacy spill, discriminatory routing or no manual counter stops the window. S08/S09 / Origin–Dazhongsi. |
+| Low-speed embodied-AI safety and operations | Can a robot or embodied-AI supplier demonstrate safe coexistence with an accessible public route before scale-up or procurement? | Public test permit: route, speed/priority rule, emergency stop, human takeover, incident log, privacy boundary, maintenance owner and withdrawal trigger | A staffed drill completes stop, takeover, route clearance and return to ordinary use; blocked accessibility, a severe near miss or overdue maintenance stops the window. S02/S03 / Zhongzhi–Jing-Zhang park edge. |
+
+All three windows start small, staffed and reviewable, then decide whether to scale, redesign or retire. “Success” means that acceptance evidence is complete; it does not mean product effectiveness, investment return or government procurement has been established. `[source:AGENT-TASKBOOK]`
+
+### Cultural narrative, markers and long-term operations
+
+The cultural narrative uses engineering proof, open collaboration and public reciprocity as a three-part experience. Four non-glitzy public markers are proposed: the **Century Engineering Questions Wall**, the **Open-Source Contribution Archive**, the **Urban Agent Responsibility Desk**, and the **Enterprise Safety-Governance Responsibility Desk**. Their policy and enterprise value, acceptance tests, spatial links and clearance boundaries are recorded in `visual/assets/landmark-honor-crosswalk.json`. These are conceptual nodes for heritage, public-art, management and rights review, not institutional endorsements or advertising sites.
+
 ### Node-level concepts and public-interest audit
 
 `visual/assets/key-area-node-plans.json` makes the three key areas reviewable as sequences rather than slogans: arrival → status board → component → bounded operation → return to ordinary public use. Each node has components, an acceptance test and a professional gate for official parcels, ownership, roads, fire, ecology, heritage, drainage and municipal systems. It is a provisional concept for professional refinement, not an official parcel or construction drawing.
