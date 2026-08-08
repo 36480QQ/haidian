@@ -1,6 +1,6 @@
 ---
 title: "京张万象工场｜文化生产驱动的AI城市采用带"
-title_en: "JING-ZHANG CIVIC FOUNDRY｜A CULTURAL PRODUCTION BELT FOR CIVIC AI ADOPTION"
+title_en: "JING-ZHANG CIVIC FOUNDRY | A CULTURAL PRODUCTION BELT FOR CIVIC AI ADOPTION"
 author_github: "kingyfleo"
 language: "zh"
 translation_file: "proposal.en.md"
