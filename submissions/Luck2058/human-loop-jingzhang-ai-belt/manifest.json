@@ -12,7 +12,7 @@
     "agent_name": "WorkBuddy Urban Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T11:39:31.569344+00:00",
+  "generated_at": "2026-08-08T12:01:17.770184+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fdf29d8ff8146b24b5b2b15b616ed6a1c2f5b9f37b13e51f8fbd4fd4de8c5c71"
+      "sha256": "bac6d51bfeab307f8eb260465e9ff7ec66790f2211a0d19b8ef951defecb4842"
     },
     {
       "path": "agent.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3bff0a3bec22f4b4816f70354cc139ffa32cef2db98cf70ad4eadd3b1c56073c"
+      "sha256": "08539a64ee1f06ab5e5637492dccd28d9b8c85f10139b84b5cb2c8763f51ddfb"
     },
     {
       "path": "assets/figures/key-areas.png",
