@@ -230,6 +230,7 @@ REQUIRED_DESIGN_DEPTH_IDS = {
 }
 REFERENCE_RE = re.compile(r"\[(source|standard|depth|data|metric):([^\]\s]+)\]")
 PROPOSAL_FORMAT_VERSION = "2"
+BILINGUAL_CONTRACT_VERSION = "1"
 MAX_INLINE_REFERENCES_PER_BLOCK = 8
 MAX_CONSECUTIVE_REFERENCES = 3
 MARKDOWN_IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
@@ -375,11 +376,11 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
 
 
 def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
-    """Return whether the proposal uses the v2 bilingual submission contract.
+    """Return whether the proposal explicitly opts into the blocking contract.
 
-    Historical v1 packages remain readable and valid without being rewritten.
-    Every new scaffold declares v2, so new and upgraded packages receive the
-    blocking bilingual gate.
+    Historical v1 and early v2 packages remain valid without being rewritten.
+    New scaffolds declare the independent bilingual contract version so future
+    format revisions do not accidentally redefine the migration boundary.
     """
     proposal_path = repo_root / proposal_dir / "proposal.md"
     if not proposal_path.is_file():
@@ -388,7 +389,7 @@ def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
         metadata, _ = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
     except UnicodeDecodeError:
         return False
-    return proposal_format_version(metadata) == PROPOSAL_FORMAT_VERSION
+    return metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
 
 
 def parse_track_metadata(raw_value: object) -> list[str]:
@@ -1489,7 +1490,8 @@ def validate_bilingual_display(
         for path in report.changed_files
         if path.startswith(proposal_dir.rstrip("/") + "/")
     }
-    if not any(is_display_material(path) for path in changed_rel):
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
+    if not strict_bilingual and not any(is_display_material(path) for path in changed_rel):
         return
 
     base = repo_root / proposal_dir
@@ -1505,8 +1507,6 @@ def validate_bilingual_display(
         return
     translation_language = "en" if primary_language == "zh" else "zh"
     translation_file = localized_path("proposal.md", translation_language)
-    strict_bilingual = proposal_format_version(metadata) == PROPOSAL_FORMAT_VERSION
-
     def report_bilingual_problem(message: str) -> None:
         if strict_bilingual:
             report.add_error(message)
@@ -1515,7 +1515,7 @@ def validate_bilingual_display(
 
     if metadata.get("translation_file") != translation_file:
         report_bilingual_problem(
-            f"{proposal_dir}/proposal.md: v2 bilingual submission requires "
+            f"{proposal_dir}/proposal.md: bilingual contract requires "
             f"translation_file={translation_file}"
         )
 
@@ -1576,7 +1576,7 @@ def validate_bilingual_display(
         companion = base / companion_path
         if not companion.is_file():
             report_bilingual_problem(
-                f"{proposal_dir}/{display_path}: v2 bilingual submission requires "
+                f"{proposal_dir}/{display_path}: bilingual contract requires "
                 f"{translation_language} display counterpart `{companion_path}`"
             )
             continue
@@ -1751,6 +1751,11 @@ def validate_proposal_file(
     if format_version and format_version not in {"1", PROPOSAL_FORMAT_VERSION}:
         report.add_error(
             f"{proposal_path}: proposal_format_version must be 1 or {PROPOSAL_FORMAT_VERSION}"
+        )
+    bilingual_contract_version = metadata.get("bilingual_contract_version")
+    if bilingual_contract_version and bilingual_contract_version != BILINGUAL_CONTRACT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version must be {BILINGUAL_CONTRACT_VERSION}"
         )
     validation_body = body
     if language == "en":

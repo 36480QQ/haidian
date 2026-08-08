@@ -47,6 +47,11 @@
           "pattern": "^proposal\\.(zh|en)\\.md$",
           "description": "Required for version 2. Points to the complete Chinese or English translation of proposal.md."
         },
+        "bilingual_contract_version": {
+          "type": "string",
+          "const": "1",
+          "description": "Explicit opt-in to the blocking Chinese-English display contract. New scaffolds set this field; historical packages without it retain compatibility."
+        },
         "translation_of": {
           "type": "string",
           "const": "proposal.md",
@@ -125,8 +130,8 @@
       "if": {
         "properties": {
           "metadata": {
-            "properties": {"proposal_format_version": {"const": "2"}},
-            "required": ["proposal_format_version"]
+            "properties": {"bilingual_contract_version": {"const": "1"}},
+            "required": ["bilingual_contract_version"]
           }
         }
       },

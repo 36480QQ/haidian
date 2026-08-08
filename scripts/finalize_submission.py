@@ -9,12 +9,12 @@ import json
 from pathlib import Path
 
 from validate_submission import (
+    BILINGUAL_CONTRACT_VERSION,
     DISPLAY_BASE_FILES,
     is_empty_pdf,
     localized_path,
     parse_front_matter,
     primary_path_from_localized,
-    proposal_format_version,
 )
 
 
@@ -67,7 +67,9 @@ def main() -> int:
 
     primary_language = proposal_metadata.get("language")
     translation_language = "en" if primary_language == "zh" else "zh" if primary_language == "en" else None
-    strict_bilingual = proposal_format_version(proposal_metadata) == "2"
+    strict_bilingual = (
+        proposal_metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
+    )
     if translation_language and strict_bilingual:
         expected_translation = localized_path("proposal.md", translation_language)
         if proposal_metadata.get("translation_file") != expected_translation:
