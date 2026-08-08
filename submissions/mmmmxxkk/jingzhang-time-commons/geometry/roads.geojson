@@ -1,0 +1,320 @@
+{
+  "type": "FeatureCollection",
+  "name": "time_commons_mobility",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-TIME-SPINE",
+      "properties": {
+        "id": "ROAD-TIME-SPINE",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "南北公共时间主脊",
+        "role_zh": "慢行、文化、场景和人工帮助的连续界面",
+        "length_m_declared": 9360.137
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34826713135999,
+            39.94075
+          ],
+          [
+            116.34890208678472,
+            39.946
+          ],
+          [
+            116.34900391266179,
+            39.95125
+          ],
+          [
+            116.34846633593449,
+            39.9565
+          ],
+          [
+            116.34753130226972,
+            39.96175
+          ],
+          [
+            116.34659307116684,
+            39.967
+          ],
+          [
+            116.34605506457979,
+            39.97225
+          ],
+          [
+            116.34628992700746,
+            39.9775
+          ],
+          [
+            116.34703999999999,
+            39.982749999999996
+          ],
+          [
+            116.34770697339033,
+            39.988
+          ],
+          [
+            116.34818381463789,
+            39.993249999999996
+          ],
+          [
+            116.34826451337136,
+            39.9985
+          ],
+          [
+            116.34792945073895,
+            40.00375
+          ],
+          [
+            116.34750618008627,
+            40.009
+          ],
+          [
+            116.34738124688263,
+            40.01425
+          ],
+          [
+            116.3477892484987,
+            40.0195
+          ],
+          [
+            116.34865890184949,
+            40.02475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-EXCHANGE-1",
+      "properties": {
+        "id": "ROAD-EXCHANGE-1",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "东西换时线 1",
+        "role_zh": "概念性步行与公共交通接驳；不是工程线位。",
+        "length_m_declared": 942.246
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34297687203474,
+            40.01675
+          ],
+          [
+            116.35401327163382,
+            40.01675
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-EXCHANGE-2",
+      "properties": {
+        "id": "ROAD-EXCHANGE-2",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "东西换时线 2",
+        "role_zh": "概念性步行与公共交通接驳；不是工程线位。",
+        "length_m_declared": 965.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34134190967742,
+            39.9885
+          ],
+          [
+            116.35264905806451,
+            39.9885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-EXCHANGE-3",
+      "properties": {
+        "id": "ROAD-EXCHANGE-3",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "东西换时线 3",
+        "role_zh": "概念性步行与公共交通接驳；不是工程线位。",
+        "length_m_declared": 1114.577
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3413692,
+            39.946920000000006
+          ],
+          [
+            116.3544108,
+            39.946920000000006
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-SUPPORT-W",
+      "properties": {
+        "id": "ROAD-SUPPORT-W",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "中关村科技服务翼慢行支持线",
+        "length_m_declared": 9040.262
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34457989930556,
+            39.9420625
+          ],
+          [
+            116.344442390625,
+            39.94884375
+          ],
+          [
+            116.34430488194444,
+            39.955625
+          ],
+          [
+            116.34416737326389,
+            39.96240625
+          ],
+          [
+            116.34393941458333,
+            39.9691875
+          ],
+          [
+            116.34372069999999,
+            39.97596875
+          ],
+          [
+            116.3438936,
+            39.982749999999996
+          ],
+          [
+            116.3440665,
+            39.98953125
+          ],
+          [
+            116.34446914041096,
+            39.9963125
+          ],
+          [
+            116.34488884075343,
+            40.00309375
+          ],
+          [
+            116.34526402890077,
+            40.009875
+          ],
+          [
+            116.34560583290177,
+            40.01665625
+          ],
+          [
+            116.34594763690276,
+            40.0234375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-SUPPORT-E",
+      "properties": {
+        "id": "ROAD-SUPPORT-E",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "小月河场景赋能翼慢行支持线",
+        "length_m_declared": 9041.068
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35133503125,
+            39.9420625
+          ],
+          [
+            116.351284171875,
+            39.94884375
+          ],
+          [
+            116.3512333125,
+            39.955625
+          ],
+          [
+            116.35118245312499,
+            39.96240625
+          ],
+          [
+            116.35088704375,
+            39.9691875
+          ],
+          [
+            116.3504643,
+            39.97596875
+          ],
+          [
+            116.3501864,
+            39.982749999999996
+          ],
+          [
+            116.34990850000001,
+            39.98953125
+          ],
+          [
+            116.35025175,
+            39.9963125
+          ],
+          [
+            116.35064112500001,
+            40.00309375
+          ],
+          [
+            116.35101403658535,
+            40.009875
+          ],
+          [
+            116.35137460060976,
+            40.01665625
+          ],
+          [
+            116.35173516463415,
+            40.0234375
+          ]
+        ]
+      }
+    }
+  ]
+}

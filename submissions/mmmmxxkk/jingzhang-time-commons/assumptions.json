@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_data",
+      "statement": "总体边界与三处重点区使用仓库 provisional rough polygons。",
+      "impact": "所有空间面积、图层、图纸和指标只用于投稿内部一致性，官方 polygon 到位后须整链重算。"
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "控规、四线、FAR、高度、密度、绿地率、退线与地块条件缺失。",
+      "impact": "用地、强度、风貌和开发内容只能作为概念建议。"
+    },
+    {
+      "id": "A-EXISTING-001",
+      "status": "pending_survey",
+      "statement": "现状建筑、年代、用途、结构、权属和消防资料缺失。",
+      "impact": "建筑图层是功能原型，不指认真实建筑或拆改留。"
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "pending_professional_confirmation",
+      "statement": "道路红线、断面、客流、停车、市政和轨道接口资料缺失。",
+      "impact": "道路与接驳线仅表达系统关系，不是工程线位。"
+    },
+    {
+      "id": "A-TIME-001",
+      "status": "requires_real_user_research",
+      "statement": "尚未开展真实时间日记、服务蓝图、分群基线或受控试点。",
+      "impact": "时间红利分钟数保持 unknown，不声称效率提升。"
+    },
+    {
+      "id": "A-CASES-001",
+      "status": "background_comparison_only",
+      "statement": "六个全球案例仅来自其运营方或政府主体公开页面。",
+      "impact": "只比较机制，不把境外成效、制度或指标转写为京张事实。"
+    }
+  ]
+}
