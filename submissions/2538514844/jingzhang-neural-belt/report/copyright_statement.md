@@ -6,7 +6,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets for the "�
 
 Copyright and licensing rules:
 
-- 提案仅使用公开或用户提供且已清权的资料;不使用非公开规划图件、内部数据、个人隐私信息或未授权媒体。
+- 提案仅使用公开或用户提供且已清权的资料;不使用未授权规划图件、未授权数据、个人隐私信息或未授权媒体。
 - 命名「京张智脉 / Jing-Zhang Neural Belt」、Logo 概念、地标名称与视觉语汇均为原创概念,不包含未授权字体、商标、肖像或受版权保护的图像。
 - 引用资料出处见 sources.json 与 proposal.md 的证据标签([source:...] / [standard:...] / [metric:...] / [data:...])。
 - 全球案例(硅谷、one-north、特拉维夫、粤海街道、杭州未来科技城)仅作公开背景研究,用于推导空间组织机制,不构成对企业名单、投资额或产值的事实陈述。
