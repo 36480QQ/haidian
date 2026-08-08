@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把 AI 从屏幕推到一比一的街道、家具、服务界面和可拆回构件，让城市成为从模型到实物、从使用到维修再利用的公共原型生产网。以四层寿命框架和临时参考几何提出可复核的城市设计建议，待正式 polygon 发布后整体复算。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.3-jz-1x1-mesh"
+iteration: "v1.4-jz-1x1-mesh"
 ---
 
 # 京张 1:1 原型网：把模型做成城市
@@ -66,7 +66,7 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 总体空间结构不是一条主轴，而是六类节点组成的原型网格：原型房（低风险室内试制）、原型院（半室外共享制作）、公共原型街段（1:1 人因测试）、维修再利用节点（拆装、清点和再次分配）、展示交换门廊（研发空间的公众界面）和公园审阅面（既有公共地面上的可逆展陈）。节点之间以步行、骑行和物流微循环联系，`roads.geojson` 表达关系线而非道路红线。[data:geometry/roads.geojson#ROAD-001] [depth:overall_spatial_structure]
 
-用地建议仍遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的分类词汇，分为研发与产业服务、混合创新街区、社区生活服务、公共绿地、开放空间、道路与市政接口六类。六块设计多边形覆盖临时范围且无重叠，面积由 [data:geometry/land_use.geojson#LU-001] 复核；它们是空间建议，不是法定用地审批。
+用地建议仍遵循 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 的分类词汇。六块设计多边形覆盖临时范围且无重叠，`land_use_polygon_count=6`、`land_use_share_sum_ratio=1.0`；按当前概念设计占比分别为：05 商业服务业用地 16.0%、0803 文化用地 20.2%、0702 城镇社区服务设施用地 20.4%、0802 科研用地 20.0% + 9.9%（两块不同生命周期接口）、1401 公园绿地 13.5%。这些百分比是临时范围内的设计分配口径，不是法定用地审批或控制指标。[data:geometry/land_use.geojson#LU-001] [metric:land_use_polygon_count] [depth:land_use_layout]
 
 存量更新以“先做可拆部件，再决定建筑动作”为顺序：保留既有工业/铁路基底，改造首层遮荫、无障碍、能源和共享服务房，更新低效建筑前先做 90 天临时原型，新建只在公共框架承载和正式控规均可证明时讨论。建筑图层的 `renewal_action`、`lifecycle_layer`、`service_room_type` 和 `component_reuse_path` 明确记录判断依据；[metric:building_footprint_area_sqm] 只统计概念基底，不推导楼面面积、FAR 或高度。[depth:retain_renovate_demolish] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -107,13 +107,13 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局以公共框架先行、首层可见、存量优先为原则。研发与产业服务靠近 MAKE 节点，混合创新街区承载材料、法务、IP、共享制作和人才服务，社区生活服务围绕 TRANSLATE 房间，开放空间与绿地承载公园审阅面和 USE 节点。现有六类用地多边形完整覆盖提交范围；临时几何和 `land_use_code` 仅用于方案复核。[data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]
+用地布局以公共框架先行、首层可见、存量优先为原则。研发与产业服务靠近 MAKE 节点，混合创新街区承载材料、法务、IP、共享制作和人才服务，社区生活服务围绕 TRANSLATE 房间，开放空间与绿地承载公园审阅面和 USE 节点。六块设计多边形完整覆盖提交范围；代码和 16.0%—20.4% 的设计占比用于方案复核，不能替代法定分区或批准的用地比例。[data:geometry/land_use.geojson#LU-001] [metric:land_use_share_sum_ratio] [depth:land_use_layout]
 
 建筑不以“大体量新地标”证明创新，而以可维修的首层剖面证明适应性。保留：铁路/工业记忆与可持续使用基底；改造：遮荫、无障碍、能源、共享服务房；更新：先做 90 天原型再讨论；新建：仅在正式控规、承载和公共利益证据齐备后研究。建筑高度、密度、退线、停车、消防和总楼面待正式控规，不把 footprint 当作楼面或容积率。[depth:development_intensity_controls] [depth:height_massing_character]
 
 ## 交通、轨道、市政与公共服务设施
 
-交通采用“人行慢场—服务网—交接口袋”三层地面剖面：主公共地面连续无障碍、遮荫和停留；后勤、维修和装卸沿次要边界组织；站点、园区门口和商业首层设置可变交接口袋，服务窗口外恢复为座椅或社区活动。概念低暴露路线 ROAD-001 长 9,220.740 m，与 N2/N3 包络保持 219.868 m 的最小距离，连续率按当前几何为 1.0；这三项只表达设计意图，不能替代现场无障碍、隐私或道路核验。轨道接驳、站前四象限、五道口和清华东路西口仅作为研究接口，`roads.geojson` 不替代道路红线。[data:geometry/roads.geojson#ROAD-001] [metric:low_exposure_route_continuity_ratio] [depth:traffic_rail_slow_parking]
+交通采用“人行慢场—服务网—交接口袋”三层地面剖面：主公共地面连续无障碍、遮荫和停留；后勤、维修和装卸沿次要边界组织；站点、园区门口和商业首层设置可变交接口袋，服务窗口外恢复为座椅或社区活动。概念低暴露路线 ROAD-001 长 9,220.740 m，与 N2/N3 包络保持 219.868 m 的最小距离，连续率按当前几何为 1.0；六条概念关系线总长 `road_centerline_length_m=21,716.922 m`，其中 ROAD-002—ROAD-006 连接线合计 `road_connector_length_m=12,496.182 m`。这些读数只表达设计意图，不能替代现场无障碍、隐私或道路核验；`roads.geojson` 不替代道路红线。[data:geometry/roads.geojson#ROAD-001] [metric:road_centerline_length_m] [depth:traffic_rail_slow_parking]
 
 市政采用“接口盒子”而不是一次性智能化：照明、雨洪、传感、端侧算力、公共 Wi-Fi 和维修电源装在可拆卸盒体内，先挂载于既有公共框架和服务房；容量、管线、防洪、消防、网络安全和轨道接口确认后再深化。公共服务保留人工窗口、纸面/离线流程、法律解释、健康导航和无障碍陪伴，不以 AI 取代责任人。[depth:municipal_new_infrastructure] [data:geometry/constraints.geojson#NODE-008]
 
@@ -121,7 +121,9 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统采用“既成公共地面 + 可挂载原型”的策略：京张遗址公园承担百年记忆和日常休息，清河与小月河承担生态、雨洪和低碳体验，公园边缘、站点前场和重点区入口承担一比一审阅。新构件只落在可维护的框架节点上，避免把临时技术误画成永久景观；[metric:green_ratio] 与 [metric:public_space_ratio] 由同一套投影几何复算。[depth:blue_green_public_space]
+蓝绿系统采用“既成公共地面 + 可挂载原型”的策略：京张遗址公园承担百年记忆和日常休息，清河与小月河承担生态、雨洪和低碳体验，公园边缘、站点前场和重点区入口承担一比一审阅。新构件只落在可维护的框架节点上，避免把临时技术误画成永久景观。绿地并集占临时范围 `green_ratio=38.18%`；四个对象尺度前场合计 `public_space_area_sqm=23,024.999 sqm`，其口径为 `public_space_ratio=0.20%`，只表示原型门廊/前场，不是全域公共空间率。[metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
+
+为避免两个尺度被混读，长寿命公共框架另行报告：绿地与四个前场的概念并集为 `long_life_public_frame_area_sqm=4,380,279.928 sqm`，`public_frame_ratio=38.38%`，并登记 `public_forecourt_count=4`。这两个面积口径都是概念几何，不等同于法定绿地率、公共空间率或已确认公共权属，正式边界与权属资料到位后必须重算。[metric:public_frame_ratio] [metric:public_forecourt_count] [assumption:A-PUBLIC-FRAME-009]
 
 三处 AI 朝圣/荣誉展示节点改为可参与的“原型记忆点”：① **第一件可修复部件墙**（众智园），展示材料护照和失败修复记录；② **一比一服务房门廊**（原点社区），展示高校成果如何变成可离线公共服务；③ **城市采用与退役台**（大钟寺），公开哪些终端被留下、拆下或再利用。它们是可逆展陈和公共家具建议，不是永久建筑或已批准地标。
 
@@ -142,9 +144,11 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 
 ## 指标体系、面积复算与合规矩阵
 
-当前可复算指标为：`site_area_sqm=11,412,825.386`、`building_footprint_area_sqm=23,943.999`、`green_ratio=0.381786`、`public_space_area_sqm=23,024.999`、`public_space_ratio=0.002017`、`key_area_count=3`。建筑和公共空间现在均是 12 个对象尺度原型房/门廊与 4 个前场，不再把片区包络称为单栋建筑或公共广场；面积仍来自概念几何，不是现状普查或法定指标。[data:geometry/buildings.geojson#BLDG-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:building_footprint_area_sqm]
+当前可复算指标为：`site_area_sqm=11,412,825.386`、`building_footprint_area_sqm=23,943.999`、`green_ratio=0.381786`、`public_space_area_sqm=23,024.999`、`public_space_ratio=0.002017`、`land_use_polygon_count=6`、`land_use_share_sum_ratio=1.0`、`key_area_count=3`。建筑和公共空间现在均是 12 个对象尺度原型房/门廊与 4 个前场，不再把片区包络称为单栋建筑或公共广场；面积仍来自概念几何，不是现状普查或法定指标。[data:geometry/buildings.geojson#BLDG-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:building_footprint_area_sqm]
 
-为让生命周期命题可被实施团队接手，新增记录 `long_life_public_frame_area_sqm=4,380,279.928`、`prototype_node_count=12`、`ai_service_zone_count=12`、`ai_service_zone_area_sqm=59,736.002` 和 `repair_reuse_node_count=2`；其中公共框架是绿地与前场并集，感知包络是概念退线/视场，不是隐私法定边界。[metric:long_life_public_frame_area_sqm] [metric:ai_service_zone_count] [data:geometry/constraints.geojson#ZONE-001]
+为让生命周期命题可被实施团队接手，新增记录 `long_life_public_frame_area_sqm=4,380,279.928`、`public_frame_ratio=0.383803`、`public_forecourt_count=4`、`prototype_node_count=12`、`ai_service_zone_count=12`、`ai_service_zone_area_sqm=59,736.002` 和 `repair_reuse_node_count=2`；其中公共框架是绿地与前场并集，感知包络是概念退线/视场，不是隐私法定边界。[metric:long_life_public_frame_area_sqm] [metric:public_frame_ratio] [metric:ai_service_zone_count]
+
+道路证据也拆成两层：`road_centerline_length_m=21,716.922` 是六条概念中心线总长，`road_connector_length_m=12,496.182` 是五条重点区/蓝绿连接关系线的投影后合计；两者均不是道路面积、宽度、权属或工程红线。[metric:road_centerline_length_m] [metric:road_connector_length_m] [assumption:A-CONTROLS-001]
 
 `registered_exposure_coverage_ratio` 记录感知地籍字段的登记完整度。[metric:registered_exposure_coverage_ratio] `service_room_adaptability_count`、`replaceable_component_schedule_coverage`、`non_digital_service_retention_ratio`、`component_reuse_rate`、`feedback_closure_time_hours`、`off_state_verified_ratio` 和 `public_mode_hours_ratio` 在正式运营前保持未知，并在 `metrics.json` 写明原因、公式和待采集方法。`low_exposure_route_continuity_ratio=1.0` 仅是当前概念几何读数，现场可达性、隐私和运营连续性仍待实测。
 

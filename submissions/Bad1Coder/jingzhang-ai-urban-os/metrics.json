@@ -83,6 +83,33 @@
         "conceptual land-use partition over a provisional site; not statutory land allocation"
       ]
     },
+    "land_use_polygon_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(non-overlapping LAND_USE design polygons covering the provisional site)",
+      "confidence": "medium",
+      "assumptions": [
+        "Six conceptual polygons retain the JZ 1:1 lifecycle families while using current MNR enum codes; they are not statutory zoning parcels."
+      ]
+    },
+    "land_use_share_sum_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(all LAND_USE polygons)) / submitted_site_boundary.area in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Coverage is a topology check on the provisional design partition, not an approved land-use allocation."
+      ]
+    },
     "building_footprint_area_sqm": {
       "status": "known",
       "value": 23943.999,
@@ -191,7 +218,35 @@
       "formula": "union(public_space).area / submitted_site_boundary.area in EPSG:4548",
       "confidence": "low",
       "assumptions": [
-        "conceptual open-space proposal; ownership and road conditions pending"
+        "this is the ratio of four object-scale prototype forecourts; it is intentionally distinct from the long-life public frame and is not a statutory open-space ratio"
+      ]
+    },
+    "public_forecourt_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(PUBLIC_SPACE features where area_semantics=object-scale forecourt/porch/public-room edge)",
+      "confidence": "medium",
+      "assumptions": [
+        "Forecourts are conceptual public interfaces with capacity and operating responsibility pending confirmation."
+      ]
+    },
+    "public_frame_ratio": {
+      "status": "known",
+      "value": 0.383803,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(GREEN_SPACE, PUBLIC_SPACE)) / submitted_site_boundary.area in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "This is a conceptual public-frame union for comparison; it must not be read as statutory green rate, public-space rate, or confirmed public ownership."
       ]
     },
     "road_centerline_length_m": {
@@ -205,6 +260,19 @@
       "confidence": "low",
       "assumptions": [
         "conceptual relationship network; not a surveyed road network or approved alignment"
+      ]
+    },
+    "road_connector_length_m": {
+      "status": "known",
+      "value": 12496.182,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(route_length_m_declared for ROAD-002..ROAD-006) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Lengths are projected centerline readings for conceptual relationships; they are not road widths, rights-of-way, or engineering alignments."
       ]
     },
     "road_area_sqm": {
@@ -386,7 +454,7 @@
       "formula": "union(green_space, public_space).area in EPSG:4548",
       "confidence": "low",
       "assumptions": [
-        "union of conceptual green layer and four object-scale public-space layers; not statutory public-frame area"
+        "union of the conceptual green frame and four object-scale public-space layers; this is the long-life public-frame comparison area, not a statutory green/public-space area or confirmed public ownership"
       ],
       "reason": "The projected union is recomputed after every geometry edit and is not hard-coded in the concept generator."
     },

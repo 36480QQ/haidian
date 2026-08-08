@@ -26,7 +26,8 @@
         "route_node_ids": [
           "NODE-011"
         ],
-        "route_length_m_declared": 9220.74
+        "route_length_m_declared": 9220.74,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",
@@ -73,7 +74,10 @@
         "design_thesis": "JZ 1:1 prototype mesh",
         "evidence_status": "conceptual_reference_proposal",
         "prototype_role": "station_exchange_pocket",
-        "speed_priority": "people_first_service_after"
+        "speed_priority": "people_first_service_after",
+        "route_role": "key_area_connector",
+        "route_length_m_declared": 683.675,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",
@@ -104,7 +108,10 @@
         "design_thesis": "JZ 1:1 prototype mesh",
         "evidence_status": "conceptual_reference_proposal",
         "prototype_role": "campus_neighborhood_slow_ground",
-        "speed_priority": "people_first_service_after"
+        "speed_priority": "people_first_service_after",
+        "route_role": "key_area_connector",
+        "route_length_m_declared": 768.888,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",
@@ -135,7 +142,10 @@
         "design_thesis": "JZ 1:1 prototype mesh",
         "evidence_status": "conceptual_reference_proposal",
         "prototype_role": "make_service_network",
-        "speed_priority": "people_first_service_after"
+        "speed_priority": "people_first_service_after",
+        "route_role": "key_area_connector",
+        "route_length_m_declared": 939.176,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",
@@ -166,7 +176,10 @@
         "design_thesis": "JZ 1:1 prototype mesh",
         "evidence_status": "conceptual_reference_proposal",
         "prototype_role": "two_wing_scene_link",
-        "speed_priority": "people_first_service_after"
+        "speed_priority": "people_first_service_after",
+        "route_role": "two_wing_connector",
+        "route_length_m_declared": 1110.324,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",
@@ -197,7 +210,10 @@
         "design_thesis": "JZ 1:1 prototype mesh",
         "evidence_status": "conceptual_reference_proposal",
         "prototype_role": "blue_green_maintenance_link",
-        "speed_priority": "people_first_service_after"
+        "speed_priority": "people_first_service_after",
+        "route_role": "blue_green_connector",
+        "route_length_m_declared": 8994.119,
+        "length_basis": "projected EPSG:4548 centerline length; conceptual relationship only"
       },
       "geometry": {
         "type": "LineString",

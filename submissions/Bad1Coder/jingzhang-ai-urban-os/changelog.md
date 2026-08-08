@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-09
+
+- Added MNR-style classification labels and proposal-only design shares for all six non-overlapping land-use polygons; the two 0802 polygons remain separate lifecycle interfaces.
+- Clarified the two public-space readings: four object-scale forecourts (`public_space_ratio=0.20%`) versus the conceptual long-life public frame (`public_frame_ratio=38.38%`).
+- Added per-line conceptual connector lengths and total relationship-network length to `roads.geojson`/`metrics.json`.
+- Regenerated the five bilingual figures with a north arrow, MAKE/TRANSLATE/USE key-area anchors, schematic/non-scale note, classification legend, and comparable area/network callouts.
+- Extended the bilingual proposal, design-depth references, and offline visual pages; all official-boundary, tenure, redline, and implementation caveats remain explicit.
+
 ## v1.3 - 2026-08-09
 
 - Opted into the repository's bilingual contract v1 after verifying all ten localized display pairs and manifest hashes.
