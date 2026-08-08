@@ -5,12 +5,27 @@ language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 translation_file: "proposal.en.md"
-iteration: "v2.4"
+iteration: "v2.6"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
+
+> **一页结论：** 以“公共问题—有界试验—人工复核—证据回传—扩散/重做/退出”为主线，把百年京张的轨迹、节点和里程语法转译成一条可进入、可质疑、可维护的 AI 公共带。当前提交已通过本地包体门禁并进入 repository intake；临时几何、现场基线、居民咨询和公共试点仍分别受 `provisional`、`unknown` 或 `not_started` 约束，不构成法定规划、工程批准、采购、预算或政府背书。
+
+## 一页执行摘要
+
+| 评审问题 | 京张开源脉冲的回答 | 可核验成果 |
+| --- | --- | --- |
+| 核心命题 | AI 不是装置数量，而是可被公众看见、质疑、退出、复盘的城市过程；人类服务先于模型服务 | 14 条场景—空间—运营矩阵、Relay Receipt、公共状态板 |
+| 空间响应 | 一带三节点、两翼接口、蓝绿慢行环，把众智园、AI 原点社区和大钟寺组织成不同能力的公共节点 | 9 类 GeoJSON、双语图件、A3/A0、离线 HTML、视觉索引 |
+| 实施起点 | 先锁定官方/权属证据，再做被动样机、风热水与生命线协调、有人限时窗口，最后公开保留/改造/退出 | 8 项运维行动包、5 道建设就绪闸门、5 本资源账 |
+| 公共价值 | 老年人、残障者、照护者、夜班者、访客、开发者和维护者都有纸面/人工/无 App 路径；不以平均分掩盖分组伤害 | 8 类公共使用者矩阵、7 类参与镜头、公共利益审计 |
+| 证据状态 | 结构化几何和历史序列可复算；风、热、空气、蓝绿可达、水风险、无障碍与居民体验在缺少现场证据时保持 `unknown` | metrics、assumptions、wind-health protocol、risk-register |
+| 决策边界 | S4 是模型中的低后悔候选，不是“所有指标都 90+”的现场承诺；任何扩容都要重新过专业、权利、安全、维护和公共性闸门 | 50,000 次抽样、风险登记、建设/参与状态日志、完整版权台账 |
+
+**署名：许丙南。** 这是一份可继续被专业团队、运营团队、公众和维护人员共同修改的概念方案，不把 repository intake、Review Agent 分数或本地自检写成获奖、发布、实施或政府认可。
 
 ## 设计依据与资料清单
 
@@ -22,6 +37,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
 - 当前登记摘要：formal 可用资料 5 条，背景资料 0 条，provisional-only 资料 1 条。
+
+### 生成与复核方法
+
+1. **先读任务和资料边界：**以公告、agent taskbook、site package、source registry、标准快照和缺口清单建立唯一证据入口；未登记的网页、地图、个人数据、企业材料和远程素材不进入提交包。
+2. **再生成空间与指标：**在 provisional boundary 内用同一组 GeoJSON 派生用地、建筑、道路、绿地、公共空间和分期，在 EPSG:4548 复算面积/长度；所有可计算值写入 metrics，无法证明的值保持 `unknown`，不由效果图反推。
+3. **再做状态实验：**用 S0–S4、五类权重、八类压力和 50,000 次固定种子抽样比较“最低后悔”，把断网、断电、急停、降容、维护逾期、雨后复原和退出写成触发器，而不是预测结果。
+4. **最后做交接复核：**每个场景回到 RACI、SLA、最小数据、非 AI 等价服务、停止条件、维护和权利记录；报告、视觉索引、manifest、版权台账和本地自检必须在改动后一起刷新。现场勘察、公众参与、专业签审和法定程序仍是下一阶段外部证据。
 - agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源。[source:PROCESSED-FACT-PACK] 只帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；所有事实判断仍回到 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]。
@@ -266,6 +288,8 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 正式深化时，agent 还应把每个指标分为三类：第一类是可由提交几何直接复算的空间指标，例如边界面积、绿地比例、公共空间比例、建筑基底面积和分期面积；第二类是需要官方控规或任务书附件支撑的管控指标，例如容积率、建筑高度、建筑密度、退线、道路红线和设施标准；第三类是需要运营或产业数据持续校准的绩效指标，例如 AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度和场景使用频次。三类指标应分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`，避免把运营愿景误写成审定规划条件。
 
 ## 风险、版权与合规说明
+
+`risk.json` 将临时几何与规则、风热空气与具身智能、排水实施、包容性、数据隐私与清权、活动接受度、维护成本、空间接口登记为 8 个可校验风险维度 [metric:risk_class_count]；每类都有当前状态、触发器、证据、缓解、停止条件和责任角色。它是释放闸门，不是安全论证、工程计算、保险或审批文件。
 
 ### 本方案的空间承诺：以“可验证的公共性”替代“AI 装置秀”
 
