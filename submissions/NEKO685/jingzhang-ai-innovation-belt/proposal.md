@@ -37,6 +37,8 @@ iteration: "v1.0"
 
 命名体系采用"一带三核、双翼协同"结构:一带即**京张智脉**(文化带·体验带·创新带三重叠加);三核分别为**众智园全栈加速核**(AI全栈自主创新体系与AI治理全球话语权)、**AI原点社区生态核**(世界级AI创新生态)、**大钟寺智能经济核**(智能原生新业态);两翼为**中关村科技服务翼**(要素全球化配置、中关村IP与资本赋能)与**小月河场景赋能翼**(AI场景赋能与智能化AI活力城市)。Logo方向:以人字形折返轨道的几何形为骨架,叠加二进制脉冲波形,形成"人字轨+脉冲"双关符号;色彩系统以钢轨灰(历史)、海淀蓝(科技)、创新绿(生态)三色为主;视觉识别延展至导视、场景卡、活动体系与公共空间组件库。上述命名与Logo均为概念方向,不含任何商标或版权素材,待专业品牌团队深化([agent.1]对应[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
 
+![Logo原型方向:人字轨·智脉(agent.1)](assets/figures/logo-prototype.png)
+
 ### 三大定位、五大功能与三区两翼协同回路
 
 三大定位为百年京张文化带、都市AI生活体验带、AI融合创新带;五大功能为AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权。三区两翼协同回路设计为:**策源—加速—转化—反哺**闭环:AI原点社区依托近校优势承接高校策源([data:geometry/key_areas.geojson#PROV-KEY-002]),众智园承接全栈自主创新与治理标准制定([data:geometry/key_areas.geojson#PROV-KEY-001]),大钟寺承接智能经济转化与国际交往([data:geometry/key_areas.geojson#PROV-KEY-003]);中关村科技服务翼提供资本、IP与要素配置,小月河场景赋能翼提供应用测试与活力场景,两翼反哺三核形成协同回路([source:AGENT-TASKBOOK])。这一回路落到空间上即"一带三核、双翼协同、蓝绿复合环"总体结构([depth:overall_spatial_structure]),由`compliance_matrix.json`中agent.1条目与`visual/index.html`任务覆盖区共同呈现。
@@ -45,16 +47,30 @@ iteration: "v1.0"
 
 本方案研究并引用6个全球AI创新生态案例作为可转化经验([source:AGENT-TASKBOOK],[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]):
 
-| 案例 | 地区 | 核心机制 | 海淀可转化经验 |
-| --- | --- | --- | --- |
-| 肯德尔广场 | 美国波士顿剑桥 | 高校实验室-企业孵化-风投在步行半径内闭环 | AI原点社区强化近校步行半径内的成果转化街 |
-| 国王十字更新区 | 英国伦敦 | 老铁路枢纽区整体更新为知识经济街区 | 京张遗址公园沿线参照"铁路遗产+知识经济"双主线 |
-| 纬壹科技城 | 新加坡 | 政府主导园区-城市一体,生物医药与智能产业混合 | 众智园借鉴"全栈自主+治理标准"国家平台定位 |
-| 硅谷沙丘路模式 | 美国加州 | 风险资本与开放式创新网络驱动 | 中关村科技服务翼强化资本、IP、要素配置功能 |
-| 云栖小镇 | 中国杭州 | 以开源大会IP带动产业集聚与场景开放 | 小月河场景赋能翼借鉴"活动IP+场景开放"运营 |
-| 首尔数字媒体城 | 韩国首尔 | 数字内容产业集聚与公共体验空间复合 | 大钟寺借鉴数字内容消费与公共体验复合业态 |
+| 案例 | 地区 | 核心机制 | 海淀可转化经验 | 来源登记 |
+| --- | --- | --- | --- | --- |
+| 肯德尔广场 | 美国波士顿剑桥 | 高校实验室-企业孵化-风投在步行半径内闭环 | AI原点社区强化近校步行半径内的成果转化街 | [source:CASE-KENDALL-SQUARE] |
+| 国王十字更新区 | 英国伦敦 | 老铁路枢纽区整体更新为知识经济街区 | 京张遗址公园沿线参照"铁路遗产+知识经济"双主线 | [source:CASE-KINGS-CROSS] |
+| 纬壹科技城 | 新加坡 | 政府主导园区-城市一体,生物医药与智能产业混合 | 众智园借鉴"全栈自主+治理标准"国家平台定位 | [source:CASE-ONE-NORTH] |
+| 硅谷沙丘路模式 | 美国加州 | 风险资本与开放式创新网络驱动 | 中关村科技服务翼强化资本、IP、要素配置功能 | [source:CASE-SANDHILL-ROAD] |
+| 云栖小镇 | 中国杭州 | 以开源大会IP带动产业集聚与场景开放 | 小月河场景赋能翼借鉴"活动IP+场景开放"运营 | [source:CASE-YUNQI-TOWN] |
+| 首尔数字媒体城 | 韩国首尔 | 数字内容产业集聚与公共体验空间复合 | 大钟寺借鉴数字内容消费与公共体验复合业态 | [source:CASE-SEOUL-DMC] |
 
-案例研究结论:海淀创新带的核心竞争力在"高校策源×资本要素×开源生态"三重叠加,空间策略应把这三者组织进步行可达的创新单元([depth:overall_spatial_structure]);所有案例经验均以概念建议形式转化,不构成产业招商或投资承诺。
+案例研究结论:海淀创新带的核心竞争力在"高校策源×资本要素×开源生态"三重叠加,空间策略应把这三者组织进步行可达的创新单元([depth:overall_spatial_structure]);所有案例经验均以概念建议形式转化,不构成产业招商或投资承诺。6个案例的来源(官网/公共条目)、访问日期(2026-08-08)与用途限定已逐项登记于 `sources.json`(`CASE-*` 条目),仅作背景研究资料,不作为空间或产业结论依据,亦不构成已核验比较研究([source:CASE-KENDALL-SQUARE],[source:CASE-KINGS-CROSS],[source:CASE-ONE-NORTH],[source:CASE-SANDHILL-ROAD],[source:CASE-YUNQI-TOWN],[source:CASE-SEOUL-DMC])。
+
+![AI创新生态图谱(agent.2)](assets/figures/ecosystem-map.png)
+
+### 区域协同矩阵(agent.2/agent.5)
+
+方案提出与北京及京津冀创新空间的协同矩阵(概念建议,待专业团队深化):与**北纬社区**在AI伦理与安全治理议题上共建交流机制;与**未来科学城**在基础研究、大科学装置与算力供给上形成"策源—应用"分工;与**怀柔科学城**在原始创新与人才交流上联动;与**经开区**在智能网联汽车、机器人等场景测试上互补;与**京津冀**城市群在产业梯度转移与场景外溢上衔接。协同机制以"活动联动、数据协议、场景互认、人才互流"四类接口为原则,不涉及行政与财政安排([source:AGENT-TASKBOOK],[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
+
+| 协同对象 | 协同方向 | 接口机制(概念) | 依赖条件 |
+| --- | --- | --- | --- |
+| 北纬社区 | AI伦理、安全治理对话 | 年度治理圆桌、评测互认 | 双方意愿、治理框架 |
+| 未来科学城 | 基础研究、算力互补 | 算力券试点、联合实验室 | 算力资源、数据协议 |
+| 怀柔科学城 | 原始创新、人才交流 | 人才驿站、开放课题 | 科研院所合作 |
+| 经开区 | 场景测试互补 | 测试场互认、路测协作 | 智能网联政策 |
+| 京津冀 | 产业梯度与场景外溢 | 场景清单共享、园区结对 | 区域协作机制 |
 
 ### 未来城市形态与AI原生场景研究方向
 
@@ -92,6 +108,8 @@ iteration: "v1.0"
 
 三处重点区域的详细设计深度由[depth:three_key_area_detailed_design]校核,空间证据分别对应`geometry/key_areas.geojson#PROV-KEY-001/002/003`,所有拆改留与业态结论均为概念建议,等待官方现状底图、权属与控规数据确认([depth:risk_missing_data])。
 
+![三处重点区空间原型:概念体块与首层界面(agent.4)](assets/figures/key-area-prototypes.png)
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 ### 创新生态与人才画像
@@ -123,6 +141,22 @@ iteration: "v1.0"
 
 场景-空间-运营映射由`compliance_matrix.json`中agent.3条目与`visual/index.html`AI场景区呈现;每张场景卡均写明服务对象、空间位置、数据边界与人工复核机制([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]),其中3张产业测试验证场景均标注为测试性质,不构成已批准运营([metric:scenario_node_count])。
 
+![AI场景卡总览(agent.3)](assets/figures/scenario-cards.png)
+
+### 产业测试验证场景治理细则(agent.3)
+
+三处产业测试验证场景(02安全治理沙盒、03端侧算力驿站、04智能路口与无人配送验证道)补充治理细则如下(概念建议,待专业团队深化):
+
+| 治理要素 | 02 安全治理沙盒 | 03 端侧算力驿站 | 04 智能路口/无人配送 |
+| --- | --- | --- | --- |
+| 数据治理 | 评测数据脱敏、分级存储、禁止导出 | 端侧处理优先,原始数据不出设备 | 路测数据匿名化,按路段授权采集 |
+| 人工复核 | 评测报告双人复核,专家会签 | 服务日志周审,异常人工介入 | 路测安全员在场,事件逐起复核 |
+| 评测KPI(示例) | 误报率、漏报率、通过率 | 时延、可用率、能耗 | 接管率、碰撞率、准点率 |
+| 事故处置 | 立即停止、隔离、上报 | 断链保护、熔断机制 | 紧急制动、保险与责任流程 |
+| 停止条件 | 任一KPI连续2轮不达标 | 安全事件≥2起/月 | 安全事件≥1起即停测 |
+
+测试场景的准入、授权、保险与审批依赖均列为待确认事项,不构成已批准运营或工程可行性结论([depth:risk_missing_data])。
+
 ## 用地、建筑规模与拆改留方案
 
 用地分类依据《国土空间调查、规划、用途管制用地用海分类指南》([standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]),共26个地块覆盖提交边界,分类包括:科研用地(0802)、产业服务与商业用地(05)、城镇住宅用地(0701)、社区服务设施用地(0702)、教育用地(0804)、公园绿地(1401)、留白用地(16)等([data:geometry/land_use.geojson#LU-001],[metric:land_use_parcel_count])。科研与产业服务用地集中布局于三核及遗址公园带两侧,支撑AI全栈创新与智能经济业态;居住与社区服务用地布局于两翼,服务人才与居民;公园绿地沿遗址公园带与清河—小月河形成连续蓝绿网络([metric:green_space_area_sqm],[metric:green_ratio])。
@@ -149,28 +183,40 @@ iteration: "v1.0"
 2. **开源成果展示廊**(AI原点社区):沿开源广场设置的开源项目贡献展示长廊,集成智能体贡献荣誉墙与年度开源成果展([data:geometry/public_space.geojson#PUBLIC-002]);
 3. **智能体里程碑墙**(大钟寺站前):以时间轴形式记录AI创新带建设里程碑与开发者荣誉,站城一体公共艺术节点([data:geometry/public_space.geojson#PUBLIC-003])。
 
-荣誉展示体系配套公共空间组件库(导视、座椅、灯杆、艺术装置、数字屏),统一"人字轨·智脉"视觉识别;所有地标、Logo、字体与图像素材均为原创概念或公共领域素材,无版权风险([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。城市风貌延续京张铁路工业遗产气质与中关村现代创新气质,形成"历史钢轨灰—海淀科技蓝—创新生态绿"基调,建筑界面、屋顶形态与景观节点按概念引导执行([depth:height_massing_character])。
+荣誉展示体系配套公共空间组件库(导视、座椅、灯杆、艺术装置、数字屏),统一"人字轨·智脉"视觉识别;所有地标、Logo、字体与图像素材均为原创概念或公共领域素材,待专业团队深化([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。城市风貌延续京张铁路工业遗产气质与中关村现代创新气质,形成"历史钢轨灰—海淀科技蓝—创新生态绿"基调,建筑界面、屋顶形态与景观节点按概念引导执行([depth:height_massing_character])。
+
+![公共空间组件库样张(agent.4)](assets/figures/component-library.png)
+
+### 包容性与无障碍设计(P2)
+
+方案补充包容性设计要求(概念建议,待无障碍专项审查):公共空间与慢行系统按无障碍标准预留连续盲道、缓坡与低位服务设施;数字场景提供**非数字替代服务**(人工窗口、电话预约),避免数字排斥;夜间公共空间以分级照明保障安全并降低光污染;更新项目设置**公众参与与反馈闭环**(公示、意见征集、回访);针对儿童、老年人、残障人士与低收入服务人员补充差异化空间与设施需求评估,列入`assumptions.json`待补资料清单([depth:risk_missing_data],[standard:MOHURD-URBAN-DESIGN-MEASURES])。
 
 ## 更新项目清单、实施政策与分期计划
 
 更新项目清单(概念建议,位置对应图层):
 
-| 项目编号 | 项目名称 | 类型 | 位置 | 依赖条件 | 分期 |
-| --- | --- | --- | --- | --- | --- |
-| JZ-01 | 人字轨纪念广场 | 公共空间 | 遗址公园北段([data:geometry/public_space.geojson#PUBLIC-001]) | 文保、绿地、交通复核 | 一期 |
-| JZ-02 | 开源广场与成果展示廊 | 公共空间/文化 | AI原点社区([data:geometry/public_space.geojson#PUBLIC-002]) | 权属、校区协调 | 一期 |
-| JZ-03 | 站前智能客厅 | 公共空间/交通 | 大钟寺站前([data:geometry/public_space.geojson#PUBLIC-003]) | 轨道一体化、交叉口工程 | 二期 |
-| JZ-04 | 众智园测试沙盒 | 产业服务 | 众智园([data:geometry/key_areas.geojson#PROV-KEY-001]) | 审批、安全标准 | 一期 |
-| JZ-05 | 端侧算力驿站网络 | 新基建 | 总体设计范围节点([data:geometry/buildings.geojson#BLDG-001]) | 能源、算力、安全 | 二期 |
-| JZ-06 | 遗址公园慢行环贯通 | 蓝绿/交通 | 遗址公园带([data:geometry/green_space.geojson#GREEN-001]) | 道路红线、桥下空间 | 二期 |
-| JZ-07 | 小月河无人配送验证道 | 交通测试 | 小月河翼([data:geometry/roads.geojson#ROAD-001]) | 交通审批、测试许可 | 二期 |
-| JZ-08 | 两翼人才社区微更新 | 城市更新 | 两翼居住区([data:geometry/land_use.geojson#LU-001]) | 权属、民意参与 | 三期 |
+| 项目编号 | 项目名称 | 类型 | 位置 | 主体类型 | 成本级别 | 审批依赖 | 验收KPI(示例) | 风险 | 阶段转换条件 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | 人字轨纪念广场 | 公共空间 | 遗址公园北段([data:geometry/public_space.geojson#PUBLIC-001]) | 政府+专业团队 | 中 | 文保、绿地审批 | 建成面积、年访量 | 文保限制 | 文保线确认后启动 |
+| JZ-02 | 开源广场与成果展示廊 | 公共空间/文化 | AI原点社区([data:geometry/public_space.geojson#PUBLIC-002]) | 政府+社区共建 | 中 | 权属、校区协调 | 活动场次/年 | 校区边界 | 共建协议签署 |
+| JZ-03 | 站前智能客厅 | 公共空间/交通 | 大钟寺站前([data:geometry/public_space.geojson#PUBLIC-003]) | 轨道+政府 | 高 | 轨道一体化、工程审批 | 步行连通率 | 工程复杂 | 轨道改造立项 |
+| JZ-04 | 众智园测试沙盒 | 产业服务 | 众智园([data:geometry/key_areas.geojson#PROV-KEY-001]) | 平台+产业联盟 | 中 | 安全标准、审批 | 测试批次/年 | 安全合规 | 标准框架获批 |
+| JZ-05 | 端侧算力驿站网络 | 新基建 | 总体设计范围节点([data:geometry/buildings.geojson#BLDG-001]) | 运营商+政府 | 中 | 能源、算力、安全 | 站点数、可用率 | 能耗 | 试点站点验收 |
+| JZ-06 | 遗址公园慢行环贯通 | 蓝绿/交通 | 遗址公园带([data:geometry/green_space.geojson#GREEN-001]) | 政府 | 中 | 道路红线、桥下空间 | 贯通长度、断点数 | 红线未定 | 红线确认 |
+| JZ-07 | 小月河无人配送验证道 | 交通测试 | 小月河翼([data:geometry/roads.geojson#ROAD-001]) | 企业+政府 | 中 | 交通审批、测试许可 | 里程、事故率 | 路权争议 | 测试许可获批 |
+| JZ-08 | 两翼人才社区微更新 | 城市更新 | 两翼居住区([data:geometry/land_use.geojson#LU-001]) | 政府+居民协商 | 低 | 权属、民意参与 | 满意度、参与率 | 民意分歧 | 公众参与完成 |
 
-实施政策建议(概念建议,不构成政府承诺):城市更新统筹实施机制、产业空间弹性供给、场景开放与数据授权规则、公共参与与开发者社区共建机制([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。分期计划对应`geometry/phasing.geojson`三阶段([data:geometry/phasing.geojson#PHASE-001],[metric:phasing_phase_count],[depth:phasing_implementation]):一期(2027年前)三核先行,以轻量设施、运营活动与服务平台启动;二期(2029年前)遗址公园活力带与慢行环贯通,测试场景开放;三期(2032年前)两翼协同更新与留白用地渐进开发。项目清单与分期在`compliance_matrix.json`中agent.6条目挂接。
+分期与触发条件([depth:phasing_implementation]):一期(2027年前)三核先行,触发条件为官方 polygon 与控规条件确认、共建协议签署、安全标准框架获批;二期(2029年前)活力带贯通与测试场景开放,触发条件为道路红线确认、测试许可获批、试点站点验收;三期(2032年前)两翼协同更新,触发条件为公众参与完成、权属协调落实。任一阶段不满足触发条件则顺延,并设**失败退出机制**(试点不达标即停止、转换功能或移交专业团队重审)。分期对应`geometry/phasing.geojson`三阶段([data:geometry/phasing.geojson#PHASE-001],[metric:phasing_phase_count])。
 
 ### 全球AI创新活动体系与长期运营(agent.6)
 
-年度活动体系(概念建议):**京张AI创新周**(年度旗舰,含开源大会、路演节、测试赛、公众体验日)、季度开发者马拉松、月度开源集市与常设成果发布档期;活动品牌与"人字轨·智脉"视觉体系统一。开发者社区运营:依托开源广场与发布厅建立开发者驻地、贡献积分与荣誉墙机制;场景开放运营:测试沙盒、算力驿站、无人配送验证道按批次开放申请;国际传播与招引转化:以创新周与路演客厅为窗口,建立"活动曝光→项目路演→企业服务→落地转化"路径([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。所有活动、招商与资金安排均为概念建议或深化方向,不表述为已确定政府安排;运营机制与转化路径写入`compliance_matrix.json`agent.6条目与`visual/index.html`任务覆盖区。
+年度活动体系(概念建议):**京张AI创新周**(年度旗舰,含开源大会、路演节、测试赛、公众体验日)、季度开发者马拉松、月度开源集市与常设成果发布档期;活动品牌与"人字轨·智脉"视觉体系统一。开发者社区运营:依托开源广场与发布厅建立开发者驻地、贡献积分与荣誉墙机制;场景开放运营:测试沙盒、算力驿站、无人配送验证道按批次开放申请;国际传播与招引转化:以创新周与路演客厅为窗口,建立"活动曝光→项目路演→企业服务→落地转化"路径([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
+
+**运营治理与绩效框架**(概念建议):设立多方共治的运营联席机制(政府、园区运营方、开发者社区、公众代表),明确活动预算来源为"公共投入+赞助+服务收入"三类并定期披露;绩效以年度KPI衡量(活动参与人次、场景入驻企业数、成果转化数、公众满意度),每年评估一次,连续两年未达标即调整运营策略或更换运营主体;社区公约与数据使用规则公开可查。所有活动、招商、资金与治理安排均为概念建议或深化方向,不表述为已确定政府安排;运营机制与转化路径写入`compliance_matrix.json`agent.6条目与`visual/index.html`任务覆盖区。
+
+### 文化叙事与空间故事线(agent.5)
+
+文化叙事系统采用"三层文化、一条主线"结构([source:AGENT-TASKBOOK],[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]):**百年京张铁路文化**(自强、创造、民族工程精神——清华园站、人字形折返线、工业遗产构筑物)→**中关村创新文化**(科教报国、敢为人先、创业传奇)→**AI新文化**(开源、协作、人机共生、全球共创)。空间故事线自北向南组织为"起源—共振—爆发"三段:遗址公园北段讲述京张铁路起源(人字轨纪念广场),中段讲述中关村与AI共振(开源广场、成果展示廊),南段讲述智能经济爆发(大钟寺站前客厅、里程碑墙)。导视与符号系统采用"人字轨"母题延展(铺装纹样、灯杆造型、座椅单元、艺术装置),统一于Logo视觉识别;国际传播文案提供中英双语核心表述:中文"百年轨道,一脉相承",英文"One Century of Track, One Pulse of Intelligence"([agent.5]对应[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -182,9 +228,9 @@ iteration: "v1.0"
 
 ## 风险、版权与合规说明
 
-风险识别([depth:risk_missing_data]):(1)资料风险:官方红线、控规条件、现状底图、权属与市政资料缺失,方案所有空间结论为概念建议,不得作为审批或实施依据([data:geometry/constraints.geojson#CONSTRAINTS-001]);(2)技术风险:无人配送、端侧算力等场景依赖技术成熟度,测试场景须按审批开放;(3)公众风险:更新项目须公众参与,避免低扰动承诺落空;(4)运营风险:活动与招商机制为概念建议,转化效果待实践检验;(5)合规风险:方案不含任何非公开资料、个人隐私或未授权素材,全部图形、Logo与文本为原创概念或公开素材([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
+风险识别([depth:risk_missing_data]):(1)资料风险:官方红线、控规条件、现状底图、权属与市政资料缺失,方案所有空间结论为概念建议,不得作为审批或实施依据([data:geometry/constraints.geojson#CONSTRAINTS-001]);(2)技术风险:无人配送、端侧算力等场景依赖技术成熟度,测试场景须按审批开放;(3)公众风险:更新项目须公众参与,避免低扰动承诺落空;(4)运营风险:活动与招商机制为概念建议,转化效果待实践检验;(5)合规风险:方案不含非公开资料、个人隐私或未授权素材;全部图形、Logo与文本为AI agent原创程序化生成或公开素材,具体素材来源、字体、地图与生成方法逐项登记于`report/copyright_statement.md`,素材权利状态以该声明为准,不作超出证据的绝对权利担保([standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK])。
 
-版权说明见`report/copyright_statement.md`:本方案由AI agent生成,引用来源全部登记于`sources.json`,生成方式与限制在`assumptions.json`中披露;素材均无第三方版权风险。本方案不声称官方批准、审定控规、最终权属或保证实施;涉及规划、工程、法律与运营的专业结论均需专业团队复核后深化([depth:risk_missing_data],[standard:MOHURD-ARCH-DESIGN-DEPTH-2016])。
+版权说明见`report/copyright_statement.md`:本方案由AI agent生成,引用来源全部登记于`sources.json`(含6个全球案例的逐项来源、访问日期与用途限定),生成方式与限制在`assumptions.json`中披露;逐文件资产清单(文本/几何/图像/PDF/HTML)的作者、生成方式、素材来源与许可状态均已列明,无第三方专有素材,但不作超出可核实范围的绝对担保。本方案不声称官方批准、审定控规、最终权属或保证实施;涉及规划、工程、法律与运营的专业结论均需专业团队复核后深化([depth:risk_missing_data],[standard:MOHURD-ARCH-DESIGN-DEPTH-2016])。
 
 ## 参考资料
 
@@ -194,5 +240,6 @@ iteration: "v1.0"
 - `brief/site-package/geometry/provisional_boundaries.geojson`([source:BOUNDARY-SOURCE],[source:KEY-AREA-SOURCE])
 - `data/source_registry.json`([source:SOURCE-REGISTRY])
 - `data/processed/agent_fact_pack.md`([source:PROCESSED-FACT-PACK])
-- `brief/site-package/standards/standards.json`与`references/`本地标准快照
+- `brief/site-package/standards/standards.json`与`references/`本地标准快照([source:STD-MOHURD-URBAN-DESIGN],[source:STD-MOHURD-CONTROL-PLAN],[source:STD-MNR-LAND-USE])
+- 全球案例来源登记([source:CASE-KENDALL-SQUARE],[source:CASE-KINGS-CROSS],[source:CASE-ONE-NORTH],[source:CASE-SANDHILL-ROAD],[source:CASE-YUNQI-TOWN],[source:CASE-SEOUL-DMC])
 - 机器可读引用索引:`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json`
