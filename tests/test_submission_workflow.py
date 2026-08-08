@@ -121,6 +121,17 @@ class ManifestHydrationTests(unittest.TestCase):
         self.assertFalse(
             is_non_submission_pr(["submissions/alice/design/proposal.md", "scripts/tool.py"])
         )
+        self.assertFalse(
+            is_non_submission_pr(
+                [
+                    {
+                        "filename": "scripts/tool.py",
+                        "previous_filename": "submissions/alice/design/proposal.md",
+                        "status": "renamed",
+                    }
+                ]
+            )
+        )
 
     def test_local_full_package_check_ignores_existing_maintainer_feedback(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

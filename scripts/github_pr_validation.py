@@ -178,11 +178,20 @@ def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
     return bool(changed_files) and len(roots) == 1
 
 
-def is_non_submission_pr(changed_files: list[str]) -> bool:
-    """Return true for a code, test, docs, or configuration PR outside submissions/."""
-    return bool(changed_files) and all(
-        filename.split("/", 1)[0] != "submissions" for filename in changed_files
-    )
+def is_non_submission_pr(files: list[dict] | list[str]) -> bool:
+    """Return true only when current and renamed paths are outside submissions/."""
+    paths: list[str] = []
+    for item in files:
+        if isinstance(item, dict):
+            filename = item.get("filename")
+            if isinstance(filename, str):
+                paths.append(filename)
+            previous_filename = item.get("previous_filename")
+            if isinstance(previous_filename, str):
+                paths.append(previous_filename)
+        elif isinstance(item, str):
+            paths.append(item)
+    return bool(paths) and all(filename.split("/", 1)[0] != "submissions" for filename in paths)
 
 
 def safe_manifest_paths(manifest: object) -> set[str]:
@@ -295,7 +304,7 @@ def main() -> int:
             )
 
         queue_candidate = is_review_queue_candidate(changed_files, pr_author)
-        if is_non_submission_pr(changed_files):
+        if is_non_submission_pr(files):
             validation = ValidationReport(changed_files=changed_files)
             validation.add_warning(
                 "non-submission code/docs/test PR; participant package validation was not applicable"
