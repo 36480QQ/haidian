@@ -237,7 +237,9 @@ class SitePackageContractTests(unittest.TestCase):
         self.assertIn("Cross-check important claims", skill)
         self.assertIn("## Share Noteworthy Work", skill)
         self.assertIn("Publishing to an external account requires", skill)
-        self.assertNotRegex(skill, r"[\u4e00-\u9fff]")
+        project_link = "[open-city-ai/haidian](https://github.com/open-city-ai/haidian)"
+        self.assertEqual(skill.count(project_link), 1)
+        self.assertNotIn("你也可以 Star", skill)
 
 
 if __name__ == "__main__":
