@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "46ab23cef0bc7afc387bbcc3cc9267576518845ff64b73fc534b7b2c74906155"
+      "sha256": "784957fd8d1de578c45050928d7048fd854adab0077d03e376c0a8b6cc8206c7"
     },
     {
       "path": "agent.json",
@@ -74,10 +74,16 @@
       "sha256": "5b03c25751d4dd67f0adfd54f34ae1575ca04e24ad9d08882da6f05188e14ce0"
     },
     {
+      "path": "visual/assets/innovation-register.json",
+      "role": "innovation_evidence",
+      "required": true,
+      "sha256": "5ba1c7d5a2f9ca3b34383cf9c6a9337384f488a4a92cd7f3a597130c987a6c98"
+    },
+    {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c7e6f55067c84e70d27e37df0dc9d8cfd8217be58d423ce4af5c862d02f33c01"
+      "sha256": "0c97dcc74b4cfb08b3af78cce7e76964d40d37d831e4ba7096185ceac164308f"
     },
     {
       "path": "report/narrative.md",
