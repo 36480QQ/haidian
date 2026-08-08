@@ -45,6 +45,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 4. **裁决：**由独立复核者比较是否保留、改造、扩散或退出；任何场景结果都不能继承给另一构件。
 5. **回执：**公开版本、来源、限制、删除/撤回和维护记录；失败时冻结扩散并恢复被动服务。
 
+**首个 90 天的建议顺序（不是已确定的实施时序）：**第 0—30 天只做 CR-01 资料/场地锁定、现场基线和权利责任清单；第 31—60 天在 CR-01 通过后做 CR-02 被动构件样机与 CR-03 风热水/生命线协调；第 61—90 天只有 CR-01—CR-03 全部通过、权利记录齐全且有人值守兜底时，才可考虑一个 CR-04 有界窗口。任一关键条件缺失，回到复核、返修或普通公共服务，不进入扩容。
+
 这一协议包含 [metric:civic_pulse_stage_count] 个阶段、[metric:civic_pulse_station_count] 个站点和 [metric:proof_mile_component_count] 个构件。
 
 它还登记 [metric:proof_mile_station_handoff_count] 个站点交接与 [metric:risk_class_count] 个风险维度；这些数量是包内记录数，不是现场绩效或审批结论。

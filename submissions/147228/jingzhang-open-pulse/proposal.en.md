@@ -45,6 +45,8 @@ The three areas correspond to PROV-KEY-001, PROV-KEY-002 and PROV-KEY-003; these
 4. **Decide:** independent reviewers compare retain, repair, scale or retire; no scenario result is inherited by another component.
 5. **Receipt:** publish version, sources, limits, deletion/withdrawal and maintenance records; on failure freeze scale and restore passive service.
 
+**Suggested first 90-day sequence (not a committed implementation schedule):** days 0–30 only lock CR-01 evidence/site conditions and the field, rights and responsibility registers; days 31–60, after CR-01 passes, run the CR-02 passive-component mock-up and CR-03 wind/heat/water/lifeline coordination; days 61–90 consider one CR-04 bounded window only if CR-01–CR-03 pass, rights records are complete and staffed fallback exists. Any missing critical condition returns the work to review, repair or ordinary public service rather than scale-up.
+
 The machine-readable counts are [metric:civic_pulse_stage_count] stages, [metric:civic_pulse_station_count] stations, [metric:proof_mile_component_count] components, [metric:proof_mile_station_handoff_count] station handoffs and [metric:risk_class_count] risk dimensions. These are package record counts, not field performance or approval conclusions.
 
 The full formal dossier follows with design basis, three scopes, key areas, ecosystem and scenarios, land use, transport, municipal and blue-green systems, implementation, metrics, risk and references. Complete sources, standards, depth, data and stop rules remain in structured attachments.
