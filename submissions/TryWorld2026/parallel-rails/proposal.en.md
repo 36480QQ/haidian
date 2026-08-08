@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A first-principles concept proposal built on 'the gauge is the standard': the Jing-Zhang Railway made China's first autonomous standard choice (1435mm gauge), and the AI Innovation Belt makes the second—defining compute, data, open-source and governance standards for the intelligent era. Spatial translation: one spine (Jing-Zhang heritage park corridor) as roadbed, two wings as parallel rails, three stations as nodes; with topologically complete land-use partition, EPSG:4548 recalculated metrics, 12 scenario cards, 6 personas, 5 landmarks and a Gauge Day operation system."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.2.0"
+iteration: "v0.2.1"
 ---
 
 # Parallel Rails: From Iron Rail to Intelligence Rail The Parallel Rails
