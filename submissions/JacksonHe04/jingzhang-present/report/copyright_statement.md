@@ -17,6 +17,7 @@
 |`geometry/land_use`、`buildings`、`roads`、`green_space`、`public_space`、`constraints`、`phasing`|在提交边界内原创生成的概念设计图层|作为方案内容 CC-BY-4.0 开放|不含 OSM 或第三方地块/建筑数据|GeoJSON `source_type` 与 manifest|
 |`geometry/site_boundary.geojson`、`key_areas.geojson`|保留组织方站点包的临时几何与来源说明|继承源资料边界；不主张为提交者原创或官方红线|来源为 `brief/site-package/geometry/provisional_boundaries.geojson`|图层属性、`sources.json`|
 |`agent.json`、矩阵、指标、假设和自检 JSON|本次结构化生成|原创结构化响应，CC-BY-4.0|标准 ID 与任务 ID 来自组织方公开包|各 JSON 与 schemas 校验|
+|`risk.json`、`visual/assets/*.json`|由在场契约、行动包、Gate、资源账与风险登记的同一内容源生成|原创机器证据，CC-BY-4.0|合成样例明确标记，未使用真实个人或运营数据|JSON Schema、manifest 与正文交叉引用|
 |网页显示与 PDF 字形|使用 macOS 系统 PingFang / Arial Unicode 进行本地显示或字形嵌入|不随提交包再分发字体文件；字体权利不因本声明改变|系统字体|提交目录不存在字体文件|
 |全球案例与国际原则|仅原创文字概括并链接官方页面|不复制原网页视觉或长段原文|来源权利归各发布者|`sources.json` 中逐条 URL|
 
