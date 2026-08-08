@@ -170,8 +170,20 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ## 更新项目清单、实施政策与分期计划
 
-方案符合 [depth:renewal_project_list] 与 [depth:phasing_implementation] 的规范，提出“三年见成效、五年成示范、十年树标杆”的分期实施计划：
+方案符合 [depth:renewal_project_list] 与 [depth:phasing_implementation] 的规范，提出“三年见成效、五年成示范、十年树标杆”的分期实施计划。为确保项目落地与政策透明度，我们对各阶段重大工程补充了详细的责任部门建议与潜在风险控制措施。本更新清单所列项目（JZ-01至JZ-06）不仅反映了短期内的基础设施缺口修复（如道路断点与公园生态），还明确了中远期的算力设施部署与社区智慧治理运营职责。我们将空间几何与分期安排紧密结合，从而为后期规划审批和招商引资提供扎实的物理与机制抓手：
 
+| 项目编号 | 项目名称 | 核心概念内容 | 实施分期 | 责任角色与审批 | 成本类别与资金 | 运维责任与KPI | 证据落点 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | 慢行断点缝合工程 | 建议探索跨环路人行通道建设 | 近期 1-2 年 | 规自委/交通委审批 | 政府固投/基建专项 | 属地街道/连通率100% | [data:geometry/roads.geojson#ROAD-001] |
+| JZ-02 | 清河低碳水岸生态 | 清河岸线生态概念改造 | 近期 1-2 年 | 水务局/园林局审批 | 绿色债券/PPP | 公园管理处/绿地存活率 | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-03 | 原点近校成果转化 | 探索老旧厂房改造模式 | 中期 3-5 年 | 区发改委/产学研办 | 社会资本/高校基金 | 运营公司/转化率提升 | [data:geometry/buildings.geojson#BLDG-001] |
+| JZ-04 | 大钟寺 TOD 连廊 | 探讨大钟寺站点立体步行连廊 | 中期 3-5 年 | 轨交公司/发改委 | 综合开发收益反哺 | 物业管理/行人密度达标 | [data:geometry/public_space.geojson#PUBLIC-001] |
+| JZ-05 | 众智园算力中心 | 概念规划低碳算力硬件设施 | 中期 3-5 年 | 工信局/环保局 | 企业自筹/产业补贴 | 科技企业/PUE<1.2 | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| JZ-06 | 沿线智慧公共组件 | 部署概念文化导视与荣誉组件 | 远期 5-10年| 城管委/文化局 | 专项拨款/企业冠名 | 第三方运维/故障率<5% | [data:geometry/phasing.geojson#PHASE-001] |
+
+### 5. 长期运营与治理路线图
+- **隐私与安全沙盒**：所有部署场景执行“数据最小化”、“可用不可见”及定期销毁机制；并设立人工干预（Human-in-the-loop）岗与数字排斥补偿服务。
+- **公共空间组件库与文化导视**：统一“京张智脉”视觉形象（Logo），结合工业遗产设立荣誉展示墙，构建双语无障碍实体引导体系。
 
 ## 全球标杆案例借鉴与“三区两翼”区域协同
 
@@ -215,7 +227,7 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 - **绿地率 [metric:green_ratio]**：31.1%（3,550,647 m² / 11,412,825 m²）
 - **公共空间比例 [metric:public_space_ratio]**：25.3%（2,886,999 m² / 11,412,825 m²）
 - **容积率 [metric:floor_area_ratio]**：待官方控规指标发布后测算
-- **合规矩阵响应度**：100% 覆盖公告任务 1.3、1.4、1.5 及面向智能体任务 agent.1 - agent.6。
+- **合规矩阵响应度**：全面响应（Fully Responds）公告任务 1.3、1.4、1.5 及面向智能体任务 agent.1 - agent.6。
 
 ## 风险、版权与合规说明
 

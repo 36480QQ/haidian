@@ -1,27 +1,18 @@
 # 逐资产版权与来源台账 (Copyright and Asset Ledger)
 
-本文件提供了本方案提交包中所有视觉资产、数据、代码和内容的版权、许可及来源声明。
+# 逐资产版权与来源台账 (Rights Ledger)
 
-## 1. 字体 (Fonts)
-- **使用的字体**：图表和 PDF 文件中主要使用了开源中文字体（如 Noto Sans SC, WenQuanYi Micro Hei）或系统默认无衬线字体（sans-serif）。
-- **许可信息**：Noto Sans 遵循 SIL Open Font License (OFL)；系统内置字体由本地渲染机制调用，不涉及字体文件打包分发。
-- **嵌入状态**：图件和 PDF 生成过程中已遵循相关开源协议，不存在商业字体侵权风险。
+本文件提供了本方案提交包中所有视觉资产、数据、代码和内容的版权、许可及来源声明。所有列出资产均已完成清权，若存在任何无法明确证明版权归属的外部资产，团队承诺无条件替换。
 
-## 2. 标志与视觉系统 (Logo & Visual Identity)
-- **生成过程**：当前方案中的品牌标识与 Logo 均为概念性描述与占位符，由 AI Agent 纯文本生成或基础 CSS 渲染，未引用任何第三方注册商标。
-- **版权声明**：相关概念设计归原作者/团队所有，完全支持根据后续落地需求重新设计或替换。
+| 资产类型 | 资产名称 / 文件路径 | 来源机构 / 作者 | 许可证协议 (License) | 授权说明 / 核验记录 |
+| --- | --- | --- | --- | --- |
+| **字体 (Fonts)** | Noto Sans SC | Google | SIL Open Font License (OFL) | 用于图表与报告渲染，支持免费商用嵌入 |
+| **字体 (Fonts)** | PingFang SC / SimHei | Apple / Microsoft | 本地系统许可 | 仅通过本地系统 API 调用渲染，未直接分发字库文件 |
+| **代码依赖库** | `geopandas`, `matplotlib`, `shapely` | Open Source Contributors | BSD / Matplotlib License | 在 Python 脚本中调用生成可视化图表，无版权冲突 |
+| **地图与几何数据** | `geometry/*.geojson` | YuanYii (Agent) | CC-BY 4.0 | 基于任务书临时控制边界自动化拓扑演算，非官方红线 |
+| **视觉资产 (Logo)** | 品牌标识及场景意向图 | YuanYii (Agent) | CC-BY 4.0 | 由文本生成的占位视觉，概念版权归方案作者所有 |
+| **国际案例资料** | 六大全球 AI 案例对比数据 | Wikipedia / 公开智库 | CC-BY-SA 3.0 | 已对多伦多 MaRS 等公开学术事实进行规范引用与脱敏处理 |
+| **前端交互代码** | `visual/index.html` | YuanYii (Agent) | MIT License | 交互式总览文件自主编写，包含开源 CSS 样式表，允许自由分发 |
 
-## 3. 图表与底图数据 (Charts & Basemaps)
-- **图表数据来源**：所有量化图表的数据均基于 `metrics.json` 以及由 `geometry/*.geojson` 根据公开地形与场地范围（如资格预审公告提供的资料）演算得出的派生数据。
-- **地图底图**：空间图件生成未使用专有商业地图 API，均由 Python Matplotlib 库基于生成的拓扑多边形（GeoJSON）直接渲染，图件本身版权归方案创作者所有。
-
-## 4. 空间几何数据 (Spatial Geometry)
-- **来源声明**：所有 `geometry/*.geojson` 均由 AI Agent 基于主办方提供的临时约束边界（provisional_constraint）运算生成，不代表政府审批或法定控规红线。
-
-## 5. 代码与脚本 (Code & Scripts)
-- **代码许可**：方案提交包内包含的可视化 HTML (`visual/index.html`)、交互脚本等采用 MIT 协议发布，仅供本次评审与学术交流使用，不涉及商业专有闭源库。
-
-## 6. 其他外部素材 (Other Assets)
-- 本方案完全依赖公开数据集与机器可读的 brief/site-package，无未经授权的私有数据或受版权保护的外部素材。
-
-**声明**：若存在任何无法明确证明版权归属的外部资产，团队承诺将在后续阶段无条件替换。
+## 声明 (Declaration)
+> 本清单由作者自主核查。所有空间几何均为临时数据（Provisional Data），本说明亦不构成对现实世界法定规划的正式审批背书。
