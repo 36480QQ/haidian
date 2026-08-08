@@ -218,6 +218,41 @@ The case file compares six mechanism patterns—station-as-public-room, bounded 
 
 The proposal is not considered implemented because it is written. It is reviewable because each task can be traced to a section, a spatial or operational artifact, a source/assumption, an acceptance test and a stop/rollback path. Official polygons, planning controls, ownership, municipal, heritage, traffic, weather, drainage and measured-experience data must replace the provisional and unknown fields before professional implementation.
 
+## Full-depth evidence crosswalk for the English review surface
+
+The Chinese proposal remains the primary interpretation surface, but the English review copy now exposes the same formal evidence routes rather than asking a reviewer to infer them from filenames. The tables below are an index into the package; they do not promote provisional geometry, modeled values or conceptual interfaces into official facts.
+
+### Professional standards and design depth
+
+| Review layer | Registered evidence route |
+| --- | --- |
+| Task and statutory basis | [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] |
+| Scope, spatial structure and renewal | [depth:three_level_scope_framework] [depth:existing_conditions_diagnosis] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:retain_renovate_demolish] [depth:development_intensity_controls] [depth:renewal_project_list] |
+| Public network and implementation | [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data] [depth:height_massing_character] |
+
+### Geometry and recomputable metrics
+
+| Evidence family | Review route |
+| --- | --- |
+| Submitted spatial layers | [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/phasing.geojson#PHASE-001] [data:geometry/constraints.geojson#CONSTRAINTS] |
+| Supporting evidence records | [data:visual/assets/evidence-ledger.json#cfd-validation] [data:visual/assets/evidence-ledger.json#climate-risk-baseline] [data:visual/assets/evidence-ledger.json#commitment-register] [data:visual/assets/evidence-ledger.json#film-storyboard] [data:visual/assets/persona-and-inclusion-matrix.json#P-01] [data:visual/assets/persona-and-inclusion-matrix.json#P-08] |
+| Area, land-use and public-network metrics | [metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:building_footprint_ratio] [metric:green_ratio] [metric:public_space_ratio] [metric:design_north_south_spine_length_m] [metric:design_east_west_connector_count] [metric:design_slow_mobility_network_length_m] [metric:key_area_count] [metric:osm_mapped_station_names_within_800m_count] [metric:osm_mapped_crossing_count] |
+| Scenario, inclusion and public-marker metrics | [metric:scenario_card_count] [metric:industry_validation_case_count] [metric:policy_enterprise_playbook_card_count] [metric:user_persona_count] [metric:ai_landmark_count] [metric:resident_transport_satisfaction_index] |
+| Decision-experiment metrics | [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws] [metric:resilience_v13_selected_win_rate] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_mean_regret] [metric:resilience_v13_selected_min_stress_score] [metric:resilience_v13_hard_gates_passed] |
+| Unknown wind, health and water gates | [metric:pedestrian_wind_comfort_acceptable_area_ratio] [metric:pollutant_stagnation_hotspot_count] [metric:mean_radiant_temperature_baseline_c] [metric:continuous_shaded_accessible_route_ratio] [metric:blue_green_accessible_route_overlap_ratio] [metric:water_risk_exceedance_route_verified_ratio] |
+
+The values shown in this package are either recomputed from the submitted provisional layers, registered public statistical transformations, or explicit `unknown` states. `green_ratio`, `public_space_ratio`, the OSM station/crossing screens and all modeled resilience values are not statutory controls, field measurements, safety approvals or resident outcomes. The English display layer follows the same rule as the Chinese source: official polygons, resident surveys, traffic/accessibility audits, drainage data and professional sign-off must trigger a full rerun.
+
+### Source parity and use boundaries
+
+The formal source registry contains the announcement, taskbook, processed navigation tables, local planning and mobility references, official statistical routes, standards snapshots and method references. The English copy uses the same boundaries through this compact index:
+
+- **Task and processed-data routes:** [source:AGENT-TASK-REQUIREMENTS] [source:PROJECT-SCOPE-SUMMARY] [source:SOURCE-USE-MATRIX] [source:MISSING-DATA-CHECKLIST] [source:JINGZHANG-FUTURE-BELT-2026] [source:JINGZHANG-PUBLIC-FEEDBACK] [source:JINGZHANG-PARK-CATALOG]
+- **Beijing planning, climate, access and public-realm routes:** [source:BEIJING-BULLETIN-2024] [source:BEIJING-BULLETIN-2025] [source:BEIJING-CLIMATE-ADAPTATION-2024] [source:BEIJING-FLOOD-PLAN-2021-2025] [source:BEIJING-LIGHTING-GUIDE-2025] [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [source:BEIJING-ROAD-MAINTENANCE-2026] [source:BEIJING-SLOW-MOBILITY] [source:BEIJING-VENTILATION-NETWORK-2035] [source:BEIJING-WALK-CYCLE-DB11-1761] [source:BEIJING-WATER-REPORT-2024] [source:BEIJING-YEARBOOK-2024] [source:HAIDIAN-SPONGE-CITY-PLAN] [source:REGIONAL-YEARBOOK-2024-2] [source:BEIJING-15-MINUTE-LIFE-CIRCLE] [source:BEIJING-ACCESSIBILITY-REGULATION] [source:BEIJING-BIRD-BIODIVERSITY-2024]
+- **AI, infrastructure, safety and people-centred method routes:** [source:BEIJING-EMBODIED-INTELLIGENCE-2025-2027] [source:IPCC-AR6-URBAN-RISK] [source:NIST-HUMAN-CENTERED-AI] [source:RESILIENT-CITY-INFRASTRUCTURE-2024] [source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES] [source:WHO-HEAT-HEALTH-2026] [source:ISO-13482-SERVICE-ROBOT-SAFETY] [source:ISO-55001-2024] [source:ISO-TR-4448-PUBLIC-MOBILE-ROBOTS] [source:SERVICE-ROBOT-INFOSEC-GB45502] [source:ASSET-MANAGEMENT-GBT33172] [source:OSM-TRANSPORT-CONTEXT]
+
+These registry entries are not all equivalent: some are formal-ready, some are background or provisional acquisition routes, and the proposal states that distinction wherever it affects a boundary, metric or implementation decision. The complete records, access dates and allowed/disabled uses remain in `sources.json`; this index exists to make bilingual review parity visible.
+
 ## Cultural “Feng Shui” Narrative and the Wind–Water–Health Evidence Gate
 
 The expressions *cang feng ju qi* (藏风聚气) and *feng shui* may be used only as cultural landscape narratives linked to spatial memory. They are not medical findings, public-health causation, air-quality evidence, hydrological rules, engineering models or approval criteria. The narrative is therefore translated into six separate, auditable indicators whose current baselines remain `unknown`:
