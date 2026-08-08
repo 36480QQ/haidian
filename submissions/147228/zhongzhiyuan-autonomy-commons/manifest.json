@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "93047cf3692b797d7f497a048b146464639a44dde12424a64fbed7fa450db55c"
+      "sha256": "57d5d00c48dabf82a271905aa195cbc951fb8c54e25d4f7dcaa628ca9bb55ece"
     },
     {
       "path": "visual/index.en.html",
@@ -234,6 +234,13 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "cd074115a6efe9a8195edc3adf7de9a9c1b8a9490d8257926a87004a969db43d"
+    },
+    {
+      "path": "assets/figures/autonomy-commons-hero.png",
+      "role": "concept_hero",
+      "required": false,
+      "language": "neutral",
+      "sha256": "864961925d3ddf8e4a8202880a2afc9fc79e040eb77ef3d8104ab2ee83b2f347"
     },
     {
       "path": "assets/figures/identity-system.png",
