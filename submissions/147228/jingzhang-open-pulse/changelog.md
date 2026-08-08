@@ -36,3 +36,10 @@ reviewable deliverables and bilingual review surface.
 - Registered three official data-route records for the Haidian climate-normals catalogue, the district meteorological network and Qinghe Station wind monitoring; they are acquisition/context routes only and do not replace local measurements.
 - Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
 - Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.
+
+## v2.1 review-gap closure - 2026-08-08
+
+- Added three bounded industry validation windows with inputs, acceptance tests, stop conditions and non-AI equivalents.
+- Added an eight-row non-identifying public-user and inclusion matrix with spatial responses, fallbacks and safeguards.
+- Added a four-node honor/landmark crosswalk and linked it to the taskbook acceptance tests.
+- Added design-target metrics for validation windows, user lenses and public markers; all remain conceptual and require professional, rights, safety and community review.

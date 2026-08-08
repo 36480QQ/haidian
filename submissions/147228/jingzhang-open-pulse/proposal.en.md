@@ -85,11 +85,23 @@ Each key-area polygon is provisional and each node proposal is a concept for pro
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path.
+The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path. These are non-identifying design lenses, not inferred profiles or automated eligibility categories.
 
 The package contains 14 scenario cards in `visual/assets/scenario-operation-matrix.json`. They cover walking-gap diagnosis, low-speed delivery robots, autonomous-mobility assistance, model red-teaming, open publishing, Jing-Zhang cultural wayfinding, health-service navigation, enterprise service, data-governance demonstrations, intelligent retail, public-safety review, an international AI week walk, rainwater/tree-pit maintenance, and a low-light quiet chain.
 
 The matrix is a design-control instrument, not a promise of service levels. Every row states: spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, data retention, non-AI equivalent, stop condition, success metric and phase. The universal gates are: no digital precondition; human review cannot be removed; an accessible route remains continuous; a public status and complaint path exists; and stop/rollback has been tested.
+
+### Three bounded industry validation windows and eight public-user lenses
+
+The package separates three industry-validation windows from the 14 scenario cards. They answer what an enterprise or public-service team must prove before entering a real workflow. They are conceptual suggestions, not procurement approvals, investment commitments, public deployments or local performance evidence. The design-target count is [metric:industry_validation_case_count]; inputs, acceptance tests and stop conditions are recorded at [data:visual/assets/industry-validation-cases.json#IV-01], [data:visual/assets/industry-validation-cases.json#IV-02] and [data:visual/assets/industry-validation-cases.json#IV-03].
+
+| Window | Place and question | Pass / stop | Non-AI equivalent |
+| --- | --- | --- | --- |
+| IV-01 model safety and transparency | Zhongzhi Garden booked test room; can a supplier reproduce safety, rights, human-review and rollback evidence? | Two independent reviewers reproduce the note; unclear rights, missing reviewer or failed takeover stops the token | Paper protocol and expert review |
+| IV-02 enterprise service and data compliance | Origin / Dazhongsi service nodes; can assisted service remain source-traceable and equivalent to a manual route? | AI and manual routes both complete; every material answer has a source and correction owner; leakage or no counter stops | Staffed counter, paper process and in-person advice |
+| IV-03 low-speed embodied-AI safety | Zhongzhi Garden–Jing-Zhang park interface; can a robot coexist without occupying the accessible chain? | Stop, takeover, route clearance and ordinary-use recovery all pass; failed stop, severe near miss or maintenance lapse exits | Human delivery, guidance and static wayfinding |
+
+The original five industry personas and the expanded eight public-user lenses serve different purposes. The eight-lens design-target count is [metric:user_persona_count]; it is not a population count. The machine-readable matrix gives each lens a spatial response, fallback, test and safeguard: [data:visual/assets/persona-and-inclusion-matrix.json#P-01], [data:visual/assets/persona-and-inclusion-matrix.json#P-02], [data:visual/assets/persona-and-inclusion-matrix.json#P-03], [data:visual/assets/persona-and-inclusion-matrix.json#P-04], [data:visual/assets/persona-and-inclusion-matrix.json#P-05], [data:visual/assets/persona-and-inclusion-matrix.json#P-06], [data:visual/assets/persona-and-inclusion-matrix.json#P-07] and [data:visual/assets/persona-and-inclusion-matrix.json#P-08]. The lenses are: older/resident users; wheelchair, cane and guide-dog users; carers and children; night-shift workers; visitors; small businesses and community service workers; developers/startups/university teams; and maintenance/operators. No facial recognition, individual trajectory retention, biometric eligibility or commercial profiling is permitted.
 
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
 
@@ -151,7 +163,7 @@ Public-interest checks cover accessibility, older residents, carers, night worke
 
 The v1.6 time-series section is retained in the Chinese source document and its machine-readable assets. It records the official statistical source boundary, the 2023 baseline frame and the four scenario comparison. It does not turn modeled outcomes into official forecasts. Readers should use the time-series figure and ledger to inspect source years, transformations, missing values and guardrails.
 
-## v1.7 Top-Rank Repair: From Concept to Reviewable Deliverables
+## v2.1 Review-Gap Closure: From Concept to Reviewable Deliverables
 
 This iteration directly repairs review gaps found in high-scoring repository submissions and the repository's detailed validator feedback:
 
@@ -162,6 +174,7 @@ This iteration directly repairs review gaps found in high-scoring repository sub
 - `visual/assets/identity-system.json` and the identity figure provide a real, inspectable identity and wayfinding grammar.
 - `visual/assets/copyright-ledger.json` makes authorship, sources, licenses, hashes and future-clearance duties auditable.
 - `visual/assets/case-mechanism-matrix.json`, `key-area-node-plans.json` and `public-interest-audit.json` close the case-comparison, node-level and participation/equity evidence gaps without inventing a baseline or partnership.
+- `visual/assets/industry-validation-cases.json`, `persona-and-inclusion-matrix.json` and `landmark-honor-crosswalk.json` make three bounded enterprise test windows, eight public-user lenses and four honor markers independently inspectable.
 - `proposal.md`, this English translation, two offline report pages, the offline visual index and `changelog.md` keep the bilingual review surface aligned.
 
 These are reviewable design deliverables, not claims that a project has been commissioned. Their value is that a reviewer can find the requirement, inspect the evidence, test the stop gate and identify what must be confirmed before implementation.
@@ -193,6 +206,10 @@ The 14-row matrix gives every scenario a spatial carrier, trigger, minimum data,
 The baseline is deliberately **unknown until surveyed**. Older residents, disabled people, carers, night workers, children and guardians, visitors, small businesses and maintenance crews are named participants. Step-free continuity, service without an app, complaint response, group differences and night light/noise are audited through paired walks, staffed tests, stratified listening and public status boards. A conflict pauses the scenario, shows the disputed evidence, offers a non-AI equivalent and publishes remedy or withdrawal.
 
 The case file compares six mechanism patterns—station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method—rather than inventing international project facts. Each pattern says what to borrow, what not to copy, the Jing-Zhang test interface and what must be sourced before a formal citation. This preserves international communication while keeping the rights and evidence boundary auditable.
+
+### Honor markers and public responsibility
+
+The cultural sequence is tied to four proposed public markers: the century engineering-question wall, open-source contribution archive, city-agent responsibility desk and enterprise safety-governance responsibility desk. The design-target count is [metric:ai_landmark_count]. They are indexed at [data:visual/assets/landmark-honor-crosswalk.json#HONOR-01], [data:visual/assets/landmark-honor-crosswalk.json#HONOR-02], [data:visual/assets/landmark-honor-crosswalk.json#HONOR-03] and [data:visual/assets/landmark-honor-crosswalk.json#HONOR-04]. Each marker requires a rights record, plain-language explanation, accountable owner, correction/removal route and professional heritage/public-art/safety review; none is an approved structure, advertising site or institutional endorsement.
 
 ### Acceptance rule
 
