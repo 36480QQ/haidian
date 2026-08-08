@@ -338,6 +338,7 @@ Main risks and responses: (1) data risk — official redline and key-area polygo
 ## References
 
 - Public brief draft: `brief/public-brief.md`
+- Public brief material boundary statement: `brief/README.md`
 - Pre-qualification announcement (Haidian Branch of Beijing Municipal Commission of Planning and Natural Resources, 2026-05-09) [source:OFFICIAL-ANNOUNCEMENT]: https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html
 - Agent-facing open-call taskbook excerpt (2026-05-18) [source:AGENT-TASKBOOK]: `brief/site-package/agent_taskbook.json`
 - Site package [source:SITE-PACKAGE]: `brief/site-package/` (design_brief.json / allowed_design_space.json / sources.json / enums / ranges / schemas)

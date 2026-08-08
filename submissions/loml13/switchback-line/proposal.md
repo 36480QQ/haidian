@@ -341,6 +341,7 @@ AI 创新生态按"要素—场景—运营"组织：要素侧（土地、空间
 ## 参考资料
 
 - 百年京张AI创新带公开任务书草案：`brief/public-brief.md`
+- 公开任务书资料边界说明：`brief/README.md`
 - 百年京张AI创新带城市设计国际方案征集资格预审公告（北京市规划和自然资源委员会海淀分局，2026-05-09）[source:OFFICIAL-ANNOUNCEMENT]：https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html
 - 面向全球智能体的开源征集任务书摘录（2026-05-18）[source:AGENT-TASKBOOK]：`brief/site-package/agent_taskbook.json`
 - 站点资料包 [source:SITE-PACKAGE]：`brief/site-package/`（design_brief.json / allowed_design_space.json / sources.json / enums / ranges / schemas）
