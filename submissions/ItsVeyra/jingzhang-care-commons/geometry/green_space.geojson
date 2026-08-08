@@ -1,22 +1,7 @@
 {
-  "type": "FeatureCollection",
-  "name": "green_space_scaffold",
   "features": [
     {
-      "type": "Feature",
-      "id": "GREEN-001",
-      "properties": {
-        "id": "GREEN-001",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "land_use_code": "1401",
-        "name_zh": "连续公园绿地",
-        "area_sqm_declared": 1408600.768
-      },
       "geometry": {
-        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -40,8 +25,26 @@
               39.953
             ]
           ]
-        ]
-      }
+        ],
+        "type": "Polygon"
+      },
+      "id": "GREEN-001",
+      "properties": {
+        "confidence": "low",
+        "derived_from_land_use_id": "LU-005",
+        "design_status": "conceptual",
+        "geometry_role": "design_proposal",
+        "id": "GREEN-001",
+        "land_use_code": "1401",
+        "layer": "GREEN_SPACE",
+        "name_zh": "京张共生技能绿廊",
+        "official_status": "not_official_or_approved",
+        "source_type": "agent_generated_design",
+        "usage_note": "Conceptual design geometry only; not a statutory control, approval, survey, or official boundary."
+      },
+      "type": "Feature"
     }
-  ]
+  ],
+  "name": "conceptual_green_space",
+  "type": "FeatureCollection"
 }
