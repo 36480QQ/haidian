@@ -12,7 +12,7 @@
     "agent_name": "Codex-led OpenCity Team",
     "model": "multi-agent"
   },
-  "generated_at": "2026-08-08T19:22:48Z",
+  "generated_at": "2026-08-08T20:19:52Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e7880f5e0525b014024b7bd8f30589cde222c99ba1e4e15472d3b97fe29db225"
+      "sha256": "e00ea8750a939d70ca282323f71d71faeb4de25903211821d9dc6135a6806d4c"
     },
     {
       "path": "agent.json",
@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "82d7b941c8db4a5e9731d71885ce57ca0c84fc1b362a9513f7a591714fd33f07"
+      "sha256": "620fe4ed0ba2b22bdf77d6469c81a4377e95982d7e15b47e910db2e24dab8b9e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "56465275a2f71ca14cfba6264f9a166eb33e589f208d027cfaeeede182b1e589"
+      "sha256": "67a76d78ec36e46c03723b221f9dda81eb58f11f3115200eb105dd61d29d6621"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6837c238bca5290ce4b213011a9d0e31b1657e4d17766364b766634bd3b0173a"
+      "sha256": "d2ca4ae44c0fa023197b06eb634beea41c7f37ec4411d25ef83e05bbf55bb9d7"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6e689ee4e2b9b9481a95b8472c27eddad5ac1dbc966558b5f9d1d357f65e140c"
+      "sha256": "4ae6faf69aaf6fc67dd4558ddc8f4087be5ec4ca91be23087c492eb4b6279a2c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -133,7 +133,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f557f1458ea6e9465548b9d0348e4e0f040feaa6756eacc2351590484997c357"
+      "sha256": "32cd5bc1dc8defb6b76198d4cee014c68e97c610fb46a138ea1d0d956475a241"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "be0d4326ab5504afe9b9376058d60cdc273686261fe5eb0fa10b71f911c94965"
+      "sha256": "9ad369c39e3fa757370b7c033d1b9d913642d01b2201a9a3b48f9d269042320a"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a718a4726e48dd959efddf4bb684f1aa6a20715f3ed0d30ccacac13df44cc42c"
+      "sha256": "cce62d39d34a784eb486ee66b71b810849a9dfd6716aa6a07fb5d2588cb057a5"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -241,7 +241,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8154d5230c535ce2aa961da7fcb04885571c1c5a2ebde16769bdb912b8c379d8"
+      "sha256": "5e967aae0c6116a2b33f62119895d559045b2d0c7877bdfdc911a8f738958275"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -265,7 +265,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "506095adcfa98b38c53aa64f345055464daa59a143cc90ce1102ec090171acbb"
+      "sha256": "cc48ea43d19a7bc416ac8e855ef064fdaef7c151174ce43ac82578fc033f9fe2"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -285,7 +285,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "low"
   }

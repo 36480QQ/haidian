@@ -39,7 +39,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | E3 公开一手数据 | 政府部门公开统计、公报、政策文件与官方报道 | 区域气候背景、区域算力政策与合作背景、历史事实 | 不得把全市值当场地值，不得把报道口径当实测 SLA |
 | E4 项目方材料 | 中东案例的项目官网与主办机构发布 | 机制参考、运营组织方式 | 不得当作绩效已兑现的独立证明 |
 
-`data/source_registry.json` 当前登记的 formal 可用资料为 5 条、provisional-only 资料 1 条、background_only 资料 0 条。agent 不得把 provisional 或 background 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本方案进一步在提交包 `sources.json` 中登记了 35 条外部一手来源（京张铁路与平绥—京包演进 5 条、北京中轴线遗产说明与保护管理规划 4 条、北京市水资源公报与年鉴 5 条、北京市生态环境局 PM2.5 年度数据 5 条、海淀—乌兰察布算力协同政府与部委材料 5 条、五个中东案例的项目方与主办机构材料 11 条），逐条标注 `authority_level`、`usage` 与 `risk_note`，并在正文中以 `source:ID` 形式的标签引用；官方控制线数据（文保紫线、河道蓝线、绿线、道路红线、轨道控制线）在公开渠道仍未找到可核验来源，本方案不为其编造 source 记录，继续在第十三章标注为未解决的数据缺口并引用 [source:SOURCE-REGISTRY]。
+`data/source_registry.json` 当前登记的 formal 可用资料为 5 条、provisional-only 资料 1 条、background_only 资料 0 条。agent 不得把 provisional 或 background 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本方案进一步在提交包 `sources.json` 中登记了 35 条外部公开来源（京张铁路与平绥—京包演进 5 条、北京中轴线遗产说明与保护管理规划 4 条、北京市水资源公报与年鉴 5 条、北京市生态环境局 PM2.5 年度数据 5 条、海淀—乌兰察布算力协同政府与部委材料 5 条、五个中东案例的项目方与主办机构材料 11 条）；其中北京交通大学与新京报两条为二手佐证，其余来源的权威层级也按实际发布主体登记。35 条均逐条标注 `authority_level`、`usage` 与 `risk_note`，并在正文中以 `source:ID` 形式的标签引用；官方控制线数据（文保紫线、河道蓝线、绿线、道路红线、轨道控制线）在公开渠道仍未找到可核验来源，本方案不为其编造 source 记录，继续在第十三章标注为未解决的数据缺口并引用 [source:SOURCE-REGISTRY]。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -147,7 +147,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 未来城市形态的区域背景
 
-区域气候背景显示：2021—2025 年北京**全市**年降水量在 482—924 mm 之间，五年均值 766.4 mm，年际波动显著；同一年份内北京各区之间差异明显 [source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]。空气质量方面，2021—2025 年北京 PM2.5 年均浓度总体下降，2025 年海淀区均值低于全市均值 [source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]。**这些是全市或区级口径，不能冒充 43.6 平方公里研究区的站点观测**，因此本方案只用它们支撑“旱涝并存、需要三态切换的公共空间”这一设计前提，不用它们推导任何工程容量。
+区域气候背景显示：2021—2025 年北京**全市**年降水量在 482—924 mm 之间，五年均值 766.4 mm，年际波动显著；同一年份内北京各区之间差异明显 [source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]。空气质量方面，2021—2025 年北京 PM2.5 年均浓度总体下降，2025 年海淀区均值低于全市均值 [source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]。**这些是全市或区级口径，不能冒充 43.6 平方公里研究区的站点观测**。年降水序列只能提示年际丰枯波动；本方案把“三态切换”保留为一项有待站点气象、小时雨强、水文模型与积水资料核验的韧性设计假设，不声称场地旱涝风险已获证实，也不用这些数据推导任何工程容量。
 
 **设计判断**：以中轴线的三项独特对应加三项本地规划推论确立空间组织方式，再用五个中东机制及其失效条件确立运营组织方式，两者按固定顺序组合。
 **判断理由**：世界级创新生态不是案例堆叠，而是把可复核的组织机制按顺序装进空间；顺序错了（先上智能设备再补公共空间）会导致公共价值流失。
@@ -557,7 +557,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **设计判断**：全文的边界声明只保留三处——第一章开篇的不可协商的事实与操作边界、各表格内与具体机制绑定的“不复制／不可推断”列、本章的风险总表；中间各章若重复出现同类限定语，仅为强调，不改变该全局效力。
 **判断理由**：免责语句重复越多，读者越容易跳过，真正关键的三条反而被稀释；把边界绑定到具体表格行，比在每段末尾追加声明更能在深化阶段被执行。
 **图层／指标／标准对应**：[data:geometry/constraints.geojson#CONSTRAINTS]、[depth:risk_missing_data]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
-**资料缺口**：见各章“资料缺口”与 `missing_data_checklist.csv`；本轮新增的待登记来源见下章。
+**资料缺口**：见各章“资料缺口”与 `missing_data_checklist.csv`；35 条外部公开来源均已登记，尚未取得的是下章列明的官方控制线资料。
 
 ## 参考资料
 
@@ -570,9 +570,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - `templates/proposal.md`、`skills/urban-design-ai-submission/SKILL.md`
 - 本提交包：`sources.json`、`assumptions.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`report/copyright_statement.md`
 
-### 已登记的外部一手来源索引
+### 已登记的外部公开来源索引
 
-以下 35 条外部一手来源已按 `data/source_registry.json` 的字段规范登记进本包 `sources.json`，并在正文中以 `source:ID` 形式的标签引用；每条记录均包含 `title`、`publisher`、`published_date`、`accessed_date=2026-08-08`、`url`、`source_type`、`authority_level`、`usage`、`license_summary` 与 `risk_note`。
+以下 35 条外部公开来源已按 `data/source_registry.json` 的字段规范登记进本包 `sources.json`，并在正文中以 `source:ID` 形式的标签引用；每条记录均包含 `title`、`publisher`、`published_date`、`accessed_date=2026-08-08`、`url`、`source_type`、`authority_level`、`usage`、`license_summary` 与 `risk_note`。其中 [source:BJTU-JINGZHANG-HISTORY] 为高校机构二手材料、[source:BJNEWS-JINGZHANG-COAL-SPUR] 为媒体二手佐证，其余也必须按各自登记的权威层级使用，不因列入本索引而升级为一手证据。
 
 1. 京张铁路与平绥—京包演进（5 条）：[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]——1909 年京张本线起讫、平绥—京包后续演进链、鸡鸣山煤矿支线的能源供给史事实。
 2. 北京中轴线遗产说明与保护管理规划（4 条）：[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]——中轴线遗产列入事实、构成要素与保护规划范围，仅支撑设计方法转译，不构成遗产关联证据。
@@ -587,7 +587,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:NRA-JINGZHANG-LINE]、[source:NMG-JINGSUI-HERITAGE]、[source:NRA-JINGZHANG-HSR-OVERVIEW]、[source:BJTU-JINGZHANG-HISTORY]、[source:BJNEWS-JINGZHANG-COAL-SPUR]、[source:UNESCO-AXIS-1714]、[source:BJCT-AXIS-INSCRIPTION]、[source:BJPC-AXIS-EXPLAINER]、[source:BEIJING-AXIS-PROTECTION-PLAN]、[source:BJWATER-RAINFALL-2021]、[source:BJWATER-RAINFALL-2022]、[source:BJWATER-RAINFALL-2023]、[source:BJWATER-RAINFALL-2024]、[source:BJWATER-RAINFALL-2025]、[source:BJEE-PM25-2021]、[source:BJEE-PM25-2022]、[source:BJEE-PM25-2023]、[source:BJEE-PM25-2024]、[source:BJEE-PM25-2025]、[source:NDRC-COMPUTE-HUB-REPLY-2021]、[source:NMG-NETWORK-REPORT-2025]、[source:NMG-NETWORK-REPORT-2024]、[source:MIIT-DATACENTER-CASE-2021]、[source:BJHD-COOPERATION-2024]、[source:MASDAR-SUSTAINABLE-DESIGN]、[source:MASDAR-SUSTAINABLE-MOBILITY]、[source:MBZUAI-ABOUT]、[source:MBZUAI-IEC]、[source:MBZUAI-INCUBATOR]、[source:DIFC-AI-CAMPUS-LICENSING]、[source:DIFC-AI-CAMPUS-BUSINESS-TRANSFORM]、[source:DIFC-AI-CAMPUS-INAUGURATION]、[source:PIF-HUMAIN-LAUNCH]、[source:AWS-HUMAIN-INVESTMENT]、[source:NEOM-THE-LINE]；[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]；[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]；[metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:key_area_count]、[metric:station_count]、[metric:wing_count]、[metric:prototype_node_count]、[metric:scenario_count]、[metric:industry_test_count]、[metric:phase_count]、[metric:conceptual_mobility_length_m]、[metric:declared_reversible_prototype_ratio]、[metric:declared_manual_fallback_documentation_ratio]、[metric:floor_area_ratio]；[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-002]、[data:geometry/land_use.geojson#LU-003]、[data:geometry/land_use.geojson#LU-004]、[data:geometry/buildings.geojson#BLDG-ST01-001]、[data:geometry/buildings.geojson#BLDG-ST02-001]、[data:geometry/buildings.geojson#BLDG-ST03-001]、[data:geometry/roads.geojson#ROAD-AXIS-001]、[data:geometry/roads.geojson#ROAD-WING-TECH-001]、[data:geometry/roads.geojson#ROAD-WING-XIAOYUE-001]、[data:geometry/roads.geojson#ROAD-STITCH-N4]、[data:geometry/roads.geojson#ROAD-STITCH-N5]、[data:geometry/green_space.geojson#GREEN-AXIS-001]、[data:geometry/green_space.geojson#GREEN-QINGHE-001]、[data:geometry/green_space.geojson#GREEN-XIAOYUE-001]、[data:geometry/public_space.geojson#N1]、[data:geometry/public_space.geojson#N2]、[data:geometry/public_space.geojson#N3]、[data:geometry/public_space.geojson#N4]、[data:geometry/public_space.geojson#N5]、[data:geometry/public_space.geojson#N6]、[data:geometry/constraints.geojson#CONSTRAINTS]、[data:geometry/constraints.geojson#WING-TECH-001]、[data:geometry/constraints.geojson#WING-XIAOYUE-001]、[data:geometry/phasing.geojson#PHASE-001]。
 
-**设计判断**：参考资料分为“仓库内依据”“已登记外部一手来源索引”“机器可读引用索引”三段，35 条外部来源已逐条登记 `sources.json` 并在正文标注引用，唯官方控制线数据仍如实标注为未登记缺口，不为其编造标识。
-**判断理由**：本方案的核心主张大量依赖仓库外的公开一手材料；逐条登记并标注 `authority_level`、`usage`、`risk_note` 才能让审查方复核每一句设计判断的证据等级，而不是把一批材料笼统合并成一条来源；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
+**设计判断**：参考资料分为“仓库内依据”“已登记外部公开来源索引”“机器可读引用索引”三段，35 条外部来源已逐条登记 `sources.json` 并在正文标注引用，唯官方控制线数据仍如实标注为未登记缺口，不为其编造标识。
+**判断理由**：本方案的核心主张大量依赖仓库外的公开材料；逐条登记并标注 `authority_level`、`usage`、`risk_note` 才能让审查方复核每一句设计判断的证据等级，包括两条明确降级的二手佐证，而不是把一批材料笼统合并成一条来源；若为了让正文“看起来有引用”而自造标识，反而会破坏来源可追溯性。
 **图层／指标／标准对应**：本章索引覆盖全部 42 条 source（7 条初始仓库依据 + 35 条已登记外部来源）、6 条 standard、15 条 depth、15 项 metric（14 项 `known` 与 1 项 `unknown`）与 9 个几何图层的引用，与 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`metrics.json` 一一对应。
 **资料缺口**：官方控制线数据仍未登记，见上文“未解决的来源缺口”；双语图件、HTML 与 PDF 已生成，缺口仅保留在组织方尚未提供的官方边界、控制线与现状资料。
