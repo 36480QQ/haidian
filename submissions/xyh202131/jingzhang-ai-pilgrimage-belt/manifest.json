@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "150205f0ac731e00655cf5564217aebebbed5fee30b2468db8f8fc0f2a3b021b"
+      "sha256": "ddbea65aec4524581400fdc15d65de67ce27172bc5853327ec4aea0b5538c12a"
     },
     {
       "path": "agent.json",
@@ -80,6 +80,12 @@
       "sha256": "f18c96994aa45c1fbf31476811dd0a96f1c4897420b0df2fefd82765b9acc44f"
     },
     {
+      "path": "visual/assets/innovation-register.json",
+      "role": "innovation_evidence",
+      "required": true,
+      "sha256": "5ba1c7d5a2f9ca3b34383cf9c6a9337384f488a4a92cd7f3a597130c987a6c98"
+    },
+    {
       "path": "visual/assets/non-ai-parity-contract.json",
       "role": "public_interest_evidence",
       "required": true,
@@ -89,7 +95,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e4d9fefe0828168d5fb114b96a69c92254ccd1b61eb1d53fc72f84262633c53d"
+      "sha256": "ad06d64141fb2095f9cb346378e20a596dc4978913da9f448999b0e4818ecb1b"
     },
     {
       "path": "report/narrative.md",
