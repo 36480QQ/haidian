@@ -96,8 +96,8 @@ Establishes an "Open Source Governance Committee" and an honors component librar
 - **Total Design Area [metric:site_area_sqm]**: 11,412,825 m² (11.4 km²)
 - **Key Areas Count [metric:key_area_count]**: 3 zones (368.4 ha)
 - **Building Footprint [metric:building_footprint_area_sqm]**: 1,803,086 m² (1.80 km²)
-- **Green Space Ratio [metric:green_ratio]**: 31.1% (3,546,478 m² / 11,412,825 m²)
-- **Public Space Ratio [metric:public_space_ratio]**: 25.3% (2,887,678 m² / 11,412,825 m²)
+- **Green Space Ratio [metric:green_ratio]**: 31.1% (3,550,647 m² / 11,412,825 m²)
+- **Public Space Ratio [metric:public_space_ratio]**: 25.3% (2,886,999 m² / 11,412,825 m²)
 - **Floor Area Ratio [metric:floor_area_ratio]**: Pending official control plan release
 
 ## Compliance & Disclaimer
