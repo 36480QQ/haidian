@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京张信标 JINGZHANG BEACON | 百年京张AI创新带城市设计开源方案</title>
+<style>
+:root {
+  --paper: #f6f8fb;
+  --white: #ffffff;
+  --ink: #17212e;
+  --muted: #5d6b7c;
+  --line: #d8dee6;
+  --blue: #1b3a5c;
+  --green: #2e8b57;
+  --amber: #f0a500;
+  --red: #c1272d;
+  --gold: #d4a848;
+  --teal: #0b6e4f;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.65;
+}
+.wrap { max-width: 1280px; margin: 0 auto; padding: 26px 20px 60px; }
+.hero {
+  background: linear-gradient(135deg, #13243a 0%, #1b3a5c 55%, #24507a 100%);
+  color: #fff; border-radius: 16px; padding: 34px 34px 28px; margin-bottom: 22px;
+  position: relative; overflow: hidden;
+}
+.hero h1 { font-size: 30px; line-height: 1.25; letter-spacing: 1px; }
+.hero .en { font-size: 15px; color: #bfd3e8; margin-top: 6px; letter-spacing: 2px; }
+.hero .sub { font-size: 14px; color: #d8e5f2; margin-top: 14px; max-width: 900px; }
+.signal-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.signal {
+  display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 6px 14px; font-size: 13px;
+}
+.signal .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-green { background: var(--green); box-shadow: 0 0 8px #2e8b57aa; }
+.dot-amber { background: var(--amber); box-shadow: 0 0 8px #f0a500aa; }
+.dot-red { background: var(--red); box-shadow: 0 0 8px #c1272daa; }
+.dot-blue { background: #3f7fd8; box-shadow: 0 0 8px #3f7fd8aa; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-bottom: 22px; }
+.card {
+  background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px;
+}
+.card h2 { font-size: 17px; margin-bottom: 12px; color: var(--blue); display: flex; align-items: center; gap: 8px; }
+.card h2::before { content: ""; width: 4px; height: 18px; background: var(--blue); border-radius: 2px; display: inline-block; }
+.card p, .card li { font-size: 13.5px; color: #33414f; }
+.card ul { padding-left: 18px; }
+.card li { margin-bottom: 6px; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stat { background: #f1f5f9; border: 1px solid var(--line); border-radius: 10px; padding: 14px 12px; text-align: center; }
+.stat .v { font-size: 20px; font-weight: 700; color: var(--blue); }
+.stat .l { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.beacon-card { border-left: 6px solid var(--amber); }
+.beacon-green { border-left-color: var(--green); }
+.beacon-red { border-left-color: var(--red); }
+.badge { display: inline-block; background: #e8eef5; color: var(--blue); border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 4px 4px 0; }
+.badge-green { background: #e2f3e9; color: var(--teal); }
+.badge-amber { background: #fdf0d5; color: #a06d00; }
+.badge-red { background: #fbe4e4; color: var(--red); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #eef3f8; color: var(--blue); font-weight: 600; }
+.section-title { font-size: 20px; color: var(--blue); margin: 30px 0 6px; }
+.section-sub { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.metrics-bar { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; margin-bottom: 22px; }
+.metrics-bar h2 { color: var(--blue); font-size: 17px; margin-bottom: 4px; }
+.metrics-bar .note { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+.overview { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-bottom: 22px; }
+@media (max-width: 900px) { .overview { grid-template-columns: 1fr; } .stat-grid { grid-template-columns: 1fr 1fr; } }
+.figure-box { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+.figure-box img { width: 100%; height: auto; border-radius: 8px; }
+.figure-box .cap { font-size: 12px; color: var(--muted); margin-top: 8px; }
+.footer { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--muted); }
+.tag { display:inline-block; background:#eef3f8; color:var(--blue); border:1px solid var(--line); border-radius:8px; padding:3px 10px; font-size:12px; margin:3px; }
+.status-pass { color: var(--teal); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>京张信标 JINGZHANG BEACON</h1>
+    <div class="en">把 AI 城市的运行状态变成公共信号语言 · 百年京张AI创新带城市设计开源方案</div>
+    <p class="sub">以百年京张铁路信号体系为原型：绿色 = 可体验，黄色 = 受控测试，红色 = 停用与回滚。一脊三核双翼的空间结构把 AI 治理原则转译为街道上可感知、可复核、可回退的公共界面。全部空间与活动均为开放共创概念建议，不替代正式规划，不构成政府审定结论。</p>
+    <div class="signal-row">
+      <span class="signal"><span class="dot dot-green"></span>GREEN 可体验 · 稳定开放</span>
+      <span class="signal"><span class="dot dot-amber"></span>AMBER 受控测试 · 限期试点</span>
+      <span class="signal"><span class="dot dot-red"></span>RED 停用回滚 · 退出机制</span>
+      <span class="signal"><span class="dot dot-blue"></span>BEACON 信标节点 · 公共界面</span>
+    </div>
+  </div>
+
+  <div class="overview">
+    <div class="figure-box">
+      <img src="../assets/figures/site-overview.png" alt="总体概念、三色信号语言与一脊三核双翼结构">
+      <div class="cap">总览地图：总体概念与一脊三核双翼空间结构（基于 provisional 边界，仅供方案讨论）</div>
+    </div>
+    <div class="figure-box">
+      <img src="../assets/figures/key-areas.png" alt="三座信标重点区域详细设计">
+      <div class="cap">重点区域：三座信标（验证/开源/体验）详细设计索引</div>
+    </div>
+  </div>
+
+  <div class="metrics-bar">
+    <h2>核心指标（provisional 边界复算，EPSG:4548）</h2>
+    <div class="note">指标与 metrics.json 保持一致；法定管控指标（容积率、建筑高度等）缺官方控规条件，保持 unknown。</div>
+    <div class="stat-grid">
+      <div class="stat"><div class="v"><span data-metric="site_area_sqm" data-value="11412825.386">1,141.3万㎡</span></div><div class="l">总体设计范围面积</div></div>
+      <div class="stat"><div class="v"><span data-metric="green_ratio" data-value="0.11344">11.3%</span></div><div class="l">绿地比例</div></div>
+      <div class="stat"><div class="v"><span data-metric="public_space_ratio" data-value="0.00359">0.4%</span></div><div class="l">广场公共空间比例</div></div>
+      <div class="stat"><div class="v">12</div><div class="l">AI 场景卡</div></div>
+      <div class="stat"><div class="v">3</div><div class="l">产业测试验证场景</div></div>
+      <div class="stat"><div class="v">3</div><div class="l">AI 朝圣地标</div></div>
+    </div>
+  </div>
+
+  <div class="section-title">三层范围工作框架</div>
+  <div class="section-sub">统筹研究范围（约 43.6 平方公里）→ 总体设计范围（约 11.4 平方公里）→ 重点区域范围（约 368.4 公顷），共用同一套三色信号语言。</div>
+  <div class="grid">
+    <div class="card"><h2>统筹研究范围</h2><p>AI 产业生态与未来城市形态：建立"策源—验证—开源—体验—治理"信号链，组织三区两翼协同回路与全球 AI 创新活动体系。</p><p><span class="tag">用地分区</span><span class="tag">交通慢行</span><span class="tag">蓝绿公共空间</span></p></div>
+    <div class="card"><h2>总体设计范围</h2><p>产业空间、城市更新、交通市政与风貌落图：35 个用地单元完整覆盖临时边界，信号脊绿带贯通南北，建筑/道路/绿地/分期共同表达设计意图。</p><p><span class="tag">用地分区</span><span class="tag">建筑</span><span class="tag">更新项目</span></p></div>
+    <div class="card"><h2>重点区域范围</h2><p>三处重点区达到详细设计深度：众智园验证信标（黄）、AI 原点开源信标（绿）、大钟寺体验信标（红蓝），每区给出定位、空间动作、AI 场景与实施依赖。</p><p><span class="tag">重点区域</span><span class="tag">AI 场景</span></p></div>
+  </div>
+
+  <div class="section-title">三座信标：重点区域详细设计</div>
+  <div class="section-sub">每座信标都是信号语言的公共载体，承载"先公开、后运行"的门槛。</div>
+  <div class="grid">
+    <div class="card beacon-card"><h2>众智园验证信标 AMBER</h2><p><b>全栈自主验证区</b>：清河界面—验证中轴—科研单元；三级验证门（虚拟评测→受控实验室→街区试点）；模型评测与红队沙盒、全栈模型受控试运营、城市智能体公开审计台。</p><p><span class="badge badge-amber">产业测试验证场景</span><span class="badge">AI全栈自主创新</span></p></div>
+    <div class="card beacon-green"><h2>AI原点开源信标 GREEN</h2><p><b>近校开源社区</b>：校区—园区缝合轴—开源广场—生活片；开源发布厅、近校成果转化街；"先开源、后转化"，公共知识进入公共库，成果按许可回馈社区。</p><p><span class="badge badge-green">开源协作</span><span class="badge">成果转化</span></p></div>
+    <div class="card beacon-red"><h2>大钟寺体验信标 RED·BLUE</h2><p><b>智能原生体验区</b>：站前四象限—文化体验片—商业服务环；国际路演客厅、数据要素会客厅、AI 生活服务样板街；所有体验以"可选择、可退出"为底线。</p><p><span class="badge badge-red">智能原生消费</span><span class="badge">站城一体</span></p></div>
+  </div>
+
+  <div class="section-title">AI 场景与用户画像</div>
+  <div class="section-sub">12 张 AI 场景卡（其中 3 张产业测试验证场景）与 5 类用户画像，全部为概念建议。</div>
+  <div class="grid">
+    <div class="card">
+      <h2>AI 场景卡（12 张）</h2>
+      <table>
+        <tr><th>编号</th><th>场景卡</th><th>信号</th></tr>
+        <tr><td>SC-01</td><td>开源发布厅（AI原点）</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-02</td><td>模型评测与红队沙盒（众智园）</td><td><span class="badge badge-amber">黄 · 测试</span></td></tr>
+        <tr><td>SC-03</td><td>端侧算力驿站（信号脊）</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-04</td><td>AI 慢行导航（信号脊绿道）</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-05</td><td>大钟寺国际路演客厅</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-06</td><td>清河低碳创新廊（众智园）</td><td><span class="badge badge-amber">黄</span></td></tr>
+        <tr><td>SC-07</td><td>近校成果转化街（AI原点）</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-08</td><td>数据要素会客厅（大钟寺）</td><td><span class="badge badge-amber">黄</span></td></tr>
+        <tr><td>SC-09</td><td>AI 生活服务样板街</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-10</td><td>全球 AI 活动周路线</td><td><span class="badge badge-green">绿</span></td></tr>
+        <tr><td>SC-11</td><td>全栈模型受控试运营（众智园）</td><td><span class="badge badge-amber">黄 · 测试</span></td></tr>
+        <tr><td>SC-12</td><td>城市智能体公开审计台（众智园）</td><td><span class="badge badge-red">黄/红 · 测试</span></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h2>用户画像（5 类）</h2>
+      <table>
+        <tr><th>画像</th><th>空间响应</th></tr>
+        <tr><td>开源开发者</td><td>原点开源广场、公共代码墙、夜间协作空间</td></tr>
+        <tr><td>初创与科研团队</td><td>众智园共享测试场、端侧算力服务点、验证门</td></tr>
+        <tr><td>头部企业与国际访客</td><td>站前复合界面、信标广场、国际路演客厅</td></tr>
+        <tr><td>周边居民</td><td>信号脊慢行环、社区服务嵌入、活动分级</td></tr>
+        <tr><td>高校师生</td><td>校区-园区缝合、成果转化街、AI 教育体验点</td></tr>
+      </table>
+      <h2 style="margin-top:16px;">AI 朝圣地标（3 处）</h2>
+      <ul>
+        <li><b>信标灯塔</b>（众智园）：清河界面的可攀登公共灯塔，三色灯光实时反映 AI 服务状态</li>
+        <li><b>开源原点石</b>（AI原点）：面向开源贡献者的荣誉节点，铭刻贡献者与公共知识沉淀</li>
+        <li><b>钟寺信号钟</b>（大钟寺）：站前广场可触摸信号钟，多语言公共状态提示</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="overview">
+    <div class="figure-box">
+      <img src="../assets/figures/land-use-structure.png" alt="概念用地结构与三层范围传导">
+      <div class="cap">用地分区：科研/商业/居住/文化/教育/绿地/留白，完整覆盖临时边界</div>
+    </div>
+    <div class="figure-box">
+      <img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间复合系统">
+      <div class="cap">交通慢行：信号脊绿道（南北贯通）+ 次干路 + 支路网格 + 三座信标广场</div>
+    </div>
+  </div>
+
+  <div class="section-title">更新项目与分期实施</div>
+  <div class="section-sub">近期试点 → 中期更新 → 长期治理框架；所有项目为概念建议，依赖条件待官方资料确认。</div>
+  <div class="card">
+    <table>
+      <tr><th>编号</th><th>项目名称</th><th>类型</th><th>分期</th></tr>
+      <tr><td>JZ-01</td><td>京张信号脊慢行断点缝合</td><td>公共空间/交通</td><td>近期</td></tr>
+      <tr><td>JZ-02</td><td>众智园清河低碳创新界面</td><td>蓝绿空间/产业展示</td><td>近期</td></tr>
+      <tr><td>JZ-03</td><td>原点近校成果转化街</td><td>城市更新/产业服务</td><td>近期</td></tr>
+      <tr><td>JZ-04</td><td>大钟寺站四象限步行连通</td><td>轨道一体化/慢行</td><td>中期</td></tr>
+      <tr><td>JZ-05</td><td>三座信标广场实施</td><td>公共空间/品牌</td><td>中期</td></tr>
+      <tr><td>JZ-06</td><td>AI 公共服务与端侧算力节点</td><td>新基建/公共服务</td><td>中期</td></tr>
+      <tr><td>JZ-07</td><td>全球 AI 活动周公共路线</td><td>运营/品牌</td><td>远期</td></tr>
+    </table>
+  </div>
+
+  <div class="section-title">任务覆盖与自检状态</div>
+  <div class="grid">
+    <div class="card">
+      <h2>任务覆盖（compliance_matrix.json）</h2>
+      <ul>
+        <li>公告 1.3/1.4/1.5 全部必选任务已映射章节、图层、指标、图纸与 HTML 页面</li>
+        <li>agent.1 一带总体概念与功能统筹：命名、Logo、三区两翼回路 ✓</li>
+        <li>agent.2 全栈自主与生态：7 个全球案例、生态图谱、要素机制 ✓</li>
+        <li>agent.3 场景赋能：12 场景卡、3 测试验证场景、5 类画像 ✓</li>
+        <li>agent.4 公共空间与朝圣：3 处朝圣地标、荣誉展示、组件库方向 ✓</li>
+        <li>agent.5 文化叙事：京张/中关村/AI 融合叙事、导视方向 ✓</li>
+        <li>agent.6 活动与运营：京张信标节四季活动、开发者社区运营 ✓</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>自检状态（self_check.json）</h2>
+      <p><span class="status-pass">PASS</span> BOUNDARY_TRUST：临时边界已标注，不用于官方红线</p>
+      <p><span class="status-pass">PASS</span> KEY_AREAS_TRUST：三处重点区为 provisional，已披露</p>
+      <p><span class="status-pass">PASS</span> LAND_USE_TOPOLOGY：用地完整覆盖、无重叠</p>
+      <p><span class="status-pass">PASS</span> VISUAL_STATIC：本页为离线静态 HTML，无远程资源</p>
+      <p><span class="status-pass">PASS</span> PROFESSIONAL_EVIDENCE：标准、深度、几何、指标、来源、假设均已引用</p>
+    </div>
+  </div>
+
+  <div class="section-title">来源与假设</div>
+  <div class="grid">
+    <div class="card">
+      <h2>主要来源（sources.json）</h2>
+      <ul>
+        <li>官方征集公告（OFFICIAL-ANNOUNCEMENT）— formal-ready</li>
+        <li>面向智能体开源征集任务书（AGENT-TASKBOOK）— 用户提供清权</li>
+        <li>仓库 site-package 与公开来源登记表（SITE-PACKAGE / SOURCE-REGISTRY）</li>
+        <li>临时边界与重点区（BOUNDARY-SOURCE / KEY-AREA-SOURCE）— provisional-only</li>
+        <li>7 个全球案例（ARUP / PDD / TEF / NIST / Kalasatama / King's Cross / 杭州）— 仅借鉴机制</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>关键假设（assumptions.json）</h2>
+      <ul>
+        <li>官方边界与重点区 polygon 缺失，全部几何为 provisional_constraint</li>
+        <li>控规指标、道路红线、权属、市政、文保条件待官方附件确认</li>
+        <li>建筑基底为概念体块，不代表现实建筑或拆改留结论</li>
+        <li>场景、活动、招商、资金与政策均为概念建议，不构成承诺</li>
+        <li>official polygons 到位后须整包重算几何、指标、图件与 HTML</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    JINGZHANG BEACON · 京张信标 — 百年京张AI创新带城市设计开源征集正式提交包（submissions/sLingli/jingzhang-beacon）· 本页为离线静态展示，不加载任何远程资源 · 全部空间与活动为开放共创概念建议，不替代正式规划，不构成政府审定结论。
+  </div>
+</div>
+</body>
+</html>
