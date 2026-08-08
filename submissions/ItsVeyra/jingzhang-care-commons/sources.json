@@ -282,7 +282,7 @@
       "id": "CASE-KAMPUNG-ADMIRALTY-HDB",
       "license_summary": "Official public-agency webpage; facts are cited with attribution only.",
       "local_paths": [],
-      "notes_zh": "官方页面存在但命令行访问受限；仅采用页面所述复合功能机制，不采用未经核验的成效数字。",
+      "notes_zh": "2026-08-08 命令行核验官方页面返回 HTTP 403；保留官方发布者和 URL，仅使用复合功能机制，未使用成效数字。",
       "prohibited_uses": [
         "Haidian spatial control",
         "local development capacity",
