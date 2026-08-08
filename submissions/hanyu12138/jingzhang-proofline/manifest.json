@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-08T08:10:54.333Z",
+  "generated_at": "2026-08-08T22:43:53+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -23,14 +23,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "dcf2f1b86c734256d8abebf20ce52bb7c48ec58e92568c307bf1528a7b73cb75",
+      "sha256": "a788647fc157e9514f1e580875b48754be6d3cc8e39f1a97c16957c16786be01",
       "language": "zh"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2ecf008cbdbfa55e16cfbbcb4170c97c27cd6ef08910dc530879e6a45f96c680"
+      "sha256": "ffced4d72cdc9058cc6839a890538548c213a4102e2834f1593d80352099c26c"
     },
     {
       "path": "agent.json",
@@ -72,14 +72,14 @@
       "path": "visual/assets/participation.json",
       "role": "narrative",
       "required": false,
-      "sha256": "a430a048271a16e67d2fc799f8f6a0b77a8760a1a3d5351917ce4b1919106e79",
+      "sha256": "1f5271aeeeae71560ac4d9b295a8cfe9132ed8ba908a12d67b8abe4dbcab7a93",
       "language": "neutral"
     },
     {
       "path": "visual/assets/construction-readiness.json",
       "role": "narrative",
       "required": false,
-      "sha256": "a05b825daab8d6e2b53c72f300e75c34cda75ec87cdfcc6af7a6d4a6945e0994",
+      "sha256": "986b93fb291896f50ff62491ca1f3ef72ab3695cfd935d9b65772cf36949cfcd",
       "language": "neutral"
     },
     {
@@ -104,40 +104,40 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "b6960521d77f87c7229f7af98cd6bf398008e152f6ba8c4ef8b3d74e0cb572f2",
+      "sha256": "f3350f6ee486839b338c120945a1f49ccd04cc85dfdbd4f0b31f0c1da8535f17",
       "language": "zh"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0ec97bb60758b3bd1ac17fc8b2e3a25fae1ada4e2b511d3218c2deaba5ae8ae9"
+      "sha256": "a9ea8c5559aac0239a01d46487286666d7e7e5bd2642c8a5ac078da12621bf06"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "3c403e93c7bcce13d858d79b15b992aaae758ad564276b8422204f4eed0cb2d0"
+      "sha256": "04f214b96a0e92e968e644dc483e244ee0a19172aec1a91305fd6cd6363e23cd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "8219e277a95a93353f9d644a535bb3d01945ca01239ef18e0eb72a5faf1856cb",
+      "sha256": "37546d7fb40418670b361f9793031e5704546767db9462a287f99ae49f31d5ea",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ab169613a7b07dfa82cdadfaa076ac02fbc52e1c4ba89c1760ef75698aec4c09",
+      "sha256": "387a4ff3248730c47d6ebe993685caf0104974bb37239c7c72c157462274923b",
       "language": "zh"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "c57ad48fd927e4d4d8a5926104b4032c670339f0ba8036f20247b9b3dc24a794",
+      "sha256": "46d95465e8121ea0c66cde901774c0bc8b5bb17bd474641a8c5ebb2872ffdd38",
       "language": "zh"
     },
     {
@@ -165,7 +165,14 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "21a548cbab44e9e93f11dffb8ce280d071541835598b394481ee0d5f083c9bff",
+      "sha256": "07a805b01ff56cb56af4c4d9edd20bc0a04580f4766b817511f19e6ae58952ad",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "2df9e44f480c7b00450c50d9077d9bdee637c479f43519ff03e2afeceac73fd2",
       "language": "zh"
     },
     {
@@ -249,7 +256,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "801576f92b65a7033595174818ac7545e338f7df08d58cd8ffb023e1fba9aa4e"
+      "sha256": "49d827fd4d517c7bc48fe14e80e90443121d65873239c56140b4af27ecad6db3"
     },
     {
       "path": "report/proposal.en.html",
@@ -257,7 +264,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e5ae6a62acc60fae884f99fa5e334ec4c17d0d5f0fef3f2f25fc98e367c823aa"
+      "sha256": "08438a740672f8d124af43c2688d725ebd480069d95af37225adc1c2a4037ebd"
     },
     {
       "path": "visual/index.en.html",
@@ -265,7 +272,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0fb637f68f2e994197741c7436570854fab280062f1406a2cb8986a6872d3bfc"
+      "sha256": "f51e946264294c07556e2b96ed098684354fafa7817b86105fd3beceb7a8c529"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -273,7 +280,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5df6200aa4eed2bedb76b6e3955b6491697c205c4eb484e37d4b2c83f3516cc9"
+      "sha256": "1661b10a1bcda67cd08f992900e38f87d6542656e5ff765eaba50af52e709697"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -281,7 +288,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ad520746bdb80095d18349f70276d6b6a6d0cef9fa1cecf2ffcef9a44c55f1ab"
+      "sha256": "1dc805d723cb00cbd06e1749b7d56148be47979ac9802a6473c0c1282fa705a7"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -321,7 +328,15 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "57e4b0c4a7a90c1f9633d050859894e9fc80fd167b7be8c2ba279adef2bfc95c"
+      "sha256": "34e6dcdf43561a502724117cb03a85839803cf07acb5bc58801da3828a5d5558"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.svg",
+      "sha256": "e094707261cedf9a3f9a33d2bb9ff6efb74e3a7fa6fe564de98138bd66264e68"
     }
   ],
   "validation_claim": {
