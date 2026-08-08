@@ -17,7 +17,8 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": "79b579875f6f7abd288661f1a1b8d065fcd3006bebdd86b9779f89d64b84cbd5"
     },
     {
       "path": "proposal.md",
@@ -308,7 +309,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "ec3d48d0b851619dbc5f8a2f4f3d5bd7107e7c541dc727b4fc9d1ec408973044"
+      "sha256": "1b2960f0777dd65148a60ab2e81242e848b246e07e79be9fd8ffbd440a3fc78e"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -326,7 +327,7 @@
       "path": "visual/assets/policy-enterprise-playbook.json",
       "role": "policy_enterprise_playbook",
       "required": true,
-      "sha256": "d894f98805c71352fa73a1a31a22ed9b9599b90ecc317ee084be276c6d9687a1"
+      "sha256": "1f7f9251a2de287940fe6cdd76ac633a6d8eb65ebff5e42d1780eb9d39d4a8bd"
     },
     {
       "path": "visual/assets/key-area-node-plans.json",

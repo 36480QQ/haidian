@@ -32,6 +32,20 @@
       "stop_gate": "Missing purpose, data owner or human review blocks procurement and public testing.",
       "source_ids": ["CASE-AMSTERDAM-ALGORITHM-REGISTER", "CASE-UK-ATRS"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-003",
+      "title": "企业模型安全验证窗口",
+      "policy_instrument": "predeployment_assurance_sandbox",
+      "enterprise_stage": "controlled_product_testing",
+      "problem": "A small firm needs a bounded place to reproduce safety and explainability tests before a public workflow becomes a live deployment.",
+      "jingzhang_interface": "Reserve a Zhongzhi Garden S04 test window with clean test data, model card, red-team note, human takeover drill, incident log and rollback rehearsal.",
+      "operator": "test-room operator + district safety lead + independent evaluator",
+      "required_evidence": ["test-data clearance", "repeatable test note", "takeover drill", "rollback log"],
+      "metric": "assurance_windows_with_reproducible_test_note",
+      "stop_gate": "Unknown data provenance, failed takeover or missing incident log rejects the next token.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
