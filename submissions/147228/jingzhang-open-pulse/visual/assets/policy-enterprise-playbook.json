@@ -46,6 +46,20 @@
       "stop_gate": "Unknown data provenance, failed takeover or missing incident log rejects the next token.",
       "source_ids": ["CASE-SINGAPORE-AI-VERIFY"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-004",
+      "title": "多渠道产品反馈与决策回执",
+      "policy_instrument": "traceable_multichannel_feedback",
+      "enterprise_stage": "product_market_fit_with_public_users",
+      "problem": "Companies and public teams need usable feedback without making an account, device or digital fluency a condition of participation.",
+      "jingzhang_interface": "For S05 or S08, pair the contribution wall and online ledger with staffed paper, walk-in and multilingual channels; publish which feedback changed the service or policy.",
+      "operator": "community curator + service owner + participating supplier",
+      "required_evidence": ["channel-equivalence check", "feedback-to-decision log", "accessible participation test", "unresolved-issue register"],
+      "metric": "feedback_items_with_public_decision_or_reason_for_nonadoption",
+      "stop_gate": "If offline participants cannot reach the same review path, the pilot cannot claim representative feedback.",
+      "source_ids": ["CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
