@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 summary: "以「轨距即标准权」为第一性原理的概念方案：京张铁路以1435mm标准轨距接入世界标准网络，AI创新带以算力/数据/开源/治理标准定义智能时代轨距。空间转译一基双轨三站——主脊为路基、两翼为双轨、三站为节点；配套拓扑完整用地剖分、EPSG:4548复算指标、12张场景卡、6类画像、5处朝圣地标与轨距日运营体系。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.1.6"
+iteration: "v0.1.7"
 ---
 
 # 双轨·百年：从铁轨到智轨 The Parallel Rails
@@ -15,6 +15,21 @@ iteration: "v0.1.6"
 > 轨距是铁路时代最沉默的契约：两条钢轨相距 1435mm，列车才能驶上这条线路，货物才能在这片土地上流转。1909 年，京张铁路在崇山峻岭间铺下中国自主选定的标准轨距——不向任何外国体系让渡标准权；2026 年，北京在海淀展开一条新的轨道：这一次要确定的，是智能时代的"轨距"——算力如何互联、数据如何互操作、开源如何共治、AI 如何被治理。两条轨道并行向前，永不交汇，却共同决定列车能驶向哪里。**定义轨距者，定义远方。**
 
 本方案为面向全球智能体的开源征集正式方案包。全部内容为**开放共创建议**：不替代正式规划，不构成政府审定结论；一切空间落地、运营、品牌与政策机制均为概念建议、参考方案，供专业团队深化研究。
+
+## 一页执行摘要 / Executive Brief
+
+| 评审问题 | 双轨·百年的回答 | 可核验成果 |
+| --- | --- | --- |
+| 核心命题 | 轨距是铁路时代最沉默的契约：1909 年京张铁路以 1435mm 标准轨距完成中国第一次"标准选择"，把中国铁路接入世界通行网络；2026 年京张 AI 创新带展开第二次"标准选择"——算力如何互联、数据如何互操作、开源如何共治、AI 如何被治理。**定义轨距者，定义远方。** | 三尺度论证（物理/制度/文明）、命名体系「双轨·百年 The Parallel Rails」、Logo 方向与自绘 SVG 资产 |
+| 空间响应 | "一基双轨三站"：主脊（京张遗址公园活力带）为路基，西轨中关村科技服务翼与东轨小月河场景赋能翼为双轨，众智站/原点站/大钟站为三处重点节点；19 个用地单元拓扑完整剖分。 | 9 类 GeoJSON（gap≈0/overlap≈0）、6 张证据图、A3/A0 与离线 HTML |
+| 生态机制 | 6 个全球案例转化为土地/空间/资金人才/算力数据/场景/标准治理六条机制；三区两翼构成"西轨输入要素、东轨输出场景"的回路。 | 生态图谱、案例对照表、区域协同接口 |
+| 场景与体验 | 12 张 AI 场景卡（含 3 个产业测试验证场景）、6 类用户画像、5 处 AI 朝圣地标（双轨碑·标准之源/源点广场/轨距博物馆/道岔广场/鸣钟广场）。 | 场景卡清单、画像表、场景-空间-运营映射、地标目录 |
+| 实施起点 | 近期"三站先行"（约 406.3 万 m²）：双轨碑一期、道岔广场等低争议 quick win；15 项核心更新项目，五方分工建议。 | 分期 geometry、更新项目清单、实施政策四条 |
+| 公共价值 | 每站 1 处非智能替代服务点、无障碍出行覆盖全线慢行、15 分钟生活圈社区服务、公共空间全免费无障碍开放。 | 包容性可计数指标、民生与包容性安排 |
+| 证据状态 | 全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点核验叙事方向；官方 polygon 公布后整体重算。 | metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 8 项 |
+| 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不替代法定规划、不构成政府审定或投资承诺。 | 风险章节、禁用声明、版权声明 |
+
+**English brief.** The Parallel Rails turns the gauge — the quietest contract of the railway age — into a first-principles urban design: in 1909 the Jing-Zhang Railway made China's first autonomous standard choice (1435 mm standard gauge, joining the world network); in 2026 the Jing-Zhang AI Innovation Belt makes the second — how compute interconnects, how data interoperates, how open source is governed, and how AI is governed. The spatial translation is "One Spine · Two Rails · Three Stations": the heritage park spine as the roadbed, the Zhongguancun Technology Services Wing and the Xiaoyue River Scenario Enablement Wing as twin rails, and Zhongzhi / Origin / Dazhong stations as nodes, with a topologically complete 19-unit land-use partition. 12 AI scenario cards, 6 personas, 5 pilgrimage landmarks, 15 renewal projects and a Gauge Day operations system make the concept countable. Everything is a conceptual proposal for professional deepening — not statutory planning, not a government decision, not an investment commitment.
 
 ## 设计依据与资料清单
 
@@ -51,6 +66,10 @@ iteration: "v0.1.6"
 主名称**「双轨·百年」**，英文 **The Parallel Rails**，副题 An Open Standard Belt（开放标准带）。命名围绕"轨距的三种尺度"展开论证：**物理尺度**——1435mm 是当时国际通行的标准轨距（史实边界：轨距系既有国际标准，京张铁路是中国自主修建并自主采纳该标准的第一次作答，本文以"标准选择"为隐喻起点而非历史结论），京张铁路是中国在标准问题上第一次自主作答：不沿用殖民体系的窄轨、不依赖外国的轨距标准，把中国铁路接入世界通行网络；**制度尺度**——AI 时代的"轨距"是协议、是许可证、是互操作规范、是治理规则，谁在 2026 年定义这些标准，谁就拥有智能时代的通行权，直接对应"AI 治理全球话语权"功能定位；**文明尺度**——两根铁轨永远并行、互不交叉，却共同承重、共同决定方向，这正是历史与未来、工程与算法、中关村科技服务翼与小月河场景赋能翼、人类与 AI 的关系。
 
 命名体系向下延展：三站命名**众智站**（Zhongzhi Station，对应公告"众智园AI自主创新加速区"）/**原点站**（Origin Station，对应公告"北京AI原点社区"）/**大钟站**（Dazhong Station，对应公告"大钟寺AI产业集聚区"）；**轨历双纪年**——以 1909 年为轨距元年 G0，2026 年为 G117，里程碑与碑刻采用公元×轨历双标；年度活动命名**轨距日**（Gauge Day）与**轨距论坛**（Gauge Forum）。Logo 方向：双轨×刻度——两条平行钢轨横贯，轨枕化为刻度线，其中一轨的刻度渐变为二进制序列；数字端以"1.435m"为超级符号，碑刻端转译为钢轨截面阴刻。双语域并行：对官方与公众讲"双轨·百年：自主标准的两次选择"，对全球开发者讲"The gauge is the standard"。本方案不采用任何未授权字体、图片、商标或人物肖像，Logo 均为方向性描述与自绘示意。
+
+![双轨·百年 概念 Logo（自绘矢量：双轨×刻度，轨枕化为刻度、一轨渐变为二进制序列，1.435m 为超级符号）](assets/parallel-rails-logo.svg)
+
+Logo 视觉规范（概念方向）：以"双轨×刻度"为母题——两条平行钢轨横贯为双轨（历史之轨×智能之轨），轨枕化为标准刻度，上轨刻度自左向右渐变为 0/1 二进制序列，象征智能时代的新轨距；三处金圆点为道岔节点，对应三站；数字端"1.435m"为标准轨距超级符号（概念数字，非工程值），碑刻端转译为钢轨截面阴刻。深海军蓝 #0F2B46 主色（工程与秩序）、金 #C9A227 强调（标准与节点）、公园绿 #1F7A4D 生态（蓝绿系统），三色不使用渐变或发光效果；中英标准组合用于国际传播，不拉伸、不旋转、不加企业冠名、不替换节点数量。具体商标检索、字体授权、无障碍对比度与应用物料须由品牌与法律专业团队深化。
 
 ### 世界级 AI 创新生态体系（agent.2）
 
