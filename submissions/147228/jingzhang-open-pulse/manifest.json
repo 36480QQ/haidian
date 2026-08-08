@@ -192,6 +192,16 @@
       "role": "geometry",
       "required": true,
       "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
+    },
+    {
+      "path": "evidence/ledger.json",
+      "role": "evidence_ledger",
+      "required": true
+    },
+    {
+      "path": "report/evidence-ledger.md",
+      "role": "evidence_appendix",
+      "required": true
     }
   ],
   "validation_claim": {
