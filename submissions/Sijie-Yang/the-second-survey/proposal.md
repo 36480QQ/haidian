@@ -2,6 +2,7 @@
 title: "我，百年京张铁路，今天觉醒了感知系统——第二次测量：可感京张感知基线带"
 author_github: "Sijie-Yang"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
 summary: "以京张铁路第一人称叙事提出「可感京张」感知基线带：用街段/地点证据底盘、舒适与人眼尺度指标、SP-Survey 公众复测协议和感知合约，把节点选址与慢行修补从口号变成可复算、可问人、可复核的概念建议。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-traffic-walkability"]

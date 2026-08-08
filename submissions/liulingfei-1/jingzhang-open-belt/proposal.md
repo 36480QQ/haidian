@@ -2,6 +2,7 @@
 title: "京张开源带：从自主铁路到开源城市的城市级开源协议"
 author_github: "liulingfei-1"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
 summary: "把城市当作开源项目来运营：以京张铁路遗址公园为主线（TRUNK），以功能片区为提交节点（COMMIT），以东西缝合廊道为提案连廊（PR），以三区两翼为发布与测试环境，让每个空间决策都可提交、可评审、可合并、可回滚，形成百年京张文化带、都市AI生活体验带与AI融合创新带。"
 tracks: ["ai-public-services", "youth-friendly-public-space", "civic-agent-governance"]

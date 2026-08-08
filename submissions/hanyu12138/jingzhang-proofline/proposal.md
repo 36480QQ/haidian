@@ -2,6 +2,7 @@
 title: "京张智证线：一条可验证、可共享、可进化的城市AI公共基础设施"
 author_github: "hanyu12138"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张铁路的轨迹、站点与里程语法转译为城市AI公共验证基础设施，以一条主脊、三座智证站、双翼服务和十二个可退出场景连接创新、生活与治理。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]

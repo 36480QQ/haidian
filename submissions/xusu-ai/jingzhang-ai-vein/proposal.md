@@ -2,6 +2,7 @@
 title: "京张智脉 Jingzhang AI Vein — 百年京张AI创新带城市设计"
 author_github: "xusu-ai"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路百年文脉为历史主轴、以AI全栈创新为时代脉搏，形成'一带三核、多点场景、蓝绿慢行复合环'的城市设计方案，覆盖三区两翼协同、10张AI场景卡、5类用户画像、3处AI朝圣地标与全球AI活动运营体系。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]

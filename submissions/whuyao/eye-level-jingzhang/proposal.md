@@ -2,6 +2,7 @@
 title: "眼平京张 EYE-LEVEL JINGZHANG｜面向人的城市科学街区"
 author_github: "whuyao"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以眼平尺度公共价值为结果、以城市科学闭环为方法：一条日常剖面连接众智园方法院、AI原点生活院和大钟寺应用院；12个AI+空间场景均有人审、非AI替代、三项测试与回退。全部空间为provisional概念建议，明确披露大钟寺边界冲突。"
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "ai-public-services"]

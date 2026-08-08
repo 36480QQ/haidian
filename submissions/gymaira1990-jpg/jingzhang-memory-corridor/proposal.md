@@ -2,6 +2,7 @@
 title: "百年京张记忆长廊：一廊九站·众星托举——技术走向人间的百年"
 author_github: "gymaira1990-jpg"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以国家五年规划与关键历史节点为骨架，把京张铁路遗址公园及两侧片区组织为一条'技术走向人间'的百年记忆长廊：一廊九站承载中国自主创新史，分布式记忆驿站激活既有公共文化设施形成星火网络，终点文化馆汇聚为'AI+城市档案馆'；以集章护照为数据总线、以开放平台让 AI 服务生态持续入驻，实现人人写史、人人用 AI、可生长可进化的历史文化城市长廊。"
 tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "civic-agent-governance"]
