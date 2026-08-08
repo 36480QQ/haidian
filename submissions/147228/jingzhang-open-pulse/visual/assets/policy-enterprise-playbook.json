@@ -757,6 +757,29 @@
         "CASE-DECIDIM-BARCELONA"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-042",
+      "title": "跨场景复制前置审查卡",
+      "policy_instrument": "cross_context_replication_review",
+      "enterprise_stage": "post_pilot_decision",
+      "problem": "A result from one site, population or service can be copied to another context even though the data, route, operator, risks and non-AI baseline have changed.",
+      "jingzhang_interface": "Before moving an accepted S02/S08/S09 result between Zhongzhi Garden, Origin and Dazhongsi, compare context, affected groups, operating owner, legal review, baseline, failure modes and a fresh stop drill.",
+      "operator": "scale decision chair + destination service owner + independent reviewer",
+      "required_evidence": [
+        "context comparison",
+        "destination baseline",
+        "affected-group review",
+        "fresh stop drill",
+        "replication decision"
+      ],
+      "metric": "cross_site_replications_with_destination_context_and_stop_review",
+      "stop_gate": "Changed context without a new baseline or failed destination stop drill means no replication.",
+      "source_ids": [
+        "CASE-UK-ATRS",
+        "CASE-HELSINKI-AI-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
