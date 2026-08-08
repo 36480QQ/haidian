@@ -102,6 +102,20 @@
       "stop_gate": "Unknown provenance, unbounded retention or unauthorised export immediately closes the test window.",
       "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-AMSTERDAM-ALGORITHM-REGISTER"],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-008",
+      "title": "知识产权与贡献署名闸门",
+      "policy_instrument": "ip_attribution_and_license_gate",
+      "enterprise_stage": "prototype_to_commercial_offer",
+      "problem": "Open collaboration can accelerate a prototype but can also create disputes over data, code, model weights, public display and commercial reuse.",
+      "jingzhang_interface": "Before S05 or S08 public release, attach a rights ledger naming input license, contributor, display permission, commercial boundary, takedown route and future owner.",
+      "operator": "community curator + legal/IP reviewer + participating company",
+      "required_evidence": ["path-level rights ledger", "contributor consent", "license compatibility check", "takedown procedure"],
+      "metric": "public_artifacts_with_complete_rights_and_attribution_record",
+      "stop_gate": "Unclear ownership or incompatible license keeps the artifact private and out of the public showcase.",
+      "source_ids": ["CASE-DECIDIM-BARCELONA"],
+      "status": "conceptual_suggestion"
     }
   ]
 }
