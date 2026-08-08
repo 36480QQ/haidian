@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1644e4d813f6a1510c12ed4f747778f50a4c3b3a10d574cedd1ae7e61b8f11fd"
+      "sha256": "b9a5c7949af00580391a2d92aae40845e7be4b02e6403e20d03d08750d07ed26"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3fc77651e40212400a06127e8368633ca0ba47c95441cd55d80ef9e2fc5003b9"
+      "sha256": "30f15bc67b9df7a779338f930994347c203c068f9be378b4a073d3a846d8285d"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "60db474d5f0ba06570c8e7eb933826cd6bc421d1380430a980a4a2f460befd76"
+      "sha256": "e49e6b5dc4dc98adbff3ce26773e7903fb2daffce5b17110f01334072215f275"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1e3c2d9f9c695e193269dc88571cba64a1a53cb3a5bde50d0bc93d6d1c2a4fd8"
+      "sha256": "7bf3bd3df7d3a6cf02136b12d97309aa8cd44835a462444ac7f34b7c54818ab9"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "bf972ff9e9de131eebd2a3fcd6649e81d93cefb4fe5dfa91945c9385694fd882"
+      "sha256": "149177b0b77614ea4d06e0d8bdaa2811878193cc1e796a47794ba0b973ef159c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -417,7 +417,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "c94ac4e720473bd193e1a13e48da408321951cdec34a492de003b7070482edeb"
+      "sha256": "5204bcdb91010a056e4c45ed440c949dcc13dd58ed62243733cea312bb57b599"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -462,7 +462,19 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "b89375ee9305dabf628ad885f82d051fdbcfcf4e361f514ca0ea046021bb1a8b"
+      "sha256": "1233c90902287658f83a9410519130d7659025830bb763dc37a1656c3b7fc76a"
+    },
+    {
+      "path": "visual/assets/operations-matrix.json",
+      "role": "operations_matrix",
+      "required": true,
+      "sha256": "23c6c2619c7c2c85b26ea24dd6cdf6fbb2418b58f2f5ea263858ab51a7ef31dd"
+    },
+    {
+      "path": "visual/assets/resource-accounts.json",
+      "role": "resource_accounts",
+      "required": true,
+      "sha256": "9bb9ffe605c7922571418b15e9ee0d0997095d42e3658a511817cbc33fe8abbd"
     }
   ],
   "validation_claim": {

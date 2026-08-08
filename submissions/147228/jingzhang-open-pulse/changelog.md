@@ -6,6 +6,12 @@
 - 增加 `open-pulse-relay-receipt.schema.json` 与完全合成的 S02 具身智能沙盒凭证，把人工接管、无 App 替代、清权、维护和退出写成可复核记录。
 - 增加 `qa-readiness.json`，记录本地 QA 通过项和 provisional/unknown 边界；三项新资产同步进入 manifest 与逐资产清权台账。
 
+## v2.0.1 - 2026-08-08
+
+- 补齐英文主文的全状态城市操作系统：11 项决策维度、S0–S4 与 50,000 次压力抽样、八类气候/运维压力、具身智能分级开放、风水文化边界和六项风热水健康审查门。
+- 将“人—环境—机器—资产”压力测试和断网/断电/急停/维护逾期回退写成可拍摄的五镜头、30 秒导演脚本，并与 evidence ledger 绑定。
+- 新增 `visual/assets/operations-matrix.json` 八项运维行动包，以及 `visual/assets/resource-accounts.json` 五本资源账，补齐责任、依赖、验收、停止、维护、备件和扩散/退出交接链。
+
 ## v1.7 - 2026-08-08
 
 reviewable deliverables and bilingual review surface.
