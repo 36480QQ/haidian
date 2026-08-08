@@ -7,15 +7,17 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A public-interest proving ground where urban AI must earn trust before it scales."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.4"
-iteration: 5
+version: "1.6"
+iteration: 7
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-> **v1.4 executable-verification status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+> **v1.6 spatial-delivery review status.** Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 **Motto: Every urban intelligence must withstand public scrutiny.**
+
+![Civic AI Loop concept mark](assets/figures/civic-loop-logo.en.svg)
 
 ## Executive brief: a public acceptance line, not another “AI park”
 The scarce asset is not another closed compute room but a walkable public infrastructure where residents, researchers, firms, operators and regulators can decide whether an urban intelligence deserves to enter the city. Zhongzhiyuan tests the stack and safety; the AI Origin Community turns research prototypes into participatory neighbourhood services; Dazhongsi tests public experience and consumer rights. The two wings provide professional support and bounded real-world tasks.
@@ -23,6 +25,27 @@ The scarce asset is not another closed compute room but a walkable public infras
 The six Taskbook agents become one delivery contract: 12 scenario cards, three falsifiable pilot protocols, AP0—AP7 action packages, G0—G4 gates, five resource ledgers and a civic-agent receipt. The first 90 days prepare evidence, repair one accessible public chain, establish staffed/paper/phone fallback and run synthetic-data rehearsals. Only P1 may begin after G0—G2 evidence is complete; any unresolved severe safety, rights or data issue stops the trial. Boundaries, title, statutory controls, cost, procurement, real operators and performance baselines remain **unknown/pending** until lawfully verified.
 
 Four machine-readable artefacts make the proposal handover-ready: `visual/assets/delivery-matrix.json`, `pilot-protocols.json`, `civic-agent-receipt.schema.json` and `asset-rights.json`. The included receipt is a synthetic example, not evidence of a live project.
+
+## Taskbook at a glance: three positions, five functions, three areas and two wings
+
+- **Three positions:** heritage belt becomes a continuous public narrative; AI life-experience belt becomes optional everyday tasks; AI-integrated innovation belt requires verification before translation.
+- **Five functions:** full-stack autonomy maps to Zhongzhiyuan validation; world-class ecology to AI Origin open translation; AI+ scenarios to bounded Xiaoyue River trials; vibrant intelligent city to Dazhongsi public experience; global governance voice to bilingual open protocols and annual review.
+- **Spatial loop:** the three areas perform stack verification—open translation—urban experience, while the two wings provide professional services—real-world scenarios; each function has a first acceptance item.
+
+|Taskbook intent|Spatial–operating translation|First acceptance item|
+|---|---|---|
+|Centennial Jing-Zhang cultural belt|Rail alignment, stations and mileage form a continuous public narrative|Three-time-layer wayfinding and fact review|
+|Urban AI life-experience belt|AI is optional within walking, service, retail and cultural tasks|Accessible task chain, staffed fallback and appeal|
+|AI-integrated innovation belt|Research prototypes must pass spatial safety, public co-testing and independent evaluation|Open challenge library, P1–P3 protocols and Run Receipts|
+|Full-stack autonomous AI system|Zhongzhiyuan validates tools, models, agents and robots together|Versioned test plan and hard stop lines|
+|World-class AI innovation ecology|AI Origin Community links universities, open source, small teams and civic needs|Translation clinic and open task passport|
+|New AI+ scenario paradigm|Xiaoyue River Wing provides bounded, timed and takeover-ready tests|Baseline, comparison and human fallback|
+|Vibrant intelligent city|Dazhongsi and the public spine embed understandable experiences in daily life|Experience street, honour node and non-digital route|
+|Global voice in AI governance|Publish bilingual protocols, failures, templates and contribution lineage|Annual public review and reusable open components|
+
+The three areas perform **stack verification—open translation—urban experience**; the two wings provide **professional services—real-world scenarios**. Cross-regional task passports may connect nearby communities, the Future Science City, Huairou Science City, Beijing E-Town and Beijing–Tianjin–Hebei partners, but only through voluntary agreements that name data permission, site responsibility, stop conditions and output licences. Unconfirmed organisations are never presented as committed partners.
+
+**Brand system.** The concept mark uses twin rails, three nodes and an open gap: continuity plus dual human-machine verification, the three areas, and public entry into review. Colours are Rail Blue `#173B57`, Verification Green `#2D7D6E` and Heritage Copper `#B46A3C`. Naming scales from Civic AI Loop to Proof Hub, Civic Test Point and Run Receipt. The original mark is `assets/figures/civic-loop-logo.en.svg`; it must not imitate government identity, accept corporate naming rights or cover risk signage. International message: **A century-old railway becomes a civic proving ground where urban AI must earn public trust before it scales.**
 
 ## Evidence and method
 This open co-creation proposal does not replace statutory planning, government approval, engineering design, or accountable human judgment. It relies on the official announcement, Agent Taskbook, public site package, processed fact pack, and source registry [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK] [source:SOURCE-REGISTRY]. Its method binds evidence, assumptions, design action, metric, responsible role, and exit trigger. Urban agents follow data minimisation, meaningful choice, appeal, human review, version logs, and independent evaluation.
@@ -69,6 +92,19 @@ Three layers overlap without surrendering the public realm: a free, accessible w
 |Commercial street–civic room|Quiet, family and staffed spaces|No profiling price or manipulative design|Consumers, merchants and subdistrict review|
 
 A conceptual 15-minute public-value loop links a verified history point, non-digital service, prototype experience, feedback point and appeal/exit point. Actual accessibility cannot be claimed until official road, slope, crossing and facility data support route-by-route network analysis. Existing buildings pass a retain–adapt–demolish decision tree: verify title and structural safety; retain usable fabric; adapt valuable but underperforming fabric with reversible components; consider removal only through lawful process and demonstrated public benefit.
+
+### Spatial control book: from diagram to auditable section
+Before official survey, title and specialist inputs arrive, every control is labelled either **statutory value pending** (redlines, FAR, height, setbacks, parking and fire), **field measurement pending** (clear width, slope, canopy, noise, heat and footfall), or **concept performance** (continuous, reversible, accessible and recoverable). Every number carries source, date, measurer, scope and replacement trigger.
+
+|Place component|Conceptual section/action|Verify before works|Observable performance|
+|---|---|---|---|
+|Heritage slow spine|Movement, stay and ecological-buffer bands; detachable additions|Heritage impact, title, width/slope, fire and utilities|Closed gaps, accessible-task success, usable shade/rest|
+|Cross-stitch point|Improve existing crossing, light, guidance and waiting first|Flows, signals, sightline, drainage, accessibility and egress|Wait, near misses, slowest-user crossing time|
+|Open campus ground floor|Staffed service, shared rooms and transparent test window; separate back-of-house|Structure, fire, title, hours, noise and MEP capacity|Free hours, handoff success, non-consumption use|
+|Pocket proving point|Status board, human stop, seating, edge device and recoverable ground interface|Permit, power, weather, slip/child safety, maintenance and restoration|Stop drills, complaint closure, fallback continuity|
+|River/green edge|Keep devices off sensitive habitat; test only on hardscape in fixed windows|Blue line, flood, landscape, habitat, light and noise|Ecological disturbance, boundary breach, weather closure|
+
+Each key area develops a first 100 metres at 1:200, locating doors, ramps, trees, seats, tactile paths, devices, staffed desk, fire route and exit. Replication waits for a joint title–section–operation–emergency review with residents, accessibility representatives, operators and specialists; unverified lines remain dotted.
 
 ![Three key areas](assets/figures/key-areas.en.png)
 
@@ -125,6 +161,9 @@ The storyline joins engineering courage, open experimentation and public respons
 
 International line: **A century-old railway becomes an open civic proving ground where urban AI must earn trust before it scales.** Exchange packages share protocols, failures, test templates and public-space components, never unapproved data or claims of a universal Beijing answer.
 
+### One real visit: brand touchpoints must complete a task
+The identity is tested through arrival–recognition–participation–help–exit, not logo preference. A resident can report a barrier by paper, phone or digital route and receive a traceable receipt; an international visitor can understand verified rail history, trial purpose and exit without roaming or an app; an SME can see equal eligibility, schedule, cost/support, refusal reason and licence; an older or disabled visitor can reach a visible human desk with screen-reader, hearing and tactile support. Copper mileage markers carry reviewed history, blue signs locate basic service, and green trial signs show version, boundary and stop status. No critical step relies only on QR, an app, Chinese or colour. Target users and unfamiliar operators run unprompted task walks before opening; communication may claim success only with dated scope, status, limits and recorded failure points.
+
 ## Phasing and governance
 - 0–6 months: obtain official inputs, run accessibility/site audits, create the problem and risk registers.
 - 6–18 months: operate three reversible prototypes, public evaluation protocol and contributor ledger.
@@ -149,6 +188,9 @@ The six taskbook items are converted from a compliance index into delivery contr
 |AP7 exit and restoration|Deletion proof, removal/restoration, notice, archive and contract close-out|Funded alongside every package|No timely review means automatic pause; non-restorable space blocks G2|
 
 Five ledgers make feasibility visible: space and hours; accountable people and rosters; data purpose/retention/deletion; equipment version/maintenance/energy/retirement; and public trust including complaints, near misses, group gaps and minority opinions. Before feasibility study, cost is shown only by seven classes—survey/design, reversible space works, equipment/safety, staffed operation, independent evaluation, maintenance, and exit/restoration—with quantity basis, quotation or norm source, uncertainty range and approval status. No total investment is invented.
+
+### Procurable interfaces: buy outcomes, not lock-in
+Phase one separates six independently acceptable and replaceable interfaces: signed base-map/specialist verification; accessible public-chain micro-works; staffed service/work orders; independent evaluation/red team; edge-device or robot sandbox; and wayfinding/public evidence. Each specification defines delivery unit, field task or independent acceptance evidence, open-format handover, log/data export, maintenance SLA, expiry review and restoration proof. Payment follows evidence complete–sample passed–field task passed–defects closed–handover complete, never mere equipment arrival or publicity. Models, robots and branding may not be bundled with basic public service; tenders state performance and evidence rather than a preferred supplier or unverified price. Personal or safety-sensitive material transfers only as the minimum lawful fields plus audit proof.
 
 ## Civic Agent Receipt and feasibility stress test
 

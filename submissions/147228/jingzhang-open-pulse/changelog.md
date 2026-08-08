@@ -27,3 +27,9 @@ reviewable deliverables and bilingual review surface.
 - Rebuilt all five required evidence boards from the submitted GeoJSON and metrics; removed stale v1.1–v1.3 footers and unsupported percentage claims.
 - Added the explicit `building_footprint_ratio` metric and clarified that 2.72% is a provisional geometry ratio, not a statutory control.
 - Re-rendered the Chinese and English offline reports with semantic tables retained for reviewer readability; no remote runtime dependency was added.
+
+## v1.8.1 - 2026-08-08
+
+- Classified “藏风聚气 / 风水” strictly as cultural landscape narrative, not a health, air-quality, hydrological or engineering causal claim.
+- Translated that narrative into six auditable but currently `unknown` baselines for pedestrian wind comfort, pollutant stagnation, mean radiant temperature, continuous shade, blue-green accessible-route overlap and water-risk exceedance routing.
+- Added three peer-reviewed method references with DOI and explicit non-transfer limits; no published case result is represented as Jing-Zhang CFD, measurement or health evidence.
