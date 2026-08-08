@@ -6,7 +6,7 @@ license: "CC-BY-4.0"
 summary: "以京张铁路第一人称叙事提出「可感京张」感知基线带：用街段/地点证据底盘、舒适与人眼尺度指标、SP-Survey 公众复测协议和感知合约，把节点选址与慢行修补从口号变成可复算、可问人、可复核的概念建议。"
 tracks: ["youth-friendly-public-space", "ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 我，百年京张铁路，今天觉醒了感知系统——第二次测量：可感京张感知基线带
@@ -71,7 +71,7 @@ iteration: "v0.1"
 - **一带名**：可感京张 / Sensible Jing-Zhang  
 - **方案名**：《我，百年京张铁路，今天觉醒了感知系统》  
 - **副标题**：第二次测量 / The Second Survey  
-- **Logo 方向**：动轮刻度线渐变为感知波形（见 `assets/logo-sensible-jingzhang.svg`）  
+- **Logo 方向**：城门/京字轮廓 + 铁轨刻度 + 感知波形的印章式标志（见 `assets/logo-sensible-jingzhang.svg`）；全套图件采用北京古风信息图体系  
 命名拒绝口号空转，要求任何品牌动作都能映射回断面指标与公众复测。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ### 全球 AI 创新生态案例（agent.2，6 例）
