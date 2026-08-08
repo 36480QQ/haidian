@@ -91,7 +91,7 @@ iteration: "v0.1"
 
 ### 产业目标与功能布局 [depth:functional_layout]
 
-总体设计范围内公共管理与商业用地合计占比约53.6%[metric:industrial_rd_area_sqm]，商业服务业用地占比约24.6%[metric:commercial_area_sqm]，公共服务设施用地占比约10%[metric:public_facility_area_sqm]，居住用地占比约11.1%，绿地与开敞空间占比约35.3%[metric:green_ratio]。以上比例为基于临时边界的AI生成概念分配[data:geometry/land_use.geojson]，不构成法定用地指标[depth:land_use_layout]。
+总体设计范围内公共管理与商业用地合计占比约53.6%[metric:industrial_rd_area_sqm]，商业服务业用地占比约24.6%[metric:commercial_area_sqm]，公共管理与公共服务用地占比约29.0%[metric:public_facility_area_sqm]，居住用地占比约11.1%，绿地与开敞空间占比约35.3%[metric:green_ratio]。以上比例为基于临时边界的AI生成概念分配[data:geometry/land_use.geojson]，不构成法定用地指标[depth:land_use_layout]。
 
 ### 空间结构与更新框架 [depth:urban_renewal_framework]
 
