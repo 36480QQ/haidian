@@ -1013,6 +1013,24 @@
       "hash_sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
     },
     {
+      "path": "visual/assets/wind-health-field-protocol.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree from the registered public method sources; no remote asset fetch at render time",
+      "source_inputs": [
+        "official AIJ public CFD guidebook route",
+        "peer-reviewed AIJ CFD guideline",
+        "ISO 7726 public catalogue record",
+        "repository brief and existing wind-health validation contract"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Method boundaries and URLs are registered in sources.json; the artifact contains no copied paper text or local measurement values.",
+      "font_note": "Not applicable; JSON evidence asset.",
+      "hash_sha256": "a496867ddfd7bb468910028dc17f6627dec71dd4c1240325eb5071c9333cddfd"
+    },
+    {
       "path": "visual/index.en.html",
       "asset_class": "offline_html",
       "author": "许丙南 / Codex",
