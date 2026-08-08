@@ -11,7 +11,7 @@
 7. 所有建筑体块有真实北京案例对应（见 proposal.md 案例支撑表）
 """
 import json, math
-from shapely.geometry import Polygon, box
+from shapely.geometry import Polygon, box, LineString
 from pyproj import Transformer
 
 OUT = "/tmp/scene_v3.json"
@@ -102,80 +102,109 @@ def bld_box(pid, x0, y0, x1, y1, h, fl, btype, tname, color, case, shrink=0.05):
     area = area_sqm_4548(poly_ring(bp, 0.0))
     add_bld(pid, btype, tname, color, poly_ring(bp), h, fl, area, case)
 
+# ============ 镜像工具（以中轴 x=0 左右对称，所有成对地块共用）============
+def _site_limit_at(y):
+    """该 y 位置、以 x=0 镜像排布的楼群半宽上限（含 15m 退线）。
+    取西翼可用西边界与东翼可用东边界中较窄者——两翼镜像共用同一上限，保证不出界。"""
+    inter = LineString([(-700, y), (700, y)]).intersection(SITE_POLY)
+    if inter.is_empty:
+        return 0.0
+    xs = [p[0] for p in inter.coords]
+    west, east = min(xs), max(xs)
+    west_eff = max(west, -WING_OUT + 15)   # 西翼 clip 西边界
+    east_eff = min(east, WING_OUT - 15)    # 东翼 clip 东边界
+    return min(abs(west_eff), east_eff)
+
+def _mirror_x(x0, d, sz):
+    """以 x=0 为中轴镜像：西翼楼 x∈[−d−sz, −d]，东翼楼 x∈[d, d+sz]（严格镜像）"""
+    if x0 < 0:
+        return -d - sz, -d
+    return d, d + sz
+
 # ============ 3. 建筑生成（真实北京案例）============
 # ---- 3.1 科研地块：大基底点式办公楼（36-80m，锚定北五环外真实高度）----
 # 高度参照：北京上地信息产业基地/中关村软件园（西二旗）写字楼 6-18 层/24-72m 为主流
-# 制高点 80m/25层 仅 1 栋/地块；容积率策略：大基底（46-62m见方，标准层 2100-3800㎡）+ 12 栋/块
+# ---- 3.1 科研地块：大基底点式办公楼（45-80m，锚定北五环外真实高度）----
+# 镜像排布：10 栋塔楼成对出现在 ±d（以中轴 x=0 镜像），d 值已按两翼边界校验不出界
 def gen_rd(pid, x0, x1, y0, y1, tag):
-    # 用实际可用区域（设计矩形∩场地）替代 design_rect——东西翼自动适应各自边界
+    # 用实际可用区域（设计矩形∩场地）
     clip = box(x0+15, y0+15, x1-15, y1-15).intersection(SITE_POLY)
     if clip.is_empty or clip.geom_type != "Polygon":
         return
     cx0, cy0, cx1, cy1 = clip.bounds
-    w = cx1 - cx0; hgt_span = cy1 - cy0
-    x0, y0 = cx0, cy0  # 布局基准改为裁剪后 bounds（西翼自动避开斜边界）
+    hgt_span = cy1 - cy0
+    y0 = cy0
     # ===== 大基底点式写字楼群：参考北京知名写字楼单层面积 =====
-    # 中国尊底部 78m 见方/单层~3000-3500㎡、正大中心 50m 见方/单层~2500㎡、
-    # 国贸三期 48×50m/单层~2000-2300㎡ → 本方案取 55-75m 见方/单层 3000-5600㎡
-    # 高度 60-80m（上地/中关村软件园主流，最高为中国尊528m的15%），层高 3.9-4.0m
+    # 中国尊底部 78m 见方/单层~3500㎡、正大中心 50m 见方/单层~2500㎡、
+    # 国贸三期 48×50m/单层~2300㎡ → 本方案取 55-75m 见方/单层 3000-5600㎡
+    # 高度 45-80m（上地/中关村软件园主流，最高为中国尊528m的15%），层高 3.9-4.0m
     towers = [
-        # (x比例, y比例, 见方, 高度m, 层数, 颜色, 案例)
-        (0.16, 0.16, 75, 80, 20, "#4F7CFF", "中国尊级·底部78m见方/单层~3500㎡·社区级缩尺"),
-        (0.56, 0.20, 70, 70, 18, "#4F7CFF", "正大中心级·50m见方/单层~2500㎡·放大版"),
-        (0.60, 0.64, 72, 60, 15, "#4F7CFF", "国贸三期级·48×50m/单层~2300㎡·放大版"),
-        (0.18, 0.42, 65, 60, 15, "#5B8CFF", "CBD核心区级·55-60m见方/单层~3000㎡"),
-        (0.55, 0.82, 62, 54, 14, "#6B9AFF", "上地地标级·单层~3800㎡"),
-        (0.36, 0.10, 60, 54, 14, "#7BA8FF", "软件园地标级·单层~3600㎡"),
-        (0.35, 0.34, 58, 48, 12, "#7BA8FF", "科技园级·单层~3400㎡"),
-        (0.78, 0.50, 58, 48, 12, "#7BA8FF", "科技园级·单层~3400㎡"),
-        (0.38, 0.88, 56, 45, 11, "#5B8CFF", "园区办公级·单层~3100㎡"),
-        (0.80, 0.14, 56, 45, 11, "#5B8CFF", "园区办公级·单层~3100㎡"),
+        # (距中轴d, y比例, 见方, 高度m, 层数, 颜色, 案例)  ← 两翼 ±d 镜像
+        (160, 0.16, 75, 80, 20, "#4F7CFF", "中国尊级·底部78m见方/单层~3500㎡·社区级缩尺"),
+        (330, 0.20, 70, 70, 18, "#4F7CFF", "正大中心级·50m见方/单层~2500㎡·放大版"),
+        (358, 0.64, 72, 60, 15, "#4F7CFF", "国贸三期级·48×50m/单层~2300㎡·放大版"),
+        (250, 0.42, 65, 60, 15, "#5B8CFF", "CBD核心区级·55-60m见方/单层~3000㎡"),
+        (360, 0.82, 62, 54, 14, "#6B9AFF", "上地地标级·单层~3800㎡"),
+        (200, 0.10, 60, 54, 14, "#7BA8FF", "软件园地标级·单层~3600㎡"),
+        (220, 0.34, 58, 48, 12, "#7BA8FF", "科技园级·单层~3400㎡"),
+        (380, 0.50, 58, 48, 12, "#7BA8FF", "科技园级·单层~3400㎡"),
+        (260, 0.88, 56, 45, 11, "#5B8CFF", "园区办公级·单层~3100㎡"),
+        (405, 0.14, 56, 45, 11, "#5B8CFF", "园区办公级·单层~3100㎡"),
     ]
-    for tx, ty, sz, h, fl, color, case in towers:
-        bx = x0 + w*tx; by = y0 + hgt_span*ty
-        bld_box(pid, bx, by, bx+sz, by+sz, h, fl, "ai_r_and_d", "AI研发", color,
+    for d, ty, sz, h, fl, color, case in towers:
+        by = y0 + hgt_span * ty
+        bx0, bx1 = _mirror_x(x0, d, sz)
+        bld_box(pid, bx0, by, bx1, by+sz, h, fl, "ai_r_and_d", "AI研发", color,
                 f"大基底写字楼·参考北京{case}({h}m/{fl}层/层高{h/fl:.1f}m)")
-    # 研发裙房（低层大基底，3层/12m=4.0m层高 — 参考中关村软件园办公楼，置于地块底部空白区）
-    bx = x0 + w*0.30; by = y0 + hgt_span*0.03
-    bld_box(pid, bx, by, bx+240, by+70, 12, 3, "ai_r_and_d", "AI研发裙房", "#6FA0FF",
+    # 研发裙房（低层大基底，3层/12m=4.0m层高 — 参考中关村软件园办公楼，两翼镜像；d=225 避开北段西翼斜边界 y≈3286 处仅 -471）
+    d = 225
+    by = y0 + hgt_span * 0.03
+    bx0, bx1 = _mirror_x(x0, d, 240)
+    bld_box(pid, bx0, by, bx1, by+70, 12, 3, "ai_r_and_d", "AI研发裙房", "#6FA0FF",
             f"低层研发裙房·参考北京中关村软件园办公楼(3层/12m/4.0m层高)")
 
 # ---- 3.2 文化地块：大型文化建筑（案例：首都博物馆/中国科技馆）----
+# 镜像排布：主馆/专题馆/配套各一对 ±d（以中轴 x=0 镜像）
 def gen_culture(pid, x0, x1, y0, y1, tag):
     clip = box(x0+15, y0+15, x1-15, y1-15).intersection(SITE_POLY)
     if clip.is_empty or clip.geom_type != "Polygon":
         return
     cx0, cy0, cx1, cy1 = clip.bounds
-    w = cx1 - cx0; hgt_span = cy1 - cy0
-    x0, y0 = cx0, cy0
+    hgt_span = cy1 - cy0
+    y0 = cy0
     # 主文化馆（大型文化建筑，基底~1.4万㎡，4层，36m — 参考首都博物馆6.4万㎡/5层/40m）
-    bx = x0 + w*0.16; by = y0 + hgt_span*0.22
-    bld_box(pid, bx, by, bx+150, by+95, 36, 4, "education", "文化建筑", "#9B7BFF",
+    d = 300; by = y0 + hgt_span*0.22
+    bx0, bx1 = _mirror_x(x0, d, 150)
+    bld_box(pid, bx0, by, bx1, by+95, 36, 4, "education", "文化建筑", "#9B7BFF",
             f"大型文化馆·参考首都博物馆(6.4万㎡/5层/高40m/基底~1.3万㎡)")
-    # 第二文化馆（~0.8万㎡基底，3层 — 参考中国科技馆10.2万㎡/5层）
-    bx = x0 + w*0.55; by = y0 + hgt_span*0.30
-    bld_box(pid, bx, by, bx+115, by+75, 30, 3, "education", "文化建筑", "#B494FF",
+    # 第二文化馆（~0.8万㎡基底，3层 — 参考中国科技馆10.2万㎡/5层；d=400 避开西翼 y≈2105 斜边界 -521）
+    d = 400; by = y0 + hgt_span*0.30
+    bx0, bx1 = _mirror_x(x0, d, 115)
+    bld_box(pid, bx0, by, bx1, by+75, 30, 3, "education", "文化建筑", "#B494FF",
             f"专题文化馆·参考中国科技馆(10.2万㎡/5层/高30m)")
-    # 文化配套商业（底商≤3层）
-    bx = x0 + w*0.55; by = y0 + hgt_span*0.72
-    bld_box(pid, bx, by, bx+130, by+60, 12, 3, "mixed_use", "文化商业配套", "#FF8FA3",
+    # 文化配套商业（底商≤3层，d=355 避开西翼 y≈2785 斜边界 -488）
+    d = 355; by = y0 + hgt_span*0.72
+    bx0, bx1 = _mirror_x(x0, d, 130)
+    bld_box(pid, bx0, by, bx1, by+60, 12, 3, "mixed_use", "文化商业配套", "#FF8FA3",
             f"文化商业底商·参考北京文化园区配套商业(≤3层)")
 
-# ---- 3.3 居住地块：纯住宅统一规格板楼贴边排布（无点式/教育/底商） ----
-# 排布逻辑：① 住宅区仅住宅，全部统一 60×14m 板楼（无 45/55/65 混搭、无点式塔楼）
-# ② 5 排南低北高（30→45m 每排+3m，北京阳光自南射入任何一排不被遮挡）
-# ③ 每排按该位置地块实际宽度自适应栋数，左右贴边界排满（四角自然有楼贴边）
+# ---- 3.3 居住地块：纯住宅统一规格板楼镜像贴边排布（无点式/教育/底商） ----
+# 排布逻辑：① 住宅区仅住宅，全部统一 60×14m 板楼
+# ② 以中轴 x=0 镜像：每排楼栋两翼严格左右对称（x 互为相反数）
+# ③ 5 排南低北高（30→45m 每排+3m，北京阳光自南射入任何一排不被遮挡）
+# ④ 每排栋数按该位置两翼边界中较窄者自适应，楼群外端离边界仅 5m——自然贴紧边界
 def gen_residential(pid, x0, x1, y0, y1, tag):
-    # 用实际可用区域（设计矩形∩场地）——西翼居住地块边界不规则
+    # 用实际可用区域（设计矩形∩场地）
     clip = box(x0+15, y0+15, x1-15, y1-15).intersection(SITE_POLY)
     if clip.is_empty or clip.geom_type != "Polygon":
         return
     cx0, cy0, cx1, cy1 = clip.bounds
-    w = cx1 - cx0; hgt_span = cy1 - cy0
-    x0, y0 = cx0, cy0
+    hgt_span = cy1 - cy0
+    y0 = cy0
     bd = 14  # 板楼进深（北京板楼常规 12-16m）
     BL = 60  # 统一板楼长度 60m（同一种规格）
-    gap = 22  # 山墙距 22m（≥13m消防间距，22 使东翼窄段也能排 5 栋贴边）
+    gap = 22  # 山墙距 22m（≥13m消防间距）
+    step = BL + gap  # 82m（楼间距）
     # 5 排南低北高：高度从南到北 30→45m 每排+3m（利于日照）
     # 排距 0.24×hgt_span ≈ 380m ≈ 8.4×最高楼高，远超北京板楼日照间距系数 1.5-1.7
     rows_y = [0.02, 0.26, 0.50, 0.74, 0.98]  # 贴南北边界
@@ -184,45 +213,42 @@ def gen_residential(pid, x0, x1, y0, y1, tag):
     colors  = ["#C9952F", "#D9A23F", "#E8B84C", "#F2CD66", "#FCE796"]
     cases   = ["万柳书院(10层/30m)", "使馆壹号院(11层/33m)", "融创北京壹号院(12层/36m)",
                "融创北京壹号院(13层/39m)", "金茂府(15层/45m)"]
-    from shapely.geometry import LineString as _LS
     for ry, h, fl, color, case in zip(rows_y, heights, floors, colors, cases):
         row_y = y0 + hgt_span * ry
-        # 该排位置的实际可用宽度（水平线与 clip 求交）
-        inter = _LS([(x0-10, row_y), (x1+10, row_y)]).intersection(clip)
-        if inter.is_empty:
-            continue
-        avail = inter.length
-        n = max(4, int((avail + gap) // (BL + gap)))  # 自适应栋数，贴满左右边界
+        limit = _site_limit_at(row_y)                    # 镜像楼群半宽上限（两翼较窄者）
+        n = max(2, int((limit - 111 - BL) // step) + 1)  # 中轴间隙 ≥111（绿带半宽）
         total = n * BL + (n - 1) * gap
-        off = max(0.0, (avail - total) / 2)
-        xs = list(inter.coords)
-        left = min(p[0] for p in xs)
-        x_cursor = left + off
+        c = max(111.0, limit - total - 5)                # 楼群外端离边界 5m（自然贴紧）
         for i in range(n):
-            bld_box(pid, x_cursor, row_y, x_cursor+BL, row_y+bd, h, fl, "residential", "板式住宅", color,
+            d = c + i * step
+            bx0, bx1 = _mirror_x(x0, d, BL)
+            bld_box(pid, bx0, row_y, bx1, row_y+bd, h, fl, "residential", "板式住宅", color,
                     f"板式住宅·参考北京{case}/统一长60m×14m")
-            x_cursor += BL + gap
-    # 住宅区无点式/教育/底商（纯住宅，统一规格板楼，用户要求）
+    # 住宅区无点式/教育/底商（纯住宅，统一规格板楼镜像贴边，用户要求）
 
 # ---- 3.4 商业地块：商业综合体（案例：朝阳大悦城/西单大悦城）+ 底商 ----
+# 镜像排布：综合体/副楼/底商各一对 ±d（以中轴 x=0 镜像）
 def gen_commercial(pid, x0, x1, y0, y1, tag, is_dazhongsi=False):
     clip = box(x0+15, y0+15, x1-15, y1-15).intersection(SITE_POLY)
     if clip.is_empty or clip.geom_type != "Polygon":
         return
     cx0, cy0, cx1, cy1 = clip.bounds
-    w = cx1 - cx0; hgt_span = cy1 - cy0
-    x0, y0 = cx0, cy0
+    hgt_span = cy1 - cy0
+    y0 = cy0
     # 商业综合体（基底~1.5万㎡，8层/36m — 参考北京清河万象汇/五环外商业综合体，远低于CBD大悦城）
-    bx = x0 + w*0.15; by = y0 + hgt_span*0.20
-    bld_box(pid, bx, by, bx+130, by+115, 36, 8, "mixed_use", "商业综合体", "#FF6B7A",
+    d = 350; by = y0 + hgt_span*0.20
+    bx0, bx1 = _mirror_x(x0, d, 130)
+    bld_box(pid, bx0, by, bx1, by+115, 36, 8, "mixed_use", "商业综合体", "#FF6B7A",
             f"商业综合体·参考北京清河万象汇(8层/36m/大基底)")
-    # 商业副楼（5层/24m — 参考北京五环外商业副楼）
-    bx = x0 + w*0.58; by = y0 + hgt_span*0.26
-    bld_box(pid, bx, by, bx+110, by+80, 24, 5, "mixed_use", "商业副楼", "#E85A6C",
+    # 商业副楼（5层/24m — 参考北京五环外商业副楼，d=510 避开东翼 y≈-1199 边界 625）
+    d = 510; by = y0 + hgt_span*0.26
+    bx0, bx1 = _mirror_x(x0, d, 110)
+    bld_box(pid, bx0, by, bx1, by+80, 24, 5, "mixed_use", "商业副楼", "#E85A6C",
             f"商业副楼·参考北京西红门荟聚式郊区商业(3-5层/20-24m)")
-    # 底商裙房（≤3层，宽大）
-    bx = x0 + w*0.15; by = y0 + hgt_span*0.72
-    bld_box(pid, bx, by, bx+200, by+55, 12, 3, "mixed_use", "底商裙房", "#FF9DAE",
+    # 底商裙房（≤3层，宽大；d=350 避开东翼 y≈-453 处东边界仅 552m）
+    d = 350; by = y0 + hgt_span*0.72
+    bx0, bx1 = _mirror_x(x0, d, 200)
+    bld_box(pid, bx0, by, bx1, by+55, 12, 3, "mixed_use", "底商裙房", "#FF9DAE",
             f"底商裙房·参考北京商业街区裙房(≤3层/12m)")
 
 # ============ 4. 生成全部建筑 ============
