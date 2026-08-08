@@ -1,0 +1,270 @@
+{
+  "type": "FeatureCollection",
+  "name": "civic_weave_scenario_nodes_and_governance",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SCENARIO-01",
+      "properties": {
+        "id": "SCENARIO-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "大钟寺选择大厅",
+        "scenario_card": "SC-01",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3472,
+          39.946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-02",
+      "properties": {
+        "id": "SCENARIO-02",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "算法收据驿站",
+        "scenario_card": "SC-02",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3508,
+          39.948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-03",
+      "properties": {
+        "id": "SCENARIO-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "无障碍路线陪审点",
+        "scenario_card": "SC-03",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346,
+          39.957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-04",
+      "properties": {
+        "id": "SCENARIO-04",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "社区服务比较台",
+        "scenario_card": "SC-04",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3505,
+          39.968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-05",
+      "properties": {
+        "id": "SCENARIO-05",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "原点开源议场",
+        "scenario_card": "SC-05",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3475,
+          39.985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-06",
+      "properties": {
+        "id": "SCENARIO-06",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "模型说明书长廊",
+        "scenario_card": "SC-06",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.351,
+          39.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-07",
+      "properties": {
+        "id": "SCENARIO-07",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "教育共学工作台",
+        "scenario_card": "SC-07",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          39.9985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-08",
+      "properties": {
+        "id": "SCENARIO-08",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "清河环境证据窗",
+        "scenario_card": "SC-08",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3505,
+          40.0065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-09",
+      "properties": {
+        "id": "SCENARIO-09",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "众智园验证议场",
+        "scenario_card": "SC-09",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3472,
+          40.012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-10",
+      "properties": {
+        "id": "SCENARIO-10",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "红队公开课",
+        "scenario_card": "SC-10",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.351,
+          40.017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-11",
+      "properties": {
+        "id": "SCENARIO-11",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "标准共创桌",
+        "scenario_card": "SC-11",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          40.0215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCENARIO-12",
+      "properties": {
+        "id": "SCENARIO-12",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "design_revision": "v1.1-visual-qa",
+        "name_zh": "百年贡献索引",
+        "scenario_card": "SC-12",
+        "governance": "opt-in, data minimization, human review, appeal and exit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3485,
+          40.024
+        ]
+      }
+    }
+  ]
+}
