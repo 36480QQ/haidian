@@ -118,6 +118,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-020",
+      "title": "一线运营者 AI 安全与企业服务培训卡",
+      "policy_instrument": "operator_upskilling_and_certification_path",
+      "enterprise_stage": "operational_readiness",
+      "problem": "A public AI service fails at the handoff when counter staff, maintenance workers and safety operators cannot understand its limits or take over.",
+      "jingzhang_interface": "Before S02/S04/S08/S09 launch, train operators on model/data boundary, accessible service, incident response, manual fallback, complaint routing and shutdown.",
+      "operator": "service owner + safety/data trainer + supplier support lead",
+      "required_evidence": ["role-based training record", "takeover drill", "complaint simulation", "refresher date"],
+      "metric": "active_windows_with_trained_operator_and_recent_takeover_drill",
+      "stop_gate": "Expired training or failed takeover drill suspends the service token.",
+      "source_ids": ["CASE-SINGAPORE-AI-VERIFY", "CASE-HELSINKI-AI-REGISTER"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-010",
       "title": "共享算力与低碳服务准入",
       "policy_instrument": "shared_compute_and_energy_gate",
