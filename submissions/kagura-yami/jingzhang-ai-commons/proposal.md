@@ -165,7 +165,7 @@ iteration: "v1.0"
 
 | 指标 | 建议公式/证据 | 当前状态 |
 |---|---|---|
-| site_area_sqm / key_area_area | polygon 投影面积 | 待 official polygon 复算 |
+| site_area_sqm / key_area_area | polygon 投影面积 | 已按 provisional polygon 临时复算；official polygon 到位后重算 |
 | green_ratio | 绿地 polygon 面积 / site 面积 | 0.126425，临时设计层复算 [metric:green_ratio] |
 | public_space_ratio | 公共空间面积 / site 面积 | 0.056769，临时设计层复算 [metric:public_space_ratio] |
 | building_footprint_area_sqm | 建筑基底 polygon 汇总 | 待现状测绘与设计层区分 |
