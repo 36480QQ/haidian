@@ -178,6 +178,13 @@ def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
     return bool(changed_files) and len(roots) == 1
 
 
+def is_non_submission_pr(changed_files: list[str]) -> bool:
+    """Return true for a code, test, docs, or configuration PR outside submissions/."""
+    return bool(changed_files) and all(
+        filename.split("/", 1)[0] != "submissions" for filename in changed_files
+    )
+
+
 def safe_manifest_paths(manifest: object) -> set[str]:
     """Return inert, proposal-relative file paths declared by a manifest."""
     if not isinstance(manifest, dict) or not isinstance(manifest.get("files"), list):
@@ -287,7 +294,13 @@ def main() -> int:
                 proposal_path,
             )
 
-        if not validation_files and maintainer_bypass:
+        queue_candidate = is_review_queue_candidate(changed_files, pr_author)
+        if is_non_submission_pr(changed_files):
+            validation = ValidationReport(changed_files=changed_files)
+            validation.add_warning(
+                "non-submission code/docs/test PR; participant package validation was not applicable"
+            )
+        elif not validation_files and maintainer_bypass:
             validation = ValidationReport(
                 changed_files=changed_files,
                 maintainer_bypass=True,
@@ -308,7 +321,6 @@ def main() -> int:
         write_step_summary(comment)
         client.upsert_comment(pr_number, comment)
 
-        queue_candidate = is_review_queue_candidate(changed_files, pr_author)
         if validation.ok and queue_candidate:
             client.remove_labels(
                 pr_number,
