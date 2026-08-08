@@ -84,6 +84,34 @@
       "severity": "major",
       "target": "visual/index.html",
       "message": "语义标题、替代文本、键盘焦点、reduced-motion和390px响应式已人工检查；正文色对比度不低于4.5:1。"
+    },
+    {
+      "check_id": "PRESENCE_CONTRACT_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/presence-contract.schema.json",
+      "message": "在场契约具备机器可校验Schema和明确标为synthetic的CS-08样例，覆盖数据、人工权力、等价服务、失败恢复、申诉与复审。"
+    },
+    {
+      "check_id": "DELIVERY_GATES",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/delivery-gates.json",
+      "message": "九个行动包、六道公共决策门和六本资源账包含依赖、验收证据与硬停止。"
+    },
+    {
+      "check_id": "RISK_REGISTER",
+      "result": "pass",
+      "severity": "major",
+      "target": "risk.json",
+      "message": "十项双语风险均有概率、影响、责任角色、触发、止损与恢复。"
+    },
+    {
+      "check_id": "LANGUAGE_PARITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/language-parity.json",
+      "message": "英文主文完整展开同一方案，并由机器记录场景、行动包、Gate、风险与证据引用覆盖。"
     }
   ]
 }

@@ -80,8 +80,8 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 </tr>
 <tr>
 <td>证据状态</td>
-<td>全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点核验叙事方向；官方 polygon 公布后整体重算。</td>
-<td>metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 8 项</td>
+<td>全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点＋海淀统计公报校准叙事与设计方向；官方 polygon 公布后整体重算。</td>
+<td>metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 9 项</td>
 </tr>
 <tr>
 <td>决策边界</td>
@@ -132,6 +132,36 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 </tr>
 </tbody></table>
 <p>核验结论：方案的三站（众智/原点/大钟）与主脊空间叙事均能在真实城市地图上找到对应节点，provisional 边界的空间定位与真实城市肌理方向一致。该核验仅增强叙事可信度，坐标不用于面积、距离或红线判断；官方几何公布后仍以官方数据为准，重算路径不变。</p>
+<h3>行政尺度公开统计校准（海淀区 2025 统计公报）</h3>
+<p>为校准设计动作而非堆砌数字，本包引入海淀区 2025 年国民经济和社会发展统计公报的公开行政统计 <span class="evidence evidence-source">[source:DATA-SRC-HAIDIAN-2025-STATISTICAL-BULLETIN]</span>（北京市海淀区统计局队 2026-04-10 发布，A0 官方公开页面；仅摘录事实数值并保留发布者、标题与原始链接，不复制页面全文；<code>statistical_scope=海淀区2025年度行政统计</code>，<code>not_spatially_allocable=true</code>——这些数字是全区行政统计，<strong>不进入 metrics.json、不改变任何 GeoJSON/面积/线位/分期</strong>，仅用于判断&quot;方案该补什么&quot;)：</p>
+<table>
+<thead><tr>
+<th>可核验公开统计</th>
+<th>设计判断（为何改变设计动作）</th>
+<th>不证明什么</th>
+</tr></thead><tbody>
+<tr>
+<td>在区全国重点实验室 92 家，占全市 63.4%、全国 17.9%</td>
+<td>创新<strong>供给</strong>已在海淀高度集聚，方案的增量价值不在&quot;再堆创新空间&quot;，而在补<strong>标准验证、成果转化与治理接口</strong>——众智站从&quot;新建研发聚集&quot;校准为&quot;标准沙盒与互操作验证枢纽&quot;</td>
+<td>这些实验室位于京张走廊、愿意参与、形成多少客流或绩效</td>
+</tr>
+<tr>
+<td>备案上线大模型 123 款，占全市 60%</td>
+<td>模型供给同样集聚，众智站定位校准为&quot;全栈验证＋算力数据枢纽&quot;而非新建模型基地</td>
+<td>模型厂商聚集于走廊、或由本带承载算力负荷</td>
+</tr>
+<tr>
+<td>每万人口高价值发明专利 599 件（较上年 +59 件）</td>
+<td>创新密度已处高位，原点站定位校准为&quot;成果转化通道＋校地门诊&quot;而非再建研发体量</td>
+<td>走廊内专利分布、转化率或企业落位</td>
+</tr>
+<tr>
+<td>技术合同 5.79 万项、成交额 4053.1 亿元（+6.5%）</td>
+<td>技术交易活跃，三站应补<strong>场景首发、标准治理与国际传播出口</strong>，把交易量转化为可感知的标准共识</td>
+<td>合同发生于走廊内、或可转化为本带绩效</td>
+</tr>
+</tbody></table>
+<p><strong>校准结论</strong>：海淀的&quot;创新供给端&quot;已高度集聚（实验室、大模型、专利、技术合同均处全国前列），京张 AI 创新带的差异化价值不在继续堆叠科研设施，而在补上&quot;验证—转化—标准—场景&quot;的<strong>标准接口层</strong>——这正是本方案&quot;轨距＝标准权&quot;概念的行政统计支撑：第一根轨（历史）把中国铁路接入世界标准网络，第二根轨（智能）把海淀的创新供给接入全球<strong>共识与治理</strong>网络。以上统计仅作背景校准，均标注 <code>background_only</code>，不替代任何官方规划结论。</p>
 <h2>统筹研究范围产业与未来城市研究</h2>
 <h3>命名体系与视觉识别（agent.1）</h3>
 <p>主名称<strong>「双轨·百年」</strong>，英文 <strong>The Parallel Rails</strong>，副题 An Open Standard Belt（开放标准带）。命名围绕&quot;轨距的三种尺度&quot;展开论证：<strong>物理尺度</strong>——1435mm 是当时国际通行的标准轨距（史实边界：轨距系既有国际标准，京张铁路是中国自主修建并自主采纳该标准的第一次作答，本文以&quot;标准选择&quot;为隐喻起点而非历史结论），京张铁路是中国在标准问题上第一次自主作答：不沿用殖民体系的窄轨、不依赖外国的轨距标准，把中国铁路接入世界通行网络；<strong>制度尺度</strong>——AI 时代的&quot;轨距&quot;是协议、是许可证、是互操作规范、是治理规则，谁在 2026 年定义这些标准，谁就拥有智能时代的通行权，直接对应&quot;AI 治理全球话语权&quot;功能定位；<strong>文明尺度</strong>——两根铁轨永远并行、互不交叉，却共同承重、共同决定方向，这正是历史与未来、工程与算法、中关村科技服务翼与小月河场景赋能翼、人类与 AI 的关系。</p>
@@ -674,5 +704,5 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;paddi
 <h2>参考资料</h2>
 <p>主控依据以 <span class="evidence evidence-source">[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]</span> <span class="evidence evidence-source">[source:DATA-SRC-AGENT-TASKBOOK-20260518]</span> 与 <span class="evidence evidence-standard">[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</span> <span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span> 为准，逐项清单如下：</p>
 <ul><li><code>brief/site-package/design_brief.json</code> — 项目结构化任务书</li><li><code>brief/site-package/agent_taskbook.json</code> — 面向智能体任务书（六项任务、共创章程与评审维度）</li><li><code>brief/site-package/allowed_design_space.json</code> — 图层权限与数据政策</li><li><code>brief/site-package/ranges/planning_limits.json</code> — 已知官方面积与缺失控规条件</li><li><code>brief/site-package/standards/standards.json</code> 及 <code>standards/references/</code> 本地标准快照</li><li><code>brief/site-package/geometry/provisional_boundaries.geojson</code> — 临时边界及推定依据</li><li><code>brief/site-package/sources.json</code>、<code>data/source_registry.json</code> — 来源登记</li><li><code>brief/site-package/schemas/*.json</code> — 校验 schema</li><li><code>data/processed/agent_fact_pack.md</code> — 事实包导航</li><li><code>brief/public-brief.md</code> — 公开任务书草案（背景语境）</li><li>本包证据文件：<code>geometry/*.geojson</code>、<code>metrics.json</code>、<code>sources.json</code>、<code>assumptions.json</code>、<code>compliance_matrix.json</code>、<code>standard_matrix.json</code>、<code>design_depth_matrix.json</code>、<code>visual/index.html</code>、<code>drawings/a3-booklet.pdf</code>、<code>drawings/a0-boards.pdf</code></li></ul></main>
-<footer>双轨·百年 The Parallel Rails · 京张AI创新带城市设计 · v0.1.8 · 全部内容为开放共创建议，不替代正式规划 | 边界为 provisional（official_boundary=false）</footer>
+<footer>双轨·百年 The Parallel Rails · 京张AI创新带城市设计 · v0.1.9 · 全部内容为开放共创建议，不替代正式规划 | 边界为 provisional（official_boundary=false）</footer>
 </body></html>

@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 summary: "以「轨距即标准权」为第一性原理的概念方案：京张铁路以1435mm标准轨距接入世界标准网络，AI创新带以算力/数据/开源/治理标准定义智能时代轨距。空间转译一基双轨三站——主脊为路基、两翼为双轨、三站为节点；配套拓扑完整用地剖分、EPSG:4548复算指标、12张场景卡、6类画像、5处朝圣地标与轨距日运营体系。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.1.8"
+iteration: "v0.1.9"
 ---
 
 # 双轨·百年：从铁轨到智轨 The Parallel Rails
@@ -26,7 +26,7 @@ iteration: "v0.1.8"
 | 场景与体验 | 12 张 AI 场景卡（含 3 个产业测试验证场景）、6 类用户画像、5 处 AI 朝圣地标（双轨碑·标准之源/源点广场/轨距博物馆/道岔广场/鸣钟广场）。 | 场景卡清单、画像表、场景-空间-运营映射、地标目录 |
 | 实施起点 | 近期"三站先行"（约 406.3 万 m²）：双轨碑一期、道岔广场等低争议 quick win；15 项核心更新项目，五方分工建议。 | 分期 geometry、更新项目清单、实施政策四条 |
 | 公共价值 | 每站 1 处非智能替代服务点、无障碍出行覆盖全线慢行、15 分钟生活圈社区服务、公共空间全免费无障碍开放。 | 包容性可计数指标、民生与包容性安排 |
-| 证据状态 | 全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点核验叙事方向；官方 polygon 公布后整体重算。 | metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 8 项 |
+| 证据状态 | 全部边界与指标可复算（EPSG:4548）；控规指标如实 unknown；OSM 真实场地锚点＋海淀统计公报校准叙事与设计方向；官方 polygon 公布后整体重算。 | metrics.json（30 项）、assumptions.json（8 项）、三大矩阵、来源登记 9 项 |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不替代法定规划、不构成政府审定或投资承诺。 | 风险章节、禁用声明、版权声明 |
 
 **English brief.** The Parallel Rails turns the gauge — the quietest contract of the railway age — into a first-principles urban design: in 1909 the Jing-Zhang Railway made China's first autonomous standard choice (1435 mm standard gauge, joining the world network); in 2026 the Jing-Zhang AI Innovation Belt makes the second — how compute interconnects, how data interoperates, how open source is governed, and how AI is governed. The spatial translation is "One Spine · Two Rails · Three Stations": the heritage park spine as the roadbed, the Zhongguancun Technology Services Wing and the Xiaoyue River Scenario Enablement Wing as twin rails, and Zhongzhi / Origin / Dazhong stations as nodes, with a topologically complete 19-unit land-use partition. 12 AI scenario cards, 6 personas, 5 pilgrimage landmarks, 15 renewal projects and a Gauge Day operations system make the concept countable. Everything is a conceptual proposal for professional deepening — not statutory planning, not a government decision, not an investment commitment.
@@ -58,6 +58,19 @@ iteration: "v0.1.8"
 | 五道口 | 39.987, 116.331 | 原点站东侧创新消费区真实区位 |
 
 核验结论：方案的三站（众智/原点/大钟）与主脊空间叙事均能在真实城市地图上找到对应节点，provisional 边界的空间定位与真实城市肌理方向一致。该核验仅增强叙事可信度，坐标不用于面积、距离或红线判断；官方几何公布后仍以官方数据为准，重算路径不变。
+
+### 行政尺度公开统计校准（海淀区 2025 统计公报）
+
+为校准设计动作而非堆砌数字，本包引入海淀区 2025 年国民经济和社会发展统计公报的公开行政统计 [source:DATA-SRC-HAIDIAN-2025-STATISTICAL-BULLETIN]（北京市海淀区统计局队 2026-04-10 发布，A0 官方公开页面；仅摘录事实数值并保留发布者、标题与原始链接，不复制页面全文；`statistical_scope=海淀区2025年度行政统计`，`not_spatially_allocable=true`——这些数字是全区行政统计，**不进入 metrics.json、不改变任何 GeoJSON/面积/线位/分期**，仅用于判断"方案该补什么")：
+
+| 可核验公开统计 | 设计判断（为何改变设计动作） | 不证明什么 |
+| --- | --- | --- |
+| 在区全国重点实验室 92 家，占全市 63.4%、全国 17.9% | 创新**供给**已在海淀高度集聚，方案的增量价值不在"再堆创新空间"，而在补**标准验证、成果转化与治理接口**——众智站从"新建研发聚集"校准为"标准沙盒与互操作验证枢纽" | 这些实验室位于京张走廊、愿意参与、形成多少客流或绩效 |
+| 备案上线大模型 123 款，占全市 60% | 模型供给同样集聚，众智站定位校准为"全栈验证＋算力数据枢纽"而非新建模型基地 | 模型厂商聚集于走廊、或由本带承载算力负荷 |
+| 每万人口高价值发明专利 599 件（较上年 +59 件） | 创新密度已处高位，原点站定位校准为"成果转化通道＋校地门诊"而非再建研发体量 | 走廊内专利分布、转化率或企业落位 |
+| 技术合同 5.79 万项、成交额 4053.1 亿元（+6.5%） | 技术交易活跃，三站应补**场景首发、标准治理与国际传播出口**，把交易量转化为可感知的标准共识 | 合同发生于走廊内、或可转化为本带绩效 |
+
+**校准结论**：海淀的"创新供给端"已高度集聚（实验室、大模型、专利、技术合同均处全国前列），京张 AI 创新带的差异化价值不在继续堆叠科研设施，而在补上"验证—转化—标准—场景"的**标准接口层**——这正是本方案"轨距＝标准权"概念的行政统计支撑：第一根轨（历史）把中国铁路接入世界标准网络，第二根轨（智能）把海淀的创新供给接入全球**共识与治理**网络。以上统计仅作背景校准，均标注 `background_only`，不替代任何官方规划结论。
 
 ## 统筹研究范围产业与未来城市研究
 
