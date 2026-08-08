@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JINGZHANG BEACON | Centennial Jing-Zhang AI Innovation Belt - Open Urban Design Proposal</title>
+<style>
+:root {
+  --paper: #f6f8fb;
+  --white: #ffffff;
+  --ink: #17212e;
+  --muted: #5d6b7c;
+  --line: #d8dee6;
+  --blue: #1b3a5c;
+  --green: #2e8b57;
+  --amber: #f0a500;
+  --red: #c1272d;
+  --gold: #d4a848;
+  --teal: #0b6e4f;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.65;
+}
+.wrap { max-width: 1280px; margin: 0 auto; padding: 26px 20px 60px; }
+.hero {
+  background: linear-gradient(135deg, #13243a 0%, #1b3a5c 55%, #24507a 100%);
+  color: #fff; border-radius: 16px; padding: 34px 34px 28px; margin-bottom: 22px;
+  position: relative; overflow: hidden;
+}
+.hero h1 { font-size: 30px; line-height: 1.25; letter-spacing: 1px; }
+.hero .zh { font-size: 15px; color: #bfd3e8; margin-top: 6px; letter-spacing: 1px; }
+.hero .sub { font-size: 14px; color: #d8e5f2; margin-top: 14px; max-width: 900px; }
+.signal-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.signal {
+  display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 6px 14px; font-size: 13px;
+}
+.signal .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-green { background: var(--green); box-shadow: 0 0 8px #2e8b57aa; }
+.dot-amber { background: var(--amber); box-shadow: 0 0 8px #f0a500aa; }
+.dot-red { background: var(--red); box-shadow: 0 0 8px #c1272daa; }
+.dot-blue { background: #3f7fd8; box-shadow: 0 0 8px #3f7fd8aa; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-bottom: 22px; }
+.card {
+  background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px;
+}
+.card h2 { font-size: 17px; margin-bottom: 12px; color: var(--blue); display: flex; align-items: center; gap: 8px; }
+.card h2::before { content: ""; width: 4px; height: 18px; background: var(--blue); border-radius: 2px; display: inline-block; }
+.card p, .card li { font-size: 13.5px; color: #33414f; }
+.card ul { padding-left: 18px; }
+.card li { margin-bottom: 6px; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stat { background: #f1f5f9; border: 1px solid var(--line); border-radius: 10px; padding: 14px 12px; text-align: center; }
+.stat .v { font-size: 20px; font-weight: 700; color: var(--blue); }
+.stat .l { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.beacon-card { border-left: 6px solid var(--amber); }
+.beacon-green { border-left-color: var(--green); }
+.beacon-red { border-left-color: var(--red); }
+.badge { display: inline-block; background: #e8eef5; color: var(--blue); border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 4px 4px 0; }
+.badge-green { background: #e2f3e9; color: var(--teal); }
+.badge-amber { background: #fdf0d5; color: #a06d00; }
+.badge-red { background: #fbe4e4; color: var(--red); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #eef3f8; color: var(--blue); font-weight: 600; }
+.section-title { font-size: 20px; color: var(--blue); margin: 30px 0 6px; }
+.section-sub { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.metrics-bar { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; margin-bottom: 22px; }
+.metrics-bar h2 { color: var(--blue); font-size: 17px; margin-bottom: 4px; }
+.metrics-bar .note { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+.overview { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-bottom: 22px; }
+@media (max-width: 900px) { .overview { grid-template-columns: 1fr; } .stat-grid { grid-template-columns: 1fr 1fr; } }
+.figure-box { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+.figure-box img { width: 100%; height: auto; border-radius: 8px; }
+.figure-box .cap { font-size: 12px; color: var(--muted); margin-top: 8px; }
+.footer { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--muted); }
+.tag { display:inline-block; background:#eef3f8; color:var(--blue); border:1px solid var(--line); border-radius:8px; padding:3px 10px; font-size:12px; margin:3px; }
+.status-pass { color: var(--teal); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>JINGZHANG BEACON</h1>
+    <div class="zh">京张信标 · Centennial Jing-Zhang AI Innovation Belt - Open Urban Design Proposal</div>
+    <p class="sub">Taking the signalling system of the century-old Jing-Zhang Railway as its prototype: Green = experienceable, Amber = controlled testing, Red = retired and rolled back. A one-spine, three-beacon, two-wing spatial structure turns AI governance principles into a street-level, verifiable and reversible public interface. All spatial layouts and activities are open co-creation concept suggestions; they do not replace statutory planning or constitute government-approved conclusions.</p>
+    <div class="signal-row">
+      <span class="signal"><span class="dot dot-green"></span>GREEN experienceable · stable open</span>
+      <span class="signal"><span class="dot dot-amber"></span>AMBER controlled testing · time-limited pilot</span>
+      <span class="signal"><span class="dot dot-red"></span>RED retired rollback · exit mechanism</span>
+      <span class="signal"><span class="dot dot-blue"></span>BEACON node · public interface</span>
+    </div>
+  </div>
+
+  <div class="overview">
+    <div class="figure-box">
+      <img src="../assets/figures/site-overview.en.png" alt="Overall concept, three-colour signal language, one-spine three-beacon two-wing structure">
+      <div class="cap">Overview: overall concept and spatial structure (provisional boundary, discussion only)</div>
+    </div>
+    <div class="figure-box">
+      <img src="../assets/figures/key-areas.en.png" alt="Three beacon key-area detailed designs">
+      <div class="cap">Key areas: three beacons (verification / open source / experience)</div>
+    </div>
+  </div>
+
+  <div class="metrics-bar">
+    <h2>Core metrics (provisional boundary, EPSG:4548)</h2>
+    <div class="note">Values match metrics.json; statutory control indicators (FAR, height) remain unknown pending official regulatory conditions.</div>
+    <div class="stat-grid">
+      <div class="stat"><div class="v"><span data-metric="site_area_sqm" data-value="11412825.386">11.41 km²</span></div><div class="l">Overall design area</div></div>
+      <div class="stat"><div class="v"><span data-metric="green_ratio" data-value="0.11344">11.3%</span></div><div class="l">Green ratio</div></div>
+      <div class="stat"><div class="v"><span data-metric="public_space_ratio" data-value="0.00359">0.4%</span></div><div class="l">Plaza public-space ratio</div></div>
+      <div class="stat"><div class="v">12</div><div class="l">AI scenario cards</div></div>
+      <div class="stat"><div class="v">3</div><div class="l">Industry test/validation scenarios</div></div>
+      <div class="stat"><div class="v">3</div><div class="l">AI pilgrimage landmarks</div></div>
+    </div>
+  </div>
+
+  <div class="section-title">Three-Level Scope Framework</div>
+  <div class="section-sub">Coordinated research area (approx. 43.6 km²) → Overall design area (approx. 11.4 km²) → Key detailed-design area (approx. 368.4 ha), sharing one three-colour signal language.</div>
+  <div class="grid">
+    <div class="card"><h2>Coordinated Research Area</h2><p>AI ecosystem and future urban form: a "source - verify - open - experience - govern" signal chain, the three-areas-two-wings loop, and a global AI events system.</p><p><span class="tag">Land use</span><span class="tag">Mobility</span><span class="tag">Blue-green space</span></p></div>
+    <div class="card"><h2>Overall Design Area</h2><p>Industrial space, urban renewal, transport and character mapped into layers: 35 land-use units fully cover the provisional boundary; the signal-spine green belt runs north-south; buildings, roads, green space and phasing express design intent.</p><p><span class="tag">Land use</span><span class="tag">Buildings</span><span class="tag">Renewal projects</span></p></div>
+    <div class="card"><h2>Key Detailed-Design Area</h2><p>Three key areas reach detailed-design depth: Zhongzhiyuan verification beacon (amber), AI Origin open-source beacon (green), Dazhongsi experience beacon (red-blue), each with positioning, spatial moves, AI scenarios and implementation dependencies.</p><p><span class="tag">Key areas</span><span class="tag">AI scenarios</span></p></div>
+  </div>
+
+  <div class="section-title">Three Beacons: Key Detailed-Design Areas</div>
+  <div class="section-sub">Each beacon is a public carrier of the signal language, holding the "public first, then run" threshold.</div>
+  <div class="grid">
+    <div class="card beacon-card"><h2>Zhongzhiyuan Verification Beacon AMBER</h2><p><b>Full-stack autonomy validation area</b>: Qinghe waterfront - verification axis - research units; three-tier verification gate (virtual evaluation → controlled laboratory → street pilot); model evaluation/red-team sandbox, full-stack controlled trial, city-agent public audit desk.</p><p><span class="badge badge-amber">Test/validation</span><span class="badge">Full-stack autonomy</span></p></div>
+    <div class="card beacon-green"><h2>AI Origin Open-Source Beacon GREEN</h2><p><b>Campus-adjacent open-source community</b>: campus-park stitching axis - open-source plaza - living parcels; open-source release hall, campus-adjacent translation street; "open first, then commercialise" - public knowledge enters the commons and outputs return under licence.</p><p><span class="badge badge-green">Open source</span><span class="badge">Commercialisation</span></p></div>
+    <div class="card beacon-red"><h2>Dazhongsi Experience Beacon RED·BLUE</h2><p><b>Native intelligent experience area</b>: station four-quadrant - cultural experience parcels - commercial service ring; international pitch lounge, data-element meeting lounge, AI living-service model street; every experience is "selectable and exitable".</p><p><span class="badge badge-red">Native intelligent consumption</span><span class="badge">Station-city integration</span></p></div>
+  </div>
+
+  <div class="section-title">AI Scenarios and User Personas</div>
+  <div class="section-sub">12 AI scenario cards (3 industry test/validation scenarios) and 5 user persona types, all concept suggestions.</div>
+  <div class="grid">
+    <div class="card">
+      <h2>AI Scenario Cards (12)</h2>
+      <table>
+        <tr><th>No.</th><th>Scenario card</th><th>Signal</th></tr>
+        <tr><td>SC-01</td><td>Open-source release hall (AI Origin)</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-02</td><td>Model evaluation &amp; red-team sandbox (Zhongzhiyuan)</td><td><span class="badge badge-amber">Amber · test</span></td></tr>
+        <tr><td>SC-03</td><td>Edge compute depot (signal spine)</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-04</td><td>AI slow-traffic navigation (signal-spine greenway)</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-05</td><td>Dazhongsi international pitch lounge</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-06</td><td>Qinghe low-carbon innovation corridor (Zhongzhiyuan)</td><td><span class="badge badge-amber">Amber</span></td></tr>
+        <tr><td>SC-07</td><td>Campus-adjacent translation street (AI Origin)</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-08</td><td>Data-element meeting lounge (Dazhongsi)</td><td><span class="badge badge-amber">Amber</span></td></tr>
+        <tr><td>SC-09</td><td>AI living-service model street</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-10</td><td>Global AI Week route</td><td><span class="badge badge-green">Green</span></td></tr>
+        <tr><td>SC-11</td><td>Full-stack model controlled trial (Zhongzhiyuan)</td><td><span class="badge badge-amber">Amber · test</span></td></tr>
+        <tr><td>SC-12</td><td>City-agent public audit desk (Zhongzhiyuan)</td><td><span class="badge badge-red">Amber/Red · test</span></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h2>User Personas (5 types)</h2>
+      <table>
+        <tr><th>Persona</th><th>Spatial response</th></tr>
+        <tr><td>Open-source developer</td><td>Origin open-source plaza, public code wall, night collaboration space</td></tr>
+        <tr><td>Startup and research team</td><td>Zhongzhiyuan shared testing field, edge compute service point, verification gate</td></tr>
+        <tr><td>Headline enterprise &amp; international visitor</td><td>Station-front composite interface, beacon plaza, international pitch lounge</td></tr>
+        <tr><td>Surrounding resident</td><td>Signal-spine slow loop, embedded community services, graded events</td></tr>
+        <tr><td>University faculty and student</td><td>Campus-park stitching, translation street, AI education experience point</td></tr>
+      </table>
+      <h2 style="margin-top:16px;">AI Pilgrimage Landmarks (3)</h2>
+      <ul>
+        <li><b>Beacon Lighthouse</b> (Zhongzhiyuan): climbable public lighthouse on the Qinghe front, three-colour status light</li>
+        <li><b>Open-Source Origin Stone</b> (AI Origin): honour node inscribing contributors and accumulated public knowledge</li>
+        <li><b>Temple Bell Signal Clock</b> (Dazhongsi): touchable station-plaza signal clock with multilingual state prompts</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="overview">
+    <div class="figure-box">
+      <img src="../assets/figures/land-use-structure.en.png" alt="Conceptual land-use structure and three-level transmission">
+      <div class="cap">Land use: research/commercial/residential/culture/education/green/reserved, fully covering the provisional boundary</div>
+    </div>
+    <div class="figure-box">
+      <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility, slow traffic and blue-green public space composite system">
+      <div class="cap">Mobility: signal-spine greenway (north-south) + secondary roads + branch grid + three beacon plazas</div>
+    </div>
+  </div>
+
+  <div class="section-title">Renewal Projects and Phasing</div>
+  <div class="section-sub">Near-term pilots → mid-term renewal → long-term governance framework; all projects are concept suggestions pending official data.</div>
+  <div class="card">
+    <table>
+      <tr><th>No.</th><th>Project</th><th>Type</th><th>Phase</th></tr>
+      <tr><td>JZ-01</td><td>Signal-spine slow-traffic gap stitching</td><td>Public space/transport</td><td>Near term</td></tr>
+      <tr><td>JZ-02</td><td>Zhongzhiyuan Qinghe low-carbon innovation front</td><td>Blue-green/industry display</td><td>Near term</td></tr>
+      <tr><td>JZ-03</td><td>Origin campus-adjacent translation street</td><td>Renewal/industry service</td><td>Near term</td></tr>
+      <tr><td>JZ-04</td><td>Dazhongsi station four-quadrant walking continuity</td><td>Transit integration/slow traffic</td><td>Mid term</td></tr>
+      <tr><td>JZ-05</td><td>Three beacon plazas implementation</td><td>Public space/brand</td><td>Mid term</td></tr>
+      <tr><td>JZ-06</td><td>AI public service and edge compute nodes</td><td>New infrastructure/public service</td><td>Mid term</td></tr>
+      <tr><td>JZ-07</td><td>Global AI Week public route</td><td>Operation/brand</td><td>Long term</td></tr>
+    </table>
+  </div>
+
+  <div class="section-title">Task Coverage and Self-Check Status</div>
+  <div class="grid">
+    <div class="card">
+      <h2>Task coverage (compliance_matrix.json)</h2>
+      <ul>
+        <li>Announcement 1.3/1.4/1.5 mandatory tasks mapped to sections, layers, metrics, drawings and HTML</li>
+        <li>agent.1 Belt concept &amp; function: naming, logo, three-areas-two-wings loop ✓</li>
+        <li>agent.2 Full-stack autonomy &amp; ecosystem: 7 global cases, ecosystem map, factor mechanisms ✓</li>
+        <li>agent.3 Scenario empowerment: 12 cards, 3 test/validation, 5 personas ✓</li>
+        <li>agent.4 Public space &amp; pilgrimage: 3 landmarks, honour display, component direction ✓</li>
+        <li>agent.5 Culture narrative: Jing-Zhang/Zhongguancun/AI fusion, wayfinding direction ✓</li>
+        <li>agent.6 Events &amp; operations: JINGZHANG BEACON Festival, developer community ✓</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Self-check status (self_check.json)</h2>
+      <p><span class="status-pass">PASS</span> DETERMINISTIC_VALIDATION: CI validation passed</p>
+      <p><span class="status-pass">PASS</span> BOUNDARY_TRUST: provisional boundary labelled</p>
+      <p><span class="status-pass">PASS</span> KEY_AREAS_TRUST: three provisional key areas disclosed</p>
+      <p><span class="status-pass">PASS</span> SPATIAL_REVIEW: topology, coverage, containment passed</p>
+      <p><span class="status-pass">PASS</span> LAND_USE_TOPOLOGY: full coverage, no overlap</p>
+      <p><span class="status-pass">PASS</span> VISUAL_STATIC: offline static HTML, no remote resources</p>
+      <p><span class="status-pass">PASS</span> PROFESSIONAL_EVIDENCE: standards, depth, geometry, metrics referenced</p>
+    </div>
+  </div>
+
+  <div class="section-title">Sources and Assumptions</div>
+  <div class="grid">
+    <div class="card">
+      <h2>Primary sources (sources.json)</h2>
+      <ul>
+        <li>Official qualification pre-announcement (OFFICIAL-ANNOUNCEMENT) — formal-ready</li>
+        <li>Agent open-call taskbook (AGENT-TASKBOOK) — user-provided, cleared</li>
+        <li>Repository site package and public source registry (SITE-PACKAGE / SOURCE-REGISTRY)</li>
+        <li>Provisional boundary and key areas (BOUNDARY-SOURCE / KEY-AREA-SOURCE) — provisional-only</li>
+        <li>7 global case studies (Arup / PDD / TEF / NIST / Kalasatama / King's Cross / Hangzhou) — mechanism-only</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Key assumptions (assumptions.json)</h2>
+      <ul>
+        <li>Official boundary and key-area polygons missing; all geometry is provisional_constraint</li>
+        <li>Regulatory indicators, road redlines, ownership, municipal and heritage data pending official attachments</li>
+        <li>Building footprints are conceptual massing, not real buildings or retain/demolish decisions</li>
+        <li>Scenarios, events, recruitment, funding and policies are concept suggestions, not commitments</li>
+        <li>Official polygons will trigger full recalculation of geometry, metrics, figures, HTML and PDFs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    JINGZHANG BEACON · 京张信标 — Centennial Jing-Zhang AI Innovation Belt open-call formal package (submissions/sLingli/jingzhang-beacon) · This page is offline static and loads no remote resources · All spatial layouts and activities are open co-creation concept suggestions; they do not replace statutory planning or constitute government-approved conclusions.
+  </div>
+</div>
+</body>
+</html>
