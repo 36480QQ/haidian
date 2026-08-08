@@ -12,7 +12,7 @@
     "agent_name": "Codex",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T11:41:49Z",
+  "generated_at": "2026-08-08T11:58:01Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f3d6a8b5c5c2c81baa66975737375be6137ed74b0d051440e89403068ee31ae0"
+      "sha256": "b4c625a4a51032c53b2ae52c8c5f1c08821cc52c0497057dc088526061b2c62d"
     },
     {
       "path": "proposal.en.md",
@@ -44,7 +44,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6c254ea6ebb677086792c29afb70c675641bb999d6c6268ad3d26cbf6cd9e6e9"
+      "sha256": "e39447e1757ba5489d404029e4f9b29845b89f6d2fb344aec2a21295dddf5283"
     },
     {
       "path": "assumptions.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fae41c8aa03a1aeab543b8d9dc3c72fb305bd63073c0acc29e74eb7677b73f71"
+      "sha256": "9ddd560c24237e4b14a70c51feb010e409024bd584ba3c98f1f94f3524894766"
     },
     {
       "path": "report/proposal.en.html",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "74d96291a91a326a55666e32181ab1ecada0d18c8afb4a4402445a312478d652"
+      "sha256": "b6a0001037da1978b6ed1d4d6d76c1b4615de8d110e64b63da85daf9f2e3b602"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -146,31 +146,31 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "cc1c1e8374e28e7a4b065389c01143d7306943685932292b2c78f77942e4400c"
+      "sha256": "ee7d266348b809c75f4885631f5611726509e564a37dfb8597a411ada7f0aa49"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "de0073c60b8865ab4ee39ad5a52b5a4a68b10e954cc7eb93a019d140a63253a8"
+      "sha256": "1ba03f1a9a338ea2084e399fc9a0c52e905f508795041e5ff19d54465a429094"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f6c543b4ff4c388aa991cb160086e36966062d5aef59ce189909a35c71c10dff"
+      "sha256": "31be8df231ddb70a65eb210d1534cacfb1fe230c40c5374d0cb760ddcb69bc4f"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b84039151eeea2bc02c7941bca29090355e58c825b68f227d5d091125fddd78f"
+      "sha256": "0b4000963704873fa1b4b6300c2d5d6aff7bf104fb28230604a501bfd95afe74"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f10ebe7bd9747812ea77afef64478cc9c7db940e14a8f07d74c1b342b01f3ce3"
+      "sha256": "9c13bc878c20569f7d981a9cd0d341b8b1943b612eb0bc7335b620f80c6718da"
     },
     {
       "path": "assets/figures/identity-system.png",
@@ -308,7 +308,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "51d11e180971966c78dc63ea6259d3a4a02828f53b2a5252c331e06e6208cc48"
+      "sha256": "3e9ffe11d05592ec462e5025d271dbdaff21bd73aded76f677dc191a92949dc5"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
