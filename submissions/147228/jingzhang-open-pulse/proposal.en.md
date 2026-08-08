@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "With Jing-Zhang Heritage Park as the public base and three key areas as innovation nodes, every AI scenario becomes a challengeable, retractable and recomputable proof mile; spatial proposals, ordinary services and release gates retain professional-review boundaries."
 translation_of: "proposal.md"
 proposal_format_version: "2"
-iteration: "v3.2"
+iteration: "v3.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -25,7 +25,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Implementation feasibility | Move from ordinary service base to bounded prototype, supervised public window, then scale, repair or retire; eight action packages specify owners, dependencies, acceptance and stop rules. | operations-matrix.json, construction-readiness.json, phasing chapter |
 | Public interest | Residents, older/disabled people, caregivers, night workers, visitors, merchants, developers and maintainers retain ordinary routes; paper, human and account-free services cannot be replaced by AI. | persona-and-inclusion-matrix.json, public-interest-audit.json |
 | Risk and compliance | Provisional boundaries, unknown baselines, design targets and paper methods are not upgraded into official red lines, existing facts or approvals. Missing rights, fire, heritage, privacy, maintenance or takeover proof stops the concept. | sources.json, risk.json, v2-evidence-gate-index.json |
-| Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger; v3.2 also exposes an eight-class, non-overlapping provisional land-use partition and its recomputation entry. | manifest.json, metrics.json, geometry/land_use.geojson, qa-readiness.json |
+| Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger; v3.3 subdivides buildings, green space, public rooms, scenario anchors, phases and pending constraints without changing the prior area metrics. | manifest.json, metrics.json, geometry/*.geojson, qa-readiness.json |
 | Source-register completeness | The 59 unique source IDs in the Chinese proposal match the 59 records in package `sources.json` one-to-one; every record now provides a title, publisher or registering body, URL/path, access date, authority level, usable scope and disabled scope. `data/source_registry.json` remains authoritative for formal/provisional use boundaries; package registration does not upgrade provisional material into formal evidence. | sources.json, data/source_registry.json, visual/assets/evidence-ledger.json |
 
 ## v3.2 Three key areas: spatial moves before technology labels
@@ -97,7 +97,7 @@ The policy and enterprise-development interface is recorded separately in `visua
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The overall design uses a renewal-first structure. Low-efficiency spaces are not assigned invented floor-area ratios or heights; instead, they receive a retain–renovate–demolish decision gate and a requirement for later official-control confirmation. In v3.2, the land-use layer is an eight-class, non-overlapping design partition with recomputable shares; `geometry/land_use.geojson` and `metrics.json` expose the class count and coverage while keeping every polygon provisional and non-statutory. The geometry package also expresses building footprints, roads, green space, public space and phasing.
+The overall design uses a renewal-first structure. Low-efficiency spaces are not assigned invented floor-area ratios or heights; instead, they receive a retain–renovate–demolish decision gate and a requirement for later official-control confirmation. In v3.3, the land-use layer remains an eight-class, non-overlapping design partition with recomputable shares, while the geometry package subdivides the unchanged building union into [metric:building_unit_count] conceptual units, the green corridor into [metric:green_segment_count] connected segments, and the public interface into [metric:public_space_polygon_count] rooms plus [metric:public_scenario_node_count] scenario anchors. `metrics.json` exposes these counts and the unchanged area ratios; all polygons and points remain provisional and non-statutory. Roads, constraints and [data:geometry/phasing.geojson#PHASE-001] express the mobility network, pending professional inputs and conditional phasing.
 
 Transport and municipal systems are designed as a continuous human network: rail-station interfaces, step-free crossings, low-speed logistics windows, cycle parking, emergency access, rainwater tree pits, shade, drainage maintenance and ordinary public use. AI may assist observation or scheduling, but a resident must still be able to walk, ask, complain, receive service and leave without an app, account or biometric identification.
 
@@ -248,7 +248,7 @@ The current quantitative decision experiment compares baseline, adaptive, regene
 
 The preferred indicators are district income per capita, district GDP per capita and district health institutions per 10,000 people, with green coverage, physicians, wastewater treatment and water intensity as guardrails. Every number must be read with its source, year, unit, scope and limitation in `visual/assets/evidence-ledger.json`, `visual/assets/model-backtest.json`, `visual/assets/indicator-selection.json` and `metrics.json`.
 
-Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
+Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, object counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage, constraint interfaces and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
 
 ## Risk, Copyright, and Compliance
 

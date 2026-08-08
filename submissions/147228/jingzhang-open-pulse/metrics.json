@@ -103,6 +103,85 @@
         "The eight polygons are a provisional design partition using current land-use enum codes; they are not statutory zoning or approved controls."
       ]
     },
+    "building_unit_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(features where layer=BUILDING_FOOTPRINT)",
+      "confidence": "medium",
+      "assumptions": [
+        "The nine units are a conceptual subdivision of the unchanged submitted footprint; they are not an existing-building inventory, approved building count or development capacity."
+      ]
+    },
+    "green_segment_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "count(features where layer=GREEN_SPACE)",
+      "confidence": "medium",
+      "assumptions": [
+        "The five connected segments preserve the prior conceptual green-space union and do not prove existing vegetation, ecological status or statutory green-space supply."
+      ]
+    },
+    "public_space_polygon_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features where layer=PUBLIC_SPACE)",
+      "confidence": "medium",
+      "assumptions": [
+        "The three public rooms preserve the prior conceptual public-space union; public access, rights, fire and operations remain to be verified."
+      ]
+    },
+    "public_scenario_node_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "visual/assets/scenario-operation-matrix.json"
+      ],
+      "formula": "count(features where layer=SCENARIO_NODE)",
+      "confidence": "medium",
+      "assumptions": [
+        "Nodes are conceptual anchors for the 14 scenario rows; they do not represent deployed equipment, approved sites or observed facilities."
+      ]
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(features where layer=PHASE)",
+      "confidence": "medium",
+      "assumptions": [
+        "The three bands are conditional design gates, not an approved construction schedule, investment plan or delivery commitment."
+      ]
+    },
+    "constraint_gate_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "count(features where status=data_gap)",
+      "confidence": "high",
+      "assumptions": [
+        "These six objects register missing professional inputs; they are not official constraints, existing conditions or legal controls."
+      ]
+    },
     "scenario_card_count": {
       "status": "known",
       "value": 14,

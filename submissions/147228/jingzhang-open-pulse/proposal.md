@@ -6,7 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为公共底板、三处重点区为创新节点，把每个 AI 场景变成可质询、可退出、可复算的一构件一智证里程；空间建议、普通服务和实施闸门均保留专业复核边界。"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
-iteration: "v3.2"
+iteration: "v3.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -25,7 +25,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 可实施性 | 按“普通服务基座 → 有界样机 → 有人值守窗口 → 扩散/修复/退出”推进，八个行动包各有责任、依赖、验收和停止条件。 | operations-matrix.json、construction-readiness.json、分期章节 |
 | 公共利益 | 居民、老幼残障、照护者、夜班劳动者、游客、商户、开发者和维护者都有普通路径；纸面、人工、无账号服务不可被 AI 替代。 | persona-and-inclusion-matrix.json、public-interest-audit.json |
 | 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护或接管证据不足就停在概念层。 | sources.json、risk.json、v2-evidence-gate-index.json |
-| 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.2 还把用地层细化为 8 个不重叠的临时设计多边形并同步复算入口。 | manifest.json、metrics.json、geometry/land_use.geojson、qa-readiness.json |
+| 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
 | 资料登记完整度 | 正文 59 个唯一 source ID 与包内 `sources.json` 的 59 条记录一一对应；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json |
 
 ## v3.2 三处重点区：空间动作先于技术名词
@@ -124,7 +124,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-本次提交按控制性详细规划的城市设计深度组织总体范围：用地层表达八类不重叠的临时设计多边形，建筑层表达可讨论的建筑基底，roads、green_space、public_space、constraints 和 phasing 共同表达微循环、慢行、轨道接驳、公共空间和分期关系；更新项目清单、实施政策建议、产业功能和承载力边界则在正文与矩阵中逐项说明。`metrics.json` 从这些图层复算面积、比例、数量和版本，不把 provisional 几何升级为法定控制。
+本次提交按控制性详细规划的城市设计深度组织总体范围：用地层表达八类不重叠的临时设计多边形，建筑层细化为 [metric:building_unit_count] 个概念单元，绿地层细化为 [metric:green_segment_count] 个连续段，公共空间层表达 [metric:public_space_polygon_count] 个公共空间室和 [metric:public_scenario_node_count] 个场景锚点；roads、constraints 和 [data:geometry/phasing.geojson#PHASE-001] 共同表达微循环、慢行、待核专业接口和分期关系。既有建筑基底、绿地率和公共空间率保持不变；更新项目清单、实施政策建议、产业功能和承载力边界则在正文与矩阵中逐项说明。`metrics.json` 从这些图层复算面积、比例、数量和版本，不把 provisional 几何升级为法定控制。
 
 本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底。
 
@@ -318,7 +318,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-本方案以京张遗址公园活力带为骨架，把清河、小月河、高校、企业和社区需求转译为南北主轴、东西缝合支线、步行/骑行节点和绿色公共空间；`mobility-bluegreen.png`、roads/green_space/public_space 图层和六个更新项目共同标出慢行断点、上跨环路、公园南北端、停车、体育、创新交往、科技测试、应用展示与公共服务接口。
+本方案以京张遗址公园活力带为骨架，把清河、小月河、高校、企业和社区需求转译为南北主轴、东西缝合支线、步行/骑行节点和绿色公共空间；`mobility-bluegreen.png`、roads/green_space/public_space 图层和六个更新项目共同标出慢行断点、上跨环路、公园南北端、停车、体育、创新交往、科技测试、应用展示与公共服务接口。绿地被拆为五个连续概念段，公共空间被拆为三个空间室，并由十四个场景节点把场景矩阵落到可检查的位置；这些对象仍是设计提案，不是现状调查。
 
 蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]。
 
@@ -328,7 +328,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 ## 更新项目清单、实施政策与分期计划
 
-本次提交已形成六项更新项目清单，并在 `operations-matrix.json`、`construction-readiness.json` 和 `compliance_matrix.json` 中登记项目位置、类型、功能、责任主体、依赖、阶段、风险、评估指标、分期范围和图纸挂接。政策接口覆盖城市更新统筹、空间供给、运营、产业服务、公共参与、数据治理和产权协同；`phasing.geojson` 只表达概念分期，不表达已批准建设时序。
+本次提交已形成六项更新项目清单，并在 `operations-matrix.json`、`construction-readiness.json` 和 `compliance_matrix.json` 中登记项目位置、类型、功能、责任主体、依赖、阶段、风险、评估指标、分期范围和图纸挂接。空间上把 [metric:phase_count] 个条件分期带与 [metric:constraint_gate_count] 个数据缺口闸门分开登记：前者表达何时具备进入下一窗口的条件，后者表达仍需由正式边界、权属、道路铁路、水务、消防和无障碍专业资料确认的接口。政策接口覆盖城市更新统筹、空间供给、运营、产业服务、公共参与、数据治理和产权协同；`phasing.geojson` 只表达概念分期，不表达已批准建设时序。
 
 项目清单和分期深度由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 管理，分期空间证据为 [data:geometry/phasing.geojson#PHASE-001]。如果没有权属、资金、实施主体和审批路径，方案必须把它写成实施风险，而不是承诺落地。
 
@@ -347,7 +347,9 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
 
-指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]。
+指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count] 和 [metric:building_footprint_area_sqm]。建筑单元与绿地段的结构回读见 [metric:building_unit_count] 和 [metric:green_segment_count]。
+
+空间对象计数另回到 [metric:public_space_polygon_count] 和 [metric:public_scenario_node_count]。分期带与数据缺口接口回到 [metric:phase_count] 和 [metric:constraint_gate_count]；这些计数描述提交包的可回读结构，不代表现状设施或审批数量。
 
 [metric:building_footprint_ratio]、[metric:green_ratio] 和 [metric:public_space_ratio] 来自结构化空间层；其边界证据是 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 和 [data:geometry/buildings.geojson#BLDG-001]。
 
