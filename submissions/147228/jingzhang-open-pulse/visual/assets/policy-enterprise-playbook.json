@@ -435,6 +435,29 @@
         "CASE-HELSINKI-AI-REGISTER"
       ],
       "status": "conceptual_suggestion"
+    },
+    {
+      "id": "POL-028",
+      "title": "第三方依赖与供应链可见卡",
+      "policy_instrument": "third_party_dependency_register",
+      "enterprise_stage": "supplier_qualification",
+      "problem": "A small supplier may rely on hosted models, datasets, libraries or subcontractors whose rights, security and continuity are invisible to the public buyer.",
+      "jingzhang_interface": "Before S04/S08 qualification, record material third parties, data and model provenance, service dependency, update authority, outage route, licence boundary and notification duty.",
+      "operator": "supplier security lead + procurement reviewer + rights reviewer",
+      "required_evidence": [
+        "dependency register",
+        "provenance note",
+        "subcontractor responsibility",
+        "outage route",
+        "notification duty"
+      ],
+      "metric": "qualified_suppliers_with_material_dependency_and_provenance_records",
+      "stop_gate": "Unknown material dependency, incompatible rights or no outage route blocks the supplier from a public test window.",
+      "source_ids": [
+        "CASE-SINGAPORE-AI-VERIFY",
+        "CASE-AMSTERDAM-ALGORITHM-REGISTER"
+      ],
+      "status": "conceptual_suggestion"
     }
   ]
 }
