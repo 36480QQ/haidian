@@ -90,6 +90,20 @@
       "status": "conceptual_suggestion"
     },
     {
+      "id": "POL-016",
+      "title": "企业试点资金里程碑卡",
+      "policy_instrument": "evidence_linked_funding_milestones",
+      "enterprise_stage": "pilot_finance",
+      "problem": "Funding a public-facing AI pilot by spend or publicity alone rewards activity rather than a safe, useful and maintainable service.",
+      "jingzhang_interface": "Release any proposed support in evidence milestones: problem confirmation, rights clearance, safety gate, user test, service outcome, lifecycle cost and scale-or-retire review.",
+      "operator": "program manager + finance reviewer + accountable service owner",
+      "required_evidence": ["milestone ledger", "rights and safety gate", "user outcome record", "cost sensitivity note"],
+      "metric": "support_milestones_released_only_after_evidence_gate",
+      "stop_gate": "No evidence or unresolved safety/rights issue freezes the next tranche and keeps manual service in place.",
+      "source_ids": ["CASE-SEOUL-AI-FOUNDATION", "CASE-UK-ATRS"],
+      "status": "conceptual_suggestion"
+    },
+    {
       "id": "POL-011",
       "title": "AI 服务事故披露与修复卡",
       "policy_instrument": "ai_incident_disclosure_and_remediation",
