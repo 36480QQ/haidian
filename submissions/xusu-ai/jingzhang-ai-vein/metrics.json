@@ -42,20 +42,20 @@
   },
   "total_floor_area_sqm": {
    "status": "known",
-   "value": 8305761.7,
+   "value": 8790000.0,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
    ],
-   "formula": "building_footprint_area * average_floors(3.2 concept)",
+   "formula": "sum(building_footprint_area * floors_concept) per individual building",
    "confidence": "low",
    "assumptions": [
-    "层数为概念假设（5-10层），非工程结论"
+    "层数为单体概念值（3-10层，高低错落），非工程结论"
    ]
   },
   "floor_area_ratio": {
    "status": "known",
-   "value": 0.7278,
+   "value": 0.7701,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -64,12 +64,12 @@
    "formula": "total_floor_area / site_area",
    "confidence": "low",
    "assumptions": [
-    "概念容积率，官方控规条件缺失（planning_limits.json 标记 missing）"
+    "概念容积率，按单体实际层数复算，官方控规条件缺失（planning_limits.json 标记 missing）"
    ]
   },
   "building_density": {
    "status": "known",
-   "value": 0.2274,
+   "value": 0.1407,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -78,12 +78,12 @@
    "formula": "building_footprint_area / site_area",
    "confidence": "low",
    "assumptions": [
-    "概念建筑密度，非控规结论"
+    "概念建筑密度（按功能形态布置、地块内均匀排布、含底商配套），非控规结论"
    ]
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 2595550.5,
+   "value": 1606000.0,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -91,7 +91,20 @@
    "formula": "sum polygon_area(buildings) in EPSG:4548",
    "confidence": "medium",
    "assumptions": [
-    "概念建筑基底，非现状测绘"
+    "概念建筑基底（方形单体化重切后），非现状测绘"
+   ]
+  },
+  "building_count": {
+   "status": "known",
+   "value": 765,
+   "unit": "count",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "count(building features)",
+   "confidence": "high",
+   "assumptions": [
+    "765 栋建筑（按功能分形态：板式/U形/回字形研发、展馆、板式住宅、塔楼/裙房商业、底商配套），居住日照间距满足≥1.2倍高度"
    ]
   },
   "green_ratio": {

@@ -63,7 +63,7 @@ iteration: "v1.0"
 | 杭州云栖小镇 | 会议+社区+产业的品牌运营 | 全球AI活动周、开发者社区长期运营（[depth:annual_event_system]） |
 | 新加坡纬壹科技城 | 职住平衡、绿色园区、国际人才服务 | 原点社区人才特区、公园带人才生活配套 |
 | 伦敦国王十字街区 | 历史车站片区更新、文化+科创混合 | 京张遗址公园+清华园车站文化更新模式 |
-| 波士顿肯德尔广场 | 近校转化、药谷生态、开放创新网络 | 原点社区近校成果转化街（[data:geometry/buildings.geojson#B-001]） |
+| 波士顿肯德尔广场 | 近校转化、药谷生态、开放创新网络 | 原点社区近校成果转化街（[data:geometry/buildings.geojson#B-233] 等居住改造单体） |
 | 首尔 DDP | 文化地标带动区域、夜间经济 | 大钟寺国际路演客厅与夜间活力场景 |
 | 柏林 "Futurium" 未来馆 | 面向公众的科技叙事空间 | AI朝圣地标之一"智脉未来馆"（概念建议） |
 
@@ -85,7 +85,7 @@ iteration: "v1.0"
 
 ### 城市更新总体框架（[depth:retain_renovate_demolish]）
 
-更新策略按"保留文脉、改造存量、增量节制"原则：京张遗址公园带与清华园车站旧址等历史文化资源**保留**并活化（[data:geometry/constraints.geojson#CS-001] 文化廊道概念）；原点社区与沿线既有居住、科研建筑以**改造提升**为主（[data:geometry/buildings.geojson#B-001] 等 status_concept=retain_renovate）；众智园与大钟寺新兴产业空间以**新建**为主（[data:geometry/buildings.geojson#B-010] 等 status_concept=new_build）。建筑基底合计 259.6 ha（[metric:building_footprint_area_sqm]），概念容积率与建筑密度为低-中强度（[metric:floor_area_ratio]≈0.73、[metric:building_density]≈22.7%），**均标注为概念值，待正式控规条件确认**（[source:SITE-PACKAGE]：planning_limits.json 中容积率/高度/密度/绿地率/退线全部 missing）。
+更新策略按"保留文脉、改造存量、增量节制"原则：京张遗址公园带与清华园车站旧址等历史文化资源**保留**并活化（[data:geometry/constraints.geojson#CS-001] 文化廊道概念）；原点社区与沿线既有居住、科研建筑以**改造提升**为主（[data:geometry/buildings.geojson#B-233] 等 status_concept=retain_renovate）；众智园与大钟寺新兴产业空间以**新建**为主（[data:geometry/buildings.geojson#B-001] 等 status_concept=new_build）。建筑以 765 栋单体概念体块表达，按地块功能匹配多样形态并在各地块内均匀排布：科研用地以板式研发楼、U 形围合研发组团与回字形研发楼（带中庭）轮换布置；文化用地以方正展馆、L 形展馆与回字形展馆（带中庭）轮换；居住用地为板式住宅南北向错位行列式；商业用地以点式塔楼、L 形裙房与回字形商业街区轮换。居住板楼南北间距满足日照要求（净距 ≥ 南侧建筑高度×1.2，错位布置避免南北遮挡）；各建设地块沿智脉纵轴/公园带界面布置 2 层底商与商业配套裙房（LU-004 居住区 29 栋、LU-001/003/009 各 7~12 栋）。单体基底面积符合常规建筑标准：科研中位约 1900 m²、文化约 3000 m²、居住约 1700 m²、商业约 2100 m²（对应写字楼标准层 1500~2600 m² 的行业常值）。各功能建筑在地块内按网格均匀排布、间距均衡、高低错落（3~10 层），留出庭院与步行通道；建筑基底合计 160.6 ha（[metric:building_footprint_area_sqm]），概念容积率与建筑密度为中低强度（[metric:floor_area_ratio]≈0.77、[metric:building_density]≈14.1%），**均标注为概念值，待正式控规条件确认**（[source:SITE-PACKAGE]：planning_limits.json 中容积率/高度/密度/绿地率/退线全部 missing）。
 
 ## 重点区域详细设计
 
@@ -93,15 +93,15 @@ iteration: "v1.0"
 
 ### 众智园AI自主创新加速区（192.9 ha）
 
-**定位：** 花园型全栈自主创新街区（"智源"）。**空间结构：** 以科研用地为核心（[data:geometry/land_use.geojson#LU-001]），清河界面为生态前沿，公园带北段为公共客厅（[data:geometry/green_space.geojson#GS-001]）。**建筑更新：** 新建 AI 研发与实验室建筑（[data:geometry/buildings.geojson#B-004] 等，6 层概念），保留清河沿线生态界面。**交通慢行：** 智脉纵轴北段贯通（[data:geometry/roads.geojson#RD-001]），连接北五环与轨道接驳。**公共空间：** 核心广场（[data:geometry/public_space.geojson#PS-001]）+ 清河低碳创新廊（场景卡 06）。**AI 场景：** 自主模型测试场、标准制定工作坊、安全治理沙盒（场景卡 02）。**实施风险：** 依赖清河蓝线与防洪条件确认（[source:SITE-PACKAGE] missing data）。
+**定位：** 花园型全栈自主创新街区（"智源"）。**空间结构：** 以科研用地为核心（[data:geometry/land_use.geojson#LU-001]），清河界面为生态前沿，公园带北段为公共客厅（[data:geometry/green_space.geojson#GS-001]）。**建筑更新：** 新建 AI 研发与实验室建筑（[data:geometry/buildings.geojson#B-001] 等，6 层概念），保留清河沿线生态界面。**交通慢行：** 智脉纵轴北段贯通（[data:geometry/roads.geojson#RD-001]），连接北五环与轨道接驳。**公共空间：** 核心广场（[data:geometry/public_space.geojson#PS-001]）+ 清河低碳创新廊（场景卡 06）。**AI 场景：** 自主模型测试场、标准制定工作坊、安全治理沙盒（场景卡 02）。**实施风险：** 依赖清河蓝线与防洪条件确认（[source:SITE-PACKAGE] missing data）。
 
 ### 北京AI原点社区（104.3 ha）
 
-**定位：** 近校型成果转化与人才特区（"智原"）。**空间结构：** 以人才社区更新为主体（[data:geometry/land_use.geojson#LU-004]），商业配套为活力内核（[data:geometry/land_use.geojson#LU-006]），公园带中段为慢行缝合带（[data:geometry/green_space.geojson#GS-002]）。**建筑更新：** 保留改造既有科研与居住建筑，植入成果转化驿站（[data:geometry/buildings.geojson#B-012] 等，5 层概念）。**交通慢行：** 校区-园区-街区三向缝合，轨道站点一体化接驳。**公共空间：** 原点社区核心广场（[data:geometry/public_space.geojson#PS-002]）+ 开源发布厅（场景卡 01）。**AI 场景：** 开源社区、成果发布、近校孵化、人才特区服务。**实施风险：** 依赖校区边界、权属与首层业态协调（[source:AGENT-TASKBOOK]）。
+**定位：** 近校型成果转化与人才特区（"智原"）。**空间结构：** 以人才社区更新为主体（[data:geometry/land_use.geojson#LU-004]），商业配套为活力内核（[data:geometry/land_use.geojson#LU-006]），公园带中段为慢行缝合带（[data:geometry/green_space.geojson#GS-002]）。**建筑更新：** 保留改造既有科研与居住建筑，植入成果转化驿站（[data:geometry/buildings.geojson#B-233] 等，5 层概念）。**交通慢行：** 校区-园区-街区三向缝合，轨道站点一体化接驳。**公共空间：** 原点社区核心广场（[data:geometry/public_space.geojson#PS-002]）+ 开源发布厅（场景卡 01）。**AI 场景：** 开源社区、成果发布、近校孵化、人才特区服务。**实施风险：** 依赖校区边界、权属与首层业态协调（[source:AGENT-TASKBOOK]）。
 
 ### 大钟寺AI产业聚集区（72.0 ha）
 
-**定位：** 城市型智能经济与国际交往街区（"智市"）。**空间结构：** 商业服务业用地为主体（[data:geometry/land_use.geojson#LU-007]），科研用地为产业纵深（[data:geometry/land_use.geojson#LU-009]），公园带南段为绿色缓冲（[data:geometry/green_space.geojson#GS-003]）。**建筑更新：** 新建混合功能建筑（[data:geometry/buildings.geojson#B-030] 等，10 层概念），临轨道站点高强度、外围低强度。**交通慢行：** 大钟寺站四象限步行连通（更新项目 JZ-04），路口慢行优先。**公共空间：** 大钟寺核心广场（[data:geometry/public_space.geojson#PS-003]）+ 国际路演客厅（场景卡 05）。**AI 场景：** 智能体与智能终端展示、内容消费、数据要素会客厅（场景卡 08）。**实施风险：** 依赖轨道站点、道路交叉口与市政管线条件（[source:SITE-PACKAGE] missing data）。
+**定位：** 城市型智能经济与国际交往街区（"智市"）。**空间结构：** 商业服务业用地为主体（[data:geometry/land_use.geojson#LU-007]），科研用地为产业纵深（[data:geometry/land_use.geojson#LU-009]），公园带南段为绿色缓冲（[data:geometry/green_space.geojson#GS-003]）。**建筑更新：** 新建混合功能建筑（[data:geometry/buildings.geojson#B-497] 等，10 层概念），临轨道站点高强度、外围低强度。**交通慢行：** 大钟寺站四象限步行连通（更新项目 JZ-04），路口慢行优先。**公共空间：** 大钟寺核心广场（[data:geometry/public_space.geojson#PS-003]）+ 国际路演客厅（场景卡 05）。**AI 场景：** 智能体与智能终端展示、内容消费、数据要素会客厅（场景卡 08）。**实施风险：** 依赖轨道站点、道路交叉口与市政管线条件（[source:SITE-PACKAGE] missing data）。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
@@ -136,7 +136,7 @@ iteration: "v1.0"
 
 ## 用地、建筑规模与拆改留方案
 
-用地与建筑证据见 [data:geometry/land_use.geojson]、[data:geometry/buildings.geojson]（39 栋概念建筑，[metric:building_footprint_area_sqm]=259.6 ha）。拆改留三分类：**保留**——京张遗址公园带、清华园车站旧址文化廊道（[data:geometry/constraints.geojson#CS-001]）；**改造**——原点社区既有居住/科研建筑（[data:geometry/buildings.geojson#B-012] 等）；**新建**——众智园研发、大钟寺混合功能（[data:geometry/buildings.geojson#B-010]、[data:geometry/buildings.geojson#B-030] 等）。建筑高度概念分三级：公园带沿线 ≤18m（5 层）、科研区 ≤24m（6 层）、商业核心区 ≤36m（10 层），**全部为概念引导，待正式控规高度/容积率/退线确认**（[source:SITE-PACKAGE]：planning_limits.json missing 项）。
+用地与建筑证据见 [data:geometry/land_use.geojson]、[data:geometry/buildings.geojson]（765 栋概念建筑，[metric:building_footprint_area_sqm]=160.6 ha，[metric:building_count]=765）。建筑按地块功能匹配多样形态并在各地块内均匀排布：科研为板式/U 形/回字形研发楼、文化为方正/L 形/回字形展馆、居住为板式住宅行列式、商业为点式塔楼/L 形裙房/回字形街区；单体基底面积符合常规标准（科研约 1900 m²、文化约 3000 m²、居住约 1700 m²、商业约 2100 m²），高低错落：科研 18~24 m（5~6 层）、文化/教育 12~18 m（3~5 层）、居住 12~18 m（3~5 层）、商业 24~36 m（6~10 层）。拆改留三分类：**保留**——京张遗址公园带、清华园车站旧址文化廊道（[data:geometry/constraints.geojson#CS-001]）；**改造**——原点社区既有居住/科研建筑（[data:geometry/buildings.geojson#B-233] 等 status_concept=retain_renovate）；**新建**——众智园研发、大钟寺混合功能（[data:geometry/buildings.geojson#B-001] 等 status_concept=new_build）。建筑高度概念分级：公园带沿线 ≤18m（5 层）、科研区 ≤24m（6 层）、商业核心区 ≤36m（10 层），**全部为概念引导，待正式控规高度/容积率/退线确认**（[source:SITE-PACKAGE]：planning_limits.json missing 项）。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -166,7 +166,7 @@ iteration: "v1.0"
 | --- | --- | --- | --- | --- | --- |
 | JZ-01 | 京张遗址公园慢行断点缝合 | 公共空间/交通 | 道路红线、桥下空间 | 近期 | [data:geometry/roads.geojson#RD-001] |
 | JZ-02 | 众智园清河创新界面 | 蓝绿/产业展示 | 河道蓝线、防洪 | 近期 | [data:geometry/green_space.geojson#GS-001] |
-| JZ-03 | 原点社区近校成果转化街 | 更新/产业服务 | 校区边界、权属 | 中期 | [data:geometry/buildings.geojson#B-012] |
+| JZ-03 | 原点社区近校成果转化街 | 更新/产业服务 | 校区边界、权属 | 中期 | [data:geometry/buildings.geojson#B-233] |
 | JZ-04 | 大钟寺站四象限步行连通 | 轨道一体化 | 站点、交叉口、管线 | 中期 | [data:geometry/public_space.geojson#PS-003] |
 | JZ-05 | AI公共服务与端侧算力节点 | 新基建 | 能源、算力、安全 | 近期试点 | [data:geometry/constraints.geojson#CS-001] |
 | JZ-06 | 全球AI活动周公共路线 | 运营/品牌 | 公共空间许可、版权 | 年度运营 | [data:geometry/phasing.geojson#PH-001] |
@@ -190,9 +190,22 @@ iteration: "v1.0"
 | 场地面积 | 11.41 km² | 总体设计范围，支撑三层框架落图 |
 | 绿地率 | 25.0% | 公园带贯通+滨水绿廊，支撑人才生活与慢行体验 |
 | 公共空间比例 | 1.3% | 三处重点区广场+活力广场，支撑创新交往 |
-| 建筑密度 | 22.7% | 低-中强度开发，留白给公共空间与生态 |
+| 建筑密度 | 14.1% | 中低强度开发，建筑按功能分形态、地块内均匀排布（含底商配套），居住日照间距满足要求 |
 | 道路总长 | 24.8 km | 智脉纵轴+横轴骨架，支撑微循环 |
 | 重点区合计 | 369.2 ha | 三处详细设计范围，与公告 368.4 ha 吻合 |
+
+各地块使用参数（由 [data:geometry/buildings.geojson] 与 [data:geometry/land_use.geojson] 复算）：
+
+| 地块 | 功能 | 覆盖率 | 容积率 FAR | 总建筑面积(万 m²) | 栋数 | 底商配套 |
+| --- | --- | --- | --- | --- | --- | --- |
+| LU-001 | 科研（众智园） | 22.2% | 1.18 | 121.0 | 119 | 沿公园带界面 12 栋 |
+| LU-003 | 文化（AI展示体验） | 24.1% | 0.91 | 155.8 | 137 | 沿公园带界面 12 栋 |
+| LU-004 | 居住（人才社区） | 13.7% | 0.46 | 79.3 | 133 | 沿智脉纵轴 29 栋 |
+| LU-006 | 商业（原点社区配套） | 17.1% | 1.36 | 252.1 | 160 | 街区底商内置 |
+| LU-007 | 商业（大钟寺智能消费） | 17.5% | 1.39 | 137.1 | 86 | 街区底商内置 |
+| LU-009 | 科研（AI产业集聚） | 18.3% | 1.02 | 134.1 | 130 | 沿公园带界面 7 栋 |
+
+居住地块日照：LU-004 板式住宅采用南北向错位行列式，相邻板楼南北净距 ≥ 南侧建筑高度×1.2（12~18 m 板楼对应 14~22 m 间距），经逐对校验 1946 对相邻关系全部满足日照间距要求。
 
 `compliance_matrix.json` 覆盖公告 1.3/1.4/1.5 全部 17 项任务与 agent.1-6 六项任务；`standard_matrix.json` 覆盖 6 项强制标准；`design_depth_matrix.json` 覆盖 15 项设计深度项全部 complete（[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:three_key_area_detailed_design]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:annual_event_system]、[depth:risk_missing_data]）。
 
