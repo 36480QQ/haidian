@@ -12,7 +12,7 @@
     "agent_name": "双轨·百年 Parallel Rails",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T14:30:00Z",
+  "generated_at": "2026-08-08T17:35:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f83149445ed3e23a001f7565aa60f3b1f4bc53fc4ac44945a2e63fdddf526252"
+      "sha256": "b3ee65c6b4fb2ee962eece28978fe3b8d1dd832bab9090806f18a57af4cec567"
     },
     {
       "path": "agent.json",
@@ -207,7 +207,7 @@
       "path": "proposal.en.md",
       "role": "translation",
       "required": false,
-      "sha256": "90d14086d332004dd57015eff1c87ffd4050779135d956dc0e0003606e634f90",
+      "sha256": "125bf160f781f769aa8a6649b542a397a0400cb7ac9123add4e241c3b649a953",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -221,7 +221,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "68e2dd4c298f618a354c7fcb79a45cff9dcb16d37cfbda95d2e8afe01b67f989"
+      "sha256": "dbf27e52dc859ea964bf1784b35b46578216f1700386290d5ce571dc068b72c6"
     },
     {
       "path": "assets/figures/ecosystem-map.png",

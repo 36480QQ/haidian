@@ -7,7 +7,7 @@ translation_file: "proposal.en.md"
 summary: "以「轨距即标准权」为第一性原理的概念方案：京张铁路以1435mm标准轨距接入世界标准网络，AI创新带以算力/数据/开源/治理标准定义智能时代轨距。空间转译一基双轨三站——主脊为路基、两翼为双轨、三站为节点；配套拓扑完整用地剖分、EPSG:4548复算指标、12张场景卡、6类画像、5处朝圣地标与轨距日运营体系。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v0.2.0"
+iteration: "v0.2.1"
 ---
 
 # 双轨·百年：从铁轨到智轨 The Parallel Rails
