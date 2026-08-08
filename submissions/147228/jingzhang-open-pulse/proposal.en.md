@@ -16,6 +16,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **v3.0 design declaration:** Jing-Zhang does not treat AI as a set of glowing objects. It treats AI as a public protocol in which people come before models, evidence comes before scale, and an ordinary route always remains available. The railway's track, stations and mile markers become a six-part civic loop: question, permission, bounded test, human decision, public receipt, then scale/repair/retire.
 
+## v3.0 One-page review answers: six questions first
+
+| Review question | Scorable answer | Verifiable deliverables |
+| --- | --- | --- |
+| Why this Jing-Zhang AI belt | The railway's track, stations and mile markers become a three-station, one-spine public validation space for industry, heritage, daily life and governance—not another AI showroom | Three-level scope, three key areas and task-to-deliverable matrix |
+| What is original | A civic pulse plus One Component, One Proof-Mile: every AI scene has an ordinary equivalent, accountable owner, positive and negative evidence, and a retirement decision; one component never clears the belt | `civic-pulse-protocol.json`, `proof-mile-delivery.json` |
+| Where is the AI planning innovation | AI clusters questions, packages minimum data, compares options and prepares traceable receipts; people authorize, correct and stop the loop, while missing evidence remains `unknown` | 14 scenario cards, three industry validation windows and four-state metric board |
+| How does implementation start | Confirm official geometry and the human accessibility baseline, then validate wind/heat/air/drainage and run a closed test before a bounded public window; eight action packages state owners, acceptance and stop rules | `operations-matrix.json`, `construction-readiness.json` and three phases |
+| Who benefits and who can refuse | Residents, older and disabled users, carers, night workers, visitors, merchants, developers and maintainers each have a design lens; paper, staffed and no-account routes remain, with complaint, correction and withdrawal paths | `persona-and-inclusion-matrix.json`, participation cycle and public-interest audit |
+| What cannot be claimed yet | Provisional geometry, unknown baselines, design targets and background papers are not current facts or approvals; missing ownership, fire, heritage, privacy, maintenance or takeover evidence stops the concept | `sources.json`, `risk.json`, `compliance_matrix.json` and five evidence figures |
+
 ## v3.0 One-page civic operating system: public loop and proof-mile
 
 | Civic loop | Spatial move | What AI may do | Human and ordinary route | Stop when |
@@ -249,6 +260,23 @@ Implementation is a sequence of reversible windows rather than a one-off technol
 2. **Pilot and learn:** open low-risk public-space components and two or three bounded scenarios with a staffed operator.
 3. **Connect:** add the regional return loop, enterprise and research interfaces only after the stop gates pass.
 4. **Scale or retire:** publish evidence, compare equity and climate outcomes, and either expand, redesign or remove the intervention.
+
+### Eight operating action packages: verify first, pilot next, scale or retire
+
+The project list says what to do; the operating packages say who starts, what permits release, how acceptance is shown and how failure ends. The table below reads directly from `visual/assets/operations-matrix.json`; the roles are conceptual and do not imply that any named institution has accepted implementation responsibility.
+
+| Package | Phase | Accountable role (conceptual) | First deliverable and acceptance | Stop condition |
+| --- | --- | --- | --- | --- |
+| OP-01 Official geometry and existing-condition review | Read and prepare | district review lead | Rebind every spatial claim to versioned polygons, sources, formulas and limitations | No official/cleared source, or ownership and safety boundary unresolved |
+| OP-02 Accessibility and human-experience baseline | Read and prepare | public-space operator | Before any AI window, prove that people can walk, rest, ask for help and return to ordinary service without an account or device | Route break, unsafe test or group difference hidden by an average |
+| OP-03 Wind, heat, air and drainage validation | Read and prepare | municipal asset lead | Give all six wind-water-health gates inputs, calibration, accountable review and stop rules | Geometry misalignment, missing calibration/source/detection limit or unsafe field condition |
+| OP-04 Embodied-AI closed-to-public window | Pilot and learn | safety lead | Complete emergency-stop, human takeover, offline fallback, rights and return-to-ordinary-use receipt | Serious conflict, failed takeover, rights breach or lost public route |
+| OP-05 Open release and rights-clearance desk | Pilot and learn | culture and rights lead | Let contributors understand, correct and withdraw a display without a digital account | Unclear source, consent, attribution or complaint route |
+| OP-06 Dazhongsi event reduction and reinstatement | Connect and operate | station/public-space operator | Capacity can drop to zero, the resident route stays open and the space returns to daily use | Fire, noise, crowd, water or resident-access threshold breach |
+| OP-07 Rain-garden and night-quiet chain | Connect and operate | municipal asset owner | Inlet, accessible seat, low-glare route and manual inspection remain usable during sensor/network failure | Overdue inlet, unsafe water depth, excessive glare/noise or no owner |
+| OP-08 Annual evidence review and scale/redesign/retire | Scale or retire | cross-area review committee | Every active scenario publishes state, limits, next gate and an explicit scale/redesign/retire decision | Evidence irreproducible, rights ledger incomplete or unresolved public harm |
+
+These packages move feasibility from “there are phases” to “there are prerequisites, acceptance artifacts and consequences for stopping.” No package bypasses ordinary service, human review, maintenance responsibility or an exit record.[data:visual/assets/operations-matrix.json]
 
 The `scenario-operation-matrix.json` uses relative `low`, `medium` and `high` cost bands only; they are not budgets or procurement estimates. RACI and SLA fields identify the future owner needed for a formal implementation plan. If a responsible operator, safety case, rights record, drainage check or non-AI equivalent is missing, the scenario cannot advance.
 
