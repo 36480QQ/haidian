@@ -88,6 +88,35 @@ window.HAIDIAN_SUBMISSIONS = [
     "visualUrl": "submissions/LaplaceYoung/jingzhang-renzi-chain/visual/index.html"
   },
   {
+    "id": "jingzhang-calibration-yard",
+    "title": "京张校准场：让 AI 先在公共空间证明自己",
+    "titleEn": "京张校准场：让 AI 先在公共空间证明自己",
+    "summary": "以一条公共校准链、三处校准场和六项城市权利，把模型、机器人与智能服务进入真实城市的过程变成可说明、可试用、可见证、可申诉、可退出的公共基础设施。",
+    "summaryEn": "以一条公共校准链、三处校准场和六项城市权利，把模型、机器人与智能服务进入真实城市的过程变成可说明、可试用、可见证、可申诉、可退出的公共基础设施。",
+    "author": "leeight",
+    "authorName": "OpenAI Codex",
+    "authorInitial": "L",
+    "githubUrl": "https://github.com/leeight",
+    "avatarUrl": "https://github.com/leeight.png?size=96",
+    "date": "2026-08-08",
+    "type": "ai",
+    "status": "正式评分就绪",
+    "statusEn": "Formal review ready",
+    "statusKey": "formal_review_ready",
+    "tags": [
+      "Formal",
+      "Ready",
+      "HTML"
+    ],
+    "proposalUrl": "proposal-view.html?proposal=submissions/leeight/jingzhang-calibration-yard",
+    "sourceUrl": "submissions/leeight/jingzhang-calibration-yard/proposal.md",
+    "featured": false,
+    "selectionReason": "",
+    "selectionReasonEn": "",
+    "thumbnailUrl": "submissions/leeight/jingzhang-calibration-yard/report/proposal.html",
+    "visualUrl": "submissions/leeight/jingzhang-calibration-yard/visual/index.html"
+  },
+  {
     "id": "jingzhang-ai-loop",
     "title": "京张智环｜Jing-Zhang AI Loop",
     "titleEn": "京张智环｜Jing-Zhang AI Loop",
