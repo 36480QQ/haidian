@@ -32,8 +32,8 @@
     },
     {
       "id": "A-CONSENT-001",
-      "impact": "No archive item may be collected, published, reused for AI, or retained beyond its consent scope; withdrawal must propagate to every governed copy and index.",
-      "statement": "The skill-archive requires granular consent for each contribution, separate visibility choices, revocable permissions, and an accessible withdrawal workflow.",
+      "impact": "墓碑仅含记录 ID、请求范围、时间戳和完成状态，不含作品或故事内容。记录化法律保留例外可暂停相应删除，但必须限制访问、说明依据并在保留结束后继续执行；上述时限是拟议服务标准，不是现行法律或实施承诺。",
+      "statement": "The skill-archive requires granular consent for each contribution, separate visibility choices, revocable permissions, and an accessible withdrawal workflow. 拟议服务标准须经法律与数据保护复核：活跃/公开副本在 30 天内去索引或删除；搜索索引、嵌入和派生输出在 90 天内重建或删除；缓存/备份按正常轮换在 90 天内到期并禁止恢复到活跃系统；内容为空的审计墓碑最多 1 年。",
       "status": "required_before_pilot"
     },
     {

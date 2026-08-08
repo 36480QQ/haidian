@@ -248,9 +248,21 @@
         "comparative background on elder-led community roles and place-based participation"
       ],
       "authority_level": "PRIMARY_INSTITUTIONAL",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://ibasho.org/about-ibasho",
+        "http_status": 200,
+        "limitation": "只支持机制比较；不证明海淀参与率、空间适配或运营结果。",
+        "mechanism_summary": "机构页面将长者描述为社区能力与参与主体，可比较长者共同治理和贡献角色。",
+        "normalized_payload_bytes": 40455,
+        "normalized_payload_sha256": "ed838ad996895648c991e4c93f0cc981a0dd199d319acecde4726af783bae624",
+        "requested_url": "https://ibasho.org/about-ibasho"
+      },
       "id": "CASE-IBASHO-OFFICIAL",
       "license_summary": "Public institutional webpage; facts are quoted with attribution, not reproduced as an asset.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "仅用于机制比较；不同治理、文化和运营条件下的案例不能证明海淀实施成效。",
       "prohibited_uses": [
         "Haidian spatial control",
@@ -276,14 +288,27 @@
     {
       "accessed_date": "2026-08-08",
       "allowed_uses": [
-        "comparative background on co-locating housing, community, care and public-space functions"
+        "disclosure of official HDB page access history only"
       ],
       "authority_level": "OFFICIAL_PUBLIC_AGENCY",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/kampung-admiralty",
+        "http_status": 403,
+        "limitation": "HTTP 403，不能把该页面本身作为机制证据。",
+        "mechanism_summary": "无；仅记录官方页面访问历史。",
+        "normalized_payload_bytes": 0,
+        "normalized_payload_sha256": "not_applicable_http_403",
+        "requested_url": "https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/kampung-admiralty"
+      },
       "id": "CASE-KAMPUNG-ADMIRALTY-HDB",
       "license_summary": "Official public-agency webpage; facts are cited with attribution only.",
-      "local_paths": [],
-      "notes_zh": "2026-08-08 命令行核验官方页面返回 HTTP 403；保留官方发布者和 URL，仅使用复合功能机制，未使用成效数字。",
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
+      "notes_zh": "2026-08-08 命令行核验官方页面返回 HTTP 403；该不可访问页面仅保留为访问历史，不用于支持复合功能机制，未使用成效数字。",
       "prohibited_uses": [
+        "mechanism evidence",
         "Haidian spatial control",
         "local development capacity",
         "local outcome prediction"
@@ -293,6 +318,48 @@
       "publisher": "Housing & Development Board, Singapore",
       "review_status": "background_only",
       "source_id": "CASE-KAMPUNG-ADMIRALTY-HDB",
+      "source_kind": "official_access_history",
+      "timeliness_level": "T1",
+      "title": "Kampung Admiralty official-page access history",
+      "topics": [
+        "access_history",
+        "kampung_admiralty"
+      ],
+      "url": "https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/kampung-admiralty",
+      "usable_for_formal": "background_only"
+    },
+    {
+      "accessed_date": "2026-08-08",
+      "allowed_uses": [
+        "comparative background on co-location and layered public, care, community and senior-housing interfaces"
+      ],
+      "authority_level": "PRIMARY_PROJECT_TEAM",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://woha.net/project/kampung-admiralty/",
+        "http_status": 200,
+        "limitation": "项目团队页面可说明设计机制，但不能证明海淀容量、效果或实施条件。",
+        "mechanism_summary": "项目团队页面说明在紧凑场地分层共置社区广场、医疗、社区公园和长者住宅等界面。",
+        "normalized_payload_bytes": 37289,
+        "normalized_payload_sha256": "830cd40c0c12f5b477076bdd94a2e9a90ee8ace8a3a14374d9dec121037a39ff",
+        "requested_url": "https://woha.net/project/kampung-admiralty/"
+      },
+      "id": "CASE-KAMPUNG-ADMIRALTY-WOHA",
+      "license_summary": "Primary architect/project-team webpage; facts are cited with attribution only.",
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
+      "notes_zh": "由项目建筑团队页面支持复合设施与分层公共界面机制；不使用其成效表述或数字推导海淀结果。",
+      "prohibited_uses": [
+        "Haidian spatial control",
+        "local development capacity",
+        "local outcome prediction"
+      ],
+      "public_access_status": "public_webpage",
+      "published_date": "n.d.",
+      "publisher": "WOHA",
+      "review_status": "background_only",
+      "source_id": "CASE-KAMPUNG-ADMIRALTY-WOHA",
       "source_kind": "comparative_case",
       "timeliness_level": "T1",
       "title": "Kampung Admiralty",
@@ -301,7 +368,7 @@
         "age_friendly",
         "comparative_case"
       ],
-      "url": "https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/kampung-admiralty",
+      "url": "https://woha.net/project/kampung-admiralty/",
       "usable_for_formal": "background_only"
     },
     {
@@ -310,9 +377,21 @@
         "comparative background on human-supported digital social connection for older residents"
       ],
       "authority_level": "OFFICIAL_MUNICIPAL",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://www.barcelona.cat/infobarcelona/en/tema/senior-citizens/vincles-bcn-supports-and-connects-over-three-thousand-elderly-people_1199872.html",
+        "http_status": 200,
+        "limitation": "不引用标题或页面中的规模/成效数字，不支持连续跟踪或海淀结果预测。",
+        "mechanism_summary": "市政府页面描述以数字工具结合面对面支持，帮助感到孤独的长者建立联系。",
+        "normalized_payload_bytes": 17658,
+        "normalized_payload_sha256": "34d44d5c26295045207d1cf6ce345bb05ccb14d9bb0bb9f80a95bbd3cb1aa77f",
+        "requested_url": "https://www.barcelona.cat/infobarcelona/en/tema/senior-citizens/vincles-bcn-supports-and-connects-over-three-thousand-elderly-people_1199872.html"
+      },
       "id": "CASE-VINCLES-BCN-CITY",
       "license_summary": "Official municipal webpage; facts are cited with attribution only.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "仅比较数字联系与线下支持机制，不移植用户规模或效果主张。",
       "prohibited_uses": [
         "continuous tracking justification",
@@ -326,13 +405,13 @@
       "source_id": "CASE-VINCLES-BCN-CITY",
       "source_kind": "comparative_case",
       "timeliness_level": "T1",
-      "title": "Vincles BCN | Barcelona Digital City",
+      "title": "Vincles BCN supports and connects over three thousand elderly people",
       "topics": [
         "social_connection",
         "digital_inclusion",
         "comparative_case"
       ],
-      "url": "https://ajuntament.barcelona.cat/digital/en/technology-accessible-everyone/fight-against-digital-inequality/fight-against-digital-inequality-4",
+      "url": "https://www.barcelona.cat/infobarcelona/en/tema/senior-citizens/vincles-bcn-supports-and-connects-over-three-thousand-elderly-people_1199872.html",
       "usable_for_formal": "background_only"
     },
     {
@@ -341,9 +420,21 @@
         "comparative background on an open civic living room with learning and making functions"
       ],
       "authority_level": "PRIMARY_PUBLIC_INSTITUTION",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://oodihelsinki.fi/en/what-is-oodi/",
+        "http_status": 200,
+        "limitation": "只比较公共客厅与共创机制，不推断海淀客流或设施规模。",
+        "mechanism_summary": "机构页面把 Oodi 描述为非商业城市公共空间、学习与技能场所，并说明居民参与服务设计。",
+        "normalized_payload_bytes": 22731,
+        "normalized_payload_sha256": "3278ba3cdeba1851876a2d52e94c1a70b7727b05cdc8d7fc3463d4c0f389376a",
+        "requested_url": "https://oodihelsinki.fi/en/what-is-oodi/"
+      },
       "id": "CASE-OODI-OFFICIAL",
       "license_summary": "Official institutional webpage; facts are cited with attribution only.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "仅用于公共客厅和共创空间机制比较。",
       "prohibited_uses": [
         "Haidian floor-area control",
@@ -372,9 +463,21 @@
         "comparative background on peer-led making and side-by-side social participation"
       ],
       "authority_level": "PRIMARY_NETWORK",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://menssheds.org.uk/what-is-a-mens-shed/",
+        "http_status": 200,
+        "limitation": "只迁移同伴制作机制；本地设计必须全龄和性别包容，不预测健康结果。",
+        "mechanism_summary": "网络页面说明成员通过共同制作、修理与并肩活动形成联系。",
+        "normalized_payload_bytes": 96870,
+        "normalized_payload_sha256": "44fce81d5f6f6d6a38ce323b513de64ac5f36c91b64caad8dc9b50654985c93c",
+        "requested_url": "https://menssheds.org.uk/what-is-a-mens-shed/"
+      },
       "id": "CASE-MENS-SHEDS-UK",
       "license_summary": "Official network webpage; facts are cited with attribution only.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "迁移的是并肩做事和同伴互助机制，本方案须保持性别与年龄包容。",
       "prohibited_uses": [
         "gender-exclusive local service design",
@@ -403,9 +506,21 @@
         "comparative background on volunteer repair, skill exchange and reusable event formats"
       ],
       "authority_level": "PRIMARY_NETWORK",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://www.repaircafe.org/en/about/",
+        "http_status": 200,
+        "limitation": "只比较活动协议与技能交换，不声称本地减废、参与或志愿供给成效。",
+        "mechanism_summary": "网络页面说明以工具、材料、志愿技能和共同修理构成开放学习活动。",
+        "normalized_payload_bytes": 81005,
+        "normalized_payload_sha256": "2985e5cde2847ae3e483471a15c2eac7595a0c49e371d2dfe71327ae10dbf344",
+        "requested_url": "https://www.repaircafe.org/en/about/"
+      },
       "id": "CASE-REPAIR-CAFE-NETWORK",
       "license_summary": "Official network webpage; facts are cited with attribution only.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "仅迁移可复用活动协议与技能交换机制，不引用未经本地试点验证的环境成效。",
       "prohibited_uses": [
         "local waste-reduction claim",
@@ -434,9 +549,21 @@
         "comparative background on age-friendly environments and participatory improvement cycles"
       ],
       "authority_level": "INTERGOVERNMENTAL",
+      "evidence_metadata": {
+        "accessed_date": "2026-08-08",
+        "final_url": "https://www.who.int/activities/creating-age-friendly-cities-and-communities",
+        "http_status": 200,
+        "limitation": "只作为方法框架，不构成认证、法定标准或海淀成效证明。",
+        "mechanism_summary": "WHO 页面支持通过年龄友好环境和持续参与改进城市与社区的检查方法。",
+        "normalized_payload_bytes": 44352,
+        "normalized_payload_sha256": "fe7f160456164e2057f3459c3712889857110bf52bc041f30391a5220ff64707",
+        "requested_url": "https://www.who.int/activities/creating-age-friendly-cities-and-communities"
+      },
       "id": "CASE-WHO-AGE-FRIENDLY",
       "license_summary": "WHO public webpage; facts are cited with attribution only.",
-      "local_paths": [],
+      "local_paths": [
+        "report/source-evidence.md"
+      ],
       "notes_zh": "WHO 框架用于检查维度和参与方法，不构成认证或本地成效证明。",
       "prohibited_uses": [
         "certification claim",
