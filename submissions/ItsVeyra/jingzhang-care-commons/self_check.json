@@ -20,7 +20,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "The repository-supplied provisional boundary is clearly labeled low-confidence and non-official; it supports concept organization only and must be replaced and recalculated when the official redline is supplied."
+      "message": "The repository-supplied provisional boundary is clearly labeled low-confidence and non-official; manifest data_confidence=low describes these spatial inputs, not package validation quality. It supports concept organization only and must be replaced and recalculated when the official redline is supplied."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
@@ -62,7 +62,7 @@
       "result": "pass",
       "severity": "major",
       "target": "assets/figures/",
-      "message": "All five required proposal figures are substantive 2400 by 1600 pixel outputs derived from the package geometry and metrics, with provisional status visibly disclosed."
+      "message": "All five required proposal figures are substantive 2560 by 1700 pixel outputs, exceeding the minimum 2400 by 1600 requirement; they are derived from the package geometry and metrics, with provisional status visibly disclosed."
     },
     {
       "check_id": "DRAWING_OUTPUTS",

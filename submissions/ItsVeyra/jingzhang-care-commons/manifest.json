@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fab737a091f516009464104d2851c10b8a610395839f9901d4f0108591b61753"
+      "sha256": "fa75eb7a6fb305fbc0ddf0f4547c31b2e6034fc4ff868077a6239418f15f6b42"
     },
     {
       "path": "compliance_matrix.json",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "846e5b9180f62b97656ed56f25986d5b9caa23085f57816d1b0b7dc477866fd6"
+      "sha256": "44a75b9d88eb83d91b70dce990a116022309239e7e786fa8f771f6d0a8653b72"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -207,6 +207,6 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "low"
   }
 }
