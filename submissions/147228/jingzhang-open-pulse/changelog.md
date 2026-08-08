@@ -43,3 +43,9 @@ reviewable deliverables and bilingual review surface.
 - Added an eight-row non-identifying public-user and inclusion matrix with spatial responses, fallbacks and safeguards.
 - Added a four-node honor/landmark crosswalk and linked it to the taskbook acceptance tests.
 - Added design-target metrics for validation windows, user lenses and public markers; all remain conceptual and require professional, rights, safety and community review.
+
+## v2.1 - 2026-08-08
+
+- Added `visual/assets/wind-health-field-protocol.json` as a pre-registered field observation, calibration, model-alignment and stop-condition contract for the six health/wind/water metrics.
+- Added AIJ pedestrian-wind CFD and ISO 7726 catalogue method references with explicit boundaries; no local measurement, CFD result, comfort threshold or health outcome was fabricated or transferred.
+- Kept all six local metrics `unknown` until versioned geometry, field data, calibration/QC, model comparison, uncertainty and professional sign-off are available.
