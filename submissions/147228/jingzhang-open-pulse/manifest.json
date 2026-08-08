@@ -17,15 +17,14 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": ""
+      "required": true
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3ceb56fda1bf4bf9e2c543aa08ae63f0cef27e9e304af489d0e7906021f94144"
+      "sha256": "b473daba41fac5c19a8782f37c3eee08b6696099e4fa7df219efb91d6c617976"
     },
     {
       "path": "proposal.en.md",
@@ -309,7 +308,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "2aa601ed329fe88618d113d087f1fff40cef59b5e849842e0ca8457a425b0949"
+      "sha256": "291cfba91aa2fa6a26de18c5058b792ad9858508004b871c244c3ce5ed322ce2"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
