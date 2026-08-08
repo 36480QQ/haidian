@@ -233,6 +233,8 @@ class TestSubmissionsGallery(unittest.TestCase):
 
     def test_human_readable_report_viewer_loads_structured_evidence(self):
         viewer = (ROOT / "proposal-view.html").read_text(encoding="utf-8")
+        artifact_viewer = (ROOT / "proposal-artifact-viewer.js").read_text(encoding="utf-8")
+        artifact_styles = (ROOT / "proposal-artifact-viewer.css").read_text(encoding="utf-8")
         for required in [
             "manifest.json",
             "sources.json",
@@ -254,13 +256,35 @@ class TestSubmissionsGallery(unittest.TestCase):
             "citation-popover",
             "responsive-table",
             "已解析证据",
-            "完整方案资料包",
             "artifact-groups",
             "packageToggle",
             "activateFilter",
             "点击下面任意数字筛选证据",
+            "proposal-artifact-viewer.js",
+            "proposal-artifact-viewer.css",
+            "完整方案资料展厅",
+            "artifactViewerBody",
         ]:
             self.assertIn(required, viewer)
+        for required in [
+            "renderGeoJSON",
+            "geoSvg",
+            "renderJSON",
+            "markdownToHTML",
+            "parseDelimited",
+            'sandbox="allow-scripts allow-forms allow-modals allow-popups"',
+            "hydratePreviews",
+            "window.ProposalArtifactViewer",
+        ]:
+            self.assertIn(required, artifact_viewer)
+        for required in [
+            ".artifact-card",
+            ".artifact-viewer",
+            ".artifact-map-canvas",
+            ".artifact-document",
+            ".artifact-table",
+        ]:
+            self.assertIn(required, artifact_styles)
 
     def test_gallery_pages_explain_review_statuses(self):
         index = INDEX_FILE.read_text(encoding="utf-8")

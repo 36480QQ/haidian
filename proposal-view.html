@@ -221,6 +221,7 @@ button{font:inherit;color:inherit}
   body{background:#fff}.topbar,.package-overview,.package-drawer,.panel,.progress{display:none}.shell{display:block}.report-wrap{padding:0}.report{box-shadow:none;max-width:none}
 }
 </style>
+<link rel="stylesheet" href="proposal-artifact-viewer.css?v=1">
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -240,7 +241,7 @@ button{font:inherit;color:inherit}
     <span class="package-entry-eyebrow">Complete proposal package</span>
     <strong><span id="packageCount">—</span> 个文件已载入，不只是一份正文</strong>
     <span class="package-entry-desc" id="packageBreakdown">正在读取图纸、图片、空间图层与结构化数据</span>
-    <span class="package-entry-cta">展开文件清单 ↓</span>
+    <span class="package-entry-cta">展开可视化资料库 ↓</span>
   </button>
   <button class="package-entry evidence-entry" id="evidenceEntry" type="button">
     <span class="package-entry-eyebrow">Clickable evidence</span>
@@ -251,10 +252,22 @@ button{font:inherit;color:inherit}
 </section>
 <section class="package-drawer" id="packageDrawer" hidden aria-label="完整方案文件清单">
   <div class="drawer-head">
-    <div><div class="eyebrow">Submitted artifacts</div><h2>完整方案资料包</h2><div class="drawer-note">文件清单直接来自该方案的 manifest.json，点击任意文件即可打开原始成果</div></div>
+    <div><div class="eyebrow">Visualized artifacts</div><h2>完整方案资料展厅</h2><div class="drawer-note">总览只保留轻量识别卡；点击任意文件后，空间图层、结构化数据、文档、图像、PDF 与交互页面会在站内完整渲染</div></div>
     <button class="drawer-close" id="packageClose" type="button">收起 ↑</button>
   </div>
   <div class="artifact-groups" id="artifactGroups"></div>
+</section>
+<section class="artifact-viewer" id="artifactViewer" hidden aria-hidden="true" aria-label="方案文件查看器">
+  <header class="artifact-viewer-head">
+    <div class="artifact-viewer-ident"><span class="artifact-viewer-type" id="artifactViewerType">FILE</span><div class="artifact-viewer-copy"><div class="artifact-viewer-title" id="artifactViewerTitle">方案文件</div><div class="artifact-viewer-path" id="artifactViewerPath"></div></div></div>
+    <div class="artifact-viewer-actions">
+      <button class="artifact-viewer-action" id="artifactPrev" type="button">← 上一个</button>
+      <button class="artifact-viewer-action" id="artifactNext" type="button">下一个 →</button>
+      <a class="artifact-viewer-action" id="artifactRawLink" href="#" target="_blank" rel="noopener">打开原文件 ↗</a>
+      <button class="artifact-viewer-action primary" id="artifactViewerClose" type="button">关闭 ×</button>
+    </div>
+  </header>
+  <div class="artifact-viewer-body" id="artifactViewerBody"><div class="artifact-loading">RENDERING ARTIFACT</div></div>
 </section>
 <div class="shell" id="shell">
   <div class="report-wrap">
@@ -273,6 +286,7 @@ button{font:inherit;color:inherit}
     </div>
   </aside>
 </div>
+<script src="proposal-artifact-viewer.js?v=1"></script>
 <script>
 const KIND_META={
   source:{zh:'来源',en:'Source',color:'#65b7ff'},
@@ -298,7 +312,7 @@ const ARTIFACT_META={
   narrative:{zh:'正文与说明',icon:'DOC'}
 };
 const EVIDENCE_KINDS=Object.keys(KIND_META).join('|');
-const state={refs:[],filter:'all',selected:null,packagePath:'',data:new Map(),artifacts:[]};
+const state={refs:[],filter:'all',selected:null,packagePath:'',data:new Map(),artifacts:[],artifactViewer:null};
 const $=selector=>document.querySelector(selector);
 const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const asArray=value=>Array.isArray(value)?value:[];
@@ -347,14 +361,9 @@ function buildArtifacts(manifest){
   state.artifacts=entries.filter(item=>!seen.has(item.path)&&seen.add(item.path)).map(item=>({...item,group:artifactGroup(item.path)}));
 }
 function renderArtifacts(){
-  const groups=Object.keys(ARTIFACT_META);
-  $('#artifactGroups').innerHTML=groups.map(group=>{
-    const items=state.artifacts.filter(item=>item.group===group);
-    const links=items.map(item=>`<a class="artifact-link" href="${escapeHTML(packageUrl(item.path))}" target="_blank" rel="noopener" title="${escapeHTML(item.path)}">
-      <span class="artifact-icon">${escapeHTML(artifactType(item.path))}</span><span class="artifact-name">${escapeHTML(artifactLabel(item.path))}</span><span class="artifact-open">打开 ↗</span>
-    </a>`).join('');
-    return `<section class="artifact-group"><div class="artifact-title"><span>${ARTIFACT_META[group].zh}</span><span>${items.length}</span></div><div class="artifact-list">${links||'<div class="artifact-empty">没有此类文件</div>'}</div></section>`;
-  }).join('');
+  state.artifactViewer=window.ProposalArtifactViewer.mount({
+    artifacts:state.artifacts,groups:ARTIFACT_META,url:packageUrl,label:artifactLabel,type:artifactType,fetchText,fetchJSON
+  });
   const imageCount=state.artifacts.filter(item=>/\.(?:png|jpe?g|webp|svg)$/i.test(item.path)).length;
   const pdfCount=state.artifacts.filter(item=>/\.pdf$/i.test(item.path)).length;
   const geoCount=state.artifacts.filter(item=>/\.geojson$/i.test(item.path)).length;
@@ -864,6 +873,7 @@ async function load(){
   const artifactPaths=new Set(state.artifacts.map(item=>item.path));
   [['sourceLink','proposal.md'],['a3Link','drawings/a3-booklet.pdf'],['visualLink','visual/index.html']].forEach(([id,path])=>{
     const link=$(`#${id}`);link.href=packageUrl(path);link.target='_blank';link.rel='noopener';link.hidden=!artifactPaths.has(path);
+    if(!link.hidden)link.addEventListener('click',event=>{event.preventDefault();state.artifactViewer?.open(path)});
   });
   $('#report').innerHTML=renderStatus(state.refs)+imported.innerHTML;
   bindEvidenceButtons($('#report'));
@@ -879,7 +889,8 @@ function togglePackage(force){
   const open=force??drawer.hidden;
   drawer.hidden=!open;
   $('#packageToggle').setAttribute('aria-expanded',String(open));
-  $('#packageToggle').querySelector('.package-entry-cta').textContent=open?'收起文件清单 ↑':'展开文件清单 ↓';
+  $('#packageToggle').querySelector('.package-entry-cta').textContent=open?'收起资料展厅 ↑':'展开可视化资料库 ↓';
+  if(open)state.artifactViewer?.hydrate();
 }
 $('#packageToggle').addEventListener('click',()=>togglePackage());
 $('#packageClose').addEventListener('click',()=>togglePackage(false));
