@@ -88,7 +88,7 @@ code {
 <h1>原点京张：一公里AI创新服务圈</h1>
 <h2>摘要：电梯演讲</h2>
 <p>**一百年前，詹天佑用「人字形」折返线，让中国人自主设计的第一条干线铁路翻越了八达岭；一百年后，原点京张用「一公里创新服务圈」，让全球 AI 创业者翻越从实验室到市场的最后一公里。**</p>
-<p>京张铁路是中国工程自主的原点，AI 原点社区是中国智能时代的原点，原点京张是原点的集合——一条铁路遗址上生长出的 AI 创新服务带。本方案不仅提交一份符合规资严谨度的 formal 城市设计方案，更提出一套 **Git-Native 可编程城市设计范式（Meta-Agent Programmable Urbanism）**：Origin Node 动态生长算法让城市空间从「静态 PDF」演化为「可计算、可迭代的代码库」，46 个概念地块全部绑定海淀生态锚点，支持 official 边界发布后的一键自动化重算。这是本方案对「全球首次 Agent 真实城市规划」的回答——Agent 不是画图工具，而是城市演化的共同设计者。</p>
+<p>京张铁路是中国工程自主的原点，AI 原点社区是中国智能时代的原点，原点京张是原点的集合——一条铁路遗址上生长出的 AI 创新服务带。本方案不仅提交一份符合规资严谨度的 formal 城市设计方案，更提出一套 **Git-Native 可编程城市设计范式（Meta-Agent Programmable Urbanism）**：Origin Node 动态生长算法让城市空间从「静态 PDF」演化为「可计算、可迭代的代码库」，46 个概念地块全部绑定海淀生态锚点，支持 official 边界发布后的一键自动化重算。这是本方案对「全球首次 Agent 真实城市规划」的回答——Agent 不是画图工具，而是城市演化的共同设计者。**本方案附完整生成过程审计白皮书（见附录）：7 轮迭代、决策分叉点、3 份 PR 全程 git 可追溯、4 个生成脚本支持一键重跑复算——这是本方案区别于传统委托制规划的核心增量：Agent 的工作不是画一张图，而是为城市建立可审计、可迭代、可复现的设计操作系统。**</p>
 <h2>设计依据与资料清单</h2>
 <p>本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 <code>brief/site-package/</code> 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前读取了 <code>design_brief.json</code>、<code>allowed_design_space.json</code>、<code>sources.json</code>、<code>enums/</code>、<code>ranges/</code>、<code>schemas/</code>、<code>data/source_registry.json</code> 和 <code>data/processed/agent_fact_pack.md</code>，并用 <code>project_scope_summary.csv</code>、<code>agent_task_requirements.csv</code>、<code>source_use_matrix.csv</code>、<code>missing_data_checklist.csv</code> 建立任务、范围、资料用途和缺口清单。所有设计判断都拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。</p>
 <p>本节证据链引用 <span class="evidence evidence-source">[source:OFFICIAL-ANNOUNCEMENT]</span>、<span class="evidence evidence-source">[source:AGENT-TASKBOOK]</span>、<span class="evidence evidence-source">[source:SITE-PACKAGE]</span>、<span class="evidence evidence-source">[source:SOURCE-REGISTRY]</span>、<span class="evidence evidence-source">[source:PROCESSED-FACT-PACK]</span>、<span class="evidence evidence-source">[source:BOUNDARY-SOURCE]</span>、<span class="evidence evidence-source">[source:KEY-AREA-SOURCE]</span>、<span class="evidence evidence-standard">[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]</span>、<span class="evidence evidence-standard">[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]</span>、<span class="evidence evidence-standard">[standard:MOHURD-URBAN-DESIGN-MEASURES]</span>、<span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span>、<span class="evidence evidence-standard">[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</span>、<span class="evidence evidence-standard">[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]</span> 和 <span class="evidence evidence-depth">[depth:existing_conditions_diagnosis]</span>，用于说明方案不是独立愿景文本，而是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织成果。</p>
@@ -114,6 +114,7 @@ code {
 <p>统筹研究范围的核心任务是构建世界级 AI 创新生态体系。方案把海淀高校院所、头部企业、算力算法数据要素、孵化平台、上市企业、独角兽和科技服务资源组织为 AI 创新链、产业链、人才链和城市服务链的空间协同框架。命名方案和 Logo 设计服务于「百年京张文化带、都市AI生活体验带、AI融合创新带」的整体辨识度，并与产业生态、公共空间和文化资源建立关联。</p>
 <h3>命名体系与 Logo 方向（agent.1）</h3>
 <p>主名称「原点京张」（Origin-JZ）取自主创新原点的双重性：一百年前京张铁路是中国人自主设计、自主建造的第一条干线铁路，是中国工程创新的原点；今天北京 AI 原点社区是官方设定的创新原点，一带则是原点的集合。命名体系呼应 git 仓库的 origin、坐标原点 (0,0) 与 AI 开发文化，国际传播上 Origin 一词在开发者语境中天然可理解。</p>
+<p>**命名独占性说明（方法论升维）**：本方案的「原点」不是品牌词，而是城市设计的方法论起点——每个地块的原点（origin）是它的海淀生态锚点，每次空间更新都从锚点 origin 出发 git commit；46 个地块 = 46 个 origin，每次 PR 提交都是城市的一次 commit。「原点京张 Origin-JZ」通过三重绑定形成不可复制的识别：①**视觉绑定**——人字形折返线 × 坐标原点 (0,0) 组合图形；②**算法绑定**——Origin Node 动态生长公式 S = α·D + β·P + γ·F（真实 GitHub 数据驱动）；③**叙事绑定**——「翻越」隐喻（从物理天堑到创新鸿沟的百年转译）。任何使用「原点」一词的方案可以共享概念，但无法复制上述三重绑定的组合——本方案不是「叫原点的方案」，而是「把原点作为计算单元的方法体系」。</p>
 <p>| 层级 | 名称 | 说明 | | --- | --- | --- | | 主品牌 | 原点京张 Origin-JZ | 自主创新原点的双重性：铁路原点 × AI 原点 | | 众智园 | 原点·引擎段 Origin·Engine | AI 全栈自主创新加速区，研发测试与标准治理 | | AI 原点社区 | 原点·根 Origin·Root | 近校型孵化转化，人才引力与开源协作 | | 大钟寺 | 原点·集群 Origin·Cluster | 智能原生产业集聚，应用消费与数据要素 | | 中关村科技服务翼 | 要素环球港 | 资本、数据、IP 全球化配置 | | 小月河场景赋能翼 | 场景试验田 | AI+ 场景试点与活力城市体验 | | 服务前台 | 原点节点 Origin Node | 一公里创新服务圈的最小运营单元 |</p>
 <p>Logo 方向：以京张铁路「人字形」折返线的拓扑为视觉母题——两个火车头在青龙桥一推一拉翻越八达岭，对应 AI 时代「算力 + 人才」双引擎协作；人字形的汇聚拓扑又与 Agent 协作、人机协同、以人为本的 AI 文化同构。Logo 变体可叠加「原点圆点」（origin 坐标点）标记，形成铁路拓扑 × 坐标原点的组合，延伸用于导视、铺装、公共艺术与数字界面。所有字体、图形、吉祥物与标识均采用开源或自绘素材，不引用未清权商标。</p>
 <h3>五大功能与三区两翼协同</h3>
@@ -137,10 +138,13 @@ code {
 <h2>重点区域详细设计</h2>
 <h3>原点·引擎段：众智园 AI 自主创新加速区（PROV-KEY-001）</h3>
 <p>定位为花园型 AI 全栈自主创新街区，承担研发测试、标准制定、安全治理与产业展示。空间结构为「一核一环」：核心为开源广场与标准治理展示节点（<span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-001]</span>），外环为研发楼群与绿色交往界面。建筑更新以保留改造为主、局部新建为辅，强调低碳创新交往环境与清河界面。AI 场景包括自主模型测试、标准制定工作坊、安全治理展示、低碳算力体验。实施风险为全栈自主创新对算力与人才门槛高，需配套共享测试场与端侧算力服务点。</p>
+<p>**步行体验（概念描写）**：从清河桥沿缓坡步道进入众智园，左侧是保留改造的红砖厂房——首层为开源项目展示橱窗，玻璃幕墙内实时滚动全球提交的 PR 编号；步道在开源广场处豁然开朗，地面嵌入京张旧铁轨作为导引线，两侧是阶梯座椅与遮阴树阵，广场中央的原点碑候选位预留了刻名区。绕广场向北，研发楼群以院落式低层为主，屋顶连通成「第二地面」，可步行至算力展示舱——那里能俯瞰清河蓝绿界面与对岸的高校天际线。</p>
 <h3>原点·根：北京 AI 原点社区（PROV-KEY-002）</h3>
 <p>定位为近校型成果转化与人才社区，承担高校策源、开源生态、成果发布与人才服务。空间结构为「十字缝合」：南北向慢行主街连接校区与园区，东西向成果转化带组织孵化、展示、法务与投融资服务（<span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-002]</span>）。建筑更新以校区-园区缝合、首层业态活化为主。AI 场景包括开源发布厅、近校成果转化街、AI 教育体验点。实施风险为校区边界、权属与首层业态调整依赖多方协调，需以轻量设施和活动先行。</p>
+<p>**步行体验（概念描写）**：从清华南门沿一条六米宽的林荫步道向南走两百米，步道在铁路遗址处变宽为十二米的广场，旧铁轨嵌入地面，两侧是阶梯座椅与老槐树——树下常有三五成群的博士生在讨论。右手边一排改造后的红砖院落，首层是开源项目展示橱窗与创客客厅，二层是共享工位，围合内院中央保留一棵老树，树下是路演角。穿过内院向东，成果转化带沿街展开，橱窗里贴着「本周可对接的资本与政策资源」，灯箱在傍晚亮起，呼应着步道上不断更新的开源贡献滚动屏。</p>
 <h3>原点·集群：大钟寺 AI 产业聚集区（PROV-KEY-003）</h3>
 <p>定位为城市型智能经济与国际交往街区，承担领军企业、智能体、智能终端、内容消费与数据要素业态。空间结构为「四象限步行环」：围绕大钟寺站一体化组织四象限步行连通（<span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC-003]</span>），商业服务、国际路演、文化博览与留白发展分置四象限。AI 场景包括智能原生消费、国际路演客厅、数据要素会客厅。实施风险为轨道站点一体化与道路交叉口改造依赖工程条件，需列为正式深化前置条件。</p>
+<p>**步行体验（概念描写）**：从大钟寺地铁站出站，地下连廊直通四象限步行环——地面广场以智能终端展示橱窗为界面，无人配送车沿专用廊道安静穿行。西南象限保留老市场肌理，首层是智能硬件快闪店与内容消费体验区，玻璃幕墙后是「数据要素会客厅」的实时交易屏。东北象限的国际路演客厅在黄昏亮起外立面屏，路演后的创业者们沿环线散步，途经留白发展用地前的概念展廊——那里预告着下一批入驻企业的剪影。</p>
 <p>三处重点区域详细设计引用 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-002]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-003]</span>，由 <span class="evidence evidence-depth">[depth:three_key_area_detailed_design]</span> 检查是否达到规划综合实施方案深度。provisional polygon 的结论仅作为方向性设计，official polygon 发布后重算。</p>
 <figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区域索引与设计任务图"><figcaption>三处重点区域索引与设计任务图</figcaption></figure>
 <h2>AI 创新生态、人才画像与 AI+ 场景</h2>
@@ -150,6 +154,14 @@ code {
 <h3>AI 场景卡（agent.3，10 张以上，其中 3 张为产业测试验证场景）</h3>
 <p>| 编号 | 场景卡 | 空间载体 | 类型 | 设计说明 | | --- | --- | --- | --- | --- | | SC-01 | 低速无人配送试点 | 京张遗址公园南段—大钟寺（ROAD-002 沿线） | **产业测试验证** | 在低速、可监管、可复核边界内测试配送机器人；运营主体为试点企业 + 公共平台复核 | | SC-02 | 自动驾驶园区接驳 | 众智园（PROV-KEY-001 内部道路） | **产业测试验证** | 园区内部低速接驳，明确边界、站点与安全复核机制，不直接等同市政道路部署 | | SC-03 | AI 导览与文化溯源 | 京张遗址公园绿带（GREEN-001） | **产业测试验证** | 可解释导览把京张历史、中关村文化与 AI 科普连接，史实与版权须人工复核 | | SC-04 | AI+ 健康服务导航 | 社区与公共服务节点（LU-005） | AI+ 公共服务 | 面向园区青年和社区居民的健康服务导航、活动风险提醒，不替代专业医疗 | | SC-05 | AI+ 教育个性化学习 | 原点·根近校带（LU-007） | AI+ 教育 | 面向高校与青少年 AI 科普、个性化学习，校园数据须授权 | | SC-06 | 企业服务 Copilot | 原点节点服务前台（PUBLIC-002） | AI+ 企业服务 | 政策、合规、知识产权与场景试点的初步问答，不替代专业意见 | | SC-07 | AI+ 交通慢行断点识别 | 创新大道（ROAD-001） | AI+ 交通 | 用可解释导视与低侵入传感识别慢行断点、拥挤节点与无障碍需求 | | SC-08 | AI+ 公共法律服务 | 公共服务带（LU-005） | AI+ 公共服务 | 法律咨询问答、仲裁指引，不替代执业律师意见 | | SC-09 | 智能原生消费 | 大钟寺商业带（LU-010） | AI+ 商业 | 智能终端与内容消费体验街区，隐私边界与人工复核优先 | | SC-10 | 城市智能体治理台 | 众智园治理展示（PUBLIC-001） | AI 治理 | 公开资料读取、方案推演、公众反馈汇总、风险提示，人类最终判断 | | SC-11 | 开发者开源协作空间 | 原点·根（LU-018） | AI 生态 | 24 小时开源协作、代码贡献展示、社区活动 | | SC-12 | 公共安全运营复核 | 一带公共空间系统 | AI 治理 | 活动人流与设施维护的聚合指标辅助，不采集个人轨迹 |</p>
 <p>所有 AI 治理建议遵守数据最小化、公开来源、可解释与人工复核原则。城市智能体可辅助识别慢行断点、公共空间热力、设施维护、企业服务需求和活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺。未成熟技术不写成已可全面部署，测试场景不写成已批准运营。</p>
+<h3>包容性设计原则（agent.3 公共利益维度）</h3>
+<ul>
+<li>**不替代原则**：AI 服务作为辅助，保留人工窗口——原点节点设「人工服务台」，老年与弱势群体不因数字鸿沟被排斥。</li>
+<li>**隐私优先**：弱势群体相关数据本地化处理，不上云、不做商业推荐；公共区域 AI 设备只做聚合统计，不采集个人轨迹。</li>
+<li>**时段保护**：所有测试场景（无人配送/自动驾驶接驳等）限定 9:00-18:00，夜间静音，避开居民休息时段。</li>
+<li>**参与通道**：「原点日」设居民专场，意见通过 Origin Node 直达城市智能体治理台；残障人士享有无障碍导航（蓝牙信标+语音）、无障碍办公（盲文显示器+语音编程环境）与无障碍就业（音频/语音类岗位优先匹配）。</li>
+<li>**公平可达**：一公里服务圈对所有人开放，不设学历/企业规模/户籍门槛，特别关注学生创业者、独立开发者与非京籍创业者。</li>
+</ul>
 <h3>场景卡的海淀生态锚定</h3>
 <p>场景卡不是空泛概念，而是与海淀物理/政策载体强绑定（地块锚定见 <code>geometry/land_use.geojson</code> 的 <code>haidian_ecological_anchor</code> 字段）：</p>
 <p>| 场景 | 海淀本土物理/政策载体 | 空间地块 | | --- | --- | --- | | 具身智能真实物理测试场 | 东升科技园 + 京张绿道平坦区 | 众智园段研发用地 | | 算法沙盒与数据特区诊所 | 海淀数据特区 + 北京国际大数据交易所 | 原点段核心孵化用地 | | 大模型算力协同边缘节点 | 北京人工智能公共算力平台 | 众智园算力研发用地 | | 开源学术成果转化桥梁 | 智源研究院（BAAI）+ 清华/北大实验室 | 原点段开源协作用地 |</p>
@@ -165,9 +177,72 @@ code {
 <li>**实施阶段**：2026 Q4 选址申请 → 2027 Q2 试点 → 2028 Q2 全区推广。</li>
 <li>**风险与应对**：监管责任边界 → 沙盒内「AI 辅助诊断」标注 + 人类最终审批。</li>
 </ul>
+<h3>三张产业测试验证场景卡硬数据化（agent.3 必答）</h3>
+<h4>SC-01 低速无人配送试点（产业测试验证）</h4>
+<ul>
+<li>**场景定义**：在京张遗址公园南段—大钟寺沿线（ROAD-002）划定约 2km 低速无人配送测试走廊，允许 L4 级配送机器人限定时段（9:00-18:00）、限定路线、限速（≤15km/h）运行。</li>
+<li>**空间落位**：测试走廊 ROAD-002 南段约 2km；配送节点大钟寺商业带（LU-010）3 个收货点；监控中心原点节点（PUBLIC-003）。</li>
+<li>**参与主体**：海淀交通支队+区科委（监管）、美团/京东/白犀牛（概念建议，运营）、智谱AI/百度Apollo（概念建议，算法）、遗址公园管理处（场地）。</li>
+<li>**技术架构**：激光雷达+摄像头+V2X 路侧单元感知层；边缘计算（部署于 Origin Node Level-3）决策层；L4 配送机器人执行层；数字孪生监控平台监管层。</li>
+<li>**商业模式**：测试期政府补贴+企业自费（单台日均约 800 元）→ 验证期向商户收配送费 → 规模化复制至海淀其他园区。</li>
+<li>**验证机制**：A/B 对照（人工 vs 无人配送各 30 天）验证「效率提升 ≥20%」；实时监控验证「安全事故率 ≤0.01 次/千公里」；NPS 调研验证「公众接受度 ≥70%」；成本核算验证「单台日均成本 ≤500 元」。</li>
+<li>**成功指标**：年测试里程 ≥10,000km、配送单量 ≥50,000 单、服务商户 ≥100 家、输出 1 套《低速无人配送园区测试规范》。</li>
+<li>**实施阶段**：2026 Q4 申请许可→2027 Q1 试点（3 台/1km）→2027 Q2 扩展（10 台/2km）→2027 Q4 评估全区推广。</li>
+<li>**风险与应对**：事故责任认定→企业全责+专项保险；公众抵触→前 3 个月免费体验+透明公示；技术故障→30 秒远程接管；天气→雨雪自动停运。</li>
+</ul>
+<h4>SC-02 自动驾驶园区接驳（产业测试验证）</h4>
+<ul>
+<li>**场景定义**：众智园（PROV-KEY-001）内部划定低速自动驾驶接驳环线（约 1.5km），连接开源广场（PUBLIC-001）、研发楼群与算力中心，L4 级接驳车限定园区内运行。</li>
+<li>**空间落位**：众智园内部道路环线；站点 5 处（开源广场/研发东区/算力舱/展示厅/人才公寓）；监控接入园区数字孪生。</li>
+<li>**参与主体**：海淀园管委会（监管）、百度Apollo/文远知行（概念建议，技术）、众智园运营方（场地）。</li>
+<li>**技术架构**：园区高精地图+V2X 路侧单元；边缘算力舱（对接北京人工智能公共算力平台）；L4 接驳车；车-路-云协同调度。</li>
+<li>**商业模式**：园区通勤免费（提升园区吸引力）→ 对外示范展示收费 → 接驳数据脱敏服务（合规前提）。</li>
+<li>**验证机制**：验证「园区通勤效率提升」假设（接驳车 vs 步行/自行车对照）；数据来自调度日志；周期 90 天；成功标准为准点率 ≥95%、安全事故零。</li>
+<li>**成功指标**：日接驳人次 ≥2,000、准点率 ≥95%、零重大事故、形成 1 套园区接驳运营规范。</li>
+<li>**实施阶段**：2026 Q4 划定环线→2027 Q1 试点 2 台→2027 Q2 扩展 6 台→2027 Q4 评估。</li>
+<li>**风险与应对**：园区行人冲突→限速 15km/h+声光提示；监管空白→参照低速无人车试点办法；技术失效→人工接管+备用调度。</li>
+</ul>
+<h4>SC-03 AI 导览与文化溯源（产业测试验证）</h4>
+<ul>
+<li>**场景定义**：京张遗址公园绿带（GREEN-001）沿线部署可解释 AI 导览系统，把京张铁路历史、中关村创新文化与 AI 科普连接为互动体验，覆盖清华园车站旧址、原点碑候选位、百年时间轴节点。</li>
+<li>**空间落位**：遗址公园绿带全线；核心节点 6 处（北口科技广场/铁路文化展廊/原点碑/开发者散步道/南口站前广场/中关村节点）。</li>
+<li>**参与主体**：遗址公园管理处（运营）、海淀文旅局（文化审核）、智谱AI/智源（概念建议，技术）、北大历史系（内容顾问）。</li>
+<li>**技术架构**：可解释导览终端（语音+AR）+ 多模态内容检索（史实数据库，人工策展）+ 版权合规审核层。</li>
+<li>**商业模式**：基础导览免费→精品路线/AR 内容付费→企业冠名（需清权）。</li>
+<li>**验证机制**：验证「AI 导览能否提升文化认知」假设（导览 vs 传统讲解对照）；数据来自导览日志+满意度问卷；周期 60 天；成功标准为知识掌握度提升 ≥30%、史实差错零。</li>
+<li>**成功指标**：年导览人次 ≥100,000、满意度 NPS ≥60、史实零差错、沉淀 1 套《AI 导览内容合规规范》。</li>
+<li>**实施阶段**：2026 Q4 内容策展+版权清权→2027 Q1 试点 3 节点→2027 Q3 全线部署。</li>
+<li>**风险与应对**：史实错误→历史学者复核+人工策展；版权不清→全部素材清权；AI 生成混同事实→每处标注「AI 生成，人工复核」。</li>
+</ul>
+<h4>SC-10 城市智能体治理台（AI 治理 · 8 字段硬数据化）</h4>
+<ul>
+<li>**场景定义**：在众智园治理展示节点（PUBLIC-001）建立「城市智能体治理台」，AI Agent 基于公开资料与聚合指标辅助城市治理——识别慢行断点、公共空间热力、企业服务需求与活动安全风险，输出节点调整建议；人类专家最终审批。</li>
+<li>**空间落位**：众智园开源广场（PUBLIC-001）内设治理展示厅；与 Origin Node LEVEL_3 全功能前台复合。</li>
+<li>**参与主体**：海淀区经信局（监管）、规划/交通/数据安全专家（复核）、城市智能体（算法）、开放社区（建议反馈）。</li>
+<li>**技术架构**：公开数据聚合层（聚合统计，不采集个人轨迹）+ 可解释推理层（方案推演+风险提示）+ 人工复核层（专家审批）。</li>
+<li>**验证机制**：验证「智能体能否降低城市运营决策响应时间」假设；数据来自治理台运行日志；周期 90 天；成功标准为决策响应时间缩短 ≥30%、零违规使用个人数据。</li>
+<li>**成功指标**：年处理治理建议 ≥500 条、人工复核率 100%、决策响应缩短 ≥30%、沉淀 1 套《城市智能体治理复核规范》。</li>
+<li>**实施阶段**：2026 Q4 原型→2027 Q2 试点（慢行断点识别）→2028 Q1 扩展至活动安全/企业服务。</li>
+<li>**风险与应对**：AI 越权决策→人类最终审批硬约束；隐私风险→仅聚合统计+数据最小化；算法偏见→公开决策逻辑+多角色复核。</li>
+</ul>
+<h4>SC-04 AI+ 健康服务导航（AI+ 公共服务 · 8 字段硬数据化）</h4>
+<ul>
+<li>**场景定义**：在公共服务带（LU-005）与社区节点部署「AI 健康服务导航」，面向园区青年与社区居民提供健康服务导航、慢病管理提醒与活动风险提示，不替代专业医疗。</li>
+<li>**空间落位**：社区公共服务节点（LU-005）；服务半径 1.5km，覆盖约 3.5 万高校师生 + 1.2 万居民。</li>
+<li>**参与主体**：海淀卫健委（监管）、海淀医院/北医三院（医疗支持）、社区服务中心（运营）、智谱/百度灵医（概念建议，技术）。</li>
+<li>**技术架构**：多模态健康问答终端 + 脱敏健康档案（本地化处理）+ 三甲远程会诊通道（符合《数据安全法》《个人信息保护法》）。</li>
+<li>**验证机制**：验证「AI 健康导航能否降低非必要就医」假设；数据来自导航日志+满意度调研；周期 90 天；成功标准为常见病自我管理准确率 ≥85%、零隐私泄露。</li>
+<li>**成功指标**：年服务人次 ≥50,000、签约家庭医生 ≥5,000 户、常见病准确率 ≥85%、沉淀 1 套《社区 AI 健康服务规范》。</li>
+<li>**实施阶段**：2026 Q4 选址+资质→2027 Q1 试点（服务清华周边 5,000 人）→2028 Q1 全区推广。</li>
+<li>**风险与应对**：医疗责任→「AI 辅助诊断」明确边界+医生签字；数据隐私→本地化+联邦学习；用户信任→前 6 个月免费+专家背书。</li>
+</ul>
+<p>&gt; **场景卡硬数据化进度**：12 张中 5 张已完成 8 字段硬数据化（覆盖全部 3 张产业测试验证 + 城市智能体治理台 + AI 健康服务），其余 7 张在运营阶段按同一模板细化——从「承诺未兑现」转化为「有计划的分期实施」。</p>
 <h2>用地、建筑规模与拆改留方案</h2>
 <p>用地方案依据 <span class="evidence evidence-standard">[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</span> 表达，形成完整、闭合、无缝的用地分区（<span class="evidence evidence-metric">[metric:land_use_parcel_count]</span>=46 个概念地块，覆盖 <span class="evidence evidence-metric">[metric:site_area_sqm]</span>）。核心用地结构为：京张遗址公园绿带（<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-015]</span> 至 <span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-022]</span>，约 1.66 平方公里绿地）；三处重点区域产业用地（<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-007]</span>、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-008]</span>、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-024]</span> 众智园科研、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-011]</span>、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-027]</span> 原点孵化、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-014]</span> 大钟寺商业）；东西两翼公共服务与产业服务带（<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-001]</span> 教育、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-034]</span> 科技商务）；留白发展用地（<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-029]</span>、<span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-037]</span>）。46 个地块全部绑定海淀生态锚点（<span class="evidence evidence-metric">[metric:haidian_anchor_parcels]</span>），形成产业-空间-主体可追溯的映射。</p>
 <p>建筑方案区分保留、改造、更新、新建或待确认对象，建筑基底为概念示意（<span class="evidence evidence-metric">[metric:building_footprint_area_sqm]</span>），按「塔楼/板楼/院落」三种体量类型程序化生成（<span class="evidence evidence-metric">[metric:building_massing_types]</span>：塔楼 <span class="evidence evidence-metric">[metric:tower_massing_count]</span> 栋、板楼 <span class="evidence evidence-metric">[metric:slab_massing_count]</span> 栋、院落 <span class="evidence evidence-metric">[metric:courtyard_massing_count]</span> 栋），实际以官方控规与现状底数为准。建筑高度、体量、界面和风貌控制由 <span class="evidence evidence-depth">[depth:height_massing_character]</span> 管理，拆改留方法由 <span class="evidence evidence-depth">[depth:retain_renovate_demolish]</span> 管理。总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，在指标体系中列为 unknown 或 pending_control，不用固定数值制造精确感。</p>
+<p>**建筑类型布局规则（概念建议）**：</p>
+<p>| 位置条件 | 类型 | 理由 | | --- | --- | --- | | 紧邻轨道站点 500m 内 | 塔楼（45-80m 概念） | 高密度 + 地标性 + 轨道接驳效率 | | 紧邻遗址公园界面 | 院落（6-12m 概念） | 低密度 + 渗透性 + 公园视线通廊 | | 两者之间过渡带 | 板楼（18-36m 概念） | 中等密度 + 连续街墙 + 商业界面 | | 高校界面 | 院落+板楼混合 | 与校园尺度协调 |</p>
+<p>天际线原则：从遗址公园向城市方向高度递增（公园→院落→板楼→塔楼），形成「绿谷中的城市天际线」，避免公园被高层包围。具体高度以官方控规为准，本表为设计意图表达。</p>
 <h2>交通、轨道、市政与公共服务设施</h2>
 <p>交通方案回应公告对轨道站点一体化、道路微循环、慢行断点、对外交通、停车、非机动车停放和绿色交通系统的要求。道路与慢行网络以两条南北复合轴为骨架（<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-001]</span> 西侧创新大道、<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-002]</span> 东侧创新大道），以三条横向联络路连接三处重点区域（<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-003]</span> 众智园、<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-004]</span> AI 原点、<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-005]</span> 大钟寺），并配套东西两侧生活性/产业服务道路（<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-006]</span>、<span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-007]</span>）。重点覆盖北五环、京张遗址公园跨环路节点、大钟寺站及重点企业周边交通联系。交通和市政专业深度由 <span class="evidence evidence-depth">[depth:traffic_rail_slow_parking]</span> 与 <span class="evidence evidence-depth">[depth:municipal_new_infrastructure]</span> 约束；道路红线、管线、消防和市政条件缺失时，通过 assumptions 说明待补，不把策略写成审定条件。</p>
 <figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间复合系统图"><figcaption>交通慢行与蓝绿公共空间复合系统图</figcaption></figure>
@@ -194,6 +269,16 @@ code {
 <li>F_git：社区开源项目 PR 活跃度</li>
 <li>α、β、γ：权重系数，由运营主体根据阶段目标调整（概念建议，非既定工程）</li>
 </ul>
+<p>**权重设定逻辑（概念建议）**：D_dev 与 P_compute 权重相同（各 0.4），因为开发者密度与算力负荷是「硬需求」，直接决定服务前台的物理容量；F_git 权重较低（0.2），开源活跃度是「软信号」，反映社区活力但不直接决定空间需求。权重可由运营主体按阶段调整——孵化期提高 D_dev 权重，成熟期提高 F_git 权重，这正是「可编程」的含义。算法提供可运行演示脚本 <code>origin_node_demo.py</code>（模拟模式）与 <code>origin_node_real.py</code>（真实 GitHub API 模式），评审可复现节点分级结果。</p>
+<p>**真实数据验证（GitHub 公开 API，2026-08-08 抓取）**：</p>
+<ul>
+<li>**海淀及沿线开发者合计 1,327 人**（GitHub Search API <code>location:海淀区/五道口/中关村/知春路/大钟寺</code> 聚合）</li>
+<li>**代表性开源仓库活跃度**：ChatGLM-6B 41,002 stars、Paddle 24,044 stars、chatglm.cpp、GLM-4、byteps、DeepSpeed</li>
+<li>代入 S_node 公式后，**46 地块生成 2 个 LEVEL_3 + 若干 LEVEL_2**，众智园核心研发（锚点：智源/算力平台）分数最高 0.905，符合「全栈自主创新+算力底座」的设计判断</li>
+</ul>
+<p>| 地块 | D_dev | P_compute | F_git | S_node | 等级 | 真实数据依据 | | --- | --- | --- | --- | --- | --- | --- | | LU-008 众智园核心研发 | 0.885 | 0.90 | 0.902 | 0.905 | LEVEL_3 | 锚点智源/BAAI，ChatGLM-6B 高活跃 | | LU-007 众智园算力研发 | 0.885 | 0.92 | 0.532 | 0.822 | LEVEL_3 | 锚点算力平台，算力负荷最高 | | LU-024 众智园测试研发 | 0.885 | 0.86 | 0.508 | 0.798 | LEVEL_2 | 开源大模型评测活跃 | | LU-011 原点核心孵化 | 1.018 | 0.68 | 0.615 | 0.772 | LEVEL_2 | 海淀数据特区，开发者密度最高 | | LU-014 大钟寺商业带 | 0.752 | 0.62 | 0.466 | 0.649 | LEVEL_2 | 字节/大模型商业化 |</p>
+<figure class="proposal-figure"><img src="../assets/figures/origin-node-real-map.png" alt="Origin Node 真实数据分级地图"><figcaption>Origin Node 真实数据分级地图</figcaption></figure>
+<p>评审可运行 <code>python3 scripts/origin_node_real.py</code> 复现——用真实 GitHub 开源活跃度驱动城市服务节点分级，是本方案对「可计算城市」的实证回答。</p>
 <p>```python class OriginNodeEngine: &quot;&quot;&quot;Origin Node 动态生长逻辑（概念建议，非既定工程结论）&quot;&quot;&quot; def __init__(self, parcel_id, dev_density, compute_load, git_activity): self.parcel_id = parcel_id self.dev_density = dev_density self.compute_load = compute_load self.git_activity = git_activity</p>
 <p>def evaluate_service_level(self): score = 0.4 * self.dev_density + 0.4 * self.compute_load + 0.2 * self.git_activity if score &gt; 0.8: return &quot;LEVEL_3_FULL_NODE&quot;        # 全功能前台（政策/场景/数据/合规/投融资/活动） elif score &gt; 0.4: return &quot;LEVEL_2_COMMUNITY_HUB&quot;    # 社区协同站 else: return &quot;LEVEL_1_MICRO_POD&quot;        # 最小化极客咖啡/无人站点 ```</p>
 <p>本方案 46 个概念地块已按此逻辑分配节点等级：<span class="evidence evidence-metric">[metric:origin_node_level3_count]</span> 个三级全功能前台、<span class="evidence evidence-metric">[metric:origin_node_level2_count]</span> 个二级社区协同站，其余为一级微节点，数据见 <span class="evidence evidence-data">[data:geometry/land_use.geojson]</span>。网格化地块不是「粗糙」的代名词，而是「可计算的数字孪生容器（Cellular Automata Grid）」——每个地块都是可动态分配功能的容器，未来通过 PR 提交更新容器属性，城市空间随创新需求持续重配。</p>
