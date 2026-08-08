@@ -66,6 +66,24 @@ Six global references contribute mechanisms, not copied form or performance clai
 
 Eight shared stacks replace an invented company list: land, space, industry, finance navigation, talent, compute, data and scenarios. Each stack has an interface, access conditions and a responsible operator. Residents should see not just an AI output but who owns the duty, how the system stops and where an appeal goes.
 
+The link between industry and space is expressed as a recomputable functional share rather than a claim. Shares below are recomputed feature by feature from [data:geometry/land_use.geojson#LU-001] in EPSG:4548; the nine zones jointly cover the provisional site and total 100.00%. This is the area share of an urban-design structure — not a statutory land-use allocation, and not a share of output, employment or investment.
+
+| Land-use zone | Code | Area share | Industry and function carried | Main area |
+| --- | --- | --- | --- | --- |
+| Handover Line parkland | 1401 | 19.84% | Climate ground, public exchange, open test space | Whole belt |
+| Talent living and mixed community | 0701 | 12.79% | Housing and jobs-housing balance | Central segment |
+| Community service and facilities | 0702 | 11.67% | Public service, care, visible maintenance stops | Whole belt |
+| Education and open-source learning | 0804 | 11.26% | Teaching, research relay, open-source community | Origin Community |
+| AI-native commerce and business | 05 | 9.99% | AI-native business and international exchange | Dazhongsi |
+| Culture and public service | 0803 | 9.10% | Cultural narrative, oral history, public display | Dazhongsi, heritage park |
+| Model validation and industry collaboration | 0802 | 8.92% | Model, robot and edge-compute testing | Zhongzhiyuan, centre |
+| Technology services and translation | 05 | 8.71% | Legal, IP, standards, finance navigation | Zhongguancun services wing |
+| Full-stack R&D and trial | 0802 | 7.72% | Foundation models and full-stack research | Zhongzhiyuan |
+
+Innovation resources are coordinated through interfaces rather than name lists: universities and institutes supply original research and talent, and their interface is the campus research relay and the licensing catalogue; incubators supply low-cost trials and compliance access, and their interface is the shared test courts and service stacks; unicorns and listed companies supply engineering capacity and real scenarios, and their interface is the validation sandbox and the civic problem release. No company is named, no occupant is presumed, and no party is represented as having agreed to participate. The content of Haidian's "1+X+1" industrial system is defined by the competent authorities; this proposal only supplies spatial interfaces and validation tools on its "AI+" side.
+
+![Mark, colour and brand application system](assets/figures/logo-identity.en.png)
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area runs north to the Fifth Ring Road, east toward Xueyuan Road and Xitucheng Road, south to Xizhimenwai Street, and west toward Dazhongsi East Road and Heqing Road. The Jing-Zhang Rail Heritage Park is the only continuous public carrier crossing it, and this proposal treats it as the skeleton of the vitality belt rather than as background greenery: the Handover Line coincides with the park's north-south and east-west active-mobility system, eight stitch links tie in campuses, parks, communities and transit directions, and three yards raise the corridor from a landscape route to a public mechanism that carries build, verify and serve duties. The park's north end, south end and the section crossing the Fifth Ring Road are the three break points that need dedicated treatment; only connection intent and interface principles are given here, never a bridge, tunnel or engineering conclusion.
@@ -125,11 +143,48 @@ Twelve nodes [metric:scenario_node_count] are encoded from [data:geometry/public
 | SCN-11 | Jing-Zhang oral-history booth; Dazhongsi | Residents, visitors, researchers; cleared archive index | Human guide and paper catalogue; show index only when provenance is uncertain |
 | SCN-12 | Global Handover Week route; whole belt | Developers, public, international visitors; booking and anonymous counts | Fixed signage, volunteers; suspend interaction on crowding or safety risk |
 
+The table above answers what is done, on what data and who takes over. The table below answers which space it occupies, who operates it and what happens to that space once the scenario stops. A scenario is not a service layered onto the city; it is a spatial arrangement with ownership, maintenance cost and an exit plan. After exit the space must return to public use rather than leave an unmaintained structure behind.
+
+| Scenario | Space and component | Operator (proposed) | Opening rhythm | Cost and maintenance basis | Space after exit |
+| --- | --- | --- | --- | --- | --- |
+| SCN-01 Model red-team desk | R&D ground floor + handover table | Model team + third-party review | By test batch | Venue by the estate; review in project cost | Returns to shared review room |
+| SCN-02 Robot right-of-way sandbox | Closed test court + sandbox edge | Robot team + safety officer | Timed closure | Safety staff and insurance are fixed costs | Edge removed, courtyard restored |
+| SCN-03 Edge energy test station | Equipment deck + metering cabinet | Operator | Continuous, readings posted | Separately metered, energy self-borne | Cabinet removed, deck reverts |
+| SCN-04 Data-consent rehearsal | Public handover ground + mobile stand | Data team + public service body | During events | One-off installation, no long occupation | Stand removed, movement restored |
+| SCN-05 Accessible-route copilot | Continuous walking surface + tactile signage | Municipal maintenance | All day | Folded into accessibility maintenance | Tactile signage stays, smart layer off |
+| SCN-06 Public translation desk | Community facility ground floor | Public service counter | Weekdays | Shares the staffed counter | Counter continues, screen removed |
+| SCN-07 Campus research relay | Campus edge + open release hall | University transfer office | Term rhythm | Curation and licence review dominate | Returns to release and exhibition space |
+| SCN-08 Visible maintenance stop | Small service point on the line | Facility maintainer | All day | Folded into the existing ticket system | Paper reporting point retained |
+| SCN-09 Community care roster | Community collaboration room | Community and care bodies | Weekdays | Staff time, no extra equipment | Telephone roster continues |
+| SCN-10 Night-shift safety light | Lighting poles on the active route | Municipal lighting | Night | Folded into lighting operations | Returns to constant lighting |
+| SCN-11 Oral-history booth | Heritage park node + logbook column | Cultural body + volunteers | Weekends, festivals | Archive clearance is the upfront cost | Booth kept as a paper catalogue point |
+| SCN-12 Global Handover Week route | Belt-wide public ground | Event organiser + volunteers | Once a year | Temporary, fully removed afterwards | All movement restored |
+
 Four ledgers govern operation: a data ledger says what is and is not used; a duty ledger names the owner and on-site person; a takeover ledger sets thresholds and response time; an exit ledger records shutdown, deletion and service continuity. A system goes offline when it loses connection, breaches scope, crosses a risk threshold or is challenged by a person. The basic service continues.
+
+### Self-selected area: five "AI+" vertical scenarios
+
+Inside the overall design area but outside the three key areas, two segments are selected as vertical application trials: the education and software-dense stretch toward Xueyuan Road in the centre, and the daily-service and health-access stretch toward Xizhimenwai Street in the south. All five keep the same handover discipline — minimum data, duty owner, human takeover, no-AI equivalent, exit condition. A vertical sector does not relax it.
+
+| Field | Scenario | Segment | Minimum data | Human takeover and no-AI equivalent |
+| --- | --- | --- | --- | --- |
+| AI+software | Open toolchain station: local builds, dependency audit, bug reproduction | Centre, Xueyuan Road | Code and build logs; no developer profiling | Human code review; offline mirror and paper list |
+| AI+health | Community health explainer and referral desk: explains process, never diagnoses | South, Xizhimenwai | On-site question text; no health record retained | GP and triage counter; paper flow chart |
+| AI+education | Campus study helper: explains method, never writes or grades | Centre, Xueyuan Road | Question text; no grades or identity collected | Teacher and TA hours; paper worked examples |
+| AI+legal | Public legal intake desk: structures the request, shows the procedure | South, commercial blocks | User-stated facts only; nothing retained | Duty lawyer and legal-aid counter; paper guide |
+| AI+daily service | Civic form and booking desk: form filling and process explanation | Community facilities, belt-wide | On-site form fields; no cross-matter linking | Staffed counter and phone; paper forms and assisted filling |
+
+The shared red line: none of these may produce a diagnosis, judgment, score or eligibility decision that directly affects a person's rights; any rights-bearing judgement returns to a qualified human; and using the smart service must never be a precondition for receiving the basic service. The segments are a self-selected study scope — actual siting, institutional partners and professional qualifications must be confirmed by the competent authorities and institutions, and no partnership is claimed here.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land-use codes follow the public subset: 1401 parkland, 0802 research, 0804 education, 0803 culture, 0702 community service, 0701 residential and 05 commercial service. Their union covers the site without intentional overlap or gap. The continuous green class is both a land-use zone and the climate-comfort foundation of the line. This is a recalculable urban-design structure, not evidence of ownership or permission.
+
+The official call asks for a priority-renewal-area map, a renewal spatial structure map, a land-use map and a renewal project list. Land use and the project list appear in the sections before and after this one; the renewal structure and priority areas are set out here. The renewal structure is "one spine, eight stitches, three yards": the Handover Line organises renewal, the eight east-west links carry it from the spine into the blocks, and the three yards are where renewal intensity and public value are highest. Priority areas follow in three tiers: tier 1 is the three yards and their walkable surroundings; tier 2 is the stitch-spine junctions and the low-efficiency space along both edges of the heritage park; tier 3 is the remaining frontage. Twenty typology cells sit ten to each side in [data:geometry/buildings.geojson#BLDG-001] — fourteen handled as retain-first adaptive reuse, six marked as awaiting building-by-building survey — with validation workshops, shared service stacks, open R&D courts and community rooms at five each, occupying roughly 26.6%, 26.6%, 23.4% and 23.4% of the cell footprint.
+
+![Renewal spatial structure and priority renewal areas](assets/figures/renewal-structure.en.png)
+
+The low-efficiency space along the heritage park is where renewal pays off fastest and also where it goes wrong most easily: it pays off because much of it is walls, storage, temporary parking and backs turned to the park, so simply making the ground floor enterable raises public value; it goes wrong because ownership is complex and projects under construction or already approved are often involved. The delivery path is therefore fixed as "operate first, reversible second, permanent last", with the coordination model graded by tier: tier 1 suits one lead body with owners joining by agreement; tier 2 suits packaged renewal units where the public edge is unified while each owner delivers internally; tier 3 is limited to wayfinding, shade and edge tidying without touching ownership. Campus, park and neighbourhood integration is proposed first at the stitch-spine junctions, because that is where public access and shared benefit coincide. All of this is method and priority advice; actual bodies, boundaries and delivery arrangements must be set by the authorities and the owners.
 
 Buildings follow four decisions: retain, adapt, reversible insertion and investigate. “Investigate” is not demolition; it holds a decision until survey, structural safety, ownership, fire, heritage and stakeholder work is complete. The approach satisfies [depth:retain_renovate_demolish]. Character guidance under [depth:height_massing_character] prioritises visible and accessible ground floors, courtyards and passages that break down large blocks, maintainable roofs, quiet residential edges and low-impact reversible work near heritage. Numerical height, setbacks and scale await official controls.
 
@@ -139,13 +194,41 @@ The active-mobility spine measures approximately 9,499.778 metres [metric:handov
 
 Municipal design follows “ordinary service first, smart layer removable.” Lighting, drainage, power, communications, fire safety, accessibility and a human desk precede sensors and models. Edge compute is separately metered; digital signs retain static text and tactile versions. Distributed energy and edge compute join conventional power, heat and communication systems under one rule — metered on site, published on site, stoppable on site: roofs and structures reserve space for distributed generation and storage, waste heat is used nearby first, and energy and temperature data are published through SCN-03. Whether and at what scale any of this connects must be determined by the energy and utility authorities against real capacity. The empty [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP] honestly records that public utility and statutory constraint geometry is unavailable. No capacity, investment or connection date is promised. This fulfils [depth:municipal_new_infrastructure].
 
+Road micro-circulation improves by "reconnect the breaks before widening anything": priority goes to reopening the branch roads and plot access routes between estates and neighbourhoods that walls, parking and freight now block, so short trips need not detour onto arterials. Branch and plot-access roads are the levels a proposal may discuss; arterials and expressways carry stated needs only, never a proposed change. The eight east-west stitch links exist precisely to make those breaks visible, for transport professionals to verify against official network, section and flow data. No redline, channelisation or signal scheme is proposed here.
+
 Supporting facilities along the line follow "continuous walking first, static traffic off the public surface": car and bicycle parking sit near entrances without cutting the walking surface; sports and informal exchange facilities reuse under-bridge, residual and low-efficiency space as bookable public time slots; display and technology-testing functions concentrate along the public validation street instead of spreading into residential edges. Facility scale, provision standards and parking ratios must follow official regulatory plans and transport assessment; only layout principles and priorities are proposed here.
+
+Four facility families form a checkable system-and-standard proposal, sharing one floor: reachable, stoppable, and backed by a human.
+
+| Facility family | System components | Proposed standard (checkable basis) | Layout principle |
+| --- | --- | --- | --- |
+| AI industry service | Shared test courts, validation workshops, edge metering, sandbox edges | Each posts scope, duty person, shutdown method and exit record | Concentrated in the Build Yard, physically separated from public viewing |
+| Innovation platform service | Legal and IP, standards and safety, finance navigation, international exchange | Beyond online booking, a staffed counter or phone line must remain | Along the services wing and yard ground floors; no named supplier |
+| Talent living service | Community rooms, shared living rooms, care roster, translation desk | Walkable; never conditioned on face or device ID | Embedded in community-service land, night-graded to protect residents |
+| New infrastructure | Edge compute, sensing, distributed energy and storage, digital signage | Separately metered and posted on site; basic function continues without the smart layer | Removable placement, roofs and structures first, withdrawal path reserved |
+
+These are system and basis proposals; actual provision ratios, capacity and connection scale must be determined by the municipal, transport and industry authorities against official data.
 
 ![Movement, blue-green ground and takeover points](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
 The concept contains 2,264,695.802 square metres of green space [metric:green_space_area_sqm], a 0.198434 ratio [metric:green_ratio], and 1,039,257.211 square metres of public handover ground [metric:public_space_area_sqm], a 0.091060 ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
+
+Public space is not custom-built once; it runs on a component library that can be repeated, removed and maintained. Ten components share the coal-black / signal-red / electric-cyan / bone-white vocabulary and one signage rule, so any of them can be added or withdrawn without altering its surroundings. No component carries camera or face-recognition capability; the smart layer is always a removable accessory.
+
+| Component | Function | Material and scale principle | Removability | Main location |
+| --- | --- | --- | --- | --- |
+| Public Handover Table | Long table for code review, civic questions, research release | Weathering timber and steel, segmented | Fully demountable | Origin Community yard |
+| Manual Override Pavilion | Physical stop button, human help, paper map | Light frame, self-lit at night | Base fixed, body replaceable | Every handover node |
+| Logbook column | Posts operating status in fixed text and tactile form | Bone-white panel, replaceable inserts | Panels swap out | Three yards |
+| Shift Clock | Shows model version, scope, next human review | Mechanical flip preferred over screen | Readable without power | Zhongzhiyuan north end |
+| Tactile wayfinding post | Station, shift, version, duty person, update time | Raised type beside braille | Post relocatable | Spine and stitch junctions |
+| Movable seating and shade unit | Rest, waiting, temporary activity | Stackable, one-person movable | Fully mobile | Public handover ground |
+| Edge metering cabinet | Posts independent meter and temperature on site | Ventilated shell, readings exposed | Whole cabinet removable | Test stations and decks |
+| Sandbox edge | Transparent but impassable safety interface | Visual grid, not a solid wall | Demountable in sections | Robot sandbox |
+| Rain garden module | Gravity drainage, maintainable planting, shade | Standard modular units | Modules recoverable | Blue-green ground, waterside |
+| Temporary use deck | Carries vacant-hours and short-term use rights | Raised timber deck, not anchored | Removable without damage | Renewal cell ground floors |
 
 Four civic landmarks are useful institutions rather than isolated sculpture. The Shift Clock displays model version, scope and next human review. The Public Handover Table hosts code review, civic questions and research release. The Century Logbook places railway maintenance, developer contribution and service review in one record. Manual Override Pavilions provide a physical stop, human help, paper map and accessible service. Honour goes to maintainers, vulnerability reporters, public-code contributors and people who improve accessibility—not to capital or attention.
 
@@ -156,6 +239,10 @@ Urban character uses a "railway maintenance ledger" vocabulary: coal-black struc
 Twelve minimum projects begin with reversible public value: basic shade and wayfinding, red-team desk, robot sandbox, energy test, public handover table, research relay, accessible copilot, visible maintenance stop, civic handover hall, Century Logbook, oral-history booth and Handover Week route. Every project needs an owner, licence, maintenance budget, exit plan, deletion method and continuity arrangement. The project-list depth is recorded by [depth:renewal_project_list].
 
 Three conditional phases [metric:phase_count] are represented in [data:geometry/phasing.geojson#PHASE-001]. Phase 1 returns to a trustworthy baseline through official data, inventory and low-risk human-led pilots. Phase 2 opens the central handover yard only after ownership and community review. Phase 3 considers belt-wide operation only after transport, utilities, heritage, privacy and safety tests. Dates do not trigger delivery automatically; evidence does. This is the core of [depth:phasing_implementation].
+
+Brand and IP is not one logo but a system that extends, licenses and withdraws. The base layer is name and mark: 京张交接线 in Chinese, JING-ZHANG HANDOVER LINE in English, the mark built from two parallel rails, a handover baton and a signal bracket, with coal black for auditable duty, signal red for the threshold where a person must decide, electric cyan for the open interface and bone white for the readable public record. The application layer binds wayfinding, the component library and publications to one signage rule: station, shift, version, duty person and update time must appear together, and a mark missing any of the five counts as incomplete. The event layer carries four seasonal IPs — Open Shift, Maintainers' Night, Global Handover Week and Annual Review Shift — each with its own visual motif but one shared mark system. The licence layer states that the mark may be used for non-commercial public, academic and community purposes, that commercial use requires a separate grant, that the cultural signage system and the belt-wide mark system stay distinct, and that no use may imply government endorsement or a delivery commitment.
+
+Delivery bodies follow "whoever benefits, maintains and can stop it", not project size. Public edges and wayfinding are maintained by the municipal and park authorities; validation scenarios are carried by the initiating team, which bears safety and insurance and accepts third-party review; community-service scenarios are run by community and public-service bodies that keep a staffed counter; cultural and event scenarios are carried by cultural institutions with volunteers. Every item must name a public duty holder and a maximum takeover response time before it goes live. This is proposed division of labour; the actual bodies must be set by the competent authorities.
 
 Four annual shifts support long-term operation: Open Shift in spring, Maintainers’ Night in summer, Global Handover Week in autumn and Annual Review Shift in winter. The attraction path is visit, problem match, controlled trial, public evaluation and local partnership; no subsidy, procurement, investment or government commitment is claimed.
 
