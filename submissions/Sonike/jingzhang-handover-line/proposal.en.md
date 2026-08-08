@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.1"
+iteration: "v1.6.3"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -294,6 +294,12 @@ These are system and basis proposals; actual provision ratios, capacity and conn
 ![Movement, blue-green ground and takeover points](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
+
+These interfaces have to hold at once: a staffed counter, a reachable physical stop control, machine service confined to its own lane, and an accessible path that is never interrupted. The rendering below places them in a single section.
+
+![Concept rendering of the handover interface: duty staff handing over in person, a physical stop control beside the footway, a delivery robot confined to its own lane, and a continuous accessible path alongside a staffed counter](assets/figures/handover-scene.en.jpg)
+
+The image above is an **AI-generated concept rendering** [source:IMAGEGEN-CONCEPT-SCENE]. It is not a photograph, a survey or an approved scheme; the people in it are fictional and it identifies no real place, organisation or brand. It illustrates one thing only — what a public interface roughly looks like when human takeover, a physical stop control, a robot-only lane and a continuous accessible path all have to coexist. The model, the full prompt, the intended use and the limits are recorded in report/copyright_statement.md and sources.json. Every recomputable spatial conclusion still rests on the nine geometry layers and metrics.json, never on a drawing.
 
 The concept contains about 226.5 hectares of green space [metric:green_space_area_sqm], an approximately 19.8% ratio [metric:green_ratio], and about 103.9 hectares of public handover ground [metric:public_space_area_sqm], an approximately 9.1% ratio [metric:public_space_ratio]. Geometry is in [data:geometry/green_space.geojson#GREEN-01] and [data:geometry/public_space.geojson#PUBLIC-01]. These are design quantities on a provisional boundary, not current net gains or statutory ratios. They test whether shade, stormwater, rest, access and public trial interfaces have enough continuous ground. The system responds to [depth:blue_green_public_space].
 

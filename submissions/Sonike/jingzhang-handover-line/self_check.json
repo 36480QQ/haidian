@@ -72,6 +72,13 @@
       "message": "四个公共地标可定位且带启用与回滚状态；荣誉记录具有提名、证据、双人复核、异议、纠错、撤回、申诉及实名/化名/匿名选择。"
     },
     {
+      "check_id": "GENERATIVE_IMAGE_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/handover-scene.jpg; report/copyright_statement.md; sources.json",
+      "message": "全包仅一张生成式图像，已登记为 IMAGEGEN-CONCEPT-SCENE：工具、模型、完整提示词、后处理、用途与不可用边界均已披露；图纸与正文就地标注为概念表现，非现状照片、非测绘成果、非批准方案；人物为虚构形象，画面不含真实地点、单位或商标。"
+    },
+    {
       "check_id": "SOURCE_PROVENANCE",
       "result": "pass",
       "severity": "major",

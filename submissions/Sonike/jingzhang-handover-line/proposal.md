@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把铁路交接班转化为AI城市治理协议：一条连续交接线串联研发、验证、开源与公共服务，十二个可逆场景都设置人工接管、无AI等价服务与退出条件。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6.1"
+iteration: "v1.6.3"
 ---
 
 # 京张交接线 / JING-ZHANG HANDOVER LINE
@@ -310,6 +310,12 @@ iteration: "v1.6.1"
 ![交通慢行、蓝绿基底与公共交接节点复合图](assets/figures/mobility-bluegreen.png)
 
 ## 蓝绿空间、公共空间与城市风貌
+
+这一组界面要求同时成立：人工窗口、可触及的物理停用入口、被限制在专用道内的机器服务、以及一条不被打断的无障碍路径。下图把它们画在同一个断面里。
+
+![交接线公共界面概念表现：值班人员当面交接、步道旁的物理停用柱、限定在专用道内的配送机器人、连续无障碍路径与人工窗口并存](assets/figures/handover-scene.jpg)
+
+上图是**AI 生成的概念表现图** [source:IMAGEGEN-CONCEPT-SCENE]，不是现状照片、测绘成果或批准方案，画面中的人物为虚构形象，不指认任何真实地点、单位或品牌；它只用来说明一件事——当人工接管、物理停用入口、机器人专用道与无障碍路径必须同时存在时，公共界面大致是什么样子。生成模型、完整提示词、用途与限制记录在 report/copyright_statement.md 与 sources.json。所有可复算的空间结论仍以九类几何与 metrics.json 为准，不以任何图面为准。
 
 蓝绿系统以2,264,695.802平方米概念绿地 [metric:green_space_area_sqm] 形成0.198434的结构性绿地比例 [metric:green_ratio]，公共交接面1,039,257.211平方米 [metric:public_space_area_sqm]，占比0.091060 [metric:public_space_ratio]。两者分别见 [data:geometry/green_space.geojson#GREEN-01] 与 [data:geometry/public_space.geojson#PUBLIC-01]。这些是基于临时范围的设计面积，并非现状绿地率或审定控规指标；它们用于验证连续树荫、雨洪、休息、慢行和公共测试是否有足够空间承载。空间策略响应 [depth:blue_green_public_space]。
 
