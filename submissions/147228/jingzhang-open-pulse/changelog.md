@@ -4,6 +4,12 @@
 
 reviewable deliverables and bilingual review surface.
 
+## v1.8 - 2026-08-08
+
+- Put the taskbook's three positions, five functions and three-area/two-wing mapping directly into `proposal.md`.
+- Added reviewer-visible tables for North Latitude Community/regional interfaces, node-level plans, 14 scenario gates, public-interest audit and transferable mechanism comparison.
+- Added explicit `language: zh` metadata for the primary proposal, report and visual index to remove deterministic intake warnings.
+
 - Added complete English review copy `proposal.en.md` and offline `report/proposal.en.html`.
 - Added taskbook crosswalk for agent.1–agent.6 with acceptance tests.
 - Added regional eight-mechanism ecosystem loop and conceptual partner-boundary note.
