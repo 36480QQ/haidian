@@ -22,13 +22,18 @@
     {"fixture_id":"S02-F04","state":"synthetic_review_complete_without_field_result","expected_decision":"delete_fixture_keep_public_decision_record","ordinary_equivalent":"ordinary_route_remains_open"}
   ],
   "acceptance_checks": [
-    {"id":"AC-01","check":"linked S02 record and contract identities align"},
-    {"id":"AC-02","check":"all four branches preserve an ordinary non-AI service"},
-    {"id":"AC-03","check":"provisional route and missing baseline remain hold states"},
-    {"id":"AC-04","check":"conflict or failed stop control triggers immediate withdrawal"},
-    {"id":"AC-05","check":"synthetic rehearsal cannot become field performance or authorization"},
-    {"id":"AC-06","check":"five rollback steps restore public use and delete only temporary fixture state"}
+    {"id":"AC-01","check":"linked S02 record and contract identities align","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"]},
+    {"id":"AC-02","check":"all four branches preserve an ordinary non-AI service","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"]},
+    {"id":"AC-03","check":"provisional route and missing baseline remain hold states","fixture_ids":["S02-F01","S02-F04"],"scenario_ids":["S02"],"boundary_fields":["result_status","local_baseline","release_decision"]},
+    {"id":"AC-04","check":"conflict or failed stop control triggers immediate withdrawal","fixture_ids":["S02-F02","S02-F03"],"scenario_ids":["S02"],"boundary_fields":["release_decision"]},
+    {"id":"AC-05","check":"synthetic rehearsal cannot become field performance or authorization","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"],"boundary_fields":["operational_status","result_status","performance_results"]},
+    {"id":"AC-06","check":"five rollback steps restore public use and delete only temporary fixture state","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"],"boundary_fields":["release_decision"]}
   ],
+  "trace_requirements": {
+    "fixture_ids": ["S02-F01","S02-F02","S02-F03","S02-F04"],
+    "scenario_ids": ["S02"],
+    "boundary_fields": ["operational_status","result_status","performance_results","local_baseline","release_decision"]
+  },
   "rollback_steps": [
     "stop_device_and_clear_the_accessible_route",
     "switch_to_paper_staffed_and_human_delivery",

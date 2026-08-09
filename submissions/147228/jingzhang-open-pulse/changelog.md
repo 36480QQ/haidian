@@ -4,6 +4,7 @@
 
 - Added a dependency-free offline tabletop for the existing synthetic S02 bounded test-window record.
 - Added four stop/restore branches, six acceptance checks and five reversible rollback steps, with a committed aggregate evidence readback.
+- Added structured acceptance tracing: every check now resolves its fixture, scenario, and/or boundary references, with 4/4 fixture, 1/1 scenario, 5/5 boundary-field coverage and unique check IDs verified by the runner.
 - Kept `result_status=not_run`, `performance_results=null` and `operational_status=not_authorized_not_run`; the rehearsal does not claim robot performance, accessibility, public acceptance, safety or permission.
 
 ## v3.5 - 2026-08-09

@@ -16,6 +16,7 @@
     {"id":"AC-06","result":"pass"}
   ],
   "replayed_counts": {"fixtures":"4/4","acceptance_checks":"6/6","rollback_steps":"5/5"},
+  "trace_coverage": {"acceptance_checks":"6/6","fixtures":"4/4","scenarios":"1/1","boundary_fields":"5/5"},
   "result_status": "not_run",
   "performance_results": null,
   "boundary": "PASS means the offline fixture reproduces stop, withdrawal and restoration logic only. It does not prove robot performance, route accessibility, public acceptance, service performance, safety or authorization."
