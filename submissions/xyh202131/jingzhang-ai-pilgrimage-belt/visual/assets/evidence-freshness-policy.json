@@ -40,7 +40,7 @@
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
         "PROCESSED-FACT-PACK",
-        "OFFICIAL-ANNOUNCEMENT",
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "AGENT-TASKBOOK"
       ],
       "proposed_max_unchecked_days": 30,
@@ -56,8 +56,8 @@
       "class_id": "FRESH-02",
       "name": "临时空间替代数据",
       "source_ids": [
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "PROVISIONAL-BOUNDARY-BASIS"
       ],
       "proposed_max_unchecked_days": 0,
       "review_triggers": [

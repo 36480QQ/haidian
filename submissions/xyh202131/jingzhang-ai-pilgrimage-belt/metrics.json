@@ -14,6 +14,7 @@
       ],
       "formula": "polygon_area_EPSG_4548(submitted_provisional_boundary)",
       "confidence": "low",
+      "required_for_formal_submission": true,
       "assumptions": [
         "Boundary is a maintainer-defined provisional rough substitute, not an official redline."
       ]
@@ -39,6 +40,132 @@
       "formula": "count_distinct(land_use_code)",
       "confidence": "high",
       "assumptions": []
+    },
+    "land_use_area_05_sqm": {
+      "status": "known",
+      "value": 868699.955272,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '05')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_0701_sqm": {
+      "status": "known",
+      "value": 2162252.957539,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '0701')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_0702_sqm": {
+      "status": "known",
+      "value": 1363826.439903,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '0702')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_0802_sqm": {
+      "status": "known",
+      "value": 2949338.693433,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '0802')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_0803_sqm": {
+      "status": "known",
+      "value": 974116.928001,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '0803')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_0804_sqm": {
+      "status": "known",
+      "value": 996734.16497,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '0804')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not a statutory parcel total."
+      ]
+    },
+    "land_use_area_1401_sqm": {
+      "status": "known",
+      "value": 650932.858032,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '1401')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual functional envelope, not an as-built green-space survey."
+      ]
+    },
+    "land_use_area_1403_sqm": {
+      "status": "known",
+      "value": 390054.572405,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '1403')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is a conceptual public-activity envelope and is not equivalent to the PUBLIC_SPACE intervention layer."
+      ]
+    },
+    "land_use_area_16_sqm": {
+      "status": "known",
+      "value": 1056888.260511,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area_EPSG_4548 where land_use_code = '16')",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the area of a conceptual flexible-reserve envelope, not a statutory parcel total."
+      ]
     },
     "building_count": {
       "status": "known",
@@ -80,6 +207,19 @@
         "This is drawing coverage, not statutory building density."
       ]
     },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_building_footprint_area / official_site_area",
+      "confidence": "unknown",
+      "required_for_formal_submission": true,
+      "assumptions": [],
+      "reason": "Official boundary, surveyed existing footprints, approved retention/demolition decisions and statutory density controls are unavailable; concept prototype coverage must not be relabeled as building density."
+    },
     "key_area_building_count": {
       "status": "known",
       "value": 135,
@@ -108,13 +248,14 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1439815.083036,
+      "value": 1439811.398918,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
       "formula": "union_green_area_EPSG_4548",
       "confidence": "medium",
+      "required_for_formal_submission": true,
       "assumptions": []
     },
     "green_space_count": {
@@ -130,7 +271,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.126158,
+      "value": 0.126157,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -138,6 +279,7 @@
       ],
       "formula": "union_green_area / provisional_site_area",
       "confidence": "low",
+      "required_for_formal_submission": true,
       "assumptions": [
         "The denominator is a provisional boundary."
       ]
@@ -151,6 +293,7 @@
       ],
       "formula": "union_public_space_area_EPSG_4548",
       "confidence": "medium",
+      "required_for_formal_submission": true,
       "assumptions": []
     },
     "public_space_node_count": {
@@ -174,6 +317,7 @@
       ],
       "formula": "union_public_space_area / provisional_site_area",
       "confidence": "low",
+      "required_for_formal_submission": true,
       "assumptions": [
         "The denominator is a provisional boundary; the layer records intervention footprints, not all 1403 land-use envelopes."
       ]
@@ -187,6 +331,7 @@
       ],
       "formula": "count(required_key_area_features)",
       "confidence": "low",
+      "required_for_formal_submission": true,
       "assumptions": [
         "All three key-area polygons are provisional rough substitutes."
       ]
@@ -200,8 +345,51 @@
       ],
       "formula": "union(provisional_key_areas)_EPSG_4548",
       "confidence": "low",
+      "required_for_formal_submission": true,
       "assumptions": [
         "Provisional key-area geometry only."
+      ]
+    },
+    "key_area_zhongzhiyuan_sqm": {
+      "status": "known",
+      "value": 1929201.877428,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area_EPSG_4548(PROV-KEY-001)",
+      "confidence": "low",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the provisional polygon area, not an official redline or official polygon area."
+      ]
+    },
+    "key_area_origin_community_sqm": {
+      "status": "known",
+      "value": 1043236.908744,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area_EPSG_4548(PROV-KEY-002)",
+      "confidence": "low",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the provisional polygon area, not an official redline or official polygon area."
+      ]
+    },
+    "key_area_dazhongsi_sqm": {
+      "status": "known",
+      "value": 720454.218918,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area_EPSG_4548(PROV-KEY-003)",
+      "confidence": "low",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "This is the provisional polygon area, not an official redline or official polygon area."
       ]
     },
     "design_road_count": {
@@ -325,7 +513,50 @@
       ],
       "formula": "count(PHASE)",
       "confidence": "high",
+      "required_for_formal_submission": true,
       "assumptions": []
+    },
+    "phase_1_area_sqm": {
+      "status": "known",
+      "value": 4232697.159905,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area_EPSG_4548(PHASE-1)",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "The phase polygon is a conceptual implementation window over the provisional site, not an approved construction boundary."
+      ]
+    },
+    "phase_2_area_sqm": {
+      "status": "known",
+      "value": 3957616.966548,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area_EPSG_4548(PHASE-2)",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "The phase polygon is a conceptual implementation window over the provisional site, not an approved construction boundary."
+      ]
+    },
+    "phase_3_area_sqm": {
+      "status": "known",
+      "value": 3222526.321802,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area_EPSG_4548(PHASE-3)",
+      "confidence": "medium",
+      "required_for_formal_submission": true,
+      "assumptions": [
+        "The phase polygon is a conceptual implementation window over the provisional site, not an approved construction boundary."
+      ]
     },
     "site_grounding_observation_count": {
       "status": "known",
@@ -547,6 +778,7 @@
       ],
       "formula": "successful_accessibility_tasks / consented_accessibility_tasks",
       "confidence": "unknown",
+      "required_for_formal_submission": false,
       "assumptions": [],
       "reason": "Requires a dated post-opening, multi-group field co-test; no field task has been executed."
     },
@@ -560,6 +792,7 @@
       ],
       "formula": "public_tasks_with_material_improvement_over_verified_non_ai_or_no_build_baseline / evaluated_public_tasks",
       "confidence": "unknown",
+      "required_for_formal_submission": false,
       "assumptions": [],
       "reason": "Requires a verified existing baseline, pre-published comparison method and controlled pilot results; none currently exist."
     },
@@ -572,6 +805,7 @@
       ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
+      "required_for_formal_submission": true,
       "assumptions": [],
       "reason": "Approved FAR controls, official boundary and floor-area survey are unavailable."
     },
@@ -584,6 +818,7 @@
       ],
       "formula": "sum(approved_building_floor_area)",
       "confidence": "unknown",
+      "required_for_formal_submission": true,
       "assumptions": [],
       "reason": "Building storeys and approved floor areas are unavailable."
     },
@@ -596,6 +831,7 @@
       ],
       "formula": "weighted_average(approved_height)",
       "confidence": "unknown",
+      "required_for_formal_submission": true,
       "assumptions": [],
       "reason": "Approved height controls and surveyed heights are unavailable."
     },
@@ -608,8 +844,22 @@
       ],
       "formula": "union(approved_road_redlines)",
       "confidence": "unknown",
+      "required_for_formal_submission": true,
       "assumptions": [],
       "reason": "Official road redlines are unavailable."
+    },
+    "road_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_road_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "required_for_formal_submission": true,
+      "assumptions": [],
+      "reason": "Official road redlines and an official site polygon are unavailable; design centerlines do not define road area."
     },
     "parking_supply_count": {
       "status": "unknown",
@@ -620,6 +870,7 @@
       ],
       "formula": "count(approved_parking_supply)",
       "confidence": "unknown",
+      "required_for_formal_submission": true,
       "assumptions": [],
       "reason": "Approved parking supply and demand data are unavailable."
     },
@@ -632,6 +883,7 @@
       ],
       "formula": "median(measured_recovery_time)",
       "confidence": "unknown",
+      "required_for_formal_submission": false,
       "assumptions": [],
       "reason": "Requires controlled operation tests; no runtime evidence exists."
     },
@@ -644,6 +896,7 @@
       ],
       "formula": "sum(measured_energy) / successful_public_service_tasks",
       "confidence": "unknown",
+      "required_for_formal_submission": false,
       "assumptions": [],
       "reason": "Requires metered operation tests and an agreed service baseline."
     },
