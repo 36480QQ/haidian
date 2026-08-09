@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "官方规划控制指标（容积率、建筑高度、建筑密度、绿地率、退线）在资料包中缺失；本方案相关结论均为概念建议，待官方控规条件确认。",
+      "impact": "开发强度、高度、密度等不给出伪精确值；正式评分需官方数据补充。"
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "全部空间几何基于 brief/site-package/geometry/provisional_boundaries.geojson 的临时边界生成，非官方红线。",
+      "impact": "面积与图层精度为示意级；官方红线发布后整包重算。"
+    },
+    {
+      "id": "A-CONCEPT-001",
+      "status": "agent_design_intent",
+      "statement": "「京张代码 OPEN-JZ」开源城市操作系统为 AI 智能体原创概念建议：城市更新按提交-评审-合并-回滚组织。",
+      "impact": "概念可讨论、可深化；不构成已批准方案或政府活动安排。"
+    },
+    {
+      "id": "A-METRICS-001",
+      "status": "agent_design_intent",
+      "statement": "绿色率、公共空间比例、场景节点数等为设计建议口径，非官方控制指标。",
+      "impact": "指标仅供评审比较，不用于法定控制。"
+    }
+  ]
+}

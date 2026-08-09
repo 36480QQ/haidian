@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.4,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional boundary 计算，官方红线发布后重算。"
+      ]
+    },
+    "official_site_area_sqm": {
+      "status": "known",
+      "value": 11400000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
+      "formula": "official announcement value",
+      "confidence": "high",
+      "assumptions": [
+        "官方公告值：总体设计范围 11.4km²。"
+      ]
+    },
+    "research_area_sqm": {
+      "status": "known",
+      "value": 43600000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
+      "formula": "official announcement value",
+      "confidence": "high",
+      "assumptions": [
+        "官方公告值：统筹研究范围 43.6km²。"
+      ]
+    },
+    "key_detailed_area_sqm": {
+      "status": "known",
+      "value": 3684000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/design_brief.json"
+      ],
+      "formula": "official announcement value",
+      "confidence": "high",
+      "assumptions": [
+        "官方公告值：重点区域范围 368.4ha。"
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 10243.499999999998,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints, EPSG:4548))",
+      "confidence": "medium",
+      "assumptions": [
+        "概念更新建筑基底示意，非审定建设规模。"
+      ]
+    },
+    "building_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1988279.8,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(polygon_area(green_space, EPSG:4548))",
+      "confidence": "medium",
+      "assumptions": [
+        "绿脉与节点绿地概念范围，官方边界后重算。"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.174215,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "设计建议口径，非官方绿地率控制指标（官方 green_ratio 缺失）。"
+      ]
+    },
+    "public_space_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": [
+        "3 处朝圣地标 + 8 处 AI 场景节点。"
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm（点要素联合面积=0）",
+      "confidence": "high",
+      "assumptions": [
+        "公共空间以点节点表达，面状缓冲留待深化。"
+      ]
+    },
+    "road_centerline_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": [
+        "3 条协议横线 + 2 条慢行主路。"
+      ]
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": [
+        "三期：首次提交 / 合并主分支 / 持续交付。"
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "design_declared",
+      "confidence": "high",
+      "assumptions": [
+        "10 张 AI 场景卡（S01-S10）。"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "union_area(point features)",
+      "confidence": "high",
+      "assumptions": []
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+ "type": "FeatureCollection",
+ "name": "public_space",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-001",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "京张原点站·开源纪念碑广场",
+    "category": "朝圣地标",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.346,
+     39.9885
+    ]
+   },
+   "id": "PUB-001"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-002",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "众智算塔·训练状态观测台",
+    "category": "朝圣地标",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3465,
+     40.0175
+    ]
+   },
+   "id": "PUB-002"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-003",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "大钟寺AI钟楼广场",
+    "category": "朝圣地标",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3475,
+     39.9472
+    ]
+   },
+   "id": "PUB-003"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-004",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点1",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3468,
+     39.955
+    ]
+   },
+   "id": "PUB-004"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-005",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点2",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3463,
+     39.965
+    ]
+   },
+   "id": "PUB-005"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-006",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点3",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3459,
+     39.975
+    ]
+   },
+   "id": "PUB-006"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-007",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点4",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3457,
+     39.982
+    ]
+   },
+   "id": "PUB-007"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-008",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点5",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3453,
+     39.995
+    ]
+   },
+   "id": "PUB-008"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-009",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点6",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3449,
+     40.005
+    ]
+   },
+   "id": "PUB-009"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-010",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点7",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3451,
+     40.012
+    ]
+   },
+   "id": "PUB-010"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PUB-011",
+    "layer": "PUBLIC_SPACE",
+    "name_zh": "AI场景节点8",
+    "category": "scenario_node",
+    "provisional_constraint": true,
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.3455,
+     40.021
+    ]
+   },
+   "id": "PUB-011"
+  }
+ ]
+}
