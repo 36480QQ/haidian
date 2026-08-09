@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing_scaffold",
+  "name": "2origin_city_calibrate_phase",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,14 @@
         "id": "PHASE-001",
         "layer": "PHASE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "phase": "phase_1",
-        "name_zh": "一期可讨论范围",
+        "name_zh": "0—12个月校准阶段概念范围",
+        "name_en": "0-12 month calibration phase conceptual extent",
+        "gate": "official_boundary_and_base_data_recalculation",
+        "rollback_policy": "replace_polygon_and_regenerate_entire_package",
+        "provisional": true,
         "area_sqm_declared": 4587013.573
       },
       "geometry": {

@@ -32,6 +32,16 @@
       "usage": "Three required detailed-design key area boundaries (provisional)."
     },
     {
+      "id": "REPO-BOUNDARY-DIAGNOSTIC-846",
+      "url": "https://github.com/open-city-ai/haidian/issues/846",
+      "title": "Provisional overall-design boundary and OSM-mapped heritage park do not intersect",
+      "publisher": "open-city-ai/haidian repository issue",
+      "accessed_date": "2026-08-09",
+      "source_type": "repository_public_diagnostic",
+      "usage": "Reproducible advisory cross-check reporting a 412.5 m discrepancy; used only to lower spatial confidence and trigger whole-package recalculation.",
+      "limitations": "Neither the provisional repository polygon nor the OSM reference is authoritative. The issue explicitly defers to a future official polygon and is not used for alternative siting."
+    },
+    {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",

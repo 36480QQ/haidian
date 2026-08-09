@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "public_space_scaffold",
+  "name": "2origin_city_public_interface",
   "features": [
     {
       "type": "Feature",
@@ -9,9 +9,12 @@
         "id": "PUBLIC-001",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "公共活动界面",
+        "name_zh": "日常／活动／测试三态公共界面",
+        "name_en": "Three-state public interface: everyday, event, and test",
+        "non_ai_equivalent_path": true,
+        "provisional": true,
         "area_sqm_declared": 836345.643
       },
       "geometry": {

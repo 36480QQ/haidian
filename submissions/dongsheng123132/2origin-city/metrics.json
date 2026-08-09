@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "The submitted polygon is a repository-provided provisional boundary, not an official statutory boundary.",
+        "Repository issue #846 reports a reproducible 412.5 m discrepancy against an OSM-mapped heritage-park reference; both inputs may be incomplete."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,8 +27,8 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Conceptual geometry must be recalculated after an official boundary and surveyed base data are issued."]
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +39,8 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Ratio is computed from conceptual geometry inside the provisional boundary and is not a statutory planning indicator."]
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +51,8 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": ["Ratio is computed from conceptual geometry inside the provisional boundary and is not a statutory planning indicator."]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +74,8 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": ["The count follows the three key areas named by the open call; their submitted geometries remain provisional."]
     }
   }
 }

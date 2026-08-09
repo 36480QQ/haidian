@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "roads_scaffold",
+  "name": "2origin_city_action_parity_corridor",
   "features": [
     {
       "type": "Feature",
@@ -9,10 +9,13 @@
         "id": "ROAD-001",
         "layer": "ROAD_CENTERLINE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "road_class": "greenway",
-        "name_zh": "慢行与创新服务廊道"
+        "name_zh": "慢行—蓝绿—非AI等价服务廊道",
+        "name_en": "Walking-cycling, blue-green, and non-AI-equivalent corridor",
+        "non_sensing_path": true,
+        "provisional": true
       },
       "geometry": {
         "type": "LineString",

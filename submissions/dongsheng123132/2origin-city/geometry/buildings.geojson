@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
+  "name": "2origin_city_conceptual_building_footprints",
   "features": [
     {
       "type": "Feature",
@@ -9,7 +9,7 @@
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
         "building_type": "ai_r_and_d",
         "name_zh": "AI研发示范建筑基底",
