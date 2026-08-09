@@ -2,163 +2,170 @@
 title: "京张开源带，把九公里公园接回日常"
 author_github: "liulingfei-1"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
-summary: "先把京张铁路遗址公园的路走顺，再用三座院落补上试验、服务与交流。"
+summary: "沿京张铁路遗址公园补齐步行与骑行断点，用众智园、AI 原点和大钟寺三座院落承接测试、服务与公共生活。"
 tracks: ["ai-public-services", "youth-friendly-public-space", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.1"
-version: "2.1.0"
+iteration: "v4.0"
+version: "4.0.0"
 ---
 
 # 京张开源带，把九公里公园接回日常
 
-我先把京张公园一期、二期计划、清华东路南侧项目、小月河工程和清华园车站的文保要求放到同一张图上。沿线已经有公园，有些东西向连接已经获批，水岸也有自己的建设计划。这片地方不缺概念，缺的是把正在发生的事情接牢。
+京张铁路遗址公园一期已经开放。早晨有人跑步，午后有人推着童车穿过铁轨花园，晚上桥下还会有人打球。二期正在施工，南北贯通的日子已经不远。这次设计把力气用在公园外沿和几个难走的接口上，让西侧居民少绕一段路，让骑车的人能顺利接站，也让办事、休息和试用新设备的人有一扇找得到的门。
 
-方案从走路开始。九公里的公共脊要连续，树荫、厕所和能坐下来的地方跟着路线布置。三处重点区各自承担一件事。众智园留出有边界的测试院，AI 原点把公共服务和共学放在街边，大钟寺接住车站、公园与夜间活动。
+九公里主线串起三处院落。众智园留给低速设备做有边界的测试。AI 原点在街边摆一张有人值守的服务桌。大钟寺的院子白天接通勤，入夜后留给小课、展览和附近商户。沿线再补雨庭、树荫座位和安静角落，公园就能从一条好看的绿带，慢慢长成一条好用的城市路径。
 
-我把这套空间叫作一线、三院、六庭。一线沿着铁路遗址向南北伸展。三院分处北、中、南。六庭是人每天会用到的小地方，有雨庭、树下座位，也有服务桌和共学廊。技术退到这些日常空间的后面。设备停了，路照样能走；答复出错，工作人员就在附近。
-
-这次研究没有现场踏勘，也没有官方红线。图中的边界、面积和建筑原型都属于工作稿。公开资料可以确认项目状态和制度要求，具体路口、权属、管线与文保控制仍要由主管部门和专业团队复核。
-
-![已建项目、公开计划与本案空间结构](assets/figures/site-overview.png)
+![已建、在建和本案新增的九公里总体图](assets/figures/site-overview.png)
 
 ## 设计依据与资料清单
 
-我把材料分成四层。公告和任务书说明征集范围与交付要求 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518]。政府公开页面说明哪些公园已经开放，哪些连接已经获批，水务和文保有哪些明确约束 [source:JZ-PARK-PHASE2-20240920] [source:QINGHUA-EAST-SOUTH-20260602] [source:XIAOYUEHE-PROJECT-20240305] [source:QINGHUAYUAN-HERITAGE-CONTROL-20260214]。
+这轮先把项目进度查清。官方资料确认一期已建成开放，较新的报道采用 2.4 公里和 16.8 公顷口径。二期仍在施工，2024 年公布的九条支路、八处社区活动场地和 420 个机动车位属于建设计划，不能提前涂成现状。笑祖塔段约 2 公顷已经完工，可以单独标为已建。清华东路南侧项目计划 2026 年开工、2027 年完成，也归入在建接口。[source:JZ-PARK-PHASE1-20230626] [source:JZ-PARK-AXIS-20260330]
 
-OSM 提供道路、步道、轨道、站点、水系和公共设施的现状背景 [source:OSM-OVERPASS-20260808]。这些数据可能漏标或滞后，图上只拿它判断大致关系。面积复算使用仓库给出的暂定边界与本包 GeoJSON [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。它们服务于概念比较，官方边界到位后会整体替换。
+总图用四种底色。灰色是现状，绿色是已建公园，浅黄色是已批或在建项目，朱红色只画本案新增。OSM 提供道路、建筑和水系的城市纹理，现场高差、出入口和围栏还要逐点复核。征集包里的场地边界继续作为工作边界，所有面积都能重算，图面不把它冒充法定红线。[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [source:OSM-OVERPASS-20260808]
 
-清华园车站照片来自 Wikimedia Commons，作者为 N509FZ，许可为 CC BY-SA 4.0 [source:WIKIMEDIA-QINGHUAYUAN-20240331]。本轮新增的三院场景图标为概念想象，只帮助读者理解空间气氛，不承担现状或工程证据。
-
-规划方法响应 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 与 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。建筑设计深度标准缺少可核文件，[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 继续记为待补资料。
-
-方案比较有过三条路。科技展陈带容易被记住，日常使用会被展项挤到边上。单一线性公园最安静，任务书要求的产业试验又很难落地。现在采用的铁路日常共同体把既有公园当作底图，只在三处院落增加必要空间。[depth:existing_conditions_diagnosis]
+专业案例只帮我们确定汇报顺序。徐汇跑道公园先交代旧跑道和总体平面，再给街道剖面、雨庭和使用者，建成后的性能另页说明。多伦多滨水评审把关键判断留在大图旁，正文很短。北京 2020 年六套京张方案也都从一条清楚的空间主线展开。本案没有复制这些项目的图片、几何或文字，只采用先现状、再总图、随后落到节点和建后复测的阅读顺序。[source:CASE-XUHUI-SASAKI] [source:CASE-WATERFRONT-TORONTO-REVIEW]
 
 ## 三层范围工作框架
 
-公告给出约 43.6 平方公里统筹研究范围、约 11.4 平方公里总体设计范围和约 368.4 公顷重点区域 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。本案保留这三种尺度，但不给第一层重画红线。总体设计使用 [data:geometry/site_boundary.geojson#SITE-001] 的暂定 polygon，三处重点区使用 [data:geometry/key_areas.geojson#KEY-001]、[data:geometry/key_areas.geojson#KEY-002] 与 [data:geometry/key_areas.geojson#KEY-003]。
+约 43.6 平方公里的统筹研究范围回答一件事，沿线哪些学校、社区和企业会真的使用这条公园。约 11.4 平方公里的总体设计范围沿九公里展开，检查步行断点、骑行接站和河岸联系。三处重点区合计约 368.4 公顷，图纸下钻到 80 至 150 米的街角，画出门、坡道、树冠和设备停放位。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]
 
-43.6 平方公里用来理解高校、社区、科研机构和公共服务的关系。11.4 平方公里回答公园怎样连续，路口怎样跨过去。重点区落到八十至一百五十米的日常尺度，轮椅转弯、树下停留和夜间照明都在这里判断。[depth:three_level_scope_framework] [depth:overall_spatial_structure]
+三个尺度共用同一套道路和建筑底图。九公里图给出南北贯通和五处需要东西缝合的位置。八百米图能看清地铁口、社区门和主要过街。到一百二十米，读者可以量出三点二米公共步道、两点八米骑行带和院落的开口。大图上的编号会带到详细设计页，不再用几根没有落点的线代替场地。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
-工作场地面积见 [metric:site_area_sqm]，连续用地面积见 [metric:land_use_partition_area_sqm]。两个数字相等，只说明这份概念分区完整覆盖了暂定场地。重点区数量与面积分别记录在 [metric:key_area_count]、[metric:key_area_zhongzhiyuan_area_sqm]、[metric:key_area_ai_origin_area_sqm] 和 [metric:key_area_dazhongsi_area_sqm]。
+目前边界仍来自征集包。官方红线、道路定线或文保 GIS 坐标到位后，三个尺度要一起换底图，面积和长度随之重算。这个版本保留坐标系、日期和图层来源，方便后续人员找到每个数字从哪里来。[standard:MOHURD-URBAN-DESIGN-MEASURES]
+
+![九公里总体、八百米街区和一百二十米院落的连续下钻](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
-2021 年的官方解读提到，京张遗址公园约九公里，服务九个街镇。约六公里高铁入地释放了地面空间，沿线仍要处理复杂交叉和多主体共建 [source:JZ-PARK-CO-CREATION-20211216]。这条信息改变了方案的重心。新增建筑不再占主角，跨路、接站、维护和开放时间成了先做的事。
+AI 原点社区已有真实的使用基础。海淀公开材料把它划在约 3 平方公里范围内，周边有 30 多所高校和科研机构。2026 年官方报道列出 300 余家人工智能企业，随后新闻发布会采用 400 余家口径。两个数字对应不同时间和统计范围，本案不把它们合并，只把高校东门、原点大厦和人才服务站当作需要接通的日常目的地。[source:AI-ORIGIN-REAL-ECOSYSTEM-20260324]
 
-海淀 2025 年统计公报记录了 92 家全国重点实验室和 123 款备案上线大模型 [source:HAIDIAN-STATS-20260410]。这两个数只能说明全区背景，不能按比例摊到场地。北京市智能体政策提出应用验证、可信测试和公共服务开放场景 [source:BEIJING-AGENT-POLICY-20260723]。本案把这些要求分到三处院落，众智园负责有界测试，AI 原点负责有人值守的公共服务，大钟寺承接发布与交流。
+区域图把使用者画在他们会出现的地方。学生从学校和地铁来，研发人员带设备进众智园，附近居民从社区门进入公园。办事的人抵达 AI 原点后能先问工作人员，商户和夜课使用者在大钟寺停留。每条关系都有入口和步行距离，不再用漂在空中的圆圈表示所谓产业联系。[metric:global_case_count]
 
-八个国际案例各留下一条可用经验。Helsinki 3D 提供开放格式 [source:CASE-HELSINKI-3D]，Punggol 提醒测试要分级 [source:CASE-PUNGGOL-PDD]。King's Cross 说明铁路遗产可以和长期公共空间一起经营 [source:CASE-KINGS-CROSS]，Decidim 让公众提案能够追溯 [source:CASE-BARCELONA-DECIDIM]。Amsterdam 算法登记强调责任期限 [source:CASE-AMSTERDAM-ALGORITHM]，Paris 的十五分钟城市帮助检查日常可达 [source:CASE-PARIS-15M]。MK Smart 提供城市试验的组织经验 [source:CASE-MILTON-KEYNES]，Toronto Quayside 留下数据治理和退出的教训 [source:CASE-TORONTO-QUAYSIDE]。案例数量见 [metric:global_case_count]。
+国际案例在这里提供尺寸和做法参照。King's Cross 先修街道、广场和历史建筑，再让不同地块慢慢长出来。费城 Rail Park 保留既有钢结构，日常节目只需要一条路、种植和几处能坐的木平台。马德里 Río 用连续林荫步道把不同社区接到河边。本案留下这三点，先做公共通路，旧材料能留就留，活动跟着居民日常走。案例不能证明京张的权属、客流或投资条件。[source:CASE-KINGS-CROSS-HUMAN-CITY] [source:CASE-RAIL-PARK-PHASE1]
 
-区域协作先从具体接口开始。北纬社区接青年人才服务，未来科学城和怀柔科学城接研究与评测，经开区接智能硬件。小月河一侧优先衔接已有水务工程 [source:XIAOYUEHE-WATERFRONT-20260112]。这些都是下一步洽谈清单，还没有形成跨区域承诺。
-
-![研究、测试和公共服务在三处院落相遇](assets/figures/ecosystem-space.png)
+![高校、社区、企业和三处可进入院落的真实步行关系](assets/figures/ecosystem-space.png)
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-京张公园已经进入日常生活。公开资料显示一期开放段约 2.4 至 2.5 公里，二期计划包含约六公里银杏廊、九条支路和社区活动场地 [source:JZ-PARK-PHASE2-20240920] [source:JZ-PARK-AXIS-20260330]。新版总图把已经开放、公开计划和本案建议分开画，读者能看出每一笔从哪里来。
+一期已经把知春路至清华东路的一段公园做了出来，北段的十二座花园、复原铁轨和桥下跑步道都是真实参照。二期继续向西直门和北五环延伸，九条支路与八处社区活动场地属于既有工程。本案不在这些内容上重新署名，只补五处尚未说清的接口，其中最紧要的是 13 号线西侧居民绕行。海淀区园林绿化局已公开回应过这项诉求，现阶段只确认二期红线内北三环北侧设出入口，跨线通道仍需交通和轨道部门论证。[source:JZ-PARK-WEST-DETOUR-20241029]
 
-连续主线、三处院落和六类小庭组成一张空间网络。小庭跟着人的路线落位，形成可以逐段修补的更新模式。北段重在测试，中段重在服务，南段重在交流，三种场景都有自己的入口、日常路线和维护人。
+总图沿公园保留一条连续公共线。众智园、AI 原点和大钟寺三处院落落在既有硬化边缘，避免占用大块绿地。两条东西联络先接清华东路南侧和小月河，再把社区门、地铁口与公园入口逐段接上。清华东路项目已有约 1900 辆自行车停车安排，并计划拆除约 1200 米护栏，本案只补开园后的导视和拥堵复测。[source:QINGHUA-EAST-SOUTH-20260602]
 
-总体设计先处理南北连续。公园主线穿过三个院落，沿途用六类小庭补足树荫、雨水和停留。东西方向优先接入清华东路南侧项目及二期支路。清华东路南侧项目已经获批，公开方案包括约 1200 米护栏拆除、五处非机动车停车、六个花园和四处全龄空间 [source:QINGHUA-EAST-SOUTH-20260602]。本案只增加接驳导视、无障碍复核和开园后的使用评估。
-
-城市更新从调查开始。北京市城市更新条例要求公众参与和监督，海淀实施指引要求查清权属、建筑、管线、消防、历史和运营条件 [source:BEIJING-URBAN-RENEWAL-REGULATION-20221206] [source:HAIDIAN-URBAN-RENEWAL-GUIDE-20250716]。现阶段的 11 个功能单元 [data:geometry/land_use.geojson#LU-001] 与 9 个建筑原型 [data:geometry/buildings.geojson#BLDG-RD-1] 只用于检验空间关系。容积率、高度和具体拆改留继续待核。[depth:retain_renovate_demolish] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character]
-
-![北中南三段用地与三级空间尺度](assets/figures/land-use-structure.png)
+每一处改造先核门，再核路。建筑权属、消防、地下管线和现状树木没有查完，图纸不下逐栋拆改结论。九个轻型建筑原型贴着街道和既有服务设施布置，公园腹地只留树下座位与照明。法定容积率和高度继续标为待定。[depth:overall_spatial_structure] [data:geometry/buildings.geojson#BLDG-RD-1]
 
 ## 重点区域详细设计
 
-三处重点区采用同一比例尺。每张图都画入口、日常路线和可撤设施，剖面里能看到树、棚、座位和建筑界面。九十天试用解决一个小问题，一年后再看它是否值得留下。
+三张重点区平面采用同一比例尺。周边建筑、车行边界、树冠和入口都画全，六条剖面在平面上标出切线。图纸给出构件尺寸和概念标高，现场地形、地下管线与消防条件仍待测绘。[depth:three_key_area_detailed_design]
 
-众智园的试验院把低速测试条带围在院内。普通步道从旁边经过，入口有人值守，手动停机按钮对现场人员可见。首轮只做多主体让行和遥停测试。设备越界或现场无法接管，测试当天结束。
+| 地点 | 平面安排 | 人怎样使用 |
+| --- | --- | --- |
+| 众智园试验院 | 58 米乘 36 米低速环放在围栏内，外侧保留 3.2 米公共步道。9 米乘 92 米雨庭接住硬地径流，入口旁设停机按钮和设备回库口 | 行人从外圈一直走，测试人员从独立门进场。设备越界或值守员无法接管，当天停测 |
+| AI 原点服务院 | 42 米乘 30 米遗产阅读院贴近街边，2 米坡道接服务桌。安静等候区避开主流线，阅读栏杆与既有铁轨保持距离 | 办事者先见到工作人员，轮椅可以直接到桌前。答复有误时现场转人工 |
+| 大钟寺交换院 | 48 米乘 32 米活动院朝车站开口，30 米乘 8 米雨棚收纳桌椅。骑行停车靠入口，夜间活动退到雨棚内 | 早晚高峰只留通行，白天可停留，傍晚开小课。疏散受阻时家具当天收回 |
 
-AI 原点的共学街院靠近有人值守的服务桌。公开信息显示，人才服务流动站已经提供五类十七项服务，并保留线下就近办理 [source:AI-ORIGIN-TALENT-STATION-20260722]。方案增加无障碍坡道、安静等候和错误转人工。清华园车站旧址受 I 类与 V 类建控要求约束，新设施保持低矮可撤，落位由文物主管部门核验 [source:QINGHUAYUAN-HERITAGE-CONTROL-20260214]。
+清华园车站旧址已有 2026 年公布的法定保护范围和建设控制地带。公开网页能确认法律状态，当前包里没有可直接用于施工放样的权威坐标。AI 原点附近的构件暂按可撤方式落位，等文保部门提供正式坐标后再校线。[source:QINGHUAYUAN-HERITAGE-CONTROL-20260214] [data:geometry/key_areas.geojson#KEY-002]
 
-大钟寺的城市交换院位于站、街和公园相遇的地方。白天给通勤者和周边商户使用，晚上可以开一堂小课或一场小展。活动结束后家具归库，安静时段恢复普通通行。居民投诉连续出现，运营方就缩短时段或撤下活动。
-
-![三处院落的同尺平面、剖面与九十天试用](assets/figures/key-areas.png)
-
-![三处院落的日常使用概念想象](assets/figures/three-courtyards-concept.png)
-
-三处院落都保留不登录、不追踪的普通路径。三年评估只做三种决定，留下有效部分，改掉使用不顺的地方，也允许整项撤除。[depth:three_key_area_detailed_design]
+![三处院落总平面、入口放大和与平面对应的六条剖面](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-场地里的 AI 参与公共服务转接和围合测试。白天由服务人员接住错误答复，夜间由现场人员看守机器人测试。技术改变的是使用时段和设备接口。测试避开通勤高峰，传感器与低速设备可以拆走，公共空间仍能继续用。客流、热环境和无障碍记录经过人工复核后，才进入下一轮设计。
+八类共同设计者来自沿线现有关系。学生、教师和研发人员会在这里上课或试设备，老人、带娃家庭和轮椅使用者更在意坡道、厕所与休息。商户和办事者需要一张能问人的桌子，维护人员决定场地第二天还能不能开。画像只用于安排空间，不采集个人轨迹。[metric:persona_count]
 
-共同设计包含八类人。研发团队关心测试条件，学生和教师需要共学空间。老人、带娃家庭与残障人士更在意路是否好走，夜间维护人员知道照明和呼叫点哪里最缺。商户、采购方与城市运营人员负责把试用接到日常管理。画像数量见 [metric:persona_count]，它们不对应真实个人，也不采集个人轨迹。
+十四个场景按一天排进三处院落。清晨的重点是接站和无障碍巡查。白天开人才服务、健康转介与共学问答，所有答复旁边都留工作人员。傍晚适合遗产阅读和社区小课。围合的低速测试放到夜间低峰，断网后设备回库，公共步道照常开放。[metric:scenario_count] [metric:test_scenario_count]
 
-十四个场景沿一天展开。早上先看站点接驳和无障碍主线。中午的服务桌处理办事、共学和人工转接。傍晚的树下空间承担散步、照护与遗产阅读。夜间才开放围合测试，现场安全员掌握停机权。完整位置、责任单位和停止条件保存在 `visual/assets/open-belt-program.json`，数量见 [metric:scenario_count]。每项服务记录的字段数见 [metric:service_passport_field_count]。
+| 时间 | 地点和动作 | 现场的人 |
+| --- | --- | --- |
+| 6 时 30 分至 9 时 | 大钟寺入口显示步行和骑行接站，维护员检查坡道、积水和照明 | 通勤者直接看牌，不用扫码 |
+| 10 时至 17 时 | AI 原点开放服务桌，共学廊可以坐下问问题。健康与人才事项只做查询和转介 | 工作人员接手复杂或高影响事项 |
+| 17 时至 21 时 | 三处院落安排阅读、小课和商户交流，活动家具不压主路 | 社区值守者控制人数和音量 |
+| 21 时以后 | 众智园围栏内测试低速机器人、遥停和断网回库 | 测试员在场，普通人走外圈 |
 
-六项产业测试覆盖机器人联锁、服务转接、断网降级、无障碍挑战、无追踪服务和能耗时段。每项测试先确定责任单位与人工路径，随后冻结测试集。没有达到门槛的项目留在院内，不进入公共主路。数量见 [metric:test_scenario_count]。[depth:municipal_new_infrastructure]
+六项产业测试都有可见边界。机器人让行、服务转人工和断网回库先做，其他测试等场地调查后再排。测试记录只留设备状态、冲突位置和处理时长，不留人脸或个人路线。普通使用者始终可以走一条不登录的路。[source:PIPL]
 
-![早、午、晚、夜四个空间片段](assets/figures/scenario-operations.png)
-
-Agent.1 至 Agent.6 的分工留在任务附件里 [source:DATA-SRC-AGENT-TASKBOOK-20260518]。主图只保留现场会遇到的人、他们做的事和谁来接手。
+![清晨接站、白天办事、傍晚小课和夜间围合测试](assets/figures/scenario-operations.png)
 
 ## 用地、建筑规模与拆改留方案
 
-暂定场地在 EPSG 4548 中切分，回写时使用 EPSG 4326。相邻分区共享边界，目前没有重叠。11 个单元的面积由 [metric:land_use_unit_count] 及各分项指标复算。
+暂定场地按投影坐标切成 11 个连续单元。研发、教育和社区服务靠现有街道，公园绿地保持连续，商业与文化功能贴近地铁和大钟寺。科研用地工作值约 340.1 公顷，公园绿地约 258.8 公顷。提交几何没有 0902，该项继续记为不适用。面积只是方案比较用的工作值。[data:geometry/land_use.geojson#LU-001] [metric:land_use_0802_area_sqm]
 
-科研用地工作值约 340.1 公顷 [metric:land_use_0802_area_sqm]，公园绿地约 258.8 公顷 [metric:land_use_1401_area_sqm]，城镇住宅约 176.9 公顷 [metric:land_use_0701_area_sqm]。教育用地约 117.1 公顷 [metric:land_use_0804_area_sqm]，商业服务业约 87.2 公顷 [metric:land_use_05_area_sqm]。文化用地约 83.4 公顷 [metric:land_use_0803_area_sqm]，社区服务设施约 77.7 公顷 [metric:land_use_0702_area_sqm]。提交数据没有 0902，该项保持不适用。
+九个建筑原型解决很小的事情。测试棚能关门，服务桌能让轮椅靠近，雨棚能收桌椅，设备库能从后门维修。它们都放在硬地边缘，基底占比很低。螺栓钢架、可替换木板和预制小基础便于拆装，砖和灰红金属板接住铁路场地的颜色。靠近遗产建筑的设施控制在一层，不挡站房主要视线。[metric:building_footprint_ratio] [depth:height_massing_character]
 
-9 个建筑原型的基底合计见 [metric:building_footprint_area_sqm] 与 [metric:building_footprint_ratio]。这个比率只衡量原型基底占暂定场地的比例。法定建筑密度仍为待核。建筑现状、产权、结构、消防和管线调查完成后，专业团队再逐栋判断保留、修缮或拆除 [source:HAIDIAN-URBAN-RENEWAL-GUIDE-20250716]。
+现状建筑仍缺年代、结构和产权调查。施工前要逐栋检查，能继续使用的先修，妨碍消防或结构不安全的再讨论拆除。这个版本只标出保留、修缮和待核三类工作，不把概念原型算成现状建筑密度，也不提供未经依据的开发强度。[depth:retain_renovate_demolish]
 
 ## 交通、轨道、市政与公共服务设施
 
-交通图把道路、轨道、站点和水系画在底层，再叠加公园主线与三条东西连接 [data:geometry/roads.geojson#ROAD-TRUNK]。工作中心线总长见 [metric:road_centerline_length_m]，它不等同于道路红线。
+步行和骑行分开画。公共步道采用 3.2 米工作宽度，骑行带采用 2.8 米工作宽度，窄处通过铺装、树池和减速标记提醒让行。服务车只在限定时间进院。13 号线西侧的实际绕行长度要由现场步测补齐，跨线方案在轨道安全评估完成前只标问题点，不画成已经能建的桥。[standard:BEIJING-WALK-CYCLE-STANDARD-20201223] [data:geometry/roads.geojson#ROAD-TRUNK]
 
-清华东路南侧项目给出了最清楚的一条东西连接。它西接京张，东到小月河，并计划设置约 1900 个非机动车停车位 [source:QINGHUA-EAST-SOUTH-20260602]。新版慢行图从这里出发，逐个标出仍需核实的路口和替代路线。
+公园厕所按 250 米服务半径检查。座椅旁至少留出相当于座椅数量 10% 的轮椅停留位，树荫下优先安排有靠背和扶手的座椅。主路和支路的林荫覆盖率用 80% 作为核查参照，先对七月午后做树冠投影模拟，再由现场实测修正。这些数值来自公园设计规范和北京绿隔公园文件，京张属于线性遗址公园，能否逐段适用仍需主管部门确认。[source:STANDARD-GB51192-PARK-DESIGN] [source:STANDARD-BEIJING-GREEN-PARK]
 
-慢行深化依据 DB11/1761-2020 [source:BEIJING-WALK-CYCLE-STANDARD-20201223]。绿道指南建议驿站服务半径不超过约 500 米 [source:BEIJING-GREENWAY-GUIDE-20250725]，这个数用来检查休息、饮水和厕所的间距。绿道管理办法要求明确步行、骑行与综合类型，也要求有日常管护和应急安排 [source:BEIJING-GREENWAY-MANAGEMENT-20260429]。
-
-市政图只标接口。饮水、厕所、照明、排水与消防需要现场清点，能源、网络和散热要等设备方案明确后核算。现有缺口记录在 [data:geometry/constraints.geojson#GAP-ROAD] 与 [data:geometry/constraints.geojson#GAP-MUNICIPAL]。[depth:traffic_rail_slow_parking]
+清华东路南侧的五处自行车停车、六个花园和四处全龄空间属于已批项目。总体图把这些设施接到京张入口，避免重复建设。饮水、厕所、照明、排水口和消防接口要现场清点，缺口逐个编号。设备没有供电、散热或网络条件时，就不进场。[data:geometry/constraints.geojson#GAP-MUNICIPAL] [depth:municipal_new_infrastructure]
 
 ## 蓝绿空间、公共空间与城市风貌
 
-小月河公开工程包含 6.41 公里河道治理、4.94 公里硬岸改造、19.50 公顷绿地、14 座桥和 5 个公厕 [source:XIAOYUEHE-PROJECT-20240305]。2026 年公开计划另列 11.4 公里滨水步道和 11 公顷绿化 [source:XIAOYUEHE-WATERFRONT-20260112]。两组长度采用不同口径，图中分别保留。
+小月河工程从祁家豁子闸到入清河口，治理长度 6.41 公里，设计采用 50 年一遇防洪标准。它是水务工程，本案不能改河道断面、桥位或行洪条件。京张一侧只做一条接河的无障碍路线，在靠近硬地的位置放雨庭。雨庭溢流接入方式要等水务和市政复核。[source:XIAOYUEHE-FEASIBILITY-202405] [data:geometry/green_space.geojson#GREEN-TRUNK]
 
-公园主线按照树荫、雨庭、共学、服务、试验和交换六种日常需要布置。新增构件尽量落在硬化边缘和已有服务点附近，给草地与水岸留下连续空间。绿地与公共空间图形见 [data:geometry/green_space.geojson#GREEN-TRUNK] 和 [data:geometry/public_space.geojson#PUBLIC-PLAZA-ORIGIN]。工作面积记录在 [metric:green_space_area_sqm]、[metric:green_ratio]、[metric:public_space_area_sqm] 与 [metric:public_space_ratio]。[depth:blue_green_public_space]
+六种小庭各有一个现实任务。雨庭接铺装径流，树荫庭放靠背座椅。共学庭靠近 AI 原点，试验庭留在众智园围栏里。大钟寺用交换庭，居住界面只留安静庭。每处先画来水方向、树冠和坐凳，随后才放标志。绿地比例从提交几何复算，不能替代树木普查或海绵计算。[metric:green_ratio]
 
-典型剖面先保证两米以上的连续步行净宽，再安排座椅、种植和设备。固定导视与人工服务一直保留。清华园附近的新构件避开文物本体，城市色彩继续使用砖、钢、木和铁路遗存已有的灰红色调。[depth:blue_green_open_space] [depth:public_space_quality]
+沿线识别只用三件东西。入口门牌写最近车站和公厕距离，里程柱帮人确认方向，低位阅读架讲清旧铁轨和车站。灯杆不做持续闪烁，旗帜在大风和闭园时收起。八个可拆构件给出尺寸、材料、节点和更换方式，图中还画了它们放进真实剖面后的样子。[metric:landmark_count]
 
-![过街、树荫、水岸与无障碍剖面](assets/figures/mobility-bluegreen.png)
+![七种典型路段、过街和小月河接口的实尺度剖面](assets/figures/mobility-bluegreen.png)
 
-四个低干预地标分别承担进入、停留、阅读和交换。它们的数量见 [metric:landmark_count]。遗产阅读会在开园后做可达性与理解度评估，方法参考铁路建筑遗产建后评估研究 [source:HERITAGE-POE-20241106]。
+![座椅、雨庭边框、门牌和雨棚的材料与连接详图](assets/figures/components-phasing.png)
+
+![入口门牌、里程柱和现场导向的使用位置](assets/figures/identity-system.png)
 
 ## 更新项目清单、实施政策与分期计划
 
-九个项目从一段可以撤掉的小样开始。P01 先做连续步行样段，P02 处理一个真实东西断点。P03 在众智园围出低速测试院，P04 在 AI 原点补服务桌与无障碍等候。P05 完成一段水岸雨庭，P06 在大钟寺试开晚间小课。P07 整理四处遗产阅读点，P08 建立开园后的使用记录，P09 负责年度复核。项目数量见 [metric:renewal_project_count]。[depth:renewal_project_list]
+九个项目分成三批。前 90 天做众智园测试环、AI 原点服务桌和大钟寺晚间院落，全部使用可撤构件。一年内只处理现场量得清的缺口，包括一处过街、一段雨庭和四个遗产阅读点。三年后再看九公里连续步行样段、年度使用记录和复测结果。每个项目在开工前写明管养人，找不到管养人的项目留在图纸上。[metric:renewal_project_count]
 
-首个九十天只动可逆构件。责任单位每天记录使用冲突和维修问题，月底公开一次简短结果。一年后复测客流、无障碍、热舒适和投诉。三年时再决定哪些项目进入长期建设。
+| 阶段 | 要交付的东西 | 何时停下来 |
+| --- | --- | --- |
+| 90 天 | 三处院落小样、出入口计数、冲突位置图和维修记录 | 设备越界、疏散被挡或两周无人维护 |
+| 1 年 | 过街修补、雨庭接口、四处阅读点和同口径复测 | 文保坐标冲突、水务不同意接管或投诉长期未解决 |
+| 3 年 | 连续步行样段与仍有人用的固定设施 | 使用率低、费用说不清或责任单位退出 |
 
-社区、维护团队和相关部门在试用前书面确认责任单位。每次复测都保留同一组指标，让后来的人能看懂项目为何留下、修改或撤掉。
+每天的记录很短。值守人员记位置、时间和处理结果，月底公开一页。社区和维护团队一起看三项指标，包括通行冲突、维修时长和转人工结果。一年后再复测无障碍、午后树荫与厕所覆盖。分期图把每个构件落到位置，也标出谁负责拆走。[data:geometry/phasing.geojson#PHASE-01] [source:BEIJING-URBAN-RENEWAL-REGULATION-20221206]
 
-分期图使用四个状态，图形从 [data:geometry/phasing.geojson#PHASE-01] 开始。资料不足时先补调查，取得责任单位后才做小样，通过专业复核的项目进入实施准备，运营记录稳定后才能长期保留。四段工作面积见 [metric:phase_01_area_sqm]、[metric:phase_02_area_sqm]、[metric:phase_03_area_sqm] 与 [metric:phase_04_area_sqm]，总覆盖见 [metric:phasing_area_sqm]。这个顺序不对应固定年份。[source:BEIJING-URBAN-RENEWAL-REGULATION-20221206] [depth:phasing_implementation]
-
-![八个公共构件与九个项目的位置](assets/figures/components-phasing.png)
+![90 天、一年和三年对应的项目位置、责任人与退出条件](assets/figures/phasing-strategy.png)
 
 ## 指标体系、面积复算与合规矩阵
 
-场地与分区面积来自提交 GeoJSON。核心工作值包括 [metric:site_area_sqm]、[metric:land_use_partition_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_space_area_sqm]、[metric:public_space_area_sqm] 和 [metric:road_centerline_length_m]。面积在 EPSG 4548 中计算，交换文件保留 EPSG 4326。
+暂定场地约 11.413 平方公里。三处重点区工作面积分别约 192.9、104.3 和 72.0 公顷，合计约 369.3 公顷。方案里有 14 个日常场景、6 项产业测试和 9 个更新项目。面积、比例与长度都从 GeoJSON 复算，公式、坐标系和置信度写在 `metrics.json` 里。[metric:key_area_count] [metric:renewal_project_count]
 
-方案同时记录三处重点区 [metric:key_area_count]、14 个场景 [metric:scenario_count]、6 项测试 [metric:test_scenario_count]、8 类共同设计者 [metric:persona_count] 与 9 个项目 [metric:renewal_project_count]。公式、来源文件和置信度保存在 `metrics.json`。任务覆盖与设计深度分别保存在 `compliance_matrix.json`、`standard_matrix.json` 和 `design_depth_matrix.json`。[source:SITE-PACKAGE] [depth:metrics_recalculation]
+建成前的基线要回到现场量。过街绕行用普通步速走两遍，厕所和饮水点逐个查开放时间。七月午后用树冠模型算一次遮阴，随后在晴天 14 时拍照校正。座椅记录靠背、扶手和轮椅位，坡道记录净宽、坡度和积水。90 天与一年沿用同一张表，才看得出改动有没有用。[depth:metrics_recalculation]
 
-![方案比较、资料边界与可复算指标](assets/figures/metrics-evidence.png)
+当前数字分为三类。官方项目数值保持原口径，提交几何产生的数字标为工作值，尚未调查的项目保留为空。标准矩阵、设计深度矩阵和任务覆盖表只帮审图人员定位，不会把空缺自动变成合格。官方红线、权属、管线和文保坐标到位后，图、表和 PDF 要在同一版本里重算。[source:SITE-PACKAGE]
+
+![现状事实、方案工作值和待现场核查项目的简明对照](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
 
-风险登记写得很短，目的是让下一组人知道从哪里接手。公开资料有使用边界，个人服务要保护隐私，第三方图片和数据沿用各自版权与授权，文保、权属和管线交给主管部门复核。官方边界到位后要重算面积。高影响服务始终保留人工窗口和申诉，OSM 的关键路口继续现场核实。[depth:risk_missing_data]
+这份方案最大的空间风险来自底图。工作边界可能变化，OSM 会漏路和建筑，13 号线绕行尚未实测，文保网页也没有可直接放样的 GIS 坐标。遮阴、厕所、座椅和管线都等现场调查。图纸据此保持概念设计深度，不用于审批、投资或施工。[depth:risk_missing_data]
 
-原创文字、设计图层、HTML 与 PDF 采用 CC BY 4.0。清华园照片采用 CC BY-SA 4.0，OSM 派生语境采用 ODbL 1.0。三院概念场景图只用于表达设计意向，生成方法和使用边界写入 `report/copyright_statement.md`。
+公共服务保留人工窗口。机器人只在围栏内测试，普通步道不要求登录。隐私和合规复核从测试前开始，健康、人才和企业事项由工作人员作最终处理。儿童、老人和残障人士参加体验时只评价路线与设施，摄像或定位数据不进入本次测试记录。[source:PIPL]
 
-网页不加载远程脚本、地图瓦片、字体、图片或跟踪代码。全部假设与触发条件见 `assumptions.json` 和 `risk.json`。
+原创文字、设计图层、网页和 PDF 采用 CC BY 4.0。OSM 派生背景遵守 ODbL 1.0，清华园照片继续使用 CC BY-SA 4.0。专业案例网页和获奖页只用于研究汇报顺序，其图片版权仍归原作者，本包没有收录或改绘。概念场景图单独标注为想象画面，不承担现状证据。[source:WIKIMEDIA-QINGHUAYUAN-20240331]
 
 ## 参考资料
 
-任务与标准采用官方公告 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]、公开任务书 `brief/public-brief.md` [source:PUBLIC-BRIEF]、智能体任务书 [source:DATA-SRC-AGENT-TASKBOOK-20260518]、站点包 [source:SITE-PACKAGE] 与住建、自然资源标准 [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES] [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311]。
+1. 征集公开任务书 `brief/public-brief.md` 与智能体任务书，2026 年 [source:PUBLIC-BRIEF]
+2. 北京市园林绿化局关于京张铁路遗址公园一期开放的公开信息，2023 年 [source:JZ-PARK-PHASE1-20230626]
+3. 首都之窗与海淀区政府关于二期计划、在建状态和沿线组团的公开信息 [source:JZ-PARK-PHASE2-20240920]
+4. 《风景园林》关于一期北段的项目记录，2025 年 [source:JZ-PARK-LANDSCAPE-ARCHITECTURE-20251210]
+5. 北京市 2020 年公布的京张铁路遗址公园六套设计方案 [source:JZ-PARK-SIX-SCHEMES-20200411]
+6. 海淀区政府关于笑祖塔段完工和 13 号线西侧绕行诉求的公开页面 [source:JZ-PARK-XIAOZUTA-20250822]
+7. 清华东路南侧公共空间改造项目与清华园车站旧址文保范围 [source:QINGHUA-EAST-SOUTH-20260602]
+8. 小月河生态廊道工程可研与建设招标文件 [source:XIAOYUEHE-FEASIBILITY-202405]
+9. 《公园设计规范》GB 51192 和北京市全龄友好型公园建设导则 [source:STANDARD-GB51192-PARK-DESIGN]
+10. Sasaki 与 ASLA 的徐汇跑道公园项目页 [source:CASE-XUHUI-ASLA-2021]
+11. 多伦多 Under Gardiner 公共空间计划与 Waterfront Toronto 设计评审报告 [source:CASE-UNDER-GARDINER-PRP]
+12. King's Cross 的总体更新与公众参与记录 [source:CASE-KINGS-CROSS-HUMAN-CITY]
+13. 费城 Rail Park 一期设计与维护说明 [source:CASE-RAIL-PARK-PHASE1]
+14. 马德里市政府的 Madrid Río 项目记录 [source:CASE-MADRID-RIO-CITY]
+15. Landscape Performance Series 的徐汇跑道公园建后评估 [source:CASE-XUHUI-LPS]
 
-场地事实采用京张公园众创解读 [source:JZ-PARK-CO-CREATION-20211216]、二期与总体推进信息 [source:JZ-PARK-PHASE2-20240920] [source:JZ-PARK-AXIS-20260330]、清华东路南侧项目 [source:QINGHUA-EAST-SOUTH-20260602]、小月河工程 [source:XIAOYUEHE-PROJECT-20240305] [source:XIAOYUEHE-WATERFRONT-20260112]、清华园文保控制 [source:QINGHUAYUAN-HERITAGE-CONTROL-20260214]、慢行与绿道文件 [source:BEIJING-WALK-CYCLE-STANDARD-20201223] [source:BEIJING-GREENWAY-GUIDE-20250725] [source:BEIJING-GREENWAY-MANAGEMENT-20260429]、城市更新文件 [source:BEIJING-URBAN-RENEWAL-REGULATION-20221206] [source:HAIDIAN-URBAN-RENEWAL-GUIDE-20250716] 和公共服务资料 [source:AI-ORIGIN-TALENT-STATION-20260722]。
-
-开放数据与研究方法采用 OSM [source:OSM-OVERPASS-20260808]、清华园车站照片 [source:WIKIMEDIA-QINGHUAYUAN-20240331]、海淀统计公报 [source:HAIDIAN-STATS-20260410]、北京市智能体政策 [source:BEIJING-AGENT-POLICY-20260723] 与铁路遗产建后评估研究 [source:HERITAGE-POE-20241106]。来源登记与处理事实包保存在 [source:SOURCE-REGISTRY] 和 [source:PROCESSED-FACT-PACK]。背景参考包括 [source:JINGZHANG-HISTORY-NRA]、[source:JINGZHANG-PARK-BJGH]、[source:ZHONGGUANCUN-ZGC]、[source:TSINGHUAYUAN-HERITAGE]、[source:WCAG22]、[source:PIPL]、[source:NIST-AI-RMF] 与 [source:UNESCO-AI-ETHICS]。
+完整来源、假设、风险、指标和标准保存在 `sources.json`、`assumptions.json`、`risk.json`、`metrics.json` 与三个矩阵文件中。图面采用的专业案例只作阅读和方法参照，不能支持京张的场地事实、法定边界或建设承诺。[source:SOURCE-REGISTRY]

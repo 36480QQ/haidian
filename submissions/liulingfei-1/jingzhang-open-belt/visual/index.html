@@ -3,44 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>京张开源带，把九公里公园接回日常</title>
+<meta name="color-scheme" content="light">
+<title>京张开源带｜城市设计图集</title>
 <style>
-:root{--paper:#f3eee2;--paper2:#fbf8f0;--ink:#17211f;--muted:#66706b;--line:#c9c2b4;--red:#c64d39;--green:#527565;--gold:#b58a3a;--blue:#6f9ea1}
-*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hiragino Sans GB","PingFang SC",sans-serif;line-height:1.65;overflow-x:hidden}a{color:inherit}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:white;padding:10px;z-index:99}
-.bar{position:sticky;top:0;z-index:30;background:rgba(243,238,226,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.barin{max-width:1480px;height:64px;margin:auto;padding:0 30px;display:flex;align-items:center;gap:24px}.brand{font-weight:900;letter-spacing:.08em}.brand small{display:block;font-size:9px;color:var(--red);letter-spacing:.2em}.nav{margin-left:auto;display:flex;gap:19px}.nav a,.lang{font-size:12px;text-decoration:none;padding:8px 0;border-bottom:1px solid transparent}.nav a:hover,.lang:hover{border-color:var(--red)}
-.hero{max-width:1480px;margin:auto;border-inline:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.16fr) minmax(390px,.84fr);min-height:760px}.herofigure{margin:0;position:relative;background:#202624;min-height:760px}.herofigure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(.95)}.herofigure figcaption{position:absolute;left:24px;right:24px;bottom:20px;background:rgba(23,33,31,.82);color:#fff;padding:10px 12px;font-size:10px}.herocopy{padding:52px 44px 38px;border-left:1px solid var(--line);display:flex;flex-direction:column}.eyebrow{color:var(--red);font-size:11px;font-weight:800;letter-spacing:.17em}.herocopy h1{font-family:"Songti SC",serif;font-size:clamp(48px,5vw,82px);line-height:1.02;letter-spacing:-.04em;margin:30px 0 24px}.herocopy h1 span{display:block;font:700 .38em/1.3 "Avenir Next",sans-serif;letter-spacing:.04em;color:var(--green);margin-top:20px}.lead{font-family:"Songti SC",serif;font-size:22px;line-height:1.6;margin:0}.note{margin-top:26px;padding-top:18px;border-top:1px solid var(--ink);color:var(--muted);font-size:14px}.actions{margin-top:auto;display:flex;gap:9px;flex-wrap:wrap}.button{display:inline-block;padding:10px 15px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:12px}.button.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
-.facts{max-width:1480px;margin:auto;border:1px solid var(--line);border-top:0;display:grid;grid-template-columns:repeat(3,1fr)}.fact{padding:25px 28px;border-right:1px solid var(--line)}.fact:last-child{border-right:0}.fact strong{display:block;font:700 29px/1.2 "Songti SC",serif}.fact p{font-size:12px;color:var(--muted);margin:9px 0 0;max-width:360px}
-.section{max-width:1380px;margin:auto;padding:96px 34px}.section.full{max-width:none;background:var(--paper2)}.section.full>.inner{max-width:1312px;margin:auto}.head{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;margin-bottom:30px}.mile{border-top:3px solid var(--red);padding-top:10px;color:var(--red);font-size:11px;letter-spacing:.12em}.head h2{font:700 clamp(38px,4.2vw,64px)/1.08 "Songti SC",serif;letter-spacing:-.035em;margin:0}.intro{max-width:850px;margin:0 0 34px 176px;color:var(--muted);font-size:17px}.figure{display:block;width:100%;height:auto;border:1px solid var(--line);background:var(--paper)}.caption{font-size:10px;color:var(--muted);margin:10px 0 0}.spread{display:grid;grid-template-columns:1fr 1fr;gap:18px}.scene{margin:0}.scene img{display:block;width:100%;height:auto}.scene figcaption{background:var(--ink);color:#e9e4d9;padding:11px 15px;font-size:11px}.three{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-top:28px}.place{padding:23px 24px;border-right:1px solid var(--line)}.place:last-child{border-right:0}.place b{font-size:11px;color:var(--red);letter-spacing:.12em}.place h3{font:700 25px/1.25 "Songti SC",serif;margin:8px 0}.place p{font-size:13px;color:var(--muted);margin:0}.day{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin-top:18px}.moment{padding:22px;border-right:1px solid var(--line)}.moment:last-child{border-right:0}.moment time{font-size:25px;font-weight:800;color:var(--red)}.moment h3{font:700 20px/1.3 "Songti SC",serif;margin:10px 0 6px}.moment p{font-size:12px;color:var(--muted);margin:0}.evidence{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}.ledger{border-top:1px solid var(--line);margin:0;padding:0;list-style:none}.ledger li{padding:15px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:92px 1fr;gap:12px;font-size:13px}.ledger b{color:var(--red)}.metrics{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-top:24px}.metric{padding:19px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.metric:nth-child(2n){border-right:0}.metric strong{display:block;font-size:25px}.metric span{font-size:11px;color:var(--muted)}
-.coverage{max-width:1380px;margin:auto;padding:30px 34px;border-top:1px solid var(--line);background:var(--paper2)}.coverage h2{font:700 24px/1.2 "Songti SC",serif;margin:0 0 12px}.coverage p{margin:0;color:var(--muted);font-size:12px}.coverage-list{display:flex;flex-wrap:wrap;gap:8px 16px;margin:15px 0 0;padding:0;list-style:none}.coverage-list li{font-size:11px;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:3px}
-footer{background:var(--ink);color:var(--paper);padding:44px 30px}.foot{max-width:1380px;margin:auto;display:flex;justify-content:space-between;gap:30px}.foot p{max-width:800px;margin:0;color:#cad2cd;font-size:12px}
-@media(max-width:920px){.nav{display:none}.barin{padding:0 18px}.hero{grid-template-columns:1fr;min-height:0;border-inline:0}.herofigure{min-height:56vh}.herofigure figcaption{position:relative;left:auto;right:auto;bottom:auto;margin-top:56vh;background:var(--ink)}.herocopy{border-left:0;padding:36px 20px}.actions{margin-top:28px}.facts{grid-template-columns:1fr;border-inline:0}.fact{border-right:0;border-bottom:1px solid var(--line)}.section{padding:68px 18px}.head{grid-template-columns:1fr;gap:10px}.intro{margin-left:0}.spread,.evidence{grid-template-columns:1fr}.three,.day{grid-template-columns:1fr}.place,.moment{border-right:0;border-bottom:1px solid var(--line)}.foot{display:block}.foot p{margin-top:16px}}
-@media(max-width:480px){.herocopy h1{font-size:48px}.head h2{font-size:38px}.metrics{grid-template-columns:1fr}.metric{border-right:0}.herofigure{min-height:48vh}.herofigure figcaption{margin-top:48vh}.section,.coverage{padding-inline:14px}}
+:root{--paper:#f2efe6;--paper-2:#e8e4d9;--ink:#17211d;--muted:#646b66;--line:#c8c2b5;--red:#bc4936;--green:#355e50;--bar:52px}
+*{box-sizing:border-box}
+html{overflow-x:hidden;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.5;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit}
+.skip{position:fixed;top:-70px;left:14px;z-index:100;padding:9px 13px;background:var(--ink);color:#fff;text-decoration:none}.skip:focus{top:10px}
+.sitebar{position:sticky;top:0;z-index:30;height:var(--bar);display:flex;align-items:center;gap:28px;padding:0 clamp(16px,3vw,42px);border-bottom:1px solid rgba(23,33,29,.18);background:rgba(242,239,230,.95);backdrop-filter:blur(12px)}
+.brand{font-size:13px;font-weight:800;letter-spacing:.08em;text-decoration:none;white-space:nowrap}.brand small{margin-left:10px;color:var(--red);font-size:8px;letter-spacing:.17em}
+.sitebar nav{display:flex;gap:22px;margin-left:auto}.sitebar nav a,.lang{padding:17px 0 14px;color:var(--muted);font-size:11px;text-decoration:none;border-bottom:2px solid transparent}.sitebar nav a:hover,.sitebar nav a:focus-visible,.lang:hover,.lang:focus-visible{color:var(--ink);border-color:var(--red)}.lang{color:var(--ink);font-weight:800}
+.hero{border-bottom:1px solid var(--line)}
+.hero-intro{max-width:1680px;margin:auto;padding:26px clamp(16px,3vw,42px) 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end}
+.eyebrow,.section-no{margin:0;color:var(--red);font-size:9px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{margin:6px 0 0;font-family:"Songti SC","STSong",serif;font-size:clamp(42px,4.25vw,66px);font-weight:700;line-height:1;letter-spacing:-.045em}
+.hero-line{margin:11px 0 0;max-width:690px;font-family:"Songti SC","STSong",serif;font-size:clamp(16px,1.35vw,21px);line-height:1.48}
+.actions{min-width:0;max-width:100%;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}.actions a{min-width:0;min-height:36px;display:inline-flex;align-items:center;padding:8px 12px;border:1px solid var(--ink);font-size:10px;text-decoration:none}.actions a:first-child{background:var(--ink);color:var(--paper)}.actions a:hover,.actions a:focus-visible{border-color:var(--red);background:var(--red);color:#fff}
+.hero-media{max-width:1680px;height:clamp(520px,48vw,720px);margin:auto;display:grid;grid-template-columns:minmax(0,2.45fr) minmax(310px,.85fr);border-top:1px solid var(--line);border-inline:1px solid var(--line);background:#f7f4ec}
+figure{margin:0;min-width:0}.hero-map,.hero-scene{display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}.hero-map{border-right:1px solid var(--line)}
+.hero-map img{width:100%;height:100%;object-fit:contain;background:#f7f4ec}.hero-scene{background:var(--ink)}.hero-scene img{width:100%;height:100%;object-fit:cover;object-position:54% center;filter:saturate(.86) contrast(.98)}
+figcaption{min-height:34px;padding:8px 11px;border-top:1px solid var(--line);background:var(--paper);color:var(--muted);font-size:9px;letter-spacing:.02em}.hero-scene figcaption{border-color:#414a45;background:var(--ink);color:#e8e5dc}.fig-no{margin-right:8px;color:var(--red);font-weight:800}
+.facts{max-width:1680px;margin:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-inline:1px solid var(--line);border-top:1px solid var(--line)}
+.fact{min-height:108px;padding:17px clamp(14px,2vw,28px);border-right:1px solid var(--line)}.fact:last-child{border-right:0}.fact strong{display:block;font-family:"Songti SC","STSong",serif;font-size:clamp(22px,2.1vw,33px);font-weight:500;line-height:1.05}.fact span{display:block;margin-top:8px;color:var(--muted);font-size:10px}.fact em{color:var(--red);font-style:normal}
+.atlas{overflow:hidden}.atlas-section{padding:clamp(66px,7vw,112px) clamp(12px,3vw,42px);border-bottom:1px solid var(--line)}.atlas-section.alt{background:var(--paper-2)}
+.section-head{max-width:1580px;margin:0 auto 24px;display:grid;grid-template-columns:135px minmax(0,790px);gap:28px;align-items:start}.section-no{padding-top:7px;border-top:2px solid var(--red)}.section-head h2{margin:0;font-family:"Songti SC","STSong",serif;font-size:clamp(34px,3.8vw,57px);font-weight:700;line-height:1.04;letter-spacing:-.035em}.section-head p:last-child{margin:10px 0 0;color:var(--muted);font-size:13px}
+.drawing{max-width:1580px;margin:auto;border:1px solid var(--line);background:#f7f4ec;overflow:hidden}.drawing img{width:100%;height:auto;object-fit:contain;background:#f7f4ec;transition:transform .45s ease}.drawing:hover img{transform:scale(1.003)}
+.zoom-link{display:block;cursor:zoom-in}.zoom-link:focus-visible{outline:2px solid var(--red);outline-offset:-3px}
+.scene-strip{max-width:1580px;margin:18px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;border:1px solid var(--line);background:var(--line)}.scene{display:grid;grid-template-rows:minmax(0,1fr) auto;background:var(--paper);overflow:hidden}.scene img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:saturate(.9)}.scene-note{max-width:1580px;margin:8px auto 0;color:var(--muted);font-size:9px}
+.sequence{max-width:1580px;margin:auto;display:grid;gap:44px}.sequence .drawing:nth-child(even){margin-left:clamp(0px,5vw,80px)}.sequence .drawing:nth-child(odd){margin-right:clamp(0px,5vw,80px)}
+.review{padding:58px clamp(14px,3vw,42px) 64px;background:var(--ink);color:#e9ebe6}.review-inner{max-width:1580px;margin:auto}.review h2{margin:0 0 24px;font-family:"Songti SC","STSong",serif;font-size:clamp(28px,3vw,44px);font-weight:500}.review-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(360px,.8fr);gap:52px;border-top:1px solid #68716c;padding-top:18px}.index-list{margin:0}.index-list div{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid #38443e}.index-list dt{color:#9ea7a1;font-size:10px}.index-list dd{margin:0;font-size:12px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid #68716c}.metric{padding:13px 10px 13px 0;border-right:1px solid #38443e}.metric:last-child{border-right:0;padding-left:10px}.metric strong{display:block;color:#fff;font-family:"Songti SC","STSong",serif;font-size:clamp(21px,2vw,31px);font-weight:500;white-space:nowrap}.metric span{display:block;margin-top:3px;color:#a8b0ab;font-size:9px}.check{margin:15px 0 0;color:#c5cbc6;font-size:11px}.filelinks{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px}.filelinks a{font-size:10px;text-underline-offset:4px}
+footer{display:flex;justify-content:space-between;gap:24px;padding:24px clamp(16px,3vw,42px);background:#101713;color:#adb4af;font-size:9px}footer strong{color:#f0eee8;letter-spacing:.07em}
+@media(max-width:980px){.sitebar nav{display:none}.hero-intro{grid-template-columns:1fr}.actions{justify-content:flex-start}.hero-media{height:auto;grid-template-columns:1fr}.hero-map{border-right:0;border-bottom:1px solid var(--line)}.hero-map img{aspect-ratio:16/9}.hero-scene img{aspect-ratio:16/9}.review-grid{grid-template-columns:1fr}.section-head{grid-template-columns:110px 1fr}}
+@media(max-width:650px){:root{--bar:50px}.sitebar{padding-inline:13px}.brand small{display:none}.lang{margin-left:auto}.hero-intro{min-width:0;padding:20px 13px 16px}.hero h1{font-size:40px}.hero-line{font-size:16px}.actions{width:100%;display:grid;grid-template-columns:1.35fr 1fr 1fr}.actions a{justify-content:center;padding-inline:6px;white-space:nowrap}.hero-media{border-inline:0}.hero-map img,.hero-scene img{aspect-ratio:16/9}.facts{grid-template-columns:repeat(2,1fr);border-inline:0}.fact{min-height:92px}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}.fact strong{font-size:24px}.atlas-section{padding:52px 10px}.section-head{grid-template-columns:1fr;gap:7px;margin-bottom:17px}.section-no{width:86px}.section-head h2{font-size:34px}.section-head p:last-child{font-size:12px}.scene-strip{grid-template-columns:1fr}.sequence{gap:28px}.sequence .drawing:nth-child(n){margin-inline:0}.review{padding:44px 13px 52px}.review-grid{gap:28px}.metrics{grid-template-columns:1fr}.metric,.metric:last-child{padding:11px 0;border-right:0;border-bottom:1px solid #38443e}.metric:last-child{border-bottom:0}footer{display:block}footer span{display:block;margin-top:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.drawing img{transition:none}}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">跳到正文</a>
-<header class="bar"><div class="barin"><div class="brand">JZ OPEN<small>RAILWAY COMMONS</small></div><nav class="nav"><a href="#field">现场</a><a href="#structure">总图</a><a href="#courts">三院</a><a href="#day">一天</a><a href="#build">建造</a><a href="#evidence">复核</a></nav><a class="lang" href="index.en.html">EN</a></div></header>
-<main id="main">
-<section class="hero"><figure class="herofigure"><img src="../assets/reference/qinghuayuan-station-2024.jpg" alt="修缮后的清华园车站旧址"><figcaption>清华园车站旧址既有照片　N509FZ　Wikimedia Commons　CC BY-SA 4.0</figcaption></figure><div class="herocopy"><div class="eyebrow">JINGZHANG OPEN BELT</div><h1>把九公里公园接回日常<span>京张开源带</span></h1><p class="lead">先把路走顺。沿线要有能停下来的地方；试验出了问题，现场有人接手。</p><p class="note">我把一期公园、二期计划、清华东路南侧项目、小月河工程和清华园车站文保要求放到同一张图上。方案只补它们之间还没有接牢的使用和维护问题。</p><div class="actions"><a class="button" href="../report/proposal.html">读完整方案</a><a class="button alt" href="../drawings/a3-booklet.pdf">A3 手册</a><a class="button alt" href="../drawings/a0-boards.pdf">A0 展板</a></div></div></section>
-<div class="facts"><div class="fact"><strong>9 公里</strong><p>遗址公园穿过九个街镇，约六公里高铁入地释放了地面。</p></div><div class="fact"><strong>一线　三院　六庭</strong><p>一条公共脊经过三座院落，六类小庭补足树荫、雨水和停留。</p></div><div class="fact"><strong>90 天　1 年　3 年</strong><p>小样先用起来，复测以后再决定留下、修改或撤掉。</p></div></div>
+<a class="skip" href="#atlas">跳到图集</a>
+<header class="sitebar">
+  <a class="brand" href="#top">京张开源带<small>JINGZHANG OPEN BELT</small></a>
+  <nav aria-label="图集导航"><a href="#scale">三层范围</a><a href="#courts">三院</a><a href="#route">慢行剖面</a><a href="#build">构件分期</a><a href="#review">核验</a></nav>
+  <a class="lang" href="index.en.html" lang="en">EN</a>
+</header>
+<main>
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-intro">
+      <div><p class="eyebrow">2026 概念方案　城市设计图集</p><h1 id="hero-title">京张开源带</h1><p class="hero-line">把已经开园和正在建设的九公里公园，接到社区门口、地铁出口与每天要去的地方。</p></div>
+      <div class="actions" aria-label="方案文件"><a href="../report/proposal.html">读方案正文</a><a href="../drawings/a3-booklet.pdf" download>A3 图册</a><a href="../drawings/a0-boards.pdf" download>A0 展板</a></div>
+    </div>
+    <div class="hero-media">
+      <figure class="hero-map"><a class="zoom-link" href="../assets/figures/site-overview.png" target="_blank" rel="noopener" aria-label="打开总体图原尺寸"><img src="../assets/figures/site-overview.png" alt="标出一期已建、二期在建和本案新增接口的京张铁路遗址公园总体图" fetchpriority="high"></a><figcaption><span class="fig-no">01</span>现状、在建项目与本案新增接口</figcaption></figure>
+      <figure class="hero-scene"><img src="../assets/scenes/ai-origin-service-court.jpg" alt="树荫下有人值守的 AI 原点服务院概念生活场景" fetchpriority="high"><figcaption>AI 原点服务院　概念生活场景</figcaption></figure>
+    </div>
+    <div class="facts" aria-label="公开项目事实">
+      <div class="fact"><strong>2.4 km</strong><span>一期已建开放　<em>16.8 ha</em></span></div>
+      <div class="fact"><strong>二期在建</strong><span>已公布九条支路与八处社区活动场地</span></div>
+      <div class="fact"><strong>9 km</strong><span>遗址公园公开规模　约 <em>70 ha</em></span></div>
+      <div class="fact"><strong>只补接口</strong><span>已建与已批工程沿用原方案，不重复署名</span></div>
+    </div>
+  </section>
 
-<section class="section" id="field"><div class="head"><div class="mile">现场　KM 00 到 09</div><h2>城市已经在这里</h2></div><p class="intro">公开资料能确认公园建设、已批连接和文保要求。OSM 补上道路、水系与站点背景。暂定边界保持虚线，重要路口留给现场复核。</p><img class="figure" src="../assets/figures/site-overview.png" alt="已建项目、公开计划与总体结构"><p class="caption">底图　© OpenStreetMap contributors　ODbL 1.0　仅作现状语境</p></section>
+  <div class="atlas" id="atlas">
+    <section class="atlas-section" id="scale" aria-labelledby="scale-title">
+      <div class="section-head"><p class="section-no">02　SCALE</p><div><h2 id="scale-title">从现状走到总图</h2><p>九公里看贯通，八百米看街区，一百二十米看门和坡道。</p></div></div>
+      <figure class="drawing"><a class="zoom-link" href="../assets/figures/land-use-structure.png" target="_blank" rel="noopener" aria-label="打开三层范围图原尺寸"><img src="../assets/figures/land-use-structure.png" alt="九公里总体、八百米街区和一百二十米院落的三层范围图"></a><figcaption><span class="fig-no">02</span>三层范围　用地分区、建筑与入口下钻</figcaption></figure>
+    </section>
 
-<section class="section full" id="structure"><div class="inner"><div class="head"><div class="mile">总图　北中南三段</div><h2>狭长场地拆开看</h2></div><p class="intro">整条走廊横向展开，北、中、南各自放大。用地回到道路和街坊里，慢行线也能看见从哪里出发、在哪个路口断开。</p><div class="spread"><img class="figure" src="../assets/figures/land-use-structure.png" alt="三段用地与城市纹理"><img class="figure" src="../assets/figures/mobility-bluegreen.png" alt="慢行蓝绿与典型剖面"></div></div></section>
+    <section class="atlas-section alt" id="courts" aria-labelledby="courts-title">
+      <div class="section-head"><p class="section-no">03　COURTS</p><div><h2 id="courts-title">三处院落，同尺画清</h2><p>入口、树冠、雨庭、测试边界与值守位置都落在平面和剖面里。</p></div></div>
+      <figure class="drawing"><a class="zoom-link" href="../assets/figures/key-areas.png" target="_blank" rel="noopener" aria-label="打开三处院落详图原尺寸"><img src="../assets/figures/key-areas.png" alt="众智园、AI 原点和大钟寺三处院落总平面、入口放大与六条剖面"></a><figcaption><span class="fig-no">03</span>众智园试验院　AI 原点服务院　大钟寺交换院</figcaption></figure>
+      <div class="scene-strip" aria-label="三处院落的概念生活场景">
+        <figure class="scene"><img src="../assets/scenes/zhongzhiyuan-test-court.jpg" alt="众智园围合低速测试院概念场景"><figcaption>众智园　围合低速测试</figcaption></figure>
+        <figure class="scene"><img src="../assets/scenes/xiaoyuehe-crossing.jpg" alt="小月河无障碍连接概念场景"><figcaption>小月河　无障碍连接</figcaption></figure>
+        <figure class="scene"><img src="../assets/scenes/dazhongsi-evening-court.jpg" alt="大钟寺傍晚交换院概念场景"><figcaption>大钟寺　傍晚小课</figcaption></figure>
+      </div>
+      <p class="scene-note">概念场景只说明使用方式与空间尺度，不作为现状照片或批准方案。</p>
+    </section>
 
-<section class="section" id="courts"><div class="head"><div class="mile">重点区　KM 03　05　08</div><h2>三座院落各做一件事</h2></div><p class="intro">众智园收住低速测试，AI 原点让公共服务有人接手，大钟寺把站、街和公园接到一起。三张平面采用同一比例尺，下面紧跟人的剖面。</p><img class="figure" src="../assets/figures/key-areas.png" alt="三处院落同尺平面和剖面"><div class="three"><article class="place"><b>01 众智园</b><h3>低速试验院</h3><p>普通步道从围合测试条带旁经过。入口有人值守，手动停机点在现场可见。</p></article><article class="place"><b>02 AI 原点</b><h3>共学服务院</h3><p>无障碍坡道接到服务桌。旧站房周边只放低矮、可撤的设施。</p></article><article class="place"><b>03 大钟寺</b><h3>城市交换院</h3><p>家具活动结束后归库。夜间时段跟着居民反馈调整。</p></article></div></section>
+    <section class="atlas-section" id="route" aria-labelledby="route-title">
+      <div class="section-head"><p class="section-no">04　SECTION</p><div><h2 id="route-title">慢行先落到剖面</h2><p>步行、骑行、轨道与小月河接口逐段核对，窄处怎样让行也画出来。</p></div></div>
+      <figure class="drawing"><a class="zoom-link" href="../assets/figures/mobility-bluegreen.png" target="_blank" rel="noopener" aria-label="打开慢行剖面图原尺寸"><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行、轨道和蓝绿公共空间的七种典型实尺度剖面"></a><figcaption><span class="fig-no">04</span>交通慢行　蓝绿公共空间　七种典型剖面</figcaption></figure>
+    </section>
 
-<section class="section full"><div class="inner"><div class="head"><div class="mile">概念想象</div><h2>先看看人会怎样使用</h2></div><p class="intro">这张图帮助理解三处院落的尺度和气氛。它不代表现状，也不替代平面、剖面和文保核验。</p><figure class="scene"><img src="../assets/figures/three-courtyards-concept.png" alt="三座院落的日常使用概念想象"><figcaption>概念想象　北段低速测试　中段共学服务　南段夜间交流</figcaption></figure></div></section>
+    <section class="atlas-section alt" aria-labelledby="daily-title">
+      <div class="section-head"><p class="section-no">05 / 06　DAILY</p><div><h2 id="daily-title">一天怎么过，三百米怎么走</h2><p>早高峰先通行，白天有人服务，傍晚开小课，测试留在围栏里。</p></div></div>
+      <div class="sequence">
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/scenario-operations.png" target="_blank" rel="noopener" aria-label="打开场景运营图原尺寸"><img src="../assets/figures/scenario-operations.png" alt="三处院落从清晨到夜间的真实一天和人工值守安排"></a><figcaption><span class="fig-no">05</span>AI 场景　一天里的使用、值守与停测条件</figcaption></figure>
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/ecosystem-space.png" target="_blank" rel="noopener" aria-label="打开服务节点图原尺寸"><img src="../assets/figures/ecosystem-space.png" alt="高校、社区、企业和三处院落之间的三百米步行关系"></a><figcaption><span class="fig-no">06</span>三百米服务节点　高校、社区与沿线入口</figcaption></figure>
+      </div>
+    </section>
 
-<section class="section" id="day"><div class="head"><div class="mile">铁路上的一天</div><h2>早上通勤，晚上测试</h2></div><p class="intro">早上先看路，中午有人办事，傍晚留给散步和照护。围合测试放到夜间，现场人员掌握停机权。</p><img class="figure" src="../assets/figures/scenario-operations.png" alt="早午晚夜四个使用时段"><div class="day"><article class="moment"><time>07.30</time><h3>到达</h3><p>断网时固定导视仍然可用。</p></article><article class="moment"><time>12.00</time><h3>办事与共学</h3><p>错误答复马上交给工作人员。</p></article><article class="moment"><time>17.30</time><h3>散步与照护</h3><p>树荫、座位和厕所先满足。</p></article><article class="moment"><time>21.00</time><h3>测试与维护</h3><p>设备越界，测试当天结束。</p></article></div></section>
+    <section class="atlas-section" id="build" aria-labelledby="build-title">
+      <div class="section-head"><p class="section-no">07 / 08　BUILD</p><div><h2 id="build-title">构件能拆，分期能停</h2><p>尺寸、接头、管养人和退出条件一起看，先做小样，再决定要不要留下。</p></div></div>
+      <div class="sequence">
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/components-phasing.png" target="_blank" rel="noopener" aria-label="打开公共构件图原尺寸"><img src="../assets/figures/components-phasing.png" alt="座椅、雨庭边框、门牌和雨棚的材料及连接详图"></a><figcaption><span class="fig-no">07</span>公共构件　材料、节点与维护方式</figcaption></figure>
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/phasing-strategy.png" target="_blank" rel="noopener" aria-label="打开更新分期图原尺寸"><img src="../assets/figures/phasing-strategy.png" alt="九十天、一年和三年的更新项目位置、责任人与退出条件"></a><figcaption><span class="fig-no">08</span>更新项目　九十天、一年与三年</figcaption></figure>
+      </div>
+    </section>
 
-<section class="section full"><div class="inner"><div class="head"><div class="mile">研究与服务</div><h2>三处院落把人接到一起</h2></div><p class="intro">高校带来研究问题，社区提出日常麻烦。运营人员记录维护成本，水务和文保部门核验各自边界。</p><img class="figure" src="../assets/figures/ecosystem-space.png" alt="研究测试与公共服务落位"></div></section>
-
-<section class="section" id="build"><div class="head"><div class="mile">建造与维护</div><h2>小构件先用起来</h2></div><p class="intro">棚、座椅、雨庭和服务桌都能单件维修。测试边界与呼叫柱保留人工响应，九个项目回到沿线位置。</p><img class="figure" src="../assets/figures/components-phasing.png" alt="公共构件和项目位置"></section>
-
-<section class="section full" id="evidence"><div class="inner"><div class="head"><div class="mile">资料与复核</div><h2>知道多少，就画到多少</h2></div><p class="intro">官方页面说明项目状态，OSM 提供现状语境，GeoJSON 用来比较方案和复算工作面积。法定控制继续待核。</p><div class="evidence"><img class="figure" src="../assets/figures/metrics-evidence.png" alt="方案比较和资料边界"><div><ul class="ledger"><li><b>文保</b><span>清华园控制线由主管部门定位。</span></li><li><b>已批项目</b><span>清华东路南侧连接作为协作接口。</span></li><li><b>小月河</b><span>河道工程和计划步道分开计算。</span></li><li><b>OSM</b><span>关键路口仍需现场复核。</span></li></ul><div class="metrics"><div class="metric" data-metric="site_area_sqm" data-value="11412603.01"><strong>11.413 km²</strong><span>场地工作值</span></div><div class="metric" data-metric="green_ratio" data-value="0.226745"><strong>22.67%</strong><span>绿地工作比</span></div><div class="metric" data-metric="public_space_ratio" data-value="0.044027"><strong>4.40%</strong><span>公共空间工作比</span></div><div class="metric"><strong>14　6　8　9</strong><span>场景　测试　人群　项目</span></div></div></div></div></div></section>
+    <section class="atlas-section alt" aria-labelledby="audit-title">
+      <div class="section-head"><p class="section-no">09 / 10　CHECK</p><div><h2 id="audit-title">服务怎么查，沿线怎么认</h2><p>可复算的数留在图上，待测项目留空；入口牌直接告诉人下一站在哪里。</p></div></div>
+      <div class="sequence">
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/metrics-evidence.png" target="_blank" rel="noopener" aria-label="打开服务审计图原尺寸"><img src="../assets/figures/metrics-evidence.png" alt="现状事实、方案工作值和待现场核查项目的服务审计图"></a><figcaption><span class="fig-no">09</span>核心指标　任务覆盖与服务审计</figcaption></figure>
+        <figure class="drawing"><a class="zoom-link" href="../assets/figures/identity-system.png" target="_blank" rel="noopener" aria-label="打开沿线标识图原尺寸"><img src="../assets/figures/identity-system.png" alt="入口门牌、里程柱和低位阅读架在现场的导向方式"></a><figcaption><span class="fig-no">10</span>沿线标识　入口、里程与遗产阅读</figcaption></figure>
+      </div>
+    </section>
+  </div>
 </main>
-<section class="coverage" aria-labelledby="coverage-title"><h2 id="coverage-title">图纸索引</h2><p>把一张长线拆成可以核对的图纸，正文、附件与复核状态在这里对应。</p><ul class="coverage-list"><li>总览地图</li><li>三层范围</li><li>重点区域</li><li>用地分区</li><li>交通慢行</li><li>蓝绿公共空间</li><li>建筑</li><li>更新项目</li><li>AI 场景</li><li>核心指标</li><li>任务覆盖</li><li>自检状态</li><li>来源</li><li>假设</li></ul></section>
-<footer><div class="foot"><div class="brand">JZ OPEN<small>RAILWAY COMMONS</small></div><p>概念方案　原创内容采用 CC BY 4.0　清华园照片采用 CC BY-SA 4.0　OSM 派生语境采用 ODbL 1.0　官方边界到位后重新复算。</p></div></footer>
+
+<section class="review" id="review" aria-labelledby="review-title">
+  <div class="review-inner">
+    <h2 id="review-title">图纸索引与核验</h2>
+    <div class="review-grid">
+      <dl class="index-list">
+        <div><dt>空间</dt><dd>总览地图　三层范围　重点区域　用地分区　建筑</dd></div>
+        <div><dt>系统</dt><dd>交通慢行　轨道　蓝绿公共空间　公共空间　更新项目</dd></div>
+        <div><dt>使用</dt><dd>AI 场景　核心指标　任务覆盖</dd></div>
+        <div><dt>核验</dt><dd>自检状态　来源　假设</dd></div>
+      </dl>
+      <div>
+        <div class="metrics" aria-label="核心指标">
+          <div class="metric" data-metric="site_area_sqm" data-value="11412603.01"><strong>11.413 km²</strong><span>场地工作面积</span></div>
+          <div class="metric" data-metric="green_ratio" data-value="0.226745"><strong>22.67%</strong><span>绿地工作比</span></div>
+          <div class="metric" data-metric="public_space_ratio" data-value="0.044027"><strong>4.40%</strong><span>公共空间工作比</span></div>
+        </div>
+        <p class="check">面积采用征集包工作边界。官方红线到位后，图纸与指标一起复算。</p>
+        <div class="filelinks"><a href="../self_check.json">自检文件</a><a href="../sources.json">来源清单</a><a href="../assumptions.json">假设清单</a><a href="../metrics.json">指标文件</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><strong>京张开源带　概念方案</strong><span>原创内容 CC BY 4.0　OSM 语境 ODbL 1.0　概念场景不代表现状或批准方案</span></footer>
 </body>
 </html>

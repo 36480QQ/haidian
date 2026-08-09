@@ -37,11 +37,11 @@
       "message": "面积与长度使用EPSG:4548复算，known指标含公式和来源。"
     },
     {
-      "check_id": "ADOPTION_FRAMEWORK",
+      "check_id": "CONVERSION_FRAMEWORK",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "一核一链三区三品五账在正文、图件、网页与图纸中使用同一命名。"
+      "message": "一线三场九室、三处五分钟人本序列和一委托一公共样机一年采用/退出在正文、图件、网页与图纸中使用同一命名。"
     },
     {
       "check_id": "AI_SCENE_COUNT",
@@ -135,11 +135,60 @@
       "message": "采用、复用、信任、收益和运维指标待第一年度采集基线。"
     },
     {
+      "check_id": "CONVERSION_ACCOUNTABILITY_CHAIN_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json",
+      "message": "京张转化责任链明确五联账本、五道门、空间许可、交付责任、公共底线、采用证据和回滚；合成示例保持concept_only。"
+    },
+    {
+      "check_id": "SPATIAL_ACCESS_CODE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/urban-room-control-code.json",
+      "message": "永久公共底座、可逆城市接口、限期AI服务与L1-L3公众暴露相互对应，且明确不是法定分区或工程标准。"
+    },
+    {
+      "check_id": "DELIVERY_AND_FISCAL_FIREWALL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/delivery-program.json",
+      "message": "前100天、六个交付包、主责职能、资金性质、年度运维、退出准备金与财政防火墙完整，不虚构预算和政府承诺。"
+    },
+    {
+      "check_id": "SEVEN_DIMENSION_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/review-evidence-index.json",
+      "message": "七维评审语言与正文、矩阵、图纸和机器文件建立证据索引；索引不指示或预定分数。"
+    },
+    {
+      "check_id": "DETERMINISTIC_ADVISORY_SCORE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "本地 score_submission.py --strict 复核为8项pass、0项needs-work、0项missing、0项manual-review；该结果仅为确定性投稿自检，不替代维护者和专家评分。"
+    },
+    {
       "check_id": "PDF_VISUAL_QA",
       "result": "pass",
       "severity": "major",
       "target": "drawings/",
       "message": "A3与A0均为非空多页PDF并纳入逐页渲染检查。"
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "中英文正文、离线HTML、视觉页、A3/A0与五张含文字图件逐一配对，采用bilingual_contract_version=1。"
+    },
+    {
+      "check_id": "LEGACY_NAME_RESIDUE",
+      "result": "pass",
+      "severity": "major",
+      "target": "submissions/kingyfleo/jingzhang-civic-foundry/",
+      "message": "文本、结构化文件、图件OCR与PDF文本层均未检出旧有护照命名或旧文件路径。"
     }
   ]
 }

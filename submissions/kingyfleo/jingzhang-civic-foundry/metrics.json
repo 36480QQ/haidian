@@ -449,6 +449,160 @@
       "assumptions": [
         "概念设计比例，不是审定控规指标。"
       ]
+    },
+    "conversion_accountability_chain_schema_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json"
+      ],
+      "formula": "count(machine_readable_jingzhang_conversion_accountability_chain_schemas)",
+      "confidence": "high",
+      "assumptions": [
+        "只表示概念协议结构完整，不表示政府许可、认证、部署或采用。"
+      ]
+    },
+    "conversion_layer_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(technical_conversion,social_conversion,value_conversion)",
+      "confidence": "high",
+      "assumptions": [
+        "三重转化是设计与交付框架，不表示任何项目已完成成果转化、社会采用或价值实现。"
+      ]
+    },
+    "adoption_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json",
+        "proposal.md"
+      ],
+      "formula": "count(G1_PUBLIC_NECESSITY..G5_ADOPT_RENEW_OR_EXIT)",
+      "confidence": "high",
+      "assumptions": [
+        "五道门是设计协议，不替代法定审批和专业审查。"
+      ]
+    },
+    "spatial_access_level_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/urban-room-control-code.json"
+      ],
+      "formula": "count(L1_CONTROLLED_VALIDATION,L2_CO_CREATION,L3_PUBLIC_PREMIERE)",
+      "confidence": "high",
+      "assumptions": [
+        "空间等级为概念性准入结构，不是法定分区。"
+      ]
+    },
+    "spatial_layer_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/urban-room-control-code.json"
+      ],
+      "formula": "count(permanent_public_baseline,reversible_civic_interface,time_limited_ai_service)",
+      "confidence": "high",
+      "assumptions": [
+        "空间层为性能与运营概念，不生成高度、退线、容量或工程结论。"
+      ]
+    },
+    "public_safeguard_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json"
+      ],
+      "formula": "count(free_basic_service,non_ai_channel,staffed_override,field_accessibility,no_scan_bypass,complaint_and_restoration)",
+      "confidence": "medium",
+      "assumptions": [
+        "只表示方案规定的底线数量，真实可用性须现场测试。"
+      ]
+    },
+    "funding_channel_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(public_baseline,research_and_innovation,public_interest,disclosed_sponsorship,earned_revenue)",
+      "confidence": "medium",
+      "assumptions": [
+        "只表示资金责任类别，不表示已获资金、预算或投资承诺。"
+      ]
+    },
+    "first_100_day_action_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(A100-01..A100-05)",
+      "confidence": "medium",
+      "assumptions": [
+        "100天为概念行动窗口，不是政府工期或实施承诺。"
+      ]
+    },
+    "delivery_package_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(PKG-01..PKG-06)",
+      "confidence": "medium",
+      "assumptions": [
+        "交付包是责任组合，不预设六个新机构、预算或采购。"
+      ]
+    },
+    "spatial_pattern_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/key-areas.png",
+        "assets/figures/key-areas.en.png"
+      ],
+      "formula": "count(P1_CIVIC_COMMISSION_PORCH..P6_MAINTENANCE_AND_EXIT_BENCH)",
+      "confidence": "high",
+      "assumptions": [
+        "只表示方案定义的可复用空间模式数量，不代表六类设施已经建设、批准或适用于全部场地。"
+      ]
+    },
+    "public_life_observation_window_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/mobility-bluegreen.en.png"
+      ],
+      "formula": "count(weekday,weekend) * count(morning,noon,evening)",
+      "confidence": "high",
+      "assumptions": [
+        "只表示建议的2×3公共生活观察时段，不虚构任何客流、停留或满意度实测结果；冷热雨雪与活动日另行复测。"
+      ]
     }
   }
 }

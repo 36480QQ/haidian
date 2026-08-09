@@ -2,26 +2,26 @@
 
 **Submission:** Jing-Zhang Open Pulse / 京张开源脉冲
 **Author:** 许丙南 (`147228`)
-**Iteration:** v3.0 (including v2.8 proof-mile and v3.0 fixed-figure closure)
+**Iteration:** package v3.5 (including the v3.2 rights-clean test-window replacement, v3.3 spatial-object refinement and v3.5 A0/readability repair)
 **Display licence:** `COMMUNITY-DISPLAY-ONLY`
 
 ## Scope of this statement
 
 This statement covers the formal package under `submissions/147228/jingzhang-open-pulse/`: Markdown narratives and translation, JSON metadata and analytical tables, GeoJSON geometry, generated figures, A3/A0 PDFs, offline HTML, and validation metadata. The path-level inventory is `visual/assets/copyright-ledger.json`; `manifest.json` records the package hashes. The ledger must be regenerated after any asset is edited.
 
-The v3.0 drawing set contains bilingual ten-page landscape A3 booklets (420 × 297 mm) and bilingual three-page landscape A0 boards (1189 × 841 mm). These are presentation exports of the local evidence figures, not construction documents; the PDF metadata and page boxes record the physical sizes so a reviewer can verify the intended print scale without treating the drawings as an official survey or approval set.
+The current drawing set is the v3.3 spatial-object layer within package v3.5: a bilingual ten-page landscape A3 booklet and bilingual five-page portrait A0 board export (420 × 297 mm and 841 × 1189 mm). v3.3 adds a machine-readable spatial-object refinement without changing the displayed area metrics; v3.4 changes public metadata wording and v3.5 repairs the A0 board layout and auxiliary-figure version labels. These PDFs remain presentation exports of the local evidence figures, not construction documents. The PDF metadata and page boxes record the physical sizes so a reviewer can verify the intended print scale without treating the drawings as an official survey or approval set.
 
 ## Authorship and generation
 
-The submitted text, diagrams, identity direction, component descriptions, scenario matrix, regional mechanism table, HTML pages and derived figures were authored or generated in the submission worktree by 许丙南 / Codex. The Relay Receipt schema has a separately disclosed peer-contribution reference below. The geometry is a provisional design-study package generated from the repository brief and maintained site-package constraints. It is not an official boundary, survey, cadastral record, statutory plan, construction drawing, product certification or government decision.
+The submitted text, diagrams, identity direction, component descriptions, scenario matrix, regional mechanism table, HTML pages, derived figures and the Open Pulse test-window record are authored or generated in the submission worktree by 许丙南 / Codex. The geometry is a provisional design-study package generated from the repository brief and maintained site-package constraints. It is not an official boundary, survey, cadastral record, statutory plan, construction drawing, product certification or government decision.
 
 The quantitative layer is an explicitly labelled design experiment. Official public statistical tables remain attributed to the sources registered in `sources.json`; transformations, years, units, missing values and limitations are recorded in `visual/assets/evidence-ledger.json` and the time-series assets. Modeled 0–100 values are relative decision scores, not official statistics, field measurements, causal forecasts or competition rankings.
 
-## Peer-contribution provenance
+## Prior-version rights correction
 
-`visual/assets/open-pulse-relay-receipt.schema.json` structurally adapts the Relay Receipt schema introduced by Mentat-Uran in [PR #426](https://github.com/open-city-ai/haidian/pull/426), commit [`d501100a`](https://github.com/open-city-ai/haidian/commit/d501100ab7b65f6fdcbf996359f8b9fe8f5b30f4), at `submissions/Mentat-Uran/jingzhang-civic-ai-relay/visual/assets/relay-receipt.schema.json`. Open Pulse rewrites the `$id`, title, scenario scope, status values, field restrictions and synthetic fixture for its own concept-only sandbox, but the shared record structure is now explicitly attributed rather than represented as a self-generated-only asset.
+The previous version of this package carried a peer-attributed structural adaptation of the Relay Receipt schema from Mentat-Uran PR #426. Because attribution is not adaptation permission and the rightsholder review remained open, the v3.2 rights-clean replacement removes that adapted schema and its fixture. `visual/assets/open-pulse-test-window-record.schema.json` is a new self-generated record organized around a bounded window, ordinary public path, human stop control, data contract, observation state, release decision and restoration; it does not embed the peer schema.
 
-The source package declares `COMMUNITY-DISPLAY-ONLY`. This record preserves attribution and the source's stated licence boundary; it does not claim that the peer submission endorses Open Pulse or that the schema is a government standard, deployed system or unrestricted reuse grant. Any further reuse remains subject to maintainer and rights-holder review.
+The prior peer package declares `COMMUNITY-DISPLAY-ONLY`; that licence boundary is not used as permission for the removed adaptation. The current test-window record is self-generated and does not claim that the peer submission endorses Open Pulse or that the record is a government standard, deployed system or unrestricted reuse grant.
 
 ## Third-party materials and external dependencies
 
@@ -35,7 +35,7 @@ The source package declares `COMMUNITY-DISPLAY-ONLY`. This record preserves attr
 
 Before adding any image, map, logo, font, data extract, event content or code dependency, a contributor must record: the exact path, author or provider, source URL or permission record, licence, attribution text, allowed derivative use, retrieval date, intended display, and SHA-256 hash. The contributor must then update `sources.json`, `visual/assets/copyright-ledger.json`, `manifest.json`, and the relevant narrative or figure caption. Unclear material stays out of the public package.
 
-The ledger's `clearance_status` distinguishes locally generated material from official public data with attribution and the one peer-attributed structural adaptation. `third_party_materials` is intentionally empty for locally generated v3.0 records, but the Relay Receipt schema record now names its peer source rather than claiming a self-generated-only origin. This is submission evidence, not a legal opinion; rights-holder confirmation remains necessary if the future implementation team introduces new content.
+The ledger's `clearance_status` distinguishes locally generated material from official public data with attribution. The v3.2 test-window record and v3.3 spatial refinement are self-generated and have no peer-derived material; future additions still require their own source, licence and rights review. This is submission evidence, not a legal opinion.
 
 ## Privacy, safety, and public-interest boundary
 

@@ -20,16 +20,20 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from validate_submission import (  # noqa: E402
     ALL_REQUIRED_TASK_IDS,
     FALLBACK_REQUIRED_STANDARD_IDS,
+    MODEL_FAMILY_VALUES,
     REQUIRED_SECTIONS,
     REQUIRED_SECTIONS_EN,
     REQUIRED_DESIGN_DEPTH_IDS,
+    ValidationReport,
     is_empty_pdf,
+    validate_agent_disclosure,
     validate_submission,
 )
 from github_pr_validation import (  # noqa: E402
     GitHubClient,
     MAX_DOWNLOAD_BYTES,
     _is_retryable_http_error,
+    is_current_pull_request_head,
     is_non_submission_pr,
     is_review_queue_candidate,
     main,
@@ -150,6 +154,129 @@ class GitHubApiResilienceTests(unittest.TestCase):
                 )
 
 
+class PullRequestHeadGuardTests(unittest.TestCase):
+    def test_head_guard_compares_event_sha_with_current_pr(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        with patch.object(
+            client,
+            "request",
+            return_value=({"head": {"sha": "current-sha"}}, {}),
+        ) as request:
+            self.assertTrue(is_current_pull_request_head(client, 627, "current-sha"))
+            self.assertFalse(is_current_pull_request_head(client, 627, "stale-sha"))
+        self.assertEqual(2, request.call_count)
+        request.assert_called_with(
+            "GET", "/repos/open-city-ai/haidian/pulls/627"
+        )
+
+    def test_stale_event_skips_file_listing_and_side_effects(self) -> None:
+        event = {
+            "pull_request": {
+                "number": 627,
+                "user": {"login": "147228"},
+                "head": {
+                    "repo": {"full_name": "147228/haidian"},
+                    "sha": "stale-sha",
+                },
+            }
+        }
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8") as event_file:
+            json.dump(event, event_file)
+            event_file.flush()
+            client = MagicMock()
+            client.repository = "open-city-ai/haidian"
+            client.request.return_value = ({"head": {"sha": "current-sha"}}, {})
+            with patch.dict(
+                os.environ,
+                {
+                    "GITHUB_TOKEN": "token",
+                    "GITHUB_REPOSITORY": "open-city-ai/haidian",
+                    "GITHUB_EVENT_PATH": event_file.name,
+                },
+                clear=False,
+            ), patch("github_pr_validation.GitHubClient", return_value=client):
+                self.assertEqual(0, main())
+        client.paginate.assert_not_called()
+        client.download_content.assert_not_called()
+        client.upsert_comment.assert_not_called()
+        client.add_labels.assert_not_called()
+        client.remove_labels.assert_not_called()
+
+    def test_head_change_after_file_listing_skips_downloads(self) -> None:
+        event = {
+            "pull_request": {
+                "number": 627,
+                "user": {"login": "147228"},
+                "head": {
+                    "repo": {"full_name": "147228/haidian"},
+                    "sha": "event-sha",
+                },
+            }
+        }
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8") as event_file:
+            json.dump(event, event_file)
+            event_file.flush()
+            client = MagicMock()
+            client.repository = "open-city-ai/haidian"
+            client.request.side_effect = [
+                ({"head": {"sha": "event-sha"}}, {}),
+                ({"head": {"sha": "newer-sha"}}, {}),
+            ]
+            client.paginate.return_value = [{"filename": "docs/example.md"}]
+            with patch.dict(
+                os.environ,
+                {
+                    "GITHUB_TOKEN": "token",
+                    "GITHUB_REPOSITORY": "open-city-ai/haidian",
+                    "GITHUB_EVENT_PATH": event_file.name,
+                },
+                clear=False,
+            ), patch("github_pr_validation.GitHubClient", return_value=client):
+                self.assertEqual(0, main())
+        client.download_content.assert_not_called()
+        client.upsert_comment.assert_not_called()
+        client.add_labels.assert_not_called()
+        client.remove_labels.assert_not_called()
+
+    def test_non_submission_head_change_before_comment_skips_side_effects(self) -> None:
+        event = {
+            "pull_request": {
+                "number": 627,
+                "user": {"login": "147228"},
+                "head": {
+                    "repo": {"full_name": "147228/haidian"},
+                    "sha": "event-sha",
+                },
+            }
+        }
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8") as event_file:
+            json.dump(event, event_file)
+            event_file.flush()
+            client = MagicMock()
+            client.repository = "open-city-ai/haidian"
+            client.request.side_effect = [
+                ({"head": {"sha": "event-sha"}}, {}),
+                ({"head": {"sha": "event-sha"}}, {}),
+                ({"head": {"sha": "newer-sha"}}, {}),
+            ]
+            client.paginate.return_value = [{"filename": "docs/example.md"}]
+            with patch.dict(
+                os.environ,
+                {
+                    "GITHUB_TOKEN": "token",
+                    "GITHUB_REPOSITORY": "open-city-ai/haidian",
+                    "GITHUB_EVENT_PATH": event_file.name,
+                },
+                clear=False,
+            ), patch("github_pr_validation.GitHubClient", return_value=client):
+                self.assertEqual(0, main())
+        self.assertEqual(3, client.request.call_count)
+        client.download_content.assert_not_called()
+        client.upsert_comment.assert_not_called()
+        client.add_labels.assert_not_called()
+        client.remove_labels.assert_not_called()
+
+
 class EmptyPdfDetectionTests(unittest.TestCase):
     def test_zero_count_placeholder_is_empty(self) -> None:
         placeholder = (
@@ -167,6 +294,76 @@ class EmptyPdfDetectionTests(unittest.TestCase):
 
     def test_non_pdf_is_not_flagged(self) -> None:
         self.assertFalse(is_empty_pdf(b"not a pdf"))
+
+
+class AgentDisclosureTests(unittest.TestCase):
+    def test_model_family_and_detail_are_machine_readable(self) -> None:
+        report = ValidationReport()
+
+        validate_agent_disclosure(
+            report,
+            {"model_family": "gpt", "model_detail": "GPT-5 Codex"},
+            "submissions/alice/design/agent.json",
+        )
+
+        self.assertTrue(report.ok)
+        self.assertEqual(
+            {"gpt", "claude", "deepseek", "qwen", "glm", "kimi", "grok", "other"},
+            MODEL_FAMILY_VALUES,
+        )
+
+    def test_invalid_or_incomplete_model_disclosure_fails(self) -> None:
+        report = ValidationReport()
+
+        validate_agent_disclosure(
+            report,
+            {"model_family": "unknown-model", "model_detail": "Unknown"},
+            "submissions/alice/design/agent.json",
+        )
+        validate_agent_disclosure(
+            report,
+            {"model_family": "gpt"},
+            "submissions/alice/design/agent.json",
+        )
+        validate_agent_disclosure(
+            report,
+            {"model_detail": "GPT-5"},
+            "submissions/alice/design/agent.json",
+        )
+
+        self.assertFalse(report.ok)
+        self.assertEqual(3, len(report.errors))
+
+    def test_legacy_agent_without_optional_disclosure_remains_compatible(self) -> None:
+        report = ValidationReport()
+
+        validate_agent_disclosure(report, {"model": "legacy-model"}, "agent.json")
+
+        self.assertTrue(report.ok)
+
+    def test_scaffold_placeholder_is_not_a_valid_disclosure(self) -> None:
+        report = ValidationReport()
+
+        validate_agent_disclosure(
+            report,
+            {"model_family": "other", "model_detail": "replace-with-declared-model"},
+            "submissions/alice/design/agent.json",
+        )
+
+        self.assertFalse(report.ok)
+        self.assertEqual(1, len(report.errors))
+        self.assertIn("replace the scaffold placeholder", report.errors[0])
+
+    def test_genuine_other_model_disclosure_remains_valid(self) -> None:
+        report = ValidationReport()
+
+        validate_agent_disclosure(
+            report,
+            {"model_family": "other", "model_detail": "A private in-house model"},
+            "submissions/alice/design/agent.json",
+        )
+
+        self.assertTrue(report.ok)
 
 
 class ManifestHydrationTests(unittest.TestCase):
@@ -243,6 +440,8 @@ class ManifestHydrationTests(unittest.TestCase):
             json.dump(event, event_file)
             event_file.flush()
             client = MagicMock()
+            client.repository = "open-city-ai/haidian"
+            client.request.return_value = ({"head": {"sha": "head-sha"}}, {})
             client.paginate.return_value = files
             with patch.dict(
                 os.environ,
@@ -257,6 +456,40 @@ class ManifestHydrationTests(unittest.TestCase):
         client.download_content.assert_not_called()
         comment = client.upsert_comment.call_args.args[1]
         self.assertIn("participant deletion-only PR", comment)
+
+    def test_non_submission_pr_short_circuits_before_hydration(self) -> None:
+        event = {
+            "pull_request": {
+                "number": 707,
+                "user": {"login": "alice"},
+                "head": {"repo": {"full_name": "alice/haidian"}, "sha": "head-sha"},
+            }
+        }
+        files = [
+            {"filename": "scripts/tool.py", "status": "modified"},
+            {"filename": "tests/test_tool.py", "status": "modified"},
+        ]
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8") as event_file:
+            json.dump(event, event_file)
+            event_file.flush()
+            client = MagicMock()
+            client.repository = "open-city-ai/haidian"
+            client.request.return_value = ({"head": {"sha": "head-sha"}}, {})
+            client.paginate.return_value = files
+            with patch.dict(
+                os.environ,
+                {
+                    "GITHUB_TOKEN": "token",
+                    "GITHUB_REPOSITORY": "open-city-ai/haidian",
+                    "GITHUB_EVENT_PATH": event_file.name,
+                },
+                clear=False,
+            ), patch("github_pr_validation.GitHubClient", return_value=client):
+                self.assertEqual(0, main())
+        client.download_content.assert_not_called()
+        client.fetch_content.assert_not_called()
+        comment = client.upsert_comment.call_args.args[1]
+        self.assertIn("non-submission code/docs/test PR", comment)
 
     def test_review_queue_candidate_is_one_author_owned_submission(self) -> None:
         self.assertTrue(
@@ -314,6 +547,41 @@ class ManifestHydrationTests(unittest.TestCase):
                 ["submissions/alice/design/proposal.md"],
                 discover_submission_files(submission, root),
             )
+
+    def test_maintainer_controlled_paths_are_not_treated_as_code_only(self) -> None:
+        protected_paths = [
+            "submissions-data.js",
+            "gallery-publication.json",
+            "submissions/README.md",
+            ".maintainer-review/alice/review-summary.json",
+            "docs/reviews/alice.md",
+        ]
+        for path in protected_paths:
+            with self.subTest(path=path):
+                self.assertFalse(is_non_submission_pr([path]))
+
+        self.assertFalse(
+            is_non_submission_pr(
+                [
+                    {
+                        "filename": "scripts/generated-gallery.js",
+                        "previous_filename": "submissions-data.js",
+                        "status": "renamed",
+                    }
+                ]
+            )
+        )
+        self.assertFalse(
+            is_non_submission_pr(
+                [
+                    {
+                        "filename": "submissions-data.js",
+                        "previous_filename": "scripts/generated-gallery.js",
+                        "status": "renamed",
+                    }
+                ]
+            )
+        )
 
 
 class ProposalSchemaTests(unittest.TestCase):
@@ -1064,6 +1332,43 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("required AI package file is missing", "\n".join(report.errors))
 
+    def test_symlinked_manifest_is_rejected_before_package_reads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            outside_manifest = root / "outside-manifest.json"
+            outside_manifest.write_bytes(manifest_path.read_bytes())
+            manifest_path.unlink()
+            manifest_path.symlink_to(outside_manifest)
+
+            report = validate_submission(root, "alice", [f"{base}/proposal.md"])
+
+        self.assertFalse(report.ok)
+        self.assertIn(
+            f"{base}/manifest.json: symbolic links are not allowed in submission packages",
+            "\n".join(report.errors),
+        )
+
+    def test_symlinked_package_subdirectory_is_rejected_before_asset_reads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            visual_dir = root / base / "visual"
+            outside_visual_dir = root / "outside-visual"
+            visual_dir.rename(outside_visual_dir)
+            visual_dir.symlink_to(outside_visual_dir, target_is_directory=True)
+
+            report = validate_submission(root, "alice", [f"{base}/proposal.md"])
+
+        self.assertFalse(report.ok)
+        self.assertIn(
+            f"{base}/visual: symbolic links are not allowed in submission packages",
+            "\n".join(report.errors),
+        )
+
     def test_user_cannot_modify_another_user_folder(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -1763,6 +2068,164 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertTrue(report.ok, report.errors)
             self.assertNotIn("bilingual", "\n".join(report.warnings))
             self.assertNotIn("counterpart", "\n".join(report.warnings))
+
+    def test_v2_simulation_metrics_must_match_task_records(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.add_bilingual_v2_display(root, base, changed)
+
+            metrics_path = root / base / "metrics.json"
+            metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+            metrics["metrics"].update(
+                {
+                    "simulation_task_count": {
+                        "status": "known",
+                        "value": 2,
+                        "unit": "count",
+                        "source_files": ["simulation.json"],
+                    },
+                    "simulation_success_rate": {
+                        "status": "known",
+                        "value": 0.5,
+                        "unit": "ratio",
+                        "source_files": ["simulation.json"],
+                    },
+                    "tool_schema_pass_rate": {
+                        "status": "known",
+                        "value": 1.0,
+                        "unit": "ratio",
+                        "source_files": ["simulation.json"],
+                    },
+                    "energy_budget_violations": {
+                        "status": "known",
+                        "value": 0,
+                        "unit": "count",
+                        "source_files": ["simulation.json"],
+                    },
+                    "audit_completeness": {
+                        "status": "known",
+                        "value": 0.5,
+                        "unit": "ratio",
+                        "source_files": ["simulation.json"],
+                    },
+                }
+            )
+            metrics_path.write_text(
+                json.dumps(metrics, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            self.write_json(
+                root,
+                f"{base}/simulation.json",
+                {
+                    "schema_version": "0.1.0",
+                    "task_count": 2,
+                    "tasks": [
+                        {
+                            "task_id": "SIM-001",
+                            "outcome": "success",
+                            "dispatch_schema_valid": True,
+                            "energy_used_kwh": 3.0,
+                            "energy_budget_kwh": 2.0,
+                            "audit_complete": True,
+                        },
+                        {
+                            "task_id": "SIM-002",
+                            "outcome": "failed",
+                            "dispatch_schema_valid": False,
+                            "energy_used_kwh": 1.0,
+                            "energy_budget_kwh": 2.0,
+                            "audit_complete": False,
+                        },
+                    ],
+                },
+            )
+            changed.extend([f"{base}/metrics.json", f"{base}/simulation.json"])
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertFalse(report.ok)
+            errors = "\n".join(report.errors)
+            self.assertIn("metrics.tool_schema_pass_rate=1.0", errors)
+            self.assertIn("task-derived value 0.5", errors)
+            self.assertIn("metrics.energy_budget_violations=0", errors)
+            self.assertIn("task-derived value 1", errors)
+
+    def test_simulation_baseline_must_match_mirror_file_and_metric_scope(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.add_bilingual_v2_display(root, base, changed)
+
+            metrics_path = root / base / "metrics.json"
+            metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+            metrics["metrics"]["simulation_success_rate"] = {
+                "status": "known",
+                "value": 0.5,
+                "unit": "ratio",
+                "source_files": ["simulation.json"],
+            }
+            metrics_path.write_text(
+                json.dumps(metrics, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            self.write_json(
+                root,
+                f"{base}/simulation.json",
+                {
+                    "schema_version": "0.1.0",
+                    "task_count": 2,
+                    "tasks": [
+                        {
+                            "task_id": "SIM-001",
+                            "outcome": "success",
+                            "dispatch_schema_valid": True,
+                            "energy_used_kwh": 1.0,
+                            "energy_budget_kwh": 2.0,
+                            "audit_complete": True,
+                        },
+                        {
+                            "task_id": "SIM-002",
+                            "outcome": "failed",
+                            "dispatch_schema_valid": True,
+                            "energy_used_kwh": 1.0,
+                            "energy_budget_kwh": 2.0,
+                            "audit_complete": True,
+                        },
+                    ],
+                    "baselines": {
+                        "urban_llm_harness": {"success_rate": 1.0},
+                    },
+                },
+            )
+            self.write_json(
+                root,
+                f"{base}/visual/assets/evaluation-baseline.json",
+                {
+                    "schema_version": "0.1.0",
+                    "metrics": {
+                        "urban_llm_harness": {"success_rate": 0.9},
+                    },
+                },
+            )
+            changed.extend(
+                [
+                    f"{base}/metrics.json",
+                    f"{base}/simulation.json",
+                    f"{base}/visual/assets/evaluation-baseline.json",
+                ]
+            )
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertFalse(report.ok)
+            errors = "\n".join(report.errors)
+            self.assertIn("conflicts with baselines.urban_llm_harness.success_rate=1.0", errors)
+            self.assertIn("urban_llm_harness must mirror the task-derived aggregate", errors)
+            self.assertIn("evaluation-baseline.json", errors)
 
     def test_language_neutral_cannot_bypass_primary_display_pair(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
