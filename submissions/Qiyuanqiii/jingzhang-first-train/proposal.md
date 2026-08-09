@@ -70,11 +70,11 @@ iteration: "v1.0"
 
 **AI 场景卡（10 张）**。S1 轨道智行：沿公园轨道与站区提供 AI 交通接驳、无障碍路径与慢行信号优化；S2 首班车文化导览：AI 导览串联百年铁路、中关村与 AI 新文化叙事；S3 健康随行：站区与社区 AI 健康服务导航与预约；S4 企业服务 Copilot：面向创新企业的政务与专业服务智能助手；S5 公共安全运营复核：AI 辅助公共安全管理且全程人工复核；S6 低速无人配送：站区与园区间机器人物流测试与运营；S7 AI+教育：高校实训与开源教学场景；S8 AI+法律：中关村法治服务与规则测试场景；S9 智能建筑能源：分布式能源与端侧算力的楼宇应用；S10 开发者共创实验室：场景开放、数据沙箱与社区共创。其中 S5、S6、S7 为产业测试验证场景，均在受控空间内开展，明确数据边界与人工复核机制 [source:AGENT-TASKBOOK]。
 
-每张场景卡在正文、`scenarios/` 注册表与 `visual/index.html` 中映射到空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体与风险。场景均表述为概念建议与深化方向，不把未成熟技术写成可全面部署，不把测试场景写成已批准运营 [depth:blue_green_public_space] [depth:renewal_project_list]。
+每张场景卡在本章正文与 `visual/index.html` 中映射到空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体与风险，场景清单见 `compliance_matrix.json` 的 agent.3 覆盖项。场景均表述为概念建议与深化方向，不把未成熟技术写成可全面部署，不把测试场景写成已批准运营 [depth:blue_green_public_space] [depth:renewal_project_list]。
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局采用走廊分区，中央轨道绿带 1401 贯穿全线，两侧科研（0802）、教育（0804）、商业（05）、居住（0701）、社区服务（0702）与文化（0803）用地沿带布局，北五环南缘设防护绿地（1402）缓冲 [data:geometry/land_use.geojson#LU-005] [data:geometry/land_use.geojson#LU-006]。各用地面积与占比由几何复算：绿地与开敞空间约 21.2%，公共空间约 1.6%，可建设区域以科研、商业、居住与教育为主 [metric:green_ratio] [metric:public_space_ratio]。
+用地布局采用走廊分区，中央轨道绿带 1401 贯穿全线，两侧科研（0802）、教育（0804）、商业（05）、居住（0701）、社区服务（0702）与文化（0803）用地沿带布局，北五环南缘设防护绿地（1402）缓冲 [data:geometry/land_use.geojson#LU-005] [data:geometry/land_use.geojson#LU-006]。各用地面积与占比由几何复算：绿地与开敞空间约 21%，公共空间约 1.6%，可建设区域以科研、商业、居住与教育为主 [metric:green_ratio] [metric:public_space_ratio]。
 
 建筑规模采用代表性建筑基底生成，共约 553 栋概念建筑，建筑基底约 172 万平方米，估算总建筑面积约 1883 万平方米，估算容积率约 1.65，建筑密度约 0.15 [data:geometry/buildings.geojson#BLDG-0001] [metric:total_floor_area_sqm_estimated] [metric:floor_area_ratio_estimated]。建筑基底与层数为设计示意，用于支撑指标复算，不代表现状或法定方案 [depth:retain_renovate_demolish]。
 
@@ -110,9 +110,9 @@ iteration: "v1.0"
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标及其设计含义：绿地率约 21.2% 支撑公园轨道的生态与游憩，公共空间率约 1.6% 支撑三站的创新交往与朝圣体验，估算容积率约 1.65 与建筑密度约 0.15 支撑站区集聚与沿线开敞 [metric:green_ratio] [metric:public_space_ratio] [metric:floor_area_ratio_estimated]。道路里程约 36.9 公里支撑东西缝合与慢行贯通，重点区域 3 处、面积与公告一致支撑详细设计的对象完整 [metric:road_length_m] [metric:key_area_count]。
+核心指标及其设计含义：绿地率约 21% 支撑公园轨道的生态与游憩，公共空间率约 1.6% 支撑三站的创新交往与朝圣体验，估算容积率约 1.65 与建筑密度约 0.15 支撑站区集聚与沿线开敞 [metric:green_ratio] [metric:public_space_ratio] [metric:floor_area_ratio_estimated]。道路里程约 36.9 公里支撑东西缝合与慢行贯通，重点区域 3 处、面积与公告一致支撑详细设计的对象完整 [metric:road_length_m] [metric:key_area_count]。
 
-面积复算方法：所有面积均由 `geometry/*.geojson` 在 CGCS2000 高斯-克吕格 3 度带（EPSG:4548）下复算，`metrics.json` 记录公式、来源文件、置信度与假设；临时边界下复算结果与公告面积一致，官方 polygon 发布后按同一流程整体重算 [depth:metrics_recalculation]。官方控规容积率、高度、密度、绿地率与退线在 `planning_limits.json` 中标记为缺失，相应指标在 `metrics.json` 中设为 `unknown` 并说明待补来源 [metric:official_floor_area_ratio] [metric:official_building_height_m]。
+面积复算方法：所有面积均由 `geometry/*.geojson` 在 CGCS2000 高斯-克吕格 3 度带（EPSG:4548）下复算，`metrics.json` 记录公式、来源文件、置信度与假设；临时边界下复算结果与公告面积一致，官方 polygon 发布后按同一流程整体重算 [depth:metrics_recalculation]。官方控规容积率、高度、密度、绿地率与退线为缺失数据，相应指标在 `metrics.json` 中设为 `unknown` 并说明待补来源与复算触发条件 [metric:official_floor_area_ratio] [metric:official_building_height_m]。
 
 合规覆盖：`compliance_matrix.json` 覆盖公告 1.3–1.5 全部任务与智能体任务 agent.1–agent.6；`standard_matrix.json` 覆盖全部强制专业标准；`design_depth_matrix.json` 覆盖全部 15 项必需设计深度项，均标记为 complete 或待补数据 gap [depth:risk_missing_data]。
 
