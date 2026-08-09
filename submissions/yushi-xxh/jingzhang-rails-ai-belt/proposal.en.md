@@ -14,6 +14,14 @@ iteration: "v1.0"
 
 > This is the English counterpart of `proposal.md`. The Chinese version is the main proposal; this file provides a complete standalone translation for international reviewers and AI agents. Per the taskbook, missing translations produce non-blocking warnings only and do not prevent submission, merge or content review.
 
+## Concept, Naming and Visual Identity
+
+The name **Centennial Jingzhang AI Symbiosis Belt (JSB)** combines the historic Jing-Zhang Railway, AI knowledge and service flows, and the co-evolution of heritage, industry and everyday life. The original mark overlays a switchback rail stroke with a five-node neural connection. The identity system separates four levels: primary belt mark, monochrome wayfinding mark, annual event submark, and independent honour plaque. It must not be combined with government identifiers or enterprise trademarks.
+
+![Jingzhang Symbiosis Belt concept identity board](assets/figures/brand-identity.png)
+
+The board provides a primary mark, monochrome and dark variants, clear-space guidance and a 24 px test. It is an original concept asset generated locally without third-party icons. Trademark search, final font substitution, graphic-rights review and formal adoption remain pending under A-LOGO-001.
+
 ## Source Inventory and Design Basis
 
 This formal package takes the Beijing Municipal Commission of Planning and Natural Resources Haidian Sub-bureau's "Centennial Jingzhang AI Innovation Belt International Urban Design Open Call — Pre-qualification Announcement" (2026-05-09) as its primary official reference, and uses the maintainer-registered provisional boundaries, key areas, enums, ranges, sources and source-use matrix in `brief/site-package/` as machine-readable inputs. The agent reads `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json`, and `data/processed/agent_fact_pack.md` before any generation, and uses `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv` to organise tasks, scope, source usability, and data gaps. Every design judgement is split into a traceable source, a recomputable metric, a verifiable layer and an assumption that can be reviewed by a human expert.
@@ -68,6 +76,18 @@ The coordinated research does not draw new pseudo-precise redlines; through the 
 
 Future-city form research should answer how AI changes work, life, socialising, learning, transport and public services. The proposal lands AI transport systems, continuous green space, innovation-service facilities and international living / working atmospheres into locatable functional zones, nodes, corridors and scenarios, rather than describing a generic technology vision. The agent writes industry-strategy indicators, AI innovation index, talent density, space-supply types and AI+ vertical application key areas into the indicator system, and labels which are official, which are design suggestions, and which are still pending formal calibration. Any global AI event, developer community, open scenario or pilgrimage route must be written as "concept suggestion / reference scheme / available for deeper professional study" and must not be presented as a confirmed government event or implementation commitment.
 
+### Regional innovation collaboration loop (concept)
+
+None of the following is presented as an existing agreement. Each link is activated only after the named evidence, operator and permission path are confirmed.
+
+| Potential collaborator | Proposed exchange | Jingzhang carrier | Review and exit condition |
+| --- | --- | --- | --- |
+| Beiwei Community | Anonymous service needs and accessibility test reports | Public-service nodes along the heritage park | Pause if offline alternatives, consent or appeal channels are absent |
+| Future Science City | Cleared technical requirements and reproducible validation reports | Zhongzhiyuan safety-governance sandbox | Exit when authorization, safety or reproducibility conditions fail |
+| Huairou Science City | Public science content and cleared exhibition packages | Origin Community release hall | Remove any content without confirmed rights |
+| Beijing E-Town | Public interface specifications, synthetic test sets and validation reports | Dazhongsi terminal showcase | No procurement or investment commitment; stop pilots that miss safety/KPI gates |
+| Beijing-Tianjin-Hebei innovation nodes | Open-source code, licensed scenario templates and event reviews | Activity-week route and public repository | Do not start without a responsible operator and cross-region data permission |
+
 ## Overall Design Area: Urban Renewal at Regulatory-Plan Urban-Design Depth
 
 The overall design area is required to reach regulatory-plan urban-design depth. The proposal must propose the overall spatial structure, identification of inefficient space, renewal project list, implementation policy suggestions, industry-function ratio, spatial organisation model, total building scale and comprehensive capacity assessment. `geometry/land_use.geojson` must fully cover the design boundary without overlap; `geometry/buildings.geojson` must express renewal or retained building footprints; `geometry/roads.geojson` must express micro-circulation, slow-traffic and rail-connection relations; `metrics.json` must recompute core area, ratio and layer count.
@@ -107,19 +127,24 @@ AI scenarios must land on spatial and governance boundaries: public-space scenar
 | Leading-enterprise visitor | Showcase, business, international reception, talent recruitment | Dazhongsi international roadshow salon, rail-station connection, key-enterprise public space | Enterprise branding and case studies must be cleared |
 | Nearby resident | Commute, leisure, community service, low-disturbance renewal | Jing-Zhang Heritage Park slow-traffic loop, embedded community service, night-time lighting and graded activities | Resident profiles must not be used for commercial recommendation |
 | University faculty & student | Achievement translation, cross-campus collaboration, daily slow-traffic | Campus–park slow-traffic connection, achievement translation station, AI education experience point | Campus data and research results must be authorised |
+| Older people and caregivers | Legible wayfinding, rest, low-threshold service and human assistance | Continuous seating, accessible toilets, staffed desk and paper route | No smartphone or facial-recognition requirement; retain offline service |
+| Disabled people | Continuous accessible travel, understandable information and appeal | Ramp/lift links, tactile and audio wayfinding, accessibility test day | Professional accessibility review and digitally accessible service required |
+| Night workers and non-Chinese speakers | Night safety, interchange and concise multilingual information | Graded lighting, night waiting point, pictorial Chinese-English signs and staffed hotline | No predictive profiling; a human confirms high-risk notices |
 
-| Scenario card | Spatial carrier | Description |
-| --- | --- | --- |
-| 01 Open-source release hall | Beijing AI Origin Community | For universities, open-source communities and startups; release, code-contribution showcase and small roadshow space |
-| 02 Safety-governance sandbox | Zhongzhiyuan | Translate standard-setting, safety evaluation and model red-team testing into a visitable, bookable, regulator-friendly showcase |
-| 03 Edge-compute station | Overall design area nodes | Combined with public service, enterprise service and low-carbon energy strategy; new infrastructure prototype awaiting deeper study |
-| 04 AI slow-traffic navigation | Jing-Zhang Heritage Park active belt | Explainable wayfinding and low-intrusion sensors for slow-traffic breakpoints, congestion and accessibility needs |
-| 05 Dazhongsi international roadshow salon | Dazhongsi AI Industry Cluster | For agents, smart terminals and content-consumption enterprises: showcase, negotiation, media release, international exchange |
-| 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan Qinghe interface | Green space, storm-water, walking & cycling and AI showcase combined as the park's public living room |
-| 07 Near-campus achievement-translation street | Beijing AI Origin Community | Incubation, showcase, legal, IP and investment-finance services for university achievement translation |
-| 08 Data-factor reception hall | Dazhongsi | With compliance, authorisation and auditability, showing data factor and digital-asset circulation service |
-| 09 AI living-service showcase street | Community & commercial intersection | Healthcare, education, legal, life-service AI+ scenarios at small-scale, operable block level |
-| 10 Global AI activity-week route | Belt-level public space system | A walkable, shareable experience route from heritage culture through open-source community and industry showcase to international roadshow |
+| Scenario / place | Users and minimum data | Model boundary and human review | Operator, failure mode and KPI |
+| --- | --- | --- | --- |
+| 01 Open-source release hall / Origin Community | Developers; authorized project metadata and public licences | Retrieval and summary only; maintainer and rights reviewer approve publication | Community operator; remove misattribution; KPI=verified-project and accessible-event rates |
+| 02 Safety-governance sandbox★ / Zhongzhiyuan | Test teams; synthetic/authorized test sets and model cards | No production connection; safety lead approves tests and reports | Sandbox operator; isolate unauthorized calls; KPI=reproducibility and closure time |
+| 03 Edge-compute station★ / overall nodes | Startups; authorized jobs and minimum device telemetry | No unauthorized personal data; duty engineer approves capacity and energy | Infrastructure operator; degrade on capacity/energy failure; KPI=availability and energy/job |
+| 04 AI slow-traffic navigation / heritage park | Residents, older and disabled users; public network, manual audit and aggregate counts | Route advice only; transport/accessibility officer confirms high-risk alerts | Public-space operator; switch to staffed notice on closure/error; KPI=breakpoint closure and accessible reach |
+| 05 International roadshow salon / Dazhongsi | Visitors; authorized agenda and self-declared enterprise material | No investment/policy claims; host and legal reviewer approve copy | Venue operator; retract false claims; KPI=rights-cleared material and feedback rate |
+| 06 Qinghe low-carbon corridor★ / Zhongzhiyuan | Park users; public weather, authorized environmental sensors and manual inspections | Display and maintenance advice only; facility staff decide action | Park operator; sensor failure triggers manual inspection; KPI=data availability and work-order closure |
+| 07 Near-campus translation street / Origin Community | University teams; authorized abstracts and service requests | No research-truth judgement or legal replacement; technology manager/lawyer review | Translation service; suspend disputed rights; KPI=clearance and response time |
+| 08 Data-factor reception hall / Dazhongsi | Compliance users; public catalogues, synthetic samples and audit logs | No real sensitive-data trading; DPO approves demos | Authorized data operator; reject unknown provenance; KPI=traceability and audit closure |
+| 09 AI living-service street / community interface | Residents/caregivers; active input and public service catalogue | No final medical/legal/education decision; licensed professional review | Service provider; human takeover and appeal; KPI=takeover rate and appeal time |
+| 10 Global AI activity route / public-space system | Public/international visitors; public event and accessibility data | Multilingual guidance only; editor and safety lead publish | Event consortium; disable on crowd/permit change; KPI=route availability and multilingual/offline coverage |
+
+★ marks the three AI industry test-and-validation scenarios. Every card requires notice and opt-out, human takeover, logs, appeal, pilot thresholds and periodic impact review under A-DATA-001.
 
 The AI governance suggestions generated by the agent must respect data minimisation, public sources, explainability and human review. City agents may assist to identify slow-traffic breakpoints, public-space heatmaps, facility maintenance needs, enterprise service needs and activity safety risks, but they must not replace planning approval, must not produce unauthorised individual profiles, and must not claim official implementation commitments. All AI scenario nodes should enter the structured layers or the compliance matrix so reviewers can see their relationships to industry, space and public interest.
 
@@ -261,6 +286,14 @@ In formal deepening, the agent should divide every indicator into three categori
 3. **Performance indicators** that need ongoing operational or industry-data calibration, e.g., AI innovation index, talent density, industry-service satisfaction, slow-traffic accessibility, event participation, scenario usage frequency.
 
 The three categories should enter `metrics.json`, `assumptions.json` and `compliance_matrix.json` respectively, to avoid mistaking an operational vision for an approved planning condition.
+
+### Recomputed metric summary
+
+- Site: 11,412,825.386 sqm; land-use partition: 11,412,837.696 sqm; topology gap ratio: 1.078618e-6.
+- Submitted provisional key-area geometry: 3,692,893.005 sqm = 369.3 ha. The announcement's approximate scope is 368.4 ha; the 0.24% difference is a provisional-geometry precision limitation, not a design target.
+- Green ratio: 0.309644 = 31.0%; public-space ratio: 0.041935 = 4.2%; building footprint: 1,008,405.877 sqm.
+- `phase_coverage_ratio=1.0` means only that concept phasing polygons cover the submitted boundary; it does not prove funding, ownership, approvals or engineering feasibility.
+- The eight personas include older people/caregivers, disabled people, night workers and non-Chinese speakers in addition to the original five groups.
 
 ## Risk, Copyright and Compliance Statement
 
