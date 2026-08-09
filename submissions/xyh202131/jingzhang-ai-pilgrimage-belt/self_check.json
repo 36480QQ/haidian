@@ -24,8 +24,14 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/implementation-roadmap.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/innovation-system.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/innovation-system.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-area-sections.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-area-sections.en.svg",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-area-sections.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-area-sections.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-areas.en.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-areas.en.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-areas.png",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/key-areas.svg",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/land-use-structure.en.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/land-use-structure.png",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/assets/figures/metrics-evidence.en.png",
@@ -77,7 +83,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 6832828,
+      "total_bytes": 9283369,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -201,7 +207,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "三处重点区均分开记录公告约面积、临时 polygon 复算面积与空缺的官方 polygon 面积；area_sqm_declared 只声明当前临时几何，不作为官方红线或精确面积依据。"
+      "message": "三处重点区继续分开记录公告约面积、临时 polygon 复算面积与空缺的官方 polygon 面积；两组双语重点区 SVG/PNG 只深化现有临时空间证据读法，geometry Git blob 未改，仍不作为官方红线或精确面积依据。"
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
@@ -215,7 +221,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/",
-      "message": "空间证据包含 180 个体量原型、12 条设计线、10 处绿地、9 处公共空间、6 个接口、3 个 AI 服务区和 12 个场景节点；空间 formal review 仅保留三条预期的 provisional minor。"
+      "message": "空间证据仍包含 180 个体量原型、12 条设计线、10 处绿地、9 处公共空间、6 个接口、3 个 AI 服务区和 12 个场景节点；geometry 与 metrics Git blobs 未改，空间 formal review 仅保留三条预期的 provisional minor。"
     },
     {
       "check_id": "METRIC_RECALCULATION",
@@ -264,14 +270,14 @@
       "result": "pass",
       "severity": "major",
       "target": "manifest.json",
-      "message": "中英文主稿、HTML、视觉首页、A3/A0 与七组文字图件均存在、成对登记并标为 required；关键数字、G0、provisional 与权利边界一致。"
+      "message": "中英文主稿、HTML、视觉首页、A3/A0、八组双语 PNG 展示对与两组双语 SVG 可编辑源对均存在、成对登记并标为 required；关键数字、G0、provisional 与权利边界一致。"
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "中英文离线首页无远程资源、无缺失本地资源，并同步临时边界与 OSM 背景不一致的非裁决提示；HTML 指标与 metrics.json 一致。"
+      "message": "中英文离线首页无远程资源、无缺失本地资源，已配对引用新增的 key-areas 与 key-area-sections 双语图件；页面同步临时边界非裁决提示，HTML 指标与 metrics.json 一致。"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
@@ -285,14 +291,14 @@
       "result": "pass",
       "severity": "major",
       "target": "visual/assets/rights-clearance-ledger.json",
-      "message": "权利台账恰好覆盖 54 个 manifest 路径，独立逐文件清权审计仍为 0、总体 not_fully_cleared；changelog 记录本轮采纳、未采纳和待外部事项。"
+      "message": "权利台账与 manifest 恰好覆盖相同的 60 个路径/59 个非 manifest 内容文件且每路径一次；Noto 字体事实与两组 SVG 可编辑源边界已记录，独立逐文件清权审计仍为 0、总体 not_fully_cleared。"
     },
     {
       "check_id": "PAPER_DIMENSIONS",
       "result": "pass",
       "severity": "info",
       "target": "drawings/",
-      "message": "中英文 A0 均为 7 页实际 A0、按 01→07 排列且核心图占主要安全版心；中文 A3 为 9 页、英文 A3 为 10 页实际 A3，正文最小 9pt，无裁切、空白页或孤立末段。"
+      "message": "中英文 A0 均为 8 页实际 A0 横向且保留八张 1800×1100 整板总览；中文/英文 A3 为 33/36 页实际 A3 纵向，每种语言将 8 组图拆为 24 个 620×892、245mm 宽且相邻重叠 30px 的细节页，不再嵌入整板图。live text 不低于 9pt，栅格证据有效最小文字指标为中 10.865pt/英 9.297pt，443/443 逻辑块可搜索；全部 85 页无裁切、越界、空白页或孤立标题。"
     }
   ]
 }

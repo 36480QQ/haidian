@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-09",
-  "scope": "All 54 files declared by this submission after the package-local changelog and key-area evidence crosswalk are added, including manifest.json and this ledger itself.",
+  "as_of": "2026-08-10",
+  "scope": "All 60 files declared by this submission after the bilingual key-area spatial figures and package evidence are integrated, including manifest.json and this ledger itself; 59 entries are non-manifest content files.",
   "clearance_claim": {
     "status": "not_fully_cleared",
     "completed_independent_file_level_clearance_audits": 0,
@@ -12,11 +12,12 @@
   "status_vocabulary": {
     "self_declared_origin_pending_independent_review": "The submission identifies the material as created for this package, but no independent file-level rights audit is recorded.",
     "repository_provisional_derivative": "The file derives from repository-provided provisional material and inherits its non-official and rights-review limits.",
-    "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited."
+    "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited.",
+    "package_authored_editable_source_pending_independent_review": "The submission identifies the SVG as an editable source authored for this package, but no independent file-level rights audit is recorded."
   },
   "file_coverage": {
-    "expected_manifest_entries": 54,
-    "expected_non_manifest_entries": 53,
+    "expected_manifest_entries": 60,
+    "expected_non_manifest_entries": 59,
     "coverage_rule": "Every manifest path appears in exactly one asset_group. Path coverage does not equal legal clearance.",
     "asset_groups": [
       {
@@ -107,7 +108,7 @@
         "id": "RIGHTS-GROUP-05",
         "name": "Generated visual and publication outputs",
         "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry.",
+        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry. The two bilingual key-area SVG pairs are package-authored editable sources pending independent rights review; their paired PNG files are deterministic display exports.",
         "paths": [
           "drawings/a3-booklet.pdf",
           "drawings/a0-boards.pdf",
@@ -122,7 +123,13 @@
           "assets/figures/site-overview.png",
           "assets/figures/innovation-system.png",
           "assets/figures/implementation-roadmap.png",
+          "assets/figures/key-areas.svg",
+          "assets/figures/key-area-sections.png",
+          "assets/figures/key-area-sections.svg",
           "assets/figures/key-areas.en.png",
+          "assets/figures/key-areas.en.svg",
+          "assets/figures/key-area-sections.en.png",
+          "assets/figures/key-area-sections.en.svg",
           "assets/figures/land-use-structure.en.png",
           "assets/figures/metrics-evidence.en.png",
           "assets/figures/mobility-bluegreen.en.png",
@@ -131,8 +138,8 @@
           "assets/figures/implementation-roadmap.en.png"
         ],
         "limits": [
-          "No font binaries are shipped by the package; HTML requests system font stacks. The A0 pages add no live text beyond embedded raster figures, although their generator may retain a standard unused PDF font resource; A3 booklet font embedding and licensing remain unaudited.",
-          "Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every PNG or PDF.",
+          "No font binaries are shipped by the package; HTML requests system font stacks. The four PDFs embed subsets derived from NotoSansSC-VF.ttf at weights 400 and 700. The source font facts are recorded below, but license applicability and embedding compliance remain pending independent review.",
+          "Editable package-authored SVG sources are declared for the bilingual key-areas and key-area-sections pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
       }
@@ -167,6 +174,20 @@
       "current_use": "Front-matter label only.",
       "status": "full_terms_unavailable_in_package",
       "limit": "This label must not be represented as confirmed compatibility with judging, archiving, web display, professional deepening, commercial use, or sublicensing until the maintainer supplies and approves the complete terms."
+    },
+    {
+      "id": "RIGHTS-THIRD-05",
+      "material": "Noto Sans SC variable font used for PDF text subsets",
+      "source_file": "NotoSansSC-VF.ttf",
+      "source_location": "C:/Windows/Fonts/NotoSansSC-VF.ttf",
+      "name_table_version": "2.04;241114210130;non-release",
+      "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "declared_license_in_local_name_table": "SIL Open Font License, Version 1.1",
+      "license_url_in_local_name_table": "http://scripts.sil.org/OFL",
+      "pdf_use": "fontTools instantiated deterministic in-memory weights 400 and 700; ReportLab embedded NotoSansSC-Regular and NotoSansSC-Bold subsets in the four PDFs.",
+      "font_binary_shipped": false,
+      "status": "facts_recorded_compliance_not_independently_audited",
+      "limit": "The local metadata and absence of the source binary from this package do not by themselves establish license compliance or upgrade the package-wide rights status."
     }
   ],
   "unresolved_items": [
@@ -188,7 +209,7 @@
     {
       "id": "RIGHTS-OPEN-04",
       "priority": "P1",
-      "item": "Publish an editable-source inventory and identify which PNG/PDF outputs can be regenerated from included source files."
+      "item": "Complete the editable-source inventory. The bilingual key-areas and key-area-sections SVG pairs are included as package-authored editable sources, but complete editable vector or layout source coverage for the other PNG/PDF outputs remains unavailable."
     },
     {
       "id": "RIGHTS-OPEN-05",

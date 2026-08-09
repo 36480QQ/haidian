@@ -2,12 +2,13 @@
 
 ## 中文
 
-本文件不再声称投稿包已经完成清权。`visual/assets/rights-clearance-ledger.json` 对 manifest 中 54 个路径逐项归组（其中 53 个为非 manifest 内容文件），记录来源基础、当前权利状态、限制与发布门槛；当前独立逐文件清权审计完成数为 **0**，总体状态为 `not_fully_cleared`。
+本文件不再声称投稿包已经完成清权。`visual/assets/rights-clearance-ledger.json` 对 manifest 中 60 个路径逐项归组（其中 59 个为非 manifest 内容文件），记录来源基础、当前权利状态、限制与发布门槛；当前独立逐文件清权审计完成数为 **0**，总体状态为 `not_fully_cleared`。
 
 - 文本、结构化记录与概念设计几何由声明的 AI Agent 为本投稿编制；其中事实、标准和空间依据仍受 `sources.json` 的权威等级与用途限制约束。
 - `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 继承仓库临时边界的非官方、低精度和再利用边界，不构成官方红线或审批依据。
 - OSM 只用于方向性背景，声明许可证为 ODbL，署名为“© OpenStreetMap contributors”；具体数据库衍生、署名与相同方式共享义务仍需独立复核。
-- 离线 HTML 不含远程资源，也没有随包分发字体文件；HTML 使用系统字体栈。PDF 的字体嵌入与许可、PNG/PDF 的完整可编辑源、模型和生成工具输出条款尚未完成独立审计。
+- 离线 HTML 不含远程资源，HTML 使用系统字体栈。四份 PDF 以本机 `NotoSansSC-VF.ttf` 为源，name table 版本为 `2.04;241114210130;non-release`，源文件 SHA-256 为 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`；本地 name table 声明 SIL Open Font License 1.1。生成过程以内存方式实例化 400/700 字重并嵌入 Noto 子集，投稿包不分发字体二进制。以上是可复核的字体事实，不等于已完成独立许可合规审计，也不改变总体权利结论。
+- `assets/figures/key-areas.svg` / `.en.svg` 与 `assets/figures/key-area-sections.svg` / `.en.svg` 是为本包编制的中英文可编辑源，对应 PNG 为其确定性展示导出；四个 SVG 仍待独立权利复核。其他 PNG/PDF 的完整可编辑布局源覆盖仍不完整，模型与生成工具输出条款也尚未完成独立审计。
 - `COMMUNITY-DISPLAY-ONLY` 目前只是 front matter 中的许可标签，完整条款未随投稿包提供，因此不能据此确认评审、归档、在线展示、翻译、专业深化、商业使用或再许可的兼容性。
 - JZ 几何 Logo 与地标命名为概念提案，尚未完成商标和生产品牌审查，不代表任何企业或政府授权。
 - Firecrawl CLI 1.19.30 仅用于检索和抓取公开网页，形成引用、摘要与用途限制记录。抓取缓存不进入投稿包，网页正文、图片、Logo 与页面版式未作为投稿资产复制；外部网页按 `citation_only` 使用，其转载、再利用和权威状态仍需依 `sources.json` 与原发布方条款判断。抓取成功不等于现场踏勘、竣工核验、合作确认或正式审批。
@@ -18,12 +19,13 @@
 
 ## English
 
-This package no longer claims that rights clearance is complete. `visual/assets/rights-clearance-ledger.json` groups all 54 manifest paths (53 non-manifest content files) and records their origin basis, current rights status, limits, and release gate. The number of completed independent file-level clearance audits is **0**, and the overall status is `not_fully_cleared`.
+This package no longer claims that rights clearance is complete. `visual/assets/rights-clearance-ledger.json` groups all 60 manifest paths (59 non-manifest content files) and records their origin basis, current rights status, limits, and release gate. The number of completed independent file-level clearance audits is **0**, and the overall status is `not_fully_cleared`.
 
 - Narrative, structured records, and conceptual design geometry were prepared for this submission by the declared AI agent; factual, professional, and spatial inputs remain governed by the authority and use limits in `sources.json`.
 - `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` inherit the repository provisional boundary's non-official, low-precision, and reuse limits. They are not official redlines or approval evidence.
 - OSM is used only for directional background under the declared ODbL license with “© OpenStreetMap contributors” attribution. Database-derivative, attribution, and share-alike obligations still require independent review.
-- Offline HTML has no remote dependencies and the package ships no font binaries; HTML uses system font stacks. PDF font embedding and licensing, complete editable sources for PNG/PDF outputs, and model/tool output terms have not been independently audited.
+- Offline HTML has no remote dependencies and uses system font stacks. The four PDFs use the local `NotoSansSC-VF.ttf` source, name-table version `2.04;241114210130;non-release`, source SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`; its local name table declares the SIL Open Font License 1.1. The build instantiated weights 400/700 in memory and embedded Noto subsets; no font binary is distributed in the package. These are verifiable font facts, not an independent license-compliance audit, and they do not change the overall rights conclusion.
+- `assets/figures/key-areas.svg` / `.en.svg` and `assets/figures/key-area-sections.svg` / `.en.svg` are bilingual editable sources authored for this package, with their PNG counterparts exported deterministically for display; all four SVGs remain pending independent rights review. Complete editable-layout source coverage for the other PNG/PDF outputs remains incomplete, and model/tool output terms have not been independently audited.
 - `COMMUNITY-DISPLAY-ONLY` is currently only a front-matter license label. Its complete terms are not included, so compatibility with judging, archiving, web display, translation, professional deepening, commercial use, or sublicensing is not confirmed.
 - The JZ geometric logo and landmark names are conceptual proposals pending trademark and production-brand review; they imply no corporate or government authorization.
 - Firecrawl CLI 1.19.30 was used only to search and retrieve public webpages for citations, summaries, and use-limit records. Retrieval caches are excluded from the package, and webpage text, images, logos, and layouts are not copied as submission assets. External pages remain `citation_only` evidence whose reuse and authority are governed by `sources.json` and the original publisher's terms. Successful retrieval is not a site visit, as-built verification, partnership confirmation, or approval.
