@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-09",
+  "generated_at": "2026-08-09T04:12:29Z",
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -51,5 +51,16 @@
       "target": "proposal.en.md",
       "message": "中英文主稿、报告 HTML、可视化 HTML、A3/A0 图纸与含文字图件均提供等义语言副本。"
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
+  "package_type": "professional_design_package",
+  "gates": {
+    "deterministic_validation": true,
+    "spatial_review": true,
+    "visual_review": true,
+    "professional_review": true
+  },
+  "next_actions": []
 }

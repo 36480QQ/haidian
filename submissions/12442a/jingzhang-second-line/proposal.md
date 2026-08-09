@@ -181,7 +181,7 @@ AI公共空间以“组件库+荣誉展示+朝圣地标”落位。公共空间�
 | 绿地率 | 28.4% | green_space_area / site_area [data:geometry/green_space.geojson#GREEN-001] |
 | 公共空间比例 | 16.5% | public_space_area / site_area [data:geometry/public_space.geojson#PUBLIC-001] |
 | 建筑基底面积 | 约239,070 m² | union_area(building_footprints) [data:geometry/buildings.geojson#BLDG-001] |
-| 双轨慢行主脊长度 | 约18.1 km | sum(length(双轨主脊线)) [data:geometry/roads.geojson#ROAD-SPINE-1] |
+| 双轨慢行主脊长度 | 约19.9 km（19,875.9 m） | sum(length(双轨主脊线))，EPSG:4548 [data:geometry/roads.geojson#ROAD-SPINE-1] |
 | 场景节点/服务区/更新项目 | 10 / 3 / 6 | 各图层计数 [data:geometry/constraints.geojson#SCNODE-001] |
 | 重点区域数量 | 3 | count(key_areas) [data:geometry/key_areas.geojson#PROV-KEY-001] |
 

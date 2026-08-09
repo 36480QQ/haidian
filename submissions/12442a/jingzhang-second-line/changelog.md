@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.1.1 - 2026-08-09
+
+- 根据评审反馈修正：双轨慢行主脊线改为顺直示意，`heritage_spine_length_m` 由几何重算为 19,875.9 m，并同步双语正文、图件、可视化与图纸中的数值。
+- 持久化完整自检报告至 `self_check.json`（ok、can_enter_formal_review、四道门禁记录）。
+- 统一模型披露（manifest 与 agent.json 均声明 codex-agent / OpenAI GPT-5-class model），并将数据置信度从 high 降为 medium，以反映临时边界精度限制。
+- 重新生成全部图件、A3/A0 图纸、可视化 HTML 并刷新 manifest 哈希。
+
 ## v0.1 - 2026-08-09
 
 - 基于仓库资料包与 provisional 边界生成“京张复线 · The Second Line”formal 概念方案包。

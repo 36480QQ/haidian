@@ -181,7 +181,7 @@ The design meaning of core indicators: the **site area** constrains the total sp
 | Green ratio | 28.4% | green_space_area / site_area [data:geometry/green_space.geojson#GREEN-001] |
 | Public-space ratio | 16.5% | public_space_area / site_area [data:geometry/public_space.geojson#PUBLIC-001] |
 | Building footprint | about 239,070 m² | union_area(building_footprints) [data:geometry/buildings.geojson#BLDG-001] |
-| Double-track slow-mobility spine | about 18.1 km | sum(length(double-track spine)) [data:geometry/roads.geojson#ROAD-SPINE-1] |
+| Double-track slow-mobility spine | about 19.9 km (19,875.9 m) | sum(length(double-track spine)) in EPSG:4548 [data:geometry/roads.geojson#ROAD-SPINE-1] |
 | Scenario nodes / service zones / renewal projects | 10 / 3 / 6 | layer feature counts [data:geometry/constraints.geojson#SCNODE-001] |
 | Key areas | 3 | count(key_areas) [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
