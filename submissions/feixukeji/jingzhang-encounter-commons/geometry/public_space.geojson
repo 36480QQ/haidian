@@ -13,7 +13,13 @@
         "geometry_role": "design_proposal",
         "name_zh": "众智园同题场概念公共界面",
         "name_en": "Common Problem Yard conceptual public interface",
-        "access_status": "candidate_pending_permission"
+        "access_status": "candidate_pending_permission",
+        "operational_status": "not_authorized",
+        "protocol_ref": "visual/assets/encounter-ticket.schema.json",
+        "scenario_ticket_ref": "visual/assets/encounter-ticket.example.json#/tickets/0",
+        "first_evidence": "venue_release_plus_named_data_ethics_safety_owners",
+        "hard_stop": "no_host_or_no_separation_or_unclear_data_boundary_or_any_safety_event",
+        "professional_handoff": "architecture_structure_fire_access_venue_operations"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,7 +60,13 @@
         "geometry_role": "design_proposal",
         "name_zh": "AI原点同桌场概念公共界面",
         "name_en": "Common Table Yard conceptual public interface",
-        "access_status": "candidate_pending_permission"
+        "access_status": "candidate_pending_permission",
+        "operational_status": "not_authorized",
+        "protocol_ref": "visual/assets/encounter-ticket.schema.json",
+        "scenario_ticket_ref": "visual/assets/encounter-ticket.example.json#/tickets/1",
+        "first_evidence": "ninety_day_roster_plus_no_account_offline_multilingual_equivalents",
+        "hard_stop": "no_human_host_or_overload_or_unchecked_translation_or_failed_offline_route",
+        "professional_handoff": "public_service_information_access_staffing_data_governance"
       },
       "geometry": {
         "type": "Polygon",
@@ -95,7 +107,13 @@
         "geometry_role": "design_proposal",
         "name_zh": "大钟寺同城场概念公共界面",
         "name_en": "Common City Yard conceptual public interface",
-        "access_status": "candidate_pending_permission"
+        "access_status": "candidate_pending_permission",
+        "operational_status": "not_authorized",
+        "protocol_ref": "visual/assets/encounter-ticket.schema.json",
+        "scenario_ticket_ref": "visual/assets/encounter-ticket.example.json#/tickets/2",
+        "first_evidence": "official_scope_real_candidate_site_event_release_heritage_noise_egress_access",
+        "hard_stop": "crowd_noise_or_egress_gate_fails_or_quiet_exit_route_blocked",
+        "professional_handoff": "planning_transport_heritage_fire_event_safety_acoustics_community"
       },
       "geometry": {
         "type": "Polygon",

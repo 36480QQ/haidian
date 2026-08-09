@@ -30,6 +30,13 @@
       "validation": "Check ownership, current use, structure, fire, accessibility, heritage, noise, and operator before activation."
     },
     {
+      "id": "A-PHASE2-ASBUILT-001",
+      "status": "pending_as_built_and_field_verification",
+      "statement": "Public sources describe the planned nine-kilometre Jing-Zhang park network and report that main works in implementable Phase II areas were completed, but no cleared as-built entrance register or current operating-condition dataset is available in this package.",
+      "impact": "The 46 planned entrances and nine planned urban links cannot be treated as presently built, open, accessible, authorised, or equivalent to this proposal's six representative audit seams.",
+      "validation": "Obtain the as-built boundary and entrance register from the responsible operator, then field-check access status, opening hours, step-free continuity, crossings, width, slope, lighting, noise, and emergency exit before any pilot or route is published."
+    },
+    {
       "id": "A-DATA-001",
       "status": "design_governance_commitment",
       "statement": "AI matches authorised tasks, spaces, time slots, and resources—not people or relationships.",
@@ -70,6 +77,13 @@
       "statement": "Landmark and cultural-interface locations are conceptual and use only verified public history.",
       "impact": "No heritage fabric or controlled area may be altered without review.",
       "validation": "Heritage specialists and relevant authorities review content, material, location, and event use."
+    },
+    {
+      "id": "A-DAZHONGSI-ANCHOR-001",
+      "status": "known_geometry_warning",
+      "statement": "PROV-KEY-003 is an order-and-area placeholder and is not anchored to Dazhongsi Station; repository Issue #1029 reports an approximate 2.26 km separation.",
+      "impact": "No station quadrant, station-to-site route, transit integration, or precise Dazhongsi siting may be inferred from the submitted frame.",
+      "validation": "Label the frame as non-station-anchored; replace it wholesale after official geometry and a verified station/site walk-through."
     },
     {
       "id": "A-TEST-001",

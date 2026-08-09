@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.2",
+  "evidence_status": "recorded_deterministic_synthetic_validation_not_field_performance",
+  "executed_on": "2026-08-09",
+  "synthetic_only": true,
+  "field_performance": false,
+  "repository_ci_executes_submission_code": false,
+  "replayable_runner": {
+    "path": "run-encounter-ticket-validation.js",
+    "sha256": "f247fef71509f2d330167385df191e4d6ceea017d61e56e6a8c631016931e8a8",
+    "command_from_submission_root": "node visual/assets/run-encounter-ticket-validation.js",
+    "runtime_tested": "Node.js v24.12.0",
+    "third_party_dependencies": 0,
+    "result": "pass",
+    "replay_digest_sha256": "445cd41e751d4e4d841bfc57e576150bdbeedf9c834c237323fb8956ad3c8595",
+    "coverage": {
+      "full_json_schema_draft_2020_12_implementation": false,
+      "current_schema_keyword_subset_fail_closed": true,
+      "checks": [
+        "Eight closed contract groups and current schema keyword subset",
+        "RFC3339-profile date-time syntax and cross-field chronology",
+        "Minimum-data whitelist and exact seven-field prohibited set",
+        "Legal-basis, evidence, human-host and authorization conditions",
+        "Publication artifact and rights conditions",
+        "Three positive fixtures and five expected-invalid controls",
+        "Twelve-scenario inventory split into three synthetic and nine pending templates"
+      ]
+    },
+    "evidence_boundary": "Deterministic offline synthetic contract replay only; PASS is not field-performance evidence."
+  },
+  "inputs": [
+    {
+      "path": "encounter-ticket.schema.json",
+      "sha256": "5fcbe30f2fbddc8c267b1f12d723fefaf3270733d1ca549294ba34237c91b14b"
+    },
+    {
+      "path": "encounter-ticket.fixture.schema.json",
+      "sha256": "e1604aa842d72e3ad05d6e86aff67caa2e51adccfa6a921dce22a0835b3bf7d7"
+    },
+    {
+      "path": "encounter-ticket.example.json",
+      "sha256": "243a61c12ccf294f128fd808031eae49c0195ec22415e584b97ed191cc26e4d6"
+    },
+    {
+      "path": "encounter-ticket.expected-invalid.json",
+      "sha256": "8545fce782cdb0224a6d9f0232b008e679d176acadb47059edb1776d5411ba84"
+    },
+    {
+      "path": "encounter-ticket.scenarios.json",
+      "sha256": "683d618def6ebf8e10835715cbc19d4fbed1b4d94dc933dfcc54ffc3dda479ac"
+    }
+  ],
+  "validator": {
+    "engine": "Python jsonschema Draft202012Validator with FormatChecker and explicit cross-field semantic checks",
+    "schema_meta_validation": "pass",
+    "fixture_envelope_validation": "pass"
+  },
+  "positive_fixtures": [
+    {
+      "ticket_id": "SYNTHETIC-TICKET-S01-001",
+      "result": "pass"
+    },
+    {
+      "ticket_id": "SYNTHETIC-TICKET-S02-001",
+      "result": "pass"
+    },
+    {
+      "ticket_id": "SYNTHETIC-TICKET-S03-001",
+      "result": "pass"
+    }
+  ],
+  "conditional_probes": [
+    {
+      "probe_id": "AUTHORIZED-STATE",
+      "result": "pass",
+      "scope": "Synthetic proof that all conditional authorization requirements can be satisfied together."
+    },
+    {
+      "probe_id": "AGGREGATE-RESULTS",
+      "result": "pass",
+      "scope": "Synthetic proof that the bounded aggregate result schema accepts a fixed non-personal record."
+    }
+  ],
+  "expected_invalid_cases": [
+    {
+      "case_id": "NEG-01-INVALID-DATE-FORMAT",
+      "expected_code": "INVALID_DATE_FORMAT",
+      "observed_codes": ["INVALID_DATE_FORMAT", "SCHEMA_VALIDATION_ERROR"],
+      "result": "rejected_as_expected"
+    },
+    {
+      "case_id": "NEG-02-TIME-ORDER",
+      "expected_code": "TIME_ORDER_INVALID",
+      "observed_codes": ["TIME_ORDER_INVALID"],
+      "result": "rejected_as_expected"
+    },
+    {
+      "case_id": "NEG-03-PROHIBITED-FIELD",
+      "expected_code": "PROHIBITED_FIELD_SELECTED",
+      "observed_codes": ["MINIMUM_DATA_FIELD_NOT_WHITELISTED", "PROHIBITED_FIELD_SELECTED", "SCHEMA_VALIDATION_ERROR"],
+      "result": "rejected_as_expected"
+    },
+    {
+      "case_id": "NEG-04-AUTHORIZED-WITHOUT-HOST",
+      "expected_code": "AUTHORIZED_HOST_REQUIRED",
+      "observed_codes": ["AUTHORIZED_HOST_REQUIRED", "SCHEMA_VALIDATION_ERROR"],
+      "result": "rejected_as_expected"
+    },
+    {
+      "case_id": "NEG-05-PUBLISHED-PENDING-RIGHTS",
+      "expected_code": "PUBLISHED_RIGHTS_NOT_CLEARED",
+      "observed_codes": ["PUBLISHED_RIGHTS_NOT_CLEARED", "SCHEMA_VALIDATION_ERROR"],
+      "result": "rejected_as_expected"
+    }
+  ],
+  "scenario_index": {
+    "synthetic_validated": 3,
+    "template_pending_authorisation": 9,
+    "field_validation_performed": false
+  },
+  "result": "pass",
+  "limitations": [
+    "No live participant, venue, operator, public service or field operation was tested.",
+    "The repository CI treats this file as static, hash-bound evidence and does not execute participant-submitted code.",
+    "The package-local Node.js runner implements and fail-closes around the keyword subset used by the current schemas; it is not a complete JSON Schema Draft 2020-12 implementation.",
+    "Synthetic validation is not evidence of authorisation, safety, public acceptance or operational performance.",
+    "Any pilot requires an authorised operator, verified venue and capacity, confirmed legal basis, named accepting duty holder, non-AI equivalent, complaint route and documented stop authority."
+  ]
+}

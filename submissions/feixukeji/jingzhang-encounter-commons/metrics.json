@@ -237,6 +237,127 @@
         "A-PILOT-001"
       ]
     },
+    "ecosystem_element_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/regional-interfaces.json"
+      ],
+      "formula": "count(land, space, industry, capital, talent roles, compute, data, scenarios)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/regional-interfaces.json"
+      ],
+      "formula": "count(no-commitment regional open interfaces R1..R5)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "spatial_prototype_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "assets/figures/key-areas.png"
+      ],
+      "formula": "count(distinct plan-section-operation prototypes)",
+      "confidence": "high",
+      "assumptions": [
+        "A-KEYAREA-001",
+        "A-SITE-VERIFY-001"
+      ]
+    },
+    "encounter_ticket_field_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/encounter-ticket.schema.json"
+      ],
+      "formula": "count(required top-level Encounter Ticket field groups)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "industry_test_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/pilot-contracts.json"
+      ],
+      "formula": "count(S01..S03 bounded industry validation protocols)",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001"
+      ]
+    },
+    "pilot_contract_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-contracts.json"
+      ],
+      "formula": "count(not-authorized pilot contracts P02..P04)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-TEST-001"
+      ]
+    },
+    "admission_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-contracts.json"
+      ],
+      "formula": "count(G0..G4 mandatory admission gates)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-TEST-001"
+      ]
+    },
+    "handoff_artifact_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/pilot-contracts.json"
+      ],
+      "formula": "count(required commissioning and handover artifacts)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ]
+    },
+    "pilot_start_workdays": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/pilot-contracts.json"
+      ],
+      "formula": "concept working-day target to assemble a commissioning pack; not an approved schedule",
+      "confidence": "medium",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

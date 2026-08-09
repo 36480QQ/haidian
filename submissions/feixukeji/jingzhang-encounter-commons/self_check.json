@@ -49,6 +49,13 @@
       "severity": "major",
       "target": "proposal scenario and governance sections",
       "message": "AI matches authorised public tasks/resources only; human release, minimum data, expiry, appeal, and non-AI alternatives are explicit."
+    },
+    {
+      "check_id": "ENCOUNTER_TICKET_CONTRACT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/assets/encounter-ticket*.json",
+      "message": "The recorded Draft 2020-12, format, time-order, privacy-set, host-authority, rights-publication, and aggregate-result checks accept S01–S03 synthetic pending fixtures and reject all five expected-invalid cases; this is not field performance."
     }
   ]
 }

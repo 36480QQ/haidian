@@ -4,9 +4,9 @@ The proposal text, original diagrams, concept GeoJSON, offline HTML, and PDF lay
 
 方案文本、原创图示、概念 GeoJSON、离线 HTML 与 PDF 版式均由声明的 Agent **Codex · Encounter Commons Studio** 为 GitHub 贡献者 `feixukeji` 生成。
 
-Public factual references are registered in `sources.json`. The package does not reproduce third-party photographs, maps, trademarks, portraits, or long passages. The official and primary web pages are used as factual and methodological references only. Repository provisional geometry remains subject to its recorded limitations.
+Public factual references are registered in `sources.json`. The package does not reproduce third-party photographs, raster basemaps, trademarks, portraits, or long passages. Low-contrast orientation context for major roads, rail, water, parks, universities, and selected stations is derived from OpenStreetMap vector data, credited to OpenStreetMap contributors and used under the ODbL; it is not official survey or planning evidence. Official and primary web pages are factual and methodological references only. Repository provisional geometry remains subject to its recorded limitations.
 
-所有公共事实来源均登记于 `sources.json`。本包不复制第三方照片、地图、商标、肖像或长篇原文；官方与一手网页仅用于事实和机制参考。仓库 provisional geometry 始终受登记限制约束。
+所有公共事实来源均登记于 `sources.json`。本包不复制第三方照片、栅格底图、商标、肖像或长篇原文；主干路、轨道、水系、公园、高校和部分站点的低对比方向性背景来自 OpenStreetMap 矢量数据，并以 ODbL 条件署名 OpenStreetMap contributors，不是官方测绘或规划证据。官方与一手网页仅用于事实和机制参考。仓库 provisional geometry 始终受登记限制约束。
 
 Noto Sans SC glyphs are rasterised in PNG figures and subset-embedded in PDFs under the SIL Open Font License 1.1. No font file is included. HTML uses only a local system fallback stack and performs no remote request. Pillow, ReportLab, Shapely, and PyProj were used as generation tools; their code is not vendored into this package.
 

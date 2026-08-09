@@ -118,7 +118,7 @@
         "layer": "KEY_AREA",
         "parent_scope_id": "key_detailed_design_area",
         "area_id": "dazhongsi_ai_industry_cluster",
-        "name_zh": "大钟寺AI产业聚集区粗略范围",
+        "name_zh": "大钟寺任务临时占位框（非站点锚定）",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
@@ -133,8 +133,11 @@
         "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
         "derivation_method": "按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
         "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
-        "name_en": "Provisional Dazhongsi AI Industry Cluster",
-        "usage_note_en": "Relative concept location only; not an official key-area polygon, parcel boundary, or precise-area basis."
+        "name_en": "Provisional Dazhongsi task frame (not station anchored)",
+        "usage_note_en": "Order-and-area placeholder only; do not infer station quadrants, station-to-site routes, or station-area integration.",
+        "station_anchored": false,
+        "known_warning": "Open repository Issue #1029 reports an approximate 2.26 km separation from Dazhongsi Station; unresolved and not official geometry.",
+        "usage_note_zh": "仅按任务顺序与标称面积构造；不得据此判断站点四象限、站口路径或站城一体化。"
       },
       "geometry": {
         "type": "Polygon",
