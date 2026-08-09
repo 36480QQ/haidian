@@ -69,6 +69,8 @@ Autonomous driving is a constrained service layer over walking, cycling, rail, t
 
 ![Overview of the autonomous public belt](assets/figures/site-overview.en.png)
 
+Caption: The overview places the three test yards on one public axis and reads the human, ecological/data safety nets and phase gates as one spatial relationship; it does not express statutory boundaries or an opened road.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area keeps provisional land-use, building, road, green, public-space and phasing layers as one spatial base; autonomous nodes express test relationships, not statutory redlines. Human routes, fire clearance, maintenance access, quiet interfaces and reversible upgrades come before service windows [depth:overall_spatial_structure]. Geometry is read back from `land_use.geojson`, `buildings.geojson`, `constraints.geojson` and `phasing.geojson`, while area, footprint, green and public-space ratios are recomputed from the metric ledger. Official regulatory plans, ownership, utilities, fire review and a demolition schedule are absent, so no floor-area, height, demolition or investment conclusion is made.
@@ -105,9 +107,22 @@ Until that evidence exists, spatial actions remain removable wayfinding, weather
 
 ![Key-area public roles and stop conditions](assets/figures/key-areas.en.png)
 
+Caption: The key-area board is not a point list: it places enterprise service, equivalent community service and rail interchange at ground interfaces, and shows when the system returns to human, accessible and emergency routes.
+
 ## 4. Design rules for an automated future
 
 **Curb before vehicle.** Draw the continuous human route and the exit-capable service zone before drawing a vehicle route. Curb states are `open`, `booked`, `service`, `restricted` and `human-only`; every change needs an owner, time window, sign and restoration condition.
+
+### A typical curb cross-section: continuity before the service window
+
+| Cross-section band | Spatial move | Visible state and takeover | Fact that cannot be assumed yet |
+| --- | --- | --- | --- |
+| Continuous walking/accessibility band | Carry walking, wheelchair and care routes through station, service desk and crossings; vehicles do not enter | `open` or `human-only`; staff redirect around obstruction, water or blockage | Width, slope, tactile paving and lift status require a professional walk audit |
+| Curb service band | Place short-term pick-up, loading, maintenance and clearing windows outside the public route | `booked`, `service` or `restricted`; a board shows owner, window and restoration condition | Right-of-way, ownership, fire clearance and conflict rate lack field baselines |
+| Transfer/help node | Put station entrance, waiting, staffed help and complaint entry on one legible interface | Any service failure switches to `human-only`; the app is not the only entry | Station flow, waiting space and public experience require field verification |
+| Maintenance/emergency fallback band | Keep removable elements, clearing actions and emergency access; do not turn a temporary service into a fixed road | Staff can emergency-stop, withdraw and restore public passage | Fire, utilities, maintenance shifts and emergency contacts require authorised confirmation |
+
+This cross-section fixes spatial relationships and state changes only. It does not fill engineering dimensions, road redlines, vehicle speeds or autonomous-operation permissions; those fields remain `unknown` pending survey, professional review and public participation.
 
 **Speed and rights are gates.** The package does not invent a statutory speed limit. It records low-speed operation, yielding, stopping distance and human intervention as test fields [metric:autonomy_trial_speed_limit_status] [metric:remote_stop_response_seconds]. A successful trial lets the slowest pedestrian, wheelchair user, child and maintenance worker complete the route safely.
 
@@ -116,6 +131,8 @@ Until that evidence exists, spatial actions remain removable wayfinding, weather
 **Data is collected only to complete the service.** Read the authorised curb state, obstacle class, accessible route and emergency message; do not build resident profiles or publish continuous camera streams. Public records show aggregate events, responsibility and corrections; retention and deletion require professional and legal confirmation [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-UK-ATRS] [source:NIST-HUMAN-CENTERED-AI].
 
 ![Curb states, human takeover and ecological rollback](assets/figures/mobility-bluegreen.en.png)
+
+Caption: The system board shows how curb states connect to human takeover, rain/heat/network-loss rollback and ecological constraints; its subject is the spatial path of stopping and recovery, not vehicle performance.
 
 ## 5. Twelve scenario cards
 
@@ -143,6 +160,8 @@ The package retains the provisional land-use and building base and does not conv
 
 ![Land-use structure and human rollback](assets/figures/land-use-structure.en.png)
 
+Caption: The land-use board places the public axis, three test yards, slow/green connections and human rollback on one spatial base; candidate relationships are not engineering alignments or statutory redlines.
+
 ## Blue-Green Network, Public Space, and Urban Character
 
 Blue-green and public space are safety boundaries for continuous human movement, weather rollback, dark-night operation and bird protection, not decorative background. Shade, rain gardens, open space, lighting, maintenance access and curb states must be coordinated; the layers show candidate audits and rollback relations, not ecological redlines, drainage capacity or health benefit. Tree and bird inventories, stormwater sections, microclimate, lighting and night-use baselines are missing, so outcomes remain `unknown` or `design_target` until field and professional evidence exists [source:BEIJING-VENTILATION-NETWORK-2035].
@@ -159,7 +178,11 @@ Phasing is: **P0 legible curbs and accessibility audit**; **P1 approved, low-spe
 
 ![Stage gates, metrics and rollback](assets/figures/metrics-evidence.en.png)
 
+Caption: The metrics board separates the P0 readable-curb, P1 restricted-trial and P2 conditional-expansion gates, while showing `unknown`, `design_target` and rollback as different states.
+
 ![Autonomy readiness: scenarios, nodes, gates, evidence routes and metric status](assets/figures/autonomy-readiness.en.png)
+
+Caption: The readiness board connects scenario cards, test yards, gates and evidence routes so a reader can see where missing evidence stops progress; readiness is not deployed capability.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
