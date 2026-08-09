@@ -1,6 +1,37 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "scripts/validate_submission.py",
+      "message": "Trusted deterministic validation passed on the current package bytes."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "scripts/spatial_review.py",
+      "message": "Spatial review passed; provisional key areas remain explicitly disclosed."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "scripts/visual_review.py",
+      "message": "Offline visual packaging review passed with local assets and metric anchors."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "scripts/professional_review.py",
+      "message": "Professional evidence review passed; unknown transport baselines remain separated from pilot targets."
+    },
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
