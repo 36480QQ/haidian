@@ -6,6 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A comprehensive urban renewal proposal transforming the century-old Jing-Zhang Railway industrial heritage into an AI innovation ecosystem, structured as 'One Spine, Three Cores, Two Corridors'."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 iteration: "v0.1"
+translation_of: "proposal.md"
 ---
 
 # Jing-Zhang Intelligent Spine: From Steam Backbone to Neural Network
