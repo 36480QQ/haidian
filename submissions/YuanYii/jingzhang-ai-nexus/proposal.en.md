@@ -396,3 +396,20 @@ Index of all visual assets, drawings and digital exhibits:
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
 - Machine-readable reference index: [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001], [metric:site_area_sqm]
+
+
+### Civic Value Protocol (Civic Compute Revenue Reinvestment)
+
+Conceptual proposal to establish the Civic Value Protocol:
+
+- **Public Reinvestment Mechanism**: Conceptually suggests reinvesting 15% of operational revenues from commercial AI compute nodes into the Jing-Zhang Civic Value Fund.
+- **Targeted Community Support**: Funds reserved for accessibility retrofits in older residential quarters, child-friendly spaces, and Qinghe wetland multi-species conservation.
+- **Compliance Disclaimer**: Concept-only mechanism; exact percentages and governance rules subject to official study.
+
+
+### Wind Health Field & Microclimate Regulation
+
+Conceptual proposal to establish the Wind Health Field system:
+
+- **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 1.5°C reduction in summer urban heat island intensity.
+- **Algorithmic Regulation**: Integrating multi-modal sensors to dynamically regulate wetland misting and microclimate comfort.

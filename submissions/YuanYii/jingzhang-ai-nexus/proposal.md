@@ -392,3 +392,20 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
 - 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+
+
+### Civic Value Protocol（市民算力与公共收益反哺机制）
+
+概念建议建立 Civic Value Protocol 收益反哺机制（供专业团队与治理团队深化研究）：
+
+- **公共收益抽成机制**：概念建议规定沿线商业算力节点与 AI 场景测试运营产生的收益中，提取 15% 注入“京张社区公共价值基金”。
+- **精准反哺社区**：资金用途严格限定为：老旧小区双语无障碍设施改造、儿童友好空间维护、清河湿地多物种生态保护与数字排斥群体扶助。
+- **合规限定语**：本反哺机制为概念建议与模式探讨，具体比例与基金管理规则由主管部门与社区代表后续研究确定。
+
+
+### 京张通风廊道与风健康场（Wind Health Field）微气候调控
+
+概念建议构建京张通风廊道与风健康场系统（供专业团队深化研究）：
+
+- **引导主导风廊**：将 9.5km 京张绿脊作为海淀南北向主导风廊，气象模拟预估可降低夏季沿线社区热岛效应约 1.5°C。
+- **微气候算法调控**：结合清河低碳水岸的多模态感知节点，探索通过端侧 AI 实时调控风健康场与湿地喷雾微气候，提升市民步行舒适度。
