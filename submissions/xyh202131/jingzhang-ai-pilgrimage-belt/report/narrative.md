@@ -8,9 +8,9 @@
 
 AI 朝圣·铁轨新生带 V2.4 将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
 
-本轮不另起一套空间规划，而是把最新投稿 skill 的硬合同落实到现有方案：正文可读映射任务书三大定位与五大功能，合并三处重点区证据交叉表，补齐用地、分期、重点区、建筑密度与道路比例等必需指标族，统一中央来源 ID 与来源元数据，并把 OSM 背景和临时范围的 0% 相交、约 412.5 米最近距离诚实记录为未裁决的不确定性。中英文主稿、HTML、视觉首页、A3/A0 和七组文字图件均为必交对照件。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
+本轮不另起一套空间规划，而是把最新投稿 skill 的硬合同落实到现有方案：正文可读映射任务书三大定位与五大功能，合并三处重点区证据交叉表，补齐用地、分期、重点区、建筑密度与道路比例等必需指标族，统一中央来源 ID 与来源元数据，并把 OSM 背景和临时范围的 0% 相交、约 412.5 米最近距离诚实记录为未裁决的不确定性。中英文主稿、HTML、视觉首页、A3/A0、八组双语 PNG 展示对与两组双语 SVG 可编辑源对均为必交对照件。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
 
-Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation production line. This increment adds no competing spatial plan. It makes the current skill contract visible and testable by mapping the taskbook's three positioning statements and five functions in readable prose, consolidating the three-key-area evidence crosswalk, completing required metric families, normalizing source IDs and provenance metadata, and disclosing the 0% OSM/provisional overlap and approximately 412.5 m nearest distance as unresolved uncertainty only. Chinese and English narratives, HTML, visual homepages, A3/A0 outputs, and seven text-bearing figure pairs are required counterparts. Every node remains at G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field-performance, or rights-clearance evidence.
+Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation production line. This increment adds no competing spatial plan. It makes the current skill contract visible and testable by mapping the taskbook's three positioning statements and five functions in readable prose, consolidating the three-key-area evidence crosswalk, completing required metric families, normalizing source IDs and provenance metadata, and disclosing the 0% OSM/provisional overlap and approximately 412.5 m nearest distance as unresolved uncertainty only. Chinese and English narratives, HTML, visual homepages, A3/A0 outputs, eight bilingual PNG display pairs, and two bilingual SVG editable-source pairs are required counterparts. Every node remains at G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field-performance, or rights-clearance evidence.
 
 ## 本次增量状态 / Current increment status
 
@@ -21,28 +21,35 @@ Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation product
 - [x] 任务书三大定位、五大功能和六个智能体任务均可从正文、矩阵、图层与展示物回查；未新增重复的第四套总矩阵。
 - [x] `metrics.json` 包含 62 个 known 与 11 个 unknown 指标；正式资料缺失的建筑密度、道路比例等保持 unknown，不以体量或中心线替代。
 - [x] 29 条来源均补齐采集、时空、复用、转换和限制字段；结构化来源引用全部回到稳定 ID，刷新审计完成数仍为 0。
-- [x] 中英文正文、离线报告、视觉首页、七组文字图、A3/A0 均为必交对照件，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
+- [x] 中英文正文、离线报告、视觉首页、八组双语 PNG 展示对、两组双语 SVG 可编辑源对与 A3/A0 均为必交对照件，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
 - [x] 三处重点区证据交叉表只表示文档映射齐全；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
-- [x] 最终 manifest 覆盖 54 个包文件，所有 53 个非 manifest SHA-256 与暂存/提交 Git blob 匹配；权利台账同样恰好覆盖 54 个路径。
+- [x] 最终 manifest 覆盖 60 个包文件，所有 59 个非 manifest SHA-256 与暂存/提交 Git blob 匹配；权利台账同样恰好覆盖 60 个路径且每个路径只归组一次。
 - [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 在最终本地字节上通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
 - [x] The taskbook's three positioning statements, five functions, and six agent tasks are traceable through prose, matrices, layers, and display artifacts; no duplicate fourth master matrix was added.
 - [x] `metrics.json` contains 62 known and 11 unknown metrics. Building density, road ratio, and other unsupported formal values remain unknown rather than being replaced by massing or centerline proxies.
 - [x] All 29 sources carry collection, temporal, spatial, reuse, transformation, and limitation metadata; structured references resolve to stable IDs, while completed freshness audits remain 0.
-- [x] Chinese and English narratives, offline reports, visual homepages, seven text-bearing figure pairs, and A3/A0 outputs are required counterparts and align on provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
+- [x] Chinese and English narratives, offline reports, visual homepages, eight bilingual PNG display pairs, two bilingual SVG editable-source pairs, and A3/A0 outputs are required counterparts and align on provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
 - [x] The three-key-area evidence crosswalk represents documentation mapping only; field audits, accountable-role confirmation, approvals, test executions, and known results remain 0.
-- [x] The final manifest covers 54 package files, all 53 non-manifest SHA-256 values match staged/committed Git blobs, and the rights ledger covers exactly the same 54 paths.
+- [x] The final manifest covers 60 package files, all 59 non-manifest SHA-256 values match staged/committed Git blobs, and the rights ledger covers exactly the same 60 paths once each.
 - [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass against the final local bytes.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 本次 PDF 重生记录 / Current PDF regeneration record
 
-本次 PDF 的实际生成窗口为 2026-08-09T14:39:58–14:42:33Z。中英文 A0 均为 7 页、1189×841mm，按图号 01→07 排列；每页 1800×1100 图件置于 1149×702.2mm 安全版心，约占页面宽 96.6%、高 83.5%。中文 A3 为 9 页，英文 A3 为 10 页，均为 297×420mm；正文最小 9pt，旧中文末页孤段已并回完整页面。四份 PDF 均由最终双语正文和七组配对图件离线重生，并经 PyMuPDF 逐页检查尺寸、内容边界和可读性。生成与版式 QA 不证明现实执行；T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
+最终 pass A 的实际生成窗口为 2026-08-10 02:02:03.726 +08:00 至 02:02:30.104 +08:00；独立 pass B 的窗口为 2026-08-10 02:05:34.939 +08:00 至 02:06:02.023 +08:00。两个 pass 均在全新的 Python 进程中运行，四份包内 PDF 与 pass A 逐文件字节相同，pass A 与 pass B 也逐文件字节相同。中文 A3 为 10 页、英文 A3 为 13 页，均为 297×420mm 纵向；中英文 A0 各 8 页、均为 1189×841mm 横向，按“场地总览—用地—重点区—重点区剖面—交通—指标—创新—实施”顺序排列，每页一张 1800×1100 图件置于 1149mm 安全版心。A3 正文及表格最小字号为 9pt。PyMuPDF 以 1.6 倍渲染并检查全部 39 页；未发现裁切、越界、空白页、孤立标题、错序或不可读字形。生成与版式 QA 不证明现实执行；T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
 
-The actual PDF generation window was 2026-08-09T14:39:58–14:42:33Z. Both A0 files contain seven 1189 × 841 mm pages ordered 01→07. Each 1800 × 1100 figure occupies a 1149 × 702.2 mm safe frame, approximately 96.6% of page width and 83.5% of page height. The Chinese A3 booklet has nine 297 × 420 mm pages and the English booklet has ten; body text is at least 9 pt, and the former orphaned Chinese final paragraph has been consolidated into a substantive page. All four PDFs were regenerated offline from the final bilingual narratives and seven paired figures, then checked page by page with PyMuPDF for dimensions, content bounds, and readability. Generation and layout QA do not prove real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
+The final pass A window was 2026-08-10 02:02:03.726 +08:00 to 02:02:30.104 +08:00; independent pass B ran from 02:05:34.939 +08:00 to 02:06:02.023 +08:00. Each pass ran in a fresh Python process. Every package PDF is byte-identical to pass A, and pass A is byte-identical to pass B file by file. The Chinese A3 booklet has 10 portrait 297 × 420 mm pages and the English booklet has 13. Each language has eight landscape 1189 × 841 mm A0 pages in the explicit order site overview, land use, key areas, key-area sections, mobility, metrics, innovation, and implementation; each page places one 1800 × 1100 figure inside the 1149 mm safe frame. Minimum A3 body and table text is 9 pt. PyMuPDF rendered and checked all 39 pages at 1.6×; no clipping, media-box overflow, blank page, isolated heading, wrong order, or unreadable glyph was found. Generation and layout QA do not prove real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
 
-Reproduction basis: ReportLab 5.0.0 emitted deterministic PDFs with `invariant=1`; the A3 generator used `C:\\Windows\\Fonts\\ARIALUNI.TTF`, whose embedding and reuse status remains unresolved in the rights ledger. A0 pages add no live text beyond the raster boards, although a standard unused PDF font resource may remain. PyMuPDF 1.27.2.3 was used only for local QA renders and geometry inspection. No repository script was changed. Future source or figure changes require regeneration, manifest refresh, and full validation; this record makes no inheritance, rights-clearance, or field-success claim.
+| PDF | Pages / format | SHA-256 |
+|---|---|---|
+| `drawings/a3-booklet.pdf` | 10 / A3 portrait | `22edb9b1c8be136e8d9b45aba9526a714ff780f3e29643cabc84e67971540edd` |
+| `drawings/a3-booklet.en.pdf` | 13 / A3 portrait | `55df4d89e539f09d1557dd4917c0ede5e1ae466d083b05a42c1ed539c026fc4a` |
+| `drawings/a0-boards.pdf` | 8 / A0 landscape | `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` |
+| `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384` |
+
+Reproduction basis: Python 3.13.12 (Anaconda build, 2026-02-24), ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, and Pillow 12.2.0 were used; Poppler was unavailable. ReportLab emitted compressed PDFs with `invariant=1`, fixed metadata, and fixed input ordering. `fontTools.varLib.instancer.instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True)` instantiated in-memory 400/700 weights from `C:/Windows/Fonts/NotoSansSC-VF.ttf` (name-table version `2.04;241114210130;non-release`, SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`, local name-table license SIL OFL 1.1). The source font binary and temporary static fonts are not shipped. Searchable final spans use only `NotoSansSC-Regular` and `NotoSansSC-Bold`; the A3 resource dictionaries retain an unused Helvetica declaration with zero Helvetica spans and no embedded Helvetica program. PyMuPDF performed SVG-to-PNG rasterization and PDF rendering, extraction, geometry, image-order, and content-bound QA. A read-only Git diff against the pre-increment package baseline returned no geometry path or `metrics.json`; their Git blobs remained unchanged. No repository script was changed. Future source or figure changes require regeneration, manifest refresh, and full validation; this record makes no trusted-CI, human-review, rights-clearance, or field-success claim.
 
 ## 不可变验证证据 / Immutable validation evidence
 
