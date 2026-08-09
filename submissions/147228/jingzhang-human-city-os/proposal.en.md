@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.2"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.2 puts overall spatial moves, three key areas, four value chains, and three release gates on the first reading surface, then reconnects the v1.0 pre-authorization startup protocol, AI decision replay, synthetic human-city receipt, and scenario-readiness ledgers. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.3"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.3 adds a spatial-action atlas for three key areas, a Jing-Jin-Ji interface ledger, and an original identity system while retaining v1.2's overall spatial moves, four value chains, three release gates, and audit assets. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -52,6 +52,34 @@ These are recomputable conceptual quantities, not statutory indicators, engineer
 Every gate retains an equivalent human service, unconfirmed accountability, data gaps and stop actions. These remain conceptual suggestions; no authorization, operation, approval or implementation is claimed.[depth:phasing_implementation]
 
 **First-read boundary:** the package can prove that spatial moves, evidence references, metric formulas and fail-closed paths are replayable offline. It cannot prove official boundaries, resident or employment outcomes, PUE/green-power, heat-network connection, traffic safety, permits, investment or real operations. Gaps remain in `assumptions.json`, `metrics.json` and the readiness register for later recalculation when public or authorized data arrives.[depth:risk_missing_data]
+
+## v0.2 score repair | Read the three key areas as spatial action chains
+
+This iteration does not add another abstract AI slogan. It decomposes each provisional key area into four actions. Each action names a spatial carrier, role class, entry evidence, and stop condition, so a reviewer can move from the figure back to GeoJSON, scenario cards, and metrics instead of treating an “AI showcase” as an urban-design conclusion. Full fields are in `visual/assets/spatial-action-atlas.json`; every move remains a conceptual suggestion for professional teams to deepen.[data:visual/assets/spatial-action-atlas.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+![Figure 12 | Spatial action atlas for the three key areas, from entry and bounded testing to human takeover and exit](assets/figures/spatial-action-atlas.en.png)
+
+Zhongzhiyuan sequences a pedestrian-priority edge, bounded embodied-AI test, compute-power audit, and incident-review court into a closable test chain. It references `SC-B02`, `SC-C01`, and the silicon-right-of-way geometry; it does not imply real airspace, traffic-safety, PUE, green-power, or recovered-heat outcomes.[data:geometry/constraints.geojson#SC-B02] [data:geometry/constraints.geojson#SC-C01] [metric:silicon_right_of_way_length_m] [metric:operational_pue] [metric:recovered_heat_mwh]
+
+The Beijing AI Origin Community connects a resident-retention room, staffed and intergenerational learning, a skills-transition handoff, and a screen-free recovery garden into an ordinary-person path. The spatial support area and corridor can be recomputed, but resident retention, small-business return, sustained employment, and equivalent human-service availability remain `unknown`; area, training counts, or web accessibility cannot substitute for those outcomes.[data:geometry/constraints.geojson#SC-A01] [data:geometry/constraints.geojson#SC-A03] [data:geometry/roads.geojson#ROAD-A-SKILL] [metric:community_retention_support_area_ratio] [metric:resident_retention_rate] [metric:sustained_employment_transition_rate] [metric:manual_service_equivalence_rate]
+
+Dazhongsi sequences a public urban-API interface, an OPC shared lab, a standards spillover studio, and an international service room into a “question—authorization—replay—exit” interface chain. Regional cooperation exchanges reviewable questions, evidence, and versions; it does not claim partners, companies, administrative agreements, compute coupons, or international institutions.[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [data:geometry/constraints.geojson#SC-D03] [metric:version_release_count]
+
+## Regional interfaces | Exchange questions before claiming cooperation
+
+The taskbook-named Jing-Jin-Ji manufacturing/application link, standards spillover, knowledge circulation, OPC small-team ecology, and international support are written as five interfaces. Each interface states what is exchanged, which conceptual space carries it, and what missing evidence blocks the next version. It is not a signed partnership, an enterprise list, or an investment plan. `visual/assets/regional-interface-ledger.json` records the source boundary, spatial anchor, gap, and stop rule for every interface.[data:visual/assets/regional-interface-ledger.json] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+![Figure 13 | Regional interface ledger: technical, standards, knowledge, small-team, and international layers](assets/figures/regional-interface-ledger.en.png)
+
+The technical interface moves a Haidian research question toward a Jing-Jin-Ji manufacturing/application discussion. The standards interface outputs only a draft for professional review. The knowledge interface learns through public question lists, incident replays, and annual release notes. The small-team interface keeps fair application and conflict disclosure visible. The international interface is only a to-be-verified service directory for language, medical navigation, IP, and daily support. Any missing authorization, accountability, rights, copyright, or service capacity returns the interface to the data gate rather than becoming a delivery claim.[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [data:geometry/constraints.geojson#SC-D03] [depth:risk_missing_data]
+
+## Identity and spatial cards | Make “human city” a legible design language
+
+This iteration adds an author-originated concept identity so drawing headers, scenario cards, human-stop cues, and release notes share one readable grammar. An open bracket, a rail, and a human confirmation point signal callability, historical continuity, and final human authority. The palette serves reading only; it is not an organizer, government, company, or project mark. Fields and rights boundaries are in `visual/assets/brand-identity.json`.[data:visual/assets/brand-identity.json] [data:report/copyright_statement.md] [depth:risk_missing_data]
+
+![Figure 14 | Jingzhang Human City OS concept identity: rail, interface, and human confirmation](assets/figures/brand-identity.en.png)
+
+The mark is used only in this package's figures and offline display. Orange marks human takeover and stop, teal marks public interface and blue-green space, yellow marks release gates and data gaps, while navy and paper preserve drawing readability. If official branding, heritage, or public-space visual rules arrive, rights review and professional adaptation must precede any figure or PDF regeneration.[source:SITE-PACKAGE] [depth:risk_missing_data]
 
 # Jingzhang Human City OS
 

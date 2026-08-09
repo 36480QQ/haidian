@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.2"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.2 先把总体空间动作、三处重点区、四条价值链和三道发布门放到首屏，再回接 v1.0 的授权前启动程序、AI 取舍回放、合成人本交接凭证与场景准备度台账。既有临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.3"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.3 新增三处重点区空间动作图谱、京津冀接口台账与原创识别系统，并保留 v1.2 的总体空间动作、四条价值链、三道发布门和既有审计资产。既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -52,6 +52,34 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[depth:phasing_implementation]
 
 **先读结论：**本包能证明空间动作、证据引用、指标公式和失败关闭路径可以离线复核；不能证明官方边界、居民结果、就业结果、PUE/绿电、热网接入、交通安全、许可、投资或现实运营绩效。所有缺口保留在 `assumptions.json`、`metrics.json` 与资料就绪度台账，待公开或授权数据到位后再重算。[depth:risk_missing_data]
+
+## v0.2 评分修复｜把三个重点区读成空间动作链
+
+本轮不再增加抽象口号，而是把三个临时重点区各自拆成四步动作。每一步都回答空间载体、责任角色、进入前证据和停止条件，评审者可以从图面回到 GeoJSON、场景卡与指标，而不必把一张“AI 展台”当作城市设计结论。完整字段见 `visual/assets/spatial-action-atlas.json`，以下仍是概念建议，供专业团队深化研究。[data:visual/assets/spatial-action-atlas.json] [data:geometry/key_areas.geojson#PROV-KEY-001] 三处重点区的其余边界 ID 同列在台账中，均保持临时约束。
+
+![图 12｜三处重点区空间动作图谱：从入口、受控测试到人工接管与退出](assets/figures/spatial-action-atlas.png)
+
+众智园先把人行优先边缘、受控具身测试、算电核验和事故复盘排成一条可关闭的测试链。它引用 `SC-B02`、`SC-C01` 与硅基通行权几何，仍不能推出真实空域、交通安全、PUE、绿电或余热结果。[data:geometry/constraints.geojson#SC-B02] [data:geometry/constraints.geojson#SC-C01] [metric:operational_pue] 其余能耗与长度指标在指标台账中保持 unknown 或概念状态。
+
+北京 AI 原点社区把社区保留议事、人工与代际共学、技能再造接力和无屏恢复花园连成普通人的路径。空间支撑分区和技能走廊可以复算，但居民保留率、商户回迁、持续就业和人工服务等效可用率仍为 `unknown`，不能用面积、培训人次或网页可访问性替代。[data:geometry/constraints.geojson#SC-A01] [data:geometry/roads.geojson#ROAD-A-SKILL] [metric:resident_retention_rate] 其他社会结果指标仍在 `metrics.json` 中保持 unknown。
+
+大钟寺把城市 API 公共接口、OPC 共享实验室、标准外溢工作室和国际服务客厅排成“问题—授权—回放—退出”的接口链。区域协同只交换可复核问题、证据与版本，不声称已有伙伴、企业、行政协议、算力券或国际机构。[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [metric:version_release_count] 国际服务场景的空间锚点仍以场景台账为准。
+
+## 区域协同接口｜先交换问题，不替协作关系背书
+
+本方案把任务书点名的京津冀制造应用、技术标准、知识传播、OPC 小团队和国际服务写成五条接口。接口只规定交换什么、由哪一处概念空间承接、缺什么资料后才可继续，不能被阅读为已签约伙伴或招商计划。`visual/assets/regional-interface-ledger.json` 登记了每条接口的来源边界、空间锚点、缺口和停止规则。[data:visual/assets/regional-interface-ledger.json] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+![图 13｜区域协同接口台账：技术、标准、知识、生态与国际软配套](assets/figures/regional-interface-ledger.png)
+
+技术接口从海淀研发问题转向京津冀制造与应用讨论，标准接口只输出待专业复核的协议草案，知识接口通过问题清单、事件复盘和年度 release note 学习，生态接口给一人公司和小团队留下公平申请与冲突披露，国际接口只表达多语、医疗导航、知识产权和生活服务的待核验目录。任何接口遇到授权、责任、权属、版权或服务能力缺口都回到资料门，不升级为空间实施结论。[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [depth:risk_missing_data] 国际服务场景另由 SC-D03 台账登记。
+
+## 标识与空间卡｜让“人本”成为可辨认的设计语言
+
+本轮补一套作者原创的概念识别规则，使图签、场景卡、人工停止提示和版本 release note 有同一视觉语法。开放括号、轨道和人工确认点分别提示可调用、历史连续和人的最终决定权；色彩只服务于阅读，不冒充主办方、政府、企业或项目官方标识。字段与版权边界见 `visual/assets/brand-identity.json`。[data:visual/assets/brand-identity.json] [data:report/copyright_statement.md] [depth:risk_missing_data]
+
+![图 14｜京张人本城市操作系统概念识别：轨道、接口与人工确认点](assets/figures/brand-identity.png)
+
+标识只落在本包图件和离线展示上，不导出企业名单、招商承诺或官方背书。橙色用于人工接管和停止，青绿色用于公共接口和蓝绿空间，黄色用于版本门和资料缺口，深蓝与纸色保持专业图纸的可读底。以后若取得官方品牌、文保或公共空间视觉规范，必须先做权利核验和专业适配，再重算图件与 PDF。[source:SITE-PACKAGE] [depth:risk_missing_data]
 
 # 京张人本城市操作系统
 
