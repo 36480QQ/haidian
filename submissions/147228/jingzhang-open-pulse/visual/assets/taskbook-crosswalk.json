@@ -114,9 +114,11 @@
       ],
       "artifacts": [
         "visual/assets/scenario-operation-matrix.json",
-        "visual/assets/regional-ecosystem.json"
+        "visual/assets/regional-ecosystem.json",
+        "visual/assets/annual-event-system.json",
+        "visual/assets/operations-matrix.json"
       ],
-      "acceptance_test": "annual cadence, ownership, maintenance budget band and rollback gate are explicit"
+      "acceptance_test": "annual cadence, ownership, maintenance trigger, conversion handoff and rollback gate are explicit"
     }
   ],
   "version_note": "本索引把正文、图件和 JSON 的唯一证据位置绑定起来；所有空间动作仍为 provisional 概念建议。"

@@ -398,7 +398,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "183ecdef88f553c41a2f05cca87ef7560573084ce9cdd0bdc09f8ec0196af21a"
+      "hash_sha256": "062a1ec3eaa78c9a5b33eede24ff69e8a075bafebfc210b85f9c98ac1c65c518"
     },
     {
       "path": "compliance_matrix.json",
@@ -687,7 +687,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "ae8e27da24cb2dde16740bf63e8c76122e147b316204c5600928acc0c308e21e"
+      "hash_sha256": "c561d4453e44c03fbd474da4009d2ff29485e5f5e31be35b78af82f617c660f3"
     },
     {
       "path": "proposal.md",
@@ -704,7 +704,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "f62e11d2cfa0b513a187191ca8df8c928884e896e3d8da9a01c0c775bcf0bff9"
+      "hash_sha256": "953a527ab45a05510780f0a44d4fe23c308298ae0446f8e35c1c9e2b2c042769"
     },
     {
       "path": "report/copyright_statement.md",
@@ -755,7 +755,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "e162da7b9fe2d3931062b0fe3b44464a6c81eff1276cbb153c4514bfaa48ce67"
+      "hash_sha256": "4ebba55b2aab0875141cc9539907abe86a08e49ed5341eee79ca7b8f395c585f"
     },
     {
       "path": "report/proposal.html",
@@ -772,7 +772,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "b46c04d54969bc4bc5b6f7a2af4d5261bd7439f419ecbf38548314fb754857bc"
+      "hash_sha256": "0bdd3e876595a1f23a6a869bb1f68aef0aeaf60b9bfcfcc0899efbc1a12e7e6f"
     },
     {
       "path": "sources.json",
@@ -1027,7 +1027,26 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "b315d3a99a7045be0aadcc84bf4173347d7a7e2fbe8ca7f374ee6ce8728a69cc"
+      "hash_sha256": "154ed54f0ab60bf704408a63aff04fd3288b8e54e95a6ac7be841029f6550fe8"
+    },
+    {
+      "path": "visual/assets/annual-event-system.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual seasonal event, developer-community, public-window and conversion protocol; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/scenario-operation-matrix.json",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/participation-cycle.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "attribution": "Conceptual four-season activity and long-term operations system authored by 许丙南 / Codex; not an approved calendar, funding commitment,招商 plan, consent record or field result.",
+      "hash_sha256": "7447a7f6bbfd9102a01861b7b8825b7a922c7af9b6156bc53171f4d0b2453441"
     },
     {
       "path": "visual/assets/wind-health-validation-plan.json",
@@ -1096,7 +1115,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "6d251254ddf290efff323ad65cf08c4cc49fd04df7d13b0fbba9c6696e613f96"
+      "hash_sha256": "22a982d17fc1bd9e0bf08ec92636d40eb2c110b2f905a02cd28dcb3d3694e4d3"
     },
     {
       "path": "visual/index.html",
@@ -1113,7 +1132,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d22c421d1b588371fbaefb5b10fe08cbe99b780319c5fa7506ea9ebdce0cb59f"
+      "hash_sha256": "6d0028c53ec16857aa1ee12d127f5531d3367e2c5af1552df90e8442291e0121"
     },
     {
       "path": "visual/assets/open-pulse-test-window-record.schema.json",

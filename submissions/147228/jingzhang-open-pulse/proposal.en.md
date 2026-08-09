@@ -345,7 +345,7 @@ The baseline is deliberately **unknown until surveyed**. Older residents, disabl
 
 The case file compares six mechanism patterns—station-as-public-room, bounded living lab, blue-green service street, developer commons, quiet night network and heritage-as-method—rather than inventing international project facts. Each pattern says what to borrow, what not to copy, the Jing-Zhang test interface and what must be sourced before a formal citation. This preserves international communication while keeping the rights and evidence boundary auditable.
 
-Long-term operation is seasonal rather than promotional: spring gathers public questions, summer opens bounded scenes, autumn hosts a developer/maintenance review, and winter publishes evidence and decides scale, redesign or retirement. Each season records RACI, rights clearance, maintenance, complaint handling and exit. This is an operational concept for professional, community and communications teams to deepen, not an approved event calendar or funding commitment.
+Long-term operation is seasonal rather than promotional: spring gathers public questions, summer opens bounded scenes, autumn hosts a developer/maintenance review, and winter publishes evidence and decides scale, redesign or retirement. `visual/assets/annual-event-system.json` registers each season's spatial route, accountable roles, prerequisite evidence, public interface, enterprise/public-service conversion output, acceptance test and stop condition. Each season records RACI, rights clearance, maintenance, complaint handling and exit. This is an operational concept for professional, community and communications teams to deepen, not an approved event calendar or funding commitment.
 
 ### Acceptance rule
 
