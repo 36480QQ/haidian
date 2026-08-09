@@ -494,7 +494,7 @@ This package had been presenting the equivalent non-AI path, the stop-on-detecti
 | Appeal must carry a **numeric time limit** or it is unenforceable | Same Measures, **Article 15**: establish complaint and reporting mechanisms with a convenient entry, and **publish the handling process and the feedback time limit** | From this proposal's argument to **compliance with an existing requirement** |
 | Persona P4's **non-smartphone path** is non-waivable | Implementation Plan on Resolving Older People's Difficulties with Smart Technology (Guobanfa [2020] No. 45): keep traditional service methods running in parallel with smart innovation, retain the methods older people know across daily-life settings, and it names travel, medical care, consumption, culture and administrative affairs as the high-frequency cases [source:ELDERLY-SMART-TECH-PLAN] | From a persona constraint to a **policy basis with a scenario list to check against** |
 
-**The third row deserves its own paragraph, because it rewrites one of this proposal's earlier findings.** Measured across the eighteen relevant proposals in this call, nearly all state that decisions can be appealed and **exactly one gives a numeric time limit** — which this package had presented as its own increment. That conclusion now has to be corrected: **Article 15 has required publishing a feedback time limit since 2023.** So the real finding is not that this proposal thought of adding a deadline. It is that —
+**The third row deserves its own paragraph, because it has now rewritten one of this proposal's findings twice.** The original reading came from hand-reading eighteen proposals in the two tracks: nearly all say decisions can be appealed, exactly one gives a numeric time limit, and the deadline was presented here as this package's increment. Both halves have since been corrected. **First**, Article 15 has required publishing a feedback time limit since 2023, so it was never this proposal's invention. **Second**, replacing the hand-read with a re-runnable scan over all 36 proposals in the two tracks (`visual/assets/track_scan.json`) returns **five** hits, **four** excluding this proposal — so "exactly one" was itself wrong. So the real finding is not that this proposal thought of adding a deadline. It is that —
 
 > **a regulatory requirement three years in force is almost entirely unimplemented across this field.**
 
@@ -516,7 +516,23 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that six items are now the de facto standard, each appearing in four or more: speed limits, remote and physical emergency stop, on-site safety officers, incident logs, an equivalent non-AI path, and scenario-level suspension and exit conditions. This proposal **adopts all six** and writes them into the cards above, but does **not present them as innovations** — they are the admission floor. Presenting the floor as a selling point shows the field has not been read.
 
-The increment lies elsewhere: **in the test items that return zero or near-zero hits across the eighteen relevant proposals.** The left column below records how often each item appears in that set, which is both the basis for the selection and a way for a reviewer to check it independently.
+The increment lies elsewhere: **in the test items that return zero or near-zero hits across the proposals in these two tracks.**
+
+Those counts used to come from hand-reading eighteen proposals, with neither the list nor the method shipped — a number only the author could check, which by this package's own standard is not evidence. It is now a re-runnable script: the two tracks are enumerated from the git tree (**36** merged proposals, this one included), every proposal's full text is run against published keyword patterns, and each probe names the proposals it matched. Results ship as `visual/assets/track_scan.json`.
+
+| Test item | Hits / 36 | Excluding this proposal |
+|---|---|---|
+| Ice and low-temperature re-survey | 1 | **0 / 35** |
+| Noise as a number | 1 | **0 / 35** |
+| Fleet density ceiling | 1 | **0 / 35** |
+| Jurisdictional seams | 2 | 1 / 35 |
+| Emergency-access yielding | 3 | 2 / 35 |
+| Wheelchair passing as its own item | 3 | 2 / 35 |
+| Numeric appeal deadline | 5 | 4 / 35 |
+| Removal bond or insurance | 9 | 8 / 35 |
+| Control segments | 4 | 3 / 35 |
+
+**Three items survived the check and several did not.** Ice, noise convention and fleet ceiling really are zero across the other 35. But "only one gives an appeal deadline", "only four mention insurance" and "wheelchair passing appears nowhere as its own item" all understated the rest of the field, and are corrected above. **Keyword patterns miss synonyms, so a count is the number of proposals that used these words, not the number that thought about the problem** — which is why the script names its matches: so a reviewer checks them rather than trusting the number. The left column below records how often each item appears.
 
 | Test item | Field coverage | How it is read | Why it must be measured |
 |---|---|---|---|
@@ -536,7 +552,7 @@ The increment lies elsewhere: **in the test items that return zero or near-zero 
 1. **Any safety incident suspends the whole network** — not the machine involved, not the segment involved, but every machine of that type on the line, stopped and re-measured. The reason is the same as the general principle: local patching is not permitted.
 2. **Tolerance scales with kinetic energy.** F tightens with the product of mass and speed. To run faster or heavier, an operator must first obtain a stricter closure clearance — not apply for an exemption.
 
-**Incident handling and appeal, with a clock on it.** Across the eighteen relevant proposals, almost everyone writes that decisions can be appealed, and **exactly one gives a numeric time limit.** A right of appeal without a deadline cannot be enforced, because there is no way to determine whether it has been honoured. This proposal therefore writes appeal as a set of measurable commitments, and the time limits themselves enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.** This follows the general rule — what cannot be recomputed is not stated as a conclusion.
+**Incident handling and appeal, with a clock on it.** Across the 36 proposals in these two tracks, almost everyone writes that decisions can be appealed, and **five give a numeric time limit — four excluding this one.** Still a small minority, but not the "exactly one" the original hand-read reported. A right of appeal without a deadline cannot be enforced, because there is no way to determine whether it has been honoured. This proposal therefore writes appeal as a set of measurable commitments, and the time limits themselves enter the re-survey items: **appeal response timeliness is a measured quantity, not a promise.** This follows the general rule — what cannot be recomputed is not stated as a conclusion.
 
 **Insurance and a removal bond, so that exit can actually be executed.** Only four proposals mention insurance at all, eight times in total, always as one word inside a list, and none designs the risk transfer. Yet this proposal's core rule is that exceeding tolerance returns the whole route for re-survey and removes the devices — and without a funding arrangement, that rule gets deferred in practice into indefinite observation. Therefore: admission requires a **removal bond** covering device removal and site restoration, scaled to device count and occupied area; the bond releases on **completing a full re-survey cycle within tolerance**, not on entering operation; the claims route for an injured pedestrian must be written and published at admission rather than determined after an incident; and risk transfer for F1 scenarios must be in place before closure clearance is granted.
 
@@ -544,7 +560,7 @@ The increment lies elsewhere: **in the test items that return zero or near-zero 
 
 ### Jurisdictional seams: where pilots on this belt actually die
 
-Across the eighteen relevant proposals, jurisdiction, ownership boundaries and park management appear in one proposal, once. Yet this is where low-speed device pilots most often fail in reality: a machine leaves the heritage park's green space onto a municipal road, passes a campus frontage, and enters the forecourt of a privately held parcel — **changing responsible party at every crossing.** Technically it never stopped moving; in terms of responsibility it changed hands four times.
+Across the 36 proposals in these two tracks, jurisdiction, ownership boundaries and park management match in two — one excluding this proposal. Yet this is where low-speed device pilots most often fail in reality: a machine leaves the heritage park's green space onto a municipal road, passes a campus frontage, and enters the forecourt of a privately held parcel — **changing responsible party at every crossing.** Technically it never stopped moving; in terms of responsibility it changed hands four times.
 
 This proposal writes jurisdiction into the geometry rather than into prose. Every point in `geometry/public_space.geojson` carries `jurisdictions` and `is_seam_point` attributes [data:geometry/public_space.geojson#PUBLIC-001], so the claim is machine-checkable. The measured result is worth stating on its own line:
 
@@ -709,7 +725,7 @@ The rule has real veto power. It means positions inside campuses, behind compoun
 
 ### Device charging, standby, and kerb allocation
 
-Across the eighteen relevant proposals in this call, none addresses where low-speed devices are charged and parked; the only two mentions are a standardised charging interface and a plaza pickup point, neither of which concerns siting. This is a gap that stalls real pilots: a device fleet needs charging bays, standby bays and maintenance bays, all three occupy kerb or ground space, and all three want to be where the people are.
+Across the proposals in these two tracks, none addresses where low-speed devices are charged and parked; the searchable mentions are a standardised charging interface and a plaza pickup point, neither of which concerns siting. This is a gap that stalls real pilots: a device fleet needs charging bays, standby bays and maintenance bays, all three occupy kerb or ground space, and all three want to be where the people are.
 
 What this proposal supplies is a **priority order for kerb allocation**, not a set of positions:
 
@@ -754,7 +770,7 @@ Device failure at intersections is not a failure to yield; it is **accumulation*
 
 ### Emergency access: a constraint that cannot be traded away
 
-Across the eighteen relevant proposals, fire lanes, ambulances and emergency access appear once, in one proposal. This proposal writes it as a hard constraint rather than a note:
+Across the 36 proposals in these two tracks, fire lanes, ambulances and emergency access match in three — two excluding this proposal. This proposal writes it as a hard constraint rather than a note:
 
 - **No charging point, parking bay or queue storage** may be placed within a fire lane or emergency access route;
 - device behaviour on detecting an approaching emergency vehicle enters the fixed test battery, and its readings enter the closure error;
@@ -880,7 +896,7 @@ Operation is organised by **re-survey cycle rather than festival calendar**, whi
 
 ### Insurance, removal bond, and substitution
 
-Only four of the eighteen relevant proposals mention insurance at all, eight times in total, always as one word in a list, and none designs the risk transfer. Yet this proposal's core rule is "over tolerance, the whole route returns and devices are removed" — without a funding arrangement, that rule gets deferred into indefinite observation in practice. Therefore: admission requires a **removal bond** covering removal and site restoration, scaled to device count and occupied area; the bond releases on **completing a full cycle within tolerance**, not on entering operation; the claims route for an injured pedestrian must be written and published at admission, not determined after an incident; and risk transfer for F1 scenarios must be in place before closure clearance. **Amounts, premiums and settlement standards are not set here** — that is financial and legal judgement, and must follow official requirements. What is claimed is only that these arrangements must exist and must be bound to the exit trigger.
+Nine of the 36 proposals in these two tracks mention a bond or insurance — eight excluding this one — but mostly as a single word in a list, with no design for the risk transfer. Yet this proposal's core rule is "over tolerance, the whole route returns and devices are removed" — without a funding arrangement, that rule gets deferred into indefinite observation in practice. Therefore: admission requires a **removal bond** covering removal and site restoration, scaled to device count and occupied area; the bond releases on **completing a full cycle within tolerance**, not on entering operation; the claims route for an injured pedestrian must be written and published at admission, not determined after an incident; and risk transfer for F1 scenarios must be in place before closure clearance. **Amounts, premiums and settlement standards are not set here** — that is financial and legal judgement, and must follow official requirements. What is claimed is only that these arrangements must exist and must be bound to the exit trigger.
 
 **Substitution and employment: the half that must also be said.** Low-speed delivery robots displace specific people's work. This proposal neither pretends otherwise nor claims to solve it, but refuses to place it outside the design scope: changes in delivery employment within a pilot area are **registered at admission and published each cycle** alongside device counts; existing couriers and delivery workers are real spine users whose dwelling, charging, shade and toilet needs enter the kit of parts at the same level as device chargers and must not be reduced to make room for devices; and device maintenance, point stewardship and reading duties are new roles whose recruitment should prioritise those displaced — an operational recommendation dependent on operators' independent decisions. This section is not a corporate-responsibility statement. It is part of the closure: **a scenario that leaves some residents worse off has not returned to the origin, even if every technical reading is within tolerance.**
 

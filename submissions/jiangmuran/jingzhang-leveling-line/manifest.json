@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8770aa7f07ae35f8a5135e1af6bedc019c8e858e684be74b26d83e3d36330e2a"
+      "sha256": "6b62ec12a2d9a844abeeecdc75e0ec17c697ab95ba0ed3d54a621169c07f15d5"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "50315ac0167dea6bff9534f7b2fdf5a5936ace71e731fa6029c108d77addcc99"
+      "sha256": "441ae6586dd45dbbe5bbef3c29edf227e847604551f7d2e5175a8e8b51b465b6"
     },
     {
       "path": "report/narrative.md",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a2d4e9f7116b53894a819bf354057a06be2154695b5b33a06dbef2e2dcb71137"
+      "sha256": "f52ac441ee94c8bcec8ffc92b4cef88d8f6a066d0352814a7ec59da69064bb8f"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5e972a89d156a645e2dbe33870da0967a8bc6db64411e3d43257355d6da6221b"
+      "sha256": "319c246022061e1f1d67ca685c6b60e3e3fbcb46615ba780f3feda197535ffa8"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "682b44e3bdd3fb293a032670632ccbc2fef8cdc71e91f9d21213208961ad6a3c"
+      "sha256": "c20809fc1dcc8a613bd7975e4549db8e2d1b9b910ea720b8d4c7e567c91b9157"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -486,6 +486,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "732b8d8b4b959174ba3ad22fc9a73af9a4b30565d5f1755c50d4e60c7e36f600"
+    },
+    {
+      "path": "visual/assets/track_scan.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7254a7b71f73e732d3d1e31fb2fddefeee550b01cd870610953cb994a3736856"
     }
   ],
   "validation_claim": {
