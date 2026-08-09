@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-BOUNDARY-002",
+      "status": "provisional_geometry_warning",
+      "statement": "The public site package does not contain an official polygon. Issue #846 records a possible mismatch between the provisional overall boundary and the heritage park location; the boundary is not used as a precise redline or heritage claim.",
+      "impact": "All boundary-derived design layers, figures and metrics must be recalculated when official or cleared geometry is available."
+    },
+    {
+      "id": "A-DATA-003",
+      "status": "pending_professional_confirmation",
+      "statement": "Road redlines, rail assets, blue lines, heritage controls, building status, ownership, utility capacity, fire access and accessibility conditions are not supplied as authoritative spatial layers.",
+      "impact": "Road, building, public-space and phasing features are concept-level reference schemes only."
+    }
+  ]
+}
