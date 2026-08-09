@@ -1,5 +1,23 @@
 {
   "schema_version": "0.1.0",
+  "generated_at": "2026-08-09T03:19:36Z",
+  "generator": "scripts/self_check_submission.py --json; result persisted by contributor after full four-gate run",
+  "package_type": "professional_design_package",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
+  "gates": {
+    "deterministic_validation": true,
+    "spatial_review": true,
+    "visual_packaging_check": true,
+    "professional_evidence_review": true
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "notes": "Spatial KEY_AREA_PROVISIONAL findings are minor and disclosed; organizer data gaps do not block content scoring. Geometry remains provisional_constraint until official polygons are supplied.",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",

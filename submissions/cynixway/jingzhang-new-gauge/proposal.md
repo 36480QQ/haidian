@@ -2,9 +2,8 @@
 title: "京张新轨：为AI原生城市定下新轨距"
 author_github: "cynixway"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以詹天佑为京张铁路定下标准轨距(1435mm)的开拓精神为母题，把百年京张AI创新带设计为'为AI原生城市定下新轨距'的开放共创建议：一轴三轨两翼的空间结构、可复核的工程化指标证据链、12张AI场景卡、3处AI朝圣地标与长期运营体系。全部空间内容均为概念建议，基于provisional边界生成，待官方红线补齐后整包重算。"
+summary: "以詹天佑在京张铁路青龙桥设计'人'字形折返线、用工程智慧攻克陡坡的开拓精神为母题，把百年京张AI创新带设计为'为AI原生城市定下新轨距(新标准)'的开放共创建议：一轴三轨两翼的空间结构、可复核的工程化指标证据链、12张AI场景卡、3处AI朝圣地标与长期运营体系。全部空间内容均为概念建议，基于provisional边界生成，待官方红线补齐后整包重算。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
 iteration: "v1.0"
@@ -12,7 +11,7 @@ iteration: "v1.0"
 
 # 京张新轨：为AI原生城市定下新轨距
 
-> **The New Gauge** — 1909年，詹天佑（Jeme Tien-Yow）主持建成京张铁路——中国人自主设计建造的第一条铁路 `[source:HISTORY-JINGZHANG-1909]`。京张铁路采用国际标准轨距(1435mm，源于Stephenson、1937年UIC正式确立的国际标准)，并在青龙桥以"人"字形折返线攻克八达岭陡坡、以竖井法加速隧道掘进——这些才是詹天佑真正的工程创新 `[source:HISTORY-ZHAN-TIANYOU]`。本方案的"新轨距"母题承接的是这种**自主建造+采用开放标准+用工程巧思攻克难题**的开拓精神：当AI成为城市的基础设施，我们应为下一代城市定下什么样的"新轨距"（新标准）？标准服务所有人、流传百年——这契合AI应服务于人民生活、企业生产与社会运行的本意。本方案以科学和工程的方法组织空间、指标与证据，把"新轨距"从一句口号落成可复核的结构化提交包。
+> **The New Gauge** — 1909年，詹天佑主持建成京张铁路——中国人自主设计建造的第一条铁路 `[source:HISTORY-JINGZHANG-1909]`。面对八达岭的陡坡，他没有蛮干，而是在青龙桥设计了"人"字形折返线——用工程智慧让列车折返而上 `[source:HISTORY-ZHAN-TIANYOU]`。这种**用标准与工程方法解决问题、为后代留下值得纪念的东西**的精神，正是京张的开拓底色。2026年，百年京张AI创新带要回答的不是"再建一个AI园区"，而是：**当AI成为城市的基础设施，我们应为下一代城市定下什么样的"新轨距"（新标准）？** 标准服务所有人、流传百年——这正契合AI应服务于人民生活、企业生产与社会运行的本意。本方案以科学和工程的方法组织空间、指标与证据，把"新轨距"从一句口号落成可复核的结构化提交包。
 
 ## 设计依据与资料清单
 
@@ -49,7 +48,7 @@ iteration: "v1.0"
 
 ## 统筹研究范围产业与未来城市研究
 
-**总体概念：京张新轨 / The New Gauge**。核心隐喻——1909年京张铁路采用国际标准轨距(1435mm)，并在此基础上以"人"字形折返线、竖井法隧道等工程创新攻克难题，成为中国人自主建造的第一条铁路 `[source:HISTORY-JINGZHANG-1909]`；本带为AI原生城市定下"新轨距"，让数据、算力、场景、人才、企业、治理在统一标准下互通互联。这不是给传统园区贴AI标签，而是**用标准与工程方法解决"AI如何服务人/企业/社会"的问题** `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`。
+**总体概念：京张新轨 / The New Gauge**。核心隐喻——1909年詹天佑在青龙桥用"人"字形折返线攻克陡坡，用工程智慧而非蛮力解决问题 `[source:HISTORY-ZHAN-TIANYOU]`；本带为AI原生城市定下"新轨距"（新标准），让数据、算力、场景、人才、企业、治理在统一标准下互通互联。这不是给传统园区贴AI标签，而是**用标准与工程方法解决"AI如何服务人/企业/社会"的问题** `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`。
 
 **三大定位的呼应**（公告/任务书）：
 - **百年京张文化带** → "新轨距"承接詹天佑开拓精神，把铁路遗产转译为AI时代的工程标准叙事。
@@ -319,7 +318,7 @@ iteration: "v1.0"
 导视系统区分于一带整体 Logo 系统：Logo 是品牌识别（谁），导视是空间叙事（哪里/什么故事）。两者共享色彩与字体体系但功能不同。所有导视须满足无障碍：语音导览、大字高对比、触觉地图、轮椅可达高度。符号系统中的历史人物肖像、铁路图像须清权，不使用未授权的论文图像或版权材料 `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`。
 
 **国际传播文案方向（agent.5 international_communication_copy）**：
-- 英文主张：*"The New Gauge — setting the standard for AI-native cities, where the Jing-Zhang Railway once set China's track gauge."*
+- 英文主张：*"The New Gauge — setting the standard for AI-native cities, inspired by the Jing-Zhang Railway's legacy of engineering ingenuity."*
 - 国际叙事：从詹天佑的工程开拓精神到AI时代的标准共建，强调"中国人自力定标"的延续性。
 - 传播渠道方向：国际规划/AI会议、开发者社区、城市设计媒体（均为概念建议，待传播团队深化）。
 
@@ -463,7 +462,7 @@ NG-6 将 12 张场景卡（S1–S12）统一纳入服务契约框架：每张卡
 | 京津冀协同发展(2014国家战略,GDP10.4万亿) | [国务院(英)](https://english.www.gov.cn/news/202402/26/content_WS65dbfadcc6d0868f4e8e459a.html) | 中华人民共和国国务院 |
 | 京张铁路遗址公园沿线(北下关/北太平庄等7街镇) | [中国社科网](https://www.cssn.cn/kgxc/kgxc_ggkg/202207/t20220728_5431647.shtml) | 中国社会科学院 |
 
-**重要修正说明**：原方案将1435mm标准轨距归于京张铁路"定下"是不准确的——1435mm是源于Stephenson、1937年UIC正式确立的国际标准，京张铁路**采用**而非**定义**此标准。詹天佑真正的工程创新是青龙桥"人"字形折返线（攻克八达岭陡坡）和竖井法隧道掘进。本方案已据此修正叙事，"新轨距"母题承接的是"自主建造+采用开放标准+工程创新"的开拓精神，而非"首创轨距" `[assumption:A-SOURCE-REGISTRY-001]`。
+**叙事准确性说明**：1435mm标准轨距源于Stephenson、1937年UIC正式确立的国际标准，京张铁路采用此标准。詹天佑的标志性工程创新是青龙桥"人"字形折返线（攻克八达岭陡坡）和竖井法隧道掘进 `[source:HISTORY-ZHAN-TIANYOU]`。本方案"新轨距"母题的核心不是"首创轨距"，而是承接京张**用工程智慧解决难题、为后代留下标准**的开拓精神 `[assumption:A-SOURCE-REGISTRY-001]`。
 
 ## 致谢与思路来源
 

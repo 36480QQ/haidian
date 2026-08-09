@@ -135,6 +135,41 @@
       "message": "采用、复用、信任、收益和运维指标待第一年度采集基线。"
     },
     {
+      "check_id": "ADOPTION_PASSPORT_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/civic-adoption-passport.schema.json",
+      "message": "城市采用护照明确五联账本、五道门、空间许可、交付责任、公共底线、采用证据和回滚；合成示例保持concept_only。"
+    },
+    {
+      "check_id": "SPATIAL_ACCESS_CODE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/urban-room-control-code.json",
+      "message": "永久公共底座、可逆城市接口、限期AI服务与L1-L3公众暴露相互对应，且明确不是法定分区或工程标准。"
+    },
+    {
+      "check_id": "DELIVERY_AND_FISCAL_FIREWALL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/delivery-program.json",
+      "message": "前100天、六个交付包、主责职能、资金性质、年度运维、退出准备金与财政防火墙完整，不虚构预算和政府承诺。"
+    },
+    {
+      "check_id": "SEVEN_DIMENSION_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/review-evidence-index.json",
+      "message": "七维评审语言与正文、矩阵、图纸和机器文件建立证据索引；索引不指示或预定分数。"
+    },
+    {
+      "check_id": "DETERMINISTIC_ADVISORY_SCORE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "本地 score_submission.py --strict 复核为8项pass、0项needs-work、0项missing、0项manual-review；该结果仅为确定性投稿自检，不替代维护者和专家评分。"
+    },
+    {
       "check_id": "PDF_VISUAL_QA",
       "result": "pass",
       "severity": "major",

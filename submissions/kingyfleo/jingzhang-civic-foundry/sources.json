@@ -9,6 +9,22 @@
       "usage": "项目范围、坐标政策、任务、标准、枚举和缺失数据边界。"
     },
     {
+      "id": "brief-public-brief",
+      "path": "brief/public-brief.md",
+      "source_type": "user_provided_cleared",
+      "usage_class": "background_only",
+      "public_status": "public-draft",
+      "usage": "征集背景、发展愿景、重点方向和方案边界；不作为法定规划、官方红线或批准依据。"
+    },
+    {
+      "id": "brief-public-boundary",
+      "path": "brief/README.md",
+      "source_type": "user_provided_cleared",
+      "usage_class": "information_boundary",
+      "public_status": "public-draft",
+      "usage": "约束可公开、不可公开和需复核资料的使用边界；不替代正式公开性审查。"
+    },
+    {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "official_public",
