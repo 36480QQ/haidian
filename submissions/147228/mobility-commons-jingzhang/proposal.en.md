@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.27"
+iteration: "v2.30"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -31,6 +31,20 @@ An ordinary person is not a flow point in a model. At each step—leaving, trans
 | 5. Replay | An independent reviewer replays one door-to-door chain and compares continue, repair or withdraw | Minimal log, grouped result, complaint-closure evidence, version and review decision | Return to P0 investigation and human service when evidence is missing or the slowest group worsens |
 
 This table connects the design boards, curb ledger, M-09 fallback tabletop and P0/P1/P2 phasing to one acceptance entry point. PASS for four synthetic requests proves only that the state machine and rollback logic can be replayed; it does not prove real demand, accessibility performance, staffing, public acceptance or safety.
+
+## Why This Is a Jing-Zhang Public-Space Proposal: History, Industry and Daily Mobility on One Line
+
+“Centennial Jing-Zhang” is not a decorative poster in this proposal. It is a public-memory response to arrival, transfer, waiting, maintenance and getting home. The heritage park, station entrances, enterprise front doors and community service desks share wayfinding, shelter, seating, accessible routes and human service, so a person can understand the route before choosing any smart service [source:OFFICIAL-ANNOUNCEMENT].
+
+| Task requirement | Spatial answer visible in the proposal | Boundary kept explicit |
+| --- | --- | --- |
+| Centennial Jing-Zhang and urban culture | Make heritage, park, station and transfer waiting one walkable, pauseable and explainable public chain | No invented conservation conclusion, historic alignment control or approved cultural project |
+| AI innovation belt and regional collaboration | Give Zhongzhiyuan, the AI Origin Community and Dazhongsi enterprise arrival, resident daily access and rail transfer roles in one time-window ledger | Without named institutions, agreements or resident samples, this is not an alliance or partnership claim |
+| Planning innovation | Draw curb states, continuous walking, station capacity, fire clearance and human fallback as a closable spatial service layer; automation remains a constrained feeder | No new road redline, parking supply, social-road permit or building-intensity commitment |
+| Perceptible AI+ scenarios | At the station, service desk, waiting area and curb board, an ordinary person can see choices, owner, stop condition and redress | Model stress screens do not replace field counts, accessibility review or public experience |
+| Long-term operation and communication | Bilingual boards, public aggregate ledgers, asset IDs, complaint closure and P0/P1/P2 review make the proposal updateable | Bilingual display is not an international event, government endorsement or operating result |
+
+This table returns the mobility operating system to five visible urban-design interfaces: station entrance, public space, building ground floor, curb and maintenance point. The three key-area massing and ground-floor choices appear below; spatial relationships remain tied to provisional layers, while implementation dependencies and rollback roles await professional and authorised review [depth:overall_spatial_structure] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
 ## What Different People Need First: From Leaving Home to Getting Home
 
