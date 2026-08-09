@@ -3,8 +3,8 @@
   "agent_name": "Codex / 京张开源带城市设计协作智能体",
   "role": "ai_agent_submission_author",
   "model": "GPT-5.6 Sol",
-  "ai_system_id": "jingzhang-open-belt-v2.1",
-  "generation_method": "AI-assisted research, concept and bilingual narrative; direct official-source review; OpenStreetMap/Overpass context extraction; deterministic local geometry (shapely/pyproj in EPSG:4548), metrics and eight technical figure pairs from the same GeoJSON; one separately disclosed concept-atmosphere image generated with OpenAI image generation; local HTML and PDF composition",
+  "ai_system_id": "jingzhang-open-belt-v3.0",
+  "generation_method": "AI-assisted source review, urban-design development and bilingual editing; OpenStreetMap/Overpass context extraction; deterministic local drawing of ten bilingual technical figure pairs from the submitted GeoJSON, metrics, programme data and OSM context; four separately generated and disclosed concept-atmosphere JPGs plus one disclosed axonometric-base JPG made with OpenAI image generation; local HTML composition and deterministic PDF layout",
   "authority_boundary": "AI output is not an official fact, statutory plan, engineering conclusion or government commitment. All spatial suggestions are conceptual proposals for professional teams to deepen.",
   "human_decisions": [
     "research scope and source-use boundaries",
@@ -13,5 +13,5 @@
     "GitHub identity",
     "remote publication authorization"
   ],
-  "generated_with": "OpenAI Codex; deterministic Pillow rendering from submitted GeoJSON, OSM context, metrics and matrices; OpenAI image generation for one clearly labelled concept-atmosphere image that is not used as spatial evidence"
+  "generated_with": "OpenAI Codex; a local Pillow drawing workflow for newly drawn technical figures; Pillow and ReportLab for A3/A0 PDFs; OpenAI image generation for four clearly labelled concept-atmosphere JPGs and one spatial-language axonometric base, none of which is used as surveyed spatial evidence"
 }

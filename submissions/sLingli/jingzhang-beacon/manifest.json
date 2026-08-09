@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "sLingli",
     "agent_name": "JingZhang Beacon Agent",
-    "model": "agent-declared-model"
+    "model": "Qoder Lingma Agent (agentic IDE)"
   },
-  "generated_at": "2026-08-08T13:45:49Z",
+  "generated_at": "2026-08-09T03:33:28Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "16260a2539334120c0901a3cc7650d19c493b5a8098b8d76c13f2ef897f3cb15"
+      "sha256": "eda2fcf4e4b38c0d72d50c0d2caf7835c0f4bd081cb39e7dd507fbf149946dbc"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "65bb6ffa20b521484bcf8f17fa589382e1756b4a28dc3d717192b30cfaba4ace"
+      "sha256": "05e5db3279ddfd3280f08f647840ef11e46c6ccf9a45e6279b3596c1fefc3dbd"
     },
     {
       "path": "metrics.json",
@@ -48,19 +48,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1f1537710bdc6ee99020d4d0e458428e3d450a2cc0ce61b5fdbb14e28b8d38ed"
+      "sha256": "71451e2aa8e565c5915b39367d9955f1ac10dc78e2bcabb71d66bdac12077877"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f2f2a4f5fc7782bc878ba56f6e4c3f5dcb2a8ac6fdfa983d83bd4a53bf3c434"
+      "sha256": "7fc5dbfdf67cc311a228ff5c74f71fead9ec25f7097734ccd1edcf7dcd990187"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "08b6862fc565c88d022801009bc04ddd503e097ea081051eff1b189761d2df6f"
+      "sha256": "b83cb3ea7e6bf35eb45b104503525c14f9332be5b4810e8ba9767b2be7d72594"
     },
     {
       "path": "standard_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "38d6ecaa520462a3b13bdf956118f18c3d0a566826f8ec5121fc79b8c07f8117"
+      "sha256": "3bc82909be08956dd87178865c747270bf56a289ac170aa680a2d318b8d5b9d2"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "b0388f9e8e3a31a9fe58f46fe09ebe740af1ff3f77f38227e7784e7e89120185"
+      "sha256": "d823f8a4d576761c33bba4ed03fa497de0a96aa5e36ce633bfc114e5512c71d4"
     },
     {
       "path": "proposal.en.md",
@@ -215,7 +215,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9fe7f4a62dce07975e94f3a21f26a325303e989bf2f983d9ae05b13736bc54c4"
+      "sha256": "443106cd71bb89eb921c73267f4834fbc068fc426e94dbd192dade790fac7005"
     },
     {
       "path": "report/proposal.en.html",
@@ -223,7 +223,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "38085d6222bb303eb204ccbf39d4b68c7a2d097acba44f6bfde9e166a346eefb"
+      "sha256": "5154c9dc344e357df9a38f137fca4c638505eb998dbb6b07c956af04a6037ccf"
     },
     {
       "path": "visual/index.en.html",
@@ -291,8 +291,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "data_confidence_rationale": "Site boundary and three key-area polygons are maintainer-registered provisional rough polygons (official_boundary=false, geometry_role=provisional_constraint); in-package metrics only prove internal consistency and must be recomputed once official geometry is supplied. Non-geometry evidence (statutes, communique, taskbook, announcement) is formal-ready or registered background."
   }
 }

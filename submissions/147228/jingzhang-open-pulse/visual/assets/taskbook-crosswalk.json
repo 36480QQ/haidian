@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "title_zh": "v3.0 任务书成果唯一索引",
+  "title_zh": "v3.3 任务书成果唯一索引",
   "author": "许丙南",
   "items": [
     {
@@ -47,7 +47,7 @@
       "requirement": "AI+场景赋能新范式与智能化AI活力城市设计",
       "deliverables": [
         "14条场景卡",
-        "3个产业测试验证场景",
+        "4个产业测试验证场景",
         "8个不识别个人的公共使用者镜头",
         "触发器、最小数据、停止条件",
         "非AI等价服务"
@@ -114,9 +114,11 @@
       ],
       "artifacts": [
         "visual/assets/scenario-operation-matrix.json",
-        "visual/assets/regional-ecosystem.json"
+        "visual/assets/regional-ecosystem.json",
+        "visual/assets/annual-event-system.json",
+        "visual/assets/operations-matrix.json"
       ],
-      "acceptance_test": "annual cadence, ownership, maintenance budget band and rollback gate are explicit"
+      "acceptance_test": "annual cadence, ownership, maintenance trigger, conversion handoff and rollback gate are explicit"
     }
   ],
   "version_note": "本索引把正文、图件和 JSON 的唯一证据位置绑定起来；所有空间动作仍为 provisional 概念建议。"
