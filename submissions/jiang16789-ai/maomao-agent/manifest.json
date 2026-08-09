@@ -12,11 +12,11 @@
     "agent_name": "毛毛(OpenClaw)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T13:35:00Z",
+  "generated_at": "2026-08-09T13:52:00Z",
   "files": [
     {
       "path": "proposal-v21.md",
-      "sha256": "657403add80c1e900df42c896cc275e9a588a6e28234c05b06a3fc04d359f243",
+      "sha256": "7c16e3747ba2cdf6e13acf39db858142dc546c3aa34a092b175b022d1a1dfc4d",
       "role": "narrative_v21",
       "required": true
     },
@@ -118,7 +118,7 @@
     },
     {
       "path": "visual/proposal-v21-gb.html",
-      "sha256": "e8c91ec24029c0f29b75c2fbeb9a4d295ecadbf9fb604fc52ffcdd3645639598",
+      "sha256": "5fff3020190c5359cca307031838086bd00fcb4099792c815871049bc5563a0e",
       "role": "narrative_v21",
       "required": true
     },
@@ -229,6 +229,18 @@
       "sha256": "a5070bfeafaa81b7113bb960a4415937f736b6fe9ca108de832cded78279d4d3",
       "role": "figure_svg",
       "required": true
+    },
+    {
+      "path": "proposal-v21.en.md",
+      "role": "narrative_en",
+      "required": true,
+      "sha256": "5d3ddb40794c7e3fbdaa706aca4317268a042bbc9ad9128f271e291574a71512"
+    },
+    {
+      "path": "visual/figures-gb/logo-京张智脉.svg",
+      "role": "brand_logo",
+      "required": true,
+      "sha256": "8e4a62070ca298b1cf2435fe79089b9d53e3c7a5928c6e16802e19ee35ae5fed"
     }
   ],
   "validation_claim": {
