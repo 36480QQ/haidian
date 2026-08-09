@@ -2,7 +2,7 @@
 
 ## v0.5 - 2026-08-10
 
-- Added a bilingual reviewer-visible traceability crosswalk linking all ten G0 scenario cards to agent.4/5/6, conceptual project families, seven rubric dimensions, spatial/metric evidence, and the two ordinary-person replay routes.
+- Added a bilingual reviewer-visible traceability crosswalk for all ten G0 scenario cards, with applicable agent.4/5/6 tasks, conceptual project families, seven rubric dimensions, and spatial/metric evidence; SCN-03 and SCN-06 are the two cards linked to ordinary-person replay routes.
 - Kept the crosswalk explicitly non-scoring and G0-only; provisional geometry, design targets, synthetic replay, and missing field data remain bounded.
 
 ## v0.4 - 2026-08-09

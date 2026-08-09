@@ -14,11 +14,11 @@ iteration: "v0.2"
 
 # From an AI Showcase to a City for People in the AI Era
 
-**Candidate name in this submission: JINGZHANG HUMAN-CENTRIC AI COMMONS / 京张人本智城带.** This conceptual reference scheme makes entry, understanding, refusal, appeal, and co-shaping rights the first gate of every AI scenario. It joins a human buffer, a machine-callable but publicly governed civic API, institutional safeguards, and versioned governance. It does not claim a statutory plan, official brand, approval, construction feasibility, investment, confirmed policy, or delivered service. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+**Candidate name in this submission: JINGZHANG HUMAN-CENTRIC AI COMMONS / 京张人本智城带.** This conceptual reference scheme places AI within public rules. Every AI scenario first addresses entry, understanding, refusal, appeal, and the right to co-shape the city, then considers how technology may participate. It joins a human buffer, a machine-callable but publicly governed civic API, institutional safeguards, and versioned governance. It does not claim a statutory plan, official brand, approval, construction feasibility, investment, confirmed policy, or delivered service. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
 ## One-page executive brief: prove one public task chain before scaling the belt
 
-The first G0 acceptance unit is not to deploy AI. It lets an ordinary person enter, choose, use, stop, challenge and leave while keeping human and non-device routes available. It is a concept-level reference interface only: it presupposes no measured length, road, institution, budget or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
+The first G0 acceptance unit starts with a complete ordinary-person journey. The person must be able to enter, choose, use, stop, challenge and leave while human and non-device routes remain available throughout. It is a concept-level reference interface only. It presupposes no measured length, road, institution, budget or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
 
 | Ordinary-person path | Visible space/service | Evidence to leave | If it fails |
 |---|---|---|---|
@@ -58,9 +58,9 @@ The energy chapter is a research gate, not an engineering claim. A Beijing publi
 
 ## Detailed Design of Key Areas
 
-Zhongzhiyuan is a problem–protocol–shared-lab concept: an open problem register, reviewable civic-API protocol, human override, and release note before any real data connection. The AI-origin community is a retention–learning–care sequence with a negotiation hall, reskilling living room, intergenerational court, and night-service node. Dazhongsi is a cultural–business–explainable-service prototype, not a list of brands or works. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/public_space.geojson#PUBLIC-02] [metric:reskilling_path_count]
+Zhongzhiyuan is a problem–protocol–shared-lab concept: an open problem register, reviewable civic-API protocol, human override, and release note before any real data connection. The AI-origin community is a retention–learning–care sequence with a negotiation hall, reskilling living room, intergenerational court, and night-service node. Dazhongsi uses a cultural–business–explainable-service prototype with staffed service, explainable digital service, and retractable display. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/public_space.geojson#PUBLIC-02] [metric:reskilling_path_count]
 
-Three low-scale pilgrimage landmarks are the Open Problem Mile Marker, Algorithm Calibration Court, and Human Override Beacon. They display question versions, human revisions, and withdrawal rights rather than celebrity, ranking, or monumentality. The Jingzhang heritage-park public-space sequence, east–west stitching, and north–south link are conceptual wayfinding, walking, and blue-green research strategies, not bridge, tunnel, underground, or construction conclusions. [data:geometry/public_space.geojson#PUBLIC-05] [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:landmark_count]
+Three low-scale pilgrimage landmarks are the Open Problem Mile Marker, Algorithm Calibration Court, and Human Override Beacon. They display question versions, human revisions, and withdrawal rights, with no role for celebrity, ranking, or monumentality. The Jingzhang heritage-park public-space sequence, east–west stitching, and north–south link are conceptual wayfinding, walking, and blue-green research strategies. They do not establish bridge, tunnel, underground, or construction conclusions. [data:geometry/public_space.geojson#PUBLIC-05] [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:landmark_count]
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -68,7 +68,7 @@ Six personas make the ecosystem accountable: original residents and older people
 
 Ten scenario cards are all G0 concept protocols. Each records users, spatial reference, operational responsibility, data minimization, human fallback, metric, and exit. Three validation contexts—low-speed robots, low-altitude logistics rules, and flood-simulation explanation—do not claim permission, deployment, or real-data access. The civic API similarly begins with catalogue, authorization, logging, appeal, and revocation. [data:geometry/constraints.geojson#SCN-07] [data:geometry/constraints.geojson#SCN-08] [metric:scenario_card_count]
 
-For reviewer-visible reverse tracing, `visual/assets/ai-era-traceability-index.json` connects each of the ten G0 cards to agent.4/5/6, the five conceptual project families, the seven rubric dimensions, spatial/metric evidence, and the ordinary-person offline replay. It is a submission-owned review crosswalk: it assigns no official score and does not upgrade provisional geometry, design targets, or synthetic replay into field facts. [data:visual/assets/ai-era-traceability-index.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:compliance_and_standard_response]
+For reviewer-visible reverse tracing, `visual/assets/ai-era-traceability-index.json` connects each of the ten G0 cards to the applicable agent.4/5/6 tasks, five conceptual project families, seven rubric dimensions, and spatial/metric evidence. SCN-03 and SCN-06 additionally link to the two ordinary-person offline replay routes. It is a submission-owned review crosswalk: it assigns no official score and does not upgrade provisional geometry, design targets, or synthetic replay into field facts. [data:visual/assets/ai-era-traceability-index.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:compliance_and_standard_response]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -80,13 +80,13 @@ Silicon right-of-way is translated into people-first rules: walking and access f
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-Xiaoyuehe is a resilience gate rather than a background image. Green layers represent buffers, night screen-free space, and a skills walking chain; flood simulation is an explainable learning interface, not a drainage or flood-control design. The temporary calculated green and public-space layers are 879,519.159 sqm and 123,473.537 sqm. [data:geometry/green_space.geojson#GREEN-01] [metric:green_space_area_sqm] [metric:public_space_area_sqm]
+Xiaoyuehe sets the resilience threshold for the AI public-space concept. Green layers represent buffers, night screen-free space, and a skills walking chain; flood simulation is an explainable learning interface, not a drainage or flood-control design. The temporary calculated green and public-space layers are 879,519.159 sqm and 123,473.537 sqm. [data:geometry/green_space.geojson#GREEN-01] [metric:green_space_area_sqm] [metric:public_space_area_sqm]
 
 The component library includes a human desk, dual-channel wayfinding, reversible test boundary, screen-free seating, modular data/power box, and question version plaque. The cultural narrative joins Jingzhang rail memory, Zhongguancun innovation, and AI culture through the phrase Build with people, verify in public. Heritage content and placement remain subject to cultural review. [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/public_space.geojson#PUBLIC-03] [depth:blue_green_public_space_character]
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Five conceptual project families—human buffer/retention, reskilling/night health, civic API/data governance, Xiaoyuehe blue-green human-machine testing, and culture/global commons—each state role types, data preconditions, resource-intensity class, G0/G1 gates, acceptance metrics, and exit protocol. This is not a project approval, budget, policy, or construction plan. [data:geometry/phasing.geojson#PHASE-01] [metric:project_family_count] [depth:implementation_and_phasing]
+Five conceptual project families—human buffer/retention, reskilling/night health, civic API/data governance, Xiaoyuehe blue-green human-machine testing, and culture/global commons—each state role types, data preconditions, resource-intensity class, G0/G1 gates, acceptance metrics, and exit protocol. They remain conceptual and do not constitute project approval, budget, policy, or construction plans. [data:geometry/phasing.geojson#PHASE-01] [metric:project_family_count] [depth:implementation_and_phasing]
 
 ### Phase–participant–acceptance gates (concept v0, not a construction promise)
 
@@ -100,7 +100,7 @@ Each project family moves through three phases with explicit responsibility boun
 
 A four-season Commons Cycle frames public problem release, Xiaoyuehe co-learning walks, developer protocol camp, and annual v0.x health check/release note. The developer mechanism is problem register → office hours → G0 protocol → human/public review → version note; international conversion is multilingual evidence → due diligence → voluntary reversible exchange. [source:AGENT-TASKBOOK] [data:geometry/phasing.geojson#PHASE-03] [metric:scenario_g0_count]
 
-### Implementation Loop and Participating Roles
+### Implementation Process and Participating Roles
 
 To make implementation auditable rather than aspirational, the five conceptual project families use the same G0–G1–G2 gates. The roles below are proposed roles for professional confirmation, not confirmed partners. The structured package remains authoritative for the full fields, family responsibilities, data preconditions, acceptance evidence, and exit protocols in `visual/assets/implementation-operation-matrix.json` and `visual/assets/scenario-space-operation-matrix.json`.
 
@@ -108,9 +108,9 @@ To make implementation auditable rather than aspirational, the five conceptual p
 |---|---|---|---|
 | G0 paper protocol | proposal team, community representatives, public-service role, data-responsibility role, cultural-review role | public problem, consent scope, equivalent human route, scenario cards, `scenario_g0_count`, `manual_fallback_coverage_ratio` | no consent, source, owner or human route means no progression |
 | G1 professional review | planning, transport, water, accessibility, privacy, safety, energy and cultural professionals | official geometry or field baseline, permit prerequisites, risk review, accessibility walk-through, recalculated metrics and review record | missing critical data or professional sign-off keeps the work at G0 |
-| G2 controlled-operation decision | authorised operator, on-site safety role, independent review role, community observers and complaint channel | responsibility chain, insurance/safety documents, incident log, human takeover, complaint closure, stop and withdrawal record | only a professional decision after all prerequisites; incident, consent withdrawal or failed metric freezes or withdraws the trial |
+| G2 controlled-operation decision | authorised operator, on-site safety role, independent review role, community observers and complaint channel | responsibility chain, insurance/safety documents, incident log, human takeover, complaint handling record, stop and withdrawal record | only a professional decision after all prerequisites; incident, consent withdrawal or failed metric freezes or withdraws the trial |
 
-This submission claims only a completed G0 conceptual evidence chain; G1 and G2 remain dependent on missing data and professional judgment. The table is not a permit, operator appointment, budget, partnership, road right or deployment claim. It makes stage, participating roles, acceptance metrics and exit actions directly reviewable in the narrative rather than leaving them only in JSON.
+This submission claims only a completed G0 conceptual evidence chain; G1 and G2 remain dependent on missing data and professional judgment. The table is not a permit, operator appointment, budget, partnership, road right or deployment claim. The narrative states the stages, participating roles, acceptance metrics, and exit actions, while JSON attachments provide field-level detail.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
