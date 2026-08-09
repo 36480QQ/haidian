@@ -42,6 +42,54 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CASE-HELSINKI-AI-REGISTER",
+      "url": "https://ai.hel.fi/en/ai-register/",
+      "source_type": "background_only",
+      "usage": "Reference case for public AI transparency and accountable municipal AI governance; not a site-specific planning fact."
+    },
+    {
+      "id": "CASE-AMSTERDAM-ALGORITHM-REGISTER",
+      "url": "https://algoritmeregister.amsterdam.nl/",
+      "source_type": "background_only",
+      "usage": "Reference case for an accessible algorithm register and public explanation of municipal AI systems; not a site-specific planning fact."
+    },
+    {
+      "id": "CASE-BARCELONA-DIGITAL-STANDARDS",
+      "url": "https://www.barcelona.cat/digitalstandards/en/ethical-digital-standards",
+      "source_type": "background_only",
+      "usage": "Reference case for ethical digital standards, procurement, and public-interest technology; not a site-specific planning fact."
+    },
+    {
+      "id": "CASE-SINGAPORE-VIRTUAL-SINGAPORE",
+      "url": "https://www.nrf.gov.sg/programmes/virtual-singapore",
+      "source_type": "background_only",
+      "usage": "Reference case for city-scale 3D/digital-twin collaboration; not a site-specific planning fact."
+    },
+    {
+      "id": "CASE-SEOUL-SMART-CITY",
+      "url": "https://smartcity.seoul.go.kr/",
+      "source_type": "background_only",
+      "usage": "Reference case for public-facing smart-city services and civic technology; not a site-specific planning fact."
+    },
+    {
+      "id": "CASE-BARCELONA-SENTILO",
+      "url": "https://sentilo.io/",
+      "source_type": "background_only",
+      "usage": "Reference case for open sensor infrastructure and interoperable urban data; not a site-specific planning fact."
+    },
+    {
+      "id": "ORIGINAL-ASSET-REGISTER",
+      "path": "report/copyright_statement.md",
+      "source_type": "agent_generated_design",
+      "usage": "Package-specific authorship, license, clearance boundary, and hash-association register for text, geometry, figures, PDFs, SVG, HTML, and code."
+    },
+    {
+      "id": "ORIGINAL-LOGO-SVG",
+      "path": "assets/figures/jing-zhang-ai-commons-logo.svg",
+      "source_type": "agent_generated_design",
+      "usage": "Original concept mark for this proposal; not an official logo or registered trademark."
     }
   ]
 }
