@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "05c848378b65dfda50589b8d6b03047eaff2f07adc08c587704e8533085945f2"
+      "sha256": "efa750bb245ea4ce68f4c10eb56075b037b653f602dbe1b9228f500cfb7d2ffa"
     },
     {
       "path": "agent.json",
@@ -35,7 +35,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "5a1d9936384fd3db5ab9236c18c64ae095bdf75ac6e90084d00104de215b77ea"
+      "sha256": "3ff6fc73fac1878a2daadce34ba3e91bc53ff4fd4724393598026f5554efcaf6"
     },
     {
       "path": "assumptions.json",
@@ -65,7 +65,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "9d654c8ec9b72a343db03a2c9ec94ef57bd493e9e459b1faf423228725c5a507"
+      "sha256": "4fd2a0f5ec198323e5924a50e6cfb47a66ac5988e537f0d1f4c702a0cea55431"
     },
     {
       "path": "design_depth_matrix.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "25343d8ff68db596dd67ba37de22541012fd2a73e1af765d44b39efdde9797a6"
+      "sha256": "eda67725e0207310fa59995e4bc09cef54ffd02e58eb6c5469360694d4f27967"
     },
     {
       "path": "report/narrative.md",
@@ -95,25 +95,25 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "3bd17532720e7c635ec71077199f0ee6d3e223b29f66acc31d05be7212729d8d"
+      "sha256": "f58d6568fe41af51bf03cdefd5495c1889a54ca333461c37f2e1711b14c69e4b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "fccdd058947c03446edad7721cfdc13907ce78262590f504f414259312602173"
+      "sha256": "a7f04b6f4431b364bdebb7a9faa5fa58e705c0d4e1fb75385d91de4857ca4ad4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "86c45888042da98970a890f1395fad61c31c0c89dccb985cb227580138850e12"
+      "sha256": "a8b0c51c649f5d7414a3f6f04d7f2ea31177b434bbbb0ab94427c615faca11f4"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b03999188897082232d54236051a36bafe3f84e75d8e2ceb242b7ff483cd2a45"
+      "sha256": "1ab7bdb2d9dd5f98ae1087f5db9c348925d727a9dc0c814045055fbd911bdc27"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -131,13 +131,13 @@
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f1ccacd2343afb1ee488e3e50343ad8030e8e123edd412b3df1cc8716eb18539"
+      "sha256": "dc22588ca935922795acbce4443d1dd45f3771f2a732dc70c10a4381d03e2d89"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "10fe2d6ce732137f6778be47ab91946ed909538a8ff3cc4bcd717e33f1b1d9f9"
+      "sha256": "d0ea16df2d4db6a7b7c0f2462279c848ebec9168bcbd9607ba3069cf9967c1ab"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -161,7 +161,7 @@
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "df07f63dbad3714a68c7a7b65f4be5ba1673a7034290a8813144be9f0ef5cb43"
+      "sha256": "7fa0de80d615e00781737a42026ca14f71e251846a9f97164e4fedfc25683967"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -179,7 +179,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "05a070be8ccd1d5d991b03db841c87ac41d69da86c79557d950f601d54391858"
+      "sha256": "15c84cde06745960aa9f5caf34705d07941a6f396ba6cf999e7736ac9653dd21"
     },
     {
       "path": "geometry/roads.geojson",
@@ -191,7 +191,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "d7b4ccb58a1cd92e31a2b95b628d62910a3980b0a54d6acbb67a963c7e52b1e1"
+      "sha256": "44b3ff257e0553c5b004c302aa6b341e8bc940b022a9d99800c532c88bf83c45"
     },
     {
       "path": "assets/figures/brand-logo.png",
