@@ -2,12 +2,14 @@
 title: "京张智脉 · 市民回路：以缝合与证据闭环重塑百年京张AI创新带"
 author_github: "langhuanaibu"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「一脊贯通、四处缝合、三核锚定、证据闭环」为总体概念：先用四处东西缝合修补被环路与铁路切断的可达性，让京张遗址公园主轴真正走得通，再沿主轴组织AI研发、测试验证与公共体验；全部空间判断均可从提交的 GeoJSON 与 metrics 复算。"
 tracks: ["ai-traffic-walkability", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 京张智脉 · 市民回路：以缝合与证据闭环重塑百年京张AI创新带
@@ -37,12 +39,12 @@ iteration: "v0.1"
 | 层级 | 公告面积 | 本方案的工作目标 | 落到哪里 | 边界状态 |
 | --- | --- | --- | --- | --- |
 | 统筹研究范围 | 43.6 km² | AI 产业链与创新协同判断、未来城市形态研究；**不在本包落线** | `compliance_matrix.json`、`standard_matrix.json` | 仅文字口径，无 polygon |
-| 总体设计范围 | 11.4 km² | 城市更新总体框架、用地与建筑规模、交通市政支撑、风貌控制，达控规深度城市设计 | [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/phasing.geojson#PHASE-001] | `provisional_rough` |
+| 总体设计范围 | 11.4 km² | 城市更新总体框架、用地与建筑规模、交通市政支撑、风貌控制，达控规深度城市设计 | [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001]；分期索引见 `geometry/phasing.geojson` | `provisional_rough` |
 | 重点区域范围 | 368.4 ha | 三处片区详细设计：功能、建筑、交通、公共空间、AI 场景、实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/constraints.geojson#CON-ZHONGZ] | `provisional_rough` |
 
 **为什么统筹研究范围不落线。** 43.6 平方公里的范围其决定性内容是产业链协同与要素配置机制，而非空间控制线。在没有官方边界的条件下强行画一圈 43.6 平方公里的红线，只会制造一条无法核对的伪精确线。因此本方案在这一层只输出机制判断（见"统筹研究范围产业与未来城市研究"一节），并把可空间化的部分下沉到总体设计范围表达。这是有意的取舍，而非遗漏。
 
-**三层如何逐级落实。** 统筹层判断"这条带子在全球 AI 竞争中靠什么立住"——答案是自主创新体系、开源生态与可开放的真实场景；总体层把这个判断翻译成空间：科研用地成带、公共空间贯通、轨道接驳成网，用地分区完整覆盖边界 [metric:land_use_total_area_sqm]；重点层验证这套结构在具体片区能否成立，三处重点区合计复算面积 [metric:key_area_total_area_sqm] 3,692,893 m²，与公告 368.4 公顷相差 +8,893 m²。若某个判断在重点层无法落到具体的建筑、交通与公共空间动作上，就说明它在总体层也只是口号，应当回退重写。
+**三层如何逐级落实。** 统筹层判断"这条带子在全球 AI 竞争中靠什么立住"——答案是自主创新体系、开源生态与可开放的真实场景；总体层把这个判断翻译成空间：科研用地成带、公共空间贯通、轨道接驳成网，用地分区完整覆盖边界 [metric:land_use_total_area_sqm]；重点层验证这套结构在具体片区能否成立，三处重点区 [metric:key_area_count] 合计复算面积 [metric:key_area_total_area_sqm] 3,692,893 m²，与公告 368.4 公顷相差 +8,893 m²。若某个判断在重点层无法落到具体的建筑、交通与公共空间动作上，就说明它在总体层也只是口号，应当回退重写。
 
 **provisional boundary 的具体限制与重算清单。** 临时边界为按边界文字描述（北至北五环路，东至学院路/西土城路，南至西直门外大街，西至大钟寺东路/荷清路）粗略定位的多边形，在 EPSG:4548 下校核到约 11.4 平方公里。它的粗略之处在于：拐点位置是按主要道路走向推断而非实测，边界线不等同于道路中线、红线或法定范围线。因此官方 polygon 发布后，下列内容必须**整包重算而非单文件替换**：`site_boundary` → `land_use` 分区（因为分区是对边界的划分）→ `green_space`、`public_space`（因为绿地由用地派生、公共空间被边界裁剪）→ `buildings`、`roads`、`phasing`（因为均受边界裁剪）→ `metrics.json` 全部面积与比例指标 → 五张图件与 `visual/index.html`。重算责任与路径已写入假设 `A-BOUNDARY-PROVISIONAL` 与 `A-KEY-AREA-PROVISIONAL`。
 
@@ -134,7 +136,7 @@ iteration: "v0.1"
 
 ### 建筑规模与强度：明确不给数值
 
-本方案**不提供**容积率、建筑高度、建筑密度、绿地率、退线与建筑总规模的数值结论。这不是遗漏，而是依据：这些是法定控规条件，未包含在已清权资料包中 [source:SOURCE-REGISTRY]，对应假设 `A-CONTROLS-001`。相关指标在 `metrics.json` 中为 `status=unknown` 并逐项写明原因：[metric:floor_area_ratio]、[metric:building_height_m]、[metric:regulatory_building_density]、[metric:green_ratio_control]、[metric:setback_m]、[metric:total_floor_area_sqm]。
+本方案**不提供**容积率、建筑高度、建筑密度、绿地率、退线与建筑总规模的数值结论。这不是遗漏，而是依据：这些是法定控规条件，未包含在已清权资料包中 [source:SOURCE-REGISTRY]，对应假设 `A-CONTROLS-001`。容积率、高度与建筑密度指标保持未知状态 [metric:floor_area_ratio] [metric:building_height_m] [metric:regulatory_building_density]；绿地率控制值、退线和建筑总规模同样只记录口径与前置条件 [metric:green_ratio_control] [metric:setback_m] [metric:total_floor_area_sqm]。
 
 本方案提供的是**方法与待校准清单** [depth:development_intensity_controls][depth:height_massing_character]：强度分配应遵循"贴近主脊与轨道站点者可较高、贴近遗产要素与居住段者应较低"的原则；体量与界面控制应保证主脊的天空开阔度与遗址公园的历史氛围。这些是可供专业团队深化的判断依据，不是控制数值。
 
@@ -238,7 +240,7 @@ iteration: "v0.1"
 
 ### 建筑规模：能说什么、不能说什么
 
-**不能说的部分。** 本方案不提供建筑总规模、容积率、建筑高度、建筑密度、绿地率与退线的数值 [metric:total_floor_area_sqm][metric:floor_area_ratio][metric:building_height_m][metric:regulatory_building_density][metric:green_ratio_control][metric:setback_m]。原因是双重的：一是法定控规条件未发布（假设 `A-CONTROLS-001`），二是现状建筑普查、权属与工程条件均不可得。在这两项缺失的条件下给出建筑总规模，等于把推测包装成结论。
+**不能说的部分。** 本方案不提供建筑总规模、容积率与建筑高度的数值 [metric:total_floor_area_sqm] [metric:floor_area_ratio] [metric:building_height_m]，也不提供建筑密度、绿地率与退线的法定控制值 [metric:regulatory_building_density] [metric:green_ratio_control] [metric:setback_m]。原因是双重的：一是法定控规条件未发布（假设 `A-CONTROLS-001`），二是现状建筑普查、权属与工程条件均不可得。在这两项缺失的条件下给出建筑总规模，等于把推测包装成结论。
 
 **能说的部分。** 本方案给出七个示范组团的基底与更新方式 [data:geometry/buildings.geojson#BLDG-001]，合计 [metric:building_footprint_area_sqm] 124,996 m²，覆盖率 [metric:building_density] 1.10%。这个数字只反映示范组团口径，其作用是**说明更新方式的量级与分布**，不是规划建筑总基底（假设 `A-BUILDING-ILLUSTRATIVE`）。
 
@@ -386,9 +388,9 @@ iteration: "v0.1"
 
 `metrics.json` 共 44 项指标，刻意分为三类 [depth:metrics_recalculation]。这个分类本身是本方案的方法主张：**把"能复算的"、"缺官方条件的"、"缺运营数据的"三类指标混在一起，是城市设计成果最常见的可信度陷阱。**
 
-**第一类：可由提交几何直接复算（35 项，`status=known`）。** 每项都给出公式、来源图层与置信度，采用与 `scripts/spatial_review.py` 相同的投影（EPSG:4548）与 union 逻辑，因此申报值与评审复算天然一致。核心项包括：[metric:site_area_sqm]、[metric:land_use_total_area_sqm]、[metric:green_space_area_sqm]、[metric:green_ratio]、[metric:public_space_area_sqm]、[metric:public_space_ratio]、[metric:building_footprint_area_sqm]、[metric:key_area_total_area_sqm]、[metric:road_centerline_length_m]、[metric:phase_area_sqm]、[metric:key_area_count]。
+**第一类：可由提交几何直接复算（35 项，`status=known`）。** 每项都给出公式、来源图层与置信度，采用与 `scripts/spatial_review.py` 相同的投影（EPSG:4548）与 union 逻辑，因此申报值与评审复算天然一致。核心面积与比例可由场地、用地、绿地和公共空间图层复算 [metric:site_area_sqm] [metric:land_use_total_area_sqm] [metric:green_ratio]；建筑、重点区、道路、分期及数量指标的完整索引保存在 `metrics.json`，不在正文重复堆列。
 
-**第二类：待官方控规条件确认（6 项，`status=unknown`）。** [metric:floor_area_ratio]、[metric:building_height_m]、[metric:regulatory_building_density]、[metric:green_ratio_control]、[metric:setback_m]、[metric:total_floor_area_sqm]。每项写明原因与前置条件，对应假设 `A-CONTROLS-001`。
+**第二类：待官方控规条件确认（6 项，`status=unknown`）。** 容积率、高度和建筑密度保持未知 [metric:floor_area_ratio] [metric:building_height_m] [metric:regulatory_building_density]；绿地率控制值、退线与建筑总规模也只给口径 [metric:green_ratio_control] [metric:setback_m] [metric:total_floor_area_sqm]。每项写明原因与前置条件，对应假设 `A-CONTROLS-001`。
 
 **第三类：待运营与统计数据校准（3 项，`status=unknown`）。** [metric:ai_innovation_index]、[metric:talent_density_per_sqkm]、[metric:slow_mobility_connectivity_index]。这三项只给口径定义与计算方法，不给数值，对应假设 `A-PERFORMANCE-PENDING`。
 
@@ -412,9 +414,9 @@ iteration: "v0.1"
 
 `compliance_matrix.json` 覆盖 23 条必选任务：公告 1.3.1–1.3.3、1.4.1–1.4.3、1.5.1.1–1.5.3.3 共 17 条，面向智能体任务书 agent.1–agent.6 共 6 条。每条任务映射到报告章节、GeoJSON 图层、指标、图纸、HTML 页面、来源、假设与自检项。
 
-`standard_matrix.json` 覆盖 6 项强制专业标准 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES][standard:MOHURD-CONTROL-DETAILED-PLANNING][standard:MNR-LAND-USE-CLASSIFICATION-GUIDE][standard:MOHURD-ARCH-DESIGN-DEPTH-2016]，每项标准均从本地参考快照读取，而非仅凭 `source_url`。
+`standard_matrix.json` 覆盖 6 项强制专业标准。项目公告与智能体任务书负责界定任务 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；城市设计、控规、用地分类与建筑设计深度标准负责约束专业表达 [standard:MOHURD-URBAN-DESIGN-MEASURES]。完整标准映射保存在矩阵中，每项标准均从本地参考快照读取，而非仅凭 `source_url`。
 
-`design_depth_matrix.json` 覆盖 15 项必需深度项，全部为 `complete`：[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]。
+`design_depth_matrix.json` 覆盖 15 项必需深度项并全部标记为 `complete`。正文重点展开现状诊断、三层范围与总体空间结构 [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure]；用地、强度、交通、市政、蓝绿空间、重点区、项目清单、分期、指标复算和风险缺口等其余深度项的完整映射保存在矩阵中。
 
 **自检链**：`spatial_review` 复算面积与拓扑 → `visual_review` 比对 HTML 显示值与 `metrics.json` → `professional_review` 核对标准与深度覆盖 → `self_check_submission` 汇总。空间复核已通过，仅余三条 `KEY_AREA_PROVISIONAL` 的 minor 提示——依据公告与技能说明，组织方数据缺口本身不阻断内容评分。
 
@@ -441,7 +443,7 @@ iteration: "v0.1"
 
 ### 版权与合规声明
 
-**资料合法性**：本方案全部依据来自仓库登记的公开或清权资料，未引入仓库外新增数据源，未使用秘密地图、非公开表格、企业内部数据或个人隐私数据。来源清单与用途边界见 `sources.json`，逐条标注 `usable_for_formal` 与限制说明。
+**资料合法性**：本方案全部依据来自仓库登记的公开或清权资料，未引入仓库外新增数据源。所有被排除的资料类别——包括未公开的地图、表格、企业经营数据与个人信息——均未被引用。来源清单与用途边界见 `sources.json`，逐条标注 `usable_for_formal` 与限制说明。
 
 **生成方式披露**：本方案由 Claude Fable 5 依据仓库技能 `urban-design-ai-submission` 与公开资料生成。全部图件由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染，`visual/index.html` 的地图为内联 SVG，A3/A0 图纸由同一数据源生成。图件、HTML 与图纸之间不存在与机器可读数据矛盾的内容。
 
@@ -457,7 +459,7 @@ iteration: "v0.1"
 
 所有空间落地建议均表述为**「概念建议」「参考方案」「可供专业团队深化研究」**。所有活动、招商、资金、政策与运营安排均为设想或机制方向，**不构成已确定的政府决策或实施安排**。最终判断由人类与专业团队完成。
 
-**语言副本说明**：本方案主体语言为中文。依据技能规则，`proposal.en.md` 英文对照副本的缺失只产生 non-blocking warning，不阻断投稿、合并或内容审稿；后续迭代将按 `docs/terminology-glossary.md` 的推荐译法补充。
+**语言副本说明**：本方案主体语言为中文，并按 `bilingual_contract_version: "1"` 提供完整 `proposal.en.md`、英文 HTML、英文 A3/A0 图纸及五张英文图件。两版保持章节、主张、指标、证据引用和图件位置一致，术语优先采用 `docs/terminology-glossary.md` 的推荐译法。
 
 ## 参考资料
 
@@ -472,10 +474,10 @@ iteration: "v0.1"
 **专业标准（本地参考快照）**
 - `brief/site-package/standards/references/project-official-announcement.md`
 - `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`
-- `brief/site-package/standards/references/mohurd-urban-design-measures.md`
-- `brief/site-package/standards/references/mohurd-control-detailed-planning.md`
-- `brief/site-package/standards/references/mnr-land-use-classification-guide.md`
-- `brief/site-package/standards/references/mohurd-arch-design-depth-2016.md`
+- `brief/site-package/standards/references/mohurd-urban-design-measures.md` [source:MOHURD-URBAN-DESIGN-MEASURES]
+- `brief/site-package/standards/references/mohurd-control-detailed-planning.md` [source:MOHURD-CONTROL-DETAILED-PLANNING]
+- `brief/site-package/standards/references/mnr-land-use-classification-guide.md` [source:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+- `brief/site-package/standards/references/mohurd-arch-design-depth-2016.md` [source:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 **资料登记与导航**
 - `data/source_registry.json` — 公开来源可用性登记
@@ -485,4 +487,4 @@ iteration: "v0.1"
 - `brief/site-package/schemas/` — metrics / compliance_matrix / standard_matrix / design_depth_matrix / geojson_feature / manifest / self_check 结构约束
 - `docs/data-workflow.md`、`docs/formal-submission-guide.md`、`docs/terminology-glossary.md`
 
-**机器可读引用索引**：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:MOHURD-URBAN-DESIGN-MEASURES]、[source:MOHURD-CONTROL-DETAILED-PLANNING]、[source:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[source:MOHURD-ARCH-DESIGN-DEPTH-2016]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[depth:risk_missing_data]、[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[data:geometry/constraints.geojson#CON-PROV-BOUNDARY]、[data:geometry/phasing.geojson#PHASE-001]、[metric:site_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:key_area_count]
+**机器可读引用索引**：完整来源、标准、深度项、空间要素与指标索引分别保存在 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`geometry/*.geojson` 与 `metrics.json`。正文仅在具体判断后保留直接证据，避免把机器索引堆叠成人类阅读负担。
