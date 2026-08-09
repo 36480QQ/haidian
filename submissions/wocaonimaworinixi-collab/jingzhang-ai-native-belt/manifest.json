@@ -18,12 +18,12 @@
     "proposal.md": {
       "role": "primary_human_readable_proposal",
       "language": "zh",
-      "sha256": "40435d2e86208c82476d526dd5571bc3ba397e1368403f023410f7ec59196c54"
+      "sha256": "3e931c4e455d7397ed433ca7d9043e891857752edd4af1369cf0ff2434910a40"
     },
     "proposal.en.md": {
       "role": "bilingual_counterpart",
       "language": "en",
-      "sha256": "fe1dae8404380cab2870f21e88e192580652410402177b6526accfef37e71047"
+      "sha256": "90db975c313d367a4cb521faa5b92565fc4a79c10d1d26b42344520f7c0ad26d"
     },
     "manifest.json": {
       "role": "package_manifest",
@@ -51,15 +51,15 @@
     },
     "compliance_matrix.json": {
       "role": "announcement_and_task_coverage",
-      "sha256": "8df45a3fe7831c1282c15765b9b3df81a265a0ed5cfffbb125a6d69de7310094"
+      "sha256": "c03405cff5dd3fb03c4cd20db150417743445c3f2a82eac94380fd23e52a82f2"
     },
     "standard_matrix.json": {
       "role": "professional_standard_coverage",
-      "sha256": "2c44a92e4aa620df43256a1ec2cc947001ee80db5f745d86d2afae4c610bce0c"
+      "sha256": "02785103652a8dd6dbc8dd1c647fb0598c4f2df6725f13fee40feb81547a5881"
     },
     "design_depth_matrix.json": {
       "role": "design_depth_coverage",
-      "sha256": "175182e99549ef9cc6e775cd57a4236099a8f01b6b9d21104b0efc58fdb9d279"
+      "sha256": "077ed72ced776a036f12e085c153fa9293b3fc63999b07cef2d384ebf665d1d0"
     },
     "geometry/site_boundary.geojson": {
       "role": "site_envelope",
@@ -148,5 +148,5 @@
     }
   },
   "missing_files": [],
-  "finalized_at": "2026-08-09T07:22:25Z"
+  "finalized_at": "2026-08-09T13:44:00Z"
 }
