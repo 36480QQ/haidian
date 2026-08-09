@@ -1045,6 +1045,41 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
+### An errata register: `visual/assets/errata.json`
+
+**Across 351 merged proposals there is no errata, no retraction and no author-written postmortem.** Two bundle the maintainer's feedback about themselves. None says what it got wrong before being asked.
+
+Which is the reason to ship one. A proposal arguing that a city should publish its own error cannot itself present a defect-free surface — the mechanism it proposes rests on the idea that a measurement you cannot see fail is a measurement you cannot trust, and a document is no different.
+
+**It is not a changelog.** A changelog says what changed. This says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and `analysis/build_errata.py` verifies at build time that the commit exists and touched the file the entry blames — an errata register that cannot be joined to the repository would be the defect it records.
+
+Twenty-three entries. By finder:
+
+| Found by | Count | What it says |
+|---|---|---|
+| Independent audit | 14 | The audit was run against the shipped package, not a draft |
+| The author | 7 | Found while working |
+| This package's own gate | 1 | Caught at build time — which is what a gate is for |
+| **A reviewer outside this proposal** | **1** | @anselasimov-web, in PR #1002 |
+
+**That last row is the most important line in the register.** A mechanism whose refusal branches are written down in an executable file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
+
+**Grouped by the *shape* of the error, something emerged that this proposal did not anticipate:**
+
+| Shape | Count |
+|---|---|
+| **The check measured the convenient thing** | **5** |
+| Geometry did not mean what it said | 4 |
+| A reference did not resolve | 4 |
+| Two copies of one thing drifted | 3 |
+| A number outlived the sentence holding it | 2 |
+| A claim outlived the package | 2 |
+| A deliverable was not looked at before shipping | 2 |
+
+**The first row occurs five times.** Translation coverage counted strings handed to the translator rather than Chinese on the page. The CJK-leak gate scanned text and could not see PDFs. The build's verdict expression omitted two gates that printed PASS. `verify.js` ended in three conclusions it printed and never refused on. The closure reader rejected an explicit `false` and not an absent field. Five times, the same thing: **the check asked whether something was said wrongly, not whether it was said at all.**
+
+That count is not rhetoric. It is this proposal's most direct evidence, measured on itself, for why closure error is worth having — one reading cannot show a systematic bias, and five readings in the same direction can.
+
 ## Risk, Copyright, and Compliance
 
 This section corresponds to [depth:risk_missing_data].

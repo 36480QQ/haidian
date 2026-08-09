@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f50bfc16ae7bcaec9a68ea8fd934e8adc9c05a2081d9cb674e1bf543bb529ba7"
+      "sha256": "ec7a35dafb5e9ca7e8bbe26464e62fab7d8b85fe9dea7fb489644d26552b7c05"
     },
     {
       "path": "agent.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5f40ff37b509746bf041240c3c5328fe41e361affdaac2ada10ea7f240cf45ce"
+      "sha256": "5655a4ee816f1c8ef79787bf835c9261dc8a763863975ed54e26a8cfd5a42938"
     },
     {
       "path": "report/narrative.md",
@@ -390,7 +390,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c94dd1609596a26df895e08181d95b31797a3a8866b5bb45cd67bfdb42014927"
+      "sha256": "dbe5846575fcc62fa0ceee918278b6db0db79927aaedc8f4bf88f49aeded0a02"
     },
     {
       "path": "report/proposal.en.html",
@@ -398,7 +398,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a573eca4833ffb82a56bab36d740d719ec323f4c4ff91a86f0eef6a6e1ded09b"
+      "sha256": "41d80db4ebff42cd249900f2d53e558691958c1710683660a349e463a1d98860"
     },
     {
       "path": "visual/index.en.html",
@@ -413,7 +413,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "38006ade9a67c749a4b860d0335f5c43e051e46b69c417f70df02819a8c59480"
+      "sha256": "86d068a1e9f6667c5b069be8d1374f8a8b70d6a479b361fc39edaa3f2ca6824a"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -556,7 +556,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "f46aac01d93884ed4b4fb0d7fd3343ee4a28ed9b4dc59d6036088f3c9a59536b"
+      "sha256": "f38a2190133a2212e07535294abb18b0ff911c7b1f5eecc303153e92e3f905de"
+    },
+    {
+      "path": "visual/assets/errata.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "30877adc70c78b9f789b84b2597c73a31f7c3dd7313c26fc14a6bd1639e32bb7"
     }
   ],
   "validation_claim": {
