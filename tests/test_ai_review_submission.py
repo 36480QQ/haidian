@@ -18,6 +18,7 @@ from ai_review_submission import (  # noqa: E402
     ReviewError,
     collect_visual_inputs,
     content_preflight,
+    is_organizer_owned_action,
     run_ai_review,
     validate_base_url,
     validate_output_dir,
@@ -449,6 +450,31 @@ class AIReviewSubmissionTests(unittest.TestCase):
         )
         self.assertEqual("do-not-publish", result["decision"]["publication_recommendation"])
         self.assertFalse(any("moved organizer-owned" in item for item in result["decision"]["local_gate_overrides"]))
+
+    def test_ambiguous_organizer_language_stays_blocking(self) -> None:
+        participant_repairs = [
+            "由组织方提供的几何被错误解读，请参赛者修正图件。",
+            "待组织方确认前，请删除已获正式批准的表述。",
+            "等待主办方发布边界前，请参赛者修正图件。",
+        ]
+        for action in participant_repairs:
+            with self.subTest(action=action):
+                self.assertFalse(is_organizer_owned_action(action))
+                review = valid_review()
+                for item in review["rubric_scores"]:
+                    item["score"] = 5
+                review["required_next_actions_zh"] = [action]
+                client = FakeClient(review)
+                with tempfile.TemporaryDirectory() as tmp, mock.patch(
+                    "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+                ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+                    result = run_ai_review(
+                        ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                        "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                    )
+                self.assertEqual("request-changes", result["review"]["recommendation"])
+                self.assertEqual([action], result["review"]["required_next_actions_zh"])
+                self.assertFalse(any("moved organizer-owned" in item for item in result["decision"]["local_gate_overrides"]))
 
     def test_submission_path_author_must_match_pr_author(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
