@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T10:12:36.902505Z",
+  "generated_at": "2026-08-09T10:29:00.103625Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b808aa18104ba26ccc919f647afa34760aa6ffc102529a8db1d9f2b52851a8f3"
+      "sha256": "ab7beecdb2cb63f6f235f7bf8c723369be2dbda422b442d9bbea18eed16ef524"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b401d9adc35c82e6044d1f40646ef3ef59bb67dbf25a6636e5c28f211bd197db"
+      "sha256": "413ed6864adbf2b880a61b1cb6463d2e85b26a47afa84fc4f422f0466d078caf"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e7b800548607eee4f818081977320519d07f71e9e887abef9646e8a1984ec7f8"
+      "sha256": "2abc7792d6082afaa02da1c4116204f67703dcff070d19e5a233bc5f82eaf2a8"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,19 +97,19 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9cc4255d3d2d53dffcd5cab31b683786a18c7bde53c065e3bf1892609e50f939"
+      "sha256": "272a9e692578e48b8457b1050dfa3c07ccefa28f72add09b7982398818a791b1"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "832763165a92c8d89cd8f11f81863c030265e3a3d92fc4d2b93f5482d3e8b9b9"
+      "sha256": "9e1daee792763c072b93a2a6f15524ec636249a239efdd7a0034b5da82b1391a"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1c397d9f0fbb2ca179dc3aa330026ab9083a32edb2b39a00c5a777d7636bf05f"
+      "sha256": "4f4f47cf0bbbc818b5928946002c4cd77c6a2aaf4b55f52c028877f4bdfd16e3"
     },
     {
       "path": "changelog.md",
@@ -410,7 +410,7 @@
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "taskbook_crosswalk",
       "required": true,
-      "sha256": "c5956879015992ccea975eeb944e6617828026b991e5abf75e081a97f1dc130e"
+      "sha256": "9f9c7754fb52be2de153027da80ea69e00308afd73ae2b4da30194f30283319b"
     },
     {
       "path": "visual/assets/annual-event-system.json",
@@ -446,7 +446,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "d48be601183435127c36b60d01e463375439893a2fdfd9bb059615157cc3b226"
+      "sha256": "cefe1477fd87bcc5d082f1c6a965282c794ef0a12d64609680434859a577a7d0"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -491,7 +491,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "e5534f90b6f737fe9ed460ab27f7d9e65b4498b51cdb00678a84efda67ce02b4"
+      "sha256": "3d28cba91ea33b58a46e1e28673911dcc89a83cca28f0ca5f41dd56cd0ce021c"
     },
     {
       "path": "visual/assets/operations-matrix.json",

@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.4"
+iteration: "v3.5"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v3.4; v3.3 names the retained spatial-object and drawing-export layer. v3.4 is a public-metadata neutralization revision and changes no spatial, metric, source or implementation boundary.
+> **Package version note:** This package is iteration v3.5; v3.3 names the retained spatial-object and drawing-export layer. v3.5 carries forward v3.4's public-metadata neutralization and repairs the bilingual A0 board layout, auxiliary-figure version labels and provisional-boundary handoff disclosure; it changes no spatial objects, metrics, source classifications or implementation boundary.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
