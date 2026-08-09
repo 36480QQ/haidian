@@ -107,7 +107,7 @@
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(projected_length(all ROAD_CENTERLINE features, EPSG:4548)",
+      "formula": "sum(projected_length(all ROAD_CENTERLINE features, EPSG:4548))",
       "confidence": "medium",
       "assumptions": [
         "Conceptual network; requires right-of-way and field verification."

@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v1.10 - 2026-08-10
+
+- Closed the projected-length formula expression in the normalized metric ledger; this is a text-quality fix only and does not change the metric value, source, status, or claim boundary.
+
 ## v1.9 - 2026-08-10
 
 - Added a checked-in deterministic schema-audit summary so reviewers can see the 29-record split (`known=11`, `unknown=18`) without manually reconstructing the normalized object.
