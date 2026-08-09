@@ -81,7 +81,7 @@
 <p>新型基础设施采用“小接口、可撤回”原则。每个服务站预留低压电源、标准停靠、设备自检、物理急停、边缘计算和人工工单接口；不预设大规模集中算力进入公园。充电优先错峰并记录能耗；设备发生热失控、网络中断或投诉超阈值时可单站下线。地下管线与电力容量未经核实，全部列为实施前置条件。<span class="evidence">data:geometry/constraints.geojson#CONSTRAINT-DATA-GAP-001</span> <span class="evidence">depth:municipal_new_infrastructure</span></p>
 <p>公共服务不由机器人独占。健康导航明确“不诊断”；文化导览有编辑审核；设施巡检不用于自动评价一线员工；活动安全不做人脸识别；配送保留人工和固定自提。服务成效以“基本任务是否更容易完成”而不是“AI调用次数”衡量。</p>
 <h2 id="蓝绿空间-公共空间与城市风貌">蓝绿空间、公共空间与城市风貌</h2>
-<p>两条纵向海绵绿带合计约2,403,003.871平方米，临时范围内绿地比例约21.0553%；连续共步公共地面与十二节点的并集约849,199.100平方米，公共空间比例约7.4407%。这些是概念图层的几何结果，不是法定绿地率或规划指标。<span class="evidence">data:geometry/green_space.geojson#GREEN-RIBBON-001</span> <span class="evidence">metric:green_space_area_sqm</span> 绿地比例和景观专业深度分别由结构化指标与矩阵核对。<span class="evidence">metric:green_ratio</span> <span class="evidence">depth:blue_green_public_space</span></p>
+<p>两条纵向海绵绿带合计约2,402,791.530平方米，临时范围内绿地比例约21.0534%；连续共步公共地面与十二节点的并集约849,284.498平方米，公共空间比例约7.4415%。这些是概念图层的几何结果，不是法定绿地率或规划指标。<span class="evidence">data:geometry/green_space.geojson#GREEN-RIBBON-001</span> <span class="evidence">metric:green_space_area_sqm</span> 绿地比例和景观专业深度分别由结构化指标与矩阵核对。<span class="evidence">metric:green_ratio</span> <span class="evidence">depth:blue_green_public_space</span></p>
 <p>绿带承担四种日常功能：树荫与热避难、雨水滞蓄、生态踏脚石、机器人与人流之间的柔性缓冲。饮水、座椅、避雨和卫生间等基本设施优先于互动屏幕；极端天气时，移动服务只能补充固定避难点。公共空间总量由 <span class="evidence">data:geometry/public_space.geojson#PUBLIC-GROUND-001</span> 与 <span class="evidence">metric:public_space_area_sqm</span> 复算，比例由 <span class="evidence">metric:public_space_ratio</span> 表达。</p>
 <p>城市风貌采用“铁路工程纸 + 开源问题单”的视觉语言：深夜蓝代表京张工程理性，公共薄荷绿代表可达与安全，珊瑚色只标示冲突与人工接管，米白色保持纸质档案温度。临时边界始终使用低对比灰色虚线，避免看起来像正式红线。设备、亭棚和标牌保留可见螺栓与编号，强调可维护、可迭代，而非未来主义外壳。</p>
 <p>文化叙事分三幕：第一幕“沿轨而行”讲述京张铁路将工程知识写入山河；第二幕“开源而生”讲述中关村把知识变成协作网络；第三幕“礼让而共”把AI时代的技术荣誉定义为对人的克制、对失败的记录和对公共利益的修复。共步零公里、慢机器试验花园、一米交换厅与贡献轨构成四个可步行的荣誉节点。Barcelona把公共空间重新分配给人，以及欧盟无障碍城市让残障组织参与规划的做法，支持这种“公共地面先于设备展示”的选择。<span class="evidence">source:CASE-BARCELONA-SUPERBLOCK</span> <span class="evidence">source:CASE-EU-ACCESS-CITY</span></p>
@@ -106,8 +106,8 @@
 <div class=table-wrap><table><thead><tr><th>指标</th><th>当前值</th><th>公式/来源</th><th>解释边界</th></tr></thead><tbody>
 <tr><td>临时总体面积</td><td>11,412,825.386 m²</td><td><code>area(site_boundary)</code></td><td>非官方红线面积</td></tr>
 <tr><td>用地覆盖率</td><td>1.000000</td><td><code>area(union(land_use))/site_area</code></td><td>拓扑完整，不等于法定用地方案</td></tr>
-<tr><td>绿地面积/比例</td><td>2,403,003.871 m² / 0.210553</td><td><code>union(green_space)/site_area</code></td><td>概念双绿带，不等于法定绿地率</td></tr>
-<tr><td>公共空间面积/比例</td><td>849,199.100 m² / 0.074407</td><td><code>union(public_space)/site_area</code></td><td>含主地面与节点并集</td></tr>
+<tr><td>绿地面积/比例</td><td>2,402,791.530 m² / 0.210534</td><td><code>union(green_space)/site_area</code></td><td>概念双绿带，不等于法定绿地率</td></tr>
+<tr><td>公共空间面积/比例</td><td>849,284.498 m² / 0.074415</td><td><code>union(public_space)/site_area</code></td><td>含主地面与节点并集</td></tr>
 <tr><td>建筑原型基底</td><td>41,744.000 m²</td><td><code>union(building prototypes)</code></td><td>仅28个原型，不代表开发量</td></tr>
 <tr><td>共步主线</td><td>9,253.804 m</td><td><code>length(ROAD-COWALK-001)</code></td><td>概念路线，非道路工程量</td></tr>
 <tr><td>场景/产业测试</td><td>12 / 3</td><td><code>count(scenario_id/type)</code></td><td>节点数量，不等于获批试点</td></tr>

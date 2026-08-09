@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-del
 
 # CO-WALK JINGZHANG / 京张共步
 
-> A century ago, the Jingzhang Railway taught machines to move along a track. In the AI era, Jingzhang should teach machines to yield in the city.  
+> A century ago, the Jingzhang Railway taught machines to move along a track. In the AI era, Jingzhang should teach machines to yield in the city.
 > **Machines yield. The city connects.**
 
 ## Design Basis and Source List
@@ -136,7 +136,7 @@ Robots do not monopolise public service. Health navigation never diagnoses; cult
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-Twin sponge-green ribbons total approximately 2,403,003.871 square metres, or 21.0553% of the provisional site. The union of the Co-Walk ground and twelve nodes is approximately 849,199.100 square metres, or 7.4407%. These are concept-geometry results, not statutory green-space controls. [data:geometry/green_space.geojson#GREEN-RIBBON-001] [metric:green_space_area_sqm] [metric:green_ratio] [depth:blue_green_public_space]
+Twin sponge-green ribbons total approximately 2,402,791.530 square metres, or 21.0534% of the provisional site. The union of the Co-Walk ground and twelve nodes is approximately 849,284.498 square metres, or 7.4415%. These are concept-geometry results, not statutory green-space controls. [data:geometry/green_space.geojson#GREEN-RIBBON-001] [metric:green_space_area_sqm] [metric:green_ratio] [depth:blue_green_public_space]
 
 The green ribbons provide shade and heat refuge, stormwater retention, habitat stepping stones, and a soft buffer between flow and machines. Drinking water, seats, weather cover, and toilets take priority over interactive screens. Public-space totals are derived from [data:geometry/public_space.geojson#PUBLIC-GROUND-001], [metric:public_space_area_sqm], and [metric:public_space_ratio].
 
@@ -175,8 +175,8 @@ Structured metrics make the proposal recalculable and contestable. Area and leng
 | --- | ---: | --- | --- |
 | Proxy site | 11,412,825.386 m² | `area(site_boundary)` | Not official boundary area |
 | Land coverage | 1.000000 | `area(union(land_use))/site_area` | Topology, not statutory allocation |
-| Green area/ratio | 2,403,003.871 m² / 0.210553 | `union(green_space)/site_area` | Concept ribbons, not official green ratio |
-| Public area/ratio | 849,199.100 m² / 0.074407 | `union(public_space)/site_area` | Main ground and station union |
+| Green area/ratio | 2,402,791.530 m² / 0.210534 | `union(green_space)/site_area` | Concept ribbons, not official green ratio |
+| Public area/ratio | 849,284.498 m² / 0.074415 | `union(public_space)/site_area` | Main ground and station union |
 | Prototype footprint | 41,744.000 m² | `union(building prototypes)` | 28 prototypes, not development capacity |
 | Main route | 9,253.804 m | `length(ROAD-COWALK-001)` | Concept route, not engineering quantity |
 | Scenarios/industry tests | 12 / 3 | stable-feature count | Not approved pilots |

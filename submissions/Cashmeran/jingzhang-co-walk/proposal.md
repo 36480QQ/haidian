@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-del
 
 # 京张共步 / CO-WALK JINGZHANG
 
-> 百年前，京张铁路教机器沿轨道前进；AI时代的京张，要教机器在城市里礼让人。  
+> 百年前，京张铁路教机器沿轨道前进；AI时代的京张，要教机器在城市里礼让人。
 > **Machines yield. The city connects.**
 
 ## 设计依据与资料清单
@@ -136,7 +136,7 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-del
 
 ## 蓝绿空间、公共空间与城市风貌
 
-两条纵向海绵绿带合计约2,403,003.871平方米，临时范围内绿地比例约21.0553%；连续共步公共地面与十二节点的并集约849,199.100平方米，公共空间比例约7.4407%。这些是概念图层的几何结果，不是法定绿地率或规划指标。[data:geometry/green_space.geojson#GREEN-RIBBON-001] [metric:green_space_area_sqm] 绿地比例和景观专业深度分别由结构化指标与矩阵核对。[metric:green_ratio] [depth:blue_green_public_space]
+两条纵向海绵绿带合计约2,402,791.530平方米，临时范围内绿地比例约21.0534%；连续共步公共地面与十二节点的并集约849,284.498平方米，公共空间比例约7.4415%。这些是概念图层的几何结果，不是法定绿地率或规划指标。[data:geometry/green_space.geojson#GREEN-RIBBON-001] [metric:green_space_area_sqm] 绿地比例和景观专业深度分别由结构化指标与矩阵核对。[metric:green_ratio] [depth:blue_green_public_space]
 
 绿带承担四种日常功能：树荫与热避难、雨水滞蓄、生态踏脚石、机器人与人流之间的柔性缓冲。饮水、座椅、避雨和卫生间等基本设施优先于互动屏幕；极端天气时，移动服务只能补充固定避难点。公共空间总量由 [data:geometry/public_space.geojson#PUBLIC-GROUND-001] 与 [metric:public_space_area_sqm] 复算，比例由 [metric:public_space_ratio] 表达。
 
@@ -175,8 +175,8 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-del
 | --- | ---: | --- | --- |
 | 临时总体面积 | 11,412,825.386 m² | `area(site_boundary)` | 非官方红线面积 |
 | 用地覆盖率 | 1.000000 | `area(union(land_use))/site_area` | 拓扑完整，不等于法定用地方案 |
-| 绿地面积/比例 | 2,403,003.871 m² / 0.210553 | `union(green_space)/site_area` | 概念双绿带，不等于法定绿地率 |
-| 公共空间面积/比例 | 849,199.100 m² / 0.074407 | `union(public_space)/site_area` | 含主地面与节点并集 |
+| 绿地面积/比例 | 2,402,791.530 m² / 0.210534 | `union(green_space)/site_area` | 概念双绿带，不等于法定绿地率 |
+| 公共空间面积/比例 | 849,284.498 m² / 0.074415 | `union(public_space)/site_area` | 含主地面与节点并集 |
 | 建筑原型基底 | 41,744.000 m² | `union(building prototypes)` | 仅28个原型，不代表开发量 |
 | 共步主线 | 9,253.804 m | `length(ROAD-COWALK-001)` | 概念路线，非道路工程量 |
 | 场景/产业测试 | 12 / 3 | `count(scenario_id/type)` | 节点数量，不等于获批试点 |
