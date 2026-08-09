@@ -7,8 +7,8 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Start with a reversible First Hundred Metres acceptance segment, then scale urban AI only through public choice, human takeover, appeal and replay."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "2.4"
-iteration: 13
+version: "2.6"
+iteration: 14
 proposal_format_version: "2"
 ---
 
@@ -19,6 +19,22 @@ v2.4 review-restructured edition. It leads with one walkable, stoppable and repl
 Motto: Every urban intelligence must withstand public scrutiny.
 
 ![Civic AI Loop concept mark](assets/figures/civic-loop-logo.en.svg)
+
+## Seven-dimension decision cockpit
+
+Version 2.6 routes every jury question to one spatial decision, one inspectable artifact and one non-negotiable boundary. Counts describe submitted low-confidence conceptual GeoJSON, not built assets; official boundaries, surveys, ownership and discipline reviews must replace them.
+
+|Dimension|Decisive answer|Inspectable evidence|Hard boundary|
+|---|---|---|---|
+|Brief alignment|Three positions, five functions, three zones and two wings form one verification–translation–experience loop.|Taskbook table; `compliance_matrix.json`|No next gate if any agent.1–agent.6 output is missing.|
+|Originality|Railway station, line, timetable and handoff become AI entry, takeover, appeal and exit rights.|First-100-metre journey; three stations and one receipt|Screens, tours and smart poles alone do not count.|
+|AI planning innovation|Agents issue replayable receipts rather than statutory decisions.|P1 offline runner, schema, 8/8 assertions|Desktop PASS is not field authorization; severe error, failed handoff or deletion stops the test.|
+|Feasibility|Start with one reversible segment, baseline and staffed fallback; scale after independent replay.|Three evidence-gated phases; eight work packages; 90-day G0–G2|No quantities, costs or dates without official data and accountable roles.|
+|Public interest|The ordinary route comes first; six user groups run the same task and worst-group failure stays visible.|15 conceptual public interfaces; accessibility QA; appeal|No forced digitization or averages that hide exclusion.|
+|Risk and compliance|Stop, removal, deletion, takeover and replay become spatial components.|`risk.json`; `assumptions.json`; negative controls|No sensitive data or claims of approval, endorsement, operation or adoption.|
+|Expression|Narrative, five figures, bilingual pages, A3/A0, GeoJSON and matrices cross-locate the same decision.|8 connections, 12 reuse-first building interfaces, 15 public spaces, 6 comfort green spaces|Provisional status remains prominent; machine quantity never substitutes for professional depth.|
+
+**Causal chain:** preserve the ability to walk, ask and leave without AI; require accountable evidence in one street segment; expand to three stations only when failures are replayable, staffed service has not degraded and the worst-served group is not sacrificed. The core product is spatial infrastructure through which a city can say no to AI. [depth:three_level_scope_framework] [metric:decision_gate_count]
 
 ## Executive brief: build the first hundred metres before promising eleven kilometres
 
