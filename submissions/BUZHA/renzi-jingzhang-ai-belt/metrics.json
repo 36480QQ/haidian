@@ -81,7 +81,7 @@
    "formula": "building_footprint_area * weighted avg floors (provisional massing)",
    "confidence": "low",
    "assumptions": [
-    "Conceptual massing; floors_estimate 6-8; official FAR pending"
+    "Conceptual massing test only; floors_estimate 6-8; not a recommended development quantum; official FAR and existing-building survey pending"
    ]
   },
   "floor_area_ratio": {
@@ -95,7 +95,7 @@
    "formula": "total_floor_area / site_area",
    "confidence": "low",
    "assumptions": [
-    "Official FAR control missing (planning_limits.json); provisional massing only"
+    "Official FAR control missing (planning_limits.json); provisional massing test only; must not be used as an approval or design-control value"
    ]
   },
   "building_density": {
@@ -108,7 +108,9 @@
    ],
    "formula": "building_footprint_area / site_area",
    "confidence": "low",
-   "assumptions": []
+   "assumptions": [
+    "Conceptual footprint test only; official density control and existing-building survey are missing; not a recommended control value"
+   ]
   },
   "building_footprint_area_sqm": {
    "status": "known",
@@ -118,8 +120,10 @@
     "geometry/buildings.geojson"
    ],
    "formula": "sum(building_footprint)",
-   "confidence": "medium",
-   "assumptions": []
+   "confidence": "low",
+   "assumptions": [
+    "Conceptual building footprints, not surveyed existing buildings or an approved development plan"
+   ]
   },
   "green_space_area_sqm": {
    "status": "known",
@@ -130,7 +134,9 @@
    ],
    "formula": "sum(green_space)",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Conceptual green-space configuration; not a statutory green-space boundary or control"
+   ]
   },
   "green_ratio": {
    "status": "known",
@@ -142,7 +148,9 @@
    ],
    "formula": "green_space_area / site_area",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Ratio derived from conceptual green-space geometry; not a statutory green-space control"
+   ]
   },
   "public_space_area_sqm": {
    "status": "known",
@@ -153,7 +161,9 @@
    ],
    "formula": "sum(public_space)",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Conceptual public-space configuration; official public-space and right-of-way data pending"
+   ]
   },
   "public_space_ratio": {
    "status": "known",
