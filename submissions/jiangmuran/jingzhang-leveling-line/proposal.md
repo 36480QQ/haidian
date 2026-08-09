@@ -201,7 +201,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 **真正的答案是这套设计本身的性质：水准网是边界相对的，不是坐标绝对的。** 分级（原点/一等/二等/三等）、附合路线的闭合逻辑、跨管辖读数规则、限差分级——这些在边界平移后**全部不变**，改变的只是标石落在哪里。这正是本方案坚持「官方 polygon 发布后整体重算而非局部替换」的原因：重算的是位置，不是机制。
 
-OSM 数据、测量脚本与全部口径随包提交于 `visual/assets/osm_reference.json` [source:OSM-REFERENCE-2026-08]，可重跑复算。这一节的全部内容画在下图里——**推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现**。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出六类用地剖分的图纸，并按《提交指南》对 `site-overview.png` 的定义呈现总体概念、主轴、核心节点与 official/provisional 状态。
+OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json`，并由随包的 `node visual/assets/check_osm.js` 从这些坐标独立复算（抓取脚本无法进包，入库格式白名单不含 .py） [source:OSM-REFERENCE-2026-08]，可重跑复算。这一节的全部内容画在下图里——**推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现**。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出六类用地剖分的图纸，并按《提交指南》对 `site-overview.png` 的定义呈现总体概念、主轴、核心节点与 official/provisional 状态。
 
 ![总体概念与场地复核：主轴、核心节点、推定边界与实测公园](assets/figures/site-overview.png)
 
@@ -1192,10 +1192,13 @@ node visual/assets/verify.js
 
 供评审逐项核对，每项都可在不联系作者的情况下独立完成：
 
-1. `node visual/assets/verify.js` —— 独立重算全部第一类指标，退出码即结论；
-2. `visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；
-3. `geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；
-4. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
-5. `changelog.md` —— 含本方案自查发现并修正的错误记录；
-6. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
-7. A3/A0 PDF —— 字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在。
+1. `node visual/assets/verify.js` —— 独立重算全部第一类指标，并断言十余条结构性结论（用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析），退出码即结论；
+2. `node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；
+3. `node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；
+4. `node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与八例桌面演练；
+5. `visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；
+6. `geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；
+7. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
+8. `changelog.md` —— 含本方案自查发现并修正的错误记录；
+9. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
+10. A3/A0 PDF —— 字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在。

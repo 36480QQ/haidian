@@ -179,7 +179,7 @@ Route A is the announcement's textual bounds, from which the repository inferred
 
 The limits must be stated exactly. OSM is crowd-sourced and its polygon may cover only the built, mapped section rather than the planned whole. The provisional boundary is itself explicitly an inference from text, with its basis and error documented in the repository. **This proposal does not adjudicate which is right.** It reports one recomputable fact: the two routes differ by 412.5 m.
 
-The OSM data, the measurement script and every convention are shipped in `visual/assets/osm_reference.json` [source:OSM-REFERENCE-2026-08] and can be re-run. That matters more than the finding itself: a discrepancy reported without the means to reproduce it is an assertion, and this proposal is in no position to make assertions about other people's boundaries.
+The OSM coordinates and every convention are shipped in `visual/assets/osm_reference.json`, and `node visual/assets/check_osm.js` recomputes each published figure from them (the fetch script cannot ship — intake accepts no .py) [source:OSM-REFERENCE-2026-08] and can be re-run. That matters more than the finding itself: a discrepancy reported without the means to reproduce it is an assertion, and this proposal is in no position to make assertions about other people's boundaries.
 
 **And the same measurement measured this proposal.** The submitted spine centreline lies **1,116.7 m** from the surveyed park, because it was generated against the provisional boundary. That sentence works against this submission. Omitting it would make every claim about recomputability hollow.
 
@@ -1082,12 +1082,15 @@ There are nine sheets. All are drawn directly from parameters and the submitted 
 
 Every item can be completed independently:
 
-1. `node visual/assets/verify.js` — independently recomputes every class-1 metric; the exit code is the verdict
-2. `visual/assets/census.json` and `field_map.json` — the raw field census and its summary
-3. `geometry/*.geojson` — nine layers, every feature carrying `source_type`, `geometry_role` and `official_boundary` attributes
-4. `visual/assets/osm_reference.json` — the site cross-check and its stated limits
-5. `visual/assets/accessibility_qa.json` and `parity_qa.json` — computed contrast, A0 type height, HTML checks, and bilingual content parity per section
-6. `risk.json` — the eight-dimension self-assessment with mitigations and human-review requirements
-7. `changelog.md` — **including the errors this proposal found in itself and corrected**
+1. `node visual/assets/verify.js` — independently recomputes every class-1 metric and asserts a dozen structural conclusions besides (the land-use partition tested point by point, every controlled boundary cited, every `[data:]` anchor resolving); the exit code is the verdict
+2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site cross-check figure from the OSM coordinates shipped beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute exactly
+3. `node visual/assets/check_cards.js` — resolves every scenario card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
+4. `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the closure mechanism as a data contract, and an eight-case tabletop against the shipped reader
+5. `visual/assets/census.json` and `field_map.json` — the raw field census and its summary
+6. `geometry/*.geojson` — nine layers, every feature carrying `source_type`, `geometry_role` and `official_boundary` attributes
+7. `visual/assets/osm_reference.json` — the site cross-check and its stated limits
+8. `visual/assets/accessibility_qa.json` and `parity_qa.json` — computed contrast, A0 type height, HTML checks, and bilingual content parity per section
+9. `risk.json` — the eight-dimension self-assessment with mitigations and human-review requirements
+10. `changelog.md` — **including the errors this proposal found in itself and corrected**
 8. `agent.json` — full disclosure of the generation method; the `model` field is not a placeholder
 9. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, verifiable with `pypdf` by checking for `FontFile3` under `DescendantFonts`

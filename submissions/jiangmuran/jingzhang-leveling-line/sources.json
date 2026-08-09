@@ -66,8 +66,8 @@
       "publisher": "OpenStreetMap contributors",
       "source_url": "https://www.openstreetmap.org/ · Overpass API",
       "retrieved_at": "2026-08-08",
-      "license": "ODbL 1.0（开放数据库许可）。使用与再分发须署名『© OpenStreetMap contributors』并保持相同许可；本包仅提交由其派生的测量结果与口径，不再分发原始数据库。",
-      "collection_method": "analysis/osm_reference.py fetch 经 Overpass API 抓取；同脚本 report 在 EPSG:4548 下计算面积、覆盖率与最近距离。脚本公开于配套 Issue，可重跑。",
+      "license": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环、16 条铁路 way 的原始坐标与标签，以及本方案自身的两条临时边界环，共 275 个顶点，未做简化。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。",
+      "collection_method": "analysis/osm_reference.py fetch 经 Overpass API 抓取（bbox 39.925,116.315,40.035,116.375）；同脚本 report 在 EPSG:4548 下计算面积、覆盖率与最近距离。生成脚本无法进包（入库格式白名单不含 .py），但**每一个已发布标量都可由随包的 `node visual/assets/check_osm.js` 从同一份坐标独立复算**——该脚本无依赖、不联网，自行实现投影，并在复算不出时拒绝而非猜测。抓取脚本另公开于配套 Issue。",
       "coverage": "bbox 39.925,116.315,40.035,116.375；公园 2 个 way、废弃铁路 14 段。",
       "limitations": "OSM 为众包数据，公园多边形可能只覆盖已建成并被测绘的一段，不等于规划全域；临时边界亦为推定。本方案只报告两者差异，不判定何者正确。官方 polygon 发布后本节全部结论失效并须整体重算。",
       "usable_for_formal": "background_only"

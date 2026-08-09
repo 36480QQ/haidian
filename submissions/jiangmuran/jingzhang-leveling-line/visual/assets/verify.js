@@ -137,6 +137,10 @@ const computed = {
     .reduce((a, f) => a + geomArea(f.geometry), 0) / site,
   public_space_ratio: publicFeatures.reduce((a, f) => a + geomArea(f.geometry), 0) / site,
   building_footprint_area_sqm: layerArea('buildings.geojson'),
+  // The phases are disjoint increments, so the plain sum of their areas is
+  // their union. A summed layer area that did not equal the published union
+  // would mean the phases had started overlapping again.
+  phasing_union_area_sqm: layerArea('phasing.geojson'),
   key_area_count: read('geometry/key_areas.geojson').features.length,
   leveling_spine_length_m: spine,
   benchmark_count: publicFeatures.filter((f) => f.properties.benchmark_id).length,
