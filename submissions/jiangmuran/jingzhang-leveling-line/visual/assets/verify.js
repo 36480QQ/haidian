@@ -172,22 +172,107 @@ console.log('Independent recomputation of class-1 metrics');
 console.log('  projection re-implemented in this file (EPSG:4548), no dependencies\n');
 console.table(rows);
 
-// Structural claims the proposal makes about the geometry, checked here too.
-const seam = publicFeatures.filter((f) => f.properties.is_seam_point).length;
-const withJur = publicFeatures.filter(
-  (f) => (f.properties.jurisdictions || []).length > 0,
-).length;
-console.log(`\nbenchmarks declaring a jurisdiction: ${withJur}/${publicFeatures.length}`);
-console.log(`benchmarks crossing a jurisdictional boundary: ${seam}/${publicFeatures.length}`);
+/* ---- structural claims, asserted rather than printed ---------------------
+ * These used to be three console.log lines. They printed a number and never
+ * touched the exit code, so `official_boundary` flipping to true — the single
+ * most consequential attribute in the package — would have printed `true` and
+ * still exited 0. A check that reports without refusing is the exact defect
+ * this package spends its length reporting in other people's work, and it was
+ * sitting in the file the proposal invites reviewers to run.
+ */
+const structural = [];
+const check = (claim, ok, detail) => {
+  if (!ok) failed++;
+  structural.push({ claim, result: ok ? 'PASS' : 'FAIL', detail: String(detail) });
+};
 
-const provisional = read('geometry/site_boundary.geojson').features.every(
-  (f) => f.properties.official_boundary === false,
-);
-console.log(`site boundary labelled provisional (official_boundary=false): ${provisional}`);
+const prose = ['proposal.md', 'proposal.en.md']
+  .map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n');
+
+const seam = publicFeatures.filter((f) => f.properties.is_seam_point).length;
+const withJur = publicFeatures.filter((f) => (f.properties.jurisdictions || []).length > 0).length;
+check('every benchmark declares a jurisdiction', withJur === publicFeatures.length,
+      `${withJur}/${publicFeatures.length}`);
+check('every benchmark crosses a jurisdictional boundary', seam === publicFeatures.length,
+      `${seam}/${publicFeatures.length}`);
+check('site boundary is labelled provisional',
+      read('geometry/site_boundary.geojson').features.every((f) => f.properties.official_boundary === false),
+      'official_boundary must be false on every feature');
+
+// The benchmark tiering the proposal states in prose, counted from the data.
+const tiers = publicFeatures.filter((f) => f.properties.benchmark_id).reduce(
+  (a, f) => ((a[f.properties.benchmark_order] = (a[f.properties.benchmark_order] || 0) + 1), a), {});
+check('benchmark tiers are 1 origin / 2 first / 2 second / 3 third',
+      tiers.origin === 1 && tiers.first === 2 && tiers.second === 2 && tiers.third === 3,
+      JSON.stringify(tiers));
+
+// "六类用地完整剖分（无重叠无缺口）" is a first-order conclusion in both
+// editions and was checked by nothing shipped. Summed area equal to the site
+// area is the closing condition: an overlap inflates the sum, a gap deflates
+// it. It would still pass under a compensating overlap and gap of identical
+// area, which is why the class count is asserted beside it rather than instead.
+const landUse = read('geometry/land_use.geojson').features;
+const landUseSum = landUse.reduce((a, f) => a + geomArea(f.geometry), 0);
+const codes = [...new Set(landUse.map((f) => String(f.properties.land_use_code)))].sort();
+check('land_use closes on the site area (no overlap, no gap)',
+      Math.abs(landUseSum - site) <= site * 1e-9,
+      `${landUseSum.toFixed(3)} vs site ${site.toFixed(3)}, delta ${(landUseSum - site).toExponential(2)} m2`);
+check('land_use partitions into exactly six classes', codes.length === 6, codes.join(', '));
+
+// A constraint boundary nobody cites is a boundary nobody can review, and a
+// scenario citing someone else's boundary is worse than citing none.
+for (const f of read('geometry/constraints.geojson').features) {
+  check(`${f.properties.id} is cited in the proposal`, prose.includes(f.properties.id),
+        `${f.properties.name_zh} — ${(geomArea(f.geometry) / 1e4).toFixed(2)} ha`);
+}
+
+// Every machine-readable citation resolves. Two of eleven distinct anchors used
+// to name feature ids that do not exist (BUILDING-001, LANDUSE-001).
+const anchors = new Set(
+  [...prose.matchAll(/\[data:(geometry\/[a-z_]+\.geojson)#([A-Za-z0-9-]+)\]/g)].map((m) => `${m[1]}#${m[2]}`));
+const dangling = [...anchors].filter(
+  (a) => !read(a.split('#')[0]).features.some((f) => f.properties.id === a.split('#')[1]));
+check('every [data:file#id] citation resolves to a shipped feature', dangling.length === 0,
+      `${anchors.size} distinct anchors, ${dangling.length} dangling${dangling.length ? ': ' + dangling.join(', ') : ''}`);
+
+// 369.3 ha is the key-area layer total. It was cited against PROV-KEY-001,
+// which is 192.9 ha on its own — the figure is right, the anchor was not.
+const keyAreas = read('geometry/key_areas.geojson').features;
+const ha = (g) => geomArea(g) / 1e4;
+const keyTotalHa = keyAreas.reduce((a, f) => a + ha(f.geometry), 0);
+const key001Ha = ha(keyAreas.find((f) => f.properties.id === 'PROV-KEY-001').geometry);
+check('the ~369.3 ha figure is the layer total, not one feature',
+      Math.abs(keyTotalHa - 369.3) < 0.05 && Math.abs(key001Ha - 369.3) > 0.05,
+      `layer ${keyTotalHa.toFixed(2)} ha, PROV-KEY-001 ${key001Ha.toFixed(2)} ha`);
+const misattributed = [...prose.matchAll(/[^\n]*369\.3[^\n]*/g)].map((m) => m[0]).filter(
+  (l) => l.includes('PROV-KEY-001') && !(l.includes('PROV-KEY-002') && l.includes('PROV-KEY-003')));
+check('any line citing 369.3 ha names all three key areas, not one',
+      misattributed.length === 0,
+      misattributed.length ? misattributed[0].slice(0, 70) : 'no line attributes the total to one feature');
+
+// The class-1 summary table must quote metrics.json, not a superseded value.
+// It sat at 82,413 m2 — the footprint before the circles became rectangles —
+// while the same document called that number superseded two hundred lines away.
+// The check reads the table row rather than banning the old number outright,
+// because naming a retired value beside its replacement is what a changelog is
+// for; quoting it as current is the defect.
+const quoted = [...prose.matchAll(/\[metric:building_footprint_area_sqm\]\s*\|\s*([\d,]+)\s*m²/g)]
+  .map((m) => Number(m[1].replace(/,/g, '')));
+const declaredFootprint = metrics.building_footprint_area_sqm.value;
+check('every class-1 table row quotes the current building footprint',
+      quoted.length === 2 && quoted.every((v) => Math.abs(v - declaredFootprint) < 1),
+      `${quoted.length} row(s): ${quoted.join(', ')} against metrics.json ${declaredFootprint.toFixed(1)}`);
+
+check('floor_area_ratio stays unknown until official FAR controls exist',
+      metrics.floor_area_ratio.status === 'unknown' && metrics.floor_area_ratio.value === null,
+      `${metrics.floor_area_ratio.status} / ${metrics.floor_area_ratio.value}`);
+
+console.log('\nStructural claims the proposal makes, asserted against the data');
+console.table(structural);
 
 console.log(
   failed === 0
-    ? '\nAll class-1 metrics reproduced independently.'
-    : `\n${failed} metric(s) did NOT reproduce — do not cite them.`,
+    ? '\nAll class-1 metrics and structural claims reproduced independently.'
+    : `\n${failed} claim(s) did NOT reproduce — do not cite them.`,
 );
 process.exit(failed === 0 ? 0 : 1);

@@ -172,7 +172,7 @@ The proposal is organised on the three levels the announcement sets, and each ma
 |---|---|---|---|---|
 | Coordinated research area | ~43.6 km²; north to the North Fifth Ring Road, east to the Jingzang Expressway, south to Xizhimenwai Street, west to Wanquanhe Road | Whole-network control | Annual | `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
 | Overall design area | ~11.4 km²; the 1–2 km of city around the heritage park | First-order route: the spine plus two closing routes | Semi-annual | [data:geometry/site_boundary.geojson#SITE-001], recomputed as [metric:site_area_sqm] |
-| Key areas | ~369.3 ha, recomputed from [data:geometry/key_areas.geojson#PROV-KEY-001]; the announcement text says ~368.4 ha | First-order benchmarks BM-0 / BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Key areas | ~369.3 ha, recomputed as the total of [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002] and [data:geometry/key_areas.geojson#PROV-KEY-003] (192.9 / 104.3 / 72.1 ha); the announcement text says ~368.4 ha | Origin benchmark BM-0 and first-order BM-1 / BM-2 | Annual | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 These are not three unrelated drawing sets. The research area decides **what to measure**; the design area decides **which route to measure along**; the key areas decide **where to set the stones**. Any area, ratio or count that cannot be recomputed from a structured layer is not written as a conclusion — the basic verifiability requirement [standard:MOHURD-URBAN-DESIGN-MEASURES] places on urban design output.
 
@@ -596,7 +596,7 @@ This section is not a corporate-responsibility statement. It is part of the clos
 
 **The equivalent non-AI path (non-waivable).** Every function a robot service covers must also exist as a human path. Public service may not be interrupted when robots stop — this is both a public-interest requirement and the precondition that makes the network-wide suspension rule executable in practice. If suspension would interrupt service, the rule will be circumvented.
 
-**Explicitly not done:** this proposal gives no robot model, supplier, or speed-limit figure, and no road redline or cross-section conclusion — the former are procurement and industrial decisions, the latter statutory control [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** The controlled test boundary is [data:geometry/constraints.geojson#CONSTRAINT-001].
+**Explicitly not done:** this proposal gives no robot model, supplier, or speed-limit figure, and no road redline or cross-section conclusion — the former are procurement and industrial decisions, the latter statutory control [standard:MOHURD-CONTROL-DETAILED-PLANNING]. What it gives is **what to measure, where, by whom, and what happens when tolerance is exceeded.** S06's controlled pilot boundary is [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha). This sentence previously cited CONSTRAINT-001, which is the S11 test field at 5.30 ha — a different scenario on a different piece of ground, 4.5 times smaller.
 
 ### Main front two: AI public services — health, education, legal, daily life (agent.3, F1/F2)
 
@@ -618,7 +618,7 @@ The core claim for public services is therefore: **do not measure the average; m
 
 ### Three controlled industry validation scenarios (agent.3)
 
-S06, S10 and S11 form three controlled test scenarios sharing one property: **take readings inside an extent that can be enclosed, paused and rolled back, before considering expansion.** A test scenario may never be described as approved operation. Spatial boundaries and safety constraints are in [data:geometry/constraints.geojson#CONSTRAINT-001].
+S06, S10 and S11 form three controlled test scenarios sharing one property: **take readings inside an extent that can be enclosed, paused and rolled back, before considering expansion.** A test scenario may never be described as approved operation. Each has its own boundary and they do not share one: S11's test field [data:geometry/constraints.geojson#CONSTRAINT-001] (5.30 ha), S06's low-speed robot pilot [data:geometry/constraints.geojson#CONSTRAINT-002] (23.75 ha), S10's public-safety review [data:geometry/constraints.geojson#CONSTRAINT-003] (1.54 ha). Only the first used to be cited, which left the other two uncited anywhere in the package — **a controlled boundary nobody cites is a boundary nobody reviews** — so `verify.js` now asserts that every constraint feature is cited by the proposal.
 
 ### The closure mechanism, defined in full
 
@@ -819,7 +819,7 @@ Landmarks here are not objects to look at; they are **instruments to read**. All
 
 **L3 — The zeroing point (BM-2, Dazhongsi).** A public ceremony space used once a year: the line's readings are zeroed here, tolerance revisions are read out here, and the disposition of every scenario sent back for re-survey in the past year is explained here. It turns measuring back from a technical procedure into a public rhythm in the city's year. On ordinary days it is simply a public place to sit, not a single-use monument waiting eleven months for its occasion.
 
-All three must satisfy heritage, green-line, blue-line and traffic-safety constraints [data:geometry/constraints.geojson#CONSTRAINT-001]; siting requires heritage and engineering review, which this proposal does not pre-empt.
+All three must satisfy heritage, green-line, blue-line and traffic-safety constraints. **No machine-readable citation is given here, because the package holds no feature that could carry one**: the official heritage protection zone, its construction control belt, the blue line and the road redline are all data gaps this proposal declines to infer. The sentence used to cite CONSTRAINT-001, which is S11's controlled test boundary and has nothing to do with heritage or blue lines — and whose own note says precisely that those boundaries are data gaps. Citing a feature that declares a gap as evidence for a conclusion needing that data is the move this proposal objects to elsewhere. Siting requires heritage and engineering review, which this proposal does not pre-empt.
 
 ### Honours, kit of parts, and signage (agent.4, agent.5)
 
@@ -922,7 +922,7 @@ Metrics fall in three classes, held in `metrics.json`, `assumptions.json` and `c
 | [metric:green_ratio] | 0.2025 | The full 120 m spine corridor ÷ overall design area |
 | [metric:green_ratio_in_partition] | 0.1227 | The part classed 1401 in the land-use partition ÷ overall design area |
 | [metric:public_space_ratio] | 0.0642 | Public measurement-point area ÷ overall design area |
-| [metric:building_footprint_area_sqm] | 82,413 m² | Union of indicative footprints, order of magnitude only |
+| [metric:building_footprint_area_sqm] | 82,276 m² | Union of indicative footprints, order of magnitude only; 82,413 m² was the circular-footprint value and is superseded |
 | [metric:key_area_count] | 3 | Count from the announcement; geometry provisional |
 
 Because boundaries are provisional, all of the above are **recomputed as a whole**, never substituted file by file, when official polygons appear. Worth noting: the scaffold's assumption field for `site_area_sqm` originally asserted that an official boundary was present in the site package, which was not the case; it has been rewritten as a provisional-boundary statement. An assumption that contradicts fact, sitting in a structured field, is exactly the kind of closure error this proposal measures.

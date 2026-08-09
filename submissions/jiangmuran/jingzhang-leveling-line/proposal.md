@@ -192,7 +192,7 @@ OSM 数据、测量脚本与全部口径随包提交于 `visual/assets/osm_refer
 |---|---|---|---|---|
 | 统筹研究范围 | 约 43.6 km²，北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路 | 水准网整体控制 | 年 | 仓库 `provisional_boundaries.geojson#PROV-RESEARCH-001` [source:BOUNDARY-SOURCE] |
 | 总体设计范围 | 约 11.4 km²，遗址公园周边 1–2 km 城市地区 | 一等水准路线（主脊 + 两条附合路线） | 半年 | [data:geometry/site_boundary.geojson#SITE-001]，复算 [metric:site_area_sqm] |
-| 重点区域范围 | 约 369.3 ha（由 [data:geometry/key_areas.geojson#PROV-KEY-001] 复算；公告文字为约 368.4 ha） | 一等水准点 BM-0 / BM-1 / BM-2 | 年 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| 重点区域范围 | 约 369.3 ha（由 [data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/key_areas.geojson#PROV-KEY-002]、[data:geometry/key_areas.geojson#PROV-KEY-003] 三处合计复算：192.9 / 104.3 / 72.1 ha；公告文字为约 368.4 ha） | 水准原点 BM-0 与一等水准点 BM-1 / BM-2 | 年 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
 
 三层不是三套互不相干的图纸。统筹研究决定测什么，总体设计决定沿哪条路线测，重点区域决定在哪里立标石。任何无法从结构化图层复算的面积、比例或数量，不写入结论——这是 [standard:MOHURD-URBAN-DESIGN-MEASURES] 对城市设计成果可核验性的基本要求。
 
@@ -631,7 +631,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 **无AI等价路径（不可豁免）**：机器人服务覆盖的每一项功能，必须同时存在人工路径。机器人停运时公共服务不得中断——这既是公共利益要求，也是使「全域暂停」这条硬规则在现实中可执行的前提。若停运会导致服务中断，那条规则就会被绕过。
 
-**明确不做**：本方案不给出机器人型号、供应商、通行速度上限的具体数值，不给出道路红线与断面结论——前者属采购与产业决策，后者属法定管控 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。本方案给出的是**测什么、在哪测、谁来测、超限怎么办**。受控测试边界见 [data:geometry/constraints.geojson#CONSTRAINT-001]。
+**明确不做**：本方案不给出机器人型号、供应商、通行速度上限的具体数值，不给出道路红线与断面结论——前者属采购与产业决策，后者属法定管控 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。本方案给出的是**测什么、在哪测、谁来测、超限怎么办**。S06 的受控试点边界见 [data:geometry/constraints.geojson#CONSTRAINT-002]（23.75 ha）——此处此前误引了 S11 测试场的边界 CONSTRAINT-001（5.30 ha），两者相差 4.5 倍，是两个不同场景的两块地。
 
 ### 主战场二：AI公共服务——医疗、教育、法律、生活（agent.3，F1/F2）
 
@@ -653,7 +653,7 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 ### 三个产业测试验证场景（agent.3）
 
-S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可封闭、可暂停、可回滚的范围内取得读数，再考虑扩大**。测试场景一律不得表述为已批准运营，其空间边界与安全约束见 [data:geometry/constraints.geojson#CONSTRAINT-001]。
+S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可封闭、可暂停、可回滚的范围内取得读数，再考虑扩大**。测试场景一律不得表述为已批准运营。三者各有各的边界，不共用一块：S11 测试场 [data:geometry/constraints.geojson#CONSTRAINT-001]（5.30 ha）、S06 低速机器人试点 [data:geometry/constraints.geojson#CONSTRAINT-002]（23.75 ha）、S10 公共安全复盘 [data:geometry/constraints.geojson#CONSTRAINT-003]（1.54 ha）。此前三处只引了第一个，另外两个要素因此在包里无人引用——**一条无人引用的受控边界，等于一条无人复核的边界**，现由 `verify.js` 逐个断言每条约束都被正文引用。
 
 ### 闭合差机制的完整定义
 
@@ -863,7 +863,7 @@ S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可�
 **L3 归零点（BM-2，大钟寺）**
 一处每年一次的公共仪式空间：全线读数在此归零、限差在此宣读修订、上一年度退回复测的场景在此说明处置结果。它把「测得回来」从技术流程变成城市的公共时间节奏。
 
-三处地标均须符合文保、绿地、蓝线与交通安全约束 [data:geometry/constraints.geojson#CONSTRAINT-001]，具体选址须经文保与工程专项论证后确定，本方案不越过该论证给出结论。
+三处地标均须符合文保、绿地、蓝线与交通安全约束。**此处不给机读引用，因为包里没有可引的要素**：官方文物保护范围、建设控制地带、蓝线与道路红线均属数据缺口，本方案不予推定。此前这句引了 CONSTRAINT-001，那是 S11 测试场的受控边界，与文保蓝线无关，且该要素自己的说明里写的正是「这些边界属数据缺口」——用一条声明缺口的要素去支撑一条需要该数据的结论，是这份方案自己反对的那种引用。具体选址须经文保与工程专项论证后确定。
 
 ### 荣誉展示体系与公共空间组件库（agent.4）
 
@@ -1015,7 +1015,7 @@ S06、S10、S11 构成三个受控测试场景，共同特征是：**先在可�
 | [metric:green_ratio] | 0.2025 | 完整 120 m 主脊绿廊 / 总体设计范围 |
 | [metric:green_ratio_in_partition] | 0.1227 | 用地剖分中归为 1401 的部分 / 总体设计范围 |
 | [metric:public_space_ratio] | 0.0642 | 公共测点面积 / 总体设计范围面积 |
-| [metric:building_footprint_area_sqm] | 82,413 m² | 示意性基底并集，仅说明规模量级 |
+| [metric:building_footprint_area_sqm] | 82,276 m² | 示意性基底并集，仅说明规模量级；82,413 m² 为圆形基底时期的旧值，已废止 |
 | [metric:key_area_count] | 3 | 重点区数量来自公告，几何为临时替代 |
 
 因边界为 provisional，上述全部数值随官方 polygon 发布须**整体重算**而非局部替换。需要特别指出：脚手架默认在 `site_area_sqm` 的假设栏写有「官方边界已存在于站点资料包」，而事实并非如此；本方案已将该假设改写为临时边界声明。一条与事实不符的假设留在结构化字段里，正是本方案所测量的那类闭合差。
