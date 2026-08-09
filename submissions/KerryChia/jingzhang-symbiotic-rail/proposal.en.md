@@ -40,6 +40,17 @@ The core task of the coordinated research area is to build a world-class AI inno
 
 **Historical anchors and spatial correspondence.** This proposal grounds the historical promise of the dual rail in traceable spatial coordinates: Qinghuayuan Station (established 1910, the first station after Xizhimen on the Jingzhang Railway, with the station name inscribed by Zhan Tianyou) serves as the cultural vestibule and origin lighthouse of the "AI Origin Community" [source:RESEARCH-QHY-STATION]; the first phase of the Jingzhang Railway Heritage Park (opened June 2023, from Qinghua East Road to Zhichun Road, approximately 2.5 km long) serves as the built foundation of the "cultural spine," onto which the proposal overlays AI experience tracks and transfer nodes rather than building anew [source:RESEARCH-PARK-2023]. These historical facts are used only as narrative and mechanism coordinates; no current ownership, heritage-protection scope, or engineering condition is inferred from them.
 
+**A verifiable indicator system for the Standard Gauge (deepening the mechanism from a slogan into verifiable governance infrastructure).** To make the Standard Gauge more than four principles, this proposal equips it with an indicator set that can be quantified and verified in pilots; scenarios not meeting the bar do not enter open operation. Candidate indicators (all conceptual; formal calibration awaits pilots) are:
+
+| Calibration | Verifiable indicator (candidate) | Data source |
+| --- | --- | --- |
+| Interface standard | Open-interface coverage, migration/export success rate | Operator self-check + third-party audit |
+| Data minimization | Ratio of collected fields to operationally required, retention-period compliance | Data-compliance ledger |
+| Human review | Human-review rate for rights decisions, responsible-party traceability | Operation closing records |
+| Exitable | Offline-alternative availability, human-channel response time | Public-service ledger |
+
+This indicator set, together with appendix 2 of `report/narrative.md` (data fields/failure thresholds/exit conditions for the 12 scenario cards), the `technology_maturity` and `data_privacy` dimensions in `risk.json`, and the public-space metrics in `metrics.json`, forms the complete chain from the Standard Gauge as an idea to reviewable infrastructure, responding to the taskbook's spatialized mechanism requirement for "global discursive power in AI governance" [depth:municipal_new_infrastructure][depth:overall_spatial_structure].
+
 In response to the "three positionings, five functions, and three-zone/two-wing synergy loop" required by the agent-facing taskbook, this proposal gives a synergy framework at the coordinated level: Zhongzhiyuan carries full-stack independent innovation and governance discursive power; the AI Origin Community carries the world-class innovation ecosystem and scenario enablement; Dazhongsi carries native intelligent new business formats; the Zhongguancun science-and-technology service wing carries global allocation of factors and Zhongguancun IP/capital enablement; and the Xiaoyue River scenario-enablement wing carries AI-scenario deployment and vibrant urban life [source:AGENT-TASKBOOK]. This synergy framework is translated into spatial structure through the public-space, landscape, and building-layout coordination required by [standard:MOHURD-URBAN-DESIGN-MEASURES], linking back to [data:geometry/land_use.geojson#LU-001], [data:geometry/public_space.geojson#PUBLIC-001], and [depth:overall_spatial_structure].
 
 To respond to "global AI innovation ecosystem cases," this proposal curates 5 convertible reference cases (all as mechanism references, not investment commitments):
@@ -76,7 +87,19 @@ The three key areas are the innovation core of this proposal, reaching the urban
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The proposal establishes spatial-need personas for AI talent and enterprises, covering R&D offices, open-source collaboration, commercialization release, enterprise services, talent housing, social learning, consumption life, sports and recreation, and international exchange [source:AGENT-TASKBOOK]. This proposal provides 5 user personas:
+The proposal establishes spatial-need personas for AI talent and enterprises, covering R&D offices, open-source collaboration, commercialization release, enterprise services, talent housing, social learning, consumption life, sports and recreation, and international exchange [source:AGENT-TASKBOOK]. It provides 5 user personas, and uses "public-pain-point anchors" as the driver of public-interest and inclusion design — every AI scenario must answer a concrete public need (congested commuting, care burdens, cumbersome services, healthcare access, digital exclusion) rather than technology for its own sake:
+
+| Public pain point | Scenario / spatial response | Vulnerable-group safeguard |
+| --- | --- | --- |
+| Congested commuting (Jingzhang corridor slow-traffic gaps) | SC-04 AI slow-traffic navigation, JZ-01 gap stitching | Accessible wayfinding + continuous tactile/ramp |
+| Healthcare/care burden (community & talent housing) | SC-09 AI life-service street, SC-11 talent-life steward | Retain human service window, AI service exitable |
+| Cumbersome services (enterprise/talent admin & investment) | SC-07 commercialization street, SC-05 roadshow hall | Offline service points + offline alternative |
+| Digital exclusion (elderly/non-digital users) | Human channel + large-print wayfinding in SC-09/11 | Human-channel availability, offline-alternative availability |
+| Neighborhood-merchant renewal disruption | Transition-period relocation + business continuity | Merchant retention during renewal, disruption complaints |
+
+This public-need orientation makes the public-interest dimension land as verifiable spatial and metric responses rather than principle statements, cross-validated with the inclusion assessment (children, elderly, persons with disabilities, low-income, non-digital users, existing merchants) in `report/narrative.md` appendix 5 and the `equity_inclusion` dimension in `risk.json` [depth:risk_missing_data].
+
+The proposal provides 5 user personas:
 
 | Persona | Typical needs | Spatial response | Self-check boundary |
 | --- | --- | --- | --- |
@@ -148,6 +171,19 @@ The implementation plan forms a reviewable renewal-project list, specifying proj
 | JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Transit integration/slow traffic | Transit station, road intersections, municipal pipelines | [data:geometry/public_space.geojson#PUBLIC-001] |
 | JZ-05 | AI public-service and edge-compute node | New infrastructure/public service | Energy, compute, safety, and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS-001] |
 | JZ-06 | Global AI Activity Week public route | Operation/brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
+
+**Implementation feasibility table (responding to review demands for responsible-party types, cost/resource levels, approval prerequisites, milestones, and quantified outcomes; all conceptual wording).** Each project is anchored to verifiable implementation elements, used with the phasing and risk self-assessment in `risk.json`:
+
+| Project | Responsible-party type | Resource/cost level | Approval prerequisite | Key milestone | Quantified outcome (candidate) |
+| --- | --- | --- | --- | --- | --- |
+| JZ-01 slow-traffic gap stitching | Local transport/municipal authority | Medium | Road red lines, under-bridge space, transport review | Phase-1 cross-ring node connected | Gaps to 0, connectivity ≥95% |
+| JZ-02 Qinghe innovation interface | Blue-green operator + industry platform | Medium | River blue line, flood/ecological conditions | Qinghe green corridor demo open | Waterfront length, zero added flood risk |
+| JZ-03 commercialization street | University + transfer-service operator | Medium | Campus boundary, ownership, ground-floor formats | First transfer station operating | Transfer projects & jobs in year 1 |
+| JZ-04 Dazhongsi 4-quadrant walk | Transit-integration authority | High | Transit station, intersections, pipelines | Four-quadrant system open | 4/4 quadrants, station-city transfer time |
+| JZ-05 AI public + edge node | New-infrastructure operator | High | Energy, compute, safety, operating entity | Edge station prototype pilot | Compute availability ≥90%, monitoring coverage |
+| JZ-06 Activity Week route | Event operator + local authority | Medium | Space permits, event safety, copyright clearance | First route released | Route length, participants, international reach |
+
+All responsible-party types, cost levels, and outcome metrics are conceptual; formal implementation awaits official regulatory plans, municipal, transport, and ownership confirmation by the competent local authority, and this proposal makes no government commitment on this basis [depth:renewal_project_list][depth:phasing_implementation].
 
 Phasing is distinguished from the solicitation design cycle: the solicitation cycle is the time requirement for delivering outputs, while implementation phasing is the progression path of urban renewal and project construction. This proposal proposes near-term blue-green and scenario demonstration, mid-term industrial and talent spatial renewal, and a long-term governance framework, and marks what can start first with light facilities, operating events, and service platforms, and what must wait for confirmation of official regulatory plans, municipal, transport, and ownership conditions [depth:phasing_implementation]. For the global AI innovation event system and long-term operation, the proposal proposes an annual event system (Developer Festival, Scenario Open Day, International Roadshow Week), developer-community operation, open scenario operation, a public experience route, international communication, and attraction-conversion mechanisms, all phrased as conceptual proposals or deepening directions, not as confirmed government arrangements [source:AGENT-TASKBOOK].
 
