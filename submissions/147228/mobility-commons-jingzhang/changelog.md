@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.32 - 2026-08-10
+
+- 将 M-09 四条合成请求各自补成 pilot-readiness card，逐项登记 baseline、观察对象/样本/时间窗、成功与停止条件、责任和独立停机复核、人工等价服务、保留/删除边界、复核周期与申诉入口。
+- 新增 `mobility-pilot-readiness.json`、固定回读证据和负样本 runner；故意删除 owner、填入观察值或删除凭证的样本均被拒绝。
+- 维持 `unknown`、`not_available_before_authorization` 与 `not_authorized_not_run`，不把 readiness PASS、桌面演练 PASS 或论文方法写成现场基线、P1 资格或运营结果。
+
 ## v2.31 - 2026-08-10
 
 - 在中英文一页执行摘要中把 M-09 的 4 条合成请求、4 个触发事件、回退路径和 PASS 判据逐项配对，令离线桌面演练成为可见的空间验收入口；保留 `performance_results=null` 与 `not_authorized_not_run` 边界。

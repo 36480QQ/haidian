@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.31"
+iteration: "v2.32"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -408,6 +408,17 @@ B2 解决“平时怎么选”，B3 继续问“地铁中断、恶劣天气或�
 实施与运营合同另以 `visual/assets/implementation-operation-contract.json` 登记 P0/P1/P2 的参与角色、验收指标、人工回退与停止或撤回条件。它是概念责任接口，机构、合同、资金、采购、许可和运营承诺都尚未确定；任一 `unknown` 基线、同意或责任边界缺失，或者硬门失败，都保持在调查或人工回退状态 [data:visual/assets/implementation-operation-contract.json] [depth:phasing_implementation]。
 
 为把“人工回退”写成可复核的最小动作，本轮把既有 M-09 雨雪和断网服务降级卡做成离线桌面演练，没有新增已运行场景。`visual/assets/mobility-tabletop-contract.json` 固定 4 条合成服务请求、4 个触发事件、6 项验收检查和 5 个可逆回滚步骤；`node visual/assets/run-mobility-tabletop.js --check` 只读回包内 fixture，不联网、不接触个人数据、不调用外部系统，也不产生持久化状态，并输出 `mobility-tabletop-evidence.json` 同构的聚合回读。当前演练为 4/4 请求保留人工或公共交通入口、预约冻结、6/6 检查通过、5/5 回滚步骤复演；`performance_results=null`、`operational_status=not_authorized_not_run`。PASS 只证明状态、停止和回滚逻辑可检查，不推进 P1/P2，也不证明真实值守、无障碍绩效、公众接受、服务可用性或安全 [data:visual/assets/mobility-tabletop-contract.json] [data:visual/assets/mobility-tabletop-evidence.json] [data:visual/assets/run-mobility-tabletop.js]。
+
+公开意见里反复出现的一个问题是“谁确认了基线，什么时候才算能开始”。因此本轮没有再增加一组泛化指标，而是把 M-09 的四条合成请求各自收成一张准备度卡。每张卡都要在授权前登记观察对象、样本和时间窗，冻结成功与停止条件，写明运营责任和独立停机复核人，保留人工等价服务、保留/删除规则、申诉入口和复核周期。当前四张卡的本地基线、观察值、授权组织和删除凭证均保持 `unknown` 或 `not_available_before_authorization`；三条故意缺字段的负样本会被拒绝。`run-mobility-pilot-readiness.js --check` 的 PASS 只证明字段链闭合，不证明任何现场准备度或 P1 资格 [data:visual/assets/mobility-pilot-readiness.json] [data:visual/assets/mobility-pilot-readiness-evidence.json] [data:visual/assets/run-mobility-pilot-readiness.js]。
+
+| 请求 | 先登记什么 | 成功与停止怎么写 | 普通人如何申诉 |
+| --- | --- | --- | --- |
+| 居民日常照护 `M09-R01` | 分组服务类型、时间窗、照护与无障碍类别 | 保留人工/电话/纸面/公共交通入口；回退不可用或不能退出就停 | 社区服务台、电话或纸面入口 |
+| 轮椅无障碍路线 `M09-R02` | 路段、交接点、天气状态和有日期的走查 | 连续路线和人工协助可回放；路线中断或把无日期走查写成结果就停 | 人工路线台、电话或纸面入口 |
+| 企业班车时窗 `M09-R03` | 聚合需求、车型、路缘资产和装卸时窗 | 责任人、消防净空和无障碍路线齐全才可讨论窗口；缺一项不预约 | 现场人工、电话或纸面入口 |
+| 轨道站最后一程 `M09-R04` | 站口、到达时段、方式和无障碍需求分组 | 人工引导和公共交通始终可走；责任不明或无日期观察就停 | 站内人工、电话或纸面入口 |
+
+这四张卡与十张启动清单、M-09 桌面演练和 P0/P1/P2 责任合同互相回接。它们把“以后补基线”改成了可拒绝旁路的字段要求，同时不把某一包的命名升级为全仓硬门槛；如果维护者后续形成 canonical、版本化的 pilot-readiness 合同，本包会按字段对照和存量影响迁移。
 
 ![M-09 雨雪和断网服务降级。人工回退桌面演练](assets/figures/mobility-tabletop-board.svg)
 

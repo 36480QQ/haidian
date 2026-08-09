@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.31"
+iteration: "v2.32"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -374,6 +374,17 @@ The roles, fields, phase thresholds and human fallback are also recorded in `vis
 The implementation–operation contract is separately recorded in `visual/assets/implementation-operation-contract.json`, covering P0/P1/P2 roles, acceptance metrics, human fallback and stop/withdrawal conditions. It is a conceptual responsibility interface, not a confirmed institution, contract, budget, procurement, permit or operating commitment; any `unknown` baseline, missing consent/responsibility boundary or failed hard gate keeps the package in investigation or human-fallback status [data:visual/assets/implementation-operation-contract.json] [depth:phasing_implementation].
 
 To turn “human fallback” into a reviewable minimum action, this iteration narrows the existing M-09 storm/network-outage degradation card into an offline tabletop rather than claiming a new operated scenario. `visual/assets/mobility-tabletop-contract.json` fixes four synthetic service requests, four trigger events, six acceptance checks and five reversible rollback steps; `node visual/assets/run-mobility-tabletop.js --check` reads only bundled fixtures, makes no network calls, touches no personal data or external system, creates no persistent state, and emits an aggregate readback isomorphic to `mobility-tabletop-evidence.json`. The current rehearsal keeps a human or public-transport entry for 4/4 requests, freezes reservations, passes 6/6 checks and replays 5/5 rollback steps; `performance_results=null` and `operational_status=not_authorized_not_run`, so PASS proves only that state, stop and rollback logic is inspectable. It cannot advance P1/P2 and does not prove staffing, accessibility performance, public acceptance, service availability or safety [data:visual/assets/mobility-tabletop-contract.json] [data:visual/assets/mobility-tabletop-evidence.json] [data:visual/assets/run-mobility-tabletop.js].
+
+One question kept recurring in the public feedback: who confirms the baseline, and what makes a start permissible? This revision does not add another generic metric list. It turns the four M-09 synthetic requests into four readiness cards. Before authorisation, each card must name its observation unit, sample and time window; freeze success and stop conditions; name an operating role and an independent stop reviewer; and retain an equivalent human route, retention/deletion rule, redress entry and review cycle. The local baseline, observed value, authorised organisation and deletion receipt remain `unknown` or `not_available_before_authorization` on all four cards; three deliberate missing-field fixtures are rejected. A PASS from `run-mobility-pilot-readiness.js --check` proves only that this field chain is closed. It is not field readiness or P1 eligibility evidence [data:visual/assets/mobility-pilot-readiness.json] [data:visual/assets/mobility-pilot-readiness-evidence.json] [data:visual/assets/run-mobility-pilot-readiness.js].
+
+| Request | Register first | Success and stop rule | Redress for an ordinary person |
+| --- | --- | --- | --- |
+| Resident daily care `M09-R01` | Grouped service type, time window, care and accessibility category | Keep human/phone/paper/public-transport access; stop if fallback or exit is unavailable | Community desk, telephone or paper entry |
+| Wheelchair-accessible route `M09-R02` | Route segment, handover point, weather state and dated walkthrough | Replay continuity and human assistance; stop if the route breaks or an undated walkthrough is presented as a result | Human route desk, telephone or paper entry |
+| Enterprise shuttle window `M09-R03` | Grouped demand, vehicle class, curb asset and loading window | Discuss a window only with an owner, fire clearance and accessible route; no booking when one is missing | On-site human, telephone or paper entry |
+| Rail last-mile transfer `M09-R04` | Station exit, arrival window, mode and accessibility grouping | Keep staffed wayfinding and ordinary public transport; stop when ownership or dated observation is absent | Station desk, telephone or paper entry |
+
+These four cards cross-reference the ten-card startup checklist, the M-09 tabletop and the P0/P1/P2 responsibility contract. They turn “collect the baseline later” into fields that cannot be silently bypassed, without promoting one package’s naming into a repository-wide hard gate. If maintainers publish a canonical, versioned pilot-readiness contract, this package will migrate through a field mapping and inventory-impact note.
 
 ![M-09 storm/outage fallback: human-service tabletop](assets/figures/mobility-tabletop-board.en.svg)
 
