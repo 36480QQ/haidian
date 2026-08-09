@@ -1,13 +1,34 @@
 {
-  "evidence_version": "1.0",
+  "evidence_version": "1.1",
   "generated_at": "2026-08-09T13:30:00Z",
   "status": "PASS",
   "claim_boundary": "Synthetic offline desktop replay only; NOT AUTHORIZED and NOT RUN as a field or operational pilot.",
   "inputs": {
     "fixtures": "visual/assets/p1-replay-fixtures.json",
     "fixture_sha256": "72b86cb803f379fd50c583379a01107c097887d17c1e327f0821f9203e8861e4",
+    "schema": "visual/assets/civic-agent-receipt.schema.json",
+    "schema_sha256": "b3707f2ac7dffd90678c63b3c1e5284ecf4c1ee6e991cce4f6d5774c53d2f2d1",
+    "example_receipt": "visual/assets/example-p1-receipt.json",
+    "example_receipt_sha256": "68892504f7f357f00711e48e1d855245a750f56c6c65f1373170bd2a2bf7bbe0",
     "network_calls": 0,
     "personal_records": 0
+  },
+  "schema_validation": {
+    "draft": "https://json-schema.org/draft/2020-12/schema",
+    "example_error_count": 0,
+    "example_errors": [],
+    "negative_controls_rejected": 8,
+    "negative_controls_total": 8,
+    "keywords_exercised": [
+      "required",
+      "type",
+      "enum",
+      "pattern",
+      "format:date-time",
+      "additionalProperties",
+      "nested required",
+      "const"
+    ]
   },
   "results": [
     {
@@ -93,5 +114,5 @@
     ],
     "final_mode": "non_ai_public_service"
   },
-  "replay_digest_sha256": "0f8e700f1ce059a2dee071a030088963e7f1f0007f1a168b3d99aea6f5d4487f"
+  "replay_digest_sha256": "79969dd011140348a5f062a3bb89e36bfcd9676f5276e7b73d941eb0a3c5e44c"
 }

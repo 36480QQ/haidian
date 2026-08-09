@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "97c510921a28e4c54172c019999ee4f2591e268f14f67bd0d12697cf4045f170"
+      "sha256": "9856523a0b07a38155ba4e53f55290f9299424a7d982ff1e27f1e367a29e89ee"
     },
     {
       "path": "risk.json",
@@ -344,7 +344,7 @@
       "path": "visual/assets/run-p1-replay.js",
       "role": "reproducibility_runner",
       "required": false,
-      "sha256": "72ae7450b90f256321ab78cd1dbb44be5f2ea2d65d1506a9a80a8a6a43203150"
+      "sha256": "909d58411aba027c88b571658c5f673a8a62d8ea6a4035a56139b7d9c17d715e"
     },
     {
       "path": "visual/assets/p1-replay-fixtures.json",
@@ -356,13 +356,13 @@
       "path": "visual/assets/p1-replay-evidence.json",
       "role": "supplemental_evidence",
       "required": false,
-      "sha256": "47eb2709bf3901a24e47334f363bb54a465a1e322732461dac328a1115256868"
+      "sha256": "97afe5d5faed0d16cbe4de4e1594148dcf5d448670c3c0b68b50ae3fe0d5c428"
     },
     {
       "path": "visual/assets/p1-replay-readme.json",
       "role": "supplemental_evidence",
       "required": false,
-      "sha256": "25d0e75a6575a2deaadd610d2dd44920500a32298af8ae38bb7e27533c9c66f3"
+      "sha256": "72715f95bc5576cbc48960b0f8926399d67fe6168893098ba4b853b60cd5c65f"
     }
   ],
   "validation_claim": {
