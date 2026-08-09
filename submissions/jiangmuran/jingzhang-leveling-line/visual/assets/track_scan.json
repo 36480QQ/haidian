@@ -144,6 +144,49 @@
     "dakfjalka",
     "jiangmuran"
    ]
+  },
+  "charging_or_parking": {
+   "pattern": "充电|换电|停放|驻车|泊位|停靠",
+   "proposals_matching": 26,
+   "share": 0.6842,
+   "matched": [
+    "147228",
+    "2503668375-boop",
+    "7annnnnnn",
+    "Cashmeran",
+    "CatNebulaaaa",
+    "Clay-HHK",
+    "Currrrrrry",
+    "DENGDixin",
+    "HXJ192",
+    "ItsVeyra",
+    "Komeiji-Shiki",
+    "LaoFang114514",
+    "Restless-One",
+    "Sijie-Yang",
+    "XuejiFang",
+    "chucky1102",
+    "creeperCN",
+    "dakfjalka",
+    "hxd0818",
+    "jiChen528",
+    "jiangmuran",
+    "liulingfei-1",
+    "seanSaxcy3",
+    "shawnshi",
+    "xiao555",
+    "xiaofenggan01"
+   ]
+  },
+  "charging_siting": {
+   "pattern": "(充电|换电|停放|驻车|停靠).{0,12}(选址|布点|设于|设在|位置|地块|节点|场站|驿站)|(选址|布点|场站|驿站).{0,12}(充电|换电|停放)",
+   "proposals_matching": 3,
+   "share": 0.0789,
+   "matched": [
+    "LaoFang114514",
+    "jiangmuran",
+    "xiaofenggan01"
+   ]
   }
  }
 }

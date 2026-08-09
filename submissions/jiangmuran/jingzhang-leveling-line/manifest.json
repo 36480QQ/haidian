@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ac23ee166974ab3b8c4372dd200f1021f17e8c5794725b45a7de07c9a39671cc"
+      "sha256": "a82d009ce50fd928ec38b505841f6c95e79c42c5085163dd443237a08d1c8699"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "af5e7e259b9cce5db81fb07ce9a7052abe6e50b9724da1766c54cad6b15d0d54"
+      "sha256": "9ffba7d99ff107229771c297eab4f8ccd7fae144282c498e706993555da77056"
     },
     {
       "path": "report/narrative.md",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "def1d2b574d630afd2ff427d618638b6ba9429d19e2b5d15af08361af7e435df"
+      "sha256": "fb685b9076db0728a3659ea18a8dd29ec45c365354b38f20b7c35b00025ba961"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3517a25032599c50229c1207bc5e15990247deb0656cd9e11f986173c47afcd0"
+      "sha256": "ad536ce9bf272e990f1e6d089d2c36e62a7e529461dbd549803ab01e71935a6c"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "0ed5e361e56cc0bf296724badb17a787be19da48741ddcf7cced5a93b8ae836f"
+      "sha256": "905cee33c57a9f4aeddd5440d74d742c986274fc539383de2970646127a63bf5"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -492,7 +492,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "663c17a7409d0b6a8d29bf996400b8cc55370c98f44892a22e217e818611471b"
+      "sha256": "6a4423c31004fc2ab200cf91a807c852e74e2e826043e59f0c8e01100e1559d7"
     },
     {
       "path": "visual/assets/scenario_cards.json",
@@ -524,7 +524,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   },

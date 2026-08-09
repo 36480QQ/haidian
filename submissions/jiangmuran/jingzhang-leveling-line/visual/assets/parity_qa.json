@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.857,
+ "overall_ratio": 0.858,
  "floor": 0.75,
  "sections": [
   {
@@ -19,9 +19,9 @@
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 5097,
+   "zh_chars": 5086,
    "en_words": 3238,
-   "ratio": 0.81,
+   "ratio": 0.812,
    "pass": true
   },
   {
@@ -33,9 +33,9 @@
   },
   {
    "section": "Coordinated Research Area: Industry and Future City Research",
-   "zh_chars": 3033,
-   "en_words": 2037,
-   "ratio": 0.857,
+   "zh_chars": 3119,
+   "en_words": 2097,
+   "ratio": 0.858,
    "pass": true
   },
   {
@@ -47,23 +47,23 @@
   },
   {
    "section": "Detailed Design of Key Areas",
-   "zh_chars": 1628,
-   "en_words": 1171,
-   "ratio": 0.917,
+   "zh_chars": 1626,
+   "en_words": 1173,
+   "ratio": 0.92,
    "pass": true
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10553,
-   "en_words": 6867,
-   "ratio": 0.83,
+   "zh_chars": 10601,
+   "en_words": 6925,
+   "ratio": 0.833,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-   "zh_chars": 2136,
-   "en_words": 1498,
-   "ratio": 0.895,
+   "zh_chars": 2185,
+   "en_words": 1532,
+   "ratio": 0.894,
    "pass": true
   },
   {
