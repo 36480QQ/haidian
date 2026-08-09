@@ -84,6 +84,18 @@ Each project family moves through three phases with explicit responsibility boun
 
 A four-season Commons Cycle frames public problem release, Xiaoyuehe co-learning walks, developer protocol camp, and annual v0.x health check/release note. The developer mechanism is problem register → office hours → G0 protocol → human/public review → version note; international conversion is multilingual evidence → due diligence → voluntary reversible exchange. [source:AGENT-TASKBOOK] [data:geometry/phasing.geojson#PHASE-03] [metric:scenario_g0_count]
 
+### Implementation Loop and Participating Roles
+
+To make implementation auditable rather than aspirational, the five conceptual project families use the same G0–G1–G2 gates. The roles below are proposed roles for professional confirmation, not confirmed partners. The structured package remains authoritative for the full fields, family responsibilities, data preconditions, acceptance evidence, and exit protocols in `visual/assets/implementation-operation-matrix.json` and `visual/assets/scenario-space-operation-matrix.json`.
+
+| Stage | Proposed participating roles | Required evidence and metrics | Entry / exit rule |
+|---|---|---|---|
+| G0 paper protocol | proposal team, community representatives, public-service role, data-responsibility role, cultural-review role | public problem, consent scope, equivalent human route, scenario cards, `scenario_g0_count`, `manual_fallback_coverage_ratio` | no consent, source, owner or human route means no progression |
+| G1 professional review | planning, transport, water, accessibility, privacy, safety, energy and cultural professionals | official geometry or field baseline, permit prerequisites, risk review, accessibility walk-through, recalculated metrics and review record | missing critical data or professional sign-off keeps the work at G0 |
+| G2 controlled-operation decision | authorised operator, on-site safety role, independent review role, community observers and complaint channel | responsibility chain, insurance/safety documents, incident log, human takeover, complaint closure, stop and withdrawal record | only a professional decision after all prerequisites; incident, consent withdrawal or failed metric freezes or withdraws the trial |
+
+This submission claims only a completed G0 conceptual evidence chain; G1 and G2 remain dependent on missing data and professional judgment. The table is not a permit, operator appointment, budget, partnership, road right or deployment claim. It makes stage, participating roles, acceptance metrics and exit actions directly reviewable in the narrative rather than leaving them only in JSON.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 All known spatial values are recalculated from current GeoJSON in EPSG:4548 and rounded once: provisional scope 11,412,825.386 sqm, green layer 879,519.159 sqm, public-space layer 123,473.537 sqm, and land-use coverage 1.000000. The former 0.464 sqm green mismatch is removed through one shared algorithm, rounding rule, and audit file used by prose, figures, HTML, and drawings. [data:geometry/land_use.geojson#LAND-05] [metric:land_use_coverage_ratio] [depth:metrics_recalculation]

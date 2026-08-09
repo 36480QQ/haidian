@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-09
+
+- Added a bilingual narrative-level implementation loop that names G0/G1/G2 stages, proposed participating roles, acceptance evidence/metrics, and freeze/withdrawal conditions.
+- Linked the narrative to the structured implementation and scenario-operation matrices while keeping all roles provisional and preserving the G0-only, no-permit/no-deployment boundary.
+
 ## v0.2 - 2026-08-09
 
 - 按任务书原名重建 agent.4、agent.5、agent.6 的任务映射，并补齐一带候选名、英文命名体系、概念 Logo 方向、文化导视、全球活动与长期运营机制。
