@@ -167,15 +167,17 @@
       "status_label": "provisional"
     },
     "high_risk_intercept_rate": {
-      "status": "known",
-      "value": 1.0,
+      "status": "unknown",
+      "value": null,
       "unit": "ratio",
       "source_files": [
-        "simulation.json"
+        "simulation.json",
+        "visual/assets/evaluation/protocol.json"
       ],
       "formula": "blocked_high_risk / high_risk_attempts",
-      "confidence": "medium",
-      "status_label": "target"
+      "confidence": "unknown",
+      "status_label": "provisional",
+      "reason": "The frozen 100-task manifest contains no no_fly_zone or crowd_surge task, so this denominator is zero; add those tasks and rerun all three policies before claiming a rate."
     },
     "energy_budget_violations": {
       "status": "known",
