@@ -1,5 +1,18 @@
 {
   "schema_version": "0.1.0",
+  "run_record": {
+    "checked_at": "2026-08-09T01:44:43Z",
+    "pr_author": "Joyzhang0923",
+    "result": "pass",
+    "review_status": "formal-review-ready",
+    "can_enter_formal_review": true,
+    "deterministic_validation": "pass",
+    "spatial_review": "pass_with_provisional_boundary_disclosure",
+    "visual_packaging_check": "pass",
+    "professional_evidence_review": "pass",
+    "command": "python scripts/self_check_submission.py submissions/Joyzhang0923/jingzhang-ai-civic-commons --pr-author Joyzhang0923",
+    "note": "Final-byte v0.2.1 check recorded after regeneration and visual QA of paired bilingual figures, localized HTML/PDF assets, agent provenance and the path-level rights ledger."
+  },
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",

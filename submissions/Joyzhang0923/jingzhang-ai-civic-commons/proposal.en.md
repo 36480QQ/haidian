@@ -16,17 +16,19 @@ iteration: "v0.1"
 
 > Core judgement: a world-class AI innovation belt must accelerate technology, talent and enterprise while also allowing residents, founders, visitors and public-service workers to share its benefits safely and at low cost. The proposal treats AI as accountable civic infrastructure, not spectacle, and retains an in-person service channel at every critical touchpoint.
 
+> v0.2.1 review revision: all five core figures now use paired Chinese primary assets and English `.en.png` counterparts. The English key-area figure was reflowed to prevent text overflow. The narratives, offline HTML and localized PDFs reference their aligned language assets. `agent.json` records the available model boundary and toolchain, while the copyright statement provides a path-level asset and rights ledger. The cautious provisional-boundary disclosure is retained.
+
 ## Design Basis and Source List
 
 The proposal follows the official open-call announcement, the cleared Agent taskbook, repository standards and the registered public-data workflow. The official text establishes the three planning scopes and required tasks, while the repository's rough polygons are used only for temporary generation and visual review [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. Geometry, metrics and matrices remain the machine-audit layer; this document explains design intent and consequences for people. The exact official boundary, parcel controls, ownership, utility capacity, heritage controls and road redlines are still pending. All precision-sensitive calculations must therefore be repeated when cleared official files become available [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis].
 
-![Evidence chain and proposal package](assets/figures/site-overview.png)
+![Evidence chain and proposal package](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
 The 43.6-square-kilometre coordinated research area frames industry, talent and future-city strategy; the approximately 11.4-square-kilometre overall design area organizes renewal, mobility, public space and facilities; and three key areas totalling 368.4 hectares test detailed implementation. The spatial idea is one civic spine, three innovation anchors, two service-station types, ten co-tested scenarios and a blue-green slow-mobility loop. Enterprise and talent stations provide policy, incubation and technology services; civic-life stations provide inclusive guidance, neighborhood support and visitor orientation. These are conceptual service typologies rather than approved facilities [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
 
-![Three-level scope and spatial framework](assets/figures/land-use-structure.png)
+![Three-level scope and spatial framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -46,7 +48,7 @@ Zhongzhiyuan is conceived as a garden-based full-stack acceleration district. A 
 
 Each area combines positioning, spatial structure, adaptive reuse, mobility, public space, scenarios and implementation risks. The polygons are provisional constraints and cannot decide parcel demolition, building scale or official redlines. The detailed schemes are reference material for later professional teams and must be recalibrated after official GIS, regulatory, utility and ownership information is cleared [depth:three_key_area_detailed_design].
 
-![Three key areas and design responsibilities](assets/figures/key-areas.png)
+![Three key areas and design responsibilities](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -66,7 +68,7 @@ The mobility strategy prioritizes a continuous north-south heritage path, east-w
 
 Public-service stations combine enterprise guidance, founder support, employment assistance, cultural interpretation and accessible neighborhood help. Edge computing, distributed energy and sensing are modular options subject to cyber-security, utility, flood, fire and operating-capacity review. The design retains staffed counters or scheduled human assistance for consequential services [depth:municipal_new_infrastructure] [data:geometry/constraints.geojson#CONSTRAINTS].
 
-![Mobility and blue-green civic network](assets/figures/mobility-bluegreen.png)
+![Mobility and blue-green civic network](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -84,7 +86,7 @@ Policy recommendations include a scenario application and exit protocol, shared 
 
 Known geometric metrics include the submitted provisional site area, land-use partition, building footprint, green and public-space ratios and phasing coverage. Their formulas and source files are recorded in `metrics.json`; official planning controls remain unknown. The primary performance measures for service pilots are accessibility, human-transfer rate, correction rate, satisfaction across user groups, scenario suspension rate and reuse of shared facilities. These operational indicators require future collection and are not official planning targets [metric:site_area_sqm] [metric:green_ratio] [depth:metrics_recalculation].
 
-![Metrics and evidence relationships](assets/figures/metrics-evidence.png)
+![Metrics and evidence relationships](assets/figures/metrics-evidence.en.png)
 
 The compliance, standards and design-depth matrices connect every requirement to narrative, geometry, metrics, drawings and assumptions. A successful intake check demonstrates internal package consistency, not official approval or engineering feasibility. Replacement of provisional polygons triggers recalculation of every dependent layer, metric and figure.
 

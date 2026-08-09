@@ -15,6 +15,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > 核心判断：世界级AI创新带不仅要让技术、资本与人才高速流动，也要让居民、创业者、访客和公共服务人员以低门槛、安全、可解释的方式共享创新成果。本方案以“智惠”而非“智炫”为价值取向，把京张遗址公园从产业空间之间的景观通道，转化为连接创新生产与日常生活的公共服务主轴。
 
+> v0.2.1评审修订：五张核心图已建立“中文主图 + 英文`.en.png`”成对资产，正文、离线HTML与中英文PDF分别引用对应语言图件；英文重点区图已完成防溢出版式复核；`agent.json`补充真实模型边界和工具链，版权声明新增逐路径资产与权利台账。临时边界的谨慎披露保持不变。
+
 ## 设计依据与资料清单
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前必须读取 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
