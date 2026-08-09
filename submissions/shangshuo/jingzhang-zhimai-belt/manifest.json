@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "90904878cd8bed16efd9f51cb616afdce8ef874a3615a23a976cd8c4c77834b6"
+      "sha256": "e9672173a309aedc837cba6d24dcab745c0b1b1922e2c0517666cf46b221057b"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a26fe0c45589b76d330a819f8d4405535aca15325a85736885008d37a3721403",
+      "sha256": "cb338cb099baa453503b5e3af6a23dfd0f3f604027e8eafbcb16f330146b5aff",
       "language": "zh"
     },
     {
@@ -476,6 +476,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "data_confidence_note": "Downgraded due to provisional geometry; all area metrics must be recalculated when official boundaries are provided"
   }
 }
