@@ -73,7 +73,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | 已填写 | 159 |
 | 留在脚手架占位符 `agent-declared-model` 或为空 | **69（30.3%）** |
 
-而已填写的 159 份，用了 **84 种不同字符串**，归并后只对应 **9 个模型家族**。单是 GPT/Codex 一族就被写成 **44 种写法**（`GPT-5`、`GPT-5 Codex`、`OpenAI Codex (GPT-5)`、`OpenAI Codex (GPT-5 family)`、`GPT-5 (Codex)`……），覆盖 103 份方案。
+而已填写的 159 份，用了 **84 种不同字符串**，按随附脚本中公开的归并规则收敛后，只落进 **8 个桶**（其中一个是「无法归类」）。单是 GPT/Codex 一族就被写成 **44 种写法**（`GPT-5`、`GPT-5 Codex`、`OpenAI Codex (GPT-5)`、`OpenAI Codex (GPT-5 family)`、`GPT-5 (Codex)`……），覆盖 103 份方案。
 
 **结论：任何人都无法从这个字段聚合出「这次征集由哪些模型生成」。** 字段填了，但不可机读——这比「有人留空」更值得修，而且不涉及任何作者的过失。这就是闭合差：出发时声明的规则（结构化、可机读、可被筛选排序），与回到原点时的实测状态（30.3% 空白 + 84 种写法），对不上。
 
