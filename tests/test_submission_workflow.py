@@ -30,6 +30,7 @@ from validate_submission import (  # noqa: E402
     validate_submission,
 )
 from github_pr_validation import (  # noqa: E402
+    base_requires_persisted_readiness,
     GitHubClient,
     MAX_DOWNLOAD_BYTES,
     _is_retryable_http_error,
@@ -37,6 +38,7 @@ from github_pr_validation import (  # noqa: E402
     is_non_submission_pr,
     is_review_queue_candidate,
     main,
+    readiness_contract_dirs_from_base,
     safe_manifest_paths,
     validation_paths_for,
 )
@@ -367,6 +369,87 @@ class AgentDisclosureTests(unittest.TestCase):
 
 
 class ManifestHydrationTests(unittest.TestCase):
+    def test_trusted_base_readiness_boundary_is_fail_closed(self) -> None:
+        self.assertTrue(base_requires_persisted_readiness({}))
+        self.assertTrue(
+            base_requires_persisted_readiness(
+                {"package_state": "scaffold", "validation_claim": {}}
+            )
+        )
+        self.assertFalse(
+            base_requires_persisted_readiness(
+                {
+                    "package_state": "ready_for_review",
+                    "validation_claim": {"self_checked": False},
+                }
+            )
+        )
+        self.assertTrue(
+            base_requires_persisted_readiness(
+                {
+                    "package_state": "ready_for_review",
+                    "validation_claim": {
+                        "readiness_contract": "persisted-self-check-v1"
+                    },
+                }
+            )
+        )
+
+    def test_trusted_base_contract_dirs_cover_new_and_contracted_packages(self) -> None:
+        client = MagicMock()
+        base = "submissions/alice/ai-urban-loop"
+        contracted = "submissions/alice/contracted-loop"
+
+        def fetch_content(_repo, path, _ref, destination):
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            if path == f"{base}/manifest.json":
+                destination.write_text(
+                    json.dumps(
+                        {
+                            "package_state": "ready_for_review",
+                            "validation_claim": {"self_checked": False},
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                return True
+            if path == f"{contracted}/manifest.json":
+                destination.write_text(
+                    json.dumps(
+                        {
+                            "package_state": "ready_for_review",
+                            "validation_claim": {
+                                "readiness_contract": "persisted-self-check-v1"
+                            },
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                return True
+            return False
+
+        client.fetch_content.side_effect = fetch_content
+        with tempfile.TemporaryDirectory() as tmp:
+            required = readiness_contract_dirs_from_base(
+                client,
+                "open-city-ai/haidian",
+                "base-sha",
+                {
+                    f"{base}/proposal.md",
+                    f"{contracted}/proposal.md",
+                    "submissions/alice/new-loop/proposal.md",
+                },
+                Path(tmp),
+            )
+
+        self.assertEqual(
+            {
+                "submissions/alice/contracted-loop",
+                "submissions/alice/new-loop",
+            },
+            required,
+        )
+
     def test_download_content_accepts_ten_mib_file(self) -> None:
         client = GitHubClient("token", "owner/repo")
         with tempfile.TemporaryDirectory() as tmp:
@@ -413,6 +496,39 @@ class ManifestHydrationTests(unittest.TestCase):
     def test_invalid_manifest_shapes_return_no_paths(self) -> None:
         self.assertEqual(set(), safe_manifest_paths([]))
         self.assertEqual(set(), safe_manifest_paths({"files": "not-a-list"}))
+
+    def test_trusted_base_distinguishes_historical_and_new_ready_packages(self) -> None:
+        historical = {
+            "package_state": "ready_for_review",
+            "validation_claim": {"self_checked": False, "known_blockers": []},
+        }
+        contracted = {
+            "package_state": "ready_for_review",
+            "validation_claim": {
+                "self_checked": True,
+                "known_blockers": [],
+                "readiness_contract": "persisted-self-check-v1",
+            },
+        }
+        scaffold = {"package_state": "scaffold", "validation_claim": {}}
+        self.assertFalse(base_requires_persisted_readiness(historical))
+        self.assertTrue(base_requires_persisted_readiness(contracted))
+        self.assertTrue(base_requires_persisted_readiness(scaffold))
+        self.assertTrue(base_requires_persisted_readiness(None))
+
+    def test_trusted_base_manifest_fetch_marks_new_package_strict(self) -> None:
+        proposal_paths = {"submissions/alice/design/proposal.md"}
+        with tempfile.TemporaryDirectory() as tmp:
+            client = MagicMock()
+            client.fetch_content.return_value = False
+            required = readiness_contract_dirs_from_base(
+                client,
+                "open-city-ai/haidian",
+                "base-sha",
+                proposal_paths,
+                Path(tmp),
+            )
+        self.assertEqual({"submissions/alice/design"}, required)
 
     def test_maintainer_removals_are_not_revalidated_as_missing_files(self) -> None:
         files = [
@@ -2075,7 +2191,6 @@ class SubmissionWorkflowTests(unittest.TestCase):
             base = "submissions/alice/ai-urban-loop"
             changed = self.write_minimal_ai_package(root, base)
             self.add_bilingual_v2_display(root, base, changed)
-
             metrics_path = root / base / "metrics.json"
             metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
             metrics["metrics"].update(
@@ -2226,6 +2341,250 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("conflicts with baselines.urban_llm_harness.success_rate=1.0", errors)
             self.assertIn("urban_llm_harness must mirror the task-derived aggregate", errors)
             self.assertIn("evaluation-baseline.json", errors)
+
+    def test_v2_ready_package_requires_true_self_checked_claim(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.add_bilingual_v2_display(root, base, changed)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["readiness_contract"] = "persisted-self-check-v1"
+            manifest["validation_claim"]["self_checked"] = False
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertFalse(report.ok)
+            self.assertIn(
+                "must set validation_claim.self_checked=true",
+                "\n".join(report.errors),
+            )
+
+    def test_unmarked_ready_package_keeps_legacy_intake_compatibility_warning(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["self_checked"] = False
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertTrue(report.ok, report.errors)
+            self.assertIn(
+                "legacy package accepted for intake",
+                "\n".join(report.warnings),
+            )
+
+    def test_trusted_base_prevents_missing_contract_downgrade_to_legacy(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["self_checked"] = False
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(
+                root,
+                "alice",
+                changed,
+                required_readiness_contract_dirs={base},
+            )
+
+            self.assertFalse(report.ok)
+            self.assertIn("trusted base requires", "\n".join(report.errors))
+
+    def test_ready_package_requires_persisted_four_gate_evidence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["readiness_contract"] = "persisted-self-check-v1"
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertFalse(report.ok)
+            errors = "\n".join(report.errors)
+            self.assertIn("must persist ok=true", errors)
+            self.assertIn("must persist can_enter_formal_review=true", errors)
+            self.assertIn("must persist pass/blocking gates", errors)
+
+            self.write_json(
+                root,
+                f"{base}/self_check.json",
+                {
+                    "schema_version": "0.1.0",
+                    "ok": True,
+                    "can_enter_formal_review": True,
+                    "checks": [
+                        {
+                            "check_id": gate,
+                            "result": "pass",
+                            "severity": "blocking",
+                            "target": f"scripts/{target}",
+                        }
+                        for gate, target in [
+                            ("DETERMINISTIC_VALIDATION", "validate_local_submission.py"),
+                            ("SPATIAL_REVIEW", "spatial_review.py"),
+                            ("VISUAL_PACKAGING", "visual_review.py"),
+                            ("PROFESSIONAL_EVIDENCE", "professional_review.py"),
+                        ]
+                    ],
+                },
+            )
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertTrue(report.ok, report.errors)
+
+    def test_pending_ready_self_check_evidence_is_allowed_only_for_mark_flow(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["readiness_contract"] = "persisted-self-check-v1"
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(
+                root,
+                "alice",
+                changed,
+                allow_pending_self_check=True,
+            )
+
+            self.assertTrue(report.ok, report.errors)
+            self.assertIn(
+                "must persist ok=true; pending self-check completion",
+                "\n".join(report.warnings),
+            )
+
+    def test_pending_mark_flow_allows_blocking_failure_but_strict_validation_rejects_it(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["readiness_contract"] = "persisted-self-check-v1"
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            self_check_path = root / base / "self_check.json"
+            self_check = json.loads(self_check_path.read_text(encoding="utf-8"))
+            self_check["checks"][0]["result"] = "fail"
+            self_check["checks"][0]["severity"] = "blocking"
+            self_check_path.write_text(
+                json.dumps(self_check, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            pending = validate_submission(
+                root,
+                "alice",
+                changed,
+                allow_pending_self_check=True,
+            )
+            self.assertTrue(pending.ok, pending.errors)
+            self.assertIn(
+                "blocking failed self-check `TEST_CHECK`; pending self-check replacement",
+                "\n".join(pending.warnings),
+            )
+
+            strict = validate_submission(root, "alice", changed)
+            self.assertFalse(strict.ok)
+            self.assertIn(
+                "formal submission has blocking failed self-check `TEST_CHECK`",
+                "\n".join(strict.errors),
+            )
+
+    def test_trusted_base_contract_cannot_be_removed_or_downgraded(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_state"] = "ready_for_review"
+            manifest["validation_claim"]["self_checked"] = False
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(
+                root,
+                "alice",
+                changed,
+                required_readiness_contract_dirs={base},
+            )
+
+            self.assertFalse(report.ok)
+            self.assertIn(
+                "trusted base requires validation_claim.readiness_contract",
+                "\n".join(report.errors),
+            )
+
+    def test_unmarked_legacy_package_keeps_compatibility_warning(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertTrue(report.ok, report.errors)
+
+    def test_manifest_schema_declares_persisted_readiness_contract(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["validation_claim"]["readiness_contract"] = "persisted-self-check-v1"
+            schema = json.loads(
+                (REPO_ROOT / "brief/site-package/schemas/manifest.schema.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            jsonschema.validate(manifest, schema)
+
+            manifest["validation_claim"]["readiness_contract"] = "unknown-contract"
+            with self.assertRaises(jsonschema.ValidationError):
+                jsonschema.validate(manifest, schema)
 
     def test_language_neutral_cannot_bypass_primary_display_pair(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
