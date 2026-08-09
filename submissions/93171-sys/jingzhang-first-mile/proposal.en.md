@@ -114,6 +114,24 @@ Zhongzhiyuan may not send an unproductized prototype into public space; AI Origi
 
 The detailed-design geometry uses provisional extents. Functions, building carriers, public-space continuity, mobility and project nodes are concept recommendations for professional development, not final legal parcels or approved construction.
 
+### From Regional Concept to Reviewable, Scaled Modules
+
+The following drawings use **concept study modules** to test spatial relationships, minimum dimensions, quantities and stop conditions. They are not legal parcels, measured surveys or construction drawings. Before siting, the team must verify official redlines, title, existing buildings, utilities, trees, fire, traffic, heritage and accessibility [assumption:A-CONTROLS-001] [assumption:A-DESIGN-NODES-001].
+
+| Module | Study extent and key quantities | Public-space baseline | Stop before the next station |
+| --- | --- | --- | --- |
+| Zhongzhiyuan Product-Ready Yard | 180 × 120 m (2.16 ha); 36 × 24 m visible test court; 18 × 12 m safety/data clinic; 18 × 12 m operations handoff lab; 12–20 m ecological buffer | Continuous 6 m ordinary public route; research back-of-house separated from the public test front | No data owner, human takeover or maintenance plan: stop before G1 and buy no device |
+| AI Origin First-Use Commons | 160 × 110 m (1.76 ha); Ø18 m First User Table; 12 × 6 m human/appeal desk; 18 × 8 m limited launch window | 6 m ordinary route is primary; 3 m AI route is optional; every user can exit without loss | If any of three real tasks lacks human escalation or exit, pause G2 immediately |
+| Dazhongsi First-Order Room | 200 × 160 m (3.20 ha); 24 × 12 m procurement clinic; 30 × 18 m first-order room; 24 × 12 m reuse/failure archive; 6 m arrival loop | Continuous station arrival, crossing seams and non-commercial stay; heritage buffer width remains TBC | If acceptance, cost, liability or exit terms are blank, do not call the pilot a first order |
+
+![Zhongzhiyuan concept study module with plan, section, quantities and stop condition](assets/figures/detail-zhongzhiyuan.en.png)
+
+![AI Origin concept study module with ordinary route, optional AI route, human desk and First User Table](assets/figures/detail-ai-origin.en.png)
+
+![Dazhongsi concept study module with procurement clinic, first-order room, reuse archive and station stitching](assets/figures/detail-dazhongsi.en.png)
+
+![Concept visualization of the AI Origin First-Use Commons, produced by this proposal's AI image-generation workflow; non-built, non-survey and not an implementation commitment](assets/figures/hero-first-use-commons.png)
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The First Mile does not substitute visitor numbers for user value. Six personas collaborate along the same chain [metric:persona_count]:
@@ -203,7 +221,13 @@ The first concept pilot is the **AI Startup Service Copilot** at Beijing AI Orig
 
 The first phase buys no robots, builds no heavy exhibition hall, collects no face or continuous trajectory, and does not use response count, event traffic or publicity as success. Real completion, repeat use and operator handoff remain unknown before the trial [metric:first_user_task_completion_rate] [metric:repeat_use_rate] [metric:operator_handoff_pass_rate].
 
-Phasing follows a small, reversible and operations-first discipline. Phase 1 funds problem research, staffed service, accessibility, safety and the evidence system. Phase 2 introduces equipment and spatial retrofit only after the first gates. Phase 3 expands only services that have been genuinely reused. Budgets must record category, quantity basis, price source, range and approval state. No total investment is asserted without official boundary, quantities, quotations, responsible entity and approval [depth:phasing_implementation].
+Before G0, the field team uses `visual/assets/field-validation-protocol.json`: walk the ordinary route, accessibility breaks and distance to human service; interview recruits with the same 12 questions; record human-baseline time, error, escalation and exit for three tasks; obtain consent and store de-identified results. Five to eight founders and two to three service staff are **recruitment targets**, not completed samples. Synthetic tests, internal reviews and the concept visualization are not user evidence.
+
+![90-day implementation ledger linking accountability, output, cost, release guidance and stop conditions](assets/figures/implementation-ledger.en.png)
+
+The first-pilot design-control envelope is **RMB 0.98–1.84 million**: research/co-design RMB 150–250k; staffed service and training RMB 180–300k; reversible structures/furniture RMB 250–500k; accessibility/wayfinding RMB 150–300k; testing/data security RMB 120–250k; plus about RMB 130–240k contingency at 15%. This is an **order-of-magnitude concept assumption**, not a quote, fiscal budget or investment commitment. Decision requires official scope, quantities, a site survey, procurement route and at least two quotations per item [assumption:A-COST-ENVELOPE-001]. A 10% / 25% / 25% / 25% / 15% evidence-linked resource-release sequence is recommended for G0–G4; the implementing entity must determine lawful contractual payment terms.
+
+Phasing follows a small, reversible and operations-first discipline. Phase 1 funds problem research, staffed service, accessibility, safety and the evidence system. Phase 2 introduces equipment and spatial retrofit only after the first gates. Phase 3 expands only services that have been genuinely reused. Budgets must record category, quantity basis, price source, range and approval state. The RMB 0.98–1.84 million range supports first-pilot option comparison only; it is not extrapolated to a whole-belt investment or a fiscal commitment [depth:phasing_implementation].
 
 The annual rhythm supports the workflow rather than standalone events: publish city problem orders in spring, run product-readiness challenges in summer, host a real-user first-use week in autumn, and publish the failure, reuse and exit ledger in winter.
 

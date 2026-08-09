@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v3.0 - 2026-08-10
+
+- Added reviewable concept-study modules for Zhongzhiyuan, AI Origin and Dazhongsi with dimensions, plan/section relationships, program quantities, ordinary public routes and explicit stop conditions.
+- Added an original, clearly labelled non-built First-Use Commons visualization showing an accessible ordinary route, an optional AI route, a staffed human/appeal desk and a mixed first-user table.
+- Added a machine-readable field-validation protocol with three baseline tasks, twelve fixed interview questions, consent/data rules and a no-results-yet claim boundary.
+- Added a 90-day responsibility and evidence-release ledger with accountable roles, required outputs, acceptance/stop rules and a CNY 0.98-1.84 million concept control envelope that is explicitly not a quote or fiscal commitment.
+- Expanded the offline bilingual visual index, the A3 booklet from 11 to 16 pages and the A0 set from 4 to 7 boards.
+- Rendered and inspected the updated bilingual PDFs, then corrected an English ledger-column shift and title collision found during visual QA.
+
 ## v2.0 - 2026-08-10
 
 - Upgraded the submission from a compliance-complete package to a selection-oriented proposal with a clearer central argument: the belt is an adoption infrastructure rather than another AI showcase corridor.
