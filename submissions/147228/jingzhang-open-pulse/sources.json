@@ -1278,6 +1278,89 @@
       ],
       "license_or_reuse_terms": "Official public HTML; this package only transcribes attributed facts and does not redistribute the page.",
       "collection_method": "Official HTML fetched and checked on 2026-08-09; event scale and service-need categories were recorded from the article."
+    },
+    {
+      "id": "BUILD-PROVENANCE-OPEN-PULSE",
+      "path": "visual/assets/copyright-ledger.json",
+      "source_type": "package_build_provenance",
+      "usage": "Package-local asset authorship, source inputs, licence scope and SHA-256 ledger; used to make the evidence chain visible to review input, not as a legal clearance certificate.",
+      "title": "Open Pulse Build Provenance Ledger",
+      "publisher": "许丙南 / Codex package worktree",
+      "accessed_date": "2026-08-09",
+      "authority_level": "self_declared_package",
+      "evidence_class": "build_toolchain",
+      "usable_for": [
+        "Tracing each submitted asset to its package-local author, inputs, licence boundary and hash",
+        "Checking that the package does not represent a self-generated asset ledger as a third-party licence"
+      ],
+      "not_usable_for": [
+        "Legal advice, trademark registration, font licensing or government approval",
+        "Reproducing a missing generation script or proving field performance"
+      ],
+      "license_or_reuse_terms": "Self-declared package provenance record; COMMUNITY-DISPLAY-ONLY remains a repository enum, not a standard licence.",
+      "collection_method": "Package-local readback of copyright-ledger.json, manifest.json and the submitted asset tree on 2026-08-09."
+    },
+    {
+      "id": "PDF-OUTPUT-PROFILE-OPEN-PULSE",
+      "path": "drawings/a3-booklet.pdf",
+      "source_type": "package_artifact_profile",
+      "usage": "Package-local output profile: the A3 booklet is 10 pages at A3 size and the paired A0 board file is 3 pages at A0 size; metadata is an audit aid, not a print or publication approval.",
+      "title": "Open Pulse Drawing Output Profile",
+      "publisher": "许丙南 / Codex package worktree",
+      "accessed_date": "2026-08-09",
+      "authority_level": "self_declared_package",
+      "evidence_class": "build_toolchain",
+      "usable_for": [
+        "Checking page count, declared paper size, author metadata and absence of PDF JavaScript/encryption in the submitted profile"
+      ],
+      "not_usable_for": [
+        "Print-production certification, font-embedding certification or professional publication approval",
+        "Official geometry, construction detail or implementation evidence"
+      ],
+      "license_or_reuse_terms": "Self-generated package output; source inputs and asset rights remain governed by the package ledger and sources.json.",
+      "collection_method": "Package-local pdfinfo readback of drawings/a3-booklet.pdf and drawings/a0-boards.pdf on 2026-08-09."
+    },
+    {
+      "id": "FONT-RENDERING-BOUNDARY-OPEN-PULSE",
+      "path": "report/copyright_statement.md",
+      "source_type": "package_rights_boundary",
+      "usage": "Local system fonts may be used by the renderer for CJK text, while no font file or font licence is redistributed; this is a use boundary and a prompt for publication-time verification, not a claim that every reader embeds or displays CJK glyphs.",
+      "title": "Open Pulse Font Rendering Boundary",
+      "publisher": "许丙南 / Codex package worktree",
+      "accessed_date": "2026-08-09",
+      "authority_level": "self_declared_package",
+      "evidence_class": "build_toolchain",
+      "usable_for": [
+        "Disclosing the font-material boundary visible to a reviewer",
+        "Triggering a later font-embedding and licensed-publication check before formal print release"
+      ],
+      "not_usable_for": [
+        "A font licence, a type-foundry permission or a guarantee of CJK rendering on every reader",
+        "A claim that the package is ready for commercial publication"
+      ],
+      "license_or_reuse_terms": "No font file is redistributed in this package; local renderer fonts remain outside the package licence claim.",
+      "collection_method": "Cross-read of report/copyright_statement.md, visual/assets/copyright-ledger.json and rendered PDF/HTML outputs on 2026-08-09."
+    },
+    {
+      "id": "VALIDATION-TRACE-OPEN-PULSE",
+      "path": "self_check.json",
+      "source_type": "package_validation_trace",
+      "usage": "Persisted exact-package validation trace linking deterministic, spatial, visual and professional checks to the current package; local PASS does not substitute for trusted CI or official Review Agent scoring.",
+      "title": "Open Pulse Validation Trace",
+      "publisher": "许丙南 / Codex package worktree",
+      "accessed_date": "2026-08-09",
+      "authority_level": "self_declared_package",
+      "evidence_class": "build_toolchain",
+      "usable_for": [
+        "Replaying the package-integrity gates and reading their exact warning boundary",
+        "Separating package validation evidence from official score, gallery publication and government endorsement"
+      ],
+      "not_usable_for": [
+        "Official Review Agent score, human jury decision or gallery publication",
+        "Field measurement, construction approval, procurement or deployment evidence"
+      ],
+      "license_or_reuse_terms": "Package-local validation record; repository scripts and external runtime licences remain governed by their own terms.",
+      "collection_method": "Exact package readback after the latest metadata and evidence revisions on 2026-08-09."
     }
   ]
 }

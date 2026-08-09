@@ -29,7 +29,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 公共利益 | 居民、老幼残障、照护者、夜班劳动者、游客、商户、开发者和维护者都有普通路径；纸面、人工、无账号服务不可被 AI 替代。 | persona-and-inclusion-matrix.json、public-interest-audit.json |
 | 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护、保险、网络隔离、雨洪公平或接管证据不足就停在概念层。 | sources.json、risk.json、visual/assets/operational-assurance-contract.json、v2-evidence-gate-index.json |
 | 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
-| 资料登记完整度 | 正文 63 个唯一 source ID 与包内 `sources.json` 的 63 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
+| 资料登记完整度 | 正文 67 个唯一 source ID 与包内 `sources.json` 的 67 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，另有 4 条 package build-toolchain 记录，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
 
 ## v3.3 三处重点区：空间动作先于技术名词
 
@@ -66,7 +66,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
-- 当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条；包内 sources.json 共登记 63 条来源。
+- 当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条，package build-toolchain 记录 4 条；包内 sources.json 共登记 67 条来源。
 - agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
 
 ### 行政尺度数据基线：只校准问题，不分配空间
@@ -519,6 +519,14 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 ### 4. 版权、隐私与公共利益清权
 
 `report/copyright_statement.md` 从短声明升级为可审计协议，`visual/assets/copyright-ledger.json` 逐项记录路径、作者、生成方式、输入来源、第三方材料、许可、归属、字体处理和 SHA-256。文本、几何、图件、离线 HTML 和 JSON 由许丙南 / Codex 在提交工作树中创作或派生；官方统计资料保留来源署名；不嵌入第三方图片、地图、远程字体或运行时外链。未来新增素材必须先登记授权和哈希；该台账是提交证据，不是法律意见。
+
+#### 4.1 权利与构建溯源：评审输入中的逐项边界
+
+这份清权和构建记录不只放在评审不会直接读取的版权声明文件中，而是把可复核事实写进本段与 `sources.json`。资产级作者、输入、许可边界和 SHA-256 回到 `[source:BUILD-PROVENANCE-OPEN-PULSE]`；它是自述的包内溯源，不是第三方授权或法律意见。
+
+- **图纸输出：** `drawings/a3-booklet.pdf` 实测为 10 页 A3，`drawings/a0-boards.pdf` 为 3 页 A0；两者的作者元数据指向本包，未声明打印认证、字体许可或政府出版批准。[source:PDF-OUTPUT-PROFILE-OPEN-PULSE]
+- **字体边界：** CJK 文本仅由渲染环境的本地系统字体服务，本包不再分发字体文件或把本地字体写成已取得的字体许可；正式出版前仍需重新核验字体嵌入、阅读器显示和获授权字体。[source:FONT-RENDERING-BOUNDARY-OPEN-PULSE]
+- **生成与复核：** 文字、GeoJSON、指标、图件、离线 HTML 和 PDF 是本提交工作树中作者/派生产物；manifest 与台账的哈希可由包内文件直接复算，`self_check.json` 只记录包完整性，不声称随包提供生成脚本、现场结果或官方评分。[source:VALIDATION-TRACE-OPEN-PULSE]
 
 隐私和公共性不靠一句“以人为本”收尾：场景不做人脸识别或个体轨迹留存，医疗导航不诊断，数据展示留在沙盒，公共状态板给出人工等价服务和投诉入口；老人、照护者、夜班者、残障者、访客和维护人员均有不依赖 App 的路径。发生安全、清权、排水、无障碍或居民影响闸门失败时，场景转人工或撤回。
 

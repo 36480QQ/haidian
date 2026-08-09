@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "eeb000a12d0efa8aff4bdd3fec8ba7c3331f703adbd8192597d246564b4c18e6"
+      "sha256": "4c6a2fd95684f8517fee68329d4f5374c628276a342c5cbc046e442c1d562b07"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d50150997ca3016b58d69baa008a87de6089aa5cba1a4112569827ac8b778fef"
+      "sha256": "6affc17f758eb9ea20857d73f0dcab8adea47512012f60f5360058c9b559b1d6"
     },
     {
       "path": "agent.json",
@@ -58,13 +58,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "b4e2463854b193716ed787ae9e724d8f499e81d113b53a76e827afecb0913b19"
+      "sha256": "9bddb0e5ee0ff398675125e0b81d29c8b84a42abadc8b9f158888e389f0e5d84"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9812b5253f7238fc9748694b2717c6bade60314a00bbbea59e6db324180c0d78"
+      "sha256": "a483281fc92ca1cb911c58ae79348a9c17b97eecb12260b9d03c31e1ba77b1e5"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a9edab155f2b727649ab8ab9358ebc2117b7d4d07e0dafb4f6465945c5c69574"
+      "sha256": "951103aa5578a72854e1dddbfee4690a81c4168fe7e0e30cb76b35e0e57b26b8"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a6e767c0de80c2f6b0e8aa8b35ceba10aa91df378e3b859b25b941e650c4bf6f"
+      "sha256": "4bc100d77f26509fc6721899441ef9c4747cd5c5966221a54e31875ddaf2a3d9"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "04e117a95783dcb26e08048c6167f72ec8d70ad047343707f0896d57f08d0937"
+      "sha256": "6c7afa19c1bb667e4aa6ada4c3cb24942f91667b569c882ecac00021a04e2f54"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -446,7 +446,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "e0c779607f3f104660b3eb6d788e3a253dc77ec0f368afdb8ec4f5b337998477"
+      "sha256": "d5238a79943503869a1fe4f8d237bda5091ee2d4c81f5234973f78c9e2df5cbd"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
