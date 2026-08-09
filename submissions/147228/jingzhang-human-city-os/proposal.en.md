@@ -6,17 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.8"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v0.8 turns the Zhongguancun technology-service wing into a traceable scenario, adds three reproducible conceptual spatial trade-offs, and registers pre-authorization baseline, sample, success/stop, human-fallback, accountability, review, and deletion fields for six test scenarios; provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v0.9"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v0.9 adds a three-case, six-gate synthetic human-city handoff receipt and a trade-off replay with four objective lenses and non-dominance checks without changing geometry or formal metrics, while retaining the pre-authorization readiness ledger for six test scenarios. It separately maps the taskbook's thirteen unified review dimensions and the repository formal scorecard's seven workflow questions to the same in-package evidence; provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v0.9: Turn conceptual actions into a replayable handoff receipt
+
+This iteration adds `HUMAN-CITY-RECEIPT-0.1`, a synthetic human-city handoff receipt. It records six H0-H5 gates for problem and boundary, data and choice, human accountability, bounded synthetic rehearsal, independent replay, and version exit. Three synthetic cases cover human channels and older residents, reskilling and workers at substitution risk, and the technology-service wing for small teams. [data:visual/assets/human-city-receipt.json] [data:visual/assets/human-city-receipt-evidence.json]
+
+The network-free `run-human-city-receipt.js` checks 3/3 cases, 6/6 handoff gates, 6/6 spatial references, an equivalent human path, and no-write replay fields. Negative samples missing the human alternative or spatial anchor must fail. The receipt proves only that synthetic structure and stop conditions can be replayed; it is not evidence of real operations, staffing, permits, safety, performance, or public outcomes. [data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
 
 ## v0.8: Make the technology-service wing and spatial trade-offs reviewable
 
 This iteration places the taskbook's **Zhongguancun technology-service wing** in `SC-D04`, the “factor configuration desk.” It links intellectual-property, compliance, data authorization, and cross-region application transfer for one-person companies, small teams, research teams, and Beijing-Tianjin-Hebei application partners. The card and space–operation matrix retain staffed advice, paper materials, authorization-chain checks, conflict disclosure, and a freeze condition. No institution, capital provider, or signed agreement is named. [source:AGENT-TASKBOOK] [data:geometry/constraints.geojson#ZONE-C-DATA] [data:geometry/public_space.geojson#PUBLIC-D-GLOBAL] [depth:overall_spatial_structure]
 
-The parametric study takes the current six-band conceptual allocation as a baseline and compares three transparent parameter sets: people-first, balanced, and machine-ready. `visual/assets/run-parametric-tradeoff-study.js` checks share sums, area formulas, and the return of the baseline to `LU-H01` and `LU-B01`; formal `metrics.json`, geometry, drawings, and release state remain unchanged. Figure 11 makes the trade-off between community retention, learning, reversible space, city API, and resilience visible. Professional teams can replace the inputs once official boundaries, controls, rights, mobility, municipal, energy, and public baselines are available. [data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout] [depth:metrics_recalculation]
+The parametric study takes the current six-band conceptual allocation as a baseline and compares three transparent parameter sets: people-first, balanced, and machine-ready. `visual/assets/run-parametric-tradeoff-study.js` checks share sums, area formulas, baseline reconnection, four objective lenses, comparison floors, and a non-dominance condition; formal `metrics.json`, geometry, drawings, and release state remain unchanged. Figure 11 makes the trade-off between community retention, learning, reversible space, city API, and resilience visible. Professional teams can replace the inputs once official boundaries, controls, rights, mobility, municipal, energy, and public baselines are available. [data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout] [depth:metrics_recalculation]
 
 ![Figure 11 | Three conceptual spatial trade-offs: baseline, people-first, and machine-ready](assets/figures/parametric-tradeoff-study.en.png)
 
@@ -288,6 +294,8 @@ Three pilgrimage landmarks make the operating philosophy visible. The Human Rele
 
 Implementation uses three city releases instead of a single completion date. Release v0.1 establishes baselines, a public issue list, and the minimum human-service guarantee. Release v0.2 conducts reversible pilots, independent evaluation, and incident drills. Release v1.0 expands only projects that pass public-interest, energy, climate, accessibility, and reversibility reviews. The three geometries cover the provisional site as governance responsibility zones, not as promised development timing. [data:geometry/phasing.geojson#PHASE-V02] [metric:version_release_count] [depth:phasing_implementation]
 
+Before a suggested project enters its next gate, it leaves a synthetic human-city handoff receipt. H0 hands a problem from community observation to data and spatial review; H1 confirms an equivalent human entrance; H2 checks minimum fields and revocation; H3 reviews energy, climate, mobility, and safety evidence; H4 performs independent replay and opens an objection window; H5 records version differences and exit. The three cases are synthetic fixtures and the roles are abstract suggestions. They make who takes over, what permits acceptance, when to stop, and how to return to the previous gate queryable without presenting a suggested role as a real operator. [data:visual/assets/human-city-receipt.json] [data:visual/assets/implementation-operation-matrix.json]
+
 | Project | Release | Prerequisite | Stop or rollback condition |
 | --- | --- | --- | --- |
 | Community-retention baseline and return protocol | v0.1 | Resident consent, eligibility, and privacy rules | Do not publish a rate if a credible baseline cannot be formed |
@@ -305,7 +313,7 @@ Implementation uses three city releases instead of a single completion date. Rel
 
 The core governance artifact is the release note. It records additions, changes, withdrawals, incidents, public objections, data permissions, and the next release's gates. The annual health check reviews space together with resident retention, job transition, energy, climate, data, and human channels. The public can file issues, and the maintenance team must answer “accept,” “test,” “reject,” or “await evidence,” with reasons. [depth:renewal_project_list] [depth:phasing_implementation]
 
-To avoid treating display as an upgrade, v0.2 added entry, advance, and exit gates to the three conceptual phase polygons, with the then-complete ledger of sixteen scenario cards as offline structured attachments; v0.8 adds SC-D04, bringing the current registry to seventeen cards. They require human takeover, authorization, insurance, metering, calibration, accessibility, and public review to be prerequisites instead of allowing any one technical effect to justify expansion. [data:geometry/phasing.geojson#PHASE-V02] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+To avoid treating display as an upgrade, v0.2 added entry, advance, and exit gates to the three conceptual phase polygons, with the then-complete ledger of sixteen scenario cards as offline structured attachments; v0.8 adds SC-D04 and v0.9 adds the handoff receipt, bringing the current registry to seventeen cards. They require human takeover, authorization, insurance, metering, calibration, accessibility, and public review to be prerequisites instead of allowing any one technical effect to justify expansion. [data:geometry/phasing.geojson#PHASE-V02] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
 ![Figure 06 | City release gates and scenario exit evidence](assets/figures/release-gates.en.png)
 

@@ -31,6 +31,34 @@ check('BASELINE_HUMAN_MATCH', Math.abs(study.baseline_reproduction.shares.human_
 check('BASELINE_REVERSIBLE_MATCH', Math.abs(study.baseline_reproduction.shares.reversible_meanwhile - metrics.reversible_space_ratio.value) <= 1e-6, 'LU-B01 share returns to the current metric');
 check('VARIANT_COUNT', study.variants.length === 3, `variants=${study.variants.length}`);
 check('BOUNDARY_DECLARED', study.status === 'conceptual_scenario_study' && study.confidence === 'low', `status=${study.status}; confidence=${study.confidence}`);
+const objectiveFns = {
+  human_floor: (s) => 0.5 * s.human_community + 0.3 * s.learning_data + 0.2 * s.reversible_meanwhile,
+  machine_callability: (s) => s.api_embodied + 0.5 * s.learning_data + 0.5 * s.international_opc,
+  reversible_resilience: (s) => s.reversible_meanwhile + s.green_resilience,
+  public_access: (s) => s.human_community + 0.4 * s.international_opc + 0.3 * s.green_resilience
+};
+const objectiveIds = (study.objective_lenses || []).map((lens) => lens.objective_id);
+check('OBJECTIVE_LENS_COUNT', objectiveIds.length === 4 && objectiveIds.every((id) => typeof objectiveFns[id] === 'function'), `lenses=${objectiveIds.join(',')}`);
+for (const variant of study.variants) {
+  for (const lens of study.objective_lenses || []) {
+    const expected = objectiveFns[lens.objective_id]?.(variant.shares);
+    const actual = variant.objective_scores?.[lens.objective_id];
+    check(`${variant.variant_id}_${lens.objective_id}_OBJECTIVE`, Number.isFinite(expected) && Math.abs(expected - actual) <= 1e-6, `expected=${expected?.toFixed(6)}; actual=${actual}`);
+    check(`${variant.variant_id}_${lens.objective_id}_FLOOR`, actual >= lens.minimum_comparison_floor, `score=${actual}; floor=${lens.minimum_comparison_floor}`);
+  }
+}
+function dominates(a, b) {
+  const scoresA = a.objective_scores || {};
+  const scoresB = b.objective_scores || {};
+  const allAtLeast = objectiveIds.every((id) => scoresA[id] >= scoresB[id]);
+  const oneHigher = objectiveIds.some((id) => scoresA[id] > scoresB[id]);
+  return allAtLeast && oneHigher;
+}
+const dominatedPairs = [];
+for (const a of study.variants) for (const b of study.variants) {
+  if (a.variant_id !== b.variant_id && dominates(a, b)) dominatedPairs.push(`${a.variant_id}>${b.variant_id}`);
+}
+check('PARETO_NON_DOMINATED', dominatedPairs.length === 0, dominatedPairs.length ? dominatedPairs.join(',') : 'all three candidates remain non-dominated across four lenses');
 
 const evidence = {
   schema_version: '0.1.0',
@@ -38,9 +66,11 @@ const evidence = {
   status: ok ? 'PASS' : 'FAIL',
   checks,
   variant_count: study.variants.length,
+  objective_lens_count: objectiveIds.length,
+  pareto_status: dominatedPairs.length === 0 ? 'all_non_dominated' : 'dominated_candidate_found',
   formal_metric_change: false,
-  interpretation_zh: 'PASS 只证明参数和面积公式可复算、基线可回接；不证明任何候选已获推荐、批准或具备实施条件。',
-  interpretation_en: 'PASS proves only that parameters and area formulas replay and the baseline reconnects; it does not recommend, approve, or establish implementation readiness for any variant.'
+  interpretation_zh: 'PASS 只证明参数、面积公式、四个比较镜头和非支配关系可复算、基线可回接；不证明任何候选已获推荐、批准或具备实施条件。',
+  interpretation_en: 'PASS proves only that parameters, area formulas, four comparison lenses, and non-dominance replay and the baseline reconnects; it does not recommend, approve, or establish implementation readiness for any variant.'
 };
 fs.writeFileSync(path.join(here, 'parametric-tradeoff-study-evidence.json'), JSON.stringify(evidence, null, 2) + '\n');
 console.log(JSON.stringify(evidence, null, 2));

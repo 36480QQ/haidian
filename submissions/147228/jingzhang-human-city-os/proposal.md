@@ -6,11 +6,17 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.8"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v0.8 把中关村科技服务翼落成可回接的场景卡，加入三组可复算的概念空间取舍，并为 6 个测试类场景登记授权前的基线、样本、成功/停止条件、人工替代、责任、复核和删除证明；临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v0.9"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v0.9 在不改动几何和正式指标的前提下，新增三案例、六道门的合成人本交接凭证，以及带四个目标镜头和非支配检查的空间取舍推演，并保留 6 个测试类场景的授权前准备度台账；任务书 13 项统一评审维度与仓库 formal scorecard 的 7 项工作流问题分开映射到同一组包内证据，既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v0.9：把概念动作交接成可回放凭证
+
+本轮新增 `HUMAN-CITY-RECEIPT-0.1` 合成人本交接凭证：它把问题与边界、资料与选择、人类责任、受限合成演练、独立回放和版本退出六道 H0-H5 门写成同一条可复核链；三条合成案例分别覆盖人工通道与老人、技能再造与被替代风险劳动者、科技服务翼与小团队。[data:visual/assets/human-city-receipt.json] [data:visual/assets/human-city-receipt-evidence.json]
+
+`run-human-city-receipt.js` 在无网络、无个人数据、无外部系统条件下检查 3/3 案例、6/6 交接门、6/6 空间引用、等效人工路径与不可写回字段；缺少人工替代或空间锚点的负样本必须失败。凭证只证明合成结构和停止条件可回放，不证明现实运营、人员值守、许可、安全、绩效或公众结果。[data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
 
 ## v0.8：把科技服务翼和空间取舍变成可复核证据
 
@@ -18,7 +24,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 该场景在总体空间结构中的位置见 [depth:overall_spatial_structure]。
 
-参数化推演把当前六层概念功能带作为基线，再比较“人本优先、平衡、机器协同”三组面积参数。`visual/assets/run-parametric-tradeoff-study.js` 检查六个 share 的和、面积公式和基线回接；三组面积仅为概念候选，正式 `metrics.json`、几何、图纸和发布状态均不变。图 11 让评审者直接看到社区保留、技能学习、可逆留白、城市 API 与韧性空间之间的取舍，后续专业团队可用官方边界、控规、权属、交通、市政、能源和公众基线替换输入后再研究。[data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout]
+参数化推演把当前六层概念功能带作为基线，再比较“人本优先、平衡、机器协同”三组面积参数。`visual/assets/run-parametric-tradeoff-study.js` 检查六个 share 的和、面积公式、基线回接，以及人本底线、机器可调用性、可逆韧性、公共可达四个目标镜头的比较下限和非支配关系；三组面积仅为概念候选，正式 `metrics.json`、几何、图纸和发布状态均不变。图 11 让评审者直接看到社区保留、技能学习、可逆留白、城市 API 与韧性空间之间的取舍，后续专业团队可用官方边界、控规、权属、交通、市政、能源和公众基线替换输入后再研究。[data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout]
 
 参数化研究的深度复核见 [depth:metrics_recalculation]。
 
@@ -295,6 +301,8 @@ v0.2 将这 17 张卡从目录升级为可审阅场景卡：每张卡都连接�
 
 项目采用三次城市 release，而不是一次建成：v0.1 建立基线、公众问题清单和人工服务底线；v0.2 开展可逆小试、独立评估和事故演练；v1.0 只扩展通过公共利益、能源、气候、无障碍和可回滚审查的项目。三个阶段完整覆盖临时边界，用于治理责任分区而非开发时序承诺。[data:geometry/phasing.geojson#PHASE-V02] [metric:version_release_count] [depth:phasing_implementation]
 
+每个建议项目在进入下一道门前都要留下合成人本交接凭证：H0 由问题观察交给资料与空间审阅，H1 确认等效人工入口，H2 核对最小字段与撤销，H3 检查能源、气候、交通和安全资料，H4 独立回放并开放异议，H5 记录版本差异和退出。三案例只是合成夹具，角色是抽象建议角色；它们把“谁接手、凭什么接受、何时停止、如何回到上一门”变成可查字段，不把建议角色写成现实运营方。[data:visual/assets/human-city-receipt.json] [data:visual/assets/implementation-operation-matrix.json]
+
 | 项目 | 版本 | 前置条件 | 停止/回滚条件 |
 | --- | --- | --- | --- |
 | 社区保留基线与回迁协议 | v0.1 | 居民同意、资格和隐私规则 | 无法形成可信基线则不发布比例 |
@@ -312,7 +320,7 @@ v0.2 将这 17 张卡从目录升级为可审阅场景卡：每张卡都连接�
 
 版本治理的核心文件是 release note：列出新增、改变、撤回、事故、公众异议、数据权限和下一版本门槛。年度体检既看空间，也看居民保留、岗位转型、能源、气候、数据和人工通道。公众可以提交 issue，维护团队必须回复“接受、试验、拒绝或待资料”并说明证据。[depth:renewal_project_list] [depth:phasing_implementation]
 
-为避免“展示即升级”，本次 v0.2 将三处概念分期面补入进入门、推进门、退出门，并把当时的 16 张场景卡作为离线结构化附件；v0.8 再增加 SC-D04，当前完整台账为 17 张卡。它们要求把人工接管、授权、保险、计量、校准、无障碍和公众复核写成前提，而不是把任何单一技术效果当作扩区理由。[data:geometry/phasing.geojson#PHASE-V02] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+为避免“展示即升级”，本次 v0.2 将三处概念分期面补入进入门、推进门、退出门，并把当时的 16 张场景卡作为离线结构化附件；v0.8 再增加 SC-D04，v0.9 再补交接凭证，当前完整台账为 17 张卡。它们要求把人工接管、授权、保险、计量、校准、无障碍和公众复核写成前提，而不是把任何单一技术效果当作扩区理由。[data:geometry/phasing.geojson#PHASE-V02] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
 ![图 06｜城市发布门与场景退出证据](assets/figures/release-gates.png)
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "0.2.0",
-  "package_iteration": "v0.8",
+  "package_iteration": "v0.9",
   "status": "conceptual_display_evidence_not_official_survey",
-  "purpose_zh": "记录 v0.8 双语空间图、资料就绪图、空间接口原型、人本验收图谱、参数化取舍图、评审证据地图与图册的派生方法，使临时空间证据和阅读路径在不升级为官方边界、法定控制、评分结论或实施结论的前提下可读、可复核。",
-  "purpose_en": "Records how v0.8 bilingual spatial figures, data-readiness figure, spatial-interface prototypes, human-city acceptance atlas, parametric trade-off figure, review-evidence map, and drawing sets are derived, making provisional spatial evidence and reading paths legible and reviewable without upgrading them into an official boundary, statutory control, scoring finding, or implementation conclusion.",
+  "purpose_zh": "记录 v0.9 双语空间图、资料就绪图、空间接口原型、人本验收图谱、参数化取舍图、合成人本交接凭证、评审证据地图与图册的派生方法，使临时空间证据和阅读路径在不升级为官方边界、法定控制、评分结论或实施结论的前提下可读、可复核。",
+  "purpose_en": "Records how v0.9 bilingual spatial figures, data-readiness figure, spatial-interface prototypes, human-city acceptance atlas, parametric trade-off figure, synthetic human-city receipt, review-evidence map, and drawing sets are derived, making provisional spatial evidence and reading paths legible and reviewable without upgrading them into an official boundary, statutory control, scoring finding, or implementation conclusion.",
   "inputs": {
     "geometry_files": [
       "geometry/site_boundary.geojson",
@@ -24,13 +24,16 @@
       "visual/assets/reviewer-navigation-index.json",
       "visual/assets/reviewer-navigation-audit.json",
       "visual/assets/parametric-tradeoff-study.json",
-      "visual/assets/parametric-tradeoff-study-evidence.json"
+      "visual/assets/parametric-tradeoff-study-evidence.json",
+      "visual/assets/human-city-receipt.json",
+      "visual/assets/human-city-receipt-evidence.json",
+      "visual/assets/run-human-city-receipt.js"
     ],
     "source_boundary": "All input geometries retain the package's provisional-geometry status. Their display does not establish an official redline, parcel, road alignment, blue line, construction boundary, or legal area."
   },
   "coordinate_and_display_method": {
     "metric_crs": "EPSG:4548",
-      "metric_rule": "Known areas and proportions remain those recomputed from the package GeoJSON in EPSG:4548; v0.8 does not alter coordinate values, metric values, confidence, assumptions, or unknown results.",
+      "metric_rule": "Known areas and proportions remain those recomputed from the package GeoJSON in EPSG:4548; v0.9 does not alter coordinate values, metric values, confidence, assumptions, or unknown results.",
     "display_transform": "For legibility only, projected east/north coordinates are displayed after a 90-degree clockwise rotation. Original north therefore points to the right and is explicitly labelled as N → / 北 → in the figures.",
     "scale_rule": "The 0–2 km scale bars describe only the submitted provisional geometry after its display transform. They are not a survey, legal, engineering, or official control scale.",
     "shared_geometry_rule": "Each figure reads the same source coordinates directly; no hand-drawn substitute boundary, parcel, line alignment, or numeric value is introduced."
@@ -106,7 +109,7 @@
         "assets/figures/parametric-tradeoff-study.png",
         "assets/figures/parametric-tradeoff-study.en.png"
       ],
-      "evidence": "A replayable comparison of the current six-band conceptual allocation with people-first, balanced, and machine-ready parameter sets. Shares sum to one and return to the current baseline metrics; the study is a conceptual comparison and does not alter formal geometry, metrics, approval, or implementation claims."
+      "evidence": "A replayable comparison of the current six-band conceptual allocation with people-first, balanced, and machine-ready parameter sets. Four objective lenses check floors and non-dominance; shares sum to one and return to the current baseline metrics. The study is a conceptual comparison and does not alter formal geometry, metrics, approval, or implementation claims."
     }
   ],
   "drawing_outputs": [

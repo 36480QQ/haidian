@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "package_iteration": "v0.8",
+  "package_iteration": "v0.9",
   "status": "conceptual_scenario_study",
   "title_zh": "人本优先、平衡与机器协同三组空间取舍",
   "title_en": "People-first, balanced, and machine-ready spatial trade-offs",
@@ -35,12 +35,20 @@
     },
     "checks_against_metrics": ["community_retention_support_area_ratio", "reversible_space_ratio", "design_partition_area_sqm"]
   },
+  "objective_lenses": [
+    {"objective_id": "human_floor", "label_zh": "人本底线", "formula": "0.5*human_community + 0.3*learning_data + 0.2*reversible_meanwhile", "minimum_comparison_floor": 0.13, "interpretation_zh": "比较人工服务、技能学习和可逆空间的组合权重，不代表居民结果。"},
+    {"objective_id": "machine_callability", "label_zh": "机器可调用性", "formula": "api_embodied + 0.5*learning_data + 0.5*international_opc", "minimum_comparison_floor": 0.25, "interpretation_zh": "比较城市 API、具身研发、学习和服务接口的组合权重，不代表部署能力。"},
+    {"objective_id": "reversible_resilience", "label_zh": "可逆与韧性", "formula": "reversible_meanwhile + green_resilience", "minimum_comparison_floor": 0.24, "interpretation_zh": "比较 meanwhile use、退出留白和无屏韧性空间的组合权重，不代表气候绩效。"},
+    {"objective_id": "public_access", "label_zh": "公共可达", "formula": "human_community + 0.4*international_opc + 0.3*green_resilience", "minimum_comparison_floor": 0.25, "interpretation_zh": "比较社区、国际服务和绿地的空间代理，不代表服务覆盖率。"}
+  ],
   "variants": [
     {
       "variant_id": "people_first",
       "label_zh": "人本优先候选",
       "shares": {"human_community": 0.24, "international_opc": 0.18, "learning_data": 0.18, "reversible_meanwhile": 0.18, "api_embodied": 0.11, "green_resilience": 0.11},
       "derived_area_sqm": {"human_community": 2739078.093, "international_opc": 2054308.569, "learning_data": 2054308.569, "reversible_meanwhile": 2054308.569, "api_embodied": 1255410.792, "green_resilience": 1255410.792},
+      "objective_scores": {"human_floor": 0.21, "machine_callability": 0.29, "reversible_resilience": 0.29, "public_access": 0.345},
+      "pareto_note_zh": "相对三项其他候选，人本底线、可逆韧性和公共可达更高，机器可调用性较低；保留为非支配比较候选。",
       "tradeoff_notes_zh": "提高社区保留、技能学习和可逆留白的讨论权重；相应压缩 API 与无屏绿地的参数空间，需由公共利益、气候和能源资料共同复核。",
       "decision_gate_zh": "仅在居民与劳动者基线、绿地与能源约束、权属和服务责任均补齐后进入专业比较。"
     },
@@ -49,6 +57,8 @@
       "label_zh": "平衡候选",
       "shares": {"human_community": 0.2, "international_opc": 0.18, "learning_data": 0.17, "reversible_meanwhile": 0.16, "api_embodied": 0.15, "green_resilience": 0.14},
       "derived_area_sqm": {"human_community": 2282565.077, "international_opc": 2054308.569, "learning_data": 1940180.315, "reversible_meanwhile": 1826052.062, "api_embodied": 1711923.808, "green_resilience": 1597795.554},
+      "objective_scores": {"human_floor": 0.183, "machine_callability": 0.325, "reversible_resilience": 0.3, "public_access": 0.314},
+      "pareto_note_zh": "在四个比较镜头之间保持中位关系；不支配人本优先或机器协同，保留为非支配比较候选。",
       "tradeoff_notes_zh": "在社区、学习、可逆空间、API 和韧性之间保持中位参数；适合作为下一轮专业团队校准的比较基线，不表示推荐方案。",
       "decision_gate_zh": "需先完成官方边界、控规、权属、现状建筑、交通、市政、蓝线与公众走读，再讨论是否保留该参数组。"
     },
@@ -57,6 +67,8 @@
       "label_zh": "机器协同候选",
       "shares": {"human_community": 0.14, "international_opc": 0.17, "learning_data": 0.15, "reversible_meanwhile": 0.1, "api_embodied": 0.29, "green_resilience": 0.15},
       "derived_area_sqm": {"human_community": 1597795.554, "international_opc": 1940180.315, "learning_data": 1711923.808, "reversible_meanwhile": 1141282.539, "api_embodied": 3309719.362, "green_resilience": 1711923.808},
+      "objective_scores": {"human_floor": 0.135, "machine_callability": 0.45, "reversible_resilience": 0.25, "public_access": 0.253},
+      "pareto_note_zh": "机器可调用性更高，但人本底线、可逆韧性和公共可达较低；保留为非支配比较候选。",
       "tradeoff_notes_zh": "提高城市 API 与具身研发的讨论权重，保留人工服务、绿地和退出空间的最低比较项；不构成算力设施、建筑规模或投资判断。",
       "decision_gate_zh": "只有在 PUE、绿电、余热、低空与机器人安全、人工等效入口、数据授权和事故保险均取得有权主体证据后，才可进入专业比较。"
     }
