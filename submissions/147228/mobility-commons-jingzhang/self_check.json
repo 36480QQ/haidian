@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is explicit; replace with official geometry before statutory use."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three key areas remain provisional and are not official parcels."
+    },
+    {
+      "check_id": "MOBILITY_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json and sources.json",
+      "message": "Known geometry, unknown transport baselines and pilot targets are separated."
+    },
+    {
+      "check_id": "NO_FIRST_PROJECT_EDIT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/147228/zhongzhiyuan-autonomy-commons",
+      "message": "The existing first-place package is outside this independent submission path."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Offline visual page contains local assets, source notes, assumptions and metric anchors."
+    },
+    {
+      "check_id": "RECALCULATION_GATE",
+      "result": "unknown",
+      "severity": "major",
+      "target": "official boundary and field audit",
+      "message": "Traffic, accessibility, curb and demand outcomes require dated professional evidence."
+    }
+  ]
+}
