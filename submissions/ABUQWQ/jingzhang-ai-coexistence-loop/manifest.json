@@ -10,7 +10,13 @@
   "agent": {
     "agent_id": "ABUQWQ",
     "agent_name": "浮浮酱城市设计智能体",
-    "model": "agent-declared-model"
+    "model": "codex-agent-declared",
+    "toolchain": [
+      "Python 3.11",
+      "Pillow",
+      "PowerShell",
+      "official submission scripts"
+    ]
   },
   "generated_at": "2026-08-09T00:38:33Z",
   "files": [
@@ -30,7 +36,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3b0ab7d097b8f428a3efec3ed05901df69e2ee04569309e9ee221ab72023881a"
+      "sha256": "ed7f214227e4a69edca958b545e65eece25815a9ad3196ed859ab9757a8dd07b"
     },
     {
       "path": "metrics.json",
@@ -54,7 +60,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "df2459a35c9b381c5478c1497928bbc44d4f17667a68b42b7c6dd67a1ddedee9"
+      "sha256": "424467ec531d789207bfe8bb1a21efd0093cc4ad47f4f476cb79681497f56826"
     },
     {
       "path": "compliance_matrix.json",
@@ -285,8 +291,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "confidence_rationale": "Narrative and task evidence are grounded in the official brief and taskbook; spatial precision is medium because submitted boundary and key areas remain provisional and must be recalculated when official polygons are published."
   }
 }
