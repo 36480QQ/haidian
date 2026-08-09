@@ -63,5 +63,284 @@
     "copyright_clearance": "completed (report/copyright_statement.md, 完整逐资产台账)",
     "bilingual": "partial (中文完整, 英文双语版P1待补)",
     "regional_synergy": "conceptual (三区两翼内部协同已完成, 北纬/未来科学城/怀柔/经开区/京津冀跨区域为P1待补)"
-  }
+  },
+  "schema_version": "0.1.0",
+  "requirements": [
+    {
+      "requirement_id": "agent.1",
+      "mandatory": true,
+      "report_sections": [
+        "overall_concept",
+        "functional_coordination"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count"
+      ],
+      "status": "completed",
+      "description": "一带总体概念与功能统筹方案设计",
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S1.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "agent.2",
+      "mandatory": true,
+      "report_sections": [
+        "ai_ecosystem",
+        "case_studies"
+      ],
+      "geojson_layers": [
+        "site_boundary"
+      ],
+      "metrics": [
+        "case_study_count"
+      ],
+      "status": "conceptual_complete",
+      "description": "全球AI创新生态案例研究",
+      "drawings": [
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S3.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "agent.3",
+      "mandatory": true,
+      "report_sections": [
+        "ai_scenarios",
+        "scenario_cards"
+      ],
+      "geojson_layers": [
+        "public_space",
+        "green_space"
+      ],
+      "metrics": [
+        "scenario_card_count",
+        "testing_scenario_count",
+        "persona_count"
+      ],
+      "status": "completed",
+      "description": "AI+场景落地设计（含12张场景卡）",
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S2.svg",
+        "visual/assets/S3.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "agent.4",
+      "mandatory": true,
+      "report_sections": [
+        "public_space",
+        "landmarks"
+      ],
+      "geojson_layers": [
+        "public_space",
+        "green_space",
+        "buildings"
+      ],
+      "metrics": [
+        "public_space_ratio",
+        "green_ratio"
+      ],
+      "status": "conceptual_complete",
+      "description": "公共空间和AI地标设计（含10组件公共空间库）",
+      "drawings": [
+        "a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S3.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "agent.5",
+      "mandatory": true,
+      "report_sections": [
+        "heritage_narrative",
+        "international_communication"
+      ],
+      "geojson_layers": [
+        "site_boundary"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "status": "conceptual_complete",
+      "description": "文化遗产叙事与国际传播",
+      "drawings": [
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S2.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "agent.6",
+      "mandatory": true,
+      "report_sections": [
+        "verification_economics",
+        "governance",
+        "activity_calendar"
+      ],
+      "geojson_layers": [
+        "phasing"
+      ],
+      "metrics": [
+        "vci",
+        "vdr",
+        "tfc"
+      ],
+      "status": "completed",
+      "description": "全球AI创新活动体系与运营机制（含四季一账本+项目责任矩阵）",
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html",
+        "visual/assets/S4.svg"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "cross_cutting.scope",
+      "mandatory": true,
+      "report_sections": [
+        "three_level_scope"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "status": "completed",
+      "description": "三层范围工作框架",
+      "drawings": [
+        "a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    },
+    {
+      "requirement_id": "cross_cutting.synergy",
+      "mandatory": true,
+      "report_sections": [
+        "regional_synergy"
+      ],
+      "geojson_layers": [
+        "site_boundary"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "status": "conceptual_complete",
+      "description": "区域创新协同矩阵（北纬/未来科学城/怀柔/经开区/京津冀）",
+      "drawings": [
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "self_check.json"
+      ]
+    }
+  ]
 }
