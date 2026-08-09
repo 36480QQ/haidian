@@ -142,6 +142,322 @@
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "分期图层为增量口径：三期互不重叠，累计实施范围为其并集，并集面积等于三期面积之和；分期按触发条件推进，不设固定年份。"
       ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/scenario_cards.json"
+      ],
+      "formula": "len(scenario_cards.cards)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 10 张；本项为实际张数，由 check_cards.js 逐卡解析验证。"
+      ]
+    },
+    "scenario_cards_operational_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/scenario_cards.json"
+      ],
+      "formula": "count(cards where operational)",
+      "confidence": "high",
+      "assumptions": [
+        "其余卡片的限差由 BM-1 的限差议事厅设定，本方案不代拟，故标记为未可运行。"
+      ]
+    },
+    "industry_test_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "len(constraints.features)",
+      "confidence": "high",
+      "assumptions": [
+        "S06 / S10 / S11，各有独立受控边界；任务书要求不少于 3 个。"
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(persona table rows P1..P9)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 5 类。"
+      ]
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "assets/figures/kit-of-parts.png"
+      ],
+      "formula": "count(L1, L2, L3)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于 3 个 AI 朝圣地标。"
+      ]
+    },
+    "case_study_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "sources.json"
+      ],
+      "formula": "count(C1..C6 rows)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求 5–8 个全球案例；逐案来源登记于 sources.json。"
+      ]
+    },
+    "renewal_project_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(R1..R8 rows)",
+      "confidence": "high",
+      "assumptions": [
+        "每项给出责任角色、合作机制、前置、成本级别、用地依赖、审批路径、KPI 与退出条件。"
+      ]
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "len(phasing.features)",
+      "confidence": "high",
+      "assumptions": [
+        "三期为互不重叠的增量，两两重叠面积由构建闸门约束为 0。"
+      ]
+    },
+    "land_use_class_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "len(distinct land_use_code)",
+      "confidence": "high",
+      "assumptions": [
+        "完整剖分，无重叠无缺口，由 verify.js 以 40 m 格网逐点验证。"
+      ]
+    },
+    "land_use_feature_count": {
+      "status": "known",
+      "value": 22,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "len(land_use.features)",
+      "confidence": "high",
+      "assumptions": [
+        "含六个建筑地块 LU-B01–LU-B06。"
+      ]
+    },
+    "road_feature_count": {
+      "status": "known",
+      "value": 17,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "len(roads.features)",
+      "confidence": "high",
+      "assumptions": [
+        "含主脊、两条附合路线、十一段缝合与三条测点接入支线。"
+      ]
+    },
+    "benchmark_first_order_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(benchmark_order == first)",
+      "confidence": "high",
+      "assumptions": [
+        "BM-1 与 BM-2；BM-0 为水准原点，不计入一等点。"
+      ]
+    },
+    "benchmark_third_order_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(benchmark_order == third)",
+      "confidence": "high",
+      "assumptions": [
+        "月度复测，由居民与一线人员主导取读数。"
+      ]
+    },
+    "taskbook_requirement_count": {
+      "status": "known",
+      "value": 63,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/taskbook_coverage.json"
+      ],
+      "formula": "len(taskbook_coverage.rows)",
+      "confidence": "high",
+      "assumptions": [
+        "六项 agent 任务的 must-address 与 required output 合计。"
+      ]
+    },
+    "taskbook_requirements_answered": {
+      "status": "known",
+      "value": 63,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/taskbook_coverage.json"
+      ],
+      "formula": "count(rows where satisfied)",
+      "confidence": "high",
+      "assumptions": [
+        "每条指向一处构建时校验存在的证据；缺一即构建失败。"
+      ]
+    },
+    "matrix_reference_count": {
+      "status": "known",
+      "value": 588,
+      "unit": "count",
+      "source_files": [
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json"
+      ],
+      "formula": "count(section/layer/metric/drawing/source references across the three matrices)",
+      "confidence": "high",
+      "assumptions": [
+        "全部解析到实际章节或随包文件，由构建闸门 matrix_refs_qa 校验；每条条目的证据摘要由其自身引用生成，44 条互不相同。"
+      ]
+    },
+    "shipped_verification_script_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "manifest.json"
+      ],
+      "formula": "count(visual/assets/*.js)",
+      "confidence": "high",
+      "assumptions": [
+        "verify.js / check_osm.js / check_cards.js / check_closure.js / run_s08_tabletop.js，均无依赖、不联网。"
+      ]
+    },
+    "tabletop_case_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/s08-tabletop-evidence.json"
+      ],
+      "formula": "len(tabletop cases)",
+      "confidence": "high",
+      "assumptions": [
+        "2 例接受、8 例拒绝，全部对随包读取器实跑。"
+      ]
+    },
+    "errata_entry_count": {
+      "status": "known",
+      "value": 32,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/errata.json"
+      ],
+      "formula": "len(errata.entries)",
+      "confidence": "high",
+      "assumptions": [
+        "本方案自身错误的登记册；每条对应一个可校验的提交。"
+      ]
+    },
+    "errata_external_finder_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/errata.json"
+      ],
+      "formula": "count(entries where found_by == external-reviewer)",
+      "confidence": "high",
+      "assumptions": [
+        "由本方案之外的评审在公开 PR 或 Issue 中发现的缺陷数。"
+      ]
+    },
+    "rights_ledger_entry_count": {
+      "status": "known",
+      "value": 81,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/rights_ledger.json"
+      ],
+      "formula": "len(rights_ledger.entries)",
+      "confidence": "high",
+      "assumptions": [
+        "逐文件权利归类，由 manifest 生成；任一随包文件未归类即构建失败。"
+      ]
+    },
+    "osm_vertices_shipped": {
+      "status": "known",
+      "value": 275,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/osm_reference.json"
+      ],
+      "formula": "count(coordinates in osm_reference.geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "© OpenStreetMap contributors，ODbL 1.0；由 check_osm.js 复算全部十个已发布标量。"
+      ]
+    },
+    "field_census_corpus_size": {
+      "status": "known",
+      "value": 354,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/field_map.json"
+      ],
+      "formula": "len(merged proposal directories in git tree)",
+      "confidence": "high",
+      "assumptions": [
+        "权威源为 GitHub git tree，非会滞后的展示索引；语料每日增长，引用前须重跑。"
+      ]
+    },
+    "track_scan_corpus_size": {
+      "status": "known",
+      "value": 40,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/track_scan.json"
+      ],
+      "formula": "count(proposals declaring either track)",
+      "confidence": "high",
+      "assumptions": [
+        "机器人与 AI 公共服务两条赛道；空白表由该文件生成。"
+      ]
     }
   }
 }

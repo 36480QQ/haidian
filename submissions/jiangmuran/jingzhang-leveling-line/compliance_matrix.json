@@ -43,7 +43,8 @@
       ],
       "figures": [
         "assets/figures/ecosystem.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson、key_areas.geojson；指标 key_area_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.3.2",
@@ -88,7 +89,8 @@
       "figures": [
         "assets/figures/ecosystem.png",
         "assets/figures/metrics-evidence.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 benchmark_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.3.3",
@@ -130,7 +132,8 @@
       ],
       "figures": [
         "assets/figures/land-use-structure.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「三层范围工作框架」；图层 site_boundary.geojson；指标 site_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.4.1",
@@ -174,20 +177,23 @@
       ],
       "figures": [
         "assets/figures/land-use-structure.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「总体设计范围城市更新与控规深度城市设计」；图层 land_use.geojson、buildings.geojson；指标 building_footprint_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.4.2",
       "title_zh": "总体设计范围",
       "mandatory": true,
       "report_sections": [
-        "交通、轨道、市政与公共服务设施"
+        "三层范围工作框架"
       ],
       "geojson_layers": [
-        "geometry/roads.geojson"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
       ],
       "metrics": [
-        "leveling_spine_length_m"
+        "site_area_sqm",
+        "key_area_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -216,22 +222,24 @@
       ],
       "figures": [
         "assets/figures/mobility-bluegreen.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「三层范围工作框架」；图层 site_boundary.geojson、key_areas.geojson；指标 site_area_sqm、key_area_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.4.3",
       "title_zh": "重点区域范围",
       "mandatory": true,
       "report_sections": [
-        "蓝绿空间、公共空间与城市风貌"
+        "重点区域详细设计"
       ],
       "geojson_layers": [
-        "geometry/green_space.geojson",
+        "geometry/key_areas.geojson",
         "geometry/public_space.geojson"
       ],
       "metrics": [
-        "green_ratio",
-        "public_space_ratio"
+        "key_area_count",
+        "benchmark_count",
+        "benchmark_first_order_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -260,20 +268,23 @@
       ],
       "figures": [
         "assets/figures/mobility-bluegreen.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson、public_space.geojson；指标 key_area_count、benchmark_count、benchmark_first_order_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.1.1",
       "title_zh": "统筹研究范围：AI创新生态体系",
       "mandatory": true,
       "report_sections": [
-        "重点区域详细设计"
+        "AI创新生态图谱与要素机制",
+        "全球AI创新生态案例研究"
       ],
       "geojson_layers": [
-        "geometry/key_areas.geojson"
+        "geometry/land_use.geojson"
       ],
       "metrics": [
-        "key_area_count"
+        "case_study_count",
+        "land_use_class_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -302,7 +313,8 @@
       ],
       "figures": [
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「AI创新生态图谱与要素机制」「全球AI创新生态案例研究」；图层 land_use.geojson；指标 case_study_count、land_use_class_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.1.2",
@@ -345,7 +357,8 @@
       ],
       "figures": [
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.2.1",
@@ -387,7 +400,8 @@
       ],
       "figures": [
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson；指标 key_area_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.2.2",
@@ -429,7 +443,8 @@
       ],
       "figures": [
         "assets/figures/land-use-structure.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 land_use.geojson；指标 site_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.2.3",
@@ -471,7 +486,8 @@
       ],
       "figures": [
         "assets/figures/mobility-bluegreen.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「交通、轨道、市政与公共服务设施」；图层 roads.geojson；指标 leveling_spine_length_m（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.2.4",
@@ -513,20 +529,23 @@
       ],
       "figures": [
         "assets/figures/mobility-bluegreen.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson；指标 green_ratio（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.2.5",
       "title_zh": "总体设计范围：城市风貌",
       "mandatory": true,
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
-        "geometry/phasing.geojson"
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "key_area_count"
+        "green_ratio",
+        "public_space_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -555,7 +574,8 @@
       ],
       "figures": [
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 green_ratio、public_space_ratio（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.3.required",
@@ -605,7 +625,8 @@
       ],
       "figures": [
         "assets/figures/metrics-evidence.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 site_boundary.geojson；指标 site_area_sqm、green_ratio、public_space_ratio、building_footprint_area_sqm、key_area_count、leveling_spine_length_m、benchmark_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.3.1",
@@ -647,7 +668,8 @@
       ],
       "figures": [
         "assets/figures/metrics-evidence.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「指标体系、面积复算与合规矩阵」；图层 land_use.geojson；指标 site_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.3.2",
@@ -690,20 +712,23 @@
       ],
       "figures": [
         "assets/figures/metrics-evidence.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「风险、版权与合规说明」；图层 constraints.geojson；指标 benchmark_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "1.5.3.3",
       "title_zh": "大钟寺AI产业聚集区",
       "mandatory": true,
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "大钟寺 AI 产业集聚区"
       ],
       "geojson_layers": [
-        "geometry/phasing.geojson"
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson"
       ],
       "metrics": [
-        "key_area_count"
+        "key_area_count",
+        "building_footprint_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -732,7 +757,8 @@
       ],
       "figures": [
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「大钟寺 AI 产业集聚区」；图层 key_areas.geojson、buildings.geojson；指标 key_area_count、building_footprint_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.1",
@@ -777,7 +803,8 @@
       "figures": [
         "assets/figures/identity.png",
         "assets/figures/site-overview.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 public_space.geojson、roads.geojson；指标 benchmark_count、leveling_spine_length_m（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.2",
@@ -819,7 +846,8 @@
       ],
       "figures": [
         "assets/figures/ecosystem.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson；指标 key_area_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.3",
@@ -864,7 +892,8 @@
       "figures": [
         "assets/figures/mobility-bluegreen.png",
         "assets/figures/metrics-evidence.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「AI 创新生态、人才画像与 AI+ 场景」；图层 constraints.geojson、public_space.geojson；指标 benchmark_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.4",
@@ -910,7 +939,8 @@
       "figures": [
         "assets/figures/kit-of-parts.png",
         "assets/figures/key-areas.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 building_footprint_area_sqm、public_space_ratio（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.5",
@@ -952,20 +982,22 @@
       ],
       "figures": [
         "assets/figures/kit-of-parts.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 roads.geojson；指标 leveling_spine_length_m（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     },
     {
       "requirement_id": "agent.6",
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "荣誉展示体系与公共空间组件库"
       ],
       "geojson_layers": [
-        "geometry/phasing.geojson"
+        "geometry/public_space.geojson"
       ],
       "metrics": [
-        "key_area_count"
+        "scenario_card_count",
+        "benchmark_third_order_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -995,7 +1027,8 @@
       ],
       "figures": [
         "assets/figures/kit-of-parts.png"
-      ]
+      ],
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库」；图层 public_space.geojson；指标 scenario_card_count、benchmark_third_order_count（由 visual/assets/verify.js 独立重算）；图纸 a3-booklet.pdf、a0-boards.pdf；来源 SITE-PACKAGE、SOURCE-REGISTRY、PROCESSED-FACT-PACK、OFFICIAL-ANNOUNCEMENT、AGENT-TASKBOOK、BOUNDARY-SOURCE、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
     }
   ]
 }
