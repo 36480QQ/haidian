@@ -441,8 +441,179 @@ This proves "open-source-driven innovation" more meaningfully than enterprise co
 
 Compliance matrix (`compliance_matrix.json`) maps every announcement requirement to sections/layers/metrics/drawings/HTML/sources/assumptions/self-check items, ensuring full coverage of agent.1–agent.6 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
+## agent.2 Global AI Innovation Ecosystem Case Comparison
+
+agent.2 requires 5–8 global AI ecosystem cases with sources, licenses, a comparison table, a full ecosystem map, and an eight-factor (land–space–industry–funds–talent–compute–data–scenario) mechanism.
+
+### Case Selection
+
+Six cases across four governance models — municipal-led (Helsinki/Barcelona), tech-driven (Toronto/Singapore), industry-campus fusion (Eindhoven), and open-source community (Shenzhen) — were selected for multi-dimensional comparison with JZ OPENLINE's "Open Urban OS" positioning.
+
+### Comparison Table
+
+| Case | Country | Model | Eight-Factor Fit | Takeaways | Source/License |
+|---|---|---|---|---|---|
+| **Sidewalk Toronto / Waterfront Toronto** | Canada | Data+space experiment by big tech; terminated 2020 over privacy & governance disputes | Land·space ✓ Data ✓ Scenario ✓ | Data trust, physical-digital twin, lesson: design privacy boundaries *before* deployment | Waterfront Toronto (2019), CC-BY |
+| **Eindhoven Brainport** | Netherlands | Triple helix (Philips legacy + university + government); High Tech Campus as open-innovation core | Industry ✓ Talent ✓ Scenario ✓ Land·space ✓ | Three-tier linkage (campus–district–community); Brainport Development PPP coordination | Brainport Monitor (RUG, 2023), public domain |
+| **Helsinki AI Register** | Finland | City-led public AI transparency registry; mandatory disclosure of purpose/data source/algorithm logic | Data ✓ Scenario ✓ Compute ✓ | AI transparency registry, citizen-accessible public interface, annual AI-use report | City of Helsinki (2021), CC-BY |
+| **Barcelona Digital City** | Spain | Decidim open-source participation platform + community tech centres; citizen digital sovereignty | Scenario ✓ Community (JZ L5) ✓ | Replicable open citizen-participation platform; dual-track physical–digital community lab model | Ajuntament de Barcelona (2020), CC-BY / GPL |
+| **Singapore Smart Nation** | Singapore | Government-driven national AI & urban data platform (Virtual Singapore twin, AI Verify framework) | Compute ✓ Data ✓ Scenario ✓ Talent ✓ | Statutory data integration for digital twins; AI Verify as a reference for agent.3 test protocols | Singapore GovTech (2023), public domain |
+| **Shenzhen Open Innovation Ecosystem** | Shenzhen, China | Huaqiangbei hardware ecosystem + Seeed Studio/Chaihuo makerspace: open hardware → small-batch → industrial conversion | Industry ✓ Scenario ✓ Talent ✓ | "Open-source → batch → production" conversion pipeline; hardware innovation lab spatial operations | Public business reports & academic literature (CC-BY) |
+
+> This section provides reference case comparison within the urban-design context only. Data is drawn from public reports and academic literature; this does not constitute formal industry research or commercial due diligence, nor does it imply any cooperation or benchmarking relationship between the JZ proposal and the listed cases.
+
+### AI Ecosystem Map: JZ OPENLINE's Global Position
+
+JZ OPENLINE is differentiated within the global landscape by:
+
+- **Public–Open-Source–Spatial superposition**: Unlike single-driver models (corporate: Toronto; governmental: Singapore), JZ layers public space (heritage park), open-source governance (Issue/Merge/Fork workflow), and urban renewal (12 renewal projects) into an "urban-scale innovation substrate" that citizens, developers, and planners can read/write together.
+- **"West R&D, East service" industrial geography**: The west wing (Zhongzhiyuan–OPEN LAB) hosts R&D and open-source release; the east wing (community–commercial belt) hosts scenario testing and service delivery, forming a two-tier structure echoing Brainport's campus–district model.
+- **Distributed "hundred-node" scenario operations**: Rather than centralised digital twins (Singapore), JZ's 14 SCENARIO_NODE points and 10 scenario cards emphasise distributed, lightweight, iterable "node economics" — resembling the fractal structure of Barcelona community tech centres + Shenzhen maker networks.
+
+### Eight-Factor Mechanism & JZ Framework Linkage
+
+| Factor | JZ Mechanism | Status | Prerequisite |
+|---|---|---|---|
+| Land·Space | Spine greenway + 3 launch stations + 30 LU zones + 10 green spaces + 24 public spaces | Conceptual | Recalculated after official red line [assumption:A-BOUNDARY-002] |
+| Industry | 5-layer Open Stack L1–L5 + 10 scenario cards + Future Industry / Open School | Conceptual framework | Formal industry study & investment plan required |
+| Funds | "JZ Open Innovation Alliance" + public–social capital hybrid (IP pledge / open-source crowdfunding / scenario procurement) | Outline mechanism | Financial model & partner letters of intent required |
+| Talent | 5 personas + Lead Instructor + AI Commander + open-source maintainer certification | Framework | MOUs with universities / enterprises / open-source communities |
+| Compute | Edge-AI kiosks (PROT-03) + lightweight on-device model deployment | Conceptual | Coordination with cloud/compute providers |
+| Data | OpenLine Repo platform + data minimisation + visible use + opt-out [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] | Mechanism design | Compliance audit & Privacy Impact Assessment required |
+| Scenario | 14 SCENARIO_NODE + 10 scenario cards + 3 track scenarios (agent.3) [metric:scenario_node_count] [metric:ai_scenario_card_count] | Conceptual layer | Operating entities, liability boundaries & data governance charter [assumption:A-SCENARIO-008] |
+| Global linkage | JZ Open Week + OpenLine Repo international nodes + Fork Pavilion modular output | Blueprint | International MOUs & annual event funding required |
+
+> All eight-factor linkages are proposed at the conceptual urban-design level. "Land·space", "building scale" and "compute" await official regulatory plans, industrial policy and infrastructure conditions. Funding and talent mechanisms require dedicated studies and partner confirmation before entering the implementation stage.
+## Regional Synergy & External Interfaces
+
+This section addresses the review's request for resource flows and cooperation interfaces between the three-zone-two-wing framework and Beilu Community, Future Science City, Huairou Science City, the Economic-Technological Development Area, and the Beijing-Tianjin-Hebei region. All interfaces are presented as conceptual synergy frameworks; they do not constitute concluded cooperation agreements or administrative commitments.
+
+### Internal Synergy: Three Zones & Two Wings
+
+The spatial coupling of three zones (overall design, key areas, coordinated research) and two wings (east-wing community services, west-wing R&D industry) is encoded in the land-use structure: across the [metric:land_use_polygon_count] polygons, the W/S/E three-band overlap in segments B01–B10 creates a horizontal "R&D ↔ Open ↔ Service" gradient [data:geometry/land_use.geojson#B01-B10]. Key interfaces:
+- **West→East talent & service pipeline**: West-wing incubation (OPEN LAB/Zhongzhiyuan) → Core release (OPEN CORE) → East-wing scenario testing & community feedback (AI Living Street / Future Health School).
+- **The Spine (S-band) as a shared platform**: The Jingzhang Heritage Park greenway [metric:spine_length_m] functions not only as a mobility and blue-green corridor but also as a shared "data–activity–brand" strip across both wings [data:geometry/roads.geojson#ROAD-SPINE].
+
+### External Interfaces (Conceptual Framework)
+
+| External Node | Role | JZ Synergy Direction | Current Status |
+|---|---|---|---|
+| **Beilu Community (surrounding neighbourhoods)** | Residents → data contributors → scenario testers | Future School network nodes can extend into Beilu community spaces; residents submit real problems through Issue Garden and participate in scenario testing | Conceptual community-participation interface |
+| **Future Science City (R&D infrastructure)** | Frontier tech supply → joint R&D → talent pipeline | JZ's OPEN SCIENCE (L1) and OPEN VENTURE (L3) layers can interface with Future Science City's large-scale scientific facilities, state key labs and university research teams, forming a "basic research → open experimentation → urban scenario test" conversion chain | Envisioned R&D cooperation interface |
+| **Huairou Science City (Big Science cluster)** | Advanced hardware → computing resources → interdisciplinary innovation | JZ's edge-AI kiosk concept (PROT-03) can extend as an "urban access point" for a Huairou–JZ compute corridor; Huairou's data-openness policies can provide governance reference for OpenLine Repo | Envisioned compute & data interface |
+| **Economic-Technological Development Area (ETDA)** | Industrialisation → scaled production → supply chain | JZ's OPEN VENTURE (L3) and OPEN SCALE (Yueqian Station) can provide prototype testing, user validation and roadshow platforms for ETDA enterprises before small-batch → mass-scale transition; ETDA provides volume take-up for JZ-incubated projects | Envisioned industrial-conversion interface |
+| **Beijing–Tianjin–Hebei (wider regional circulation)** | Regional market → factor flows → policy coordination | JZ's "Open Urban OS" brand and Fork Pavilion modular-output concept serves differentiated reuse across the Jing-Jin-Ji urban cluster through "fork + localize" open-source collaboration — not a uniform master plan but a modular replication pattern | Conceptual blueprint |
+
+> ※ All external interfaces in this section are conceptual synergy propositions. They do not constitute concluded cooperation agreements or administrative commitments. All directions require independent communication with counterparties and legal/policy feasibility assessment before entering implementation pathways.
+## agent.3 Test & Validation Protocols
+
+agent.3 requires at least 3 AI industry test-validation scenario protocols, each specifying the test object, data inputs, responsible parties, quantified success thresholds, human-review mechanisms, and exit conditions. The following 3 protocols correspond to the 3 track scenarios in this submission.
+
+### Protocol P1: AI Walkability Navigation Explainability (Track: ai-traffic-walkability)
+
+| Element | Specification |
+|---|---|
+| **Test object** | Explainability of the AI navigation system over a 0.5 km trial segment of Jingzhang Heritage Park (route-recommendation rationale, break-point detection, alternative-path suggestion) |
+| **Data inputs** | Anonymised real-time footfall data (flow & speed), weather & light data, resident-submitted "breakage reports" via OpenLine Repo |
+| **Responsible parties** | JZ Open Innovation Alliance (operator) + urban mobility research institute (algorithm evaluator) + community representatives (oversight) |
+| **Success threshold** | In quarterly testing, ≥ 80% of participants rate route explanations as "comprehensible/acceptable" (7-point scale ≥ 5); break-point recall ≥ 85% |
+| **Human review** | Independent research institute issues quarterly review reports; any break-point flagged as "safety-critical" triggers mandatory human-operator intervention within 15 minutes |
+| **Exit conditions** | 2 consecutive quarters below threshold; any safety-related misjudgement (regardless of volume); any privacy complaint confirmed as a breach in a Privacy Impact Assessment |
+
+### Protocol P2: Enterprise Service AI Copilot Privacy Compliance (Track: enterprise-service-copilot)
+
+| Element | Specification |
+|---|---|
+| **Test object** | Privacy-boundary and compliance capability of the AI enterprise copilot (AI Commander / business diagnosis) when handling SME queries |
+| **Data inputs** | Enterprise-authorised anonymised business data (sector, size, query type), public policy & subsidy information, human-response baseline |
+| **Responsible parties** | JZ Open Innovation Alliance (platform) + third-party legal/compliance body (auditor) + participating enterprises (data grantors) |
+| **Success threshold** | Across 50 consecutive queries, the AI must not output any information that could re-identify the enterprise; on "should the user consult a lawyer/accountant" judgements, precision ≥ 95% (vs human baseline) |
+| **Human review** | Auditor monthly spot-checks 10% of interactions; any response touching legal, tax or business-decision advice MUST append "This does not constitute professional advice; consult a licensed professional" — insertion rate must be 100% |
+| **Exit conditions** | One confirmed privacy leak in any audit cycle; compliance-notice insertion rate below 100%; any participating enterprise revokes data authorisation |
+
+### Protocol P3: Public-Safety AI Patrol Human-Takeover (Track: public-safety-operations-review)
+
+| Element | Specification |
+|---|---|
+| **Test object** | Anomaly detection and human-takeover mechanism of the AI patrol system (Issue Garden / public-space monitoring scenario) |
+| **Data inputs** | Anonymised environmental sensor data during time-limited public-space testing (crowd density, movement patterns, anomalous loitering) — no facial/plate/voice/mobile-identifier capture |
+| **Responsible parties** | JZ Open Innovation Alliance (operator) + local public-safety authority (oversight) + community resident representatives (review panel) |
+| **Success threshold** | Human confirmation validity of AI anomaly flags ≥ 90%; average latency from flag to human confirmation ≤ 5 minutes; false-positive rate (flagged then confirmed normal) ≤ 20% |
+| **Human review** | Community review panel holds quarterly public review sessions examining all AI flags & confirmations (redacted); any AI output involving restrictions of personal liberty or enforcement recommendations must never be used for any operational action |
+| **Exit conditions** | Human-confirmation validity below 80% for 2 consecutive quarters; any false positive causing material public-resource waste (e.g. unjustified public-space closure); community resident representatives vote ≥ 60% against continuation |
+
+All testing takes place within the closed trial segment of OPEN LAB (Zhongzhiyuan). Data is deleted 30 days after test completion; relevant records are archived in OpenLine Repo and available for public inspection (redacted).
+
+## agent.6 Annual Operations & Community Mechanism
+
+agent.6 requires an annual activity system, developer retention, scenario opening, recruitment & conversion, and long-term review mechanisms.
+
+### JZ Open Week Annual Flagship Framework
+
+| Quarter | Activity | Content | Participants |
+|---|---|---|---|
+| **Q1 Spring** | Open Proposal Season | Via OpenLine Repo, solicit urban problems & solution proposals from residents/developers/businesses; community voting selects annual priority topics | Residents, community organisations, university students |
+| **Q2 Summer** | Open Sprint Season | Intensive development for voted topics; OPEN LAB & OPEN CORE open desks/compute/datasets for teams | Developers, university labs, enterprise R&D |
+| **Q3 Autumn** | JZ Open Week Main Event | Demo & roadshow (OPEN CORE·Merge Square), industry forum (OPEN SCALE·Yueqian), public experience day (14 scenario nodes open along the spine) | All personas, investors, media, international community |
+| **Q4 Winter** | Review & Whitepaper Season | Annual impact report, North Star metric update; fork-package release of JZ Open Week outcomes | JZ Open Innovation Alliance, third-party evaluators |
+
+### Open-Source Maintainer & Developer Retention
+
+1. **Contributor Honour System**: Contributors Wall records contributor IDs and contribution types (code/design/data/testing/content), updated quarterly.
+2. **Maintainer House Residency**: 4 maintainers per year in OPEN CORE for 3-month residencies; desk, compute subsidy, and living allowance provided.
+3. **OpenSchool Talent Pipeline**: Graduates of OpenSchool & AI Commander courses enter the maintainer reserve pool; annual target ≥ 20 Lead Instructors.
+4. **Return Incentive**: Departing or paused maintainers retain their contribution record on return; "Return Sprint Week" support provided.
+
+### Scenario Opening & Recruitment Conversion Pathway
+
+```
+Problem proposal (Issue Garden / OpenLine Repo)
+  → Voting & evaluation (community + expert panel)
+  → Prototyping (OPEN LAB / OPEN CORE)
+  → Scenario testing (3–5 of 14 SCENARIO_NODE locations, per agent.3 protocols)
+  → Passed → Added to operation roster / enterprise adoption
+  → Failed → Returned to problem bank, tagged "explored" with failure learning
+```
+
+Conversion KPIs: annually, ≥ 30% of scenario-tested projects adopted by enterprise/institution as long-term services; ≥ 1 project forked and locally deployed by another city.
+
+### Annual Review Mechanism
+
+- **Quarterly operations briefing**: End-of-quarter brief covering OpenLine Repo activity, scenario test progress, community participation data.
+- **Annual North Star recalculation**: Q4 recalculation of "how many real urban problems solved and reused elsewhere," with public methodology & data release.
+- **Independent third-party audit**: Biennial open audit of JZ project technology, community governance, and finance by an independent academic institution.
+
+> All mechanisms above are conceptual institutional designs. Formal confirmation of the operating entity, funding sources, site-use rights and partner relationships requires implementation-feasibility study after the conceptual proposal has been adopted.
 ## Risks, Copyright & Compliance
 
+### Conceptual Design Disclaimer
+
+IMPORTANT: All demolition, renovation, and retention proposals; all new or remodelled bridge/connector schemes; all road cross-section adjustments; all rail-station interface ideas; all architectural volumes, programme allocations, and implementation phasing — in this proposal are **conceptual urban design propositions** only. They do not substitute for the following formal documents or processes:
+- Statutory constraints of the Beijing Urban-Rural Planning Regulations and related regulatory detailed plans;
+- Feasibility studies, preliminary design, or construction-drawing review for building projects;
+- Approval or permits from rail, transport, water, heritage, fire, or other specialised administrative authorities;
+- The legal rights of any land- or building-title holders.
+
+All areas, volumes, heights, capacities and distances in this proposal are based on conceptual recalculation values or "unknown" declarations in metrics.json. Geometry layers in geometry/ are provisional_only until official red-line, regulatory-plan and title-data release (see geometry layer property source_type), and must not be used for approvals or engineering judgements.
+
+### Coordinate Reference System (CRS) Declaration
+
+All GeoJSON files in geometry/ are stored in the WGS84 geographic coordinate system (lon/lat, approx. lon 116.3°, lat 40.0°). Metrics declared in metrics.json are conceptually recalculated in EPSG:4548 projection. The dual-CRS situation has the following consequences:
+- Flat-sheet views exhibit an east–west / north–south scale distortion of approximately 1/cos(40°) ≈ 1.305 (compensated in visuals/assets figures by a 1.305 aspect ratio; see figures/site-overview.png);
+- Approximate errors exist between conceptual-recalculation areas and strict projected areas;
+- Formal areas, ratios, red-line relationships and spatial analyses must rely on officially released EPSG:4548 data.
+
+Upon release of the official overall design-scope polygon and three key-area polygons (EPSG:4548), all geometry/ layers and all metrics.json indicators must be regenerated and recalculated.
+
+### Font & Visual Asset Declaration
+
+For technical readability, the proposal figures (PNGs and PDFs in assets/figures/ and drawings/) were generated using:
+- **Arial Unicode MS** (/Library/Fonts/Arial Unicode.ttf) as the general-purpose CJK+Latin rendering font. This font is distributed with macOS; its embedding and distribution in figures falls under conventional system-font usage.
+- The proposal's brand-layer declared fonts — **Source Han Sans** (Chinese), **Inter** (English body), and **IBM Plex Mono** (English monospace) — are **design-target fonts** intended for substitution in final typesetting and publication. The commercial licensing status, embedding and distribution of these brand fonts must be independently verified before formal publication.
+- The Logo (JZOpenlineLOGO.png) was generated with AI assistance (WorkBuddy); its core graphic elements (intersecting lines + centre dot) represent a "railway—code—open-source" conceptual fusion. Trademark similarity search and legal ownership confirmation have not been completed; exclusive trademark right is not claimed before a professional search is commissioned.
+- All real-geography visual data in figures derives from the submitted GeoJSON layers in geometry/. The generation process is documented in report/asset_rights_ledger.md.
+
+At this stage, **no claim is made** that all visual assets have completed legal rights clearance. This disclaimer is issued under the principle: "Do not claim rights cleared where independent verification is absent."
 ### Key Risks
 1. **Provisional boundary**: Current site_boundary and key_areas are rough provisional boundaries, not official redlines [assumption:A-BOUNDARY-002]
 2. **Missing regulatory plan**: FAR, height, density, setbacks unknown — no fabricated values [assumption:A-LANDUSE-004]
