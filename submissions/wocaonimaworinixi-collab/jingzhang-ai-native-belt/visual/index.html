@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百年京张 · AI 原生创新带 — 设计仪表盘</title>
+<style>
+  :root { --bg: #F8FAFC; --panel: #FFFFFF; --ink: #1A2A3A; --muted: #64748B; --accent: #1F3B57; --ok: #16A34A; --warn: #D97706; }
+  body { margin: 0; font-family: "Noto Sans SC", "Microsoft YaHei", SimHei, sans-serif; background: var(--bg); color: var(--ink); }
+  header { background: var(--accent); color: white; padding: 24px 32px; }
+  header h1 { margin: 0 0 6px; font-size: 1.5em; }
+  header p { margin: 0; opacity: 0.9; font-size: 0.95em; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+  .panel { background: var(--panel); border: 1px solid #E2E8F0; border-radius: 8px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .panel h2 { margin: 0 0 12px; font-size: 1.15em; color: var(--accent); }
+  .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .kpi { background: #F1F5F9; border-radius: 6px; padding: 14px; text-align: center; }
+  .kpi-val { font-size: 1.5em; font-weight: bold; color: var(--accent); }
+  .kpi-label { font-size: 0.82em; color: var(--muted); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #EDF2F7; }
+  th { color: var(--muted); font-weight: 600; }
+  .provisional { background: #FFFBEB; border-left: 4px solid #F59E0B; padding: 12px; color: #92400E; border-radius: 4px; margin-bottom: 18px; }
+  .svg-wrap { margin-top: 10px; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85em; padding: 30px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>百年京张 · AI 原生创新带</h1>
+  <p>人-AI 共生城市设计 · 离线证据仪表盘 / Offline Evidence Dashboard</p>
+</header>
+<div class="container">
+  <div class="provisional"><strong>注意：</strong>所有空间几何为临时约束（provisional_constraint），非官方红线；面积待 EPSG:4548 重算。</div>
+
+  <div class="grid">
+    <div class="panel" style="grid-column: span 2;">
+      <h2>核心指标 Core metrics</h2>
+      <div class="kpi-grid"><div class="kpi"><div class="kpi-val">425.4 ha</div><div class="kpi-label">总用地</div></div>
+<div class="kpi"><div class="kpi-val">8.51 万 m²</div><div class="kpi-label">总建筑量</div></div>
+<div class="kpi"><div class="kpi-val">2.0</div><div class="kpi-label">容积率</div></div>
+<div class="kpi"><div class="kpi-val">12.0%</div><div class="kpi-label">绿地率</div></div>
+<div class="kpi"><div class="kpi-val">4.57%</div><div class="kpi-label">公共空间比</div></div>
+<div class="kpi"><div class="kpi-val">13.0%</div><div class="kpi-label">建筑密度</div></div></div>
+    </div>
+    <div class="panel">
+      <h2>Agent 任务覆盖</h2>
+      <table>
+        <tr><th>ID</th><th>任务</th><th>状态</th></tr>
+        <tr><td>agent.1</td><td>命名/Logo与识别系统</td><td>✓</td></tr>
+<tr><td>agent.2</td><td>5-8 个 AI 生态案例 (6)</td><td>✓</td></tr>
+<tr><td>agent.3</td><td>≥10 场景卡 (12)</td><td>✓</td></tr>
+<tr><td>agent.4</td><td>≥3 产业验证/测试场景 (4)</td><td>✓</td></tr>
+<tr><td>agent.5</td><td>≥5 用户画像 (6)</td><td>✓</td></tr>
+<tr><td>agent.6</td><td>≥3 AI 朝圣地标/荣誉展示节点 (4)</td><td>✓</td></tr>
+<tr><td>agent.7</td><td>文化叙事</td><td>✓</td></tr>
+<tr><td>agent.8</td><td>长期全球 AI 事件/社区运营</td><td>✓</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top: 18px;">
+    <div class="panel" style="grid-column: span 2;">
+      <h2>场地总览 Site Overview</h2>
+      <div class="svg-wrap"><svg viewBox="-1443.4839659973488 -1807.8368000003743 2886.9679319934853 3615.6736000007486" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;border:1px solid #E0E6ED;background:#FBFCFE;"><polygon points="-1194.1271659972972,-1558.4800000003227 852.9479757109699,-667.9200000000253 1194.127165996085,1558.4800000003227 -852.947975712182,667.9200000000253 -1194.1271659972972,-1558.4800000003227" fill="#EAF1F8" stroke="#1F3B57" stroke-width="2" opacity="0.9" /><polygon points="-1194.1271659972972,-1558.4800000003227 -852.947975712182,-1410.0533333334747 -511.7687854270668,816.3466666668734 -852.947975712182,667.9200000000253 -1194.1271659972972,-1558.4800000003227" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="-852.947975712182,-1410.0533333334747 -511.76878542827893,-1261.6266666666265 -170.58959514316368,964.7733333337214 -511.7687854270668,816.3466666668734 -852.947975712182,-1410.0533333334747" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="-511.76878542827893,-1261.6266666666265 -170.58959514316368,-1113.2000000005696 170.58959514195155,1113.1999999997786 -170.58959514316368,964.7733333337214 -511.76878542827893,-1261.6266666666265" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="-170.58959514316368,-1113.2000000005696 170.58959514195155,-964.7733333337214 511.7687854270668,1261.6266666666265 170.58959514195155,1113.1999999997786 -170.58959514316368,-1113.2000000005696" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="170.58959514195155,-964.7733333337214 511.7687854258547,-816.3466666668734 852.9479757109699,1410.0533333334747 511.7687854270668,1261.6266666666265 170.58959514195155,-964.7733333337214" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="511.7687854258547,-816.3466666668734 852.9479757109699,-667.9200000000253 1194.127165996085,1558.4800000003227 852.9479757109699,1410.0533333334747 511.7687854258547,-816.3466666668734" fill="none" stroke="#C9D6E3" stroke-width="0.6" opacity="1.0" /><polygon points="-1040.5965303689347,-1076.093333333462 -870.0069352269833,-1001.8800000008289 -665.2994210554292,333.9599999992217 -835.8890161973808,259.7466666665886 -1040.5965303689347,-1076.093333333462" fill="#E45756" stroke="#E45756" stroke-width="1.5" opacity="0.55" /><polygon points="-17.058959514801213,-526.914666666757 187.64855465675276,-437.8586666669645 375.29710931350553,786.6613333325546 170.58959514195155,697.6053333327621 -17.058959514801213,-526.914666666757" fill="#4C78A8" stroke="#4C78A8" stroke-width="1.5" opacity="0.55" /><polygon points="648.240461539416,-341.38133333359235 852.9479757109699,-252.3253333337999 1057.6554898825239,1083.5146666662508 852.9479757109699,994.4586666664583 648.240461539416,-341.38133333359235" fill="#54A24B" stroke="#54A24B" stroke-width="1.5" opacity="0.55" /><polyline points="-1023.5375708553457,-445.2800000005442 -511.76878542827893,-222.6400000002721 -1.2121119762465265e-09,-7.909761734481435e-10 511.7687854258547,222.63999999948112 1023.5375708529215,445.2799999997532" fill="none" stroke="#E45756" stroke-width="5" stroke-linecap="round" /><polyline points="-1023.5375708553457,-1484.2666666668988 -682.3583805702305,742.1333333334494" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-682.3583805702305,-1335.8400000000506 -341.1791902851152,890.5600000002974" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-341.1791902851152,-1187.4133333332024 0.0,1038.9866666671455" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-1.2121119762465265e-09,-1038.9866666671455 341.1791902839031,1187.4133333332024" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="341.1791902839031,-890.5600000002974 682.3583805690183,1335.8400000000506" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="682.3583805690183,-742.1333333334494 1023.5375708541336,1484.2666666668988" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><circle cx="-716.4762995986207" cy="-311.6960000008555" r="18" fill="#F2A900" stroke="#7A5C00" stroke-width="1.5" /><circle cx="-204.70751417155398" cy="-89.05600000058342" r="18" fill="#F2A900" stroke="#7A5C00" stroke-width="1.5" /><circle cx="204.70751416912975" cy="89.05599999979245" r="18" fill="#F2A900" stroke="#7A5C00" stroke-width="1.5" /><circle cx="716.4762995961966" cy="311.69600000006454" r="18" fill="#F2A900" stroke="#7A5C00" stroke-width="1.5" /></svg></div>
+    </div>
+    <div class="panel">
+      <h2>用地结构 Land use</h2>
+      <div class="svg-wrap"><svg viewBox="-1443.4839659973488 -1807.8368000003743 2886.9679319934853 3615.6736000007486" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;border:1px solid #E0E6ED;background:#FBFCFE;"><polygon points="-1194.1271659972972,-1558.4800000003227 -852.947975712182,-1410.0533333334747 -511.7687854270668,816.3466666668734 -852.947975712182,667.9200000000253 -1194.1271659972972,-1558.4800000003227" fill="#4C78A8" stroke="white" stroke-width="1.2" opacity="0.82" /><polygon points="-852.947975712182,-1410.0533333334747 -511.76878542827893,-1261.6266666666265 -170.58959514316368,964.7733333337214 -511.7687854270668,816.3466666668734 -852.947975712182,-1410.0533333334747" fill="#4C78A8" stroke="white" stroke-width="1.2" opacity="0.82" /><polygon points="-511.76878542827893,-1261.6266666666265 -170.58959514316368,-1113.2000000005696 170.58959514195155,1113.1999999997786 -170.58959514316368,964.7733333337214 -511.76878542827893,-1261.6266666666265" fill="#F58518" stroke="white" stroke-width="1.2" opacity="0.82" /><polygon points="-170.58959514316368,-1113.2000000005696 170.58959514195155,-964.7733333337214 511.7687854270668,1261.6266666666265 170.58959514195155,1113.1999999997786 -170.58959514316368,-1113.2000000005696" fill="#4C78A8" stroke="white" stroke-width="1.2" opacity="0.82" /><polygon points="170.58959514195155,-964.7733333337214 511.7687854258547,-816.3466666668734 852.9479757109699,1410.0533333334747 511.7687854270668,1261.6266666666265 170.58959514195155,-964.7733333337214" fill="#54A24B" stroke="white" stroke-width="1.2" opacity="0.82" /><polygon points="511.7687854258547,-816.3466666668734 852.9479757109699,-667.9200000000253 1194.127165996085,1558.4800000003227 852.9479757109699,1410.0533333334747 511.7687854258547,-816.3466666668734" fill="#B279A2" stroke="white" stroke-width="1.2" opacity="0.82" /></svg></div>
+    </div>
+    <div class="panel" style="grid-column: span 2;">
+      <h2>交通与蓝绿 Mobility & Blue-Green</h2>
+      <div class="svg-wrap"><svg viewBox="-1443.4839659973488 -1807.8368000003743 2886.9679319934853 3615.6736000007486" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;border:1px solid #E0E6ED;background:#FBFCFE;"><polygon points="-1194.1271659972972,-1558.4800000003227 -852.947975712182,-1410.0533333334747 -511.7687854270668,816.3466666668734 -852.947975712182,667.9200000000253 -1194.1271659972972,-1558.4800000003227" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="-852.947975712182,-1410.0533333334747 -511.76878542827893,-1261.6266666666265 -170.58959514316368,964.7733333337214 -511.7687854270668,816.3466666668734 -852.947975712182,-1410.0533333334747" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="-511.76878542827893,-1261.6266666666265 -170.58959514316368,-1113.2000000005696 170.58959514195155,1113.1999999997786 -170.58959514316368,964.7733333337214 -511.76878542827893,-1261.6266666666265" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="-170.58959514316368,-1113.2000000005696 170.58959514195155,-964.7733333337214 511.7687854270668,1261.6266666666265 170.58959514195155,1113.1999999997786 -170.58959514316368,-1113.2000000005696" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="170.58959514195155,-964.7733333337214 511.7687854258547,-816.3466666668734 852.9479757109699,1410.0533333334747 511.7687854270668,1261.6266666666265 170.58959514195155,-964.7733333337214" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="511.7687854258547,-816.3466666668734 852.9479757109699,-667.9200000000253 1194.127165996085,1558.4800000003227 852.9479757109699,1410.0533333334747 511.7687854258547,-816.3466666668734" fill="none" stroke="#D5DEE8" stroke-width="0.6" opacity="1.0" /><polygon points="221.76647368393097,-734.7119999998697 528.8277449406559,-601.1280000001809 801.7710971689905,1179.9919999996227 494.7098259122656,1046.4079999999342 221.76647368393097,-734.7119999998697" fill="#54A24B" stroke="#2E6B2A" stroke-width="1.4" opacity="0.55" /><polyline points="-1023.5375708553457,-445.2800000005442 -511.76878542827893,-222.6400000002721 -1.2121119762465265e-09,-7.909761734481435e-10 511.7687854258547,222.63999999948112 1023.5375708529215,445.2799999997532" fill="none" stroke="#E45756" stroke-width="5" stroke-linecap="round" /><polyline points="-1023.5375708553457,-1484.2666666668988 -682.3583805702305,742.1333333334494" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-682.3583805702305,-1335.8400000000506 -341.1791902851152,890.5600000002974" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-341.1791902851152,-1187.4133333332024 0.0,1038.9866666671455" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="-1.2121119762465265e-09,-1038.9866666671455 341.1791902839031,1187.4133333332024" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="341.1791902839031,-890.5600000002974 682.3583805690183,1335.8400000000506" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><polyline points="682.3583805690183,-742.1333333334494 1023.5375708541336,1484.2666666668988" fill="none" stroke="#9AA5B1" stroke-width="2" stroke-linecap="round" /><circle cx="-716.4762995986207" cy="-311.6960000008555" r="18" fill="#17BEBB" stroke="#0A5C5A" stroke-width="1.5" /><circle cx="-204.70751417155398" cy="-89.05600000058342" r="18" fill="#17BEBB" stroke="#0A5C5A" stroke-width="1.5" /><circle cx="204.70751416912975" cy="89.05599999979245" r="18" fill="#17BEBB" stroke="#0A5C5A" stroke-width="1.5" /><circle cx="716.4762995961966" cy="311.69600000006454" r="18" fill="#17BEBB" stroke="#0A5C5A" stroke-width="1.5" /></svg></div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top: 18px;">
+    <h2>自检查结果 Self-check</h2>
+    <table>
+      <tr><th>检查项</th><th>文件</th><th>状态</th><th>说明</th></tr>
+      <tr><td>BILINGUAL</td><td>proposal.md</td><td style="color:#16A34A;font-weight:bold;">pass</td><td>proposal.md (zh) + proposal.en.md (en) present; bilingual_contract_version=1.</td></tr>
+<tr><td>FORMAT_V2</td><td>proposal.md</td><td style="color:#16A34A;font-weight:bold;">pass</td><td>proposal_format_version=2 set.</td></tr>
+<tr><td>GEOM_CLOSED</td><td>geometry/*.geojson</td><td style="color:#16A34A;font-weight:bold;">pass</td><td>All polygons closed; land_use tiles site boundary; key areas inside & non-overlapping (generated).</td></tr>
+<tr><td>PROVISIONAL_LABEL</td><td>geometry/site_boundary.geojson</td><td style="color:#D97706;font-weight:bold;">pass_with_note</td><td>Geometry labeled provisional_constraint, official_boundary=false. Not for statutory use.</td></tr>
+<tr><td>FIGURES</td><td>assets/figures/*.png</td><td style="color:#2563EB;font-weight:bold;">pending</td><td>Five required figures to be generated from same geometry/metrics.</td></tr>
+<tr><td>VISUAL_OFFLINE</td><td>visual/index.html</td><td style="color:#2563EB;font-weight:bold;">pending</td><td>Offline static HTML to be generated; no CDN/remote.</td></tr>
+<tr><td>REPORT_HTML</td><td>report/proposal.html</td><td style="color:#2563EB;font-weight:bold;">pending</td><td>Rendered offline report to be generated.</td></tr>
+<tr><td>AGENT_TASKS</td><td>compliance_matrix.json</td><td style="color:#16A34A;font-weight:bold;">pass</td><td>agent.1-agent.8 covered; counts: cases=6, scenarios=12, validations=4, personas=6, landmarks=4.</td></tr>
+    </table>
+  </div>
+
+  <div class="panel" style="margin-top: 18px;">
+    <h2>主要假设与数据缺口 Assumptions & Gaps</h2>
+    <ul>
+      <li>官方 SITE_BOUNDARY / KEY_AREA 多边形未提供，使用贡献者生成的临时包络。</li>
+      <li>road_area_ratio 因缺少道路断面宽度暂为 unknown。</li>
+      <li>专业标准集使用代表性条目，待组织者 standards.json 到达后替换。</li>
+      <li>容积率按假定 2.0 估算，非法定指标。</li>
+    </ul>
+  </div>
+</div>
+<footer>Generated by kimik3 · package_state=ready_for_review · bilingual_contract_version=1</footer>
+</body>
+</html>

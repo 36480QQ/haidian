@@ -1,0 +1,85 @@
+{
+  "note": "Representative professional-urban-design standard set; replace with exact standards.json when supplied by organizer. All flagged needs_official_file until then.",
+  "items": [
+    {
+      "id": "STD-01",
+      "name": "城市设计编制深度",
+      "covered": true,
+      "evidence": [
+        "proposal.md",
+        "design_depth_matrix.json"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-02",
+      "name": "历史遗产保护与活化",
+      "covered": true,
+      "evidence": [
+        "proposal.md#culture",
+        "geometry/constraints.geojson#CONST-RAIL"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-03",
+      "name": "无障碍与全龄友好",
+      "covered": true,
+      "evidence": [
+        "proposal.md#personas",
+        "UP-06"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-04",
+      "name": "蓝绿空间与海绵城市",
+      "covered": true,
+      "evidence": [
+        "proposal.md#bluegreen",
+        "geometry/green_space.geojson"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-05",
+      "name": "绿色低碳与能耗",
+      "covered": true,
+      "evidence": [
+        "proposal.md#bluegreen",
+        "VAL-03"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-06",
+      "name": "TOD 与慢行系统",
+      "covered": true,
+      "evidence": [
+        "proposal.md#mobility",
+        "geometry/roads.geojson"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-07",
+      "name": "数据安全与算法治理",
+      "covered": true,
+      "evidence": [
+        "proposal.md#ecosystem",
+        "AIE-06"
+      ],
+      "needs_official_file": true
+    },
+    {
+      "id": "STD-08",
+      "name": "公共服务设施配套",
+      "covered": true,
+      "evidence": [
+        "proposal.md#services",
+        "UP-01..UP-06"
+      ],
+      "needs_official_file": true
+    }
+  ]
+}

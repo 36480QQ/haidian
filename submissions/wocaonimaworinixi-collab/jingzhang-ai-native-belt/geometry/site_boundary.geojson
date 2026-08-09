@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_by": "provisional geometry generator (no official polygons supplied)",
+    "crs": "EPSG:4326",
+    "geometry_role": "provisional_constraint",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "note": "Provisional envelope only. Not an official redline. Recompute against EPSG:4548 when official data arrives."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SITE-001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.326,
+              39.971
+            ],
+            [
+              116.35,
+              39.979
+            ],
+            [
+              116.354,
+              39.999
+            ],
+            [
+              116.33,
+              39.991
+            ],
+            [
+              116.326,
+              39.971
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "SITE-001",
+        "layer": "site_boundary",
+        "source_type": "provisional_generated",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "area_sqm_declared": 4253767.6
+      }
+    }
+  ]
+}
