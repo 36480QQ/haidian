@@ -1,13 +1,13 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.851,
+ "overall_ratio": 0.857,
  "floor": 0.75,
  "sections": [
   {
    "section": "Executive brief, one page",
-   "zh_chars": 547,
+   "zh_chars": 551,
    "en_words": 424,
-   "ratio": 0.989,
+   "ratio": 0.982,
    "pass": true
   },
   {
@@ -19,16 +19,16 @@
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 4199,
-   "en_words": 2590,
-   "ratio": 0.787,
+   "zh_chars": 4842,
+   "en_words": 3053,
+   "ratio": 0.804,
    "pass": true
   },
   {
    "section": "Three-Level Scope Framework",
-   "zh_chars": 685,
-   "en_words": 694,
-   "ratio": 1.292,
+   "zh_chars": 726,
+   "en_words": 752,
+   "ratio": 1.321,
    "pass": true
   },
   {
@@ -54,16 +54,16 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10009,
-   "en_words": 6448,
-   "ratio": 0.822,
+   "zh_chars": 10512,
+   "en_words": 6831,
+   "ratio": 0.829,
    "pass": true
   },
   {
    "section": "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-   "zh_chars": 1734,
-   "en_words": 1224,
-   "ratio": 0.9,
+   "zh_chars": 2136,
+   "en_words": 1498,
+   "ratio": 0.895,
    "pass": true
   },
   {
@@ -75,23 +75,23 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 2657,
-   "en_words": 1627,
-   "ratio": 0.781,
+   "zh_chars": 2780,
+   "en_words": 1721,
+   "ratio": 0.79,
    "pass": true
   },
   {
    "section": "Renewal Projects, Implementation Policy, and Phasing",
-   "zh_chars": 2356,
-   "en_words": 1473,
-   "ratio": 0.797,
+   "zh_chars": 2395,
+   "en_words": 1512,
+   "ratio": 0.805,
    "pass": true
   },
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
-   "zh_chars": 1640,
-   "en_words": 1071,
-   "ratio": 0.833,
+   "zh_chars": 1857,
+   "en_words": 1224,
+   "ratio": 0.841,
    "pass": true
   },
   {
@@ -103,9 +103,9 @@
   },
   {
    "section": "References",
-   "zh_chars": 934,
-   "en_words": 769,
-   "ratio": 1.05,
+   "zh_chars": 1080,
+   "en_words": 886,
+   "ratio": 1.046,
    "pass": true
   }
  ],

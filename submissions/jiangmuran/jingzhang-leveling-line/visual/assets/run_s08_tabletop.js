@@ -109,6 +109,16 @@ const CASES = [
     },
   },
   {
+    id: 'C6b-non-ai-path-omitted',
+    rule: 'omitting the non-AI path field is not the same as satisfying it',
+    expect: 'reject',
+    build: () => {
+      const r = clone(BASE);
+      delete r.verdict.non_ai_path_available;
+      return r;
+    },
+  },
+  {
     id: 'C7-resumption-after-one-pass',
     rule: 'rule 7: two consecutive passes are required, because once may be luck',
     expect: 'reject',

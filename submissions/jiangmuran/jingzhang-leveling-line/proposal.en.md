@@ -695,6 +695,17 @@ So the mechanism was run. Eight cases, one per rule, each put through **the ship
 
 **What it proves and what it does not have to be written separately.** It proves the decision logic is reproducible and that the refusal branches fire. It does **not** prove any field reading, any real review party, any service performance, or even that anyone would take a reading at all — the numbers are worked values chosen to exercise branches. Treating a tabletop as operational evidence is precisely the substitution this proposal argues against.
 
+**And this mechanism has just been caught fail-open by someone else, which is recorded here.** Reviewing PR #1002, [@anselasimov-web](https://github.com/anselasimov-web) pointed out that `verdict.non_ai_path_available` is not required in `closure-record.schema.json` and that `check_closure.js` rejects only an explicit `false` — so **a record that simply omits the field passes both the schema subset and the mechanism check**.
+
+The rule bypassed that way is the one this proposal repeatedly calls non-waivable: every scenario keeps an equivalent non-AI path. Bypassing it required no falsehood, only silence.
+
+The shape of the defect is identical to the ones this package reports elsewhere: **a check that asks whether something was said wrongly rather than whether it was said at all.** This proposal has made that same error three times before — in translation coverage, in CJK leakage, and in the build's own verdict expression. This is the fourth, and the first found by someone else.
+
+Fixed in both layers: the schema now requires the field with `const: true`, and `check_closure.js` refuses absence by name, on the principle that a contract enforced in only one of two places is the same defect one level down. The tabletop gains the omitted-field case the reviewer asked for, C6b, and now runs **nine cases — two accepted, seven refused**. The shipped example record is unaffected and still passes.
+
+**That this happened is the best evidence for the method.** A mechanism that is public, executable, and has its refusal branches written down in a file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
+
+
 (This section made its own mistake once. The runner initially printed the wrong expectation — it read a field that does not exist on the result object, so every line said `expected reject` even where the case expected acceptance. **A file whose entire job is honest reporting, misreporting what was expected.** Fixed, with the reason left in the code.)
 
 **Rule 8 is one this proposal cannot supply, and says so: closure error cannot measure whether something helps.**
@@ -949,17 +960,20 @@ Metrics fall in three classes, held in `metrics.json`, `assumptions.json` and `c
 | [metric:site_area_sqm] | 11,412,825 m² (11.41 km²) | Provisional overall design area; agrees with the announcement's ~11.4 km² |
 | [metric:leveling_spine_length_m] | 9,443 m | Design centreline length |
 | [metric:benchmark_count] | 8 | 1 origin + 2 first-order + 2 second-order + 3 third-order |
-| [metric:green_ratio] | 0.2025 | The full 120 m spine corridor ÷ overall design area |
-| [metric:green_ratio_in_partition] | 0.1227 | The part classed 1401 in the land-use partition ÷ overall design area |
+| [metric:green_ratio] | 0.1966 | The full 120 m spine corridor ÷ overall design area |
+| [metric:green_ratio_in_partition] | 0.1220 | The part classed 1401 in the land-use partition ÷ overall design area |
+| [metric:phasing_union_area_sqm] | 2,920,311 m² | The three disjoint phase increments summed; the phasing layer entered no metric and no check before this |
 | [metric:public_space_ratio] | 0.0642 | Public measurement-point area ÷ overall design area |
 | [metric:building_footprint_area_sqm] | 82,276 m² | Union of indicative footprints, order of magnitude only; 82,413 m² was the circular-footprint value and is superseded |
 | [metric:key_area_count] | 3 | Count from the announcement; geometry provisional |
 
 Because boundaries are provisional, all of the above are **recomputed as a whole**, never substituted file by file, when official polygons appear. Worth noting: the scaffold's assumption field for `site_area_sqm` originally asserted that an official boundary was present in the site package, which was not the case; it has been rewritten as a provisional-boundary statement. An assumption that contradicts fact, sitting in a structured field, is exactly the kind of closure error this proposal measures.
 
-**Why green carries two numbers, and why that is a convention rather than a contradiction.** An independent audit found `green_space.geojson` and `land_use.geojson` disagreeing by **910,890 m²** about the same corridor, with `metrics.json` publishing only the larger. Checked, the relationship is exact: the full corridor is 2,311,006.7 m², of which 910,890 m² runs through the three key areas — 488,533 m² inside LU-002, 209,080 m² inside LU-003, 155,671 m² inside LU-004, 57,605 m² inside LU-001 — and the partition gives each parcel its **dominant** use, leaving 1,400,117.1 m² classed 1401.
+**First, a correction that runs against this proposal: the old 0.2025 counted 66,925 m² of this proposal's own building footprints as green space.** The corridor is a 120 m buffer of the spine, the six footprints stand inside that buffer, and they had never been subtracted from the green layer. The error ran in the author's favour, and a reading that flatters its author deserves naming more than a random one does. Subtracted now: `green_ratio` falls from **0.2025 to 0.1966**, behind a gate requiring the intersection of the green layer and the building layer to be 0 m² within 1 m², which names the offending buildings when it fires.
 
-Both numbers are true; what was missing was saying so. **Both now ship, and both are recomputed independently by `verify.js`**: 0.2025 from the green layer, 0.1227 from the land-use layer. Publishing only the first meant a reviewer recomputing from land use would land on a different figure with no way to tell which one counted — **and a recomputation that can reach two answers is not a recomputation.**
+**Why green carries two numbers, and why that is a convention rather than a contradiction.** `green_space.geojson` and `land_use.geojson` give two areas for the same corridor, and `metrics.json` used to publish only the larger. With the footprints out of both layers, exactly one thing is left to explain the difference, and it closes to the metre: the corridor is 2,244,081.8 m², of which 851,785 m² falls inside the three key areas and the L1 cultural parcel — 459,609.3 m² in LU-002, 209,080.4 m² in LU-003, 134,913.8 m² in LU-004, 48,181.2 m² in LU-001 — and the partition gives each parcel its **dominant** use, leaving 1,392,297.1 m² classed 1401. 851,784.7 + 1,392,297.1 = 2,244,081.8.
+
+Both numbers are true; what was missing was saying so. **Both now ship, and both are recomputed independently by `verify.js`**: 0.1966 from the green layer, 0.1220 from the land-use layer. Publishing only the first meant a reviewer recomputing from land use would land on a different figure with no way to tell which one counted — **and a recomputation that can reach two answers is not a recomputation.**
 
 **Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
 

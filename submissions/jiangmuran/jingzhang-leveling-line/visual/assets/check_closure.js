@@ -150,6 +150,17 @@ if (parties.size < 3) {
              `A full cycle must include all four; a three-station trial circuit cannot.`);
 }
 
+// Omission used to pass. The field was optional in the schema and this check
+// only looked for an explicit `false`, so a record that simply left it out
+// cleared both — fail-open on the one rule the proposal calls non-waivable.
+// Caught in review of PR #1002 by @anselasimov-web. The schema now requires
+// the field with const true; this states the same refusal in the reader's own
+// words, because a contract enforced in only one of the two places is the
+// defect one layer down.
+if (record.verdict && !('non_ai_path_available' in record.verdict)) {
+  fail('verdict.non_ai_path_available is absent: the equivalent non-AI path is not waivable, so ' +
+       'omitting the field cannot be treated as satisfying it. State it explicitly as true.');
+}
 if (record.verdict && record.verdict.non_ai_path_available === false) {
   fail('verdict.non_ai_path_available is false: a scenario with no non-AI equivalent cannot be returned, ' +
        'because returning it would interrupt public service — so the stop rule would be circumvented');
