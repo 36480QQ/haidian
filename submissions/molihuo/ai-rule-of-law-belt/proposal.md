@@ -86,6 +86,10 @@ iteration: "v0.1"
 
 英文命名对应：第一层 **First City of AI Rule-of-Law Endeavor**（总纲），第二层 **Centennial Jing-Zhang AI Rule-of-Law Belt**（品牌），第三层 **Zhi-Li Belt, Rule-of-Law Jing-Zhang：Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt as the First City of AI Rule-of-Law Endeavor**。
 
+#### 名称铁律（不可协商条款）
+
+**本方案名称无论后续如何迭代修订，必须完整保留「人工智能法治事业建设第一城」这一表述，不得删除、缩写、替换或弱化。** 具体而言：正式方案全称（第三层）必须以「智理一带·法治京张：人工智能法治事业建设第一城百年京张AI创新带城市设计方案」为唯一标准名称；任何版本（frontmatter、正文标题、可视化、图件、PDF、PR 标题、对外材料）引用方案名称时，均须包含「人工智能法治事业建设第一城」完整八个字（英文对应 First City of AI Rule-of-Law Endeavor）。「AI 法治事业第一城」仅可作为简称，且首次出现时必须伴随全称。
+
 ![方案 Logo（方向示意）](assets/figures/logo.png)
 
 Logo 视觉母题（仅作方向示意）：以「天平+轨道」为核心——上横线借鉴铁轨枕木意象，下方为变形的衡平符号，三处重点片区对应「法源·法测·法市」三组嵌入式节点，环绕「法坛」中轴。不使用企业、商标、字体或人物肖像 [depth:risk_missing_data]。

@@ -86,6 +86,10 @@ In one sentence: **under the name "First City" we raise the banner; along the Ji
 
 English mapping: Tier 1 **First City of AI Rule-of-Law Endeavor** (master), Tier 2 **Centennial Jing-Zhang AI Rule-of-Law Belt** (brand), Tier 3 **Zhi-Li Belt, Rule-of-Law Jing-Zhang: Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt as the First City of AI Rule-of-Law Endeavor** (full).
 
+#### Name Non-Negotiable Clause
+
+**Regardless of any future iteration or revision, the proposal name must retain the full expression "人工智能法治事业建设第一城" (First City of AI Rule-of-Law Endeavor) — it may not be deleted, abbreviated, substituted or weakened.** Concretely: the official full title (Tier 3) is fixed as "Zhi-Li Belt, Rule-of-Law Jing-Zhang: Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt as the First City of AI Rule-of-Law Endeavor"; any version (frontmatter, body heading, visualisation, figures, PDF, PR title, external materials) that cites the proposal name must include the complete expression. "AI Rule-of-Law First City" may be used only as an abbreviation and must be accompanied by the full title at first mention.
+
 ![Proposal logo (direction indication)](assets/figures/logo.png)
 
 Logo visual motif (direction indication only): "scales + rail" as the core — the upper crossbar borrows from rail-tie imagery, the lower part is a stylised justice-symbol, the three key areas embed as three coloured nodes (Source / Test / Market), and the central "Forum" axis is wrapped by a gold ring. No corporate, trademark, font or portrait elements are used [depth:risk_missing_data].
