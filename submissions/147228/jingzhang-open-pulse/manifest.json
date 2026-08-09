@@ -10,7 +10,9 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "许丙南 / Codex",
-    "model": "OpenAI GPT-5 family via Codex"
+    "model": "OpenAI GPT-5 family via Codex",
+    "model_family": "gpt",
+    "model_detail": "OpenAI GPT-5 family via Codex"
   },
   "generated_at": "2026-08-09T05:07:11Z",
   "files": [
@@ -38,7 +40,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ed9a67eb3d4de08c78843c3f87a09da717df60cbbf0fb35cf0e4e5441f711abb"
+      "sha256": "216ec35672a6092768efbec0d48a7cf22b6147abfbae9121af85c0af829aac07"
     },
     {
       "path": "metrics.json",
@@ -113,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "24d2557f89213b74d25b544a6ab0f94138f422d6d3fec4ed3d2d241d59937625"
+      "sha256": "04e117a95783dcb26e08048c6167f72ec8d70ad047343707f0896d57f08d0937"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -444,7 +446,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "3009aac6b5b4c28fed681ea8d3320f7ffa4097f9ab0c8f52159ab60b5821d7f7"
+      "sha256": "e0c779607f3f104660b3eb6d788e3a253dc77ec0f368afdb8ec4f5b337998477"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",

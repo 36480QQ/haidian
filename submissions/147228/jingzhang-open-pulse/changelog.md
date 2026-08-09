@@ -2,6 +2,7 @@
 
 ## v3.4 - 2026-08-09
 
+- 跟进主线新增的结构化模型披露字段：在 `agent.json` 与 `manifest.json` 中补齐 `model_family=gpt` 和明确的 `model_detail`，保持模型身份可聚合且不使用脚手架占位符；同步版权台账与 manifest 哈希。
 - 将公开提案、双语 HTML 与任务书交叉索引中的内部竞争性版本标题改为中性的“证据与交付层 / Evidence-to-Delivery Layer”，不改变设计、指标或证据内容，避免把评审过程语言带入正式方案。
 
 ## v3.3 - 2026-08-09
