@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://open-city.ai/schemas/civic-adoption-passport-0.1.0.json",
-  "title": "Jing-Zhang Civic Adoption Passport",
-  "description": "A concept-only, machine-readable evidence contract for deciding whether an AI-enabled project may move from civic commission to controlled test, public premiere, sustained adoption, renewal, or exit. It is not a government permit or approval.",
+  "$id": "https://open-city.ai/schemas/jingzhang-civic-conversion-accountability-chain-1.0.0.json",
+  "title": "Jing-Zhang Civic Conversion Accountability Chain",
+  "description": "A concept-only, machine-readable accountability record connecting technical results, civic products, public use, whole-life delivery, adoption, renewal, and exit. It is not a government permit, product certification, procurement endorsement, approval, or executed legal contract.",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "schema_version",
-    "passport_id",
+    "chain_record_id",
     "proposal_status",
     "commission",
     "five_accounts",
@@ -21,9 +21,9 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "0.1.0"
+      "const": "1.0.0"
     },
-    "passport_id": {
+    "chain_record_id": {
       "type": "string",
       "pattern": "^[A-Z0-9][A-Z0-9-]{5,80}$"
     },
