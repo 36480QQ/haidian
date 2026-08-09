@@ -101,38 +101,38 @@
     },
     {
       "check_id": "BILINGUAL_PARITY",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "proposal.en.md",
-      "message": "待双语正文与报告生成后复核。"
+      "message": "中英文正文采用相同13节结构、指标、证据引用和五处图位，双语HTML、图件与图纸均已配对。"
     },
     {
       "check_id": "FIGURE_PAIRING",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "assets/figures/",
-      "message": "待五组中英文图完成后复核。"
+      "message": "五组图均提供2400×1600中英文版本，指标图从metrics.json读取当前数值。"
     },
     {
       "check_id": "PDF_PAGE_COUNT",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "drawings/",
-      "message": "待A3与A0 PDF生成后复核页数和可读性。"
+      "message": "中英文A3图册各10页且为A3横版；中英文A0展板各3页且为A0横版，已逐页渲染目视检查。"
     },
     {
       "check_id": "OFFLINE_HTML",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "visual/index.html",
-      "message": "待双语离线HTML生成后复核远程依赖。"
+      "message": "双语报告与可视化为完整静态HTML，仅使用包内相对路径，无脚本、表单、iframe或远程依赖。"
     },
     {
       "check_id": "COPYRIGHT_CLEARED",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "report/copyright_statement.md",
-      "message": "待所有派生图与文字定稿后复核。"
+      "message": "文字、几何派生图、PDF和HTML均为本次原创生成并以CC BY 4.0发布；不含未清权第三方图片或商业地图。"
     }
   ]
 }
