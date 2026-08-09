@@ -4,7 +4,7 @@ author_github: "jiangmuran"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call and on the site itself, produced two measured findings that are reported here including the ones that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
+summary: "Leveling is not about measuring accurately once; it is about measuring back. Depart from a datum, run the circuit, return — and the closure error decides whether the whole line is trusted. This proposal applies that hundred-year-old rule where a wrong reading injures someone: low-speed robots, autonomous shuttles, and AI health, education, legal and daily services. The same instrument, turned on this open call and on the site itself, produced measured findings that are reported here including the ones that count against this submission. Concept advice on provisional boundaries; not a substitute for statutory planning."
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -19,7 +19,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 >
 > **So this proposal does not open with "urban AI governance". It opens where a wrong reading injures a person.** Low-speed robots and autonomous shuttles; AI health, education, legal and daily services. What those need is not a cleverer model. It is an institution that can show the system **measures back**.
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 228 merged proposals measured at the time of writing, 140 declare the governance track, and evidence-chain language appears in 35.1% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies that tool to the two thinnest tracks in the field — `robotics-autonomous-mobility` (6 of 228 by label, 2.6%) and `ai-public-services` (19, 8.3%). Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 298 merged proposals at the most recent measurement, 189 declare the governance track, and evidence-chain language appears in 31.5% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **12 of 298 by label (4.0%)**, the thinnest of the eight tracks and under half the next; `ai-public-services` is **26 (8.7%)**, tied for second-thinnest with `youth-friendly-public-space` (25). Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
 
 ## Design Basis and Source List
 
@@ -27,9 +27,9 @@ The first authority is the official prequalification announcement for the intern
 
 Mandatory professional standards are read from the local reference snapshots rather than from a URL alone: urban design administration measures [standard:MOHURD-URBAN-DESIGN-MEASURES], regulatory detailed planning measures [standard:MOHURD-CONTROL-DETAILED-PLANNING], the national land-use classification guide [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], architectural design depth provisions [standard:MOHURD-ARCH-DESIGN-DEPTH-2016], the project announcement [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], and the agent taskbook [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Existing-condition diagnosis and data gaps correspond to [depth:existing_conditions_diagnosis].
 
-**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the GitHub git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]; it covered **228** proposals with 228/228 fetched and zero failures. A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
+**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the GitHub git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]; its most recent run (2026-08-09) covered **298** proposals with 298/298 fetched and zero failures; the three earlier runs covered 184, 215 and 228. A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
 
-The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags: at the same moment it listed 184, i.e. **44 fewer (19.3%)** than the repository held, and the gap is widening. A review instrument has to read the authoritative source; that is this proposal's first methodological obligation to itself.
+The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags. **This observation reversed under this proposal's own re-measurement, and is recorded as such:** on 8 August it listed 184, i.e. 44 fewer (19.3%) than the repository held, unchanged between two censuses, which read as a widening gap; on 9 August it measured 292 of 298, a lag of **6 (2.0%)**. The index has plainly been caught up. This proposal claims no credit — causation cannot be shown and there is no evidence the change relates to this report; it is written here because a mechanism that only re-measures when the result flatters it is not a mechanism. **What survives is the methodological part: a review instrument must read the authoritative source (the git tree), not a derived index that may lag by an amount which itself varies.**
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
@@ -41,36 +41,60 @@ Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. T
 
 An instrument that claims to make city AI re-measurable should first be pointed at the object closest to home.
 
-This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 228 merged proposals and PR numbers past 500, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
+This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 298 merged proposals and PR numbers past 900, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
 
 **Reading one: the field has converged, and the brief induced the convergence.**
 
 | Structural motif | Proposals | Share |
 |---|---|---|
-| Three cores / three stations | 127 | 55.7% |
-| Two wings | 104 | 45.6% |
-| Evidence chain / recomputable | 80 | 35.1% |
-| One spine / one belt | 78 | 34.2% |
+| Three cores / three stations | 152 | 51.0% |
+| Two wings | 120 | 40.3% |
+| Evidence chain / recomputable | 94 | 31.5% |
+| One spine / one belt | 93 | 31.2% |
 
 The taskbook prescribes "three areas, two wings", so more than half the field draws the same skeleton. That is not consensus; it is the question shape. **Drawing that skeleton again adds nothing.** What adds something is stating the mechanism by which those units hand responsibility to one another.
 
-**Reading two: track coverage is severely uneven.** 154 proposals declare traffic and walkability, 140 governance, 133 enterprise services — against **6** for robotics and autonomous mobility and **19** for AI public services.
+**Reading two: track coverage is severely uneven.** 202 proposals declare traffic and walkability (67.8%), 189 governance (63.4%), 174 enterprise services (58.4%) — against **12** for robotics and autonomous mobility (4.0%), 25 for youth-friendly public space, and **26** for AI public services (8.7%).
 
-Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed both directions of error: one declares the robotics track while its "robots" are ecological sensing devices, and another substantively treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors while never declaring the track at all. So the precise statement is: **six by label, slightly more in substance, and thinnest of the eight either way** — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
+Both of this proposal's tracks thickened between measurements — robotics 6 to 12, public services 19 to 26 — but their relative position did not change: robotics remains the thinnest by a factor of two. **The wording is adjusted rather than defended**: public services is now tied for second-thinnest, one proposal apart from youth-friendly public space, so calling it "the second thinnest" would be inaccurate.
+
+Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed both directions of error: one declares the robotics track while its "robots" are ecological sensing devices, and another substantively treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors while never declaring the track at all. So the precise statement is: **twelve by label, slightly more in substance, and thinnest of the eight either way** — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
-`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 159 filled in, **69 (30.3%) still hold the scaffold placeholder or are empty**.
+`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 211 filled in, **87 (29.2%) still hold the scaffold placeholder or are empty**.
 
-And the 159 that are filled in use **84 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **44 different ways** across 103 proposals.
+And the 211 that are filled in use **99 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **50 different ways** across 138 proposals.
 
 **No one can aggregate "which models produced this call" from that field.** It is populated but not aggregable — a more useful finding than "some people left it blank", and one that implicates no author. Occupancy of a placeholder does not mean concealment; many declared their model in `authorName` or in prose. String divergence is not anyone's fault either — the field offers no enumeration. The fix is light: split `model` into an enumerated family plus a free-text detail, and add one enumeration check to the gates. That proposal, the data and the scripts are all in the accompanying issue.
 
-Motif and structure detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**. The corpus grows daily; re-run before citing. Three independent runs put the undisclosed share at 29.9% (184 proposals), 30.7% (215) and 30.3% (228) — under one percentage point of drift, which is what makes it a structural property rather than snapshot noise.
+Motif and structure detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**. The corpus grows daily; re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any single snapshot.** Four independent runs:
+
+| Run | Corpus | Disclosure field empty |
+|---|---|---|
+| First | 184 | 29.9% |
+| Second | 215 | 30.7% |
+| Third | 228 | 30.3% |
+| Fourth | **298** | **29.2%** |
+
+The corpus grew **62%** over that span while the gap stayed inside a 1.5-point band, 29.2–30.7%. A ratio that does not move while the corpus grows by three-fifths is not snapshot noise but a **structural property** — it does not depend on who enters, but on the field having no enumeration and no gate that checks it. This is also why the proposal gives methods rather than numbers: numbers expire, four measurements pointing the same way do not.
 
 ![Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
 None of this weakens the call. It shows the opposite: this open-source mechanism **is genuinely producing checkable public evidence**, and no other city project can be measured this way. What is missing is only the last step — compute the closure error, and give it consequences.
+
+**What the instrument produced, and what it did not.** Both self-collected datasets were published as issues with their re-runnable scripts, and another contributor subsequently opened upstream implementations:
+
+| This proposal's issue | Upstream implementation PR (not by this author) | Content |
+|---|---|---|
+| #840 field census and the disclosure-field defect | **#848** `feat: add structured model disclosure fields` | Exactly the recommended fix: keep free-text `model`, add an enumerated `model_family` with a paired `model_detail`, validated as a pair |
+| #846 OSM boundary cross-check | **#850** `docs: register OSM boundary cross-check limits` | Registers this proposal's readout (0% intersection, 412.5 m nearest distance, 100% research-scope coverage) as `background_only` with ODbL attribution and prohibited uses |
+| #858 CI timing race | #861 | Queue-period false failures from a head_sha / live-file-list mismatch |
+| #883 self-check evidence not persisted | #807 | Transactional persistence of the self-check verdict |
+
+Three things must be stated precisely. **First, all of those PRs were written by someone else; this proposal contributed the measurement, the scripts and the diagnosis** — #848 describes itself as implementing "the low-risk structured disclosure portion of #840", and #850 as recording "the reproducible OSM cross-check raised in #846". **Second, none of the four had merged at the time of writing**, so they are not presented here as effective repository rules. **Third, this proposal claims no credit for the gallery index lag closing from 44 to 6**; causation cannot be shown.
+
+This section is not a record of merit. It is an external test of the proposal's central claim: a reading that can be independently re-run was in fact reproduced and adopted by another party. **That is precisely what the closure mechanism asks for — readings taken independently by different parties, with consequences attached.** The same rule binds this proposal: if upstream ultimately finds these measurements wrong, the package is recomputed as a whole rather than keeping the parts that flatter it.
 
 ### Act Two: the same instrument on the site, and what it found in the site data
 
@@ -169,6 +193,8 @@ Statutory regulatory planning gives numbers. Urban design gives **relationships*
 
 **View corridors.** Longitudinal sky corridors along the spine and lateral corridors to railway heritage structures are protective requirements; the controlling surfaces must be fixed after official regulatory conditions and heritage boundaries are published, and are not pre-empted here.
 
+**Development intensity and height.** This proposal gives **no** figures for floor area ratio, building height, density, setbacks or road redlines [depth:development_intensity_controls] [depth:height_massing_character]. These are statutory regulatory-plan controls and must follow official conditions [standard:MOHURD-CONTROL-DETAILED-PLANNING]; supplying numbers while official data is absent is fabricated certainty. What is given instead are form principles, and they are generated into numbers and recomputed as a whole once official conditions are published.
+
 **Relative heights.** No absolute figures. Three rules instead: frontages immediately on the spine are **no taller** than those behind them; heritage nodes cap at existing height; key areas rise from the spine outward. All three hold under any official numbers, so they will not be invalidated by publication.
 
 **Parcel grain.** Over-deep, single-ownership super-parcels along the spine inevitably produce long blank frontages and leave no place for a cross-jurisdiction benchmark. Grain must be set against actual ownership; the principle is given, the dimension is not.
@@ -187,9 +213,9 @@ Each key area carries one survey role, and the three check one another [depth:th
 
 **Zhongzhiyuan AI Autonomous Innovation Acceleration Area — BM-1, the datum of origin.** A datum should sit where conditions are most stable. Zhongzhiyuan carries full-stack autonomous innovation and standard-setting, and is where tolerance F is decided — **the place that sets the standard should not also be the place under daily operating pressure**, or the standard drifts. Programme: R&D and pilot production, a standard test field, a tolerance chamber as a standing public space for setting and revising F, and an industry display frontage. The test field must be enclosable, pausable and reversible; its controlled boundary is [data:geometry/constraints.geojson#CONSTRAINT-001]. Retain-renovate-demolish: renovation-led; no demolition conclusions. Servicing traffic is freight-like and must be separated from the pedestrian spine. Scenarios: S11 industry validation and S10 public-safety operations review, both F1 and both **never automatically executed**.
 
-**Beijing AI Origin Community — BM-0, the network origin.** The origin must be where the public can most easily reach and where knowledge production is nearest. Programme: near-campus innovation, incubation, a talent district and an open-source system. The new element is a **public evidence hall** — permanent, searchable display of every proposal in this call and of all subsequent re-survey readings, open with no access control. The landmark is the **origin benchmark stone** (BLDG-001), flush with the ground, with contributor numbers set into the surrounding paving. Residential provision must not be reduced to make room for innovation functions. Campus-to-park walking directness is the key move, judged by the **actual walking time** of personas P4 and P5, not by straight-line distance.
+**Beijing AI Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] — BM-0, the network origin.** The origin must be where the public can most easily reach and where knowledge production is nearest. Programme: near-campus innovation, incubation, a talent district and an open-source system. The new element is a **public evidence hall** — permanent, searchable display of every proposal in this call and of all subsequent re-survey readings, open with no access control. The landmark is the **origin benchmark stone** (BLDG-001), flush with the ground, with contributor numbers set into the surrounding paving. Residential provision must not be reduced to make room for innovation functions. Campus-to-park walking directness is the key move, judged by the **actual walking time** of personas P4 and P5, not by straight-line distance.
 
-**Dazhongsi AI Industry Cluster — BM-2, the high-frequency reading point.** Consumption and business frontages carry the densest use, which is exactly where service-AI variance shows — **high frequency is a resource for readings, not a burden**. Programme: leading firms and intelligent terminals, content consumption, data-factor circulation. **Four-quadrant pedestrian connection at the intersection** is the most concrete spatial task here and also the key location for device queue storage: without it, devices and pedestrians necessarily contend for the same waiting area. This area's benchmark spans **three jurisdictions** — municipal road, rail station and commercial property — the most complex on the line.
+**Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] — BM-2, the high-frequency reading point.** Consumption and business frontages carry the densest use, which is exactly where service-AI variance shows — **high frequency is a resource for readings, not a burden**. Programme: leading firms and intelligent terminals, content consumption, data-factor circulation. **Four-quadrant pedestrian connection at the intersection** is the most concrete spatial task here and also the key location for device queue storage: without it, devices and pedestrians necessarily contend for the same waiting area. This area's benchmark spans **three jurisdictions** — municipal road, rail station and commercial property — the most complex on the line.
 
 **Shared retain-renovate-demolish principles** [depth:retain_renovate_demolish]: railway heritage structures are retained in principle, with their engineering language and not merely their shell; sound buildings with clear title are renovated first, prioritising ground-floor publicness and frontage continuity; undisputed low-efficiency vacant land goes first to benchmarks and public space rather than to new development; **no relocation of residents is proposed anywhere in this document**.
 
@@ -375,7 +401,7 @@ The Jing-Zhang railway was the first trunk line surveyed, designed and built by 
 
 **Heritage inventory, and what is in scope.** A proposal claiming heritage narrative without naming a single heritage asset is doing rhetoric, not narrative. In scope: the **former Tsinghua Garden Station** near BM-0, the core anchor, whose protection zone and construction control area directly constrain nearby benchmark and facility siting — **its GIS layer is a data gap listed in the repository's own missing-data record, and is not inferred here**; **Beijing North Station** at the southern end, the line's mileage origin and the real reference for spine K0; the **Taipinghu depot**, an industrial heritage frontage and the physical basis for the "honesty of infrastructure" character; and the existing alignment and engineering structures along the spine — sleepers, ballast, signal posts, mileposts — retained and annotated in situ, requiring survey to enumerate.
 
-Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and **21 proposals in this call build their identity on it** [source:FIELD-CENSUS-2026-08]. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
+Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and **25 proposals in this call build their identity on it** [source:FIELD-CENSUS-2026-08]. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
 
 **International communication copy.** The usual problem is not poor writing but **unverifiability**. Every line here points at something checkable: *A city that publishes its own error.* / *Not how well it performed once. Whether it measures back.* / *No benchmark, no robot.* / *This mark does not grant trust. It declares that the claim can be re-measured.* No "world-leading" or "benchmark-setting" phrasing is used — unfalsifiable claims are also the first to fail in cross-cultural transmission.
 
@@ -444,7 +470,7 @@ Metrics fall in three classes, held in `metrics.json`, `assumptions.json` and `c
 
 Because boundaries are provisional, all of the above are **recomputed as a whole**, never substituted file by file, when official polygons appear. Worth noting: the scaffold's assumption field for `site_area_sqm` originally asserted that an official boundary was present in the site package, which was not the case; it has been rewritten as a provisional-boundary statement. An assumption that contradicts fact, sitting in a structured field, is exactly the kind of closure error this proposal measures.
 
-**Class 2, requiring official regulatory support, held at `unknown`:** floor area ratio, building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
+**Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
 
 **Class 3, requiring continuous re-survey calibration, currently without baselines:** per-scenario closure error f, tolerance compliance rate, non-AI path coverage, and the count of re-surveys initiated by P4/P5/P7. Baselines must be established after one cycle of near-term operation; **this proposal states plainly that no data exists rather than passing design intent off as measurement.**
 
