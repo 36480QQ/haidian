@@ -173,13 +173,35 @@ The cultural narrative uses engineering proof, open collaboration and public rec
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The proposal avoids false precision. Building scale is expressed as a design relationship—heritage line, public node, quiet edge, enterprise interface and service courtyard—until official height, FAR, heritage and municipal constraints are supplied. Each future project must record whether an existing building is retained, renovated or removed, the reason, embodied-carbon implication, displacement risk, temporary public route and maintenance owner.
+The land-use layer forms a complete, closed and non-overlapping eight-class provisional design partition based on the published classification standard. The building layer distinguishes retain, renovate, renew, new-build and to-be-confirmed objects, and records the proposed level of control for building footprint, use, character, massing and height in the matrices. Existing buildings, ownership, regulatory plans and engineering conditions are incomplete; therefore the retain-renovate-demolish register records a method and a calibration checklist, not predetermined conclusions.
+
+Land-use classification follows the published classification standard. Building height, massing, interface and character controls are managed in the depth matrices, while the retain-renovate-demolish method is managed by the corresponding calibration checklist.
+
+The principal land-use and building evidence is carried by the structured geometry and metric layers.
+
+Building-scale and intensity indicators must remain consistent with `metrics.json` and the geometry layers. Total floor area, FAR, building height, building-density, green-ratio, setbacks and building-control lines are marked `unknown` or `pending_control` because official conditions are missing; no fixed number is used to manufacture precision. The submitted A3 booklet contains the renewal-project list and indicator review table, the A0 boards foreground the key spatial structure and areas, and the offline HTML provides the linked indicator and layer audit entry.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-The rail corridor is treated as a civic seam rather than a barrier. The design prioritises safe crossings, legible station approaches, cycle and wheelchair continuity, emergency access and low-speed delivery windows. Drainage is a visible operating system: rainwater tree pits, inlet inspections, post-storm work orders and no-device-dependent overflow paths are paired with any future sensing.
+The central transport judgement is that the corridor has relatively rich rail resources but a higher risk of discontinuity in the final 300–800 metres. A provisional-area and 800-metre-buffer background screen identifies 16 deduplicated station names and 189 mapped crossing nodes; mapped walking-support lines, cycleways and major road-centreline density are approximately 16.53, 1.06 and 5.47 km/km² respectively. These low-confidence results only set field-survey priorities. They do not establish official station entrances, road red lines, continuous cycling quality or capacity.
+
+This iteration corrects a directional error in the prior spatial evidence: `ROAD-001` was previously only an approximately 1.1-kilometre east–west line and could not support a nine-kilometre innovation belt. v1.3 changes it to an approximately 9.60-kilometre north–south public slow-mobility spine, with east–west stitching branches at the three key areas.
+
+Branch and length checks return to the three branch features. The conceptual network indicators are recorded in the structured metric layer.
+
+The spine and branches describe a network relationship, not a new road, red line or engineering alignment. The North Fifth Ring/Qinghe interface, campus–park–community edges, the four quadrants of Dazhongsi Station, and the North Third Ring–Jingbao Road–Zhichun Road nodes require separate transport, ownership, accessibility and engineering studies. Published public-feedback material confirms that the corridor contains complex interchange and land-use conditions; one concept diagram cannot replace professional judgement.
+
+Resident transport experience is evaluated through six lenses: walking continuity, crossing safety, cycling comfort, rail transfer, night-time comfort and 15-minute daily services. The local baseline is missing, so the satisfaction metric remains `unknown`; the pilot may advance only after a stratified survey reaches 80/100, no resident group is materially behind, and slow-mobility and event-day tests pass.
+
+The park catalogue describes a 24-hour open park with no public external parking area. This proposal therefore does not make a new core parking facility the precondition for events; it prioritises rail, walking, cycling, accessible transfers, peripheral shared parking and reservation management. The complete evaluation protocol, sample, thresholds and failure fallback are in `report/narrative.md`.
+
+Transport and municipal depth are constrained by the transport and infrastructure depth records. Public-space evidence is carried by the structured public-space layer.
+
+The constraints layer records the pending interfaces. Road red lines, station entrances, utilities, fire access, parking and event-day capacity remain pending inputs; the strategy is not written as an approved conclusion.
 
 Public services are human-first. Health navigation is non-diagnostic; enterprise service uses authorised materials and human review; data demonstrations stay in a sandbox; and a network outage switches to printed guidance, staffed counters and ordinary public operations.
+
+The operating matrix places AI industry and innovation services, talent life, new infrastructure, distributed energy, edge computing and conventional municipal systems in one service framework. Each interface records a spatial position, user, accountable operator, service radius and phasing dependency. Utilities, energy, drainage, flood control and fire-safety inputs are incomplete and remain prerequisites for formal deepening; the proposal therefore describes reversible service interfaces, not engineering commitments.
 
 ## Urban Resilience, Embodied Intelligence, and Full-Life-Cycle Iteration
 
@@ -232,7 +254,27 @@ Triggers convert future change into an executable fallback: heat warning reduces
 
 ### Stricter Monte Carlo robustness check
 
-The robustness comparison is a decision experiment, not a field result: its fixed seed, stress states, weights, uncertainty range and counterexample are recorded so a professional team can replace them with measured wind, heat, drainage, accessibility, ecology, cost and maintenance evidence.
+To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment samples five design prototypes under five stakeholder-weight profiles, eight stress states and score noise. It uses 50,000 deterministic Monte Carlo draws with random seed `147228`.
+
+The S4 balanced-adaptation option has an approximately 78.862% win rate, mean regret of 0.314 points, a robust mean score of 72.518 and a P05 score of 70.252. These are comparative design results, not field performance.
+
+The minimum item across the eight stresses and the gate state are recorded in the model-backtest asset. They still require calibration against site data.
+
+The next optimisation direction is therefore explicit: add passive shade and maintainable stormwater storage; reduce dependence on high sensor counts; improve offline operation and human takeover; decouple event capacity from quiet space; and establish asset redundancy and replacement-part standards. The Beijing public meteorological catalogue is a route for later climate calibration, but the Haidian download currently requires a platform user key, so unacquired temperature, rainfall, wind-speed and humidity values are not presented as facts.
+
+Drainage targets must still be reconciled with the published Haidian sponge-city planning context. The ventilation network is background direction at city scale; the provisional spine must not be called an official ventilation corridor.
+
+The next embodied-intelligence validation covers the Beijing embodied-intelligence action plan, service-robot information-security standard and full-life-cycle smart-municipal-infrastructure requirements. A robot must pass data security, offline operation, human takeover and responsibility-traceability tests in addition to physical obstacle avoidance.
+
+Maintenance and ecology are checked against asset-management, bird-friendly and Beijing night-lighting references. Critical facilities need an accountable chain and service-life record; trees, glass and lighting need bird and dark-sky baselines. The proposal does not present any species count, glass-collision rate or night illuminance as an existing-condition conclusion.
+
+Cross-evidence keeps human health, public participation and sustainable operation in one risk table: WHO and IPCC materials indicate that air, noise, heat, blue-green space, mobility safety and extreme rainfall require coordinated checks.
+
+The human-centred intelligence frameworks from NIST and UN-Habitat require explainability, participation, digital rights, equity, interoperability, budgets and continuous monitoring. Resident surveys, accessible-route tests, complaints/appeals and annual review cannot be replaced by robot efficiency.
+
+The Beijing walking/cycling standard provides a local interface for continuity, public-space and street-maintenance checks. Water reports provide interfaces for warning, storage, pre-rain clearing, mixed-connection remediation and emergency dispatch; road-maintenance guidance connects inspection, asset ledgers, flood-season response, bridge/tunnel equipment and emergency handling into the operating loop.
+
+The embodied-intelligence boundary also uses ISO 13482 for mobile/assistive-robot hazard reduction and ISO 55001:2024 for full-life-cycle asset management. The former informs testing, emergency stop, takeover and physical human–machine risk; the latter informs asset performance, risk, expenditure, operation, maintenance and continuous improvement. Neither is a deployment permit or a local procurement standard.
 
 ## All-State Urban Operating System and Director's 30-Second Film
 
@@ -262,6 +304,21 @@ This iteration also makes the identity direction inspectable as a vector mark in
 ![Open Pulse vector mark concept](assets/identity/open-pulse-mark.svg)
 
 ## Renewal Projects, Implementation Policy, and Phasing
+
+This submission defines six renewal projects and registers their locations, types, functions, accountable parties, dependencies, phases, risks, evaluation indicators, phasing ranges and drawing links in `operations-matrix.json`, `construction-readiness.json` and `compliance_matrix.json`. It separates conditional phase bands from data-gap gates: the former express when a later window may become possible, while the latter identify interfaces still requiring official boundary, ownership, road/rail, water, fire and accessibility evidence. Policy interfaces cover urban-renewal coordination, spatial provision, operations, industry services, public participation, data governance and property-rights coordination; `phasing.geojson` expresses a conceptual phase sequence, not an approved construction schedule.
+
+Project-list and phasing depth are managed by the corresponding depth records, with spatial evidence in the phasing layer. Without ownership, funding, an implementation body and an approval route, the proposal records an implementation risk rather than a delivery promise.
+
+| Project | Project name | Type | Main dependency | Evidence |
+| --- | --- | --- | --- | --- |
+| JZ-01 | Jing-Zhang Heritage Park slow-mobility stitching | Public space / transport | Road red lines, under-bridge space and traffic-organisation review | structured road layer |
+| JZ-02 | Zhongzhi Garden Qinghe innovation edge | Blue-green space / industry display | River blue line, ecology and flood-control conditions | structured green-space layer |
+| JZ-03 | Origin Community near-campus transfer street | Urban renewal / industry service | Campus boundary, ownership and ground-floor uses | structured building layer |
+| JZ-04 | Dazhongsi Station four-quadrant pedestrian continuity | Transit integration / slow mobility | Rail station, road intersections and municipal utilities | structured public-space layer |
+| JZ-05 | AI public-service and edge-compute nodes | New infrastructure / public service | Energy, compute, security and operating body | structured constraints layer |
+| JZ-06 | Global AI Week public route | Operations / identity | Public-space permission, event safety and rights clearance | structured phasing layer |
+
+The 100-day open-call design period is kept separate from urban-renewal implementation phases. The 90-day sequence is only a conditional arrangement for locking data, preparing the base, testing passive components and opening one bounded window; it is not a government timetable. Near-term work can begin with physical wayfinding, paper maps, staffed counters and low-disturbance public services. Longer-term renewal, event routes, developer communities and international communication must wait for official regulatory plans, municipal, transport, ownership, permission and accountability evidence. `operations-matrix.json` reserves review fields for operating objects, frequency, responsible party, conversion route, risk and exit rules.
 
 Implementation is a sequence of reversible windows rather than a one-off technology launch:
 
