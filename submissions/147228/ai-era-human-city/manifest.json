@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "344f495fb417f587873522086be508cb61f25fc11dba72de743b081b26d250dd"
+      "sha256": "f29a29ea4921767ce614e8c3c38db811929e87707ee0c9266a8338df1e711431"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4513e70ceafab859fe5241b6a8e4a0fcf8799d98ca913200434178fa79bc98d8"
+      "sha256": "8c56f077af9d21f765e308e4a340a7721a85fda09fa63f55b251d2581d1d0da0"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3e4653052e70b6b30c2d45da95315a5572ca9d1a51b40886b435a25f5ca92f4d"
+      "sha256": "c5b8c204ccf71f3517194273c7fa435c6dcf2273b1f0e45755ced9c5ab57eaef"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4893c55077f5ef380f59ad5b3bc90dbec7f1ad8a5911093c28f01101296abf33"
+      "sha256": "eb0646a5c52a971568e62fd65d0cd35b3dd772aadbc7577f815cb5122d71289f"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2f76718ac1bb5e2310d56730e8f27967409023b1c5196ec89eca7c27f61e7f57"
+      "sha256": "14ea765a31534391db6a7060dc54c3f65225a2dca63f447d639670049bff4c95"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fad3bf20458fa0206b6ae799d00b0d2d0556b1a407764f7c666aa58f8ef045d3"
+      "sha256": "9447b7f104fd8bcf33bdb5556d5a9eb2db0df2e1a5e290f152f6d6e26ffb7439"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b38a155d370a29f81914b03cc183f4ca0a03d60be70d3828f9af6043fed4f9b0"
+      "sha256": "20e20728a43fb3fac4028a1099f0cdf5677a9d4e854bb0ee86ad14123d9abfde"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",

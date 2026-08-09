@@ -4,6 +4,7 @@
 
 - Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: enter/choose, request, take over, appeal/exit, and independently replay before deciding expand/repair/exit.
 - Bound each step to visible service, retained evidence, and a fail-closed action; preserved the G0-only concept boundary and did not add permit, operator, budget, partnership, deployment, or performance claims.
+- Added an offline ordinary-person journey contract and runner: two existing scenario routes resolve to real package features, five journey steps and five rollback steps cover six acceptance checks, and three negative fixtures stop or return to G0 while an ordinary fixture continues. This remains synthetic structure evidence only.
 - Regenerated both offline reports and refreshed package hashes.
 
 ## v0.3 - 2026-08-09

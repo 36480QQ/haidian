@@ -28,7 +28,7 @@ The first G0 acceptance unit is not to deploy AI. It lets an ordinary person ent
 | Raise an objection and leave | Independent redress entrance and deletion/withdrawal notice | Ticket, deadline, disposition and exit state | No G1 progression before closure |
 | Independent replay and decide expand/repair/exit | Evidence cabinet, version board and public observer seat | Replay difference, worst-group result and decision record | Return to the paper protocol if it cannot be replayed |
 
-The package claims only a G0 conceptual evidence chain; G1/G2 still require field work, formal data, professional review and authorization. The five-step chain cross-checks the ten scenario cards, human fallback and implementation matrix without turning concept metrics into service performance [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count].
+The package claims only a G0 conceptual evidence chain; G1/G2 still require field work, formal data, professional review and authorization. The five-step chain cross-checks the ten scenario cards, human fallback and implementation matrix without turning concept metrics into service performance [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]. The new offline runner binds two existing routes to real GeoJSON features and requires 5/5 journey steps, 5/5 rollback steps, 6/6 acceptance checks, and 2/2 resolving routes; three failing fixtures stop, reject a data call, or return to G0 while the ordinary route continues. This proves only local structural replay, not field service, accessibility, staffing, or safety outcomes [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count].
 
 ## Design Basis and Source List
 

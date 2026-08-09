@@ -31,7 +31,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 | 提出异议并离开 | 独立申诉入口、删除/撤回说明 | 工单、期限、处置和退出状态 | 未闭环不得进入 G1 |
 | 第三方复演并决定扩展/返修/退出 | 证据柜、版本牌、公众观察席 | 复演差异、最差组结果、决定记录 | 不能复演则回到纸面协议 |
 
-当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。
+当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。新增的离线 runner 将两条既有路线绑定到真实 GeoJSON 要素，要求 5/5 步骤、5/5 回退、6/6 验收检查和 2/2 路线可解析；三个失败夹具会停止、拒绝数据调用或退回 G0，普通路线则继续。它只证明本地结构可回放，不证明现场服务、无障碍、人员值守或安全结果 [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count]。
 
 ## 设计依据与资料清单
 
