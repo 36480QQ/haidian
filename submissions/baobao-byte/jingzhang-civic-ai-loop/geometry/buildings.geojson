@@ -1,47 +1,558 @@
 {
   "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
   "features": [
     {
       "type": "Feature",
-      "id": "BLDG-001",
       "properties": {
         "id": "BLDG-001",
         "layer": "BUILDING_FOOTPRINT",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
-        "area_sqm_declared": 310807.184
+        "name_zh": "共享安全实验单元",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13035.294,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.341572,
-              39.95475
+              116.346375,
+              40.01545
             ],
             [
-              116.341572,
-              39.97225
+              116.347625,
+              40.01545
             ],
             [
-              116.34344399999999,
-              39.97225
+              116.347625,
+              40.016549999999995
             ],
             [
-              116.34344399999999,
-              39.95475
+              116.346375,
+              40.016549999999995
             ],
             [
-              116.341572,
-              39.95475
+              116.346375,
+              40.01545
             ]
           ]
         ]
-      }
+      },
+      "id": "BLDG-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "全栈协作院落",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13035.66,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349575,
+              40.013450000000006
+            ],
+            [
+              116.350825,
+              40.013450000000006
+            ],
+            [
+              116.350825,
+              40.01455
+            ],
+            [
+              116.349575,
+              40.01455
+            ],
+            [
+              116.349575,
+              40.013450000000006
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "公众观察窗",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13036.055,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343175,
+              40.01145
+            ],
+            [
+              116.344425,
+              40.01145
+            ],
+            [
+              116.344425,
+              40.01255
+            ],
+            [
+              116.343175,
+              40.01255
+            ],
+            [
+              116.343175,
+              40.01145
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "开放转化门诊",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13039.993,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346375,
+              39.99045
+            ],
+            [
+              116.347625,
+              39.99045
+            ],
+            [
+              116.347625,
+              39.99155
+            ],
+            [
+              116.346375,
+              39.99155
+            ],
+            [
+              116.346375,
+              39.99045
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "开源共创工坊",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13040.548,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349375,
+              39.98745
+            ],
+            [
+              116.350625,
+              39.98745
+            ],
+            [
+              116.350625,
+              39.98855
+            ],
+            [
+              116.349375,
+              39.98855
+            ],
+            [
+              116.349375,
+              39.98745
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "社区服务基座",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13040.943,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343075,
+              39.98545
+            ],
+            [
+              116.344325,
+              39.98545
+            ],
+            [
+              116.344325,
+              39.986549999999994
+            ],
+            [
+              116.343075,
+              39.986549999999994
+            ],
+            [
+              116.343075,
+              39.98545
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "消费权益实验室",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13048.07,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346375,
+              39.94745
+            ],
+            [
+              116.347625,
+              39.94745
+            ],
+            [
+              116.347625,
+              39.94855
+            ],
+            [
+              116.346375,
+              39.94855
+            ],
+            [
+              116.346375,
+              39.94745
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "文化叙事驿站",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13048.437,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349375,
+              39.94545
+            ],
+            [
+              116.350625,
+              39.94545
+            ],
+            [
+              116.350625,
+              39.946549999999995
+            ],
+            [
+              116.349375,
+              39.946549999999995
+            ],
+            [
+              116.349375,
+              39.94545
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "人工服务备份点",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13048.456,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343075,
+              39.94545
+            ],
+            [
+              116.344325,
+              39.94545
+            ],
+            [
+              116.344325,
+              39.946549999999995
+            ],
+            [
+              116.343075,
+              39.946549999999995
+            ],
+            [
+              116.343075,
+              39.94545
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "专业服务接口",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13043.367,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349175,
+              39.97245
+            ],
+            [
+              116.350425,
+              39.97245
+            ],
+            [
+              116.350425,
+              39.973549999999996
+            ],
+            [
+              116.349175,
+              39.973549999999996
+            ],
+            [
+              116.349175,
+              39.97245
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "场景复演工坊",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13043.386,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342875,
+              39.97245
+            ],
+            [
+              116.344125,
+              39.97245
+            ],
+            [
+              116.344125,
+              39.973549999999996
+            ],
+            [
+              116.342875,
+              39.973549999999996
+            ],
+            [
+              116.342875,
+              39.97245
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "年度公开复盘厅",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 13037.55,
+        "building_type": "mixed_use",
+        "existing_condition": "unknown",
+        "demolition_decision": "unknown",
+        "renewal_logic": "survey_then_retain_or_retrofit_first"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346375,
+              40.00345
+            ],
+            [
+              116.347625,
+              40.00345
+            ],
+            [
+              116.347625,
+              40.004549999999995
+            ],
+            [
+              116.346375,
+              40.004549999999995
+            ],
+            [
+              116.346375,
+              40.00345
+            ]
+          ]
+        ]
+      },
+      "id": "BLDG-012"
     }
-  ]
+  ],
+  "name": "conceptual_reuse_first_interfaces"
 }
