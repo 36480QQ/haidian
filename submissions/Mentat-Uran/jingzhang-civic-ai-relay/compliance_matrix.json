@@ -894,6 +894,11 @@
         "sc04_acceptance_criterion_count",
         "sc04_stop_condition_count",
         "sc04_rollback_action_count",
+        "sc04_tabletop_rehearsal_count",
+        "sc04_tabletop_fixture_pass_count",
+        "sc04_tabletop_acceptance_pass_count",
+        "sc04_tabletop_stop_check_pass_count",
+        "sc04_tabletop_rollback_step_pass_count",
         "human_handoff_gate_count"
       ],
       "drawings": [
@@ -915,9 +920,10 @@
         "SCENARIO_GOVERNANCE",
         "PROTOCOL_SCHEMA",
         "MINIMUM_SLICE",
+        "SC04_TABLETOP_REHEARSAL",
         "ACCESSIBILITY_PRECHECK"
       ],
-      "evidence_summary_zh": "保留 12 张场景卡并优先深化 SC-04：四份合成 fixture、G0—G6、六项候选验收、四个硬停止、五步回滚和十段 Relay Receipt 同源；结果保持 not_run/null，责任主体未确认即不进入真实试用。"
+      "evidence_summary_zh": "保留 12 张场景卡并优先深化 SC-04：四份合成 fixture、G0—G6、六项验收、四个硬停止、五步回滚和十段 Relay Receipt 同源；本地桌面演练可复跑且有独立证据，运营结果保持 not_run/null，责任主体未确认即不进入真实试用。"
     },
     {
       "requirement_id": "agent.4",
