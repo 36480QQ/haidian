@@ -3,22 +3,31 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-10",
-  "scope": "All 60 files declared by this submission after the bilingual key-area spatial figures and package evidence are integrated, including manifest.json and this ledger itself; 59 entries are non-manifest content files.",
+  "scope": "All 62 files declared by this submission, including manifest.json, this ledger, and the source-rights evidence schema/instance; 61 entries are non-manifest content files.",
+  "evidence_contract": {
+    "source_rights_schema": "source-rights-evidence.schema.json",
+    "source_rights_instance": "source-rights-evidence.json",
+    "manifest_integrity_policy": "../../manifest.json#files",
+    "parent_asset_scope": "parent_asset_refs records declared direct package inputs, not a universal build graph. Completeness is machine-enforced for metrics.json package-local source_files and the documented HTML, figure, and PDF generation inputs.",
+    "disclosure_effect": "audit_ready_not_cleared"
+  },
   "clearance_claim": {
     "status": "not_fully_cleared",
     "completed_independent_file_level_clearance_audits": 0,
     "statement": "This ledger is a disclosure and release-gate record. It is not legal advice, an ownership certificate, a trademark clearance, or proof that every third-party term has been satisfied."
   },
+  "audit_records": [],
   "status_vocabulary": {
     "self_declared_origin_pending_independent_review": "The submission identifies the material as created for this package, but no independent file-level rights audit is recorded.",
     "repository_provisional_derivative": "The file derives from repository-provided provisional material and inherits its non-official and rights-review limits.",
     "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited.",
-    "package_authored_editable_source_pending_independent_review": "The submission identifies the SVG as an editable source authored for this package, but no independent file-level rights audit is recorded."
+    "package_authored_editable_source_pending_independent_review": "The submission identifies the SVG as an editable source authored for this package, but no independent file-level rights audit is recorded.",
+    "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 60,
-    "expected_non_manifest_entries": 59,
-    "coverage_rule": "Every manifest path appears in exactly one asset_group. Path coverage does not equal legal clearance.",
+    "expected_manifest_entries": 62,
+    "expected_non_manifest_entries": 61,
+    "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
         "id": "RIGHTS-GROUP-01",
@@ -44,6 +53,8 @@
           "visual/assets/g0-offline-enterprise-service-baseline.json",
           "visual/assets/key-area-evidence-matrix.json",
           "visual/assets/rights-clearance-ledger.json",
+          "visual/assets/source-rights-evidence.schema.json",
+          "visual/assets/source-rights-evidence.json",
           "changelog.md",
           "report/narrative.md"
         ],
@@ -138,13 +149,3517 @@
           "assets/figures/implementation-roadmap.en.png"
         ],
         "limits": [
-          "No font binaries are shipped by the package; HTML requests system font stacks. The four PDFs embed subsets derived from NotoSansSC-VF.ttf at weights 400 and 700. The source font facts are recorded below, but license applicability and embedding compliance remain pending independent review.",
+          "No standalone source font file is shipped by the package. The four PDFs contain embedded NotoSansSC subset font programs; the A3 PDFs also reference unembedded Helvetica. HTML requests system font stacks, and the concrete fonts resolved while rasterizing the four checked-in SVG files to PNG were not recorded. These facts do not establish license or embedding compliance.",
           "Editable package-authored SVG sources are declared for the bilingual key-areas and key-area-sections pairs. Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every other PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
       }
     ]
   },
+  "asset_records": [
+    {
+      "asset_id": "ASSET-001",
+      "path": "manifest.json",
+      "role": "manifest",
+      "language": null,
+      "asset_class": "package_manifest",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": null,
+        "digest": null,
+        "digest_status": "not_applicable",
+        "reason": "The manifest cannot carry a digest of itself."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-GIT",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-002",
+      "path": "proposal.md",
+      "role": "narrative",
+      "language": "zh",
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "c5c91159072186ecc02929b141d027b1cb8c42d8085f05dc860b41c781f7c91d",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Checked-in text is editable; independent quotation, model-output, and rights review is not recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-003",
+      "path": "agent.json",
+      "role": "agent_card",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "ce1d01d71500a01f288793a7f0230b536c3e679a26081f0943a22fb42ffaf566",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-004",
+      "path": "metrics.json",
+      "role": "metrics",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "23ced727eb64144fa21f7caed8f2f8d2118455b9d67649ab2a31c77376e71d9f",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "geometry/buildings.geojson",
+          "geometry/constraints.geojson",
+          "geometry/green_space.geojson",
+          "geometry/key_areas.geojson",
+          "geometry/land_use.geojson",
+          "geometry/phasing.geojson",
+          "geometry/public_space.geojson",
+          "geometry/roads.geojson",
+          "geometry/site_boundary.geojson",
+          "proposal.md",
+          "visual/assets/g0-offline-enterprise-service-baseline.json",
+          "visual/assets/g1-preregistration-register.json",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/pilot-readiness-register.json",
+          "visual/assets/site-grounding-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-005",
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "97ba9bbb19df0a50bafcb04617edff31941dba941d9f765a09bba02dc2b681ad",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-006",
+      "path": "sources.json",
+      "role": "sources",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "c37cbcb5be4e551940f55932c0684181b2a17d7156600201278ef426c8e54f38",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-007",
+      "path": "self_check.json",
+      "role": "self_check",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "9bd6ea81ce923f85a898bb7611bcb5fa46a5482a228277d05346a876fe2e465b",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "manifest.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-HAIDIAN-VALIDATION"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-008",
+      "path": "changelog.md",
+      "role": "changelog",
+      "language": null,
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "2ef56191c280f246b7e5176c9d33d7e1335ed4a212a1469f600511ca8ea73c6c",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Checked-in text is editable; independent quotation, model-output, and rights review is not recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-009",
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "04ba5d3e992bb44564c335a6d048dbbb61ad9e70ee42608103903bc6a5715915",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-010",
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "c5da2a207839aedc29b7dc78287b7b41ed02b15d8d759a39ebbec73865ed8b55",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "BEIJING-AI-ORIGIN-2026",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-011",
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "3410d73a346812e5f25f9c59358211edd943b36f5590b1d5fa997b068847acda",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "BEIJING-AI-ORIGIN-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-012",
+      "path": "visual/assets/innovation-register.json",
+      "role": "innovation_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d22289c28259d7c41032f6616dc19780f77fded934d14682ac22e0cfe40d892b",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-013",
+      "path": "visual/assets/non-ai-parity-contract.json",
+      "role": "public_interest_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "91b561e6c55a1ca8c216c4a4f7706244a8b0dd25880316efba6fe80bca672dc3",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-014",
+      "path": "visual/assets/evidence-freshness-policy.json",
+      "role": "source_governance_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "499fc8c80193a0518cf9f123f3cad4dc0a75a696bdf9e18ebd0e1e841594a7f2",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-015",
+      "path": "visual/assets/site-grounding-register.json",
+      "role": "site_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "276cf2ed1687d854f7d6b35fb85fe0581561fec9452e08d5b86cc24fc444a4bd",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "JZ-PARK-2023",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-016",
+      "path": "visual/assets/pilot-readiness-register.json",
+      "role": "implementation_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "b42c002f42925f1e25a78de2d0c9d38ff2c1ab4fdc8e50c62ecba0e57db35776",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-017",
+      "path": "visual/assets/g1-preregistration-register.json",
+      "role": "implementation_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "36bc08dab266d67492bd1856489e72d7eb9537ff53e3d43cb3e290a793a1f501",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-018",
+      "path": "visual/assets/g0-offline-enterprise-service-baseline.json",
+      "role": "offline_evidence_contract",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "1473360dd1c44182ddf300f0af05b8c30c70c4e652a1b310a4040e3b456abfe8",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "BEIJING-AI-ORIGIN-2026",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-019",
+      "path": "visual/assets/key-area-evidence-matrix.json",
+      "role": "spatial_evidence_matrix",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "b1ef8a85ad84add2711333c6a83c5b59108198fa4155269f237fa092fffeecd5",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "BEIJING-AI-ORIGIN-2026",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-020",
+      "path": "visual/assets/rights-clearance-ledger.json",
+      "role": "copyright_statement",
+      "language": null,
+      "asset_class": "rights_evidence_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": null,
+        "digest": null,
+        "digest_status": "not_applicable",
+        "reason": "The ledger cannot carry a digest of itself without creating an unsatisfiable self-reference."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "OSM-CONTEXT"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-021",
+      "path": "visual/assets/source-rights-evidence.schema.json",
+      "role": "rights_evidence_schema",
+      "language": null,
+      "asset_class": "rights_evidence_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "dd7812b4156aae837484efc7ebebb1be5d239ea092251a4e5dec6ddc17c7033b",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "OSM-CONTEXT"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-022",
+      "path": "visual/assets/source-rights-evidence.json",
+      "role": "source_rights_evidence",
+      "language": null,
+      "asset_class": "rights_evidence_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "58f2d65caa531371f75bd25f61aee7bb3b3226c0549963b25c5c970991f8ef66",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [
+          "sources.json",
+          "geometry/constraints.geojson",
+          "agent.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-023",
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "language": "zh",
+      "asset_class": "offline_html",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a4922eec7efaae6049187f4b481f948891d54b89e6986b355c491d62e6cf6154",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [
+          "proposal.md",
+          "assets/figures/site-overview.png",
+          "assets/figures/land-use-structure.png",
+          "assets/figures/key-areas.png",
+          "assets/figures/key-area-sections.png",
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/metrics-evidence.png",
+          "assets/figures/innovation-system.png",
+          "assets/figures/implementation-roadmap.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "system_font_stack",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Offline output is reviewable; rendering can vary with system fonts."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-024",
+      "path": "report/narrative.md",
+      "role": "narrative",
+      "language": null,
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "36acb094f9c81dd1faa86fcd90314f3ceac80ce1643c5a26cbe36ff635312591",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "self_check.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Checked-in text is editable; independent quotation, model-output, and rights review is not recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-025",
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "language": null,
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "b21400682491f61401e127505d9eb48ffb6f27150a296cfe36f00cf10562b3f7",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "sources.json",
+          "agent.json",
+          "visual/assets/rights-clearance-ledger.json",
+          "visual/assets/source-rights-evidence.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Checked-in text is editable; independent quotation, model-output, and rights review is not recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-026",
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "language": "zh",
+      "asset_class": "publication_pdf",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "dcd1b8749eedddd72ec0b57aa6fc0af44eee3e0f3c2b2ec2094850a5cfc73d24",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "assets/figures/key-areas.png",
+          "assets/figures/key-area-sections.png",
+          "assets/figures/land-use-structure.png",
+          "assets/figures/metrics-evidence.png",
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/site-overview.png",
+          "assets/figures/innovation-system.png",
+          "assets/figures/implementation-roadmap.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB",
+        "TOOL-FONTTOOLS",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-NOTO-SANS-SC-PDF-SUBSETS",
+          "state": "embedded_subset"
+        },
+        {
+          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-A3-REFERENCE",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
+        "limitation": "Recorded inputs and deterministic parameters support package review; identical upstream environments and rights compliance are not asserted."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-027",
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "language": "zh",
+      "asset_class": "publication_pdf",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "assets/figures/key-areas.png",
+          "assets/figures/key-area-sections.png",
+          "assets/figures/land-use-structure.png",
+          "assets/figures/metrics-evidence.png",
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/site-overview.png",
+          "assets/figures/innovation-system.png",
+          "assets/figures/implementation-roadmap.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB",
+        "TOOL-FONTTOOLS",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-NOTO-SANS-SC-PDF-SUBSETS",
+          "state": "embedded_subset"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
+        "limitation": "Recorded inputs and deterministic parameters support package review; identical upstream environments and rights compliance are not asserted."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-028",
+      "path": "visual/index.html",
+      "role": "visualization",
+      "language": "zh",
+      "asset_class": "offline_html",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "440e63bbc117e22fab93527a7a9497785271ff9d838cfbab7b175216a73995a8",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "assumptions.json",
+          "sources.json",
+          "self_check.json",
+          "visual/assets/rights-clearance-ledger.json",
+          "visual/assets/source-rights-evidence.json",
+          "assets/figures/site-overview.png",
+          "assets/figures/land-use-structure.png",
+          "assets/figures/key-areas.png",
+          "assets/figures/key-area-sections.png",
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/metrics-evidence.png",
+          "assets/figures/innovation-system.png",
+          "assets/figures/implementation-roadmap.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "system_font_stack",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Offline output is reviewable; rendering can vary with system fonts."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-029",
+      "path": "assets/figures/key-areas.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "c7bcfeb1d8576390d52a7b6371440c6ee9235c51ad8da5a6168fb8462edcdfad",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/figures/key-areas.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "flattened_pixels_renderer_resolution_unknown"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-030",
+      "path": "assets/figures/key-areas.svg",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "editable_vector_figure",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "6da26269e1b55abde449686211a978892b9397808f739af1dc7e9ca9015febf8",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/public_space.geojson",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/pilot-readiness-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "font_stack_reference"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#TOOL-CODEX",
+        "limitation": "Editable source is checked in, but a complete deterministic authoring transcript and resolved renderer-font inventory are unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-031",
+      "path": "assets/figures/key-area-sections.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "9d7bc17748f6b7c9b89ecd27d66c8cbba850d04f3400e996783b08d37b225bdc",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/figures/key-area-sections.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "flattened_pixels_renderer_resolution_unknown"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-032",
+      "path": "assets/figures/key-area-sections.svg",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "editable_vector_figure",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "5835545666ed5d4edd3fb95208ec6bf7d8d1df0033780645e87728067a38d000",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/public_space.geojson",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/g1-preregistration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "font_stack_reference"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#TOOL-CODEX",
+        "limitation": "Editable source is checked in, but a complete deterministic authoring transcript and resolved renderer-font inventory are unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-033",
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "2a52b5d837c356675db2a7a2c96694502ee3cdd49716b95528cbb3fc75516113",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/land_use.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-034",
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "ccb51b2df7bed8902c183520614be39b9c7469b0212c246aa8b12c4156989f40",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-035",
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "7340e66264c4721c0f214c0c5c1ed7bff16b9becfba8761d00096484d6288488",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/roads.geojson",
+          "geometry/green_space.geojson",
+          "geometry/public_space.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-036",
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "0010c6fbe094529aec3feb23358ec5a34abfd962f55f37341d621850d11ba8af",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/roads.geojson",
+          "geometry/green_space.geojson",
+          "geometry/public_space.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-037",
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "b70f1738d98fcb003f42b153019d84e35b374238417c0dc02e4132ad9b6f22ea",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-038",
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "mixed_source_derivative_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d631f0698742199a3dd4d1dd492d4a87f1a617d526ace9ff2ed35e5e09190004",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "OSM-CONTEXT"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-039",
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a47fcc55b4b7316933557232c896c7dec3e6db5d532d4e9c95d93b6c7f42df1d",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-040",
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "repository_provisional_derivative",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "4259a94603465b1acace447860a5f00f3b5db2aa30fb6b5316b1aae5ef163d5c",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-041",
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "050d721c06b3c7992d7b62c989e5ad6e10db7de16d8c7ba88e4274306a5b6057",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-042",
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a08a0be4cfec3448efc354d9271abc04e1aca41d7b25786b6c768cff6f8a7776",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-043",
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "bef762e118e328bd24a9e8cc2db228403b494e9292aece81ed54dd09837ece43",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-044",
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "264fc1787ece25d3f10fdc5c56c2147dc2f5904f3cd4e7e21e76699bec18add3",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-045",
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "language": null,
+      "asset_class": "spatial_data",
+      "origin_status": "repository_provisional_derivative",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "63f797eee66eceaf429724023319c3f76c61dad39f505fae4c16da5338daf28d",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-046",
+      "path": "assets/figures/innovation-system.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "bef5a556d265652fff31652fdb620879cec9f0f037c8d75e545dfeae83f215dc",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "visual/assets/innovation-register.json",
+          "visual/assets/non-ai-parity-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-047",
+      "path": "assets/figures/implementation-roadmap.png",
+      "role": "proposal_figure",
+      "language": "zh",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "ff2d6b06b4a09fd4b391bf1396b28c22b386e2dac1f02116955d045a48fec464",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.md",
+          "metrics.json",
+          "geometry/phasing.geojson",
+          "visual/assets/g0-offline-enterprise-service-baseline.json",
+          "visual/assets/g1-preregistration-register.json",
+          "visual/assets/pilot-readiness-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-048",
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "language": "en",
+      "asset_class": "narrative_or_change_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "4a9edf66ce9d3e2ab864684081f737fa310c6108a84e588a9ca36c5086459873",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "human_readable_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Checked-in text is editable; independent quotation, model-output, and rights review is not recorded."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-049",
+      "path": "report/proposal.en.html",
+      "role": "rendered_proposal_html",
+      "language": "en",
+      "asset_class": "offline_html",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d6cbfcc3c881f724157c89aa380efd22b446cfd5517c2ba1fc90aad7439f944d",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "PROVISIONAL-BOUNDARY-BASIS",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+          "AGENT-TASKBOOK",
+          "OSM-CONTEXT",
+          "CASE-KENDALL",
+          "CASE-ONE-NORTH",
+          "CASE-22AT",
+          "CASE-KINGS-CROSS",
+          "CASE-STATION-F",
+          "CASE-MARS",
+          "BEIJING-AI-ORIGIN-2026",
+          "BEIJING-AI-DISTRICTS-2026",
+          "NATIONAL-DATA-INFRA-2025",
+          "AI-CONTENT-LABEL-2025",
+          "AI-PLUS-2025",
+          "JZ-PARK-2023",
+          "JZ-COCREATION-2021",
+          "STD-URBAN-DESIGN",
+          "STD-CONTROL-PLAN",
+          "STD-LAND-USE",
+          "STD-ARCH-DEPTH-GAP",
+          "HAIDIAN-JZ-PHASE2-OPEN-2026",
+          "HAIDIAN-AI-TRIAL-FIELD-2026",
+          "HAIDIAN-JZ-MIDTERM-2026",
+          "HAIDIAN-15FYP-2026"
+        ],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "assets/figures/site-overview.en.png",
+          "assets/figures/land-use-structure.en.png",
+          "assets/figures/key-areas.en.png",
+          "assets/figures/key-area-sections.en.png",
+          "assets/figures/mobility-bluegreen.en.png",
+          "assets/figures/metrics-evidence.en.png",
+          "assets/figures/innovation-system.en.png",
+          "assets/figures/implementation-roadmap.en.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "system_font_stack",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Offline output is reviewable; rendering can vary with system fonts."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-03",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-050",
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "language": "en",
+      "asset_class": "offline_html",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "574ac5de2b0cdd2b0fd060a7f1ac8ca7276cf544a9ce9dba9fe957f63442c8d7",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "assumptions.json",
+          "sources.json",
+          "self_check.json",
+          "visual/assets/rights-clearance-ledger.json",
+          "visual/assets/source-rights-evidence.json",
+          "assets/figures/site-overview.en.png",
+          "assets/figures/land-use-structure.en.png",
+          "assets/figures/key-areas.en.png",
+          "assets/figures/key-area-sections.en.png",
+          "assets/figures/mobility-bluegreen.en.png",
+          "assets/figures/metrics-evidence.en.png",
+          "assets/figures/innovation-system.en.png",
+          "assets/figures/implementation-roadmap.en.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "system_font_stack",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Offline output is reviewable; rendering can vary with system fonts."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-051",
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "language": "en",
+      "asset_class": "publication_pdf",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "1d7234f55c9efe312a815ba0566ea3f4224a22b601f6df410b1b3dd3f3ab6441",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "assets/figures/implementation-roadmap.en.png",
+          "assets/figures/innovation-system.en.png",
+          "assets/figures/key-areas.en.png",
+          "assets/figures/key-area-sections.en.png",
+          "assets/figures/land-use-structure.en.png",
+          "assets/figures/metrics-evidence.en.png",
+          "assets/figures/mobility-bluegreen.en.png",
+          "assets/figures/site-overview.en.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB",
+        "TOOL-FONTTOOLS",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-NOTO-SANS-SC-PDF-SUBSETS",
+          "state": "embedded_subset"
+        },
+        {
+          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-A3-REFERENCE",
+          "state": "referenced_not_embedded"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
+        "limitation": "Recorded inputs and deterministic parameters support package review; identical upstream environments and rights compliance are not asserted."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-052",
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "language": "en",
+      "asset_class": "publication_pdf",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "assets/figures/implementation-roadmap.en.png",
+          "assets/figures/innovation-system.en.png",
+          "assets/figures/key-areas.en.png",
+          "assets/figures/key-area-sections.en.png",
+          "assets/figures/land-use-structure.en.png",
+          "assets/figures/metrics-evidence.en.png",
+          "assets/figures/mobility-bluegreen.en.png",
+          "assets/figures/site-overview.en.png"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-REPORTLAB",
+        "TOOL-FONTTOOLS",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-NOTO-SANS-SC-PDF-SUBSETS",
+          "state": "embedded_subset"
+        }
+      ],
+      "generation_recipe": {
+        "status": "recorded_bounded",
+        "evidence_ref": "../../agent.json#TOOL-REPORTLAB",
+        "limitation": "Recorded inputs and deterministic parameters support package review; identical upstream environments and rights compliance are not asserted."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-053",
+      "path": "assets/figures/implementation-roadmap.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "db8067d1de1c582ff3e15ad9ee4e21228418e1be77e920133c7f74e0862a7d54",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "geometry/phasing.geojson",
+          "visual/assets/g0-offline-enterprise-service-baseline.json",
+          "visual/assets/g1-preregistration-register.json",
+          "visual/assets/pilot-readiness-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-054",
+      "path": "assets/figures/innovation-system.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "44382fe1894cf5ee8129299c0b9031ef85d3f9b887ba05a940da6c4732defe14",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "visual/assets/innovation-register.json",
+          "visual/assets/non-ai-parity-contract.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-055",
+      "path": "assets/figures/key-areas.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "e7ae16cae6bf86b1b50404c5f61eb3688fdec9ee0f984121ae8a7e17a4424396",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/figures/key-areas.en.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "flattened_pixels_renderer_resolution_unknown"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-056",
+      "path": "assets/figures/key-areas.en.svg",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "editable_vector_figure",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "ec542b75120caec172a917aedac83a8757e5ea28e6ea140a6cb3a7cc9a8c5181",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/public_space.geojson",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/pilot-readiness-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "font_stack_reference"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#TOOL-CODEX",
+        "limitation": "Editable source is checked in, but a complete deterministic authoring transcript and resolved renderer-font inventory are unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-057",
+      "path": "assets/figures/key-area-sections.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "a234bdb98b5e57a8c3d99de0df69eae25b64ee4cdd0bab48f8ba56ebbdbe8800",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "assets/figures/key-area-sections.en.svg"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "flattened_pixels_renderer_resolution_unknown"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-058",
+      "path": "assets/figures/key-area-sections.en.svg",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "editable_vector_figure",
+      "origin_status": "package_authored_editable_source_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "68ad63422da5b20ae945aa08362505b1e677582e808276197ab4bf1032536279",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/public_space.geojson",
+          "visual/assets/key-area-evidence-matrix.json",
+          "visual/assets/g1-preregistration-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX"
+      ],
+      "embedded_components": [
+        {
+          "component_ref": "source-rights-evidence.json#FONT-SVG-TO-PNG-RENDERER-RESOLUTION",
+          "state": "font_stack_reference"
+        }
+      ],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#TOOL-CODEX",
+        "limitation": "Editable source is checked in, but a complete deterministic authoring transcript and resolved renderer-font inventory are unavailable."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-059",
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "e9bbc952e98c322b88c79036c0ee3cd1890a08edaad0534f0165a35bf6399e65",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/land_use.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-060",
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "0dcc22e1440454473d89dacffdb5690bcc3a6a0835c5d2bf80ed5e198430f657",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-061",
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "7017708628623a6380ec3dbbe05fca89ecb70bf2fce7bacee5f7408b2b6aa2a1",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/roads.geojson",
+          "geometry/green_space.geojson",
+          "geometry/public_space.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-062",
+      "path": "assets/figures/site-overview.en.png",
+      "role": "proposal_figure",
+      "language": "en",
+      "asset_class": "raster_figure",
+      "origin_status": "generated_derivative_pending_embedded_asset_audit",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "2f65e3302b647d2b3d09f34dcd9425b0eb4df83ff342f27e6d73d567e7d41626",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "proposal.en.md",
+          "metrics.json",
+          "geometry/site_boundary.geojson",
+          "geometry/key_areas.geojson",
+          "geometry/constraints.geojson",
+          "geometry/roads.geojson",
+          "geometry/green_space.geojson",
+          "geometry/public_space.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-PYTHON",
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "partial",
+        "evidence_ref": "../../agent.json#output_provenance",
+        "limitation": "Displayed pixels are fixed by manifest SHA-256; complete editable layout-source and renderer-environment coverage is not available for every PNG."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04",
+        "RIGHTS-OPEN-05"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    }
+  ],
   "third_party_and_tool_boundaries": [
     {
       "id": "RIGHTS-THIRD-01",
@@ -188,6 +3703,25 @@
       "font_binary_shipped": false,
       "status": "facts_recorded_compliance_not_independently_audited",
       "limit": "The local metadata and absence of the source binary from this package do not by themselves establish license compliance or upgrade the package-wide rights status."
+    },
+    {
+      "id": "RIGHTS-THIRD-06",
+      "material": "Helvetica references in the A3 PDF pair",
+      "scope": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf"
+      ],
+      "embedding_state": "referenced_not_embedded",
+      "status": "font_resolution_and_terms_not_independently_audited",
+      "limit": "Read-only inspection identifies Helvetica references but no embedded Helvetica font program. The producing environment and applicable font terms were not established."
+    },
+    {
+      "id": "RIGHTS-THIRD-07",
+      "material": "Fonts resolved during SVG-to-PNG rasterization",
+      "scope": "The bilingual key-areas and key-area-sections SVG/PNG pairs.",
+      "declared_svg_font_stack": "Arial, Microsoft YaHei, Noto Sans CJK SC",
+      "status": "renderer_resolution_unrecorded",
+      "limit": "The concrete font files selected by the renderer are unknown; checked-in pixels and editable SVG text do not by themselves prove font-license compliance."
     }
   ],
   "unresolved_items": [

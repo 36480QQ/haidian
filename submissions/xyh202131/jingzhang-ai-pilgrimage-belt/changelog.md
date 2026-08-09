@@ -4,6 +4,21 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v2.6 - 2026-08-10
+
+**Source–asset–rights evidence loop / 来源—资产—权利证据闭环**
+
+- 新增 `source-rights-evidence.schema.json` 与实例：29/29 条来源具有稳定反向指针，10 个仓库来源固定到审计 HEAD 的 Git object，4 个网页保留包外抓取摘要，15 个网页明确无内容摘要；缺失发布日期、原始格式或条款时保持 unknown，不以 URL 或文件名推断冒充核验。
+- Added a schema and instance for source-rights evidence: all 29 sources have stable reverse pointers; 10 repository sources are fixed to Git objects at the audited HEAD, four web sources retain external capture digests, and 15 web sources explicitly have no content digest. Missing dates, original formats, or terms stay unknown rather than being promoted from locator inference.
+- 仅对 `geometry/constraints.geojson` 的既有 120 个 OSM 要素补入 `source_id=OSM-CONTEXT`，不改坐标、图层、名称、way ID 或设计内容；element-level 记录保留署名，并明确固定查询与快照摘要缺失，`RIGHTS-OPEN-03` 继续为 P0 open。
+- Added `source_id=OSM-CONTEXT` to the existing 120 OSM features in `geometry/constraints.geojson` without changing coordinates, layers, names, way IDs, or design content. Element-level records retain attribution and disclose the missing fixed query and snapshot digest; `RIGHTS-OPEN-03` remains P0 open.
+- 保留原 5 个权利粗组作为兼容视图，并新增与最终 manifest 严格等集的 62 条逐文件记录，逐项串联来源、父资产、工具、嵌入组件、配方状态、审计状态、摘要与未决事项。manifest 和 ledger 两个不可自引用项使用 null + 原因，其余摘要必须等于最终 manifest。
+- Retained the five coarse rights groups as a compatibility view and added 62 file-level records equal to the final manifest path set, linking sources, parents, tools, embedded components, recipe state, review state, digests, and open items. Manifest and ledger use null plus explicit self-reference reasons; every other digest must equal the final manifest.
+- 补充稳定工具 ID 与输出映射；更正字体事实为“四份 PDF 内含 Noto 子集程序、A3 引用未嵌入 Helvetica、SVG 转 PNG 的实际解析字体未知”，不再把“未提供独立源字体文件”误写成“包内没有字体二进制”。
+- Added stable tool IDs and output mappings. Corrected the font facts to embedded Noto subset programs in all four PDFs, unembedded Helvetica references in A3, and unknown concrete font resolution during SVG-to-PNG rasterization; no longer conflates absence of a standalone source-font file with absence of embedded font programs.
+- 总体状态继续为 `not_fully_cleared`，独立逐文件清权审计完成数仍为 0，P0 `RIGHTS-OPEN-01/02/03` 全部 open，公共或专业复用继续 `blocked_pending_terms_and_audit`。任何 schema、路径覆盖或验证 PASS 只表示披露可审计，不表示许可已取得。
+- Overall status remains `not_fully_cleared`, completed independent file-level clearance audits remain 0, P0 `RIGHTS-OPEN-01/02/03` all remain open, and public or professional reuse remains `blocked_pending_terms_and_audit`. Schema, path coverage, or validation PASS proves auditability only, not permission.
+
 ## v2.5 - 2026-08-10
 
 **Key-area spatial-reading integration / 重点区空间读法整合**

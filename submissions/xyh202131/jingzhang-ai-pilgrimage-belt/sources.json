@@ -1,8 +1,16 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
+  "rights_evidence_contract": {
+    "schema": "visual/assets/source-rights-evidence.schema.json",
+    "instance": "visual/assets/source-rights-evidence.json",
+    "asset_ledger": "visual/assets/rights-clearance-ledger.json",
+    "status": "audit_ready_not_cleared",
+    "completed_independent_file_level_clearance_audits": 0
+  },
   "sources": [
     {
       "id": "SITE-PACKAGE",
+      "rights_evidence_id": "SRC-RIGHTS-SITE-PACKAGE",
       "title": "百年京张AI创新带公开场地包",
       "publisher": "open-city-ai/haidian",
       "path": "brief/site-package/",
@@ -33,6 +41,7 @@
     },
     {
       "id": "SOURCE-REGISTRY",
+      "rights_evidence_id": "SRC-RIGHTS-SOURCE-REGISTRY",
       "title": "项目公开资料登记表",
       "publisher": "open-city-ai/haidian",
       "path": "data/source_registry.json",
@@ -60,6 +69,7 @@
     },
     {
       "id": "PROCESSED-FACT-PACK",
+      "rights_evidence_id": "SRC-RIGHTS-PROCESSED-FACT-PACK",
       "title": "智能体可读资料导航",
       "publisher": "open-city-ai/haidian",
       "path": "data/processed/agent_fact_pack.md",
@@ -87,6 +97,7 @@
     },
     {
       "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "rights_evidence_id": "SRC-RIGHTS-DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "legacy_aliases": [
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
@@ -124,6 +135,7 @@
     },
     {
       "id": "PROVISIONAL-BOUNDARY-BASIS",
+      "rights_evidence_id": "SRC-RIGHTS-PROVISIONAL-BOUNDARY-BASIS",
       "title": "临时边界推定与公开来源核查",
       "publisher": "open-city-ai/haidian maintainers",
       "path": "brief/site-package/geometry/provisional_boundaries_basis.md",
@@ -158,6 +170,7 @@
     },
     {
       "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "rights_evidence_id": "SRC-RIGHTS-DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
       "legacy_aliases": [
         "OFFICIAL-ANNOUNCEMENT",
         "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
@@ -191,6 +204,7 @@
     },
     {
       "id": "AGENT-TASKBOOK",
+      "rights_evidence_id": "SRC-RIGHTS-AGENT-TASKBOOK",
       "title": "百年京张AI创新带智能体任务书",
       "publisher": "open-city-ai/haidian",
       "path": "brief/site-package/agent_taskbook.json",
@@ -219,6 +233,7 @@
     },
     {
       "id": "OSM-CONTEXT",
+      "rights_evidence_id": "SRC-RIGHTS-OSM-CONTEXT",
       "title": "OpenStreetMap existing road, rail and water context",
       "publisher": "OpenStreetMap contributors",
       "url": "https://www.openstreetmap.org/copyright",
@@ -250,6 +265,7 @@
     },
     {
       "id": "CASE-KENDALL",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-KENDALL",
       "title": "Kendall Square",
       "publisher": "City of Cambridge",
       "url": "https://www.cambridgema.gov/cdd/economicopportunityanddevelopment/aboutcambridge/kendallsq",
@@ -277,6 +293,7 @@
     },
     {
       "id": "CASE-ONE-NORTH",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-ONE-NORTH",
       "title": "one-north",
       "publisher": "JTC Singapore",
       "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north?estate=one-north",
@@ -304,6 +321,7 @@
     },
     {
       "id": "CASE-22AT",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-22AT",
       "title": "Science and innovation in Barcelona",
       "publisher": "Barcelona City Council",
       "url": "https://www.barcelona.cat/promocioeconomica/en/what-we-do/employment-business-entrepreneurship-and-innovation/science-and-innovation",
@@ -331,6 +349,7 @@
     },
     {
       "id": "CASE-KINGS-CROSS",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-KINGS-CROSS",
       "title": "King's Cross workspace and regeneration",
       "publisher": "King's Cross",
       "url": "https://www.kingscross.co.uk/workspace",
@@ -358,6 +377,7 @@
     },
     {
       "id": "CASE-STATION-F",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-STATION-F",
       "title": "STATION F startup campus",
       "publisher": "STATION F",
       "url": "https://stationf.co/",
@@ -385,6 +405,7 @@
     },
     {
       "id": "CASE-MARS",
+      "rights_evidence_id": "SRC-RIGHTS-CASE-MARS",
       "title": "MaRS Centre",
       "publisher": "MaRS Discovery District",
       "url": "https://hubs.marsdd.com/location/mars-centre/",
@@ -412,6 +433,7 @@
     },
     {
       "id": "BEIJING-AI-ORIGIN-2026",
+      "rights_evidence_id": "SRC-RIGHTS-BEIJING-AI-ORIGIN-2026",
       "title": "原点出圈，海淀全力打造智能经济新形态",
       "publisher": "北京市发展和改革委员会",
       "url": "https://fgw.beijing.gov.cn/gzdt/fgzs/mtbdx/bzwlxw/202607/t20260724_4783475.htm",
@@ -443,6 +465,7 @@
     },
     {
       "id": "BEIJING-AI-DISTRICTS-2026",
+      "rights_evidence_id": "SRC-RIGHTS-BEIJING-AI-DISTRICTS-2026",
       "title": "北京发布首批4个人工智能创新街区 打造一核多点发展格局",
       "publisher": "北京市发展和改革委员会",
       "url": "https://fgw.beijing.gov.cn/gzdt/fgzs/mtbdx/bzwlxw/202601/t20260106_4404761.htm",
@@ -473,6 +496,7 @@
     },
     {
       "id": "NATIONAL-DATA-INFRA-2025",
+      "rights_evidence_id": "SRC-RIGHTS-NATIONAL-DATA-INFRA-2025",
       "title": "国家数据基础设施建设指引",
       "publisher": "国家发展和改革委员会等部门",
       "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202501/P020250106319424108511.pdf",
@@ -502,6 +526,7 @@
     },
     {
       "id": "AI-CONTENT-LABEL-2025",
+      "rights_evidence_id": "SRC-RIGHTS-AI-CONTENT-LABEL-2025",
       "title": "人工智能生成合成内容标识办法",
       "publisher": "国家互联网信息办公室等部门",
       "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
@@ -530,6 +555,7 @@
     },
     {
       "id": "AI-PLUS-2025",
+      "rights_evidence_id": "SRC-RIGHTS-AI-PLUS-2025",
       "title": "国务院关于深入实施人工智能+行动的意见",
       "publisher": "国务院",
       "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0826/20250826173046592282838_mobile.html",
@@ -558,6 +584,7 @@
     },
     {
       "id": "JZ-PARK-2023",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-PARK-2023",
       "title": "京张铁路遗址公园（一期）全面建成开放",
       "publisher": "北京市园林绿化局",
       "url": "https://yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml",
@@ -586,6 +613,7 @@
     },
     {
       "id": "JZ-COCREATION-2021",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-COCREATION-2021",
       "title": "京张铁路遗址公园，一场各方响应的众创之旅",
       "publisher": "北京市规划和自然资源委员会",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dej/d5j/202112/t20211216_2562970.html",
@@ -614,6 +642,7 @@
     },
     {
       "id": "STD-URBAN-DESIGN",
+      "rights_evidence_id": "SRC-RIGHTS-STD-URBAN-DESIGN",
       "title": "城市设计管理办法本地官方参考快照",
       "publisher": "住房和城乡建设部",
       "path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
@@ -641,6 +670,7 @@
     },
     {
       "id": "STD-CONTROL-PLAN",
+      "rights_evidence_id": "SRC-RIGHTS-STD-CONTROL-PLAN",
       "title": "城市、镇控制性详细规划编制审批办法本地官方参考快照",
       "publisher": "住房和城乡建设部",
       "path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
@@ -668,6 +698,7 @@
     },
     {
       "id": "STD-LAND-USE",
+      "rights_evidence_id": "SRC-RIGHTS-STD-LAND-USE",
       "title": "国土空间调查、规划、用途管制用地用海分类指南本地官方参考快照",
       "publisher": "自然资源部",
       "path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
@@ -694,6 +725,7 @@
     },
     {
       "id": "STD-ARCH-DEPTH-GAP",
+      "rights_evidence_id": "SRC-RIGHTS-STD-ARCH-DEPTH-GAP",
       "title": "建筑工程设计文件编制深度规定（2016年版）缺口记录",
       "publisher": "open-city-ai/haidian",
       "path": "brief/site-package/standards/references/mohurd-arch-design-depth-2016.md",
@@ -722,6 +754,7 @@
     },
     {
       "id": "HAIDIAN-JZ-PHASE2-OPEN-2026",
+      "rights_evidence_id": "SRC-RIGHTS-HAIDIAN-JZ-PHASE2-OPEN-2026",
       "title": "海淀区：京张铁路遗址公园二期建成开放",
       "publisher": "首都文明网（来源：海淀报）",
       "url": "https://www.bjwmb.gov.cn/wmdt/hdq/10133094.html",
@@ -756,6 +789,7 @@
     },
     {
       "id": "HAIDIAN-AI-TRIAL-FIELD-2026",
+      "rights_evidence_id": "SRC-RIGHTS-HAIDIAN-AI-TRIAL-FIELD-2026",
       "title": "海淀打造超级AI试验场全域开放城市治理、民生服务实景测试场景",
       "publisher": "北京市海淀区人民政府（转载自人民网）",
       "url": "https://zyk.bjhd.gov.cn/ywdt/mtbd/202607/t20260724_4823103.shtml",
@@ -790,6 +824,7 @@
     },
     {
       "id": "HAIDIAN-JZ-MIDTERM-2026",
+      "rights_evidence_id": "SRC-RIGHTS-HAIDIAN-JZ-MIDTERM-2026",
       "title": "为顶尖人才配社交圈，为居民布设AI场景……百年京张AI创新带最新进展——",
       "publisher": "京津冀国家技术创新中心",
       "url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260728_252002.html",
@@ -825,6 +860,7 @@
     },
     {
       "id": "HAIDIAN-15FYP-2026",
+      "rights_evidence_id": "SRC-RIGHTS-HAIDIAN-15FYP-2026",
       "title": "北京市海淀区国民经济和社会发展第十五个五年规划纲要",
       "publisher": "北京市海淀区人民政府",
       "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202604/t20260428_4813297.shtml",
