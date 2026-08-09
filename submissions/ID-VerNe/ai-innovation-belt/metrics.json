@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "unknown",
-      "value": 11412825.386,
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -17,11 +17,11 @@
       "assumptions": [
         "Provisional site boundary from agent_inferred_from_public_data. Not an official redline. Must be recalculated when official SITE_BOUNDARY polygon is supplied by the organizer."
       ],
-      "reason": "Value is geometrically accurate but based on provisional boundary (agent_inferred_from_public_data), not an official redline. Cannot be considered 'known' until official SITE_BOUNDARY is supplied."
+      "reason": "Value is geometrically accurate (11412825.386 sqm) but based on provisional boundary (agent_inferred_from_public_data), not an official redline. Cannot be considered 'known' until official SITE_BOUNDARY is supplied."
     },
     "building_footprint_area_sqm": {
       "status": "unknown",
-      "value": 792717.183,
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -29,11 +29,11 @@
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "low",
       "assumptions": [],
-      "reason": "Value is geometrically accurate but based on provisional design geometry; not an official measurement. Recalculate when official SITE_BOUNDARY is supplied."
+      "reason": "Value is geometrically accurate (792717.183 sqm) but based on provisional design geometry; not an official measurement. Recalculate when official SITE_BOUNDARY is supplied."
     },
     "green_ratio": {
       "status": "unknown",
-      "value": 0.070451,
+      "value": null,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -42,11 +42,11 @@
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [],
-      "reason": "Value is geometrically accurate but based on provisional boundary. Official green ratio is a design assumption (estimated 25-35% on official boundary, unverified). Must be recalculated when official SITE_BOUNDARY is supplied."
+      "reason": "Value is geometrically accurate (0.070451) but based on provisional boundary. Official green ratio is a design assumption (estimated 25-35% on official boundary, unverified). Must be recalculated when official SITE_BOUNDARY is supplied."
     },
     "public_space_ratio": {
       "status": "unknown",
-      "value": 0.015167,
+      "value": null,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -55,7 +55,7 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [],
-      "reason": "Value is geometrically accurate but based on provisional boundary. Must be recalculated when official SITE_BOUNDARY is supplied."
+      "reason": "Value is geometrically accurate (0.015167) but based on provisional boundary. Must be recalculated when official SITE_BOUNDARY is supplied."
     },
     "floor_area_ratio": {
       "status": "unknown",
