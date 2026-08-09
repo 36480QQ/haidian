@@ -142,6 +142,27 @@ Near-term reversible signage, walkability repairs, civic interfaces and low-risk
 
 Annual operations combine Open Model Week, Urban Agent Challenge, Jing-Zhang Commons Forum and a winter trustworthy-AI retrospective. Three pilgrimage nodes—Origin Stage, Merge Forum and Commit Garden—remain subject to professional siting and design [source:AGENT-TASKBOOK] [depth:renewal_project_list].
 
+### Three Key-Area Project Packages and Operating Responsibility
+
+| Key area (official text area) | First-release package | First-year verifiable outputs | Exit or adjustment gate |
+|---|---|---|---|
+| Zhongzhiyuan 192.1 ha | Trustworthy evaluation centre, enclosed embodied-AI test field and low-carbon compute display | Test protocol, event-log template and public safety report | Do not open without a named operator and a clear safety boundary |
+| AI Origin Community 104.3 ha | Open-source release stage, youth co-living interface and campus-community walking link | Residency plan, contribution archive and continuous accessibility audit | Reduce activity if community burden rises or public access falls |
+| Dazhongsi 72.0 ha | Rail interchange, international demo programme and intelligent-life service test | Bilingual service, event-day crowd plan and public feedback record | Stop expansion until transport and fire conditions are verified |
+
+Each package uses a five-party responsibility matrix: issue proposer, site operator, technology provider, data-responsibility role and independent reviewer. Gate 1 confirms public value and a named owner; Gate 2 checks data, ethics and accessibility; Gate 3 limits the pilot to a bounded area; Gate 4 publishes verifiable evidence; and Gate 5 is a human decision to scale, revise or exit. Key performance indicators must cover public access, resolved issues, risk events, human takeovers and maintenance-cost categories rather than traffic, publicity or model-call volume alone [depth:phasing_implementation].
+
+### AI Ethics and Rights Safeguards Matrix
+
+| Risk | Up-front control | Operating evidence | User right |
+|---|---|---|---|
+| Privacy and over-collection | Data minimisation, purpose limitation and tiered authorisation | Data catalogue, access log and deletion record | Notice, refusal, withdrawal and appeal |
+| Bias and accessibility | Grouped tests, accessibility review and a non-digital alternative | Grouped error rates, accessibility audit and field sample | Equal service and a human channel |
+| Automated overreach | No fully automated high-stakes decision; a named takeover role | Takeover count, exception ticket and responsibility record | Explanation and human review |
+| Safety and obsolescence | Red-team test, version freeze and annual exit review | Incident log, version list and decommission record | Risk notice and an alternative service |
+
+This matrix is a minimum governance proposal, not a certification of legal compliance. Each pilot must publish its accountable roles, data boundary, thresholds and stop conditions before testing.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 Only values directly recomputable from geometry or explicit lists are known; missing controls remain unknown. The three matrices map tasks, standards, depth and evidence. Every geometry change must refresh metrics, figures, HTML, PDFs and hashes, followed by human checks of units, formulas, CRS and bilingual numeric equivalence. Provisional data gaps do not block content review but every precision claim remains qualified [standard:STD-MNR-LAND-USE-CLASSIFICATION].
@@ -159,6 +180,8 @@ Text, geometry and graphics are agent-generated from registered sources and embe
 Text, geometry and graphics are agent-generated from registered sources and embed no commercial basemap, remote font or third-party image. Health, safety, child, movement-trace or enterprise-sensitive scenarios cannot collect real personal data at concept stage. Each pilot needs an accountable operator, user notice, takeover, log-retention limit, appeal and stop condition. Provisional boundaries, heritage, utilities, ownership and engineering conditions remain priority gaps; the concept must not be used for tender, construction or approval [source:SITE-PACKAGE].
 
 Risks include provisional-boundary misreading, excessive data capture, bias, automation overreach, operating cost and obsolescence. Responses are prominent caveats, data minimisation, subgroup fairness tests, human review, reversible pilots and annual exit reviews. Every spatial move is a conceptual recommendation for professional deepening; no official endorsement, selection, approval or implementation is claimed [source:SOURCE-REGISTRY] [depth:risk_missing_data].
+
+Asset authorship and clearance are tracked in `report/copyright_statement.md` and the source registry. The workflow authors or assembles the text, geometry, HTML, figures and PDFs from the package data; registered external references are used for scope or mechanism study only and are not copied as images, trademarks, layouts or performance evidence. Local system fonts are rasterised but are not redistributed. If a file is found to derive from an earlier participant package, independent originality is not asserted: the PR must add a verifiable same-author explanation or written permission and preserve the attribution chain before public release [source:SITE-PACKAGE].
 
 ## References
 
