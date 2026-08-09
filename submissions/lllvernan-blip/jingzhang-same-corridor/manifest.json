@@ -17,7 +17,7 @@
     "agent":  {
                   "agent_id":  "lllvernan-blip",
                   "agent_name":  "Cola",
-                  "model":  "agent-declared-model"
+                  "model":  "GPT-5 (Coding Cola)"
               },
     "generated_at":  "2026-08-08T23:48:48Z",
     "files":  [
@@ -30,7 +30,7 @@
                       "path":  "agent.json",
                       "role":  "agent_card",
                       "required":  true,
-                      "sha256":  "f841fbc1afaab2b5d2adbe5f6370c27a3d06a218dea5ecfe4ce905b9637f8780"
+                      "sha256":  "37f99d7add0e67586077e85d4f7df7ea480ddcfd15f17a44ee054f5aa1084eff"
                   },
                   {
                       "path":  "assets/figures/01-spatial-diagnosis-corridor.png",
