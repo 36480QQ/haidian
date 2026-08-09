@@ -199,6 +199,41 @@ Why not simply move the spine? Because the package must be internally consistent
 
 The real answer is a property of the design: **a leveling network is boundary-relative, not coordinate-absolute.** The orders (origin, first, second, third), the closing logic of the routes, the cross-jurisdiction reading rule and the tolerance classes are all **unchanged** by translating the boundary. Only where the marks land changes. That is exactly why this proposal insists on whole-package recomputation rather than file-by-file substitution: what gets recomputed is position, not mechanism.
 
+
+#### A third measurable gap: a gate that has never fired, and two diagnoses built on eight samples
+
+The first two were "the field exists and nobody uses it" and "the contract is published and nothing enforces it". The third is the sharpest this proposal has measured, because it corrects three parties at once, this one included.
+
+`publication_recommendation` in `ai_review_submission.py` returns `featured-candidate` only when the score is at least 85 **and** `required_next_actions_zh` is empty. Issue #950 sampled eight submissions, found an organizer-owned recalculation item in all eight, and concluded that organizer data gaps indirectly kill `featured-candidate`. PR #957 was written from that diagnosis, routing actions prefixed with the Chinese word for organizer into `data_gaps_zh`.
+
+**This proposal agreed with that diagnosis and treated it as settled. Measured, it does not hold.**
+
+Over **all 1,069 pull requests** — not a sample, including every review body, comment body and label event:
+
+| Reading | Value |
+|---|---|
+| Times `review/formal-ready` has ever been attached | **0** |
+| Times `publish-qualified` (the weaker tier, score ≥ 65) has been emitted | **0** |
+| Action items matching #957's literal rule | 0 of 1,203 (**a necessary consequence of the old convention; withdrawn as evidence, see below**) |
+| Verdicts carrying the auto-appended summary item | **146 of 146** |
+| PRs that would flip to `featured-candidate`, under four rules | **0 / 0 / 0 / 0** |
+
+The first of the three is withdrawn; the other two are each sufficient on their own:
+
+**One: withdrawn — and the withdrawal is the part of this section worth reading.** This proposal first wrote that #957's matcher requires colon-terminated prefixes, that 0 of 1,203 historical actions match, and that the matcher is therefore inert. Two hours after publishing, @Sonike, the author of Issue #950, pointed out that the inference does not hold: **those 1,203 items were all produced under the old prompt, which never asked the model for that prefix, so counting its occurrence there is guaranteed to return zero.** #957 changes the prompt as well; under the new one Sonike measured four of five samples emitting the prefix, all in exact form.
+
+**This is the same shape as the error this proposal had just identified in his work**: using a measurement to answer a question it cannot answer. His eight samples showed the organizer item was present in all eight; they could not show it was the cause. This proposal's 1,203 items showed nobody wrote that prefix under the old prompt; they could not show the matcher will miss under the new one. **This proposal made the same mistake inside two hours.** The count is kept in the shipped JSON, labelled as a necessary consequence of the old convention, because it is true of the historical corpus — but it is no longer the basis of any conclusion.
+
+**Two: a perfect matcher would not help.** The summary item — 'complete the N detailed required repairs listed in the seven-dimension score' — is appended *before* the organizer split and carries no organizer prefix, so it always lands on the participant side. All 146 verdicts carry it.
+
+**Three: the organizer item is never the only blocker.** After the most generous stripping, the minimum remaining participant-owned action count is **4**, and the number of PRs left with only organizer items is 0 under every rule.
+
+Organizer dependencies are real: the word for official appears 122 times across the items, recompute 59, organizer 45. The measurement establishes one thing only: **removing them changes no outcome.**
+
+**The shape of this finding is the proposal's whole subject.** #950 and #957 are careful work; the diagnosis held in all eight of the eight it was drawn from, and the fix follows from it consistently. **The difference is not care. It is n.** One reading cannot show a systematic bias and a full corpus can — which is why this proposal argues not for more caution but for grounding judgements in readings someone else can re-run. Every count, classification rule and matched string ships in `visual/assets/review_gate_survey.json`, and anyone can change a rule and re-run, including to a conclusion this proposal would not like.
+
+Filed on Issue #950 and PR #957.
+
 ## Three-Level Scope Framework
 
 The proposal is organised on the three levels the announcement sets, and each maps one-to-one onto an order of survey precision [depth:three_level_scope_framework].
@@ -1045,6 +1080,8 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
+**Every reference the three matrices make is checked: 114 of them, all resolving.** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 114 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
+
 ### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
 
 The taskbook sets six agent tasks carrying **63 requirements** between them — 31 must-address items and 32 required outputs. The compliance matrix *asserted* that this package covers them. Nothing joined a requirement to the place that answers it, and **a claim of coverage is not coverage** — which is the objection this proposal makes everywhere else.
@@ -1081,14 +1118,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 **It is not a changelog.** A changelog says what changed. This says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and `analysis/build_errata.py` verifies at build time that the commit exists and touched the file the entry blames — an errata register that cannot be joined to the repository would be the defect it records.
 
-Thirty entries. By finder:
+Thirty-two entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 14 | The audit was run against the shipped package, not a draft |
-| The author | 13 | Found while working |
+| The author | 14 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
-| **Reviewers outside this proposal** | **2** | @anselasimov-web in PR #1002; @147228 in PR #1065 |
+| **Reviewers outside this proposal** | **3** | @anselasimov-web in PR #1002; @147228 in PR #1065; @Sonike on Issue #950 |
 
 **One of the eight, E24, is the only entry where the check worked and the person did not**: `overflow_qa` reported the overflow and I pushed the commit anyway. A gate that reports to someone who commits regardless does the same nothing as a gate that does not report. That failing commit stays in the history rather than being amended away.
 
@@ -1098,7 +1135,7 @@ Thirty entries. By finder:
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **6** |
+| **The check measured the convenient thing** | **7** |
 | **A deliverable was not looked at before shipping** | **5** |
 | Geometry did not mean what it said | 4 |
 | A reference did not resolve | 4 |
