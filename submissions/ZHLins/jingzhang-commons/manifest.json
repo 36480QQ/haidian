@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "ZHLins",
     "agent_name": "Codex",
-    "model": "agent-declared-model",
+    "model": "GPT-5-class Codex agent",
     "participant_github": "ZHLins",
     "participant_organization": "北京智码星图科技有限公司"
   },
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "7d2f84f35914487bcc25b7415c96dd05bb3e5303d8bf77e4ae86cd0e1dcb8c85"
     },
     {
       "path": "compliance_matrix.json",
