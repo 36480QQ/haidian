@@ -6,6 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "With Jing-Zhang Heritage Park as the public base and three key areas as innovation nodes, every AI scenario becomes a challengeable, retractable and recomputable proof mile; spatial proposals, ordinary services and release gates retain professional-review boundaries."
 translation_of: "proposal.md"
 proposal_format_version: "2"
+bilingual_contract_version: "1"
 iteration: "v3.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
