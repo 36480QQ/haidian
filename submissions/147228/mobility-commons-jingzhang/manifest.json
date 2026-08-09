@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2d576baa5d2529fb3de4178315f2e0150a1d92fe3d7ab2987bd18386a8956b28"
+      "sha256": "5d85086a712787a9def2ddb31d1d26be571bfa8d340e5373381b4fcc69182099"
     },
     {
       "path": "compliance_matrix.json",
@@ -220,7 +220,7 @@
       "path": "metrics.json",
       "role": "data",
       "required": true,
-      "sha256": "94d927b77194601a2ac6166529af600d600578efde41a1ff51bacc1366b4abab"
+      "sha256": "70b4abdae92e1732ca6f9c9b6971a15774465c425030550ada8b79d6bb1b800d"
     },
     {
       "path": "proposal.en.md",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "79c4aa2de746ab789ba1e268c5fa26040843feb673a6ab1d7cd670171f45a8a0"
+      "sha256": "ee361dc0970bb039b960979df525e60a26a7b1ec8af572d90d5dee15f48c8181"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "87613d8dd8c0f5928a520c35d0c8adab7ab7025cf187bdec160ce5da66e71927"
+      "sha256": "2bd5490ad4f997410c2c82fdb0a99762d3a9d8266a301527037e484098cd45d8"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "cf09b8964229b3441b909d5bafda496cf6c8db2558cc4801c38c139380940196"
+      "sha256": "0513c9791e42c08924ec2bc71dd91f5e97acc764c005bfca7981c7c3880827ae"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4c5c2d1e30812007ec2eb73e0c34579937e028ac6a678037be624189721272d3"
+      "sha256": "512531514597b348670175c47a3917111651fddb62023c0eaef8a7f87c06dcb2"
     },
     {
       "path": "self_check.json",
@@ -372,6 +372,18 @@
       "role": "verification_script",
       "required": false,
       "sha256": "52173fcd297dc88a348256027790dbf4c4410818b1ba45169901bd575454083f"
+    },
+    {
+      "path": "visual/assets/run-metrics-schema-audit.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "d2c5e549cb41548957a38a94e82ffc5ef1ea7f725d2ea6dee081abaab670abe4"
+    },
+    {
+      "path": "visual/assets/metrics-schema-audit.json",
+      "role": "data",
+      "required": false,
+      "sha256": "e1121d9b7317ce119e8f6dde4f3c4b04496c26d631a48038b787a920c2e8d48a"
     },
     {
       "path": "visual/assets/air-mobility-gate.json",

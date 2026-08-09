@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v1.10 - 2026-08-10
+
+- Closed the projected-length formula expression in the normalized metric ledger; this is a text-quality fix only and does not change the metric value, source, status, or claim boundary.
+
+## v1.9 - 2026-08-10
+
+- Added a checked-in deterministic schema-audit summary so reviewers can see the 29-record split (`known=11`, `unknown=18`) without manually reconstructing the normalized object.
+- Linked the audit summary and runner from both bilingual metric sections; the artifact keeps the claim boundary explicit and does not add field data or performance claims.
+
+## v1.8 - 2026-08-10
+
+- Normalized `metrics.json`: all 29 metric records now live under the single `metrics` object; the eight previously top-level mobility and simulation indicators were moved without changing their `unknown`/`null` values, formulas, sources or targets.
+- Added `visual/assets/run-metrics-schema-audit.js`, a dependency-free deterministic check for top-level placement and `status`/`value` consistency.
+- Kept the change schema-only; no geometry, simulation output, public snapshot, ranking field or operational-performance claim was changed.
+
 ## v1.7 - 2026-08-09
 
 - Added a bilingual one-page executive brief at the top of both readable proposals.
