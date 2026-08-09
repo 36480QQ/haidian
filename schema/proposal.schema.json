@@ -34,24 +34,40 @@
             "en"
           ]
         },
-        "chinese_translation": {
+        "proposal_format_version": {
           "type": "string",
           "enum": [
-            "included"
+            "1",
+            "2"
           ],
-          "description": "Required when language=en; full English content must be followed by the complete Chinese translation under a top-level # 中文正式译文 heading in proposal.md."
+          "description": "Version 2 separates human-readable narrative citations from the complete machine-audit index. Missing values remain valid legacy version 1 submissions."
+        },
+        "translation_file": {
+          "type": "string",
+          "pattern": "^proposal\\.(zh|en)\\.md$",
+          "description": "Required for version 2. Points to the complete Chinese or English translation of proposal.md."
+        },
+        "bilingual_contract_version": {
+          "type": "string",
+          "const": "1",
+          "description": "Explicit opt-in for proposal format v2 to the blocking Chinese-English display contract. New scaffolds set this field; historical packages without it retain compatibility."
+        },
+        "translation_of": {
+          "type": "string",
+          "const": "proposal.md",
+          "description": "Used by proposal.zh.md or proposal.en.md to identify the primary proposal."
         },
         "title_zh": {
           "type": "string",
           "minLength": 2,
           "maxLength": 120,
-          "description": "Required when language=en."
+          "description": "Legacy compatibility field for older inline bilingual proposals; standalone translation metadata is preferred."
         },
         "summary_zh": {
           "type": "string",
           "minLength": 10,
           "maxLength": 500,
-          "description": "Required when language=en."
+          "description": "Legacy compatibility field for older inline bilingual proposals; standalone translation metadata is preferred."
         },
         "license": {
           "type": "string",
@@ -99,9 +115,6 @@
     },
     "sections": {
       "type": "array",
-      "contains": {
-        "const": "设计依据与资料清单"
-      },
       "minItems": 13
     },
     "assets": {
@@ -117,6 +130,39 @@
       "if": {
         "properties": {
           "metadata": {
+            "properties": {
+              "proposal_format_version": {"const": "2"},
+              "bilingual_contract_version": {"const": "1"}
+            },
+            "required": ["proposal_format_version", "bilingual_contract_version"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata": {"required": ["translation_file"]}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
+            "properties": {"language": {"const": "zh"}},
+            "required": ["language"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {"contains": {"const": "设计依据与资料清单"}}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metadata": {
             "properties": {"language": {"const": "en"}},
             "required": ["language"]
           }
@@ -124,9 +170,7 @@
       },
       "then": {
         "properties": {
-          "metadata": {
-            "required": ["chinese_translation", "title_zh", "summary_zh"]
-          }
+          "sections": {"contains": {"const": "Design Basis and Source List"}}
         }
       }
     }

@@ -194,7 +194,7 @@
       "source_kind": "provisional_repository_data",
       "url": "brief/site-package/geometry/provisional_boundaries.geojson",
       "published_date": "2026-06-05",
-      "accessed_date": "2026-06-07",
+      "accessed_date": "2026-08-07",
       "file_type": "geojson",
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
@@ -227,12 +227,13 @@
       ],
       "local_paths": [
         "brief/site-package/geometry/provisional_boundaries.geojson",
+        "brief/site-package/geometry/provisional_boundaries_basis.md",
         "data/processed/agent_fact_pack.md",
         "data/processed/project_scope_summary.csv",
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
     }
   ]
 }

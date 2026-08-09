@@ -197,8 +197,8 @@ def check_workflow_trusted_base(repo_root: Path, checks: list[dict[str, Any]]) -
     failures = []
     if "pull_request_target" not in text:
         failures.append("workflow must use pull_request_target")
-    if "github.event.pull_request.base.sha" not in text:
-        failures.append("workflow must checkout the trusted base SHA")
+    if "github.event.repository.default_branch" not in text:
+        failures.append("workflow must checkout the current trusted default branch")
     if "github.event.pull_request.head.sha" in text or "pull_request.head.sha" in text:
         failures.append("workflow must not checkout the PR head SHA")
     if "python3 scripts/github_pr_validation.py" not in text:
@@ -216,7 +216,7 @@ def check_pr_template(repo_root: Path, checks: list[dict[str, Any]]) -> None:
     text = read_text(repo_root / ".github" / "PULL_REQUEST_TEMPLATE.md")
     required = [
         "本 PR 不修改 `gallery-publication.json` 或 `submissions-data.js`",
-        "公开展示和首页精选由维护者决定",
+        "已合并方案自动进入展示页，首页精选由维护者决定",
         "本 PR 只修改 `submissions/<my-github-login>/`",
         "已记录 `package_type` 与派生的 `review_status`",
     ]

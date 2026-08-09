@@ -86,7 +86,7 @@ class PrelaunchCheckTests(unittest.TestCase):
     def test_workflow_keeps_pull_request_target_safe(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "submission-validation.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
-        self.assertIn("github.event.pull_request.base.sha", workflow)
+        self.assertIn("github.event.repository.default_branch", workflow)
         self.assertNotIn("github.event.pull_request.head.sha", workflow)
         self.assertIn("python3 scripts/github_pr_validation.py", workflow)
 
@@ -96,7 +96,7 @@ class PrelaunchCheckTests(unittest.TestCase):
         index_page = (ROOT / "index.html").read_text(encoding="utf-8")
 
         self.assertIn("本 PR 不修改 `gallery-publication.json` 或 `submissions-data.js`", template)
-        self.assertIn("公开展示和首页精选由维护者决定", template)
+        self.assertIn("已合并方案自动进入展示页，首页精选由维护者决定", template)
         self.assertIn("PR comment", submissions_page)
         self.assertIn("不展示维护者审核正文", submissions_page)
 

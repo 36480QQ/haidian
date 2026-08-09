@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>京张开源带｜城市设计图集</title>
+<style>
+:root{--paper:#f3f0e7;--paper-deep:#e9e4d8;--ink:#19231f;--muted:#6f756f;--line:#c8c2b5;--red:#d3523e;--green:#3e6759;--gold:#b98d38;--header:58px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;background:var(--paper)}
+body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.55;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit}
+.skip{position:fixed;left:14px;top:-80px;z-index:100;padding:10px 14px;background:var(--ink);color:white;text-decoration:none}
+.skip:focus{top:12px}
+.sitebar{position:sticky;top:0;z-index:40;height:var(--header);border-bottom:1px solid rgba(25,35,31,.18);background:rgba(243,240,231,.94);backdrop-filter:blur(14px);display:flex;align-items:center;padding:0 clamp(18px,3vw,46px);gap:32px}
+.brand{display:flex;align-items:baseline;gap:11px;text-decoration:none;font-weight:800;letter-spacing:.08em;white-space:nowrap}
+.brand small{font-size:9px;font-weight:700;color:var(--red);letter-spacing:.18em}
+.sitebar nav{margin-left:auto;display:flex;gap:24px}
+.sitebar nav a,.lang{font-size:12px;text-decoration:none;color:var(--muted);padding:18px 0 15px;border-bottom:2px solid transparent}
+.sitebar nav a:hover,.sitebar nav a:focus-visible,.lang:hover,.lang:focus-visible{color:var(--ink);border-color:var(--red)}
+.lang{font-weight:800;color:var(--ink)}
+.hero{min-height:calc(100svh - var(--header));border-bottom:1px solid var(--line)}
+.hero-head{min-height:192px;padding:30px clamp(18px,4vw,60px) 26px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:36px}
+.kicker,.sheet-no{margin:0 0 9px;color:var(--red);font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{margin:0;font-family:"Songti SC","STSong",serif;font-size:clamp(54px,6.2vw,98px);font-weight:700;line-height:.92;letter-spacing:-.055em}
+.hero-line{max-width:720px;margin:18px 0 0;font-family:"Songti SC","STSong",serif;font-size:clamp(18px,1.45vw,24px);line-height:1.5}
+.actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:9px;align-self:end}
+.actions a{min-height:40px;padding:10px 15px;border:1px solid var(--ink);font-size:12px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:background .2s,color .2s}
+.actions a:first-child{background:var(--ink);color:var(--paper)}
+.actions a:hover,.actions a:focus-visible{background:var(--red);border-color:var(--red);color:white}
+.hero-media{height:clamp(520px,calc(100svh - 250px),760px);display:grid;grid-template-columns:minmax(0,2.35fr) minmax(300px,1fr);border-top:1px solid var(--line);background:var(--paper-deep)}
+.hero-media figure,.sheet,.scene,.paired figure{position:relative;min-width:0;margin:0;overflow:hidden}
+.hero-plan{border-right:1px solid var(--line);display:grid;grid-template-rows:minmax(0,1fr) auto}
+.hero-plan img{width:100%;height:100%;object-fit:contain;background:var(--paper)}
+.hero-life{display:grid;grid-template-rows:minmax(0,1fr) auto;background:var(--ink)}
+.hero-life img{width:100%;height:100%;object-fit:cover;object-position:55% center;filter:saturate(.88)}
+figcaption{min-height:36px;padding:9px 12px;border-top:1px solid var(--line);background:var(--paper);color:var(--muted);font-size:10px;letter-spacing:.02em}
+.hero-life figcaption{border-color:#3b4540;background:var(--ink);color:#e7e4dc}
+.hero-plan figcaption span{margin-right:10px;color:var(--red);font-weight:800}
+.atlas{overflow:hidden}
+.atlas-block{padding:clamp(70px,8vw,132px) clamp(14px,3vw,46px);border-bottom:1px solid var(--line)}
+.atlas-block.tone{background:#ebe7dc}
+.section-head{max-width:1480px;margin:0 auto 32px;display:grid;grid-template-columns:170px minmax(0,780px);gap:34px;align-items:start}
+.sheet-no{padding-top:9px;border-top:2px solid var(--red)}
+.section-head h2{margin:0;font-family:"Songti SC","STSong",serif;font-size:clamp(38px,4.5vw,68px);font-weight:700;line-height:1.02;letter-spacing:-.04em}
+.section-head p:last-child{margin:14px 0 0;max-width:680px;color:var(--muted);font-size:15px}
+.sheet,.paired,.scene-row{max-width:1500px;margin-inline:auto}
+.sheet{border:1px solid var(--line);background:var(--paper)}
+.sheet img{width:100%;height:auto;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.sheet:hover img,.paired figure:hover img,.scene:hover img{transform:scale(1.006)}
+.scene-row{display:grid;grid-template-columns:1.04fr .92fr 1.04fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}
+.scene{display:grid;grid-template-rows:minmax(0,1fr) auto;background:var(--paper)}
+.scene img{width:100%;height:clamp(250px,28vw,430px);object-fit:cover;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.scene:nth-child(2) img{object-position:58% center}
+.scene-note{max-width:1500px;margin:10px auto 0;color:var(--muted);font-size:10px}
+.paired{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;border:1px solid var(--line);background:var(--line)}
+.paired figure{display:grid;grid-template-rows:minmax(0,1fr) auto;background:var(--paper)}
+.paired img{width:100%;height:auto;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.review-index{padding:62px clamp(14px,3vw,46px) 72px;background:var(--ink);color:#ecede8}
+.review-index details{max-width:1500px;margin:auto;border-top:1px solid #6d756f;border-bottom:1px solid #6d756f}
+.review-index summary{cursor:pointer;padding:22px 0;list-style:none;font-family:"Songti SC","STSong",serif;font-size:clamp(27px,3vw,42px)}
+.review-index summary::-webkit-details-marker{display:none}
+.review-index summary::after{content:"＋";float:right;color:var(--red);font-family:Arial,sans-serif}
+.review-index details[open] summary::after{content:"－"}
+.review-index summary span{margin-left:14px;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.18em;color:#99a09b}
+.index-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(340px,.65fr);gap:56px;padding:8px 0 28px}
+.index-list{margin:0}
+.index-list div{display:grid;grid-template-columns:86px minmax(0,1fr);gap:18px;padding:12px 0;border-top:1px solid #3e4943}
+.index-list dt{color:#aeb5af;font-size:11px}
+.index-list dd{margin:0;font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #6d756f;border-bottom:1px solid #6d756f}
+.metric{padding:14px 10px 14px 0;border-right:1px solid #3e4943}
+.metric:last-child{padding-left:12px;border-right:0}
+.metric strong{display:block;font-family:"Songti SC","STSong",serif;font-size:clamp(23px,2vw,34px);font-weight:500;color:white;white-space:nowrap}
+.metric span{display:block;margin-top:4px;color:#aeb5af;font-size:10px}
+.check{margin:18px 0 0;color:#c8cec9;font-size:12px}
+.filelinks{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:18px}
+.filelinks a{font-size:11px;color:#f0eee8;text-underline-offset:4px}
+footer{padding:28px clamp(18px,3vw,46px);background:#101713;color:#afb6b1;display:flex;justify-content:space-between;gap:22px;font-size:10px}
+footer strong{color:#f0eee8;letter-spacing:.08em}
+@media(max-width:980px){
+  .sitebar nav{display:none}
+  .hero-head{grid-template-columns:1fr;align-items:start;gap:22px}
+  .actions{justify-content:flex-start}
+  .hero-media{height:auto;grid-template-columns:1fr}
+  .hero-plan{border-right:0;border-bottom:1px solid var(--line)}
+  .hero-plan img{aspect-ratio:16/9}
+  .hero-life img{height:auto;aspect-ratio:16/9}
+  .section-head{grid-template-columns:120px minmax(0,1fr)}
+  .index-grid{grid-template-columns:1fr;gap:30px}
+}
+@media(max-width:650px){
+  :root{--header:54px}
+  .sitebar{gap:14px;padding-inline:14px}
+  .brand{font-size:13px}.brand small{display:none}.lang{margin-left:auto}
+  .hero-head{min-height:0;padding:24px 14px 22px;gap:20px}
+  .hero h1{font-size:46px;line-height:.96}
+  .hero-line{margin-top:12px;font-size:17px}
+  .actions{gap:7px}.actions a{flex:1 1 auto;padding-inline:10px}
+  .hero-plan img,.hero-life img{aspect-ratio:16/9}
+  .atlas-block{padding:58px 12px}
+  .section-head{grid-template-columns:1fr;gap:7px;margin-bottom:20px}
+  .sheet-no{width:92px;margin-bottom:4px}
+  .section-head h2{font-size:38px}.section-head p:last-child{font-size:14px;margin-top:10px}
+  .scene-row,.paired{grid-template-columns:1fr}
+  .scene img{height:auto;aspect-ratio:16/10}
+  .review-index{padding:44px 14px 58px}
+  .review-index summary span{display:none}
+  .index-list div{grid-template-columns:72px minmax(0,1fr);gap:12px}
+  .metrics{grid-template-columns:1fr}.metric,.metric:last-child{padding:12px 0;border-right:0;border-bottom:1px solid #3e4943}.metric:last-child{border-bottom:0}
+  footer{display:block}footer span{display:block;margin-top:7px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sheet img,.paired img,.scene img{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到图集</a>
+<header class="sitebar">
+  <a class="brand" href="#top"><span>京张开源带</span><small>JINGZHANG OPEN BELT</small></a>
+  <nav aria-label="图集导航"><a href="#atlas">总图</a><a href="#courts">三院</a><a href="#route">慢行</a><a href="#build">建造</a><a href="#review">核验</a></nav>
+  <a class="lang" href="index.en.html" lang="en">EN</a>
+</header>
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-head">
+      <div><p class="kicker">2026 概念方案　城市设计图集</p><h1 id="hero-title">京张开源带</h1><p class="hero-line">九公里旧铁路把三段城市和一连串日常去处接起来。</p></div>
+      <div class="actions" aria-label="下载与阅读"><a href="../report/proposal.html">方案正文</a><a href="../drawings/a3-booklet.pdf" download>A3 图册 PDF</a><a href="../drawings/a0-boards.pdf" download>A0 展板 PDF</a></div>
+    </div>
+    <div class="hero-media">
+      <figure class="hero-plan"><img src="../assets/figures/site-overview.png" alt="京张遗址公园北中南三段总体地图" fetchpriority="high"><figcaption><span>01</span>总览地图与总体结构</figcaption></figure>
+      <figure class="hero-life"><img src="../assets/scenes/ai-origin-service-court.jpg" alt="树荫下的 AI 原点服务院概念场景" fetchpriority="high"><figcaption>AI 原点服务院　概念场景</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="atlas" id="atlas">
+    <section class="atlas-block reveal" aria-labelledby="scale-title">
+      <div class="section-head"><p class="sheet-no">02　SCALE</p><div><h2 id="scale-title">从九公里到一座院子</h2><p>先看完整走廊，再看北中南三段怎样落到街区和路口。</p></div></div>
+      <figure class="sheet"><img src="../assets/figures/land-use-structure.png" alt="九公里走廊、八百米街区和一百二十米院落的用地分区"><figcaption>三层范围　用地分区与建筑语境</figcaption></figure>
+    </section>
+
+    <section class="atlas-block tone reveal" id="courts" aria-labelledby="courts-title">
+      <div class="section-head"><p class="sheet-no">03　COURTS</p><div><h2 id="courts-title">三处院落同尺画开</h2><p>入口、树荫、雨水、测试边界和人工值守都能在平面与剖面里找到。</p></div></div>
+      <figure class="sheet"><img src="../assets/figures/key-areas.png" alt="众智园、AI 原点和大钟寺三处重点区域平面与剖面"><figcaption>重点区域　众智园试验院　AI 原点服务院　大钟寺交换院</figcaption></figure>
+      <div class="scene-row" aria-label="三处概念场景">
+        <figure class="scene"><img src="../assets/scenes/zhongzhiyuan-test-court.jpg" alt="众智园低速测试院概念场景"><figcaption>众智园　低速试验</figcaption></figure>
+        <figure class="scene"><img src="../assets/scenes/xiaoyuehe-crossing.jpg" alt="小月河步行过街概念场景"><figcaption>小月河　步行过街</figcaption></figure>
+        <figure class="scene"><img src="../assets/scenes/dazhongsi-evening-court.jpg" alt="大钟寺傍晚交换院概念场景"><figcaption>大钟寺　傍晚交换</figcaption></figure>
+      </div>
+      <p class="scene-note">四张概念场景只说明使用和尺度，不作为现场证据。</p>
+    </section>
+
+    <section class="atlas-block reveal" id="route" aria-labelledby="route-title">
+      <div class="section-head"><p class="sheet-no">04　ROUTE</p><div><h2 id="route-title">先把路走顺</h2><p>交通慢行、轨道、河道和六处断面放在一张图里，断点能直接对应现场。</p></div></div>
+      <figure class="sheet"><img src="../assets/figures/mobility-bluegreen.png" alt="九公里交通慢行、轨道、蓝绿公共空间和六处剖面"><figcaption>慢行主线　轨道接口　蓝绿公共空间</figcaption></figure>
+    </section>
+
+    <section class="atlas-block tone reveal" aria-labelledby="life-title">
+      <div class="section-head"><p class="sheet-no">05 / 06　DAILY LIFE</p><div><h2 id="life-title">人从哪里进来</h2><p>高校、社区和运营人员各自有入口，一天里的服务、散步和测试也分开安排。</p></div></div>
+      <div class="paired">
+        <figure><img src="../assets/figures/ecosystem-space.png" alt="高校、社区、公共部门和运营人员在三处院落的空间关系"><figcaption>05　研究与公共服务</figcaption></figure>
+        <figure><img src="../assets/figures/scenario-operations.png" alt="从清晨到夜间的 AI 场景和人工接手安排"><figcaption>06　AI 场景与一天的使用</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="atlas-block reveal" id="build" aria-labelledby="build-title">
+      <div class="section-head"><p class="sheet-no">07 / 08　BUILD</p><div><h2 id="build-title">一件一件建，也一件一件修</h2><p>棚架、座椅、雨庭和服务桌先从小段开工，复测之后再接成整条线。</p></div></div>
+      <div class="paired">
+        <figure><img src="../assets/figures/components-phasing.png" alt="八种可单件安装和维护的公共空间构件"><figcaption>07　八种公共构件</figcaption></figure>
+        <figure><img src="../assets/figures/phasing-strategy.png" alt="九个更新项目和九十天、一年、三年的实施顺序"><figcaption>08　更新项目与分期</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="atlas-block tone reveal" aria-labelledby="evidence-title">
+      <div class="section-head"><p class="sheet-no">09 / 10　EVIDENCE</p><div><h2 id="evidence-title">数值留在图上，标识留在现场</h2><p>工作面积沿同一套边界复算，铁路铆钉和缝线则落在路标、帆布和纸张上。</p></div></div>
+      <div class="paired">
+        <figure><img src="../assets/figures/metrics-evidence.png" alt="方案工作面积、绿地和公共空间核心指标复算图"><figcaption>09　核心指标与证据边界</figcaption></figure>
+        <figure><img src="../assets/figures/identity-system.png" alt="京张开源带标识、色彩和现场应用"><figcaption>10　沿线识别系统</figcaption></figure>
+      </div>
+    </section>
+  </div>
+</main>
+
+<section class="review-index" id="review" aria-labelledby="review-title">
+  <details open>
+    <summary id="review-title">图纸索引与核验<span>INDEX &amp; CHECKS</span></summary>
+    <div class="index-grid">
+      <dl class="index-list">
+        <div><dt>空间</dt><dd>总览地图　三层范围　重点区域　用地分区　建筑</dd></div>
+        <div><dt>系统</dt><dd>交通慢行　轨道　蓝绿公共空间　公共空间　更新项目</dd></div>
+        <div><dt>使用</dt><dd>AI 场景　核心指标　任务覆盖</dd></div>
+        <div><dt>核验</dt><dd>自检状态　来源　假设</dd></div>
+      </dl>
+      <div>
+        <div class="metrics" aria-label="核心指标">
+          <div class="metric" data-metric="site_area_sqm" data-value="11412603.01"><strong>11.413 km²</strong><span>场地工作面积</span></div>
+          <div class="metric" data-metric="green_ratio" data-value="0.226745"><strong>22.67%</strong><span>绿地工作比</span></div>
+          <div class="metric" data-metric="public_space_ratio" data-value="0.044027"><strong>4.40%</strong><span>公共空间工作比</span></div>
+        </div>
+        <p class="check">当前成果采用暂定边界，法定控制线到位后重新复算。</p>
+        <div class="filelinks"><a href="../self_check.json">自检文件</a><a href="../sources.json">来源清单</a><a href="../assumptions.json">假设清单</a><a href="../metrics.json">指标文件</a></div>
+      </div>
+    </div>
+  </details>
+</section>
+<footer><strong>京张开源带　概念方案</strong><span>原创内容采用 CC BY 4.0　OSM 语境采用 ODbL 1.0　概念场景不代表现状或批准方案</span></footer>
+</body>
+</html>

@@ -92,9 +92,10 @@ def infer_author(submission_dir: Path, repo_root: Path) -> str:
 
 
 def script_path(repo_root: Path, name: str) -> Path:
-    candidate = repo_root / "scripts" / name
-    if candidate.exists():
-        return candidate
+    # Review a participant checkout with the maintainer worker's trusted
+    # validation code.  The checkout can predate a validator fix (or contain
+    # participant-controlled scripts), so it must never supply executables to
+    # the review process.
     return SCRIPT_DIR / name
 
 
@@ -209,6 +210,7 @@ def build_prompt(review_input: dict) -> str:
             "",
             "Important: deterministic validation and spatial review results are evidence. Treat blocking self-checks, known blockers, and missing official geometry as serious readiness limits.",
             "Treat background_only, provisional_only, and needs_review registry entries as non-formal evidence unless the submitted package separately provides reviewed official/cleared evidence.",
+            "Version 2 bilingual deliverables are mandatory. A missing, incomplete, malformed, or incorrectly mapped Chinese/English counterpart is a blocking package-readiness failure. Historical version 1 packages remain compatible; review their available language without inventing missing content. Human reviewers must still compare translated claims, metrics, evidence, and figure positions for substantive equivalence.",
             "If pre-submit self-check, spatial review, machine visual-packaging checks, or professional evidence review is FAIL, the package cannot enter formal professional scoring.",
             "",
             "Submission path:",

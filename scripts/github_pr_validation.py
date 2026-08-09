@@ -14,17 +14,84 @@ import os
 import shutil
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
-from validate_submission import format_report, validate_submission
+from validate_submission import ValidationReport, format_report, validate_submission
 
 
 COMMENT_MARKER = "<!-- haidian-submission-validation -->"
 API_ROOT = "https://api.github.com"
+MAX_API_ATTEMPTS = 4
+MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024
+MAX_RETRY_DELAY_SECONDS = 30
+RETRYABLE_METHODS = frozenset({"GET", "HEAD", "OPTIONS"})
+# A fork's Contents API can briefly lag the PR event's head commit. Keep 404
+# retries bounded and limited to GETs; a permanent missing file still fails
+# with the path and head-specific download error after the retry budget.
+RETRYABLE_STATUS_CODES = frozenset({404, 429, 500, 502, 503, 504})
+
+
+def _http_error_message(error: urllib.error.HTTPError) -> str:
+    """Extract GitHub's safe error message without exposing auth headers."""
+    try:
+        raw = error.read().decode("utf-8", errors="replace")
+    except OSError:
+        raw = ""
+    if raw:
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            payload = None
+        if isinstance(payload, dict) and isinstance(payload.get("message"), str):
+            return payload["message"]
+        return raw[:300].replace("\n", " ")
+    return str(error.reason or "request failed")
+
+
+def _is_retryable_http_error(
+    method: str, error: urllib.error.HTTPError, message: str
+) -> bool:
+    """Retry transient API throttling, but fail fast on permission errors."""
+    if method.upper() not in RETRYABLE_METHODS:
+        return False
+    if error.code in RETRYABLE_STATUS_CODES:
+        return True
+    if error.code != 403:
+        return False
+    headers = {key.lower(): value for key, value in error.headers.items()}
+    remaining = headers.get("x-ratelimit-remaining")
+    return bool(
+        headers.get("retry-after")
+        or remaining == "0"
+        or "rate limit" in message.lower()
+        or "secondary rate limit" in message.lower()
+        or "abuse detection" in message.lower()
+    )
+
+
+def _retry_delay_seconds(error: urllib.error.HTTPError, attempt: int) -> float:
+    headers = {key.lower(): value for key, value in error.headers.items()}
+    retry_after = headers.get("retry-after")
+    if retry_after:
+        try:
+            return min(MAX_RETRY_DELAY_SECONDS, max(1.0, float(retry_after)))
+        except ValueError:
+            pass
+    return min(MAX_RETRY_DELAY_SECONDS, float(2**attempt))
+
+
+def _is_download_not_found(error: Exception, path: str) -> bool:
+    """Recognize an optional manifest asset that is still absent after retries."""
+    if isinstance(error, urllib.error.HTTPError):
+        return error.code == 404
+    return isinstance(error, RuntimeError) and str(error).startswith(
+        f"GitHub API download {path} failed with HTTP 404:"
+    )
 
 
 class GitHubClient:
@@ -47,10 +114,24 @@ class GitHubClient:
                 "X-GitHub-Api-Version": "2022-11-28",
             },
         )
-        with urllib.request.urlopen(request, timeout=60) as response:
-            raw = response.read().decode("utf-8")
-            parsed = json.loads(raw) if raw else None
-            return parsed, dict(response.headers.items())
+        for attempt in range(MAX_API_ATTEMPTS):
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    raw = response.read().decode("utf-8")
+                    parsed = json.loads(raw) if raw else None
+                    return parsed, dict(response.headers.items())
+            except urllib.error.HTTPError as error:
+                message = _http_error_message(error)
+                if error.code == 404:
+                    raise
+                if attempt + 1 >= MAX_API_ATTEMPTS or not _is_retryable_http_error(
+                    method, error, message
+                ):
+                    raise RuntimeError(
+                        f"GitHub API {method} {url} failed with HTTP {error.code}: {message}"
+                    ) from error
+                time.sleep(_retry_delay_seconds(error, attempt))
+        raise AssertionError("unreachable")
 
     def paginate(self, path: str) -> list[dict]:
         url = f"{API_ROOT}{path}"
@@ -67,7 +148,7 @@ class GitHubClient:
         path: str,
         ref: str,
         destination: Path,
-        max_bytes: int = 6 * 1024 * 1024,
+        max_bytes: int = MAX_DOWNLOAD_BYTES,
     ) -> None:
         # Fetch raw bytes through the Contents API on api.github.com. Unlike the
         # github.com raw_url, this honors the Bearer token on private repos (the
@@ -85,8 +166,22 @@ class GitHubClient:
                 "X-GitHub-Api-Version": "2022-11-28",
             },
         )
-        with urllib.request.urlopen(request, timeout=60) as response:
-            content = response.read(max_bytes + 1)
+        for attempt in range(MAX_API_ATTEMPTS):
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    content = response.read(max_bytes + 1)
+                    break
+            except urllib.error.HTTPError as error:
+                message = _http_error_message(error)
+                if attempt + 1 >= MAX_API_ATTEMPTS or not _is_retryable_http_error(
+                    "GET", error, message
+                ):
+                    raise RuntimeError(
+                        f"GitHub API download {path} failed with HTTP {error.code}: {message}"
+                    ) from error
+                time.sleep(_retry_delay_seconds(error, attempt))
+        else:
+            raise AssertionError("unreachable")
         if len(content) > max_bytes:
             raise RuntimeError(f"{destination}: file exceeds download cap")
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -120,6 +215,22 @@ class GitHubClient:
                 return
         self.request("POST", f"/repos/{self.repository}/issues/{issue_number}/comments", {"body": body})
 
+    def add_labels(self, issue_number: int, labels: list[str]) -> None:
+        self.request(
+            "POST",
+            f"/repos/{self.repository}/issues/{issue_number}/labels",
+            {"labels": labels},
+        )
+
+    def remove_labels(self, issue_number: int, labels: list[str]) -> None:
+        for label in labels:
+            encoded = urllib.parse.quote(label, safe="")
+            try:
+                self.request("DELETE", f"/repos/{self.repository}/issues/{issue_number}/labels/{encoded}")
+            except urllib.error.HTTPError as exc:
+                if exc.code != 404:
+                    raise
+
 
 def next_link(link_header: str) -> str | None:
     for part in link_header.split(","):
@@ -140,6 +251,95 @@ def proposal_paths_for(changed_files: list[str]) -> set[str]:
         if len(parts) >= 3 and parts[0] == "submissions":
             proposals.add("/".join(parts[:3] + ["proposal.md"]))
     return proposals
+
+
+def validation_paths_for(files: list[dict], maintainer_bypass: bool) -> list[str]:
+    """Return paths present in the PR checkout for content validation."""
+    return [
+        item["filename"]
+        for item in files
+        if item.get("status") != "removed"
+    ]
+
+
+def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
+    """Return true only for a single participant-owned submission directory."""
+    roots: set[str] = set()
+    for filename in changed_files:
+        parts = filename.split("/")
+        if len(parts) < 4 or parts[0] != "submissions" or parts[1].casefold() != pr_author.casefold():
+            return False
+        roots.add("/".join(parts[:3]))
+    return bool(changed_files) and len(roots) == 1
+
+
+def is_non_submission_pr(files: list[dict] | list[str]) -> bool:
+    """Return true only when current and renamed paths are outside submissions/."""
+    paths: list[str] = []
+    for item in files:
+        if isinstance(item, dict):
+            filename = item.get("filename")
+            if isinstance(filename, str):
+                paths.append(filename)
+            previous_filename = item.get("previous_filename")
+            if isinstance(previous_filename, str):
+                paths.append(previous_filename)
+        elif isinstance(item, str):
+            paths.append(item)
+    return bool(paths) and all(filename.split("/", 1)[0] != "submissions" for filename in paths)
+
+
+def safe_manifest_paths(manifest: object) -> set[str]:
+    """Return inert, proposal-relative file paths declared by a manifest."""
+    if not isinstance(manifest, dict) or not isinstance(manifest.get("files"), list):
+        return set()
+    paths: set[str] = set()
+    for item in manifest["files"]:
+        raw = item.get("path") if isinstance(item, dict) else None
+        if not isinstance(raw, str):
+            continue
+        candidate = PurePosixPath(raw)
+        if candidate.is_absolute() or not candidate.parts or ".." in candidate.parts:
+            continue
+        normalized = candidate.as_posix()
+        if normalized in {".", ""}:
+            continue
+        paths.add(normalized)
+    return paths
+
+
+def hydrate_proposal_package(
+    client: GitHubClient,
+    head_repo: str,
+    head_sha: str,
+    worktree: Path,
+    proposal_path: str,
+) -> None:
+    """Download the inert files needed to validate an existing proposal package."""
+    proposal_dir = PurePosixPath(proposal_path).parent.as_posix()
+    manifest_path = f"{proposal_dir}/manifest.json"
+    manifest_destination = worktree / manifest_path
+    if not manifest_destination.exists():
+        if not client.fetch_content(head_repo, manifest_path, head_sha, manifest_destination):
+            return
+    try:
+        manifest = json.loads(manifest_destination.read_text(encoding="utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return
+    for relative in safe_manifest_paths(manifest):
+        destination = worktree / proposal_dir / relative
+        if destination.exists():
+            continue
+        try:
+            client.download_content(
+                head_repo,
+                f"{proposal_dir}/{relative}",
+                head_sha,
+                destination,
+            )
+        except (urllib.error.HTTPError, RuntimeError) as exc:
+            if not _is_download_not_found(exc, f"{proposal_dir}/{relative}"):
+                raise
 
 
 def write_step_summary(markdown: str) -> None:
@@ -170,6 +370,13 @@ def main() -> int:
 
     files = client.paginate(f"/repos/{repository}/pulls/{pr_number}/files?per_page=100")
     changed_files = [item["filename"] for item in files]
+    bypass = [
+        item.strip()
+        for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
+        if item.strip()
+    ]
+    maintainer_bypass = pr_author.lower() in {item.lower() for item in bypass}
+    validation_files = validation_paths_for(files, maintainer_bypass)
 
     worktree = Path(tempfile.mkdtemp(prefix="haidian-pr-"))
     try:
@@ -179,17 +386,39 @@ def main() -> int:
                 continue
             client.download_content(head_repo, filename, head_sha, worktree / filename)
 
-        for proposal_path in proposal_paths_for(changed_files):
+        for proposal_path in proposal_paths_for(validation_files):
             destination = worktree / proposal_path
             if not destination.exists():
                 client.fetch_content(head_repo, proposal_path, head_sha, destination)
+            hydrate_proposal_package(
+                client,
+                head_repo,
+                head_sha,
+                worktree,
+                proposal_path,
+            )
 
-        bypass = [
-            item.strip()
-            for item in os.getenv("MAINTAINER_BYPASS_LOGINS", "").split(",")
-            if item.strip()
-        ]
-        validation = validate_submission(worktree, pr_author, changed_files, bypass)
+        queue_candidate = is_review_queue_candidate(changed_files, pr_author)
+        if is_non_submission_pr(files):
+            validation = ValidationReport(changed_files=changed_files)
+            validation.add_warning(
+                "non-submission code/docs/test PR; participant package validation was not applicable"
+            )
+        elif not validation_files and (maintainer_bypass or queue_candidate):
+            validation = ValidationReport(
+                changed_files=changed_files,
+                maintainer_bypass=maintainer_bypass,
+            )
+            if maintainer_bypass:
+                validation.add_warning(
+                    "maintainer-authorized deletion-only PR; removed files were not executed or content-validated"
+                )
+            else:
+                validation.add_warning(
+                    "participant deletion-only PR; removed files were not content-validated"
+                )
+        else:
+            validation = validate_submission(worktree, pr_author, validation_files, bypass)
         validation_markdown = format_report(validation)
 
         comment = (
@@ -201,6 +430,16 @@ def main() -> int:
         write_step_summary(comment)
         client.upsert_comment(pr_number, comment)
 
+        if validation.ok and queue_candidate:
+            client.remove_labels(
+                pr_number,
+                ["review/ci-failed", "review/changes-requested", "review/low-quality"],
+            )
+            client.add_labels(pr_number, ["review/queued"])
+        elif queue_candidate:
+            client.remove_labels(pr_number, ["review/queued"])
+            client.add_labels(pr_number, ["review/ci-failed"])
+
         return 0 if validation.ok else 1
     finally:
         shutil.rmtree(worktree, ignore_errors=True)
@@ -208,4 +447,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
