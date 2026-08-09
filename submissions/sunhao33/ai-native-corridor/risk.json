@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1.0",
+  "package_id": "ai-native-corridor",
+  "risk_matrix": [
+    {
+      "risk_id": "R-BOUNDARY-001",
+      "category": "data_quality",
+      "severity": "high",
+      "probability": "confirmed",
+      "statement": "所有空间指标和几何图层基于provisional boundary计算；官方多边形未取得。",
+      "impact": "替换官方边界后site_area_sqm、green_ratio、public_space_ratio等全部指标需重新计算；用地分区拓扑可能需调整。",
+      "mitigation": "已在assumptions.json、self_check.json、visual页面和正文中多处声明；面积计算附带推导方法和usage_note。",
+      "status": "open",
+      "owner": "组织方/海淀分局",
+      "related_assumptions": ["A-BOUNDARY-001"]
+    },
+    {
+      "risk_id": "R-CONTROLS-001",
+      "category": "data_quality",
+      "severity": "high",
+      "probability": "confirmed",
+      "statement": "FAR、建筑高度、密度、道路红线、市政管线、文保范围、工程地质条件等官方管控数据缺失。",
+      "impact": "开发强度分区和建筑形态为概念方案；更新项目拆迁量和实施时序无法精确确定；市政容量无法验算。",
+      "mitigation": "已在assumptions.json中声明A-CONTROLS-001；missing_data_checklist.csv逐项列出；设计深度矩阵标注data_gap。",
+      "status": "open",
+      "owner": "组织方/海淀分局/北京市规自委",
+      "related_assumptions": ["A-CONTROLS-001"]
+    },
+    {
+      "risk_id": "R-STAKEHOLDER-001",
+      "category": "implementation",
+      "severity": "medium",
+      "probability": "likely",
+      "statement": "三处重点区域涉及多个实施主体（中关村科学城管委会、海淀区政府、清华/北大/中科院、海淀商务局、京投公司），协调复杂度高。",
+      "impact": "众智园涉及科研机构搬迁或合作谈判；AI原点社区涉及高校周边城市更新和站点一体化审批；大钟寺涉及商业开发与历史保护的平衡。",
+      "mitigation": "各重点区域已标注建议实施主体；建议设立区级协调专班；分期实施降低同步启动风险。",
+      "status": "open",
+      "owner": "海淀区政府",
+      "related_assumptions": []
+    },
+    {
+      "risk_id": "R-TECH-001",
+      "category": "technical",
+      "severity": "medium",
+      "probability": "possible",
+      "statement": "10个AI场景卡和3个测试场景为概念设计，技术可行性和数据可用性未经验证。",
+      "impact": "城市智能体沙盒需要真实IoT数据源和隐私合规审查；人才生活管家需要对接多个公共服务平台API；慢行断点诊断依赖公开数据质量。",
+      "mitigation": "场景标注为conceptual_design；建议在Phase 1选取2-3个低风险场景试点；每个场景需完成隐私影响评估和安全审查。",
+      "status": "open",
+      "owner": "AI场景运营方（待定）",
+      "related_assumptions": ["A-SCENARIO-001"]
+    },
+    {
+      "risk_id": "R-PHASING-001",
+      "category": "implementation",
+      "severity": "medium",
+      "probability": "possible",
+      "statement": "一期范围458.7ha涉及多个产权单位和现状建筑，实际可启动面积和时序取决于权属谈判和拆迁进度。",
+      "impact": "一期可讨论范围不等于可立即实施范围；分期边界的精确划定需结合权属数据。",
+      "mitigation": "phasing.geojson标注为design_proposal；建议先启动权属清晰、现状简单的公共空间和绿地段落。",
+      "status": "open",
+      "owner": "海淀区更新办",
+      "related_assumptions": ["A-CONTROLS-001"]
+    },
+    {
+      "risk_id": "R-REVIEW-001",
+      "category": "process",
+      "severity": "low",
+      "probability": "likely",
+      "statement": "方案由AI Agent生成并自检，未经人工专业评审确认；可能存在AI幻觉或逻辑不一致。",
+      "impact": "部分设计判断可能不符合中国城市规划实践惯例；英文翻译可能存在术语偏差。",
+      "mitigation": "所有结构数据通过deterministic validation；self_check.json全部pass；provisional边界声明清晰；建议人工复核关键设计结论。",
+      "status": "open",
+      "owner": "参赛Agent + Maintainer",
+      "related_assumptions": []
+    },
+    {
+      "risk_id": "R-MARKET-001",
+      "category": "strategic",
+      "severity": "low",
+      "probability": "possible",
+      "statement": "全球AI产业生态和人才竞争格局可能在项目实施周期内发生重大变化。",
+      "impact": "当前对标8座全球AI城市（截至2026-08）的案例可能在3-5年后不再适用；产业空间需求预测可能偏乐观或偏保守。",
+      "mitigation": "案例对标标注为provisional参考；建议建立年度案例更新和方案迭代机制；空间设计保持弹性以适应产业变化。",
+      "status": "open",
+      "owner": "规划团队",
+      "related_assumptions": ["A-DATA-001"]
+    }
+  ],
+  "risk_summary": {
+    "total": 7,
+    "by_severity": {"high": 2, "medium": 3, "low": 2},
+    "by_status": {"open": 7, "mitigated": 0, "closed": 0},
+    "top_risk": "R-BOUNDARY-001: 所有指标基于临时边界，替换官方多边形后需重算"
+  }
+}

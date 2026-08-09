@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 场景深度卡 — 京张智脉</title>
+<style>
+:root{--ink:#162033;--muted:#667085;--paper:#fff;--line:#d7dee8;--gold:#c79838;--ai:#4f46e5;--park:#15803d;--work:#b7791f;--civic:#b42318;--blue:#0f7490}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:#eef2f6;color:var(--ink);line-height:1.5}
+.wrap{max-width:1280px;margin:auto}
+header{background:#101827;color:#fff;border-bottom:4px solid var(--gold);padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:20px;margin:0}
+header a{color:#9fd7c0;text-decoration:none;font-size:13px;border:1px solid rgba(255,255,255,.25);padding:5px 14px;border-radius:999px}
+main{padding:20px 22px}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:0 auto 18px;box-shadow:0 14px 34px rgba(22,32,51,.09);overflow:hidden}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px;border-bottom:1px solid #e6ebf2;background:#fbfcfe}
+.sheet-head h2{margin:0;font-size:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px 22px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px 22px}
+.g5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding:18px 22px}
+
+.scard{display:flex;border-radius:8px;overflow:hidden;border:1px solid #e2e8f0;background:#fff;min-height:140px}
+.scard .sbar{width:6px;flex-shrink:0}
+.scard .sbody{flex:1;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.scard .snum{font-size:20px;font-weight:800;line-height:1}
+.scard .stitle{font-size:14px;font-weight:700}
+.scard .sdesc{font-size:11px;color:#475569;line-height:1.5}
+.scard .smeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.scard .smeta span{font-size:10px;padding:2px 8px;border-radius:999px;background:#f1f5f9;color:#475569}
+.scard .sdetail{font-size:10px;color:#94a3b8;margin-top:4px;padding-top:6px;border-top:1px solid #f1f5f9}
+
+.pcard{border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;background:linear-gradient(180deg,#fff,#f8fafc)}
+.pcard .pname{font-weight:700;font-size:13px}
+.pcard .prole{font-size:10px;color:var(--muted);margin-bottom:6px}
+.pcard .pneed{font-size:11px;color:#475569;line-height:1.5}
+
+.ccard{border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;background:#fff}
+.ccard .cname{font-weight:700;font-size:13px;color:var(--blue)}
+.ccard .cloc{font-size:10px;color:var(--muted);margin-bottom:4px}
+.ccard .cdesc{font-size:11px;color:#475569;line-height:1.5}
+
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:10px;font-weight:600;color:#fff}
+.note{font-size:11px;color:#94a3b8;padding:10px 14px;background:#fefce8;border-radius:6px;border:1px solid #fde68a;margin:8px 22px 16px}
+
+@media(max-width:860px){.g2,.g3{grid-template-columns:1fr}.g5{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){main{padding:12px}.g5{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>AI 场景深度卡 / AI Scenario Deep-Dive</h1><a href="index.html">← 返回总览</a></header>
+<main class="wrap">
+
+<!-- 10 AI Scenarios -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>10 个 AI 场景卡</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">每个场景须说明服务对象、空间位置、数据来源、隐私边界、人工复核和运营主体</p></div><span class="tag" style="background:#4f46e5">10 scenarios</span></div>
+<div class="g2">
+<div class="scard"><div class="sbar" style="background:#4f46e5"></div><div class="sbody"><div class="snum" style="color:#4f46e5">01</div><div class="stitle">开源发布厅</div><div class="sdesc">面向开发者、企业和高校的成果发布与模型评测节点。提供可控的开源模型展示、benchmark 评测和社区 meetup 空间。</div><div class="smeta"><span>服务: 开发者/企业/高校</span><span>位置: AI原点社区</span></div><div class="sdetail">数据来源: 公开模型卡 + 许可证审查 · 隐私: 发布内容审核流程 · 运营: 开源社区 + 园区管委会</div></div></div>
+<div class="scard"><div class="sbar" style="background:#0f7490"></div><div class="sbody"><div class="snum" style="color:#0f7490">02</div><div class="stitle">城市智能体沙盒</div><div class="sdesc">在可控公共空间测试交通信号优化、环境感知、公共服务调度和运维智能体，所有决策保留人工 override。</div><div class="smeta"><span>服务: 城市管理者/运营商</span><span>位置: 众智园+AI原点</span></div><div class="sdetail">数据来源: 公开IoT + 模拟数据 · 隐私: 沙盒隔离 · 运营: 海淀城市大脑 + AI企业联盟</div></div></div>
+<div class="scard"><div class="sbar" style="background:#15803d"></div><div class="sbody"><div class="snum" style="color:#15803d">03</div><div class="stitle">慢行断点诊断</div><div class="sdesc">用公开街景数据、OSM路网和人工复核识别京张遗址公园慢行断点，生成可操作的连接方案。</div><div class="smeta"><span>服务: 规划师/设计师</span><span>位置: 全线8km走廊</span></div><div class="sdetail">数据来源: OSM + 公开街景 · 隐私: 仅使用公开数据 · 运营: 设计团队 + 社区反馈</div></div></div>
+<div class="scard"><div class="sbar" style="background:#b7791f"></div><div class="sbody"><div class="snum" style="color:#b7791f">04</div><div class="stitle">人才生活管家</div><div class="sdesc">连接居住、学习、消费、运动和社交服务，为AI从业者提供个性化生活服务推荐，支持中文+英文。</div><div class="smeta"><span>服务: AI从业者/家属</span><span>位置: 大钟寺生活板块</span></div><div class="sdetail">数据来源: 公共服务API · 隐私: 用户授权+本地处理 · 运营: 社区服务平台</div></div></div>
+<div class="scard"><div class="sbar" style="background:#b42318"></div><div class="sbody"><div class="snum" style="color:#b42318">05</div><div class="stitle">AI安全治理廊</div><div class="sdesc">展示AI标准制定、可信评测、模型安全审计和安全治理能力，作为中国AI治理实践的展示窗口。</div><div class="smeta"><span>服务: 政策制定者/企业</span><span>位置: AI原点社区</span></div><div class="sdetail">数据来源: 国家标准+白皮书 · 隐私: 公开信息 · 运营: 标准化机构+安全企业</div></div></div>
+<div class="scard"><div class="sbar" style="background:#4f46e5"></div><div class="sbody"><div class="snum" style="color:#4f46e5">06</div><div class="stitle">校企转化客厅</div><div class="sdesc">支撑清华、北大、中科院成果转化会客与路演，提供项目匹配、IP评估、融资对接的一站式空间。</div><div class="smeta"><span>服务: 高校/投资机构</span><span>位置: AI原点社区·五道口</span></div><div class="sdetail">数据来源: 高校成果库 · 隐私: NDA保护 · 运营: 技术转移办公室联盟</div></div></div>
+<div class="scard"><div class="sbar" style="background:#0f7490"></div><div class="sbody"><div class="snum" style="color:#0f7490">07</div><div class="stitle">数据要素剧场</div><div class="sdesc">大钟寺片区的数据资产展示、智能终端体验和AI生成内容消费空间，让公众直观感受AI能力。</div><div class="smeta"><span>服务: 公众/企业</span><span>位置: 大钟寺产业聚集区</span></div><div class="sdetail">数据来源: 公开数据集+企业提供 · 隐私: 脱敏+合规审查 · 运营: 数据交易所+商业运营</div></div></div>
+<div class="scard"><div class="sbar" style="background:#15803d"></div><div class="sbody"><div class="snum" style="color:#15803d">08</div><div class="stitle">低碳算力驿站</div><div class="sdesc">解释分布式光伏、储能、边缘算力与公厕/信息亭/休息站等公共服务设施的融合模式。</div><div class="smeta"><span>服务: 市民/运维方</span><span>位置: 全线公共空间节点</span></div><div class="sdetail">数据来源: 能耗监测+光伏出力 · 隐私: 聚合数据公开 · 运营: 能源服务公司</div></div></div>
+<div class="scard"><div class="sbar" style="background:#b7791f"></div><div class="sbody"><div class="snum" style="color:#b7791f">09</div><div class="stitle">京张记忆线路</div><div class="sdesc">把铁路文脉、中关村创新文化和AI新文化串联为可游览的文化线路，AR叠加历史影像与未来场景。</div><div class="smeta"><span>服务: 游客/市民</span><span>位置: 京张遗址公园全线</span></div><div class="sdetail">数据来源: 历史档案+公开影像 · 隐私: 公开空间+匿名体验 · 运营: 文旅局+文化机构</div></div></div>
+<div class="scard"><div class="sbar" style="background:#b42318"></div><div class="sbody"><div class="snum" style="color:#b42318">10</div><div class="stitle">全球AI活动周路线</div><div class="sdesc">组织开发者节、场景开放日、竞赛路演和城市体验路线，对标 SXSW + NeurIPS + 设计周的融合模式。</div><div class="smeta"><span>服务: 全球AI社区</span><span>位置: 全线+三重点区</span></div><div class="sdetail">数据来源: 活动管理平台 · 隐私: 报名制+公开活动 · 运营: 活动组委会+园区</div></div></div>
+</div>
+</section>
+
+<!-- 5 User Personas -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>用户画像</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">5 类核心用户 · 画像驱动场景设计和空间配置</p></div></div>
+<div class="g5">
+<div class="pcard"><div class="pname">AI研究员 · 李博士</div><div class="prole">32岁 · 清华博士后</div><div class="pneed">需要算力实验室、开源社区、深夜可达的轻食空间和与产业界频繁对接的路演平台。</div></div>
+<div class="pcard"><div class="pname">创业者 · 王总</div><div class="prole">35岁 · AI Startup CEO</div><div class="pneed">需要灵活可扩的办公空间、法务金融一站式服务、招聘渠道和与投资人/客户的展示空间。</div></div>
+<div class="pcard"><div class="pname">工程师 · 小陈</div><div class="prole">28岁 · 算法工程师</div><div class="pneed">需要通勤友好、可负担的品质租赁住房、就近的运动设施、亲子教育和周末社交场景。</div></div>
+<div class="pcard"><div class="pname">社区老人 · 张阿姨</div><div class="prole">65岁 · 大钟寺原住民</div><div class="pneed">需要社区医院、菜市场、公园晨练、社区活动室，希望更新不破坏原有邻里关系和生活习惯。</div></div>
+<div class="pcard"><div class="pname">国际访客 · Maria</div><div class="prole">38岁 · 欧盟AI政策顾问</div><div class="pneed">需要双语信息、可访问的展示空间、会议室和与本地AI生态的连接渠道，关注安全治理实践。</div></div>
+</div>
+</section>
+
+<!-- Global Reference Cities -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>全球AI生态参考城市</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">8 座城市 · 案例转化机制</p></div></div>
+<div class="g2">
+<div class="ccard"><div class="cname">01 旧金山·SOMA/Mission Bay</div><div class="cloc">美国加州</div><div class="cdesc">AI startup集群+UCSF生命科学 · 参考: 轻工业厂房转AI办公 · 滨海公共空间+慢行</div></div>
+<div class="ccard"><div class="cname">02 伦敦·Knowledge Quarter</div><div class="cloc">英国伦敦</div><div class="cdesc">国王十字站更新+DeepMind/谷歌+大英图书馆 · 参考: 铁路遗产更新+知识机构集群</div></div>
+<div class="ccard"><div class="cname">03 深圳·南山留仙洞</div><div class="cloc">中国深圳</div><div class="cdesc">留仙洞总部基地+大疆+万科云城 · 参考: TOD+产业社区混合 · 高密度创新街区</div></div>
+<div class="ccard"><div class="cname">04 首尔·Digital Media City</div><div class="cloc">韩国首尔</div><div class="cdesc">垃圾填埋场→数字媒体产业城 · 参考: 棕地更新+政府主导+文化内容产业集群</div></div>
+<div class="ccard"><div class="cname">05 东京·Shibuya Sakura Stage</div><div class="cloc">日本东京</div><div class="cdesc">涩谷站周边更新+IT/AI企业集群 · 参考: 站点一体化+垂直混合+公共空间立体化</div></div>
+<div class="ccard"><div class="cname">06 巴黎·Station F</div><div class="cloc">法国巴黎</div><div class="cdesc">旧货运站→全球最大startup campus · 参考: 铁路遗产再利用+公私合营运营模式</div></div>
+<div class="ccard"><div class="cname">07 新加坡·one-north</div><div class="cloc">新加坡</div><div class="cdesc">政府主导的200ha R&D+生活融合区 · 参考: 花园城市+产学研一体化+分阶段实施</div></div>
+<div class="ccard"><div class="cname">08 多伦多·Quayside (Sidewalk)</div><div class="cloc">加拿大多伦多</div><div class="cdesc">滨水区智慧城市实验 · 参考: 数据治理框架+公众参与机制(经验与教训)</div></div>
+</div>
+</section>
+
+<div class="note">场景卡和画像均为概念设计阶段（conceptual_design），待与实施主体和社区参与验证后迭代 · 全球案例基于公开信息截至2026-08</div>
+</main>
+</body>
+</html>

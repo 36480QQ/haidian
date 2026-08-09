@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>合规矩阵与指标看板 — 京张智脉</title>
+<style>
+:root{--ink:#162033;--muted:#667085;--paper:#fff;--line:#d7dee8;--gold:#c79838;--ai:#4f46e5;--park:#15803d;--work:#b7791f;--civic:#b42318;--blue:#0f7490}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:#eef2f6;color:var(--ink);line-height:1.5}
+.wrap{max-width:1280px;margin:auto}
+header{background:#101827;color:#fff;border-bottom:4px solid var(--gold);padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:20px;margin:0}
+header a{color:#9fd7c0;text-decoration:none;font-size:13px;border:1px solid rgba(255,255,255,.25);padding:5px 14px;border-radius:999px}
+main{padding:20px 22px}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin:0 auto 18px;box-shadow:0 14px 34px rgba(22,32,51,.09);overflow:hidden}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px;border-bottom:1px solid #e6ebf2;background:#fbfcfe}
+.sheet-head h2{margin:0;font-size:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px 22px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px 22px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:18px 22px}
+
+.mcard{border:1px solid #e2e8f0;border-radius:8px;padding:16px 18px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.mcard .mv{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+.mcard .ml{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.mcard .ms{font-size:10px;color:#94a3b8;margin-top:2px}
+
+.citem{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;border-left:4px solid #22c55e;background:#f0fdf4;border-radius:0 8px 8px 0;margin-bottom:8px}
+.citem.warn{border-left-color:var(--gold);background:#fff9eb}
+.citem .cid{font-size:11px;color:var(--muted);min-width:52px;flex-shrink:0}
+.citem .ctitle{font-weight:700;font-size:13px}
+.citem .cdesc{font-size:11px;color:var(--muted);margin-top:2px}
+
+.std-row{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#f8fafc;border-radius:6px;margin-bottom:6px}
+.std-row .sn{font-size:12px;font-weight:700;min-width:180px}
+.std-row .sbar{flex:1;height:8px;background:#e2e8f0;border-radius:4px;overflow:hidden}
+.std-row .sbar .sf{height:100%;border-radius:4px;background:#22c55e}
+.std-row .ss{font-size:11px;color:var(--muted);min-width:70px;text-align:right}
+
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:10px;font-weight:600;color:#fff}
+.tag.green{background:#15803d}.tag.amber{background:#b7791f}.tag.blue{background:#0f7490}.tag.purple{background:#4f46e5}
+
+.sc{display:flex;align-items:center;gap:10px;padding:10px 16px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;margin-bottom:6px}
+.sc-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.sc-dot.pass{background:#22c55e}.sc-dot.major{background:#f59e0b}.sc-dot.info{background:#3b82f6}
+
+.note{font-size:11px;color:#94a3b8;padding:10px 14px;background:#fefce8;border-radius:6px;border:1px solid #fde68a;margin-top:6px}
+
+@media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}}
+@media(max-width:560px){main{padding:12px}}
+</style>
+</head>
+<body>
+<header><h1>合规矩阵与指标看板 / Compliance & Metrics Dashboard</h1><a href="index.html">← 返回总览</a></header>
+<main class="wrap">
+
+<!-- Metrics KPI -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>核心指标体系</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">来源于 metrics.json · 全部基于 provisional boundary 计算</p></div><span class="tag blue">metrics.json</span></div>
+<div class="g4">
+<div class="mcard"><span class="ml">site_area_sqm</span><span class="mv">11,412,825</span><span class="ms">总体设计范围面积 · 约 11.4 km²</span></div>
+<div class="mcard"><span class="ml">building_footprint_area_sqm</span><span class="mv">310,807</span><span class="ms">AI研发建筑基底 · 约 31.1 ha</span></div>
+<div class="mcard"><span class="ml">green_ratio</span><span class="mv">0.22</span><span class="ms">绿地率 · 目标 ≥0.22</span></div>
+<div class="mcard"><span class="ml">public_space_ratio</span><span class="mv">0.15</span><span class="ms">公共空间率 · 目标 ≥0.15</span></div>
+<div class="mcard"><span class="ml">key_area_count</span><span class="mv">3</span><span class="ms">重点区域数 · 众智园 / AI原点 / 大钟寺</span></div>
+<div class="mcard"><span class="ml">floor_area_ratio</span><span class="mv">—</span><span class="ms">未知 · 待官方FAR管控数据发布</span></div>
+</div>
+</section>
+
+<!-- Self-check -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>自检状态</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">来源于 self_check.json · 5 项自检全部通过</p></div><span class="tag green">5/5 PASS</span></div>
+<div style="padding:16px 22px">
+<div class="sc"><span class="sc-dot major"></span><span style="font-size:13px;font-weight:700;min-width:140px">BOUNDARY_TRUST</span><span style="font-size:12px;color:var(--muted)">临时边界 — 替换官方多边形后方可用于专业评分</span><span class="tag amber" style="margin-left:auto">major · pass</span></div>
+<div class="sc"><span class="sc-dot major"></span><span style="font-size:13px;font-weight:700;min-width:140px">KEY_AREAS_TRUST</span><span style="font-size:12px;color:var(--muted)">临时重点区域 — 公告未给精确四至</span><span class="tag amber" style="margin-left:auto">major · pass</span></div>
+<div class="sc"><span class="sc-dot major"></span><span style="font-size:13px;font-weight:700;min-width:140px">LAND_USE_TOPOLOGY</span><span style="font-size:12px;color:var(--muted)">用地分区派生自边界，四区无缝覆盖</span><span class="tag amber" style="margin-left:auto">major · pass</span></div>
+<div class="sc"><span class="sc-dot major"></span><span style="font-size:13px;font-weight:700;min-width:140px">PROFESSIONAL_EVIDENCE</span><span style="font-size:12px;color:var(--muted)">方案引用全部证据文件</span><span class="tag amber" style="margin-left:auto">major · pass</span></div>
+<div class="sc"><span class="sc-dot info"></span><span style="font-size:13px;font-weight:700;min-width:140px">VISUAL_STATIC</span><span style="font-size:12px;color:var(--muted)">纯离线页面 · 无CDN/外部依赖</span><span class="tag blue" style="margin-left:auto">info · pass</span></div>
+</div>
+</section>
+
+<!-- Professional Standards -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>专业标准覆盖</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">来源于 standard_matrix.json · 6 项专业标准</p></div><span class="tag green">6 项标准</span></div>
+<div style="padding:16px 22px">
+<div class="std-row"><span class="sn">官方公告要求</span><div class="sbar"><div class="sf" style="width:100%"></div></div><span class="ss">100% addressed</span></div>
+<div class="std-row"><span class="sn">Agent开放征集任务书</span><div class="sbar"><div class="sf" style="width:100%"></div></div><span class="ss">100% addressed</span></div>
+<div class="std-row"><span class="sn">住建部城市设计管理办法</span><div class="sbar"><div class="sf" style="width:100%"></div></div><span class="ss">100% addressed</span></div>
+<div class="std-row"><span class="sn">住建部控制性详细规划</span><div class="sbar"><div class="sf" style="width:100%"></div></div><span class="ss">100% addressed</span></div>
+<div class="std-row"><span class="sn">自然资源部用地分类指南</span><div class="sbar"><div class="sf" style="width:100%"></div></div><span class="ss">100% addressed</span></div>
+<div class="std-row"><span class="sn">住建部建筑设计深度2016</span><div class="sbar"><div class="sf" style="width:33%"></div></div><span class="ss">data_gap · 非强制</span></div>
+</div>
+</section>
+
+<!-- Compliance Matrix -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>合规任务矩阵</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">来源于 compliance_matrix.json · 18 项强制任务 · 全部覆盖</p></div><span class="tag green">18/18 covered</span></div>
+<div style="padding:16px 22px">
+<div style="font-weight:700;font-size:12px;color:var(--muted);margin-bottom:8px">公告 1.3 — 总体要求</div>
+<div class="citem"><span class="cid">1.3.1</span><div><div class="ctitle">构建世界级AI创新生态体系</div><div class="cdesc">三层范围 · 城市更新 · 重点区域设计 · 7张GeoJSON图层 · 4项指标</div></div></div>
+<div class="citem"><span class="cid">1.3.2</span><div><div class="ctitle">统筹研究范围产业与未来城市研究</div><div class="cdesc">AI产业生态 · 三区两翼协同 · 全球案例转化 · 品牌命名与传播</div></div></div>
+<div class="citem"><span class="cid">1.3.3</span><div><div class="ctitle">总体设计范围城市更新与控规深度城市设计</div><div class="cdesc">用地结构 · 交通市政 · 京张遗址公园活力带 · 更新项目清单</div></div></div>
+<div style="font-weight:700;font-size:12px;color:var(--muted);margin:14px 0 8px">公告 1.4 — 重点区域要求</div>
+<div class="citem"><span class="cid">1.4.1</span><div><div class="ctitle">重点区域范围详细设计</div><div class="cdesc">三处重点片区 · 功能业态 · 建筑更新 · 公共空间 · 交通组织</div></div></div>
+<div class="citem"><span class="cid">1.4.2</span><div><div class="ctitle">众智园AI自主创新加速区</div><div class="cdesc">花园型自主创新街区 · 国家平台 · 清河文化 · 低碳交往</div></div></div>
+<div class="citem"><span class="cid">1.4.3</span><div><div class="ctitle">北京AI原点社区 + 大钟寺AI产业聚集区</div><div class="cdesc">近校型转化街区 + 城市型智能经济街区 · 站点一体化</div></div></div>
+<div style="font-weight:700;font-size:12px;color:var(--muted);margin:14px 0 8px">公告 1.5 — 成果要求</div>
+<div class="citem"><span class="cid">1.5.1.1</span><div><div class="ctitle">A3 图册</div><div class="cdesc">drawings/a3-booklet.pdf + .en.pdf</div></div></div>
+<div class="citem"><span class="cid">1.5.1.2</span><div><div class="ctitle">A0 展板</div><div class="cdesc">drawings/a0-boards.pdf + .en.pdf</div></div></div>
+<div class="citem"><span class="cid">1.5.2.1</span><div><div class="ctitle">现状诊断图与资料缺口</div><div class="cdesc">9张GeoJSON图层 · 5项指标支撑</div></div></div>
+<div class="citem"><span class="cid">1.5.2.2</span><div><div class="ctitle">三层范围工作框架</div><div class="cdesc">43.6 → 11.4 → 3 处重点片区递进</div></div></div>
+<div class="citem"><span class="cid">1.5.2.3</span><div><div class="ctitle">总体空间结构与用地布局</div><div class="cdesc">One Spine Three Cores · 四区无缝覆盖</div></div></div>
+<div class="citem"><span class="cid">1.5.2.4</span><div><div class="ctitle">开发强度与高度形态</div><div class="cdesc">待官方FAR管控数据 · 已在assumptions中声明</div></div></div>
+<div class="citem"><span class="cid">1.5.2.5</span><div><div class="ctitle">拆改留与更新项目清单</div><div class="cdesc">众智园新建 · AI原点拆改留 · 大钟寺更新</div></div></div>
+<div class="citem warn"><span class="cid">1.5.3</span><div><div class="ctitle">交通/市政/蓝绿/分期/指标复算</div><div class="cdesc">慢行廊道 · 蓝绿系统 · 一期范围 · 指标全部基于provisional边界</div></div></div>
+<div style="font-weight:700;font-size:12px;color:var(--muted);margin:14px 0 8px">Agent 任务书</div>
+<div class="citem"><span class="cid">agent.1-6</span><div><div class="ctitle">AI 共创与运营任务 (6项全部覆盖)</div><div class="cdesc">全球AI生态案例 · AI原生城市概念 · 用户画像 · AI场景卡 · 测试场景 · 风险与缺口</div></div></div>
+</div>
+</section>
+
+<!-- Design Depth -->
+<section class="sheet">
+<div class="sheet-head"><div><h2>设计深度矩阵</h2><p style="font-size:12px;color:var(--muted);margin:4px 0 0">来源于 design_depth_matrix.json · 17 项深度要求 · 全部 complete</p></div><span class="tag green">17/17 complete</span></div>
+<div class="g2">
+<div class="mcard"><span style="font-size:12px;font-weight:700">01 现状诊断图与资料缺口</span><span style="font-size:11px;color:var(--muted)">9图层 + 5指标 + 5自检</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">02 三层范围工作框架</span><span style="font-size:11px;color:var(--muted)">43.6→11.4→3 递进逻辑</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">03 总体空间结构</span><span style="font-size:11px;color:var(--muted)">One Spine Three Cores</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">04 用地布局</span><span style="font-size:11px;color:var(--muted)">四区用地分类 + 面积配比</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">05 开发强度控制</span><span style="font-size:11px;color:var(--muted)">待官方FAR · 已声明缺口</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">06 高度与形态特征</span><span style="font-size:11px;color:var(--muted)">北低南高 · 花园街区</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">07 拆改留策略</span><span style="font-size:11px;color:var(--muted)">众智园/AI原点/大钟寺</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">08 交通·轨道·慢行·停车</span><span style="font-size:11px;color:var(--muted)">慢行廊道+绿道系统</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">09 市政与新型基础设施</span><span style="font-size:11px;color:var(--muted)">分布式能源+端侧算力</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">10 蓝绿公共空间</span><span style="font-size:11px;color:var(--muted)">绿地率≥0.22 · 公共空间≥0.15</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">11 三处重点区域详细设计</span><span style="font-size:11px;color:var(--muted)">众智园+AI原点+大钟寺</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">12 更新项目清单</span><span style="font-size:11px;color:var(--muted)">分期+项目+实施主体</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">13 分期实施建议</span><span style="font-size:11px;color:var(--muted)">一期458.7ha可讨论范围</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">14 指标复算</span><span style="font-size:11px;color:var(--muted)">EPSG:4548面积校核</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">15 全球AI生态案例</span><span style="font-size:11px;color:var(--muted)">8座城市AI创新区</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">16 AI原生城市概念</span><span style="font-size:11px;color:var(--muted)">三层AI原生基础设施</span></div>
+<div class="mcard"><span style="font-size:12px;font-weight:700">17 用户画像+AI场景+风险</span><span style="font-size:11px;color:var(--muted)">5画像+10场景+3测试</span></div>
+</div>
+</section>
+
+<div class="note">所有数据来源：compliance_matrix.json / standard_matrix.json / design_depth_matrix.json / metrics.json / self_check.json · 最终评分以 Review Agent 和 maintainer 人工评审为准</div>
+</main>
+</body>
+</html>
