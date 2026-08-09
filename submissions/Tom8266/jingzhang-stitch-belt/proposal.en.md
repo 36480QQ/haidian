@@ -22,7 +22,7 @@ Standards and depth constraints observed: Announcement clauses 1.3/1.4/1.5 [stan
 
 **Boundary and Area Declaration**: The current repository does not provide an official redline. This proposal uses the temporary rough boundary marked `provisional_constraint` in `brief/site-package/geometry/provisional_boundaries.geojson`. The overall design scope is approximately **1,141.3 hectares** (recomputed in EPSG:4548, [metric:site_area_sqm]), and the three key areas use temporary polygons with announced areas of approximately 192.1/104.3/72.0 hectares [metric:key_area_count]. This boundary is used only for proposal generation, visualization, and self-checking; it must not be treated as an official redline, approval basis, or precise area calculation reference [data:geometry/site_boundary.geojson#SITE-001]. The organizer's data gaps do not block content scoring. Upon release of official polygons, all layers and metrics of this proposal must be fully recomputed (see [depth:metrics_recalculation]). For the complete data gap inventory, see `assumptions.json` (A-BOUNDARY-001, A-CONTROLS-001, etc.) and `report/copyright_statement.md`.
 
-![Evidence chain and submission package relationship diagram](assets/figures/site-overview.png)
+![Evidence chain and submission package relationship diagram](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
@@ -36,7 +36,7 @@ The proposal is organized according to the three-level scope defined by the anno
 
 The spatial relationship of the three levels is constrained by [depth:three_level_scope_framework]: the coordinated study level determines "what to stitch" (industry and urban morphology judgments), the overall level determines "how to stitch" (spatial structure and renewal projects), and the key area level verifies "whether the stitches hold" (plot-scale implementability). The spatial evidence chain is: boundary → land-use zoning → stitch galleries and green spine → building clusters → phasing, all deposited in `geometry/*.geojson` layers and recomputable [depth:existing_conditions_diagnosis].
 
-![Three-level scope and spatial framework diagram](assets/figures/land-use-structure.png)
+![Three-level scope and spatial framework diagram](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Study Scope: Industry and Future City Research
 
@@ -125,7 +125,7 @@ All three key areas are expressed with provisional polygons ([data:geometry/key_
 - **Implementation Dependencies**: Transit station integrated development conditions, land ownership, and municipal pipelines [source:DATA-SRC-PROCESSED-FACT-PACK-20260607].
 - **Spatial Specificity**: The four quadrants are organized by primary function: Northwest quadrant — International Roadshow Hall and conference facilities (concept GFA ~50,000 m²); Northeast quadrant — intelligent terminal exhibition and content consumption (activated ground-floor retail with upper-floor innovation offices); Southwest quadrant — data element meeting rooms and industry associations; Southeast quadrant — mixed-use innovation services and hotel. The Stitch Gallery intersection forms the core public space "Bell Sound Plaza" (approximately 0.6 ha concept), serving as the annual event anchor. A below-grade pedestrian connection between the four quadrants is proposed as a direction, pending station structural conditions. Maximum building height at the station core is concept-capped at 80m (TOD landmark), stepping down to 36m at the periphery.
 
-![Key Area Index and Design Task Diagram](assets/figures/key-areas.png)
+![Key Area Index and Design Task Diagram](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Talent Personas, and AI+ Scenarios
 
@@ -181,7 +181,7 @@ The core transportation strategy is **"return the Stitch Galleries to slow traff
 - **Living Ridge service road**: A conceptual slow-traffic spine along the east side of the Living Ridge, threading the three Needles ([data:geometry/roads.geojson#ROAD-001]);
 - **Parking and freight**: Encourage shared parking and night-time freight windows; logistics connection points arranged in coordination with test scenarios.
 
-![Transportation, slow traffic, and blue-green public space compound system diagram](assets/figures/mobility-bluegreen.png)
+![Transportation, slow traffic, and blue-green public space compound system diagram](assets/figures/mobility-bluegreen.en.png)
 
 ### Municipal and New Infrastructure
 
@@ -309,7 +309,7 @@ Spatial expression of phasing is in [data:geometry/phasing.geojson#PHASE-001] [d
 - `design_depth_matrix.json`: all 18 depth items complete [depth:metrics_recalculation];
 - Self-check results in `self_check.json`: deterministic validation, spatial review, visual packaging, professional evidence — four conclusions.
 
-![Core indicator recalculation and evidence chain diagram](assets/figures/metrics-evidence.png)
+![Core indicator recalculation and evidence chain diagram](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance Statement
 
