@@ -1,19 +1,22 @@
 {
   "type": "FeatureCollection",
-  "name": "land_use_topology_partition",
+  "name": "jzoi_v2_land_use",
   "features": [
     {
       "type": "Feature",
-      "id": "LU-001",
+      "id": "LU-RD-01",
       "properties": {
-        "id": "LU-001",
+        "id": "LU-RD-01",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "name_zh": "研发与验证接口用地",
+        "name_en": "Research and validation interface",
         "land_use_code": "0802",
-        "name_zh": "AI研发创新用地（开放接口端点）",
-        "design_concept": "open_interface_endpoint",
+        "interface_type": "endpoint_support",
+        "project_id": "JZOI-P08",
+        "design_rule": "Ground floors facing MAIN-IF reserve publicly bookable review or exhibition rooms; statutory intensity pending.",
         "area_sqm_declared": 2674562.492
       },
       "geometry": {
@@ -54,15 +57,19 @@
     },
     {
       "type": "Feature",
-      "id": "LU-002",
+      "id": "LU-COMMONS-01",
       "properties": {
-        "id": "LU-002",
+        "id": "LU-COMMONS-01",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "name_zh": "京张公共公地",
+        "name_en": "Jingzhang public commons",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
+        "interface_type": "main_interface",
+        "project_id": "JZOI-P01",
+        "design_rule": "Continuous public path with an always-available non-digital route and no ticketed choke point.",
         "area_sqm_declared": 2589339.239
       },
       "geometry": {
@@ -74,16 +81,16 @@
               39.939
             ],
             [
-              116.344068,
-              40.0265
-            ],
-            [
-              116.347188,
-              40.0265
-            ],
-            [
               116.347188,
               39.939
+            ],
+            [
+              116.347188,
+              40.0265
+            ],
+            [
+              116.344068,
+              40.0265
             ],
             [
               116.344068,
@@ -95,15 +102,19 @@
     },
     {
       "type": "Feature",
-      "id": "LU-003",
+      "id": "LU-MIX-01",
       "properties": {
-        "id": "LU-003",
+        "id": "LU-MIX-01",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "name_zh": "产业与公共服务混合用地",
+        "name_en": "Industry and civic-service mixed use",
         "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
+        "interface_type": "service_edge",
+        "project_id": "JZOI-P09",
+        "design_rule": "Active ground floor alternates enterprise services with free civic facilities; detailed parcel controls pending.",
         "area_sqm_declared": 3366138.181
       },
       "geometry": {
@@ -115,16 +126,16 @@
               39.939
             ],
             [
-              116.347188,
-              40.0265
-            ],
-            [
-              116.351244,
-              40.0265
-            ],
-            [
               116.351244,
               39.939
+            ],
+            [
+              116.351244,
+              40.0265
+            ],
+            [
+              116.347188,
+              40.0265
             ],
             [
               116.347188,
@@ -136,15 +147,19 @@
     },
     {
       "type": "Feature",
-      "id": "LU-004",
+      "id": "LU-LIFE-01",
       "properties": {
-        "id": "LU-004",
+        "id": "LU-LIFE-01",
         "layer": "LAND_USE",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
+        "name_zh": "社区生活与人才服务用地",
+        "name_en": "Community life and talent services",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
+        "interface_type": "human_fallback",
+        "project_id": "JZOI-P10",
+        "design_rule": "Every automated service has a staffed or telephone fallback; housing and service quotas require official controls.",
         "area_sqm_declared": 2782792.823
       },
       "geometry": {
