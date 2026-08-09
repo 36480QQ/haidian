@@ -62,7 +62,7 @@ The package uses the repository's maintained provisional geometry where official
 
 The proposal works at three linked scales: the 43.6 km² coordinated research area, the 11.4 km² overall design area around the Jing-Zhang heritage park, and the 368.4 ha detailed-design area containing three key areas. These figures are taskbook scope descriptors, not a claim that the current provisional polygons reproduce official measurements. The three levels are cross-referenced in `compliance_matrix.json` and `visual/assets/taskbook-crosswalk.json`.
 
-The spatial idea is **one belt, three nodes, many scenes, and a blue-green walking loop**. “One belt” is a design method rather than a new legal boundary; the three nodes correspond to the three taskbook key areas; the loop joins slow movement, public space, water, shade and everyday services.
+The named spatial concept is **Jing-Zhang Open Pulse: one belt, three nodes, many scenes, and a blue-green walking loop**. “One belt” is a design method rather than a new legal boundary; the three nodes correspond to the three taskbook key areas; the loop joins slow movement, public space, water, shade and everyday services.
 
 | Scale | Design question | Evidence and decision |
 | --- | --- | --- |
