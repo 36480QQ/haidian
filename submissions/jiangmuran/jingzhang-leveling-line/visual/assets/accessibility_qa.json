@@ -77,6 +77,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/hero-leveling-line",
+   "min_font_units": 11.0,
+   "min_height_mm_at_A0": 5.78,
+   "pass": true
+  },
+  {
    "sheet": "svg/identity",
    "min_font_units": 9.0,
    "min_height_mm_at_A0": 4.73,
@@ -125,6 +131,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/street-eye-level",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/ecosystem",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -134,6 +146,12 @@
    "sheet": "svg.en/evidence-circuit",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
+   "pass": true
+  },
+  {
+   "sheet": "svg.en/hero-leveling-line",
+   "min_font_units": 11.0,
+   "min_height_mm_at_A0": 5.78,
    "pass": true
   },
   {
@@ -177,6 +195,12 @@
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
    "pass": true
+  },
+  {
+   "sheet": "svg.en/street-eye-level",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
   }
  ],
  "offline_html": {
@@ -201,5 +225,31 @@
    "inline_script_tags": 0
   }
  },
+ "asset_references": [
+  {
+   "file": "visual/index.html",
+   "references": 9,
+   "missing": [],
+   "remote": []
+  },
+  {
+   "file": "visual/index.en.html",
+   "references": 9,
+   "missing": [],
+   "remote": []
+  },
+  {
+   "file": "report/proposal.html",
+   "references": 11,
+   "missing": [],
+   "remote": []
+  },
+  {
+   "file": "report/proposal.en.html",
+   "references": 13,
+   "missing": [],
+   "remote": []
+  }
+ ],
  "failures": []
 }

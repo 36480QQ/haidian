@@ -1,57 +1,155 @@
 {
   "type": "FeatureCollection",
-  "name": "phasing_scaffold",
   "features": [
     {
       "type": "Feature",
-      "id": "PHASE-001",
       "properties": {
         "id": "PHASE-001",
         "layer": "PHASE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
+        "name_zh": "近期：第一百米与三站低扰动试点",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 4370686.203,
         "phase": "phase_1",
-        "name_zh": "一期低后悔可逆原型范围",
-        "area_sqm_declared": 4587013.573,
-        "phase_goal": "official-data-audit-and-three-reversible-pilots",
-        "exit_condition": "independent review failure or unresolved major safety risk"
+        "implementation_status": "concept_sequence_not_commitment",
+        "exit_condition": "任一普通路径、人工接管或申诉链失效即暂停"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3417,
-              40.006
+              116.3438,
+              39.945
             ],
             [
-              116.34218780487805,
-              40.016
+              116.3502,
+              39.945
             ],
             [
-              116.34843599999999,
-              40.016
+              116.3502,
+              40.017
             ],
             [
-              116.34843599999999,
-              39.9495
+              116.3438,
+              40.017
             ],
             [
-              116.340948,
-              39.9495
-            ],
-            [
-              116.340948,
-              39.99434399999997
-            ],
-            [
-              116.3417,
-              40.006
+              116.3438,
+              39.945
             ]
           ]
         ]
-      }
+      },
+      "id": "PHASE-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PHASE-002",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "中期：公共验收脊连续化",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 7298651.115,
+        "phase": "phase_2",
+        "implementation_status": "requires_official_geometry_and_review"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3425,
+              39.941
+            ],
+            [
+              116.352,
+              39.941
+            ],
+            [
+              116.352,
+              40.022
+            ],
+            [
+              116.3425,
+              40.022
+            ],
+            [
+              116.3425,
+              39.941
+            ]
+          ]
+        ]
+      },
+      "id": "PHASE-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PHASE-003",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "远期：两翼适应性扩展",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 11412825.386,
+        "phase": "phase_3",
+        "implementation_status": "requires_statutory_process_and_operational_evidence"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      },
+      "id": "PHASE-003"
     }
-  ]
+  ],
+  "name": "evidence_gated_phasing"
 }

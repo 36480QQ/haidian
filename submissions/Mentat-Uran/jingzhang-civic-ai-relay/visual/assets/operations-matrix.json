@@ -4,7 +4,7 @@
   "disclaimer": "Roles, response windows and gates are calibration hypotheses, not assigned government duties, contracts, budgets or current service standards.",
   "sc04_minimum_pilot": {
     "scenario_id": "SC-04",
-    "current_state": "proposed_not_run",
+    "current_state": "tabletop_rehearsed_operationally_blocked",
     "accountability": {
       "accountable": "future authorized service supervisor",
       "accountable_status": "unassigned",
@@ -24,6 +24,13 @@
       ]
     },
     "always_on_non_ai_path": "printed service directory plus staffed referral script",
+    "tabletop_rehearsal": {
+      "status": "pass",
+      "evidence_ref": "visual/assets/sc04-tabletop-evidence.json",
+      "reproduce": "node visual/assets/run_sc04_tabletop.js --check",
+      "bounded_claim": "local synthetic state, queue, stop, deletion and rollback logic only; no real system, participant, service performance or field acceptance",
+      "operational_effect": "none; G2 remains blocked and G3 operational sandbox remains not run"
+    },
     "gates": [
       {
         "id": "G0",
@@ -49,8 +56,8 @@
       {
         "id": "G3",
         "name": "sandbox_test",
-        "current": "not_run",
-        "advance_when": "all six acceptance criteria pass with complete evidence",
+        "current": "operational_not_run_local_tabletop_passed",
+        "advance_when": "after G2, an authorized operational sandbox passes all six criteria with complete evidence",
         "fail_to": "stop, isolate and execute rollback actions"
       },
       {
