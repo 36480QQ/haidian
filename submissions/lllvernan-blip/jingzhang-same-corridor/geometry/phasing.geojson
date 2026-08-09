@@ -1,0 +1,265 @@
+{
+ "type": "FeatureCollection",
+ "name": "phasing",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PHASE-1",
+   "properties": {
+    "id": "PHASE-1",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "status_class": "conceptual",
+    "phase": "near_term_reversible",
+    "name_zh": "近期：可逆接口期（概念范围）",
+    "note": "不依赖未确认工程的先行项：过境链、四象限步行、首层开放带、记忆寻径、场景卡试点；全部设施可撤回。",
+    "area_sqm_declared": 3692893.005,
+    "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "assumption_ids": [
+     "A-BOUNDARY-OVERSPAN-002",
+     "A-KEYAREA-ANCHOR-003"
+    ]
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        116.343,
+        40.0075
+       ],
+       [
+        116.354,
+        40.0075
+       ],
+       [
+        116.354,
+        40.026
+       ],
+       [
+        116.343,
+        40.026
+       ],
+       [
+        116.343,
+        40.0075
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        116.342,
+        39.9835
+       ],
+       [
+        116.353,
+        39.9835
+       ],
+       [
+        116.353,
+        39.9935
+       ],
+       [
+        116.342,
+        39.9935
+       ],
+       [
+        116.342,
+        39.9835
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        116.342,
+        39.944
+       ],
+       [
+        116.355,
+        39.944
+       ],
+       [
+        116.355,
+        39.94984
+       ],
+       [
+        116.342,
+        39.94984
+       ],
+       [
+        116.342,
+        39.944
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PHASE-2",
+   "properties": {
+    "id": "PHASE-2",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "status_class": "conceptual",
+    "phase": "mid_term_triggered",
+    "name_zh": "中期：条件触发期（概念范围）",
+    "note": "以 13 号线扩能提升与重点区正式边界发布为触发条件的接口项；触发条件未满足前不启动。",
+    "area_sqm_declared": 3692893.005,
+    "source_id": "LINE13-UPGRADE-20250215",
+    "assumption_ids": [
+     "A-LINE13-ENGINEERING-005"
+    ]
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        116.343,
+        40.0075
+       ],
+       [
+        116.354,
+        40.0075
+       ],
+       [
+        116.354,
+        40.026
+       ],
+       [
+        116.343,
+        40.026
+       ],
+       [
+        116.343,
+        40.0075
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        116.342,
+        39.9835
+       ],
+       [
+        116.353,
+        39.9835
+       ],
+       [
+        116.353,
+        39.9935
+       ],
+       [
+        116.342,
+        39.9935
+       ],
+       [
+        116.342,
+        39.9835
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        116.342,
+        39.944
+       ],
+       [
+        116.355,
+        39.944
+       ],
+       [
+        116.355,
+        39.94984
+       ],
+       [
+        116.342,
+        39.94984
+       ],
+       [
+        116.342,
+        39.944
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PHASE-3",
+   "properties": {
+    "id": "PHASE-3",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "status_class": "conceptual",
+    "phase": "long_term_recalculation",
+    "name_zh": "远期：复算闭合期（概念范围）",
+    "note": "official boundary、控规、文保、蓝线、市政资料发布后，替换 provisional 图层并复算全部 unknown 指标。",
+    "area_sqm_declared": 11412825.386,
+    "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "assumption_ids": [
+     "A-CONTROLS-001",
+     "A-METRICS-BASELINE-010"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3407,
+       39.939
+      ],
+      [
+       116.3553,
+       39.939
+      ],
+      [
+       116.3553,
+       39.965
+      ],
+      [
+       116.3533,
+       39.99
+      ],
+      [
+       116.3553,
+       40.0265
+      ],
+      [
+       116.3427,
+       40.0265
+      ],
+      [
+       116.3417,
+       40.006
+      ],
+      [
+       116.3397,
+       39.975
+      ],
+      [
+       116.3407,
+       39.939
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
