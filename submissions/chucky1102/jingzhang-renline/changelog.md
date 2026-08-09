@@ -2,6 +2,12 @@
 
 人字线 RENLINE(submissions/chucky1102/jingzhang-renline)
 
+## v0.9 - 2026-08-09
+
+- **自检证据持久化**(响应 #883 / #807):`self_check.json` 补齐顶层 `ok` / `can_enter_formal_review` / `review_status` / `package_type` 与四条规范化记录(`DETERMINISTIC_VALIDATION` / `SPATIAL_REVIEW` / `VISUAL_PACKAGING` / `PROFESSIONAL_EVIDENCE`),如实落盘本次 `scripts/self_check_submission.py` 运行结论(四项全 PASS,`can_enter_formal_review=YES`);spatial 记录中明确三条 `KEY_AREA_PROVISIONAL` 源于组织方几何缺口而非包内缺陷。原有被矩阵引用的 `BOUNDARY_TRUST` / `KEY_AREAS_TRUST` / `LAND_USE_TOPOLOGY` / `VISUAL_STATIC` 四条原样保留。
+- **可审计的自检声明**:`manifest.json` 的 `validation_claim.self_checked` 由 `false` 更正为 `true`,并附自检命令、结果与时间戳;同步刷新 `self_check.json` 的 sha256。
+- 本次不改动任何方案内容、图面或几何,仅补齐流程证据。
+
 ## v0.8 - 2026-08-09
 
 - **折返协议机器化**:新增 `visual/assets/switchback-protocol.json`——12张场景卡逐卡登记状态/验证门/接管时限/非智能替代/数据边界/人工复核/爬升等级/升门条件,含全带默认值与五类责任角色(机器可读运营合约做法致谢 147228/jingzhang-open-pulse,独立转译)。

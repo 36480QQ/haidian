@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "51afb9db713843a4877457db73faa7e2a178804c6b09d9f1801a37acf5f0f2e7"
     },
     {
       "path": "compliance_matrix.json",
@@ -290,7 +290,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "bcd6c3f33a129e67f579d325112b216e399b6f8417e769e798065a0dc5ecce83"
+      "sha256": "80c459c8cd22fbf205f221fc6371902ef3816fa2fa4e8da16cc3f390a9cb8a2b"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
@@ -308,8 +308,11 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "self_check_command": "python scripts/self_check_submission.py submissions/chucky1102/jingzhang-renline --pr-author chucky1102",
+    "self_check_result": "PASS",
+    "checked_at": "2026-08-09T12:51:17Z"
   }
 }
