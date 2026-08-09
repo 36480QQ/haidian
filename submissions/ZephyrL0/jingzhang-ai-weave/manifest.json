@@ -406,7 +406,7 @@
       "path": "changelog.md",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "f54c9929920de269b3b6ea7be8a351987640f754fcca9614603046975ae14b89"
+      "sha256": "96c58fa09aceee7a43ee9886f97eede77de04097fc7b9820af7203c5d5ee87a3"
     },
     {
       "path": "compliance_matrix.json",
@@ -514,7 +514,7 @@
       "path": "proposal.en.md",
       "role": "translation_narrative",
       "required": true,
-      "sha256": "a815bf23dcbdca4ad3f2d0e090343ded26a96eea854c6f6ff224292a9bde4045",
+      "sha256": "25e36e54d4faae36cbd5a2e211deed8cf7cfbcdbdb4ad235fe53bad87d7345ed",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -522,7 +522,7 @@
       "path": "proposal.md",
       "role": "primary_narrative",
       "required": true,
-      "sha256": "085681401d2f76123d547fa6938d24b53b6df2c34a6a8f09ed6ef5d8d579031b",
+      "sha256": "647abf7329cdfadbd27bc504d620e6712763712947ef79c34e42913df98d8662",
       "language": "zh"
     },
     {
@@ -535,13 +535,13 @@
       "path": "report/narrative.md",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "69d9422ba2a40cfe9d048787370cfc2d76a81968d26b41d68dd634bdf2cf690f"
+      "sha256": "fd83d665e71d169e4625ede5f3ddd8ebfe53c5048b70882aaff7b638220ab784"
     },
     {
       "path": "report/proposal.en.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "3db223f0623f268f2e331d4b6e923a0fd73ce8b514d0af10fc9a4a75d4b1aff4",
+      "sha256": "13319f37d4f448f680d4681def483938a192102bbc6112648db7cec954954aa4",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -549,7 +549,7 @@
       "path": "report/proposal.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "11c58dceb72f35dcaac30bd2cc494f5995da846f07551988da755b9eb2c3c01c",
+      "sha256": "5c787362886e9d5992d063ea0feb8e0f897046cc13847dbc964c3b7bd52898b8",
       "language": "zh"
     },
     {
@@ -562,7 +562,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cad33aa34f44ef26920a7042cbdbb0c1864a4a17847f9a264f0ca6ba74f2af29"
+      "sha256": "116a4838ad55d541eb39e0650aa5f3823660d511d3820b67725080ed7c582b5b"
     },
     {
       "path": "simulation.json",
@@ -612,6 +612,6 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence_summary": "v5.2 records thirteen academic sources: eleven full-text, manuscript, full-HTML, or page-by-page visual reviews and two abstract screenings pending full text. User-provided research corrects Phase I as existing groundwork and adds explicit metro-route, microclimate, older-adult, and green-lifecycle field protocols. Required GeoJSON passes structural and supplemental topology checks, but its 67 design features remain agent-generated and its public-observation feature count is zero. The package does not infer site demographics, official geometry, statutory controls, causal health effects, project approval, or implementation feasibility."
+    "data_confidence_summary": "v5.2 records thirteen academic sources: eleven full-text, manuscript, full-HTML, or page-by-page visual reviews and two abstract screenings pending full text. User-provided research corrects Phase I as existing groundwork and adds explicit metro-route, microclimate, older-adult, and green-lifecycle field protocols. Required GeoJSON passes the repository spatial review in the declared CPython 3.14.2 / Shapely 2.1.2 / PyProj 3.7.2 / jsonschema 4.26.0 environment; the reproducible command, reviewed input hashes, three provisional-key-area minor notices, and recomputed metrics are persisted in self_check.json. Its 67 design features remain agent-generated and its public-observation feature count is zero. The package does not infer site demographics, official geometry, statutory controls, causal health effects, project approval, or implementation feasibility."
   }
 }

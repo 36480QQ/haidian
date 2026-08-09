@@ -173,7 +173,7 @@ v4的十个更新工作包均经过四道门：资料门确认边界、权属、
 
 ## 指标体系、面积复算与合规矩阵
 
-官方intake、professional与visual校验已通过；本轮另以依赖无关脚本完成结构和明显拓扑错误审计，但当前环境未安装Shapely/PyProj，不能声称完成仓库专业空间复核。临时总体面积、绿地、公共空间和建筑基底均可由GeoJSON复算，容积率、高度、退线和法定绿地率保持未知。官方边界替换时，九个图层、指标、图件、HTML和PDF同时重算。[metric:site_area_sqm] [depth:metrics_recalculation]
+官方intake、professional与visual校验已通过；仓库专业空间复核也已在声明依赖的隔离环境中运行并通过：CPython 3.14.2、Shapely 2.1.2、PyProj 3.7.2、jsonschema 4.26.0，命令、工具哈希、九个受检GeoJSON哈希、三条临时重点区提示和复算指标均持久化在self_check.json。依赖无关脚本仍作为补充审计，不能替代专业测绘或正式边界。临时总体面积、绿地、公共空间和建筑基底均可由GeoJSON复算，容积率、高度、退线和法定绿地率保持未知。官方边界替换时，九个图层、指标、图件、HTML和PDF同时重算。[metric:site_area_sqm] [depth:metrics_recalculation]
 
 评委视角的自评重点不是“有没有填满任务”，而是两项公共设计是否在任务契合、原创性、AI规划创新、可实施性、包容性、风险合规和表达完整度上形成同一条证据链。[source:SRC-PEER-CATALOG-20260810] [metric:flagship_public_design_count]
 
