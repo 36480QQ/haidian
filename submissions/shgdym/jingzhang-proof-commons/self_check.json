@@ -4,7 +4,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "persisted_at": "2026-08-09T03:56:54Z",
+  "persisted_at": "2026-08-09T04:08:49Z",
   "source_command": "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --pr-author shgdym --json",
   "checks": [
     {
@@ -106,7 +106,7 @@
         "ai_package_stages": {
           "submissions/shgdym/jingzhang-proof-commons": "formal"
         },
-        "total_bytes": 26334845,
+        "total_bytes": 26473986,
         "maintainer_bypass": false
       },
       "stderr": ""
@@ -165,8 +165,10 @@
         "issues": [],
         "metrics_seen": {
           "site_area_sqm": 11412825.386,
+          "building_footprint_area_sqm": 310807.184,
           "green_ratio": 0.123423,
-          "public_space_ratio": 0.073281
+          "public_space_ratio": 0.073281,
+          "key_area_count": 3.0
         }
       },
       "stderr": ""

@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex for shgdym",
     "model": "OpenAI GPT-5 via Codex; image bases generated with OpenAI image generation; local scripts used for rendering, validation, and packaging"
   },
-  "generated_at": "2026-08-09T03:56:54Z",
+  "generated_at": "2026-08-09T04:08:50Z",
   "files": [
     {
       "path": "manifest.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9601a6c257d8c543bce744aa4c559592829abdb12668505df4c447462e2921fa"
+      "sha256": "f06943b3a450fee126332c2fa8c484b05c04d34c6d1c91657279c0c89caef52e"
     },
     {
       "path": "compliance_matrix.json",
@@ -98,21 +98,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "07d2aca58d1d648d1a6cd6f7745818de9ec8f6e8c8bc8475352e80c1a67f9616"
+      "sha256": "e5863b6dbac3c6241a71dae3f85e88d7bfb39c38d163535a086450242205c4a7"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b92542b7937a298647166a9befe087e1cf5792be490e561f402682546b45036d"
+      "sha256": "1e377ba040337ea02cc9810693b69dc3621c7195021dfa2fade3831c65a61e39"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9226aac2afa6d2a6953a50b7018563e5fb99fbe327b8f6c524e84201d8526e41"
+      "sha256": "e7f47aced635371748b37e7850584a4fa266c092738f0d852e2aa14fe2a949e2"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -126,14 +126,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e771ef72100d2ded84dae479930d0a9e3d3a889b837b2594728f1884dbf8643a"
+      "sha256": "26ef9f3497af652bdc5d126b23ebcd0a12475c4c2a4d3f60a5da217f96d76004"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f72a8f9bedba68ef93cc51fea122b2c6c5f1db5aaedc145d8426cd597f8d1c74"
+      "sha256": "9524822eae8b7f0d0c83e120df0ed3d7336c502e25aca3050b64be70261fd180"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0426d9f8a7869b4f7581322c93c5fa7e7a1bb8b8cd6c95fd94c78ac625d48e03"
+      "sha256": "a29f4e38e5bb757b3c24ec0ee4b4eb66a2ac8ad52e108b9d6b683a4183d50ac8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "efc2681f31ba9e6a0a93687277377fbe1dce27f9ac9b22829f8e853ade83cf68"
+      "sha256": "d39a7d426cefb768f17ef0b462b24456a085d52a1b6958f87fb56b2dd79c4512"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "614cb4ac009a793745d350028dbd39d187a259965b82585167aa7ffde9369c9a"
+      "sha256": "c83d8d9fa46d8fa037e09b85c07430a6a0e19fdc7705896cd5a6908b6249dfe7"
     },
     {
       "path": "visual/index.en.html",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8d56eba4461606aef0c5ba286cdf075bcacf96d173975007ebdce0b1c341e625"
+      "sha256": "4c174af6395e9d7b3c88c3c18cbb6629d53ccb802edbc19e7e2b2a0453bb396a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "38d51c0171fb1d83c479161e5be4a07226ae49540197f3ca58674acc6aa6d3d1"
+      "sha256": "d7140285e9bf13091a71a195162f0a9905d73c972718424749eb7add6ced23cb"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -265,7 +265,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "d4d869573819dc162dc19d79a2e386d44073440510ac7055da87ae0893b70e51"
+      "sha256": "19cf21e1051c1d77c337e0972a792b31c7c67711ea84afcf73fbb64b7dcb1546"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
