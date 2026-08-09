@@ -1061,6 +1061,18 @@ Every requirement now points at evidence: a section in `proposal.md`, a shipped 
 
 All 63 answered. Recomputing the floors rather than declaring them means that if one of these deliverables is ever dropped, **the build fails instead of the matrix going on asserting it is there.**
 
+### One deliverable deliberately not shipped: `simulation.json`
+
+The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. Three of 354 packages ship one. This one does not, and the reason has to be written down or the absence is just a gap.
+
+**First, this proposal has no basis for the numbers that schema wants.** It is designed for an agent-dispatch simulation: per-task outcomes, energy used against an energy budget, dispatch-schema validity. No dispatch simulation was run here and there is no basis for any energy figure. Every value would be invented.
+
+**Second, the one thing that could honestly take that shape would publish a number that reads as something else.** The ten-case tabletop is a set of task records — each has a fixed input, a fixed verdict and a fixed expectation. But its success rate is **10 of 10 adjudications matching specification**, and `simulation_success_rate: 1.0` reads to any reviewer as "this scenario succeeds every time". Those are very far apart. The tabletop proves the decision logic is reproducible and that the refusal branches fire. It proves no field reading, no real review party and no service performance.
+
+**Publishing a number that will be read as something else is the thing this proposal spends its length objecting to.** So the slot stays empty, and the tabletop ships under its own name — `run_s08_tabletop.js` and `s08-tabletop-evidence.json` — with what it proves and what it does not stated in its own output.
+
+**If this proposal ever obtains real dispatch or energy data, the file should be added.** What is missing is not the willingness. It is the basis.
+
 ### An errata register: `visual/assets/errata.json`
 
 **Across 351 merged proposals there is no errata, no retraction and no author-written postmortem.** Two bundle the maintainer's feedback about themselves. None says what it got wrong before being asked.
