@@ -44,32 +44,65 @@
       "id": "EX-PARK-JZ-PUBLIC-REPORT",
       "title_zh": "京张铁路遗址公园二期开放公开报道（西直门-北五环9km绿廊）",
       "type": "formal_usable",
-      "usable_for_formal": "yes"
+      "usable_for_formal": "yes",
+      "url": "https://www.chinanews.com.cn/sh/2026/08-06/10673204.shtml",
+      "publisher": "中国新闻网",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-08-08",
+      "snapshot_status": "url_snapshot",
+      "license_note": "新闻报道，仅摘录事实口径（9km/53公顷/70社区45万人），不转载图片",
+      "usage": "支撑主脊=已建成遗址公园绿廊的现状断言；官方 polygon 到位后复算",
+      "authority_level": "public_report"
     },
     {
       "id": "OSM-BASE",
       "title_zh": "OpenStreetMap 现状要素（13号线/地铁站/道路/水系，ODbL背景参考）",
       "type": "background_only",
       "usable_for_formal": "no",
-      "usage_note": "按 ODbL 1.0 分许可并附 NOTICE；仅作 existing_condition 概念对位"
+      "usage_note": "按 ODbL 1.0 分许可并附 NOTICE；仅作 existing_condition 概念对位",
+      "snapshot_date": "2026-08-08",
+      "snapshot_status": "osm_snapshot",
+      "license_note": "OpenStreetMap © OpenStreetMap contributors, ODbL 1.0；本包仅作背景交叉核对，含 ODbL NOTICE",
+      "usage": "EX-* 要素的背景交叉核对；不单独作为 formal 断言来源"
     },
     {
       "id": "EX-METRO-LINE13-PUBLIC",
       "title_zh": "北京地铁13号线公开运营信息（2002年通车、高架段与老京张线并行）",
       "type": "formal_usable",
-      "usable_for_formal": "yes"
+      "usable_for_formal": "yes",
+      "url": "https://zh.wikipedia.org/wiki/北京地铁13号线",
+      "publisher": "维基百科",
+      "accessed_date": "2026-08-08",
+      "snapshot_status": "url_snapshot",
+      "license_note": "CC BY-SA，仅摘录 13 号线 2002 年通车、高架与老京张线并行的公开事实",
+      "usage": "支撑历史臂=13号线地面段与故线平行叠合的现状参照",
+      "authority_level": "public_reference"
     },
     {
       "id": "EX-STATION-PUBLIC",
       "title_zh": "大钟寺/五道口/知春路/清华东路西口地铁站公开位置信息",
       "type": "formal_usable",
-      "usable_for_formal": "yes"
+      "usable_for_formal": "yes",
+      "url": "https://zh.wikipedia.org/wiki/大钟寺站",
+      "publisher": "维基百科（大钟寺站/五道口站/知春路站/清华东路西口站条目）",
+      "accessed_date": "2026-08-08",
+      "snapshot_status": "url_snapshot",
+      "license_note": "CC BY-SA，仅摘录车站公开位置与换乘关系",
+      "usage": "支撑道岔=真实站城节点的车站锚点；站城一体化概念对位",
+      "authority_level": "public_reference"
     },
     {
       "id": "EX-RAIL-HISTORY-PUBLIC",
       "title_zh": "京张铁路1905-1909建设与33‰坡度/青龙桥折返公开史实",
       "type": "formal_usable",
-      "usable_for_formal": "yes"
+      "usable_for_formal": "yes",
+      "url": "https://zh.wikipedia.org/wiki/京张铁路",
+      "publisher": "维基百科",
+      "accessed_date": "2026-08-08",
+      "snapshot_status": "url_snapshot",
+      "license_note": "CC BY-SA，仅摘录 1905-1909 建设史实、33‰坡度与青龙桥折返",
+      "usage": "支撑坡度梯度=33‰ 工程极限的历史依据",
+      "authority_level": "public_reference"
     }
   ]
 }
