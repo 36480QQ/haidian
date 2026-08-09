@@ -12,7 +12,7 @@
     "agent_name": "Codex / 京张开源带城市设计协作智能体",
     "model": "GPT-5.6 Sol"
   },
-  "generated_at": "2026-08-09T11:33:43Z",
+  "generated_at": "2026-08-09T12:06:13Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e254a1b0f484da3dfb29422d1ad1d41325737f1d1236aaa30cfc19e205b82ddd"
+      "sha256": "97efce6c400eac26af9a18d359043f82ac24985d47440bde58c4914b447dea7b"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bb50447dcc1556db3d192e2964e77f0db9f4ec57b9086d9829ad17d0823a4f88"
+      "sha256": "08e21db0af810e1b965ce3381fb5f98ad46ec63fd43050fca8d03695657ff7ad"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "66894ef77a9dc4a0f2f526e09ee8ed2f806a11e927b26bf0c7e2377a252e543d"
+      "sha256": "81495aeb00d5382a62c928e5d830dcc07cdc9139612e5f083b9a240d2232fa3e"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2d39f950745e6f25f27a3fa55a1a47b67fda71d8964dd22caa00a010150ac76d"
+      "sha256": "8e36267d1ab03ec4ec22b37c14d24b7329ad90b4069e02bd0dd72a43280213da"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "65afc962d2c4d076df7ecf9f355179102f1c244d1af884f9ab4c67c5e7e9bc3a"
+      "sha256": "3271bd154d77a17188c8530a9d992a13982c13ac6bf5fd344d4caf2cb0f407c2"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "403aec47b43536ee4ab7f5f71858f68da6fbaf9a0dcb5fb3ac62127520344a7a"
+      "sha256": "50eb510e178092f02beb329218abe4237df52a2361f2e249df1fd531a0580fc7"
     },
     {
       "path": "risk.json",
@@ -166,7 +166,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "1c3c864d98ef7f84f8bfa2337f4c388db5a18521fa2d48e69548e46a0ced4ffe"
+      "sha256": "ac715aab63c9afd27739c463793783b8b4ac6ead792112ab219f5121cb6fb502"
     },
     {
       "path": "assets/reference/qinghuayuan-station-2024.jpg",
@@ -218,7 +218,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "23cbca40ff7688731a681205a2290c75f9ff22268e141d68d55653593b5edb4d"
+      "sha256": "0d12fba3adad330ab512edb13ae9756a30de706d389257b242853ebc817b7b1a"
     },
     {
       "path": "assets/figures/key-areas.png",

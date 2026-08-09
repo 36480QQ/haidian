@@ -29,8 +29,6 @@ The masterplan uses four background colours. Grey shows existing conditions, gre
 
 Professional precedents helped set the order of the presentation. Xuhui Runway Park introduces the old runway and masterplan first, followed by street sections, rain gardens, and the people who use them. Built performance is reported separately. Toronto's waterfront design reviews keep their main judgements beside large drawings and use very little supporting text. The six Jing-Zhang proposals published by Beijing in 2020 also begin with a legible spatial idea. This submission reuses no image, geometry, or wording from those projects. It follows only their sequence of existing conditions, masterplan, detailed places, and measurement after opening. [source:CASE-XUHUI-SASAKI] [source:CASE-WATERFRONT-TORONTO-REVIEW]
 
-![Where the entrance signs, distance posts, and on-site directions are used](assets/figures/identity-system.en.png)
-
 ## Three-Level Scope Framework
 
 The Coordinated Research Area covers about 43.6 square kilometres and asks which schools, neighbourhoods, and businesses along the line would genuinely use the park. The Overall Design Area follows the nine-kilometre corridor across about 11.4 square kilometres, checking breaks in the Walking and Cycling Network, station connections, and access to the river. The three Key-Area Detailed Design Areas total about 368.4 hectares. Here the drawings move down to street corners 80 to 150 metres across and show doors, ramps, tree canopies, and equipment bays. [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]
@@ -117,6 +115,8 @@ Only three objects mark the route. Entrance signs give the distance to the neare
 ![Seven corridor types, crossings, and the Xiaoyue River connection drawn at true scale](assets/figures/mobility-bluegreen.en.png)
 
 ![Materials and connection details for seats, rain-garden edges, entrance signs, and canopies](assets/figures/components-phasing.en.png)
+
+![Where the entrance signs, distance posts, and on-site directions are used](assets/figures/identity-system.en.png)
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
