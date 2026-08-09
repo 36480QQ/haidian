@@ -19,6 +19,7 @@ class SubmissionValidationConcurrencyTests(unittest.TestCase):
         self.assertNotIn("queue: max", workflow_scope)
 
         self.assertIn("group: submission-validation-api", jobs_scope)
+        self.assertIn("timeout-minutes: 15", jobs_scope)
         self.assertIn("cancel-in-progress: false", jobs_scope)
         self.assertIn("queue: max", jobs_scope)
         self.assertNotIn("queue: single", jobs_scope)

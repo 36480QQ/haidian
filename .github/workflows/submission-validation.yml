@@ -21,6 +21,7 @@ jobs:
     name: submission-validation
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
+    timeout-minutes: 15
     # Every validation calls the GitHub API to enumerate and hydrate the PR.
     # Keep those calls serialized across PRs to avoid secondary-rate-limit
     # 403s, while retaining one pending slot per PR at the workflow level.
