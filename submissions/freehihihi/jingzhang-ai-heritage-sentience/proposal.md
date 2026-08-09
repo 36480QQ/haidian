@@ -40,11 +40,13 @@ iteration: "v0.1"
 
 围绕五大功能（AI 全栈自主创新体系、世界级 AI 创新生态、AI+ 场景赋能新范式、智能化 AI 活力城市、AI 治理全球话语权）与「三区两翼」协同回路组织产业研究：众智园承载自主创新与治理话语权，AI 原点社区承载世界级生态，大钟寺承载智能原生新业态，中关村科技服务翼与（小月河）场景赋能翼分别提供资本/IP 与场景支撑 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [task:agent.1]。
 
-**命名与标识（概念建议）**：提案命名「百年京张 · 智城有灵」，取「铁轨之灵、数据之灵、共治之灵」三重隐喻。品牌将京张铁路的「人字形展线」抽象为 AI 网络拓扑标识——一条主脊（京张文化带）分出两翼（都市 AI 生活带、AI 融合创新带），Logo 方向以「人字 + 节点」为母题，作为待专业团队深化的视觉方向，不表述为已定稿方案 [task:agent.1] [source:SRC-AGENT-TASKBOOK]。
+**命名与标识（概念建议）**：提案命名「百年京张 · 智城有灵」，取「铁轨之灵、数据之灵、共治之灵」三重隐喻。品牌将京张铁路的「人字形展线」抽象为 AI 网络拓扑标识——一条主脊（京张文化带）分出两翼（都市 AI 生活带、AI 融合创新带），Logo 方向以「人字 + 节点」为母题，并定义了品牌色彩（京张绿/智联蓝/铁路灰棕/基底白绿）、中英文字标、最小尺寸与留白规范，作为待专业团队深化的视觉方向，不表述为已定稿方案、未注册商标 [task:agent.1] [source:SRC-AGENT-TASKBOOK]（完整 VI 草案见 `deepening_evidence.json` 的 visual_identity）。
 
 **全球 AI 创新生态案例（可读摘要）**：选取硅谷（资本与人才密度）、深圳（硬科技与产业链）、新加坡（公共数据开放与治理试点）、合肥（科创平台与成果转化）、杭州（场景开放与数实融合）、伦敦（创意与金融科技）等 6 处案例，提炼可迁移经验：①以「原点社区」形成人才聚集与知识外溢；②以「开放场景 + 真实数据」驱动技术验证；③以「多元共治」构建治理话语权。这些经验分别落到空间（社区与节点）、运营（场景开放机制）与治理（协同规则）三个层面 [task:agent.2] [source:SRC-AGENT-TASKBOOK] [depth:dd-ai-scenario]。
 
 该层级判断进一步支撑用地分配、公共空间、慢行廊道、AI 场景节点与指标体系的落地（见后续章节与 `metrics.json`）[metric:ai_native_ecosystem_score]。
+
+**区域创新协同（概念建议）**：方案不将 AI 创新带视为封闭园区，而是建立与研究区外创新源和产业带的双向要素流与项目接口。与**北纬社区**就近支撑生活配套与社区活力；与**未来科学城**形成成果转化互补；与**怀柔科学城**协同大科学装置与算力科研服务；与**北京经开区**承接 AI+ 制造场景试验；与**京津冀**衔接更大尺度的要素流动与产业分工。每项协同均明确对象、要素流与合作接口，遵循各自数据安全与开放规则，并以联席机制与项目制推进、以联合项目数等公开口径评估；具体协议须各方正式签署，不构成既定合作或政府承诺（详见 `regional_synergy.json`）。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -99,7 +101,9 @@ iteration: "v0.1"
 9. 开发者广场 / 公共 Wi-Fi 与数据开放区 —— 公共空间 + 开放数据。
 10. AI 安全与隐私风险运营中心 —— 人工复核与风险值守。
 
-其中第 2、7、8 张为**产业测试验证场景**；每张卡片均明确运行数据、隐私边界、人工复核、运营主体与可视化图层，防止数据滥用与过度娱乐化 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [assumption:ASM-005] [depth:dd-ai-scenario]。
+其中第 2、7、8 张为**产业测试验证场景**；每张卡片均明确运行数据、隐私边界、人工复核、运营主体与可视化图层，防止数据滥用与过度娱乐化 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [assumption:ASM-005] [depth:dd-ai-scenario]。**完整、机器可读的 10 张场景卡见 `scenario_cards.json`**，每卡含触发条件、数据字段、模型能力边界、失败模式、人工接管、运营 KPI、隐私边界与停止条件，并映射到 deployment_area 与 geometry_feature。
+
+**包容性设计（概念建议）**：方案进一步覆盖老年人、儿童、残障人士、低收入居民、非智能终端用户、外来务工者与数字素养不足者，提出全龄无障碍慢行与导盲标识、免费公共空间与平价服务、人工服务台与纸质/电话等非数字替代渠道、更新项目搬迁与安置预案、居民议事会与在线线下参与、争议申诉与第三方仲裁，以及公益 Wi-Fi、设备借用和数字技能培训（详见 `deepening_evidence.json` 的 inclusivity）。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -129,11 +133,11 @@ iteration: "v0.1"
 
 按 `geometry/phasing.geojson` 将实施分为近（一期）、中（二期）、远（远期）三阶段，并结合更新项目清单、政策建议、公众参与与运维机制组织落地路径 [task:1.5.3.required] [depth:dd-phasing]。
 
-**全球 AI 创新活动体系与长期运营（概念建议）** [task:agent.6] [source:SRC-AGENT-TASKBOOK]：提出年度活动体系与品牌（议题大会 + 开发者社区运营 + 场景开放运营）、公共体验路线、国际传播与招引转化机制，以及「朝圣地 → 年度活动 → 运营闭环」的长期品牌资产机制 [depth:dd-ops]。所有活动、招商、资金、政策与运营安排均为深化方向，不代表已确定的政府安排 [assumption:ASM-004]。
+**全球 AI 创新活动体系与长期运营（概念建议）** [task:agent.6] [source:SRC-AGENT-TASKBOOK]：提出年度活动体系与品牌（议题大会 + 开发者社区运营 + 场景开放运营）、公共体验路线、国际传播与招引转化机制，以及「朝圣地 → 年度活动 → 运营闭环」的长期品牌资产机制 [depth:dd-ops]。运营采用「政府引导 + 平台运营 + 多方共治」三层组织模型，按季度推进年度规划、场景开放试点、国际论坛与绩效评估，运营资源含财政引导、运营收入、企业共建与公益基金；场景开放遵循「提案—合规审查—试点授权—运行监测—定期复审」流程，试点设置 KPI 与停止/退出条件，任何未达标试点可暂停收回。所有活动、招商、资金、政策与运营安排均为深化方向，不代表已确定的政府安排 [assumption:ASM-004]（责任主体类型、前置条件、里程碑、KPI、风险与退出机制详见 `deepening_evidence.json` 的 implementability 与 operation_governance）。
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标包括：面积弹性（≈1.0 覆盖度）、综合容积率（≈1.34）、绿地率、公共空间比例、路网密度、建筑与公共空间单元数，以及文化叙事指数与 AI 原生生态指数（方向性评估）。指标含义上，面积弹性与综合容积率共同刻画开发强度与空间供给 [metric:area_elasticity] [metric:avg_far]；绿地率与公共空间比例则反映蓝绿生态对人才生活与创新交往的支撑 [metric:green_ratio] [metric:public_space_ratio]。所有面积与比例均可从 `geometry/*.geojson` 与 `metrics.json` 复算；`compliance_matrix.json` 覆盖全部 17 项公告任务与 6 项 agent 任务，`standard_matrix.json` 覆盖 5 项强制标准，`design_depth_matrix.json` 覆盖 15 项必需设计深度且均为 complete [compliance:true] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+核心指标包括：面积弹性（≈1.0 覆盖度）、综合容积率（≈1.34）、绿地率、公共空间比例、路网密度、建筑与公共空间单元数，以及文化叙事指数与 AI 原生生态指数（方向性评估）。指标含义上，面积弹性与综合容积率共同刻画开发强度与空间供给 [metric:area_elasticity] [metric:avg_far]；绿地率与公共空间比例则反映蓝绿生态对人才生活与创新交往的支撑 [metric:green_ratio] [metric:public_space_ratio]。所有面积与比例均可从 `geometry/*.geojson` 与 `metrics.json` 复算；三层范围的指标分母对照（统筹研究范围 43.6km²、总体设计范围 11.4km²、重点区域合计 368.4ha）见 `metrics.json` 的 `scope_denominators`，各面积类指标均标注了对应分母与口径，`avg_far` 与 `total_gfa_sqm` 明确为统筹研究范围层面的方向性示意，城市设计深度与重点区的强度需在官方 polygon 与控规条件到位后重算；`compliance_matrix.json` 覆盖全部 17 项公告任务与 6 项 agent 任务，`standard_matrix.json` 覆盖 5 项强制标准，`design_depth_matrix.json` 覆盖 15 项必需设计深度且均为 complete [compliance:true] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
 指标的含义在于：绿地/公共空间比例支撑人才生活与创新交往，建筑基座与强度回应产业空间供给，覆盖度与面积弹性检验方案空间自洽性 [source:SRC-DESIGN-BRIEF]。
 

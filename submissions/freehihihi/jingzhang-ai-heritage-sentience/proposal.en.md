@@ -146,3 +146,17 @@ Only public or cleared materials are used; no non-public planning or personal da
 ## References
 
 Primary materials shaping this proposal include: the pre-qualification notice, the agent-facing open-call taskbook, the site-package design brief (scope/land-use/indicators/standards), the provisional substitute boundary, the Urban Design Administrative Measures, the detailed-regulatory-planning measures, and the National Land Use and Sea Use Classification Guide. The machine-readable index is in `sources.json`, `standard_matrix.json`, and `compliance_matrix.json`.
+
+
+## Deepening & Compliance Additions (concept, bilingual-consistent with proposal.md)
+
+The following additions are reflected identically in the Chinese proposal and its supporting machine-readable files, to strengthen verifiability, inclusivity, operability and provenance:
+
+- **Scope denominators (metrics.json `scope_denominators`)**: three-tier basis — research area ≈43.6 km² (`site_boundary.geojson`), core design area ≈11.4 km², key areas ≈368.4 ha. `avg_far` and `total_gfa_sqm` are explicitly indicative at research-area scope; core-design/key-area intensity must be recomputed after official polygons and regulatory conditions are provided.
+- **Scenario cards (`visual/assets/scenario_cards.json`)**: 10 complete cards, each with trigger conditions, data fields, model capability boundary, failure modes, human handover, operation KPIs, privacy boundary and stop conditions, and mapped to deployment area and geometry feature. Three are industrial validation scenarios (LLM validation workshop, robot low-speed delivery, governance sandbox).
+- **Regional synergy (`visual/assets/regional_synergy.json`)**: concept mechanisms with Beilian community, Future Science City, Huairou Science City, Beijing E-Town and the Beijing-Tianjin-Hebei region — element flows and cooperation interfaces, expressly non-committal.
+- **Inclusivity & VI**: elderly/children/disabled/low-income/non-device users and low-digital-literacy measures (accessibility, affordability, non-digital alternatives, resettlement, participation, appeal), plus visual identity direction (logo, brand colors, typography, min sizes) in `deepening_evidence.json`.
+- **Operations & implementation**: governance-led operating model, quarterly rhythm, scene-opener flow with KPIs and stop/exit conditions, and phase-wise milestones with responsible-party types in `deepening_evidence.json`.
+- **Copyright & provenance**: full asset-level ledger, font/map/data/code licensing and generation method in `report/copyright_statement.md`; sources.json mapped to the official `source_registry_summary` ids.
+
+All of the above remain concept suggestions / deepening directions; boundaries are provisional and non-official; nothing represents a government determination or committed agreement.

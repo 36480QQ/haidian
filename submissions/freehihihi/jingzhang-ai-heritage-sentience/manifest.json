@@ -47,13 +47,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "fc47f27e3f5f7eafc770f7258852ac0bece02d8233c95b5943dfa09db129cf54"
+      "sha256": "e43f408854ae97c70923591e4fd92a070838b00f270a9542bfa529c2bb11a4c3"
     },
     {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "7dd48f5da92b1fea93487586ed1383f338f1cc58e53e3117ae031960044ee91a",
+      "sha256": "106d4682b95eeb76cd1131a5d71aad46d2f0d6927afe9579545963c150938deb",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -61,7 +61,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "229e618606e982ec145375bcfacf827e9a58900ee1c2b109adb696892b5d5fff",
+      "sha256": "4a2e4091459437347f6c71e3f332dc8e4a85b9af97515714ca0f56833384d7cc",
       "language": "zh"
     },
     {
@@ -81,6 +81,21 @@
       "role": "standard_matrix",
       "required": true,
       "sha256": "8bf9839e02aa511732520ce96de621a7edd072ca84dcb9bc7e691ae66060bd2e"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "fd8704eb2f64897cc7ef6038a248faafd8322360a15379fc2e50805856da23b2",
+      "language": "en",
+      "translation_of": "assets/figures/ecosystem-map.png"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "b9018cbf0b01e9fd792cb82361d98575807d0e2df163cb0fac93a862d98642a9",
+      "language": "zh"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -109,7 +124,7 @@
       "path": "assets/figures/land-use-structure.png",
       "role": "figure",
       "required": true,
-      "sha256": "d5eec0f5f8aad296e5d4db1a7cd82ec60ff48f3f26b3f3e2411ab906361cb24e",
+      "sha256": "2e3fdc0ea78ae28ce27867c7bff852f898f56dee966507757a424bae1dae6810",
       "language": "zh"
     },
     {
@@ -124,7 +139,7 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "figure",
       "required": true,
-      "sha256": "f6b4d1dd00526b50d3e7116addb90f388d8fd013aaa7e0eb0ac4762d3c72fd0e",
+      "sha256": "fd3ef0b86a10117ff146a5756209b36ccdb49a6295c449b40054ef3ddc85d354",
       "language": "zh"
     },
     {
@@ -139,7 +154,7 @@
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "figure",
       "required": true,
-      "sha256": "e86c5efba652fcf447e978c862fa6feed240a8d6b9aa5653362a2fec40070db1",
+      "sha256": "8d5c60ed59c3ef903c8b2278bd5e5ff8d1e99908b6d9e55ddd2631d63781a664",
       "language": "zh"
     },
     {
@@ -154,7 +169,7 @@
       "path": "assets/figures/site-overview.png",
       "role": "figure",
       "required": true,
-      "sha256": "37137d0c9fcbbb782829d30d5e588b80577445498ec9c473ba191621e19026b0",
+      "sha256": "62fba4da9ff9a45e4c1b3c87f7f12454088c31940c1526a53cc9be97198aef48",
       "language": "zh"
     },
     {
@@ -169,7 +184,7 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "bfca66157e85b520c30f17570bd86cdf01f19d184827945e3f7ea54fb34ff4df",
+      "sha256": "a39f67ca9c945b2de8eb9b0f63416210207ebf48e9e5ac4a93adfbe0a204be58",
       "language": "zh"
     },
     {
@@ -184,7 +199,7 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "f52990f1ea04ca6ef2215351c90dea4cb2b5f8692c322b8b5ccadb3448f4039e",
+      "sha256": "3fbf0f3290e5a316bf2af9de59c898ffc60a51f25dda22444a80b6be14027c17",
       "language": "zh"
     },
     {
@@ -245,13 +260,13 @@
       "path": "report/copyright_statement.md",
       "role": "support",
       "required": true,
-      "sha256": "44ae4db2004f2dea915923d8f055d6cab8512a65fc060a2b9a54aaf71e25c3f2"
+      "sha256": "2d302a2c38436f2afdcc1bfbc15e60c76659bc1707ecf27941ba6067bc0028fc"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_report",
       "required": true,
-      "sha256": "47e71a3c62dd6bffe5ee8a825bb96adb0c093ad9f930d180b89ca37f5ab93fbd",
+      "sha256": "a69d9775cf483243ae8f5166cc3fbfe06eca98e9c742fc4b3d39886234c6d450",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -259,14 +274,14 @@
       "path": "report/proposal.html",
       "role": "rendered_report",
       "required": true,
-      "sha256": "1cb259baa671d45a6e9f8959e578aa0022650d53e023682019f99be5ac955fa3",
+      "sha256": "176c97d5dfee29800566afd0086067257d82ca18edf20cd5a4775999bf917c14",
       "language": "zh"
     },
     {
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "882f36ad57e5ddaef51decd1998c74c018e56c77ffea198c3ba1e91bca14e137",
+      "sha256": "74a016fb27cdd2d767a57a59e9af1184e47d274536077d056e94f001207f4b52",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -274,8 +289,44 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "59088d23851152df286eb8bde96496759b9ecaf4e6138aebdb4316e556dd4c2d",
+      "sha256": "d0da40f8766320291f2bb8334e8d170efc6da372b924db757fd5bbe8217dc767",
       "language": "zh"
+    },
+    {
+      "path": "visual/assets/case_studies.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "df490022c8bad4dd2c5c19ca7dfa81328145b7ef97c5d508e126a7e4bf22aa62"
+    },
+    {
+      "path": "visual/assets/deepening_evidence.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "c1b0dfe718e80e136a19afc4d510233c83c3c2b2baa5df6e31cacd685bf80dcc"
+    },
+    {
+      "path": "visual/assets/logo.png",
+      "role": "visualization",
+      "required": true,
+      "sha256": "d15c50c256301bbf7f1ce461a28fd62bb946f5a95f3f4c9e4ec85a06b3790ffa"
+    },
+    {
+      "path": "visual/assets/metrics_consistency_report.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "45c40699187f7e7e80bcbbe3f2c538a3520b597009f6e6154f7f3df18e6fe231"
+    },
+    {
+      "path": "visual/assets/regional_synergy.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "06dea955290c0e8e9da62ab41f48d0451c14d6736bb407403a920176dffbb674"
+    },
+    {
+      "path": "visual/assets/scenario_cards.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "ca87c7b84f926d5ee826a6f6add3168fd23c7df3f49cf83f31ffb2b1f44d0ede"
     }
   ],
   "validation_claim": {
