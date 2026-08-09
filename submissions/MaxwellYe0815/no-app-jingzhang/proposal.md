@@ -2,11 +2,14 @@
 title: "无门槛京张｜NO-APP JINGZHANG：不扫码也能使用的 AI 创新带"
 author_github: "MaxwellYe0815"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
 license: "CC-BY-SA-4.0"
 summary: "把‘无需手机、无需账号、无需人脸识别也能通行并获得基本服务’设为 AI 城市公共空间底线，以一条无门槛公共脊、三处接口实验室和十二个可人工接管场景，连接百年京张文化、AI 全栈创新与每个人的日常生活。"
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 无门槛京张｜NO-APP JINGZHANG
@@ -15,11 +18,19 @@ iteration: "v1.0"
 
 ## 设计依据与资料清单
 
-本案以官方公告确认的项目名称、三层工作范围、三处重点区约面积和设计任务为第一依据，以面向智能体任务书确认三大定位、五大功能、三区两翼、六项任务和边界条款。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 城市设计方法遵循公共空间、历史文化、建筑体量与风貌统筹原则；涉及用地和实施时区分已知事实、概念建议和待确认条件，并采用仓库登记的用地分类代码。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+本案以官方公告确认的项目名称、三层工作范围、三处重点区约面积和设计任务为第一依据。[source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+
+面向智能体任务书用于确认三大定位、五大功能、三区两翼、六项任务和边界条款。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+城市设计方法遵循公共空间、历史文化、建筑体量与风貌统筹原则；涉及用地和实施时区分已知事实、概念建议和待确认条件，并采用仓库登记的用地分类代码。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
 “无门槛”有三组公共依据：国务院办公厅文件提出传统服务方式与智能化服务创新并行；无障碍环境建设法将自主安全通行、信息交流和社会服务纳入无障碍环境；个人信息保护法相关官方说明强调自动化决策的透明、公平和拒绝权。[source:SMART-ELDERLY-2020] [source:ACCESSIBILITY-LAW-2023] [source:PIPL-AUTOMATED-DECISION] 数字界面将 WCAG 2.2 作为国际可访问性参照，但不把它宣称为本项目法定规划标准。[source:W3C-WCAG22]
 
-当前仓库仍缺 official SITE_BOUNDARY、三处 official KEY_AREA、道路红线、控规指标、现状建筑与权属、文保控制、市政管线、消防防洪和公共设施底数。本包沿用维护者明确标注的 provisional rough polygon，只用于概念生成、拓扑自检、内容评审和可视化，不是官方红线或精确面积依据。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:existing_conditions_diagnosis] 取得清权正式资料后，九组 GeoJSON、全部指标、五张图、两份 PDF 和网页必须整体复算。
+当前仓库仍缺 official SITE_BOUNDARY、三处 official KEY_AREA、道路红线、控规指标、现状建筑与权属、文保控制、市政管线、消防防洪和公共设施底数。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
+
+本包沿用维护者明确标注的 provisional rough polygon，只用于概念生成、拓扑自检、内容评审和可视化，不是官方红线或精确面积依据。[source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis]
+
+三处重点区同样采用临时替代边界，仅用于表达概念关系。[source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-001] 取得清权正式资料后，九组 GeoJSON、全部指标、五张图、两份 PDF 和网页必须整体复算。
 
 建筑工程设计文件编制深度规定在本地标准索引中尚缺可核验官方正文，因此仅登记为待补资料，不把第三方镜像或本案图纸宣称为已满足该标准的权威成果。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
@@ -29,7 +40,9 @@ iteration: "v1.0"
 
 三层工作用同一条问题链贯通：**谁会被数字门槛挡在外面，哪一种空间接口能消除门槛，哪一种产业测试能证明接口可靠，谁在故障时接管？** 统筹研究范围约 43.6 平方公里，负责把“无门槛 AI”转译为产业标准、人才与区域协同；总体设计范围约 11.4 平方公里，负责形成一条南北公共脊、六条东西缝合廊和十二个可达节点；三处重点区域约 368.4 公顷，分别验证研发端、社区端和消费商务端的接口。[source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]
 
-总体空间结构为 **“一脊、三室、六桥、十二站”**。一脊是沿京张遗址公园组织的无门槛公共服务与文化慢行脊；三室是众智园“互操作测试室”、AI 原点社区“共创学习室”、大钟寺“日常服务发布室”；六桥是方向性的东西步行、骑行和服务缝合关系，不代表新增道路或桥隧工程；十二站承载场景卡、人工帮助、纸质信息、静态导视与自愿数字增强。[data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:scenario_node_count] [depth:overall_spatial_structure]
+总体空间结构为 **“一脊、三室、六桥、十二站”**。一脊是沿京张遗址公园组织的无门槛公共服务与文化慢行脊；三室是众智园“互操作测试室”、AI 原点社区“共创学习室”、大钟寺“日常服务发布室”；六桥是方向性的东西步行、骑行和服务缝合关系，不代表新增道路或桥隧工程；十二站承载场景卡、人工帮助、纸质信息、静态导视与自愿数字增强。[data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:scenario_node_count]
+
+上述空间关系对应本包的总体空间结构设计深度。[depth:overall_spatial_structure]
 
 ![空间结构与用地传导：一脊三室六桥十二站](assets/figures/land-use-structure.png)
 
@@ -127,7 +140,9 @@ iteration: "v1.0"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-中央蓝绿公共脊将京张遗址公园从“展示背景”转成日常公共接口：连续通行面承担 L0，树荫与安静花园承载停留，十二个场景节点承载可选择的 L1/L2。`green_space.geojson` 与 `public_space.geojson` 分别计算绿地和公共空间，不把 provisional boundary 视觉化为正式红线。[data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
+中央蓝绿公共脊将京张遗址公园从“展示背景”转成日常公共接口：连续通行面承担 L0，树荫与安静花园承载停留，十二个场景节点承载可选择的 L1/L2。`green_space.geojson` 与 `public_space.geojson` 分别计算绿地和公共空间，不把 provisional boundary 视觉化为正式红线。[data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio] [metric:public_space_ratio]
+
+这一组内容对应蓝绿与公共空间设计深度。[depth:blue_green_public_space]
 
 公共空间组件库包括：无需手机即可读的服务护照牌、纸质地图槽、触觉与高对比导视、可移动遮阴和座椅、人工帮助按钮、低位服务台、设备物理关闭位、失败记录墙和可替换荣誉模块。组件先进行使用者共测，再由景观、无障碍、文保、结构、消防和运维专业团队深化；涉及清河、小月河和京张遗址的任何施工必须等待相应控制资料。
 
@@ -150,7 +165,13 @@ iteration: "v1.0"
 
 ## 指标体系、面积复算与合规矩阵
 
-指标分三类：**可复算几何指标**来自 EPSG:4548 下的包内 GeoJSON；**任务完成度指标**来自场景、人物、案例和矩阵；**法定与工程指标**因资料缺失保持 unknown。核心可复算项为 [metric:site_area_sqm]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]、[metric:road_network_length_m]、[metric:land_use_zone_count]、[metric:key_area_count]、[metric:scenario_node_count] 与 [metric:phase_count]。其中 site area 只是对临时边界的包内复算，不能替代公告约面积或 official polygon。[depth:metrics_recalculation]
+指标分三类：**可复算几何指标**来自 EPSG:4548 下的包内 GeoJSON；**任务完成度指标**来自场景、人物、案例和矩阵；**法定与工程指标**因资料缺失保持 unknown。
+
+边界、建筑基底和绿地的核心可复算项为 [metric:site_area_sqm]、[metric:building_footprint_area_sqm] 与 [metric:green_ratio]。
+
+公共空间、概念路网和用地分区的核心可复算项为 [metric:public_space_ratio]、[metric:road_network_length_m] 与 [metric:land_use_zone_count]。
+
+重点区、场景节点和分期的核心可复算项为 [metric:key_area_count]、[metric:scenario_node_count] 与 [metric:phase_count]。其中 site area 只是对临时边界的包内复算，不能替代公告约面积或 official polygon。[depth:metrics_recalculation]
 
 ![指标、证据链、未知项与自检状态](assets/figures/metrics-evidence.png)
 
@@ -166,6 +187,16 @@ iteration: "v1.0"
 
 ## 参考资料
 
-项目主控资料为官方公告、面向智能体任务书、本地专业标准快照、site package、source registry 和 processed fact pack。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] 空间替代数据为明确限制用途的 provisional boundary。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
+项目主控资料包括官方公告、面向智能体任务书和本地专业标准快照。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
-无门槛设计依据包括国务院办公厅适老智能技术实施方案、无障碍环境建设法、个人信息保护法相关官方说明和 WCAG 2.2。[source:SMART-ELDERLY-2020] [source:ACCESSIBILITY-LAW-2023] [source:PIPL-AUTOMATED-DECISION] [source:W3C-WCAG22] 国际比较为 one-north、Kendall Square、STATION F、Smart Kalasatama、Quayside 与 Barcelona 22@；均只支撑机制借鉴，不支撑北京本地边界、容量、投资或成效结论。[source:CASE-ONE-NORTH] [source:CASE-KENDALL] [source:CASE-STATION-F] [source:CASE-KALASATAMA] [source:CASE-QUAYSIDE] [source:CASE-BARCELONA22]
+资料状态与处理事实以 source registry 和 processed fact pack 为准。[source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
+
+空间替代数据为明确限制用途的 provisional boundary。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
+
+无门槛设计依据包括国务院办公厅适老智能技术实施方案、无障碍环境建设法和个人信息保护法相关官方说明。[source:SMART-ELDERLY-2020] [source:ACCESSIBILITY-LAW-2023] [source:PIPL-AUTOMATED-DECISION]
+
+WCAG 2.2 作为国际可访问性参照。[source:W3C-WCAG22]
+
+国际比较首先覆盖 one-north、Kendall Square 与 STATION F。[source:CASE-ONE-NORTH] [source:CASE-KENDALL] [source:CASE-STATION-F]
+
+对照组同时包括 Smart Kalasatama、Quayside 与 Barcelona 22@；全部案例只支撑机制借鉴，不支撑北京本地边界、容量、投资或成效结论。[source:CASE-KALASATAMA] [source:CASE-QUAYSIDE] [source:CASE-BARCELONA22]
