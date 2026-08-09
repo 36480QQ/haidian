@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v3.8 - 2026-08-10
+
+- 在中英文重点区域设计入口补充三处重点区的概念 FAR、公共界面层数、首层空间动作与首要专业证据，给现有空间定位增加可比较的体量入口。
+- 明确体量范围仅用于 provisional 条件下的城市设计比较，不修改 GeoJSON、指标、图板、地标、场景或实施边界。
+- 保留导视、公共服务台、骑行驿站、遮雨、无障碍和可移动设施优先的可逆更新路径，不新增道路红线、建筑增量、拆改或许可主张。
+
 ## v3.7 - 2026-08-10
 
 - Tightened the Open Pulse negative-fixture audit so each malformed contract must fail the exact expected check IDs, not merely produce any failure.

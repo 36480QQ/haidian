@@ -149,6 +149,20 @@ Dazhongsi is an urban, internationally legible AI service and enterprise distric
 
 Each key-area polygon is provisional and each node proposal is a concept for professional refinement. The node-level decision record is mapped to `[data:geometry/key_areas.geojson#PROV-KEY-001]`, `#PROV-KEY-002`, and `#PROV-KEY-003`.
 
+### Conceptual Massing and Public Interfaces for the Three Key Areas
+
+The three key areas already have functions and spatial actions, but they also need a professional comparison entry for scale. The ledger below gives conceptual intensity and ground-floor interface ranges only; it does not change the geometry or turn provisional areas into regulatory controls.
+
+| Key area | Public ground-floor choice | Conceptual intensity | Public-facing height | First professional evidence to collect |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan AI Autonomous Innovation Acceleration Zone | Layer Qinghe public space, R&D display, cycle shelter and enclosed testing; do not expose models or personal data at the public edge | FAR 1.2–1.8 for design comparison only | 2–4 storeys; upper height unknown | Existing buildings, ownership, flood/blue-line, fire, energy and enterprise OD |
+| Beijing AI Origin Community | Stitch campus, enterprise and neighbourhood walking; put open publishing, talent service and human entry at an accessible ground floor | FAR 1.0–1.5 for design comparison only | 2–3 storeys; upper height unknown | Accessibility walk, resident/student service baseline, ownership, care and night safety |
+| Dazhongsi AI Industry Cluster | Separate station, four-quadrant walking, international presentation and retail/service edges; keep data display away from quiet residential frontage | FAR 0.8–1.3 for design comparison only | 1–3 storeys; upper height unknown | Station flow, road/curb counts, fire, municipal, ownership and event-day organisation |
+
+FAR and storeys are conceptual ranges under the provisional boundary, not statutory building scale, planning conditions, permits or construction commitments. A formal scheme must recalculate them after regulatory-plan, survey, ownership, fire, structural, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
+
+Until then, renewal prioritises wayfinding, staffed service, cycle shelter, weather seats, accessible ramps and movable equipment; no road redline, building increment or demolition conclusion follows [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path.
