@@ -114,3 +114,16 @@ Key risks are provisional-boundary precision, missing statutory controls, unknow
 - `data/processed/agent_fact_pack.md`
 - `scenarios/*.json`
 - Structured evidence: [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [depth:metrics_recalculation], [data:geometry/site_boundary.geojson#SITE-001], [metric:site_area_sqm]
+
+
+## Scenario Accountability Cards (English Companion)
+
+Each of the 13 Chinese primary scenario cards now states users, place, conceptual operator, minimum-data rule, human review, pilot KPI, and stop/correction gate. Three priority validation scenes are the safety-governance sandbox, edge-computing stop, and data-elements compliance room. No AI output enters public action without an accountable human decision. Elderly, child, disabled, and non-digital users retain staffed and paper-based alternatives.
+
+## Regional Collaboration Network
+
+The proposal adds testable interfaces with Haidian open-source communities including Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, and Tianjin/Zhangjiakou nodes. Proposed actions include a yearly cross-region opportunity list, at least four reviewable joint-pilot proposals, and one public failure/correction report. All collaboration remains `proposed/pending_confirmation` until formal agreements exist.
+
+## Original Identity System
+
+The participant-generated mark transforms two railway tracks into an AI data-light ribbon. Railway gray `#263447`, AI indigo `#4D3FC7`, Zhongguancun green `#218C63`, and milestone gold `#C38D35` are used consistently across bilingual figures and drawings. This mark is not an official government or project identity.
