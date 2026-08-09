@@ -8,9 +8,9 @@
 
 AI 朝圣·铁轨新生带 V2 将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
 
-本轮以 2026 年 8 月 6 日京张铁路遗址公园二期已开放的公开报道为现实起点：连续绿廊、基础慢行、全龄活动与遗产再利用不再被包装成待建成果。新增 Built-Park Delta Protocol，要求任何 AI 增量先与非 AI 现状基线比较，并具备最小占用、停止恢复、社区共测和独立复测；`site-grounding-register.json` 保存桌面研究边界，`pilot-readiness-register.json` 把八个项目和三个先行试点转成可交接的概念责任合同。全部节点仍处于 G0，现场审计完成数为 0，临时边界和所有设计不得用于审批或工程实施。
+本轮继续以 2026 年 8 月 6 日京张铁路遗址公园二期已开放的公开报道为现实起点，不增加新的空间规划。`g1-preregistration-register.json` 把 12 个既有场景补成可执行但尚未执行的首测合同，逐项锁定同任务非 AI 对照、唯一主指标及分母、采样与时间窗、无伤害硬门、停止恢复、独立复测和版本；中英文主稿、HTML、核心图及 A3/A0 同步呈现“12/12 文档覆盖、0 完成预注册、0 获批窗口、0 现场执行、0 已知结果”。全部节点仍处于 G0，临时边界和所有设计不得用于审批或工程实施。
 
-Jing-Zhang V2 treats the corridor as an auditable public AI innovation production line: problems enter from the Xiaoyue River wing, co-creation occurs in the AI Origin Community, validation occurs at Zhongzhiyuan, release and staffed service occur at Dazhongsi, and public feedback returns to the next annual cycle. This increment starts from public reporting that Phase II of the heritage park opened on 6 August 2026. The Built-Park Delta Protocol requires every AI increment to outperform a non-AI baseline without displacing everyday public life and to remain stoppable, recoverable, community-tested, and independently retestable. All nodes remain G0 concepts, completed field audits remain 0, and provisional geometry and design outputs are not approval or engineering evidence.
+Jing-Zhang V2 treats the corridor as an auditable public AI innovation production line. This increment adds no new spatial plan. `g1-preregistration-register.json` turns the 12 existing scenes into executable-but-unexecuted first-test contracts that lock the same-task non-AI comparator, one primary metric and denominator, sample and collection windows, no-harm gates, stop and recovery, independent retesting, and versioning. The Chinese and English proposals, HTML, core figures, and A3/A0 outputs all show the same evidence state: 12/12 document coverage, 0 completed preregistrations, 0 approved windows, 0 field executions, and 0 known results. Every node remains at G0, and provisional geometry and design outputs are not approval or engineering evidence.
 
 ## 本次增量状态 / Current increment status
 
@@ -18,19 +18,27 @@ Jing-Zhang V2 treats the corridor as an auditable public AI innovation productio
 >
 > This section records the current increment before a trusted GitHub check exists. It inherits none of the `[x]` items in the historical `e71ff206…` snapshot below. Only trusted `submission-validation` on the final PR head can close the last item.
 
-- [x] 公开网页桌面研究有来源、日期、内容摘要哈希、允许/禁用用途和 `field_verification_required`；未声称实地踏勘。
-- [x] 8 个更新项目与 3 个先行试点均有概念级责任、审批触发、禁止数据、停机恢复、社区共测和独立复测字段。
-- [x] 中英文正文、离线报告与视觉首页已同步现实基线、设计增量和 `unknown` 边界。
-- [x] 最终 manifest 覆盖全部包文件，所有非 manifest SHA-256 与暂存/提交 Git blob 匹配。
+- [x] 12 个既有场景均有 G1 预注册结构，包含同任务对照、主指标、分母、采样、时间窗、停止恢复、独立复测和版本字段。
+- [x] 中英文正文、离线报告、视觉首页和 A3/A0 均同步“字段覆盖不是结果”的边界。
+- [x] 已完成预注册、获批窗口、现场执行和已知结果保持为 0；全部场景保持 G0。
+- [x] 最终 manifest 覆盖 52 个包文件，所有 51 个非 manifest SHA-256 与暂存/提交 Git blob 匹配。
 - [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 本地通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
-- [x] Public-web desk research records sources, dates, content digests, permitted/prohibited uses, and `field_verification_required`, without claiming a site visit.
-- [x] All 8 renewal projects and 3 priority pilots record conceptual responsibility, approval triggers, prohibited data, shutdown/recovery, community co-testing, and independent retesting.
-- [x] Chinese and English narratives, offline reports, and visual homepages align on the built baseline, design increment, and `unknown` boundaries.
-- [x] The final manifest covers every package file, and every non-manifest SHA-256 matches the staged/committed Git blob.
+- [x] All 12 existing scenes have a G1 preregistration structure covering the same-task comparator, primary metric, denominator, sampling, window, stop/recovery, independent retest, and version fields.
+- [x] Chinese and English narratives, offline reports, visual homepages, and A3/A0 outputs align on the boundary that field coverage is not a result.
+- [x] Completed preregistrations, approved windows, field executions, and known results remain 0; every scene remains at G0.
+- [x] The final manifest covers 52 package files, and all 51 non-manifest SHA-256 values match the staged/committed Git blobs.
 - [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass locally.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
+
+## 本次 PDF 重生记录 / Current PDF regeneration record
+
+本次 PDF 的实际生成窗口为 2026-08-09T10:28:58–10:34:16Z：英文 A0 于 10:28:58–10:28:59Z、英文 A3 于 10:30:05–10:30:06Z；中文 A3 于 10:30:06Z，中文 A0 最终输出于 10:34:15–10:34:16Z。四份展示 PDF（中文与英文 A3 文册、A0 展板）均从该轮的 `proposal.md`、`proposal.en.md` 及当前七组中英文图件重新生成。内容保留 T-02 的五问离线协议、三组场景与空间接口边界；这只是文件重生与版式输出，不证明现实执行。T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
+
+The actual PDF generation window was 2026-08-09T10:28:58–10:34:16Z: English A0 ran at 10:28:58–10:28:59Z and English A3 at 10:30:05–10:30:06Z; Chinese A3 ran at 10:30:06Z and the final Chinese A0 output at 10:34:15–10:34:16Z. All four display PDFs (Chinese and English A3 booklets and A0 boards) were regenerated from the pass-current `proposal.md`, `proposal.en.md`, and seven paired figure sets. They retain the T-02 five-question offline protocol plus the three scenario groups and spatial-interface boundaries. This records file regeneration and layout output only, not real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
+
+Reproduction entry: `python scripts/backfill_bilingual_artifacts.py pdfs --repo-root . --only jingzhang-ai-pilgrimage-belt`. On this Windows runner, its existing `backfill_pdfs` implementation was invoked in a one-off process with `FONT_PATHS=[C:\\Windows\\Fonts\\ARIALUNI.ttf]`, because the checked-in list contains macOS-only font locations; no repository script was changed. The Chinese pass used the same generator against a temporary package mirror with a copied current proposal and hard-linked current figures under their original names, then removed that mirror. Future source or figure changes require a new regeneration and validation; this record makes no inheritance or field-success claim.
 
 ## 不可变验证证据 / Immutable validation evidence
 
