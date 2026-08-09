@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c17d3a0948df082dfc1d7759a759d84c12c30eaa274c8f3e53822ed93065256d"
+      "sha256": "9812b5253f7238fc9748694b2717c6bade60314a00bbbea59e6db324180c0d78"
     },
     {
       "path": "compliance_matrix.json",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e5391e95f2d85660afb6925cbf674c913e93cc69afd7cea7c3dad4af226319da"
+      "sha256": "c61bc3553885a420435f945de7e49e8eb12ac4dafac213a05dc7aa4a3f54f892"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -580,6 +580,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "medium"
   }
