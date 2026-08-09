@@ -965,7 +965,19 @@ Launching the first trial needs an agreement, not only a proposal. This document
 
 Operation is organised by **re-survey cycle rather than festival calendar**, which makes events governance actions rather than publicity: monthly community re-survey days at third-order points led by P4, P5 and P7; quarterly scenario open days at second-order points led by P2 and P3; semi-annual route re-survey led by professional bodies with all four review categories present; and the annual zeroing ceremony at L3. Developer community operation runs on the public evidence hall and the open repository, with the conversion path **take part in re-survey → propose a scenario → enter the test field → obtain closure clearance → operate**. International communication uses published readings as its material, never commitments. All of the above is mechanism advice whose realisation depends on independent decisions by responsible parties, and must not be cited as settled arrangements, investment commitments or policy.
 
+
 ## Metrics, Area Recalculation, and Compliance Matrix
+
+**A note on the confidence grades, because without it they look self-contradicting.** This package carries `high`, `medium`, `low` and `unknown` side by side while its spatial basis is a provisional boundary — a combination other packages in this call have repeatedly been marked down for. The rule here is whether the number depends on the provisional boundary being right:
+
+| Confidence | Metrics | Why |
+|---|---|---|
+| `high` | `key_area_count`, `benchmark_count` | Pure counts. They count features in shipped files and do not depend on the boundary being accurate — move the whole boundary and the counts do not change |
+| `medium` | Areas, lengths, every ratio | Exactly recomputable, but their *meaning* depends on the provisional boundary approximating the official one. Recomputed as a whole when official polygons appear |
+| `low` | `building_footprint_area_sqm` | Indicative positions, order of magnitude only; not a basis for any area claim |
+| `unknown` | `floor_area_ratio` | Depends on official FAR controls and the redline, neither published, so `value: null` rather than an estimate |
+
+**Package-level `data_confidence` is `medium`.** The manifest previously said `medium` at the top level and `high` inside `validation_claim` — two package-level confidences disagreeing inside one file. They now agree, at `medium`, because nearly every published figure here belongs to the second row: computed exactly, on a boundary that is not the official one.
 
 Metrics fall in three classes, held in `metrics.json`, `assumptions.json` and `compliance_matrix.json` respectively [depth:metrics_recalculation].
 
