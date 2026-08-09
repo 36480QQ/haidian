@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "path": "brief/site-package/standards/references/project-official-announcement.md",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "source_type": "official_public",
+      "source_registry_class": "usable_for_formal",
+      "usage": "公告 1.3、1.4、1.5 的任务、范围与成果语境；以仓库本地快照复核。",
+      "license_or_reuse": "公开政策信息；仅作事实与任务引用。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "local_reference_path": "brief/site-package/standards/references/agent-open-call-taskbook-0518.md",
+      "publisher": "用户提供清权任务书摘录",
+      "source_type": "user_provided_cleared",
+      "source_registry_class": "usable_for_formal",
+      "usage": "六项智能体任务、三区两翼、共创原则、场景与运营要求。",
+      "license_or_reuse": "用户提供清权摘要，仅用于本征集投稿。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "publisher": "项目仓库",
+      "source_type": "repository_public_registry",
+      "source_registry_class": "usable_for_formal",
+      "usage": "核验 usable_for_formal、background_only、provisional_only、no 的用途边界。",
+      "license_or_reuse": "仓库公开元数据。"
+    },
+    {
+      "id": "BOUNDARY-PROVISIONAL",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "publisher": "项目仓库",
+      "source_type": "agent_inferred_from_public_data",
+      "source_registry_class": "provisional_only",
+      "usage": "临时粗略范围与三处重点区域，仅作展示、图层计算与自检约束。不得升级为正式红线或精确面积依据。",
+      "license_or_reuse": "项目提供的公开推定几何；需在官方 geometry 到位后替换。"
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
+      "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2023/art_17339_775476.html",
+      "publisher": "住房和城乡建设部",
+      "source_type": "official_public",
+      "source_registry_class": "usable_for_formal",
+      "usage": "城市设计的公共空间、特色风貌与平立体统筹原则；以本地快照为依据。"
+    },
+    {
+      "id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
+      "url": "https://www.gov.cn/zhengce/2022-01/25/content_5711967.htm",
+      "publisher": "住房和城乡建设部",
+      "source_type": "official_public",
+      "source_registry_class": "usable_for_formal",
+      "usage": "区分法定控制条件、概念建议与待确认条件的边界。"
+    },
+    {
+      "id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
+      "url": "https://www.gov.cn/zhengce/zhengceku/202311/content_6917279.htm",
+      "publisher": "自然资源部",
+      "source_type": "official_public",
+      "source_registry_class": "usable_for_formal",
+      "usage": "概念用地结构的可校验分类代码，不替代法定用地性质。"
+    },
+    {
+      "id": "IMF-AI-JOBS-2024",
+      "url": "https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity",
+      "publisher": "International Monetary Fund",
+      "published_or_accessed": "2024-01-14",
+      "source_type": "primary_international_research",
+      "source_registry_class": "background_only",
+      "usage": "作为“岗位受 AI 影响”风险背景；不推导本地就业人数、拆迁或财政结论。"
+    },
+    {
+      "id": "WEF-FUTURE-JOBS-2025",
+      "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces//",
+      "publisher": "World Economic Forum",
+      "published_or_accessed": "2025-01",
+      "source_type": "primary_international_research",
+      "source_registry_class": "background_only",
+      "usage": "作为雇主预期自动化岗位调整的背景；不是本地裁员事实。"
+    },
+    {
+      "id": "BEIJING-DATACENTER-2024",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202411/t20241115_3942264.html",
+      "publisher": "北京市人民政府",
+      "published_or_accessed": "2024-11",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "算电协同的城市级政策背景：不把差别电价或 PUE 要求表述成对本项目的既定控制。"
+    },
+    {
+      "id": "BEIJING-COMPUTE-2024",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202405/t20240513_3817229.html",
+      "publisher": "北京市科学技术委员会、中关村科技园区管理委员会",
+      "published_or_accessed": "2024-05",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "新改扩建智算中心能效的背景材料；不作地块建设许可。"
+    },
+    {
+      "id": "BEIJING-HEAT-2022",
+      "url": "https://www.beijing.gov.cn/gongkai/guihua/wngh/sjzdzxgh/202204/t20220412_2672524.html",
+      "publisher": "北京市人民政府",
+      "published_or_accessed": "2022-04",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "数据中心余热回收作为可研究的城市级方向；不构成工程可行性或供热承诺。"
+    },
+    {
+      "id": "HAIDIAN-AI-TALENT-2026",
+      "url": "https://news.bjd.com.cn/2026/03/29/11657762.shtml",
+      "publisher": "北京日报客户端",
+      "published_or_accessed": "2026-03-29",
+      "source_type": "media_report",
+      "source_registry_class": "background_only",
+      "usage": "95,000 AI 人才的媒体报道背景，仅用于解释身心健康与夜间服务议题，需另行核验。"
+    },
+    {
+      "id": "CASE-HELSINKI-3D",
+      "url": "https://www.hel.fi/en/decision-making/information-on-helsinki/maps-and-geospatial-data/helsinki-3d",
+      "publisher": "City of Helsinki",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "开放三维城市与数字孪生的比较案例。"
+    },
+    {
+      "id": "CASE-AMSTERDAM-TADA",
+      "url": "https://www.amsterdam.nl/innovatie/digitalisering-technologie/data/tada-waarden/",
+      "publisher": "City of Amsterdam",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "人本、可控、透明数据使用的比较案例。"
+    },
+    {
+      "id": "CASE-BARCELONA-DECODE",
+      "url": "https://bcnroc.ajuntament.barcelona.cat/jspui/bitstream/11703/115018/1/pla_barcelona_digital_city_in.pdf",
+      "publisher": "Barcelona City Council",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "公共数据与市民权利的比较案例。"
+    },
+    {
+      "id": "CASE-SINGAPORE-SENIORS",
+      "url": "https://www.digitalforlife.gov.sg/About/Our-Projects/Seniors-Go-Digital",
+      "publisher": "Digital for Life, Singapore",
+      "source_type": "official_public",
+      "source_registry_class": "background_only",
+      "usage": "数字包容与老年学习服务的比较案例。"
+    }
+  ]
+}

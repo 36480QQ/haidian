@@ -1,0 +1,1270 @@
+{
+  "schema_version": "0.1.0",
+  "requirements": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "构建世界级 AI 创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "建设适配 AI 新质生产力的新型城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "打造全球 AI 创新人才向往的高品质城区",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "统筹研究范围",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "总体设计范围",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "重点区域详细设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "AI 全栈自主创新体系",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "世界级 AI 创新生态",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "AI+ 场景赋能新范式",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "智能化 AI 活力城市",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "AI 治理全球话语权",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "高品质城区与公共服务",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "城市设计与空间统筹",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "正式成果完整性与表达要求",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "规划与城市设计成果",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "重点区域详细设计成果",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "AI 智能体共创成果",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "一带总体概念与功能统筹方案设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "AI 全栈自主创新体系与世界级 AI 创新生态设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "AI+ 场景赋能新范式与智能化 AI 活力城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "AI 治理、城市品牌与国际传播设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "实施运营与城市更新机制设计",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "成果可读性、开源性与合规表达",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "land_use_coverage_ratio",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "AI 场景",
+        "核心指标",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "BOUNDARY-PROVISIONAL",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-DATA-GOVERNANCE-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_DISCLOSURE",
+        "LAND_USE_TOPOLOGY",
+        "METRICS_EPSG4548",
+        "OFFLINE_VISUAL"
+      ],
+      "evidence_summary_zh": "以中文主方案、离线图面、概念空间图层、EPSG:4548 复算指标与风险假设共同回应；不把临时边界升级为法定控制。"
+    }
+  ]
+}

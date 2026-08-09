@@ -1,0 +1,211 @@
+{
+  "type": "FeatureCollection",
+  "name": "conceptual_public_service_nodes",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-01",
+      "properties": {
+        "id": "PUBLIC-01",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "社区回迁协商厅",
+        "statement_zh": "概念公共空间节点，保留人工服务与无障碍替代路径的研究接口。",
+        "area_sqm_declared": 20493.929
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3422,
+              39.959
+            ],
+            [
+              116.3422,
+              39.9602
+            ],
+            [
+              116.344,
+              39.9602
+            ],
+            [
+              116.344,
+              39.959
+            ],
+            [
+              116.3422,
+              39.959
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-02",
+      "properties": {
+        "id": "PUBLIC-02",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "技能再造客厅",
+        "statement_zh": "概念公共空间节点，保留人工服务与无障碍替代路径的研究接口。",
+        "area_sqm_declared": 21913.622
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3501,
+              39.97
+            ],
+            [
+              116.3501,
+              39.9711
+            ],
+            [
+              116.3522,
+              39.9711
+            ],
+            [
+              116.3522,
+              39.97
+            ],
+            [
+              116.3501,
+              39.97
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-03",
+      "properties": {
+        "id": "PUBLIC-03",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "代际共学庭",
+        "statement_zh": "概念公共空间节点，保留人工服务与无障碍替代路径的研究接口。",
+        "area_sqm_declared": 26553.894
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347,
+              39.991
+            ],
+            [
+              116.347,
+              39.9924
+            ],
+            [
+              116.349,
+              39.9924
+            ],
+            [
+              116.349,
+              39.991
+            ],
+            [
+              116.347,
+              39.991
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-04",
+      "properties": {
+        "id": "PUBLIC-04",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "夜班服务站",
+        "statement_zh": "概念公共空间节点，保留人工服务与无障碍替代路径的研究接口。",
+        "area_sqm_declared": 28348.459
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3422,
+              40.009
+            ],
+            [
+              116.3422,
+              40.0103
+            ],
+            [
+              116.3445,
+              40.0103
+            ],
+            [
+              116.3445,
+              40.009
+            ],
+            [
+              116.3422,
+              40.009
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-05",
+      "properties": {
+        "id": "PUBLIC-05",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "layer": "PUBLIC_SPACE",
+        "name_zh": "国际化一站式客厅",
+        "statement_zh": "概念公共空间节点，保留人工服务与无障碍替代路径的研究接口。",
+        "area_sqm_declared": 26163.633
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3492,
+              40.02
+            ],
+            [
+              116.3492,
+              40.0212
+            ],
+            [
+              116.3515,
+              40.0212
+            ],
+            [
+              116.3515,
+              40.02
+            ],
+            [
+              116.3492,
+              40.02
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

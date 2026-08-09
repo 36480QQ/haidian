@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary has official_boundary=false and provisional_constraint labels in geometry, proposal, sources, assumptions and visual page."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Shared-cut partition is designed to cover the submitted boundary without gaps or overlaps; spatial review recomputes this."
+    },
+    {
+      "check_id": "METRICS_EPSG4548",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Known areas and ratios are recalculated from submitted GeoJSON in EPSG:4548; unknown controls remain null."
+    },
+    {
+      "check_id": "OFFLINE_VISUAL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Visualization is a static local HTML package with no CDN, remote media or network requests."
+    },
+    {
+      "check_id": "SOURCE_CLASSIFICATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "Formal, background and provisional materials are distinguished; context sources are not upgraded to formal planning evidence."
+    }
+  ]
+}

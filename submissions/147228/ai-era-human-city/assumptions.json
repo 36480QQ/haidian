@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional_constraint",
+      "statement": "公开包未提供官方精确总体设计范围红线；提交几何来自仓库粗略替代边界，official_boundary=false。",
+      "impact": "所有面积为 EPSG:4548 图层复算值，不能用于法定面积、审批或地块控制。",
+      "next_action": "取得官方可公开 geometry 后替换 site_boundary、key_areas、land_use 并重新运行空间自检。"
+    },
+    {
+      "id": "A-KEY-AREAS-001",
+      "status": "provisional_constraint",
+      "statement": "三处重点区域没有公开精确四至；暂用仓库提供的推定 polygon。",
+      "impact": "只支撑概念性节点布置，不能解释为重点区域法定边界。",
+      "next_action": "由主办方或专业团队提供经授权范围后深化。"
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "控规指标、道路红线、权属、既有建筑、管线、轨道站点和保护要素均未以可核验正式附件提供。",
+      "impact": "不输出容积率、建筑高度、具体拆改留、工程可行性和投资承诺。",
+      "next_action": "以正式控规、测绘、权属、管综和专项评估逐项复核。"
+    },
+    {
+      "id": "A-ENERGY-001",
+      "status": "background_policy_only",
+      "statement": "北京数据中心能效与绿电政策为城市级背景，不证明本项目存在数据中心、热网条件或适用控制。",
+      "impact": "PUE、绿电、余热接口仅被提出为可研究的协同门槛与验证问题。",
+      "next_action": "取得负荷、供电、热网、碳排与选址资料后开展专项论证。"
+    },
+    {
+      "id": "A-CLIMATE-001",
+      "status": "data_gap",
+      "statement": "未取得小月河断面、行洪、水文、地形和海绵设施现状资料。",
+      "impact": "蓝绿系统仅表达风险缓冲与模拟接口，不能替代防洪、排水或工程设计。",
+      "next_action": "以水文模型、地形测绘和部门审查资料校验。"
+    },
+    {
+      "id": "A-TRAFFIC-001",
+      "status": "data_gap",
+      "statement": "未取得交通流、轨道客流、路权、低空管理和机器人测试许可资料。",
+      "impact": "人机混行、低空物流、夜间接驳均为监管沙盒建议。",
+      "next_action": "由交通、公安、民航和运营主体进行安全、责任与许可评估。"
+    },
+    {
+      "id": "A-DATA-GOVERNANCE-001",
+      "status": "pending_authorization",
+      "statement": "市政设施、个人数据和公共数据的目录、授权边界、脱敏规则与责任分工未被提供。",
+      "impact": "城市 API 与数字孪生只表达治理架构，不连接或声称拥有任何真实数据。",
+      "next_action": "建立授权、最小必要、日志、申诉和人工兜底机制后再试点。"
+    }
+  ]
+}
