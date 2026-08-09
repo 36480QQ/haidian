@@ -554,6 +554,29 @@ The point is the third one **refusing to accept a record's own conclusions**. It
 
 `verify.js` shows that this proposal's **numbers** can be independently recomputed. `check_closure.js` shows that its **mechanism** can be independently executed. A proposal claiming to adjudicate trust should be able to produce both.
 
+#### The run that has already happened: `node visual/assets/run_s08_tabletop.js`
+
+A reader alone is still not enough. **It shows that a valid record passes; it does not show that an invalid one is refused** — and everything this proposal claims lives in the second. Rule 5 says local repair is unavailable; rule 7 says resumption takes two consecutive cycles. Claims like that are worth something only when the refusal can be demonstrated.
+
+So the mechanism was run. Eight cases, one per rule, each put through **the shipped reader itself** — `check_closure.js` spawned as a subprocess rather than a reimplementation — comparing the expected outcome with the actual one:
+
+| Case | Rule under test | Result |
+|---|---|---|
+| C1 within tolerance | f ≤ F is level for the cycle | accepted |
+| C2 over tolerance | f > F returns the whole route | accepted (the record states the return honestly) |
+| C3 worst station deleted | rule 5: no local repair | **refused**: fewer than three stations, two review parties |
+| C4 reading worsened, old f kept | a record does not state its own conclusion | **refused**: declares 0.13, recomputes 0.36 |
+| C5 homogeneous review parties | one kind of reader cannot see what it cannot see | **refused**: a single party across the circuit |
+| C6 non-AI path missing | otherwise the stop rule is circumvented | **refused** |
+| C7 resumption after one pass | rule 7: two consecutive cycles, once may be luck | **refused** |
+| C8 F1 resumption by majority | rule 7: unanimity across four parties, no majority rule | **refused** |
+
+**8/8 behaved as specified: 2 accepted, 6 refused.** The evidence ships as `visual/assets/s08-tabletop-evidence.json` and is re-runnable.
+
+**What it proves and what it does not have to be written separately.** It proves the decision logic is reproducible and that the refusal branches fire. It does **not** prove any field reading, any real review party, any service performance, or even that anyone would take a reading at all — the numbers are worked values chosen to exercise branches. Treating a tabletop as operational evidence is precisely the substitution this proposal argues against.
+
+(This section made its own mistake once. The runner initially printed the wrong expectation — it read a field that does not exist on the result object, so every line said `expected reject` even where the case expected acceptance. **A file whose entire job is honest reporting, misreporting what was expected.** Fixed, with the reason left in the code.)
+
 **Rule 8 is one this proposal cannot supply, and says so: closure error cannot measure whether something helps.**
 
 Closure error is a **consistency** criterion. It answers how much the conclusion differs across stations, conditions and jurisdictions. It does not answer the equally important question of whether the scenario is better than not having it. **A scenario that gives the same answer at every station, and whose answer is useless, passes this mechanism cleanly.** That is a boundary of the method, not a detail that could be tuned away.
