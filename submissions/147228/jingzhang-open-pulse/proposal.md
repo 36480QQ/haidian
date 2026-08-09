@@ -73,8 +73,23 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
-- 当前登记摘要：formal 可用资料 5 条，背景资料 0 条，provisional-only 资料 1 条。
+- 当前登记摘要：formal 可用资料 5 条，背景资料 4 条，provisional-only 资料 1 条；包内 sources.json 共登记 63 条来源。
 - agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
+
+### 行政尺度数据基线：只校准问题，不分配空间
+
+为避免“有完整审计、却没有现实问题锚点”，本版补充四条官方公开背景来源。它们全部标记为 `background_only`，只把行政尺度事实翻译成服务接口和走廊级补采问题；不进入 `metrics.json` 的空间控制、不替代现场基线，也不构成项目目标。[source:HAIDIAN-2025-STATISTICAL-BULLETIN] [source:NBS-2025-STATISTICAL-COMMUNIQUE]
+
+交通和高校服务记录另行作为接口校准，不把市级出行比例或单次活动人数转写为空间容量、客流或参与承诺。[source:BJTRC-2026-TRANSPORT-REPORT] [source:HAIDIAN-37-UNIVERSITIES-SERVICE-NEEDS] [data:visual/assets/territorial-data-baseline.json#baseline-01-haidian-innovation-and-service]
+
+| 事实尺度与公开观察 | 对方案的空间/运营翻译 | 明确不能推导 |
+| --- | --- | --- |
+| 海淀 2025 年有 92 家在区全国重点实验室、123 款备案上线大模型、每万人 599 件高价值发明专利、5.79 万项技术合同和 4053.1 亿元成交额；医疗卫生机构 1456 个、社区卫生服务中心（站）239 个。[source:HAIDIAN-2025-STATISTICAL-BULLETIN] | 三核不做泛孵化展厅：众智园优先标准/模型安全验证，AI 原点优先成果转化、权利/IP 和公共服务门诊，大钟寺优先可退出的城市体验与公开回执。 | 不证明这些资源位于京张走廊、会参与方案、形成客流或可确定设施容量；医疗数据不用于诊断或设施选址。 |
+| 全国 2025 年每万人高价值发明专利 16 件、技术合同成交额 75734 亿元、研发经费 39262 亿元。[source:NBS-2025-STATISTICAL-COMMUNIQUE] | 只作为创新叙事的数量级对照，把评价重点放在验证质量、权责、负面证据和复用转化，而不是排名或增长承诺。 | 行政层级、机构归属和统计口径不可假定完全可比，不生成海淀或京张绩效目标。 |
+| 北京中心城区 2025 年工作日出行约 3924 万人次，绿色出行 76.5%，轨道/公交/自行车占比分别为 15.0%/8.9%/22.3%。[source:BJTRC-2026-TRANSPORT-REPORT] | 将轨道接驳、步行和骑行放在公共界面第一位；先对最后 300—800 米做小规模、分时、有人值守和可停止测试，再考虑活动或路线扩展。 | 不提供京张站点 OD、交叉口安全、停车需求、容量或道路工程结论；OSM 与市级统计仍须由走廊实测替换。 |
+| 海淀一次公开高校服务活动涉及 37 所驻区高校、约 130 名参与者。[source:HAIDIAN-37-UNIVERSITIES-SERVICE-NEEDS] | AI 原点设置预约式成果转化门诊，先覆盖实验室/特种设备安全、知识产权、资产运营和成果转化的人工与纸面接口。 | 单次活动不证明 37 所高校需求相同、已同意参与、存在固定合作关系或定义服务规模。 |
+
+四条记录的原始链接、访问日期、统计范围、观察值、转换方式和禁用推断见 `sources.json` 与 `visual/assets/territorial-data-baseline.json`；它们把“背景事实—设计动作—数据缺口”连成可回读链，而不把行政统计伪装成空间现状。[data:visual/assets/territorial-data-baseline.json#baseline-03-transport-context]
 
 `data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源。[source:PROCESSED-FACT-PACK] 只帮助 agent 组织三层范围、三处重点区和缺资料事项。
 
@@ -124,7 +139,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-本次提交按控制性详细规划的城市设计深度组织总体范围：用地层表达八类不重叠的临时设计多边形，建筑层细化为 [metric:building_unit_count] 个概念单元，绿地层细化为 [metric:green_segment_count] 个连续段，公共空间层表达 [metric:public_space_polygon_count] 个公共空间室和 [metric:public_scenario_node_count] 个场景锚点；roads、constraints 和 [data:geometry/phasing.geojson#PHASE-001] 共同表达微循环、慢行、待核专业接口和分期关系。既有建筑基底、绿地率和公共空间率保持不变；更新项目清单、实施政策建议、产业功能和承载力边界则在正文与矩阵中逐项说明。`metrics.json` 从这些图层复算面积、比例、数量和版本，不把 provisional 几何升级为法定控制。
+本次提交按控制性详细规划的城市设计深度组织总体范围：用地层表达 [metric:land_use_polygon_count] 个不重叠的临时设计多边形，建筑层细化为 [metric:building_unit_count] 个概念单元，绿地层细化为 [metric:green_segment_count] 个连续段，公共空间层表达 [metric:public_space_polygon_count] 个公共空间室和 [metric:public_scenario_node_count] 个场景锚点；roads、constraints 和 [data:geometry/phasing.geojson#PHASE-001] 共同表达微循环、慢行、待核专业接口和分期关系。既有建筑基底、绿地率和公共空间率保持不变；更新项目清单、实施政策建议、产业功能和承载力边界则在正文与矩阵中逐项说明。`metrics.json` 从这些图层复算面积、比例、数量和版本，不把 provisional 几何升级为法定控制。
 
 本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底。
 

@@ -1398,6 +1398,23 @@
       "hash_sha256": "14572b3e639d916fc5f0e86e01944a108ae36eec38b1d9ffe6b4ed52e0412629"
     },
     {
+      "path": "visual/assets/territorial-data-baseline.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conservative administrative-scale background evidence register; no remote asset fetch at render time",
+      "source_inputs": [
+        "official public statistical and service-event sources registered in sources.json",
+        "proposal.md and proposal.en.md",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Official public observations remain background_only and retain publisher attribution in sources.json; the design translations are authored by 许丙南 / Codex.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "c7c2ac982d910fbda708da26aa95889dd48ea18852e854e14211902e2dcd62c3"
+    },
+    {
       "path": "assets/figures/sustainability-timeseries.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
