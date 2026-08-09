@@ -1088,7 +1088,7 @@ Thirty entries. By finder:
 | Independent audit | 14 | The audit was run against the shipped package, not a draft |
 | The author | 13 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
-| **A reviewer outside this proposal** | **1** | @anselasimov-web, in PR #1002 |
+| **Reviewers outside this proposal** | **2** | @anselasimov-web in PR #1002; @147228 in PR #1065 |
 
 **One of the eight, E24, is the only entry where the check worked and the person did not**: `overflow_qa` reported the overflow and I pushed the commit anyway. A gate that reports to someone who commits regardless does the same nothing as a gate that does not report. That failing commit stays in the history rather than being amended away.
 
