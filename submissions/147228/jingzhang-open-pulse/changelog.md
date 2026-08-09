@@ -11,6 +11,7 @@
 - 清理正式 GeoJSON 元数据中的早期临时命名，改为明确的 provisional/conceptual Open Pulse 图层名；恢复英文图册的图像证据层并同步版权台账与 manifest 哈希，按当前文件回读页数（中英文 A3 各 10 页；中英文 A0 各 3 页）。
 - 刷新 `manifest.generated_at` 至本轮 v3.3 实质更新后的 UTC 时间，使公开展厅日期与当前包版本、changelog 和双语图纸元数据一致。
 - 将 manifest、agent card、版权声明与公开展厅使用的署名统一为“许丙南 / Codex”，避免机器可读审查包与展示署名分叉。
+- 收束参考资料区为“主公开简报 + 包内完整登记表”，保留正文的逐条 source/standard/depth/data/metric 回链，消除旧版引用自检对已登记附件路径的误报；同步离线中文 HTML 与 manifest 哈希。
 
 ## v3.2 - 2026-08-09
 
