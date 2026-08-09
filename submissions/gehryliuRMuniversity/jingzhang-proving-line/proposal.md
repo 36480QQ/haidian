@@ -205,7 +205,16 @@ iteration: "v1.0"
 
 ## 指标体系、面积复算与合规矩阵
 
-**结构性指标（方案建议值，基于临时边界推算）。**总体设计范围面积 [metric:site_area_sqm]（与公告11.4平方公里口径的差异属临时边界推算误差，以公告为准 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]）；绿地开敞空间面积 [metric:green_space_area_sqm] 与绿地率 [metric:green_ratio]——设计含义是让沿线居民与研发者在步行可达范围内接触绿廊，这是人才吸引力的空间基本盘；公共空间面积 [metric:public_space_area_sqm] 与公共空间率 [metric:public_space_ratio]——设计含义是保障验线"可见、可问、可停"具备物理承载。需要主动交代的语境：绿地率与公共空间率为完全建成区存量语境下、基于临时边界的推算值，主要由已建成绿廊与防护绿带贡献，不与新区绿地率指标直接可比，官方红线与控规发布后重算。代表性建筑基底面积 [metric:building_footprint_area_sqm]——表达布局意图而非开发总量；慢行网络总长 [metric:road_network_length_m]——一主两副五横的贯通度指标；重点区域数量 [metric:key_area_count] 与分期数量 [metric:phase_count]。全部面积在EPSG:4548投影下由图层几何复算，与 `metrics.json` 数值一致，展示页数值与其逐字对齐 [depth:metrics_recalculation]。
+**结构性指标（方案建议值，基于临时边界推算）。**逐项及其设计含义如下：
+
+- 总体设计范围面积 [metric:site_area_sqm]：与公告11.4平方公里口径的差异属临时边界推算误差，以公告为准 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。
+- 绿地开敞空间面积 [metric:green_space_area_sqm] 与绿地率 [metric:green_ratio]：设计含义是让沿线居民与研发者在步行可达范围内接触绿廊，这是人才吸引力的空间基本盘。
+- 公共空间面积 [metric:public_space_area_sqm] 与公共空间率 [metric:public_space_ratio]：设计含义是保障验线"可见、可问、可停"具备物理承载。
+- 代表性建筑基底面积 [metric:building_footprint_area_sqm]：表达布局意图而非开发总量。
+- 慢行网络总长 [metric:road_network_length_m]：一主两副五横的贯通度指标。
+- 重点区域数量 [metric:key_area_count] 与分期数量 [metric:phase_count]。
+
+需要主动交代的语境：绿地率与公共空间率为完全建成区存量语境下、基于临时边界的推算值，主要由已建成绿廊与防护绿带贡献，不与新区绿地率指标直接可比，官方红线与控规发布后重算。全部面积在EPSG:4548投影下由图层几何复算，与 `metrics.json` 数值一致，展示页数值与其逐字对齐 [depth:metrics_recalculation]。
 
 **公告点名指标（有口径、无数值）。**AI创新指数建议由技术策源（顶尖学者数、大模型备案数）、产业规模（核心产业规模）、场景开放度（验线年验证场景数与上线率）三维合成，赋值待官方统计口径确认；人才密度等于AI从业人数除以带内就业总人数，待就业底数发布；产值规模沿用官方产业统计口径 [source:SRC-HAIDIAN-AI-BASELINE]；开发强度类指标（容积率等）全部待官方控规 [metric:floor_area_ratio]，该项留白系因官方控规未发布，赋值触发条件已登记于 `assumptions.json`。
 
@@ -223,4 +232,14 @@ iteration: "v1.0"
 
 ## 参考资料
 
-本方案全部引用来源登记于 `sources.json` 并在正文逐处挂接，主要包括：官方公告与任务书 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518]；临时边界与结构化场地资料包 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [source:SITE-PACKAGE]；场地事实类来源，包括遗址公园一二期、清华园车站、轨道交通（拆分沿革与18号线开通）、大钟寺更新、学院路创新街区实践、AI原点社区、海淀产业底数与政策、京张史实与沿线文保 [source:SRC-PARK-PHASE1] [source:SRC-PARK-PHASE2-OPENING] [source:SRC-QINGHUAYUAN-STATION] [source:SRC-METRO-STATUS] [source:SRC-METRO-18-OPENING] [source:SRC-CPX-NANYAN] [source:SRC-DZS-RENEWAL] [source:SRC-XYL-INNOVATION] [source:SRC-AI-ORIGIN-COMMUNITY] [source:SRC-HAIDIAN-AI-BASELINE] [source:SRC-HAIDIAN-POLICY] [source:SRC-JZ-HISTORY] [source:SRC-JZ-HERITAGE-NATIONAL] [source:SRC-HERITAGE-TEMPLES]；全球案例来源 [source:SRC-CASE-STATIONF] [source:SRC-CASE-KENDALL] [source:SRC-CASE-ONENORTH] [source:SRC-CASE-KINGSCROSS] [source:SRC-CASE-PANGYO] [source:SRC-CASE-HETAO] [source:SRC-CASE-TORONTO] [source:SRC-CASE-KASHIWA]；专业标准 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。公开任务书草案 `brief/public-brief.md` 与公开资料索引 `sources/public-sources.json`、`docs/public-sources.md` 亦为本方案的基础参照 [source:SITE-PACKAGE]。各来源的发布机构、链接、获取日期、许可状态与用途限制以 `sources.json` 登记为准；其中标注"转引"的数据（如柏之叶能源削峰比例）仅作背景参考，不作为设计依据。全部15个设计深度项的证据定位见 `design_depth_matrix.json`，其中现状诊断 [depth:existing_conditions_diagnosis] 与三层范围 [depth:three_level_scope_framework] 等各项在对应章节均有机读引用可回溯。
+本方案全部引用来源登记于 `sources.json` 并在正文逐处挂接，按证据级别分组索引如下：
+
+- 官方公告与任务书：[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518]
+- 临时边界与结构化场地资料包：[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [source:SITE-PACKAGE]
+- 遗址公园与文化史实：[source:SRC-PARK-PHASE1] [source:SRC-PARK-PHASE2-OPENING] [source:SRC-QINGHUAYUAN-STATION] [source:SRC-JZ-HISTORY] [source:SRC-JZ-HERITAGE-NATIONAL] [source:SRC-HERITAGE-TEMPLES]
+- 轨道交通与片区更新：[source:SRC-METRO-STATUS] [source:SRC-METRO-18-OPENING] [source:SRC-CPX-NANYAN] [source:SRC-DZS-RENEWAL] [source:SRC-XYL-INNOVATION]
+- 产业底数与政策：[source:SRC-AI-ORIGIN-COMMUNITY] [source:SRC-HAIDIAN-AI-BASELINE] [source:SRC-HAIDIAN-POLICY]
+- 全球案例：[source:SRC-CASE-STATIONF] [source:SRC-CASE-KENDALL] [source:SRC-CASE-ONENORTH] [source:SRC-CASE-KINGSCROSS] [source:SRC-CASE-PANGYO] [source:SRC-CASE-HETAO] [source:SRC-CASE-TORONTO] [source:SRC-TORONTO-CLOSURE] [source:SRC-CASE-KASHIWA]
+- 专业标准：[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+
+各来源的发布机构、链接、获取日期、许可状态与用途限制以 `sources.json` 登记为准；标注"转引"的数据（如柏之叶能源削峰比例）仅作背景参考，不作为设计依据。公开任务书草案 `brief/public-brief.md` 与公开资料索引 `sources/public-sources.json`、`docs/public-sources.md` 亦为本方案的基础参照。全部15个设计深度项的证据定位见 `design_depth_matrix.json`，各项在对应章节均有机读引用可回溯。
