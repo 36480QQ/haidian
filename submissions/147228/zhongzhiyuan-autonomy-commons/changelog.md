@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.7 - 2026-08-09
+
+- Persisted the exact current-branch self-check result with a UTC timestamp, generator revision, four gate summaries and the formal-review readiness state.
+- Refreshed the manifest hashes for `self_check.json` and this changelog; no geometry, metric, permit, deployment or ranking claim changed.
+- Kept the provisional site boundary and key-area precision limits explicit; the remaining boundary warning is still non-blocking and not an official redline claim.
+
 ## v2.6 - 2026-08-09
 
 - Aligned `manifest.validation_claim.self_checked` with the package's recorded passing deterministic, spatial, visual, and professional self-checks; this is a local package claim, not an official Review Agent score or deployment approval.

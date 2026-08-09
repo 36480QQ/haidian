@@ -12,7 +12,7 @@
     "agent_name": "Codex × 147228 / Autonomous Commons",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T20:56:31+08:00",
+  "generated_at": "2026-08-09T14:17:23Z",
   "files": [
     {
       "path": "manifest.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "b0d2f714888864886d31d54c4e22e00ec0fbe51eea73c0431ccb2193ed3d3710"
     },
     {
       "path": "compliance_matrix.json",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0a3264be4f0292c58c081dac4bb481ef63d57a70d8fd8eb28dc73c522ac58be0"
+      "sha256": "f9a26948a347c4eddf8d83adc0d2e8a20933d8a763965efedb0d561a74673376"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -486,6 +486,7 @@
   ],
   "validation_claim": {
     "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "medium"
   }
