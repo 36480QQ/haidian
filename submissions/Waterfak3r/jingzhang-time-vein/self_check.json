@@ -36,5 +36,36 @@
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
     }
+  ],
+  "ok": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "can_enter_formal_review": true,
+  "next_actions": [],
+  "gates": [
+    {
+      "id": "deterministic_validation",
+      "ok": true,
+      "returncode": 0,
+      "evidence": "PASS: 0 errors, 1 expected warning (provisional boundary)"
+    },
+    {
+      "id": "spatial_review",
+      "ok": true,
+      "returncode": 0,
+      "evidence": "PASS: topology + metric recomputation within tolerance; 3 minor KEY_AREA_PROVISIONAL notes"
+    },
+    {
+      "id": "visual_packaging_check",
+      "ok": true,
+      "returncode": 0,
+      "evidence": "PASS: 14 required markers present, 3 required metrics match, no forbidden patterns"
+    },
+    {
+      "id": "professional_evidence_review",
+      "ok": true,
+      "returncode": 0,
+      "evidence": "PASS: 6 standards, 15 depths, 14 metric refs, 23 requirements mapped"
+    }
   ]
 }
