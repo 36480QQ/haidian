@@ -28,6 +28,12 @@ This v0.2 is a substantive evidence upgrade, not a repackaging of spatial values
 
 The gate ledger and scenario cards expressly do not constitute permits, engineering schemes, investment commitments, or implementation findings. Once official boundaries, rights, controls, roads, utilities, blue lines, or existing-condition data arrive, the whole package must be recalculated before another version is considered.
 
+## Core Concept and Four Operating Mechanisms
+
+The core concept is the Human City OS: a release system that organizes urban space, public services, and AI agents so they remain observable, rejectable, and reversible. AI is not turned into a landmark, and automation does not replace human judgement. Each urban capability is split into four auditable mechanisms: a human-priority mechanism that protects staffed service, accessibility, and the right to refuse; an evidence-release mechanism that binds place, time, data, accountability, and version gates; a space-service interface mechanism that connects the city API, walking network, public space, and scenario cards into a reviewable service chain; and an exit-and-repair mechanism that requires shutdown, removal, data deletion, objection handling, and independent review together. [depth:phasing_implementation] [metric:version_release_count]
+
+Together these mechanisms turn “from an AI showcase to a city for people” from a value statement into a spatial-governance-operations protocol. Every pilot must answer who may start it, who retains final responsibility, how the public can refuse, what evidence permits expansion, and how the system recovers after failure. Unknown metrics remain `unknown` rather than being filled by model inference or case analogy; every spatial band remains a design suggestion, not a statutory land-use zone, official boundary, or implementation commitment.
+
 ## Design Basis and Source List
 
 The proposal first follows the three planning extents, three key areas, and design tasks established by the official call, and uses the six agent tasks in the cleared taskbook as its delivery checklist. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] The five formally usable records in the repository source registry support only the uses explicitly permitted there. Provisional boundaries are used for generation, visualization, and intake checks; they are not represented as statutory redlines, official parcels, or exact regulatory controls. [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001]
