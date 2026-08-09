@@ -158,6 +158,20 @@ P0 先由获得授权的组织安排有日期的分时聚合 OD 和方式计数�
 
 每个重点区都要有企业责任人、社区/公共服务责任人、交通专业复核人和维护责任人，记录目标、输入、停止条件和回读证据；现阶段不声称已有合作方或运营许可 [depth:three_key_area_detailed_design] [source:HAIDIAN-ROAD-PARKING-TENDER-2026]。
 
+### 三处重点区的概念体量与空间界面
+
+交通动作不能替代城市设计。下面的体量台账只把三处重点区的交通角色翻译成可讨论的界面和强度范围，不改变现有几何，也不把范围写成控规指标。
+
+| 重点区 | 空间关系 | 概念强度范围 | 面向公共界面的高度 | 首先补齐的专业证据 |
+| --- | --- | --- | --- | --- |
+| 众智园 AI 自主创新加速区 | 企业入口、班车候车、装卸与消防净空分层，首层优先服务到岗和物流 | FAR 1.2–1.8，仅作方案比较 | 2–4 层；上部高度未知 | 现状建筑、能源与消防、产权、企业 OD 和路缘测绘 |
+| 北京 AI 原点社区 | 社区服务台、连续步行/无障碍路线、遮雨候车与日常服务相邻 | FAR 1.0–1.5，仅作方案比较 | 2–3 层；上部高度未知 | 无障碍走查、居民服务基线、权属、照护与夜间安全证据 |
+| 大钟寺 AI 产业聚集区 | 轨道换乘、骑行停放、公共首层和路缘装卸形成清晰分界 | FAR 0.8–1.3，仅作方案比较 | 1–3 层；上部高度未知 | 站口客流、路缘计数、交通组织、消防与市政接口 |
+
+FAR 和层数是概念设计范围，不是官方规划条件、建筑许可或建设承诺；正式方案必须在现状测绘、控规核验、产权、消防、结构、市政和公众参与完成后重新计算 [depth:height_massing_character] [depth:development_intensity_controls]。
+
+在证据尚未齐备前，首个空间动作仍限定为入口导向、候车遮雨、骑行停放、无障碍坡道和路缘状态牌等可撤回设施；不据此提出道路拓宽、建筑增量或拆改结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 ### 六类参与者与三项产业测试
@@ -430,72 +444,4 @@ B2 解决“平时怎么选”，B3 继续问“地铁中断、恶劣天气或�
 - `DYNAMIC-PT-CAPACITY-2024` 带拥挤、拒载、停站延误和乘客适应的容量可行公共交通动态分配方法；不转移参数或本地结果。
 - `SIMMOBILITY-MULTISCALE-2017` 多尺度活动、代理和多方式交通仿真框架；只用于区分全量压力回放与本地校准输入。
 
-**最终边界声明。** 这是一个以企业与居民共益交通为核心的可审计概念与试验框架。它当前不主张政府批准规划、道路开放公告、停车许可、企业合作协议、交通容量证明、健康效果证明或建设承诺。第一名项目保持不变，本包只表达新的交通数据和运营方案。
-
-## 三层范围工作框架（证据回读）
-
-统筹层、总体层和重点区层共享 `site_boundary`、`key_areas`、`land_use`，避免企业方案、社区方案和图纸各画一套边界 [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001]。
-
-三类空间图层继续回接 `buildings`、`roads`、`green_space`、`public_space` [data:geometry/buildings.geojson#BUILD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001]。
-
-公共约束和分期回接 `public_space`、`constraints`、`phasing` [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/phasing.geojson#PHASE-001]。当前这些线面是概念关系，正式深化需要补站口、交通断面、信号、权属、管线、消防、排水、停车、班车和居民体验；任何服务水平指标都必须带日期、分组、时段、责任人和缺口 [depth:existing_conditions_diagnosis]。
-
-## 统筹研究范围产业与未来城市研究（证据回读）
-
-企业、居民、轨道公交运营者、社区服务和维护单位共同组成未来城市的交通生态；AI 只做聚合、解释、冲突发现和回退清单，公共权利仍由人和制度决定 [source:NIST-HUMAN-CENTERED-AI] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。企业提供匿名聚合时段，居民保有不依赖 App 的人工入口，轨道/公交是骨干，按需车辆必须接受容量和停止条件约束。几何上，企业入口、社区服务点、站口和路缘状态回接 `key_areas`、`roads`、`public_space`，指标上把企业多方式出行、居民分组完成率和申诉闭环设为后续调查项；当前没有企业名单、协议、居民分层样本或运力基线，因此不能写“已经形成产业集群协同”或“居民满意度提升” [depth:overall_spatial_structure]。
-
-## 总体设计范围城市更新与控规深度城市设计（证据回读）
-
-总体设计用路缘时窗、换乘链和蓝绿回退界面把交通运营翻译为空间动作。首层入口、站口、候车、骑行停放、无障碍坡道、公共服务台和维护点优先可逆更新；建筑和用地只表达关系，不伪造 FAR、权属、工程量和投资 [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BUILD-001] [data:geometry/public_space.geojson#PUBLIC-001]。
-
-空间线位和面积需要同一版 boundary、同一投影和同一复算脚本；控规与建筑界面回接 [depth:height_massing_character] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。交通容量、停车供应、站点设施和市政接口另行由专业团队确认；如果固定设施会侵占消防、无障碍或居民安静界面，则退回移动设施和人工服务 [depth:municipal_new_infrastructure]。
-
-## 重点区域详细设计（证据回读）
-
-众智园验证企业到岗和装卸，AI 原点社区验证居民日常和人工等价，大钟寺验证轨道换乘和活动日路缘。三处各有一个最小可逆试点和一组停止条件，AI 不作为统一答案 [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/roads.geojson#ROAD-002] [depth:three_key_area_detailed_design]。节点必须绑定运营责任、时间窗、清场、无障碍替代路线和投诉入口，不能把企业预约变成社区永久禁停，也不能把共享接驳当成无需许可的社会道路运营。
-
-## AI 创新生态、人才画像与 AI+ 场景（证据回读）
-
-场景由企业交通专员、居民和照护者、轨道运营者、维护人员以及专业复核人共同测试；十张卡分别记录输入、输出、最小化、服务水平和回退。人才画像用于分组验收责任。轮椅使用者看路线连续，夜班人员看回家可靠，维护人员看资产 ID 和清场权，企业看成本与投诉，居民看不交轨迹也能通行 [source:BEIJING-ACCESSIBILITY-REGULATION] [depth:three_key_area_detailed_design]。现阶段没有实际用户同意样本、运行日志或企业协定，所有场景仍是设计目标。
-
-## 用地、建筑规模与拆改留方案（证据回读）
-
-本包不改变第一名项目，也不在本方案中新增建筑红线。`land_use`、`buildings` 和 `public_space` 只提供交通服务点、入口和公共界面的概念支撑；可回读的建筑足迹指标不等于法定建筑覆盖率 [data:geometry/buildings.geojson#BUILD-001] [metric:building_footprint_ratio] [depth:retain_renovate_demolish]。拆改决策必须先有现状测绘、权属、结构、消防、地下管线和社区参与，任何“提升容量”的图示在这些条件缺失时都保持 provisional。
-
-## 交通、轨道、市政与公共服务设施（证据回读）
-
-交通层把 `roads` 当作关系图，把路缘状态、站口、公共服务和蓝绿回退当作运营对象 [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson#CONSTRAINT-001]。
-
-三类接驳和四项 SLA 都须用人工计数、走行审计、交通模型、无障碍检查、消防核验和投诉日志逐项回读 [depth:traffic_rail_slow_parking] [source:BEIJING-14TH-TRANSPORT-PLAN]。当前不存在可直接引用的企业通勤量、居民 OD、停车占用、信号配时、站口客流、充电供需或投诉时长，因此指标保留 `unknown`；设计目标只用于设置试点停止线 [depth:metrics_recalculation]。
-
-### 设计场景综合模拟（透明沙盘，不是现状）
-
-在现场 OD、站点容量、信号、人员动线和路缘计数到位前，先用 `visual/assets/movement-simulation.json` 做 1000 人归一化设计单位的可解释对比。场景包括 S0 无协同高峰、S1 多方式与路缘协同、S2 受监管闸门阻断的空中候选、S3 极端天气地面回退。`visual/assets/run-mobility-simulation.js` 是同一输入文件的无依赖确定性复核器，只重算设计单位的队列和服务供给，不把论文参数或模型读数写成海淀现状。S1 是建议硬门筛查后暂选的设计候选；广义成本、换乘可靠性、人员冲突、汽车外来流入、最差群体差距和能耗都是示范输入，海淀现状数据尚未接入。图件公开了先过硬门、再做帕累托比较、最后用现场数据替换的决策链 [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION]。
-
-![v1.3 企业与居民交通系统效率。候选方案、人群构成与硬门](assets/figures/system-efficiency-board.svg)
-
-## 蓝绿空间、公共空间与城市风貌（证据回读）
-
-蓝绿系统为交通提供遮雨、停歇、热浪回退和暗夜安全，但不自动等于健康收益或防洪能力。现有 `green_space`、`public_space` 和 `roads` 的交叠关系只支持候选路径识别 [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。
-
-它不能代替树冠、坡度、热舒适、排水和生态现场数据 [depth:blue_green_public_space] [standard:BEIJING-WALK-CYCLE-DB11-1761]。
-
-## 更新项目清单、实施政策与分期计划（证据回读）
-
-P0 的核心交付是资产、需求、路缘、无障碍和投诉基线；P1 只做小规模可逆试验；P2 需要把采购、运营、维护、保险、隐私、交通和公平复核写成可执行条款 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]。实施主体、资金和 SLA 当前未知，不能把方案写成中标或建设承诺；每项新增设施都必须可撤回、可维护、可审计。
-
-## 指标体系、面积复算与合规矩阵（证据回读）
-
-指标分为文件可回读底盘、现场未知基线和试点目标三层；`metrics.json` 为唯一数值源，视觉页只展示其中的已知指标，其余以状态卡说明如何获取。五道验证门把几何、需求、安全、责任和公平串联 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。
-
-本次 schema 修复把 29 条记录统一放在 `metrics` 对象下，并将每条记录的 `status`、`value`、`unit`、`source_files`、`formula` 和 `confidence` 作为同一审计入口；离线检查结果为 11 条 `known`、18 条 `unknown`、无顶层游离指标、无状态/数值矛盾，摘要见 [data:visual/assets/metrics-schema-audit.json]，复核器为 [data:visual/assets/run-metrics-schema-audit.js]。这只证明结构和 `known`/`unknown` 的一致性，不证明现场交通绩效、运营结果或官方评分。
-
-合规矩阵、标准矩阵、深度矩阵和 `self_check.json` 共同记录响应；任何未知指标都不通过改名、四舍五入或模拟结果变成已知 [depth:metrics_recalculation] [depth:risk_missing_data]。
-
-## 风险、版权与合规说明（证据回读）
-
-图件由本包脚本根据结构化数据生成，地图、边界、道路和建筑保持 provisional 或概念建议标识；论文、政府网页和招标文件只按来源说明用途。没有本地基线时，相关字段保持 unknown。没有责任主体就停止试点。没有人工等价路径，就不让 AI 服务替代公共服务 [source:CURBSPACE-MANAGEMENT-2021] [source:SHARED-MOBILITY-OECD] [depth:risk_missing_data]。
-
-## 参考资料（证据回读）
-
-来源登记将官方政策、官方招标、论文方法、开放地图筛查和本包设计数据分开；访问日期、用途和不适用边界写在 `sources.json`，不以论文结论替代北京现场测量 [source:SOURCE-REGISTRY] [source:OSM-TRANSPORT-CONTEXT]。
+**最终边界声明。** 这是一个以企业与居民共益交通为核心的可审计概念与试验框架。它当前不主张政府批准规划、道路开放公告、停车许可、企业合作协议、交通容量证明、健康效果证明或建设承诺。第一名项目保持不变，本包只表达新的交通数据和运营方案 [source:SOURCE-REGISTRY] [source:OSM-TRANSPORT-CONTEXT]。
