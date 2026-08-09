@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-10T02:10:15+0800",
+  "generated_at": "2026-08-10T06:24:06+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "082b8c9379078728759a137bd956e3275c562248b960ec7a60a980fd4350b4c4"
+      "sha256": "4cd49dc01d69a194c68e988a7ba5dd2ac492657d51dc54da7fe63c57df4ae17a"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6fcb5b0a4b0a99ab874bb3558fe39799837873ef43707568508e93aa044332cf"
+      "sha256": "b565b553a5f01ee7960da09c042e2b8197fde140014bbae55fb05a4ef834c8dd"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b7ed20a7f8dc88b75eb6b5ba9e9c34891ef42f368fe33e90df9552a2fbe1c449"
+      "sha256": "a0c27598021f4bfa5db1c41efc4265ae3ccb573fb1ba21465f0b7a6d5a0d6e72"
     },
     {
       "path": "report/copyright_statement.md",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0dcff5d8e90d8af28cf3d6df4f9aae711b2909f6110364849cad0c67dbc813a7"
+      "sha256": "6859c2186c2e46ebcc65b839feb81ec60648f4a039c7836b5f41aa358b96cba3"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c9a8217599b993b756b54321b6e88f4693d548071a65bd0595a5a2966d830a85"
+      "sha256": "f9577642d66fb107e16342417fa382e4271fb3a4224d1d0878b083b14a873b6c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

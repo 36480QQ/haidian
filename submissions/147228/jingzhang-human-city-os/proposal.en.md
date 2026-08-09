@@ -12,35 +12,11 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-## v1.0: Turn “unconfirmed accountability” into an auditable startup protocol
-
-This iteration adds `governance-startup-protocol.json`, which splits pre-authorization research or pilot startup into five rejectable and reversible stages: scope freeze and startup registration, eligibility and conflict review, public notice and objections, human accountability and authorization record, and version handoff/review/exit. The protocol covers 6/6 readiness scenarios, 3/3 release-gate records, and all 8/8 required fields while explicitly keeping `authorized=false` and `operator_confirmed=false`; no operator, institution, permit, or field result is named. [data:visual/assets/governance-startup-protocol.json] [data:visual/assets/pilot-readiness-register.json] [depth:phasing_implementation]
-
-The network-free `check-governance-startup-protocol.js` resolves 5/5 stages, 6/6 scenarios, 3/3 release gates, 8/8 fields, four role-selection rules, and five no-go conditions. Two negative fixtures—missing selection inputs and an unauthorized stage—must fail. It proves only that startup conditions and claim boundaries are reviewable inside the package; it does not prove authorization, staffing, field operation, or performance. [data:visual/assets/check-governance-startup-protocol.js] [metric:version_release_count]
-
-The new `ai-design-exploration-log.json` records five key choices as “AI-assisted structuring/replay → human judgement → retained or rejected”: release gates, the ordinary-person service chain, spatial parameter trade-offs, the handoff receipt, and the startup protocol. Each returns to existing evidence and still requires a human decision. This is a retrospective structural index, not a verbatim model transcript, external-network log, or field experiment; missing evidence remains conceptual or `unknown`. [data:visual/assets/ai-design-exploration-log.json] [data:visual/assets/check-ai-design-exploration-log.js] [depth:risk_missing_data]
-
-Together these assets put “who may start, who may stop, and whose decision retained the trade-off” on one auditable chain without turning a governance gap into a completion claim. All spatial content remains a conceptual suggestion/reference scheme for professional teams to deepen after official boundaries, rights, controls, existing conditions, mobility, utilities, energy, hydrology, and public baselines are available; formal metrics and provisional geometry remain unchanged. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
-
-## v0.9: Turn conceptual actions into a replayable handoff receipt
-
-This iteration adds `HUMAN-CITY-RECEIPT-0.1`, a synthetic human-city handoff receipt. It records six H0-H5 gates for problem and boundary, data and choice, human accountability, bounded synthetic rehearsal, independent replay, and version exit. Three synthetic cases cover human channels and older residents, reskilling and workers at substitution risk, and the technology-service wing for small teams. [data:visual/assets/human-city-receipt.json] [data:visual/assets/human-city-receipt-evidence.json]
-
-The network-free `run-human-city-receipt.js` checks 3/3 cases, all 8/8 declared replay fields on each case, 6/6 handoff gates, 6/6 spatial references, an equivalent human path, and no-write replay boundaries. Hashes and release notes remain explicitly ungenerated or unlinked before authorization. Negative samples missing the human alternative, a case replay field, or a spatial anchor must fail. The receipt proves only that synthetic structure and stop conditions can be replayed; it is not evidence of real operations, staffing, permits, safety, performance, or public outcomes. [data:visual/assets/human-city-receipt.json] [data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
-
-## v0.8: Make the technology-service wing and spatial trade-offs reviewable
-
-This iteration places the taskbook's **Zhongguancun technology-service wing** in `SC-D04`, the “factor configuration desk.” It links intellectual-property, compliance, data authorization, and cross-region application transfer for one-person companies, small teams, research teams, and Beijing-Tianjin-Hebei application partners. The card and space–operation matrix retain staffed advice, paper materials, authorization-chain checks, conflict disclosure, and a freeze condition. No institution, capital provider, or signed agreement is named. [source:AGENT-TASKBOOK] [data:geometry/constraints.geojson#ZONE-C-DATA] [data:geometry/public_space.geojson#PUBLIC-D-GLOBAL] [depth:overall_spatial_structure]
-
-The parametric study takes the current six-band conceptual allocation as a baseline and compares three transparent parameter sets: people-first, balanced, and machine-ready. `visual/assets/run-parametric-tradeoff-study.js` checks share sums, area formulas, baseline reconnection, four objective lenses, comparison floors, and a non-dominance condition; formal `metrics.json`, geometry, drawings, and release state remain unchanged. Figure 11 makes the trade-off between community retention, learning, reversible space, city API, and resilience visible. Professional teams can replace the inputs once official boundaries, controls, rights, mobility, municipal, energy, and public baselines are available. [data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout] [depth:metrics_recalculation]
-
-Figure 11 is shown once in the later “Parametric study” subsection; this paragraph cross-references the same parametric record and four objective lenses rather than embedding a duplicate image, so the candidate set is not mistaken for two independent deliverables. [data:visual/assets/parametric-tradeoff-study.json] [depth:metrics_recalculation]
-
-All three parameter sets remain low-confidence conceptual suggestions for professional teams. They compare spatial relationships only and generate no FAR, building-height, engineering, investment, employment, or policy conclusion. [data:geometry/site_boundary.geojson#SITE-001] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio]
-
 # Jingzhang Human City OS
 
 > From an AI showcase to a city for people in the AI era. AI is not the protagonist of the city; it is an auditable, rejectable, and reversible capability serving residents, workers, founders, and public institutions.
+
+The current revision brings three additions into one spatial and service evidence path: the pre-authorization startup protocol, the synthetic human-city handoff receipt, and the Zhongguancun technology-service wing with its parametric spatial trade-off study. They answer who may start, who can take over, and which spatial relationships deserve comparison first. Full fields and offline checks remain in the package assets; space, metrics, operators, permits, and public outcomes retain their conceptual or `unknown` status. [data:visual/assets/governance-startup-protocol.json] [data:visual/assets/human-city-receipt.json] [data:geometry/site_boundary.geojson#SITE-001]
 
 ## v0.7: Make Two Review Question Sets Return to the Same Evidence
 
@@ -223,6 +199,16 @@ Zhongzhiyuan, the AI Origin Community, and Dazhongsi use the repository's coarse
 | Zhongzhiyuan | Can a machine-ready city enter public space safely? | Silicon-right-of-way test, embodied-AI public test bay, compute-energy/heat audit, standards spillover studio | Accountable operator, insurance, human takeover, energy metering, and public incident review |
 | AI Origin Community | Can innovation density protect everyday life and workforce transition? | Reskilling Relay, City API Exchange, intergenerational learning, City Release Room | Employment conversion, retained human services, data minimization, and resident vote |
 | Dazhongsi | Can data and international services create a trustworthy urban interface? | Public Data Authorization Room, International Service Commons, OPC shared services | Lawful authorization, exit, accessibility, multilingual and compliance-service audit |
+
+The three key areas keep their coarse provisional extents and now add a comparable concept massing and ground-interface layer. FAR and storeys compare the relationship between public service, ordinary routes, and upper functions. They are not statutory controls, existing-condition findings, or construction permissions; formal height, intensity, retain/renew/demolish decisions, and engineering capacity remain `unknown` before G1. [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:far] [metric:building_height]
+
+| Key area | Concept spatial trade-off | Concept massing range | Professional evidence to collect first |
+| --- | --- | --- | --- |
+| Zhongzhiyuan | Place embodied-AI testing, compute-energy/heat audit, and standards studio behind a human-priority public interface, with a withdrawable test boundary and incident-review court | Concept FAR 1.2–1.8; public interface 2–4 storeys; upper height unknown | Existing buildings, energy load, fire, insurance, pedestrian walk-through, and accountable role |
+| AI Origin Community | Connect the Reskilling Relay, intergenerational learning, and City API Exchange on a daily walking route, with ordinary and AI-assisted entries side by side | Concept FAR 1.0–1.5; public interface 2–3 storeys; upper height unknown | Resident and service baseline, accessibility walk-through, employment-outcome definition, tenure, and leases |
+| Dazhongsi | Keep public-data authorization, international services, and OPC shared services in a low-scale civic living room, with night service and cultural interpretation using one staffed front desk | Concept FAR 0.8–1.3; public interface 1–3 storeys; upper height unknown | Heritage, transport and night service, language access, data authorization, and exit conditions |
+
+These ranges answer which spatial relationships to compare first. They do not answer where construction is permitted, who holds the space, or how much may be built. Provisional `PROV-KEY-001` through `PROV-KEY-003` remain non-redline geometry; drawings, metrics, and release gates can be recalculated only after formal boundaries and rights-cleared inputs arrive.
 
 Embodied-AI testing in Zhongzhiyuan does not assume that autonomous vehicles or robots naturally possess right-of-way. Temporary permits are conditioned on pedestrian priority, speed, time, task, and risk class. The low-altitude logistics layer is only a vertically separated concept corridor and cannot enter testing before airspace, noise, drop risk, privacy, fire safety, and insurance reviews. [data:geometry/roads.geojson#ROAD-B-SILICON] [metric:silicon_right_of_way_length_m]
 
