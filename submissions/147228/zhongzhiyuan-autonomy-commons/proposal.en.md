@@ -20,13 +20,15 @@ This is an independent autonomous-mobility iteration, not a renamed copy of the 
 
 The first reversible acceptance unit is not “make the vehicle run.” It lets an ordinary person choose, use, stop, challenge and leave an automated service while returning to human service. This is a concept-level review interface only: it presupposes no measured length, road, vehicle or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
 
+**Status: target design · not deployed · not authorized · not run**
+
 | Ordinary-person path | Visible space/service | Evidence to leave | If it fails |
 | --- | --- | --- | --- |
-| Choose ordinary or assisted route | Dual entry, continuous accessible surface, paper/phone entry | Choice state and obstruction record, without identity | No trial if ordinary route is unavailable |
-| Request one low-speed service | Staffed desk, legible curb, version status board | Scenario ID, version and equivalent human route | Hold if no equivalent human service exists |
-| Trigger human takeover | Physical emergency stop, remote stop and local broadcast | Reason, time and responsible role | Stop automation if takeover is unavailable |
-| Meet obstruction, network loss or weather | Isolation zone, rollback route and paper/phone fallback | Trigger, broadcast, evacuation and recovery record | Remain human-only; do not expand |
-| Independent replay and exit | Receipt, redress entrance and exit sign | Replay result, unproven items and closure record | Return to design stage if it cannot be replayed |
+| Choose ordinary or assisted route | Planned dual entry, target accessible surface, planned paper/phone entry | Choice state and obstruction record, without identity | No trial if ordinary route is unavailable |
+| Request one low-speed service | Planned staffed desk, target legible curb, planned version status board | Scenario ID, version and equivalent human route | Hold if no equivalent human service exists |
+| Trigger human takeover | Planned physical emergency stop, remote stop and local broadcast | Reason, time and responsible role | Stop automation if takeover is unavailable |
+| Meet obstruction, network loss or weather | Planned isolation zone, rollback route and paper/phone fallback | Trigger, broadcast, evacuation and recovery record | Remain human-only; do not expand |
+| Requester self-service replay and exit (not third-party verified) | Planned receipt, redress entrance and exit sign | Requester replay result, unproven items and closure record | Return to design stage if it cannot be replayed |
 
 The package currently has only an offline synthetic tabletop: four branches, seven contract checks and five rollback steps. It proves that the control chain is readable and replayable, not field safety, authorization, deployment or performance. `not_authorized_not_run`, `performance_results=null` and the missing local baselines remain explicit [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001].
 
