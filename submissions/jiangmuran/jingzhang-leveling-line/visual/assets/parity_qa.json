@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.844,
+ "overall_ratio": 0.851,
  "floor": 0.75,
  "sections": [
   {
@@ -12,16 +12,16 @@
   },
   {
    "section": "One person's day: what the mechanism looks like on the street",
-   "zh_chars": 849,
-   "en_words": 580,
-   "ratio": 0.871,
+   "zh_chars": 857,
+   "en_words": 583,
+   "ratio": 0.868,
    "pass": true
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 4200,
-   "en_words": 2585,
-   "ratio": 0.785,
+   "zh_chars": 4199,
+   "en_words": 2590,
+   "ratio": 0.787,
    "pass": true
   },
   {
@@ -54,9 +54,9 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 9219,
-   "en_words": 5735,
-   "ratio": 0.793,
+   "zh_chars": 10009,
+   "en_words": 6448,
+   "ratio": 0.822,
    "pass": true
   },
   {
