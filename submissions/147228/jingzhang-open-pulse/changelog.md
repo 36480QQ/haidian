@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v3.6 - 2026-08-09
+
+- Added four deterministic negative replays, one per S02 fixture; the runner now verifies hold/stop/withdraw/delete-temporary-state decisions as `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
+- Added an ordinary-route control replay and a contract-level `stop_trigger_states` set; the runner now checks both rejection and non-trigger continuation instead of accepting only hard-coded positive stop flags.
+- Added a dependency-free offline tabletop for the existing synthetic S02 bounded test-window record.
+- Added four stop/restore branches, six acceptance checks and five reversible rollback steps, with a committed aggregate evidence readback.
+- Added structured acceptance tracing: every check now resolves its fixture, scenario, and/or boundary references, with 4/4 fixture, 1/1 scenario, 5/5 boundary-field coverage and unique check IDs verified by the runner.
+- Bound all five rollback steps to unique RB IDs plus fixture and acceptance-check references; the runner now requires 5/5 rollback-step trace coverage before PASS.
+- Kept `result_status=not_run`, `performance_results=null` and `operational_status=not_authorized_not_run`; the rehearsal does not claim robot performance, accessibility, public acceptance, safety or permission.
+
 ## v3.5 - 2026-08-09
 
 - 对来源登记做一次可审计回读：中文摘要、持久化 self-check 与双语离线 HTML/视觉页统一为 `sources.json` 的 68 条记录，并把边界交叉核对背景记录的用途写明；同时将已有的合成 S02 低速配送机器人测试窗口前置到中英文最短实施合同，保持 `not_run`/`hold`、人工接管、无障碍路线和普通人工服务边界，不新增现场性能、公众接受或部署批准结论。

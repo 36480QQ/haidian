@@ -82,6 +82,10 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 
 视觉系统只保留一组主色：深轨蓝 `#172235`、证据金 `#C79838`、公共绿 `#15803D` 与纸白；状态颜色永远同时配文字和形状，不能只靠红绿区分。动效仅用于“问题出现—证据补齐—人工签认”的三步展开，并提供静态替代。文化导视另有符号系统，见 agent.5；它不能与母品牌 Logo 混用。
 
+![京张探针原创开口 P 图形标识](assets/figures/probe-logo.svg)
+
+![京张探针标识在尺寸、单色、深浅底与导视牌中的应用校验](assets/figures/probe-logo-usage.svg)
+
 ### 三大定位 × 五大功能
 
 | 三大定位 | 对应功能 | 在本方案中的空间兑现 | 验收问题 |
@@ -138,6 +142,8 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 
 每层输出都必须能交给下一层：问题层交付带受益与风险边界的 brief；研究层交付可复现方法；底座层交付权限、成本、能耗与服务窗口；工程层交付版本和测试记录；治理层交付人工复核与停用条件；场景层交付使用、影响和责任证据。缺任一交接件，项目留在 `evidence_pending`，不得用活动曝光替代转化[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][metric:approved_scenario_count]。
 
+![五个公开案例到可迁移机制及本地对应系统的生态图](assets/figures/agent2-ecosystem.svg)
+
 ### 众智园全栈、AI原点社区与中关村科技服务翼
 
 | 系统 | 概念角色 | 空间载体 | 进入条件 | 当前状态 |
@@ -160,6 +166,14 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 | 场景 | 小范围、可撤、有人复核的测试窗口 | 小月河场景翼与公共体验路径 | 场地、运营、安全、隐私、可达性与停用批准 |
 
 这张映射不产生招商名单。`[metric:ecosystem_partner_count]` 维持 `status: unknown`，需要“可公开身份＋签署角色＋有效期限＋披露许可”四项齐备的合作台账；`[metric:compute_capacity]` 同样为 unknown，需要供应商中立的容量单位、时窗、分配规则、费用与能耗记录。五个案例只校准机制语言，不填这些本地空值。
+
+### 区域协同接口：只接公开机制，不预写合作结果
+
+本方案不掌握跨区协同的实际数据，仅提出接口与验证条件。中关村 AI 北纬社区的公开征求意见公告只支持一项可核事实：其方案意在与 AI 原点社区形成南北呼应[source:AI-LATITUDE-PUBLIC-DRAFT]。因此本方案只建议两端使用兼容的 `problem_brief`、准入状态、许可、版本、退出与交接字段；是否已有共同运营者、项目、算力、资金、企业或人员往来全部 `unknown`，须以双方有效协议和同一观察窗口内的交接记录核验。
+
+海淀区“十四五”规划曾写明与未来科学城探索创新生态链共建、与怀柔科学城探索大科学装置共享、与北京经济技术开发区加强创新链产业链衔接[source:HAIDIAN-14FIVE-COORDINATION]。本方案不把规划表述写成已经发生的协同，只保留三种机器接口：向未来科学城交付带权利边界的问题 brief 与可复用评测件；向怀柔科学城提交能力需求、资格、预约、批准、使用和归还证据；向经开区提交版本、测试、合规、移交和退出材料。具体机构、设施可用性、项目、资金、企业、指标与服务时窗均为 `unknown`，须由有权限的参与方逐项确认。
+
+京津冀层面，北京市人大常委会决定公开了供需对接清单、概念验证、成果孵化、中试基地和应用场景等协同机制[source:JINGJINJI-COLLABORATIVE-INNOVATION]；2025 年三地科技部门措施进一步提出常态化成果对接、概念验证、中试熟化与跨区域服务链条[source:JINGJINJI-TRANSFER-MEASURES]。本方案可输出与这些机制兼容的“问题—权利—版本—测试—影响—责任—退出”交接包，但不声称本项目已进入任何清单、平台或专项。对接主体、资格、成果权利、承接地、资金、合同、绩效与区域贡献全部 `unknown`；只有有效登记、双方签认和可核验交接证据齐备后，才允许从“接口建议”升级为“协同记录”。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -376,6 +390,8 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 
 `[metric:public_space_component_type_count]=8` 是组件**类型**数量，不是已采购或建设数量。尺寸、材料、单价、数量、供应商与安装位置全部 unknown，需要现场测绘、人体工学与无障碍复核、耐久/消防/结构测试、运维能力和清权采购后填写。
 
+![三个朝圣地标概念与八类公共空间组件库](assets/figures/agent4-landmarks-components.svg)
+
 ## 京张—中关村—AI文化叙事与标识（agent.5）
 
 ### 文化主线：自主工程不是装饰，而是一种工作方法
@@ -401,6 +417,8 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 文化导视采用“**双线＋刻度＋版本戳**”的自绘符号：双线分别代表历史证据与当代公共使用，交汇刻度标识一个可停留/可解释节点，版本戳显示内容生效时间。它是空间信息语法，不是 agent.1 的开口 P 母品牌 Logo。导视分 `[metric:signage_information_level_count]=4` 级：`LINE` 连续方向、`NODE` 节点功能、`STORY` 经审校叙事、`STATUS` 开放/暂停/unknown；这是概念信息层级而非已安装标识数量。每级同时使用中文、英文、图形和高对比触觉/声音替代，不靠颜色单独编码。
 
 正式设计前须补：全线实测寻路决策点、无障碍审计、双语/多语译审、文保审查、夜间眩光测试、材料与维护样本、字体和图像许可。任何二维码都必须有同等纸本内容与短网址；位置数据不作为阅读前提。历史照片、人物、商标、论文图和企业标识未经授权不进入系统[source:AGENT-TASKBOOK]。
+
+![四级信息架构与五幕空间故事线](assets/figures/agent5-signage-story.svg)
 
 ### 国际传播文案（概念稿，待译审）
 
@@ -451,6 +469,8 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 | 长期关系 | 另行谈判研究、服务、人才或空间协议 | 有效合同、预算、责任、退出和公开范围 | 本方案不承诺企业名单、资金、产值或财政支持 |
 
 `[metric:developer_to_pilot_conversion_ratio]` 维持 `status: unknown`：分子须是进入**人工批准有限试点**的开发者，分母须是同一批次内符合公开资格且自愿登记的开发者；当前缺批次、资格、批准台账和共同观察窗口。国际招引同理，只有有效协议才进入合作记录。公共地标和体验空间的运营优先保证开放时段、人工解释、基本维护和故障降级；品牌曝光不得改变公共可达性。
+
+![四类年度项目、场景开放门与转化证据要求](assets/figures/agent6-operations-conversion.svg)
 
 ### 典型界面与公共空间网络容量
 
@@ -642,7 +662,8 @@ AI 生成不构成事实豁免。每项生成内容应保留提示输入、数�
 - OpenStreetMap 背景语境与外业线索，按 ODbL 登记[source:OSM-CONTEXT]。
 - 全球生态案例：AI Singapore 100E、Mila、Vector Institute、STATION F F/ai 与 TUM Venture Labs 的官方网页[source:CASE-AISG-100E][source:CASE-MILA-PARTNERSHIPS][source:CASE-VECTOR-INSTITUTE]；其余两项案例见[source:CASE-STATIONF-FAI][source:CASE-TUM-VENTURE-LABS]。
 - 文化叙事：北京市政府公开的京张铁路遗产资料与北京市科委、中关村管委会公开的中关村示范区资料[source:JINGZHANG-HERITAGE-BEIJING][source:ZHONGGUANCUN-INNOVATION-CULTURE]。
+- 区域协同接口：北纬社区公开征求意见公告、海淀区“十四五”规划、京津冀协同创新决定及三地成果转化措施；只用于确认公开机制，不证明本项目已有合作[source:AI-LATITUDE-PUBLIC-DRAFT][source:HAIDIAN-14FIVE-COORDINATION][source:JINGJINJI-COLLABORATIVE-INNOVATION]；成果转化措施另见[source:JINGJINJI-TRANSFER-MEASURES]。
 
-机器可读成果入口为 `standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`metrics.json`、`assumptions.json`、`sources.json` 与 `self_check.json`；审计输出随包交付于 `visual/assets/boundary_sensitivity.json` 与 `visual/assets/run_record.json`，生成脚本因包格式不接受 `.py` 而未随包交付（见“复跑链”一节）。九类空间文件均在正文就近引用：总体边界、重点片区、用地、建筑、道路、绿地、公共空间、约束和分期；引用锚点只证明对象可定位，不证明对象具有官方效力[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001]。
+机器可读成果入口为 `standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`metrics.json`、`assumptions.json`、`sources.json` 与 `self_check.json`；审计输出随包交付于 `visual/assets/boundary_sensitivity.json`、`visual/assets/run_record.json`、三道门 JSON、`reversibility-r1-r3.json`、`duty-ledger.json` 及 `validation-report.json`。生成脚本因包格式不接受 `.py` 而未随包交付（见“复跑链”一节）。九类空间文件均在正文就近引用：总体边界、重点片区、用地、建筑、道路、绿地、公共空间、约束和分期；引用锚点只证明对象可定位，不证明对象具有官方效力[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001]。
 
 本方案对应的专业标准索引为征集公告、智能体任务书、城市设计管理、控规深度、用地分类与建筑设计深度[standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。具体适用性、响应状态与证据文件以 `standard_matrix.json` 为准；若正文与结构化文件冲突，先暂停结论并按版本记录查明，而不是选择更有利的一份。
