@@ -39,6 +39,7 @@ from github_pr_validation import (  # noqa: E402
     is_review_queue_candidate,
     main,
     readiness_contract_dirs_from_base,
+    run_trusted_review_gates,
     safe_manifest_paths,
     validation_paths_for,
 )
@@ -496,6 +497,25 @@ class ManifestHydrationTests(unittest.TestCase):
     def test_invalid_manifest_shapes_return_no_paths(self) -> None:
         self.assertEqual(set(), safe_manifest_paths([]))
         self.assertEqual(set(), safe_manifest_paths({"files": "not-a-list"}))
+
+    def test_trusted_review_gates_use_trusted_scripts_and_fail_closed(self) -> None:
+        report = ValidationReport()
+        with tempfile.TemporaryDirectory() as tmp:
+            trusted_root = Path(tmp) / "trusted"
+            submission_dir = Path(tmp) / "hydrated" / "submissions" / "alice" / "design"
+            trusted_root.mkdir(parents=True)
+            submission_dir.mkdir(parents=True)
+            completed = [
+                subprocess.CompletedProcess([], 0, '{"ok": true, "issues": []}', ""),
+                subprocess.CompletedProcess([], 1, '{"ok": false, "issues": [{"id": "x"}]}', ""),
+                subprocess.CompletedProcess([], 0, '{"ok": true, "summary": {}}', ""),
+            ]
+            with patch("github_pr_validation.subprocess.run", side_effect=completed) as run:
+                run_trusted_review_gates(report, trusted_root, submission_dir)
+            self.assertEqual(3, run.call_count)
+            self.assertFalse(report.ok)
+            self.assertIn("trusted gate SPATIAL_REVIEW: PASS", "\n".join(report.warnings))
+            self.assertIn("trusted gate VISUAL_PACKAGING: FAIL", "\n".join(report.errors))
 
     def test_trusted_base_distinguishes_historical_and_new_ready_packages(self) -> None:
         historical = {

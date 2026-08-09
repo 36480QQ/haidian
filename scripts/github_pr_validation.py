@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Run deterministic validation for a GitHub pull request.
+"""Run trusted validation for a GitHub pull request.
 
 This script is designed for pull_request_target. It checks out only trusted base
 branch scripts, downloads PR files as inert data, validates them, and comments
-on the PR. It does not call AI services or execute contributor code.
+on the PR. It does not call AI services or execute contributor code. The trusted
+scripts also rerun the spatial, visual, and professional gates against the
+hydrated package so a contributor-owned self_check.json is not treated as
+independent execution provenance.
 """
 
 from __future__ import annotations
@@ -12,6 +15,7 @@ import base64
 import json
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -40,6 +44,7 @@ RETRYABLE_METHODS = frozenset({"GET", "HEAD", "OPTIONS"})
 # retries bounded and limited to GETs; a permanent missing file still fails
 # with the path and head-specific download error after the retry budget.
 RETRYABLE_STATUS_CODES = frozenset({404, 429, 500, 502, 503, 504})
+TRUSTED_REVIEW_GATE_TIMEOUT_SECONDS = 180
 
 
 def _http_error_message(error: urllib.error.HTTPError) -> str:
@@ -425,6 +430,81 @@ def write_step_summary(markdown: str) -> None:
         Path(summary_path).write_text(markdown, encoding="utf-8")
 
 
+def _trusted_gate_summary(payload: object) -> str:
+    """Return a bounded, non-content-bearing summary for the CI comment."""
+    if not isinstance(payload, dict):
+        return "no JSON report"
+    parts: list[str] = []
+    for key in ("issues", "errors", "warnings"):
+        value = payload.get(key)
+        if isinstance(value, list):
+            parts.append(f"{key}={len(value)}")
+    return ", ".join(parts) or "report parsed"
+
+
+def run_trusted_review_gates(
+    report: ValidationReport,
+    trusted_repo_root: Path,
+    submission_dir: Path,
+) -> None:
+    """Rerun all non-AI review gates using only trusted checkout scripts.
+
+    The package is hydrated as inert data into a temporary worktree. These
+    subprocesses execute scripts from the trusted default-branch checkout and
+    never import or run contributor-supplied Python/JavaScript. Their results
+    are intentionally recorded in the CI report rather than written back to
+    contributor-owned ``self_check.json``.
+    """
+    gates = (
+        (
+            "SPATIAL_REVIEW",
+            trusted_repo_root / "scripts" / "spatial_review.py",
+            ["--repo-root", str(trusted_repo_root), "--json"],
+        ),
+        (
+            "VISUAL_PACKAGING",
+            trusted_repo_root / "scripts" / "visual_review.py",
+            ["--json"],
+        ),
+        (
+            "PROFESSIONAL_EVIDENCE",
+            trusted_repo_root / "scripts" / "professional_review.py",
+            ["--repo-root", str(trusted_repo_root), "--json"],
+        ),
+    )
+    for gate_id, script, extra_args in gates:
+        command = [sys.executable, str(script), str(submission_dir), *extra_args]
+        try:
+            completed = subprocess.run(
+                command,
+                cwd=trusted_repo_root,
+                capture_output=True,
+                text=True,
+                timeout=TRUSTED_REVIEW_GATE_TIMEOUT_SECONDS,
+                check=False,
+            )
+        except (OSError, subprocess.SubprocessError) as exc:
+            report.add_error(f"trusted gate {gate_id} could not run: {type(exc).__name__}")
+            continue
+
+        payload: object = None
+        stdout = completed.stdout.strip()
+        if stdout:
+            try:
+                payload = json.loads(stdout)
+            except json.JSONDecodeError:
+                report.add_error(f"trusted gate {gate_id} returned non-JSON output")
+                continue
+        passed = completed.returncode == 0 and isinstance(payload, dict) and payload.get("ok") is True
+        summary = _trusted_gate_summary(payload)
+        if passed:
+            report.add_warning(f"trusted gate {gate_id}: PASS ({summary})")
+        else:
+            report.add_error(
+                f"trusted gate {gate_id}: FAIL (exit={completed.returncode}, {summary})"
+            )
+
+
 def main() -> int:
     token = os.getenv("GITHUB_TOKEN")
     repository = os.getenv("GITHUB_REPOSITORY")
@@ -559,6 +639,13 @@ def main() -> int:
             if validation_files and not base_sha:
                 validation.add_error(
                     "pull_request.base.sha is required to establish the trusted readiness migration boundary"
+                )
+            trusted_repo_root = Path(__file__).resolve().parent.parent
+            for proposal_path in sorted(proposal_paths):
+                run_trusted_review_gates(
+                    validation,
+                    trusted_repo_root,
+                    worktree / PurePosixPath(proposal_path).parent,
                 )
         validation_markdown = format_report(validation)
 

@@ -306,7 +306,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 - `design_depth_matrix.json` 中的深度项应在正文中被引用。
 - 核心 GeoJSON 图层应在正文中解释其设计含义。
 - `metrics.json` 中 `status=known` 的指标应在正文中说明公式、来源或空间含义。
-- proposal v2 或由当前流程写入 `readiness_contract=persisted-self-check-v1` 的包，`manifest.json.validation_claim.self_checked` 必须为 `true`；它表示作者确实运行并回读了 `self_check.json`，不能用 ready 状态反向替代自检证据。没有该 contract 的历史 ready 包只保留 intake 兼容性警告，并应使用 `self_check_submission.py --mark-self-checked` 迁移。CI 从 trusted base 的 manifest 判断包是历史包、新包还是已经进入 contract 的包；不能通过在 PR head 删除 contract 字段把新包降级为 legacy warning。
+- proposal v2 或由当前流程写入 `readiness_contract=persisted-self-check-v1` 的包，`manifest.json.validation_claim.self_checked` 必须为 `true`；它表示作者确实运行并回读了 `self_check.json`，不能用 ready 状态反向替代自检证据。没有该 contract 的历史 ready 包只保留 intake 兼容性警告，并应使用 `self_check_submission.py --mark-self-checked` 迁移。CI 从 trusted base 的 manifest 判断包是历史包、新包还是已经进入 contract 的包；不能通过在 PR head 删除 contract 字段把新包降级为 legacy warning。公开 gallery 为连续性而保留的历史状态只描述展示分类，不构成新的可信正式证据。
 - `self_check.json` 是可回读的 contributor-owned 运行记录，结构完整不等于独立可信证明；真正的 provenance 以 `pull_request_target` 的 exact trusted run 或维护者在 trusted checkout 上的重跑为准。
 
 这类引用不是装饰。它要求 agent 在正文中说明：“这个用地分区为什么这样做，来自哪个图层；这个比例怎么复算；这个风貌控制依据哪个标准；这个结论有什么资料缺口。”
