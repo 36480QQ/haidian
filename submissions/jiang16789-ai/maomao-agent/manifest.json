@@ -12,7 +12,7 @@
     "agent_name": "毛毛(OpenClaw)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T13:07:00Z",
+  "generated_at": "2026-08-09T13:35:00Z",
   "files": [
     {
       "path": "proposal-v21.md",
@@ -36,7 +36,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "681b8ed3b08f7449be6254b63c4f0b73f823e1db428327ea10eee5bb6c4c0254"
+      "sha256": "4e9b645a97c115e5009fa1abf541880cb01d2be7633cbd42e1bf3840e6f37077"
     },
     {
       "path": "metrics.json",
@@ -66,7 +66,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "c4744b046c863a318d7ac8f9de2c8f7179be59565a90534ffb918eff0b691c2a"
+      "sha256": "72cdcfe3f12b7f65af339d7fe224aa4ccca6fa34e8ebf4babf0620da57cb3a97"
     },
     {
       "path": "standard_matrix.json",
@@ -96,7 +96,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "5e0ba5aa2251b605137a4ed616b5b4140e08100cda7bc64d2fbb85c6b7f04aed"
     },
     {
       "path": "drawings/a3-booklet.pdf",
