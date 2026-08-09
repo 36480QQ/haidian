@@ -49,7 +49,7 @@
       "id": "PUBLIC-BRIEF",
       "path": "brief/public-brief.md",
       "source_type": "official_public",
-      "usage": "Public brief draft: project background, development vision, key directions, design boundaries, review dimensions, and continuous participation guidance."
+      "usage": "Public brief draft: project background, development vision, key directions, design boundaries, review dimensions."
     },
     {
       "id": "CASE-STATION-F",
@@ -57,7 +57,8 @@
       "url": "https://stationf.co/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: historic station to startup campus; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-ONE-NORTH",
@@ -65,7 +66,8 @@
       "url": "https://www.jtc.gov.sg/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: work-live-play-learn mixed-use symbiosis; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-MISSION-BAY",
@@ -73,7 +75,8 @@
       "url": "https://sfplanning.org/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: university-enterprise waterfront symbiosis; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-NANSHAN",
@@ -81,7 +84,8 @@
       "url": "https://pnr.sz.gov.cn/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: incremental renewal and TOD+innovation corridor; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-HTC",
@@ -89,7 +93,8 @@
       "url": "https://www.htce.com/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: shared facilities and open innovation 2.0; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-SHIBUYA",
@@ -97,7 +102,8 @@
       "url": "https://www.toshiseibi.metro.tokyo.lg.jp/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: vertical pedestrian network and day-night economy zoning; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
     },
     {
       "id": "CASE-SEAPORT",
@@ -105,7 +111,26 @@
       "url": "https://www.bostonplans.org/",
       "accessed_date": "2026-08-08",
       "source_type": "official_public_background",
-      "usage": "Global case mechanism comparison: brownfield to mixed innovation district; does not support project spatial controls."
+      "usage": "Global case mechanism comparison; does not support project spatial controls.",
+      "not_spatially_allocable": true
+    },
+    {
+      "id": "HAIDIAN-2025-STATISTICAL-BULLETIN",
+      "publisher": "北京市海淀区统计局",
+      "url": "https://www.bjhd.gov.cn/",
+      "accessed_date": "2026-08-08",
+      "source_type": "official_open_data",
+      "usage": "Background calibration of industry, talent and public service context. Not spatially allocable; does not enter metrics.json or GeoJSON.",
+      "not_spatially_allocable": true
+    },
+    {
+      "id": "BEIJING-HAIDIAN-OVERVIEW-2026",
+      "publisher": "首都之窗·北京市人民政府门户网站",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/hdgk/",
+      "accessed_date": "2026-08-08",
+      "source_type": "official_public",
+      "usage": "Haidian 2025 official overview: GDP, AI industry, universities, patents, population, tourism. Calibrates problem priority only.",
+      "not_spatially_allocable": true
     }
   ]
 }
