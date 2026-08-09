@@ -19,7 +19,8 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "pattern": "^0\\.1\\.\\d+$"
+      "pattern": "^0\\.(?:1|2)\\.\\d+$",
+      "description": "Manifest schema 0.1.x is legacy-compatible; 0.2.x is the strict forward contract."
     },
     "package_id": {
       "type": "string",
@@ -123,8 +124,7 @@
         "type": "object",
         "required": [
           "path",
-          "role",
-          "required"
+          "role"
         ],
         "additionalProperties": false,
         "properties": {
@@ -134,35 +134,14 @@
           },
           "role": {
             "type": "string",
-            "enum": [
-              "manifest",
-              "agent_card",
-              "metrics",
-              "assumptions",
-              "sources",
-              "self_check",
-              "compliance_matrix",
-              "standard_matrix",
-              "design_depth_matrix",
-              "geometry",
-              "drawing",
-              "narrative",
-              "copyright_statement",
-              "visualization",
-              "proposal_figure",
-              "rendered_proposal_html",
-              "video",
-              "audio",
-              "media_poster",
-              "caption_track",
-              "transcript"
-            ]
+            "pattern": "^[a-z][a-z0-9_]{1,63}$",
+            "description": "Stable extensible snake_case role token. Canonical roles include manifest, agent_card, metrics, assumptions, sources, self_check, compliance_matrix, standard_matrix, design_depth_matrix, geometry, drawing, narrative, copyright_statement, visualization, proposal_figure, rendered_proposal_html, video, audio, media_poster, caption_track, transcript, changelog, asset, figure, evidence_data, and verification_script."
           },
           "required": {
             "type": "boolean"
           },
           "sha256": {
-            "type": "string",
+            "type": ["string", "null"],
             "pattern": "^[a-f0-9]{64}$"
           },
           "language": {
@@ -233,10 +212,33 @@
             "high",
             "medium",
             "low",
-            "unknown"
+            "unknown",
+            "mixed_provisional_and_conceptual"
           ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["schema_version"],
+        "properties": {
+          "schema_version": {
+            "pattern": "^0\\.2\\."
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "files": {
+            "items": {
+              "required": ["path", "role", "required"]
+            }
+          }
         }
       }
     }
-  }
+  ]
 }

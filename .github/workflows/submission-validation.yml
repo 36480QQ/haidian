@@ -38,7 +38,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Install trusted review dependencies
-        run: python3 -m pip install --disable-pip-version-check -r requirements-review.txt
+        run: python3 -m pip install --disable-pip-version-check -r requirements-review.txt -r requirements-validation.txt
 
       - name: Run deterministic submission validation
         env:

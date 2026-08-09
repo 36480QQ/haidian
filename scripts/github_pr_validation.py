@@ -631,11 +631,18 @@ def main() -> int:
                     "participant deletion-only PR; removed files were not content-validated"
                 )
         else:
+            strict_manifest_paths = [
+                item["filename"]
+                for item in files
+                if item.get("status") == "added"
+                and item["filename"].endswith("/manifest.json")
+            ]
             validation = validate_submission(
                 worktree,
                 pr_author,
                 validation_files,
                 bypass,
+                strict_manifest_paths=strict_manifest_paths,
                 required_readiness_contract_dirs=required_readiness_contract_dirs,
             )
             if validation_files and not base_sha:
