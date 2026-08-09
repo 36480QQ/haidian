@@ -19,6 +19,12 @@ This proposal does not equate an “AI city” with a collection of robots, blue
 
 Every spatial statement is a **conceptual recommendation / reference scheme / subject to professional development**. It is not an approval, government commitment or statutory-planning conclusion. Formal figures are generated from the submitted GeoJSON and `metrics.json`; the fifteen participant-cleared AI images communicate desired experience only and are not evidence of existing conditions, boundaries, historical records or metrics. [source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
 
+![City-scale vision aerial from the North Fifth Ring to Beijing North Railway Station: AI-generated concept expression, not evidence of existing conditions, boundaries or approval](assets/scenes/full-corridor-aerial.jpg)
+
+The visual revision makes the full-corridor base map the primary evidence. Three portrait A0 boards cover the masterplan, system strategies, and scenario/delivery system; five formal panorama figures retain the complete corridor frame from the North Fifth Ring through Qinghuayuan, Wudaokou, the North Fourth Ring, Dazhongsi, the North Third Ring and Beijing North Railway Station. The pale urban texture is context only and is not used for measurement. Formal boundaries, routes, public spaces and nodes remain derived from submitted GeoJSON. AI board drafts and their credibility screening are recorded in `report/narrative.md` so generated labels and quantities cannot be mistaken for verified conclusions.
+
+![A0-01 masterplan board: full-corridor plan, city-scale aerial and scenario strip](assets/figures/board-masterplan.png)
+
 ![Overall scope, memory spine and three Agent districts](assets/figures/site-overview.png)
 
 ## Design basis and source inventory

@@ -18,6 +18,12 @@ iteration: "v1.0"
 
 本方案所有空间表述均为**概念建议 / 参考方案 / 供专业团队深化**，不代表政府批准、实施承诺或法定规划结论。核心规划图由提交的 GeoJSON 和 `metrics.json` 程序化生成；15 张场景图为参赛者定向生成并清权的 AI 概念表达，只说明体验意图，不承担现状、红线、历史影像或指标证据。[source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
 
+![北五环—北京北站城市尺度愿景鸟瞰：AI 生成概念表达，不作为现状、红线或审批证据](assets/scenes/full-corridor-aerial.jpg)
+
+本次视觉迭代将“全景底图”置于方案表达中心：三张 A0 竖版展板分别承担总体概念、系统策略、场景实施；五张正式横向总图均持续显示北五环—清华园—五道口—北四环—大钟寺—北三环—北京北站的完整廊道。灰色城市肌理只提供阅读语境，不参与面积和工程计算；正式范围、道路、公共空间与节点仍从提交 GeoJSON 派生。原始 AI 展板草案连同可信度筛选结果记录于 `report/narrative.md`，避免把生成式文字或数值误当作正式结论。
+
+![A0-01 总体概念展板：全域总图、城市尺度鸟瞰与场景条带](assets/figures/board-masterplan.png)
+
 ![CITY OF AGENTS 总体范围、中央记忆脊与三段城区](assets/figures/site-overview.png)
 
 ## 设计依据与资料清单
@@ -193,6 +199,8 @@ iteration: "v1.0"
 
 ![交通慢行、中央记忆脊与蓝绿公共空间复合系统](assets/figures/mobility-bluegreen.png)
 
+![A0-02 系统策略展板：空间结构与交通蓝绿两张全域总图](assets/figures/board-strategy.png)
+
 移动优先级依次为：步行/无障碍、自行车/微出行、公共交通接驳、受控自动驾驶沙盒、一般机动车。已建道路和在运轨道保持原有功能；七条概念缝合线优先利用现有路口、桥下和公园接口，任何跨越铁路或主路的构筑物均待安全与工程论证。[source:OSM-CONTEXT] [data:geometry/constraints.geojson#CTX-001] [depth:traffic_rail_slow_parking]
 
 停车策略是“外围共享、节点接驳、内部低速”，但车位数量保持待定；非机动车采用入口可见、小组团、可充电、可维护的设施，避免占用盲道和公园主路径。自动驾驶车辆不获得无条件路权，遇到行人、无障碍需求或系统异常时必须降级和人工接管。
@@ -223,6 +231,8 @@ iteration: "v1.0"
 ![京张1909与北京节点01：AI 生成概念场景](assets/scenes/time-railway-node01.jpg)
 
 ## 更新项目清单、实施政策与分期计划
+
+![A0-03 场景节点与实施系统展板](assets/figures/board-experience.png)
 
 | 编号 | 更新项目 | 位置/图层 | 阶段 | 依赖与实施建议 |
 |---|---|---|---|---|
