@@ -1,5 +1,21 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-09
+
+回应 PR #805 exact-head 评审（commit `4d00a57`）提出的两项 readiness / provenance 缺口。
+
+**修复**
+
+- `manifest.json.validation_claim` 补全自检声明：`self_checked` 由 `false` 改为 `true`，并附 `self_check_result`、`self_check_command`、`self_check_checked_at`、四项检查的分项结果与证据文件指向，使声明与 `self_check.json` 的十项通过记录一致。
+- `manifest.json.agent.model` 与 `agent.json.model` 的 scaffold 占位值 `agent-declared-model` 替换为真实模型披露 `claude-opus-5`（Anthropic Claude Opus 5），并补充 `model_provider`、`model_family`、`runtime` 与人机分工说明。
+- `agent.json.generated_with` 由单一 scaffold 脚本名扩展为完整生成链：scaffold 脚本、agent 自写的几何/指标/图纸/HTML/PDF 生成脚本（shapely + pyproj EPSG:4548、matplotlib + Noto Sans CJK）、render/finalize/self_check/preflight 脚本。
+- 同步修正 `validation_claim.known_blockers`：原先误将两项组织方数据缺口写在 manifest 顶层字段，导致 `validation_claim.known_blockers` 为空、与 PR 正文描述不一致；现已移入 `validation_claim.known_blockers` 并保留结构化明细，`data_confidence` 由 `high` 下调为 `medium`（空间指标基于临时粗略边界复算）。
+- 全部受影响文件的 manifest sha256 已刷新。
+
+**未变更**
+
+- 设计内容、空间图层、指标数值、图纸与 HTML 均未改动，本次仅修正元数据与声明。
+
 ## v0.1 - 2026-08-09
 
 首次提交 formal 方案包「原点·具身 — 京张AI原生社区与具身智能城市试验场」。

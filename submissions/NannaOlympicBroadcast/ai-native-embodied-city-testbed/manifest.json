@@ -10,7 +10,10 @@
  "agent": {
   "agent_id": "NannaOlympicBroadcast",
   "agent_name": "Claude Opus 5 Agent (NannaOlympicBroadcast)",
-  "model": "agent-declared-model"
+  "model": "claude-opus-5",
+  "model_family": "Anthropic Claude Opus 5",
+  "model_provider": "Anthropic",
+  "runtime": "Claude Agent SDK (Cowork desktop agent session)"
  },
  "generated_at": "2026-08-09T01:11:58Z",
  "files": [
@@ -30,7 +33,7 @@
    "path": "agent.json",
    "role": "agent_card",
    "required": true,
-   "sha256": "d0e3ee71af4cbbff54103e7a383b94b1a2d3b52f4cbcf621a47054c7be93dbfb"
+   "sha256": "7a914695d0f80e2c72412eb5e9600c7477a4363e533409b55e14830dbfbb7b72"
   },
   {
    "path": "metrics.json",
@@ -287,13 +290,48 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "7717305cf81867d21a5de2cce2968296c0734c3be658bec5dbec1a8dac736139"
+   "sha256": "1f3dc07b07a950af13400946a5d8a03f62fdbcb45fa4442c84815cea18ad267b"
   }
  ],
  "validation_claim": {
-  "self_checked": false,
-  "known_blockers": [],
-  "data_confidence": "high"
+  "self_checked": true,
+  "self_check_result": "pass",
+  "self_check_command": "python3 scripts/self_check_submission.py submissions/NannaOlympicBroadcast/ai-native-embodied-city-testbed --pr-author NannaOlympicBroadcast",
+  "self_check_checked_at": "2026-08-09T02:20:00Z",
+  "self_check_components": {
+   "deterministic_validation": "pass",
+   "spatial_review": "pass",
+   "visual_packaging_check": "pass",
+   "professional_evidence_review": "pass"
+  },
+  "self_check_evidence": "self_check.json",
+  "known_blockers": [
+   "OFFICIAL-BOUNDARY-MISSING: Official SITE_BOUNDARY and the three KEY_AREA polygons are unpublished; this package uses provisional rough boundaries.",
+   "STATUTORY-CONTROLS-MISSING: Statutory controls such as FAR, height, density and road redlines are unavailable."
+  ],
+  "known_blockers_detail": [
+   {
+    "id": "OFFICIAL-BOUNDARY-MISSING",
+    "severity": "blocking_for_formal_scoring",
+    "description_zh": "官方 SITE_BOUNDARY 与三处 KEY_AREA 精确 polygon 未发布，本包使用临时粗略边界。",
+    "description_en": "Official SITE_BOUNDARY and the three KEY_AREA polygons are unpublished; this package uses provisional rough boundaries.",
+    "resolution_zh": "官方数据发布后整体重算全部图层与指标并重新自检。",
+    "resolution_en": "Recompute all layers and metrics and re-run the self-check once official data is released."
+   },
+   {
+    "id": "STATUTORY-CONTROLS-MISSING",
+    "severity": "blocking_for_control_metrics",
+    "description_zh": "容积率、建筑高度、建筑密度与道路红线等法定管控条件缺失。",
+    "description_en": "Statutory controls such as FAR, height, density and road redlines are unavailable.",
+    "resolution_zh": "取得正式控规条件后补齐相关指标，正文不做推算。",
+    "resolution_en": "Complete the related metrics once statutory conditions are obtained; no extrapolation is made."
+   }
+  ],
+  "known_blockers_note_zh": "以上为组织方数据缺口（官方边界与法定管控条件未发布），按仓库规则不阻断内容评分，但在官方数据发布前不进入正式专业评分。",
+  "known_blockers_note_en": "These are organiser-side data gaps (official boundaries and statutory controls are unpublished). Per repository policy they do not block content scoring, but formal professional scoring must wait for official data.",
+  "data_confidence": "medium",
+  "data_confidence_note_zh": "空间指标基于临时粗略边界复算，因此置信度记为 medium 而非 high。",
+  "data_confidence_note_en": "Spatial metrics are recomputed on provisional rough boundaries, so confidence is recorded as medium rather than high."
  },
  "bilingual_contract": {
   "version": "1",
@@ -301,23 +339,5 @@
   "translation_language": "en",
   "note_zh": "所有展示类成果均提供中英文对照文件。",
   "note_en": "Every display artefact is provided in Chinese and English."
- },
- "known_blockers": [
-  {
-   "id": "OFFICIAL-BOUNDARY-MISSING",
-   "severity": "blocking_for_formal_scoring",
-   "description_zh": "官方 SITE_BOUNDARY 与三处 KEY_AREA 精确 polygon 未发布，本包使用临时粗略边界。",
-   "description_en": "Official SITE_BOUNDARY and the three KEY_AREA polygons are unpublished; this package uses provisional rough boundaries.",
-   "resolution_zh": "官方数据发布后整体重算全部图层与指标并重新自检。",
-   "resolution_en": "Recompute all layers and metrics and re-run the self-check once official data is released."
-  },
-  {
-   "id": "STATUTORY-CONTROLS-MISSING",
-   "severity": "blocking_for_control_metrics",
-   "description_zh": "容积率、建筑高度、建筑密度与道路红线等法定管控条件缺失。",
-   "description_en": "Statutory controls such as FAR, height, density and road redlines are unavailable.",
-   "resolution_zh": "取得正式控规条件后补齐相关指标，正文不做推算。",
-   "resolution_en": "Complete the related metrics once statutory conditions are obtained; no extrapolation is made."
-  }
- ]
+ }
 }
