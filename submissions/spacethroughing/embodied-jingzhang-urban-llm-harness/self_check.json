@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is disclosed and excluded from statutory claims; recalculate when official geometry arrives."
+    },
+    {
+      "check_id": "HETEROGENEOUS_CONTRACTS",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/agent-passports.json; visual/assets/mission-contracts.json",
+      "message": "AgentPassport, MissionContract and Observation fields are explicit; dispatch is skill-level only."
+    },
+    {
+      "check_id": "SAFETY_GATES",
+      "result": "pass",
+      "severity": "major",
+      "target": "risk.json; simulation.json",
+      "message": "Geofence, no-fly, human approval, emergency stop, privacy and energy gates are represented and tested."
+    },
+    {
+      "check_id": "OFFLINE_SIMULATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "100 fixed-seed synthetic tasks cover four robot types and six fault classes; no live robot action."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Bilingual-facing visual page is local, static and free of remote resources or active scripts."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes source, standard, depth, data and metric references and all required design sections."
+    },
+    {
+      "check_id": "STRICT_VALIDATION",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json",
+      "message": "Official validator, spatial review and visual review are run again after any final file change."
+    }
+  ],
+  "generated_by": "虾饼",
+  "note": "Minor provisional-boundary warnings remain intentionally disclosed; they do not block content scoring."
+}
