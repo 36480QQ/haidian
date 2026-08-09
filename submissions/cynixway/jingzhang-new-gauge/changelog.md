@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v4.3 - 2026-08-09
+
+修复评审指出的两处必改项
+
+- 事实一致性：front-matter summary、国际传播文案、visual/index.html 中残留的"定下标准轨距/set China's track gauge"表述统一改为以青龙桥人字形折返线+竖井法为历史锚点（与正文概念声明一致）。
+- AI provenance：manifest.agent.model 和 agent.json 从 "agent-declared-model" 改为实际模型 builtin:bigmodel-coding-plan/GLM-5.2。
+- 重新生成 report/proposal.html 和 visual/index.html，刷新 manifest 哈希。
+
 ## v4.2 - 2026-08-08
 
 修复概念叙事力度（v2=71分 → v4.1=62分退步的第二个根因）

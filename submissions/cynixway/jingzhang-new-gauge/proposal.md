@@ -3,7 +3,7 @@ title: "京张新轨：为AI原生城市定下新轨距"
 author_github: "cynixway"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以詹天佑为京张铁路定下标准轨距(1435mm)的开拓精神为母题，把百年京张AI创新带设计为'为AI原生城市定下新轨距'的开放共创建议：一轴三轨两翼的空间结构、可复核的工程化指标证据链、12张AI场景卡、3处AI朝圣地标与长期运营体系。全部空间内容均为概念建议，基于provisional边界生成，待官方红线补齐后整包重算。"
+summary: "以詹天佑在京张铁路青龙桥设计'人'字形折返线、用工程智慧攻克陡坡的开拓精神为母题，把百年京张AI创新带设计为'为AI原生城市定下新轨距(新标准)'的开放共创建议：一轴三轨两翼的空间结构、可复核的工程化指标证据链、12张AI场景卡、3处AI朝圣地标与长期运营体系。全部空间内容均为概念建议，基于provisional边界生成，待官方红线补齐后整包重算。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
 iteration: "v1.0"
@@ -318,7 +318,7 @@ iteration: "v1.0"
 导视系统区分于一带整体 Logo 系统：Logo 是品牌识别（谁），导视是空间叙事（哪里/什么故事）。两者共享色彩与字体体系但功能不同。所有导视须满足无障碍：语音导览、大字高对比、触觉地图、轮椅可达高度。符号系统中的历史人物肖像、铁路图像须清权，不使用未授权的论文图像或版权材料 `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`。
 
 **国际传播文案方向（agent.5 international_communication_copy）**：
-- 英文主张：*"The New Gauge — setting the standard for AI-native cities, where the Jing-Zhang Railway once set China's track gauge."*
+- 英文主张：*"The New Gauge — setting the standard for AI-native cities, inspired by the Jing-Zhang Railway's legacy of engineering ingenuity."*
 - 国际叙事：从詹天佑的工程开拓精神到AI时代的标准共建，强调"中国人自力定标"的延续性。
 - 传播渠道方向：国际规划/AI会议、开发者社区、城市设计媒体（均为概念建议，待传播团队深化）。
 

@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "cynixway",
     "agent_name": "ZCode",
-    "model": "agent-declared-model"
+    "model": "builtin:bigmodel-coding-plan/GLM-5.2"
   },
   "generated_at": "2026-08-08T08:26:18Z",
   "files": [
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1a8a8dc82b1ac3b2aa1805f6bb9429aa044fdae356223f2c9e45111b4a756a8e"
+      "sha256": "d0feea8d40ca691ecdfc605b31b9c198f522db7617f13ea6162dd640b679050c"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ca6874062262c790ad596590af7aba441ae8bcd999dfb0ebc31dc76398d1619a"
+      "sha256": "9580e7e1eeee0a9408b50e693bba19d545060fb6c497ac3fb4a2f98c716d1d1c"
     },
     {
       "path": "metrics.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b1a8e0e668a25c68f20449d9a728607912c8eab60828762d3be03edbe29211ae"
+      "sha256": "9db7bff1c124414d52a83c21eb641c0456fc0aca10ac95622bfb476ab21fedbd"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7d9263632f3dc9a762071d4b11ac15d25a2700d3c16e7501ec2e927aa07f8692"
+      "sha256": "eb877fdfe92a10d504d821bcb7b9e1697df5fbb487966d5579c43b9635b54686"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "c16a7e91dcf228dd031b9746fc50471ce1290b51d26d9cf96acd30abbe72cef7"
+      "sha256": "d652d4005fd3e223945b8d98bc4e8249c8e725792d8c1c493f1cd8b5f626ffc7"
     }
   ],
   "validation_claim": {
