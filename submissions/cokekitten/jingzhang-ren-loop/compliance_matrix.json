@@ -951,7 +951,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "note": "命名体系「京张·人字线/线—站—道口—场」、Logo方向(人字双轨+原点圆环)、三区两翼协同回路与总体空间结构图(site-overview)在正文与图面完整展开。"
+   "note": "命名体系「京张·人字回路/线—站—道口—场」、Logo方向(人字双轨+原点圆环)、三区两翼协同回路与总体空间结构图(site-overview)在正文与图面完整展开。"
   },
   {
    "requirement_id": "agent.2",
@@ -1023,8 +1023,9 @@
    ],
    "metrics": [
     "scenario_card_count",
-    "crossing_count",
-    "slow_network_length_m"
+    "receipt_stage_count",
+    "tabletop_check_count",
+    "human_takeover_path_count"
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
@@ -1051,6 +1052,9 @@
     "BOUNDARY_TRUST",
     "KEY_AREAS_TRUST",
     "LAND_USE_TOPOLOGY",
+    "MINIMUM_SLICE",
+    "PROTOCOL_SCHEMA",
+    "TABLETOP_REHEARSAL",
     "VISUAL_STATIC"
    ],
    "note": "12张场景卡(3张产业测试验证)、6类用户画像、场景-空间-运营映射与绿黄红三态机制。"
