@@ -65,11 +65,29 @@
       "message": "Generated assets and public-source use are disclosed; no third-party map tiles, logos or portraits are embedded."
     },
     {
+      "check_id": "MANIFEST_SHA256_COMMITTED",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "All declared SHA-256 values were refreshed from Git-normalized LF blob content and verified in an isolated checkout against upstream/main@14bce12f."
+    },
+    {
       "check_id": "OFFICIAL_CONTROLS",
       "result": "unknown",
       "severity": "major",
       "target": "assumptions.json",
       "message": "Official boundary, controls, roads, buildings, heritage and municipal data remain missing; professional recalculation is required."
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
+  "recorded_at": "2026-08-09T00:27:13Z",
+  "recorded_by": "scripts/self_check_submission.py against upstream/main@14bce12f",
+  "recorded_gate_status": {
+    "deterministic_validation": true,
+    "spatial_review": true,
+    "visual_review": true,
+    "professional_review": true
+  }
 }
