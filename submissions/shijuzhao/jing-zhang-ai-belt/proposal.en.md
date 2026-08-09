@@ -56,6 +56,16 @@ The coordinated research scope carries two tasks: building a world-class AI inno
 
 Full provenance, licensing, and transfer limits are recorded in `sources.json`; none are presented as committed investment, policy, or implementation [source:AGENT-TASKBOOK].
 
+**Regional Synergy Mechanism (agent.2 supplement).** The proposal identifies element flows and interface mechanisms between the belt and surrounding innovation nodes (conceptual only, not confirmed arrangements):
+
+| Synergy target | Element flow | Interface mechanism | Conceptual direction |
+| --- | --- | --- | --- |
+| Beiwei Community / Future S&T City | Basic research → applied transformation | Joint labs / open-source communities / academic salons | Bidirectional talent exchange and compute sharing |
+| Huairou S&T City | Big science facilities → AI training data | Data interface / joint testing / exhibition | Mutual exhibition windows |
+| Jing-Jin-Ji (BTH) | Industrial chain coordination / talent flow | Transport connectivity / policy coordination / joint events | Jing-Zhang heritage culture belt linkage |
+
+Regional synergy requires deepening under the formal planning framework; it does not constitute a confirmed government arrangement.
+
 ![Three key areas and overall spatial structure](assets/figures/key-areas.png)
 
 ## Overall Design Scope: Urban Renewal at Regulatory-Plan Urban-Design Depth
