@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4c841d69b33e891e8d34ceb7ddb98c33d7fde7d1ba39e55f0b988b3cd37b85ec"
+      "sha256": "3b32bb90d2d627e9417b551d0b45d041bd0014ea308b0a01346dbbb587b8f58d"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cc80a37c8fb9a1e8f5b17fd84a9cac79485529d53afc3bb8edd2641a7827d810"
+      "sha256": "3aabfea2ce16a68981b3977502a26cd4d048112483e32f1e25aa12411018ef32"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0067ebada7d8dbb1319afa60ac5bffe0ca73b9c7645d09f5d379fc3a6ee77d7b"
+      "sha256": "b5facebf0f3b0e6724ce84ea3a5d954d55b72916ef3c871abfcb917d7257aea6"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f5cdb7c0da3549d66fd98c373b56cee8c76c3002f076b932e114d6a4ec00db82"
+      "sha256": "eb6deed22480ef3b56b86d2477991904dd27251d9ee2fdeae374bfb6cc3ed54f"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "5d0c4d4552bed53c2109827071a5b8551a654a29e95f3a6fdfa24c71156ea277"
+      "sha256": "6b87133f427f7a57283545b15c88f99c19a0c27d73f248a751f418aa41c35f80"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "872cc6373a4540d2c7667b470bde257cd06ce749854c4495eb2ea4934efc9ef3"
+      "sha256": "3bf90b1da0c46ecce91774390dbbab50c0bd3e20593e9130180d621a427920ce"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -408,7 +408,7 @@
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "taskbook_crosswalk",
       "required": true,
-      "sha256": "ab871974388c8e4b7855cb9446a30768519e622ad24c423ae08ffbd16257b09b"
+      "sha256": "ab6d902efdac3286368e16116d14589d38cc488b1a615272a36c0694af8384a2"
     },
     {
       "path": "visual/assets/annual-event-system.json",
@@ -444,7 +444,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "3ef8c6469735cafa50f6f55160f57ca7d73ac7f72be9abf3b2874ac016c1a472"
+      "sha256": "a2baf2c7dc41ad3430fc9742e0157d3445bbae0a220cf0bf0246d278b5679269"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",

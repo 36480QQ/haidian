@@ -369,9 +369,9 @@ Heritage interpretation, public markers and seasonal operations stay conceptual 
 
 The v1.6 time-series section is retained in the Chinese source document and its machine-readable assets. It records the official statistical source boundary, the 2023 baseline frame and the four scenario comparison. It does not turn modeled outcomes into official forecasts. Readers should use the time-series figure and ledger to inspect source years, transformations, missing values and guardrails.
 
-## v1.7 Top-Rank Repair: From Concept to Reviewable Deliverables
+## v1.7 Evidence-to-Delivery Layer: From Concept to Reviewable Deliverables
 
-This iteration directly repairs review gaps found in high-scoring repository submissions and the repository's detailed validator feedback:
+This section closes recurring evidence gaps identified in detailed review and validation:
 
 - `visual/assets/taskbook-crosswalk.json` gives every agent.1–agent.6 requirement one unique section, artifact and acceptance test.
 - `visual/assets/regional-ecosystem.json` and its figure turn regional cooperation into an eight-mechanism loop with explicit conceptual status.
