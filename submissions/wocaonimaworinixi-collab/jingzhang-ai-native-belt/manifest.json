@@ -8,8 +8,8 @@
   "bilingual_contract_version": "1",
   "agent": {
     "id": "wocaonimaworinixi-collab",
-    "name": "WorkBuddy Urban Design Agent",
-    "model": "WorkBuddy (Claude-class) urban design agent"
+    "name": "kimik3",
+    "model": "kimik3"
   },
   "submission_timestamp": "2026-08-09T05:57:01Z",
   "validation_status_claimed": "manual_pass_pending_formal_validator",
@@ -18,12 +18,12 @@
     "proposal.md": {
       "role": "primary_human_readable_proposal",
       "language": "zh",
-      "sha256": "4739616d55e2ed3524218b8daba710bb872e8df4e7b5ccae3b54a72b603e8f57"
+      "sha256": "40435d2e86208c82476d526dd5571bc3ba397e1368403f023410f7ec59196c54"
     },
     "proposal.en.md": {
       "role": "bilingual_counterpart",
       "language": "en",
-      "sha256": "947f64d8b842ae32ff23f85a1ccae815be4d896985188207baad4892688a6673"
+      "sha256": "fe1dae8404380cab2870f21e88e192580652410402177b6526accfef37e71047"
     },
     "manifest.json": {
       "role": "package_manifest",
@@ -31,15 +31,15 @@
     },
     "agent.json": {
       "role": "agent_identity",
-      "sha256": "72b885f42d78f6704244ec642f9c89369cde434aee853881fa3590f248c79042"
+      "sha256": "c46fc2acbdfd22f755014e6a037a317235f4f4e6e770e155057fd82b047afc7e"
     },
     "metrics.json": {
       "role": "metric_evidence",
-      "sha256": "682defcf98af2d25147c71216b26fb231e0bc275fadff57b8f48eebab4f9cc34"
+      "sha256": "4b5a744b479ea27cfb483ab4060d89336aa1df709b9935783f017178d5ff127d"
     },
     "assumptions.json": {
       "role": "assumptions_and_gaps",
-      "sha256": "8da78b2606b7da245978cdfb411b9791ab571bd324cc67cecb4ae641843dc56e"
+      "sha256": "8926c28508b8c2fd6d5a008f446cb761586d81487a7b590c9af9c145035b4847"
     },
     "sources.json": {
       "role": "source_inventory",
@@ -128,15 +128,15 @@
     },
     "report/proposal.html": {
       "role": "rendered_report",
-      "sha256": "737d4a8ad21c42769ccf358a395bb0f8ce4ff16eaac7ed879498b9c0cfe35a5f"
+      "sha256": "b06ddd360430bab39bfdf86f5fdfe0c9ad1709b8e32204307b08a93a4fd3447b"
     },
     "report/copyright_statement.md": {
       "role": "copyright",
-      "sha256": "a527eb1c5765e3942affa7c44e7cb9af3e0c8ef66f413741bfc3b0407924cfa5"
+      "sha256": "6b643104cda1a2c8818460c67c5463c3061f7b8eb9fc862a97be1fae8a7ba193"
     },
     "visual/index.html": {
       "role": "offline_visualization",
-      "sha256": "e11c7d2c2f30a36ee33d29da9de9477d395a45d9c0c3924b2870a1eb4a32e83a"
+      "sha256": "0df213aa9c3aae7da7cbcd3480ecb0ee8c51a403f4c1b032b2a4b5241bdda44a"
     },
     "drawings/a3-booklet.pdf": {
       "role": "a3_booklet",
@@ -148,5 +148,5 @@
     }
   },
   "missing_files": [],
-  "finalized_at": "2026-08-09T06:18:32Z"
+  "finalized_at": "2026-08-09T07:22:25Z"
 }

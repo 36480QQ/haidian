@@ -19,6 +19,7 @@
     "M4": 2126883.9,
     "R2B1": 708961.3
   },
+  "land_use_mix_rationale": "M4 (AI R&D / hard-tech pilot) is ~50% of the provisional envelope, reflecting a research-and-innovation belt where labs, pilot lines and robot test fields dominate. Residential/life uses are carried by R2B1 (mixed living+commerce) plus the KEY-WUDAOKOU AI-native community, woven into mixed-use blocks rather than isolated as one large zone. Provisional; recompute against statutory zoning when official controls arrive.",
   "total_land_use_area_sqm": {
     "status": "known",
     "value": 4253767.8,
@@ -95,7 +96,9 @@
     ],
     "formula": "green_area / land_use_area",
     "confidence": "low",
-    "assumptions": []
+    "assumptions": [
+      "Numerator uses the actual green-core geometry (green_space.geojson, 510452.1 sqm), which is intentionally smaller than the G1A zoning parcel in land_use.geojson (708961.3 sqm). The G1A parcel is a zoning envelope that also carries heritage-corridor buffer and non-green public-realm uses. Ratio is computed on the conservative actual green core."
+    ]
   },
   "public_space_area_sqm": {
     "status": "known",

@@ -26,5 +26,15 @@
       "mitigation": "Used representative professional-standard set in standard_matrix.json; replace when supplied."
     }
   ],
+  "design_rationales": [
+    {
+      "topic": "green_space_vs_G1A_zoning",
+      "note": "green_space.geojson (510452.1 sqm) is the actual green-core geometry; the G1A parcel in land_use.geojson (708961.3 sqm) is a zoning envelope that also includes heritage-corridor buffer and non-green public-realm uses. green_space_ratio (0.12) is computed on the conservative actual green core."
+    },
+    {
+      "topic": "land_use_mix",
+      "note": "M4 ~50% reflects an AI R&D / hard-tech innovation belt; residential and life uses are carried by R2B1 mixed living+commerce and the KEY-WUDAOKOU AI-native community, woven into mixed-use blocks. Provisional; recompute against statutory zoning."
+    }
+  ],
   "language": "All design language is conceptual/reference; not statutory planning or implementation commitment."
 }

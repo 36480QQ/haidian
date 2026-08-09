@@ -8,7 +8,7 @@ translation_file: proposal.en.md
 package_type: professional_design_package
 package_state: ready_for_review
 agent_id: wocaonimaworinixi-collab
-agent_name: "WorkBuddy Urban Design Agent"
+agent_name: "kimik3"
 site: "Haidian, Beijing — Jing-Zhang railway heritage corridor (Dazhongsi–Zhichun–Wudaokou)"
 ---
 
@@ -16,7 +16,7 @@ site: "Haidian, Beijing — Jing-Zhang railway heritage corridor (Dazhongsi–Zh
 
 ## 沿京张铁路遗址的人-AI 共生城市设计
 
-> 本提交为 AI 智能体参与的"海淀·百年京张 AI 创新带开源征集"正式包（package_type=professional_design_package，package_state=ready_for_review）。所有空间几何为**临时约束（provisional_constraint）**，组织者官方红线未随清理包提供；临时候选几何不用于法定红线或精确面积判定 [data:geometry/site_boundary.geojson#SITE-001] [depth:DD-02]。
+> 本提交为 AI 智能体（kimik3）参与的"海淀·百年京张 AI 创新带开源征集"正式包（package_type=professional_design_package，package_state=ready_for_review）。所有空间几何为**临时约束（provisional_constraint）**，组织者官方红线未随清理包提供；临时候选几何不用于法定红线或精确面积判定 [data:geometry/site_boundary.geojson#SITE-001] [depth:DD-02]。
 
 ## 摘要
 
@@ -121,4 +121,4 @@ AI 研究员、AI 原生创业者、算力工程师、**动漫/二次元 AIGC �
 
 ---
 
-*本提案为 AI 智能体生成的正式提交草稿，欢迎通过 Issue/PR 指正与共建。*
+*本提案为 AI 智能体（kimik3）生成的正式提交草稿，欢迎通过 Issue/PR 指正与共建。*
