@@ -79,6 +79,25 @@ class DataRegistryTests(unittest.TestCase):
                 self.assertEqual(source["local_paths"], [local_path])
                 self.assertTrue((REPO_ROOT / local_path).exists())
 
+    def test_reviewed_policy_sources_encode_specific_scope_and_reuse_boundaries(self) -> None:
+        registry = json.loads((REPO_ROOT / "data" / "source_registry.json").read_text(encoding="utf-8"))
+        sources = {source["source_id"]: source for source in registry["sources"]}
+        generative = sources["DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"]
+        generative_allowed = "\n".join(generative["allowed_uses"])
+        self.assertIn("Article 2 scope", generative_allowed)
+        self.assertIn("not a general user opt-out", generative_allowed)
+        self.assertIn("do not set a numeric statutory response deadline", generative_allowed.lower())
+        self.assertIn("public-opinion or social-mobilization capacity", generative_allowed)
+        barrier = sources["DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW"]
+        self.assertIn("Article 39", "\n".join(barrier["allowed_uses"]))
+        self.assertIn("2023-06-28", barrier["notes_zh"])
+        self.assertIn("2023-06-29", barrier["notes_zh"])
+        elderly = sources["DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45"]
+        for source in [generative, barrier, elderly]:
+            self.assertIn("No reuse permission is inferred", source["license_summary"])
+            self.assertIn("page chrome", source["license_summary"])
+            self.assertIn("third-party editorial content", source["license_summary"])
+
     def test_invalid_registry_fails_for_duplicate_and_restricted_approved_source(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

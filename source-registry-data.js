@@ -150,8 +150,9 @@ window.HAIDIAN_SOURCE_REGISTRY = {
         "compliance"
       ],
       "allowed_uses": [
-        "Article 2 scope and Articles 14, 15 and 17 of the Measures for public-facing generative AI services offered within mainland China",
-        "service suspension or handling, complaint reporting and security-assessment references only where the Article 2 scope applies"
+        "Article 2 scope for services that use generative AI to provide generated text, images, audio or video to the public within mainland China",
+        "Article 14 unlawful-content and service-handling duties, not a general user opt-out requirement",
+        "Article 15 complaint and reporting channels with timely handling; the Measures do not set a numeric statutory response deadline"
       ],
       "prohibited_uses": [
         "legal opinion or case-specific compliance determination",
