@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-09
+
+- Added a bilingual one-page executive brief at the top of both readable proposals.
+- Bound one ordinary-person door-to-door chain to choice, request, takeover, fail-closed exit and independent replay.
+- Kept the M-09 evidence explicitly synthetic/offline with `performance_results=null` and `operational_status=not_authorized_not_run`.
+
 ## v1.6 - 2026-08-09
 
 - Added a minimum offline tabletop for the existing M-09 storm/network-outage fallback scenario.
