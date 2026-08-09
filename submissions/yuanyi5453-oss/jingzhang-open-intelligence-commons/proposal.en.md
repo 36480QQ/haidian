@@ -1,4 +1,4 @@
----
+﻿---
 title: "Jing-Zhang Open Intelligence Commons"
 author_github: "yuanyi5453-oss"
 language: "en"
@@ -21,19 +21,36 @@ The proposal treats the Centennial Jing-Zhang AI Innovation Belt as civic infras
 
 ## Three-Level Scope Framework
 
-The three levels form one decision chain. Regional mechanisms become corridors and civic interfaces, then reversible key-area prototypes. Every prototype must return measurable lessons to the belt. Official boundaries, road redlines and a full survey are absent, so areas support comparison and tool validation only. Official geometry must trigger recalculation of all derived layers, metrics, figures, HTML and PDFs [data:geometry/site_boundary.geojson#SITE-001].
-
 The three levels are one decision chain rather than separate drawings. Regional mechanisms become corridors and civic interfaces at overall-design scale, then reversible prototypes in the key areas. Every prototype must feed measurable lessons back to the belt. Because official boundaries, road redlines and a full existing-condition survey are absent, areas support comparison and tool validation only. Once official geometry arrives, the base polygons, all derivative layers, metrics, figures, HTML and PDFs must be recalculated together [data:geometry/site_boundary.geojson#SITE-001].
 
 The coordinated research area addresses regional collaboration and future-city questions; the overall design area sets renewal, public-space, mobility and blue-green structure; the three key areas become prototypes for professional deepening. All three levels share one evidence chain and explicit boundary caveat [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework].
 
-## Coordinated Research Area: Industry and Future City Research
+### Official Scope and Design Response
 
-Case transfer follows capability, interface, space and governance. It extracts auditable mechanisms, specifies data and responsibility interfaces, assigns suitable labs or civic rooms, and adds privacy, accessibility, incident and exit rules. Regional links are proposed benchmarks and portable protocols, not administrative commitments. Local capacity and demand still require public intake and professional research [source:SOURCE-REGISTRY].
+| Level | Official scale | Proposal response | Current evidence boundary |
+|---|---:|---|---|
+| Coordinated research | 43.6 km² | Regional innovation links, future-city mechanisms and case transfer | Mechanism study only; no statutory polygon is generated |
+| Overall design | 11.4 km² | Renewal, mobility, blue-green, civic space and operating network | Provisional base recalculates to about 11.41 km²; official boundary remains required |
+| Key-area detailed design | 368.4 ha | Differentiated prototypes for Zhongzhiyuan 192.1 ha, AI Origin Community 104.3 ha and Dazhongsi 72.0 ha | Areas follow the official task text; submitted polygons are provisional diagrams |
+
+“One spine, two loops and three origins” is the proposal's spatial language; the official “three areas and two wings” is an industry-coordination requirement. They are not interchangeable. The western R&D loop connects conceptually to the Zhongguancun Technology Services Wing; the eastern civic-life loop connects to the Xiaoyue River Scenario Enablement Wing; the Open Walk links both with the three key areas. This is a design translation, not official zoning. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+
+## Coordinated Research Area: Industry and Future City Research
 
 Case transfer follows four steps: capability, interface, space and governance. The proposal extracts verifiable collaboration mechanisms rather than copying iconic forms; specifies data, equipment and responsibility interfaces; assigns suitable labs, forums, street tests or civic rooms; and adds privacy, accessibility, incident and exit rules. Regional collaboration is a proposed common benchmark and portable protocol, not an administrative commitment. Local capacity and stakeholder needs still require public issue intake and professional research [source:SOURCE-REGISTRY].
 
 An “open models—open scenarios—open governance” interface can connect northern science districts, Future Science City, Huairou Science City, the Economic-Technological Development Area and wider Jing-Jin-Ji nodes. Transfer mechanisms include open benchmarks, trusted data spaces, scenario challenge lists, global open-source residencies, low-carbon compute accounting and ethics review [source:AGENT-TASKBOOK] [depth:industry_ecosystem_study].
+
+### Global Case Mechanisms
+
+| Case | Transferable mechanism | Jing-Zhang interface | Limitation |
+|---|---|---|---|
+| Singapore Punggol Digital District | Industry-campus-community integration and an Open Digital Platform | Shared data dictionary and urban-lab protocol across the three origins | Mechanism reference only; governance authority and platform are not copied [source:CASE-PUNGGOL] |
+| Helsinki Smart Kalasatama | Agile pilots with residents, firms and the city | Challenge list, bounded tests and public learning reviews | Must follow local data rules and community consent [source:CASE-KALASATAMA] |
+| Paris STATION F | Programme-based start-up community and multi-partner services | Open-source residencies, enterprise desk and global demo calendar | A single-campus model is not treated as an urban-renewal template [source:CASE-STATION-F] |
+| Montréal Mila | Research, talent, technology transfer and public-interest work | Talent origin, trustworthy-AI review and public learning | An institute model cannot substitute for a local operator [source:CASE-MILA] |
+| Dubai AI Campus | Physical/digital infrastructure, accelerator and partner network | Global collaboration station and bounded validation space | Promotional claims are not used as performance evidence [source:CASE-DUBAI-AI] |
+| Toronto Quayside data-governance debate | Independent oversight, responsible use and public interest | Data minimisation, public register, appeal and exit mechanisms | Governance caution only; the discontinued delivery path is not copied [source:CASE-QUAYSIDE] |
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -57,17 +74,53 @@ Five core personas are open-source developers, start-ups, researchers, surroundi
 
 Twelve scenario cards cover accessible multimodal wayfinding; human-reviewed rail crowd prompts; campus-industry transfer matching; enterprise-service copilots; senior-service referrals; rain-garden microclimate feedback; civic co-design boards; rail-heritage interpretation; multilingual public services; bounded last-metre delivery; a trusted-agent interoperability sandbox; and low-carbon compute accounting. Delivery, interoperability, model-safety evaluation and compute accounting are testing-and-validation scenarios with bounded zones, authorised data, human takeover, event logs and exit rules [metric:scenario_card_count] [metric:testing_scenario_count].
 
-## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+### Five Personas and Inclusion Guardrails
 
-Seven nodes support incubation, validation, culture, exchange, global collaboration, talent living and civic services. Demolition requires structural and fire review, heritage assessment, life-cycle carbon evidence and public-connectivity benefit. The building layer is not a survey. Professional teams must map nodes to reusable stock and then test height, spacing, daylight, fire and utility capacity [depth:height_massing_character].
+| Persona | Core need | Spatial/service response | Exclusion guardrail |
+|---|---|---|---|
+| Open-source developer | Reproducible tests and collaborators | Commons hall, night workstations, open benchmarks | No closed hardware or paid membership as the only entry |
+| Start-up team | Affordable validation and enterprise support | Shared test field, service copilot, demo interface | Human review; no automated approval conclusion |
+| Researcher | Trustworthy data and transfer | Research forum, ethics review, version archive | Sensitive data remains authorised and withdrawable |
+| Surrounding resident | Low disturbance, clarity and appeal | Civic room, quiet hours, non-digital desk | Public access cannot depend on an app |
+| International visitor | Bilingual orientation and short collaboration | Bilingual signs, accessible demos, visitor permissions | State purpose, retention and cross-border limits |
+
+Older adults, children, people with low vision and people with limited mobility are cross-cutting reviewers in every persona test, not a marginal “special user” scenario.
+
+### Twelve AI+ Scenario Cards
+
+| # | Scenario/location | Primary users | AI role and minimum data | Human fallback / exit |
+|---:|---|---|---|---|
+| 1 | Accessible station-to-park wayfinding | Residents, visitors | Route advice; anonymous barrier status | Paper route at desk; withdraw if error exceeds threshold |
+| 2 | Rail crowd prompt | Commuters | Aggregated flow; no facial recognition | Operator review and manual broadcast |
+| 3 | Campus-industry matching | Researchers, start-ups | Authorised project tags | Both parties confirm; no automated funding rank |
+| 4 | Enterprise-service copilot | Start-ups | Policy corpus and volunteered information | Human desk confirms; no approval decision |
+| 5 | Older-adult service referral | Older residents | Minimal volunteered enquiry text | Social worker reviews; no diagnosis or risk score |
+| 6 | Rain-garden microclimate feedback | Residents, operators | Aggregated environmental sensors | Manual inspection; no personal tracking |
+| 7 | Civic co-design issue board | All residents | Clustering and summaries | Source text remains auditable; pause on bias or abuse |
+| 8 | Rail-heritage interpretation | Residents, visitors | Open archive and location trigger | Generated status is shown; editor reviews disputed facts |
+| 9 | Multilingual civic service | International visitors | User-supplied text for translation | Bilingual staff review critical matters |
+| 10 | Bounded last-metre delivery | Campus users | Device position and job ticket | Low speed, physical stop, human takeover; stop on exit |
+| 11 | Trusted-agent interoperability sandbox | Developers, researchers | Synthetic/de-identified set and logs | Isolation and red-team review; stop on overreach |
+| 12 | Low-carbon compute accounting | Teams, operators | Aggregated energy and job batches | Human audit; no ranking with incomplete data |
+
+### Four Bounded Test Protocols
+
+| Test | Boundary and acceptance | Stop condition | Accountable roles |
+|---|---|---|---|
+| Last-metre delivery | Marked low-speed campus segment; takeover always works and accessible route stays clear | Geofence breach, collision, failed stop or concentrated complaints | Site operator + safety officer |
+| Agent interoperability | Isolated sandbox; 100% blocking of unauthorised calls and traceable logs | Data leakage, permission bypass or missing logs | Technical operator + independent reviewer |
+| Model safety evaluation | Synthetic/authorised data; all high-risk outputs receive human review | Uncontrolled harmful output or unanswered appeal | Model provider + ethics panel |
+| Low-carbon compute accounting | Aggregated batches; publish only above an agreed metering coverage | Meter gap, definition drift or misleading rank | Compute operator + third-party audit role |
+
+Implementers must quantify and publish thresholds before each pilot. This proposal sets minimum guardrails but makes no engineering commitment for any institution. [metric:scenario_card_count] [metric:testing_scenario_count]
+
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Seven nodes support incubation, validation, culture, exchange, global collaboration, talent living and community services. Demolition requires structural/fire review, heritage assessment, life-cycle carbon evidence and a clear public-connectivity benefit. Since existing-building floor area and condition are unavailable, the building layer is a spatial index, not a survey. Professional teams must map the nodes to reusable stock and then test height, spacing, daylight, fire and utility capacity [depth:height_massing_character].
 
 The sequence is retain first, retrofit second, demolish cautiously and add reversible elements. The seven footprints are conceptual nodes, not a surveyed inventory, ownership judgement or permit. Total floor area, density and FAR remain unknown [data:geometry/buildings.geojson#BLDG-101] [metric:floor_area_ratio] [depth:retain_renovate_demolish].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
-
-Continuity is audited from station to crossing, park and entrance, checking gradients, tactile paving, lighting, shade, waiting and information. Devices operate only in marked low-speed zones with human takeover. No capacity, parking or new-access claim is made because stops, sections, demand and utilities are missing. Engineering must replace centre lines with official redlines before checking emergency and service conflicts [metric:road_area_sqm].
 
 Continuity is audited from station to crossing, park and building entrance, checking gradients, tactile paving, lighting, shade, waiting and information. Delivery devices operate only in marked low-speed zones with human takeover. No capacity, parking or new-access claim is made because stops, sections, demand and utilities are missing. Later engineering must replace centre lines with official redlines and sections before checking detours, emergency access and service conflicts [metric:road_area_sqm].
 
@@ -114,3 +167,4 @@ Core sources are the official planning announcement, Agent taskbook, source regi
 Core sources are the official planning announcement, the Agent taskbook, source registry, provisional geometry and local standard excerpts. Announcements define task scope; provisional geometry supports concept location and tool recalculation only; standards support methods only when their local snapshot status permits. Any future external source must record publisher, date, access date, rights, scope and limitations in sources.json before entering the formal argument [source:OFFICIAL-ANNOUNCEMENT] [source:BOUNDARY-SOURCE] [standard:STD-CONTROL-DETAILED-PLANNING].
 
 See `sources.json` for complete provenance, rights and use limits; `standard_matrix.json` for standards; `compliance_matrix.json` for tasks; and `design_depth_matrix.json` for depth coverage.
+
