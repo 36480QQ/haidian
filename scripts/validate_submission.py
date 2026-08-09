@@ -1346,9 +1346,29 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                 else:
                     report.add_warning(message + " (legacy package compatibility)")
             elif declared_digest:
-                actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
+                raw = listed_file.read_bytes()
+                actual_digest = hashlib.sha256(raw).hexdigest()
                 if declared_digest != actual_digest:
                     message = f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`"
+                    lf_raw = raw.replace(b"\r\n", b"\n")
+                    crlf_raw = lf_raw.replace(b"\n", b"\r\n")
+                    if (
+                        raw != crlf_raw
+                        and declared_digest == hashlib.sha256(crlf_raw).hexdigest()
+                    ):
+                        message += (
+                            "; declared digest matches the CRLF form, but Git is validating LF bytes. "
+                            "Regenerate manifest.json from the exact bytes committed to Git (for example, "
+                            "use an LF checkout or repository-local core.autocrlf=false before a fresh checkout)"
+                        )
+                    elif (
+                        raw != lf_raw
+                        and declared_digest == hashlib.sha256(lf_raw).hexdigest()
+                    ):
+                        message += (
+                            "; declared digest matches the LF form, but Git is validating CRLF bytes. "
+                            "Regenerate manifest.json from the exact bytes committed to Git"
+                        )
                     if translation_entry and not strict_bilingual:
                         report.add_warning(message + "; legacy bilingual metadata does not block review")
                     else:
