@@ -2,24 +2,24 @@
   "schema_version": "0.1.0",
   "proposal_id": "hanyu12138/jingzhang-proofline",
   "artifact_path": "visual/assets/participation.json",
-  "iteration": "v1.6",
+  "iteration": "v1.7",
   "status": "continuous_participation_cycle_documented",
-  "recorded_at": "2026-08-08T23:30:00+08:00",
+  "recorded_at": "2026-08-09T14:59:17+08:00",
   "synchronized_upstream": {
     "remote": "upstream",
     "branch": "main",
-    "commit": "d400d48d9cdbfdfc146c6100ef0727004267d862",
-    "commit_short": "d400d48d",
-    "result": "The v1.6 branch is rebased onto the latest fetched upstream/main; shared guidance and this package are unchanged from the previous baseline."
+    "commit": "4bc0049d330fe0c7ec567914c4601984f572abb3",
+    "commit_short": "4bc0049",
+    "result": "The v1.7 branch is synchronized to the latest fetched upstream/main. PR #850 added OSM as the seventh background-only registry source without changing PROV-SITE-001, and PR #842 added native Markdown rendering. The package aligns to both, adopts the clarified formal-readiness gate, and keeps geometry and metrics unchanged."
   },
   "required_inputs_reviewed": [
     {
       "path": "README.md",
-      "finding": "Participation is a return-pass loop: synchronize, reread changed inputs, inspect Issues and pull requests, validate sources, update the package and rerun preflight."
+      "finding": "Participation is a return-pass loop; credible external data may be used when source, purpose, permission and limits are registered, while privacy, non-public planning and unauthorized data are prohibited."
     },
     {
       "path": "skills/urban-design-ai-submission/SKILL.md",
-      "finding": "Keep the proposal directory authoritative, separate facts from assumptions, preserve professional and public-interest boundaries, and validate before handoff."
+      "finding": "Intentional narrative updates use proposal format v2 with claim-adjacent evidence; new bilingual packages declare contract version 1 and pair every text-bearing deliverable."
     },
     {
       "path": "brief/public-brief.md",
@@ -31,11 +31,11 @@
     },
     {
       "path": "data/source_registry.json",
-      "finding": "Source status and allowed use remain explicit; registered background material cannot replace primary evidence or official geometry."
+      "finding": "The canonical registry now contains seven sources, including the PR #850 OSM record classified as background_only. Package-local official or open-licensed records retain explicit use and prohibited-use boundaries."
     },
     {
       "path": "docs/formal-submission-guide.md",
-      "finding": "Formal package structure, language metadata, evidence references and local gates remain binding for every return pass."
+      "finding": "Format v2 keeps prose readable while structured files retain exhaustive evidence; strict bilingual mapping remains binding. Advisory proposal scoring does not establish readiness, so can_enter_formal_review and formal-review-ready from the full self-check are the required admission evidence."
     }
   ],
   "design_derivation": {
@@ -54,6 +54,19 @@
     "statement": "The design argument is self-contained and stands on Proofline's own task, evidence, spatial grammar and delivery logic."
   },
   "repository_collaboration": [
+    {
+      "issues": [846],
+      "pull_requests": [850],
+      "status": "merged_background_crosscheck_reproduced",
+      "impact": "An OSM / Overpass check reports zero intersection and a 412.5 m nearest distance between the mapped Jing-Zhang Railway Heritage Park and PROV-SITE-001, while the park is covered by PROV-RESEARCH-001.",
+      "proofline_action": "Independently rerun the published queries in EPSG:4548, register the matching readings as ODbL background-only evidence, preserve current geometry, and trigger full recalculation only when an official polygon resolves the discrepancy."
+    },
+    {
+      "pull_requests": [842],
+      "status": "merged_and_adopted",
+      "impact": "The canonical report renderer now preserves inline emphasis, block quotes and fenced code while retaining semantic tables and evidence markers.",
+      "proofline_action": "Regenerate both report languages with the current upstream renderer so the boundary warning and emphasis remain native, paired and reproducible."
+    },
     {
       "issues": [485],
       "status": "resolved_and_integrated",
@@ -123,12 +136,21 @@
       "result": "Retained across the bilingual narrative, structured readiness record, fixed core figure, HTML and formal PDFs."
     },
     {
-      "decision": "audit_closed_repository_issues",
+      "decision": "retain_prior_closed_issue_audit",
       "basis": [
         "nine closed Issues visible on 2026-08-08",
         "current upstream scripts and public-site readback"
       ],
-      "result": "No new design, data or bilingual requirement changes the package; website deployment remains a separate operational dependency."
+      "result": "The prior closed-Issue audit remains as historical trace. Current data, bilingual and boundary-cross-check changes are recorded separately in this v1.7 cycle; website deployment remains a separate operational dependency."
+    },
+    {
+      "decision": "add_trusted_external_evidence_by_use_class",
+      "basis": [
+        "Beijing 2025 statistical bulletin from the official municipal portal",
+        "Haidian school-bus catalogue from the Beijing Public Data Open Platform",
+        "independently rerun OSM / Overpass boundary cross-check with ODbL attribution"
+      ],
+      "result": "adopted as background-only records; the Beijing bulletin completes the scale ladder, the school-bus catalogue defines a pending verification workflow, and OSM records a discrepancy without becoming a boundary"
     },
     {
       "decision": "add_unlicensed_platform_heat_or_courier_data",
@@ -140,7 +162,8 @@
     {
       "decision": "change_spatial_layers_or_metrics",
       "basis": [
-        "No new official polygons, statutory controls or corridor observations were obtained."
+        "No new official polygons, statutory controls or verified corridor observations were obtained.",
+        "OSM and the provisional polygon can expose a discrepancy but cannot adjudicate one another."
       ],
       "result": "rejected"
     }
@@ -176,8 +199,8 @@
   "external_publication": {
     "performed": false,
     "reason": "No account-owner authorization was given for a separate social-media publication.",
-    "review_draft_zh": "京张智证线 v1.6 以本案自身的轨迹、站点和里程语法建立一构件一智证里程。普通服务基座、可逆试验口袋和公共证据轨组成建设湾，每个 K01—K06 构件凭自己的证据依次通过 CR0—CR4，并在三座智证站完成技术安全、权利维护和真实使用证据交接。空间与指标未在缺少官方资料时伪精确更新。",
-    "review_draft_en": "Jing-Zhang Proofline v1.6 derives One Component, One Proof-Mile from its own track, station and mile grammar. An ordinary-service base, reversible test pocket and public evidence rail form each construction bay. Every K01-K06 component advances through CR0-CR4 on its own evidence and hands off technical-safety, rights-maintenance and real-use records at three Proof Stations. No geometry or metric is changed without official evidence.",
+    "review_draft_zh": "京张智证线 v1.7 将全国、北京、海淀统计、通学公交目录与 OSM 交叉核验按用途分级登记：可信资料可以使用，但限制必须与数字同行。OSM 复算提示临时总体范围存在 412.5 米位置差异，却不替代官方红线；因此空间与指标保持不变，等待 official polygon 后全量重算。",
+    "review_draft_en": "Jing-Zhang Proofline v1.7 registers national, Beijing and Haidian statistics, a school-bus catalogue and an OSM cross-check by permitted use: trusted sources are usable only with their limits attached. The OSM rerun flags a 412.5 m discrepancy in the provisional Overall Design Area but supplies no official polygon, so geometry and metrics remain unchanged pending full recalculation.",
     "suggested_visual": "assets/figures/site-overview.png",
     "alt_text_zh": "临时总体范围内一条京张公共智证主脊连接众智园、AI 原点社区和大钟寺三座智证站；红色虚线边界为非官方临时约束。",
     "alt_text_en": "A civic-validation spine links Zhongzhiyuan, Beijing AI Origin Community and Dazhongsi within a provisional, non-official red dashed boundary."
