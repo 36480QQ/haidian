@@ -646,6 +646,59 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "Requires metered operation tests and an agreed service baseline."
+    },
+    "key_area_evidence_matrix_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json"
+      ],
+      "formula": "count(key-area evidence crosswalk artifacts)",
+      "confidence": "high",
+      "assumptions": [
+        "This counts a documentation artifact only; it does not establish field evidence, approval or operating performance."
+      ]
+    },
+    "key_area_evidence_matrix_record_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json"
+      ],
+      "formula": "count(key-area evidence crosswalk records)",
+      "confidence": "high",
+      "assumptions": [
+        "All three records reference provisional geometry and conceptual mappings."
+      ]
+    },
+    "key_area_evidence_matrix_field_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json"
+      ],
+      "formula": "records_with_all_required_crosswalk_fields / key_area_records",
+      "confidence": "high",
+      "assumptions": [
+        "Field coverage describes matrix completeness only, not field or partner coverage."
+      ]
+    },
+    "key_area_records_with_provisional_geometry": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_area_records with provisional_only geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Official key-area geometry is unavailable."
+      ]
     }
   }
 }
