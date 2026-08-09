@@ -6,11 +6,46 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.0"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.0 adds a five-stage rejectable pre-authorization startup protocol and a structured record of five AI-assisted design choices with explicit human decisions, without changing geometry or formal metrics. It retains v0.9's three-case, six-gate synthetic human-city handoff receipt, trade-off replay, and pre-authorization readiness ledger for six test scenarios. It separately maps the taskbook's thirteen unified review dimensions and the repository formal scorecard's seven workflow questions to the same in-package evidence; provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.2"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.2 puts overall spatial moves, three key areas, four value chains, and three release gates on the first reading surface, then reconnects the v1.0 pre-authorization startup protocol, AI decision replay, synthetic human-city receipt, and scenario-readiness ledgers. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## One-page read | Spatial moves first, governance evidence second
+
+### Design judgment
+
+“From an AI showcase to a city for people in the AI era” does not paste technology language onto a conventional plan. It translates rapid AI iteration into urban interfaces that are **enterable, rejectable, pausable, and reversible**.[source:AGENT-TASKBOOK] [depth:three_level_scope_framework] Three provisional key areas, a six-layer spatial operating system, four value chains, 16 spatial scenario nodes and three release gates resolve to one evidence chain.[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
+
+### Four value chains become spatial moves
+
+| Value chain | Readable conceptual move | Package evidence | Data still required |
+| --- | --- | --- | --- |
+| A Human dignity | Resident retention and service repair, a skills-transition corridor, human/phone/paper access, no-screen green space and wellbeing support | `LU-H01`, `ROAD-A-SKILL`, six personas, seventeen scenario cards | Resident baseline, small-business and employment follow-up, accessibility walk-through and authorized operations records |
+| B Machine-ready | Urban API exchange, silicon right-of-way test field, layered low-altitude logistics, reversible components and a public digital-twin bench | `LU-B01`/`LU-B02`, `ROAD-B-SILICON`, interface prototypes | Traffic/aviation/safety sections, interface responsibility, professional models and field tests |
+| C Hard constraints | Compute-power and heat audit, floodway and sponge simulation, regulatory sandbox, public-data authorization and version release room | `SC-C01`—`SC-C05`, three release gates, five-stage startup protocol | Energy/heat network, hydrology, insurance/liability, data authorization and formal boundary |
+| D Spillover | OPC shared lab, standards spillover studio and international service room that turn R&D records into reusable protocols | `SC-D01`—`SC-D03`, three-area interfaces | Participants, IP permissions, cross-region cooperation and service verification |
+
+### Three key areas are not three showcases
+
+| Provisional key area | Question | Representative spatial move |
+| --- | --- | --- |
+| Zhongzhiyuan AI autonomy accelerator | How are machines constrained and stopped? | Controlled embodied-AI testing, compute-power audit, restricted right-of-way and incident review |
+| Beijing AI Origin Community | How can ordinary people avoid digital exclusion? | Human channels, intergenerational learning, skills transition, resident retention and screen-free green |
+| Dazhongsi AI industry cluster | How does innovation become a public daily interface? | Cultural narrative, OPC/small-team services, international support and public display |
+
+All three boundaries are `official_boundary=false` and `geometry_role=provisional_constraint`; they express spatial relationships for recalculation, not official redlines, tenure boundaries or engineering locations.[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+### A small recomputable metric set calibrates the trade-offs
+
+The submission boundary recalculates to 11,412,825.386 square metres in EPSG:4548 (low confidence, provisional geometry); green space is 11.1213%, public space 1.0641%, retention-support land 18.2759%, and reversible reserve 15.0936%. The skills-transition corridor, silicon right-of-way and low-altitude concept corridor are 5,919.240 m, 4,585.615 m and 2,015.137 m respectively. These are recomputable conceptual quantities, not statutory indicators, engineering lengths or performance commitments.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m] [metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
+
+### Three release gates bridge a ten-year city cycle and three-month AI iteration
+
+`PHASE-V01` covers observation, baseline and public sense-making; `PHASE-V02` permits only reversible, exit-ready conceptual pilots; `PHASE-V10` is the point for expansion and standards spillover after professional review. Every gate retains an equivalent human service, unconfirmed accountability, data gaps and stop actions. These remain conceptual suggestions; no authorization, operation, approval or implementation is claimed.[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10] [depth:phasing_implementation]
+
+**First-read boundary:** the package can prove that spatial moves, evidence references, metric formulas and fail-closed paths are replayable offline. It cannot prove official boundaries, resident or employment outcomes, PUE/green-power, heat-network connection, traffic safety, permits, investment or real operations. Gaps remain in `assumptions.json`, `metrics.json` and the readiness register for later recalculation when public or authorized data arrives.[depth:risk_missing_data]
 
 # Jingzhang Human City OS
 
