@@ -232,6 +232,22 @@ Organizer dependencies are real: the word for official appears 122 times across 
 
 **The shape of this finding is the proposal's whole subject.** #950 and #957 are careful work; the diagnosis held in all eight of the eight it was drawn from, and the fix follows from it consistently. **The difference is not care. It is n.** One reading cannot show a systematic bias and a full corpus can — which is why this proposal argues not for more caution but for grounding judgements in readings someone else can re-run. Every count, classification rule and matched string ships in `visual/assets/review_gate_survey.json`, and anyone can change a rule and re-run, including to a conclusion this proposal would not like.
 
+**There is a sequel, and it moves the conclusion from 'unlikely' to 'never close'.** After accepting the correction, @Sonike went back and located the summary item's exact trigger: `repair_count > 0` appends it unconditionally, and 56% of dimensions scoring 5/5 still carry `required_repairs_zh` in his twenty samples — putting the odds of all seven being clean at roughly 0.3%.
+
+This proposal replaced that estimate with an observation, because **the summary item states the repair total**, so `repair_count` can be read directly from all 146 historical verdicts:
+
+| Reading | Value |
+|---|---|
+| Minimum `repair_count` ever observed | **17** |
+| Repair counts of the three verdicts scoring ≥85 | 17 / 20 / 21 |
+| Verdicts with all seven dimensions at 5/5 | **0** |
+| Most dimensions at 5/5 in any single verdict | **4 of 7** |
+| Correlation between weighted score and repair count | r = −0.352 |
+
+The gate needs `required_next_actions_zh` empty, which needs `repair_count == 0`. **The closest the corpus has ever come is 17.** The verdict scoring 89 carried 17 repairs and one scoring 57 carried 17 as well — **this gate does not measure quality tier, it measures whether the reviewer has anything to say, and a reviewer always does.**
+
+**This proposal does not argue for loosening it, for his reason and more so**: this package's previous version scored 91 and is one of the three ≥85 verdicts in that data. It has no neutral position here, so it publishes the mechanism and the numbers and proposes nothing — no change, no request to adjust any submission's tier. Whether to loosen depends on what the organizers want `featured-candidate` to mean, which is a curatorial judgement and not a technical defect.
+
 Filed on Issue #950 and PR #957.
 
 ## Three-Level Scope Framework

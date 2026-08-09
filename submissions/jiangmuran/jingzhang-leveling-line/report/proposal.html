@@ -203,6 +203,11 @@ code {
 <p><strong>三、组织方项从来不是唯一阻塞项。</strong> 在最宽松的剥离之后，剩余参与者 action 的最小值是 <strong>4</strong>；「仅剩组织方项」的 PR 数在四种规则下都是 0。</p>
 <p>组织方依赖当然真实（<code>官方</code> 122 次、<code>重算</code> 59、<code>组织方</code> 45）。测量只说明一件事：<strong>移除它们不改变任何一个结果。</strong></p>
 <p><strong>这处发现的形状，正是本方案通篇在讲的那一件事</strong>：#950 与 #957 都是认真的工作，八份样本给出的诊断在八份里都成立，据此写的修法在逻辑上也自洽——<strong>差别不在认真程度，在 n</strong>。一次读数看不出系统性偏差，全量能。这也是为什么本方案主张的不是「更谨慎地判断」，而是「把判断建立在可被别人重跑的读数上」：全部计数、归类规则与匹配字符串随包提交于 <code>visual/assets/review_gate_survey.json</code>，任何人可以改了规则重跑，包括改到与本方案结论相反。</p>
+<p><strong>这一节还有一个后续，它把结论从「概率很低」推到「从未接近过」。</strong> #950 的作者 @Sonike 在接受纠正后回头定位了汇总项的确切触发条件：<code>repair_count &amp;gt; 0</code> 即无条件追加，而七维中得 5 分的维度里仍有 56% 带着 <code>required_repairs_zh</code>（他的 20 次采样），据此估算七维同时干净的概率约 0.3%。</p>
+<p>本方案用全量把这个估计换成了观测——<strong>汇总项本身写着 repair 总数</strong>，因此 146 份历史 verdict 的 <code>repair_count</code> 可以直接读出：</p>
+<div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>repair_count</code> 观测最小值</td><td><strong>17</strong></td></tr><tr><td>分数 ≥85 的三份，其 repair 数</td><td>17 / 20 / 21</td></tr><tr><td>七维全部 5/5 的 verdict</td><td><strong>0</strong></td></tr><tr><td>单份 verdict 中 5/5 维度的最大数量</td><td><strong>4 / 7</strong></td></tr><tr><td>加权分与 repair 数的相关</td><td>r = −0.352</td></tr></tbody></table></div>
+<p>闸门要求 <code>required_next_actions_zh</code> 为空，即 <code>repair_count == 0</code>。<strong>历史上最接近的一次是 17。</strong> 而 89 分那份带 17 条、57 分那份也带 17 条——<strong>这条闸门测的不是质量档位，是「评审有没有话说」，而评审总是有话说。</strong></p>
+<p><strong>本方案不就此建议放宽，理由与他相同且更明显</strong>：本包上一版得分 91，是这份数据里 ≥85 的三份之一，在这件事上没有中立立场。只摆机制和数字，不建议修改，不申请任何档位调整。是否放宽取决于组织方希望 <code>featured-candidate</code> 表达什么——那是策划判断，不是技术缺陷。</p>
 <p>已发于 Issue #950 与 PR #957。</p>
 <h2>三层范围工作框架</h2>
 <p>方案按公告确定的三个层次组织，并与水准网的三级精度一一对应 <span class="evidence evidence-depth">[depth:three_level_scope_framework]</span>。</p>
