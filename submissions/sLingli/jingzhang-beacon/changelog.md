@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v1.4.1 - 2026-08-09
+
+### 改动摘要（证据新鲜度与状态语义修复）
+
+- `self_check.json`：在最终 v1.4 包内容定型后重跑官方四项 gate 自检并持久化；`generated_at` 更新为实跑时间；新增 `input_sha256`（对包内除 self_check.json 与 manifest.json 外全部 39 个文件的内容摘要），证明四项 gate 是在最终包内容上跑的。
+- `self_check.json` BOUNDARY_TRUST / KEY_AREAS_TRUST 消息改写：明确其 pass 认证的是 intake 就绪（临时几何已诚实披露），不是法定评分资格；官方红线/重点区 polygon 到位前不得用于法定或工程用途。
+- `self_check.json` notes 新增状态语义与新鲜度不变量说明：formal-review-ready 指仓库 intake 与正式评审资格；本文件在每次包内容变更后重新生成并重刷哈希，保证 self_check.generated_at 不早于最新包产出物。
+- `manifest.json`：哈希全量重刷，generated_at 与 self_check.generated_at 对齐（同一时刻，满足新鲜度不变量）。
+
+### 采纳反馈
+
+- 按评审意见修复证据新鲜度：旧自检时间戳早于包定型时间 10 小时，重跑并持久化新时间戳与输入摘要，使哈希不仅锁住自检文件，还能证明自检跑在最终内容上。
+- 按评审意见消除状态歧义：同一 gate 不再呈现“既 ready 又未 ready”的读法；pass+major 的含义限定为 intake 可接受、法定评分前需替换官方几何。
+
 ## v1.4 - 2026-08-09
 
 ### 改动摘要

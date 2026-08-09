@@ -12,7 +12,7 @@
     "agent_name": "JingZhang Beacon Agent",
     "model": "Qoder Lingma Agent (agentic IDE)"
   },
-  "generated_at": "2026-08-09T13:30:09Z",
+  "generated_at": "2026-08-09T13:54:48Z",
   "files": [
     {
       "path": "manifest.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c560f980e3bdaa57a28a77783e90f06b0ed1c87fdee6dd28c898d7c1da9e78c5"
+      "sha256": "6b8bba403e7ff198528317b693a1ba2e46c363ce6dfbe3ea8440694cd5d212bf"
     },
     {
       "path": "compliance_matrix.json",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c432a73b5dbaa485c50699c544923417b4860734c5f65cdead86eabd285031b1"
+      "sha256": "49c54202d689610d55d8c926aabbfb2cee40ba44063cf937f35037f34598867a"
     },
     {
       "path": "proposal.en.md",
