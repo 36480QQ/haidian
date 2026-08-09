@@ -3,14 +3,15 @@
   "standards": [
     {
       "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
-      "requirement_zh": "公告 1.3、1.4、1.5 对项目目的、三层范围、设计任务和成果深度提出主控要求。",
-      "professional_dimension": "规划统筹",
+      "requirement_zh": "公告1.3、1.4、1.5对目标、三层范围、任务和成果深度提出主控要求。",
+      "professional_dimension": "任务符合性",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "三层范围工作框架",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -19,205 +20,168 @@
       "geometry_refs": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "implementation_phase_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "三层范围、三处重点片区、更新深度和成果目录均逐项落表；临时边界不被误称为正式红线。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-      "requirement_zh": "面向智能体任务书对十条共创原则、三大定位、五大功能、六项智能体任务、表达完整性和统一边界条款提出要求。",
-      "professional_dimension": "AI共创与运营",
+      "requirement_zh": "任务书要求总体概念、全栈生态、AI+场景、智能公共空间、文化叙事和长期运营六项回应。",
+      "professional_dimension": "智能体任务",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "设计依据与资料清单",
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "统筹研究范围产业与未来城市研究",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "scenario_node_count",
+        "industry_test_count",
+        "implementation_phase_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "以12场景、3个产业测试、6类人群、4个荣誉节点和全年运营日历落实六项智能体任务。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
-      "requirement_zh": "城市设计应落实规划、指导建筑设计、塑造城市特色风貌，并统筹平面和立体空间。",
+      "requirement_zh": "城市设计应统筹空间形态、公共空间、景观风貌和建筑设计引导。",
       "professional_dimension": "城市设计",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "设计依据与资料清单",
         "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "蓝绿空间、公共空间与城市风貌",
+        "重点区域详细设计"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
         "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "prototype_building_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "六条纵向功能带、连续共步公共地面、双绿带和三座重点共步园共同形成平面与立体引导。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
-      "requirement_zh": "控规深度相关结论必须区分已知控制条件、设计建议和待确认事项。",
-      "professional_dimension": "控规实施",
+      "requirement_zh": "控规深度判断必须区分法定控制、城市设计建议和待确认资料。",
+      "professional_dimension": "控规",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "设计依据与资料清单",
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "land_use_coverage_ratio",
+        "floor_area_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "用地拓扑完整，但容积率、高度、密度和退线明确保持unknown；成果不制造审批结论。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-      "requirement_zh": "用地表达采用可校验用地分类和 land_use_code，不使用自造分类替代。",
+      "requirement_zh": "用地表达采用国家指南对应的land_use_code，并保持全域覆盖和无重叠。",
       "professional_dimension": "用地分类",
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "设计依据与资料清单",
-        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -225,93 +189,72 @@
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/land_use.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "land_use_coverage_ratio",
+        "site_area_sqm"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "六个设计分区使用05、0702、0802、1207、1401代码；EPSG:4548复算覆盖率为1.0。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
-      "requirement_zh": "建筑专业深度规定待取得官方文件后启用；当前仅作为缺资料清单和深化提醒。",
-      "professional_dimension": "建筑深度",
+      "requirement_zh": "建筑专业深化应建立总平、单体、面积、构造和专业协同的完整文件链。",
+      "professional_dimension": "建筑",
       "mandatory": false,
       "review_status": "data_gap",
       "proposal_sections": [
-        "设计依据与资料清单",
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "用地、建筑规模与拆改留方案",
+        "重点区域详细设计",
+        "风险、版权与合规说明"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
+        "prototype_building_count",
         "building_footprint_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "key_area_count"
+        "floor_area_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001",
+        "A-BUILDING-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "PROFESSIONAL_EVIDENCE",
+        "SOURCE_PROVENANCE",
+        "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "当前28个基底仅是服务设施原型；待现状测绘、结构、权属和法定指标到位后进入建筑专业设计。"
     }
   ]
 }
