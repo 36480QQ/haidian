@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fff00576f89d8fc3723221030d0dfca5534ca472ab6d80626ffe98a6e5157738"
+      "sha256": "ac23ee166974ab3b8c4372dd200f1021f17e8c5794725b45a7de07c9a39671cc"
     },
     {
       "path": "agent.json",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "93fa781920c68a75221c7a9fe5df2d3809e4c89b0455d568da008c3fbb1e8326"
+      "sha256": "def1d2b574d630afd2ff427d618638b6ba9429d19e2b5d15af08361af7e435df"
     },
     {
       "path": "report/proposal.en.html",
@@ -434,21 +434,21 @@
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "5ac9bacfd95b1b5298d1820924c11119c04c836a6c929ccb620114a2ca93a0e8"
+      "sha256": "affd7676ce6cca6bb7778898e386aa851be1402ffed344f492d672dfdeac4c77"
     },
     {
       "path": "visual/assets/run_s08_tabletop.js",
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "547144f7ea9e7bc0935cb46660a5608c25082776f2732eaa1cd7e7b09197a609"
+      "sha256": "c1eab17fb61531ede68a6f7fae5974cb5da24285cc5d4bcd58057ad80a35b381"
     },
     {
       "path": "visual/assets/s08-tabletop-evidence.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3800427fb372b41380d0e4d6f914565e8215032992968c043bf1f28a12d12149"
+      "sha256": "a8c2445f870d26f9e23131320b720de9341a777657c25626331c2aa0d6b62ec7"
     },
     {
       "path": "assets/figures/hero-leveling-line.png",
@@ -524,7 +524,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high"
   },

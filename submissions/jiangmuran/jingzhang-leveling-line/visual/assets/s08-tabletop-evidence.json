@@ -4,10 +4,10 @@
  "scenario_id": "S08",
  "generated_by": "visual/assets/run_s08_tabletop.js",
  "reader_under_test": "visual/assets/check_closure.js",
- "cases_total": 9,
- "cases_as_specified": 9,
+ "cases_total": 10,
+ "cases_as_specified": 10,
  "cases_accepted": 2,
- "cases_refused": 7,
+ "cases_refused": 8,
  "proves": "The closure mechanism's decision logic is reproducible from the shipped contract, and the refusal branches — no local repair, no self-declared f, no homogeneous review parties, no missing non-AI path, no resumption on one pass, no majority-rule F1 resumption — fire where the proposal says they do.",
  "proves_not": "Nothing here is a field measurement. No real readings, no real review parties, no service performance, and no evidence that anyone would take a reading. The numbers are worked values chosen to exercise branches; treating them as operational evidence would be the substitution this proposal argues against.",
  "results": [
@@ -80,6 +80,16 @@
    "reasons": [
     "record.verdict: missing required property \"non_ai_path_available\"",
     "verdict.non_ai_path_available is absent: the equivalent non-AI path is not waivable, so omitting the field cannot be treated as satisfying it. State it explicitly as true."
+   ]
+  },
+  {
+   "case": "C6c-route-does-not-reach-a-known-point",
+   "rule": "a connecting route must terminate at a first-order benchmark, or nothing checks the carried value",
+   "expected": "reject",
+   "actual": "reject",
+   "ok": true,
+   "reasons": [
+    "stations[last]: a connecting route must terminate at a first-order benchmark, because the carried value has nothing to be checked against otherwise. This one ends at BM-302 (third)."
    ]
   },
   {

@@ -141,6 +141,29 @@ if (stations.length && stations[0].benchmark !== 'BM-0') {
   fail(`stations[0]: every circuit departs from BM-0, this one departs from ${stations[0].benchmark}`);
 }
 
+// RT-N and RT-S are 附合路线 — connecting routes, not closed loops. They depart
+// from the origin and terminate at a different, independently known point, and
+// that terminus is the whole reason the run is checkable: without a second
+// known height at the far end there is nothing for the carried value to be
+// compared against. The departure was enforced and the terminus was not, which
+// left the defining property of the route form unchecked. Resolved against the
+// shipped geometry rather than a list in this file, so a benchmark that stops
+// being first-order cannot silently keep qualifying.
+const ORDERS = (() => {
+  const gj = JSON.parse(fs.readFileSync(path.join(HERE, '..', '..', 'geometry/public_space.geojson'), 'utf8'));
+  return new Map(gj.features.filter((f) => f.properties.benchmark_id)
+    .map((f) => [f.properties.benchmark_id, f.properties.benchmark_order]));
+})();
+
+if (stations.length > 1) {
+  const last = stations[stations.length - 1].benchmark;
+  if (ORDERS.get(last) !== 'first') {
+    fail(`stations[last]: a connecting route must terminate at a first-order benchmark, because the ` +
+         `carried value has nothing to be checked against otherwise. This one ends at ${last} ` +
+         `(${ORDERS.get(last) || 'not a benchmark'}).`);
+  }
+}
+
 const parties = new Set(stations.map((s) => s.review_party));
 if (parties.size < 3) {
   fail(`review parties: ${parties.size} distinct across the circuit; a reading taken by one kind of party ` +

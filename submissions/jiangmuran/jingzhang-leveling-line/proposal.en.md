@@ -242,7 +242,7 @@ The naming system is an extensible numbering grammar rather than a slogan:
 | First order | First-order benchmark | BM-1, BM-2 (the origin BM-0 is listed separately) | The three key areas, re-measured annually |
 | Second order | Second-order benchmark | BM-2x | Nodes in the two wings, re-measured quarterly |
 | Third order | Third-order benchmark | BM-3xx | Community and station level, re-measured monthly |
-| Route | Closing route | RT-N, RT-S | The out-and-back path a scenario is validated along |
+| Route | Connecting route | RT-N, RT-S | The one-way path a scenario is validated along: departs BM-0, terminates at a first-order point |
 | Reading | Closure error / tolerance | f / F | The measure of trust, and its threshold |
 
 Any new node, scenario or institution receives a number in this grammar and joins a re-survey cycle. **That is what "extensible" means here** — a property of the numbering system, not an adjective attached to the concept.
@@ -281,7 +281,7 @@ The leveling network's answer is elevation transfer: each station's reading depe
              Zhongguancun services wing BM-2x (factors · IP and capital)
 ```
 
-- **BM-1 Zhongzhiyuan** carries the full-stack autonomous AI innovation system and the global-discourse positioning: it is where tolerance F is set, which in surveying is called the **datum of origin**.
+- **BM-1 Zhongzhiyuan** carries the full-stack autonomous AI innovation system and the global-discourse positioning: it is where tolerance F is set — the **tolerance datum**. This used to say "datum of origin", which is the wrong term: in surveying the datum of origin is the point heights are carried from, and here that is BM-0, which the shipped `check_closure.js` requires every circuit to depart from. Where the standard is set and where measurement starts are two things and cannot share one word.
 - **BM-0 the AI Origin Community** carries the world-class AI innovation ecosystem: it is both the network's starting point and the point at which closure is computed, and it is the physical landing place for the public knowledge base this call has produced.
 - **BM-2 Dazhongsi** carries AI-native new activity: high-frequency consumer and business scenarios take their readings here.
 - **The Zhongguancun services wing** supplies factors and capital and is the route's **support system**; **the Xiaoyuehe scenario wing** supplies real users and is therefore the route's **source of reading density**.
@@ -419,15 +419,15 @@ Each of the three key areas carries one survey role, and the three check one ano
 
 | Area | Survey role | Design positioning | Spatial move | AI scenarios and operation |
 |---|---|---|---|---|
-| Zhongzhiyuan AI Autonomous Innovation Acceleration Area [data:geometry/key_areas.geojson#PROV-KEY-001] | **BM-1, datum of origin** | Full-stack autonomous innovation and the source of governance standards | Tolerance chamber (F set and revised in public); low-carbon social interface along the Qinghe frontage; land reserved for a standard test field | S11 industry validation; compliance pre-check services for firms |
+| Zhongzhiyuan AI Autonomous Innovation Acceleration Area [data:geometry/key_areas.geojson#PROV-KEY-001] | **BM-1, the tolerance datum** | Full-stack autonomous innovation and the source of governance standards | Tolerance chamber (F set and revised in public); low-carbon social interface along the Qinghe frontage; land reserved for a standard test field | S11 industry validation; compliance pre-check services for firms |
 | Beijing AI Origin Community [data:geometry/key_areas.geojson#PROV-KEY-002] | **BM-0, origin benchmark** | Near-campus innovation, open-source system, talent district | **Origin benchmark stone** and public evidence hall (permanent display and search of every proposal in this call); direct campus-to-park walking link; rail-station integration | S01 scenario open day; S07 open-source collaboration; re-survey of talent services |
 | Dazhongsi AI Industry Cluster [data:geometry/key_areas.geojson#PROV-KEY-003] | **BM-2, high-frequency reading point** | AI-native consumption and business | Four-quadrant pedestrian connection at the intersection; compound use of planned green space; Dazhongsi station integration | S03 agent business desk; S05 data-factor circulation; S09 daily-service demonstration street |
 
 ![Key areas and benchmark layout](assets/figures/key-areas.en.png)
 
-### Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the datum of origin)
+### Zhongzhiyuan AI Autonomous Innovation Acceleration Area (BM-1, the tolerance datum)
 
-**Why the datum of origin belongs here.** A datum should sit where conditions are most stable and least exposed to day-to-day fluctuation. Zhongzhiyuan carries full-stack autonomous innovation and is where governance standards originate — it is where tolerance F is set. **The place that sets the standard should not also be the place under daily operating pressure**, or the standard drifts with that pressure rather than with evidence.
+**Why the tolerance datum belongs here.** The place that sets a standard should sit where conditions are most stable and least exposed to day-to-day fluctuation. Zhongzhiyuan carries full-stack autonomous innovation and is where governance standards originate — it is where tolerance F is set. **The place that sets the standard should not also be the place under daily operating pressure**, or the standard drifts with that pressure rather than with evidence.
 
 - **Programme.** R&D and pilot production lead, with a standard test field, a tolerance chamber — a standing public space in which F is set and revised — and an industry display frontage. The test field must be enclosable, pausable and reversible; its controlled boundary is [data:geometry/constraints.geojson#CONSTRAINT-001].
 - **Buildings and scale.** Indicative footprints are in [data:geometry/buildings.geojson#BLDG-001], including the test field and tolerance chamber (BLDG-004) and the L2 closure stele (BLDG-002, offset from the former so the two do not share ground). Scale is order-of-magnitude only and constitutes no building design.
@@ -711,7 +711,7 @@ The rule bypassed that way is the one this proposal repeatedly calls non-waivabl
 
 The shape of the defect is identical to the ones this package reports elsewhere: **a check that asks whether something was said wrongly rather than whether it was said at all.** This proposal has made that same error three times before — in translation coverage, in CJK leakage, and in the build's own verdict expression. This is the fourth, and the first found by someone else.
 
-Fixed in both layers: the schema now requires the field with `const: true`, and `check_closure.js` refuses absence by name, on the principle that a contract enforced in only one of two places is the same defect one level down. The tabletop gains the omitted-field case the reviewer asked for, C6b, and now runs **nine cases — two accepted, seven refused**. The shipped example record is unaffected and still passes.
+Fixed in both layers: the schema now requires the field with `const: true`, and `check_closure.js` refuses absence by name, on the principle that a contract enforced in only one of two places is the same defect one level down. The tabletop gains the omitted-field case the reviewer asked for, C6b, and now runs **ten cases — two accepted, eight refused**. The shipped example record is unaffected and still passes.
 
 **That this happened is the best evidence for the method.** A mechanism that is public, executable, and has its refusal branches written down in a file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
 
@@ -1099,7 +1099,7 @@ There are eleven sheets, nine of them numbered FIG.01–FIG.09 plus an unnumbere
 | FIG.02 | Evidence chain and package: a leveling circuit not yet closed | The red gap at the left of the circuit is the closure error; the three reading cards below are the measurement of this call itself |
 | FIG.03 | Three scope levels and network orders | The nesting of the three levels, and the right-hand column of values this proposal deliberately does not give |
 | FIG.04 | Three key areas and benchmark layout | Laid out horizontally per alignment-sheet convention; read the K0–K9 chainage and the positions of the eight tiered points |
-| FIG.05 | Walking, blue-green and closing routes | The direction and run of the two closing circuits, and the tolerance classes at lower right |
+| FIG.05 | Walking, blue-green and connecting routes | The direction and run of the two connecting routes, and the tolerance classes at lower right |
 | FIG.06 | Recomputed metrics and the field census | The distinction between the three metric classes at left; track coverage and meta-symbol saturation at right |
 | FIG.07 | Identity: mark, construction and applications | The mark draws the method: the datum departs, rises, returns — and does not land back on the datum |
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
