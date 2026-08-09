@@ -16,7 +16,7 @@ def git_blob_sha256(paths: Iterable[Path], *, cwd: Path) -> dict[Path, str] | No
     A contributor may have CRLF files in the worktree while Git stores their LF
     form. Manifests are checked against repository bytes in trusted CI, so use
     a temporary index to mirror the pending ``git add`` result. ``None`` means
-    that no usable Git repository/HEAD is available; callers can retain their
+    that no usable Git repository is available; callers can retain their
     file-byte fallback for standalone packages.
     """
     unique_paths = list(dict.fromkeys(Path(path).resolve() for path in paths))
@@ -46,19 +46,15 @@ def git_blob_sha256(paths: Iterable[Path], *, cwd: Path) -> dict[Path, str] | No
     environment = os.environ.copy()
     with tempfile.TemporaryDirectory(prefix="haidian-manifest-index-") as directory:
         environment["GIT_INDEX_FILE"] = str(Path(directory) / "index")
-        for command in (
-            ["git", "read-tree", "HEAD"],
+        staged = subprocess.run(
             ["git", "add", "--all", "--", *relative_paths.values()],
-        ):
-            staged = subprocess.run(
-                command,
-                cwd=repo_root,
-                capture_output=True,
-                env=environment,
-                check=False,
-            )
-            if staged.returncode:
-                return None
+            cwd=repo_root,
+            capture_output=True,
+            env=environment,
+            check=False,
+        )
+        if staged.returncode:
+            return None
 
         digests: dict[Path, str] = {}
         for path, relative_path in relative_paths.items():

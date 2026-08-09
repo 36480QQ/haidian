@@ -681,6 +681,64 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
 
             self.assertFalse(has_blocking_self_check(submission_dir))
 
+    def test_finalize_rejects_manifest_path_outside_submission(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "path-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": str(outside), "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("unsafe path", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
+            self.assertEqual("outside must not be hashed\n", outside.read_text(encoding="utf-8"))
+
+    def test_finalize_rejects_manifest_path_through_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "symlink-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            link = submission_dir / "linked.txt"
+            try:
+                link.symlink_to(outside)
+            except OSError as exc:
+                self.skipTest(f"symlink not supported: {exc}")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": "linked.txt", "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("path traverses symbolic link", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
+
     def test_scaffold_does_not_emit_contributor_exhibit(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -858,6 +916,7 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(checked.returncode, 0)
             self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertNotIn("declared digest matches", checked.stdout)
 
     def test_manifest_hash_mismatch_explains_crlf_normalization(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
