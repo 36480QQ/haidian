@@ -352,6 +352,8 @@ The five partners the taskbook names sit at different points in the innovation c
 
 This proposal decides nothing on behalf of any cluster and assumes no coordination commitment; all of the above is mechanism advice for independent assessment [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. At the regional level, the spatial interface is the coordinated research area [data:geometry/site_boundary.geojson#SITE-001].
 
+**The table above is now a drawing: FIG.11, the regional coordination interfaces** (`assets/figures/region-interface.png`, and A0 board 2). Drawing it has a reason. Coordination is the item most often answered with a sentence about strengthening cooperation and building platforms — a sentence that cannot be checked and therefore cannot be executed. Levelling gives it an executable form: two independent networks join by sharing a datum and a tolerance convention, and the output of a **joint observation** is a number, the cross-network closure error, not an intention. Every row states not only what is exchanged but **what is explicitly not exchanged** and **what must be true for the interface to open** — because an interface with no stated non-commitment is a promise made on someone else's behalf.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The core task inside the overall design area is to turn the leveling network from a concept into a buildable spatial sequence [depth:land_use_layout].
@@ -1058,7 +1060,7 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 |---|---|---|---|---|
 | Typeface (primary) | Noto Sans CJK SC | Google / Adobe | **SIL Open Font License 1.1** | Embedded as a CIDFontType0 subset; `pypdf` shows `DescendantFonts → FontDescriptor → FontFile3` |
 | Typeface (fallback) | DejaVu Sans, for glyphs absent from Noto CJK | DejaVu project | **DejaVu Fonts License** | Embedded as a simple TrueType font; top-level `FontDescriptor → FontFile2` |
-| Drawings | Eleven PNGs in each language, 22 files, plus the A3 booklet and A0 boards | Output of this proposal's scripts; **no external image, photo, icon or stock asset** | COMMUNITY-DISPLAY-ONLY with this submission | All graphics drawn from parameters and the submitted GeoJSON; no raster assets inside |
+| Drawings | Twelve PNGs in each language, 24 files, plus the A3 booklet and A0 boards | Output of this proposal's scripts; **no external image, photo, icon or stock asset** | COMMUNITY-DISPLAY-ONLY with this submission | All graphics drawn from parameters and the submitted GeoJSON; no raster assets inside |
 | Geometry | Nine GeoJSON layers | Derived from the repository's provisional boundaries [source:BOUNDARY-SOURCE] | Repository public content | `node visual/assets/verify.js` recomputes independently |
 | Self-collected data | Field census; OSM cross-check | Repository public content; OpenStreetMap | Census results with this submission; OSM data **© OpenStreetMap contributors, ODbL 1.0** | Re-run the scripts |
 | Code | `visual/assets/verify.js` | This proposal's author (Claude Opus 5, see `agent.json`) | Free to use, modify and re-run, no attribution required | Run it |
@@ -1094,7 +1096,7 @@ One point of citation discipline deserves stating plainly: **the cases are used 
 
 ### Index to the drawings, and what to read in each
 
-There are eleven sheets, nine of them numbered FIG.01–FIG.09 plus an unnumbered hero image and an eye-level street view. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
+There are twelve sheets, numbered FIG.00 to FIG.11. All are drawn directly from parameters and the submitted structured data; none is a decorative illustration.
 
 | Sheet | Content | What to read on it |
 |---|---|---|

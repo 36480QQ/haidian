@@ -377,6 +377,8 @@ Logo 方向取自水准点标石的实物形态与水准仪的读数十字丝，
 
 本方案不代替任何组团作出决定，也不假设已获得任何协同承诺；上述为可供各方独立评估的机制建议 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。区域层面的空间关系以统筹研究范围为界面 [data:geometry/site_boundary.geojson#SITE-001]。
 
+**上表已画成图：FIG.11「区域协同接口」**（`assets/figures/region-interface.png`，并置于 A0 展板二）。画出来是有原因的：协同这一项最常见的答法是「加强联动、共建平台」，这类表述无法被检验，因此也无法被执行。水准测量给了它一个可执行的形式——两张独立的水准网只要共用起算基准与限差口径，就能通过一次**联测**接成一张更大的网，而联测的产出是一个数（跨网闭合差），不是一份意向。图中每一行除了「交换什么」，还必须写出**「明确不交换什么」**与**「接口开启的前置」**：一个没有写明不承诺什么的接口，等于替对方许了诺。
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计范围的核心任务，是把水准网从概念落成可建造的空间序列 [depth:land_use_layout]。
@@ -1172,7 +1174,7 @@ node visual/assets/verify.js
 |---|---|---|---|---|
 | 字体（主） | Noto Sans CJK SC（全部中文与多数西文） | Google / Adobe | **SIL Open Font License 1.1**（允许嵌入与再分发） | A3/A0 内嵌为 CIDFontType0 子集，`pypdf` 读 `DescendantFonts → FontDescriptor → FontFile3` 可见 |
 | 字体（兜底） | DejaVu Sans（Noto CJK 缺失字形的兜底，如箭头与部分符号） | DejaVu 项目（Bitstream Vera 衍生） | **DejaVu Fonts License**（Bitstream Vera 系，允许嵌入与再分发） | 以 TrueType 简单字体嵌入，`pypdf` 读顶层 `FontDescriptor → FontFile2` 可见 |
-| 图纸与图表 | 十一张 PNG（中英各一套，共 22 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
+| 图纸与图表 | 十二张 PNG（中英各一套，共 24 个文件）、A3 文册、A0 展板 | 本方案生成脚本输出，**无任何外部图片、照片、图标或素材** | 随本方案以 COMMUNITY-DISPLAY-ONLY 提交 | 全部图形由几何参数与提交的 GeoJSON 绘制，可按参数重绘；图中无位图素材 |
 | 空间几何 | 九个 GeoJSON 图层 | 由本仓库 `provisional_boundaries.geojson` 派生 [source:BOUNDARY-SOURCE] | 仓库公开内容 | `node visual/assets/verify.js` 可从图层独立重算指标 |
 | 自采数据 | `census.json`、`field_map.json` | 原始数据为仓库公开内容；统计由本方案脚本生成 | 仓库公开内容；统计结果随包提交 | 重跑普查脚本即可复算；定级 `background_only` |
 | 代码 | `visual/assets/verify.js`（随包）与生成链（配套 Issue） | 本方案作者（Claude Opus 5，见 `agent.json`） | 可自由使用、修改、重跑，无需署名 | 直接运行 |
@@ -1208,7 +1210,7 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
-本方案共十一张图纸，其中九张编号为 FIG.01–FIG.09，另有主视觉与人眼高度街景两张不编号；均由参数与提交的结构化数据直接绘制，非示意性配图：
+本方案共十二张图纸，其中 FIG.00–FIG.11 连续编号；均由参数与提交的结构化数据直接绘制，非示意性配图：
 
 | 图号 | 内容 | 该图要读什么 |
 |---|---|---|
