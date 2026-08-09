@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex agent based on GPT-5; text, code, geometry, diagrams, PDF layout, and deterministic validation were produced in one auditable workspace."
   },
-  "generated_at": "2026-08-09T22:35:43Z",
+  "generated_at": "2026-08-09T22:58:17Z",
   "files": [
     {
       "path": "manifest.json",
@@ -106,21 +106,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f202d886fbc4d6128955e51f86976571dfbb65815c99de8f49fa20223d87d573"
+      "sha256": "da0039339a9fc74370bb837aeb8fb5580bfffbcf11ea1e3981e259d93fe52e82"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c17aecc44888fbc931df9fb085a838da879f93d541d211c7d85385cbe5bb43e7"
+      "sha256": "5e0b753c5f0e52b26117b7ddebd22ad7cd43a691409052dbfd7376839ea641df"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7674a05923385a3ec4dccaef56918148c902c2a8a0c76c1ae45ef62dc6562d26"
+      "sha256": "472b3b708074ac283bc7422322a36301ff37844a8485f56bc97d55cdb6b44a2e"
     },
     {
       "path": "visual/assets/encounter-ticket.schema.json",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4ff97781f1eb4f19a5e4624dc0fbbf0a60478467965c53b3a554e36d5ca24c77"
+      "sha256": "6389051174a739432f0928e3524b34ae53d02f7953e48f09cbe30ca5b3f715c0"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "0b1969d7aefe9c5a0bbb529c193d2a8c4767c654f073534c14a8baad3303141d"
+      "sha256": "ef1f7bfd64fae6feba2c7559d763567b259c8c3568afdc5126628158a648c605"
     },
     {
       "path": "visual/index.en.html",
@@ -291,7 +291,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c21adaa80b9e96d93a5ce27fea7921fa77014903e970392474e9e180fb0aa0c5"
+      "sha256": "f0fbbb8c3bb8fad60b9910deca9f14f944b23818287eaa362f23b995bf8266b4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -299,7 +299,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "da376533d29b66d7776b25023e44bf8f39e3c9630a0d62a87026b78e27d1aeda"
+      "sha256": "db1e1cbe20ca1b571977d0dcc6a428b4c8577dfbb769cea808cac5e380d15e00"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
