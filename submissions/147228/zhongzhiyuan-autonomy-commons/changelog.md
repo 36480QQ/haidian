@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v3.2 - 2026-08-10
+
+- 在中英文重点区域入口补充三座试验庭的概念 FAR、公共界面层数、自动化服务与人本路径的空间分层，以及首要专业证据。
+- 明确这些体量范围只用于城市设计比较，不改变 `autonomy_nodes.json`、几何、指标、场景、许可和部署边界。
+- 保留可撤回设施、人工接管、provisional 几何和未知现场基线；不新增道路、建筑、拆改或社会道路运营主张。
+
 ## v3.1 - 2026-08-10
 
 - Aligned the Chinese AV-T03 rollback-gate status with `visual/assets/curbside-test-gates.json`: `baseline: unknown` now renders as `UNKNOWN`, rather than visually upgrading an unmeasured weather/network outcome to a design target.

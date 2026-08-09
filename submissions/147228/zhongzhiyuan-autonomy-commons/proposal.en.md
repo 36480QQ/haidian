@@ -89,6 +89,20 @@ The three detailed points are stored in `visual/assets/autonomy_nodes.json`; the
 
 Zhongzhiyuan hosts managed-window safety evaluation, the AI Origin Community hosts equivalent automated and human service, and Dazhongsi hosts rail interchange, curb logistics and event-day separation. Each node must connect to a scenario card, curb state, responsible party, data boundary and stop condition; the node file is a low-confidence design register, not a permit or construction location. Survey, signal timing, station accessibility, fire routes, logistics windows and stratified resident baselines are still missing, so any first test must be closable, human-handover-ready and publicly replayable [data:visual/assets/autonomy_nodes.json#AUTO-NODE-001].
 
+### Conceptual Massing and Human-First Interfaces for the Three Test Yards
+
+An autonomous node cannot be reduced to a vehicle stopping point. The ledger below translates each test yard’s automation relationship into a ground-floor interface and a conceptual intensity range for later urban-design comparison; it does not change the node file or create a new redline.
+
+| Test yard | Ground-floor choice | Conceptual intensity | Public-facing height | First professional evidence to collect |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan | Separate enterprise arrival, low-speed service, maintenance/charging and fire-clearance layers; keep automation within a closable managed interface | FAR 1.2–1.8 for design comparison only | 2–4 storeys; upper height unknown | Existing buildings, ownership, fire/energy review, managed-site boundary and enterprise OD |
+| AI Origin Community | Put staffed service, continuous accessibility and equivalent paper/phone entry before the pick-up bay; automation cannot cut the daily route | FAR 1.0–1.5 for design comparison only | 2–3 storeys; upper height unknown | Accessibility walk, resident-service baseline, care/night needs, ownership and safety |
+| Dazhongsi | Separate rail transfer, walking-priority curb, loading clearance and public explanation; return the whole interface to human-only during events or network loss | FAR 0.8–1.3 for design comparison only | 1–3 storeys; upper height unknown | Station flow, curb counts, traffic organisation, fire, municipal and event-emergency evidence |
+
+FAR and storeys are conceptual research ranges, not regulatory-plan conditions, vehicle-testing permissions, building permits or construction commitments. A formal scheme must recalculate them after official planning, survey, ownership, structural, fire, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
+
+Until that evidence exists, spatial actions remain removable wayfinding, weather shelter, staffed service, accessible ramps, curb-state boards and movable separation. Nothing here authorises road widening, building increment, demolition or autonomous operation on a social road [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
 ![Key-area public roles and stop conditions](assets/figures/key-areas.en.png)
 
 ## 4. Design rules for an automated future
