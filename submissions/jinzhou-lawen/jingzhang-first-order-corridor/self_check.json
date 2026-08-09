@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "SITE-001 is explicitly provisional, medium-confidence, and not an official boundary."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three Key Areas are marked provisional and are not used as parcel or approval boundaries."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Concept land-use partition, design layers, and metrics retain traceable IDs and provenance."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "All display artifacts are generated locally with no remote dependency or active network request."
+    },
+    {
+      "check_id": "FIRST_ORDER_REALITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Customers, sites, costs, approvals, procurement, and implementation are not claimed as facts; gates and falsification rules are explicit."
+    },
+    {
+      "check_id": "BILINGUAL_PARITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English proposals use aligned 13-section structures, claims, metrics, evidence anchors, and figure positions."
+    }
+  ]
+}
