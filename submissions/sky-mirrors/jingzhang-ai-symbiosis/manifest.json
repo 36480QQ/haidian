@@ -196,7 +196,9 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [],
-    "data_confidence": "high"
+    "known_blockers": [
+      "site_boundary and key_areas use provisional geometry; all area metrics must be recalculated when official redline is supplied"
+    ],
+    "data_confidence": "provisional"
   }
 }
