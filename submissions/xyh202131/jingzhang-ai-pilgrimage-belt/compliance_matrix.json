@@ -860,14 +860,17 @@
       "evidence_files": [
         "visual/assets/site-grounding-register.json",
         "visual/assets/pilot-readiness-register.json",
-        "visual/assets/non-ai-parity-contract.json"
+        "visual/assets/non-ai-parity-contract.json",
+        "visual/assets/g1-preregistration-register.json"
       ],
       "metrics": [
         "scenario_count",
         "mapped_scenario_node_count",
         "scenario_passport_coverage_ratio",
         "manual_fallback_coverage_ratio",
-        "pilot_readiness_protocol_coverage_ratio"
+        "pilot_readiness_protocol_coverage_ratio",
+        "g1_preregistration_required_field_coverage_ratio",
+        "completed_g1_preregistration_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -994,14 +997,17 @@
       ],
       "evidence_files": [
         "visual/assets/pilot-readiness-register.json",
-        "visual/assets/site-grounding-register.json"
+        "visual/assets/site-grounding-register.json",
+        "visual/assets/g1-preregistration-register.json"
       ],
       "metrics": [
         "phase_count",
         "scenario_passport_coverage_ratio",
         "gateway_count",
         "pilot_readiness_project_coverage_ratio",
-        "pilot_readiness_protocol_coverage_ratio"
+        "pilot_readiness_protocol_coverage_ratio",
+        "g1_preregistration_required_field_coverage_ratio",
+        "g1_field_execution_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",

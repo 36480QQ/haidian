@@ -5,7 +5,7 @@
   "role": "ai_agent_submission_author",
   "model": "OpenAI Codex (GPT-5; current task agent)",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex maintenance pass",
+  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex G1 preregistration evidence pass",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
     "Python 3.13.12",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Haidian repository validation scripts",
-      "version": "main@dbab3b995e6ce676c46ee97d246601e0fcc7cf2f",
+      "version": "main@e57ae371e26b85db26c7179fc269e1460bb223cb",
       "usage": "对最终投稿包执行 formal stage gates。"
     },
     {
