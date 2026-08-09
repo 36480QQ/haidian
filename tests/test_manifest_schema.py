@@ -36,14 +36,43 @@ def manifest(schema_version="0.1.0", *, required=True):
         "validation_claim": {
             "self_checked": True,
             "known_blockers": [],
-            "readiness_contract": {"status": "local-only"},
+            "readiness_contract": "persisted-self-check-v1",
         },
     }
 
 
 class ManifestSchemaTests(unittest.TestCase):
-    def test_extensible_role_and_claim_metadata_are_valid(self):
+    def test_canonical_role_and_known_claim_metadata_are_valid(self):
         self.assertEqual(schema_errors(manifest()), [])
+
+    def test_versioned_extension_namespace_is_valid(self):
+        payload = manifest("0.2.0")
+        payload["files"][0]["role"] = "evidence_data"
+        payload["validation_claim"]["extensions"] = {
+            "x-readiness": {"schema_version": "1.0", "data": {"status": "local-only"}}
+        }
+        self.assertEqual(schema_errors(payload), [])
+
+    def test_unknown_claim_fields_are_rejected(self):
+        payload = manifest("0.2.0")
+        payload["validation_claim"]["readiness_contract"] = "unknown-contract"
+        payload["validation_claim"]["unreviewed_status"] = "ready"
+        errors = schema_errors(payload)
+        self.assertTrue(any("validation_claim" in error for error in errors))
+
+    def test_v02_role_extension_requires_detail(self):
+        payload = manifest("0.2.0")
+        payload["files"][0]["role"] = "other"
+        errors = schema_errors(payload)
+        self.assertTrue(any("role_detail" in error for error in errors))
+        payload["files"][0]["role_detail"] = "quantitative_model_backtest"
+        self.assertEqual(schema_errors(payload), [])
+
+    def test_v02_rejects_unregistered_role_token(self):
+        payload = manifest("0.2.0")
+        payload["files"][0]["role"] = "quantitative_model_backtest"
+        errors = schema_errors(payload)
+        self.assertTrue(any("role" in error for error in errors))
 
     def test_legacy_manifest_can_omit_required_metadata(self):
         self.assertEqual(schema_errors(manifest(required=False)), [])

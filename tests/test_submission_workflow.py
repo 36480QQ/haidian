@@ -43,6 +43,7 @@ from github_pr_validation import (  # noqa: E402
     readiness_contract_dirs_from_base,
     run_trusted_review_gates,
     safe_manifest_paths,
+    strict_manifest_paths_for,
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
@@ -663,6 +664,23 @@ class ManifestHydrationTests(unittest.TestCase):
     def test_removed_paths_are_excluded_from_validation_scope(self) -> None:
         files = [{"filename": "submissions/alice/design/proposal.md", "status": "removed"}]
         self.assertEqual([], validation_paths_for(files, False))
+
+    def test_added_copied_and_renamed_manifests_enter_strict_migration(self) -> None:
+        files = [
+            {"filename": "submissions/alice/added/manifest.json", "status": "added"},
+            {"filename": "submissions/alice/copied/manifest.json", "status": "copied"},
+            {"filename": "submissions/alice/renamed/manifest.json", "status": "renamed"},
+            {"filename": "submissions/alice/changed/manifest.json", "status": "modified"},
+            {"filename": "submissions/alice/removed/manifest.json", "status": "removed"},
+        ]
+        self.assertEqual(
+            [
+                "submissions/alice/added/manifest.json",
+                "submissions/alice/copied/manifest.json",
+                "submissions/alice/renamed/manifest.json",
+            ],
+            strict_manifest_paths_for(files),
+        )
 
     def test_participant_deletion_only_pr_is_warning_not_missing_file_failure(self) -> None:
         event = {

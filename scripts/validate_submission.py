@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Validate Haidian AI proposal pull requests.
 
-The core validator is deterministic and dependency-free. The published
-manifest schema is loaded through a lazy optional validator so trusted CI can
-enforce the forward contract without executing contributor-controlled code.
+The validator is intentionally deterministic and dependency-free so it can run
+on untrusted pull requests without installing contributor-controlled code.
 """
 
 from __future__ import annotations

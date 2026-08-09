@@ -337,6 +337,23 @@ def validation_paths_for(files: list[dict], maintainer_bypass: bool) -> list[str
     ]
 
 
+def strict_manifest_paths_for(files: list[dict]) -> list[str]:
+    """Return newly introduced manifest paths that must adopt schema 0.2.x.
+
+    GitHub reports copies and renames with statuses other than ``added``. Treat
+    their current path as new too, so a contributor cannot evade the migration
+    boundary by copying or renaming a legacy manifest.
+    """
+    paths: set[str] = set()
+    for item in files:
+        if item.get("status") not in {"added", "copied", "renamed"}:
+            continue
+        filename = item.get("filename")
+        if isinstance(filename, str) and filename.endswith("/manifest.json"):
+            paths.add(filename)
+    return sorted(paths)
+
+
 def is_review_queue_candidate(changed_files: list[str], pr_author: str) -> bool:
     """Return true only for a single participant-owned submission directory."""
     roots: set[str] = set()
@@ -631,18 +648,12 @@ def main() -> int:
                     "participant deletion-only PR; removed files were not content-validated"
                 )
         else:
-            strict_manifest_paths = [
-                item["filename"]
-                for item in files
-                if item.get("status") == "added"
-                and item["filename"].endswith("/manifest.json")
-            ]
             validation = validate_submission(
                 worktree,
                 pr_author,
                 validation_files,
                 bypass,
-                strict_manifest_paths=strict_manifest_paths,
+                strict_manifest_paths=strict_manifest_paths_for(files),
                 required_readiness_contract_dirs=required_readiness_contract_dirs,
             )
             if validation_files and not base_sha:
