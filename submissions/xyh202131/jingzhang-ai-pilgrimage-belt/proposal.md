@@ -78,7 +78,7 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 
 依据分为四级，各级只承担与其权威程度相称的作用：
 
-- 第一级是征集公告、智能体任务书和项目场地包，用于确认任务与提交边界 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。
+- 第一级是征集公告、智能体任务书和项目场地包，用于确认任务与提交边界 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。
 - 第二级是仓库资料登记、标准索引和处理导航，用于定位证据及其用途限制 [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 - 第三级是北京市关于原点社区、百年京张实景测试和“一核多点”创新街区的公开背景，只用于判断协同方向，不代表项目已批准或任何机构承诺参与 [source:BEIJING-AI-ORIGIN-2026] [source:BEIJING-AI-DISTRICTS-2026]。
 - 第四级是国家数据、AI 内容标识和“人工智能+”政策，与六个全球案例一起用于机制启发和治理边界 [source:NATIONAL-DATA-INFRA-2025] [source:AI-CONTENT-LABEL-2025] [source:AI-PLUS-2025]。
@@ -93,7 +93,9 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 - 城市设计范围与控规程序边界分别由两项住建领域材料约束 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 - 用地术语和建筑设计深度缺口分别登记，不把缺口记录冒充已核条文 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 
-当前精确红线、现状建筑、权属、控规指标、市政、交通工程与文保控制仍未取得。`geometry/site_boundary.geojson` 和三处重点区继续使用仓库临时替代范围，只能支撑概念复核 [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。它们不得用于审批、征地、精确面积或工程实施，边界与控制条件假设保持显式 [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001]。
+当前精确红线、现状建筑、权属、控规指标、市政、交通工程与文保控制仍未取得。`geometry/site_boundary.geojson` 和三处重点区继续使用仓库临时替代范围，只能支撑概念复核 [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。它们不得用于审批、征地、精确面积或工程实施，边界与控制条件假设保持显式 [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001]。
+
+主线最新边界依据还记录了一次独立背景核查：OSM 已测绘公园要素与 `PROV-SITE-001` 的相交覆盖率为 0%，最近距离约 412.5 米。该读数既可能受 OSM 不完整影响，也可能反映临时推定范围的偏差，**不能据此判定哪一方正确，更不能反向修改或升级成官方边界**；本方案因此保持临时几何不变，把正式 polygon、坐标系和版本核验列为全量重算的触发条件 [source:PROVISIONAL-BOUNDARY-BASIS]。
 
 ## 三层范围工作框架
 
@@ -104,6 +106,21 @@ V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、�
 百年京张不是一条摆放 AI 产品的科技走廊，而是一条把城市问题转化为**可共创、可验证、可暂停、可复现、可向社会交付**的 AI 公共创新生产线。“AI 朝圣”不是对技术的崇拜，而是公众沿线完成“认知历史—提出问题—参与共测—看见失败—贡献留名”的知识旅程。英文名称中的 **Proof** 同时指空间实证、技术验证和公共价值证明。
 
 总体结构从“一脊三锚六接口多点”升级为“一条验证线、三座状态站、两条供给翼、六个城市接口”。三座状态站不是三种同质园区：北京 AI 原点社区负责共创和公共评议，众智园负责技术、安全与治理验证，大钟寺负责公共发布、城市服务和成果转化；小月河场景赋能翼输入真实问题与体验反馈，中关村科技服务翼提供建议性的知识产权、合规、人才、资本和转化支撑。任何外部机构角色都是规划建议，不代表合作已经达成 [assumption:A-EXTERNAL-COLLAB-005] [depth:overall_spatial_structure]。
+
+### 任务书定位与五大功能的可读映射
+
+以下映射把任务书原词直接转成方案中的空间和运行机制，避免只在合规矩阵里形式勾选；它仍是供专业团队深化的概念响应，不产生法定功能、项目授权或机构承诺 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+| 任务书定位 / 功能 | 本方案的直接响应 | 不得越过的边界 |
+|---|---|---|
+| 百年京张文化带 | 铁路工程史—中关村创新史—AI 纠错史双螺旋，三处知识旅程地标 | 史实、文物、名称与载体待官方/馆藏和权利复核 |
+| 都市 AI 生活体验带 | 六接口、九处日常优先公共节点、非 AI 等价与静音无屏模式 | 不把字段覆盖写成已开放服务或公众体验成绩 |
+| AI 融合创新带 | “问题—共创—验证—发布/服务—转化—反馈”状态机和三区两翼 | 不虚构企业、伙伴、土地、资金或实施承诺 |
+| AI 全栈自主创新体系 | 众智园承接离线、影子、限域申请、安全与独立复测门 | 不声称已有全栈平台、运营主体或获批测试场 |
+| 世界级 AI 创新生态 | 原点社区共创接口、六个国际案例对照与两翼要素支持 | “世界级”是目标，不是排名、集聚度或合作事实 |
+| AI+ 场景赋能新范式 | 12 个场景护照、三项先行测试协议和 G0—G3 不跨级门 | 当前全部 G0，批准、参与者、执行和结果均为 0 |
+| 智能化 AI 活力城市 | 日常/学习/Beta/静音/离线五模式与人工服务并置 | 不以大屏、监控、活动热度或强制账户代表活力 |
+| AI 治理全球话语权 | 来源可追溯、失败公开、暂停申诉、到期退役与复测包 | 只提出可讨论方法，不宣称形成国际规则或政府制度 |
 
 空间接口按南北概念顺序定义为：I01 大钟寺传播接口、I02 城市服务接口、I03 小月河体验接口、I04 高校共创接口、I05 众智验证接口、I06 清河生态校准接口；对应 `geometry/public_space.geojson` 的 `PUBLIC-004`—`PUBLIC-009`。面向人类的空间叙事只使用 I01—I06；G0—G3 只表示场景成熟度。既有 GeoJSON 的 `GATE-01`—`GATE-06` 是保留的机器兼容标识，不是空间阶段或人类编号。六个接口均是待现场复核的审计/服务类型，不是已选址的新建地标；每类接口要求同时核对公共空间、横向慢行、海绵缝合、非 AI 通道、静音时段和场景接力，并优先复用已建入口与服务设施 [data:geometry/public_space.geojson#PUBLIC-004] [data:visual/assets/site-grounding-register.json#SG-003] [metric:gateway_count]。
 
@@ -150,7 +167,7 @@ Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺�
 
 ### 重点区证据交叉矩阵
 
-为避免“重点区—场景—验收”只在长文中隐含，`visual/assets/key-area-evidence-matrix.json` 将三处临时范围逐条交叉到状态站、公共锚点、I/GATE 接口、AI 服务区、场景节点和概念级验收包，并单列 G1 前必须取得的正式资料。矩阵字段覆盖率为 100% 只表示三条记录的交叉字段齐全，不表示现场覆盖、合作确认、审批、运行成绩或公共价值结果；三条记录的现场审计、责任主体确认、批准、测试执行和已知结果均为 0。
+为避免“重点区—场景—验收”只在长文中隐含，`visual/assets/key-area-evidence-matrix.json` 将三处临时范围逐条交叉到状态站、公共锚点、I/GATE 接口、AI 服务区、场景节点和概念级验收包，并单列 G1 前必须取得的正式资料 [data:visual/assets/key-area-evidence-matrix.json] [metric:key_area_evidence_matrix_record_count]。矩阵字段覆盖率为 100% 只表示三条记录的交叉字段齐全，不表示现场覆盖、合作确认、审批、运行成绩或公共价值结果；三条记录的现场审计、责任主体确认、批准、测试执行和已知结果均为 0 [metric:key_area_evidence_matrix_field_coverage_ratio]。
 
 | 临时重点区 | 状态站 / 概念空间响应 | 交叉的 AI 区与场景 | G1 前置证据 | 当前边界 |
 | --- | --- | --- | --- | --- |
@@ -302,6 +319,14 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 - 公共空间：公共空间面积、节点数量和比例 [metric:public_space_area_sqm] [metric:public_space_node_count] [metric:public_space_ratio]。
 - 交通：设计路线数量和长度 [metric:design_road_count] [metric:design_road_length_m]。
 
+必需面积指标族不再只报“单元数量”，而按可复算对象补齐，同时保持概念设计边界：
+
+- 商业服务、居住与社区服务三类功能包络分别从用地图层复算；它们不是法定地块或供地规模 [metric:land_use_area_05_sqm] [metric:land_use_area_0701_sqm] [metric:land_use_area_0702_sqm]。
+- 研发、文化与教育科研三类功能包络同样只表达当前设计几何，不生成容积率或建设规模 [metric:land_use_area_0802_sqm] [metric:land_use_area_0803_sqm] [metric:land_use_area_0804_sqm]。
+- 绿地、广场/公共界面与弹性留白三类面积分别复算；其中 1403 功能包络不等于九处 `PUBLIC_SPACE` 直接干预范围 [metric:land_use_area_1401_sqm] [metric:land_use_area_1403_sqm] [metric:land_use_area_16_sqm]。
+- 三个年份窗口的面积来自 `geometry/phasing.geojson`，只表达证据门覆盖范围，不是批准建设边界或自动实施时序 [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]。
+- 三处重点区分别保留低置信的临时 polygon 复算面积；公告约面积与临时几何面积分栏保存，正式 polygon 面积仍为空 [metric:key_area_zhongzhiyuan_sqm] [metric:key_area_origin_community_sqm] [metric:key_area_dazhongsi_sqm]。
+
 AI 与公共价值指标同样按核验问题拆开：
 
 - 场景规模：服务场景、映射节点和服务区数量 [metric:scenario_count] [metric:mapped_scenario_node_count] [metric:ai_service_zone_count]。
@@ -314,7 +339,7 @@ AI 与公共价值指标同样按核验问题拆开：
 
 这些指标只证明提交包中“设计了什么”，不证明现实运行效果。
 
-所有使用临时边界作分母的面积比例统一为 `low` 置信度；设计对象的数量和属性完整率可为 `high`；路线长度和体量面积为概念设计的 `medium` 或受边界影响的 `low`。容积率、总建面、平均高度、道路面积、停车供给、实测恢复时间和单位有效服务能耗保持 `unknown`，直到取得法定资料或受控测试证据。证据链固定为“公开来源/明确假设 → GeoJSON → EPSG:4548 复算或属性计数 → `metrics.json` → 正文/图纸/HTML → 机器自检 → 人工专业判断” [depth:metrics_recalculation]。
+所有使用临时边界作分母的面积比例统一为 `low` 置信度；设计对象的数量和属性完整率可为 `high`；路线长度和体量面积为概念设计的 `medium` 或受边界影响的 `low`。容积率、总建面、建筑密度、平均高度、道路面积与道路比例、停车供给、实测恢复时间和单位有效服务能耗继续保持待正式资料或受控测试补齐，不以体量原型覆盖率或道路中心线代替 [metric:building_density] [metric:road_ratio]。证据链固定为“公开来源/明确假设 → GeoJSON → EPSG:4548 复算或属性计数 → `metrics.json` → 正文/图纸/HTML → 机器自检 → 人工专业判断” [depth:metrics_recalculation]。
 
 `compliance_matrix.json` 不再让 23 项任务共享同一证据组合：agent.1 指向品牌与三区两翼，agent.2 指向案例和产业状态机，agent.3 指向场景护照与测试协议，agent.4 指向九处公共空间、三地标和组件库，agent.5 指向可信叙事与生成内容标识，agent.6 指向四季运营与转化漏斗；公告任务也分别映射到对应章节、图层、指标、来源、假设和自检。`standard_matrix.json` 与 `design_depth_matrix.json` 同样按专业问题分配真实证据，不再使用批量复制总结。
 
@@ -328,7 +353,7 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：逐文件权利状态台账覆盖 manifest 中 53 个路径（其中 52 个为非 manifest 内容文件），并区分自述原创、仓库临时资料派生与待审计生成物；当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`COMMUNITY-DISPLAY-ONLY` 仍缺完整条款，OSM ODbL 义务、PDF 字体、生成工具条款、可编辑源以及 Logo/地标商标均需后续复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02]。
+- 版权与品牌风险：逐文件权利状态台账覆盖 manifest 中 54 个路径（其中 53 个为非 manifest 内容文件），并区分自述原创、仓库临时资料派生与待审计生成物；当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`COMMUNITY-DISPLAY-ONLY` 仍缺完整条款，OSM ODbL 义务、PDF 字体、生成工具条款、可编辑源以及 Logo/地标商标均需后续复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。
@@ -338,7 +363,7 @@ AI 与公共价值指标同样按核验问题拆开：
 
 ## 参考资料
 
-项目主依据：[source:OFFICIAL-ANNOUNCEMENT] 北京市规划自然资源委征集公告；[source:AGENT-TASKBOOK] 仓库智能体任务书；[source:SITE-PACKAGE] 场地包；[source:SOURCE-REGISTRY] 资料登记；[source:PROCESSED-FACT-PACK] 处理导航。临时空间依据为 [source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]，仅用于生成、展示和非正式复核。
+项目主依据：[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] 北京市规划自然资源委征集公告；[source:AGENT-TASKBOOK] 仓库智能体任务书；[source:SITE-PACKAGE] 场地包；[source:SOURCE-REGISTRY] 资料登记；[source:PROCESSED-FACT-PACK] 处理导航。临时空间依据为 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]，仅用于生成、展示和非正式复核。
 
 仓库公开资料索引的直接入口为 `brief/public-brief.md`，公开边界与用途说明见 `brief/README.md`；两者只提供可公开的任务背景和数据边界，不能生成法定控制值。
 

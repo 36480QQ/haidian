@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-09",
-  "scope": "All 53 files declared by this submission after the key-area evidence crosswalk is added, including manifest.json and this ledger itself.",
+  "scope": "All 54 files declared by this submission after the package-local changelog and key-area evidence crosswalk are added, including manifest.json and this ledger itself.",
   "clearance_claim": {
     "status": "not_fully_cleared",
     "completed_independent_file_level_clearance_audits": 0,
@@ -15,8 +15,8 @@
     "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited."
   },
   "file_coverage": {
-    "expected_manifest_entries": 53,
-    "expected_non_manifest_entries": 52,
+    "expected_manifest_entries": 54,
+    "expected_non_manifest_entries": 53,
     "coverage_rule": "Every manifest path appears in exactly one asset_group. Path coverage does not equal legal clearance.",
     "asset_groups": [
       {
@@ -43,6 +43,7 @@
           "visual/assets/g0-offline-enterprise-service-baseline.json",
           "visual/assets/key-area-evidence-matrix.json",
           "visual/assets/rights-clearance-ledger.json",
+          "changelog.md",
           "report/narrative.md"
         ],
         "limits": [
@@ -130,7 +131,7 @@
           "assets/figures/implementation-roadmap.en.png"
         ],
         "limits": [
-          "No font binaries are shipped by the package; HTML requests system font stacks, while PDF font embedding and licensing remain unaudited.",
+          "No font binaries are shipped by the package; HTML requests system font stacks. The A0 pages add no live text beyond embedded raster figures, although their generator may retain a standard unused PDF font resource; A3 booklet font embedding and licensing remain unaudited.",
           "Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
@@ -150,7 +151,7 @@
     {
       "id": "RIGHTS-THIRD-02",
       "material": "Official documents, public policy pages, and international case references",
-      "source_ids": "See sources.json",
+      "source_scope": "Every citation-only source record declared in sources.json; this scope pointer is not a rights-clearance claim and creates no additional authority.",
       "current_use": "Citation and factual background, including public webpages retrieved with Firecrawl CLI for desk research; no retrieval cache, third-party photograph, logo, or document-layout reproduction is declared as an embedded package asset.",
       "status": "citation_only_reuse_terms_not_independently_audited"
     },
