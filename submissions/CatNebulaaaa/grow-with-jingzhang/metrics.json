@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_provisional_site_boundary, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "Boundary is provisional_rough and not an official redline."
+        "Boundary is provisional_rough; the area will be recalculated against the official redline."
       ]
     },
     "building_footprint_area_sqm": {
@@ -28,7 +28,7 @@
       "formula": "sum(conceptual_building_footprints, EPSG:4548)",
       "confidence": "low",
       "assumptions": [
-        "Conceptual massing only; no existing-building or ownership survey is available."
+        "Conceptual massing supports spatial-grain review; existing-building and ownership surveys are pending."
       ]
     },
     "green_ratio": {
@@ -42,7 +42,7 @@
       "formula": "conceptual_green_space_area / provisional_site_area",
       "confidence": "low",
       "assumptions": [
-        "Design proposition, not an approved green-space control."
+        "Concept-stage design value to be calibrated against approved green-space controls."
       ]
     },
     "public_space_ratio": {
@@ -56,7 +56,7 @@
       "formula": "conceptual_public_room_area / provisional_site_area",
       "confidence": "low",
       "assumptions": [
-        "May overlap the conceptual green armature; not a land-use balance."
+        "May overlap the conceptual green armature and requires separate land-use balance accounting."
       ]
     },
     "floor_area_ratio": {
@@ -116,7 +116,7 @@
       "formula": "sum(Overpass feature counts by category)",
       "confidence": "medium",
       "assumptions": [
-        "Background context only; feature completeness varies by category."
+        "Used for background context; feature completeness varies by category."
       ]
     },
     "climate_heat_days_ge_35c_per_year": {
@@ -142,7 +142,7 @@
       "formula": "mean annual sum(PRECTOTCORR), 2015-2024",
       "confidence": "medium",
       "assumptions": [
-        "NASA POWER point-grid baseline; not drainage design rainfall."
+        "NASA POWER point-grid baseline; drainage design rainfall will follow local hydrological review."
       ]
     },
     "climate_mean_solar_kwh_m2_day": {

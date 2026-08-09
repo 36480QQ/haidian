@@ -17,7 +17,7 @@
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation only; not a new authority."
+      "usage": "Agent-readable navigation linked to the registered source set."
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -47,7 +47,7 @@
       "id": "CASE-PARIS-15M",
       "url": "https://www.paris.fr/dossiers/paris-ville-du-quart-d-heure-ou-le-pari-de-la-proximite-37",
       "source_type": "background_only",
-      "usage": "Proximity and multi-use public facilities; no Beijing control inference."
+      "usage": "Proximity and multi-use public-facility planning method."
     },
     {
       "id": "CASE-VIENNA-GENDER",
@@ -109,20 +109,20 @@
       "source_type": "background_only_open_data",
       "retrieved": "2026-08-08",
       "license": "OpenStreetMap contributors, ODbL 1.0",
-      "usage": "Context buildings, street/rail/water structure and amenity counts only; never used as statutory redlines, ownership or survey evidence."
+      "usage": "Urban texture, street, rail, water and amenity analysis; statutory redlines, ownership and survey conditions follow authoritative records."
     },
     {
       "id": "NASA-POWER-2015-2024",
       "url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
       "source_type": "background_only_climate_data",
       "retrieved": "2026-08-08",
-      "usage": "Ten-year gridded point climate baseline for concept-stage shade, rain, wind and solar strategy; not an engineering weather station record."
+      "usage": "Ten-year gridded point climate baseline for concept-stage shade, rain, wind and solar strategy; engineering parameters require local monitoring."
     },
     {
       "id": "BEIJING-SPONGE-CITY",
       "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_60725.html",
       "source_type": "background_only_policy",
-      "usage": "Principle-level sponge-city and source-control background; no parcel-specific compliance claim."
+      "usage": "Sponge-city and source-control principles used to structure the concept strategy."
     },
     {
       "id": "BEIJING-RESILIENT-CITY",
@@ -140,13 +140,13 @@
       "id": "BEIJING-RAIN-GARDEN-STANDARD",
       "url": "https://yllhj.beijing.gov.cn/sdlh/ylkj/bzgf/202302/t20230222_2921741.shtml",
       "source_type": "background_only_technical_standard",
-      "usage": "Local rain-collecting green-space method reference; detailed sizing remains pending professional hydrology."
+      "usage": "Local rain-collecting green-space method reference; detailed sizing will follow professional hydrological analysis."
     },
     {
       "id": "BLENDER-52-MODEL",
       "path": "assets/renders/",
       "source_type": "agent_generated_professional_visualisation",
-      "usage": "Data-driven conceptual massing and human-scale scene bases generated in Blender 5.2 LTS; not BIM or as-built evidence."
+      "usage": "Data-driven conceptual massing and human-scale scene bases generated in Blender 5.2 LTS; engineering models and existing-condition records follow approved professional deliverables."
     },
     {
       "id": "THREEJS-OFFLINE-EXHIBIT",
@@ -158,7 +158,7 @@
       "id": "OPENAI-IMAGEGEN-SCENES",
       "path": "assets/generated-scenes/",
       "source_type": "agent_generated_concept_imagery",
-      "usage": "Clearly labelled atmospheric concept scenes conditioned on the project Blender model; not photographs of existing conditions."
+      "usage": "Design-intent scenes conditioned on the project Blender model; existing conditions follow survey records."
     }
   ]
 }

@@ -3,29 +3,29 @@ title: "京张共长线：与每一代人共同成长的 AI 创新带"
 author_github: "CatNebulaaaa"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以 8–80 岁使用门槛重构 AI 创新城区：一条共长脊、三座代际院、十二个成长站，让技术成长与人的成长互相校验。"
+summary: "以 8–80 岁全龄友好为基本评价尺度，构建一条共长脊、三座代际院和十二个成长站，形成创新应用、公共服务与城市更新协同推进的空间框架。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 ---
 
 # 京张共长线 / GROW WITH JINGZHANG
 
-> 一条 AI 创新带真正的前沿，不是它能部署多少模型，而是儿童第一次发问、青年第一次试错、研究者第一次创业、维护者第一次被看见、长者第一次不靠手机也能独立抵达时，城市是否仍然成立。
+> 以人的成长检验技术创新，以连续、包容、可维护的公共空间承载儿童探索、青年实践、成果转化、设施运维与长者独立出行，建设面向全龄人群的 AI 创新带。
 
 ![京张共长线总体概念图](assets/figures/site-overview.png)
 
 ## 设计依据与资料清单
 
-本方案回应官方公告确定的三层范围与三处重点区域，并按仓库任务书完成命名、案例、人才画像、AI 场景、地标、文化叙事与长期运营任务。处理后的事实包只作导航，判断仍返回原始登记来源。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:existing_conditions_diagnosis]
+本方案依据官方公告明确的三层研究范围和三处重点区域，按照任务书形成项目命名、案例研究、人才画像、AI 应用场景、标志性空间、文化叙事及长期运营等成果。处理后的事实包用于资料检索和任务导航，各项判断均回溯至登记来源。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:existing_conditions_diagnosis]
 
-当前仓库没有正式总体边界、重点区多边形、地块/道路红线、现状建筑、权属、市政、文保和审定控规。提交采用的 `SITE_BOUNDARY` 与 `KEY_AREA` 均来自临时粗略边界，属性保持 `official_boundary=false`、`geometry_role=provisional_constraint`。因此本方案的坐标、面积、比例、建筑基底与路线均用于概念生成、自检和公开讨论，不得作为审批、征拆、权属或工程依据；官方数据到位后必须整体替换并重算。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
+现阶段资料包尚未提供正式总体边界、重点区多边形、地块及道路红线、现状建筑、权属、市政、文保和审定控规。提交采用的 `SITE_BOUNDARY` 与 `KEY_AREA` 来源于临时粗略边界，属性标记为 `official_boundary=false`、`geometry_role=provisional_constraint`。相关坐标、面积、比例、建筑基底和路线用于概念方案推演、自检及公众讨论；正式资料发布后，应统一替换底图并完成指标复算和方案校核。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
-外部案例只用于提炼机制。巴黎的近邻生活与设施复用、维也纳对照护链条的性别敏感规划、Punggol 的产学政社共址、Kalasatama 的敏捷试点、Barcelona 的公共空间回收、Kendall Square 的混合使用与公众审议、Paris-Saclay 的科研—居住—服务整合，共同指向一个判断：创新城区首先是日常生活基础设施。[source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY]
+外部案例研究重点提炼可转化的规划机制，包括巴黎的近邻生活与设施复用、维也纳面向照护链条的包容性规划、Punggol 的产学政社协同、Kalasatama 的敏捷试点、Barcelona 的公共空间重构、Kendall Square 的混合使用与公众审议，以及 Paris-Saclay 的科研、居住和服务一体化。研究结果表明，创新城区应以完善日常生活基础设施为基本支撑。[source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY]
 
-## 核心命题：城市先过 8–80 门，再谈 AI
+## 规划目标：以 8–80 岁全龄友好检验 AI 应用
 
-“8–80”不是年龄统计，而是设计压力测试：一名 8 岁儿童与一名 80 岁长者，能否不依赖私人汽车、不被迫提交个人数据、不必拥有最新手机，也能独立、安全、有尊严地抵达、理解、使用和离开。每个 AI 场景必须同时通过四道门：**儿童安全、无障碍、人工接管、非数字替代**。任一门失败，场景只留在受控试验，不进入公共服务。[source:PRINCIPLE-UNHABITAT]
+“8–80”作为全龄友好评价尺度，重点检验儿童和长者在公共交通、数据最小化、数字设备可及性等条件下，能否独立、安全、有尊严地完成到达、理解、使用和离开。AI 场景设置四项准入要求：**儿童安全、无障碍、人工接管、实体服务渠道**。未通过准入评估的场景纳入受控试验，完成整改和复核后再行评估公共服务应用条件。[source:PRINCIPLE-UNHABITAT]
 
-项目中文名“京张共长线”，英文名“GROW WITH JINGZHANG”。标识由两条平行轨线与一组年轮相交：轨线代表百年京张的连续性，年轮代表不同世代的共同成长；缺口代表系统必须允许质疑、退出与更新。视觉不采用科技霓虹，而以纸张、铁路墨色、叶绿和公共橙构成可阅读的“生长刻度”。
+项目中文名“京张共长线”，英文名“GROW WITH JINGZHANG”。标识由两条平行轨线与一组年轮相交：轨线延续百年京张的时间脉络，年轮表达不同世代的共同成长，开放缺口对应公众反馈、服务退出和持续更新机制。视觉体系采用纸张底色、铁路墨色、叶绿和公共橙，形成清晰、克制的“生长刻度”。
 
 ## 三层范围工作框架
 
@@ -41,19 +41,19 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 统筹研究范围产业与未来城市研究
 
-产业生态不以“企业名单堆叠”为目标，而以六种可被城市支持的动作组织：高校与实验室提出问题；开源社区公开方法；企业与团队完成转化；市民在低风险场景试用；维护者记录失效与成本；独立审议把经验返回下一轮。Punggol 的共址机制与 Kalasatama 的敏捷试点提供方法参照，但在京张必须增加儿童、长者、无障碍使用者和一线维护者的共同评审席位。[source:CASE-PUNGGOL] [source:CASE-KALASATAMA]
+产业生态围绕六项城市支持任务组织：高校与实验室提出问题，开源社区公开方法，企业与团队推进成果转化，市民参与低风险场景试用，维护人员记录运行失效与全生命周期成本，独立审议机构将评估结果反馈至下一轮。方案借鉴 Punggol 的共址机制与 Kalasatama 的敏捷试点方法，并将儿童、长者、无障碍使用者和一线维护人员纳入共同评审。[source:CASE-PUNGGOL] [source:CASE-KALASATAMA]
 
-人才不只等于高薪研发者。方案以六类画像校验空间：①儿童与照护者，需要安全探索和可停留设施；②中学生与大学生，需要低成本学习、试错和展示；③研究者/创业者，需要开源协作、试验与转化；④服务与维护者，需要体面后勤、培训和可见贡献；⑤残障与老年使用者，需要连续无障碍、清晰信息和人工窗口；⑥国际访客，需要多语言但不过度依赖 App 的到达体验。维也纳“复杂出行链”方法提醒设计必须看见照护、采购、接送和轮班，而非只优化通勤峰值。[source:CASE-VIENNA-GENDER]
+方案将创新人才及其城市支持人群细分为六类：①儿童与照护者，配置安全探索和停留设施；②中学生与大学生，提供低成本学习、试验和展示空间；③研究者与创业者，支持开源协作、测试和成果转化；④服务与维护人员，完善后勤、培训和贡献记录；⑤残障人士与老年人，保障连续无障碍、清晰信息和人工窗口；⑥国际访客，提供多语言、低数字依赖的到达服务。维也纳“复杂出行链”方法用于识别照护、采购、接送、轮班等复合需求，并据此优化日常出行网络。[source:CASE-VIENNA-GENDER]
 
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体结构为“**一条共长脊、三座代际院、两翼赋能、十二个成长站**”。共长脊把京张遗址公园周边的慢行、林荫、公共服务和创新展示组织为连续公共界面；三座代际院对应重点区；两翼分别连接中关村技术服务资源与小月河应用场景资源；十二站以可逆的小尺度公共空间承载学习、休息、维修、展示与人工服务。[data:geometry/roads.geojson#ROAD-01] [data:geometry/public_space.geojson#PUBLIC-01] [metric:growth_station_count]
 
-六类概念功能完整分区且共享边界：责任试作、代际服务、共同学习、文化公共、AI 生活、蓝绿弹性。它们不是法定用地分类或审定比例，而是检验“产业和日常是否在步行尺度相遇”的设计拓扑。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+方案划分责任试作、代际服务、共同学习、文化公共、AI 生活和蓝绿弹性六类概念功能，并采用共享边界组织连续空间。该分类用于检验产业功能与日常服务在步行尺度内的复合关系；法定用地性质及比例应在控制性详细规划阶段确定。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
 
-建筑更新遵循“先盘活、后增量”：优先延长既有建筑寿命、复合使用空置时段、改造首层与屋顶；只有在安全、权属、文保、结构与运营证据完整时才判断保留/改造/拆除。当前建筑图层仅表达概念基底，不对任何现状建筑作拆改留结论。[source:PRINCIPLE-AMSTERDAM-CIRCULAR] [data:geometry/buildings.geojson#BLDG-01-01] [depth:retain_renovate_demolish]
+建筑更新坚持存量提质和审慎增量，优先延长既有建筑使用寿命，复合利用闲置时段，推进首层及屋顶适应性改造。保留、改造和更新方式应依据安全、权属、文保、结构及运营评估综合确定。当前建筑图层用于表达概念空间颗粒，后续结合现状调查形成分类处置方案。[source:PRINCIPLE-AMSTERDAM-CIRCULAR] [data:geometry/buildings.geojson#BLDG-01-01] [depth:retain_renovate_demolish]
 
-容积率、建筑高度、密度、退线、道路红线与市政容量全部保持 `unknown/pending`，由正式控规和专项评估决定。[metric:floor_area_ratio] [depth:development_intensity_controls]
+容积率、建筑高度、建筑密度、退线、道路红线和市政容量暂按 `unknown/pending` 登记，待正式控规及专项评估成果明确后校核确定。[metric:floor_area_ratio] [depth:development_intensity_controls]
 
 ## 重点区域详细设计
 
@@ -61,23 +61,23 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ### 1. 众智园：责任试作院 / Responsible Prototyping Garden
 
-承担“把创新变成可问责原型”的角色。沿绿色界面布置低速机器人 8–80 路测环、儿童安全对话代理红队室、端侧设备离线/能耗测试台与维修学徒工坊。测试结果以公众可读的“模型营养标签”展示：用途、数据、失败情形、人工负责人、退出方式和下次复审日期。空间由安静观察廊、受控试验庭、维护后场和公众审议台组成，互不干扰。[data:geometry/key_areas.geojson#PROV-KEY-001]
+重点承担 AI 原型测试、责任评估和公开审议功能。沿绿色界面布置低速机器人 8–80 路测环、儿童安全对话代理红队室、端侧设备离线及能耗测试台和维修学徒工坊。测试结果通过公众可读的“模型营养标签”公开用途、数据范围、失效情形、责任人员、退出方式和复审日期。安静观察廊、受控试验庭、维护后场与公众审议台分区组织，保障测试、维护和公众活动有序开展。[data:geometry/key_areas.geojson#PROV-KEY-001]
 
-![责任试作院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-responsible-prototyping.png)
+![责任试作院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-responsible-prototyping.png)
 
 ### 2. 北京 AI 原点社区：共同学习院 / Co-learning Commons
 
-承担“让知识跨代流动”的角色。将高校、社区、开源团队与人才生活服务组织在可步行的共享首层网络中：青年城市问题工作室、跨代数字诊所、开源发布厨房、教师审核的学习辅助台、短租与家庭支持服务并置。Kendall Square 与 Paris-Saclay 的价值不是复制形态，而是提醒创新空间必须与住房、服务、公共空间和透明审议同场。[source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:geometry/key_areas.geojson#PROV-KEY-002]
+重点承担跨代学习、开源协作和人才生活服务功能。高校、社区、开源团队及配套服务沿可步行共享首层网络布局，设置青年城市问题工作室、跨代数字诊所、开源发布厨房、教师审核的学习辅助台，以及短租和家庭支持服务。借鉴 Kendall Square 与 Paris-Saclay 的混合使用机制，促进创新空间与住房、公共服务、开放空间和审议机制协同建设。[source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-![共同学习院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-co-learning-commons.png)
+![共同学习院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-co-learning-commons.png)
 
 ### 3. 大钟寺：好奇入城院 / Curious Arrival Commons
 
-承担“把第一公里变成公共 AI 素养”的角色。从轨道到街区的四象限步行联系，以低认知负担导视、人工咨询台、家庭友好停留点和多语言城市说明构成到达序列。AI 不主动识别个体；访客可自愿扫描获取扩展信息，也可只凭实体导视完成全程。商业展示必须同时说明限制、维修和数据权利。[data:geometry/key_areas.geojson#PROV-KEY-003]
+重点承担轨道到达、公共 AI 素养普及和街区综合服务功能。围绕轨道站点至周边街区的四象限步行联系，配置易识别导视、人工咨询台、家庭友好停留点和多语言城市说明，形成连续到达序列。数字服务采用自愿参与和最小数据原则，实体导视覆盖完整出行流程；商业展示同步公开适用范围、运维责任和数据权利。[data:geometry/key_areas.geojson#PROV-KEY-003]
 
-![好奇入城院概念氛围图：基于 Blender 空间基模生成，非现状照片](assets/generated-scenes/generated-curious-arrival.png)
+![好奇入城院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-curious-arrival.png)
 
-三处片区的临时多边形只用于区位与设计讨论；建筑、交通、功能与公共空间均须在正式边界和现状调查后深化。[depth:three_key_area_detailed_design] [assumption:A-BOUNDARY-001]
+三处片区的临时多边形用于区位分析和概念设计。正式边界及现状调查成果明确后，应进一步深化建筑、交通、功能和公共空间方案。[depth:three_key_area_detailed_design] [assumption:A-BOUNDARY-001]
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -85,42 +85,42 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 | # | 场景与空间 | 服务对象 / 最小数据 | 人工与退出机制 |
 |---|---|---|---|
-| 01 | AI 素养游乐场·好奇入城院 | 儿童家庭；不采人脸与身份 | 现场教育员；全部设施可纯实体使用 |
+| 01 | AI 素养游乐场·好奇入城院 | 儿童家庭；不采集人脸与身份信息 | 现场教育员；全部设施支持实体使用 |
 | 02 | 多语言京张漫游·共长脊 | 访客；自愿选择语言 | 人工导览与纸质地图并行 |
 | 03 | 青年城市问题工作室·共同学习院 | 青少年；匿名问题卡 | 教师/社区导师审核后公开 |
 | 04 | 学习与职业辅助台·共同学习院 | 学生；本地临时会话 | 教师/咨询师复核；可转人工 |
-| 05 | 跨代数字诊所·成长站 | 长者与照护者；不留账户 | 志愿者面对面支持；纸质流程保留 |
-| 06 | 无障碍路线共绘·共长脊 | 残障使用者；自愿障碍点 | 无障碍顾问审图；不发布个体轨迹 |
+| 05 | 跨代数字诊所·成长站 | 长者与照护者；采用免账户服务 | 志愿者面对面支持；保留纸质流程 |
+| 06 | 无障碍路线共绘·共长脊 | 残障使用者；自愿标注障碍点 | 无障碍顾问审图；仅发布汇总信息 |
 | 07★ | 儿童安全对话代理红队·责任试作院 | 受控测试；合成数据优先 | 监护/伦理负责人随时终止 |
 | 08★ | 低速机器人 8–80 路测·责任试作院 | 测试员；仅设备遥测 | 安全员接管；物理绕行路径常开 |
-| 09★ | 隐私保护学习工具测试·共同学习院 | 自愿样本；最小化输入 | 教师复核；不进入正式教学评价 |
+| 09★ | 隐私保护学习工具测试·共同学习院 | 自愿样本；最小化输入 | 教师复核；与正式教学评价分离 |
 | 10★ | 端侧离线与能耗测试·责任试作院 | 设备级性能数据 | 工程师签字；失败即退回实验室 |
 | 11 | 维护学徒工坊·责任试作院 | 维护人员；工单去标识 | 师傅复核；公开维修手册 |
 | 12 | 模型营养标签与贡献墙·三院 | 汇总证据；无个人排名 | 独立审议；到期自动下架复审 |
 
-任何医疗、法律、教育、公共安全相关输出只作辅助信息，不替代有资质专业人员判断。系统不得以“便利”为由取消窗口、现金/纸质渠道或人工申诉。[source:PRINCIPLE-UNHABITAT] [metric:ai_scenario_card_count]
+医疗、法律、教育和公共安全相关输出定位为辅助信息，由具备相应资质的专业人员复核。各项数字服务应同步保留人工窗口、现金或纸质渠道及申诉机制。[source:PRINCIPLE-UNHABITAT] [metric:ai_scenario_card_count]
 
 ## 用地、建筑规模与拆改留方案
 
-概念用地以六个共享边界的多边形完整覆盖临时总体范围，分别承载责任试作、代际服务、共同学习、文化公共、AI 生活和蓝绿弹性。完整覆盖只证明图层拓扑可复算，不意味着功能比例已经审批；商业、科研、居住、教育与绿地代码只是提交交换格式中的主导属性，混合使用仍须在法定规划中校准。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+概念用地由六个共享边界的多边形完整覆盖临时总体范围，分别承载责任试作、代际服务、共同学习、文化公共、AI 生活和蓝绿弹性功能。完整覆盖用于验证图层拓扑和指标复算；商业、科研、居住、教育及绿地代码作为数据交换中的主导属性，具体功能比例和兼容关系应在法定规划中校准。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
 
-建筑基底只在三处临时重点区表达空间颗粒，统一标记为概念混合功能。由于没有现状建筑、权属、结构安全、历史文化、消防和市政资料，任何基底都不得被解释为具体新建项目，更不得推导拆除对象。正式深化先进行“现状调查—价值评估—安全评估—运营可行性—公众意见”五步诊断，再依次选择保留、微改造、适应性再利用或必要更新；新增建设必须是最后选项。[data:geometry/buildings.geojson#BLDG-01-01] [depth:height_massing_character] [depth:retain_renovate_demolish]
+建筑基底集中表达三处重点区的概念空间颗粒，统一标记为混合功能。后续应补充现状建筑、权属、结构安全、历史文化、消防和市政资料，按照“现状调查—价值评估—安全评估—运营可行性—公众意见”开展综合诊断，形成保留、微改造、适应性再利用和必要更新的分类方案，并据此论证新增建设需求。[data:geometry/buildings.geojson#BLDG-01-01] [depth:height_massing_character] [depth:retain_renovate_demolish]
 
-建筑总规模、容积率、高度、密度、退线和停车配建均保持 unknown；概念基底面积只用于检查图层与图纸一致性。约束图层当前为空，明确表示仓库尚无可合法落图的官方控制条件，而不是表示“没有约束”。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [data:geometry/constraints.geojson#CONSTRAINTS] [assumption:A-CONTROLS-001]
+建筑总规模、容积率、高度、密度、退线和停车配建暂按 `unknown` 登记；概念基底面积用于检查图层与图纸一致性。约束图层当前为空，相关控制条件待法定规划和主管部门资料明确后补充。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [data:geometry/constraints.geojson#CONSTRAINTS] [assumption:A-CONTROLS-001]
 
 ## 交通、轨道、市政与公共服务设施
 
-“最慢一公里”是交通系统的标尺。共长脊优先连续遮阴、平缓坡度、足够休息、清楚过街和低冲突骑行；成长横街缝合东西向日常出行。路线为概念中心线，需在道路红线、轨道、消防、市政和交通模型齐备后专项校核。[data:geometry/roads.geojson#ROAD-01] [depth:traffic_rail_slow_parking] [assumption:A-MOBILITY-001]
+交通系统以儿童、长者、轮椅使用者和携带行李人群的连续通行为基本评价尺度。共长脊重点配置连续遮阴、平缓坡度、休息设施、安全过街和低冲突骑行空间，成长横街加强东西向日常联系。概念中心线应结合道路红线、轨道、消防、市政和交通模型开展专项校核。[data:geometry/roads.geojson#ROAD-01] [depth:traffic_rail_slow_parking] [assumption:A-MOBILITY-001]
 
-新型基础设施采用“小型、分布、可断开”原则：公共空间传感默认边缘处理和短期留存；每个智能节点显示数据用途与负责人；停电、断网或拒绝授权时，照明、导视、求助、通行等基本功能仍工作。市政容量、防洪、排水、能源、消防和通信条件缺失，均列为实施前置项。[depth:municipal_new_infrastructure]
+新型基础设施采用小型化、分布式和可独立运行的配置方式。公共空间传感优先采用边缘处理和短期留存，每个智能节点公开数据用途、保存期限和责任人员；照明、导视、求助和通行等基本功能具备停电、断网及未授权状态下的运行方案。市政容量、防洪排水、能源、消防和通信条件纳入实施前置核查。[depth:municipal_new_infrastructure]
 
 ![最慢使用者优先的慢行蓝绿系统](assets/figures/mobility-bluegreen.png)
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统不是剩余绿地，而是日常照护基础设施：林荫缓解热暴露，雨水花园提供可见的生态教育，连续座椅支持长者、孕妇和儿童，安静角落服务感官敏感人群。十二个成长站将“走得动、停得下、问得到人”分布到公共脊。[data:geometry/green_space.geojson#GREEN-01] [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
+蓝绿系统按照日常公共服务基础设施进行组织：连续林荫缓解热暴露，雨水花园承担源头消纳和生态教育，连续座椅服务长者、孕妇和儿童，安静空间满足感官敏感人群需求。十二个成长站沿公共脊均衡布局，完善连续通行、短时休息和人工咨询服务。[data:geometry/green_space.geojson#GREEN-01] [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
 
-三处地标不追求巨构：**第一问廊**收藏公众提出但尚未解决的问题；**最慢一公里**以最慢使用者的完成时间校验城市；**共长年轮**每年记录开源贡献、维护修复、儿童提问和退出案例。城市美感来自可读的结构、被照顾的细节和可持续材料，而不是屏幕密度。[source:PRINCIPLE-NEB]
+三处标志性空间采用适度尺度和开放界面：**第一问廊**持续收集公众议题及办理进展；**最慢一公里**以行动不便人群的完成时间评价通行质量；**共长年轮**按年度记录开源贡献、设施维护、儿童提问和服务调整案例。整体风貌以清晰的空间结构、精细的人本设施和可持续材料为主要特征。[source:PRINCIPLE-NEB]
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -133,19 +133,19 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 | G-05 模型营养标签 | 发布开源字段模板 | 第三方审计接口 | 跨项目互认 |
 | G-06 共长年轮 | 年度公开复盘 | 档案与版权清权 | 长期公共记忆 |
 
-分三期推进：近期“先开放、先校验”，用低成本、可逆设施和四类验证场建立证据；中期“再缝合、再适配”，在法定与工程条件确认后实施空间更新；远期“持续共治、滚动更新”，以年度审计决定保留、修改或退出。[data:geometry/phasing.geojson#PHASE-01] [depth:renewal_project_list] [depth:phasing_implementation]
+分三期推进：近期开展低成本、可逆的公共空间试点和四类验证场，建立使用评价与运行数据；中期在法定规划和工程条件明确后实施空间缝合与功能适配；远期建立持续共治和滚动更新机制，通过年度审计确定项目保留、调整或终止安排。[data:geometry/phasing.geojson#PHASE-01] [depth:renewal_project_list] [depth:phasing_implementation]
 
-运营采用四张公开账：场景账记录用途与风险，数据账记录来源与删除，维护账记录停机与成本，公共账记录谁受益、谁被排除。每季度小型复盘，每年“共长周”集中展示；任何活动均为概念建议，须另行审批和确定主体。[assumption:A-IMPLEMENTATION-001]
+运营管理建立四类公开台账：场景台账记录用途和风险，数据台账记录来源及删除情况，维护台账记录停机和成本，公共效益台账记录服务覆盖及使用障碍。每季度开展运行评估，每年通过“共长周”集中发布成果。具体活动应在实施阶段明确责任主体、审批程序和经费来源。[assumption:A-IMPLEMENTATION-001]
 
 ## 专业数据底座与气候适应策略
 
-本轮深化新增真实城市背景与十年气候基线，但不把背景数据伪装为法定依据。2026-08-08 的 OSM Overpass 抽取用于表达现状城市纹理和网络关系：建筑 2899、道路 3646、轨道 135、水系 15、公共交通点 384、设施点 527；© OpenStreetMap contributors，ODbL 1.0。它不替代官方红线、产权或现状测绘。[source:OSM-CONTEXT-20260808] [metric:osm_context_feature_count]
+本轮深化补充城市背景和十年气候基线。2026-08-08 的 OSM Overpass 数据用于分析城市纹理和网络关系，包括建筑 2899、道路 3646、轨道 135、水系 15、公共交通点 384、设施点 527；© OpenStreetMap contributors，ODbL 1.0。法定边界、权属和现状条件以主管部门资料及现场测绘成果为准。[source:OSM-CONTEXT-20260808] [metric:osm_context_feature_count]
 
-NASA POWER 的 2015–2024 日尺度点数据提供概念阶段压力测试：日最高温 P95 为 35.58°C、≥35°C 日数约 22.3 日/年、年降水约 649.1 mm、日降水 P95 为 10.15 mm、太阳辐射均值 4.05 kWh/m²/日。由此将“绿化”拆成可核查动作：连续遮阴、雨水源头消纳与安全溢流、冬季向阳避风、监测后再固化。排水、风热和能源参数仍须由现场监测及专业模型确认。[source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [metric:climate_heat_days_ge_35c_per_year] [metric:climate_annual_precip_mm] [metric:climate_mean_solar_kwh_m2_day]
+NASA POWER 2015—2024 年日尺度点数据用于概念阶段气候压力分析：日最高温 P95 为 35.58°C，≥35°C 日数约 22.3 日/年，年降水约 649.1 mm，日降水 P95 为 10.15 mm，太阳辐射均值为 4.05 kWh/m²/日。相应空间措施包括连续遮阴、雨水源头消纳与安全溢流、冬季向阳避风，以及基于监测结果的分阶段建设。排水、风热和能源参数应结合现场监测及专业模型进一步确定。[source:NASA-POWER-2015-2024] [source:BEIJING-SPONGE-CITY] [source:BEIJING-RESILIENT-CITY] [source:BEIJING-CLIMATE-ADAPTATION] [source:BEIJING-RAIN-GARDEN-STANDARD] [metric:climate_heat_days_ge_35c_per_year] [metric:climate_annual_precip_mm] [metric:climate_mean_solar_kwh_m2_day]
 
 ![Blender 数据驱动走廊轴测](assets/renders/blender-corridor-overview.png)
 
-三处重点区域的空间基模由 Blender 生成，再以图像模型深化为明确标注的“概念氛围图”；人物、植栽成熟度、材料和建筑形态均为设计意向，而非现状摄影或施工图。完整的数据、来源与限制分别记录于 `sources.json`、`assumptions.json` 与 `metrics.json`；离线三维证据查看器见 `visual/index.html`。[source:BLENDER-52-MODEL] [source:OPENAI-IMAGEGEN-SCENES] [source:THREEJS-OFFLINE-EXHIBIT]
+三处重点区域以 Blender 建立空间基模，并通过图像模型深化形成设计意向图。图中人物、植栽成熟度、材料和建筑形态用于表达概念场景；建设条件和工程做法应以后续审批及专项设计成果为准。数据来源、假设条件和指标说明分别记录于 `sources.json`、`assumptions.json` 与 `metrics.json`；离线三维证据查看器见 `visual/index.html`。[source:BLENDER-52-MODEL] [source:OPENAI-IMAGEGEN-SCENES] [source:THREEJS-OFFLINE-EXHIBIT]
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -153,20 +153,20 @@ NASA POWER 的 2015–2024 日尺度点数据提供概念阶段压力测试：�
 
 | 指标 | 当前值 | 可信度与解释 |
 |---|---:|---|
-| 临时总体边界面积 | 11.413 km² | 中；由临时粗略多边形在 EPSG:4548 复算，不是官方红线面积 |
-| 概念建筑基底 | 11.29 ha | 低；只表达重点区空间颗粒，不作拆改留与强度结论 |
-| 概念绿地占比 | 18.95% | 低；设计图层/临时边界，非审定绿地率 |
-| 概念公共空间占比 | 2.19% | 低；公共房间可与绿地重叠，不能作土地平衡 |
+| 临时总体边界面积 | 11.413 km² | 中；依据临时粗略多边形在 EPSG:4548 复算，正式面积以官方红线为准 |
+| 概念建筑基底 | 11.29 ha | 低；用于表达重点区空间颗粒，拆改留及开发强度待专项论证 |
+| 概念绿地占比 | 18.95% | 低；依据设计图层和临时边界计算，后续与审定绿地指标衔接 |
+| 概念公共空间占比 | 2.19% | 低；公共空间与绿地存在重叠，土地平衡阶段应分类核算 |
 | 重点区域数 | 3 | 中；名称和公告面积可信，多边形位置临时 [metric:key_area_count] |
 | 场景卡 / 验证场 | 12 / 4 | 高；可从正文计数 |
 
-所有 known 指标均指向可复算文件；FAR 等缺少权威条件的指标保持 unknown。合规矩阵把公告条目、报告章节、图层、图纸、来源、假设与自检项相互挂接。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]
+所有 `known` 指标均关联可复算文件；FAR 等待法定条件明确的指标保持 `unknown`。合规矩阵将公告条目、报告章节、图层、图纸、来源、假设和自检项逐项对应。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]
 
 ## 风险、版权与合规说明
 
-本方案不声称官方批准、法定控规、最终土地权属、建设规模、道路方案或实施承诺。外部案例为背景方法，不为北京导出控制指标。图形、图纸与网页均由本提交在本地依据结构化数据生成，不含远程脚本、字体、地图瓦片、跟踪器或表单；来源与许可见 `sources.json` 和 `report/copyright_statement.md`。[depth:risk_missing_data]
+本成果为开源征集阶段的概念城市设计，适用于方案比选、公众讨论和后续深化。法定控规、土地权属、建设规模、道路方案及实施安排以主管部门审查和项目决策为准。外部案例用于方法研究，控制指标依据北京法定规划确定。图形、图纸和网页均依据本地结构化数据生成，采用本地脚本、字体和数据资源；来源及许可见 `sources.json` 和 `report/copyright_statement.md`。[depth:risk_missing_data]
 
-正式深化的前置资料包括：官方总体与重点区边界、现状地形/道路/地块/建筑、权属、文保、控规、市政管线与容量、消防与交通模型、公共服务清单和公众参与记录。在这些资料到位前，所有空间结论保持“概念建议/待专业确认”。
+下一阶段应补充官方总体与重点区边界、现状地形、道路、地块、建筑、权属、文保、控规、市政管线与容量、消防与交通模型、公共服务清单和公众参与记录，并据此开展专业校核，形成可进入规划审查和项目实施论证的深化成果。
 
 ## 参考资料
 
@@ -174,4 +174,4 @@ NASA POWER 的 2015–2024 日尺度点数据提供概念阶段压力测试：�
 
 城市设计方法参照包括 Paris 15-minute city、Vienna gender mainstreaming、Punggol Digital District、Smart Kalasatama、Barcelona superblocks、Kendall Square 与 Paris-Saclay；人本智能治理、综合美学和循环更新原则分别参照 UN-Habitat、New European Bauhaus 与 Amsterdam circular economy。[source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [source:PRINCIPLE-UNHABITAT] [source:PRINCIPLE-NEB] [source:PRINCIPLE-AMSTERDAM-CIRCULAR]
 
-所有外部材料都登记为 `background_only`：只提炼邻近性、共创试点、混合使用、包容出行、公共空间回收和循环改造等机制，不复制具体形态，不导出北京的法定控制值，也不声称得到原机构背书。空间事实与指标仍只回到提交 GeoJSON、`metrics.json`、假设清单和仓库登记来源。
+所有外部材料均登记为 `background_only`，用于研究邻近性、共创试点、混合使用、包容出行、公共空间重构和循环改造等机制。北京地区的空间事实与控制指标依据提交的 GeoJSON、`metrics.json`、假设清单、仓库登记来源及后续法定规划成果确定。
