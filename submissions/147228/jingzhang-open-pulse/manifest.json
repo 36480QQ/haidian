@@ -12,7 +12,7 @@
     "agent_name": "许丙南 / Codex",
     "model": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T04:59:12Z",
+  "generated_at": "2026-08-09T05:07:11Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cbf9295b87bb265f3a9709e9bb4ffd6d3af20a7545adc77b835b39d17b256212"
+      "sha256": "9c25e088d5daa55a50fd57210f6d92620fdde411c19b00326639a2b339d6ec7c"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d017bc092b37f12dc44394d050290835d6daeb716819bc01a9b799627ff5262d"
+      "sha256": "4f163edaf041a0af9a40231bd38d51750d22b0d0e7483eb3f5425a5f7795065f"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a67e140301c1bc32f6e8012d5ad057aa989f0cd2487a7e88e76f4855778f95c6"
+      "sha256": "8e9c6e121817488af189aba4824db205ce8b4443397a5cbc1a758dfe572bf5d4"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d8fec6b06f0c45735e94c4f5d960df524c8256c8014b057ad0fcfe56401e3c9e"
+      "sha256": "3e111f1e44f424e977890959b8607852214bc242dd1e72bc25caed2f3bba6318"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "45e71a9988fb9b755e78f220469631919aed0fe8c00575fc6ba866ee2470916b"
+      "sha256": "bad06964c1531a5cc4b6556aaaf55fb9178d7005b6977dcb173512d6ce211df4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "dce0890127ea322e01ac4334c9b421c7ec61d964717fc48398e966ecfe188ca1"
+      "sha256": "242fd2186301a02508abd507d403dbea7fd6961d578830a814aa2f1bad9ffb31"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "63756401c0d131624a5ee9b3b2df86be0b3923214b8461d44869bd30a7f0174e"
+      "sha256": "8ac6ac3c1f357415409c1da00136862be9ad5de8230aeebaee68a4c13c322d83"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -408,7 +408,7 @@
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "taskbook_crosswalk",
       "required": true,
-      "sha256": "154ed54f0ab60bf704408a63aff04fd3288b8e54e95a6ac7be841029f6550fe8"
+      "sha256": "ab871974388c8e4b7855cb9446a30768519e622ad24c423ae08ffbd16257b09b"
     },
     {
       "path": "visual/assets/annual-event-system.json",
@@ -444,7 +444,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "9b4f5e0cb2306c8b826bfda90812aff617640c9553f5807e0d9124bd82d59587"
+      "sha256": "f61cf88aa9aaeaef6623466a5d82f3728bed7a71699bbe0fb9234dd27fffe7a0"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -496,6 +496,12 @@
       "role": "operations_matrix",
       "required": true,
       "sha256": "b8ec30b50b4a3df849c7e24ff59382ceb743d32ff24db6653e8d990b2e8ba234"
+    },
+    {
+      "path": "visual/assets/operational-assurance-contract.json",
+      "role": "operational_assurance_contract",
+      "required": true,
+      "sha256": "d4ed9fe34d15ca91aa36d0f5155c6a3d24a6cece496fca270be530f2618affdc"
     },
     {
       "path": "visual/assets/resource-accounts.json",

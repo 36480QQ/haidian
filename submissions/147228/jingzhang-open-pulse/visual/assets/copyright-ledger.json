@@ -398,7 +398,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "45e71a9988fb9b755e78f220469631919aed0fe8c00575fc6ba866ee2470916b"
+      "hash_sha256": "bad06964c1531a5cc4b6556aaaf55fb9178d7005b6977dcb173512d6ce211df4"
     },
     {
       "path": "compliance_matrix.json",
@@ -687,7 +687,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d017bc092b37f12dc44394d050290835d6daeb716819bc01a9b799627ff5262d"
+      "hash_sha256": "4f163edaf041a0af9a40231bd38d51750d22b0d0e7483eb3f5425a5f7795065f"
     },
     {
       "path": "proposal.md",
@@ -704,7 +704,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "cbf9295b87bb265f3a9709e9bb4ffd6d3af20a7545adc77b835b39d17b256212"
+      "hash_sha256": "9c25e088d5daa55a50fd57210f6d92620fdde411c19b00326639a2b339d6ec7c"
     },
     {
       "path": "report/copyright_statement.md",
@@ -755,7 +755,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d8fec6b06f0c45735e94c4f5d960df524c8256c8014b057ad0fcfe56401e3c9e"
+      "hash_sha256": "3e111f1e44f424e977890959b8607852214bc242dd1e72bc25caed2f3bba6318"
     },
     {
       "path": "report/proposal.html",
@@ -772,7 +772,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "a67e140301c1bc32f6e8012d5ad057aa989f0cd2487a7e88e76f4855778f95c6"
+      "hash_sha256": "8e9c6e121817488af189aba4824db205ce8b4443397a5cbc1a758dfe572bf5d4"
     },
     {
       "path": "sources.json",
@@ -1027,7 +1027,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "154ed54f0ab60bf704408a63aff04fd3288b8e54e95a6ac7be841029f6550fe8"
+      "hash_sha256": "ab871974388c8e4b7855cb9446a30768519e622ad24c423ae08ffbd16257b09b"
     },
     {
       "path": "visual/assets/annual-event-system.json",
@@ -1115,7 +1115,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "63756401c0d131624a5ee9b3b2df86be0b3923214b8461d44869bd30a7f0174e"
+      "hash_sha256": "8ac6ac3c1f357415409c1da00136862be9ad5de8230aeebaee68a4c13c322d83"
     },
     {
       "path": "visual/index.html",
@@ -1132,7 +1132,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "dce0890127ea322e01ac4334c9b421c7ec61d964717fc48398e966ecfe188ca1"
+      "hash_sha256": "242fd2186301a02508abd507d403dbea7fd6961d578830a814aa2f1bad9ffb31"
     },
     {
       "path": "visual/assets/open-pulse-test-window-record.schema.json",
@@ -1201,6 +1201,25 @@
       "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
       "font_note": "JSON evidence asset; no font file is redistributed.",
       "hash_sha256": "b8ec30b50b4a3df849c7e24ff59382ceb743d32ff24db6653e8d990b2e8ba234"
+    },
+    {
+      "path": "visual/assets/operational-assurance-contract.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a conceptual operational assurance and rollback contract; no remote asset fetch at render time",
+      "source_inputs": [
+        "proposal.md and proposal.en.md",
+        "visual/assets/operations-matrix.json",
+        "visual/assets/risk.json",
+        "visual/assets/evidence-ledger.json",
+        "repository brief and package geometry"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual assurance contract authored by 许丙南 / Codex; not an insurance policy, legal opinion, engineering certificate or deployment approval.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "d4ed9fe34d15ca91aa36d0f5155c6a3d24a6cece496fca270be530f2618affdc"
     },
     {
       "path": "visual/assets/resource-accounts.json",

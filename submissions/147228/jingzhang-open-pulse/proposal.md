@@ -22,9 +22,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 任务书相关性 | 服务任务书提出的“全球人工智能产业高地”与“AI 朝圣地”目标；三层范围、三处重点区、三区两翼、三大定位、五大功能与 agent.1—agent.6 再由同一条“公共带—三核—场景—运营”链落位，区域接口保持概念建议，不写成合作承诺。[source:AGENT-TASKBOOK] | compliance_matrix.json、taskbook-crosswalk.json、regional-ecosystem.json、三层正文 |
 | 原创性 | “公共回路 + 一构件一智证里程”：每个场景都要有普通等价路径、责任人、正负证据、回执与退出决定；一个构件通过不替代整条带通过。 | civic-pulse-protocol.json、proof-mile-delivery.json |
 | AI 与规划创新 | AI 只做问题整理、可解释辅助和证据回传，不替代规划/采购/医疗/法律裁决；空间动作落到三站、慢行链、公共空间和受控测试窗。 | scenario-operation-matrix.json、key-area-node-plans.json |
-| 可实施性 | 按“普通服务基座 → 有界样机 → 有人值守窗口 → 扩散/修复/退出”推进，八个行动包各有责任、依赖、验收和停止条件。 | operations-matrix.json、construction-readiness.json、分期章节 |
+| 可实施性 | 按“普通服务基座 → 有界样机 → 有人值守窗口 → 扩散/修复/退出”推进，八个行动包各有责任、依赖、验收和停止条件；运营保障合同把责任、保险假设、网络事件、雨洪公平和事故回退收束到同一张放行记录。 | operations-matrix.json、construction-readiness.json、visual/assets/operational-assurance-contract.json、分期章节 |
 | 公共利益 | 居民、老幼残障、照护者、夜班劳动者、游客、商户、开发者和维护者都有普通路径；纸面、人工、无账号服务不可被 AI 替代。 | persona-and-inclusion-matrix.json、public-interest-audit.json |
-| 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护或接管证据不足就停在概念层。 | sources.json、risk.json、v2-evidence-gate-index.json |
+| 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护、保险、网络隔离、雨洪公平或接管证据不足就停在概念层。 | sources.json、risk.json、visual/assets/operational-assurance-contract.json、v2-evidence-gate-index.json |
 | 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
 | 资料登记完整度 | 正文 59 个唯一 source ID 与包内 `sources.json` 的 59 条记录一一对应；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json |
 
@@ -313,6 +313,8 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 气候与水系统按“源头渗透—就地调蓄—管网排放—超标行泄”组织；风环境只作为候选网络并等待专业模拟，排水目标只作为背景基准并等待水务、道路、管线资料。树木根域、冬季防滑、材料可拆解、微电网降级、维护欠账、资产责任和年度故障演练被放进同一运维循环，避免把一张新图交给没有人维护的未来。[source:BEIJING-FLOOD-PLAN-2021-2025] [source:BEIJING-WATER-REPORT-2024] [source:ISO-55001-2024]
 
 评价看板将状态分为 `known`、`design_target`、`unknown`、`blocked` 四类；无障碍主链被占用、暴雨时低点无法回退、机器人无法急停、隐私边界不清或维护连续逾期时，方案自动降级为人工模式并停止扩容。公平账本同时报告老幼、残障、夜间劳动者、居民、开发者和访客的可达性、热舒适、风险和服务差异，不用平均数掩盖最弱体验。[source:WHO-URBAN-HEALTH-AND-GREEN] [source:BEIJING-ACCESSIBILITY-REGULATION]
+
+为避免“有责任人”仍停留在口号，本轮新增 `visual/assets/operational-assurance-contract.json`：每个测试窗必须先登记场景与几何版本、运营/资产/应急责任、普通等价服务、网络隔离与补丁联系人、责任与保险假设、补偿/申诉路径、雨洪公平检查、独立复核和事故公开摘要。具身智能、活动公共空间、蓝绿排水和数据/模型四条保障轨道分别规定证据、停止条件与回退；它是概念审阅合同，不是保险单、法律意见、施工许可、实测雨洪模型或网络安全认证。任何 unknown 或 blocked 项都不能放行。[data:visual/assets/operational-assurance-contract.json]
 
 三十秒短片不再只拍“城市很聪明”：镜头一从清晨的风和树影开始，镜头二跟随雨水从铺装边缘进入雨洪花园，镜头三在站点四象限让行给老人和配送人员，镜头四在断网时切换为人工导视与机器人急停，镜头五以夜间贡献档案、维护工单和居民复盘收束。每个镜头都对应账本记录、空间图层、声音线索和回退动作，传播层不能替代工程证明。[data:visual/assets/evidence-ledger.json#film-storyboard]
 
