@@ -55,11 +55,11 @@
       "message": "Land-use polygons fully cover the submitted boundary without gaps or overlaps."
     },
     {
-      "check_id": "VISUAL_STATIC",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Static offline HTML passed required markers and metric consistency checks."
+      "message": "Visual packaging check passed: required offline markers, metric consistency and section coverage verified in zh/en HTML."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
