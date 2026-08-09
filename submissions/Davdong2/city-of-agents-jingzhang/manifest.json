@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7fc7c9684e3aaf34b5027b4b0b2388913843c605732ce7392b43728ca1b5f96d"
+      "sha256": "aad8e14ac092001d0de6c9bfcdc20fe5e3009e1b5cdb04866ac21c7ec4eb5d4d"
     },
     {
       "path": "agent.json",
@@ -42,13 +42,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "8a09001617c6eee604821b1f13cfe1d40785d48fa9acf3e734d4f4e8c665f0e4"
+      "sha256": "5684f94e2bd455b9b8b0ae726548fa6b403b2b01334d3951941907b8d194229d"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "98d70e59b5c21599b92e53bf228854e936deba2d1f0f69142cc49001c28393ae"
+      "sha256": "0aefe70c2c6a1f5708e70dc456c7ddfd70000932939edead1cd10519b0b69963"
     },
     {
       "path": "self_check.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "35817a34799d5faba576806a8dccf931f64a80ecd83ea949de66b1e5f8566bb1"
+      "sha256": "06c3c63702ce50c0a05fdf75099cd1bf18d7338fa8e762e38076399f35817e7f"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "67a428a72fa4b98ac1b423eb426b5bc76ab67ad6c0ce25f5489f5a4f50634055"
+      "sha256": "3cafb76982e019dc3a6bbfce1d6e0dd37e9893b7d1abfcc7308570fd83855dde"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -208,7 +208,7 @@
       "role": "narrative_translation",
       "required": false,
       "language": "en",
-      "sha256": "f452de6def81b6cc94a3e096eae6960c4af0caeb52200bfd5ae532968a858966",
+      "sha256": "99f7bb033699502a1cd32e531b25df02249a26d447d2f9a3aa52ed68ed5b4e5b",
       "translation_of": "proposal.md"
     },
     {
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "07826de9a37640799f9462936ab7458fab46f5fbda53bd95c0aa8e12be29fb66"
+      "sha256": "2fe428c2fb1d0b21574d2b7c27b1f0b3be7874c9672b78767d0976186336c5dc"
     },
     {
       "path": "assets/scenes/agent-repair-commons.jpg",

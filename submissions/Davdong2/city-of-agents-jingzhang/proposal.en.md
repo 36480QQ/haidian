@@ -17,7 +17,7 @@ iteration: "v1.0"
 
 This proposal does not equate an “AI city” with a collection of robots, blue screens and driverless vehicles. It proposes an accountable **Urban Agent System** in which trees, lights, seats, buildings, vehicles, shops, robots and the memory of the Jingzhang Railway may have identities, abilities and bounded memories. They collaborate through a common protocol, while human safety, privacy, choice and appeal always outrank system efficiency. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
-Every spatial statement is a **conceptual recommendation / reference scheme / subject to professional development**. It is not an approval, government commitment or statutory-planning conclusion. Formal figures are generated from the submitted GeoJSON and `metrics.json`; the fifteen participant-cleared AI images communicate desired experience only and are not evidence of existing conditions, boundaries, historical records or metrics. [source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
+Every spatial statement is a **conceptual recommendation / reference scheme / subject to professional development**. It is not an approval, government commitment or statutory-planning conclusion. Formal figures are generated from the submitted GeoJSON and `metrics.json`; the seventeen scene images and seven process drafts are participant-cleared AI concept expressions that communicate desired experience or the co-creation process only and are not evidence of existing conditions, boundaries, historical records or metrics. [source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
 
 ![City-scale vision aerial from the North Fifth Ring to Beijing North Railway Station: AI-generated concept expression, not evidence of existing conditions, boundaries or approval](assets/scenes/full-corridor-aerial.jpg)
 
@@ -177,9 +177,77 @@ Metrics are separated into announced facts, provisional-boundary calculations, c
 
 FAR and approved height remain `unknown`, explicitly preventing conceptual graphics from becoming pseudo-statutory claims. [metric:floor_area_ratio] [metric:approved_building_height_m]
 
+## Complete Visual Atlas
+
+This atlas connects every completed corridor panorama, competition board, system study, and scene prototype to the readable proposal. Formal planning graphics and AI-generated concept images are deliberately separated: the five evidence-led planning diagrams and three integrated boards explain the spatial framework, while the scene images communicate an experiential vision and are not evidence of existing conditions, redlines, ownership, engineering feasibility, or approval.
+
+### 1. Corridor Boards and City-scale Vision
+
+![A0-01 masterplan board: city-scale aerial, central memory spine, and three districts](assets/figures/board-masterplan.png)
+
+![A0-02 system strategy: spatial structure, mobility, and blue-green systems](assets/figures/board-strategy.png)
+
+![A0-03 scenario nodes and implementation system](assets/figures/board-experience.png)
+
+![Concept aerial from North Fifth Ring to Beijing North Station; AI-generated and not planning evidence](assets/scenes/full-corridor-aerial.jpg)
+
+### 2. Spatial and System Studies
+
+![CITY OF AGENTS concept structure](assets/scenes/concept-structure.jpg)
+
+![Memory Spine continuity and east-west stitching study](assets/scenes/memory-spine-connectivity.jpg)
+
+![Protection, retention, and adaptive renewal strategy](assets/scenes/protection-renewal-strategy.jpg)
+
+![Three Agent districts and their system roles](assets/scenes/three-agent-districts.jpg)
+
+![Composite section from the railway to adjacent neighborhoods](assets/scenes/railway-neighborhood-section.jpg)
+
+![Four-layer Urban Agent System](assets/scenes/urban-agent-system.jpg)
+
+### 3. Urban Intelligent-life Scene Prototypes
+
+![CITY OF AGENTS cover scene; AI-generated concept image](assets/scenes/cover-hero.jpg)
+
+![Mobility Personality Port](assets/scenes/mobility-personality-port.jpg)
+
+![Tree Council](assets/scenes/tree-council.jpg)
+
+![No-App Crossing](assets/scenes/no-app-crossing.jpg)
+
+![AI City Living Room](assets/scenes/ai-city-living-room.jpg)
+
+![Agent Repair Commons](assets/scenes/agent-repair-commons.jpg)
+
+![Jingzhang 1909 and Beijing Node 01](assets/scenes/time-railway-node01.jpg)
+
+![Urban Agent Passport and civic-rights interface](assets/scenes/urban-agent-passport.jpg)
+
+![A living city across 24 hours](assets/scenes/living-city-24h.jpg)
+
+![24-hour experience choreography board; generated in-image text is draft-only](assets/scenes/living-city-24h-board.jpg)
+
+### 4. AI Co-creation Process Archive｜Not Formal Planning Evidence
+
+The following images document the prompt–generation–verification–redrawing workflow. They make the design process traceable, but their in-image text, numbers, boundaries, and map details may be model-generated. They do not supersede the proposal, GeoJSON, `metrics.json`, or formal planning diagrams.
+
+![Process draft: masterplan board](assets/process/draft-a0-masterplan.jpg)
+
+![Process draft: distributed Urban Agent System](assets/process/draft-a0-agent-system.jpg)
+
+![Process draft: the living city](assets/process/draft-a0-living-city.jpg)
+
+![Process draft: Memory Spine and east-west stitching](assets/process/draft-a3-memory-spine.jpg)
+
+![Process draft: protection, retention, and adaptive renewal](assets/process/draft-a3-adaptive-city.jpg)
+
+![Process draft: Urban Agent Passport](assets/process/draft-a3-agent-passport.jpg)
+
+![Process draft: prototype-to-city implementation](assets/process/draft-a3-implementation.jpg)
+
 ## Risk, copyright and compliance
 
-Provisional polygons must be replaced and all dependent metrics rerun. Missing building, ownership, structural, redline, utility, heritage, rail-safety and environmental data prevent demolition, density, height, investment or approval conclusions. AI systems prohibit default facial recognition, hidden emotion inference, cross-context profiling and high-risk decisions without an accountable human. Historical reconstruction discloses provenance, inference and uncertainty. Formal planning figures are original programmatic outputs; OSM is attributed under ODbL; the fifteen participant-cleared AI images are concept-only assets listed in `manifest.json` under the shared usage declaration in `sources.json`. See `report/copyright_statement.md`. [source:BOUNDARY-SOURCE] [source:OSM-CONTEXT] [source:ASSET-CATALOG] [depth:risk_missing_data]
+Provisional polygons must be replaced and all dependent metrics rerun. Missing building, ownership, structural, redline, utility, heritage, rail-safety and environmental data prevent demolition, density, height, investment or approval conclusions. AI systems prohibit default facial recognition, hidden emotion inference, cross-context profiling and high-risk decisions without an accountable human. Historical reconstruction discloses provenance, inference and uncertainty. Formal planning figures are original programmatic outputs; OSM is attributed under ODbL; the seventeen scene images and seven process drafts are concept-only assets listed in `manifest.json` under the shared usage declaration in `sources.json`. See `report/copyright_statement.md`. [source:BOUNDARY-SOURCE] [source:OSM-CONTEXT] [source:ASSET-CATALOG] [depth:risk_missing_data]
 
 ## References
 

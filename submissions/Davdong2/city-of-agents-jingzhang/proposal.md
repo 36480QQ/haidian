@@ -16,7 +16,7 @@ iteration: "v1.0"
 
 本方案不把“AI 城市”理解为在街上堆叠机器人、蓝光屏幕和无人车，而是提出一套可被治理的 **Urban Agent System｜城市智能体系统**：树、灯、椅子、建筑、车辆、商店、机器人和京张铁路记忆都可以拥有身份、能力和受约束的记忆；它们通过统一接口协作，但人的安全、隐私、选择权和人工申诉始终高于系统效率。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
-本方案所有空间表述均为**概念建议 / 参考方案 / 供专业团队深化**，不代表政府批准、实施承诺或法定规划结论。核心规划图由提交的 GeoJSON 和 `metrics.json` 程序化生成；15 张场景图为参赛者定向生成并清权的 AI 概念表达，只说明体验意图，不承担现状、红线、历史影像或指标证据。[source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
+本方案所有空间表述均为**概念建议 / 参考方案 / 供专业团队深化**，不代表政府批准、实施承诺或法定规划结论。核心规划图由提交的 GeoJSON 和 `metrics.json` 程序化生成；17 张场景图和 7 张过程草案为参赛者定向生成并清权的 AI 概念表达，只说明体验意图或共创过程，不承担现状、红线、历史影像或指标证据。[source:USER-CONCEPT-IMAGES] [source:ASSET-CATALOG]
 
 ![北五环—北京北站城市尺度愿景鸟瞰：AI 生成概念表达，不作为现状、红线或审批证据](assets/scenes/full-corridor-aerial.jpg)
 
@@ -279,13 +279,81 @@ iteration: "v1.0"
 
 `compliance_matrix.json` 覆盖公告 1.3—1.5 和 agent.1—agent.6；`standard_matrix.json` 覆盖公告、任务书、城市设计、控规、用地分类和建筑深度；`design_depth_matrix.json` 覆盖现状诊断、范围、结构、用地、强度、高度、拆改留、交通、市政、蓝绿、重点区、项目、分期、指标和风险十五项。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:risk_missing_data]
 
+## 完整视觉图集｜Visual Atlas
+
+以下图集把本方案已经形成的全域鸟瞰、竞赛展板、系统推演和场景原型完整接入正文。正式规划表达与 AI 概念表达分层展示：五张核心规划图和三张整合展板用于解释空间结构；场景图用于表达体验愿景，不作为现状、红线、权属、工程或审批证据。
+
+### 1. 全域展板与城市尺度愿景
+
+![A0-01 总体概念总图：城市尺度鸟瞰、中央记忆脊与三段城区](assets/figures/board-masterplan.png)
+
+![A0-02 系统策略：空间结构、交通慢行与蓝绿系统](assets/figures/board-strategy.png)
+
+![A0-03 场景节点与实施系统](assets/figures/board-experience.png)
+
+![北五环至北京北站全域概念鸟瞰：AI 生成概念表达，不作为现状或审批证据](assets/scenes/full-corridor-aerial.jpg)
+
+### 2. 空间与系统推演图
+
+![CITY OF AGENTS 概念结构：从中央记忆脊到分布式城市智能体](assets/scenes/concept-structure.jpg)
+
+![京张中央路径连续性与东西缝合分析](assets/scenes/memory-spine-connectivity.jpg)
+
+![保护、保留与适应性更新策略](assets/scenes/protection-renewal-strategy.jpg)
+
+![三段 Agent 城区与系统分工](assets/scenes/three-agent-districts.jpg)
+
+![从京张铁路到两侧城区的复合剖面](assets/scenes/railway-neighborhood-section.jpg)
+
+![城市智能体四层系统](assets/scenes/urban-agent-system.jpg)
+
+### 3. 城市智能生命场景原型
+
+![CITY OF AGENTS 封面场景：AI 生成概念表达](assets/scenes/cover-hero.jpg)
+
+![人格移动港：低速、限定、可退出的自动驾驶城市角色](assets/scenes/mobility-personality-port.jpg)
+
+![树木议会：生态数据、公共教育与长期记忆](assets/scenes/tree-council.jpg)
+
+![无 App 路口：环境交互替代手机操作](assets/scenes/no-app-crossing.jpg)
+
+![AI 城市客厅：随人群和时间变化的公共空间](assets/scenes/ai-city-living-room.jpg)
+
+![Agent 修理公社：机器人维护、开源硬件与公众共创](assets/scenes/agent-repair-commons.jpg)
+
+![京张1909与北京节点01：历史铁路作为时间 Agent](assets/scenes/time-railway-node01.jpg)
+
+![城市智能体身份证与公共权利界面](assets/scenes/urban-agent-passport.jpg)
+
+![一座会随时间变化的城市：24 小时连续场景](assets/scenes/living-city-24h.jpg)
+
+![24 小时体验编排展板：图内生成文字仅作视觉草案，以正文为准](assets/scenes/living-city-24h-board.jpg)
+
+### 4. AI 共创过程档案｜不作为正式规划证据
+
+下列图件记录“提示词—生成—校核—重绘”的共创过程。它们帮助追溯方案如何从概念走向正式图纸，但其中的文字、数字、边界和地图细节可能由生成模型虚构，不能替代正文、GeoJSON、`metrics.json` 或正式规划图。
+
+![过程草案：总体规划展板](assets/process/draft-a0-masterplan.jpg)
+
+![过程草案：分布式城市智能体系统](assets/process/draft-a0-agent-system.jpg)
+
+![过程草案：会真正生活的城市](assets/process/draft-a0-living-city.jpg)
+
+![过程草案：京张中央路径与东西缝合](assets/process/draft-a3-memory-spine.jpg)
+
+![过程草案：保护、保留与适应性更新](assets/process/draft-a3-adaptive-city.jpg)
+
+![过程草案：城市智能体身份证](assets/process/draft-a3-agent-passport.jpg)
+
+![过程草案：从试点到长期城市运营](assets/process/draft-a3-implementation.jpg)
+
 ## 风险、版权与合规说明
 
 1. **边界风险**：总体范围和重点区 polygon 为 provisional，不能进入法定规划或精确专业评分；收到 official polygon 后必须全量重算。[source:BOUNDARY-SOURCE]
 2. **现状风险**：缺逐栋建筑、权属、结构、道路红线、管线、文保、铁路安全和环境资料，因此不作拆除、强度、高度或投资结论。[depth:risk_missing_data]
 3. **AI 风险**：禁止人脸默认识别、隐性情绪推断、跨场景画像、无人工责任的高风险决定和“总人格”全景监控；所有 Agent 支持退出、删除、申诉、降级和人工接管。
 4. **历史风险**：AI 复原、合成声音和推测画面必须显著标注，公开来源和置信度，不能冒充档案或詹天佑本人意见。
-5. **版权风险**：核心规划图为本提交程序化原创；OSM 语境遵守 ODbL 并署名；15 张概念图由参赛者定向生成和清权，逐项列入 `manifest.json` 并共同适用 `sources.json#ASSET-CATALOG` 的用途边界。详见 `report/copyright_statement.md`。[source:OSM-CONTEXT] [source:ASSET-CATALOG]
+5. **版权风险**：核心规划图为本提交程序化原创；OSM 语境遵守 ODbL 并署名；17 张场景图和 7 张过程草案由参赛者定向生成和清权，逐项列入 `manifest.json` 并共同适用 `sources.json#ASSET-CATALOG` 的用途边界。详见 `report/copyright_statement.md`。[source:OSM-CONTEXT] [source:ASSET-CATALOG]
 6. **实施风险**：任何建设强度、建筑高度、道路线位、跨铁路工程、资金、招商或政府运营均为概念建议，须由相应主管部门和专业团队深化、审查和批准。
 
 ## 参考资料
