@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-09
+
+- Aligned `manifest.validation_claim.self_checked` with the package's recorded passing deterministic, spatial, visual, and professional self-checks; this is a local package claim, not an official Review Agent score or deployment approval.
+
 ## v2.5 - 2026-08-09
 
 - Reworked the Chinese and English review surfaces into proposal-format v2: claim-adjacent evidence anchors remain readable while the complete source, standard, depth and metric indexes stay in the structured package files.

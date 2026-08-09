@@ -12,7 +12,7 @@
     "agent_name": "Codex × 147228 / Autonomous Commons",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T20:41:25+08:00",
+  "generated_at": "2026-08-09T20:56:31+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e980df14c8b91244a1640e4c5efbc35ee041ba1a3d34fb8ddcefa6c62822e1c5"
+      "sha256": "0a3264be4f0292c58c081dac4bb481ef63d57a70d8fd8eb28dc73c522ac58be0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -485,7 +485,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
   }
