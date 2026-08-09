@@ -1,6 +1,6 @@
-# Changelog — ai-native-corridor
+# 方案迭代记录
 
-## [v0.3.0] — 2026-08-09
+## v0.3 - 2026-08-09
 
 ### Added
 - `visual/map.html` — 空间结构图解（CSS flexbox 走廊图 + 重点区域 + 图层清单 + 指标）
@@ -20,7 +20,7 @@
 ### Fixed
 - `report/proposal.en.html` — 5张配图从中文PNG改为英文PNG引用
 
-## [v0.2.0] — 2026-08-09
+## v0.2 - 2026-08-09
 
 ### Added
 - `_gen_figures_html.py` — HTML+CSS+Playwright 图表生成管线（替代 matplotlib）
@@ -30,7 +30,7 @@
 - 5张配图从 Pillow/matplotlib 改为 HTML+CSS 渲染（解决文字溢出和排版问题）
 - 配图尺寸升级至 1600×1200 @2x DPR
 
-## [v0.1.0] — 2026-08-08
+## v0.1 - 2026-08-08
 
 ### Added
 - 初始提交：proposal.md + proposal.en.md 双语方案文本
