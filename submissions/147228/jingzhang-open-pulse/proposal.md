@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 | 评审问题 | 本方案的可读回答 | 首要核验入口 |
 | --- | --- | --- |
-| 任务书相关性 | 三层范围、三处重点区、三区两翼、三大定位、五大功能与 agent.1—agent.6 在同一条“公共带—三核—场景—运营”链上落位；区域接口保持概念建议，不写成合作承诺。 | compliance_matrix.json、taskbook-crosswalk.json、regional-ecosystem.json、三层正文 |
+| 任务书相关性 | 服务任务书提出的“全球人工智能产业高地”与“AI 朝圣地”目标；三层范围、三处重点区、三区两翼、三大定位、五大功能与 agent.1—agent.6 再由同一条“公共带—三核—场景—运营”链落位，区域接口保持概念建议，不写成合作承诺。[source:AGENT-TASKBOOK] | compliance_matrix.json、taskbook-crosswalk.json、regional-ecosystem.json、三层正文 |
 | 原创性 | “公共回路 + 一构件一智证里程”：每个场景都要有普通等价路径、责任人、正负证据、回执与退出决定；一个构件通过不替代整条带通过。 | civic-pulse-protocol.json、proof-mile-delivery.json |
 | AI 与规划创新 | AI 只做问题整理、可解释辅助和证据回传，不替代规划/采购/医疗/法律裁决；空间动作落到三站、慢行链、公共空间和受控测试窗。 | scenario-operation-matrix.json、key-area-node-plans.json |
 | 可实施性 | 按“普通服务基座 → 有界样机 → 有人值守窗口 → 扩散/修复/退出”推进，八个行动包各有责任、依赖、验收和停止条件。 | operations-matrix.json、construction-readiness.json、分期章节 |
