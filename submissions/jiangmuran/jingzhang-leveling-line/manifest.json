@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b5885a931dd9828620f8a5faa30a4f8a6fbd31673705ecd024dd2e4c262bf6b4"
+      "sha256": "a3ef808f3e4f08b3ef8cf25764336c8cc3d01c5401d9782c9dbe23e2a7da2214"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ea64b6f9590f1a29d93f9af9244bf3b13effd6651e31fe79ebd49ad63f3cae4f"
+      "sha256": "bc623cd535cfb4a03c50451d2c6e9de084ab689a41b9c2f54dd9d535b8fee926"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "b69fcf3d8b6b678c104700d04da23a3e9fb2438480646a2228a1f2a6cb08b076"
+      "sha256": "f51ec6d270b2ebf5ab34dfd62b5d60c6abdd950e1f17838e8a0a4a73b88c3fd2"
     },
     {
       "path": "visual/assets/verify.js",
@@ -287,7 +287,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "803f5d349090cae14d76ea9532c869093be1a6d1d5a90ad0d67e58858cdecd6f"
+      "sha256": "9a008471e1209938761094162a47714dcb68aec39d14527104fd66eb14d247f1"
     },
     {
       "path": "assets/figures/ecosystem.en.png",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2dbefd7f31dea68b293dd2c9222a1bb9e053e359cf0573696110716ed8545aa1"
+      "sha256": "b4886d5e02e1d2342050eddf22f61e2aac8cf261548ee4b9907625ce09a75699"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "49ef95675b4cf018971ab3a63f6f98d5408b80a9a0da2fc14e324556ee308405"
+      "sha256": "66e5bf12abe19654d29ef5050b4d98e0e293c6a49aff7814963da32514e938f7"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "c904b558b0d3f9b029cc9ba7ce5b52a4ca8c2fef728134ac0062d8cff1aec9da"
+      "sha256": "8dbabdcd96b3acef8deceecbfc1cc2520e51d99e6c9bc26be55cc0b0d8e13b05"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -464,6 +464,21 @@
       "language": "en",
       "translation_of": "assets/figures/hero-leveling-line.png",
       "sha256": "936e0a6c8697e8f8a18fb12bb73c19fb0612653b265fa19fed7fbdd31c4eef3e"
+    },
+    {
+      "path": "assets/figures/street-eye-level.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "7c9d07799f448571800894a6bfc6ab265998061ead5ccc621f6266700f056ed8"
+    },
+    {
+      "path": "assets/figures/street-eye-level.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/street-eye-level.png",
+      "sha256": "47fb03c92fa7e2b515041b58a8e070af00a261ba53103dce495b2051dbe3189b"
     }
   ],
   "validation_claim": {

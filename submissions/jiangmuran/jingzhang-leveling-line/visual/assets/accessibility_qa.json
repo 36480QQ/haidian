@@ -131,6 +131,12 @@
    "pass": true
   },
   {
+   "sheet": "svg/street-eye-level",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
+  },
+  {
    "sheet": "svg.en/ecosystem",
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
@@ -189,6 +195,12 @@
    "min_font_units": 9.5,
    "min_height_mm_at_A0": 4.99,
    "pass": true
+  },
+  {
+   "sheet": "svg.en/street-eye-level",
+   "min_font_units": 9.0,
+   "min_height_mm_at_A0": 4.73,
+   "pass": true
   }
  ],
  "offline_html": {
@@ -228,13 +240,13 @@
   },
   {
    "file": "report/proposal.html",
-   "references": 10,
+   "references": 11,
    "missing": [],
    "remote": []
   },
   {
    "file": "report/proposal.en.html",
-   "references": 12,
+   "references": 13,
    "missing": [],
    "remote": []
   }
