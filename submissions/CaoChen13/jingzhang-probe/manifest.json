@@ -12,7 +12,7 @@
     "agent_name": "Claude Opus 5",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T15:45:37Z",
+  "generated_at": "2026-08-09T16:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "044c772fad3c17325f6af521e5ad3ca21f6fab136a2a274fbfd1f9ed8366bddd"
+      "sha256": "364b4c0ba4ed5ee66bac44097000c7f1174c365b367d3c05a80d674619a8d96d"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,49 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4b04d7e03518d4a0a81dec3c5d37768379da8dc8bf9d2246049ec11338c33b98"
+      "sha256": "65043520637cf6f2d22381839925b60f1e0ab6733a3c7d2a8d039da277498c7a"
+    },
+    {
+      "path": "visual/assets/build_geometry.js",
+      "role": "reproducibility_script_python_transport",
+      "required": true,
+      "sha256": "414d9b48bc6c49722bc428f7ebb8b6604db73573f96da60d03da2613e9ba1cb3"
+    },
+    {
+      "path": "visual/assets/boundary_sensitivity.js",
+      "role": "reproducibility_script_python_transport",
+      "required": true,
+      "sha256": "d76a204324664f7973269619925957a9ed9e43b45cdc0e87540535f39c3289bd"
+    },
+    {
+      "path": "visual/assets/run_record.js",
+      "role": "reproducibility_script_python_transport",
+      "required": true,
+      "sha256": "acaf79cceae0d3f23f77638748c33d18aa1e7f84a6391f7dcae896370e9f5ed7"
+    },
+    {
+      "path": "visual/assets/repro_requirements.js",
+      "role": "reproducibility_environment",
+      "required": true,
+      "sha256": "5178be3a329ccb52288ae1f9481d1bd3cae7567892329f52c2e90e1a31b5e7af"
+    },
+    {
+      "path": "visual/assets/repro_inputs.js",
+      "role": "reproducibility_input_bundle",
+      "required": true,
+      "sha256": "2533b55099376e894862446d9ef402acb676f1c17f0cef02d35e3f3359d076a8"
+    },
+    {
+      "path": "visual/assets/boundary_sensitivity.json",
+      "role": "audit_record",
+      "required": true,
+      "sha256": "43c8bbe698657cac850366dd6a7256dff26d993a3ef40aa95a717de202661864"
+    },
+    {
+      "path": "visual/assets/run_record.json",
+      "role": "audit_record",
+      "required": true,
+      "sha256": "2448f6e1e311ce872b5d34f4a003a1ea73d9ff6dbb2329b3853f22d4392f0194"
     },
     {
       "path": "assumptions.json",
@@ -48,7 +90,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "7dad77d03b6e6e25171a6f0fce79d4c71b4afeac5a03c17122f6788426ae113e"
+      "sha256": "daeeede5da04d3d432d3233080b3d28a1dd7e8db6af19f20705d8705b129cec5"
     },
     {
       "path": "self_check.json",
@@ -60,7 +102,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "2e213d1d25571d2636ea7b582f286300235dde12146821b18d8eb45f727e1a36"
     },
     {
       "path": "standard_matrix.json",
@@ -79,7 +121,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4b4a4cb44fadcc9ad31d82e83770b6ac33aafe037cfbf6df1d409c6168dab84f"
+      "sha256": "7a444d3e247bcba2521359402fcdcd62097d3b5bad92d1f135de2834cc1417f0"
     },
     {
       "path": "report/narrative.md",
@@ -108,11 +150,18 @@
       "sha256": "1d3babc2aaa039b3070a0879c9fc1275a0bcd05da912cc53b3026d4577e24bdc"
     },
     {
+      "path": "drawings/agent-task-evidence.pdf",
+      "role": "drawing_supplement",
+      "required": true,
+      "language": "zh",
+      "sha256": "5b0b9508a780418690d7cd5b45d1895a951a19b3683939c46d89545153e37eab"
+    },
+    {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c2af3fd8e0f51065c87e393d66b9ef8232638de3f855a5701a80601fc7b93603"
+      "sha256": "776d3871fe7b18cbb04ea00a859fe790b882f6f5f8bbf443e526fddefdbf8d07"
     },
     {
       "path": "assets/figures/typical-section-AA.png",
