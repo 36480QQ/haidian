@@ -1081,12 +1081,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 **It is not a changelog.** A changelog says what changed. This says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and `analysis/build_errata.py` verifies at build time that the commit exists and touched the file the entry blames — an errata register that cannot be joined to the repository would be the defect it records.
 
-Twenty-four entries. By finder:
+Twenty-seven entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 14 | The audit was run against the shipped package, not a draft |
-| The author | 8 | Found while working |
+| The author | 11 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
 | **A reviewer outside this proposal** | **1** | @anselasimov-web, in PR #1002 |
 
@@ -1099,14 +1099,17 @@ Twenty-four entries. By finder:
 | Shape | Count |
 |---|---|
 | **The check measured the convenient thing** | **5** |
+| **A deliverable was not looked at before shipping** | **5** |
 | Geometry did not mean what it said | 4 |
 | A reference did not resolve | 4 |
 | Two copies of one thing drifted | 3 |
 | A number outlived the sentence holding it | 2 |
 | A claim outlived the package | 2 |
-| A deliverable was not looked at before shipping | 2 |
 
-**The first row occurs five times.** Translation coverage counted strings handed to the translator rather than Chinese on the page. The CJK-leak gate scanned text and could not see PDFs. The build's verdict expression omitted two gates that printed PASS. `verify.js` ended in three conclusions it printed and never refused on. The closure reader rejected an explicit `false` and not an absent field. Five times, the same thing: **the check asked whether something was said wrongly, not whether it was said at all.**
+
+**The first two rows occur five times each.** Translation coverage counted strings handed to the translator rather than Chinese on the page. The CJK-leak gate scanned text and could not see PDFs. The build's verdict expression omitted two gates that printed PASS. `verify.js` ended in three conclusions it printed and never refused on. The closure reader rejected an explicit `false` and not an absent field. Five times, the same thing: **the check asked whether something was said wrongly, not whether it was said at all.**
+
+**The second row is also five, and its remedy is not the first row's.** All five are drawings or pages: FIG.05's route legend still carried a closing tail the geometry no longer has; FIG.06 said "every class-1 value" over seven of nine; FIG.03's tier table contradicted its own legend four lines below it; FIG.04 still called BM-1 the datum of origin and said the route returns to BM-0; FIG.01's land-use legend listed six classes for a seven-class partition and painted the seventh grey as "other". **None is a geometric error, so none could have been caught by a geometric check** — they are label strings inside figure modules. All five were found by rendering what a reviewer is sent and looking at it. The first row's remedy is to build a gate. The second row's remedy is to open the drawing.
 
 That count is not rhetoric. It is this proposal's most direct evidence, measured on itself, for why closure error is worth having — one reading cannot show a systematic bias, and five readings in the same direction can.
 

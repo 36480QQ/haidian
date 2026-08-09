@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 24,
+  "total": 27,
   "by_found_by": {
    "audit": 14,
    "own-gate": 1,
    "external-reviewer": 1,
-   "self": 8
+   "self": 11
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -19,7 +19,7 @@
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
-   "deliverable-not-inspected-before-shipping": 2,
+   "deliverable-not-inspected-before-shipping": 5,
    "gate-reported-and-was-ignored": 1
   }
  },
@@ -271,6 +271,36 @@
    "what_zh": "FIG.06 的一类指标表标题写「全部第一类数值」，实际只列了九项中的七项——green_ratio_in_partition 与 phasing_union_area_sqm 加进了 metrics.json，没加进这张手排的表。",
    "why_zh": "补上两行后版面溢出，overflow_qa 报了警，而我在构建未通过的状态下把它推了上去。一道报了警而作者照推的闸门，与一道不报警的闸门效果相同——这是本册中唯一一条「检查正常工作、人没有」的记录，因此单列一个形状。",
    "fix_zh": "表格改为覆盖 metrics.json 中全部 known 指标，遗漏即构建失败；版面重排至零溢出；未通过的那次提交保留在历史里，不做 amend。"
+  },
+  {
+   "id": "E25",
+   "commit": "6b3d8d00",
+   "file": "assets/figures/mobility-bluegreen.png",
+   "found_by": "self",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "FIG.05 的路线图例仍写 BM-0 → … → BM-1 → BM-0，带着两天前已从几何中去掉的闭合尾巴。",
+   "why_zh": "序列是图纸模块里的一个标签字符串，与它所描述的几何毫无联接，因此任何几何检查都不可能发现它。",
+   "fix_zh": "两条序列改为止于一等点并写明复算在 BM-0 完成；图纸与展板副标题改为「附合路线」。"
+  },
+  {
+   "id": "E26",
+   "commit": "e0512ac5",
+   "file": "assets/figures/key-areas.png",
+   "found_by": "self",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "FIG.03 的层级表写「一等水准点 BM-0 / BM-1 / BM-2」，而同一张图下方四行处的图例正确区分了水准原点与一等点；FIG.04 仍把 BM-1 标为「起算基准」，并写「返回 BM-0 复算」。",
+   "why_zh": "正文里的这两处措辞两天前已改，图纸没跟上——一处修改落在文本上而没有落在它的其他载体上。",
+   "fix_zh": "三处全部改准；离线页的同一处也一并改。"
+  },
+  {
+   "id": "E27",
+   "commit": "5725fdcf",
+   "file": "assets/figures/site-overview.png",
+   "found_by": "self",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "FIG.01 的用地图例列六类，而剖分已是七类（新增 1207）。地图对未知代码走了兜底分支，把这些地块画成灰色标为「其他」——图上出现了图例没有命名的颜色。",
+   "why_zh": "图例是手排的，用地代码不是；兜底分支让缺项变得无声。",
+   "fix_zh": "补入第七类，并删除兜底：出现图例未收录的用地代码即构建失败。"
   }
  ]
 }
