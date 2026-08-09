@@ -6,7 +6,10 @@ license: "CC-BY-4.0"
 summary: "一个可核验的场地事实：设计时速350公里的京张高铁，正从1909年老京张地表线（今遗址公园）脚下的清华园隧道穿过。由此读出『京张定律』：每次提速，都把速度藏得更深，把地面还得更慢。本方案让AI作为第三叠遵守同一条定律——算力入地、机器人入夜、屏幕退场，智能只在十二口『井』中露头，地面留给更安静的市井。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot"]
-iteration: "v1.1"
+iteration: "v1.2"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
 ---
 
 # 京张三叠：同一走廊的三次变奏
@@ -29,10 +32,16 @@ iteration: "v1.1"
 
 证据分四级，四级不得混写：
 
-- **第一级·官方规则**：三层范围面积与四至、三处重点区与设计任务来自资格预审公告 [source:OFFICIAL-ANNOUNCEMENT]；六项智能体任务、三大定位、五大功能、三区两翼与十条共创原则来自面向智能体任务书 [source:AGENT-TASKBOOK]；用地分类、控规衔接与城市设计管理分别响应 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MOHURD-URBAN-DESIGN-MEASURES]，公告与任务书由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 与 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 统领；[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 因官方文件未入库，如实维持数据缺口。
+- **第一级·官方规则**：三层范围的面积与四至、三处重点区与十一项设计任务来自资格预审公告；六项智能体任务、三大定位、五大功能、三区两翼与十条共创原则来自面向智能体任务书 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。
 - **第二级·场地事实**（驱动概念，不推导红线）：其一，京张高铁自北京北站以约6.02公里的清华园隧道，下穿学院南路、北三环、知春路、北四环、成府路、双清路 [source:QHY-TUNNEL-GOV] [source:QHY-TUNNEL-SASAC]；其二，老京张地表线更新为京张铁路遗址公园，正在分段贯通、走向连续 [source:JZ-PARK-PUBLIC]。
 - **第三级·国际机制案例**：只取机制、不抄形态，见统筹研究章 [source:CASE-STOCKHOLM-DP] 等六例。
-- **第四级·几何工作层**：提交边界与重点区来自仓库临时推定要素 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]，在 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#KEY-01] 中标注 `official_boundary=false`；现状路网、轨道、水系、公园与车站上下文来自 OpenStreetMap [source:OSM-CONTEXT]（© OpenStreetMap contributors，ODbL），仅作底图参考 [A-OSM-001]。资料用途分级遵循公开来源登记表 [source:SOURCE-REGISTRY]，坐标与量算规则遵循站点包 [source:SITE-PACKAGE]（面积按国家标准投影坐标复算，代号见参考资料章），事实导航参考 [source:PROCESSED-FACT-PACK] [depth:existing_conditions_diagnosis]。
+- **第四级·几何工作层**：提交边界与三处重点区来自仓库的临时推定要素，标注 `official_boundary=false`；现状路网、轨道、水系与车站上下文来自 OpenStreetMap（© OpenStreetMap contributors，ODbL），仅作底图参考 [source:BOUNDARY-SOURCE] [source:OSM-CONTEXT] [data:geometry/site_boundary.geojson#SITE-001]。
+
+上述四级的逐条索引（来源 ID、许可、可用性分级、坐标与量算规则）保存在 `sources.json` 与站点包中，正文不再罗列。公告与任务书是全案的主控依据，逐条响应见 `standard_matrix.json` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+三项法定标准各自统领一章：用地分类统领用地章，控规衔接统领强度表述，城市设计管理统领风貌章 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MEASURES]。建筑深度规定因官方文件未入库，如实维持数据缺口 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+
+资料用途分级与坐标量算规则见 [source:SOURCE-REGISTRY] [source:SITE-PACKAGE]，事实导航见 [source:PROCESSED-FACT-PACK]，现状诊断与数据缺口的完整披露见风险章 [depth:existing_conditions_diagnosis] [A-OSM-001]。
 
 ![三叠总览：明叠绿脊、暗叠隧道走廊与十二井总体格局，临时边界以低对比虚线表达](assets/figures/site-overview.png)
 
