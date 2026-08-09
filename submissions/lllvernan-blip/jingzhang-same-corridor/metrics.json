@@ -10,7 +10,7 @@
                                                "value":  13,
                                                "unit":  "count",
                                                "source_files":  [
-                                                                    "../../../diagnosis/section_units.geojson"
+                                                                    "visual/assets/section_units.json"
                                                                 ],
                                                "formula":  "count(features in section_units.geojson)",
                                                "confidence":  "high",
@@ -40,7 +40,7 @@
                                                   "value":  10,
                                                   "unit":  "count",
                                                   "source_files":  [
-                                                                       "../../../diagnosis/section_units.geojson"
+                                                                       "visual/assets/section_units.json"
                                                                    ],
                                                   "formula":  "count(features where section_id starts_with \u0027S\u0027)",
                                                   "confidence":  "high",
@@ -67,7 +67,7 @@
                                                     "value":  3,
                                                     "unit":  "count",
                                                     "source_files":  [
-                                                                         "../../../diagnosis/section_units.geojson"
+                                                                         "visual/assets/section_units.json"
                                                                      ],
                                                     "formula":  "count(features where section_type = \u0027prototype\u0027)",
                                                     "confidence":  "high",
@@ -87,7 +87,7 @@
                                                              "value":  null,
                                                              "unit":  "count",
                                                              "source_files":  [
-                                                                                  "../../../diagnosis/section_units.geojson",
+                                                                                  "visual/assets/section_units.json",
                                                                                   "geometry/roads.geojson",
                                                                                   "geometry/public_space.geojson"
                                                                               ],
@@ -130,7 +130,7 @@
                                                                "value":  null,
                                                                "unit":  "count",
                                                                "source_files":  [
-                                                                                    "../../../diagnosis/section_units.geojson",
+                                                                                    "visual/assets/section_units.json",
                                                                                     "geometry/roads.geojson",
                                                                                     "geometry/public_space.geojson",
                                                                                     "geometry/constraints.geojson"
@@ -175,7 +175,7 @@
                                                                        "value":  null,
                                                                        "unit":  "m",
                                                                        "source_files":  [
-                                                                                            "../../../diagnosis/section_units.geojson",
+                                                                                            "visual/assets/section_units.json",
                                                                                             "geometry/public_space.geojson",
                                                                                             "geometry/constraints.geojson"
                                                                                         ],
@@ -218,7 +218,7 @@
                                                          "value":  null,
                                                          "unit":  "count",
                                                          "source_files":  [
-                                                                              "../../../diagnosis/section_units.geojson",
+                                                                              "visual/assets/section_units.json",
                                                                               "geometry/public_space.geojson",
                                                                               "geometry/roads.geojson"
                                                                           ],
@@ -261,7 +261,7 @@
                                                                    "value":  null,
                                                                    "unit":  "count",
                                                                    "source_files":  [
-                                                                                        "../../../diagnosis/section_units.geojson",
+                                                                                        "visual/assets/section_units.json",
                                                                                         "geometry/roads.geojson",
                                                                                         "geometry/public_space.geojson"
                                                                                     ],
@@ -305,7 +305,7 @@
                                                       "value":  null,
                                                       "unit":  "m",
                                                       "source_files":  [
-                                                                           "../../../diagnosis/section_units.geojson",
+                                                                           "visual/assets/section_units.json",
                                                                            "geometry/roads.geojson",
                                                                            "geometry/public_space.geojson"
                                                                        ],
@@ -347,7 +347,7 @@
                                                          "value":  null,
                                                          "unit":  "m",
                                                          "source_files":  [
-                                                                              "../../../diagnosis/section_units.geojson",
+                                                                              "visual/assets/section_units.json",
                                                                               "geometry/buildings.geojson",
                                                                               "geometry/public_space.geojson"
                                                                           ],
@@ -390,7 +390,7 @@
                                                                        "value":  null,
                                                                        "unit":  "count",
                                                                        "source_files":  [
-                                                                                            "../../../diagnosis/section_units.geojson",
+                                                                                            "visual/assets/section_units.json",
                                                                                             "geometry/roads.geojson",
                                                                                             "geometry/public_space.geojson"
                                                                                         ],
@@ -434,7 +434,7 @@
                                                                     "value":  null,
                                                                     "unit":  "count",
                                                                     "source_files":  [
-                                                                                         "../../../diagnosis/section_units.geojson",
+                                                                                         "visual/assets/section_units.json",
                                                                                          "geometry/green_space.geojson",
                                                                                          "geometry/public_space.geojson",
                                                                                          "geometry/constraints.geojson"
@@ -480,7 +480,7 @@
                                                                            "value":  null,
                                                                            "unit":  "count",
                                                                            "source_files":  [
-                                                                                                "../../../diagnosis/section_units.geojson",
+                                                                                                "visual/assets/section_units.json",
                                                                                                 "geometry/roads.geojson",
                                                                                                 "geometry/public_space.geojson"
                                                                                             ],
@@ -524,7 +524,7 @@
                                                     "value":  null,
                                                     "unit":  "count",
                                                     "source_files":  [
-                                                                         "../../../diagnosis/section_units.geojson",
+                                                                         "visual/assets/section_units.json",
                                                                          "geometry/public_space.geojson"
                                                                      ],
                                                     "formula":  "count(public_interfaces in P-A connecting station, industry frontage, park, or Qinghe bluegreen system)",
@@ -568,7 +568,7 @@
                                                           "value":  null,
                                                           "unit":  "count",
                                                           "source_files":  [
-                                                                               "../../../diagnosis/section_units.geojson",
+                                                                               "visual/assets/section_units.json",
                                                                                "geometry/roads.geojson",
                                                                                "geometry/public_space.geojson"
                                                                            ],
@@ -611,7 +611,7 @@
                                                               "value":  null,
                                                               "unit":  "ratio",
                                                               "source_files":  [
-                                                                                   "../../../diagnosis/section_units.geojson",
+                                                                                   "visual/assets/section_units.json",
                                                                                    "geometry/roads.geojson",
                                                                                    "geometry/public_space.geojson",
                                                                                    "geometry/constraints.geojson"

@@ -162,37 +162,37 @@
                       "path":  "metrics.json",
                       "role":  "metrics",
                       "required":  true,
-                      "sha256":  "294597898ad6f38d01bdbe5e37537b6d567449d534e074148a7363f30a11f5e7"
+                      "sha256":  "603afdd838e3d5075dab7aa8cfbb0911206ef0a819e993b87255ec2e3f1c5c66"
                   },
                   {
                       "path":  "proposal.md",
                       "role":  "narrative",
                       "required":  true,
-                      "sha256":  "e5778131444e1de96772df2452fa492ba470b555d844cbc6f4c7e1b25a1cfbaa"
+                      "sha256":  "95daae22a8dad4f98fbf47acc10f5ea2bc97a939fa2ee3b9fb989e448ced3367"
                   },
                   {
                       "path":  "report/copyright_statement.md",
                       "role":  "copyright_statement",
                       "required":  true,
-                      "sha256":  "f0bb1e2a3fe667614f26eb6883396b97667c6c7f61aa52381e016fb70c0592b0"
+                      "sha256":  "dd7e126565a45f6caba74babe341037eb167a4cf7d0760b69bacb860ca487fcd"
                   },
                   {
                       "path":  "report/proposal.html",
                       "role":  "rendered_proposal_html",
                       "required":  true,
-                      "sha256":  "6d933bc04b7573512a101ad35ef2dbac12e0e57b318e214252ed438506f7c1b9"
+                      "sha256":  "314ed6420ea2b70fab460136fd5748abb07d13bf41b26e2cf777daed2b5e0172"
                   },
                   {
                       "path":  "self_check.json",
                       "role":  "self_check",
                       "required":  true,
-                      "sha256":  "346898e3af8b9f7571fe1809d5d7cce7f8842b2282bbc2d0feb97f68257ec8f3"
+                      "sha256":  "7d718262a14f646d8de128cc147682c0f1b3c0e48375baefb72310754b5cc326"
                   },
                   {
                       "path":  "sources.json",
                       "role":  "sources",
                       "required":  true,
-                      "sha256":  "24972c49c3bc9867a536817bbef14d531b8600ea662b8f630bd3467bc24a180c"
+                      "sha256":  "4d52a425fbc78fb42c9372f100448263193ef9fc6fa58574611d2c8846e151c3"
                   },
                   {
                       "path":  "standard_matrix.json",
@@ -211,6 +211,18 @@
                       "role":  "narrative",
                       "required":  true,
                       "sha256":  "22ae4d929caf2d3c46bf32a24dacfd81a728ffb3531cce4019fb48a1fb9b04a7"
+                  },
+                  {
+                      "path":  "visual/assets/section_units.json",
+                      "role":  "visualization",
+                      "required":  true,
+                      "sha256":  "32d787467fd3f6472bbdbd77194152b25fa6d60195ae344c16f181316a1ae3dc"
+                  },
+                  {
+                      "path":  "visual/assets/coordinate-verification-log.json",
+                      "role":  "visualization",
+                      "required":  true,
+                      "sha256":  "c041e26798dd02166645123e7394c1b9b72ef3fe933b0b723ebbdb482fad285f"
                   }
               ]
 }

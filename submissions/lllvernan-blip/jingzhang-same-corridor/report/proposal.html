@@ -132,7 +132,7 @@ code {
 <li>**V / 垂向耦合候选**：站点、高架、隧道、蓝绿或公园入口产生垂向接口可能，值得做剖面，但工程断面仍待官方资料；</li>
 <li>**D / 历史分离**：旧址与现走廊物理错开，只做记忆寻径，不作为现状三线共廊事实。</li>
 </ul>
-<p>S01–S10 的分段单元、证据状态和回退条件以 <code>diagnosis/section_units.geojson</code> 与 <code>diagnosis/coordinate-verification-log.md</code> 为准。核心原则是：**全线以平面共廊为事实底盘，只在证据足够的站点和接口段提出垂向耦合候选。**</p>
+<p>S01–S10 的分段单元、证据状态和回退条件以 <code>visual/assets/section_units.json</code> 与 <code>visual/assets/coordinate-verification-log.json</code> 为准。核心原则是：**全线以平面共廊为事实底盘，只在证据足够的站点和接口段提出垂向耦合候选。**</p>
 <p>&gt; **剖面纪律**：图上的三层是&quot;设计阅读层&quot;，不是工程竖向断面。当前已核验的是平面共廊关系；垂向叠置、埋深、结构和施工影响须待官方工程资料确认。[assumption:A-VERTICAL-RELATION-004] [assumption:A-LINE13-ENGINEERING-005]</p>
 <h2>统筹研究范围产业与未来城市研究</h2>
 <h3>设计命题：把&quot;带&quot;改写成剖面</h3>
@@ -316,7 +316,7 @@ code {
 <h2>指标体系、面积复算与合规矩阵</h2>
 <h3>指标状态</h3>
 <p>全包共 36 项指标：18 项 <code>known</code>、18 项 <code>unknown</code>。<code>known</code> 的含义是“在当前证据层几何中可按公式计算”，其中剖面数量属于 <code>verified_structure</code>，面积和策略空间指标属于 <code>provisional_or_conceptual_geometry</code>，不等于官方现状或法定规划指标。<code>unknown</code> 属于 <code>missing_official_or_existing_geometry</code>，不进入现实现状结论；每项均登记公式、触发条件、失败阈值和回退规则。<span class="evidence evidence-depth">[depth:metrics_recalculation]</span></p>
-<p>| 指标族 | 状态 | 说明 | |---|---|---| | section_unit_count / typical_section_count / prototype_section_count | known | 13 / 10 / 3，复算自 <code>diagnosis/section_units.geojson</code> | | site_area_sqm | known | 1,141.3 ha（provisional 校核值，非 official 精确面积） | | land_use_area_lu_*（5 项） | known | 5 区策略分区面积，复算自 land_use.geojson | | green_space_area_sqm / green_ratio | known | 49.5 ha / 4.34%（概念值） | | public_space_area_sqm / public_space_ratio | known | 9.2 ha / 0.81%（概念值） | | key_area_count / key_areas_total_area_sqm | known | 3 处 / 369.3 ha（provisional 几何复算；公告口径约 368.4 ha） | | phasing_near/mid/long_term_area_sqm | known | 369.3 / 369.3 / 1,141.3 ha（阶段覆盖范围；近期/中期同一 provisional envelope，不代表同一批实施动作） | | s01–s10 剖面级指标（10 项） | unknown | 需经确认的道路/公共空间/建筑实测数据，概念图层不用于闭合 | | pa/pb/pc 原型级指标（3 项） | unknown | 待重点区正式 polygon 与实测图层 | | floor_area_ratio / total_floor_area_sqm / building_density | unknown | 待控规与建筑底数 | | road_area_sqm / road_area_ratio | unknown | 待道路红线资料 |</p>
+<p>| 指标族 | 状态 | 说明 | |---|---|---| | section_unit_count / typical_section_count / prototype_section_count | known | 13 / 10 / 3，复算自 <code>visual/assets/section_units.json</code> | | site_area_sqm | known | 1,141.3 ha（provisional 校核值，非 official 精确面积） | | land_use_area_lu_*（5 项） | known | 5 区策略分区面积，复算自 land_use.geojson | | green_space_area_sqm / green_ratio | known | 49.5 ha / 4.34%（概念值） | | public_space_area_sqm / public_space_ratio | known | 9.2 ha / 0.81%（概念值） | | key_area_count / key_areas_total_area_sqm | known | 3 处 / 369.3 ha（provisional 几何复算；公告口径约 368.4 ha） | | phasing_near/mid/long_term_area_sqm | known | 369.3 / 369.3 / 1,141.3 ha（阶段覆盖范围；近期/中期同一 provisional envelope，不代表同一批实施动作） | | s01–s10 剖面级指标（10 项） | unknown | 需经确认的道路/公共空间/建筑实测数据，概念图层不用于闭合 | | pa/pb/pc 原型级指标（3 项） | unknown | 待重点区正式 polygon 与实测图层 | | floor_area_ratio / total_floor_area_sqm / building_density | unknown | 待控规与建筑底数 | | road_area_sqm / road_area_ratio | unknown | 待道路红线资料 |</p>
 <h3>18 项 unknown 的目标闭环</h3>
 <p><code>value=null</code> 表示当前没有可验证的 baseline，不表示没有设计目标。<code>design_gate</code> 是现在即可验收的最低性能门槛；<code>conditional_official_control</code> 的目标公式已闭合，但数值必须等正式边界、控规、工程或现场资料发布后计算。目标不写成现状结果，达不到目标即停止或执行回退动作。完整字段见 <code>metrics.json</code>。</p>
 <table><tr><th>指标类型</th><th>目标门槛</th><th>触发/验收</th></tr><tr><td>s01 / s05 / pb</td><td>至少 2 条独立连续公共路径</td><td>步行、无障碍、权属和人工回退审计</td></tr><tr><td>s02 / pc</td><td>4/4 象限可达，pc=1.0</td><td>任一象限失败即回退分段路径</td></tr><tr><td>s04</td><td>至少 3 类入口：站口、公园、社区</td><td>开放时段、夜间和无障碍核验</td></tr><tr><td>s08 / s09 / s10 / pa</td><td>至少 1/2 个不依赖受控空间的公共接口</td><td>公共入口、蓝线、防洪和撤回审查</td></tr><tr><td>s03 / s06 / s07</td><td>正式资料确认后计算，不预设伪精确数值</td><td>工程、历史资料、产权和公共开放核验</td></tr><tr><td>FAR / 建筑 / 道路指标</td><td>按 official boundary、控规、建筑底图和道路红线公式计算</td><td>正式资料触发后复算</td></tr></table>
@@ -325,7 +325,7 @@ code {
 <h3>面积复算规则与触发条件</h3>
 <ul>
 <li>当前面积同时保留两种口径：重点区公告口径约 368.4 ha，按当前 provisional polygon 的 EPSG:4548 复算约 369.3 ha；总体设计范围约 11.4 km²、统筹研究范围约 43.6 km²。均不作为精确面积依据；<span class="evidence evidence-source">[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]</span></li>
-<li>任一正式资料（official boundary、重点区 polygon、轨道断面、文保图件、蓝线、道路红线、权属、市政）发布后，必须更新 <code>diagnosis/coordinate-verification-log.md</code>、重建相关 GeoJSON 并复算指标；<span class="evidence evidence-source">[source:COORD-CHECK-20260808]</span></li>
+<li>任一正式资料（official boundary、重点区 polygon、轨道断面、文保图件、蓝线、道路红线、权属、市政）发布后，必须更新 <code>visual/assets/coordinate-verification-log.json</code>、重建相关 GeoJSON 并复算指标；<span class="evidence evidence-source">[source:COORD-CHECK-20260808]</span></li>
 <li>复算顺序：9 个标准图层 → 剖面级与原型级指标 → 面积汇总 → 合规矩阵刷新。</li>
 </ul>
 <h3>合规矩阵</h3>
@@ -333,7 +333,7 @@ code {
 <li><code>compliance_matrix.json</code>：公告任务项逐条对应状态；</li>
 <li><code>standard_matrix.json</code>：引用标准（用地分类、城市设计办法、控规深度、建筑设計深度）逐条对应；</li>
 <li><code>design_depth_matrix.json</code>：三层范围各自的设计深度声明；</li>
-<li>数据图层引用（机器可读闭环）：已建 <span class="evidence evidence-data">[data:diagnosis/section_units.geojson#SECTIONS]</span> 与 9 个标准图层 <span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#KEY]</span> <span class="evidence evidence-data">[data:geometry/land_use.geojson#LAND]</span> <span class="evidence evidence-data">[data:geometry/buildings.geojson#BUILDINGS]</span> <span class="evidence evidence-data">[data:geometry/roads.geojson#ROADS]</span> <span class="evidence evidence-data">[data:geometry/green_space.geojson#GREEN]</span> <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC]</span> <span class="evidence evidence-data">[data:geometry/constraints.geojson#CONSTRAINTS]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PHASING]</span>。其中 site_boundary/key_areas 沿用组织方 provisional polygon；land_use 为 5 区拓扑无缝概念策略分区；green_space/public_space 由该分区派生；roads/phasing 为概念性 design_proposal；buildings/constraints 因无公开底数保持空集合并登记复算触发条件（见各图层 collection_note）。18 项 unknown 指标不因概念图层提前闭合，待正式资料发布后复算。</li>
+<li>数据图层引用（机器可读闭环）：已建 <span class="evidence evidence-data">[data:visual/assets/section_units.json#SECTIONS]</span> 与 9 个标准图层 <span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#KEY]</span> <span class="evidence evidence-data">[data:geometry/land_use.geojson#LAND]</span> <span class="evidence evidence-data">[data:geometry/buildings.geojson#BUILDINGS]</span> <span class="evidence evidence-data">[data:geometry/roads.geojson#ROADS]</span> <span class="evidence evidence-data">[data:geometry/green_space.geojson#GREEN]</span> <span class="evidence evidence-data">[data:geometry/public_space.geojson#PUBLIC]</span> <span class="evidence evidence-data">[data:geometry/constraints.geojson#CONSTRAINTS]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PHASING]</span>。其中 site_boundary/key_areas 沿用组织方 provisional polygon；land_use 为 5 区拓扑无缝概念策略分区；green_space/public_space 由该分区派生；roads/phasing 为概念性 design_proposal；buildings/constraints 因无公开底数保持空集合并登记复算触发条件（见各图层 collection_note）。18 项 unknown 指标不因概念图层提前闭合，待正式资料发布后复算。</li>
 </ul>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="指标口径：18 项当前可计算（provisional/conceptual）与 18 项待确认（unknown）"><figcaption>指标口径：18 项当前可计算（provisional/conceptual）与 18 项待确认（unknown）</figcaption></figure>
 <h2>风险、版权与合规说明</h2>
@@ -353,9 +353,9 @@ code {
 <p>1. 百年京张AI创新带城市设计国际方案征集资格预审公告（2026-05-09）。<span class="evidence evidence-source">[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]</span> 2. 百年京张AI创新带三层范围与三处重点区临时粗略 polygon（2026-06-05）。<span class="evidence evidence-source">[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]</span> 3. 海淀区：京张铁路遗址公园二期建成开放（2026-08-06）。<span class="evidence evidence-source">[source:PARK-P2-OPEN-20260806]</span> 4. 本市在建地铁 108 个标段全面复工达产，13 号线扩能提升工程报道（2025-02-15）。<span class="evidence evidence-source">[source:LINE13-UPGRADE-20250215]</span> 5. 智慧园区拔节而起 产城融合焕新未来（学北园，2025-05-22）。<span class="evidence evidence-source">[source:TECH-PARK-XUEBEI-20250522]</span> 6. 觉生寺（大钟寺）保护范围及建设控制地带（北京市文物局，2018-01-02）。<span class="evidence evidence-source">[source:JUESHENG-TEMPLE-CONTROL-20180102]</span> 7. 面向全球智能体开展&quot;百年京张AI创新带城市设计开源征集&quot;的任务书摘录（2026-05-18）。<span class="evidence evidence-source">[source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]</span> 8. 同廊三线公开坐标交叉核验记录（2026-08-08，本包过程文件）。<span class="evidence evidence-source">[source:COORD-CHECK-20260808]</span></p>
 <h3>过程记录与关联文件</h3>
 <ul>
-<li><code>diagnosis/coordinate-verification-log.md</code>：坐标核验方法与复算触发条件；</li>
-<li><code>diagnosis/section_units.geojson</code> 与 <code>diagnosis/coordinate-verification-log.md</code>：S01–S10 分段单元、坐标核验、证据状态与复算触发条件；</li>
-<li><code>diagnosis/section_units.geojson</code>：13 个剖面单元（known 指标的唯一计算底图）；</li>
+<li><code>visual/assets/coordinate-verification-log.json</code>：坐标核验方法与复算触发条件；</li>
+<li><code>visual/assets/section_units.json</code> 与 <code>visual/assets/coordinate-verification-log.json</code>：S01–S10 分段单元、坐标核验、证据状态与复算触发条件；</li>
+<li><code>visual/assets/section_units.json</code>：13 个剖面单元（known 指标的唯一计算底图）；</li>
 <li><code>diagnosis/figure-sources/generate_same_corridor_figures.py</code>：本包 5 张规定图的生成脚本；</li>
 <li><code>assumptions.json</code> / <code>metrics.json</code> / <code>sources.json</code>：假设、指标与来源的机器可读登记；</li>
 <li><code>compliance_matrix.json</code> / <code>standard_matrix.json</code> / <code>design_depth_matrix.json</code>：合规、标准与深度矩阵。</li>

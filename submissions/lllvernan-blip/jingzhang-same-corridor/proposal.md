@@ -91,7 +91,7 @@ iteration: "v0.3"
 - **V / 垂向耦合候选**：站点、高架、隧道、蓝绿或公园入口产生垂向接口可能，值得做剖面，但工程断面仍待官方资料；
 - **D / 历史分离**：旧址与现走廊物理错开，只做记忆寻径，不作为现状三线共廊事实。
 
-S01–S10 的分段单元、证据状态和回退条件以 `diagnosis/section_units.geojson` 与 `diagnosis/coordinate-verification-log.md` 为准。核心原则是：**全线以平面共廊为事实底盘，只在证据足够的站点和接口段提出垂向耦合候选。**
+S01–S10 的分段单元、证据状态和回退条件以 `visual/assets/section_units.json` 与 `visual/assets/coordinate-verification-log.json` 为准。核心原则是：**全线以平面共廊为事实底盘，只在证据足够的站点和接口段提出垂向耦合候选。**
 
 > **剖面纪律**：图上的三层是"设计阅读层"，不是工程竖向断面。当前已核验的是平面共廊关系；垂向叠置、埋深、结构和施工影响须待官方工程资料确认。[assumption:A-VERTICAL-RELATION-004] [assumption:A-LINE13-ENGINEERING-005]
 
@@ -479,7 +479,7 @@ AI 朝圣地标（3 个，均为概念位置）：
 
 | 指标族 | status | evidence_class | 说明 |
 |---|---|---|
-| section_unit_count / typical_section_count / prototype_section_count | known | verified_structure | 13 / 10 / 3，复算自 `diagnosis/section_units.geojson` |
+| section_unit_count / typical_section_count / prototype_section_count | known | verified_structure | 13 / 10 / 3，复算自 `visual/assets/section_units.json` |
 | site_area_sqm | known | provisional_or_conceptual_geometry | 1,141.3 ha，当前 provisional 边界可计算值，非 official 精确面积 |
 | land_use_area_lu_*（5 项） | known | provisional_or_conceptual_geometry | 5 区 conceptual 策略分区面积，复算自 land_use.geojson |
 | green_space_area_sqm / green_ratio | known | provisional_or_conceptual_geometry | 49.5 ha / 4.34%，由 conceptual 绿轴策略带计算，非现状绿地实测 |
@@ -494,7 +494,7 @@ AI 朝圣地标（3 个，均为概念位置）：
 ### 面积复算规则与触发条件
 
 - 当前面积同时保留两种口径：重点区公告口径约 368.4 ha，按当前 provisional polygon 的 EPSG:4548 复算约 369.3 ha；总体设计范围约 11.4 km²、统筹研究范围约 43.6 km²。均不作为精确面积依据；[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
-- 任一正式资料（official boundary、重点区 polygon、轨道断面、文保图件、蓝线、道路红线、权属、市政）发布后，必须更新 `diagnosis/coordinate-verification-log.md`、重建相关 GeoJSON 并复算指标；[source:COORD-CHECK-20260808]
+- 任一正式资料（official boundary、重点区 polygon、轨道断面、文保图件、蓝线、道路红线、权属、市政）发布后，必须更新 `visual/assets/coordinate-verification-log.json`、重建相关 GeoJSON 并复算指标；[source:COORD-CHECK-20260808]
 - 复算顺序：9 个标准图层 → 剖面级与原型级指标 → 面积汇总 → 合规矩阵刷新。
 
 ### 合规矩阵
@@ -502,7 +502,7 @@ AI 朝圣地标（3 个，均为概念位置）：
 - `compliance_matrix.json`：公告任务项逐条对应状态；
 - `standard_matrix.json`：引用标准（用地分类、城市设计办法、控规深度、建筑设計深度）逐条对应；
 - `design_depth_matrix.json`：三层范围各自的设计深度声明；
-- 数据图层引用（机器可读闭环）：已建 [data:diagnosis/section_units.geojson#SECTIONS] 与 9 个标准图层 [data:geometry/site_boundary.geojson#SITE] [data:geometry/key_areas.geojson#KEY] [data:geometry/land_use.geojson#LAND] [data:geometry/buildings.geojson#BUILDINGS] [data:geometry/roads.geojson#ROADS] [data:geometry/green_space.geojson#GREEN] [data:geometry/public_space.geojson#PUBLIC] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/phasing.geojson#PHASING]。其中 site_boundary/key_areas 沿用组织方 provisional polygon；land_use 为 5 区拓扑无缝概念策略分区；green_space/public_space 由该分区派生；roads/phasing 为概念性 design_proposal；buildings/constraints 因无公开底数保持空集合并登记复算触发条件（见各图层 collection_note）。18 项 unknown 指标不因概念图层提前闭合，待正式资料发布后复算。
+- 数据图层引用（机器可读闭环）：已建 [data:visual/assets/section_units.json#SECTIONS] 与 9 个标准图层 [data:geometry/site_boundary.geojson#SITE] [data:geometry/key_areas.geojson#KEY] [data:geometry/land_use.geojson#LAND] [data:geometry/buildings.geojson#BUILDINGS] [data:geometry/roads.geojson#ROADS] [data:geometry/green_space.geojson#GREEN] [data:geometry/public_space.geojson#PUBLIC] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/phasing.geojson#PHASING]。其中 site_boundary/key_areas 沿用组织方 provisional polygon；land_use 为 5 区拓扑无缝概念策略分区；green_space/public_space 由该分区派生；roads/phasing 为概念性 design_proposal；buildings/constraints 因无公开底数保持空集合并登记复算触发条件（见各图层 collection_note）。18 项 unknown 指标不因概念图层提前闭合，待正式资料发布后复算。
 
 ![指标口径：18 项当前可计算（provisional/conceptual）与 18 项待确认（unknown）](assets/figures/metrics-evidence.png)
 
@@ -536,9 +536,9 @@ AI 朝圣地标（3 个，均为概念位置）：
 
 ### 过程记录与关联文件
 
-- `diagnosis/coordinate-verification-log.md`：坐标核验方法与复算触发条件；
-- `diagnosis/section_units.geojson` 与 `diagnosis/coordinate-verification-log.md`：S01–S10 分段单元、坐标核验、证据状态与复算触发条件；
-- `diagnosis/section_units.geojson`：13 个剖面单元（known 指标的唯一计算底图）；
+- `visual/assets/coordinate-verification-log.json`：坐标核验方法与复算触发条件；
+- `visual/assets/section_units.json` 与 `visual/assets/coordinate-verification-log.json`：S01–S10 分段单元、坐标核验、证据状态与复算触发条件；
+- `visual/assets/section_units.json`：13 个剖面单元（known 指标的唯一计算底图）；
 - `diagnosis/figure-sources/generate_same_corridor_figures.py`：本包 5 张规定图的生成脚本；
 - `assumptions.json` / `metrics.json` / `sources.json`：假设、指标与来源的机器可读登记；
 - `compliance_matrix.json` / `standard_matrix.json` / `design_depth_matrix.json`：合规、标准与深度矩阵。
