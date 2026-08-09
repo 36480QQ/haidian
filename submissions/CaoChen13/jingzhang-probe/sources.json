@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "OSM-CONTEXT",
+      "source_type": "osm",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/",
+      "access_endpoint": "Overpass API (overpass-api.de / overpass.private.coffee)",
+      "license": "ODbL 1.0",
+      "attribution": "© OpenStreetMap contributors (ODbL 1.0)",
+      "data_timestamp": "2026-05-06T03:25:00Z",
+      "retrieved_date": "2026-08-09",
+      "collection_method": "Overpass QL query over bbox (S,W,N,E) 39.9545,116.3105,40.0380,116.5215; way/relation geometry for building, highway, railway, waterway, leisure, landuse",
+      "spatial_coverage": "bbox 39.9545,116.3105,40.0380,116.5215 (WGS84)",
+      "transformations": "EPSG:4326 -> EPSG:4548 (pyproj); polygon/line projection only, no geometry editing",
+      "usage": "Background urban context and lead-finding only. Used to render figure assets/figures/typical-section-AA.png (existing fabric, road network, green space, and railway status classification).",
+      "usage_limits": "NOT used for boundaries, areas, road right-of-way, statutory control, or any declared dimension. No metric dimension in the derived figure is sourced from OSM geometry.",
+      "known_limitations": "Crowd-sourced completeness varies; building levels and ground-floor use are largely absent; two distinct polygons share the name '京张铁路遗址公园' (way 122348403 / 1190723117), so any single-polygon measurement is unstable and is deliberately not published.",
+      "derived_artifacts": [
+        "assets/figures/typical-section-AA.png"
+      ],
+      "cross_check_status": "not_cross_checked - awaiting official survey / regulatory plan data"
+    }
+  ]
+}
