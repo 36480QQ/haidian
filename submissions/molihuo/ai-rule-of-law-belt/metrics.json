@@ -280,6 +280,20 @@
     "道路红线与建筑退线缺失"
    ],
    "reason": "official setback controls not present"
+  },
+  "rol_ai_index": {
+   "status": "unknown",
+   "value": null,
+   "unit": "index",
+   "source_files": [
+    "proposal.md §三层范围工作框架"
+   ],
+   "formula": "composite of 5 dimensions: 规则完备度/合规执行度/纠纷化解度/人才供给度/国际话语度 (concept framework)",
+   "confidence": "unknown",
+   "assumptions": [
+    "需要官方数据与专业团队校核后方可正式测算"
+   ],
+   "reason": "AI 法治事业指数（ROL-AI Index）为原创概念指标框架，无官方发布数据"
   }
  }
 }
