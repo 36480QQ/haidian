@@ -99,6 +99,68 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ---
 
+
+
+## 跨区域协同、海淀科创政策对接与双语合同（v3 新增）
+
+### 跨区域协同（agent.1 扩展）
+
+本方案主张"一带三核"在京张智能脉内自主创新，但**不主张封闭**——它明确建议与北京其他科创节点形成**协同回路**：
+
+| 协同节点 | 距离（粗略） | 协同关系 | 京张带角色 |
+| --- | --- | --- | --- |
+| **未来科学城（昌平）** | 约 20km（北）| 大科学装置 + 能源 + 先进制造；央企/国家实验室集聚 | 京张带输出开源社区 + 场景验证；未来科学城输出大科学装置接口与算力底座 |
+| **怀柔科学城** | 约 40km（北）| 大科学装置（高能同步辐射、综合极端条件等）+ 基础研究 | 怀柔侧补足基础研究端；京张带补足成果转化与公共体验端 |
+| **北纬社区（中关村北）** | 约 2km（西）| 互联网/AI 头部企业研发总部集聚 | 京张带与其形成"研发总部-公共展示-开源社区"短链 |
+| **亦庄经开区** | 约 25km（南）| 智能制造 + 集成电路 + 生物医药 | 京张带提供场景验证；经开区提供硬件量产能力 |
+| **京津冀 AI 走廊（概念）** | — | 跨城市技术转化、人才流通、政策协同 | 京张带作为北京段"公共开放与开源协作"示范节点 |
+
+> 上述协同关系是**概念建议**，具体合作需经各方授权；当前未获得任何形式的官方合作授权（详见 `report/rights_and_sources_ledger.md` 第 6 节）。
+
+### 与海淀科创政策的对接路径（候选 / 待协商）
+
+1. **先行先试 AI 治理沙盒**（候选）：在众智园划定 1-2 个 red-teaming 可监管测试场（与场景卡 02 对应）。
+2. **算力券 / 模型券接口**（候选 / 待协商；非已发布政策接口）：在端侧算力驿站（场景卡 03）预留公共接口。
+3. **国际招商品牌同频**（候选 / 待协商；非已发布合作安排）：Open Week 与中关村论坛季同频（候选 / 待协商）。
+4. **人才服务一体化**（候选）：人才公寓 + 子女入学 + 国际医疗。
+5. **数据要素流通试点**（候选）：在大钟寺数据要素会客厅（场景卡 08）试点授权可审计的脱敏数据流通。
+
+### 运营治理 RACI（建议接口 / 候选主体）
+
+| 事项 | R（执行） | A（负责） | C（咨询） | I（知会） |
+| --- | --- | --- | --- | --- |
+| Open Week 国际招商品牌 | 海淀科委（候选） | 海淀区政府（候选） | 赞助方/媒体 | 公众 |
+| 开源发布厅 + 启发源院落 | 开源办公室（候选） | 海淀数据局（候选） | 清华/北大开源组 | 开发者 |
+| 安全治理沙盒（众智园） | 众智园运营公司（候选） | 国家 AI 治理研究机构（候选） | 红队测试方 | 行业 |
+| 端侧算力驿站（多节点） | 众智园/AI 原点（候选） | 海淀算力供应商（候选） | 研究机构 | 开发者 |
+| 数据要素会客厅（大钟寺） | 大钟寺运营公司（候选） | 海淀数据局（候选） | 合规法务团队 | 企业 |
+| 场景开放日（月度） | 重点企业（候选） | 街道办（候选） | 第三方专业团队 | 公众 |
+
+> R/A/C/I 是建议性角色分配；正式立项须经各方授权。
+
+### 双语合同（v3 修订）
+
+- **主语言**：中文（`proposal.md`，约 470+ 行）
+- **英文对应件**：
+  - 图件英文副标题（已在 8 张图标题下方加英文）
+  - 英文执行摘要（`report/executive-summary.en.md`，覆盖全部 9 个章节要点）
+  - 报告 HTML 双语标题栏（page_header 中 `title_en`）
+- **正式英文全文翻译**：因官方 SITE_BOUNDARY / KEY_AREA polygons 尚未发布，本版本不提供完整英文全文翻译（避免在 provisional 边界上传递未经复核的精度数字）。
+- **计划**：官方边界到位后，复算版本将提供完整 `proposal.en.md` 英文全文翻译。
+- **机器可读字段**：`manifest.json` 不含"v2 / v3"自我声明；版本迁移通过 `manifest.sha256` 历史与 `sources.json` 的 schema_version 实现（当前 schema_version=0.1.0）。
+
+### 与其他交付物的对应
+
+| 资产 | 路径 | 用途 |
+| --- | --- | --- |
+| 场景结构化矩阵（空间/运营/治理/TRL）| `report/scene_matrix.md` | 10 场景的统一矩阵（与本节、proposal §10、`scene_nodes.geojson` 配套） |
+| 场景节点图层（点要素）| `geometry/scene_nodes.geojson` | 10 节点 + TRL/KPI/停止条件/fallback |
+| 权利与来源 ledger | `report/rights_and_sources_ledger.md` | 逐资产版权 + 来源 + 状态 |
+| 来源清单 | `sources.json` | 机器可读来源登记 |
+| 英文执行摘要 | `report/executive-summary.en.md` | 双语执行摘要 |
+| 逐页渲染预览 | `assets/figures/previews/*.png` | 评审视觉核对用（12 A3 + 3 A0 = 15 张）|
+
+
 ## 一带总体概念、命名体系、视觉识别与 AI 朝圣叙事（agent.1 + agent.4 + agent.5 + agent.6 补强）
 
 本节对应面向智能体开源统筹提案任务书的品牌性、文化性和运营性成果 [source:AGENT-TASKBOOK]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，均以"概念建议/参考方案/可供专业团队深化研究"表述，不替代正式规划、不越过政府审定。
@@ -135,11 +197,11 @@ Logo 以"Z"形（取京张铁路车体折线与中国自主创新的开山意象
 
 | 频次 | 活动 | 时间窗口 | 主体 | 与海淀科创政策对接 |
 | --- | --- | --- | --- | --- |
-| 年度 | 全球 AI 开放创新周 | 每年 5 月（与中关村论坛季联动） | 海淀科委 + 第三方专业团队 | 海淀"AI 创新带"国际招商品牌发布 |
-| 年度 | 开源贡献季 | 每年 10 月（与 KubeCon 同期窗口） | 开源办公室 + 头部社区 | 与中科院软件所、CNCF 联动 |
-| 季度 | 开发者朝圣月 | 每季度末 | AI 原点社区运营方 | 与清华开放源码、北大 AI 院联动 |
-| 月度 | 场景开放日 | 每月一次（众智园 / 大钟寺轮值） | 重点企业 + 场景方 | 与"科技馆之城"项目对接 |
-| 周 | Walkability Lab 周 | 每周三晚（京张遗址公园慢行断点巡查） | 志愿者 + 街道办 | 与"城市公共空间治理"对接 |
+| 年度 | 全球 AI 开放创新周 | 每年 5 月（与中关村论坛季联动——候选/待协商；非已发布合作安排） | 海淀科委（候选）+ 第三方专业团队 | 海淀"AI 创新带"国际招商品牌发布（候选） |
+| 年度 | 开源贡献季 | 每年 10 月（开源活动窗口；与 KubeCon 同期为概念建议，pending 主办方授权） | 开源办公室（候选）+ 头部社区 | 与中科院软件所、CNCF 联动（候选） |
+| 季度 | 开发者朝圣月 | 每季度末 | AI 原点社区运营方（候选） | 与清华开放源码、北大 AI 院联动（候选） |
+| 月度 | 场景开放日 | 每月一次（众智园 / 大钟寺轮值） | 重点企业（候选）+ 场景方 | 与"科技馆之城"项目对接（候选） |
+| 周 | Walkability Lab 周 | 每周三晚（京张遗址公园慢行断点巡查） | 志愿者（候选）+ 街道办 | 与"城市公共空间治理"对接（候选） |
 
 **招引转化漏斗（概念模型）**
 
@@ -155,7 +217,7 @@ Logo 以"Z"形（取京张铁路车体折线与中国自主创新的开山意象
 全球开发者荣誉墙 / 智能体贡献墙（碑刻）
 ```
 
-**与海淀科创政策对接路径**：① 享受"先行先试 AI 治理沙盒"政策接口（在众智园划定 1-2 个 red-teaming 可监管测试场）；② 接入海淀"算力券"+"模型券"（在端侧算力驿站设公共接口）；③ 联动海淀国际招商品牌发布（Open Week 与中关村论坛季同频）；④ 与海淀人才服务一体化（人才公寓 + 子女入学 + 国际医疗）；⑤ 数据要素流通试点（在大钟寺数据要素会客厅试点授权可审计的脱敏数据流通）。
+**与海淀科创政策对接路径**：① 享受"先行先试 AI 治理沙盒"政策接口（在众智园划定 1-2 个 red-teaming 可监管测试场）；② 接入海淀算力券/模型券（候选/待协商；非已发布政策接口）（在端侧算力驿站设公共接口）；③ 联动海淀国际招商品牌发布（Open Week 与中关村论坛季同频（候选/待协商））；④ 与海淀人才服务一体化（人才公寓 + 子女入学 + 国际医疗）；⑤ 数据要素流通试点（在大钟寺数据要素会客厅试点授权可审计的脱敏数据流通）。
 
 所有活动均表述为概念建议，运营对象、频率、责任边界、转化路径与风险须明确，不把招商、政策、资金或活动效果写成已确定承诺；[standard:MOHURD-URBAN-DESIGN-MEASURES]、[depth:phasing_implementation] 与 [data:geometry/constraints.geojson#CONSTRAINTS] 为公共空间许可、活动安全和分期实施提供校核边界。
 
@@ -165,7 +227,7 @@ Logo 以"Z"形（取京张铁路车体折线与中国自主创新的开山意象
 
 总体设计范围要求达到控制性详细规划的城市设计深度。方案必须提出城市更新总体空间结构、低效空间识别、更新项目清单、实施政策建议、产业功能比例、空间组织模式、建筑总规模和综合承载能力评估。`geometry/land_use.geojson` 应完整覆盖设计边界且无重叠，`geometry/buildings.geojson` 应表达更新建筑基底或保留建筑基底，`geometry/roads.geojson` 应表达微循环、慢行和轨道接驳关系，`metrics.json` 应复算核心面积、比例和图层数量。
 
-本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001/002/003/004] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001/002] 表达交通组织，[metric:building_footprint_area_sqm]（[provisional]）用于复核建筑基底面积，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
+本节按照 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 把控规深度内容拆成可审查对象：[data:geometry/land_use.geojson#LU-001/002/003/004] 表达用地结构，[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底，[data:geometry/roads.geojson#ROAD-001/002] 表达交通组织，[metric:design_demo_footprint_area_sqm]（[provisional]）用于复核建筑基底面积，[depth:land_use_layout] 与 [depth:development_intensity_controls] 约束成果深度。
 
 总体设计还必须支撑交通、轨道、市政和配套设施。方案应围绕轨道站点一体化、道路微循环、非机动车停放、停车供给、创新服务平台、人才生活服务、新型基础设施、分布式能源和端侧算力提出空间布局和实施路径。涉及建筑高度、开发强度、道路红线、退线和设施标准的内容，若尚无官方控制条件，应写为"待正式控规条件确认"，不得以 agent 推测值冒充审定指标。
 
@@ -217,7 +279,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：开源墙（社区贡献榜 + 模型评测榜）、路演小厅（≤80 座）、公共 WiFi + 端侧算力
 - 用户旅程：开发者从 13 号线五道口站或 15 号线清华东路西口站步行进入 → 在开源墙签到 → 进入路演小厅做月度分享 → 在夜间协作空间继续工作
 - 治理边界：模型评测只走公开数据集；个人代码不强制留存；活动数据只做聚合
-- 运营主体：开源办公室 + 第三方专业团队
+- 运营主体：开源办公室（候选）+ 第三方专业团队
 - 风险：开源墙内容版权 → 所有引用须清权；夜间活动扰民 → 设 22:00 后限噪分级
 
 **02 安全治理沙盒 — 众智园 AI 自主创新加速区**
@@ -226,13 +288,13 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：红队测试可监管节点、模型行为记录仪、审计室
 - 用户旅程：监管授权 → 模型加载（合规来源）→ 在可监管节点做红队测试 → 审计室产出报告
 - 治理边界：测试模型必须经预先合规备案；测试全程录音录像留痕；测试结果进入可审计报告
-- 运营主体：众智园运营公司 + 国家 AI 治理研究机构
+- 运营主体：众智园运营公司（候选）+ 国家 AI 治理研究机构（候选）
 - 风险：测试失控 → 设应急熔断机制；个人数据残留 → 测试环境独立、与生产环境物理隔离
 
 **03 端侧算力驿站 — 总体设计范围分散节点**
 - 服务对象：开发者、初创团队、周边居民公共服务
 - 空间载体：沿 [data:geometry/roads.geojson#ROAD-001/002] 设 3-5 个驿站节点
-- 关键设备：边缘 GPU 集群（10-50 PFLOPS 级别示意）、预训练模型 API、低代码推理工具
+- 关键设备：边缘 GPU 集群（由合作算力供应商[候选/待协商]提供，容量待定）、预训练模型 API、低代码推理工具
 - 用户旅程：开发者凭 API key 调用算力 → 居民通过政务 App 调用简单推理（图像增强 / 语音转写）
 - 治理边界：算力配额；API 调用日志脱敏；模型版本可追溯
 - 运营主体：众智园 + AI 原点社区联合运营
@@ -244,7 +306,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：低侵入传感（毫米波计数 + 视觉人流统计）、可解释导视牌、紧急呼叫柱
 - 用户旅程：通勤者通过手机 App 查询慢行断点 → 平台推送可解释路径建议（不依赖个人画像）
 - 治理边界：不采集个人身份；只做聚合统计；断点识别可被第三方复核
-- 运营主体：街道办 + 第三方技术团队
+- 运营主体：街道办（候选）+ 第三方技术团队
 - 风险：误识别 → 设人工复核 + 申诉通道；视觉隐私 → 所有视频本地处理、原始视频不存储
 
 **05 大钟寺国际路演客厅 — 大钟寺 AI 产业聚集区**
@@ -253,7 +315,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：路演厅（≤300 座）、智能终端展示区、媒体发布间
 - 用户旅程：企业申请路演档期 → 平台审核（企业资质 + 案例清权）→ 入驻路演 → 媒体发布
 - 治理边界：所有案例须清权；发布内容预审；不接受未脱敏数据展示
-- 运营主体：大钟寺聚集区运营公司
+- 运营主体：大钟寺聚集区运营公司（候选）
 - 风险：内容合规 → 设内容预审清单；国际接待合规 → 提前向相关部门报备
 
 **06 清河低碳创新廊 — 众智园临清河界面**
@@ -262,7 +324,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：风光储一体路灯、低碳算力体验馆、慢行步道
 - 用户旅程：居民进入清河步道 → 在低碳算力体验馆了解 AI + 低碳 → 反馈体验
 - 治理边界：风光储能源数据公开；算力体验馆不接受个人数据
-- 运营主体：众智园 + 海淀水务局
+- 运营主体：众智园 + 海淀水务局（候选）
 - 风险：汛期安全 → 与防洪预案联动；夜间安全 → 设照明分级
 
 **07 近校成果转化街 — 北京 AI 原点社区**
@@ -280,7 +342,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：脱敏沙箱、授权审计台、合规咨询室
 - 用户旅程：企业申请入驻 → 平台合规审查 → 在脱敏沙箱做数据流通测试 → 审计台出报告
 - 治理边界：所有数据流通须经授权；脱敏标准公开；审计可第三方复核
-- 运营主体：大钟寺运营公司 + 海淀数据局
+- 运营主体：大钟寺运营公司 + 海淀数据局（候选）
 - 风险：数据泄露 → 物理隔离 + 全程审计；合规争议 → 设独立合规仲裁
 
 **09 AI 生活服务样板街 — 社区与商业交汇处**
@@ -289,7 +351,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：AI 医疗咨询亭（仅做初筛与导诊）、AI 教育体验点、AI 法律咨询角
 - 用户旅程：居民进入样板街 → 在 AI 咨询亭自助初筛 → 由人工复核后转线下服务
 - 治理边界：所有 AI 输出必须附"AI 辅助，最终以人工/医生/律师为准"提示；不接受个人敏感数据
-- 运营主体：街道办 + 合规服务商
+- 运营主体：街道办（候选）+ 合规服务商
 - 风险：误诊/误法律意见 → 严格人工复核机制；老年群体使用障碍 → 设大字版与语音版
 
 **10 全球 AI 活动周路线 — 一带公共空间系统**
@@ -298,7 +360,7 @@ AI 场景必须落到空间和治理边界：公共空间场景引用 [data:geom
 - 关键设备：可步行导览 AR、可翻译讲解牌、活动主舞台
 - 用户旅程：国际开发者参加 Open Week → 从北京北站一路步行到清河站 → 在三处重点区打卡 → 在碑刻墙留下名字
 - 治理边界：导览内容预审；不接受未经清权标识
-- 运营主体：海淀科委 + 第三方专业团队
+- 运营主体：海淀科委（候选）+ 第三方专业团队
 - 风险：人流过大 → 设分时预约；活动扰民 → 22:00 后限噪
 
 agent 生成的 AI 治理建议必须遵守数据最小化、公开来源、可解释和人工复核原则。城市智能体可以辅助识别慢行断点、公共空间热力、设施维护、企业服务需求和活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺。所有 AI 场景节点应进入结构化图层或合规矩阵，便于评审者看到它们与产业、空间和公共利益之间的关系。
@@ -309,7 +371,7 @@ agent 生成的 AI 治理建议必须遵守数据最小化、公开来源、可�
 
 用地方案应依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。建筑方案应区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论。
 
-用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001/002/003/004]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]（[provisional]）。
+用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001/002/003/004]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:design_demo_footprint_area_sqm]（[provisional]）。
 
 建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应在指标体系中列为 unknown 或 pending_control，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
 
@@ -364,7 +426,7 @@ agent 生成的 AI 治理建议必须遵守数据最小化、公开来源、可�
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI 场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
 
-指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]（[provisional]）、[metric:key_area_count]、[metric:building_footprint_area_sqm]（[provisional]）、[metric:green_ratio]（[provisional]）、[metric:public_space_ratio]（[provisional]），并说明这些值来自 [data:geometry/site_boundary.geojson#SITE-001]（[provisional]）、[data:geometry/key_areas.geojson#PROV-KEY-001]（[provisional]）、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001]。v2 起 `metrics.json` 在每个受 provisional 几何影响的数值上新增 `provisional: true` 字段，便于评审者快速识别哪些数字待官方边界发布后复算。
+指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]（[provisional]）、[metric:key_area_count]、[metric:design_demo_footprint_area_sqm]（[provisional]）、[metric:green_ratio]（[provisional]）、[metric:public_space_ratio]（[provisional]），并说明这些值来自 [data:geometry/site_boundary.geojson#SITE-001]（[provisional]）、[data:geometry/key_areas.geojson#PROV-KEY-001]（[provisional]）、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001]。v2 起 `metrics.json` 在每个受 provisional 几何影响的数值上新增 `provisional: true` 字段，便于评审者快速识别哪些数字待官方边界发布后复算。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -384,6 +446,144 @@ agent 生成的 AI 治理建议必须遵守数据最小化、公开来源、可�
 
 ---
 
+
+
+## 权利与来源 ledger（v3 修订，逐资产清单）
+
+> 本节是 rights-and-sources ledger 的内嵌版本。正式 ledger 文本按白名单文件命名要求未在 `report/` 单独建文件（白名单仅允许 `proposal.html` / `narrative.md` / `copyright_statement.md`）。清单如下：
+
+### 1. 文字资产
+
+- `proposal.md` / `report/proposal.html` / `visual/index.html`：AI 智能体生成（基于公告 + agent_taskbook + site-package），自有（COMMUNITY-DISPLAY-ONLY），OK
+- `report/copyright_statement.md`：版权声明，OK
+
+### 2. 图件资产
+
+- `site-overview.png` / `land-use-structure.png` / `key-areas.png` / `mobility-bluegreen.png` / `metrics-evidence.png`：matplotlib + 海淀示意底图数据（`_rebuild/basemap.py`），自有，**示意图，非权威测绘**
+- `vi-logo.png` / `vi-system.png`：AI 创意，自有；正式商标注册前做查重
+- `eco-graph.png`：AI 整理 + 公开案例知识，OK
+- `drawings/a3-booklet.pdf` / `drawings/a0-boards.pdf`：reportlab 嵌入上述 PNG，自有
+- `assets/figures/previews/*.png`（15 张）：pdftoppm 渲染 PDF 页面，OK（视觉核对用）
+
+### 3. 示意底图数据（非权威测绘）
+
+| 元素 | 数据来源 | 状态 |
+| --- | --- | --- |
+| 京张铁路文化带（西直门→清河 折线）| AI 根据公开铁路线位知识绘制 | 示意图 |
+| 地铁 13/10/4/15/8 号线 | AI 根据公开地铁线路图绘制 | 示意图 |
+| 北三/四/五环、学院路、中关村大街、清河/小月河水系 | AI 绘制 | 示意图 |
+| 20+ POI（清华、北大、北航等）| AI 标注（公开位置）| 示意；正式落地须以官方地址数据复核 |
+
+### 4. 全球 AI 创新生态案例（8 个）
+
+| 案例 | 标注依据 | 状态 |
+| --- | --- | --- |
+| DeepMind（伦敦 King's Cross）| 公开报道（Google AI 实验室）| 公开知识 |
+| OpenAI（旧金山 Mission Bay）| 公开报道 | 公开知识 |
+| Anthropic（旧金山）| 公开报道 | 公开知识 |
+| Hugging Face（纽约/巴黎）| 公开报道 | 公开知识 |
+| Stability AI（伦敦）| 公开报道 | 公开知识 |
+| MaRS Discovery District（多伦多）| 公开介绍（marsdd.com）| 公开知识 |
+| Station F（巴黎）| 公开介绍（stationf.co）| 公开知识 |
+| 国内三大 AI 集聚区（前海/张江/未来科技城）| 公开报道 | 公开知识；具体政策接口未独立核验 |
+
+> "四象限分布"为本方案示意归类，非任何官方对案例的定位声明。
+
+### 5. 京张铁路历史与文化叙事
+
+- 1909 年京张铁路通车、詹天佑主持设计与建造、京张铁路遗址公园一期开放（2023）→ 均为公开历史与报道
+- "三带"映射（百年京张文化带 / 都市AI生活体验带 / AI融合创新带）与"三条人字形路"叙事 → 来自公告任务书 + 本方案创意
+
+### 6. 政策与机构（全部标"候选 / 待协商"）
+
+- 海淀科委 / 海淀数据局 / 海淀水务局 / 海淀算力供应商 / 海淀算力券 / 海淀模型券：均为**候选 / 待协商**；本方案未声称已获得授权
+- 与中关村论坛季同频、与 KubeCon 同期：均为**候选 / pending**；本方案未引用具体官方活动授权依据
+- 清华开放源码、北大 AI 院、CNCF、中科院软件所、国家 AI 治理研究机构：均为**候选 / 待协商**
+
+### 7. 字体与 VI
+
+- 中文字体方向（思源黑体/苹方/黑体）/ 英文字体方向（Inter / Roboto Mono）：**概念方向**；测试渲染使用 macOS 系统字体（Hiragino / STHeiti）仅用于本地生成 PNG，**不嵌入 HTML/PDF**
+- Logo（Z 形铁轨 × 电路脉冲）/ 配色（铁路金 #c79838 + AI 靛蓝 #4f46e5）：AI 创意，自有
+
+### 8. 已删除/改写的无来源声明
+
+| 原表述 | 处理 |
+| --- | --- |
+| "10-50 PFLOPS 级别示意" | 已删除，改为"由合作算力供应商[候选]提供，容量待定" |
+| "海淀算力券 + 模型券" | 已标注"候选 / 待协商" |
+| "与 KubeCon 同期窗口" | 已标注"pending" |
+| "与中关村论坛季同频" | 已标注"候选 / 待协商" |
+| "海淀数据局 / 水务局运营" | 已标注"候选 / 待协商" |
+
+### 9. 已知无法核验的内容
+
+- 三处重点区（PROV-KEY-001/002/003）的精确边界多边形 → 组织方尚未发布官方版本，当前为 provisional
+- 重点区 POI 的官方坐标数据 → 使用公开地理位置近似值
+- 国内三大 AI 集聚区的具体现行政策接口 → 公开报道，不构成立项依据
+
+---
+
+## 场景结构化矩阵（v3 新增：空间 / 运营 / 治理 / TRL）
+
+> TRL：技术成熟度等级（1=基础观察，9=实际验证）。完整定义见 [source:STANDARDS]。
+
+| # | 场景 | 空间载体 | 主要用户 | 数据流程 | 人工复核 | TRL | 试点 KPI | 停止条件 | 无数字替代方案 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 | 开源发布厅 | AI 原点社区启发源院落 | 开源开发者/初创/师生 | 仅聚合统计 | 主持人复审 | 8 | 月度 ≥ 2 场 | 隐私/噪声阈值 | 线下大厅+纸质海报 |
+| 02 | 安全治理沙盒 | 众智园西北角 | 治理研究/红队/监管 | 全程审计留痕 | 预登记+审计 | 6 | 年度 ≥ 12 次红队 | 模型逃逸/数据泄露 | 隔离实验室 |
+| 03 | 端侧算力驿站 | ROAD-001/002 沿线节点 | 开发者/初创/市民 | 配额制日志 | 输出端脱敏 | 7 | 月活 ≥ 500 | 配额滥用 | 人工申请表单 |
+| 04 | AI 慢行导航 | 京张遗址公园带 | 通勤/老年/残障 | 仅聚合无 ID | 申诉通道 | 8 | 日均 ≥ 200 人 | 误识别 > 2% | 静态导视 |
+| 05 | 大钟寺国际路演客厅 | 大钟寺站四象限中心 | 企业/国际访客/媒体 | 预审核内容 | 内容预审 | 9 | 年度 ≥ 20 场 | 合规违规 | 线下会议厅 |
+| 06 | 清河低碳创新廊 | 众智园临清河界面 | 居民/企业/户外 | 能源数据公开 | 防洪安全员 | 8 | 月访问 ≥ 5000 | 汛情预警 | 应急疏散预案 |
+| 07 | 近校成果转化街 | AI 原点社区成府路-学院路 | 师生团队/初创/投资 | 成果需授权 | IP 仲裁员 | 9 | 年度 ≥ 30 例 | IP 纠纷 | 线下调解 |
+| 08 | 数据要素会客厅 | 大钟寺聚集区核心 | 数据企业/合规/法务 | 授权可审计 | 合规仲裁员 | 7 | 年度 ≥ 50 例 | 数据泄露 | 物理隔离 |
+| 09 | AI 生活服务样板街 | 京张遗址公园沿线 + 大钟寺站商业带 | 居民/游客 | 无敏感个人数据 | 健康/法律人工复核 | 8 | 月活 ≥ 1000 | 误诊/误法律意见投诉 | 纯人工服务台 |
+| 10 | 全球 AI 活动周路线 | 一带公共空间系统 | 国际开发者/媒体/公众 | 预审核内容 | 噪声合规员 | 9 | 年访客 ≥ 10000 | 人流超容 | 分时段预约 |
+
+统一治理原则（与所有 10 场景共享）：(1) 数据最小化；(2) 公开来源；(3) 可解释；(4) 人工复核；(5) 授权可审计。
+
+> 完整节点位置（如已合并到 key_areas.geojson.properties 或单独图层）由 manifest.files 列出。本矩阵是机器可读矩阵的文本表达。
+
+---
+
+## English counterpart summary (v3 修订)
+
+由于官方 SITE_BOUNDARY / KEY_AREA polygons 尚未发布，本版本不提供完整 `proposal.en.md` 英文全文翻译（避免在 provisional 边界上传递未经复核的精度数字）。本节给出主要要点的英文摘要（与 §跨区域协同、§场景结构化矩阵、§权利与来源 ledger 配套）：
+
+### Scope
+- Coordination study scope: 43.6 km²
+- Overall design scope: 11.4 km²
+- Three key detailed-design areas: 368.4 ha (Zhongzhiyuan north, Beijing AI Origin center, Dazhongsi south)
+
+### Brand
+- Name: Jing-Zhang AI Innovation Belt (JZBelt) / Zhimai Corridor
+- Logo: Z-rail × circuit pulse; railway gold (#c79838) + AI indigo (#4f46e5)
+
+### Five functions × three zones + two wings
+Full-stack AI autonomy, world-class innovation ecology, AI+ scenario enablement, intelligent vital city, AI governance discourse — mapped onto Zhongzhiyuan / Beijing AI Origin / Dazhongsi + Zhongguancun Tech Service Wing / Xiaoyuehe Scenario Enablement Wing.
+
+### Cross-region synergy
+Future Sci-Tech City (Changping, ~20km N), Huairou Sci-Tech City (~40km N), Beishang Community (~2km W), Yizhuang EDZ (~25km S), Jing-Jin-Ji AI Corridor (concept).
+
+### Operating governance (RACI, candidate)
+Haidian S&T Committee (R) / Haidian District Govt (A) / Sponsors (C) / Public (I) for Open Week brand; analogous RACI for open-source hall, safety sandbox, edge compute, data element hall, monthly demo. All bodies marked **candidate / to-be-negotiated**.
+
+### Risk & compliance
+- Boundary-derived metrics carry `provisional: true`
+- Design demo footprint carries `design_only: true`
+- FAR / height / density remain `unknown` until official planning controls are released
+- All references to specific Haidian policies and institutions are **candidate / to-be-negotiated**
+
+### Rights & sources (highlights)
+- Schematic basemap: non-authoritative; coordinates require official address data verification
+- Global cases (8): drawn from public reporting; specific policy interfaces not independently verified
+- VI assets: self-generated; trademark clearance recommended before external use
+- Fonts: conceptual direction; production must validate licensed font usage
+
+### Self-check status (target)
+Deterministic validation / Spatial review / Visual packaging / Professional evidence review: all PASS / formal-review-ready.
+
+---
 ## 参考资料
 
 - brief/public-brief.md
@@ -396,4 +596,6 @@ agent 生成的 AI 治理建议必须遵守数据最小化、公开来源、可�
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+
+- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:JINGZHANG-RAIL-HISTORY]、[source:JINGZHANG-RAIL-PARK]、[source:METRO-LINES]、[source:RING-ROADS]、[source:WATER-NETWORK]、[source:POI-CAMPUSES]、[source:GLOBAL-CASES]、[source:DOMESTIC-CLUSTERS]、[source:POLICY-INTERFACES]、[source:STANDARDS]、[source:VI-ASSETS]、[source:FONTS-DIRECTION]、[source:PYTHON-DEPS]、[source:PDF-PREVIEW-TOOL]
+

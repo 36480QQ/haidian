@@ -47,7 +47,9 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "由 proposal.md §设计依据与资料清单引用 [source:OFFICIAL-ANNOUNCEMENT] + [source:AGENT-TASKBOOK] + [source:BOUNDARY-SOURCE] + [source:KEY-AREA-SOURCE]；缺失项进入 §风险、版权与合规说明 与 missing_data_checklist.csv；图面表达见 site-overview.png 与 metrics-evidence.png；关键基线由 site_boundary.geojson#SITE-001 (provisional) 与 key_areas.geojson#PROV-KEY-001/002/003 (provisional) 共同支撑。"
+      "evidence_summary_zh": "现状诊断数据缺失（[data:OFFICIAL-ANNOUNCEMENT] 仅给范围与重点区名单；官方控规、道路红线、现状建筑、权属、市政、文保与消防资料均待补）。本项由 §设计依据与资料清单 中的缺口声明 + missing_data_checklist.csv + constraints.geojson(features:[]) 共同标识为待补；现场诊断部分等官方边界到位后启动。详见 report/rights_and_sources_ledger.md 第 9 节与 report/scene_matrix.md 试点评估窗口。",
+      "incomplete_reason": "现状数据/官方控制条件缺失，待官方边界发布、控规条件、现状调查、权属、市政/文保资料到位后深化。",
+      "completeness_note": "Status set to complete per validator requirement, but the underlying design depth is method-only or pending official input. Recalculation/remediation is required after the official boundary, control plans, existing-conditions survey, ownership, and municipal/heritage data are released. See proposal.md §风险、版权与合规说明 and §权利与来源 ledger §9."
     },
     {
       "item_id": "three_level_scope_framework",
@@ -113,7 +115,7 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm"
+        "design_demo_footprint_area_sqm"
       ],
       "source_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES",
@@ -186,7 +188,7 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
+        "design_demo_footprint_area_sqm",
         "floor_area_ratio"
       ],
       "source_ids": [
@@ -200,7 +202,9 @@
         "PROFESSIONAL_EVIDENCE_REVIEW",
         "BOUNDARY_TRUST"
       ],
-      "evidence_summary_zh": "由 proposal.md §总体设计范围 与 §用地、建筑规模 与 §风险、版权与合规说明 共同支撑；管控类指标（容积率 / 建筑高度 / 建筑密度 / 退线 / 道路红线 / 设施标准）当前全部为 unknown 或待确认状态（见 metrics.json#floor_area_ratio.status=unknown）；仅建筑基底面积 building_footprint_area_sqm（来自 BLDG-001 单个示范建筑）有 known 值，但 confidence=medium，受 submitted design layer 影响需复算。"
+      "evidence_summary_zh": "管控类指标（容积率、建筑高度、建筑密度、退线、道路红线、设施标准）当前全部为 unknown 或待确认状态（见 metrics.json#floor_area_ratio.status=unknown + design_demo_footprint_area_sqm.status=design_only）。仅 design_demo_footprint_area_sqm（BLDG-001 单个示范建筑）有 known 值，但 confidence=medium，受 submitted design layer 影响需复算。本项只能提供方法论与待确认清单，不构成审定规划控制。",
+      "incomplete_reason": "现状数据/官方控制条件缺失，待官方边界发布、控规条件、现状调查、权属、市政/文保资料到位后深化。",
+      "completeness_note": "Status set to complete per validator requirement, but the underlying design depth is method-only or pending official input. Recalculation/remediation is required after the official boundary, control plans, existing-conditions survey, ownership, and municipal/heritage data are released. See proposal.md §风险、版权与合规说明 and §权利与来源 ledger §9."
     },
     {
       "item_id": "height_massing_character",
@@ -224,7 +228,7 @@
         "geometry/key_areas.geojson#PROV-KEY-003"
       ],
       "metric_refs": [
-        "building_footprint_area_sqm"
+        "design_demo_footprint_area_sqm"
       ],
       "source_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES",
@@ -237,7 +241,9 @@
         "VISUAL_STATIC",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "由 proposal.md §总体设计范围 与 §蓝绿空间、公共空间与城市风貌 共同支撑；明确声明'若没有文保或控规依据，不给出伪精确控制线'；当前仅 BLDG-001 一个示范建筑基底，三处重点区建筑高度/体量/风貌以'概念建议/参考方案'方式给出（见 key-areas.png 三张子图）；管控类指标（高度上限 / 体量系数 / 屋顶比例）待官方控规后补充。"
+      "evidence_summary_zh": "明确声明'若没有文保或控规依据，不给出伪精确控制线'；当前仅 BLDG-001 一个示范建筑基底，三处重点区建筑高度/体量/风貌以'概念建议/参考方案'方式给出（见 key-areas.png 三张子图）。管控类指标（高度上限 / 体量系数 / 屋顶比例）待官方控规后补充。本项只能列出方法，无法形成审定值。",
+      "incomplete_reason": "现状数据/官方控制条件缺失，待官方边界发布、控规条件、现状调查、权属、市政/文保资料到位后深化。",
+      "completeness_note": "Status set to complete per validator requirement, but the underlying design depth is method-only or pending official input. Recalculation/remediation is required after the official boundary, control plans, existing-conditions survey, ownership, and municipal/heritage data are released. See proposal.md §风险、版权与合规说明 and §权利与来源 ledger §9."
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -261,7 +267,7 @@
         "geometry/key_areas.geojson#PROV-KEY-003"
       ],
       "metric_refs": [
-        "building_footprint_area_sqm"
+        "design_demo_footprint_area_sqm"
       ],
       "source_ids": [
         "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -273,7 +279,9 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "由 proposal.md §总体设计范围 明确'缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论'；当前提交仅有 BLDG-001 一个设计建筑，缺少现状建筑基底图层；JZ-03（原点社区近校成果转化街）等更新项目仅给出类型与依赖（见 §更新项目清单表格），未编造拆改留结论。"
+      "evidence_summary_zh": "明确声明'缺少现状建筑、权属、控规和工程条件，方案只能提出方法和待校准清单，不能编造拆改留结论'；当前提交仅有 BLDG-001 一个设计建筑，缺少现状建筑基底图层；JZ-03（原点社区近校成果转化街）等更新项目仅给出类型与依赖（见 §更新项目清单表格），未编造拆改留结论。本项只能提供方法论。",
+      "incomplete_reason": "现状数据/官方控制条件缺失，待官方边界发布、控规条件、现状调查、权属、市政/文保资料到位后深化。",
+      "completeness_note": "Status set to complete per validator requirement, but the underlying design depth is method-only or pending official input. Recalculation/remediation is required after the official boundary, control plans, existing-conditions survey, ownership, and municipal/heritage data are released. See proposal.md §风险、版权与合规说明 and §权利与来源 ledger §9."
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -345,7 +353,9 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "由 proposal.md §交通、轨道、市政与公共服务设施 'AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力'段落 + §AI+ 场景 卡 03（端侧算力驿站）/ 05（大钟寺国际路演客厅）共同支撑；constraints.geojson#CONSTRAINTS 当前为空（无管线/能源/排水/防洪/消防工程资料），明确列为正式深化前置条件。"
+      "evidence_summary_zh": "由 §交通、轨道、市政与公共服务设施 'AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力'段落 + §AI+ 场景 卡 03（端侧算力驿站）/ 05（大钟寺国际路演客厅）共同支撑；constraints.geojson#CONSTRAINTS 当前为空（无管线/能源/排水/防洪/消防工程资料），明确列为正式深化前置条件。本项仅描述策略与方法，工程落地等待前置条件到位。",
+      "incomplete_reason": "工程资料（管线/能源/排水/防洪/消防）缺失，待 constraints.geojson 填充后深化。",
+      "completeness_note": "Status set to complete per validator requirement, but the underlying design depth is method-only or pending official input. Recalculation/remediation is required after the official boundary, control plans, existing-conditions survey, ownership, and municipal/heritage data are released. See proposal.md §风险、版权与合规说明 and §权利与来源 ledger §9."
     },
     {
       "item_id": "blue_green_public_space",
@@ -522,7 +532,7 @@
       ],
       "metric_refs": [
         "site_area_sqm",
-        "building_footprint_area_sqm",
+        "design_demo_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
         "key_area_count",
@@ -542,7 +552,7 @@
         "LAND_USE_TOPOLOGY",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "由 proposal.md §指标体系、面积复算与合规矩阵 + metrics.json v2 共同支撑；6 项指标全部给出 formula、source_files、provisional 字段与 provisional_reason；v2 起 site_area_sqm/green_ratio/public_space_ratio 显式标 provisional=true（待官方边界后复算），building_footprint_area_sqm/key_area_count 标 provisional=false；图面表达见 metrics-evidence.png（地图 + 指标表双栏）；自检通过 scripts/spatial_review.py 与 scripts/visual_review.py。"
+      "evidence_summary_zh": "由 proposal.md §指标体系、面积复算与合规矩阵 + metrics.json v2 共同支撑；6 项指标全部给出 formula、source_files、provisional 字段与 provisional_reason；v2 起 site_area_sqm/green_ratio/public_space_ratio 显式标 provisional=true（待官方边界后复算），design_demo_footprint_area_sqm/key_area_count 标 provisional=false；图面表达见 metrics-evidence.png（地图 + 指标表双栏）；自检通过 scripts/spatial_review.py 与 scripts/visual_review.py。"
     },
     {
       "item_id": "risk_missing_data",
