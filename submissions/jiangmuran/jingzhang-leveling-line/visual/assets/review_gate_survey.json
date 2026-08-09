@@ -47,5 +47,31 @@
   "semantic": [],
   "broad": [],
   "broad_minus_summary": []
- }
+ },
+ "repair_count_distribution": {
+  "17": 2,
+  "18": 1,
+  "19": 2,
+  "20": 4,
+  "21": 10,
+  "22": 8,
+  "23": 18,
+  "24": 22,
+  "25": 22,
+  "26": 15,
+  "27": 12,
+  "28": 12,
+  "29": 9,
+  "30": 5,
+  "31": 4
+ },
+ "repair_count_minimum_ever": 17,
+ "repair_counts_of_verdicts_scoring_85_or_more": [
+  17,
+  20,
+  21
+ ],
+ "verdicts_with_every_dimension_at_5": 0,
+ "max_dimensions_at_5_in_any_verdict": 4,
+ "distance_to_the_gate_note_zh": "闸门要求 required_next_actions_zh 为空，而按 ai_review_submission.py 的实现，这要求 repair_count == 0——七维中任何一条 required_repairs_zh 都会无条件追加汇总项。146 份历史 verdict 中 repair_count 的最小值是 17，分数 ≥85 的三份分别为 17/20/21，且没有任何一份 verdict 七维全 5（单份最多 4 个 5）。因此这不是「概率很低」，是「历史上最接近的一次仍差 17 条」。本方案不就此建议放宽：本包上一版得分 91，属于 ≥85 的三份之一，在这件事上没有中立立场，只摆数据。此项由 @Sonike 在 Issue #950 中定位触发条件后测得。"
 }
