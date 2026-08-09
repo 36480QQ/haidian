@@ -34,7 +34,7 @@ This iteration places the taskbook's **Zhongguancun technology-service wing** in
 
 The parametric study takes the current six-band conceptual allocation as a baseline and compares three transparent parameter sets: people-first, balanced, and machine-ready. `visual/assets/run-parametric-tradeoff-study.js` checks share sums, area formulas, baseline reconnection, four objective lenses, comparison floors, and a non-dominance condition; formal `metrics.json`, geometry, drawings, and release state remain unchanged. Figure 11 makes the trade-off between community retention, learning, reversible space, city API, and resilience visible. Professional teams can replace the inputs once official boundaries, controls, rights, mobility, municipal, energy, and public baselines are available. [data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout] [depth:metrics_recalculation]
 
-![Figure 11 | Three conceptual spatial trade-offs: baseline, people-first, and machine-ready](assets/figures/parametric-tradeoff-study.en.png)
+Figure 11 is shown once in the later “Parametric study” subsection; this paragraph cross-references the same parametric record and four objective lenses rather than embedding a duplicate image, so the candidate set is not mistaken for two independent deliverables. [data:visual/assets/parametric-tradeoff-study.json] [depth:metrics_recalculation]
 
 All three parameter sets remain low-confidence conceptual suggestions for professional teams. They compare spatial relationships only and generate no FAR, building-height, engineering, investment, employment, or policy conclusion. [data:geometry/site_boundary.geojson#SITE-001] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio]
 

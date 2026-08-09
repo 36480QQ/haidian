@@ -38,7 +38,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 参数化研究的深度复核见 [depth:metrics_recalculation]。
 
-![图 11｜三组概念空间取舍：基线、人本优先与机器协同](assets/figures/parametric-tradeoff-study.png)
+图 11 的完整图件在后文“参数化推演”小节呈现；此处只回接同一份参数化台账与四个目标镜头，不重复嵌图，避免把同一候选集误读为两张独立成果图。[data:visual/assets/parametric-tradeoff-study.json] [depth:metrics_recalculation]
 
 三组参数均为概念建议和参考方案，供专业团队深化研究。它们只比较空间关系，不生成容积率、建筑高度、工程可行性、投资、就业结果或政策结论。[data:geometry/site_boundary.geojson#SITE-001] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio]
 
