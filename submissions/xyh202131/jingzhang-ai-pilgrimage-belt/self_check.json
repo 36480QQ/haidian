@@ -83,7 +83,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 9103306,
+      "total_bytes": 9283369,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -298,7 +298,7 @@
       "result": "pass",
       "severity": "info",
       "target": "drawings/",
-      "message": "中英文 A0 均为 8 页实际 A0 横向并按八张 1800×1100 图件顺序排列于 1149mm 安全版心；中文 A3 为 10 页、英文 A3 为 13 页实际 A3 纵向，正文/表格最小 9pt，39 页均无裁切、越界、空白页或孤立标题。"
+      "message": "中英文 A0 均为 8 页实际 A0 横向且保留八张 1800×1100 整板总览；中文/英文 A3 为 33/36 页实际 A3 纵向，每种语言将 8 组图拆为 24 个 620×892、245mm 宽且相邻重叠 30px 的细节页，不再嵌入整板图。live text 不低于 9pt，栅格证据有效最小文字指标为中 10.865pt/英 9.297pt，443/443 逻辑块可搜索；全部 85 页无裁切、越界、空白页或孤立标题。"
     }
   ]
 }

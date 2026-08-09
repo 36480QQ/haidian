@@ -33,7 +33,7 @@
       "scripts/participant_preflight.py"
     ]
   },
-  "generated_at": "2026-08-09T18:48:22Z",
+  "generated_at": "2026-08-09T19:44:43Z",
   "translation_file": "proposal.en.md",
   "files": [
     {
@@ -52,7 +52,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e8f51aa98825847e1c38933a93e695a1b37f79cadfa2e3e4205cd04f3f75f72e"
+      "sha256": "12f1267166997a41bd3b130694120fe6b053b725ba4504e2ff9d1f063f5ec433"
     },
     {
       "path": "metrics.json",
@@ -76,13 +76,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "15a566b4531498c42e277344b18101cb1eeb5e400608f0aa7798ab0277331b52"
+      "sha256": "d6df439c8d84e97a2e7b13af347503dcb7168ea4f55a3cb0f80c41943d121e1f"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "53be402377bae15b105d973dda3f6d71384457e39b41abef1c8edc86fd7781dd"
+      "sha256": "f2535dbec53f54a35c9abd13c5078962fab303f9a01bfe88edbb627a7d964d88"
     },
     {
       "path": "compliance_matrix.json",
@@ -167,7 +167,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "db0b52358f9ef835f99a80a64a647b3e3b918af233999e44cf7a0b3c521c3ff9"
+      "sha256": "49d71b050bb8ec11a8d61e809f3d9a963d501e0bc3abb184c152acd24ea0d59a"
     },
     {
       "path": "report/copyright_statement.md",
@@ -180,7 +180,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "22edb9b1c8be136e8d9b45aba9526a714ff780f3e29643cabc84e67971540edd"
+      "sha256": "a1364afaa471b63d9e9ecc001129f5ff7fe01405dc34f6379842d38a68dc73d2"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -350,7 +350,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "55df4d89e539f09d1557dd4917c0ede5e1ae466d083b05a42c1ed539c026fc4a"
+      "sha256": "2ac3cc0c006789912a834bde5303c2e6a1a6d9f40bfffc8768751e9698b0e7dd"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
