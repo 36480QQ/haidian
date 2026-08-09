@@ -438,6 +438,192 @@
       "original_format": "text/html",
       "sha256": null,
       "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-BEIJING-2024-STATISTICS",
+      "title": "北京市2024年国民经济和社会发展统计公报解读",
+      "publisher": "北京市统计局 / 国家统计局北京调查总队",
+      "kind": "official_statistics",
+      "authority_level": "A0",
+      "url": "https://tjj.beijing.gov.cn/tjsj_31433/sjjd_31444/202503/t20250319_4038768.html",
+      "use": "北京人口、轨道交通与京津冀背景；仅作区域上下文，不作项目控制",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2025-03-19",
+      "collection_method": "Official public page reviewed for contextual statistics; no site geometry, future forecast, or project approval was inferred.",
+      "coverage": "Beijing-wide population, transport, and regional-development context only; not evidence about the Haidian project boundary or future demand.",
+      "license_summary": "Public citation/reference only; no third-party assets reproduced; reuse terms require separate verification.",
+      "transformations": "Relevant public context was summarized in a machine-readable evidence register; no spatial or numerical transformation was performed.",
+      "limitations": "Background context only; official station inventories, current flows, service coverage, and project-level controls remain to be verified.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "Beijing population and transport context",
+        "regional-coordination context for design research"
+      ],
+      "not_usable_for": [
+        "Haidian site geometry or statutory planning controls",
+        "future population forecast, footfall, capacity, budget, or implementation commitment"
+      ],
+      "published_date": "2025-03-19",
+      "obtained_date": "2026-08-09",
+      "original_format": "text/html",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-HAIDIAN-2024-STATISTICS",
+      "title": "海淀区2024年国民经济和社会发展统计公报",
+      "publisher": "北京市海淀区统计局",
+      "kind": "official_statistics",
+      "authority_level": "A0",
+      "url": "https://zyk.bjhd.gov.cn/sjkf/tjgb/202504/t20250423_4766489.shtml",
+      "use": "海淀经济结构、创新生态与公共服务背景；仅作设计响应上下文",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2025-04-23",
+      "collection_method": "Official district statistical bulletin reviewed for contextual facts; no institution, land, or capacity claim was inferred beyond the cited scope.",
+      "coverage": "Haidian-wide economic, education, innovation, and environment context only; not a current-condition survey of the submission boundary.",
+      "license_summary": "Public citation/reference only; no third-party assets reproduced; reuse terms require separate verification.",
+      "transformations": "Relevant public context was summarized in a machine-readable evidence register; no geometry or project metric was derived.",
+      "limitations": "Background context only; current building, ownership, service-demand, and operating baselines remain missing.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "Haidian economic and innovation context",
+        "research-to-street and public-service design rationale"
+      ],
+      "not_usable_for": [
+        "site-specific land use, density, capacity, or institutional commitment",
+        "future growth, investment, or implementation claims"
+      ],
+      "published_date": "2025-04-23",
+      "obtained_date": "2026-08-09",
+      "original_format": "text/html",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-BEIJING-AGEING-2024",
+      "title": "北京市老龄事业发展报告（公开 PDF）",
+      "publisher": "北京市民政局",
+      "kind": "official_public_report",
+      "authority_level": "A0",
+      "url": "https://mzj.beijing.gov.cn/attach/0/7bf2ec88219e45dd8318fb556f432e44.pdf",
+      "use": "老龄社会背景与全龄、无障碍、人工兜底设计理由；不作项目人口预测",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2025-03-01",
+      "collection_method": "Official public PDF reviewed as a demographic-context source; only design implications are carried into the package.",
+      "coverage": "Beijing-wide ageing context; not a Haidian site survey, service-demand baseline, or forecast.",
+      "license_summary": "Public citation/reference only; no third-party figures or protected material reproduced.",
+      "transformations": "The report is summarized as a design requirement for non-digital continuity and accessibility testing; no population forecast is generated.",
+      "limitations": "Context source only; local age distribution, route barriers, heat exposure, and service demand require consented field verification.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "ageing and inclusive-design context",
+        "accessibility and human-fallback test rationale"
+      ],
+      "not_usable_for": [
+        "site-specific population, service-capacity, or demand forecast",
+        "government implementation or funding claim"
+      ],
+      "published_date": "2025-03-01",
+      "obtained_date": "2026-08-09",
+      "original_format": "pdf",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-JINGZHANG-PARK-20230630",
+      "title": "京张铁路遗址公园与桥下空间开放介绍",
+      "publisher": "北京市人民政府门户网站",
+      "kind": "official_public_project_page",
+      "authority_level": "A0",
+      "url": "https://www.beijing.gov.cn/renwen/cshd/202306/t20230630_3150675.html",
+      "use": "京张铁路遗址公园、绿地、桥下空间与城市更新的公开背景；不作精确线位",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2023-06-30",
+      "collection_method": "Official public description reviewed for heritage-park and public-space context; no station coordinate or right-of-way was inferred.",
+      "coverage": "Public-project context for the Jing-Zhang heritage park and bridge-space system; not an official GIS boundary or engineering survey.",
+      "license_summary": "Public citation/reference only; no third-party assets reproduced.",
+      "transformations": "The public description is translated into a version-line design response and a verification gate; geometry remains provisional.",
+      "limitations": "Exact route, station, heritage, traffic, emergency, and ownership data must be obtained from authoritative records before implementation.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "heritage-park and public-space context",
+        "version-line and climate-spine design rationale"
+      ],
+      "not_usable_for": [
+        "official redline, station geometry, right-of-way, or engineering capacity",
+        "implementation approval or project funding"
+      ],
+      "published_date": "2023-06-30",
+      "obtained_date": "2026-08-09",
+      "original_format": "text/html",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-HAIDIAN-2026-WORK-REPORT",
+      "title": "海淀区政府工作报告（公开版）",
+      "publisher": "北京市海淀区人民政府",
+      "kind": "official_public_policy",
+      "authority_level": "A0",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/xxgk/zfgzbg/202602/t20260209_4805226_hd.shtml",
+      "use": "海淀当前 AI、数据、安全与创新带政策语境；不等于本方案获批或背书",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2026-02-09",
+      "collection_method": "Official district work-report page reviewed for current policy context; no program boundary, partnership, budget, or approval was inferred.",
+      "coverage": "District policy context only; not a project-specific implementation instruction or commitment.",
+      "license_summary": "Public citation/reference only; no third-party assets reproduced.",
+      "transformations": "Policy context is used to frame a conceptual translation layer with explicit verification gates; no policy language is presented as an adopted project decision.",
+      "limitations": "Background policy context; program ownership, permissions, schedules, and delivery resources require separate confirmation.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "current district AI and innovation-policy context",
+        "responsible-owner and safety-gate rationale"
+      ],
+      "not_usable_for": [
+        "project approval, government endorsement, partnership, budget, or delivery schedule",
+        "site-specific control or capacity"
+      ],
+      "published_date": "2026-02-09",
+      "obtained_date": "2026-08-09",
+      "original_format": "text/html",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
+    },
+    {
+      "source_id": "DATA-SRC-HAIDIAN-15FYP-20251208",
+      "title": "关于海淀区国民经济和社会发展第十五个五年规划的建议",
+      "publisher": "北京市海淀区人民政府",
+      "kind": "official_public_policy",
+      "authority_level": "A0",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4541_51837/auto4541_56335/auto4541/auto4541/202512/t20251208_4796151_hd.shtml",
+      "use": "北京—天津—河北与科学城、AI和具身智能协同的公开政策背景；不作合作承诺",
+      "formal_use": "background_only",
+      "accessed_date": "2026-08-09",
+      "publication_date": "2025-12-08",
+      "collection_method": "Official public recommendation page reviewed for regional-coordination context; no counterpart agreement, data-sharing arrangement, or mutual-recognition result was inferred.",
+      "coverage": "Public district planning context only; not a regional plan, signed cooperation agreement, or project delivery basis.",
+      "license_summary": "Public citation/reference only; no third-party assets reproduced.",
+      "transformations": "Policy direction is translated into five interface contracts with explicit counterpart, permission, safety, and withdrawal gates.",
+      "limitations": "All regional interfaces remain directional proposals pending counterpart, legal, data, intellectual-property, safety, and operating confirmation.",
+      "usable_for_formal": "background_only",
+      "usable_for": [
+        "regional-synergy and AI-development context",
+        "portable schema, testing, and maintenance-handoff rationale"
+      ],
+      "not_usable_for": [
+        "signed partnership, cross-region budget, data access, or automatic mutual recognition",
+        "site-specific geometry, capacity, or implementation approval"
+      ],
+      "published_date": "2025-12-08",
+      "obtained_date": "2026-08-09",
+      "original_format": "text/html",
+      "sha256": null,
+      "hash_scope": "remote_content_not_captured"
     }
   ]
 }
