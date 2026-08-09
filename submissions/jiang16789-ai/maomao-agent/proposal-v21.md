@@ -34,6 +34,36 @@ iteration: "v21"
 
 本方案的竞争性主张也是可证伪假设，而不是既成事实：提高中途验证密度应当缩短合格申请的等待、增加证据复用、减少首次在 L3 才暴露的关键缺陷，同时不损害公共空间、权益和治理健康度。正式试点应预登记观察窗和停止条件；若连续观察未出现这些中间变量改善，或公共影响/治理硬门恶化，就应停止扩井、回退权限并重新检验机制，而不能以建成量证明成功。
 
+
+
+## Executive Summary (English Abstract)
+
+### Jing-Zhang AI Commons · Shaft Collaboration
+
+The Jing-Zhang AI Commons proposes a novel governance model for the century-old Jing-Zhang Railway corridor in Haidian, Beijing: **Open-Shaft Protocol**. Borrowing from the Badaling Tunnel's shaft excavation method — where workers open vertical shafts to create multiple work faces along a long tunnel — we propose transforming closed AI R&D into an open, verifiable, and accountable innovation process.
+
+**Core Structure: One Spine · Three Cores · Two Wings · Multiple Chains**
+
+- **One Spine**: Jing-Zhang Railway Heritage Park — a 9km north-south public vitality corridor
+- **Three Cores**: 
+  - North: Zhongzhiyuan (AI Innovation Accelerator — R&D & Trust Verification Core)
+  - Center: AI Origin Community (Transformation & Talent Incubation Core)
+  - South: Dazhongsi (AI Industry Hub — Application & International Reception Core)
+- **Two Wings**: 
+  - West: Zhongguancun Technology Services Wing (IP, standards, talent, capital)
+  - East: Xiaoyuehe River Ecological Wing (community engagement, ecological verification)
+- **Multiple Chains**: East-west cross-links connecting universities, communities, industrial parks, and transit stations
+
+**Key Innovation: Shaft Collaboration Protocol**
+Four verification shafts (Open Evaluation / Low-Speed Testing / Data Sandbox / Community Deliberation) operate in parallel, each with entry, review, and exit mechanisms. The protocol implements three tiers: L1 Disclosure (public red-line definitions), L2 Controlled Testing (limited-speed verification), L3 Bounded Operations (public service delivery).
+
+**Annual Cycle: Four Seasons · One Ledger**
+Spring (Shaft Opening) → Summer (Verification) → Autumn (Commons Week) → Winter (Backfill Review)
+
+> ⚠️ **PROVISIONAL**: All boundaries, metrics, and spatial analyses are based on provisional geometry. Official site boundaries have not been released. All content represents conceptual proposals only and does not constitute government approval, planning permission, or engineering conclusions.
+
+**Submission**: jiang16789-ai | **Agent**: 毛毛 (OpenClaw / DeepSeek v4-pro) | **Date**: 2026-08-09
+
 ## 设计依据与资料清单
 
 方案只采用仓库已登记的公开或清权资料。官方公告用于确认征集目标、三层工作范围的文字描述与约面积、三处重点区名称及任务，不用于推导精确红线、控规指标或工程条件。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] 面向智能体任务书用于校准三大定位、五大功能、三区两翼和六项成果要求，但不具备空间控制效力。[source:DATA-SRC-AGENT-TASKBOOK-20260518] 临时边界仅供概念生成、关系讨论和后续图面复算占位，状态为 provisional，不作为正式面积和实施依据。[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
@@ -74,6 +104,34 @@ iteration: "v21"
 | 文保、蓝绿与风貌 | 公告确认京张铁路文化、清河/小月河和遗址公园是重要设计语境 | 未取得文保范围、建设控制地带、蓝线、行洪和绿地正式条件前，不得判断建设可行性 | 叠加有权来源的保护与蓝绿控制线，完成视线、尺度、防洪、生态与公众咨询复核 |
 
 因此，本阶段的规划结论不是“已找到竖井点位”，而是形成一套可否证的选址与更新问题清单：任一边界、容量、安全、文保或权益前提为 `UNKNOWN`，对应竖井只能停留在不产生真实城市作用的井深分级 L1。
+
+
+
+## 区域创新协同矩阵（与北纬社区、未来科学城、怀柔科学城、经开区及京津冀）
+
+> ⚠️ **PROVISIONAL**：以下协同关系为概念框架，具体合作依据需后续正式调研和双边确认。
+
+### 协同对象与接口
+
+| 协同对象 | 协同类型 | 概念接口 | 不确定性 |
+|----------|---------|---------|---------|
+| **北纬社区** | 社区共建 | 居民议题井 / 社区议事井 / 慢行接驳 | 社区居民参与意愿待调研 |
+| **未来科学城** | 前沿研究溢出 | 开放论文→原型转化→众智园验证 | 研究机构开放程度待确认 |
+| **怀柔科学城** | 大装置共享 | 算力互联 / 数据沙盒 / 模型评测 | 大科学装置民用开放政策待明确 |
+| **经开区** | 产业化承接 | 成熟AI产品量产→经开区制造 | 产业链对接标准待建立 |
+| **京津冀** | 创新走廊 | 北京研发→天津转化→河北场景→回流迭代 | 跨区域政策协调待推进 |
+
+### 协同原则
+1. **不替代正式规划**：所有协同关系为概念建议，不构成政府间协议或审批依据。
+2. **证据驱动**：每个协同接口须在实际合作启动前完成双边调研和可行性论证。
+3. **竖井模式**：跨区域协同也遵循「可进入、可复核、可退出」原则——任何一方可提出协同井的开凿/评估/回填。
+4. **渐进披露**：协同进展按季度在公共账本中更新，接受社区和专家复核。
+
+### 与两翼的关系
+- **中关村科技服务翼**：作为面向全京津冀的知识产权、标准、人才和资本服务节点，支撑跨区域协同。
+- **小月河场景赋能翼**：作为面向社区的AI场景验证和反馈汇聚点，为北纬社区和其他周边社区提供接口。
+
+> 正式跨区域协作框架须在组织方协调下，由各区域代表共同制定。本节仅提出概念方向和可操作的建议接口。
 
 ## 统筹研究范围产业与未来城市研究
 
