@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CASE-BEIJING-SCENE-OPENING-2026",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202605/t20260514_4650937.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "Beijing policy direction for cultivating and opening application scenarios; used as policy context, not as a project approval or funding commitment."
+    },
+    {
+      "id": "CASE-BEIJING-THREE-LISTS-2026",
+      "url": "https://fgw.beijing.gov.cn/fgwzwgk/2024zcwj/bwqtwj/202606/t20260622_4709812.htm",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "Official definitions for scenario demand, capability, and demonstration-project lists; supports the conceptual demand-to-adoption operating chain."
+    },
+    {
+      "id": "CASE-HAIDIAN-AI-DISTRICTS-2026",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202601/t20260106_4403526.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "Official public context for Beijing AI innovation districts, the AI Origin Community, first-release positioning, and innovation support; not used as a statutory spatial control."
+    },
+    {
+      "id": "CASE-PUNGGOL-ODP",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict/odp",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "Singapore JTC reference for a district digital backbone, digital twin, and living-laboratory workflow from virtual testing to real-world implementation."
+    },
+    {
+      "id": "CASE-HELSINKI-MOBILITY-LAB",
+      "url": "https://testbed.hel.fi/en/smart-mobility/mobility-lab-helsinki/",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "City of Helsinki reference for company- and resident-facing urban testbed operations, new-business creation, and scaling beyond individual pilots."
+    },
+    {
+      "id": "CASE-TALLINN-TESTBED",
+      "url": "https://www.tallinn.ee/en/tallinnovation/testintallinn",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "City of Tallinn reference for a single city entry point that connects proposals with officials, locations, data, residents, and service units."
+    },
+    {
+      "id": "CASE-BOSTON-URBAN-MECHANICS",
+      "url": "https://www.boston.gov/departments/new-urban-mechanics",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "City of Boston reference for a civic research and design team acting as a front door for community-centred experiments and prototypes."
+    },
+    {
+      "id": "CASE-WOVEN-CITY",
+      "url": "https://www.woven-city.global/people/inventors/",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "Toyota Woven City reference for an integrated progression from ideation and verification to everyday feedback from resident and visitor participants."
+    },
+    {
+      "id": "CASE-EU-EXPERIMENTATION-PROCUREMENT",
+      "url": "https://research-and-innovation.ec.europa.eu/new-european-innovation-agenda/new-european-innovation-agenda-roadmap/flagship-2-enabling-deep-tech-innovation-through-experimentation-spaces-and-public-procurement_en",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-09",
+      "usage": "European Commission reference connecting regulatory sandboxes, test beds, living labs, innovation procurement, and lab-to-market uptake; used as background methodology."
+    }
+  ]
+}

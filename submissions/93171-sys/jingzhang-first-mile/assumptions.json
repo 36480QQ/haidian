@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package may support content review as a conceptual AI-agent submission, but it cannot support statutory controls, parcel decisions, engineering feasibility, or approval conclusions."
+    },
+    {
+      "id": "A-GEOMETRY-001",
+      "status": "provisional_constraint",
+      "statement": "The repository has not supplied official site and key-area polygons; the current boundary and three key areas are provisional rough geometry.",
+      "impact": "All areas, ratios, alignments, station extents, land-use partitions, figures, PDFs, and HTML must be recalculated as one package when official polygons arrive."
+    },
+    {
+      "id": "A-DESIGN-NODES-001",
+      "status": "concept_only",
+      "statement": "The three service zones, twelve scenario nodes, three pilgrimage landmarks, cross-links, and phasing polygons are agent-generated design proposals rather than surveyed or approved locations.",
+      "impact": "They communicate functional relationships and handoff logic only; exact positions require ownership, access, heritage, traffic, fire, accessibility, ecology, and municipal review."
+    },
+    {
+      "id": "A-BUILDING-CARRIERS-001",
+      "status": "pending_existing_conditions_survey",
+      "statement": "The six building footprints are conceptual carriers for adaptive reuse or reversible infill and are not verified existing buildings or approved new construction.",
+      "impact": "No demolition, retention, floor area, height, structural capacity, cost, or construction decision may be inferred from them."
+    },
+    {
+      "id": "A-PILOT-001",
+      "status": "pending_real_pilot",
+      "statement": "First-user completion, repeat use, operator handoff, service cost, and procurement outcomes have no real pilot baseline.",
+      "impact": "These metrics remain unknown; no activity count, simulated order, survey intention, media exposure, or demonstration may be reported as adoption or market evidence."
+    },
+    {
+      "id": "A-PROCUREMENT-001",
+      "status": "concept_only",
+      "statement": "The First-Order Station and innovation procurement clinic are design mechanisms, not a government procurement, funding, contract, or implementation commitment.",
+      "impact": "Every future opportunity must state its owner, budget status, procurement route, approval state, contract responsibility, and exit conditions before public communication."
+    }
+  ]
+}
