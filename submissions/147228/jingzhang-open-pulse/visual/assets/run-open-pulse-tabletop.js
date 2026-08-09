@@ -6,6 +6,7 @@ const path = require('path');
 const root = __dirname;
 const contract = JSON.parse(fs.readFileSync(path.join(root, 'open-pulse-tabletop-contract.json'), 'utf8'));
 const record = JSON.parse(fs.readFileSync(path.join(root, 'example-s02-embodied-test-window.json'), 'utf8'));
+const evidence = JSON.parse(fs.readFileSync(path.join(root, 'open-pulse-tabletop-evidence.json'), 'utf8'));
 
 function result(id, pass, observed, expected) { return {id, pass, observed, expected}; }
 
@@ -14,6 +15,9 @@ const rollback = contract.rollback_steps || [];
 const acceptanceChecks = contract.acceptance_checks || [];
 const traceRequirements = contract.trace_requirements || {};
 const fixtureIds = new Set(fixtures.map((item) => item.fixture_id));
+const negativeReplay = contract.negative_replay || [];
+const stopTriggerStates = new Set(contract.stop_trigger_states || []);
+const controlReplay = contract.control_replay || {};
 const acceptanceIds = acceptanceChecks.map((item) => item.id);
 const acceptanceIdSet = new Set(acceptanceIds);
 const scenarioIds = new Set([contract.scenario_id]);
@@ -67,6 +71,27 @@ for (const item of rollback) {
 function coversAll(traced, required) {
   return (required || []).every((id) => traced.has(id));
 }
+function replayPath(fixture, replay) {
+  const fixtureMatches = Boolean(fixture) && replay.fixture_id === fixture.fixture_id;
+  const firesStopIf = fixtureMatches && stopTriggerStates.has(replay.trigger_input);
+  const expectedFiresStopIf = replay.expected_fires_stop_if === true;
+  return {
+    fixture_id: fixture ? fixture.fixture_id : replay.fixture_id,
+    trigger_input: replay.trigger_input,
+    fires_stop_if: firesStopIf,
+    expectation_matches: firesStopIf === expectedFiresStopIf,
+    decision_class: firesStopIf ? 'reject_or_stop' : 'continue',
+    decision: firesStopIf ? fixture.expected_decision : (replay.expected_decision || 'continue'),
+    result_status: 'not_run',
+    performance_results: null
+  };
+}
+const negativeReplayResults = fixtures.map((fixture) => {
+  const replay = negativeReplay.find((item) => item.fixture_id === fixture.fixture_id) || {};
+  return replayPath(fixture, replay);
+});
+const controlReplayFixture = fixtures.find((item) => item.fixture_id === controlReplay.fixture_id);
+const controlReplayResult = replayPath(controlReplayFixture, controlReplay);
 const rollbackTraceCoverage =
   rollbackReferencesResolve &&
   everyRollbackStepHasTrace &&
@@ -98,6 +123,43 @@ const checks = [
     fixtures: [...rollbackFixtureIds],
     acceptance_checks: [...rollbackAcceptanceIds]
   }, 'five unique rollback IDs with resolvable fixture and acceptance references')
+  ,result('negative_replay_coverage',
+    negativeReplay.length === fixtures.length &&
+      new Set(negativeReplay.map((item) => item.fixture_id)).size === fixtures.length &&
+      negativeReplay.every((item) => fixtureIds.has(item.fixture_id)),
+    negativeReplay.map((item) => item.fixture_id),
+    [...fixtureIds]),
+  result('negative_replay_rejects',
+    negativeReplayResults.every((item) => {
+      const fixture = fixtures.find((candidate) => candidate.fixture_id === item.fixture_id);
+      return fixture && item.fires_stop_if &&
+        item.expectation_matches &&
+        item.decision_class === 'reject_or_stop' &&
+        item.decision === fixture.expected_decision &&
+        item.result_status === 'not_run' &&
+        item.performance_results === null;
+    }),
+    negativeReplayResults,
+    'each synthetic trigger rejects, stops, withdraws, or deletes temporary state without performance'),
+  result('negative_replay_evidence',
+    evidence.negative_replay_replayed === '4/4' &&
+      evidence.rejection_path_observed === true &&
+      Array.isArray(evidence.negative_replay) &&
+      evidence.negative_replay.every((item) =>
+        item.decision_class === 'reject_or_stop' &&
+        item.result_status === 'not_run' &&
+        item.performance_results === null),
+    {negative_replay_replayed: evidence.negative_replay_replayed, rejection_path_observed: evidence.rejection_path_observed},
+    'evidence receipt records all four synthetic rejection paths'),
+  result('control_replay_allows_ordinary_route',
+    controlReplayResult.expectation_matches &&
+      !controlReplayResult.fires_stop_if &&
+      controlReplayResult.decision_class === 'continue' &&
+      controlReplayResult.decision === 'continue_ordinary_route' &&
+      controlReplayResult.result_status === 'not_run' &&
+      controlReplayResult.performance_results === null,
+    controlReplayResult,
+    'ordinary input does not trigger a stop or rejection')
 ];
 const pass = checks.every((item) => item.pass);
 if (!pass) { console.error('OPEN_PULSE_TABLETOP_CHECK_FAIL'); process.exitCode = 1; }
@@ -119,6 +181,12 @@ console.log(JSON.stringify({
     boundary_fields: `${tracedBoundaryFields.size}/${(traceRequirements.boundary_fields || []).length}`,
     rollback_steps: `${rollbackStepIds.size}/${(traceRequirements.rollback_step_ids || []).length}`
   },
+  negative_replay: {
+    replayed: `${negativeReplayResults.length}/${fixtures.length}`,
+    rejection_path_observed: negativeReplayResults.every((item) => item.decision_class === 'reject_or_stop'),
+    results: negativeReplayResults
+  },
+  control_replay: controlReplayResult,
   rollback: {steps_declared: rollback.length, steps_replayed: pass ? rollback.length : 0, result: pass ? 'pass' : 'fail'},
   result_status: record.observation.result_status,
   performance_results: null,

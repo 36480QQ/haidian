@@ -2,6 +2,8 @@
 
 ## v3.6 - 2026-08-09
 
+- Added four deterministic negative replays, one per S02 fixture; the runner now verifies hold/stop/withdraw/delete-temporary-state decisions as `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
+- Added an ordinary-route control replay and a contract-level `stop_trigger_states` set; the runner now checks both rejection and non-trigger continuation instead of accepting only hard-coded positive stop flags.
 - Added a dependency-free offline tabletop for the existing synthetic S02 bounded test-window record.
 - Added four stop/restore branches, six acceptance checks and five reversible rollback steps, with a committed aggregate evidence readback.
 - Added structured acceptance tracing: every check now resolves its fixture, scenario, and/or boundary references, with 4/4 fixture, 1/1 scenario, 5/5 boundary-field coverage and unique check IDs verified by the runner.

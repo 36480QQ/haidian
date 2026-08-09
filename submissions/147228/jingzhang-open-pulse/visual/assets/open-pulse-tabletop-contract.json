@@ -21,6 +21,12 @@
     {"fixture_id":"S02-F03","state":"spotter_or_emergency_stop_unavailable","expected_decision":"withdraw_window_and_restore_public_use","ordinary_equivalent":"staffed_help_and_ordinary_walking"},
     {"fixture_id":"S02-F04","state":"synthetic_review_complete_without_field_result","expected_decision":"delete_fixture_keep_public_decision_record","ordinary_equivalent":"ordinary_route_remains_open"}
   ],
+  "stop_trigger_states": [
+    "provisional_route_not_professionally_verified",
+    "pedestrian_conflict_or_route_narrowing",
+    "spotter_or_emergency_stop_unavailable",
+    "synthetic_review_complete_without_field_result"
+  ],
   "acceptance_checks": [
     {"id":"AC-01","check":"linked S02 record and contract identities align","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"]},
     {"id":"AC-02","check":"all four branches preserve an ordinary non-AI service","fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"scenario_ids":["S02"]},
@@ -67,6 +73,52 @@
       "acceptance_ids": ["AC-06"]
     }
   ],
+  "negative_replay": [
+    {
+      "fixture_id": "S02-F01",
+      "trigger_input": "provisional_route_not_professionally_verified",
+      "expected_fires_stop_if": true,
+      "decision_class": "reject_or_stop",
+      "expected_decision": "hold_and_keep_ordinary_route",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "S02-F02",
+      "trigger_input": "pedestrian_conflict_or_route_narrowing",
+      "expected_fires_stop_if": true,
+      "decision_class": "reject_or_stop",
+      "expected_decision": "stop_device_clear_route_and_record_incident",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "S02-F03",
+      "trigger_input": "spotter_or_emergency_stop_unavailable",
+      "expected_fires_stop_if": true,
+      "decision_class": "reject_or_stop",
+      "expected_decision": "withdraw_window_and_restore_public_use",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "S02-F04",
+      "trigger_input": "synthetic_review_complete_without_field_result",
+      "expected_fires_stop_if": true,
+      "decision_class": "reject_or_stop",
+      "expected_decision": "delete_fixture_keep_public_decision_record",
+      "result_status": "not_run",
+      "performance_results": null
+    }
+  ],
+  "control_replay": {
+    "fixture_id": "S02-F01",
+    "trigger_input": "ordinary_route_open",
+    "expected_fires_stop_if": false,
+    "expected_decision": "continue_ordinary_route",
+    "result_status": "not_run",
+    "performance_results": null
+  },
   "result_boundary": {
     "result_status": "not_run",
     "performance_results": null,

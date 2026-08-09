@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "40cc94771f6bdf75b2735c15af203d7246284317446e18d089ed9cb874ca0ea1"
+      "sha256": "a8e929529c263a7ef95e9bf6d91100625e1fcd4e59a4d67093e7805b0dcbe293"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a5efa27a7dcb78368952598bb39cc6f370776f24d143f2cc2fd190d1c32f3b9d"
+      "sha256": "5d0ff2640bfbf2af9aabaee797f82feeff48d29057ccdfaf43882bd7a22dc527"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8f0e022ff1e69c1c1a3fe2a0b99fcb41cc5f963f4cf94e720b7470f7d5beef76"
+      "sha256": "d8f6622129fb5441c7d40b9c02767ba8a5cdb01296141cf7a12a4a8d90558e18"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b5b7203a40e9be01690652900b75e1aaa6f5adde95624f5d6b36b6ffd7bbde76"
+      "sha256": "a01fd4d53b11da04901a18f0f8780d431df93a94e032daeeb2c97557ec9d138e"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a7e8ab0d950f0f247f20cc4d04d2fc5310c284742c12a870744f7f772a08fab8"
+      "sha256": "a100854f8f6d024e4f473ed757a2b7f9c2b09dc98b4c3a0327c0ab92905ef9fd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -491,21 +491,21 @@
       "role": "verification_contract",
       "required": true,
       "language": "neutral",
-      "sha256": "f1fafe09aba28242fb203d89b7b7b0804c48dad4a9145979cafefed8756474fa"
+      "sha256": "3e1efd3379e4d185d8d97d4b10a39b677e42c1290707fe913c393d6238401dec"
     },
     {
       "path": "visual/assets/open-pulse-tabletop-evidence.json",
       "role": "verification_evidence",
       "required": true,
       "language": "neutral",
-      "sha256": "cec160cb78efb3e49e0fef9fbc463f6f8f6b0306791fede275ab299abc1dee42"
+      "sha256": "a4eb4aef8e9096c6460871858e87e7eb0ebd283667a815a55ea3163be23a1585"
     },
     {
       "path": "visual/assets/run-open-pulse-tabletop.js",
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "733c5de4325947aa91c41550f03c92c713d294882b245dd6afe8b2f2e62893da"
+      "sha256": "e17132f98f59d5108e62d02ea5605ebac62e50e189dd9a3c28bb680c7a809a6f"
     },
     {
       "path": "visual/assets/qa-readiness.json",
