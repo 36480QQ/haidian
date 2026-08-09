@@ -26,7 +26,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 公共利益 | 居民、老幼残障、照护者、夜班劳动者、游客、商户、开发者和维护者都有普通路径；纸面、人工、无账号服务不可被 AI 替代。 | persona-and-inclusion-matrix.json、public-interest-audit.json |
 | 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护、保险、网络隔离、雨洪公平或接管证据不足就停在概念层。 | sources.json、risk.json、visual/assets/operational-assurance-contract.json、v2-evidence-gate-index.json |
 | 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
-| 资料登记完整度 | 正文 59 个唯一 source ID 与包内 `sources.json` 的 59 条记录一一对应；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json |
+| 资料登记完整度 | 正文 63 个唯一 source ID 与包内 `sources.json` 的 63 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
 
 ## v3.3 三处重点区：空间动作先于技术名词
 
@@ -73,7 +73,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
-- 当前登记摘要：formal 可用资料 5 条，背景资料 4 条，provisional-only 资料 1 条；包内 sources.json 共登记 63 条来源。
+- 当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条；包内 sources.json 共登记 63 条来源。
 - agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
 
 ### 行政尺度数据基线：只校准问题，不分配空间
