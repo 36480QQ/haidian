@@ -177,6 +177,58 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
+## 品牌、Logo 与国际传播系统
+
+本轮修复把 agent.1 从命名口号扩展为可审查的品牌系统：核心中文名保持“京张智能体共创公地”，英文名保持 Jing-Zhang Agent Commons，传播副标题为“智脉共生环”。Logo 方向以京张铁路轴线、开源协作节点、蓝绿公共空间和全球活动环构成四层符号；色彩使用铁路蓝、生态绿、创新橙和公共紫，全部由本包脚本生成，不使用外部商标、字体文件或企业标识。视觉系统服务三个目标：让评审者立即识别一带主轴，让参与者看到贡献/荣誉展示入口，让国际传播能用统一中英名称和活动路线表达。该设计仍为概念方向，正式 Logo、字体和品牌应用需清权后深化。 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+
+![品牌、Logo 与国际传播系统](assets/figures/brand-identity.png)
+
+| 组件 | 内容 | 边界 |
+| --- | --- | --- |
+| Logo方向 | 铁路轴线 + 开源节点 + 公共环 | 不使用第三方商标或企业标识 |
+| 色彩 | 铁路蓝、生态绿、创新橙、公共紫 | 由本包静态图自生成 |
+| 荣誉表达 | 贡献墙、开源维护者榜、年度贡献榜 | 需获得贡献者公开署名授权 |
+
+## 全球案例、AI生态图谱与区域协同
+
+本轮修复补齐 agent.2：六个案例原型不是照搬项目，而是作为可迁移机制参照。Kendall Square 参照高校-企业近距离创新，Station F 参照创业服务集成，Barcelona 22@ 参照旧城产业更新，Toronto Waterfront 参照数据治理争议的负面边界，Seoul DDP 参照公共文化地标运营，Shenzhen Bay 参照产业集群和滨水公共空间联动。对应到海淀，资源流为“高校策源-开源社区-安全治理-企业转化-公共体验-国际活动”，并外接北纬社区、未来科学城、怀柔科学城、经开区和京津冀创新节点；这些外部节点作为合作机制和活动网络，不作为本包空间红线。 [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
+
+![全球案例、AI生态图谱与区域协同](assets/figures/ecosystem-collaboration.png)
+
+## 十张AI场景卡与三项测试验证场景
+
+十张 AI 场景卡均补齐用户、空间、数据、人工复核和运营主体类型：开源发布厅、安全治理沙盒、端侧算力驿站、AI慢行导航、国际路演客厅、清河低碳创新廊、近校成果转化街、数据要素会客厅、AI生活服务样板街、全球AI活动周路线。三项产业测试验证场景明确为：模型安全治理沙盒、慢行无障碍导航、企业服务 Copilot。每项测试均采用最小数据、人工复核、可暂停/退出条件，不把实验写成已批准运营。 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
+
+![十张AI场景卡与三项测试验证场景](assets/figures/scenario-cards.png)
+
+| 测试场景 | 空间 | 数据边界 | 人工复核 | 退出条件 |
+| --- | --- | --- | --- | --- |
+| 安全治理沙盒 | 众智园 | 授权模型和公开评测记录 | 专家/监管双审 | 安全指标不达标即暂停 |
+| 慢行无障碍导航 | 京张遗址公园与站点 | 不采集个人轨迹，只用聚合断点 | 街道/居民代表复核 | 投诉集中或误导路径即下线 |
+| 企业服务Copilot | 大钟寺与原点社区 | 企业自愿提交非敏感需求 | 运营团队复核 | 过度营销或隐私风险即退出 |
+
+## AI朝圣地标、荣誉体系与公共空间组件库
+
+本轮修复补齐 agent.4 和 agent.5 的可见输出：三个 AI 朝圣地标为“清河低碳创新环”“原点开源发布厅”“大钟寺国际路演客厅”；荣誉体系包含贡献墙、开源维护者榜、场景共创档案和年度公共贡献奖；公共空间组件库包含可移动路演台、低功耗导视桩、无障碍问询点、可审计数据说明牌、雨棚式微发布空间和活动安全边界设施。文化叙事以京张铁路记忆、中关村创新文化、AI开源文化三条线叠合，导视符号只使用自生成几何符号，避免未经授权图像。 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [source:AGENT-TASKBOOK]
+
+## 重点区实施矩阵、KPI与退出条件
+
+JZ-01 至 JZ-06 已转化为可审查实施矩阵。每个项目均记录空间范围、责任主体类型、依赖条件、阶段、成本等级、KPI、风险和退出条件；它们均为概念建议，不代表审批、投资或政府实施承诺。近期 0-18 个月优先做低扰动试点，中期 1-3 年处理站城一体化和重点区更新，长期通过年度活动、社区运营和官方底数复算维持方案迭代。 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
+
+![重点区实施矩阵、KPI与退出条件](assets/figures/implementation-operations.png)
+
+## 年度活动、社区运营与转化漏斗
+
+年度运营机制补齐 agent.6：一月发布年度开放场景清单，三月组织高校/开源社区共创周，六月进行公共空间场景开放日，九月举办全球 AI 活动周，十一月完成公众反馈、指标复盘和下一年场景征集。转化漏斗为“公共问题-场景报名-合规评估-小范围试点-公众反馈-专业复核-年度归档”。责任主体类型包括街道、园区运营方、高校转化机构、企业志愿联盟、公共空间管理方和第三方安全评估团队。 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
+
+## 包容性、无障碍与公众参与机制
+
+公共利益修复新增儿童、老年人、残障人士、低数字素养者、夜间劳动者和游客六类补充人群。通用设计要求包括线下替代服务、无障碍路线复核、低刺激导视、夜间安全照明、非智能手机访问路径、申诉/撤回机制、场景风险公开说明和第三方人工复核。公平性指标包括无障碍断点修复数、线下替代服务可达率、公众反馈闭环率、低数字素养培训次数和夜间安全事件复盘率；这些指标在缺少正式运营数据前保持为运营 KPI 建议。 [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+
+## 逐资产版权许可与双语等价核对
+
+逐资产版权清单已补入 visual/assets/asset-license-inventory.json 和本节声明：正文、英文译文、图件、HTML、PDF 与矩阵均由本包脚本和 Codex 生成；GeoJSON 派生自仓库提供的 provisional geometry 和本包概念图层；HTML 不加载远程脚本、远程字体、远程地图瓦片或第三方图标；图中 Logo 为概念几何符号，不是商业商标。COMMUNITY-DISPLAY-ONLY 仅覆盖本次开源征集展示和评审，不扩大第三方材料许可。双语等价核对记录见 visual/assets/bilingual-equivalence-check.json。 [source:SOURCE-REGISTRY] [depth:risk_missing_data]
+
 ## 参考资料
 
 - brief/public-brief.md

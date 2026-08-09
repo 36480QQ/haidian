@@ -42,6 +42,24 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "GENERATED-PACKAGE-ASSETS",
+      "path": "visual/assets/asset-license-inventory.json",
+      "source_type": "agent_generated",
+      "usage": "Asset-level inventory for generated figures, HTML, PDFs, visual symbols, bilingual texts, and presentation outputs."
+    },
+    {
+      "id": "GLOBAL-CASE-MECHANISMS",
+      "path": "proposal.md#全球案例、AI生态图谱与区域协同",
+      "source_type": "agent_generated_synthesis",
+      "usage": "Case mechanisms used as conceptual comparisons; no copied media, maps, or proprietary data."
+    },
+    {
+      "id": "BILINGUAL-EQUIVALENCE-CHECK",
+      "path": "visual/assets/bilingual-equivalence-check.json",
+      "source_type": "agent_generated_review",
+      "usage": "Manual alignment record for Chinese/English claims, metrics, figure positions, and provisional-boundary disclaimer."
     }
   ]
 }

@@ -71,6 +71,46 @@ The metric layer records known values that can be recomputed from submitted geom
 
 The major risks are provisional boundary precision, missing official key-area polygons, missing regulatory controls, lack of ownership and building survey, missing road-redline and municipal data, heritage constraints, copyright clearance, and operational privacy governance. The submission uses only public or cleared repository material plus generated diagrams; it does not load remote assets in the visual HTML and does not transmit reader data. All spatial moves are conceptual suggestions for professional teams to deepen, not statutory planning, engineering feasibility, investment commitment, or government implementation promise. [source:SITE-PACKAGE] [data:geometry/constraints.geojson#CONSTRAINTS] [depth:risk_missing_data]
 
+## Brand, Logo, and International Communication System
+
+This repair expands agent.1 from a name into a reviewable identity system. The Chinese name remains Jing-Zhang Agent Commons in Chinese, the English name remains Jing-Zhang Agent Commons, and the communication subtitle is Symbiotic Intelligence Loop. The logo direction combines the Jing-Zhang railway axis, open-source nodes, blue-green public space, and a global event loop. The graphics are generated inside this package and do not use third-party trademarks, fonts, enterprise marks, or remote assets. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
+
+![Brand, Logo, and International Communication System](assets/figures/brand-identity.en.png)
+
+## Global Cases, AI Ecosystem Map, and Regional Coordination
+
+This repair completes agent.2 with six transferable case mechanisms: Kendall Square for campus-enterprise proximity, Station F for integrated start-up services, Barcelona 22@ for urban renewal, Toronto Waterfront for data-governance limits, Seoul DDP for cultural landmark operation, and Shenzhen Bay for cluster-public-space integration. For Haidian, the resource chain is university research, open-source community, safety governance, enterprise conversion, public experience, and global events. External nodes are coordination partners, not new boundaries. [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
+
+![Global Cases, AI Ecosystem Map, and Regional Coordination](assets/figures/ecosystem-collaboration.en.png)
+
+## Ten AI Scenario Cards and Three Test-Validation Scenarios
+
+The ten AI scenario cards now name users, locations, data boundaries, human review, and operator types. The three test-validation tracks are model-safety governance sandbox, accessible walkability navigation, and enterprise-service Copilot. Each test uses minimal data, human review, and pause/exit conditions; no test is described as approved operation. [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
+
+![Ten AI Scenario Cards and Three Test-Validation Scenarios](assets/figures/scenario-cards.en.png)
+
+## AI Pilgrimage Landmarks, Honor System, and Public-Space Kit
+
+The AI pilgrimage landmarks are the Qinghe low-carbon innovation loop, the AI Origin open-source release hall, and the Dazhongsi international roadshow room. The honor system includes a contribution wall, open-source maintainer board, scenario co-creation archive, and annual public-contribution awards. The public-space kit includes mobile stages, low-power wayfinding posts, accessibility help points, data-disclosure signs, micro-release shelters, and event-safety boundary elements. [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [source:AGENT-TASKBOOK]
+
+## Key-Area Implementation Matrix, KPIs, and Exit Conditions
+
+JZ-01 through JZ-06 are converted into an implementation matrix with scope, actor type, dependencies, phase, cost band, KPI, risk, and exit conditions. All items are concept recommendations, not approvals, investment promises, or government implementation commitments. [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
+
+![Key-Area Implementation Matrix, KPIs, and Exit Conditions](assets/figures/implementation-operations.en.png)
+
+## Annual Events, Community Operation, and Conversion Funnel
+
+The annual operating system includes a January open-scenario list, March university/open-source co-creation week, June public-space scenario open day, September global AI week, and November public-feedback review. The conversion funnel is public problem, scenario application, compliance check, small pilot, public feedback, professional review, and annual archive. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
+
+## Inclusion, Accessibility, and Public Participation
+
+The repair adds children, older adults, people with disabilities, low-digital-literacy users, night workers, and visitors as explicit groups. Universal-design measures include offline alternatives, accessible-route checks, low-stimulation wayfinding, night safety lighting, non-smartphone access, complaint/withdrawal channels, risk disclosure, and third-party human review. [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+
+## Asset-Level Rights and Bilingual Equivalence Check
+
+The package now includes asset-level rights records in visual/assets/asset-license-inventory.json and this section. Text, translation, figures, HTML, PDFs, and matrices are generated by this package; GeoJSON derives from repository provisional geometry and package concept layers; HTML loads no remote scripts, fonts, map tiles, or third-party icons. COMMUNITY-DISPLAY-ONLY applies only to this open-call review/display context and does not expand third-party licenses. Bilingual equivalence evidence is recorded in visual/assets/bilingual-equivalence-check.json. [source:SOURCE-REGISTRY] [depth:risk_missing_data]
+
 ## References
 
 The primary references are the repository site package, the design brief, the allowed design space, the agent taskbook, the public source registry, local professional-standard references, and the generated submission package files. The readable proposal cites only claim-adjacent anchors; the complete evidence inventory is stored in sources.json, metrics.json, compliance_matrix.json, standard_matrix.json, design_depth_matrix.json, assumptions.json, and GeoJSON layers. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
