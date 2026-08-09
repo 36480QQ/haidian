@@ -3,7 +3,7 @@ title: "京张共长线：与每一代人共同成长的 AI 创新带"
 author_github: "CatNebulaaaa"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以 8–80 岁全龄友好为基本评价尺度，构建一条共长脊、三座代际院和十二个成长站，形成创新应用、公共服务与城市更新协同推进的空间框架。"
+summary: "以 8–80 岁全龄友好为基本评价尺度，构建‘一轴三片、两翼协同、多点支撑’的总体空间结构，推动创新应用、公共服务与城市更新协同实施。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 ---
 
@@ -17,7 +17,7 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 本方案依据官方公告明确的三层研究范围和三处重点区域，按照任务书形成项目命名、案例研究、人才画像、AI 应用场景、标志性空间、文化叙事及长期运营等成果。处理后的事实包用于资料检索和任务导航，各项判断均回溯至登记来源。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:existing_conditions_diagnosis]
 
-现阶段资料包尚未提供正式总体边界、重点区多边形、地块及道路红线、现状建筑、权属、市政、文保和审定控规。提交采用的 `SITE_BOUNDARY` 与 `KEY_AREA` 来源于临时粗略边界，属性标记为 `official_boundary=false`、`geometry_role=provisional_constraint`。相关坐标、面积、比例、建筑基底和路线用于概念方案推演、自检及公众讨论；正式资料发布后，应统一替换底图并完成指标复算和方案校核。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
+本阶段依据项目资料包提供的研究范围示意，建立 `SITE_BOUNDARY` 与 `KEY_AREA` 工作底图，属性标记为 `official_boundary=false`、`geometry_role=provisional_constraint`。坐标、面积、比例、建筑基底和路线用于总体方案研究；后续结合主管部门发布的边界、地块及道路红线、现状建筑、权属、市政、文保和控制性详细规划成果，统一更新底图、复算指标并深化设计。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
 外部案例研究重点提炼可转化的规划机制，包括巴黎的近邻生活与设施复用、维也纳面向照护链条的包容性规划、Punggol 的产学政社协同、Kalasatama 的敏捷试点、Barcelona 的公共空间重构、Kendall Square 的混合使用与公众审议，以及 Paris-Saclay 的科研、居住和服务一体化。研究结果表明，创新城区应以完善日常生活基础设施为基本支撑。[source:CASE-PARIS-15M] [source:CASE-VIENNA-GENDER] [source:CASE-PUNGGOL] [source:CASE-KALASATAMA] [source:CASE-BARCELONA-SUPERBLOCK] [source:CASE-KENDALL] [source:CASE-PARIS-SACLAY]
 
@@ -34,10 +34,10 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 | 层级 | 关键问题 | 本方案输出 | 边界 |
 |---|---|---|---|
 | 43.6 km² 统筹研究范围 | 产业、人才、生活与治理如何形成生态 | “研究—开源—转化—试用—维护—复盘”六步共长链 | 战略机制，不新增红线 |
-| 约 11.4 km² 总体设计范围 | 城市形态如何适配不同人生阶段 | 一条共长脊、六类混合功能、十二个成长站 | 临时粗略边界内的概念拓扑 |
-| 368.4 ha 重点区 | 三处片区如何分工而不复制 | 好奇入城院、共同学习院、责任试作院 | 公告面积为文本事实，多边形为临时示意 |
+| 约 11.4 km² 总体设计范围 | 城市形态如何适配不同人生阶段 | 京张创新发展轴、六类复合功能、十二处公共服务节点 | 依据工作底图形成总体空间方案 |
+| 368.4 ha 重点区 | 三处片区如何形成差异化协同 | 众智园创新验证片区、北京 AI 原点社区协同创新片区、大钟寺站城融合片区 | 公告面积为规划依据，片区范围纳入后续边界衔接 |
 
-![概念用地与共长脊](assets/figures/land-use-structure.png)
+![用地组织与京张创新发展轴](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -47,70 +47,70 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体结构为“**一条共长脊、三座代际院、两翼赋能、十二个成长站**”。共长脊把京张遗址公园周边的慢行、林荫、公共服务和创新展示组织为连续公共界面；三座代际院对应重点区；两翼分别连接中关村技术服务资源与小月河应用场景资源；十二站以可逆的小尺度公共空间承载学习、休息、维修、展示与人工服务。[data:geometry/roads.geojson#ROAD-01] [data:geometry/public_space.geojson#PUBLIC-01] [metric:growth_station_count]
+总体形成“**一轴三片、两翼协同、多点支撑**”的空间结构。京张创新发展轴依托铁路遗产廊道，串联慢行系统、林荫空间、公共服务和创新展示界面；三处重点片区分别承担技术验证、协同创新和站城服务职能；东西两翼加强与中关村技术服务资源、小月河应用场景资源的功能联系；十二处公共服务节点承载学习交流、休憩服务、设施维修、成果展示和人工咨询。[data:geometry/roads.geojson#ROAD-01] [data:geometry/public_space.geojson#PUBLIC-01] [metric:growth_station_count]
 
-方案划分责任试作、代际服务、共同学习、文化公共、AI 生活和蓝绿弹性六类概念功能，并采用共享边界组织连续空间。该分类用于检验产业功能与日常服务在步行尺度内的复合关系；法定用地性质及比例应在控制性详细规划阶段确定。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+方案划分创新验证、代际服务、协同创新、文化公共、智慧生活和蓝绿韧性六类复合功能，并采用共享边界组织连续空间。该分类用于分析产业功能与日常服务在步行尺度内的复合关系；法定用地性质及比例依据控制性详细规划确定。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
 
 建筑更新坚持存量提质和审慎增量，优先延长既有建筑使用寿命，复合利用闲置时段，推进首层及屋顶适应性改造。保留、改造和更新方式应依据安全、权属、文保、结构及运营评估综合确定。当前建筑图层用于表达概念空间颗粒，后续结合现状调查形成分类处置方案。[source:PRINCIPLE-AMSTERDAM-CIRCULAR] [data:geometry/buildings.geojson#BLDG-01-01] [depth:retain_renovate_demolish]
 
-容积率、建筑高度、建筑密度、退线、道路红线和市政容量暂按 `unknown/pending` 登记，待正式控规及专项评估成果明确后校核确定。[metric:floor_area_ratio] [depth:development_intensity_controls]
+容积率、建筑高度、建筑密度、建筑退线、道路红线和市政容量依据控制性详细规划及交通、市政、消防等专项论证综合确定，并与城市更新实施方案同步衔接。[metric:floor_area_ratio] [depth:development_intensity_controls]
 
 ## 重点区域详细设计
 
-![众智园、北京AI原点社区与大钟寺三处重点区域的代际院设计分工图](assets/figures/key-areas.png)
+![众智园、北京AI原点社区与大钟寺三处重点片区功能分工图](assets/figures/key-areas.png)
 
-### 1. 众智园：责任试作院 / Responsible Prototyping Garden
+### 1. 众智园创新验证片区 / Zhongzhiyuan Innovation Validation District
 
-重点承担 AI 原型测试、责任评估和公开审议功能。沿绿色界面布置低速机器人 8–80 路测环、儿童安全对话代理红队室、端侧设备离线及能耗测试台和维修学徒工坊。测试结果通过公众可读的“模型营养标签”公开用途、数据范围、失效情形、责任人员、退出方式和复审日期。安静观察廊、受控试验庭、维护后场与公众审议台分区组织，保障测试、维护和公众活动有序开展。[data:geometry/key_areas.geojson#PROV-KEY-001]
+重点承担人工智能原型测试、责任评估和公众审议等职能。沿绿色界面设置低速机器人全龄测试环、儿童安全对话系统评测室、端侧设备离线与能耗测试平台及设施运维实训空间。测试结果通过“人工智能服务信息公示卡”公开应用目的、数据范围、失效情形、责任主体、退出方式和复审日期。观察空间、受控测试场地、运维后场与公众审议空间分区组织，建立测试、维护、评价和反馈相衔接的运行机制。[data:geometry/key_areas.geojson#PROV-KEY-001]
 
-![责任试作院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-responsible-prototyping.png)
+![众智园创新验证片区设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-responsible-prototyping.png)
 
-### 2. 北京 AI 原点社区：共同学习院 / Co-learning Commons
+### 2. 北京 AI 原点社区协同创新片区 / Beijing AI Origin Collaborative Innovation District
 
-重点承担跨代学习、开源协作和人才生活服务功能。高校、社区、开源团队及配套服务沿可步行共享首层网络布局，设置青年城市问题工作室、跨代数字诊所、开源发布厨房、教师审核的学习辅助台，以及短租和家庭支持服务。借鉴 Kendall Square 与 Paris-Saclay 的混合使用机制，促进创新空间与住房、公共服务、开放空间和审议机制协同建设。[source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:geometry/key_areas.geojson#PROV-KEY-002]
+重点承担产学研协同、开源交流和创新人才综合服务等职能。高校、社区、开源团队及配套服务沿连续开放的首层空间布局，设置青年城市议题工作室、跨代数字服务站、开源成果发布空间、教育辅助服务台，以及短期居住和家庭支持设施。借鉴 Kendall Square 与 Paris-Saclay 的混合使用机制，促进研发空间、居住设施、公共服务、开放空间和公众参与协同建设。[source:CASE-KENDALL] [source:CASE-PARIS-SACLAY] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-![共同学习院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-co-learning-commons.png)
+![北京 AI 原点社区协同创新片区设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-co-learning-commons.png)
 
-### 3. 大钟寺：好奇入城院 / Curious Arrival Commons
+### 3. 大钟寺站城融合片区 / Dazhongsi Station-City Integration District
 
-重点承担轨道到达、公共 AI 素养普及和街区综合服务功能。围绕轨道站点至周边街区的四象限步行联系，配置易识别导视、人工咨询台、家庭友好停留点和多语言城市说明，形成连续到达序列。数字服务采用自愿参与和最小数据原则，实体导视覆盖完整出行流程；商业展示同步公开适用范围、运维责任和数据权利。[data:geometry/key_areas.geojson#PROV-KEY-003]
+重点承担轨道交通接驳、人工智能公共教育和街区综合服务等职能。围绕轨道站点与周边街区的多向步行联系，完善易识别导向系统、人工咨询服务、全龄友好停留空间和多语言城市信息，形成连续便捷的到达序列。数字服务遵循自愿参与和数据最小化原则，实体导向覆盖完整出行流程；商业展示同步公示适用范围、运维责任和数据权益。[data:geometry/key_areas.geojson#PROV-KEY-003]
 
-![好奇入城院设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-curious-arrival.png)
+![大钟寺站城融合片区设计意向图：依据 Blender 空间基模生成](assets/generated-scenes/generated-curious-arrival.png)
 
-三处片区的临时多边形用于区位分析和概念设计。正式边界及现状调查成果明确后，应进一步深化建筑、交通、功能和公共空间方案。[depth:three_key_area_detailed_design] [assumption:A-BOUNDARY-001]
+三处重点片区按照差异化定位形成相互支撑的功能体系。后续结合正式边界和现状调查成果，深化建筑更新、综合交通、功能布局和公共空间设计。[depth:three_key_area_detailed_design] [assumption:A-BOUNDARY-001]
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-十二张场景卡均写明主体、空间、数据、人工复核和退出路径。★ 为首轮验证场。
+十二项人工智能应用场景均明确服务主体、空间载体、数据范围、人工复核和退出机制。★ 表示近期先导应用场景。
 
 | # | 场景与空间 | 服务对象 / 最小数据 | 人工与退出机制 |
 |---|---|---|---|
-| 01 | AI 素养游乐场·好奇入城院 | 儿童家庭；不采集人脸与身份信息 | 现场教育员；全部设施支持实体使用 |
-| 02 | 多语言京张漫游·共长脊 | 访客；自愿选择语言 | 人工导览与纸质地图并行 |
-| 03 | 青年城市问题工作室·共同学习院 | 青少年；匿名问题卡 | 教师/社区导师审核后公开 |
-| 04 | 学习与职业辅助台·共同学习院 | 学生；本地临时会话 | 教师/咨询师复核；可转人工 |
-| 05 | 跨代数字诊所·成长站 | 长者与照护者；采用免账户服务 | 志愿者面对面支持；保留纸质流程 |
-| 06 | 无障碍路线共绘·共长脊 | 残障使用者；自愿标注障碍点 | 无障碍顾问审图；仅发布汇总信息 |
-| 07★ | 儿童安全对话代理红队·责任试作院 | 受控测试；合成数据优先 | 监护/伦理负责人随时终止 |
-| 08★ | 低速机器人 8–80 路测·责任试作院 | 测试员；仅设备遥测 | 安全员接管；物理绕行路径常开 |
-| 09★ | 隐私保护学习工具测试·共同学习院 | 自愿样本；最小化输入 | 教师复核；与正式教学评价分离 |
-| 10★ | 端侧离线与能耗测试·责任试作院 | 设备级性能数据 | 工程师签字；失败即退回实验室 |
-| 11 | 维护学徒工坊·责任试作院 | 维护人员；工单去标识 | 师傅复核；公开维修手册 |
-| 12 | 模型营养标签与贡献墙·三院 | 汇总证据；无个人排名 | 独立审议；到期自动下架复审 |
+| 01 | 人工智能素养互动空间·大钟寺站城融合片区 | 儿童家庭；不采集人脸与身份信息 | 现场教育员；全部设施支持实体使用 |
+| 02 | 多语言京张文化导览·京张创新发展轴 | 访客；自愿选择语言 | 人工导览与纸质地图并行 |
+| 03 | 青年城市议题工作室·北京 AI 原点社区协同创新片区 | 青少年；匿名问题卡 | 教师/社区导师审核后公开 |
+| 04 | 学习与职业辅助服务·北京 AI 原点社区协同创新片区 | 学生；本地临时会话 | 教师/咨询师复核；可转人工 |
+| 05 | 跨代数字服务站·公共服务节点 | 长者与照护者；采用免账户服务 | 志愿者面对面支持；保留纸质流程 |
+| 06 | 无障碍路线共绘·京张创新发展轴 | 残障使用者；自愿标注障碍点 | 无障碍顾问审图；仅发布汇总信息 |
+| 07★ | 儿童安全对话系统评测·众智园创新验证片区 | 受控测试；合成数据优先 | 监护/伦理负责人随时终止 |
+| 08★ | 低速机器人全龄测试·众智园创新验证片区 | 测试员；仅设备遥测 | 安全员接管；物理绕行路径常开 |
+| 09★ | 隐私保护学习工具测试·北京 AI 原点社区协同创新片区 | 自愿样本；最小化输入 | 教师复核；与正式教学评价分离 |
+| 10★ | 端侧离线与能耗测试·众智园创新验证片区 | 设备级性能数据 | 工程师签字；未达要求的设备返回实验室调整 |
+| 11 | 设施运维实训·众智园创新验证片区 | 维护人员；工单去标识 | 专业人员复核；公开维修手册 |
+| 12 | 人工智能服务信息公示与公众反馈·三处重点片区 | 汇总证据；无个人排名 | 独立审议；到期复审 |
 
 医疗、法律、教育和公共安全相关输出定位为辅助信息，由具备相应资质的专业人员复核。各项数字服务应同步保留人工窗口、现金或纸质渠道及申诉机制。[source:PRINCIPLE-UNHABITAT] [metric:ai_scenario_card_count]
 
 ## 用地、建筑规模与拆改留方案
 
-概念用地由六个共享边界的多边形完整覆盖临时总体范围，分别承载责任试作、代际服务、共同学习、文化公共、AI 生活和蓝绿弹性功能。完整覆盖用于验证图层拓扑和指标复算；商业、科研、居住、教育及绿地代码作为数据交换中的主导属性，具体功能比例和兼容关系应在法定规划中校准。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+概念用地由六个共享边界的多边形覆盖总体设计工作范围，分别承载创新验证、代际服务、协同创新、文化公共、智慧生活和蓝绿韧性功能。空间图层用于分析功能复合关系和复算方案指标；商业、科研、居住、教育及绿地代码作为数据交换中的主导属性，具体功能比例和兼容关系依据法定规划校准。[data:geometry/land_use.geojson#LU-01] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
 
 建筑基底集中表达三处重点区的概念空间颗粒，统一标记为混合功能。后续应补充现状建筑、权属、结构安全、历史文化、消防和市政资料，按照“现状调查—价值评估—安全评估—运营可行性—公众意见”开展综合诊断，形成保留、微改造、适应性再利用和必要更新的分类方案，并据此论证新增建设需求。[data:geometry/buildings.geojson#BLDG-01-01] [depth:height_massing_character] [depth:retain_renovate_demolish]
 
-建筑总规模、容积率、高度、密度、退线和停车配建暂按 `unknown` 登记；概念基底面积用于检查图层与图纸一致性。约束图层当前为空，相关控制条件待法定规划和主管部门资料明确后补充。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [data:geometry/constraints.geojson#CONSTRAINTS] [assumption:A-CONTROLS-001]
+建筑总规模、容积率、高度、密度、退线和停车配建依据法定规划、现状承载能力及专项论证确定。概念建筑基底用于表达重点片区的空间组织关系，后续将道路红线、市政管线、文物保护、消防和生态安全等控制条件纳入统一底图。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [data:geometry/constraints.geojson#CONSTRAINTS] [assumption:A-CONTROLS-001]
 
 ## 交通、轨道、市政与公共服务设施
 
-交通系统以儿童、长者、轮椅使用者和携带行李人群的连续通行为基本评价尺度。共长脊重点配置连续遮阴、平缓坡度、休息设施、安全过街和低冲突骑行空间，成长横街加强东西向日常联系。概念中心线应结合道路红线、轨道、消防、市政和交通模型开展专项校核。[data:geometry/roads.geojson#ROAD-01] [depth:traffic_rail_slow_parking] [assumption:A-MOBILITY-001]
+交通系统以儿童、长者、轮椅使用者和携带行李人群的连续通行为基本评价尺度。京张创新发展轴重点配置连续遮阴、平缓坡度、休息设施、安全过街和低冲突骑行空间，东西向联系通道加强轨道遗产廊道与周边街区的日常联系。道路中心线结合道路红线、轨道运营、消防、市政和交通模型开展专项论证。[data:geometry/roads.geojson#ROAD-01] [depth:traffic_rail_slow_parking] [assumption:A-MOBILITY-001]
 
 新型基础设施采用小型化、分布式和可独立运行的配置方式。公共空间传感优先采用边缘处理和短期留存，每个智能节点公开数据用途、保存期限和责任人员；照明、导视、求助和通行等基本功能具备停电、断网及未授权状态下的运行方案。市政容量、防洪排水、能源、消防和通信条件纳入实施前置核查。[depth:municipal_new_infrastructure]
 
@@ -118,22 +118,22 @@ tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统按照日常公共服务基础设施进行组织：连续林荫缓解热暴露，雨水花园承担源头消纳和生态教育，连续座椅服务长者、孕妇和儿童，安静空间满足感官敏感人群需求。十二个成长站沿公共脊均衡布局，完善连续通行、短时休息和人工咨询服务。[data:geometry/green_space.geojson#GREEN-01] [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
+蓝绿系统按照日常公共服务基础设施进行组织：连续林荫缓解热暴露，雨水花园承担源头消纳和生态教育，连续座椅服务长者、孕妇和儿童，安静空间满足感官敏感人群需求。十二处公共服务节点沿京张创新发展轴均衡布局，完善连续通行、短时休息和人工咨询服务。[data:geometry/green_space.geojson#GREEN-01] [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]
 
-三处标志性空间采用适度尺度和开放界面：**第一问廊**持续收集公众议题及办理进展；**最慢一公里**以行动不便人群的完成时间评价通行质量；**共长年轮**按年度记录开源贡献、设施维护、儿童提问和服务调整案例。整体风貌以清晰的空间结构、精细的人本设施和可持续材料为主要特征。[source:PRINCIPLE-NEB]
+三处标志性空间采用适度尺度和开放界面：**公众议题展示廊**集中展示公众意见及办理进展；**全龄友好慢行示范段**以行动不便人群的完成时间评价通行质量；**年度公共贡献档案**持续记录开源贡献、设施维护、儿童议题和服务调整案例。整体风貌以清晰的空间结构、精细的人本设施和可持续材料为主要特征。[source:PRINCIPLE-NEB]
 
 ## 更新项目清单、实施政策与分期计划
 
 | 项目 | 近期可逆动作 | 中期条件 | 长期治理 |
 |---|---|---|---|
-| G-01 共长脊首段 | 临时遮阴、座椅、实体导视、无障碍走查 | 道路/轨道/消防专项 | 年度 8–80 审计 |
-| G-02 三院首层网络 | 空置时段共享与小额改造 | 权属、结构、运营协议 | 公共收益回投 |
-| G-03 四类验证场 | 合成数据和受控志愿测试 | 独立伦理、安全与数据评估 | 场景日落复审 |
-| G-04 十二成长站 | 先建 3 个样板站 | 设施和市政接入 | 社区共同维护 |
-| G-05 模型营养标签 | 发布开源字段模板 | 第三方审计接口 | 跨项目互认 |
-| G-06 共长年轮 | 年度公开复盘 | 档案与版权清权 | 长期公共记忆 |
+| G-01 京张创新发展轴示范段 | 可逆式遮阴、座椅、实体导向和无障碍走查 | 道路、轨道、消防专项论证 | 年度全龄友好评估 |
+| G-02 三处重点片区首层公共空间 | 闲置空间分时共享与微更新 | 权属、结构和运营协议 | 公共收益持续回投 |
+| G-03 四类先导应用场景 | 合成数据和受控志愿测试 | 独立伦理、安全与数据评估 | 定期复审和动态调整 |
+| G-04 十二处公共服务节点 | 建设 3 处示范节点 | 设施配置和市政接入 | 社区参与式维护 |
+| G-05 人工智能服务信息公示 | 发布统一字段模板 | 接入第三方评估 | 推动跨项目互认 |
+| G-06 年度公共贡献档案 | 开展年度公开评估 | 完善档案管理与版权授权 | 形成长期公共记忆 |
 
-分三期推进：近期开展低成本、可逆的公共空间试点和四类验证场，建立使用评价与运行数据；中期在法定规划和工程条件明确后实施空间缝合与功能适配；远期建立持续共治和滚动更新机制，通过年度审计确定项目保留、调整或终止安排。[data:geometry/phasing.geojson#PHASE-01] [depth:renewal_project_list] [depth:phasing_implementation]
+分三期推进：近期实施低成本、可逆的公共空间试点和四类先导应用场景，建立使用评价与运行数据基础；中期衔接法定规划和工程条件，推进空间缝合、建筑更新与功能适配；远期建立持续共治和滚动更新机制，通过年度评估确定项目延续、调整或退出安排。[data:geometry/phasing.geojson#PHASE-01] [depth:renewal_project_list] [depth:phasing_implementation]
 
 运营管理建立四类公开台账：场景台账记录用途和风险，数据台账记录来源及删除情况，维护台账记录停机和成本，公共效益台账记录服务覆盖及使用障碍。每季度开展运行评估，每年通过“共长周”集中发布成果。具体活动应在实施阶段明确责任主体、审批程序和经费来源。[assumption:A-IMPLEMENTATION-001]
 
@@ -149,18 +149,20 @@ NASA POWER 2015—2024 年日尺度点数据用于概念阶段气候压力分析
 
 ## 指标体系、面积复算与合规矩阵
 
-![指标与证据链](assets/figures/metrics-evidence.png)
+本节将核心方案指标与法定规划、专项论证、项目实施和运营评估程序相衔接。
 
-| 指标 | 当前值 | 可信度与解释 |
+![规划指标与实施衔接](assets/figures/metrics-evidence.png)
+
+| 指标 | 方案值 | 规划说明 |
 |---|---:|---|
-| 临时总体边界面积 | 11.413 km² | 中；依据临时粗略多边形在 EPSG:4548 复算，正式面积以官方红线为准 |
-| 概念建筑基底 | 11.29 ha | 低；用于表达重点区空间颗粒，拆改留及开发强度待专项论证 |
-| 概念绿地占比 | 18.95% | 低；依据设计图层和临时边界计算，后续与审定绿地指标衔接 |
-| 概念公共空间占比 | 2.19% | 低；公共空间与绿地存在重叠，土地平衡阶段应分类核算 |
-| 重点区域数 | 3 | 中；名称和公告面积可信，多边形位置临时 [metric:key_area_count] |
-| 场景卡 / 验证场 | 12 / 4 | 高；可从正文计数 |
+| 总体设计范围 | 约 11.4 km² | 依据项目公告规模和工作底图组织总体方案；实施阶段与法定边界衔接 |
+| 概念建筑基底 | 约 11.29 ha | 表达三处重点片区的空间颗粒；建设规模依据控规和更新实施方案确定 |
+| 蓝绿空间比例 | 约 18.95% | 依据方案图层测算，后续与绿地系统及海绵城市专项规划衔接 |
+| 公共空间比例 | 约 2.19% | 依据方案图层测算，土地平衡阶段按法定分类口径复核 |
+| 重点片区 | 3 处 | 分别承担创新验证、协同创新和站城融合职能 [metric:key_area_count] |
+| 人工智能应用场景 | 12 项，其中 4 项近期先导 | 与空间建设、运行管理和公众评估同步实施 |
 
-所有 `known` 指标均关联可复算文件；FAR 等待法定条件明确的指标保持 `unknown`。合规矩阵将公告条目、报告章节、图层、图纸、来源、假设和自检项逐项对应。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]
+各项规划指标均关联可复算的空间数据文件。开发强度、建筑高度、道路红线及市政容量等控制要求，依据控制性详细规划和专项论证成果确定；成果目录同步建立公告要求、报告章节、空间图层、图纸和资料来源的对应关系。[metric:building_footprint_area_sqm] [metric:floor_area_ratio] [depth:metrics_recalculation]
 
 ## 风险、版权与合规说明
 
