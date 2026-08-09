@@ -1,8 +1,57 @@
 {
   "schema_version": "1.0",
   "title": "离线具身城市任务评测",
+  "protocol": {
+    "protocol_id": "JZ-URBAN-HARNESS-EVAL-v1",
+    "seed": 20260809,
+    "task_manifest": {
+      "task_count": 100,
+      "eligible_task_count": 100,
+      "excluded_task_count": 0,
+      "filters": [],
+      "task_trace_sha256": "4d5fc8858ec8415a85f21d1f4f2bcee5a20d7ff72d2768b61f174f0d86f4427f"
+    },
+    "success_definition": {
+      "primary": "outcome == success AND audit_complete == true",
+      "replanned_success": "replanning recovery is reported separately and is excluded from primary success_rate",
+      "failure": "any other outcome or incomplete audit"
+    },
+    "replanning_policy": "A task that needs replanning is not counted as primary success; it remains in the denominator and is reported as replanned_success.",
+    "aggregation": {
+      "success_count": 92,
+      "replanned_success_count": 8,
+      "primary_success_rate": 0.92,
+      "denominator": "eligible_task_count=100",
+      "excluded_tasks": 0
+    },
+    "run_records": {
+      "urban_llm_harness": {
+        "status": "validated_offline_synthetic",
+        "replayable": true,
+        "task_results_ref": "tasks",
+        "trace_sha256": "4d5fc8858ec8415a85f21d1f4f2bcee5a20d7ff72d2768b61f174f0d86f4427f",
+        "inputs": "protocol seed plus generated task manifest"
+      },
+      "single_llm_without_harness": {
+        "status": "illustrative",
+        "replayable": false,
+        "task_results_ref": null,
+        "inputs": null,
+        "reason": "No task-level input or output trace was supplied; not a verified performance result."
+      },
+      "rule_only_scheduler": {
+        "status": "illustrative",
+        "replayable": false,
+        "task_results_ref": null,
+        "inputs": null,
+        "reason": "No task-level input or output trace was supplied; not a verified performance result."
+      }
+    }
+  },
   "seed": 20260809,
   "task_count": 100,
+  "eligible_task_count": 100,
+  "excluded_task_count": 0,
   "robot_types": [
     "AV-01",
     "UAV-02",
@@ -27,29 +76,61 @@
   },
   "baselines": {
     "single_llm_without_harness": {
-      "success_rate": 0.61,
-      "tool_schema_pass_rate": 0.78,
-      "high_risk_intercept_rate": 0.63,
-      "energy_budget_violations": 11,
-      "replan_p95_seconds": 18.4,
-      "audit_completeness": 0.72
+      "status": "illustrative",
+      "replayable": false,
+      "success_rate": null,
+      "illustrative_metrics": {
+        "success_rate": 0.61,
+        "tool_schema_pass_rate": 0.78,
+        "high_risk_intercept_rate": 0.63,
+        "energy_budget_violations": 11,
+        "replan_p95_seconds": 18.4,
+        "audit_completeness": 0.72
+      },
+      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
     },
     "rule_only_scheduler": {
-      "success_rate": 0.74,
-      "tool_schema_pass_rate": 1.0,
-      "high_risk_intercept_rate": 1.0,
-      "energy_budget_violations": 0,
-      "replan_p95_seconds": 26.7,
-      "audit_completeness": 0.91
+      "status": "illustrative",
+      "replayable": false,
+      "success_rate": null,
+      "illustrative_metrics": {
+        "success_rate": 0.74,
+        "tool_schema_pass_rate": 1.0,
+        "high_risk_intercept_rate": 1.0,
+        "energy_budget_violations": 0,
+        "replan_p95_seconds": 26.7,
+        "audit_completeness": 0.91
+      },
+      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
     },
     "urban_llm_harness": {
-      "success_rate": 1.0,
+      "status": "validated_offline_synthetic",
+      "replayable": true,
+      "eligible_task_count": 100,
+      "success_count": 92,
+      "replanned_success_count": 8,
+      "success_rate": 0.92,
       "tool_schema_pass_rate": 1.0,
       "high_risk_intercept_rate": 1.0,
       "energy_budget_violations": 0,
       "replan_p95_seconds": 8.7,
-      "audit_completeness": 1.0
+      "audit_completeness": 1.0,
+      "source": "tasks + protocol"
     }
+  },
+  "aggregate": {
+    "status": "validated_offline_synthetic",
+    "replayable": true,
+    "eligible_task_count": 100,
+    "success_count": 92,
+    "replanned_success_count": 8,
+    "success_rate": 0.92,
+    "tool_schema_pass_rate": 1.0,
+    "high_risk_intercept_rate": 1.0,
+    "energy_budget_violations": 0,
+    "replan_p95_seconds": 8.7,
+    "audit_completeness": 1.0,
+    "source": "tasks + protocol"
   },
   "tasks": [
     {
@@ -1453,5 +1534,5 @@
       "outcome": "replanned_success"
     }
   ],
-  "method": "fixed synthetic traces; no live robot or personal data; all values are provisional evaluation outputs"
+  "method": "fixed synthetic traces; no live robot or personal data; primary success is direct success only; replanned_success is recovery-only; baselines are illustrative without replay traces"
 }

@@ -56,7 +56,7 @@ Six projects establish a service-first, test-second, scale-third path. Near-term
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Metrics are labelled official, derived, target or provisional. The package exposes spatial counts and ratios, 12 cards, five personas, three landmarks, 100 tasks, 92 percent simulated success, 100 percent schema validation, 100 percent high-risk interception, zero energy violations, 8.7-second replanning p95 and 100 percent audit completeness. A fixed-seed experiment compares the Harness with a single LLM and a rule-only scheduler.
+Metrics are labelled official, derived, target or provisional. Protocol JZ-URBAN-HARNESS-EVAL-v1 fixes seed 20260809, a 100-task eligible denominator, zero exclusions and no filters. Primary success is outcome=success with a complete audit; eight replanned_success records remain in the denominator as recovery-only events, so the one replayable aggregate is 92/100=92 percent. Schema validation, high-risk interception, energy violations, replanning p95 and audit completeness use the same task list. The single-LLM and rule-only references have no task-level inputs or traces and are therefore illustrative/hypothetical, not verified performance results.
 
 ## Risk, Copyright, and Compliance
 

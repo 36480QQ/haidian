@@ -1,30 +1,57 @@
 {
   "schema_version": "1.0",
+  "protocol_id": "JZ-URBAN-HARNESS-EVAL-v1",
+  "seed": 20260809,
+  "denominator": {
+    "task_count": 100,
+    "eligible_task_count": 100,
+    "excluded_task_count": 0,
+    "filters": [],
+    "task_trace_sha256": "4d5fc8858ec8415a85f21d1f4f2bcee5a20d7ff72d2768b61f174f0d86f4427f"
+  },
   "metrics": {
     "single_llm_without_harness": {
-      "success_rate": 0.61,
-      "tool_schema_pass_rate": 0.78,
-      "high_risk_intercept_rate": 0.63,
-      "energy_budget_violations": 11,
-      "replan_p95_seconds": 18.4,
-      "audit_completeness": 0.72
+      "status": "illustrative",
+      "replayable": false,
+      "success_rate": null,
+      "illustrative_metrics": {
+        "success_rate": 0.61,
+        "tool_schema_pass_rate": 0.78,
+        "high_risk_intercept_rate": 0.63,
+        "energy_budget_violations": 11,
+        "replan_p95_seconds": 18.4,
+        "audit_completeness": 0.72
+      },
+      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
     },
     "rule_only_scheduler": {
-      "success_rate": 0.74,
-      "tool_schema_pass_rate": 1.0,
-      "high_risk_intercept_rate": 1.0,
-      "energy_budget_violations": 0,
-      "replan_p95_seconds": 26.7,
-      "audit_completeness": 0.91
+      "status": "illustrative",
+      "replayable": false,
+      "success_rate": null,
+      "illustrative_metrics": {
+        "success_rate": 0.74,
+        "tool_schema_pass_rate": 1.0,
+        "high_risk_intercept_rate": 1.0,
+        "energy_budget_violations": 0,
+        "replan_p95_seconds": 26.7,
+        "audit_completeness": 0.91
+      },
+      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
     },
     "urban_llm_harness": {
-      "success_rate": 1.0,
+      "status": "validated_offline_synthetic",
+      "replayable": true,
+      "eligible_task_count": 100,
+      "success_count": 92,
+      "replanned_success_count": 8,
+      "success_rate": 0.92,
       "tool_schema_pass_rate": 1.0,
       "high_risk_intercept_rate": 1.0,
       "energy_budget_violations": 0,
       "replan_p95_seconds": 8.7,
-      "audit_completeness": 1.0
+      "audit_completeness": 1.0,
+      "source": "tasks + protocol"
     }
   },
-  "interpretation": "Harness combines LLM task decomposition with typed tools, deterministic safety gates, and local policy fallback."
+  "interpretation": "Only Urban LLM Harness 92% is a replayable synthetic result; the two baselines are illustrative/hypothetical because task-level traces and inputs are unavailable."
 }

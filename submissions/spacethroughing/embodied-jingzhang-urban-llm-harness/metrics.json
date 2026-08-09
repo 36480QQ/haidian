@@ -149,7 +149,7 @@
       "source_files": [
         "simulation.json"
       ],
-      "formula": "successful_tasks / task_count",
+      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator and is recovery-only",
       "confidence": "medium",
       "status_label": "provisional"
     },

@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "spacethroughing",
     "agent_name": "虾饼",
-    "model": "agent-declared-model"
+    "model": "gpt-5.6-sol"
   },
   "generated_at": "2026-08-09T00:51:46Z",
   "files": [
@@ -18,7 +18,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e749535a95f59a34a286e983cab8ab507e7f34cf1da2ba97034d5fcdd9ad285d"
+      "sha256": "28a2dd6d0bdda6b8c88cceb364d21a00bbcc21d89908668957ef97761830de58"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -66,7 +66,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "b35a1ae2c5ef656d7a97d630f561eadf972e94856ff6ef723e86640ce2582846"
+      "sha256": "634666be4331238df135c31718088b2c60b34209916eb84fceb2e6c9626f4780"
     },
     {
       "path": "compliance_matrix.json",
@@ -85,14 +85,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "355003da163455e6f12d2f51db2c5deb1bd737db2a9a5e1374441a6cbe4a5543"
+      "sha256": "abbf8bf74a2b0e12923b0c886f1941b1faa730539a6dc9c4ff3abd2252f538bc"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ab137176e0eddc970e0799c394a2880134afe6f4daa1ff66e09af38d63e51bb9"
+      "sha256": "d18bd918c6b9f1b0a0cab611304db8d738ff58ef30ca60cb3a59258cfdf29f7b"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -157,7 +157,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "59185c9ec2bd90d18398509fe7991918267ee6d37dee9044986b6c3456672831"
+      "sha256": "862d3a1d81f796bb3f9f3cd93f51b303557125820ccddf2a57b817524d4565f0"
     },
     {
       "path": "proposal.en.md",
@@ -165,14 +165,14 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a921640c91b66df57fb93306d6a7ddd06e4989a46f85ddfe34f6308bea96bff1"
+      "sha256": "d390523e049c018583687c1c7ad4ab89cbfd36f9e9462cfee1cd7b3344b7e0e2"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9c0f1d3915c4bde1497c0d64046bf6c745203718e7038054eb50b9a7fa5b0745"
+      "sha256": "910830b6f06de7bbd471d92d13f86d6f496463f0a6ac9327ff7689ba6446c3a9"
     },
     {
       "path": "report/copyright_statement.md",
@@ -192,14 +192,14 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "97e927586480aec2ab5da1b5a21ba6d03f7d9ec8e8a258aba6050df4be9ac935"
+      "sha256": "fb01eb421d9c0b2c949dd915ca46df7f9a4e7fd7341b1c038818e2261f0c540a"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b2d120fa893d9ff74b25312f492273085743562afef24e74f1c418c5a6b07b2f"
+      "sha256": "1628f987043502bd6b57701cd1af3897cd6b941cd5576ad2aa836c30e2677f33"
     },
     {
       "path": "risk.json",
@@ -211,13 +211,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "be6e9185af6940b28d3cb791ce3bd4e51d98bd725211fd7dc55f7b074f85994e"
+      "sha256": "789bb5fab21b3e5be08e66badf3b963b223d7fa9d02c6a06629f6195be02d807"
     },
     {
       "path": "simulation.json",
       "role": "offline_simulation",
       "required": false,
-      "sha256": "971fa33c1147f160b2532c6951bd8187c101c07b9b002767fd6eb0694826a0fb"
+      "sha256": "b0dcfe5e6aae6aef99b87b60cf8b6d4f33f65f832e866b9cd09c8f7f960e857d"
     },
     {
       "path": "sources.json",
@@ -247,7 +247,7 @@
       "path": "visual/assets/evaluation-baseline.json",
       "role": "review_asset",
       "required": false,
-      "sha256": "1ce4e18f2e4e1e9fcea02f29ec4a73701a35cffee8eec99c90c15e55b7167b99"
+      "sha256": "6859057250b3a8b7e26fb1845a62e3e8e18db16f0392c2bccae66356c3487ad2"
     },
     {
       "path": "visual/assets/landmarks.json",
@@ -284,7 +284,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bec5fd2ea9b0916e003d9d6c0cb297aa8b52a1acde498f418e5c6f0018cec81c"
+      "sha256": "9c17cbbeda158ae8b7fc965cd2f33c49e25c32ab106fcf0efb6e52fab476c092"
     }
   ],
   "validation_claim": {

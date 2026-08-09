@@ -27,7 +27,7 @@
       "result": "pass",
       "severity": "major",
       "target": "simulation.json",
-      "message": "100 fixed-seed synthetic tasks cover four robot types and six fault classes; no live robot action."
+      "message": "Protocol JZ-URBAN-HARNESS-EVAL-v1 fixes seed, 100/100 denominator, zero exclusions, success definition and replay trace hash; baselines without traces are illustrative only."
     },
     {
       "check_id": "VISUAL_STATIC",
