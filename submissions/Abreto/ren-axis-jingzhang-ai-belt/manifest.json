@@ -23,7 +23,7 @@
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
-   "sha256": "564557475fdcca4c984be567f96c45de78ef0e19466fc3875fb024c0734e902b",
+   "sha256": "889d44973f9d184db38cbfddcf99fcbd5ef90ae80b364c35388d35877f804908",
    "language": "zh"
   },
   {
@@ -48,7 +48,7 @@
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "b3629f157961183869c7fcc05bcc3cccea5b7fc36381f9fdff0549b009ecba7f"
+   "sha256": "eae55ac8b5a89ce717cd12a99dd671073d74892a4acd8fae0a701b95ee5971ac"
   },
   {
    "path": "self_check.json",
@@ -78,7 +78,7 @@
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
-   "sha256": "d438aefa03420e4ef80315a526cca54651c8ba26e5642b971dadf2f36109c06d",
+   "sha256": "8965eb319f6acdd4f7ccf197df11787a97a776363235046752d85e72f96384e0",
    "language": "zh"
   },
   {
@@ -97,14 +97,14 @@
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "8972b127770dbd92c143b55ba7dec6bfff46ac3d52de28c542da90c0b41001fb",
+   "sha256": "a980ca06c793bb82a5cff688ddc04596d4a1023714d464d67033e1399cd82087",
    "language": "zh"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "bf677d247b9cf0127050e53214cf8bd9066bd4f9494354968b4121ef2ea87522",
+   "sha256": "6ffb89c16025b06d277aa319e4746598d66832228e2743cea83fe2978dad9a3d",
    "language": "zh"
   },
   {
@@ -207,7 +207,7 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "0a692125ca54c12df7ff707545ec8e6c1e54331b1b2db51cded2f6455792daa2"
+   "sha256": "d1f87db02a5c327a53e86e26af707e925e6c3de172f0a1e2bf7ec259de566aae"
   },
   {
    "path": "risk.json",
@@ -245,7 +245,7 @@
    "required": false,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "6fb657b162e6a197d6960b1e663fb2ebb9f3d3660a59d2545ce39dd98ab2b80b"
+   "sha256": "659e7fa936234e0d47a2a9748ee3f2fe049cc4edc62ee9578cdf3168bd5ffdb6"
   },
   {
    "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
    "required": false,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "9441a6db01cd35731e7218ef07d84b14bd0ce34258a0b537bde3da7fc66c2cee"
+   "sha256": "01b674cc870c91a7b12fe04f1131347d0ae3c2febb78c2ef7ea58d6578ff3938"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -269,7 +269,7 @@
    "required": false,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "0f1bec80dcf6a460c342db62873ea13fb289c06a751a3ce5fd8c5ef5168f1cdc"
+   "sha256": "44b1ba9bff7323f78847b21cf93cef1195b4cae3ca733ca0c3d279417c8c34b9"
   },
   {
    "path": "assets/figures/site-overview.en.png",
@@ -317,7 +317,7 @@
    "required": false,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "0267432a74bc04f9c6bc2ba0b66e45ffef85cc7b7bea08003d9dc9ae3394afe8"
+   "sha256": "d49ee55111e8f193533a99cc7ec3285d9bee429a1470ca17bd8a1471d9517923"
   },
   {
    "path": "visual/assets/osm-buildings.json",
