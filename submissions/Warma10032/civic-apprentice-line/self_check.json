@@ -44,6 +44,13 @@
       "message": "Offline HTML uses inline CSS/JS and local images only, with no network requests, forms or tracking."
     },
     {
+      "check_id": "VISUAL_NARRATIVE_REFINEMENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "The refined offline exhibit carries the Civic Apprentice Line ethos through a credential route, four civic interfaces, three district duties, five evidence figures, twelve trial cards and a public transcript prototype."
+    },
+    {
       "check_id": "HUMAN_HANDOVER",
       "result": "pass",
       "severity": "major",
@@ -82,7 +89,7 @@
   "ok": true,
   "can_enter_formal_review": true,
   "review_status": "formal-review-ready",
-  "recorded_at": "2026-08-09T00:27:13Z",
+  "recorded_at": "2026-08-09T01:09:06Z",
   "recorded_by": "scripts/self_check_submission.py against upstream/main@14bce12f",
   "recorded_gate_status": {
     "deterministic_validation": true,

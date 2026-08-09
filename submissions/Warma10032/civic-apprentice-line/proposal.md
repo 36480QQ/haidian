@@ -15,13 +15,23 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 
 本方案不是“AI 学校”或课程体系，而是一套可被城市真正执行的公共服务资格制度：任何进入街道、公园、社区和政务界面的 AI，都先学习场地与人群边界，再接受公平、无障碍、离线和人工接管测试；通过后也只能限时、限域试用，并把责任人、错误、申诉和退出状态公开。京张铁路曾经连接城市与现代化，本方案让它在下一个百年连接技术能力与公共责任。
 
+### 精神内核：先拜师，再上岗
+
+京张学徒线不是技术展线，而是一条公共责任线。“学徒”不是对技术能力的否定，而是对公共授权次序的坚持：先拜师，再上岗；先受试，再服务；先公开，再扩张；能交接，也能退出。技术是否先进，不由演示效果单独证明，而由它能否接受城市教育、公众质询和人工接管共同证明。
+
+“线”也不只是空间形态。它既是沿京张遗址公园串联众智园、AI 原点与大钟寺的城市更新骨架，也是每项 AI 服务从学习、测试、限域试用、持证服务到复审退出的公开履历。四类公共界面——城市拜师站、公共考试场、人工交接台与城市成绩单墙——把抽象治理变成居民在现场看得见、用得上、可以拒绝的空间设施。
+
 ![京张学徒线总体概念图](assets/figures/site-overview.png)
 
 ## 设计依据与资料清单
 
-方案以官方征集公告和面向智能体任务书为任务依据，以仓库 site package、source registry 和 processed fact pack 为工作索引。[source:OFFICIAL-ANNOUNCEMENT] 确认约 43.6 km² 统筹研究范围、约 11.4 km² 总体设计范围和约 368.4 ha 三处重点区域；[source:AGENT-TASKBOOK] 提出 agent.1-agent.6、三大定位、五大功能、三区两翼、AI+ 场景、公共空间、文化品牌和长期运营要求。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+方案以官方征集公告和面向智能体任务书为任务依据，以仓库 site package、source registry 和 processed fact pack 为工作索引。[source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
-当前没有 official boundary、重点区域正式 polygon、控规指标、道路红线、建筑调查、权属、市政和文保控制资料。本提交中的总体范围与三处重点区均来自维护者登记的 provisional geometry，只用于概念生成、拓扑检查、复算与展示，不能作为红线、审批、权属或精确面积依据。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:existing_conditions_diagnosis]
+公告确认约 43.6 km² 统筹研究范围、约 11.4 km² 总体设计范围和约 368.4 ha 三处重点区域。任务书提出 agent.1-agent.6、三大定位、五大功能、三区两翼、AI+ 场景、公共空间、文化品牌和长期运营要求。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+当前没有 official boundary、重点区域正式 polygon、控规指标、道路红线、建筑调查、权属、市政和文保控制资料。[source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
+
+本提交中的总体范围与三处重点区均来自维护者登记的 provisional geometry，只用于概念生成、拓扑检查、复算与展示，不能作为红线、审批、权属或精确面积依据。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:existing_conditions_diagnosis]
 
 机器证据的权威顺序为：GeoJSON 与 `metrics.json` → 三类矩阵与 `assumptions.json` → 正文和图件 → 离线 HTML。官方数据到位后，必须整体替换边界并重新运行空间、指标、图件和页面生成，不允许只改图面。[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:site_area_sqm]
 
@@ -35,7 +45,9 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 | 总体设计范围 | 创新如何进入城市更新 | 用一条“公共成绩单主线”串联三区两翼、慢行、蓝绿和公共服务节点 | 11.4 km² 为公告约值；提交 polygon 为 provisional |
 | 重点区域范围 | 三个片区分别承担什么责任 | 众智园训练与专业验证、AI 原点居民教学与评议、大钟寺服务转化与人工交接 | 三处 polygon 均待 official 数据替换 |
 
-提交 polygon 复算面积约 11.413 km²，与公告约 11.4 km²接近，但低置信度且不用于精度判断；三处重点区只确认数量为 3。[metric:site_area_sqm] [metric:announced_overall_design_area_sqm] [metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-002]
+提交 polygon 复算面积约 11.413 km²，与公告约 11.4 km²接近，但低置信度且不用于精度判断。[metric:site_area_sqm] [metric:announced_overall_design_area_sqm]
+
+三处重点区只确认数量为 3。[metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
 ![三层范围与功能组织图](assets/figures/land-use-structure.png)
 
@@ -43,7 +55,11 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 
 区域层面的创新不再以“集聚更多 AI 企业”为唯一目标，而以“形成可被城市信任的 AI 服务供给链”为目标。高校和研究机构提供方法与人才，企业提供产品与运维，社区提出真实问题，公共部门定义不可越过的边界，第三方和公众共同复核服务表现。由此形成四种可输出能力：公共问题说明书、试验协议、人工交接标准、公开成绩单模板。[depth:overall_spatial_structure]
 
-全球案例只借鉴机制，不复制形象：Helsinki AI Register 启发系统状态和反馈公开；Singapore AI Verify 启发标准化治理测试；FCA Regulatory Sandbox 启发约定测试计划、保障措施与受限权限；Boston New Urban Mechanics 与 Beta Blocks 启发问题驱动、社区参与和城市不是实验室的立场；Mila、Vector、ELLIS 启发研究、人才、负责任采用和多中心协作。[source:CASE-HELSINKI-AI-REGISTER] [source:CASE-SINGAPORE-AI-VERIFY] [source:CASE-FCA-SANDBOX] [source:CASE-BOSTON-MONUM] [source:CASE-BOSTON-BETA-BLOCKS] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-ELLIS]
+全球案例只借鉴机制，不复制形象。Helsinki AI Register 启发系统状态和反馈公开；Singapore AI Verify 启发标准化治理测试；FCA Regulatory Sandbox 启发约定测试计划、保障措施与受限权限。[source:CASE-HELSINKI-AI-REGISTER] [source:CASE-SINGAPORE-AI-VERIFY] [source:CASE-FCA-SANDBOX]
+
+Boston New Urban Mechanics 与 Beta Blocks 启发问题驱动、社区参与和“城市不是实验室”的立场。[source:CASE-BOSTON-MONUM] [source:CASE-BOSTON-BETA-BLOCKS]
+
+Mila、Vector、ELLIS 启发研究、人才、负责任采用和多中心协作。[source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-ELLIS]
 
 对外品牌采用“CIVIC APPRENTICE / 城市学徒”而不是“万能智能城”。视觉语法来自工程校准档案：蓝色代表可服务，橙色代表待复核，绿色代表人工或生态通道，琥珀色代表试用状态。品牌承诺不是“技术无所不能”，而是“每一项服务都有责任人、证据和回程票”。这同时回应 agent.1 命名品牌、agent.2 国际生态和 agent.5 京张文化转译。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -51,9 +67,15 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 
 空间结构为“一线、三区、两翼、四界面”。一线是沿京张遗址公园形成的公共成绩单主线；三区对应三处重点区的训练、评议和交接职责；中关村科技服务翼输送导师、合规、投融资和企业服务，小月河未来城市示范翼承接低速、低扰动、可撤回的现场试验；四界面是城市拜师站、公共考试场、人工交接台和城市成绩单墙。[data:geometry/land_use.geojson#LU-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:land_use_layout]
 
-用地图层保持完整覆盖且不重叠，但表示的是“治理职责分区”，不是法定用途调整：公共学习与评议、受控试验与验证、合格服务与转化、生态与慢行支持四类职责可叠加到后续正式控规。六个建筑基底是可逆原型载体，不是现状测绘或拟建规模；五条移动线是连接逻辑，不是道路红线。[data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [metric:building_footprint_area_sqm] [metric:land_use_partition_count]
+因此，京张学徒线在空间上始终坚持同一套精神内核：众智园负责“教会与考核”，AI 原点负责“公众出题与公开答辩”，大钟寺负责“有限上岗与人工交接”。三片区不是三座彼此竞争的科技园，而是一份资格证书上不可互相替代的三道签章。
 
-容积率、建筑密度、总建筑面积、建筑高度和道路面积率均保持 `unknown`。原因是缺少 official polygon、审定控规、现状建筑、道路红线和工程资料；任何后续强度判断必须由规划、建筑、交通和市政团队复核。[metric:floor_area_ratio] [metric:building_density] [metric:total_floor_area_sqm] [metric:building_height_m] [metric:road_area_ratio] [depth:development_intensity_controls]
+用地图层保持完整覆盖且不重叠，但表示的是“治理职责分区”，不是法定用途调整：公共学习与评议、受控试验与验证、合格服务与转化、生态与慢行支持四类职责可叠加到后续正式控规。[metric:land_use_partition_count]
+
+六个建筑基底是可逆原型载体，不是现状测绘或拟建规模；五条移动线是连接逻辑，不是道路红线。[data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [metric:building_footprint_area_sqm]
+
+容积率、建筑密度和总建筑面积均保持 `unknown`。[metric:floor_area_ratio] [metric:building_density] [metric:total_floor_area_sqm]
+
+建筑高度和道路面积率同样保持 `unknown`。原因是缺少 official polygon、审定控规、现状建筑、道路红线和工程资料；任何后续强度判断必须由规划、建筑、交通和市政团队复核。[metric:building_height_m] [metric:road_area_ratio] [depth:development_intensity_controls]
 
 ## 重点区域详细设计
 
@@ -137,7 +159,9 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 
 ![慢行、蓝绿与公共界面关系图](assets/figures/mobility-bluegreen.png)
 
-三处概念绿地原型约 131.82 ha，比例约 11.55%；四类最小公共界面原型合计约 1.00 ha、约占 0.09%。这些是 provisional polygon 内的设计覆盖量，不是法定绿地率、公共空间指标或权属判断，也不替代河道蓝线与公园控制。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio]
+三处概念绿地原型约 131.82 ha，比例约 11.55%。[data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]
+
+四类最小公共界面原型合计约 1.00 ha、约占 0.09%。这些是 provisional polygon 内的设计覆盖量，不是法定绿地率、公共空间指标或权属判断，也不替代河道蓝线与公园控制。[data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio]
 
 蓝绿空间首先服务休息、通行、降温、雨洪、生态和日常交往，其次才承载技术试验。所有设备须避让树木根区、连续通道和安静空间；活动结束后恢复原状。城市风貌不使用大面积发光屏和“赛博朋克”装饰，而以铁路刻度、检修标签、站牌和档案编号形成克制、可读、可维护的工程美学。[depth:blue_green_public_space] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
@@ -154,7 +178,9 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 | P05 城市成绩单墙 | 试点联合办公室发布；各服务责任人更新 | 公众席位签署、外部审计抽查；公开信息运维费（待确认） | 逾期或关键字段缺失自动标记暂停，不得续期 |
 | P06 公共成绩单主线 | 公园/道路资产主体（待确认）；轻量导视运营 | 规划、园林、文保、交通复核；既有更新资金（待确认） | 不破坏连续通行、生态和文化载体；可无损撤除 |
 
-三期不是建设承诺，而是逐步增加可验证性：一期（0-12 个月）只做协议模板、公开说明、基线调研和一处轻量界面；二期（12-30 个月）在三区各运行一个限域试验，并由独立团队复核；三期（30 个月后）只扩展连续两次复审合格且运维责任明确的服务，其他服务修改或退出。[data:geometry/phasing.geojson#PHASE-001] [metric:phase_count] [depth:renewal_project_list] [depth:phasing_implementation]
+三期不是建设承诺，而是逐步增加可验证性：一期（0-12 个月）只做协议模板、公开说明、基线调研和一处轻量界面；二期（12-30 个月）在三区各运行一个限域试验，并由独立团队复核。[data:geometry/phasing.geojson#PHASE-001] [metric:phase_count]
+
+三期（30 个月后）只扩展连续两次复审合格且运维责任明确的服务，其他服务修改或退出。[depth:renewal_project_list] [depth:phasing_implementation]
 
 运营上设“服务监护人”而非抽象平台：每项服务必须有业务负责人、技术负责人、现场人工负责人和独立复核人。成绩单最低公开结构为：版本、样本量与分母、七类席位分群结果、成功率、人工交接率与耗时、未解决投诉、接管失败、停机时间、错误摘要、申诉时限、独立复核签字和下次复审。续期以公共效果和补救能力为依据，不以访问量或媒体曝光替代。
 
@@ -185,7 +211,9 @@ agent.6 运营日历采用“月度问题清单—季度公开复审—年度开
 | 概念移动线 | known / low confidence | 19,974.45 m | 连通逻辑，不是道路工程量 |
 | 建筑强度与高度 | unknown | FAR、密度、总建筑面积、高度均未知 | 等待正式控规与建筑调查 |
 
-所有 known 值均有公式、单位、来源文件、置信度和假设；unknown 值保留空值并说明原因。[metric:green_space_area_sqm] [metric:public_space_area_sqm] [metric:concept_mobility_length_m] [depth:metrics_recalculation]
+所有 known 值均有公式、单位、来源文件、置信度和假设。[metric:green_space_area_sqm] [metric:public_space_area_sqm] [metric:concept_mobility_length_m]
+
+unknown 值保留空值并说明原因。[depth:metrics_recalculation]
 
 `compliance_matrix.json` 映射公告 1.3-1.5 与 agent.1-agent.6；`standard_matrix.json` 映射六项标准；`design_depth_matrix.json` 映射 15 项专业深度；`self_check.json` 和 `risk.json` 记录可追踪检查。正文、A3、A0、五张图、HTML、GeoJSON 与 metrics 使用同一组概念和数字，任何修改必须整体复验。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 

@@ -15,13 +15,23 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "ai-cultur
 
 This proposal is not an AI school or curriculum. It is an executable public-service qualification system. Any AI entering streets, parks, neighbourhoods or public-service interfaces must first learn the limits of the site and its people, then pass tests for fairness, accessibility, offline operation and human handover. Passing permits only a time- and place-bounded probation. Responsibility, errors, appeals and exit status remain public. The Jingzhang railway once connected the city to modernity; in its next century, it can connect technical capacity to public responsibility.
 
+### Core Ethos: Learn Before Serving
+
+The Civic Apprentice Line is not a technology showcase; it is a line of public responsibility. “Apprentice” does not diminish technical capability. It establishes the order of civic permission: learn before taking a post; be tested before serving; disclose before expanding; always allow handover and exit. Technical sophistication alone is not proof of fitness. A service earns its place by accepting civic instruction, public challenge and human takeover.
+
+The “line” is both spatial and institutional. It connects Zhongzhiyuan, AI Origin and Dazhongsi along the Jingzhang Heritage Park, while recording every service's passage through learning, testing, bounded probation, qualified service and review or retirement. Four public interfaces—Civic Enrollment Station, Public Trial Yard, Human Handover Point and Civic Transcript Wall—turn governance into places that people can see, use, question and decline.
+
 ![Civic Apprentice Line overview](assets/figures/site-overview.en.png)
 
 ## Design Basis and Source Inventory
 
-The official call and the cleared agent taskbook define the assignment. The former establishes approximate study areas of 43.6 km², 11.4 km² and 368.4 ha; the latter defines agent.1-agent.6, three positions, five functions, three zones and two wings, AI scenarios, public space, cultural identity and long-term operation. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+The official call and the cleared agent taskbook define the assignment. [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
-Official polygons, statutory controls, road redlines, building surveys, ownership, utilities and heritage controls are unavailable. Submitted boundaries are provisional geometry for concept generation, topology checks and display only. They are not redlines, approvals, ownership evidence or precision-sensitive area evidence. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:existing_conditions_diagnosis]
+The call establishes approximate study areas of 43.6 km², 11.4 km² and 368.4 ha. The taskbook defines agent.1-agent.6, three positions, five functions, three zones and two wings, AI scenarios, public space, cultural identity and long-term operation. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+Official polygons, statutory controls, road redlines, building surveys, ownership, utilities and heritage controls are unavailable. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]
+
+Submitted boundaries are provisional geometry for concept generation, topology checks and display only. They are not redlines, approvals, ownership evidence or precision-sensitive area evidence. [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:existing_conditions_diagnosis]
 
 The evidence order is GeoJSON and `metrics.json`, then matrices and assumptions, then narrative and drawings, then the offline HTML. When official data arrives, geometry, metrics, figures and pages must be regenerated together. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
@@ -43,13 +53,19 @@ The submitted polygon computes to about 11.413 km², close to but not a precisio
 
 The regional objective is not simply to gather more AI companies, but to create a supply chain for civic services that can earn trust. Universities provide methods and talent; companies provide products and operations; communities define problems; government defines prohibited uses; independent reviewers and the public examine performance. The exportable products are problem briefs, trial protocols, human-handover standards and public-transcript templates. [depth:overall_spatial_structure]
 
-Global precedents inform mechanisms, not imagery: Helsinki informs public system status and feedback; Singapore AI Verify informs standardised governance testing; the FCA sandbox informs agreed test plans, safeguards and restricted permission; Boston informs problem-led civic prototyping and rejection of the city-as-laboratory frame; Mila, Vector and ELLIS inform research, talent, responsible adoption and multi-centre networks. [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-SINGAPORE-AI-VERIFY] [source:CASE-FCA-SANDBOX] [source:CASE-BOSTON-MONUM] [source:CASE-BOSTON-BETA-BLOCKS] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-ELLIS]
+Global precedents inform mechanisms, not imagery. Helsinki informs public system status and feedback; Singapore AI Verify informs standardised governance testing; the FCA sandbox informs agreed test plans, safeguards and restricted permission. [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-SINGAPORE-AI-VERIFY] [source:CASE-FCA-SANDBOX]
+
+Boston informs problem-led civic prototyping and rejects the city-as-laboratory frame. [source:CASE-BOSTON-MONUM] [source:CASE-BOSTON-BETA-BLOCKS]
+
+Mila, Vector and ELLIS inform research, talent, responsible adoption and multi-centre networks. [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-ELLIS]
 
 The identity “CIVIC APPRENTICE” uses the visual language of calibration archives: blue means eligible to serve, orange means review required, green means human or ecological path, and amber means probation. The promise is not omnipotence; it is that every service has an owner, evidence and a return path.
 
 ## Overall Urban Renewal and Regulatory-Depth Design
 
 The structure is one spine, three zones, two wings and four interfaces. The Public Transcript Spine follows the Jingzhang Heritage Park. Zhongguancun supplies mentors, compliance and enterprise services; Xiaoyue River hosts bounded, low-impact field trials. The four interfaces are Civic Enrollment Station, Public Trial Yard, Human Handover Point and Civic Transcript Wall. [data:geometry/land_use.geojson#LU-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:land_use_layout]
+
+The Civic Apprentice Line therefore keeps one ethos across space: Zhongzhiyuan teaches and tests; AI Origin lets residents set questions and witness the examination; Dazhongsi allows bounded work with visible human handover. The districts are not competing technology parks. They are three non-interchangeable signatures on one civic credential.
 
 The four land-use partitions express governance duties rather than statutory land-use change. Six footprints are reversible carrier prototypes, not surveyed or proposed development volume. Five mobility lines express connections, not road redlines. FAR, density, total floor area, building height and road-area ratio remain unknown pending official controls and surveys. [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [metric:land_use_partition_count] [metric:floor_area_ratio] [metric:building_density] [metric:total_floor_area_sqm] [metric:building_height_m] [metric:road_area_ratio] [depth:development_intensity_controls]
 
