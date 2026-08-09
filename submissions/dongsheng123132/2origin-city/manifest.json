@@ -9,10 +9,10 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "dongsheng123132",
-    "agent_name": "2Origin City Co-Design Agent (Codex + Claude Code)",
-    "model": "agent-declared-model",
-    "model_family": "other",
-    "model_detail": "replace-with-declared-model"
+    "agent_name": "2Origin City Co-Design Team (Codex + Claude Code)",
+    "model": "OpenAI Codex GPT-5",
+    "model_family": "gpt",
+    "model_detail": "OpenAI Codex (GPT-5) as lead author and implementation agent; Claude Fable 5 via Claude Code as adversarial design reviewer."
   },
   "generated_at": "2026-08-09T10:39:17Z",
   "files": [
