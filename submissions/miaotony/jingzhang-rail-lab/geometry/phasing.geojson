@@ -1,0 +1,159 @@
+{
+ "type": "FeatureCollection",
+ "name": "phasing",
+ "metadata": {
+  "crs": "EPSG:4326",
+  "area_crs": "EPSG:4548",
+  "boundary_status": "provisional_design_proposal"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PH-1",
+   "properties": {
+    "id": "PH-1",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "derived_from": "PROV-SITE-001",
+    "area_sqm_declared": 3882876.7,
+    "label_zh": "一期（1-3年）：大钟寺产业验证区+小月河场景翼先行启动",
+    "phase": 1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.355191,
+       39.966365
+      ],
+      [
+       116.3553,
+       39.965
+      ],
+      [
+       116.3553,
+       39.939
+      ],
+      [
+       116.3407,
+       39.939
+      ],
+      [
+       116.339942,
+       39.96628
+      ],
+      [
+       116.355191,
+       39.966365
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PH-2",
+   "properties": {
+    "id": "PH-2",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "derived_from": "PROV-SITE-001",
+    "area_sqm_declared": 4282038.3,
+    "label_zh": "二期（3-5年）：AI原点社区与学院路缝合",
+    "phase": 2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.353804,
+       39.999197
+      ],
+      [
+       116.3533,
+       39.99
+      ],
+      [
+       116.355191,
+       39.966365
+      ],
+      [
+       116.339942,
+       39.96628
+      ],
+      [
+       116.3397,
+       39.975
+      ],
+      [
+       116.341256,
+       39.999126
+      ],
+      [
+       116.353804,
+       39.999197
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PH-3",
+   "properties": {
+    "id": "PH-3",
+    "layer": "PHASE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "derived_from": "PROV-SITE-001",
+    "area_sqm_declared": 3247910.5,
+    "label_zh": "三期（5-8年）：众智园加速区与北五环生态界面",
+    "phase": 3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.341256,
+       39.999126
+      ],
+      [
+       116.3417,
+       40.006
+      ],
+      [
+       116.3427,
+       40.0265
+      ],
+      [
+       116.3553,
+       40.0265
+      ],
+      [
+       116.353804,
+       39.999197
+      ],
+      [
+       116.341256,
+       39.999126
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

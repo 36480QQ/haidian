@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JINGZHANG OPEN LAB · A City-Scale AI Experiment Line · Digital Exhibition Board</title>
+<style>
+:root{
+  --ink:#121a2b;--muted:#5b6b83;--faint:#8a97ab;
+  --paper:#ffffff;--soft:#f4f7fb;--line:#d9e1ec;--deep:#0e1626;--deep2:#15203a;
+  --gold:#c9973a;--rail:#31415e;
+  --south:#b7791f;--mid:#2563eb;--north:#7c3aed;--green:#15803d;--teal:#0e7490;
+  --ok:#15803d;--warn:#b45309;--stop:#b42318;
+  --shadow:0 10px 30px rgba(14,22,38,.10);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#e9eef5;color:var(--ink);line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 10px}
+ul{margin:6px 0 0;padding-left:1.2em}
+li{margin:3px 0}
+img{display:block;width:100%;height:auto}
+svg{display:block;width:100%;height:auto}
+
+/* ---------- header ---------- */
+header{background:linear-gradient(160deg,var(--deep) 0%,var(--deep2) 62%,#1a2b4e 100%);color:#eaf0f8;border-bottom:6px solid var(--gold)}
+.hero{padding:44px 0 34px}
+.eyebrow{display:flex;align-items:center;gap:12px;color:#9fb6d8;font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:14px}
+.eyebrow::before,.eyebrow::after{content:"";height:1px;background:rgba(159,182,216,.4);flex:0 0 40px}
+.hero h1{font-size:clamp(24px,4vw,40px);color:#fff;letter-spacing:.02em}
+.hero .en{display:block;font-size:clamp(13px,1.6vw,17px);font-weight:400;color:var(--gold);letter-spacing:.32em;margin-top:8px;text-transform:uppercase}
+.hero .sub{max-width:860px;margin-top:16px;color:#c4d3e8;font-size:15.5px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;font-size:12.5px}
+.hero-meta span{border:1px solid rgba(199,214,235,.35);border-radius:999px;padding:5px 14px;color:#dbe6f4}
+.hero-meta span b{color:var(--gold);font-weight:600}
+
+/* ---------- section shells ---------- */
+main{padding:26px 0 10px}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);margin-bottom:22px;overflow:hidden}
+.sheet-head{padding:20px 24px 14px;border-bottom:1px solid #e7edf5;background:#fbfcfe;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.sheet-head h2{font-size:20px;display:flex;align-items:center;gap:10px}
+.sheet-head h2::before{content:"";width:6px;height:22px;border-radius:3px;background:var(--gold)}
+.sheet-head .no{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--faint);letter-spacing:.14em;white-space:nowrap}
+.sheet-body{padding:20px 24px 24px}
+.lead{color:var(--muted);font-size:14.5px;max-width:880px}
+
+/* ---------- metric cards ---------- */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.mcard{border:1px solid var(--line);border-radius:8px;padding:16px 16px 12px;background:linear-gradient(180deg,#fff, #f7fafd);position:relative}
+.mcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:8px 0 0 8px;background:var(--teal)}
+.mcard.unknown::before{background:#94a3b8}
+.mcard .k{font-size:12.5px;color:var(--muted);letter-spacing:.06em}
+.mcard .v{font-size:clamp(22px,2.6vw,30px);font-weight:800;font-variant-numeric:tabular-nums;margin:4px 0 2px;color:var(--deep)}
+.mcard .v small{font-size:.5em;font-weight:600;color:var(--muted);margin-left:3px}
+.mcard .d{font-size:11.5px;color:var(--faint)}
+.mcard.unknown .v{color:#94a3b8;font-size:20px;letter-spacing:.1em}
+.badge{display:inline-block;font-size:10.5px;border-radius:4px;padding:1px 7px;margin-top:6px;letter-spacing:.05em}
+.badge.ok{background:#e7f6ec;color:var(--ok);border:1px solid #bfe5cc}
+.badge.na{background:#eef2f7;color:#64748b;border:1px solid #d5dee9}
+.note-bar{margin-top:14px;font-size:12.5px;color:var(--muted);background:var(--soft);border:1px dashed var(--line);border-radius:6px;padding:10px 14px}
+
+/* ---------- band diagram / cards ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:18px}
+.seg{border:1px solid var(--line);border-radius:8px;padding:16px;background:#fff}
+.seg h3{font-size:16px;display:flex;align-items:center;gap:8px}
+.seg h3 i{width:12px;height:12px;border-radius:3px;flex:none}
+.seg .ha{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--muted);margin:4px 0 8px;display:block}
+.seg p{font-size:13.5px;color:#3d4a60;margin:0}
+.seg.south{border-top:4px solid var(--south)}
+.seg.mid{border-top:4px solid var(--mid)}
+.seg.north{border-top:4px solid var(--north)}
+
+/* ---------- protocol / signal ---------- */
+.proto{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+.pcard{border-radius:8px;padding:16px;color:#fff}
+.pcard h3{font-size:15.5px;display:flex;align-items:center;gap:9px}
+.pcard h3 i{width:14px;height:14px;border-radius:50%;flex:none;box-shadow:0 0 0 3px rgba(255,255,255,.25)}
+.pcard p{font-size:13px;margin:8px 0 0;opacity:.94}
+.pcard.g{background:linear-gradient(160deg,#166534,#15803d)}
+.pcard.y{background:linear-gradient(160deg,#92400e,#b45309)}
+.pcard.r{background:linear-gradient(160deg,#7f1d1d,#b42318)}
+
+/* ---------- landmarks / timeline / narrative ---------- */
+.land{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:16px}
+.lcard{border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:8px;padding:16px;background:#fffdf7}
+.lcard .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:var(--gold);letter-spacing:.14em}
+.lcard h3{font-size:16px;margin:4px 0 6px}
+.lcard p{font-size:13.5px;color:#4a5568;margin:0}
+
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin-top:16px;counter-reset:ph}
+.phase{position:relative;padding:16px 18px 14px 18px;border-top:4px solid var(--line)}
+.phase::before{counter-increment:ph;content:counter(ph);position:absolute;top:-15px;left:16px;width:26px;height:26px;border-radius:50%;background:var(--deep);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.phase h3{font-size:15px;margin-top:8px}
+.phase .yr{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.08em}
+.phase p{font-size:13px;color:var(--muted);margin:6px 0 0}
+.phase.p1{border-top-color:var(--south)}.phase.p2{border-top-color:var(--mid)}.phase.p3{border-top-color:var(--north)}
+
+.narr{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+.ncard{background:var(--deep);border-radius:8px;padding:18px;color:#dfe8f4;position:relative;overflow:hidden}
+.ncard .era{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:26px;font-weight:800;color:var(--gold);opacity:.95}
+.ncard h3{font-size:15.5px;color:#fff;margin:6px 0 6px}
+.ncard p{font-size:12.5px;color:#aebdd3;margin:0}
+
+/* ---------- events / ops ---------- */
+.ops{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+.ocard{border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:#fff}
+.ocard h4{font-size:14px;color:var(--deep);display:flex;gap:8px;align-items:center}
+.ocard h4 i{width:8px;height:8px;border-radius:50%;background:var(--teal);flex:none}
+.ocard p{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+
+/* ---------- figures ---------- */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+figure{margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+figure img{border-bottom:1px solid var(--line);background:var(--soft)}
+figcaption{padding:10px 14px;font-size:12.5px;color:var(--muted)}
+figcaption b{color:var(--ink);display:block;font-size:13.5px;margin-bottom:2px}
+
+/* ---------- tasks table ---------- */
+.tasks{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px}
+.tasks th,.tasks td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.tasks th{background:var(--deep);color:#fff;font-weight:600;font-size:13px;letter-spacing:.04em}
+.tasks td.id{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--teal);white-space:nowrap;font-weight:700}
+.tasks tr:nth-child(even) td{background:#f8fafd}
+.chip{display:inline-block;font-size:11px;background:#e7f6ec;color:var(--ok);border:1px solid #bfe5cc;border-radius:4px;padding:1px 8px;white-space:nowrap}
+
+/* ---------- legend ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:12.5px;color:#41506a}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+
+/* ---------- footer ---------- */
+footer{margin-top:6px;background:var(--deep);color:#9db0ca;border-top:5px solid var(--gold)}
+.foot{padding:28px 0 34px;font-size:12.5px}
+.foot h4{color:#e6edf7;font-size:13.5px;margin-bottom:6px;letter-spacing:.06em}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.foot p{margin:0 0 6px;line-height:1.7}
+.foot .lic{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--gold);letter-spacing:.08em}
+.foot-bottom{margin-top:20px;padding-top:14px;border-top:1px solid rgba(157,176,202,.25);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:#7d90ab;font-size:11.5px}
+
+@media (max-width:640px){
+  .sheet-head{flex-direction:column;gap:4px}
+  .sheet-body{padding:16px}
+  .hero-meta span{padding:4px 10px}
+  .timeline .phase{border-top:none;border-left:4px solid var(--line);padding-top:20px}
+  .phase.p1{border-left-color:var(--south)}.phase.p2{border-left-color:var(--mid)}.phase.p3{border-left-color:var(--north)}
+}
+@media print{body{background:#fff}.sheet{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div class="eyebrow">Centennial Jingzhang AI Innovation Belt · Urban Design Concept Open Call · Digital Exhibition Board</div>
+    <h1>京张长实验<span class="en">JINGZHANG OPEN LAB</span></h1>
+    <p class="sub">Turn the Centennial Jingzhang AI Innovation Belt into a <b>continuously running city-scale AI experiment line</b> — the 9 km Jingzhang Railway Heritage Park is not a blueprint drawn once, but a long-running urban experiment protocol: every AI scenario deployed here must be bound to verifiable metrics, an exit plan, and public returns.</p>
+    <div class="hero-meta">
+      <span>Author <b>miaotony</b> (GitHub)</span>
+      <span>Submission <b>jingzhang-rail-lab</b></span>
+      <span>CRS <b>EPSG:4548</b> re-computed</span>
+      <span>Boundary status <b>provisional (indicative only)</b></span>
+      <span>License <b>COMMUNITY-DISPLAY-ONLY</b></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- 01 Core metrics -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Core Metrics Overview</h2><span class="no">SHEET 01 / METRICS</span></div>
+  <div class="sheet-body">
+    <p class="lead">The metrics below were independently re-computed on the provisional boundary (PROV-SITE-001) in the EPSG:4548 projection and cross-checked against officially announced values; they must be recalculated once the official red lines are released.</p>
+    <div class="metrics">
+      <div class="mcard">
+        <div class="k">Total site area</div>
+        <div class="v">11.413<small>km²</small></div>
+        <div class="d">Announced 11.4 km² · deviation 0.1%</div>
+        <span class="badge ok">Re-check passed</span>
+      </div>
+      <div class="mcard">
+        <div class="k">Key areas combined</div>
+        <div class="v">3.693<small>km²</small></div>
+        <div class="d">Announced 3.684 km² · deviation 0.2%</div>
+        <span class="badge ok">Re-check passed</span>
+      </div>
+      <div class="mcard">
+        <div class="k">Green &amp; open space ratio</div>
+        <div class="v">41.2<small>%</small></div>
+        <div class="d">Central heritage-park green spine counted as green space</div>
+        <span class="badge ok">Geometric measurement</span>
+      </div>
+      <div class="mcard">
+        <div class="k">Public space ratio</div>
+        <div class="v">14.6<small>%</small></div>
+        <div class="d">public_space / site_area</div>
+        <span class="badge ok">Geometric measurement</span>
+      </div>
+      <div class="mcard unknown">
+        <div class="k">Floor area ratio (FAR)</div>
+        <div class="v">UNKNOWN</div>
+        <div class="d">Official regulatory conditions missing; no assertion at concept stage</div>
+        <span class="badge na">Pending official terms</span>
+      </div>
+      <div class="mcard unknown">
+        <div class="k">Building height limit</div>
+        <div class="v">UNKNOWN</div>
+        <div class="d">Official height controls missing; anchor heights are conceptual placeholders only</div>
+        <span class="badge na">Pending official terms</span>
+      </div>
+    </div>
+    <div class="note-bar">Data source: <b>metrics.json</b> in this submission (derived from geometry/*.geojson). All areas are measured on the provisional boundary, confidence medium — for intake display and discussion only, not formal review drawing data.</div>
+  </div>
+</section>
+
+<!-- 02 One line, sixteen bands -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Spatial Structure · One Line, Sixteen Bands · Three Experiment Segments</h2><span class="no">SHEET 02 / STRUCTURE</span></div>
+  <div class="sheet-body">
+    <p class="lead">The 9 km Jingzhang Railway Heritage Park runs as the through spine, with a continuous central green corridor occupying 24% of its width; sixteen functional bands attach perpendicularly on both sides, forming a fishbone structure of "one line, sixteen bands". From south to north the line is divided into three experiment segments with a graded functional progression.</p>
+
+    <svg viewBox="0 0 1160 330" role="img" aria-label="Diagram of the one-line, three-segment band structure: Dazhongsi in the south, AI Origin Community in the middle, Zhongzhiyuan in the north, with a continuous central green corridor">
+      <rect x="0" y="0" width="1160" height="330" fill="#f6f9fc"/>
+      <!-- sixteen functional bands (eight above and eight below, indicative) -->
+      <g opacity="0.9">
+        <g fill="#e8edf6" stroke="#c6d2e3" stroke-width="1">
+          <rect x="90"  y="42" width="52" height="86"/><rect x="158" y="42" width="52" height="86"/>
+          <rect x="226" y="42" width="52" height="86"/><rect x="294" y="42" width="52" height="86"/>
+          <rect x="428" y="42" width="52" height="86"/><rect x="496" y="42" width="52" height="86"/>
+          <rect x="564" y="42" width="52" height="86"/><rect x="632" y="42" width="52" height="86"/>
+          <rect x="766" y="42" width="52" height="86"/><rect x="834" y="42" width="52" height="86"/>
+          <rect x="902" y="42" width="52" height="86"/><rect x="970" y="42" width="52" height="86"/>
+          <rect x="90"  y="202" width="52" height="86"/><rect x="158" y="202" width="52" height="86"/>
+          <rect x="294" y="202" width="52" height="86"/><rect x="496" y="202" width="52" height="86"/>
+          <rect x="632" y="202" width="52" height="86"/><rect x="834" y="202" width="52" height="86"/>
+          <rect x="970" y="202" width="52" height="86"/><rect x="1038" y="202" width="52" height="86"/>
+        </g>
+      </g>
+      <!-- three segment base colors -->
+      <rect x="70"  y="132" width="330" height="66" fill="#f5e3c3" stroke="#b7791f" stroke-width="2"/>
+      <rect x="400" y="132" width="330" height="66" fill="#dbe7fb" stroke="#2563eb" stroke-width="2"/>
+      <rect x="730" y="132" width="360" height="66" fill="#e9dcfa" stroke="#7c3aed" stroke-width="2"/>
+      <!-- central green corridor (24% width) -->
+      <rect x="70" y="152" width="1020" height="26" fill="#86c79a" opacity="0.9"/>
+      <rect x="70" y="152" width="1020" height="26" fill="none" stroke="#15803d" stroke-width="1.5"/>
+      <!-- railway track line -->
+      <line x1="70" y1="165" x2="1090" y2="165" stroke="#31415e" stroke-width="4"/>
+      <g stroke="#f6f9fc" stroke-width="2"><line x1="90" y1="160" x2="90" y2="170"/><line x1="150" y1="160" x2="150" y2="170"/><line x1="210" y1="160" x2="210" y2="170"/><line x1="270" y1="160" x2="270" y2="170"/><line x1="330" y1="160" x2="330" y2="170"/><line x1="390" y1="160" x2="390" y2="170"/><line x1="450" y1="160" x2="450" y2="170"/><line x1="510" y1="160" x2="510" y2="170"/><line x1="570" y1="160" x2="570" y2="170"/><line x1="630" y1="160" x2="630" y2="170"/><line x1="690" y1="160" x2="690" y2="170"/><line x1="750" y1="160" x2="750" y2="170"/><line x1="810" y1="160" x2="810" y2="170"/><line x1="870" y1="160" x2="870" y2="170"/><line x1="930" y1="160" x2="930" y2="170"/><line x1="990" y1="160" x2="990" y2="170"/><line x1="1050" y1="160" x2="1050" y2="170"/></g>
+      <!-- three plaza nodes -->
+      <circle cx="235" cy="165" r="16" fill="#b7791f" stroke="#fff" stroke-width="3"/>
+      <circle cx="565" cy="165" r="16" fill="#2563eb" stroke="#fff" stroke-width="3"/>
+      <circle cx="910" cy="165" r="16" fill="#7c3aed" stroke="#fff" stroke-width="3"/>
+      <!-- segment labels -->
+      <g font-family="sans-serif">
+        <text x="235" y="125" text-anchor="middle" font-size="16" font-weight="700" fill="#854d0e">South · Dazhongsi Industry Validation</text>
+        <text x="235" y="222" text-anchor="middle" font-size="12.5" fill="#854d0e">72 ha · PLAZA-S Model Bell Tower Plaza</text>
+        <text x="565" y="125" text-anchor="middle" font-size="16" font-weight="700" fill="#1d4ed8">Middle · AI Origin Community Talent &amp; Ecosystem</text>
+        <text x="565" y="222" text-anchor="middle" font-size="12.5" fill="#1d4ed8">104.3 ha · PLAZA-M Memorial Plaza</text>
+        <text x="910" y="125" text-anchor="middle" font-size="16" font-weight="700" fill="#6d28d9">North · Zhongzhiyuan Full-Stack Innovation</text>
+        <text x="910" y="222" text-anchor="middle" font-size="12.5" fill="#6d28d9">192.1 ha · PLAZA-N Open-Source Release Plaza</text>
+        <text x="80" y="262" font-size="12.5" fill="#5b6b83">◀ South (Dazhongsi)</text>
+        <text x="1085" y="262" font-size="12.5" fill="#5b6b83" text-anchor="end">North (Zhongzhiyuan) ▶</text>
+        <text x="580" y="305" text-anchor="middle" font-size="12.5" fill="#41506a">Central green corridor spans 24% of the band width, continuous along the full line; sixteen functional bands attach perpendicularly on both sides (grey, indicative)</text>
+      </g>
+    </svg>
+
+    <div class="legend">
+      <span><i style="background:#f5e3c3;border:1px solid #b7791f"></i>South · Industry Validation Zone</span>
+      <span><i style="background:#dbe7fb;border:1px solid #2563eb"></i>Middle · Talent &amp; Ecosystem Zone</span>
+      <span><i style="background:#e9dcfa;border:1px solid #7c3aed"></i>North · Full-Stack Innovation Zone</span>
+      <span><i style="background:#86c79a;border:1px solid #15803d"></i>Central green corridor (24% width)</span>
+      <span><i style="background:#e8edf6;border:1px solid #c6d2e3"></i>Perpendicular functional bands ×16</span>
+      <span><i style="background:#31415e"></i>Jingzhang railway heritage spine</span>
+    </div>
+
+    <div class="grid-3">
+      <article class="seg south">
+        <h3><i style="background:var(--south)"></i>South · Dazhongsi</h3>
+        <span class="ha">Industry Validation Zone · 72 ha</span>
+        <p>Urban front stage of the intelligent economy: the industry validation segment for leading enterprises and new agent-driven businesses, where AI scenarios face real market tests in live commercial settings — deployed one by one as each matures.</p>
+      </article>
+      <article class="seg mid">
+        <h3><i style="background:var(--mid)"></i>Middle · AI Origin Community</h3>
+        <span class="ha">Talent &amp; Ecosystem Zone · 104.3 ha</span>
+        <p>A campus-adjacent translation community: receiving upstream university innovation and open-source communities, focused on the living ecosystem of talent — housing, learning, socializing, and commercialization all along the same green corridor.</p>
+      </article>
+      <article class="seg north">
+        <h3><i style="background:var(--north)"></i>North · Zhongzhiyuan</h3>
+        <span class="ha">Full-Stack Innovation Zone · 192.1 ha</span>
+        <p>A garden-style full-stack innovation district: the Zhongzhiyuan AI Acceleration Area for self-reliant innovation from chips and models to agent applications, and the main stage for national platforms and industry showcases.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 03 Experiment Protocol -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Core Mechanism · EXPERIMENT PROTOCOL</h2><span class="no">SHEET 03 / PROTOCOL</span></div>
+  <div class="sheet-body">
+    <p class="lead">The "open lab" is not a license for careless trial and error. Any AI scenario deployed on this experiment line must satisfy all three protocol clauses at once — like a signal-light system, nothing proceeds unless every light allows it.</p>
+
+    <svg viewBox="0 0 1160 96" role="img" aria-label="Three-color signal band: green for verifiable metrics, yellow for exit plan, red for public returns">
+      <rect x="0" y="0" width="1160" height="96" fill="#0e1626" rx="10"/>
+      <line x1="40" y1="48" x2="1120" y2="48" stroke="#31415e" stroke-width="3"/>
+      <circle cx="240" cy="48" r="26" fill="#22c55e"/><circle cx="240" cy="48" r="26" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
+      <circle cx="580" cy="48" r="26" fill="#eab308"/><circle cx="580" cy="48" r="26" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
+      <circle cx="920" cy="48" r="26" fill="#ef4444"/><circle cx="920" cy="48" r="26" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
+      <g font-family="sans-serif" fill="#dfe8f4" font-size="14" text-anchor="middle">
+        <text x="240" y="90">Verifiable metrics</text>
+        <text x="580" y="90">Exit plan</text>
+        <text x="920" y="90">Public returns</text>
+      </g>
+    </svg>
+
+    <div class="proto">
+      <article class="pcard g">
+        <h3><i style="background:#22c55e"></i>① Verifiable Metrics</h3>
+        <p>Before deployment, every scenario must declare quantifiable, auditable performance metrics (users served, energy use, false-alarm rate, slow-mobility improvement, etc.), re-measured periodically by a third party and published.</p>
+      </article>
+      <article class="pcard y">
+        <h3><i style="background:#eab308"></i>② Exit Plan</h3>
+        <p>If metrics fall short or negative externalities emerge, the scenario must exit in an orderly fashion per its plan — the space restored or handed to the next experiment; no "zombie installations" squatting on public space.</p>
+      </article>
+      <article class="pcard r">
+        <h3><i style="background:#ef4444"></i>③ Public Returns</h3>
+        <p>Experiments occupy urban space and data resources, so they must return clear public benefits to citizens — as open-source outputs, public services, job training, or opened-up space.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Three AI pilgrimage landmarks -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Three AI Pilgrimage Landmarks</h2><span class="no">SHEET 04 / LANDMARKS</span></div>
+  <div class="sheet-body">
+    <p class="lead">Three plazas anchor the spiritual origin of each experiment segment, strung into a 9 km "AI pilgrimage line" — from the bell of industry to the monument of origins to the arena of open source.</p>
+    <div class="land">
+      <article class="lcard">
+        <span class="code">PLAZA-N · NORTH</span>
+        <h3>Zhongzhiyuan Open-Source Release Plaza</h3>
+        <p>The debut stage for open-source models and agents worldwide: main venue of the release season, benchmark arenas, and a developer fair — making a "release" a public urban event.</p>
+      </article>
+      <article class="lcard">
+        <span class="code">PLAZA-M · MIDDLE</span>
+        <h3>AI Origin Memorial Plaza</h3>
+        <p>A memorial ground marking the origin point of China's upstream AI innovation: the spiritual coordinate of universities, research institutes, and open-source communities, hosting commemorations, assemblies, and youth oath ceremonies.</p>
+      </article>
+      <article class="lcard">
+        <span class="code">PLAZA-S · SOUTH</span>
+        <h3>Dazhongsi Model Bell Tower Plaza</h3>
+        <p>Building on Dazhongsi's bell culture, a "Model Bell Tower": the bell rings once for every major open-source release — each toll the city's public acknowledgment of a technological milestone.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 Implementation and operations -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Three-Phase Implementation · Cultural Narrative · Long-Term Operations</h2><span class="no">SHEET 05 / ROADMAP</span></div>
+  <div class="sheet-body">
+    <h3 style="font-size:16px;margin-bottom:4px">Three-Phase Implementation Roadmap</h3>
+    <div class="timeline">
+      <article class="phase p1">
+        <span class="yr">YEARS 1–3</span>
+        <h3>Launch South · Dazhongsi</h3>
+        <p>Light up the industry validation segment quickly on existing commercial stock and rail hubs, complete the Model Bell Tower Plaza, and run the first batch of experiment protocols end to end.</p>
+      </article>
+      <article class="phase p2">
+        <span class="yr">YEARS 3–5</span>
+        <h3>Cultivate Middle · AI Origin Community</h3>
+        <p>Grow the talent ecosystem and open-source community around the universities, complete the Origin Memorial Plaza, and connect the middle stretch of the green corridor.</p>
+      </article>
+      <article class="phase p3">
+        <span class="yr">YEARS 5–8</span>
+        <h3>Unfold North · Zhongzhiyuan</h3>
+        <p>Roll out the full-stack innovation zone, open the Open-Source Release Plaza, and bring the entire 9 km experiment line into operation and versioned iteration.</p>
+      </article>
+    </div>
+
+    <h3 style="font-size:16px;margin:26px 0 4px">Cultural Narrative · "Three Acts of Self-Reliance"</h3>
+    <div class="narr">
+      <article class="ncard">
+        <div class="era">1909</div>
+        <h3>First Act · Jingzhang Railway</h3>
+        <p>Zhan Tianyou led China's first independently designed railway; its zigzag (herringbone) track became a symbol of engineering self-reliance.</p>
+      </article>
+      <article class="ncard">
+        <div class="era">1980s</div>
+        <h3>Second Act · Electronics Street</h3>
+        <p>Zhongguancun's Electronics Street opened the self-driven path of technology commercialization, seeding China's information industry ecosystem.</p>
+      </article>
+      <article class="ncard">
+        <div class="era">NOW</div>
+        <h3>Third Act · Full-Stack AI</h3>
+        <p>Along the same Jingzhang line, achieving full-stack AI self-reliance from chips and models to agents — three leaps in a century, one unbroken lineage.</p>
+      </article>
+    </div>
+
+    <h3 style="font-size:16px;margin:26px 0 4px">Annual Events &amp; the City Versioning Mechanism</h3>
+    <div class="ops">
+      <article class="ocard"><h4><i></i>Open-Source Model Release Season</h4><p>Hosted at PLAZA-N: concentrated debuts and benchmarks, with the accompanying bell ceremony.</p></article>
+      <article class="ocard"><h4><i></i>Youth Agent Marathon</h4><p>A continuous agent-development competition for students and young developers.</p></article>
+      <article class="ocard"><h4><i></i>Jingzhang AI Biennale</h4><p>A city-scale AI art and technology biennale staged along the experiment line.</p></article>
+      <article class="ocard"><h4><i></i>Urban AI Safety Drill</h4><p>Regular end-to-end drills for agent failure, exit, and recovery procedures.</p></article>
+      <article class="ocard"><h4><i></i>City Version Releases v1.0 / v2.0</h4><p>The experiment line iterates in versions like software, with results and lessons archived publicly.</p></article>
+      <article class="ocard"><h4><i></i>Museum of Failed Experiments</h4><p>Retired experiments are not erased — they become public exhibits and research samples.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 06 Figures -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Plan Figures</h2><span class="no">SHEET 06 / FIGURES</span></div>
+  <div class="sheet-body">
+    <p class="lead">The figures below are derived from geometry/*.geojson and metrics.json in this submission (local files, fully offline).</p>
+    <div class="figs">
+      <figure>
+        <img src="../assets/figures/site-overview.en.png" alt="Site overview: the 11.4 km² overall design scope and the 9 km Jingzhang Railway Heritage Park spine" loading="lazy">
+        <figcaption><b>Fig. 1 · Site Overview</b>Overall design scope of 11.413 km² and the alignment of the Jingzhang Railway Heritage Park spine (provisional boundary).</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/figures/land-use-structure.en.png" alt="Land use and spatial structure: the one-line-sixteen-bands structure and three functional segments" loading="lazy">
+        <figcaption><b>Fig. 2 · Land Use &amp; Spatial Structure</b>The one-line-sixteen-bands structure, central green corridor, and the south–middle–north functional gradient.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/figures/key-areas.en.png" alt="Key areas: Dazhongsi 72 ha, AI Origin Community 104.3 ha, Zhongzhiyuan 192.1 ha" loading="lazy">
+        <figcaption><b>Fig. 3 · Three Key Areas</b>Dazhongsi 72 ha / AI Origin Community 104.3 ha / Zhongzhiyuan 192.1 ha — 3.693 km² combined.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility and blue-green systems: central green corridor, slow-mobility network, and station connections" loading="lazy">
+        <figcaption><b>Fig. 4 · Mobility &amp; Blue-Green Systems</b>Continuous 24% central green corridor, mending of slow-mobility gaps, and rail station connections.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/figures/metrics-evidence.en.png" alt="Metrics evidence: EPSG:4548 re-computed areas versus announced values" loading="lazy">
+        <figcaption><b>Fig. 5 · Metrics Evidence</b>EPSG:4548 re-computation versus officially announced values (deviation ≤0.2%).</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 07 Task coverage -->
+<section class="sheet">
+  <div class="sheet-head"><h2>Coverage of the Six Open-Call Tasks</h2><span class="no">SHEET 07 / TASKS</span></div>
+  <div class="sheet-body">
+    <p class="lead">How the proposal responds to tasks agent.1–agent.6 of the open-call announcement, with an index to the corresponding content on this page.</p>
+    <table class="tasks">
+      <thead><tr><th style="width:92px">Task ID</th><th style="width:180px">Task Requirement</th><th>Response in This Proposal</th><th style="width:88px">Status</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="id">agent.1</td><td>Naming &amp; Logo</td>
+          <td>"JINGZHANG OPEN LAB (京张长实验)"; the logo reinterprets Zhan Tianyou's zigzag track as a git-branch fork, overlaid with green-yellow-red signal lights echoing the three clauses of the Experiment Protocol.</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+        <tr>
+          <td class="id">agent.2</td><td>Industry Niches</td>
+          <td>A system of seven industry niches laid out in a gradient along the three experiment segments: full-stack R&amp;D in the north, talent translation in the middle, industry validation in the south — covering the whole chip–model–agent–scenario chain.</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+        <tr>
+          <td class="id">agent.3</td><td>AI Application Scenarios</td>
+          <td>Ten scenario cards, each bound to the Experiment Protocol (verifiable metrics + exit plan + public returns), sited by segment and included in annual re-measurement.</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+        <tr>
+          <td class="id">agent.4</td><td>Landmark Nodes</td>
+          <td>Three AI pilgrimage landmarks: Zhongzhiyuan Open-Source Release Plaza PLAZA-N, AI Origin Memorial Plaza PLAZA-M, and Dazhongsi Model Bell Tower Plaza PLAZA-S (the bell rings for major open-source releases).</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+        <tr>
+          <td class="id">agent.5</td><td>Cultural Narrative</td>
+          <td>A three-layer narrative around the "Three Acts of Self-Reliance": the 1909 Jingzhang Railway → Zhongguancun Electronics Street → full-stack AI self-reliance, with the railway heritage itself as the narrative vessel.</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+        <tr>
+          <td class="id">agent.6</td><td>Long-Term Operations</td>
+          <td>Experiment Protocol governance + three-phase implementation (launch south → cultivate middle → unfold north) + annual event matrix + city version releases v1.0/v2.0 and the Museum of Failed Experiments.</td>
+          <td><span class="chip">Covered</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+
+<section id="required-coverage" style="max-width:1200px;margin:24px auto;padding:0 20px;">
+  <h2 style="color:#1E2A44;border-left:6px solid #F5C242;padding-left:12px;">Overview Map · Three-Level Scope · Land Use · Blue-Green Public Space</h2>
+  <p>Overview map above ("Overview"); three-level scope (research 43.6 km² / overall design 11.4 km² / key areas 368.4 ha); land-use zoning in "Land Use" figure (32 parcels, full coverage); blue-green public space in "Mobility &amp; Blue-Green" figure (green/open <span data-metric="green_ratio" data-value="0.411653">41.2%</span>, public space <span data-metric="public_space_ratio" data-value="0.145697">14.6%</span>). Site area <span data-metric="site_area_sqm" data-value="11412825.385554">11.413 km²</span> (EPSG:4548, provisional boundary).</p>
+  <h2 style="color:#1E2A44;border-left:6px solid #F5C242;padding-left:12px;">Renewal Projects · AI Scenarios</h2>
+  <p>Three phases: Phase 1 (yr 1-3) Dazhongsi market retrofit + pilot base + waterfront scenario wing; Phase 2 (yr 3-5) Origin Community labs + talent station + stitching park; Phase 3 (yr 5-8) Zhongzhiyuan accelerator matrix + International AI Event Center. Ten scenario cards, each bound to the Experiment Protocol (verifiable metrics + exit plan + public return).</p>
+  <h2 style="color:#1E2A44;border-left:6px solid #F5C242;padding-left:12px;">Self-Check Status · Assumptions</h2>
+  <p>Self-check: deterministic validation and spatial review pass locally (see self_check.json); matrices cover compliance 23 / standards 6 / depth 15. Key assumptions: A-BOUNDARY-001 provisional boundary (full recalculation upon official redline), A-ROADS-001 approximate road alignments, A-ANCHOR-001 conceptual anchor massing (see assumptions.json).</p>
+</section>
+<footer>
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div>
+        <h4>Boundary &amp; Data Disclaimer</h4>
+        <p>All spatial extents on this page are drawn from the <b>provisional boundary PROV-SITE-001</b>, are indicative only, and <b>do not represent official red lines</b>. Area metrics are independently re-computed in the EPSG:4548 projection (confidence medium) and must all be recalculated once official red lines and regulatory conditions are released. FAR and building height limits are marked unknown due to missing official conditions; no assertion is made at concept stage.</p>
+      </div>
+      <div>
+        <h4>Nature of This Work</h4>
+        <p>This proposal is a <b>conceptual suggestion</b> — a creative response to the urban design open call, not a statutory planning product or engineering design document. Cited official figures are for textual comparison only. This page loads no external resources (no CDN / external scripts / external fonts / remote images / iframes / API requests).</p>
+      </div>
+      <div>
+        <h4>Author &amp; License</h4>
+        <p>Author: <b>miaotony</b> (GitHub) · Submission jingzhang-rail-lab</p>
+        <p>License: <span class="lic">COMMUNITY-DISPLAY-ONLY</span> — for community display and review discussion only; commercial use or use as a formal planning basis is not permitted.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>JINGZHANG OPEN LAB · Offline Digital Exhibition Board · Pure Static HTML</span>
+      <span>Data source: metrics.json / geometry/*.geojson (within this submission)</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
