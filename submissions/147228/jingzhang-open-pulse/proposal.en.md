@@ -373,7 +373,7 @@ The v1.6 time-series section is retained in the Chinese source document and its 
 
 ## v1.7 Evidence-to-Delivery Layer: From Concept to Reviewable Deliverables
 
-This section closes recurring evidence gaps identified in detailed review and validation:
+This section presents the package's evidence-to-delivery layer:
 
 - `visual/assets/taskbook-crosswalk.json` gives every agent.1–agent.6 requirement one unique section, artifact and acceptance test.
 - `visual/assets/regional-ecosystem.json` and its figure turn regional cooperation into an eight-mechanism loop with explicit conceptual status.
