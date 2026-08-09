@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "jingzhang_ai_civic_commons_public_space",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "京张智惠公共服务主轴",
+        "name_en": "Jing-Zhang AI Civic Commons Spine",
+        "design_intent": "连接创新服务驿站、公共生活驿站与全龄友好慢行节点；几何为概念设计，不替代官方公共空间边界。",
+        "area_sqm_declared": 836345.643
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34734399999999,
+              39.967
+            ],
+            [
+              116.34734399999999,
+              40.00025
+            ],
+            [
+              116.349996,
+              40.00025
+            ],
+            [
+              116.349996,
+              39.967
+            ],
+            [
+              116.34734399999999,
+              39.967
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
