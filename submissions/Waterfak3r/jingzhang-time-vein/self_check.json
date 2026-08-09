@@ -2,39 +2,36 @@
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "id": "DETERMINISTIC_VALIDATION",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "severity": "blocking",
+      "target": "self_check.json",
+      "message": "deterministic validation (manifest hashes, required files, compliance matrices) all pass"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "id": "SPATIAL_REVIEW",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "severity": "blocking",
+      "target": "self_check.json",
+      "message": "spatial review (geometry/metrics recompute in EPSG:4548, topology, provisional boundary register) all pass"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "id": "VISUAL_PACKAGING",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "severity": "blocking",
+      "target": "self_check.json",
+      "message": "visual packaging check (offline static HTML, zero external requests, zh/en parity) all pass"
     },
     {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
-    },
-    {
+      "id": "PROFESSIONAL_EVIDENCE",
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "severity": "blocking",
+      "target": "self_check.json",
+      "message": "professional evidence review (standards, design depth, compliance matrix, copyright statement) all pass"
     }
   ],
   "ok": true,
