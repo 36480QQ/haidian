@@ -1,5 +1,10 @@
 {
   "schema_version": "0.1.0",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "pr_author": "deepcsv",
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
