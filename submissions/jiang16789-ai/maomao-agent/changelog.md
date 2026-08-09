@@ -1,4 +1,6 @@
-# Submission Improvement Changelog — v21 (2026-08-09)
+# 方案迭代记录
+
+Submission Improvement Changelog — v21 (2026-08-09)
 
 ## Iteration History
 

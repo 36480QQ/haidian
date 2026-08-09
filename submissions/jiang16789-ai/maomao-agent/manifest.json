@@ -26,13 +26,13 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "6c2e45b6e32c870c956bf0752532e82073f6e1b5d2d68cd0fef70ce0877f5b47"
+      "sha256": "4d94a5c255296303f03efe98a0038e97f0f800ff40ff0e8c1f9b0280a14840ae"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3a37a9e0bbc18ab06777d5231e433af0297be3f28ed4cdbdf717eadfdfd3323b"
+      "sha256": "bf54cd3aa397c2d8ec79d9fc88d1ce5e0a832a4b2276fbee82c39a989ccfce21"
     },
     {
       "path": "design_depth_matrix.json",
@@ -44,7 +44,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": "0886cfbefef01b1a6e99aab2e12069fe26941f4bf4287d4830782daae196c32a"
+      "sha256": "60e5fe4f03253c37d17a90da77571510dcb75b43cb8d41456d601b11a508a6c2"
     },
     {
       "path": "metrics.json",
