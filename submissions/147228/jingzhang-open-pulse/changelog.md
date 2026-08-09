@@ -12,6 +12,7 @@
 - 刷新 `manifest.generated_at` 至本轮 v3.3 实质更新后的 UTC 时间，使公开展厅日期与当前包版本、changelog 和双语图纸元数据一致。
 - 将 manifest、agent card、版权声明与公开展厅使用的署名统一为“许丙南 / Codex”，避免机器可读审查包与展示署名分叉。
 - 修正英文总体概念图翻译面板中遗留的 `Drawing set v3.2` 字样，并同步英文 A0/A3 嵌入图与哈希，保持整套 v3.3 版本口径一致。
+- 收束参考资料区为“主公开简报 + 包内完整登记表”，保留正文的逐条 source/standard/depth/data/metric 回链，消除旧版引用自检对已登记附件路径的误报；同步离线中文 HTML 与 manifest 哈希。
 
 ## v3.2 - 2026-08-09
 
