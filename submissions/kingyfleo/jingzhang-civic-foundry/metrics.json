@@ -603,6 +603,111 @@
       "assumptions": [
         "只表示建议的2×3公共生活观察时段，不虚构任何客流、停留或满意度实测结果；冷热雨雪与活动日另行复测。"
       ]
+    },
+    "spatial_decision_layer_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-decision-framework.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(L1_DAILY_LIFE..L5_INCREMENTAL_PATTERN)",
+      "confidence": "high",
+      "assumptions": [
+        "只表示方案规定的决策层数量；现场证据不足时相应区块必须缩小、移动或取消。"
+      ]
+    },
+    "positioning_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "brief/site-package/agent_taskbook.json"
+      ],
+      "formula": "count(centennial_culture_belt,metropolitan_ai_life_belt,ai_integrated_innovation_belt)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书定位的方案响应计数，不表示政府已确认本提案的空间解释。"
+      ]
+    },
+    "core_function_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "brief/site-package/agent_taskbook.json"
+      ],
+      "formula": "count(taskbook_five_functions)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书功能的方案响应计数，不代表功能已经获批、建设或运营。"
+      ]
+    },
+    "spatial_zone_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(zhongzhiyuan,ai_origin,dazhongsi)",
+      "confidence": "high",
+      "assumptions": [
+        "重点区名称与职能响应任务书；几何仍为provisional，非官方红线。"
+      ]
+    },
+    "spatial_wing_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "brief/site-package/agent_taskbook.json"
+      ],
+      "formula": "count(zhongguancun_technology_service_wing,xiaoyue_river_scenario_wing)",
+      "confidence": "high",
+      "assumptions": [
+        "两翼为任务书空间协同框架，不生成新的法定边界。"
+      ]
+    },
+    "brand_system_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-system.json",
+        "assets/figures/logo.svg",
+        "assets/figures/logo.en.svg"
+      ],
+      "formula": "count(original_civic_foundry_identity_system)",
+      "confidence": "high",
+      "assumptions": [
+        "原创概念VI不构成官方采纳、商标注册或既有机构背书。"
+      ]
+    },
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional-interface-ledger.json",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(beiwei_community,future_science_city,huairou_science_city,beijing_etown,beijing_tianjin_hebei)",
+      "confidence": "medium",
+      "assumptions": [
+        "全部接口为待确认的概念协同机制，不表示已有合作、投资、采购、政策或数据共享安排。"
+      ]
     }
   }
 }

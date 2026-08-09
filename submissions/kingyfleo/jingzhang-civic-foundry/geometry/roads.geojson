@@ -1,6 +1,14 @@
 {
   "type": "FeatureCollection",
   "name": "civic_foundry_mobility_network",
+  "design_revision": "v6.0",
+  "design_logic": {
+    "structure": "three_zones_two_wings_one_line_three_grounds_nine_rooms",
+    "one_line_rule": "The existing public green corridor remains continuous, free, step-free in intent, and unobstructed by events or AI trials.",
+    "nine_rooms_rule": "Each transverse room connects the Zhongguancun technology-service side, the civic production floor, and the Xiaoyue River scenario side; exact crossings require field, ownership, heritage, tree, level, and accessibility verification.",
+    "decision_framework_ref": "visual/assets/spatial-decision-framework.json",
+    "boundary_status": "provisional_concept_network_not_an_official_road_or_engineering_alignment"
+  },
   "features": [
     {
       "type": "Feature",
@@ -14,7 +22,9 @@
         "road_class": "greenway",
         "name_zh": "京张公共生产地坪连续步行主线",
         "hierarchy": "daily_civic_floor",
-        "universal_access": "continuous_step_free_route_to_be_field_verified"
+        "universal_access": "continuous_step_free_route_to_be_field_verified",
+        "v6_spatial_role": "one_line_permanent_public_baseline",
+        "ai_occupation_rule": "no_trial_event_or_commercial_use_may_interrupt_daily_passage"
       },
       "geometry": {
         "type": "LineString",

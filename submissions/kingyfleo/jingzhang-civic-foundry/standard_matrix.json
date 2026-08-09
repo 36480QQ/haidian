@@ -56,9 +56,11 @@
       "mandatory": true,
       "review_status": "addressed",
       "proposal_sections": [
-        "设计依据与资料清单",
-        "总体设计范围城市更新与控规深度城市设计",
-        "指标体系、面积复算与合规矩阵"
+        "任务书直面回应：三大定位、五大功能、三区两翼不是三张清单",
+        "品牌与导视：用“道岔”表达选择，而不是把人送进唯一未来",
+        "五向区域协同：京张做“转化接口”，不与其他创新区争同一块牌子",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "人才、治理与年度运营"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
@@ -75,11 +77,15 @@
         "geometry/phasing.geojson"
       ],
       "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
+        "positioning_count",
+        "core_function_count",
+        "spatial_zone_count",
+        "spatial_wing_count",
+        "brand_system_count",
+        "regional_interface_count",
         "scenario_count",
-        "renewal_project_count"
+        "persona_count",
+        "pilgrimage_landmark_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -95,7 +101,12 @@
         "PROFESSIONAL_EVIDENCE",
         "METRICS_RECALCULATED"
       ],
-      "evidence_summary_zh": "以万象工场、十二份城市委托、八类画像、四个贡献地标和年度运营回应智能体任务。"
+      "evidence_summary_zh": "任务书的三大定位、五大功能、三区两翼、六项agent任务、Logo/VI、五向区域协同、12场景、8画像、4地标和年度运营均在正文、图示与独立机器文件中直接可读。",
+      "machine_readable_refs": [
+        "visual/assets/brand-system.json",
+        "visual/assets/spatial-decision-framework.json",
+        "visual/assets/regional-interface-ledger.json"
+      ]
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
