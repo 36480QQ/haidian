@@ -12,39 +12,11 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-## v1.0：把“待确认责任”变成可审计的启动程序
-
-本轮新增 `governance-startup-protocol.json`：它把授权前的研究/试点启动拆成五个可拒绝、可回退的阶段——范围冻结与启动登记、资格与利益冲突复核、公众告知与异议、人类责任与授权记录、版本交接/复核/退出。协议覆盖准备度台账的 6/6 场景、发布门的 3/3 记录和 8/8 必填字段，并明确 `authorized=false`、`operator_confirmed=false`；当前没有命名运营者、机构、许可或现场结果。[data:visual/assets/governance-startup-protocol.json] [data:visual/assets/pilot-readiness-register.json] [depth:phasing_implementation]
-
-`check-governance-startup-protocol.js` 在无网络条件下重解 5/5 阶段、6/6 场景、3/3 发布门、8/8 字段、4 条角色选择规则和 5 条禁止启动条件，并用“缺少选择输入”“擅自授权”两个负样本预期失败。它只证明包内启动条件与边界可复核，不证明任何主体已经授权、人员已经到位、现场已经运行或绩效已经发生。[data:visual/assets/check-governance-startup-protocol.js] [metric:version_release_count]
-
-同时新增 `ai-design-exploration-log.json`，把五个关键取舍登记为“AI 辅助整理/回放 → 人类判断 → 保留或拒绝”的结构化记录：发布门、普通人服务链、空间参数取舍、交接凭证和启动程序分别回接现有证据。它是事后结构化索引，不是逐字模型对话、外部联网记录或现场实验；每个取舍仍要求人类决定，缺少证据时保持概念或 `unknown`。[data:visual/assets/ai-design-exploration-log.json] [data:visual/assets/check-ai-design-exploration-log.js] [depth:risk_missing_data]
-
-这两份资产把“谁可开始、谁可停止、哪一个取舍被谁保留”放到同一条可审计链上，但不把治理空缺包装成完成度。所有空间内容仍为概念建议、参考方案，供专业团队在官方边界、权属、控规、现状、交通、市政、能源、水文与公众基线齐备后深化研究；正式指标和 provisional 几何均保持原值。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
-
-## v0.9：把概念动作交接成可回放凭证
-
-本轮新增 `HUMAN-CITY-RECEIPT-0.1` 合成人本交接凭证：它把问题与边界、资料与选择、人类责任、受限合成演练、独立回放和版本退出六道 H0-H5 门写成同一条可复核链；三条合成案例分别覆盖人工通道与老人、技能再造与被替代风险劳动者、科技服务翼与小团队。[data:visual/assets/human-city-receipt.json] [data:visual/assets/human-city-receipt-evidence.json]
-
-`run-human-city-receipt.js` 在无网络、无个人数据、无外部系统条件下检查 3/3 案例、每个案例声明的 8/8 回放字段、6/6 交接门、6/6 空间引用、等效人工路径与不可写回字段；摘要哈希和 release note 在授权前明确保持未生成或未关联。缺少人工替代、案例回放字段或空间锚点的负样本必须失败。凭证只证明合成结构和停止条件可回放，不证明现实运营、人员值守、许可、安全、绩效或公众结果。[data:visual/assets/human-city-receipt.json] [data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
-
-## v0.8：把科技服务翼和空间取舍变成可复核证据
-
-本轮把任务书点名的**中关村科技服务翼**落到 `SC-D04`“要素配置台”：它连接 IP、合规、数据授权与跨区域应用转化，服务一人公司、小团队、科研团队和京津冀应用伙伴。场景卡与空间—运营矩阵都保留人工咨询、纸面材料、授权链、利益冲突披露和冻结条件；包内不指定机构、资本方或已签协议。[source:AGENT-TASKBOOK] [data:geometry/constraints.geojson#ZONE-C-DATA] [data:geometry/public_space.geojson#PUBLIC-D-GLOBAL]
-
-该场景在总体空间结构中的位置见 [depth:overall_spatial_structure]。
-
-参数化推演把当前六层概念功能带作为基线，再比较“人本优先、平衡、机器协同”三组面积参数。`visual/assets/run-parametric-tradeoff-study.js` 检查六个 share 的和、面积公式、基线回接，以及人本底线、机器可调用性、可逆韧性、公共可达四个目标镜头的比较下限和非支配关系；三组面积仅为概念候选，正式 `metrics.json`、几何、图纸和发布状态均不变。图 11 让评审者直接看到社区保留、技能学习、可逆留白、城市 API 与韧性空间之间的取舍，后续专业团队可用官方边界、控规、权属、交通、市政、能源和公众基线替换输入后再研究。[data:geometry/land_use.geojson#LU-H01] [metric:design_partition_area_sqm] [depth:land_use_layout]
-
-参数化研究的深度复核见 [depth:metrics_recalculation]。
-
-图 11 的完整图件在后文“参数化推演”小节呈现；此处只回接同一份参数化台账与四个目标镜头，不重复嵌图，避免把同一候选集误读为两张独立成果图。[data:visual/assets/parametric-tradeoff-study.json] [depth:metrics_recalculation]
-
-三组参数均为概念建议和参考方案，供专业团队深化研究。它们只比较空间关系，不生成容积率、建筑高度、工程可行性、投资、就业结果或政策结论。[data:geometry/site_boundary.geojson#SITE-001] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio]
-
 # 京张人本城市操作系统
 
 > 从 AI 展台，到 AI 时代人的城。AI 不应成为城市的主角，而应成为居民、劳动者、创业者和公共机构可审计、可拒绝、可回滚的基础能力。
+
+当前版本把三类新增工作放到同一套空间与服务证据中阅读：授权前启动程序、合成人本交接凭证，以及中关村科技服务翼与参数化空间取舍。它们分别回答谁能开始、谁能接管、哪些空间关系值得先比较。完整字段和离线复核仍保存在包内资产中；空间、指标、运营者、许可和公众结果保持原有的概念或 `unknown` 状态。[data:visual/assets/governance-startup-protocol.json] [data:visual/assets/human-city-receipt.json] [data:geometry/site_boundary.geojson#SITE-001]
 
 ## v0.7：让两套评审问题指向同一组证据
 
@@ -227,6 +199,16 @@ A 组“人的尊严”包括社区保留、就业转型、数字包容和身心
 | 众智园 | 给机器用的城市能否安全进入公共环境 | 硅基通行权测试、具身智能公共测试仓、算电余热审计、标准外溢工作室 | 责任主体、保险、人工接管、能耗计量、事故公开复盘 |
 | AI 原点社区 | 创新密度能否同时保护人的转型与日常生活 | 技能再造接力站、城市 API 交换站、代际共学、城市版本发布室 | 就业转化、人工服务保留、隐私最小化、居民表决 |
 | 大钟寺 | 数据与国际服务能否形成可信城市接口 | 公共数据授权样板间、国际服务客厅、OPC 共享服务 | 数据授权、退出机制、无障碍、语言与合规服务审计 |
+
+三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:far] [metric:building_height]
+
+| 重点区 | 概念空间取舍 | 概念体量范围 | 先补的专业证据 |
+| --- | --- | --- | --- |
+| 众智园 | 把具身测试、算电余热审计和标准外溢工作室放在人工优先的公共界面后方，保留可撤回测试边界和事故复盘庭 | 概念 FAR 1.2–1.8；公共界面 2–4 层；上部高度 unknown | 现状建筑、能源负荷、消防、保险、行人走测和责任主体 |
+| AI 原点社区 | 把技能再造接力站、代际共学和城市 API 交换站连成日常步行路径，普通居民入口与 AI 入口并列 | 概念 FAR 1.0–1.5；公共界面 2–3 层；上部高度 unknown | 居民与服务基线、无障碍走测、就业转化口径、权属与租约 |
+| 大钟寺 | 把公共数据授权、国际服务和 OPC 共享服务压到低尺度城市客厅，夜间服务与文化解释共用人工前台 | 概念 FAR 0.8–1.3；公共界面 1–3 层；上部高度 unknown | 文化遗产、交通与夜间服务、语言可达性、数据授权与退出条件 |
+
+这些范围只回答先比较的空间关系，不能回答哪里可以建设、谁拥有空间或最终建多少。临时 `PROV-KEY-001` 至 `PROV-KEY-003` 仍不是红线；专业团队取得正式边界和清权资料后，才可重算图纸、指标和发布门。
 
 众智园的具身测试不预设自动驾驶或机器人“天然有路权”。测试路径采用与行人速度、时段、任务和风险等级绑定的临时许可；低空物流只是一条高度分层概念廊，必须在空域、噪声、坠落风险、隐私、消防与保险审查后才可能进入试点。[data:geometry/roads.geojson#ROAD-B-SILICON] [metric:silicon_right_of_way_length_m]
 
