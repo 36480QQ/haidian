@@ -75,15 +75,28 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 60120.514,
+      "value": 60120.513,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(concept_building_footprints)",
+      "formula": "area(unary_union(projected_concept_building_footprints))",
       "confidence": "low",
       "assumptions": [
-        "概念原型体量，不代表现状建筑或获批规模。"
+        "EPSG:4548 投影后合并计算，避免重叠重复计数；概念原型体量不代表现状建筑或获批规模。"
+      ]
+    },
+    "building_footprint_overlap_sqm": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(individual_projected_areas) - area(unary_union(projected_footprints))",
+      "confidence": "low",
+      "assumptions": [
+        "应为0；非零即触发几何修复。"
       ]
     },
     "green_ratio": {

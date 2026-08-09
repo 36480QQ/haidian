@@ -3,7 +3,7 @@ title: "京张百工线：让支撑 AI 城市的人被看见"
 author_github: "RobinHuang-SH"
 language: "zh"
 proposal_format_version: "2"
-iteration: "v0.2.1"
+iteration: "v0.3.0"
 license: "CC-BY-4.0"
 summary: "以京张遗址绿脊为24小时百工线，用官方产业统计、劳动条件数据和开放地图功能代理，把研究、运维、物流、服务与照护组织为可见、可交接、可验证的AI城市基础设施。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -18,7 +18,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案从一个朴素问题出发：一座 AI 城市每天由谁真正托住？答案不仅是研究员和工程师，也包括实验技术员、设备运维者、物业与环卫人员、骑手和零售餐饮服务者、照护者与家庭，以及需要无障碍服务的老年人、残障者和新来者。设计把这些常被隐藏的劳动、交接与修复活动变成公共空间和治理基础设施，以京张遗址绿脊串起一条全天候“百工线”。项目范围、六项任务和开放征集原则以公告和智能体任务书为直接依据。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
-v0.2.1 数据加固版把产业、教育、物流、平台劳动和开放地图证据接入同一质量闸门：数据越接近个体和地块，越不能仅凭公开聚合数作决定；任何 D 级代理都只能触发核查，而不能直接触发建设或管理动作。[source:SOURCE-REGISTRY] [assumption:A-DATA-GRAIN-001]
+v0.3.0 评审修订版把产业、教育、物流、平台劳动和开放地图证据接入同一质量闸门：数据越接近个体和地块，越不能仅凭公开聚合数作决定；任何 D 级代理都只能触发核查，而不能直接触发建设或管理动作。[source:SOURCE-REGISTRY] [assumption:A-DATA-GRAIN-001]
 
 空间资料以项目站点包和来源登记为真源，面积、边界和专业限制不从网页截图或示意图反推。总体范围与三处重点区采用维护者发布的临时粗略 polygon，属性明确标记 `official_boundary=false` 与 `boundary_precision=provisional_rough`；获得正式 CAD/GIS 后，九个图层、面积指标和图纸必须成套替换重算。[source:SITE-PACKAGE] [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BOUNDARY-001]
 
@@ -28,7 +28,7 @@ v0.2.1 数据加固版把产业、教育、物流、平台劳动和开放地图�
 
 ## 三层范围工作框架
 
-统筹研究范围约 43.6 平方公里，用于识别产业链、通勤链、照护链、物流链和能源数据链；总体设计范围约 11.4 平方公里，用于落位百工线、两翼功能和公共服务网络；大钟寺、AI 原点社区、中关村智造大街三处重点区域合计约 368.4 公顷，用于建立可落地的交班空间原型。公告面积与临时 polygon 复算面积分别登记，不相互替代。[metric:announced_research_area_sqkm] [metric:announced_overall_area_sqkm] [metric:announced_key_areas_total_ha]
+统筹研究范围约 43.6 平方公里，用于识别产业链、通勤链、照护链、物流链和能源数据链；总体设计范围约 11.4 平方公里，用于落位百工线、两翼功能和公共服务网络；大钟寺 AI 产业集聚区、AI 原点社区、众智园 AI 自主创新加速区三处重点区域合计约 368.4 公顷，用于建立可落地的交班空间原型。公告面积与临时 polygon 复算面积分别登记，不相互替代。[metric:announced_research_area_sqkm] [metric:announced_overall_area_sqkm] [metric:announced_key_areas_total_ha]
 
 三层范围共用“一线、三班、两翼”的结构。一线是从大钟寺向北串联的慢行—服务—展示—修复基础设施；三班是早班、日班和夜班，每个班次都要有抵达、休息、餐食、照护、维修和申诉接口；两翼分别容纳研发测试与生活照护，通过八条交接支线形成短链。研究层回答资源怎样循环，总体层回答空间怎样连接，重点区回答单一场景如何搭建、测试、纠错和退出。[depth:three_level_scope_framework]
 
@@ -54,11 +54,11 @@ v0.2.1 数据加固版把产业、教育、物流、平台劳动和开放地图�
 
 ## 重点区域详细设计
 
-三处重点区不是三座复制粘贴的科技园，而是三种城市后台接口。大钟寺定位“抵达与交班门户”，服务轨道换乘、夜班人员、骑手和访客；AI 原点社区定位“共学与照护社区”，让家庭时间、无障碍学习、社区课程和企业导师形成网络；中关村智造大街定位“维护与可信测试校园”，把人机协作维护、算法排班审计、设备故障账本和修复工坊组成开放测试链。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]
+三处重点区不是三座复制粘贴的科技园，而是三种城市后台接口。大钟寺 AI 产业集聚区定位“抵达与交班门户”，服务轨道换乘、夜班人员、骑手和访客；AI 原点社区定位“共学与照护社区”，让家庭时间、无障碍学习、社区课程和企业导师形成网络；众智园 AI 自主创新加速区定位“维护与可信测试校园”，把人机协作维护、算法排班审计、设备故障账本和修复工坊组成开放测试链。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]
 
-开放地图 2026-08-09 快照被归类为交通、教育、照护支持、日常零售和健康五组，并与临时重点区做 500 米缓冲相交。代理矩阵为：大钟寺 28/6/3/1/1，AI 原点 19/25/3/5/5，智造大街 19/8/1/10/1。它不是客流、订单、热力或服务质量测量，只说明公开地图中“大钟寺交通要素突出、AI 原点教育要素突出、智造大街照护支持偏少”的现场核查方向。[source:OSM-CORRIDOR-SNAPSHOT-20260809] [metric:osm_dazhongsi_mobility_features_500m] [assumption:A-OSM-001]
+开放地图 2026-08-09 快照被归类为交通、教育、照护支持、日常零售和健康五组，并与临时重点区做 500 米缓冲相交。代理矩阵为：大钟寺 28/6/3/1/1，AI 原点 19/25/3/5/5，众智园 19/8/1/10/1。它不是客流、订单、热力或服务质量测量，只说明公开地图中“大钟寺交通要素突出、AI 原点教育要素突出、众智园照护支持偏少”的现场核查方向。[source:OSM-CORRIDOR-SNAPSHOT-20260809] [metric:osm_dazhongsi_mobility_features_500m] [assumption:A-OSM-001]
 
-因此大钟寺优先布置夜间交班、补水、卫生间、多语服务和短时休息；AI 原点优先把学校、家庭和社区课程接入共学照护；智造大街优先补齐轮班休息、健康支持、维修工具和人工申诉。每处都采用“一厅、一路、一账本、一评审”的四件套：全年可用的交班厅、可测试的户外路径、公开场景账本、真实使用者参与的季度评审。所有判断先现场核验，再进入建设清单。[assumption:A-HEAT-PROXY-001] [depth:three_key_area_detailed_design]
+因此大钟寺优先布置夜间交班、补水、卫生间、多语服务和短时休息；AI 原点优先把学校、家庭和社区课程接入共学照护；众智园优先补齐轮班休息、健康支持、维修工具和人工申诉。每处都采用“一厅、一路、一账本、一评审”的四件套：全年可用的交班厅、可测试的户外路径、公开场景账本、真实使用者参与的季度评审。所有判断先现场核验，再进入建设清单。[assumption:A-HEAT-PROXY-001] [depth:three_key_area_detailed_design]
 
 ![三处重点区：抵达交班、共学照护、维护共测](assets/figures/key-areas.png)
 
@@ -129,3 +129,30 @@ v0.2.1 数据加固版把产业、教育、物流、平台劳动和开放地图�
 产业与人口底盘采用国家统计局第五次全国经济普查、海淀区第五次全国经济普查公报和 2025 年统计公报；交通物流采用北京市交通委员会、北京市邮政管理局和交通运输部公开材料。官方总量按原地域口径解释，派生值显示公式，不向临时地块硬分配。[source:NBS-SCITECH-SERVICES-2023] [source:HAIDIAN-STAT-BULLETIN-2025] [source:BEIJING-POSTAL-2025]
 
 劳动条件校准采用美团骑手年度职业报告，功能环境代理采用 2026-08-09 OpenStreetMap/Overpass 快照。两者分别存在平台自报偏差和开放地图完整性偏差，故只支持休息申诉需求与现场核查顺序，不支持本地人数、订单或实时流量结论。国际案例用于比较真实环境测试、居民共创、混合创新区和公共监督机制。[source:MEITUAN-RIDER-2024-2025] [source:OSM-CORRIDOR-SNAPSHOT-20260809] [source:CASE-PUNGGOL]
+
+
+## 对任务书六项任务的独立响应
+
+本版将任务书原词写回方案：三大定位是“百年京张文化带、都市 AI 生活体验带、AI 融合创新带”；五项功能是“AI 全栈自主创新体系、世界级 AI 创新生态、AI+ 场景赋能新范式、智能化 AI 活力城市、AI 治理全球话语权”。三片两翼分别为 AI 原点社区、众智园 AI 自主创新加速区、大钟寺 AI 产业集聚区，以及中关村科技服务翼、小月河场景赋能翼。早期稿“中关村智造大街”只是内部工作名，本版全部改用正式名称“众智园 AI 自主创新加速区”。完整映射见 `visual/assets/ecosystem-map.json`。[source:AGENT-TASKBOOK]
+
+Agent.1 的独立输出是 7 个全球案例转译表、八类资源机制和五类区域接口：案例明确“可转移机制/京张转译/不可照搬边界”；土地、空间、产业、资本、人才、算力、数据、场景分别有治理动作；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口，不声称已经合作、投资或授权。详见 `visual/assets/case-transfer-matrix.json`、`visual/assets/ecosystem-map.json`、`visual/assets/regional-interfaces.json`。[source:CASE-NIST-AIRMF]
+
+Agent.2—3 对应总体与重点区：AI 原点形成“课程—照护—开发者—社区验证”的世界级 AI 创新生态；众智园形成“模型—硬件—运维—安全—治理”的全栈自主创新与可信测试系统；大钟寺承接智能原生新业态和抵达展示；中关村科技服务翼提供标准、IP、资本和国际转化，小月河场景赋能翼承接生活、物流、慢行与气候场景。所有图面都有图名、图例、北箭头、比例尺和临时边界警示；这些比例尺基于临时投影几何，只供概念判断。[data:geometry/key_areas.geojson#PROV-KEY-001]
+
+Agent.4 的独立输出是 12 张场景卡。每张卡都明确人物、地点、空间载体、运营责任、数据边界、SLA、暂停/退出阈值，并遵守人工复核、非数字兜底和数据最小化。它们与空间和运营的完整矩阵见 `visual/assets/scenario-cards.json` 及 `assets/figures/scenario-operations.png`，不再只停留在场景名称清单。[metric:scenario_node_count]
+
+Agent.5 的四地标为百工谱、交班厅、修复园、贡献标尺；历史文化资源分成铁路遗产本体、工业与技术劳动史、当代数字劳动史三层。Logo 由交接手势和铁路双线构成开放环；深蓝、青、琥珀、珊瑚、绿色分别表达责任、协作、交班、人工关注和修复。禁止覆盖遗产本体、暗示政府背书、仅靠颜色传意或复制企业商标，见 `visual/assets/landmark-culture-system.json`。
+
+Agent.6 把八个更新项目变成实施合同：每项列责任类型、相对成本、资金/维护来源类别、阶段、验收基线、SLA、暂停/退出阈值和独立评估者。年度路径为“城市后台开放周—百工修复节—可信排班公开审计日—全球场景交换营”；企业/开发者/招商转化遵循“问题认领—无数据原型—小范围测试—公开指标—使用者评审—退出或扩展”，见 `visual/assets/implementation-contracts.json`。[metric:renewal_project_count]
+
+## 参与、无障碍与人工验收门槛
+
+本次不虚报已经完成用户参与。`visual/assets/participation-accessibility-plan.json` 将夜班劳动者与骑手、残障者与老年人、照护者家庭、社区商户、运维物业、企业开发者和国际访客列为有补偿的参与组，规定现场同行、无数据原型共测、季度评审和公开变更记录。社区对人脸、连续定位和敏感画像具有否决权；线下、电话和纸面申诉 2 个工作日受理、10 个工作日结案。
+
+HTML、PDF、PNG 和实体导视均需人工无障碍审计：键盘顺序、替代文本、对比度、200% 缩放、字体与灰度、图例/比例尺/北箭头、视高/触达/轮椅回转/眩光/多语纸面兜底。当前状态是“计划已提交、实际审计未完成”，因此它是实施前硬门槛，而不是已通过的自我声明。[assumption:A-PRIVACY-001]
+
+## 来源页码、存档哈希与复算口径
+
+海淀经济普查总公报的就业数据定位到 PDF 第 3—4 页表 3；服务业公报的信息软件数据定位到第 7—8 页表 9—11；美团骑手数据定位到报告标示页 15、19、21、25。缓存文件 SHA-256、转换公式和再利用边界登记在 `visual/assets/source-audit.json`。政府和平台材料只转录有限事实、表名与页码，不复制图片或版式；OSM 只分发聚合计数并保留 ODbL 署名。[source:HAIDIAN-ECON-CENSUS-OVERALL-2023] [source:MEITUAN-RIDER-2024-2025]
+
+建筑占地采用 EPSG:4548 投影后 `area(unary_union(footprints))` 统一计算，并另列“逐图斑求和减合并面积”的重叠诊断值；只有重叠为 0 才通过。该口径与空间复核脚本一致，避免重复计数。[metric:building_footprint_area_sqm] [metric:building_footprint_overlap_sqm]
