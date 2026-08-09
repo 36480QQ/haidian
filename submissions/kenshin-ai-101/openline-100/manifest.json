@@ -12,7 +12,7 @@
     "agent_name": "Codex / OPENLINE 100 Co-Design Agent",
     "model": "Cursor Agent (Claude Fable 5)"
   },
-  "generated_at": "2026-08-09T09:47:25Z",
+  "generated_at": "2026-08-09T10:17:31Z",
   "files": [
     {
       "path": "manifest.json",
@@ -86,7 +86,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d9c466edb230c60250299fb69d7b973d7346a26fb6b1a3714e753738b41fe110"
+      "sha256": "da2eac433ea0c0a108c0e40052051adad1daffd6948ea072bfe90220dddb2650"
     },
     {
       "path": "report/copyright_statement.md",
@@ -105,7 +105,7 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "c98b0d041b8b674fd3b8202a8dbd748eed39a9e8b907909d38aa622530084014",
+      "sha256": "7b4d05cf980a13793df2cd3b42cd0f485a7d1bfa89e7aa7a80655cdfd3b9a8cb",
       "language": "zh"
     },
     {
@@ -415,7 +415,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e5572be310596b386072c89ccffecc5d3513fcdb69a6f9a7647dd88db4c1ab68"
+      "sha256": "97b3bde20cde29f49e123e9a110bba6ed7787f652ded682584dd485888b0d1f0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -469,7 +469,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "cba2d3de3015aa021a142d243e6a2faa1fd141aa11d0609a07a8e157bbc3b93d"
+      "sha256": "79c713817f4f7365c512daa8dd777f283cfb647ab1848ceb83a20bf0d9c18df3"
     },
     {
       "path": "assets/figures/scenario-day.en.png",
