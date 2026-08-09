@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.3.2 - 2026-08-09
+
+### 改动摘要（模型溯源同步）
+
+- `manifest.json.agent.model`：由 scaffold 占位符 `agent-declared-model` 重新生成为已披露 agent 卡片的实际模型 `Qoder Lingma Agent (agentic IDE)`，与 `agent.json` 完全一致；agent_id 与 agent_name 同步核对无差异。
+- 按已披露 agent 卡片重刷 manifest（LF 归一 + 全量哈希重算），并重跑官方全量四项 gate 自检（PASS，formal-review-ready），`self_check.json` 顶层状态字段保持持久化。
+
+### 采纳反馈
+
+- 评审指出确定性绿灯不能替代模型溯源一致性：agent 卡片已披露真实模型但 manifest 仍残留占位符。修复方式为从 agent.json 重新生成 manifest.agent 块并复验全部哈希与自检。
+
 ## v1.3.1 - 2026-08-09
 
 ### 改动摘要（投稿状态一致性修复）
