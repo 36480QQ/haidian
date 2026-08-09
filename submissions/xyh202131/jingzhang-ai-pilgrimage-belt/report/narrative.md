@@ -32,6 +32,14 @@ Jing-Zhang V2 treats the corridor as an auditable public AI innovation productio
 - [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass locally.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
+## 本次 PDF 重生记录 / Current PDF regeneration record
+
+2026-08-09T10:11:44Z，四份展示 PDF（中文与英文 A3 文册、A0 展板）已从当时的 `proposal.md`、`proposal.en.md` 及当前七组中英文图件重新生成。内容保留 T-02 的五问离线协议、三组场景与空间接口边界；这只是文件重生与版式输出，不证明现实执行。T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
+
+At 2026-08-09T10:11:44Z, all four display PDFs (Chinese and English A3 booklets and A0 boards) were regenerated from the then-current `proposal.md`, `proposal.en.md`, and seven paired figure sets. They retain the T-02 five-question offline protocol plus the three scenario groups and spatial-interface boundaries. This records file regeneration and layout output only, not real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
+
+Reproduction entry: `python scripts/backfill_bilingual_artifacts.py pdfs --repo-root . --only jingzhang-ai-pilgrimage-belt`. On this Windows runner, its existing `backfill_pdfs` implementation was invoked in a one-off process with `FONT_PATHS=[C:\\Windows\\Fonts\\ARIALUNI.ttf]`, because the checked-in list contains macOS-only font locations; no repository script was changed. The Chinese pass used the same generator against a temporary package mirror with a copied current proposal and hard-linked current figures under their original names, then removed that mirror. Future source or figure changes require a new regeneration and validation; this record makes no inheritance or field-success claim.
+
 ## 不可变验证证据 / Immutable validation evidence
 
 | Field | Immutable value |
