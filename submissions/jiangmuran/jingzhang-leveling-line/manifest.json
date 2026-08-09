@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e7e1c87f0b339f57d0c1b95b828b204c39d7147049b84553ca34cd98e113cd5c"
+      "sha256": "42fb2699c0a207bc152d5df255c9768e9f6b568e27fe909b1ac7249cd611a9b8"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bbe78652243ef5d66fc5ea6ca010099028b6512f5003f78c71b0e9ecd4dcad8f"
+      "sha256": "45dd3fd2ec638d60807464c87d45a3212c1c7cac7375b13466351378b00c5f1c"
     },
     {
       "path": "report/narrative.md",
@@ -287,7 +287,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "5fa967289152fb1d4e626efe86592ca07d527ca9476c2b3886425a8c2de84bf9"
+      "sha256": "7561334e6137b0bcbe8fe2d7d8c490cb870b47ec991737252e0c92da45ebe999"
     },
     {
       "path": "assets/figures/ecosystem.en.png",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8a81964c061b3fa87b6026c1807f7aa3e5cb8837aeaaf5f6a2f716322f8e0f80"
+      "sha256": "20f046a317bf2d2e04f9dbdfcc501daba11b8553d5e981cb9b3dd2bda0f0be39"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6d2c3dffe6446a3d3d556d4aab8323943419a73f1bc0d5e220dce4f3e2c03ebd"
+      "sha256": "28534b28541ad43211ace3a0f51563267fa8e70fa21caccc2f5a3f4929e397b0"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "0df86049ad758468ed80ce9e75303fe0c57a14a84d875859c88109a7e7ea65ba"
+      "sha256": "d7b2472c386e3ea2c60d5d2e64e585736e05c670893487bc489be0a6a36ea070"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -536,6 +536,13 @@
       "language": "en",
       "sha256": "fd23b18df1b9439e15b6e10646468baebf02d36f385a3533e599f5ba0d3580a4",
       "translation_of": "assets/figures/region-interface.png"
+    },
+    {
+      "path": "visual/assets/census_history.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "34c81afc6aaaa8e81b74a8c61998e88023f383aadd8687f738b290224bc8c427"
     }
   ],
   "validation_claim": {
