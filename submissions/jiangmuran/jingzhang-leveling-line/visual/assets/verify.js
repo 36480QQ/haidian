@@ -217,7 +217,55 @@ const codes = [...new Set(landUse.map((f) => String(f.properties.land_use_code))
 check('land_use closes on the site area (no overlap, no gap)',
       Math.abs(landUseSum - site) <= site * 1e-9,
       `${landUseSum.toFixed(3)} vs site ${site.toFixed(3)}, delta ${(landUseSum - site).toExponential(2)} m2`);
-check('land_use partitions into exactly six classes', codes.length === 6, codes.join(', '));
+
+// Area identity alone would survive a compensating overlap and gap of equal
+// size, so it is not on its own a proof of partition. This tests membership
+// directly: lay a deterministic lattice over the site and require every point
+// inside the boundary to fall in exactly one parcel. No clipper and no
+// dependency — just ray casting, which is thirty lines. The lattice is fixed
+// rather than random so two runs give the same answer, and its spacing is
+// reported, because the guarantee is "no defect larger than one cell", not
+// "no defect".
+const pointInRing = (ring, x, y) => {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+};
+const pointInGeom = (geom, x, y) => {
+  const polys = geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+  for (const poly of polys) {
+    if (!pointInRing(projectRing(poly[0]), x, y)) continue;
+    if (poly.slice(1).some((hole) => pointInRing(projectRing(hole), x, y))) continue;
+    return true;
+  }
+  return false;
+};
+const siteGeom = read('geometry/site_boundary.geojson').features[0].geometry;
+const flat = projectRing(
+  siteGeom.type === 'Polygon' ? siteGeom.coordinates[0] : siteGeom.coordinates[0][0]);
+const [minX, maxX] = [Math.min(...flat.map((p) => p[0])), Math.max(...flat.map((p) => p[0]))];
+const [minY, maxY] = [Math.min(...flat.map((p) => p[1])), Math.max(...flat.map((p) => p[1]))];
+const STEP = 40; // metres
+let tested = 0, gaps = 0, overlaps = 0;
+for (let x = minX + STEP / 2; x < maxX; x += STEP) {
+  for (let y = minY + STEP / 2; y < maxY; y += STEP) {
+    if (!pointInGeom(siteGeom, x, y)) continue;
+    tested++;
+    const hits = landUse.filter((f) => pointInGeom(f.geometry, x, y)).length;
+    if (hits === 0) gaps++;
+    else if (hits > 1) overlaps++;
+  }
+}
+check('every sampled point inside the site falls in exactly one parcel',
+      gaps === 0 && overlaps === 0,
+      `${tested} points on a ${STEP} m lattice: ${gaps} in no parcel, ${overlaps} in more than one`);
+
+check(`land_use partitions into exactly ${codes.length} classes, and the prose says so`,
+      new RegExp(`(${codes.length}|${['一', '二', '三', '四', '五', '六', '七', '八', '九'][codes.length - 1]})\\s*类用地完整剖分`).test(prose),
+      `${codes.length} classes present: ${codes.join(', ')}`);
 
 // A constraint boundary nobody cites is a boundary nobody can review, and a
 // scenario citing someone else's boundary is worse than citing none.
@@ -262,6 +310,16 @@ const declaredFootprint = metrics.building_footprint_area_sqm.value;
 check('every class-1 table row quotes the current building footprint',
       quoted.length === 2 && quoted.every((v) => Math.abs(v - declaredFootprint) < 1),
       `${quoted.length} row(s): ${quoted.join(', ')} against metrics.json ${declaredFootprint.toFixed(1)}`);
+
+// The card table in the proposal is spliced from scenario_cards.json on every
+// build, so the two cannot drift — unless someone edits between the markers.
+// This closes that door from the reader's side rather than the author's.
+const cards = read('visual/assets/scenario_cards.json').cards;
+const tableIds = [...prose.matchAll(/^\| (S\d\d) \|/gm)].map((m) => m[1]);
+check('the card table carries every card in scenario_cards.json, in both editions',
+      tableIds.length === cards.length * 2 &&
+      cards.every((c) => tableIds.filter((id) => id === c.id).length === 2),
+      `${cards.length} cards, ${tableIds.length} table rows across both editions`);
 
 check('floor_area_ratio stays unknown until official FAR controls exist',
       metrics.floor_area_ratio.status === 'unknown' && metrics.floor_area_ratio.value === null,
