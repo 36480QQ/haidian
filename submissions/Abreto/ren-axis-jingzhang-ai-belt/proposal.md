@@ -7,7 +7,7 @@ license: "CC-BY-4.0"
 summary: "把京张遗址公园读作'人字轴'：9公里未来主脊与2.2公里京张故线历史支线在西直门北侧真实分岔，构成一轴双臂、三站两翼的空间结构；以坡度叙事组织9公里空间序列，以铁路语汇状态机治理12个AI场景，以确定性生成管道保证全包可重算。概念方案，基于临时边界，供专业团队深化。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot"]
-iteration: "v5.1"
+iteration: "v5.2"
 proposal_format_version: "2"
 translation_file: "proposal.en.md"
 ---
@@ -60,7 +60,7 @@ translation_file: "proposal.en.md"
 
 **更新策略四级阶梯**：运营先行（活动时段、开放规则、导视家具验证需求）→轻改共享（权属消防核查后开放首层与闲置空间）→性能改造（节能、无障碍、界面）→必要更新（进入法定程序）。拆改留是方法框架而非逐地块结论[depth:retain_renovate_demolish]：保留铁路工业记忆构筑物并活化，改造低效楼宇与商贸载体，拆除仅限法定认定，新建集中于站前组团——与防止大拆大建、以保留利用提升为主的国家要求同向[source:MOHURD-63-NO-MASS-DEMOLITION]，并在《北京市城市更新条例》的框架方向内组织[source:BJ-RENEWAL-REGULATION]。
 
-**风貌与强度**[depth:height_massing_character][depth:development_intensity_controls]：风貌走"低基底、开放首层、可读屋顶、节制夜景"方向——轴线两侧保持人尺度连续遮荫，三站允许识别性公共建筑但不遮蔽历史资源；材料以耐久砖石、金属网与可更换数字界面分层，呼应"科技理性×铁路记忆×校园人文"。容积率、高度、密度、绿地率四项官方控制值缺失，metrics.json 中标记待补齐；本包不给出容积率结论——概念组团只有建筑基底、没有用地边界（口径见 assumptions.json 的 A-CONTROLS-002）。可说的是量级：本带内两宗公开项目的容积率约在2.4—2.6之间（大钟寺蓝景丽家约2.45、学院路东升科技园三期约2.62）[source:HD-PLOT-FAR-REFS]，这是既有项目的实际强度水平。四项官方控制值仍待正式数据补齐后由控规确定。
+**风貌与强度**[depth:height_massing_character][depth:development_intensity_controls]：风貌走"低基底、开放首层、可读屋顶、节制夜景"方向——轴线两侧保持人尺度连续遮荫，三站允许识别性公共建筑但不遮蔽历史资源；材料以耐久砖石、金属网与可更换数字界面分层，呼应"科技理性×铁路记忆×校园人文"。本设计范围的四项官方控制值仍缺失，metrics.json 中标记待补齐；概念组团只有建筑基底、没有用地边界，本包因此不折算容积率（口径见 assumptions.json 的 A-CONTROLS-002）。但带内已经有官方标尺：三份《建设项目规划条件》原件覆盖七个规划地块，已批容积率2.20—5.00[metric:reference_plot_far_min][metric:reference_plot_far_max]、建筑限高24—80米；四宗给出建筑密度上限≤35%—≤45%，六宗给出绿地率下限≥10%—≥35%（其余在原表中留空或以"/"表示）[source:HD-PLOT-CONDITIONS]。这批条件的强度并不均质：四宗商业金融用地的容积率分别是2.20、2.45、4.20、5.00，横跨整个区间；三宗研发设计用地则都是3.5。本方案不为任何地块预设强度——"低基底、开放首层"管的是界面尺度，总量留给逐地块控规。另一宗东升科技园三期0807-604走协议出让（非招标、拍卖或挂牌），其四项控制值经检索确认未公开[source:HD-PLOT-DONGSHENG-NOT-PUBLIC]。
 
 ## 五、重点区域详细设计
 

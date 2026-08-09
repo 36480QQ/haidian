@@ -104,10 +104,24 @@
    "id": "A-CONTROLS-002",
    "title_zh": "概念组团无用地边界，故不可折算容积率",
    "description_zh": "本包只定义概念组团的建筑基底，未定义其用地边界。容积率的分母是用地面积，因此本包无法也不应折算容积率；正文给出的约8.7为'概念组团平均层数等价值'（示意规模÷自身基底），与容积率分母不同、不可直接比较。",
-   "impact_zh": "带内两宗公开项目的容积率（约2.45、约2.62）只说明既有项目的强度量级，不能与上述层数等价值相比，也不构成本包的强度结论。",
-   "mitigation_zh": "取得官方控规条件或地块规划条件后，按其口径直接引用容积率，不再使用层数等价值。",
+   "impact_zh": "带内已批地块的容积率（2.20—5.00，见 HD-PLOT-CONDITIONS）说明既有条件的强度区间，不能与上述层数等价值相比，也不构成本包的强度结论。",
+   "mitigation_zh": "取得本设计范围的控规条件后，按其口径直接引用容积率，不再使用层数等价值。",
    "affected_files": [
     "metrics.json",
+    "proposal.md",
+    "proposal.en.md"
+   ]
+  },
+  {
+   "id": "A-CONTROLS-003",
+   "title_zh": "参照地块的已批条件不外推为本设计范围的控制值",
+   "description_zh": "本包新增的 reference_plot_* 指标取自带内三份建设项目规划条件原件，覆盖7个规划地块（逐地块数据见 visual/assets/plot-conditions.json）。这些是各该地块的已批条件，样本由“检索期内公开且附有规划条件原件”决定，不是按分布抽样，也不覆盖本设计范围的全部用地。",
+   "impact_zh": "该组指标只用作强度讨论的现实标尺；四项 official_*_control 指标据此仍保持待正式数据补齐，本方案不据此为任何地块设定指标。七宗中仅四宗给出建筑密度，三宗未给出，区间因此只反映给出者。",
+   "mitigation_zh": "取得覆盖本带街镇的街区层面控规后，以其基准强度分区与基准高度分区替代本组参照值。东升科技园三期0807-604的四项控制值经检索确认未公开（见 HD-PLOT-DONGSHENG-NOT-PUBLIC），若日后公布应补入本组。",
+   "affected_files": [
+    "metrics.json",
+    "visual/assets/plot-conditions.json",
+    "sources.json",
     "proposal.md",
     "proposal.en.md"
    ]
