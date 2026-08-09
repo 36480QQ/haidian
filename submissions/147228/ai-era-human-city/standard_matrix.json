@@ -9,7 +9,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -18,39 +18,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -60,7 +51,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -69,39 +60,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -111,7 +93,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -120,39 +102,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -162,7 +135,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -171,39 +144,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -213,7 +177,7 @@
       "review_status": "addressed",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -222,39 +186,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -264,7 +219,7 @@
       "review_status": "data_gap",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计",
         "指标体系、面积复算与合规矩阵"
       ],
       "drawing_refs": [
@@ -273,39 +228,30 @@
       ],
       "geometry_refs": [
         "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
         "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-GOVERNANCE-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_DISCLOSURE",
-        "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "本地标准快照、主方案的概念建议边界、结构化图层和复算指标构成闭环；缺失的官方建筑深度文件被保留为资料缺口。"
+      "evidence_summary_zh": "以仓库本地快照为准，结合主方案的概念边界、结构化图层、指标和图册响应；任何缺失的官方附件保持为数据缺口，不以 URL 或愿景替代。"
     }
   ]
 }

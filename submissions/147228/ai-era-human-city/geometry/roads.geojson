@@ -13,7 +13,9 @@
         "layer": "ROAD_CENTERLINE",
         "road_class": "cycleway",
         "name_zh": "南部共享慢行环",
-        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。"
+        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。",
+        "human_priority": true,
+        "concept_only": true
       },
       "geometry": {
         "type": "LineString",
@@ -44,7 +46,9 @@
         "layer": "ROAD_CENTERLINE",
         "road_class": "pedestrian",
         "name_zh": "社区人工优先步行轴",
-        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。"
+        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。",
+        "human_priority": true,
+        "concept_only": true
       },
       "geometry": {
         "type": "LineString",
@@ -71,7 +75,9 @@
         "layer": "ROAD_CENTERLINE",
         "road_class": "greenway",
         "name_zh": "小月河绿道接口",
-        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。"
+        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。",
+        "human_priority": true,
+        "concept_only": true
       },
       "geometry": {
         "type": "LineString",
@@ -98,7 +104,9 @@
         "layer": "ROAD_CENTERLINE",
         "road_class": "transit_connection",
         "name_zh": "轨道接驳研讨线",
-        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。"
+        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。",
+        "human_priority": true,
+        "concept_only": true
       },
       "geometry": {
         "type": "LineString",
@@ -125,7 +133,9 @@
         "layer": "ROAD_CENTERLINE",
         "road_class": "local_access",
         "name_zh": "低速机器人观察线",
-        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。"
+        "statement_zh": "概念性慢行、接驳或人机协同路径，不代表道路红线、车道布置或运营许可。",
+        "human_priority": true,
+        "concept_only": true
       },
       "geometry": {
         "type": "LineString",

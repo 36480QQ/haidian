@@ -14,7 +14,12 @@
         "name_zh": "社区保留率协商台",
         "scenario_id": "community-retention",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-01",
+        "scenario_card_name_zh": "社区保留率协商台",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +41,12 @@
         "name_zh": "技能再造走廊",
         "scenario_id": "workforce-reskilling",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-02",
+        "scenario_card_name_zh": "技能再造走廊",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -58,7 +68,12 @@
         "name_zh": "代际共学导航",
         "scenario_id": "ai-health-service-navigation",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-03",
+        "scenario_card_name_zh": "代际共学导航",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -80,7 +95,12 @@
         "name_zh": "夜间人工服务",
         "scenario_id": "ai-traffic-walkability",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-04",
+        "scenario_card_name_zh": "夜间人工服务",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -102,7 +122,12 @@
         "name_zh": "国际服务助手",
         "scenario_id": "enterprise-service-copilot",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-05",
+        "scenario_card_name_zh": "国际服务助手",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -124,7 +149,12 @@
         "name_zh": "市政设施 Agent API",
         "scenario_id": "civic-agent-governance",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-06",
+        "scenario_card_name_zh": "市政设施 Agent API",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -146,7 +176,12 @@
         "name_zh": "低速机器人公共测试",
         "scenario_id": "robot-delivery-low-speed",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-07",
+        "scenario_card_name_zh": "低速机器人公共测试",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -168,7 +203,12 @@
         "name_zh": "低空物流规则沙盒",
         "scenario_id": "low-altitude-logistics",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-08",
+        "scenario_card_name_zh": "低空物流规则沙盒",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -190,7 +230,12 @@
         "name_zh": "内涝模拟观察台",
         "scenario_id": "ai-flood-simulation",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-09",
+        "scenario_card_name_zh": "内涝模拟观察台",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",
@@ -212,7 +257,12 @@
         "name_zh": "算电热协同台账",
         "scenario_id": "energy-heat-ledger",
         "evidence_status": "concept_only",
-        "statement_zh": "场景节点为概念测试或服务触点；不表示已部署设备、已获路权或已授权数据。"
+        "statement_zh": "场景节点为 G0 概念协议和可观察服务触点；不表示设备部署、已获路权、数据授权或实际运营。无人工复核和退出协议不得进入下一阶段。",
+        "scenario_card_id": "SCN-10",
+        "scenario_card_name_zh": "算电热协同台账",
+        "operation_stage": "G0_concept_protocol_only",
+        "human_review_required": true,
+        "exit_protocol_required": true
       },
       "geometry": {
         "type": "Point",

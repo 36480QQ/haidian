@@ -9,34 +9,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -45,12 +36,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -60,34 +50,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -96,12 +77,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -111,34 +91,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -147,12 +118,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "land_use_layout",
@@ -162,34 +132,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -198,12 +159,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -213,34 +173,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -249,12 +200,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "height_massing_character",
@@ -264,34 +214,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -300,12 +241,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -315,34 +255,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -351,12 +282,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -366,34 +296,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -402,12 +323,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -417,34 +337,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -453,12 +364,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -468,34 +378,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -504,12 +405,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -519,34 +419,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -555,12 +446,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "renewal_project_list",
@@ -570,34 +460,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -606,12 +487,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "phasing_implementation",
@@ -621,34 +501,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -657,12 +528,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -672,34 +542,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -708,12 +569,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     },
     {
       "item_id": "risk_missing_data",
@@ -723,34 +583,25 @@
       "status": "complete",
       "proposal_sections": [
         "总体设计范围城市更新与控规深度城市设计",
-        "AI 创新生态、人才画像与 AI+ 场景",
-        "指标体系、面积复算与合规矩阵"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
         "geometry/land_use.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
         "geometry/public_space.geojson",
-        "geometry/constraints.geojson",
-        "geometry/phasing.geojson"
+        "geometry/constraints.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "land_use_coverage_ratio",
-        "scenario_node_count"
+        "scenario_card_count",
+        "landmark_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-PROVISIONAL",
         "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
@@ -759,12 +610,11 @@
         "A-DATA-GOVERNANCE-001"
       ],
       "self_check_ids": [
-        "BOUNDARY_DISCLOSURE",
         "LAND_USE_TOPOLOGY",
         "METRICS_EPSG4548",
         "OFFLINE_VISUAL"
       ],
-      "evidence_summary_zh": "该项已完成为可审阅的概念设计表达：明确空间动作、证据图层、复算指针与待专业确认的资料缺口；并不把概念成果冒充法定结论。"
+      "evidence_summary_zh": "完成的是可审查的概念深度：空间动作、责任、指标和数据缺口已对应，不声称已取得工程、权属、控制或实施条件。"
     }
   ]
 }
