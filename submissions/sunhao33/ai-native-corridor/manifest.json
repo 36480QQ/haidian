@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2ad59e840a9d51005f522ba8ae407688b89acc1914936006541c2c0656d6a0ac"
+      "sha256": "22b34ea3d0b82d059de92a1d275562db590a0c4f145b5d7ac234e0394bf19d47"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -154,12 +154,6 @@
       "role": "geometry",
       "required": true,
       "sha256": "48bef1f44cf33be80381a3944f06b1d8b1580547806ef36d0fcb81a0d2d4195f"
-    },
-    {
-      "path": "geometry/constraints.geojson",
-      "role": "geometry",
-      "required": true,
-      "sha256": "a468a6c0c40a908c54dd5da40dfd65182a6e89e17c2f2d48c4a3f80030792d6a"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -241,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a1ec049f6f09c6b971f3e546084dbaef717c55d1876c4cc8dc4b2b75cd28285a"
+      "sha256": "93bc947f1299bcf09fb5cf0c156688dc587042fddb74140d3c88db6b65fb0051"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +281,7 @@
       "path": "risk.json",
       "role": "risk_register",
       "required": false,
-      "sha256": "b50d12dda5307700d214fe5fd738b1270f46574edaede29072fc007f43213d84"
+      "sha256": "2d6a26c50022449c492a3dd1f2566d02e3fe8a2f79ce000b8be6104b2c369712"
     },
     {
       "path": "changelog.md",
@@ -295,34 +289,6 @@
       "required": false,
       "sha256": "599803ce13089a315430ad88e74914033a4af2fff1b60f5bbede5b891b986f45"
     },
-    {
-      "path": "pages/map.html",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "fa38b63309fec4c19d3b2014816f4a639716ac522d9b3a11d990eb2a360da109"
-    },
-    {
-      "path": "pages/dashboard.html",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "7a717563d30820e6001e26b242fdb876479a36badf339758cc61a63d26704bf9"
-    },
-    {
-      "path": "pages/scenarios.html",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "b47727e5ddef1ab4ee4bfe89545738ae73bc8c0beeee78066053050d6b30cd17"
-    },
-    {
-      "path": "pages/evidence.html",
-      "role": "visualization",
-      "required": false,
-      "language": "zh",
-      "sha256": "5cfaaabe6570eb0e5d04691450e506b77971ecb825bf2069aced7c5af398ce0f"
-    }
   ],
   "validation_claim": {
     "self_checked": true,
