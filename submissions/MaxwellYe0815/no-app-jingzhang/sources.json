@@ -1,0 +1,267 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "source_id": "SITE-PACKAGE",
+      "title": "百年京张AI创新带结构化 site package",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "brief/site-package/",
+      "accessed_date": "2026-08-09",
+      "authority_level": "repository_package",
+      "source_type": "official_and_repository_public_bundle",
+      "usable_for": [
+        "任务、枚举、标准索引、schema 与允许设计空间"
+      ],
+      "not_usable_for": [
+        "替代缺失的 official polygon、控规或工程资料"
+      ]
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "source_id": "SOURCE-REGISTRY",
+      "title": "公开资料登记表",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "data/source_registry.json",
+      "accessed_date": "2026-08-09",
+      "authority_level": "repository_registry",
+      "source_type": "repository_public_registry",
+      "usable_for": [
+        "区分 formal-ready、background 与 provisional-only 资料"
+      ],
+      "not_usable_for": [
+        "作为新的空间权威来源"
+      ]
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "source_id": "PROCESSED-FACT-PACK",
+      "title": "百年京张AI创新带 Agent 事实包",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "data/processed/agent_fact_pack.md",
+      "accessed_date": "2026-08-09",
+      "authority_level": "processed_navigation",
+      "source_type": "repository_processed_reference",
+      "usable_for": [
+        "范围、任务、资料用途与缺口导航"
+      ],
+      "not_usable_for": [
+        "替代其指向的原始来源"
+      ]
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "三层范围临时粗略 polygon",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "accessed_date": "2026-08-09",
+      "authority_level": "PROVISIONAL_REPOSITORY",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for": [
+        "临时生成、自检、可视化与内容讨论"
+      ],
+      "not_usable_for": [
+        "official redline、精确面积、审批、权属或工程依据"
+      ]
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "三处重点区临时粗略 polygon",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "accessed_date": "2026-08-09",
+      "authority_level": "PROVISIONAL_REPOSITORY",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for": [
+        "重点区概念定位和 intake 自检"
+      ],
+      "not_usable_for": [
+        "official key-area boundary、地块或道路判断"
+      ]
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "accessed_date": "2026-08-09",
+      "authority_level": "A0",
+      "source_type": "official_public",
+      "usable_for": [
+        "项目名称、范围文字与约面积、任务和成果语境"
+      ],
+      "not_usable_for": [
+        "精确 polygon、控规、道路红线或实施承诺"
+      ]
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录",
+      "publisher": "User-provided cleared document",
+      "url": "brief/site-package/agent_taskbook.json",
+      "accessed_date": "2026-08-09",
+      "authority_level": "CLEARED_USER_DOCUMENT",
+      "source_type": "user_provided_cleared",
+      "usable_for": [
+        "六项任务、品牌、场景、运营与边界条款"
+      ],
+      "not_usable_for": [
+        "official redline、控规、工程可行性或政府承诺"
+      ]
+    },
+    {
+      "id": "SMART-ELDERLY-2020",
+      "title": "关于切实解决老年人运用智能技术困难的实施方案",
+      "publisher": "国务院办公厅",
+      "url": "https://app.www.gov.cn/govdata/gov/202011/24/465255/article.html",
+      "accessed_date": "2026-08-09",
+      "authority_level": "official_public_policy",
+      "source_type": "official_public",
+      "usable_for": [
+        "传统服务与智能服务并行的公共服务原则"
+      ],
+      "not_usable_for": [
+        "本项目空间审批或资金承诺"
+      ]
+    },
+    {
+      "id": "ACCESSIBILITY-LAW-2023",
+      "title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "url": "https://wb.flk.npc.gov.cn/flfg/PDF/c845735d7d86448e9849051acbcb4aba.pdf",
+      "accessed_date": "2026-08-09",
+      "authority_level": "national_law",
+      "source_type": "official_public",
+      "usable_for": [
+        "无障碍通行、信息交流与社会服务设计原则"
+      ],
+      "not_usable_for": [
+        "替代本项目无障碍专项审查"
+      ]
+    },
+    {
+      "id": "PIPL-AUTOMATED-DECISION",
+      "title": "‘十大亮点’彰显个人信息全面保护",
+      "publisher": "中国人大网",
+      "url": "https://www.npc.gov.cn/npc/c2/c30834/202108/t20210831_313319.html",
+      "accessed_date": "2026-08-09",
+      "authority_level": "official_legislative_explanation",
+      "source_type": "official_public",
+      "usable_for": [
+        "自动化决策透明、公平、解释与拒绝权的场景边界"
+      ],
+      "not_usable_for": [
+        "替代具体场景法律合规评估"
+      ]
+    },
+    {
+      "id": "W3C-WCAG22",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "World Wide Web Consortium",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "accessed_date": "2026-08-09",
+      "authority_level": "international_web_standard",
+      "source_type": "official_public",
+      "usable_for": [
+        "可感知、可操作、可理解和稳健的数字界面参照"
+      ],
+      "not_usable_for": [
+        "替代中国法定要求或实体空间专项设计"
+      ]
+    },
+    {
+      "id": "CASE-ONE-NORTH",
+      "title": "One-North",
+      "publisher": "JTC Singapore",
+      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north?estate=one-north",
+      "accessed_date": "2026-08-09",
+      "authority_level": "official_project_reference",
+      "source_type": "official_public",
+      "usable_for": [
+        "work-live-play-learn 与创新社区机制比较"
+      ],
+      "not_usable_for": [
+        "北京本地规模、绩效或实施条件"
+      ]
+    },
+    {
+      "id": "CASE-KENDALL",
+      "title": "Kendall Square",
+      "publisher": "City of Cambridge",
+      "url": "https://www.cambridgema.gov/cdd/economicopportunityanddevelopment/aboutcambridge/kendallsq",
+      "accessed_date": "2026-08-09",
+      "authority_level": "official_city_reference",
+      "source_type": "official_public",
+      "usable_for": [
+        "创新社区、混合功能与公共连接比较"
+      ],
+      "not_usable_for": [
+        "本项目开发强度或审批依据"
+      ]
+    },
+    {
+      "id": "CASE-STATION-F",
+      "title": "STATION F",
+      "publisher": "STATION F",
+      "url": "https://stationf.co/about",
+      "accessed_date": "2026-08-09",
+      "authority_level": "operator_public",
+      "source_type": "operator_public",
+      "usable_for": [
+        "历史建筑、项目化创业支持和共享服务比较"
+      ],
+      "not_usable_for": [
+        "本地产值、投资或企业数量预测"
+      ]
+    },
+    {
+      "id": "CASE-KALASATAMA",
+      "title": "Tools for Urban Innovators / Smart Kalasatama",
+      "publisher": "Forum Virium Helsinki",
+      "url": "https://forumvirium.fi/en/introducing-tools-for-urban-innovators/",
+      "accessed_date": "2026-08-09",
+      "authority_level": "public_innovation_reference",
+      "source_type": "official_public",
+      "usable_for": [
+        "真实街区 living lab 与共同设计机制比较"
+      ],
+      "not_usable_for": [
+        "本地许可或成效证明"
+      ]
+    },
+    {
+      "id": "CASE-QUAYSIDE",
+      "title": "Quayside",
+      "publisher": "Waterfront Toronto",
+      "url": "https://www.waterfrontoronto.ca/our-projects/quayside",
+      "accessed_date": "2026-08-09",
+      "authority_level": "public_development_authority",
+      "source_type": "official_public",
+      "usable_for": [
+        "包容公共空间、无障碍审查和数字治理教训"
+      ],
+      "not_usable_for": [
+        "北京本地空间控制或旧项目承诺"
+      ]
+    },
+    {
+      "id": "CASE-BARCELONA22",
+      "title": "Barcelona 22@ Innovation District",
+      "publisher": "Ajuntament de Barcelona",
+      "url": "https://bcnroc.ajuntament.barcelona.cat/jspui/handle/11703/113894",
+      "accessed_date": "2026-08-09",
+      "authority_level": "official_city_repository",
+      "source_type": "official_public",
+      "usable_for": [
+        "工业更新、混合创新街区与公共服务协同比较"
+      ],
+      "not_usable_for": [
+        "本项目用地审批或直接制度移植"
+      ]
+    }
+  ]
+}
