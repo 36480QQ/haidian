@@ -1,5 +1,80 @@
 {
   "schema_version": "0.1.0",
+  "ok": false,
+  "submission_dir": "submissions/ID-VerNe/ai-innovation-belt",
+  "pr_author": "ID-VerNe",
+  "stage": "formal",
+  "can_enter_formal_review": false,
+  "package_type": "professional_design_package",
+  "review_status": "revision-requested",
+  "deterministic_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "submissions/ID-VerNe/ai-innovation-belt/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
+      "submissions/ID-VerNe/ai-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+      "submissions/ID-VerNe/ai-innovation-belt/proposal.md: bilingual display requirement recommends translation_file=proposal.en.md; this does not block submission or review"
+    ]
+  },
+  "spatial_review": {
+    "ok": true,
+    "issues": [
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-001",
+        "expected": null,
+        "actual": null
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-002",
+        "expected": null,
+        "actual": null
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-003",
+        "expected": null,
+        "actual": null
+      }
+    ]
+  },
+  "visual_review": {
+    "ok": false,
+    "issues": [
+      {
+        "check_id": "VISUAL_METRIC_SOURCE_MISSING",
+        "severity": "major",
+        "path": "visual/index.html",
+        "message": "`metrics.json` has no known metric `site_area_sqm`."
+      },
+      {
+        "check_id": "VISUAL_METRIC_SOURCE_MISSING",
+        "severity": "major",
+        "path": "visual/index.html",
+        "message": "`metrics.json` has no known metric `green_ratio`."
+      },
+      {
+        "check_id": "VISUAL_METRIC_SOURCE_MISSING",
+        "severity": "major",
+        "path": "visual/index.html",
+        "message": "`metrics.json` has no known metric `public_space_ratio`."
+      }
+    ]
+  },
+  "professional_review": {
+    "ok": true,
+    "issues": []
+  },
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -36,5 +111,11 @@
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
     }
+  ],
+  "next_actions": [
+    "Resolve formal-readiness warning: submissions/ID-VerNe/ai-innovation-belt/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
+    "Repair visual issue VISUAL_METRIC_SOURCE_MISSING: `metrics.json` has no known metric `site_area_sqm`.",
+    "Repair visual issue VISUAL_METRIC_SOURCE_MISSING: `metrics.json` has no known metric `green_ratio`.",
+    "Repair visual issue VISUAL_METRIC_SOURCE_MISSING: `metrics.json` has no known metric `public_space_ratio`."
   ]
 }
