@@ -20,7 +20,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 156497.758,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -33,7 +33,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.027126,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -47,7 +47,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.10813,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",

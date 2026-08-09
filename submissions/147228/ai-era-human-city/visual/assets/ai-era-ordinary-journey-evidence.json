@@ -1,0 +1,31 @@
+{
+  "contract_id": "AE-ORDINARY-JOURNEY-001",
+  "runner": "run-ai-era-ordinary-journey.js",
+  "status": "PASS",
+  "claim_level": "local_synthetic_tabletop",
+  "trace_coverage": {
+    "routes": "2/2",
+    "acceptance_checks": "6/6",
+    "journey_steps": "5/5",
+    "rollback_steps": "5/5"
+  },
+  "negative_replay": {
+    "replayed": "3/3",
+    "rejection_path_observed": true,
+    "inputs": [
+      "human_takeover_unavailable",
+      "consent_or_data_purpose_unclear",
+      "independent_replay_evidence_missing"
+    ]
+  },
+  "control_replay": {
+    "input": "ordinary_route_open",
+    "decision": "continue_ordinary_route",
+    "expectation_matches": true
+  },
+  "rollback": {"steps_declared": 5, "steps_replayed": 5, "result": "pass"},
+  "result_status": "not_run",
+  "performance_results": null,
+  "operational_status": "not_authorized_not_run",
+  "environment": {"network_calls": 0, "external_systems": "none", "personal_data": "none"}
+}

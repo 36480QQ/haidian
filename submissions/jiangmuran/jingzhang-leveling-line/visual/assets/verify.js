@@ -128,6 +128,13 @@ const publicFeatures = read('geometry/public_space.geojson').features;
 const computed = {
   site_area_sqm: site,
   green_ratio: layerArea('green_space.geojson') / site,
+  // Two layers describe the same corridor and give different areas, because
+  // the partition assigns the part inside the key areas to their dominant use.
+  // Both are published, so both are recomputed here — a second number that
+  // only the author can check is the thing this package argues against.
+  green_ratio_in_partition: read('geometry/land_use.geojson').features
+    .filter((f) => String(f.properties.land_use_code) === '1401')
+    .reduce((a, f) => a + geomArea(f.geometry), 0) / site,
   public_space_ratio: publicFeatures.reduce((a, f) => a + geomArea(f.geometry), 0) / site,
   building_footprint_area_sqm: layerArea('buildings.geojson'),
   key_area_count: read('geometry/key_areas.geojson').features.length,

@@ -29,7 +29,8 @@
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
-        "BOUNDARY-SOURCE",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "PROVISIONAL-BOUNDARY-BASIS",
         "OSM-CONTEXT",
         "HAIDIAN-JZ-PHASE2-OPEN-2026",
         "HAIDIAN-AI-TRIAL-FIELD-2026",
@@ -71,8 +72,10 @@
         "key_area_total_sqm"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "AGENT-TASKBOOK",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "PROVISIONAL-BOUNDARY-BASIS"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -402,7 +405,8 @@
         "pilot_readiness_protocol_coverage_ratio"
       ],
       "source_ids": [
-        "KEY-AREA-SOURCE",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "PROVISIONAL-BOUNDARY-BASIS",
         "AGENT-TASKBOOK",
         "HAIDIAN-AI-TRIAL-FIELD-2026",
         "HAIDIAN-JZ-MIDTERM-2026",
@@ -454,7 +458,7 @@
         "completed_g1_preregistration_count"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "AGENT-TASKBOOK",
         "HAIDIAN-JZ-PHASE2-OPEN-2026",
         "HAIDIAN-JZ-MIDTERM-2026"
@@ -598,6 +602,8 @@
       ],
       "source_ids": [
         "SOURCE-REGISTRY",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "PROVISIONAL-BOUNDARY-BASIS",
         "STD-ARCH-DEPTH-GAP",
         "AI-CONTENT-LABEL-2025",
         "HAIDIAN-JZ-PHASE2-OPEN-2026",

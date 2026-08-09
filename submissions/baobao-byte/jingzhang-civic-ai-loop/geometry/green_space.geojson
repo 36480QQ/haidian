@@ -1,47 +1,270 @@
 {
   "type": "FeatureCollection",
-  "name": "green_space_scaffold",
   "features": [
     {
       "type": "Feature",
-      "id": "GREEN-001",
       "properties": {
         "id": "GREEN-001",
         "layer": "GREEN_SPACE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
+        "name_zh": "南段遮荫雨洪花园",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51622.94,
         "land_use_code": "1401",
-        "name_zh": "连续公园绿地",
-        "area_sqm_declared": 1408600.768
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34438,
-              39.953
+              116.34375,
+              39.9464
             ],
             [
-              116.34438,
-              40.012499999999996
+              116.34545,
+              39.9464
             ],
             [
-              116.346876,
-              40.012499999999996
+              116.34545,
+              39.949600000000004
             ],
             [
-              116.346876,
-              39.953
+              116.34375,
+              39.949600000000004
             ],
             [
-              116.34438,
-              39.953
+              116.34375,
+              39.9464
             ]
           ]
         ]
-      }
+      },
+      "id": "GREEN-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-002",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "社区降温口袋公园",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51615.453,
+        "land_use_code": "1401",
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34855,
+              39.956399999999995
+            ],
+            [
+              116.35025,
+              39.956399999999995
+            ],
+            [
+              116.35025,
+              39.9596
+            ],
+            [
+              116.34855,
+              39.9596
+            ],
+            [
+              116.34855,
+              39.956399999999995
+            ]
+          ]
+        ]
+      },
+      "id": "GREEN-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-003",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "遗产叙事绿廊",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51603.622,
+        "land_use_code": "1401",
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34365,
+              39.97239999999999
+            ],
+            [
+              116.34535,
+              39.97239999999999
+            ],
+            [
+              116.34535,
+              39.9756
+            ],
+            [
+              116.34365,
+              39.9756
+            ],
+            [
+              116.34365,
+              39.97239999999999
+            ]
+          ]
+        ]
+      },
+      "id": "GREEN-003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-004",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "第一百米安静花园",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51593.898,
+        "land_use_code": "1401",
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34865,
+              39.9854
+            ],
+            [
+              116.35035,
+              39.9854
+            ],
+            [
+              116.35035,
+              39.988600000000005
+            ],
+            [
+              116.34865,
+              39.988600000000005
+            ],
+            [
+              116.34865,
+              39.9854
+            ]
+          ]
+        ]
+      },
+      "id": "GREEN-004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-005",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "科研社区共享绿地",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51581.314,
+        "land_use_code": "1401",
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34395,
+              40.002399999999994
+            ],
+            [
+              116.34565,
+              40.002399999999994
+            ],
+            [
+              116.34565,
+              40.0056
+            ],
+            [
+              116.34395,
+              40.0056
+            ],
+            [
+              116.34395,
+              40.002399999999994
+            ]
+          ]
+        ]
+      },
+      "id": "GREEN-005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GREEN-006",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "北段生态缓冲地",
+        "planning_status": "conceptual_interface_only",
+        "usage_note": "概念空间接口，不代表现状轮廓、权属、法定控制、拆改留或工程承诺；须以官方资料与现场调查替换。",
+        "area_sqm_declared": 51572.335,
+        "land_use_code": "1401",
+        "design_intent": "遮荫、雨洪、休息与慢行连续，不以AI设备替代基础环境品质"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34835,
+              40.014399999999995
+            ],
+            [
+              116.35005,
+              40.014399999999995
+            ],
+            [
+              116.35005,
+              40.0176
+            ],
+            [
+              116.34835,
+              40.0176
+            ],
+            [
+              116.34835,
+              40.014399999999995
+            ]
+          ]
+        ]
+      },
+      "id": "GREEN-006"
     }
-  ]
+  ],
+  "name": "public_comfort_green_network"
 }
