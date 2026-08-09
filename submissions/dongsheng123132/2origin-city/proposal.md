@@ -1,19 +1,24 @@
 ---
-title: "本象之城：一个可被人类居住、被智能体理解、被历史持续版本化的 AI 原生城市"
+title: "本象之城：京张可签署城市状态基础设施"
+title_en: "THE GROUND-TRUTH CITY: A Signable Urban-State Infrastructure for Jing-Zhang"
 author_github: "dongsheng123132"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
+summary: "以京张遗址公园为城市本象线，把众智园验证、AI 原点社区公共编译、大钟寺日常采用组织成一套可追溯、可签署、可回滚的城市变更链；AI 只能提交带来源、影响、责任与退出条件的变更，人类决定是否合入。"
+tracks: ["civic-agent-governance", "ai-origin-community", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 <!-- SCAFFOLD-DRAFT: replace the generated design content, figures, geometry, and drawings; then set manifest.package_state to ready_for_review. -->
 
-# 本象之城：一个可被人类居住、被智能体理解、被历史持续版本化的 AI 原生城市
+# 本象之城：京张可签署城市状态基础设施
+
+**THE GROUND-TRUTH CITY** 不是再造一套“城市大脑”，而是为人、专业团队与智能体建立共同的城市变更规则：AI 不管理城市；AI 只能提交带来源、影响范围、责任主体、人工签署与回滚条件的变更，人类决定是否合入。京张铁路曾用统一轨距、工程记录和现场验收把设计变成可运行的交通系统；百年后的“本象线”把同样的工程精神转译为城市状态的公共基础设施。
+
+方案由 2Origin 技术体系提供方法，但不要求城市采用单一厂商平台。“本象”保存带时间、来源、置信度和异议的当前状态；“影核”从同一状态生成居民端、规划端、施工端与 Agent 端可核对的不同投影；“叠象 / Redline”公开变更前后差异和受影响对象；“本境”提供有限时空、可退出的试验沙盒；“AI2Work”把真实城市任务转成可复现验收；城市提交编译器在任何建议进入专业深化前检查来源、权限、冲突、责任和回滚路径。
 
 ## 设计依据与资料清单
 
