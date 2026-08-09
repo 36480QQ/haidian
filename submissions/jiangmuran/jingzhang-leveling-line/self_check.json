@@ -4,10 +4,10 @@
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "fail",
+      "result": "pass",
       "severity": "blocking",
       "target": "package",
-      "message": "确定性格式与安全校验：未通过（由 scripts/self_check_submission.py 实跑产出）"
+      "message": "确定性格式与安全校验：通过（由 scripts/self_check_submission.py 实跑产出）"
     },
     {
       "check_id": "SPATIAL_REVIEW",
@@ -25,10 +25,10 @@
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "fail",
+      "result": "pass",
       "severity": "blocking",
       "target": "proposal.md",
-      "message": "专业证据链审查：未通过（由 scripts/self_check_submission.py 实跑产出）"
+      "message": "专业证据链审查：通过（由 scripts/self_check_submission.py 实跑产出）"
     },
     {
       "check_id": "BOUNDARY_TRUST",
@@ -59,8 +59,8 @@
       "message": "Static HTML visualization is generated without external dependencies."
     }
   ],
-  "ok": false,
-  "can_enter_formal_review": false,
-  "review_status": "revision-requested",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "review_status": "formal-review-ready",
   "package_type": "professional_design_package"
 }

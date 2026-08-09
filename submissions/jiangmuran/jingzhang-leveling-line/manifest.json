@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "92f845ff346f5ad3bd59301794006026521dd572581f4097456baf34b7f1e291"
+      "sha256": "bc24a34a671719ec26af0d381ec668b7be7cfabb866a660a66f7505234c5dc00"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c8fd6c59ab35c4f218ce6a3ecceffc8b23e49572b2b09c39606256e8e9e346c6"
+      "sha256": "8b7f9254c43d26678336b4daa0a01cac0103244bf8cb5e8956e0df824fe500ca"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1bf826ce9a21b8125848ae2ab314e7b7dd1a5a39bb7fcee1054464eaeeae158a"
+      "sha256": "6bad3b2f0e39fb36fdc052238abd00ea96bf608d76ba4f5717c79b324bd613d7"
     },
     {
       "path": "report/narrative.md",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5f7fbd2012f1e0dc4eff8d159902b98b9a502c6f81a2ddfa1068104f9f0b5541"
+      "sha256": "7f0e4820e898e004519fdd83ca25184ce109079f8af25883efb5879d973053b3"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ee5d1dd567ad57b62e70493ad61262cabee3d17ef2e096ed1e48c99054df329f"
+      "sha256": "25d18ed0e8cdac8c2f4a7878532f6e0cd74beed2ccc0abe37737fe6adc8244f9"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "315771c7daec3811aeef9148d3621fc8610a54d5aea3836eab9135048ba213b3"
+      "sha256": "228ead6e219e0b32fcbc3c5520489756ac047f0cc326bd27e2eff31431b7bd52"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -496,7 +496,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   },

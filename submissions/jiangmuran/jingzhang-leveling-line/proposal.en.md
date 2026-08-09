@@ -913,12 +913,17 @@ Metrics fall in three classes, held in `metrics.json`, `assumptions.json` and `c
 | [metric:site_area_sqm] | 11,412,825 m² (11.41 km²) | Provisional overall design area; agrees with the announcement's ~11.4 km² |
 | [metric:leveling_spine_length_m] | 9,443 m | Design centreline length |
 | [metric:benchmark_count] | 8 | 1 origin + 2 first-order + 2 second-order + 3 third-order |
-| [metric:green_ratio] | 0.2025 | Spine green corridor ÷ overall design area |
+| [metric:green_ratio] | 0.2025 | The full 120 m spine corridor ÷ overall design area |
+| [metric:green_ratio_in_partition] | 0.1227 | The part classed 1401 in the land-use partition ÷ overall design area |
 | [metric:public_space_ratio] | 0.0642 | Public measurement-point area ÷ overall design area |
 | [metric:building_footprint_area_sqm] | 82,413 m² | Union of indicative footprints, order of magnitude only |
 | [metric:key_area_count] | 3 | Count from the announcement; geometry provisional |
 
 Because boundaries are provisional, all of the above are **recomputed as a whole**, never substituted file by file, when official polygons appear. Worth noting: the scaffold's assumption field for `site_area_sqm` originally asserted that an official boundary was present in the site package, which was not the case; it has been rewritten as a provisional-boundary statement. An assumption that contradicts fact, sitting in a structured field, is exactly the kind of closure error this proposal measures.
+
+**Why green carries two numbers, and why that is a convention rather than a contradiction.** An independent audit found `green_space.geojson` and `land_use.geojson` disagreeing by **910,890 m²** about the same corridor, with `metrics.json` publishing only the larger. Checked, the relationship is exact: the full corridor is 2,311,006.7 m², of which 910,890 m² runs through the three key areas — 488,533 m² inside LU-002, 209,080 m² inside LU-003, 155,671 m² inside LU-004, 57,605 m² inside LU-001 — and the partition gives each parcel its **dominant** use, leaving 1,400,117.1 m² classed 1401.
+
+Both numbers are true; what was missing was saying so. **Both now ship, and both are recomputed independently by `verify.js`**: 0.2025 from the green layer, 0.1227 from the land-use layer. Publishing only the first meant a reviewer recomputing from land use would land on a different figure with no way to tell which one counted — **and a recomputation that can reach two answers is not a recomputation.**
 
 **Class 2, requiring official regulatory support, held at `unknown`:** [metric:floor_area_ratio] and building height, density, setbacks, road redlines. Filling estimates into a gap is fabricated certainty.
 
