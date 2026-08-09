@@ -109,6 +109,26 @@ const CASES = [
     },
   },
   {
+    id: 'C6b-non-ai-path-omitted',
+    rule: 'omitting the non-AI path field is not the same as satisfying it',
+    expect: 'reject',
+    build: () => {
+      const r = clone(BASE);
+      delete r.verdict.non_ai_path_available;
+      return r;
+    },
+  },
+  {
+    id: 'C6c-route-does-not-reach-a-known-point',
+    rule: 'a connecting route must terminate at a first-order benchmark, or nothing checks the carried value',
+    expect: 'reject',
+    build: () => {
+      const r = clone(BASE);
+      r.stations[r.stations.length - 1].benchmark = 'BM-302';
+      return r;
+    },
+  },
+  {
     id: 'C7-resumption-after-one-pass',
     rule: 'rule 7: two consecutive passes are required, because once may be luck',
     expect: 'reject',

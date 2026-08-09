@@ -1,6 +1,11 @@
 {
  "type": "FeatureCollection",
  "name": "BUILDING_FOOTPRINT",
+ "derived_measures": {
+  "coordinates_crs": "urn:ogc:def:crs:OGC::CRS84",
+  "measurement_crs": "EPSG:4548",
+  "note": "Coordinates are CRS84 (WGS 84 lon/lat) as required by RFC 7946 section 4, which removed the GeoJSON crs member; every *_declared area and length property in this file was computed in EPSG:4548 (CGCS2000 / 3-degree Gauss-Kruger CM 117E)."
+ },
  "features": [
   {
    "type": "Feature",
@@ -13,9 +18,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "L1 水准原点标石与公共证据厅",
+    "name_en": "L1 origin benchmark stone and public evidence hall",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "cultural",
     "area_sqm_declared": 9424.0,
+    "land_use_code": "0803",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
@@ -57,9 +65,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "L2 闭合差碑（公共读数墙）",
+    "name_en": "L2 closure stele (public reading wall)",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "cultural",
     "area_sqm_declared": 5032.0,
+    "land_use_code": "0803",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
@@ -101,9 +112,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "L3 归零点（年度归零仪式空间）",
+    "name_en": "L3 zeroing point (annual zeroing ceremony space)",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "cultural",
     "area_sqm_declared": 6380.0,
+    "land_use_code": "0803",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
@@ -145,9 +159,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "众智园标准测试场与限差议事厅",
+    "name_en": "Zhongzhiyuan standard test field and tolerance chamber",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "lab",
     "area_sqm_declared": 28420.0,
+    "land_use_code": "0802",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
@@ -189,9 +206,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "大钟寺智能原生商务界面",
+    "name_en": "Dazhongsi AI-native business frontage",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "mixed_use",
     "area_sqm_declared": 25200.0,
+    "land_use_code": "05",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
@@ -233,9 +253,12 @@
     "geometry_role": "design_proposal",
     "official_boundary": false,
     "name_zh": "学院路轨道站一体化接驳设施",
+    "name_en": "Xueyuan Road station integrated interchange",
     "note_zh": "示意性基底，用于说明功能落位、规模量级与朝向；不构成建筑方案、不给出高度、容积率与退线结论，须经专项论证。",
     "building_type": "mobility_hub",
     "area_sqm_declared": 7820.0,
+    "land_use_code": "1207",
+    "land_use_consistency_zh": "本基底所在地块在 land_use.geojson 中按本建筑用途单独划出，用地代码与 building_type 对应；建筑与用地不得互相矛盾。",
     "frontage_orientation_zh": "基底长边平行于主脊，表达该建筑面向公共轴的贴线关系——本方案的界面连续性与底层公共性规则依赖朝向，圆形基底无法承载。"
    },
    "geometry": {
