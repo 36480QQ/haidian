@@ -4,7 +4,6 @@
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
-  "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -55,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "739909aa5880fd428d3d09c68f936bb34eaba5d4745a862e574bcff09400e4d3"
+      "sha256": "aad1780fad3c89b49b5e68238d625db527eadfbf6eebccca505cad010c26d861"
     },
     {
       "path": "compliance_matrix.json",
@@ -286,9 +285,11 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
-    "known_blockers": [],
-    "data_confidence": "high",
+    "self_checked": false,
+    "known_blockers": [
+      "Pending audited self-check persistence from self_check_submission.py --mark-self-checked after repository guard #807 is available."
+    ],
+    "data_confidence": "medium",
     "self_check_result": "pass",
     "self_check_gates": [
       "deterministic_validation",
