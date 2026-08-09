@@ -253,7 +253,7 @@ iteration: "v0.1"
 
 ## 12. 风险、版权与合规说明
 
-风险方面：数据隐私（场景采集须最小必要与人工复核）、实施复杂度（涉及多主体协同）、政策不确定性（控规与政策待官方）、技术成熟度（部分 AI 场景为测试设想）[depth:risk_missing_data]。版权方面：命名、Logo 与视觉为原创概念，未使用未授权字体、图片、商标、人物或企业标识，落地前须法务清权 [assumption:A-IP-001]；AI 生成内容作者对事实、引用、版权与最终表达负责 [source:AGENT-TASKBOOK]。合规方面：本方案不披露非公开规划图件、非公开空间数据、内部控制指标或未授权资料；所有引用说明来源 [assumption:A-CONCEPT-001]。版权声明详见 report/copyright_statement.md。
+风险方面：数据隐私（场景采集须最小必要与人工复核）、实施复杂度（涉及多主体协同）、政策不确定性（控规与政策待官方）、技术成熟度（部分 AI 场景为测试设想）[depth:risk_missing_data]。版权方面：命名、Logo 与视觉为原创概念，未使用未授权字体、图片、商标、人物或企业标识，落地前须法务清权 [assumption:A-IP-001]；AI 生成内容作者对事实、引用、版权与最终表达负责 [source:AGENT-TASKBOOK]。合规方面：本方案仅采用公开或已清权资料，不包含未授权内容；所有引用均说明来源 [assumption:A-CONCEPT-001]。版权声明详见 report/copyright_statement.md。
 
 ## 13. 参考资料
 
