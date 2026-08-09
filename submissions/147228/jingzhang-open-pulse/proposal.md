@@ -613,5 +613,7 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 ## 参考资料
 
 - brief/public-brief.md
-完整的任务、范围、枚举、指标、数据、标准、深度、合规和停止条件登记见 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`brief/site-package/design_brief.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/enums/`、`brief/site-package/ranges/planning_limits.json`、`data/processed/agent_fact_pack.md`、`data/processed/project_scope_summary.csv`、`data/processed/agent_task_requirements.csv`、`data/processed/source_use_matrix.csv` 和 `data/processed/missing_data_checklist.csv`。正文中的 `[source:*]`、`[standard:*]`、`[depth:*]`、`[data:*]` 与 `[metric:*]` 标签分别回到这些机器可读登记；临时几何、设计目标和未来实施建议仍按前文的证据边界解释，不替代官方红线或已批准的实施承诺。
+完整的任务、范围、枚举、指标、数据、标准、深度、合规和停止条件登记见 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`brief/site-package/design_brief.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/enums/`、`brief/site-package/ranges/planning_limits.json`、`data/processed/agent_fact_pack.md`、`data/processed/project_scope_summary.csv`、`data/processed/agent_task_requirements.csv`、`data/processed/source_use_matrix.csv` 和 `data/processed/missing_data_checklist.csv`。任务与处理资料的正文回链包括 [source:AGENT-TASK-REQUIREMENTS] 与 [source:MISSING-DATA-CHECKLIST]。
+
+项目范围与来源用途的正文回链包括 [source:PROJECT-SCOPE-SUMMARY] 与 [source:SOURCE-USE-MATRIX]；正文中的证据标签按 `source:*`、`standard:*`、`depth:*`、`data:*` 与 `metric:*` 分别回到这些机器可读登记。临时几何、设计目标和未来实施建议仍按前文的证据边界解释，不替代官方红线或已批准的实施承诺。
 空间复算入口是 [data:geometry/site_boundary.geojson#SITE-001]，总体设计范围面积对应 [metric:site_area_sqm]；这是机器可读审计入口，不是独立来源条目。
