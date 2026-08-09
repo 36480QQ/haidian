@@ -119,15 +119,15 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 196002.228,
+   "value": 195854.302,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
    ],
-   "formula": "sum(polygon_area(building_footprint features))",
+   "formula": "sum(polygon_area(building_footprint features), spatial union EPSG:4548)",
    "confidence": "low",
    "assumptions": [
-    "仅 24 栋示意建筑，分布于三个重点区，不含完整存量。"
+    "24 栋示意建筑（重点区内），spatial union 口径；不含完整存量"
    ]
   },
   "land_use_piece_count": {

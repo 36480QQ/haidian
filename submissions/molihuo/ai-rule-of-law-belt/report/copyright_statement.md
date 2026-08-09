@@ -17,6 +17,21 @@
 - 全部图像与 PDF 由 Python（Pillow）渲染，未使用任何远程素材或 CDN。
 - 中文字体使用 macOS 系统自带 PingFang.ttc，仅在本地渲染过程中加载。
 
+## 资产权利矩阵（逐项）
+
+| 资产类别 | 生成方式 | 许可/权利状态 | 备注 |
+| --- | --- | --- | --- |
+| 5 张核心图（PNG） | Python/Pillow 本地渲染 | 本项目原创生成，COMMUNITY-DISPLAY-ONLY | 基于提交几何与指标派生，未使用第三方图像 |
+| A3/A0 图纸（PDF） | Pillow 由核心图合成 | 本项目原创生成 | 无外部模板或素材 |
+| visual/index.html | 原创 HTML/CSS/SVG | 本项目原创，无第三方脚本 | 纯离线，无 CDN/字体/API/跟踪 |
+| report/proposal.html | render_proposal_html.py 渲染 | 由 proposal.md 派生 | 无外部资源 |
+| 中文字体 | macOS 系统字体 PingFang.ttc | 系统授权，仅本地渲染 | 不随包分发字体文件 |
+| geometry/*.geojson | 自派生 + provisional 边界 | provisional 边界来自仓库维护者；派生图层为本项目原创 | 见 sources.json |
+| metrics/矩阵 JSON | 本项目原创计算 | 本项目原创 | 公式与来源见 metrics.json |
+| 代码（build/*.py） | 本项目原创 | 可复用 | 依赖 jsonschema/Pillow/pyproj/shapely，见 requirements-review.txt |
+
+> 说明：以上为 AI Agent 所能核实的生成资产权利状态；字体、地图底图、商标、肖像等任何第三方素材均未使用或未随包分发。若评审需要逐项原始生成脚本与依赖清单，可通过 Issues 索取。
+
 ## 隐私与人工复核
 
 - 所有 AI 场景卡（合规沙盒、智能调解、AI 司法辅助、算法备案审查、机器人责任保险等）均标注「数据最小化、可解释、人工复核、隐私保护」边界。
