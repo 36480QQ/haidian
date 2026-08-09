@@ -53,6 +53,14 @@ class ManifestSchemaTests(unittest.TestCase):
         }
         self.assertEqual(schema_errors(payload), [])
 
+    def test_v02_patch_versions_use_the_forward_contract(self):
+        payload = manifest("0.2.1")
+        payload["files"][0]["role"] = "evidence_data"
+        self.assertEqual(schema_errors(payload), [])
+        payload["files"][0].pop("required")
+        errors = schema_errors(payload)
+        self.assertTrue(any("required" in error.lower() for error in errors))
+
     def test_unknown_claim_fields_are_rejected(self):
         payload = manifest("0.2.0")
         payload["validation_claim"]["readiness_contract"] = "unknown-contract"
