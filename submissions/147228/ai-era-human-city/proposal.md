@@ -10,7 +10,7 @@ summary: "以人本缓冲、机器可调用的公共规则和可撤回的版本�
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v0.2"
+iteration: "v0.6"
 tracks: "ai-traffic-walkability,civic-agent-governance,youth-friendly-public-space"
 scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-navigation,ai-cultural-guide,enterprise-service-copilot,public-safety-operations-review"
 ---
@@ -31,7 +31,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 | 提出异议并离开 | 独立申诉入口、删除/撤回说明 | 工单、期限、处置和退出状态 | 未完成处理不得进入 G1 |
 | 第三方复演并决定扩展/返修/退出 | 证据柜、版本牌、公众观察席 | 复演差异、最差组结果、决定记录 | 不能复演则回到纸面协议 |
 
-当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。新增的离线 runner 将两条既有路线绑定到真实 GeoJSON 要素，要求 5/5 步骤、5/5 回退、6/6 验收检查和 2/2 路线可解析；三个失败夹具会停止、拒绝数据调用或退回 G0，普通路线则继续。它只证明本地结构可回放，不证明现场服务、无障碍、人员值守或安全结果 [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count]。
+当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。新增的离线 runner 将四条既有路线绑定到真实 GeoJSON 要素：代际共学、城市 API、夜间人工服务和技能再造各有一条普通人入口；要求 5/5 步骤、5/5 回退、6/6 验收检查和 4/4 路线可解析。五个失败夹具会停止、拒绝数据调用、冻结夜间扩展、暂停自动分流或退回 G0；三个普通/人工替代夹具继续。它只证明本地结构可回放，不证明现场服务、无障碍、人员值守或安全结果 [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count]。
 
 ## 设计依据与资料清单
 
@@ -90,7 +90,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 十张场景卡均为 G0 概念协议，且逐卡说明用户、空间、行动理由、数据最小化、责任角色、人工复核、验收指标与退出协议。三类测试验证情境为低速机器人公共观察、低空物流规则沙盒、内涝模拟观察；它们不声称获得路权、空域、数据或运营许可。城市 API 与数据要素城区实验同样只提出目录、授权、日志、申诉、撤销样板间，不接入真实个人或市政数据。[data:geometry/constraints.geojson#SCN-07] [data:geometry/constraints.geojson#SCN-08] [metric:scenario_card_count]
 
-为便于评审从场景反向核对任务书，`visual/assets/ai-era-traceability-index.json` 将十张 G0 卡逐项连接到适用的 agent.4/5/6、五个概念项目族、七维评审维度和空间/指标证据；其中 SCN-03 与 SCN-06 另连接到两条普通人离线回放。它是投稿自有的审阅交叉索引，不分配官方分数，也不把 provisional geometry、design target 或合成回放升级为现场事实。[data:visual/assets/ai-era-traceability-index.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:compliance_and_standard_response]
+为便于评审从场景反向核对任务书，`visual/assets/ai-era-traceability-index.json` 将十张 G0 卡逐项连接到适用的 agent.4/5/6、五个概念项目族、七维评审维度和空间/指标证据；其中 SCN-02、SCN-03、SCN-04 与 SCN-06 另连接到四条普通人离线回放，覆盖转岗选择、代际共学、夜间服务和市政 API。它是投稿自有的审阅交叉索引，不分配官方分数，也不把 provisional geometry、design target 或合成回放升级为现场事实。[data:visual/assets/ai-era-traceability-index.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:compliance_and_standard_response]
 
 | 场景卡 | 主要空间 | 运营/责任与人工兜底 | G0 停止条件 |
 |---|---|---|---|

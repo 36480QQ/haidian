@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-10
+
+- 将 SCN-02 技能再造走廊、SCN-04 夜间人工服务接入普通人离线回放，补齐转岗者和夜班人员两类入口；四条路线均绑定现有 persona、phase 和 GeoJSON 要素。
+- 将回放契约扩为 4/4 路线、8 个夹具、5 个失败路径和 3 个普通/人工替代路径；失败仍只触发冻结、暂停、拒绝或回到 G0，不产生现场绩效。
+- 中英文 proposal、HTML、traceability index、evidence summary 和 manifest 同步；不新增外部事实、许可、运营主体、个人数据或官方评分声明。
+
 ## v0.5 - 2026-08-10
 
 - Added a bilingual reviewer-visible traceability crosswalk for all ten G0 scenario cards, with applicable agent.4/5/6 tasks, conceptual project families, seven rubric dimensions, and spatial/metric evidence; SCN-03 and SCN-06 are the two cards linked to ordinary-person replay routes.

@@ -3,13 +3,13 @@
   "asset_id": "AI-ERA-TRACE-001",
   "claim_level": "package_review_crosswalk",
   "not_an_official_score": true,
-  "purpose_zh": "把十张 G0 场景卡反向连接到任务书 agent、概念项目族、七维评审维度和空间/指标资产；其中 SCN-03 与 SCN-06 另连接到两条普通人离线回放。这是投稿自有的审阅索引，不替代专家评分。",
+  "purpose_zh": "把十张 G0 场景卡反向连接到任务书 agent、概念项目族、七维评审维度和空间/指标资产；其中 SCN-02、SCN-03、SCN-04 与 SCN-06 另连接到四条普通人离线回放。这是投稿自有的审阅索引，不替代专家评分。",
   "boundary_zh": "所有行仍是 G0 概念协议。空间几何为 provisional，指标可能为 known、unknown 或 design_target；结构化回放不证明现场服务、许可、人员值守、无障碍绩效或安全结果。",
   "replay_coverage": {
-    "covered_scenario_ids": ["SCN-03", "SCN-06"],
-    "covered_count": 2,
+    "covered_scenario_ids": ["SCN-02", "SCN-03", "SCN-04", "SCN-06"],
+    "covered_count": 4,
     "total_count": 10,
-    "boundary_zh": "普通人离线回放目前只覆盖 SCN-03 与 SCN-06，其余八张卡保留场景、空间和运营证据，尚未进入该回放。"
+    "boundary_zh": "普通人离线回放目前覆盖 SCN-02、SCN-03、SCN-04 与 SCN-06；其余六张卡保留场景、空间和运营证据，尚未进入该回放。"
   },
   "rubric_dimensions": [
     "brief_alignment",
@@ -40,7 +40,7 @@
       "rubric_dimension_refs": ["brief_alignment", "ai_planning_innovation", "public_interest_inclusion", "implementation_feasibility"],
       "spatial_refs": ["PUBLIC-02", "LAND-03", "MOBILITY-04"],
       "evidence_refs": ["visual/assets/scenario-cards.json#SCN-02", "visual/assets/scenario-space-operation-matrix.json#SCN-02", "visual/assets/implementation-operation-matrix.json#PF-02"],
-      "replay_refs": [],
+      "replay_refs": ["ROUTE-04", "ai-era-ordinary-journey-evidence.json"],
       "review_boundary_zh": "只提出可选择的学习与人工咨询路径；不证明岗位数量、培训效果或就业结果。"
     },
     {
@@ -62,7 +62,7 @@
       "rubric_dimension_refs": ["brief_alignment", "public_interest_inclusion", "implementation_feasibility", "risk_compliance"],
       "spatial_refs": ["PUBLIC-04", "LAND-07", "MOBILITY-01"],
       "evidence_refs": ["visual/assets/scenario-cards.json#SCN-04", "visual/assets/scenario-space-operation-matrix.json#SCN-04", "visual/assets/implementation-operation-matrix.json#PF-02"],
-      "replay_refs": [],
+      "replay_refs": ["ROUTE-03", "ai-era-ordinary-journey-evidence.json"],
       "review_boundary_zh": "夜间照明、陪行和人工求助仍需现场与专业安全资料；不声称已有二十四小时服务。"
     },
     {
