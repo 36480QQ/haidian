@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "347693b23d10b32f7c53e40a981e09a48d6c20ef6a52b7e51bbb4ef14db57175"
+      "sha256": "461c45db79ccead4187b3ef8ad94067b33155f415fe3be17d4b3896b79702f1d"
     },
     {
       "path": "compliance_matrix.json",
@@ -216,7 +216,7 @@
     "self_checked": true,
     "self_check_command": "python scripts/self_check_submission.py submissions/linzhuo606/the-ai-line --pr-author linzhuo606",
     "self_check_result": "PASS",
-    "checked_at": "2026-08-07T12:30:00Z",
+    "checked_at": "2026-08-09T04:27:13Z",
     "known_blockers": [],
     "data_confidence": "medium"
   }
