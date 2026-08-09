@@ -6,11 +6,11 @@
 
 ## 方案叙事摘要 / Narrative summary
 
-AI 朝圣·铁轨新生带 V2 将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
+AI 朝圣·铁轨新生带 V2.4 将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
 
-本轮继续以 2026 年 8 月 6 日京张铁路遗址公园二期已开放的公开报道为现实起点，不增加新的空间规划。`g1-preregistration-register.json` 把 12 个既有场景补成可执行但尚未执行的首测合同，逐项锁定同任务非 AI 对照、唯一主指标及分母、采样与时间窗、无伤害硬门、停止恢复、独立复测和版本；中英文主稿、HTML、核心图及 A3/A0 同步呈现“12/12 文档覆盖、0 完成预注册、0 获批窗口、0 现场执行、0 已知结果”。全部节点仍处于 G0，临时边界和所有设计不得用于审批或工程实施。
+本轮不另起一套空间规划，而是把最新投稿 skill 的硬合同落实到现有方案：正文可读映射任务书三大定位与五大功能，合并三处重点区证据交叉表，补齐用地、分期、重点区、建筑密度与道路比例等必需指标族，统一中央来源 ID 与来源元数据，并把 OSM 背景和临时范围的 0% 相交、约 412.5 米最近距离诚实记录为未裁决的不确定性。中英文主稿、HTML、视觉首页、A3/A0 和七组文字图件均为必交对照件。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
 
-Jing-Zhang V2 treats the corridor as an auditable public AI innovation production line. This increment adds no new spatial plan. `g1-preregistration-register.json` turns the 12 existing scenes into executable-but-unexecuted first-test contracts that lock the same-task non-AI comparator, one primary metric and denominator, sample and collection windows, no-harm gates, stop and recovery, independent retesting, and versioning. The Chinese and English proposals, HTML, core figures, and A3/A0 outputs all show the same evidence state: 12/12 document coverage, 0 completed preregistrations, 0 approved windows, 0 field executions, and 0 known results. Every node remains at G0, and provisional geometry and design outputs are not approval or engineering evidence.
+Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation production line. This increment adds no competing spatial plan. It makes the current skill contract visible and testable by mapping the taskbook's three positioning statements and five functions in readable prose, consolidating the three-key-area evidence crosswalk, completing required metric families, normalizing source IDs and provenance metadata, and disclosing the 0% OSM/provisional overlap and approximately 412.5 m nearest distance as unresolved uncertainty only. Chinese and English narratives, HTML, visual homepages, A3/A0 outputs, and seven text-bearing figure pairs are required counterparts. Every node remains at G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field-performance, or rights-clearance evidence.
 
 ## 本次增量状态 / Current increment status
 
@@ -18,29 +18,31 @@ Jing-Zhang V2 treats the corridor as an auditable public AI innovation productio
 >
 > This section records the current increment before a trusted GitHub check exists. It inherits none of the `[x]` items in the historical `e71ff206…` snapshot below. Only trusted `submission-validation` on the final PR head can close the last item.
 
-- [x] 12 个既有场景均有 G1 预注册结构，包含同任务对照、主指标、分母、采样、时间窗、停止恢复、独立复测和版本字段。
-- [x] 中英文正文、离线报告、视觉首页和 A3/A0 均同步“字段覆盖不是结果”的边界。
-- [x] 已完成预注册、获批窗口、现场执行和已知结果保持为 0；全部场景保持 G0。
-- [x] 三处重点区证据交叉矩阵已加入，字段覆盖只表示文档完整度；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
-- [x] 最终 manifest 覆盖 53 个包文件，所有 52 个非 manifest SHA-256 与暂存/提交 Git blob 匹配。
-- [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 本地通过。
+- [x] 任务书三大定位、五大功能和六个智能体任务均可从正文、矩阵、图层与展示物回查；未新增重复的第四套总矩阵。
+- [x] `metrics.json` 包含 62 个 known 与 11 个 unknown 指标；正式资料缺失的建筑密度、道路比例等保持 unknown，不以体量或中心线替代。
+- [x] 29 条来源均补齐采集、时空、复用、转换和限制字段；结构化来源引用全部回到稳定 ID，刷新审计完成数仍为 0。
+- [x] 中英文正文、离线报告、视觉首页、七组文字图、A3/A0 均为必交对照件，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
+- [x] 三处重点区证据交叉表只表示文档映射齐全；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
+- [x] 最终 manifest 覆盖 54 个包文件，所有 53 个非 manifest SHA-256 与暂存/提交 Git blob 匹配；权利台账同样恰好覆盖 54 个路径。
+- [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 在最终本地字节上通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
-- [x] All 12 existing scenes have a G1 preregistration structure covering the same-task comparator, primary metric, denominator, sampling, window, stop/recovery, independent retest, and version fields.
-- [x] Chinese and English narratives, offline reports, visual homepages, and A3/A0 outputs align on the boundary that field coverage is not a result.
-- [x] Completed preregistrations, approved windows, field executions, and known results remain 0; every scene remains at G0.
-- [x] The three-key-area evidence crosswalk is included; its field coverage is documentation completeness only, while field audits, accountable-role confirmation, approvals, test executions and known results remain 0.
-- [x] The final manifest covers 53 package files, and all 52 non-manifest SHA-256 values match the staged/committed Git blobs.
-- [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass locally.
+- [x] The taskbook's three positioning statements, five functions, and six agent tasks are traceable through prose, matrices, layers, and display artifacts; no duplicate fourth master matrix was added.
+- [x] `metrics.json` contains 62 known and 11 unknown metrics. Building density, road ratio, and other unsupported formal values remain unknown rather than being replaced by massing or centerline proxies.
+- [x] All 29 sources carry collection, temporal, spatial, reuse, transformation, and limitation metadata; structured references resolve to stable IDs, while completed freshness audits remain 0.
+- [x] Chinese and English narratives, offline reports, visual homepages, seven text-bearing figure pairs, and A3/A0 outputs are required counterparts and align on provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
+- [x] The three-key-area evidence crosswalk represents documentation mapping only; field audits, accountable-role confirmation, approvals, test executions, and known results remain 0.
+- [x] The final manifest covers 54 package files, all 53 non-manifest SHA-256 values match staged/committed Git blobs, and the rights ledger covers exactly the same 54 paths.
+- [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass against the final local bytes.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 本次 PDF 重生记录 / Current PDF regeneration record
 
-本次 PDF 的实际生成窗口为 2026-08-09T12:53:48–12:55:10Z：英文 A3/A0 于 12:53:52Z 完成，中文 A3/A0 于 12:55:10Z 完成。四份展示 PDF（中文与英文 A3 文册、A0 展板）均从当前 `proposal.md`、`proposal.en.md` 及七组中英文图件重新生成，并纳入三处重点区证据交叉矩阵的正文引用。A0 每页只嵌入一张当前 1800×1100 图，显示宽度 300mm；中文板的外框使用 ASCII 文本以避免 Windows CJK canvas 字形缺陷。内容重生与版式输出不证明现实执行；T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
+本次 PDF 的实际生成窗口为 2026-08-09T14:39:58–14:42:33Z。中英文 A0 均为 7 页、1189×841mm，按图号 01→07 排列；每页 1800×1100 图件置于 1149×702.2mm 安全版心，约占页面宽 96.6%、高 83.5%。中文 A3 为 9 页，英文 A3 为 10 页，均为 297×420mm；正文最小 9pt，旧中文末页孤段已并回完整页面。四份 PDF 均由最终双语正文和七组配对图件离线重生，并经 PyMuPDF 逐页检查尺寸、内容边界和可读性。生成与版式 QA 不证明现实执行；T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
 
-The actual PDF generation window was 2026-08-09T12:53:48–12:55:10Z: English A3/A0 completed at 12:53:52Z and Chinese A3/A0 at 12:55:10Z. All four display PDFs (Chinese and English A3 booklets and A0 boards) were regenerated from the current `proposal.md`, `proposal.en.md`, and seven paired figure sets, with the key-area evidence crosswalk included in the narrative outputs. Each A0 page embeds one current 1800×1100 figure at 300mm display width; the Chinese board chrome uses ASCII text to avoid a Windows CJK canvas glyph defect. This records file regeneration and layout output only, not real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
+The actual PDF generation window was 2026-08-09T14:39:58–14:42:33Z. Both A0 files contain seven 1189 × 841 mm pages ordered 01→07. Each 1800 × 1100 figure occupies a 1149 × 702.2 mm safe frame, approximately 96.6% of page width and 83.5% of page height. The Chinese A3 booklet has nine 297 × 420 mm pages and the English booklet has ten; body text is at least 9 pt, and the former orphaned Chinese final paragraph has been consolidated into a substantive page. All four PDFs were regenerated offline from the final bilingual narratives and seven paired figures, then checked page by page with PyMuPDF for dimensions, content bounds, and readability. Generation and layout QA do not prove real-world execution. T-02 remains G0: 0 replays, 0 answer outputs, and 0 field tests.
 
-Reproduction basis: the checked-in bilingual artifact helpers and ReportLab 5.0.0 were used as the A3 layout reference; the final four files were emitted by a one-off Windows process with `FONT_PATHS=[C:\\Windows\\Fonts\\ARIALUNI.ttf]` and an explicit 300mm A0 image placement. No repository script was changed. Future source or figure changes require a new regeneration and validation; this record makes no inheritance or field-success claim.
+Reproduction basis: ReportLab 5.0.0 emitted deterministic PDFs with `invariant=1`; the A3 generator used `C:\\Windows\\Fonts\\ARIALUNI.TTF`, whose embedding and reuse status remains unresolved in the rights ledger. A0 pages add no live text beyond the raster boards, although a standard unused PDF font resource may remain. PyMuPDF 1.27.2.3 was used only for local QA renders and geometry inspection. No repository script was changed. Future source or figure changes require regeneration, manifest refresh, and full validation; this record makes no inheritance, rights-clearance, or field-success claim.
 
 ## 不可变验证证据 / Immutable validation evidence
 

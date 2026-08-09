@@ -3,15 +3,20 @@
   "agent_id": "xyh202131",
   "agent_name": "xyh202131 opencode AI agent",
   "role": "ai_agent_submission_author",
-  "model": "OpenAI Codex (GPT-5; current task agent)",
+  "model": "OpenAI Codex (GPT-5)",
+  "model_family": "gpt",
+  "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
   "provider": "OpenAI",
-  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex G1 preregistration evidence pass",
+  "generated_with": "scripts/scaffold_ai_submission.py; OpenAI Codex skill-alignment, evidence-contract and publication-QA pass",
   "authoring_mode": "agent-maintained package extraction",
   "tools_used": [
+    "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
     "Python 3.13.12",
     "Git 2.54.0",
     "GitHub CLI 2.95.0",
     "Firecrawl CLI 1.19.30",
+    "ReportLab 5.0.0",
+    "PyMuPDF 1.27.2.3",
     "scripts/score_submission.py",
     "scripts/validate_local_submission.py",
     "scripts/spatial_review.py",
@@ -22,28 +27,73 @@
   ],
   "toolchain": [
     {
+      "name": "OpenAI Codex",
+      "version": "GPT-5 family; exact serving snapshot not asserted",
+      "usage": "协助整理双语方案、结构化证据和规则对齐；最终事实、数字和边界由包内来源、GeoJSON、指标与验证脚本约束。",
+      "license_or_terms_status": "Service and output terms are not embedded in this package and have not been independently audited.",
+      "redistribution_status": "Generated text is included only as submission content pending the package-wide rights review; no model weights or service assets are redistributed.",
+      "reproduction_path": "The final Git blobs are the review object; identical model output is not claimed to be reproducible."
+    },
+    {
       "name": "Python",
       "version": "3.13.12",
-      "usage": "运行确定性评分、空间、视觉、专业、自检和参与者预检。"
+      "usage": "运行确定性评分、空间、视觉、专业、自检和参与者预检。",
+      "license_or_terms_status": "PSF license family; runtime license observed from the installed distribution, not independently audited here.",
+      "redistribution_status": "Runtime not redistributed by this submission.",
+      "reproduction_path": "Use the repository validation commands recorded in report/narrative.md against the final Git tree."
     },
     {
       "name": "Haidian repository validation scripts",
-      "version": "main@e57ae371e26b85db26c7179fc269e1460bb223cb",
-      "usage": "对最终投稿包执行 formal stage gates。"
+      "version": "main@6273c968ab14274f94dc3585b612487a82e52070",
+      "usage": "对最终投稿包执行 formal stage gates。",
+      "license_or_terms_status": "No repository-root license file was present in the validation checkout; reuse terms remain not independently established by this package.",
+      "redistribution_status": "Scripts are referenced in place and are not copied into this submission package.",
+      "reproduction_path": "Run the named scripts from repository commit 6273c968ab14274f94dc3585b612487a82e52070."
+    },
+    {
+      "name": "Git",
+      "version": "2.54.0.windows.1",
+      "usage": "固定最终内容、读取 staged Git blob 并生成 manifest SHA-256。",
+      "license_or_terms_status": "GPL-2.0-only tool distribution; not independently audited by the package.",
+      "redistribution_status": "Executable not redistributed by this submission.",
+      "reproduction_path": "Stage every non-manifest path, hash each staged blob, then stage manifest.json last."
     },
     {
       "name": "GitHub CLI",
       "version": "2.95.0",
-      "usage": "创建非 Draft PR、读取 trusted validation 和维护者反馈。"
+      "usage": "创建非 Draft PR、读取 trusted validation 和维护者反馈。",
+      "license_or_terms_status": "MIT license reported by the upstream CLI distribution; not independently audited here.",
+      "redistribution_status": "Executable not redistributed by this submission.",
+      "reproduction_path": "Use gh against the final pushed commit; remote review state is time-varying and must be read live."
     },
     {
       "name": "Firecrawl CLI",
       "version": "1.19.30",
-      "usage": "检索与抓取海淀区及国家科技创新中心公开网页，形成带发布日期、访问日期、摘要和用途限制的桌面研究证据；检索缓存不进入投稿包。"
+      "usage": "检索与抓取海淀区及国家科技创新中心公开网页，形成带发布日期、访问日期、摘要和用途限制的桌面研究证据；检索缓存不进入投稿包。",
+      "license_or_terms_status": "ISC license reported by the locally installed firecrawl-cli package; service and retrieved-content terms remain separately applicable and unaudited.",
+      "redistribution_status": "CLI, API responses, and retrieval caches are not redistributed; only citation-level source records and bounded summaries are retained.",
+      "reproduction_path": "Revisit the URLs and dates in sources.json; a successful recrawl does not preserve content identity or authority."
+    },
+    {
+      "name": "ReportLab",
+      "version": "5.0.0",
+      "usage": "从包内中英文正文和图件生成 A3/A0 PDF；生成记录不证明内容权利或现实执行。",
+      "license_or_terms_status": "BSD license reported by installed package metadata; embedded font rights are a separate unresolved item.",
+      "redistribution_status": "Library not redistributed; generated PDFs remain within the package-wide rights gate.",
+      "reproduction_path": "Use the final bilingual Markdown and paired PNG figures with the generation settings recorded in report/narrative.md."
+    },
+    {
+      "name": "PyMuPDF",
+      "version": "1.27.2.3",
+      "usage": "只读渲染 A0/A3 页面进行版心、页数和可读性 QA，不作为设计事实来源。",
+      "license_or_terms_status": "Installed package metadata reports dual AGPL-3.0 or Artifex commercial licensing; applicability to the QA workflow has not been independently audited.",
+      "redistribution_status": "Library and temporary QA renders are not redistributed by this submission.",
+      "reproduction_path": "Render the checked-in PDFs locally and inspect page geometry, content bounds, and legibility."
     }
   ],
   "self_declared_limits": [
     "不掌握官方红线、控规指标、权属、市政与文保管控条件。",
+    "OSM 背景与仓库临时总体范围存在未裁决的坐标/覆盖不确定性；不据此修改、升级或否定任何边界。",
     "不承诺任何政府实施安排，成果为可讨论、可复核、可替换官方数据后重算的设计建议。",
     "不采集、不推断、不发布任何个人身份信息。",
     "Firecrawl 只用于公开网页桌面检索与引用记录；工具抓取成功不提升来源权威等级，也不等于现场踏勘、竣工核验、合作确认或审批。"
