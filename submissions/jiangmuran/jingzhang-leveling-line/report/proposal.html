@@ -197,7 +197,8 @@ code {
 <p>对<strong>全部 1,069 个 PR</strong>（非抽样，含全部 review body、comment body 与标签事件）实测：</p>
 <div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td><code>review/formal-ready</code> 曾被附加的次数</td><td><strong>0</strong></td></tr><tr><td><code>发布建议：publish-qualified</code>（分数 ≥65 的较弱一档）出现次数</td><td><strong>0</strong></td></tr><tr><td>匹配 #957 字面规则的 action item</td><td><strong>0 / 1,203</strong></td></tr><tr><td>携带自动汇总项的 verdict</td><td><strong>146 / 146</strong></td></tr><tr><td>四种判定规则下会翻到 <code>featured-candidate</code> 的 PR</td><td><strong>0 / 0 / 0 / 0</strong></td></tr></tbody></table></div>
 <p>三条各自独立成立：</p>
-<p><strong>一、#957 的匹配器在历史语料上是空集。</strong> 它要求 <code>startswith</code> 四个<strong>带冒号</strong>的前缀，而 1,203 条 action 中匹配数为 0——有 7 条以「组织方」开头，无一条后面跟冒号。<strong>这个窄是有意的</strong>：CocoSgt 两次 <code>CHANGES_REQUESTED</code> 要求从子串匹配收紧为精确前缀以防误提升，这是正确的 fail-closed 判断，只是恰好落在一个从不使用该写法的语料上。</p>
+<p><strong>一、这条已撤回，而撤回本身是这一节最该读的部分。</strong> 本方案最初写的是：#957 的匹配器要求带冒号前缀，而 1,203 条历史 action 匹配数为 0，因此它是空集。发表两小时后，#950 的作者 @Sonike 指出这个推断不成立——<strong>那 1,203 条全部产生于旧 prompt，而旧 prompt 从未要求模型输出该前缀；在一个不要求它的语料里统计它的出现率，结果必然是 0。</strong> #957 同时修改了 prompt，他在新 prompt 下实测 5 次采样中 4 次输出前缀、全部为精确格式。</p>
+<p><strong>这与本方案刚刚指出他的错误是同一个形状</strong>：拿一个测量去回答它回答不了的问题。他的八份样本证明「这八份里组织方项都在」，证不出「组织方项是原因」；本方案的 1,203 条证明「旧 prompt 下没人写这个前缀」，证不出「新 prompt 下匹配器不会命中」。<strong>本方案用了不到两小时犯了同一个错。</strong> 该计数在随包 JSON 里保留并加注为「旧口径下的必然值」，因为它对历史语料成立——但它不再是任何结论的依据。</p>
 <p><strong>二、即使匹配器完美也不通。</strong> 汇总项 <code>完成七维评分中列出的 N 项详细 required repairs</code> 在组织方拆分<strong>之前</strong>被 append，且不带组织方前缀，因此必然落进参与者一侧——146 份 verdict 全部携带它。</p>
 <p><strong>三、组织方项从来不是唯一阻塞项。</strong> 在最宽松的剥离之后，剩余参与者 action 的最小值是 <strong>4</strong>；「仅剩组织方项」的 PR 数在四种规则下都是 0。</p>
 <p>组织方依赖当然真实（<code>官方</code> 122 次、<code>重算</code> 59、<code>组织方</code> 45）。测量只说明一件事：<strong>移除它们不改变任何一个结果。</strong></p>
@@ -603,8 +604,8 @@ code {
 <p><strong>全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。</strong> 有两份把维护者对自己的反馈打包进来，但没有一份在被问之前说出自己错在哪。</p>
 <p>这正是本方案要做一份的理由。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面——它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。</p>
 <p><strong>它不是变更记录。</strong> 变更记录说改了什么；勘误册说<strong>错在哪、错成什么形状、谁发现的、哪个提交修的</strong>。每条都写明提交号，<code>analysis/build_errata.py</code> 在构建时校验该提交确实存在、且确实改动了被指认的文件——一份无法与仓库联接的勘误册，本身就是它所记录的那种缺陷。</p>
-<p>当前 <strong>31 条</strong>。按发现者分：</p>
-<div class="proposal-table"><table><thead><tr><th>发现者</th><th>条数</th><th>这说明什么</th></tr></thead><tbody><tr><td>独立审计</td><td>14</td><td>委托的审计对象是随包产物，不是草稿</td></tr><tr><td>作者自查</td><td>14</td><td>本轮工作中发现</td></tr><tr><td>本包自己的闸门</td><td>1</td><td>构建时被抓出——这是闸门本该做的事</td></tr><tr><td><strong>包外评审</strong></td><td><strong>2</strong></td><td>@anselasimov-web <span class="url">&lt;https://github.com/anselasimov-web&gt;</span> 在 PR #1002、@147228 <span class="url">&lt;https://github.com/147228&gt;</span> 在 PR #1065</td></tr></tbody></table></div>
+<p>当前 <strong>32 条</strong>。按发现者分：</p>
+<div class="proposal-table"><table><thead><tr><th>发现者</th><th>条数</th><th>这说明什么</th></tr></thead><tbody><tr><td>独立审计</td><td>14</td><td>委托的审计对象是随包产物，不是草稿</td></tr><tr><td>作者自查</td><td>14</td><td>本轮工作中发现</td></tr><tr><td>本包自己的闸门</td><td>1</td><td>构建时被抓出——这是闸门本该做的事</td></tr><tr><td><strong>包外评审</strong></td><td><strong>3</strong></td><td>@anselasimov-web <span class="url">&lt;https://github.com/anselasimov-web&gt;</span> 在 PR #1002、@147228 <span class="url">&lt;https://github.com/147228&gt;</span> 在 PR #1065、@Sonike <span class="url">&lt;https://github.com/Sonike&gt;</span> 在 Issue #950</td></tr></tbody></table></div>
 <p><strong>其中 E24 是唯一一条「检查正常工作、人没有」的记录</strong>：<code>overflow_qa</code> 报了溢出，我在构建未通过的状态下把它推了上去。一道报了警而作者照推的闸门，与一道不报警的闸门效果相同——那次未通过的提交保留在历史里，不做 amend。</p>
 <p><strong>倒数第二行是这份登记册里最重要的一行。</strong> 一个把拒绝分支写成可执行文件的机制，才可能被一个素不相识的人在几小时内证伪；一段只写在正文里的治理承诺不会有这种下场——不是因为它更可靠，是因为它无从检验。</p>
 <p><strong>而按错误的「形状」归并之后，出现了一个本方案没有预料到的结论：</strong></p>

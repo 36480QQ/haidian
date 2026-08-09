@@ -214,13 +214,15 @@ Over **all 1,069 pull requests** — not a sample, including every review body, 
 |---|---|
 | Times `review/formal-ready` has ever been attached | **0** |
 | Times `publish-qualified` (the weaker tier, score ≥ 65) has been emitted | **0** |
-| Action items matching #957's literal rule | **0 of 1,203** |
+| Action items matching #957's literal rule | 0 of 1,203 (**a necessary consequence of the old convention; withdrawn as evidence, see below**) |
 | Verdicts carrying the auto-appended summary item | **146 of 146** |
 | PRs that would flip to `featured-candidate`, under four rules | **0 / 0 / 0 / 0** |
 
-Three findings, each sufficient on its own:
+The first of the three is withdrawn; the other two are each sufficient on their own:
 
-**One: #957's matcher is empty against the historical corpus.** It requires `startswith` on four colon-terminated prefixes, and 0 of 1,203 actions match — seven begin with that word and not one is followed by a colon. **The narrowness is deliberate**: two `CHANGES_REQUESTED` reviews by CocoSgt required tightening from a substring matcher to exact prefixes to prevent false promotion. That is a correct fail-closed judgement which happens to land on a corpus that never writes the open form.
+**One: withdrawn — and the withdrawal is the part of this section worth reading.** This proposal first wrote that #957's matcher requires colon-terminated prefixes, that 0 of 1,203 historical actions match, and that the matcher is therefore inert. Two hours after publishing, @Sonike, the author of Issue #950, pointed out that the inference does not hold: **those 1,203 items were all produced under the old prompt, which never asked the model for that prefix, so counting its occurrence there is guaranteed to return zero.** #957 changes the prompt as well; under the new one Sonike measured four of five samples emitting the prefix, all in exact form.
+
+**This is the same shape as the error this proposal had just identified in his work**: using a measurement to answer a question it cannot answer. His eight samples showed the organizer item was present in all eight; they could not show it was the cause. This proposal's 1,203 items showed nobody wrote that prefix under the old prompt; they could not show the matcher will miss under the new one. **This proposal made the same mistake inside two hours.** The count is kept in the shipped JSON, labelled as a necessary consequence of the old convention, because it is true of the historical corpus — but it is no longer the basis of any conclusion.
 
 **Two: a perfect matcher would not help.** The summary item — 'complete the N detailed required repairs listed in the seven-dimension score' — is appended *before* the organizer split and carries no organizer prefix, so it always lands on the participant side. All 146 verdicts carry it.
 
@@ -1116,14 +1118,14 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 **It is not a changelog.** A changelog says what changed. This says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and `analysis/build_errata.py` verifies at build time that the commit exists and touched the file the entry blames — an errata register that cannot be joined to the repository would be the defect it records.
 
-Thirty-one entries. By finder:
+Thirty-two entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 14 | The audit was run against the shipped package, not a draft |
 | The author | 14 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
-| **Reviewers outside this proposal** | **2** | @anselasimov-web in PR #1002; @147228 in PR #1065 |
+| **Reviewers outside this proposal** | **3** | @anselasimov-web in PR #1002; @147228 in PR #1065; @Sonike on Issue #950 |
 
 **One of the eight, E24, is the only entry where the check worked and the person did not**: `overflow_qa` reported the overflow and I pushed the commit anyway. A gate that reports to someone who commits regardless does the same nothing as a gate that does not report. That failing commit stays in the history rather than being amended away.
 

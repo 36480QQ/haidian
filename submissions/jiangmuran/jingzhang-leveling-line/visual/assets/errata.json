@@ -4,11 +4,11 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 31,
+  "total": 32,
   "by_found_by": {
    "audit": 14,
    "own-gate": 1,
-   "external-reviewer": 2,
+   "external-reviewer": 3,
    "self": 14
   },
   "by_shape": {
@@ -20,7 +20,8 @@
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
    "deliverable-not-inspected-before-shipping": 5,
-   "gate-reported-and-was-ignored": 1
+   "gate-reported-and-was-ignored": 1,
+   "measurement-answering-a-question-it-cannot-answer": 1
   }
  },
  "found_by_meaning_zh": {
@@ -343,6 +344,18 @@
    "what_zh": "census_claims_qa 只问「当前值是否在某处出现」，看不见同一个量在别处被写成旧值。因此执行摘要里的「机器人 16/347」与定位段里的「347 份已合入」在闸门通过的情况下活了下来，而三百行外的「18 份（5.1%）」与「354」是对的。",
    "why_zh": "这是专门为防止此类漂移而建的闸门，自己犯了它要防的错——本册中第二次是检查机制本身出问题。",
    "fix_zh": "新增九条上下文模式，方向相反：某个量在已知句式中的每一次出现都必须等于当前值，不一致即点名行号与两个数字。打开后当场抓出上述两处。其中一条模式首轮过宽，误把语料规模当成赛道计数，已收紧。"
+  },
+  {
+   "id": "E32",
+   "commit": "1aa49cf4",
+   "file": "proposal.md",
+   "found_by": "external-reviewer",
+   "shape": "measurement-answering-a-question-it-cannot-answer",
+   "what_zh": "本方案写出「#957 的匹配器在历史语料上是空集，1,203 条 action 匹配 0 条，因此它不会命中」。那 1,203 条全部产生于旧 prompt，而旧 prompt 从未要求模型输出 `组织方：` 前缀——在一个不要求该前缀的语料里统计它的出现率，结果必然是 0。#957 同时修改了 prompt。",
+   "why_zh": "与本方案在同一小时里指出 #950 的错误是同一个形状：拿一个测量去回答它回答不了的问题。对方八份样本证明「这八份里组织方项都在」，证不出「它是原因」；本方案 1,203 条证明「旧 prompt 下没人写这个前缀」，证不出「新 prompt 下不会命中」。**本方案用了不到两小时犯了同一个错。**",
+   "fix_zh": "该条作为对 #957 的论据撤回，正文与随包 JSON 均标注为「旧口径下的必然值」；「0 个 PR 会翻到 featured」的结论依据改挂在另外两条上（汇总项、组织方项非唯一阻塞），而这两条被对方的 5 次采样独立印证。已在 Issue #950 与 PR #957 公开更正。",
+   "found_by_name": "@Sonike",
+   "found_in": "Issue #950"
   }
  ]
 }
