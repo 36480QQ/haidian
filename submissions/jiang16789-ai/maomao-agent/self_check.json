@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson#PROV-SITE-001",
+      "message": "总体范围逐坐标采用仓库PROV-SITE-001，明确为provisional_constraint、official_boundary=false；仅支持概念建议和EPSG:4548临时复算。",
+      "suggested_fix": "取得清权官方红线后替换边界，并重算全部图层、指标、图示和图纸。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "PROV-KEY-001/002/003逐坐标采用源数据，互不重叠且位于PROV-SITE-001内；三处均醒目标注临时属性。",
+      "suggested_fix": "取得三处官方polygon后逐项替换并复算重点区面积。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "北部研发、中部转化、南部应用、绿地、公共服务5类分区无重叠；EPSG:4548覆盖率0.999927，850.953平方米折线化缝隙低于0.01%复核容差。",
+      "suggested_fix": "官方边界和法定用地底图发布后以统一投影拓扑重建，消除临时折线化容差。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "展示页为UTF-8离线静态HTML，不加载远程脚本、字体、地图瓦片、API或iframe，核心指标与metrics.json一致。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "proposal.md已建立source、standard、depth、data、metric证据引用；23项合规、5项标准响应和17项设计深度均指向正文、图层、指标、图纸与自检。"
+    },
+    {
+      "check_id": "SHAFT_COHERENCE",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "竖井协同（Shaft Collaboration）概念贯穿正文、矩阵、可视化与图纸；八达岭隧道竖井施工仅作为待铁路史与文保一手资料复核的设计类比，不作已核实遗产解说，不推定权属或工程结论。"
+    }
+  ]
+}
