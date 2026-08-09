@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1a5293ec14c16f36627ef043a9e62f24ee3e81b78e5d769998087ae2227fe73d"
+      "sha256": "7369c5acf9d760dda33f8e5d0436b64b0ea5269583c260c1d55743e87555140c"
     },
     {
       "path": "agent.json",
@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "10dcd6584881e413aa9cb597d6b9f755a0af056a1cf8fdcd78b70dce42605913"
+      "sha256": "8e252f74d8803406728cb6badd922c70a8e3e80363649d885198b636bb4a5469"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d98dd6a880c38c85a5110a2858e15cd8732e4e8366c75f9c27b16ae2cf53e18f"
+      "sha256": "f9f470683125109adf7e8ada18cc8cf9c791c649134e4a5b008231305d2d30ba"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7f7a93a6fbd900bfd467e40684a8feb23ebac8dbef4bb763a84872b67b149202"
+      "sha256": "cc62d5545fc70a9997b0debff655ede0791b81223bb1a8ff21b02d0d051f7cfc"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ee51a41f6481f41cf88055425127d097decbed38251e7979aeafe5729c657df4"
+      "sha256": "abb4c3c5f65e27b3433d877ddab3c9920aa696049691729e857d60c748dc1b2f"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c28475bdba95c183a7412346f5bf878ffab261e0ab47e8f0ff92117f5df08121"
+      "sha256": "5c4b2c5fb7ad8c9ef4cb62e128a55d54205e43b23dd6c923a146ef6506f2aadf"
     },
     {
       "path": "visual/index.en.html",
@@ -287,13 +287,13 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8fc84969f20fa9f509be0548db251be46d159531ee2ac4b6b9aef3e1a66dab88"
+      "sha256": "80744bb4da03bf7fb7adc998121358000425e22ec8b8bb474eafd2b03e93fe7a"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "self_checked_at": "2026-08-08T23:45:42Z"
+    "self_checked_at": "2026-08-09T00:05:21Z"
   }
 }

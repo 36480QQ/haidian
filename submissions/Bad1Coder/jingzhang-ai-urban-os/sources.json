@@ -38,6 +38,34 @@
       "usage": "Agent-facing positions, five functions, six required tasks, scenario, identity, landmark and operation requirements."
     },
     {
+      "id": "brief-public-brief",
+      "title": "百年京张 AI 创新带公开任务书草案",
+      "type": "brief",
+      "path": "brief/public-brief.md",
+      "publisher": "项目维护者",
+      "published_at": "TBD",
+      "public_status": "public-draft",
+      "citation": "brief/public-brief.md",
+      "source_type": "repository_public_brief",
+      "usage": "仅支撑任务背景、发展愿景、重点方向和概念方案边界；不支撑海淀现状、法定控制或实施承诺。",
+      "usage_note": "参赛方案可将其作为公开任务背景和设计议题的基础引用。",
+      "risk_note": "正式发布前仍需维护者确认不含涉密、内部或未审定信息。"
+    },
+    {
+      "id": "brief-public-boundary",
+      "title": "公开任务书资料边界说明",
+      "type": "boundary",
+      "path": "brief/README.md",
+      "publisher": "项目维护者",
+      "published_at": "TBD",
+      "public_status": "public-draft",
+      "citation": "brief/README.md",
+      "source_type": "repository_public_boundary",
+      "usage": "仅支撑公开资料、授权资料、概念建议和待维护者复核边界的说明；不替代正式公开性审查。",
+      "usage_note": "用于限定本包的资料使用和主张措辞边界。",
+      "risk_note": "该文件是资料边界说明，不是正式规划文件或官方审批依据。"
+    },
+    {
       "id": "JZ-1X1-METHOD",
       "path": "submissions/Bad1Coder/jingzhang-ai-urban-os/agent.json",
       "source_type": "agent_generated_method_record",

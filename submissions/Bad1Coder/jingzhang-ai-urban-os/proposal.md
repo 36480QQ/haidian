@@ -10,14 +10,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把 AI 从屏幕推到一比一的街道、家具、服务界面和可拆回构件，让城市成为从模型到实物、从使用到维修再利用的公共原型生产网。以四层寿命框架和临时参考几何提出可复核的城市设计建议，待正式 polygon 发布后整体复算。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.5-jz-1x1-mesh-gates"
+iteration: "v1.8-public-source-index"
 ---
 
 # 京张 1:1 原型网：把模型做成城市
 
 ## 设计依据与资料清单
 
-本方案是面向《百年京张 AI 创新带城市设计国际方案征集资格预审公告》的 formal 参考方案。核心命题不是再画一条科技走廊，而是把 AI 的数字输出转成可被人使用、拆卸、维修和再次利用的城市部件：模型、材料、服务流程与公共地面在同一套空间生产链中往返。任务依据为 [source:OFFICIAL-ANNOUNCEMENT] 与 [source:AGENT-TASKBOOK]。
+本方案是面向《百年京张 AI 创新带城市设计国际方案征集资格预审公告》的 formal 参考方案。核心命题不是再画一条科技走廊，而是把 AI 的数字输出转成可被人使用、拆卸、维修和再次利用的城市部件：模型、材料、服务流程与公共地面在同一套空间生产链中往返。任务依据为 [source:OFFICIAL-ANNOUNCEMENT] 与 [source:AGENT-TASKBOOK]；公开任务书草案和资料边界说明分别限定议题背景与公开性边界 [source:brief-public-brief] [source:brief-public-boundary]。
 
 城市设计与控规深度分别对照 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]；用地分类对照 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 
@@ -217,3 +217,5 @@ AI 原生不是给传统规划贴标签：多智能体先把居民课题拆为�
 - [source:SOURCE-REGISTRY] `data/source_registry.json`：来源可用性、许可和待核边界。
 - [source:PROCESSED-FACT-PACK] `data/processed/agent_fact_pack.md`：任务和缺资料导航，不是新权威来源。
 - [source:BOUNDARY-SOURCE] `brief/site-package/geometry/provisional_boundaries.geojson`：临时几何，非官方红线。
+- [source:brief-public-brief] `brief/public-brief.md`：公开任务书草案，仅作任务背景和概念议题依据；正式发布前待维护者确认公开性。
+- [source:brief-public-boundary] `brief/README.md`：公开资料边界说明，不替代正式规划文件或公开性审查。

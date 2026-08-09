@@ -10,14 +10,14 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "JZ 1:1 turns AI outputs into one-to-one streets, furniture, service interfaces, and removable components. A distributed prototype mesh connects making, translation, use, repair, and reuse while keeping provisional geometry explicit."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide"]
-iteration: "v1.5-jz-1x1-mesh-gates"
+iteration: "v1.8-public-source-index"
 ---
 
 # JZ 1:1 Prototype Mesh: Model to Matter
 
 ## Design Basis and Source List
 
-This formal reference scheme responds to the Centennial Jing-Zhang AI Innovation Belt open call. Its thesis is spatial and material: an AI output must become a one-to-one prototype that people can use, repair, disassemble, and reuse. A model card, a component list, a public interface, and a retirement path travel together through one production chain. The task basis is [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK].
+This formal reference scheme responds to the Centennial Jing-Zhang AI Innovation Belt open call. Its thesis is spatial and material: an AI output must become a one-to-one prototype that people can use, repair, disassemble, and reuse. A model card, a component list, a public interface, and a retirement path travel together through one production chain. The task basis is [source:OFFICIAL-ANNOUNCEMENT] and [source:AGENT-TASKBOOK]; the public brief and its source-boundary note define the open-call context and disclosure limits [source:brief-public-brief] [source:brief-public-boundary].
 
 Urban-design and regulatory-plan depth follow [standard:MOHURD-URBAN-DESIGN-MEASURES] and [standard:MOHURD-CONTROL-DETAILED-PLANNING]; land-use terminology follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
 
@@ -211,3 +211,5 @@ History, oral accounts, images, logos, typefaces, people, institutions, and mode
 - [source:SOURCE-REGISTRY] `data/source_registry.json`: source usability, licence, and uncertainty registry.
 - [source:PROCESSED-FACT-PACK] `data/processed/agent_fact_pack.md`: task and missing-data navigation, not a new authority.
 - [source:BOUNDARY-SOURCE] `brief/site-package/geometry/provisional_boundaries.geojson`: provisional geometry, not an official redline.
+- [source:brief-public-brief] `brief/public-brief.md`: public-draft brief used only for task context and conceptual direction; public-status confirmation remains pending.
+- [source:brief-public-boundary] `brief/README.md`: public-source boundary note, not a statutory planning document or public-disclosure approval.

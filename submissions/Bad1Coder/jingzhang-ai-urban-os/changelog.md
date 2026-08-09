@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-09
+
+- Added the repository's two public-draft source-index records (`brief-public-brief` and `brief-public-boundary`) to the bilingual evidence trail, with publication status, permitted use, and disclosure limitations.
+- Added claim-adjacent bilingual citations and References entries; the records support task context and source-boundary wording only, not official geometry, statutory controls, or implementation commitments.
+- Materialized `sources/public-sources.json` in the sparse participant workspace so the advisory source check uses the canonical local index.
+
 ## v1.7 - 2026-08-09
 
 - Rebuilt the bilingual A3/A0 drawing sets from the reproducible ReportLab script after visual QA: source figures retain their native ratio, while the boards now expose reading order, role-specific AI controls, a public stop transition, and a compact delivery register.
