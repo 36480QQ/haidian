@@ -48,7 +48,7 @@
    "result": "pass",
    "severity": "major",
    "target": "geometry/land_use.geojson",
-   "message": "5 区概念策略分区由 provisional 边界拓扑切割，并集等于提交边界、无重叠（spatial_review PASS）。"
+   "message": "5 区概念策略分区于 2026-08-09 由单一数据源（provisional 边界 + 三重点区 + 绿轴）在 EPSG:4548 一次 overlay 重建，修复评审指出的 GEOS TopologyException（共享边精确一致、删除退化碎渣与近共线尖刺）；并集等于提交边界、无重叠，GEOS union 在 4326/4548 均稳健，spatial_review returncode=0 复验通过。"
   },
   {
    "check_id": "MEASUREMENT_RECORD_PROTOCOL_CLOSURE",
