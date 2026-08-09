@@ -12,7 +12,7 @@
     "agent_name": "Codex / 京张开源带城市设计协作智能体",
     "model": "GPT-5.6 Sol"
   },
-  "generated_at": "2026-08-09T02:06:38Z",
+  "generated_at": "2026-08-09T03:57:15Z",
   "files": [
     {
       "path": "manifest.json",
@@ -38,7 +38,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "abd48e4861eed6574da79029295914ea98c807cf639a0710643d3be9d7d159c2"
+      "sha256": "66180d6231a9243aa377eaa4d331dca22f5bbc937bb8ffc0d92997df25f828a5"
     },
     {
       "path": "metrics.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7c3ca3b38aa3f55f68f4af63373fdd274c36cad17ef75313ceebfb89b21512f1"
+      "sha256": "5a2a03b74efbfa6bc1dea5cc211fa053bb6bcdcb8c0a74736ed8d3352958a012"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,13 +107,13 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5c4841311fb5b6fc6092ab3e1fe1cbc16183afd0576eaa7dd63418adc1681010"
+      "sha256": "25afae60e68cada47fdbc7f7a2798c2245c9e3763732e8edcec3b0efc7a221f0"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "83bb47f56b854d5f3981175ee6bc79bc2f9a8163b364ea35755da84def950686"
+      "sha256": "13429f88b260224fea89d8f3d7bc41bf3e9e54ec724a146a0b772d6cfa8d3040"
     },
     {
       "path": "risk.json",
@@ -180,7 +180,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "06ade8497cc111e5f7e11b40c4d85f04c3f49e36863fa69fab249e0577bcd766"
+      "sha256": "2079ebb57c083c338b26df73f15113b4dad509de01269e4620ba2ce5cafa2fca"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -188,14 +188,14 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f176bcc33a2344954815589f8ea2ce84a3b9464c954f6fad0d0140dc59965867"
+      "sha256": "11e1b40c0ecf9e60fb8481a7d0cfd42127a58f84dce830460ff7ee68b86ec264"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "55bc2c9f2aee83aecb18aa078b5c4d80f05745c497aabc72be6baa6f49b5e9c0"
+      "sha256": "d9458c42ebbbfa6e710177bf4e048efb4f2bb6712210b352d6412e480cfbea43"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -203,7 +203,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "c5b4b6f29c1c6b8532baa7845994430075274c043bef4f5172cb08836a78f930"
+      "sha256": "263754ab2fe2e6099b3c777ff52cfe0463c4f3b15e53207c5a43f389568d90ad"
     },
     {
       "path": "visual/index.html",
@@ -300,7 +300,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "5d5338b05fe3529c20e120972ae71ab88ef53255fe3ac6d1a1d5bd6a9713a6e4"
+      "sha256": "e16894f6d51c77262c90485d4779da0ed32c751c1e912f1569e6a57e874aab0d"
     },
     {
       "path": "assets/figures/ecosystem-space.en.png",
@@ -308,7 +308,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ecosystem-space.png",
-      "sha256": "fc33e2fa2b672b5f029482c2b5a9302c0640a9611d7f22d85dd8a75c7868b6a6"
+      "sha256": "426115719ae02d34751a420a0b28f5ed09c25a521ea8906214f12265dfbbd2fd"
     },
     {
       "path": "assets/figures/scenario-operations.png",
@@ -330,7 +330,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "e7f2a224721b18e04fe21a48d080458a011737edb519847b38544d0f03b03b85"
+      "sha256": "7846a3f121018d42490152b6a7ba752238a1ceb34e401a8c4e2ce3e551c2233f"
     },
     {
       "path": "assets/figures/components-phasing.en.png",
@@ -338,7 +338,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/components-phasing.png",
-      "sha256": "88795c93c835be48d78f4321322c42c08d14eeb2a042b1a42cd080c894d3dbd4"
+      "sha256": "76e4496ed5158592ce130ef682d4ca99d8d02933dd794493d3ea4c30c12fc132"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -444,6 +444,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "dd9abe99bc9b1205ea4e76fb2f4cc7826807e485e44a084e5894aad29c8fb75b"
+    },
+    {
+      "path": "assets/scenes/open-belt-axonometric.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "fde89669c37b2ffe746057a5b6218209d1ca53322f9eab7a0008f5eae3fc12be"
     },
     {
       "path": "assets/scenes/xiaoyuehe-crossing.jpg",

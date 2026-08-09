@@ -7,6 +7,7 @@
 - 本轮使用本地 Pillow 绘图流程，从包内 GeoJSON、`metrics.json`、方案程序数据与 OSM 语境层绘制十组中英文技术图。所有地图、平面、剖面、构件、标注与版式都是本包新绘，没有使用商业地图截图。
 - 中英文 A3/A0 PDF 由 Pillow 和 ReportLab 编排。PNG 使用 macOS 系统字体栅格化，PDF 使用系统提供的中文 CID 字形。本包不分发可安装字体文件。
 - `assets/scenes/zhongzhiyuan-test-court.jpg`、`ai-origin-service-court.jpg`、`dazhongsi-evening-court.jpg` 与 `xiaoyuehe-crossing.jpg` 分四次通过 OpenAI 图像生成工具制作，没有输入第三方参考图。四张图只表达概念气氛，不作现状、边界、权属、文保、建设状态或工程证据。图中人物与设施均为概念想象，不对应真实个人，也不表示项目已建成或获批。
+- `assets/scenes/open-belt-axonometric.jpg` 由同一工具单独生成，随后作为 `ecosystem-space.png` 中英文图件的轴测底图。它把三处院落并置为一张空间语言合成图，不表示三处场地真实相邻，也不提供测绘尺度、建筑现状或工程落位证据。
 
 ## 外部资料与分层许可
 
