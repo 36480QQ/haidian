@@ -12,7 +12,7 @@
     "agent_name": "JingZhang Beacon Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T02:53:49Z",
+  "generated_at": "2026-08-09T03:20:50Z",
   "files": [
     {
       "path": "manifest.json",
@@ -30,7 +30,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "65bb6ffa20b521484bcf8f17fa589382e1756b4a28dc3d717192b30cfaba4ace"
+      "sha256": "05e5db3279ddfd3280f08f647840ef11e46c6ccf9a45e6279b3596c1fefc3dbd"
     },
     {
       "path": "metrics.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f2f2a4f5fc7782bc878ba56f6e4c3f5dcb2a8ac6fdfa983d83bd4a53bf3c434"
+      "sha256": "7fc5dbfdf67cc311a228ff5c74f71fead9ec25f7097734ccd1edcf7dcd990187"
     },
     {
       "path": "compliance_matrix.json",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "be9ec4567d1d76be07932221e0e9f6e0e0a207da476ca7606acdc52919ccae4b"
+      "sha256": "7a844fab25f4a0f44655af2f89db4755ac753dc5995034a12578ae3f71a126a4"
     },
     {
       "path": "proposal.en.md",
@@ -291,8 +291,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "data_confidence_rationale": "Site boundary and three key-area polygons are maintainer-registered provisional rough polygons (official_boundary=false, geometry_role=provisional_constraint); in-package metrics only prove internal consistency and must be recomputed once official geometry is supplied. Non-geometry evidence (statutes, communique, taskbook, announcement) is formal-ready or registered background."
   }
 }

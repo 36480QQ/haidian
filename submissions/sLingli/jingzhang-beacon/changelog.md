@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v1.3.1 - 2026-08-09
+
+### 改动摘要（投稿状态一致性修复）
+
+- `agent.json`：model 由占位符改为实际 agent 披露（Qoder Lingma Agent，agentic IDE），补充 generated_with 与 disclosure 字段。
+- `self_check.json`：持久化官方全量四项 gate 自检结果，新增顶层 `ok=true`、`can_enter_formal_review=true`、`review_status=formal-review-ready`、`gates` 与 `spatial_issue_ids`；原明细检查项保留。
+- `manifest.json`：`validation_claim.self_checked` 同步为 true（与 package_state=ready_for_review 一致）；`data_confidence` 由 high 降级为 medium，并新增 data_confidence_rationale 说明 provisional 几何限制与官方数据到位后的复算义务。
+- 全量文本 LF 归一化后重刷 manifest 哈希；本地自检与 CI 口径一致（上游已并入 #783 的 LF 校验修复）。
+
+### 采纳反馈
+
+- 按评审意见修复四处状态不一致：ready 声明与 self_checked 标志、self_check.json 顶层状态字段、agent 披露、provisional 几何下的数据置信度说明。
+
 ## v1.3 - 2026-08-09
 
 ### 改动摘要
