@@ -159,6 +159,25 @@ iteration: "v0.3"
 
 **文化叙事主线：从“统一轨距”到“可复核场景”。** 本方案的文化叙事不止于“传承与创新”的并列，而是找出京张铁路、中关村创新与 AI 新文化共享的结构：**承认约束 → 做出判断 → 公开留痕 → 接受检验。** 京张铁路修建时詹天佑坚持统一标准轨距，使铁路能接入全国路网、避免窄轨孤岛 [source:RESEARCH-JZ-RAILWAY]；清华园车站作为京张铁路出西直门后的第一站、站名由詹天佑题写，是“原点”叙事的史实坐标 [source:RESEARCH-QHY-STATION]。中关村创新文化的内核是“允许失败并公开复盘”。AI 新文化最紧迫的需求则是可解释与可复核。三者共享的正是这条“留痕—检验”的结构，也是本方案“标准轨距”机制的叙事来源：让 AI 场景像铁轨接入路网一样，先被统一标准校准，再进入公共空间。这一主线通过导视、荣誉墙与原点灯塔的空间叙事表达，历史标识与 AI 新文化标识“同源不同层”，并列展示而非混同，史实内容一律经人工复核 [source:AGENT-TASKBOOK] [depth:blue_green_public_space]。
 
+## 空间氛围与概念场景渲染
+
+为强化空间可感知性与视觉表达完整性，本方案提供一组基于真实空间结构与品牌色板的概念氛围渲染图（`assets/figures/renders/`），展示关键空间时刻的空间氛围、材质与光影关系。这些渲染为概念建议，用于传达设计意图与城市体验，不构成已批准建设或工程效果承诺；生成方法见 `report/copyright_statement.md`。
+
+![众智园晨曦天际线——全栈自主创新街区](assets/figures/renders/r-dawn-zhongzhiyuan.png)
+
+![京张遗址公园文化主轴活力带——历史铁轨与慢行绿廊复合](assets/figures/renders/r-park-corridor.png)
+
+![京张原点灯塔——砖红基座与蓝色塔身](assets/figures/renders/r-origin-lighthouse.png)
+
+![大钟寺站城一体门户——四象限步行](assets/figures/renders/r-dazhongsi-gateway.png)
+
+![小月河夜间照明分级与安全](assets/figures/renders/r-night-safety.png)
+
+![清河低碳创新廊——水岸治理观象台](assets/figures/renders/r-waterfront-observatory.png)
+
+这些氛围渲染与 `assets/figures/landmarks.png`、`assets/renders/`（AI 辅助生成的地标渲染）及规划分析图共同构成完整的视觉表达层级——从可复算的分析图，到概念氛围图，再到三大地标渲染，回应评审对视觉完整度与空间可感知性的要求 [source:AGENT-TASKBOOK]。
+
+
 ## 更新项目清单、实施政策与分期计划
 
 实施方案形成可审查的更新项目清单，说明项目位置、类型、功能、责任主体、依赖条件、实施阶段、风险与评估指标 [depth:renewal_project_list]。政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理与产权协同；`geometry/phasing.geojson` 表达分期范围 [data:geometry/phasing.geojson#PHASE-001]。
