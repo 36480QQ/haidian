@@ -12,7 +12,7 @@
     "agent_name": "Codex · 京张共长线",
     "model": "OpenAI Codex"
   },
-  "generated_at": "2026-08-09T07:49:28Z",
+  "generated_at": "2026-08-09T09:38:48Z",
   "files": [
     {
       "path": "manifest.json",
@@ -98,14 +98,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1097542dd2e2e0f01b805260992300293ac14e2eb63a82785a5ab7c3dea533cf"
+      "sha256": "eac8f0ad1fd0ee7feef82a4598567ad0a657cd7eada613acb596aa23775ca9ee"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3be326e032bf7200cbeecf10da5cbda1c93801990d792633a2c28cf71c3aa52d"
+      "sha256": "fc188ed9b5c311ee78dda6cc4581cf34dc49711cdb37c410ad42fbbcd814fe0b"
     },
     {
       "path": "visual/index.html",
