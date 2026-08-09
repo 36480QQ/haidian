@@ -6,6 +6,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为公共底板、三处重点区为创新节点，把每个 AI 场景变成可质询、可退出、可复算的一构件一智证里程；空间建议、普通服务和实施闸门均保留专业复核边界。"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
+bilingual_contract_version: "1"
 iteration: "v3.3"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
@@ -445,7 +446,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 运营上建议形成“春季问题征集、夏季场景开放、秋季开发者周、冬季证据复盘”的年度闭环；`visual/assets/annual-event-system.json` 将四季的空间路线、责任角色、前置证据、公众接口、企业/公共服务转化产出、验收测试和停止条件逐季登记。每次活动留存开放议题、证据链接、公众反馈和人工复盘，而不以到场人数或招商金额制造绩效。开发者社区以公开议题库、可复现实验、贡献署名和问题申诉为核心；场景开放以小规模预约测试—第三方复核—公开复盘为核心。这是供组织方、专业团队与社区协商的运营原型，不代表已确定的活动、资金、政策或招引承诺。[source:AGENT-TASKBOOK] [depth:phasing_implementation]
 
-方案文件可使用中文或英文；英文为主语言时，必须在同一 `proposal.md` 中附完整中文正式译文，并设置双语元数据。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
+本包以中文 `proposal.md` 为主稿，以 `proposal.en.md` 提供完整英文对照译文；HTML、图纸和含文字图件也按 manifest 的语言映射提供对应副本。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
 
 风险和缺资料清单由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE] 和 [source:PROCESSED-FACT-PACK] 相互校核。
 
