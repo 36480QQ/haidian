@@ -37,6 +37,20 @@
       "impact": "Spatial support area is measurable; social outcome rates remain unknown and may not be inferred from geometry."
     },
     {
+      "id": "A-JOBS-001",
+      "status": "baseline_required",
+      "confidence": "unknown",
+      "statement": "A sustained employment-transition outcome requires a consented baseline, disclosed eligibility, a paid-pathway definition and a predeclared follow-up window. Global AI-exposure evidence is not a local employment result.",
+      "impact": "The skills-transition corridor length is a concept-space measurement only; no employment-transition rate, placement claim or wage outcome may be inferred from it."
+    },
+    {
+      "id": "A-ACCESS-001",
+      "status": "manual_audit_required",
+      "confidence": "unknown",
+      "statement": "Equivalence between digital and human/phone/paper service channels requires a declared service catalogue, accessibility walk-through and observed availability. The concept package has no operating service record.",
+      "impact": "Manual-channel equivalence remains unknown; no accessibility performance, service availability or digital-inclusion result is claimed."
+    },
+    {
       "id": "A-ENERGY-001",
       "status": "engineering_and_metering_required",
       "confidence": "unknown",
