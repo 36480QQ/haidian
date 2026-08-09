@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0656ec3427535a486df8799b62159460f4ae71fe84557adcf010321740cb2179"
+      "sha256": "69fe4979e0bfd9f6a896d03824f8be5cd038f305c9a7075e643ab687d6419414"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -487,7 +487,7 @@
       "path": "visual/assets/autonomy-curbside-tabletop-contract.json",
       "role": "evidence_contract",
       "required": true,
-      "sha256": "32beaf5d04aadf29a8877ed0d22d096decb4230eba566dd67a851309c98b6d42"
+      "sha256": "d55a0b0da99bea5c41f67520a261e1753e1c4e456f1a2bac0f7c4eabd48b9386"
     },
     {
       "path": "visual/assets/autonomy-curbside-tabletop-evidence.json",
@@ -499,7 +499,7 @@
       "path": "visual/assets/run-autonomy-curbside-tabletop.js",
       "role": "reproducibility_runner",
       "required": false,
-      "sha256": "7e3e94d8eb9c89251e71177b4cf500edc4ee6c066b376c436de98e4851ee72b8"
+      "sha256": "e3c13d74b1c9133b46855c9a1768feb47b9958b5195d854b72661d19d099413d"
     }
   ],
   "validation_claim": {

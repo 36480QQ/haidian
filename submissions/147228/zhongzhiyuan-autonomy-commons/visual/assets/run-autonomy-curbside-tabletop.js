@@ -8,6 +8,7 @@ const readJson = (name) => JSON.parse(fs.readFileSync(path.join(root, name), 'ut
 const contract = readJson('autonomy-curbside-tabletop-contract.json');
 const evidence = readJson('autonomy-curbside-tabletop-evidence.json');
 const gates = readJson('curbside-test-gates.json');
+const scenarioMatrix = readJson('scenario-operation-matrix.json');
 const checks = [];
 
 function check(id, pass, observed, expected) {
@@ -15,6 +16,11 @@ function check(id, pass, observed, expected) {
 }
 
 const gateIds = new Set((gates.gates || []).map((gate) => gate.id));
+const contractGateIds = new Set(contract.gate_ids || []);
+const fixtureIds = new Set((contract.fixtures || []).map((fixture) => fixture.id));
+const scenarioIds = new Set((scenarioMatrix.rows || []).map((row) => row.scenario_id));
+const declaredCheckIds = new Set((contract.acceptance_checks || []).map((item) => item.id));
+
 check(
   'gate-linkage',
   contract.gate_ids.every((id) => gateIds.has(id)),
@@ -27,6 +33,100 @@ check(
     String(gates.decision_rule).includes('unknown'),
   gates.gates.map((gate) => ({ id: gate.id, baseline: gate.baseline })),
   'all gate baselines stay unknown'
+);
+
+const traceItems = contract.acceptance_checks || [];
+const traceFixtureIds = new Set();
+const traceGateIds = new Set();
+const traceScenarioIds = new Set();
+const boundaryFields = new Set([
+  ...Object.keys(contract),
+  ...Object.keys(contract.boundary || {})
+]);
+const traceBoundaryFields = new Set();
+let traceReferencesValid = true;
+for (const item of traceItems) {
+  for (const id of item.fixture_ids || []) {
+    traceFixtureIds.add(id);
+    traceReferencesValid = traceReferencesValid && fixtureIds.has(id);
+  }
+  for (const id of item.gate_ids || []) {
+    traceGateIds.add(id);
+    traceReferencesValid = traceReferencesValid && contractGateIds.has(id);
+  }
+  for (const id of item.scenario_ids || []) {
+    traceScenarioIds.add(id);
+    traceReferencesValid = traceReferencesValid && scenarioIds.has(id);
+  }
+  for (const field of item.boundary_fields || []) {
+    traceBoundaryFields.add(field);
+    traceReferencesValid = traceReferencesValid && boundaryFields.has(field);
+  }
+}
+check(
+  'declared-trace-references',
+  traceReferencesValid &&
+    [...traceFixtureIds].every((id) => fixtureIds.has(id)) &&
+    [...traceGateIds].every((id) => gateIds.has(id)) &&
+    [...traceScenarioIds].every((id) => scenarioIds.has(id)),
+  { fixtures: [...traceFixtureIds], gates: [...traceGateIds], scenarios: [...traceScenarioIds] },
+  'all trace references resolve'
+);
+check(
+  'boundary-trace-references',
+  traceBoundaryFields.size > 0 &&
+    [...traceBoundaryFields].every((field) => boundaryFields.has(field)),
+  [...traceBoundaryFields],
+  'all boundary trace fields resolve'
+);
+check(
+  'fixture-coverage',
+  [...fixtureIds].every((id) => traceFixtureIds.has(id)),
+  [...traceFixtureIds],
+  [...fixtureIds]
+);
+check(
+  'gate-coverage',
+  [...contractGateIds].every((id) => traceGateIds.has(id)),
+  [...traceGateIds],
+  [...contractGateIds]
+);
+check(
+  'scenario-coverage',
+  contract.matrix_scenario_ids.every((id) => scenarioIds.has(id)) &&
+    contract.matrix_scenario_ids.every((id) => traceScenarioIds.has(id)),
+  { declared: contract.matrix_scenario_ids, traced: [...traceScenarioIds] },
+  'all declared scenarios exist and are traced'
+);
+check(
+  'artifact-reconciliation',
+  evidence.contract_id === contract.contract_id &&
+    evidence.evidence_id === contract.contract_id &&
+    evidence.fixtures_replayed === contract.fixtures.length &&
+    evidence.acceptance_checks_defined === contract.acceptance_checks.length &&
+    evidence.rollback_steps_defined === contract.rollback_steps.length &&
+    contract.gate_ids.length === gates.gates.length &&
+    new Set(contract.gate_ids).size === contract.gate_ids.length &&
+    new Set(contract.fixtures.map((fixture) => fixture.id)).size === contract.fixtures.length &&
+    contract.matrix_scenario_ids.length === new Set(contract.matrix_scenario_ids).size &&
+    [...traceScenarioIds].every((id) => contract.matrix_scenario_ids.includes(id)),
+  {
+    contract_id: evidence.contract_id,
+    evidence_id: evidence.evidence_id,
+    fixtures: evidence.fixtures_replayed,
+    acceptance_checks: evidence.acceptance_checks_defined,
+    rollback_steps: evidence.rollback_steps_defined,
+    gates: gates.gates.length,
+    scenarios: contract.matrix_scenario_ids.length
+  },
+  'declared artifact counts and identifiers reconcile'
+);
+check(
+  'rollback-contract',
+  contract.rollback_steps.length === 5 &&
+    contract.rollback_steps.every((step) => typeof step === 'string' && step.trim().length > 0),
+  contract.rollback_steps,
+  'five non-empty rollback steps'
 );
 check(
   'ordinary-route-continuity',
@@ -82,6 +182,14 @@ check(
     evidence.baselines === 'unknown',
   { performance_results: evidence.performance_results, baselines: evidence.baselines },
   'null performance results and unknown baselines'
+);
+
+check(
+  'declared-checks-unique',
+  declaredCheckIds.size === contract.acceptance_checks.length &&
+    contract.acceptance_checks.length === 7,
+  [...declaredCheckIds],
+  'seven uniquely identified acceptance checks'
 );
 
 const ok = checks.every((item) => item.pass);

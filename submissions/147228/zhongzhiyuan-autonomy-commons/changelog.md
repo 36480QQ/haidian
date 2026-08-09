@@ -2,6 +2,8 @@
 
 ## v2.8 - 2026-08-09
 
+- Added structural trace checks to the curbside tabletop runner: acceptance checks now bind to concrete fixtures, gates and scenario-matrix rows, while artifact identifiers, counts, boundary fields and rollback declarations reconcile before a local PASS is emitted. This remains an offline synthetic consistency check; it adds no field, permit, performance or deployment claim.
+
 - Added a bilingual, offline synthetic curbside tabletop bound to AV-T01—T03 and S01—S03, with four fixtures, seven acceptance checks, five rollback steps and an executable network-free runner.
 - Kept the evidence boundary explicit: `not_authorized_not_run`, no field data, `performance_results: null`, and unknown baselines; the tabletop proves control wiring only and does not claim a permit, deployment, safety assessment or performance result.
 - Regenerated the bilingual reports and manifest after adding the contract, receipt and runner; no geometry, official score or public-gallery artifact was changed.

@@ -51,37 +51,48 @@
     {
       "id": "AT-01",
       "asserts": "all_three_registered_gates_remain_bound_to_the_package",
-      "expected": "AV-T01_AV-T02_AV-T03"
+      "expected": "AV-T01_AV-T02_AV-T03",
+      "gate_ids": ["AV-T01", "AV-T02", "AV-T03"]
     },
     {
       "id": "AT-02",
       "asserts": "ordinary_audit_keeps_human_route_continuous",
-      "expected": "manual_patrol_and_paper_signage_preserved"
+      "expected": "manual_patrol_and_paper_signage_preserved",
+      "fixture_ids": ["ordinary_curb_audit"],
+      "scenario_ids": ["S01"]
     },
     {
       "id": "AT-03",
       "asserts": "accessible_obstruction_triggers_stop_and_human_only_fallback",
-      "expected": "stop_automation_and_switch_to_human_only"
+      "expected": "stop_automation_and_switch_to_human_only",
+      "fixture_ids": ["accessible_route_obstruction"],
+      "scenario_ids": ["S02"]
     },
     {
       "id": "AT-04",
       "asserts": "worse_automated_service_cannot_remove_equivalent_human_option",
-      "expected": "hold_trial_and_keep_human_paper_phone_route"
+      "expected": "hold_trial_and_keep_human_paper_phone_route",
+      "fixture_ids": ["equivalent_service_worse"],
+      "scenario_ids": ["S03"]
     },
     {
       "id": "AT-05",
       "asserts": "network_weather_branch_requires_rollback_and_recovery",
-      "expected": "freeze_new_trials_broadcast_and_restore_ordinary_service"
+      "expected": "freeze_new_trials_broadcast_and_restore_ordinary_service",
+      "fixture_ids": ["network_weather_rollback"],
+      "scenario_ids": ["S02"]
     },
     {
       "id": "AT-06",
       "asserts": "tabletop_cannot_authorize_field_operation",
-      "expected": "not_authorized_not_run"
+      "expected": "not_authorized_not_run",
+      "boundary_fields": ["authorization", "operational_status", "result_status"]
     },
     {
       "id": "AT-07",
       "asserts": "performance_and_baseline_fields_stay_unreported",
-      "expected": "performance_results_null_and_baseline_unknown"
+      "expected": "performance_results_null_and_baseline_unknown",
+      "boundary_fields": ["performance_results", "baselines"]
     }
   ],
   "rollback_steps": [
