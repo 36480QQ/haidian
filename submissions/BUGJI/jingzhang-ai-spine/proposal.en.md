@@ -79,11 +79,11 @@ The three key areas must cite [data:geometry/key_areas.geojson#PROV-KEY-001], [d
 
 The three key areas must appear in `geometry/key_areas.geojson`. If official polygons are provided by the repository, they must be used as `official_constraint`; if official polygons are missing, `provisional_constraint` may be used temporarily, but the body, HTML, sources, assumptions and self_check must state that it cannot serve as a formal scoring or approval basis. `compliance_matrix.json` should separately cover announcement sections 1.5.3.1, 1.5.3.2 and 1.5.3.3. The design expression should include functional programs, building scale, building form, retain/renovate/demolish classification, public-space system, transport organization, slow-traffic connectivity and implementation projects. The HTML page should allow switching among the three key areas; the A3 booklet and A0 boards should include at least a key-area master plan, local details and metric explanations.
 
-| Key area | Design positioning | Spatial actions | AI industry & operation scenarios | Evidence reference |
-| --- | --- | --- | --- | --- |
-| Zhongzhi Park AI Independent-Innovation Acceleration Area | Garden-type full-stack independent-innovation district | Strengthen the Qinghe frontage, industry exhibition, low-carbon innovation exchanges and external transport organization; carry open testing and standards-governance display in green space | Independent model testing, standards-setting workshops, safety-governance display, low-carbon computing experience | [data:geometry/key_areas.geojson#PROV-KEY-001], [depth:three_key_area_detailed_design] |
-| Beijing AI Origin Community | Near-campus achievement-transfer and talent community | Organize campus-park-street slow-traffic stitching; add achievement release, talent service, living support and open-source collaboration space | Open-source community, achievement release, talent-special-zone services, near-campus incubation | [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK] |
-| Dazhongsi AI Industry Cluster | Urban intelligent economy and international-exchange district | Around Dazhongsi station integration, four-quadrant pedestrian connectivity, commercial services and public-environment renewal of leading enterprises | Agent & intelligent-terminal display, content consumption, data factors and international roadshows | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
+| Key area | Design positioning | Existing-context reference | Function & spatial actions | Transport & slow-traffic interface | Public space | AI scenario nodes | Dependency constraints | Concept phasing | Risk |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Zhongzhi Park AI Independent-Innovation Acceleration Area | Garden-type full-stack independent-innovation district | Existing parks, green belts and R&D/industrial land along Qinghe; surroundings of national AI platforms | Strengthen the Qinghe frontage, industry exhibition, low-carbon innovation exchanges and external transport organization; carry open testing and standards-governance display in green space; add R&D offices, exhibition and exchange functions | Qinghe riverside slow traffic, cross-river links, external transport organization, non-motorized parking | Riverside low-carbon innovation corridor, low-carbon testing & display park, public exchange courtyards | Independent model testing, standards-setting workshops, safety-governance display, low-carbon computing experience (T-01) | River blue lines, flood control, ecology and planned green-line conditions pending | P1 lightweight test field & display frontage; P2 standards governance & industry support; P3 full-stack park | River ownership/blue lines pending; test-data anonymization duty |
+| Beijing AI Origin Community | Near-campus achievement-transfer and talent community | Campus-adjacent blocks, research institutes mixed with residential; rail-station catchment | Organize campus-park-street slow-traffic stitching; add achievement release, talent service, living support and open-source collaboration space; clarify retain/renovate/demolish | Campus-park slow links, rail-station integration, near-campus cycling network | Achievement-release plaza, open-source public space, community green corridors | Open-source community, achievement release hall, talent-special-zone services, near-campus incubation (scenarios 01/07) | Campus boundary, ownership, ground-floor programs, rail integration conditions pending | P1 achievement-release hall & open-source space; P2 transfer street & talent services; P3 full community | Campus-boundary sensitivity; research-data authorization boundary |
+| Dazhongsi AI Industry Cluster | Urban intelligent economy and international-exchange district | Commercial/office and planned-green compound around Dazhongsi station; four-quadrant intersection context | Dazhongsi station integration, four-quadrant pedestrian connectivity, commercial services and public-environment renewal of leading enterprises; organize agent, terminal, content-consumption and data-factor programs | Station integration, four-quadrant pedestrian links, rail transfer, slow-traffic crossing optimization | Star-ring plaza, compound use of planned green space, roadshow public space | Agent & intelligent-terminal display, content consumption, data-factor hall, international roadshow (T-03 / scenarios 05/08) | Rail station, road intersection, municipal pipelines, planned green space conditions pending | P1 four-quadrant walkability & star-ring plaza; P2 data factors & international roadshow; P3 full industry district | Complex intersection traffic; data-factor compliance-audit duty |
 
 ## AI Innovation Ecology, Talent Profiles and AI+ Scenarios
 
@@ -146,16 +146,94 @@ The implementation scheme should form a reviewable renewal-project list, stating
 
 Project-list and phasing depth are managed by [depth:renewal_project_list] and [depth:phasing_implementation]; the phasing spatial evidence is [data:geometry/phasing.geojson#PHASE-001]. Without ownership, funding, implementing entity and approval paths, the scheme must write them as implementation risks rather than commitments.
 
-| Project no. | Project name | Type | Main dependencies | Evidence reference |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jing-Zhang Heritage Park slow-link stitching | Public space / transport | Road redlines, under-bridge space, transport-organization review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Zhongzhi Park Qinghe innovation frontage | Blue-green space / industry display | River blue lines, ecology and flood-control conditions | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | Origin community near-campus achievement-transfer street | Urban renewal / industry service | Campus boundary, ownership, ground-floor programs | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | Dazhongsi station four-quadrant pedestrian link | Rail integration / slow traffic | Rail station, road intersection, municipal pipelines | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI public service & edge-compute node | New infrastructure / public service | Energy, computing, safety and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | Global AI Week public route | Operation / brand | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
+| Project no. | Project name | Type | Responsible entity (suggested) | Approval / professional review | Resource input | Stage gates | Maintenance entity | Evaluation & stop conditions | Main dependencies | Evidence reference |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Jing-Zhang Heritage Park slow-link stitching | Public space / transport | District government + park operator | Transport/municipal professional review | Preliminary survey + under-bridge renewal | Slow-flow & gap list → pilot segment → full stitching | Park operator | Gap-handling time target met; stop if safety unmet | Road redlines, under-bridge space, transport-organization review | [data:geometry/roads.geojson#ROAD-001] |
+| JZ-02 | Zhongzhi Park Qinghe innovation frontage | Blue-green space / industry display | Park operator + water authority | River/ecology professional review | Frontage renewal + display facilities | Blue-line confirmation → frontage design → implementation | Park property management | Usage & ecology targets met | River blue lines, ecology and flood-control conditions | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-03 | Origin community near-campus achievement-transfer street | Urban renewal / industry service | Sub-district + campus + platform entity | Planning/ownership review | Ground-floor program renewal + incubation services | Ownership confirmation → ground-floor renewal → operation | Community + platform entity | Transfer count & survival rate met | Campus boundary, ownership, ground-floor programs | [data:geometry/buildings.geojson#BLDG-001] |
+| JZ-04 | Dazhongsi station four-quadrant pedestrian link | Rail integration / slow traffic | Rail company + district government | Rail/transport professional review | Crossing facilities + station-city connection | Station scheme → four-quadrant link → acceptance | Rail + municipal | Pedestrian connectivity efficiency met | Rail station, road intersection, municipal pipelines | [data:geometry/public_space.geojson#PUBLIC-001] |
+| JZ-05 | AI public service & edge-compute node | New infrastructure / public service | Service operator + sub-district | Data/security professional review | Compute node + public-service screens | Pilot node → evaluation → expansion | Service operator | Availability & satisfaction met; stop on data violation | Energy, computing, safety and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| JZ-06 | Global AI Week public route | Operation / brand | Event organizing committee | Public-safety/copyright review | Event organization + public-space permits | Route safety assessment → pilot event → annualization | Committee + park operator | Attendance & safety met; stop without safety commitment | Public-space permits, event safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
 
 Phasing should be distinguished from the 100-day solicitation design cycle: the solicitation cycle is the time requirement for submitting deliverables, while implementation phasing is the advancement path of urban renewal and project construction. The scheme should propose near-term pilots, mid-term renewal and long-term governance frameworks, and mark which items can start with lightweight facilities, operation activities and service platforms, and which must wait for formal regulatory plans, municipal, transport and ownership conditions. For the annual event system, developer-community operation, scenario open days, public experience routes and international-communication mechanisms, the body should state operation objects, frequency, responsibility boundaries, conversion paths and risks — not just promotional slogans.
+
+## Agent.1–Agent.6 Specific Response (Agent Open-Call Taskbook)
+
+This section turns the mandatory agent.1–agent.6 tasks of the agent-facing open-call taskbook [source:AGENT-TASKBOOK] into reviewable naming, case, map, matrix, component and operation evidence, linked to `compliance_matrix.json`. All brands, fonts, images, portraits and enterprise marks are design suggestions or public-source references and must be cleared item-by-item before formal submission [depth:risk_missing_data].
+
+### Agent.1 Belt Overall Concept: English Name, Naming System and Visual Identity
+
+- **English main name**: `Jing-Zhang AI Spine` (京张AI脊梁); the full Chinese name is "京张AI脊梁：百年铁轨上的可进化智能城市", forming a one-to-one official name pair.
+- **Naming system**: the core concept "一带三核、多点场景、蓝绿慢行复合环" is uniformly translated as `One Spine, Three Cores, Multi-scene, Blue-Green Slow Loop`; the three key areas use the fixed English names `Zhongzhiyuan AI Full-Stack Innovation Acceleration Zone`, `Beijing AI Origin Community`, `Dazhongsi AI-Native Industry Cluster`; renewal projects are numbered JZ-01–JZ-06.
+- **Logo direction**: core symbol of "Jing-Zhang rail and data flow as isomorphic" — a rail line along the site's longitudinal axis unfolds into three data nodes at the three key areas, symbolizing the translation of the century-old railway into an evolvable intelligent spine; colors from rail steel grey `#37474f`, innovation teal `#00b0a6` and cultural ochre `#c79838`. This is a conceptual logo direction, not a trademark application and not a use of any third-party mark.
+- **Visual-identity extension**: unified Noto Sans CJK SC / DejaVu Sans font pair, unified legend style, unified provisional warning style (red rounded box) and unified header/footer across A3/A0/HTML.
+
+### Agent.2 AI Full-Stack Independent-Innovation Ecosystem: Global Cases and Ecology Map
+
+- **Global cases (5–8, public-source references)**:
+
+| Case | Location | Transferable mechanism | Citation boundary |
+| --- | --- | --- | --- |
+| Kendall Square | Boston, USA | University–industry–capital dense circle and talent concentration | Public planning reports; clear rights before formal submission |
+| one-north | Singapore | Mixed "work–live–learn–play" park–residence–research system | Public material |
+| Cloud Town (Yunqi) | Hangzhou, China | Developer-community-driven, annual conference feeds back the park | Public material |
+| Shenzhen Bay Science & Technology Eco-park | Shenzhen, China | HQ–incubation–support compound and industrial synergy | Public material |
+| Pangyo Techno Valley | Seongnam, Korea | Government-led R&D–housing–public-service integration | Public material |
+| Station F | Paris, France | Large open-innovation campus with supporting operations | Public material |
+
+- **Ecology map**: a five-ring innovation chain of "university genesis → open-source collaboration → enterprise translation → public experience → international communication", located as spatial anchors — university genesis belt (Tsinghua/Peking/Beihang), Origin Community open-source release hall, Zhongzhi Park full-stack test field, Dazhongsi international roadshow hall, Heritage Park public-experience axis.
+- **Full-stack system and factor mechanism**: covering six links of chip–framework–model–application–standard–governance, landing the seven-factor interface of "land–industry–capital–talent–compute–data–scenario" at Zhongzhi Park (compute & testing), Origin Community (talent & translation) and Dazhongsi (data & scenarios); this system is a design suggestion — specific industrial players and investment arrangements await official and market confirmation.
+- **"Three Cores, Two Wings" coordination loop (taskbook specific)**: the belt anchors on the three key areas and extends two functional wings — the **Zhongguancun Technology-Service Wing** (westward along Zhongguancun Avenue: tech services, incubation/investment, university research) and the **Xiaoyuehe Scenario-Empowerment Wing** (eastward along Xiaoyuehe: community, culture-education and life-service scenarios). The wings add no new red lines and act as functional-coordination concepts: the Zhongguancun wing carries achievement translation, capital and professional-service interfaces; the Xiaoyuehe wing carries AI city-life scenario landing and public-experience interfaces. The three cores and two wings interlock through the Heritage Park vitality belt and slow loop, forming a reviewable "core–wing–belt" coordination loop.
+- **Regional innovation coordination (conceptual suggestion)**: exchange relations of "achievement–translation–manufacturing–scenario" with Future Science City (original innovation & major facilities), Huairou Science City (basic research & facility clusters), Economic-Technological Development Area (intelligent manufacturing & scale) and the Beijing–Tianjin–Hebei region (industrial hinterland & scenario diffusion); all external coordination facts are public-source citations requiring clearance and citation boundaries before formal submission, and do not constitute government cooperation commitments.
+
+### Agent.3 AI+ Scenario Empowerment: Operation Closed-Loop Matrix and Industry Test Scenarios
+
+- **Scenario–space–data–model–review–operation–KPI closed loop**: the 10 scenario cards are upgraded to a seven-field closed-loop table (full version in `report/narrative.md`, Appendix A):
+
+| Scenario card | Spatial carrier | Input data | Model responsibility | Human review | Operating entity | KPI |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 Open-source release hall | Origin Community | project metadata, contribution records (aggregated) | recommendation/matching model, no personal traces | release reviewer | community operator + property | monthly releases, contributor retention |
+| 02 Safety-governance sandbox | Zhongzhi Park | anonymized model inputs, test logs | red-team/evaluation model | safety-governance committee | test-field operator | sandbox booking rate, test completion rate |
+| 03 Edge-compute station | scope nodes | device status (anonymous) | scheduling/energy model | operations staff | compute-service provider | node availability, energy |
+| 04 AI slow-traffic navigation | Heritage Park vitality belt | aggregated slow-flow, obstacle reports | path planning/congestion forecast | appeal & correction channel | park operator | gap-handling time, accessibility satisfaction |
+| 05 International roadshow hall | Dazhongsi | event registrations (authorized) | venue matching/interpretation aid | event review | exhibition operator | roadshow count, international share |
+| 06 Qinghe low-carbon innovation corridor | Zhongzhi Park riverside frontage | hydrology/crowd aggregates | water-level & heatmap warning | emergency review | park operator | corridor usage, low-carbon coverage |
+| 07 Near-campus achievement-transfer street | Origin Community | achievement abstracts (authorized) | supply–demand matching | legal/IP review | translation-platform entity | transfer count, incubation survival |
+| 08 Data-factor hall | Dazhongsi | data catalogues (compliance audit) | compliance search aid | data-governance officer | data-service operator | catalogue count, audit pass rate |
+| 09 AI life-service model street | community–commerce junction | service bookings (authorized) | scheduling aid | community workers | community + service providers | response time, satisfaction |
+| 10 Global AI Week route | belt public-space system | open event data | route scheduling | event safety team | event committee | participation, route completion |
+
+- **3 industry test & verification scenarios (numbered with test flow)**:
+  - **T-01 Public-safety operation review sandbox** (Zhongzhi Park): anonymized video/event stream → risk-identification model → warning → human review → false-alarm appeal / non-digital channel → audit trail; KPIs: false-alarm rate, review time, appeal closure rate.
+  - **T-02 AI slow-traffic navigation test segment** (Heritage Park north–Qinghua East Road West): aggregated slow-flow → path planning & gap detection → explainable wayfinding → accessibility & complaint feedback → data minimization (no individual traces); KPIs: gap-detection accuracy, navigation satisfaction.
+  - **T-03 Data-factor circulation sandbox** (Dazhongsi): data catalogues + compliance rules → authorized search aid → human compliance audit → revocable authorization → independent supervision; KPIs: audit pass rate, authorization-revocation rate, complaint response time.
+
+### Agent.4 AI Public Space, New Formats and Pilgrimage Landmarks: 3 Landmarks, Honor System and Component Library
+
+- **3 AI pilgrimage landmarks (conceptual design)**:
+  1. **Tsinghua Garden Station AI Memory Lighthouse** — anchored on the historic Tsinghua Garden station building, with an updatable public digital-memory screen and an open-source-contributor light installation, forming a "history + open source" dual narrative landmark;
+  2. **Jing-Zhang AI Spine Data Bridge** — an elevated pedestrian bridge over the Heritage Park vitality belt, integrating explainable public-data visualization and AI scenario experience points, becoming the belt's core image;
+  3. **Dazhongsi AI Star-Ring Plaza** — centered on four-quadrant pedestrian connectivity at Dazhongsi station, the ring public space carries international roadshows, digital art and night economy, forming the district's gateway landmark.
+- **Honor system (contribution-wall system)**: for open-source developers, test participants and scenario co-builders — public code wall, quarterly contributor honor wall and annual "AI Spine Award"; all honor displays collect no personal traces and aggregate only public contributions and authorized information.
+- **Public-space component library**: five standard component categories — slow traffic (walk/cycle/accessibility), lighting (graded night lighting), seating & shade, wayfinding (three-tier), planting & blue-green; each with size, material, color and AI integration point (sensor/screen) as the unified vocabulary for A3/A0 and later detailed drawings.
+
+### Agent.5 Jing-Zhang Heritage, Zhongguancun and AI Culture Narrative: Wayfinding and International Communication
+
+- **Wayfinding system**: three tiers — tier-1 area wayfinding (entrances/stations, bilingual), tier-2 thematic wayfinding (heritage-culture / innovation-culture / AI-culture lines), tier-3 point wayfinding (scenario/facility/accessibility information); the wayfinding graphic library shares the explainable icon set with AI slow-traffic navigation [scenario:04].
+- **International communication copy**: main slogan (CN) "百年铁轨，可进化城市"; main slogan (EN) `A Century-Old Railway, An Evolvable City`; supporting slogans: `From Iron Spine to Intelligent Spine`, `Open Source the City`, `Walk the AI Belt`. Suggested carriers: A0 boards, HTML first screen, event-week signage and social cards; audiences split into international developers (technical narrative), overseas investors (industrial narrative) and cultural tourists (cultural narrative).
+
+### Agent.6 Global AI Innovation Event System and Long-Term Operation: Annual Calendar and Conversion Mechanism
+
+- **Annual operation calendar (conceptual suggestion, not government event arrangement)**:
+
+| Period | Event | Audience | Suggested operator | Conversion path | KPI |
+| --- | --- | --- | --- | --- | --- |
+| Q1 | Open-Source Developer Day | developers/universities | community operator + park | release→contribute→settle | settlement conversion rate |
+| Q2 | Scenario Open Week | startups/enterprises | test-field operator | testing→cooperation→landing | cooperation leads |
+| Q3 | Global AI Week | international visitors/media | event committee | experience→communication→attraction | international share, reach |
+| Q4 | Annual Achievement Release & AI Spine Award | full ecosystem | committee + jury | award→honor→continued contribution | awarded-project landing count |
+
+- **Long-term governance and conversion mechanism**: the developer community self-governs by open charter; scenario opening follows booking and compliance-review systems; international attraction is carried by an "event–roadshow–landing service" chain; all operation content must state responsibility boundaries, maintenance entities, evaluation cycles and stop conditions, and does not constitute government implementation commitments.
 
 ## Metrics System, Area Recalculation and Compliance Matrix
 
