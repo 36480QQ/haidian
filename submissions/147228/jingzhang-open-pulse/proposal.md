@@ -403,17 +403,18 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 | 游客/首次到访者；小商户/社区服务者 | 双语导视、工程问题墙、责任台；企业服务柜台、公开规则、人工申诉 | 纸质地图、人工讲解和纸面流程；关键材料不可核验即不启用 AI 辅助 |
 | 开发者/初创团队/高校师生；维护人员/运营责任人 | 开源发布厅、评测沙盒、贡献档案廊；资产台账、责任台、实体检修口 | 专家评审、静态模型卡、纸面巡检和人工派单；清权、接管、维护或撤回演练失败即停 |
 
-### 三个产业测试验证场：先证据，后采购或扩容
+### 四个产业测试验证场：先证据，后采购或扩容
 
-为把“政策工具”真正接到企业发展，而不是停留在案例罗列，`visual/assets/industry-validation-cases.json` 设置三个可撤回的验证窗。它们是面向组织方、企业和公共服务团队的概念测试协议，不是采购批准、部署事实、投资承诺或本地企业绩效证明。每个验证窗都要求企业问题、政策接口、验收证据、停止条件和非 AI 等价服务同时出现：
+为把“政策工具”真正接到企业发展，而不是停留在案例罗列，`visual/assets/industry-validation-cases.json` 设置四个可撤回的验证窗。它们是面向组织方、企业和公共服务团队的概念测试协议，不是采购批准、部署事实、投资承诺或本地企业绩效证明。每个验证窗都要求企业问题、政策接口、验收证据、停止条件和非 AI 等价服务同时出现：
 
 | 验证场 | 企业发展问题 | 政策接口 | 关键验收与停止条件 |
 | --- | --- | --- | --- |
 | 模型安全与透明度验证窗 | 初创团队或供应商能否在扩容前提交可复现的安全、数据来源、人工复核和回退证据 | 采购前 assurance record：模型/数据边界、红队结果、责任审查人、非 AI 方案和停止决定 | 两名独立审查人可复现测试记录；权属不清、缺少人工审查人或接管演练失败即停止。对应 S04、众智园。 |
 | 企业服务与数据要素合规验证窗 | 企业服务团队能否缩短公开流程，同时不暴露未授权数据、不把 AI 答复变成行政决定 | 服务 preflight record：公开来源、授权材料、人工决策责任人、更正路径、留存期限和人工柜台等价路径 | AI 辅助与人工路径都能走通，关键答复均有来源和人工更正路由；材料不可核验、隐私泄露、歧视性分流或缺少人工柜台即停止。对应 S08/S09、原点社区/大钟寺。 |
 | 低速具身智能安全与运营验证窗 | 机器人或具身智能供应商能否在任何规模化部署或采购决定前证明与无障碍公共路线安全共存 | 公共测试许可包：路线、速度/优先规则、急停、人工接管、事件日志、隐私边界、维护责任和撤回触发器 | 现场演练完成急停、人工接管、清空路线和恢复普通公共使用；阻断无障碍链、严重险情或维护逾期即停止。对应 S02/S03、众智园—京张公园界面。 |
+| 多渠道参与与反馈闭环验证窗 | 公共服务团队或 civic-tech 供应方能否在不把账号、设备或数字熟练度变成门槛的情况下，合并数字、纸面、现场和多语反馈 | 参与等价记录：议题、渠道、无障碍支持、责任复核人、响应期限、未解决问题和退出路径 | 一名无账号/无设备参与者与另一名参与者通过不同渠道提交同一问题；人工合并记录并发布回应或不改原因；数字独占、无人工归并或无法退出即停止。对应 S05/S08、原点社区—大钟寺公共界面。 |
 
-三类验证场都先走小规模、有人值守、可复盘的测试窗，再决定扩容、改设计或退出；任何“成功”只表示验收证据完整，不表示产品效果、投资回报或政府采购已经成立。[metric:industry_validation_case_count]、[metric:scenario_card_count] 和 [metric:user_persona_count] 是机器可读计数。
+四类验证场都先走小规模、有人值守、可复盘的测试窗，再决定扩容、改设计或退出；任何“成功”只表示验收证据完整，不表示产品效果、投资回报或政府采购已经成立。[metric:industry_validation_case_count]、[metric:scenario_card_count] 和 [metric:user_persona_count] 是机器可读计数。
 
 任务边界回看 [source:AGENT-TASKBOOK]，资料缺口回看 [depth:risk_missing_data]。
 
@@ -468,7 +469,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 | UK ATRS | 标准化公开记录说明算法为何、如何使用 | 形成 purpose、owner、data、human review、alternatives、limits、incident、update 记录 | 不是北京地方强制要求，仍需本地法律和采购审查 [source:CASE-UK-ATRS] |
 | Seoul AI Foundation | 串联研究、公共服务、人才和全球协作的机构能力 | 以责任明确的接口连接高校策源、企业服务、公共验证和交流 | 不暗示首尔合作、资金、机构授权或京张实施承诺 [source:CASE-SEOUL-AI-FOUNDATION] |
 
-政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡 [metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规和低速具身智能三条产业测试验证窗；`visual/assets/landmark-honor-crosswalk.json` 把责任台、贡献档案和安全治理节点绑定到政策与企业接口。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
+政策工具与企业发展接口进一步写入 `visual/assets/case-policy-enterprise-crosswalk.json`：每个案例绑定一个政策工具、一个企业发展问题、本地场景、验收证据和不照搬边界。`visual/assets/policy-enterprise-playbook.json` 再把接口拆成 42 张可执行的成长阶段卡 [metric:policy_enterprise_playbook_card_count]，先落一张公共 AI 登记与反馈卡；`visual/assets/industry-validation-cases.json` 补出模型安全、企业服务数据合规、低速具身智能和多渠道参与反馈闭环四条产业测试验证窗；`visual/assets/landmark-honor-crosswalk.json` 把责任台、贡献档案和安全治理节点绑定到政策与企业接口。六种模式仍保留在 `case-mechanism-matrix.json` 的 `rows` 中，案例来源、访问日期和用途边界回到 `sources.json`。
 
 `visual/assets/operations-matrix.json` 将后续工作拆成八个有责任人的行动包：官方边界替换、现场基线、风热水验证、具身智能窗口、开源清权、活动降容复原、雨洪/安静链维护，以及年度扩散/重做/退出复盘；`visual/assets/resource-accounts.json` 为五类前置资源记账：空间权属、气候水务生态、算力模型与数据权利、人类体验参与、资产备件维护。这些是释放窗口前的审查条件，不是预算、资金或采购承诺。
 
