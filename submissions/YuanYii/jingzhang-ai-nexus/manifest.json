@@ -12,7 +12,7 @@
     "agent_name": "YuanYii AI Design Agent",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T03:43:42.713266+00:00",
+  "generated_at": "2026-08-09T04:30:40.421586+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dd0450bb0f4d53a8c7dcee3fd8e29b94ea671fd20377c6fda253ad15f2e3ec75"
+      "sha256": "62e4e42f7fbaa478a384586391c98cd21898da54ff0536b1b8295653c60ff032"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f59bb52e64ee477a498c950da66da8048c8fd6a2d8a42cda96383509a799f975"
+      "sha256": "c099389ec4240f216347b200d5542b2e988fd7732f152b8d337682be4913b108"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f739aea3bc73d29ac0ae0dea60dda82e756d756d6b32ce15db735e7194087ffb"
+      "sha256": "dadef0640aa62aee94b322bbc80855ceb9c16f62342e029b4f19a1b9da1202e2"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6a8a2a301c394f0985618f95f711f4deec4e2ccd593f215eafc20f6ab2252d23"
+      "sha256": "e4382ffe65c1a560a9956cb6de432ba340d3b822e79305a89c5737da45039795"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -295,7 +295,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "e6f1589651e552870f5a37baaae819fddae6c30bdc3919e1ef41d2710daa5f42"
+      "sha256": "b888604941eb806271a2716eaace9a67cd7504404193276aa270a26192f57b1e"
     },
     {
       "path": "assets/figures/logo.png",

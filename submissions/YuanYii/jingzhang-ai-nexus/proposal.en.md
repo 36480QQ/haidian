@@ -3,7 +3,7 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "1.2.0"
+version: "1.3.0"
 date: "2026-08-09"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -152,17 +152,18 @@ The key areas cover 368.4 ha in three districts, responding to [depth:three_key_
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-The proposal defines 5 typical personas and deploys 10 spatial scenario cards plus 3 AI pilgrimage landmarks, per [source:AGENT-TASKBOOK]:
+The proposal defines 6 typical personas and deploys 12 spatial scenario cards plus 3 AI pilgrimage landmarks, per [source:AGENT-TASKBOOK]:
 
-### 5 Personas and need responses
+### 6 Personas and need responses
 1. **Open-source developers**: deeply dependent on communities, contribution display and nighttime exchange; 24h open-source launch hall and co-working spaces in the Origin Community.
 2. **Startups**: low-cost offices, compute subsidies and test access; shared edge-compute stations and model red-team sandboxes in Zhongzhiyuan.
 3. **Headquarters visitors**: international display, business meetings and efficient transit; international demo lounge and TOD links at Dazhongsi.
 4. **Residents**: park leisure, community services and low-disruption renewal; slow green loop and embedded smart community service points along the heritage park.
 5. **University faculty and students**: campus-adjacent commercialization and cross-campus exchange; campus-park stitching paths and commercialization stations on Qinghua East Road.
+6. **International visitors & academic guests**: Value high-profile conferences, roadshow experiences and international communication; the proposal provides international simultaneous-interpretation lounges and academic release centers at Dazhongsi and Origin Community.
 6. **International visitors and academic guests**: high-level conferences and global communication; international interpretation lounges and academic release centers at Dazhongsi and the Origin Community.
 
-### 10 AI scenario cards
+### 12 AI scenario cards
 
 | No. | Scenario card | Spatial carrier | Design description | AI Industry Testing Scenario |
 | --- | --- | --- | --- | --- |
@@ -176,6 +177,8 @@ The proposal defines 5 typical personas and deploys 10 spatial scenario cards pl
 | 08 | Data-Element Lounge | Dazhongsi | Secure, auditable display and confirmation windows for compliant data and digital-asset trading | ☑ |
 | 09 | AI Lifestyle Sample Street | Community-commerce junctions | Smart healthcare, unmanned retail, AI community education and domestic service experiences | ☐ |
 | 10 | Global AI Week Route | Full blue-green public space | A walkable 5 km pilgrimage route linking heritage, open source, test fields and demo halls | ☐ |
+| 11 | Multi-species Eco-Sensing Node | Zhongzhiyun riverside | Concept proposal: deploy distributed environmental sensing network for water quality, bird calls, micro-climate data to support ecology and carbon sink research | ☑ |
+| 12 | Non-Digital Alternative Service Station | Origin Community & Dazhongsi service nodes | Preserve physical braille signs, paper guides, human-staffed counters and one-button human call to ensure digital inclusion and accessibility | ☐ |
 | 11 | AI Community Smart Service Node | Community nodes in overall scope | Embedded smart healthcare, unmanned delivery and elderly assistive services | ☐ |
 | 12 | Edge Compute Charging Station | Heritage Park & transit hubs | Solar PV and battery storage backing edge compute and drone/robot charging | ☑ |
 
@@ -185,6 +188,10 @@ The proposal defines 5 typical personas and deploys 10 spatial scenario cards pl
 3. **Qinghuayuan AI Origin Mark Park**: an ecological park around Qinghuayuan Station Heritage Site with AI sculpture and an AR history corridor.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+
+### Fine-grained Retain-Renovate-Demolish Principles Based on Existing Park
+
+Given that Jing-Zhang Railway Heritage Park Phase I has been completed and opened, and Phase II is underway ([source:OFFICIAL-ANNOUNCEMENT], the announcement references "existing implemented areas of the park"), this proposal strictly adheres to a fact-based approach: it does not redraw or alter the completed park landscaping, but treats it as a static "base layer" to be fully preserved, with AI scenarios and smart facilities overlaid on top. All spatial actions are precisely focused on "stitching slow-mobility breakpoints on both sides of the park" (e.g., Qinghua East Road West Entrance, Wudaokou intersections), "implanting edge-computing supply nodes," and "activating existing factory buildings along the line as near-campus transformation spaces," achieving a seamless weave of historical-cultural, urban-life, and future-innovation threads.
 
 Land use follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The building approach follows [depth:retain_renovate_demolish] and [depth:height_massing_character]:
 
@@ -225,6 +232,14 @@ The blue-green plan follows [depth:blue_green_public_space], using the Heritage 
 
 - **Green ratio & public space**: 3.55 km² of park green space, a 31.1% green ratio ([metric:green_ratio]), and a 25.3% public open-space ratio ([metric:public_space_ratio]).
 - **Urban character**: three material languages — centennial Jing-Zhang industrial red brick, Zhongguancun tech gray aluminum, and future AI clear glass — shaping interfaces that balance heritage and futurity; continuous park greenways connect 12 communities and universities.
+
+### Qinghe Low-Carbon Waterfront Multi-Species Eco-Sensing and Resilience System
+
+Concept proposal to explore a multi-species eco-sensing and resilience system at the Qinghe low-carbon waterfront (for professional teams to further develop):
+
+- **Multi-modal Environmental AI Sensing Network**: Concept proposal to explore deploying distributed environmental sensors along the Qinghe waterfront to collect water quality pH/dissolved oxygen, wetland bird calls and habitat trajectories, soil moisture and local microclimate heat-island data in real time, providing traceable data support for ecological protection and urban governance.
+- **Stormwater and Carbon-Sink Intelligent Regulation Algorithm**: Concept proposal to explore, combined with meteorological large-model early warning, the feasible direction of dynamically regulating rain gardens and wetland water-storage gates to achieve autonomous balance between flood prevention and carbon-sink maximization.
+- **Multi-Species-Friendly Spatial Interface**: Concept proposal to adopt low-color-temperature anti-glare nighttime lighting and bird-collision-prevention glass interfaces to achieve harmonious coexistence of humans, agents and natural life. The above sensor deployment and gate regulation are conceptual suggestions and do not constitute engineering implementation plans or municipal approval conclusions.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -308,10 +323,26 @@ The three lines are reinforced respectively in Zhongzhiyuan (self-innovation), t
 ### 2. Developer community governance & annual events
 An "Open-Source Governance Committee", an honor display component library, and a Code Wall in the Origin Community launch hall. An event system of "annual developer conference, quarterly algorithm challenges, monthly geek salons" with an enterprise landing fast track forms the "talent aggregation - idea validation - investment incubation" loop.
 
+### 2.1 City-as-Repo Open Source Spatial Governance System
+
+Concept proposal to establish a "City-as-Repo" open-source spatial governance system (for professional and governance teams to further develop):
+
+- **Spatial Pull Request (Spatial PR) Mechanism**: Concept proposal to abstract spatial actions proposed by merchants, R&D institutions and communities — such as smart facility deployment, computing station installation, and slow-mobility micro-upgrades — as "Spatial PRs." Any spatial change requires a machine-readable proposal including GeoJSON impact scope, computing power consumption, noise/light pollution assessment, and community impact analysis.
+- **Three-Party Code Review**: Concept proposal for a joint review panel comprising the Open Source Governance Committee (technical review), compliance review party (compliance review, with the role and authority of planning departments to be confirmed later as a conceptual suggestion), and community resident representatives (experience review). Concept proposal to establish a three-party review process where "proposals may enter spatial baseline pilot only after approval."
+- **One-Click Rollback Action**: Concept proposal to establish a rapid rollback mechanism — if noise threshold exceedance, computing disturbance, privacy breach or accident risk occurs during whitelist operation, the system triggers an incident response procedure, with a conceptual target of "algorithm shutdown and facility rollback (Rollback) within 24 hours" to restore the original spatial baseline.
+
+The above governance mechanisms are all conceptual suggestions and do not constitute determined policies, approval processes or implementation arrangements. Specific review entities, authorities and processes are subject to confirmation by competent authorities.
+
 ### 3. AI ethics, privacy & safety review
 - **Data minimization & privacy**: "unobtrusive vision" and environmental monitoring must not collect biometrics; local anonymization and periodic destruction.
 - **Human oversight & appeal**: all public-service AI must offer one-click human transfer and on-site appeal devices against bias and digital exclusion.
 - **Inclusive design**: child-friendly, barrier-free and non-digital alternatives (physical guidance and staffed service posts) for vulnerable groups.
+
+### 3.1 Accessible Digital Inclusion and Non-Digital Alternative Services
+
+- **Universal Physical Fallback**: Across all 12 AI scenario cards, in addition to vision/AR-based smart accessible wayfinding, physical space must 100% preserve traditional bilingual braille physical signs, tactile paving, and paper guide brochures.
+- **Offline Non-Digital Service Windows**: Preserve offline physical human-staffed reception windows at Origin Community and Dazhongsi public service nodes, ensuring that elderly, disabled, and non-smart-device users can access all public space services without barriers.
+- **Human-in-the-Loop Real-Time Appeals**: All smart interactive facilities must be equipped with one-button human-call buttons and 24-hour human customer service takeover mechanisms to eliminate "algorithmic exclusion."
 
 ### 4. Event Brand and Communication Visual System
 
