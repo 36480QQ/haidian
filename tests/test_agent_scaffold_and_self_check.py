@@ -859,6 +859,51 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertNotEqual(checked.returncode, 0)
             self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
 
+    def test_manifest_hash_mismatch_explains_crlf_normalization(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "crlf-manifest"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+
+            proposal = submission_dir / "proposal.md"
+            lf_raw = proposal.read_bytes().replace(b"\r\n", b"\n")
+            proposal.write_bytes(lf_raw)
+            crlf_digest = hashlib.sha256(lf_raw.replace(b"\n", b"\r\n")).hexdigest()
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            next(item for item in manifest["files"] if item["path"] == "proposal.md")[
+                "sha256"
+            ] = crlf_digest
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            checked = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+                    str(submission_dir),
+                    "--repo-root",
+                    str(root),
+                    "--pr-author",
+                    "alice",
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(checked.returncode, 0)
+            self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertIn("declared digest matches the CRLF form", checked.stdout)
+            self.assertIn(
+                "Regenerate manifest.json from the exact bytes committed to Git",
+                checked.stdout,
+            )
+
     def test_scaffold_includes_public_source_registry_reference(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
