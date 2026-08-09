@@ -115,6 +115,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 2. **AV-T02 无障碍等价服务测试**：AI 原点社区同时提供自动驾驶接送、人工服务和纸面/电话预约，按出行完成率、等待时间、拒绝率和满意度分组比较；任何自动化优势不得以减少人工选项为代价 [standard:BEIJING-ACCESSIBILITY-REGULATION]。
 3. **AV-T03 断网/极端天气回退测试**：三处试验庭分别模拟通信中断、暴雨积水、热浪和活动拥挤，验证远程停止、现场接管、广播、撤离和恢复。气象和排水是未知输入，不用论文或模拟分数替代现场结果 [metric:autonomy_fallback_success_ratio]。
 
+为让三道闸门可以先在桌面上复核，包内增加一个离线合成 tabletop：它只回放 4 个分支、7 个验收检查和 5 个回退步骤，分别覆盖 AV-T01—T03 与 S01—S03；普通路缘保留人工巡查和纸面标识，无障碍阻断、等价服务变差或断网/天气异常均进入暂停、人工接管和恢复链。该回放不是现场测试、许可、安全评估、部署或性能结果，运行状态仍为 `not_authorized_not_run`，实测结果为 `null`，基线仍为 `unknown`。复核凭证与无网络 runner 见 [data:visual/assets/autonomy-curbside-tabletop-evidence.json#AUTONOMY-CURBSIDE-TABLETOP-001]。
+
 ### 用户画像
 
 居民、轮椅使用者/照护者、高校师生、园区员工、初创企业、物流/维护人员、老年访客、夜班人员和儿童监护人共同参与。每人都拥有非数字入口、人工帮助、撤回授权和公开申诉路径；不存在“不会用 App 就失去服务”的默认规则 [source:BEIJING-ACCESSIBILITY-REGULATION]。

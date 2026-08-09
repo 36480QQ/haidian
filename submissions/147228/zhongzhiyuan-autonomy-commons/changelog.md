@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.8 - 2026-08-09
+
+- Added a bilingual, offline synthetic curbside tabletop bound to AV-T01—T03 and S01—S03, with four fixtures, seven acceptance checks, five rollback steps and an executable network-free runner.
+- Kept the evidence boundary explicit: `not_authorized_not_run`, no field data, `performance_results: null`, and unknown baselines; the tabletop proves control wiring only and does not claim a permit, deployment, safety assessment or performance result.
+- Regenerated the bilingual reports and manifest after adding the contract, receipt and runner; no geometry, official score or public-gallery artifact was changed.
+
 ## v2.7 - 2026-08-09
 
 - Removed the stale duplicated Chinese proposal tail left after the v2 readable surface and reduced both bilingual reference sections to a pointer to `sources.json` with claim-adjacent anchors only.

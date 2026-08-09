@@ -68,6 +68,13 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    },
+    {
+      "check_id": "AUTONOMY_CURBSIDE_TABLETOP",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/assets/run-autonomy-curbside-tabletop.js",
+      "message": "Offline tabletop runner replays four synthetic curbside branches and keeps unknown, not_authorized_not_run, and null performance boundaries."
     }
   ]
 }

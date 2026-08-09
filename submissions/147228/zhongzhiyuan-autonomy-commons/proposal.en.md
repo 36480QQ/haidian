@@ -81,6 +81,8 @@ The cards cover accessible rides, low-speed shuttle, rail transfer, night mainte
 
 Three tests make the concept falsifiable: **AV-T01 curb-conflict test** records obstruction, yielding, emergency-stop and loading conflicts; **AV-T02 equivalent accessible service** compares automated, human and paper/phone routes; **AV-T03 network/weather rollback** tests stop, broadcast, takeover, evacuation and recovery across the three yards [metric:curb_conflict_rate] [metric:accessible_route_continuity_ratio] [metric:autonomy_fallback_success_ratio].
 
+To make the three gates reviewable before any field activity, the package adds an offline synthetic tabletop: it replays four branches, seven acceptance checks and five rollback steps across AV-T01–T03 and S01–S03. The ordinary curb branch preserves manual patrol and paper signage; an accessible obstruction, a worse automated service, or a network/weather fault moves to hold, human takeover and recovery. This replay is not a field test, permit, safety assessment, deployment or performance result: the status remains `not_authorized_not_run`, measured results remain `null`, and baselines remain `unknown`. Its receipt and network-free runner are recorded at [data:visual/assets/autonomy-curbside-tabletop-evidence.json#AUTONOMY-CURBSIDE-TABLETOP-001].
+
 Residents, wheelchair users and carers, students, park workers, start-ups, logistics and maintenance crews, older visitors, night workers and child guardians are users and reviewers. Each gets an offline entrance, human help, revocable consent and a public complaint route [source:BEIJING-ACCESSIBILITY-REGULATION].
 
 ## 7. Landmarks and cultural narrative
