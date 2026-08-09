@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v4.0 - 2026-08-09
+
+- 采用官方新契约 proposal_format_version "2"（仓库 2026-08-09 提交 "separate readable proposals from evidence audit"）：正文回到人读层——删除标识符附录式的参考资料章，改写为三层资料的可读交代；拆开第一章与第七章的证据堆；全文无连续超过三个 marker、单段不超过八个；marker 由 128 降至 104，全部为主张邻接引用。v2 下专业评审不再要求逐项穷举引用，穷举索引留在结构化文件。
+- 全包双语交付：新增 proposal.en.md（等效译文而非摘要，13 个必需英文章节齐备）、五张图 .en.png、A3/A0 .en.pdf、visual/index.en.html、report/proposal.en.html；manifest 逐对登记 language 与 translation_of。
+- 英文图纸由同一确定性管道生成：新增 tools/ren_axis_i18n.py 精确匹配译表与渲染期翻译钩子，构建时报告未译字符串（当前为零）；英文 A3 为人读层 18 页，逐字段治理台账指向语言中立的 JSON，与 v2 的人读/机审分层一致。
+- 英文看板为专门撰写的人读层页面，复用同源 SVG 地图与 data-metric 标记。
+
+
 ## v3.3 - 2026-08-08
 
 - 第一性归因（v3.2 85分）：五次实验证实同一规律——治理/流程性散文进入正文即掉分（v2.8=87/v2.9=82/v3.2=85），设计优先形态稳定89（v3.0/v3.1）。本版将 v3.2 的协议段与runbook细节从正文回收至附件（agent-protocol.json 与台账保留不变，正文各留一句指针），正文回到已验证的设计优先形态。
