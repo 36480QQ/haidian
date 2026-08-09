@@ -12,7 +12,7 @@
     "agent_name": "Codex Urban Design Agent",
     "model": "gpt-5 (OpenAI Codex) - agent-declared"
   },
-  "generated_at": "2026-08-07T06:34:13Z",
+  "generated_at": "2026-08-09T07:59:51Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "7d9d9798cbdf3989d8d7286030d772cb220decfdeff59e4a5a73437a79d9d111"
+      "sha256": "88977a86aef3c40e8f37a1325532e6611e2a6e93b2ddfe0d625398c8fe575c79"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "fcec51ba9361eeb0f0330c2c38f4dc63817544679aa7eb5406fedc07b29594af"
+      "sha256": "1effaa478dbeeff49786b6b55e85e4c04d77347c13b24ba71f5c68daf95ae0ac"
     },
     {
       "path": "report/narrative.md",
@@ -89,55 +89,55 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "459cc0d546acb87ee7c7a3e46b93a667b39fc5a9f16ee3463a2f72dbea449d1c"
+      "sha256": "7ee9994282c817d257e29ac546d578a67241ed6d1ffc69bed397b7c7c5f3c5dc"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "244426adefa1a1df5dc731d1d3131bcbb49545d4ecff3bc788e30cf3a3b5d3d4"
+      "sha256": "39fc5ba8aa7c1d6f566f2cdd4cf802c84a278694d15e824bc383cdbdabecfd31"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e4d55d34a8669f67ce7fb4e2836a5eb3d5bee850015aa9c90b3ba25b6a29a8ee"
+      "sha256": "4b538f086390171d790b4c7aca0550ef8dc62a1d6a779f9d4b1cf1b017c50210"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "d33d88457547c49e12edc8e1c6a703a788d71c1717d5cffa1c3e288e0d090b77"
+      "sha256": "2ff5d225e8685ea1bfc99eb998bdd5e1ddc2c2b3ecbaf1fa5567d3ed9ca1ebcf"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "13b14bd1f1bfa2b50ecb7f28616ee4dfd4b413803dd6d11ae2a81df7516db7a2"
+      "sha256": "40f42d9994d7e90fe9aab781b332469bedf409f5f6671dcc284452ab716077ca"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "ac0a30fa2a6ea190c6283e21cbc2b1800c86de77466f0cb83afb88690fa48dbc"
+      "sha256": "346d11b9dc592221da479ed6145a8c6effce25bb8c52f6d992fa36b19e0a9884"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "8166c8df20b50d340c9217bc4e89c1766a3dc49a0a135d24746f8738676c6d0d"
+      "sha256": "9b9446971ac00b3381175f5b6296314ad0fa9f3a512e7b52961ef174e121279f"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "cd881ee5a970b63ae7d518e844fa91469e4d082a1e581c0b7c5590a177641a76"
+      "sha256": "3380673eed0bf65f4e88328566f3c91e0c1f88ce00eb3d3599c55612d0bc4c1f"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "25f1c0d53624f079d59695d3c1b041257e025e9d9176d4f043c7bb418e1b794e"
+      "sha256": "2cf9dbc1940f00ea42817b39427b6b822743f4725445816dd2130c0195c9382e"
     },
     {
       "path": "geometry/buildings.geojson",
