@@ -5,7 +5,7 @@
   "dimensions": [
     {
       "risk_id": "R-BOUNDARY-001",
-      "dimension": "spatial_dispute",
+      "risk_dimension": "spatial_dispute",
       "label": "临时边界争议",
       "score": 4,
       "note": "所有空间指标和几何图层基于provisional boundary计算；官方多边形未取得。替换官方边界后site_area_sqm、green_ratio、public_space_ratio等全部指标需重新计算；用地分区拓扑可能需调整。",
@@ -19,7 +19,7 @@
     },
     {
       "risk_id": "R-CONTROLS-001",
-      "dimension": "policy_uncertainty",
+      "risk_dimension": "policy_uncertainty",
       "label": "管控数据缺失",
       "score": 4,
       "note": "FAR、建筑高度、密度、道路红线、市政管线、文保范围、工程地质条件等官方管控数据缺失。开发强度分区和建筑形态为概念方案；更新项目拆迁量和实施时序无法精确确定；市政容量无法验算。",
@@ -33,7 +33,7 @@
     },
     {
       "risk_id": "R-STAKEHOLDER-001",
-      "dimension": "implementation_complexity",
+      "risk_dimension": "implementation_complexity",
       "label": "多主体协调",
       "score": 4,
       "note": "三处重点区域涉及多个实施主体（中关村科学城管委会、海淀区政府、清华/北大/中科院、海淀商务局、京投公司），协调复杂度高。众智园涉及科研机构搬迁或合作谈判；AI原点社区涉及高校周边城市更新和站点一体化审批；大钟寺涉及商业开发与历史保护的平衡。",
@@ -47,7 +47,7 @@
     },
     {
       "risk_id": "R-TECH-001",
-      "dimension": "technology_maturity",
+      "risk_dimension": "technology_maturity",
       "label": "AI场景技术可行性",
       "score": 3,
       "note": "10个AI场景卡和3个测试场景为概念设计，技术可行性和数据可用性未经验证。城市智能体沙盒需要真实IoT数据源和隐私合规审查；人才生活管家需要对接多个公共服务平台API；慢行断点诊断依赖公开数据质量。",
@@ -60,7 +60,7 @@
     },
     {
       "risk_id": "R-PHASING-001",
-      "dimension": "implementation_complexity",
+      "risk_dimension": "implementation_complexity",
       "label": "分期实施不确定性",
       "score": 3,
       "note": "一期范围458.7ha涉及多个产权单位和现状建筑，实际可启动面积和时序取决于权属谈判和拆迁进度。一期可讨论范围不等于可立即实施范围。",
@@ -73,7 +73,7 @@
     },
     {
       "risk_id": "R-REVIEW-001",
-      "dimension": "technology_maturity",
+      "risk_dimension": "technology_maturity",
       "label": "AI生成方案评审风险",
       "score": 2,
       "note": "方案由AI Agent生成并自检，未经人工专业评审确认；可能存在AI幻觉或逻辑不一致。部分设计判断可能不符合中国城市规划实践惯例；英文翻译可能存在术语偏差。",
@@ -86,7 +86,7 @@
     },
     {
       "risk_id": "R-MARKET-001",
-      "dimension": "policy_uncertainty",
+      "risk_dimension": "policy_uncertainty",
       "label": "产业生态变化",
       "score": 2,
       "note": "全球AI产业生态和人才竞争格局可能在项目实施周期内发生重大变化。当前对标8座全球AI城市（截至2026-08）的案例可能在3-5年后不再适用；产业空间需求预测可能偏乐观或偏保守。",
