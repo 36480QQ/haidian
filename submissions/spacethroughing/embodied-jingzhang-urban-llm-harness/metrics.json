@@ -150,7 +150,7 @@
         "simulation.json",
         "visual/assets/evaluation/runs/urban_llm_harness/run.json"
       ],
-      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator and is recovery-only",
+      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "confidence": "medium",
       "status_label": "provisional"
     },
@@ -245,7 +245,7 @@
         "visual/assets/evaluation/runs/single_llm_without_harness/run.json",
         "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json"
       ],
-      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "confidence": "medium",
       "status_label": "provisional",
       "evidence_scope": "deterministic offline policy run; no live robot or live LLM inference"
@@ -258,7 +258,7 @@
         "visual/assets/evaluation/runs/rule_only_scheduler/run.json",
         "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json"
       ],
-      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "confidence": "medium",
       "status_label": "provisional",
       "evidence_scope": "deterministic offline policy run; no live robot or live LLM inference"

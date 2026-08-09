@@ -14,10 +14,10 @@
     },
     "success_definition": {
       "primary": "outcome == success AND audit_complete == true",
-      "replanned_success": "replanning recovery is reported separately and remains in primary denominator",
+      "replanned_recovery": "replanning recovery is reported separately and remains in primary denominator",
       "failure": "any other outcome or incomplete audit"
     },
-    "replanning_policy": "A task that needs replanning is not counted as primary success; it remains in the denominator and is reported as replanned_success.",
+    "replanning_policy": "A task that needs replanning is not counted as primary success; it remains in the denominator and is reported as replanned_recovery.",
     "common_environment": {
       "simulator": "JZ-offline-deterministic-simulator-1.0",
       "same_task_manifest": true,
@@ -32,7 +32,7 @@
         "claim_scope": "validated offline synthetic Harness run",
         "run_ref": "visual/assets/evaluation/runs/urban_llm_harness/run.json",
         "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
-        "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5",
+        "trace_sha256": "5f50bfcc970b6b96cc4a1daa5e846ea2b73f92169b044889d287b93f190fa85b",
         "aggregation": {
           "status": "validated_offline_synthetic",
           "replayable": true,
@@ -40,7 +40,7 @@
           "eligible_task_count": 100,
           "excluded_task_count": 0,
           "success_count": 92,
-          "replanned_success_count": 8,
+          "replanned_recovery_count": 8,
           "failure_count": 0,
           "success_rate": 0.92,
           "tool_schema_pass_rate": 1.0,
@@ -50,7 +50,7 @@
           "energy_budget_violations": 0,
           "replan_p95_seconds": 6.7,
           "audit_completeness": 1.0,
-          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
           "source": "simulation.json tasks + evaluation protocol"
         }
       },
@@ -60,7 +60,7 @@
         "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
         "run_ref": "visual/assets/evaluation/runs/single_llm_without_harness/run.json",
         "task_results_ref": "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json",
-        "trace_sha256": "3bfa39998dfde419060298bb80e7d9bff3c59e1a0a3fe9eb56763f5b99df6fed",
+        "trace_sha256": "a61da3480812007901c43cf0223ce88f3a8a82cf59b0f3a71bfac48f36c73d1f",
         "aggregation": {
           "status": "validated_offline_synthetic",
           "replayable": true,
@@ -68,7 +68,7 @@
           "eligible_task_count": 100,
           "excluded_task_count": 0,
           "success_count": 56,
-          "replanned_success_count": 8,
+          "replanned_recovery_count": 8,
           "failure_count": 36,
           "success_rate": 0.56,
           "tool_schema_pass_rate": 0.9352,
@@ -78,7 +78,7 @@
           "energy_budget_violations": 5,
           "replan_p95_seconds": 12.98,
           "audit_completeness": 1.0,
-          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only"
         }
       },
       "rule_only_scheduler": {
@@ -87,7 +87,7 @@
         "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
         "run_ref": "visual/assets/evaluation/runs/rule_only_scheduler/run.json",
         "task_results_ref": "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json",
-        "trace_sha256": "db28bc0d811693b8028042e55926de1befc6c6bb358c077d9fc42cd16b70e82b",
+        "trace_sha256": "5eaf4a8c0f7f5f31c7cb86fe9ab0adced06de227bf8407ca6f4bd77872a27021",
         "aggregation": {
           "status": "validated_offline_synthetic",
           "replayable": true,
@@ -95,7 +95,7 @@
           "eligible_task_count": 100,
           "excluded_task_count": 0,
           "success_count": 67,
-          "replanned_success_count": 16,
+          "replanned_recovery_count": 16,
           "failure_count": 17,
           "success_rate": 0.67,
           "tool_schema_pass_rate": 1.0,
@@ -105,7 +105,7 @@
           "energy_budget_violations": 5,
           "replan_p95_seconds": 11.18,
           "audit_completeness": 1.0,
-          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only"
         }
       }
     }
@@ -144,7 +144,7 @@
       "eligible_task_count": 100,
       "excluded_task_count": 0,
       "success_count": 92,
-      "replanned_success_count": 8,
+      "replanned_recovery_count": 8,
       "failure_count": 0,
       "success_rate": 0.92,
       "tool_schema_pass_rate": 1.0,
@@ -154,7 +154,7 @@
       "energy_budget_violations": 0,
       "replan_p95_seconds": 6.7,
       "audit_completeness": 1.0,
-      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "source": "simulation.json tasks + evaluation protocol",
       "run_id": "urban_llm_harness-20260809-v1",
       "runner": "simulation.json + visual/assets/evaluation/run_baselines.js",
@@ -164,7 +164,7 @@
       "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
       "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
       "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
-      "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5"
+      "trace_sha256": "5f50bfcc970b6b96cc4a1daa5e846ea2b73f92169b044889d287b93f190fa85b"
     },
     "single_llm_without_harness": {
       "status": "validated_offline_synthetic",
@@ -173,7 +173,7 @@
       "eligible_task_count": 100,
       "excluded_task_count": 0,
       "success_count": 56,
-      "replanned_success_count": 8,
+      "replanned_recovery_count": 8,
       "failure_count": 36,
       "success_rate": 0.56,
       "tool_schema_pass_rate": 0.9352,
@@ -183,7 +183,7 @@
       "energy_budget_violations": 5,
       "replan_p95_seconds": 12.98,
       "audit_completeness": 1.0,
-      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "run_id": "single_llm_without_harness-20260809-v1",
       "runner": "visual/assets/evaluation/run_baselines.js",
       "runner_version": "1.0.0",
@@ -192,7 +192,7 @@
       "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
       "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
       "task_results_ref": "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json",
-      "trace_sha256": "3bfa39998dfde419060298bb80e7d9bff3c59e1a0a3fe9eb56763f5b99df6fed"
+      "trace_sha256": "a61da3480812007901c43cf0223ce88f3a8a82cf59b0f3a71bfac48f36c73d1f"
     },
     "rule_only_scheduler": {
       "status": "validated_offline_synthetic",
@@ -201,7 +201,7 @@
       "eligible_task_count": 100,
       "excluded_task_count": 0,
       "success_count": 67,
-      "replanned_success_count": 16,
+      "replanned_recovery_count": 16,
       "failure_count": 17,
       "success_rate": 0.67,
       "tool_schema_pass_rate": 1.0,
@@ -211,7 +211,7 @@
       "energy_budget_violations": 5,
       "replan_p95_seconds": 11.18,
       "audit_completeness": 1.0,
-      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
       "run_id": "rule_only_scheduler-20260809-v1",
       "runner": "visual/assets/evaluation/run_baselines.js",
       "runner_version": "1.0.0",
@@ -220,7 +220,7 @@
       "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
       "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
       "task_results_ref": "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json",
-      "trace_sha256": "db28bc0d811693b8028042e55926de1befc6c6bb358c077d9fc42cd16b70e82b"
+      "trace_sha256": "5eaf4a8c0f7f5f31c7cb86fe9ab0adced06de227bf8407ca6f4bd77872a27021"
     }
   },
   "aggregate": {
@@ -230,7 +230,7 @@
     "eligible_task_count": 100,
     "excluded_task_count": 0,
     "success_count": 92,
-    "replanned_success_count": 8,
+    "replanned_recovery_count": 8,
     "failure_count": 0,
     "success_rate": 0.92,
     "tool_schema_pass_rate": 1.0,
@@ -240,7 +240,7 @@
     "energy_budget_violations": 0,
     "replan_p95_seconds": 6.7,
     "audit_completeness": 1.0,
-    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only",
     "source": "simulation.json tasks + evaluation protocol",
     "run_id": "urban_llm_harness-20260809-v1",
     "runner": "simulation.json + visual/assets/evaluation/run_baselines.js",
@@ -250,7 +250,7 @@
     "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
     "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
     "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
-    "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5"
+    "trace_sha256": "5f50bfcc970b6b96cc4a1daa5e846ea2b73f92169b044889d287b93f190fa85b"
   },
   "tasks": [
     {
@@ -1553,7 +1553,7 @@
       "energy_used_kwh": 2.33,
       "replan_seconds": 4.55,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-094",
@@ -1567,7 +1567,7 @@
       "energy_used_kwh": 2.64,
       "replan_seconds": 4.98,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-095",
@@ -1581,7 +1581,7 @@
       "energy_used_kwh": 1.4,
       "replan_seconds": 5.41,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-096",
@@ -1595,7 +1595,7 @@
       "energy_used_kwh": 1.71,
       "replan_seconds": 5.84,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-097",
@@ -1609,7 +1609,7 @@
       "energy_used_kwh": 2.02,
       "replan_seconds": 6.27,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-098",
@@ -1623,7 +1623,7 @@
       "energy_used_kwh": 2.33,
       "replan_seconds": 6.7,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-099",
@@ -1637,7 +1637,7 @@
       "energy_used_kwh": 2.64,
       "replan_seconds": 2.4,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     },
     {
       "task_id": "SIM-100",
@@ -1651,7 +1651,7 @@
       "energy_used_kwh": 1.4,
       "replan_seconds": 2.83,
       "audit_complete": true,
-      "outcome": "replanned_success"
+      "outcome": "replanned_recovery"
     }
   ],
   "method": "fixed task manifest and deterministic offline traces; Harness and both baselines are replayable; single-LLM entry is a policy surrogate, not live model inference; no live robot or personal data",

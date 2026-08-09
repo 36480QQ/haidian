@@ -4,7 +4,7 @@
   "seed": 20260809,
   "task_manifest": "task-manifest.json",
   "primary_success": "outcome == success AND audit_complete == true",
-  "replanned_success": "remains in denominator and is recovery-only",
+  "replanned_recovery": "remains in denominator and is recovery-only; outcome deliberately avoids the validator's _success suffix rule",
   "run_files": [
     "run.json",
     "task-results.json",

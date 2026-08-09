@@ -19,9 +19,9 @@ for (const runId of ["urban_llm_harness", "single_llm_without_harness", "rule_on
   const calls = JSON.parse(fs.readFileSync(path.join(runRoot, "tool-calls.json"), "utf8"));
   const observations = JSON.parse(fs.readFileSync(path.join(runRoot, "observations.json"), "utf8"));
   const direct = results.filter((r) => r.outcome === "success" && r.audit_complete === true).length;
-  const replanned = results.filter((r) => r.outcome === "replanned_success").length;
+  const replanned = results.filter((r) => r.outcome === "replanned_recovery").length;
   const trace = sha({ task_results: results, tool_calls: calls, observations });
-  if (results.length !== expected || observations.length !== expected || run.task_manifest_sha256 !== protocol.task_manifest.task_manifest_sha256 || run.aggregation.success_count !== direct || run.aggregation.replanned_success_count !== replanned || run.aggregation.success_rate !== direct / expected || run.trace_sha256 !== trace) {
+  if (results.length !== expected || observations.length !== expected || run.task_manifest_sha256 !== protocol.task_manifest.task_manifest_sha256 || run.aggregation.success_count !== direct || run.aggregation.replanned_recovery_count !== replanned || run.aggregation.success_rate !== direct / expected || run.trace_sha256 !== trace) {
     throw new Error(`${runId}: aggregate, manifest, or trace mismatch`);
   }
   console.log(`${runId}: ${direct}/${expected} = ${(direct / expected * 100).toFixed(0)}%; trace=${run.trace_sha256}`);

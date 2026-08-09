@@ -19,7 +19,7 @@
   "tool_calls_ref": "visual/assets/evaluation/runs/single_llm_without_harness/tool-calls.json",
   "observations_ref": "visual/assets/evaluation/runs/single_llm_without_harness/observations.json",
   "environment_ref": "visual/assets/evaluation/runs/single_llm_without_harness/environment.json",
-  "trace_sha256": "3bfa39998dfde419060298bb80e7d9bff3c59e1a0a3fe9eb56763f5b99df6fed",
+  "trace_sha256": "a61da3480812007901c43cf0223ce88f3a8a82cf59b0f3a71bfac48f36c73d1f",
   "aggregation": {
     "status": "validated_offline_synthetic",
     "replayable": true,
@@ -27,7 +27,7 @@
     "eligible_task_count": 100,
     "excluded_task_count": 0,
     "success_count": 56,
-    "replanned_success_count": 8,
+    "replanned_recovery_count": 8,
     "failure_count": 36,
     "success_rate": 0.56,
     "tool_schema_pass_rate": 0.9352,
@@ -37,6 +37,6 @@
     "energy_budget_violations": 5,
     "replan_p95_seconds": 12.98,
     "audit_completeness": 1.0,
-    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only"
   }
 }

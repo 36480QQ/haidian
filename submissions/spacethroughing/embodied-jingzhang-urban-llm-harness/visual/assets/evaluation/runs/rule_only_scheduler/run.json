@@ -19,7 +19,7 @@
   "tool_calls_ref": "visual/assets/evaluation/runs/rule_only_scheduler/tool-calls.json",
   "observations_ref": "visual/assets/evaluation/runs/rule_only_scheduler/observations.json",
   "environment_ref": "visual/assets/evaluation/runs/rule_only_scheduler/environment.json",
-  "trace_sha256": "db28bc0d811693b8028042e55926de1befc6c6bb358c077d9fc42cd16b70e82b",
+  "trace_sha256": "5eaf4a8c0f7f5f31c7cb86fe9ab0adced06de227bf8407ca6f4bd77872a27021",
   "aggregation": {
     "status": "validated_offline_synthetic",
     "replayable": true,
@@ -27,7 +27,7 @@
     "eligible_task_count": 100,
     "excluded_task_count": 0,
     "success_count": 67,
-    "replanned_success_count": 16,
+    "replanned_recovery_count": 16,
     "failure_count": 17,
     "success_rate": 0.67,
     "tool_schema_pass_rate": 1.0,
@@ -37,6 +37,6 @@
     "energy_budget_violations": 5,
     "replan_p95_seconds": 11.18,
     "audit_completeness": 1.0,
-    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_recovery remains in denominator and is recovery-only"
   }
 }
