@@ -1,0 +1,151 @@
+{
+  "schema": "urban-design-metrics-v2",
+  "site_area_sqm": {
+    "status": "known",
+    "value": 4253767.6,
+    "unit": "sqm",
+    "source_files": [
+      "geometry/site_boundary.geojson"
+    ],
+    "formula": "polygon_area(site_boundary) in local equirectangular frame",
+    "confidence": "low",
+    "assumptions": [
+      "Provisional envelope; recompute against EPSG:4548 with official polygons."
+    ]
+  },
+  "land_use_area_by_code": {
+    "B1B2": 708961.3,
+    "G1A": 708961.3,
+    "M4": 2126883.9,
+    "R2B1": 708961.3
+  },
+  "total_land_use_area_sqm": {
+    "status": "known",
+    "value": 4253767.8,
+    "unit": "sqm",
+    "source_files": [
+      "geometry/land_use.geojson"
+    ],
+    "formula": "sum(polygon_area(land_use parcels))",
+    "confidence": "low",
+    "assumptions": [
+      "Provisional partition."
+    ]
+  },
+  "total_floor_area_sqm": {
+    "status": "known",
+    "value": 8507535.6,
+    "unit": "sqm",
+    "source_files": [
+      "geometry/land_use.geojson"
+    ],
+    "formula": "land_use_area * assumed_FAR(2.0)",
+    "confidence": "low",
+    "assumptions": [
+      "FAR assumed 2.0 for provisional estimate; replace with statutory values."
+    ]
+  },
+  "floor_area_ratio": {
+    "status": "known",
+    "value": 2.0,
+    "unit": "ratio",
+    "source_files": [
+      "geometry/land_use.geojson"
+    ],
+    "formula": "total_floor_area / site_area",
+    "confidence": "low",
+    "assumptions": [
+      "Assumed; not statutory."
+    ]
+  },
+  "building_density": {
+    "status": "known",
+    "value": 0.1296,
+    "unit": "ratio",
+    "source_files": [
+      "geometry/buildings.geojson",
+      "geometry/land_use.geojson"
+    ],
+    "formula": "building_footprint / land_use_area",
+    "confidence": "low",
+    "assumptions": [
+      "Sample blocks only."
+    ]
+  },
+  "green_space_area_sqm": {
+    "status": "known",
+    "value": 510452.1,
+    "unit": "sqm",
+    "source_files": [
+      "geometry/green_space.geojson"
+    ],
+    "formula": "polygon_area(green_space)",
+    "confidence": "low",
+    "assumptions": [
+      "Provisional park belt envelope."
+    ]
+  },
+  "green_space_ratio": {
+    "status": "known",
+    "value": 0.12,
+    "unit": "ratio",
+    "source_files": [
+      "geometry/green_space.geojson",
+      "geometry/land_use.geojson"
+    ],
+    "formula": "green_area / land_use_area",
+    "confidence": "low",
+    "assumptions": []
+  },
+  "public_space_area_sqm": {
+    "status": "known",
+    "value": 194458.0,
+    "unit": "sqm",
+    "source_files": [
+      "geometry/public_space.geojson"
+    ],
+    "formula": "sum(polygon_area(public_space nodes))",
+    "confidence": "low",
+    "assumptions": [
+      "Sample plazas only."
+    ]
+  },
+  "public_space_ratio": {
+    "status": "known",
+    "value": 0.0457,
+    "unit": "ratio",
+    "source_files": [
+      "geometry/public_space.geojson",
+      "geometry/land_use.geojson"
+    ],
+    "formula": "public_area / land_use_area",
+    "confidence": "low",
+    "assumptions": []
+  },
+  "road_area_ratio": {
+    "status": "unknown",
+    "value": null,
+    "unit": "ratio",
+    "source_files": [],
+    "formula": "road_area / land_use_area",
+    "confidence": "none",
+    "assumptions": [
+      "Road width not defined in provisional envelope."
+    ],
+    "reason": "Provisional envelope lacks carriageway widths; recompute with official sections."
+  },
+  "phasing_area_by_phase": {
+    "phase_1_sqm": 1417922.6,
+    "phase_2_sqm": 1417922.6,
+    "phase_3_sqm": 1417922.6
+  },
+  "key_detailed_design_areas": {
+    "count": 3,
+    "areas_sqm": {
+      "KEY-DAZHONGSI": 212688.4,
+      "KEY-ZHICHUN": 233957.2,
+      "KEY-WUDAOKOU": 255226.1
+    }
+  },
+  "projection_note": "Areas computed in local equirectangular frame (lat=39.98500). Recompute to EPSG:4548 (CGCS2000 / 3-degree GK zone 50) when official polygons are supplied."
+}

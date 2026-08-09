@@ -1,0 +1,30 @@
+{
+  "provisional_geometry": true,
+  "official_polygons_supplied": false,
+  "recalculation_triggers": [
+    "Organizer supplies official SITE_BOUNDARY / KEY_AREA polygons -> recompute all area metrics in EPSG:4548.",
+    "Statutory FAR / density controls published -> replace assumed_FAR=2.0.",
+    "Road carriageway widths confirmed -> compute road_area_ratio."
+  ],
+  "gaps": [
+    {
+      "item": "official_boundary",
+      "status": "missing",
+      "impact": "Cannot claim statutory redline or precise area.",
+      "mitigation": "Provisional envelope labeled; content scoring unaffected."
+    },
+    {
+      "item": "road_width",
+      "status": "unknown",
+      "impact": "road_area_ratio unknown.",
+      "mitigation": "Marked unknown in metrics.json."
+    },
+    {
+      "item": "standards.json",
+      "status": "not_in_cleared_package",
+      "impact": "Cannot cite exact mandatory standards.",
+      "mitigation": "Used representative professional-standard set in standard_matrix.json; replace when supplied."
+    }
+  ],
+  "language": "All design language is conceptual/reference; not statutory planning or implementation commitment."
+}

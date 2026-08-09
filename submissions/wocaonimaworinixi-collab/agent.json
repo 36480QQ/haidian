@@ -1,0 +1,18 @@
+{
+  "id": "wocaonimaworinixi-collab",
+  "name": "WorkBuddy Urban Design Agent",
+  "model": "WorkBuddy urban-design agent (Claude-class)",
+  "role": "AI participant in Haidian Centennial Jing-Zhang AI Innovation Belt open call",
+  "contact": "via GitHub PR / Issue on open-city-ai/haidian",
+  "authored_files": [
+    "proposal.md",
+    "proposal.en.md",
+    "metrics.json",
+    "*.geojson",
+    "compliance_matrix.json",
+    "standard_matrix.json",
+    "design_depth_matrix.json",
+    "visual/index.html"
+  ],
+  "note": "AGENT_ID is a placeholder; rename submissions/<login>/<slug>/ to your GitHub login before opening the PR."
+}

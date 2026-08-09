@@ -1,0 +1,142 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_by": "provisional geometry generator (no official polygons supplied)",
+    "crs": "EPSG:4326",
+    "geometry_role": "provisional_constraint",
+    "official_boundary": false,
+    "boundary_precision": "provisional_rough",
+    "note": "Provisional envelope only. Not an official redline. Recompute against EPSG:4548 when official data arrives."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "KEY-DAZHONGSI",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3278,
+              39.97533333333333
+            ],
+            [
+              116.32979999999999,
+              39.97599999999999
+            ],
+            [
+              116.3322,
+              39.98799999999999
+            ],
+            [
+              116.3302,
+              39.98733333333333
+            ],
+            [
+              116.3278,
+              39.97533333333333
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "KEY-DAZHONGSI",
+        "layer": "key_areas",
+        "key_area_type": "dazhongsi_ai_industry_cluster",
+        "name": "大钟寺 AI 产业集聚区",
+        "source_type": "provisional_generated",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "area_sqm_declared": 212688.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KEY-ZHICHUN",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3398,
+              39.980266666666665
+            ],
+            [
+              116.3422,
+              39.98106666666666
+            ],
+            [
+              116.34440000000001,
+              39.99206666666666
+            ],
+            [
+              116.342,
+              39.99126666666666
+            ],
+            [
+              116.3398,
+              39.980266666666665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "KEY-ZHICHUN",
+        "layer": "key_areas",
+        "key_area_type": "zhongzhiyuan_ai_acceleration_area",
+        "name": "知春苑 AI 加速度区",
+        "source_type": "provisional_generated",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "area_sqm_declared": 233957.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KEY-WUDAOKOU",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34759999999999,
+              39.98193333333333
+            ],
+            [
+              116.35,
+              39.98273333333333
+            ],
+            [
+              116.3524,
+              39.99473333333333
+            ],
+            [
+              116.35,
+              39.99393333333333
+            ],
+            [
+              116.34759999999999,
+              39.98193333333333
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "KEY-WUDAOKOU",
+        "layer": "key_areas",
+        "key_area_type": "beijing_ai_origin_community",
+        "name": "北京 AI 原生社区 (五道口)",
+        "source_type": "provisional_generated",
+        "confidence": "low",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "area_sqm_declared": 255226.1
+      }
+    }
+  ]
+}

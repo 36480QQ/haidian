@@ -1,0 +1,129 @@
+{
+  "items": [
+    {
+      "id": "DD-01",
+      "topic": "设计依据与资料清单",
+      "status": "complete",
+      "evidence": [
+        "sources.json",
+        "assumptions.json"
+      ]
+    },
+    {
+      "id": "DD-02",
+      "topic": "三级范围框架",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#scope",
+        "geometry/site_boundary.geojson"
+      ]
+    },
+    {
+      "id": "DD-03",
+      "topic": "协同研究区产业与未来城市策略",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#strategy"
+      ]
+    },
+    {
+      "id": "DD-04",
+      "topic": "整体设计区城市更新（控规城市设计深度）",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#overall",
+        "geometry/land_use.geojson"
+      ]
+    },
+    {
+      "id": "DD-05",
+      "topic": "三重点区详细设计",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#key-areas",
+        "geometry/key_areas.geojson"
+      ]
+    },
+    {
+      "id": "DD-06",
+      "topic": "AI 创新生态/人才/场景",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#ecosystem",
+        "AIE-01..06",
+        "SC-01..12"
+      ]
+    },
+    {
+      "id": "DD-07",
+      "topic": "用地/建筑量/留改拆建逻辑",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#landuse",
+        "metrics.json"
+      ]
+    },
+    {
+      "id": "DD-08",
+      "topic": "交通/轨道/市政/公服",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#mobility",
+        "proposal.md#services",
+        "geometry/roads.geojson"
+      ]
+    },
+    {
+      "id": "DD-09",
+      "topic": "蓝绿公共空间与城市风貌",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#bluegreen",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
+      ]
+    },
+    {
+      "id": "DD-10",
+      "topic": "更新项目库/政策/分期",
+      "status": "complete",
+      "evidence": [
+        "proposal.md#phasing",
+        "geometry/phasing.geojson"
+      ]
+    },
+    {
+      "id": "DD-11",
+      "topic": "指标/面积重算/合规矩阵",
+      "status": "complete",
+      "evidence": [
+        "metrics.json",
+        "compliance_matrix.json"
+      ]
+    },
+    {
+      "id": "DD-12",
+      "topic": "专业标准响应",
+      "status": "complete",
+      "evidence": [
+        "standard_matrix.json"
+      ]
+    },
+    {
+      "id": "DD-13",
+      "topic": "设计深度证据",
+      "status": "complete",
+      "evidence": [
+        "design_depth_matrix.json"
+      ]
+    },
+    {
+      "id": "DD-14",
+      "topic": "Agent 任务书响应（品牌/案例/场景/验证/画像/朝圣/叙事/运营）",
+      "status": "complete",
+      "evidence": [
+        "compliance_matrix.json#agent_taskbook"
+      ]
+    }
+  ]
+}
