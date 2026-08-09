@@ -126,6 +126,7 @@ code {
 <h2>v3.3 最短实施合同：每一步都有普通路径和退出</h2>
 <p>1. <strong>复核：</strong>锁定官方/临时几何版本、现场基线、权利与责任人；缺任一关键输入就保持 unknown。 2. <strong>基座：</strong>先提供实体导视、纸面地图、人工窗口、座椅/遮阴、饮水、排水和无账号求助；普通路径不能等待模型恢复。 3. <strong>小测：</strong>只在有人值守、限时、低速、有急停和人工接管的窗口运行；记录正面、负面、近失、投诉和分组差异。 4. <strong>裁决：</strong>由独立复核者比较是否保留、改造、扩散或退出；任何场景结果都不能继承给另一构件。 5. <strong>回执：</strong>公开版本、来源、限制、删除/撤回和维护记录；失败时冻结扩散并恢复被动服务。</p>
 <p><strong>首个 90 天的建议顺序（不是已确定的实施时序）：</strong>第 0—30 天只做 CR-01 资料/场地锁定、现场基线和权利责任清单；第 31—60 天在 CR-01 通过后做 CR-02 被动构件样机与 CR-03 风热水/生命线协调；第 61—90 天只有 CR-01—CR-03 全部通过、权利记录齐全且有人值守兜底时，才可考虑一个 CR-04 有界窗口。任一关键条件缺失，回到复核、返修或普通公共服务，不进入扩容。</p>
+<p><strong>首个可复核切片：S02 低速配送机器人合成演练（只展示合同，不声称已运行）：</strong>锚定 <code>geometry/roads.geojson#ROAD-001</code> 的 provisional 路段，单设备、单人工观察员、一个标记回位湾，明确不做真实配送、不开放公共道路；无障碍路线必须始终保持，任何行人冲突、路线阻断、急停失效、观察员失去视线或回位湾不可用都立即停止。纸面告知、可见停止状态、无数字解释和手推车/人工配送等价路径是放行前置条件；只记录合成 run ID、路线窗口、让行/急停/回位事件，不收集个人数据，当前 <code>result_status=not_run</code>、<code>release_decision=hold</code>。完整字段见 <code>visual/assets/example-s02-embodied-test-window.json</code>；它把一个可审查的空间窗口、人工权力、数据最小化和归还普通服务压缩成一条可复核记录，不代表机器人性能、公众接受或部署许可。</p>
 <p>这一协议包含 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="civic_pulse_stage_count" title="指标：civic_pulse_stage_count">指标</sup> 个阶段、<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="civic_pulse_station_count" title="指标：civic_pulse_station_count">指标</sup> 个站点和 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="proof_mile_component_count" title="指标：proof_mile_component_count">指标</sup> 个构件。</p>
 <p>它还登记 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="proof_mile_station_handoff_count" title="指标：proof_mile_station_handoff_count">指标</sup> 个站点交接与 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="risk_class_count" title="指标：risk_class_count">指标</sup> 个风险维度；这些数量是包内记录数，不是现场绩效或审批结论。</p>
 <p>正文按设计依据、三层范围、重点区、生态与场景、用地交通、市政蓝绿、实施、指标、风险和参考资料展开；结构化附件承载完整来源、标准、深度、数据和停止条件，正文则先说明空间判断及其可感知后果。</p>
@@ -135,7 +136,7 @@ code {
 <p>资料登记表的使用边界如下：</p>
 <ul>
 <li>data/source_registry.json 登记公开、清权与临时资料的用途边界。</li>
-<li>当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条，package build-toolchain 记录 4 条；包内 sources.json 共登记 67 条来源。</li>
+<li>当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条，package build-toolchain 记录 4 条，另有 1 条边界交叉核对背景记录；包内 sources.json 共登记 68 条来源。</li>
 <li>agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。</li>
 </ul>
 <h3>行政尺度数据基线：只校准问题，不分配空间</h3>

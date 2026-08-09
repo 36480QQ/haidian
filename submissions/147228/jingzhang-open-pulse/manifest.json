@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T10:29:00.103625Z",
+  "generated_at": "2026-08-09T10:33:09.825300Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ab7beecdb2cb63f6f235f7bf8c723369be2dbda422b442d9bbea18eed16ef524"
+      "sha256": "6e55af7e30f41091573722efff37384e34bb402dc7baa7a5a747f667f276b468"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "413ed6864adbf2b880a61b1cb6463d2e85b26a47afa84fc4f422f0466d078caf"
+      "sha256": "7f1b65cf0619b397f70279cbc125569a08a9379a463ee7ea57e49b25f9106b00"
     },
     {
       "path": "agent.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0788c507fd9b18052141d906bc920f9bf17fe4d314a61aaf13fad77ca168b660"
+      "sha256": "7aea75189e32a9faf58a692a3cd08188bb962ff70b593878c1b45a180753070c"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2abc7792d6082afaa02da1c4116204f67703dcff070d19e5a233bc5f82eaf2a8"
+      "sha256": "effa9f4a876d3e063e499f6d63db520eb2a595ffdf3cd63cc550b4ffa8b2d234"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "272a9e692578e48b8457b1050dfa3c07ccefa28f72add09b7982398818a791b1"
+      "sha256": "5d5a7601c6a8c32a155b64e204d38d6d89b2eb3ff8aae6a9b98e8fc02935c617"
     },
     {
       "path": "report/narrative.md",
@@ -115,21 +115,21 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "918a49f506bbd1504cca5de1c51f74649a24f2702b0291eb63e0e0bac599e1a9"
+      "sha256": "d6fb19fcc1b25f3408becde7db3787a5311c4d06efacdf5a4c134514a9dd660d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9e45203fcd67050eaa4174721b864678e5979e8cd133d90ad060887977df1414"
+      "sha256": "bb00e71cc110c43b2dc1a8c10a1a526aa2516ef21cae7e0df29fbdd0ba4a1f0a"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "38f4d0bae1d5d49b1e45680330f1ff22d09c32eda916d31a221c5f36f8471df7"
+      "sha256": "b2ce37dbdfea126996c0faf17bff311da58bf4af3bc01b60465c246afd23b257"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -137,7 +137,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "02602b26e76533fdf67cb6d84aeb77d7110221d705ae2eaed3e08db77bcc2663"
+      "sha256": "6ff3c6df9656d46a4649e975fbada0f5c9cc36f183887b892a0393d3916a4df3"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -145,7 +145,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a8201e4db7c35aacac01b57ad67f7d22b769d638ad5c1f8b982e0019b9d382d5"
+      "sha256": "633f44b365acd94ec87adb160664a9c2436b52c3d48438013053c0b2520a4c08"
     },
     {
       "path": "visual/index.html",
@@ -160,7 +160,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3bf90b1da0c46ecce91774390dbbab50c0bd3e20593e9130180d621a427920ce"
+      "sha256": "33ea23df4e4f17fd471417873b4dcef0cf3e3f6b0ce22f5e4435d47bf8065054"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -446,7 +446,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "cefe1477fd87bcc5d082f1c6a965282c794ef0a12d64609680434859a577a7d0"
+      "sha256": "1826d60c80a31d7de6c39be80d8ff5ade6b0e1ae22f9786bec02519c20012a0a"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",

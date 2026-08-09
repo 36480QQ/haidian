@@ -51,6 +51,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **首个 90 天的建议顺序（不是已确定的实施时序）：**第 0—30 天只做 CR-01 资料/场地锁定、现场基线和权利责任清单；第 31—60 天在 CR-01 通过后做 CR-02 被动构件样机与 CR-03 风热水/生命线协调；第 61—90 天只有 CR-01—CR-03 全部通过、权利记录齐全且有人值守兜底时，才可考虑一个 CR-04 有界窗口。任一关键条件缺失，回到复核、返修或普通公共服务，不进入扩容。
 
+**首个可复核切片：S02 低速配送机器人合成演练（只展示合同，不声称已运行）：**锚定 `geometry/roads.geojson#ROAD-001` 的 provisional 路段，单设备、单人工观察员、一个标记回位湾，明确不做真实配送、不开放公共道路；无障碍路线必须始终保持，任何行人冲突、路线阻断、急停失效、观察员失去视线或回位湾不可用都立即停止。纸面告知、可见停止状态、无数字解释和手推车/人工配送等价路径是放行前置条件；只记录合成 run ID、路线窗口、让行/急停/回位事件，不收集个人数据，当前 `result_status=not_run`、`release_decision=hold`。完整字段见 `visual/assets/example-s02-embodied-test-window.json`；它把一个可审查的空间窗口、人工权力、数据最小化和归还普通服务压缩成一条可复核记录，不代表机器人性能、公众接受或部署许可。
+
 这一协议包含 [metric:civic_pulse_stage_count] 个阶段、[metric:civic_pulse_station_count] 个站点和 [metric:proof_mile_component_count] 个构件。
 
 它还登记 [metric:proof_mile_station_handoff_count] 个站点交接与 [metric:risk_class_count] 个风险维度；这些数量是包内记录数，不是现场绩效或审批结论。
@@ -66,7 +68,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
-- 当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条，package build-toolchain 记录 4 条；包内 sources.json 共登记 67 条来源。
+- 当前登记摘要：formal 可用资料 5 条，background_only 资料 4 条，provisional-only 资料 1 条，package build-toolchain 记录 4 条，另有 1 条边界交叉核对背景记录；包内 sources.json 共登记 68 条来源。
 - agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。
 
 ### 行政尺度数据基线：只校准问题，不分配空间
