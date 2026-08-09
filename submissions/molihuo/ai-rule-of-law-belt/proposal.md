@@ -1,5 +1,5 @@
 ---
-title: "智理一带·法治京张：百年京张AI创新带总体概念与人工智能法治创新体系城市设计方案"
+title: "智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案"
 author_github: "molihuo"
 language: "zh"
 proposal_format_version: "2"
@@ -10,7 +10,7 @@ scenarios: []
 iteration: "v0.1"
 ---
 
-# 智理一带·法治京张：百年京张AI创新带总体概念与人工智能法治创新体系城市设计方案
+# 智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案
 
 ## 设计依据与资料清单
 
@@ -67,7 +67,15 @@ iteration: "v0.1"
 
 ### 命名体系与视觉识别方向
 
-主名称「智理一带·法治京张」，副标题与总纲提法为「**人工智能法治事业建设**」，简称「**AI 法治事业带**」。英文主名建议 **Belt of AI Rule-of-Law Endeavor**，副名 **Centennial Jing-Zhang AI Rule-of-Law Belt**。Logo 视觉母题（仅作方向示意）：以「天平+轨道」为核心——上横线借鉴铁轨枕木意象，下方为变形的衡平符号，三处重点片区对应「法源·法测·法市」三组嵌入式节点，环绕「法坛」中轴。不使用企业、商标、字体或人物肖像 [depth:risk_missing_data]。
+本方案名称采用三层级体系，旗帜鲜明地把「人工智能法治事业建设」置于第一层：
+
+- **第一层（总纲·定位层）**：「**人工智能法治事业建设**」——方案的首要定位与标识性提法，简称「**AI 法治事业带**」；所有空间、产业、场景与运营设计均以其为第一性目标。
+- **第二层（空间·品牌层）**：「**智理一带·法治京张**」——一带的空间品牌名称，承载总纲的落地形态。
+- **第三层（全称·方案层）**：「**智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案**」——正式提交方案名称。
+
+英文命名对应：第一层 **Belt of AI Rule-of-Law Endeavor**（总纲），第二层 **Centennial Jing-Zhang AI Rule-of-Law Belt**（品牌），第三层 **Zhi-Li Belt, Rule-of-Law Jing-Zhang：Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt, with AI Rule-of-Law Endeavor as the First-Tier Positioning**。
+
+Logo 视觉母题（仅作方向示意）：以「天平+轨道」为核心——上横线借鉴铁轨枕木意象，下方为变形的衡平符号，三处重点片区对应「法源·法测·法市」三组嵌入式节点，环绕「法坛」中轴。不使用企业、商标、字体或人物肖像 [depth:risk_missing_data]。
 
 ### AI 创新生态 · 全球案例摘要
 
