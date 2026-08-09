@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a3ef808f3e4f08b3ef8cf25764336c8cc3d01c5401d9782c9dbe23e2a7da2214"
+      "sha256": "7c6028b631fbed1bfa248f32999228aa5a5a95d0fa71dfbbe0989955fe34bf4f"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bc623cd535cfb4a03c50451d2c6e9de084ab689a41b9c2f54dd9d535b8fee926"
+      "sha256": "cddc3aae1cc47a026207a686f1780cba6c97aff0797b047263d5277cfb43b114"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2accd44d58b6c64b53a33d374a934a89ba8e8d25339e671ed7441b9dbb6bfca5"
+      "sha256": "7524a810fa3ee65db10d547222f000bd0e8a8f22bccc841a5d7549b8305216e7"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -197,7 +197,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "c9dd5c9f018eeb9967c06a510220f9972e5791b3d3227c24ea72cd120e21c3cf"
+      "sha256": "5814e20f1dfa151b0042e5370cf7f0da43c53ec95a9d08ff4c9217520b945ffa"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b4886d5e02e1d2342050eddf22f61e2aac8cf261548ee4b9907625ce09a75699"
+      "sha256": "997887e7b99a32246583f6f9010cf9b8c5286cc1d58dcd645a7cb09ae690a2b6"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "66e5bf12abe19654d29ef5050b4d98e0e293c6a49aff7814963da32514e938f7"
+      "sha256": "4cf8611571ba546e1f03ab3b4b6069f0a1333c2e79b386276400316072061121"
     },
     {
       "path": "visual/index.en.html",
@@ -399,14 +399,14 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2b15d3852a1672bd2e3c5e5413e194424af2508fc6d33e660e2d1041b7579c60"
+      "sha256": "777298789f25a1d292b4bf0d16c8808281a2c621928e606a3fc0ba922bbc4970"
     },
     {
       "path": "visual/assets/parity_qa.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "8dbabdcd96b3acef8deceecbfc1cc2520e51d99e6c9bc26be55cc0b0d8e13b05"
+      "sha256": "a05f0bfd7deebb44f6cdc945fc9bf06e80a552cf0d1ba6294f40cde9c01d264f"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -479,6 +479,13 @@
       "language": "en",
       "translation_of": "assets/figures/street-eye-level.png",
       "sha256": "47fb03c92fa7e2b515041b58a8e070af00a261ba53103dce495b2051dbe3189b"
+    },
+    {
+      "path": "visual/assets/osm_stitching.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "732b8d8b4b959174ba3ad22fc9a73af9a4b30565d5f1755c50d4e60c7e36f600"
     }
   ],
   "validation_claim": {

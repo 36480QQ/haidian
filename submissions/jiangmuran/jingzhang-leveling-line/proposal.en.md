@@ -355,6 +355,27 @@ The spine is cut laterally by several existing arterials, and stitching those cu
 | B — needs channelisation | Requires signal changes, channelisation or footway widening | The connection need and the basis for it; requires specialist traffic review |
 | C — needs new structure | Requires a bridge, tunnel or underpass | **The need is registered only; no feasibility conclusion is offered** |
 
+**This section had a classification and no geometry — now it has one.** For most of this package's life `roads.geojson` held the spine and the two survey routes and nothing else, while the proposal spent a whole subsection classifying stitching points. That is the same defect this package reports in other people's structured fields, so it is closed.
+
+Intersecting the submitted spine `ROAD-001` with OSM-surveyed arterials (trunk/primary/secondary, named only) in EPSG:4548 yields **eleven east-west stitching points**, written into [data:geometry/roads.geojson#ROAD-001] as ROAD-101 through ROAD-111. Each is a connection proposal drawn perpendicular to the arterial it crosses:
+
+| Stitching point | Class | Nearest mapped crossing |
+|---|---|---|
+| North Third Ring Road | **A** | 33 m |
+| North Fourth Ring Middle Road | **A** | 30 m |
+| Xueyuan South Road | **A** | 25 m |
+| Yinquan Road | **A** | 10 m |
+| Beitucheng West Road | need registered | 65 m |
+| Xizhimen North Street | need registered | 68 m |
+| Tsinghua East Road | need registered | 86 m |
+| Shibanfang South Road | need registered | 146 m |
+| G6 service road (two points) | need registered | 166 m / 175 m |
+| Zhixin Road | need registered | 201 m |
+
+**The classification uses one measurable fact and no more: whether a mapped pedestrian crossing already exists near the junction.** Within 60 m, the point is class A — a crossing exists and the problem is detour, gradient and waiting safety. Beyond it, **the need is registered and no class is assigned**, because separating "needs channelisation" from "needs a new structure" is the conclusion of specialist traffic review and this proposal declines to produce it. The radius is written in the script, can be changed and re-run, and every reading ships in `visual/assets/osm_stitching.json`.
+
+**The limits belong in the same paragraph.** OSM is crowd-sourced and crossings may simply be unmapped — "need registered" means *not in OSM*, not *not on the ground*. Arterial positions are OSM measurements, not official road centrelines, and may not be used as a redline or a precise alignment basis. The data is graded `background_only`: it locates a need and is not evidence for a spatial conclusion.
+
 The classification is by the approval and engineering level a connection requires, **not by importance** — and that distinction has to be stated rather than smoothed over. **An important connection may fall in class C and therefore remain unrealised for a long time. Saying so is more useful than drawing a line and implying the problem is solved.** The spatial position of each stitching point must be fixed after official boundaries and road conditions are published [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 **Not decided in this section:** floor area ratio, building height, density, green ratio, setbacks, building control lines, road redlines, parcel dimensions, view-corridor control surfaces, and any engineering feasibility conclusion.

@@ -253,6 +253,11 @@ code {
 <h3>东西缝合：给类型与优先级，不给工程结论</h3>
 <p>主脊被若干既有干道横向切断，缝合是总体设计范围的核心任务之一。本方案把缝合点按**代价与可行性**分三类，并明确本方案不做工程判断：</p>
 <div class="proposal-table"><table><thead><tr><th>类型</th><th>特征</th><th>本方案给出的内容</th></tr></thead><tbody><tr><td>A 类·可即时改善</td><td>现状已有过街设施，问题在于绕行距离、坡度或等候安全</td><td>优先级排序与改善方向；属近期项目 R1–R4 的可附带内容</td></tr><tr><td>B 类·需渠化改造</td><td>需调整信号、渠化或人行道拓宽</td><td>连通需求与判定依据；须交通专项论证</td></tr><tr><td>C 类·需新建结构</td><td>需桥、隧或地下通道</td><td>**仅登记需求，不做可行性结论**</td></tr></tbody></table></div>
+<p>**这一节此前只有分类，没有几何——现在有了。** 本方案的 <code>roads.geojson</code> 长期只含主脊与两条测量路线，而正文用整整一节讨论缝合点，却拿不出任何可被核验的空间对象。这与本方案在别人结构化字段里报告的缺陷是同一个，因此补齐：</p>
+<p>以提交的主脊 <code>ROAD-001</code> 与 OSM 实测干道（trunk/primary/secondary，须有名称）在 EPSG:4548 下求交，得到 **11 个东西缝合点**，逐一写入 <span class="evidence evidence-data">[data:geometry/roads.geojson#ROAD-001]</span>（ROAD-101 至 ROAD-111），每段为垂直于该干道的连通提案：</p>
+<div class="proposal-table"><table><thead><tr><th>缝合点</th><th>类别判定</th><th>最近已测绘过街设施</th></tr></thead><tbody><tr><td>北三环</td><td>**A 类**</td><td>33 m</td></tr><tr><td>北四环中路</td><td>**A 类**</td><td>30 m</td></tr><tr><td>学院南路</td><td>**A 类**</td><td>25 m</td></tr><tr><td>银泉路</td><td>**A 类**</td><td>10 m</td></tr><tr><td>北土城西路</td><td>仅登记需求</td><td>65 m</td></tr><tr><td>西直门北大街</td><td>仅登记需求</td><td>68 m</td></tr><tr><td>清华东路</td><td>仅登记需求</td><td>86 m</td></tr><tr><td>石板房南路</td><td>仅登记需求</td><td>146 m</td></tr><tr><td>G6 辅路（两处）</td><td>仅登记需求</td><td>166 m / 175 m</td></tr><tr><td>志新路</td><td>仅登记需求</td><td>201 m</td></tr></tbody></table></div>
+<p>**判定口径只用一件可测的事：交叉口附近是否已有已测绘的过街设施。** 半径 60 m 内有，判 A 类——现状已有过街，问题在绕行距离、坡度与等候安全；没有，则**只登记连通需求，不判类别**，因为 B 类（需渠化）与 C 类（需新建结构）的区分是交通专项论证的结论，本方案拒绝代为判定。半径写在脚本里，改了可重跑，全部读数随包提交于 <code>visual/assets/osm_stitching.json</code>。</p>
+<p>**限度也要说清**：OSM 为众包数据，过街设施可能未被完整测绘——判为「仅登记需求」只说明**OSM 上没有**，不等于现场没有。干道位置为 OSM 实测，非官方道路中心线，不得作为红线或精确定线依据；该数据定级 <code>background_only</code>，用于定位需求，不作为空间结论的证据。</p>
 <p>三类的划分依据是「达成连通所需的审批与工程层级」，而非重要性——**重要的连通点可能是 C 类，因此长期无法实现，这一点必须在方案里说出来，而不是画一条线假装它已解决。** 缝合点的空间落位待官方边界与道路条件公布后核定 <span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span>。</p>
 <p>**本方案在本节不决定的事项**：容积率、建筑高度、建筑密度、绿地率、退线、建筑控制线、道路红线、地块划分尺寸、视廊控制面、任何工程可行性结论。</p>
 <h2>重点区域详细设计</h2>
