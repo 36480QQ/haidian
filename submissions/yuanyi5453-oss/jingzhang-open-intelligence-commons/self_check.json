@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is prominently qualified; official replacement is pending."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three required provisional key areas remain explicitly non-official."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Partition remains derived from the submitted boundary with no intended gaps or overlaps."
+    },
+    {
+      "check_id": "BILINGUAL_DISPLAY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "Independent Chinese and English proposal, HTML, figures and PDFs are present."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static offline HTML uses local assets only."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Claims carry adjacent source, data, metric, standard and depth anchors."
+    }
+  ]
+}
