@@ -37,7 +37,7 @@ figcaption{font-size:12.5px;color:var(--annot);margin-top:6px;line-height:1.55}
 table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
 th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--layer);vertical-align:top}
 th{font-size:11.5px;color:var(--annot);letter-spacing:.05em;font-weight:500}
-td.num{font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
 .pill{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
 padding:2px 8px;border:1px solid var(--layer);background:#fff;margin:0 5px 5px 0}
 .dot{width:9px;height:9px;border-radius:50%;flex:none}
@@ -191,8 +191,8 @@ font-size:11.5px;color:var(--annot);line-height:1.6}
       <td>&copy; OpenStreetMap contributors, ODbL 1.0</td></tr>
   <tr><td>官方项目公告</td><td>范围四至、重点区名称、设计任务点名</td>
       <td>公开发布文本，边界为我方文字推定</td></tr>
-  <tr><td>provisional_boundaries.geojson</td><td>三重点区边界</td>
-      <td>官方提供的临时替代边界，直接采用未改动</td></tr>
+  <tr><td>仓库根 <code>brief/site-package/geometry/provisional_boundaries.geojson</code></td><td>三重点区边界</td>
+      <td>官方发布，未随本包提交；直接采用未改动</td></tr>
   <tr><td>思源黑体 Source Han Sans CN</td><td>全部图件与文档中文字体</td>
       <td>SIL OFL 1.1，可自由商用与嵌入</td></tr>
   <tr><td>shapely 2.1.2 / pyproj 3.7.2</td><td>面积复算与坐标投影</td>

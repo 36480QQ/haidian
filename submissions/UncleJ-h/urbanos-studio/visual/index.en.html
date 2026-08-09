@@ -36,7 +36,7 @@ figcaption{font-size:12.5px;color:var(--annot);margin-top:6px;line-height:1.55}
 table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
 th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--layer);vertical-align:top}
 th{font-size:11.5px;color:var(--annot);letter-spacing:.05em;font-weight:500}
-td.num{font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
 .pill{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
 padding:2px 8px;border:1px solid var(--layer);background:#fff;margin:0 5px 5px 0}
 .dot{width:9px;height:9px;border-radius:50%;flex:none}
@@ -228,8 +228,8 @@ them, the dependent conclusions must be recomputed:</p>
   <tr><td>Official project announcement</td>
       <td>Scope extents, key-area names, named design tasks</td>
       <td>Publicly released text; boundaries inferred by us from the wording</td></tr>
-  <tr><td>provisional_boundaries.geojson</td><td>Three key-area boundaries</td>
-      <td>Organiser-supplied provisional boundaries, adopted without geometric change</td></tr>
+  <tr><td>Repository root <code>brief/site-package/geometry/provisional_boundaries.geojson</code></td><td>Three key-area boundaries</td>
+      <td>Organiser-published; not submitted with this package. Adopted without geometric change</td></tr>
   <tr><td>Source Han Sans CN</td><td>Typeface for all figures and documents</td>
       <td>SIL OFL 1.1 &mdash; free for commercial use and embedding</td></tr>
   <tr><td>shapely 2.1.2 / pyproj 3.7.2</td><td>Area recomputation and projection</td>
