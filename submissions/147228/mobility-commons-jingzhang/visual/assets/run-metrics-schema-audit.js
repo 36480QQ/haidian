@@ -36,6 +36,12 @@ const result = {
   runner: "run-metrics-schema-audit.js",
   status: topLevelMetricKeys.length === 0 && invalidRecords.length === 0 ? "PASS" : "FAIL",
   metric_count: Object.keys(metrics || {}).length,
+  status_counts: Object.values(metrics || {}).reduce((counts, metric) => {
+    const status = metric && typeof metric === "object" ? metric.status : "invalid";
+    counts[status] = (counts[status] || 0) + 1;
+    return counts;
+  }, {}),
+  required_record_keys: requiredMetricKeys,
   top_level_metric_keys: topLevelMetricKeys,
   invalid_records: invalidRecords,
   claim_scope: "Schema placement and status/value consistency only; no field performance or operational claim."

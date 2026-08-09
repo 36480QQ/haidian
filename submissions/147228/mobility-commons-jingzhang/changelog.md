@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-10
+
+- Added a checked-in deterministic schema-audit summary so reviewers can see the 29-record split (`known=11`, `unknown=18`) without manually reconstructing the normalized object.
+- Linked the audit summary and runner from both bilingual metric sections; the artifact keeps the claim boundary explicit and does not add field data or performance claims.
+
 ## v1.8 - 2026-08-10
 
 - Normalized `metrics.json`: all 29 metric records now live under the single `metrics` object; the eight previously top-level mobility and simulation indicators were moved without changing their `unknown`/`null` values, formulas, sources or targets.
