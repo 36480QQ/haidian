@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "6c98c61f39793509018fc21b91e65816fe9c000c6af2a060b37b0107a435bb9a"
+      "sha256": "02ef65d8e01ecda116122490b75774da9ee7e8496c1d7f9b249ad2ab41fbc39a"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3c1721204200b0d64c78d3fc1dc73dfc635f876b31950bf184dd99f53fff6141"
+      "sha256": "81eca40ef51ce74aaadf0355a40d5f97ae782611a8fc7170e02fa06be1509bde"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2ac2fde4e0239e3992315864a65f21e57e442f6738679788b1874eb43496b10d"
+      "sha256": "1ea805f59933ad536297fd5ccac4a550e98f4775e24439bcd52b9288fe076265"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "63a3336c455d86a5e8ac54c369f3c34ab082124323c14fc7fb1a1c2824f6302c"
+      "sha256": "df5f2d42b3e6befd64f0358502496d000a5a2159cf64777caea9f1e4a92c2fe4"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fe4983beff72209fc4d0004dee4d308a8a315d113d93e5a6b5ecaf31cd4c73a6"
+      "sha256": "dbfd3e1577be6a928bb1199df31a60957be69ee41fcd9f5d53803e12ff5f37df"
     },
     {
       "path": "self_check.json",
@@ -304,7 +304,7 @@
     {
       "path": "visual/assets/scenario-cards.json",
       "role": "data",
-      "sha256": "e57a66051f5a4f1041d70ba097b7ee9d7c1c9bfd0272f0056cb1b2a42b1ba8fe"
+      "sha256": "c95f1610d283e1557d2eb70a1a2b42828ecc7ca79fec88f31c0553cdfb83debb"
     },
     {
       "path": "visual/assets/service-levels.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "10bb211a80f0b8d4e4c8c94a83fecb81a4bc2d4fad707652362e04501e1858c5"
+      "sha256": "5820060e2466ce2fc3e0933c04e7e6c0a1ba719733b70586bfd20fe154233da4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5a9b7a54471cd225a63295b7170a6b36414584a8c2730f0c95e2f0318ec03ae2"
+      "sha256": "4fdc74e8d83e4535bdf39aef4e42be39ab62e1974c66037e4b9432179411a981"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -813,6 +813,54 @@
       "role": "runner",
       "required": false,
       "sha256": "a2a64b71531b7a8e113f3c237537026751a727031b582a03e4b78ecc4572fe85"
+    },
+    {
+      "path": "assets/figures/scenario-cards-board.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "abee52b7b981a28c2b3c37a9319034668b2195e5347dea82388e613d7757d06d"
+    },
+    {
+      "path": "assets/figures/scenario-cards-board.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scenario-cards-board.svg",
+      "sha256": "588a0e0c139b890e67bd546b3159422ca2a15526a9931ab5c147bf1e4b416912"
+    },
+    {
+      "path": "assets/figures/brand-system-board.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a2c6b5276420a763fde3dfbbd225bfcfbb481540658ea364879877563ef6e3ff"
+    },
+    {
+      "path": "assets/figures/brand-system-board.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/brand-system-board.svg",
+      "sha256": "446a66a8410fe7fc21d77f84cfc31431c4e45f571450a3e4d42be4d230272816"
+    },
+    {
+      "path": "visual/assets/run-scenario-cards-board.js",
+      "role": "runner",
+      "required": false,
+      "sha256": "11be1fd631ae3b40da9656c1d20c84e450723c5050b6a6083a0bc6488a4a171b"
+    },
+    {
+      "path": "visual/assets/run-brand-system-board.js",
+      "role": "runner",
+      "required": false,
+      "sha256": "38b64cf7ce6bdba0c776de5fb3d749701ec2776dcd1810cd9dbc1aa7170600e5"
+    },
+    {
+      "path": "visual/assets/brand-system.json",
+      "role": "data",
+      "required": false,
+      "sha256": "f7bf1eac0e06d96171c758f519f35a3c61faf682549c5e059ce86089cfc45b22"
     }
   ]
 }
