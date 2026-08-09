@@ -310,6 +310,10 @@ python3 scripts/validate_local_submission.py \
   --pr-author <your-github-login>
 ```
 
+新建投稿或主动升级 manifest 时，增加 `--strict-manifest`，让本地校验也按
+`schema_version: 0.2.x` 的前向契约执行。已有 0.1.x 包维持默认的 legacy
+advisory 模式。
+
 如果手动修改了 `proposal.md`，先重新渲染离线阅读版：
 
 ```bash

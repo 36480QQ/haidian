@@ -35,6 +35,21 @@ The opt-in is deliberate: an existing `0.1.x` package can still receive a
 reviewed legacy revision, but its schema findings remain visible and advisory.
 New scaffolds use `schema_version: "0.2.0"` and therefore fail closed.
 
+When validating a newly created local package, pass `--strict-manifest` to the
+local wrapper so it applies the same forward-contract boundary even if the
+manifest was manually downgraded to `0.1.x`:
+
+```bash
+python3 scripts/validate_local_submission.py \
+  submissions/<github-login>/<proposal-slug> \
+  --pr-author <github-login> \
+  --strict-manifest
+```
+
+The default local mode remains advisory for an existing legacy package. This
+keeps historical revisions usable while making the migration choice explicit
+for a new package or a deliberate schema upgrade.
+
 This migration boundary avoids breaking already merged packages while making
 new manifests fail closed. The existing file-existence and SHA-256
 checks remain separate and continue to apply.

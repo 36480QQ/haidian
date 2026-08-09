@@ -3151,6 +3151,29 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
             self.assertIn("Result: PASS", completed.stdout)
 
+    def test_local_submission_wrapper_can_enforce_forward_manifest_contract(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            self.write_minimal_ai_package(root, base)
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+                    base,
+                    "--repo-root",
+                    str(root),
+                    "--pr-author",
+                    "alice",
+                    "--strict-manifest",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(completed.returncode, 0)
+            self.assertIn("new manifests must adopt schema_version 0.2.x", completed.stdout)
+
     def test_formal_blocking_self_check_fails_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
