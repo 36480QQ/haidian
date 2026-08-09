@@ -1,5 +1,48 @@
 # 方案迭代记录
 
+## v3.1 - 2026-08-10
+
+- Aligned the Chinese AV-T03 rollback-gate status with `visual/assets/curbside-test-gates.json`: `baseline: unknown` now renders as `UNKNOWN`, rather than visually upgrading an unmeasured weather/network outcome to a design target.
+- Refreshed matching manifest and copyright-ledger hashes for the changed visual index, figures and changelog; no gate register value, performance result, permit, deployment or official-score claim changed.
+
+## v3.0 - 2026-08-10
+
+- Corrected the bilingual autonomy-readiness data plate and its visual-index captions from four candidate nodes to three, matching `visual/assets/autonomy_nodes.json` (`AUTO-NODE-001` through `AUTO-NODE-003`).
+- Revalidated the 2400 × 1700 figures after a surgical presentation edit; the register, scenario count, gate count and metric status are unchanged.
+- This is a figure-integrity correction only; it adds no road, permit, deployment, performance or official-score claim.
+
+## v2.9 - 2026-08-09
+
+- Added bilingual acceptance-trace quick maps so reviewers can follow each check to its gate, fixture, scenario or boundary field without searching the contract; the maps are reading aids only and the runner remains the source of structural validation.
+- Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: choose, request, take over, rollback and independently replay/exit.
+- Bound each step to visible space/service, retained evidence and a fail-closed action; preserved the existing synthetic-only boundary and did not add field, permit, deployment or performance claims.
+- Regenerated both offline reports after the narrative addition; no geometry, public gallery artifact or official score was changed.
+
+## v2.8 - 2026-08-09
+
+- Clarified the bilingual first-screen acceptance brief as target design only: planned service interfaces and stop controls are not deployed, authorized or independently verified. No geometry, metric, permit, deployment or performance claim changed.
+
+- Added structural trace checks to the curbside tabletop runner: acceptance checks now bind to concrete fixtures, gates and scenario-matrix rows, while artifact identifiers, counts, boundary fields and rollback declarations reconcile before a local PASS is emitted. This remains an offline synthetic consistency check; it adds no field, permit, performance or deployment claim.
+- Added four deterministic synthetic negative replays, one per stop-if fixture; the runner now records and verifies `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
+
+- Added a bilingual, offline synthetic curbside tabletop bound to AV-T01—T03 and S01—S03, with four fixtures, seven acceptance checks, five rollback steps and an executable network-free runner.
+- Kept the evidence boundary explicit: `not_authorized_not_run`, no field data, `performance_results: null`, and unknown baselines; the tabletop proves control wiring only and does not claim a permit, deployment, safety assessment or performance result.
+- Regenerated the bilingual reports and manifest after adding the contract, receipt and runner; no geometry, official score or public-gallery artifact was changed.
+
+## v2.7 - 2026-08-09
+
+- Removed the stale duplicated Chinese proposal tail left after the v2 readable surface and reduced both bilingual reference sections to a pointer to `sources.json` with claim-adjacent anchors only.
+- Regenerated both offline reports after the cleanup; no geometry, metric status, permit, deployment or ranking claim changed.
+
+## v2.6 - 2026-08-09
+
+- Aligned `manifest.validation_claim.self_checked` with the package's recorded passing deterministic, spatial, visual, and professional self-checks; this is a local package claim, not an official Review Agent score or deployment approval.
+
+## v2.5 - 2026-08-09
+
+- Reworked the Chinese and English review surfaces into proposal-format v2: claim-adjacent evidence anchors remain readable while the complete source, standard, depth and metric indexes stay in the structured package files.
+- Removed dense inline evidence dumps from the narrative and regenerated both offline reports; no source registration, geometry, metric status, permit claim or deployment claim changed.
+
 ## v1.7 - 2026-08-08
 
 reviewable deliverables and bilingual review surface.
