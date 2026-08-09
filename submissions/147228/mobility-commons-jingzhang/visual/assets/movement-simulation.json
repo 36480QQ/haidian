@@ -1,35 +1,34 @@
 {
-  "version": "1.0",
-  "status": "uncalibrated_scaffold",
-  "people_flow_groups": [
-    "enterprise_employee",
-    "resident",
-    "carer",
-    "child",
-    "wheelchair_user",
-    "visitor",
-    "logistics",
-    "maintenance",
-    "night_worker",
-    "emergency_responder"
-  ],
-  "scenarios": [
-    "weekday_am_peak",
-    "weekday_pm_peak",
-    "off_peak",
-    "event_day",
-    "rain_or_heat",
-    "metro_bus_outage",
-    "road_parking_failure",
-    "air_ground_only",
-    "air_weather_cancelled"
-  ],
-  "inputs": {
-    "metro_bus": "schedule_station_capacity_wait_transfer_buffer",
-    "bicycle": "parking_share_conflict",
-    "car": "intersection_queue_parking_loading_charging_emergency",
-    "walking_wheelchair": "width_crossing_gradient_care_stop_accessible_detour"
+  "version": "1.1",
+  "simulation_class": "illustrative_design_scenario_not_local_baseline",
+  "status": "transparent_sandbox_before_field_calibration",
+  "purpose": "Compare operating logic and expose trade-offs before real counts; never report these values as current Haidian performance.",
+  "time_window": "weekday_am_peak_design_window_07:30-09:30",
+  "demand_units": 1000,
+  "input_basis": {
+    "mode_groups": [
+      "metro",
+      "bus",
+      "bicycle",
+      "walking",
+      "wheelchair",
+      "car",
+      "enterprise_shuttle"
+    ],
+    "people_groups": [
+      "enterprise_employee",
+      "resident",
+      "carer",
+      "child",
+      "wheelchair_user",
+      "visitor",
+      "logistics",
+      "night_worker"
+    ],
+    "external_commute": "cross_boundary_OD_is_included",
+    "assumption_note": "Demand is a normalized 1000-person design unit with no local count claim; replace with dated grouped OD and field observations."
   },
+  "score_formula": "efficiency_index is a 0-100 illustrative weighted comparison after hard-gate screening: cost 30%, transfer 20%, people-flow 20%, external-car reduction 15%, worst-group equity 15%.",
   "hard_gates": [
     "fire_emergency",
     "accessibility_continuity",
@@ -37,29 +36,76 @@
     "privacy",
     "human_service"
   ],
-  "objective": {
-    "method": "hard_gates_then_pareto",
-    "minimize": [
-      "generalized_cost",
-      "people_flow_conflicts",
-      "car_vkt",
-      "energy",
-      "worst_group_gap"
-    ],
-    "outputs": [
-      "multimodal_system_efficiency_index",
-      "person_flow_conflict_rate",
-      "mode_transfer_reliability"
-    ]
+  "scenarios": [
+    {
+      "id": "S0_peak_unmanaged",
+      "label_zh": "S0 无协同高峰",
+      "label_en": "S0 unmanaged peak",
+      "status": "illustrative_reference",
+      "hard_gates": "not_screened",
+      "generalized_cost_index": 100,
+      "transfer_reliability": 0.72,
+      "people_flow_conflict_rate": 12.4,
+      "external_car_inflow_ratio": 0.42,
+      "worst_group_gap_points": 22,
+      "energy_index": 100,
+      "efficiency_index": 52
+    },
+    {
+      "id": "S1_multimodal_curb_transfer",
+      "label_zh": "S1 多方式 + 路缘协同",
+      "label_en": "S1 multimodal + curb",
+      "status": "design_selected_subject_to_calibration",
+      "hard_gates": "proposed_screen_pass; local audit required",
+      "generalized_cost_index": 78,
+      "transfer_reliability": 0.88,
+      "people_flow_conflict_rate": 5.8,
+      "external_car_inflow_ratio": 0.25,
+      "worst_group_gap_points": 9,
+      "energy_index": 77,
+      "efficiency_index": 82
+    },
+    {
+      "id": "S2_air_candidate",
+      "label_zh": "S2 空中候选实验",
+      "label_en": "S2 air candidate",
+      "status": "blocked_until_regulatory_review",
+      "hard_gates": "blocked",
+      "generalized_cost_index": null,
+      "transfer_reliability": null,
+      "people_flow_conflict_rate": null,
+      "external_car_inflow_ratio": null,
+      "worst_group_gap_points": null,
+      "energy_index": null,
+      "efficiency_index": null
+    },
+    {
+      "id": "S3_weather_ground_fallback",
+      "label_zh": "S3 极端天气地面回退",
+      "label_en": "S3 weather ground fallback",
+      "status": "illustrative_fallback",
+      "hard_gates": "ground fallback only",
+      "generalized_cost_index": 85,
+      "transfer_reliability": 0.84,
+      "people_flow_conflict_rate": 6.8,
+      "external_car_inflow_ratio": 0.28,
+      "worst_group_gap_points": 12,
+      "energy_index": 84,
+      "efficiency_index": 74
+    }
+  ],
+  "selection": {
+    "design_candidate": "S1_multimodal_curb_transfer",
+    "reason": "S1 has the best illustrative efficiency among scenarios that keep all modes ground-based and pass the proposed design screen; it is not a local optimum until calibrated.",
+    "air_rule": "S2 cannot enter the comparison while airspace, airworthiness, operator, insurance, weather, noise, emergency and public-participation gates are unresolved."
   },
-  "calibration": {
-    "status": "unknown",
-    "required": [
-      "field_counts",
-      "signal_timings",
-      "station_capacity",
-      "bicycle_behaviour",
-      "pedestrian_and_wheelchair_audit"
-    ]
-  }
+  "calibration_plan": [
+    "boundary_crossing_OD",
+    "station_and_bus_capacity",
+    "signal_timings",
+    "bicycle_parking_and_conflicts",
+    "pedestrian_wheelchair_flow",
+    "curb_queue",
+    "fire_and_accessibility_review"
+  ]
 }

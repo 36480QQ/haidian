@@ -136,14 +136,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "520ad3a710b812f7a35dcbbb06a039ce8f575af41234dc92433691f05d45b718"
+      "sha256": "346c3029e2db611466f005b733028c5080d9cf2a96f82e834040662a6c3f774b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "38fb083408b19f181bd80240cb0ad4fd5fdf9ea6fdeed8bce06c25a89093c168"
+      "sha256": "1b438118380162d864ebfaf623020c1f19cbd316e51450d18a43c6ad21b7dc13"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -151,14 +151,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "cad4c3c815275a731ba6b7e6b23d61f076648e9533fb6af9c27f10b69740d554"
+      "sha256": "d6431a4e997bb864799241f5bbf30f0949cab679f8b09fb67f4339d69891f58d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "231c9e4f26a66297cb85ce0a65ea04523ccf0f28caf9ed8521405ca944941756"
+      "sha256": "8a4b6855ee9781203ad081f567da63cdeb0579002a74f29ddfa45ba1d1ef4388"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -226,14 +226,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "94e7a004ca3e5dffb64d976a5867474913e63a5bc9d44e83f8ee86fa647786be"
+      "sha256": "bd338e4804ea653a6c2d8a2671387b9d572f90495a3ff8e0b9f89a2a0f77d78d"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b03df6f3d3c132220d5ab139214ce206708650f02564a8b8e3686a1f17e2cb43"
+      "sha256": "15fffd961140472b0f399eaadd01be0ebf066f736f47071395406ea0f669e3f5"
     },
     {
       "path": "report/copyright_statement.md",
@@ -252,14 +252,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7937780df1928021de4627041dd87922ae69ecc387037a40019455a080659b9a"
+      "sha256": "027400a0fbb08437b4cd66d4444e89985897f657557f951945e34c267e638eba"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d9df8d549abe24b243851e7d6b78ca7dc741cf1ddc98d2308e9753d3e843721f"
+      "sha256": "cf4625d28abff9ecbb882c61b595d8ac5c1abb69af527b989a5c6cb1a2c1d3df"
     },
     {
       "path": "self_check.json",
@@ -320,14 +320,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4e4a623b3f5999a8778f2e4893e06dc15abcc8dc6e98bf8f9d93d07421e1b6d2"
+      "sha256": "029438adf4f1714e2111646b78232a976ec98e04136aed71a4057d2abd7c5513"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1751d84904ba0d146c231f7ffa91ec70e134a425fa5eefd22f75613a72e94b9e"
+      "sha256": "ac8f54bb91015777ab32c2e734d9f545c1ecc0dabfd02d9af3091dd18d4a4ea6"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -339,7 +339,7 @@
       "path": "visual/assets/movement-simulation.json",
       "role": "data",
       "required": false,
-      "sha256": "db4224650aaee32c8295717f2e0e4e26bd577ba1e0e1b0aaf0687a5c7f2baa7d"
+      "sha256": "59e801671596554121031dcdd5f5e579e52cdaf53280100f4e8775a10f01d026"
     },
     {
       "path": "visual/assets/air-mobility-gate.json",
@@ -352,6 +352,21 @@
       "role": "data",
       "required": false,
       "sha256": "83221f7e83ff164c8d4ebd3ba047001ada926e9796ca3b2d2d9b54f9a58ad30b"
+    },
+    {
+      "path": "assets/figures/simulation-pareto.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "c74532392b09f2cb4ff4e1c621e0e0adab9a9239846b3fbfd7dbaff73a0d2e12"
+    },
+    {
+      "path": "assets/figures/simulation-pareto.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "sha256": "8075be0a20b113a6598eb3055621948cb5ba1d1670819918c99d9228fd2e0789",
+      "translation_of": "assets/figures/simulation-pareto.png"
     }
   ]
 }
