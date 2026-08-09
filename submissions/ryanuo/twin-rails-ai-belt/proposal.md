@@ -179,7 +179,7 @@ SC-05 机器人配送、SC-06 安全复核台、SC-07 开源展示廊、SC-09 �
 
 用地布局依据《国土空间用地用海分类指南》代码组织 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:MNR-LAND-USE-CLASSIFICATION]：科研用地 0802、文化用地 0803、教育用地 0804、商业服务业用地 05、城镇住宅用地 0701、公园绿地 1401、广场用地 1403，全部用地单元无缝隙覆盖总体设计范围 [depth:land_use_layout] [data:geometry/land_use.geojson#LU-007]。
 
-概念配比（EPSG:4548 复算）：居住 31.6%、商业服务 22.9%、科研教育 15.1%、绿地 18.6%、广场 1.7% [metric:residential_ratio] [metric:commercial_ratio] [metric:research_education_ratio] [metric:green_ratio] [metric:public_space_ratio]。建筑基底示意约 19.2 万 m²，仅为空间供给意向，不代表现状或审定方案 [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLD-002]。
+概念配比（EPSG:4548 复算）：居住 31.6%、商业服务 22.9%、科研教育 15.1%、绿地 18.6%、广场 1.7% [metric:residential_ratio] [metric:commercial_ratio] [metric:research_education_ratio] [metric:green_ratio] [metric:public_space_ratio]。建筑基底示意约 7.0 万 m²（无重叠并集面积，与逐栋求和一致），仅为空间供给意向，不代表现状或审定方案 [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLD-002]。
 
 拆改留逻辑（概念级）：保留文保与绿带；改造沿轨老旧街区为 AI 服务与居住混合；更新低效产业空间；新建仅限关键公共节点。建筑规模、高度、容积率、密度均列为待确认控规条件，本方案不给出法定数值 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [assumption:A-CONTROLS-001] [depth:development_intensity_controls]。
 
