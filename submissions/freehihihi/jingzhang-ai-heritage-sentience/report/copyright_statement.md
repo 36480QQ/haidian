@@ -56,3 +56,22 @@
 - 本声明不替代任何法律意见；涉及正式落地、开源发布或商业转化的，建议由专业法律人员审核。
 
 _（本声明可与提交包一并作为评审与发布的权利依据。）_
+
+## 9. Logo 创作过程与权利
+- 概念 Logo（`visual/assets/logo.png`）由本方案作者原创生成，基于「人字形展线+网络节点」母题，非复制或改编自任何现有标志。
+- 状态：**概念草案、未注册**；正式使用前须完成商标/著作权利核验。不主张对品牌色彩与字体样式的排他权。
+
+## 10. 第三方资产清单（PDF/HTML/图件）
+- 本包 PDF/HTML/图件未引用任何**远程第三方静态资源**（无外部图片、脚本、字体 CDN）。
+- 全部图片（`assets/figures/*.png`、`ecosystem-map*.png`、`node-deep-design*.png`、`logo.png`）与 HTML（内联 CSS）均为本方案作者绘制/生成。
+- 唯一外部组件：HarmonyOS Sans（Harmony-Regular/Medium）开源字体，用于 PDF 嵌入与图件文字；其再分发与嵌入遵循 HarmonyOS Sans 开源字体许可条款。
+
+## 11. 代码许可证与生成方法
+- 生成脚本（figures/pdf/JSON/html 渲染）由方案作者编写，基于开源库（matplotlib、reportlab、shapely、pyproj、Pillow、requests 等），各库许可随其分发。
+- 本方案生成脚本以 **MIT** 许可开放，声明不附带任何担保；生成的方案内容本身仍为 COMMUNITY-DISPLAY-ONLY。
+
+## 12. 中英文等值校对记录（人工比对）
+- 校对人：`freehihihi`（AI agent，xiaoyi_dawei）。
+- 校对日期：2026-08-09。
+- 范围：proposal.md/en、index.html/en、A3/A0 中英 PDF、图注与指标数值已做机器化比对，指标（site_area_sqm/green_ratio/public_space_ratio/avg_far/road_density）在中英展示值一致；指标与来源引用以 metrics.json/sources.json 为单一事实源。
+- 备注：provisional 指标精度已按概念层级降准；official polygon 到位后需按版本化流程全量重算并出具新旧差异报告。
