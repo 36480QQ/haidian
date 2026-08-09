@@ -44,16 +44,16 @@
 | `geometry/key_areas.geojson` | 重点区域 GeoJSON | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成设计几何 | COMMUNITY-DISPLAY-ONLY | 概念设计展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于实际建设 |
 | `geometry/constraints.geojson` | 限制要素 GeoJSON | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成设计几何 | COMMUNITY-DISPLAY-ONLY | 概念设计展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于实际建设 |
 | `geometry/phasing.geojson` | 分期实施 GeoJSON | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成设计几何 | COMMUNITY-DISPLAY-ONLY | 概念设计展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于实际建设 |
-| `assets/figures/site-overview.png` | 区位分析图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
-| `assets/figures/land-use-structure.png` | 用地结构图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
-| `assets/figures/key-areas.png` | 重点区域图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
-| `assets/figures/mobility-bluegreen.png` | 交通与蓝绿系统图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
-| `assets/figures/metrics-evidence.png` | 指标证据图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
+| `assets/figures/site-overview.png` | 区位分析图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
+| `assets/figures/land-use-structure.png` | 用地结构图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
+| `assets/figures/key-areas.png` | 重点区域图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
+| `assets/figures/mobility-bluegreen.png` | 交通与蓝绿系统图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
+| `assets/figures/metrics-evidence.png` | 指标证据图 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 Python PIL 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 建议注明"AI 智能体生成概念方案" | 提交者可修改；第三方不得用于其他用途 |
 | `visual/index.html` | 可视化展示页 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，无外部依赖，无远程资源加载 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 可保留页面内署名 | 提交者可修改 |
 | `report/proposal.html` | 方案报告 HTML | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，无外部依赖，无远程资源加载 | COMMUNITY-DISPLAY-ONLY | 展示与评审 | 可保留页面内署名 | 提交者可修改 |
 | `report/narrative.md` | 设计说明文本（详细版） | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，基于征集公告及 site-package 资料 | COMMUNITY-DISPLAY-ONLY | 社区展示、评审用途 | 转载时须注明"AI 智能体 Claude Code 生成，提交者 ID: VerNe" | 提交者可修改；第三方不得修改后重新发布 |
-| `drawings/a3-booklet.pdf` | A3 方案文册 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 fpdf2 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 评审与展示用途 | 建议注明"AI 智能体生成概念方案" | 提交者可重新生成；第三方不得用于实际建设审批 |
-| `drawings/a0-boards.pdf` | A0 展板 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 fpdf2 生成，使用 Microsoft YaHei 系统字体渲染 | COMMUNITY-DISPLAY-ONLY | 评审与展示用途 | 建议注明"AI 智能体生成概念方案" | 提交者可重新生成；第三方不得用于实际建设审批 |
+| `drawings/a3-booklet.pdf` | A3 方案文册 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 fpdf2 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 评审与展示用途 | 建议注明"AI 智能体生成概念方案" | 提交者可重新生成；第三方不得用于实际建设审批 |
+| `drawings/a0-boards.pdf` | A0 展板 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 通过 fpdf2 生成，使用 Noto Sans SC（SIL OFL 1.1）字体渲染 | COMMUNITY-DISPLAY-ONLY | 评审与展示用途 | 建议注明"AI 智能体生成概念方案" | 提交者可重新生成；第三方不得用于实际建设审批 |
 
 ---
 
@@ -70,7 +70,7 @@
 
 | 字体文件 | 来源 | 授权依据 | 使用范围 |
 |----------|------|----------|----------|
-| Microsoft YaHei (msyh.ttc) | Windows 11 操作系统内置字体 | Windows 11 系统字体最终用户许可协议（EULA）——允许在操作系统许可范围内用于文档渲染和内容创作 | 本方案中所有 PNG 图片（PIL 渲染）和 PDF 文档（fpdf2 渲染）中的中文字符显示。本方案不重新分发该字体文件。 |
+| Noto Sans SC（NotoSansSC-VF.ttf） | Google 开源字体（Adobe 与 Google 合作发布） | SIL Open Font License 1.1（SIL OFL 1.1）——允许自由使用、修改、分发，但不得单独以字体文件形式出售；本方案不重新分发该字体文件 | 本方案中所有 PNG 图片（PIL 渲染）和 PDF 文档（fpdf2 渲染）中的中文字符显示，以及 HTML 页面中作为字体回退栈的一部分。本方案不重新分发该字体文件。 |
 
 ### 3.3 地图与空间数据
 
@@ -92,4 +92,4 @@
 3. **指标免责**：方案中报告的指标数据（如容积率、绿地率、建筑密度等）基于概念几何的粗略估算，**不能替代正式规划审批中的精确核算**。
 4. **AI 生成内容**：所有设计内容由 AI 智能体 Claude Code Opus 4.8 生成，提交者已对输出进行审核。AI 生成内容可能存在不符合专业规范、标准或当地实际情况的偏差，评审时请注意核实。
 5. **商标免责**：方案中使用的"京智链"和"JingZhi Chain"为概念设计提案名称，未进行商标注册。如与现有商标权冲突，请权利人联系提交者。
-6. **字体免责**：中文字体渲染使用 Microsoft YaHei 系统字体，在 Windows 11 操作系统许可范围内使用。本方案不重新分发字体文件。如评审环境为无该字体的操作系统，文本显示可能出现字体回退。
+6. **字体免责**：中文字体渲染使用 Noto Sans SC（SIL OFL 1.1 开源字体），在 SIL Open Font License 1.1 许可范围内使用。本方案不重新分发字体文件。如评审环境为无该字体的操作系统，文本显示可能出现字体回退。
