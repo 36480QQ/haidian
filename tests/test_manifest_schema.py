@@ -63,10 +63,25 @@ class ManifestSchemaTests(unittest.TestCase):
 
     def test_unknown_claim_fields_are_rejected(self):
         payload = manifest("0.2.0")
-        payload["validation_claim"]["readiness_contract"] = "unknown-contract"
         payload["validation_claim"]["unreviewed_status"] = "ready"
         errors = schema_errors(payload)
-        self.assertTrue(any("validation_claim" in error for error in errors))
+        self.assertTrue(
+            any(
+                "additional properties" in error.lower()
+                and "unreviewed_status" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_unknown_readiness_contract_is_rejected_independently(self):
+        payload = manifest("0.2.0")
+        payload["validation_claim"]["readiness_contract"] = "unknown-contract"
+        errors = schema_errors(payload)
+        self.assertTrue(
+            any("readiness_contract" in error for error in errors),
+            errors,
+        )
 
     def test_v02_role_extension_requires_detail(self):
         payload = manifest("0.2.0")
