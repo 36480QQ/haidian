@@ -100,6 +100,28 @@ class DataRegistryTests(unittest.TestCase):
             self.assertIn("restricted_or_unknown sources cannot be approved", joined)
             self.assertIn("provisional sources cannot be formal-ready", joined)
 
+    def test_invalid_registry_fails_for_impossible_dates_and_invalid_url(self) -> None:
+        registry = json.loads((REPO_ROOT / "data" / "source_registry.json").read_text(encoding="utf-8"))
+        registry["updated_date"] = "2026-99-99"
+        registry["sources"][0]["accessed_date"] = "2026-02-31"
+        registry["sources"][0]["published_date"] = "2026-13-01"
+        registry["sources"][0]["url"] = "https://["
+        registry["sources"][1]["url"] = None
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "registry.json"
+            path.write_text(json.dumps(registry), encoding="utf-8")
+            completed = run_registry_validator(path)
+
+        self.assertNotEqual(completed.returncode, 0)
+        report = json.loads(completed.stdout)
+        joined = "\n".join(report["errors"])
+        self.assertIn("registry updated_date must be YYYY-MM-DD", joined)
+        self.assertIn("accessed_date must be YYYY-MM-DD", joined)
+        self.assertIn("published_date must be YYYY-MM-DD or null", joined)
+        self.assertIn("public URL sources must use an http(s) url", joined)
+        self.assertIn("url must be a non-empty string", joined)
+
 
 if __name__ == "__main__":
     unittest.main()
