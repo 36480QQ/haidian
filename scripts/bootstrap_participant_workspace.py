@@ -22,16 +22,20 @@ DEFAULT_SPARSE_PATHS = (
     "schema",
     "scripts",
     "skills",
+    "scenarios",
+    "sources",
     "templates",
 )
 REQUIRED_FILES = (
     "skills/urban-design-ai-submission/SKILL.md",
     "brief/site-package/agent_taskbook.json",
     "data/source_registry.json",
+    "sources/public-sources.json",
     "scripts/scaffold_ai_submission.py",
     "scripts/self_check_submission.py",
     "requirements-review.txt",
 )
+REQUIRED_DIRECTORIES = ("scenarios",)
 GITHUB_LOGIN_RE = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,62}[a-z0-9]$")
 
@@ -158,10 +162,14 @@ def build_report(args: argparse.Namespace, target: Path, commands: list[list[str
     if args.dry_run:
         return report
 
-    missing = [rel for rel in REQUIRED_FILES if not (target / rel).is_file()]
-    if missing:
+    missing_files = [rel for rel in REQUIRED_FILES if not (target / rel).is_file()]
+    missing_directories = [rel for rel in REQUIRED_DIRECTORIES if not (target / rel).is_dir()]
+    if missing_files:
         report["ok"] = False
-        report["missing_required_files"] = missing
+        report["missing_required_files"] = missing_files
+    if missing_directories:
+        report["ok"] = False
+        report["missing_required_directories"] = missing_directories
     report["worktree_size_bytes"] = directory_size(target)
     report["worktree_size_human"] = human_size(report["worktree_size_bytes"])
     report["is_sparse_checkout"] = run(
