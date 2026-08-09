@@ -80,6 +80,10 @@ The logo direction is a self-drawn "**open P + sleeper graduations + Human Revie
 
 The visual system retains one principal palette only: deep rail blue `#172235`, evidence gold `#C79838`, commons green `#15803D`, and paper white. Status colors are always paired with text and shape and never rely on a red-green distinction alone. Motion is limited to a three-step reveal of "problem appears - evidence is completed - human sign-off," with a static alternative. Cultural wayfinding has a separate symbol system described under agent.5 and cannot be mixed with the parent-brand logo.
 
+![Original open-P graphic mark for Jing-Zhang PROBE](assets/figures/probe-logo.svg)
+
+![PROBE mark checks across sizes, monochrome, light and dark grounds, and wayfinding](assets/figures/probe-logo-usage.en.svg)
+
 ### Three positionings x five functions
 
 | Three positionings | Corresponding function | Spatial delivery in this proposal | Acceptance question |
@@ -136,6 +140,8 @@ This proposal decomposes a world-class ecosystem into six verifiable layers inst
 
 Each layer must produce something transferable to the next: the problem layer delivers a brief with benefit and risk boundaries; the research layer delivers reproducible methods; the foundation layer delivers permissions, costs, energy use, and service windows; the engineering layer delivers versions and test records; the governance layer delivers Human Review and stop conditions; and the scenario layer delivers use, impact, and responsibility evidence. If any handover item is absent, the project remains `evidence_pending`; event exposure cannot substitute for conversion[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][metric:approved_scenario_count].
 
+![Ecosystem map from five public cases through transferable mechanisms to local systems](assets/figures/agent2-ecosystem.en.svg)
+
 ### Zhongzhiyuan full stack, AI Origin Community, and Zhongguancun Technology Services Wing
 
 | System | Conceptual role | Spatial carrier | Entry conditions | Current status |
@@ -158,6 +164,14 @@ Each layer must produce something transferable to the next: the problem layer de
 | Scenarios | Small, removable test windows with Human Review | Xiaoyue River Scenario Enablement Wing and public-experience route | Site, operations, safety, privacy, accessibility, and stop approvals |
 
 This mapping produces no investment-promotion roster. `[metric:ecosystem_partner_count]` retains `status: unknown` and requires a collaboration ledger containing all four items: "publicly disclosable identity + signed role + effective term + disclosure permission." `[metric:compute_capacity]` is likewise unknown and requires a provider-neutral capacity unit, time window, allocation rule, costs, and energy-use records. The five cases calibrate only the language of mechanisms; they do not fill these local unknowns.
+
+### Regional-coordination interfaces: connect only to public mechanisms, not prewritten outcomes
+
+This proposal has no actual cross-district coordination data; it offers only interfaces and validation conditions. The public consultation notice for Zhongguancun AI Latitude Community supports one limited fact: its draft intended a north-south response with AI Origin Community[source:AI-LATITUDE-PUBLIC-DRAFT]. This proposal therefore recommends only compatible `problem_brief`, eligibility-state, license, version, exit, and handover fields at the two ends. Any shared operator, project, computing capacity, funding, company, or movement of people remains `unknown` and requires effective agreements from both sides plus handover records from the same observation window.
+
+Haidian's 14th Five-Year Plan stated intentions to explore co-building an innovation-ecosystem chain with Future Science City, explore access to major scientific facilities with Huairou Science City, and strengthen innovation-chain and industrial-chain links with Beijing Economic-Technological Development Area[source:HAIDIAN-14FIVE-COORDINATION]. This proposal does not recast planning language as completed coordination. It retains only three machine interfaces: deliver rights-bounded problem briefs and reusable evaluation artifacts toward Future Science City; submit capability requests, eligibility, booking, approval, use, and return evidence toward Huairou Science City; and submit version, testing, compliance, handover, and exit materials toward the development area. Specific institutions, facility availability, projects, funding, companies, metrics, and service windows all remain `unknown` and require item-by-item confirmation by authorized participants.
+
+At the Jing-Jin-Ji level, a decision of the Standing Committee of the Beijing Municipal People's Congress publishes mechanisms including supply-demand matching lists, proof of concept, result incubation, pilot-scale bases, and application scenarios[source:JINGJINJI-COLLABORATIVE-INNOVATION]. Measures led by the three science-and-technology authorities in 2025 further described regular result matching, proof-of-concept services, pilot-scale maturation, and cross-regional service chains[source:JINGJINJI-TRANSFER-MEASURES]. This proposal can output a compatible "problem-rights-version-test-impact-responsibility-exit" handover package, but it does not claim that the project has entered any list, platform, or program. Counterparties, eligibility, result rights, receiving location, funding, contracts, performance, and regional contribution all remain `unknown`; an "interface recommendation" may become a "coordination record" only after effective registration, signatures by both sides, and verifiable handover evidence exist.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -374,6 +388,8 @@ The honor system is called the "**PROBE Contribution Ledger**." Its objects are 
 
 `[metric:public_space_component_type_count]=8` is a count of component **types**, not units purchased or built. Dimensions, materials, unit prices, quantities, suppliers, and installation locations are all unknown. Filling them requires field survey, ergonomics and accessibility review, durability/fire/structural testing, operational capacity, and rights-cleared procurement.
 
+![Three pilgrimage-landmark concepts and eight Public Space component types](assets/figures/agent4-landmarks-components.en.svg)
+
 ## Jing-Zhang-Zhongguancun-AI Cultural Narrative and Signage (agent.5)
 
 ### Cultural line: independent engineering is a working method, not decoration
@@ -399,6 +415,8 @@ The storyline registers `[metric:spatial_story_stage_count]=5` acts. This counts
 Cultural wayfinding uses a self-drawn "**double line + graduation + version stamp**" symbol. The two lines represent historical evidence and current public use. An intersection graduation marks a node where people can stop and receive explanation. The version stamp shows the effective time of content. This is a spatial-information grammar, not the open-P parent-brand logo in agent.1. Wayfinding has `[metric:signage_information_level_count]=4` levels: `LINE` continuous direction, `NODE` node function, `STORY` reviewed narrative, and `STATUS` open/paused/unknown. These are conceptual information levels, not installed-sign counts. Every level uses Chinese, English, graphics, and high-contrast tactile/audio alternatives together and never encodes by color alone.
 
 Before formal design, complete: surveyed decision points along the whole line, accessibility audit, bilingual/multilingual translation review, heritage review, nighttime-glare testing, material and maintenance samples, and font and image permissions. Every QR code must have equivalent paper content and a short URL. Location data are not a prerequisite for reading. Historical photographs, people, trademarks, paper figures, and company marks do not enter the system without authorization[source:AGENT-TASKBOOK].
+
+![Four information levels and a five-act spatial storyline](assets/figures/agent5-signage-story.en.svg)
 
 ### International communication copy (concept draft, pending translation review)
 
@@ -449,6 +467,8 @@ A scenario moves from `CONCEPT` through `EVIDENCE_READY -> SANDBOX -> LIMITED_PI
 | Long-term relationship | Separately negotiate research, service, talent, or space agreements | Effective contract, budget, responsibility, exit, and public scope | This proposal commits to no company roster, funding, output value, or fiscal support |
 
 `[metric:developer_to_pilot_conversion_ratio]` retains `status: unknown`. The numerator must be developers entering a **human-approved limited pilot** and the denominator voluntarily registered developers meeting public eligibility in the same cohort. Cohort, eligibility, approval ledger, and common observation window are currently absent. The same applies to international attraction: only effective agreements enter partnership records. Operations of public landmarks and experience spaces prioritize access hours, human explanation, basic maintenance, and fault degradation. Brand exposure cannot change public accessibility.
+
+![Four annual programs, the scenario-access gate, and conversion-evidence requirements](assets/figures/agent6-operations-conversion.en.svg)
 
 ### Typical interfaces and Public Space network capacity
 
@@ -640,7 +660,8 @@ The following entries are narrative citation indices and do not expand their ori
 - OpenStreetMap background context and field leads registered under ODbL[source:OSM-CONTEXT].
 - Global-ecosystem cases: official webpages of AI Singapore 100E, Mila, Vector Institute, STATION F F/ai, and TUM Venture Labs[source:CASE-AISG-100E][source:CASE-MILA-PARTNERSHIPS][source:CASE-VECTOR-INSTITUTE]; the remaining two cases are documented in[source:CASE-STATIONF-FAI][source:CASE-TUM-VENTURE-LABS].
 - Cultural narrative: Beijing municipal material on Jing-Zhang railway heritage and public material from the Beijing Municipal Science & Technology Commission and Zhongguancun Administrative Committee on the Zhongguancun Demonstration Zone[source:JINGZHANG-HERITAGE-BEIJING][source:ZHONGGUANCUN-INNOVATION-CULTURE].
+- Regional-coordination interfaces: the AI Latitude Community public-consultation notice, Haidian's 14th Five-Year Plan, the Jing-Jin-Ji collaborative-innovation decision, and the three-region technology-transfer measures. They establish only public mechanisms, not project cooperation[source:AI-LATITUDE-PUBLIC-DRAFT][source:HAIDIAN-14FIVE-COORDINATION][source:JINGJINJI-COLLABORATIVE-INNOVATION]; the technology-transfer measures are recorded separately[source:JINGJINJI-TRANSFER-MEASURES].
 
-Machine-readable output entry points are `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, `metrics.json`, `assumptions.json`, `sources.json`, and `self_check.json`. Audit outputs are delivered in `visual/assets/boundary_sensitivity.json` and `visual/assets/run_record.json`; the generation script is not delivered because the package format does not accept `.py` (see "Rerun chain"). All nine spatial file classes are cited near their narrative uses: overall boundary, key areas, land use, buildings, roads, green space, Public Space, constraints, and phasing. A citation anchor proves only that an object can be located, not that it has official force[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001].
+Machine-readable output entry points are `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, `metrics.json`, `assumptions.json`, `sources.json`, and `self_check.json`. Audit outputs are delivered in `visual/assets/boundary_sensitivity.json`, `visual/assets/run_record.json`, the three gate JSON files, `reversibility-r1-r3.json`, `duty-ledger.json`, and `validation-report.json`. The generation script is not delivered because the package format does not accept `.py` (see "Rerun chain"). All nine spatial file classes are cited near their narrative uses: overall boundary, key areas, land use, buildings, roads, green space, Public Space, constraints, and phasing. A citation anchor proves only that an object can be located, not that it has official force[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001].
 
 This proposal's professional-standards indices are the Open Call announcement, agent taskbook, urban-design management, regulatory-plan depth, land-use classification, and architectural design depth[standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]. For specific applicability, response status, and evidence files, `standard_matrix.json` governs. If the narrative and a structured file conflict, pause the conclusion and investigate using version records rather than selecting the more favorable version.
