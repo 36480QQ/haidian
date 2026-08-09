@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "path": "brief/site-package/design_brief.json#source_ids",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "authority_level": "A0",
+      "usable_for_formal": "yes",
+      "usage": "三层范围面积、三处重点片区名称与面积、三大定位、设计任务的权威依据；本方案所有范围面积与重点区面积均回引此来源。",
+      "limitations": "公告为文字四至与面积，未提供精确官方红线 polygon；资格预审文件包为密码下载，本方案未取得正式图纸。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录",
+      "publisher": "项目组织机构（用户提供的已清权摘要）",
+      "path": "brief/site-package/agent_taskbook.json",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/standards/references/agent-open-call-taskbook-0518.md",
+      "source_type": "user_provided_cleared",
+      "authority_level": "A1",
+      "usable_for_formal": "yes",
+      "usage": "agent.1-agent.6 六项智能体任务、十条共创原则、三区两翼、五大功能、十三项评审维度与统一边界条款的依据。",
+      "limitations": "智能体开源征集任务书摘录，非空间/红线的法定权威；其成果边界条款要求所有空间落地表述为概念建议。"
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "title": "城市设计管理办法",
+      "publisher": "住房和城乡建设部",
+      "path": "brief/site-package/standards/references/",
+      "source_type": "official_public",
+      "authority_level": "A0",
+      "usable_for_formal": "yes",
+      "usage": "城市建筑布局、景观风貌、公共空间与城市特色控制的标准依据。",
+      "limitations": "通用管理办法，非本项目专属控规；具体控制指标须以本项目官方控规为准。"
+    },
+    {
+      "id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "title": "城市、镇控制性详细规划编制审批办法",
+      "publisher": "住房和城乡建设部",
+      "path": "brief/site-package/standards/references/",
+      "source_type": "official_public",
+      "authority_level": "A0",
+      "usable_for_formal": "yes",
+      "usage": "用地分类、开发强度与实施控制的标准依据；说明 FAR/高度/密度等指标须以官方控规为准。",
+      "limitations": "编制审批办法，非本项目控规成果；项目控规指标待官方发布。"
+    },
+    {
+      "id": "MNR-LAND-USE-CLASSIFICATION",
+      "title": "国土空间调查、规划、用途管制用地用海分类指南",
+      "publisher": "自然资源部",
+      "path": "brief/site-package/standards/references/",
+      "source_type": "official_public",
+      "authority_level": "A0",
+      "usable_for_formal": "yes",
+      "usage": "用地分类代码（0802 科研、0702 社区服务、1401 公园绿地、05 商业服务等）的依据。",
+      "limitations": "用地分类指南，非本地控规；具体地块性质以官方控规为准。"
+    },
+    {
+      "id": "SITE-PACKAGE",
+      "title": "场地资料包与机器可读任务书",
+      "publisher": "open-city.ai（项目执行方）",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "authority_level": "A1",
+      "usable_for_formal": "yes",
+      "usage": "坐标系策略（EPSG:4326 交换、EPSG:4548 复算）、可编辑/锁定图层、几何派生协议、提交包结构的依据。",
+      "limitations": "资料包为开放征集工具层，其中的 provisional 边界不得作为官方红线。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "title": "公开资料登记表",
+      "publisher": "open-city.ai（项目执行方）",
+      "path": "data/source_registry.json",
+      "source_type": "official_public",
+      "authority_level": "A1",
+      "usable_for_formal": "yes",
+      "usage": "区分 usable_for_formal=yes / provisional_only 资料用途边界的依据；本方案仅采用 yes 来源作为 formal 权威。",
+      "limitations": "登记表为导航层，不替代原始公告与官方文件。"
+    },
+    {
+      "id": "PROVISIONAL-BOUNDARIES",
+      "title": "临时粗略替代边界（provisional）",
+      "publisher": "仓库维护者",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "provisional",
+      "usable_for_formal": "provisional_only",
+      "usage": "仅用于 AI agent 生成、可视化与临时自检；本方案在缺官方红线时临时采用此边界承载空间结构示意。",
+      "limitations": "临时粗略边界，official_boundary=false，boundary_precision=provisional_rough；不得作为官方红线、审批依据或精确面积复算依据；官方数据取得后必须统一复算。组织方数据缺口不阻断内容评分。"
+    },
+    {
+      "id": "GLOBAL-CASES",
+      "title": "全球 AI 创新生态公开案例（多来源汇编）",
+      "publisher": "各案例公开报道与官方站点",
+      "url": "见 proposal.md 第 3 章逐条登记",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "usage": "仅作为创新生态机制参考与启发，每个案例均附非照搬边界声明，不声称合作、资金、法律等价或本地绩效。",
+      "limitations": "案例为机制参考，非本地数据；不可作为本地指标、招商承诺或规划依据。"
+    }
+  ]
+}

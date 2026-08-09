@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DRAFT_STAGE_NOTE",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "package",
+      "message": "本文件为内容草稿阶段的自检占位，并非 self_check_submission.py 的真实校验结果。几何派生、出图、render、finalize 与四项真实自检（deterministic+spatial+visual+professional）将在工程化阶段执行。",
+      "suggested_fix": "进入工程化阶段：scaffold 派生几何 → 出 5 图与 PDF → render_proposal_html → finalize_submission → self_check_submission，修复至四项 PASS。"
+    },
+    {
+      "check_id": "COMPLIANCE_COVERAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "compliance_matrix.json",
+      "message": "草稿已覆盖全部 23 条 requirement（17 official + agent.1-6），每条字段非空。",
+      "suggested_fix": ""
+    },
+    {
+      "check_id": "STANDARD_COVERAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "standard_matrix.json",
+      "message": "草稿含 5 个 mandatory 标准（addressed）+ 1 个 data_gap；对齐 FALLBACK_REQUIRED_STANDARD_IDS。",
+      "suggested_fix": ""
+    },
+    {
+      "check_id": "DEPTH_COVERAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "design_depth_matrix.json",
+      "message": "草稿含全部 15 个深度项且 status=complete；对齐 REQUIRED_DESIGN_DEPTH_IDS。",
+      "suggested_fix": ""
+    },
+    {
+      "check_id": "METRICS_DISCIPLINE",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "控规类指标（FAR/高度/密度/绿地率/退让/总建面）一律 status=unknown,value=null,reason 已填；已知面积项 status=known。",
+      "suggested_fix": ""
+    },
+    {
+      "check_id": "PROPOSAL_SECTIONS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "草稿含全部 13 个 ## 章节，证据引用密集（source/standard/depth/data/metric），表格化呈现。",
+      "suggested_fix": ""
+    },
+    {
+      "check_id": "GEOMETRY_DERIVATION",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "几何图层尚未派生（草稿阶段不生成实物）。",
+      "suggested_fix": "工程化阶段按 design-spec.md 在 provisional 边界内派生 9 个 GeoJSON。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "visual/index.html, report/proposal.html",
+      "message": "HTML 实物尚未生成（草稿阶段不生成实物）。",
+      "suggested_fix": "工程化阶段生成离线静态 HTML，禁 CDN/远程瓦片/外部脚本/iframe。"
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson, sources.json",
+      "message": "草稿明确使用 provisional 边界并显著披露 official_boundary=false 与重算要求。",
+      "suggested_fix": ""
+    }
+  ]
+}
