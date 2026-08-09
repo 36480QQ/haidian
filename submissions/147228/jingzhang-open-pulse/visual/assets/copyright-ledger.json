@@ -398,7 +398,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "bedb008d848639317e1b761ef02d815b8953fa86afa2984ae3dbc529ecdef0df"
+      "hash_sha256": "4a0f19a622d14a359c0843ae7db56da9dd613808d00a3eb2bc614273cb8d5bb3"
     },
     {
       "path": "compliance_matrix.json",
@@ -449,7 +449,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "695f712d2dd0c90a993faeb16180a088aa267797f73debe6c897119ccf982c97"
+      "hash_sha256": "55c0a0b00e4056ed527246517b4fe884a261136c2003d4fc1c6818d79c4ca865"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -483,7 +483,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "013c9899a5829cfead73505fa8c331b43c948232c7109870a3bf3bf2476ec6d8"
+      "hash_sha256": "e3560c55cd0b0f2aa65a773787131444920fe163c383c98812e6345a567000c6"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -721,7 +721,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "2b12b8549bb62de81f5a4c1dc91dd9155534d23b6c36bca4d8042d3ffdea2dae"
+      "hash_sha256": "b91085ef287979f43a4a7481a2bdad52969081ac43f92bfaf7894d33cff3d455"
     },
     {
       "path": "report/narrative.md",
@@ -1358,6 +1358,23 @@
       "attribution": "Conceptual proof-mile handoff authored by 许丙南 / Codex; not a construction drawing, procurement specification, field acceptance or government approval.",
       "font_note": "JSON evidence asset; no font file is redistributed.",
       "hash_sha256": "67daa5c504c8ec106b500f9b0d037c250ec9a981082b6565827380b261bcb9ff"
+    },
+    {
+      "path": "assets/figures/sustainability-timeseries.en.png",
+      "asset_class": "derived_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored English redraw from the registered statistical time series; no remote asset fetch at render time",
+      "source_inputs": [
+        "repository brief and package geometry",
+        "official public sources registered in sources.json",
+        "self-generated analytical tables where identified"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "e847e31ed802948997c9c8c28af417b9e4f975bdb59f5d65397d9fda76cfb1e1"
     }
   ],
   "review_protocol": [

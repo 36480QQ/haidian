@@ -107,13 +107,13 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2b12b8549bb62de81f5a4c1dc91dd9155534d23b6c36bca4d8042d3ffdea2dae"
+      "sha256": "b91085ef287979f43a4a7481a2bdad52969081ac43f92bfaf7894d33cff3d455"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "bedb008d848639317e1b761ef02d815b8953fa86afa2984ae3dbc529ecdef0df"
+      "sha256": "4a0f19a622d14a359c0843ae7db56da9dd613808d00a3eb2bc614273cb8d5bb3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -135,7 +135,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "013c9899a5829cfead73505fa8c331b43c948232c7109870a3bf3bf2476ec6d8"
+      "sha256": "e3560c55cd0b0f2aa65a773787131444920fe163c383c98812e6345a567000c6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -143,7 +143,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "695f712d2dd0c90a993faeb16180a088aa267797f73debe6c897119ccf982c97"
+      "sha256": "55c0a0b00e4056ed527246517b4fe884a261136c2003d4fc1c6818d79c4ca865"
     },
     {
       "path": "visual/index.html",
@@ -438,7 +438,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "0961a034a67a6830b9563d768dde2e57964c4ec2b3dedd39cdf33fd6aa563011"
+      "sha256": "7d93dd7ba77cc4b74083b4b56c9dfc98b868eb5215819765fea846f9016017d8"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -550,6 +550,14 @@
       "role": "proof_mile_delivery_protocol",
       "required": true,
       "sha256": "67daa5c504c8ec106b500f9b0d037c250ec9a981082b6565827380b261bcb9ff"
+    },
+    {
+      "path": "assets/figures/sustainability-timeseries.en.png",
+      "role": "quantitative_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/sustainability-timeseries.png",
+      "sha256": "e847e31ed802948997c9c8c28af417b9e4f975bdb59f5d65397d9fda76cfb1e1"
     }
   ],
   "validation_claim": {
