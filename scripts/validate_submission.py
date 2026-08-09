@@ -229,6 +229,10 @@ REQUIRED_DESIGN_DEPTH_IDS = {
     "risk_missing_data",
 }
 REFERENCE_RE = re.compile(r"\[(source|standard|depth|data|metric):([^\]\s]+)\]")
+PROPOSAL_FORMAT_VERSION = "2"
+BILINGUAL_CONTRACT_VERSION = "1"
+MAX_INLINE_REFERENCES_PER_BLOCK = 8
+MAX_CONSECUTIVE_REFERENCES = 3
 MARKDOWN_IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 MAX_MARKDOWN_BYTES = 256 * 1024
 MAX_JSON_BYTES = 512 * 1024
@@ -337,6 +341,42 @@ def normalize_changed_path(raw_path: str) -> str:
     return path.as_posix()
 
 
+def first_symbolic_link(repo_root: Path, relative_path: str) -> Path | None:
+    """Return the first symlink traversed by a repository-relative path."""
+    candidate = repo_root
+    for part in PurePosixPath(relative_path).parts:
+        candidate /= part
+        if candidate.is_symlink():
+            return candidate
+    return None
+
+
+def report_symbolic_link(report: ValidationReport, repo_root: Path, path: Path) -> None:
+    relative = path.relative_to(repo_root).as_posix()
+    report.add_error(f"{relative}: symbolic links are not allowed in submission packages")
+
+
+def submission_directory_is_safe(
+    report: ValidationReport, repo_root: Path, proposal_dir: str
+) -> bool:
+    """Reject symlinks before a package validator reads package-controlled files."""
+    linked_path = first_symbolic_link(repo_root, proposal_dir)
+    if linked_path is not None:
+        report_symbolic_link(report, repo_root, linked_path)
+        return False
+
+    base = repo_root / proposal_dir
+    if not base.exists():
+        return True
+    for directory, names, files in os.walk(base, followlinks=False):
+        for name in [*names, *files]:
+            candidate = Path(directory) / name
+            if candidate.is_symlink():
+                report_symbolic_link(report, repo_root, candidate)
+                return False
+    return True
+
+
 def load_changed_files(args: argparse.Namespace) -> list[str]:
     files: list[str] = []
     files.extend(args.changed_file or [])
@@ -369,6 +409,23 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
         value = value.strip().strip('"').strip("'")
         metadata[key.strip()] = value
     return metadata, body
+
+
+def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
+    """Return whether the proposal explicitly opts into the blocking contract.
+
+    Historical v1 and early v2 packages remain valid without being rewritten.
+    New scaffolds declare the independent bilingual contract version so future
+    format revisions do not accidentally redefine the migration boundary.
+    """
+    proposal_path = repo_root / proposal_dir / "proposal.md"
+    if not proposal_path.is_file():
+        return False
+    try:
+        metadata, _ = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
+    except UnicodeDecodeError:
+        return False
+    return requires_bilingual_contract(metadata)
 
 
 def parse_track_metadata(raw_value: object) -> list[str]:
@@ -529,6 +586,62 @@ def extract_reference_values(text: str) -> dict[str, set[str]]:
 
 def has_readability_reference(text: str) -> bool:
     return bool(REFERENCE_RE.search(text))
+
+
+def proposal_format_version(metadata: dict[str, str]) -> str:
+    """Return the explicit proposal contract version, preserving legacy files as v1."""
+    return metadata.get("proposal_format_version", "1").strip() or "1"
+
+
+def requires_bilingual_contract(metadata: dict[str, str]) -> bool:
+    """Return whether a v2 proposal explicitly accepts the bilingual gate."""
+    return (
+        proposal_format_version(metadata) == PROPOSAL_FORMAT_VERSION
+        and metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
+    )
+
+
+def reference_density_issues(body: str) -> list[str]:
+    """Find evidence dumps that interrupt the human reading layer."""
+    issues: list[str] = []
+    for block in re.split(r"\n\s*\n", body):
+        lines = [line for line in block.splitlines() if line.strip()]
+        structured_lines = sum(
+            1
+            for line in lines
+            if line.lstrip().startswith(("|", "- ", "* ", "+ "))
+            or re.match(r"^\s*\d+[.)]\s+", line)
+        )
+        # A table or reference list may legitimately contain many rows. Apply
+        # density limits per row/item instead of treating the whole structure
+        # as one prose paragraph.
+        units = lines if len(lines) >= 2 and structured_lines >= 2 else [block]
+        for unit in units:
+            refs = list(REFERENCE_RE.finditer(unit))
+            if len(refs) > MAX_INLINE_REFERENCES_PER_BLOCK:
+                issues.append(
+                    f"a paragraph/block contains {len(refs)} evidence markers; keep the full index in structured files"
+                )
+                continue
+            longest = 0
+            run = 0
+            previous: re.Match[str] | None = None
+            for match in refs:
+                if previous is None:
+                    run = 1
+                else:
+                    separator = unit[previous.end() : match.start()]
+                    if len(separator) <= 12 and re.fullmatch(r"[\s、,，;；:/和与&+]*", separator):
+                        run += 1
+                    else:
+                        run = 1
+                longest = max(longest, run)
+                previous = match
+            if longest > MAX_CONSECUTIVE_REFERENCES:
+                issues.append(
+                    f"a paragraph/block contains {longest} consecutive evidence markers; attach no more than {MAX_CONSECUTIVE_REFERENCES} to one claim"
+                )
+    return list(dict.fromkeys(issues))
 
 
 def is_under_assets(parts: list[str]) -> bool:
@@ -938,6 +1051,7 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
         report.add_error(
             f"{proposal_dir}/manifest.json: project_id must be centennial-jingzhang-ai-belt"
         )
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
     files = data.get("files")
     listed_paths: set[str] = set()
     if not isinstance(files, list) or not files:
@@ -956,8 +1070,8 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             translation_entry = is_localized_display_path(safe_path)
             if safe_path in listed_paths:
                 message = f"{proposal_dir}/manifest.json: duplicate file path `{safe_path}`"
-                if translation_entry:
-                    report.add_warning(message + "; bilingual metadata does not block review")
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual metadata does not block review")
                 else:
                     report.add_error(message)
                 continue
@@ -965,16 +1079,16 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             listed_file = repo_root / proposal_dir / safe_path
             if not listed_file.is_file():
                 message = f"{proposal_dir}/manifest.json: listed file `{safe_path}` is missing"
-                if translation_entry:
-                    report.add_warning(message + "; bilingual display remains non-blocking")
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual display remains non-blocking")
                 else:
                     report.add_error(message)
                 continue
             declared_digest = item.get("sha256")
             if safe_path != "manifest.json" and not declared_digest:
                 message = f"{proposal_dir}/manifest.json: listed file `{safe_path}` needs sha256"
-                if translation_entry:
-                    report.add_warning(message + "; bilingual metadata does not block review")
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual metadata does not block review")
                 elif package_type == "professional_design_package":
                     report.add_error(message)
                 else:
@@ -983,8 +1097,8 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:
                     message = f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`"
-                    if translation_entry:
-                        report.add_warning(message + "; bilingual metadata does not block review")
+                    if translation_entry and not strict_bilingual:
+                        report.add_warning(message + "; legacy bilingual metadata does not block review")
                     else:
                         report.add_error(message)
         for required in sorted(REQUIRED_AI_PACKAGE_FILES):
@@ -1352,6 +1466,7 @@ def validate_proposal_evidence_references(
     except UnicodeDecodeError:
         return
     metadata, body = parse_front_matter(text)
+    format_version = proposal_format_version(metadata)
     required_sections = REQUIRED_SECTIONS_EN if metadata.get("language") == "en" else REQUIRED_SECTIONS
     section_bodies = extract_section_bodies(body)
     for required in required_sections:
@@ -1363,6 +1478,21 @@ def validate_proposal_evidence_references(
                 f"{proposal_dir}/proposal.md: section `{required}` must include at least one "
                 "machine-readable evidence reference such as [source:...], [standard:...], [depth:...], [data:...], or [metric:...]"
             )
+
+    density_issues = reference_density_issues(body)
+    for issue in density_issues:
+        message = f"{proposal_dir}/proposal.md: {issue}"
+        if format_version == PROPOSAL_FORMAT_VERSION:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; legacy proposal remains compatible and the viewer will condense it")
+
+    # Version 2 keeps exhaustive coverage in the structured package. The prose
+    # only needs claim-adjacent anchors above. Version 1 retains the original
+    # exhaustive checks so existing submissions continue to validate exactly as
+    # they did before this contract was introduced.
+    if format_version == PROPOSAL_FORMAT_VERSION:
+        return
 
     refs = extract_reference_values(body)
 
@@ -1404,7 +1534,8 @@ def validate_bilingual_display(
         for path in report.changed_files
         if path.startswith(proposal_dir.rstrip("/") + "/")
     }
-    if not any(is_display_material(path) for path in changed_rel):
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
+    if not strict_bilingual and not any(is_display_material(path) for path in changed_rel):
         return
 
     base = repo_root / proposal_dir
@@ -1420,10 +1551,16 @@ def validate_bilingual_display(
         return
     translation_language = "en" if primary_language == "zh" else "zh"
     translation_file = localized_path("proposal.md", translation_language)
+    def report_bilingual_problem(message: str) -> None:
+        if strict_bilingual:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; legacy v1 package remains compatible")
+
     if metadata.get("translation_file") != translation_file:
-        report.add_warning(
-            f"{proposal_dir}/proposal.md: bilingual display requirement recommends "
-            f"translation_file={translation_file}; this does not block submission or review"
+        report_bilingual_problem(
+            f"{proposal_dir}/proposal.md: bilingual contract requires "
+            f"translation_file={translation_file}"
         )
 
     manifest_items: dict[str, dict] = {}
@@ -1435,6 +1572,18 @@ def validate_bilingual_display(
         }
 
     display_files = {path for path in DISPLAY_BASE_FILES if (base / path).is_file()}
+    if strict_bilingual:
+        # The manifest is the package inventory. Some text-bearing figures are
+        # used only by the rendered report or visual page and are not linked
+        # directly from proposal.md, so they must not bypass the language gate.
+        for path, item in manifest_items.items():
+            if (
+                path.startswith("assets/figures/")
+                and primary_path_from_localized(path) is None
+                and item.get("language") != "neutral"
+                and (base / path).is_file()
+            ):
+                display_files.add(path)
     for match in MARKDOWN_IMAGE_RE.finditer(body):
         raw = match.group(2).split("#", 1)[0].split("?", 1)[0]
         image_path = PurePosixPath(raw)
@@ -1452,21 +1601,21 @@ def validate_bilingual_display(
         primary_path, localized_language = localized
         if (base / primary_path).is_file():
             continue
-        report.add_warning(
+        report_bilingual_problem(
             f"{proposal_dir}/{changed_path}: bilingual counterpart has no primary display file "
-            f"`{primary_path}`; submission and review remain allowed"
+            f"`{primary_path}`"
         )
         companion_item = manifest_items.get(changed_path)
         if not companion_item:
-            report.add_warning(f"{proposal_dir}/manifest.json: list bilingual counterpart `{changed_path}`")
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual counterpart `{changed_path}`")
         else:
             if companion_item.get("language") != localized_language:
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/manifest.json: `{changed_path}` should declare "
                     f"language={localized_language}"
                 )
             if companion_item.get("translation_of") != primary_path:
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/manifest.json: `{changed_path}` should declare "
                     f"translation_of={primary_path}"
                 )
@@ -1482,28 +1631,28 @@ def validate_bilingual_display(
         companion_path = localized_path(display_path, translation_language)
         companion = base / companion_path
         if not companion.is_file():
-            report.add_warning(
-                f"{proposal_dir}/{display_path}: add non-blocking {translation_language} "
-                f"display counterpart `{companion_path}`; submission and review remain allowed"
+            report_bilingual_problem(
+                f"{proposal_dir}/{display_path}: bilingual contract requires "
+                f"{translation_language} display counterpart `{companion_path}`"
             )
             continue
 
         if not primary_item:
-            report.add_warning(f"{proposal_dir}/manifest.json: list bilingual primary file `{display_path}`")
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual primary file `{display_path}`")
         elif primary_item.get("language") != primary_language:
-            report.add_warning(
+            report_bilingual_problem(
                 f"{proposal_dir}/manifest.json: `{display_path}` should declare language={primary_language}"
             )
         companion_item = manifest_items.get(companion_path)
         if not companion_item:
-            report.add_warning(f"{proposal_dir}/manifest.json: list bilingual counterpart `{companion_path}`")
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual counterpart `{companion_path}`")
         else:
             if companion_item.get("language") != translation_language:
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/manifest.json: `{companion_path}` should declare language={translation_language}"
                 )
             if companion_item.get("translation_of") != display_path:
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/manifest.json: `{companion_path}` should declare translation_of={display_path}"
                 )
 
@@ -1512,14 +1661,14 @@ def validate_bilingual_display(
         try:
             translated_metadata, _ = parse_front_matter(translated_proposal.read_text(encoding="utf-8"))
         except UnicodeDecodeError:
-            report.add_warning(f"{proposal_dir}/{translation_file}: translation must be UTF-8 text")
+            report_bilingual_problem(f"{proposal_dir}/{translation_file}: translation must be UTF-8 text")
         else:
             if translated_metadata.get("language") != translation_language:
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/{translation_file}: front matter should set language={translation_language}"
                 )
             if translated_metadata.get("translation_of") != "proposal.md":
-                report.add_warning(
+                report_bilingual_problem(
                     f"{proposal_dir}/{translation_file}: front matter should set translation_of=proposal.md"
                 )
 
@@ -1571,6 +1720,7 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
     proposal_html_path = base / "report" / "proposal.html"
     if proposal_html_path.exists():
         validate_proposal_html_file(report, proposal_html_path, f"{proposal_dir}/report/proposal.html")
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
     for language in ["zh", "en"]:
         translated_html = base / "report" / f"proposal.{language}.html"
         if translated_html.exists():
@@ -1579,7 +1729,7 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
                 translated_html,
                 f"{proposal_dir}/report/proposal.{language}.html",
                 require_primary_figures=False,
-                translation_advisory=True,
+                translation_advisory=not strict_bilingual,
             )
 
     for visual_name in ["index.html", "index.zh.html", "index.en.html"]:
@@ -1589,7 +1739,7 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
                 report,
                 visual_path,
                 f"{proposal_dir}/visual/{visual_name}",
-                translation_advisory=visual_name != "index.html",
+                translation_advisory=visual_name != "index.html" and not strict_bilingual,
             )
 
     for geometry_name in sorted(ALLOWED_GEOMETRY_FILES):
@@ -1653,11 +1803,25 @@ def validate_proposal_file(
     language = metadata.get("language")
     if language and language not in {"zh", "en"}:
         report.add_error(f"{proposal_path}: language must be zh or en")
+    format_version = metadata.get("proposal_format_version")
+    if format_version and format_version not in {"1", PROPOSAL_FORMAT_VERSION}:
+        report.add_error(
+            f"{proposal_path}: proposal_format_version must be 1 or {PROPOSAL_FORMAT_VERSION}"
+        )
+    bilingual_contract_version = metadata.get("bilingual_contract_version")
+    if bilingual_contract_version and bilingual_contract_version != BILINGUAL_CONTRACT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version must be {BILINGUAL_CONTRACT_VERSION}"
+        )
+    if bilingual_contract_version and format_version != PROPOSAL_FORMAT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version requires proposal_format_version={PROPOSAL_FORMAT_VERSION}"
+        )
     validation_body = body
     if language == "en":
         # Legacy English submissions may still contain an inline Chinese
-        # translation. New submissions use proposal.zh.md, and the absence of
-        # that companion is reported only as a non-blocking warning.
+        # translation. New v2 submissions use the required proposal.zh.md
+        # companion, while v1 packages retain compatibility warnings.
         translation_match = re.search(r"(?m)^# 中文正式译文\s*$", body)
         if translation_match is not None:
             validation_body = body[: translation_match.start()]
@@ -1961,6 +2125,11 @@ def validate_submission(
         parts = path.split("/")
         full_path = repo_root / path
 
+        linked_path = first_symbolic_link(repo_root, path)
+        if linked_path is not None:
+            report_symbolic_link(report, repo_root, linked_path)
+            continue
+
         if path.startswith(PROTECTED_REVIEW_ARTIFACT_PREFIXES):
             report.add_error(
                 f"{path}: maintainer review artifacts must stay local and only be shared through PR comments"
@@ -2067,10 +2236,10 @@ def validate_submission(
 
         if not full_path.exists():
             rel_path = relative_to_proposal(path, proposal_dir)
-            if is_localized_display_path(rel_path):
+            if is_localized_display_path(rel_path) and not requires_bilingual_display(repo_root, proposal_dir):
                 report.add_warning(
                     f"{path}: bilingual display file was removed or is missing; "
-                    "submission and review remain allowed"
+                    "legacy v1 package remains compatible"
                 )
             else:
                 report.add_error(f"{path}: changed file is missing in the PR checkout")
@@ -2092,10 +2261,13 @@ def validate_submission(
         if is_under_drawings(parts) and size > MAX_DRAWING_BYTES:
             report.add_error(f"{path}: drawings must be <= {MAX_DRAWING_BYTES} bytes")
         if is_under_drawings(parts) and Path(path).suffix.lower() == ".pdf" and is_empty_pdf(full_path.read_bytes()):
-            if is_localized_display_path(relative_to_proposal(path, proposal_dir)):
+            if (
+                is_localized_display_path(relative_to_proposal(path, proposal_dir))
+                and not requires_bilingual_display(repo_root, proposal_dir)
+            ):
                 report.add_warning(
                     f"{path}: bilingual drawing PDF has no pages; replace the placeholder, "
-                    "but submission and review remain allowed"
+                    "but legacy v1 compatibility remains"
                 )
             else:
                 report.add_error(
@@ -2111,8 +2283,16 @@ def validate_submission(
     if report.total_bytes > MAX_TOTAL_BYTES:
         report.add_error(f"changed files total {report.total_bytes} bytes exceeds {MAX_TOTAL_BYTES}")
 
+    unsafe_submission_dirs = {
+        proposal_dir
+        for proposal_dir in proposal_dirs
+        if not submission_directory_is_safe(report, repo_root, proposal_dir)
+    }
+
     for proposal_dir in sorted(proposal_dirs):
         ai_package_dirs.add(proposal_dir)
+        if proposal_dir in unsafe_submission_dirs:
+            continue
         proposal_path = f"{proposal_dir}/proposal.md"
         if not (repo_root / proposal_path).exists():
             report.add_error(f"{proposal_path}: every touched proposal directory needs proposal.md")
@@ -2126,25 +2306,35 @@ def validate_submission(
             spatial_files.add(spatial_path)
 
     for proposal_path in sorted(proposal_files):
+        if str(PurePosixPath(proposal_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / proposal_path).exists():
             continue
         path_author = proposal_path.split("/")[1]
         validate_proposal_file(report, repo_root, proposal_path, pr_author, path_author)
 
     for proposal_dir in sorted(ai_package_dirs):
+        if proposal_dir in unsafe_submission_dirs:
+            continue
         validate_ai_package_dir(report, repo_root, proposal_dir)
 
     for changelog_path in sorted(changelog_files):
+        if str(PurePosixPath(changelog_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / changelog_path).exists():
             continue
         validate_changelog_file(report, repo_root, changelog_path)
 
     for risk_path in sorted(risk_files):
+        if str(PurePosixPath(risk_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / risk_path).exists():
             continue
         validate_risk_file(report, repo_root, risk_path)
 
     for spatial_path in sorted(spatial_files):
+        if str(PurePosixPath(spatial_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / spatial_path).exists():
             continue
         validate_spatial_file(report, repo_root, spatial_path)

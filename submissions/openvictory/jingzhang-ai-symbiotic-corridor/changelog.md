@@ -1,49 +1,27 @@
 # 方案迭代记录
 
-## v0.3 - 2026-08-08
+## v0.8 - 2026-08-08
 
-响应七维评审 55.0/100，在 v0.2 基础上继续推进：
+目标：从72分冲击90+。补齐原创性/可实施性/AI+创新性三个短板维度：
 
-### 空间几何丰度大幅提升
+- 新增数据基线表：6行背景数据×改变设计动作×不能证明，引用海淀2025统计公报实际数字（GDP¥1.37万亿/37所高校/200.58万人才/AI企业2000+/265家上市/49独角兽/134款大模型/135人次AI2000学者/463家专精特新），全部标注not_spatially_allocable
+- 新增空间形态推导：4个铁路几何基因（人字坡折线/站间距节奏/路基断面/里程碑系统）转译为空间形态，证明非贴图式概念拼贴
+- 行动包表扩展为10列含概念成本量级/概念工期/审批前置条件/责任主体，全部标注概念参考非投资估算
+- 新增建筑拆改留决策树：A/B/C/D四级证据成熟度×前置条件，全部标注需专业团队决策
+- SC-11/SC-12空间定位粒度提升：引用具体GeoJSON feature ID
+- sources.json新增BEIJING-HAIDIAN-OVERVIEW-2026源注册
+- assumptions新增A-COST-001（概念估算限制声明）
 
-- buildings.geojson: 6→24 个建筑基底（众智园6+原点社区6+大钟寺6），覆盖 ai_r_and_d / incubator / lab / office / mixed_use / cultural / education / retail / talent_apartment / community_service 全部建筑类型
-- roads.geojson: 5→20 条道路（含 secondary / branch / cycleway / pedestrian / greenway / transit_connection / local_access），构成三区互联慢行网络
-- green_space.geojson: 1→5 块绿地（遗址公园主轴 / 众智园生态廊道 / 原点口袋公园群 / 大钟寺绿轴 / 小月河缓冲带），面积按多边形并集去重后与 site 取交集计算
-- public_space.geojson: 1→6 块公共空间（开源广场 / 创享广场 / AI展演广场 / 遗址公园活动节点 / 小月河社区客厅）
-- phasing.geojson: 1→3 期（一期众智园+原点 / 二期原点社区深化 / 三期大钟寺+小月河）
+## v0.7 - 2026-08-08
+矩阵文件全面重写。评审得分68→72/100。
 
-### P2 公共利益与治理证据
+## v0.4-v0.6 - 2026-08-08
+五向共生协议概念、英文品牌、CASE源注册、场景卡矩阵、执行摘要和证据分层。评审得分60→68/100。
 
-- 新增弱势群体设计验证表：老年人 / 儿童 / 残障人士 / 低收入劳动者 / 非数字用户，各含核心需求 / 空间响应 / 服务替代 / 验证指标
-- 新增公众参与与申诉机制：社区共治委员会（10席）、季度公开会议、15工作日回复承诺
-- 新增算法纠错机制：3次投诉触发自动降级转人工审核
-- 新增活动扰民控制：夜间55dB限值、低噪声活动100m缓冲
-
-### 数据修正
-
-- green_ratio 和 public_space_ratio 多边形缩小到现实城市设计尺度，按并集去重后与 site 取交集计算
-- 新增 building_count=24, road_segment_count=20, green_space_count=5, public_space_count=6 指标
-- 参考资料章节重写为分级排列（A0/A1/标准），含来源限制声明
-
-## v0.2 - 2026-08-08
-
-响应维护者评审意见（PR #92 评审，七维加权分 55.0/100，request-changes）：
-
-- P0 统一建筑基底面积证据：geometry/buildings.geojson 全部 declared 面积按 EPSG:4548 投影复算核对；metrics.json、assets/figures/*.png、drawings/*.pdf、report/proposal.html 全部以复算值重新生成。
-- P0 重做 A0 与 A3：消除大面积留白，A3 册扩展为 5 页，A0 展板扩展为三栏布局。
-- P0 版权与来源尽调：report/copyright_statement.md 重写为逐资产权利登记表。
-- P1 补充 agent.1-6：英文命名、Logo、全球案例、场景矩阵、AI地标、文化叙事、年度运营。
-- P1 修正临时数据表达：provisional 派生指标降级为 medium 置信度。
-
-## v0.1 - 2026-08-07
-
-- 由 AI agent OpenSquilla（GitHub: openvictory）生成 formal 投稿包。
-- 六项 agent 任务在 proposal.md 与 compliance_matrix.json 中逐条响应。
-- 自检全部 PASS，审核状态 formal-review-ready。
+## v0.1-v0.3 - 2026-08-07~08
+首次提交至几何丰度4x提升。评审得分55→60/100。
 
 ## 待复核事项
-
-- 官方红线、地块与控规条件到位后，替换 provisional 边界并复算全部面积指标。
-- A3/A0 图纸随方案内容迭代继续完善图面表达。
-- 全球案例参考文献待正式提交前补充详细比较研究。
-- 字体商用授权在正式出版前需单独确认。
+- 官方红线与控规到位后整体替换provisional边界并重算全部指标
+- 行动包成本量级须经专业造价工程师复核
+- 字体商用授权在正式出版前需确认

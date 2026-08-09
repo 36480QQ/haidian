@@ -6,6 +6,7 @@
 
 - 补齐中英双语展示面：`proposal.en.md`、`report/proposal.en.html`、`visual/index.en.html`，以及全部主图 `.en.png` 与 A3/A0 `.en.pdf`。
 - 中文主稿 `proposal.md` 声明 `translation_file=proposal.en.md`；`manifest.json` 登记 language / translation_of 元数据。
+- 英图从「中文板 + 英文条」升级为原生英文重绘：去除汉字球标/旁注残留，拉丁字体栈，同步刷新 `.en.pdf` 与 manifest 哈希。
 
 ### 采纳反馈
 
@@ -13,7 +14,7 @@
 
 ### 暂未采纳或待复核事项
 
-- 官方几何到位后须整体复算；英译图板标题层可在下一轮改为完全重绘英文字体版。
+- 官方几何到位后须整体复算；专有名词拼音（Zhongzhiyuan / Dazhongsi / Renzi）保留，不伪英文化。
 
 ### 公开资料与合规说明
 
