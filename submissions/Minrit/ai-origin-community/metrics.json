@@ -75,7 +75,7 @@
    "confidence": "medium",
    "assumptions": []
   },
-  "building_density": {
+  "flagship_building_footprint_ratio": {
    "status": "known",
    "value": 0.019,
    "unit": "ratio",
@@ -83,9 +83,11 @@
     "geometry/buildings.geojson",
     "geometry/site_boundary.geojson"
    ],
-   "formula": "footprint_area / site_area",
+   "formula": "flagship_footprint_area / site_area",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "仅计 13 栋示意标志建筑之占地，不代表全域建筑密度；全域建筑密度须待官方控规与既有建筑基底数据公布后复算。"
+   ]
   },
   "land_use_research_area_sqm": {
    "status": "known",

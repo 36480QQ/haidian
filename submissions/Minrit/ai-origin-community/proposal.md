@@ -24,6 +24,16 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 
 结构上形成 **一轴一环三坊**：一轴为AI原点主轴（沿京张遗址公园），一环为零碳慢行环（骑行+步行+无人接驳），三坊为北坊众智园、中坊北京AI原点社区、南坊大钟寺。[depth:overall_spatial_structure]
 
+## 命名体系与VI方向
+
+**主名称**：京张AI原点社区（英文：**Jing-Zhang AI Origin Community**，缩写 JZ-AI Origin）。「原点」取双关：既为代码之原点（0/1），亦为百年京张自主创新精神之原点；英文 Origin 与「校区-园区-社区」三合一之地理特征呼应。
+
+**命名层级**：总带「百年京张AI创新带 / Centennial Jing-Zhang AI Innovation Belt」→ 片区「三坊」（北坊众智园 / 中坊北京AI原点社区 / 南坊大钟寺）→ 组团（西厢人才公寓住区、中厢校企联合实验室带、东厢开源广场与发布厅）→ 场所（原点钟、0/1桥、发布穹顶）。
+
+**Logo 方向**（概念稿，非成稿）：以「道钉」与「0/1」同构为标识母题——道钉俯视为圆点、侧视为双轨；标识由一枚圆点与两条平行线构成，圆点可演化为数据脉冲环。色彩规范意向：京张铁路灰（#2E4057）为基色、创新绛红（#B03A2E）为强调色、柳绿（#7FB069）为生态色；字体以无衬线简体中文与拉丁混排。完整 VI 手册（标识网格、色彩/字体规范、应用系统）列入后续深化任务，本方案提供方向性界定。
+
+> **开放共创声明**：本方案全部成果均为开放共创建议，不替代正式规划，不构成政府审定结论；所有几何、指标与图件基于临时粗略边界生成，官方边界与控制指标公布后须整体复算。
+
 ## 1 设计依据与资料清单
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以 `brief/site-package/` 中登记的资料包为机器可读依据 [source:SITE-PACKAGE]。方案生成前读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 与 `data/processed/agent_fact_pack.md` [source:SOURCE-REGISTRY][source:PROCESSED-FACT-PACK]，并以任务书 [source:AGENT-TASKBOOK] 建立 agent.1—agent.6 的任务覆盖。所有设计判断均拆分为可追溯来源、可复算指标、可校验图层与可人工复核假设。[depth:existing_conditions_diagnosis]
@@ -52,11 +62,28 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 
 **三坊定位**：北坊众智园AI自主创新加速区——算力与加速器集群；中坊北京AI原点社区——「校园-园区-社区」三合一混合社区（重点详细设计）；南坊大钟寺AI产业集聚区——产业楼宇与数据要素应用。三坊以零碳慢行环串联，形成「北加速、中原点、南集聚」的产业纵深。[depth:overall_spatial_structure]
 
+### 三大定位与五大功能逐项矩阵
+
+| 定位 / 功能 | 本方案响应 | 空间载体 | 证据 |
+| --- | --- | --- | --- |
+| 百年京张文化带 | 遗址公园绿脊、京张慢行主轴、京张记忆线路、常设展「百年双轨」 | 京张遗址公园活力带 | [data:geometry/green_space.geojson#G-01] |
+| 都市AI生活体验带 | 10张场景卡、3个测试场景、五道口活力街角、原点社区客厅 | 原点社区东厢、五道口街区 | [metric:scenario_card_count] |
+| AI融合创新带 | 三坊产业纵深、校企实验室带、数据要素剧场、低碳算力驿站 | 众智园/中坊/大钟寺 | [data:geometry/land_use.geojson#LU-ORIGIN-M] |
+| AI全栈自主创新体系 | 算力中心、加速器大楼、开源共创中心 | 众智园 | [data:geometry/buildings.geojson#BLD-009] |
+| 世界级AI创新生态 | 人才公寓、发布穹顶、京张AI开源节 | 原点社区 | [data:geometry/buildings.geojson#BLD-001] |
+| AI+场景赋能新范式 | 场景卡六要素、沙盒-人工复核-审计-渐进部署治理框架 | 全域 | [depth:municipal_new_infrastructure] |
+| 智能化AI活力城市 | 数字孪生底座、无人接驳、低碳算力驿站 | 全域 | [depth:traffic_rail_slow_parking] |
+| 全球AI创新人才向往地 | 5类用户画像、人才公寓、原点社区客厅 | 原点社区西厢 | [metric:user_persona_count] |
+
+**三区两翼与区域协同**：三区即北坊众智园、中坊北京AI原点社区、南坊大钟寺；两翼依公告方向为**中关村科技服务翼**（向西衔接中关村大街沿线的科技服务与孵化资源，本方案以零碳慢行环西环与五道口综合服务街区承接，形成「高校-大街-社区」服务回路）与**小月河场景赋能翼**（沿小月河向南延伸 AI 导览、无障碍慢行与公共体验路径，位置为概念意向，非官方边界）。区域协同层面，与北纬社区、未来科学城、怀柔科学城、经开区及京津冀的协同关系属统筹研究范畴，本方案将其列为后续深化专题，以「主带联动、飞地协同」机制衔接——不虚构跨区域空间结论，待官方统筹研究范围公布后深化。
+
 ## 3 统筹研究范围产业与未来城市研究
 
 **产业生态：从算力到开源的完整AI创新链。** 依托海淀高校院所与中关村创新基因 [source:OFFICIAL-ANNOUNCEMENT]，沿「基础研究（清华、北大、中科院）—模型与算力（众智园）—应用与数据（大钟寺）—人才与社区（原点社区）」布置创新链：北坊承接算力与加速器需求，中坊承载人才安居与成果发布，南坊承载数据要素与产业应用，避免同质化竞争。
 
 **未来城市：以AI原生方式运营城市。** 方案将AI视为城市公共基础设施而非点缀：数字孪生底座覆盖全域运维（市政、交通、能耗）[depth:municipal_new_infrastructure]；无人接驳与慢行优先重构街区尺度；分布式低碳算力驿站与绿电协同 [depth:blue_green_public_space]；城市智能体在可控公共空间沙盒中测试后渐进部署。AI治理遵循「场景卡—数据边界—人工复核—运营主体」四要素，任何智能体部署均保留人工接管与审计日志。
+
+**国际创新街区案例对照**（公开资料，供概念比照，非官方结论）：巴黎 Station F（全球最大初创园区，旧货运仓库改造为开放创新社区）、伦敦 Here East（奥运遗产再利用，产学研社区）、纽约 Brooklyn Navy Yard（工业遗址向科创园区转型）、深圳湾科技生态园（园区-社区一体化的本土案例）。对照结论：成功创新街区普遍具备「旧址记忆保留、开放公共界面、人才安居闭环、活动仪式感」四要素——本方案「遗址缝合 + 原点社区三合一 + 开源节」即对此四要素的响应。案例来源为公开报道与园区公开资料，详细来源登记见 sources.json 与资料台账；对照仅作概念参考，不构成对标评价。
 
 ## 4 总体设计范围城市更新与控规深度城市设计
 
@@ -91,7 +118,7 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 
 ![指标证据图：绿地率、公共空间占比、建筑密度、用地结构、分期面积与建筑构成等可复算指标图表](assets/figures/metrics-evidence.png)
 
-指标总览（临时边界复算，官方边界到位后必须复算 [depth:metrics_recalculation]）：场地约1141.3公顷 [metric:site_area_sqm]，绿地率21.4% [metric:green_ratio]，公共空间占比1.9% [metric:public_space_ratio]，建筑密度约1.9% [metric:building_density]，重点片区3处 [metric:key_area_count]，近期、中期、远期面积分别为 [metric:phasing_area_near_sqm]、[metric:phasing_area_mid_sqm]、[metric:phasing_area_far_sqm]。
+指标总览（临时边界复算，官方边界到位后必须复算 [depth:metrics_recalculation]）：场地约1141.3公顷 [metric:site_area_sqm]，绿地率21.4% [metric:green_ratio]，公共空间占比1.9% [metric:public_space_ratio]，标志建筑占地比约1.9% [metric:flagship_building_footprint_ratio]（仅计13栋示意标志建筑，非全域建筑密度），重点片区3处 [metric:key_area_count]，近期、中期、远期面积分别为 [metric:phasing_area_near_sqm]、[metric:phasing_area_mid_sqm]、[metric:phasing_area_far_sqm]。
 
 ## 5 重点区域详细设计：北京AI原点社区（中坊）
 
@@ -111,18 +138,18 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 
 每张场景卡均注明服务对象、空间位置、数据来源、隐私边界、人工复核与运营主体，确保「场景不是口号」：
 
-| # | 场景 | 位置 | 服务对象 | 数据/隐私边界 | 人工复核 |
-| --- | --- | --- | --- | --- | --- |
-| 01 | 开源发布厅 | 发布穹顶 | 开发者/企业/高校 | 公开成果，涉密不上屏 | 发布前人工审核 |
-| 02 | 城市智能体沙盒 | 开源广场 | 运营方/科研团队 | 脱敏数据，沙盒隔离 | 部署前人工审批 |
-| 03 | 慢行断点诊断 | 零碳慢行环 | 全体居民 | 公开地图+人工上报 | 月度人工复核 |
-| 04 | 人才生活管家 | 原点社区客厅 | 人才公寓住户 | 授权范围内，可随时注销 | 客服坐席兜底 |
-| 05 | AI安全治理廊 | 遗址公园展廊 | 公众/行业 | 展陈脱敏 | 内容审核 |
-| 06 | 校企转化客厅 | 实验室带 | 高校/企业 | 协议范围内 | 校方管理员 |
-| 07 | 数据要素剧场 | 大钟寺 | 公众 | 公开数据可视化 | 运营审核 |
-| 08 | 低碳算力驿站 | 众智园 | 开发者 | 能耗脱敏 | 节能审计 |
-| 09 | 京张记忆线路 | 遗址主轴 | 游客/居民 | 公开史料 | 专家复核 |
-| 10 | 全球AI活动周路线 | 全域 | 国际访客 | 行程公开 | 安保复核 |
+| # | 场景 | 位置 | 服务对象 | 数据/隐私边界 | 人工复核 | 运营主体 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 | 开源发布厅 | 发布穹顶 | 开发者/企业/高校 | 公开成果，涉密不上屏 | 发布前人工审核 | 管委会+社区共治委员会 |
+| 02 | 城市智能体沙盒 | 开源广场 | 运营方/科研团队 | 脱敏数据，沙盒隔离 | 部署前人工审批 | 管委会数字孪生团队 |
+| 03 | 慢行断点诊断 | 零碳慢行环 | 全体居民 | 公开地图+人工上报 | 月度人工复核 | 交通主管部门+管委会 |
+| 04 | 人才生活管家 | 原点社区客厅 | 人才公寓住户 | 授权范围内，可随时注销 | 客服坐席兜底 | 人才公寓运营方 |
+| 05 | AI安全治理廊 | 遗址公园展廊 | 公众/行业 | 展陈脱敏 | 内容审核 | 管委会+行业组织 |
+| 06 | 校企转化客厅 | 实验室带 | 高校/企业 | 协议范围内 | 校方管理员 | 高校与企业联合体 |
+| 07 | 数据要素剧场 | 大钟寺 | 公众 | 公开数据可视化 | 运营审核 | 大钟寺产业运营方 |
+| 08 | 低碳算力驿站 | 众智园 | 开发者 | 能耗脱敏 | 节能审计 | 众智园运营方 |
+| 09 | 京张记忆线路 | 遗址主轴 | 游客/居民 | 公开史料 | 专家复核 | 文旅部门+专家委员会 |
+| 10 | 全球AI活动周路线 | 全域 | 国际访客 | 行程公开 | 安保复核 | 管委会+活动主办方 |
 
 ### 5.3 用户画像（5类，[metric:user_persona_count]）
 
@@ -138,9 +165,21 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 - **AI导览与多语无障碍**：遗址主轴部署多语AI导览，服务国际访客与银发人群，人工语音兜底；
 - **数字孪生运营沙盒**：中坊全域数字孪生，先仿真后实装，市政与交通智能体分级上线。
 
-### 5.5 运营与活动
+### 5.5 荣誉展示体系与公共空间组件库
+
+**荣誉展示体系**：发布穹顶设「京张AI荣誉墙」（年度开源贡献榜、模型评测 Top 榜、场景开放日成果展），原点钟广场设「创新者名录」地砖，将人才荣誉与数据成果融入日常公共空间，形成「可参观、可参与、可传播」的成就叙事。
+
+**公共空间组件库**：以「道钉·原点·双轨」母题建立可复用组件库——道钉造型灯具与座椅、0/1 二进制铺装模块、数据脉冲环装置、轨道枕木花箱、遗址文脉标识桩；组件库随分期实施滚动深化，先在中坊试点，再推广至三坊，保证公共空间语言统一而可生长。
+
+### 5.6 运营与活动
 
 **京张AI开源节**（年度，面向全球）、**原点黑客马拉松**（季度）、**周四开源夜**（每周）、常设展**「百年双轨——从詹天佑到图灵」**。运营以「管委会+社区共治」双主体：管委会统筹数据与安全，社区共治委员会审议公共空间使用与活动排期，确保AI社区首先是人的社区。
+
+### 5.7 实施决策门与运营 RACI
+
+每个试点与更新项目均设**决策门**：前置数据齐备（公开数据 + 数据缺口清单登记，provisional 边界须在官方边界到位后复核）→ 专业复核（规划/交通/文保）→ 责任确认（RACI）→ 试点运行与 KPI 考核 → 失败/退出判定。
+
+**运营 RACI**：管委会为 Responsible（投资与审批）、专业团队为 Accountable（设计与复核）、运营方为 Consulted（运营需求）、社区共治委员会为 Informed（公共空间使用审议）。试点 KPI 以「月活/开放日人次/安全事件数/满意度」衡量；连续两期不达 KPI 或安全事件超阈，即暂停复盘、转人工兜底运营。后续深化团队与任务（VI 手册、控规衔接、市政专项）在 assumptions.json 中登记，责任到岗。
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -185,3 +224,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-traffic-walka
 3. 公开任务书资料包 brief/site-package/（design_brief.json、allowed_design_space.json、sources.json、enums/、ranges/、schemas/）[source:SITE-PACKAGE]
 4. 资料登记与来源台账 data/source_registry.json 与 data/processed/agent_fact_pack.md [source:SOURCE-REGISTRY][source:PROCESSED-FACT-PACK]
 5. 临时粗略边界与三处重点片区范围（provisional_boundaries.geojson、key_areas.geojson）[source:BOUNDARY-SOURCE][source:KEY-AREA-SOURCE]
+
+
+## 评审修订记录
+
+- **v3（2026-08-09）**：回应 AI 自动评审意见——补「命名体系与VI方向」「三大定位×五大功能矩阵」「三区两翼与区域协同」；补国际创新街区案例对照（公开资料，仅作概念比照）；场景卡表补运营主体列；补荣誉展示体系与公共空间组件库、实施决策门与运营 RACI；全文统一「开放共创声明」；指标正名（`building_density` → `flagship_building_footprint_ratio`，明确为 13 栋示意标志建筑占地比，非全域建筑密度）；图件以简体中文字体（Noto Sans CJK SC）重绘；新增版权与资产来源台账（`report/copyright_statement.md`）与英文摘要（`proposal.en.md`）。官方 CI（submission-validation）与维护者 trusted-base 复核均为 0 errors；本修订不改变临时边界与复算声明。
