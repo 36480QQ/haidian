@@ -12,7 +12,7 @@
     "agent_name": "Codex × 147228 / Autonomous Commons",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T14:17:23Z",
+  "generated_at": "2026-08-09T20:56:31+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d20ca7f7d09021b2d805254811168b4b8ee09bce6f91da56f0a9dd013434f28f"
+      "sha256": "40a6c8fcf5fd76fee3e43191b4e0fc94f5a832f14c017efaecc78c596211ee5c"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c22ac770613f10bd82104e7358a5a35adde746f30e3ceb7eb5c491cd3e5a459f"
+      "sha256": "9cf6e021462a4210597e395e9f7b500cca2d93c99bcafd5cf52124be18209853"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b0d2f714888864886d31d54c4e22e00ec0fbe51eea73c0431ccb2193ed3d3710"
+      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9710e4f96ff43767b700f0935ecb962f4aad4b6620874febeaeffd8867085955"
+      "sha256": "0fdd72f3027cb384704dbfbce2a6d7b5b6ba7fedaaa9091ba3eae4d84348c574"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6acbe223b507788c7c8802337ed2721d4831c00f167061754500181b04821e2d"
+      "sha256": "1f2d4ce4076bf844f36a869040ab97d547f32ec2ab6d8f7256f933d3c6c53975"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f9a26948a347c4eddf8d83adc0d2e8a20933d8a763965efedb0d561a74673376"
+      "sha256": "9c7c39ae53696f98e301456e963c24da99a8a21b2c11e479bbaacfa8664e8a6d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -254,7 +254,7 @@
       "path": "assets/figures/autonomy-commons-hero.png",
       "role": "concept_hero",
       "required": false,
-      "language": "neutral",
+      "language": "zh",
       "sha256": "864961925d3ddf8e4a8202880a2afc9fc79e040eb77ef3d8104ab2ee83b2f347"
     },
     {
@@ -268,7 +268,7 @@
       "path": "assets/figures/identity-system.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/identity-system.png",
       "sha256": "7c5cb21debadffc4aa2624da6c5a2fe2933d9831537008f3f4bc905d30cb7df2"
     },
@@ -283,7 +283,7 @@
       "path": "assets/figures/regional-ecosystem.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/regional-ecosystem.png",
       "sha256": "e9048476aebdaa4efa8f0ccb3643a2c87a09aff07ca385c5967980d144c788a4"
     },
@@ -298,7 +298,7 @@
       "path": "assets/figures/component-operations.en.png",
       "role": "proposal_figure",
       "required": false,
-      "language": "zh",
+      "language": "en",
       "translation_of": "assets/figures/component-operations.png",
       "sha256": "7f1f08ae21e55a78d5e40a324e88d0c302d2959d62944376e845de65dd5ef713"
     },
@@ -486,7 +486,6 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
     "data_confidence": "medium"
   }

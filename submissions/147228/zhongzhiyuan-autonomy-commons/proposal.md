@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案是一个独立的自动驾驶公共性迭代，不是对“京张开源脉冲”原方案的换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。
 
-## 1. 设计依据、证据等级与边界
+## 设计依据与资料清单
 
 官方任务要求回应 AI+交通、机器人、自动驾驶、无人配送等场景，并达到三层空间研究、三处重点区和可审查的城市设计深度 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。本包使用 `brief/site-package/` 的 provisional boundary、key areas、标准快照和来源注册表；`geometry/site_boundary.geojson` 明确 `official_boundary=false`、`geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001]。
 
@@ -31,6 +31,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 现有论文只提供方法边界：街谷 CFD、风热 PM2.5 联合监测和屋顶/街谷几何研究用于定义未来模型变量 [source:LIU-URBAN-VENTILATION-2017] [source:MENG-WIND-HEAT-PM25-2022] [source:NOSEK-STREET-CANYON-2025]；它们不提供京张的风场、健康因果、事故率或可迁移百分比。
 
+## 统筹研究范围产业与未来城市研究
+
+统筹层把 AI 产业、人才、轨道、社区、公共治理和未来城市研究放在同一条公共价值链上：企业提供受控试验能力，高校和学生参与审计，社区提供真实需求与申诉，轨道和公共服务台提供不依赖 App 的入口 [source:AGENT-TASKBOOK]。设计意图不是为某个品牌预留市场，而是把“自动化能力”转译成可被居民使用、可被维护者接手、可被专业团队复核的公共服务。空间上，统筹判断影响公共轴和三座试验庭的分工；指标上，优先看无障碍连续性、人工等价服务、停止/回退和申诉闭环，不把车辆数量、模型精度或活动人流当作公共价值。当前缺少责任协议、预算、保险、人员技能和真实需求分布，产业链仍是研究与协同假设，不能写成企业合作或实施承诺。
+
 ## 2. 核心概念：一条公共轴、三座试验庭、两条安全网
 
 总体结构为“**一条公共轴 + 三座试验庭 + 两条安全网 + 十二个场景卡**”。公共轴是京张遗址公园及其慢行/蓝绿联系；三座试验庭分别对应众智园、北京 AI 原点社区、大钟寺 AI 产业聚集区；两条安全网是：
@@ -42,7 +46,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![自动驾驶公共带总览：三座试验庭、两条安全网和阶段门槛](assets/figures/site-overview.png)
 
-## 3. 三层范围与三处重点区
+## 总体设计范围城市更新与控规深度城市设计
+
+总体设计把 provisional 的用地、建筑、道路、绿地、公共空间和分期图层作为同一套空间底盘；自动驾驶节点只表达测试关系，不生成法定红线。设计意图是先守住人行主链、消防净空、维护通道、安静界面和可逆改造，再讨论路缘服务窗口 [depth:overall_spatial_structure]。几何影响由 `land_use.geojson`、`buildings.geojson`、`constraints.geojson` 和 `phasing.geojson` 共同回读，指标影响由面积、建筑底盘、绿地和公共空间比例复算。当前没有官方控规、权属、地下管线、消防审查和拆改清单，因此不提出容积率、建筑高度、拆除数量或投资金额；后续应由规划、建筑、市政、消防和交通专业人员统一深化。
+
+## 三层范围工作框架
 
 统筹研究范围回答“北京智能网联汽车政策与产业链如何转成公共空间能力”；总体设计范围回答“路缘、站点、慢行和维护如何形成连续系统”；重点区域回答“每个试验庭如何有小范围、可撤回、可审查的测试场”。空间面积和边界仅使用当前提交 GeoJSON 复算 [metric:site_area_sqm] [metric:key_area_count]。
 
@@ -53,6 +61,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 大钟寺 | 轨道换乘、路缘物流、活动日人机分流 | 站点周边货运/维护机器人与步行优先路缘试点 | 不占用消防、无障碍和应急通道；高峰/雨雪/断网立即回退 |
 
 三处详细节点落在 `visual/assets/autonomy_nodes.json`，其坐标只是 provisional 设计标记，不是车辆测试道路或法定站点 [data:visual/assets/autonomy_nodes.json#AUTO-NODE-001]。
+
+## 重点区域详细设计
+
+众智园承担封闭/预约窗口内的安全评测，AI 原点社区承担自动与人工等价服务，大钟寺承担轨道换乘、路缘物流和活动日人机分流。每处节点都要同时回接场景卡、路缘状态、责任主体、数据边界和停止条件；详细点位只在 `autonomy_nodes.json` 中作为低置信度设计标记，不代表许可证、社会道路或建设地点。专业深化前仍缺现场测绘、信号配时、站口无障碍、消防通道、物流时窗和分层居民基线，故首个测试必须限定在可关闭、可人工接手、可公开复盘的窗口内 [data:visual/assets/autonomy_nodes.json#AUTO-NODE-001]。
+
+![核心区域公共性分工与停止条件](assets/figures/key-areas.png)
 
 ## 4. 自动驾驶普及后的空间规则
 
@@ -93,7 +107,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 这些场景是设计对象，不是已经存在的运营项目。其机器可读版本为 `visual/assets/autonomous-scenarios.json`，每张卡都绑定空间、责任、数据最小化和停止条件 [metric:autonomy_scenario_card_count]。
 
-## 6. 三个产业测试与六类以上用户
+## AI 创新生态、人才画像与 AI+ 场景
 
 ### 产业测试
 
@@ -113,7 +127,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三处地标均是文化与公共解释建议，不是已批准建筑、雕塑、企业冠名或建设承诺 [metric:ai_landmark_count]。
 
-## 8. 用地、交通、蓝绿与更新分期
+## 交通、轨道、市政与公共服务设施
 
 沿用同一 provisional 空间底盘的用地、建筑、道路、绿地和公共空间图层，所有空间量从当前文件复算 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。新增自动驾驶节点不画新的法定红线，只以点位、路缘状态和测试依赖表达设计意图。正式边界发布后，必须重算所有图层和面积，不得把本包坐标当成测试道路。
 
@@ -129,13 +143,27 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![自动驾驶准备度看板：场景、节点、闸门、证据路由和专属指标状态](assets/figures/autonomy-readiness.png)
 
-## 9. 指标、标准和合规矩阵
+## 用地、建筑规模与拆改留方案
+
+本包保留既有 provisional 用地和建筑底盘，自动驾驶节点不转化为新增开发强度、建筑高度、拆除数量或投资承诺。优先动作是利用既有道路、站点、公共建筑、树荫和服务台做可逆改造，并把首层入口、无障碍卫生间、等候点、维护/充电和人工接管空间当作公共服务接口。`land_use.geojson`、`buildings.geojson`、`public_space.geojson` 和 `constraints.geojson` 共同表达空间关系；面积、footprint 和比例仍以 `metrics.json` 的公式回读。当前缺少权属、结构、设备、地下空间、停车和成本资料，正式深化前不得推出拆改或建设结论 [data:geometry/land_use.geojson#LU-001]。
+
+## 蓝绿空间、公共空间与城市风貌
+
+蓝绿和公共空间不是自动驾驶效果的背景图，而是决定人能否连续通行、何时转人工、如何应对雨雪/热浪/暗夜和鸟类保护的安全边界。设计上保留树荫、雨水花园、开放空间、照明、维护路线和路缘状态的联系；几何层只表达候选审计点、公共性关系和回退路径，不推出生态红线、排水能力或健康收益。绿地比例、公共空间比例、可达连续性、积水/热风险和暗夜影响需分别由图层、现场记录和专业模型复算；当前缺逐点树木、鸟类、雨洪、微气候、照度和夜间人流基线，故相关效果只能保持 `unknown` 或 `design_target` [source:BEIJING-VENTILATION-NETWORK-2035]。
+
+## 更新项目清单、实施政策与分期计划
+
+分期采用“先可读、再小试、后条件扩展”的可逆路径：P0 交付路缘台账、无障碍审计、人工服务、申诉和数据最小化规则；P1 只在获批、低速、有人值守且可回退的窗口开展 AV-T01—T03；P2 只有安全、交通、生态、隐私、参与、保险和维护责任均有书面证据后才讨论扩展。参与主体包括政府/监管部门、企业、高校、社区、居民、维护者和专业团队；可衡量指标包括通过门数量、冲突/接管/回退记录、无障碍连续性、等待、申诉闭环和维护响应。每阶段都要把成果、验收、责任、缺口和停止动作回接到 `phasing.geojson`、场景卡和证据台账；当前没有招标范围、运营主体、SLA、预算和应急联络，因此这里只是设计任务书级建议，不是中标、施工或运营承诺 [depth:phasing_implementation]。
+
+![用地和空间分层及人工回退](assets/figures/land-use-structure.png)
+
+## 指标体系、面积复算与合规矩阵
 
 当前可直接回读的底盘指标包括：provisional site area 11.41 km²、三处重点区、绿地比例和公共空间比例。自动驾驶新增指标全部明确为 `unknown` 或 `design_target`：路缘冲突率、无障碍连续性、远程停止响应、回退成功率、数据最小化覆盖率、试验路线长度和自动驾驶场景卡数量 [metric:curb_conflict_rate] [metric:remote_stop_response_seconds] [metric:autonomy_fallback_success_ratio]。
 
 `compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1—agent.6；`standard_matrix.json` 覆盖城市设计、控规深度、步行骑行、无障碍、资产管理、服务机器人和自动驾驶测试边界；`design_depth_matrix.json` 将每项设计深度绑定正文、图层、指标和回退条件。所有可知数值都带单位、公式、来源文件、置信度和假设 [metric:autonomy_metric_count]。
 
-## 10. 风险、责任与公开运营
+## 风险、版权与合规说明
 
 本方案不替代道路测试许可、安全评估、车辆认证、交通组织、消防、保险、隐私影响评估、生态审查或施工图。任何测试主体必须先确定运营责任、现场安全员/远程操作员、应急联络、数据保留、投诉渠道、事故记录和撤场条件 [source:BEIJING-AV-SAFETY-ASSESSMENT-2025]。
 
@@ -147,66 +175,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 参考资料
 
-- `brief/public-brief.md`、`brief/site-package/agent_taskbook.json`、`data/source_registry.json`
-- [source:BEIJING-AV-TEST-2025]、[source:BEIJING-AV-ROADS-2025]、[source:BEIJING-AV-SAFETY-ASSESSMENT-2025]
-- [source:MIIT-AV-TEST-2021]、[source:BEIJING-ACCESSIBILITY-REGULATION]、[source:BEIJING-WALK-CYCLE-DB11-1761]
-- [source:ISO-TR-4448-PUBLIC-MOBILE-ROBOTS]、[source:ISO-13482-SERVICE-ROBOT-SAFETY]
-- [source:CASE-HELSINKI-AI-REGISTER]、[source:CASE-UK-ATRS]
-- [source:LIU-URBAN-VENTILATION-2017]、[source:MENG-WIND-HEAT-PM25-2022]、[source:NOSEK-STREET-CANYON-2025]
+完整来源索引、发布方、用途边界、访问日期和限制以本包的 `sources.json` 为准；本节不重复结构化索引，正文只在对应论点附近保留代表性锚点 [source:SOURCE-REGISTRY]。来源的设计用途是让每个政策、标准、案例和方法证据都能回到发布方、覆盖范围、许可边界和已知缺口，而不是把参考文献数量当作方案质量。空间边界、重点区、面积、绿地、公共空间和自动驾驶指标分别回读 GeoJSON、JSON 和结构化矩阵；论文只用于定义未来测量变量，不提供本地实测结果。官方 polygons、道路/权属/交通/气象/排水/生态基线及专业审查到位前，所有试验、性能、许可和实施结论都保持为设计目标、未知或待正式数据补齐。
 
 **最终边界声明**：这是一个可审计的概念与试验框架，不是政府批准的规划、道路开放公告、自动驾驶运营许可、企业合作协议、健康/空气质量证明或建设承诺。
-
-## 设计依据与资料清单
-
-本包以征集公告、智能体任务书、provisional 边界、重点区和来源登记为共同依据；官方资料、背景资料、设计目标和未知基线分开管理。[source:OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis]。设计意图是把自动驾驶从单一车辆能力转成公共空间能力：先定义人的连续路线、路缘责任、人工服务和退出权，再定义车辆或机器人可以在哪个时段、以何种受控方式进入。几何上，既有 provisional boundary、key areas、roads、constraints 和 phasing 继续作为底盘，新节点只表达测试关系，不生成法定红线；指标上，面积、绿地、公共空间和交通筛查必须从文件复算，不能由概念图估读。政策来源证明测试路径与批准边界要求，不证明本地道路、车辆或运营已经存在；无障碍基线、权属、交通量、排水、气象、生态、保险和责任主体仍是缺口。正式边界和现场资料到位后，所有图层、指标、报告、图纸和前端证据卡必须一起重生成，不能只换一张效果图。
-
-## 三层范围工作框架
-
-统筹研究范围组织 AI 产业、人才、公共治理与未来城市研究；总体设计范围组织用地、建筑、交通、市政、蓝绿和公共空间；重点区域组织三座试验庭的节点、路缘和运营测试。[depth:three_level_scope_framework] [data:geometry/site_boundary.geojson#SITE-001] [depth:overall_spatial_structure]。三层不是三个互不相干的报告目录：统筹层决定产业与公共利益的边界，总体层把边界翻译成连续慢行、轨道接驳、蓝绿和更新动作，重点区再把这些动作拆成可看见、可停止、可复核的测试庭。几何影响是不同层级共享同一套 boundary、key areas、land use、roads、green_space、public_space 和 phasing 图层，避免总体规划和节点图各画一套线；指标影响是 site area、green ratio、public space ratio、key area count 与慢行关系线必须能回读。当前数据仍是 provisional，不能推出法定范围、道路容量、产权或实施时序；后续要补官方 polygon、站口、路权、管线、现状客流和居民分层体验，再进行统一复算。
-
-## 统筹研究范围产业与未来城市研究
-
-方案将高校、企业、社区、轨道和公共服务视为共同的创新生态，不以单一企业或车辆品牌代表未来城市。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。设计意图是把“AI 创新带”从展示性园区转成可被居民日常使用、企业持续维护、学生参与审计的公共网络：高校提供研究与人才，园区提供受控测试和维修能力，社区提供真实需求与申诉，轨道提供换乘入口，公共服务台提供不依赖 App 的人工路径。空间上对应三处试验庭和公共轴，运营上对应登记—小试—复核—扩展/停止的循环，指标上不把车辆数量、模型精度或活动人流当作公共价值，而看无障碍连续性、冲突率、接管、回退、申诉闭环和数据最小化。当前缺少企业责任协议、公共预算、保险、人员技能、设备清单和真实服务需求分布，因此产业链只能作为研究与协同假设；任何合作、品牌、设备和用工都要在正式招标、采购、专业安全和居民参与程序后确认。[source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES]
-
-## 总体设计范围城市更新与控规深度城市设计
-
-用地、建筑、道路、绿地、公共空间和分期图层共同表达 provisional 结构；自动驾驶节点是试验标记，不是新增法定红线。[depth:land_use_layout] [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/land_use.geojson#LU-001]。本层的设计意图是让自动驾驶服务服从既有城市结构，而不是用“未来交通”掩盖用地、建筑和拆改关系：人行主链、消防净空、绿地暗区、维护通道和居民安静界面先被保留，再讨论路缘和服务窗口。几何上，land_use、buildings、constraints 与 phasing 是共同约束，节点 JSON 不能被解释为新增用地或道路；指标上，building footprint、开发强度、绿地、公共空间和分期面积均保持原始单位、公式和 provisional 置信度。当前没有官方控规、权属、建筑现状、地下管线、消防审查和拆改项目清单，因此本节不提出建设强度、建筑高度、拆除数量或红线承诺；这些数据到位后必须由规划、建筑、市政、消防和交通专业人员复核。
-
-## 重点区域详细设计
-
-众智园承担安全测试，AI 原点承担无障碍等价服务，大钟寺承担换乘与活动日分流；每处都绑定场景、责任、数据最小化和停止条件。[depth:three_key_area_detailed_design] [data:geometry/key_areas.geojson#PROV-KEY-001] [source:BEIJING-ACCESSIBILITY-REGULATION]。众智园首先验证急停、视线、低速服务和维护者接管，不把封闭场表现外推到社会道路；AI 原点同时提供自动与人工、电话和纸面入口，验证是否存在真正的无障碍等价服务；大钟寺把轨道、步行、骑行、货运、活动和居民归家放在同一张路缘图上，验证活动日能否保持消防与人行连续。每处节点都在 visual/assets/autonomy_nodes.json 中记录角色和低置信度，场景卡、测试门和证据交叉索引分别记录通过证据与停止动作。当前缺少现场测绘、路口信号、站口无障碍、消防通道、物流时窗和居民分层基线，因此节点是设计标记，不是许可地点；正式深化应逐点补现场照片、人工计数、障碍物清单、访谈、责任人和关闭记录。
-
-## AI 创新生态、人才画像与 AI+ 场景
-
-居民、轮椅使用者/照护者、学生、园区员工、物流维护人员、老年访客、夜班人员和儿童监护人共同参与；自动化服务必须有线下、电话和人工等价路径。[source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES] [source:NIST-HUMAN-CENTERED-AI] [standard:AUTONOMY-PUBLIC-INFRASTRUCTURE-BOUNDARY]。画像不是营销标签，而是验收责任：轮椅使用者需要连续坡道、停歇和可替代路线，照护者需要同时处理儿童与行李，夜班人员需要低照度但可理解的归家链，维护人员需要资产 ID、物理急停和明确的清场权，学生和企业需要可公开的安全摘要，居民需要不被迫交出连续轨迹才能获得服务。场景 JSON 因此记录用户、数据最小化、接受条件和停止条件；指标上重点观察分组完成率、等待、拒绝、投诉和等价人工服务，而不是单一平均满意度。当前缺少分层问卷、参与者同意流程、语言/听觉/视觉辅助需求和长期申诉样本，不能宣称公平或满意度提升；正式项目必须由公共服务、无障碍、隐私和社区参与专业人员共同设计测试。
-
-## 用地、建筑规模与拆改留方案
-
-本包保留既有 provisional 用地和建筑底盘，不借自动驾驶叙事伪造开发强度或拆改承诺；建筑与面积在官方数据发布后复算。[depth:retain_renovate_demolish] [metric:building_footprint_ratio] [source:MNR-LAND-USE-CLASSIFICATION-GUIDE]。自动驾驶普及后的空间规划优先使用既有道路、站点、公共建筑、树荫和服务台的可逆改造，不默认新建车库、专用道路、围栏、机房或大型地标。建筑层面的设计意图是把首层入口、无障碍卫生间、等候点、充电/维护和人工接管空间作为公共服务接口，而不是把楼宇外观当作技术证明；几何上要回接 buildings、land_use、public_space 和 constraints，指标上要复核 footprint、面积、用地兼容性、消防和维护距离。当前没有完整建筑现状、权属、结构、设备、地下空间、停车和成本资料，不得提出拆除数量、容积率、建筑高度或投资金额；后续需用正式招标/设计深度资料和现场调查逐栋核查。
-
-## 交通、轨道、市政与公共服务设施
-
-步行、轮椅、骑行、轨道换乘、消防和维护主链优先，自动化只是路缘服务层；慢行网络、交通筛查和市政设施均不等于工程线位或容量证明。[depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001] [source:BEIJING-SLOW-MOBILITY]。设计意图是先找出最后 300—800 米的断点、过街冲突、路缘占用、站口无障碍和活动日溢出，再用人工计数、走行审计和可逆标识决定是否试验；自动化服务不新增社会道路容量，不把北京其他区域的测试速度、事故率或通行时间迁移为海淀结论。几何上，roads、public_space、key areas、constraints 和新节点数据只表达关系和候选审计点；指标上，慢行长度、站点数量、crossing 数量、等待、冲突和连续性必须标注数据来源与置信度。当前缺少官方路权、信号配时、交叉口断面、公共交通客流、停车/装卸、管线和消防核验，后续必须由交通、市政、轨道、无障碍和应急专业团队共同现场确认。
-
-## 蓝绿空间、公共空间与城市风貌
-
-蓝绿系统保留风、雨、热、暗夜、鸟类和公共活动的验证入口，图层用于设计讨论而不是现状健康或生态效果证明。[depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [source:BEIJING-VENTILATION-NETWORK-2035] 设计意图是把自动驾驶服务限制在不打断连续步行、轮椅和维护路线的可逆界面内：树荫、雨水花园、开放空间、照明和路缘状态共同决定何时可以试点、何时必须转人工。几何上，green_space、public_space、roads、constraints 与节点 JSON 只表达蓝绿联系、候选审计点和回退关系，不推出生态红线、排水能力或健康收益；指标上，绿地比例、公共空间比例、可达路线连续性、积水/热风险和暗夜影响必须分别从图层、现场记录和专业模型复算，不能用效果图或论文案例替代。当前缺少逐点树木与鸟类基线、雨洪断面、微气候实测、照度、夜间人流和无障碍体验，故本节把风热、污染、排水、生态和健康结果保留为 unknown 或 design_target；正式深化时需由园林、生态、排水、交通、无障碍和公共卫生专业人员共同复核，并将不通过条件写入停止/撤场记录。
-
-## 更新项目清单、实施政策与分期计划
-
-P0 做路缘与无障碍审计，P1 只在批准且有人值守的窗口做低速试验，P2 只有在安全、交通、生态、隐私、参与和保险均通过后才条件扩展。[depth:renewal_project_list] [depth:phasing_implementation] [source:BEIJING-ROAD-MAINTENANCE-2026]。项目清单采用政府招标文件常见的“工作包—成果—验收—责任—缺口”逻辑：P0 交付路缘台账、无障碍路线、人工服务方案、数据与申诉规则；P1 交付批准边界内的测试方案、现场安全员、急停/接管记录、事件日志和月度公开摘要；P2 只在专业评审、居民参与、生态/隐私、保险、成本与维护责任均有书面证据后讨论扩展。几何上每一阶段都应可由节点、路缘状态和 phasing 回读，指标上每一阶段都应有通过门和停止条件，不能以宣传活动或用户数量替代验收。当前缺少招标范围、投资来源、采购方式、运营主体、SLA、维护预算和应急联络，故本包只给出设计任务书级的阶段框架，不给出中标、施工或运营承诺。
-
-## 指标体系、面积复算与合规矩阵
-
-当前已知与可回读指标包括底盘面积、公共空间比例、重点区数量和自动驾驶准备度指标；完整键名、单位、公式、状态和来源文件以 `metrics.json` 为准。未知指标不转写为“已达标”。[metric:site_area_sqm] [metric:autonomy_metric_count] [depth:metrics_recalculation]。结构化矩阵另行记录标准、设计深度和回退条件，避免把未来目标读成现场结果。
-
-![核心区域公共性分工与停止条件](assets/figures/key-areas.png)
-![用地和空间分层及人工回退](assets/figures/land-use-structure.png)
-
-## 风险、版权与合规说明
-
-本包不替代道路测试许可、安全评估、车辆认证、交通组织、消防、保险、隐私影响评估、生态审查或施工图。[depth:risk_missing_data] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [source:BEIJING-AV-SAFETY-ASSESSMENT-2025]
-
-完整来源索引、publisher、用途边界和访问信息以本包 `sources.json` 为准；正文只保留可读层的代表性锚点。[source:SOURCE-REGISTRY] [source:AUTONOMY-DESIGN-BASE] [source:AUTONOMY-GATE-REGISTER]
-
-完整标准与设计深度交叉索引以 `standard_matrix.json`、`design_depth_matrix.json` 为准；正文只在对应论点附近保留锚点。[standard:AUTONOMY-PUBLIC-INFRASTRUCTURE-BOUNDARY] [depth:metrics_recalculation] [depth:risk_missing_data]

@@ -2,9 +2,8 @@
 
 ## v2.7 - 2026-08-09
 
-- Persisted the exact current-branch self-check result with a UTC timestamp, generator revision, four gate summaries and the formal-review readiness state.
-- Refreshed the manifest hashes for `self_check.json` and this changelog; no geometry, metric, permit, deployment or ranking claim changed.
-- Kept the provisional site boundary and key-area precision limits explicit; the remaining boundary warning is still non-blocking and not an official redline claim.
+- Removed the stale duplicated Chinese proposal tail left after the v2 readable surface and reduced both bilingual reference sections to a pointer to `sources.json` with claim-adjacent anchors only.
+- Regenerated both offline reports after the cleanup; no geometry, metric status, permit, deployment or ranking claim changed.
 
 ## v2.6 - 2026-08-09
 
