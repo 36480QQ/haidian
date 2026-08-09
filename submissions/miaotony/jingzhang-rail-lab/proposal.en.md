@@ -229,7 +229,7 @@ The root of the Jingzhang cultural narrative is the Jingzhang Railway completed 
 
 ### Naming System and Logo Direction
 
-**Primary name**: 京张长实验; **English name**: JINGZHANG OPEN LAB. The character 长 ("long/lasting/growing") carries three meanings: length in space — a 9-km linear experiment field; length in time — a century-long scroll from 1909 to the AI era; and growth — the proposal itself is a continuously iterating, never-finished open experiment. "OPEN LAB" states the methodology of open source and open co-creation outright.
+**Primary name**: 京张开放实验室; **English name**: JINGZHANG OPEN LAB. The character 长 ("long/lasting/growing") carries three meanings: length in space — a 9-km linear experiment field; length in time — a century-long scroll from 1909 to the AI era; and growth — the proposal itself is a continuously iterating, never-finished open experiment. "OPEN LAB" states the methodology of open source and open co-creation outright.
 
 **Sub-naming system**: the three pilgrimage landmarks are named along "release — origin — bell" (Zhongzhiyuan Open-Source Release Plaza, AI Origin Memorial Plaza, Dazhongsi Model Bell Tower Plaza); nodes along the line uniformly adopt the sequence "Jingzhang · Test Field No. X," echoing the railway's milestone tradition.
 
