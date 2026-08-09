@@ -149,3 +149,35 @@ Primary risks: provisional boundaries misread as formal, conceptual metrics misr
 Core evidence: `geometry/*.geojson`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json`. All area calculations via EPSG:4548. Provisional boundaries for conceptual discussion only.
 
 > This document is a conceptual proposal for professional deepening. It does not constitute statutory planning, professional design, government approval, or project commitment.
+
+## Project Responsibility Matrix (Conceptual)
+
+> ⚠️ PROVISIONAL: All roles, phases, and resource estimates are conceptual frameworks only.
+
+| Project | Lead Entity | Review Path | Investment Level | Stage Gate | Maintenance | Stop Condition |
+|---------|------------|-------------|-----------------|------------|-------------|----------------|
+| JZ-01 Jing-Zhang Public Spine Landscape | District platform + design team | Planning/Landscape/Transport/Heritage | Medium (public) | Approved plan + public consultation | District operations | Safety failure / public satisfaction <60% |
+| JZ-02 Zhongzhiyuan Open Engineering Lab | District + university consortium | Planning/Construction/SciTech/Safety | Medium-High (mixed) | Safety red-zone approval + test permit | Joint operations body | Safety incident / 2 consecutive quarters KPI failure |
+| JZ-03 AI Origin Community Renewal | District + community entity | Planning/Housing/Community hearing | Medium (public + social) | Renewal plan + resident consent | Community + property | Resident vote rejection / rent pressure exceeded |
+| JZ-04 Dazhongsi Station Integration | District + transit company | Planning/Transport/Rail/Commercial | High (TOD) | Rail safety approval + commercial feasibility | Transit + commercial JV | Rail safety review failure |
+| JZ-05 Shaft Verification Platform | District + third-party assessor | SciTech/Data/Safety/Ethics | Medium (public + research) | Data governance plan + ethics approval | Third-party assessor | Data breach / 2 consecutive ethics failures |
+| JZ-06 Seasonal Event Operations | District + event operator | Culture/Emergency/Publicity | Low-Medium (public + commercial) | Safety plan + insurance + community consent | Event operator | Safety incident / fiscal unsustainability |
+
+## Annual Activity Calendar (Conceptual)
+
+| Season | Activity | Month | Participants | Output | Resources |
+|--------|----------|-------|-------------|--------|-----------|
+| **Spring·Opening** | Annual scenario proposal call | Mar | Innovators/enterprises/community | Scenario proposal library | Review committee + platform ops |
+| Spring | Public evaluation criteria consultation | Apr | Public/experts/community | Criteria revision | Online platform + workshops |
+| Spring | Safety red-zone annual publication | May | Safety committee | Red-zone definition update | Experts + data + legal review |
+| **Summer·Verification** | City Verification Week | Jun | Innovators/public/media | Controlled test reports | Venues + safety officers + equipment |
+| Summer | Multi-face parallel verification | Jul | Innovators/assessors | Interim assessment reports | Evaluation platform + data platform |
+| Summer | Community deliberation season | Aug | Residents/community orgs | Deliberation resolutions | Community workers + venues |
+| **Autumn·Commons Week** | Global Developer Festival | Sep | Global developers/enterprises/public | Demos + collaboration agreements | Venues + promotion + services |
+| Autumn | Three-core results exhibition | Oct | Three core operators | Annual results report | Exhibition + reception |
+| Autumn | Public value assessment | Nov | Assessment committee | Annual contribution ratings | Data + experts |
+| **Winter·Backfill** | Public value review | Dec | Public/experts/media | Annual review report | Open platform + workshops |
+| Winter | Non-compliant shaft backfill | Jan | Operators/assessors | Backfill resolution + resource recovery | Legal + financial review |
+| Winter | Next-year standards development | Feb | Standards committee | Standards draft | Data + experts + public feedback |
+
+> All activities are conceptual proposals. Formal events require safety approval, insurance, community notification, and emergency plans.
