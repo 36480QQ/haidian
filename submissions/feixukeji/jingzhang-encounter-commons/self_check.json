@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "Repository deterministic validator was run on the completed bilingual package; final run remains authoritative."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/*.geojson and metrics.json",
+      "message": "Topology and metric recomputation pass; provisional key-area notices remain visible non-blocking limitations."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "major",
+      "target": "figures, HTML, A3/A0 PDFs",
+      "message": "All display materials are non-empty, offline, bilingual, and carry the provisional-boundary status."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal and matrices",
+      "message": "Required sections map to sources, standards, depth items, geometry, metrics, assumptions, and self-checks."
+    },
+    {
+      "check_id": "BILINGUAL_PARITY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "Chinese/English display pairs",
+      "message": "Section order, claims, scenario counts, metrics, source IDs, figure positions, PDF page counts, and boundary warnings are paired."
+    },
+    {
+      "check_id": "BOUNDARY_PROVISIONAL",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "The package consistently states that site and key-area polygons are provisional and require full recomputation."
+    },
+    {
+      "check_id": "PRIVACY_HUMAN_GATE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal scenario and governance sections",
+      "message": "AI matches authorised public tasks/resources only; human release, minimum data, expiry, appeal, and non-AI alternatives are explicit."
+    }
+  ]
+}

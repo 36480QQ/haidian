@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_geometry",
+      "statement": "The submitted site polygon is provisional rough geometry, not an official redline.",
+      "impact": "All derived areas, ratios, positions, and drawings must be recomputed when official geometry is supplied.",
+      "validation": "Keep official_boundary=false and a visible provisional warning in every display artifact."
+    },
+    {
+      "id": "A-KEYAREA-001",
+      "status": "pending_official_geometry",
+      "statement": "The three key-area polygons are provisional task frames derived from announced order and approximate areas.",
+      "impact": "They support relative concept design only and cannot define parcels or precise intervention locations.",
+      "validation": "Select final sites only after official polygons and field checks."
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Statutory controls, road redlines, rail alignments, municipal capacity, height, FAR, and underground conditions are unavailable.",
+      "impact": "These values remain unknown; the package does not make statutory or engineering conclusions.",
+      "validation": "Qualified teams must review official planning and specialist surveys."
+    },
+    {
+      "id": "A-SITE-VERIFY-001",
+      "status": "pending_field_survey",
+      "statement": "Building envelopes and public-space nodes are conceptual carrier types, not verified existing footprints or ownership records.",
+      "impact": "No retain-renovate-demolish or permanent siting decision may be inferred.",
+      "validation": "Check ownership, current use, structure, fire, accessibility, heritage, noise, and operator before activation."
+    },
+    {
+      "id": "A-DATA-001",
+      "status": "design_governance_commitment",
+      "statement": "AI matches authorised tasks, spaces, time slots, and resources—not people or relationships.",
+      "impact": "No biometric, contact-list, precise trajectory, emotional-state, or relationship profiling is permitted.",
+      "validation": "Human host, minimum data, expiry deletion, explainability, appeal, and account-free equivalent are mandatory."
+    },
+    {
+      "id": "A-PILOT-001",
+      "status": "concept_target",
+      "statement": "Ninety days is a design window for a reversible AI Origin pilot, not an approved schedule.",
+      "impact": "Dates, hosts, budget, capacity, and permissions remain to be agreed.",
+      "validation": "Start only with named operator and completed site, safety, access, and data review."
+    },
+    {
+      "id": "A-OPERATIONS-001",
+      "status": "pending_agreements",
+      "statement": "The operating seats, programme cadence, and project owners are proposed governance roles.",
+      "impact": "They do not imply government, venue, enterprise, or community commitment.",
+      "validation": "Confirm each host, responsibility, budget, approval, complaint path, and stop rule independently."
+    },
+    {
+      "id": "A-COST-001",
+      "status": "unknown",
+      "statement": "Investment, operating cost, procurement, financing, and development timing have not been estimated.",
+      "impact": "No fiscal or investment commitment is claimed.",
+      "validation": "Prepare an independent cost and funding plan after scope and approvals are known."
+    },
+    {
+      "id": "A-ACCESS-001",
+      "status": "pending_field_and_transport_review",
+      "statement": "The spine and six connectors represent accessibility questions, not new road, rail, bridge, or tunnel alignments.",
+      "impact": "Crossings and station interfaces cannot be implemented from this diagram.",
+      "validation": "Undertake field audit and transport, engineering, ownership, and safety review."
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_heritage_review",
+      "statement": "Landmark and cultural-interface locations are conceptual and use only verified public history.",
+      "impact": "No heritage fabric or controlled area may be altered without review.",
+      "validation": "Heritage specialists and relevant authorities review content, material, location, and event use."
+    },
+    {
+      "id": "A-TEST-001",
+      "status": "pending_test_approval",
+      "statement": "Model, robot, and public test settings are bounded concepts, not approved operations.",
+      "impact": "No production connection or uncontrolled public test is allowed.",
+      "validation": "Use public/synthetic data, isolation, safety lead, human release, logging, and immediate stop capability."
+    },
+    {
+      "id": "A-BRAND-001",
+      "status": "original_design",
+      "statement": "The open-ring and twin-rail identity is an original schematic generated for this submission.",
+      "impact": "It does not represent or imitate an official, corporate, or railway mark.",
+      "validation": "Retain source and rights statement; professional identity design may refine it later."
+    }
+  ]
+}
