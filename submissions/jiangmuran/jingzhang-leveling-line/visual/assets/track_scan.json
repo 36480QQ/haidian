@@ -5,13 +5,14 @@
   "robotics-autonomous-mobility",
   "ai-public-services"
  ],
- "proposals_in_tracks": 36,
+ "proposals_in_tracks": 38,
  "proposals": [
   "147228",
   "2503668375-boop",
   "4210666",
   "7annnnnnn",
   "BE-hop",
+  "Cashmeran",
   "CatNebulaaaa",
   "Clay-HHK",
   "Currrrrrry",
@@ -21,6 +22,7 @@
   "Komeiji-Shiki",
   "LaoFang114514",
   "Margin-del",
+  "Restless-One",
   "Sijie-Yang",
   "Warma10032",
   "XuejiFang",
@@ -51,7 +53,7 @@
   "ice_and_low_temperature": {
    "pattern": "冰雪|结冰|积雪|除雪|低温|严寒|冬季.{0,6}(运行|通行|停运)",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.0263,
    "matched": [
     "jiangmuran"
    ]
@@ -59,7 +61,7 @@
   "noise_as_a_number": {
    "pattern": "分贝|dB|噪声.{0,8}(限值|标准|上限|阈值)|声环境质量标准",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.0263,
    "matched": [
     "jiangmuran"
    ]
@@ -67,7 +69,7 @@
   "jurisdictional_seams": {
    "pattern": "管辖|权属交界|交界处|跨界.{0,6}(通行|责任)|公园管理.{0,6}(边界|权)",
    "proposals_matching": 2,
-   "share": 0.0556,
+   "share": 0.0526,
    "matched": [
     "7annnnnnn",
     "jiangmuran"
@@ -76,7 +78,7 @@
   "fleet_density_ceiling": {
    "pattern": "(承载|通行).{0,6}上限|每米.{0,6}小时|车队.{0,4}(规模|上限|密度)|投放.{0,4}上限",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.0263,
    "matched": [
     "jiangmuran"
    ]
@@ -84,7 +86,7 @@
   "emergency_access_yielding": {
    "pattern": "消防(通道|车道)|救护车|应急车道|急救.{0,4}让行|生命通道",
    "proposals_matching": 3,
-   "share": 0.0833,
+   "share": 0.0789,
    "matched": [
     "147228",
     "DENGDixin",
@@ -94,7 +96,7 @@
   "wheelchair_passing": {
    "pattern": "轮椅.{0,10}(通过|会车|错车|并行|回转)",
    "proposals_matching": 3,
-   "share": 0.0833,
+   "share": 0.0789,
    "matched": [
     "ItsVeyra",
     "jiangmuran",
@@ -103,10 +105,11 @@
   },
   "appeal_time_limit": {
    "pattern": "(答复|反馈|处理).{0,6}(时限|期限)|\\d+\\s*个?工作日",
-   "proposals_matching": 5,
-   "share": 0.1389,
+   "proposals_matching": 6,
+   "share": 0.1579,
    "matched": [
     "CatNebulaaaa",
+    "Restless-One",
     "Warma10032",
     "chucky1102",
     "jiangmuran",
@@ -115,12 +118,14 @@
   },
   "removal_bond_or_insurance": {
    "pattern": "保证金|押金|保险|风险转移|理赔",
-   "proposals_matching": 9,
-   "share": 0.25,
+   "proposals_matching": 11,
+   "share": 0.2895,
    "matched": [
     "147228",
     "BE-hop",
+    "Cashmeran",
     "Currrrrrry",
+    "Restless-One",
     "Warma10032",
     "chucky1102",
     "creeperCN",
@@ -132,7 +137,7 @@
   "control_segment": {
    "pattern": "对照(街段|组|段)|准实验|对照评估",
    "proposals_matching": 4,
-   "share": 0.1111,
+   "share": 0.1053,
    "matched": [
     "Komeiji-Shiki",
     "chucky1102",

@@ -1,95 +1,95 @@
 {
  "retrieved": "2026-08-09",
- "corpus_size": 338,
+ "corpus_size": 347,
  "authoritative_source": "git tree",
  "gallery_index_count": 309,
- "missing_from_gallery_index": 29,
+ "missing_from_gallery_index": 38,
  "track_declarations": {
-  "ai-traffic-walkability": 228,
-  "civic-agent-governance": 221,
-  "enterprise-services-ecosystem": 200,
-  "jingzhang-heritage-narrative": 130,
-  "ai-origin-community": 106,
-  "ai-public-services": 30,
-  "youth-friendly-public-space": 28,
-  "robotics-autonomous-mobility": 14
+  "ai-traffic-walkability": 234,
+  "civic-agent-governance": 227,
+  "enterprise-services-ecosystem": 205,
+  "jingzhang-heritage-narrative": 137,
+  "ai-origin-community": 110,
+  "youth-friendly-public-space": 32,
+  "ai-public-services": 32,
+  "robotics-autonomous-mobility": 16
  },
  "tracks_with_no_declared_proposal": [],
- "proposals_declaring_no_known_track": 14,
+ "proposals_declaring_no_known_track": 11,
  "structural_convergence": {
   "three_cores": {
-   "count": 171,
-   "share": 0.5059
+   "count": 175,
+   "share": 0.5043
   },
   "two_wings": {
-   "count": 134,
-   "share": 0.3964
-  },
-  "evidence_chain": {
-   "count": 105,
-   "share": 0.3107
+   "count": 136,
+   "share": 0.3919
   },
   "one_spine": {
-   "count": 102,
-   "share": 0.3018
+   "count": 106,
+   "share": 0.3055
+  },
+  "evidence_chain": {
+   "count": 106,
+   "share": 0.3055
   },
   "reversible": {
-   "count": 55,
-   "share": 0.1627
+   "count": 58,
+   "share": 0.1671
   },
   "landmark": {
-   "count": 55,
-   "share": 0.1627
+   "count": 57,
+   "share": 0.1643
   },
   "scenario_cards": {
-   "count": 52,
-   "share": 0.1538
+   "count": 54,
+   "share": 0.1556
   },
   "personas": {
-   "count": 25,
-   "share": 0.074
+   "count": 26,
+   "share": 0.0749
   }
  },
  "meta_symbol_saturation": {
   "证明/验证": {
-   "count": 97,
-   "share": 0.287
+   "count": 99,
+   "share": 0.2853
   },
   "脉/血脉": {
-   "count": 93,
-   "share": 0.2751
+   "count": 95,
+   "share": 0.2738
   },
   "铁轨/线路/轨道": {
-   "count": 39,
-   "share": 0.1154
+   "count": 40,
+   "share": 0.1153
   },
   "人字形/折返": {
    "count": 27,
-   "share": 0.0799
+   "share": 0.0778
   },
   "公地/commons": {
    "count": 22,
-   "share": 0.0651
+   "share": 0.0634
   },
   "契约/协议": {
    "count": 22,
-   "share": 0.0651
+   "share": 0.0634
   },
   "缝合/织补": {
    "count": 21,
-   "share": 0.0621
+   "share": 0.0605
   },
   "交接/接力": {
    "count": 10,
-   "share": 0.0296
+   "share": 0.0288
   },
   "校准/基准": {
    "count": 8,
-   "share": 0.0237
+   "share": 0.0231
   },
   "测量/水准": {
    "count": 2,
-   "share": 0.0059
+   "share": 0.0058
   },
   "闭塞/令牌": {
    "count": 0,
@@ -97,27 +97,27 @@
   }
  },
  "model_declarations": {
-  "未披露（占位符或空）": 102,
+  "未披露（占位符或空）": 104,
+  "OpenAI Codex (GPT-5)": 22,
   "GPT-5": 22,
-  "OpenAI Codex (GPT-5)": 21,
   "GPT-5 Codex": 17,
   "claude-opus-5": 12,
   "claude-fable-5": 11,
-  "OpenAI Codex (GPT-5 family)": 10,
-  "OpenAI Codex": 7,
+  "OpenAI Codex (GPT-5 family)": 11,
+  "OpenAI Codex": 8,
+  "deepseek-v4-flash": 8,
   "GPT-5 (Codex)": 7,
-  "deepseek-v4-flash": 7,
   "OpenAI GPT-5 Codex": 4,
   "OpenAI GPT-5 (Codex)": 4,
   "gpt-5.6-sol": 4,
   "GPT-5.6 Sol": 4,
   "OpenAI GPT-5 family via Codex": 3,
+  "OpenAI Codex / GPT-5": 3,
   "GPT-5.6 Codex": 2,
   "gpt-5.3-codex": 2,
   "glm-5.2": 2,
   "GPT-5.6": 2,
   "OpenAI Codex GPT-5": 2,
-  "OpenAI Codex / GPT-5": 2,
   "Kimi-K3": 2,
   "GPT-5.6 Pro": 2,
   "Codex GPT-5": 1,
@@ -125,6 +125,7 @@
   "claude-opus-5 (Cursor Agent)": 1,
   "OpenAI GPT-5 via Codex": 1,
   "codex-agent-declared": 1,
+  "deepseek": 1,
   "OpenAI Codex, GPT-5 series": 1,
   "GPT-5 (Codex desktop agent)": 1,
   "GPT-5.6 Sol Pro": 1,
@@ -140,6 +141,7 @@
   "claude-sonnet-4.5": 1,
   "kimi-k3 + claude-code workflow": 1,
   "gpt-5 (OpenAI Codex) - agent-declared": 1,
+  "OpenAI GPT-5.6 (pi coding agent)": 1,
   "OpenCode / GPT-5.6-sol": 1,
   "Cursor Grok / multi-agent drafting": 1,
   "Hermes Agent (DeepSeek V4 Pro), delegation via Claude Code & Codex CLI": 1,
@@ -159,6 +161,7 @@
   "reasonix hosted-LLM assistant (exact base model provided by the execution environment; iteration record in PR bodies and changelog)": 1,
   "GPT-5.6 Codex + GPT Image 2": 1,
   "ds/deepseek-v4-flash": 1,
+  "WorkBuddy (Claude-family reasoning)": 1,
   "GLM (Z.ai)": 1,
   "builtin:bigmodel-coding-plan/GLM-5.2": 1,
   "claude-fable-5 (authoring) + claude-opus-5 (setup), via Claude Code": 1,
@@ -204,27 +207,26 @@
   "Cursor Grok 4.5": 1,
   "OpenAI Codex (GPT-5 class)": 1,
   "deepseek-v4-pro (multi-agent pipeline)": 1,
-  "OpenAI Codex (GPT-5; current task agent)": 1,
   "GPT-5 family": 1,
   "OpenAI GPT-5": 1
  },
- "model_declaration_writings": 109,
+ "model_declaration_writings": 111,
  "model_family_count": 8,
  "model_families": {
-  "GPT / Codex": 151,
-  "Claude": 37,
-  "DeepSeek": 17,
+  "GPT / Codex": 155,
+  "Claude": 38,
+  "DeepSeek": 19,
   "其他 / 无法归类": 16,
   "GLM / Zhipu": 5,
   "Kimi / Moonshot": 4,
   "Grok": 4,
   "Qwen": 2
  },
- "undisclosed_model_count": 102,
- "undisclosed_model_share": 0.3018,
+ "undisclosed_model_count": 104,
+ "undisclosed_model_share": 0.2997,
  "proposal_bytes": {
   "min": 17607,
-  "median": 36806,
+  "median": 36822,
   "max": 195890
  },
  "caveats": [
