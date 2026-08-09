@@ -676,7 +676,19 @@ Land use follows the classification conventions of [standard:MNR-LAND-USE-CLASSI
 
 ### Land use is a complete partition, not scattered zones
 
-Regulatory-plan depth requires land use to cover the site, not to place a few functions on top of it. This package's `land_use.geojson` is therefore a **complete, non-overlapping partition of the overall design area**: five functional classes are clipped in priority order with successive differencing, the remainder forms its own class, and the whole thing is generated deterministically by script so that spatial self-check can verify it is free of both overlaps and gaps.
+Regulatory-plan depth requires land use to cover the site, not to place a few functions on top of it. This package's `land_use.geojson` is therefore a **complete, non-overlapping partition of the overall design area**: five functional classes are clipped in priority order with successive differencing, and the remainder is cut into blocks along the arterials that actually run through the site. All of it is generated deterministically by script.
+
+**"Verifiable" is not an adjective here; it is a set of numbers.** Sixteen features, measured in EPSG:4548:
+
+| Check | Measured |
+|---|---|
+| Total feature area | 11,412,825.4 m² |
+| Difference from the design area | **0.000 m²** |
+| Sum of pairwise overlaps | **0.000 m²** |
+| Gap inside the boundary | **0.000 m²** |
+| Spill outside the boundary | **0.000 m²** |
+
+**Why the blank remainder is cut into blocks.** It used to be one polygon covering most of the design area, which reads as an absence of work rather than as a decision to leave something alone. It is now **eleven blocks** (1.3 ha to 228.4 ha) following the arterials measured on the ground, and **every block is still code 16 and still says "left blank by this proposal"** — the cut shows the block grain the existing street network already creates and asserts no new use. Block edges are not parcels, not ownership boundaries and not road redlines. The topology was re-measured after the cut and overlap and gap are still zero: **a partition that stops closing is worse than a coarse one.**
 
 | Land use | Code | Basis for position |
 |---|---|---|

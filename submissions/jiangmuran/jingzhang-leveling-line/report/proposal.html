@@ -403,7 +403,10 @@ code {
 <h2>用地、建筑规模与拆改留方案</h2>
 <p>用地布局按 <span class="evidence evidence-standard">[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</span> 的分类口径组织，图层见 <span class="evidence evidence-data">[data:geometry/land_use.geojson#LANDUSE-001]</span>，建筑基底见 <span class="evidence evidence-data">[data:geometry/buildings.geojson#BUILDING-001]</span>，复算面积见 <span class="evidence evidence-metric">[metric:building_footprint_area_sqm]</span> 与 <span class="evidence evidence-metric">[metric:site_area_sqm]</span>。</p>
 <h3>用地是完整剖分，不是散点分区</h3>
-<p>控规深度要求用地覆盖场地而非在场地上点几处功能。本包的 <code>land_use.geojson</code> 因此是**总体设计范围的完整无重叠剖分**：五类功能用地按优先级顺序逐一裁剪并做差集，余量单独成一类，全部由脚本确定性生成，空间自检可验证其无重叠、无缺口。</p>
+<p>控规深度要求用地覆盖场地而非在场地上点几处功能。本包的 <code>land_use.geojson</code> 因此是**总体设计范围的完整无重叠剖分**：五类功能用地按优先级顺序逐一裁剪并做差集，余量再按现状干道切分为街区，全部由脚本确定性生成。</p>
+<p>**「可验证」不是形容词，是一组数**。当前 **16 个要素**，在 EPSG:4548 下实测：</p>
+<div class="proposal-table"><table><thead><tr><th>检验项</th><th>实测值</th></tr></thead><tbody><tr><td>要素总面积</td><td>11,412,825.4 m²</td></tr><tr><td>与总体设计范围之差</td><td>**0.000 m²**</td></tr><tr><td>两两重叠面积合计</td><td>**0.000 m²**</td></tr><tr><td>范围内缺口面积</td><td>**0.000 m²**</td></tr><tr><td>越出范围面积</td><td>**0.000 m²**</td></tr></tbody></table></div>
+<p>**留白部分为什么要切成街区。** 此前余量是一整块覆盖大半个设计范围的多边形——那读起来像「没做」，而不像「决定留白」。现按 OSM 实测干道在范围内的走向切分为 **11 个街区**（面积 1.3 ha 至 228.4 ha），**每一块仍为代码 16、仍是「本方案对该范围留白」**：切分只呈现现状路网造成的街区肌理，不新增任何用途断言。街区边界不是地块划分、不是权属边界、不是道路红线。切分后重新实测拓扑，重叠与缺口仍为 0——**一个切不闭合的剖分，比一个粗的剖分更糟。**</p>
 <div class="proposal-table"><table><thead><tr><th>用地</th><th>代码</th><th>落位依据</th></tr></thead><tbody><tr><td>文化用地</td><td>0803</td><td>水准原点标石与公共证据厅所在，BM-0 核心</td></tr><tr><td>AI研发与科研用地</td><td>0802</td><td>众智园一等水准点范围</td></tr><tr><td>社区服务与人才配套</td><td>0702</td><td>AI原点社区范围</td></tr><tr><td>产业服务与商业服务</td><td>05</td><td>大钟寺高频读数点范围</td></tr><tr><td>公园绿地与开敞空间</td><td>1401</td><td>主脊绿廊</td></tr><tr><td>**本方案留白范围**</td><td>**16**</td><td>上述之外的现状城市建成区</td></tr></tbody></table></div>
 <p>最后一行需要解释清楚，否则容易被误读。代码 16（留白用地）在此**表示「本方案对该范围留白」，不是声称该范围在法定意义上已被划为留白用地**。这一区别写入了图层属性 <code>note_zh</code>。选择留白而不是填入推定用途，是因为该范围内的用途细分取决于官方控规条件、权属核定与结构安全评估，三者目前均为数据缺口——在缺口上填入用途，就是把设计意图冒充为已确定管控。</p>
 <h3>测点用地的公共性：一条会否决选址的规则</h3>
