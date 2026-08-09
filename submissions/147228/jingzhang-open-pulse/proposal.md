@@ -7,12 +7,12 @@ summary: "以京张遗址公园为公共底板、三处重点区为创新节点�
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.5"
+iteration: "v3.6"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **包版本说明：** 本包迭代为 v3.5；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.5 延续 v3.4 的公开元数据中性化，并修复双语 A0 展板版式、辅助图件版本标识和临时边界交接披露；不改变空间对象、指标、来源等级或实施边界。
+> **包版本说明：** 本包迭代为 v3.6；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.6 延续 v3.5 的双语、版权、临时边界交接和来源边界，并把既有 S02 合成测试窗口压成可离线复演的停止—恢复演练；不改变空间对象、指标、来源等级或实施边界。
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
 
@@ -52,6 +52,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **首个 90 天的建议顺序（不是已确定的实施时序）：**第 0—30 天只做 CR-01 资料/场地锁定、现场基线和权利责任清单；第 31—60 天在 CR-01 通过后做 CR-02 被动构件样机与 CR-03 风热水/生命线协调；第 61—90 天只有 CR-01—CR-03 全部通过、权利记录齐全且有人值守兜底时，才可考虑一个 CR-04 有界窗口。任一关键条件缺失，回到复核、返修或普通公共服务，不进入扩容。
 
 **首个可复核切片：S02 低速配送机器人合成演练（只展示合同，不声称已运行）：**锚定 `geometry/roads.geojson#ROAD-001` 的 provisional 路段，单设备、单人工观察员、一个标记回位湾，明确不做真实配送、不开放公共道路；无障碍路线必须始终保持，任何行人冲突、路线阻断、急停失效、观察员失去视线或回位湾不可用都立即停止。纸面告知、可见停止状态、无数字解释和手推车/人工配送等价路径是放行前置条件；只记录合成 run ID、路线窗口、让行/急停/回位事件，不收集个人数据，当前 `result_status=not_run`、`release_decision=hold`。完整字段见 `visual/assets/example-s02-embodied-test-window.json`；它把一个可审查的空间窗口、人工权力、数据最小化和归还普通服务压缩成一条可复核记录，不代表机器人性能、公众接受或部署许可。
+
+为避免上述记录停留在“可读合同”，本轮新增 `visual/assets/open-pulse-tabletop-contract.json`、`open-pulse-tabletop-evidence.json` 和无依赖 runner。`node visual/assets/run-open-pulse-tabletop.js --check` 只读取包内的合成 S02 记录与 4 条分支 fixture：临时路线未被专业确认、行人冲突/路宽收窄、观察员或急停不可用、以及没有现场结果的复核结束；它复演 6 项检查和 5 个回滚步骤，要求保留纸面/人工/手推车等普通等价服务、清空无障碍路线、发布 hold/withdrawal 并只删除临时 fixture 状态。为避免 runner 只查总体字符串，6 个 acceptance check 现在逐项绑定 `fixture_ids`、`scenario_ids` 或 `boundary_fields`，五个回滚步骤也各自绑定唯一 `RB` ID、fixture 和 acceptance check；runner 要求 4/4 fixtures、1/1 scenario、5/5 boundary fields、5/5 rollback steps 和唯一的 6 个 check ID 全部回接；同时把四个 fixture 状态送入确定性负回放，分别得到 hold、stop、withdraw 或 delete-temporary-state 的 `decision_class=reject_or_stop`，并加入一个普通开放路线 control replay，确认非触发输入保持 `continue_ordinary_route`，不会误拒绝。当前 evidence 为 `4/4`、`6/6`、`5/5`、`5/5`、负回放 `4/4` 和 control replay `continue`，但 `result_status=not_run`、`performance_results=null`、`operational_status=not_authorized_not_run`，所以 PASS 只证明停止、退出、恢复与非触发判别逻辑可检查，不证明机器人性能、无障碍、公众接受、值守、安全或许可 [data:visual/assets/open-pulse-tabletop-contract.json] [data:visual/assets/open-pulse-tabletop-evidence.json] [data:visual/assets/run-open-pulse-tabletop.js]。
 
 这一协议包含 [metric:civic_pulse_stage_count] 个阶段、[metric:civic_pulse_station_count] 个站点和 [metric:proof_mile_component_count] 个构件。
 
@@ -636,7 +638,6 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 
 ## 参考资料
 
-- brief/public-brief.md
 完整的任务、范围、枚举、指标、数据、标准、深度、合规和停止条件登记见 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`brief/site-package/design_brief.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/enums/`、`brief/site-package/ranges/planning_limits.json`、`data/processed/agent_fact_pack.md`、`data/processed/project_scope_summary.csv`、`data/processed/agent_task_requirements.csv`、`data/processed/source_use_matrix.csv` 和 `data/processed/missing_data_checklist.csv`。任务与处理资料的正文回链包括 [source:AGENT-TASK-REQUIREMENTS] 与 [source:MISSING-DATA-CHECKLIST]。
 
 项目范围与来源用途的正文回链包括 [source:PROJECT-SCOPE-SUMMARY] 与 [source:SOURCE-USE-MATRIX]；正文中的证据标签按 `source:*`、`standard:*`、`depth:*`、`data:*` 与 `metric:*` 分别回到这些机器可读登记。临时几何、设计目标和未来实施建议仍按前文的证据边界解释，不替代官方红线或已批准的实施承诺。

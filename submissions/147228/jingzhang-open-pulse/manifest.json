@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T10:33:09.825300Z",
+  "generated_at": "2026-08-09T22:09:59+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6e55af7e30f41091573722efff37384e34bb402dc7baa7a5a747f667f276b468"
+      "sha256": "a8e929529c263a7ef95e9bf6d91100625e1fcd4e59a4d67093e7805b0dcbe293"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7f1b65cf0619b397f70279cbc125569a08a9379a463ee7ea57e49b25f9106b00"
+      "sha256": "5d0ff2640bfbf2af9aabaee797f82feeff48d29057ccdfaf43882bd7a22dc527"
     },
     {
       "path": "agent.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7aea75189e32a9faf58a692a3cd08188bb962ff70b593878c1b45a180753070c"
+      "sha256": "7f3a9db42cb7e36aaf935f2984792540d28d7e019aad97890586455792cc7002"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "effa9f4a876d3e063e499f6d63db520eb2a595ffdf3cd63cc550b4ffa8b2d234"
+      "sha256": "d8f6622129fb5441c7d40b9c02767ba8a5cdb01296141cf7a12a4a8d90558e18"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5d5a7601c6a8c32a155b64e204d38d6d89b2eb3ff8aae6a9b98e8fc02935c617"
+      "sha256": "a01fd4d53b11da04901a18f0f8780d431df93a94e032daeeb2c97557ec9d138e"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d6fb19fcc1b25f3408becde7db3787a5311c4d06efacdf5a4c134514a9dd660d"
+      "sha256": "a100854f8f6d024e4f473ed757a2b7f9c2b09dc98b4c3a0327c0ab92905ef9fd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -485,6 +485,27 @@
       "required": false,
       "language": "zh",
       "sha256": "43230a111bf3a909b258f13644860bb8df770810f4bd01c0cec3284ddc34317f"
+    },
+    {
+      "path": "visual/assets/open-pulse-tabletop-contract.json",
+      "role": "verification_contract",
+      "required": true,
+      "language": "neutral",
+      "sha256": "3e1efd3379e4d185d8d97d4b10a39b677e42c1290707fe913c393d6238401dec"
+    },
+    {
+      "path": "visual/assets/open-pulse-tabletop-evidence.json",
+      "role": "verification_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "a4eb4aef8e9096c6460871858e87e7eb0ebd283667a815a55ea3163be23a1585"
+    },
+    {
+      "path": "visual/assets/run-open-pulse-tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e17132f98f59d5108e62d02ea5605ebac62e50e189dd9a3c28bb680c7a809a6f"
     },
     {
       "path": "visual/assets/qa-readiness.json",
