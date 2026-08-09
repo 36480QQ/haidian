@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dfda8ddaeed790dc521ddf9bcb2f1019c0c55b2b8980353167e546bb0c2c6656"
+      "sha256": "798b448174d7a87190842ff23d975c9a46e5db638d2a083fd1b3b35ad4a007ce"
     },
     {
       "path": "agent.json",
@@ -245,7 +245,7 @@
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "14e408e5d9ef2e7578e99e00d6ad1e67602ea4b3c7174af918c13e9c634e9418"
+      "sha256": "3ef6537309e55cb1656eca314ba20c8e26d489244759e14ffb57793740a5f6a9"
     },
     {
       "path": "visual/assets/census.json",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6ff3ff387bf1f0aadf29f0a67df3bdfa80dabdb00d8ed74a9361c4c99f75030e"
+      "sha256": "b577c7725db921ccb6068bf155f6e5c645fa991431b1b7700da00efe771e86c6"
     },
     {
       "path": "report/proposal.en.html",
@@ -507,10 +507,17 @@
       "required": false,
       "language": "neutral",
       "sha256": "9eabb8335f46a0609a06c0826fb6cfad967cd95d361280c9e3c2c332419b6671"
+    },
+    {
+      "path": "visual/assets/manifest_schema_survey.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7d77622aa92df3907c7c7b82f653dc1f2eddaf072a5bba7e8b52f067d0c72a16"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high"
   },
