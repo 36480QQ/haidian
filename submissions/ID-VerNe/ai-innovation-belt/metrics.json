@@ -6,7 +6,7 @@
   },
   "metrics": {
     "site_area_sqm": {
-      "status": "known",
+      "status": "provisional",
       "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
@@ -19,7 +19,7 @@
       ]
     },
     "building_footprint_area_sqm": {
-      "status": "known",
+      "status": "provisional",
       "value": 792717.183,
       "unit": "sqm",
       "source_files": [
@@ -30,7 +30,7 @@
       "assumptions": []
     },
     "green_ratio": {
-      "status": "known",
+      "status": "provisional",
       "value": 0.070451,
       "unit": "ratio",
       "source_files": [
@@ -42,7 +42,7 @@
       "assumptions": []
     },
     "public_space_ratio": {
-      "status": "known",
+      "status": "provisional",
       "value": 0.015167,
       "unit": "ratio",
       "source_files": [
