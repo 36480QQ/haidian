@@ -12,19 +12,18 @@
     "agent_name": "Codex / OPENLINE 100 Co-Design Agent",
     "model": "Cursor Agent (Claude Fable 5)"
   },
-  "generated_at": "2026-08-09T10:17:31Z",
+  "generated_at": "2026-08-09T10:55:32Z",
   "files": [
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "9f07533f654c6a0e44a2983a0d6eef9e99bec1728b2a4df7f8c57a960d664f05"
+      "required": true
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "d49d4f2715c45d5f10b42bed7c8197306850df5fc8eca3f4a1e94706ae36cbe5",
+      "sha256": "c333be50ce00d6c8f9b8583964101e542f5b516be13050c853ad6caf5e03daec",
       "language": "zh"
     },
     {
@@ -79,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "83981395870cef07def9683ab867d2f1b3f1e40c86d3a724976c512e8a188b60",
+      "sha256": "9637db5514aa2863c6a9da4e5c4ad2203f2eabb5fa89e6467f93e8f7240633a1",
       "language": "zh"
     },
     {
@@ -98,7 +97,7 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "a88a46e98c57e4cef65da4f5e415b44a5b988fc29d4b554435d8c4d64bc31737",
+      "sha256": "685f9d733d3351d06e234d10e97fba79911a1f4877fe627e22ff79b30a64fea8",
       "language": "zh"
     },
     {
@@ -112,7 +111,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "5a2c88b0ca75dbdfdb16f98273a3f1c0d8ccda404fe438f70a335c1197c51cd2",
+      "sha256": "e4d38c6565c89e1256c6e6cbfd2cb23e4e64ed72eda9f569e3e43863a5571bf6",
       "language": "zh"
     },
     {
@@ -431,7 +430,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cdeb917627ad2f3bccbba5cd42d9cd59a5d777ba08081154b1ef2903f0ae9c0a"
+      "sha256": "403fd515a8545a8da256d5853ba02af00a7468f10cf2372878c2ca6f38afca86"
     },
     {
       "path": "report/proposal.en.html",
@@ -439,7 +438,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "714f3bfd5aaa83a0a5cdc613d9e70da50e99a554a0a4c6a29f0cd2880d54cab7"
+      "sha256": "83a09d0ac031f0d9cc730697042cdb7701398c5da1d3792f75114e53806b0b07"
     },
     {
       "path": "visual/index.en.html",
@@ -469,7 +468,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "79c713817f4f7365c512daa8dd777f283cfb647ab1848ceb83a20bf0d9c18df3"
+      "sha256": "de0af9771f29012a72e521b0d754064c4e5776fc9967f24d07fc95a240a86e6e"
     },
     {
       "path": "assets/figures/scenario-day.en.png",

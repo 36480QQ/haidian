@@ -1,5 +1,26 @@
 # 方案迭代记录
 
+## v0.5.17 - 2026-08-09
+
+### 改动摘要
+
+- 硬阻断修复：`drawings/a3-booklet.pdf` 栅格重打包至 <10 MiB（约 4.5 MiB），方案改动总量回落到 40 MiB 限内。
+- `proposal.md` 补齐 `[source:CASE-TORONTO]` / `[source:CASE-PARIS]`（退出主表后的背景页引用）；同步 EN 与 report HTML。
+- `visual/index.html` 露出可见「核心指标」「自检状态」文案与导航锚点；重算 `manifest.json` 文件哈希（manifest 自身不自指 sha256）。
+
+### 采纳反馈
+
+- 现场 validator：尚不能进 formal review 的四项硬阻断 + visual 两项 major。
+
+### 暂未采纳或待复核事项
+
+- A3 为 150 dpi JPEG 栅格页，便于过体积门；若需可检索矢量/文字，下一轮用 builder 降 DPI 重渲矢量 PDF。
+- 现场约束区间仍为常识级估计，非实测净空。
+
+### 公开资料与合规说明
+
+- 本版本仅使用公开任务书和可公开资料，不包含个人隐私、非公开资料、内部图件或未审定规划控制指标。
+
 ## v0.5.16 - 2026-08-09
 
 ### 改动摘要

@@ -2,6 +2,7 @@
 title: "百年京张·AI智轴 OPENLINE 100：把创新链变成公共展示层"
 author_github: "kenshin-ai-101"
 language: "zh"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张铁路遗址公园做成海淀创新链的公共展示层——研究成果在这里被验证、被转化、被采用——全程被看见；空间上以七段空间序列的京张智轴、三台创新引擎、两翼缝合与三站三形承载，机制上以 OPENLINE 100 项目护照贯通研究到城市采用的七级链路。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -71,7 +72,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 七个全球案例，不复制建筑，转译机制
 
-对照表写的是 **本方案转译**，不是「海淀已采纳」。遴选标准只有一条：能否服务本项目三件独有物——**线性铁路遗产宿主、七级链/护照阶段门、东翼城市问题进水**；通用科技园邻接案例（如 MaRS）与巨型校园足迹（如 Saclay）退出主表，改由本地政策与七级链自身承担。[assumption:A-EXTERNAL-CASES-001]
+对照表写的是 **本方案转译**，不是「海淀已采纳」。遴选标准只有一条：能否服务本项目三件独有物——**线性铁路遗产宿主、七级链/护照阶段门、东翼城市问题进水**；通用科技园邻接案例（如 Toronto / MaRS）与巨型校园足迹（如 Paris-Saclay）退出主表，改由本地政策与七级链自身承担，仅作背景对照保留。[source:CASE-TORONTO] [source:CASE-PARIS] [assumption:A-EXTERNAL-CASES-001]
 
 - **Boston / Kendall—The Engine**：技术/IP/市场/融资就绪蓝图 + 阶段门 → 转译为驻场工程经理与护照阶段门。契合点：七级链需要人来转译，不是工位园区。[source:CASE-KENDALL]
 - **Paris / Station F**：铁路货站 Halle Freyssinet 转为创业校园 → 转译为「铁路遗产作创新宿主」的项目制开放空间。契合点：与京张同属线性铁路遗产再利用，而非另造封闭园区。[source:CASE-STATIONF]
@@ -512,14 +513,14 @@ OPENLINE 100 对任务书原名逐项响应。**三大定位**是：以 Rail→C
 
 第三组是京张铁路、公园与文保的一手公开背景，用来建立 Rail→Code→Commons 叙事和保守的文保前置，不用来推导工程线位。[source:JZ-HISTORY] [source:JZ-PARK-OFFICIAL] [source:QINGHUAYUAN-HERITAGE] 第四组是海淀区与北京市统计、政策和公开案例，用于判断区域创新、教育、医疗、绿地、慢行与研发环境；所有数据保留行政尺度和年份，不按面积折算。[source:HAIDIAN-STATS-2025] [source:HAIDIAN-ECON-CENSUS-2023] [source:HAIDIAN-EDU-AI-POLICY] [source:HAIDIAN-HEALTH-AI-2026] [source:HAIDIAN-GREEN-2024] [source:HAIDIAN-MOBILITY-2023] [source:BEIJING-RD-2024]
 
-第五组是七个国际案例的机构一手页面，用于比较成果转化、铁路遗产宿主、问题悬赏语法、真实问题验证、遗产更新、多节点治理与线性公共层；方案只转译制度，不复制图片、规模、投资或政策承诺。[source:CASE-KENDALL] [source:CASE-STATIONF] [source:CASE-NESTA] [source:CASE-SINGAPORE] [source:CASE-HELSINKI] [source:CASE-SEOUL] [source:CASE-TSUKUBA] 每条外部公开资料的 URL、发布者、访问日期、具体用途和局限，以及每条仓库资料的本地路径与用途，均登记在 sources.json；版权和许可边界见 report/copyright_statement.md。
+第五组是七个国际案例的机构一手页面，用于比较成果转化、铁路遗产宿主、问题悬赏语法、真实问题验证、遗产更新、多节点治理与线性公共层；方案只转译制度，不复制图片、规模、投资或政策承诺。[source:CASE-KENDALL] [source:CASE-STATIONF] [source:CASE-NESTA] [source:CASE-SINGAPORE] [source:CASE-HELSINKI] [source:CASE-SEOUL] [source:CASE-TSUKUBA] 另保留 Toronto / MaRS 与 Paris-Saclay 为退出主表后的背景页，不作主读对照。[source:CASE-TORONTO] [source:CASE-PARIS] 每条外部公开资料的 URL、发布者、访问日期、具体用途和局限，以及每条仓库资料的本地路径与用途，均登记在 sources.json；版权和许可边界见 report/copyright_statement.md。
 
 ### 机器可读证据索引
 
 以下索引确保评审 Agent 可从叙事回到来源、标准、深度、图层和指标；它不是用引用数量替代专业判断。
 
 
-- 来源：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:JZ-PARK-OFFICIAL]、[source:QINGHUAYUAN-HERITAGE]、[source:JZ-HISTORY]、[source:CASE-KENDALL]、[source:CASE-STATIONF]、[source:CASE-NESTA]、[source:CASE-SINGAPORE]、[source:CASE-HELSINKI]、[source:CASE-SEOUL]、[source:CASE-TSUKUBA]、[source:HAIDIAN-STATS-2025]、[source:HAIDIAN-ECON-CENSUS-2023]、[source:HAIDIAN-EDU-AI-POLICY]、[source:HAIDIAN-HEALTH-AI-2026]、[source:HAIDIAN-GREEN-2024]、[source:HAIDIAN-MOBILITY-2023]、[source:BEIJING-RD-2024]
+- 来源：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:JZ-PARK-OFFICIAL]、[source:QINGHUAYUAN-HERITAGE]、[source:JZ-HISTORY]、[source:CASE-KENDALL]、[source:CASE-STATIONF]、[source:CASE-NESTA]、[source:CASE-SINGAPORE]、[source:CASE-HELSINKI]、[source:CASE-SEOUL]、[source:CASE-TSUKUBA]、[source:CASE-TORONTO]、[source:CASE-PARIS]、[source:HAIDIAN-STATS-2025]、[source:HAIDIAN-ECON-CENSUS-2023]、[source:HAIDIAN-EDU-AI-POLICY]、[source:HAIDIAN-HEALTH-AI-2026]、[source:HAIDIAN-GREEN-2024]、[source:HAIDIAN-MOBILITY-2023]、[source:BEIJING-RD-2024]
 - 标准：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 - 深度：[depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]
 - 指标：[metric:site_area_sqm]、[metric:land_use_area_sqm]、[metric:land_use_coverage_ratio]、[metric:green_space_area_sqm]、[metric:green_ratio]、[metric:public_space_area_sqm]、[metric:public_space_ratio]、[metric:building_footprint_area_sqm]、[metric:road_centerline_length_m]、[metric:road_area_sqm]、[metric:road_ratio]、[metric:openline_length_m]、[metric:phasing_area_sqm]、[metric:key_detailed_design_area_sqm]、[metric:key_area_count]、[metric:land_use_parcel_count]、[metric:building_prototype_count]、[metric:mobility_link_count]、[metric:landmark_count]、[metric:scenario_count]、[metric:test_validation_scenario_count]、[metric:persona_count]、[metric:global_case_count]、[metric:renewal_project_count]、[metric:annual_program_count]、[metric:axis_segment_count]、[metric:display_frontage_length_m]、[metric:renzi_motif_count]、[metric:milestone_count]、[metric:strategic_interface_count]、[metric:severance_crossing_count]、[metric:water_interface_count]、[metric:intensity_scenario_count]、[metric:land_use_05_area_sqm]、[metric:land_use_0701_area_sqm]、[metric:land_use_0702_area_sqm]、[metric:land_use_0802_area_sqm]、[metric:land_use_0803_area_sqm]、[metric:land_use_0804_area_sqm]、[metric:land_use_0806_area_sqm]、[metric:land_use_1401_area_sqm]、[metric:phase_1_area_sqm]、[metric:phase_2_area_sqm]、[metric:phase_3_area_sqm]、[metric:key_area_1_calculated_sqm]、[metric:key_area_2_calculated_sqm]、[metric:key_area_3_calculated_sqm]、[metric:surgery_crossing_count]、[metric:capillary_node_count]
