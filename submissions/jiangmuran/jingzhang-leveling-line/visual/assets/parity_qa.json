@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.832,
+ "overall_ratio": 0.834,
  "floor": 0.75,
  "sections": [
   {
@@ -40,9 +40,9 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 6939,
-   "en_words": 4206,
-   "ratio": 0.773,
+   "zh_chars": 7486,
+   "en_words": 4598,
+   "ratio": 0.783,
    "pass": true
   },
   {

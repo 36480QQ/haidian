@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "63eb4b66fec55d48f28573ab98a4a78ef6d60fc951427a249e1c360a0a54c946"
+      "sha256": "9e2113aa18e1795ba0b5145cc655288fc63e585dc5c86172a917e900d135af48"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "abad06348ae375d886903fe83145f63e1118c1d428ee2f6afa62aef8c8bfae5f"
+      "sha256": "ecdc98802f6f628914e6f4c2acc1a6b898b56884c9fcbab97cb9a43eaa05d11f"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "0bd2b671d3844f68af08c4de8fc40dd9ca664a0a161aa2b89bf94ee767ef98d2"
+      "sha256": "df2307211cc3d33e2be61c9e374484a33f0bee60ce7a3023e5176c88da971a8d"
     },
     {
       "path": "visual/assets/verify.js",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ee866ad2cce2393898890e0dae05b4a6db4f6346bca9421d5cfc4e63d0a45cfd"
+      "sha256": "85f8921f27d115164f734e7fb2216aa083e67162b30a803adc2fe18dca13fed9"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "254e332462c68afd578a866625faa4043f33c8759dabd5b7c228e611876cb5ce"
+      "sha256": "0d6e1af562deceae46a40a0f570993f2adf233b15e78f2fd48e00bddb11e0cea"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3836e1695c76a0b7821f30dccf758e36ca1c6350996fb857eb5c13546d538d9a"
+      "sha256": "14a536a0ec098bbea051239e38c15cb53a36cf467725399b39c7fc6881cbc1c8"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -414,6 +414,27 @@
       "required": false,
       "language": "neutral",
       "sha256": "d67d93adf44c5743aba41954aae0407b5e10d9f47ab85ff5168845d8cfe2c430"
+    },
+    {
+      "path": "visual/assets/closure-record.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0acedbdf31933688783af9c2d522e9cf7998dcb2dc6dcfbfcb97a2f80a8cd7c4"
+    },
+    {
+      "path": "visual/assets/example-s08-closure-record.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "cd760b8fc1cf0b2510428efee1ffa740786147fcf9de74cc3340be7a2579fb8a"
+    },
+    {
+      "path": "visual/assets/check_closure.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "9c08a1593a2849d33186f9a018dc4f202cdb945c3dba8298a4c1c863831ebb63"
     }
   ],
   "validation_claim": {
