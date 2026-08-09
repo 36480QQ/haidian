@@ -116,7 +116,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "5c63175f3a9b5db2192712714df8ca2a1e755c0e896aeeb34b4fab396e087093"
+      "sha256": "ffc546eb67969cec05141e902a786b0b3ebad290ec132012a0c282803ffa44b1"
     },
     {
       "path": "compliance_matrix.json",
@@ -226,14 +226,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c09b95717b7eed6d66d82e0de2b53eac88feedc6be0bc189851fcc546882f865"
+      "sha256": "987e2186fd6888ec048e7594e4ed1263236c68ec6b8c196a9d551678aa2bdc12"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fb618c9663891550912edb6b0b576d411b4174df8246a621f7ae7d38ae326d98"
+      "sha256": "a84961fcb1e2f34f62b43db07492cae920266b3420055c01829bdaf10d81ca04"
     },
     {
       "path": "report/copyright_statement.md",
@@ -252,14 +252,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9cbd7fece850ff82506845b9228e67a9780258016412c87b7514a8048cea25ae"
+      "sha256": "8bb484aba52729d8a6128fd8f5ccdfe59e8e744da847f707a30cb399c83fad58"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "884265f32c27a002feb107ac83f6de9849b85ee130e657ccc376120b8f9ae1c3"
+      "sha256": "16baa48c7062b5d9074d7ad48c167e37e4a78fcccd14d7cfa7ae6d46ce9317cb"
     },
     {
       "path": "self_check.json",
@@ -271,7 +271,7 @@
       "path": "sources.json",
       "role": "data",
       "required": true,
-      "sha256": "2f46c1f6c473cb3e3e8cdf0076638ade6b7dbc2f9e066274b4681d50c91097de"
+      "sha256": "e4eb8b8716a30cf10f14a9e65572bee497e47d922ffed46e0ce05f9b900c6e30"
     },
     {
       "path": "standard_matrix.json",
@@ -339,7 +339,13 @@
       "path": "visual/assets/movement-simulation.json",
       "role": "data",
       "required": false,
-      "sha256": "11186cef74923b4dd19663457a7210651b6573d060532796c1d0d7c2b4e44197"
+      "sha256": "46ef0b56359e3ef4d3b919941553cd3e0dce52ceb286df38863ccc9146254287"
+    },
+    {
+      "path": "visual/assets/run-mobility-simulation.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "b2617424840c94e9373f077d69d514c10f60d20a6ceca15e894d6b0ff16477e9"
     },
     {
       "path": "visual/assets/air-mobility-gate.json",

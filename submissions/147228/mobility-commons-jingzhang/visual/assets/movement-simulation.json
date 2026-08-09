@@ -149,6 +149,43 @@
       "weather_cancel_and_ground_fallback",
       "emergency_preemption"
     ],
+    "trip_leg_templates": [
+      {
+        "id": "external_enterprise_commute",
+        "agent_groups": ["enterprise_employee", "night_worker"],
+        "legs": ["boundary_arrival", "walk_or_bus_access", "metro_or_bus", "walk_or_wheelchair_access", "enterprise_gate"],
+        "required_modes": ["metro", "bus", "walking_wheelchair"],
+        "boundary_rule": "origin_and_destination_cross_provisional_boundary; use grouped_OD"
+      },
+      {
+        "id": "resident_daily_service",
+        "agent_groups": ["resident", "carer_or_child"],
+        "legs": ["resident_service_origin", "walk_or_bicycle", "bus_or_metro", "accessible_last_500m", "service_destination", "return_or_fallback"],
+        "required_modes": ["walking_wheelchair", "bicycle", "bus", "metro"],
+        "equity_rule": "preserve_human_and_non_app_equivalent_route"
+      },
+      {
+        "id": "enterprise_shuttle_transfer",
+        "agent_groups": ["enterprise_employee", "visitor"],
+        "legs": ["external_arrival", "enterprise_shuttle", "rail_or_bus_transfer", "walk_to_destination"],
+        "required_modes": ["enterprise_shuttle", "metro", "bus", "walking_wheelchair"],
+        "competition_rule": "feeder_must_not_displace_backbone_transit_without_local_evidence"
+      },
+      {
+        "id": "logistics_and_maintenance_window",
+        "agent_groups": ["logistics_and_maintenance"],
+        "legs": ["boundary_arrival", "car_or_service_vehicle", "time_window_curb", "loading_or_maintenance", "clear_and_return"],
+        "required_modes": ["car"],
+        "safety_rule": "never_block_fire_or_accessible_route"
+      },
+      {
+        "id": "air_candidate_ground_first",
+        "agent_groups": ["visitor", "enterprise_employee"],
+        "legs": ["ground_access", "air_candidate_gate", "ground_fallback"],
+        "required_modes": ["walking_wheelchair", "metro", "bus"],
+        "status": "blocked_until_airspace_airworthiness_operator_insurance_weather_noise_emergency_and_public_review"
+      }
+    ],
     "outputs": [
       "mean_and_peak_queue_by_mode",
       "metro_and_bus_load_ratio",
@@ -168,6 +205,16 @@
       "curb_queue_observations",
       "wheelchair_route_audit",
       "weather_and_emergency_protocol"
+    ],
+    "calibration_metrics": [
+      "mode_share_by_group",
+      "road_and_curb_volume_by_15min",
+      "door_to_door_time_p50_p90",
+      "trip_distance_by_mode",
+      "station_and_vehicle_load",
+      "accessible_route_completion_by_group",
+      "people_flow_conflict_rate_by_group",
+      "worst_group_accessibility_gap"
     ]
   },
   "model_analysis": {
@@ -226,6 +273,36 @@
       }
     ],
     "interpretation": "The sandbox suggests where coordination matters: station gates and curb service dominate the unmanaged peak, while a ground-first multimodal candidate lowers modeled queues and transfer wait in the normalized unit. These are design sensitivities, not local performance claims."
+  },
+  "reproducibility": {
+    "runner": "visual/assets/run-mobility-simulation.js",
+    "command": "node visual/assets/run-mobility-simulation.js",
+    "network_access": false,
+    "algorithm": "Allocate each grouped mode demand across 120 one-minute steps using the declared peak profile; process scheduled metro/bus departures and per-minute bicycle, curb and walking service; record queue, supply, load and unmet demand. The runner emits calibration fields but never invents local observations.",
+    "profile_by_scenario": {
+      "S0_peak_unmanaged": {
+        "status": "run",
+        "peak_minute": 35,
+        "spread_minutes": 10,
+        "peak_concentration": 2.4
+      },
+      "S1_multimodal_curb_transfer": {
+        "status": "run",
+        "peak_minute": 35,
+        "spread_minutes": 24,
+        "peak_concentration": 0.9
+      },
+      "S2_air_candidate": {
+        "status": "blocked"
+      },
+      "S3_weather_ground_fallback": {
+        "status": "run",
+        "peak_minute": 40,
+        "spread_minutes": 16,
+        "peak_concentration": 1.5
+      }
+    },
+    "behavioral_boundary": "No imported mode-choice coefficient or local effect size; employer incentives, shared rides and feeder services require a sensitivity test after observed grouped OD and mode-share data arrive."
   },
   "scenarios": [
     {
