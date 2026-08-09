@@ -35,7 +35,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 数据产物 `census.json`、`field_map.json` 与原始快照 `agent_declarations.json` 随包提交于 `visual/assets/`，数字可直接核验。生成脚本因提交格式白名单不接受 `.py`（`assets/*` 仅收图片、`report/*` 仅收五个固定文件名、`geometry/*` 仅收九个指定文件）而无法进入提交包，已在本方案的配套 Issue 中公开发布，任何人可重跑复算。该数据在 `sources.json` 中定级为 `background_only`：它是本方案论证的经验基础，**不**作为空间结论或法定管控的证据。
 
-![证据链与提交包关系图](assets/figures/site-overview.png)
+![证据链与提交包：一条尚未闭合的水准回路](assets/figures/evidence-circuit.png)
 
 官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 的精确 polygon 截至撰写时仍未公开发布。本包中 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注 `provisional_constraint`、`official_boundary=false`，仅用于生成、自检、可视化与设计讨论，不得作为 official redline、审批依据或精确面积依据。官方 polygon 发布后，全部图层与指标须整体重算，不得只替换单个文件——这与本方案主张的「超限整段重测、不局部打补丁」是同一条原则。
 
@@ -118,9 +118,9 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 **真正的答案是这套设计本身的性质：水准网是边界相对的，不是坐标绝对的。** 分级（原点/一等/二等/三等）、附合路线的闭合逻辑、跨管辖读数规则、限差分级——这些在边界平移后**全部不变**，改变的只是标石落在哪里。这正是本方案坚持「官方 polygon 发布后整体重算而非局部替换」的原因：重算的是位置，不是机制。
 
-OSM 数据、测量脚本与全部口径随包提交于 `visual/assets/osm_reference.json` [source:OSM-REFERENCE-2026-08]，可重跑复算。这一节的全部内容画在下图里——**推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现**。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出六类用地剖分的图纸。
+OSM 数据、测量脚本与全部口径随包提交于 `visual/assets/osm_reference.json` [source:OSM-REFERENCE-2026-08]，可重跑复算。这一节的全部内容画在下图里——**推定边界、实测公园、本方案落位与那 412.5 m 的红线在同一张图上按比例呈现**。文字里的差异是断言，按比例画在自己的后果旁边才是证据。该图同时是本包唯一一张画出六类用地剖分的图纸，并按《提交指南》对 `site-overview.png` 的定义呈现总体概念、主轴、核心节点与 official/provisional 状态。
 
-![场地复核：推定边界、实测公园与本方案落位](assets/figures/site-check.png)
+![总体概念与场地复核：主轴、核心节点、推定边界与实测公园](assets/figures/site-overview.png)
 
 
 
@@ -148,7 +148,7 @@ OSM 数据、测量脚本与全部口径随包提交于 `visual/assets/osm_refer
 
 三层的空间边界均为临时替代边界 [source:BOUNDARY-SOURCE]，其推定依据与误差见仓库的 `provisional_boundaries_basis.md`；官方数据发布后须整体重算 [depth:existing_conditions_diagnosis]。
 
-![三层范围与水准网层级对应图](assets/figures/land-use-structure.png)
+![三层范围与水准网层级](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -869,15 +869,15 @@ node visual/assets/verify.js
 
 | 图号 | 内容 | 该图要读什么 |
 |---|---|---|
-| FIG.01 | 证据链与提交包：一条尚未闭合的水准回路 | 回路左侧的红色缺口即闭合差；下方三张读数卡是对本次征集自身的实测 |
-| FIG.02 | 三层范围与水准网层级 | 三层嵌套关系，以及右栏「本方案刻意不给出的数值」 |
-| FIG.03 | 三处重点区与水准点布设 | 按展线惯例横向展开，读 K0–K9 里程与八个分级测点的位置 |
-| FIG.04 | 慢行、蓝绿与附合路线 | 两条闭合回路的走向与方向，以及右下的限差分级 |
-| FIG.05 | 指标复算与全场普查 | 左栏三类指标的区别；右栏赛道覆盖与元符号饱和度 |
-| FIG.06 | 视觉识别：标志、构造与应用 | 标志本身画的是方法：基准线出发、抬升、回落，而没有落回基准 |
-| FIG.07 | AI创新生态图谱与要素机制 | 要素的保管链；「资金」一栏刻意留空的红框；六案例共同指向的空缺 |
-| FIG.08 | 地标、组件库、导视编号与运营周期 | 五类标准件的实际形态；编号语法；以复测周期而非节庆组织的日历 |
-| FIG.09 | 场地复核：推定边界、实测公园与本方案落位 | **那条红线**——推定边界与实测公园相距 412.5 m；同时是六类用地剖分的唯一图示 |
+| FIG.01 | 总体概念与场地复核 | **那条红线**——推定边界与实测公园相距 412.5 m；主轴、核心节点、六类用地剖分与 official/provisional 状态同图呈现 |
+| FIG.02 | 证据链与提交包：一条尚未闭合的水准回路 | 回路左侧的红色缺口即闭合差；下方三张读数卡是对本次征集自身的实测 |
+| FIG.03 | 三层范围与水准网层级 | 三层嵌套关系，以及右栏「本方案刻意不给出的数值」 |
+| FIG.04 | 三处重点区与水准点布设 | 按展线惯例横向展开，读 K0–K9 里程与八个分级测点的位置 |
+| FIG.05 | 慢行、蓝绿与附合路线 | 两条闭合回路的走向与方向，以及右下的限差分级 |
+| FIG.06 | 指标复算与全场普查 | 左栏三类指标的区别；右栏赛道覆盖与元符号饱和度 |
+| FIG.07 | 视觉识别：标志、构造与应用 | 标志本身画的是方法：基准线出发、抬升、回落，而没有落回基准 |
+| FIG.08 | AI创新生态图谱与要素机制 | 要素的保管链；「资金」一栏刻意留空的红框；六案例共同指向的空缺 |
+| FIG.09 | 地标、组件库、导视编号与运营周期 | 五类标准件的实际形态；编号语法；以复测周期而非节庆组织的日历 |
 
 ![慢行、蓝绿与附合路线图](assets/figures/mobility-bluegreen.png)
 
