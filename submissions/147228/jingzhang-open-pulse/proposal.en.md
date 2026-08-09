@@ -28,7 +28,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger; v3.3 subdivides buildings, green space, public rooms, scenario anchors, phases and pending constraints without changing the prior area metrics. | manifest.json, metrics.json, geometry/*.geojson, qa-readiness.json |
 | Source-register completeness | The 59 unique source IDs in the Chinese proposal match the 59 records in package `sources.json` one-to-one; every record now provides a title, publisher or registering body, URL/path, access date, authority level, usable scope and disabled scope. `data/source_registry.json` remains authoritative for formal/provisional use boundaries; package registration does not upgrade provisional material into formal evidence. | sources.json, data/source_registry.json, visual/assets/evidence-ledger.json |
 
-## v3.2 Three key areas: spatial moves before technology labels
+## v3.3 Three key areas: spatial moves before technology labels
 
 | Area | Spatial problem | Design move and perceptible deliverable | Release boundary |
 | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 The three areas correspond to PROV-KEY-001, PROV-KEY-002 and PROV-KEY-003; these are provisional design constraints, not official red lines. The moves are conceptual suggestions for professional deepening after formal geometry, rights, controls, fire, heritage and municipal conditions are available.
 
-## v3.2 Shortest implementation contract: an ordinary route and an exit at every step
+## v3.3 Shortest implementation contract: an ordinary route and an exit at every step
 
 1. **Review:** lock the official/provisional geometry version, field baseline, rights and accountable owner; if a critical input is missing, keep the state unknown.
 2. **Base:** provide physical wayfinding, paper maps, human windows, seating/shade, water, drainage and account-free help first; ordinary service never waits for model recovery.
