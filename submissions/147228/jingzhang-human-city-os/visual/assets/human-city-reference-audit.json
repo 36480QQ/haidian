@@ -6,38 +6,38 @@
   "documents": [
     {
       "document": "proposal.md",
-      "total": 153,
-      "unique": 79
+      "total": 199,
+      "unique": 91
     },
     {
       "document": "proposal.en.md",
-      "total": 153,
-      "unique": 79
+      "total": 198,
+      "unique": 91
     }
   ],
-  "references_total": 306,
-  "references_unique": 79,
+  "references_total": 397,
+  "references_unique": 91,
   "by_kind": {
     "metric": {
-      "total": 88,
+      "total": 107,
       "unique": 23,
       "resolved": 23,
       "unresolved": []
     },
     "source": {
-      "total": 58,
-      "unique": 18,
-      "resolved": 18,
-      "unresolved": []
-    },
-    "data": {
       "total": 62,
       "unique": 18,
       "resolved": 18,
       "unresolved": []
     },
+    "data": {
+      "total": 106,
+      "unique": 30,
+      "resolved": 30,
+      "unresolved": []
+    },
     "depth": {
-      "total": 82,
+      "total": 106,
       "unique": 15,
       "resolved": 15,
       "unresolved": []
