@@ -39,11 +39,17 @@ All three boundaries are `official_boundary=false` and `geometry_role=provisiona
 
 ### A small recomputable metric set calibrates the trade-offs
 
-The submission boundary recalculates to 11,412,825.386 square metres in EPSG:4548 (low confidence, provisional geometry); green space is 11.1213%, public space 1.0641%, retention-support land 18.2759%, and reversible reserve 15.0936%. The skills-transition corridor, silicon right-of-way and low-altitude concept corridor are 5,919.240 m, 4,585.615 m and 2,015.137 m respectively. These are recomputable conceptual quantities, not statutory indicators, engineering lengths or performance commitments.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m] [metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
+The submission boundary recalculates to 11,412,825.386 square metres in EPSG:4548 (low confidence, provisional geometry); green space is 11.1213% and public space 1.0641%.[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+
+Retention-support land is 18.2759% and reversible reserve 15.0936%; the skills-transition corridor, silicon right-of-way and low-altitude concept corridor are 5,919.240 m, 4,585.615 m and 2,015.137 m respectively.[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m]
+
+These are recomputable conceptual quantities, not statutory indicators, engineering lengths or performance commitments; road length and the low-altitude corridor remain separately traceable to geometry.[metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
 
 ### Three release gates bridge a ten-year city cycle and three-month AI iteration
 
-`PHASE-V01` covers observation, baseline and public sense-making; `PHASE-V02` permits only reversible, exit-ready conceptual pilots; `PHASE-V10` is the point for expansion and standards spillover after professional review. Every gate retains an equivalent human service, unconfirmed accountability, data gaps and stop actions. These remain conceptual suggestions; no authorization, operation, approval or implementation is claimed.[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10] [depth:phasing_implementation]
+`PHASE-V01` covers observation, baseline and public sense-making; `PHASE-V02` permits only reversible, exit-ready conceptual pilots; `PHASE-V10` is the point for expansion and standards spillover after professional review.[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10]
+
+Every gate retains an equivalent human service, unconfirmed accountability, data gaps and stop actions. These remain conceptual suggestions; no authorization, operation, approval or implementation is claimed.[depth:phasing_implementation]
 
 **First-read boundary:** the package can prove that spatial moves, evidence references, metric formulas and fail-closed paths are replayable offline. It cannot prove official boundaries, resident or employment outcomes, PUE/green-power, heat-network connection, traffic safety, permits, investment or real operations. Gaps remain in `assumptions.json`, `metrics.json` and the readiness register for later recalculation when public or authorized data arrives.[depth:risk_missing_data]
 
@@ -235,7 +241,7 @@ Zhongzhiyuan, the AI Origin Community, and Dazhongsi use the repository's coarse
 | AI Origin Community | Can innovation density protect everyday life and workforce transition? | Reskilling Relay, City API Exchange, intergenerational learning, City Release Room | Employment conversion, retained human services, data minimization, and resident vote |
 | Dazhongsi | Can data and international services create a trustworthy urban interface? | Public Data Authorization Room, International Service Commons, OPC shared services | Lawful authorization, exit, accessibility, multilingual and compliance-service audit |
 
-The three key areas keep their coarse provisional extents and now add a comparable concept massing and ground-interface layer. FAR and storeys compare the relationship between public service, ordinary routes, and upper functions. They are not statutory controls, existing-condition findings, or construction permissions; formal height, intensity, retain/renew/demolish decisions, and engineering capacity remain `unknown` before G1. [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:far] [metric:building_height]
+The three key areas keep their coarse provisional extents and now add a comparable concept massing and ground-interface layer. FAR and storeys compare the relationship between public service, ordinary routes, and upper functions. They are not statutory controls, existing-condition findings, or construction permissions; formal height, intensity, retain/renew/demolish decisions, and engineering capacity remain `unknown` before G1. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:visual/assets/parametric-tradeoff-study.json] [depth:risk_missing_data]
 
 | Key area | Concept spatial trade-off | Concept massing range | Professional evidence to collect first |
 | --- | --- | --- | --- |

@@ -39,11 +39,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 用少量可重算指标校准取舍
 
-当前提交边界在 EPSG:4548 下复算为 11,412,825.386 平方米（低置信、临时几何）；绿色空间占比 11.1213%，公共空间占比 1.0641%，社区保留支持用地占比 18.2759%，可逆留白占比 15.0936%。技能再造走廊、硅基通行权与低空概念走廊分别为 5,919.240 米、4,585.615 米和 2,015.137 米；这些是概念结构的可重算量，不是法定指标、工程长度或绩效承诺。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m] [metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
+当前提交边界在 EPSG:4548 下复算为 11,412,825.386 平方米（低置信、临时几何）；绿色空间占比 11.1213%，公共空间占比 1.0641%。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+
+社区保留支持用地占比 18.2759%，可逆留白占比 15.0936%；技能再造走廊、硅基通行权与低空概念走廊分别为 5,919.240 米、4,585.615 米和 2,015.137 米。[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m]
+
+上述量均为概念结构的可重算量，不是法定指标、工程长度或绩效承诺；道路长度与低空廊道另行登记为可复核几何证据。[metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
 
 ### 三道发布门把十年城市周期和三个月 AI 迭代接起来
 
-`PHASE-V01` 先做观察、基线与公众共识；`PHASE-V02` 只允许可逆、可退出的概念试点；`PHASE-V10` 才讨论经专业审查后的扩展与标准外溢。每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10] [depth:phasing_implementation]
+`PHASE-V01` 先做观察、基线与公众共识；`PHASE-V02` 只允许可逆、可退出的概念试点；`PHASE-V10` 才讨论经专业审查后的扩展与标准外溢。[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10]
+
+每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[depth:phasing_implementation]
 
 **先读结论：**本包能证明空间动作、证据引用、指标公式和失败关闭路径可以离线复核；不能证明官方边界、居民结果、就业结果、PUE/绿电、热网接入、交通安全、许可、投资或现实运营绩效。所有缺口保留在 `assumptions.json`、`metrics.json` 与资料就绪度台账，待公开或授权数据到位后再重算。[depth:risk_missing_data]
 
@@ -235,7 +241,7 @@ A 组“人的尊严”包括社区保留、就业转型、数字包容和身心
 | AI 原点社区 | 创新密度能否同时保护人的转型与日常生活 | 技能再造接力站、城市 API 交换站、代际共学、城市版本发布室 | 就业转化、人工服务保留、隐私最小化、居民表决 |
 | 大钟寺 | 数据与国际服务能否形成可信城市接口 | 公共数据授权样板间、国际服务客厅、OPC 共享服务 | 数据授权、退出机制、无障碍、语言与合规服务审计 |
 
-三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:far] [metric:building_height]
+三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:visual/assets/parametric-tradeoff-study.json] [depth:risk_missing_data]
 
 | 重点区 | 概念空间取舍 | 概念体量范围 | 先补的专业证据 |
 | --- | --- | --- | --- |
