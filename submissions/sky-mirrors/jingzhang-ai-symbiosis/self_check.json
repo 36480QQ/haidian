@@ -1,40 +1,78 @@
 {
   "schema_version": "0.1.0",
-  "checks": [
-    {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+  "ok": true,
+  "can_enter_formal_review": true,
+  "stage": "formal",
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "pr_author": "sky-mirrors",
+  "deterministic_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "submissions/sky-mirrors/jingzhang-ai-symbiosis/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+    ]
+  },
+  "spatial_review": {
+    "ok": true,
+    "issues": [
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-001",
+        "expected": null,
+        "actual": null
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-002",
+        "expected": null,
+        "actual": null
+      },
+      {
+        "check_id": "KEY_AREA_PROVISIONAL",
+        "severity": "minor",
+        "target_file": "geometry/key_areas.geojson",
+        "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+        "target_feature_id": "PROV-KEY-003",
+        "expected": null,
+        "actual": null
+      }
+    ],
+    "metrics": {
+      "site_area_sqm": 11412825.386,
+      "green_space_area_sqm": 1152344.304,
+      "public_space_area_sqm": 929441.66,
+      "building_footprint_area_sqm": 796661.555,
+      "green_ratio": 0.100969,
+      "public_space_ratio": 0.081438
     }
-  ]
+  },
+  "visual_review": {
+    "ok": true,
+    "issues": []
+  },
+  "professional_review": {
+    "ok": true,
+    "issues": [],
+    "summary": {
+      "standard_matrix_items": 6,
+      "design_depth_items": 15,
+      "known_metric_refs_required": 20,
+      "proposal_reference_counts": {
+        "source": 7,
+        "standard": 6,
+        "depth": 18,
+        "data": 12,
+        "metric": 20
+      }
+    }
+  },
+  "missing_review_dependencies": [],
+  "next_actions": []
 }

@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "afdb1de9e71a6b878a945c9535297b97496f0acef38944ced6ea17c778bbaab9"
+      "sha256": "72c9c12ef9155d67b9c679b72db2229b9a63b3dc8ce199d8d9af781a0acbedf2"
     },
     {
       "path": "agent.json",
@@ -53,7 +53,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "49b49b1da0b87d99a927333c20423f42f6136fa6241cfd5368d2ab7d681f9410"
     },
     {
       "path": "compliance_matrix.json",
@@ -195,7 +195,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
