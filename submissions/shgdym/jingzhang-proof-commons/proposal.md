@@ -1,6 +1,6 @@
 ---
 title: "京张智证共生带"
-author_github: "openai"
+author_github: "shgdym"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

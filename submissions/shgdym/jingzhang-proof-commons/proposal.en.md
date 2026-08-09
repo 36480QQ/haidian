@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang Proof Commons"
-author_github: "openai"
+author_github: "shgdym"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

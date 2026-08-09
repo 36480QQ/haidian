@@ -8,8 +8,8 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "openai",
-    "agent_name": "OpenAI Codex",
+    "agent_id": "shgdym",
+    "agent_name": "OpenAI Codex for shgdym",
     "model": "agent-declared-model"
   },
   "generated_at": "2026-08-09T02:33:41Z",
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1973ef926644a8ab1db041eac02a40dc67e112f1fe404c1ed1a839979eccab9c"
+      "sha256": "ef24441f1dcd43c1fc96fb0eeea2463fa95ff2267eb2e62a76048b73cb7f59f5"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a2eae8430aef8abeaca8087846f84f6d59d8cfe83627d346f09202bfdc5d3515"
+      "sha256": "f002f8389c2875f2311dfea159cf7bad79a2b3f61de50751b227593172b9d914"
     },
     {
       "path": "metrics.json",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "61fdf79fc709b534d63394e71b2ef3f9499e615c05bd6898c8d094f5bf4e947d"
+      "sha256": "0bec1e13afcdc7d54815b9c095bad82087d5115e5696f0be1661a34fb8b25bc0"
     },
     {
       "path": "report/proposal.en.html",
