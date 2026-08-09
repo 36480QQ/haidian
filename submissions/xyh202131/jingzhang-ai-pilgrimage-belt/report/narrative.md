@@ -8,9 +8,29 @@
 
 AI 朝圣·铁轨新生带 V2 将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
 
-核心创新为 JZ-AIOS 四门制、可逆时空公园、开放基准走廊、可信叙事双螺旋和四季运营协议。空间证据包括 36 个用地单元、180 个体量原型、六门、九处公共空间、三服务区和十二个场景护照节点。全部节点仍处于 G0 概念状态，临时边界和所有设计不得用于审批或工程实施。
+本轮以 2026 年 8 月 6 日京张铁路遗址公园二期已开放的公开报道为现实起点：连续绿廊、基础慢行、全龄活动与遗产再利用不再被包装成待建成果。新增 Built-Park Delta Protocol，要求任何 AI 增量先与非 AI 现状基线比较，并具备最小占用、停止恢复、社区共测和独立复测；`site-grounding-register.json` 保存桌面研究边界，`pilot-readiness-register.json` 把八个项目和三个先行试点转成可交接的概念责任合同。全部节点仍处于 G0，现场审计完成数为 0，临时边界和所有设计不得用于审批或工程实施。
 
-Jing-Zhang V2 treats the corridor as an auditable public AI innovation production line: problems enter from the Xiaoyue River wing, co-creation occurs in the AI Origin Community, validation occurs at Zhongzhi Garden, release and staffed service occur at Dazhongsi, and public feedback returns to the next annual cycle. All nodes remain G0 concepts; provisional geometry and design outputs are not approval or engineering evidence.
+Jing-Zhang V2 treats the corridor as an auditable public AI innovation production line: problems enter from the Xiaoyue River wing, co-creation occurs in the AI Origin Community, validation occurs at Zhongzhiyuan, release and staffed service occur at Dazhongsi, and public feedback returns to the next annual cycle. This increment starts from public reporting that Phase II of the heritage park opened on 6 August 2026. The Built-Park Delta Protocol requires every AI increment to outperform a non-AI baseline without displacing everyday public life and to remain stoppable, recoverable, community-tested, and independently retestable. All nodes remain G0 concepts, completed field audits remain 0, and provisional geometry and design outputs are not approval or engineering evidence.
+
+## 本次增量状态 / Current increment status
+
+> 本节只记录尚未产生可信 GitHub check 的当前增量。它不得继承下方 `e71ff206…` 历史快照的任何 `[x]`；最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
+>
+> This section records the current increment before a trusted GitHub check exists. It inherits none of the `[x]` items in the historical `e71ff206…` snapshot below. Only trusted `submission-validation` on the final PR head can close the last item.
+
+- [x] 公开网页桌面研究有来源、日期、内容摘要哈希、允许/禁用用途和 `field_verification_required`；未声称实地踏勘。
+- [x] 8 个更新项目与 3 个先行试点均有概念级责任、审批触发、禁止数据、停机恢复、社区共测和独立复测字段。
+- [x] 中英文正文、离线报告与视觉首页已同步现实基线、设计增量和 `unknown` 边界。
+- [x] 最终 manifest 覆盖全部包文件，所有非 manifest SHA-256 与暂存/提交 Git blob 匹配。
+- [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 本地通过。
+- [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
+
+- [x] Public-web desk research records sources, dates, content digests, permitted/prohibited uses, and `field_verification_required`, without claiming a site visit.
+- [x] All 8 renewal projects and 3 priority pilots record conceptual responsibility, approval triggers, prohibited data, shutdown/recovery, community co-testing, and independent retesting.
+- [x] Chinese and English narratives, offline reports, and visual homepages align on the built baseline, design increment, and `unknown` boundaries.
+- [x] The final manifest covers every package file, and every non-manifest SHA-256 matches the staged/committed Git blob.
+- [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass locally.
+- [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 不可变验证证据 / Immutable validation evidence
 
