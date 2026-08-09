@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "68c1312ce006a686ae714685dfd746cc577f0a710d09d1f5c13244be8dc0987c",
+      "sha256": "07313a2dd8fa3e9f6859d5ce4d3a21f26f625a5fcd401801b0e6aeb74ab22f8b",
       "language": "zh",
       "translation_of": "proposal.en.md"
     },
@@ -79,7 +79,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "085435277ed206a42fc502ec47ed3057faad0e6cd39c6c5f6d3eb653c9861786",
+      "sha256": "a56fce2f6d96a49d0c2c9d4310dbb053c1e079da433a68e987b49c2e66a206f7",
       "language": "zh",
       "translation_of": "report/proposal.en.html"
     },
@@ -392,7 +392,7 @@
       "role": "narrative_en",
       "required": false,
       "language": "en",
-      "sha256": "3e54dd40e7170ee99f8de6ef829c8cdfc0531a05eeb67844751292e636042185",
+      "sha256": "ca785f44b748fa9572a6e09de11509b6792088667054351bf452a61b7e3a8c1d",
       "translation_of": "proposal.md"
     },
     {
@@ -400,7 +400,7 @@
       "role": "supporting",
       "required": false,
       "language": "en",
-      "sha256": "4885f3b8c4ce39e051126b2361e35be221ea9fc99250bc7c82cbf095143006e1",
+      "sha256": "64d03a5523034a3da4bfee627fee5cc88e442eab57883256edfc01534038e7b6",
       "translation_of": "report/proposal.html"
     },
     {
@@ -458,6 +458,42 @@
       "language": "en",
       "sha256": "312e0ff8fa466b6d67ac4dc427d1df806f54775436b038dc6ba9b56ceabbbd69",
       "translation_of": "visual/index.html"
+    },
+    {
+      "path": "assets/figures/renders/r-dawn-zhongzhiyuan.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "a0f268e999ef4aeca05278de9dc48c2b3b5f8a7e72cccd510ca27c8f9e1d55af"
+    },
+    {
+      "path": "assets/figures/renders/r-dazhongsi-gateway.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "b62e50026b21187e68843ea3b77655ea26b18528bb7cf8d2f3a8936e0bfc8744"
+    },
+    {
+      "path": "assets/figures/renders/r-night-safety.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "413765cab17d4f98d7a1569547d2ad050331cb7c04a1d6651e200eca4ade45f7"
+    },
+    {
+      "path": "assets/figures/renders/r-origin-lighthouse.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "db4ed12b5efd9f51a839b1cd94626b5c5976ffeebe72fc5af5d8b3f415847563"
+    },
+    {
+      "path": "assets/figures/renders/r-park-corridor.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "eeb2697f13aeb6310c0f68ada756f20d51fe2394044241e23a8c4ef05a9856d5"
+    },
+    {
+      "path": "assets/figures/renders/r-waterfront-observatory.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "4c4db6ad9a2198fb7f7830feb781f8b2fcfcfe364eb96efff78e7e740339397f"
     }
   ],
   "validation_claim": {
