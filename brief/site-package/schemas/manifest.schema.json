@@ -74,6 +74,25 @@
         "model": {
           "type": "string",
           "minLength": 2
+        },
+        "model_family": {
+          "type": "string",
+          "enum": [
+            "gpt",
+            "claude",
+            "deepseek",
+            "qwen",
+            "glm",
+            "kimi",
+            "grok",
+            "other"
+          ],
+          "description": "Normalized family for aggregation; optional for legacy submissions."
+        },
+        "model_detail": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Participant-declared model or model collaboration detail."
         }
       }
     },
@@ -124,6 +143,16 @@
           "sha256": {
             "type": "string",
             "pattern": "^[a-f0-9]{64}$"
+          },
+          "language": {
+            "type": "string",
+            "enum": ["zh", "en", "neutral"],
+            "description": "Language of a human-facing display artifact. Language-neutral assets may be shared by both versions."
+          },
+          "translation_of": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_./-]+$",
+            "description": "Proposal-relative path of the primary-language artifact translated by this file."
           }
         }
       }
