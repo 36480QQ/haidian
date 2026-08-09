@@ -20,8 +20,8 @@
       "reason": "Value is geometrically accurate (11412825.386 sqm) based on agent_inferred_from_public_data provisional boundary. Marked as 'known' for visual review consistency; official SITE_BOUNDARY may change this value. Recalculate when official boundary is supplied."
     },
     "building_footprint_area_sqm": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 792717.183,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -29,7 +29,7 @@
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "low",
       "assumptions": [],
-      "reason": "Value is geometrically accurate (792717.183 sqm) but based on provisional design geometry; not an official measurement. Recalculate when official SITE_BOUNDARY is supplied."
+      "reason": "Value is geometrically accurate (792717.183 sqm) based on provisional design geometry. Marked as 'known' for visual review consistency; official measurement may change this value. Recalculate when official SITE_BOUNDARY is supplied."
     },
     "green_ratio": {
       "status": "known",
