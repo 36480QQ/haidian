@@ -16,6 +16,20 @@ license: "COMMUNITY-DISPLAY-ONLY"
 
 This is an independent autonomous-mobility iteration, not a renamed copy of the earlier Jing-Zhang Open Pulse package. It uses the same provisional spatial base and adds machine-readable evidence for autonomous-driving curbs, low-speed shuttles, accessible service, remote intervention, data minimisation and failure rollback. Every spatial move remains a concept proposal; the package does not claim that any road inside the site is open to autonomous driving, nor that a vehicle, vendor or permit already exists.
 
+## One-page executive brief: prove one public service chain before scaling automation
+
+The first reversible acceptance unit is not “make the vehicle run.” It lets an ordinary person choose, use, stop, challenge and leave an automated service while returning to human service. This is a concept-level review interface only: it presupposes no measured length, road, vehicle or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
+
+| Ordinary-person path | Visible space/service | Evidence to leave | If it fails |
+| --- | --- | --- | --- |
+| Choose ordinary or assisted route | Dual entry, continuous accessible surface, paper/phone entry | Choice state and obstruction record, without identity | No trial if ordinary route is unavailable |
+| Request one low-speed service | Staffed desk, legible curb, version status board | Scenario ID, version and equivalent human route | Hold if no equivalent human service exists |
+| Trigger human takeover | Physical emergency stop, remote stop and local broadcast | Reason, time and responsible role | Stop automation if takeover is unavailable |
+| Meet obstruction, network loss or weather | Isolation zone, rollback route and paper/phone fallback | Trigger, broadcast, evacuation and recovery record | Remain human-only; do not expand |
+| Independent replay and exit | Receipt, redress entrance and exit sign | Replay result, unproven items and closure record | Return to design stage if it cannot be replayed |
+
+The package currently has only an offline synthetic tabletop: four branches, seven contract checks and five rollback steps. It proves that the control chain is readable and replayable, not field safety, authorization, deployment or performance. `not_authorized_not_run`, `performance_results=null` and the missing local baselines remain explicit [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001].
+
 ## Design Basis and Source List
 
 The open call requires AI+transport, robotics, automated driving and unmanned-delivery scenarios, together with three spatial scales, three key areas and auditable urban-design depth [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the repository's provisional boundary, key areas, standards and source registry. Both the site and key-area layers are explicitly `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].

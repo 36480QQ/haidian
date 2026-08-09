@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.9 - 2026-08-09
+
+- Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: choose, request, take over, rollback and independently replay/exit.
+- Bound each step to visible space/service, retained evidence and a fail-closed action; preserved the existing synthetic-only boundary and did not add field, permit, deployment or performance claims.
+- Regenerated both offline reports after the narrative addition; no geometry, public gallery artifact or official score was changed.
+
 ## v2.8 - 2026-08-09
 
 - Added structural trace checks to the curbside tabletop runner: acceptance checks now bind to concrete fixtures, gates and scenario-matrix rows, while artifact identifiers, counts, boundary fields and rollback declarations reconcile before a local PASS is emitted. This remains an offline synthetic consistency check; it adds no field, permit, performance or deployment claim.

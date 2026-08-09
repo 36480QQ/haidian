@@ -16,6 +16,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案是一个独立的自动驾驶公共性迭代，不是对“京张开源脉冲”原方案的换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。
 
+## 一页执行摘要：先验收一条公共服务链，再谈自动化扩展
+
+首个可逆验收单元不是“让车跑起来”，而是让普通人能够选择、使用、叫停、申诉并回到人工服务。它只作为概念级审查界面，不预设长度、道路、车辆或运营主体；具体点位和工程尺度待正式边界、现场走测与专业核查后确定。
+
+| 普通人路径 | 必须看见的空间/服务 | 必须留下的证据 | 不通过时 |
+| --- | --- | --- | --- |
+| 选择普通或自动辅助路径 | 双入口、连续无障碍面、纸面/电话入口 | 选择状态与障碍记录，不记录身份 | 普通路径不可用则不开试验 |
+| 请求一次低速服务 | 人工服务台、可读路缘、版本状态牌 | 场景 ID、版本、人工等价路径 | 无等价人工服务则暂停 |
+| 主动触发人工接管 | 物理急停、远程停止、现场广播 | 接管原因、时间、责任角色 | 无法接管则停止自动化 |
+| 遇到阻断、断网或天气异常 | 隔离区、回退路线、纸面/电话兜底 | 触发、广播、撤离、恢复记录 | 保持 human-only，不扩容 |
+| 由第三方复核并退出 | 凭证、申诉入口、退出标识 | 复演结果、未证明事项、关闭记录 | 不能复演则退回设计阶段 |
+
+当前只具备离线合成 tabletop：4 个分支、7 个契约验收项和 5 个回退步骤；它证明控制链可读、可复演，不证明现场安全、许可、部署或性能。`not_authorized_not_run`、`performance_results=null` 和待补本地基线继续有效 [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001]。
+
 ## 设计依据与资料清单
 
 官方任务要求回应 AI+交通、机器人、自动驾驶、无人配送等场景，并达到三层空间研究、三处重点区和可审查的城市设计深度 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。本包使用 `brief/site-package/` 的 provisional boundary、key areas、标准快照和来源注册表；`geometry/site_boundary.geojson` 明确 `official_boundary=false`、`geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001]。

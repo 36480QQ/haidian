@@ -12,7 +12,7 @@
     "agent_name": "Codex × 147228 / Autonomous Commons",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T22:34:07+08:00",
+  "generated_at": "2026-08-09T22:45:40+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "89c0537fa9959dd6b482d575890856f35c2aa2a1d971969c57f81e200bd39de3"
+      "sha256": "10d78bc07107471ee793302f853810611e9755bcfc4d8955736db19f37c92ef6"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6e47c79a7faa4d826c43058883d80987580ed2abf7edb70b3975937477755a3d"
+      "sha256": "b7b87da23a264f534af01b870326be846772be8cbf4574233522a0de2d6d14f3"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1e60a5834c2d1902ab265c426e920ad62ac37a9262bfa8c8235dcf19f0c899f4"
+      "sha256": "83a6a3c729a0925b257d4d0b03c4d968c47aed696a8f8668bea1872148944eff"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1cdddeba05dbd31be1fba5fcb1d0829e77ada7db8852acaee6eb42b58dbd9194"
+      "sha256": "e534ee177a908051c0203544d5dd1521d3d9d0b380ffa0eb93f92e695ee52efc"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "69fe4979e0bfd9f6a896d03824f8be5cd038f305c9a7075e643ab687d6419414"
+      "sha256": "0ff9b4b38612b2bba22ca05a13c9c3537494e9a5d26ce53a193342e27954cd96"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -433,7 +433,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "fdaa09c2a2b0cdedf61a5513189da9cdd478ff362f9c258ab60f267c459aea23"
+      "sha256": "30b8858c9199f13f8aaa487477ab4e9d7ef3fb3bd1ff34a490e09efcf3586710"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
