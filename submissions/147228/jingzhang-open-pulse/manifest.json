@@ -107,7 +107,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "02ec949e0e69fa4f6f31aef5df7f94c4af5b6c43c7bc885f74658674691f8f7d"
+      "sha256": "06e54d04eff972516f58ad7e480544c3b3c14b92994fb537ffc71c552020749e"
     },
     {
       "path": "changelog.md",
@@ -135,7 +135,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "013c9899a5829cfead73505fa8c331b43c948232c7109870a3bf3bf2476ec6d8"
+      "sha256": "e3560c55cd0b0f2aa65a773787131444920fe163c383c98812e6345a567000c6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -143,7 +143,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "695f712d2dd0c90a993faeb16180a088aa267797f73debe6c897119ccf982c97"
+      "sha256": "55c0a0b00e4056ed527246517b4fe884a261136c2003d4fc1c6818d79c4ca865"
     },
     {
       "path": "visual/index.html",
@@ -438,7 +438,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "e54be81041bb86511567345277057e0c3f862113456a64e6abfb5d6880b282e0"
+      "sha256": "bb70c96a845dc47bf080734422f72c77bde11c86fc2d17797ee35e864232d54d"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -550,6 +550,14 @@
       "role": "proof_mile_delivery_protocol",
       "required": true,
       "sha256": "67daa5c504c8ec106b500f9b0d037c250ec9a981082b6565827380b261bcb9ff"
+    },
+    {
+      "path": "assets/figures/sustainability-timeseries.en.png",
+      "role": "quantitative_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/sustainability-timeseries.png",
+      "sha256": "e847e31ed802948997c9c8c28af417b9e4f975bdb59f5d65397d9fda76cfb1e1"
     }
   ],
   "validation_claim": {
