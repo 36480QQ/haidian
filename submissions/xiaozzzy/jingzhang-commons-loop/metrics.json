@@ -83,6 +83,85 @@
       "assumptions": [
         "All three submitted key-area polygons are provisional constraints."
       ]
+    },
+    "global_ecosystem_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "sources.json"
+      ],
+      "formula": "count(background_case_sources_with_official_urls)",
+      "confidence": "medium",
+      "assumptions": [
+        "Cases are public background references, not local facts or partnership commitments."
+      ]
+    },
+    "ai_scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(readable_scenario_cards)",
+      "confidence": "medium",
+      "assumptions": [
+        "Cards are concept proposals and require professional, privacy, and operational review before testing."
+      ]
+    },
+    "industry_test_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(industry_test_scenario_directions)",
+      "confidence": "medium",
+      "assumptions": [
+        "Test directions are reversible reference schemes, not approved operations or certifications."
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(user_persona_types)",
+      "confidence": "medium",
+      "assumptions": [
+        "Personas are service-design hypotheses and are not individual profiling."
+      ]
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(ai_pilgrimage_or_honor_display_nodes)",
+      "confidence": "medium",
+      "assumptions": [
+        "Landmarks are public-space concepts and do not imply construction approval."
+      ]
+    },
+    "implementation_phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(phasing_features)",
+      "confidence": "medium",
+      "assumptions": [
+        "Phasing is an ordering diagram pending ownership, funding, approval, and infrastructure confirmation."
+      ]
     }
   }
 }
