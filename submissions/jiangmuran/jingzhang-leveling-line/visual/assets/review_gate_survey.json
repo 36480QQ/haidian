@@ -73,5 +73,36 @@
  ],
  "verdicts_with_every_dimension_at_5": 0,
  "max_dimensions_at_5_in_any_verdict": 4,
+ "dimension_independence": {
+  "per_dimension_p_score_5": [
+   0.0274,
+   0.0411,
+   0.0411,
+   0.0,
+   0.0274,
+   0.0068,
+   0.0
+  ],
+  "mean_pairwise_correlation": 0.504,
+  "observed_count_of_fives_per_verdict": {
+   "0": 139,
+   "1": 1,
+   "2": 1,
+   "3": 2,
+   "4": 3
+  },
+  "predicted_under_independence": {
+   "0": 126.1,
+   "1": 18.8,
+   "2": 1.1,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0
+  },
+  "note_zh": "维度间平均两两相关 r≈0.50，独立性不成立：实测「恰好一个 5 分维度」只有 1 份而独立模型预测 18.8 份，「三到四个 5」实测 5 份而模型预测约 0 份——5 分是扎堆出现的。但本方案先前那句「若独立则七维全 5 应零星出现」也不成立：逐维 P(得5) 最高仅 0.041，两个维度在 146 份里从未拿过 5，独立模型对七维全 5 的期望值本身就是 0.00。证伪独立性的是分布形状，不是全 5 的缺席，该推论已撤回。另需说准：@Sonike 的 56%（5 分维度仍带 repairs）来自其自身包在新 prompt 下的 20 次复审，本项的 2.7%–4.1% 来自全场 146 份历史 verdict（中位分 57）——两者测的不是同一个总体，不可连乘。",
+  "verdicts": 146
+ },
  "distance_to_the_gate_note_zh": "闸门要求 required_next_actions_zh 为空，而按 ai_review_submission.py 的实现，这要求 repair_count == 0——七维中任何一条 required_repairs_zh 都会无条件追加汇总项。146 份历史 verdict 中 repair_count 的最小值是 17，分数 ≥85 的三份分别为 17/20/21，且没有任何一份 verdict 七维全 5（单份最多 4 个 5）。因此这不是「概率很低」，是「历史上最接近的一次仍差 17 条」。本方案不就此建议放宽：本包上一版得分 91，属于 ≥85 的三份之一，在这件事上没有中立立场，只摆数据。此项由 @Sonike 在 Issue #950 中定位触发条件后测得。"
 }
