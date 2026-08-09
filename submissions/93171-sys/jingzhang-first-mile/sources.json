@@ -20,6 +20,30 @@
       "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
     },
     {
+      "id": "PROCESSED-SCOPE-SUMMARY",
+      "path": "data/processed/project_scope_summary.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation table for the three competition scope levels; underlying authority remains the official announcement and registered site package."
+    },
+    {
+      "id": "PROCESSED-AGENT-TASKS",
+      "path": "data/processed/agent_task_requirements.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation table for mandatory agent tasks; underlying authority remains the agent taskbook."
+    },
+    {
+      "id": "PROCESSED-SOURCE-USE",
+      "path": "data/processed/source_use_matrix.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation table for permitted source uses and authority boundaries; not a new authority source."
+    },
+    {
+      "id": "PROCESSED-MISSING-DATA",
+      "path": "data/processed/missing_data_checklist.csv",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation checklist for missing official geometry, controls and professional inputs; used to keep unsupported conclusions provisional or unknown."
+    },
+    {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
@@ -42,6 +66,65 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "OSM-CONTEXT-2026",
+      "url": "https://www.openstreetmap.org",
+      "path": "visual/assets/site-context.json",
+      "source_type": "open_data_context",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "accessed_date": "2026-08-10",
+      "usage": "Presentation-only contextual base map for named roads, rail, waterways, stations and campuses. It is not an official boundary, survey, statutory base map or planning control."
+    },
+    {
+      "id": "JZ-PARK-PHASE2-COMPLETE-2026",
+      "url": "https://yllhj.beijing.gov.cn/zwgk/zwxx/202607/t20260714_4761226.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official 2026 completion context for phase-two supporting works of the Jing-Zhang Railway Heritage public space, including the north-south/east-west fishbone slow-mobility network. Used to position the proposal as an operational overlay on completed public-space infrastructure, not as a claim of project authorship."
+    },
+    {
+      "id": "JZ-PARK-PHASE1-2023",
+      "url": "https://yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official description of the first 2.5-kilometre Jing-Zhang Railway Heritage Park phase and retained rail heritage elements; used as existing-condition context only."
+    },
+    {
+      "id": "QINGHUAYUAN-HERITAGE-2023",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362780/bjsdjpsjwwbhdw/326024580/index.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Beijing cultural-heritage registry context for the former Qinghuayuan Station. Used for heritage orientation only; no protection buffer is inferred."
+    },
+    {
+      "id": "HAIDIAN-AI-NORTH-LATITUDE-2025",
+      "url": "https://www.bjhd.gov.cn/ztzx/2025/aifuture/jq/bwsq/202507/t20250716_4779018.shtml",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official Haidian context for the six-hectare first phase and five functional areas of the AI North Latitude Community. Used as a proposed regional interface for early teams, not as a partnership commitment."
+    },
+    {
+      "id": "BEIJING-THREE-CITIES-ONE-ZONE",
+      "url": "https://www.beijing.gov.cn/ywdt/zwzt/gjkczx/index.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official strategic context for Zhongguancun Science City, Huairou Science City, Future Science City and Beijing Economic-Technological Development Area; supports differentiated regional interfaces only."
+    },
+    {
+      "id": "BEIJING-ETOWN-AI-2026",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202602/t20260203_4487032.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official 2026 context for E-Town's AI industrial chain, manufacturing scenarios and test-validate-promote workflow; used to frame a proposed manufacturing and scale interface."
+    },
+    {
+      "id": "BEIJING-HUAIROU-2026",
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtscyqld/202606/t20260604_4685324.html",
+      "source_type": "official_public",
+      "accessed_date": "2026-08-10",
+      "usage": "Official 2026 context for Huairou's major science facilities, basic research and technology transfer; used to frame a proposed research-to-urban-evidence interface."
     },
     {
       "id": "CASE-BEIJING-SCENE-OPENING-2026",

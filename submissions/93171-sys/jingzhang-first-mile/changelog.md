@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-10
+
+- Upgraded the submission from a compliance-complete package to a selection-oriented proposal with a clearer central argument: the belt is an adoption infrastructure rather than another AI showcase corridor.
+- Added the original **First-Mile Gate / 首程门** symbol, bilingual wordmark, construction logic and four practical applications across wayfinding, evidence passports, gate signs and launch badges.
+- Rebuilt the overall map with a rights-cleared, presentation-only OpenStreetMap context layer and explicit separation between official facts, provisional geometry and agent-generated design.
+- Replaced three descriptive key-area cards with spatial prototypes: the Product Readiness Yard, First-Use Commons and Four-Quadrant First-Order Room, each with ordinary routes, human handoff and stop conditions.
+- Reframed mobility and blue-green design as a reversible service overlay on the completed Jing-Zhang Railway Heritage public-space network.
+- Added differentiated interfaces with AI North Latitude Community, Future Science City, Huairou Science City, E-Town and Jing-Jin-Ji while explicitly avoiding invented partnership commitments.
+- Added a 90-day evidence operating contract assigning product, site, user and independent-review responsibilities and pause rights.
+- Rebuilt all bilingual figures, offline visual pages and A3/A0 PDFs, then rendered every PDF page for visual QA.
+
 ## v1.0 - 2026-08-10
 
 - Replaced the generated draft with the original **Jing-Zhang First Mile** concept.

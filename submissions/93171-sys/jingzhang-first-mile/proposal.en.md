@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A city-scale first-mile system that helps AI move from the lab to its first real user, first operable scenario, first verifiable order and first verified reuse, with human review, pause, exit and public evidence built into every stage."
+summary: "An original First-Mile Gate identity and a three-station operating chain turn the existing Jing-Zhang public-space spine into adoption infrastructure: product readiness, real first use, verifiable first order and reuse, with ordinary routes, human handoff, pause, exit and public evidence built in."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -41,6 +41,12 @@ The proposal therefore builds a city-scale launch operating system that helps on
 
 The Zhongguancun Technology Services Wing provides intellectual-property, compliance, data, capital and procurement guidance. The Xiaoyue River Scenario Enablement Wing supplies real operating settings with named problem owners, non-AI baselines and human fallback. This is a design proposition, not a statement of government procurement, funding or approval [source:CASE-HAIDIAN-AI-DISTRICTS-2026] [source:CASE-BEIJING-SCENE-OPENING-2026].
 
+### Original Identity: First-Mile Gate / 首程门
+
+![First-Mile Gate identity and applications](assets/figures/brand-system.en.png)
+
+The First-Mile Gate compresses the proposal's operating discipline into a memorable and executable mark. The open frame says that the belt is not a closed campus; the continuous rail/path joins Jing-Zhang engineering heritage to today's adoption workflow; five sleepers are G0–G4, where progress and pause are equally legitimate; and the forward point means that evidence must pass before the next stage. The original monoline mark requires no third-party trademark and works on four low-cost carriers: wayfinding pylons, first-use evidence passports, G0–G4 field signs and launch-event badges. It is not a decorative layer on buildings. It lets users and operators see the current gate, accountable party and exit path.
+
 The workflow has five gates [metric:launch_gate_count]:
 
 | Gate | Required question | Minimum evidence | If it fails |
@@ -52,6 +58,10 @@ The workflow has five gates [metric:launch_gate_count]:
 | G4 First Reuse | Does value remain after changing place and team? | Reuse pack, version differences, repeat use, exit restoration | Do not scale |
 
 The spatial structure is “one line, three stations, two wings and multiple first-use scenarios.” The line is a workflow rather than a new statutory boundary; the stations are handoff surfaces rather than isolated pavilions; and the wings are interfaces for professional supply and real demand.
+
+Regional amplification is specified as input and output rather than a generic arrow. AI North Latitude Community could bring early teams and receive readiness packs; Future Science City and Huairou Science City could bring research and receive evidence from real urban tasks [source:HAIDIAN-AI-NORTH-LATITUDE-2025] [source:BEIJING-THREE-CITIES-ONE-ZONE] [source:BEIJING-HUAIROU-2026].
+
+E-Town could bring manufacturing and industry settings and receive operationally verified services; Jing-Jin-Ji partners could bring cross-regional needs and receive reuse kits with changed conditions, training, service levels and exit methods. These are proposed interfaces, not established partnerships [source:BEIJING-ETOWN-AI-2026].
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -160,6 +170,8 @@ The mobility proposal connects the three stations through the heritage-park spin
 
 ![Mobility, slow movement and blue-green public space](assets/figures/mobility-bluegreen.en.png)
 
+By July 2026, Beijing's official landscape authority had reported completion of phase-two supporting works for the Jing-Zhang Railway Heritage public space, including approximately 30.01 hectares in the northern segment and a north-south/east-west fishbone slow-mobility network. The earlier 2.5-kilometre first phase retained rail tracks, switches and station heritage [source:JZ-PARK-PHASE2-COMPLETE-2026] [source:JZ-PARK-PHASE1-2023]. This proposal therefore does not claim the completed public space as its own work or invent another future green axis. It adds four light and removable adoption services: First Mile Windows, evidence beacons, staffed handoff points and AI-assisted routes limited by place and time. With AI switched off, paths remain open, shade remains and seating still works.
+
 AI industry services, talent services, edge compute, distributed energy and conventional infrastructure should share adaptable carriers where technically appropriate. Pipe networks, energy, drainage, flood control and fire protection are prerequisites for formal design; their absence is recorded as an assumption rather than filled with agent-generated precision.
 
 ## Blue-Green Network, Public Space, and Urban Character
@@ -167,6 +179,8 @@ AI industry services, talent services, edge compute, distributed energy and conv
 Jing-Zhang Railway Heritage Park is the longitudinal public spine. Qinghe and Xiaoyue River interfaces, universities, enterprises and neighbourhoods provide transverse links. The conceptual green and public-space network supports daily walking, cycling, shade, rest, sport, innovation exchange and controlled testing; public access, free staying and non-commercial use take priority over enterprise display [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [metric:green_ratio] [metric:public_space_ratio].
 
 Urban character combines the history of Jing-Zhang engineering, Zhongguancun's culture of independent innovation and a new culture of accountable AI adoption. Wayfinding, bilingual interpretation and public art should distinguish verified historical content from contemporary design. Brands, typefaces, portraits, images and enterprise marks require rights clearance. No precise heritage buffer, roof control, height line or facade mandate is asserted without professional and statutory evidence [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+The former Qinghuayuan Station appears in the official municipal heritage registry and provides a historical orientation point, but this proposal does not infer a protection boundary, construction-control zone or permit condition [source:QINGHUAYUAN-HERITAGE-2023]. Roads, rail, waterways, stations and campuses in the figures use a simplified OpenStreetMap presentation layer explicitly marked non-statutory. It supports spatial orientation only and cannot replace official survey, ownership or planning-control data [source:OSM-CONTEXT-2026] [assumption:A-CONTEXT-MAP-001].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -224,10 +238,4 @@ The Chinese proposal, this complete English counterpart, bilingual figures, bili
 - `data/processed/agent_task_requirements.csv`
 - `data/processed/source_use_matrix.csv`
 - `data/processed/missing_data_checklist.csv`
-- `sources.json`
-- `assumptions.json`
-- `metrics.json`
-- `compliance_matrix.json`
-- `standard_matrix.json`
-- `design_depth_matrix.json`
-
+- Complete public-source records, rights, access dates and use limits are maintained in the structured source list [source:SITE-PACKAGE].

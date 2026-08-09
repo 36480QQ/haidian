@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把百年京张组织成 AI 从实验室走向首位真实用户、首个可运行场景、首笔可核验订单和首次复用扩散的城市首发系统；以三区两翼承接研发、采用、运营与规模化，并保留人工复核、暂停退出和公开证据。"
+summary: "以原创‘首程门’为共同标识，把已形成的京张公共空间骨架升级为 AI 采用基础设施：三站连续完成产品就绪、真实首用、可核验首单与复用交接，并把普通路径、人工接管、暂停退出和公开证据写入空间与运营。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -49,6 +49,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 京张首发线因此不再重复建设一条普通“测试走廊”，而是建设一套城市级首发操作系统：让一个 AI 产品依次获得**首位真实用户、首个可运行场景、首笔可核验订单、首次复用扩散**。众智园承担“首研站”，把算法原型变成有标准、有边界、可部署的产品；北京 AI 原点社区承担“首用站”，让高校、创业者、居民与一线运营者共同完成首轮真实任务；大钟寺承担“首单站”，把通过验证的服务接入企业采购、商业运营和跨区复制。中关村科技服务翼提供知识产权、合规、数据、资本和采购辅导，小月河场景赋能翼提供有问题所有者、有基线、有人工兜底的真实场景。该结构是概念建议，不代表政府采购、资金安排或实施承诺 [source:CASE-HAIDIAN-AI-DISTRICTS-2026] [source:CASE-BEIJING-SCENE-OPENING-2026]。
 
+### 原创识别系统：“首程门 / First-Mile Gate”
+
+![首程门品牌系统与应用载体](assets/figures/brand-system.png)
+
+“首程门”把方案的运营纪律压缩成一个可被记住、也能被执行的符号：开放门框代表创新带不是封闭园区；贯穿的轨线连接京张工程遗产与今天的采用流程；五道横向枕木对应 G0—G4，表示每一步都可以继续，也必须允许暂停；向前箭头表示只有证据通过才进入下一程。标识采用自有绘制的单线系统，不依赖第三方商标，可用于四种低成本载体：场站导视柱、首用证据护照、G0—G4 现场门牌和首发活动证章。它不是给建筑贴一层视觉包装，而是让公众和运营者在现场看见“当前在哪一道门、由谁负责、如何退出”。
+
 首发流程由五道门组成，完整数量登记为 [metric:launch_gate_count]：
 
 | 门禁 | 必须回答的问题 | 最小证据 | 未通过时的处理 |
@@ -60,6 +66,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | G4 首次复用 | 换地点、换团队后是否仍产生公共或经营价值 | 复用包、版本差异、重复使用、退出复原 | 不扩大范围 |
 
 空间结构采用“一线、三站、双翼、多点首发场景”。“一线”不是额外红线，而是研发—采用—运营—复用的工作流；“三站”不是三座孤立展馆，而是三个必须完成交接的城市工作面；“双翼”不是抽象箭头，而是专业服务供给与真实需求供给的双向接口。所有空间动作仍为可供专业团队深化的概念建议。
+
+区域放大不是用一根箭头连接若干园区，而是明确输入与输出。北纬社区可为首研站带来早期团队，并接收产品就绪包；未来科学城与怀柔科学城可带来科研成果，并接收面向真实城市任务的验证证据 [source:HAIDIAN-AI-NORTH-LATITUDE-2025] [source:BEIJING-THREE-CITIES-ONE-ZONE] [source:BEIJING-HUAIROU-2026]。
+
+经开区可带来制造和产业场景，并接收经过运营验证的规模化服务；京津冀协作节点可提出跨区真实需求，并接收记录差异条件、培训、SLA 和退出方式的复用包。以上均为建议接口，不代表已建立合作 [source:BEIJING-ETOWN-AI-2026]。
 
 | 层级 | 设计问题 | 方案回答 | 数据落点 |
 | --- | --- | --- | --- |
@@ -186,6 +196,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
+截至 2026 年 7 月，北京市园林绿化部门已公布京张铁路遗址公共空间二期配套工程完工，北段约 30.01 公顷，并形成南北、东西“鱼骨状”慢行联系；一期 2.5 公里公共空间此前已开放，保留铁轨、道岔和站房等铁路遗存 [source:JZ-PARK-PHASE2-COMPLETE-2026] [source:JZ-PARK-PHASE1-2023]。因此本方案不把已建成公共空间冒充自身设计，也不重复发明一条“未来绿轴”，而是在其上叠加四类轻量、可撤除的采用服务：首发窗口、证据站牌、人工接管点和限定时空的 AI 辅助路径。关掉 AI 后，路仍通、树仍荫、座椅仍可用。
+
 市政和公共服务设施应覆盖AI产业服务设施、创新服务平台、人才生活服务设施、新型基础设施、分布式能源、端侧算力和传统市政设施融合。方案应说明设施标准、空间布局、服务半径、运营模式和分期实施逻辑。缺少管线、能源、排水、防洪、消防等工程资料时，应列为正式深化前置条件。
 
 ## 蓝绿空间、公共空间与城市风貌
@@ -195,6 +207,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 蓝绿公共空间由设计深度项和绿地、公共空间图层共同校核 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。绿地与公共空间比例在正文解释设计意义，完整复算保存在 `metrics.json`；城市风貌、公共空间和建筑控制的统筹则回到专业标准矩阵 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
+
+清华园车站旧址在官方文物名录中作为市级文物保护单位提供历史锚点，但本方案只把其作为导览与叙事参照，不推定保护范围、建设控制地带或工程许可 [source:QINGHUAYUAN-HERITAGE-2023]。图面中的道路、轨道、河流、站点与高校环境来自经简化的 OpenStreetMap 展示图层，并明确标注“非审批图”；其用途仅为帮助评审理解空间关系，不能替代官方地形、权属或控规底图 [source:OSM-CONTEXT-2026] [assumption:A-CONTEXT-MAP-001]。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -259,7 +273,4 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 北京市场景培育和开放应用政策、三张清单及海淀 AI 创新街区公开资料，见 `sources.json`
-- 新加坡榜鹅、赫尔辛基、塔林、波士顿、Woven City 与欧盟实验空间/创新采购案例，见 `sources.json`
-- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
