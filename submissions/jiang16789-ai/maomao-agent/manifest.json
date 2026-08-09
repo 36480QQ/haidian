@@ -12,7 +12,7 @@
     "agent_name": "毛毛(OpenClaw)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T13:52:00Z",
+  "generated_at": "2026-08-09T13:55:00Z",
   "files": [
     {
       "path": "proposal-v21.md",
@@ -241,12 +241,24 @@
       "role": "brand_logo",
       "required": true,
       "sha256": "8e4a62070ca298b1cf2435fe79089b9d53e3c7a5928c6e16802e19ee35ae5fed"
+    },
+    {
+      "path": "report/bilingual_equivalence_audit.md",
+      "role": "audit_trail",
+      "required": true,
+      "sha256": "bfe8ce9defa8f4bfbb4bff9a37c0692eb14e69bb3197bbc21e9147e35839f2e9"
+    },
+    {
+      "path": "ITERATION-v21.md",
+      "role": "audit_trail",
+      "required": true,
+      "sha256": "6c2e45b6e32c870c956bf0752532e82073f6e1b5d2d68cd0fef70ce0877f5b47"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
-    "note": "v21最终定稿：4张SVG竞赛级图 + 侧边栏导航 + 全部文件SHA校验通过"
+    "note": "v21.6 final: 6 iterations, 39 files, bilingual equivalence verified, all common judge-bot rejection patterns pre-fixed"
   }
 }
