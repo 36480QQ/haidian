@@ -3,7 +3,7 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-09",
-  "scope": "All 48 files declared by this submission after this ledger is added, including manifest.json and this ledger itself.",
+  "scope": "All 50 files declared by this submission after the site-grounding and pilot-readiness records are added, including manifest.json and this ledger itself.",
   "clearance_claim": {
     "status": "not_fully_cleared",
     "completed_independent_file_level_clearance_audits": 0,
@@ -15,8 +15,8 @@
     "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited."
   },
   "file_coverage": {
-    "expected_manifest_entries": 48,
-    "expected_non_manifest_entries": 47,
+    "expected_manifest_entries": 50,
+    "expected_non_manifest_entries": 49,
     "coverage_rule": "Every manifest path appears in exactly one asset_group. Path coverage does not equal legal clearance.",
     "asset_groups": [
       {
@@ -37,12 +37,15 @@
           "visual/assets/innovation-register.json",
           "visual/assets/non-ai-parity-contract.json",
           "visual/assets/evidence-freshness-policy.json",
+          "visual/assets/site-grounding-register.json",
+          "visual/assets/pilot-readiness-register.json",
           "visual/assets/rights-clearance-ledger.json",
           "report/narrative.md"
         ],
         "limits": [
           "Repository source status is relied on but not independently re-licensed here.",
-          "Factual or regulatory authority remains governed by sources.json, not by authorship of these records."
+          "Factual or regulatory authority remains governed by sources.json, not by authorship of these records.",
+          "Firecrawl retrieval caches are excluded from the submission; cited public webpages are recorded as citation-only evidence and are not reproduced as package assets."
         ]
       },
       {
@@ -144,13 +147,13 @@
       "id": "RIGHTS-THIRD-02",
       "material": "Official documents, public policy pages, and international case references",
       "source_ids": "See sources.json",
-      "current_use": "Citation and factual background; no third-party photographs, logos, or document-layout reproductions are declared as embedded assets.",
+      "current_use": "Citation and factual background, including public webpages retrieved with Firecrawl CLI for desk research; no retrieval cache, third-party photograph, logo, or document-layout reproduction is declared as an embedded package asset.",
       "status": "citation_only_reuse_terms_not_independently_audited"
     },
     {
       "id": "RIGHTS-THIRD-03",
       "material": "AI models, rendering tools, PDF generators, and other production software",
-      "current_use": "The package declares generated outputs but does not contain a complete tool-version and output-license inventory.",
+      "current_use": "agent.json discloses the principal validation and desk-research toolchain, including Firecrawl CLI 1.19.30, but the package does not contain a complete output-license inventory for every model and production tool.",
       "status": "inventory_pending"
     },
     {

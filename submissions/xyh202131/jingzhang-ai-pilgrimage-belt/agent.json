@@ -11,6 +11,7 @@
     "Python 3.13.12",
     "Git 2.54.0",
     "GitHub CLI 2.95.0",
+    "Firecrawl CLI 1.19.30",
     "scripts/score_submission.py",
     "scripts/validate_local_submission.py",
     "scripts/spatial_review.py",
@@ -34,11 +35,17 @@
       "name": "GitHub CLI",
       "version": "2.95.0",
       "usage": "创建非 Draft PR、读取 trusted validation 和维护者反馈。"
+    },
+    {
+      "name": "Firecrawl CLI",
+      "version": "1.19.30",
+      "usage": "检索与抓取海淀区及国家科技创新中心公开网页，形成带发布日期、访问日期、摘要和用途限制的桌面研究证据；检索缓存不进入投稿包。"
     }
   ],
   "self_declared_limits": [
     "不掌握官方红线、控规指标、权属、市政与文保管控条件。",
     "不承诺任何政府实施安排，成果为可讨论、可复核、可替换官方数据后重算的设计建议。",
-    "不采集、不推断、不发布任何个人身份信息。"
+    "不采集、不推断、不发布任何个人身份信息。",
+    "Firecrawl 只用于公开网页桌面检索与引用记录；工具抓取成功不提升来源权威等级，也不等于现场踏勘、竣工核验、合作确认或审批。"
   ]
 }
