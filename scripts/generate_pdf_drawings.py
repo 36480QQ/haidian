@@ -186,23 +186,24 @@ def a3_page2(pdf: FPDF, _metrics: dict[str, Any]):
         pdf.set_xy(x + 4, 50)
         pdf.multi_cell(116, 4, desc)
 
-    # Scenario cards
+    # Scenario cards — 3 detailed testing scenarios matching proposal.md
     pdf.set_xy(20, 105)
     pdf.set_font("NotoSansSC", "B", 12)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(0, 8, "AI+ 场景 Scenario Cards", align="L")
+    pdf.cell(0, 8, "产业测试验证场景 Testing Scenarios", align="L")
 
     scenarios = [
-        ("AI+交通", "自动驾驶接驳\n智慧信号灯\n交通数据平台", "#0284c7"),
-        ("AI+医疗", "AI辅助诊断\n远程医疗\n健康管理平台", "#059669"),
-        ("AI+教育", "个性化学习\n虚拟教师\n教育数据分析", "#d97706"),
-        ("AI+城市", "智慧市政\n环境监测\n公共安全预警", "#be123c"),
-        ("AI+产业", "智能制造\nAI研发平台\n产业孵化器", "#4f46e5"),
+        ("安全治理沙盒", "众智园AI自主创新加速区\n模型红队测试、标准制定\n安全评测展示",
+         "#0284c7"),
+        ("智能体实景测试场", "大钟寺AI产业聚集区\n多智能体协作测试\n交通调度验证",
+         "#059669"),
+        ("开源模型评测走廊", "北京AI原点社区近校成果转化街\n高校模型对比测试\n开源模型排行榜",
+         "#d97706"),
     ]
 
     for i, (title, desc, color) in enumerate(scenarios):
-        x = 20 + i * 78
-        draw_card(pdf, x, 116, 72, 28, title, desc, tuple(int(color[j:j+2], 16) for j in (1, 3, 5)))
+        x = 20 + i * 130
+        draw_card(pdf, x, 116, 124, 28, title, desc, tuple(int(color[j:j+2], 16) for j in (1, 3, 5)))
 
     # User scenarios
     pdf.set_xy(20, 150)
@@ -270,14 +271,14 @@ def a3_page3(pdf: FPDF, _metrics: dict[str, Any]):
 
     # Case studies table
     cases = [
-        ("旧金山 Mission Bay", "锚点机构组织生态链", "众智园国家级平台+龙头企业"),
-        ("纽约 Hudson Yards", "TOD+公共空间拉动更新", "大钟寺站TOD+四象限连通"),
-        ("伦敦 King's Cross", "历史铁路用地转型知识经济", "京张遗址公园+AI创新走廊"),
-        ("新加坡 one-north", "政府主导+企业运营+人才社区", "三区两翼+混改运营平台"),
-        ("杭州云栖小镇", "会展驱动产业聚集", "全球AI活动周+公共路线"),
-        ("深圳留仙洞", "总部经济+产业园区", "AI原点社区+成果转化街"),
-        ("波士顿 Kendall Square", "高校-产业-资本闭环", "清北科近校创新生态圈"),
-        ("首尔 Digital Media City", "媒体+IT+文化融合", "AI+文化传播+国际传播"),
+        ("多伦多 Sidewalk Labs", "数据治理信任危机导致搁浅", "数据最小化、独立治理框架、人工复核"),
+        ("深圳南山科技园", "高校策源+三螺旋协同", "原点社区与清北科制度协同、近校成果转化街"),
+        ("伦敦 King's Cross", "文化遗产锚点吸引科技企业", "京张遗址公园文化活化、AI朝圣路线"),
+        ("新加坡 one-north", "政府主导20年分期弹性规划", "近期/中期/远期实施阶段、phasing.geojson"),
+        ("柏林工大周边", "开源社群自组织", "开源评测走廊、开发者社区、季度黑客马拉松"),
+        ("杭州云栖小镇", "品牌活动拉动产业集聚", "全球AI开发者节、年度活动体系"),
+        ("旧金山 Mission Bay", "锚点机构组织生态链", "众智园国家级平台+龙头企业组织生态"),
+        ("北京AI原点社区", "无边界街区+高校策源+青年服务", "创新带建设的现状真值，在此基础上延展三区两翼"),
     ]
     # Table header
     pdf.set_fill_color(15, 23, 42)
@@ -310,10 +311,10 @@ def a3_page3(pdf: FPDF, _metrics: dict[str, Any]):
     agents = [
         ("agent.1", "命名体系与视觉识别", "京智链·JingZhi Chain, 双螺旋Logo, 色彩/字体/图标系统"),
         ("agent.2", "全球案例与生态图谱", "8个案例, 含来源/可比性/设计动作映射表"),
-        ("agent.3", "产业测试场景", "AI+交通、医疗、教育、城市、产业五大场景"),
+        ("agent.3", "产业测试验证场景", "安全治理沙盒、智能体实景测试场、开源模型评测走廊"),
         ("agent.4", "地标/荣誉/组件", "AI朝圣地标、贡献墙、组件库、导视标识"),
         ("agent.5", "文化传播", "国际传播叙事、年度活动体系、文化符号"),
-        ("agent.6", "运营机制", "混改运营平台、三级赞助体系、数据治理框架"),
+        ("agent.6", "运营机制", "多方共治委员会、年度活动体系、开发者社区、场景开放计划"),
     ]
     for i, (aid, name, desc) in enumerate(agents):
         y = 109 + i * 10

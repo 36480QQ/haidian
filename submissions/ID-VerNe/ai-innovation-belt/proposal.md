@@ -2,7 +2,6 @@
 title: "京智链·AI融合创新带——百年京张AI创新带城市设计方案"
 author_github: "ID-VerNe"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -257,7 +256,7 @@ English name: "JingZhi Chain · AI Fusion Innovation Belt (JZ-AI Belt)". 命名�
 
 蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio] 和 [metric:public_space_ratio]。城市设计管理办法要求统筹景观风貌、公共空间和建筑控制，因此本节同时引用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
-需要说明的是，本方案绿地率约为 7%（[metric:green_ratio]=0.070451），该值完全由临时边界内的绿地图层计算得出，未计入边界外的周边公园绿地。正式红线范围内预计绿地率可达 25%-30%，与北京同类 AI 创新区水平一致。在取得官方 SITE_BOUNDARY 多边形后，绿地率、公共空间比例等指标须全部按正式边界复算。
+需要说明的是，本方案绿地率约为 7%（[metric:green_ratio]=0.070451），该值完全由临时边界内的绿地图层计算得出，未计入边界外的周边公园绿地。正式红线范围内的绿地率目标尚未公布，预计在 25-35% 区间（与北京同类 AI 创新区水平相当为设计假设，有待官方数据验证）。在取得官方 SITE_BOUNDARY 多边形后，绿地率、公共空间比例等指标须全部按正式边界复算。
 
 城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
 

@@ -18,14 +18,14 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": "6f4e4a2c79b1fbd82680d75cf8ca54703bab1239d94be3a5d707042184972635"
+      "sha256": "34d949561575492610cafdc11d991db6fc011ea2d50b601c2faa82deec354f12"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "70d56a3ab012a760727311659edbe765529c23f697857d7ec516de12423f5947"
+      "sha256": "1427b008540dbc13592d5607c1b11422d3d1d7f5cd2c919bd73e9d7c51889e86"
     },
     {
       "path": "agent.json",
@@ -37,7 +37,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "58dcaa3fa7c3d42e60a8455d614d0f11e28ab3b4da6199dc099de19932720c39"
+      "sha256": "8b0a7cb457993ae1161977db8a7c085357fb890cf0f6d339475783fa990fc30d"
     },
     {
       "path": "assumptions.json",
@@ -92,28 +92,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "55cc4f7e2bda04aed25f4a6e093df57ec3dd56287aa090428b89dcce7584f265"
+      "sha256": "938cd717bfd10f53a1f27d019efedff91ea9336c259d169d3285a01d72f13f3c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "515d2bc8dd98795bdd29ac565d0c00340e360ee191028bc13a6059c4c45dfb3d"
+      "sha256": "e5d082a933b415383c1e92e4d34231e80a1c9b68a0e3a1d21d8382f4872fe429"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4bce9ab94f6e3c57b59cd14aabe47433147d03d1a8a0c9831f15fa99af9936b3"
+      "sha256": "ec7f61b94ec46cadd5835decedb200067b58b419b3b1aa7efbfc25b5f8fa13a0"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3fac0f8019e6002449a265b14ce06dbb3adf921573ae79ac9ba4052bac3399c5"
+      "sha256": "4b4fb870d525fe50ba6ce15e81902c42314be546a7fffcd1b00833ceedd3d4c8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
     "self_checked": true,
     "known_blockers": [
       "Provisional boundary: geometry/site_boundary.geojson uses agent_inferred_from_public_data, not official redline. All absolute areas are provisional.",
-      "Green ratio (0.070451) is provisional-geometry-only; official green ratio expected at 0.25-0.35 on official boundary. Metric is sensitive to boundary definition."
+      "Green ratio (0.070451) is provisional-geometry-only; official green ratio estimated at 25-35% on official boundary (design assumption, unverified). Metric is sensitive to boundary definition."
     ],
     "data_confidence": "low"
   }

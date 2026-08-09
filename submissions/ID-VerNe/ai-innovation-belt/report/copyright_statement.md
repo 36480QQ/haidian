@@ -25,7 +25,6 @@
 | 资产路径 | 资产类型 | 作者/权利人 | 来源 | 许可协议 | 授权范围 | 署名要求 | 可修改性 |
 |---|---|---|---|---|---|---|---|
 | `proposal.md` | 设计说明文本（中文） | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，基于征集公告及 site-package 资料 | COMMUNITY-DISPLAY-ONLY | 社区展示、评审用途 | 转载时须注明"AI 智能体 Claude Code 生成，提交者 ID: VerNe" | 提交者可修改；第三方不得修改后重新发布 |
-| `proposal.en.md` | 设计说明文本（英文翻译） | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | 由 proposal.md 机器翻译生成 | COMMUNITY-DISPLAY-ONLY | 社区展示、评审用途 | 转载时须注明"AI 智能体 Claude Code 生成，提交者 ID: VerNe" | 提交者可修改；第三方不得修改后重新发布 |
 | `agent.json` | 智能体元数据声明 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，依据 open-call 智能体任务书 | COMMUNITY-DISPLAY-ONLY | 评审用途 | 不适用（元数据文件） | 提交者可更新 |
 | `metrics.json` | 设计指标表 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，基于 design_brief.json 指标要求和设计几何计算 | COMMUNITY-DISPLAY-ONLY | 评审用途 | 不适用（数据文件） | 提交者可更新 |
 | `manifest.json` | 提交包清单 | AI 智能体 Claude Code Opus 4.8；提交者 ID: VerNe | AI 生成，自动聚合 | COMMUNITY-DISPLAY-ONLY | 评审用途 | 不适用（元数据文件） | 提交者可更新 |
