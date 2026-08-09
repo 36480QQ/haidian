@@ -50,7 +50,7 @@
       "question_id": "Q-004",
       "question_zh": "能否提供临时边界或地块的精确位置、面积或法定结论？",
       "question_en": "Can a provisional boundary or parcel be used to provide an exact location, area, or statutory conclusion?",
-      "source_ids": ["BOUNDARY-SOURCE", "KEY-AREA-SOURCE"],
+      "source_ids": ["DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "allowed_use_zh": "仅说明其为概念生成、展示或临时核验使用的 provisional 数据。",
       "allowed_use_en": "Only state that it is provisional data for concept generation, display, or temporary checks.",
       "prohibited_inference_zh": "不得提供或推断官方红线、权属、审批、精确面积、工程线位或可实施地块结论。",
@@ -75,8 +75,7 @@
     "permitted_source_ids": [
       "SITE-PACKAGE",
       "SOURCE-REGISTRY",
-      "BOUNDARY-SOURCE",
-      "KEY-AREA-SOURCE",
+      "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "HAIDIAN-JZ-PHASE2-OPEN-2026",
       "BEIJING-AI-ORIGIN-2026",
       "HAIDIAN-15FYP-2026"
@@ -85,7 +84,7 @@
     "usage_limits": {
       "official_or_project_register": "SITE-PACKAGE and SOURCE-REGISTRY support only project-material navigation, source status, and stated-use limits; they do not create legal authority or rights clearance.",
       "background": "HAIDIAN-JZ-PHASE2-OPEN-2026, BEIJING-AI-ORIGIN-2026, and HAIDIAN-15FYP-2026 support dated public-background citations only; they do not establish current field conditions, partnerships, siting, budgets, approvals, or delivery commitments.",
-      "provisional_boundary": "BOUNDARY-SOURCE and KEY-AREA-SOURCE support concept generation, display, and temporary checks only; they must trigger refusal for official redline, ownership, approval, precise-area, engineering, or parcel requests.",
+      "provisional_boundary": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605 supports concept generation, display, and temporary checks only; it must trigger refusal for official redline, ownership, approval, precise-area, engineering, or parcel requests.",
       "project_material": "No source in this contract authorizes a formal procedure, case determination, or autonomous service operation; such requests require human handoff."
     }
   },

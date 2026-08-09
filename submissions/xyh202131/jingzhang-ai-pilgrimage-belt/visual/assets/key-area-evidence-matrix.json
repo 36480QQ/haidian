@@ -49,7 +49,7 @@
       "ai_service_zone_ref": "geometry/constraints.geojson#AI-ZONE-001",
       "scenario_node_refs": ["SCENE-001", "SCENE-002", "SCENE-003", "SCENE-004"],
       "acceptance_contract_ref": "visual/assets/pilot-readiness-register.json#JZ-03",
-      "source_ids": ["HAIDIAN-JZ-MIDTERM-2026", "HAIDIAN-AI-TRIAL-FIELD-2026", "BOUNDARY-SOURCE", "KEY-AREA-SOURCE"],
+      "source_ids": ["HAIDIAN-JZ-MIDTERM-2026", "HAIDIAN-AI-TRIAL-FIELD-2026", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "current_evidence_state": {
         "geometry": "provisional_only",
         "desk_research_chain": "documented",
@@ -97,7 +97,7 @@
       "ai_service_zone_ref": "geometry/constraints.geojson#AI-ZONE-002",
       "scenario_node_refs": ["SCENE-005", "SCENE-006", "SCENE-007", "SCENE-008"],
       "acceptance_contract_ref": "visual/assets/pilot-readiness-register.json#JZ-04",
-      "source_ids": ["HAIDIAN-AI-TRIAL-FIELD-2026", "HAIDIAN-JZ-MIDTERM-2026", "BEIJING-AI-ORIGIN-2026", "BOUNDARY-SOURCE", "KEY-AREA-SOURCE"],
+      "source_ids": ["HAIDIAN-AI-TRIAL-FIELD-2026", "HAIDIAN-JZ-MIDTERM-2026", "BEIJING-AI-ORIGIN-2026", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "current_evidence_state": {
         "geometry": "provisional_only",
         "desk_research_chain": "documented",
@@ -145,7 +145,7 @@
       "ai_service_zone_ref": "geometry/constraints.geojson#AI-ZONE-003",
       "scenario_node_refs": ["SCENE-009", "SCENE-010", "SCENE-011", "SCENE-012"],
       "acceptance_contract_ref": "visual/assets/pilot-readiness-register.json#JZ-05",
-      "source_ids": ["HAIDIAN-JZ-PHASE2-OPEN-2026", "HAIDIAN-15FYP-2026", "HAIDIAN-JZ-MIDTERM-2026", "BOUNDARY-SOURCE", "KEY-AREA-SOURCE"],
+      "source_ids": ["HAIDIAN-JZ-PHASE2-OPEN-2026", "HAIDIAN-15FYP-2026", "HAIDIAN-JZ-MIDTERM-2026", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "current_evidence_state": {
         "geometry": "provisional_only",
         "desk_research_chain": "documented",
