@@ -72,6 +72,30 @@
       "status": "recalculation_required",
       "statement": "A change to official boundary, transport network, station access or demand revision must regenerate geometry, metrics, figures, HTML, drawings and self-check together.",
       "impact": "No single visual refresh may be used to claim completion."
+    },
+    {
+      "id": "A-EXTERNAL-COMMUTE-001",
+      "status": "requires_cross_boundary_od",
+      "statement": "External commuting origins and destinations cross the provisional boundary, but no consented grouped OD, mode split, parking inflow or cross-line transfer sample is available.",
+      "impact": "External commute metrics stay unknown; P0 must use dated grouped counts and preserve origin/destination privacy."
+    },
+    {
+      "id": "A-MULTIMODAL-SIM-001",
+      "status": "requires_local_calibration",
+      "statement": "The package has no local signal timing, station capacity, bicycle behaviour, pedestrian conflict or wheelchair movement calibration dataset.",
+      "impact": "SUMO and other simulation methods remain reproducible scaffolds; no simulated value is reported as current performance."
+    },
+    {
+      "id": "A-AIR-EXPERIMENT-001",
+      "status": "approval_and_safety_unknown",
+      "statement": "No airspace, route, airworthiness, operator, insurance, weather, fire, noise, emergency or public-participation approval exists for an air-mobility experiment.",
+      "impact": "Air mobility is a conditional ground-first candidate only; no route, vertiport, flight or construction commitment is made."
+    },
+    {
+      "id": "A-PEOPLE-FLOW-001",
+      "status": "requires_professional_model",
+      "statement": "Pedestrian, bicycle, wheelchair, vehicle and evacuation movements need a professional conflict and safety model with field observation.",
+      "impact": "People-flow conflict and overall-efficiency metrics remain unknown until hard safety gates and field calibration are complete."
     }
   ]
 }

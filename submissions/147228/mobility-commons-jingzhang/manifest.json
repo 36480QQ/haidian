@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium"
   },
@@ -110,7 +110,7 @@
       "path": "assumptions.json",
       "role": "data",
       "required": true,
-      "sha256": "46e04879bc97c64f3db2c35155c23d7250bd964129b936a6312f530f89fcbc8c"
+      "sha256": "6d2288968fe82c5385e51c89a942db38074debb462ede972cfea56db29bde486"
     },
     {
       "path": "changelog.md",
@@ -206,7 +206,7 @@
       "path": "geometry/roads.geojson",
       "role": "asset",
       "required": true,
-      "sha256": "c67f545f88ac4087f5a99801d0acfdf20007c746e867516efe54d4b73d455921"
+      "sha256": "8704807040a217baff5d286b067e67355ea0853ecc4c532e7555e5e42f6ffbe7"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -218,7 +218,7 @@
       "path": "metrics.json",
       "role": "data",
       "required": true,
-      "sha256": "fc3d2a3211280e30160e66461f54770dc56a8fd1158e65566472604772e1ee1f"
+      "sha256": "94d927b77194601a2ac6166529af600d600578efde41a1ff51bacc1366b4abab"
     },
     {
       "path": "proposal.en.md",
@@ -226,14 +226,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b0b937f64cae69dd6e837ab45de6d499ba8563f9a03433130edc5e197dedeeff"
+      "sha256": "51a2c0b0888e8ec34a6594599b90e90eeee5b604cfc98341b64b1e7ecc2a49ef"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "17fd8e2c019ce5670dd95e7de711c20ed05068d51e2fe424aeae77b3c76d172d"
+      "sha256": "b03df6f3d3c132220d5ab139214ce206708650f02564a8b8e3686a1f17e2cb43"
     },
     {
       "path": "report/copyright_statement.md",
@@ -265,19 +265,19 @@
       "path": "self_check.json",
       "role": "data",
       "required": true,
-      "sha256": "93df86df6e92c0f86f018d5ecce1fc3b5fd74a43ad7f28802b591e285bdd3a0f"
+      "sha256": "bc7df0fa705e7404e16a001d073977146815844f368c814671a236aa21e89729"
     },
     {
       "path": "sources.json",
       "role": "data",
       "required": true,
-      "sha256": "f353538059d2462e3b07ccb7d4034ac16e7f28e4eb7c2c2444a15eca89e49288"
+      "sha256": "2f46c1f6c473cb3e3e8cdf0076638ade6b7dbc2f9e066274b4681d50c91097de"
     },
     {
       "path": "standard_matrix.json",
       "role": "data",
       "required": true,
-      "sha256": "ee4e9eb25bf4e3a5a4c3c3f020f980576f02b29850186337b10c4cfd17de65cd"
+      "sha256": "78b8763ac736e7dc38c577d32b3a1833d51c1998ee61064df49f79963c350d39"
     },
     {
       "path": "visual/assets/curb-states.json",
@@ -287,7 +287,7 @@
     {
       "path": "visual/assets/demand-ledger.json",
       "role": "data",
-      "sha256": "c0f933ae96ce70f8c569efb2ba67246ee1cdf0e047e644b4a09fedb0609fa51f"
+      "sha256": "a3e81838022227b885e5d615d5f446b2b3ca2e3da3d171fb716ff5fc3d5d604b"
     },
     {
       "path": "visual/assets/evidence-ledger.json",
@@ -320,14 +320,38 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "41ae74f5b2cf08586af5e603e5076b65a4b685c5a0048e255f1f3ecfe316d670"
+      "sha256": "4e4a623b3f5999a8778f2e4893e06dc15abcc8dc6e98bf8f9d93d07421e1b6d2"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "aaa111a822475ff76750a821d56d050a6a090014fae36bc68c14f484d78275a2"
+      "sha256": "1751d84904ba0d146c231f7ffa91ec70e134a425fa5eefd22f75613a72e94b9e"
+    },
+    {
+      "path": "visual/assets/multimodal-network.json",
+      "role": "data",
+      "required": false,
+      "sha256": "42e7cbfd42e0b6b93683e092e644f801b9b25e2e089239d18b8eb59d443d322a"
+    },
+    {
+      "path": "visual/assets/movement-simulation.json",
+      "role": "data",
+      "required": false,
+      "sha256": "db4224650aaee32c8295717f2e0e4e26bd577ba1e0e1b0aaf0687a5c7f2baa7d"
+    },
+    {
+      "path": "visual/assets/air-mobility-gate.json",
+      "role": "data",
+      "required": false,
+      "sha256": "35a748f82ec879c1ed95e8db47ea305755d2c76b364fb231d4ca7586608da636"
+    },
+    {
+      "path": "visual/assets/external-commute-ledger.json",
+      "role": "data",
+      "required": false,
+      "sha256": "83221f7e83ff164c8d4ebd3ba047001ada926e9796ca3b2d2d9b54f9a58ad30b"
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "status": "uncalibrated_scaffold",
+  "people_flow_groups": [
+    "enterprise_employee",
+    "resident",
+    "carer",
+    "child",
+    "wheelchair_user",
+    "visitor",
+    "logistics",
+    "maintenance",
+    "night_worker",
+    "emergency_responder"
+  ],
+  "scenarios": [
+    "weekday_am_peak",
+    "weekday_pm_peak",
+    "off_peak",
+    "event_day",
+    "rain_or_heat",
+    "metro_bus_outage",
+    "road_parking_failure",
+    "air_ground_only",
+    "air_weather_cancelled"
+  ],
+  "inputs": {
+    "metro_bus": "schedule_station_capacity_wait_transfer_buffer",
+    "bicycle": "parking_share_conflict",
+    "car": "intersection_queue_parking_loading_charging_emergency",
+    "walking_wheelchair": "width_crossing_gradient_care_stop_accessible_detour"
+  },
+  "hard_gates": [
+    "fire_emergency",
+    "accessibility_continuity",
+    "public_transport_protection",
+    "privacy",
+    "human_service"
+  ],
+  "objective": {
+    "method": "hard_gates_then_pareto",
+    "minimize": [
+      "generalized_cost",
+      "people_flow_conflicts",
+      "car_vkt",
+      "energy",
+      "worst_group_gap"
+    ],
+    "outputs": [
+      "multimodal_system_efficiency_index",
+      "person_flow_conflict_rate",
+      "mode_transfer_reliability"
+    ]
+  },
+  "calibration": {
+    "status": "unknown",
+    "required": [
+      "field_counts",
+      "signal_timings",
+      "station_capacity",
+      "bicycle_behaviour",
+      "pedestrian_and_wheelchair_audit"
+    ]
+  }
+}

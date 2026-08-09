@@ -25,7 +25,19 @@
           "emergency"
         ],
         "official_boundary": false,
-        "boundary_precision": "provisional_rough"
+        "boundary_precision": "provisional_rough",
+        "mode_layers": [
+          "metro",
+          "bus",
+          "walk",
+          "wheelchair",
+          "bicycle",
+          "car",
+          "service"
+        ],
+        "external_commute_role": "cross_boundary_od_and_transfer_interface",
+        "simulation_ref": "movement-simulation-v1",
+        "air_candidate_interface": "conditional_ground_first_only"
       },
       "geometry": {
         "type": "LineString",
@@ -65,7 +77,19 @@
           "emergency"
         ],
         "official_boundary": false,
-        "boundary_precision": "provisional_rough"
+        "boundary_precision": "provisional_rough",
+        "mode_layers": [
+          "metro",
+          "bus",
+          "walk",
+          "wheelchair",
+          "bicycle",
+          "car",
+          "service"
+        ],
+        "external_commute_role": "cross_boundary_od_and_transfer_interface",
+        "simulation_ref": "movement-simulation-v1",
+        "air_candidate_interface": "conditional_ground_first_only"
       },
       "geometry": {
         "type": "LineString",
@@ -105,7 +129,19 @@
           "emergency"
         ],
         "official_boundary": false,
-        "boundary_precision": "provisional_rough"
+        "boundary_precision": "provisional_rough",
+        "mode_layers": [
+          "metro",
+          "bus",
+          "walk",
+          "wheelchair",
+          "bicycle",
+          "car",
+          "service"
+        ],
+        "external_commute_role": "cross_boundary_od_and_transfer_interface",
+        "simulation_ref": "movement-simulation-v1",
+        "air_candidate_interface": "conditional_ground_first_only"
       },
       "geometry": {
         "type": "LineString",
@@ -145,7 +181,19 @@
           "emergency"
         ],
         "official_boundary": false,
-        "boundary_precision": "provisional_rough"
+        "boundary_precision": "provisional_rough",
+        "mode_layers": [
+          "metro",
+          "bus",
+          "walk",
+          "wheelchair",
+          "bicycle",
+          "car",
+          "service"
+        ],
+        "external_commute_role": "cross_boundary_od_and_transfer_interface",
+        "simulation_ref": "movement-simulation-v1",
+        "air_candidate_interface": "conditional_ground_first_only"
       },
       "geometry": {
         "type": "LineString",
