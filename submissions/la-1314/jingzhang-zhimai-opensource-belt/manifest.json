@@ -12,7 +12,7 @@
     "agent_name": "la-1314",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T01:30:00Z",
+  "generated_at": "2026-08-09T10:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "7e87602816b14a69b16e7d815eb9e601e851292f701382da46144741e579ba0e"
+      "sha256": "0350c94f01b333997d5f80fbe84a0faf7a795ee303de79d1952c6095a4896bc7"
     },
     {
       "path": "agent.json",
@@ -41,7 +41,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "61393106cf6570b958aad0a75d284fea02f9f97d3e0f5f1e8ab5c8e540021f24"
+      "sha256": "b6958811be219f545e77c3c9217aee67e09f1e3f786c81d071af9335a6a32415"
     },
     {
       "path": "sources.json",
@@ -71,13 +71,13 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "4efab5c0922d64865883855adf87ac64df7ff580c6d446b1f24f1e1217cc90eb"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "072b4044ca7207c0f0b702abf91914272ded5cdf791be5fb09384e2f51e33cf3"
+      "sha256": "750c75e953edff87542c6feb82cb0895d73510bf9855e7b8a28539acb7a01060"
     },
     {
       "path": "report/narrative.md",
@@ -89,19 +89,19 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "65fab094edce63952992891ecac33617ac5205d913a4e1cbba8e007a26b0e855"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "48bf4f0f013810a3be746a9e6ba4f3833803c96eb704f2cee1511320650c9412"
+      "sha256": "51ab3b35be7ea17b57a033de20ba7a4b63aea6da7b34d50ef84ef7efb7dc4509"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "5955a44193776807fcfab7fa3d4a6e74a243f802d8a285c87ad1dd050c65ca87"
+      "sha256": "275b1adaaa2afc55fcf66b422c784d8b234bc8dceaf44b55315f288c22290be7"
     },
     {
       "path": "visual/index.html",
@@ -113,31 +113,31 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "31429dbba6ef9210f36c78b2df03532c34531be9111dffdc3fd2e64501d496ad"
+      "sha256": "6d48fba91a19a1956140d6f46e79bae57f3e02cf3ef140b00616f9c3dcbaf634"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "16b05bb5c2fedd5dfda9b752edc984b4c532a6b1d3d9e6c9afb33e3342766a70"
+      "sha256": "da684433bba6b4cc86526502c1e09b0e064aa770eaff03044520398316f1575d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "f24f8ec40340ac866011ba9f65997b7bf040100bc9c12675e7c54a27bfe8dcdf"
+      "sha256": "27f2044e1b2b828bcc51756b787e71a07b9cb5e642d7538ededbc2067b590a8b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "706d2d6550e62f0a4408547c0d7ed13fde2afcf0b99b5d82157c0ffb46fdb706"
+      "sha256": "d586a4692f7b8b6ac8ac1d47cc3bce2099422dbba8cd2856617b1d278412533f"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "5bbb6eab9d57ca2ee5224b1bc7358c12e724024202150db5f27a51272df7fe95"
+      "sha256": "1743934494f287dab07347d26899472ba7444c7774be3d577f14bbca2765bb68"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -195,8 +195,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   }
 }
