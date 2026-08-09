@@ -72,7 +72,17 @@ For reviewer-visible reverse tracing, `visual/assets/ai-era-traceability-index.j
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-This section follows the required report frame but makes no parcel-level retain, renovate, demolish, new-build, scale, or control conclusion. Concept land-use and footprint layers only show relationships among resilience, collaboration, blue-green buffers, reversible space, culture/data governance, and night service. Far and building height stay explicitly unknown pending authorized controls and survey. [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/buildings.geojson#FOOTPRINT-01] [metric:far]
+This section translates the temporary geometry into spatial actions that can be compared. The FAR and storey ranges below are concept ranges for testing the relationship between public ground floors, low-scale service nodes, and upper envelopes. They are not control-plan indicators and do not describe existing conditions. The three key areas start with public interfaces and human service, then move to formal-boundary, tenure, fire, municipal, heritage, and existing-building review. [standard:MOHURD-CONTROL-DETAILED-PLANNING] [data:geometry/buildings.geojson#FOOTPRINT-01] [metric:building_footprint_area_sqm]
+
+| Key area | Concept spatial move | Concept massing range | Retain, renew, and review first |
+|---|---|---|---|
+| Zhongzhiyuan | Link a problem station, shared-experiment front desk, and public observer seat along a human-priority route. Keep a screen-free entry, human takeover point, and withdrawable display at ground level. | Concept FAR 1.2–1.8; public interface 2–4 storeys; upper height unknown | Check existing campus services and public-access conditions before deciding retain, renew, or build. `PROV-KEY-001` is not a parcel line. |
+| AI Origin Community | Place the reskilling living room, intergenerational learning court, and night human service on one walkable daily route, with public space continuous with the ordinary resident path. | Concept FAR 1.0–1.5; public interface 2–3 storeys; upper height unknown | Start with accessibility walk-through, resident time-of-use, and community-service inventory. `PROV-KEY-002` is not a tenure boundary. |
+| Dazhongsi | Form a withdrawable civic living room from cultural interpretation, a public-data consent desk, and a night fallback entrance, while keeping equipment and flows away from the ordinary route. | Concept FAR 0.8–1.3; public interface 1–3 storeys; upper height unknown | Check heritage, transport, and night-service conditions before setting renewal intensity. `PROV-KEY-003` is not a construction area. |
+
+These concept ranges answer what to compare first. They do not answer where construction is permitted or how much can be built. All three areas retain human service, an ordinary route, an accessible alternative, and a withdrawal notice. [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+Formal FAR, building height, retain/renew/demolish schedule, fire review, and engineering feasibility remain `unknown` before G1. [metric:far] [metric:building_height]
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -92,11 +102,11 @@ Five conceptual project families—human buffer/retention, reskilling/night heal
 
 Each project family moves through three phases with explicit responsibility boundaries. G0 is jointly reviewed by local/planning and public-service roles, community/resident representatives, accessibility and cultural specialists for the problem, authorization and human-equivalent service. G1 is run by pilot operators, maintainers, a data-protection role and a public observer seat as a small reversible test. G2 is decided by professional reviewers, procurement/insurance and operating/local-accountability roles. Specific institutions, contracts, budgets and approvals remain `unknown`; this does not claim a confirmed partnership.
 
-| Phase | Participants and prerequisites | Readable acceptance evidence | Exit or fallback |
-| --- | --- | --- | --- |
-| G0 problem and authorization | Task crosswalk, source clearance, community seat, accessibility review and human channel | 100% of scenario cards have an accountable role, source, data-minimization and exit protocol; authorization and issue register retained | Unclear authorization, human fallback or rights boundary: remain in research |
-| G1 reversible pilot | Pilot operator, maintainer, public observer seat and independent reviewer | Group-level participation coverage, human takeover, first redress response, incident records and accessible-route continuity | Any group harmed, unexplained incident or unresolved complaint: freeze and return to human service |
-| G2 conditional expansion | Professional review, procurement/insurance, operator and local-accountability roles | Field data, permits, maintenance SLA, privacy/copyright/cultural review and a retrospective report; model output cannot replace field evidence | Any missing prerequisite: withdraw display/stop expansion; never present concept metrics as outcomes |
+| Phase | Concept time window | Participants and prerequisites | Readable acceptance evidence | Exit or fallback |
+| --- | --- | --- | --- | --- |
+| G0 problem and authorization | Quarters 0–2 after submission | Local planning, subdistrict, and public-service roles, community seat, accessibility and cultural specialists; complete task crosswalk, source clearance, and human channel | 100% of scenario cards have an accountable role, source, data-minimization and exit protocol; authorization and issue register retained | Unclear authorization, human fallback or rights boundary: remain in research |
+| G1 reversible pilot | Quarters 3–4 after submission | Pilot operator, maintainer, public observer seat, independent reviewer, and data-protection role; complete field baseline and professional review | Group-level participation coverage, human takeover, first redress response, incident records, and accessible-route continuity | Any group harmed, unexplained incident or unresolved complaint: freeze and return to human service |
+| G2 conditional expansion | Quarters 5–8 after submission | Planning, transport, water, accessibility, safety, energy, and cultural professionals with procurement/insurance, operator, and local-accountability roles | Field data, permits, maintenance SLA, privacy/copyright/cultural review and a retrospective report; model output cannot replace field evidence | Any missing prerequisite: withdraw display/stop expansion; never present concept metrics as outcomes |
 
 A four-season Commons Cycle frames public problem release, Xiaoyuehe co-learning walks, developer protocol camp, and annual v0.x health check/release note. The developer mechanism is problem register → office hours → G0 protocol → human/public review → version note; international conversion is multilingual evidence → due diligence → voluntary reversible exchange. [source:AGENT-TASKBOOK] [data:geometry/phasing.geojson#PHASE-03] [metric:scenario_g0_count]
 
