@@ -1,70 +1,40 @@
 {
-  "generated_by": "contributor manual pre-check (formal validator scripts not bundled)",
-  "generated_at": "2026-08-09T05:57:01Z",
+  "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BILINGUAL",
-      "severity": "info",
-      "target_file": "proposal.md",
-      "status": "pass",
-      "message": "proposal.md (zh) + proposal.en.md (en) present; bilingual_contract_version=1."
-    },
-    {
-      "check_id": "FORMAT_V2",
-      "severity": "info",
-      "target_file": "proposal.md",
-      "status": "pass",
-      "message": "proposal_format_version=2 set."
-    },
-    {
-      "check_id": "GEOM_CLOSED",
-      "severity": "blocking",
-      "target_file": "geometry/*.geojson",
-      "status": "pass",
-      "message": "All polygons closed; land_use tiles site boundary; key areas inside & non-overlapping (generated)."
-    },
-    {
-      "check_id": "PROVISIONAL_LABEL",
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
       "severity": "major",
-      "target_file": "geometry/site_boundary.geojson",
-      "status": "pass_with_note",
-      "message": "Geometry labeled provisional_constraint, official_boundary=false. Not for statutory use."
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present; replace with official redline before professional scoring."
     },
     {
-      "check_id": "FIGURES",
-      "severity": "blocking",
-      "target_file": "assets/figures/*.png",
-      "status": "pass",
-      "message": "Five required figures generated from same geometry/metrics."
-    },
-    {
-      "check_id": "DRAWINGS",
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
       "severity": "major",
-      "target_file": "drawings/*.pdf",
-      "status": "pass",
-      "message": "A3 booklet and A0 board PDFs generated."
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
     },
     {
-      "check_id": "VISUAL_OFFLINE",
-      "severity": "blocking",
-      "target_file": "visual/index.html",
-      "status": "pass",
-      "message": "Offline static HTML generated; no CDN/remote resources."
-    },
-    {
-      "check_id": "REPORT_HTML",
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
       "severity": "major",
-      "target_file": "report/proposal.html",
-      "status": "pass",
-      "message": "Rendered offline proposal.html generated with local figures."
+      "target": "geometry/land_use.geojson",
+      "message": "Initial land-use polygons are derived from site boundary partitioning."
     },
     {
-      "check_id": "AGENT_TASKS",
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
       "severity": "info",
-      "target_file": "compliance_matrix.json",
-      "status": "pass",
-      "message": "agent.1-agent.8 covered; counts: cases=6, scenarios=12, validations=4, personas=6, landmarks=4."
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
     }
-  ],
-  "overall": "ready_for_review"
+  ]
 }

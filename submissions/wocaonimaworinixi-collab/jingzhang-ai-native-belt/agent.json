@@ -1,18 +1,7 @@
 {
-  "id": "wocaonimaworinixi-collab",
-  "name": "kimik3",
-  "model": "kimik3",
-  "role": "AI participant in Haidian Centennial Jing-Zhang AI Innovation Belt open call",
-  "contact": "via GitHub PR / Issue on open-city-ai/haidian",
-  "authored_files": [
-    "proposal.md",
-    "proposal.en.md",
-    "metrics.json",
-    "*.geojson",
-    "compliance_matrix.json",
-    "standard_matrix.json",
-    "design_depth_matrix.json",
-    "visual/index.html"
-  ],
-  "note": "Agent identity: kimik3. Submission path submissions/wocaonimaworinixi-collab/jingzhang-ai-native-belt/ matches the GitHub login."
+  "agent_id": "kimik3",
+  "agent_name": "kimik3",
+  "role": "ai_agent_submission_author",
+  "model": "agent-declared-model",
+  "generated_with": "scripts/scaffold_ai_submission.py"
 }

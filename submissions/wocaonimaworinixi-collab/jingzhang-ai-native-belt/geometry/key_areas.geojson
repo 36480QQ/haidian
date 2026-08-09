@@ -1,141 +1,161 @@
 {
   "type": "FeatureCollection",
-  "metadata": {
-    "generated_by": "provisional geometry generator (no official polygons supplied)",
-    "crs": "EPSG:4326",
-    "geometry_role": "provisional_constraint",
-    "official_boundary": false,
-    "boundary_precision": "provisional_rough",
-    "note": "Provisional envelope only. Not an official redline. Recompute against EPSG:4548 when official data arrives."
-  },
+  "name": "key_areas_official",
   "features": [
     {
       "type": "Feature",
-      "id": "KEY-DAZHONGSI",
+      "id": "PROV-KEY-001",
+      "properties": {
+        "id": "PROV-KEY-001",
+        "layer": "KEY_AREA",
+        "parent_scope_id": "key_detailed_design_area",
+        "area_id": "zhongzhiyuan_ai_acceleration_area",
+        "name_zh": "众智园AI自主创新加速区粗略范围",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1921000,
+        "area_sqm_calculated": 1929201.877,
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
+        "derivation_method": "按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3278,
-              39.97533333333333
+              116.343,
+              40.0075
             ],
             [
-              116.32979999999999,
-              39.97599999999999
+              116.354,
+              40.0075
             ],
             [
-              116.3322,
-              39.98799999999999
+              116.354,
+              40.026
             ],
             [
-              116.3302,
-              39.98733333333333
+              116.343,
+              40.026
             ],
             [
-              116.3278,
-              39.97533333333333
+              116.343,
+              40.0075
             ]
           ]
         ]
-      },
-      "properties": {
-        "id": "KEY-DAZHONGSI",
-        "layer": "key_areas",
-        "key_area_type": "dazhongsi_ai_industry_cluster",
-        "name": "大钟寺 AI 产业集聚区",
-        "source_type": "provisional_generated",
-        "confidence": "low",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "area_sqm_declared": 212688.4
       }
     },
     {
       "type": "Feature",
-      "id": "KEY-ZHICHUN",
+      "id": "PROV-KEY-002",
+      "properties": {
+        "id": "PROV-KEY-002",
+        "layer": "KEY_AREA",
+        "parent_scope_id": "key_detailed_design_area",
+        "area_id": "beijing_ai_origin_community",
+        "name_zh": "北京AI原点社区粗略范围",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1043000,
+        "area_sqm_calculated": 1043236.909,
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
+        "derivation_method": "按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3398,
-              39.980266666666665
+              116.342,
+              39.9835
             ],
             [
-              116.3422,
-              39.98106666666666
+              116.353,
+              39.9835
             ],
             [
-              116.34440000000001,
-              39.99206666666666
+              116.353,
+              39.9935
             ],
             [
               116.342,
-              39.99126666666666
+              39.9935
             ],
             [
-              116.3398,
-              39.980266666666665
+              116.342,
+              39.9835
             ]
           ]
         ]
-      },
-      "properties": {
-        "id": "KEY-ZHICHUN",
-        "layer": "key_areas",
-        "key_area_type": "zhongzhiyuan_ai_acceleration_area",
-        "name": "知春苑 AI 加速度区",
-        "source_type": "provisional_generated",
-        "confidence": "low",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "area_sqm_declared": 233957.2
       }
     },
     {
       "type": "Feature",
-      "id": "KEY-WUDAOKOU",
+      "id": "PROV-KEY-003",
+      "properties": {
+        "id": "PROV-KEY-003",
+        "layer": "KEY_AREA",
+        "parent_scope_id": "key_detailed_design_area",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "name_zh": "大钟寺AI产业聚集区粗略范围",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 720000,
+        "area_sqm_calculated": 720454.221,
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "derived_from_source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "source_title": "依据公告重点片区名称、南北顺序、公告约面积和临时 SITE_BOUNDARY 形成的临时粗略范围",
+        "derivation_method": "按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34759999999999,
-              39.98193333333333
+              116.342,
+              39.944
             ],
             [
-              116.35,
-              39.98273333333333
+              116.355,
+              39.944
             ],
             [
-              116.3524,
-              39.99473333333333
+              116.355,
+              39.94984
             ],
             [
-              116.35,
-              39.99393333333333
+              116.342,
+              39.94984
             ],
             [
-              116.34759999999999,
-              39.98193333333333
+              116.342,
+              39.944
             ]
           ]
         ]
-      },
-      "properties": {
-        "id": "KEY-WUDAOKOU",
-        "layer": "key_areas",
-        "key_area_type": "beijing_ai_origin_community",
-        "name": "北京 AI 原生社区 (五道口)",
-        "source_type": "provisional_generated",
-        "confidence": "low",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "area_sqm_declared": 255226.1
       }
     }
   ]

@@ -1,40 +1,11 @@
 {
-  "provisional_geometry": true,
-  "official_polygons_supplied": false,
-  "recalculation_triggers": [
-    "Organizer supplies official SITE_BOUNDARY / KEY_AREA polygons -> recompute all area metrics in EPSG:4548.",
-    "Statutory FAR / density controls published -> replace assumed_FAR=2.0.",
-    "Road carriageway widths confirmed -> compute road_area_ratio."
-  ],
-  "gaps": [
+  "schema_version": "0.1.0",
+  "assumptions": [
     {
-      "item": "official_boundary",
-      "status": "missing",
-      "impact": "Cannot claim statutory redline or precise area.",
-      "mitigation": "Provisional envelope labeled; content scoring unaffected."
-    },
-    {
-      "item": "road_width",
-      "status": "unknown",
-      "impact": "road_area_ratio unknown.",
-      "mitigation": "Marked unknown in metrics.json."
-    },
-    {
-      "item": "standards.json",
-      "status": "not_in_cleared_package",
-      "impact": "Cannot cite exact mandatory standards.",
-      "mitigation": "Used representative professional-standard set in standard_matrix.json; replace when supplied."
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
     }
-  ],
-  "design_rationales": [
-    {
-      "topic": "green_space_vs_G1A_zoning",
-      "note": "green_space.geojson (510452.1 sqm) is the actual green-core geometry; the G1A parcel in land_use.geojson (708961.3 sqm) is a zoning envelope that also includes heritage-corridor buffer and non-green public-realm uses. green_space_ratio (0.12) is computed on the conservative actual green core."
-    },
-    {
-      "topic": "land_use_mix",
-      "note": "M4 ~50% reflects an AI R&D / hard-tech innovation belt; residential and life uses are carried by R2B1 mixed living+commerce and the KEY-WUDAOKOU AI-native community, woven into mixed-use blocks. Provisional; recompute against statutory zoning."
-    }
-  ],
-  "language": "All design language is conceptual/reference; not statutory planning or implementation commitment."
+  ]
 }
