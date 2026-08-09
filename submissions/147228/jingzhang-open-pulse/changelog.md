@@ -2,6 +2,7 @@
 
 ## v3.3 - 2026-08-09
 
+- 修复英文译稿与中文主稿在增量迭代后的结构漂移：补齐 46 个标题层级、9 张评审图与 305 个证据引用的严格双语对应，清理重复风水段和残留中文，重新渲染离线英文 HTML 并刷新 manifest/版权台账哈希；不新增事实、审批或实施承诺。
 - 将 `self_check.json` 从旧脚手架记录升级为本次 exact package 的持久化四门运行证据，写入 `ok`、`can_enter_formal_review`、`review_status`、四条规范化 gate 和三个 provisional key-area 提示；manifest 同步声明 `readiness_contract=persisted-self-check-v1` 并刷新 self-check 哈希。该记录是投稿者运行回读，不替代 trusted CI 或维护者复核。
 - 降低内部模型分在首屏的权重：展厅首屏改展示官方时间序列与模型用途，不把 97.x 相对决策分做成类似竞赛成绩；新增 raw 外推物理边界守卫，超界值仅作异常提示，必须在正式数据到位后重算。
 - 同步中英文执行摘要与来源实际状态：包内来源由 59 条更新为 63 条，明确 5 条 formal、4 条 `background_only` 和 1 条 `provisional-only`，避免摘要与 `sources.json`/行政尺度基线不一致；重新渲染报告并刷新 manifest/版权台账哈希。

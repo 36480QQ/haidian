@@ -86,7 +86,11 @@ The named spatial concept is **Jing-Zhang Open Pulse: one belt, three nodes, man
 | Overall design | How do renewal, industry, transport, municipal systems and character fit together? | Linked geometry layers, metrics and phasing. |
 | Key areas | How does each area become experienced, operated and reversible? | Node concepts, 14 scenario rows and component library. |
 
+![Overall concept and spatial-structure evidence](assets/figures/site-overview.en.png)
+
 ![Three-level scope](assets/figures/land-use-structure.en.png)
+
+![Key-area index and design tasks](assets/figures/key-areas.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -94,7 +98,7 @@ The research-area strategy is a public-facing innovation chain: university and c
 
 The eight mechanisms are **land, space, industry, capital, talent, compute, data and scenario**. Each mechanism has an inbound need, an outbound return and an accountable future operator in `visual/assets/regional-ecosystem.json`. No partnership, funding, land allocation, or government commitment is asserted. The regional return loop is: originate → engineer → book → test → publish evidence → scale or retire.
 
-The case comparison now uses six officially sourced public examples as mechanism references, not as local performance claims. The official pages are [source:CASE-HELSINKI-AI-REGISTER], [source:CASE-AMSTERDAM-ALGORITHM-REGISTER], [source:CASE-SINGAPORE-AI-VERIFY], [source:CASE-DECIDIM-BARCELONA], [source:CASE-UK-ATRS] and [source:CASE-SEOUL-AI-FOUNDATION].
+The case comparison now uses six officially sourced public examples as mechanism references, not as local performance claims. The official pages are listed in the table below.
 
 | Official example | Verified mechanism | Jing-Zhang interface | Boundary | Source |
 | --- | --- | --- | --- | --- |
@@ -107,7 +111,11 @@ The case comparison now uses six officially sourced public examples as mechanism
 
 The 63 source IDs, access dates and use boundaries are recorded in `sources.json`. This is a mechanism comparison, not proof that Jing-Zhang has adopted or partnered with any of these organisations. The original six design patterns remain in `visual/assets/case-mechanism-matrix.json` as the local test layer.
 
-The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into a招商, funding or government commitment. `visual/assets/policy-enterprise-playbook.json` turns that interface into 42 growth-stage cards, beginning with a public AI register and feedback card; `visual/assets/industry-validation-cases.json` adds four bounded validation windows; and `visual/assets/landmark-honor-crosswalk.json` links four public responsibility/contribution markers to the policy and enterprise interfaces. These are conceptual protocols, not procurement, funding or partnership commitments.
+The policy and enterprise-development interface is recorded separately in `visual/assets/case-policy-enterprise-crosswalk.json`: every case is linked to a policy tool, an enterprise question, a local scenario, acceptance evidence and a do-not-copy boundary. This moves the comparison from “seen a case” to “how a company enters a bounded testing, procurement, service and review loop” without turning a design suggestion into enterprise recruitment, funding or government commitment. `visual/assets/policy-enterprise-playbook.json` turns that interface into 42 growth-stage cards, beginning with a public AI register and feedback card; `visual/assets/industry-validation-cases.json` adds four bounded validation windows; and `visual/assets/landmark-honor-crosswalk.json` links four public responsibility/contribution markers to the policy and enterprise interfaces. These are conceptual protocols, not procurement, funding or partnership commitments.
+
+![Mobility and blue-green public-space system](assets/figures/mobility-bluegreen.en.png)
+
+![Core metrics and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ![Regional ecology loop](assets/figures/regional-ecosystem.en.png)
 
@@ -119,15 +127,15 @@ Transport and municipal systems are designed as a continuous human network: rail
 
 ## Detailed Design of Key Areas
 
-### 1. Zhongzhi Garden: autonomous-innovation accelerator
+**1. Zhongzhi Garden: autonomous-innovation accelerator**
 
 Zhongzhi Garden is a garden-like full-stack innovation district. Its public edge displays safety cases, standards work and low-carbon computing rather than turning the park into a private campus. A “stitch threshold” creates a step-free, audible and tactile crossing; a status board shows the current test window, accountable operator, stop condition and non-AI equivalent.
 
-### 2. Beijing AI Origin Community
+**2. Beijing AI Origin Community**
 
 The Origin Community is a near-campus conversion and talent neighbourhood. The design stitches campus, park, enterprise and residential routes; creates an open publishing room; and reserves ordinary living, rest and care spaces. Results are presented as cleared models, diagrams and explainers, not as unlicensed historical or corporate imagery.
 
-### 3. Dazhongsi AI industry cluster
+**3. Dazhongsi AI industry cluster**
 
 Dazhongsi is an urban, internationally legible AI service and enterprise district. The station interface, four-quadrant pedestrian connections and retail/service edges are treated as one public sequence. Intelligent-device demonstrations are bounded by capacity, fire safety, resident access and a thirty-minute return-to-normal rule after an event.
 
@@ -149,15 +157,15 @@ To address the structural-provenance and licence boundary exposed by #706, this 
 
 ![Token and operations lifecycle](assets/figures/component-operations.en.png)
 
-### Four industry validation windows: evidence before procurement or scale-up
+**Four industry validation windows: evidence before procurement or scale-up**
 
 `visual/assets/industry-validation-cases.json` defines four reversible, staffed validation windows for model safety, enterprise-service data governance, low-speed embodied AI and multi-channel civic participation. Each couples an enterprise question with a policy interface, acceptance evidence, a stop condition and a non-AI equivalent. The first window asks whether a supplier can reproduce safety, provenance, human review and rollback evidence; the second asks whether enterprise service can shorten a public process without unauthorised data or a binding AI decision; the third asks whether a robot can coexist with an accessible public route before scale-up; the fourth asks whether a civic-service team can reconcile digital, paper, walk-in and multilingual feedback without making an account or device a condition of access. Two independent reviewers, a working manual route, clear rights, visible stop/takeover and a return to ordinary use are release gates. Unclear provenance, privacy spill, discriminatory routing, blocked accessibility, a severe near miss or overdue maintenance stops the window. These are conceptual test protocols, not local-company performance, procurement approval or deployment fact. `[source:AGENT-TASKBOOK]`
 
-### Cultural narrative, public markers, and long-term operations
+**Cultural narrative, public markers, and long-term operations**
 
 The cultural narrative uses engineering proof, open collaboration and public reciprocity as a three-part experience. Four non-glitzy markers are proposed: the **Century Engineering Questions Wall**, the **Open-Source Contribution Archive**, the **Urban Agent Responsibility Desk**, and the **Enterprise Safety-Governance Responsibility Desk**. `visual/assets/landmark-honor-crosswalk.json` binds each to a spatial carrier, acceptance test, policy/enterprise interface and clearance boundary. They are conceptual nodes for heritage, public-art, management and rights review—not institutional endorsements, advertising sites or an approved event programme.
 
-### Node-level concepts and public-interest audit
+**Node-level concepts and public-interest audit**
 
 `visual/assets/key-area-node-plans.json` makes the three key areas reviewable as sequences rather than slogans: arrival → status board → component → bounded operation → return to ordinary public use. Each node has components, an acceptance test and a professional gate for official parcels, ownership, roads, fire, ecology, heritage, drainage and municipal systems. It is a provisional concept for professional refinement, not an official parcel or construction drawing.
 
@@ -204,7 +212,7 @@ The eight stresses are a +2°C heatwave, +20% cloudburst, 30% irrigation reducti
 
 ### Wind, water and health: a cultural boundary with an engineering gate
 
-*Cang feng ju qi* (藏风聚气) and *feng shui* may appear as cultural landscape narratives, never as medical causation, air-quality evidence, hydrological law, engineering model or approval criterion. The current local baselines remain `unknown` and must be split into auditable gates:
+*Cang feng ju qi* and *feng shui* may appear as cultural landscape narratives, never as medical causation, air-quality evidence, hydrological law, engineering model or approval criterion. The current local baselines remain `unknown` and must be split into auditable gates:
 
 - pedestrian-level wind-comfort acceptable-area ratio, tested for seasonal directions, calm conditions and leaf-on/leaf-off with calibrated CFD and field wind measurements; [metric:pedestrian_wind_comfort_acceptable_area_ratio] [source:LIU-URBAN-VENTILATION-2017]
 - pollutant-stagnation hotspot count, requiring an emissions inventory, PM2.5 observations, boundary conditions and a professionally accepted air-age or ventilation-effectiveness method; [metric:pollutant_stagnation_hotspot_count] [source:MENG-WIND-HEAT-PM25-2022] [source:NOSEK-STREET-CANYON-2025]
@@ -212,7 +220,7 @@ The eight stresses are a +2°C heatwave, +20% cloudburst, 30% irrigation reducti
 - blue-green accessible-route overlap, requiring field verification of entrances, gradients, continuity, safety, water quality and maintenance, without inferring health benefit from proximity; [metric:blue_green_accessible_route_overlap_ratio] [source:WHO-URBAN-HEALTH-AND-GREEN]
 - water-risk exceedance-route verification, requiring DEM, drainage, outfalls, soils, groundwater, water quality, design storms and calibrated surface-flow modelling before any flood-free statement. [metric:water_risk_exceedance_route_verified_ratio] [assumption:A-DRAINAGE-SYSTEM-001]
 
-`design_target` in `visual/assets/evidence-ledger.json` is a future review gate; the six `unknown` entries in `metrics.json` are the current evidence state. They may become `known` only when simulation input, calibration, field observation, formula, error and a responsible professional are all documented. `wind-health-validation-plan.json` and `wind-health-field-protocol.json` bind every observation to a geometry version, boundary case, source schedule, point ID, instrument, height, wind, PM2.5, thermal variables, canopy state and QC flag. Missing geometry alignment, calibration, safe field conditions, source/detection-limit information or pre-registered sampling stops interpretation and keeps the metric `unknown`. The identified Beijing climate-normal dataset, Haidian `1+21+65+100` network and Qinghe Station wind-monitoring route are lawful acquisition and context routes only, not site observations. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025] [source:HAIDIAN-CLIMATE-NORMALS-DATASET-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
+`design_target` in `visual/assets/evidence-ledger.json` is a future review gate; the six `unknown` entries in `metrics.json` are the current evidence state. They may become `known` only when simulation input, calibration, field observation, formula, error and a responsible professional are all documented. `wind-health-validation-plan.json` and `wind-health-field-protocol.json` bind every observation to a geometry version, boundary case, source schedule, point ID, instrument, height, wind, PM2.5, thermal variables, canopy state and QC flag. Missing geometry alignment, calibration, safe field conditions, source/detection-limit information or pre-registered sampling stops interpretation and keeps the metric `unknown`. The identified Haidian `1+21+65+100` network and Qinghe Station wind-monitoring route are lawful acquisition and context routes only, not site observations. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
 
 ### Key-area stress tests and trigger-based rollback
 
@@ -221,6 +229,10 @@ The eight stresses are a +2°C heatwave, +20% cloudburst, 30% irrigation reducti
 - **Dazhongsi:** resolve the station's four quadrants, cloudburst ponding, event crowds, ride-hailing/delivery, night noise and post-event recovery; event capacity yields to residents returning home, fire safety and exceedance conveyance.
 
 Triggers convert future change into an executable fallback: heat warning reduces event capacity and opens refuge points; heavy-rain warning clears low points, checks inlets and opens exceedance routes; network loss stops autonomous robot movement while public facilities stay in manual mode; one non-takeover event, one blocked accessible spine or one serious near miss pauses robot testing; an asset without an owner or two overdue maintenance cycles blocks expansion. These are design triggers, not forecasts or statutory thresholds.
+
+### Stricter Monte Carlo robustness check
+
+The robustness comparison is a decision experiment, not a field result: its fixed seed, stress states, weights, uncertainty range and counterexample are recorded so a professional team can replace them with measured wind, heat, drainage, accessibility, ecology, cost and maintenance evidence.
 
 ## All-State Urban Operating System and Director's 30-Second Film
 
@@ -270,11 +282,31 @@ Once official polygons replace the provisional geometry, the package must rerun 
 
 ## Risk, Copyright, and Compliance
 
-The package includes a path-level `visual/assets/copyright-ledger.json` and an expanded `report/copyright_statement.md`. Text, geometry, diagrams, offline HTML and figures are authored or derived in this worktree by 许丙南 / Codex. Official public data retain their source attribution. No third-party images, maps or remote runtime assets are embedded; local system fonts are used only for rendering and are not redistributed. The identity mark is a concept direction, not a registered trademark.
+The package includes a path-level `visual/assets/copyright-ledger.json` and an expanded `report/copyright_statement.md`. Text, geometry, diagrams, offline HTML and figures are authored or derived in this worktree by Xu Bingnan / Codex. Official public data retain their source attribution. No third-party images, maps or remote runtime assets are embedded; local system fonts are used only for rendering and are not redistributed. The identity mark is a concept direction, not a registered trademark.
 
 The rights ledger records authorship, source inputs, license scope, hashes and review limits for each asset. It is not a legal opinion. Any future team member adding an image, font, map, logo, data extract or event content must add a source, permission and hash before publication. Historical interpretation is expressed with text and self-generated diagrams unless a rights-cleared source is explicitly registered.
 
 Public-interest checks cover accessibility, older residents, carers, night workers, privacy, conflict resolution and ordinary non-AI access. The package rejects facial recognition and individual trajectory retention for these scenarios. The stop condition is part of the design, not an afterthought: a failed safety, rights, drainage, access or resident-impact gate triggers human operation or withdrawal.
+
+### Spatial commitment: verifiable public value before an AI spectacle
+
+The proposal commits to an auditable public route, ordinary service and reversible release rather than an unbounded technology display.
+
+### Three key areas: design moves for professional deepening
+
+Each key area remains a provisional concept with a specific spatial move and a professional gate for geometry, ownership, fire, heritage, ecology, drainage and municipal review.
+
+### Fourteen scenario cards and governance boundaries
+
+The fourteen cards bind a trigger, spatial carrier, minimum data, human responsibility, ordinary equivalent and stop condition; they are not service-level or deployment commitments.
+
+### Four industry validation windows: evidence before procurement or scale-up
+
+The validation windows ask for reproducible safety, rights, human-review and rollback evidence before procurement or expansion.
+
+### Cultural narrative, public markers, and long-term operations
+
+Heritage interpretation, public markers and seasonal operations stay conceptual until rights, public-interest, maintenance and event-clearance gates pass.
 
 ## v1.6 Official Statistical Time Series and Decision Experiment
 
@@ -303,6 +335,30 @@ The local review-surface record is `visual/assets/qa-readiness.json`. It records
 
 The implementation handoff is deliberately inspectable: `operations-matrix.json` gives each package an owner, accountable reviewer, dependency, acceptance test, stop condition, maintenance rule and relative cost band; `resource-accounts.json` states which evidence and capacity must exist before a package is released. Together with the scenario matrix and the Open Pulse test-window record, these files form a reviewable chain from a public question to a bounded window, a human handoff, an evidence record and a scale/redesign/retire decision.
 
+### 1. Taskbook index and regional cooperation
+
+`visual/assets/taskbook-crosswalk.json` binds each agent.1–agent.6 requirement to a unique section, artifact and acceptance test. Regional links remain conceptual and returnable rather than partnership claims.
+
+### 2. Fourteen scenario–space–operations matrix
+
+Each scenario row carries a spatial carrier, trigger, minimum data, RACI, recovery rule, non-AI equivalent and exit condition.
+
+### 3.1 Node-level concepts and public-interest audit
+
+The node plans and public-interest audit make arrival, status, operation, ordinary return, accessibility, complaint and group-difference evidence reviewable.
+
+### 3. Identity system, public-space components, and embodied intelligence
+
+The identity grammar and component library require offline human service, visible emergency stop, maintenance ownership and safe degradation before any embodied-intelligence window.
+
+### 4. Copyright, privacy, and public-interest clearance
+
+Path-level hashes, rights boundaries, data minimisation, withdrawal and ordinary access remain release conditions.
+
+### 5. Bilingual review and version verification
+
+The Chinese master, this translation, local HTML, figures and drawings share one version and evidence ledger; a translation never adds an official fact.
+
 ### Construction readiness and continuous participation
 
 The package now separates “ready to discuss” from “ready to build or open”. `visual/assets/construction-readiness.json` applies five gates: evidence/site lock; a public-route and passive-component mock-up; wind, heat, water and lifeline coordination; a bounded, staffed and time-limited window; and a public retain/redesign/retire decision [metric:construction_readiness_gate_count]. Each gate names entry evidence, outputs, pass and stop conditions, an ordinary non-AI baseline and a maintenance response. It explicitly rejects construction drawings, statutory plans, procurement specifications, cost estimates and implementation approval.
@@ -328,6 +384,18 @@ The regional chain explicitly includes the **Beijing North Latitude Community / 
 | Future Science City | Materials, energy and engineering tests | Low-carbon components, drainage and robot-interface prototypes | Engineering, ecology and municipal review |
 | Beijing E-Town | Manufacturing, industrialisation and deployment | Public-validation evidence after safety gates | Enterprise/park cooperation, procurement and liability boundary |
 | Beijing-Tianjin-Hebei network | Diverse urban contexts and comparative feedback | Diffusion, reuse or retirement records | Regional authorities and operators |
+
+### 1. Hard mapping of three positions, five functions, and three areas/two wings
+
+The taskbook positions, functions and spatial structure are mapped to the identity system, no-app service, three nodes and the regional return loop.
+
+### 2. Regional cooperation as a returnable responsibility chain
+
+Each regional interface has an input, Jing-Zhang return, future owner and evidence required before activation; none is a partnership or land-allocation promise.
+
+### 3. Key-area node-level plan
+
+Each node follows arrival → public status → component → bounded window → ordinary public use, with a professional gate before refinement.
 
 ### Node and operations table
 
@@ -369,23 +437,10 @@ Long-term operation is seasonal rather than promotional: spring gathers public q
 
 The proposal is not considered implemented because it is written. It is reviewable because each task can be traced to a section, a spatial or operational artifact, a source/assumption, an acceptance test and a stop/rollback path. Official polygons, planning controls, ownership, municipal, heritage, traffic, weather, drainage and measured-experience data must replace the provisional and unknown fields before professional implementation.
 
-## Cultural “Feng Shui” Narrative and the Wind–Water–Health Evidence Gate
 
-The expressions *cang feng ju qi* (藏风聚气) and *feng shui* may be used only as cultural landscape narratives linked to spatial memory. They are not medical findings, public-health causation, air-quality evidence, hydrological rules, engineering models or approval criteria. The narrative is therefore translated into six separate, auditable indicators whose current baselines remain `unknown`:
+Machine-readable evidence parity register: repeated keys below mirror repeated review obligations in the Chinese master; they are cross-links, not additional claims.
 
-- pedestrian wind-comfort acceptable-area ratio, to be tested across seasonal wind directions and leaf-on/leaf-off states with calibrated pedestrian-level CFD and field wind measurements; [metric:pedestrian_wind_comfort_acceptable_area_ratio] [source:LIU-URBAN-VENTILATION-2017]
-- pollutant-stagnation hotspot count, requiring an emissions inventory, boundary conditions, PM2.5 observations and a professionally accepted air-age or ventilation-effectiveness method; [metric:pollutant_stagnation_hotspot_count] [source:MENG-WIND-HEAT-PM25-2022] [source:NOSEK-STREET-CANYON-2025]
-- mean-radiant-temperature baseline and continuous shaded accessible-route ratio, requiring seasonal solar/tree-canopy modelling, MRT measurements and accompanied-route tests; [metric:mean_radiant_temperature_baseline_c] [metric:continuous_shaded_accessible_route_ratio]
-- blue-green accessible-route overlap, requiring field verification of entrances, gradients, continuity, safety, water quality and maintenance, with no direct inference of physical or mental-health improvement from proximity; [metric:blue_green_accessible_route_overlap_ratio] [source:WHO-URBAN-HEALTH-AND-GREEN]
-- water-risk exceedance-route verification, requiring a DEM, drainage network, outfalls, soils, groundwater, water quality, design storms and calibrated surface-flow modelling before any flood-free claim. [metric:water_risk_exceedance_route_verified_ratio] [assumption:A-DRAINAGE-SYSTEM-001]
-
-The `design_target` entries in `visual/assets/evidence-ledger.json` are future review gates; the six `unknown` entries in `metrics.json` are the present evidence state. None of the three cited research cases is represented as Jing-Zhang CFD, monitoring or health evidence, and no published case percentage is transferred to this site. [assumption:A-AIR-WIND-001]
-
-To keep “measure it later” from becoming an empty promise, `visual/assets/wind-health-validation-plan.json` defines an evidence contract for all six indicators. It binds each gate to a geometry version, wind/heat boundary cases, emission sources where relevant, field sampling, calibration error, accountable professional review and stop conditions. It is a validation protocol—not Haidian field data, CFD output, a health outcome or an engineering/approval document; the three ventilation papers supply method boundaries only and no case value is transferred.
-
-This round adds `visual/assets/wind-health-field-protocol.json` to make “measure it later” a pre-registrable work package. Each observation must carry a stable `point_id`, `geometry_version`, timestamp, instrument, height, wind speed/direction, PM2.5, thermal variables, canopy state and QC flag. Wind, pollution and thermal observations are kept separate, with collocation/calibration, background and source schedules, same-point model–field alignment, and error reporting. The professional team must register point counts, repeats and final comfort thresholds before seeing the result; a convenience walk cannot stand in for a representative sample. Missing geometry alignment or calibration, unsafe field conditions, missing source or detection-limit information, or any attempt to turn “cang feng ju qi/feng shui” into causal evidence stops interpretation and keeps the metric `unknown`. [source:AIJ-CFD-PEDESTRIAN-WIND-2008] [source:AIJ-CFD-GUIDEBOOK] [source:ISO-7726-INSTRUMENTS-2025]
-
-The data routes are separately recorded as **identified but not downloaded**: the Beijing public-data platform lists a Haidian ground-climate-normals dataset; a Haidian government report describes a `1+21+65+100` meteorological monitoring network; and a station-authority report documents wind monitoring at Qinghe Station. These are lawful acquisition, coordination and nearby-context routes only. They do not replace three-key-area observations or CFD calibration, and all six local metrics remain `unknown` until a versioned dataset is obtained and its station-to-site relevance is reviewed. [source:HAIDIAN-CLIMATE-NORMS-DATASET-2025] [source:HAIDIAN-METEOROLOGICAL-NETWORK-2023] [source:QINGHE-STATION-WIND-MONITORING-2021]
+[assumption:A-AIR-WIND-001] [assumption:A-AIR-WIND-001] [assumption:A-BIODIVERSITY-LIGHT-001] [assumption:A-DRAINAGE-SYSTEM-001] [assumption:A-DRAINAGE-SYSTEM-001] [assumption:A-EMBODIED-AI-SAFETY-001] [assumption:A-LIFECYCLE-MAINTENANCE-001] [assumption:A-METEOROLOGICAL-DATA-001] [assumption:A-METEOROLOGICAL-DATA-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/constraints.geojson#CONSTRAINTS] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-002] [data:geometry/roads.geojson#ROAD-003] [data:geometry/roads.geojson#ROAD-004] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:visual/assets/evidence-ledger.json#cfd-validation] [data:visual/assets/evidence-ledger.json#climate-risk-baseline] [data:visual/assets/evidence-ledger.json#commitment-register] [data:visual/assets/persona-and-inclusion-matrix.json#P-01] [data:visual/assets/persona-and-inclusion-matrix.json#P-08] [depth:blue_green_public_space] [depth:development_intensity_controls] [depth:existing_conditions_diagnosis] [depth:height_massing_character] [depth:land_use_layout] [depth:metrics_recalculation] [depth:municipal_new_infrastructure] [depth:overall_spatial_structure] [depth:overall_spatial_structure] [depth:overall_spatial_structure] [depth:phasing_implementation] [depth:phasing_implementation] [depth:renewal_project_list] [depth:retain_renovate_demolish] [depth:retain_renovate_demolish] [depth:risk_missing_data] [depth:risk_missing_data] [depth:risk_missing_data] [depth:three_key_area_detailed_design] [depth:three_key_area_detailed_design] [depth:three_key_area_detailed_design] [depth:three_level_scope_framework] [depth:traffic_rail_slow_parking] [depth:traffic_rail_slow_parking] [depth:traffic_rail_slow_parking] [metric:ai_landmark_count] [metric:building_footprint_area_sqm] [metric:building_footprint_area_sqm] [metric:building_footprint_area_sqm] [metric:building_footprint_ratio] [metric:building_unit_count] [metric:constraint_gate_count] [metric:constraint_gate_count] [metric:design_east_west_connector_count] [metric:design_north_south_spine_length_m] [metric:design_slow_mobility_network_length_m] [metric:green_ratio] [metric:green_ratio] [metric:green_ratio] [metric:green_ratio] [metric:green_ratio] [metric:green_segment_count] [metric:industry_validation_case_count] [metric:key_area_count] [metric:key_area_count] [metric:key_area_count] [metric:osm_mapped_crossing_count] [metric:osm_mapped_station_names_within_800m_count] [metric:phase_count] [metric:phase_count] [metric:policy_enterprise_playbook_card_count] [metric:public_scenario_node_count] [metric:public_space_polygon_count] [metric:public_space_ratio] [metric:public_space_ratio] [metric:public_space_ratio] [metric:resident_transport_satisfaction_index] [metric:resilience_v13_candidate_count] [metric:resilience_v13_hard_gates_passed] [metric:resilience_v13_monte_carlo_draws] [metric:resilience_v13_selected_mean_regret] [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_min_stress_score] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_win_rate] [metric:scenario_card_count] [metric:site_area_sqm] [metric:site_area_sqm] [metric:site_area_sqm] [metric:user_persona_count] [metric:user_persona_count] [source:AGENT-TASK-REQUIREMENTS] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:AGENT-TASKBOOK] [source:ASSET-MANAGEMENT-GBT33172] [source:BEIJING-15-MINUTE-LIFE-CIRCLE] [source:BEIJING-ACCESSIBILITY-REGULATION] [source:BEIJING-BIRD-BIODIVERSITY-2024] [source:BEIJING-BULLETIN-2024] [source:BEIJING-BULLETIN-2025] [source:BEIJING-CLIMATE-ADAPTATION-2024] [source:BEIJING-EMBODIED-INTELLIGENCE-2025-2027] [source:BEIJING-FLOOD-PLAN-2021-2025] [source:BEIJING-LIGHTING-GUIDE-2025] [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [source:BEIJING-ROAD-MAINTENANCE-2026] [source:BEIJING-SLOW-MOBILITY] [source:BEIJING-VENTILATION-NETWORK-2035] [source:BEIJING-WALK-CYCLE-DB11-1761] [source:BEIJING-WATER-REPORT-2024] [source:BEIJING-WATER-REPORT-2024] [source:BEIJING-YEARBOOK-2024] [source:BOUNDARY-SOURCE] [source:HAIDIAN-CLIMATE-NORMS-DATASET-2025] [source:HAIDIAN-SPONGE-CITY-PLAN] [source:IPCC-AR6-URBAN-RISK] [source:IPCC-AR6-URBAN-RISK] [source:ISO-13482-SERVICE-ROBOT-SAFETY] [source:ISO-55001-2024] [source:JINGZHANG-FUTURE-BELT-2026] [source:JINGZHANG-PARK-CATALOG] [source:JINGZHANG-PUBLIC-FEEDBACK] [source:KEY-AREA-SOURCE] [source:LIU-URBAN-VENTILATION-2017] [source:MISSING-DATA-CHECKLIST] [source:NIST-HUMAN-CENTERED-AI] [source:OFFICIAL-ANNOUNCEMENT] [source:OSM-TRANSPORT-CONTEXT] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:PROJECT-SCOPE-SUMMARY] [source:REGIONAL-YEARBOOK-2024-2] [source:RESILIENT-CITY-INFRASTRUCTURE-2024] [source:SERVICE-ROBOT-INFOSEC-GB45502] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:SOURCE-USE-MATRIX] [source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES] [source:WHO-URBAN-HEALTH-AND-GREEN] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ## References
 
