@@ -277,3 +277,4 @@ SC-05 机器人配送、SC-06 安全复核台、SC-07 开源展示廊、SC-09 �
 - 北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》（官网公开）[source:OFFICIAL-ANNOUNCEMENT]
 - 北京市文物局关于清华园车站旧址的公开资料（背景引用）[source:HERITAGE-PUBLIC]
 - OpenStreetMap（ODbL，现状骨架背景引用）[source:OSM-BASE]
+version: "v2.1.0"
