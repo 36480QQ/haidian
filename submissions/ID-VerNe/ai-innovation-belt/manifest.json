@@ -17,15 +17,14 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "34d949561575492610cafdc11d991db6fc011ea2d50b601c2faa82deec354f12"
+      "required": true
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1427b008540dbc13592d5607c1b11422d3d1d7f5cd2c919bd73e9d7c51889e86"
+      "sha256": "73bc6cb405a0ed86dcd42e00d394574e9ecabeadac688fd82d42f1a18442d564"
     },
     {
       "path": "agent.json",
@@ -37,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "8b0a7cb457993ae1161977db8a7c085357fb890cf0f6d339475783fa990fc30d"
+      "sha256": "27bc4ee0d6d3662006cce85b7e4ee3c7a85784fc81a0c0f69d35c17d46eb8f89"
     },
     {
       "path": "assumptions.json",

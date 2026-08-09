@@ -15,9 +15,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案设计的是北京海淀区京张铁路遗址公园沿线一条 9 公里的城市走廊，从西直门以南到清河以北，串联清华大学、北京大学、中国科学院、AI原点社区和大钟寺。设计问题是：一条线性公园能否成为 37 平方公里的创新区的"操作系统"？
 
-方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、指标和来源清单为机器可读依据。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
+方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、指标和来源清单为机器可读依据。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:existing_conditions_diagnosis]。现状诊断以 [data:geometry/constraints.geojson] 与 [data:geometry/buildings.geojson] 的拆改留分类为证据入口，缺资料项以设计深度矩阵的现状诊断与资料缺口项为准。
 
-本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 中的临时边界生成空间数据。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`，只能用于方案生成、自检和设计讨论，不能作为官方红线、审批依据或精确面积依据。替换 official polygons 后，所有空间图层和指标均需重算。该组织方数据缺口不阻断内容评分。
+本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 中的临时边界生成空间数据 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`，只能用于方案生成、自检和设计讨论，不能作为官方红线、审批依据或精确面积依据。替换 official polygons 后，所有空间图层和指标均需重算。该组织方数据缺口不阻断内容评分。
 
 边界和重点区域的空间解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 和 [metric:site_area_sqm]、[metric:key_area_count]。
 

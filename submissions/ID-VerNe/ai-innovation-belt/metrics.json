@@ -6,7 +6,7 @@
   },
   "metrics": {
     "site_area_sqm": {
-      "status": "provisional",
+      "status": "unknown",
       "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
@@ -16,10 +16,11 @@
       "confidence": "low",
       "assumptions": [
         "Provisional site boundary from agent_inferred_from_public_data. Not an official redline. Must be recalculated when official SITE_BOUNDARY polygon is supplied by the organizer."
-      ]
+      ],
+      "reason": "Value is geometrically accurate but based on provisional boundary (agent_inferred_from_public_data), not an official redline. Cannot be considered 'known' until official SITE_BOUNDARY is supplied."
     },
     "building_footprint_area_sqm": {
-      "status": "provisional",
+      "status": "unknown",
       "value": 792717.183,
       "unit": "sqm",
       "source_files": [
@@ -27,10 +28,11 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "low",
-      "assumptions": []
+      "assumptions": [],
+      "reason": "Value is geometrically accurate but based on provisional design geometry; not an official measurement. Recalculate when official SITE_BOUNDARY is supplied."
     },
     "green_ratio": {
-      "status": "provisional",
+      "status": "unknown",
       "value": 0.070451,
       "unit": "ratio",
       "source_files": [
@@ -39,10 +41,11 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
-      "assumptions": []
+      "assumptions": [],
+      "reason": "Value is geometrically accurate but based on provisional boundary. Official green ratio is a design assumption (estimated 25-35% on official boundary, unverified). Must be recalculated when official SITE_BOUNDARY is supplied."
     },
     "public_space_ratio": {
-      "status": "provisional",
+      "status": "unknown",
       "value": 0.015167,
       "unit": "ratio",
       "source_files": [
@@ -51,7 +54,8 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
-      "assumptions": []
+      "assumptions": [],
+      "reason": "Value is geometrically accurate but based on provisional boundary. Must be recalculated when official SITE_BOUNDARY is supplied."
     },
     "floor_area_ratio": {
       "status": "unknown",
