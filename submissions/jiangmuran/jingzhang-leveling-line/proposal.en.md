@@ -1055,7 +1055,7 @@ This section corresponds to [depth:risk_missing_data].
 
 ### Rights and licence ledger
 
-An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**.
+An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version, file by file, ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json` rather than written by hand, so it enumerates the **77 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. Each entry states how a reviewer checks it, not merely that the author asserts it. A hand-written ledger lists what the author recalls; a generated one lists what is in the package, and that difference is the whole subject of this proposal.
 
 | Asset | Content | Source | Licence | How to verify |
 |---|---|---|---|---|

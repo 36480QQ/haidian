@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0e1dbbb2f513fd9aaa939af75832cfad00850dd3f2ce827d14118aeff9ae3bbe"
+      "sha256": "ca694edc7a877fc4e1abd9b7bb9e6af914333d1f7c52a0fe1aed2f30331017d2"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "29931dbcaa1a49673d087a527322d8bcbb95e9e804d99ad28f4349185098160e"
+      "sha256": "78bd7512c992792ccd300725f3dcbf039cfda8e320a1f2a4f5eb62c5481e7989"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2a6f159d53aac9457bd6b9521e64b63e4cb59d96fc7c62ad06a466b079177c48"
+      "sha256": "10c6fbbc166b1d9579568d946602a3bc7ed10b2309fceaf9ade7f8a381244943"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -383,7 +383,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9c361f3e61954ecd9bc4074e2b6b4a8c88bee3789f66ade4d0a5bf68bd2dba9c"
+      "sha256": "278291429c9a7f793e9a40c45d8a4c9c7cbc4bdc8e0221445f50ad13726f702c"
     },
     {
       "path": "report/proposal.en.html",
@@ -391,7 +391,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7ac54c269bfd055b2ec82a81852ca80a9c4c939c467b7a7ab92fd2114451c7c9"
+      "sha256": "4f281c9ef5b5d9391e36e6147acf0c9b2960f46b463b93171177351a284efa8f"
     },
     {
       "path": "visual/index.en.html",
@@ -406,7 +406,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "c4161ff37aec880e7bdeabf46c7461333ab3bd40279deeee0d84e82b04232c22"
+      "sha256": "808aa5714b672bdcb559de7529f57ec9d0d39b6d1bf6a7874d0a623f034d8809"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -543,6 +543,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "34c81afc6aaaa8e81b74a8c61998e88023f383aadd8687f738b290224bc8c427"
+    },
+    {
+      "path": "visual/assets/rights_ledger.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "dfcf3bec9c03a341d5680dc4a0add625788fb10ce8d0510937d753dd7d009c95"
     }
   ],
   "validation_claim": {
