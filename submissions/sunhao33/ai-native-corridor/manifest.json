@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "69fabc3d4f50ed6cf9b80ab0c11ef713154f86e82708a340f610edd18aef3a6e"
+      "sha256": "2ad59e840a9d51005f522ba8ae407688b89acc1914936006541c2c0656d6a0ac"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -159,7 +159,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "b5766e9ace15fae5cd91f964e7fd58d48888a2265679028e2efe475ffd688d7a"
+      "sha256": "a468a6c0c40a908c54dd5da40dfd65182a6e89e17c2f2d48c4a3f80030792d6a"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a4c8b89bb15dd734f3cd25c49d4a18a873fe879aa323e85701c865bf5fe2ddf9"
+      "sha256": "a1ec049f6f09c6b971f3e546084dbaef717c55d1876c4cc8dc4b2b75cd28285a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
       "path": "risk.json",
       "role": "risk_register",
       "required": false,
-      "sha256": "f2ba4814a15a28f8449918816506ef514a2dc38b8a3fce6c1f18b9c0adbb5037"
+      "sha256": "b50d12dda5307700d214fe5fd738b1270f46574edaede29072fc007f43213d84"
     },
     {
       "path": "changelog.md",
@@ -296,32 +296,32 @@
       "sha256": "599803ce13089a315430ad88e74914033a4af2fff1b60f5bbede5b891b986f45"
     },
     {
-      "path": "visual/assets/map.html",
+      "path": "pages/map.html",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "a448a07984afc39a2419d4d82bb1fff1d3f88458926b989378b98bef3c02608f"
+      "sha256": "fa38b63309fec4c19d3b2014816f4a639716ac522d9b3a11d990eb2a360da109"
     },
     {
-      "path": "visual/assets/dashboard.html",
+      "path": "pages/dashboard.html",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "8206f53c498f9282a6de044af4a08c85026c6f091a7d1d93150b59f414ec9227"
+      "sha256": "7a717563d30820e6001e26b242fdb876479a36badf339758cc61a63d26704bf9"
     },
     {
-      "path": "visual/assets/scenarios.html",
+      "path": "pages/scenarios.html",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "70c59aae8a9deb8697975aa7a0abf6e896d6d5b047b6687a6b1c7db210e92eaa"
+      "sha256": "b47727e5ddef1ab4ee4bfe89545738ae73bc8c0beeee78066053050d6b30cd17"
     },
     {
-      "path": "visual/assets/evidence.html",
+      "path": "pages/evidence.html",
       "role": "visualization",
       "required": false,
       "language": "zh",
-      "sha256": "cf6946551f749370d6e437166b5836dd79e6416bcebc65ac94e746cbe5678993"
+      "sha256": "5cfaaabe6570eb0e5d04691450e506b77971ecb825bf2069aced7c5af398ce0f"
     }
   ],
   "validation_claim": {
