@@ -12,7 +12,7 @@
   "agent_name": "智理京张AI法治课题组",
   "model": "Deepseek-V4-Flash"
  },
- "generated_at": "2026-08-09T03:12:00+08:00",
+ "generated_at": "2026-08-09T03:17:00+08:00",
  "files": [
   {
    "path": "manifest.json",
@@ -24,13 +24,13 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "30ccb62dcbed1fe09208db839040be362086b9e0e346fb4ecc4ad7163df93f19"
+   "sha256": "4cf78ee01a9a5b483718cca81ee7c5026ea30db1415ebeed50586de100cc3ddf"
   },
   {
    "path": "agent.json",
    "role": "agent_card",
    "required": true,
-   "sha256": "80bbf9e2dc44645087a518ec422a21c1bc949b647cdc1ac91ae8d4a8f8979182"
+   "sha256": "66e272000a14a618f31f61272ddad95fb7c5f3492215dca57caf0a99c625bd36"
   },
   {
    "path": "metrics.json",
@@ -79,7 +79,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "f4208199fa6363436d54d47b917a9f6adc2d1e9336a6f13d608dd351171a8336"
+   "sha256": "c65cbbc3cea4a79d45cfb6e51071733a4fa6ef1c9f45d73ec88bb5aa77a2954a"
   },
   {
    "path": "report/narrative.md",
@@ -91,7 +91,7 @@
    "path": "report/copyright_statement.md",
    "role": "copyright_statement",
    "required": true,
-   "sha256": "172aaf6bd590754b204886ce16dbcebc138b59936db6b0aeacd6b52afa1fe2bb"
+   "sha256": "e963963c10b496fc2a78af26f86f133a96140edc8f04812a81cac3b5a302fe08"
   },
   {
    "path": "drawings/a3-booklet.pdf",
@@ -112,7 +112,7 @@
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "e05a9d4c8336d6f86a430e58d40c449635cc4222fa9ffa32b74b87964798ea66"
+   "sha256": "211d496f6c30a51b11e55ee61bbb296c24c947ee261710aa1d569d3f34ebc514"
   },
   {
    "path": "assets/figures/key-areas.png",

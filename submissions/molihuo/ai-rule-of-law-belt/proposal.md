@@ -1,22 +1,22 @@
 ---
-title: "智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案"
+title: "智理一带·法治京张：人工智能法治事业建设第一城百年京张AI创新带城市设计方案"
 author_github: "molihuo"
 language: "zh"
 proposal_format_version: "2"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "面向 43.6 km² 百年京张AI创新带，以「人工智能法治事业建设」为标识性总纲，提出「法源·法测·法市·法坛」四类法治事业空间、「AI法治事业五维闭环」方法论、「AI法治事业指数（ROL-AI Index）」度量工具与「法治事业共同体」运营载体，形成覆盖 agent.1-6 全部任务的可复核城市设计方案包。"
+summary: "面向 43.6 km² 百年京张AI创新带，以「人工智能法治事业建设第一城」为第一性定位与标识性总纲，提出「法源·法测·法市·法坛」四类法治事业空间、「AI法治事业五维闭环」方法论、「AI法治事业指数（ROL-AI Index）」度量工具与「法治事业共同体」运营载体，形成覆盖 agent.1-6 全部任务的可复核城市设计方案包。"
 tracks: ["ai-public-services", "civic-agent-governance", "ai-origin-community"]
 scenarios: []
 iteration: "v0.1"
 ---
 
-# 智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案
+# 智理一带·法治京张：人工智能法治事业建设第一城百年京张AI创新带城市设计方案
 
 ## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为顶层任务依据 [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]，并以 `brief/site-package/` 中维护者登记的临时粗略边界、枚举、指标和专业标准为机器可读依据 [source:SITE-PACKAGE]。参与前必须读取 `design_brief.json`、`allowed_design_space.json`、`agent_taskbook.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 与 `data/processed/agent_fact_pack.md`，并以 `project_scope_summary.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途与缺口清单 [source:PROCESSED-FACT-PACK]。本方案生成前先确认场地包中无官方 polygon、官方红线、官方控规与权属文件——这是组织方已披露的数据缺口，不构成评分阻断，但意味着所有空间落地结论必须以「概念建议/参考方案/可供专业团队深化」表述 [source:SRC-PROVISIONAL-BOUNDARIES-2026] [depth:risk_missing_data]。
 
-本方案在六大任务（agent.1-6）中以「**人工智能法治事业建设**」为标识性总纲贯穿全带。这一提法强调：AI 法治不是零散的政策条文或合规动作，而是一项**以法治方式塑造人工智能时代秩序、以公共福祉为依归的长期事业**，需要空间载体、制度工具、人才队伍与公共话语的协同建设 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。本方案据此提出五组原创概念：「**法源·法测·法市·法坛**」四类法治事业空间谱系、「**AI 法治事业五维闭环**」方法论、「**AI 法治事业指数（ROL-AI Index）**」度量工具、「**法治事业共同体**」运营载体与「**法治事业三大地标**」，将五大功能中「AI 治理全球话语权」落实为可感知、可参观、可运营的城市界面。AI 法治所引《数据安全法》《个人信息保护法》《生成式人工智能服务管理暂行办法》《全球人工智能治理倡议》等仅作为公开法律背景，不解读为本地化实施结论 [depth:risk_missing_data]。
+本方案在六大任务（agent.1-6）中以「**人工智能法治事业建设第一城**」为第一性定位与标识性总纲贯穿全带。这一提法强调：AI 法治不是零散的政策条文或合规动作，而是一项**以法治方式塑造人工智能时代秩序、以公共福祉为依归的长期事业**，需要空间载体、制度工具、人才队伍与公共话语的协同建设 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。「第一城」指本方案以整城尺度承载这一事业，打造全球**首创、样板、恒业**的人工智能法治事业建设城市界面。本方案据此提出五组原创概念：「**法源·法测·法市·法坛**」四类法治事业空间谱系、「**AI 法治事业五维闭环**」方法论、「**AI 法治事业指数（ROL-AI Index）**」度量工具、「**法治事业共同体**」运营载体与「**法治事业三大地标**」，将五大功能中「AI 治理全球话语权」落实为可感知、可参观、可运营的城市界面。AI 法治所引《数据安全法》《个人信息保护法》《生成式人工智能服务管理暂行办法》《全球人工智能治理倡议》等仅作为公开法律背景，不解读为本地化实施结论 [depth:risk_missing_data]。
 
 ![资料证据链与总体概念图](assets/figures/site-overview.png)
 
@@ -67,13 +67,13 @@ iteration: "v0.1"
 
 ### 命名体系与视觉识别方向
 
-本方案名称采用三层级体系，旗帜鲜明地把「人工智能法治事业建设」置于第一层：
+本方案名称采用三层级体系，旗帜鲜明地把「人工智能法治事业建设第一城」作为方案的第一性定位：
 
-- **第一层（总纲·定位层）**：「**人工智能法治事业建设**」——方案的首要定位与标识性提法，简称「**AI 法治事业带**」；所有空间、产业、场景与运营设计均以其为第一性目标。
+- **第一层（总纲·定位层）**：「**人工智能法治事业建设第一城**」——方案的首要定位与标识性提法。「第一城」取其三重含义：**首创**（全球率先以整城尺度承载 AI 法治事业）、**样板**（形成可复制、可审计、可对外输出的法治事业城市范式）、**恒业**（以长期运营而非一次性工程的态度建设法治事业），简称「**AI 法治事业第一城**」；所有空间、产业、场景与运营设计均以其为第一性目标。
 - **第二层（空间·品牌层）**：「**智理一带·法治京张**」——一带的空间品牌名称，承载总纲的落地形态。
-- **第三层（全称·方案层）**：「**智理一带·法治京张：以人工智能法治事业建设为第一层定位的百年京张AI创新带城市设计方案**」——正式提交方案名称。
+- **第三层（全称·方案层）**：「**智理一带·法治京张：人工智能法治事业建设第一城百年京张AI创新带城市设计方案**」——正式提交方案名称。
 
-英文命名对应：第一层 **Belt of AI Rule-of-Law Endeavor**（总纲），第二层 **Centennial Jing-Zhang AI Rule-of-Law Belt**（品牌），第三层 **Zhi-Li Belt, Rule-of-Law Jing-Zhang：Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt, with AI Rule-of-Law Endeavor as the First-Tier Positioning**。
+英文命名对应：第一层 **First City of AI Rule-of-Law Endeavor**（总纲），第二层 **Centennial Jing-Zhang AI Rule-of-Law Belt**（品牌），第三层 **Zhi-Li Belt, Rule-of-Law Jing-Zhang：Urban Design Proposal for the Centennial Jing-Zhang AI Innovation Belt as the First City of AI Rule-of-Law Endeavor**。
 
 Logo 视觉母题（仅作方向示意）：以「天平+轨道」为核心——上横线借鉴铁轨枕木意象，下方为变形的衡平符号，三处重点片区对应「法源·法测·法市」三组嵌入式节点，环绕「法坛」中轴。不使用企业、商标、字体或人物肖像 [depth:risk_missing_data]。
 
