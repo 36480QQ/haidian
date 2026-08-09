@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "0716ea1d3eeca66e59031fe0a451ba271082a7077ca14ef4b4624c1413fc141f",
+      "sha256": "b8bffd7b8953b6a07c539e8e5404cea27cd36761617dbc0762484b838a513bb0",
       "language": "zh"
     },
     {
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "e46fedc3dfdf912d81c851add43f140983266f4f36695866c953524adec41453"
+      "sha256": "a9cf7091ba1847d2acd4869f2d23de920b5b27138739ef741b75ce8bf09e0c9e"
     },
     {
       "path": "assumptions.json",
@@ -78,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "6536b5e696d1715ffe3aaef69d799456e17d91219a0fcf254af3872a8854e70c",
+      "sha256": "d52b2cfe6c516ad482309eb2cc4ce925ad2b98800b9940b301eea5866915376d",
       "language": "zh"
     },
     {
@@ -207,7 +207,7 @@
       "path": "proposal.en.md",
       "role": "proposal_translation",
       "required": true,
-      "sha256": "835fc53f15fb55e820ad7de8f8279125b1d7232cf6f77ba359ba81e703bc8550",
+      "sha256": "c227ff10acbd8a14bc52e4dcfc8112068ac48d6371f1f993c78b0ea5f97f3e45",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -215,7 +215,7 @@
       "path": "report/proposal.en.html",
       "role": "report_translation",
       "required": true,
-      "sha256": "3babb9c6674fd4d51b7084c8a6fd4ebfcddbfb9a5361b7e1eab4b1820589fa5f",
+      "sha256": "cea95e33fbe8fbd1f66a4c35ca3b779ce293b9c27dcf2512714fe48ca6efdadc",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -447,6 +447,12 @@
       "role": "visual_asset",
       "required": false,
       "sha256": "66ab803dcf0b5d35012b92b185b625e5bd158da6e096130d8284f2f5ea5bda2b"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "sha256": "fca71b42ad36f999506c337449dea6d7ca6c1c383e94a3d654f21287d6d1fa67"
     }
   ],
   "validation_claim": {
