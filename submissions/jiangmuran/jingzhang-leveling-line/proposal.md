@@ -106,8 +106,9 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 | 状态 | 份数 |
 |---|---|
-| 已填写 | 159 |
+| 已填写 | 236 |
 | 留在脚手架占位符 `agent-declared-model` 或为空 | **102（30.2%）** |
+| 合计 | 338 |
 
 而已填写的 236 份，用了 **109 种不同字符串**，按随附脚本中公开的归并规则收敛后，只落进 **8 个桶**（其中一个是「无法归类」）。单是 GPT/Codex 一族就被写成 **53 种写法**（`GPT-5`、`GPT-5 Codex`、`OpenAI Codex (GPT-5)`、`OpenAI Codex (GPT-5 family)`、`GPT-5 (Codex)`……），覆盖 151 份方案。
 
