@@ -75,10 +75,10 @@ All spatial boundaries are provisional; full recalculation required when officia
 「人字形」不是隐喻，而是由**可核验的真实现状要素**生成的结构（要素来源见 sources.json [source:OSM-BASE]）。三条原则分别绑定真实几何 [data:geometry/constraints.geojson]：
 
 **1. 主脊 = 已建成遗址公园绿廊（折返展线=创新回路）**
-京张铁路遗址公园绿廊（西直门-北五环约9km，2026-08二期开放，约53公顷，服务沿线70社区约45万人）[source:EX-PARK-JZ-PUBLIC-REPORT] 是本方案主脊；全案共登记 [metric:existing_condition_count] 条可追溯真实现状要素 [data:geometry/constraints.geojson#EX-PARK-JZ]。创新链路沿主脊按折返展线组织——策源→研发→场景→反馈，每次折返是一次**二次选择**（人才/成果/资本在折返点复审，不自动续行）。
+京张铁路遗址公园绿廊（西直门-北五环约9km，2026-08二期开放，约53公顷，服务沿线70社区约45万人）[source:EX-PARK-JZ-PUBLIC-REPORT] 是本方案主脊（现状叙事参考 [source:EX-PARK-JZ-PUBLIC-REPORT] 为背景级，官方数据到位后复算）；全案共登记 [metric:existing_condition_count] 条背景级现状参照要素 [data:geometry/constraints.geojson#EX-PARK-JZ]。创新链路沿主脊按折返展线组织——策源→研发→场景→反馈，每次折返是一次**二次选择**（人才/成果/资本在折返点复审，不自动续行）。
 
 **2. 道岔 = 真实分岔/站城节点（准入闸门）**
-高铁走廊与故线（13号线地面段）在西直门北侧真实分岔 [source:EX-METRO-LINE13-PUBLIC] [data:geometry/constraints.geojson#EX-OSM-FORK-NOTE]；带内实有/带缘紧邻大钟寺站（13/12号线）[source:EX-STATION-PUBLIC] [data:geometry/constraints.geojson#EX-OSM-METRO-DZS]、五道口站 [data:geometry/constraints.geojson#EX-OSM-METRO-WDK]、知春路站 [data:geometry/constraints.geojson#EX-OSM-METRO-ZCL]、清华东路西口站 [data:geometry/constraints.geojson#EX-OSM-ROAD-THU-E]。每个站城节点即一处**道岔闸门**：场景上线经 `通过/暂缓/驳回` 三态、三方会签（所有者+公共责任人+受影响群体代表）。
+高铁走廊与故线（13号线地面段）在西直门北侧的**分岔关系为公开资料推断的概念对位**（非官方线位，见 EX-OSM-FORK-NOTE 背景核对）[source:EX-METRO-LINE13-PUBLIC] [data:geometry/constraints.geojson#EX-OSM-FORK-NOTE]；带内实有/带缘紧邻大钟寺站（13/12号线）[source:EX-STATION-DZS] [data:geometry/constraints.geojson#EX-OSM-METRO-DZS]、五道口站 [source:EX-STATION-WDK] [data:geometry/constraints.geojson#EX-OSM-METRO-WDK]、知春路站 [source:EX-STATION-ZCL] [data:geometry/constraints.geojson#EX-OSM-METRO-ZCL]、清华东路西口站 [source:EX-STATION-THU-E] [data:geometry/constraints.geojson#EX-OSM-ROAD-THU-E]（各站位置为公开资料概念对位）。每个站城节点即一处**道岔闸门**：场景上线经 `通过/暂缓/驳回` 三态、三方会签（所有者+公共责任人+受影响群体代表）。
 
 **3. 坡度梯度 = 三核空间序列（强制约束 NODE 落位）**
 关沟段 33‰ 坡度是京张铁路工程极限 [source:EX-RAIL-HISTORY-PUBLIC]；本方案将创新难度分三级并**强制约束场景节点（NODE）密度与类型**：

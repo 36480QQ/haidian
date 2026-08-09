@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "9c394d699ff609658125d8ca5db388cc4844cf9c7ef5f76c550f492389fd66a7"
+      "sha256": "c854c0e12c826552bdc59c1f92e37622baeaaaa39fcda30c7c0c58727fa43356"
     },
     {
       "path": "agent.json",
@@ -47,7 +47,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "06676d683964daf861eecdf8b463901c8484ce2de330dc6df8848a858b35e31b"
+      "sha256": "8ec634499af6d0e77a8c2c429b412acadb467cccf7d8a3dfa2d0749d514e7913"
     },
     {
       "path": "self_check.json",
@@ -89,7 +89,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c190cffd7c6a313d5c57a6ceb3df9f6ce01f22b095c1a879752396c547dfe609"
+      "sha256": "ff999025542d5eeddd53f8d3a8837cf481788e222763c2dafc3f52d8739cfb2d"
     },
     {
       "path": "report/narrative.md",
@@ -275,7 +275,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "7080d464baff83fd5523b829c58c2020f12fab09fe74df7ee0e6245d15e68e89"
+      "sha256": "e5e8403463634a03df88dc0be927ebb90f618ee3c0150ed769c9694c65b0f004"
     },
     {
       "path": "geometry/green_space.geojson",
