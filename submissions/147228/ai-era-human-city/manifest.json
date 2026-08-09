@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f29a29ea4921767ce614e8c3c38db811929e87707ee0c9266a8338df1e711431"
+      "sha256": "ddea5abf0f45d72f4391a95f6a5f6bd36481e5e9c3f0c9da295b1e5f269d2c72"
     },
     {
       "path": "agent.json",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "eb0646a5c52a971568e62fd65d0cd35b3dd772aadbc7577f815cb5122d71289f"
+      "sha256": "303699fb013e79e4eed3b6216891081795f2aa55544f9aa9b956a41b5b4bb383"
     },
     {
       "path": "report/proposal.en.html",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "20e20728a43fb3fac4028a1099f0cdf5677a9d4e854bb0ee86ad14123d9abfde"
+      "sha256": "0a8f6430dfcc8020f13152a27e5ee9316862564ccc8aa90a8718dbf8ef302b27"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -324,6 +324,12 @@
       "role": "narrative",
       "required": false,
       "sha256": "16fa64edba22ea412f0c5f7ab4feeaca6e9f73c6de6e6e541d84d4d685cad052"
+    },
+    {
+      "path": "visual/assets/ai-era-traceability-index.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "4ed9fb86f4ce15c99a9158424e8d153fdb8979ce8393a4d72e6b27357a7868c4"
     },
     {
       "path": "visual/assets/public-space-landmarks.json",

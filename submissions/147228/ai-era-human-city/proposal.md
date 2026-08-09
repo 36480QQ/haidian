@@ -90,6 +90,8 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 十张场景卡均为 G0 概念协议，且逐卡说明用户、空间、行动理由、数据最小化、责任角色、人工复核、验收指标与退出协议。三类测试验证情境为低速机器人公共观察、低空物流规则沙盒、内涝模拟观察；它们不声称获得路权、空域、数据或运营许可。城市 API 与数据要素城区实验同样只提出目录、授权、日志、申诉、撤销样板间，不接入真实个人或市政数据。[data:geometry/constraints.geojson#SCN-07] [data:geometry/constraints.geojson#SCN-08] [metric:scenario_card_count]
 
+为便于评审从场景反向核对任务书，`visual/assets/ai-era-traceability-index.json` 将十张 G0 卡逐项连接到 agent.4/5/6、五个概念项目族、七维评审维度、空间/指标证据与普通人离线回放；它是投稿自有的审阅交叉索引，不分配官方分数，也不把 provisional geometry、design target 或合成回放升级为现场事实。[data:visual/assets/ai-era-traceability-index.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:compliance_and_standard_response]
+
 | 场景卡 | 主要空间 | 运营/责任与人工兜底 | G0 停止条件 |
 |---|---|---|---|
 | SCN-01 社区保留率协商台 | PUBLIC-01 | 场地运营角色 + 社区观察席；人工柜台 | 投诉或退出即停止展示 |

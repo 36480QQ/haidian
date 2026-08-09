@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-10
+
+- Added a bilingual reviewer-visible traceability crosswalk linking all ten G0 scenario cards to agent.4/5/6, conceptual project families, seven rubric dimensions, spatial/metric evidence, and the two ordinary-person replay routes.
+- Kept the crosswalk explicitly non-scoring and G0-only; provisional geometry, design targets, synthetic replay, and missing field data remain bounded.
+
 ## v0.4 - 2026-08-09
 
 - Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: enter/choose, request, take over, appeal/exit, and independently replay before deciding expand/repair/exit.
