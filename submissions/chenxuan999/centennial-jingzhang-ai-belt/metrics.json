@@ -1,0 +1,307 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area": {
+      "status": "known",
+      "value": 11427387.1,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary) projected to local metric (EPSG:4548 approx)",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary PROV-SITE-001; recompute when official polygon arrives."
+      ]
+    },
+    "land_use_area_by_code": {
+      "status": "known",
+      "value": 11427343.4,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(cell_area) per land_use_code",
+      "confidence": "medium",
+      "assumptions": [
+        "Partition is agent-generated conceptual land use; codes per MNR 2023 guide."
+      ],
+      "breakdown": {
+        "0701": 740111.3,
+        "0801": 97230.8,
+        "0802": 1667783.4,
+        "0803": 132299.9,
+        "0804": 39283.0,
+        "0806": 150344.9,
+        "0901": 341622.3,
+        "0902": 1449236.5,
+        "1001": 145347.1,
+        "1207": 2281412.9,
+        "1401": 3597011.3,
+        "1403": 785660.0
+      }
+    },
+    "green_space_area": {
+      "status": "known",
+      "value": 4382671.3,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(1401/1402/1403 cells)",
+      "confidence": "medium",
+      "assumptions": [
+        "Includes corridor park green and squares."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.384,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "green_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "Directional value from conceptual land use; statutory green ratio pending regulatory plan."
+      ]
+    },
+    "public_space_area": {
+      "status": "known",
+      "value": 915260.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(1403 squares + landmark plazas)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual public-space layer."
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.08,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "public_space_area / site_area",
+      "confidence": "medium",
+      "assumptions": [
+        "Directional; statutory public-space ratio pending."
+      ]
+    },
+    "road_area": {
+      "status": "known",
+      "value": 2281412.9,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(1207 cells) + centerlines",
+      "confidence": "medium",
+      "assumptions": [
+        "Road grid is conceptual micro-circulation."
+      ]
+    },
+    "road_ratio": {
+      "status": "known",
+      "value": 20.0,
+      "unit": "percent",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "road_area / site_area * 100",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual."
+      ]
+    },
+    "building_footprint_area": {
+      "status": "known",
+      "value": 1324512.5,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(building footprints)",
+      "confidence": "low",
+      "assumptions": [
+        "Footprints modeled for developable cells only."
+      ]
+    },
+    "building_density": {
+      "status": "known",
+      "value": 11.6,
+      "unit": "percent",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "building_footprint / site_area * 100",
+      "confidence": "low",
+      "assumptions": [
+        "Directional design value; statutory building density unknown."
+      ]
+    },
+    "total_floor_area": {
+      "status": "known",
+      "value": 11651174.4,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(footprint * floors)",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual floors by zone."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "known",
+      "value": 1.02,
+      "unit": "far",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "total_floor_area / site_area",
+      "confidence": "low",
+      "assumptions": [
+        "Directional design FAR ~1.0-1.8; statutory FAR missing from cleared package, recompute when available."
+      ]
+    },
+    "key_area_areas": {
+      "status": "known",
+      "value": 3698361.1,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(per key area)",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional polygons; announced values are 192.1/104.3/72.0 ha."
+      ],
+      "breakdown": {
+        "zhongzhiyuan_ai_acceleration_area": 1932660.1,
+        "beijing_ai_origin_community": 1044681.1,
+        "dazhongsi_ai_industry_cluster": 721019.9
+      }
+    },
+    "phasing_area": {
+      "status": "known",
+      "value": 128.3,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(per phase)",
+      "confidence": "medium",
+      "assumptions": [
+        "Phasing bands are conceptual latitude splits."
+      ],
+      "breakdown": {
+        "PHASE-1": 38.5,
+        "PHASE-2": 38.5,
+        "PHASE-3": 51.3
+      }
+    },
+    "floor_area_ratio_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "n/a",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "n/a",
+      "confidence": "n/a",
+      "assumptions": [
+        "Exact official regulatory-plan condition was not included in the cleared site package."
+      ],
+      "reason": "Missing official regulatory-plan control.",
+      "required_for_formal_submission": true
+    },
+    "building_height_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "n/a",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "n/a",
+      "confidence": "n/a",
+      "assumptions": [
+        "Exact official regulatory-plan condition was not included in the cleared site package."
+      ],
+      "reason": "Missing official regulatory-plan control.",
+      "required_for_formal_submission": true
+    },
+    "building_density_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "n/a",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "n/a",
+      "confidence": "n/a",
+      "assumptions": [
+        "Exact official regulatory-plan condition was not included in the cleared site package."
+      ],
+      "reason": "Missing official regulatory-plan control.",
+      "required_for_formal_submission": true
+    },
+    "green_ratio_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "n/a",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "n/a",
+      "confidence": "n/a",
+      "assumptions": [
+        "Exact official regulatory-plan condition was not included in the cleared site package."
+      ],
+      "reason": "Missing official regulatory-plan control.",
+      "required_for_formal_submission": true
+    },
+    "setback_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "n/a",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "n/a",
+      "confidence": "n/a",
+      "assumptions": [
+        "Exact official regulatory-plan condition was not included in the cleared site package."
+      ],
+      "reason": "Missing official regulatory-plan control.",
+      "required_for_formal_submission": true
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11427387.1,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary) projected to local metric (EPSG:4548 approx)",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary PROV-SITE-001; recompute when official polygon arrives."
+      ]
+    }
+  }
+}

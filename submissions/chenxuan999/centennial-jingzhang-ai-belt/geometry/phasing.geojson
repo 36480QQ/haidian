@@ -1,0 +1,129 @@
+{
+ "type": "FeatureCollection",
+ "name": "phasing",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PHASE-1",
+   "properties": {
+    "id": "PHASE-1",
+    "layer": "PHASE",
+    "phase": "PHASE-1",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_calculated": 38.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35487125404241,
+       39.970359324469996
+      ],
+      [
+       116.33982890765361,
+       39.970359324469996
+      ],
+      [
+       116.33982890016767,
+       39.970359593963344
+      ],
+      [
+       116.35487123248294,
+       39.970359593963344
+      ],
+      [
+       116.35487125404241,
+       39.970359324469996
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PHASE-2",
+   "properties": {
+    "id": "PHASE-2",
+    "layer": "PHASE",
+    "phase": "PHASE-2",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_calculated": 38.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35487127560187,
+       39.97035905497664
+      ],
+      [
+       116.33982891513953,
+       39.97035905497664
+      ],
+      [
+       116.33982890765361,
+       39.970359324469996
+      ],
+      [
+       116.35487125404241,
+       39.970359324469996
+      ],
+      [
+       116.35487127560187,
+       39.97035905497664
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PHASE-3",
+   "properties": {
+    "id": "PHASE-3",
+    "layer": "PHASE",
+    "phase": "PHASE-3",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_calculated": 51.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35487130434782,
+       39.97035869565217
+      ],
+      [
+       116.33982892512077,
+       39.97035869565217
+      ],
+      [
+       116.33982891513953,
+       39.97035905497664
+      ],
+      [
+       116.35487127560187,
+       39.97035905497664
+      ],
+      [
+       116.35487130434782,
+       39.97035869565217
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

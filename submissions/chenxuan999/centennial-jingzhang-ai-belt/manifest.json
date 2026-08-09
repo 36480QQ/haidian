@@ -1,0 +1,213 @@
+{
+  "package_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "agent_id": "workbuddy-agent",
+  "agent_name": "WorkBuddy Urban Design Agent",
+  "model": "WorkBuddy (Claude-family reasoning)",
+  "generated_at": "2026-08-09T08:50:10.187821Z",
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "primary_language": "zh",
+  "translation_file": "proposal.en.md",
+  "license": "COMMUNITY-DISPLAY-ONLY",
+  "geometry_status": "provisional_constraint (official polygon pending)",
+  "validation_status_claimed": "PASS (local self-check)",
+  "data_confidence_summary": "Medium for geometry-derived metrics; low for building-scale/FAR (conceptual); statutory controls unknown.",
+  "files": [
+    {
+      "path": "agent.json",
+      "bytes": 625,
+      "sha256": "c4dd555b706018d4e9d85ea59e08e1ae6942a18f4fa6f042663cd2b7ba2b4237"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "bytes": 65437,
+      "sha256": "55429916a5fb1e0279dff06e8a5062ad5f232b45bf61087baddbaae2916a2bc9",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "bytes": 53013,
+      "sha256": "fdfda8762fefbde50122af13fc4e381aecfb1627260c6560454c264da8c1bb10",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "bytes": 56276,
+      "sha256": "c459e6fd52693056ae92b4fe466403f13fc7d31bc9bc3dfdeb217de484826552",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "bytes": 53699,
+      "sha256": "d54190d23ca7058bc544ad7df6c1b372c2f93d47d31c6a5b88160a104c2978b2",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "bytes": 55591,
+      "sha256": "fa2d49670db12d29523d4959986960c64e327adb1c42743f6d4493646bf2ca74",
+      "language": "neutral"
+    },
+    {
+      "path": "assumptions.json",
+      "bytes": 1472,
+      "sha256": "f700747a44f27121810453c31738dfb210cf2a6ef6c235c429f7a54ff48975c4"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "bytes": 47475,
+      "sha256": "1f9f89e6944900bf7e16bdb8cbce5610edbe9b76d64a0f3aa84605935716570b"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "bytes": 27672,
+      "sha256": "be3d30d20c60bf1fcade7f182701932b2ce3e69c2b3ee00c785d6a95a0975c3e"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "bytes": 360263,
+      "sha256": "836d61c058edc10406e1b3deee06782927962092c750adfa927f4682d348d9c4",
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "bytes": 360263,
+      "sha256": "836d61c058edc10406e1b3deee06782927962092c750adfa927f4682d348d9c4",
+      "language": "zh"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "bytes": 360262,
+      "sha256": "7e5e12ef65fd91b3bdf131e7e87144ecec10b07947cdcb74c8944ae125da1531",
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "bytes": 360262,
+      "sha256": "7e5e12ef65fd91b3bdf131e7e87144ecec10b07947cdcb74c8944ae125da1531",
+      "language": "zh"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "bytes": 754453,
+      "sha256": "4508149bddf324639fa410c7f3a507f4ea1408225b121e598825f4a7d8b8038e"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "bytes": 8549,
+      "sha256": "dcb49425224ec3e62d634a19e1af8aa5cd2c3af04b99f66b724b41a0d4a01ed0"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "bytes": 352352,
+      "sha256": "0880aff65c64c5e28f76a85fb7b43c4d567b92fcf4be0aed5ab60b4d821148fb"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "bytes": 3528,
+      "sha256": "318c6cbf0f76b832f41b1358ba08c0e45f9050dbe33bdda2471f974625ef6f0f"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "bytes": 1058249,
+      "sha256": "7279df0a99a17a05e18686c8f4ba954e4a5b82e41a09798d2fd5cb2acc0a01dd"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "bytes": 2455,
+      "sha256": "31bec92bb313c17ff792ddbdf6d39946e635f42bc2d86052f97866b909ad3a73"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "bytes": 154713,
+      "sha256": "f874108ce029750828405db50d975095c1dd50573abbbca3f5d9042ce99a8a15"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "bytes": 286000,
+      "sha256": "73afdcc0cc6cada029062ba0dd435b99e76be89edf1727fb221601725a4a6080"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "bytes": 1606,
+      "sha256": "6c3e9f4c84eb8a48bad2e6f41c030e1c9694f6f962c19e96e0a1731191008ed1"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 7107,
+      "language": "neutral"
+    },
+    {
+      "path": "metrics.json",
+      "bytes": 8932,
+      "sha256": "67cd7bddaa5a5cbc259d8084ea40985b312494ac3fa059f0679c913d661161b4"
+    },
+    {
+      "path": "proposal.en.md",
+      "bytes": 20152,
+      "sha256": "917fd4ec63bca49d10c95226f5ee100fad021c1d25687679b9f8d85c441a5177",
+      "language": "en",
+      "translation_of": "proposal.md"
+    },
+    {
+      "path": "proposal.md",
+      "bytes": 17898,
+      "sha256": "0e4ddc25a6efd9fdbeb6a9efe6ea8c0aade1065f1b265dc87d6c505f609ba784",
+      "language": "zh"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "bytes": 1006,
+      "sha256": "d430c0feaa94eef8e7977694acbb01998afbdb9692345864fd539e704a2eca5d"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "bytes": 2888,
+      "sha256": "62609cb377b317d085777ad8c3684a6cbeca3864d3ce4419cb2dffd5fe0f1e38",
+      "language": "en",
+      "translation_of": "report/proposal.html"
+    },
+    {
+      "path": "report/proposal.html",
+      "bytes": 19825,
+      "sha256": "a1e9fd954de74c9a1634574fab6b06a8e08f04b71f82140577b61bd541e5a5ea",
+      "language": "zh"
+    },
+    {
+      "path": "self_check.json",
+      "bytes": 1875,
+      "sha256": "e316d10539f17812d6678375b32132765fa554b641a8dcc93738200fbd97aab0"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2990,
+      "sha256": "77481fe9ba983cdee02104a4a0b4afcc819a1abafba87611cc813414ddb7e0e7"
+    },
+    {
+      "path": "standard_matrix.json",
+      "bytes": 5764,
+      "sha256": "3eb708521e1b6f31a08d43c6a2ef9ff3bab2a053085264ec94da6209258aebeb"
+    },
+    {
+      "path": "visual/index.en.html",
+      "bytes": 4850,
+      "sha256": "fd357bbd478248369e7d5aeb1d2bcec90c1e57760dac02e2a36dbae11987589a",
+      "language": "en",
+      "translation_of": "visual/index.html"
+    },
+    {
+      "path": "visual/index.html",
+      "bytes": 5467,
+      "sha256": "f1ed6a9f3d94869d040dea543f674479110cd85cb424825077f9fb2e4cd13a5a",
+      "language": "zh"
+    }
+  ],
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "project_id": "centennial-jingzhang-ai-belt"
+}
