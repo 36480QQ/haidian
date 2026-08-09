@@ -520,9 +520,9 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 `report/copyright_statement.md` 从短声明升级为可审计协议，`visual/assets/copyright-ledger.json` 逐项记录路径、作者、生成方式、输入来源、第三方材料、许可、归属、字体处理和 SHA-256。文本、几何、图件、离线 HTML 和 JSON 由许丙南 / Codex 在提交工作树中创作或派生；官方统计资料保留来源署名；不嵌入第三方图片、地图、远程字体或运行时外链。未来新增素材必须先登记授权和哈希；该台账是提交证据，不是法律意见。
 
-#### 4.1 权利与构建溯源：评审输入中的逐项边界
+#### 4.1 权利与构建溯源：逐项可核验
 
-这份清权和构建记录不只放在评审不会直接读取的版权声明文件中，而是把可复核事实写进本段与 `sources.json`。资产级作者、输入、许可边界和 SHA-256 回到 `[source:BUILD-PROVENANCE-OPEN-PULSE]`；它是自述的包内溯源，不是第三方授权或法律意见。
+这份清权和构建记录把可复核事实写入正文、`sources.json` 与逐资产台账。资产级作者、输入、许可边界和 SHA-256 回到 `[source:BUILD-PROVENANCE-OPEN-PULSE]`；它是自述的包内溯源，不是第三方授权或法律意见。
 
 - **图纸输出：** `drawings/a3-booklet.pdf` 实测为 10 页 A3，`drawings/a0-boards.pdf` 为 3 页 A0；两者的作者元数据指向本包，未声明打印认证、字体许可或政府出版批准。[source:PDF-OUTPUT-PROFILE-OPEN-PULSE]
 - **字体边界：** CJK 文本仅由渲染环境的本地系统字体服务，本包不再分发字体文件或把本地字体写成已取得的字体许可；正式出版前仍需重新核验字体嵌入、阅读器显示和获授权字体。[source:FONT-RENDERING-BOUNDARY-OPEN-PULSE]

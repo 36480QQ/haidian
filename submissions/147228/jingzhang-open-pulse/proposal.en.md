@@ -414,9 +414,9 @@ The identity grammar and component library require offline human service, visibl
 
 Path-level hashes, rights boundaries, data minimisation, withdrawal and ordinary access remain release conditions.
 
-#### 4.1 Rights and build provenance: itemised in the review input
+#### 4.1 Rights and build provenance: itemised evidence
 
-The clearance and build record is not left only in the copyright statement, which is not directly read by the review-input builder. The package exposes the auditable facts in this section and in `sources.json`: authorship, inputs, licence boundary and SHA-256 return to `[source:BUILD-PROVENANCE-OPEN-PULSE]`. This is package self-declaration, not a third-party licence or legal opinion.
+The clearance and build record puts auditable facts in the proposal, `sources.json` and the path-level ledger: authorship, inputs, licence boundary and SHA-256 return to `[source:BUILD-PROVENANCE-OPEN-PULSE]`. This is package self-declaration, not a third-party licence or legal opinion.
 
 - **Drawing output:** `drawings/a3-booklet.pdf` reads as 10 A3 pages and `drawings/a0-boards.pdf` as 3 A0 pages; both carry package author metadata. This does not claim print certification, font licensing or government publication approval. [source:PDF-OUTPUT-PROFILE-OPEN-PULSE]
 - **Font boundary:** CJK text is rendered with local system fonts; no font file is redistributed and no local renderer font is presented as a granted licence. Font embedding, reader display and an authorised publication font remain a pre-publication check. [source:FONT-RENDERING-BOUNDARY-OPEN-PULSE]
