@@ -24,11 +24,13 @@ iteration: "v1.9"
 | --- | --- | --- |
 | 核心命题 | 把铁路交接班转译为城市AI协议：能力可以流动，责任必须有人签收 | 双联交接账 0.3 与十二张可逆场景卡 |
 | 空间响应 | 一条交接线、三座交接场、两翼支撑、八条缝合支线、二十个更新类型单元 | 九类 GeoJSON、十一张证据图、A3 图册与 A0 展板 |
-| 合规锚点 | “可停用、可投诉、无AI等价服务”不是设计者的善意，而是对现行法规的响应 | [source:GENERATIVE-AI-INTERIM-MEASURES] [source:BARRIER-FREE-ENVIRONMENT-LAW] [source:ELDERLY-SMART-TECH-PLAN] |
+| 合规锚点 | “可停用、可投诉、无AI等价服务”不是设计者的善意，而是对现行法规的响应 | 生成式AI服务管理暂行办法、无障碍环境建设法、老年人智能技术方案（来源登记见下段） |
 | 实施起点 | 先做协议、导视与低风险人工主导试点；三期是三道合并门槛，不是时间表 | 六个行动包、三道条件闸门、[metric:phase_count] |
 | 公共价值 | 任何人可在不使用AI的前提下获得等价基础服务，并能触发停用与申诉 | 组件库十项、接管亭物理停用入口、公开值班簿 |
-| 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | [metric:site_area_sqm]、[source:HAIDIAN-2025-STATISTICAL-BULLETIN] |
+| 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | 场地面积指标与海淀区统计公报（来源登记见下段） |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不是法定规划或政府承诺 | 风险章节、退出条件、assumptions.json |
+
+上表「合规锚点」一行对应 [source:GENERATIVE-AI-INTERIM-MEASURES]、[source:BARRIER-FREE-ENVIRONMENT-LAW] 与 [source:ELDERLY-SMART-TECH-PLAN]；「证据状态」一行对应 [metric:site_area_sqm] 与 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]。引用键写在正文而不是表格单元格里，是为了让离线 HTML 的表格不出现未渲染的原始标记。
 
 English brief — Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
 
@@ -481,7 +483,13 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 
 本包对 `COMMUNITY-DISPLAY-ONLY` 的自述含义：允许为本次开源征集的评审、公开展示、教学与知识沉淀而复制与引用本包内容，须保留出处；不授予商业使用、不授予将本包内容表述为法定规划或政府决定的权利；第三方进一步使用时仍须自行核验其中每一条外部来源的原始权利状态。
 
-**构建溯源。** 本包各类成果并非同一次构建产物，这一点必须写明而不是抹平：正文与结构化文件为 v1.9；A3/A0 四套图纸与双语 HTML 的页脚为 v1.6；`assets/figures/` 下 PNG 图件的页脚为 v1.0。三者不同是因为后两类自该版本后**内容未发生改变**，因此未重新渲染——重刷版本号会使它们看起来比实际更新，反而失真。判断某一成果是否仍然有效，应以 manifest 的 sha256 与 changelog 的逐版记录为准，而不是以页脚数字为准；一旦官方边界发布触发全量重算，三者将在同一次构建中统一。
+**构建溯源。** v1.9 把全部交付物在同一次构建中重新生成，因此**全包只有一个版本号**：26 张图件、38 页图纸与两个离线页面的页脚一律为 `JING-ZHANG HANDOVER LINE / PACKAGE v1.9`（图纸另附页码，如 `01-13`）。此前 v1.8 及更早版本存在三套并存的页脚（正文 v1.9、图纸 v1.6、图件 v1.0），原因是后两类内容未变而未重新渲染；本轮改为重建而非重刷，故不再需要解释差异。
+
+编号体系同时分成两个互不冲突的命名空间：图纸页用 `JZ / NN`（A3 图册）与 `B / NN`（A0 展板），图件用 `F / NN`。此前 A0 第 3 张页头 `JZ/03` 与其内嵌图件自带的 `JZ/06` 冲突、`JZ/08` 超出 `01-06` 套系、`spatial-prototype` 与 `handover-scene` 同为 `JZ/10` 等问题因此一并消除。
+
+图纸前三页（A3 `JZ/01`–`JZ/03`、A0 `B/01`–`B/03`）本轮由矢量原生重排：此前这些页面把已自带图框、标题与页脚的整张图件缩小嵌入页面图框，形成图中图与同页双版本号，内层小字在评审分辨率下不可读；现在内容直接排在页面上，全页只有一层页眉页脚。其余页面保留原图面，仅重印页脚，并把内嵌图件替换为与 `assets/figures/` 同源的新版本，使同一张图在独立文件与图纸内逐字节一致。
+
+判断某一成果是否仍然有效，仍应以 manifest 的 sha256 与 changelog 的逐版记录为准；一旦官方边界发布触发全量重算，全部成果将再次在同一次构建中统一。本轮的确定性渲染脚本（图件样式底座、图纸版式底座、几何管线、图件与图纸页生成、图件重印、图纸总装）**未随包提交**：仓库的 `validate_submission.py` 只允许投稿目录内出现数据与素材类文件，`.py` 不在允许扩展名内。因此本版仍如上一版一样，只主张**指标可独立复算**，不主张产物逐字节可复现；脚本可按任务书 `continuous_participation.issue_collaboration_zh` 的约定另开 Issue 附补丁提供。
 
 ## 参考资料
 
