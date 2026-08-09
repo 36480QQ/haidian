@@ -2,6 +2,7 @@
 
 ## v2.9 - 2026-08-09
 
+- Added bilingual acceptance-trace quick maps so reviewers can follow each check to its gate, fixture, scenario or boundary field without searching the contract; the maps are reading aids only and the runner remains the source of structural validation.
 - Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: choose, request, take over, rollback and independently replay/exit.
 - Bound each step to visible space/service, retained evidence and a fail-closed action; preserved the existing synthetic-only boundary and did not add field, permit, deployment or performance claims.
 - Regenerated both offline reports after the narrative addition; no geometry, public gallery artifact or official score was changed.

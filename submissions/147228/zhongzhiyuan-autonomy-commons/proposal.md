@@ -32,6 +32,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 当前只具备离线合成 tabletop：4 个分支、7 个契约验收项和 5 个回退步骤；它证明控制链可读、可复演，不证明现场安全、许可、部署或性能。`not_authorized_not_run`、`performance_results=null` 和待补本地基线继续有效 [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001]。
 
+**验收项快速映射（供逐项核对）**
+
+| 验收项 | gate | fixture | scenario | 边界字段 |
+| --- | --- | --- | --- | --- |
+| AT-01 | AV-T01 / AV-T02 / AV-T03 | — | — | — |
+| AT-02 | — | ordinary_curb_audit | S01 | — |
+| AT-03 | — | accessible_route_obstruction | S02 | — |
+| AT-04 | — | equivalent_service_worse | S03 | — |
+| AT-05 | — | network_weather_rollback | S02 | — |
+| AT-06 | — | — | — | authorization / operational_status / result_status |
+| AT-07 | — | — | — | performance_results / baselines |
+
+这张表是阅读索引，不是新增实测证据；无网络 runner 会把这些引用逐一回接到契约和场景矩阵，并在引用缺失或计数不一致时失败。
+
 ## 设计依据与资料清单
 
 官方任务要求回应 AI+交通、机器人、自动驾驶、无人配送等场景，并达到三层空间研究、三处重点区和可审查的城市设计深度 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。本包使用 `brief/site-package/` 的 provisional boundary、key areas、标准快照和来源注册表；`geometry/site_boundary.geojson` 明确 `official_boundary=false`、`geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001]。

@@ -32,6 +32,20 @@ The first reversible acceptance unit is not “make the vehicle run.” It lets 
 
 The package currently has only an offline synthetic tabletop: four branches, seven contract checks and five rollback steps. It proves that the control chain is readable and replayable, not field safety, authorization, deployment or performance. `not_authorized_not_run`, `performance_results=null` and the missing local baselines remain explicit [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001].
 
+**Acceptance trace quick map (for item-by-item review)**
+
+| Check | Gate | Fixture | Scenario | Boundary fields |
+| --- | --- | --- | --- | --- |
+| AT-01 | AV-T01 / AV-T02 / AV-T03 | — | — | — |
+| AT-02 | — | ordinary_curb_audit | S01 | — |
+| AT-03 | — | accessible_route_obstruction | S02 | — |
+| AT-04 | — | equivalent_service_worse | S03 | — |
+| AT-05 | — | network_weather_rollback | S02 | — |
+| AT-06 | — | — | — | authorization / operational_status / result_status |
+| AT-07 | — | — | — | performance_results / baselines |
+
+This is a reading index, not new field evidence. The network-free runner resolves each reference against the contract and scenario matrix and fails if a reference is missing or the declared counts do not reconcile.
+
 ## Design Basis and Source List
 
 The open call requires AI+transport, robotics, automated driving and unmanned-delivery scenarios, together with three spatial scales, three key areas and auditable urban-design depth [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the repository's provisional boundary, key areas, standards and source registry. Both the site and key-area layers are explicitly `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
