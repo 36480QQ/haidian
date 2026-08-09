@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b4e5a18afe026764df8611201727a6dc4fd29f55bc807b8b461f7e85a30ae833"
+      "sha256": "e261d66156dad95f7a2a2e37122799761d26f69ab86349b92542d1392099fe6f"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "508a9421b4829db963f06aedf13d43f6b25a6c00d1cfd2a1bd0cff610e95c49b"
+      "sha256": "136f7f507726382ebc690062053c703bd67a1f3c7595043ad2b1e894225c5297"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7e911afceaff6b740602e33c16fe59f0ecea93765fbd2aac46dce161ed143620"
+      "sha256": "41d338817cd6952087b546747467bf1e4abbbf3951a56e460ef320d06f85ea7e"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "84a660930092195737bc9938d1e8f13e5f3f66c5acd37547d21a41fb6fd2a899"
+      "sha256": "7248d0f78de7d349068a14a962659968d7f4e767ba7f60f1a9a2fcd1d0e7e333"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "370b42acbf225dd2ab975574d5cf56896c1e197b85fc9ad8db16006ef51ece21"
+      "sha256": "00c0d96cc86d32d7dea6e026477f015dea1f444088b5e34360cc0453dc812277"
     },
     {
       "path": "self_check.json",
@@ -414,24 +414,6 @@
       "role": "verification_script",
       "required": false,
       "sha256": "47f6d2bf997d3376c2789d4278b24ec652fafdbab380770b1ea89d8afd6df667"
-    },
-    {
-      "path": "visual/assets/mobility-pilot-readiness.json",
-      "role": "data",
-      "required": true,
-      "sha256": "74d057a0abd2ccff23165db789e7cf444407499f4253e34d5aea5e364fbd9a10"
-    },
-    {
-      "path": "visual/assets/mobility-pilot-readiness-evidence.json",
-      "role": "data",
-      "required": true,
-      "sha256": "c244bed9c046a1a25bd5014774062759edb126472383d38581942fddc6173290"
-    },
-    {
-      "path": "visual/assets/run-mobility-pilot-readiness.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "0fc6b6d84380679b92e5bd0843ebea15222611f84a26efd73d1b265d977c9220"
     },
     {
       "path": "assets/figures/simulation-pareto.png",
