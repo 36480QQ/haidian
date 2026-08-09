@@ -40,11 +40,20 @@ function spatialRefResolves(ref) {
 
 function clone(value) { return JSON.parse(JSON.stringify(value)); }
 
+const CASE_READBACK_FIELDS = [
+  "human_alternative",
+  "minimum_data",
+  "stop_reason",
+  "replay_hash",
+  "release_note_ref"
+];
+
 function evaluate(candidate) {
   const cases = Array.isArray(candidate.synthetic_cases) ? candidate.synthetic_cases : [];
   const gates = Array.isArray(candidate.gate_sequence) ? candidate.gate_sequence : [];
   const requiredCases = candidate.replay_contract?.required_case_ids || [];
   const requiredGates = candidate.replay_contract?.required_gate_ids || [];
+  const requiredFields = candidate.replay_contract?.required_fields || [];
   const caseIds = new Set(cases.map((item) => item.case_id));
   const gateIds = new Set(gates.map((item) => item.gate_id));
   const checks = [
@@ -91,6 +100,18 @@ function evaluate(candidate) {
       detail: "every case keeps an explicit human service path"
     },
     {
+      id: "RECEIPT_CASE_READBACK",
+      pass: requiredFields.length === 8 &&
+        cases.every((item) => requiredFields.every((field) => Object.prototype.hasOwnProperty.call(item, field))) &&
+        cases.every((item) => CASE_READBACK_FIELDS.every((field) => Object.prototype.hasOwnProperty.call(item, field))) &&
+        cases.every((item) => typeof item.human_alternative === "string" && item.human_alternative.length > 0) &&
+        cases.every((item) => typeof item.minimum_data === "string" && item.minimum_data.length > 0) &&
+        cases.every((item) => typeof item.stop_reason === "string" && item.stop_reason.length > 0) &&
+        cases.every((item) => item.replay_hash === null && item.replay_hash_status === "not_generated_before_authorization") &&
+        cases.every((item) => item.release_note_ref === null && item.release_note_status === "not_authorized_not_run"),
+      detail: "every case carries the declared replay fields and explicit pre-authorization hash/release-note boundaries"
+    },
+    {
       id: "RECEIPT_REPLAY_FIELDS",
       pass: candidate.replay_contract?.no_real_world_write === true &&
         candidate.replay_contract?.no_personal_data === true &&
@@ -113,6 +134,11 @@ const negativeCases = [
     id: "unresolved-spatial-anchor",
     expected_failed_check: "RECEIPT_SPATIAL_REFERENCES",
     candidate: (() => { const mutated = clone(receipt); mutated.synthetic_cases[1].spatial_refs[0] = "geometry/missing.geojson#NO-SUCH-ANCHOR"; return mutated; })()
+  },
+  {
+    id: "missing-case-readback",
+    expected_failed_check: "RECEIPT_CASE_READBACK",
+    candidate: (() => { const mutated = clone(receipt); delete mutated.synthetic_cases[0].human_alternative; return mutated; })()
   }
 ].map((sample) => {
   const replay = evaluate(sample.candidate);

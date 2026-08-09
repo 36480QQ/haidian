@@ -53,6 +53,11 @@
       "detail": "every case keeps an explicit human service path"
     },
     {
+      "id": "RECEIPT_CASE_READBACK",
+      "pass": true,
+      "detail": "every case carries the declared replay fields and explicit pre-authorization hash/release-note boundaries"
+    },
+    {
       "id": "RECEIPT_REPLAY_FIELDS",
       "pass": true,
       "detail": "replay contract declares fields and no-write limits"
@@ -79,7 +84,17 @@
         "RECEIPT_SPATIAL_REFERENCES"
       ],
       "pass": true
+    },
+    {
+      "id": "missing-case-readback",
+      "expected_status": "FAIL",
+      "observed_status": "FAIL",
+      "expected_failed_check": "RECEIPT_CASE_READBACK",
+      "failed_checks": [
+        "RECEIPT_CASE_READBACK"
+      ],
+      "pass": true
     }
   ],
-  "scope_note": "凭证 PASS 只证明合成案例、空间引用、人工替代、停止条件和版本字段可离线复播；不证明现实服务、现场安全、人员排班、许可、投资、就业或公众绩效。"
+  "scope_note": "凭证 PASS 只证明合成案例、空间引用、人工替代、停止条件和逐案例回放字段已登记；摘要哈希与 release note 在授权前明确保持未生成或未关联，不证明现实服务、现场安全、人员排班、许可、投资、就业或公众绩效。"
 }

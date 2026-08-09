@@ -78,7 +78,14 @@
       ],
       "synthetic_input_zh": "一条不使用 AI 的纸面/电话请求和一条可选择的数字辅助请求。",
       "acceptance_zh": "两条入口都能到达人工服务，退出后不保留个人资料。",
-      "prohibited_action_zh": "不得把扫码、情绪识别或画像作为获得服务的前提。"
+      "prohibited_action_zh": "不得把扫码、情绪识别或画像作为获得服务的前提。",
+      "human_alternative": "paper_phone_or_on_site_human_service",
+      "minimum_data": "synthetic_request_type_and_access_route_only",
+      "stop_reason": "stop_if_human_route_is_not_equivalent_or_personal_data_would_be_retained",
+      "replay_hash": null,
+      "replay_hash_status": "not_generated_before_authorization",
+      "release_note_ref": null,
+      "release_note_status": "not_authorized_not_run"
     },
     {
       "case_id": "HC-02",
@@ -92,7 +99,14 @@
       ],
       "synthetic_input_zh": "一份匿名化的学习选择、人工咨询和试岗转介合成记录。",
       "acceptance_zh": "人工咨询、学习路径和退出动作均可回放；就业结果继续保持 unknown。",
-      "prohibited_action_zh": "不得把培训人次、走廊长度或全球暴露率写成就业成效。"
+      "prohibited_action_zh": "不得把培训人次、走廊长度或全球暴露率写成就业成效。",
+      "human_alternative": "human_consultation_and_paper_learning_route",
+      "minimum_data": "synthetic_learning_choice_and_referral_state_only",
+      "stop_reason": "stop_if_consent_or_human_consultation_is_unclear_and_keep_employment_outcome_unknown",
+      "replay_hash": null,
+      "replay_hash_status": "not_generated_before_authorization",
+      "release_note_ref": null,
+      "release_note_status": "not_authorized_not_run"
     },
     {
       "case_id": "HC-03",
@@ -106,7 +120,14 @@
       ],
       "synthetic_input_zh": "一份公共服务目录、授权核验、冲突披露和京津冀应用问题合成工单。",
       "acceptance_zh": "服务目录、人工解释、授权链和冻结条件能回放；不产生融资、投资或合作承诺。",
-      "prohibited_action_zh": "不得连接真实数据系统、指定机构或把协议草案写成已签协议。"
+      "prohibited_action_zh": "不得连接真实数据系统、指定机构或把协议草案写成已签协议。",
+      "human_alternative": "human_consultation_paper_materials_and_callback",
+      "minimum_data": "synthetic_service_catalog_authorization_and_conflict_flags_only",
+      "stop_reason": "stop_if_authorization_chain_or_conflict_disclosure_is_missing",
+      "replay_hash": null,
+      "replay_hash_status": "not_generated_before_authorization",
+      "release_note_ref": null,
+      "release_note_status": "not_authorized_not_run"
     }
   ],
   "replay_contract": {
@@ -136,8 +157,13 @@
       "id": "unresolved-spatial-anchor",
       "expected_status": "FAIL",
       "expected_failed_check": "RECEIPT_SPATIAL_REFERENCES"
+    },
+    {
+      "id": "missing-case-readback",
+      "expected_status": "FAIL",
+      "expected_failed_check": "RECEIPT_CASE_READBACK"
     }
   ],
-  "limits_zh": "凭证 PASS 只证明合成案例、空间引用、人工替代、停止条件和版本字段可离线复播；不证明现实服务、现场安全、人员排班、许可、投资、就业或公众绩效。",
-  "limits_en": "A receipt PASS proves only that synthetic cases, spatial references, human alternatives, stop conditions, and version fields replay offline; it does not prove real service, field safety, staffing, permits, investment, employment, or public performance."
+  "limits_zh": "凭证 PASS 只证明合成案例、空间引用、人工替代、停止条件和逐案例回放字段已登记；摘要哈希与 release note 在授权前明确保持未生成或未关联，不证明现实服务、现场安全、人员排班、许可、投资、就业或公众绩效。",
+  "limits_en": "A receipt PASS proves only that synthetic cases, spatial references, human alternatives, stop conditions, and case-level replay fields are registered; hashes and release notes remain explicitly ungenerated or unlinked before authorization. It does not prove real service, field safety, staffing, permits, investment, employment, or public performance."
 }

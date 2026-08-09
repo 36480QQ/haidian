@@ -41,7 +41,7 @@ function recordFailures(record) {
   for (const [field, expected] of Object.entries(expectedFields)) {
     localCheck(record.readiness?.[field] === expected, `${record.scenario_id}: ${field} must be ${expected}`);
   }
-  for (const field of ["success_threshold", "stop_threshold"]) {
+  for (const field of Object.keys(expectedFields)) {
     localCheck(!Object.prototype.hasOwnProperty.call(record.readiness || {}, `${field}_value`), `${record.scenario_id}: ${field} must not carry a value`);
   }
   return problems;
@@ -53,7 +53,10 @@ const records = Array.isArray(register.records) ? register.records : [];
 const recordIds = records.map((record) => record.scenario_id).sort();
 const gateIds = new Set((gates.releases || []).map((release) => release.release_id));
 
-check(register.package_iteration === "v0.8", "package_iteration must be v0.8");
+check(
+  register.package_iteration === cards.package_iteration,
+  `package_iteration must match scenario cards (${cards.package_iteration})`
+);
 check(register.status === "pre_authorization_contract_only", "register must remain pre-authorization");
 check(register.field_evidence_boundary?.site_visit_status === "not_conducted", "site visit status must remain not_conducted");
 check(register.field_evidence_boundary?.resident_validation_status === "not_conducted", "resident validation status must remain not_conducted");
@@ -80,6 +83,13 @@ check(
   "negative fixture with a numeric success threshold must fail"
 );
 
+const negativeAuthorized = JSON.parse(JSON.stringify(register));
+negativeAuthorized.records[0].readiness.accountable_role_value = "named_operator";
+check(
+  recordFailures(negativeAuthorized.records[0]).length > 0,
+  "negative fixture with an injected accountable role value must fail"
+);
+
 const result = {
   ok: failures.length === 0,
   checks: {
@@ -87,7 +97,7 @@ const result = {
     readiness_records: recordIds.length,
     required_fields: register.required_fields?.length || 0,
     field_evidence_boundary: register.field_evidence_boundary?.site_visit_status || "missing",
-    negative_fixtures: 2,
+    negative_fixtures: 3,
   },
   failures,
 };

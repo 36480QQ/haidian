@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本轮新增 `HUMAN-CITY-RECEIPT-0.1` 合成人本交接凭证：它把问题与边界、资料与选择、人类责任、受限合成演练、独立回放和版本退出六道 H0-H5 门写成同一条可复核链；三条合成案例分别覆盖人工通道与老人、技能再造与被替代风险劳动者、科技服务翼与小团队。[data:visual/assets/human-city-receipt.json] [data:visual/assets/human-city-receipt-evidence.json]
 
-`run-human-city-receipt.js` 在无网络、无个人数据、无外部系统条件下检查 3/3 案例、6/6 交接门、6/6 空间引用、等效人工路径与不可写回字段；缺少人工替代或空间锚点的负样本必须失败。凭证只证明合成结构和停止条件可回放，不证明现实运营、人员值守、许可、安全、绩效或公众结果。[data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
+`run-human-city-receipt.js` 在无网络、无个人数据、无外部系统条件下检查 3/3 案例、每个案例声明的 8/8 回放字段、6/6 交接门、6/6 空间引用、等效人工路径与不可写回字段；摘要哈希和 release note 在授权前明确保持未生成或未关联。缺少人工替代、案例回放字段或空间锚点的负样本必须失败。凭证只证明合成结构和停止条件可回放，不证明现实运营、人员值守、许可、安全、绩效或公众结果。[data:visual/assets/human-city-receipt.json] [data:visual/assets/run-human-city-receipt.js] [depth:phasing_implementation]
 
 ## v0.8：把科技服务翼和空间取舍变成可复核证据
 
@@ -55,7 +55,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 人工替代与责任 | 人工、电话、纸面或现场路径已写入包内，实际班次、响应时限和运营主体待确认 | 运营方、资料责任方和独立复核者 |
 | 复核、异议与删除 | 周期、公开摘要、异议答复和删除证明待启动前写入 release note | 授权主体与公众反馈程序 |
 
-这张表只是一份授权前的工作合同。包内没有现场走访、居民访谈、问卷、运营日志或真实绩效，`site_visit_status`、`resident_validation_status`、`stakeholder_engagement_status` 和 `field_measurement_status` 均保持未开展或未采集。离线 runner 会对 6/6 测试类场景、8/8 必填字段和两个缺字段/误填数值的负样本做结构复核；通过只说明台账没有漏项，不能证明可以获批、可以部署或已经有效。[metric:manual_service_equivalence_rate] [depth:metrics_recalculation]
+这张表只是一份授权前的工作合同。包内没有现场走访、居民访谈、问卷、运营日志或真实绩效，`site_visit_status`、`resident_validation_status`、`stakeholder_engagement_status` 和 `field_measurement_status` 均保持未开展或未采集。离线 runner 会对 6/6 测试类场景、8/8 必填字段和三个覆盖缺字段、误填数值与误填责任值的负样本做结构复核；通过只说明台账没有漏项，不能证明可以获批、可以部署或已经有效。[metric:manual_service_equivalence_rate] [depth:metrics_recalculation]
 
 ## v0.6：把“谁能进入、谁能停止”放到同一张空间图
 
