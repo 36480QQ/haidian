@@ -163,17 +163,17 @@ Urban character integrates the historical culture of the Jingzhang Railway, Zhon
 
 To strengthen spatial perceptibility and visual-expression completeness, this proposal provides a set of concept atmosphere renders (`assets/figures/renders/`) built on the real spatial structure and brand palette, conveying the atmosphere, materiality, and light-shadow relations of key spatial moments. These renders are conceptual, used to communicate design intent and urban experience, and do not constitute approved construction or engineered outcome commitments; generation method is in `report/copyright_statement.md`.
 
-![Zhongzhiyuan dawn skyline — full-stack independent innovation district](assets/figures/renders/r-dawn-zhongzhiyuan.png)
+![Zhongzhiyuan dawn skyline — full-stack independent innovation district](assets/figures/renders/r-dawn-zhongzhiyuan.en.png)
 
-![Jingzhang Heritage Park cultural spine — historical rail and slow-traffic greenway composite](assets/figures/renders/r-park-corridor.png)
+![Jingzhang Heritage Park cultural spine — historical rail and slow-traffic greenway composite](assets/figures/renders/r-park-corridor.en.png)
 
-![Jingzhang Origin Lighthouse — brick-red base and blue tower](assets/figures/renders/r-origin-lighthouse.png)
+![Jingzhang Origin Lighthouse — brick-red base and blue tower](assets/figures/renders/r-origin-lighthouse.en.png)
 
-![Dazhongsi transit-oriented gateway — four-quadrant walk](assets/figures/renders/r-dazhongsi-gateway.png)
+![Dazhongsi transit-oriented gateway — four-quadrant walk](assets/figures/renders/r-dazhongsi-gateway.en.png)
 
-![Xiaoyue River nighttime lighting grading and safety](assets/figures/renders/r-night-safety.png)
+![Xiaoyue River nighttime lighting grading and safety](assets/figures/renders/r-night-safety.en.png)
 
-![Qinghe low-carbon corridor — waterfront governance observatory](assets/figures/renders/r-waterfront-observatory.png)
+![Qinghe low-carbon corridor — waterfront governance observatory](assets/figures/renders/r-waterfront-observatory.en.png)
 
 These atmosphere renders, together with `assets/figures/landmarks.png` and the AI-assisted landmark renders under `assets/renders/`, form a complete visual-expression hierarchy — from recomputable analysis figures, to concept atmosphere plates, to the three landmark renders — responding to the review's demand for visual completeness and spatial perceptibility [source:AGENT-TASKBOOK].
 
