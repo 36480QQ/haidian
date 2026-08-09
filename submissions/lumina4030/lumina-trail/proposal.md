@@ -52,7 +52,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 本方案生成的几何起点为 `brief/site-package/geometry/provisional_boundaries.geojson` 中的 6 条 provisional polygon:统筹研究范围 PROV-RESEARCH-001、总体设计范围 PROV-SITE-001、重点区域范围汇总 PROV-KEY-SCOPE-001 与三处重点区 PROV-KEY-001 / PROV-KEY-002 / PROV-KEY-003 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。所有 provisional feature 的 `official_boundary=false` 且 `geometry_role=provisional_constraint`,仅可用于 AI 生成、自检、可视化与设计讨论,不得作为 official redline、审批依据、精确面积依据或法定评分依据 [source:SITE-PACKAGE]。当 official polygon 发布后,`geometry/site_boundary.geojson` [data:geometry/site_boundary.geojson#SITE-001] 与 `geometry/key_areas.geojson` [data:geometry/key_areas.geojson#PROV-KEY-001/002/003] 需整体替换,`metrics.json` 中的 `site_area_sqm` [metric:site_area_sqm]、`building_footprint_area_sqm` [metric:building_footprint_area_sqm]、`green_ratio` [metric:green_ratio]、`public_space_ratio` [metric:public_space_ratio] 需重新复算。
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![资料证据链与提交包关系图](assets/figures/site-overview.png) [source:ASSET-FIG-SITE-OVERVIEW]
 *图 1:本 formal 包与 brief / sources / standards / geometry / matrices 的证据链关系。所有引用最终回到 [source:OFFICIAL-ANNOUNCEMENT] 与 [source:AGENT-TASKBOOK] 的原始权威,provisional 边界在正文中显式标注。*
 
 ---
@@ -69,7 +69,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 三层工作不是互相割裂的图纸集合。统筹研究决定产业链与城市形态判断,总体设计把判断落实到更新项目、空间结构与设施承载,重点区域详细设计验证具体地块、建筑、交通、公共空间与 AI 应用场景的可实施性。生成顺序严格遵循 SKILL.md 第 8 节空间生成协议:先锁定 official 或 provisional 边界 [data:geometry/site_boundary.geojson#SITE-001],再加载三处重点区 [data:geometry/key_areas.geojson#PROV-KEY-001/002/003],再生成用地 [data:geometry/land_use.geojson#LU-001]、建筑 [data:geometry/buildings.geojson#BLDG-001]、道路 [data:geometry/roads.geojson#ROAD-001]、绿地 [data:geometry/green_space.geojson#GREEN-001]、公共空间 [data:geometry/public_space.geojson#PUBLIC-001]、分期 [data:geometry/phasing.geojson#PHASE-001] 与 AI 服务节点图层,最后投影到 EPSG:4548 [standard:SITE-PACKAGE-COORDINATE-POLICY] 复算所有指标。任何无法从结构化数据复算的面积、比例、规模或项目数量,不得写入正式结论。
 
-![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
+![三层范围与空间工作框架图](assets/figures/land-use-structure.png) [source:ASSET-FIG-LAND-USE]
 *图 2:三层范围与「一核三段多点」空间工作框架。provisional boundary 在图中以淡色虚线呈现,设计图层位于其内。*
 
 ---
@@ -218,7 +218,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 **建筑规模与强度指标**以 unknown / pending_control 处理:`floor_area_ratio` [metric:floor_area_ratio]、`building_height_m`、`building_density`、`green_ratio` (已知 12.34% [metric:green_ratio] 但仅来自 provisional 计算)、`setback_m` 全部依赖官方控规条件 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MEASURES]。本方案不填写具体数值,以避免伪精确控制线。**拆改留方法**采用四步走:(a) 现状建筑普查(待官方数据);(b) 按权属、建成年代、结构安全、历史价值分级;(d) 形成保留 / 改造 / 更新 / 新建 / 待确认五类清单;(e) 在 `geometry/buildings.geojson` [data:geometry/buildings.geojson#BLDG-001] 中分类标注。本方案不填写具体拆改结论,所有结论均写为「概念建议 / 参考方案」。
 
-![重点区域与空间结构图](assets/figures/key-areas.png)
+![重点区域与空间结构图](assets/figures/key-areas.png) [source:ASSET-FIG-KEY-AREAS]
 *图 3:三处重点区域(provisional polygon 淡色虚线呈现)、用地结构与 AI 公共空间组件分布示意。*
 
 ---
@@ -227,7 +227,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 **交通与轨道**:重点处理五道口、清华东路西口、大钟寺、北五环等轨道站点与环路节点的一体化设计 [source:OFFICIAL-ANNOUNCEMENT]。道路微循环以 `geometry/roads.geojson` [data:geometry/roads.geojson#ROAD-001] 为载体,新增或调整道路须满足 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 程序;非机动车停放、慢行断点缝合、停车供给均纳入考量但仅作为概念建议。**慢行系统**:沿京张遗址公园形成南北贯通、东西连通的步行与骑行道 [agent.task:agent.4],断点处设置 AI 慢行导航 SC-04,以可解释、低侵入方式帮助识别拥挤节点与无障碍需求 [agent.task:agent.3]。**市政**:管线、排水、电力、燃气、消防通道、防洪排涝、海绵城市指标作为正式深化前置条件 [source:MISSING-DATA],本方案仅给出方法与空间预留,不给出工程参数 [agent.task:agent.4]。**公共服务**:AI 产业服务设施、创新服务平台、人才生活服务设施、新型基础设施(端侧算力、分布式能源)按公告 1.4 (2) [source:OFFICIAL-ANNOUNCEMENT] 与 AI 场景 SC-03 端侧算力驿站建议布局。
 
-![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
+![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png) [source:ASSET-FIG-MOBILITY]
 *图 4:京张遗址公园南北贯通、东西连通、蓝绿公共空间与 AI 慢行导航叠加示意。provisional 边界以淡色虚线呈现,设计图层在其内。*
 
 ---
@@ -289,7 +289,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 **面积复算**:所有空间指标均按 SKILL.md 第 8 节空间生成协议生成,投影至 EPSG:4548 [standard:SITE-PACKAGE-COORDINATE-POLICY]。当官方 polygon 替换 provisional polygon 后,所有空间指标须重新复算,不得仅替换单个文件 [agent.task:agent.4] [source:MISSING-DATA]。
 
-![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
+![核心指标复算与证据链图](assets/figures/metrics-evidence.png) [source:ASSET-FIG-METRICS]
 *图 5:核心指标的空间来源、复算公式与官方 / provisional 状态。*
 
 **合规矩阵** `compliance_matrix.json` 已由脚手架生成并覆盖 [agent.task:agent.1] / [agent.task:agent.2] / [agent.task:agent.3] / [agent.task:agent.4] / [agent.task:agent.5] / [agent.task:agent.6] 六项任务的所有 must_address 条目,以及公告 1.3 / 1.4 / 1.5 的全部条目。本稿正文对每项 must_address 均给出章节级回答,具体逐条复核见 `compliance_matrix.json`。
@@ -310,7 +310,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 ## 风险、版权与合规说明
 
-**Provisional boundary 风险**:本方案所有空间结论均以 provisional boundary 为起点,精度警示已在正文章节 1 与 metrics.json [metric:site_area_sqm] 显式披露,official polygon 发布后须重新复算 [source:MISSING-DATA]。**视觉与版权风险**:全部图像、图纸、图标、数据与代码资产必须在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态;商业字体、商业商标、人物肖像、论文图像须经清权 [source:SOURCE-REGISTRY] [agent.task:agent.5]。**HTML 离线约束**:`visual/index.html` 不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单、外部 API 或跟踪代码 [agent.task:agent.4]。**隐私与伦理风险**:严禁隐私侵害、过度监控或无法人工复核的场景 [agent.task:agent.3]。**实施风险**:不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施,所有工程结论降级为「概念建议 / 参考方案」,所有活动设想降级为待确认安排 [agent.task:agent.4] [agent.task:agent.6]。**缺口清单**:`missing_data_checklist.csv` 中列出的 official boundary、key area polygon、控规、道路红线、地块、建筑、市政、文保、公共服务缺口须进入 `assumptions.json` 与正文风险章节 [source:MISSING-DATA]。
+**Provisional boundary 风险**:本方案所有空间结论均以 provisional boundary 为起点,精度警示已在正文章节 1 与 metrics.json [metric:site_area_sqm] 显式披露,official polygon 发布后须重新复算 [source:MISSING-DATA]。**视觉与版权风险**:全部图像、图纸、图标、数据与代码资产必须在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态;商业字体、商业商标、人物肖像、论文图像须经清权 [source:SOURCE-REGISTRY] [agent.task:agent.5]。**HTML 离线约束**:`visual/index.html` [source:ASSET-HTML-VISUAL] 不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单、外部 API 或跟踪代码 [agent.task:agent.4]。**隐私与伦理风险**:严禁隐私侵害、过度监控或无法人工复核的场景 [agent.task:agent.3]。**实施风险**:不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施,所有工程结论降级为「概念建议 / 参考方案」,所有活动设想降级为待确认安排 [agent.task:agent.4] [agent.task:agent.6]。**缺口清单**:`missing_data_checklist.csv` 中列出的 official boundary、key area polygon、控规、道路红线、地块、建筑、市政、文保、公共服务缺口须进入 `assumptions.json` 与正文风险章节 [source:MISSING-DATA]。
 
 ---
 
@@ -358,6 +358,22 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 - `data/processed/agent_fact_pack.md` [source:PROCESSED-FACT-PACK].
 - `brief/site-package/geometry/provisional_boundaries.geojson` [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE].
 - `brief/site-package/missing-data.md` [source:MISSING-DATA].
+
+---
+
+## 资产与交付物索引 (Asset & Deliverable Index)
+
+本节集中列出本 formal 包内全部自生成图件、图纸与 HTML 资产的产出登记与引用锚点,与 `sources.json` 中 9 条 ASSET-* 记录一一对应。所有资产均已通过离线、字体回退、标签 / 裁切 / 留白统一性核查 [source:ASSET-FIG-SITE-OVERVIEW] [source:ASSET-FIG-LAND-USE] [source:ASSET-FIG-KEY-AREAS] [source:ASSET-FIG-MOBILITY] [source:ASSET-FIG-METRICS]。
+
+**图纸 (Drawings)**:
+
+- `drawings/a3-booklet.pdf` [source:ASSET-DRAWING-A3] — A3 图册 18 页,完整复述本方案第 1-18 章的核心图件、深度证据索引与 9 km 开发者散步道总览,作为详细阅读版交付物。reportlab + NotoSansCJK-Regular.ttc 生成,无字体回退,标签间距 ≥ 8px,内容区内边距 ≥ 40px,统一 80% 内容 + 20% 边距。
+- `drawings/a0-boards.pdf` [source:ASSET-DRAWING-A0] — A0 展板 3 页(三处 AI 朝圣地标 LM-01 / LM-02 / LM-03 各一页),作为展览、汇报与公共空间现场呈现版交付物。字体、标签、裁切、留白规范与 A3 一致。
+
+**HTML 资产 (HTML Assets)**:
+
+- `report/proposal.html` [source:ASSET-HTML-PROPOSAL] — 由官方 `scripts/render_proposal_html.py` 从 `proposal.md` 重渲染的浏览器阅读版,用于离线阅读、邮件附件与快速分发。已剥离 Markdown 注释泄漏、保留所有 `[source:...]` / `[depth:...]` / `[metric:...]` 锚点,无 CDN / 远程脚本 / 远程字体 / iframe / 表单 / API / 跟踪代码。
+- `visual/index.html` [source:ASSET-HTML-VISUAL] — 离线交互可视化主页,5 张 PNG 用 inline 路径(`../assets/figures/*.png`)引用,纯本地 CSS / SVG / 静态 GeoJSON 嵌入,严禁加载远程瓦片或脚本。
 
 ---
 
