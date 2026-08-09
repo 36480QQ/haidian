@@ -393,6 +393,85 @@
         "A zero records the current evidence gap and must not be interpreted as no field issue."
       ]
     },
+    "g1_preregistration_record_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json"
+      ],
+      "formula": "count(g1_preregistration_register.records)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts conceptual test-contract records, not approved preregistrations, test windows, participants or field results."
+      ]
+    },
+    "g1_preregistration_required_field_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json",
+        "geometry/constraints.geojson"
+      ],
+      "formula": "scene_records_with_all_required_preregistration_fields / 12",
+      "confidence": "high",
+      "assumptions": [
+        "Completeness is a G0 documentation measure. It does not mean a threshold, owner, site, sample, window or test has been approved or completed."
+      ]
+    },
+    "completed_g1_preregistration_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json"
+      ],
+      "formula": "count(preregistrations_with_approved_owner_site_sample_window_threshold_and_version_lock)",
+      "confidence": "high",
+      "assumptions": [
+        "Zero records the current approval and evidence gap; it does not mean that a test is unnecessary."
+      ]
+    },
+    "approved_g1_test_window_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json"
+      ],
+      "formula": "count(g1_test_windows_with_documented_site_time_and_accountable_approval)",
+      "confidence": "high",
+      "assumptions": [
+        "No site or operating window is claimed to be approved by this proposal."
+      ]
+    },
+    "g1_field_execution_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json"
+      ],
+      "formula": "count(executed_g1_shadow_or_controlled_test_runs)",
+      "confidence": "high",
+      "assumptions": [
+        "No field, shadow, participant or controlled execution is claimed."
+      ]
+    },
+    "known_g1_result_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/g1-preregistration-register.json"
+      ],
+      "formula": "count(g1_records_with_independently_retested_known_results)",
+      "confidence": "high",
+      "assumptions": [
+        "A zero prevents protocol completeness from being presented as operating performance."
+      ]
+    },
     "post_opening_accessibility_task_success_ratio": {
       "status": "unknown",
       "value": null,

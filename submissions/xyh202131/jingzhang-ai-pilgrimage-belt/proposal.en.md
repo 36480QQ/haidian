@@ -58,6 +58,18 @@ Public reporting states that Phase II of the Jing-Zhang Railway Heritage Park op
 
 Before any G1/G2 pilot, one page must record the “non-AI current baseline → AI increment hypothesis → minimum footprint and time window → stop and recovery → independent retest” chain. AI must prove incremental value over staffed, paper-based, physical-wayfinding, or existing services, with no net loss of accessible public space or quiet periods. If it cannot prove an increment, cannot restore a state no worse than the baseline, or fails independent retesting, the pilot returns to G0 or exits. The completed 30-day post-opening field-audit count is currently 0; protocol completeness proves only design-field coverage, not field effectiveness [data:visual/assets/innovation-register.json#INNOV-006] [assumption:A-POST-OPENING-007] [metric:completed_post_opening_field_audit_count].
 
+#### G1 Preregistration: Write the Failure Conditions before Requesting a Site Test
+
+`visual/assets/g1-preregistration-register.json` turns all 12 existing scenarios into executable-but-unexecuted first-test contracts. Before testing, each record must lock a non-AI comparison task, one primary metric and denominator, affected groups, sample frame, collection window, no-harm rule, stop and recovery conditions, independent-retest inputs, and version. The 12/12 figure proves required-field coverage only. Completed preregistrations, approved G1 windows, field executions, and known results all remain **0**, so no scene may advance from G0 on the strength of this register [data:visual/assets/g1-preregistration-register.json#G1-PREREG-001] [metric:g1_preregistration_required_field_coverage_ratio] [metric:completed_g1_preregistration_count].
+
+| First minimum test packet | Same-task non-AI comparator | Single primary metric | Non-negotiable stop condition | Current status |
+|---|---|---|---|---|
+| T-03 / SCENE-009 accessible route | Staffed service, paper, or physical wayfinding for the same origin and destination | Successful tasks by co-test group / consented tasks | Stop and restore on a critical barrier, stale route state, or unavailable non-AI route | Threshold pending field preregistration; unexecuted |
+| T-02 / SCENE-011 enterprise service | Staffed counter or traceable static guide using the same frozen question set | Sourced and correctly bounded answers / frozen questions | Stop on an unsourced conclusion, prohibited-data exposure, or unavailable human takeover | Threshold pending accountable and professional review; unexecuted |
+| T-01 / SCENE-001 low-speed delivery | Staffed delivery or static route for the same task | Tasks with no collision, no boundary breach, and a working physical stop / approved controlled tasks | Stop on any collision, boundary breach, physical-stop failure, or broken takeover chain | Safety red lines fixed; efficiency threshold pending preregistration; unexecuted |
+
+![G1 first test: preregister, stop, recover, and independently retest](assets/figures/implementation-roadmap.en.png)
+
 ### Innovation Is Not a Slogan: A Falsifiable Register
 
 V2 closes another remaining gap: the proposal already introduces a proof line, a four-gate system, reversible public space, and public disclosure of failures, but “looking new” still does not prove that an innovation works. `visual/assets/innovation-register.json` binds six core innovations to their baseline shortcoming, novelty claim, falsifiable hypothesis, minimum evidence, pass threshold, failure signal, and exit action. INNOV-006 specifically tests whether the proposal creates a demonstrable and recoverable net increment over the opened park. A claim without a failure signal or exit action cannot be registered as a formal innovation, and operating results that do not yet exist remain `unknown` [data:visual/assets/innovation-register.json#INNOV-001] [data:visual/assets/innovation-register.json#INNOV-006]. Reviewers can therefore ask not only “what is new?” but also “what evidence would prove that it did not work?”
@@ -80,8 +92,6 @@ The professional response separates standards by question instead of stacking id
 - Land-use terminology and the architectural-depth gap are recorded separately; a gap record is not represented as a verified clause [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
 
 Precise red lines, existing buildings, ownership, regulatory-plan indicators, municipal infrastructure, traffic engineering, and heritage controls have not yet been obtained. `geometry/site_boundary.geojson` and the three key areas continue to use provisional repository extents for conceptual review only [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. They must not be used for approval, land acquisition, precise area calculation, or engineering implementation; boundary and control assumptions remain explicit [assumption:A-BOUNDARY-001] [assumption:A-CONTROLS-001].
-
-![Second-round planning: from shortcomings to an action brief](assets/figures/implementation-roadmap.en.png)
 
 ## Three-Level Scope Framework
 
@@ -285,6 +295,8 @@ AI and public-value indicators are separated in the same way:
 - Public access: non-AI access and screen-free-default coverage [metric:non_ai_access_coverage_ratio] [metric:screen_free_public_node_ratio].
 - Implementation: three phase gates [metric:phase_count].
 - Field grounding and handoff readiness: site-grounding observations, responsibility-field coverage for eight projects and three pilots, and the post-opening field-audit count that remains 0 [metric:site_grounding_observation_count] [metric:pilot_readiness_project_coverage_ratio] [metric:completed_post_opening_field_audit_count].
+- First-test documentation: all 12 scenes have preregistration records with 100% required-field coverage [metric:g1_preregistration_record_count] [metric:g1_preregistration_required_field_coverage_ratio].
+- First-test real-world evidence: completed preregistrations and approved windows both remain 0 [metric:completed_g1_preregistration_count] [metric:approved_g1_test_window_count]; field executions and known independently retested results also remain 0 [metric:g1_field_execution_count] [metric:known_g1_result_count].
 
 These indicators prove only “what has been designed” in the submission package; they do not prove real-world operating performance.
 
@@ -292,7 +304,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 
 `compliance_matrix.json` no longer makes 23 tasks share the same evidence bundle. agent.1 points to branding and the three-zone/two-wing structure; agent.2 to the cases and industrial state machine; agent.3 to scenario passports and test protocols; agent.4 to nine public spaces, three landmarks, and the component library; agent.5 to trustworthy narrative and synthetic-content labeling; and agent.6 to four-season operations and the transformation funnel. Announcement tasks are also mapped separately to the relevant chapter, layer, metric, source, assumption, and self-check. `standard_matrix.json` and `design_depth_matrix.json` likewise assign genuine evidence by professional question instead of using a batch-copied summary.
 
-![Indicators, confidence, and evidence chain](assets/figures/metrics-evidence.en.png)
+![From field coverage to evidence maturity](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
@@ -302,7 +314,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The file-level rights-status ledger covers all 50 manifest paths and distinguishes self-declared originals, repository-provisional derivatives, and generated outputs pending audit. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. The complete `COMMUNITY-DISPLAY-ONLY` terms, OSM ODbL obligations, PDF fonts, generation-tool terms, editable sources, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02].
+- Copyright and branding risk: The file-level rights-status ledger covers all 51 manifest paths and distinguishes self-declared originals, repository-provisional derivatives, and generated outputs pending audit. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. The complete `COMMUNITY-DISPLAY-ONLY` terms, OSM ODbL obligations, PDF fonts, generation-tool terms, editable sources, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].

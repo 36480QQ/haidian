@@ -78,6 +78,8 @@
         "scenario_count",
         "mapped_scenario_node_count",
         "scenario_passport_coverage_ratio",
+        "g1_preregistration_required_field_coverage_ratio",
+        "completed_g1_preregistration_count",
         "gateway_count",
         "phase_count"
       ],
@@ -95,7 +97,7 @@
         "TASK_EVIDENCE_SPECIFICITY",
         "PUBLIC_INTEREST_FALLBACK"
       ],
-      "evidence_summary_zh": "agent.1—6 分别由品牌闭环、产业状态机、场景护照、公共空间、可信叙事和四季运营的特定证据支撑。"
+      "evidence_summary_zh": "agent.1—6 分别由品牌闭环、产业状态机、场景护照与首测预注册、公共空间、可信叙事和四季运营的特定证据支撑；预注册字段覆盖不代表测试已获批或已执行。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
