@@ -201,7 +201,7 @@ Three industry tests structure the pilot: enterprise demand aggregation using gr
 
 ### Ten scenario cards
 
-![Ten mobility scenario cards: place, people, trigger, inputs, action, readout, owner and stop condition](assets/figures/scenario-cards-board.en.svg)
+![Ten mobility scenario cards: place, people, trigger, inputs, action, readout, owner, fallback and stop condition](assets/figures/scenario-cards-board.en.svg)
 
 The ten cards are also registered in `visual/assets/scenario-cards.json`. Each card now states its place, affected people, trigger, evidence inputs, service action, readout, accountable design role, human fallback and stop condition. Their shared status remains `unknown_until_authorized` and `not_authorized_not_run`. The board helps a reader see who encounters what problem where; it is not evidence of a partner, permit, resident validation or field performance.
 
@@ -418,69 +418,3 @@ The choice-contract references are `JOINT-MODE-TIME-CROWDING-2020`, `DTUE-PT-202
 The population-scale method references are `MATSIM-LARGE-SCALE-ABM`, `MATSIM-BOOK-ACTIVITY-BASED`, `ACTIVITY-BASED-DISAGGREGATE-2001`, `ACCEQ-DRT-2023`, `SCHEDULED-CAPACITY-TRANSIT-2012`, `DYNAMIC-PT-CAPACITY-2024` and `SIMMOBILITY-MULTISCALE-2017`; they motivate activity chains, full-population replay, capacity feedback, time-slice boarding checks and future equity-oriented feeder candidates, but do not supply Haidian coefficients or outcomes.
 
 **Boundary statement:** this is an auditable concept and reversible pilot framework for enterprise–resident mobility. It is not an approved plan, road-opening announcement, parking permit, enterprise agreement, capacity proof, health claim or construction commitment. The existing first-place project remains untouched.
-
-## Three-Level Scope Framework (Evidence Readback)
-
-The regional, overall and key-area layers share `site_boundary`, `key_areas` and `land_use`, so the enterprise, community and drawing packages do not invent separate boundaries [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001].
-
-The three spatial layers reconnect to `buildings`, `roads`, `green_space` and `public_space` [data:geometry/buildings.geojson#BUILD-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001].
-
-Public constraints and phasing reconnect to `public_space`, `constraints` and `phasing` [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/phasing.geojson#PHASE-001] [depth:existing_conditions_diagnosis]. These lines and polygons are conceptual relationships; formal refinement still needs station entrances, traffic sections, signal timing, ownership, utilities, fire, drainage, parking, shuttle and resident-experience evidence. Any service-level metric must carry a date, group, time window, accountable role and gap.
-
-## Coordinated Research Area: Industry and Future City Research (Evidence Readback)
-
-Enterprises, residents, rail and bus operators, community services and maintenance teams form the future-mobility ecosystem. AI aggregates, explains conflicts and prepares fallback lists; rights remain with people and institutions [source:NIST-HUMAN-CENTERED-AI] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]. Enterprises provide aggregated time windows, residents keep a non-app human entry, rail and bus remain the backbone, and on-demand vehicles stay behind capacity and stop-condition gates. No enterprise list, agreement, resident sample or capacity baseline is currently claimed.
-
-## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design (Evidence Readback)
-
-The overall design translates curb windows, transfer chains and blue-green fallback into spatial actions. Entrances, station approaches, waiting, bicycle parking, accessible ramps, public desks and maintenance points are reversible first; buildings and land use express relationships rather than statutory FAR, ownership, construction volume or investment [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BUILD-001] [data:geometry/public_space.geojson#PUBLIC-001].
-
-Spatial lengths and areas must use the same boundary, projection and recalculation script; the regulatory and building-interface readback is [depth:height_massing_character] [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Traffic capacity, parking, station facilities and municipal interfaces require professional confirmation; a fixed facility returns to mobile equipment and human service if it threatens fire, accessibility or quiet residential space [depth:municipal_new_infrastructure].
-
-## Detailed Design of Key Areas (Evidence Readback)
-
-Zhongzhiyuan tests enterprise arrival and loading, the AI Origin Community tests daily resident access and the human equivalent, and Dazhongsi tests rail transfer and event-day curb conditions. Each has a reversible minimum test and stop conditions; AI is not a universal answer [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/roads.geojson#ROAD-002] [depth:three_key_area_detailed_design]. Nodes must bind an operating owner, time window, clearance, accessible alternative and complaint entry. Enterprise booking cannot become a permanent community ban, and a shared feeder is not an unpermitted public-road operation.
-
-## AI Innovation Ecosystem, Personas, and AI+ Scenarios (Evidence Readback)
-
-Enterprise mobility staff, residents and carers, rail operators, maintenance staff and professional reviewers test the cards. Ten cards record inputs, outputs, minimisation, service level and fallback. Personas make acceptance responsibility explicit: wheelchair users read route continuity, night workers read return reliability, maintenance reads asset IDs and clearance rights, enterprises read cost and complaints, and residents read whether they can travel without a trace [source:BEIJING-ACCESSIBILITY-REGULATION] [depth:three_key_area_detailed_design]. No user-consent sample, operating log or enterprise agreement is currently claimed; all cards remain design targets.
-
-## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy (Evidence Readback)
-
-This package does not alter the first-place project or add a building line. `land_use`, `buildings` and `public_space` provide conceptual support for mobility desks, entrances and public interfaces; a readable building-footprint metric is not statutory coverage [data:geometry/buildings.geojson#BUILD-001] [metric:building_footprint_ratio] [depth:retain_renovate_demolish]. Retain, survey and community evidence come before any demolition or capacity claim.
-
-## Transport, Rail, Municipal Infrastructure, and Public Services (Evidence Readback)
-
-The transport layer treats `roads` as a relationship graph and curb states, station entrances, public service and blue-green fallback as operating objects [data:geometry/roads.geojson#ROAD-001] [data:geometry/constraints.geojson#CONSTRAINT-001].
-
-The three feeder types and four service levels require manual counts, walking audits, a traffic model, accessibility checks, fire review and complaint logs [depth:traffic_rail_slow_parking] [source:BEIJING-14TH-TRANSPORT-PLAN] [depth:metrics_recalculation]. Enterprise demand, resident OD, parking occupancy, signal timing, station flow, charging supply and complaint duration remain `unknown`.
-
-### Design-scenario simulation (transparent sandbox, not a baseline)
-
-Before field OD, station capacity, signal, people-flow and curb counts arrive, `visual/assets/movement-simulation.json` compares a 1,000-person normalised design unit. S0 is unmanaged peak, S1 is multimodal curb coordination, S2 keeps the air candidate blocked and S3 is ground fallback in severe weather. The readout is a design screen, not a local baseline [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION].
-
-![Enterprise–resident mobility system efficiency: candidates, groups and hard gates](assets/figures/system-efficiency-board.en.svg)
-
-## Blue-Green Network, Public Space, and Urban Character (Evidence Readback)
-
-Blue-green space provides shelter, rest, rain fallback and night safety, but does not by itself prove health, heat or flood performance. The `green_space`, `public_space` and `roads` overlap only supports candidate-route identification [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001].
-
-Tree canopy, slope, thermal comfort, drainage and ecological field evidence are still required [depth:blue_green_public_space] [standard:BEIJING-WALK-CYCLE-DB11-1761].
-
-## Renewal Projects, Implementation Policy, and Phasing (Evidence Readback)
-
-P0 delivers asset, demand, curb, accessibility and complaint baselines; P1 runs small reversible tests; P2 requires procurement, operation, maintenance, insurance, privacy, traffic and equity evidence in executable terms [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]. Implementers, funding and service levels remain unknown. New equipment must be removable, maintainable and auditable.
-
-## Metrics, Area Recalculation, and Compliance Matrix (Evidence Readback)
-
-Metrics have three layers: file-readable base, unknown field baseline and pilot target. `metrics.json` is the sole numeric source; the five gates connect geometry, demand, safety, responsibility and equity [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio].
-
-The schema readback reports 29 records, 11 `known`, 18 `unknown`, no stray top-level metrics and no status/value contradiction; the summary and checker are [data:visual/assets/metrics-schema-audit.json] [data:visual/assets/run-metrics-schema-audit.js]. This proves structure only, not mobility performance [depth:metrics_recalculation] [depth:risk_missing_data].
-
-## Risk, Copyright, and Compliance (Evidence Readback)
-
-Drawings are generated by package scripts from structured data; maps, boundaries, roads and buildings remain provisional or conceptual. Papers, government pages and tenders are used within their stated boundaries; missing local baselines remain unknown. Without an accountable owner, the pilot stops; without an equivalent human route, AI cannot replace public service [source:CURBSPACE-MANAGEMENT-2021] [source:SHARED-MOBILITY-OECD] [depth:risk_missing_data].
-
-## References (Evidence Readback)
-
-The source register separates policy, tender, method, open-map screening and package data; access dates, uses and non-use boundaries are recorded in `sources.json` [source:SOURCE-REGISTRY] [source:OSM-TRANSPORT-CONTEXT].

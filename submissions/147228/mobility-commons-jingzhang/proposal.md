@@ -221,7 +221,7 @@ P0 先由获得授权的组织安排有日期的分时聚合 OD 和方式计数�
 
 `M-01` 企业合并班车；`M-02` 员工公共交通补贴；`M-03` 夜班保证回家；`M-04` 园区装卸预约；`M-05` 居民就医人工接驳；`M-06` 轮椅等价路线；`M-07` 轨道站最后 500 米；`M-08` 活动日人车分流；`M-09` 雨雪/断网服务降级；`M-10` 投诉、维修和复核流程。每张卡必须绑定空间、责任人、输入数据、最小化规则、服务水平和停止条件；场景数量是设计清单，不是已发生的运营量 [source:EMPLOYER-TDM-GUIDE] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-![十张交通场景卡。空间、对象、触发、输入、动作、读数、责任与停止条件](assets/figures/scenario-cards-board.svg)
+![十张交通场景卡。空间、对象、触发、输入、动作、读数、责任、回退与停止条件](assets/figures/scenario-cards-board.svg)
 
 十张卡已经同步登记到 `visual/assets/scenario-cards.json`。它们现在各自写明空间、受影响对象、触发条件、输入证据、服务动作、读数、责任角色、人工回退和停止条件；共同状态仍是 `unknown_until_authorized` 与 `not_authorized_not_run`。这张图用于让读者先看懂“谁在什么地方遇到什么问题”，不能当作已经有合作方、许可、居民验证或现场绩效。
 

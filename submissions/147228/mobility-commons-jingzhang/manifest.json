@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3871c3c20d263b2ac040603cf4b6c8e3f5d87d548b7d320eb2607987a9f3fa20"
+      "sha256": "5820060e2466ce2fc3e0933c04e7e6c0a1ba719733b70586bfd20fe154233da4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b210b6722bd40172e38b50d2072b5f6d04527d5a65cd9a6edd38bddad87e8e0b"
+      "sha256": "4fdc74e8d83e4535bdf39aef4e42be39ab62e1974c66037e4b9432179411a981"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -819,7 +819,7 @@
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "84ccc0ffb69150545f6ed7f6fb68a62c89a91815ee19f259959a64ed59ebc6b8"
+      "sha256": "abee52b7b981a28c2b3c37a9319034668b2195e5347dea82388e613d7757d06d"
     },
     {
       "path": "assets/figures/scenario-cards-board.en.svg",
@@ -827,7 +827,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scenario-cards-board.svg",
-      "sha256": "4396f926be424075057ac6143ddf54c0044abdab506a4d60709a519974b429b8"
+      "sha256": "588a0e0c139b890e67bd546b3159422ca2a15526a9931ab5c147bf1e4b416912"
     },
     {
       "path": "assets/figures/brand-system-board.svg",
@@ -848,13 +848,13 @@
       "path": "visual/assets/run-scenario-cards-board.js",
       "role": "runner",
       "required": false,
-      "sha256": "bd4aebea0699552a07d302a8761a35d79f48afd38a6520f8bd0f39345c5eaa34"
+      "sha256": "11be1fd631ae3b40da9656c1d20c84e450723c5050b6a6083a0bc6488a4a171b"
     },
     {
       "path": "visual/assets/run-brand-system-board.js",
       "role": "runner",
       "required": false,
-      "sha256": "255ebf97eea1c3d99fd2e46c407686ce5169a91505b6b37cc2009d3180915c59"
+      "sha256": "38b64cf7ce6bdba0c776de5fb3d749701ec2776dcd1810cd9dbc1aa7170600e5"
     },
     {
       "path": "visual/assets/brand-system.json",
