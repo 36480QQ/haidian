@@ -21,6 +21,20 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 ![The Leveling Line: the datum departs, rises, returns — and does not land back. That red height difference is the closure error](assets/figures/hero-leveling-line.en.png)
 
+## Executive brief, one page
+
+| What a reviewer will ask | This proposal's answer | What can be checked |
+|---|---|---|
+| What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 8/8 cases including 6 refusal branches |
+| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 12 of 298 (4.0%, thinnest of eight and under half the next), AI public services 26 | `visual/assets/field_map.json`; the census script is re-runnable |
+| What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete six-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
+| Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | Three `evidence_class: regulatory_baseline` entries in `sources.json`, with article locators and how each was verified |
+| Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
+| What can start now | The four-week closure trial (S08 / RT-N / F3), which **depends on no unpublished official data** — as do R1–R3 and R8 | The renewal table carries responsible role, preconditions, cost band, KPI and exit condition per project |
+| What is deliberately withheld | Floor area ratio, building height, density, setbacks, road redlines, any demolition conclusion, any resident relocation proposal | Those metrics are held at `unknown` in `metrics.json` with their preconditions recorded |
+| Where the method stops | Closure error measures consistency; it **cannot measure whether something helps**. The counterfactual needs control segments, and this proposal supplies only the other half | Rule 8 states it, and names a proposal in this call that is more complete on exactly that point |
+| How far the data can be trusted | Boundaries are provisional substitutes; when official polygons appear the package is **recomputed as a whole, never file by file**. Self-collected data is graded `background_only` throughout | The OSM cross-check reports this proposal's own spine as 1,116.7 m from the surveyed park — a reading that counts against it, published anyway |
+
 ## One person's day: what the mechanism looks like on the street
 
 Rules are easy to write. You find out whether they work by writing somebody's morning. What follows is a day on this belt for persona P4 — a 72-year-old resident with impaired hearing who does not use a smartphone. She is not a line in a list of beneficiaries. She is what starts the mechanism.
