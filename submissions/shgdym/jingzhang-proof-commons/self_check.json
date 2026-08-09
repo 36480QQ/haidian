@@ -4,7 +4,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "persisted_at": "2026-08-09T03:28:18Z",
+  "persisted_at": "2026-08-09T03:56:54Z",
   "source_command": "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --pr-author shgdym --json",
   "checks": [
     {
@@ -106,7 +106,7 @@
         "ai_package_stages": {
           "submissions/shgdym/jingzhang-proof-commons": "formal"
         },
-        "total_bytes": 18453351,
+        "total_bytes": 26334845,
         "maintainer_bypass": false
       },
       "stderr": ""
