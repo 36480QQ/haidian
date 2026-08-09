@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-PROVISIONAL-RECOMPUTE-002",
+      "status": "pending_official_data",
+      "statement": "All area, ratio, key-area and mobility conclusions use provisional geometry and must be recomputed after official polygons, regulatory controls, road redlines and municipal data are supplied.",
+      "impact": "The concept can be reviewed for ideas and structure but not used as a statutory plan, engineering basis or government commitment."
+    }
+  ]
+}
