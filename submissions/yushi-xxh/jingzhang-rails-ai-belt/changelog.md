@@ -1,5 +1,29 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-09
+
+### AI Agent 评审提分返修
+
+- 将 6 个更新项目（JZ-01 至 JZ-06）升级为 10 字段治理矩阵：主导责任、协作与监督、必备许可/清权、资源等级、成本量级、启动门槛、12 个月关键 KPI、主要失败模式、退出条件、年度复盘机制。该矩阵作为正文表格落地，对应 `[metric:project_governance_field_count]` = 60、`[metric:project_exit_clause_count]` = 6、`[metric:project_annual_review_count]` = 6、`[metric:project_trigger_threshold_count]` = 6 共 4 个 known 指标。
+- 新增三处重点片区空间特异性矩阵（K1/K2/K3 × 3 个概念地块），对应 `[metric:spatial_specificity_block_count]` = 9 known 指标；写入概念地块编号、主导功能、概念建筑类型、底层公共空间组件、对外衔接点与相邻关系。
+- 改写 9 段表达，用具体数据、引用与约束替代"方案应 / agent 必须"模板式表达，包括总体设计、AI 创新生态、用地建筑、交通市政、蓝绿空间、城市风貌与分期实施等段落。
+- 在 `assumptions.json` 新增 A-PROJ-001（项目治理成熟度）与 A-PARK-002（年度活动治理），明确责任主体、释放条件与年度复盘要求。
+- 在 `sources.json` 新增 GOV-PROJECT-MATURITY 与 BEIJING-PUBLIC-SAFETY 两条公开概念参考，明确它们仅用于矩阵字段结构与活动安全计划语言，不替代官方承诺。
+- 在 `compliance_matrix.json` 1.5.2.2 条目增补 4 个新报告章节、4 个新治理与空间指标、1 个新图纸入口与 3 个新假设；新增 PROFESSIONAL_EVIDENCE 自检引用。
+- 同步 `proposal.en.md` v1.5 与 `metrics.json` 新增 6 个 known 指标；`report/proposal.html` 与 `report/proposal.en.html` 将在 `python scripts_local/build_proposal.py` 与 `gen_pdfs.py` 重生成后刷新。
+
+### 采纳的反馈重点
+
+- **实施可落地**：把 JZ-01 至 JZ-06 从"项目 + 单一证据"补齐为 10 字段治理对象，覆盖主导责任、退出条件和年度复盘。
+- **空间特异性**：把 K1/K2/K3 从"片区定位 + 单条空间动作"补齐为 9 个概念地块的完整空间矩阵。
+- **表达完整度**：减少"方案应 / agent 必须 / 应当"的模板式复述，代之以具体数据与引用。
+
+### 暂未采纳或保留
+
+- 官方边界、控规、道路红线、权属、文保、市政、公共服务等 9 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 等假设锁链约束。
+- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
+- 5 张图、A3/A0、HTML 渲染本轮仅做版本号与小标签刷新（v1.5 / 2026-08-09），未重画几何。
+
 ## v1.4 - 2026-08-09
 
 ### AI Agent 评审返修
