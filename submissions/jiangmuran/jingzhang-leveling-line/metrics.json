@@ -112,6 +112,21 @@
       "assumptions": [
         "含1处水准原点、2处一等点、2处二等点、3处三等点。"
       ]
+    },
+    "green_ratio_in_partition": {
+      "status": "known",
+      "value": 0.122679,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(land_use where code=1401) / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "与 green_ratio 的差别是口径而非矛盾：green_ratio 取完整 120 m 绿廊；本项只取用地剖分中归为 1401 的部分，绿廊穿过三处重点区的 910,890 m² 在剖分里归给了各自的主导用途。两值同时公布，避免评审从不同图层重算出两个数却无从判断。"
+      ]
     }
   }
 }

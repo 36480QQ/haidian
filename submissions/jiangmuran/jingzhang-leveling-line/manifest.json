@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2cd4de404ae11bebb7455ba80a6c1004be34637ac016ca5a466e6b5536cb477b"
+      "sha256": "1661da9509ccea3c751fc2df8633d43aab43a631cda937dde6ef4b1ca4590f22"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8b7f9254c43d26678336b4daa0a01cac0103244bf8cb5e8956e0df824fe500ca"
+      "sha256": "c8fd6c59ab35c4f218ce6a3ecceffc8b23e49572b2b09c39606256e8e9e346c6"
     },
     {
       "path": "compliance_matrix.json",
@@ -245,7 +245,7 @@
       "role": "verification_script",
       "required": false,
       "language": "neutral",
-      "sha256": "2f05f5b5c92313ea1a52bc3e23fca666a7ce54be62de26d694925c7d1b958c6f"
+      "sha256": "14e408e5d9ef2e7578e99e00d6ad1e67602ea4b3c7174af918c13e9c634e9418"
     },
     {
       "path": "visual/assets/census.json",
@@ -496,7 +496,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high"
   },
