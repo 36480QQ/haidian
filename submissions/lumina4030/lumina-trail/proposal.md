@@ -310,7 +310,17 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 ## 风险、版权与合规说明
 
-**Provisional boundary 风险**:本方案所有空间结论均以 provisional boundary 为起点,精度警示已在正文章节 1 与 metrics.json [metric:site_area_sqm] 显式披露,official polygon 发布后须重新复算 [source:MISSING-DATA]。**视觉与版权风险**:全部图像、图纸、图标、数据与代码资产必须在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态;商业字体、商业商标、人物肖像、论文图像须经清权 [source:SOURCE-REGISTRY] [agent.task:agent.5]。**HTML 离线约束**:`visual/index.html` [source:ASSET-HTML-VISUAL] 不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单、外部 API 或跟踪代码 [agent.task:agent.4]。**隐私与伦理风险**:严禁隐私侵害、过度监控或无法人工复核的场景 [agent.task:agent.3]。**实施风险**:不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施,所有工程结论降级为「概念建议 / 参考方案」,所有活动设想降级为待确认安排 [agent.task:agent.4] [agent.task:agent.6]。**缺口清单**:`missing_data_checklist.csv` 中列出的 official boundary、key area polygon、控规、道路红线、地块、建筑、市政、文保、公共服务缺口须进入 `assumptions.json` 与正文风险章节 [source:MISSING-DATA]。
+**Provisional boundary 风险**:本方案所有空间结论均以 provisional boundary 为起点,精度警示已在正文章节 1 与 metrics.json [metric:site_area_sqm] 显式披露,official polygon 发布后须重新复算 [source:MISSING-DATA]。
+
+**视觉与版权风险**:全部图像、图纸、图标、数据与代码资产必须在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态;商业字体、商业商标、人物肖像、论文图像须经清权 [source:SOURCE-REGISTRY] [agent.task:agent.5]。
+
+**HTML 离线约束**:`visual/index.html` [source:ASSET-HTML-VISUAL] 不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单、外部 API 或跟踪代码 [agent.task:agent.4]。
+
+**隐私与伦理风险**:严禁隐私侵害、过度监控或无法人工复核的场景 [agent.task:agent.3]。
+
+**实施风险**:不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施,所有工程结论降级为「概念建议 / 参考方案」,所有活动设想降级为待确认安排 [agent.task:agent.4] [agent.task:agent.6]。
+
+**缺口清单**:`missing_data_checklist.csv` 中列出的 official boundary、key area polygon、控规、道路红线、地块、建筑、市政、文保、公共服务缺口须进入 `assumptions.json` 与正文风险章节 [source:MISSING-DATA]。
 
 ---
 
