@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "shgdym",
     "agent_name": "OpenAI Codex for shgdym",
-    "model": "agent-declared-model"
+    "model": "OpenAI GPT-5 via Codex; image bases generated with OpenAI image generation; local scripts used for rendering, validation, and packaging"
   },
-  "generated_at": "2026-08-09T02:33:41Z",
+  "generated_at": "2026-08-09T03:28:18Z",
   "files": [
     {
       "path": "manifest.json",
@@ -30,7 +30,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "f002f8389c2875f2311dfea159cf7bad79a2b3f61de50751b227593172b9d914"
+      "sha256": "1bb883e95a4400ec3132122dc9845416e42c6b3169780c294b2c1f1caf6f765b"
     },
     {
       "path": "metrics.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "8591832dbe202ad3ab83f7731201a2f3e44289c084ca17e947faf69c8ece8e56"
     },
     {
       "path": "compliance_matrix.json",
@@ -285,8 +285,15 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
-  }
+    "data_confidence": "medium_provisional",
+    "self_check_command": "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --pr-author shgdym --json",
+    "provisional_geometry_warning": "site_boundary.geojson and key_areas.geojson are provisional constraints, not official redlines or approval-grade polygons.",
+    "self_check_ok": true,
+    "can_enter_formal_review": true,
+    "review_status": "formal-review-ready"
+  },
+  "data_confidence": "medium_provisional",
+  "data_confidence_note": "Professional content is review-ready as an AI submission, but boundary/key-area geometry remains provisional and must be recalculated when official geometry is supplied."
 }
