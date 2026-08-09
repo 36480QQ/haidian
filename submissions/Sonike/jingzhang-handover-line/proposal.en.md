@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A railway shift-handover logic becomes a civic AI protocol: one continuous line links building, validation, open sharing and public service, while every scenario retains human takeover, a no-AI equivalent and an exit rule."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.9"
+iteration: "v1.10"
 ---
 
 # JING-ZHANG HANDOVER LINE
@@ -459,7 +459,7 @@ Pointing at `report/copyright_statement.md` is not evidence. A reviewer, or any 
 
 What this package takes `COMMUNITY-DISPLAY-ONLY` to mean: copying and quoting is permitted for review, public display, teaching and knowledge capture within this open call, with attribution retained; it grants no commercial use and no right to present the contents as statutory planning or a government decision; any further use still requires the third party to verify the original rights status of each external source cited here.
 
-**Build provenance.** v1.9 regenerates every deliverable in a single build, so the package now carries **one version number**: 26 figures, 38 drawing sheets and both offline pages all stamp `JING-ZHANG HANDOVER LINE / PACKAGE v1.9` (drawings add a page tag such as `01-13`). Up to v1.8 three stamps coexisted — body v1.9, sheets v1.6, figures v1.0 — because the latter two had not changed in content and were not re-rendered; this round rebuilds them instead of restamping, so the discrepancy no longer needs explaining.
+**Build provenance.** Since v1.9 every deliverable is regenerated in a single build, so the package carries **one version number**: 26 figures, 38 drawing sheets and both offline pages all stamp `JING-ZHANG HANDOVER LINE / PACKAGE v1.10` (drawings add a page tag such as `01-13`). Up to v1.8 three stamps coexisted — body v1.9, sheets v1.6, figures v1.0 — because the latter two had not changed in content and were not re-rendered; v1.9 rebuilt them instead of restamping, and v1.10 reapplies the same process to the version stamp itself — figures are reprinted under a zero-pixel-change constraint outside the declared rectangles, drawing sheets are regenerated for the new pages while retained pages have their stamp re-laid by operator — so no version number coexists across carriers.
 
 Numbering is split into two non-colliding namespaces: drawing sheets use `JZ / NN` (A3 booklet) and `B / NN` (A0 boards), figures use `F / NN`. That removes the earlier collisions — A0 board 3 headed `JZ/03` while its embedded figure carried `JZ/06`, `JZ/08` fell outside the stated `01-06` set, and `spatial-prototype` and `handover-scene` were both `JZ/10`.
 
