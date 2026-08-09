@@ -259,6 +259,28 @@
       "collection_method": "Public URL or repository-local snapshot recorded in this package."
     },
     {
+      "id": "PROVISIONAL-BOUNDARY-CROSSCHECK-OSM-20260808",
+      "path": "brief/site-package/geometry/provisional_boundaries_basis.md",
+      "url": "https://github.com/open-city-ai/haidian/issues/846",
+      "source_type": "repository_public_background_audit",
+      "accessed_date": "2026-08-09",
+      "usage": "Background-only disclosure that the OSM-mapped built Jing-Zhang Railway Heritage Park did not intersect the current provisional overall-design polygon in the 2026-08-08 cross-check (0.00 ha / 0%; nearest distance 412.5 m). The discrepancy is retained as a boundary-data gap, not used to move the polygon or score the proposal.",
+      "title": "Provisional Boundary and OSM Cross-check",
+      "publisher": "open-city-ai/haidian repository geometry basis and Issue #846",
+      "authority_level": "repository_derived_background",
+      "usable_for": [
+        "Disclosing a reproducible boundary uncertainty and triggering an official-polygon handoff",
+        "Keeping transport and park interpretations explicitly background-only until official geometry arrives"
+      ],
+      "not_usable_for": [
+        "Correcting or replacing the provisional site boundary",
+        "Official redline, statutory planning control, precise area or formal scoring",
+        "Claiming that the OSM park mapping is complete or that the provisional polygon is wrong"
+      ],
+      "license_or_reuse_terms": "The repository note records OSM-derived background results with © OpenStreetMap contributors / ODbL 1.0 attribution; no raw OSM snapshot is redistributed in this package.",
+      "collection_method": "Read the repository-local provisional_boundaries_basis.md and public Issue #846 on 2026-08-09; the record preserves the query's stated date, CRS, values and limitations but is not a replayable OSM source."
+    },
+    {
       "id": "BEIJING-CLIMATE-ADAPTATION-2024",
       "url": "https://sthjj.beijing.gov.cn/bjhrb/index/xxgk69/zfxxgk43/fdzdgknr2/zcfb/2024bzcwj/543352535/index.html",
       "source_type": "official_public",
@@ -1304,7 +1326,7 @@
       "id": "PDF-OUTPUT-PROFILE-OPEN-PULSE",
       "path": "drawings/a3-booklet.pdf",
       "source_type": "package_artifact_profile",
-      "usage": "Package-local output profile: the A3 booklet is 10 pages at A3 size and the paired A0 board file is 3 pages at A0 size; metadata is an audit aid, not a print or publication approval.",
+      "usage": "Package-local output profile: the A3 booklet is 10 pages at A3 size and the paired A0 board file is 5 portrait pages at A0 size; metadata is an audit aid, not a print or publication approval.",
       "title": "Open Pulse Drawing Output Profile",
       "publisher": "许丙南 / Codex package worktree",
       "accessed_date": "2026-08-09",

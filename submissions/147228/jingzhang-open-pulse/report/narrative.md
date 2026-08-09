@@ -36,6 +36,8 @@
 
 上述结果只能作为现场调查和官方数据补充的优先级工具，不得当作官方路网、道路红线或容量模型。[source:OSM-TRANSPORT-CONTEXT] [metric:osm_mapped_crossing_count]
 
+边界交叉核对另见仓库几何基础记录：OSM 已测绘公园片段与当前总体临时 polygon 的相交面积为 0.00 ha、最近距离约 412.5 m；由于 OSM 可能只覆盖已建段、临时 polygon 也只是公告文字推定，本摘要不据此移动边界或重算面积，只把它作为官方 polygon 到位前的背景风险。[source:PROVISIONAL-BOUNDARY-CROSSCHECK-OSM-20260808] [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001]
+
 ## 3. 交通设计：轨道丰富，最后一公里优先
 
 ### 3.1 南北主轴

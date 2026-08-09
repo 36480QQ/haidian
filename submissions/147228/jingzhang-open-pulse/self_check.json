@@ -138,7 +138,7 @@
       "result": "pass",
       "severity": "info",
       "target": "drawings/a3-booklet.pdf + drawings/a0-boards.pdf",
-      "message": "Package-local PDF metadata readback confirms 10 A3 pages and 3 A0 pages with no JavaScript or encryption; this is not print or publication certification."
+      "message": "Package-local PDF metadata readback confirms 10 A3 pages and 5 portrait A0 pages with no JavaScript or encryption; this is not print or publication certification."
     },
     {
       "check_id": "FONT_RENDERING_BOUNDARY",

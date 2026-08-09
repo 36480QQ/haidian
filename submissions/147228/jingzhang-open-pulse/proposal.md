@@ -29,7 +29,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 公共利益 | 居民、老幼残障、照护者、夜班劳动者、游客、商户、开发者和维护者都有普通路径；纸面、人工、无账号服务不可被 AI 替代。 | persona-and-inclusion-matrix.json、public-interest-audit.json |
 | 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护、保险、网络隔离、雨洪公平或接管证据不足就停在概念层。 | sources.json、risk.json、visual/assets/operational-assurance-contract.json、v2-evidence-gate-index.json |
 | 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
-| 资料登记完整度 | 正文 67 个唯一 source ID 与包内 `sources.json` 的 67 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，另有 4 条 package build-toolchain 记录，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
+| 资料登记完整度 | 正文 68 个唯一 source ID 与包内 `sources.json` 的 68 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，另有 4 条 package build-toolchain 记录和 1 条边界交叉核对背景记录，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
 
 ## v3.3 三处重点区：空间动作先于技术名词
 
@@ -93,6 +93,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![总体概念与空间结构几何证据图](assets/figures/site-overview.png)
 
 由于官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得，本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
+
+### 临时边界交叉核对：把偏差保留为风险，不把它偷偷修成红线
+
+仓库几何基础记录的 2026-08-08 OSM 背景核对显示：已测绘的京张铁路遗址公园与当前 `PROV-SITE-001` 相交面积为 0.00 ha、最近距离约 412.5 m，而更大的统筹研究范围覆盖该 OSM 片段。[source:PROVISIONAL-BOUNDARY-CROSSCHECK-OSM-20260808] 这不是“OSM 证明边界错误”：OSM 可能只覆盖已建段，当前 polygon 也只是按公告文字推定；因此本方案不移动边界、不把 OSM 升级为正式来源，只把差异登记为 [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001] 的官方 polygon 交接风险。正式 polygon 到位后，公园关系、交通筛查、所有空间图层与指标必须整体重算。
 
 本方案的当前可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，必须重新生成相关空间层、指标、图纸和 HTML，不能只替换单个文件。
 
@@ -524,7 +528,7 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 
 这份清权和构建记录把可复核事实写入正文、`sources.json` 与逐资产台账。资产级作者、输入、许可边界和 SHA-256 回到 `[source:BUILD-PROVENANCE-OPEN-PULSE]`；它是自述的包内溯源，不是第三方授权或法律意见。
 
-- **图纸输出：** `drawings/a3-booklet.pdf` 实测为 10 页 A3，`drawings/a0-boards.pdf` 为 3 页 A0；两者的作者元数据指向本包，未声明打印认证、字体许可或政府出版批准。[source:PDF-OUTPUT-PROFILE-OPEN-PULSE]
+- **图纸输出：** `drawings/a3-booklet.pdf` 实测为 10 页 A3，`drawings/a0-boards.pdf` 为 5 页 A0 竖向展板；两者的作者元数据指向本包，未声明打印认证、字体许可或政府出版批准。[source:PDF-OUTPUT-PROFILE-OPEN-PULSE]
 - **字体边界：** CJK 文本仅由渲染环境的本地系统字体服务，本包不再分发字体文件或把本地字体写成已取得的字体许可；正式出版前仍需重新核验字体嵌入、阅读器显示和获授权字体。[source:FONT-RENDERING-BOUNDARY-OPEN-PULSE]
 - **生成与复核：** 文字、GeoJSON、指标、图件、离线 HTML 和 PDF 是本提交工作树中作者/派生产物；manifest 与台账的哈希可由包内文件直接复算，`self_check.json` 只记录包完整性，不声称随包提供生成脚本、现场结果或官方评分。[source:VALIDATION-TRACE-OPEN-PULSE]
 
