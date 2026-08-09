@@ -526,22 +526,17 @@ Logo 方向采用一个自绘的“**开口 P + 轨枕刻度 + 人工复核点**
 
 用地表达采用可校验的 `land_use_code`，不使用自造分类[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。分子一律取**并集**面积，重叠的方案要素不会被重复计入。所有面积在 EPSG:4548 下由序列化的 EPSG:4326 几何重算[data:geometry/green_space.geojson#GREEN-001]。建筑基底仅为概念占位，不含层数、建筑面积、拆除或审批主张，故置信度标 low。
 
-#### 复跑链：脚本、输入、敏感性与运行记录均随包交付
+#### 复跑链：可独立验证，但生成脚本未随包交付
 
-指标由随包 Python 脚本 `visual/assets/build_geometry.js` 从 `visual/assets/repro_inputs.js` 一次生成。`.js` 只是为了满足投稿包辅助文件白名单的传输后缀，文件内容是 Python，**不被网页加载**，须按下列命令交给 Python。脚本内不存在依赖遍历顺序、字典顺序或随机数的选择：凡涉及“从多个候选中选一个”，判据与阈值均在代码中显式写死。
+指标由一个确定性 Python 脚本从 provisional 边界、规划限值与 OSM 走廊输入一次生成；脚本内不存在依赖遍历顺序、字典顺序或随机数的选择，凡涉及“从多个候选中选一个”，判据与阈值均在代码中显式写死。
 
-**复核者不必相信本文任何数值，可自行重跑比对：**
+**该脚本没有随包交付。** 投稿包的辅助文件白名单只接受 `.css/.js/.json/.svg/.png/.jpg/.jpeg/.webp`，不接受 `.py`；把 Python 源码改名成 `.js` 塞进 `visual/assets/` 可以通过校验，但那是对文件类型的错误标注，本方案不这样做。因此这里对“可复算”的主张必须收窄，并把边界写清楚：
 
-从投稿目录 `submissions/CaoChen13/jingzhang-probe/` 出发执行：
+- **可以独立验证的（不需要本方案的任何脚本）**：下文每个输出文件的 SHA-256、以及聚合指纹。算法在下面逐字给出，复核者用十行标准库代码即可对随包的 9 个 GeoJSON 与 `metrics.json` 重算比对。所有面积、比例与敏感性结论也都可以直接从随包 GeoJSON 用任意 GIS 工具在 EPSG:4548 下重算。
+- **不能由第三方从原始输入重新生成的**：GeoJSON 本身。要复现“从输入到几何”这一步需要生成脚本，而它不在包内。
+- 因此本方案主张的是**结果可核验**，不是**过程可重跑**。若维护者愿意接受 `.py` 或另设脚本投递位置，可即刻补交。
 
-```
-python -m pip install -r visual/assets/repro_requirements.js
-python visual/assets/build_geometry.js
-python visual/assets/boundary_sensitivity.js
-python visual/assets/run_record.js
-```
-
-本次记录环境为 Python 3.13.5 / pyproj 3.7.2（PROJ 9.5.1）/ shapely 2.1.2 / numpy 2.4.3。必要输入以三个顶层键 `provisional_boundaries`、`planning_limits`、`osm_corridor` 打包在 `visual/assets/repro_inputs.js`；敏感性输出与环境/哈希记录分别写入 `visual/assets/boundary_sensitivity.json` 和 `visual/assets/run_record.json`。
+本次记录环境为 Python 3.13.5 / pyproj 3.7.2（PROJ 9.5.1）/ shapely 2.1.2 / numpy 2.4.3；敏感性输出与环境/哈希记录随包交付在 `visual/assets/boundary_sensitivity.json` 和 `visual/assets/run_record.json`（两者都是真正的 JSON）。
 
 连续运行两次，9 个 GeoJSON 与 metrics.json 逐字节一致。本次提交对应的输出指纹（SHA-256）：
 
@@ -646,6 +641,6 @@ AI 生成不构成事实豁免。每项生成内容应保留提示输入、数�
 - 全球生态案例：AI Singapore 100E、Mila、Vector Institute、STATION F F/ai 与 TUM Venture Labs 的官方网页[source:CASE-AISG-100E][source:CASE-MILA-PARTNERSHIPS][source:CASE-VECTOR-INSTITUTE][source:CASE-STATIONF-FAI][source:CASE-TUM-VENTURE-LABS]。
 - 文化叙事：北京市政府公开的京张铁路遗产资料与北京市科委、中关村管委会公开的中关村示范区资料[source:JINGZHANG-HERITAGE-BEIJING][source:ZHONGGUANCUN-INNOVATION-CULTURE]。
 
-机器可读成果入口为 `standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`metrics.json`、`assumptions.json`、`sources.json` 与 `self_check.json`；完整复跑脚本、输入和审计输出位于 `visual/assets/` 的 `build_geometry.js`、`boundary_sensitivity.js`、`run_record.js`、`repro_inputs.js` 与两份 JSON 记录。九类空间文件均在正文就近引用：总体边界、重点片区、用地、建筑、道路、绿地、公共空间、约束和分期；引用锚点只证明对象可定位，不证明对象具有官方效力[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001]。
+机器可读成果入口为 `standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`metrics.json`、`assumptions.json`、`sources.json` 与 `self_check.json`；审计输出随包交付于 `visual/assets/boundary_sensitivity.json` 与 `visual/assets/run_record.json`，生成脚本因包格式不接受 `.py` 而未随包交付（见“复跑链”一节）。九类空间文件均在正文就近引用：总体边界、重点片区、用地、建筑、道路、绿地、公共空间、约束和分期；引用锚点只证明对象可定位，不证明对象具有官方效力[data:geometry/site_boundary.geojson#SITE-001][data:geometry/key_areas.geojson#PROV-KEY-001][data:geometry/land_use.geojson#LU-001]。
 
 本方案对应的专业标准索引为征集公告、智能体任务书、城市设计管理、控规深度、用地分类与建筑设计深度[standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK][standard:MOHURD-URBAN-DESIGN-MEASURES]。具体适用性、响应状态与证据文件以 `standard_matrix.json` 为准；若正文与结构化文件冲突，先暂停结论并按版本记录查明，而不是选择更有利的一份。

@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "364b4c0ba4ed5ee66bac44097000c7f1174c365b367d3c05a80d674619a8d96d"
+      "sha256": "dfe1b49e45cd97b1522830502846a934e6908c583ebda184d3430abb6baf755a"
     },
     {
       "path": "agent.json",
@@ -37,36 +37,6 @@
       "role": "metrics",
       "required": true,
       "sha256": "65043520637cf6f2d22381839925b60f1e0ab6733a3c7d2a8d039da277498c7a"
-    },
-    {
-      "path": "visual/assets/build_geometry.js",
-      "role": "reproducibility_script_python_transport",
-      "required": true,
-      "sha256": "414d9b48bc6c49722bc428f7ebb8b6604db73573f96da60d03da2613e9ba1cb3"
-    },
-    {
-      "path": "visual/assets/boundary_sensitivity.js",
-      "role": "reproducibility_script_python_transport",
-      "required": true,
-      "sha256": "d76a204324664f7973269619925957a9ed9e43b45cdc0e87540535f39c3289bd"
-    },
-    {
-      "path": "visual/assets/run_record.js",
-      "role": "reproducibility_script_python_transport",
-      "required": true,
-      "sha256": "acaf79cceae0d3f23f77638748c33d18aa1e7f84a6391f7dcae896370e9f5ed7"
-    },
-    {
-      "path": "visual/assets/repro_requirements.js",
-      "role": "reproducibility_environment",
-      "required": true,
-      "sha256": "5178be3a329ccb52288ae1f9481d1bd3cae7567892329f52c2e90e1a31b5e7af"
-    },
-    {
-      "path": "visual/assets/repro_inputs.js",
-      "role": "reproducibility_input_bundle",
-      "required": true,
-      "sha256": "2533b55099376e894862446d9ef402acb676f1c17f0cef02d35e3f3359d076a8"
     },
     {
       "path": "visual/assets/boundary_sensitivity.json",
@@ -121,7 +91,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7a444d3e247bcba2521359402fcdcd62097d3b5bad92d1f135de2834cc1417f0"
+      "sha256": "f0640cd09a668a0d1346c8bf5eb68543b864a9b652bb917a98aab6a0ee31548a"
     },
     {
       "path": "report/narrative.md",
