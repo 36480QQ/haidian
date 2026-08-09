@@ -12,58 +12,57 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "round(area_EPSG4548(union(feature.id == 'SITE-001')), 3)",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "areas are recomputed in EPSG:4548 from the serialized EPSG:4326 proposal geometry",
+        "This is the submitted provisional overall_design_area polygon, not an official redline; it is the 11.41 km² stage-2 denominator.",
+        "The coordinated_research_area (43.61 km²) is context only and is not the denominator."
       ]
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 14928.0,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
-      "assumptions": []
+      "formula": "round(area_EPSG4548(union(all BUILDING_FOOTPRINT features)), 3)",
+      "confidence": "low",
+      "assumptions": [
+        "areas are recomputed in EPSG:4548 from the serialized EPSG:4326 proposal geometry",
+        "Concept footprints only; no height, storey, floor-area, demolition, or approval claim."
+      ]
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.106694,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
+      "formula": "round(area_EPSG4548(union(all GREEN_SPACE features)) / area_EPSG4548(feature.id == 'SITE-001'), 6)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "ratio denominator = overall_design_area (11412825.386 sqm = 11.41283 km², reported as 11.41 km² at stage-2 precision); coordinated_research_area (43.61 km² context) is never used",
+        "Numerator is the union area, so overlapping proposal features cannot be double-counted."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.033175,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
+      "formula": "round(area_EPSG4548(union(all PUBLIC_SPACE features)) / area_EPSG4548(feature.id == 'SITE-001'), 6)",
       "confidence": "medium",
-      "assumptions": []
-    },
-    "floor_area_ratio": {
-      "status": "unknown",
-      "value": null,
-      "unit": "ratio",
-      "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
-      ],
-      "formula": "total_floor_area_sqm / official_site_area_sqm",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "assumptions": [
+        "ratio denominator = overall_design_area (11412825.386 sqm = 11.41283 km², reported as 11.41 km² at stage-2 precision); coordinated_research_area (43.61 km² context) is never used",
+        "Numerator is the union area, so overlapping proposal features cannot be double-counted."
+      ]
     },
     "key_area_count": {
       "status": "known",
@@ -72,9 +71,103 @@
       "source_files": [
         "geometry/key_areas.geojson"
       ],
-      "formula": "count(key_detailed_design_areas)",
+      "formula": "count(features where layer == 'KEY_AREA')",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Counts the three named official key-area concepts; their polygons remain provisional."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / approved_overall_design_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The public site package marks floor_area_ratio as missing; concept footprints do not supply floor area.",
+      "needed_from": "approved regulatory planning conditions or official design brief attachments"
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_or_surveyed_height_m",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The public site package marks building_height_m as missing; no height is inferred from OSM or concept footprints.",
+      "needed_from": "approved height controls, aviation/landscape/heritage constraints if applicable"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_building_footprint_area_sqm / approved_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The public site package marks the statutory building-density control as missing; concept-module density is not substituted.",
+      "needed_from": "approved regulatory planning conditions"
+    },
+    "statutory_green_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_green_area_sqm / approved_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The public site package marks the statutory green ratio as missing; green_ratio above is only a recomputed design-proposal ratio.",
+      "needed_from": "approved regulatory planning conditions or local green-space standards"
+    },
+    "setback_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_building_control_line_distance",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The public site package marks setbacks as missing; no road-redline or fire-control inference is made.",
+      "needed_from": "road redline, building control line, fire and municipal constraints"
+    },
+    "affected_household_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "geometry/constraints.geojson"
+      ],
+      "formula": "verified_households_intersecting_professionally_confirmed_impact_area",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "OSM interface leads cannot establish households, occupancy, tenure, vulnerability, or causation.",
+      "needed_from": "field survey, consented/cleared household data, official address/building data, and a professionally confirmed impact method"
+    },
+    "mitigation_budget_cny": {
+      "status": "unknown",
+      "value": null,
+      "unit": "CNY",
+      "source_files": [
+        "geometry/constraints.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(verified_action_quantity * reviewed_unit_cost)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No verified action quantities, unit costs, compensation rules, funding commitment, or responsible-party agreement is available.",
+      "needed_from": "verified mitigation ledger, reviewed unit rates, affected-party process, funding agreement, and human approval"
     }
   }
 }
