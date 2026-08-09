@@ -236,7 +236,7 @@ This iteration also makes the identity direction inspectable as a vector mark in
 Implementation is a sequence of reversible windows rather than a one-off technology launch:
 
 1. **Read and prepare:** confirm official polygons, survey accessibility, drainage and heritage; publish the rights ledger and baseline.
-2. **Pilot and learn:** open low-risk public-space components and two or three bounded scenarios with a staffed operator.
+2. **Pilot and learn:** open low-risk public-space components and bounded scenario windows with a staffed operator; the four industry-validation windows remain small, reversible and subject to separate release gates.
 3. **Connect:** add the regional return loop, enterprise and research interfaces only after the stop gates pass.
 4. **Scale or retire:** publish evidence, compare equity and climate outcomes, and either expand, redesign or remove the intervention.
 
