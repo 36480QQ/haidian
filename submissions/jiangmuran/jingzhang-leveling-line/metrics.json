@@ -115,7 +115,7 @@
     },
     "green_ratio_in_partition": {
       "status": "known",
-      "value": 0.122679,
+      "value": 0.121994,
       "unit": "ratio",
       "source_files": [
         "geometry/land_use.geojson",
@@ -125,7 +125,21 @@
       "confidence": "medium",
       "assumptions": [
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
-        "与 green_ratio 的差别是口径而非矛盾：green_ratio 取完整 120 m 绿廊；本项只取用地剖分中归为 1401 的部分，绿廊穿过三处重点区的 910,890 m² 在剖分里归给了各自的主导用途。两值同时公布，避免评审从不同图层重算出两个数却无从判断。"
+        "与 green_ratio 的差别是口径而非矛盾：green_ratio 取完整 120 m 绿廊；本项只取用地剖分中归为 1401 的部分。绿廊中 918,710 m² 在剖分里归给了优先级更高的用途——三处重点区、L1 文化地块，以及六处按建筑用途单独划出的基底地块。其中 66,925 m² 是建筑基底，含学院路轨道站接驳设施的 7,820 m²：该基底此前落在 1401 地块内，被计入公园绿地，现已按 1207 单独划出。两值同时公布，避免评审从不同图层重算出两个数却无从判断。"
+      ]
+    },
+    "phasing_union_area_sqm": {
+      "status": "known",
+      "value": 2920311.442425,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(union(phase_increments), EPSG:4548) == sum(areas), phases being disjoint",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "分期图层为增量口径：三期互不重叠，累计实施范围为其并集，并集面积等于三期面积之和；分期按触发条件推进，不设固定年份。"
       ]
     }
   }
