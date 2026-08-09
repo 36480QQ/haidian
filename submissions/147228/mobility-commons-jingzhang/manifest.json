@@ -19,7 +19,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T11:02:00+08:00",
+  "generated_at": "2026-08-09T21:22:25+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1772e014f17a236e3e868c7780199b69157e831ee7a3f9d34a9baa8158088a72"
+      "sha256": "1287d21efcfbee6c84e41260ae3ca73a0dd1c7e30c3f7972b27b8e674066de24"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "987e2186fd6888ec048e7594e4ed1263236c68ec6b8c196a9d551678aa2bdc12"
+      "sha256": "22aa00d1e5a43b9c3522823544605d4c92f34d5871e541321a8efb7e985e2a44"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a84961fcb1e2f34f62b43db07492cae920266b3420055c01829bdaf10d81ca04"
+      "sha256": "84b4b4ef90bf7eea0984aa8f47fdbd50d89a45aa6a69fca13a8e7bbcc0549509"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,20 +254,20 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8bb484aba52729d8a6128fd8f5ccdfe59e8e744da847f707a30cb399c83fad58"
+      "sha256": "428d4f043f256533334df3253142f2644399f8bd4e0624db2900ae5afc20fbb1"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "16baa48c7062b5d9074d7ad48c167e37e4a78fcccd14d7cfa7ae6d46ce9317cb"
+      "sha256": "74d91e63d2854f3d3ff08b0cad22205ceaf19618ed5a4e739f5bc4c4758b5a85"
     },
     {
       "path": "self_check.json",
       "role": "data",
       "required": true,
-      "sha256": "bc7df0fa705e7404e16a001d073977146815844f368c814671a236aa21e89729"
+      "sha256": "6df5b043a725afbb493b9070eaea124d31150f395beae7ecdc3b0e44d401c3f2"
     },
     {
       "path": "sources.json",
@@ -295,6 +295,12 @@
       "path": "visual/assets/evidence-ledger.json",
       "role": "data",
       "sha256": "a8d48ba0ed7b1e58f161801387966fbe2d6b79cc7f2898cae672fea420439b6a"
+    },
+    {
+      "path": "visual/assets/implementation-operation-contract.json",
+      "role": "data",
+      "required": true,
+      "sha256": "5a800568d4d376113a848313f75e1120c727a268d5ca34f1f9852e717a6706d8"
     },
     {
       "path": "visual/assets/mobility-nodes.json",
