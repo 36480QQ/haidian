@@ -16,7 +16,8 @@
     {"id":"AC-06","result":"pass"}
   ],
   "replayed_counts": {"fixtures":"4/4","acceptance_checks":"6/6","rollback_steps":"5/5"},
-  "trace_coverage": {"acceptance_checks":"6/6","fixtures":"4/4","scenarios":"1/1","boundary_fields":"5/5"},
+  "trace_coverage": {"acceptance_checks":"6/6","fixtures":"4/4","scenarios":"1/1","boundary_fields":"5/5","rollback_steps":"5/5"},
+  "rollback_trace": {"step_ids":["RB-01","RB-02","RB-03","RB-04","RB-05"],"fixture_ids":["S02-F01","S02-F02","S02-F03","S02-F04"],"acceptance_ids":["AC-02","AC-03","AC-04","AC-05","AC-06"]},
   "result_status": "not_run",
   "performance_results": null,
   "boundary": "PASS means the offline fixture reproduces stop, withdrawal and restoration logic only. It does not prove robot performance, route accessibility, public acceptance, service performance, safety or authorization."

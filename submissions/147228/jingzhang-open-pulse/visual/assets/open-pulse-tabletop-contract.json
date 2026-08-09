@@ -32,14 +32,40 @@
   "trace_requirements": {
     "fixture_ids": ["S02-F01","S02-F02","S02-F03","S02-F04"],
     "scenario_ids": ["S02"],
-    "boundary_fields": ["operational_status","result_status","performance_results","local_baseline","release_decision"]
+    "boundary_fields": ["operational_status","result_status","performance_results","local_baseline","release_decision"],
+    "rollback_step_ids": ["RB-01","RB-02","RB-03","RB-04","RB-05"]
   },
   "rollback_steps": [
-    "stop_device_and_clear_the_accessible_route",
-    "switch_to_paper_staffed_and_human_delivery",
-    "record_incident_complaint_and_responsible_review_role_without_personal_data",
-    "publish_hold_or_withdrawal_and_open_a_new_professional_review",
-    "delete_temporary_fixture_state_keep_public_decision_and_reopen_only_after_reacceptance"
+    {
+      "id": "RB-01",
+      "action": "stop_device_and_clear_the_accessible_route",
+      "fixture_ids": ["S02-F02", "S02-F03"],
+      "acceptance_ids": ["AC-04"]
+    },
+    {
+      "id": "RB-02",
+      "action": "switch_to_paper_staffed_and_human_delivery",
+      "fixture_ids": ["S02-F01", "S02-F02", "S02-F03", "S02-F04"],
+      "acceptance_ids": ["AC-02", "AC-06"]
+    },
+    {
+      "id": "RB-03",
+      "action": "record_incident_complaint_and_responsible_review_role_without_personal_data",
+      "fixture_ids": ["S02-F02", "S02-F03"],
+      "acceptance_ids": ["AC-04", "AC-06"]
+    },
+    {
+      "id": "RB-04",
+      "action": "publish_hold_or_withdrawal_and_open_a_new_professional_review",
+      "fixture_ids": ["S02-F01", "S02-F03", "S02-F04"],
+      "acceptance_ids": ["AC-03", "AC-04", "AC-05"]
+    },
+    {
+      "id": "RB-05",
+      "action": "delete_temporary_fixture_state_keep_public_decision_and_reopen_only_after_reacceptance",
+      "fixture_ids": ["S02-F04"],
+      "acceptance_ids": ["AC-06"]
+    }
   ],
   "result_boundary": {
     "result_status": "not_run",
