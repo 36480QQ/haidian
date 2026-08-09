@@ -62,7 +62,7 @@
       "result": "pass",
       "severity": "info",
       "target": "drawings/a3-booklet.pdf",
-      "message": "Chinese and English A3 booklets (14 pages each) and A0 boards (7 pages each) have correct page sizes, embedded text and full-page layouts. Every page was rasterized for visual review; the first three review pages carry distinct field, source and spatial evidence."
+      "message": "Chinese and English A3 booklets (14 pages each) and A0 boards (7 pages each) have correct page sizes, embedded text and full-page layouts. Every page was rasterized for visual review; the first three review pages now carry distinct masterplan, key-area, section and component evidence."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
@@ -76,21 +76,21 @@
       "result": "pass",
       "severity": "minor",
       "target": "report/copyright_statement.md",
-      "message": "Original content is CC BY 4.0; the cropped Qinghuayuan photograph remains CC BY-SA 4.0 with attribution, the OSM context remains ODbL 1.0, and the generated courtyard scene is separately disclosed as concept atmosphere rather than site evidence. No remote asset, map screenshot, trademark or tracking code is embedded."
+      "message": "Original content is CC BY 4.0; the cropped Qinghuayuan photograph remains CC BY-SA 4.0 with attribution, the OSM context remains ODbL 1.0, and four separately generated courtyard scenes are disclosed as concept atmosphere rather than site evidence. No remote asset, commercial map screenshot, trademark or tracking code is embedded."
     },
     {
       "check_id": "CROSS_MEDIA_CONSISTENCY",
       "result": "pass",
       "severity": "major",
       "target": "metrics.json",
-      "message": "Proposal, program ledger, metrics, eight bilingual technical figures, one language-neutral concept scene, visual HTML, report HTML and A3/A0 drawings use the same 14 / 6 / 8 / 9 counts, 11,412,603.01 sqm site area, 3,400,943.646 sqm for 0802 and not_applicable for 0902."
+      "message": "Proposal, program ledger, metrics, ten bilingual technical figure pairs, four disclosed concept scenes, visual HTML, report HTML and A3/A0 drawings use the same 14 / 6 / 8 / 9 counts, 11,412,603.01 sqm site area, 3,400,943.646 sqm for 0802 and not_applicable for 0902."
     },
     {
       "check_id": "BILINGUAL_COMPANIONS",
       "result": "pass",
       "severity": "minor",
       "target": "proposal.en.md",
-      "message": "A complete English proposal, rendered report, offline visual, eight text-bearing technical figures, a shared language-neutral concept scene, 14-page A3 booklet and seven-board A0 set accompany the Chinese primary artifacts; evidence tags and figure order match the Chinese primary artifacts."
+      "message": "A complete English proposal, rendered report, offline visual, ten text-bearing technical figure counterparts, four language-neutral concept scenes, 14-page A3 booklet and seven-board A0 set accompany the Chinese primary artifacts; evidence tags and figure order match the Chinese primary artifacts."
     },
     {
       "check_id": "SPATIAL_INDEX",
