@@ -2,6 +2,51 @@
   "schema_version": "0.2.0",
   "model_type": "public_service_pilot_and_governance_matrix",
   "status": "conceptual_not_operational",
+  "task_count": 3,
+  "tasks": [
+    {
+      "id": "north-100-day-pilot-validation",
+      "task_type": "conceptual_pilot_validation",
+      "area": "north",
+      "title": "学院路开放创新环 100 天试点验证",
+      "status": "planned_not_executed",
+      "outcome": "not_executed",
+      "evidence_boundary": "Concept task only; no field execution, measured result, approval, or implementation claim is made.",
+      "required_before_execution": [
+        "station-area and accessibility survey",
+        "weekday and weekend movement/conflict counts",
+        "campus, park, property, fire-safety and operations coordination"
+      ]
+    },
+    {
+      "id": "middle-100-day-pilot-validation",
+      "task_type": "conceptual_pilot_validation",
+      "area": "middle",
+      "title": "AI 原点一公里知识环 100 天试点验证",
+      "status": "planned_not_executed",
+      "outcome": "not_executed",
+      "evidence_boundary": "Concept task only; no field execution, measured result, approval, or implementation claim is made.",
+      "required_before_execution": [
+        "campus-access and public-event coordination",
+        "heritage and copyright review",
+        "community, student and international-user co-review"
+      ]
+    },
+    {
+      "id": "south-100-day-pilot-validation",
+      "task_type": "conceptual_pilot_validation",
+      "area": "south",
+      "title": "大钟寺公共验证客厅 100 天试点验证",
+      "status": "planned_not_executed",
+      "outcome": "not_executed",
+      "evidence_boundary": "Concept task only; no field execution, measured result, approval, or implementation claim is made.",
+      "required_before_execution": [
+        "railway and road safety review",
+        "ownership, fire-safety, noise and operating-hours confirmation",
+        "consumer-protection and equivalent offline-service review"
+      ]
+    }
+  ],
   "evidence_snapshot": {
     "railway_opening_year": 1909,
     "corridor_communities_approx": 70,

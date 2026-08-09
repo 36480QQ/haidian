@@ -450,17 +450,30 @@
         "概念设计比例，不是审定控规指标。"
       ]
     },
-    "adoption_passport_schema_count": {
+    "conversion_accountability_chain_schema_count": {
       "status": "known",
       "value": 1,
       "unit": "count",
       "source_files": [
-        "visual/assets/civic-adoption-passport.schema.json"
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json"
       ],
-      "formula": "count(machine_readable_civic_adoption_passport_schemas)",
+      "formula": "count(machine_readable_jingzhang_conversion_accountability_chain_schemas)",
       "confidence": "high",
       "assumptions": [
         "只表示概念协议结构完整，不表示政府许可、认证、部署或采用。"
+      ]
+    },
+    "conversion_layer_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(technical_conversion,social_conversion,value_conversion)",
+      "confidence": "high",
+      "assumptions": [
+        "三重转化是设计与交付框架，不表示任何项目已完成成果转化、社会采用或价值实现。"
       ]
     },
     "adoption_gate_count": {
@@ -468,7 +481,7 @@
       "value": 5,
       "unit": "count",
       "source_files": [
-        "visual/assets/civic-adoption-passport.schema.json",
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json",
         "proposal.md"
       ],
       "formula": "count(G1_PUBLIC_NECESSITY..G5_ADOPT_RENEW_OR_EXIT)",
@@ -509,7 +522,7 @@
       "unit": "count",
       "source_files": [
         "proposal.md",
-        "visual/assets/civic-adoption-passport.schema.json"
+        "visual/assets/jingzhang-civic-conversion-accountability-chain.schema.json"
       ],
       "formula": "count(free_basic_service,non_ai_channel,staffed_override,field_accessibility,no_scan_bypass,complaint_and_restoration)",
       "confidence": "medium",

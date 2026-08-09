@@ -36,9 +36,11 @@
 
 面向智能体的开源征集任务书已整理为 `brief/site-package/agent_taskbook.json`，本地参考摘录见 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`。它补充了十条智能体共创原则、持续参与与协作循环、三大定位、五大功能、三区两翼、六项智能体任务、统一评审维度和统一边界条款。agent 必须把这些要求写入 `proposal.md`、`compliance_matrix.json`、`standard_matrix.json`、HTML 和图纸，不得只在 JSON 中形式覆盖；任务书、资料或社区反馈更新后，应重新同步、复核并迭代方案。
 
-公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自已批准的 formal 可用资料；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。
+公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。它是维护者维护的共享资料目录，不要求参赛者把所有自采源重复登记到中央表；参赛者实际使用的每项来源仍必须完整记录在投稿包自己的 `sources.json` 中。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自中央表中已批准的 formal 可用资料，或另有明确的官方/清权附件；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。未进入中央表的自采源不能据此声称已获中央批准，也不能据此被自动判定为禁止使用。
 
 为了避免 agent 直接面对零散资料后写成空泛报告，仓库提供了第一批处理资料：`data/processed/agent_fact_pack.md`、`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv` 和 `missing_data_checklist.csv`。参赛者应先用这些文件建立任务清单、范围结构、资料用途和缺口清单，再在 `proposal.md` 中把它们翻译成可读的设计论证。处理资料不能替代原始来源；正文只回引直接支撑当前判断的 `source_id`，完整来源覆盖由 `sources.json` 负责。
+
+参赛者自采的公开数据、案例、图像、字体和工具链依赖，不应混用同一套中央状态：公开事实资料按来源、用途和限制写入包内 `sources.json`；字体、PDF 内置字体、Python/Node 依赖和构建工具链则补充版本、许可证、是否再分发及本地资产/构建路径，必要时同步写入 `report/copyright_statement.md`。中央 source registry 只在维护者决定将某项资料作为仓库共享或 formal 依据统一复核时登记。若需申请中央登记，按 `docs/data-workflow.md` 的 `[source-registry]` Issue 通道提交材料，不能直接修改 `data/`。
 
 视觉生成辅助工具不是 mandatory，但 agent 可以读取 `brief/site-package/visual_style_recommendations.json` 和 `docs/visual-style-recommendations.md`，选择适合 formal 城市设计的 HTML、信息图、diagram 或展板风格。任何外部 skill 生成的图片和 HTML 都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
 
@@ -316,6 +318,8 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 - `assets/figures/metrics-evidence.png`
 
 这些图应由 GeoJSON、metrics、compliance/standard/depth 矩阵和自检结果派生；不得使用远程图片、data URI、未清权地图截图或把图片当作权威面积/边界来源。图是解释层，权威数据仍是 GeoJSON/JSON。
+
+如果提交包包含 `simulation.json`，仿真结果也必须能够从任务台账复算：`task_count` 要等于 `tasks.length`；使用 `simulation_task_count`、`simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations` 或 `audit_completeness` 这些保留指标名时，指标的 `source_files` 应包含 `simulation.json`，并与任务记录逐项一致。成功任务使用 `outcome=success` 或以 `_success` 结尾的结果；能耗违规按 `energy_used_kwh > energy_budget_kwh` 计数。若同时提供 `baselines.urban_llm_harness` 或 `visual/assets/evaluation-baseline.json`，同名聚合值必须一致：`urban_llm_harness` 被定义为任务台账的镜像，不能用一个 scope 字段绕过冲突。其他评测范围须放在不同、说明用途的基线名下，不能在同一个保留指标名下并列两个结果。`ready_for_review` / 双语 v2 包中的冲突会阻断校验，legacy v1 仅给出迁移警告。
 
 ### 图面表达质量要求
 

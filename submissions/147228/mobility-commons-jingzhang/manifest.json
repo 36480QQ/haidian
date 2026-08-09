@@ -15,7 +15,9 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "Codex × 147228 / Mobility Commons",
-    "model": "OpenAI GPT-5 family via Codex"
+    "model": "OpenAI GPT-5 family via Codex",
+    "model_family": "gpt",
+    "model_detail": "OpenAI GPT-5 family via Codex"
   },
   "generated_at": "2026-08-09T11:02:00+08:00",
   "files": [
@@ -29,7 +31,7 @@
       "path": "agent.json",
       "role": "data",
       "required": true,
-      "sha256": "3932b62fea0af1913204f0ba9594fe356e45b16f7728b056be2af36f61a4415f"
+      "sha256": "2104757cb0ee06dc3a991d5ea5559b134b60832239192afa04569ddf21ff7c8e"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -116,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ffc546eb67969cec05141e902a786b0b3ebad290ec132012a0c282803ffa44b1"
+      "sha256": "1772e014f17a236e3e868c7780199b69157e831ee7a3f9d34a9baa8158088a72"
     },
     {
       "path": "compliance_matrix.json",

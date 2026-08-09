@@ -10,11 +10,11 @@
     "approval_inference_allowed": false
   },
   "summary": {
-    "innovation_claim_count": 5,
-    "claims_with_falsifiable_hypothesis": 5,
-    "claims_with_acceptance_test": 5,
-    "claims_with_failure_signal": 5,
-    "claims_with_exit_action": 5,
+    "innovation_claim_count": 6,
+    "claims_with_falsifiable_hypothesis": 6,
+    "claims_with_acceptance_test": 6,
+    "claims_with_failure_signal": 6,
+    "claims_with_exit_action": 6,
     "current_operating_results_known": 0
   },
   "innovations": [
@@ -68,7 +68,7 @@
       "evidence_refs": [
         "geometry/constraints.geojson#SCENE-001",
         "metrics.json#scenario_passport_coverage_ratio",
-        "proposal.md#JZ-AIOS-四门制与场景护照"
+        "proposal.md#四门制与场景护照"
       ],
       "result_status": "protocol_verified_operating_result_unknown"
     },
@@ -121,7 +121,7 @@
       "exit_action": "暂停年度成果发布并完成事件账核对；无法恢复可信台账时停止相关场景。",
       "evidence_refs": [
         "geometry/constraints.geojson#SCENE-004",
-        "proposal.md#运营框架",
+        "proposal.md#更新项目清单实施政策与分期计划",
         "self_check.json#SCENARIO_PROTOCOL"
       ],
       "result_status": "unknown"
@@ -152,6 +152,37 @@
         "visual/assets/innovation-register.json#INNOV-004"
       ],
       "result_status": "register_verified"
+    },
+    {
+      "innovation_id": "INNOV-006",
+      "name_zh": "已建公园增量协议",
+      "name_en": "Built-Park Delta Protocol",
+      "baseline_gap": "京张铁路遗址公园二期已于 2026 年 8 月 6 日开放；若仍把连续绿廊、基础慢行或全龄活动当作待建创新，会重复既有公共投入，也无法证明 AI 的净增量。公开报道只能建立桌面研究基线，不能替代竣工图、现场踏勘或使用后评估。",
+      "novelty_claim": "要求每个拟进入 G1/G2 的 AI 或数字化试点先与既有人工、纸质、实体导视和公共服务基线作同页对照，并证明最小占地、无净损公共空间、可停止恢复和独立复测，才允许把技术叠加到已开放公园。",
+      "falsifiable_hypothesis": "若增量协议有效，任何试点在进入 G1/G2 前都应能证明相对非 AI 现状基线的可测净收益，并在退出后把空间、基本服务和安静时段恢复到不低于记录基线的状态。",
+      "minimum_evidence": [
+        "开园后现场观察与非 AI 任务基线；当前完成数为 0",
+        "受影响人群共同确认的增量假设与不部署条件",
+        "占地、时段、噪声、无障碍和维护负担记录",
+        "停止、拆除或离线切换后的恢复核验",
+        "与试点运营责任分离的独立复测记录"
+      ],
+      "acceptance_test": "每个申请进入 G1/G2 的试点同时提交可追溯基线、预注册增量指标、无净损检查、恢复演练和独立复测；任何一项缺失均不得升级。",
+      "failure_signals": [
+        "用已建绿廊、慢行或全龄设施的既有价值冒充试点成效",
+        "试点占用无障碍通行、静音时段或基本公共服务且无等价替代",
+        "无法在承诺时限内拆除、离线切换或恢复到记录基线",
+        "独立复测未确认增量或发现维护负担大于公共收益"
+      ],
+      "exit_action": "不进入或退回 G0；停止现场运行，执行恢复方案，公开失败原因与恢复证据。只有重新取得现场基线、社区共测和独立复测通过后才可再次申请。",
+      "evidence_refs": [
+        "proposal.md#设计依据与资料清单",
+        "visual/assets/site-grounding-register.json#SG-001",
+        "visual/assets/pilot-readiness-register.json#JZ-01",
+        "metrics.json#completed_post_opening_field_audit_count",
+        "assumptions.json#A-POST-OPENING-007"
+      ],
+      "result_status": "unknown"
     }
   ]
 }

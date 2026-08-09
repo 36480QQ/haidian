@@ -60,16 +60,19 @@
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/sources.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/standard_matrix.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/evidence-freshness-policy.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/g1-preregistration-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/innovation-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/non-ai-parity-contract.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/pilot-readiness-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/rights-clearance-ledger.json",
+        "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/assets/site-grounding-register.json",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/index.en.html",
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 8734364,
+      "total_bytes": 9532559,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -153,15 +156,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 27,
-        "proposal_format_version": "1",
-        "evidence_contract": "legacy-exhaustive-inline",
+        "known_metric_refs_required": 38,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 25,
+          "source": 29,
           "standard": 6,
           "depth": 15,
-          "data": 26,
-          "metric": 27
+          "data": 30,
+          "metric": 37
         }
       }
     },
@@ -214,14 +217,21 @@
       "result": "pass",
       "severity": "major",
       "target": "metrics.json",
-      "message": "27 个 known 指标均来自 EPSG:4548 几何复算或机器可读属性计数；不支持的法定与运行指标保持 unknown。"
+      "message": "38 个 known 指标来自 EPSG:4548 几何复算或机器可读属性计数；9 个无正式资料或运行证据的指标保持 unknown。"
     },
     {
       "check_id": "SCENARIO_PROTOCOL",
       "result": "pass",
       "severity": "major",
       "target": "geometry/constraints.geojson",
-      "message": "12 个 G0 节点均具备版本、责任、风险、最小数据、地理/时段边界、受损人群、人工接管、申诉、非 AI 选项、进入/停止、复测包和具体到期日。"
+      "message": "12 个 G0 节点均具备版本、责任、风险、最小数据、边界、人工接管、申诉、非 AI 选项、停止、复测和到期字段。"
+    },
+    {
+      "check_id": "G1_PREREGISTRATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/g1-preregistration-register.json",
+      "message": "12/12 场景具备同任务对照、唯一主指标与分母、采样、时间窗、无伤害、停止恢复、独立复测和版本字段；完成预注册、获批窗口、现场执行与已知结果均为 0。"
     },
     {
       "check_id": "PUBLIC_INTEREST_FALLBACK",
@@ -235,35 +245,35 @@
       "result": "pass",
       "severity": "major",
       "target": "compliance_matrix.json",
-      "message": "23 项任务按真实章节、Feature、指标、来源、假设和自检分别映射，不再批量复制同一证据组合。"
+      "message": "23 项任务按真实章节、Feature、指标、来源、假设和自检分别映射；agent.3 与 agent.6 已指向 G1 预注册证据。"
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "离线 HTML 显示不足、总览、三层范围、重点区、用地、交通、蓝绿、建筑、项目、场景、指标、任务、自检、来源和假设，无远程依赖。"
+      "message": "中英文离线首页优先展示 G1 首测协议及零值证据，并继续覆盖现实基线、总览、重点区、场景、公共空间、实施、指标和来源，无远程依赖。"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "正文引用 6 项标准、15 项设计深度、全部 27 个 known 指标及所有必需机器图层。"
+      "message": "正文与矩阵的 6 项标准、15 项设计深度和 38 个已知指标引用通过专业证据检查。"
     },
     {
       "check_id": "RISK_AND_SOURCE_BOUNDARIES",
       "result": "pass",
       "severity": "major",
       "target": "sources.json",
-      "message": "项目、标准、政策、场地、OSM 和案例来源均记录可用与禁用范围；外部协同、文化和场景协议保持建议属性。"
+      "message": "项目、标准、政策、场地、OSM 和案例来源均记录可用与禁用范围；权利状态保持 not_fully_cleared，外部协同、阈值和运行结果不作虚构。"
     },
     {
       "check_id": "PAPER_DIMENSIONS",
       "result": "pass",
       "severity": "info",
       "target": "drawings/",
-      "message": "A3 文册与 A0 展板使用实际 A3/A0 页面尺寸；标题和注释为可检索矢量文字。"
+      "message": "中英文 A3 文册与 A0 展板保持实际 A3/A0 页面尺寸，G1 首测与证据成熟度图已同步且无裁切。"
     }
   ]
 }
