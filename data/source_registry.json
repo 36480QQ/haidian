@@ -243,16 +243,16 @@
       "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
       "published_date": "2023-07-13",
       "accessed_date": "2026-08-09",
-      "file_type": "webpage",
+      "file_type": "markdown",
       "authority_level": "A0",
-      "timeliness_level": "T2",
-      "public_access_status": "public_url",
-      "license_summary": "Official public government text; local snapshot and reuse terms require maintainer verification before formal use.",
-      "review_status": "needs_review",
-      "usable_for_formal": "background_only",
+      "timeliness_level": "T1",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. Reuse remains subject to official terms.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
       "allowed_uses": [
-        "background context for governance of generative AI services offered to the public in mainland China",
-        "design rationale for complaint entry, service suspension and human fallback concepts when the scope explicitly applies"
+        "Article 2 scope and Articles 14, 15 and 17 of the Measures for public-facing generative AI services offered within mainland China",
+        "service suspension or handling, complaint reporting and security-assessment references only where the Article 2 scope applies"
       ],
       "prohibited_uses": [
         "legal opinion or case-specific compliance determination",
@@ -264,7 +264,10 @@
         "public_service",
         "compliance"
       ],
-      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。未完成维护者快照与用途复核前，仅作背景资料。"
+      "local_paths": [
+        "brief/site-package/standards/references/generative-ai-interim-measures.md"
+      ],
+      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。快照仅供离线检索，正式引用仍以官方页面为准。"
     },
     {
       "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
@@ -274,16 +277,16 @@
       "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
       "published_date": "2023-06-28",
       "accessed_date": "2026-08-09",
-      "file_type": "webpage",
+      "file_type": "markdown",
       "authority_level": "A0",
-      "timeliness_level": "T2",
-      "public_access_status": "public_url",
-      "license_summary": "Official public government text; local snapshot and reuse terms require maintainer verification before formal use.",
-      "review_status": "needs_review",
-      "usable_for_formal": "background_only",
+      "timeliness_level": "T1",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. Reuse remains subject to official terms.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
       "allowed_uses": [
-        "background context for accessibility and human-service fallback in public service venues covered by the law",
-        "design rationale for retaining on-site guidance and human-operated service in the expressly listed service contexts"
+        "Article 39 requirement for on-site guidance and human-operated service in public service venues handling medical, social-security, financial or living-payment services",
+        "accessibility and human-fallback baseline only for the expressly listed service contexts"
       ],
       "prohibited_uses": [
         "legal opinion or venue-specific compliance determination",
@@ -295,7 +298,10 @@
         "public_service",
         "compliance"
       ],
-      "notes_zh": "法律于 2023-06-28 通过、2023-09-01 起施行；涉及医疗健康、社会保障、金融业务、生活缴费等服务事项的公共服务场所的现场指导、人工办理边界，须按正文限定语理解。未完成维护者快照与用途复核前，仅作背景资料。"
+      "local_paths": [
+        "brief/site-package/standards/references/barrier-free-environment-law.md"
+      ],
+      "notes_zh": "法律于 2023-06-28 通过、2023-09-01 起施行；涉及医疗健康、社会保障、金融业务、生活缴费等服务事项的公共服务场所的现场指导、人工办理边界，须按正文限定语理解。快照仅供离线检索，具体场所合规仍需单独判断。"
     },
     {
       "source_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
@@ -305,12 +311,12 @@
       "url": "https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm",
       "published_date": "2020-11-24",
       "accessed_date": "2026-08-09",
-      "file_type": "webpage",
-      "authority_level": "A1",
-      "timeliness_level": "T2",
-      "public_access_status": "public_url",
-      "license_summary": "Official public government text; local snapshot and reuse terms require maintainer verification before formal use.",
-      "review_status": "needs_review",
+      "file_type": "markdown",
+      "authority_level": "A0",
+      "timeliness_level": "T4",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public policy text; attributed Markdown snapshot retained for background reference. Reuse remains subject to official terms.",
+      "review_status": "approved",
       "usable_for_formal": "background_only",
       "allowed_uses": [
         "background context for running traditional service channels in parallel with smart services",
@@ -327,7 +333,10 @@
         "public_service",
         "policy"
       ],
-      "notes_zh": "国办发〔2020〕45号，2020-11-24 发布；提出传统服务方式与智能化服务创新并行，并列举老年人高频服务场景。该文件面向全国，未提供海淀区空间落位或本地实施结论。未完成维护者快照与用途复核前，仅作背景资料。"
+      "local_paths": [
+        "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md"
+      ],
+      "notes_zh": "国办发〔2020〕45号，2020-11-24 发布；提出传统服务方式与智能化服务创新并行，并列举老年人高频服务场景。该文件面向全国，未提供海淀区空间落位或本地实施结论。作为政策背景参照，不写成具体项目法定控制。"
     }
   ]
 }

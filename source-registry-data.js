@@ -5,20 +5,18 @@ window.HAIDIAN_SOURCE_REGISTRY = {
   "counts": {
     "total": 9,
     "by_review_status": {
-      "approved": 5,
-      "provisional": 1,
-      "needs_review": 3
+      "approved": 8,
+      "provisional": 1
     },
     "by_usable_for_formal": {
-      "yes": 5,
+      "yes": 7,
       "provisional_only": 1,
-      "background_only": 3
+      "background_only": 1
     },
     "by_authority_level": {
-      "A0": 6,
+      "A0": 7,
       "CLEARED_USER_DOCUMENT": 1,
-      "PROVISIONAL_REPOSITORY": 1,
-      "A1": 1
+      "PROVISIONAL_REPOSITORY": 1
     }
   },
   "usageRule": "Use approved formal sources for formal evidence; background_only sources for context; provisional_only sources for intake/visualization only; needs_review sources must not be used until reviewed.",
@@ -138,24 +136,22 @@ window.HAIDIAN_SOURCE_REGISTRY = {
         "replacement for official regulatory plan conditions"
       ],
       "url": "https://www.gov.cn/zhengce/zhengceku/202311/content_6917279.htm"
-    }
-  ],
-  "background": [
+    },
     {
       "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
       "title": "生成式人工智能服务管理暂行办法",
       "publisher": "国家互联网信息办公室等七部门",
       "authority_level": "A0",
-      "review_status": "needs_review",
-      "usable_for_formal": "background_only",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
       "topics": [
         "ai_governance",
         "public_service",
         "compliance"
       ],
       "allowed_uses": [
-        "background context for governance of generative AI services offered to the public in mainland China",
-        "design rationale for complaint entry, service suspension and human fallback concepts when the scope explicitly applies"
+        "Article 2 scope and Articles 14, 15 and 17 of the Measures for public-facing generative AI services offered within mainland China",
+        "service suspension or handling, complaint reporting and security-assessment references only where the Article 2 scope applies"
       ],
       "prohibited_uses": [
         "legal opinion or case-specific compliance determination",
@@ -169,16 +165,16 @@ window.HAIDIAN_SOURCE_REGISTRY = {
       "title": "中华人民共和国无障碍环境建设法",
       "publisher": "全国人民代表大会常务委员会",
       "authority_level": "A0",
-      "review_status": "needs_review",
-      "usable_for_formal": "background_only",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
       "topics": [
         "accessibility",
         "public_service",
         "compliance"
       ],
       "allowed_uses": [
-        "background context for accessibility and human-service fallback in public service venues covered by the law",
-        "design rationale for retaining on-site guidance and human-operated service in the expressly listed service contexts"
+        "Article 39 requirement for on-site guidance and human-operated service in public service venues handling medical, social-security, financial or living-payment services",
+        "accessibility and human-fallback baseline only for the expressly listed service contexts"
       ],
       "prohibited_uses": [
         "legal opinion or venue-specific compliance determination",
@@ -186,13 +182,15 @@ window.HAIDIAN_SOURCE_REGISTRY = {
         "generalizing the human-service requirement to every public space or digital interface"
       ],
       "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm"
-    },
+    }
+  ],
+  "background": [
     {
       "source_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
       "title": "国务院办公厅关于印发《关于切实解决老年人运用智能技术困难实施方案》的通知（国办发〔2020〕45号）",
       "publisher": "国务院办公厅",
-      "authority_level": "A1",
-      "review_status": "needs_review",
+      "authority_level": "A0",
+      "review_status": "approved",
       "usable_for_formal": "background_only",
       "topics": [
         "elderly_inclusion",
