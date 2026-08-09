@@ -1149,7 +1149,7 @@ def validate_simulation_consistency(
                 _simulation_issue(
                     report,
                     strict,
-                    f"{simulation_display}: metrics.{metric_name}={metric['value']} conflicts with baselines.urban_llm_harness.{baseline_name}={baseline_value}; add an explicit scope or use one aggregate",
+                    f"{simulation_display}: metrics.{metric_name}={metric['value']} conflicts with baselines.urban_llm_harness.{baseline_name}={baseline_value}; urban_llm_harness must mirror the task-derived aggregate, so record any distinct evaluation under a different documented baseline",
                 )
 
     evaluation_path = repo_root / proposal_dir / "visual" / "assets" / "evaluation-baseline.json"

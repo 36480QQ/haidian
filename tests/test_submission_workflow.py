@@ -1919,6 +1919,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertFalse(report.ok)
             errors = "\n".join(report.errors)
             self.assertIn("conflicts with baselines.urban_llm_harness.success_rate=1.0", errors)
+            self.assertIn("urban_llm_harness must mirror the task-derived aggregate", errors)
             self.assertIn("evaluation-baseline.json", errors)
 
     def test_language_neutral_cannot_bypass_primary_display_pair(self) -> None:
