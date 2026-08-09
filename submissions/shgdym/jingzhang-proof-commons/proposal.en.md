@@ -1,17 +1,17 @@
 ---
-title: "Jing-Zhang Proof Commons"
+title: "Jing-Zhang Ledger Line: A Public AI Verification Belt on the Centennial Railway"
 author_github: "shgdym"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A bilingual, evidence-oriented AI urban design package for the Centennial Jing-Zhang AI Innovation Belt, using provisional geometry with explicit recalculation requirements when official polygons are released."
+summary: "A bilingual urban design proposal that turns the centennial railway into a public AI verification line: every scenario has a spatial anchor, evidence source, human review path, and recalculation trigger when official geometry is released."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# Jing-Zhang Proof Commons
+# Jing-Zhang Ledger Line: A Public AI Verification Belt on the Centennial Railway
 
 ## Design Basis and Source List
 
@@ -21,7 +21,7 @@ This proposal uses the official open-call announcement, the Agent taskbook, the 
 
 ## Three-Level Scope Framework
 
-The proposal follows the three official work scopes: the coordinated research area frames the AI ecosystem and future-city strategy; the overall design area translates that strategy into urban renewal, land use, mobility, blue-green space, and public-service support; the key-area scope tests detailed design moves in Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]. The working concept is an evidence commons along the Jing-Zhang heritage spine: three AI anchors, a public-space and slow-mobility loop, and scenario nodes that can be reviewed and recalculated.
+The proposal follows the three official work scopes: the coordinated research area frames the AI ecosystem and future-city strategy; the overall design area translates that strategy into urban renewal, land use, mobility, blue-green space, and public-service support; the key-area scope tests detailed design moves in Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]. The working concept is Jing-Zhang Ledger Line: the centennial railway becomes a public AI verification line where every scenario has a spatial anchor, evidence source, human review path, public explanation, exit path, and recalculation trigger when official geometry arrives.
 
 ![Three-level scope and land-use structure](assets/figures/land-use-structure.en.png)
 
