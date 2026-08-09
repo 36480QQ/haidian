@@ -6,11 +6,21 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.9"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v0.9 adds a three-case, six-gate synthetic human-city handoff receipt and a trade-off replay with four objective lenses and non-dominance checks without changing geometry or formal metrics, while retaining the pre-authorization readiness ledger for six test scenarios. It separately maps the taskbook's thirteen unified review dimensions and the repository formal scorecard's seven workflow questions to the same in-package evidence; provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.0"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.0 adds a five-stage rejectable pre-authorization startup protocol and a structured record of five AI-assisted design choices with explicit human decisions, without changing geometry or formal metrics. It retains v0.9's three-case, six-gate synthetic human-city handoff receipt, trade-off replay, and pre-authorization readiness ledger for six test scenarios. It separately maps the taskbook's thirteen unified review dimensions and the repository formal scorecard's seven workflow questions to the same in-package evidence; provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v1.0: Turn “unconfirmed accountability” into an auditable startup protocol
+
+This iteration adds `governance-startup-protocol.json`, which splits pre-authorization research or pilot startup into five rejectable and reversible stages: scope freeze and startup registration, eligibility and conflict review, public notice and objections, human accountability and authorization record, and version handoff/review/exit. The protocol covers 6/6 readiness scenarios, 3/3 release-gate records, and all 8/8 required fields while explicitly keeping `authorized=false` and `operator_confirmed=false`; no operator, institution, permit, or field result is named. [data:visual/assets/governance-startup-protocol.json] [data:visual/assets/pilot-readiness-register.json] [depth:phasing_implementation]
+
+The network-free `check-governance-startup-protocol.js` resolves 5/5 stages, 6/6 scenarios, 3/3 release gates, 8/8 fields, four role-selection rules, and five no-go conditions. Two negative fixtures—missing selection inputs and an unauthorized stage—must fail. It proves only that startup conditions and claim boundaries are reviewable inside the package; it does not prove authorization, staffing, field operation, or performance. [data:visual/assets/check-governance-startup-protocol.js] [metric:version_release_count]
+
+The new `ai-design-exploration-log.json` records five key choices as “AI-assisted structuring/replay → human judgement → retained or rejected”: release gates, the ordinary-person service chain, spatial parameter trade-offs, the handoff receipt, and the startup protocol. Each returns to existing evidence and still requires a human decision. This is a retrospective structural index, not a verbatim model transcript, external-network log, or field experiment; missing evidence remains conceptual or `unknown`. [data:visual/assets/ai-design-exploration-log.json] [data:visual/assets/check-ai-design-exploration-log.js] [depth:risk_missing_data]
+
+Together these assets put “who may start, who may stop, and whose decision retained the trade-off” on one auditable chain without turning a governance gap into a completion claim. All spatial content remains a conceptual suggestion/reference scheme for professional teams to deepen after official boundaries, rights, controls, existing conditions, mobility, utilities, energy, hydrology, and public baselines are available; formal metrics and provisional geometry remain unchanged. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
 ## v0.9: Turn conceptual actions into a replayable handoff receipt
 

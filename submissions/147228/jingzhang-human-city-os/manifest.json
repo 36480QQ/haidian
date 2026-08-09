@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7596afd4ba50a1665c3bdca1dfff1fdf43cd1b439e65af5e27d130d068af64d3"
+      "sha256": "ddbd6766e59c05a9f6519cae976047927e9c8e5b5afe22fee23bb5dea71442ba"
     },
     {
       "path": "agent.json",
@@ -60,7 +60,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ec5c4ee46eb4519e56431eb03a9834224b44c9c65f67d4ccdd3aabde7b4ea6f0"
+      "sha256": "d74fb5be17854d6aaa3831297f3b59061b39fe0504b18a2c8bc34ba8f994df5a"
     },
     {
       "path": "standard_matrix.json",
@@ -79,19 +79,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7376910c17ac9bdafd56387128f3bc22cfd36d2a6afe50a34be95085cf2f780c"
+      "sha256": "6464c364623606cdf94d49e982dd33fdd3e6b7e4d78489e8b364d74dc23418c7"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "55670ac6c4f4f5351c42d6b256e5902b4fb40b729c31c353806e91d94f2c1b87"
+      "sha256": "9ca5c58e0262ed8dbee4ae6920db980cfc09b059e942e7f7fbee7f324a98e843"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ea1c883eab507961c2e051424aff43934406a97aa2a6e75e2cf7e68a6414524d"
+      "sha256": "93ddb2ec33a350ca70147a0b56f083efdf7db88ca062085d4eb6e8280a8b75e3"
     },
     {
       "path": "report/copyright_statement.md",
@@ -118,7 +118,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7eae0827ac175213af7c5265fc7026d88489ea5f64cc2b596b747c1ce79bd0a2"
+      "sha256": "a5c07062da43774b8b39616fdba340d07442c87ef6e674b5c38403cd4b127762"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cecaed54ca84e0e4a5fe53b120a39e578fc2289b820c5f08e6a158d574861023"
+      "sha256": "377e1f35992cad3cf46e1499e2425054588562f3cd2f15a1a10e3f7c8405170b"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6cb7dda8f81fa4c3d8b17aa48330d0913499c672b45d4610d9e7481316599353"
+      "sha256": "000d0e40e350f5708be882cfbd4c08b9f554f6de48dd9ab8938c2c5cf7ff1bc7"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e1f660897add38170308af86cd6813105c77f273a0389966bebd4e80f1c0cd59"
+      "sha256": "7f512a747911ca608457a56d319ce9c679ce4e357ff68baf82fc5bf165c88bc9"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "d840a52fb7229de95e9606810715064da4222d3ee4c5ff4a47b43a66b864716a"
+      "sha256": "1427791c1a51863210123a377120afa0536cecfa612f4fef8686f641c5d2a2bd"
     },
     {
       "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a2d04ed27ec4ca59af7f4b5b4ebf139e91c34267c38e50726f37b80032f072a9"
+      "sha256": "5d1ba38c5a2c78154d42358624988886bcef4a99d689da7c9c589356cfe02b7f"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -275,7 +275,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "e55e2a79e2e0236258aa3ad109e227c3ec95fe70d66c76ebb70f4448b7e2c664"
+      "sha256": "1682bf829ecd056ca3ad4e257581ab5407c911f3f72ebafe631ee18f67c34769"
     },
     {
       "path": "visual/assets/implementation-operation-matrix.json",
@@ -317,14 +317,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "24dba1db07194b468b6312d7c77adaedeccd92ef6c9a39b7201a1d2d463e9112"
+      "sha256": "b462a97b9f85b47b55b79ae09a2526ae6d5c70dd995d0aa2604fbb50e182c562"
     },
     {
       "path": "visual/assets/human-city-reference-audit.json",
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "bd2c2b792ebc130b28929fbcff602bf6118e20c513b2635bb46f3fda54f66a5f"
+      "sha256": "eae3605a7e2bb65786568f67417fec8a86e36785de8b54446abf0f23292f8e2a"
     },
     {
       "path": "visual/assets/run-human-city-reference-audit.js",
@@ -338,7 +338,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "e77da10bcf1318c364d0c513220185779ecce88daccc288c4faf654eb03a610b"
+      "sha256": "f600f510893c2b6b7cc6ff8e013cf3e59035a90b1cbc4f4088052d13afd8f7a4"
     },
     {
       "path": "visual/assets/rights-clearance-ledger.json",
@@ -530,7 +530,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "35fdddab4a0c52b07dc834662df3692f3994da2853c36963e38da54d5c2f04a2"
+      "sha256": "80bd5183b5e81fe3c42fc6c6af88f30fc780f7684bac2c5d7f1a3c5e9e12db66"
     },
     {
       "path": "visual/assets/run-reviewer-navigation-audit.js",
@@ -609,6 +609,34 @@
       "required": false,
       "language": "neutral",
       "sha256": "367e8a89964bfc29588a7cb3b02e09d91635ace9cf62176837a1a6d3c25c9def"
+    },
+    {
+      "path": "visual/assets/governance-startup-protocol.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "aa945c327f14e89dd2f4b43458a52044548c38e1bc7cb4e86ea19129e079bc99"
+    },
+    {
+      "path": "visual/assets/check-governance-startup-protocol.js",
+      "role": "workflow_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "a619af96b6f1d0dacbb6ac0220f3f3aefe79a1beb03cc33d30a32600cb8f5636"
+    },
+    {
+      "path": "visual/assets/ai-design-exploration-log.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "19a522aedff97745586cd019d2c0034f5d8a208c232e08a221cc1e3bca3e6243"
+    },
+    {
+      "path": "visual/assets/check-ai-design-exploration-log.js",
+      "role": "workflow_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "316aa1ff31a6d0be11616d47b9d145b7e70501a1b6a5f5922028fab4984a5faa"
     }
   ],
   "validation_claim": {

@@ -6,11 +6,21 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.9"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v0.9 在不改动几何和正式指标的前提下，新增三案例、六道门的合成人本交接凭证，以及带四个目标镜头和非支配检查的空间取舍推演，并保留 6 个测试类场景的授权前准备度台账；任务书 13 项统一评审维度与仓库 formal scorecard 的 7 项工作流问题分开映射到同一组包内证据，既有临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.0"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.0 在不改动几何和正式指标的前提下，把待确认责任转成五阶段、可拒绝、可退出的授权前启动程序，并记录五个 AI 辅助设计取舍及其人类决策回放；同时保留 v0.9 的三案例六道门合成人本交接凭证、空间取舍推演与 6 个测试类场景准备度台账。任务书 13 项统一评审维度与仓库 formal scorecard 的 7 项工作流问题分开映射到同一组包内证据，既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v1.0：把“待确认责任”变成可审计的启动程序
+
+本轮新增 `governance-startup-protocol.json`：它把授权前的研究/试点启动拆成五个可拒绝、可回退的阶段——范围冻结与启动登记、资格与利益冲突复核、公众告知与异议、人类责任与授权记录、版本交接/复核/退出。协议覆盖准备度台账的 6/6 场景、发布门的 3/3 记录和 8/8 必填字段，并明确 `authorized=false`、`operator_confirmed=false`；当前没有命名运营者、机构、许可或现场结果。[data:visual/assets/governance-startup-protocol.json] [data:visual/assets/pilot-readiness-register.json] [depth:phasing_implementation]
+
+`check-governance-startup-protocol.js` 在无网络条件下重解 5/5 阶段、6/6 场景、3/3 发布门、8/8 字段、4 条角色选择规则和 5 条禁止启动条件，并用“缺少选择输入”“擅自授权”两个负样本预期失败。它只证明包内启动条件与边界可复核，不证明任何主体已经授权、人员已经到位、现场已经运行或绩效已经发生。[data:visual/assets/check-governance-startup-protocol.js] [metric:version_release_count]
+
+同时新增 `ai-design-exploration-log.json`，把五个关键取舍登记为“AI 辅助整理/回放 → 人类判断 → 保留或拒绝”的结构化记录：发布门、普通人服务链、空间参数取舍、交接凭证和启动程序分别回接现有证据。它是事后结构化索引，不是逐字模型对话、外部联网记录或现场实验；每个取舍仍要求人类决定，缺少证据时保持概念或 `unknown`。[data:visual/assets/ai-design-exploration-log.json] [data:visual/assets/check-ai-design-exploration-log.js] [depth:risk_missing_data]
+
+这两份资产把“谁可开始、谁可停止、哪一个取舍被谁保留”放到同一条可审计链上，但不把治理空缺包装成完成度。所有空间内容仍为概念建议、参考方案，供专业团队在官方边界、权属、控规、现状、交通、市政、能源、水文与公众基线齐备后深化研究；正式指标和 provisional 几何均保持原值。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]
 
 ## v0.9：把概念动作交接成可回放凭证
 
