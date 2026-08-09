@@ -30,15 +30,17 @@ iteration: "v1.9"
 | 证据状态 | 几何与指标在 EPSG:4548 可复算；区级公开统计只校准问题，不进入指标 | 场地面积指标与海淀区统计公报（来源登记见下段） |
 | 决策边界 | 全部空间、品牌、活动、时限与角色安排均为概念建议，不是法定规划或政府承诺 | 风险章节、退出条件、assumptions.json |
 
-上表「合规锚点」一行对应 [source:GENERATIVE-AI-INTERIM-MEASURES]、[source:BARRIER-FREE-ENVIRONMENT-LAW] 与 [source:ELDERLY-SMART-TECH-PLAN]；「证据状态」一行对应 [metric:site_area_sqm] 与 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]。引用键写在正文而不是表格单元格里，是为了让离线 HTML 的表格不出现未渲染的原始标记。
+上表「合规锚点」一行对应 [source:GENERATIVE-AI-INTERIM-MEASURES]、[source:BARRIER-FREE-ENVIRONMENT-LAW] 与 [source:ELDERLY-SMART-TECH-PLAN]；「证据状态」一行对应 [metric:site_area_sqm] 与 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]。此处引用键写在表下而非单元格内，是因为该表每行承载多条锚点，逐格标注反而割裂阅读；本包其余表格（如用地面积、专业深度）则每行只挂一个引用键，直接写在单元格里。两种写法在离线 HTML 中都渲染为证据条，不会出现未渲染的原始标记。
 
 English brief — Jing-Zhang Handover Line translates the railway shift-handover — the most ordinary and most rigorous institution the line ever produced — into an urban protocol for AI. Capability may move from research to validation, from validation to open source, and from open source to daily public service; accountability may not move without a named person signing for it. One continuous handover line links three Handover Grounds, two supporting wings and twelve reversible scenarios, each carrying human takeover, a non-AI equivalent service and an exit condition. Every geometry is a recomputable conceptual proposal; every statutory control awaits confirmation by qualified professionals and government bodies.
 
 ## 设计依据与资料清单
 
-方案以征集公告、面向智能体任务书和仓库正式资料包为任务依据。公告定义43.6平方公里统筹研究范围、约11.4平方公里总体设计范围与三处重点区域；资料包提供枚举、模式、临时几何和校验工具，但明确缺少官方红线、控规、道路、权属、市政、消防、文保与完整现状建筑资料。本包据此把事实、推断和设计分成三栏：公开事实进入来源登记；临时边界保留 official_boundary=false；新增空间只标记 design_proposal。其证据入口为 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY] 与 [source:PROCESSED-FACT-PACK]。
+方案以征集公告、面向智能体任务书和仓库正式资料包为任务依据。公告定义43.6平方公里统筹研究范围、约11.4平方公里总体设计范围与三处重点区域；资料包提供枚举、模式、临时几何和校验工具，但明确缺少官方红线、控规、道路、权属、市政、消防、文保与完整现状建筑资料。本包据此把事实、推断和设计分成三栏：公开事实进入来源登记；临时边界保留 official_boundary=false；新增空间只标记 design_proposal。五个证据入口各自承担一种角色：任务定义 [source:OFFICIAL-ANNOUNCEMENT]、任务分解 [source:AGENT-TASKBOOK]、资料底板 [source:SITE-PACKAGE]、使用边界 [source:SOURCE-REGISTRY]、事实导航 [source:PROCESSED-FACT-PACK]。
 
-本次计算使用 [source:BOUNDARY-SOURCE] 和 [source:KEY-AREA-SOURCE]，对应 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001]。它们只支持方案生成、比较、自检和展示，不是官方红线或精确面积依据；官方多边形发布后，九类几何、全部中英文图件、两套双语PDF与全部指标必须重新生成。控规、建筑设计与用地表达分别响应 [standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 与 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；其中建筑设计深度文件尚缺正式内容，只作为深化提醒而不充当审定标准。总体工作同时响应 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 和 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+本次计算使用 [source:BOUNDARY-SOURCE] 和 [source:KEY-AREA-SOURCE]，对应 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001]。它们只支持方案生成、比较、自检和展示，不是官方红线或精确面积依据；官方多边形发布后，九类几何、全部中英文图件、两套双语PDF与全部指标必须重新生成。
+
+控规、建筑设计与用地表达分别响应 [standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 与 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；其中建筑设计深度文件尚缺正式内容，只作为深化提醒而不充当审定标准。总体工作同时响应 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 和 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 生成方法是确定性的：EPSG:4326负责交换，EPSG:4548负责面积和长度；用地由场地边界拓扑切分，绿地、公共空间、建筑类型单元和线路均由同一空间模型导出，指标不从图面人工抄录。资料缺口诊断见 [depth:existing_conditions_diagnosis]，缺口登记见 assumptions.json，专业覆盖见 standard_matrix.json 与 design_depth_matrix.json。图形、版式、符号和文字为本方案原创程序化生成；六个国际案例只转述公开网页机制，不复用照片、地图、商标或他人图表。Sonike提交，Codex（GPT-5）负责本轮审计、数据与确定性制图，用户操作的Claude Opus 5参与此前编辑轮次；具体披露与版本见agent.json、copyright_statement.md和changelog.md，人类保留最终判断。
 
@@ -428,7 +430,32 @@ English brief — Jing-Zhang Handover Line translates the railway shift-handover
 | 结构校验错误 | 0个；仅代表样例可解析，不代表真实性能通过 | [metric:shift_protocol_validation_error_count] |
 | 概念分期 | 3期；由条件触发而非自动实施 | [metric:phase_count] |
 
-七类用地面积分别为05商业服务2,133,693.511㎡、0701居住1,459,314.115㎡、0702社区服务1,332,004.101㎡、0802科研1,899,736.874㎡、0803文化1,038,498.555㎡、0804教育1,284,882.427㎡、1401公园绿地2,264,695.802㎡，对应 [metric:land_use_05_sqm]、[metric:land_use_0701_sqm]、[metric:land_use_0702_sqm]、[metric:land_use_0802_sqm]、[metric:land_use_0803_sqm]、[metric:land_use_0804_sqm]、[metric:land_use_1401_sqm]。三道合并门的覆盖面积为4,837,401.583㎡、3,545,776.934㎡、3,029,646.869㎡ [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]；三处临时重点区为1,929,201.877㎡、1,043,236.909㎡、720,454.219㎡ [metric:key_area_zhongzhiyuan_sqm] [metric:key_area_origin_community_sqm] [metric:key_area_dazhongsi_sqm]。概念建筑基底覆盖率为0.019365 [metric:conceptual_building_coverage_ratio]，但总建筑面积、建筑密度、道路面积和道路率因缺少逐栋普查与道路红线继续保持 [metric:total_floor_area_sqm]、[metric:building_density]、[metric:road_area_sqm]、[metric:road_ratio] 未赋值。以上小数位表示的是“同一几何可被第三方复现到同一位”，不表示外部事实具有同等精度；官方边界发布后全部数值按同一算法重算。
+七类用地面积与指标键逐行对应，面积单位为㎡：
+
+| 用地代码与类别 | 面积 | 指标键 |
+| --- | --- | --- |
+| 05 商业服务 | 2,133,693.511 | [metric:land_use_05_sqm] |
+| 0701 居住 | 1,459,314.115 | [metric:land_use_0701_sqm] |
+| 0702 社区服务 | 1,332,004.101 | [metric:land_use_0702_sqm] |
+| 0802 科研 | 1,899,736.874 | [metric:land_use_0802_sqm] |
+| 0803 文化 | 1,038,498.555 | [metric:land_use_0803_sqm] |
+| 0804 教育 | 1,284,882.427 | [metric:land_use_0804_sqm] |
+| 1401 公园绿地 | 2,264,695.802 | [metric:land_use_1401_sqm] |
+
+三道合并门与三处临时重点区的覆盖面积同样逐行登记；重点区名称取自 `geometry/key_areas.geojson` 的 `name_zh`，几何均为粗略范围：
+
+| 对象 | 几何标识 | 面积 | 指标键 |
+| --- | --- | --- | --- |
+| 一期·交回基线与南段公共服务试点 | PHASE-001 | 4,837,401.583 | [metric:phase_1_area_sqm] |
+| 二期·开源交接场与中段连接 | PHASE-002 | 3,545,776.934 | [metric:phase_2_area_sqm] |
+| 三期·验证交接场与全带运营 | PHASE-003 | 3,029,646.869 | [metric:phase_3_area_sqm] |
+| 众智园AI自主创新加速区 | PROV-KEY-001 | 1,929,201.877 | [metric:key_area_zhongzhiyuan_sqm] |
+| 北京AI原点社区 | PROV-KEY-002 | 1,043,236.909 | [metric:key_area_origin_community_sqm] |
+| 大钟寺AI产业聚集区 | PROV-KEY-003 | 720,454.219 | [metric:key_area_dazhongsi_sqm] |
+
+概念建筑基底覆盖率为0.019365 [metric:conceptual_building_coverage_ratio]。总建筑面积 [metric:total_floor_area_sqm]、建筑密度 [metric:building_density]、道路面积 [metric:road_area_sqm] 与道路率 [metric:road_ratio] 因缺少逐栋普查与道路红线，继续保持未赋值。
+
+以上小数位表示的是“同一几何可被第三方复现到同一位”，不表示外部事实具有同等精度；官方边界发布后全部数值按同一算法重算。
 
 公告要求研提“AI创新指数、人才密度、产值规模”等规划指标体系。本方案给出口径而不给出数值——但这不是“找不到数据”。区级公开统计确实存在且已逐条登记 [source:HAIDIAN-2025-STATISTICAL-BULLETIN]：备案上线大模型 123 款、全国重点实验室 92 家、每万人口高价值发明专利 599 件、技术合同成交额 4053.1 亿元。问题在于它们的统计单元是海淀全区，无法分配到 43.6 平方公里的走廊；把区级数字直接写成本带指标，得到的是不可复核的伪精度，反而削弱指标体系的用途。因此这些数值全部停留在 `background_only`，只用来定义口径与判断瓶颈。下表定义计算口径、数据前置条件和赋值触发，官方数据到位后由同一模型一次性赋值并进入 metrics.json，与几何类指标共用同一套复算规则。
 
@@ -503,7 +530,8 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 - 面向智能体任务书摘录，给出六项任务、场景、品牌与运营要求：[source:AGENT-TASKBOOK]
 - 仓库场地资料包、资料使用登记与事实导航层：[source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
 - 临时总体边界与三处重点区几何，均标记 official_boundary=false：[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
-- 本地标准矩阵索引：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+- 本地标准矩阵索引（项目文件）：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+- 本地标准矩阵索引（国家规章与技术标准）：城市设计 [standard:MOHURD-URBAN-DESIGN-MEASURES]、控规编制 [standard:MOHURD-CONTROL-DETAILED-PLANNING]、用地分类 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、建筑设计深度 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 ### 二、法定与政策依据
 
@@ -516,12 +544,40 @@ compliance_matrix.json逐条覆盖公告1.3、1.4、1.5和agent.1—agent.6；st
 ### 三、背景统计与机制案例
 
 - 海淀区2025年国民经济和社会发展统计公报（海淀统计局队，2026-04-10），仅作行政尺度背景，不进入 metrics.json：[source:HAIDIAN-2025-STATISTICAL-BULLETIN]
-- 六个机构官网或城市官方报告，检索日期均为 2026-08-08，只作机制对照，未将绩效、土地制度、资金政策或治理安排直接移植到海淀：[source:CASE-ONE-NORTH] [source:CASE-KALASATAMA] [source:CASE-STATION-F] [source:CASE-22BARCELONA] [source:CASE-KENDALL] [source:CASE-KNOWLEDGE-QUARTER]
+- 六个机构官网或城市官方报告，检索日期均为 2026-08-08，只作机制对照，未将绩效、土地制度、资金政策或治理安排直接移植到海淀：JTC LaunchPad @ one-north [source:CASE-ONE-NORTH]、Smart Kalasatama [source:CASE-KALASATAMA]、STATION F [source:CASE-STATION-F]、22@ Barcelona [source:CASE-22BARCELONA]、Kendall Square K2C2 [source:CASE-KENDALL]、Knowledge Quarter London [source:CASE-KNOWLEDGE-QUARTER]
 
 ### 四、机器可读数据总索引
 
-九类几何图层构成可替换、可复算、可审计的方案底板；任何图面或叙述与其不一致时，以结构化数据和后续官方资料为准：[data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001]、[data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/roads.geojson#ROAD-001]、[data:geometry/green_space.geojson#GREEN-01]、[data:geometry/public_space.geojson#PUBLIC-01]、[data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP]、[data:geometry/phasing.geojson#PHASE-001]。
+九类几何图层构成可替换、可复算、可审计的方案底板；任何图面或叙述与其不一致时，以结构化数据和后续官方资料为准：
 
-十五项专业深度总索引为 [depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure]、[depth:land_use_layout]、[depth:development_intensity_controls]、[depth:height_massing_character]、[depth:retain_renovate_demolish]、[depth:traffic_rail_slow_parking]、[depth:municipal_new_infrastructure]、[depth:blue_green_public_space]、[depth:three_key_area_detailed_design]、[depth:renewal_project_list]、[depth:phasing_implementation]、[depth:metrics_recalculation]、[depth:risk_missing_data]。
+- 临时总体边界，标记 official_boundary=false：[data:geometry/site_boundary.geojson#SITE-001]
+- 三处重点区粗略范围：[data:geometry/key_areas.geojson#PROV-KEY-001]
+- 用地拓扑联合覆盖场地：[data:geometry/land_use.geojson#LU-001]
+- 二十个概念建筑类型单元：[data:geometry/buildings.geojson#BLDG-001]
+- 概念线路与八条东西支线：[data:geometry/roads.geojson#ROAD-001]
+- 结构性绿地：[data:geometry/green_space.geojson#GREEN-01]
+- 公共交接面与场景节点：[data:geometry/public_space.geojson#PUBLIC-01]
+- 约束条件与资料缺口登记：[data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP]
+- 三道合并门分期：[data:geometry/phasing.geojson#PHASE-001]
+
+十五项专业深度总索引按专业维度逐行登记，完整的图纸、几何、指标与来源交叉引用见 design_depth_matrix.json：
+
+| 专业维度 | 深度项 | 深度键 |
+| --- | --- | --- |
+| 规划 | 现状诊断图与资料缺口 | [depth:existing_conditions_diagnosis] |
+| 规划 | 三层范围工作框架 | [depth:three_level_scope_framework] |
+| 规划 | 用地布局 | [depth:land_use_layout] |
+| 城市设计 | 总体空间结构 | [depth:overall_spatial_structure] |
+| 城市设计 | 三大重点片区详细设计 | [depth:three_key_area_detailed_design] |
+| 控规 | 开发强度或待确认控规条件 | [depth:development_intensity_controls] |
+| 建筑 | 建筑高度、体量与风貌控制 | [depth:height_massing_character] |
+| 建筑 | 建筑拆改留分类 | [depth:retain_renovate_demolish] |
+| 交通 | 道路、轨道、慢行与停车组织 | [depth:traffic_rail_slow_parking] |
+| 市政 | 市政与新型基础设施策略 | [depth:municipal_new_infrastructure] |
+| 景观 | 蓝绿系统与公共空间 | [depth:blue_green_public_space] |
+| 实施 | 更新项目清单 | [depth:renewal_project_list] |
+| 实施 | 分期实施计划 | [depth:phasing_implementation] |
+| 校核 | 指标复算 | [depth:metrics_recalculation] |
+| 合规 | 风险与缺资料清单 | [depth:risk_missing_data] |
 
 假设与复算触发器登记在 assumptions.json；版权与生成方式登记在 report/copyright_statement.md；四道自检结论登记在 self_check.json。人类读者可从正文任一处回到 JSON、GeoJSON、HTML 与 PDF 复核每一项关键判断。
