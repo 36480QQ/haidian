@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.5"
+iteration: "v3.6"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v3.5; v3.3 names the retained spatial-object and drawing-export layer. v3.5 carries forward v3.4's public-metadata neutralization and repairs the bilingual A0 board layout, auxiliary-figure version labels and provisional-boundary handoff disclosure; it changes no spatial objects, metrics, source classifications or implementation boundary.
+> **Package version note:** This package is iteration v3.6; v3.3 names the retained spatial-object and drawing-export layer. v3.6 carries forward v3.5's bilingual, copyright, provisional-boundary handoff and source-boundary work, and turns the existing synthetic S02 test window into an offline stop-and-restore rehearsal; it changes no spatial objects, metrics, source classifications or implementation boundary.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
@@ -160,6 +160,8 @@ The package contains 14 scenario cards in `visual/assets/scenario-operation-matr
 The matrix is a design-control instrument, not a promise of service levels. Every row states: spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, data retention, non-AI equivalent, stop condition, success metric and phase. The universal gates are: no digital precondition; human review cannot be removed; an accessible route remains continuous; a public status and complaint path exists; and stop/rollback has been tested.
 
 To make a scenario card reproducible rather than merely readable, this package adds the independently designed `visual/assets/open-pulse-test-window-record.schema.json` and `visual/assets/example-s02-embodied-test-window.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox test-window record: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, public complaint route, maintenance responsibility and exit-asset plan in one record. Its result status remains `not_run`; the record is not robot performance or field acceptance. Any real pilot must create a new record and pass accessibility, safety, maintenance and public-review gates.
+
+To keep that record from remaining merely readable, this iteration adds `visual/assets/open-pulse-tabletop-contract.json`, `open-pulse-tabletop-evidence.json` and a dependency-free runner. `node visual/assets/run-open-pulse-tabletop.js --check` reads only the bundled synthetic S02 record and four branch fixtures: an unprofessionally verified provisional route, a pedestrian conflict or narrowing, a missing spotter or emergency stop, and a review close with no field result. It replays six checks and five rollback steps, preserving paper/staffed/hand-cart ordinary service, clearing the accessible route, publishing hold/withdrawal and deleting only temporary fixture state. The evidence is `4/4`, `6/6` and `5/5`, while `result_status=not_run`, `performance_results=null` and `operational_status=not_authorized_not_run` remain explicit. PASS proves only that stop, withdrawal and restoration logic is inspectable; it does not prove robot performance, accessibility, public acceptance, staffing, safety or permission [data:visual/assets/open-pulse-tabletop-contract.json] [data:visual/assets/open-pulse-tabletop-evidence.json] [data:visual/assets/run-open-pulse-tabletop.js].
 
 To address the structural-provenance and licence boundary exposed by #706, this version removes the peer-derived Relay Receipt files and replaces them with an independently designed Open Pulse bounded test-window record. The new record is organized around `window`, `place_window`, `public_interface`, `human_control`, `data_contract`, `observation`, `release_decision` and `restoration`; it does not reuse the #426 schema skeleton. It remains a concept-only review interface, not deployment permission or field evidence.
 

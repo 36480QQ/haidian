@@ -153,6 +153,13 @@
       "severity": "info",
       "target": "sources.json + visual/assets/copyright-ledger.json",
       "message": "COMMUNITY-DISPLAY-ONLY is disclosed as a repository enum rather than a standard licence, and package-local provenance is not upgraded into third-party clearance."
+    },
+    {
+      "check_id": "OPEN_PULSE_TABLETOP_REHEARSAL",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/assets/run-open-pulse-tabletop.js",
+      "message": "The S02 offline fixture replays 4/4 branches, 6/6 checks and 5/5 rollback steps; result_status remains not_run and operational_status remains not_authorized_not_run."
     }
   ]
 }
