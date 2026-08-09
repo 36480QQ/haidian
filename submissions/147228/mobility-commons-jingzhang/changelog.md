@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-09
+
+- Added a minimum offline tabletop for the existing M-09 storm/network-outage fallback scenario.
+- Added a machine-readable contract, deterministic replay runner and evidence output for four synthetic service requests, six checks and five rollback steps.
+- Kept `performance_results=null` and `operational_status=not_authorized_not_run`; the tabletop does not claim staffing, accessibility performance, public acceptance, safety or implementation.
+
 ## v1.5 - 2026-08-09
 
 - Added a bilingual implementation–operation contract that makes phase, participating roles, acceptance metrics, human fallback and stop/withdrawal conditions explicit at the start of the phasing section.

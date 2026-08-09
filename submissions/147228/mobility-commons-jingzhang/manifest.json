@@ -19,7 +19,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex"
   },
-  "generated_at": "2026-08-09T21:22:25+08:00",
+  "generated_at": "2026-08-09T21:34:12+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1287d21efcfbee6c84e41260ae3ca73a0dd1c7e30c3f7972b27b8e674066de24"
+      "sha256": "1eb6c4c6edf1411446c97c8a3b2334476d093447fc4c2c763b41e5cbd061d15e"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "22aa00d1e5a43b9c3522823544605d4c92f34d5871e541321a8efb7e985e2a44"
+      "sha256": "51e948479dc12b0ee981a35eba3bcd4870be57c51b7eaf631029563d7bd349b5"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "84b4b4ef90bf7eea0984aa8f47fdbd50d89a45aa6a69fca13a8e7bbcc0549509"
+      "sha256": "76ba1d0849f4d09e6295f71bd2f3daf7e31ac7331ef8ead19d2e06d1c25e511b"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,20 +254,20 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "428d4f043f256533334df3253142f2644399f8bd4e0624db2900ae5afc20fbb1"
+      "sha256": "a820db27de00fb6cf74f794a7de8e1591b91bc4ec1c2939039df4a3467b86fb0"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "74d91e63d2854f3d3ff08b0cad22205ceaf19618ed5a4e739f5bc4c4758b5a85"
+      "sha256": "cb0c72b7b8006f87840b8aec4c4d193294f546c47ccfa37fd3ccdf1562c9535d"
     },
     {
       "path": "self_check.json",
       "role": "data",
       "required": true,
-      "sha256": "6df5b043a725afbb493b9070eaea124d31150f395beae7ecdc3b0e44d401c3f2"
+      "sha256": "84f70221df8dfe124b27b486c83dc8752eb36991daf87212f143c75db147f703"
     },
     {
       "path": "sources.json",
@@ -306,6 +306,18 @@
       "path": "visual/assets/mobility-nodes.json",
       "role": "data",
       "sha256": "2fd1ef35ed93f639233a97b5655bfa029414ad56ed5761210b30ae19161a364d"
+    },
+    {
+      "path": "visual/assets/mobility-tabletop-contract.json",
+      "role": "data",
+      "required": true,
+      "sha256": "b0541ce33d754fb375f532b5cdd56b851bc399e0dc21dfb77060f55fe0c1e8b8"
+    },
+    {
+      "path": "visual/assets/mobility-tabletop-evidence.json",
+      "role": "data",
+      "required": true,
+      "sha256": "a31acbb6c5f0d0eefbe2d1a51a829ad929b3e6cf6a0de3acedefa3deffb221e1"
     },
     {
       "path": "visual/assets/scenario-cards.json",
@@ -354,6 +366,12 @@
       "role": "verification_script",
       "required": false,
       "sha256": "b2617424840c94e9373f077d69d514c10f60d20a6ceca15e894d6b0ff16477e9"
+    },
+    {
+      "path": "visual/assets/run-mobility-tabletop.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "52173fcd297dc88a348256027790dbf4c4410818b1ba45169901bd575454083f"
     },
     {
       "path": "visual/assets/air-mobility-gate.json",
