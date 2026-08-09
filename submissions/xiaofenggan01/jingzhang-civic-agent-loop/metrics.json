@@ -258,6 +258,45 @@
       "assumptions": [
         "广场用地；provisional 边界，方向性面积"
       ]
+    },
+    "governance_gate_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "report/gate-state-machine.json"
+      ],
+      "formula": "count of G0-G6 gates",
+      "confidence": "high",
+      "assumptions": [
+        "四环落成的可复核门闸数；环会自转，门闸可回滚"
+      ]
+    },
+    "receipt_schema_field_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "report/civic-agent-receipt.schema.json"
+      ],
+      "formula": "count of required fields in civic-agent-receipt.schema.json",
+      "confidence": "high",
+      "assumptions": [
+        "每次干预产出的收据必填字段数"
+      ]
+    },
+    "falsifiability_question_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "report/gate-state-machine.json"
+      ],
+      "formula": "count of falsifiability questions per scenario",
+      "confidence": "high",
+      "assumptions": [
+        "每个场景自带的可证伪三问"
+      ]
     }
   }
 }
