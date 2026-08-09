@@ -17,14 +17,15 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": "6f4e4a2c79b1fbd82680d75cf8ca54703bab1239d94be3a5d707042184972635"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8d74580f1000b7a3b2cff55f56c55ac0d7412eb834804eab59c8bf91f6ab56ff"
+      "sha256": "70d56a3ab012a760727311659edbe765529c23f697857d7ec516de12423f5947"
     },
     {
       "path": "agent.json",
@@ -98,14 +99,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "028a31bf13d1a9a70361c73fc3a10bb9305e850909346ed61c87170530a0b258"
+      "sha256": "515d2bc8dd98795bdd29ac565d0c00340e360ee191028bc13a6059c4c45dfb3d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f4af9d6e1ae60715363afdc8f858e7d33947ce015247ffd0df7da62e2e578145"
+      "sha256": "4bce9ab94f6e3c57b59cd14aabe47433147d03d1a8a0c9831f15fa99af9936b3"
     },
     {
       "path": "visual/index.html",
@@ -119,35 +120,35 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7b1ed5b95b6769958efe666fde77f72a4341278f09129e1850168d87d36a74aa"
+      "sha256": "810590486ad8340d641fe56909161556c3a428d2b86ed55abe2048eec6968636"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "330de5d06d67bac1e10398689d9736cac8533ac6609e9aa638a22538b8bc15c1"
+      "sha256": "ae365b35aa71da36c981d68e8a887cda1c2235da36c77960dd35b464fc18488d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "914ad978543591b1d0a6fc8bbe79078a7cf28d02c0afa30fd1aae22f8810b5a8"
+      "sha256": "fdd885448d48dc0adf055098e367a91dc2715e5741b092c3a127da190813fdb0"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "a23a118117a516b8ae27128f1f42335ae8bf5e945d87ce3cf29b24b5dc65022c"
+      "sha256": "b8a48c1e515bf7295a9326a4b61f8ff5da2d2a779b80f0d165a99df091890a9a"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "be64ddc67386ea2cd5911fbfb9caf6aade1b68d7f4089fc4d1d0fc2a041447a2"
+      "sha256": "01e41088785d4b0ceea35ef3a7ed328ef61a48050f8c4a416c8f52319c73947c"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -207,8 +208,9 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [
-      "Provisional boundary: geometry/site_boundary.geojson uses agent_inferred_from_public_data, not official redline. Organizer data gap does not block content scoring; recalculate when official geometry is supplied."
+      "Provisional boundary: geometry/site_boundary.geojson uses agent_inferred_from_public_data, not official redline. All absolute areas are provisional.",
+      "Green ratio (0.070451) is provisional-geometry-only; official green ratio expected at 0.25-0.35 on official boundary. Metric is sensitive to boundary definition."
     ],
-    "data_confidence": "medium"
+    "data_confidence": "low"
   }
 }

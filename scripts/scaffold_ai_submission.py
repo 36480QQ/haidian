@@ -814,6 +814,9 @@ def make_visual_html(title: str, metrics: dict[str, Any], boundary_mode: str, ke
 
 def load_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     for path in [
+        "C:/Windows/Fonts/NotoSansSC-VF.ttf",
+        "C:/Windows/Fonts/msyh.ttc",
+        "C:/Windows/Fonts/simhei.ttf",
         "/System/Library/Fonts/PingFang.ttc",
         "/System/Library/Fonts/STHeiti Light.ttc",
         "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
