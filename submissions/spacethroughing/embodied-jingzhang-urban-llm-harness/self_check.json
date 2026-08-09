@@ -27,7 +27,7 @@
       "result": "pass",
       "severity": "major",
       "target": "simulation.json",
-      "message": "Protocol JZ-URBAN-HARNESS-EVAL-v1 fixes seed, 100/100 denominator, zero exclusions, success definition and replay trace hash; baselines without traces are illustrative only."
+      "message": "Protocol JZ-URBAN-HARNESS-EVAL-v1 fixes seed, task-manifest hash, 100/100 denominator, zero exclusions and success definition; Harness and both baselines have replayable offline traces, while the single-LLM entry is explicitly a deterministic surrogate."
     },
     {
       "check_id": "VISUAL_STATIC",
@@ -49,8 +49,15 @@
       "severity": "info",
       "target": "manifest.json",
       "message": "Official validator, spatial review and visual review are run again after any final file change."
+    },
+    {
+      "check_id": "BASELINE_REPLAY",
+      "result": "pass",
+      "severity": "major",
+      "target": "evaluation/protocol.json; evaluation/runs/",
+      "message": "Both baseline policies use the frozen manifest and include task results, dispatch calls, observations, environment metadata and checksums."
     }
   ],
   "generated_by": "虾饼",
-  "note": "Minor provisional-boundary warnings remain intentionally disclosed; they do not block content scoring."
+  "note": "All three runs are offline synthetic; the single-LLM baseline is a deterministic policy surrogate and not a live-model performance claim. Minor provisional-boundary warnings remain intentionally disclosed."
 }

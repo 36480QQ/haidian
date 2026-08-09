@@ -5,46 +5,108 @@
     "protocol_id": "JZ-URBAN-HARNESS-EVAL-v1",
     "seed": 20260809,
     "task_manifest": {
+      "path": "visual/assets/evaluation/task-manifest.json",
       "task_count": 100,
       "eligible_task_count": 100,
       "excluded_task_count": 0,
       "filters": [],
-      "task_trace_sha256": "4d5fc8858ec8415a85f21d1f4f2bcee5a20d7ff72d2768b61f174f0d86f4427f"
+      "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6"
     },
     "success_definition": {
       "primary": "outcome == success AND audit_complete == true",
-      "replanned_success": "replanning recovery is reported separately and is excluded from primary success_rate",
+      "replanned_success": "replanning recovery is reported separately and remains in primary denominator",
       "failure": "any other outcome or incomplete audit"
     },
     "replanning_policy": "A task that needs replanning is not counted as primary success; it remains in the denominator and is reported as replanned_success.",
-    "aggregation": {
-      "success_count": 92,
-      "replanned_success_count": 8,
-      "primary_success_rate": 0.92,
-      "denominator": "eligible_task_count=100",
-      "excluded_tasks": 0
+    "common_environment": {
+      "simulator": "JZ-offline-deterministic-simulator-1.0",
+      "same_task_manifest": true,
+      "same_robot_registry": true,
+      "same_fault_inputs": true,
+      "high_risk_faults_in_manifest": []
     },
     "run_records": {
       "urban_llm_harness": {
         "status": "validated_offline_synthetic",
         "replayable": true,
-        "task_results_ref": "tasks",
-        "trace_sha256": "4d5fc8858ec8415a85f21d1f4f2bcee5a20d7ff72d2768b61f174f0d86f4427f",
-        "inputs": "protocol seed plus generated task manifest"
+        "claim_scope": "validated offline synthetic Harness run",
+        "run_ref": "visual/assets/evaluation/runs/urban_llm_harness/run.json",
+        "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
+        "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5",
+        "aggregation": {
+          "status": "validated_offline_synthetic",
+          "replayable": true,
+          "claim_scope": "validated offline synthetic Harness run",
+          "eligible_task_count": 100,
+          "excluded_task_count": 0,
+          "success_count": 92,
+          "replanned_success_count": 8,
+          "failure_count": 0,
+          "success_rate": 0.92,
+          "tool_schema_pass_rate": 1.0,
+          "high_risk_attempts": 0,
+          "high_risk_intercept_rate": null,
+          "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
+          "energy_budget_violations": 0,
+          "replan_p95_seconds": 6.7,
+          "audit_completeness": 1.0,
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+          "source": "simulation.json tasks + evaluation protocol"
+        }
       },
       "single_llm_without_harness": {
-        "status": "illustrative",
-        "replayable": false,
-        "task_results_ref": null,
-        "inputs": null,
-        "reason": "No task-level input or output trace was supplied; not a verified performance result."
+        "status": "validated_offline_synthetic",
+        "replayable": true,
+        "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+        "run_ref": "visual/assets/evaluation/runs/single_llm_without_harness/run.json",
+        "task_results_ref": "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json",
+        "trace_sha256": "3bfa39998dfde419060298bb80e7d9bff3c59e1a0a3fe9eb56763f5b99df6fed",
+        "aggregation": {
+          "status": "validated_offline_synthetic",
+          "replayable": true,
+          "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+          "eligible_task_count": 100,
+          "excluded_task_count": 0,
+          "success_count": 56,
+          "replanned_success_count": 8,
+          "failure_count": 36,
+          "success_rate": 0.56,
+          "tool_schema_pass_rate": 0.9352,
+          "high_risk_attempts": 0,
+          "high_risk_intercept_rate": null,
+          "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
+          "energy_budget_violations": 5,
+          "replan_p95_seconds": 12.98,
+          "audit_completeness": 1.0,
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+        }
       },
       "rule_only_scheduler": {
-        "status": "illustrative",
-        "replayable": false,
-        "task_results_ref": null,
-        "inputs": null,
-        "reason": "No task-level input or output trace was supplied; not a verified performance result."
+        "status": "validated_offline_synthetic",
+        "replayable": true,
+        "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+        "run_ref": "visual/assets/evaluation/runs/rule_only_scheduler/run.json",
+        "task_results_ref": "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json",
+        "trace_sha256": "db28bc0d811693b8028042e55926de1befc6c6bb358c077d9fc42cd16b70e82b",
+        "aggregation": {
+          "status": "validated_offline_synthetic",
+          "replayable": true,
+          "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+          "eligible_task_count": 100,
+          "excluded_task_count": 0,
+          "success_count": 67,
+          "replanned_success_count": 16,
+          "failure_count": 17,
+          "success_rate": 0.67,
+          "tool_schema_pass_rate": 1.0,
+          "high_risk_attempts": 0,
+          "high_risk_intercept_rate": null,
+          "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
+          "energy_budget_violations": 5,
+          "replan_p95_seconds": 11.18,
+          "audit_completeness": 1.0,
+          "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator"
+        }
       }
     }
   },
@@ -75,62 +137,120 @@
     "audit_completeness": 1.0
   },
   "baselines": {
-    "single_llm_without_harness": {
-      "status": "illustrative",
-      "replayable": false,
-      "success_rate": null,
-      "illustrative_metrics": {
-        "success_rate": 0.61,
-        "tool_schema_pass_rate": 0.78,
-        "high_risk_intercept_rate": 0.63,
-        "energy_budget_violations": 11,
-        "replan_p95_seconds": 18.4,
-        "audit_completeness": 0.72
-      },
-      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
-    },
-    "rule_only_scheduler": {
-      "status": "illustrative",
-      "replayable": false,
-      "success_rate": null,
-      "illustrative_metrics": {
-        "success_rate": 0.74,
-        "tool_schema_pass_rate": 1.0,
-        "high_risk_intercept_rate": 1.0,
-        "energy_budget_violations": 0,
-        "replan_p95_seconds": 26.7,
-        "audit_completeness": 0.91
-      },
-      "reason": "Hypothetical reference values only; no task-level inputs, outputs or replay record."
-    },
     "urban_llm_harness": {
       "status": "validated_offline_synthetic",
       "replayable": true,
+      "claim_scope": "validated offline synthetic Harness run",
       "eligible_task_count": 100,
+      "excluded_task_count": 0,
       "success_count": 92,
       "replanned_success_count": 8,
+      "failure_count": 0,
       "success_rate": 0.92,
       "tool_schema_pass_rate": 1.0,
-      "high_risk_intercept_rate": 1.0,
+      "high_risk_attempts": 0,
+      "high_risk_intercept_rate": null,
+      "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
       "energy_budget_violations": 0,
-      "replan_p95_seconds": 8.7,
+      "replan_p95_seconds": 6.7,
       "audit_completeness": 1.0,
-      "source": "tasks + protocol"
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "source": "simulation.json tasks + evaluation protocol",
+      "run_id": "urban_llm_harness-20260809-v1",
+      "runner": "simulation.json + visual/assets/evaluation/run_baselines.js",
+      "runner_version": "1.0.0",
+      "model_or_algorithm": "Urban LLM Harness synthetic trace",
+      "live_model_call": false,
+      "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
+      "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
+      "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
+      "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5"
+    },
+    "single_llm_without_harness": {
+      "status": "validated_offline_synthetic",
+      "replayable": true,
+      "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+      "eligible_task_count": 100,
+      "excluded_task_count": 0,
+      "success_count": 56,
+      "replanned_success_count": 8,
+      "failure_count": 36,
+      "success_rate": 0.56,
+      "tool_schema_pass_rate": 0.9352,
+      "high_risk_attempts": 0,
+      "high_risk_intercept_rate": null,
+      "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
+      "energy_budget_violations": 5,
+      "replan_p95_seconds": 12.98,
+      "audit_completeness": 1.0,
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "run_id": "single_llm_without_harness-20260809-v1",
+      "runner": "visual/assets/evaluation/run_baselines.js",
+      "runner_version": "1.0.0",
+      "model_or_algorithm": "deterministic-single-agent-policy-surrogate-v1",
+      "live_model_call": false,
+      "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
+      "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
+      "task_results_ref": "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json",
+      "trace_sha256": "3bfa39998dfde419060298bb80e7d9bff3c59e1a0a3fe9eb56763f5b99df6fed"
+    },
+    "rule_only_scheduler": {
+      "status": "validated_offline_synthetic",
+      "replayable": true,
+      "claim_scope": "deterministic offline policy run; no live robot or live LLM inference",
+      "eligible_task_count": 100,
+      "excluded_task_count": 0,
+      "success_count": 67,
+      "replanned_success_count": 16,
+      "failure_count": 17,
+      "success_rate": 0.67,
+      "tool_schema_pass_rate": 1.0,
+      "high_risk_attempts": 0,
+      "high_risk_intercept_rate": null,
+      "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
+      "energy_budget_violations": 5,
+      "replan_p95_seconds": 11.18,
+      "audit_completeness": 1.0,
+      "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+      "run_id": "rule_only_scheduler-20260809-v1",
+      "runner": "visual/assets/evaluation/run_baselines.js",
+      "runner_version": "1.0.0",
+      "model_or_algorithm": "deterministic-priority-rules-v1",
+      "live_model_call": false,
+      "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
+      "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
+      "task_results_ref": "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json",
+      "trace_sha256": "db28bc0d811693b8028042e55926de1befc6c6bb358c077d9fc42cd16b70e82b"
     }
   },
   "aggregate": {
     "status": "validated_offline_synthetic",
     "replayable": true,
+    "claim_scope": "validated offline synthetic Harness run",
     "eligible_task_count": 100,
+    "excluded_task_count": 0,
     "success_count": 92,
     "replanned_success_count": 8,
+    "failure_count": 0,
     "success_rate": 0.92,
     "tool_schema_pass_rate": 1.0,
-    "high_risk_intercept_rate": 1.0,
+    "high_risk_attempts": 0,
+    "high_risk_intercept_rate": null,
+    "high_risk_metric_note": "not_applicable: frozen manifest has no no_fly_zone or crowd_surge task",
     "energy_budget_violations": 0,
-    "replan_p95_seconds": 8.7,
+    "replan_p95_seconds": 6.7,
     "audit_completeness": 1.0,
-    "source": "tasks + protocol"
+    "aggregation_formula": "count(outcome == success AND audit_complete == true) / eligible_task_count; replanned_success remains in denominator",
+    "source": "simulation.json tasks + evaluation protocol",
+    "run_id": "urban_llm_harness-20260809-v1",
+    "runner": "simulation.json + visual/assets/evaluation/run_baselines.js",
+    "runner_version": "1.0.0",
+    "model_or_algorithm": "Urban LLM Harness synthetic trace",
+    "live_model_call": false,
+    "task_manifest_ref": "visual/assets/evaluation/task-manifest.json",
+    "task_manifest_sha256": "afdae38732571d00bc57eff4135745b4a1ef7776e4ad095e9678b33b4d1b2cd6",
+    "task_results_ref": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
+    "trace_sha256": "785ebda4e1fded80adc37f52f5e6db4a134c508235dd49ca3175df32cc7636e5"
   },
   "tasks": [
     {
@@ -143,7 +263,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -157,7 +277,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -171,7 +291,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -184,8 +304,8 @@
       "dispatch_schema_valid": true,
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
-      "energy_used_kwh": 2.64,
-      "replan_seconds": 4.12,
+      "energy_used_kwh": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -199,7 +319,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -213,7 +333,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -227,7 +347,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -241,7 +361,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -255,7 +375,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -269,7 +389,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -283,7 +403,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -297,7 +417,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -311,7 +431,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -325,7 +445,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -339,7 +459,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -353,7 +473,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -367,7 +487,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -381,7 +501,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -395,7 +515,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -409,7 +529,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -423,7 +543,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -437,7 +557,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -451,7 +571,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -464,8 +584,8 @@
       "dispatch_schema_valid": true,
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
-      "energy_used_kwh": 2.64,
-      "replan_seconds": 3.26,
+      "energy_used_kwh": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -479,7 +599,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -493,7 +613,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -507,7 +627,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -521,7 +641,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -535,7 +655,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -549,7 +669,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -563,7 +683,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -577,7 +697,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -591,7 +711,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -605,7 +725,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -619,7 +739,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -633,7 +753,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -647,7 +767,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -661,7 +781,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -675,7 +795,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -689,7 +809,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -703,7 +823,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -717,7 +837,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -731,7 +851,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -744,8 +864,8 @@
       "dispatch_schema_valid": true,
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
-      "energy_used_kwh": 2.64,
-      "replan_seconds": 2.4,
+      "energy_used_kwh": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -759,7 +879,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -773,7 +893,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -787,7 +907,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -801,7 +921,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -815,7 +935,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -829,7 +949,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -843,7 +963,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -857,7 +977,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -871,7 +991,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -885,7 +1005,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -899,7 +1019,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -913,7 +1033,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -927,7 +1047,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -941,7 +1061,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -955,7 +1075,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -969,7 +1089,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -983,7 +1103,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -997,7 +1117,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1011,7 +1131,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1024,8 +1144,8 @@
       "dispatch_schema_valid": true,
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
-      "energy_used_kwh": 2.64,
-      "replan_seconds": 6.27,
+      "energy_used_kwh": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1039,7 +1159,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1053,7 +1173,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1067,7 +1187,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1081,7 +1201,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1095,7 +1215,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1109,7 +1229,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1123,7 +1243,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1137,7 +1257,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1151,7 +1271,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 5.41,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1165,7 +1285,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1179,7 +1299,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1193,7 +1313,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1207,7 +1327,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1221,7 +1341,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1235,7 +1355,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1249,7 +1369,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1263,7 +1383,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1277,7 +1397,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.55,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1291,7 +1411,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 4.98,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1304,8 +1424,8 @@
       "dispatch_schema_valid": true,
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
-      "energy_used_kwh": 2.64,
-      "replan_seconds": 5.41,
+      "energy_used_kwh": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1319,7 +1439,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 5.84,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1333,7 +1453,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 6.27,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1347,7 +1467,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 6.7,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1361,7 +1481,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.33,
-      "replan_seconds": 2.4,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1375,7 +1495,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.0,
       "energy_used_kwh": 2.64,
-      "replan_seconds": 2.83,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1389,7 +1509,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 3.5,
       "energy_used_kwh": 1.4,
-      "replan_seconds": 3.26,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1403,7 +1523,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 4.0,
       "energy_used_kwh": 1.71,
-      "replan_seconds": 3.69,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1417,7 +1537,7 @@
       "risk_gate": "approved",
       "energy_budget_kwh": 2.5,
       "energy_used_kwh": 2.02,
-      "replan_seconds": 4.12,
+      "replan_seconds": 0.0,
       "audit_complete": true,
       "outcome": "success"
     },
@@ -1534,5 +1654,6 @@
       "outcome": "replanned_success"
     }
   ],
-  "method": "fixed synthetic traces; no live robot or personal data; primary success is direct success only; replanned_success is recovery-only; baselines are illustrative without replay traces"
+  "method": "fixed task manifest and deterministic offline traces; Harness and both baselines are replayable; single-LLM entry is a policy surrogate, not live model inference; no live robot or personal data",
+  "task_manifest_ref": "visual/assets/evaluation/task-manifest.json"
 }

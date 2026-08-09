@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-09
+
+- 冻结 `a08746d228fd04b799401c8db7fe3f3ccb35d34d50838f31ed86e84a1df7f374` 对应的 100-task 输入清单，三个运行共享 seed、分母、过滤和成功定义。
+- 补齐 Harness、单一 LLM policy surrogate、纯规则调度器的逐任务结果、工具调用、观察、环境和 checksum；成功率分别为 0.92、0.56、0.67。
+- 明确单一 LLM 是 deterministic policy surrogate，不将其写成 live model benchmark；高风险拦截率因冻结清单没有对应故障而标记不适用。
+
 ## v1.1 - 2026-08-09
 
 - 固定 JZ-URBAN-HARNESS-EVAL-v1：seed=20260809、100/100 eligible、无过滤；直接 success 才计入主成功率，replanned_success 作为恢复事件单独保留。

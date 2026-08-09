@@ -66,7 +66,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "634666be4331238df135c31718088b2c60b34209916eb84fceb2e6c9626f4780"
+      "sha256": "c6376bfe58d85365f25660427127188bd83ffacd73b138ac2e422aac1cac34b6"
     },
     {
       "path": "compliance_matrix.json",
@@ -157,7 +157,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "862d3a1d81f796bb3f9f3cd93f51b303557125820ccddf2a57b817524d4565f0"
+      "sha256": "9a47cb5f73ab2069bf5d89face2d9082f798e5c7581ac611c8492ce849bb1145"
     },
     {
       "path": "proposal.en.md",
@@ -165,14 +165,14 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d390523e049c018583687c1c7ad4ab89cbfd36f9e9462cfee1cd7b3344b7e0e2"
+      "sha256": "1555b50ebd4184a07265a0cc454d96a0fc6e641e3415ff29631f2a0794471128"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "910830b6f06de7bbd471d92d13f86d6f496463f0a6ac9327ff7689ba6446c3a9"
+      "sha256": "77b851856fd733c543dd543af2ff9d43d51586665ec499b74edc49b620112c70"
     },
     {
       "path": "report/copyright_statement.md",
@@ -192,14 +192,14 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "fb01eb421d9c0b2c949dd915ca46df7f9a4e7fd7341b1c038818e2261f0c540a"
+      "sha256": "2e49da41a23aa8e659671710dc93539055f85a5e9fb53ab89a8603b7030a2fc1"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1628f987043502bd6b57701cd1af3897cd6b941cd5576ad2aa836c30e2677f33"
+      "sha256": "59225d5257e2f89c448fdf191b1cff77661af0558dc7455328c20848bd3f63a4"
     },
     {
       "path": "risk.json",
@@ -211,13 +211,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "789bb5fab21b3e5be08e66badf3b963b223d7fa9d02c6a06629f6195be02d807"
+      "sha256": "c8831c1d8688bf101ab8b610c402301bbaa21cdc0f2b347f7965ca912e1bfbd3"
     },
     {
       "path": "simulation.json",
       "role": "offline_simulation",
       "required": false,
-      "sha256": "b0dcfe5e6aae6aef99b87b60cf8b6d4f33f65f832e866b9cd09c8f7f960e857d"
+      "sha256": "0169f74600976f551a27bf856f0eb2b78546e1f3bfd6a86748d388f2b70e4cc8"
     },
     {
       "path": "sources.json",
@@ -247,7 +247,139 @@
       "path": "visual/assets/evaluation-baseline.json",
       "role": "review_asset",
       "required": false,
-      "sha256": "6859057250b3a8b7e26fb1845a62e3e8e18db16f0392c2bccae66356c3487ad2"
+      "sha256": "1bac4a446a695a347141df653633d4989c9e0755fa9899d982f52d707748a44c"
+    },
+    {
+      "path": "visual/assets/evaluation/README.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "1f844454b1b292bf5e35321fa59f01f77629cbf48a0158bff64a0d33a6806b62"
+    },
+    {
+      "path": "visual/assets/evaluation/protocol.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "375d8686ccd53cf34786f41a6dbaa9a82a27c0b5983e9fc15952815437dbb94f"
+    },
+    {
+      "path": "visual/assets/evaluation/run_baselines.js",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "b7bb463aba3446e225ccbf18989c09ad1c0639c644adb561207deda319363f7a"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/checksums.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "8fed3270dd5286b6147fb8580e12f151f470b0be441586f4fbdbf30995bb8c50"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/environment.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "dec587ac66babf9e88a5258a3ab81706bdc86ec7775f9f1ba9585541fa983ce0"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/observations.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "1f3e72775be8bf08d86ee682524dcc944278aaf4fb4590fa413c34e67885127f"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/run.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "ecb676a6ecf7ae9093535f854a89132a4b194fc89cdba65fb24e3574b490d3a3"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/task-results.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "6b7548d877d52f05cfa715c4741feb44059fd68d2115112434e31055046694cb"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/rule_only_scheduler/tool-calls.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "3357879a9ad31eeafbb43b3b10bbc75e1d0198ca671ac9cb5ce2b2cb8ee019af"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/checksums.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "9d264fd3d079fc0365d9872a9c8d610ff5b8dd60daa74ae2d1bb334deacca517"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/environment.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "75216bcf00b5202ee4055dcc932ad288619a23debfdbe7da661712cff2f74b9a"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/observations.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "d1e08358f0ab444c5235ca1a58d8ed64643a757e5a36c8014f76beeba92d78cd"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/run.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "21b83876f2502b7016205967687a0a52f4ba61da824a02af5d9564db677a497b"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/task-results.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "b26c38e3fc2be82ac94c43e57d69b7e7e6a3ae3b0370f710b5bf5699b02a2a77"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/single_llm_without_harness/tool-calls.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "b2136200ec53a85569530fdf7d2ecfc23846f966b2c0630a39aa44edc260c103"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/checksums.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "58280fe951462ec4148848433cd0de423e0fb71d26598764bcdae1007350af24"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/environment.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "e5f637cb2e147733e6b4aca62b64ad1c6b6214576ad7cbebc9886fa045be8e38"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/observations.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "ce0a10622748bd49376d752672780d40e105beeac1b571d1c1c64900160ee3cf"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/run.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "e09b020bf0b794df7b874214801975e60b8fc1f106fcf3607dd8c6f0637ccf48"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/task-results.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "a8465c87747b95606869e0befa98d10d018e0aeeb1b0dd59206b5af7fb5e0de4"
+    },
+    {
+      "path": "visual/assets/evaluation/runs/urban_llm_harness/tool-calls.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "e2c5fd0a763fd1b7d5a349380f5515e049b48e2dfb274ee8edbdc8852463c4e1"
+    },
+    {
+      "path": "visual/assets/evaluation/task-manifest.json",
+      "role": "review_asset",
+      "required": false,
+      "sha256": "c25419f8e6c94234a718908d4cff180ef7255a1395e228098a310e674423a277"
     },
     {
       "path": "visual/assets/landmarks.json",
@@ -284,7 +416,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9c17cbbeda158ae8b7fc965cd2f33c49e25c32ab106fcf0efb6e52fab476c092"
+      "sha256": "6aab0068d94d39f6f85b6bdb1e3ee113a7928bea3f65604f769b7796b002ba88"
     }
   ],
   "validation_claim": {
