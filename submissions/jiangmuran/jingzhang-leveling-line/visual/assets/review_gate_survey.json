@@ -1,0 +1,49 @@
+{
+ "source": "GitHub GraphQL, every pull request in open-city-ai/haidian, not a sample",
+ "evidence_class": "background_only",
+ "method_zh": "取全部 PR 的标签、review body 与 comment body，从中解析 `## 必须完成的下一步` 段落——那是 required_next_actions_zh 唯一可观测处。逐条 action 按三种规则归类：#957 的字面规则（四个带冒号前缀）、严格语义（所有者或官方词 + 交接词 + 重算动词）、宽松（任何所有者或官方词提及）。「若 #957 合入会翻到 featured-candidate 的 PR」定义为分数 ≥85 且按该规则剥离后剩余 action 为 0。",
+ "limits_zh": "approve 路径只发分数行、不发 action 列表，仓库也未提交审计产物，因此仅发过 short verdict 的 PR 其 action 列表不可观测——本文所有关于 action 的结论仅限于有 full verdict 的那部分。",
+ "prs_scanned": 1069,
+ "label_counts": {
+  "review/intake-accepted": 672,
+  "review/changes-requested": 88,
+  "review/ci-failed": 85,
+  "review/low-quality": 49,
+  "review/draft": 23,
+  "review/queued": 16
+ },
+ "formal_ready_label_count": 0,
+ "full_verdicts": 146,
+ "distinct_prs_with_a_full_verdict": 119,
+ "action_items_total": 1203,
+ "action_item_classes": {
+  "participant_only": 1033,
+  "mentions_owner_or_official": 70,
+  "organizer_semantic": 100
+ },
+ "matches_957_literal": 0,
+ "verdicts_carrying_the_summary_item": 146,
+ "verdicts_with_empty_action_list": 0,
+ "min_action_count": 8,
+ "score_ge_85": 3,
+ "remaining_participant_actions": {
+  "literal": {
+   "3+": 146
+  },
+  "semantic": {
+   "3+": 146
+  },
+  "broad": {
+   "3+": 146
+  },
+  "broad_minus_summary": {
+   "3+": 146
+  }
+ },
+ "would_flip_to_featured_candidate": {
+  "literal": [],
+  "semantic": [],
+  "broad": [],
+  "broad_minus_summary": []
+ }
+}

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3f34bf07128d0f4232ee902af5f019ffc102bc9f7cabc98f5770119c6aeae4e3"
+      "sha256": "dd01c26b2cc2c39208aa2e24db00c0b0afd2ca4b3fc62d113278882a329b48e5"
     },
     {
       "path": "agent.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "06ea49e1fc65bd7d915987f9cb7b5fc2160a1c834d72b4a57229f680e2a7e6a2"
+      "sha256": "8271415514f2e8e4549606d306625a9e99bf92dcee4ea3be941c43a7c5712320"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d3d7dd332bce05c7b917921053aa290c0af3fd0d7e0b0093e81fd84d141e1ec2"
+      "sha256": "8d04411e7d36f627352acee320063b3bf17e1d62a037d8fe598b7ffa0e006e6e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -390,7 +390,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4a36709b703f16717d12badda69333551b22434fa5473a515a22e20a6f462f95"
+      "sha256": "a8d21383f75cfc135e27d4d6228d27954ecd2aa212064cd06cd643203a7db5a5"
     },
     {
       "path": "report/proposal.en.html",
@@ -398,7 +398,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5434e54d4a747b7782c54d41fad69552c3761ef0a74d9bede6d31eb1b979cdf1"
+      "sha256": "7204733d6d5e3c3925b0b835feef56f4a61807127d234ede2e3f0b152785a798"
     },
     {
       "path": "visual/index.en.html",
@@ -413,7 +413,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "59d5507b13725150399875e7911838e962377b8f0e6590fd2dfecef69ac9625a"
+      "sha256": "a8cff3dc697921f46816e14630477745c79c4c5025a6f3ac96d5bd5837c8c2d0"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -556,7 +556,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "b801ff225827159cddfd7ecfad35fa0185e507d90bad5b998cfe9e9439726b04"
+      "sha256": "8dfa323d032ef36a9c456c63ea15564ead78368c9864113780384c0982f6c13f"
     },
     {
       "path": "visual/assets/errata.json",
@@ -571,6 +571,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "7e5be66e2ed3a53b39a41a7a684b2cbac99b63958f31f3323898ca9deba3e68f"
+    },
+    {
+      "path": "visual/assets/review_gate_survey.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "cc6a3783e5a69d14b2b253a0aec2ab7f19714506ee2e9309fa52a1d6e73e9f3d"
     }
   ],
   "validation_claim": {

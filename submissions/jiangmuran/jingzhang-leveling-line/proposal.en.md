@@ -199,6 +199,39 @@ Why not simply move the spine? Because the package must be internally consistent
 
 The real answer is a property of the design: **a leveling network is boundary-relative, not coordinate-absolute.** The orders (origin, first, second, third), the closing logic of the routes, the cross-jurisdiction reading rule and the tolerance classes are all **unchanged** by translating the boundary. Only where the marks land changes. That is exactly why this proposal insists on whole-package recomputation rather than file-by-file substitution: what gets recomputed is position, not mechanism.
 
+
+#### A third measurable gap: a gate that has never fired, and two diagnoses built on eight samples
+
+The first two were "the field exists and nobody uses it" and "the contract is published and nothing enforces it". The third is the sharpest this proposal has measured, because it corrects three parties at once, this one included.
+
+`publication_recommendation` in `ai_review_submission.py` returns `featured-candidate` only when the score is at least 85 **and** `required_next_actions_zh` is empty. Issue #950 sampled eight submissions, found an organizer-owned recalculation item in all eight, and concluded that organizer data gaps indirectly kill `featured-candidate`. PR #957 was written from that diagnosis, routing actions prefixed with the Chinese word for organizer into `data_gaps_zh`.
+
+**This proposal agreed with that diagnosis and treated it as settled. Measured, it does not hold.**
+
+Over **all 1,069 pull requests** — not a sample, including every review body, comment body and label event:
+
+| Reading | Value |
+|---|---|
+| Times `review/formal-ready` has ever been attached | **0** |
+| Times `publish-qualified` (the weaker tier, score ≥ 65) has been emitted | **0** |
+| Action items matching #957's literal rule | **0 of 1,203** |
+| Verdicts carrying the auto-appended summary item | **146 of 146** |
+| PRs that would flip to `featured-candidate`, under four rules | **0 / 0 / 0 / 0** |
+
+Three findings, each sufficient on its own:
+
+**One: #957's matcher is empty against the historical corpus.** It requires `startswith` on four colon-terminated prefixes, and 0 of 1,203 actions match — seven begin with that word and not one is followed by a colon. **The narrowness is deliberate**: two `CHANGES_REQUESTED` reviews by CocoSgt required tightening from a substring matcher to exact prefixes to prevent false promotion. That is a correct fail-closed judgement which happens to land on a corpus that never writes the open form.
+
+**Two: a perfect matcher would not help.** The summary item — 'complete the N detailed required repairs listed in the seven-dimension score' — is appended *before* the organizer split and carries no organizer prefix, so it always lands on the participant side. All 146 verdicts carry it.
+
+**Three: the organizer item is never the only blocker.** After the most generous stripping, the minimum remaining participant-owned action count is **4**, and the number of PRs left with only organizer items is 0 under every rule.
+
+Organizer dependencies are real: the word for official appears 122 times across the items, recompute 59, organizer 45. The measurement establishes one thing only: **removing them changes no outcome.**
+
+**The shape of this finding is the proposal's whole subject.** #950 and #957 are careful work; the diagnosis held in all eight of the eight it was drawn from, and the fix follows from it consistently. **The difference is not care. It is n.** One reading cannot show a systematic bias and a full corpus can — which is why this proposal argues not for more caution but for grounding judgements in readings someone else can re-run. Every count, classification rule and matched string ships in `visual/assets/review_gate_survey.json`, and anyone can change a rule and re-run, including to a conclusion this proposal would not like.
+
+Filed on Issue #950 and PR #957.
+
 ## Three-Level Scope Framework
 
 The proposal is organised on the three levels the announcement sets, and each maps one-to-one onto an order of survey precision [depth:three_level_scope_framework].
