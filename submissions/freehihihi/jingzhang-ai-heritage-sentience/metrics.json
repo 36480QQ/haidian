@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 43609232.558,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalibrate on official polygon."
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 13839898.266,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union_area(green_space)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 163902.981,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "union_area(public_space)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 6761521.605,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "medium",
+      "assumptions": [
+        "Concept massing, not existing floorplate."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.317362,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.003758,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "avg_far": {
+      "status": "known",
+      "value": 1.34,
+      "unit": "none",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "total_gfa_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Concept intensity for provisional layout; needs official controls."
+      ]
+    },
+    "area_elasticity": {
+      "status": "known",
+      "value": 0.96,
+      "unit": "none",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "covered_area / site_area_sqm",
+      "confidence": "low",
+      "assumptions": []
+    },
+    "road_density": {
+      "status": "known",
+      "value": 0.00032,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "road_length_m / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Greenway-led network; to be completed."
+      ]
+    },
+    "cultural_narrative_score": {
+      "status": "known",
+      "value": 80,
+      "unit": "score",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "expert_assessment",
+      "confidence": "low",
+      "assumptions": [
+        "Directional quality score for concept narrative."
+      ]
+    },
+    "ai_native_ecosystem_score": {
+      "status": "known",
+      "value": 85,
+      "unit": "score",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "expert_assessment",
+      "confidence": "low",
+      "assumptions": [
+        "Directional quality score for concept ecosystem."
+      ]
+    },
+    "land_use_parcels": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "building_parcels": {
+      "status": "known",
+      "value": 62,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(features)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "total_gfa_sqm": {
+      "status": "known",
+      "value": 58436371.628,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "avg_far * site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Concept intensity for provisional layout."
+      ]
+    }
+  }
+}
