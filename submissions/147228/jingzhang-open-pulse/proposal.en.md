@@ -261,7 +261,7 @@ The `scenario-operation-matrix.json` uses relative `low`, `medium` and `high` co
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The current quantitative decision experiment compares baseline, adaptive, regenerative and stress states. The adaptive state has a model score of 97.39 with a minimum dimension of 91.14; the regenerative state is 97.26, baseline 95.86, and stress 91.78. These are design decision scores from the package model, not official statistics, a field measurement or a competition ranking. The historical 2023 index is 97.58 in the same model frame.
+The current quantitative decision experiment compares baseline, adaptive, regenerative and stress states. `adaptive` is the preferred candidate within this internal low-regret comparison; relative model scores are not competition scores, causal benefits, engineering costs or government commitments. The historical and 2030 raw extrapolations are diagnostic only: rate-like values outside 0–100 or intensity-like values below 0 are flagged model outputs, not public targets, existing facts or scoring inputs. The complete raw series, targets, backtest and fallback actions remain in `visual/assets/model-backtest.json`.
 
 The preferred indicators are district income per capita, district GDP per capita and district health institutions per 10,000 people, with green coverage, physicians, wastewater treatment and water intensity as guardrails. Every number must be read with its source, year, unit, scope and limitation in `visual/assets/evidence-ledger.json`, `visual/assets/model-backtest.json`, `visual/assets/indicator-selection.json` and `metrics.json`.
 

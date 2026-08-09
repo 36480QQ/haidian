@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fe8b515d33f2e5b69be82f6328f56b53373bd46a2e4eb474f7059f3a6534e700"
+      "sha256": "8dd9d1b3f118028c1b59da91457f89ee6dd2a45cbd05c60a03723d7df6ff2198"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f9705d2e81c2b36d422806e69a79ec933957b35a3b3e071a492e36be48657c58"
+      "sha256": "60c3e55d90ef7bfe2158cba21a016e920c5d5bbda36eb8dd51ad14dd39cff526"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1adb47c0987518a9faa46b302f9b60e06f8aa87e3342e5939a94c18c11225fef"
+      "sha256": "c056be8101f135213f11b2ea4ff2d55ff8ccdea69f50c7ddd2c0c8a05fe66701"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7ba4f991f23167677127b7589f34f89f4f18e588a02789988d78225a21f31cb4"
+      "sha256": "022c18842b585d5fbec9b06d94514e1373457eba1ab73ba24b665d34627985e8"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f2de2e548d35f7181f909904cacf26206e2c88ca1b9cc2bb2ff0c759c606d884"
+      "sha256": "e5391e95f2d85660afb6925cbf674c913e93cc69afd7cea7c3dad4af226319da"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b12b844915c639c169d05ca4f343d326350b6ccff84d4485f7ac9fec72d0b4d1"
+      "sha256": "7acd9257188718523009b20f0876d8f7ccddb68e0aedf8d3a11a35286a9e7edb"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1f3487cde88e163d0c4a635230126029a8f622d7fd53380c24abffc007dcaafd"
+      "sha256": "522a0475ef03471e80d0bd7d1b9a4016de4fdbe0f90f40ba319094d7464cbbe9"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -372,7 +372,7 @@
       "path": "visual/assets/model-backtest.json",
       "role": "quantitative_model_backtest",
       "required": true,
-      "sha256": "b17b785b2ca8aaff0e0ef7ec0b9cfb315791313257009df76dd8603bea73620f"
+      "sha256": "1c927bf1c3b6dd92cd9e429bc04db7ae1ece2cea779573a33a1ed9af9efa9e55"
     },
     {
       "path": "visual/assets/sustainability-timeseries.json",
@@ -444,7 +444,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "5de4be6057501f5d9631adae1fbf0d1d0b9f431660c2f7fe2c78c4c3af595d37"
+      "sha256": "4063915b96575013d427d1908750801f39a7013afe485073ec961dbd4564f8fc"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
