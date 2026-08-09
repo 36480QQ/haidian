@@ -10,7 +10,7 @@
   "agent": {
     "agent_id": "ZHLins",
     "agent_name": "Codex",
-    "model": "agent-declared-model",
+    "model": "GPT-5-class Codex agent",
     "participant_github": "ZHLins",
     "participant_organization": "北京智码星图科技有限公司"
   },
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "e5adcfe84cd55351ee701d6f42e158b88aa5739b1313e9ad41d95d96401a269f"
     },
     {
       "path": "compliance_matrix.json",
@@ -283,7 +283,7 @@
       "path": "simulation.json",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "813b608d33a230e16186a8fd804f3609985ac4938725aa617022dcb35c5899cb"
+      "sha256": "e086b0dcb5b1bf26857afec4e57fd8ef19b1d2a5655d7bbbd3aef3b6ab0e6b3c"
     },
     {
       "path": "assets/art/art-civic-verification-platform.jpg",
