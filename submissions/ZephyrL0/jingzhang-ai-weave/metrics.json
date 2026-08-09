@@ -20,25 +20,25 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 3159125.179,
+      "value": 3159036.712,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "sum(non-overlapping concept green-space polygons)",
+      "formula": "area(union(concept green-space polygons), EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "概念蓝绿网络，不等同法定绿地。"
+        "概念蓝绿网络，不等同法定绿地；并集面积消除要素之间约13.219平方米的小重叠。"
       ]
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 879157.451,
+      "value": 879132.939,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "sum(non-overlapping concept public-space seams)",
+      "formula": "area(union(concept public-space seams), EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
         "概念公共空间，不等同已批准项目边界。"
@@ -46,12 +46,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1672759.049,
+      "value": 1672787.92,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(concept building-interface footprints)",
+      "formula": "area(union(concept building-interface footprints), EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
         "方法性建筑界面，不代表现状或建设规模。"
@@ -59,7 +59,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.276805,
+      "value": 0.276797,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.077032,
+      "value": 0.07703,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
