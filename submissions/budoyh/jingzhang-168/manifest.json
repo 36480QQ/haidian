@@ -288,6 +288,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
+      "text_free": true,
       "sha256": "528e5e41bdc26be7a6e9a59f9ad110679bf8c9daeb24eb343c59b9ee128cd3f0"
     },
     {
@@ -295,6 +296,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
+      "text_free": true,
       "sha256": "07493cb1e6cf36476daa203c2bdefa95513e0edbc3ba16ce25a2932cb5a5b77c"
     },
     {
@@ -302,6 +304,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
+      "text_free": true,
       "sha256": "8c3e989ecd3ffff8ced813422133f680e3dd1a4c557ff53a21f2b69cc5e0a648"
     },
     {
@@ -309,13 +312,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
+      "text_free": true,
       "sha256": "051a9a4cbf762561aea57b85c970f3a2c7c199dbd4ba1dceaa019fa26093963a"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "3cea4d1899092c33fe0baa7904fd7452c66e79191c6b524b0b217415ea7462a5"
+      "sha256": "9a2fef29f52b66420b0cb554ff924ef5515e8b7a69c0f11a8ef2b3ade962ebe4"
     },
     {
       "path": "visual/assets/jz168-week.schema.json",
