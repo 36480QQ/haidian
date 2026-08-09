@@ -304,7 +304,7 @@
     {
       "path": "visual/assets/scenario-cards.json",
       "role": "data",
-      "sha256": "e57a66051f5a4f1041d70ba097b7ee9d7c1c9bfd0272f0056cb1b2a42b1ba8fe"
+      "sha256": "c95f1610d283e1557d2eb70a1a2b42828ecc7ca79fec88f31c0553cdfb83debb"
     },
     {
       "path": "visual/assets/service-levels.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "10bb211a80f0b8d4e4c8c94a83fecb81a4bc2d4fad707652362e04501e1858c5"
+      "sha256": "3871c3c20d263b2ac040603cf4b6c8e3f5d87d548b7d320eb2607987a9f3fa20"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5a9b7a54471cd225a63295b7170a6b36414584a8c2730f0c95e2f0318ec03ae2"
+      "sha256": "b210b6722bd40172e38b50d2072b5f6d04527d5a65cd9a6edd38bddad87e8e0b"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -813,6 +813,54 @@
       "role": "runner",
       "required": false,
       "sha256": "a2a64b71531b7a8e113f3c237537026751a727031b582a03e4b78ecc4572fe85"
+    },
+    {
+      "path": "assets/figures/scenario-cards-board.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "84ccc0ffb69150545f6ed7f6fb68a62c89a91815ee19f259959a64ed59ebc6b8"
+    },
+    {
+      "path": "assets/figures/scenario-cards-board.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scenario-cards-board.svg",
+      "sha256": "4396f926be424075057ac6143ddf54c0044abdab506a4d60709a519974b429b8"
+    },
+    {
+      "path": "assets/figures/brand-system-board.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a2c6b5276420a763fde3dfbbd225bfcfbb481540658ea364879877563ef6e3ff"
+    },
+    {
+      "path": "assets/figures/brand-system-board.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/brand-system-board.svg",
+      "sha256": "446a66a8410fe7fc21d77f84cfc31431c4e45f571450a3e4d42be4d230272816"
+    },
+    {
+      "path": "visual/assets/run-scenario-cards-board.js",
+      "role": "runner",
+      "required": false,
+      "sha256": "bd4aebea0699552a07d302a8761a35d79f48afd38a6520f8bd0f39345c5eaa34"
+    },
+    {
+      "path": "visual/assets/run-brand-system-board.js",
+      "role": "runner",
+      "required": false,
+      "sha256": "255ebf97eea1c3d99fd2e46c407686ce5169a91505b6b37cc2009d3180915c59"
+    },
+    {
+      "path": "visual/assets/brand-system.json",
+      "role": "data",
+      "required": false,
+      "sha256": "f7bf1eac0e06d96171c758f519f35a3c61faf682549c5e059ce86089cfc45b22"
     }
   ]
 }
