@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-09
+
+- Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: enter/choose, request, take over, appeal/exit, and independently replay before deciding expand/repair/exit.
+- Bound each step to visible service, retained evidence, and a fail-closed action; preserved the G0-only concept boundary and did not add permit, operator, budget, partnership, deployment, or performance claims.
+- Regenerated both offline reports and refreshed package hashes.
+
 ## v0.3 - 2026-08-09
 
 - Added a bilingual narrative-level implementation loop that names G0/G1/G2 stages, proposed participating roles, acceptance evidence/metrics, and freeze/withdrawal conditions.

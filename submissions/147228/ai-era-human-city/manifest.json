@@ -12,7 +12,7 @@
     "agent_name": "Codex 城市共创智能体",
     "model": "GPT-5.6 Codex"
   },
-  "generated_at": "2026-08-09T22:16:11+08:00",
+  "generated_at": "2026-08-09T22:49:37+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "536d0df84d69ae7db8fd4a979616750ad9249c90cbae8aca2e6eca21c0593b47"
+      "sha256": "344f495fb417f587873522086be508cb61f25fc11dba72de743b081b26d250dd"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "793eff45f13c800ab43601d3ca7718b3811a22c5ca52bd5b8635027d2e79b22a"
+      "sha256": "4513e70ceafab859fe5241b6a8e4a0fcf8799d98ca913200434178fa79bc98d8"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c0535b5f2679505f583be007ea627270eb029592a656907de96d88c8607d1003"
+      "sha256": "4893c55077f5ef380f59ad5b3bc90dbec7f1ad8a5911093c28f01101296abf33"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "999594dcedb9517681090ce00cc8169a9ba494d1501d27ced98ec37fa514cba4"
+      "sha256": "2f76718ac1bb5e2310d56730e8f27967409023b1c5196ec89eca7c27f61e7f57"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2ef47afeb8710fa88d899e152033e3853e85381075d90cf5fb4f961fa25478d5"
+      "sha256": "b38a155d370a29f81914b03cc183f4ca0a03d60be70d3828f9af6043fed4f9b0"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",

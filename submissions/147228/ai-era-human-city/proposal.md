@@ -19,6 +19,20 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 **方案内候选名：京张人本智城带 / JINGZHANG HUMAN-CENTRIC AI COMMONS。** 本方案不把 AI 理解为城市里多几个会说话的展台，而是把“人能否进入、理解、拒绝、申诉并共同塑造城市”设为每个技术场景的第一道门。它将人本缓冲层、机器可调用但受公共规则约束的城市 API 层、制度护城河与城市版本化治理联成一条概念建议/参考方案，可供专业团队深化研究的证据链。它不构成法定规划、官方品牌、项目批准、工程结论、投资承诺或已确定政策。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
+## 一页执行摘要：先验收一个公共任务链，再谈全带扩展
+
+首个 G0 验收单元不是把 AI 部署出去，而是让一个普通人能够进入、选择、使用、叫停、申诉并离开，同时始终保留人工和非设备路径。它是概念级参考界面，不预设长度、道路、机构、预算或运营主体；点位和工程尺度待正式边界、现场走测与专业核查后确定。
+
+| 普通人路径 | 必须看见的空间/服务 | 必须留下的证据 | 不通过时 |
+|---|---|---|---|
+| 进入并选择普通或 AI 辅助路径 | 双入口、人工台、无屏/纸本/语音替代 | 选择状态、版本和无障碍观察记录 | 普通路径不可用则不开放 |
+| 请求一次公共服务 | 目的说明、授权提示、低刺激等候点 | 场景 ID、数据范围、责任角色 | 授权或责任不清则停留在 G0 |
+| 主动触发人工接管 | 物理/人工接管点、可见退出路线 | 接管原因、时间、人工处理记录 | 无法接管则冻结场景 |
+| 提出异议并离开 | 独立申诉入口、删除/撤回说明 | 工单、期限、处置和退出状态 | 未闭环不得进入 G1 |
+| 第三方复演并决定扩展/返修/退出 | 证据柜、版本牌、公众观察席 | 复演差异、最差组结果、决定记录 | 不能复演则回到纸面协议 |
+
+当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。
+
 ## 设计依据与资料清单
 
 正式依据只来自 data/source_registry.json 中可用于 formal 的公告、任务书、标准本地快照和用地分类资料；标准判断以 standards/references 的本地快照为准，而非仅凭网页地址。[source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 国际就业研究、北京算力政策、全球案例、媒体线索被逐条标为 unregistered_background_only：它们不在当前注册表内，因此只能提示问题，不得升级为本地边界、控制、评分或实施依据。[source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#PROV-SITE-001]

@@ -16,6 +16,20 @@ iteration: "v0.2"
 
 **Candidate name in this submission: JINGZHANG HUMAN-CENTRIC AI COMMONS / 京张人本智城带.** This conceptual reference scheme makes entry, understanding, refusal, appeal, and co-shaping rights the first gate of every AI scenario. It joins a human buffer, a machine-callable but publicly governed civic API, institutional safeguards, and versioned governance. It does not claim a statutory plan, official brand, approval, construction feasibility, investment, confirmed policy, or delivered service. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
+## One-page executive brief: prove one public task chain before scaling the belt
+
+The first G0 acceptance unit is not to deploy AI. It lets an ordinary person enter, choose, use, stop, challenge and leave while keeping human and non-device routes available. It is a concept-level reference interface only: it presupposes no measured length, road, institution, budget or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
+
+| Ordinary-person path | Visible space/service | Evidence to leave | If it fails |
+|---|---|---|---|
+| Enter and choose ordinary or AI-assisted route | Dual entry, staffed desk, screen-free/paper/voice alternative | Choice state, version and accessibility observation | Do not open if ordinary route is unavailable |
+| Request one public service | Purpose statement, consent prompt and low-stimulation waiting point | Scenario ID, data scope and responsible role | Stay at G0 if consent or responsibility is unclear |
+| Trigger human takeover | Physical/human takeover point and visible exit route | Reason, time and human-handling record | Freeze the scenario if takeover is unavailable |
+| Raise an objection and leave | Independent redress entrance and deletion/withdrawal notice | Ticket, deadline, disposition and exit state | No G1 progression before closure |
+| Independent replay and decide expand/repair/exit | Evidence cabinet, version board and public observer seat | Replay difference, worst-group result and decision record | Return to the paper protocol if it cannot be replayed |
+
+The package claims only a G0 conceptual evidence chain; G1/G2 still require field work, formal data, professional review and authorization. The five-step chain cross-checks the ten scenario cards, human fallback and implementation matrix without turning concept metrics into service performance [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count].
+
 ## Design Basis and Source List
 
 Formal evidence is limited to the locally registered announcement, cleared taskbook, local standard snapshots, and land-use guide. Sources marked unregistered_background_only are retained only to frame questions; none may become local boundary, control, score, or implementation evidence. [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#PROV-SITE-001]
