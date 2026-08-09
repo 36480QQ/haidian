@@ -2,6 +2,13 @@
   "schema_version": "0.1.0",
   "status": "context_register_conceptual",
   "boundary_note": "These records are public context signals and design responses. They do not replace an official polygon, regulatory plan, station inventory, ownership record, engineering survey, or approved regional agreement.",
+  "interface_contract_requirements": [
+    "consent_or_voluntary_basis",
+    "rights_and_intellectual_property_review",
+    "named_safety_and_operating_responsibility",
+    "maintenance_and_recordkeeping_owner",
+    "withdrawal_stop_or_no_recognition_path"
+  ],
   "observations": [
     {
       "observation_id": "OBS-BJ-POP-2024",
@@ -30,7 +37,7 @@
     {
       "observation_id": "OBS-JZ-PARK-13LINE",
       "source_id": "DATA-SRC-JINGZHANG-PARK-20230630",
-      "observed_signal": "The official public description frames the Jing-Zhang heritage park as a roughly 9 km urban-renewal and green-space system, including bridge-space and the Beijing Suburban Railway S2 / Line 13 context.",
+      "observed_signal": "The official public description frames the Jing-Zhang heritage park as a roughly 9 km urban-renewal and green-space system, including bridge-space and Line 13 context.",
       "design_response": "Treat the heritage green spine as a version line with station-to-park handoffs, climate comfort, and public evidence interfaces; keep exact alignments and station geometry unknown until verified.",
       "verification_gate": "Reconcile the current official station, right-of-way, park, heritage, road, and emergency-access datasets before any physical line is specified.",
       "evidence_status": "public_context_only"
@@ -58,35 +65,35 @@
       "counterpart_direction": "北纬社区 / AI原点社区",
       "input_direction": "resident questions, accessibility gaps, non-digital service feedback",
       "minimum_output": "de-identified problem card, human-service gap, close reason",
-      "gate": "community consent, rights review, and no inference that participation authorizes deployment"
+      "gate": "community consent; rights/privacy review; named safety and operating owner; maintenance record owner; withdrawal path; participation does not authorize deployment"
     },
     {
       "interface_id": "REG-FUTURE-SCIENCE-CITY",
       "counterpart_direction": "未来科学城",
       "input_direction": "edge-model, embodied-device, and engineering-validation questions",
       "minimum_output": "model card, device passport, failure list, re-test condition",
-      "gate": "test owner, safety scope, intellectual-property terms, and no automatic result recognition"
+      "gate": "voluntary test participation; named test owner and safety scope; intellectual-property terms; maintenance/recall record owner; withdrawal and re-test path; no automatic result recognition"
     },
     {
       "interface_id": "REG-HUAIROU-SCIENCE-CITY",
       "counterpart_direction": "怀柔科学城",
       "input_direction": "measurement, calibration, and research-method questions",
       "minimum_output": "calibration note, uncertainty statement, independent-review question",
-      "gate": "confirmed permission and professional responsibility; no assumed facility access"
+      "gate": "confirmed permission/consent; professional safety responsibility; rights and intellectual-property terms; maintenance handoff owner; withdrawal and no-assumed-access path"
     },
     {
       "interface_id": "REG-E-TOWN",
       "counterpart_direction": "北京经开区",
       "input_direction": "engineering, manufacturing, supply-chain, and product-maintenance questions",
       "minimum_output": "interoperability evidence, maintenance requirement, stop / recall condition",
-      "gate": "voluntary participation, product-safety and consumer-rights review, no procurement claim"
+      "gate": "voluntary participation; product-safety and consumer-rights review; named maintenance/recall owner; withdrawal path; no procurement claim"
     },
     {
       "interface_id": "REG-JJJ",
       "counterpart_direction": "京津冀",
       "input_direction": "cross-city common problems and portable governance methods",
       "minimum_output": "location-agnostic schema, negative result, version difference, maintenance handoff",
-      "gate": "local legal and operational review in each jurisdiction; no copying of coordinates or personal data"
+      "gate": "local consent and legal, safety, and operating review in each jurisdiction; rights/IP and maintenance handoff; withdrawal and no-recognition path; no copying of coordinates or personal data"
     }
   ]
 }
