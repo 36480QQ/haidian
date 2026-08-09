@@ -593,6 +593,70 @@
       "assumptions": [],
       "reason": "缺可公开引用且已清权的片区级产值统计数据；任务书禁止编造产值与投资额。",
       "required_for_formal_submission": true
+    },
+    "land_use_overflow_sqm": {
+      "status": "known",
+      "value": 117.34,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(land_use) difference site_boundary)",
+      "confidence": "high",
+      "assumptions": [],
+      "note_zh": "用地分区超出提交边界的部分。临时边界拟合导致的分区残差；用于诚实披露拓扑质量，官方 polygon 发布后须重算。"
+    },
+    "land_use_symmetric_difference_sqm": {
+      "status": "known",
+      "value": 211.165,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "land_use_coverage_gap_sqm + land_use_overflow_sqm",
+      "confidence": "high",
+      "assumptions": [],
+      "note_zh": "未覆盖与越界之和，是衡量分区完整性的完整指标（单看 gap 会低估误差）。临时边界拟合导致的分区残差；用于诚实披露拓扑质量，官方 polygon 发布后须重算。"
+    },
+    "phasing_outside_site_sqm": {
+      "status": "known",
+      "value": 99.501,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(phasing) difference site_boundary)",
+      "confidence": "high",
+      "assumptions": [],
+      "note_zh": "分期面超出提交边界的部分。临时边界拟合导致的分区残差；用于诚实披露拓扑质量，官方 polygon 发布后须重算。"
+    },
+    "official_declared_key_area_total_sqm": {
+      "status": "known",
+      "value": 3684000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announced_value",
+      "confidence": "high",
+      "assumptions": [],
+      "note_zh": "公告标称 368.4 公顷，与本包复算值 key_area_total_area_sqm（369.2893 公顷）是两个不同口径，不可混用。"
+    },
+    "key_area_total_deviation_ratio": {
+      "status": "known",
+      "value": 0.002414,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "(key_area_total_area_sqm - official_declared_key_area_total_sqm) / official_declared_key_area_total_sqm",
+      "confidence": "medium",
+      "assumptions": [],
+      "note_zh": "三区复算合计与公告标称 368.4 公顷的偏差。"
     }
   }
 }

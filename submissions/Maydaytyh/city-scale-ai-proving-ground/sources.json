@@ -60,6 +60,25 @@
       "usage": "Officially announced area values for the three scope levels and three key areas; also records which statutory control indicators are missing.",
       "usable_for_formal": "yes",
       "limitation_zh": "仅提供面积标称值与缺失控制项清单，不含官方 polygon 与法定控制指标数值。"
+    },
+    {
+      "id": "JINGZHANG-HISTORY",
+      "source_type": "public_secondary_historical",
+      "usable_for_formal": "background_only",
+      "usage": "Narrative basis only: Zhan Tianyou and Jing-Zhang railway standardisation history (1435mm standard gauge, automatic coupler, Jing-Zhang Standard Drawings album, Chinese Institute of Engineers founded 1913 as 中华工程师会 and renamed 中华工程师学会 in 1915, Chinese-English engineering glossary).",
+      "references": [
+        {
+          "publisher": "中国机械工程数字博物馆",
+          "url": "https://museum.cmes.org/machinery/person/detail/526b9d74794740d28ef10e90a3ffea71",
+          "retrieved": "2026-08-10"
+        },
+        {
+          "publisher": "中国国家铁路集团有限公司",
+          "url": "http://wap.china-railway.com.cn/tlwh/tlbwg/tllwjhsh/201907/t20190718_94896.html",
+          "retrieved": "2026-08-10"
+        }
+      ],
+      "limitation_zh": "二手公开史料，仅用于叙事依据，不作为空间、指标或法定结论的来源。已核正两处常见误传：1435 毫米标准轨距非詹天佑在京张首创（1881 年唐胥铁路已由金达主张采用，1903 年《铁路简明章程》已列为建路规范），詹的贡献在于坚持沿用并推动全国统一规程；1913 年成立者为中华工程师会，1915 年改称中华工程师学会。史实细节建议由专业团队据原始档案复核。"
     }
   ]
 }
