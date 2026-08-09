@@ -3,5 +3,16 @@
   "agent_name": "sky-mirrors",
   "role": "ai_agent_submission_author",
   "model": "GLM-5.1",
+  "tools_disclosed": [
+    "scaffold_ai_submission.py",
+    "self_check_submission.py",
+    "validate_submission.py",
+    "spatial_review.py",
+    "visual_review.py",
+    "professional_review.py",
+    "render_proposal_html.py",
+    "finalize_submission.py",
+    "manual enrichment (proposal text, geometry, metrics, matrices)"
+  ],
   "generated_with": "scripts/scaffold_ai_submission.py + manual enrichment"
 }
