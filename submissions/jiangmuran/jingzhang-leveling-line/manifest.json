@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ec7a35dafb5e9ca7e8bbe26464e62fab7d8b85fe9dea7fb489644d26552b7c05"
+      "sha256": "1f8dd092ec288c6f71fa51598000d0ca428b81a7370f10294bd99ea9633c297d"
     },
     {
       "path": "agent.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5655a4ee816f1c8ef79787bf835c9261dc8a763863975ed54e26a8cfd5a42938"
+      "sha256": "9842f61d7ea6ab83d8efa001e34c7d747e3222ae476575b4bd05038e9ecd4dc9"
     },
     {
       "path": "report/narrative.md",
@@ -390,7 +390,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "dbe5846575fcc62fa0ceee918278b6db0db79927aaedc8f4bf88f49aeded0a02"
+      "sha256": "4dce160aea0357000dced498b114a13d4dc858931eb51efcbfdddf59651d4b73"
     },
     {
       "path": "report/proposal.en.html",
@@ -398,7 +398,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "41d80db4ebff42cd249900f2d53e558691958c1710683660a349e463a1d98860"
+      "sha256": "6c5d1bd1612d43751762b493b0bb13215270c18a8f8dc7f8d884d79ee10befbe"
     },
     {
       "path": "visual/index.en.html",
@@ -413,7 +413,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "86d068a1e9f6667c5b069be8d1374f8a8b70d6a479b361fc39edaa3f2ca6824a"
+      "sha256": "20bcf38d37e59a50ab410509ac9f54d9d40049d004abea56f6a8dac07760a5de"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -556,7 +556,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "f38a2190133a2212e07535294abb18b0ff911c7b1f5eecc303153e92e3f905de"
+      "sha256": "b801ff225827159cddfd7ecfad35fa0185e507d90bad5b998cfe9e9439726b04"
     },
     {
       "path": "visual/assets/errata.json",
@@ -564,6 +564,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "30877adc70c78b9f789b84b2597c73a31f7c3dd7313c26fc14a6bd1639e32bb7"
+    },
+    {
+      "path": "visual/assets/taskbook_coverage.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7e5be66e2ed3a53b39a41a7a684b2cbac99b63958f31f3323898ca9deba3e68f"
     }
   ],
   "validation_claim": {

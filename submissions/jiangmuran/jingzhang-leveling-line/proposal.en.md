@@ -1045,6 +1045,22 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
+### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
+
+The taskbook sets six agent tasks carrying **63 requirements** between them — 31 must-address items and 32 required outputs. The compliance matrix *asserted* that this package covers them. Nothing joined a requirement to the place that answers it, and **a claim of coverage is not coverage** — which is the objection this proposal makes everywhere else.
+
+Every requirement now points at evidence: a section in `proposal.md`, a shipped file, or a figure, each verified to exist at build time. The five requirements where the taskbook states a floor are **recomputed** rather than declared:
+
+| Taskbook floor | Measured here |
+|---|---|
+| At least 10 AI scenario cards | **12** |
+| At least 3 industry test-and-validation scenarios | **3** (S06 / S10 / S11, each with its own controlled boundary) |
+| At least 5 user personas | **9** |
+| At least 3 AI pilgrimage landmarks | **3** (L1 / L2 / L3) |
+| 5–8 global AI ecosystem case studies | **6** |
+
+All 63 answered. Recomputing the floors rather than declaring them means that if one of these deliverables is ever dropped, **the build fails instead of the matrix going on asserting it is there.**
+
 ### An errata register: `visual/assets/errata.json`
 
 **Across 351 merged proposals there is no errata, no retraction and no author-written postmortem.** Two bundle the maintainer's feedback about themselves. None says what it got wrong before being asked.

@@ -574,6 +574,11 @@ code {
 <p>这四条与本方案的核心规则同源：<strong>超限整段重测，不局部打补丁。</strong> 一份方案若允许自己局部替换而要求城市整体重算，它的机制主张就不成立。</p>
 <h3>合规矩阵</h3>
 <p><code>compliance_matrix.json</code> 逐条映射公告任务与 agent.1–agent.6，确保每项要求都能定位到本文章节、图层、指标与图纸。需要说明的是：<strong>矩阵是索引，不是内容</strong>。本方案不把矩阵内容复述进正文——任务书要求的成果必须以可核验的章节、图层与图纸形式存在，把矩阵抄进正文只会让文档变成一张合规表格。</p>
+<h3>任务书逐条覆盖：<code>visual/assets/taskbook_coverage.json</code></h3>
+<p>任务书给出六项 agent 任务，合计 <strong>63 条</strong>要求（31 条 must-address 与 32 项 required output）。合规矩阵此前<strong>声明</strong>本包覆盖它们，但没有任何检查把「一条要求」与「答它的那个地方」联接起来——<strong>声称覆盖不等于覆盖</strong>，这正是本方案在别处反复指出的那件事。</p>
+<p>现在每一条都指向一处证据：<code>proposal.md</code> 中的一个小节、一个随包文件，或一张图纸，构建时逐条校验其存在。任务书给出下限的五项，改为<strong>重算计数</strong>而非声明：</p>
+<div class="proposal-table"><table><thead><tr><th>任务书下限</th><th>本包实测</th></tr></thead><tbody><tr><td>不少于 10 张 AI 场景卡</td><td><strong>12</strong></td></tr><tr><td>不少于 3 个 AI 产业测试验证场景</td><td><strong>3</strong>（S06 / S10 / S11，各有独立受控边界）</td></tr><tr><td>不少于 5 类用户画像</td><td><strong>9</strong></td></tr><tr><td>不少于 3 个 AI 朝圣地标</td><td><strong>3</strong>（L1 / L2 / L3）</td></tr><tr><td>5–8 个全球 AI 创新生态案例</td><td><strong>6</strong></td></tr></tbody></table></div>
+<p>63 条全部有据。把下限改成重算的意义在于：<strong>如果哪天某类交付物被删掉一个，构建会失败，而不是矩阵继续声称它还在。</strong></p>
 <h3>勘误登记册：<code>visual/assets/errata.json</code></h3>
 <p><strong>全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。</strong> 有两份把维护者对自己的反馈打包进来，但没有一份在被问之前说出自己错在哪。</p>
 <p>这正是本方案要做一份的理由。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面——它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。</p>
