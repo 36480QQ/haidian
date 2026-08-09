@@ -3,12 +3,13 @@ title: "JING-ZHANG CIVIC FOUNDRY | A CULTURAL PRODUCTION BELT FOR CIVIC AI ADOPT
 title_zh: "京张万象工场｜文化生产驱动的AI城市采用带"
 author_github: "kingyfleo"
 language: "en"
+proposal_format_version: "2"
 translation_of: "proposal.md"
 license: "CC-BY-SA-4.0"
-summary: "A culture-to-adoption urban-design framework that moves AI from technical capability to civic meaning, public trust, and sustained use. A civic commission loop connects the Co-Author Foundry at AI Origin, the Safe Validation Yard at Zhongzhiyuan, and the Civic Premiere Ground at Dazhongsi to produce reusable cultural content packs, deployable public-experience modules, and sustainable urban services."
+summary: "Jing-Zhang is proposed as a prototype civic AI adoption infrastructure: cultural production, civic commissions, graded spatial access, and a machine-readable Adoption Passport move technology from runnable to understandable, accountable, procurable, maintainable, and reversible civic capability."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.1"
+iteration: "v3.0"
 ---
 
 # JING-ZHANG CIVIC FOUNDRY
@@ -19,7 +20,7 @@ iteration: "v2.1"
 
 ## The city is not an AI showcase. It is a co-author.
 
-> **Beijing does not lack AI outputs. What remains scarce is the capacity to turn those outputs into cultural meaning, public trust, and sustained civic adoption.**
+> **Beijing does not lack AI outputs. What remains scarce is an infrastructure through which AI can enter real urban life lawfully, safely, and sustainably.**
 
 Jing-Zhang Civic Foundry does not treat the 11.4-square-kilometre Overall Design Area as a corridor for displaying technology. Nor does it use more models, screens, and festivals as proof of innovation. It makes the city itself a co-author of AI: residents and frontline institutions issue real commissions; cultural practitioners calibrate meaning and authenticity; researchers and creators co-produce; professional teams validate by risk level; the public tests and corrects low-risk outcomes at civic premieres; and operators use twelve months of evidence on reuse, service quality, and cost to decide whether to adopt, modify, scale down, or exit.
 
@@ -37,13 +38,41 @@ The final product is not a single "AI landmark". It is three classes of outcomes
 | Three Products | Reusable cultural content packs; deployable public-experience modules; sustainable urban services | Repeatable, maintainable outputs replace one-off exhibits |
 | Five Ledgers | Public Value; Cultural Authenticity; Rights and Provenance; Safety and Environment; Operations and Reinvestment | Public, cultural, rights, safety, and operating evidence remain jointly auditable |
 
-The production chain is **a loop, not a north-to-south line**. Civic briefs are distributed across the corridor. Cultural calibration and human-AI co-production are concentrated at AI Origin. High-risk prototypes move to controlled validation at Zhongzhiyuan. Mature, low-risk outcomes premiere at Dazhongsi. Twelve months of use generate operating evidence and distributable surplus, which feed the next round of civic briefs. Spatial order and working order are deliberately different, avoiding false causality created only for graphic neatness. [metric:adoption_core_count] [metric:workflow_stage_count] [metric:flagship_area_count] [metric:civic_product_type_count]
+The production chain is **a loop, not a north-to-south line**. Civic briefs are distributed across the corridor. Cultural calibration and human-AI co-production are concentrated at AI Origin. High-risk prototypes move to controlled validation at Zhongzhiyuan. Mature, low-risk outcomes premiere at Dazhongsi. Twelve months of use generate operating evidence and distributable surplus, which feed the next round of civic briefs. Spatial order and working order are deliberately different, avoiding false causality created only for graphic neatness. [metric:workflow_stage_count] [metric:flagship_area_count]
+
+## Executive Decision Brief: Jing-Zhang Should Compete for Civic Adoption Capacity
+
+From a city-leadership perspective, Jing-Zhang is distinctive because research and enterprise supply, near-campus innovation, neighbourhood life, transit commerce, and a century-old public-infrastructure heritage can be connected in one accountability chain. The proposal therefore frames the belt as **a prototype civic AI adoption infrastructure for national learning**. This is a design proposition, not a national designation or settled policy.
+
+| Strategic decision | Recommended answer | Public value | Explicit non-commitment |
+| --- | --- | --- | --- |
+| How is this different from another AI park? | Move from technology concentration to the infrastructure through which AI enters real urban life | A transferable method for commissioning, testing, premiering, operating, procuring, and exiting | No national title, new agency, or policy authority is claimed |
+| What should the city fund first? | Public-space, accessibility, staffed service, cultural evidence, and independent evaluation baselines | Public assets remain useful when a technology or supplier exits | No invented capital total, annual budget, or building capacity |
+| How may AI use urban space? | L1 controlled validation, L2 co-creation, and L3 low-risk public premiere; all time-limited and reversible | Risk is matched to public exposure | No substitute for statutory planning, permits, safety, or procurement |
+| How are stranded pilots prevented? | Every project identifies capex, annual opex, an accountable owner, and an exit reserve | Construction, maintenance, and restoration responsibilities are visible from the start | No guaranteed procurement, investment return, or partner |
+| Why is cultural industry core rather than decorative? | Civic commissioning, authenticity, authorship, distribution, reuse, and reinvestment organise adoption | AI becomes contextual, attributable, market-aware, and publicly valuable | Festival footfall, sponsorship exposure, and media heat are not adoption evidence |
+
+Four concept decisions are proposed for professional consideration: confirm civic adoption as the strategic line; separate the public baseline from the commercial value-added layer; subject Adoption Passport 0.1 to professional review; and start with three reversible civic commissions in a first-100-day test window. Site allocation, institutions, budgets, procurement, and implementation remain subject to formal decisions by competent authorities. [assumption:A-DELIVERY-001]
+
+### Seven-Dimension Evidence Index
+
+| Review dimension | Direct evidence in v3.0 |
+| --- | --- |
+| Brief alignment | Three scope levels, three positionings, five functions, Three Areas and Two Wings, six Agent tasks, and differentiated key-area design |
+| Originality | Civic Commission System, Adoption Passport, Five-Ledger Review, three-layer spatial access code, and public reinvestment |
+| AI and planning innovation | AI service rights are bound to exposure, time, cultural rights, human accountability, non-AI baselines, and exit states |
+| Implementation feasibility | Five first-100-day actions, six delivery packages, responsible functions, delivery routes, funding categories, opex, and exit reserves |
+| Public interest and inclusion | Field-tested accessibility, staffed and non-digital channels, quiet no-scan bypass, free basics, and co-review with priority groups |
+| Risk and compliance | Provisional geometry, unknown controls, copyright and cultural facts, privacy, fiscal firewall, complaint handling, and rollback |
+| Expression completeness | Bilingual narratives, five figures, A3/A0, offline HTML, nine GeoJSON classes, metrics, matrices, self-checks, and machine-readable protocols |
+
+The complete evidence index is `visual/assets/review-evidence-index.json`; it organises evidence and does not predetermine a review decision. [data:visual/assets/review-evidence-index.json]
 
 ## Design Basis and Source Inventory
 
-The formal basis comprises announcements by relevant Beijing authorities, the Agent Taskbook, and the repository site package. Facts about Jing-Zhang history and the railway heritage park rely only on public information issued by Beijing cultural-heritage and landscape authorities. Seven international cases are used only to extract mechanisms; their density, governance, finance, market, and ownership conditions are not projected onto Beijing. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+The formal basis comprises announcements by relevant Beijing authorities, the Agent Taskbook, and the repository site package. Facts about Jing-Zhang history and the railway heritage park rely only on public information issued by Beijing cultural-heritage and landscape authorities. Seven international cases are used only to extract mechanisms; their density, governance, finance, market, and ownership conditions are not projected onto Beijing. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]
 
-The announcement defines three scales: a Coordinated Research Area of about 43.6 square kilometres, an Overall Design Area of about 11.4 square kilometres, and three Key-Area Detailed Design Areas totalling about 368.4 hectares. The repository does not yet contain precise official polygons for the Overall Design Area or the three key areas. Therefore `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` retain `official_boundary=false` and `geometry_role=provisional_constraint`. These provisional geometries support content review, spatial computation, and layer validation only. They are not official planning boundaries for roads, parcels, ownership, heritage protection, approvals, or engineering. [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
+The announcement defines three scales: a Coordinated Research Area of about 43.6 square kilometres, an Overall Design Area of about 11.4 square kilometres, and three Key-Area Detailed Design Areas totalling about 368.4 hectares. The repository does not yet contain precise official polygons for the Overall Design Area or the three key areas. Therefore `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` retain `official_boundary=false` and `geometry_role=provisional_constraint`. These provisional geometries support content review, spatial computation, and layer validation only. They are not official planning boundaries for roads, parcels, ownership, heritage protection, approvals, or engineering. [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
 Exchange layers use EPSG:4326; areas and lengths are recalculated in EPSG:4548. When official polygons are released, replacement of the basemap alone is insufficient. Land use, buildings, roads, green space, public space, phasing, drawings, web pages, and metrics must all be recalculated together. Floor Area Ratio, Building Height, road boundaries, protection zones, existing buildings, ownership, structure, municipal capacity, and actual footfall remain unknown. Conceptual precision is never presented as statutory precision. [metric:site_area_sqm] [depth:metrics_recalculation] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
@@ -100,7 +129,21 @@ The Foundry creates a seven-stage civic commission loop: **Civic Brief -> Cultur
 - Sustained Adoption: twelve months of reuse, task completion, maintenance, payment, and complaints are observed; opening-day traffic is not a proxy for value.
 - Public Reinvestment: costs, income, failures, and next improvements are disclosed; distributable surplus is reinvested in public briefs and the creator ecosystem under audited rules.
 
-### 2. Cultural-industry capability becomes three civic products
+### 2. Civic Adoption Passport: a machine-readable, auditable, and revocable urban contract
+
+Version 3.0 turns the seven-stage loop into **Civic Adoption Passport 0.1**. One passport follows a project from commission and cultural calibration through controlled trial, public premiere, adoption, renewal, or exit. It is not a government permit, product certification, or procurement endorsement. It binds who commissioned the work, who benefits, where it may operate, who is accountable, how it is funded and maintained, and how it stops in one evidence object. [data:visual/assets/civic-adoption-passport.schema.json] [metric:adoption_passport_schema_count]
+
+| Gate | Required question | Human release role | Consequence of failure |
+| --- | --- | --- | --- |
+| G1 Public Necessity | Is there a real commissioner, beneficiary, and non-AI baseline? | Civic commission and public-interest review | Do not start, or rewrite the problem |
+| G2 Culture and Rights | Are facts, local knowledge, contemporary interpretation, AI generation, authorship, data, and licences clear? | Culture, rights, community, and user review | Research may continue; no premiere or distribution |
+| G3 Controlled Trial | Are risk, spatial containment, takeover, accessibility, fallback, and exit workable? | Technical, safety, spatial, and frontline-operation review | Return to simulation or a manual process |
+| G4 Public Premiere | Can ordinary users understand status, decline participation, complain, correct, and retain basic service? | Public-service, accessibility, and site-operation review | No high-exposure public deployment |
+| G5 Adopt, Renew, or Exit | Do twelve months of evidence support continued use? | Public, operator/procurer, independent evaluator, and audit | Adopt, renew for a term, reduce, roll back, or exit |
+
+The passport maintains the Five Ledgers, an L1-L3 spatial licence, capex, annual opex, exit reserve, and stop conditions. Status changes are evidence-bound; a company cannot rename a successful display as civic adoption. The synthetic example remains `concept_only`, with zero months observed and no deployment, funding, procurement, or approval. [data:visual/assets/example-civic-adoption-passport.json] [metric:adoption_gate_count]
+
+### 3. Cultural-industry capability becomes three civic products
 
 This proposal does not describe cultural advantage as running events or communications. The cultural industry's core capability is to organise dispersed history, knowledge, creativity, technology, channels, and markets into reusable products that circulate under clear rights. The author's professional experience is not represented as a confirmed partnership. It is translated into four auditable urban-design mechanisms. [source:AUTHOR-CULTURE-METHOD]
 
@@ -117,7 +160,7 @@ This proposal does not describe cultural advantage as running events or communic
 | Deployable public-experience module | Reversible components, interaction script, human-service script, accessibility and safety notes | Nine Urban Rooms, climate gardens, Civic Premiere Ground | Deployment across neighbourhoods and seasons without copying landmark buildings | Does not displace movement, removable, non-digital backup |
 | Sustainable urban service | AI capability, staff, data-minimisation rules, operations, and exit plan | Communities, parks, transit interfaces, public institutions | Procurement, operation, or open tool after adoption review | Human takeover, accountability, no harm to basic service upon shutdown |
 
-### 3. Seven international cases provide mechanisms only
+### 4. Seven international cases provide mechanisms only
 
 | Case | Mechanism extracted | Jing-Zhang translation | Explicitly not copied |
 | --- | --- | --- | --- |
@@ -135,7 +178,7 @@ This proposal does not describe cultural advantage as running events or communic
 
 Conceptual land use fully covers the provisional boundary without polygon overlap. Research, culture, community, education, commerce, and park functions are interwoven diagonally so that technology and daily life are not separated into longitudinal strips. The central Civic Production Floor widens at nine transverse rooms, creating visible exchange between institutional capacity to the west and everyday needs to the east. [data:geometry/land_use.geojson#LU-CIVIC-FLOOR] [depth:land_use_layout]
 
-Current provisional recalculation gives about 20.8% research, 23.4% culture, 15.3% community, 15.1% education, 16.1% commercial adoption services, and 9.3% Civic Production Floor. These are conceptual functional models, not Regulatory Detailed Planning indicators. They must be recompiled when official boundaries, existing-condition data, and statutory land use become available. [metric:land_use_research_ratio] [metric:land_use_culture_ratio] [metric:land_use_community_ratio] [metric:land_use_education_ratio] [metric:land_use_commercial_ratio] [metric:land_use_park_ratio]
+Current provisional recalculation gives about 20.8% research, 23.4% culture, and 15.3% community. [metric:land_use_research_ratio] [metric:land_use_culture_ratio] [metric:land_use_community_ratio] Education is about 15.1%, commercial adoption services 16.1%, and the Civic Production Floor 9.3%. [metric:land_use_education_ratio] [metric:land_use_commercial_ratio] [metric:land_use_park_ratio] These are conceptual functional models, not Regulatory Detailed Planning indicators. They must be recompiled when official boundaries, existing-condition data, and statutory land use become available.
 
 ### 2. Nine Transverse Urban Rooms turn crossing into co-production
 
@@ -153,6 +196,18 @@ Current provisional recalculation gives about 20.8% research, 23.4% culture, 15.
 
 The nine stitches are field-verification tasks, not promises of existing roads. Each location requires verification of right-of-way, railway and heritage conditions, levels, trees, crossings, night safety, and accessibility. A stitch may move, be downgraded, or be cancelled if evidence does not support it. [metric:east_west_stitch_count] [depth:traffic_rail_slow_parking]
 
+### 3. Spatial Access Code: Permanent Public Baseline, Reversible Civic Interface, Time-Limited AI Service
+
+The planning innovation is not another category of "AI land". It converts AI's right to use space into a time-bound, risk-graded, publicly safeguarded, and revocable urban licence. All Nine Rooms and three key areas share three layers. [data:visual/assets/urban-room-control-code.json] [metric:spatial_access_level_count]
+
+| Spatial layer | Time responsibility | Content | Binding rule |
+| --- | --- | --- | --- |
+| S1 Permanent Public Baseline | Long term | Continuous access, accessibility, shade and rest, physical wayfinding, staffed help, quiet bypass, basic lighting | Remains usable when AI fails, is removed, or changes supplier; cannot be displaced by events or paid services |
+| S2 Reversible Civic Interface | Weeks to seasons | Commission tables, open making, observation, status displays, climate components, public explanation | Declares occupancy period, maintainer, rights, removal, and site restoration |
+| S3 Time-Limited AI Service | Hours to twelve months | Models, terminals, robots, digital content, and assisted services | Holds a Passport, stays within L1-L3 exposure, retains human and non-AI routes, and never renews automatically |
+
+Zhongzhiyuan defaults to L1 controlled validation, AI Origin to L2 co-production, and Dazhongsi admits only L3 low-risk premieres that have passed the first four gates. A project cannot lower its safeguards merely by moving location. Statutory controls, dimensions, fire, heritage, transport, capacity, and municipal conditions remain subject to official inputs and professional design. [metric:spatial_layer_count] [assumption:A-CONTROLS-001]
+
 ## Land Use, Building Capacity, and Demolish-Renovate-Retain Strategy
 
 ### Existing frame, new insert, reversible layer
@@ -169,9 +224,15 @@ The conceptual Civic Production Floor centreline measures about 9.5 kilometres. 
 
 Municipal systems follow a two-layer approach: permanent base, reversible service. Fire safety, water, drainage, power, and communications enter the permanent layer through professional approvals. Power, networks, rigging points, queuing, and waste sorting for making and premieres use standard removable interfaces. Public AI prioritises edge processing and minimal data. Continuous facial collection is not a default smart-city input. When systems fail, physical signs, staffed windows, and essential services remain operational. [depth:municipal_new_infrastructure]
 
+### Public-Interest Baseline: start with people most easily ignored by a "smart" system
+
+Inclusion is not demonstrated by universal app availability. Each public scenario must conduct relevant field tasks with older people, disabled and chronically ill users, child carers, young renters, night workers, frontline cleaning and security staff, and small merchants. Personas test services; they never justify hidden scoring or classification of people.
+
+Six safeguards must coexist before a public premiere: basic service is free; a physical, telephone, or on-site non-digital route exists; staffed takeover is available; accessibility is verified through field tasks rather than screenshots; a quiet no-scan bypass is provided; and the accountable owner, complaint route, response clock, and restoration plan are public. If any safeguard fails, the AI layer shuts down while the S1 public baseline continues. [metric:public_safeguard_count]
+
 ## Blue-Green Space, Public Space, and Urban Character
 
-The Blue-Green Space is not an event backdrop. The union of the continuous Civic Production Floor and nine climate gardens is approximately 126.0 hectares, or 11.0% of the provisional area. The union of twelve scenario public spaces is approximately 8.8 hectares, or 0.8%. Gardens provide infiltration, shade, acoustic buffering, waiting space, and ecological connection. No conclusion on transplantation, removal, or engineering capacity is made before surveys of existing trees, soil, ponding, and heat conditions. [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR]
+The Blue-Green Space is not an event backdrop. The union of the continuous Civic Production Floor and nine climate gardens is approximately 126.0 hectares, or 11.0% of the provisional area. [metric:green_space_area_sqm] [metric:green_ratio] The union of twelve scenario public spaces is approximately 8.8 hectares, or 0.8%. [metric:public_space_area_sqm] [metric:public_space_ratio] Gardens provide infiltration, shade, acoustic buffering, waiting space, and ecological connection. No conclusion on transplantation, removal, or engineering capacity is made before surveys of existing trees, soil, ponding, and heat conditions. [data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR]
 
 The public baseline is never sold with events: continuous access, an accessible route, information on water and toilets, free seating, quiet rest, basic historical information, staffed help, and emergency services take priority. Events use three deployment states - daily, making, and premiere. Every premiere requires advance review of temporary works and evacuation, time and noise limits, a retained bypass, and a post-event record of energy, waste, complaints, and restoration. [depth:blue_green_public_space]
 
@@ -257,7 +318,21 @@ The author's cultural-industry advantage becomes creative calls, content product
 
 Public finance supports heritage conservation, accessibility, infrastructure, and essential services. Challenge funds and philanthropic resources support public briefs and early prototypes. Reviewed training, services, licences, premieres, and venue operation may generate revenue. Brand sponsorship must disclose rights and duration. No return, valuation, or exclusive resource is promised. After audit, distributable surplus returns to public briefs, creator pay, and daily-space maintenance. [source:AGENT-TASKBOOK] [depth:phasing_implementation]
 
-### 4. Five-dimensional civic-adoption review
+### 4. Fiscal Firewall: five kinds of money carry different responsibilities
+
+City leaders need to prevent a familiar failure: construction is funded, second-year operation is not, and no one pays for removal. Version 3.0 does not invent investment amounts. It specifies the permitted role of each funding category; before G3, every project identifies capex, annual opex, and an exit reserve. [data:visual/assets/delivery-program.json] [metric:funding_channel_count]
+
+| Funding category | May support | Must not support |
+| --- | --- | --- |
+| Public baseline funding | Heritage, accessibility, basic public space, staffed basic service, evidence, independent evaluation | Market guarantees for one product, permanent brand rights, high-risk commercial trials |
+| Research and innovation funding | Simulation, controlled prototypes, benchmarks, red teams, open tools | Replacing long-term public service or making residents default test subjects |
+| Public-interest and cultural-commission funding | Real briefs, cultural evidence, priority-group review, fair creator labour | Unclear rights, hidden promotion, unaudited exchanges |
+| Disclosed time-limited sponsorship | Co-production, distribution, communication, materials, service resources | Permanent naming, personal data, public decisions, exclusive occupation |
+| Post-adoption earned revenue | Value-added service, training, licence, maintenance, public reinvestment | Paywalls for basic access, public information, complaints, human fallback, quiet bypass |
+
+This places the author's cultural-industry method of sponsorship, rights exchange, resource cooperation, and commercial conversion inside public rules. Brands are not excluded; they are assigned a clear, time-limited, auditable place. [source:AUTHOR-CULTURE-METHOD]
+
+### 5. Five-dimensional civic-adoption review
 
 Technical validation does not equal civic adoption. The Foundry adds five dimensions: problem relevance; cultural and rights integrity; public access and trust; operational and market continuity; and transferability across settings. The first year establishes baselines rather than inventing scores; subsequent targets are jointly set by the public, professional teams, and operators. [metric:civic_adoption_dimension_count]
 
@@ -286,13 +361,36 @@ The route is not a hero ranking. It records how the city solves problems collect
 
 ### 3. Governance and five annual beats
 
-A conceptual Civic Foundry Adoption Office is proposed without assuming administrative status. It brings together authorised public interfaces, park and spatial operators, culture and copyright specialists, research institutions, community and accessibility representatives, independent safety reviewers, and auditors. Civic-brief ranking, risk release, cultural calibration, spatial scheduling, and public reinvestment have separate accountable roles. No sponsor may control problem selection, review, and returns simultaneously. [source:CASE-SEOUL-AI-HUB]
+A conceptual Civic Foundry Adoption Office is proposed without assuming administrative status, staffing, or a confirmed lead agency. A public-interest and policy interface sits above it. Four professional gates cover planning and public space; technology, data, and safety; culture, rights, and authorship; and finance, procurement, and independent audit. Site and service operators own daily maintenance and incidents. Community, accessibility, and public representatives hold correction and stop routes. No sponsor may control problem selection, review, and returns simultaneously. [source:CASE-SEOUL-AI-HUB]
 
 Five annual beats are proposed: spring publication of Civic Commissions and evidence; early-summer cultural calibration, co-author teams, and residencies; summer closed or limited validation; autumn Civic Premiere of mature low-risk projects on the public floor; winter publication of adoption, cost, failure, and reinvestment review. Community services and daily public space continue throughout the year and do not stop for the annual programme. [metric:annual_cycle_stage_count]
 
 International collaboration exports three transferable outputs and their evidence packs rather than copies of buildings: content packs, experience modules, and urban-service protocols. Cross-border collaboration follows local data, copyright, and cultural-context review. An international platform is proposed only as an open-selection and knowledge-exchange mechanism; no partnership is represented as confirmed. [assumption:A-PARTNERS-001]
 
 ## Renewal Projects, Policy, and Phased Implementation
+
+### First 100 Days: test rules, accountability, and three real commissions before permanent construction
+
+The first 100 days are a concept action window, not a government schedule. [assumption:A-DELIVERY-001] Five actions test whether the programme can start. [metric:first_100_day_action_count]
+
+1. Build a controlled gap register and replacement plan for official geometry, existing conditions, ownership, heritage, roads, municipal systems, and public facilities.
+2. Publish Adoption Passport 0.1, the five gates, complaint and correction routes, data closure, and exit templates for legal, cultural, technical, accessibility, and operations review.
+3. Select three real civic commissions from communities, frontline institutions, parks, and merchants; define beneficiaries, the non-AI baseline, and an end condition before naming a product.
+4. Identify one reversible candidate prototype in each key area and review L1-L3 exposure, removal, maintenance, and public impact.
+5. Establish year-one baseline methods for accessibility, staffed service, complaints, reuse, whole-life cost, and exit drills without pre-filling performance.
+
+### Six Delivery Packages
+
+| Package | Responsible function, not a predetermined agency | Delivery and funding route | Gate |
+| --- | --- | --- | --- |
+| PKG-01 Planning Evidence and Shared Base Map | Planning, survey, evidence coordination | Public planning baseline; versioned maintenance | Official or cleared evidence and full-package recalculation |
+| PKG-02 Civic Floor and Nine-Room Baseline | Public space, transport, accessibility, heritage, local operation | Public baseline funding; annual maintainer identified | Heritage, ownership, access, safety, maintenance |
+| PKG-03 Adoption Passport and Status Desk | Programme, law, data, cultural rights, audit | Open public protocol; research or public-interest support | Accountability, privacy, complaint, portability, shutdown |
+| PKG-04 Three Graded Spatial Prototypes | Site operation, R&D, safety, frontline maintenance | Research funding; each prototype carries removal reserve | L1-L3 exposure and takeover drill |
+| PKG-05 Civic Commission and Cultural-Production Network | Commission, culture, rights, authors, channels | Public-interest commission, disclosed sponsorship, licensed distribution | Authenticity, rights, labour pay, conflict disclosure |
+| PKG-06 Twelve-Month Adoption and Reinvestment | Operator, service/procurement, public, independent evaluation | Adopted-service funding and earned revenue | G5 adopts, renews, reduces, or exits |
+
+These packages are responsibilities, not six new institutions. Their machine-readable record identifies capital categories, annual operating channels, exit reserves, and stop conditions. [data:visual/assets/delivery-program.json] [metric:delivery_package_count]
 
 Twelve renewal projects follow the rule: public foundation first, culture and rights before release, and permanent construction only after validation. [metric:renewal_project_count] [data:geometry/phasing.geojson#PHASE-01]
 
@@ -313,13 +411,13 @@ Twelve renewal projects follow the rule: public foundation first, culture and ri
 
 Spatial layers use three phases: Phase 1 provides the Civic Production Floor and three reversible demonstrations; Phase 2 extends co-production and validation networks; Phase 3 forms a sustained cultural economy only where twelve-month adoption evidence supports it. Work passes four gates: days 0-100 replace data, set rules, and issue the first briefs; months 3-12 deliver low-disturbance public foundations and reversible prototypes; months 12-24 advance the three key-area prototypes; months 24-36 decide whether validated projects become fixed, expand, or exit. Time is a design assumption, not a government programme. [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-02] [data:geometry/phasing.geojson#PHASE-03]
 
-No unsupported total investment or revenue is promised. Each project carries a whole-life cost sheet covering at least construction, content, staff, energy, maintenance, insurance and safety, removal, and updating. A project advances only when capital expenditure, annual operation, accountable organisation, and exit cost are all affordable.
+No unsupported total investment or revenue is promised. Each project carries a whole-life cost sheet covering at least construction, content, staff, energy, maintenance, insurance and safety, removal, and updating. A project advances only when capital expenditure, annual operation, accountable organisation, and an exit reserve are all affordable. Amounts, budget classifications, procurement routes, and delivery bodies remain for competent authorities to determine from official evidence. [assumption:A-DELIVERY-001]
 
 ## Indicators, Area Recalculation, and Compliance
 
 ### 1. Spatial and task indicators
 
-The provisional Overall Design Area recalculates to about 11.41 square kilometres. Conceptual courtyard footprints total about 9.6 hectares, or 0.8% of the provisional area. The Civic Production Floor centreline is about 9.5 kilometres. Nine Urban Rooms, twelve Civic Commissions, three controlled validation scenarios, eight personas, four contribution landmarks, and twelve renewal projects are counted from layers or tables. [metric:building_footprint_ratio] [metric:urban_room_count] [metric:scenario_count] [metric:ai_validation_scenario_count] [metric:persona_count] [metric:pilgrimage_landmark_count]
+The provisional Overall Design Area recalculates to about 11.41 square kilometres. Conceptual courtyard footprints total about 9.6 hectares, or 0.8% of the provisional area. [metric:building_footprint_ratio] Nine Urban Rooms and twelve Civic Commissions are counted from layers or tables. [metric:urban_room_count] [metric:scenario_count] Three controlled validation scenarios, eight personas, four contribution landmarks, and twelve renewal projects remain independently auditable in the structured layer. [metric:ai_validation_scenario_count] [metric:persona_count] [metric:pilgrimage_landmark_count]
 
 Machine precision supports topology and recalculation; it does not imply official survey precision. Every known metric in `metrics.json` records value, unit, source files, formula, confidence, and assumptions. FAR and maximum Building Height remain unknown. [depth:metrics_recalculation]
 
@@ -335,6 +433,8 @@ Machine precision supports topology and recalculation; it does not imply officia
 
 ## Risk, Copyright, and Compliance
 
+Risk control is not delegated to a generic claim of compliance. Four auditable boundaries apply: use only public or authorised material and stop citing anything with unresolved public status; minimise personal information, limit its purpose, allow withdrawal, and keep private data out of public displays; record provenance, authorship, copyright, and permission for cultural content, never presenting AI-generated material as historical fact; and require human review, professional compliance review, and confirmation by an accountable actor before model outputs affect public service or spatial deployment. Implementation, data, rights, and fiscal risks enter the Adoption Passport and Five Ledgers separately; technical self-assessment never substitutes for external review. [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data]
+
 ### Eight principal risks
 
 - **Misreading precision**: provisional boundary, key areas, land use, and building hosts remain visibly labelled; the whole evidence chain is recalculated after official data arrive.
@@ -348,16 +448,21 @@ Machine precision supports topology and recalculation; it does not imply officia
 
 Copyright, sources, assumptions, self-check, standards, professional depth, and announcement tasks are cross-referenced in `report/copyright_statement.md`, `sources.json`, `assumptions.json`, `self_check.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `compliance_matrix.json`. [data:geometry/public_space.geojson#PUBLIC-SC-12] [data:geometry/constraints.geojson#CONSTRAINTS-DATA-GAP]
 
-All known metric references: [metric:announced_research_area_sqm], [metric:site_area_sqm], [metric:announced_key_area_total_sqm], [metric:building_footprint_area_sqm], [metric:building_footprint_ratio], [metric:green_space_area_sqm], [metric:green_ratio], [metric:public_space_area_sqm], [metric:public_space_ratio], [metric:civic_floor_length_m], [metric:making_line_length_m], [metric:key_area_count], [metric:land_use_zone_count], [metric:urban_room_count], [metric:east_west_stitch_count], [metric:scenario_count], [metric:ai_validation_scenario_count], [metric:persona_count], [metric:pilgrimage_landmark_count], [metric:renewal_project_count], [metric:global_case_count], [metric:adoption_core_count], [metric:workflow_stage_count], [metric:flagship_area_count], [metric:civic_product_type_count], [metric:four_clock_count], [metric:five_ledger_count], [metric:civic_adoption_dimension_count], [metric:annual_cycle_stage_count], [metric:land_use_research_ratio], [metric:land_use_culture_ratio], [metric:land_use_community_ratio], [metric:land_use_education_ratio], [metric:land_use_commercial_ratio], [metric:land_use_park_ratio].
+The Adoption Passport, five gates, three access levels, public safeguards, funding channels, first-100-day actions, and delivery packages are all represented as auditable counts. The narrative retains only representative claim-adjacent anchors. [metric:adoption_passport_schema_count] [metric:first_100_day_action_count] [metric:delivery_package_count] Complete definitions, formulas, source files, confidence, and assumptions remain in `metrics.json` so machine indexes do not obstruct professional reading.
 
 ## References and Machine-Readable Evidence
 
 This proposal embeds no third-party map tiles, photographs, brand graphics, or uncleared assets. The five proposal figures, A3 booklet, A0 boards, offline web pages, and design GeoJSON are original outputs of this submission. Public cases are used only for mechanism summaries with explicit limits. Verified Jing-Zhang history and contemporary design interpretation remain separate. The author's professional method does not imply endorsement by any institution or partner. [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
-All source references: [source:SITE-PACKAGE], [source:SOURCE-REGISTRY], [source:PROCESSED-FACT-PACK], [source:BOUNDARY-SOURCE], [source:KEY-AREA-SOURCE], [source:OFFICIAL-ANNOUNCEMENT], [source:AGENT-TASKBOOK], [source:JZ-HISTORY-BEIJING-CULTURE], [source:JZ-PARK-BEIJING-PARKS], [source:CASE-KENDALL-SQUARE], [source:CASE-ONE-NORTH], [source:CASE-SEOUL-AI-HUB], [source:CASE-STATION-F], [source:CASE-QUARTIER-SPECTACLES], [source:CASE-ARS-ELECTRONICA], [source:CASE-MARIA-01], [source:PEER-CATALOG-CURRENT], [source:AUTHOR-CULTURE-METHOD].
+Public task context and information-use boundaries are checked first against `brief/public-brief.md` and `brief/README.md`. Both are maintainer-provided public drafts: they support the open-call context and information boundary only, never replacing formal disclosure review, statutory planning, or official redlines. [source:brief-public-brief] [source:brief-public-boundary]
 
-All standard references: [standard:PROJECT-OFFICIAL-ANNOUNCEMENT], [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], [standard:MOHURD-URBAN-DESIGN-MEASURES], [standard:MOHURD-CONTROL-DETAILED-PLANNING], [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], [standard:MOHURD-ARCH-DESIGN-DEPTH-2016].
+Complete evidence is no longer repeated as long ID strings at the end of the narrative. Four structured files carry the audit layer:
 
-All professional-depth references: [depth:existing_conditions_diagnosis], [depth:three_level_scope_framework], [depth:overall_spatial_structure], [depth:land_use_layout], [depth:development_intensity_controls], [depth:height_massing_character], [depth:retain_renovate_demolish], [depth:traffic_rail_slow_parking], [depth:municipal_new_infrastructure], [depth:blue_green_public_space], [depth:three_key_area_detailed_design], [depth:renewal_project_list], [depth:phasing_implementation], [depth:metrics_recalculation], [depth:risk_missing_data].
+| Evidence layer | Complete record | Representative narrative anchor |
+| --- | --- | --- |
+| Source provenance, rights, dates, and use limits | `sources.json` | [source:SITE-PACKAGE] |
+| Mandatory-standard responses | `standard_matrix.json` | [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] |
+| Professional design-depth status | `design_depth_matrix.json` | [depth:risk_missing_data] |
+| Spatial objects, source types, confidence, and stable IDs | Nine GeoJSON layers | [data:geometry/site_boundary.geojson#SITE-001] |
 
-Machine-readable spatial references: [data:geometry/site_boundary.geojson#SITE-001], [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/land_use.geojson#LU-CIVIC-FLOOR], [data:geometry/buildings.geojson#BLDG-FOUNDRY-01], [data:geometry/roads.geojson#ROAD-CIVIC-FLOOR], [data:geometry/green_space.geojson#GREEN-CIVIC-FLOOR], [data:geometry/public_space.geojson#PUBLIC-SC-01], [data:geometry/phasing.geojson#PHASE-01].
+Reviewers can enter this evidence layer by scoring dimension through `visual/assets/review-evidence-index.json`. The narrative explains judgements; the structured files preserve complete auditability.

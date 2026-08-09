@@ -449,6 +449,115 @@
       "assumptions": [
         "概念设计比例，不是审定控规指标。"
       ]
+    },
+    "adoption_passport_schema_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/civic-adoption-passport.schema.json"
+      ],
+      "formula": "count(machine_readable_civic_adoption_passport_schemas)",
+      "confidence": "high",
+      "assumptions": [
+        "只表示概念协议结构完整，不表示政府许可、认证、部署或采用。"
+      ]
+    },
+    "adoption_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/civic-adoption-passport.schema.json",
+        "proposal.md"
+      ],
+      "formula": "count(G1_PUBLIC_NECESSITY..G5_ADOPT_RENEW_OR_EXIT)",
+      "confidence": "high",
+      "assumptions": [
+        "五道门是设计协议，不替代法定审批和专业审查。"
+      ]
+    },
+    "spatial_access_level_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/urban-room-control-code.json"
+      ],
+      "formula": "count(L1_CONTROLLED_VALIDATION,L2_CO_CREATION,L3_PUBLIC_PREMIERE)",
+      "confidence": "high",
+      "assumptions": [
+        "空间等级为概念性准入结构，不是法定分区。"
+      ]
+    },
+    "spatial_layer_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/urban-room-control-code.json"
+      ],
+      "formula": "count(permanent_public_baseline,reversible_civic_interface,time_limited_ai_service)",
+      "confidence": "high",
+      "assumptions": [
+        "空间层为性能与运营概念，不生成高度、退线、容量或工程结论。"
+      ]
+    },
+    "public_safeguard_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/assets/civic-adoption-passport.schema.json"
+      ],
+      "formula": "count(free_basic_service,non_ai_channel,staffed_override,field_accessibility,no_scan_bypass,complaint_and_restoration)",
+      "confidence": "medium",
+      "assumptions": [
+        "只表示方案规定的底线数量，真实可用性须现场测试。"
+      ]
+    },
+    "funding_channel_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(public_baseline,research_and_innovation,public_interest,disclosed_sponsorship,earned_revenue)",
+      "confidence": "medium",
+      "assumptions": [
+        "只表示资金责任类别，不表示已获资金、预算或投资承诺。"
+      ]
+    },
+    "first_100_day_action_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(A100-01..A100-05)",
+      "confidence": "medium",
+      "assumptions": [
+        "100天为概念行动窗口，不是政府工期或实施承诺。"
+      ]
+    },
+    "delivery_package_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-program.json",
+        "proposal.md"
+      ],
+      "formula": "count(PKG-01..PKG-06)",
+      "confidence": "medium",
+      "assumptions": [
+        "交付包是责任组合，不预设六个新机构、预算或采购。"
+      ]
     }
   }
 }
