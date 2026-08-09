@@ -28,8 +28,8 @@
     {
       "id": "A-BUILDINGS-001",
       "topic": "概念建筑体量",
-      "assumption_zh": "buildings.geojson 中573处基底为规模论证用概念体量（网格布点，层数为假设值）。",
-      "impact_zh": "总建筑规模与容积率为量级论证口径，非工程或法定方案。",
+      "assumption_zh": "buildings.geojson 中573处基底为同一原型网格布点的占位模型，仅用于规模量级论证，不代表建筑与街区形态意图（层数为假设值；47米进深原型不满足住宅日照进深，形态深化时按街块-街墙-院落重排）。",
+      "impact_zh": "总建筑规模与容积率为量级论证口径，非工程或法定方案；拆改留比例为占位模型上的策略口径。",
       "confidence": "medium",
       "required_official_data": "现状建筑普查与控规审定指标"
     },
