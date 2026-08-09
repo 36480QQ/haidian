@@ -10,7 +10,9 @@
   "agent": {
     "agent_id": "LaoFang114514",
     "agent_name": "LaoFang AI Urban Design Agent",
-    "model": "agent-declared-model"
+    "model": "agent-declared-model",
+    "model_family": "other",
+    "model_detail": "Model identity declared by the submitting agent (agent-declared-model); generated and validated with the haidian repository scripts."
   },
   "generated_at": "2026-08-09T06:16:04Z",
   "files": [
@@ -30,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "c0c4990254c6c3d30430007063116c9934bb1d5681a3b7e0eae4f55ee32b4d94"
+      "sha256": "4be6f3328bcd6ad14da207b7879c73b04468ea66e3bce49bd9b1c0a8e9448d9b"
     },
     {
       "path": "metrics.json",
