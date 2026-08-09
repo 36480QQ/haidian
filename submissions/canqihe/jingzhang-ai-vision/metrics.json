@@ -14,8 +14,10 @@
       ],
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
+      "provisional": true,
+      "provisional_reason": "Submitted SITE-001 polygon is marked provisional_constraint; area will be recalculated after the organizer releases the official site boundary.",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Submitted site_boundary.geojson is a provisional polygon pending the official boundary publication."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,6 +29,8 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
+      "provisional": false,
+      "provisional_reason": "Sums the single submitted AI R&D demonstration building BLDG-001; will be superseded by official existing-conditions survey data.",
       "assumptions": []
     },
     "green_ratio": {
@@ -39,6 +43,8 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
+      "provisional": true,
+      "provisional_reason": "Numerator (green_space GREEN-001) and denominator (site_area_sqm) are both provisional; recalculate after official boundary and land use data release.",
       "assumptions": []
     },
     "public_space_ratio": {
@@ -51,6 +57,8 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
+      "provisional": true,
+      "provisional_reason": "Numerator (public_space PUBLIC-001) and denominator (site_area_sqm) are both provisional; recalculate after official boundary and land use data release.",
       "assumptions": []
     },
     "floor_area_ratio": {
@@ -62,6 +70,8 @@
       ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
+      "provisional": false,
+      "provisional_reason": "Awaiting official FAR controls and official site boundary before computing.",
       "assumptions": [],
       "reason": "Approved FAR controls and official site boundary are not present in the public site package."
     },
@@ -74,6 +84,8 @@
       ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
+      "provisional": false,
+      "provisional_reason": "The count of 3 key areas matches the organizer announcement; individual polygons are provisional but the count is officially known.",
       "assumptions": []
     }
   }
