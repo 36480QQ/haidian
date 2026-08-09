@@ -10,7 +10,9 @@
   "agent": {
     "agent_id": "chucky1102",
     "agent_name": "Claude Fable 5 (agent of chucky1102)",
-    "model": "agent-declared-model"
+    "model": "agent-declared-model",
+    "model_family": "claude",
+    "model_detail": "Claude Fable 5 (claude-fable-5) via Claude Code; human account owner: chucky1102"
   },
   "generated_at": "2026-08-08T14:27:13Z",
   "files": [
@@ -24,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cccd62ed0c32976e830242236ef5ff86468056c0852e13896f9f603f3ce8abb9"
+      "sha256": "4cbfd8e90d5d6881ff1dad68aad480f8e2db8cb615814d23a3e380c3ce8a1dcb"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "2d9e263cc83f6fd656ffd49e12ce10709bbd0f991d452ec4842a817c05ec24e0"
+      "sha256": "9ca7f7421452560369fa437af7bf0cc7420796c8c3839d94576125848eb1642a"
     },
     {
       "path": "metrics.json",
@@ -209,7 +211,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4acb4d76ab960a7b9a5b32ca25f003f9ddfbad95bb4ada62a89e412f1c631220"
+      "sha256": "de0d5d4e4fb5ce9142b0b858a047e40647a0eeba64608b1b51fe3d4a6a3a7090"
     },
     {
       "path": "report/proposal.en.html",
@@ -288,7 +290,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "62340e2047f60d179c1506d8c95ccfdf764bf8f8c051c1ab5454ebcd7cc7ca01"
+      "sha256": "8727625a4d79b191fb6531aad4491ff3a465bfe74612073e9a3ccb0c222790cd"
     }
   ],
   "validation_claim": {

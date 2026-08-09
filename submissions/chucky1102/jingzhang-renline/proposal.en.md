@@ -5,7 +5,7 @@ language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking Zhan Tianyou's iconic switchback (人字形, the 'ren'-shaped alignment) of the Jing-Zhang Railway as the master concept: the switchback climbs by iteration — echoing backpropagation in AI training — while the character 人 ('human') anchors a human-centered AI district. The proposal sets out a spatial structure of one spine, two tracks and three switchback nodes with seven east-west stitching streets and ten K-mark waypoints, plus 12 AI scenario cards, 6 personas, 4 AI pilgrimage landmarks and a long-term event and operation system. All spatial content is conceptual, generated on provisional boundaries and to be fully recalculated once official redlines are released."
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
+tracks: ["robotics-autonomous-mobility", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v0.1"
 ---

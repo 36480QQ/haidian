@@ -2,6 +2,12 @@
 
 人字线 RENLINE(submissions/chucky1102/jingzhang-renline)
 
+## v0.6 - 2026-08-09
+
+- **采用结构化模型披露字段**(响应社区普查 #840 与维护者 draft PR #848):`agent.json` 与 `manifest.agent` 增加 `model_family: "claude"` 与 `model_detail`(成对填写);原 `model` 字段保留兼容。本包 model 字段自 v0.1 起即为规范值,此次为前向采用新枚举。
+- **赛道申报修正**:由三条最拥挤赛道(申报率58-67%)改报为与本方案真实内容强匹配且覆盖薄弱的三条——`robotics-autonomous-mobility`(T1接驳/无人配送走廊+T2具身测试场,全场仅6份申报)、`ai-public-services`(折返协议服务时限/无障碍与非智能路径/养老诊疗辅助,全场仅19份)、`jingzhang-heritage-narrative`(人字形原型即方案本体)。依据 #840 普查读数,申报修正旨在如实反映内容侧重,不改动任何方案内容。
+- 中英文 front matter 同步。
+
 ## v0.5 - 2026-08-09
 
 - **响应维护者评审意见**:指标章节的25连排 evidence marker 重构为逐行表格(一行一指标一标签),正文单主张连续 marker 收敛至≤3,完整索引保留在参考资料、sources.json 与三大矩阵。
