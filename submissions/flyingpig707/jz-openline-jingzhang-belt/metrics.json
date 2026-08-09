@@ -133,7 +133,23 @@
       "assumptions": [
         "A-SCENARIO-008"
       ],
-      "note_zh": "落图的 AI+ 场景节点数量；场景卡共 12 张，其中 14 处节点为空间锚点。"
+      "note_zh": "落图的 AI+ 场景节点数量；AI+ 场景卡共 10 张（见 ai_scenario_card_count），14 处节点为其中部分场景卡的多点位空间锚点。"
+    },
+    "ai_scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "visual/index.html",
+        "visual/index.en.html"
+      ],
+      "formula": "count(scenario_cards_enumerated_in_proposal_section_AI_scenario_cards_10)",
+      "confidence": "high",
+      "assumptions": [
+        "A-SCENARIO-008"
+      ],
+      "note_zh": "AI+ 场景卡数量；详见 proposal.md 'AI+ 场景卡（10 张）' 章节；14 处场景节点（scenario_node_count）为其空间锚点。"
     },
     "renewal_project_count": {
       "status": "known",
