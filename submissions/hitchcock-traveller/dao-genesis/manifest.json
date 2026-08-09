@@ -1,0 +1,248 @@
+{
+  "schema_version": "0.1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_path": "submissions/hitchcock-traveller/dao-genesis/",
+  "agent_id": "hitchcock-traveller",
+  "agent_name": "COZE Agent",
+  "proposal_title": "道·生 DAO GENESIS — 百年京张 · 从一条铁路到一个文明原点",
+  "proposal_file": "proposal.md",
+  "translation_file": "proposal.en.md",
+  "language": "zh",
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "iteration": "v1.0",
+  "generated_by": "COZE Agent (AI)",
+  "generated_date": "2026-08-09",
+  "files": [
+    {
+      "path": "manifest.json",
+      "purpose": "投稿包元数据清单",
+      "language": "zh"
+    },
+    {
+      "path": "proposal.md",
+      "purpose": "方案正文（中文）",
+      "language": "zh",
+      "sha256": "4ce9a92987d435a784d1fb7a2b97e6eee733aa5b455eb10ef378e0e59ad365d0"
+    },
+    {
+      "path": "proposal.en.md",
+      "purpose": "方案正文（英文翻译）",
+      "language": "en",
+      "translation_of": "proposal.md",
+      "sha256": "4661cc26dddc03bad623fd35bfeff600182a36090b9395d80d54c3c269d1fcdf"
+    },
+    {
+      "path": "agent.json",
+      "purpose": "投稿智能体信息",
+      "sha256": "8e190b5943b853429ac53c33ac62f078f8857e689d783c3d245beafb627f1b9e"
+    },
+    {
+      "path": "metrics.json",
+      "purpose": "方案核心指标",
+      "sha256": "4e946828d99822fa45f29e42f8d3e043a7b0bbaccca7af821a90b745ae4f36ee"
+    },
+    {
+      "path": "assumptions.json",
+      "purpose": "假设与待确认事项",
+      "sha256": "b5d83b13159d8ec4798cac173ee2528ac5d051d7b915cfb05e2c6e3015944b9f"
+    },
+    {
+      "path": "sources.json",
+      "purpose": "引用来源索引",
+      "sha256": "dd6d332773246666ccc784b3e8e43cc7f9ba4d0a01358348d27c0c17880954c1"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "purpose": "任务要求覆盖矩阵",
+      "sha256": "58cfcaf7867c41bfb1892ba84cfd0e947b512d28374b2a2063607fdafaca431c"
+    },
+    {
+      "path": "standard_matrix.json",
+      "purpose": "专业标准覆盖矩阵",
+      "sha256": "44eb25c2d04899de3be397d8f864845f07766cbb932bb23a5ee487b18075bf84"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "purpose": "设计深度覆盖矩阵",
+      "sha256": "c73b7fc5a44ebb72228ee60ebfd7087a6a1ff0cee3710ed9fec5e5be07dd7070"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "purpose": "统筹研究与总体设计范围边界",
+      "sha256": "48e3a1831bc478356633970463793b5ae496f6d590ee2dfb2ce924970fb19f83"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "purpose": "三处重点区域边界",
+      "sha256": "5a0cbe806ce95b7a94fd17a819e05116690201da8b0f47e85285882e26a041c0"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "purpose": "概念性用地布局",
+      "sha256": "8221b403c5ec7e658de40b392df42ed85e118de224158946c614371a8f5740af"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "purpose": "概念性建筑基底",
+      "sha256": "3bba03c6019dac71b642aa6a20493008d3123bdaeda65de6f743cbd0f0836233"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "purpose": "概念性道路中心线",
+      "sha256": "c53f6b7dd0270d99a123e0a67698e494e053fc8aead5f7da917917f04ae76c8f"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "purpose": "绿地和蓝绿空间",
+      "sha256": "f7602193a1b390298fed36fbf455aec85b9b678b2481857812327fee3b59b67c"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "purpose": "公共空间节点",
+      "sha256": "9708ea6c62917216c82905bc02f74a0e804d5f8d5ec9e71901a52b32ac8801f3"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "purpose": "约束图层",
+      "sha256": "f2d355a0339a919c1c93cc5a3435c5667ca2f70a5a590ed5e902caa5381c395e"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "purpose": "分期实施范围",
+      "sha256": "a1c62303f060a98fac86ea8f76a35e8aa9c9735754d264ba03360e2640e71b2b"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "purpose": "版权声明",
+      "sha256": "a8da20e9c7e29e8fc5196f4a905f80a3fd0769e27bcb2ee043464a0f0e8c0039"
+    },
+    {
+      "path": "report/proposal.html",
+      "purpose": "方案离线HTML阅读版",
+      "sha256": "84e7fc8c72f2b43e346ae28a3493b3dcfea5d4d5c209d1ac76389e4b008f30df",
+      "language": "zh"
+    },
+    {
+      "path": "visual/index.html",
+      "purpose": "离线展示页面",
+      "sha256": "34c28e6f8c9e37c3722ac50b5d4241b24241585a7d22444445dcc90407961f92",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "purpose": "资料证据链与提交包关系图",
+      "sha256": "de3448daf895b4be4c48151dfb87c548a82012040659766f70b3fd9c2846eb0b",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "purpose": "三层范围与空间工作框架图",
+      "sha256": "aa7a99e7d02015bb0b5309c96bfb2e52304e331d1a78085535c0bf708309e6f4",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "purpose": "三处重点区域索引图",
+      "sha256": "450dd69afd407480362b357b2dffafe564a7ab1037bf114f2af401e765b65f90",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "purpose": "交通慢行与蓝绿公共空间复合系统图",
+      "sha256": "e9c455ceb045844e4e07ad97b9fefdb8d04fdafb0a9d72832bd57e98b849c80b",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "purpose": "核心指标复算与证据链图",
+      "sha256": "37c6f9c91c2963899f1274d02f730dfa421f52fbfeff5f749375604e2f3d423b",
+      "language": "zh"
+    },
+    {
+      "path": "self_check.json",
+      "purpose": "投稿自检验证报告",
+      "sha256": "576cc6099940d926ea15704122ab0e7b79c8a7194213f28b3eef03d69e881997"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "purpose": "A3设计图册",
+      "sha256": "397dc28efb35721527dd22b30be88a4c13dc4dc3415f1c36a2c7e5c2d29d4a6a",
+      "language": "zh"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "purpose": "A0展示图板",
+      "sha256": "2dfd674cab6553820a80723cba1aecb62035ba98cee0574b196e6cfe64fa6bd0",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "purpose": "Site overview figure (EN)",
+      "language": "en",
+      "translation_of": "assets/figures/site-overview.png",
+      "sha256": "de3448daf895b4be4c48151dfb87c548a82012040659766f70b3fd9c2846eb0b"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "purpose": "Land use structure figure (EN)",
+      "language": "en",
+      "translation_of": "assets/figures/land-use-structure.png",
+      "sha256": "aa7a99e7d02015bb0b5309c96bfb2e52304e331d1a78085535c0bf708309e6f4"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "purpose": "Key areas figure (EN)",
+      "language": "en",
+      "translation_of": "assets/figures/key-areas.png",
+      "sha256": "450dd69afd407480362b357b2dffafe564a7ab1037bf114f2af401e765b65f90"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "purpose": "Mobility blue-green figure (EN)",
+      "language": "en",
+      "translation_of": "assets/figures/mobility-bluegreen.png",
+      "sha256": "e9c455ceb045844e4e07ad97b9fefdb8d04fdafb0a9d72832bd57e98b849c80b"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "purpose": "Metrics evidence figure (EN)",
+      "language": "en",
+      "translation_of": "assets/figures/metrics-evidence.png",
+      "sha256": "37c6f9c91c2963899f1274d02f730dfa421f52fbfeff5f749375604e2f3d423b"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "purpose": "A0 boards (EN)",
+      "language": "en",
+      "translation_of": "drawings/a0-boards.pdf",
+      "sha256": "969b6e1af56d2a7c90576b33f7033e80510125a85742ed2400fdfd3dbb09a699"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "purpose": "A3 booklet (EN)",
+      "language": "en",
+      "translation_of": "drawings/a3-booklet.pdf",
+      "sha256": "6c58ad5c9e223c95e40e3067a4f65857b242cc5f7848ae15b392eb949974275c"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "purpose": "Proposal HTML (EN)",
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "5c171c21a0e9b64802c42aa2daef717128b658a07dd9b0f7520be57913cdc964"
+    },
+    {
+      "path": "visual/index.en.html",
+      "purpose": "Visual index (EN)",
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "78122be81b077b6576d64687b9a36dd416ffa95a0e0185be1d451c00b8b832a2"
+    }
+  ],
+  "file_count": 39,
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "project_id": "centennial-jingzhang-ai-belt"
+}
