@@ -20,6 +20,27 @@ const contractGateIds = new Set(contract.gate_ids || []);
 const fixtureIds = new Set((contract.fixtures || []).map((fixture) => fixture.id));
 const scenarioIds = new Set((scenarioMatrix.rows || []).map((row) => row.scenario_id));
 const declaredCheckIds = new Set((contract.acceptance_checks || []).map((item) => item.id));
+const negativeReplay = contract.negative_replay || [];
+
+function replayStopPath(fixture, replay) {
+  const firesStopIf = replay.fixture_id === fixture.id &&
+    replay.trigger_input &&
+    replay.stop_if_token === fixture.stop_if &&
+    replay.fires_stop_if === true;
+  return {
+    fixture_id: fixture.id,
+    trigger_input: replay.trigger_input,
+    fires_stop_if: firesStopIf,
+    decision: firesStopIf ? 'reject_or_stop' : 'continue',
+    result_status: firesStopIf ? 'not_run' : 'unknown',
+    performance_results: firesStopIf ? null : 'not_evaluated'
+  };
+}
+
+const negativeReplayResults = contract.fixtures.map((fixture) => {
+  const replay = negativeReplay.find((item) => item.fixture_id === fixture.id) || {};
+  return replayStopPath(fixture, replay);
+});
 
 check(
   'gate-linkage',
@@ -129,6 +150,41 @@ check(
   'five non-empty rollback steps'
 );
 check(
+  'negative-replay-coverage',
+  negativeReplay.length === contract.fixtures.length &&
+    new Set(negativeReplay.map((item) => item.fixture_id)).size === contract.fixtures.length &&
+    negativeReplay.every((item) => fixtureIds.has(item.fixture_id)),
+  negativeReplay.map((item) => item.fixture_id),
+  [...fixtureIds]
+);
+check(
+  'negative-replay-rejects',
+  negativeReplayResults.every((item) =>
+    item.fires_stop_if &&
+    item.decision === 'reject_or_stop' &&
+    item.result_status === 'not_run' &&
+    item.performance_results === null
+  ),
+  negativeReplayResults,
+  'every synthetic stop-if input rejects or stops without producing performance'
+);
+check(
+  'negative-replay-evidence',
+  evidence.negative_replay_replayed === negativeReplayResults.length &&
+    evidence.rejection_path_observed === true &&
+    Array.isArray(evidence.negative_replay) &&
+    evidence.negative_replay.every((item) =>
+      item.decision === 'reject_or_stop' &&
+      item.result_status === 'not_run' &&
+      item.performance_results === null
+    ),
+  {
+    negative_replay_replayed: evidence.negative_replay_replayed,
+    rejection_path_observed: evidence.rejection_path_observed
+  },
+  'evidence receipt records all four synthetic rejection paths'
+);
+check(
   'ordinary-route-continuity',
   contract.fixtures.some((fixture) =>
     fixture.id === 'ordinary_curb_audit' &&
@@ -202,6 +258,9 @@ const output = {
   acceptance_checks_defined: contract.acceptance_checks.length,
   checks_executed: checks.length,
   rollback_steps: contract.rollback_steps.length,
+  negative_replay_replayed: negativeReplayResults.length,
+  rejection_path_observed: negativeReplayResults.every((item) => item.decision === 'reject_or_stop'),
+  negative_replay: negativeReplayResults,
   result_status: contract.boundary.result_status,
   operational_status: contract.operational_status,
   performance_results: contract.boundary.performance_results,

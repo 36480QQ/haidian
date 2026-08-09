@@ -9,6 +9,38 @@
   "fixtures_replayed": 4,
   "acceptance_checks_defined": 7,
   "rollback_steps_defined": 5,
+  "negative_replay_replayed": 4,
+  "rejection_path_observed": true,
+  "negative_replay": [
+    {
+      "fixture_id": "ordinary_curb_audit",
+      "trigger_input": "main_access_chain_break",
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "accessible_route_obstruction",
+      "trigger_input": "accessible_route_remains_blocked",
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "equivalent_service_worse",
+      "trigger_input": "no_equivalent_human_service_available",
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "network_weather_rollback",
+      "trigger_input": "vehicle_or_robot_cannot_safely_enter_manual_service",
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    }
+  ],
   "field_data": false,
   "performance_results": null,
   "baselines": "unknown",

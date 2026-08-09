@@ -12,6 +12,7 @@
 - Clarified the bilingual first-screen acceptance brief as target design only: planned service interfaces and stop controls are not deployed, authorized or independently verified. No geometry, metric, permit, deployment or performance claim changed.
 
 - Added structural trace checks to the curbside tabletop runner: acceptance checks now bind to concrete fixtures, gates and scenario-matrix rows, while artifact identifiers, counts, boundary fields and rollback declarations reconcile before a local PASS is emitted. This remains an offline synthetic consistency check; it adds no field, permit, performance or deployment claim.
+- Added four deterministic synthetic negative replays, one per stop-if fixture; the runner now records and verifies `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
 
 - Added a bilingual, offline synthetic curbside tabletop bound to AV-T01—T03 and S01—S03, with four fixtures, seven acceptance checks, five rollback steps and an executable network-free runner.
 - Kept the evidence boundary explicit: `not_authorized_not_run`, no field data, `performance_results: null`, and unknown baselines; the tabletop proves control wiring only and does not claim a permit, deployment, safety assessment or performance result.

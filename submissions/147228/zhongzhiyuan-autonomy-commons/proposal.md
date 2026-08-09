@@ -30,7 +30,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 遇到阻断、断网或天气异常 | 设计中的隔离区、回退路线与纸面/电话兜底 | 触发、广播、撤离、恢复记录 | 保持 human-only，不扩容 |
 | 请求方自助复演与退出（非第三方核验） | 计划中的凭证、申诉入口与退出标识 | 请求方复演结果、未证明事项、关闭记录 | 不能复演则退回设计阶段 |
 
-当前只具备离线合成 tabletop：4 个分支、7 个契约验收项和 5 个回退步骤；它证明控制链可读、可复演，不证明现场安全、许可、部署或性能。`not_authorized_not_run`、`performance_results=null` 和待补本地基线继续有效 [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001]。
+当前只具备离线合成 tabletop：4 个分支、7 个契约验收项、5 个回退步骤，以及针对四个 `stop_if` 的合成负回放。每条负回放都把触发输入送入纯判定路径，并记录 `decision=reject_or_stop`、`result_status=not_run`、`performance_results=null`；它证明拒绝/停止链路在契约层可复演，不证明现场安全、许可、部署或性能。`not_authorized_not_run`、`performance_results=null` 和待补本地基线继续有效 [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001]。
 
 **验收项快速映射（供逐项核对）**
 

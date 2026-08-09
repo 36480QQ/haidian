@@ -102,6 +102,44 @@
     "evacuate or isolate the affected curb and log human review",
     "restore ordinary service only after recovery evidence and named approval"
   ],
+  "negative_replay": [
+    {
+      "fixture_id": "ordinary_curb_audit",
+      "trigger_input": "main_access_chain_break",
+      "stop_if_token": "irreplaceable_break_in_main_access_chain",
+      "fires_stop_if": true,
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "accessible_route_obstruction",
+      "trigger_input": "accessible_route_remains_blocked",
+      "stop_if_token": "accessible_route_remains_blocked",
+      "fires_stop_if": true,
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "equivalent_service_worse",
+      "trigger_input": "no_equivalent_human_service_available",
+      "stop_if_token": "no_equivalent_human_service_available",
+      "fires_stop_if": true,
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    },
+    {
+      "fixture_id": "network_weather_rollback",
+      "trigger_input": "vehicle_or_robot_cannot_safely_enter_manual_service",
+      "stop_if_token": "vehicle_or_robot_cannot_safely_enter_manual_service",
+      "fires_stop_if": true,
+      "decision": "reject_or_stop",
+      "result_status": "not_run",
+      "performance_results": null
+    }
+  ],
   "boundary": {
     "result_status": "not_run",
     "performance_results": null,

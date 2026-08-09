@@ -30,7 +30,7 @@ The first reversible acceptance unit is not “make the vehicle run.” It lets 
 | Meet obstruction, network loss or weather | Planned isolation zone, rollback route and paper/phone fallback | Trigger, broadcast, evacuation and recovery record | Remain human-only; do not expand |
 | Requester self-service replay and exit (not third-party verified) | Planned receipt, redress entrance and exit sign | Requester replay result, unproven items and closure record | Return to design stage if it cannot be replayed |
 
-The package currently has only an offline synthetic tabletop: four branches, seven contract checks and five rollback steps. It proves that the control chain is readable and replayable, not field safety, authorization, deployment or performance. `not_authorized_not_run`, `performance_results=null` and the missing local baselines remain explicit [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001].
+The package currently has only an offline synthetic tabletop: four branches, seven contract checks, five rollback steps, and one synthetic negative replay for each `stop_if`. Each negative replay sends a trigger input through a pure decision path and records `decision=reject_or_stop`, `result_status=not_run`, and `performance_results=null`; it proves that the rejection/stop path is replayable at contract level, not field safety, authorization, deployment, or performance. `not_authorized_not_run`, `performance_results=null`, and the missing local baselines remain explicit [data:visual/assets/autonomy-curbside-tabletop-contract.json#AUTONOMY-CURBSIDE-TABLETOP-001].
 
 **Acceptance trace quick map (for item-by-item review)**
 
