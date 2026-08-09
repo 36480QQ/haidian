@@ -36,6 +36,197 @@
     "privacy",
     "human_service"
   ],
+  "model_spec": {
+    "model_class": "deterministic_multi_agent_queue_network_sandbox",
+    "status": "illustrative_configuration_and_synthetic_run_not_local_baseline",
+    "time_step_seconds": 60,
+    "horizon_minutes": 120,
+    "random_seed": 147228,
+    "privacy_rule": "grouped_OD_and_aggregate_occupancy_only; no_personal_trajectory",
+    "agent_types": [
+      {
+        "id": "resident",
+        "design_unit_count": 380,
+        "demand_states": ["daily_service", "care_trip", "night_return"],
+        "equity_weight": "high"
+      },
+      {
+        "id": "enterprise_employee",
+        "design_unit_count": 450,
+        "demand_states": ["peak_arrival", "peak_departure", "shuttle_transfer"],
+        "equity_weight": "medium"
+      },
+      {
+        "id": "carer_or_child",
+        "design_unit_count": 60,
+        "demand_states": ["accompanied_access", "school_or_care_stop"],
+        "equity_weight": "high"
+      },
+      {
+        "id": "visitor",
+        "design_unit_count": 50,
+        "demand_states": ["wayfinding", "event_arrival"],
+        "equity_weight": "medium"
+      },
+      {
+        "id": "logistics_and_maintenance",
+        "design_unit_count": 40,
+        "demand_states": ["loading", "service_window"],
+        "equity_weight": "high"
+      },
+      {
+        "id": "night_worker",
+        "design_unit_count": 20,
+        "demand_states": ["late_return", "low_frequency_transit"],
+        "equity_weight": "high"
+      }
+    ],
+    "fleet_and_service_objects": [
+      {
+        "id": "metro_train",
+        "mode": "metro",
+        "vehicle_capacity_persons": 180,
+        "headway_minutes": 10,
+        "dwell_minutes": 2,
+        "service_state": "capacity_and_platform_audit_required"
+      },
+      {
+        "id": "bus_vehicle",
+        "mode": "bus",
+        "vehicle_capacity_persons": 60,
+        "headway_minutes": 12,
+        "dwell_minutes": 1,
+        "service_state": "route_and_stop_capacity_audit_required"
+      },
+      {
+        "id": "bicycle_parking",
+        "mode": "bicycle",
+        "capacity_spaces": 160,
+        "turnover_minutes": 15,
+        "service_state": "parking_and_conflict_audit_required"
+      },
+      {
+        "id": "car_vehicle_and_curb",
+        "mode": "car",
+        "vehicle_capacity_persons": 4,
+        "curb_service_capacity_vehicles_per_15min": 20,
+        "service_state": "loading_parking_and_emergency_priority"
+      },
+      {
+        "id": "walk_wheelchair_stream",
+        "mode": "walking_wheelchair",
+        "service_capacity_persons_per_minute": 6,
+        "service_state": "continuous_accessibility_audit_required"
+      },
+      {
+        "id": "air_candidate",
+        "mode": "air_candidate",
+        "service_capacity_persons": null,
+        "service_state": "blocked_until_airspace_airworthiness_operator_and_safety_review"
+      }
+    ],
+    "state_variables": [
+      "time",
+      "agent_group",
+      "location_node",
+      "mode",
+      "queue_length",
+      "vehicle_occupancy",
+      "transfer_status",
+      "curb_state",
+      "conflict_flag",
+      "accessible_route_flag"
+    ],
+    "events": [
+      "boundary_arrival",
+      "station_gate",
+      "metro_boarding",
+      "bus_boarding",
+      "bicycle_parking",
+      "curb_loading_or_dropoff",
+      "pedestrian_vehicle_crossing",
+      "mode_transfer",
+      "weather_cancel_and_ground_fallback",
+      "emergency_preemption"
+    ],
+    "outputs": [
+      "mean_and_peak_queue_by_mode",
+      "metro_and_bus_load_ratio",
+      "transfer_reliability",
+      "curb_service_compliance",
+      "people_vehicle_conflict_rate",
+      "external_car_inflow_ratio",
+      "worst_group_gap_points",
+      "ground_fallback_recovery_time"
+    ],
+    "calibration_inputs": [
+      "dated_grouped_external_OD",
+      "metro_station_and_bus_stop_capacity",
+      "train_and_bus_headways",
+      "signal_timings_and_crossings",
+      "bicycle_parking_inventory",
+      "curb_queue_observations",
+      "wheelchair_route_audit",
+      "weather_and_emergency_protocol"
+    ]
+  },
+  "model_analysis": {
+    "analysis_class": "transparent_synthetic_queue_run",
+    "input_note": "The following values are produced from the declared normalized design unit and service objects; they are not observed Haidian measurements.",
+    "mode_demand_by_scenario": {
+      "S0_peak_unmanaged": {
+        "metro": 420,
+        "bus": 170,
+        "bicycle": 90,
+        "walking_wheelchair": 100,
+        "car": 180,
+        "enterprise_shuttle": 40
+      },
+      "S1_multimodal_curb_transfer": {
+        "metro": 450,
+        "bus": 190,
+        "bicycle": 140,
+        "walking_wheelchair": 120,
+        "car": 60,
+        "enterprise_shuttle": 40
+      },
+      "S3_weather_ground_fallback": {
+        "metro": 430,
+        "bus": 180,
+        "bicycle": 100,
+        "walking_wheelchair": 120,
+        "car": 130,
+        "enterprise_shuttle": 40
+      }
+    },
+    "derived_readouts": [
+      {
+        "scenario_id": "S0_peak_unmanaged",
+        "peak_car_curb_queue_vehicles": 86,
+        "metro_station_gate_load_ratio": 1.05,
+        "bus_peak_load_ratio": 0.92,
+        "mean_transfer_wait_minutes": 14.2,
+        "status": "illustrative_reference"
+      },
+      {
+        "scenario_id": "S1_multimodal_curb_transfer",
+        "peak_car_curb_queue_vehicles": 0,
+        "metro_station_gate_load_ratio": 0.88,
+        "bus_peak_load_ratio": 0.79,
+        "mean_transfer_wait_minutes": 7.4,
+        "status": "design_candidate_subject_to_local_calibration"
+      },
+      {
+        "scenario_id": "S3_weather_ground_fallback",
+        "peak_car_curb_queue_vehicles": 47,
+        "metro_station_gate_load_ratio": 0.96,
+        "bus_peak_load_ratio": 0.86,
+        "mean_transfer_wait_minutes": 10.6,
+        "status": "illustrative_ground_fallback"
+      }
+    ],
+    "interpretation": "The sandbox suggests where coordination matters: station gates and curb service dominate the unmanaged peak, while a ground-first multimodal candidate lowers modeled queues and transfer wait in the normalized unit. These are design sensitivities, not local performance claims."
+  },
   "scenarios": [
     {
       "id": "S0_peak_unmanaged",

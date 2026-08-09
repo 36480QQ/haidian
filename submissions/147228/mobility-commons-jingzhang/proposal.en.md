@@ -96,7 +96,12 @@ If an air-mobility experiment becomes eligible, it remains a controlled add-on t
 
 Before field OD, station capacity, signals, people flow and curb counts exist, `visual/assets/movement-simulation.json` runs an interpretable 1,000-person normalized design unit: S0 unmanaged peak, S1 multimodal curb coordination, S2 air candidate blocked by regulatory gates, and S3 ground fallback in extreme weather. S1 is only a provisional design candidate after the proposed hard-gate screen; generalized cost, transfer reliability, people-flow conflicts, external-car inflow, worst-group gap and energy are illustrative inputs, not current Haidian performance. The board exposes the chain: hard gates first, Pareto comparison second, local calibration last [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION].
 
+The model objects are explicit rather than being a mode checklist: the 1,000-person design unit contains 380 residents, 450 enterprise employees, 60 carers/children, 50 visitors, 40 logistics or maintenance workers and 20 night-shift workers. The network models metro trains (180 persons per vehicle, 10-minute headway), buses (60 persons per vehicle, 12-minute headway), bicycle parking, car curb service, a continuous walking/wheelchair stream and an air candidate held behind a gate. At 60-second steps it records location, mode, queue, vehicle occupancy, transfer status, curb state, conflicts and accessibility flags, then reports peak queues, station/vehicle load, transfer wait, car curb queues and worst-group gaps; the values in `model_analysis.derived_readouts` are synthetic sensitivity outputs from the declared inputs, not field observations [source:SUMO-MULTIMODAL-SIMULATION] [metric:mode_transfer_reliability].
+
+In this normalized sandbox, the unmanaged peak produces a modeled peak curb queue of 86 cars and a station-gate load ratio of 1.05; the multimodal curb candidate produces 0 cars and 0.88; the weather ground fallback produces 47 cars and 0.96. This points to station gates, bus-stop capacity, curb service and accessible crossings as the first calibration targets, not to a construction conclusion. Dated cross-boundary OD, headways, sections, parking, conflicts and fire/accessibility review must replace the design inputs before rerunning or claiming performance.
+
 ![Design-scenario simulation: gates, trade-offs and calibration plan](assets/figures/simulation-pareto.en.png)
+![Multimodal model objects: residents, vehicles, metro and analysis outputs](assets/figures/model-objects.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -116,11 +121,11 @@ The package separates file-readable geometry, unknown local baselines and pilot 
 
 Pilot targets are not current outcomes: accessible-route completion at least 0.95, transfer reliability at least 0.85, curb-window compliance at least 0.90, a first complaint response within four hours and a status update within 24 hours [metric:accessible_route_completion_ratio] [metric:first_last_mile_transfer_reliability] [metric:curb_time_window_compliance_ratio] [metric:mobility_service_complaint_closure_hours]. Five gates cover authoritative geometry, consented demand, safety, responsibility and equity. The compliance, standards and design-depth matrices bind these claims to the proposal, GeoJSON, drawings and self-check [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:metrics_recalculation] [depth:risk_missing_data].
 
-![Enterprise–resident mobility overview with three key areas and five gates](assets/figures/site-overview.png)
-![Two-sided demand registers and time-windowed land-use structure](assets/figures/land-use-structure.png)
-![Key-area mobility roles and curb service levels](assets/figures/key-areas.png)
-![Metro, bus, bicycle, walking, car, people flow and conditional air experiment](assets/figures/mobility-bluegreen.png)
-![Multimodal simulation, external commuting, people flow and efficiency evidence dashboard](assets/figures/metrics-evidence.png)
+![Enterprise–resident mobility overview with three key areas and five gates](assets/figures/site-overview.en.png)
+![Two-sided demand registers and time-windowed land-use structure](assets/figures/land-use-structure.en.png)
+![Key-area mobility roles and curb service levels](assets/figures/key-areas.en.png)
+![Metro, bus, bicycle, walking, car, people flow and conditional air experiment](assets/figures/mobility-bluegreen.en.png)
+![Multimodal simulation, external commuting, people flow and efficiency evidence dashboard](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
