@@ -72,13 +72,13 @@ iteration: "v0.1"
 
 | # | 场景卡 | 空间锚点 | 服务对象 | 隐私边界与人工复核 |
 | --- | --- | --- | --- | --- |
-| T1 | 绿脊自动接驳微巴(测试验证) | 绿道侧运营道 K2-K8 段 | 通勤者/访客 | 不采集人脸;轨迹数据脱敏;安全员全程值守,事故人工接管 |
+| T1 | 绿脊自动接驳与无人配送走廊(测试验证) | 绿道侧运营道 K2-K8 段 | 通勤者/访客/沿线商户 | 白天载人微巴、夜间时段无人配送共用同一运营道分时运行;不采集人脸;轨迹脱敏;安全员值守/远程监管,事故人工接管 |
 | T2 | 具身机器人开放测试场(测试验证) | 众智园南区围合场地 | 产业工程师 | 封闭场地内测试;对外直播须打码;伦理委员会准入审查 |
 | T3 | 市政设施AI体检(测试验证) | 大钟寺存量街区 | 市政运营方 | 仅采集设施状态数据;不涉个人数据;检修决策人工签发 |
 | 4 | K标AR历史层 | K0-K9 里程碑 | 访客/青少年 | 端侧渲染,不上传影像;内容由文史专家审定 |
 | 5 | 开发者街面 | 原点社区沿街首层 | 开发者 | 工位预约实名但展示匿名;经营数据聚合公开 |
 | 6 | 多语言AI导览与无障碍副驾 | 全带绿道与站点 | 国际访问者/障碍人士 | 语音本地处理;路径推荐可解释;人工客服兜底 |
-| 7 | 社区养老AI陪伴与应急响应 | 北下关宜居更新区 | 长者 | 明确知情同意;仅紧急事件上报;家属与社工双复核 |
+| 7 | 社区养老AI陪伴与基层诊疗辅助 | 北下关宜居更新区 | 长者/慢病居民 | AI仅作预诊提示、用药提醒与转诊建议,诊疗决定由执业医师做出;明确知情同意;仅紧急事件上报;家属与社工双复核 |
 | 8 | 校企双向实习智能体匹配 | 学院路高校开放带 | 学生/企业 | 简历数据学生自持;匹配理由可解释;录用决定由人做出 |
 | 9 | 夜间经济智能治理 | 五道口智能消费区 | 商户/居民 | 只用聚合人流与噪声数据;管控措施需属地会商 |
 | 10 | 智能体市集 | 原点广场(K5) | 开发者/公众 | 上架智能体须备案与内容审核;交易纠纷人工仲裁 |
@@ -105,7 +105,7 @@ iteration: "v0.1"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统 [depth:blue_green_public_space] 以京张遗址公园绿脊为主干([metric:green_ratio] 复算绿地率约13.5%,该值仅含方案绿地图层,不含现状其他绿地)。绿脊不是从零画起的愿景:京张铁路遗址公园五道口启动区已于2019年9月开放,一期(知春路至清华东路,约2.5公里)已于2023年6月29日建成开放 [source:JZ-PARK-PUBLIC]——本方案的"一脊"正是把这段建成现实向南(大钟寺方向)、向北(众智园方向)延伸贯通,属于在既有公共投资上的增量设计而非推倒重来。两处口袋公园(皂君庙、学清路)补充社区级绿地 [data:geometry/green_space.geojson#GS-PKT-1];北望清河、东纳小月河的蓝绿衔接为概念方向(两河均在本包边界外,衔接段待统筹研究层深化)。公共空间系统由绿脊步廊(与绿地复合)与五处广场组成([metric:public_space_ratio] 复算约5.3%):钟声广场(K1)、知春折返广场(K4)、原点广场(K5)、学院路缝合广场(K7)、登顶广场(K9) [data:geometry/public_space.geojson#PS-PLZ-5],它们既是K标体系的锚点,也是活动运营的舞台。
+蓝绿系统 [depth:blue_green_public_space] 以京张遗址公园绿脊为主干([metric:green_ratio] 复算绿地率约13.5%,该值仅含方案绿地图层,不含现状其他绿地)。绿脊不是从零画起的愿景:京张铁路遗址公园五道口启动区已于2019年9月开放,一期(知春路至清华东路,约2.5公里)已于2023年6月29日建成开放 [source:JZ-PARK-PUBLIC]——本方案的"一脊"正是把这段建成现实向南(大钟寺方向)、向北(众智园方向)延伸贯通,属于在既有公共投资上的增量设计而非推倒重来。两处口袋公园(皂君庙、学清路)补充社区级绿地 [data:geometry/green_space.geojson#GS-PKT-1];北望清河、东纳小月河的蓝绿衔接为概念方向(两河均在本包边界外,衔接段待统筹研究层深化)。公共空间系统由绿脊步廊(与绿地复合)与五处广场组成([metric:public_space_ratio] 复算约5.3%):钟声广场(K1)、知春折返广场(K4)、原点广场(K5)、学院路缝合广场(K7)、登顶广场(K9) [data:geometry/public_space.geojson#PS-PLZ-5],它们既是K标体系的锚点,也是活动运营的舞台。活力带的日常性以**青年友好**为第一标尺(回应公告"青年友好"要求):五道口夜间经济、京张AI马拉松与折返徽章、开发者街面的平价工位、K标科普驿、生活轨的人才公寓与深夜食堂共同构成"白天写代码、傍晚跑绿脊、晚上有去处、住得起附近"的青年生活闭环;全部公共空间组件按无障碍与非智能手机路径同步设计,青年友好不以排斥其他人群为代价。
 
 **AI公共空间与朝圣地标(回应 agent.4,[metric:ai_landmark_count])。**①**原点碑·AI零公里碑**(原点广场K5):中国AI的"零公里"标,实体碑+动态荣誉墙,滚动展示开源模型、数据集与论文贡献者名录(仅收录本人同意且开源许可允许的署名);②**人字塔**(登顶广场):双轨交汇的观景塔,塔内为全球AI里程碑时间线展廊,塔顶北望燕山——当年京张铁路要翻越的方向;③**钟声博物馆×AI编钟**(大钟寺):百年钟声与生成音乐共创,每年重大开源发布举行"敲钟仪式",把金融市场的钟声转译为开源社区的礼仪;④**折返桥**(知春折返广场):跨13号线人行桥,桥面镌刻经授权的标志性开源代码片段与论文题录。荣誉展示体系=K标里程碑+贡献者名录+年度"人字奖";与之对偶,v0.3 增设**折返档案**——在原点碑荣誉墙背面设"折返墙",公开展示已终止或退回的场景与项目:为何折返、谁受影响、修复了什么、下次爬升怎么不同。人字形折返的本义就是"退一步再爬升";在AI的语言里,这就是城市的反向传播——误差被公开回传,成为下一次迭代的输入。荣誉墙(正向)与折返墙(负向)共同构成完整的公共学习闭环(失败留痕机制方向致谢 leeight/jingzhang-calibration-yard 的失败档案馆与 wuji-labs/open-spine-city 的公共回应账本,本方案作独立的 RENLINE 化转译)。公共空间组件库含:开发者座席(带电与网)、路演台阶、可预约展窗、端侧算力驿站、AR标识桩五类标准件。所有地标为概念建议,不表述为已批准建设;文物、绿地、交通安全约束优先 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
@@ -138,7 +138,35 @@ iteration: "v0.1"
 
 ## 指标体系、面积复算与合规矩阵
 
-全部空间指标由 GeoJSON 在 EPSG:4548 下复算 [depth:metrics_recalculation],与 `metrics.json` 一致,HTML 展示值亦与之对齐。核心指标的设计含义逐项说明:总体范围面积 [metric:site_area_sqm](约1141公顷,provisional复算值);绿地面积 [metric:green_space_area_sqm] 与绿地率 [metric:green_ratio](13.5%,仅计方案绿脊与口袋公园——它是人才日常可达的连续绿量,不是指标绿化);公共空间面积 [metric:public_space_area_sqm] 与比例 [metric:public_space_ratio](5.3%,支撑创新交往密度);更新项目建筑基底 [metric:building_footprint_area_sqm] 与项目密度 [metric:building_density](表达更新强度而非现状密度);概念建筑规模 [metric:renewal_total_floor_area_sqm](211万平方米,支撑产业空间供给判断);道路网络长度 [metric:road_centerline_length_m](缝合与慢行网络的总量);用地结构五项([metric:land_use_research_area_sqm]、[metric:land_use_commercial_area_sqm]、[metric:land_use_residential_area_sqm]、[metric:land_use_education_area_sqm]、[metric:land_use_reserved_area_sqm])共同表达"研发为纲、生活为底"的结构比例;三期面积([metric:phase1_area_sqm]、[metric:phase2_area_sqm]、[metric:phase3_area_sqm])与项目清单对应;任务量化指标([metric:scenario_card_count]=12、[metric:industry_test_scenario_count]=3、[metric:persona_count]=6、[metric:ai_landmark_count]=4、[metric:renewal_project_count]=14、[metric:stitch_street_count]=7、[metric:key_area_count]=3)对应任务书硬性要求。容积率为 unknown:官方控制指标未公布,不作测算结论。
+全部空间指标由 GeoJSON 在 EPSG:4548 下复算 [depth:metrics_recalculation],与 `metrics.json` 一致,HTML 展示值亦与之对齐。核心指标逐项列表如下(每项一个可校验标签,设计含义随行说明;v0.5 起按评审建议以表格呈现,降低正文连排引用密度):
+
+| 指标 | 复算值 | 设计含义 |
+| --- | --- | --- |
+| 总体范围面积 [metric:site_area_sqm] | 约1141公顷 | provisional 复算值,官方红线后重算 |
+| 绿地面积 [metric:green_space_area_sqm] | 153.7万m² | 绿脊+口袋公园,人才日常可达的连续绿量 |
+| 绿地率 [metric:green_ratio] | 13.5% | 仅计方案绿地图层,不是指标绿化 |
+| 公共空间面积 [metric:public_space_area_sqm] | 60.0万m² | 步廊+五广场 |
+| 公共空间比例 [metric:public_space_ratio] | 5.3% | 支撑创新交往密度 |
+| 更新项目建筑基底 [metric:building_footprint_area_sqm] | 25.6万m² | 167栋概念基底 |
+| 项目基底密度 [metric:building_density] | 2.2% | 表达更新强度,非现状密度 |
+| 概念建筑规模 [metric:renewal_total_floor_area_sqm] | 210.7万m² | 支撑产业空间供给判断 |
+| 道路网络长度 [metric:road_centerline_length_m] | 39.7km | 缝合与慢行网络总量 |
+| 科研用地 [metric:land_use_research_area_sqm] | 302.0万m² | "研发为纲" |
+| 商业用地 [metric:land_use_commercial_area_sqm] | 196.6万m² | "消费为面" |
+| 居住用地 [metric:land_use_residential_area_sqm] | 189.3万m² | "生活为底" |
+| 教育用地 [metric:land_use_education_area_sqm] | 122.9万m² | 高校开放带 |
+| 战略留白 [metric:land_use_reserved_area_sqm] | 43.3万m² | 不确定性的诚实表达 |
+| 一期面积 [metric:phase1_area_sqm] | 约275万m² | 南段双缝启动 |
+| 二期面积 [metric:phase2_area_sqm] | 约474万m² | 中段折返引擎 |
+| 三期面积 [metric:phase3_area_sqm] | 约392万m² | 北段登顶 |
+| 场景卡 [metric:scenario_card_count] | 12 | 含测试验证 [metric:industry_test_scenario_count]=3 |
+| 用户画像 [metric:persona_count] | 6 | 任务书要求≥5 |
+| 朝圣地标 [metric:ai_landmark_count] | 4 | 任务书要求≥3 |
+| 更新项目 [metric:renewal_project_count] | 14 | 对应三期清单 |
+| 缝合街 [metric:stitch_street_count] | 7 | 按割裂分级布点 |
+| 重点区 [metric:key_area_count] | 3 | 公告确定 |
+
+容积率为 unknown:官方控制指标未公布,不作测算结论。
 
 **爬升等级(v0.4 新增):证据也以迭代换爬升。**为避免"说得越多显得越真",本方案给主张与场景统一标注证据等级,等级只能靠新证据"爬升"、不能靠修辞:G0=方案主张(仅设计判断)→G1=有公开来源支撑→G2=包内可复算(GeoJSON/metrics可独立验证)→G3=现场可观察→G4=多方签注→G5=独立复核通过。当前诚实盘点:全部面积与网络指标为 **G2**(EPSG:4548可复算,但受provisional边界限制);四条在地锚点为 **G1**(公开来源已核,待现场踏勘升G3);12张场景卡均为 **G0-G1**(概念设计,其中T1-T3须在黄灯期依次通过三级验证门方可升至G3);容积率等待确认控规条件为 **G0**(unknown,不作主张)。每次爬升的条件与折返协议的90天复审绑定,升级与降级同样公开(证据分级思路致谢 knqiufan/listening-line-jingzhang 的E0-E5证据梯,按其 CC-BY-SA-4.0 许可署名引用,本方案作 RENLINE 化独立转译)。
 
