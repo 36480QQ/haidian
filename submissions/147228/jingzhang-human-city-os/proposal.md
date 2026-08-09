@@ -6,11 +6,52 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.0"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.0 在不改动几何和正式指标的前提下，把待确认责任转成五阶段、可拒绝、可退出的授权前启动程序，并记录五个 AI 辅助设计取舍及其人类决策回放；同时保留 v0.9 的三案例六道门合成人本交接凭证、空间取舍推演与 6 个测试类场景准备度台账。任务书 13 项统一评审维度与仓库 formal scorecard 的 7 项工作流问题分开映射到同一组包内证据，既有临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.2"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.2 先把总体空间动作、三处重点区、四条价值链和三道发布门放到首屏，再回接 v1.0 的授权前启动程序、AI 取舍回放、合成人本交接凭证与场景准备度台账。既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## 一页先读｜先看空间动作，再看治理证据
+
+### 方案判断
+
+“从 AI 展台，到 AI 时代人的城”不是把传统总图换成科技词汇，而是把 AI 的快速迭代翻译成一套**可进入、可拒绝、可暂停、可回滚**的城市接口。[source:AGENT-TASKBOOK] [depth:three_level_scope_framework] 三层范围收敛为同一条证据链：三处临时重点区、六层空间操作系统、四条价值链、16 个空间场景节点与三道发布门。[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
+
+### 四条价值链落到空间
+
+| 价值链 | 现场可读的概念动作 | 当前包内证据 | 仍需补齐的资料 |
+| --- | --- | --- | --- |
+| A 人的尊严 | 原住民保留与社区服务织补、技能再造走廊、人工/电话/纸面入口、无屏绿地与身心健康补给 | `LU-H01`、`ROAD-A-SKILL`、6 类 persona、17 张场景卡 | 居民基线、商户与就业追踪、无障碍走读与授权运营记录 |
+| B 机器可用 | 城市 API 交换站、硅基通行权测试场、低空物流分层、可逆构件库与数字孪生试验台 | `LU-B01`/`LU-B02`、`ROAD-B-SILICON`、人机接口原型 | 交通/航空/安全断面、接口责任主体、专业模型与现场测试 |
+| C 硬约束 | 算电余热审计、行洪与海绵模拟、监管沙盒事故复盘、公共数据授权样板间、版本发布室 | `SC-C01`—`SC-C05`、3 道发布门、5 阶段启动程序 | 能源与热网、蓝线水文、保险/责任、数据授权与正式边界 |
+| D 势能外溢 | OPC 共享实验室、标准外溢工作室、国际服务客厅，把研发记录转成可复用协议 | `SC-D01`—`SC-D03`、三区两翼接口 | 参与主体、知识产权许可、跨区协作与服务供给核验 |
+
+### 三处重点区不是三个展台
+
+| 临时重点区 | 重点回答的问题 | 代表性空间动作 |
+| --- | --- | --- |
+| 众智园 AI 自主创新加速区 | 机器怎样被约束、怎样停下来 | 具身智能受控测试、算电余热核验、受限路权与事故复盘 |
+| 北京 AI 原点社区 | 普通人怎样不被数字化排除 | 人工通道、代际共学、技能再造、社区保留与无屏绿地 |
+| 大钟寺 AI 产业聚集区 | 创新怎样变成公共可读的日常 | 文化叙事、OPC/小团队服务、国际化软配套与公共展示 |
+
+三处边界均是 `official_boundary=false`、`geometry_role=provisional_constraint` 的临时约束，用于表达空间关系和复算，不是官方红线、权属界线或工程定位。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+### 用少量可重算指标校准取舍
+
+当前提交边界在 EPSG:4548 下复算为 11,412,825.386 平方米（低置信、临时几何）；绿色空间占比 11.1213%，公共空间占比 1.0641%。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+
+社区保留支持用地占比 18.2759%，可逆留白占比 15.0936%；技能再造走廊、硅基通行权与低空概念走廊分别为 5,919.240 米、4,585.615 米和 2,015.137 米。[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [metric:skill_transition_corridor_length_m]
+
+上述量均为概念结构的可重算量，不是法定指标、工程长度或绩效承诺；道路长度与低空廊道另行登记为可复核几何证据。[metric:silicon_right_of_way_length_m] [metric:low_altitude_concept_corridor_length_m]
+
+### 三道发布门把十年城市周期和三个月 AI 迭代接起来
+
+`PHASE-V01` 先做观察、基线与公众共识；`PHASE-V02` 只允许可逆、可退出的概念试点；`PHASE-V10` 才讨论经专业审查后的扩展与标准外溢。[data:geometry/phasing.geojson#PHASE-V01] [data:geometry/phasing.geojson#PHASE-V02] [data:geometry/phasing.geojson#PHASE-V10]
+
+每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[depth:phasing_implementation]
+
+**先读结论：**本包能证明空间动作、证据引用、指标公式和失败关闭路径可以离线复核；不能证明官方边界、居民结果、就业结果、PUE/绿电、热网接入、交通安全、许可、投资或现实运营绩效。所有缺口保留在 `assumptions.json`、`metrics.json` 与资料就绪度台账，待公开或授权数据到位后再重算。[depth:risk_missing_data]
 
 # 京张人本城市操作系统
 
@@ -200,7 +241,7 @@ A 组“人的尊严”包括社区保留、就业转型、数字包容和身心
 | AI 原点社区 | 创新密度能否同时保护人的转型与日常生活 | 技能再造接力站、城市 API 交换站、代际共学、城市版本发布室 | 就业转化、人工服务保留、隐私最小化、居民表决 |
 | 大钟寺 | 数据与国际服务能否形成可信城市接口 | 公共数据授权样板间、国际服务客厅、OPC 共享服务 | 数据授权、退出机制、无障碍、语言与合规服务审计 |
 
-三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:far] [metric:building_height]
+三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:visual/assets/parametric-tradeoff-study.json] [depth:risk_missing_data]
 
 | 重点区 | 概念空间取舍 | 概念体量范围 | 先补的专业证据 |
 | --- | --- | --- | --- |
