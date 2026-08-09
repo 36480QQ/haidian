@@ -35,6 +35,13 @@
       "sha256": "6a3bf5d33df716e190292cc4ef9451721777003ec3382775d178bf7ad4fcb96a"
     },
     {
+      "path": "spatial.json",
+      "role": "geometry",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6ea7dec8922731faebc19e26a07b822236edce6e8d70b565a9471c1ab43d4547"
+    },
+    {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
@@ -549,7 +556,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "dfcf3bec9c03a341d5680dc4a0add625788fb10ce8d0510937d753dd7d009c95"
+      "sha256": "f46aac01d93884ed4b4fb0d7fd3343ee4a28ed9b4dc59d6036088f3c9a59536b"
     }
   ],
   "validation_claim": {
