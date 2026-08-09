@@ -1081,16 +1081,18 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 **It is not a changelog.** A changelog says what changed. This says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and `analysis/build_errata.py` verifies at build time that the commit exists and touched the file the entry blames — an errata register that cannot be joined to the repository would be the defect it records.
 
-Twenty-three entries. By finder:
+Twenty-four entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 14 | The audit was run against the shipped package, not a draft |
-| The author | 7 | Found while working |
+| The author | 8 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
 | **A reviewer outside this proposal** | **1** | @anselasimov-web, in PR #1002 |
 
-**That last row is the most important line in the register.** A mechanism whose refusal branches are written down in an executable file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
+**One of the eight, E24, is the only entry where the check worked and the person did not**: `overflow_qa` reported the overflow and I pushed the commit anyway. A gate that reports to someone who commits regardless does the same nothing as a gate that does not report. That failing commit stays in the history rather than being amended away.
+
+**The reviewer row is the most important line in the register.** A mechanism whose refusal branches are written down in an executable file can be falsified by a stranger within hours. A governance commitment that lives only in prose never meets that fate — not because it is sounder, but because there is nothing there to test.
 
 **Grouped by the *shape* of the error, something emerged that this proposal did not anticipate:**
 

@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 23,
+  "total": 24,
   "by_found_by": {
    "audit": 14,
    "own-gate": 1,
    "external-reviewer": 1,
-   "self": 7
+   "self": 8
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -19,7 +19,8 @@
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
-   "deliverable-not-inspected-before-shipping": 2
+   "deliverable-not-inspected-before-shipping": 2,
+   "gate-reported-and-was-ignored": 1
   }
  },
  "found_by_meaning_zh": {
@@ -260,6 +261,16 @@
    "what_zh": "manifest 顶层写 data_confidence: medium，validation_claim 内写 high——同一文件两个包级置信度不一致。",
    "why_zh": "两处由不同步骤写入，没有任何检查比对二者。",
    "fix_zh": "统一为 medium，并写明四级置信度的判定规则。"
+  },
+  {
+   "id": "E24",
+   "commit": "238f30db",
+   "file": "assets/figures/metrics-evidence.png",
+   "found_by": "self",
+   "shape": "gate-reported-and-was-ignored",
+   "what_zh": "FIG.06 的一类指标表标题写「全部第一类数值」，实际只列了九项中的七项——green_ratio_in_partition 与 phasing_union_area_sqm 加进了 metrics.json，没加进这张手排的表。",
+   "why_zh": "补上两行后版面溢出，overflow_qa 报了警，而我在构建未通过的状态下把它推了上去。一道报了警而作者照推的闸门，与一道不报警的闸门效果相同——这是本册中唯一一条「检查正常工作、人没有」的记录，因此单列一个形状。",
+   "fix_zh": "表格改为覆盖 metrics.json 中全部 known 指标，遗漏即构建失败；版面重排至零溢出；未通过的那次提交保留在历史里，不做 amend。"
   }
  ]
 }

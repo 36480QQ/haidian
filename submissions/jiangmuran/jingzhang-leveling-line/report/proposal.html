@@ -589,9 +589,10 @@ code {
 <p><strong>全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。</strong> 有两份把维护者对自己的反馈打包进来，但没有一份在被问之前说出自己错在哪。</p>
 <p>这正是本方案要做一份的理由。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面——它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。</p>
 <p><strong>它不是变更记录。</strong> 变更记录说改了什么；勘误册说<strong>错在哪、错成什么形状、谁发现的、哪个提交修的</strong>。每条都写明提交号，<code>analysis/build_errata.py</code> 在构建时校验该提交确实存在、且确实改动了被指认的文件——一份无法与仓库联接的勘误册，本身就是它所记录的那种缺陷。</p>
-<p>当前 <strong>23 条</strong>。按发现者分：</p>
-<div class="proposal-table"><table><thead><tr><th>发现者</th><th>条数</th><th>这说明什么</th></tr></thead><tbody><tr><td>独立审计</td><td>14</td><td>委托的审计对象是随包产物，不是草稿</td></tr><tr><td>作者自查</td><td>7</td><td>本轮工作中发现</td></tr><tr><td>本包自己的闸门</td><td>1</td><td>构建时被抓出——这是闸门本该做的事</td></tr><tr><td><strong>包外评审</strong></td><td><strong>1</strong></td><td>@anselasimov-web <span class="url">&lt;https://github.com/anselasimov-web&gt;</span> 在 PR #1002 中发现</td></tr></tbody></table></div>
-<p><strong>最后一行是这份登记册里最重要的一行。</strong> 一个把拒绝分支写成可执行文件的机制，才可能被一个素不相识的人在几小时内证伪；一段只写在正文里的治理承诺不会有这种下场——不是因为它更可靠，是因为它无从检验。</p>
+<p>当前 <strong>24 条</strong>。按发现者分：</p>
+<div class="proposal-table"><table><thead><tr><th>发现者</th><th>条数</th><th>这说明什么</th></tr></thead><tbody><tr><td>独立审计</td><td>14</td><td>委托的审计对象是随包产物，不是草稿</td></tr><tr><td>作者自查</td><td>8</td><td>本轮工作中发现</td></tr><tr><td>本包自己的闸门</td><td>1</td><td>构建时被抓出——这是闸门本该做的事</td></tr><tr><td><strong>包外评审</strong></td><td><strong>1</strong></td><td>@anselasimov-web <span class="url">&lt;https://github.com/anselasimov-web&gt;</span> 在 PR #1002 中发现</td></tr></tbody></table></div>
+<p><strong>其中 E24 是唯一一条「检查正常工作、人没有」的记录</strong>：<code>overflow_qa</code> 报了溢出，我在构建未通过的状态下把它推了上去。一道报了警而作者照推的闸门，与一道不报警的闸门效果相同——那次未通过的提交保留在历史里，不做 amend。</p>
+<p><strong>倒数第二行是这份登记册里最重要的一行。</strong> 一个把拒绝分支写成可执行文件的机制，才可能被一个素不相识的人在几小时内证伪；一段只写在正文里的治理承诺不会有这种下场——不是因为它更可靠，是因为它无从检验。</p>
 <p><strong>而按错误的「形状」归并之后，出现了一个本方案没有预料到的结论：</strong></p>
 <div class="proposal-table"><table><thead><tr><th>形状</th><th>次数</th></tr></thead><tbody><tr><td><strong>检查测了方便测的东西</strong></td><td><strong>5</strong></td></tr><tr><td>几何表达的不是它声称的意思</td><td>4</td></tr><tr><td>引用解析不到</td><td>4</td></tr><tr><td>同一件事的两份拷贝各自漂移</td><td>3</td></tr><tr><td>数字活得比装它的那句话久</td><td>2</td></tr><tr><td>声明活得比包的内容久</td><td>2</td></tr><tr><td>交付物在提交前没被看过</td><td>2</td></tr></tbody></table></div>
 <p><strong>第一行出现五次。</strong> 翻译覆盖率数的是「交给翻译器的字符串」而不是「页面上的中文」；CJK 泄漏闸门扫文本而扫不到 PDF；构建判定表达式漏掉两条打印 PASS 的闸门；<code>verify.js</code> 末尾三条结论只打印不拒绝；闭合差检查器只拦显式 <code>false</code> 而不拦字段缺失。五次都是同一件事：<strong>检查问的是「有没有说错」，而不是「有没有说」。</strong></p>
