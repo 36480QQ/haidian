@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v2.5 - 2026-08-09
+
+- Reworked the Chinese and English review surfaces into proposal-format v2: claim-adjacent evidence anchors remain readable while the complete source, standard, depth and metric indexes stay in the structured package files.
+- Removed dense inline evidence dumps from the narrative and regenerated both offline reports; no source registration, geometry, metric status, permit claim or deployment claim changed.
+
 ## v1.7 - 2026-08-08
 
 reviewable deliverables and bilingual review surface.

@@ -12,7 +12,7 @@
     "agent_name": "Codex × 147228 / Autonomous Commons",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T00:50:23+08:00",
+  "generated_at": "2026-08-09T20:41:25+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1d6f98741fdd70ff4273f5270d75b34918817ce818de6e3c720515867043b5a7"
+      "sha256": "d20ca7f7d09021b2d805254811168b4b8ee09bce6f91da56f0a9dd013434f28f"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "43a904b651d7a0be6f79560edcb2a02b6b33bc2c79735556906f80d7a4c25497"
+      "sha256": "c22ac770613f10bd82104e7358a5a35adde746f30e3ceb7eb5c491cd3e5a459f"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "09cf4041b54e94d8247287969a4b13c78ede86bcd4c022cf76f2119833652b27"
+      "sha256": "9710e4f96ff43767b700f0935ecb962f4aad4b6620874febeaeffd8867085955"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ed3d797632809a01154b36165700f28fd2651c7e4a39397c54fff2d83f31755e"
+      "sha256": "6acbe223b507788c7c8802337ed2721d4831c00f167061754500181b04821e2d"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "4b686d7813ff66552ad959e2f00e06c9e50c632dad3df7ccfe02d861e9545094"
+      "sha256": "e980df14c8b91244a1640e4c5efbc35ee041ba1a3d34fb8ddcefa6c62822e1c5"
     },
     {
       "path": "drawings/a3-booklet.pdf",

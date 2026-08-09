@@ -2,6 +2,7 @@
 title: "Jing-Zhang Autonomous Commons: A Public Belt After Automated Driving"
 author_github: "147228"
 language: "en"
+proposal_format_version: "2"
 translation_of: "proposal.md"
 translation_file: "proposal.md"
 title_zh: "智行京张：自动驾驶普及后的公共带"
@@ -89,8 +90,10 @@ Once official polygons, road/utility/ownership, traffic, weather, drainage and e
 ## References
 
 - `brief/public-brief.md`, `brief/site-package/agent_taskbook.json`, `data/source_registry.json`
-- [source:BEIJING-AV-TEST-2025], [source:BEIJING-AV-ROADS-2025], [source:BEIJING-AV-SAFETY-ASSESSMENT-2025], [source:MIIT-AV-TEST-2021]
-- [source:BEIJING-ACCESSIBILITY-REGULATION], [source:BEIJING-WALK-CYCLE-DB11-1761], [source:ISO-TR-4448-PUBLIC-MOBILE-ROBOTS], [source:ISO-13482-SERVICE-ROBOT-SAFETY]
+- [source:BEIJING-AV-TEST-2025], [source:BEIJING-AV-ROADS-2025], [source:BEIJING-AV-SAFETY-ASSESSMENT-2025]
+- [source:MIIT-AV-TEST-2021]
+- [source:BEIJING-ACCESSIBILITY-REGULATION], [source:BEIJING-WALK-CYCLE-DB11-1761], [source:ISO-TR-4448-PUBLIC-MOBILE-ROBOTS]
+- [source:ISO-13482-SERVICE-ROBOT-SAFETY]
 - [source:CASE-HELSINKI-AI-REGISTER], [source:CASE-UK-ATRS], [source:NIST-HUMAN-CENTERED-AI]
 - [source:LIU-URBAN-VENTILATION-2017], [source:MENG-WIND-HEAT-PM25-2022], [source:NOSEK-STREET-CANYON-2025]
 
