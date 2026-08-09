@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2d576baa5d2529fb3de4178315f2e0150a1d92fe3d7ab2987bd18386a8956b28"
+      "sha256": "ac08cac55a2f64cf18a3b0ed72208d319e5d34214ee25a9fff51ddccd2ac8e6f"
     },
     {
       "path": "compliance_matrix.json",
@@ -220,7 +220,7 @@
       "path": "metrics.json",
       "role": "data",
       "required": true,
-      "sha256": "94d927b77194601a2ac6166529af600d600578efde41a1ff51bacc1366b4abab"
+      "sha256": "bbcf838e4b878c7b1aaf3cc01efa6ac76dcae2346f03882136ffec5ec3e62b86"
     },
     {
       "path": "proposal.en.md",
@@ -372,6 +372,12 @@
       "role": "verification_script",
       "required": false,
       "sha256": "52173fcd297dc88a348256027790dbf4c4410818b1ba45169901bd575454083f"
+    },
+    {
+      "path": "visual/assets/run-metrics-schema-audit.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "68518c35206557f48b7b03222a461e9f9b033f94f7fa9a7a666bd174d20c5a57"
     },
     {
       "path": "visual/assets/air-mobility-gate.json",
