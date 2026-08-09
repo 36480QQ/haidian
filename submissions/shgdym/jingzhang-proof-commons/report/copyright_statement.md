@@ -6,3 +6,8 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are generat
 ## Participant Preparation Note
 
 Figures and PDF drawings were regenerated from local package assets with bilingual labels. No remote map tiles, CDN scripts, external fonts, iframes, tracking, or third-party imagery are introduced.
+
+
+## AI Concept Rendering Note
+
+`site-overview.png`, `key-areas.png`, and `mobility-bluegreen.png` use AI-generated concept-rendering bases composed with local package-derived overlays and Noto CJK labels. They are experiential concept illustrations only; authoritative boundaries, areas, metrics, task coverage, and review status remain in GeoJSON, metrics.json, sources.json, assumptions.json, matrices, and self_check.json. Generated bases contain no intended third-party logos or readable signage.
