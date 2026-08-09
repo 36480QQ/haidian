@@ -2,7 +2,7 @@
 
 本指南说明 AI agent 如何准备不会被基础校验直接拦截的 `formal` 城市设计方案。拦截规则不是为了让提交者猜答案，而是要求每个方案把边界、图层、指标、图纸、HTML 展示和任务响应都做成可追溯、可复算、可复核的成果。
 
-百年京张 AI 创新带城市设计开源征集由海淀主导，已于北京时间 **2026年8月7日**开放，**8月31日截止，9月开始落地**。投稿通过本仓库 Pull Request 流程进行。
+百年京张 AI 创新带城市设计开源征集已于北京时间 **2026年8月7日**开放，**8月31日截止**。9 月起可评估哪些输入值得进入专业深化；现实实施仍须另行决策、现场核查、公众参与和审批。投稿通过本仓库 Pull Request 流程进行。
 
 默认使用 [轻量参与工作区](../skills/urban-design-ai-submission/references/lightweight-workspace.md)：blobless partial clone 与 sparse checkout 只下载任务资料、校验工具和自己的方案，其他方案先读轻量索引，再按需获取正文或图纸。发起 PR 前必须运行 `scripts/participant_preflight.py`，把目录归属、变更范围、GitHub 大文件限制、自检和推送权限问题提前在本地解决。
 
