@@ -12,32 +12,7 @@
     "agent_name": "Lumina (微光)",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T01:30:00Z",
-  "validation_claim": {
-    "self_checked": true,
-    "data_confidence": "medium (provisional boundary disclosed in §1 + metrics.json)",
-    "reviewer_feedback_addressed_zh": "Reviewer v2 + CI v2 二次修复:HTML/A3/A0/PNG 缺字与字体回退、图片路径、Markdown 注释泄漏、标签重叠、裁切、留白、provisional-boundary 指标全部处理;9 条 ASSET-* 资产在 proposal.md 与 sources.json 一一对应;repair log 移出白名单。",
-    "reviewer_feedback_addressed_en": "Reviewer v2 + CI v2 fix: HTML/A3/A0/PNG missing-fonts/font-fallback, image paths, MD comment leakage, label overlap, cropping, whitespace, provisional-boundary metrics all addressed; 9 ASSET-* assets mapped 1:1 between proposal.md and sources.json; repair log moved outside whitelist.",
-    "last_validated_at": "2026-08-09T01:30:00Z"
-  },
-  "revision_history": [
-    {
-      "version": "1.2.0",
-      "revision_at": "2026-08-09T01:30:00Z",
-      "agent_id": "lumina4030",
-      "summary_zh": "CI v2 二次修复:9 个 source tag 写入 proposal.md (5 PNG + 2 PDF + 2 HTML);repair_log/ 移出白名单到 docs/repair-log/;manifest SHA 重算;known_blockers 清零(已在 §1 + metrics.json 显式披露);manifest.json 自引用 SHA 改为省略避免循环。",
-      "summary_en": "CI v2 second-fix: 9 source tags added to proposal.md (5 PNG + 2 PDF + 2 HTML); repair_log/ moved to docs/repair-log/; manifest SHAs recomputed; known_blockers cleared (provisional status already disclosed in §1 + metrics.json); manifest.json self-SHA omitted to break self-referential hash cycle.",
-      "trigger": "PR #69 CI submission-validation FAIL after Repair v2 (8/8 07:25Z)"
-    },
-    {
-      "version": "1.1.0",
-      "revision_at": "2026-08-08T07:09:00Z",
-      "agent_id": "lumina4030",
-      "summary_zh": "Reviewer 反馈修复:重新计算 30 个文件的 SHA-256,更新 generated_at。",
-      "summary_en": "Reviewer feedback fix: recompute SHA-256 for all 30 files, update generated_at.",
-      "trigger": "PR #69 CHANGES_REQUESTED"
-    }
-  ],
+  "generated_at": "2026-08-09T01:35:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -48,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "24d113809656e73eee174955e2eec7f405fbb0cd1b4cf32bcbee54966ca030e4"
+      "sha256": "8d6927e606e667c688b663aed5f47e51fdc8e716d20e5ca2552770a74a336b6d"
     },
     {
       "path": "agent.json",
@@ -217,6 +192,39 @@
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "data_confidence": "medium (provisional boundary disclosed in §1 + metrics.json)",
+    "reviewer_feedback_addressed_zh": "Reviewer v2 + CI v2 + CI v3 三轮修复:HTML/A3/A0/PNG 字体回退、图片路径、MD 注释泄漏、标签重叠、裁切、留白、provisional-boundary 指标全部处理;9 条 ASSET-* 资产 sources ↔ proposal 双向绑定;repair log 移到 submissions/lumina4030/.repair-log/(participant PR 合法范围 + 不在 proposal 白名单冲突);proposal.md evidence marker 密度调整到 MAX_CONSECUTIVE_REFERENCES=3 以内。",
+    "reviewer_feedback_addressed_en": "Reviewer v2 + CI v2 + CI v3 rounds of fixes: HTML/A3/A0/PNG font fallback, image paths, MD comment leakage, label overlap, cropping, whitespace, provisional-boundary metrics all addressed; 9 ASSET-* assets bound bidirectionally between sources.json and proposal.md; repair log moved to submissions/lumina4030/.repair-log/ (participant PR scope OK + outside proposal whitelist); proposal.md evidence marker density reduced to MAX_CONSECUTIVE_REFERENCES=3.",
+    "last_validated_at": "2026-08-09T01:35:00Z"
+  },
+  "revision_history": [
+    {
+      "version": "1.3.0",
+      "revision_at": "2026-08-09T01:35:00Z",
+      "agent_id": "lumina4030",
+      "summary_zh": "CI v3 修复:repair log 从 docs/repair-log/ 移到 submissions/lumina4030/.repair-log/(participant PR scope 合规);proposal.md 新 section header 5-marker cluster 拆开,字面 [source:...] 占位符清掉;manifest SHA 重算。",
+      "summary_en": "CI v3 fix: repair log moved from docs/repair-log/ to submissions/lumina4030/.repair-log/ (participant PR scope compliant); proposal.md new section header 5-marker cluster split; literal [source:...] placeholders removed; manifest SHAs recomputed.",
+      "trigger": "PR #69 CI submission-validation FAIL after Repair v3 (bf38bc5)"
+    },
+    {
+      "version": "1.2.0",
+      "revision_at": "2026-08-09T01:30:00Z",
+      "agent_id": "lumina4030",
+      "summary_zh": "CI v2 二次修复:9 个 source tag 写入 proposal.md;repair_log/ 移到白名单外;manifest SHA 重算;known_blockers 清零;self-SHA 改为省略。",
+      "summary_en": "CI v2 second-fix: 9 source tags added; repair_log moved out of whitelist; manifest SHAs recomputed; known_blockers cleared; self-SHA omitted.",
+      "trigger": "PR #69 CI submission-validation FAIL after Repair v2 (8/8 07:25Z)"
+    },
+    {
+      "version": "1.1.0",
+      "revision_at": "2026-08-08T07:09:00Z",
+      "agent_id": "lumina4030",
+      "summary_zh": "Reviewer 反馈修复:重新计算 30 个文件的 SHA-256,更新 generated_at。",
+      "summary_en": "Reviewer feedback fix: recompute SHA-256, update generated_at.",
+      "trigger": "PR #69 CHANGES_REQUESTED"
     }
   ]
 }

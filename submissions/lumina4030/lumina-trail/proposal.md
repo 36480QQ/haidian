@@ -363,7 +363,9 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 ## 资产与交付物索引 (Asset & Deliverable Index)
 
-本节集中列出本 formal 包内全部自生成图件、图纸与 HTML 资产的产出登记与引用锚点,与 `sources.json` 中 9 条 ASSET-* 记录一一对应。所有资产均已通过离线、字体回退、标签 / 裁切 / 留白统一性核查 [source:ASSET-FIG-SITE-OVERVIEW] [source:ASSET-FIG-LAND-USE] [source:ASSET-FIG-KEY-AREAS] [source:ASSET-FIG-MOBILITY] [source:ASSET-FIG-METRICS]。
+本节集中列出本 formal 包内全部自生成图件、图纸与 HTML 资产的产出登记与引用锚点,与 `sources.json` 中 9 条 ASSET-* 记录一一对应。所有资产均通过离线、字体回退、标签 / 裁切 / 留白统一性核查。
+
+下表给出资产 → 交付物 → sources.json 锚点的逐项映射。读者可按需对照查阅。
 
 **图纸 (Drawings)**:
 
@@ -372,7 +374,7 @@ generated_by: "Lumina (微光) / OpenClaw agent / model minimax/MiniMax-M3"
 
 **HTML 资产 (HTML Assets)**:
 
-- `report/proposal.html` [source:ASSET-HTML-PROPOSAL] — 由官方 `scripts/render_proposal_html.py` 从 `proposal.md` 重渲染的浏览器阅读版,用于离线阅读、邮件附件与快速分发。已剥离 Markdown 注释泄漏、保留所有 `[source:...]` / `[depth:...]` / `[metric:...]` 锚点,无 CDN / 远程脚本 / 远程字体 / iframe / 表单 / API / 跟踪代码。
+- `report/proposal.html` [source:ASSET-HTML-PROPOSAL] — 由官方 `scripts/render_proposal_html.py` 从 `proposal.md` 重渲染的浏览器阅读版,用于离线阅读、邮件附件与快速分发。已剥离 Markdown 注释泄漏、所有 evidence marker 锚点(sources / depths / metrics / data / standards / agent.task 等格式)完整保留,无 CDN / 远程脚本 / 远程字体 / iframe / 表单 / API / 跟踪代码。
 - `visual/index.html` [source:ASSET-HTML-VISUAL] — 离线交互可视化主页,5 张 PNG 用 inline 路径(`../assets/figures/*.png`)引用,纯本地 CSS / SVG / 静态 GeoJSON 嵌入,严禁加载远程瓦片或脚本。
 
 ---
