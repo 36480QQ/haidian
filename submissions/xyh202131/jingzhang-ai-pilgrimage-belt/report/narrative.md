@@ -12,6 +12,10 @@ AI 朝圣·铁轨新生带 V2.4 将百年京张定义为一条可审计的 AI �
 
 Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation production line. This increment adds no competing spatial plan. It makes the current skill contract visible and testable by mapping the taskbook's three positioning statements and five functions in readable prose, consolidating the three-key-area evidence crosswalk, completing required metric families, normalizing source IDs and provenance metadata, and disclosing the 0% OSM/provisional overlap and approximately 412.5 m nearest distance as unresolved uncertainty only. Chinese and English narratives, HTML, visual homepages, A3/A0 outputs, eight bilingual PNG display pairs, and two bilingual SVG editable-source pairs are required counterparts. Every node remains at G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field-performance, or rights-clearance evidence.
 
+V2.6 只增加“来源—资产—权利”审计闭环，不改变方案、指标或任何坐标。29 条来源各有反向权利证据 ID；10 个仓库来源固定到当前审计 HEAD 的 Git blob/tree，4 个网页只固定到包外 Firecrawl 抓取摘要，另 15 个网页明确没有内容摘要。120 个 OSM way 均在 `geometry/constraints.geojson` 内补入 `source_id=OSM-CONTEXT`，但固定查询和快照摘要仍未知。62 条逐文件资产记录把来源、父资产、工具、嵌入组件、生成配方状态、复核状态和未决项串联到 manifest。该闭环的效果是 `audit_ready_not_cleared`，不是许可升级。
+
+V2.6 adds only the source–asset–rights audit loop; it changes no design, metric, or coordinate. Each of the 29 sources has a reverse rights-evidence ID. Ten repository sources are fixed to Git blob/tree objects at the audited HEAD, four web records are fixed only to external Firecrawl capture digests, and 15 web records explicitly have no content digest. All 120 OSM ways now carry `source_id=OSM-CONTEXT` in `geometry/constraints.geojson`, while the fixed query and snapshot digest remain unknown. Sixty-two file-level asset records connect sources, parent assets, tools, embedded components, recipe state, review state, and open items to the manifest. The effect is `audit_ready_not_cleared`, not a license upgrade.
+
 ## 本次增量状态 / Current increment status
 
 > 本节只记录尚未产生可信 GitHub check 的当前增量。它不得继承下方 `e71ff206…` 历史快照的任何 `[x]`；最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
@@ -20,23 +24,132 @@ Jing-Zhang V2.4 treats the corridor as an auditable public AI innovation product
 
 - [x] 任务书三大定位、五大功能和六个智能体任务均可从正文、矩阵、图层与展示物回查；未新增重复的第四套总矩阵。
 - [x] `metrics.json` 包含 62 个 known 与 11 个 unknown 指标；正式资料缺失的建筑密度、道路比例等保持 unknown，不以体量或中心线替代。
-- [x] 29 条来源均补齐采集、时空、复用、转换和限制字段；结构化来源引用全部回到稳定 ID，刷新审计完成数仍为 0。
+- [x] 29 条来源均补齐采集、时空、复用、转换和限制字段，并以 `rights_evidence_id` 回链 schema 化证据；日期、格式、摘要或条款缺失时保持显式 unknown，刷新审计完成数仍为 0。
 - [x] 中英文正文、离线报告、视觉首页、八组双语 PNG 展示对、两组双语 SVG 可编辑源对与 A3/A0 均为必交对照件，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
 - [x] 三处重点区证据交叉表只表示文档映射齐全；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
-- [x] 最终 manifest 覆盖 60 个包文件，所有 59 个非 manifest SHA-256 与暂存/提交 Git blob 匹配；权利台账同样恰好覆盖 60 个路径且每个路径只归组一次。
+- [x] 最终 manifest 覆盖 62 个包文件，所有 61 个非 manifest SHA-256 与最终文件字节匹配；权利台账恰好覆盖相同 62 个路径，并同时保持 5 个兼容组和 62 条唯一逐文件记录。
+- [x] 120/120 个 OSM 要素具有 `source_id`、`osm_way_id` 与署名；固定查询和快照摘要仍未知，`RIGHTS-OPEN-03` 保持 P0 open。
+- [x] 权利总体仍为 `not_fully_cleared`，独立逐文件清权审计完成数为 0；`RIGHTS-OPEN-01/02/03` 保持 P0 open，公共或专业复用继续 blocked。
 - [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 在最终本地字节上通过。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
 - [x] The taskbook's three positioning statements, five functions, and six agent tasks are traceable through prose, matrices, layers, and display artifacts; no duplicate fourth master matrix was added.
 - [x] `metrics.json` contains 62 known and 11 unknown metrics. Building density, road ratio, and other unsupported formal values remain unknown rather than being replaced by massing or centerline proxies.
-- [x] All 29 sources carry collection, temporal, spatial, reuse, transformation, and limitation metadata; structured references resolve to stable IDs, while completed freshness audits remain 0.
+- [x] All 29 sources carry collection, temporal, spatial, reuse, transformation, and limitation metadata and reverse-link to schema-constrained evidence through `rights_evidence_id`; missing dates, formats, digests, or terms remain explicit unknowns, while completed freshness audits remain 0.
 - [x] Chinese and English narratives, offline reports, visual homepages, eight bilingual PNG display pairs, two bilingual SVG editable-source pairs, and A3/A0 outputs are required counterparts and align on provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
 - [x] The three-key-area evidence crosswalk represents documentation mapping only; field audits, accountable-role confirmation, approvals, test executions, and known results remain 0.
-- [x] The final manifest covers 60 package files, all 59 non-manifest SHA-256 values match staged/committed Git blobs, and the rights ledger covers exactly the same 60 paths once each.
+- [x] The final manifest covers 62 package files, all 61 non-manifest SHA-256 values match the final file bytes, and the rights ledger covers the same 62 paths through five compatibility groups and 62 unique file-level records.
+- [x] All 120 OSM elements carry `source_id`, `osm_way_id`, and attribution; the fixed query and snapshot digest remain unknown, so P0 `RIGHTS-OPEN-03` stays open.
+- [x] Overall rights remain `not_fully_cleared`, with 0 completed independent file-level clearance audits; P0 `RIGHTS-OPEN-01/02/03` remain open, and public or professional reuse remains blocked.
 - [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight pass against the final local bytes.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
-## 本次 PDF 重生记录 / Current PDF regeneration record
+## 权利证据审计 / Rights-evidence audit
+
+审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 62 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
+
+The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 29 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and 62 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; P0 01/02/03 stay open; and public or professional reuse stays blocked.
+
+```powershell
+$pkg = 'submissions/xyh202131/jingzhang-ai-pilgrimage-belt'
+$env:JZ_RIGHTS_PACKAGE = (Resolve-Path $pkg).Path
+$env:JZ_RIGHTS_REPO = (Resolve-Path .).Path
+@'
+import hashlib, json, os
+from pathlib import Path
+import jsonschema
+
+base = Path(os.environ["JZ_RIGHTS_PACKAGE"])
+repo = Path(os.environ["JZ_RIGHTS_REPO"])
+load = lambda path: json.loads((base / path).read_text(encoding="utf-8"))
+manifest = load("manifest.json")
+ledger = load("visual/assets/rights-clearance-ledger.json")
+evidence = load("visual/assets/source-rights-evidence.json")
+schema = load("visual/assets/source-rights-evidence.schema.json")
+sources = load("sources.json")
+constraints = load("geometry/constraints.geojson")
+agent = load("agent.json")
+metrics = load("metrics.json")
+
+jsonschema.Draft202012Validator.check_schema(schema)
+errors = list(jsonschema.Draft202012Validator(schema).iter_errors(evidence))
+assert not errors, errors[:3]
+
+actual = {p.relative_to(base).as_posix() for p in base.rglob("*") if p.is_file()}
+manifest_paths = [row["path"] for row in manifest["files"]]
+asset_paths = [row["path"] for row in ledger["asset_records"]]
+group_paths = [path for group in ledger["file_coverage"]["asset_groups"] for path in group["paths"]]
+assert actual == set(manifest_paths) == set(asset_paths) == set(group_paths)
+assert len(manifest_paths) == len(asset_paths) == len(group_paths) == len(set(manifest_paths))
+
+sha = lambda path: hashlib.sha256((base / path).read_bytes()).hexdigest()
+manifest_by_path = {row["path"]: row for row in manifest["files"]}
+for row in manifest["files"]:
+    if row["path"] != "manifest.json":
+        assert row["sha256"] == sha(row["path"]), row["path"]
+for row in ledger["asset_records"]:
+    path = row["path"]
+    digest = row["content_identity"]["digest"]
+    if path in {"manifest.json", "visual/assets/rights-clearance-ledger.json"}:
+        assert digest is None
+    else:
+        assert digest == sha(path) == manifest_by_path[path]["sha256"], path
+
+source_ids = {row["id"] for row in sources["sources"]}
+evidence_ids = {row["source_id"] for row in evidence["source_records"]}
+assert source_ids == evidence_ids and len(source_ids) == 29
+assert {row["rights_evidence_id"] for row in sources["sources"]} == {row["evidence_id"] for row in evidence["source_records"]}
+
+osm = [row for row in constraints["features"] if row.get("properties", {}).get("osm_way_id") is not None]
+assert len(osm) == 120 and all(row["properties"].get("source_id") == "OSM-CONTEXT" for row in osm)
+assert {str(row["properties"]["osm_way_id"]) for row in osm} == {str(row["element_id"]) for row in evidence["osm_element_lineage"]}
+
+tool_ids = {row["tool_id"] for row in agent["toolchain"]}
+tool_refs = {tool for row in ledger["asset_records"] for tool in row["tool_ids"]}
+tool_refs |= {tool for row in agent["output_provenance"] for tool in row["tool_ids"]}
+assert tool_refs <= tool_ids and tool_ids <= tool_refs
+
+assets = {row["path"]: row for row in ledger["asset_records"]}
+for row in ledger["asset_records"]:
+    assert set(row["source_lineage"]["parent_asset_refs"]) <= set(assets), row["path"]
+metric_internal_sources = {
+    source
+    for metric in metrics["metrics"].values()
+    for source in metric.get("source_files", [])
+    if (base / source).is_file()
+}
+assert metric_internal_sources <= set(assets["metrics.json"]["source_lineage"]["parent_asset_refs"])
+for source in {
+    source
+    for metric in metrics["metrics"].values()
+    for source in metric.get("source_files", [])
+    if not (base / source).is_file()
+}:
+    assert (repo / source).is_file(), source
+
+assert ledger["clearance_claim"]["status"] == "not_fully_cleared"
+assert ledger["clearance_claim"]["completed_independent_file_level_clearance_audits"] == 0
+assert ledger["audit_records"] == []
+assert {"RIGHTS-OPEN-01", "RIGHTS-OPEN-02", "RIGHTS-OPEN-03"} <= set(manifest["rights_claim"]["open_p0_items"])
+assert manifest["release_claim"]["public_or_professional_reuse"] == "blocked_pending_terms_and_audit"
+print(json.dumps({"ok": True, "schema_errors": 0, "paths": len(actual), "sources": len(source_ids), "osm": len(osm), "hash_mismatches": 0, "independent_audits": 0, "reuse": "blocked_pending_terms_and_audit"}, ensure_ascii=False))
+'@ | python -
+Remove-Item Env:JZ_RIGHTS_PACKAGE
+Remove-Item Env:JZ_RIGHTS_REPO
+python scripts/score_submission.py "$pkg/proposal.md" --strict --json
+python scripts/spatial_review.py $pkg --stage formal --json
+python scripts/visual_review.py $pkg --json
+python scripts/professional_review.py $pkg --json
+python scripts/self_check_submission.py $pkg --pr-author xyh202131 --json
+python scripts/participant_preflight.py $pkg --pr-author xyh202131 --json
+git diff --check
+```
+
+## 当前 PDF 固定点与历史重生记录 / Current PDF fixed point and historical regeneration record
+
+本次权利证据 PR 为同步最终 `62/61` 文件计数，重新生成了中英文 A3；A0 输入未变，因此两版 A0 字节保持不变。当前四份 PDF 已在两个新的 Python 进程中连续生成，逐文件 SHA-256 完全相同；随后同一 QA 脚本复核 85 页，结果为 PASS。当前中文/英文 A3 SHA-256 分别为 `dcd1b8749eedddd72ec0b57aa6fc0af44eee3e0f3c2b2ec2094850a5cfc73d24` 与 `1d7234f55c9efe312a815ba0566ea3f4224a22b601f6df410b1b3dd3f3ab6441`；中英文 A0 仍分别为 `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` 与 `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384`。本 PR 仅为 120 个既有 OSM 要素增加来源 ID，constraints 坐标规范摘要仍为 `1b5c797d29e8476d2bad8200dfa8c43b84d2651723da93190166e3694d5f634b`；其他 geometry 与 `metrics.json` 不变。下两段所列 03:31/03:35 窗口是 #1090 可读性重生的历史过程证据，其旧 A3 字节身份已由本段当前固定点取代。
+
+This rights-evidence PR regenerated both A3 booklets to synchronize the final `62/61` file counts. A0 inputs did not change, so both A0 files remain byte-identical to the prior versions. Two fresh Python processes generated the current four PDFs with identical file-by-file SHA-256 values, after which the same QA script rechecked all 85 pages and returned PASS. The current Chinese and English A3 SHA-256 values are `dcd1b8749eedddd72ec0b57aa6fc0af44eee3e0f3c2b2ec2094850a5cfc73d24` and `1d7234f55c9efe312a815ba0566ea3f4224a22b601f6df410b1b3dd3f3ab6441`; the Chinese and English A0 values remain `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` and `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384`. This PR adds a source ID to 120 existing OSM features only; the canonical constraints-coordinate digest remains `1b5c797d29e8476d2bad8200dfa8c43b84d2651723da93190166e3694d5f634b`, and all other geometry plus `metrics.json` are unchanged. The 03:31/03:35 windows in the next two paragraphs are historical process evidence from the #1090 readability regeneration; their former A3 byte identity is superseded by the current fixed point above.
 
 最终 pass A（含 QA）的实际窗口为 2026-08-10 03:31:52 +08:00 至 03:32:36 +08:00；独立 pass B 的窗口为 03:34:32 +08:00 至 03:35:26 +08:00。两个 pass 均在全新的 Python 进程中运行，四份包内 PDF 与 pass A 逐文件字节相同，pass A 与 pass B 也逐文件字节相同。中文 A3 为 33 页、英文 A3 为 36 页，均为 297×420mm 纵向。八组 1800×1100 图件在每种语言 A3 中各自按 `[0,168,620,1060]`、`[590,168,1210,1060]`、`[1180,168,1800,1060]` 拆成三个 620×892 裁片，每片以 245mm 宽独占细节页，相邻裁片重叠 30px；因此每种语言为 8 组/24 个裁片，不再在 A3 嵌入整张 1800×1100 图。中文/英文栅格证据的有效最小文字指标分别为 10.865pt 与 9.297pt，所有 live text 不小于 9pt，443/443 个逻辑块可搜索。中英文 A0 各 8 页、均为 1189×841mm 横向，继续按“场地总览—用地—重点区—重点区剖面—交通—指标—创新—实施”顺序将整图置于 1149mm 安全版心，原字节未变。PyMuPDF 以 1.6 倍渲染并检查全部 85 页；未发现裁切、越界、空白页、孤立标题、错序或不可读字形。生成与版式 QA 不证明现实执行；T-02 仍为 G0：0 回放、0 回答输出、0 现场测试。
 
@@ -44,8 +157,8 @@ The final pass A window, including QA, was 2026-08-10 03:31:52 +08:00 to 03:32:3
 
 | PDF | Pages / format | SHA-256 |
 |---|---|---|
-| `drawings/a3-booklet.pdf` | 33 / A3 portrait | `a1364afaa471b63d9e9ecc001129f5ff7fe01405dc34f6379842d38a68dc73d2` |
-| `drawings/a3-booklet.en.pdf` | 36 / A3 portrait | `2ac3cc0c006789912a834bde5303c2e6a1a6d9f40bfffc8768751e9698b0e7dd` |
+| `drawings/a3-booklet.pdf` | 33 / A3 portrait | `dcd1b8749eedddd72ec0b57aa6fc0af44eee3e0f3c2b2ec2094850a5cfc73d24` |
+| `drawings/a3-booklet.en.pdf` | 36 / A3 portrait | `1d7234f55c9efe312a815ba0566ea3f4224a22b601f6df410b1b3dd3f3ab6441` |
 | `drawings/a0-boards.pdf` | 8 / A0 landscape | `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` |
 | `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384` |
 

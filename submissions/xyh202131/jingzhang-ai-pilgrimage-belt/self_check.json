@@ -193,6 +193,41 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [],
+  "external_dependencies": [
+    {
+      "item_id": "RIGHTS-OPEN-01",
+      "priority": "P0",
+      "status": "open",
+      "owner_needed": "repository maintainer or license owner",
+      "evidence_needed": "complete COMMUNITY-DISPLAY-ONLY terms"
+    },
+    {
+      "item_id": "RIGHTS-OPEN-02",
+      "priority": "P0",
+      "status": "open",
+      "owner_needed": "independent rights reviewer",
+      "evidence_needed": "file-level audit for all 62 manifest paths"
+    },
+    {
+      "item_id": "RIGHTS-OPEN-03",
+      "priority": "P0",
+      "status": "open",
+      "owner_needed": "ODbL-competent reviewer and OSM data producer",
+      "evidence_needed": "fixed query/snapshot and ODbL derivative/share-alike determination"
+    }
+  ],
+  "rights_evidence_summary": {
+    "status": "not_fully_cleared",
+    "completed_independent_file_level_clearance_audits": 0,
+    "source_records": 29,
+    "osm_element_records": 120,
+    "manifest_paths": 62,
+    "file_level_asset_records": 62,
+    "audit_records": 0,
+    "repository_review": "disclosure_ready",
+    "public_or_professional_reuse": "blocked_pending_terms_and_audit",
+    "schema_validation_effect": "audit_ready_not_cleared"
+  },
   "schema_version": "0.2.0",
   "checks": [
     {
@@ -235,7 +270,7 @@
       "result": "pass",
       "severity": "major",
       "target": "sources.json",
-      "message": "29 条来源 ID 唯一，结构化来源引用全部闭合到稳定 ID；每条来源记录采集、时空、复用、转换和已知限制，完成刷新审计数仍为 0。"
+      "message": "29 条来源 ID 唯一且 29/29 具有 rights_evidence_id；schema 实例逐条记录 locator、日期/unknown、原格式/unknown、完整性、条款证据状态和下游资产台账指针。完成刷新审计与独立逐文件清权审计均仍为 0。"
     },
     {
       "check_id": "SCENARIO_PROTOCOL",
@@ -287,11 +322,19 @@
       "message": "正文与矩阵的 6 项标准、15 项设计深度、62 个必需 known 指标引用通过专业证据检查；正文含 29 类来源、32 类 data 与 58 个 metric 标记。"
     },
     {
-      "check_id": "RIGHTS_AND_CHANGE_CONTROL",
+      "check_id": "RIGHTS_DISCLOSURE_AND_LINK_CLOSURE",
       "result": "pass",
       "severity": "major",
       "target": "visual/assets/rights-clearance-ledger.json",
-      "message": "权利台账与 manifest 恰好覆盖相同的 60 个路径/59 个非 manifest 内容文件且每路径一次；Noto 字体事实与两组 SVG 可编辑源边界已记录，独立逐文件清权审计仍为 0、总体 not_fully_cleared。"
+      "reproduction_command": "Run the complete PowerShell/Python audit block under report/narrative.md#权利证据审计--rights-evidence-audit; it executes JSON Schema validation plus path, hash, source, OSM, tool, declared-parent and release-gate assertions.",
+      "message": "manifest、5 个兼容组与 62 条逐文件资产记录严格等集且路径唯一；29 条来源、120 个 OSM way、稳定工具 ID、Noto/Helvetica/SVG 渲染字体边界与外部请求均闭合。包内 metrics source_files 与声明的直接父资产已机器核对；parent_asset_refs 不是通用构建图。该 PASS 只表示披露和声明链接可审计；独立逐文件清权审计仍为 0、总体 not_fully_cleared。"
+    },
+    {
+      "check_id": "PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS",
+      "result": "unknown",
+      "severity": "major",
+      "target": "visual/assets/source-rights-evidence.json",
+      "message": "RIGHTS-OPEN-01/02/03 均保持 P0 open；完整 COMMUNITY-DISPLAY-ONLY 条款、独立逐文件审计与 ODbL 义务尚未完成。仓库评审可进行披露复核，但公共展示、专业深化或其他再利用继续 blocked_pending_terms_and_audit。"
     },
     {
       "check_id": "PAPER_DIMENSIONS",
