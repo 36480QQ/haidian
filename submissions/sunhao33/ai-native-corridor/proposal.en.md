@@ -244,17 +244,29 @@ The wayfinding system proposes a "code × rail" visual language: primary colors 
 
 ## Renewal Project List, Policies, and Phasing
 
-| # | Project Name | Type | Phase | Key Dependencies |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jing-Zhang Slow-Traffic Gap Stitching (5 sites) | Public space/transport | Near-term | Crossing permits, road redlines |
-| JZ-02 | Zhongzhiyuan Qinghe Innovation Interface | Blue-green/industry display | Near-term | River blue-line, ecological permits |
-| JZ-03 | Origin Community Open-Source Collaboration Street | Urban renewal/industry | Near-to-mid-term | Campus boundary negotiation, ownership |
-| JZ-04 | Dazhongsi Station Four-Quadrant Connection | TOD/slow-traffic | Mid-term | Station renovation schedule |
-| JZ-05 | AI Computing Station Network | New infrastructure/public service | Near-to-mid-term | Energy access, operating entity |
-| JZ-06 | Three AI Pilgrimage Landmarks | Public building/brand | Mid-to-long-term | Architectural design competition, investment |
-| JZ-07 | Global AI Innovation Week Route | Operations/brand | Long-term | Security permits, brand licensing |
+### Implementation Framework
 
-Above project list and phasing are conceptual suggestions, not implementation commitments [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation].
+The seven flagship projects below follow Haidian District's urban renewal process: project filing → design review → planning permission → construction drawing review → construction permit → completion acceptance. Projects advance in three phases — near-term (1–3 yr), mid-term (3–7 yr), long-term (7–15 yr) — each with measurable milestones and exit criteria. All are conceptual recommendations, not implementation commitments.
+
+| # | Project Name | Type | Phase | Responsible Actors | Key Approvals / Dependencies | Measurable Outcome Indicator |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Jing-Zhang Slow-Traffic Gap Stitching (5 sites) | Public space/transport | Near-term | Haidian Transport Commission, Municipal Planning & Natural Resources Haidian Branch | Crossing permits, road redlines, municipal transport approval | 5 gaps 100% connected; slow-traffic volume +30% vs baseline |
+| JZ-02 | Zhongzhiyuan Qinghe Innovation Interface | Blue-green/industry display | Near-term | Zhongguancun Science City Admin Committee, Haidian Water Authority | River blue-line, ecological permits, industry tenant agreements | 1.2 km waterfront opened; ≥24 public events/year |
+| JZ-03 | Origin Community Open-Source Collaboration Street | Urban renewal/industry | Near-to-mid-term | Haidian Renewal Office, subdistrict office, Tsinghua/PKU asset departments | Campus boundary negotiation, ownership confirmation, tenant relocation plan | ≥30 resident open-source projects; co-working utilization ≥70% |
+| JZ-04 | Dazhongsi Station Four-Quadrant Connection | TOD/slow-traffic | Mid-term | Beijing Metro (Jingtou), Haidian Planning Sub-Bureau, Haidian Commerce Bureau | Station renovation schedule, underground space planning permit, investment estimate | Quad-to-quad walking time ≤3 min; daily interchange ≥50K |
+| JZ-05 | AI Computing Station Network | New infrastructure/public service | Near-to-mid-term | Haidian Science & IT Commission, State Grid Haidian, operating service provider | Energy access capacity, operator tender, equipment certification | 8–12 stations at ≤800 m radius; compute availability ≥99% |
+| JZ-06 | Three AI Pilgrimage Landmarks | Public building/brand | Mid-to-long-term | Haidian Culture & Tourism Bureau, international design competition committee | Architectural design competition, investment estimate, cultural landmark approval | Annual visitors ≥500K; media exposure in global top-10 tech outlets |
+| JZ-07 | Global AI Innovation Week Route | Operations/brand | Long-term | Haidian District Government, ZGC Forum Secretariat, Public Security Bureau | Large-event security permit, brand licensing, international MOUs | Annual participation ≥50K; coverage of ≥30 countries/regions |
+
+### Phasing Logic and Implementation Policy
+
+**Near-term (1–3 yr)** starts with slow-traffic gap stitching and waterfront activation — low infrastructure cost, high public benefit, no dependency on regulatory plan adjustments. Pioneer projects (JZ-01/02/05) serve as pilot windows, accelerated via "planning permission exemption + temporary use permit" mechanisms. **Mid-term (3–7 yr)** focuses on urban renewal and TOD — retain-renovate-demolish strategy and station integration proceed once regulatory conditions are confirmed, with "FAR bonus + public space contribution" policy incentives attracting market participants. **Long-term (7–15 yr)** delivers brand landmarks and international operations — pilgrimage landmarks are built after industrial maturity and community stabilization, with the Global AI Innovation Week closing the brand loop.
+
+### Governance and Funding Model
+
+A "Jing-Zhang Intelligence Artery Development Council" is proposed, comprising the Haidian District Government, Zhongguancun Science City Admin Committee, tenant enterprise representatives, universities, and community representatives, responsible for strategic coordination, annual plan approval, and performance evaluation. Funding follows a blended model: government guidance fund (30%) + social capital (40%) + operational revenue (20%) + innovation grants (10%), avoiding reliance on a single fiscal channel. Annual operational reports publicly disclose KPI attainment.
+
+The above project list, phasing, and governance model are conceptual recommendations for professional team deepening in conjunction with regulatory conditions and engineering constraints [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation].
 
 ## Indicators, Area Recalculation, and Compliance Matrix
 
