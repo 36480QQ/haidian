@@ -57,6 +57,20 @@
       "transformations": "赛道申报取 front matter 的 tracks 字段；结构母题与元符号用中文关键词正则；model 字段按是否为占位符/空分桶，并按模型家族归并以计算写法离散度。",
       "limitations": "母题识别基于关键词正则，存在同义表述漏计，全部 share 为下界估计。model 字段为占位符或空只说明机器可读披露字段未填，不等于作者隐瞒模型；写法离散度不评价任何作者。语料随征集持续增长，引用任何数字前须重跑脚本复算。",
       "usable_for_formal": "background_only"
+    },
+    {
+      "id": "OSM-REFERENCE-2026-08",
+      "path": "visual/assets/osm_reference.json",
+      "source_type": "agent_collected_public",
+      "usage": "独立公共数据复核：用 OpenStreetMap 实际测绘的京张铁路遗址公园多边形与废弃铁路线形，检验仓库临时边界与实际地理的差异。",
+      "publisher": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/ · Overpass API",
+      "retrieved_at": "2026-08-08",
+      "license": "ODbL 1.0（开放数据库许可）。使用与再分发须署名『© OpenStreetMap contributors』并保持相同许可；本包仅提交由其派生的测量结果与口径，不再分发原始数据库。",
+      "collection_method": "analysis/osm_reference.py fetch 经 Overpass API 抓取；同脚本 report 在 EPSG:4548 下计算面积、覆盖率与最近距离。脚本公开于配套 Issue，可重跑。",
+      "coverage": "bbox 39.925,116.315,40.035,116.375；公园 2 个 way、废弃铁路 14 段。",
+      "limitations": "OSM 为众包数据，公园多边形可能只覆盖已建成并被测绘的一段，不等于规划全域；临时边界亦为推定。本方案只报告两者差异，不判定何者正确。官方 polygon 发布后本节全部结论失效并须整体重算。",
+      "usable_for_formal": "background_only"
     }
   ]
 }
