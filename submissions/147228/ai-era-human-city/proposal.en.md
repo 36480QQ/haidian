@@ -16,6 +16,20 @@ iteration: "v0.2"
 
 **Candidate name in this submission: JINGZHANG HUMAN-CENTRIC AI COMMONS / 京张人本智城带.** This conceptual reference scheme makes entry, understanding, refusal, appeal, and co-shaping rights the first gate of every AI scenario. It joins a human buffer, a machine-callable but publicly governed civic API, institutional safeguards, and versioned governance. It does not claim a statutory plan, official brand, approval, construction feasibility, investment, confirmed policy, or delivered service. [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]
 
+## One-page executive brief: prove one public task chain before scaling the belt
+
+The first G0 acceptance unit is not to deploy AI. It lets an ordinary person enter, choose, use, stop, challenge and leave while keeping human and non-device routes available. It is a concept-level reference interface only: it presupposes no measured length, road, institution, budget or operator; exact points and engineering scale remain subject to formal boundaries, field walk-through and professional review.
+
+| Ordinary-person path | Visible space/service | Evidence to leave | If it fails |
+|---|---|---|---|
+| Enter and choose ordinary or AI-assisted route | Dual entry, staffed desk, screen-free/paper/voice alternative | Choice state, version and accessibility observation | Do not open if ordinary route is unavailable |
+| Request one public service | Purpose statement, consent prompt and low-stimulation waiting point | Scenario ID, data scope and responsible role | Stay at G0 if consent or responsibility is unclear |
+| Trigger human takeover | Physical/human takeover point and visible exit route | Reason, time and human-handling record | Freeze the scenario if takeover is unavailable |
+| Raise an objection and leave | Independent redress entrance and deletion/withdrawal notice | Ticket, deadline, disposition and exit state | No G1 progression before closure |
+| Independent replay and decide expand/repair/exit | Evidence cabinet, version board and public observer seat | Replay difference, worst-group result and decision record | Return to the paper protocol if it cannot be replayed |
+
+The package claims only a G0 conceptual evidence chain; G1/G2 still require field work, formal data, professional review and authorization. The five-step chain cross-checks the ten scenario cards, human fallback and implementation matrix without turning concept metrics into service performance [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]. The new offline runner binds two existing routes to real GeoJSON features and requires 5/5 journey steps, 5/5 rollback steps, 6/6 acceptance checks, and 2/2 resolving routes; three failing fixtures stop, reject a data call, or return to G0 while the ordinary route continues. This proves only local structural replay, not field service, accessibility, staffing, or safety outcomes [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count].
+
 ## Design Basis and Source List
 
 Formal evidence is limited to the locally registered announcement, cleared taskbook, local standard snapshots, and land-use guide. Sources marked unregistered_background_only are retained only to frame questions; none may become local boundary, control, score, or implementation evidence. [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#PROV-SITE-001]
@@ -83,6 +97,18 @@ Each project family moves through three phases with explicit responsibility boun
 | G2 conditional expansion | Professional review, procurement/insurance, operator and local-accountability roles | Field data, permits, maintenance SLA, privacy/copyright/cultural review and a retrospective report; model output cannot replace field evidence | Any missing prerequisite: withdraw display/stop expansion; never present concept metrics as outcomes |
 
 A four-season Commons Cycle frames public problem release, Xiaoyuehe co-learning walks, developer protocol camp, and annual v0.x health check/release note. The developer mechanism is problem register → office hours → G0 protocol → human/public review → version note; international conversion is multilingual evidence → due diligence → voluntary reversible exchange. [source:AGENT-TASKBOOK] [data:geometry/phasing.geojson#PHASE-03] [metric:scenario_g0_count]
+
+### Implementation Loop and Participating Roles
+
+To make implementation auditable rather than aspirational, the five conceptual project families use the same G0–G1–G2 gates. The roles below are proposed roles for professional confirmation, not confirmed partners. The structured package remains authoritative for the full fields, family responsibilities, data preconditions, acceptance evidence, and exit protocols in `visual/assets/implementation-operation-matrix.json` and `visual/assets/scenario-space-operation-matrix.json`.
+
+| Stage | Proposed participating roles | Required evidence and metrics | Entry / exit rule |
+|---|---|---|---|
+| G0 paper protocol | proposal team, community representatives, public-service role, data-responsibility role, cultural-review role | public problem, consent scope, equivalent human route, scenario cards, `scenario_g0_count`, `manual_fallback_coverage_ratio` | no consent, source, owner or human route means no progression |
+| G1 professional review | planning, transport, water, accessibility, privacy, safety, energy and cultural professionals | official geometry or field baseline, permit prerequisites, risk review, accessibility walk-through, recalculated metrics and review record | missing critical data or professional sign-off keeps the work at G0 |
+| G2 controlled-operation decision | authorised operator, on-site safety role, independent review role, community observers and complaint channel | responsibility chain, insurance/safety documents, incident log, human takeover, complaint closure, stop and withdrawal record | only a professional decision after all prerequisites; incident, consent withdrawal or failed metric freezes or withdraws the trial |
+
+This submission claims only a completed G0 conceptual evidence chain; G1 and G2 remain dependent on missing data and professional judgment. The table is not a permit, operator appointment, budget, partnership, road right or deployment claim. It makes stage, participating roles, acceptance metrics and exit actions directly reviewable in the narrative rather than leaving them only in JSON.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
