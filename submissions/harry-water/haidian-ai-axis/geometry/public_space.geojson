@@ -253,8 +253,8 @@
         ],
         "operational_status": "design_only_closed_pending_study",
         "operating_modes": [
-          "design_target: a continuous campus-station route is a design target only; no crossing form (at-grade, bridge, underpass, or other), covered segment, landing plaza, or staffed call point is asserted or presupposed",
-          "current_status: design-only / closed until a feasible, authorized alternative is confirmed by transport/accessibility/engineering study"
+          "research_mode: develop a continuous campus-station public route through comparison of crossing form, end-space, accessibility, lighting and operating options",
+          "delivery_gate: design_only_closed_pending_study; opening follows confirmation of a feasible, authorized alternative by transport/accessibility/engineering study"
         ],
         "priority_users": [
           "university_students_and_faculty",
@@ -271,10 +271,10 @@
           "ownership and utility conditions at both ends",
           "confirmed operator and authorization before any staffed or manual fallback can be claimed"
         ],
-        "manual_fallback": "No manual or staffed fallback is asserted. A continuous route and its fallback are design targets pending transport/accessibility/engineering study; until a feasible, authorized alternative is confirmed, N4 remains design-only and closed.",
+        "manual_fallback": "The research brief includes route continuity, offline wayfinding and a safe alternative under disruption. N4 remains design_only_closed_pending_study until transport, accessibility and engineering studies confirm the feasible authorized scheme.",
         "reversible": true,
         "area_sqm_declared": 65440.777,
-        "usage_note": "本要素为概念性公共空间原型节点，用于承载场景卡演练与展示，属设计建议，不表示已确定运营主体、已批准活动许可或已核实场地权属；本节点当前为设计阶段/关闭状态，连续路径及其应急替代方案均为待交通、无障碍与工程研究确认的设计目标，不预设覆盖段、落客广场、驻点人员或桥梁/地道/地面绕行方案。This is a conceptual public-space prototype node used to stage scenario-card trials; it is a design proposal only, not a confirmed operator, approved permit, or verified land ownership. This node is currently design-only/closed: the continuous route and its fallback are design targets pending transport/accessibility/engineering study, with no covered segment, landing plaza, staffed call point, or bridge/underpass/ground-detour presupposed."
+        "usage_note": "本要素把校—站连续公共联系定义为专项研究任务，交通、无障碍与工程研究将比较跨越方式、两端集散、照明、导视和运营组织；技术状态保持 design_only_closed_pending_study，完成可行性与授权确认后进入开放方案。This feature defines the continuous campus-station public link as a dedicated research task. Transport, accessibility and engineering studies compare crossing, end-space, lighting, wayfinding and operating options; its technical status remains design_only_closed_pending_study until feasibility and authorization support an opening scheme."
       },
       "geometry": {
         "type": "Polygon",

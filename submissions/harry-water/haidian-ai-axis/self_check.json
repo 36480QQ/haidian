@@ -41,21 +41,21 @@
       "result": "pass",
       "severity": "major",
       "target": "sources.json",
-      "message": "All 42 source IDs are unique and each is cited in proposal.md; no TODO evidence marker remains."
+      "message": "All 42 source records are unique; every proposal source marker resolves to the registry, every chapter carries evidence and no TODO marker remains."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "The repository-local professional evidence script passes with 42 source, 6 standard, 15 depth, 29 data and 15 metric references; this is not organizer review or acceptance."
+      "message": "The proposal-format-v2 bodies contain matched evidence sets in both languages: 28 source, 5 standard, 15 depth, 24 data and 15 metric IDs; official local evidence checks are run before sealing."
     },
     {
       "check_id": "BILINGUAL_EQUIVALENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.en.md",
-      "message": "Chinese and English proposals retain the same 13 required chapters, evidence-token sets, numerical boundaries, N4 status, staffing rule and risk qualifications."
+      "message": "Chinese and English proposals retain the same 13 required chapters, evidence-token sets, numerical definitions, N4 study status and operating rules."
     },
     {
       "check_id": "VISUAL_STATIC",
@@ -69,7 +69,7 @@
       "result": "pass",
       "severity": "major",
       "target": "drawings/",
-      "message": "The A3 pair contains 15+15 non-empty A3-landscape pages and the A0 pair contains 7+7 non-empty A0-landscape boards; all 44 pages were rendered and visually checked."
+      "message": "The A3 pair contains 14+14 non-empty A3-landscape pages and the A0 pair contains 7+7 non-empty A0-landscape boards; all 42 pages are rendered for visual inspection before sealing."
     },
     {
       "check_id": "N4_PENDING_STUDY",
