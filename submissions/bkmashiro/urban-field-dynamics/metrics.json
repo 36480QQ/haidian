@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Repository-provided provisional boundary; not an official redline or precise statutory-area basis."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +27,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Agent-generated conceptual observation footprint; not a surveyed existing building footprint."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +41,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Ratio of a conceptual commitment candidate to the provisional site boundary; not an approved green-space control."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +55,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Ratio of a reversible public-interface trial area to the provisional site boundary; not an approved public-space control."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +79,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Three key-area polygons are provisional rough constraints; only the required count is stable."
+      ]
     }
   }
 }

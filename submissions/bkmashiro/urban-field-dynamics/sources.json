@@ -42,6 +42,42 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "UFD-ENGINE",
+      "url": "https://github.com/bkmashiro/urban-field-dynamics/tree/b269749bcf0500f6e1c37c360440ecee508cdbae",
+      "source_type": "public_source_code",
+      "usage": "Pinned public Python engine, tests, ODD description, campaign configuration, and replay verifier for the implemented redevelopment qualification slice."
+    },
+    {
+      "id": "UFD-SMOKE-V1",
+      "path": "visual/assets/urban-field-smoke-v1/manifest.json",
+      "source_type": "agent_generated_synthetic_evidence",
+      "usage": "Synthetic 8-world matched-seed redevelopment mechanism qualification; not a calibrated Haidian forecast or planning control conclusion."
+    },
+    {
+      "id": "ODD-PROTOCOL-2020",
+      "url": "https://doi.org/10.18564/jasss.4259",
+      "source_type": "external_public_research",
+      "usage": "Overview, Design concepts and Details protocol used to document model purpose, entities, scales, scheduling, initialization, input data, and submodels."
+    },
+    {
+      "id": "URBANSIM-DOCUMENTATION",
+      "url": "https://cloud.urbansim.com/docs/general/documentation/urbansim.html",
+      "source_type": "external_public_documentation",
+      "usage": "Method reference for annual urban microsimulation, development and location-choice structure, aggregation, sensitivity analysis, and multi-run interpretation."
+    },
+    {
+      "id": "ROBUST-DECISION-MAKING",
+      "url": "https://documents1.worldbank.org/curated/en/365031468338971343/pdf/WPS6906.pdf",
+      "source_type": "external_public_research",
+      "usage": "Method reference for stress-testing policies under deep uncertainty and reporting vulnerabilities rather than optimizing one assumed future."
+    },
+    {
+      "id": "AEQUILIBRAE-DOCUMENTATION",
+      "url": "https://www.aequilibrae.com/develop/python/traffic_assignment/assignment_procedures.html",
+      "source_type": "external_public_documentation",
+      "usage": "Reference for the planned selected-scenario transport assignment adapter; not evidence that the current smoke model includes calibrated OD assignment."
     }
   ]
 }

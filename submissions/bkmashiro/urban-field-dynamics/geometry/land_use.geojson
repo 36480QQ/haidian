@@ -12,7 +12,9 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "0802",
-        "name_zh": "AI研发创新用地",
+        "name_zh": "研发与创新适宜性观测区（非控规用地）",
+        "decision_mode": "trigger",
+        "usage_note": "概念观测分区；不代表控规用地或开发承诺。",
         "area_sqm_declared": 2674562.492
       },
       "geometry": {
@@ -61,7 +63,9 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "1401",
-        "name_zh": "公园绿地与开敞空间",
+        "name_zh": "蓝绿硬 Pin 候选区（非正式绿线）",
+        "decision_mode": "commitment",
+        "usage_note": "概念性硬保护候选；须由官方绿线和生态数据确认。",
         "area_sqm_declared": 2589339.239
       },
       "geometry": {
@@ -102,7 +106,9 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "05",
-        "name_zh": "产业服务与商业服务用地",
+        "name_zh": "产业服务可逆试验区",
+        "decision_mode": "optionality",
+        "usage_note": "低成本可逆试验载体；不代表确定招商或建设项目。",
         "area_sqm_declared": 3366138.181
       },
       "geometry": {
@@ -143,7 +149,9 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "land_use_code": "0702",
-        "name_zh": "社区服务与配套用地",
+        "name_zh": "社区服务可逆试验区",
+        "decision_mode": "optionality",
+        "usage_note": "服务原型与共享空间试验载体；不代表审定设施布局。",
         "area_sqm_declared": 2782792.823
       },
       "geometry": {
