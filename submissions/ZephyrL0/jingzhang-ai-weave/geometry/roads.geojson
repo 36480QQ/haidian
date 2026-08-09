@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "weaveorigin_mobility_network",
+  "name": "common_eave_mobility_network",
   "features": [
     {
       "type": "Feature",
@@ -12,19 +12,20 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "greenway",
-        "name_zh": "京张智脉慢行主廊",
-        "design_note": "概念性慢行连通关系，不表达道路红线或工程线位。"
+        "name_zh": "京张纵向步行与轮椅主脊",
+        "name_en": "Jingzhang walking and wheelchair spine",
+        "design_note": "概念关系线，已裁切至临时研究边界；不是道路或工程线位。"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.340948,
-            39.98625
+            116.34562799999999,
+            39.941625
           ],
           [
-            116.354052,
-            39.98625
+            116.34562799999999,
+            40.023875
           ]
         ]
       }
@@ -39,19 +40,20 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_class": "cycleway",
-        "name_zh": "三核公共骑行支线",
-        "design_note": "概念性慢行网络。"
+        "name_zh": "连续骑行伴行线",
+        "name_en": "Continuous companion cycle route",
+        "design_note": "概念慢行关系，已裁切至临时研究边界；待断面和安全专项。"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.346096,
-            39.9495
+            116.34625199999999,
+            39.941625
           ],
           [
-            116.347032,
-            40.016
+            116.34625199999999,
+            40.023875
           ]
         ]
       }
@@ -65,20 +67,187 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_class": "transit_connection",
-        "name_zh": "轨道站点接驳界面",
-        "design_note": "需以正式站点、道路和安全资料复核。"
+        "road_class": "pedestrian",
+        "name_zh": "大钟寺站城门户缝",
+        "name_en": "Dazhongsi station-city seam",
+        "design_note": "横向校—园—河—站概念链接，已裁切至临时研究边界；不表达道路红线、桥隧或信号方案。"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.350932,
-            39.9565
+            116.34048,
+            39.950375
           ],
           [
-            116.350932,
-            40.00025
+            116.35452,
+            39.950375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "知春路知识服务缝",
+        "name_en": "Zhichun knowledge-service seam",
+        "design_note": "横向校—园—河—站概念链接，已裁切至临时研究边界；不表达道路红线、桥隧或信号方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34048,
+            39.967
+          ],
+          [
+            116.35452,
+            39.967
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "清华园校城共享缝",
+        "name_en": "Qinghuayuan campus-city seam",
+        "design_note": "横向校—园—河—站概念链接，已裁切至临时研究边界；不表达道路红线、桥隧或信号方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34048,
+            39.983624999999996
+          ],
+          [
+            116.35381,
+            39.983624999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "小月河场景试验缝",
+        "name_en": "Xiaoyuehe scenario-test seam",
+        "design_note": "横向校—园—河—站概念链接，已裁切至临时研究边界；不表达道路红线、桥隧或信号方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.341498387097,
+            40.002874999999996
+          ],
+          [
+            116.354005479452,
+            40.002874999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "pedestrian",
+        "name_zh": "清河生态治理缝",
+        "name_en": "Qinghe ecology-governance seam",
+        "design_note": "横向校—园—河—站概念链接，已裁切至临时研究边界；不表达道路红线、桥隧或信号方案。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.342230487805,
+            40.016875
+          ],
+          [
+            116.35452,
+            40.016875
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "西侧高校与专业服务接驳链",
+        "design_note": "概念公共交通接驳关系，已裁切至临时研究边界。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34125999999999,
+            39.9425
+          ],
+          [
+            116.34125999999999,
+            39.99918
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-009",
+      "properties": {
+        "id": "ROAD-009",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "东侧社区与轨道接驳链",
+        "design_note": "概念公共交通接驳关系，已裁切至临时研究边界。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35296,
+            39.9425
+          ],
+          [
+            116.35296,
+            40.022999999999996
           ]
         ]
       }

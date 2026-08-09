@@ -22,8 +22,8 @@
     {
       "check_id": "SPATIAL_REVIEW_RUNTIME",
       "severity": "info",
-      "result": "pass",
-      "message": "已安装jsonschema、Shapely和PyProj，并使用仓库全量自检完成空间复核。"
+      "result": "unknown",
+      "message": "当前运行环境未安装Shapely与PyProj；不得声称完成仓库专业空间复核。官方intake、professional、visual校验和依赖无关拓扑审计另行记录。"
     },
     {
       "check_id": "BILINGUAL_PDF_LAYOUT",
@@ -36,6 +36,30 @@
       "severity": "info",
       "result": "pass",
       "message": "两项公共设计均记录问题、空间动作、全天运营、Agent责任和专业深化触发条件。"
+    },
+    {
+      "check_id": "V3_ARCHITECTURAL_DEPTH",
+      "severity": "info",
+      "result": "pass",
+      "message": "两项旗舰各形成四类概念剖面、季节/时段逻辑、十二条市民旅程和四阶段实施门。"
+    },
+    {
+      "check_id": "V3_ADVERSARIAL_REVIEW",
+      "severity": "info",
+      "result": "pass",
+      "message": "十二项离线反方任务和三个负样本均记录输入、发现、设计响应、人工决定与可回放结果。"
+    },
+    {
+      "check_id": "V3_PUBLIC_EVIDENCE_BOUNDARY",
+      "severity": "info",
+      "result": "pass",
+      "message": "Agent市民旅程明确标为待验证假设，不替代真实公众意见或现场绩效。"
+    },
+    {
+      "check_id": "DEPENDENCY_FREE_TOPOLOGY_AUDIT",
+      "severity": "info",
+      "result": "pass",
+      "message": "补充审计检查九个必需GeoJSON的结构、必需属性、坐标范围、闭合、自交、临时边界一致性、越界、用地覆盖和正面积重叠；它不替代Shapely/PyProj或专业测绘审查。"
     }
   ]
 }

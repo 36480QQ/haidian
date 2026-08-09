@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "weaveorigin_public_space",
+  "name": "common_eave_public_space_seams",
   "features": [
     {
       "type": "Feature",
@@ -11,37 +11,212 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "共知公共界面",
-        "design_note": "连接三处重点区的可停留、可展示、可人工复核的公共空间带。",
-        "area_sqm_declared": 1534331.743
+        "name_zh": "大钟寺站城门户缝",
+        "name_en": "Dazhongsi station-city seam",
+        "system_role": "cross_link",
+        "minimum_service_zh": "连续无障碍、免费停留、遮蔽或树荫、饮水厕所导向、有人可问",
+        "design_note": "概念公共空间链接，不表达道路红线或已批准项目范围。",
+        "area_sqm_declared": 186437.15
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35409,
-              39.980125
+              116.34048,
+              39.951075
             ],
             [
-              116.3533,
-              39.99
+              116.34048,
+              39.949675
             ],
             [
-              116.3534301369863,
-              39.992375
+              116.35452,
+              39.949675
             ],
             [
-              116.34082096774193,
-              39.992375
+              116.35452,
+              39.951075
             ],
             [
-              116.34003064516129,
-              39.980125
+              116.34048,
+              39.951075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "知春路知识服务缝",
+        "name_en": "Zhichun knowledge-service seam",
+        "system_role": "cross_link",
+        "minimum_service_zh": "连续无障碍、免费停留、遮蔽或树荫、饮水厕所导向、有人可问",
+        "design_note": "概念公共空间链接，不表达道路红线或已批准项目范围。",
+        "area_sqm_declared": 186437.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34048,
+              39.9677
             ],
             [
-              116.35409,
-              39.980125
+              116.34048,
+              39.9663
+            ],
+            [
+              116.35452,
+              39.9663
+            ],
+            [
+              116.35452,
+              39.9677
+            ],
+            [
+              116.34048,
+              39.9677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "清华园校城共享缝",
+        "name_en": "Qinghuayuan campus-city seam",
+        "system_role": "cross_link",
+        "minimum_service_zh": "连续无障碍、免费停留、遮蔽或树荫、饮水厕所导向、有人可问",
+        "design_note": "概念公共空间链接，不表达道路红线或已批准项目范围。",
+        "area_sqm_declared": 177009.061
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34048,
+              39.984325
+            ],
+            [
+              116.34048,
+              39.982925
+            ],
+            [
+              116.353866,
+              39.982925
+            ],
+            [
+              116.353754,
+              39.984325
+            ],
+            [
+              116.34048,
+              39.984325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-004",
+      "properties": {
+        "id": "PUBLIC-004",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "小月河场景试验缝",
+        "name_en": "Xiaoyuehe scenario-test seam",
+        "system_role": "cross_link",
+        "minimum_service_zh": "连续无障碍、免费停留、遮蔽或树荫、饮水厕所导向、有人可问",
+        "design_note": "概念公共空间链接，不表达道路红线或已批准项目范围。",
+        "area_sqm_declared": 166081.669
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35396712328767,
+              40.002175
+            ],
+            [
+              116.35404383561644,
+              40.003575
+            ],
+            [
+              116.3415435483871,
+              40.003575
+            ],
+            [
+              116.34145322580645,
+              40.002175
+            ],
+            [
+              116.35396712328767,
+              40.002175
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-005",
+      "properties": {
+        "id": "PUBLIC-005",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "清河生态治理缝",
+        "name_en": "Qinghe ecology-governance seam",
+        "system_role": "cross_link",
+        "minimum_service_zh": "连续无障碍、免费停留、遮蔽或树荫、饮水厕所导向、有人可问",
+        "design_note": "概念公共空间链接，不表达道路红线或已批准项目范围。",
+        "area_sqm_declared": 163192.42
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35452,
+              40.016175
+            ],
+            [
+              116.35452,
+              40.017575
+            ],
+            [
+              116.34226463414633,
+              40.017575
+            ],
+            [
+              116.3421963414634,
+              40.016175
+            ],
+            [
+              116.35452,
+              40.016175
             ]
           ]
         ]
