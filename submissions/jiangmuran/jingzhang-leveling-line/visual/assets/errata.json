@@ -4,18 +4,18 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 27,
+  "total": 30,
   "by_found_by": {
    "audit": 14,
    "own-gate": 1,
-   "external-reviewer": 1,
-   "self": 11
+   "external-reviewer": 2,
+   "self": 13
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
-   "number-outlived-the-sentence-holding-it": 2,
+   "number-outlived-the-sentence-holding-it": 4,
    "two-copies-of-one-thing-drifted": 3,
-   "check-measured-the-convenient-thing": 5,
+   "check-measured-the-convenient-thing": 6,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
@@ -301,6 +301,38 @@
    "what_zh": "FIG.01 的用地图例列六类，而剖分已是七类（新增 1207）。地图对未知代码走了兜底分支，把这些地块画成灰色标为「其他」——图上出现了图例没有命名的颜色。",
    "why_zh": "图例是手排的，用地代码不是；兜底分支让缺项变得无声。",
    "fix_zh": "补入第七类，并删除兜底：出现图例未收录的用地代码即构建失败。"
+  },
+  {
+   "id": "E28",
+   "commit": "6dc436cb",
+   "file": "assets/figures/identity.png",
+   "found_by": "self",
+   "shape": "number-outlived-the-sentence-holding-it",
+   "what_zh": "FIG.07 页脚写「读数牌所示 0.86 为示意数值」，而图上的读数牌显示 0.26——免责说明在为一个图上不存在的数字免责，同时让图上真有的那个数没有免责。",
+   "why_zh": "读数值与免责它的那句话是两个字面量，改了一个没改另一个。",
+   "fix_zh": "两者改由同一个常量提供。"
+  },
+  {
+   "id": "E29",
+   "commit": "7b66c9ec",
+   "file": "assets/figures/evidence-circuit.png",
+   "found_by": "self",
+   "shape": "number-outlived-the-sentence-holding-it",
+   "what_zh": "FIG.02 写「PR 编号已过 900」（实为已过 1000，本分支的 PR 即 #1065），并把 agent_declarations.json 称作普查的「原始快照」——它是首轮 184 份的快照，当前语料为 354 份。",
+   "why_zh": "这张图其余部分在构建时读 field_map，因此始终最新；漂移的两处恰恰是手打的两处。",
+   "fix_zh": "两处改准，首轮份数由数据填入。"
+  },
+  {
+   "id": "E30",
+   "commit": "1393960c",
+   "file": "report/copyright_statement.md",
+   "found_by": "external-reviewer",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "manifest 与 rights_ledger.json 均为 80 个文件，而 copyright_statement.md 写 77，分类表合计也是 77。",
+   "why_zh": "那份台账存在的全部意义就是防止手工清单与实际随包文件漂移——而描述这份台账的那段文字，它的计数是手打的，不在它自己的覆盖范围内。",
+   "fix_zh": "该段与分类表改由 build_rights_ledger.py 从生成 JSON 的同一份列表 splice 进正文。",
+   "found_by_name": "@147228",
+   "found_in": "PR #1065"
   }
  ]
 }
