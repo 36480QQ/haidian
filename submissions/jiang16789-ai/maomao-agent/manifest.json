@@ -32,7 +32,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "4bd727e3c631f5c2b80420d32258dc17020e47a6a5e5de90bb67d49b976d7ca0"
+      "sha256": "2232ae50f1e9e81a351c670fd1c6553c78d2dea6ffb328028a104d1fade87ccb"
     },
     {
       "path": "design_depth_matrix.json",
@@ -44,7 +44,7 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": "865d787a0853e2f26e377894805a0862f20eb48710e3e87f749f21334f426398"
+      "sha256": "bf64134e6787e265ac746041eb7b8e37e5b547ebc08c0934a3f24b9dab8028c5"
     },
     {
       "path": "metrics.json",
@@ -92,7 +92,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": false,
-      "sha256": "5fff3020190c5359cca307031838086bd00fcb4099792c815871049bc5563a0e"
+      "sha256": "f2f7ad046c61d970db5f08060e4cc044d33d3a40c0d0e36d7943f0d0c6449c2f"
     },
     {
       "path": "visual/assets/01-总体方案图.png",
@@ -165,6 +165,18 @@
       "role": "visualization",
       "required": false,
       "sha256": "8ca99b294be05607a4bb53217eec48199b6cc6965bdacd72dbd2ad2f64d4706e"
+    },
+    {
+      "path": "visual/assets/leaflet.css",
+      "role": "visualization",
+      "required": false,
+      "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+    },
+    {
+      "path": "visual/assets/leaflet.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
     },
     {
       "path": "visual/assets/logo-京张智脉.svg",

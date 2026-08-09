@@ -70,8 +70,7 @@
       "requirement_id": "agent.1",
       "mandatory": true,
       "report_sections": [
-        "overall_concept",
-        "functional_coordination"
+        "overall_concept"
       ],
       "geojson_layers": [
         "site_boundary",
@@ -82,8 +81,6 @@
         "site_area_sqm",
         "key_area_count"
       ],
-      "status": "completed",
-      "description": "一带总体概念与功能统筹方案设计",
       "drawings": [
         "a0-boards.pdf",
         "a3-booklet.pdf"
@@ -101,7 +98,9 @@
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
+      ],
+      "status": "completed",
+      "description": "一带总体概念与功能统筹"
     },
     {
       "requirement_id": "agent.2",
@@ -114,19 +113,15 @@
         "site_boundary"
       ],
       "metrics": [
-        "case_study_count"
+        "site_area_sqm"
       ],
-      "status": "conceptual_complete",
-      "description": "全球AI创新生态案例研究",
       "drawings": [
         "a3-booklet.pdf"
       ],
       "visual_sections": [
-        "visual/index.html",
-        "visual/assets/S3.svg"
+        "visual/index.html"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
@@ -134,7 +129,9 @@
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
+      ],
+      "status": "conceptual_complete",
+      "description": "全球AI创新生态案例研究"
     },
     {
       "requirement_id": "agent.3",
@@ -149,11 +146,8 @@
       ],
       "metrics": [
         "scenario_card_count",
-        "testing_scenario_count",
-        "persona_count"
+        "testing_scenario_count"
       ],
-      "status": "completed",
-      "description": "AI+场景落地设计（含12张场景卡）",
       "drawings": [
         "a0-boards.pdf",
         "a3-booklet.pdf"
@@ -164,7 +158,6 @@
         "visual/assets/S3.svg"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
@@ -172,7 +165,9 @@
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
+      ],
+      "status": "completed",
+      "description": "AI+场景落地设计"
     },
     {
       "requirement_id": "agent.4",
@@ -190,17 +185,13 @@
         "public_space_ratio",
         "green_ratio"
       ],
-      "status": "conceptual_complete",
-      "description": "公共空间和AI地标设计（含10组件公共空间库）",
       "drawings": [
         "a0-boards.pdf"
       ],
       "visual_sections": [
-        "visual/index.html",
-        "visual/assets/S3.svg"
+        "visual/index.html"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
@@ -208,14 +199,15 @@
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
+      ],
+      "status": "conceptual_complete",
+      "description": "公共空间与AI地标设计"
     },
     {
       "requirement_id": "agent.5",
       "mandatory": true,
       "report_sections": [
-        "heritage_narrative",
-        "international_communication"
+        "heritage_narrative"
       ],
       "geojson_layers": [
         "site_boundary"
@@ -223,8 +215,6 @@
       "metrics": [
         "site_area_sqm"
       ],
-      "status": "conceptual_complete",
-      "description": "文化遗产叙事与国际传播",
       "drawings": [
         "a3-booklet.pdf"
       ],
@@ -233,16 +223,16 @@
         "visual/assets/S2.svg"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE"
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
+      ],
+      "status": "conceptual_complete",
+      "description": "文化遗产叙事与国际传播"
     },
     {
       "requirement_id": "agent.6",
@@ -260,8 +250,6 @@
         "vdr",
         "tfc"
       ],
-      "status": "completed",
-      "description": "全球AI创新活动体系与运营机制（含四季一账本+项目责任矩阵）",
       "drawings": [
         "a0-boards.pdf",
         "a3-booklet.pdf"
@@ -271,7 +259,6 @@
         "visual/assets/S4.svg"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
@@ -279,75 +266,16 @@
       ],
       "self_check_ids": [
         "self_check.json"
-      ]
-    },
-    {
-      "requirement_id": "cross_cutting.scope",
-      "mandatory": true,
-      "report_sections": [
-        "three_level_scope"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "key_areas"
-      ],
-      "metrics": [
-        "site_area_sqm"
       ],
       "status": "completed",
-      "description": "三层范围工作框架",
-      "drawings": [
-        "a0-boards.pdf"
-      ],
-      "visual_sections": [
-        "visual/index.html"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "A-CONTROLS-001"
-      ],
-      "self_check_ids": [
-        "self_check.json"
-      ]
-    },
-    {
-      "requirement_id": "cross_cutting.synergy",
-      "mandatory": true,
-      "report_sections": [
-        "regional_synergy"
-      ],
-      "geojson_layers": [
-        "site_boundary"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "status": "conceptual_complete",
-      "description": "区域创新协同矩阵（北纬/未来科学城/怀柔/经开区/京津冀）",
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "visual/index.html"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "A-CONTROLS-001"
-      ],
-      "self_check_ids": [
-        "self_check.json"
-      ]
+      "description": "运营机制与活动体系"
     },
     {
       "requirement_id": "taskbook.1.3.1",
       "mandatory": true,
       "report_sections": [
-        "overall_concept",
-        "three_level_scope"
+        "three_level_scope",
+        "overall_concept"
       ],
       "geojson_layers": [
         "site_boundary",
@@ -358,11 +286,11 @@
         "key_area_count"
       ],
       "drawings": [
-        "a0-boards.pdf",
-        "a3-booklet.pdf"
+        "a0-boards.pdf"
       ],
       "visual_sections": [
-        "visual/index.html"
+        "visual/index.html",
+        "visual/assets/S1.svg"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -375,13 +303,14 @@
         "self_check.json"
       ],
       "status": "completed",
-      "description": "任务书1.3.1 一带总体概念与三层范围"
+      "description": "1.3.1 三区两翼统筹"
     },
     {
       "requirement_id": "taskbook.1.3.2",
       "mandatory": true,
       "report_sections": [
-        "proposal.md"
+        "case_studies",
+        "ai_ecosystem"
       ],
       "geojson_layers": [
         "site_boundary"
@@ -404,26 +333,28 @@
       "self_check_ids": [
         "self_check.json"
       ],
-      "status": "completed",
-      "description": "任务书1.3.2 全球AI创新生态案例"
+      "status": "conceptual_complete",
+      "description": "1.3.2 全球AI生态案例"
     },
     {
       "requirement_id": "taskbook.1.3.3",
       "mandatory": true,
       "report_sections": [
-        "proposal.md"
+        "scenario_cards",
+        "ai_scenarios"
       ],
       "geojson_layers": [
-        "site_boundary"
+        "public_space"
       ],
       "metrics": [
-        "site_area_sqm"
+        "scenario_card_count"
       ],
       "drawings": [
         "a3-booklet.pdf"
       ],
       "visual_sections": [
-        "visual/index.html"
+        "visual/index.html",
+        "visual/assets/S2.svg"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -435,22 +366,25 @@
         "self_check.json"
       ],
       "status": "completed",
-      "description": "任务书1.3.3 AI+场景落地设计"
+      "description": "1.3.3 AI场景落地"
     },
     {
-      "requirement_id": "taskbook.1.3.4",
+      "requirement_id": "taskbook.1.4.1",
       "mandatory": true,
       "report_sections": [
-        "proposal.md"
+        "public_space",
+        "component_library"
       ],
       "geojson_layers": [
-        "site_boundary"
+        "public_space",
+        "green_space"
       ],
       "metrics": [
-        "site_area_sqm"
+        "public_space_ratio",
+        "green_ratio"
       ],
       "drawings": [
-        "a3-booklet.pdf"
+        "a0-boards.pdf"
       ],
       "visual_sections": [
         "visual/index.html"
@@ -464,14 +398,15 @@
       "self_check_ids": [
         "self_check.json"
       ],
-      "status": "completed",
-      "description": "任务书1.3.4 公共空间与AI地标"
+      "status": "conceptual_complete",
+      "description": "1.4.1 公共空间与组件库"
     },
     {
-      "requirement_id": "taskbook.1.3.5",
+      "requirement_id": "taskbook.1.5.1",
       "mandatory": true,
       "report_sections": [
-        "proposal.md"
+        "heritage_narrative",
+        "international_communication"
       ],
       "geojson_layers": [
         "site_boundary"
@@ -494,26 +429,30 @@
       "self_check_ids": [
         "self_check.json"
       ],
-      "status": "completed",
-      "description": "任务书1.3.5 文化遗产叙事与国际传播"
+      "status": "conceptual_complete",
+      "description": "1.5.1 文化叙事"
     },
     {
-      "requirement_id": "taskbook.1.3.6",
+      "requirement_id": "taskbook.1.6.1",
       "mandatory": true,
       "report_sections": [
-        "proposal.md"
+        "verification_economics",
+        "activity_calendar",
+        "governance"
       ],
       "geojson_layers": [
-        "site_boundary"
+        "phasing"
       ],
       "metrics": [
-        "site_area_sqm"
+        "vci",
+        "vdr"
       ],
       "drawings": [
         "a3-booklet.pdf"
       ],
       "visual_sections": [
-        "visual/index.html"
+        "visual/index.html",
+        "visual/assets/S4.svg"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -525,7 +464,7 @@
         "self_check.json"
       ],
       "status": "completed",
-      "description": "任务书1.3.6 运营机制与活动体系"
+      "description": "1.6.1 运营与活动体系"
     }
   ]
 }
