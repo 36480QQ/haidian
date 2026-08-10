@@ -48,6 +48,7 @@
     "total_floor_area_sqm": {
       "status": "known",
       "value": 32256.0,
+      "metric_kind": "conceptual_derived",
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -300,33 +301,37 @@
       ]
     },
     "identity_before_confirmed_step_target": {
-      "status": "known",
-      "value": 0.0,
+      "status": "unknown",
+      "value": null,
+      "design_target": 0.0,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
         "assumptions.json"
       ],
       "formula": "identity requests before a responsibility-and-legal review confirms the exact step / all sampled journeys",
-      "confidence": "low",
+      "confidence": "unknown",
       "assumptions": [
         "Design target pending field baseline and legal review."
       ],
-      "metric_kind": "design_target"
+      "metric_kind": "design_target",
+      "reason": "No field baseline has been collected, and responsibility assignment and legal review have not confirmed the exact identity-required step for each sampled journey."
     },
     "offline_completion_target": {
-      "status": "known",
-      "value": 0.95,
+      "status": "unknown",
+      "value": null,
+      "design_target": 0.95,
       "unit": "ratio",
       "source_files": [
         "proposal.md"
       ],
       "formula": "completed tasks through staffed, paper or mechanical path / attempted eligible tasks",
-      "confidence": "low",
+      "confidence": "unknown",
       "assumptions": [
         "Design target pending field baseline and staffing plan."
       ],
-      "metric_kind": "design_target"
+      "metric_kind": "design_target",
+      "reason": "No field completion baseline has been measured, and the staffed-service schedule and capacity plan have not been confirmed."
     }
   }
 }
