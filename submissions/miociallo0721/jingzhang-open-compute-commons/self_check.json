@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_PROVISIONAL",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Boundary is explicitly a provisional constraint, not a statutory redline or precise-area basis; full recalculation is recorded for trusted official geometry."
+    },
+    {
+      "check_id": "KEY_AREAS_PROVISIONAL",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three key areas retain organizer-supplied provisional geometry; no station, road, parcel, ownership, or approved-development inference is made."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "info",
+      "target": "geometry/land_use.geojson",
+      "message": "Functional polygons are recalculated in EPSG:4548, share topology from one provisional site constraint, form one gap-free/non-overlapping temporary partition, and exchange as EPSG:4326."
+    },
+    {
+      "check_id": "FOUR_CONTRACT_GATE",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "共同 RACI 与普通服务连续性规则在场景卡总则定义一次；S01–S12 分别保留独特的责任、进入、拒收/退回、停止、恢复、证据与复核，联合通行证/H1-H3 在 proposal 和 Figure 01/05 可读。"
+    },
+    {
+      "check_id": "NO_UNVERIFIED_CONTROL_CLAIM",
+      "result": "pass",
+      "severity": "info",
+      "target": "metrics.json",
+      "message": "FAR, height, statutory density/green ratio, setbacks, utilities, energy/cooling, heat recovery, investment and schedule remain unknown without project evidence."
+    },
+    {
+      "check_id": "NO_MEASUREMENT_CLAIM",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "No site visit, measurement, simulation, deployment, vendor test, user test or human review is claimed; protocols are proposed and untested."
+    },
+    {
+      "check_id": "BILINGUAL_ALIGNMENT",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.en.md",
+      "message": "Chinese primary proposal and complete English counterpart share chapters, four-contract logic, scenarios, geometry status, unknowns and evidence anchors."
+    },
+    {
+      "check_id": "OFFLINE_AND_COPYRIGHT",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "HTML is static/offline. v1.3 figures use local SVG/PNG technical overlays and a disclosed local non-geographic image-generation base at no more than 4.5% opacity; no remote asset/map/CDN/script/tracker/form/font is loaded."
+    },
+    {
+      "check_id": "PATH_SEPARATION_AND_MODULE_SCALE",
+      "result": "pass",
+      "severity": "info",
+      "target": "geometry/buildings.geojson; geometry/roads.geojson",
+      "message": "Twelve small conceptual reference modules replace the former megablocks. Public, controlled, maintenance/exit, and emergency/ordinary-recovery path relations are separately identified; they remain non-surveyed, non-statutory concepts."
+    },
+    {
+      "check_id": "PASSPORT_RACI_AND_CONTINUITY",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "The joint four-contract passport defines minimum evidence, receiving/refusal, pause, restoration acceptance, proposed RACI, procurement replacement conditions, and ordinary-service continuity."
+    },
+    {
+      "check_id": "PDF_FORMAT_AND_TEXT",
+      "result": "pass",
+      "severity": "info",
+      "target": "drawings/",
+      "message": "Local pypdf inspection on 2026-08-10 confirmed: both A3 editions have 12 readable-text pages at 420×297 mm landscape; both A0 editions have 4 readable-text boards at 1189×841 mm landscape. Page order and Chinese/English counterpart counts align."
+    },
+    {
+      "check_id": "VISUAL_VECTOR_BRAND",
+      "result": "pass",
+      "severity": "info",
+      "target": "assets/figures/metrics-evidence.png",
+      "message": "五组中英文技术图保留本地 SVG 源与 PNG 衍生，临时边界低对比虚线；中性四端口符号、组合、单色/高对比/低墨量和实体应用集中于 Figure 05 与 A3/A0。"
+    },
+    {
+      "check_id": "ARCH_DEPTH_OFFICIAL_FILE_GAP",
+      "result": "pass",
+      "severity": "minor",
+      "target": "standard_matrix.json; sources.json",
+      "message": "MOHURD-ARCH-DESIGN-DEPTH-2016 is correctly recorded as mandatory=false and review_status=data_gap, with only its repository-defined missing-official-file record cited. No urban-design standard is substituted as its source."
+    }
+  ]
+}
