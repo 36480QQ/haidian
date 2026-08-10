@@ -7,6 +7,7 @@
       "professional_dimension": "现状分析",
       "required": true,
       "status": "complete",
+      "attained_depth": "assumption_level",
       "proposal_sections": [
         "设计依据与资料清单",
         "三层范围工作框架",
@@ -40,7 +41,8 @@
         "BOUNDARY_TRUST",
         "KEY_AREA_PROVISIONAL"
       ],
-      "evidence_summary_zh": "诊断分两层：可从公开资料判断的问题（三处慢行断点、东西阻隔、校区园区社区权属叠加）逐条给出；受资料缺口限制无法诊断的部分（现状建筑底数、权属、控规条件）明确列为缺口并转为设计条件，不编造现状。"
+      "evidence_summary_zh": "本项达到的是「问题假设」深度而非「现状诊断」深度。可从场地几何与公开资料判断的部分（窄带形态决定南北连续性/东西可达性的问题性质、公告已指出的慢行断点方向）逐条给出；无现状底数支撑的部分明确列为待核验假设，不编造现状。",
+      "depth_limit_zh": "缺现状地块、人口、产业、建筑轮廓、权属、道路断面、客流、停车、公共服务、市政、生态与文保 GIS 底数。本项全部现状表述均为待核验问题假设；三处横缝长度为本方案概念线位的量算值，不是现状断点实测跨度。取得官方资料或完成现场调查后须逐条核验，结论可能修正。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -48,6 +50,7 @@
       "professional_dimension": "规划范围",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "三层范围工作框架"
       ],
@@ -89,6 +92,7 @@
       "professional_dimension": "城市设计",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "统筹研究范围产业与未来城市研究",
         "三层范围工作框架",
@@ -132,6 +136,7 @@
       "professional_dimension": "国土空间规划",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案",
         "三层范围工作框架"
@@ -178,6 +183,7 @@
       "professional_dimension": "控制性详细规划",
       "required": true,
       "status": "complete",
+      "attained_depth": "gap_declared",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案",
         "指标体系、面积复算与合规矩阵",
@@ -209,7 +215,8 @@
         "DETERMINISTIC_VALIDATION",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "容积率、建筑密度与绿地率控制指标未公开，保持 unknown 不予推定；本项只给功能比例与空间组织建议，并给出补齐后的重算清单。"
+      "evidence_summary_zh": "容积率、建筑密度与绿地率控制指标未公开，六项法定指标保持 unknown 不予推定；本项只给功能比例与空间组织建议，并给出补齐后的重算清单。",
+      "depth_limit_zh": "缺已批准控规的强度条件。本项的实质产出是缺口的三段式转化（现在可做／补齐后可做／补齐后重算），而非强度控制结论。"
     },
     {
       "item_id": "height_massing_character",
@@ -217,6 +224,7 @@
       "professional_dimension": "城市设计",
       "required": true,
       "status": "complete",
+      "attained_depth": "guidance_only",
       "proposal_sections": [
         "蓝绿空间、公共空间与城市风貌",
         "用地、建筑规模与拆改留方案"
@@ -247,7 +255,8 @@
         "DETERMINISTIC_VALIDATION",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "高度与体量只给引导性建议：建议以京张铁路人字形与工业遗存尺度为母题，沿主轴保持低界面、向东西两侧递增。建筑高度控制（含文保、景观、航空限高）未公开，保持 unknown。"
+      "evidence_summary_zh": "高度与体量只给引导性建议：以京张铁路人字形与工业遗存尺度为母题，沿主轴保持低界面、向东西两侧递增，中小体量组合优于大体量单体。建筑高度控制（含文保、景观视廊、航空限高）未公开，保持 unknown。",
+      "depth_limit_zh": "缺已批准高度控制、文保范围与建设控制地带 GIS、景观视廊与航空限高条件。本项只给形态关系与设计意向，不给任何高度、强度、密度数值。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -255,6 +264,7 @@
       "professional_dimension": "城市更新",
       "required": true,
       "status": "complete",
+      "attained_depth": "direction_only",
       "proposal_sections": [
         "用地、建筑规模与拆改留方案",
         "重点区域详细设计",
@@ -286,7 +296,8 @@
         "DETERMINISTIC_VALIDATION",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "以可逆性替代地块级拆改留结论：留白用地上的体量归为可逆轻构，其余归为留改为主。现状建筑底数与权属缺失，不给具体地块拆改留方案。"
+      "evidence_summary_zh": "本项**未**给出拆改留分类，只给出概念体量的处置方向建议（massing_treatment：可逆轻构方向／以留改为主方向）。buildings 图层为 agent 生成的概念体量，不对应任何现状建筑。",
+      "depth_limit_zh": "缺现状建筑轮廓、高度、层数、用途、建成年代与权属状态，无法做保留／改造／拆除／新建的法定分类。可逆性是干预属性，不能替代该分类。取得现状建筑底数与权属资料后须重建 buildings 图层并另行编制拆改留专项方案。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -294,6 +305,7 @@
       "professional_dimension": "交通与市政",
       "required": true,
       "status": "complete",
+      "attained_depth": "concept_level",
       "proposal_sections": [
         "交通、轨道、市政与公共服务设施"
       ],
@@ -322,7 +334,8 @@
         "DETERMINISTIC_VALIDATION",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "三处慢行断点逐条给出缝合策略并标注长度；轨道站点一体化与非机动车静态交通组织为概念建议，不给道路红线、断面、轨道线位或桥隧工程结论。"
+      "evidence_summary_zh": "三处慢行断点给出缝合策略方向与概念线位长度；轨道站点一体化与非机动车静态交通组织仅为空间组织原则，不给道路红线、断面、轨道线位、客流测算或桥隧工程结论。",
+      "depth_limit_zh": "缺道路红线、道路断面、轨道站点边界与出入口位置、客流数据、慢行断点实测与停车供给底数。全部线位为概念线位，road_area_ratio 保持 unknown。补齐后须重做线位与断面并复核缝合方案。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -330,6 +343,7 @@
       "professional_dimension": "交通与市政",
       "required": true,
       "status": "complete",
+      "attained_depth": "system_structure_only",
       "proposal_sections": [
         "交通、轨道、市政与公共服务设施",
         "更新项目清单、实施政策与分期计划"
@@ -359,7 +373,8 @@
         "DETERMINISTIC_VALIDATION",
         "PROFESSIONAL_EVIDENCE_REVIEW"
       ],
-      "evidence_summary_zh": "分布式能源与端侧算力等 AI 产业新型设施与传统三大设施的融合模式只给方向性建议与选址原则；管线、容量与负荷测算属专业范畴，不由本方案给出。"
+      "evidence_summary_zh": "给出四类设施（AI产业服务／创新服务平台／人才生活服务／新型基础设施）各自的分层结构、服务半径口径的建议依据与落位规则，补齐设施底数后可直接转为配置标准；不给任何工程测算。",
+      "depth_limit_zh": "缺管线、排水、电力、燃气、消防、防洪排涝、海绵城市指标、能源负荷与市政容量底数，以及各类公共服务设施现状规模与分布。本项只给体系结构与落位规则，不给规模指标与容量测算。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -367,6 +382,7 @@
       "professional_dimension": "景观与公共空间",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "蓝绿空间、公共空间与城市风貌"
       ],
@@ -408,6 +424,7 @@
       "professional_dimension": "详细设计",
       "required": true,
       "status": "complete",
+      "attained_depth": "strategy_card_level",
       "proposal_sections": [
         "重点区域详细设计"
       ],
@@ -443,7 +460,8 @@
         "KEY_AREA_PROVISIONAL",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "三区各成一篇，含定位、空间结构、建筑更新、交通慢行、公共空间、AI 场景锚点与实施风险；每区标注版本归属与风险门槛。"
+      "evidence_summary_zh": "三区各成一篇，含定位、空间结构、体量处置方向、交通慢行、公共空间、AI 场景锚点、阶段归属与实施风险门槛，并逐区说明差异化的项目抓手。",
+      "depth_limit_zh": "本项达到的是策略与结构深度，**未达到规划综合实施方案的城市设计深度**。缺少可辨认真实场地尺度的局部总平面、道路/街区/建筑/公共空间关系图、典型剖面、节点放大与关键尺寸标注；成因是重点区边界为 provisional_rough 且无现状地形、建筑与权属资料。取得官方 KEY_AREA polygon 与现状资料后，须补总平面、剖面、项目 footprint 与尺寸标注方可达到公告要求的深度。"
     },
     {
       "item_id": "renewal_project_list",
@@ -451,6 +469,7 @@
       "professional_dimension": "城市更新",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "更新项目清单、实施政策与分期计划"
       ],
@@ -490,6 +509,7 @@
       "professional_dimension": "实施与运营",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "更新项目清单、实施政策与分期计划",
         "重点区域详细设计"
@@ -528,6 +548,7 @@
       "professional_dimension": "指标与数据",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "指标体系、面积复算与合规矩阵"
       ],
@@ -578,6 +599,7 @@
       "professional_dimension": "风险与合规",
       "required": true,
       "status": "complete",
+      "attained_depth": "complete",
       "proposal_sections": [
         "风险、版权与合规说明",
         "指标体系、面积复算与合规矩阵"

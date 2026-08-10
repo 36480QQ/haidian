@@ -1969,6 +1969,49 @@
       "properties": {
         "id": "LU-022",
         "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1335.236,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34751551935989,
+              40.01425
+            ],
+            [
+              116.34781199999999,
+              40.01425
+            ],
+            [
+              116.34781199999999,
+              40.01377979141896
+            ],
+            [
+              116.34750381148294,
+              40.01378869445831
+            ],
+            [
+              116.34751551935989,
+              40.01425
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-023",
+      "properties": {
+        "id": "LU-023",
+        "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
         "source_type": "agent_generated_design",
@@ -2016,16 +2059,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-023",
+      "id": "LU-024",
       "properties": {
-        "id": "LU-023",
+        "id": "LU-024",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 7613.621,
+        "area_sqm_declared": 6278.385,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -2033,6 +2076,10 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.3491760457665,
+              40.01425
+            ],
             [
               116.34915983901014,
               40.01389487209777
@@ -2046,24 +2093,12 @@
               40.01377979141896
             ],
             [
-              116.34750381148294,
-              40.01378869445831
-            ],
-            [
-              116.34751551935989,
-              40.01425
-            ],
-            [
               116.34781199999999,
               40.01425
             ],
             [
               116.3491760457665,
               40.01425
-            ],
-            [
-              116.34915983901014,
-              40.01389487209777
             ]
           ]
         ]
@@ -2071,9 +2106,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-024",
+      "id": "LU-025",
       "properties": {
-        "id": "LU-024",
+        "id": "LU-025",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -2118,9 +2153,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-025",
+      "id": "LU-026",
       "properties": {
-        "id": "LU-025",
+        "id": "LU-026",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -2165,9 +2200,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-026",
+      "id": "LU-027",
       "properties": {
-        "id": "LU-026",
+        "id": "LU-027",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -2212,16 +2247,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-027",
+      "id": "LU-028",
       "properties": {
-        "id": "LU-027",
+        "id": "LU-028",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 19663.719,
+        "area_sqm_declared": 18899.172,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -2229,6 +2264,10 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.354,
+              40.01360103067843
+            ],
             [
               116.350932,
               40.013689659953144
@@ -2250,6 +2289,41 @@
               40.014038472093645
             ],
             [
+              116.354,
+              40.01401699965794
+            ],
+            [
+              116.354,
+              40.0139416695052
+            ],
+            [
+              116.354,
+              40.01360103067843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-029",
+      "properties": {
+        "id": "LU-029",
+        "layer": "LAND_USE",
+        "land_use_code": "0701",
+        "name_zh": "城镇住宅用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 764.548,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               116.35460689695512,
               40.013850869430804
             ],
@@ -2263,11 +2337,15 @@
             ],
             [
               116.354,
-              40.01360103067843
+              40.01401699965794
             ],
             [
-              116.350932,
-              40.013689659953144
+              116.35461717655308,
+              40.014038472093645
+            ],
+            [
+              116.35460689695512,
+              40.013850869430804
             ]
           ]
         ]
@@ -2275,9 +2353,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-028",
+      "id": "LU-030",
       "properties": {
-        "id": "LU-028",
+        "id": "LU-030",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -2322,9 +2400,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-029",
+      "id": "LU-031",
       "properties": {
-        "id": "LU-029",
+        "id": "LU-031",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -2365,9 +2443,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-030",
+      "id": "LU-032",
       "properties": {
-        "id": "LU-030",
+        "id": "LU-032",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -2412,9 +2490,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-031",
+      "id": "LU-033",
       "properties": {
-        "id": "LU-031",
+        "id": "LU-033",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -2491,9 +2569,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-032",
+      "id": "LU-034",
       "properties": {
-        "id": "LU-032",
+        "id": "LU-034",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -2570,9 +2648,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-033",
+      "id": "LU-035",
       "properties": {
-        "id": "LU-033",
+        "id": "LU-035",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -2613,9 +2691,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-034",
+      "id": "LU-036",
       "properties": {
-        "id": "LU-034",
+        "id": "LU-036",
         "layer": "LAND_USE",
         "land_use_code": "16",
         "name_zh": "留白用地（产业代际缓冲）",
@@ -2676,9 +2754,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-035",
+      "id": "LU-037",
       "properties": {
-        "id": "LU-035",
+        "id": "LU-037",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -2759,9 +2837,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-036",
+      "id": "LU-038",
       "properties": {
-        "id": "LU-036",
+        "id": "LU-038",
         "layer": "LAND_USE",
         "land_use_code": "16",
         "name_zh": "留白用地（产业代际缓冲）",
@@ -2838,9 +2916,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-037",
+      "id": "LU-039",
       "properties": {
-        "id": "LU-037",
+        "id": "LU-039",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -2901,9 +2979,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-038",
+      "id": "LU-040",
       "properties": {
-        "id": "LU-038",
+        "id": "LU-040",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -2944,9 +3022,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-039",
+      "id": "LU-041",
       "properties": {
-        "id": "LU-039",
+        "id": "LU-041",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -3015,9 +3093,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-040",
+      "id": "LU-042",
       "properties": {
-        "id": "LU-040",
+        "id": "LU-042",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3066,9 +3144,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-041",
+      "id": "LU-043",
       "properties": {
-        "id": "LU-041",
+        "id": "LU-043",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -3141,9 +3219,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-042",
+      "id": "LU-044",
       "properties": {
-        "id": "LU-042",
+        "id": "LU-044",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3208,9 +3286,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-043",
+      "id": "LU-045",
       "properties": {
-        "id": "LU-043",
+        "id": "LU-045",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3283,9 +3361,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-044",
+      "id": "LU-046",
       "properties": {
-        "id": "LU-044",
+        "id": "LU-046",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -3326,9 +3404,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-045",
+      "id": "LU-047",
       "properties": {
-        "id": "LU-045",
+        "id": "LU-047",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3449,9 +3527,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-046",
+      "id": "LU-048",
       "properties": {
-        "id": "LU-046",
+        "id": "LU-048",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3512,9 +3590,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-047",
+      "id": "LU-049",
       "properties": {
-        "id": "LU-047",
+        "id": "LU-049",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -3563,9 +3641,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-048",
+      "id": "LU-050",
       "properties": {
-        "id": "LU-048",
+        "id": "LU-050",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -3606,9 +3684,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-049",
+      "id": "LU-051",
       "properties": {
-        "id": "LU-049",
+        "id": "LU-051",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -3677,9 +3755,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-050",
+      "id": "LU-052",
       "properties": {
-        "id": "LU-050",
+        "id": "LU-052",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -3800,12 +3878,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-051",
+      "id": "LU-053",
       "properties": {
-        "id": "LU-051",
+        "id": "LU-053",
         "layer": "LAND_USE",
-        "land_use_code": "16",
-        "name_zh": "留白用地（产业代际缓冲）",
+        "land_use_code": "0802",
+        "name_zh": "AI科研与全栈创新用地",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -3859,9 +3937,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-052",
+      "id": "LU-054",
       "properties": {
-        "id": "LU-052",
+        "id": "LU-054",
         "layer": "LAND_USE",
         "land_use_code": "0804",
         "name_zh": "高校科研教育衔接用地",
@@ -3906,9 +3984,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-053",
+      "id": "LU-055",
       "properties": {
-        "id": "LU-053",
+        "id": "LU-055",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -3949,12 +4027,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-054",
+      "id": "LU-056",
       "properties": {
-        "id": "LU-054",
+        "id": "LU-056",
         "layer": "LAND_USE",
-        "land_use_code": "16",
-        "name_zh": "留白用地（产业代际缓冲）",
+        "land_use_code": "0802",
+        "name_zh": "AI科研与全栈创新用地",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -4032,16 +4110,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-055",
+      "id": "LU-057",
       "properties": {
-        "id": "LU-055",
+        "id": "LU-057",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 16093.247,
+        "area_sqm_declared": 16062.858,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -4049,10 +4127,6 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              116.34701684387127,
-              39.9915
-            ],
             [
               116.34693812720509,
               39.9915
@@ -4074,7 +4148,27 @@
               39.9915
             ],
             [
+              116.34771335449292,
+              39.99150067268245
+            ],
+            [
+              116.34750780590575,
+              39.99150617596979
+            ],
+            [
+              116.34730317085503,
+              39.991506871745926
+            ],
+            [
+              116.3471026494024,
+              39.99150329991764
+            ],
+            [
               116.34701684387127,
+              39.9915
+            ],
+            [
+              116.34693812720509,
               39.9915
             ]
           ]
@@ -4083,9 +4177,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-056",
+      "id": "LU-058",
       "properties": {
-        "id": "LU-056",
+        "id": "LU-058",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -4142,12 +4236,181 @@
     },
     {
       "type": "Feature",
-      "id": "LU-057",
+      "id": "LU-059",
       "properties": {
-        "id": "LU-057",
+        "id": "LU-059",
         "layer": "LAND_USE",
-        "land_use_code": "16",
-        "name_zh": "留白用地（产业代际缓冲）",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 30.389,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3471026494024,
+              39.99150329991764
+            ],
+            [
+              116.34730317085503,
+              39.991506871745926
+            ],
+            [
+              116.34750780590575,
+              39.99150617596979
+            ],
+            [
+              116.34771335449292,
+              39.99150067268245
+            ],
+            [
+              116.3477263890135,
+              39.9915
+            ],
+            [
+              116.34701684387127,
+              39.9915
+            ],
+            [
+              116.3471026494024,
+              39.99150329991764
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-060",
+      "properties": {
+        "id": "LU-060",
+        "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1.794,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3477263890135,
+              39.9915
+            ],
+            [
+              116.34781199999999,
+              39.9915
+            ],
+            [
+              116.34781199999999,
+              39.991495581808515
+            ],
+            [
+              116.3477263890135,
+              39.9915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-061",
+      "properties": {
+        "id": "LU-061",
+        "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 1333.14,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34938347615608,
+              39.99142676154727
+            ],
+            [
+              116.34939884352266,
+              39.99128609532257
+            ],
+            [
+              116.34925885537494,
+              39.99131261018796
+            ],
+            [
+              116.34907106527727,
+              39.99134641651585
+            ],
+            [
+              116.34888282737145,
+              39.99137806200628
+            ],
+            [
+              116.34869356154127,
+              39.991407165399785
+            ],
+            [
+              116.34850271286832,
+              39.99143333503419
+            ],
+            [
+              116.34830975383224,
+              39.99145617185108
+            ],
+            [
+              116.3481141851402,
+              39.991475273409776
+            ],
+            [
+              116.34791553471115,
+              39.9914902386137
+            ],
+            [
+              116.34781199999999,
+              39.991495581808515
+            ],
+            [
+              116.34781199999999,
+              39.9915
+            ],
+            [
+              116.34937455607579,
+              39.9915
+            ],
+            [
+              116.34938347615608,
+              39.99142676154727
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-062",
+      "properties": {
+        "id": "LU-062",
+        "layer": "LAND_USE",
+        "land_use_code": "0802",
+        "name_zh": "AI科研与全栈创新用地",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -4221,12 +4484,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-058",
+      "id": "LU-063",
       "properties": {
-        "id": "LU-058",
+        "id": "LU-063",
         "layer": "LAND_USE",
-        "land_use_code": "0802",
-        "name_zh": "AI科研与全栈创新用地",
+        "land_use_code": "16",
+        "name_zh": "留白用地（产业代际缓冲）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -4300,9 +4563,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-059",
+      "id": "LU-064",
       "properties": {
-        "id": "LU-059",
+        "id": "LU-064",
         "layer": "LAND_USE",
         "land_use_code": "0804",
         "name_zh": "高校科研教育衔接用地",
@@ -4391,12 +4654,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-060",
+      "id": "LU-065",
       "properties": {
-        "id": "LU-060",
+        "id": "LU-065",
         "layer": "LAND_USE",
-        "land_use_code": "16",
-        "name_zh": "留白用地（产业代际缓冲）",
+        "land_use_code": "0802",
+        "name_zh": "AI科研与全栈创新用地",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -4466,9 +4729,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-061",
+      "id": "LU-066",
       "properties": {
-        "id": "LU-061",
+        "id": "LU-066",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -4513,9 +4776,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-062",
+      "id": "LU-067",
       "properties": {
-        "id": "LU-062",
+        "id": "LU-067",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -4572,9 +4835,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-063",
+      "id": "LU-068",
       "properties": {
-        "id": "LU-063",
+        "id": "LU-068",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -4643,9 +4906,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-064",
+      "id": "LU-069",
       "properties": {
-        "id": "LU-064",
+        "id": "LU-069",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -4698,16 +4961,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-065",
+      "id": "LU-070",
       "properties": {
-        "id": "LU-065",
+        "id": "LU-070",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 28174.198,
+        "area_sqm_declared": 26839.265,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -4715,6 +4978,10 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.34939884352266,
+              39.99128609532257
+            ],
             [
               116.34943940250592,
               39.9909148359387
@@ -4740,28 +5007,40 @@
               39.991495581808515
             ],
             [
-              116.3477263890135,
-              39.9915
+              116.34791553471115,
+              39.9914902386137
             ],
             [
-              116.34781199999999,
-              39.9915
+              116.3481141851402,
+              39.991475273409776
             ],
             [
-              116.34937455607579,
-              39.9915
+              116.34830975383224,
+              39.99145617185108
             ],
             [
-              116.34938347615608,
-              39.99142676154727
+              116.34850271286832,
+              39.99143333503419
+            ],
+            [
+              116.34869356154127,
+              39.991407165399785
+            ],
+            [
+              116.34888282737145,
+              39.99137806200628
+            ],
+            [
+              116.34907106527727,
+              39.99134641651585
+            ],
+            [
+              116.34925885537494,
+              39.99131261018796
             ],
             [
               116.34939884352266,
               39.99128609532257
-            ],
-            [
-              116.34943940250592,
-              39.9909148359387
             ]
           ]
         ]
@@ -4769,9 +5048,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-066",
+      "id": "LU-071",
       "properties": {
-        "id": "LU-066",
+        "id": "LU-071",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -4848,9 +5127,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-067",
+      "id": "LU-072",
       "properties": {
-        "id": "LU-067",
+        "id": "LU-072",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -4903,9 +5182,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-068",
+      "id": "LU-073",
       "properties": {
-        "id": "LU-068",
+        "id": "LU-073",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -4990,9 +5269,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-069",
+      "id": "LU-074",
       "properties": {
-        "id": "LU-069",
+        "id": "LU-074",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -5081,9 +5360,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-070",
+      "id": "LU-075",
       "properties": {
-        "id": "LU-070",
+        "id": "LU-075",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -5156,9 +5435,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-071",
+      "id": "LU-076",
       "properties": {
-        "id": "LU-071",
+        "id": "LU-076",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -5207,9 +5486,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-072",
+      "id": "LU-077",
       "properties": {
-        "id": "LU-072",
+        "id": "LU-077",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -5274,12 +5553,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-073",
+      "id": "LU-078",
       "properties": {
-        "id": "LU-073",
+        "id": "LU-078",
         "layer": "LAND_USE",
-        "land_use_code": "0802",
-        "name_zh": "AI科研与全栈创新用地",
+        "land_use_code": "16",
+        "name_zh": "留白用地（产业代际缓冲）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -5349,9 +5628,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-074",
+      "id": "LU-079",
       "properties": {
-        "id": "LU-074",
+        "id": "LU-079",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -5424,9 +5703,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-075",
+      "id": "LU-080",
       "properties": {
-        "id": "LU-075",
+        "id": "LU-080",
         "layer": "LAND_USE",
         "land_use_code": "0804",
         "name_zh": "高校科研教育衔接用地",
@@ -5479,9 +5758,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-076",
+      "id": "LU-081",
       "properties": {
-        "id": "LU-076",
+        "id": "LU-081",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -5574,9 +5853,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-077",
+      "id": "LU-082",
       "properties": {
-        "id": "LU-077",
+        "id": "LU-082",
         "layer": "LAND_USE",
         "land_use_code": "0802",
         "name_zh": "AI科研与全栈创新用地",
@@ -5617,9 +5896,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-078",
+      "id": "LU-083",
       "properties": {
-        "id": "LU-078",
+        "id": "LU-083",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -5692,12 +5971,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-079",
+      "id": "LU-084",
       "properties": {
-        "id": "LU-079",
+        "id": "LU-084",
         "layer": "LAND_USE",
-        "land_use_code": "0802",
-        "name_zh": "AI科研与全栈创新用地",
+        "land_use_code": "16",
+        "name_zh": "留白用地（产业代际缓冲）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -5747,9 +6026,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-080",
+      "id": "LU-085",
       "properties": {
-        "id": "LU-080",
+        "id": "LU-085",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -5806,9 +6085,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-081",
+      "id": "LU-086",
       "properties": {
-        "id": "LU-081",
+        "id": "LU-086",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -5857,9 +6136,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-082",
+      "id": "LU-087",
       "properties": {
-        "id": "LU-082",
+        "id": "LU-087",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -5916,9 +6195,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-083",
+      "id": "LU-088",
       "properties": {
-        "id": "LU-083",
+        "id": "LU-088",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -5963,9 +6242,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-084",
+      "id": "LU-089",
       "properties": {
-        "id": "LU-084",
+        "id": "LU-089",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -6018,9 +6297,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-085",
+      "id": "LU-090",
       "properties": {
-        "id": "LU-085",
+        "id": "LU-090",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -6077,9 +6356,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-086",
+      "id": "LU-091",
       "properties": {
-        "id": "LU-086",
+        "id": "LU-091",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -6172,9 +6451,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-087",
+      "id": "LU-092",
       "properties": {
-        "id": "LU-087",
+        "id": "LU-092",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -6247,9 +6526,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-088",
+      "id": "LU-093",
       "properties": {
-        "id": "LU-088",
+        "id": "LU-093",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -6350,9 +6629,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-089",
+      "id": "LU-094",
       "properties": {
-        "id": "LU-089",
+        "id": "LU-094",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -6429,9 +6708,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-090",
+      "id": "LU-095",
       "properties": {
-        "id": "LU-090",
+        "id": "LU-095",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -6524,9 +6803,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-091",
+      "id": "LU-096",
       "properties": {
-        "id": "LU-091",
+        "id": "LU-096",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -6567,9 +6846,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-092",
+      "id": "LU-097",
       "properties": {
-        "id": "LU-092",
+        "id": "LU-097",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -6654,9 +6933,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-093",
+      "id": "LU-098",
       "properties": {
-        "id": "LU-093",
+        "id": "LU-098",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -6693,9 +6972,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-094",
+      "id": "LU-099",
       "properties": {
-        "id": "LU-094",
+        "id": "LU-099",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -6812,9 +7091,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-095",
+      "id": "LU-100",
       "properties": {
-        "id": "LU-095",
+        "id": "LU-100",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -6935,9 +7214,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-096",
+      "id": "LU-101",
       "properties": {
-        "id": "LU-096",
+        "id": "LU-101",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -7014,9 +7293,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-097",
+      "id": "LU-102",
       "properties": {
-        "id": "LU-097",
+        "id": "LU-102",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -7093,9 +7372,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-098",
+      "id": "LU-103",
       "properties": {
-        "id": "LU-098",
+        "id": "LU-103",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -7140,9 +7419,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-099",
+      "id": "LU-104",
       "properties": {
-        "id": "LU-099",
+        "id": "LU-104",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -7263,9 +7542,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-100",
+      "id": "LU-105",
       "properties": {
-        "id": "LU-100",
+        "id": "LU-105",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -7382,9 +7661,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-101",
+      "id": "LU-106",
       "properties": {
-        "id": "LU-101",
+        "id": "LU-106",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -7421,9 +7700,99 @@
     },
     {
       "type": "Feature",
-      "id": "LU-102",
+      "id": "LU-107",
       "properties": {
-        "id": "LU-102",
+        "id": "LU-107",
+        "layer": "LAND_USE",
+        "land_use_code": "1403",
+        "name_zh": "广场用地（缝合节点）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 32.068,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34779361660868,
+              39.953
+            ],
+            [
+              116.34781199999999,
+              39.953
+            ],
+            [
+              116.34781199999999,
+              39.952632324063934
+            ],
+            [
+              116.34779361660868,
+              39.953
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-108",
+      "properties": {
+        "id": "LU-108",
+        "layer": "LAND_USE",
+        "land_use_code": "1403",
+        "name_zh": "广场用地（缝合节点）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 913.947,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35092017824135,
+              39.951138485296525
+            ],
+            [
+              116.35089304062768,
+              39.95183460975867
+            ],
+            [
+              116.35086093868826,
+              39.95254843653405
+            ],
+            [
+              116.35083838099946,
+              39.953
+            ],
+            [
+              116.350932,
+              39.953
+            ],
+            [
+              116.350932,
+              39.95076752905847
+            ],
+            [
+              116.35092017824135,
+              39.951138485296525
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-109",
+      "properties": {
+        "id": "LU-109",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -7472,16 +7841,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-103",
+      "id": "LU-110",
       "properties": {
-        "id": "LU-103",
+        "id": "LU-110",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 86640.731,
+        "area_sqm_declared": 85726.784,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -7489,6 +7858,22 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.35086093868826,
+              39.95254843653405
+            ],
+            [
+              116.35089304062768,
+              39.95183460975867
+            ],
+            [
+              116.35092017824135,
+              39.951138485296525
+            ],
+            [
+              116.350932,
+              39.95076752905847
+            ],
             [
               116.350932,
               39.94984
@@ -7506,16 +7891,8 @@
               39.953
             ],
             [
-              116.350932,
-              39.953
-            ],
-            [
-              116.350932,
-              39.95076752905847
-            ],
-            [
-              116.350932,
-              39.94984
+              116.35086093868826,
+              39.95254843653405
             ]
           ]
         ]
@@ -7523,16 +7900,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-104",
+      "id": "LU-111",
       "properties": {
-        "id": "LU-104",
+        "id": "LU-111",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 56705.285,
+        "area_sqm_declared": 56673.217,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -7540,6 +7917,10 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.34781199999999,
+              39.952632324063934
+            ],
             [
               116.34781199999999,
               39.94984
@@ -7558,15 +7939,7 @@
             ],
             [
               116.34781199999999,
-              39.953
-            ],
-            [
-              116.34781199999999,
               39.952632324063934
-            ],
-            [
-              116.34781199999999,
-              39.94984
             ]
           ]
         ]
@@ -7574,9 +7947,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-105",
+      "id": "LU-112",
       "properties": {
-        "id": "LU-105",
+        "id": "LU-112",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -7637,9 +8010,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-106",
+      "id": "LU-113",
       "properties": {
-        "id": "LU-106",
+        "id": "LU-113",
         "layer": "LAND_USE",
         "land_use_code": "0701",
         "name_zh": "城镇住宅用地",
@@ -7716,9 +8089,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-107",
+      "id": "LU-114",
       "properties": {
-        "id": "LU-107",
+        "id": "LU-114",
         "layer": "LAND_USE",
         "land_use_code": "0702",
         "name_zh": "城镇社区服务设施用地",
@@ -7795,9 +8168,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-108",
+      "id": "LU-115",
       "properties": {
-        "id": "LU-108",
+        "id": "LU-115",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -7850,9 +8223,111 @@
     },
     {
       "type": "Feature",
-      "id": "LU-109",
+      "id": "LU-116",
       "properties": {
-        "id": "LU-109",
+        "id": "LU-116",
+        "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 323.839,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34791508730066,
+              39.94977119845911
+            ],
+            [
+              116.34791865213795,
+              39.94951000417644
+            ],
+            [
+              116.3479154945886,
+              39.94951024204841
+            ],
+            [
+              116.34781199999999,
+              39.94951558317259
+            ],
+            [
+              116.34781199999999,
+              39.94984
+            ],
+            [
+              116.34791346933594,
+              39.94984
+            ],
+            [
+              116.34791508730066,
+              39.94977119845911
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-117",
+      "properties": {
+        "id": "LU-117",
+        "layer": "LAND_USE",
+        "land_use_code": "05",
+        "name_zh": "智能原生商业服务业用地",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 650.54,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34812706971562,
+              39.94949401414693
+            ],
+            [
+              116.34811413077152,
+              39.94949527791772
+            ],
+            [
+              116.34791865213795,
+              39.94951000417644
+            ],
+            [
+              116.34791508730066,
+              39.94977119845911
+            ],
+            [
+              116.34791346933594,
+              39.94984
+            ],
+            [
+              116.34811188879524,
+              39.94984
+            ],
+            [
+              116.34812706971562,
+              39.94949401414693
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-118",
+      "properties": {
+        "id": "LU-118",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -7933,9 +8408,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-110",
+      "id": "LU-119",
       "properties": {
-        "id": "LU-110",
+        "id": "LU-119",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -8000,16 +8475,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-111",
+      "id": "LU-120",
       "properties": {
-        "id": "LU-111",
+        "id": "LU-120",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 16154.032,
+        "area_sqm_declared": 15179.653,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -8017,6 +8492,14 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              116.34812706971562,
+              39.94949401414693
+            ],
+            [
+              116.34811188879524,
+              39.94984
+            ],
             [
               116.350932,
               39.94984
@@ -8084,38 +8567,6 @@
             [
               116.34812706971562,
               39.94949401414693
-            ],
-            [
-              116.34811413077152,
-              39.94949527791772
-            ],
-            [
-              116.34791865213795,
-              39.94951000417644
-            ],
-            [
-              116.3479154945886,
-              39.94951024204841
-            ],
-            [
-              116.34781199999999,
-              39.94951558317259
-            ],
-            [
-              116.34781199999999,
-              39.94984
-            ],
-            [
-              116.34791346933594,
-              39.94984
-            ],
-            [
-              116.34811188879524,
-              39.94984
-            ],
-            [
-              116.350932,
-              39.94984
             ]
           ]
         ]
@@ -8123,9 +8574,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-112",
+      "id": "LU-121",
       "properties": {
-        "id": "LU-112",
+        "id": "LU-121",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -8210,9 +8661,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-113",
+      "id": "LU-122",
       "properties": {
-        "id": "LU-113",
+        "id": "LU-122",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -8317,9 +8768,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-114",
+      "id": "LU-123",
       "properties": {
-        "id": "LU-114",
+        "id": "LU-123",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -8376,9 +8827,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-115",
+      "id": "LU-124",
       "properties": {
-        "id": "LU-115",
+        "id": "LU-124",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -8463,9 +8914,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-116",
+      "id": "LU-125",
       "properties": {
-        "id": "LU-116",
+        "id": "LU-125",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -8522,9 +8973,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-117",
+      "id": "LU-126",
       "properties": {
-        "id": "LU-117",
+        "id": "LU-126",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -8593,16 +9044,16 @@
     },
     {
       "type": "Feature",
-      "id": "LU-118",
+      "id": "LU-127",
       "properties": {
-        "id": "LU-118",
+        "id": "LU-127",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "area_sqm_declared": 41553.769,
+        "area_sqm_declared": 41160.315,
         "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
         "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
       },
@@ -8610,26 +9061,6 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              116.35096615476775,
-              39.94899998467719
-            ],
-            [
-              116.35096705049389,
-              39.94855714811058
-            ],
-            [
-              116.35096023784561,
-              39.947968761973314
-            ],
-            [
-              116.35095169231496,
-              39.94765909163444
-            ],
-            [
-              116.350932,
-              39.94765966054694
-            ],
             [
               116.34820409823602,
               39.94773846983925
@@ -8699,8 +9130,12 @@
               39.949006099152015
             ],
             [
-              116.35096615476775,
-              39.94899998467719
+              116.350932,
+              39.94765966054694
+            ],
+            [
+              116.34820409823602,
+              39.94773846983925
             ]
           ]
         ]
@@ -8708,9 +9143,60 @@
     },
     {
       "type": "Feature",
-      "id": "LU-119",
+      "id": "LU-128",
       "properties": {
-        "id": "LU-119",
+        "id": "LU-128",
+        "layer": "LAND_USE",
+        "land_use_code": "1401",
+        "name_zh": "公园绿地（开物主轴）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "area_sqm_declared": 393.455,
+        "derivation": "split(site_boundary, [openworks_axis, seams, campus_industry_line])",
+        "usage_note": "依据仓库 provisional_boundaries.geojson 派生的概念建议；不得作为 official redline、审批依据或精确面积复算依据。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35096705049389,
+              39.94855714811058
+            ],
+            [
+              116.35096023784561,
+              39.947968761973314
+            ],
+            [
+              116.35095169231496,
+              39.94765909163444
+            ],
+            [
+              116.350932,
+              39.94765966054694
+            ],
+            [
+              116.350932,
+              39.949006099152015
+            ],
+            [
+              116.35096615476775,
+              39.94899998467719
+            ],
+            [
+              116.35096705049389,
+              39.94855714811058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-129",
+      "properties": {
+        "id": "LU-129",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -8799,9 +9285,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-120",
+      "id": "LU-130",
       "properties": {
-        "id": "LU-120",
+        "id": "LU-130",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -8938,9 +9424,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-121",
+      "id": "LU-131",
       "properties": {
-        "id": "LU-121",
+        "id": "LU-131",
         "layer": "LAND_USE",
         "land_use_code": "1403",
         "name_zh": "广场用地（缝合节点）",
@@ -9009,9 +9495,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-122",
+      "id": "LU-132",
       "properties": {
-        "id": "LU-122",
+        "id": "LU-132",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9068,9 +9554,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-123",
+      "id": "LU-133",
       "properties": {
-        "id": "LU-123",
+        "id": "LU-133",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -9159,9 +9645,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-124",
+      "id": "LU-134",
       "properties": {
-        "id": "LU-124",
+        "id": "LU-134",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -9234,9 +9720,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-125",
+      "id": "LU-135",
       "properties": {
-        "id": "LU-125",
+        "id": "LU-135",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9289,12 +9775,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-126",
+      "id": "LU-136",
       "properties": {
-        "id": "LU-126",
+        "id": "LU-136",
         "layer": "LAND_USE",
-        "land_use_code": "05",
-        "name_zh": "智能原生商业服务业用地",
+        "land_use_code": "16",
+        "name_zh": "留白用地（产业代际缓冲）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -9340,9 +9826,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-127",
+      "id": "LU-137",
       "properties": {
-        "id": "LU-127",
+        "id": "LU-137",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9395,9 +9881,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-128",
+      "id": "LU-138",
       "properties": {
-        "id": "LU-128",
+        "id": "LU-138",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9454,12 +9940,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-129",
+      "id": "LU-139",
       "properties": {
-        "id": "LU-129",
+        "id": "LU-139",
         "layer": "LAND_USE",
-        "land_use_code": "05",
-        "name_zh": "智能原生商业服务业用地",
+        "land_use_code": "16",
+        "name_zh": "留白用地（产业代际缓冲）",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -9521,12 +10007,12 @@
     },
     {
       "type": "Feature",
-      "id": "LU-130",
+      "id": "LU-140",
       "properties": {
-        "id": "LU-130",
+        "id": "LU-140",
         "layer": "LAND_USE",
-        "land_use_code": "16",
-        "name_zh": "留白用地（产业代际缓冲）",
+        "land_use_code": "05",
+        "name_zh": "智能原生商业服务业用地",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
@@ -9584,9 +10070,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-131",
+      "id": "LU-141",
       "properties": {
-        "id": "LU-131",
+        "id": "LU-141",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -9695,9 +10181,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-132",
+      "id": "LU-142",
       "properties": {
-        "id": "LU-132",
+        "id": "LU-142",
         "layer": "LAND_USE",
         "land_use_code": "1401",
         "name_zh": "公园绿地（开物主轴）",
@@ -9810,9 +10296,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-133",
+      "id": "LU-143",
       "properties": {
-        "id": "LU-133",
+        "id": "LU-143",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9881,9 +10367,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-134",
+      "id": "LU-144",
       "properties": {
-        "id": "LU-134",
+        "id": "LU-144",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -9960,9 +10446,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-135",
+      "id": "LU-145",
       "properties": {
-        "id": "LU-135",
+        "id": "LU-145",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
@@ -10107,9 +10593,9 @@
     },
     {
       "type": "Feature",
-      "id": "LU-136",
+      "id": "LU-146",
       "properties": {
-        "id": "LU-136",
+        "id": "LU-146",
         "layer": "LAND_USE",
         "land_use_code": "05",
         "name_zh": "智能原生商业服务业用地",
