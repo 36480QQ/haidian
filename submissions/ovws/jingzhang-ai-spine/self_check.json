@@ -6,14 +6,14 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "Provisional boundary is present; it is not an official redline or precise-area basis. Replace it with official geometry and recalculate the package before formal refinement; provisional geometry does not block content review."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "Three required key areas are provisional; they are not official redlines or precise-area bases. Replace them with official polygons and recalculate the package before formal refinement; provisional geometry does not block content review."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
