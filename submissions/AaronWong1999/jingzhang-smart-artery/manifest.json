@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy agent orchestrating shapely/matplotlib/reportlab generation"
   },
-  "generated_at": "2026-08-10T18:14:32.396373Z",
+  "generated_at": "2026-08-10T18:44:31.180854Z",
   "files": [
     {
       "path": "agent.json",
@@ -155,19 +155,19 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "afac3b3285474ba341b7d2659f005fea9297d390b81d8b6ce1ad75c5268e849c"
+      "sha256": "4cf27b1182e15c47e230f9ac2da334d4d5683e6201335c25597ba4945c8edf9d"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "a298f4b8516383e27e2c6fe2931ef19251a4e3cd67f8c27eb9728acd5e67e5fe"
+      "sha256": "f8ece116503c2e4c487a797777bd841597725df792967b4f757c9233b53685d7"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "6bbe12dab407f88424f8fba180efaca12032be3565a043397ed7e2493bdf41be"
+      "sha256": "10c18f346d2fc48e5766ab2b77d1faf53f94a84bbbbf60d7a6a325e052b7662e"
     },
     {
       "path": "geometry/key_areas.geojson",
@@ -179,25 +179,25 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "f84e16c9678911c2dbf71e8e2b857a0a40a16e66b8af5976f246c6ddd5582c2f"
+      "sha256": "f4a161be7a8d5d6ffab06b9bb0940c198c612d359f5a0613f0be27c0236613b3"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "19c8e399541aadbcce878c2954cca66cf9252912e50542a7808de761ff0692f9"
+      "sha256": "ff3d5d1c791091828b95255ea38736909e1c6db84543b37f395deb3c42325481"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "418436d2b13a18b462b48055e6a0bcc26bf1863c157eac0cba39a3b2ef71a053"
+      "sha256": "7c7cde442e60cfdedbbc46fb67e729b06a4e2e64a0054320b0c7f9d7b2a092cb"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "307c723b9694f981855b80c98f798e30b204ac40412ed181c7ee74e4b89f47a7"
+      "sha256": "070894f0961b995a1bc33de7b03ad3ce49396cccd518f1578fb607061df7fb8f"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -287,6 +287,7 @@
     }
   ],
   "validation_claim": {
+    "readiness_contract": "persisted-self-check-v1",
     "self_checked": true,
     "known_blockers": [
       "Official precise redline/CAD/GIS not yet publicly available; metrics recomputation required after official boundary release.",

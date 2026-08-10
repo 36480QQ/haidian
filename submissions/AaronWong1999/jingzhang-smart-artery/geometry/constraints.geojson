@@ -9,9 +9,9 @@
     "id": "XC-RAIL",
     "layer": "EXISTING_RAIL",
     "name_zh": "京张铁路遗址（既有）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "medium",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true,
     "note": "既有铁路遗址近似走向，非精确红线"
    },
@@ -60,9 +60,9 @@
     "id": "XC-R1",
     "layer": "EXISTING_PRIMARY_ROAD",
     "name_zh": "北五环路（近似）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "low",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true,
     "note": "既有主干路近似定位，不代表道路红线"
    },
@@ -87,9 +87,9 @@
     "id": "XC-R2",
     "layer": "EXISTING_PRIMARY_ROAD",
     "name_zh": "学院路/西土城路（近似）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "low",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true,
     "note": "既有主干路近似定位，不代表道路红线"
    },
@@ -114,9 +114,9 @@
     "id": "XC-R3",
     "layer": "EXISTING_PRIMARY_ROAD",
     "name_zh": "西直门外大街（近似）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "low",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true,
     "note": "既有主干路近似定位，不代表道路红线"
    },
@@ -141,9 +141,9 @@
     "id": "XC-R4",
     "layer": "EXISTING_PRIMARY_ROAD",
     "name_zh": "大钟寺东路/荷清路（近似）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "low",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true,
     "note": "既有主干路近似定位，不代表道路红线"
    },
@@ -168,9 +168,9 @@
     "id": "XC-W1",
     "layer": "EXISTING_WATER",
     "name_zh": "清河（既有）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "medium",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true
    },
    "geometry": {
@@ -194,9 +194,9 @@
     "id": "XC-W2",
     "layer": "EXISTING_WATER",
     "name_zh": "小月河（既有）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "medium",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true
    },
    "geometry": {
@@ -220,9 +220,9 @@
     "id": "XC-H1",
     "layer": "HERITAGE_PROTECTION",
     "name_zh": "清华园站（文保线索）",
-    "source_type": "public_knowledge_approx",
+    "source_type": "agent_inferred_from_public_data",
     "confidence": "medium",
-    "geometry_role": "existing_constraint",
+    "geometry_role": "existing_condition",
     "locked_layer": true
    },
    "geometry": {
