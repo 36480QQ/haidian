@@ -302,6 +302,7 @@ function updateVisualIndex(file, lang) {
   let html = fs.readFileSync(target, 'utf8');
   const zh = lang === 'zh';
   const suffix = zh ? '' : '.en';
+  const statusBoard = `../assets/figures/review-status-contract${suffix}.svg`;
   const oldAlt = zh ? '三处重点区，一条共行环' : 'Three areas, one operating loop';
   const newAlt = zh ? '交通共行环空间关系图' : 'Mobility commons spatial relationship map';
   const oldImage = `../assets/figures/site-overview${suffix}.png" alt="${oldAlt}`;
@@ -388,6 +389,14 @@ function updateVisualIndex(file, lang) {
     ? html.includes('<span class="section-no">23</span><h2>可达性尾部与最低群体门槛</h2>')
     : html.includes('<span class="section-no">23</span><h2>Accessibility tail and lowest-group gate</h2>');
   if (!hasAccessibilityText) html = html.replace('</main>', `${accessibilityScreen}</main>`);
+  const reviewStatusScreen = zh
+    ? '<section id="24" class="evidence multimodal-board"><div class="section-head"><span class="section-no">24</span><h2>三条状态轴。包完整性、内容评审与正式专业资格</h2><span class="tag">状态契约</span></div><p>这张图把 package_state、内容评审资格和官方空间数据依赖的正式专业评分资格分开。`content_review_eligible=true` 表示组织方 polygon 缺口不阻断内容评审；`professional_scoring_eligible=false` 表示官方 SITE_BOUNDARY 和 KEY_AREA polygon 仍是正式专业评分轴的前置资料。维护者可以在内容评审轴上回读 Review Agent intake 分数，这项分数与官方空间数据依赖的专业评分分开记录。</p><figure class="proposal-figure"><img src="../assets/figures/review-status-contract.svg" alt="交通包三条状态轴图板"><figcaption>包完整性、内容评审资格与正式专业评分资格</figcaption></figure><div class="micro">review-status-contract.json · status axes only; package content, official geometry and field evidence remain separate</div></section>'
+    : '<section id="24" class="evidence multimodal-board"><div class="section-head"><span class="section-no">24</span><h2>Three status axes. Package, content review and formal professional eligibility</h2><span class="tag">STATUS CONTRACT</span></div><p>This board separates package_state, content review eligibility and official-spatial-data-dependent professional scoring. `content_review_eligible=true` means an organiser polygon gap does not block content review; `professional_scoring_eligible=false` keeps official SITE_BOUNDARY and KEY_AREA polygons as prerequisites for that formal scoring axis. Maintainers may record a Review Agent intake score on the content-review axis; that score remains separate from official-spatial-data-dependent professional scoring.</p><figure class="proposal-figure"><img src="../assets/figures/review-status-contract.en.svg" alt="Three status axes for the mobility package"><figcaption>Package integrity, content review eligibility and formal professional scoring eligibility</figcaption></figure><div class="micro">review-status-contract.json · status axes only; package content, official geometry and field evidence remain separate</div></section>';
+  if (!html.includes('review-status-contract.svg')) html = html.replace('</main>', `${reviewStatusScreen}</main>`);
+  if (!html.includes('href="#24"')) {
+    const navLabel = zh ? '三条状态轴' : 'Status axes';
+    html = html.replace('</nav>', `<a href="#24">${navLabel}</a></nav>`);
+  }
   if (zh) html = html.replace('名义门槛为 20 个代理点；强天气压力下 O2', '名义使用 20 个代理点门槛；强天气压力下 O2');
   fs.writeFileSync(target, html);
 }

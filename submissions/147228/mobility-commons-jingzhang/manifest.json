@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ded6d63e8a04a752929d34c2b07cad4a773f91e8d77522a21c82340fd22fc0b5"
+      "sha256": "05577b87a43b55416100544f7a340e1207acd54f07fd36c1d55030afcb18bf9d"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b62820679a2663657374ff923fdcf284012159e707799b897f68058ba14dc86f"
+      "sha256": "399d117db303207f728322fe34ad0d20893a36b964a9de98392348f7cabac636"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "658a2523cc3283aa5b39064a6e2ce0d6b12d7c135b33aceb6279b066af51338f"
+      "sha256": "2953e0db211e332c81c2c7dac4e4a51ffab90a22fad8212cee3e7380d6b330f1"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2570f84a2911b7efcdce6cb8794faa39836be716b04394f84da7821828d0a34a"
+      "sha256": "0310f5749b5385965b506f24adc74aff34e0d86b939c438eebed54daf25d1506"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9ae11a5f29f81f7fd0007f336f61a1f325b0e2b0008589dc7f64d9cd4b4f9fda"
+      "sha256": "d27050a65766e12f6dab89e8be38603f572f02e64b4c0e814e2b90f438182cfd"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ecba7b7abcac64c6fdb84c102220bffafdb469bbf97f61a7a2aeee779f2aa255"
+      "sha256": "2af633d15c2e544fe40f1d48ee290177d675b467e6969677732bddffd6a11a02"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "fb5b9c1987f32f024cae0c1ed96b1c0217471a8739e5b7aa5427dde146095f96"
+      "sha256": "b2d990107b8ae606d71750084ad664f5d297280a30d51af699e64a1040221ab5"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -827,7 +827,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "a588bbea724a564979850d6e0b11adbb1d87e1849c1addf8bec35347e8c162c2"
+      "sha256": "f61c03e328c97aa471197154e5d12f4e31b76542cb4b28443467f6f37f25ad38"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -866,7 +866,7 @@
       "path": "visual/assets/run-presentation-polish.js",
       "role": "runner",
       "required": false,
-      "sha256": "7b899a6fbdf244911da3a44ef8de0b351a7114f2b4dd67f2aae24a964fc43389"
+      "sha256": "c98316f1f50d41de3df595a2c87962735d4a34e7276f25bd9c1d52c484f0787e"
     },
     {
       "path": "visual/assets/run-distributional-equity-board.js",
@@ -1053,6 +1053,33 @@
       "role": "validator",
       "required": true,
       "sha256": "fa0f1a73e547ea3d6cd58ddcf86fb3d39b266ec3768e48f60ba22aca7f96594b"
+    },
+    {
+      "path": "visual/assets/review-status-contract.json",
+      "role": "review_evidence",
+      "required": true,
+      "sha256": "2caf7e3f6237e2cc3556f406fcff39ffd5990c042ca7a16581f7853f8ae3dd4c"
+    },
+    {
+      "path": "visual/assets/run-review-status-contract.js",
+      "role": "review_audit",
+      "required": true,
+      "sha256": "31fdf0b0d17152bc2ea0e13d478a21d0641112736e991a1da124249ffdd8dd4d"
+    },
+    {
+      "path": "assets/figures/review-status-contract.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "1ad6ea5bbd1160fea779633c6f1481f9b2dc60cbdf034b947156827a0018596f"
+    },
+    {
+      "path": "assets/figures/review-status-contract.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/review-status-contract.svg",
+      "sha256": "4aaf37068a8cef1aa29003384693bdcb855ebecc7222faa3e68a80ec9874c454"
     },
     {
       "path": "assets/figures/regional-scale-commute-board.png",

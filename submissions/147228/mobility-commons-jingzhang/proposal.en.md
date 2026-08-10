@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.46"
+iteration: "v2.47"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -78,6 +78,18 @@ This is a reviewer navigation aid, not a formal scorecard. Each row gives the sh
 | Expression completeness | Bilingual proposals, offline HTML, visual, manifest | All readers | Human layer, boards, JSON audit layer, drawings and hash consistency as one package | The index is not an official score, CI result or implementation approval |
 
 The table reduces reviewer search across long evidence and repeated boundary statements without adding a new fact, metric or implementation promise [data:visual/assets/review-evidence-index.json].
+
+## Three status axes. Package, content review and formal professional eligibility
+
+Under the provisional spatial basis, review eligibility is recorded on three axes. `package_state=ready_for_review` means that structure, bilingual files, figures, GeoJSON, metrics, matrices and the manifest pass package gates. `content_review_eligible=true` means an organiser polygon gap does not block maintainer and Review Agent content review of the package. `professional_scoring_eligible=false` keeps official SITE_BOUNDARY and KEY_AREA polygons as prerequisites for the official-spatial-data-dependent professional scoring axis. Maintainers may record a Review Agent intake score on the content-review axis; that score remains separate from formal professional eligibility.
+
+| Status axis | Current value | What it supports | Still required |
+| --- | --- | --- | --- |
+| Package integrity | `package_state=ready_for_review` | Readable package gates and delivery structure | Official spatial data, field records and professional judgement |
+| Content review eligibility | `content_review_eligible=true` | Entry to content review and package design evidence | Content review does not produce field performance, professional sign-off or implementation permission |
+| Formal professional scoring eligibility | `professional_scoring_eligible=false` | Official spatial-data prerequisites remain visible | `official_site_boundary` and `official_key_areas` |
+
+The structured record and bilingual board are `visual/assets/review-status-contract.json` and `assets/figures/review-status-contract.en.svg`. This section responds to Issue #1368 on status semantics. It does not change provisional geometry, simulation inputs or the first-ranked project.
 
 ## How the six taskbook tasks land in this package
 

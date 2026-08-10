@@ -28,6 +28,8 @@
     "visual/assets/run-distributional-accessibility-board.js",
     "assets/figures/distributional-equity-board.svg",
     "assets/figures/distributional-accessibility-board.svg",
+    "visual/assets/review-status-contract.json",
+    "assets/figures/review-status-contract.svg",
     "visual/assets/capacity-closure-screen.json",
     "visual/assets/mobility-tabletop-evidence.json",
     "visual/assets/claim-audit.json",
@@ -85,6 +87,13 @@
       "start_here": ["proposal.md", "proposal.en.md", "report/proposal.html", "visual/index.html", "manifest.json"],
       "strongest_evidence": "双语人读层、任务书交叉图、三处地面界面图、网络流图、离线图板、结构化 JSON、图纸和 hash manifest 形成同一包",
       "boundary": "索引只帮助评审导航，不代表官方评分、CI 通过或现场实施。"
+    },
+    {
+      "id": "review_status_clarity",
+      "label_zh": "评审状态清晰度",
+      "start_here": ["visual/assets/review-status-contract.json", "assets/figures/review-status-contract.svg", "self_check.json", "manifest.json"],
+      "strongest_evidence": "包完整性、内容评审资格和官方空间数据依赖的正式专业评分资格由三条状态轴分别登记",
+      "boundary": "状态板澄清资格边界，不替代 official polygons、现场基线或专业判断。"
     }
   ]
 }

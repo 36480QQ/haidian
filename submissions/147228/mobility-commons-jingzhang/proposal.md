@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.46"
+iteration: "v2.47"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -78,6 +78,18 @@ iteration: "v2.46"
 | 表达完整度 | 双语 proposal、离线 HTML、visual、manifest | 全部读者 | 人读层、图板、JSON 审计层、图纸和 hash 的同包一致性 | 导航索引不代表官方评分、CI 通过或实施 |
 
 这张表帮助评审在长篇证据和边界声明之间找到入口，不增加新的事实、指标或实施承诺 [data:visual/assets/review-evidence-index.json]。
+
+## 三条状态轴。包完整性、内容评审与正式专业资格
+
+临时空间底盘下，评审资格分成三条轴。`package_state=ready_for_review` 表示结构、双语文件、图件、GeoJSON、指标、矩阵和 manifest 已通过包内门禁。`content_review_eligible=true` 表示组织方 polygon 缺口不阻断维护者和 Review Agent 对包内内容的评审。`professional_scoring_eligible=false` 表示官方 SITE_BOUNDARY 和 KEY_AREA polygon 仍是官方空间数据依赖的正式专业评分轴前置资料。维护者可以在内容评审轴上回读 Review Agent intake 分数，这项分数与正式专业资格分开记录。
+
+| 状态轴 | 当前值 | 可以支持 | 仍需补齐 |
+| --- | --- | --- | --- |
+| 包完整性 | `package_state=ready_for_review` | 包内机器门禁和交付结构可回读 | 官方空间数据、现场资料和专业判断 |
+| 内容评审资格 | `content_review_eligible=true` | 进入内容评审并回读包内设计证据 | 内容评审不产生现场绩效、专业签字或实施许可 |
+| 正式专业评分资格 | `professional_scoring_eligible=false` | 保留官方空间数据前置条件 | `official_site_boundary` 与 `official_key_areas` |
+
+三条轴的结构化记录和双语图板见 `visual/assets/review-status-contract.json` 与 `assets/figures/review-status-contract.svg`。本节响应 Issue #1368 的状态语义问题，不改变临时几何、模拟输入或第一名项目。
 
 ## 任务书六项任务如何在本包里落地
 
