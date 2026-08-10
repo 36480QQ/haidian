@@ -90,6 +90,66 @@
       "url": "https://www.chinaqw.com/qx/2026/08-07/409867.shtml",
       "source_type": "public_background",
       "usage": "background_only: Jingzhang Railway Heritage Park as built incremental baseline, not claimed as this proposal."
+    },
+    {
+      "id": "CASE-AI-STANFORD-RP",
+      "url": "https://stanfordresearchpark.com/about",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Stanford Research Park university–land–talent pipeline."
+    },
+    {
+      "id": "CASE-AI-LONDON-KQ",
+      "url": "https://www.knowledgequarter.london",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: London Knowledge Quarter station-district knowledge cluster."
+    },
+    {
+      "id": "CASE-AI-SG-ONENORTH",
+      "url": "https://www.jtc.gov.sg/about-jtc/news-and-stories/press-releases/jtc-unveils-refreshed-masterplan-for-launchpad",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Singapore LaunchPad / one-north / district testbed mechanisms."
+    },
+    {
+      "id": "CASE-AI-SZ-MODELCAMP",
+      "url": "https://www.szns.gov.cn/english/news/features/content/post_11397283.html",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Shenzhen Nanshan Model Camp shared compute/data platforms."
+    },
+    {
+      "id": "CASE-AI-SH-ZHANGJIANG",
+      "url": "https://www.china-briefing.com/news/exploring-chinas-leading-ai-hubs-a-regional-analysis",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Zhangjiang AI hub / vertical industry×AI alliance pattern."
+    },
+    {
+      "id": "CASE-AI-PARIS-STATIONF",
+      "url": "https://stationf.co/about",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Station F rail-freight hall reuse as startup density."
+    },
+    {
+      "id": "CASE-AI-TORONTO-VECTOR",
+      "url": "https://vectorinstitute.ai",
+      "source_type": "public_background",
+      "usage": "background_only AI ecosystem case: Vector Institute talent–industry non-profit hub."
+    },
+    {
+      "id": "NARRATIVE-SUPPORT",
+      "path": "report/narrative.md",
+      "source_type": "agent_generated",
+      "usage": "Bilingual equivalence checklist + implementation prerequisites (actors, cost bands, acceptance, ops)."
+    },
+    {
+      "id": "COPYRIGHT-STATEMENT",
+      "path": "report/copyright_statement.md",
+      "source_type": "agent_generated",
+      "usage": "Per-asset rights chain for text, geometry, engineered figures, concept aids."
+    },
+    {
+      "id": "FIG-ENGINEERED-BOARDS",
+      "path": "assets/figures/",
+      "source_type": "agent_generated",
+      "usage": "Five bilingual evidence boards engineered from metrics.json + package claims; not third-party basemaps; see report/copyright_statement.md."
     }
   ]
 }
