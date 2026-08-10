@@ -13,6 +13,15 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张调试场 / JINGZHANG DEBUGGROUND
 
+## 投稿信息
+
+百年京张 AI 创新带城市设计开源征集由海淀主导，已于北京时间 2026年8月7日开放；8月31日截止，9月开始落地。
+
+- GitHub 用户名：OT-527-nu
+- 方案路径：`submissions/OT-527-nu/jingzhang-debugground/`
+- 设计名称：京张调试场 / JINGZHANG DEBUGGROUND
+- 提交级别：formal
+
 ## 方案纲领：把 AI 服务放进可被公众调试的城市
 
 “京张调试场 / JINGZHANG DEBUGGROUND”不把 AI 当作园区的装饰性标签，而把它作为需要接受城市日常检验的公共服务：每个概念场景先公开服务目标、数据边界、人工责任人和停止条件，再允许有限测试、现场质询、人工接管与复盘。空间因此不是展示屏幕的背景，而是让不同人能看见、理解、暂停并修正服务的接口。方案提出“一条公共调试回路、三种服务调试台、两翼支撑网络”：京张遗址公园慢行回路连接众智园“评测台”、北京 AI 原点“解释台”和大钟寺“回退台”；中关村科技服务翼提供专业与知识产权支持，小月河场景赋能翼承接小规模公共体验。所有动作均为供专业团队深化的概念建议，不构成已批准规划、建设承诺或法定控制。 [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/roads.geojson#ROAD-001]
@@ -35,9 +44,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
-本脚手架在官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均必须标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
+本脚手架在官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均必须标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化、intake 审阅和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该数据缺口不构成专业评分、正式接收或实施结论；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需整体重算。
 
-本次脚手架生成的可评分状态为：**临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
+本次脚手架生成的可审阅状态为：**临时边界，保留精度警示；仅供 intake 审阅与讨论，待正式数据发布后整体复算**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
 
 边界解释可回到总体范围图层和面积复算 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。这意味着读者可以从正文进入证据，但不必先读一串机器编号。
 

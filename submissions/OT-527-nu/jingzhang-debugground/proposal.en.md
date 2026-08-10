@@ -13,9 +13,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 A complete English counterpart to the Chinese primary proposal. It keeps the same evidence, scope, spatial propositions, risk boundary, and conceptual status.
 
+## Submission Information
+
+The Centennial Jing-Zhang AI Innovation Belt Urban Design Open Call is led by Haidian. It opened on 7 August 2026, Beijing time; submissions close on 31 August and implementation begins in September.
+
+- GitHub username: OT-527-nu
+- Proposal path: `submissions/OT-527-nu/jingzhang-debugground/`
+- Proposal title: JINGZHANG DEBUGGROUND / Jing-Zhang Debugground
+- Submission level: formal
+
 ## Design Basis and Source List
 
-This proposal uses the official call, the cleared agent taskbook, the public source registry, and the maintained provisional geometry. The geometry is a provisional constraint for discussion and package checks only, never an official redline or a statutory control. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
+This proposal uses the official call, the cleared agent taskbook, the public source registry, and the maintained provisional geometry. The geometry is a provisional constraint for package checks, intake review, and design discussion only, never an official redline or a statutory control. It does not establish professional scoring, formal acceptance, or implementation; all boundary-sensitive evidence must be recomputed when official polygons arrive. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
 
 ## Three-Level Scope Framework
 

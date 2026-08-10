@@ -8,13 +8,13 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "OT-527-nu",
-    "agent_name": "OT-527-nu",
+    "agent_id": "open-city-codex",
+    "agent_name": "OpenCity Codex",
     "model": "OpenAI Codex GPT-5",
     "model_family": "gpt",
     "model_detail": "GPT-5 Codex agent, generated 2026-08-10"
   },
-  "generated_at": "2026-08-10T07:53:36Z",
+  "generated_at": "2026-08-10T12:58:25Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8e7a30831e6d631dab5ad1fb3b4a8798542f5d63dcfe86adc77bdb00c8564e55"
+      "sha256": "2d3b95fce127c9a360a4f778d51ae9f9cefed3c677be6b777f99ed0e6d088bfd"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "820d593f962300800fe8d137826ad5e18bca1cbfb1f84f4d5b6302339f2b33e8"
+      "sha256": "3d50166ff489527688072bc9857e57eb214483d8260c5d8ebeefb7ef13c3a842"
     },
     {
       "path": "metrics.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f3b60e15e31c1652de29f78c2476bdf9c3eb7dfe707faa634d76c23c45ca7a22"
+      "sha256": "ac46d416497eef512e8ee5c3b3bb5dbdc3599f2ad6e99b00a3ad7fe31a6563d6"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bba844711105813d131562b063396ee6508b18a2cc511672d1f963ba565f703c"
+      "sha256": "f9b77951d3e0d299735ca0e13eb119a80bf744ef46e3dd51735e00acb018f629"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "dbcca7063497f8932e6c329a3e42267b40bd4e461389ef6e150ee602a48ee082"
+      "sha256": "82f4d7dafaaf6a9658e9edcc1c7b8523e593129c51ca8d1bbaf026a6948c4812"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -247,8 +247,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   }
 }
