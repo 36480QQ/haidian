@@ -1,0 +1,68 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "geometry/site_boundary.geojson",
+   "message": "Site boundary uses the repository provisional constraint with official_boundary=false, geometry_role=provisional_constraint, boundary_precision=provisional_rough; disclosed in proposal, visual, sources, and assumptions."
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "geometry/key_areas.geojson",
+   "message": "Three KEY_AREA features carry provisional flags, sit inside the site boundary, and do not overlap."
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "geometry/land_use.geojson",
+   "message": "43 land-use cells partition the submitted boundary with shared cut lines; union gap < 1e-10 deg2 and pairwise overlap area = 0 verified in the generation pipeline."
+  },
+  {
+   "check_id": "GEOMETRY_INSIDE_BOUNDARY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/*.geojson",
+   "message": "Buildings, roads, green space, public space, and phasing are clipped to or contained in the site boundary by construction."
+  },
+  {
+   "check_id": "METRIC_RECOMPUTATION",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "message": "All known metrics recomputed from geometry in EPSG:4548 by the deterministic pipeline; unknown metrics carry reasons (missing official controls)."
+  },
+  {
+   "check_id": "BILINGUAL_PARITY",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "proposal.en.md",
+   "message": "Chinese primary and English counterpart keep section order, claims, figures, and evidence markers aligned; display artifacts ship zh/en pairs."
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "visual/index.html",
+   "message": "Offline static HTML; no remote resources, scripts from CDNs, iframes, forms, or network calls; core metrics carry data-metric/data-value matching metrics.json."
+  },
+  {
+   "check_id": "FIGURE_DERIVATION",
+   "result": "pass",
+   "severity": "major",
+   "target": "assets/figures/",
+   "message": "All five figures (zh/en) are rendered by the pipeline from the same GeoJSON and metrics; no external imagery."
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "compliance_matrix.json",
+   "message": "23 announcement/agent requirements, 6 standards, and 15 design-depth items map to sections, layers, metrics, drawings, sources, assumptions, and self-checks."
+  }
+ ]
+}
