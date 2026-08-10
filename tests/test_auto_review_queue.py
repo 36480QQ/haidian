@@ -10,7 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from auto_review_queue import (  # noqa: E402
+    Decision,
     WorkerError,
+    apply_review,
     ci_state,
     decide,
     load_cached_review,
@@ -23,6 +25,47 @@ from generate_submissions_data import package_sha256  # noqa: E402
 
 
 class AutoReviewQueueTests(unittest.TestCase):
+    def test_merge_is_bound_to_reviewed_head(self) -> None:
+        head_sha = "a" * 40
+        live = {
+            "headRefOid": head_sha,
+            "state": "OPEN",
+            "isDraft": False,
+            "mergeable": "MERGEABLE",
+            "statusCheckRollup": [
+                {"name": "submission-validation", "conclusion": "SUCCESS"}
+            ],
+        }
+        with (
+            patch("auto_review_queue.pr_meta", return_value=live),
+            patch("auto_review_queue.run") as run_mock,
+        ):
+            apply_review(
+                "open-city-ai/haidian",
+                42,
+                head_sha,
+                Decision("accept", 90, "accepted"),
+                ROOT / "unused-comment.md",
+                ROOT,
+                admin_merge=True,
+            )
+
+        run_mock.assert_any_call(
+            [
+                "gh",
+                "pr",
+                "merge",
+                "42",
+                "--repo",
+                "open-city-ai/haidian",
+                "--merge",
+                "--match-head-commit",
+                head_sha,
+                "--admin",
+            ],
+            cwd=ROOT,
+        )
+
     def test_default_image_budget_matches_bilingual_packet(self) -> None:
         with patch.object(sys, "argv", ["auto_review_queue"]):
             args = parse_args()

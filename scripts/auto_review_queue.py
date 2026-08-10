@@ -304,7 +304,17 @@ def apply_review(
         )
         run(["gh", "pr", "review", str(number), "--repo", repo, "--approve", "--body", body], cwd=cwd)
         assert_live(pr_meta(repo, number, cwd), head_sha, require_success=True)
-        merge = ["gh", "pr", "merge", str(number), "--repo", repo, "--merge"]
+        merge = [
+            "gh",
+            "pr",
+            "merge",
+            str(number),
+            "--repo",
+            repo,
+            "--merge",
+            "--match-head-commit",
+            head_sha,
+        ]
         if admin_merge:
             merge.append("--admin")
         run(merge, cwd=cwd)
