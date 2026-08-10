@@ -128,23 +128,26 @@ function createBoard(readout, english = false) {
   const subtitle = zh ? '固定 C3 地面控制，只改变声明输入；3,122,000 个合成代理全量回放' : 'C3 ground controls fixed; one declared input changes; 3,122,000 synthetic agents replayed';
   const scenarios = readout.scenarios;
   const current = scenarios.find((scenario) => scenario.declared_shift_share_input === readout.reference_scenario);
-  const x0 = 132;
-  const y0 = 350;
-  const chartWidth = 820;
-  const chartHeight = 230;
-  const xLabels = scenarios.map((scenario, index) => text(x0 + index * (chartWidth / (scenarios.length - 1)), 622, `${Math.round(scenario.declared_shift_share_input * 100)}%`, 'axis', 'middle')).join('');
-  const grid = [0, 25, 50, 75, 100].map((value) => {
-    const y = y0 + chartHeight - (value / 100) * chartHeight;
+  const x0 = 260;
+  const chartTop = 300;
+  const chartWidth = 770;
+  const laneHeight = 64;
+  const laneGap = 75;
+  const laneTops = [0, 1, 2].map((index) => chartTop + index * (laneHeight + laneGap));
+  const chartBottom = laneTops[laneTops.length - 1] + laneHeight;
+  const xLabels = scenarios.map((scenario, index) => text(x0 + index * (chartWidth / (scenarios.length - 1)), chartBottom + 42, `${Math.round(scenario.declared_shift_share_input * 100)}%`, 'axis', 'middle')).join('');
+  const grid = laneTops.map((laneTop) => [0, 50, 100].map((value) => {
+    const y = laneTop + laneHeight - (value / 100) * laneHeight;
     return `<line x1="${x0}" y1="${y}" x2="${x0 + chartWidth}" y2="${y}" stroke="#315569" stroke-width="1" stroke-dasharray="5 9"/>${text(x0 - 18, y + 5, value, 'axis', 'end')}`;
-  }).join('');
+  }).join('')).join('');
   const currentX = x0 + scenarios.findIndex((scenario) => scenario.declared_shift_share_input === readout.reference_scenario) * (chartWidth / (scenarios.length - 1));
-  const currentMarker = `<line x1="${currentX}" y1="${y0 - 24}" x2="${currentX}" y2="${y0 + chartHeight + 14}" stroke="#f6c76b" stroke-width="2" stroke-dasharray="8 8"/>${text(currentX + 10, y0 - 30, zh ? '当前 18%' : 'current 18%', 'marker')}`;
+  const currentMarker = `<line x1="${currentX}" y1="${chartTop - 24}" x2="${currentX}" y2="${chartBottom + 14}" stroke="#f6c76b" stroke-width="2" stroke-dasharray="8 8"/>${text(currentX + 10, chartTop - 30, zh ? '当前 18%' : 'current 18%', 'marker')}`;
   const overallSeries = scenarios.map((scenario) => ({ ...scenario, value: scenario.overall.satisfaction_proxy }));
   const enterpriseSeries = scenarios.map((scenario) => ({ ...scenario, value: scenario.enterprise.satisfaction_proxy }));
   const protectedSeries = scenarios.map((scenario) => ({ ...scenario, value: scenario.protected_groups.minimum_satisfaction_proxy }));
-  const overallLine = chartLine(overallSeries, 'value', '#77e3c0', x0, y0, chartWidth, chartHeight, 100, zh ? '全体满意度代理' : 'overall satisfaction proxy', (value) => value.toFixed(2));
-  const enterpriseLine = chartLine(enterpriseSeries, 'value', '#79a9ff', x0, y0, chartWidth, chartHeight, 100, zh ? '企业组满意度代理' : 'enterprise satisfaction proxy', (value) => value.toFixed(2));
-  const protectedLine = chartLine(protectedSeries, 'value', '#f6c76b', x0, y0, chartWidth, chartHeight, 100, zh ? '保护组最低满意度' : 'minimum protected-group satisfaction', (value) => value.toFixed(2));
+  const overallLine = chartLine(overallSeries, 'value', '#77e3c0', x0, laneTops[0], chartWidth, laneHeight, 100, zh ? '全体满意度代理' : 'overall satisfaction proxy', (value) => value.toFixed(2));
+  const enterpriseLine = chartLine(enterpriseSeries, 'value', '#79a9ff', x0, laneTops[1], chartWidth, laneHeight, 100, zh ? '企业组满意度代理' : 'enterprise satisfaction proxy', (value) => value.toFixed(2));
+  const protectedLine = chartLine(protectedSeries, 'value', '#f6c76b', x0, laneTops[2], chartWidth, laneHeight, 100, zh ? '保护组最低满意度' : 'minimum protected-group satisfaction', (value) => value.toFixed(2));
   const evidenceRows = zh
     ? [`企业错峰输入  ${(current.declared_shift_share_input * 100).toFixed(0)}%`, `全体代理分  ${current.overall.satisfaction_proxy.toFixed(2)}`, `企业组活动链完成  ${(current.enterprise.activity_chain_completion_proxy * 100).toFixed(1)}%`, `保护组最低可达  ${current.protected_groups.minimum_accessibility_proxy.toFixed(3)}`, '所有地面硬门  5/5 场景通过']
     : [`enterprise shift input  ${(current.declared_shift_share_input * 100).toFixed(0)}%`, `overall proxy  ${current.overall.satisfaction_proxy.toFixed(2)}`, `enterprise chain completion  ${(current.enterprise.activity_chain_completion_proxy * 100).toFixed(1)}%`, `minimum protected access  ${current.protected_groups.minimum_accessibility_proxy.toFixed(3)}`, 'ground hard gates  all 5 scenarios pass'];
@@ -161,7 +164,7 @@ function createBoard(readout, english = false) {
   ${text(64, 64, title, 'title')}${text(66, 100, subtitle, 'sub')}
   <rect x="52" y="140" width="1040" height="620" rx="26" class="panel"/><rect x="1140" y="140" width="608" height="620" rx="26" class="panel"/>
   ${text(86, 190, zh ? '一个输入，三条读数' : 'One input, three readouts', 'section')}${text(86, 226, zh ? '企业错峰输入占比' : 'declared enterprise shift share', 'note')}
-  ${grid}${currentMarker}${overallLine}${enterpriseLine}${protectedLine}${xLabels}${text(520, 674, zh ? '声明错峰输入占比' : 'declared shift share input', 'axis', 'middle')}
+  ${grid}${currentMarker}${overallLine}${enterpriseLine}${protectedLine}${xLabels}${text(645, chartBottom + 80, zh ? '声明错峰输入占比' : 'declared shift share input', 'axis', 'middle')}
   ${text(1178, 190, zh ? '当前参考点 C3' : 'Current reference C3', 'section')}${text(1178, 226, zh ? '固定地面服务控制，只扫一个输入' : 'fixed ground controls; one input swept', 'note')}${evidence}
   <rect x="52" y="794" width="1696" height="126" rx="20" fill="#102f42" stroke="#f6c76b" stroke-width="2"/>${text(82, 838, note, 'note')}${text(82, 875, zh ? '来源：commute-co-benefit-sensitivity.json · 全量合成回放 · 仅聚合结果' : 'Source: commute-co-benefit-sensitivity.json · full synthetic replay · aggregate only', 'foot')}${text(82, 900, zh ? '空中候选保持阻断；敏感性结果不参与现场授权或公开服务承诺' : 'Air candidate remains blocked; sensitivity does not grant field authorisation or a public-service promise', 'foot')}
 </svg>`;
@@ -176,6 +179,7 @@ function writeArtifacts(readout) {
 
 function checkSensitivity(actual) {
   const fresh = buildSensitivity();
+  const boardMarkup = [createBoard(fresh, false), createBoard(fresh, true)];
   const checks = {
     readout_parity: JSON.stringify(actual) === JSON.stringify(fresh),
     scenario_count_complete: fresh.checks.scenario_count_complete,
@@ -186,7 +190,11 @@ function checkSensitivity(actual) {
     protected_readout_invariant_under_input_sweep: fresh.checks.protected_readout_invariant_under_input_sweep,
     air_candidate_blocked_by_fixed_controls: fresh.checks.air_candidate_blocked_by_fixed_controls,
     aggregate_only: fresh.checks.aggregate_only,
-    no_optimal_rate_claim: fresh.checks.no_optimal_rate_claim
+    no_optimal_rate_claim: fresh.checks.no_optimal_rate_claim,
+    visual_board_has_three_series: boardMarkup.every((board) =>
+      (board.match(/class="legend"/g) || []).length === 3
+      && (board.match(/class="chart-value"/g) || []).length === SHIFT_SHARES.length * 3
+    )
   };
   if (Object.values(checks).every(Boolean)) {
     console.log(JSON.stringify({ ok: true, reference_scenario: fresh.reference_scenario, checks }, null, 2));
