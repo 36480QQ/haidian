@@ -38,8 +38,10 @@ class AgentFacingDocsTests(unittest.TestCase):
         self.assertIn("scripts/self_check_submission.py", docs)
         self.assertIn("requirements-review.txt", docs)
         self.assertIn("智能体提交边界", docs)
-        self.assertIn("unknown", docs)
-        self.assertIn("pending_control", docs)
+        self.assertIn("status=unknown", docs)
+        self.assertIn("reason", docs)
+        self.assertIn("assumptions", docs)
+        self.assertNotIn("pending_control", docs)
 
     def test_agent_docs_require_bilingual_v2_and_post_submission_monitoring(self) -> None:
         skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(
