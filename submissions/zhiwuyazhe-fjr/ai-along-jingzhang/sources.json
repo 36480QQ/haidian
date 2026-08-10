@@ -163,17 +163,18 @@
     },
     {
       "id": "OSM-CONTEXT-20260809",
-      "title": "OpenStreetMap context extract",
+      "title": "OpenStreetMap standard-map context snapshot",
       "publisher": "OpenStreetMap contributors",
-      "path": ".working-notes/osm/context.json",
       "url": "https://www.openstreetmap.org/copyright",
+      "secondary_url": "https://tile.openstreetmap.org/",
       "source_type": "osm_background",
       "authority_level": "background_only",
-      "usage": "Orientation for named stations, museums, campuses and mismatch risk checks.",
-      "usable_for": ["background orientation", "fieldwork planning"],
+      "usage": "Orientation for named stations, museums, campuses and mismatch risk checks; a visibly attributed, muted raster snapshot is embedded in the site-overview figures as real-world context.",
+      "usable_for": ["background orientation", "fieldwork planning", "contextual basemap"],
       "not_usable_for": ["official boundary", "road redline", "statutory metric"],
-      "transformations": "Names and approximate coordinates reviewed on 2026-08-09; no OSM geometry is embedded in formal design layers.",
-      "rights": "ODbL attribution required for any derived OSM database; no OSM tiles are redistributed."
+      "transformations": "Names and approximate coordinates were reviewed on 2026-08-09. Standard raster tiles were retrieved on 2026-08-10, desaturated and lightened, then baked beneath separately sourced provisional proposal geometry; no OSM geometry enters the formal design layers or metric calculations.",
+      "limitations": "Snapshot completeness and labels follow the OSM state at retrieval time. It provides orientation only and cannot resolve official scope, parcel, road-redline or area questions.",
+      "rights": "© OpenStreetMap contributors. Visible attribution is retained in both language figures and embedded PDFs; reuse follows the OSM copyright notice and tile usage policy."
     },
     {
       "id": "CASE-KENDALL-SQUARE",
