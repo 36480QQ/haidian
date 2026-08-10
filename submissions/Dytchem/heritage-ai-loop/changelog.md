@@ -1,4 +1,11 @@
 
+## v0.4.2 - 2026-08-10（评审意见修复）
+
+- 按 #1400 评审意见修复 manifest 声明与证据一致性：
+  - `validation_claim.self_checked` false → true（self_check.json 已持久化四条规范化证据，均为 pass）
+  - `validation_claim.data_confidence` high → medium（几何推导类指标 site_area/green/public/road/walking/renewal 均标 medium，总体置信度与证据一致，不再高估）
+  - 新增 `self_check_evidence` 字段说明证据来源；`generated_at` 刷新
+
 ## v0.4.1 - 2026-08-10（人工复审补锚点）
 
 - 复审 v0.4：三份新标准的 evidence claims 在 proposal.md 中均有对应表述（无障碍导视/人工兜底、数据最小化/可解释/人工等价服务、公共房间与小月河生活服务台），但正文缺少显式 `[standard:...]` 机读锚点；v2 契约虽不强制，补齐可让评审与工具直接建立标准矩阵↔正文的证据链。
