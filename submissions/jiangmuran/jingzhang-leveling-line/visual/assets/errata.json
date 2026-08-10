@@ -4,12 +4,12 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 40,
+  "total": 41,
   "by_found_by": {
    "audit": 17,
    "own-gate": 2,
    "external-reviewer": 4,
-   "self": 17
+   "self": 18
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
@@ -18,7 +18,7 @@
    "check-measured-the-convenient-thing": 11,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
-   "claim-outlived-the-package": 2,
+   "claim-outlived-the-package": 3,
    "deliverable-not-inspected-before-shipping": 8,
    "gate-reported-and-was-ignored": 1,
    "measurement-answering-a-question-it-cannot-answer": 2
@@ -438,6 +438,16 @@
    "fix_zh": "限制改写为两条互相夹住的不可观测量：缓存命中使标准差偏小，配置变化（若发生）使它偏大；结论改述为「同一份输入的两次读数」，标题所称的仪器重复性只在身份不变时成立。@147228 的 PR #1190 让 model、endpoint、effort 与 prompt/schema/policy 指纹随决定落盘并要求身份一致才复用缓存——合入后这个区分第一次可以从数据里做出来。该 PR 恰好实现了本方案在 #950 提出的「记录本次是否命中缓存」，并且比那条建议更完整。",
    "found_by_name": "@147228",
    "found_in": "Issue #950 / PR #1190"
+  },
+  {
+   "id": "E41",
+   "commit": "036a7473",
+   "file": "drawings/a3-booklet.pdf",
+   "found_by": "self",
+   "shape": "claim-outlived-the-package",
+   "what_zh": "write_pdf 里那段注释写着「七份拷贝会塌成一份」。实测：a3-booklet.pdf 9.52 MB 的文件里有 14 个内嵌字体程序、10.54 MB 未压缩字形数据，六份 Regular 与六份 Bold 各不相同；每页 1.0–1.9 MB 与内容无关——纯文字封面 1.80 MB，六图合一的网格 1.88 MB。图纸是免费的，文件全是字体。",
+   "why_zh": "**这条优化从写下那天起就没生效，而注释断言它生效了，一直没人量过。** primer 没写 font-weight，因此只喂了 Regular；它是一条约 1,500 字符的单行，在 1,191 单位宽的页面上早已越界——**而它下方两行的注释恰恰写着「cairo 会裁掉页面外的字形，被裁掉的字形不会被嵌入」**。它违反了自己写下的规则。",
+   "fix_zh": "primer 覆盖全部使用到的字重与全部字符，按页宽分行，并**移到每页最前**——Noto CJK 是 CID-keyed CFF，其 FDArray 子字体按页面上先用到的顺序排列，所以只有先喂全集才能让各页字节一致（此前两页在长度完全相同的情况下有 190,714 字节不同）。结果：A3 9.52→2.08 MB，A0 8.77→2.07 MB，字体程序 14→3，整包 31.6→16.7 MB，距 10 MB 单份上限的余量从 5% 变为 79%。旧注释换成一道量成品的守卫：数成品 PDF 里不同字体程序的份数，超过四就拒绝。"
   }
  ]
 }
