@@ -20,7 +20,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -36,7 +38,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "green_ratio": {
       "status": "known",
@@ -55,7 +59,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "public_space_ratio": {
       "status": "known",
@@ -73,7 +79,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -89,7 +97,9 @@
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "official_context",
+      "confidence_is_about": "reading"
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -118,7 +128,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "leveling_spine_length_m": {
       "status": "known",
@@ -134,7 +146,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "benchmark_count": {
       "status": "known",
@@ -151,7 +165,9 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CLOSURE-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "green_ratio_in_partition": {
       "status": "known",
@@ -169,7 +185,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "phasing_union_area_sqm": {
       "status": "known",
@@ -186,7 +204,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "scenario_card_count": {
       "status": "known",
@@ -202,7 +222,9 @@
       "confidence": "high",
       "assumptions": [
         "任务书要求不少于 10 张；本项为实际张数，由 check_cards.js 逐卡解析验证。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "scenario_cards_operational_count": {
       "status": "known",
@@ -218,7 +240,9 @@
       "confidence": "high",
       "assumptions": [
         "其余卡片的限差由 BM-1 的限差议事厅设定，本方案不代拟，故标记为未可运行。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "industry_test_scenario_count": {
       "status": "known",
@@ -234,7 +258,9 @@
       "confidence": "high",
       "assumptions": [
         "S06 / S10 / S11，各有独立受控边界；任务书要求不少于 3 个。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "persona_count": {
       "status": "known",
@@ -250,7 +276,9 @@
       "confidence": "high",
       "assumptions": [
         "任务书要求不少于 5 类。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "landmark_count": {
       "status": "known",
@@ -267,7 +295,9 @@
       "confidence": "high",
       "assumptions": [
         "任务书要求不少于 3 个 AI 朝圣地标。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "case_study_count": {
       "status": "known",
@@ -284,7 +314,9 @@
       "confidence": "high",
       "assumptions": [
         "任务书要求 5–8 个全球案例；逐案来源登记于 sources.json。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "renewal_project_count": {
       "status": "known",
@@ -300,7 +332,9 @@
       "confidence": "high",
       "assumptions": [
         "每项给出责任角色、合作机制、前置、成本级别、用地依赖、审批路径、KPI 与退出条件。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "phase_count": {
       "status": "known",
@@ -316,7 +350,9 @@
       "confidence": "high",
       "assumptions": [
         "三期为互不重叠的增量，两两重叠面积由构建闸门约束为 0。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "land_use_class_count": {
       "status": "known",
@@ -332,7 +368,9 @@
       "confidence": "high",
       "assumptions": [
         "完整剖分，无重叠无缺口，由 verify.js 以 40 m 格网逐点验证。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "land_use_feature_count": {
       "status": "known",
@@ -348,7 +386,9 @@
       "confidence": "high",
       "assumptions": [
         "含六个建筑地块 LU-B01–LU-B06。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "road_feature_count": {
       "status": "known",
@@ -364,7 +404,9 @@
       "confidence": "high",
       "assumptions": [
         "含主脊、两条附合路线、十一段缝合与三条测点接入支线。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "benchmark_first_order_count": {
       "status": "known",
@@ -380,7 +422,9 @@
       "confidence": "high",
       "assumptions": [
         "BM-1 与 BM-2；BM-0 为水准原点，不计入一等点。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "benchmark_third_order_count": {
       "status": "known",
@@ -396,7 +440,9 @@
       "confidence": "high",
       "assumptions": [
         "月度复测，由居民与一线人员主导取读数。"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     },
     "taskbook_requirement_count": {
       "status": "known",
@@ -412,7 +458,9 @@
       "confidence": "high",
       "assumptions": [
         "六项 agent 任务的 must-address 与 required output 合计。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "taskbook_requirements_answered": {
       "status": "known",
@@ -428,7 +476,9 @@
       "confidence": "high",
       "assumptions": [
         "每条指向一处构建时校验存在的证据；缺一即构建失败。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "matrix_reference_count": {
       "status": "known",
@@ -446,7 +496,9 @@
       "confidence": "high",
       "assumptions": [
         "这是**被声明**的引用数；其中能被解析规则核对的那部分由 matrix_refs_qa 分别报出，两个数取自同一个定义，不再各算各的（此前二者相差 5）。每条条目的证据摘要由其自身引用生成，44 条互不相同。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "shipped_verification_script_count": {
       "status": "known",
@@ -462,7 +514,9 @@
       "confidence": "high",
       "assumptions": [
         "verify.js / check_osm.js / check_cards.js / check_closure.js / run_s08_tabletop.js，均无依赖、不联网。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "tabletop_case_count": {
       "status": "known",
@@ -478,7 +532,9 @@
       "confidence": "high",
       "assumptions": [
         "2 例接受、8 例拒绝，全部对随包读取器实跑。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "errata_entry_count": {
       "status": "known",
@@ -494,7 +550,9 @@
       "confidence": "high",
       "assumptions": [
         "本方案自身错误的登记册；每条对应一个可校验的提交。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "errata_external_finder_count": {
       "status": "known",
@@ -510,11 +568,13 @@
       "confidence": "high",
       "assumptions": [
         "由本方案之外的评审在公开 PR 或 Issue 中发现的缺陷数。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "rights_ledger_entry_count": {
       "status": "known",
-      "value": 85,
+      "value": 86,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -526,7 +586,9 @@
       "confidence": "high",
       "assumptions": [
         "逐文件权利归类，由 manifest 生成；任一随包文件未归类即构建失败。"
-      ]
+      ],
+      "evidence_class": "self_measured",
+      "confidence_is_about": "reading"
     },
     "osm_vertices_shipped": {
       "status": "known",
@@ -542,7 +604,9 @@
       "confidence": "high",
       "assumptions": [
         "© OpenStreetMap contributors，ODbL 1.0；由 check_osm.js 复算全部十个已发布标量。"
-      ]
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "computation"
     },
     "field_census_corpus_size": {
       "status": "known",
@@ -558,7 +622,9 @@
       "confidence": "high",
       "assumptions": [
         "权威源为 GitHub git tree，非会滞后的展示索引；语料每日增长，引用前须重跑。"
-      ]
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "computation"
     },
     "track_scan_corpus_size": {
       "status": "known",
@@ -574,7 +640,9 @@
       "confidence": "high",
       "assumptions": [
         "机器人与 AI 公共服务两条赛道；空白表由该文件生成。"
-      ]
+      ],
+      "evidence_class": "background_only",
+      "confidence_is_about": "computation"
     },
     "phased_share_of_design_scope": {
       "status": "known",
@@ -592,7 +660,9 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "evidence_class": "provisional",
+      "confidence_is_about": "computation"
     }
   }
 }
