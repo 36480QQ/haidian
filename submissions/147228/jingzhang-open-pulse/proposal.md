@@ -672,6 +672,42 @@ v1.7 的机器可读资产保留不变；v1.8 把最影响内容评分的证据�
 
 v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维度均能回到一句可核验的话：目标/功能有映射，品牌有构造规则，区域有责任链，产业有测试门，场景有空间和感知路径，节点有闸门，公共性有基线计划，版权有逐路径证据，国际传播有双语入口，长期运营有 RACI/SLA 和退出。官方边界、控规、权属、市政、文保、交通、气象、雨洪和实测体验到位后，全部结果必须重算。
 
+## v2.1 三条未来主线：创新速度、人的承载与社会乘数
+
+前一轮方案已经把“人先于模型、证据先于扩散、失败可退出”做成公共回路；本轮把它进一步翻译成三个可以被专业团队和参与者共同校准的设计问题：一个想法多久能遇到合适的人、空间、数据、测试和第一位真实使用者；谁能在这条创新带里生活、照护、工作和学习；一次技术试验如何回到普通人的城市问题，而不是停在演示和估值。这不是新增的法定规划层级，也不替代组织方尚未提供的现场资料。[source:AGENT-TASKBOOK] [source:NIST-HUMAN-CENTERED-AI] [source:UN-HABITAT-PEOPLE-CENTRED-SMART-CITIES]
+
+### 1. Innovation Velocity：把“创新时延”作为城市设计指标
+
+产业集聚不等于创新加速。方案建议把 idea 到 impact 拆成六个可记录节点：跨域匹配、空间进入、最小数据许可、第一次真实测试、第一位真实使用者、第一次迭代。三处重点区分别承担可信测试、开源转化和城市问题回流；空间上不追求一个巨型 AI 中心，而是布置共享食堂、公共问题入口、开放工作台、预约测试窗、成果发布厅和失败复盘墙等“碰撞面”。这些都是概念建议，需由专业团队结合官方边界、权属、消防、数据和运营条件深化。[depth:overall_spatial_structure]
+
+三处重点区的空间承载分别回读众智园 [data:geometry/key_areas.geojson#PROV-KEY-001]、AI 原点社区 [data:geometry/key_areas.geojson#PROV-KEY-002] 和大钟寺 [data:geometry/key_areas.geojson#PROV-KEY-003]。
+
+为避免用口号声称“加速”，新增 `innovation-friction-simulation.js` 与同名 JSON，使用固定种子 `147228`、每个情景 50,000 次抽样，对六阶段显式三角分布假设进行筛查。它不是现场测量、不是工期预测，也不是因果估计；正式深化时应由预约记录、数据许可日志、测试窗口和用户回执替换输入。当前输出如下：
+
+| 空间—运营原型 | idea→首次迭代中位数 | P90 | 相对 S0 中位数降幅 | 跨域匹配率 | 社会验证率 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| S0 碎片化走廊 | 63.313 天 | 68.955 天 | 0 | 20.108% | 7.832% |
+| S1 一般科技园 | 35.558 天 | 38.571 天 | 43.838% | 35.154% | 18.090% |
+| S2 京张开源脉冲 | 35.096 天 | 38.467 天 | 44.567% | 54.826% | 35.370% |
+
+这些数值只表示当前假设下的流程筛查：S2 相对 S0 的中位数摩擦降幅约为 44.567%，同时提高跨域相遇和社会验证的机会；它没有承诺“速度翻倍”，也没有把 S2 模型结果写成现状绩效。[metric:innovation_latency_s0_median_days] [metric:innovation_latency_s1_median_days] [metric:innovation_latency_s2_median_days]；相对降幅由 [metric:innovation_latency_reduction_s2_vs_s0_ratio] 回读；跨域匹配和社会验证由 [metric:innovation_cross_domain_match_rate_s2] [metric:innovation_social_validation_rate_s2] 回读；模型明细见 [data:visual/assets/innovation-friction-simulation.json#results]
+
+### 2. Human Capacity：人的承载不是配套，而是创新基础设施
+
+如果一个创新带只能容纳已经成功的人，它就不会持续产生下一代创新。因此，本方案不把“高品质城区”简化为高端住宅、精品商业或活动密度，而把可负担进入、照护连续、无账号可用、夜间劳动安全、跨代知识接力和社会验证回流设为六道前置闸门。六道闸门对应住房/通勤调查、照护者时间日记、无障碍和无 App 演练、夜间路线审计、知情同意与知识撤回、问题—试验—回执链；当前全部为 `unknown`，未知不是通过。[metric:human_capacity_gate_count] [metric:human_capacity_gate_passed_count] [data:visual/assets/human-capacity-gates.json#HC-01]
+
+这会改变空间优先级：托育、社区医疗、安静休息、夜间食堂、纸面服务、维护工位和退休工程师/居民的协作桌，不是“创新园区之外的生活配套”，而是减少人才时间损耗、让普通人进入创新链、延长知识寿命的基础设施。任何 AI 场景如果让照护者、老人、残障者、夜班劳动者或维护者承担新的不可见成本，必须先暂停或降级为人工等价服务。[data:visual/assets/human-capacity-gates.json#HC-02] [data:visual/assets/human-capacity-gates.json#HC-04]
+
+### 3. Social Multiplier：两条价值链都要到达真实城市
+
+每个产业测试不只记录技术成熟度（TRL），还应建立社会价值成熟度（SVL）的回执：它是否回应一个公开城市问题，是否经过最小化数据许可和人工复核，是否被真实使用者测试，是否形成普通服务可以复用的结果，是否留下申诉、修复、退出和维护记录。当前 `innovation_social_validation_rate_s2` 只是模型参数的抽样结果，不是已解决的居民问题；六道“社会验证回流”闸门仍需在项目现场建立。[metric:innovation_social_validation_rate_s2] [data:visual/assets/human-capacity-gates.json#HC-06]
+
+长期 KPI 不应停在企业数量、装置数量、融资或活动人次，而应记录“研究结果 → 真实城市问题 → 可复现实验 → 公共回执 → 普通服务改进”的闭环及其失败率。只有留下公共回执、人工决策和维护责任的技术结果，才进入社会价值账；没有回流就不计作科技红利外溢。[data:visual/assets/civic-pulse-protocol.json#stage-06] [data:visual/assets/industry-validation-cases.json#case-01] [source:AGENT-TASKBOOK]
+
+### 4. 下一轮模拟与现场边界
+
+下一轮应由专业团队与参与者共同确定样本、时间窗和最小字段。每个 idea 只记录匿名阶段时长、是否找到跨域协作者、是否取得合法最小数据许可、是否完成有界测试、是否取得第一位真实使用者回执，以及结果是否回到普通公共服务。S0/S1/S2 必须采用同一协议再跑；如果 S2 的速度优势以挤压无障碍、照护、隐私或维护为代价，结果即失败。官方几何、网络、权属、市政数据、居民基线和运营日志到位后，JSON、metrics、图纸和 HTML 必须一起重算。[depth:metrics_recalculation] [assumption:A-HUMAN-EXPERIENCE-001]
+
 ## 参考资料
 
 完整的任务、范围、枚举、指标、数据、标准、深度、合规和停止条件登记见 `sources.json`、`standard_matrix.json`、`design_depth_matrix.json`、`compliance_matrix.json`、`data/source_registry.json`、`brief/site-package/design_brief.json`、`brief/site-package/allowed_design_space.json`、`brief/site-package/enums/`、`brief/site-package/ranges/planning_limits.json`、`data/processed/agent_fact_pack.md`、`data/processed/project_scope_summary.csv`、`data/processed/agent_task_requirements.csv`、`data/processed/source_use_matrix.csv` 和 `data/processed/missing_data_checklist.csv`。任务与处理资料的正文回链包括 [source:AGENT-TASK-REQUIREMENTS] 与 [source:MISSING-DATA-CHECKLIST]。
