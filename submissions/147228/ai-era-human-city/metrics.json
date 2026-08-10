@@ -206,12 +206,13 @@
     },
     "manual_fallback_coverage_ratio": {
       "status": "known",
-      "value": 0.2,
+      "value": 1.0,
       "unit": "ratio",
       "source_files": [
-        "visual/assets/scenario-cards.json"
+        "visual/assets/scenario-cards.json",
+        "visual/assets/scenario-space-operation-matrix.json"
       ],
-      "formula": "count(cards with explicit human responsibility or fallback) / scenario_card_count",
+      "formula": "count(cards with non-empty human_fallback_zh) / scenario_card_count",
       "confidence": "high",
       "assumptions": [
         "A-DATA-GOVERNANCE-001"

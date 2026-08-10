@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7e84d39245e449f4a586ce9ad9b315ab679b075de82f0d17261b268afd2e0954"
+      "sha256": "4ae5f33be7a10150d78b7e6b9fad0daadb74f90b07fb0912e92ac6add1c13f0a"
     },
     {
       "path": "assumptions.json",
@@ -232,7 +232,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4a95fe9297646629e9347a15842a72f3c4b20bdb01e283d5ac4ea533d6a12a1c"
+      "sha256": "9ea56959a1fc3378aea8fc11e14c1dae1830344d01e15f58104f027d8088fc16"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -240,7 +240,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "622bac50b159443c7e452a53977b0bb20cde71a476c3b48470b9693c34a8ea2c"
+      "sha256": "466cacfbc6053700bbc9536770b02c80c725ae1341f89e53fd5c835fba056fdb"
     },
     {
       "path": "visual/index.en.html",
@@ -326,7 +326,7 @@
       "path": "visual/assets/scenario-cards.json",
       "role": "narrative",
       "required": false,
-      "sha256": "055ef89dc0669653650484870b274ce897e7686dd20fd94d5aae4f1b6cc8ba2a"
+      "sha256": "4f9239bcdd7830d744400a995ef3507d2d64d9fdb92072878022b4b31c038d6a"
     },
     {
       "path": "visual/assets/personas-and-fairness.json",
@@ -338,7 +338,7 @@
       "path": "visual/assets/scenario-space-operation-matrix.json",
       "role": "narrative",
       "required": false,
-      "sha256": "16fa64edba22ea412f0c5f7ab4feeaca6e9f73c6de6e6e541d84d4d685cad052"
+      "sha256": "42a05084f9af71c59ace166831ee4e0700a6b46e92d2a03907d9bf52ddc91d8d"
     },
     {
       "path": "visual/assets/ai-era-traceability-index.json",
@@ -467,7 +467,7 @@
       "path": "visual/assets/run-ai-era-evidence-boards.js",
       "role": "validation_script",
       "required": false,
-      "sha256": "9649ce4c16984a708efcd4a9bd38b2304834e816781b05a77a7d927900abd817"
+      "sha256": "c0e3d8946924c181b9b8b53e04d3d401a03df7102c06985a0d6e3335f4b89d73"
     },
     {
       "path": "assets/figures/taskbook-culture-operations-board.svg",

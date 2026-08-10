@@ -13,6 +13,8 @@ const figureDir = path.join(packageDir, "assets", "figures");
 const read = (name) => JSON.parse(fs.readFileSync(path.join(assetDir, name), "utf8"));
 const journey = read("ai-era-ordinary-journey-contract.json");
 const traceability = read("ai-era-traceability-index.json");
+const scenarioCards = read("scenario-cards.json");
+const scenarioMatrix = read("scenario-space-operation-matrix.json");
 const implementation = read("implementation-operation-matrix.json");
 const taskbookCulture = read("taskbook-culture-operations-atlas-v12.json");
 
@@ -35,6 +37,18 @@ expect(journey.rollback_steps.length === 5, `rollback_steps=${journey.rollback_s
 expect(journey.acceptance_checks.length === 6, `acceptance_checks=${journey.acceptance_checks.length}, expected 6`);
 expect(traceability.rows.length === 10, `traceability.rows=${traceability.rows.length}, expected 10`);
 expect(traceability.replay_coverage && traceability.replay_coverage.covered_count === 4, `covered_count=${traceability.replay_coverage && traceability.replay_coverage.covered_count}, expected 4`);
+expect(scenarioCards.cards.length === 10, `scenario_cards=${scenarioCards.cards.length}, expected 10`);
+expect(scenarioMatrix.rows.length === 10, `scenario_matrix_rows=${scenarioMatrix.rows.length}, expected 10`);
+const matrixById = new Map(scenarioMatrix.rows.map((row) => [row.scenario_id, row]));
+const fallbackCards = scenarioCards.cards.filter((card) => String(card.human_fallback_zh || "").trim());
+const fallbackMatrixRows = scenarioMatrix.rows.filter((row) => String(row.human_fallback || "").trim());
+expect(fallbackCards.length === scenarioCards.cards.length, `scenario_cards_with_human_fallback=${fallbackCards.length}, expected ${scenarioCards.cards.length}`);
+expect(fallbackMatrixRows.length === scenarioMatrix.rows.length, `scenario_matrix_with_human_fallback=${fallbackMatrixRows.length}, expected ${scenarioMatrix.rows.length}`);
+for (const card of scenarioCards.cards) {
+  const row = matrixById.get(card.card_id);
+  expect(row, `${card.card_id} is missing from scenario matrix`);
+  if (row) expect(row.human_fallback === card.human_fallback_zh, `${card.card_id} human fallback drift between scenario card and matrix`);
+}
 expect(implementation.project_families.length === 5, `project_families=${implementation.project_families.length}, expected 5`);
 expect(taskbookCulture.taskbook_positions.length === 3, `taskbook_positions=${taskbookCulture.taskbook_positions.length}, expected 3`);
 expect(taskbookCulture.landmarks.length === 3, `landmarks=${taskbookCulture.landmarks.length}, expected 3`);
@@ -60,6 +74,10 @@ const result = {
     acceptance_checks: journey.acceptance_checks.length,
     scenario_rows: traceability.rows.length,
     replayed_scenarios: traceability.replay_coverage && traceability.replay_coverage.covered_count,
+    scenario_cards: scenarioCards.cards.length,
+    scenario_cards_with_human_fallback: fallbackCards.length,
+    scenario_matrix_rows: scenarioMatrix.rows.length,
+    scenario_matrix_with_human_fallback: fallbackMatrixRows.length,
     project_families: implementation.project_families.length,
     taskbook_positions: taskbookCulture.taskbook_positions.length,
     landmarks: taskbookCulture.landmarks.length,
