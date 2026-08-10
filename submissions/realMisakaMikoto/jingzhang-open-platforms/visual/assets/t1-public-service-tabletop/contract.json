@@ -128,47 +128,39 @@
     }
   ],
   "budget": {
-    "currency": "CNY",
-    "price_date": "concept-stage-2026",
-    "bands": [
+    "estimate_state": "not_estimated",
+    "currency": null,
+    "total": null,
+    "categories": [
       {
-        "category": "configuration and content freeze",
-        "minimum_cny": 20000,
-        "maximum_cny": 35000,
-        "basis": { "zh": "六周试验的流程、责任表、词表和预期回执配置假设。", "en": "Assumption for configuring process, ownership table, vocabulary, and expected receipts for a six-week trial." },
-        "commitment_state": "conceptual_planning_envelope_not_a_quote"
+        "category": "human_staffing",
+        "basis": { "zh": "未来试验需核定服务时段、人工接管、培训与监督所需人员。", "en": "A future trial must determine staffing for service hours, human takeover, training, and supervision." }
       },
       {
-        "category": "human staffing and training",
-        "minimum_cny": 24000,
-        "maximum_cny": 42000,
-        "basis": { "zh": "服务时段内双人覆盖、培训与人工接管演练的假设。", "en": "Assumption for two-person service-hour coverage, training, and human-takeover drills." },
-        "commitment_state": "conceptual_planning_envelope_not_a_quote"
+        "category": "accessibility_qa",
+        "basis": { "zh": "未来试验需核定无障碍材料、渠道和代表性用户评审资源。", "en": "A future trial must determine resources for accessible materials, channels, and representative-user review." }
       },
       {
-        "category": "accessibility and bilingual review",
-        "minimum_cny": 8000,
-        "maximum_cny": 15000,
-        "basis": { "zh": "无障碍材料、双语专业校对和代表性用户有偿评审的假设。", "en": "Assumption for accessible materials, professional bilingual review, and compensated representative review." },
-        "commitment_state": "conceptual_planning_envelope_not_a_quote"
+        "category": "privacy_security",
+        "basis": { "zh": "未来试验需核定数据清单、威胁检查、事件演练和删除核验资源。", "en": "A future trial must determine resources for data inventory, threat checks, incident drills, and deletion verification." }
       },
       {
-        "category": "privacy and security review",
-        "minimum_cny": 8000,
-        "maximum_cny": 18000,
-        "basis": { "zh": "数据清单、威胁检查、事件演练和删除核验的假设。", "en": "Assumption for data inventory, threat checks, incident drill, and deletion verification." },
-        "commitment_state": "conceptual_planning_envelope_not_a_quote"
+        "category": "bilingual_qa",
+        "basis": { "zh": "未来试验需核定中英双语专业校对、关键字段对照和人工复核资源。", "en": "A future trial must determine resources for professional bilingual editing, critical-field parity, and human review." }
       },
       {
-        "category": "independent evaluation and closeout",
-        "minimum_cny": 6000,
-        "maximum_cny": 12000,
-        "basis": { "zh": "样本审计、结项复盘和公开摘要的假设。", "en": "Assumption for sample audit, closeout review, and public summary." },
-        "commitment_state": "conceptual_planning_envelope_not_a_quote"
+        "category": "temporary_setup",
+        "basis": { "zh": "未来试验需在场地、许可和设备需求确认后核定临时布置资源。", "en": "A future trial must determine temporary-setup resources after site, permit, and equipment needs are confirmed." }
+      },
+      {
+        "category": "operations_maintenance",
+        "basis": { "zh": "未来试验需在运营主体和服务时段确认后核定运行、维护和公开反馈资源。", "en": "A future trial must determine operations, maintenance, and public-feedback resources after an operator and service hours are confirmed." }
+      },
+      {
+        "category": "rollback_reserve",
+        "basis": { "zh": "未来试验需在停止条件和恢复责任确认后核定撤场、恢复与审计资源。", "en": "A future trial must determine removal, recovery, and audit resources after stop conditions and recovery ownership are confirmed." }
       }
     ],
-    "total_minimum_cny": 66000,
-    "total_maximum_cny": 122000,
     "excluded": [
       { "zh": "正式场地租赁、改造或长期运营费用", "en": "Formal site lease, alteration, or long-term operation" },
       { "zh": "既有信息系统接口采购与持牌专业服务费用", "en": "Legacy-system integration and licensed professional services" },
@@ -430,7 +422,7 @@
       { "zh": "不证明任何现场系统已部署或通过网络安全审查。", "en": "Does not prove any field system has been deployed or passed cybersecurity review." },
       { "zh": "不证明真实个人信息已合法取得、处理或删除。", "en": "Does not prove lawful collection, processing, or deletion of real personal information." },
       { "zh": "不证明健康、创业、翻译或工单结果的专业正确性。", "en": "Does not prove professional correctness of health, startup, translation, or ticket outcomes." },
-      { "zh": "不证明概念预算是报价、承诺或政府投资估算。", "en": "Does not prove the concept budget is a quote, commitment, or public investment estimate." }
+      { "zh": "资源类别清单不构成报价、资金承诺或政府投资估算。", "en": "The resource-category register is not a quote, funding commitment, or public investment estimate." }
     ],
     "claims_allowed": [
       { "zh": "可声称合同字段、正负样例和运行规则可被本地确定性检查。", "en": "May claim the contract fields, fixtures, and rules are locally and deterministically checkable." },

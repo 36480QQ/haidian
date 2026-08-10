@@ -99,13 +99,14 @@ function checkContract(contract) {
   assert(contract.authorizations.length >= 6, "Authorization register is incomplete");
   assert(contract.authorizations.every((item) => item.state === "not_obtained"), "No authorization may be implied");
   assert(contract.budget.funding_state === "unfunded_unapproved", "Budget must remain unfunded and unapproved");
-
-  const bandMinimum = contract.budget.bands.reduce((sum, item) => sum + item.minimum_cny, 0);
-  const bandMaximum = contract.budget.bands.reduce((sum, item) => sum + item.maximum_cny, 0);
-  assert(bandMinimum === contract.budget.total_minimum_cny, "Budget minimum does not equal band sum");
-  assert(bandMaximum === contract.budget.total_maximum_cny, "Budget maximum does not equal band sum");
-  assert(contract.budget.bands.every((item) => item.minimum_cny <= item.maximum_cny), "A budget band is inverted");
-  assert(contract.budget.bands.every((item) => item.commitment_state === "conceptual_planning_envelope_not_a_quote"), "Budget must not be represented as a quote");
+  assert(contract.budget.estimate_state === "not_estimated", "Budget amount must remain unestimated");
+  assert(contract.budget.currency === null && contract.budget.total === null, "Budget amount and currency must remain null");
+  const expectedBudgetCategories = [
+    "human_staffing", "accessibility_qa", "privacy_security", "bilingual_qa",
+    "temporary_setup", "operations_maintenance", "rollback_reserve",
+  ];
+  assert(sameSet(contract.budget.categories.map((item) => item.category), expectedBudgetCategories), "Budget resource categories are incomplete");
+  assert(contract.budget.categories.every((item) => item.basis.zh && item.basis.en), "Budget resource categories must be bilingual");
 
   const registeredCodes = contract.fail_code_registry.map((item) => item.code);
   assert(sameSet(registeredCodes, EXPECTED_FAIL_CODES), "Fail-code registry must contain all ten specified codes");

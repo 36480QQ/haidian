@@ -82,15 +82,17 @@
       },
       "additionalProperties": false
     },
-    "budgetBand": {
+    "budgetCategory": {
       "type": "object",
-      "required": ["category", "minimum_cny", "maximum_cny", "basis", "commitment_state"],
+      "required": ["category", "basis"],
       "properties": {
-        "category": { "type": "string", "minLength": 1 },
-        "minimum_cny": { "type": "integer", "minimum": 0 },
-        "maximum_cny": { "type": "integer", "minimum": 0 },
-        "basis": { "$ref": "#/$defs/localized" },
-        "commitment_state": { "const": "conceptual_planning_envelope_not_a_quote" }
+        "category": {
+          "enum": [
+            "human_staffing", "accessibility_qa", "privacy_security", "bilingual_qa",
+            "temporary_setup", "operations_maintenance", "rollback_reserve"
+          ]
+        },
+        "basis": { "$ref": "#/$defs/localized" }
       },
       "additionalProperties": false
     },
@@ -169,13 +171,12 @@
         },
         "budget": {
           "type": "object",
-          "required": ["currency", "price_date", "bands", "total_minimum_cny", "total_maximum_cny", "excluded", "funding_state"],
+          "required": ["estimate_state", "currency", "total", "categories", "excluded", "funding_state"],
           "properties": {
-            "currency": { "const": "CNY" },
-            "price_date": { "const": "concept-stage-2026" },
-            "bands": { "type": "array", "minItems": 4, "items": { "$ref": "#/$defs/budgetBand" } },
-            "total_minimum_cny": { "type": "integer", "minimum": 0 },
-            "total_maximum_cny": { "type": "integer", "minimum": 0 },
+            "estimate_state": { "const": "not_estimated" },
+            "currency": { "type": "null" },
+            "total": { "type": "null" },
+            "categories": { "type": "array", "minItems": 7, "maxItems": 7, "items": { "$ref": "#/$defs/budgetCategory" } },
             "excluded": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/localized" } },
             "funding_state": { "const": "unfunded_unapproved" }
           },

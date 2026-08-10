@@ -68,8 +68,16 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/roads.geojson",
-      "message": "OI-01 through OI-09 consistently denote north-to-south relative candidate positions, while IT-01 through IT-09 denote relocatable interface types; roads, buildings, public-space and microclimate layers carry the same mapping.",
-      "suggested_fix": "Repeat the four-layer mapping check whenever an interface ID or geometry feature changes."
+      "message": "OI-01 through OI-09 consistently denote north-to-south relative candidate positions, while IT-01 through IT-09 denote relocatable interface types; roads, buildings, public-space and microclimate layers plus all 12 bilingual scenario cards carry explicit compatible OI-position and IT-type pairs.",
+      "suggested_fix": "Repeat the four-layer mapping and 12-card bilingual crosswalk check whenever an interface ID, scenario or geometry feature changes."
+    },
+    {
+      "check_id": "AGENT6_COMMUNITY_INTERNATIONAL_CONVERSION",
+      "result": "pass",
+      "severity": "info",
+      "target": "proposal.md",
+      "message": "The bilingual implementation section records a concept-only developer-community and international conversion chain from intake through challenge, authorized pilot and independent review to optional incubation, lawful procurement, standard publication or international localization; it names roles, evidence gates and exit conditions without claiming partners, budget or commitments.",
+      "suggested_fix": "Keep future A/R roles unknown pending authorization and do not promote any conversion option to a partnership, procurement, investment, market-access or cross-border-data claim without evidence."
     },
     {
       "check_id": "T1_TABLETOP_PACKAGE",
