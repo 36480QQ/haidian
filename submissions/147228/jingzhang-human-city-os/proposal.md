@@ -56,6 +56,18 @@ v2.2 已将“哪里发生空间关系”和“人怎样进入、拒绝、暂停
 
 这组差异回接既有的社区保留支撑面积、可逆留白占比与指标复算规则。[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [depth:metrics_recalculation]
 
+### 一条可回读的 AI 空间差分｜机器可调用不是唯一目标
+
+下面只把 `people_first` 与 `baseline_reproduction` 的既有回算结果展开，帮助评审先看“空间取舍改变了什么”；它不是推荐方案，也不是现状、规划定案或正式面积指标。三项都以同一临时场地面积推导，`derived_area_sqm_delta` 只用于概念比较。[data:visual/assets/parametric-tradeoff-study.json] [data:visual/assets/parametric-tradeoff-study-evidence.json] [data:visual/assets/spatial-action-rooms-v21.json]
+
+| 既有空间带 | baseline → people-first | share 差分 | 派生面积差分（㎡） | 回接的空间动作房间 |
+| --- | ---: | ---: | ---: | --- |
+| 社区保留与服务（LU-H01） | 18.2759% → 24.0000% | +5.7241 个百分点 | +653,284.939 | 北京 AI 原点社区：保留账本、人工入口与无屏恢复 |
+| 可逆留白与临时使用（LU-B01） | 15.0936% → 18.0000% | +2.9064 个百分点 | +331,703.646 | 蓝绿停留、临时使用与退出/回放路径 |
+| 城市 API 与具身研发（LU-B02） | 15.4835% → 11.0000% | −4.4835 个百分点 | −511,691.664 | 众智园：受限测试、人工接管与停止/退出 |
+
+这张表只提高差分的可见性；正式几何、面积、指标、许可和运营结果仍以官方资料到位后的全量重算为准。[depth:metrics_recalculation] [depth:risk_missing_data]
+
 v2.3 仍只改善责任链、实施可审查性与表达完整度；不新增官方边界、容积率、建筑高度、工程线位、容量、投资、许可、政策确定性或现实运营绩效。官方几何、权属、道路/空域、安全、能源、气候、授权和公众基线到位后，应连同序列图、准备度台账、参数化回放、metrics、HTML、PDF 和 self-check 全量重算。[depth:risk_missing_data]
 
 ## v1.9 一页执行摘要｜任务书到空间响应
