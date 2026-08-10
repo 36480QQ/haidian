@@ -26,7 +26,7 @@ iteration: "v0.5"
 
 ![证据状态、临时边界与提交包关系](assets/figures/site-overview.png)
 
-完成标准不是“看起来完整”，而是判断能回到来源，动作能回到空间对象，限制能回到假设与自检。`sources.json` 保存来源用途，`assumptions.json` 保存开放假设，六项公平指标以 unknown/null 进入 `metrics.json`；`METRIC-AVOIDABLE-TIME-BURDEN` 因正式 schema 不支持 `minutes_per_journey` 而继续留在模块 07 的阻断目录，不用 `none` 或 `ratio` 伪装。网页母版、五张双语主图及中英文 A3/A0 已同步为 v0.5 的城市图集信息层级；浏览器、PDF、双语和官方规则校验仍以机器检查与人工复核记录为准。本稿 v0.5 仍不声称已经 finalizer 或进入 ready-for-review。[source:SOURCE-REGISTRY] [metric:METRIC-EQUITY-BURDEN] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+完成标准不是“看起来完整”，而是判断能回到来源，动作能回到空间对象，限制能回到假设与自检。`sources.json` 保存来源用途，`assumptions.json` 保存开放假设，六项公平指标以 unknown/null 进入 `metrics.json`；`METRIC-AVOIDABLE-TIME-BURDEN` 因正式 schema 不支持 `minutes_per_journey` 而继续留在模块 07 的阻断目录，不用 `none` 或 `ratio` 伪装。网页母版、五张双语主图及中英文 A3/A0 已同步为 v0.5 的城市图集信息层级；浏览器、PDF、双语和官方规则校验仍以机器检查与人工复核记录为准。本稿已由官方 finalizer 标记为 ready_for_review，并以当前候选文件重新完成本地自检；这不代表官方边界、建筑资料、运营条件或公平绩效已经获得证明。[source:SOURCE-REGISTRY] [metric:METRIC-EQUITY-BURDEN] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ## 三层范围工作框架
 

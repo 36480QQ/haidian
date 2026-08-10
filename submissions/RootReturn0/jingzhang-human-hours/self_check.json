@@ -1,86 +1,196 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/RootReturn0/jingzhang-human-hours",
+  "pr_author": "RootReturn0",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/RootReturn0/jingzhang-human-hours/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/RootReturn0/jingzhang-human-hours/agent.json",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/key-areas.en.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/key-areas.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/land-use-structure.en.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/land-use-structure.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/metrics-evidence.en.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/metrics-evidence.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/mobility-bluegreen.en.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/mobility-bluegreen.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/site-overview.en.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assets/figures/site-overview.png",
+        "submissions/RootReturn0/jingzhang-human-hours/assumptions.json",
+        "submissions/RootReturn0/jingzhang-human-hours/compliance_matrix.json",
+        "submissions/RootReturn0/jingzhang-human-hours/design_depth_matrix.json",
+        "submissions/RootReturn0/jingzhang-human-hours/drawings/a0-boards.en.pdf",
+        "submissions/RootReturn0/jingzhang-human-hours/drawings/a0-boards.pdf",
+        "submissions/RootReturn0/jingzhang-human-hours/drawings/a3-booklet.en.pdf",
+        "submissions/RootReturn0/jingzhang-human-hours/drawings/a3-booklet.pdf",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/buildings.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/constraints.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/green_space.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/key_areas.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/land_use.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/phasing.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/public_space.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/roads.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/geometry/site_boundary.geojson",
+        "submissions/RootReturn0/jingzhang-human-hours/manifest.json",
+        "submissions/RootReturn0/jingzhang-human-hours/metrics.json",
+        "submissions/RootReturn0/jingzhang-human-hours/proposal.en.md",
+        "submissions/RootReturn0/jingzhang-human-hours/proposal.md",
+        "submissions/RootReturn0/jingzhang-human-hours/report/copyright_statement.md",
+        "submissions/RootReturn0/jingzhang-human-hours/report/narrative.md",
+        "submissions/RootReturn0/jingzhang-human-hours/report/proposal.en.html",
+        "submissions/RootReturn0/jingzhang-human-hours/report/proposal.html",
+        "submissions/RootReturn0/jingzhang-human-hours/self_check.json",
+        "submissions/RootReturn0/jingzhang-human-hours/sources.json",
+        "submissions/RootReturn0/jingzhang-human-hours/standard_matrix.json",
+        "submissions/RootReturn0/jingzhang-human-hours/visual/index.en.html",
+        "submissions/RootReturn0/jingzhang-human-hours/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/RootReturn0/jingzhang-human-hours": "formal"
+      },
+      "total_bytes": 5150142,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1408600.768,
+        "public_space_area_sqm": 836345.643,
+        "building_footprint_area_sqm": 0.0,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281,
+        "key_area_count": 3.0
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 5,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 4,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 33,
+          "standard": 5,
+          "depth": 15,
+          "data": 14,
+          "metric": 10
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional site geometry is explicit and eligible for content review; it is not used as an official redline or statutory area.",
-      "suggested_fix": "Replace with the official polygon and recompute every derived layer and metric when released."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "minor",
-      "target": "geometry/key_areas.geojson",
-      "message": "All three required key-area types are present, non-overlapping and explicitly provisional.",
-      "suggested_fix": "Re-site candidate nodes after official key-area polygons are released."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Four concept-role polygons cover the provisional site without overlap and retain official land-use codes."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/",
-      "message": "Official spatial_review.py passes; only the expected provisional key-area minor notices remain."
-    },
-    {
-      "check_id": "METRICS_SCHEMA",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "Metrics validate against schema: four recomputable geometry indicators and six unknown/null fairness exports; the unsupported minutes metric is omitted."
-    },
-    {
-      "check_id": "FORMAL_REFS",
-      "result": "pass",
-      "severity": "major",
-      "target": "compliance_matrix.json",
-      "message": "Module-08 cross-reference validation passes for 23 requirements, 5 standards, 15 depth items, sources, assumptions, metrics, checks, sections and geometry anchors."
-    },
-    {
-      "check_id": "BILINGUAL_TEXT",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.en.md",
-      "message": "Chinese primary and English equivalent drafts contain all 13 required sections, evidence references and five primary figure calls."
-    },
-    {
-      "check_id": "BUILDING_DATA_GAP",
-      "result": "unknown",
-      "severity": "major",
-      "target": "geometry/buildings.geojson",
-      "message": "Cleared existing-building, ownership, height, structure and retain/renovate/demolish inputs are unavailable; the feature collection remains intentionally empty.",
-      "suggested_fix": "Add professionally verified survey and control data before building-scale or statutory claims."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "Bilingual Human Hours web master v0.5 passes visual_review.py and real-browser inspection: both languages load on desktop without page-level horizontal overflow; 390×844 frames preserve a single-column reading path, five-band protagonist views, twelve distinct scenario contracts, four mobility layers and six candidate annual operating units."
-    },
-    {
-      "check_id": "DISPLAY_TRANSLATIONS",
-      "result": "pass",
-      "severity": "major",
-      "target": "assets/figures/",
-      "message": "Five bilingual core figures v0.5, bilingual proposal, web master v0.5, and four Chinese/English A3/A0 PDFs v0.5 are complete; all 24 PDF pages passed visual and structural QA, with site-specific issue responses, distinct scenario contracts, Fritho authorship and open-font embedding verified."
-    },
-    {
-      "check_id": "MANIFEST_HASHES",
-      "result": "unknown",
       "severity": "blocking",
-      "target": "manifest.json",
-      "message": "Manifest still records scaffold state and stale hashes by design.",
-      "suggested_fix": "Run the official finalizer only after all primary and translated display files are complete."
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }

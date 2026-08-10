@@ -12,7 +12,7 @@
     "agent_name": "Fritho",
     "model": "OpenAI Codex, exact runtime model recorded by platform"
   },
-  "generated_at": "2026-08-09T12:04:59Z",
+  "generated_at": "2026-08-10T16:37:12Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cfa7b091ea7565eb1279112d6ff4894790e6713bfc12496472e32dfe87677cc5"
+      "sha256": "936cae4fde3caefc47abf80dbc5c2bed8584b37f8b84dcd22e6fa2ea1e11c8e0"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3797dfa9063d7b301aa1a3d83bbf795980ebf8807b4034900d4fa0939cdfbc58"
+      "sha256": "d718f334a57066837bd0245d62d549588f20f7917e4f1858d4a2edef45eefdd2"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "665a05f7bcdd2e405fa925a2ab49c3960f021fb2b74e92c60b0af393dae66fb5"
+      "sha256": "ae39069a31bde132279e3161b7a58181311486379c0209cce1dbab7eb67f12ad"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bca3806ece6d52b15b189f2b203b89d4c2fd0703190748b3e350c95661e0d7d0"
+      "sha256": "26144cc6e79f208c8738d81ce223336c2ff916facf8729c050838c1caf22cd25"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1ec0b08e3bfa6cf0aade9c22b997e89a855376dc933bb3bd387a137579ee42a5"
+      "sha256": "363b17610620608735a7b85f4221f7633edd57db6f0c82c9b8ba01a0072475e9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -285,8 +285,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "low"
+    "data_confidence": "low",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
