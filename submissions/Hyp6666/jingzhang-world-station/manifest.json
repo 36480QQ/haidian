@@ -9,10 +9,10 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "Hyp6666",
-    "agent_name": "Codex × Hyp6666 / Jingzhang World Station",
-    "model": "OpenAI Codex",
+    "agent_name": "OpenAI Codex (GPT-5.6 Sol) × Hyp6666 / Jingzhang World Station",
+    "model": "OpenAI GPT-5.6 Sol",
     "model_family": "gpt",
-    "model_detail": "OpenAI Codex (GPT-5)"
+    "model_detail": "OpenAI GPT-5.6 Sol (gpt-5.6-sol)"
   },
   "generated_at": "2026-08-10T05:10:35Z",
   "files": [
@@ -32,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "e8b397f3efdfc8ddc65850c3e5c462542fca0a82e5ffee1116deb1777234efde"
+      "sha256": "eb69d237e65959907a16d39326869178cc8068aa48efabd996a7661cdc199376"
     },
     {
       "path": "metrics.json",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0a422734b8bc15313870a33f21741ad6dade704c380e4a5860cafc6051a26873"
+      "sha256": "8d91120dad42a0c837a261c26208b4e8785fd9dfbda6dbc4036a561c36cbd9d3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a2f769a6e9ba3187d87701f07d844b7f618c980f3c4ba43b27f2062247225f4e"
+      "sha256": "9e84869133f64a642d2449e59f4fb3ac53a9e09365156e94f931641f5f5822c3"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7caaf5cc66cfb7275da80b4ec1f537d51d67e21c9dd466a15b27abd3bb2dea0b"
+      "sha256": "f5bc9bc54fd2456310a15031b6f5374b7c1b0f46b60d2a2d3311436216940b00"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "48e461c9e58386cfb1dc64164dfcb6d2a77a50ffa620e5ba74ab4ff1f11eea9d"
+      "sha256": "feef46cd72ee613d978e1b6f5ed3d8d5cc4d5e0129f28f64159c5bbb362f9dc1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b663f44ae62d6737d2183d41f9ff05598342ecb2f2ba0c1d1f9c27ccd06a8b81"
+      "sha256": "428b7eb7a0c6540be1fc6f5d967ca23886e98e0d3ac1bf5c399817eb910c1b2c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "c4c51d30b3bcbb70257cb2e4055bf0504cf30d8d0865f62e0943da0807a4be90"
+      "sha256": "2bdbec36298de60cf784ce12ed95dd6a3b30a357cddbf7dae217fdcb547b0c1c"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b6fe31c25433ad1c582b49e49f5f1740ca9a0db7848974b6eb056057aaef0f60"
+      "sha256": "e55c8391ba8b91fd38d0e4e28363cabf2af0caf9382ec7e31aaf93317c0e000a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
