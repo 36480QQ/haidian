@@ -9,10 +9,24 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "The 'Origin Engine' concept builds a continuous north-south vitality axis on the Jing-Zhang Railway Heritage Park, linking the Zhongzhiyuan AI Acceleration Area, the Beijing AI Origin Community and the Dazhongsi AI Industry Cluster into a three-core, two-wing, east-west-stitching AI innovation urban form."
 tracks: ["jingzhang-heritage-narrative"]
 scenarios: ["ai-cultural-guide"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # Origin Engine — Centennial Jing-Zhang AI Innovation Belt Urban Design Concept Proposal
+
+## One-Page Executive Summary
+
+| Review question | Readable answer of this proposal | Primary verification entry |
+| --- | --- | --- |
+| Taskbook relevance | "Origin Engine" answers the three positionings and five functions; the three scopes, three areas & two wings and agent.1-6 are placed on the same "one axis, three cores, two wings" chain; regional synergy is a concept interface, not a commitment | compliance_matrix.json, three-scope narrative |
+| Originality | Merges the century-old Jing-Zhang railway origin with the Zhongguancun AI origin into one power axis; 12 scenario cards, 4 pilgrimage landmarks and the Origin Season operation form a reviewable loop | Coordinated research chapter, design_depth_matrix.json |
+| AI & planning innovation | Every AI scenario is bound to a spatial node, privacy boundary, human review and non-AI fallback; it does not replace planning, medical or legal decisions | AI scenario chapter, standard_matrix.json |
+| Implementability | Three-phase delivery plus a first-90-day low-regret path: public space and ordinary-service base first, then controlled testing, then expansion; every step has stop and rollback | phasing.geojson, implementation chapter |
+| Public interest | All five personas keep paper, human and account-free paths; elderly accessible kiosks include on-site human fallback | persona table, accessibility standard response |
+| Risk & compliance | Provisional boundaries and missing regulatory indicators are never upgraded to official redlines or approval conclusions; all spatial suggestions are concept-level | sources.json, assumptions.json, risk chapter |
+| Completeness | Chinese master + English translation, five review figures, A3/A0 drawings, offline HTML, reproducible metrics and three matrices share one scope | manifest.json, metrics.json |
+
+Every answer above can be verified back to structured files: the narrative is the primary plan, machine evidence lives in GeoJSON, matrices and self-check results [source:SOURCE-REGISTRY] [depth:metrics_recalculation].
 
 ## Design Basis and Source List
 
@@ -29,6 +43,17 @@ The design basis comprises four categories:
 - **Derived design data**: land-use partition, building footprints, road network, blue-green spaces and phasing generated for this proposal, all reproducible from `geometry/*.geojson` and `metrics.json` [depth:land_use_layout] [depth:metrics_recalculation].
 
 Official polygons, regulatory-plan indicators, existing building stock and ownership, heritage protection lines and road redlines are not public in the site package and are listed as data gaps in the assumptions and risk chapters; they do not block content scoring, but precise area and professional scoring await official data [source:PROCESSED-FACT-PACK] [assumption:A-BOUNDARY-001].
+
+This proposal first judges "what the material can support", then "how the space can be designed"; each evidence class only carries the weight its authority allows, and registration completeness never upgrades a source's permitted use.
+
+| Evidence level | Instance in this package | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Tasks & professional standards (formal) | Official announcement, cleared taskbook, planning & regulatory standard snapshots | Task requirements, deliverable depth, professional principles, review questions | Official polygons, ownership, engineering conditions, approvals or government commitments |
+| Cleared source registry | `sources.json`, `data/source_registry.json` | Source use, mechanism comparison, attribution duties, prohibited uses | Upgrading background material into Haidian implementation facts or spatial conclusions |
+| Provisional spatial basis | `site_boundary.geojson`, `key_areas.geojson`, `constraints.geojson` | Concept generation, topology self-check, relative relations, replacement triggers | Statutory redlines, parcel ownership, precise areas, road redlines or regulatory indicators |
+| Derived design data in package | GeoJSON, `metrics.json`, three matrices and self-check | Reproducible concept structure, quantities, node actions, phasing dependencies | Existing survey, facility capacity, on-site performance, public acceptance or building permits |
+
+Review rule: formal conclusions must return to formal sources; provisional and background material keeps its original status, and any local self-check PASS never becomes on-site evidence, a professional seal or an approval conclusion [source:SOURCE-REGISTRY] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ![Evidence chain and submission package diagram](assets/figures/site-overview.png)
 
@@ -78,6 +103,19 @@ With the Jing-Zhang Heritage Park vitality axis as the north-south spine, the th
 8. **West Bund, Shanghai**: waterfront renewal pairing culture belt and tech belt; insights into coupling cultural narrative with industrial carriers.
 
 These are public-knowledge reference summaries for design reasoning, not investment or policy facts [source:AGENT-TASKBOOK] [assumption:A-ECONOMIC-001].
+
+### Taskbook → Space → Acceptance Deliverable
+
+Each of the six agent tasks lands on the same "space-operation-deliverable" chain, so reviewers can verify row by row instead of reading slogans [source:AGENT-TASKBOOK].
+
+| Taskbook requirement | Space–operation translation in this proposal | First-phase acceptance deliverable |
+| --- | --- | --- |
+| agent.1 Overall concept and functional coordination | Origin Engine naming system, Origin-X series, rail × waveform logo direction, one-axis-three-cores-two-wings structure | Naming table, logo concept figure, overall structure diagram |
+| agent.2 Full-stack system and innovation ecosystem | 5-8 global cases, six-factor ecosystem map, Zhongzhiyuan full-stack R&D, Zhongguancun service-wing mechanisms | Case table, ecosystem map, industry-space mapping |
+| agent.3 Scenario empowerment and vital city | 12 scenario cards, 5 personas, scenario-space-operation matrix, Xiaoyuehe scenario wing | Scenario protocol table, persona table, scenario matrix |
+| agent.4 Public space and new business | 4 AI pilgrimage landmarks, public-space components, Dazhongsi AI-native consumption | Landmark catalog, public-node layers, component library |
+| agent.5 Cultural narrative | Origin narrative linking centennial Jing-Zhang, Zhongguancun and AI new culture; signage symbol system | Cultural narrative chapter, wayfinding direction, international message |
+| agent.6 Event system and long-term operation | Origin Season four-season events, Origin Developer Club, scenario "test-then-roll-out" | Event system, operation mechanisms, conversion path |
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -178,6 +216,18 @@ Around six factors — **data, algorithms, computing, scenarios, talent, capital
 
 All scenario cards follow the generative-AI compliance baseline: traceable generated content, timely handling of unlawful content, complaint channels; no privacy collection, no over-surveillance, and technologies not yet maturely validated are not described as fully deployable [standard:GENERATIVE-AI-INTERIM-MEASURES] [assumption:A-AI-001]. The scenario-space-operation mapping is in the `visual/index.html` scenario matrix.
 
+### Operation Protocols for the 3 Industry Test-Validation Scenarios
+
+The three industry test cards are upgraded into pauseable, reproducible and withdrawable operation protocols: each test binds a non-AI control path, a single primary metric and non-negotiable stop conditions; all are currently concept protocols, not executed, and do not imply approved operation [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+| Test scenario | Same-task non-AI control | Single primary metric | Non-negotiable stop conditions | Current status |
+| --- | --- | --- | --- | --- |
+| Open-source large-model test field | Human review panel on the same frozen question set | Sourced and correctly-bounded outputs / frozen questions | Stop if output lacks sources, data leaves boundary, or human takeover unavailable | Concept protocol, not executed |
+| Autonomous shuttle test field | Human shuttle service or static guidance on the same route | Collision-free, in-boundary, emergency-stoppable tasks / approved tasks | Stop on any collision, boundary breach, e-stop failure or broken takeover chain | Concept protocol, not executed |
+| AI+medical diagnosis experience | Manual triage path for the same symptoms | Recommendations matching licensed-physician conclusions / test cases | Stop on any misdiagnosis signal, missing informed consent, or unavailable physician review | Concept protocol, not executed |
+
+Protocols also require: lock the non-AI baseline, time window, affected population and sampling frame before testing; keep paper and human equivalent paths during testing; publish version, sources, limitations and stop records afterwards. If any key condition is missing, return to ordinary services without scaling [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
 ![Composite system of mobility, slow traffic and blue-green public space](assets/figures/mobility-bluegreen.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -223,6 +273,14 @@ Building scale is expressed as 39 block-scale concept footprints totaling 1,667,
 - **Phase 3** (~262 ha, east-west wings): whole-belt quality improvement and operation deepening [data:geometry/phasing.geojson#PHASE-003] [metric:phasing_area_phase_3_sqm].
 
 The three phases together cover the whole site [metric:phasing_total_area_sqm], cross-checking against the land-use partition [metric:land_use_total_area_sqm].
+
+### First-90-Day Low-Regret Path (Concept)
+
+To avoid "plan-to-launch at scale" immediately, a first-90-day recommended sequence is proposed following low-cost trial-and-error logic; it is not a confirmed implementation schedule, and if any key condition is missing the work returns to ordinary public services [assumption:A-ECONOMIC-001] [assumption:A-CONTROLS-001].
+
+1. **Days 0-30: materials and site lock-down.** Lock the official/provisional geometry version, on-site baseline, rights and responsible-party list; if any key input is missing, stay "pending official data" without advancing design conclusions.
+2. **Days 31-60: ordinary-service base.** First provide physical wayfinding, paper maps, human counters, seating/shade and a continuous accessible task chain; ordinary paths do not wait for model recovery [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+3. **Days 61-90: controlled test window.** Only after base evidence is complete, start one attended, time-limited, e-stop-capable, human-takeover test window; any unclosed safety, rights or data issue stops the test and restores passive services [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ### Global AI Event System and Long-Term Operation (Concept)
 
