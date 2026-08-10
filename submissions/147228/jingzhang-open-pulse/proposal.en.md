@@ -63,6 +63,21 @@ This proposal follows the official open-call announcement, the repository site p
 
 The package uses the repository's maintained provisional geometry where official boundary polygons are not available. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` therefore remain `official_boundary=false` and `provisional_constraint`. They are suitable for design discussion, visualisation and self-checking, but not for a statutory red line, approval, precise land-area claim or government commitment. When official polygons arrive, all land use, roads, buildings, green space, public space, phasing and metrics must be recalculated.
 
+### 1. Evidence hierarchy and decision boundary
+
+The package first asks what each source can support, then asks what spatial move is defensible. “Registered” means that a record can be traced; it does not mean that the record supports a formal spatial, engineering or implementation conclusion. Reviewers should read the allowed and disabled scope together.
+
+| Evidence level | Package examples | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Task and professional standards (formal) | Official announcement, cleared taskbook, planning and regulatory-plan standard snapshots | Task requirements, deliverable depth, professional principles and review questions | Official polygons, ownership, engineering conditions, approval or government commitment |
+| Cleared source registration | `sources.json`, `data/source_registry.json`, public cases and registered standards | Source use, mechanism comparison, provenance responsibility and disabled scope | Upgrading case performance, background statistics or registration records into Haidian implementation facts |
+| Provisional spatial basis | `site_boundary.geojson`, `key_areas.geojson`, `constraints.geojson` | Concept generation, topology checks, relative relationships and a trigger for whole-package recomputation | Statutory red lines, parcel ownership, precise area, road red lines or regulatory controls |
+| Package-derived design data | GeoJSON, `metrics.json`, scenario/phasing/accountability matrices | Recomputable concept structure, counts, node actions, phasing dependencies and audit interfaces | Existing-condition survey, facility capacity, field performance, public acceptance or construction permission |
+| Administrative statistics and open background | Statistical bulletins, transport material, OSM/Overpass background screening | Question calibration, corridor-level data-collection priorities and explicit uncertainty | Corridor footfall, station OD, demand/capacity, formal boundary, siting or performance targets |
+| Synthetic scenarios and paper/methods | S02 synthetic tabletop replay, MCDA/robustness methods and mechanism cases | Test protocols, assumptions, negative fixtures, human takeover and follow-up validation design | Field results, engineering safety, procurement basis, predictive guarantee or official score |
+
+The review rule is: a formal conclusion must return to the corresponding formal source; `provisional`, `background_only`, `design_target` and `not_run` remain in those states. A package runner `PASS` proves only that a structural contract can be replayed; it does not become field evidence, professional sign-off, government approval or a competition score.
+
 ### Provisional boundary cross-check: preserve the discrepancy as a risk, not a red line
 
 The repository geometry note records a 2026-08-08 OSM background cross-check in which the mapped built Jing-Zhang Railway Heritage Park had 0.00 ha / 0% intersection with the current `PROV-SITE-001` and a nearest distance of about 412.5 m, while the broader research polygon covered that mapped fragment.[source:PROVISIONAL-BOUNDARY-CROSSCHECK-OSM-20260808] This does not prove that OSM or the provisional polygon is correct: OSM may cover only a built segment and the current polygon is inferred from the announcement wording. The proposal therefore does not move the boundary or upgrade OSM to formal evidence; it records the discrepancy as the official-polygon handoff risk in [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001]. Once official polygons arrive, park relationships, transport screens, all spatial layers and metrics must be recalculated together.
