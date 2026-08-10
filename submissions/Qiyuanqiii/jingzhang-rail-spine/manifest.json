@@ -17,6 +17,12 @@
     "collaborator_github": "codex"
   },
   "generated_at": "2026-08-10T10:10:35Z",
+  "validation_claim": {
+    "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
+    "known_blockers": [],
+    "data_confidence": "high"
+  },
   "files": [
     {
       "path": "manifest.json",
@@ -58,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "8f038fcc594ec69bb9169a06f61b5876d6ce792badeaceefc186f047abba61cd"
     },
     {
       "path": "compliance_matrix.json",
@@ -368,10 +374,5 @@
       "required": false,
       "sha256": "75c1ca7c3c80bafce5a1279f39824952a80c35958f2e4d4f3f6341b9a6651334"
     }
-  ],
-  "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "high"
-  }
+  ]
 }
