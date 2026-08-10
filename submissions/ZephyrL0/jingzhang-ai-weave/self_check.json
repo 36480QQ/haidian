@@ -5,123 +5,60 @@
       "check_id": "BOUNDARY_TRUST",
       "severity": "info",
       "result": "pass",
-      "target": "geometry/site_boundary.geojson; geometry/key_areas.geojson",
       "message": "已将总体范围和三处重点区标识为临时约束范围，并在正文、来源、假设和展示页披露。"
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "severity": "info",
       "result": "pass",
-      "target": "geometry/land_use.geojson",
       "message": "用地分区由同一临时范围裁切生成，保留共享边界并用于指标复算。"
     },
     {
       "check_id": "BILINGUAL_DELIVERY",
       "severity": "info",
       "result": "pass",
-      "target": "proposal.md; proposal.en.md; report; visual; drawings; assets/figures",
       "message": "主稿、英文副本、图件、图纸和离线HTML均成对生成。"
     },
     {
       "check_id": "SPATIAL_REVIEW_RUNTIME",
       "severity": "info",
-      "result": "pass",
-      "target": "geometry/*.geojson",
-      "message": "已在声明依赖的隔离Python环境中，对本Git树的九个GeoJSON运行仓库scripts/spatial_review.py并通过。结果为ok=true、formal；无blocking或major问题，仅保留三条KEY_AREA_PROVISIONAL minor提示。临时边界不作为官方红线或精确面积依据。",
-      "run_date": "2026-08-10",
-      "triggering_review_head": "d6936b37e0f6b59f158046ecfd7377020c90c3dc",
-      "reviewed_git_head": "9e97132c50f30a856b8ed80e50d2ae04fee9db0a",
-      "provenance_mode": "prior_head_replay",
-      "provenance_note": "仓库空间复核在已提交head 9e97132c50f30a856b8ed80e50d2ae04fee9db0a上重新运行并通过。此后的提交只补充本条来源元数据与对应manifest哈希，不改变九个受检GeoJSON、canonical metrics、复核工具或依赖文件；下列逐文件哈希是受检输入的权威身份。",
-      "execution_cwd": "repository root",
-      "install_command": ".venv/bin/python -m pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple -r requirements-review.txt",
-      "command": ".venv/bin/python scripts/spatial_review.py submissions/ZephyrL0/jingzhang-ai-weave --repo-root . --json",
-      "environment": {
-        "python": "CPython 3.14.2",
-        "platform": "macOS arm64",
-        "requirements_file": "requirements-review.txt",
-        "requirements_sha256": "16fd66ff9b10ba3c26f6cca98e379965909d3e14b5d3353c8fbf53bebec779e0",
-        "dependencies": {
-          "shapely": "2.1.2",
-          "pyproj": "3.7.2",
-          "jsonschema": "4.26.0"
-        }
-      },
-      "review_tool": {
-        "path": "scripts/spatial_review.py",
-        "sha256": "8d034cb6849c9638ea3b9b9de3d8b1df62a2d76a800c473e4b3c1b70d3dc9166"
-      },
-      "reviewed_inputs": {
-        "geometry/buildings.geojson": "2cf1532b071a20116edda1282fc815929741734c9444c57f1be7fd7ed4258858",
-        "geometry/constraints.geojson": "a6d988686e415c3d2a9eab5bc528299da1e9a921d77674a5e2f137a6df0aaca9",
-        "geometry/green_space.geojson": "1a35e2fce8e7e7930e061c8ba1eb9010bc89649b39707537fe7c179c0e69891e",
-        "geometry/key_areas.geojson": "8e657505162546555f1b0a239257c859dbbbc469ba2840e1b81b84b27e007335",
-        "geometry/land_use.geojson": "869edd7bfeb29d62d7e5db963274e92f123751b97404246cdf7022d1859e4590",
-        "geometry/phasing.geojson": "75c798e9ac665a7fd56a198d55daf0ed64891f0cc442bfd280a154b45b1ddb85",
-        "geometry/public_space.geojson": "cc4deb805f7041368959fbb21172de5da6c494f4b1feba798f30ac2051de55f0",
-        "geometry/roads.geojson": "2d6c8316d68b07b9af0e90579bb2611479a0d74184163b2d6bcd5f7ecafd0a5e",
-        "geometry/site_boundary.geojson": "fe864a35add3f8a768c306f597e6d45d5462901248d6eddd2aac4d1a4f118372"
-      },
-      "result_summary": {
-        "ok": true,
-        "stage": "formal",
-        "blocking_or_major_issue_count": 0,
-        "minor_issue_count": 3,
-        "issue_ids": [
-          "KEY_AREA_PROVISIONAL:PROV-KEY-001",
-          "KEY_AREA_PROVISIONAL:PROV-KEY-002",
-          "KEY_AREA_PROVISIONAL:PROV-KEY-003"
-        ],
-        "metrics": {
-          "site_area_sqm": 11412825.386,
-          "green_space_area_sqm": 3159036.712,
-          "public_space_area_sqm": 879132.939,
-          "building_footprint_area_sqm": 1672787.92,
-          "green_ratio": 0.276797,
-          "public_space_ratio": 0.07703
-        }
-      }
+      "result": "unknown",
+      "message": "当前运行环境未安装Shapely与PyProj；不得声称完成仓库专业空间复核。官方intake、professional、visual校验和依赖无关拓扑审计另行记录。"
     },
     {
       "check_id": "BILINGUAL_PDF_LAYOUT",
       "severity": "info",
       "result": "pass",
-      "target": "drawings/a3-booklet.pdf; drawings/a3-booklet.en.pdf; drawings/a0-boards.pdf; drawings/a0-boards.en.pdf",
       "message": "中文与英文PDF分别使用独立语言图件、标题、注释和页脚，不再使用英文页壳嵌套中文图件。"
     },
     {
       "check_id": "FLAGSHIP_PUBLIC_DESIGNS",
       "severity": "info",
       "result": "pass",
-      "target": "agent.json; proposal.md; proposal.en.md",
       "message": "两项公共设计均记录问题、空间动作、全天运营、Agent责任和专业深化触发条件。"
     },
     {
       "check_id": "V3_ARCHITECTURAL_DEPTH",
       "severity": "info",
       "result": "pass",
-      "target": "agent.json; assets/figures/shared-eave-section.png; assets/figures/four-corner-time.png",
       "message": "两项旗舰各形成四类概念剖面、季节/时段逻辑、十二条市民旅程和四阶段实施门。"
     },
     {
       "check_id": "V3_ADVERSARIAL_REVIEW",
       "severity": "info",
       "result": "pass",
-      "target": "simulation.json",
       "message": "十二项离线反方任务和三个负样本均记录输入、发现、设计响应、人工决定与可回放结果。"
     },
     {
       "check_id": "V3_PUBLIC_EVIDENCE_BOUNDARY",
       "severity": "info",
       "result": "pass",
-      "target": "agent.json; proposal.md; proposal.en.md",
       "message": "Agent市民旅程明确标为待验证假设，不替代真实公众意见或现场绩效。"
     },
     {
       "check_id": "DEPENDENCY_FREE_TOPOLOGY_AUDIT",
       "severity": "info",
       "result": "pass",
-      "target": "geometry/*.geojson",
       "message": "补充审计检查九个必需GeoJSON的结构、必需属性、坐标范围、闭合、自交、临时边界一致性、越界、用地覆盖和正面积重叠；它不替代Shapely/PyProj或专业测绘审查。"
     }
   ]
