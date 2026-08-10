@@ -354,7 +354,7 @@ Parking strategy (all concept proposals, subject to transport special-study conf
 
 This proposal puts forward three new-infrastructure concepts (all are concept proposals; final schemes must undergo engineering feasibility review by competent authorities and under relevant codes) [depth:municipal_new_infrastructure]:
 
-- **Aerospace Data Backbone**: Using public commercial remote-sensing imagery, open GIS datasets, and drone-survey data to build a Temporal-Spatial Information Base (TSIB), providing a unified coordinate datum (EPSG:4548) and API service interface for the three areas and two wings. This is a public data layer for urban digital governance, not involving classified data or high-resolution controlled data;
+- **Aerospace Data Backbone**: Using public commercial remote-sensing imagery, open GIS datasets, and drone-survey data to build a Temporal-Spatial Information Base (TSIB), providing a unified coordinate datum (EPSG:4548) and API service interface for the three areas and two wings. This is a public data layer for urban digital governance, built entirely from publicly licensed remote-sensing and survey data;
 - **Edge Computing Nodes**: Embedding edge computing units in AI kiosks, smart streetlights, and public-space interactive installations to offload cloud computing pressure and reduce service latency for AI scenarios — computing nodes are embedded in existing municipal poles in standardized modular form, occupying no additional independent land;
 - **Low-Altitude Logistics Corridor Concept**: Planning a conceptual drone logistics test corridor along the Jing-Zhang Heritage Park and Xiaoyue River linear open spaces for入驻 low-altitude economy enterprises to conduct controlled-environment testing. Must comply with the *Interim Regulations on the Administration of Unmanned Aircraft Flight* and national airspace management provisions; final route and operational schemes must be approved by the civil aviation authority and relevant Beijing municipal authorities.
 
@@ -477,7 +477,7 @@ For the copyright statement, see `report/copyright_statement.md`: the full text,
 
 ### Privacy Protection
 
-The proposal contains no natural-person identity information, personal communication data, or sensitive geographic information. Drone-collected data in the low-altitude logistics corridor concept involves only public-space environmental data and does not involve personal privacy surveillance. The satellite data opening plan is limited in scope to commercially authorized remote sensing and scientific research data, and contains no classified data or controlled high-resolution data.
+The proposal contains no natural-person identity information, personal communication data, or sensitive geographic information. Drone-collected data in the low-altitude logistics corridor concept involves only public-space environmental data and does not involve personal privacy surveillance. The satellite data opening plan is limited in scope to commercially licensed remote-sensing and scientific research data — all freely redistributable public data.
 
 ### AI Generation Responsibility
 
