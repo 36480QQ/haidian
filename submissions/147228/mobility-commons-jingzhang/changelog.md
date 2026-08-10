@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.37 - 2026-08-10
+
+- 新增根目录 `risk.json` 与 `visual/assets/mobility-risk-register.json`，把八个风险维度、18 个 unknown 指标、证据路径、触发条件、人工等价入口、停止动作和责任角色收成一条可回读链。
+- 新增 `run-mobility-risk-audit.js`；检查风险状态仍限定为 `controlled_by_gate`、`unknown`、`blocked_until_evidence` 或 `not_started`，所有未知指标均被覆盖，空中地面接驳保持 `blocked_until_evidence`。
+- 中英文正文和评审导航前置风险登记入口；这只是包内风险/证据链接，不是现场风险评估、专业签字、运营许可、公众同意或官方评分。
+- 不新增现场 OD、居民/企业访谈、班次、容量、权属、空域或绩效数据；保留 provisional geometry、合成代理和普通公共交通/人工回退边界。
+
 ## v2.36 - 2026-08-10
 
 - 在中英文交通设计依据入口前置六层证据等级表，把任务/政策、临时空间、包内读数、合成代理、背景方法和尚未取得的现场基线分开。

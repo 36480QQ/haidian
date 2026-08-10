@@ -109,6 +109,19 @@ iteration: "v2.35"
 
 文中的“综合出行压力代理分”对应模型字段 `satisfaction_proxy`。它只把时间、可靠性、可达性和冲突合成到一个比较刻度里，居民满意度、公众接受和现场绩效仍待正式数据补齐。claim-audit 会逐条检查 headline 数字有没有这层说明，也会检查中英文正文是否指向同一份 runner [data:visual/assets/claim-audit.json]。
 
+## 风险登记。未知不是放行，空中出行保持阻断
+
+本包把风险从“某个文件里有一句提醒”提升为一条可回读的审查链：每个维度都要能找到证据路径、触发条件、人工等价入口、停止动作和责任角色。根目录 `risk.json` 提供八个通用风险维度；`visual/assets/mobility-risk-register.json` 把它们与 18 个当前 `unknown` 指标逐项相连；`node visual/assets/run-mobility-risk-audit.js --check` 会检查路径存在、风险状态受限、未知指标没有脱离责任链，并确认空中地面接驳仍为 `blocked_until_evidence`。
+
+| 审查状态 | 交通包里的读法 | 允许的下一步 | 不允许的跳跃 |
+| --- | --- | --- | --- |
+| `controlled_by_gate` | 包内已经登记控制规则，但不代表现场风险消失 | 继续做人工复核、补证据和回放 | 写成安全、可运营或已达标 |
+| `unknown` | 缺日期化现场、专业或公众证据 | P0 登记、走读、调查、复算 | 用合成读数或论文系数填空 |
+| `blocked_until_evidence` | 责任、安全或许可条件不齐，必须停 | 保留普通公共交通、人工和纸面入口 | 用空中出行或自动化掩盖地面缺口 |
+| `not_started` | 尚未授权或尚未开始 | 明确触发器、责任人和删除边界 | 当作试点、合作或运营结果 |
+
+这份登记是包内风险与证据索引，不是现场风险评估、专业签字、运营许可、公众同意或官方评分；`unknown` 不是 pass，风险状态也不会因本地 runner PASS 自动升级 [data:risk.json] [data:visual/assets/mobility-risk-register.json] [data:visual/assets/run-mobility-risk-audit.js]。
+
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。

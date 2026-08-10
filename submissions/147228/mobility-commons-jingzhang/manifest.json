@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7e969b4f23e5f7f0b5f76f3f4b4c339b19ee3d931b1ee8303f9c0e39e101d6e8"
+      "sha256": "ab0c9178d99a73cb65c03688ccb20c2bfd839c4c5d2cf16c60401a7e0be6996f"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7e37565006a4e75fdcc0af3df4bd32d7655a02e4204d100b103ef3809e4b893f"
+      "sha256": "91522b49c6bb8c4a42bb8eb005bf3884f7d77564d3afddc9d45f1b018f5fc2e6"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fa9a953e6aaf89a7a854bb3a8cf1de26f6e8ab3b8bdf6026e7b7e80b82edbbe2"
+      "sha256": "c65a24452db22c7b51350bf8fa95ccab21a0a61b7d3366ae63d25f577ac23851"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,20 +254,20 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "374280672949201df0a0e53d93474e8384590cc9afc22a53de3bb47b773f4914"
+      "sha256": "23b262b02719e9edb931e2e7467004b9fd28eef6ab7a5d3913fba72ab5244d48"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e1be0502066d41918e6cc947f294bfe6259f54b24f0e7ee652357d8980dd1fc9"
+      "sha256": "5bf6b9a25b60f775646c41eb61e72c935b1b878e9fa7e591899588e385d79506"
     },
     {
       "path": "self_check.json",
       "role": "data",
       "required": true,
-      "sha256": "84f70221df8dfe124b27b486c83dc8752eb36991daf87212f143c75db147f703"
+      "sha256": "1101424965a6339c6880a62722f519c990058aa2803ef74d0c7cca00686dfbba"
     },
     {
       "path": "sources.json",
@@ -797,7 +797,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "c60267494d6935a111ce2857a6ce407f663c4e8f2691866f2706a0d8bbd6f96a"
+      "sha256": "760229a56ac1ca92a807e30abb2570b35018f8fa83505014f3cccbf05346090f"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -945,6 +945,24 @@
       "language": "en",
       "translation_of": "assets/figures/key-area-dazhongsi-transfer-interface.svg",
       "sha256": "5de60baa70116aaa8390aecf4bf4238018c475f96088282ecf7ac921a4eac217"
+    },
+    {
+      "path": "risk.json",
+      "role": "risk_matrix",
+      "required": true,
+      "sha256": "c8e6f4db4342f201b804cb68fa032e94b034130be8b28ac8719425c80cb1dc0f"
+    },
+    {
+      "path": "visual/assets/mobility-risk-register.json",
+      "role": "review_evidence",
+      "required": true,
+      "sha256": "c52ca9a0231e2b2d6d1c091466be58c580a1be42d357c6199de34e12c583f080"
+    },
+    {
+      "path": "visual/assets/run-mobility-risk-audit.js",
+      "role": "review_audit",
+      "required": true,
+      "sha256": "e3d6ae04337de574fc5214233151aa7d8069154a76802cf6e61e60a8fef385c6"
     }
   ]
 }

@@ -109,6 +109,19 @@ The package uses four labels for numbers. Read the label before reading the valu
 
 “Composite mobility-pressure proxy score” is the readable name for the model field `satisfaction_proxy`. It combines time, reliability, accessibility and conflict on one comparison scale. Resident satisfaction, public acceptance and field performance remain pending formal evidence. The claim audit checks that headline numbers carry this wording and point to the same runner in both languages [data:visual/assets/claim-audit.json].
 
+## Risk Register: Unknown Is Not a Release, and Air Mobility Stays Blocked
+
+This package turns risk from a warning scattered across files into a readable review chain: every dimension has evidence paths, triggers, a non-AI equivalent, a stop action and an accountable role. The root `risk.json` supplies eight common risk dimensions; `visual/assets/mobility-risk-register.json` links them to all 18 current `unknown` metrics; `node visual/assets/run-mobility-risk-audit.js --check` checks that paths exist, states remain bounded, unknown metrics remain attached to a risk, and air-ground transfer remains `blocked_until_evidence`.
+
+| Review state | Meaning in this mobility package | Permitted next step | Prohibited leap |
+| --- | --- | --- | --- |
+| `controlled_by_gate` | A package rule is registered, but field risk has not disappeared | Continue human review, evidence collection and replay | Write safe, operational or achieved |
+| `unknown` | Dated field, professional or public evidence is missing | P0 registration, walk-through, survey and recalculation | Fill the gap with synthetic output or paper coefficients |
+| `blocked_until_evidence` | Responsibility, safety or permission is incomplete, so the scenario must stop | Keep ordinary transit, human and paper routes | Use air mobility or automation to hide a ground-system gap |
+| `not_started` | Not authorised or not begun | Declare triggers, owner and deletion boundary | Present it as a pilot, partnership or operating result |
+
+This register is a package-level risk/evidence index, not a field risk assessment, professional sign-off, operating permission, public consent or official score. `unknown` is not pass, and a local runner PASS never promotes a risk state [data:risk.json] [data:visual/assets/mobility-risk-register.json] [data:visual/assets/run-mobility-risk-audit.js].
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].

@@ -24,7 +24,11 @@
     "visual/assets/regional-scale-commute-readout.json",
     "visual/assets/capacity-closure-screen.json",
     "visual/assets/mobility-tabletop-evidence.json",
-    "visual/assets/claim-audit.json"
+    "visual/assets/claim-audit.json",
+    "proposal.md#风险登记",
+    "risk.json",
+    "visual/assets/mobility-risk-register.json",
+    "visual/assets/run-mobility-risk-audit.js"
   ],
   "dimensions": [
     {
@@ -65,8 +69,8 @@
     {
       "id": "risk_compliance",
       "label_zh": "风险与合规意识",
-      "start_here": ["assets/figures/failure-recourse-board.svg", "visual/assets/network-flow-screen.json", "assumptions.json", "sources.json"],
-      "strongest_evidence": "失败回退板、空中候选硬阻断、个人轨迹最小化、provisional 边界和 not_authorized_not_run 明确",
+      "start_here": ["proposal.md#风险登记", "risk.json", "visual/assets/mobility-risk-register.json", "visual/assets/run-mobility-risk-audit.js", "assets/figures/failure-recourse-board.svg", "visual/assets/network-flow-screen.json", "assumptions.json", "sources.json"],
+      "strongest_evidence": "八个风险维度与 18 个 unknown 指标逐项挂接，证据路径、触发器、人工等价入口、停止条件、责任角色和空中候选 blocked 状态可由一个 runner 回读；失败回退板、个人轨迹最小化和 provisional 边界继续可见",
       "boundary": "论文与政策材料只作为方法/责任背景，不替代交通、消防、无障碍、隐私和保险审查。"
     },
     {
