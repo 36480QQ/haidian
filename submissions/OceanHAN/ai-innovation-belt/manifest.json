@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6842d7b195dc9a6f621f7f3f6b6fd8c99994c12964f132063c75a657ccd61f63"
+      "sha256": "57accb38b63074b0d1524047a5c4909efb3eee1a378fb371076f7cbb23ffa953"
     },
     {
       "path": "assumptions.json",
@@ -287,8 +287,11 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium (provisional boundary: all spatial metrics recalculated in EPSG:4548 from provisional geometry; official redline required for professional scoring)",
+    "last_validated_at": "2026-08-10T09:50:00Z",
+    "reviewer_feedback_addressed_zh": "评审 v1 意见处理：1) manifest.validation_claim.self_checked 已同步为 true 并记录 last_validated_at；2) 边界派生数据（site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio）置信度统一从 high 降为 medium，data_confidence 同步为 medium（provisional 边界披露）。",
+    "reviewer_feedback_addressed_en": "Reviewer v1 addressed: 1) manifest.validation_claim.self_checked synced to true with last_validated_at; 2) boundary-derived metrics (site_area_sqm/site_area_ha/key_area_count/land_use_polygon_count/land_use_coverage_ratio) downgraded from high to medium confidence, data_confidence set to medium (provisional boundary disclosed)."
   }
 }

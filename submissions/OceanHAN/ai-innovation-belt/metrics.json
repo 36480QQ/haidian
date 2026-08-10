@@ -13,9 +13,9 @@
     "geometry/site_boundary.geojson"
    ],
    "formula": "polygon_area(submitted_site_boundary)",
-   "confidence": "high",
+   "confidence": "medium",
    "assumptions": [
-    "基于组织方临时粗略边界（provisional_rough），官方边界发布后需复算。"
+    "基于组织方临时粗略边界（provisional_rough），官方边界发布后需复算；provisional 边界派生数据置信度统一为 medium。"
    ]
   },
   "site_area_ha": {
@@ -26,9 +26,9 @@
     "geometry/site_boundary.geojson"
    ],
    "formula": "site_area_sqm / 10000",
-   "confidence": "high",
+   "confidence": "medium",
    "assumptions": [
-    "同 site_area_sqm。"
+    "同 site_area_sqm（provisional 边界派生）。"
    ]
   },
   "green_space_area_sqm": {
@@ -106,8 +106,10 @@
     "geometry/key_areas.geojson"
    ],
    "formula": "count(key_detailed_design_areas)",
-   "confidence": "high",
-   "assumptions": []
+   "confidence": "medium",
+   "assumptions": [
+    "重点区 polygon 为 provisional，数量与面积以官方发布为准。"
+   ]
   },
   "land_use_polygon_count": {
    "status": "known",
@@ -117,8 +119,10 @@
     "geometry/land_use.geojson"
    ],
    "formula": "count(land_use_polygons)",
-   "confidence": "high",
-   "assumptions": []
+   "confidence": "medium",
+   "assumptions": [
+    "地块划分基于 provisional 边界。"
+   ]
   },
   "land_use_coverage_ratio": {
    "status": "known",
@@ -129,9 +133,9 @@
     "geometry/site_boundary.geojson"
    ],
    "formula": "union_area(land_use) / site_area_sqm",
-   "confidence": "high",
+   "confidence": "medium",
    "assumptions": [
-    "用地无缝覆盖设计要求。"
+    "用地无缝覆盖设计要求；分母为 provisional 边界面积。"
    ]
   },
   "industrial_land_ratio": {
