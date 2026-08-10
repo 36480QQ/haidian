@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Read 'Jing-Zhang' in full: above ground, a 9-km heritage-park slow line; underground, the high-speed rail racing through Qinghuayuan Tunnel; at the northern end, Zhangjiakou's green power and compute; at the southern end, Haidian's models and talent. The proposal's master concept is THE TWO-WAY LINE — green electricity and compute run up-line into Beijing while models, talent, and scenarios run down-line out — organizing the 11.4 km² overall design and three key detailed-design areas through 'Surface Line + Under Line, Three Stations One Gate, Two Platforms Eight Crossings, Twin-River Cooling Loop', and binding every AI deployment to a Two-Way Protocol: every up-line data run must be paired with a down-line public return. All spatial content is a concept proposal on a self-derived, street-aligned provisional boundary calibrated to announced areas; the whole package will be recalculated when official redlines are published."
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # THE TWO-WAY LINE: Running the Centennial Jing-Zhang Corridor in Both Directions
@@ -89,7 +89,17 @@ Three of the seven can be checked directly against an official site: Kendall Squ
 
 ### 3.5 An urban form fit for artificial intelligence
 
-The question is not how to decorate the city with AI but which elements of urban form reorganize when intelligence becomes municipal infrastructure. Three operable propositions: **compute sinks to the block** — edge-compute cabins enter streets like transformer kiosks, their waste heat feeding the Twin-River Cooling Loop (chapter 8) so "the temperature of computing" becomes a perceivable urban fact; **space is supplied by run, not by building** — scenarios book public space and test segments through the Timetable, shrinking the unit of supply from parcel to time-slot-by-segment; **white land becomes switch-back reserve** — the reserved parcels along the Fifth Ring carry no preset program, held as slack for technology shifts [data:geometry/land_use.geojson#LU-177]. The cultural vehicles are in chapter 9. The international working atmosphere rides the twin-city commute: write models at Origin Station in the morning, watch the training cluster in Zhangbei in the afternoon — a way of working the 47-minute ride has already made real [source:JZ-HSR-OPENING].
+The question is not how to decorate the city with AI but which elements of urban form reorganize when intelligence becomes municipal infrastructure. Five operable propositions follow, each tied to a layer, metric, or run you can check inside this package rather than to an adjective.
+
+**One: compute sinks to the block.** Edge-compute cabins enter streets like transformer kiosks, their waste heat feeding the Twin-River Cooling Loop (chapter 8) so "the temperature of computing" becomes a perceivable urban fact. The spatial consequence is concrete: compute stops living only in remote halls and starts producing **a new class of municipal structure and a new thermal relationship at block scale** — the winter warm gallery (run S7) is the public face of that relationship. Load and heat balance must be calculated by specialists; this proposal reserves the space and binds the public return institutionally.
+
+**Two: space is supplied by run, not by building.** Scenarios book public space and test segments through the Timetable, shrinking the unit of supply from parcel to **time-slot × segment**. That is not a figure of speech: each of the twelve cards declares node, operator, up/down manifests, and who can halt it, and without all of them it cannot be scheduled; the machine-readable contract and the tabletop are in `visual/assets/`. Conventional regulatory planning allocates **permanent use**; a timetable allocates **revocable time-slot use** — and the latter is the form of supply that high-frequency AI iteration actually needs.
+
+**Three: white land becomes switch-back reserve.** The 18.6 ha of reserved parcels along the Fifth Ring carry no preset programme [data:geometry/land_use.geojson#LU-177] — 9.7% of Zhongzhiyuan and the corridor's only slack that can be **re-dispatched without demolishing anything already built**. When training-compute technology turns over on a ten-year horizon, the city need not answer with demolition and rebuilding: this converts uncertainty into space in advance.
+
+**Four: sensing changes what a street is designed for.** Microclimate sensing (S11) and accessibility-status sensing (S9) add a new item to the street schedule: **a public sensing point that can be switched off**. It must publish its location, must be stoppable by the site host, and must keep a non-AI equivalent path. Street design now allocates not only paving, tree pits, and lamp posts but **the boundary of sensing and the mechanism of its revocation** — written into the protocol's privacy red lines and enforced at the contract layer by the schema's data-class enumeration, not by promise.
+
+**Five: the governance mechanism becomes a planning instrument.** The Two-Way Protocol is not an accompanying policy but this proposal's condition of spatial admission: whether a public space can host an AI deployment depends on whether that run passes the six rules. This is the first time a planning document states **land-use suitability defined by an executable test** — a reviewer can run the tabletop to check it instead of taking this text on trust. The cultural vehicles are in chapter 9. The international working atmosphere rides the twin-city commute: write models at Origin Station in the morning, watch the training cluster in Zhangbei in the afternoon — a way of working the 47-minute ride has already made real [source:JZ-HSR-OPENING].
 
 ## 4. Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -97,9 +107,13 @@ The question is not how to decorate the city with AI but which elements of urban
 
 The layout continues the three-station division: the north (Zhongzhi) for full-stack training, standards, and safety governance; the middle (Origin) for original-innovation conversion and the open-source community; the south (Bell Station and the Gate) as the market interface for agents, devices, and content consumption. Functional shares follow the recomputed land use: about 2.58 million m² research, 2.99 million m² housing and community services, 2.04 million m² commercial, 1.12 million m² education, with roads, green space, and plazas around 18% (table in chapter 7) [metric:land_use_area_sqm]. The indicator system proposes a **Two-Way Index**: up-line side monitoring green-power arrival and compute utilization; down-line side monitoring public-return rate and scenario retention; talent side monitoring twin-city commuting and innovation density — baselines require authoritative statistics and are honestly registered as pending [depth:metrics_recalculation].
 
+**This index set must be kept apart from the spatial metrics this package has already recomputed**, or aspiration gets written up as data. The 36 entries in `metrics.json` fall into three clearly bounded states. **One: directly recomputable from the packaged geometry** — areas, lengths, ratios, counts, concept floor areas — all marked `known` with a `formula`, so anyone can recompute them in EPSG:4548. **Two: counts this proposal defines** — 12 scenario cards, 3 test scenarios, 7 personas, 7 cases, 4 landmarks, 14 renewal projects — marked `known` but meaningful only inside this proposal's own definitions. **Three: those needing authoritative calibration this package cannot obtain** — four entries, all marked `unknown` with a written `reason` and a `null` value: statutory plot ratio `floor_area_ratio`, official height control `building_height_max_m`, talent density baseline `talent_density_baseline`, and AI innovation index baseline `ai_innovation_index_baseline`. Of 36 metrics, 32 are `known` and 4 `unknown`; none is left vague. The Two-Way Index above belongs entirely to the third state. **A proposal's credibility rests not on how many numbers it gives but on whether it honestly marks the ones it cannot get.**
+
 ### 4.2 The renewal framework
 
 The framework is "**one line pulling, two belts renewing, many nodes advancing**": the Surface Line as the renewal engine (Phase I of the park, about 2.5 km, is open; this proposal extends the through-route to 7.8 km) [source:JZ-PARK-PHASE1] [metric:greenway_length_m]; the Zhichun-Rd-to-Fourth-Ring housing belt and the Xueyuan Rd campus belt as the two renewal belts; crossings and station plazas advancing node by node. Selection principle: **breakpoints before parcels** — stitch the public-space gaps first (small input, immediate public gain), then roll organic-renewal units. The concept building program totals about 5.89 million m² as a volume reference, not a regulatory indicator [metric:concept_total_floor_area_sqm]; renewed AI industrial space concentrates in 244 concept building clusters [data:geometry/buildings.geojson#BLDG-001]. Job-housing balance embeds talent apartments and community services within the 800-m station circles [depth:retain_renovate_demolish].
+
+**The phasing logic is borrowed from railway commissioning, and the area split across the three phases is decided by the renewal strategy**, see the phasing layer [data:geometry/phasing.geojson#PH-1]. Phase one, "integrated testing", years 0–2, 176.9 ha: get the public skeleton running, touching almost no parcel with complex tenure — the through-line and the eight crossings, small in outlay with public benefit visible at once. Phase two, "opening to service", years 2–5, 249.7 ha: the largest of the three, where the station clusters take shape and where tenure negotiation and approval pressure concentrate. Phase three, "full timetable", years 5–10, 169.3 ha: the housing renewal belt and the campus frontages complete on a rolling basis, paced by negotiation with residents and universities rather than a fixed deadline. **Putting the largest phase in the middle rather than first is deliberate: phase one's public skeleton must first prove that stitching really does deliver public benefit, and only then does phase two's cluster renewal have a basis for negotiation** — that order is the Two-Way Protocol's "give the down-line return first, then take the up-line resource" rewritten along the time axis [metric:phase_1_area_sqm].
 
 ### 4.3 Transport, rail, municipal, and supporting facilities
 
@@ -132,6 +146,8 @@ Roofs are encouraged toward photovoltaic fifth facades; night lighting is script
 ## 5. Detailed Design of Key Areas
 
 The three areas, 368.4 ha in total, are each organized as "position + structure + building renewal + mobility + public space + AI scenarios + implementation risk" [depth:three_key_area_detailed_design] [source:KEY-AREA-SOURCE].
+
+The three are not one template copied three times but **a gradient of density and character from north to south**, recomputable from the packaged geometry: Zhongzhiyuan at 192.1 ha, 47 concept buildings, concept gross plot ratio 0.75, research plus green over 60% — campus type; Origin Community at 104.3 ha, 49 buildings, 0.96, led by community-service land — district type; Dazhongsi at 72.0 ha, 38 buildings, 1.68, cut by both the Third Ring and Dazhongsi East Rd — urban type. **The gradient is not a compositional preference but the spatial consequence of taking green power and compute up-line while returning scenarios and consumption down-line** — the closer to the northern end, the closer to production and testing; the closer to the south, the closer to market and consumption, with density, height, and programme mix rising accordingly. All three land-use compositions are recomputed parcel by parcel against each key area in EPSG:4548, and the intersections come to exactly 192.1, 104.3, and 72.0 ha [metric:key_area_total_sqm].
 
 ![Detailed design of the three key areas: cluster structure and scenario placement of Zhongzhi, Origin, and Bell Stations](assets/figures/key-areas.en.png)
 
@@ -185,18 +201,21 @@ The three areas, 368.4 ha in total, are each organized as "position + structure 
 
 ## 6. AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-### 6.1 Six personas (agent.3)
+### 6.1 Seven personas (agent.3)
 
-Six personas cover both the up-line and down-line sides [metric:user_persona_count]:
+The drafting rule is that **each persona must be able to name at least one run built for them and one place it lands**; otherwise it is a decorative list of people. Seven personas cover the up-line side (research, founding, twin-city engineering) and the down-line side (residents, front-line workers, visitors, people with limited mobility) [metric:user_persona_count]:
 
-| Persona | A day's track | The proposal's answer |
-| --- | --- | --- |
-| Young researcher (Wudaokou postdoc) | Lab, spine run, release hall | Origin incubation belt and talent-apartment circle |
-| AI founder (Origin incubatee) | Pitch, Protocol filing, crossing test | Fast Timetable slots and West Platform services |
-| Twin-city engineer (Zhangbei shift) | Gate, HSR, cluster, late return | The 47-minute commute and Gate arrival services [source:JZ-HSR-OPENING] |
-| Long-time resident (Xueyuan Rd) | Market, crossing plaza, canteen | Down-line runs covering daily services first |
-| Front-line maintainer and courier | Cabin rounds, rider post, night rest | Crossing posts, warm gallery, night lighting |
-| International developer visitor | Arrival hall, milepost walk, first release | Bilingual wayfinding, pilgrimage route, community reception |
+| Persona | A day's track | The proposal's answer | Runs serving them directly |
+| --- | --- | --- | --- |
+| Young researcher (Wudaokou postdoc) | Lab, spine run, release hall | Origin incubation belt and talent-apartment circle | S8 open-source launch day |
+| AI founder (Origin incubatee) | Pitch, Protocol filing, crossing test | Fast Timetable slots and West Platform services | S10 tech-transfer matchmaking |
+| Twin-city engineer (Zhangbei shift) | Gate, HSR, cluster, late return | The 47-minute commute and Gate arrival services [source:JZ-HSR-OPENING] | S6 public-safety review |
+| Long-time resident (Xueyuan Rd) | Market, crossing plaza, canteen | Down-line runs covering daily services first | T1 free delivery hours, S11 heat alerts |
+| **Older residents and people with limited mobility** | Clinic visits, daily shopping, short walks | Published accessibility status, warm gallery and seating, a non-AI fallback that always holds | S5 elder clinic escort, S9 blind-navigation |
+| Front-line maintainer and courier | Cabin rounds, rider post, night rest | Crossing posts, warm gallery, night lighting | S7 winter warm gallery |
+| International developer visitor | Arrival hall, milepost walk, first release | Bilingual wayfinding, pilgrimage route, community reception | S4 multilingual guide |
+
+**Inclusion is not achieved by adding a row to the table but by three hard constraints**: first, **every run must keep a non-AI equivalent service path**, written into the Two-Way Protocol and checked run by run in the tabletop — meaning no resident who cannot, does not, or will not use a smart service loses the service they already had because a public space "went AI"; second, **down-line returns cover daily life first** — five of the twelve runs (free delivery hours, elder clinic escort, blind-navigation, heat alerts, winter warm gallery) serve vulnerable and front-line people directly, over 40% of the timetable; third, **those affected can halt it** — S5's halting parties include participating residents and S9's include participating users, so stopping is not a management-only power. None of the three is a promise: all are fields you can read line by line in `visual/assets/twoway-runbook.json` [depth:blue_green_public_space].
 
 ### 6.2 Twelve AI scenario cards (three industry test-validation scenarios)
 
