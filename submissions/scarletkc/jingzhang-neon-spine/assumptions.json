@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Official boundary, key-area polygons, regulatory controls, road redlines, ownership, utilities, fire-safety, heritage and engineering constraints are not supplied in the public package.",
+      "impact": "All spatial quantities and interventions remain conceptual recommendations; official data must replace provisional geometry before statutory or construction use."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional_only",
+      "statement": "The submitted overall and key-area polygons are copied from the repository provisional boundary source.",
+      "impact": "They support reproducible design comparison only and must not be read as official redlines or precise cadastral limits."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "method_only",
+      "statement": "Building footprints express concept carriers for program testing, not surveyed existing buildings or approved new construction.",
+      "impact": "Retain, renovate and new-concept labels require field survey, ownership checks and professional review."
+    },
+    {
+      "id": "A-AI-001",
+      "status": "governance_requirement",
+      "statement": "Every public AI pilot requires a named steward, minimum-data statement, human checkpoint, non-digital alternative where applicable, appeal route and sunset condition.",
+      "impact": "No scenario is eligible for scaling solely because its technical prototype works."
+    },
+    {
+      "id": "A-LIGHT-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Neon colors are a visual identity and status code, not a blanket lighting specification.",
+      "impact": "Any physical lighting requires low-glare, curfew, energy, ecological and heritage review."
+    }
+  ]
+}

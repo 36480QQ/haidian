@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, allowed design space, ranges, enums and schemas; official geometry attachments remain absent."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Defines whether each repository source is formal-ready, background-only, provisional-only or needs review."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation aid only; factual claims return to registered source material."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Provisional overall design boundary; not an official redline."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Provisional three key-area polygons; not official detailed-design boundaries."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Competition tasks, three scope levels, key areas and submission context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing task requirements for identity, cases, scenarios, personas, landmarks, culture and long-term operation."
+    },
+    {
+      "id": "CASE-PUNGGOL",
+      "url": "https://www.jtc.gov.sg/punggoldigitaldistrict",
+      "publisher": "JTC, Government of Singapore",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: co-location of education, industry and community with a district digital platform; no geometry or quantitative target copied."
+    },
+    {
+      "id": "CASE-HELSINKI",
+      "url": "https://forumvirium.fi/en/about/smartcity/",
+      "publisher": "Forum Virium Helsinki",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: agile pilots, real urban testing and resident co-creation; no claimed local implementation."
+    },
+    {
+      "id": "CASE-KINGS-CROSS",
+      "url": "https://www.kingscross.co.uk/about-the-development",
+      "publisher": "King's Cross Central Limited Partnership",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: rail-industrial heritage, university anchor and public realm regeneration; not an AI governance precedent."
+    },
+    {
+      "id": "CASE-STATION-F",
+      "url": "https://stationf.co/about",
+      "publisher": "STATION F",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: multiple startup programs and shared support inside adapted industrial heritage."
+    },
+    {
+      "id": "CASE-MILA",
+      "url": "https://mila.quebec/en/about/about-mila",
+      "publisher": "Mila",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: open science, talent, research, industry transfer and responsible AI in one ecosystem."
+    },
+    {
+      "id": "CASE-WATERFRONT",
+      "url": "https://www.waterfrontoronto.ca/news/waterfront-toronto-concludes-digital-panel-and-thanks-panelists-lasting-impact",
+      "publisher": "Waterfront Toronto",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Governance lesson: independent digital review, privacy and democratic accountability; cited as a critical precedent, not a design model."
+    },
+    {
+      "id": "CASE-MARINETERREIN",
+      "url": "https://marineterrein.nl/living-lab/",
+      "publisher": "Bureau Marineterrein Amsterdam",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Mechanism reference: publicly accessible, professionally managed outdoor living lab with bounded real-world tests."
+    },
+    {
+      "id": "IMGGEN-HERO",
+      "path": "assets/visible-stack-hero.png",
+      "source_type": "agent_generated_design",
+      "usage": "Illustrative cyberpunk-futurist cover image created with OpenAI built-in image generation; not a site map, evidence figure or geographic claim."
+    }
+  ]
+}
