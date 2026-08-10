@@ -560,7 +560,7 @@
       "id": "OSM-STATION-BEIJING_NORTH",
       "properties": {
         "id": "OSM-STATION-BEIJING_NORTH",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -591,7 +591,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",
@@ -606,7 +607,7 @@
       "id": "OSM-STATION-JIMENQIAO",
       "properties": {
         "id": "OSM-STATION-JIMENQIAO",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -637,7 +638,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",
@@ -652,7 +654,7 @@
       "id": "OSM-STATION-LIUDAOKOU",
       "properties": {
         "id": "OSM-STATION-LIUDAOKOU",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -683,7 +685,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",
@@ -698,7 +701,7 @@
       "id": "OSM-STATION-XITUCHENG",
       "properties": {
         "id": "OSM-STATION-XITUCHENG",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -729,7 +732,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",
@@ -744,7 +748,7 @@
       "id": "OSM-STATION-XIZHIMEN",
       "properties": {
         "id": "OSM-STATION-XIZHIMEN",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -775,7 +779,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",
@@ -790,7 +795,7 @@
       "id": "OSM-STATION-XUEYUANQIAO",
       "properties": {
         "id": "OSM-STATION-XUEYUANQIAO",
-        "layer": "EXISTING_STATION",
+        "layer": "SCENARIO_NODE",
         "source_type": "osm",
         "confidence": "low",
         "geometry_role": "existing_condition",
@@ -821,7 +826,8 @@
         "service": null,
         "route": null,
         "public_transport": "station",
-        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded"
+        "selected_because": "canonical named station object; duplicate platforms and stop positions excluded",
+        "node_role": "existing_station_context"
       },
       "geometry": {
         "type": "Point",

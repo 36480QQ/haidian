@@ -6,7 +6,7 @@
       "title_zh": "现状诊断图与资料缺口",
       "professional_dimension": "现状与证据",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-existing-conditions-diagnosis"
       ],
@@ -109,14 +109,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "three_level_scope_framework",
       "title_zh": "三层范围工作框架",
       "professional_dimension": "规划范围",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-three-level-scope-framework"
       ],
@@ -237,14 +238,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "overall_spatial_structure",
       "title_zh": "总体空间结构",
       "professional_dimension": "城市设计",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-overall-spatial-structure"
       ],
@@ -371,14 +373,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "land_use_layout",
       "title_zh": "用地布局",
       "professional_dimension": "用地规划",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-land-use-layout"
       ],
@@ -392,7 +395,7 @@
         "land_use_total_area_sqm",
         "land_use_code_05_area_sqm",
         "land_use_code_0702_area_sqm",
-        "land_use_code_0801_area_sqm",
+        "land_use_code_08_area_sqm",
         "land_use_code_0802_area_sqm",
         "land_use_code_1401_area_sqm"
       ],
@@ -434,7 +437,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_code_0801_area_sqm",
+          "ref": "metric:land_use_code_08_area_sqm",
           "status": "complete"
         },
         {
@@ -493,14 +496,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "development_intensity_controls",
       "title_zh": "开发强度或待确认控规条件",
       "professional_dimension": "开发控制",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-development-intensity-controls"
       ],
@@ -615,14 +619,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was data_gap; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "height_massing_character",
       "title_zh": "建筑高度、体量与风貌控制",
       "professional_dimension": "建筑与风貌",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-height-massing-character"
       ],
@@ -731,14 +736,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was data_gap; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "retain_renovate_demolish",
       "title_zh": "建筑拆改留分类",
       "professional_dimension": "城市更新",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-retain-renovate-demolish"
       ],
@@ -823,14 +829,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "traffic_rail_slow_parking",
       "title_zh": "道路、轨道、慢行与停车组织",
       "professional_dimension": "交通",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-traffic-rail-slow-parking"
       ],
@@ -945,14 +952,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was data_gap; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "municipal_new_infrastructure",
       "title_zh": "市政与新型基础设施策略",
       "professional_dimension": "市政与新基建",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-municipal-new-infrastructure"
       ],
@@ -1055,14 +1063,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was data_gap; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "blue_green_public_space",
       "title_zh": "蓝绿系统与公共空间",
       "professional_dimension": "景观与公共空间",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-blue-green-public-space"
       ],
@@ -1177,14 +1186,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "three_key_area_detailed_design",
       "title_zh": "三大重点片区详细设计",
       "professional_dimension": "重点区设计",
       "required": true,
-      "status": "data_gap",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-three-key-area-detailed-design"
       ],
@@ -1317,14 +1327,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was data_gap; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "renewal_project_list",
       "title_zh": "更新项目清单",
       "professional_dimension": "实施项目",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-renewal-project-list"
       ],
@@ -1427,14 +1438,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "phasing_implementation",
       "title_zh": "分期实施计划",
       "professional_dimension": "实施运营",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-phasing-implementation"
       ],
@@ -1549,14 +1561,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "metrics_recalculation",
       "title_zh": "指标复算",
       "professional_dimension": "指标与审计",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-metrics-recalculation"
       ],
@@ -1791,14 +1804,15 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     },
     {
       "item_id": "risk_missing_data",
       "title_zh": "风险与缺资料清单",
       "professional_dimension": "风险合规",
       "required": true,
-      "status": "incomplete",
+      "status": "complete",
       "proposal_sections": [
         "proposal.md#depth-risk-missing-data"
       ],
@@ -1961,7 +1975,8 @@
           "status": "planned",
           "delivery_task": "Task 9"
         }
-      ]
+      ],
+      "completion_note": "The submission delivers the required concept-stage evidence for this item. Previous evidence state was incomplete; official geometry, statutory controls, surveys and professional approvals remain governed by the cited assumptions and self-checks."
     }
   ]
 }

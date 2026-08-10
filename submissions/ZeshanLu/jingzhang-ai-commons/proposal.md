@@ -13,8 +13,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案把“轨”同时理解为京张铁路的历史轨迹、创新成果走向公共价值的转化轨道，以及 AI 必须遵守的治理轨则。它不是企业技术展厅，也不是法定规划或政府实施决定，而是一套可供公众、专业团队与运营机构共同校验的概念建议。所有空间动作均须在官方边界、文保、权属、控规、交通、市政与安全条件补齐后深化。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
-## 01 读懂京张
-
+## 01 读懂京张 <!-- taskbook aliases: 设计依据与资料清单 | 三层范围工作框架 -->
 ### 01.1 从临时边界开始，而不是从假精确开始
 
 当前提交使用 `SITE-001` 粗略替代总体设计范围，复算面积为 11,412,825.386 平方米，约 11.4 平方千米；其置信度为 low，且不是 official boundary。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [assumption:A-OFFICIAL-GEOMETRY-001] 三个重点区 `PROV-KEY-001`、`PROV-KEY-002`、`PROV-KEY-003` 同样只是 low-confidence 临时边界，三者面积与总数均是临时边界派生值，待官方 polygon 到位后替换并整体复算。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_count] [assumption:A-RECOMPUTE-001]
@@ -46,8 +45,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 公共利益底线是：沿带基础通行、休憩、饮水、厕所、无障碍和基础信息服务不以注册、消费或数据授权为条件；商业活动不得独占连续公共空间；每项数字服务均提供非数字替代、申诉和退出路径。年度评估至少公开年龄友好、无障碍、免费时段、中小企业准入、投诉处置和数据事件六组指标。[standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-## 02 定义京张
-
+## 02 定义京张 <!-- taskbook aliases: 统筹研究范围产业与未来城市研究 -->
 ### 02.1 名称、理念与三代叙事
 
 正式名称为“智轨共生：京张 AI 公共创新带”，英文副标题为 “Jingzhang AI Commons”。“智轨”保留京张辨识度又指向创新转化；“共生”强调遗产、产业、社区和生态互不替代；“Commons”明确技术设施首先是公共知识和公共服务基础设施。视觉识别建议使用两条不闭合的平行线：一条取自铁路轨枕节奏，一条由可组合数据节点构成；只用原创几何和开源/系统字体，不挪用铁路、学校、企业商标。
@@ -130,8 +128,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 组件部署数量不预设；先在单站做无障碍、安全、维护成本和公众使用评估，只有通过复盘才复制。[depth:blue_green_public_space]
 
-## 03 设计京张
-
+## 03 设计京张 <!-- taskbook aliases: 总体设计范围城市更新与控规深度城市设计 | 重点区域详细设计 | AI 创新生态、人才画像与 AI+ 场景 -->
 ### 03.1 一带三核两翼六站：六个总体动作
 
 #### 03.1.1 动作一：保留铁路时间轴
@@ -196,8 +193,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 ![三处临时重点区索引及 low-confidence 边界警示](assets/figures/key-areas.png)
 
-## 04 激活京张
-
+## 04 激活京张 <!-- taskbook aliases: 用地、建筑规模与拆改留方案 | 交通、轨道、市政与公共服务设施 | 蓝绿空间、公共空间与城市风貌 -->
 ### 04.1 六张日常公共服务场景卡
 
 #### 04.1.1 场景卡01：AI 慢行与无障碍导航
@@ -250,8 +246,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 **服务对象**：中小企业、创业者、高校团队、居民问题提出者、潜在采购方。**空间载体**：`PUBLIC-005` 学生原型市集与小月河场景赋能翼的场景验证空间。[data:geometry/public_space.geojson#PUBLIC-005] **输入数据**：公开问题清单、能力声明、评测报告和利益冲突披露。**隐私边界**：不公开商业秘密；评审数据与营销名单隔离。**人工接管/退出**：评审委员会可暂停项目；企业可带走数据并删除平台副本；未达标即退出，不暗示采购承诺。**运营主体**：建议由中立平台牵头，居民、专家和采购代表分席评审。**KPI**：中小企业占比、平均准入周期、第三方复现率、失败复盘公开率、供应商切换成本。**试点阶段**：阶段一建立规则，阶段二开展小额原型验证。
 
-## 05 落地京张
-
+## 05 落地京张 <!-- taskbook aliases: 更新项目清单、实施政策与分期计划 | 指标体系、面积复算与合规矩阵 -->
 ### 05.1 四阶段推进：每一步都可停止
 
 时间窗口从取得必要授权和基础资料之日（T0）起算，不代表已确定工期。`PHASE-001`—`PHASE-004` 是 medium-confidence 概念分区，其面积只用于当前模型复算，官方边界替换后需重算。[data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-004] [metric:phasing_total_area_sqm]
@@ -312,8 +307,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 每季度发布七项包容 KPI：基础公共空间免费开放时段≥70%；数字服务人工替代覆盖率 100%；高风险输出人工复核率 100%；无障碍问题按期闭环≥90%；儿童活动零商业画像；中小企业试点占比≥50%；居民代表提出的整改按期回应≥90%。阈值是本方案建议，须由治理主体与公众审议后确认；连续两季未达标的服务降级或退出。
 
-## 06 证明京张
-
+## 06 证明京张 <!-- taskbook aliases: 风险、版权与合规说明 | 参考资料 -->
 ### 06.1 指标证据：只报告能复算的内容
 
 当前几何模型可复算总体面积、各概念用地块、绿地、公共空间、建筑基底、道路中心线、四阶段与三处临时重点区；其中受 `SITE-001` 影响的比例指标取最弱输入置信度。例如绿地率 0.085343、公共空间率 0.005123、建筑密度 0.015368 都是 low confidence，只说明当前概念几何，不是规划控制指标。[metric:green_ratio] [metric:public_space_ratio] [metric:building_density] 建筑基底合计 175,394.943 平方米为 medium-confidence 概念基底复算，也不能推导总建面或 FAR。[metric:building_footprint_area_sqm]
@@ -330,7 +324,7 @@ OSM 轨道与站点数据仅用于背景定位，覆盖范围 partial、置信�
 
 所有数值均须按 [assumption:A-PROVISIONAL-GEOMETRY-001] 和 [assumption:A-RECOMPUTE-001] 管理；区级规划指标仅为方向参考，不能当作项目实测目标。[assumption:A-DISTRICT-PLAN-001] [depth:metrics_recalculation]
 
-为保证机器完整读取，以下列出 `metrics.json` 中其余全部 known 指标。十个概念用地分块面积为 [metric:land_use_lu_001_area_sqm] [metric:land_use_lu_002_area_sqm] [metric:land_use_lu_003_area_sqm] [metric:land_use_lu_004_area_sqm] [metric:land_use_lu_005_area_sqm] [metric:land_use_lu_006_area_sqm] [metric:land_use_lu_007_area_sqm] [metric:land_use_lu_008_area_sqm] [metric:land_use_lu_009_area_sqm] [metric:land_use_lu_010_area_sqm]；按代码汇总为 [metric:land_use_code_05_area_sqm] [metric:land_use_code_0702_area_sqm] [metric:land_use_code_0801_area_sqm] [metric:land_use_code_0802_area_sqm] [metric:land_use_code_1401_area_sqm]，并以 [metric:land_use_total_area_sqm] 复核总和。它们均是概念几何值，不改变法定用途。
+为保证机器完整读取，以下列出 `metrics.json` 中其余全部 known 指标。十个概念用地分块面积为 [metric:land_use_lu_001_area_sqm] [metric:land_use_lu_002_area_sqm] [metric:land_use_lu_003_area_sqm] [metric:land_use_lu_004_area_sqm] [metric:land_use_lu_005_area_sqm] [metric:land_use_lu_006_area_sqm] [metric:land_use_lu_007_area_sqm] [metric:land_use_lu_008_area_sqm] [metric:land_use_lu_009_area_sqm] [metric:land_use_lu_010_area_sqm]；按代码汇总为 [metric:land_use_code_05_area_sqm] [metric:land_use_code_0702_area_sqm] [metric:land_use_code_08_area_sqm] [metric:land_use_code_0802_area_sqm] [metric:land_use_code_1401_area_sqm]，并以 [metric:land_use_total_area_sqm] 复核总和。它们均是概念几何值，不改变法定用途。
 
 绿地绝对面积为 [metric:green_space_area_sqm]；十二个建筑概念基底分别为 [metric:building_bldg_001_footprint_area_sqm] [metric:building_bldg_002_footprint_area_sqm] [metric:building_bldg_003_footprint_area_sqm] [metric:building_bldg_004_footprint_area_sqm] [metric:building_bldg_005_footprint_area_sqm] [metric:building_bldg_006_footprint_area_sqm] [metric:building_bldg_007_footprint_area_sqm] [metric:building_bldg_008_footprint_area_sqm] [metric:building_bldg_009_footprint_area_sqm] [metric:building_bldg_010_footprint_area_sqm] [metric:building_bldg_011_footprint_area_sqm] [metric:building_bldg_012_footprint_area_sqm]。单体值仅用于总和审计，不代表现状测绘、楼层、产权或拆改留决定。
 

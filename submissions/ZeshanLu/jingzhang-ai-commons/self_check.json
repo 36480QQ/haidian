@@ -3,38 +3,89 @@
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
+      "result": "unknown",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "The submitted boundary is provisional, non-official and low-confidence; it supports concept generation only and all affected metrics must be recomputed when the official redline arrives.",
+      "suggested_fix": "Replace SITE-001 with the organizer-issued polygon, verify CRS and topology, then regenerate every dependent layer, metric and figure."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
+      "result": "unknown",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "The three key-area polygons are provisional, non-official and cannot support statutory area or parcel-control conclusions.",
+      "suggested_fix": "Replace the three polygons with organizer-issued geometry and rerun the geometry, metric and drawing pipelines."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "The ten concept land-use polygons form a non-overlapping partition of the provisional site boundary; this validates internal topology, not statutory land-use approval."
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "info",
       "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
+      "message": "The evidence dashboard and report are complete offline HTML documents with no remote runtime dependency, form submission or active network request."
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "message": "Claims are cross-linked to registered sources, assumptions, standards, design-depth items, geometry and metrics; unknown controls and professional follow-up gates remain explicit."
+    },
+    {
+      "check_id": "EVAL_TASK_RELEVANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "The six chapters cover the three-level scope, innovation ecosystem, AI urban form and scenarios, public services and infrastructure, heritage-park activation, culture and long-term operation required by the taskbook."
+    },
+    {
+      "check_id": "EVAL_ORIGINALITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md#02-定义京张",
+      "message": "The proposal develops an original Commons framework linking the heritage rail axis, three cores, two wings, six public stations and accountable AI service gates rather than applying a generic science-park template."
+    },
+    {
+      "check_id": "EVAL_AI_PLANNING_INNOVATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md#04-激活京张",
+      "message": "Twelve AI scenarios bind service objects, spatial carriers, minimum data, privacy limits, human takeover, operators, KPIs and pilot phases to specific planning locations."
+    },
+    {
+      "check_id": "EVAL_IMPLEMENTABILITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md#05-落地京张",
+      "message": "A four-phase pathway assigns projects, cost centres, operation and maintenance responsibility, decision thresholds, pause-exit actions and measurable stage gates."
+    },
+    {
+      "check_id": "EVAL_PUBLIC_INTEREST",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md#01-读懂京张",
+      "message": "Eight user groups, free basic access, non-digital alternatives, accessibility, youth-friendly spaces, appeal channels and SME access requirements make public benefit auditable."
+    },
+    {
+      "check_id": "EVAL_RISK_COMPLIANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md#06-证明京张",
+      "message": "Ten risks identify owners, triggers, mitigations and exit conditions; sources, licenses, privacy boundaries, official-data gaps and professional approval gates are disclosed."
+    },
+    {
+      "check_id": "EVAL_EXPRESSION_COMPLETENESS",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/a3-booklet.pdf",
+      "message": "The package contains a structured proposal, five evidence figures, offline report and dashboard, nine GeoJSON layers, 50 metrics, three evidence matrices, a 36-page A3 booklet and six A0 boards."
     }
   ]
 }

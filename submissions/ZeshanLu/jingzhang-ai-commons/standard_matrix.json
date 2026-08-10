@@ -573,7 +573,7 @@
       "metric_refs": [
         "land_use_code_05_area_sqm",
         "land_use_code_0702_area_sqm",
-        "land_use_code_0801_area_sqm",
+        "land_use_code_08_area_sqm",
         "land_use_code_0802_area_sqm",
         "land_use_code_1401_area_sqm"
       ],
@@ -610,7 +610,7 @@
         },
         {
           "kind": "metric",
-          "ref": "metric:land_use_code_0801_area_sqm",
+          "ref": "metric:land_use_code_08_area_sqm",
           "status": "complete"
         },
         {

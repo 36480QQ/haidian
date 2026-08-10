@@ -281,12 +281,14 @@
         "geometry_role": "design_proposal",
         "design_precision": "conceptual_meter_model",
         "disclosure": "Conceptual design geometry derived from the repository provisional rough boundary; not a survey, statutory control, road redline, property boundary, or engineering commitment.",
-        "land_use_code": "0801",
+        "land_use_code": "08",
         "name_en": "west public knowledge wing",
         "structure_role": "west_wing",
         "partition_method": "shared EPSG:4548 overlay priority",
         "area_sqm_declared": 249529.2,
-        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry"
+        "area_measurement_basis": "EPSG:4548 recomputation from provisional rough geometry",
+        "land_use_subtype": "knowledge_public_service",
+        "code_limit_note": "Repository subset does not list 0801; parent category 08 is used pending statutory classification."
       },
       "geometry": {
         "type": "MultiPolygon",

@@ -188,14 +188,14 @@
         "A-RECOMPUTE-001"
       ]
     },
-    "land_use_code_0801_area_sqm": {
+    "land_use_code_08_area_sqm": {
       "status": "known",
       "value": 249529.196,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(EPSG:4548 area of output LAND_USE features where land_use_code == '0801')",
+      "formula": "sum(EPSG:4548 area of output LAND_USE features where land_use_code == '08')",
       "confidence": "medium",
       "assumptions": [
         "A-PROVISIONAL-GEOMETRY-001",
