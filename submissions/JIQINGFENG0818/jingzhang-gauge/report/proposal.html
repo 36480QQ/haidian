@@ -168,7 +168,7 @@ code {
 <p>京张遗址公园南北向为<strong>版本线 Version Line</strong>——不是景观轴，是一条产品升级流水线的物理化：北端制定规范，中段首装验证，南端规模应用。一个标准件从 draft 到 stable 的全过程，在空间上走完一次南北路程 <code>[data:geometry/roads.geojson#RD-001]</code>。</p>
 <p>这给&quot;南北连通&quot;一个内在必然性：南北不是交通意义的连通，是<strong>流程意义的连通</strong>，不是为通而通 <code>[depth:overall_spatial_structure]</code>。</p>
 <h3>用地与功能布局</h3>
-<p>用地采用 Voronoi 剖分生成，相邻图斑共享精确边界坐标，完整覆盖设计范围且无缝隙、无重叠 <code>[data:geometry/land_use.geojson#LU-001]</code>。全域共 11 类用地代码：版本线核心绿廊为公园绿地（1401），缝合口为广场用地（1403），外缘配置防护绿地（1402），三工位内按主导功能配置科研（0802）、居住与社区服务（0701/0702）、商业服务业（05），腹地周期性插入教育、医疗、文化、体育设施用地 <code>[depth:land_use_layout]</code>。</p>
+<p>用地采用 Voronoi 剖分生成，相邻图斑共享精确边界坐标，覆盖设计范围但<strong>并非完全无缝</strong>：<code>metrics.json</code> 的 <code>topology_check</code> 记录残留缝隙 14.897 m²、重叠 0.099 m²，<code>land_use_partition_complete</code> 为 <strong><code>false</code></strong> <code>[data:geometry/land_use.geojson#LU-001]</code>。相对 11.41 km² 的场地，该残差约为百万分之一点五量级，属浮点求交与坐标精度残差，不改变用地构成与面积复算结论；但本方案按实际值披露，不写成&quot;零缝隙&quot;。全域共 11 类用地代码：版本线核心绿廊为公园绿地（1401），缝合口为广场用地（1403），外缘配置防护绿地（1402），三工位内按主导功能配置科研（0802）、居住与社区服务（0701/0702）、商业服务业（05），腹地周期性插入教育、医疗、文化、体育设施用地 <code>[depth:land_use_layout]</code>。</p>
 <p>道路用地（1207）沿地块边界扣除后并入剖分，不产生夹缝地。留白用地（16）保留在外围，为官方边界发布后的调整留出余量。</p>
 <h3>城市更新总体框架</h3>
 <p>现状诊断以铁路两侧割裂、既有社区肌理、既有商业权属三项为核心问题识别，均基于公开可见的空间条件，不使用非公开资料 <code>[depth:existing_conditions_diagnosis]</code>。更新对象按&quot;制标能力—首装场地—量产承接&quot;三类识别，而非按建筑年代一刀切。拆改留分类逻辑见第 7 章。</p>
@@ -316,7 +316,7 @@ code {
 <h3>核心指标</h3>
 <div class="proposal-table"><table><thead><tr><th>指标</th><th>值来源</th><th>置信度</th><th>说明</th></tr></thead><tbody><tr><td>设计范围面积</td><td><code>[metric:site_area_sqm]</code></td><td>low</td><td>临时边界，非官方精确面积；与官方口径偏差 0.11%</td></tr><tr><td>绿地率</td><td><code>[metric:green_ratio]</code></td><td>medium</td><td>由 <code>green_space.geojson</code> 并集复算</td></tr><tr><td>公共空间率</td><td><code>[metric:public_space_ratio]</code></td><td>medium</td><td>缝合口与基准点节点并集</td></tr><tr><td>道路面积率</td><td><code>[metric:road_area_ratio]</code></td><td>medium</td><td>红线宽度为概念假设值</td></tr><tr><td>建筑密度</td><td><code>[metric:building_density]</code></td><td>low</td><td>概念性体量示意</td></tr><tr><td>法定容积率</td><td><code>floor_area_ratio</code></td><td><strong>unknown</strong></td><td>官方控制指标缺失，不代填</td></tr><tr><td>概念容积率</td><td><code>conceptual_floor_area_ratio</code></td><td>low</td><td>层数为假设值，非法定控制指标</td></tr></tbody></table></div>
 <h3>拓扑校验</h3>
-<p><code>topology_check</code> 字段记录用地剖分的缝隙与重叠面积，均在 1e-5 量级以下，<code>land_use_partition_complete=true</code>。空间审查器结论为 PASS，仅保留三条 <code>KEY_AREA_PROVISIONAL</code> 提示——该提示源于组织方官方边界缺失，是空间复核的事实记录；官方边界与重点区数据待发布，受影响的几何、指标和图件需在发布后复算，资格与评分由维护者/评审依正式规则判断。</p>
+<p><code>topology_check</code> 字段记录用地剖分的缝隙与重叠面积：<strong>缝隙 14.897 m²、重叠 0.099 m²，<code>land_use_partition_complete=false</code></strong>。相对 11.41 km² 场地约为百万分之一点五量级，来源为浮点求交与坐标精度残差；本方案按实际值披露，不把它写成完全剖分。空间审查器结论为 PASS，仅保留三条 <code>KEY_AREA_PROVISIONAL</code> 提示——该提示源于组织方官方边界缺失，是空间复核的事实记录；官方边界与重点区数据待发布，受影响的几何、指标和图件需在发布后复算，资格与评分由维护者/评审依正式规则判断。</p>
 <h3>合规矩阵对应</h3>
 <p><code>compliance_matrix.json</code> 覆盖公告 1.3、1.4、1.5 全部任务与 agent.1–agent.6；<code>standard_matrix.json</code> 覆盖全部强制性专业标准；<code>design_depth_matrix.json</code> 中必需的 formal 深度项标注完成状态 <code>[depth:metrics_recomputation]</code>。</p>
 <h3>官方数据替换后的重算范围</h3>
