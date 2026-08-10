@@ -111,7 +111,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 这组节点计划补的是“公共界面如何承接普通人路径和停止动作”的可见中间层，而不是横断面、平面或体量。道路、权属、文保、无障碍、现状设施和运营资料到位前，所有尺寸、容量、通行能力与结果指标仍为待补资料或 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 
-![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.svg)
+![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.png)
 
 为降低评审从概念叙事跳到结构化附件的成本，本轮把四张由包内 JSON 合约直接生成的双语审阅图板集中到同一套入口：普通人任务链与停止回路、十张场景卡的任务书—空间—回放覆盖、五个概念项目族的 G0/G1 门与退出动作、任务书—公共空间—年度运营三联读。它们只是已有字段的可视化索引，不新增现场绩效、授权、许可、部署或官方评分结论；图板中的 `result_status=not_run` 与 `not_an_official` 边界应与原始 JSON 一并阅读。[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
 
@@ -127,7 +127,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 图 10 的五个项目族只是空间承接与 G0/G1 研究顺序：人本缓冲、技能与夜间健康、城市 API、蓝绿与人机测试、文化与全球共创。任何一项缺少授权、责任、专业资料或安全门，都保持 G0、冻结或撤回；图面只证明本包字段能够被同一张图回读，不证明官方评分、活动确定、运营主体、文化许可、企业合作或现场结果。[data:visual/assets/implementation-operation-matrix.json] [metric:project_family_count] [depth:implementation_and_phasing]
 
-![图 10｜任务书—公共空间—年度运营](assets/figures/taskbook-culture-operations-board.svg)
+![图 10｜任务书—公共空间—年度运营](assets/figures/taskbook-culture-operations-board.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -239,7 +239,6 @@ compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agen
 ![图 03 重点区域，三处公共空间、地标、场景关系](assets/figures/key-areas.png)
 ![图 04 交通与蓝绿，人优先、小月河韧性与 G0 规则](assets/figures/mobility-bluegreen.png)
 ![图 05 指标与证据，面积复算、场景门槛和版本化治理](assets/figures/metrics-evidence.png)
-![图 07 普通人任务链与停止回路](assets/figures/ordinary-service-evidence-board.svg)
-![图 08 十张场景卡的任务书—空间—回放覆盖](assets/figures/scenario-coverage-board.svg)
-![图 09 五个概念项目族的 G0/G1 门与退出动作](assets/figures/implementation-gates-board.svg)
-![图 10 任务书—公共空间—年度运营](assets/figures/taskbook-culture-operations-board.svg)
+![图 07 普通人任务链与停止回路](assets/figures/ordinary-service-evidence-board.png)
+![图 08 十张场景卡的任务书—空间—回放覆盖](assets/figures/scenario-coverage-board.png)
+![图 09 五个概念项目族的 G0/G1 门与退出动作](assets/figures/implementation-gates-board.png)

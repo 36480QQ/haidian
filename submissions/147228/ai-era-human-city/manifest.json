@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4d4e922d62dcd8f83814e1c3a8b404316faef6e7eba98933f1e3f3a369632e0b"
+      "sha256": "a0031fc5ac815b6b8e32ff3b74fba4c2082b5baf7b5b1d244071cfd3f1ec5308"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cfa6b4a7cb26520fb09e4d0f342088f33ab00a851032bfae7dba3b0be4c93739"
+      "sha256": "8cea4f0b3b83e279da3f25d3ade4b5e557c27f05b881be7a937fd23a1b723ab8"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "187b9dd9ebe8c97a0555aa7480934547915bbf0989284373275591e89f4f0de3"
+      "sha256": "f34f3e46ed013f1b20b48fb985634aea92438afd5a538995b2e56277c2be37cb"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4757fe66919a06dadc266e3e3ef528c3d49eae0da77c64421b2c2ed6b1c0d77b"
+      "sha256": "8c22a55c1f75381e251a0327e77ec30b9cf320732b47534e4f7aa194ece8b27a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -232,7 +232,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "33f04bceaf271ab35f28f36ed502e5bb566c409c2220a97cf3ba6f9762e64e2a"
+      "sha256": "4a95fe9297646629e9347a15842a72f3c4b20bdb01e283d5ac4ea533d6a12a1c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -240,7 +240,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "1178b2b4e02af52936767d8c4854fd6d29fc4bc75a8a50cf5eeec75ec520f110"
+      "sha256": "622bac50b159443c7e452a53977b0bb20cde71a476c3b48470b9693c34a8ea2c"
     },
     {
       "path": "visual/index.en.html",
@@ -498,6 +498,66 @@
       "language": "en",
       "translation_of": "assets/figures/taskbook-culture-operations-board.png",
       "sha256": "b3fec75004fc8c616fb0148c55deabd0943c2bc94348fc2b8bdc10989be991dd"
+    },
+    {
+      "path": "assets/figures/implementation-gates-board.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "5446fc921827e3f6f38b8a006096b302e0eb624077d4e6016ff688f4f485cd59"
+    },
+    {
+      "path": "assets/figures/implementation-gates-board.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/implementation-gates-board.png",
+      "sha256": "5f25c6f47fa4948b1c2612d1aa21eaf1ec35fbee026ac9bc73c6597ed8cb39bd"
+    },
+    {
+      "path": "assets/figures/ordinary-service-evidence-board.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "e65319832d011a51c2d760f1d1f3057129c2c6a2a0d28cdbde01f6e22858d533"
+    },
+    {
+      "path": "assets/figures/ordinary-service-evidence-board.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ordinary-service-evidence-board.png",
+      "sha256": "7b6ae69440fbfd34ce0a7f61425aa33715cdd5efb704307db85699f657e9e662"
+    },
+    {
+      "path": "assets/figures/scenario-coverage-board.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "82bf8ec5e9d3de652154d2c927ffc0aad3554ad1d187ed7f8f6d22a753891d22"
+    },
+    {
+      "path": "assets/figures/scenario-coverage-board.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scenario-coverage-board.png",
+      "sha256": "f311d6bc0591653e15fa1fa3ec50f2b8d319a960f0e360c3d4fe3e8a59df6bfb"
+    },
+    {
+      "path": "assets/figures/spatial-interface-nodes.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "74496912425b94aa14ebe5cfcec59e94791727d8eac65b3b7337d6e71f27713e"
+    },
+    {
+      "path": "assets/figures/spatial-interface-nodes.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-interface-nodes.png",
+      "sha256": "80641d91bc6b01903ccb1cb4c72998ef8469c1590e59aca377f458bc60383b20"
     }
   ],
   "validation_claim": {
