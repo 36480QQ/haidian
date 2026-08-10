@@ -32,6 +32,7 @@ class AgentFacingDocsTests(unittest.TestCase):
                 "agent.html",
                 ".github/PULL_REQUEST_TEMPLATE.md",
                 "templates/proposal.md",
+                "scripts/scaffold_ai_submission.py",
             ]
         )
         self.assertIn("scripts/scaffold_ai_submission.py", docs)
