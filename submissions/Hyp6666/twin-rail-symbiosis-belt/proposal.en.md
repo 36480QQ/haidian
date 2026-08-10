@@ -101,11 +101,11 @@ The renewal project list appears in the "Renewal Projects, Implementation Policy
 
 ### Regulatory-Plan Depth and Control Guidance
 
-The proposal reaches regulatory-detailed-planning urban-design depth [standard:MOHURD-CONTROL-DETAILED-PLANNING]. For building height, intensity, character, roof form, and massing, it proposes **guidance directions** (e.g., the Light-Rail innovation belt as mid-rise, higher-density R&D districts; the Iron-Rail culture belt as low-rise, open-space-dominated; plot-ratio and interface control along both sides of the Heritage Park), but **specific regulatory values await official confirmation** [metric:building_height_m] [metric:floor_area_ratio].
+The proposal works at regulatory-detailed-planning urban-design depth as a conceptual-study framework [standard:MOHURD-CONTROL-DETAILED-PLANNING], and does not constitute an approved regulatory-plan result. For building height, intensity, character, roof form, and massing, it proposes **guidance directions** (e.g., the Light-Rail innovation belt as mid-rise, higher-density R&D districts; the Iron-Rail culture belt as low-rise, open-space-dominated; plot-ratio and interface control along both sides of the Heritage Park), but **specific regulatory values await official confirmation** [metric:building_height_m] [metric:floor_area_ratio].
 
 ## Detailed Design of Key Areas
 
-The three key areas are positioned under a "three-rail" framework, each reaching comprehensive-implementation-plan urban-design depth [depth:three_key_area_detailed_design].
+The three key areas are positioned under a "three-rail" framework, each developed at conceptual-study depth for professional teams to deepen toward comprehensive-implementation-plan urban-design depth [depth:three_key_area_detailed_design].
 
 ### Zhongzhiyuan AI Self-Dependent Innovation Acceleration Area (Acceleration Rail)
 
@@ -178,7 +178,7 @@ Land use follows the "twin-rail, five-chain" structure, forming 52 seamless parc
 
 ### Building Scale and Retain-Renovate-Demolish
 
-Building footprints are conceptual; total area is about 433,000 m² [metric:building_footprint_area_sqm]. Retain/renovate/demolish follows four categories—"retain existing quality carriers, renovate low-efficiency space, renew potential parcels, newly build supporting facilities" [depth:retain_renovate_demolish]—while parcel-level decisions, building height, and FAR are all marked as pending confirmation [metric:floor_area_ratio].
+Building footprints are conceptual; total area is about 444,000 m² [metric:building_footprint_area_sqm]. Retain/renovate/demolish follows four categories—"retain existing quality carriers, renovate low-efficiency space, renew potential parcels, newly build supporting facilities" [depth:retain_renovate_demolish]—while parcel-level decisions, building height, and FAR are all marked as pending confirmation [metric:floor_area_ratio].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 

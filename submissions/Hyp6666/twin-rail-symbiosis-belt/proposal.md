@@ -101,11 +101,11 @@ AI 时代城市的核心变化是**"服务从固定场所转向随需而动的�
 
 ### 控规深度与管控引导
 
-方案达到控制性详细规划的城市设计深度 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。建筑高度、强度、风貌、屋顶形态与体量控制提出**引导方向**（如光轨创新带以中层高密度研发街区为主，铁轨文化带以低层开放空间为主，遗址公园两侧控制贴线率与界面），但**具体控规数值待官方条件确认** [metric:building_height_m] [metric:floor_area_ratio]。
+方案以控制性详细规划的城市设计深度为工作框架展开概念研究 [standard:MOHURD-CONTROL-DETAILED-PLANNING]，建筑高度、强度、风貌、屋顶形态与体量控制提出**引导方向**（如光轨创新带以中层高密度研发街区为主，铁轨文化带以低层开放空间为主，遗址公园两侧控制贴线率与界面），但**具体控规数值待官方条件确认**，本方案不构成审定控规成果 [metric:building_height_m] [metric:floor_area_ratio]。
 
 ## 重点区域详细设计
 
-三处重点区域以"三轨"定位展开，均达到规划综合实施方案的城市设计深度 [depth:three_key_area_detailed_design]。
+三处重点区域以"三轨"定位展开，以概念研究深度展开设计论证，供专业团队深化至规划综合实施方案深度 [depth:three_key_area_detailed_design]。
 
 ### 众智园 AI 自主创新加速区（加速轨）
 
@@ -178,7 +178,7 @@ AI 时代城市的核心变化是**"服务从固定场所转向随需而动的�
 
 ### 建筑规模与拆改留
 
-建筑基底为概念性示意，总面积约 43.3 万 m² [metric:building_footprint_area_sqm]。拆改留按"保留现状优质载体、改造低效空间、更新潜力地块、新建支撑性设施"四类展开 [depth:retain_renovate_demolish]，具体到地块的拆改留、建筑高度与容积率均标注为待确认条件，不构成审定结论 [metric:floor_area_ratio]。
+建筑基底为概念性示意，总面积约 44.4 万 m² [metric:building_footprint_area_sqm]。拆改留按"保留现状优质载体、改造低效空间、更新潜力地块、新建支撑性设施"四类展开 [depth:retain_renovate_demolish]，具体到地块的拆改留、建筑高度与容积率均标注为待确认条件，不构成审定结论 [metric:floor_area_ratio]。
 
 ## 交通、轨道、市政与公共服务设施
 
