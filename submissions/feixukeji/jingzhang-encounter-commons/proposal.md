@@ -16,6 +16,10 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 > 让高密度人才，产生高质量连接。
 > AI lowers the cost of encounter; people decide whether to travel together.
 
+![AI 生成概念图：京张相遇公地的人本公共协作情境](assets/figures/encounter-commons-hero.png)
+
+*呈现层限定｜AI 生成概念图（2026-08-09）：以抽象空间叙事说明“一线三场”的公共协作体验。非现场照片、非现状或边界证据、非官方规划图、非获批方案或建成效果；人物、建筑、尺度、材料与具体位置均为示意。[source:AI-CONCEPT-VISUALS-20260809]*
+
 ## 一页执行摘要：把“认识谁”改成“共同完成什么”
 
 京张沿线已经集聚了高校、研发团队、创业者和社区，但“有人才”不自动等于“有协作”。当公共问题、可用场地、开放时段、导师与服务资源分散在不同组织中，青年需要不断跨越门禁、信息和信任成本。海淀公开材料显示，AI 原点社区已聚集超过 1 万名从业者，区域企业调研中 25–35 岁人群占比超过 70%。[source:HD-AI-ORIGIN-FIRST-STOP]
@@ -116,7 +120,15 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 
 **AI 原点同桌场 / COMMON TABLE YARD。** 作为首个 90 天低成本试点候选，以跨校开放桌、导师门诊、OPC 合规门诊、多语新人台、人才与公共服务导航为核心。参与者可以无账号查看活动并现场报名；AI 根据公开任务标签、空间容量、语言和时段给出建议，主持人确认后才发布。试点不采集人脸、通讯录、精确轨迹、情感状态或私人关系数据；系统不预测“谁应该认识谁”。地标“公开贡献时刻墙”只记录共享文档、修复、翻译、测试与退役决定。[source:HD-TALENT-MOBILE-STATION] [metric:pilot_duration_days]
 
+![AI 生成概念图：AI 原点同桌场的候选运营情境](assets/figures/ai-origin-common-table.png)
+
+*呈现层限定｜AI 生成概念图（2026-08-09）：说明无账号进入、人工主持、开放共桌与明示退出的候选运营情境。非真实场地记录、现状调查、已授权活动或实施承诺；空间、人数、构筑物与运营状态均待踏勘和专业复核。[source:AI-CONCEPT-VISUALS-20260809]*
+
 **大钟寺同城场 / COMMON CITY YARD。** 把研发成果带到市民可理解的首用与反馈界面，组织文化导览共编、晚间公开演示、智能原生消费的可解释体验和市民/企业复盘。空间原型包括可关闭的展示接口、安静反馈桌、无障碍观演区和夜间边界标记。地标“百年交汇点”以京张铁路时间轴与中关村开放协作史为线索，只使用可核验事实和原创图形，不把历史当作科技装饰。夜间开放、商业活动、噪声、消防与文保均须逐场审批。[source:CASE-PARIS-QJ] [assumption:A-HERITAGE-001]
+
+![AI 生成概念图：大钟寺同城场的可迁移首用与反馈原型](assets/figures/dazhongsi-city-commons.png)
+
+*呈现层限定｜AI 生成概念图（2026-08-09）：表达可迁移的首用、公共反馈、安静边界与分流退出原型，不代表大钟寺真实场地、站口、建筑或已批准活动。具体落点、尺度、文保、消防、噪声与运营条件均待官方资料、踏勘和专项审查。[source:AI-CONCEPT-VISUALS-20260809]*
 
 三处不是换名字的同一种广场，而是三套可移交的“平面—剖面—运行”原型。下表规定空间序列、首项核验、急停位置和专业团队接手条件；图中的尺寸均为组件级建议，落位与定尺必须等待官方 polygon、权属与现场测绘。[metric:spatial_prototype_count] [depth:three_key_area_detailed_design]
 
@@ -247,7 +259,9 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 
 公平风险通过线下等价入口、免费基础参与、无障碍席位、多语与易读文本、安静时段、居民否决席和不按消费/融资能力排序来降低。运营风险通过小规模试点、单项责任人、维护预算前置、两个周期复盘和明确退役机制降低。`risk.json` 对八个维度给出 1–5 分、缓解措施和人类审查路径；官方边界、现状、权属、交通、市政和文保等数据缺口登记为假设，不伪造空间锚点。[assumption:A-BOUNDARY-001] [assumption:A-SITE-VERIFY-001]
 
-文本、原创图形、GeoJSON 设计图层、HTML 与 PDF 由声明的 Agent 生成；公共事实只来自 `sources.json` 登记来源。图件不使用第三方栅格底图、照片、商标、远程字体或远程脚本；总览与慢行图中的主干路、轨道、水系、公园、高校和部分站点为 OpenStreetMap 矢量数据的低对比方向性背景，按 ODbL 署名 OpenStreetMap contributors，仅供定位阅读，不是官方测绘、权属或规划证据。Noto Sans SC 仅作为开放许可字体进行字形栅格化或 PDF 子集嵌入，不分发字体文件。详细权利与限制见 `report/copyright_statement.md`。本包采用前言声明的 `COMMUNITY-DISPLAY-ONLY`，其使用边界不等同于传统机构资格预审的知识产权安排。[source:SOURCE-REGISTRY] [source:OSM-CONTEXT-20260809]
+文本、为本投稿制作的图形、GeoJSON 设计图层、HTML 与 PDF 由声明的 Agent 生成；公共事实只来自 `sources.json` 登记来源。图件不使用第三方栅格底图、照片、商标、远程字体或远程脚本；总览与慢行图中的主干路、轨道、水系、公园、高校和部分站点为 OpenStreetMap 矢量数据的低对比方向性背景，按 ODbL 署名 OpenStreetMap contributors，仅供定位阅读，不是官方测绘、权属或规划证据。Noto Sans SC 仅作为开放许可字体进行字形栅格化或 PDF 子集嵌入，不分发字体文件。详细权利与限制见 `report/copyright_statement.md`。本包采用前言声明的 `COMMUNITY-DISPLAY-ONLY`，其使用边界不等同于传统机构资格预审的知识产权安排。[source:SOURCE-REGISTRY] [source:OSM-CONTEXT-20260809]
+
+三张空间情境图于 2026-08-09 使用 Codex 内的 OpenAI 图像生成功能，由为本方案编写的纯文字提示独立生成；工具未暴露模型 ID，也未将同业作品或第三方照片作为直接图像输入。它们只帮助评审理解候选空间原型与人的使用情境，不支撑边界、现状、权属、尺度、工程可行性、批准状态或实施结果判断。[source:AI-CONCEPT-VISUALS-20260809]
 
 ## 参考资料
 

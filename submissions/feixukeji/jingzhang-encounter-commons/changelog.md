@@ -2,6 +2,13 @@
 
 Change log / 变更记录
 
+## v1.3 - 2026-08-09
+
+- Rebuilt the bilingual A3/A0 publication system in XeLaTeX/TikZ with print-scale type floors, embedded fonts, stronger distant-reading hierarchy, and repeat-until-stable compilation of each job (at least two passes).
+- Benchmarked multiple public submissions for high-level editorial qualities only, then generated three clean-room, text-only-prompt concept visuals without supplying peer-entry images to the image-generation tool.
+- Added a rail-corridor hero scene, a human-hosted AI Origin common table, and a reversible Dazhongsi civic-exchange scene; each is explicitly marked as an AI-generated presentation layer, not site evidence, an approved design, or built work.
+- Preserved the controlled-test yard, spatial evidence, metrics, boundaries, stop conditions, and professional handoffs as auditable vector/data layers rather than substituting atmosphere images for evidence.
+
 ## v1.1 - 2026-08-09
 
 - Reframed the proposal around an eight-field Encounter Ticket instead of interpersonal recommendation.
