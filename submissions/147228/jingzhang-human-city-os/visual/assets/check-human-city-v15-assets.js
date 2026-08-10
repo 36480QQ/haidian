@@ -12,6 +12,7 @@ function check(id, pass, detail) {
   if (!pass) ok = false;
 }
 function read(name) { return JSON.parse(fs.readFileSync(path.join(here, name), 'utf8')); }
+function readText(rel) { return fs.readFileSync(path.join(root, rel), 'utf8'); }
 function exists(rel) { return fs.existsSync(path.join(root, rel)); }
 function round(value) { return Math.round(value * 1e6) / 1e6; }
 function svgRectOverflow(rel) {
@@ -30,6 +31,7 @@ function svgRectOverflow(rel) {
 const search = read('parametric-search.json');
 const mainline = read('human-city-mainline.json');
 const delivery = read('human-city-delivery-spine.json');
+const bilingualAudit = read('bilingual-equivalence-audit.json');
 const metrics = read('../../metrics.json').metrics;
 const objectiveFns = {
   human_floor: (s) => 0.5 * s.human_community + 0.3 * s.learning_data + 0.2 * s.reversible_meanwhile,
@@ -48,6 +50,22 @@ check('OBJECTIVES_REPLAY', samples.every((candidate) => Object.entries(objective
 check('PARETO_IDS_RESOLVE', (search.pareto_front_ids || []).every((id) => [...(search.named_candidates || []), ...samples].some((candidate) => candidate.candidate_id === id)), `pareto=${(search.pareto_front_ids || []).length}`);
 check('MAINLINE_SHAPE', mainline.official_boundary === false && mainline.geometry_role === 'provisional_constraint' && mainline.stages.length === 5 && mainline.areas.length === 3, `stages=${mainline.stages.length}; areas=${mainline.areas.length}`);
 check('DELIVERY_SHAPE', delivery.status === 'conceptual_governance_not_commitment' && delivery.project_families.length === 5 && delivery.gates.length === 3, `families=${delivery.project_families.length}; gates=${delivery.gates.length}`);
+const proposalZh = readText('proposal.md');
+const proposalEn = readText('proposal.en.md');
+const v15DataRefs = [
+  'visual/assets/human-city-mainline.json',
+  'visual/assets/parametric-search.json',
+  'visual/assets/human-city-delivery-spine.json'
+];
+const v15FigureStems = [
+  'assets/figures/human-city-mainline',
+  'assets/figures/parametric-search',
+  'assets/figures/human-city-delivery-spine'
+];
+const v15BilingualRefs = v15DataRefs.every((ref) => proposalZh.includes(ref) && proposalEn.includes(ref)) && v15FigureStems.every((stem) => proposalZh.includes(`${stem}.svg`) && proposalEn.includes(`${stem}.en.svg`));
+check('BILINGUAL_AUDIT_ITERATION', bilingualAudit.package_iteration === 'v1.5', `audit=${bilingualAudit.package_iteration}`);
+check('BILINGUAL_AUDIT_SCOPE', ['图 16', '图 17', '图 18'].every((label) => bilingualAudit.scope.join(' ').includes(label)) && ['human-city-mainline', 'parametric-search', 'human-city-delivery-spine'].every((name) => bilingualAudit.scope.join(' ').includes(name)), 'v1.5 mainline/search/delivery are named in the audit scope');
+check('BILINGUAL_V15_REFS', v15BilingualRefs, 'v1.5 data and figure references occur in both proposal languages');
 for (const rel of ['assets/figures/human-city-mainline.svg', 'assets/figures/human-city-mainline.en.svg']) {
   const overflow = svgRectOverflow(rel);
   check(`SVG_RECT_FITS_${rel}`, overflow.length === 0, overflow.length === 0 ? 'all positioned rectangles fit viewBox' : `overflow=${overflow.join(' | ')}`);
