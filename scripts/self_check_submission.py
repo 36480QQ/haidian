@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -27,7 +28,11 @@ def run_json_command(command: list[str]) -> dict[str, Any]:
     # Validator subprocesses emit UTF-8 JSON and often include Chinese
     # diagnostics.  Do not let the contributor's Windows code page decide how
     # those bytes are decoded (GBK/cp936 otherwise crashes before a report is
-    # produced).
+    # produced). Keep the same contract for the complete Python child tree,
+    # including validators that invoke another validator.
+    environment = os.environ.copy()
+    environment["PYTHONUTF8"] = "1"
+    environment["PYTHONIOENCODING"] = "utf-8"
     completed = subprocess.run(
         command,
         capture_output=True,
@@ -35,6 +40,7 @@ def run_json_command(command: list[str]) -> dict[str, Any]:
         encoding="utf-8",
         errors="replace",
         check=False,
+        env=environment,
     )
     parsed: Any = {}
     stdout = completed.stdout or ""

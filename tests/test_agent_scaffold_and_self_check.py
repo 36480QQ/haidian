@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -46,6 +47,27 @@ class AgentFacingDocsTests(unittest.TestCase):
 
 
 class SelfCheckEncodingTests(unittest.TestCase):
+    def test_run_json_command_forces_utf8_for_gbk_and_recursive_python_children(self) -> None:
+        nested_child = (
+            "import json; print(json.dumps({'message': '中文全角括号（），²'}, "
+            "ensure_ascii=False))"
+        )
+        parent = (
+            "import subprocess, sys; "
+            f"child = subprocess.run([sys.executable, '-c', {nested_child!r}], "
+            "capture_output=True, text=True, check=True); "
+            "sys.stdout.write(child.stdout)"
+        )
+        with mock.patch.dict(
+            os.environ,
+            {"PYTHONUTF8": "0", "PYTHONIOENCODING": "cp936"},
+        ):
+            result = run_json_command([sys.executable, "-c", parent])
+
+        self.assertEqual(0, result["returncode"])
+        self.assertTrue(result["ok"])
+        self.assertEqual("中文全角括号（），²", result["stdout"]["message"])
+
     def test_run_json_command_decodes_utf8_diagnostics_independent_of_locale(self) -> None:
         result = run_json_command(
             [
@@ -71,7 +93,10 @@ class SelfCheckEncodingTests(unittest.TestCase):
             encoding="utf-8",
             errors="replace",
             check=False,
+            env=mock.ANY,
         )
+        self.assertEqual("1", run.call_args.kwargs["env"]["PYTHONUTF8"])
+        self.assertEqual("utf-8", run.call_args.kwargs["env"]["PYTHONIOENCODING"])
         self.assertEqual({"returncode": 1, "ok": False, "stdout": {}, "stderr": ""}, result)
 
 
