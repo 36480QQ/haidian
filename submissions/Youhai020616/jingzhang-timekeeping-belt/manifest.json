@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "7d6baeeafdda16cb731f5878a1ffc300a50750b8b7fc875ef734c5c1a253fe75"
+   "sha256": "85f8703914c5590613552635ecd1df49dbf16e0590c28158963b501da7aaf698"
   },
   {
    "path": "agent.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "a09b8e6a6a8f12e558e62f4e1c2998ddd48f2c77331fd7979f69a5013b880430"
+   "sha256": "130d744407fd6a8753a9419b5d5ff11527d4b26b9353da15834d6c1da0196177"
   },
   {
    "path": "report/narrative.md",
@@ -114,7 +114,7 @@
    "role": "visualization",
    "required": true,
    "language": "zh",
-   "sha256": "30e9835aaf97c593a9989749f33417c3036718d7b611613546811824897d4c5d"
+   "sha256": "8c0e0d9cba548a87bf55b8a3c4738cedbc6f24bed9b9bd8fecf7264fb930b0ed"
   },
   {
    "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "e1e5812ac9e7e14f28cb4b8483d0abbd35d6203ca31a07bdc828ca871794e222"
+   "sha256": "6605e82ff574e12356837c5c9d2491f50d30af61542ba690bbcf49a367125fef"
   },
   {
    "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
    "required": true,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "fe1a231fdf10d80a2d1f921899d85de9a60243a6ff5c1b0b47512ce2946306f5"
+   "sha256": "ed354f7db6dd2b2d08181d8e8051e081f839c786cfdfa4e83ee9269a949ad0d3"
   },
   {
    "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
    "required": true,
    "language": "en",
    "translation_of": "visual/index.html",
-   "sha256": "f6ca05b40b7b72b5c60443064ad27f9c419c24558e5a9cfefe0810135e7729d9"
+   "sha256": "1d2aaec1c7db3cb2fd9c805988d8d6be63db645fe2a116efff60ae453d14c2ae"
   },
   {
    "path": "assets/figures/key-areas.en.png",
@@ -307,7 +307,7 @@
    "path": "visual/assets/timecheck-runtime.json",
    "role": "supporting",
    "required": false,
-   "sha256": "bbaabf9d20a2abaef9e68fe20fcf6bdf3f106cfead9bf358b49c660d5dceeae1"
+   "sha256": "ebfe55b5fdfde5fb335c38d02406884a0a80b448c6776c60de656b495201a500"
   },
   {
    "path": "visual/assets/run_evolution_probes.js",
