@@ -1,0 +1,37 @@
+{
+  "model_id": "JZOI-GATE-B",
+  "schema_version": "gate-b-1",
+  "status": "internal_spatial_review",
+  "scales": [
+    "43.6_km2_research",
+    "11.4_km2_overall",
+    "three_key_areas"
+  ],
+  "endpoint_sequence": [
+    "DZS",
+    "ORG",
+    "ZZY"
+  ],
+  "frozen_ecosystem_edge_count": 25,
+  "provisional_boundary_ids": [
+    "PROV-SITE-001",
+    "PROV-RESEARCH-001",
+    "PROV-KEY-SCOPE-001",
+    "PROV-KEY-001",
+    "PROV-KEY-002",
+    "PROV-KEY-003"
+  ],
+  "boundary_policy": "reference only; unchanged provisional geometry",
+  "design_evidence_class": "DESIGN TARGET",
+  "design_status": "concept",
+  "layer_manifest": {
+    "regional_ecosystem": {
+      "path": "spatial/regional_ecosystem.geojson",
+      "feature_count": 43
+    },
+    "overall_structure": {
+      "path": "spatial/overall_structure.geojson",
+      "feature_count": 23
+    }
+  }
+}
