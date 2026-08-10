@@ -69,5 +69,12 @@
       "match": true
     }
   ],
-  "claim_limit": "Structure and stop/exit logic only; no real-world authorization, performance or safety claim."
+  "claim_limit": "Structure and stop/exit logic only; no real-world authorization, performance or safety claim.",
+  "boundary_disclosure": {
+    "status": "provisional_geometry",
+    "assumption_id": "A-BOUNDARY-001",
+    "statement": "Site and key-area geometry is provisional and is not an official redline, parcel, ownership boundary or approval basis.",
+    "metric_limit": "Areas and ratios support internal concept comparison only and are not statutory planning indicators.",
+    "replacement_trigger": "Replace geometry, recalculate metrics and regenerate every bilingual artifact when rights-cleared official vectors are supplied."
+  }
 }

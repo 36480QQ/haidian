@@ -953,6 +953,41 @@
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ]
+    },
+    {
+      "item_id": "public_plan_alignment",
+      "title_zh": "既有实施基线与控规草案对齐",
+      "professional_dimension": "实施与规划衔接",
+      "proposal_sections": [
+        "既有实施基线与控规草案对齐"
+      ],
+      "metric_refs": [
+        "cross_link_count"
+      ],
+      "source_ids": [
+        "JINGZHANG-CONTROL-PLAN-DRAFT-2024",
+        "JINGZHANG-PLAN-INTERPRETATION-2021",
+        "JINGZHANG-PHASE1-OPEN-2023"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROL-PLAN-DRAFT-001"
+      ],
+      "evidence_summary_zh": "将已开放一期、控规草案的一带一轴两心多点和既有实施治理机制作为不可重复建设的公共基线，同时拒绝从公示图反推官方矢量红线。",
+      "required": true,
+      "status": "complete",
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/public_space.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ]
     }
   ]
 }

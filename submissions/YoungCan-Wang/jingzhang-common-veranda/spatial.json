@@ -328,6 +328,31 @@
       "gate": "无本地场景方则不复制"
     }
   ],
+  "planning_alignment": {
+    "built_baseline": {
+      "source_id": "JINGZHANG-PHASE1-OPEN-2023",
+      "fact": "Approximately 2.5 km from Zhichun Road to Qinghua East Road opened in 2023.",
+      "design_response": "Treat retained rail, rainwater, under-bridge and cross-city public space as an existing asset; audit and add service/accountability interfaces instead of claiming duplicate landscape construction."
+    },
+    "public_consultation_draft": {
+      "source_id": "JINGZHANG-CONTROL-PLAN-DRAFT-2024",
+      "status": "official public consultation draft; not final approved vector",
+      "structure": "one belt, one axis, two centres and multiple nodes",
+      "proposal_overlay": "one civic spine, three verandas, six gates and twelve scenarios as a public-service and accountability layer",
+      "excluded_from_submission_metrics": "Draft-scope population, land, floor-area, facility and transport figures are not substituted for submission metrics."
+    },
+    "delivery_governance": {
+      "source_id": "JINGZHANG-PLAN-INTERPRETATION-2021",
+      "carry_forward": [
+        "phased and segmented delivery",
+        "chief planner and responsible engineer review",
+        "opt-in urban partners",
+        "whole-process public participation"
+      ],
+      "claim_limit": "No current organization is assigned, participating or endorsing until written confirmation."
+    },
+    "geometry_rule": "Do not digitize the infographic as an official redline; replace provisional geometry only with rights-cleared final GIS/CAD from the competent authority."
+  },
   "operations_ledger": {
     "daily": "opening, accessibility, notice, staffed fallback and incident check",
     "monthly": "maintainer salon; review unresolved repairs and dissent",

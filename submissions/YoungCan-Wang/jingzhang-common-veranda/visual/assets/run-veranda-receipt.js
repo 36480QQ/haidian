@@ -1,7 +1,17 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
-const source = process.argv[2] || path.join(__dirname, "..", "..", "simulation.json");
+const defaultSource = path.join(__dirname, "..", "..", "simulation.json");
+const defaultReport = path.join(__dirname, "veranda-receipt-report.json");
+let source = defaultSource;
+let reportPath = defaultReport;
+let checkMode = false;
+for (let i = 2; i < process.argv.length; i += 1) {
+  const arg = process.argv[i];
+  if (arg === "--check") checkMode = true;
+  else if (arg === "--report") reportPath = process.argv[++i];
+  else source = arg;
+}
 const simulation = JSON.parse(fs.readFileSync(source, "utf8"));
 function evaluate(x) {
   const gates = [
@@ -28,7 +38,35 @@ const output = {
   expected_outcome_match_rate:cases.filter(x=>x.match).length / cases.length,
   negative_stop_branches:cases.filter(x=>x.actual.decision === "stop").length,
   rollback_step_count:simulation.pilot_contract.rollback.length, cases,
-  claim_limit:"Structure and stop/exit logic only; no real-world authorization, performance or safety claim."
+  claim_limit:"Structure and stop/exit logic only; no real-world authorization, performance or safety claim.",
+  boundary_disclosure:{
+    status:"provisional_geometry",
+    assumption_id:"A-BOUNDARY-001",
+    statement:"Site and key-area geometry is provisional and is not an official redline, parcel, ownership boundary or approval basis.",
+    metric_limit:"Areas and ratios support internal concept comparison only and are not statutory planning indicators.",
+    replacement_trigger:"Replace geometry, recalculate metrics and regenerate every bilingual artifact when rights-cleared official vectors are supplied."
+  }
 };
+function canonical(value) {
+  if (Array.isArray(value)) return value.map(canonical);
+  if (value && typeof value === "object") return Object.fromEntries(
+    Object.keys(value).sort().map(key => [key, canonical(value[key])])
+  );
+  return value;
+}
+if (checkMode) {
+  if (!fs.existsSync(reportPath)) {
+    console.error(`report missing: ${reportPath}`);
+    process.exitCode = 2;
+  } else {
+    const checked = JSON.parse(fs.readFileSync(reportPath, "utf8"));
+    if (JSON.stringify(canonical(checked)) !== JSON.stringify(canonical(output))) {
+      console.error(`report differs semantically: ${reportPath}`);
+      process.exitCode = 2;
+    }
+  }
+} else {
+  fs.writeFileSync(reportPath, JSON.stringify(output, null, 2) + "\n");
+}
 console.log(JSON.stringify(output, null, 2));
 if (output.expected_outcome_matches !== output.case_count) process.exitCode = 1;

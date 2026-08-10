@@ -66,6 +66,13 @@
       "statement": "Accountable roles are defined by function, while actual organizations and people remain unassigned.",
       "impact": "No pilot or work package may open while sponsor, site steward and professional reviewers are unassigned.",
       "trigger": "Record signed responsibility, service funding, insurance and exit acceptance before implementation."
+    },
+    {
+      "id": "A-CONTROL-PLAN-DRAFT-001",
+      "status": "official_public_draft_context",
+      "statement": "The 2024 HD00-1601 and related street-block control-plan infographic is an official public-consultation draft, but no rights-cleared vector or final approved plan package is available in the submission source set.",
+      "impact": "Its spatial structure, facility counts and transport directions support alignment review only; they do not replace the provisional submission boundary, key areas, geometry or metrics.",
+      "trigger": "Obtain the final approved plan text plus rights-cleared GIS/CAD from the competent authority, reconcile scope and identifiers, then regenerate all geometry, metrics and bilingual deliverables."
     }
   ]
 }

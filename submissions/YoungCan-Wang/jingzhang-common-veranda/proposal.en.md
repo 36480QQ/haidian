@@ -47,6 +47,14 @@ v0.3 translates public policy into checkable constraints. Haidian's 15th Five-Ye
 
 The Beijing Urban Renewal Regulation becomes a rights-holder and co-governance gate. The Accessibility Law becomes continuous physical/information access, staffed equivalence and co-review with disabled and older users. Beijing sponge-city guidance supports visible rain gardens and maintenance, but is not used to invent a site runoff target. [source:BEIJING-URBAN-RENEWAL-REGULATION] [source:CHINA-ACCESSIBILITY-LAW-2023] [source:BEIJING-SPONGE-CITY-2017]
 
+### Existing delivery baseline and control-plan draft alignment
+
+The proposal does not begin from a blank site. Official public information records that an approximately 2.5 km first phase from Zhichun Road to Qinghua East Road opened in 2023, retaining rail and bridge memory while adding rainwater facilities, under-bridge activity and east-west stitching. v0.3 therefore treats it as an existing public asset: the six-gate audit, continuous accessibility, accountability interfaces and operations receipts are an overlay, not duplicate landscape construction. [source:JINGZHANG-PHASE1-OPEN-2023]
+
+The 2024 public-consultation draft for HD00-1601 and related blocks sets out “one belt, one axis, two centres and multiple nodes”: the Jing-Zhang innovation-exchange belt, Zhongguancun Avenue innovation axis, Dazhongsi and Wudaokou centres, and multiple nodes. One spine, three verandas, six gates and twelve scenarios form a civic-service and accountability layer over that structure; they do not replace it. Published 2035 population, land, floor-area, facility and transport figures belong only to the draft scope, are not copied into `metrics.json`, and are not used to reverse-engineer an official vector redline from an image. [source:JINGZHANG-CONTROL-PLAN-DRAFT-2024] [depth:public_plan_alignment]
+
+The official 2021 implementation interpretation already identified breaks, multiple rights holders and phased delivery, and described chief-planner/engineer and “urban partner” coordination. v0.3 translates these into work-package leads, professional acceptance, quarterly receipts and retirement decisions without claiming that any organization has accepted a role. The final approved text and reusable GIS/CAD remain unavailable, so every submission boundary, key area and area figure stays provisional. [source:JINGZHANG-PLAN-INTERPRETATION-2021]
+
 ## Three-Level Scope Framework
 
 The 43.6 km² coordinated research scope asks how the innovation ecosystem collaborates. The approximate 11.4 km² overall design scope asks how civic space, mobility, industry and daily life are organised. The three key areas ask how prototypes can be handed to professional teams. One civic-value contract connects all three: public access, explained responsibility, minimum data, human review and exit.
