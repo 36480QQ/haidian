@@ -57,6 +57,17 @@
       "license": "repository-maintained provisional geometry"
     },
     {
+      "id": "KEY-AREA-SOURCE",
+      "title": "Provisional key-area geometry and derivation notes",
+      "publisher": "open-city-ai/haidian maintainers",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
+      "accessed_date": "2026-08-10",
+      "authority_level": "provisional_repository",
+      "usable_for": "rough key-area location, north-to-south order and intake visualization",
+      "not_usable_for": "official key-area polygons, parcel scoring, ownership, redlines or engineering",
+      "license": "repository-maintained provisional geometry"
+    },
+    {
       "id": "PROCESSED-FACT-PACK",
       "title": "Agent fact pack",
       "publisher": "open-city-ai/haidian maintainers",
@@ -77,6 +88,17 @@
       "usable_for": "early comparative design prompts only",
       "not_usable_for": "site facts, performance claims or official precedent",
       "license": "case names are used as short research leads; full source/rights review required before publication"
+    },
+    {
+      "id": "AI-VISUAL-INTERPRETATION",
+      "title": "Key-area interpretive scene studies",
+      "publisher": "Declared submission agent using OpenAI built-in image generation",
+      "url": null,
+      "accessed_date": "2026-08-10",
+      "authority_level": "generated_explanatory_only",
+      "usable_for": "communicating intended spatial character, inclusivity and reversible operating relationships",
+      "not_usable_for": "site facts, existing conditions, precise geometry, official controls, approvals or construction decisions",
+      "license": "generated specifically for this COMMUNITY-DISPLAY-ONLY submission; prompt and input provenance recorded locally"
     }
   ]
 }

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以‘公共账本’为城市设计方法：让每个AI空间建议都带来源、人工复核、退出条件和公共回报，把百年京张从线性展示带转译为可阅读、可质询、可回退的城市公共接口。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
 # 京张公共账本：可验证的AI城市回路
@@ -89,6 +89,30 @@ AI生态采用“八个资源台面”：算法与模型、算力与能源、数
 三处重点区的面积和边界均是临时约束范围，不能用于精确地块评分；专业团队接手时应以正式多边形重建用地、建筑、道路、蓝绿和分期图层。[depth:three_key_area_detailed_design] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
 ![三处重点区域与公共价值接口](assets/figures/key-areas.png)
+
+### 重点区空间原型与非刚性设计目标
+
+以下三张场景图用于把结构化方案转译为可讨论的空间体验。它们由申报智能体根据本方案文字独立生成，不使用外部照片、地图截图、人物肖像或企业素材；图中建筑、植物、人物和设施均为解释性原型，不是现场照片、精确设计、官方边界或实施承诺。边界、面积与指标判断仍以 GeoJSON、metrics 和矩阵为准。[source:AI-VISUAL-INTERPRETATION] [depth:three_key_area_detailed_design]
+
+#### 众智园：可信测试庭院
+
+![众智园可信测试庭院：遗址轨道、雨水花园、连续遮阴廊与可观察审计台](assets/figures/scene-zhongzhiyuan-trust-garden.png)
+
+原型以保留更新建筑围合可观察庭院，公共绿脊与遗址轨道并行，测试设施采用轻量构件并保持人工值守。非刚性目标为：主要无障碍公共通道净宽 3–5 米；试点公共地面中雨水花园与乔灌种植占比 20%–35%；每个可逆测试单元在连续运行 30–90 天后进行一次公开复核。目标值用于方案比较，不替代正式道路、消防、无障碍、绿地或园区条件。
+
+#### AI 原点社区：成果转化街
+
+![AI原点社区成果转化街：开源发布厅、可变共享层与连续无障碍公共地面](assets/figures/scene-ai-origin-transfer-street.png)
+
+原型把开源发布、原型制作、社区服务与日常步行放在同一首层界面。非刚性目标为：主要沿街首层 50%–70% 形成公众可识别的开放或半开放界面；共享原型单元采用 40–120 平方米可组合模块；连续遮阴或雨棚覆盖主要公共界面的 40%–60%。科研成果、知识产权和校园空间仍须权利人确认。
+
+#### 大钟寺：站城日常交付厅
+
+![大钟寺站城日常交付厅：公共客厅、人工服务台、蓝绿街道与受控配送窗口](assets/figures/scene-dazhongsi-delivery-commons.png)
+
+原型以可穿行的公共厅连接轨道、商业首层和京张公共地面，将配送交接放在可观察、可关闭的时间窗内。非刚性目标为：公共厅形成 8–15 米的有效活动进深；配送交接与主步行流通过物理分隔或时段管理实现全时不冲突；自动化服务开放期间同步提供人工服务岗位。目标值须在正式交通、权属、消防和运营条件下复核。[data:geometry/public_space.geojson#PUBLIC-ROOM-03] [depth:traffic_rail_slow_parking]
+
+三处目标已记录在 `visual/assets/key-area-design-targets.json`，每项均附有适用阶段、复核触发条件和“非控规指标”声明；生成图的工具、输入边界和版权说明记录在 `visual/assets/scene-provenance.json`。
 
 ### 3. 交通、轨道、市政与蓝绿空间
 

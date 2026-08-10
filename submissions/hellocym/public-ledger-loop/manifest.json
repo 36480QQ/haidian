@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5 accessed through Codex; human account owner hellocym directs the submission"
   },
-  "generated_at": "2026-08-10T19:21:42Z",
+  "generated_at": "2026-08-10T22:21:50Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "efd6fc2131d63560d8c713bedd68601473792db51205e58eb85efaa9eb9304ab"
+      "sha256": "79b26f080015f0cdfeef1a39356e4c3fc99cd9e842d6ac1442c7bf1a2c8767d0"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "98d426080ee41b1b3fa061eb0d7be1dfed7ae89b3377735bc9b4c0f03f374be9"
+      "sha256": "ea791182fa8f4260df3d3a5a011da41bcb8da7ef3bde879e9cd63177e1f78310"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0ee5158511d4c52deb56eb9baa4eb091460a2957e0cbeb0aebc917104630a733"
+      "sha256": "5f1afb2860de8c9e4fac26465faafd0f2a6c7130a1a525279d612a896be777b6"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "dc2c62f1d1ab8d673bec8b5dc34fbc1e1cacf4ed04038193dc92b142f26df021"
+      "sha256": "1e04d6510e92dc4c61478615e6b32d8e10d9c1e72ae1a6a663018869c6653706"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "46959a161df2deaed9064509a9fd176405394fe86a13b087902efd2e4b6c65dd"
+      "sha256": "03545764f9a4dc59aff591a9e318d904be8908f4db12f12d85584acc167f7475"
     },
     {
       "path": "report/narrative.md",
@@ -93,35 +93,35 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "3e280ca7368978c2049c0b21508b9c42e524de1409326d3c1159c86b2302146d"
+      "sha256": "4313f1ec4b3f20e8af3e0e7e5610f7e5787ad7e94c2943516175d03fb92a9221"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c225b93cad9f78c5da71ddcfbd67baddbf54e9e6b2f1c795eb79ff73202b4f62"
+      "sha256": "614fbd1e5b5fd65c38832191edf7b7af1677f9a1b0ce91f9e5a58ffc20d502a3"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a87f34d129a147cbf32c8e438cfd415a24e6c36f892c8ec75fc7c55e0e70cbb2"
+      "sha256": "96eb02c5f4d7e2af5b0cdb3673f13c6fb7ebb59979b0d4cab6db7cd2f4d38016"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "15d99cbbd3f80488fcfd9b4de5cbfa91058867c456afd7a81655fb7042dda329"
+      "sha256": "deab1acc22e2a6fd719a6efe1130e18f2b63ca2afcde625c87d9bce9b1d44201"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "59f06ff290c78871692f8f5418adb53ac7287e924bc311ebf7f5c4413c1ad1ef"
+      "sha256": "c49ca700b07473ad511fd759d673bc92c48287920c3af3f5522f392bafeb496b"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3ab15dfe912bec92a1bd47d628882b4fa888de1e86aa2596d49d442b31668cf2"
+      "sha256": "83863f2a4582988a6324ff207ffc201273b888279f7e420885571648bdb8f9f5"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "562c5f58713671e33ebe0d17d3575a4368d8d6918bc326ce21d111b947d5e9cf"
+      "sha256": "bdf34c8c0fc27cceba64084803dbfacdd2c8053cb8f01668556a96e497d2e4bf"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "51d409506539fdb49be6baefde2a822af8e93e15b4e72884ee8a76b63c5e6ad2"
+      "sha256": "c00b75bd0a2fc8e08b1f881ddb0d63283747031021f6049cfcec7d62f47e03c6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "7019d19055c63c226f843eb8712ef7ef23e92dec526f8da53e10a0342f30a8dc"
+      "sha256": "66d952bf5e0c5318587a8779acf73d233bdb0ac5d71f770e60e1b3e6ece815f7"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "babad05a394622ff462f4c2f57b71645e6b9ad2970f9c6b1e28b965fbf3d1c19"
+      "sha256": "38d68dfb7734464bac2460430975aff39bfc335d016e0959b9e6c00b4745d17b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "c73542de63c86969b85d958cda776b20d9b4a05f79cc73ce293c09ba1e0d4da0"
+      "sha256": "ac7b8c7c4142cef740a2247adec1c71e1bf1ec469055aff5cf973b7a913d340e"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -284,6 +284,39 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "eb0e75d65bb4f47be89f9267a3c5d73c4595e7cf0bf6c8ef8246fa0dc1a1ecf0"
+    },
+    {
+      "path": "assets/figures/scene-zhongzhiyuan-trust-garden.png",
+      "role": "interpretive_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8aab662562e45412453058d1c35d51c960d834fa809f9a6d196b4ad94e504f4e"
+    },
+    {
+      "path": "assets/figures/scene-ai-origin-transfer-street.png",
+      "role": "interpretive_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "4c0dcb290568bde4671578753c24fd7dffb02367169bbbcfa9baa80938bab764"
+    },
+    {
+      "path": "assets/figures/scene-dazhongsi-delivery-commons.png",
+      "role": "interpretive_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6b02140ecf2d961b7cab62afcf4527927d853c424c1e13bf00acab2774b8b739"
+    },
+    {
+      "path": "visual/assets/key-area-design-targets.json",
+      "role": "review_evidence",
+      "required": false,
+      "sha256": "7b346e26224214a767ccec49c5b8a1d8205c2f869a7d75d18d68143618d0ab31"
+    },
+    {
+      "path": "visual/assets/scene-provenance.json",
+      "role": "provenance",
+      "required": false,
+      "sha256": "b46b3c67182a261764f7e7a1e9fcd55e47ac58c8f53c7c2720039c0f584298c1"
     }
   ],
   "validation_claim": {
