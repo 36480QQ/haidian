@@ -43,7 +43,7 @@ In 1909, Zhan Tianyou drew the first switchback (the "herringbone" track) at Bad
 - The 1990s, the father's era: computers and the internet; digital immigrants. The ordinary experience: "I had to learn to use the computer."
 - 2026, the children's era: AI companions. The AI-native first generation's experience: "it has been beside me since birth" — as we were born with electricity around us.
 
-**The spirit of the herringbone railway is not climbing mountains; it is technology bending down to people.** Zhan's design adapted the railway to the terrain rather than forcing the terrain to fit the rails. AI's "herringbone moment" is when AI bends down to fit ordinary life — rather than ordinary people looking up, learning, and chasing a spectacle.
+> **The spirit of the herringbone railway is not climbing mountains; it is technology bending down to people.** Zhan's design adapted the railway to the terrain rather than forcing the terrain to fit the rails. AI's "herringbone moment" is when AI bends down to fit ordinary life — rather than ordinary people looking up, learning, and chasing a spectacle.
 
 ### What Is a Silicon Companion
 
@@ -75,13 +75,13 @@ The AI-native first generation will not live that way. When a child grows up wit
 3. **Do we still need queues, forms and approvals?** Most procedural friction in government, healthcare and education is the cost of "human verification." Companion handling and automated verification push friction toward zero.
 4. **Where does trust come from?** The risk thesis treats AI as a "stranger" whose trust must be built by approval and red lines — true today, because today's AI is indeed hard to audit and trace. But trust need not come only from tight control; it has two harder sources: **technological progress provides verifiability** (every tool call and decision of an agent can be logged, replayed and audited; open protocols standardise the behavioural boundary of "companion handling"; sandboxes and tiered permissions make delegation quantifiable and revocable — when "what AI did" changes from black box to ledger, delegation changes from gambling to management); and **institutional reform provides accountability** (clear responsibility boundaries among developers, operators and users; audit and appeal mechanisms for companion behaviour; child-protection and data-boundary rules for minors). Trust is not "believing AI never errs" but "when AI errs, every step can be traced and remedied."
 
-**This is the full meaning of "AI for the People"**: the ultimate form of AI is neither a national spectacle nor a corporate efficiency tool, but **a companion that every person owns from childhood and that participates deeply in life**. The advantage of the AI-native first generation is not "being better at using AI" but **having no baggage of the old institutions** — they grow up directly in the new interface of "companion handles it, plain speech connects, auditable and accountable."
+> **This is the full meaning of "AI for the People"**: the ultimate form of AI is neither a national spectacle nor a corporate efficiency tool, but **a companion that every person owns from childhood and that participates deeply in life**. The advantage of the AI-native first generation is not "being better at using AI" but **having no baggage of the old institutions** — they grow up directly in the new interface of "companion handles it, plain speech connects, auditable and accountable."
 
 ## Three-Level Scope Framework
 
 The proposal follows the three levels defined by the announcement: the coordinated research area (43.6 km²) for AI industry ecology, strategic positioning, innovation chains and future urban form; the overall design area (11.4 km²) covering the 1–2 km urban band around the Jing-Zhang Heritage Park; and the key detailed design area (368.4 ha) covering three key districts. The mapping is recorded item by item in `compliance_matrix.json` [depth:three_level_scope_framework] [depth:overall_spatial_structure].
 
-**Overall spatial structure: "One Spine, Three Cores, One Origin"** — with the Jing-Zhang Heritage Park as the "AI Origin", the three key areas as growth stations, so that the AI-native first generation completes the journey from "meeting AI" to "creating AI" along the century-old rail.
+> **Overall spatial structure: "One Spine, Three Cores, One Origin"** — with the Jing-Zhang Heritage Park as the "AI Origin" and the three key areas as growth stations, so that the AI-native first generation completes the journey from "meeting AI" to "creating AI" along the century-old rail.
 
 | Level | Design question | Proposal answer | Data anchor |
 | --- | --- | --- | --- |
