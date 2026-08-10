@@ -124,6 +124,13 @@
       "accessed_date": "2026-08-09"
     },
     {
+      "id": "SWITCHBACK-PROTOCOL-1119",
+      "source_type": "community_contribution_reference",
+      "usage": "Optional community reference for controlled-pilot, switchback, review, appeal and write-back concepts. The mobility package keeps its own fields, does not import the protocol's numeric defaults or status enum, and does not treat the issue as official policy or field evidence.",
+      "url": "https://github.com/open-city-ai/haidian/issues/1119",
+      "accessed_date": "2026-08-10"
+    },
+    {
       "id": "EMPLOYER-TDM-LONGITUDINAL",
       "source_type": "academic_public",
       "usage": "Longitudinal employer travel-demand-management evidence; methods and cautions only, not local effect sizes.",

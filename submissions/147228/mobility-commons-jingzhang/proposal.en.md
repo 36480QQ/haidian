@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.39"
+iteration: "v2.40"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -277,6 +277,19 @@ The ten cards are also registered in `visual/assets/scenario-cards.json`. Each c
 | M-10 Complaint and repair | Public complaint entry, owner, response SLA, repair log and independent review date | Community service, field maintenance, independent review | It is not closed without an owner and status update |
 
 The per-scenario fields and evidence paths are recorded in `visual/assets/pilot-startup-checklist.json`; `node visual/assets/run-pilot-startup-check.js` checks coverage, accountability, physical checks, human fallback and file traceability offline. It answers what must be true before a start request can be made. It does not grant permission, replace resident participation or professional and statutory review, and dates must be supplied by an authorised organisation [data:visual/assets/pilot-startup-checklist.json].
+
+### An optional switchback interface. Borrow the vocabulary, not the package fields
+
+Issue #1119 offers a community Switchback Protocol that makes controlled pilots, switchback, human takeover, appeal, review and write-back easier to compare across submissions. This package adds an attributed crosswalk only. It does not copy the current machine schema, and it does not treat its five-minute, 90-day or appeal-time defaults as local commitments. The mobility package's own `not_authorized_not_run`, `unknown`, `controlled_by_gate` and `blocked_until_evidence` states remain authoritative.
+
+| Package state | Comparable community meaning | Action allowed in this package |
+| --- | --- | --- |
+| `not_authorized_not_run` | Candidate or virtual evaluation | Replay fields and human fallback only. Do not start a pilot. |
+| `controlled_by_gate` | Controlled pilot | Apply only after dated P0 evidence, accountable roles and an independent stop reviewer are present. |
+| `blocked_until_evidence` | Red switchback | Return to P0, ordinary public transport and human service, with a public aggregate reason. |
+| `unknown` | No ready state | Keep unknown. Do not infer normal operation from synthetic output or policy material. |
+
+The status, human takeover, review, appeal, retention and write-back fields for the ten M cards are cross-referenced under `optional_community_crosswalk` in `visual/assets/implementation-operation-contract.json`. All cards remain `not_authorized_not_run`. The protocol is a community reference, not an organiser standard, professional sign-off, field result or new authorization for this package [source:SWITCHBACK-PROTOCOL-1119] [data:visual/assets/implementation-operation-contract.json].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 

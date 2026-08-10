@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.39"
+iteration: "v2.40"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -297,6 +297,19 @@ P0 先由有权组织确认参与窗口和责任边界。拟由交通主管部�
 | M-10 投诉维修与复核 | 投诉入口、受理人、响应时限、维修记录和独立复核日期 | 社区服务、现场维护、独立复核 | 没有责任人和状态更新就不算闭环 |
 
 逐场景字段和证据路径写入 `visual/assets/pilot-startup-checklist.json`，由 `node visual/assets/run-pilot-startup-check.js` 离线核对十张卡的覆盖、责任、物理检查、人工回退和证据文件存在性。它回答的是“什么条件满足后才可以申请开始”，不是给当前方案发放许可；日期必须由有权组织填写，模型结果也不能代替居民参与、专业审查或法定程序 [data:visual/assets/pilot-startup-checklist.json]。
+
+### 可选的折返接口。借鉴社区协议，但不替换本包字段
+
+Issue #1119 提供了一个可供不同方案横向比较的 Switchback Protocol。它把受控试点、折返、人工接管、申诉、复审和回写放进同一套讨论词汇。本包只做一份有署名的对照，不复制当前协议的机器 schema，也不把其中的 5 分钟、90 天或申诉时限当成本地承诺。交通包自己的 `not_authorized_not_run`、`unknown`、`controlled_by_gate` 和 `blocked_until_evidence` 仍然是权威状态。
+
+| 本包状态 | 可对照的社区语义 | 本包允许的动作 |
+| --- | --- | --- |
+| `not_authorized_not_run` | 候选或虚拟评测 | 只回放字段和人工回退，不启动试点 |
+| `controlled_by_gate` | 受控试点 | 只有日期化 P0、责任角色和独立停机复核齐全后，才可申请推进 |
+| `blocked_until_evidence` | 红色折返 | 回到 P0、普通公共交通和人工服务，并记录公开的聚合原因 |
+| `unknown` | 尚未进入可运行状态 | 保留未知，不能从合成结果或政策资料推成常态运行 |
+
+十张 M 卡的状态、人工接管、复核、申诉、留存和回写字段见 `visual/assets/implementation-operation-contract.json` 的 `optional_community_crosswalk`。当前所有卡仍是 `not_authorized_not_run`。协议是社区参考，不是主办方标准、专业签字、现场结果或本包的重新授权 [source:SWITCHBACK-PROTOCOL-1119] [data:visual/assets/implementation-operation-contract.json]。
 
 ## 用地、建筑规模与拆改留方案
 
