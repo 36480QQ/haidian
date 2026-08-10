@@ -34,7 +34,7 @@
       "result": "pass",
       "severity": "info",
       "target": "geometry/site_boundary.geojson",
-      "message": "边界 provisional_constraint，官方红线待补齐后复算；不阻断内容评分。"
+      "message": "边界为 provisional_constraint，待官方红线补齐后复算面积与衍生图层。"
     },
     {
       "check_id": "KEY_AREAS_TRUST",

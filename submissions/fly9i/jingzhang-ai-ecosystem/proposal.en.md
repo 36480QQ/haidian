@@ -116,7 +116,7 @@ The proposal follows public-data and clearance boundaries [source:SOURCE-REGISTR
 
 On copyright, the logo, type, images, people, and enterprise marks are directional suggestions requiring clearance before use; cited global cases are public summaries and do not use any enterprise trademark or copyrighted material [depth:risk_missing_data]. AI-generated content follows the Generative AI Interim Measures, and all AI scenarios remain reviewable and privacy-minimal [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
-Outstanding data and professional-review needs include the official precise redline, statutory regulatory controls (FAR, height, density, green ratio, setback), existing-building and ownership survey, heritage and blue/green-line extents, and municipal capacity and engineering feasibility. These gaps do not block content scoring, but related conclusions must be reviewed and recalculated once official data arrives [assumption:A-BOUNDARY-001].
+Outstanding data and professional-review needs include the official precise redline, statutory regulatory controls (FAR, height, density, green ratio, setback), existing-building and ownership survey, heritage and blue/green-line extents, and municipal capacity and engineering feasibility. Related conclusions for these gaps must be reviewed and recalculated once official data arrives [assumption:A-BOUNDARY-001].
 
 ## References
 
