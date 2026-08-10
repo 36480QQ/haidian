@@ -1,9 +1,9 @@
 {
   "schema_version": "0.2.0",
-  "package_iteration": "v1.0",
+  "package_iteration": "v1.5",
   "status": "conceptual_display_evidence_not_official_survey",
-  "purpose_zh": "记录 v1.0 双语空间图、资料就绪图、空间接口原型、人本验收图谱、参数化取舍图、合成人本交接凭证、授权前启动程序、AI 取舍回放、评审证据地图与图册的派生方法，使临时空间证据和阅读路径在不升级为官方边界、法定控制、评分结论或实施结论的前提下可读、可复核。",
-  "purpose_en": "Records how v1.0 bilingual spatial figures, data-readiness figure, spatial-interface prototypes, human-city acceptance atlas, parametric trade-off figure, synthetic human-city receipt, pre-authorization startup protocol, AI choice replay, review-evidence map, and drawing sets are derived, making provisional spatial evidence and reading paths legible and reviewable without upgrading them into an official boundary, statutory control, scoring finding, or implementation conclusion.",
+  "purpose_zh": "记录 v1.5 双语空间图、资料就绪图、空间接口原型、人本验收图谱、固定种子搜索、人本主轴、概念交付主线、参数化取舍图、合成人本交接凭证、授权前启动程序、AI 取舍回放、评审证据地图与图册的派生方法，使临时空间证据和阅读路径在不升级为官方边界、法定控制、评分结论或实施结论的前提下可读、可复核。",
+  "purpose_en": "Records how v1.5 bilingual spatial figures, data-readiness figure, spatial-interface prototypes, human-city acceptance atlas, fixed-seed search, human-first mainline, conceptual delivery spine, parametric trade-off figure, synthetic human-city receipt, pre-authorization startup protocol, AI choice replay, review-evidence map, and drawing sets are derived, making provisional spatial evidence and reading paths legible and reviewable without upgrading them into an official boundary, statutory control, scoring finding, or implementation conclusion.",
   "inputs": {
     "geometry_files": [
       "geometry/site_boundary.geojson",
@@ -29,7 +29,11 @@
       "visual/assets/human-city-receipt-evidence.json",
       "visual/assets/run-human-city-receipt.js",
       "visual/assets/governance-startup-protocol.json",
-      "visual/assets/ai-design-exploration-log.json"
+      "visual/assets/ai-design-exploration-log.json",
+      "visual/assets/human-city-mainline.json",
+      "visual/assets/parametric-search.json",
+      "visual/assets/parametric-search-evidence.json",
+      "visual/assets/human-city-delivery-spine.json"
     ],
     "source_boundary": "All input geometries retain the package's provisional-geometry status. Their display does not establish an official redline, parcel, road alignment, blue line, construction boundary, or legal area."
   },
@@ -112,6 +116,21 @@
         "assets/figures/parametric-tradeoff-study.en.png"
       ],
       "evidence": "A replayable comparison of the current six-band conceptual allocation with people-first, balanced, and machine-ready parameter sets. Four objective lenses check floors and non-dominance; shares sum to one and return to the current baseline metrics. The study is a conceptual comparison and does not alter formal geometry, metrics, approval, or implementation claims."
+    },
+    {
+      "id": "fig-16",
+      "files": ["assets/figures/human-city-mainline.svg", "assets/figures/human-city-mainline.en.svg"],
+      "evidence": "A north-to-south conceptual reading of the three provisional focus areas and five repeated human-rights stages, derived from existing anchors and the human-city spatial sequence. It adds no distance, section, capacity, or operating fact."
+    },
+    {
+      "id": "fig-17",
+      "files": ["assets/figures/parametric-search.svg", "assets/figures/parametric-search.en.svg"],
+      "evidence": "A fixed-seed search of 128 conceptual share candidates across four proxy lenses, with non-dominated candidates highlighted and a replayable evidence file. It changes no formal geometry or metric."
+    },
+    {
+      "id": "fig-18",
+      "files": ["assets/figures/human-city-delivery-spine.svg", "assets/figures/human-city-delivery-spine.en.svg"],
+      "evidence": "A readable compression of the existing PF-A–PF-E families, release gates, entry evidence, and stop actions; suggested roles remain unconfirmed and no budget, schedule, permit, or operating claim is added."
     }
   ],
   "drawing_outputs": [

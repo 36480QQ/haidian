@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.4"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.4 compresses the three key areas into an arrival–staffed service–machine boundary–blue-green pause–exit sequence while retaining v1.3's spatial-action atlas, Jing-Jin-Ji interface ledger, original identity system, and audit assets. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.5"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.5 connects the three key areas as a human-first mainline, adds a fixed-seed offline search of 128 candidates across four lenses, and compresses existing project families and release gates into one conceptual delivery spine. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -68,6 +68,32 @@ The previous revision answered what each key area should do. This revision compr
 All three sequences reuse existing GeoJSON anchors; functional bands and interface relationships carry no engineering dimensions. `official_boundary=false`, `geometry_role=provisional_constraint`, and `operational_status=not_authorized_not_run` remain unchanged. Figure 15 and its JSON prove only that the spatial reading order and fallback logic are traceable; they do not prove actual roads, buildings, staff, blue lines, airspace, capacity, performance, or implementation authorization.[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002]
 
 The third key-area anchor, the overall provisional area, and data gaps remain registered under the same rule; once cleared or official inputs arrive, the package must be recomputed as a whole.[data:geometry/key_areas.geojson#PROV-KEY-003] [metric:site_area_sqm] [depth:risk_missing_data]
+
+## v1.5 design mainline | Walk the Jing-Zhang public spine before calling the machine
+
+The v1.4 cards answered how each focus area can stop. This iteration connects the three provisional areas in the announced north-to-south order as one readable mainline: enter and dwell first, then receive staffed explanation and choice, and only then open a bounded machine interface; the blue-green pause and exit replay remain conditions after the machine edge.[data:visual/assets/human-city-mainline.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:overall_spatial_structure]
+
+![Figure 16 | Human-first mainline: three focus areas, five repeated human rights, and machine boundaries](assets/figures/human-city-mainline.en.svg)
+
+Figure 16 only rearranges existing spatial anchors and five spatial actions; it adds no distance, section, capacity, or operating fact. The north-to-south order is a conceptual reading rule, not an official alignment. Once official polygons, roads, rights, heritage, hydrology, airspace, and public baselines arrive, figures, metrics, and release gates must be recomputed together.[data:visual/assets/human-city-spatial-sequence.json] [depth:risk_missing_data]
+
+## v1.5 planning exploration | From three hand-set candidates to a replayable search set
+
+Beyond the existing three transparent candidates, this iteration generates 128 candidates over the six conceptual bands with a fixed seed, recomputes the four existing comparison lenses, and retains a non-dominated set. The search makes a machine-replayable trade-off process visible; it does not turn proxy values into AI capability, resident outcomes, or a formal recommendation.[data:visual/assets/parametric-search.json] [metric:site_area_sqm] [depth:metrics_recalculation]
+
+`visual/assets/parametric-search-evidence.json` records candidate constraints, area formulas, proxy lenses, non-dominated filtering, and the boundary that formal geometry/metrics do not change; `confidence=low` and every data gap remain intact.[data:visual/assets/parametric-search-evidence.json] [data:geometry/land_use.geojson#LU-H01] [depth:risk_missing_data]
+
+![Figure 17 | Fixed-seed spatial trade-off search: candidate cloud across human-floor and machine-callability proxies](assets/figures/parametric-search.en.svg)
+
+Candidate shares are conceptual comparisons over the same provisional site; areas still reconnect to the existing EPSG:4548 `site_area_sqm` formula. They create no FAR, building-height, retain/renew/demolish, engineering, investment, or policy conclusion.[metric:site_area_sqm] [metric:design_partition_area_sqm]
+
+## v1.5 conceptual delivery spine | Project family, gate, evidence, and stop in one view
+
+Governance ledgers no longer occupy the first visual read on their own. Figure 18 compresses the existing PF-A–PF-E families, v0.1/v0.2/v1.0 release gates, entry evidence, and failure returns into one review skeleton. It reuses only the suggested roles and stop protocols in `implementation-operation-matrix.json`; it adds no accountable operator, budget, schedule, permit, or operating commitment.[data:visual/assets/human-city-delivery-spine.json] [depth:phasing_implementation] [depth:risk_missing_data]
+
+![Figure 18 | Concept delivery spine: project family → release gate → evidence → stop](assets/figures/human-city-delivery-spine.en.svg)
+
+Every family remains `conceptual_governance_not_commitment`, and suggested roles are not confirmed operators. After official boundaries, rights, energy, climate, mobility, accessibility, accountability, and public inputs arrive, professional teams may selectively recompute and deepen the package.[data:visual/assets/implementation-operation-matrix.json] [data:geometry/site_boundary.geojson#SITE-001] [depth:risk_missing_data]
 
 ## v0.2 score repair | Read the three key areas as spatial action chains
 
