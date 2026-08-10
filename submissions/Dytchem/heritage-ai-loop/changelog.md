@@ -1,4 +1,10 @@
 
+## v0.4.1 - 2026-08-10（人工复审补锚点）
+
+- 复审 v0.4：三份新标准的 evidence claims 在 proposal.md 中均有对应表述（无障碍导视/人工兜底、数据最小化/可解释/人工等价服务、公共房间与小月河生活服务台），但正文缺少显式 `[standard:...]` 机读锚点；v2 契约虽不强制，补齐可让评审与工具直接建立标准矩阵↔正文的证据链。
+- `proposal.md` 场景卡段后新增一段标准锚点段落，显式引用 `GENERATIVE-AI-INTERIM-MEASURES`（适用范围边界，不声称备案/安全评估）、`BARRIER-FREE-ENVIRONMENT-LAW`（第 39 条列举场景，不泛化）、`ELDERLY-SMART-TECH-PLAN-2020-45`（全国性政策背景，阶段性目标已到期）；`proposal.en.md` 同步补英文对应段。
+- 刷新 manifest 中 proposal.md / proposal.en.md 哈希；validate PASS / self_check 四门 PASS。
+
 ## v0.4 - 2026-08-10（巡检深化）
 
 - 同步 upstream 新增三份官方标准快照（`brief/site-package/standards/references/`）：
