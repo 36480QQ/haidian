@@ -1,5 +1,5 @@
 {
-  "model_version": "1.0",
+  "model_version": "1.1",
   "model_class": "population_scale_synthetic_activity_chain_policy_screen",
   "purpose": "Compare enterprise-resident multimodal commute policy bundles on a declared population-scale synthetic activity chain.",
   "regional_scope": {
@@ -77,11 +77,21 @@
     "C3": {
       "enterprise_employee": {"metro": 0.42, "bus": 0.20, "bicycle": 0.13, "walking_wheelchair": 0.11, "car": 0.06, "enterprise_shuttle": 0.08},
       "resident_worker": {"metro": 0.33, "bus": 0.22, "bicycle": 0.17, "walking_wheelchair": 0.20, "car": 0.03, "enterprise_shuttle": 0.05},
-      "carer_or_child": {"metro": 0.17, "bus": 0.28, "bicycle": 0.04, "walking_wheelchair": 0.43, "car": 0.03, "enterprise_shuttle": 0.05},
+      "carer_or_child": {"metro": 0.38, "bus": 0.14, "bicycle": 0.02, "walking_wheelchair": 0.39, "car": 0.02, "enterprise_shuttle": 0.05},
       "visitor_service": {"metro": 0.32, "bus": 0.26, "bicycle": 0.17, "walking_wheelchair": 0.20, "car": 0.01, "enterprise_shuttle": 0.04},
       "logistics_and_maintenance": {"metro": 0.04, "bus": 0.06, "bicycle": 0.02, "walking_wheelchair": 0.03, "car": 0.76, "enterprise_shuttle": 0.09},
-      "night_worker": {"metro": 0.24, "bus": 0.36, "bicycle": 0.06, "walking_wheelchair": 0.19, "car": 0.08, "enterprise_shuttle": 0.07}
+      "night_worker": {"metro": 0.34, "bus": 0.24, "bicycle": 0.04, "walking_wheelchair": 0.16, "car": 0.14, "enterprise_shuttle": 0.08}
     }
+  },
+  "protected_time_budget_controls": {
+    "profile": "C3",
+    "purpose": "Use a declared 50-minute sufficiency guard for carers/children and night workers before comparing the all-agent proxy; retain 40 minutes as a diagnostic curve.",
+    "groups": ["carer_or_child", "night_worker"],
+    "diagnostic_budgets_minutes": [40, 50],
+    "protected_gate_budget_minutes": 50,
+    "mode_weight_interpretation": "Declared synthetic guard profile; not observed local mode share, service availability, accessibility performance or resident preference.",
+    "field_gate": ["dated station lift and accessible-route audit", "dated night-service and human-fallback roster", "grouped time-budget OD and resident response"],
+    "stop_rule": "If either protected group loses the dated field threshold or an equivalent ground/human fallback is absent, hold the policy and return to P0."
   },
   "policy_bundles": [
     {"id": "B0_inertial_baseline", "weight_profile": "B0", "label_zh": "B0 惯性基线", "label_en": "B0 inertial baseline", "enterprise_shift_share": 0, "curb_factor": 1, "reliability_bonus": 0, "accessibility_protection": 0, "air_candidate": false},

@@ -7,7 +7,7 @@
     "id": "C3_commute_co_benefit",
     "label_zh": "C3 通勤共益组合",
     "label_en": "C3 commute co-benefit bundle",
-    "score_proxy": 91.88,
+    "score_proxy": 91.91,
     "baseline_policy": "B0_inertial_baseline",
     "population_reference": 3122000,
     "coverage_ratio": 1
@@ -18,13 +18,13 @@
     "declared_shift_share_input": 0.18,
     "mean_travel_minutes": {
       "baseline": 44.69,
-      "selected": 44.14,
-      "delta": -0.55
+      "selected": 44.27,
+      "delta": -0.42
     },
     "satisfaction_proxy": {
       "baseline": 91.28,
-      "selected": 91.92,
-      "delta": 0.64
+      "selected": 91.87,
+      "delta": 0.59
     },
     "activity_chain_completion_proxy": {
       "baseline": 0.7208,
@@ -52,7 +52,7 @@
     },
     "minimum_satisfaction_proxy": {
       "baseline": 89.99,
-      "selected": 91.42
+      "selected": 91.64
     },
     "maximum_p90_travel_minutes_proxy": 60,
     "declared_protected_group_shift_share": 0,

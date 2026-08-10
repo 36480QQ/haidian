@@ -134,8 +134,8 @@ function board(readout, english = false) {
   const colors = ['#77e3c0', '#6ea5ff', '#f6c76b', '#ef829d', '#b8a1ff', '#a7d9a0'];
   const title = english ? 'Time-budget sufficiency by group' : '分组时间预算充分性';
   const subtitle = english
-    ? 'C3 replay · 3,122,000 synthetic agents · exact declared time thresholds'
-    : 'C3 全量回放 · 3,122,000 个合成代理 · 声明时间阈值精确回读';
+    ? 'C3 protected-time-budget profile · 3,122,000 synthetic agents · exact thresholds'
+    : 'C3 保护组时间预算剖面 · 3,122,000 个合成代理 · 声明阈值精确回读';
   const caveat = english
     ? 'Synthetic aggregate screen only. It does not report observed accessibility, a service guarantee or a local baseline.'
     : '仅为合成聚合压力屏查，不报告现场可达性、服务保证或本地基线。';
@@ -182,7 +182,7 @@ function board(readout, english = false) {
   <text x="1170" y="205" class="section">${esc(english ? 'C3 against inertial baseline' : 'C3 与惯性基线对照')}</text>
   <text x="1196" y="250" class="tableHead">${esc(headers[0])}</text><text x="1370" y="250" class="tableHead">${esc(headers[1])}</text><text x="1510" y="250" class="tableHead">${esc(headers[2])}</text><text x="1650" y="250" class="tableHead">${esc(headers[3])}</text><text x="1750" y="250" class="tableHead">${esc(headers[4])}</text>
   ${tableRows}<line x1="1180" y1="280" x2="1800" y2="280" stroke="#2f6672" stroke-width="2"/>
-  <rect x="1174" y="710" width="640" height="110" rx="18" fill="#102f42" stroke="#2f6672" stroke-width="2"/><text x="1200" y="750" class="section">${esc(english ? 'Protected groups' : '保护组')}</text><text x="1200" y="783" class="foot">${esc(english ? 'resident workers · carers / children · night workers' : '居民工作者 · 照护者/儿童 · 夜班工作者')}</text><text x="1200" y="807" class="small">${esc(english ? 'Minimum curve is kept visible before any overall score.' : '先看最低曲线，再看全体代理分。')}</text>
+  <rect x="1174" y="710" width="640" height="110" rx="18" fill="#102f42" stroke="#2f6672" stroke-width="2"/><text x="1200" y="750" class="section">${esc(english ? 'Protected groups' : '保护组')}</text><text x="1200" y="783" class="foot">${esc(english ? 'resident workers · carers / children · night workers' : '居民工作者 · 照护者/儿童 · 夜班工作者')}</text><text x="1200" y="807" class="small">${esc(english ? 'Declared guard profile; field threshold and fallback remain pending.' : '声明的保护剖面；现场阈值和回退证据仍待补齐。')}</text>
   <rect x="62" y="896" width="1776" height="88" rx="18" fill="#102f42" stroke="#2f6672" stroke-width="2"/><text x="92" y="934" class="foot">${esc(caveat)}</text><text x="92" y="962" class="small">${esc(english ? 'Source: commute-co-benefit-accessibility.json · run-commute-co-benefit-accessibility.js' : '来源：commute-co-benefit-accessibility.json · run-commute-co-benefit-accessibility.js')}</text>
 </svg>`;
 }

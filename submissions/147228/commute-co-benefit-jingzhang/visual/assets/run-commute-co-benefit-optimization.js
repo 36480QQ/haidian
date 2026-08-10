@@ -272,6 +272,9 @@ function simulateBundle(bundle) {
     label_zh: bundle.label_zh,
     label_en: bundle.label_en,
     weight_profile: bundle.weight_profile,
+    protected_time_budget_control: bundle.weight_profile === model.protected_time_budget_controls.profile
+      ? model.protected_time_budget_controls
+      : null,
     air_candidate: bundle.air_candidate,
     status: bundle.air_candidate ? 'blocked_pending_airspace_and_ground_evidence' : 'synthetic_screen_complete',
     agents_processed_first_pass: firstPass,
@@ -297,6 +300,31 @@ function simulateBundle(bundle) {
 
 function buildReadout() {
   const candidates = model.policy_bundles.map(simulateBundle);
+  const baseline = candidates.find((candidate) => candidate.policy_id === 'B0_inertial_baseline');
+  const control = model.protected_time_budget_controls;
+  candidates.forEach((candidate) => {
+    const budget = control.protected_gate_budget_minutes;
+    const rows = control.groups.map((groupId) => {
+      const candidateGroup = candidate.group_readouts.find((group) => group.id === groupId);
+      const baselineGroup = baseline?.group_readouts.find((group) => group.id === groupId);
+      const candidateValue = candidateGroup?.time_budget_sufficiency_proxy?.[String(budget)] ?? null;
+      const baselineValue = baselineGroup?.time_budget_sufficiency_proxy?.[String(budget)] ?? null;
+      return {
+        group_id: groupId,
+        candidate_sufficiency: candidateValue,
+        baseline_sufficiency: baselineValue,
+        does_not_regress: candidateValue !== null && baselineValue !== null && candidateValue >= baselineValue
+      };
+    });
+    const active = Boolean(candidate.protected_time_budget_control) && !candidate.air_candidate;
+    candidate.protected_time_budget_guard = {
+      active,
+      budget_minutes: budget,
+      baseline_policy_id: baseline?.policy_id ?? null,
+      rows,
+      passes: active && rows.every((row) => row.does_not_regress)
+    };
+  });
   const ranked = candidates.slice().sort((a, b) => (
     Number(b.hard_gate_pass) - Number(a.hard_gate_pass)
     || b.satisfaction_proxy - a.satisfaction_proxy
@@ -304,7 +332,7 @@ function buildReadout() {
     || a.p90_travel_minutes_proxy - b.p90_travel_minutes_proxy
     || a.vehicle_km_proxy - b.vehicle_km_proxy
   ));
-  const selected = ranked.find((candidate) => candidate.hard_gate_pass) || null;
+  const selected = ranked.find((candidate) => candidate.hard_gate_pass && candidate.protected_time_budget_guard.passes) || null;
   return {
     model_version: model.model_version,
     model_class: model.model_class,
@@ -321,6 +349,7 @@ function buildReadout() {
       air_candidate_is_blocked: candidates.filter((candidate) => candidate.air_candidate).every((candidate) => candidate.status.startsWith('blocked')),
       all_candidates_processed: candidates.every((candidate) => candidate.agents_processed_first_pass === TOTAL && candidate.agents_processed_second_pass === TOTAL),
       selected_policy_passes_hard_gate: Boolean(selected && selected.hard_gate_pass),
+      selected_policy_passes_protected_time_budget_guard: Boolean(selected && selected.protected_time_budget_guard.passes),
       aggregate_only: candidates.every((candidate) => candidate.checks.privacy_aggregate_only),
       model_is_synthetic_not_observed: true
     },
@@ -470,6 +499,12 @@ function checkReadout(readout) {
     selected_policy_passes_hard_gate: fresh.checks.selected_policy_passes_hard_gate,
     air_candidate_blocked: fresh.checks.air_candidate_is_blocked,
     aggregate_only: fresh.checks.aggregate_only,
+    selected_policy_passes_protected_time_budget_guard: Boolean(
+      fresh.checks.selected_policy_passes_protected_time_budget_guard
+    ),
+    selected_policy_has_protected_time_budget_control: Boolean(
+      fresh.candidates.find((candidate) => candidate.policy_id === fresh.selected_policy_id)?.protected_time_budget_control
+    ),
     selected_policy_exists: Boolean(fresh.selected_policy_id)
   };
   Object.entries(checks).forEach(([key, value]) => {

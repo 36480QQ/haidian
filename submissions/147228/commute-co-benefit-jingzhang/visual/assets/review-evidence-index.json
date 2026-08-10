@@ -56,7 +56,7 @@
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
       "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "visual/assets/commute-co-benefit-sensitivity.json"],
-      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、企业—居民共益合同、声明错峰输入敏感性、时间预算充分性曲线、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选阻断，共同展示方式选择如何被硬门约束，以及哪些结果仍依赖现场输入",
+      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、企业—居民共益合同、保护组时间预算控制、声明错峰输入敏感性、时间预算充分性曲线、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选阻断，共同展示方式选择如何被硬门约束，以及哪些结果仍依赖现场输入",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
     {
@@ -70,7 +70,7 @@
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
       "start_here": ["proposal.md#四类人先看什么", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
-      "strongest_evidence": "六类人群的全日活动链读数、时间预算充分性曲线、企业—居民合同、四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
+      "strongest_evidence": "六类人群的全日活动链读数、保护组时间预算控制、时间预算充分性曲线、企业—居民合同、四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
     {

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An activity-chain model links employer staggering, resident care, external commuting, metro, bus, bicycle, walking/accessibility, cars and enterprise shuttles; a population-scale synthetic screen compares arrival reliability, transfer waiting, curb conflict and group equity, while future air mobility remains a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.4"
 ---
 
 # Jing-Zhang Commute Commons: An Enterprise–Resident Activity-Chain Network
@@ -45,6 +45,8 @@ To show where the proxy score comes from, the model now holds the C3 ground mode
 ## Time Budgets and Group Sufficiency: Check Who Can Arrive on Time Before the Average
 
 A composite proxy score compresses many differences into one number. To keep those differences visible, the same synthetic agents are read again at 30, 40, 50, 60 and 75 minute budgets. Each curve shows the share of a group completing the declared synthetic trip within the time limit. The right panel places the C3 and B0 all-agent readouts together and keeps the minimum among resident workers, carers/children and night workers visible [data:visual/assets/commute-co-benefit-accessibility.json].
+
+This iteration writes the protected-group control into the model. C3 uses 50 minutes as the protected review point for carers/children and night workers, while 40 minutes remains a short-budget diagnostic. Carers/children keep 39% walking/accessible weight and 38% metro weight. Night workers keep a declared metro, bus, walking and necessary car fallback mix. This is a synthetic stress-screen profile. Field use still requires dated lift and accessible-route audits, night-service coverage and a human return-home roster [data:visual/assets/commute-co-benefit-model.json].
 
 The board uses exact times from the committed runner. It does not import a paper threshold, an external sample or a local timetable. It helps a reviewer see whether a policy can lead on average generalized cost while making one group less likely to meet a 40 or 50 minute limit. These curves are synthetic sufficiency proxies, not local accessibility, and they cannot replace time-binned OD, reliable timetables, walking and accessibility audits, resident response or a local baseline. The time budgets are not claimed as real-world optima; an authorised organisation and professional team must freeze any field threshold from dated evidence [source:ACCESSIBILITY-SUFFICIENCY-2022] [source:TRANSIT-ACCESS-STOCHASTICITY-2026] [data:visual/assets/run-commute-co-benefit-accessibility.js].
 

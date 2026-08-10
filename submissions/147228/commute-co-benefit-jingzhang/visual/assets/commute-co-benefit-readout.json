@@ -1,5 +1,5 @@
 {
-  "model_version": "1.0",
+  "model_version": "1.1",
   "model_class": "population_scale_synthetic_activity_chain_policy_screen",
   "population_reference": 3122000,
   "population_coverage_ratio": 1,
@@ -12,6 +12,7 @@
       "label_zh": "B0 惯性基线",
       "label_en": "B0 inertial baseline",
       "weight_profile": "B0",
+      "protected_time_budget_control": null,
       "air_candidate": false,
       "status": "synthetic_screen_complete",
       "agents_processed_first_pass": 3122000,
@@ -394,13 +395,34 @@
         "air_candidate_blocked": true,
         "privacy_aggregate_only": true
       },
-      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown."
+      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown.",
+      "protected_time_budget_guard": {
+        "active": false,
+        "budget_minutes": 50,
+        "baseline_policy_id": "B0_inertial_baseline",
+        "rows": [
+          {
+            "group_id": "carer_or_child",
+            "candidate_sufficiency": 0.8196,
+            "baseline_sufficiency": 0.8196,
+            "does_not_regress": true
+          },
+          {
+            "group_id": "night_worker",
+            "candidate_sufficiency": 0.7102,
+            "baseline_sufficiency": 0.7102,
+            "does_not_regress": true
+          }
+        ],
+        "passes": false
+      }
     },
     {
       "policy_id": "C1_employer_staggered",
       "label_zh": "C1 企业错峰",
       "label_en": "C1 employer staggering",
       "weight_profile": "C1",
+      "protected_time_budget_control": null,
       "air_candidate": false,
       "status": "synthetic_screen_complete",
       "agents_processed_first_pass": 3122000,
@@ -783,13 +805,34 @@
         "air_candidate_blocked": true,
         "privacy_aggregate_only": true
       },
-      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown."
+      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown.",
+      "protected_time_budget_guard": {
+        "active": false,
+        "budget_minutes": 50,
+        "baseline_policy_id": "B0_inertial_baseline",
+        "rows": [
+          {
+            "group_id": "carer_or_child",
+            "candidate_sufficiency": 0.7819,
+            "baseline_sufficiency": 0.8196,
+            "does_not_regress": false
+          },
+          {
+            "group_id": "night_worker",
+            "candidate_sufficiency": 0.6635,
+            "baseline_sufficiency": 0.7102,
+            "does_not_regress": false
+          }
+        ],
+        "passes": false
+      }
     },
     {
       "policy_id": "C2_equity_guarded",
       "label_zh": "C2 公平保护",
       "label_en": "C2 equity guarded",
       "weight_profile": "C2",
+      "protected_time_budget_control": null,
       "air_candidate": false,
       "status": "synthetic_screen_complete",
       "agents_processed_first_pass": 3122000,
@@ -1172,70 +1215,110 @@
         "air_candidate_blocked": true,
         "privacy_aggregate_only": true
       },
-      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown."
+      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown.",
+      "protected_time_budget_guard": {
+        "active": false,
+        "budget_minutes": 50,
+        "baseline_policy_id": "B0_inertial_baseline",
+        "rows": [
+          {
+            "group_id": "carer_or_child",
+            "candidate_sufficiency": 0.7296,
+            "baseline_sufficiency": 0.8196,
+            "does_not_regress": false
+          },
+          {
+            "group_id": "night_worker",
+            "candidate_sufficiency": 0.6208,
+            "baseline_sufficiency": 0.7102,
+            "does_not_regress": false
+          }
+        ],
+        "passes": false
+      }
     },
     {
       "policy_id": "C3_commute_co_benefit",
       "label_zh": "C3 通勤共益组合",
       "label_en": "C3 commute co-benefit bundle",
       "weight_profile": "C3",
+      "protected_time_budget_control": {
+        "profile": "C3",
+        "purpose": "Use a declared 50-minute sufficiency guard for carers/children and night workers before comparing the all-agent proxy; retain 40 minutes as a diagnostic curve.",
+        "groups": [
+          "carer_or_child",
+          "night_worker"
+        ],
+        "diagnostic_budgets_minutes": [
+          40,
+          50
+        ],
+        "protected_gate_budget_minutes": 50,
+        "mode_weight_interpretation": "Declared synthetic guard profile; not observed local mode share, service availability, accessibility performance or resident preference.",
+        "field_gate": [
+          "dated station lift and accessible-route audit",
+          "dated night-service and human-fallback roster",
+          "grouped time-budget OD and resident response"
+        ],
+        "stop_rule": "If either protected group loses the dated field threshold or an equivalent ground/human fallback is absent, hold the policy and return to P0."
+      },
       "air_candidate": false,
       "status": "synthetic_screen_complete",
       "agents_processed_first_pass": 3122000,
       "agents_processed_second_pass": 3122000,
       "total_agents": 3122000,
       "mode_counts": {
-        "metro": 991468,
-        "bus": 704046,
-        "bicycle": 385138,
-        "walking_wheelchair": 604937,
-        "car": 241985,
-        "enterprise_shuttle": 194426
+        "metro": 1105444,
+        "bus": 619674,
+        "bicycle": 372755,
+        "walking_wheelchair": 581240,
+        "car": 246945,
+        "enterprise_shuttle": 195942
       },
       "mode_shares": {
-        "metro": 0.3176,
-        "bus": 0.2255,
-        "bicycle": 0.1234,
-        "walking_wheelchair": 0.1938,
-        "car": 0.0775,
-        "enterprise_shuttle": 0.0623
+        "metro": 0.3541,
+        "bus": 0.1985,
+        "bicycle": 0.1194,
+        "walking_wheelchair": 0.1862,
+        "car": 0.0791,
+        "enterprise_shuttle": 0.0628
       },
       "mode_loads": {
         "metro": {
           "mode": "metro",
-          "demand": 991468,
+          "demand": 1105444,
           "effective_capacity": 957600,
-          "load_ratio": 1.0354
+          "load_ratio": 1.1544
         },
         "bus": {
           "mode": "bus",
-          "demand": 704046,
+          "demand": 619674,
           "effective_capacity": 691600,
-          "load_ratio": 1.018
+          "load_ratio": 0.896
         },
         "bicycle": {
           "mode": "bicycle",
-          "demand": 385138,
+          "demand": 372755,
           "effective_capacity": 457520,
-          "load_ratio": 0.8418
+          "load_ratio": 0.8147
         },
         "walking_wheelchair": {
           "mode": "walking_wheelchair",
-          "demand": 604937,
+          "demand": 581240,
           "effective_capacity": 617120,
-          "load_ratio": 0.9803
+          "load_ratio": 0.9419
         },
         "car": {
           "mode": "car",
-          "demand": 241985,
+          "demand": 246945,
           "effective_capacity": 500080,
-          "load_ratio": 0.4839
+          "load_ratio": 0.4938
         },
         "enterprise_shuttle": {
           "mode": "enterprise_shuttle",
-          "demand": 194426,
+          "demand": 195942,
           "effective_capacity": 234080,
-          "load_ratio": 0.8306
+          "load_ratio": 0.8371
         }
       },
       "edge_counts": {
@@ -1276,25 +1359,25 @@
             "car": 0.0601,
             "enterprise_shuttle": 0.0797
           },
-          "mean_travel_minutes": 44.14,
-          "mean_wait_minutes": 6.37,
+          "mean_travel_minutes": 44.27,
+          "mean_wait_minutes": 6.42,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 1.187,
-          "mean_crowding_penalty": 1.718,
+          "mean_crowding_penalty": 1.846,
           "mean_curb_penalty": 0.229,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 994510.48,
           "accessibility_completion_proxy": 0.983,
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
-            "30": 0.0018,
-            "40": 0.2359,
-            "50": 0.8056,
+            "30": 0.0024,
+            "40": 0.2276,
+            "50": 0.8253,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.084,
-          "satisfaction_proxy": 91.92,
+          "generalized_cost_proxy": 8.127,
+          "satisfaction_proxy": 91.87,
           "edge_counts": {
             "E01": 1092700,
             "E02": 1092700,
@@ -1325,10 +1408,10 @@
             "enterprise_shuttle": 0.0499
           },
           "mean_travel_minutes": 44.7,
-          "mean_wait_minutes": 5.79,
+          "mean_wait_minutes": 5.77,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 1.028,
-          "mean_crowding_penalty": 1.736,
+          "mean_crowding_penalty": 1.738,
           "mean_curb_penalty": 0.23,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 469366.87,
@@ -1336,12 +1419,12 @@
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.2212,
-            "50": 0.7792,
+            "40": 0.2209,
+            "50": 0.8003,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.035,
+          "generalized_cost_proxy": 8.033,
           "satisfaction_proxy": 91.97,
           "edge_counts": {
             "E01": 936600,
@@ -1357,40 +1440,40 @@
           "label_en": "carers / children",
           "agents": 468300,
           "mode_counts": {
-            "metro": 79790,
-            "bus": 131401,
-            "bicycle": 18697,
-            "walking_wheelchair": 201154,
-            "car": 13905,
+            "metro": 178069,
+            "bus": 65798,
+            "bicycle": 9436,
+            "walking_wheelchair": 182429,
+            "car": 9215,
             "enterprise_shuttle": 23353
           },
           "mode_shares": {
-            "metro": 0.1704,
-            "bus": 0.2806,
-            "bicycle": 0.0399,
-            "walking_wheelchair": 0.4295,
-            "car": 0.0297,
+            "metro": 0.3802,
+            "bus": 0.1405,
+            "bicycle": 0.0201,
+            "walking_wheelchair": 0.3896,
+            "car": 0.0197,
             "enterprise_shuttle": 0.0499
           },
-          "mean_travel_minutes": 46.88,
-          "mean_wait_minutes": 5.27,
+          "mean_travel_minutes": 45.76,
+          "mean_wait_minutes": 5.24,
           "p90_travel_minutes": 60,
-          "mean_reliability_penalty": 0.951,
-          "mean_crowding_penalty": 1.817,
-          "mean_curb_penalty": 0.262,
-          "mean_activity_chain_penalty": 0.422,
-          "vehicle_km_proxy": 226237.15,
+          "mean_reliability_penalty": 0.887,
+          "mean_crowding_penalty": 1.989,
+          "mean_curb_penalty": 0.219,
+          "mean_activity_chain_penalty": 0.365,
+          "vehicle_km_proxy": 164324.88,
           "accessibility_completion_proxy": 0.97,
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.091,
-            "50": 0.7194,
+            "40": 0.0647,
+            "50": 0.873,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.304,
-          "satisfaction_proxy": 91.7,
+          "generalized_cost_proxy": 8.124,
+          "satisfaction_proxy": 91.88,
           "edge_counts": {
             "E01": 468300,
             "E04": 468300,
@@ -1419,11 +1502,11 @@
             "car": 0.0099,
             "enterprise_shuttle": 0.0401
           },
-          "mean_travel_minutes": 45.23,
-          "mean_wait_minutes": 5.99,
+          "mean_travel_minutes": 45.19,
+          "mean_wait_minutes": 5.94,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 1.012,
-          "mean_crowding_penalty": 1.789,
+          "mean_crowding_penalty": 1.751,
           "mean_curb_penalty": 0.217,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 75526.68,
@@ -1431,13 +1514,13 @@
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.2025,
-            "50": 0.7402,
+            "40": 0.2023,
+            "50": 0.7654,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.134,
-          "satisfaction_proxy": 91.87,
+          "generalized_cost_proxy": 8.115,
+          "satisfaction_proxy": 91.88,
           "edge_counts": {
             "E01": 312200,
             "E02": 309112,
@@ -1467,11 +1550,11 @@
             "car": 0.7608,
             "enterprise_shuttle": 0.089
           },
-          "mean_travel_minutes": 40.21,
-          "mean_wait_minutes": 4.56,
+          "mean_travel_minutes": 40.19,
+          "mean_wait_minutes": 4.53,
           "p90_travel_minutes": 45,
           "mean_reliability_penalty": 2.625,
-          "mean_crowding_penalty": 0.354,
+          "mean_crowding_penalty": 0.328,
           "mean_curb_penalty": 0.753,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 1532616.09,
@@ -1479,13 +1562,13 @@
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.553,
-            "50": 0.9402,
+            "40": 0.5526,
+            "50": 0.946,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 7.817,
-          "satisfaction_proxy": 92.18,
+          "generalized_cost_proxy": 7.806,
+          "satisfaction_proxy": 92.19,
           "edge_counts": {
             "E01": 156100,
             "E05": 156100,
@@ -1499,40 +1582,40 @@
           "label_en": "night workers",
           "agents": 156100,
           "mode_counts": {
-            "metro": 37483,
-            "bus": 56015,
-            "bicycle": 9381,
-            "walking_wheelchair": 29918,
-            "car": 12456,
-            "enterprise_shuttle": 10847
+            "metro": 53180,
+            "bus": 37246,
+            "bicycle": 6259,
+            "walking_wheelchair": 24946,
+            "car": 22106,
+            "enterprise_shuttle": 12363
           },
           "mode_shares": {
-            "metro": 0.2401,
-            "bus": 0.3588,
-            "bicycle": 0.0601,
-            "walking_wheelchair": 0.1917,
-            "car": 0.0798,
-            "enterprise_shuttle": 0.0695
+            "metro": 0.3407,
+            "bus": 0.2386,
+            "bicycle": 0.0401,
+            "walking_wheelchair": 0.1598,
+            "car": 0.1416,
+            "enterprise_shuttle": 0.0792
           },
-          "mean_travel_minutes": 46.71,
-          "mean_wait_minutes": 6.71,
+          "mean_travel_minutes": 45.32,
+          "mean_wait_minutes": 6.36,
           "p90_travel_minutes": 60,
-          "mean_reliability_penalty": 1.302,
-          "mean_crowding_penalty": 1.733,
-          "mean_curb_penalty": 0.27,
-          "mean_activity_chain_penalty": 0.392,
-          "vehicle_km_proxy": 181080.35,
+          "mean_reliability_penalty": 1.388,
+          "mean_crowding_penalty": 1.67,
+          "mean_curb_penalty": 0.294,
+          "mean_activity_chain_penalty": 0.36,
+          "vehicle_km_proxy": 303883.52,
           "accessibility_completion_proxy": 0.963,
           "activity_chain_completion_proxy": 1,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.1561,
-            "50": 0.6412,
+            "40": 0.1808,
+            "50": 0.7838,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.579,
-          "satisfaction_proxy": 91.42,
+          "generalized_cost_proxy": 8.364,
+          "satisfaction_proxy": 91.64,
           "edge_counts": {
             "E01": 156100,
             "E02": 156100,
@@ -1542,12 +1625,12 @@
           "interpretation": "synthetic aggregate group result; not observed resident or employee experience"
         }
       ],
-      "mean_generalized_cost_proxy": 8.119,
+      "mean_generalized_cost_proxy": 8.093,
       "p90_travel_minutes_proxy": 60,
-      "vehicle_km_proxy": 3479337.62,
+      "vehicle_km_proxy": 3540228.52,
       "min_group_accessibility_proxy": 0.963,
-      "max_group_satisfaction_gap_proxy": 0.76,
-      "satisfaction_proxy": 91.88,
+      "max_group_satisfaction_gap_proxy": 0.55,
+      "satisfaction_proxy": 91.91,
       "hard_gate_pass": true,
       "checks": {
         "all_agents_processed": true,
@@ -1561,70 +1644,110 @@
         "air_candidate_blocked": true,
         "privacy_aggregate_only": true
       },
-      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown."
+      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown.",
+      "protected_time_budget_guard": {
+        "active": true,
+        "budget_minutes": 50,
+        "baseline_policy_id": "B0_inertial_baseline",
+        "rows": [
+          {
+            "group_id": "carer_or_child",
+            "candidate_sufficiency": 0.873,
+            "baseline_sufficiency": 0.8196,
+            "does_not_regress": true
+          },
+          {
+            "group_id": "night_worker",
+            "candidate_sufficiency": 0.7838,
+            "baseline_sufficiency": 0.7102,
+            "does_not_regress": true
+          }
+        ],
+        "passes": true
+      }
     },
     {
       "policy_id": "A1_air_candidate_blocked",
       "label_zh": "A1 空中候选（阻断）",
       "label_en": "A1 air candidate (blocked)",
       "weight_profile": "C3",
+      "protected_time_budget_control": {
+        "profile": "C3",
+        "purpose": "Use a declared 50-minute sufficiency guard for carers/children and night workers before comparing the all-agent proxy; retain 40 minutes as a diagnostic curve.",
+        "groups": [
+          "carer_or_child",
+          "night_worker"
+        ],
+        "diagnostic_budgets_minutes": [
+          40,
+          50
+        ],
+        "protected_gate_budget_minutes": 50,
+        "mode_weight_interpretation": "Declared synthetic guard profile; not observed local mode share, service availability, accessibility performance or resident preference.",
+        "field_gate": [
+          "dated station lift and accessible-route audit",
+          "dated night-service and human-fallback roster",
+          "grouped time-budget OD and resident response"
+        ],
+        "stop_rule": "If either protected group loses the dated field threshold or an equivalent ground/human fallback is absent, hold the policy and return to P0."
+      },
       "air_candidate": true,
       "status": "blocked_pending_airspace_and_ground_evidence",
       "agents_processed_first_pass": 3122000,
       "agents_processed_second_pass": 3122000,
       "total_agents": 3122000,
       "mode_counts": {
-        "metro": 991468,
-        "bus": 704046,
-        "bicycle": 385138,
-        "walking_wheelchair": 604937,
-        "car": 241985,
-        "enterprise_shuttle": 194426
+        "metro": 1105444,
+        "bus": 619674,
+        "bicycle": 372755,
+        "walking_wheelchair": 581240,
+        "car": 246945,
+        "enterprise_shuttle": 195942
       },
       "mode_shares": {
-        "metro": 0.3176,
-        "bus": 0.2255,
-        "bicycle": 0.1234,
-        "walking_wheelchair": 0.1938,
-        "car": 0.0775,
-        "enterprise_shuttle": 0.0623
+        "metro": 0.3541,
+        "bus": 0.1985,
+        "bicycle": 0.1194,
+        "walking_wheelchair": 0.1862,
+        "car": 0.0791,
+        "enterprise_shuttle": 0.0628
       },
       "mode_loads": {
         "metro": {
           "mode": "metro",
-          "demand": 991468,
+          "demand": 1105444,
           "effective_capacity": 972000,
-          "load_ratio": 1.02
+          "load_ratio": 1.1373
         },
         "bus": {
           "mode": "bus",
-          "demand": 704046,
+          "demand": 619674,
           "effective_capacity": 702000,
-          "load_ratio": 1.0029
+          "load_ratio": 0.8827
         },
         "bicycle": {
           "mode": "bicycle",
-          "demand": 385138,
+          "demand": 372755,
           "effective_capacity": 464400,
-          "load_ratio": 0.8293
+          "load_ratio": 0.8027
         },
         "walking_wheelchair": {
           "mode": "walking_wheelchair",
-          "demand": 604937,
+          "demand": 581240,
           "effective_capacity": 626400,
-          "load_ratio": 0.9657
+          "load_ratio": 0.9279
         },
         "car": {
           "mode": "car",
-          "demand": 241985,
+          "demand": 246945,
           "effective_capacity": 507600,
-          "load_ratio": 0.4767
+          "load_ratio": 0.4865
         },
         "enterprise_shuttle": {
           "mode": "enterprise_shuttle",
-          "demand": 194426,
+          "demand": 195942,
           "effective_capacity": 237600,
-          "load_ratio": 0.8183
+          "load_ratio": 0.8247
         }
       },
       "edge_counts": {
@@ -1665,25 +1788,25 @@
             "car": 0.0601,
             "enterprise_shuttle": 0.0797
           },
-          "mean_travel_minutes": 44.05,
-          "mean_wait_minutes": 6.23,
+          "mean_travel_minutes": 44.17,
+          "mean_wait_minutes": 6.29,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 0.979,
-          "mean_crowding_penalty": 1.623,
+          "mean_crowding_penalty": 1.749,
           "mean_curb_penalty": 0.211,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 994510.48,
           "accessibility_completion_proxy": 0.983,
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
-            "30": 0.0021,
-            "40": 0.2377,
-            "50": 0.8065,
+            "30": 0.0026,
+            "40": 0.2297,
+            "50": 0.8276,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 7.999,
-          "satisfaction_proxy": 92,
+          "generalized_cost_proxy": 8.042,
+          "satisfaction_proxy": 91.96,
           "edge_counts": {
             "E01": 1092700,
             "E02": 1092700,
@@ -1714,10 +1837,10 @@
             "enterprise_shuttle": 0.0499
           },
           "mean_travel_minutes": 44.6,
-          "mean_wait_minutes": 5.67,
+          "mean_wait_minutes": 5.65,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 0.83,
-          "mean_crowding_penalty": 1.637,
+          "mean_crowding_penalty": 1.64,
           "mean_curb_penalty": 0.212,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 469366.87,
@@ -1725,12 +1848,12 @@
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.2217,
-            "50": 0.7797,
+            "40": 0.2214,
+            "50": 0.8028,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 7.952,
+          "generalized_cost_proxy": 7.951,
           "satisfaction_proxy": 92.05,
           "edge_counts": {
             "E01": 936600,
@@ -1746,40 +1869,40 @@
           "label_en": "carers / children",
           "agents": 468300,
           "mode_counts": {
-            "metro": 79790,
-            "bus": 131401,
-            "bicycle": 18697,
-            "walking_wheelchair": 201154,
-            "car": 13905,
+            "metro": 178069,
+            "bus": 65798,
+            "bicycle": 9436,
+            "walking_wheelchair": 182429,
+            "car": 9215,
             "enterprise_shuttle": 23353
           },
           "mode_shares": {
-            "metro": 0.1704,
-            "bus": 0.2806,
-            "bicycle": 0.0399,
-            "walking_wheelchair": 0.4295,
-            "car": 0.0297,
+            "metro": 0.3802,
+            "bus": 0.1405,
+            "bicycle": 0.0201,
+            "walking_wheelchair": 0.3896,
+            "car": 0.0197,
             "enterprise_shuttle": 0.0499
           },
-          "mean_travel_minutes": 46.78,
-          "mean_wait_minutes": 5.16,
+          "mean_travel_minutes": 45.66,
+          "mean_wait_minutes": 5.13,
           "p90_travel_minutes": 60,
-          "mean_reliability_penalty": 0.778,
-          "mean_crowding_penalty": 1.717,
-          "mean_curb_penalty": 0.241,
-          "mean_activity_chain_penalty": 0.422,
-          "vehicle_km_proxy": 226237.15,
+          "mean_reliability_penalty": 0.709,
+          "mean_crowding_penalty": 1.886,
+          "mean_curb_penalty": 0.201,
+          "mean_activity_chain_penalty": 0.365,
+          "vehicle_km_proxy": 164324.88,
           "accessibility_completion_proxy": 0.97,
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.0916,
-            "50": 0.7201,
+            "40": 0.0652,
+            "50": 0.8747,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.228,
-          "satisfaction_proxy": 91.77,
+          "generalized_cost_proxy": 8.046,
+          "satisfaction_proxy": 91.95,
           "edge_counts": {
             "E01": 468300,
             "E04": 468300,
@@ -1808,11 +1931,11 @@
             "car": 0.0099,
             "enterprise_shuttle": 0.0401
           },
-          "mean_travel_minutes": 45.13,
-          "mean_wait_minutes": 5.86,
+          "mean_travel_minutes": 45.09,
+          "mean_wait_minutes": 5.81,
           "p90_travel_minutes": 60,
           "mean_reliability_penalty": 0.814,
-          "mean_crowding_penalty": 1.688,
+          "mean_crowding_penalty": 1.651,
           "mean_curb_penalty": 0.2,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 75526.68,
@@ -1820,13 +1943,13 @@
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.2029,
-            "50": 0.7408,
+            "40": 0.2027,
+            "50": 0.7685,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.051,
-          "satisfaction_proxy": 91.95,
+          "generalized_cost_proxy": 8.032,
+          "satisfaction_proxy": 91.97,
           "edge_counts": {
             "E01": 312200,
             "E02": 309112,
@@ -1856,11 +1979,11 @@
             "car": 0.7608,
             "enterprise_shuttle": 0.089
           },
-          "mean_travel_minutes": 40.19,
-          "mean_wait_minutes": 4.49,
+          "mean_travel_minutes": 40.16,
+          "mean_wait_minutes": 4.46,
           "p90_travel_minutes": 45,
           "mean_reliability_penalty": 2.409,
-          "mean_crowding_penalty": 0.331,
+          "mean_crowding_penalty": 0.305,
           "mean_curb_penalty": 0.694,
           "mean_activity_chain_penalty": 0.2,
           "vehicle_km_proxy": 1532616.09,
@@ -1868,13 +1991,13 @@
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.5538,
-            "50": 0.9404,
+            "40": 0.5534,
+            "50": 0.9467,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 7.755,
-          "satisfaction_proxy": 92.24,
+          "generalized_cost_proxy": 7.744,
+          "satisfaction_proxy": 92.26,
           "edge_counts": {
             "E01": 156100,
             "E05": 156100,
@@ -1888,40 +2011,40 @@
           "label_en": "night workers",
           "agents": 156100,
           "mode_counts": {
-            "metro": 37483,
-            "bus": 56015,
-            "bicycle": 9381,
-            "walking_wheelchair": 29918,
-            "car": 12456,
-            "enterprise_shuttle": 10847
+            "metro": 53180,
+            "bus": 37246,
+            "bicycle": 6259,
+            "walking_wheelchair": 24946,
+            "car": 22106,
+            "enterprise_shuttle": 12363
           },
           "mode_shares": {
-            "metro": 0.2401,
-            "bus": 0.3588,
-            "bicycle": 0.0601,
-            "walking_wheelchair": 0.1917,
-            "car": 0.0798,
-            "enterprise_shuttle": 0.0695
+            "metro": 0.3407,
+            "bus": 0.2386,
+            "bicycle": 0.0401,
+            "walking_wheelchair": 0.1598,
+            "car": 0.1416,
+            "enterprise_shuttle": 0.0792
           },
-          "mean_travel_minutes": 46.61,
-          "mean_wait_minutes": 6.57,
+          "mean_travel_minutes": 45.23,
+          "mean_wait_minutes": 6.23,
           "p90_travel_minutes": 60,
-          "mean_reliability_penalty": 1.103,
-          "mean_crowding_penalty": 1.638,
-          "mean_curb_penalty": 0.249,
-          "mean_activity_chain_penalty": 0.392,
-          "vehicle_km_proxy": 181080.35,
+          "mean_reliability_penalty": 1.186,
+          "mean_crowding_penalty": 1.581,
+          "mean_curb_penalty": 0.271,
+          "mean_activity_chain_penalty": 0.36,
+          "vehicle_km_proxy": 303883.52,
           "accessibility_completion_proxy": 0.963,
           "activity_chain_completion_proxy": 0,
           "time_budget_sufficiency_proxy": {
             "30": 0,
-            "40": 0.1569,
-            "50": 0.6422,
+            "40": 0.1816,
+            "50": 0.7863,
             "60": 1,
             "75": 1
           },
-          "generalized_cost_proxy": 8.495,
-          "satisfaction_proxy": 91.51,
+          "generalized_cost_proxy": 8.282,
+          "satisfaction_proxy": 91.72,
           "edge_counts": {
             "E01": 156100,
             "E02": 156100,
@@ -1931,12 +2054,12 @@
           "interpretation": "synthetic aggregate group result; not observed resident or employee experience"
         }
       ],
-      "mean_generalized_cost_proxy": 8.037,
+      "mean_generalized_cost_proxy": 8.011,
       "p90_travel_minutes_proxy": 60,
-      "vehicle_km_proxy": 3479337.62,
+      "vehicle_km_proxy": 3540228.52,
       "min_group_accessibility_proxy": 0.963,
-      "max_group_satisfaction_gap_proxy": 0.73,
-      "satisfaction_proxy": 91.96,
+      "max_group_satisfaction_gap_proxy": 0.54,
+      "satisfaction_proxy": 91.99,
       "hard_gate_pass": false,
       "checks": {
         "all_agents_processed": true,
@@ -1950,7 +2073,27 @@
         "air_candidate_blocked": true,
         "privacy_aggregate_only": true
       },
-      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown."
+      "interpretation": "Finite candidate comparison under declared synthetic inputs; local calibration and field evidence remain unknown.",
+      "protected_time_budget_guard": {
+        "active": false,
+        "budget_minutes": 50,
+        "baseline_policy_id": "B0_inertial_baseline",
+        "rows": [
+          {
+            "group_id": "carer_or_child",
+            "candidate_sufficiency": 0.8747,
+            "baseline_sufficiency": 0.8196,
+            "does_not_regress": true
+          },
+          {
+            "group_id": "night_worker",
+            "candidate_sufficiency": 0.7863,
+            "baseline_sufficiency": 0.7102,
+            "does_not_regress": true
+          }
+        ],
+        "passes": false
+      }
     }
   ],
   "ranking": [
@@ -1958,7 +2101,7 @@
       "rank": 1,
       "policy_id": "C3_commute_co_benefit",
       "hard_gate_pass": true,
-      "satisfaction_proxy": 91.88
+      "satisfaction_proxy": 91.91
     },
     {
       "rank": 2,
@@ -1976,7 +2119,7 @@
       "rank": 4,
       "policy_id": "A1_air_candidate_blocked",
       "hard_gate_pass": false,
-      "satisfaction_proxy": 91.96
+      "satisfaction_proxy": 91.99
     },
     {
       "rank": 5,
@@ -1991,6 +2134,7 @@
     "air_candidate_is_blocked": true,
     "all_candidates_processed": true,
     "selected_policy_passes_hard_gate": true,
+    "selected_policy_passes_protected_time_budget_guard": true,
     "aggregate_only": true,
     "model_is_synthetic_not_observed": true
   },
