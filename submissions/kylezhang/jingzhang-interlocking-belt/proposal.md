@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张铁路联锁机制（道岔与信号互锁、冲突即阻断、闭塞安全间隔）为原型，提出AI城市开放治理协议「联锁带」：一轴三站两翼的空间结构、五大功能、三区两翼协同、10张AI场景卡、5类用户画像、3个AI朝圣地标与年度开放运营体系。"
+summary: "以铁路延续百年的联锁安全哲学（道岔与信号互锁、冲突即阻断、闭塞安全间隔）为原型，提出AI城市开放治理协议「联锁带」：一轴三站两翼的空间结构、五大功能、三区两翼协同、10张AI场景卡、5类用户画像、3个AI朝圣地标与年度开放运营体系；联锁协议以机器可读JSON开放（CC-BY-4.0）。"
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -21,7 +21,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 组织方尚未发布 official `SITE_BOUNDARY` 与三处 `KEY_AREA` 多边形，本包暂用 `provisional_boundaries.geojson` 生成临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。提交包中 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只用于方案生成、自检、可视化与设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论；official polygons 发布后，边界、用地、建筑、道路、绿地、公共空间、分期与指标均需重算。临时边界仅用于方案生成、展示与概念审查；official polygon 发布后，本包将整包复算。资格、评分与接受条件由维护者/评审按正式规则判断。
 
-本方案总体概念为**「京张联锁带 · THE INTERLOCKING BELT」**：把 1909 年京张铁路的**联锁（Interlocking）**安全机制——道岔与信号互锁、冲突组合即阻断、闭塞区间保持安全间隔、调度中心统一指挥——转译为 AI 城市的**开放治理协议**：数据接入有道岔、场景状态有信号、冲突检测有联锁表、公共数据与个人数据有闭塞间隔、一切异常由人类调度复核。这一概念同时回应三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）与五大功能（AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权），使"安全"从铁路工程遗产变成 AI 城市治理的公共产品 [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+本方案总体概念为**「京张联锁带 · THE INTERLOCKING BELT」**：以铁路延续百年的**联锁（Interlocking）**安全哲学——道岔与信号互锁、冲突组合即阻断、闭塞区间保持安全间隔、调度中心统一指挥——为原型（1909 年京张铁路通车运营，即以人工扳道、信号显示与调度协同贯彻"未确认、不放行"的安全纪律；本方案延续这一安全哲学，并非声称当年已装备电气联锁设备），转译为 AI 城市的**开放治理协议**：数据接入有道岔、场景状态有信号、冲突检测有联锁表、公共数据与个人数据有闭塞间隔、一切异常由人类调度复核。这一概念同时回应三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）与五大功能（AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权），使"安全"从铁路工程遗产变成 AI 城市治理的公共产品；协议规范以机器可读 JSON 开放采用（`visual/assets/interlocking-protocol.json`，CC-BY-4.0，方案整体仍为 COMMUNITY-DISPLAY-ONLY）[source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 ## 三层范围工作框架
 
@@ -112,6 +112,12 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 08 数据要素会客厅 ★ | 大钟寺片区 | 以合规、授权、可审计为前提，展示数据要素和数字资产流通的城市服务界面 | 数据分级入联锁表：公开/授权/隔离三档信号 |
 | 09 AI 生活服务样板街 | 社区与商业交汇处 | 将医疗、教育、法律、生活服务等 AI+ 场景落到可运营的小尺度街区空间 | 个人数据闭塞间隔，人工复核留痕 |
 | 10 智能终端测试街区 ★ | 小月河场景赋能翼 | 面向机器人、低速自动驾驶、智能终端在真实街区的受控测试环境 | 测试区与运营区闭塞隔离，安全员调度复核 |
+
+**场景卡联锁履行表（Scenario Interlock Fulfillment Matrix）**：每张场景卡对应空间载体、联锁规则、测试门、责任角色、停止条件与证据引用，机器可读版见 `scenario_interlock_matrix.json`（与 `compliance_matrix.json` 的任务映射互补，是其在场景层的细化）。测试门四级诚实标注：`desk_review`（已完成包内桌面审查）/ `simulation`（未运行，需真实场地、数据或授权）/ `pilot`（未授权，需官方场地授权与运营主体）/ `full_operation`（未授权，需正式运营许可）。全部场景卡状态为**目标设计：未部署、未授权、未运行**；3 张 ★ 产业测试场景（SC-02/SC-08/SC-10）当前均为 `simulation`，不声称任何试点已运行。典型联锁规则：SC-02 红队测试未通过安全评测即阻断；SC-10 测试区与运营区边界失效或安全员未在岗即转红；SC-08 数据分级不明确或授权链断裂即暂停流通界面。跨场景冲突组合预先登记于联锁表（如 SC-10 与学校上下学时段冲突强制转红、SC-02 与 SC-04 分时闭塞），冲突即阻断、状态变更须经调度台人工复核并留痕 [data:scenario_interlock_matrix.json#SC-01] [data:visual/assets/interlocking-protocol.json#ILP-CONFLICT-03] [data:visual/assets/interlocking-protocol.json#ILP-DISPATCH-01]。
+
+**联锁协议（Interlocking Protocol）开放采用**：协议规范以机器可读 JSON 发布（`visual/assets/interlocking-protocol.json`），按 CC-BY-4.0 授权开放采用（署名即可；本提交包整体仍为 COMMUNITY-DISPLAY-ONLY，此授权仅覆盖协议规范本身）。协议与社区既有治理模板（折返协议 Switchback Protocol，chucky1102，CC-BY-4.0）分层互补：折返协议规范单一场景卡的生命周期状态机（纵向），本协议规范多场景之间的冲突互锁关系（横向），可组合使用。机制谱系致谢折返协议、京张道岔、智轨京张等社区方案，见协议 JSON `acknowledgments` 字段。
+
+**调度员体验与联锁日记**：联锁带为"谁在负责"提供可体验的答案。JZ-05 联锁协议公共教育台设"当一天调度员"模拟台——访客以调度员身份面对联锁表，练习对冲突组合（测试∩慢行、测试∩放学时段）做放行、复核或阻断的决策，所有操作留痕；教育台同时展出"联锁日记"：以 1909 年京张铁路扳道员/信号员的工作纪律为开篇（未确认、不放行），对照 2026 年 AI 场景调度员的同一条纪律，用两代"调度人"的对照讲清联锁协议为什么需要人工复核。该体验为概念建议，具体点位与设备待正式边界与运营主体确认。
 
 AI 治理建议遵守数据最小化、公开来源、可解释与人工复核原则：城市智能体辅助识别慢行断点、公共空间热力、设施维护、企业服务需求与活动安全风险，但不替代规划审批、不输出未经授权的个人画像、不声称获得官方实施承诺。所有 AI 场景节点进入结构化图层或合规矩阵 [data:geometry/public_space.geojson#PS-001] [data:geometry/roads.geojson#RD-001]
 

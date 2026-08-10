@@ -90,6 +90,44 @@
 <section class="sheet"><div class="sheet-head"><div><h2>AI 场景</h2><p>★ 为 AI 产业测试验证场景（3 张）</p></div><span class="tag">agent.3</span></div>
 <div class="card-grid" style="grid-template-columns:repeat(2,1fr)"><article class="card"><b>01 开源发布厅</b><p>Origin Community open-source publishing hall</p></article><article class="card"><b>02 安全治理沙盒 ★</b><p>Safety-governance sandbox for model testing</p></article><article class="card"><b>03 端侧算力驿站</b><p>Edge-compute station (new infra prototype)</p></article><article class="card"><b>04 AI 慢行导航</b><p>Explainable slow-mobility navigation</p></article><article class="card"><b>05 大钟寺国际路演客厅</b><p>International roadshow lounge</p></article><article class="card"><b>06 清河低碳创新廊</b><p>Qinghe low-carbon innovation corridor</p></article><article class="card"><b>07 近校成果转化街</b><p>Campus-adjacent conversion street</p></article><article class="card"><b>08 数据要素会客厅 ★</b><p>Data-element lounge (compliant, auditable)</p></article><article class="card"><b>09 AI 生活服务样板街</b><p>AI life-services model block</p></article><article class="card"><b>10 智能终端测试街区 ★</b><p>Terminal test block (isolated, dispatched)</p></article></div></section>
 
+<section class="sheet"><div class="sheet-head"><div><h2>联锁协议交互台</h2><p>场景卡 → 联锁规则 → 信号状态 → 测试门 → 停止条件（机器可读版：scenario_interlock_matrix.json + visual/assets/interlocking-protocol.json）</p></div><span class="tag">interlocking protocol · CC-BY-4.0</span></div>
+<div class="ilp-wrap"><div class="ilp-side" id="ilp-cards"></div><div class="ilp-detail" id="ilp-detail"><h3 id="ilp-title">点击左侧场景卡查看联锁规则</h3><p id="ilp-rule" class="hero-copy" style="color:#667085"></p></div></div>
+<div style="margin-top:16px"><h3 style="font-size:14px;margin:0 0 8px">冲突组合表（跨场景互锁 · 冲突即阻断）</h3><table class="ilp-table"><thead><tr><th>ID</th><th>冲突组合</th><th>联锁规则</th><th>状态</th></tr></thead><tbody id="ilp-cfl"></tbody></table></div>
+<div style="margin-top:10px;font-size:12px;color:#667085">全部场景卡为目标设计：未部署、未授权、未运行。测试门四级：desk_review（已完成包内桌面审查）/ simulation（未运行）/ pilot（未授权）/ full_operation（未授权）。</div>
+</section>
+<style>
+.ilp-wrap{display:grid;grid-template-columns:240px 1fr;gap:16px}.ilp-side{display:flex;flex-direction:column;gap:6px}.ilp-btn{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;text-align:left;font-size:13px;color:var(--ink);transition:border-color .15s}.ilp-btn:hover{border-color:var(--gold)}.ilp-btn.on{border-color:var(--gold);background:#fdf8ee}.ilp-dot{width:10px;height:10px;border-radius:50%;flex:none}.dot-green{background:#15803d}.dot-yellow{background:#d97706}.dot-red{background:#b42318}.ilp-detail{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--soft)}.ilp-detail h3{font-size:16px;margin:0 0 8px}.ilp-table{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff}.ilp-table th,.ilp-table td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}.ilp-table th{background:var(--soft);color:var(--muted);font-weight:600}
+</style>
+<script>
+(function(){
+var SC=[
+["SC-01","开源发布厅","代码/数据接入道岔：贡献者授权、许可协议可见","green","desk_review","开源转化站调度员","贡献者授权缺失或许可协议不可见时，发布接入转黄并暂停"],
+["SC-02","安全治理沙盒 ★","模型测试接入道岔 + 安全评测信号灯，冲突即阻断","yellow","simulation","全栈自主创新站调度员 + 安全评测员","红队测试未通过安全评测时转红，阻断全部接入并公示原因"],
+["SC-03","端侧算力驿站","算力接入授权、能耗状态公开","green","desk_review","站点运营方 + 联锁协议工作坊","能耗或授权状态不可见时转黄，新接入暂停"],
+["SC-04","AI 慢行导航","只聚合匿名流量，不追踪个体","green","desk_review","信号干线运营方","识别到可回溯个体数据时立即转红并停止采集"],
+["SC-05","大钟寺国际路演客厅","企业信息须清权，活动审批入联锁表","green","desk_review","智能原生站调度员","活动审批未入联锁表或清权未完成时转黄，活动暂停"],
+["SC-06","清河低碳创新廊","生态/蓝线约束为闭塞区间，禁止越界建设","green","desk_review","生态与蓝线复核员","建设方案触及蓝线闭塞区间时转红，方案退回"],
+["SC-07","近校成果转化街","科研成果授权边界，校园数据隔离","yellow","desk_review","开源转化站调度员 + 高校授权联络员","科研成果授权边界未确认时转黄，转化服务仅提供通用咨询"],
+["SC-08","数据要素会客厅 ★","数据分级入联锁表：公开/授权/隔离三档信号","yellow","simulation","智能原生站调度员 + 数据合规员","数据分级不明确或授权链断裂时转红，流通界面暂停"],
+["SC-09","AI 生活服务样板街","个人数据闭塞间隔，人工复核留痕","yellow","desk_review","社区服务运营方 + 人工复核员","个人数据越出闭塞间隔时转红，服务降级为人工窗口"],
+["SC-10","智能终端测试街区 ★","测试区与运营区闭塞隔离，安全员调度复核","yellow","simulation","安全员调度台","测试区与运营区边界失效或安全员未在岗时转红，测试立即停止"]
+];
+var CFL=[
+["CFL-01","SC-02 安全治理沙盒 ∩ SC-04 AI 慢行导航","红队测试时段与慢行导航聚集高峰时段分时闭塞，信号灯联动公示","红"],
+["CFL-02","SC-10 智能终端测试街区 ∩ SC-04 AI 慢行导航","测试街区与慢行导航重叠时段需人工复核放行，默认转黄","黄"],
+["CFL-03","SC-10 智能终端测试街区 ∩ 学校上下学时段","学校上下学时段测试街区强制转红，测试暂停并公示","红"],
+["CFL-04","SC-08 数据要素会客厅 ∩ SC-09 AI 生活服务样板街","数据要素流通与个人生活服务数据按公开/授权/隔离三档隔离","黄"],
+["CFL-05","SC-02 安全治理沙盒 ∩ SC-01 开源发布厅","模型测试与开源发布共享基础设施时按基础设施隔离","黄"],
+["CFL-06","SC-06 清河低碳创新廊 ∩ 重大活动时段","重大活动期间蓝线闭塞区间加密巡检，越界建设风险转黄","黄"]
+];
+var cards=document.getElementById("ilp-cards"),detail=document.getElementById("ilp-detail");
+function render(i){var s=SC[i];detail.innerHTML='<h3>'+s[0]+' '+s[1]+'</h3><div style="display:flex;gap:8px;align-items:center;margin:8px 0"><span class="ilp-dot dot-'+s[3]+'"></span><b>信号：'+({green:'绿·常态',yellow:'黄·受控复核',red:'红·阻断'}[s[3]])+'</b><span class="pill">测试门：'+s[4]+'</span><span class="pill">责任角色：'+s[5]+'</span></div><p style="margin:8px 0 0;font-size:13.5px;color:#162033"><b>联锁规则：</b>'+s[2]+'</p><p style="margin:8px 0 0;font-size:13.5px;color:#667085"><b>停止条件：</b>'+s[6]+'</p>';
+var btns=cards.children;for(var k=0;k<btns.length;k++){btns[k].classList.toggle("on",k===i)}}
+SC.forEach(function(s,i){var b=document.createElement("button");b.className="ilp-btn";b.type="button";b.innerHTML='<span class="ilp-dot dot-'+s[3]+'"></span><span>'+s[0]+' '+s[1]+'</span>';b.addEventListener("click",function(){render(i)});cards.appendChild(b)});
+var tb=document.getElementById("ilp-cfl");CFL.forEach(function(c){var tr=document.createElement("tr");tr.innerHTML='<td>'+c[0]+'</td><td>'+c[1]+'</td><td>'+c[2]+'</td><td>'+c[3]+'</td>';tb.appendChild(tr)});
+render(0);
+})();
+</script>
 <section class="sheet"><div class="sheet-head"><div><h2>核心指标</h2><p>全部空间指标由提交几何 EPSG:4548 复算，与 metrics.json 一致</p></div><span class="tag">metrics.json</span></div>
 <div class="metric-grid"><div class="metric" data-metric="site_area_sqm" data-value="11412825.4"><div class="mk">总体设计范围面积</div><div class="mv">11.41 km²</div><div class="mu">km²</div></div><div class="metric" data-metric="green_ratio" data-value="0.1976"><div class="mk">绿地比例</div><div class="mv">19.8%</div><div class="mu">%</div></div><div class="metric" data-metric="public_space_ratio" data-value="0.207"><div class="mk">公共空间比例</div><div class="mv">20.7%</div><div class="mu">%</div></div><div class="metric" data-metric="building_footprint_area_sqm" data-value="606332.9"><div class="mk">建筑基底面积</div><div class="mv">606 k m²</div><div class="mu">k m²</div></div><div class="metric" data-metric="key_area_count" data-value="3"><div class="mk">重点区域数量</div><div class="mv">3</div><div class="mu">count</div></div><div class="metric" data-metric="heritage_protection_zone_ratio" data-value="0.1745"><div class="mk">文保协调带比例</div><div class="mv">17.4%</div><div class="mu">%</div></div></div></section>
 

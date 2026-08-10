@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a32a3bb51902e858cd1a4a817db6363a64ea7b16b4604e522fd297a5f3bb1919"
+      "sha256": "075abed0a1b85a791066137010072923ef5b541ea510aeeef8d16e994cf29828"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "5d25e971f1cfca0f72d844243cb7bdba6149c3882ed0d1452cd0341ceab1dd7b"
     },
     {
       "path": "self_check.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a45983d42910f8977273422eb7cca405c25990c3b227ccadc29cc2356e669bd3"
+      "sha256": "00bf180ad06f42a7fa9eb3816bcf6fefed69df35cd029a50960153b6b8de365d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d209825198d11563d9e9b4eb52dbc9a1b6cf756ee6625bdfab9d58af12f77d95"
+      "sha256": "beae61e6eb267a3e8147fa149a94574cc313f6d2a2cdb27c10746a1828e5fdac"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e52cc6dac632b57ddc71c00326aa9f65a5187f60681b7dc9c3e1d09dd9714579"
+      "sha256": "741facccba374e419cb6db18a8288024f710f4a63bc59934b1b3b88aaae93964"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,18 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "1b4e438487891e00ba746ba500c540ec03ba5b7892778ccfcda6a10ee2d8f3e8"
+    },
+    {
+      "path": "visual/assets/interlocking-protocol.json",
+      "role": "machine_readable_evidence",
+      "required": false,
+      "sha256": "89f391bf9f87869eb322e927a8615da66a1304aa40b4c934ca40fcc6337a7440"
+    },
+    {
+      "path": "visual/assets/scenario_interlock_matrix.json",
+      "role": "machine_readable_evidence",
+      "required": false,
+      "sha256": "c50822fb2e0d9a77b9c1135d9a582e128b4b5743b367207a8a1daa14f0f2da5b"
     }
   ],
   "validation_claim": {
