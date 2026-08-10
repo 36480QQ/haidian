@@ -163,16 +163,21 @@ The fix is light, and either half suffices: extend the enum to cover what the co
 Motif and structure detection uses Chinese keyword patterns and misses synonyms, so **every share above is a lower bound**. The corpus grows daily; re-run before citing. **Applied to this proposal itself, that rule produced a stronger finding than any single snapshot.** Five independent runs. The first four used to exist only in `changelog.md` — which is to say, only on the author's word — and are now reconstructed round by round from the git history and shipped as `visual/assets/census_history.json`. **This proposal's own rule does not exempt its author.**
 
 | Run | Corpus | Disclosure field empty |
+<!-- CENSUSHISTORY:BEGIN -->
+
+| Round | Corpus | Disclosure field empty |
 |---|---|---|
 | First | 184 | 29.9% |
 | Second | 215 | 30.7% |
 | Third | 228 | 30.3% |
 | Fourth | 298 | 29.2% |
-| Fifth | **354** | **29.9%** |
+| Current reading | **416** | **25.7%** |
+
+<!-- CENSUSHISTORY:END -->
 
 **The reconstruction is worth reporting because it is not four for four.** Recomputed at the newest commit whose tree holds exactly that many proposal directories, three rounds — 215, 228 and 298 — reproduce the recorded value **exactly** (0.307 / 0.303 / 0.292). The earliest, at 184, reconstructs to **0.304** against a recorded 0.299: a difference of **one package**. It is not reconciled, and the reason is in the file's own `method` field — the reconstruction is taken at the commit where the directory count matches, which is not necessarily the moment the original reading was taken. **Three exact and one off by one** is better evidence that the reconstruction is computing than four out of four would have been.
 
-The corpus grew **84%** over that span while the gap stayed inside a 1.5-point band, 29.2–30.7%. A ratio that does not move while the corpus nearly doubles is not snapshot noise but a **structural property** — it does not depend on who enters, but on the field having no enumeration and no gate that checks it. This is also why the proposal gives methods rather than numbers: numbers expire, five measurements pointing the same way do not.
+**This section used to conclude that the gap was a structural property, and this proposal's own sixth reading refuted it, so it is rewritten.** Across the four rounds reconstructed from git history the gap sat inside a 1.5-point band, 29.2–30.7%, and that stability was read as independence from who enters. The current reading falls outside it — see the last row above. (The prose also used to carry a round at 354 / 29.9% that `census_history.json` does not contain: **that round existed only in prose and was never reconstructed**, so the table now shows the four the file can substantiate plus the live reading.) **The reason is legible in the data and is more interesting than the original claim: the numerator stopped.** The placeholder count climbed 56 → 66 → 69 → 87 → 107 and has then held at **107 across four consecutive readings** (corpora of 381, 394, 408 and 416). Nearly every recently merged proposal fills `model_family` in. The share is falling because the denominator grows while the numerator does not — not because anything in the existing corpus changed. This proposal does not claim to know why; charter discussion, updated scaffolds or coincidence are not separable from this data. **What it does show is the thing this proposal argues throughout: hang a conclusion on one snapshot and the sixth reading takes it away; hang it on a method and the sixth reading is evidence for it rather than against it.**
 
 ![Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
