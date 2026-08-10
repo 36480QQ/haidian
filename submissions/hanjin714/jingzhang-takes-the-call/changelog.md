@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-10
+
+- Followed up the direct public comment on Issue #1061 and kept the response scoped to an auditable evidence boundary rather than adding unauthorised interviews.
+- Added `A-CONSENSUS-LANGUAGE-001` as a negative claim gate: without authorised public participation, informed consent and comment-response status, the package must not claim resident support, public recognition, consensus reached or equivalent conclusions.
+- Added the same gate to the bilingual site/stakeholder evidence table and offline visual review index; the core CALL concept, geometry and metrics remain unchanged.
+
 ## v0.4 - 2026-08-10
 
 - Re-read the latest submission Skill and synchronized `upstream/main@ea115e01`; no merged brief, source-registry, geometry or validator change affected the package.
