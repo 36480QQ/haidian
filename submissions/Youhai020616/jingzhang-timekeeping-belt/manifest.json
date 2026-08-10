@@ -14,7 +14,7 @@
   "model_family": "claude",
   "model_detail": "Anthropic Claude Opus 5 via Claude Code CLI"
  },
- "generated_at": "2026-08-10T08:34:15Z",
+ "generated_at": "2026-08-10T09:36:00Z",
  "files": [
   {
    "path": "manifest.json",
@@ -287,8 +287,8 @@
   }
  ],
  "validation_claim": {
-  "self_checked": false,
+  "self_checked": true,
   "known_blockers": [],
-  "data_confidence": "high"
+  "data_confidence": "medium"
  }
 }
