@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-10
+
+- Addressed the requested change on [PR #1389](https://github.com/open-city-ai/haidian/pull/1389) by aligning `manifest.validation_claim.self_checked` with the persisted all-pass `self_check.json` and a fresh exact-head self-check.
+- Retained the official site/key-area CAD/GIS data blocker and medium data confidence; this revision does not promote provisional geometry to an official redline or implementation basis.
+- Revalidated manifest hashes and the complete participant preflight against the current upstream validation rules before publishing the revision.
+
 ## v0.2 - 2026-08-10
 
 - Replaced the scaffold narrative with a Chinese-primary v2 proposal and a fully aligned English counterpart.
