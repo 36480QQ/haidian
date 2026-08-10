@@ -24,7 +24,7 @@ iteration: "v1.0"
 
 ![资料证据链与三带总览](assets/figures/site-overview.png)
 
-**边界状态说明：** 官方 SITE_BOUNDARY 与三处 KEY_AREA polygon 尚未取得，本方案使用 `provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics 均需重算 [metric:site_area_sqm]。边界证据可回到总体范围图层 [data:geometry/site_boundary.geojson#SITE-001]。
+**边界状态说明：** 官方 SITE_BOUNDARY 与三处 KEY_AREA polygon 尚未取得，本方案使用 `provisional_boundaries.geojson` 生成临时 formal 包 [source:KEY-AREA-SOURCE]。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`。该组织方数据缺口本身不阻断内容评分；替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics 均需重算 [metric:site_area_sqm]。边界证据可回到总体范围图层 [data:geometry/site_boundary.geojson#SITE-001]。
 
 ## 三层范围工作框架
 
@@ -91,7 +91,7 @@ iteration: "v1.0"
 
 ### 开发强度与待确认控规
 
-容积率、建筑高度、建筑密度在 site package 中均为 `missing`，本方案将其标为 `unknown`，并说明所需来源（审定控规或任务书附件）[standard:MOHURD-CONTROL-DETAILED-PLANNING]。这是合规边界，也是"尺度感回归"的方法论：**承认不知道，比编造一个精确的假数字更接近真实工程**。方案给出的是方法（如何在校规到位后填充这些指标），而非伪造结论 [depth:development_intensity_controls]。
+容积率、建筑高度、建筑密度在 site package 中均为 `missing`，本方案将其标为 `unknown`，并说明所需来源（审定控规或任务书附件）[standard:MOHURD-CONTROL-DETAILED-PLANNING]。这是合规边界，也是"双轨度量"方法论中空间尺度的一部分：**承认不知道，比编造一个精确的假数字更接近真实工程**。方案给出的是方法（如何在校规到位后填充这些指标），而非伪造结论 [depth:development_intensity_controls]。
 
 ## 重点区域详细设计
 
@@ -215,7 +215,7 @@ AI 原生不是"给每个设施装一个 AI"，而是**多个智能体在同一�
 
 ![核心指标复算与证据链](assets/figures/metrics-evidence.png)
 
-核心指标：总体设计范围面积 11,411,445 sqm、绿地率 24.6%、公共空间率 8.7%、建筑基底 442,142 sqm、慢行主轴总长 11,963 m、用地地块 15、重点区 3 处 [metric:site_area_sqm] [metric:green_ratio]。第三方数据锚定指标：沿线高校 19 所、现状地铁站点 12 个、遗址公园全长 9 公里、海淀 AI 核心产业 2822 亿元、大模型集聚区核心区 9.5 km²、在区全国重点实验室 92 家 [metric:universities_along_corridor] [metric:haidian_ai_core_industry_scale_billion_yuan]。AI 原生性指标：场景卡 12 张（含 3 张测试验证）[metric:scenario_card_count]。完整数值与公式见 `metrics.json`。
+核心指标：总体设计范围面积 11,411,445 sqm、绿地率 24.6%、公共空间率 8.7%、建筑基底 419,486 sqm、慢行主轴总长 11,963 m、用地地块 15、重点区 3 处 [metric:site_area_sqm] [metric:green_ratio]。第三方数据锚定指标：沿线高校 19 所、现状地铁站点 12 个、遗址公园全长 9 公里、海淀 AI 核心产业 2822 亿元、大模型集聚区核心区 9.5 km²、在区全国重点实验室 92 家 [metric:universities_along_corridor] [metric:haidian_ai_core_industry_scale_billion_yuan]。AI 原生性指标：场景卡 12 张（含 3 张测试验证）[metric:scenario_card_count]。完整数值与公式见 `metrics.json`。
 
 合规矩阵覆盖公告 1.3、1.4、1.5 与 agent.1–agent.6 的全部必选任务，每条任务对应报告章节、图层、指标、图纸、HTML 页面、来源、假设与自检项。
 
@@ -223,7 +223,7 @@ AI 原生不是"给每个设施装一个 AI"，而是**多个智能体在同一�
 
 本方案基于官方公开资料与 provisional 边界，不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者与专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONST-001]。
 
-**第三方数据合规边界：** 本方案使用 OpenStreetMap（ODbL 1.0，已署名 © OpenStreetMap 贡献者，share-alike）作为现状地理要素的 base layer，仅用于背景与设计讨论，不升级为 official boundary/法定蓝线/文保线；使用北京市科委、海淀区统计局、北京市文物局、教育部等官方公开统计/文保事实，引用时注明发布者、URL、年份与口径；使用美团、滴滴公开报告的全国汇总级数字作为场景体量背景，非廊道实测数据 [source:OSM-2026]。商业地图实时热力/瓦片因无公开许可、未使用。所有第三方数据来源、许可、用途与限制登记于 `sources.json`。
+**第三方数据合规边界：** 本方案使用 OpenStreetMap（ODbL 1.0，已署名 © OpenStreetMap 贡献者，share-alike）作为现状地理要素的 base layer，仅用于背景与设计讨论，不升级为 official boundary/法定蓝线/文保线；使用北京市科委、海淀区统计局、北京市文物局、教育部等官方公开统计/文保事实，引用时注明发布者、URL、年份与口径；使用美团、滴滴公开报告的全国汇总级数字作为场景体量背景，非廊道实测数据；北京市公共数据开放平台（71 家单位 4457 个数据集，含教育/交通/地理信息主题）作为后续校准的数据资源索引 [source:BEIJING-OPEN-DATA-PLATFORM] [source:OSM-2026]。商业地图实时热力/瓦片因无公开许可、未使用。所有第三方数据来源、许可、用途与限制登记于 `sources.json`。
 
 **双语要求：** 方案主文件为中文，通过 `proposal.en.md` 提供完整对照译文；A3/A0、HTML 与含文字图件提供对应语言副本，优先使用赛事中英术语表。所有图片、图纸、图标、数据与代码资产在 `sources.json` 与 `report/copyright_statement.md` 中说明来源、许可与授权状态。HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 
