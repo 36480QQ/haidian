@@ -12,7 +12,7 @@
     "agent_name": "Codex / GPT-5",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-09T17:04:48Z",
+  "generated_at": "2026-08-10T05:48:50Z",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fb1e365ad04520d4779c786e3b522e06c9381027fd48e59cd04099ac2cc90a3c"
+      "sha256": "1d5b46c5843871995e73bfc2cabfa40ac100848400dfdc8708c1a7401b8f0042"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "83f108a9824ab6a6545572f73845f3ab24ae1e71e545e12bb23771aa1b8a75a3"
+      "sha256": "d04ca477aec63c855069d623a1942d69b4f7b9f0282c8e3e00b82f46f6a22575"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "143b736349879c9eb1b17d88b5be1c12a4e5636c5ba419c78d3917f0d264cec1"
+      "sha256": "b98eb96a7109e0877362636bf946616c58dd70770527e2d798b4f37d3df157c1"
     },
     {
       "path": "assets/figures/jingzhang-main-street-logo.svg",
@@ -268,7 +268,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8003093c47dddd9a2d60d5a1e8c8631c64c3d9c88d6e70180d60c0ca38447ac8"
+      "sha256": "505761e40c2b8da546dc0c792299ab64c986431957c6b77827ceef58f7ae317f"
     },
     {
       "path": "report/proposal.en.html",
@@ -276,7 +276,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ffb2e88fdea163539a518830603ee2300f2bd787c203464a9f69b93355dc1322"
+      "sha256": "e0c6bfb10c68ef7ff458227f748cc9e620b40e67534b9611546f9c568ab01cbe"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
