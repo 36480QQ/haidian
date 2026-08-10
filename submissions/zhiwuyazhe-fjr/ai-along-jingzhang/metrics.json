@@ -276,12 +276,13 @@
     },
     "phasing_total_area_sqm": {
       "status": "known",
-      "value": 11412805.063,
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
-        "geometry/phasing.geojson"
+        "geometry/phasing.geojson",
+        "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(EPSG:4548 each non-overlapping phase territory))",
+      "formula": "area(EPSG:4548 site boundary); phase territories form a topology-tolerant complete partition",
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001",
