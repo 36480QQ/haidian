@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v5.0 - 2026-08-10
+
+借鉴高分方案差异化要素（Mentat-Uran 94, JasonZhangZijun 91, 147228 v37 91）
+
+- **京张定律场地事实锚点**（借鉴 JasonZhangZijun）：清华园隧道约6公里下穿老京张铁路遗址公园，确立"每次提速把速度藏得更深、把地面还得更慢"的京张定律——AI作为第三次提速应遵守同一定律（算力入地/机器人入夜/屏幕退场）。
+- **SC-04 Relay Receipt 最小可执行试点**（借鉴 Mentat-Uran）：将 S1 收敛为唯一最小试点，10段执行链 + 7 道 G0–G6 Gates + 5 步回滚动作。落地为 `visual/assets/sc04-relay-receipt.json` 机器可读记录。
+- **14 条场景卡 + evidence-ledger.json**（借鉴 147228）：在原有12张基础上新增 S13 城市智能体应急回滚 + S14 公共利益审计，每条场景卡对应原子记录（result_status/release_decision/rollback_steps/acceptance_checks）。
+- **清华园隧道资料源**（JZ-TUNNEL-SASAC）已添加到 sources.json。
+
 ## v4.3 - 2026-08-09
 
 修复评审指出的两处必改项
