@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-10T12:31:11+08:00",
+  "generated_at": "2026-08-10T13:40:30+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4969a12d37ffa5156971f4699dcbbb892c3cfb509ef411fbd18689ac082739f8"
+      "sha256": "42be833210332f34134dfb041475b06d5411954a0db1aea4f9eac6f0dc551189"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e8ce0db79ebd4abb760bb9681a1c1f512361fbdaa812d23f9bad93a966ffa460"
+      "sha256": "c79740c6ca7b43228abbcbf42b80bc5109f8a9c981a794052371506f2bd60ace"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "991ac4346412c132c96bf5e0c6cc396fe2994da45e8525f3881d0bc0041246c7"
+      "sha256": "a67ae8167fc34fe1c4cdee1810efc8ed3fdc27fc3cf250d587c76d4340316217"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e217e27ae9f9d5d7657f20703d7ac1069fd63e7c6839f3d8fa871b22849e03b4"
+      "sha256": "04d84ae2a2688b0852219aa8635f5e9e997c7c87c46d71f63c0f92ce90fa5416"
     },
     {
       "path": "report/copyright_statement.md",
@@ -104,21 +104,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "10af43b58ca41cc62b9a7942e8e682f1e57ecfa24689b2efc1b4b51b4400db5d"
+      "sha256": "c1d062a45a5392b6d7940d33245c35e1a3c2bdd9260a6480730612110c837950"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9cbe60a5f15a2a4573eeb234bc2fbaad85b7fef249e730e216fe557a33408628"
+      "sha256": "f83bdfa85de3786074dc0e7bd8637b18fa88fc28175c95e4b79a4b22607b14a2"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6492c6b9f1918cb3cb619d9d7d939fb342339b7eaa28aba2cac03921056ec313"
+      "sha256": "7e5801d40c43f7cc08f339d9ddeb23bd8f7488f13cd7b0d309e5697a0e5cc253"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6aeb15d87bd8d243bfafd58ca3f36f89de743705221d1226d664f282abbb184c"
+      "sha256": "7a3ace80192b30fa27fb901e09e632c186b81e7040cfb4ddd785db8826bdc1c5"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ec1ff5f0587d1a89e5be62d8a3c2d0d8df11ce540b6517f651898909fba2837c"
+      "sha256": "e8e71c9002ed9fc8121db0c154a41ce461ebc440527037d671b428312dad63a7"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "15d7258d73856c44c7d9b80362115cf95db2cab65baa4c4d6d61bae3e1db4383"
+      "sha256": "a19fc8b187d89264ecef9b3fbc886ed0c024e2ea4edc13309194330c83e09960"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a96720012766173a0a50d13c3a032565d36b44d4fa7592430ee9f215c7fd1410"
+      "sha256": "83ba7d671ab66e4358ab4280586232f11d84d72c4d2020a21901deac1a4e2fb2"
     },
     {
       "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4026e96c361945cd22f5611a9b61b0d8eb2379ec12c5f4b07c065015011fcef9"
+      "sha256": "4c9e39a7fd77ed1af4a6f511d22df53c81c96292e783c62e3e8757d522a1167a"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -275,7 +275,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "bb4baad52b9e77c5f174e76982fcff8e9eba42922204d95ba758e5e30fddf37c"
+      "sha256": "9efdf5857843eebc36d5d93fed6c3f14ba9cbe4387d49a8218632d55d893add9"
     },
     {
       "path": "visual/assets/implementation-operation-matrix.json",
@@ -317,14 +317,14 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "695ca3faf7764259b820c352f38a93f45a83a737756c397efe9989b4d93abcc1"
+      "sha256": "47ef5eafa22c769b1cd0e4b327790bd38a4b02fc744807f006d757023b735d06"
     },
     {
       "path": "visual/assets/human-city-reference-audit.json",
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "2f475ad53bca9546a064b4defa397ed96d1a37d5a43aa0e2eaeb3b1c89c7c297"
+      "sha256": "4d3452ac76ea36d3357124ceccfc2d337664043696fa03be2f2d619379b764ad"
     },
     {
       "path": "visual/assets/run-human-city-reference-audit.js",
@@ -338,7 +338,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "746297dfdf4c85eabfb00b730cf638cec3a030b352f6b5cef070e3f085fe5024"
+      "sha256": "3de84fbcce2d2d60105b30b8850ec54a23417debb5fb9bde3c66a330740d829b"
     },
     {
       "path": "visual/assets/spatial-action-node-plans.json",
@@ -537,7 +537,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "08b627c3185cee852e91f6b56f008a94adb6c748d5e230ed138af92a955784e6"
+      "sha256": "babaceb4e46f680e5a661eb18620203633149171a475f7145ab684d58601bd34"
     },
     {
       "path": "visual/assets/run-reviewer-navigation-audit.js",
@@ -745,7 +745,7 @@
       "role": "workflow_script",
       "required": false,
       "language": "neutral",
-      "sha256": "da555a060b097deeb3ced6f51aaf7cce59ac6f7ba61b7d8fa076509a878e056d"
+      "sha256": "ca6def7a1325679d0f6e03001ce7242d41f1aed17a0d83e7d3a6e71833904b05"
     },
     {
       "path": "visual/assets/human-city-mainline.json",
@@ -832,6 +832,72 @@
       "role": "structured_evidence",
       "required": true,
       "sha256": "26c124560e01266a0dd3137cfee80a0235cfb8a0ea5898cabf52fb37db8b5a1f"
+    },
+    {
+      "path": "visual/assets/formal-scorecard-readback-v18.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "c63e535c21c6c3c2e342fe803fc580391549bca5976563bf412c84ffac8e412f"
+    },
+    {
+      "path": "visual/assets/brief-alignment-atlas-v19.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "cdecf66c5ab1e7c2a1905a483f86abfbab8a1b42cdeb33ece43c962871ad8f80"
+    },
+    {
+      "path": "visual/assets/public-culture-operations-atlas-v20.json",
+      "role": "structured_evidence",
+      "required": true,
+      "language": "neutral",
+      "sha256": "bb295f19a4477321961132f39441cdce0ab1bd8f6dd15b963b1004557dc1f57b"
+    },
+    {
+      "path": "assets/figures/reviewer-scorecard-map.png",
+      "role": "figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "f4719e57d8d8ad1aedb5b26a98656b63654036682787167dadcb26c18d1ddb6b"
+    },
+    {
+      "path": "assets/figures/reviewer-scorecard-map.en.png",
+      "role": "figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/reviewer-scorecard-map.png",
+      "sha256": "b1bdb5824903042d13302a3aeb3848acd4b4639f838a769c44ba79a8aec04c7f"
+    },
+    {
+      "path": "assets/figures/brief-alignment-atlas.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "bbc59283d5804c4d497990799cbd6f5743fc4edc21723c9aabd2fa145d131e10"
+    },
+    {
+      "path": "assets/figures/brief-alignment-atlas.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/brief-alignment-atlas.png",
+      "sha256": "c0f3e72a9a74d201e53e866d560e9a9e874bf1df1a2b5cd1ca7d7bc41fe3ae49"
+    },
+    {
+      "path": "assets/figures/public-culture-operations-atlas.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "3adf07ca9ac82e011d5fe07c8de2401514e767697bda192155d126512f0fdb06"
+    },
+    {
+      "path": "assets/figures/public-culture-operations-atlas.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/public-culture-operations-atlas.png",
+      "sha256": "2ae009c4ea99fab2b8b086ec847435ad6d8462294a692df92403a4057a31bde9"
     }
   ],
   "validation_claim": {

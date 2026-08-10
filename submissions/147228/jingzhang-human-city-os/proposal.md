@@ -6,11 +6,51 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.7"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.7 在同源真实空间证据上增加三处重点区放大、廊道交叉规则和几何到指标到缺口的回读链，让场景动作在评审窗口中可辨认。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.0"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.0 在任务书空间响应之外，把公共空间、三座概念地标、文化语法、四季版本节奏与五个项目族接到空间锚点、资料门和退出条件。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v1.9 一页执行摘要｜任务书到空间响应
+
+本页先回答“任务书要求什么、空间怎样承接、评审者到哪里核对”。全篇仍是概念建议 / 参考方案，供专业团队深化研究；三处重点区及两翼只作为 `official_boundary=false`、`geometry_role=provisional_constraint` 的空间约束，不是官方红线或实施边界。[source:AGENT-TASKBOOK] [data:visual/assets/brief-alignment-atlas-v19.json]
+
+### 三大定位、五大功能、三区两翼
+
+| 任务书层 | 本方案的空间翻译 | 最短核对入口 |
+| --- | --- | --- |
+| 三大定位 | 百年京张文化带：在大钟寺与京张历史叙事中保留连续记忆；都市 AI 生活体验带：在 AI 原点社区先走通人工、代际与无屏日常；AI 融合创新带：在众智园和中关村科技服务翼把创新放进可暂停、可回放的接口。 | `assets/figures/brief-alignment-atlas.png`；`proposal.md`；`geometry/key_areas.geojson` |
+| 五大功能 | AI 全栈自主创新体系、世界级 AI 创新生态、AI+ 场景赋能新范式、智能化 AI 活力城市、AI 治理全球话语权，分别回到受控测试、全球案例/区域接口、17 张场景卡、公共空间/交通蓝绿和版本发布门。 | `visual/assets/brief-alignment-atlas-v19.json`；`compliance_matrix.json` |
+| 三区两翼 | 众智园 AI 自主创新加速区、北京 AI 原点社区、大钟寺 AI 产业聚集区；中关村科技服务翼、小月河场景赋能翼。每个空间单元有动作、场景、资料缺口和退出条件，没有新增工程尺寸或运营主体。 | `geometry/key_areas.geojson`；`visual/assets/spatial-action-atlas.json`；`visual/assets/regional-interface-ledger.json` |
+
+### 四条主线各自落到场景、指标和缺口
+
+| 主线 | 可见空间动作 | 场景 / 指标 | 当前不能证明的资料 |
+| --- | --- | --- | --- |
+| A 人的尊严 | 社区保留议事、人工与代际共学、技能再造走廊、无屏恢复绿地 | `SC-A01` / `SC-A03` / `SC-A05`；`community_retention_support_area_ratio` | 居民与商户基线、持续就业、人工服务等效走读和知情同意 |
+| B 机器可用 | 城市 API 交换、受限具身测试、硅基通行权和低空概念分层 | `SC-B01` / `SC-B02` / `SC-B04`；`silicon_right_of_way_length_m` | 道路、空域、安全、保险、责任和接口授权断面 |
+| C 硬约束 | 算电余热核验、行洪/海绵模拟、监管沙盒事故复盘、公共数据授权样板间 | `SC-C01`—`SC-C05`；`operational_pue` 保持 `unknown` | 能源与热网、水文、保险责任、正式数据授权与专业审查 |
+| D 势能外溢 | OPC 共享实验、标准外溢工作室、版本 release note、国际服务客厅 | `SC-D01`—`SC-D04`；`version_release_count` | 参与主体、知识产权许可、跨区协作和服务能力核验 |
+
+图 22 将这套映射压成评审窗口可读的一页；JSON 记录每行的 `spatial_refs`、`scenario_refs`、`metric_refs` 和 `data_gap`。它用于证明“任务书—空间—证据”能相互回读，不生成官方分数，也不把图面完整度写成现实绩效。[data:assets/figures/brief-alignment-atlas.png] [depth:overall_spatial_structure] [depth:risk_missing_data]
+
+![图 22｜任务书—空间响应一页图：三大定位、五大功能、三区两翼与四条差异化主线](assets/figures/brief-alignment-atlas.png)
+
+## v2.0 公共空间、文化叙事与年度运营｜让 agent.4—agent.6 在图上相遇
+
+任务书的公共空间、地标、文化叙事与年度运营在同一张概念图上相遇：地标承担日常可读的公共动作，四季节奏承担版本治理，项目族把空间动作交给相应的资料门和退出条件。三者均供专业团队深化研究，不指定现实运营主体、场地、许可、资金或绩效。[source:AGENT-TASKBOOK] [data:visual/assets/public-culture-operations-atlas-v20.json]
+
+| 设计层 | 三个可读地标 | 四季运营节奏 | 当前证据与缺口 |
+| --- | --- | --- | --- |
+| 公共空间与新产业 | 人的版本大厅：issue、变更、撤回；轨道接口钟：铁路时间与城市版本；无屏恢复灯塔：树荫、声音、夜间安全与不强制交互 | 春：城市问题开源周；夏：城市 API 与具身测试月；秋：工作转型与 OPC 共创季；冬：城市版本大会 | `SC-C05`、`SC-D02`、`GREEN-A-QUIET-1`、17 张场景卡；正式场地、无障碍、热环境、夜间安全与公众参与基线待补 |
+| 项目族与发布门 | PF-A 人本缓冲、PF-B 城市 API、PF-C 人机/气候/算电、PF-D 数据授权/版本治理、PF-E 生态外溢，分别回到三区两翼与 v0.1/v0.2/v1.0 概念门 | 每季只开放对应资料门内的概念动作；没有人工解释、独立回放、责任回复或公众异议处理就停留在上一门 | `visual/assets/implementation-operation-matrix.json`；不生成工期、预算、容量或运营承诺 |
+
+文化语法采用“钢轨—时间—接口”：钢轨承接百年京张连续性，时间刻度承接年度版本，接口节点承接公共解释和人的最终决定权。三座地标不是企业展示台；它们把历史、普通人的恢复和可质疑的城市版本放到同一条公共脊上。[data:assets/figures/public-culture-operations-atlas.png] [depth:renewal_project_list] [depth:overall_spatial_structure]
+
+图 23 只表达概念关系与可回放的运营边界，所有锚点继续是 `official_boundary=false`、`geometry_role=provisional_constraint`。正式公共空间、文保、道路、无障碍、热环境、夜间安全、能源、场地授权与居民反馈到位后，应连同地标、年度节奏、矩阵、metrics、HTML 和 PDF 一并重算。[data:visual/assets/public-culture-operations-atlas-v20.json] [depth:risk_missing_data]
+
+![图 23｜公共空间—文化—运营年度图谱：三座概念地标、四季节奏与五个项目族](assets/figures/public-culture-operations-atlas.png)
 
 ## 一页先读｜先看空间动作，再看治理证据
 
@@ -120,6 +160,16 @@ v1.6 已经把抽象长条换成了真实提交几何，v1.7 继续处理阅读�
 数字仍由 `metrics.json` 与 EPSG:4548 下的 GeoJSON 重算，当前包内可复核的是场地面积和社区保留支撑分区面积代理。[metric:site_area_sqm] [metric:community_retention_support_area_ratio] [depth:metrics_recalculation]
 
 每个 unknown 继续保留为下一道资料门，社区保留率、就业转型、人工服务等效性、PUE、绿电和余热均不因图面更完整而升级为结果。[depth:risk_missing_data]
+
+## v1.8 七维评审回读｜让评分问题、证据与边界同页可见
+
+本轮将仓库 formal workflow 的七个问题逐项接回最短的包内路径，并在 `formal-scorecard-readback-v18.json` 中登记问题、已知证据、剩余边界和下一步授权核验；它服务于复核顺序，不合成分数。[data:visual/assets/formal-scorecard-readback-v18.json] [data:visual/assets/reviewer-navigation-index.json]
+
+图 21 把七行阅读路线与五条证据脊放在同一画面。20%、10%、15%、20%、10%、10%、15% 只代表仓库工作流模板的权重范围，不能读作主办方评分；临时几何、unknown、概念建议和未授权状态仍保持原级别。[data:assets/figures/reviewer-scorecard-map.png] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
+
+这张图的价值在于让评审者先提出问题，再回到正文、结构化台账、图纸和 manifest，最后看到需要由有权专业团队补齐的核验。它不产生本投稿得分、官方评审结论、获奖预测或实施证明，双语文本与审计台账同步更新。[data:visual/assets/bilingual-equivalence-audit.json] [depth:risk_missing_data]
+
+![图 21｜七维评审证据地图：问题、最短路径、边界与下一步核验](assets/figures/reviewer-scorecard-map.png)
 
 ## v0.2 评分修复｜把三个重点区读成空间动作链
 

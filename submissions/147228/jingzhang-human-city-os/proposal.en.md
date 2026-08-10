@@ -6,11 +6,51 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.7"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.7 adds three focus-area zooms, corridor-crossing rules, and a geometry-to-metric-to-gap readback to the one-source spatial evidence maps, so scenario actions remain legible in the review window. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.0"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.0 adds a public-space, three-landmark, cultural-grammar, four-season version rhythm and five-project-family board linked to spatial anchors, evidence gates and exit conditions. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v1.9 One-page execution brief | from taskbook to spatial response
+
+This page answers three reviewer questions first: what the brief asks for, how the concept translates it into space, and where each claim can be checked. The package remains a conceptual suggestion / reference scheme for professional teams to deepen. The three focus areas and two wings are `official_boundary=false` and `geometry_role=provisional_constraint`; they are not official redlines or implementation boundaries.[source:AGENT-TASKBOOK] [data:visual/assets/brief-alignment-atlas-v19.json]
+
+### Three positions, five functions, three areas and two wings
+
+| Brief layer | Spatial translation in this proposal | Shortest review entry |
+| --- | --- | --- |
+| Three positions | Jing-Zhang Centennial Heritage Belt: retain a continuous public memory in the Dazhongsi and Jing-Zhang narrative; Urban AI Everyday-Life Belt: make human channels, intergenerational learning and screen-free everyday life work first in the AI Origin Community; AI Integration and Innovation Belt: place innovation in pausable, replayable interfaces around Zhongzhiyuan and the Zhongguancun service wing. | `assets/figures/brief-alignment-atlas.en.png`; `proposal.en.md`; `geometry/key_areas.geojson` |
+| Five functions | Full-stack AI self-innovation system, world-class AI innovation ecosystem, AI+ scenario enablement paradigm, intelligent/vibrant AI city, and global voice in AI governance return to controlled tests, case/region interfaces, 17 scenario cards, public-space/mobility blue-green moves, and versioned release gates. | `visual/assets/brief-alignment-atlas-v19.json`; `compliance_matrix.json` |
+| Three areas + two wings | Zhongzhiyuan AI Self-innovation Accelerator, Beijing AI Origin Community, Dazhongsi AI Industry Cluster; Zhongguancun Technology-Service Wing and Xiaoyuehe Scenario-Enablement Wing. Each unit has an action, scenario, data gap, and exit condition, without adding engineering dimensions or an operating entity. | `geometry/key_areas.geojson`; `visual/assets/spatial-action-atlas.json`; `visual/assets/regional-interface-ledger.json` |
+
+### Four differentiated chains land in scenes, metrics and gaps
+
+| Chain | Visible spatial move | Scenes / metric | What the package cannot yet prove |
+| --- | --- | --- | --- |
+| A Human dignity | Community-retention forum, human and intergenerational channels, skill-transition corridor, screen-free recovery landscape | `SC-A01` / `SC-A03` / `SC-A05`; `community_retention_support_area_ratio` | Resident/shop baselines, sustained employment, equivalent human-service walk-through, informed consent |
+| B Machine usability | City API exchange, constrained embodied-AI test, silicon right-of-way and conceptual low-altitude layering | `SC-B01` / `SC-B02` / `SC-B04`; `silicon_right_of_way_length_m` | Road, airspace, safety, insurance, responsibility and interface authorization sections |
+| C Hard constraints | Compute-energy/heat audit, flood/sponge simulation, regulatory-sandbox incident replay, public-data authorization room | `SC-C01`—`SC-C05`; `operational_pue` remains `unknown` | Energy/heat network, hydrology, insurance responsibility, formal data authorization and professional review |
+| D Spillovers | OPC shared experiment, standards studio, version release note, international service room | `SC-D01`—`SC-D04`; `version_release_count` | Actors, IP licensing, cross-region cooperation and service-capacity verification |
+
+Figure 22 compresses this map into a reviewer-facing board; the JSON records each row's `spatial_refs`, `scenario_refs`, `metric_refs` and `data_gap`. It demonstrates that the brief, spatial move and evidence can be traced together. It generates no official score and does not turn visual completeness into field performance.[data:assets/figures/brief-alignment-atlas.en.png] [depth:overall_spatial_structure] [depth:risk_missing_data]
+
+![Figure 22 | Brief-to-spatial-response atlas: three positions, five functions, three areas/two wings and four differentiated chains](assets/figures/brief-alignment-atlas.en.png)
+
+## v2.0 Public space, cultural narrative and annual operation | Bring agent.4–agent.6 onto the drawing
+
+The brief's public space, landmarks, cultural narrative and annual operation meet in one concept board: landmarks carry readable everyday public actions, the four-season rhythm carries versioned governance, and the project families connect spatial moves to evidence gates and exit conditions. All remain conceptual suggestions for professional teams to deepen; no operator, venue, permit, funding or performance is named.[source:AGENT-TASKBOOK] [data:visual/assets/public-culture-operations-atlas-v20.json]
+
+| Design layer | Three readable landmarks | Four-season rhythm | Current evidence and gaps |
+| --- | --- | --- | --- |
+| Public space + new industry | People's Version Hall: issues, changes, withdrawals; Rail Interface Clock: railway time and city versions; Screen-free Recovery Beacon: shade, sound, night safety and no forced interaction | Spring: public problem open week; summer: city API + embodied test month; autumn: work transition + OPC co-creation; winter: city version conference | `SC-C05`, `SC-D02`, `GREEN-A-QUIET-1`, 17 scenario cards; formal venue, accessibility, thermal comfort, night safety and participation baselines remain pending |
+| Project families + release gates | PF-A human buffer, PF-B city API, PF-C human-machine/climate/compute-energy, PF-D data authorization/version governance, PF-E ecology/spillovers return to the three areas/two wings and v0.1/v0.2/v1.0 concept gates | Each season opens only the concept moves covered by its evidence gate; without human explanation, independent replay, accountable response or public-objection handling it stays at the prior gate | `visual/assets/implementation-operation-matrix.json`; no schedule, budget, capacity or operating commitment is generated |
+
+The cultural grammar is “rail — time — interface”: rail carries Jing-Zhang continuity, time carries the annual version, and interface carries public explanation and final human authority. The three landmarks are not corporate showcases; they place history, ordinary-person recovery and a question-able city version on one public spine.[data:assets/figures/public-culture-operations-atlas.en.png] [depth:renewal_project_list] [depth:overall_spatial_structure]
+
+Figure 23 expresses conceptual relationships and replayable operating boundaries only. Every anchor remains `official_boundary=false` and `geometry_role=provisional_constraint`. When formal public-space, heritage, road, accessibility, thermal, night-safety, energy, venue-authorization and resident-feedback inputs arrive, the landmarks, annual rhythm, matrices, metrics, HTML and PDFs must be recalculated together.[data:visual/assets/public-culture-operations-atlas-v20.json] [depth:risk_missing_data]
+
+![Figure 23 | Public space + culture + annual operation atlas: three concept landmarks, four-season rhythm and five project families](assets/figures/public-culture-operations-atlas.en.png)
 
 ## One-page read | Spatial moves first, governance evidence second
 
@@ -120,6 +160,16 @@ The zooms help a reviewer check node relationships, but they are not surveys or 
 Numbers still come from `metrics.json` and GeoJSON recomputation in EPSG:4548; the package can currently replay site area and the community-retention support-area proxy.[metric:site_area_sqm] [metric:community_retention_support_area_ratio] [depth:metrics_recalculation]
 
 Every unknown remains a data gate; resident retention, employment transition, manual-service equivalence, PUE, green power, and recovered heat do not become outcomes because the figure is more complete.[depth:risk_missing_data]
+
+## v1.8 seven-dimension reviewer readback | Put the question, evidence, and boundary on one page
+
+This round connects the seven repository formal-workflow questions to their shortest in-package paths. `formal-scorecard-readback-v18.json` records each question, known evidence, remaining boundary, and next authorized verification; it governs review order and produces no score.[data:visual/assets/formal-scorecard-readback-v18.json] [data:visual/assets/reviewer-navigation-index.json]
+
+Figure 21 places the seven reading routes and five evidence spines on one page. The 20%, 10%, 15%, 20%, 10%, 10%, and 15% values belong only to the repository workflow template; they are not an organizer score. Provisional geometry, unknowns, conceptual suggestions, and not-authorized states remain at their declared evidence levels.[data:assets/figures/reviewer-scorecard-map.en.png] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:risk_missing_data]
+
+The page asks the reviewer to start with a question, return to the prose, ledgers, drawings, and manifest, and then see which verification must be supplied by an authorized professional team. It creates no score for this submission, official review conclusion, award prediction, or implementation proof; the bilingual text and audit ledger are updated together.[data:visual/assets/bilingual-equivalence-audit.json] [depth:risk_missing_data]
+
+![Figure 21 | Seven-dimension reviewer evidence map: question, shortest path, boundary, and next verification](assets/figures/reviewer-scorecard-map.en.png)
 
 ## v0.2 score repair | Read the three key areas as spatial action chains
 

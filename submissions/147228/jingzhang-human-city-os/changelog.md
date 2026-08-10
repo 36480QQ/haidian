@@ -1,5 +1,25 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-10
+
+- 新增双语图 23“公共空间—文化—运营年度图谱”和 `visual/assets/public-culture-operations-atlas-v20.json`，把三座概念地标、四季版本节奏、五个项目族和“钢轨—时间—接口”文化语法接回空间锚点、资料门与退出动作。
+- 前置中英文 proposal 的 v2.0 章节，补足任务书 agent.4（公共空间/地标）、agent.5（文化叙事）和 agent.6（年度运营）的可见设计证据；所有内容仍是概念建议 / 参考方案，供专业团队深化研究。
+- 同步离线 visual index、制图方法、双语审计、reviewer navigation、PDF 图册与 manifest；checker 增加 3 landmarks / 4 seasons / 5 project families / cultural grammar 的结构回归。
+- 本轮不修改 geometry、正式 metrics、来源等级、公共排序或 `submissions-data.js` / `gallery-publication.json`，不指定运营方、场地、许可、资金、容量或绩效。
+
+## v1.9 - 2026-08-10
+
+- 新增双语图 22“任务书—空间响应一页图”和 `visual/assets/brief-alignment-atlas-v19.json`，把任务书三大定位、五大功能、三区两翼与四条差异化主线逐行接回空间锚点、场景、metrics 和资料缺口。
+- 将 v1.9 一页执行摘要前置到中英文 proposal，离线 visual index 增加同源图件与台账入口；每个空间单元继续明确 `official_boundary=false`、`geometry_role=provisional_constraint`，不新增工程尺寸、运营主体、投资或政策确定性。
+- 扩展 `check-human-city-v15-assets.js` 的双语回归门禁，检查 3 positions / 5 functions / 3 areas / 2 wings / 4 chains、图 22 双语路径及非评分边界；更新制图方法、双语审计与 reviewer navigation。
+- 本轮是任务书契合度与表达完整度的实质空间证据补强，不修改 geometry、正式 metrics、来源等级、公共排序或 `submissions-data.js` / `gallery-publication.json`。
+
+## v1.8 - 2026-08-10
+
+- 新增 `visual/assets/formal-scorecard-readback-v18.json` 与图 21 双语证据地图，把仓库七个 formal workflow 问题、模板权重、最短证据路径、已知边界和下一步授权核验放到同一回读顺序中；明确不生成分数、不代表主办方评分。
+- 同步 `reviewer-navigation-index.json`、制图方法、双语审计、proposal、离线 visual HTML、PDF 图册和 manifest，使 v1.8 入口可从图面回到结构化证据；模板权重、临时几何和 unknown 的证据边界保持原级别。
+- 这轮只补评审可读性与证据导航，不修改 geometry、正式 metrics、来源等级、公共排序或 `submissions-data.js` / `gallery-publication.json`。
+
 ## v1.7 - 2026-08-10
 
 - 在五张评审核心图中增加三处重点区放大框、场景节点族、廊道交叉规则和几何到指标到缺口的回读链；放大框读取同一批 GeoJSON，不产生新的边界、线位或指标。
