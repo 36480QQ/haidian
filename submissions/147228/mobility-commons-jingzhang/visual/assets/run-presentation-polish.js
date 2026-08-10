@@ -12,6 +12,82 @@ const assetDir = __dirname;
 const packageDir = path.resolve(assetDir, '..', '..');
 const figureDir = path.join(packageDir, 'assets', 'figures');
 
+const groundInterfacePairs = [
+  {
+    id: 'zhongzhiyuan',
+    zh: 'key-area-zhongzhiyuan-ground-interface.svg',
+    en: 'key-area-zhongzhiyuan-ground-interface.en.svg',
+    required: {
+      zh: ['交通台', '人工', '无障碍', '回退', '不表达'],
+      en: ['enterprise desk', 'human', 'accessible', 'fallback', 'not an existing'],
+    },
+  },
+  {
+    id: 'ai-origin-community',
+    zh: 'key-area-ai-origin-community-ground-interface.svg',
+    en: 'key-area-ai-origin-community-ground-interface.en.svg',
+    required: {
+      zh: ['服务台', '人工', '轮椅', '退出', '不表达'],
+      en: ['community desk', 'human', 'wheelchair', 'exit', 'does not prove'],
+    },
+  },
+  {
+    id: 'dazhongsi',
+    zh: 'key-area-dazhongsi-transfer-interface.svg',
+    en: 'key-area-dazhongsi-transfer-interface.en.svg',
+    required: {
+      zh: ['轨道', '人工', '无障碍', '回退', '不表达'],
+      en: ['rail', 'human', 'accessible', 'fallback', 'does not prove'],
+    },
+  },
+];
+
+function numericAttr(attrs, name, fallback = 0) {
+  const match = attrs.match(new RegExp(`${name}="(-?\\d+(?:\\.\\d+)?)"`));
+  return match ? Number(match[1]) : fallback;
+}
+
+function svgText(svg) {
+  return [...svg.matchAll(/<text\b[^>]*>([\s\S]*?)<\/text>/g)]
+    .map((match) => match[1].replace(/<[^>]+>/g, '').trim())
+    .join(' ');
+}
+
+function checkGroundInterfacePair(pair) {
+  const errors = [];
+  const textCounts = {};
+  for (const [lang, file] of [['zh', pair.zh], ['en', pair.en]]) {
+    const target = path.join(figureDir, file);
+    if (!fs.existsSync(target)) {
+      errors.push(`${lang}: missing ${file}`);
+      continue;
+    }
+    const svg = fs.readFileSync(target, 'utf8');
+    if ((svg.match(/<svg\b/g) || []).length !== 1 || !svg.trim().endsWith('</svg>')) errors.push(`${lang}: malformed svg wrapper`);
+    if (!svg.includes('viewBox="0 0 1600 1000"')) errors.push(`${lang}: unexpected viewBox`);
+    const text = svgText(svg);
+    textCounts[lang] = (svg.match(/<text\b/g) || []).length;
+    for (const token of pair.required[lang]) {
+      if (!text.toLocaleLowerCase().includes(token.toLocaleLowerCase())) errors.push(`${lang}: missing semantic token ${token}`);
+    }
+    for (const match of svg.matchAll(/<rect\b([^>]*)\/?>/g)) {
+      const attrs = match[1];
+      const x = numericAttr(attrs, 'x');
+      const y = numericAttr(attrs, 'y');
+      const width = numericAttr(attrs, 'width');
+      const height = numericAttr(attrs, 'height');
+      if (x < 0 || y < 0 || x + width > 1600 || y + height > 1000) errors.push(`${lang}: rectangle outside viewBox`);
+    }
+  }
+  if (textCounts.zh !== textCounts.en) errors.push(`text token counts differ zh=${textCounts.zh} en=${textCounts.en}`);
+  return { id: pair.id, status: errors.length ? 'FAIL' : 'PASS', errors, text_counts: textCounts };
+}
+
+const groundInterfaceAudit = groundInterfacePairs.map(checkGroundInterfacePair);
+if (groundInterfaceAudit.some((result) => result.status === 'FAIL')) {
+  throw new Error(JSON.stringify({ ground_interface_audit: groundInterfaceAudit }, null, 2));
+}
+
 function readJson(rel) {
   return JSON.parse(fs.readFileSync(path.join(packageDir, rel), 'utf8'));
 }
@@ -285,6 +361,7 @@ updateVisualIndex('index.en.html', 'en');
 
 console.log(JSON.stringify({
   ok: true,
+  ground_interface_audit: groundInterfaceAudit,
   generated: ['assets/figures/mobility-spatial-plan.svg', 'assets/figures/mobility-spatial-plan.en.svg'],
   ribbon_boards: boardNames.flat(),
   source_boundary: 'geometry/site_boundary.geojson',
