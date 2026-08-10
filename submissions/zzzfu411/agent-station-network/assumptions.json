@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "assumption_id": "ASM-PROVISIONAL-BOUNDARY",
+      "statement": "Overall design and key-area polygons are provisional_rough organizer substitutes, not official redlines.",
+      "impact": "All area-sensitive metrics must be recomputed after official geometry arrives.",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-CONCEPT-ONLY",
+      "statement": "Station halls, platforms, and pilgrimage landmarks are conceptual urban-design suggestions for professional deepening.",
+      "impact": "No demolition, investment, or approval claims are made.",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-EPSG-4548",
+      "statement": "Metric areas are computed after projecting WGS84 polygons to EPSG:4548.",
+      "impact": "Small residual topology differences may appear if a different projection is used.",
+      "status": "active"
+    }
+  ]
+}

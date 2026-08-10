@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>京张站场网 · 展示板</title>
+<style>
+:root { --bg:#0b1c2c; --panel:#123047; --ink:#e8f1f8; --muted:#8aa4b8; --accent:#ff8a3d; --cyan:#3ecfcf; --line:#2a4a66; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+header, footer { padding:1.1rem 1.4rem; border-bottom:1px solid var(--line); }
+footer { border-bottom:none; border-top:1px solid var(--line); color:var(--muted); font-size:0.82rem; }
+h1 { margin:0; font-size:1.35rem; }
+h2 { margin:0 0 0.55rem; font-size:1.05rem; color:var(--cyan); }
+h3 { margin:0.2rem 0; font-size:0.95rem; }
+p { margin:0.35rem 0; color:var(--muted); }
+main { display:grid; gap:1rem; padding:1rem; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1rem; }
+.grid2 { display:grid; grid-template-columns:1.3fr 1fr; gap:1rem; }
+@media (max-width:900px) { .grid2 { grid-template-columns:1fr; } }
+.metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:0.6rem; }
+.metric { background:#0f2436; border-radius:8px; padding:0.75rem; }
+.metric span { display:block; color:var(--muted); font-size:0.78rem; }
+.metric strong { display:block; color:var(--accent); font-size:1.15rem; margin-top:0.2rem; }
+.pills span { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:0.15rem 0.55rem; margin:0.15rem; font-size:0.78rem; color:var(--muted); }
+ul { margin:0.3rem 0 0.3rem 1.1rem; }
+.matrix { display:grid; grid-template-columns:repeat(3,1fr); gap:0.6rem; }
+@media (max-width:900px) { .matrix, .metrics { grid-template-columns:1fr; } }
+.area-card { background:#0f2436; border-radius:8px; padding:0.75rem; }
+svg.map { width:100%; height:auto; background:#0f2436; border-radius:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>京张站场网 / Agent Station Network</h1>
+  <p>一廊三站双翼十二站台 · provisional 边界上的多智能体换乘式城市设计概念包</p>
+  <div class="pills">
+    <span>总览地图</span><span>三层范围</span><span>重点区域</span><span>用地分区</span>
+    <span>交通慢行</span><span>蓝绿公共空间</span><span>建筑</span><span>更新项目</span>
+    <span>AI 场景</span><span>核心指标</span><span>任务覆盖</span><span>自检状态</span>
+  </div>
+</header>
+<main>
+  <section class="card grid2">
+    <div>
+      <h2>总览地图</h2>
+      <p>设计层用地、重点区域虚线、慢行脊与横联叠加在同一证据图。</p>
+      <svg class="map" viewBox="116.3377 39.937 0.019600000000006276 0.09149999999999858" role="img" aria-label="站场网总览">
+      <g transform="translate(0 79.96549999999999) scale(1 -1)">
+        <path d="M 116.34914,39.93900 L 116.34703,39.93900 L 116.34620,40.02650 L 116.34831,40.02650 L 116.34914,39.93900 Z" fill="#2f6f4e" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.34270,40.02650 L 116.34620,40.02650 L 116.34643,40.00200 L 116.34144,40.00197 L 116.34170,40.00600 L 116.34270,40.02650 Z" fill="#3a6ea5" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.34144,40.00197 L 116.34643,40.00200 L 116.34680,39.96347 L 116.34002,39.96343 L 116.33970,39.97500 L 116.34144,40.00197 Z" fill="#3a6ea5" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.34002,39.96343 L 116.34680,39.96347 L 116.34703,39.93900 L 116.34070,39.93900 L 116.34002,39.96343 Z" fill="#c45c6a" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.35396,40.00204 L 116.34854,40.00201 L 116.34831,40.02650 L 116.35530,40.02650 L 116.35396,40.00204 Z" fill="#5b4f9a" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.35530,39.96500 L 116.35530,39.96352 L 116.34890,39.96348 L 116.34854,40.00201 L 116.35396,40.00204 L 116.35330,39.99000 L 116.35530,39.96500 Z" fill="#c4a35a" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/><path d="M 116.34914,39.93900 L 116.34890,39.96348 L 116.35530,39.96352 L 116.35530,39.93900 L 116.34914,39.93900 Z" fill="#b07d4f" fill-opacity="0.7" stroke="#e8f1f8" stroke-width="0.0004"/>
+        <path d="M 116.34300,40.00750 L 116.35400,40.00750 L 116.35400,40.02600 L 116.34300,40.02600 L 116.34300,40.00750 Z" fill="none" stroke="#ff5c7a" stroke-width="0.0012" stroke-dasharray="0.002 0.0015"/><path d="M 116.34200,39.98350 L 116.35300,39.98350 L 116.35300,39.99350 L 116.34200,39.99350 L 116.34200,39.98350 Z" fill="none" stroke="#ff5c7a" stroke-width="0.0012" stroke-dasharray="0.002 0.0015"/><path d="M 116.34200,39.94400 L 116.35500,39.94400 L 116.35500,39.94984 L 116.34200,39.94984 L 116.34200,39.94400 Z" fill="none" stroke="#ff5c7a" stroke-width="0.0012" stroke-dasharray="0.002 0.0015"/>
+        <polyline points="116.34808,39.93923 116.34725,40.02626" fill="none" stroke="#f0d78c" stroke-width="0.0008"/><polyline points="116.34035,39.95643 116.35531,39.95651" fill="none" stroke="#f0d78c" stroke-width="0.0008"/><polyline points="116.34018,39.97394 116.35459,39.97402" fill="none" stroke="#f0d78c" stroke-width="0.0008"/><polyline points="116.34075,39.99146 116.35340,39.99153" fill="none" stroke="#f0d78c" stroke-width="0.0008"/><polyline points="116.34183,40.00898 116.35436,40.00905" fill="none" stroke="#f0d78c" stroke-width="0.0008"/>
+      </g>
+    </svg>
+    </div>
+    <div>
+      <h2>核心指标</h2>
+      <div class="metrics">
+        <div class="metric"><span>site_area_sqm</span><strong data-metric="site_area_sqm" data-value="11412825.386">11.413 km²</strong></div>
+        <div class="metric"><span>green_ratio</span><strong data-metric="green_ratio" data-value="0.15324">15.32%</strong></div>
+        <div class="metric"><span>public_space_ratio</span><strong data-metric="public_space_ratio" data-value="0.004638">0.46%</strong></div>
+      </div>
+      <h2 style="margin-top:1rem;">自检状态</h2>
+      <p>目标：deterministic validation、spatial review、visual packaging、professional evidence 全通过后进入 formal review。当前边界为 provisional_constraint，仅供 intake 与概念讨论。</p>
+      <h2>任务覆盖</h2>
+      <div class="pills">
+        <span>agent.1</span><span>agent.2</span><span>agent.3</span><span>agent.4</span><span>agent.5</span><span>agent.6</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>三层范围</h2>
+    <div class="matrix">
+      <article class="area-card"><h3>统筹研究范围</h3><p>约 43.6 km²，产业生态、人才与未来城市策略。</p></article>
+      <article class="area-card"><h3>总体设计范围</h3><p>约 11.4 km²，站场网总体结构与慢行脊。</p></article>
+      <article class="area-card"><h3>重点区域范围</h3><p>三座总站详细概念设计。</p></article>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>重点区域</h2>
+    <div class="matrix">
+      <article class="area-card"><h3>众智园验证总站</h3><p>全栈测试、开源评测、治理话语实验。</p></article>
+      <article class="area-card"><h3>AI原点换乘厅</h3><p>校园—社区—开发者换乘与共创。</p></article>
+      <article class="area-card"><h3>大钟寺市集总站</h3><p>智能消费、商务班次与东西缝合。</p></article>
+    </div>
+  </section>
+
+  <section class="card grid2">
+    <div>
+      <h2>用地分区</h2>
+      <ul>
+        <li>1401 遗产站场绿廊</li>
+        <li>0802 科研验证站场</li>
+        <li>0804 校园产学换乘</li>
+        <li>0701/0702 生活与社区服务站台</li>
+        <li>05 智能服务与市集</li>
+      </ul>
+      <h2>交通慢行</h2>
+      <p>中央慢行脊贯通南北，东西横联缝合两侧生活与科研，服务步行、骑行与低速接驳。</p>
+      <h2>蓝绿公共空间</h2>
+      <p>廊道绿地、口袋公园与三站公共站台共同构成可停留网络；绿地率与公共空间占比见核心指标。</p>
+    </div>
+    <div>
+      <h2>建筑</h2>
+      <p>三座概念站厅 + 十二轻量站台亭，可逆建造，不作地块强拆结论。</p>
+      <h2>更新项目</h2>
+      <ul>
+        <li>近期：三站通车包、慢行脊贯通</li>
+        <li>中期：十二站台与两翼接口</li>
+        <li>远期：全球班次运营</li>
+      </ul>
+      <h2>AI 场景</h2>
+      <p>S01–S12 覆盖慢行安全、无障碍导引、陪诊、店务、评测公开轨、共享实验、人流韧性、遗产解说、合规助手、黑客松、微气候与公共艺术工坊。</p>
+    </div>
+  </section>
+
+  <section class="card grid2">
+    <div>
+      <h2>来源</h2>
+      <ul>
+        <li>正式公告与 agent taskbook</li>
+        <li>data/source_registry.json</li>
+        <li>provisional_boundaries.geojson</li>
+        <li>本包 geometry / metrics 复算</li>
+      </ul>
+    </div>
+    <div>
+      <h2>假设</h2>
+      <ul>
+        <li>边界为 provisional_rough，非 official redline</li>
+        <li>站厅站台为概念建议，供专业深化</li>
+        <li>面积在 EPSG:4548 下计算</li>
+        <li>人类保留最终判断权</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>离线静态页 · 无 CDN / 无远程瓦片 / 无外部脚本 · 图面不替代 geometry 与 metrics 权威层</footer>
+</body>
+</html>
