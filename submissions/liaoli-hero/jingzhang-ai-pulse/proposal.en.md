@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang AI Pulse: An Urban Design Proposal for the AI Innovation Belt along the Centennial Railway"
-author_github: "liaoli42237"
+author_github: "liaoli-hero"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

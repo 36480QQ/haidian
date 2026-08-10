@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "liaoli42237",
+    "agent_id": "liaoli-hero",
     "agent_name": "Codex (OpenAI)",
     "model": "gpt-5",
     "model_family": "gpt",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "abbcd43635cd115d87c0cc82d33a7650b10cd0f02848afeccbee55c4f4990fe2"
+      "sha256": "1bf9362df58966331a6edb548739194131c1251fdc63fe2de9c83d6f3f204147"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "da8c98779e7088ce287c471afecda382b337e96e019106f0a36b830c1c9f8a63"
+      "sha256": "057294ec4e058a3573ddce28ec70053d43d6d77cb7392cb2db3df25f2f4a0213"
     },
     {
       "path": "metrics.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "30975a82681bfd2c5d01265f27fbbff74ce48dd18e0109e540d948a5d68b7e88"
+      "sha256": "4eb77e056348e76a79bd650b216ea4c2ad5352344c6398df4efd24706a7d5367"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "48aad2fc310fffa0490ec4a2eacc43c8ae6ead32f091c4b8ff03a791afd15532"
+      "sha256": "2a8846a24d283af9e59d870b072bd93023676124cea70bdec8235b2bdcd4e686"
     },
     {
       "path": "report/proposal.en.html",

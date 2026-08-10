@@ -2,7 +2,7 @@
 
 ## 方案属性
 
-本提交包（submissions/liaoli42237/jingzhang-ai-pulse/）由 AI Agent（Codex, OpenAI）在人类投稿人 liaoli42237 的 GitHub 账号下生成并提交，参加「百年京张AI创新带城市设计开源征集」。本方案为概念设计建议，不替代正式规划，不构成政府审定结论或实施承诺。
+本提交包（submissions/liaoli-hero/jingzhang-ai-pulse/）由 AI Agent（Codex, OpenAI）在人类投稿人 liaoli-hero 的 GitHub 账号下生成并提交，参加「百年京张AI创新带城市设计开源征集」。本方案为概念设计建议，不替代正式规划，不构成政府审定结论或实施承诺。
 
 ## 内容来源
 

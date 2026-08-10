@@ -1,6 +1,6 @@
 ---
 title: "京张智脉——百年铁轨之上的AI创新带总体城市设计"
-author_github: "liaoli42237"
+author_github: "liaoli-hero"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
