@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional street-aligned boundary used; official redline pending (organizer data gap does not block content scoring)."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three key areas calibrated to announced areas (192.1/104.3/72.0 ha) as provisional polygons; official polygons pending."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use partition covers the site boundary without gaps or overlaps (topology-safe per community issue #1254)."
+    },
+    {
+      "check_id": "METRIC_RECALC",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "All core metrics recomputed from geometry in EPSG:4548 and consistent with spatial review."
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md / proposal.en.md",
+      "message": "Bilingual contract v1 satisfied: full translation, paired HTML, visual pages, A3/A0 PDFs; figures declared language-neutral."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "package",
+      "message": "Deterministic validation PASS (validate_local_submission)."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "package",
+      "message": "Spatial review PASS (only minor provisional-boundary notices)."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Offline static visual page PASS; metrics declared match metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "package",
+      "message": "Professional evidence review PASS (standards and depth matrices complete)."
+    },
+    {
+      "check_id": "PR_SCOPE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/yayanet/jingzhang-marshalling-yard/",
+      "message": "PR changes scoped to the participant directory only."
+    },
+    {
+      "check_id": "DATA_LICENSING",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "Only official/cleared/public sources used; OSM ODbL attribution registered; public-reporting URLs pending."
+    }
+  ]
+}
