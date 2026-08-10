@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.32"
+iteration: "v2.33"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -174,17 +174,17 @@ P0 先由获得授权的组织安排有日期的分时聚合 OD 和方式计数�
 
 每个重点区都要有企业责任人、社区/公共服务责任人、交通专业复核人和维护责任人，记录目标、输入、停止条件和回读证据；现阶段不声称已有合作方或运营许可 [depth:three_key_area_detailed_design] [source:HAIDIAN-ROAD-PARKING-TENDER-2026]。
 
-### 三处重点区的概念体量与空间界面
+### 三处重点区的公共界面与可逆服务关系
 
-交通动作不能替代城市设计。下面的体量台账只把三处重点区的交通角色翻译成可讨论的界面和强度范围，不改变现有几何，也不把范围写成控规指标。公告约面积约为 192.1、104.3、72.0 公顷，仅作任务尺度，不是现状建筑面积、地块边界或控规指标 [data:geometry/key_areas.geojson#PROV-KEY-001] [source:OFFICIAL-ANNOUNCEMENT]。
+交通动作不能替代城市设计。下面的台账只把三处重点区的交通角色翻译成公共界面和可逆服务关系，不改变现有几何，也不把范围写成控规指标。公告约面积约为 192.1、104.3、72.0 公顷，仅作任务尺度，不是现状建筑面积、地块边界或控规指标 [data:geometry/key_areas.geojson#PROV-KEY-001] [source:OFFICIAL-ANNOUNCEMENT]。
 
-| 重点区 | 空间关系 | 概念强度范围 | 面向公共界面的高度 | 首先补齐的专业证据 |
+| 重点区 | 空间关系 | 公共界面与可逆关系 | 上部高度资料 | 首先补齐的专业证据 |
 | --- | --- | --- | --- | --- |
-| 众智园 AI 自主创新加速区 | 企业入口、班车候车、装卸与消防净空分层，首层优先服务到岗和物流 | FAR 1.2–1.8，仅作方案比较 | 2–4 层；上部高度未知 | 现状建筑、能源与消防、产权、企业 OD 和路缘测绘 |
-| 北京 AI 原点社区 | 社区服务台、连续步行/无障碍路线、遮雨候车与日常服务相邻 | FAR 1.0–1.5，仅作方案比较 | 2–3 层；上部高度未知 | 无障碍走查、居民服务基线、权属、照护与夜间安全证据 |
-| 大钟寺 AI 产业聚集区 | 轨道换乘、骑行停放、公共首层和路缘装卸形成清晰分界 | FAR 0.8–1.3，仅作方案比较 | 1–3 层；上部高度未知 | 站口客流、路缘计数、交通组织、消防与市政接口 |
+| 众智园 AI 自主创新加速区 | 企业入口、班车候车、装卸与消防净空分层，首层优先服务到岗和物流 | 人工前台与公众观察席相邻；设备、维护和测试后场可关闭；不切断慢行主链 | 正式资料待补 | 现状建筑、能源与消防、产权、企业 OD 和路缘测绘 |
+| 北京 AI 原点社区 | 社区服务台、连续步行/无障碍路线、遮雨候车与日常服务相邻 | 人工柜台、纸面入口和代际共学朝向普通路径；测试组件可拆、可暂停 | 正式资料待补 | 无障碍走查、居民服务基线、权属、照护与夜间安全证据 |
+| 大钟寺 AI 产业聚集区 | 轨道换乘、骑行停放、公共首层和路缘装卸形成清晰分界 | 轨道到达、安静链和服务前台分流；活动与数据展示可撤回、不占日常通行 | 正式资料待补 | 站口客流、路缘计数、交通组织、消防与市政接口 |
 
-FAR 和层数是概念设计范围，不是官方规划条件、建筑许可或建设承诺；正式方案必须在现状测绘、控规核验、产权、消防、结构、市政和公众参与完成后重新计算 [depth:height_massing_character] [depth:development_intensity_controls]。
+这些关系只用于比较普通路径、人工服务、设备后场与上部功能如何错开，不定义开发强度、体量、拆改清单或工程容量；正式方案必须在现状测绘、控规核验、产权、消防、结构、市政和公众参与完成后再计算 [depth:height_massing_character] [depth:development_intensity_controls]。
 
 在证据尚未齐备前，首个空间动作仍限定为入口导向、候车遮雨、骑行停放、无障碍坡道和路缘状态牌等可撤回设施；不据此提出道路拓宽、建筑增量或拆改结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
@@ -246,6 +246,19 @@ FAR 和层数是概念设计范围，不是官方规划条件、建筑许可或�
 ### 一张时段路缘账本
 
 路缘单元采用 `open` 公共通行、`booked` 企业班车和接送、`service` 维护和装卸、`human-only` 无障碍与人工优先、`emergency` 应急五种状态。每次变更至少写入责任人、起止时间、服务对象、清场动作、替代路线和投诉入口。默认时间窗只是试验参数。早高峰、午间配送、放学或下班、夜间维护都要先做人工计数和居民参与，再决定分钟级分配。企业获得的是可审计的短时服务，不是永久路权；居民获得的是不被预约切断的连续公共路线。
+
+### M-09 节点级路缘功能断面（无尺度）
+
+为避免 M-09 只被读成一组 readiness 字段，本包用大钟寺 `PROV-KEY-003` 与 `ROAD-002` 作为一个**待核节点**，把候车、人工交接、可关闭服务窗口和应急退避排成一条功能序列。`visual/assets/m09-curb-spatial-prototype.json` 只表达功能带和状态转换，不声称现实站口、道路断面、尺寸、容量或已运行服务；正式站口位置和清障窗口须由专业走读与责任主体确认。[data:visual/assets/m09-curb-spatial-prototype.json] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:traffic_rail_slow_parking]
+
+| 功能带 | 可见状态 | 进入前证据 | 失效时的空间动作 |
+| --- | --- | --- | --- |
+| 人行与无障碍连续带 | `open / human-only` | 分段走读、过街/坡度/照明/障碍记录、人工绕行 | 受阻即改道或人工指引，暂停 `booked/service` |
+| 候车与人工交接带 | `booked / human-only` | 候车/站口观察、人工责任角色、公共交通替代路径 | 断网或错过衔接即转人工和轨道/公交 |
+| 可关闭的路缘服务窗口 | `booked / service` | 路缘资产、服务对象分组、起止时间、清场、消防与无障碍条件 | 缺任一条件就不预约、不占用公共路缘 |
+| 维护与应急退避带 | `service / emergency` | 维护责任、异常清场、天气/中断触发器、复盘入口 | 冻结预约，恢复开放/人工优先并回到 P0 |
+
+这不是工程横断面，而是让评审者看见“谁在什么位置先获得通行权、谁能停止、何时清场”的中间层；尺寸、容量、站口客流和现场服务结果继续保持 `unknown`。[data:visual/assets/mobility-pilot-readiness.json]
 
 ### 两侧需求台账与四项服务水平
 
@@ -397,6 +410,17 @@ B2 解决“平时怎么选”，B3 继续问“地铁中断、恶劣天气或�
 实施与运营合同另以 `visual/assets/implementation-operation-contract.json` 登记 P0/P1/P2 的参与角色、验收指标、人工回退与停止或撤回条件。它是概念责任接口，机构、合同、资金、采购、许可和运营承诺都尚未确定；任一 `unknown` 基线、同意或责任边界缺失，或者硬门失败，都保持在调查或人工回退状态 [data:visual/assets/implementation-operation-contract.json] [depth:phasing_implementation]。
 
 为把“人工回退”写成可复核的最小动作，本轮把既有 M-09 雨雪和断网服务降级卡做成离线桌面演练，没有新增已运行场景。`visual/assets/mobility-tabletop-contract.json` 固定 4 条合成服务请求、4 个触发事件、6 项验收检查和 5 个可逆回滚步骤；`node visual/assets/run-mobility-tabletop.js --check` 只读回包内 fixture，不联网、不接触个人数据、不调用外部系统，也不产生持久化状态，并输出 `mobility-tabletop-evidence.json` 同构的聚合回读。当前演练为 4/4 请求保留人工或公共交通入口、预约冻结、6/6 检查通过、5/5 回滚步骤复演；`performance_results=null`、`operational_status=not_authorized_not_run`。PASS 只证明状态、停止和回滚逻辑可检查，不推进 P1/P2，也不证明真实值守、无障碍绩效、公众接受、服务可用性或安全 [data:visual/assets/mobility-tabletop-contract.json] [data:visual/assets/mobility-tabletop-evidence.json] [data:visual/assets/run-mobility-tabletop.js]。
+
+公开意见里反复出现的一个问题是“谁确认了基线，什么时候才算能开始”。因此本轮没有再增加一组泛化指标，而是把 M-09 的四条合成请求各自收成一张准备度卡。每张卡都要在授权前登记观察对象、样本和时间窗，冻结成功与停止条件，写明运营责任和独立停机复核人，保留人工等价服务、保留/删除规则、申诉入口和复核周期。当前四张卡的本地基线、观察值、授权组织和删除凭证均保持 `unknown` 或 `not_available_before_authorization`；三条故意缺字段的负样本会被拒绝。`run-mobility-pilot-readiness.js --check` 的 PASS 只证明字段链闭合，不证明任何现场准备度或 P1 资格 [data:visual/assets/mobility-pilot-readiness.json] [data:visual/assets/mobility-pilot-readiness-evidence.json] [data:visual/assets/run-mobility-pilot-readiness.js]。
+
+| 请求 | 先登记什么 | 成功与停止怎么写 | 普通人如何申诉 |
+| --- | --- | --- | --- |
+| 居民日常照护 `M09-R01` | 分组服务类型、时间窗、照护与无障碍类别 | 保留人工/电话/纸面/公共交通入口；回退不可用或不能退出就停 | 社区服务台、电话或纸面入口 |
+| 轮椅无障碍路线 `M09-R02` | 路段、交接点、天气状态和有日期的走查 | 连续路线和人工协助可回放；路线中断或把无日期走查写成结果就停 | 人工路线台、电话或纸面入口 |
+| 企业班车时窗 `M09-R03` | 聚合需求、车型、路缘资产和装卸时窗 | 责任人、消防净空和无障碍路线齐全才可讨论窗口；缺一项不预约 | 现场人工、电话或纸面入口 |
+| 轨道站最后一程 `M09-R04` | 站口、到达时段、方式和无障碍需求分组 | 人工引导和公共交通始终可走；责任不明或无日期观察就停 | 站内人工、电话或纸面入口 |
+
+这四张卡与十张启动清单、M-09 桌面演练和 P0/P1/P2 责任合同互相回接。它们把“以后补基线”改成了可拒绝旁路的字段要求，同时不把某一包的命名升级为全仓硬门槛；如果维护者后续形成 canonical、版本化的 pilot-readiness 合同，本包会按字段对照和存量影响迁移。
 
 ![M-09 雨雪和断网服务降级。人工回退桌面演练](assets/figures/mobility-tabletop-board.svg)
 

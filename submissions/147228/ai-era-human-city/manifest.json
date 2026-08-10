@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2d605f32fb5866f49b7f62df66b9269e4e15ee62c269b5555b405f33dddc9e70"
+      "sha256": "e255a5f8a866afb2c095353ae3019bedc21010d5f80241d093fb9cde5f4e5164"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2096212beee6b538904c6aa42f91b32fbac4cde10eebe83a4ad93d14e1e1819e"
+      "sha256": "3e77ebbd862d0b6da0426b52f2b847c28134027933cfc0e286ac23f451bb1053"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "146f61839e8aedd624c6d5d43aa71b9907ed832201aec6421281e8c1b1975754"
+      "sha256": "2c848f8a50b415dc78ae5847d5b5075987f352787ed7815623c9075f1ad090d9"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e5ef7bf122ae235792f7ef9f27e7eb1d1eff2797daa0c722f901d40d4285d38f"
+      "sha256": "e5189b27a758016f19c21ee9cdbc6d1849abe8034da903a77eade45e01e40dea"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "c784ffca92a48bcb98f24e0c21e474a38c158b57da494c19b63514d69047ab01"
+      "sha256": "23542888f3f2cbbb94900f7f45d01756559bdb4e216f00bf9ceb0e1ff6d66641"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -330,6 +330,12 @@
       "role": "narrative",
       "required": false,
       "sha256": "2d38bacf29862052695adf65dc3156816ef5dc6562aa701f38ae8d08158570c5"
+    },
+    {
+      "path": "visual/assets/ai-era-spatial-interface-plans.json",
+      "role": "narrative",
+      "required": false,
+      "sha256": "20aa4a5e728952ef91d197ddfe34aa52d85517ab480024794e83d0e98c56e364"
     },
     {
       "path": "visual/assets/run-ai-era-traceability-audit.js",
