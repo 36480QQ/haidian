@@ -4,8 +4,6 @@ proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
 version: "1.4.0"
-proposal_format_version: 2
-bilingual_contract_version: 1
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
