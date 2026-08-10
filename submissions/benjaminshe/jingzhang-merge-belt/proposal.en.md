@@ -32,7 +32,7 @@ As of 2026-08-08 the official `SITE_BOUNDARY` and three `KEY_AREA` polygons have
 
 ## Task Response Matrix (announcement and taskbook, item by item)
 
-The table below maps the six agent tasks of the repository taskbook to this proposal's sections and evidence for quick verification [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT]:
+The table below maps the six agent tasks of the repository taskbook to this proposal's sections and evidence for quick verification [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
 
 | Task | Response in this proposal | Evidence location |
 | --- | --- | --- |
@@ -43,9 +43,11 @@ The table below maps the six agent tasks of the repository taskbook to this prop
 | agent.5 Jing-Zhang heritage, Zhongguancun culture, and AI new-culture narrative | Three-layer narrative (railway heritage—Zhongguancun innovation—AI new culture), signage and symbol system, international communication copy | Culture narrative and public space sections |
 | agent.6 Global AI activity system and long-term operation | Annual activity system (monthly log / quarterly actions / annual Merge Day), developer community operation, scenario-access operation, international outreach and attraction | "Renewal Project List, Implementation Policy, and Phasing" section, metrics |
 
+The table above responds item by item to the announcement and the taskbook; its source chain [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT] aligns with the repository taskbook originals.
+
 ## Three-Level Scope Framework
 
-The three levels follow a "**watershed — mainline — merge node**" progression rather than scaling up one master plan [depth:three_level_scope_framework]:
+The three levels follow a "**watershed — mainline — merge node**" progression rather than scaling up one master plan [depth:overall_spatial_structure][depth:three_level_scope_framework]:
 
 - **Coordinated Research Area (43.6 km², watershed layer):** answers how the AI industry chain, talent chain, public service chain, and cultural communication chain originate, diverge, and converge in Haidian; defines the three-zone/two-wing merge loop and factor mechanisms.
 - **Overall Design Area (11.4 km², mainline layer):** treats the Jing-Zhang heritage corridor as the **Mainline**, and carries the merge relationships into land use, slow mobility, blue-green, renewal, and public service frameworks; east–west tributaries join the mainline here [data:geometry/land_use.geojson#LU-001].

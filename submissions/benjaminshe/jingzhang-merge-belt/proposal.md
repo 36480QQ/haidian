@@ -32,7 +32,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 
 ## 任务响应矩阵（公告与任务书逐条回应）
 
-下表把仓库任务书 6 项智能体任务逐条映射到本方案的章节与证据，供评审快速核验 [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT]：
+下表把仓库任务书 6 项智能体任务逐条映射到本方案的章节与证据，供评审快速核验 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]：
 
 | 任务条目 | 本方案回应 | 证据位置 |
 | --- | --- | --- |
@@ -43,9 +43,11 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 | agent.5 百年京张文化、中关村文化与 AI 新文化叙事 | 铁路文脉—中关村创新—AI 新文化三层叙事、导视与符号系统、国际传播文案 | 文化叙事章、公共空间章 |
 | agent.6 一带全球 AI 创新活动体系与长期运营 | 年度活动体系（月度日志/季度动作/年度合流日）、开发者社区运营、场景开放运营、国际传播与招引转化 | “更新项目清单、实施政策与分期计划”章、metrics |
 
+上表逐条回应公告与任务书，来源链 [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT] 与仓库任务书原文对齐。
+
 ## 三层范围工作框架
 
-三层范围采用"**流域—主线—合流节点**"的递进，而非把一张总图按比例放大 [depth:three_level_scope_framework]：
+三层范围采用"**流域—主线—合流节点**"的递进，而非把一张总图按比例放大 [depth:overall_spatial_structure][depth:three_level_scope_framework]：
 
 - **统筹研究范围（43.6 km²，流域层）**：回答 AI 产业链、人才链、公共服务链与文化传播链在海淀如何发源、分流、汇合；明确三区两翼的合流回路与要素机制。
 - **总体设计范围（11.4 km²，主线层）**：以京张遗址走廊为**主线 Mainline**，把合流关系落到用地、慢行、蓝绿、更新与公共服务骨架；东西向支流在此并入主线，20 个用地分区完整覆盖 [data:geometry/land_use.geojson#LU-001]。
