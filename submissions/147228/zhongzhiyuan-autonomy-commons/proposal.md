@@ -14,7 +14,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > **一句话判断**：未来自动驾驶越普及，城市越不能只为车设计。京张带要先把“人、轮椅、儿童、骑行者和维护人员的连续通行权”写进路缘、节点、运营和回退，再讨论车辆进入哪里。
 
-本方案是一个独立的自动驾驶公共性迭代，不是对“京张开源脉冲”原方案的换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。
+本方案是一个独立的自动驾驶公共性迭代，不是把既有投稿直接换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。
 
 ## 一页执行摘要：先验收一条公共服务链，再谈自动化扩展
 
@@ -77,6 +77,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![自动驾驶公共带总览：三座试验庭、两条安全网和阶段门槛](assets/figures/site-overview.png)
 
 图注：总览图把三座试验庭放在一条公共轴上，并把人本安全网、生态与数据安全网和分期门槛作为同一套空间关系阅读；它不表达法定边界或已开放道路。
+
+### 三节点空间证据链：从点位到可回放的公共路径
+
+总览图只回答“哪里形成关系”，因此本轮把三处节点继续拆成可回放的空间证据链：`geometry/key_areas.geojson` 的三个 provisional 重点区 → `autonomy_nodes.json` 的三个 provisional 点位 → `autonomy-node-interface-plans.json` 的五阶段公共界面 → `autonomous-scenarios.json` 的 12 张场景卡 → `curbside-test-gates.json` 的停止闸门。这样，图上的每个节点都有重点区 feature ID、场景 ID、用户群、首要证据和停止规则，不会把概念点位误读为道路或已部署设施 [data:visual/assets/autonomy-spatial-chain.json#AUTO-NODE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:key_area_design]。
+
+五个空间动作固定为：普通人路径 → 公开状态与同意 → 受限服务窗口 → 人工接管或停止 → 恢复普通路径。第一处优先验证可关闭的安全评测庭，第二处优先验证老人、轮椅使用者和不会使用 App 的居民仍能通过纸面/电话/人工完成同一服务，第三处优先验证轨道到达、安静通行、物流维护和活动日人工路线分离。只要缺少现场测绘、消防/能源、责任主体、无障碍走查、居民服务基线或应急证据，就停在“概念建议/参考方案”状态，不得扩容 [data:visual/assets/autonomy-spatial-chain.json#CHAIN-CHECK-03]。
+
+![三节点空间证据链：节点、重点区、场景与停止规则](assets/figures/autonomy-spatial-chain.svg)
+
+图注：三行节点均标注 `official_boundary=false`、`geometry_role=provisional_constraint`、`dimensions=null` 和 `official_road=false`；审计关系线也不是车辆路线。该图与 JSON 检查器只证明引用关系可回放，不证明道路许可、工程可行性、运营绩效或安全结果。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
