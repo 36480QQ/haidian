@@ -32,6 +32,22 @@
     "overall_structure": {
       "path": "spatial/overall_structure.geojson",
       "feature_count": 23
+    },
+    "land_use_program": {
+      "path": "spatial/land_use_program.geojson",
+      "feature_count": 18
+    },
+    "mobility": {
+      "path": "spatial/mobility.geojson",
+      "feature_count": 7
+    },
+    "blue_green_heritage": {
+      "path": "spatial/blue_green_heritage.geojson",
+      "feature_count": 13
+    },
+    "massing": {
+      "path": "spatial/massing.geojson",
+      "feature_count": 18
     }
   }
 }

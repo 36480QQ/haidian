@@ -55,6 +55,10 @@ def polygon(coordinates):
     return {"type": "Polygon", "coordinates": [ring]}
 
 
+def multi_line(coordinates):
+    return {"type": "MultiLineString", "coordinates": coordinates}
+
+
 def collection(name, features):
     return {"type": "FeatureCollection", "name": name, "features": features}
 
@@ -265,6 +269,267 @@ def build_overall():
     return collection("jzoi_gate_b_overall_structure", features)
 
 
+def rect(x1, y1, x2, y2, chamfer=0.0):
+    if not chamfer:
+        return polygon([[x1, y1], [x2, y1], [x2, y2], [x1, y2]])
+    return polygon(
+        [
+            [x1 + chamfer, y1],
+            [x2, y1],
+            [x2, y2 - chamfer],
+            [x2 - chamfer, y2],
+            [x1, y2],
+            [x1, y1 + chamfer],
+        ]
+    )
+
+
+def build_land_use_program():
+    specs = [
+        ("DZS-01", "mobility_interface", 116.3424, 39.9444, 116.3450, 39.9460, ["JZOI-P06"], ["DZS"]),
+        ("DZS-02", "mixed_public_commercial", 116.3452, 39.9444, 116.3480, 39.9460, ["JZOI-P06"], ["DZS"]),
+        ("DZS-03", "enterprise_service", 116.3482, 39.9444, 116.3512, 39.9460, ["JZOI-P07"], ["DZS"]),
+        ("DZS-04", "cultural_heritage", 116.3424, 39.9473, 116.3460, 39.9493, ["JZOI-P07"], ["DZS"]),
+        ("DZS-05", "community_life_service", 116.3500, 39.9473, 116.3545, 39.9493, ["JZOI-P10"], ["DZS"]),
+        ("ORG-01", "research_r_and_d", 116.3424, 39.9840, 116.3450, 39.9870, ["JZOI-P04"], ["ORG", "ECO-RESEARCH"]),
+        ("ORG-02", "enterprise_service", 116.3500, 39.9840, 116.3526, 39.9870, ["JZOI-P05"], ["ORG"]),
+        ("ORG-03", "mixed_public_commercial", 116.3454, 39.9840, 116.3496, 39.9870, ["JZOI-P04"], ["ORG"]),
+        ("ORG-04", "innovation_testing", 116.3424, 39.9900, 116.3453, 39.9930, ["JZOI-P05"], ["ORG", "ZZY"]),
+        ("ORG-05", "community_life_service", 116.3497, 39.9900, 116.3526, 39.9930, ["JZOI-P10"], ["ORG"]),
+        ("ORG-06", "blue_green_public_realm", 116.3457, 39.9900, 116.3493, 39.9930, ["JZOI-P09"], ["ORG"]),
+        ("ZZY-01", "innovation_testing", 116.3434, 40.0080, 116.3464, 40.0120, ["JZOI-P02"], ["ZZY"]),
+        ("ZZY-02", "research_r_and_d", 116.3506, 40.0080, 116.3536, 40.0120, ["JZOI-P02"], ["ZZY"]),
+        ("ZZY-03", "blue_green_public_realm", 116.3434, 40.0220, 116.3470, 40.0255, ["JZOI-P03"], ["ZZY"]),
+        ("ZZY-04", "enterprise_service", 116.3500, 40.0185, 116.3536, 40.0220, ["JZOI-P03"], ["ZZY"]),
+        ("ZZY-05", "mobility_interface", 116.3434, 40.0130, 116.3456, 40.0180, ["JZOI-P01"], ["ZZY"]),
+        ("ZZY-06", "community_life_service", 116.3514, 40.0130, 116.3536, 40.0180, ["JZOI-P10"], ["ZZY"]),
+        ("ZZY-07", "cultural_heritage", 116.3470, 40.0222, 116.3500, 40.0255, ["JZOI-P11"], ["ZZY"]),
+    ]
+    activities = {
+        "research_r_and_d": ["research", "translation", "shared labs"],
+        "innovation_testing": ["controlled testing", "prototype support", "human review"],
+        "enterprise_service": ["enterprise support", "procurement", "adoption review"],
+        "mixed_public_commercial": ["public hall", "retail", "exhibition", "civic service"],
+        "community_life_service": ["neighborhood service", "talent service", "staffed fallback"],
+        "cultural_heritage": ["interpretation", "culture", "public room"],
+        "blue_green_public_realm": ["rainwater", "ecology", "walking", "public space"],
+        "mobility_interface": ["walking", "cycling", "transfer", "wayfinding"],
+    }
+    features = []
+    for unit_id, program_class, x1, y1, x2, y2, projects, ecosystem in specs:
+        features.append(
+            feature(
+                f"PROGRAM-{unit_id}",
+                rect(x1, y1, x2, y2, min((x2 - x1), (y2 - y1)) * 0.12),
+                "program_unit",
+                "OVERALL-DESIGN-001",
+                program_class=program_class,
+                role=f"{unit_id} {program_class.replace('_', ' ')} design unit",
+                compatible_activities=activities[program_class],
+                project_refs=projects,
+                ecosystem_refs=ecosystem,
+                confidence="low",
+                planning_status="non_statutory_design_concept",
+            )
+        )
+    return collection("jzoi_gate_b_land_use_program", features)
+
+
+def build_mobility(existing):
+    road_context = feature_by_id(existing, "EX-ROAD-001")
+    features = [
+        feature(
+            "MOB-BG-ROAD-NS",
+            road_context["geometry"],
+            "mobility_background",
+            "OVERALL-DESIGN-001",
+            evidence_class=road_context["properties"]["evidence_class"],
+            design_status="background_reference",
+            geometry_role="context_evidence",
+            mobility_class="background_road_context",
+            source_feature_id="EX-ROAD-001",
+            redline_claim=False,
+            containment_applicable=False,
+        ),
+        feature(
+            "MOB-PROPOSED-STREETS",
+            multi_line(
+                [
+                    [[116.3424, 39.9465], [116.3545, 39.9465]],
+                    [[116.3424, 39.9885], [116.3526, 39.9885]],
+                    [[116.3434, 40.0165], [116.3536, 40.0165]],
+                ]
+            ),
+            "mobility_design",
+            "OVERALL-DESIGN-001",
+            mobility_class="proposed_street",
+            public_path=True,
+            redline_claim=False,
+        ),
+        feature(
+            "MOB-PEDESTRIAN-NETWORK",
+            multi_line(
+                [
+                    [[116.3460, 39.9452], [116.3485, 39.9470], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]],
+                    [[116.3418, 39.9885], [116.3530, 39.9885]],
+                    [[116.3432, 40.0165], [116.3538, 40.0165]],
+                ]
+            ),
+            "mobility_design",
+            "OVERALL-DESIGN-001",
+            mobility_class="pedestrian_path",
+            public_path=True,
+            access_intent="step-free; detailed grades require survey",
+        ),
+        feature(
+            "MOB-CYCLE-NETWORK",
+            multi_line(
+                [
+                    [[116.3430, 39.9482], [116.3537, 39.9482]],
+                    [[116.3426, 39.9927], [116.3524, 39.9927]],
+                    [[116.3435, 40.0238], [116.3534, 40.0238]],
+                ]
+            ),
+            "mobility_design",
+            "OVERALL-DESIGN-001",
+            mobility_class="cycleway",
+            public_path=True,
+        ),
+        feature(
+            "MOB-LOGISTICS-NETWORK",
+            multi_line(
+                [
+                    [[116.3542, 39.9445], [116.3542, 39.9488]],
+                    [[116.3524, 39.9840], [116.3524, 39.9870]],
+                    [[116.3534, 40.0080], [116.3534, 40.0148]],
+                ]
+            ),
+            "mobility_design",
+            "OVERALL-DESIGN-001",
+            mobility_class="service_logistics",
+            public_path=False,
+            separation_rule="time and access controlled; no public-path claim",
+        ),
+        feature(
+            "MOB-EMERGENCY-NETWORK",
+            multi_line(
+                [
+                    [[116.3426, 39.9446], [116.3426, 39.9490]],
+                    [[116.3426, 39.9840], [116.3426, 39.9928]],
+                    [[116.3435, 40.0080], [116.3435, 40.0248]],
+                ]
+            ),
+            "mobility_design",
+            "OVERALL-DESIGN-001",
+            mobility_class="emergency_access",
+            public_path=False,
+            separation_rule="controlled emergency access; detailed code review pending",
+        ),
+        feature(
+            "DZS-STATION-BACKGROUND-RELATIONSHIP",
+            None,
+            "unresolved_station_relationship",
+            "KEY-AREA-SCOPE-DZS",
+            evidence_class="DATA_GAP",
+            design_status="background_reference",
+            geometry_role="unresolved_context",
+            mobility_class="rail_station_background_relationship",
+            source_feature_id="EX-TRANSIT-003",
+            physical_connection_claim=False,
+            station_entrance_claim=False,
+        ),
+    ]
+    return collection("jzoi_gate_b_mobility", features)
+
+
+def build_blue_green_heritage(existing):
+    features = []
+    for source_id in ["EX-WATER-001", "EX-WATER-002", "EX-RAIL-001", "EX-RAIL-002"]:
+        item = feature_by_id(existing, source_id)
+        props = item["properties"]
+        features.append(
+            feature(
+                f"BGH-BG-{source_id}",
+                item["geometry"],
+                "background_blue_green_heritage",
+                "OVERALL-DESIGN-001",
+                evidence_class=props["evidence_class"],
+                design_status="background_reference",
+                geometry_role=props["geometry_role"],
+                source_feature_id=source_id,
+                source_ids=props["source_ids"],
+                exact_boundary_claim=False,
+            )
+        )
+    proposals = [
+        ("QINGHE-RAIN-EDGE", "rainwater_ecology", rect(116.3433, 40.0208, 116.3537, 40.0220), ["ZZY"]),
+        ("XIAOYUEHE-SCENARIO-SPINE", "ecology_scenario", line([[116.3530, 39.9760], [116.3520, 39.9885], [116.3530, 40.0020]]), ["ORG", "ZZY"]),
+        ("JINGZHANG-PUBLIC-SEQUENCE", "heritage_public_sequence", line([[116.3460, 39.9452], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]]), ["DZS", "ORG", "ZZY"]),
+        ("DZS-CIVIC-RAIN-ROOM", "rainwater_public_room", rect(116.3464, 39.9462, 116.3496, 39.9477), ["DZS"]),
+        ("ORG-COMMONS-GARDEN", "commons_garden", rect(116.3455, 39.9875, 116.3495, 39.9895), ["ORG"]),
+        ("ZZY-OBSERVATION-WETLAND", "safety_ecology_buffer", rect(116.3462, 40.0182, 116.3508, 40.0195), ["ZZY"]),
+        ("SOUTH-RAIN-STITCH", "rainwater_stitch", line([[116.3418, 39.9550], [116.3538, 39.9550]]), ["OVERALL"]),
+        ("CENTRAL-RAIN-STITCH", "rainwater_stitch", line([[116.3418, 39.9800], [116.3530, 39.9800]]), ["OVERALL"]),
+        ("NORTH-RAIN-STITCH", "rainwater_stitch", line([[116.3432, 40.0060], [116.3538, 40.0060]]), ["OVERALL"]),
+    ]
+    for item_id, system_class, geometry, endpoints in proposals:
+        features.append(
+            feature(
+                f"BGH-{item_id}",
+                geometry,
+                "proposed_blue_green_heritage",
+                "OVERALL-DESIGN-001",
+                system_class=system_class,
+                endpoint_refs=endpoints,
+                statutory_green_claim=False,
+                water_boundary_claim=False,
+                functions=["public realm", "walking/cycling support", "rainwater/ecology intent"],
+            )
+        )
+    return collection("jzoi_gate_b_blue_green_heritage", features)
+
+
+def build_massing():
+    specs = [
+        ("DZS-A", 116.3428, 39.9445, 116.3445, 39.9457, "medium", "active_service"),
+        ("DZS-B", 116.3450, 39.9445, 116.3466, 39.9457, "low", "public_commercial"),
+        ("DZS-C", 116.3498, 39.9445, 116.3514, 39.9457, "medium", "enterprise_service"),
+        ("DZS-D", 116.3520, 39.9445, 116.3540, 39.9457, "tall", "landmark_support"),
+        ("DZS-E", 116.3430, 39.9481, 116.3455, 39.9492, "low", "culture"),
+        ("DZS-F", 116.3508, 39.9481, 116.3538, 39.9492, "medium", "talent_service"),
+        ("ORG-A", 116.3430, 39.9842, 116.3448, 39.9864, "medium", "research"),
+        ("ORG-B", 116.3454, 39.9842, 116.3470, 39.9864, "low", "open_source_commons"),
+        ("ORG-C", 116.3498, 39.9842, 116.3518, 39.9864, "medium", "startup"),
+        ("ORG-D", 116.3430, 39.9905, 116.3448, 39.9926, "medium", "prototype"),
+        ("ORG-E", 116.3454, 39.9905, 116.3472, 39.9926, "low", "neighborhood_service"),
+        ("ORG-F", 116.3500, 39.9905, 116.3520, 39.9926, "tall", "talent_service"),
+        ("ZZY-A", 116.3440, 40.0083, 116.3460, 40.0112, "medium", "enterprise_test"),
+        ("ZZY-B", 116.3508, 40.0083, 116.3530, 40.0112, "medium", "human_review"),
+        ("ZZY-C", 116.3440, 40.0130, 116.3455, 40.0174, "low", "public_observation"),
+        ("ZZY-D", 116.3515, 40.0130, 116.3530, 40.0174, "medium", "test_support"),
+        ("ZZY-E", 116.3440, 40.0225, 116.3465, 40.0248, "low", "ecology_workshop"),
+        ("ZZY-F", 116.3505, 40.0225, 116.3530, 40.0248, "tall", "landmark_support"),
+    ]
+    features = []
+    for index, (item_id, x1, y1, x2, y2, hierarchy, ground_floor) in enumerate(specs):
+        features.append(
+            feature(
+                f"MASS-{item_id}",
+                rect(x1, y1, x2, y2, min(x2 - x1, y2 - y1) * 0.15),
+                "concept_massing",
+                "OVERALL-DESIGN-001",
+                object_status=["concept_building", "concept_massing", "new_design_volume"][index % 3],
+                height_hierarchy=hierarchy,
+                height_status="relative_design_envelope",
+                ground_floor_role=ground_floor,
+                active_ground_floor=True,
+                frontage_rule="face public room or stitch; detailed setback requires survey",
+                existing_building_claim=False,
+            )
+        )
+    return collection("jzoi_gate_b_massing", features)
+
+
 def build_all(root=ROOT, write=True):
     root = Path(root)
     boundaries = read_json(REPO / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson")
@@ -274,6 +539,10 @@ def build_all(root=ROOT, write=True):
     layers = {
         "regional_ecosystem": build_regional(existing, ecosystem_edges),
         "overall_structure": build_overall(),
+        "land_use_program": build_land_use_program(),
+        "mobility": build_mobility(existing),
+        "blue_green_heritage": build_blue_green_heritage(existing),
+        "massing": build_massing(),
     }
     model = {
         "model_id": "JZOI-GATE-B",
