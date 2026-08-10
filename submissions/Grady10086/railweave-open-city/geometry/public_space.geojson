@@ -1,0 +1,132 @@
+{
+  "type": "FeatureCollection",
+  "name": "railweave_public_space_nodes",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PUBLIC-001",
+      "properties": {
+        "id": "PUBLIC-001",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "开源里程碑广场",
+        "program_zh": "众智园：标准治理与开源成果发布",
+        "design_status": "conceptual_public_space_component",
+        "area_sqm_declared": 332203.943
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3432,
+              40.01
+            ],
+            [
+              116.3432,
+              40.0148
+            ],
+            [
+              116.3505,
+              40.0148
+            ],
+            [
+              116.3505,
+              40.01
+            ],
+            [
+              116.3432,
+              40.01
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-002",
+      "properties": {
+        "id": "PUBLIC-002",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "智能体共创庭院",
+        "program_zh": "AI原点：研究者、学生与社区共创",
+        "design_status": "conceptual_public_space_component",
+        "area_sqm_declared": 347685.716
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.9855
+            ],
+            [
+              116.343,
+              39.9902
+            ],
+            [
+              116.3508,
+              39.9902
+            ],
+            [
+              116.3508,
+              39.9855
+            ],
+            [
+              116.343,
+              39.9855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-003",
+      "properties": {
+        "id": "PUBLIC-003",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "百年到未来门户",
+        "program_zh": "大钟寺：公共体验、国际交流与夜间活力",
+        "design_status": "conceptual_public_space_component",
+        "area_sqm_declared": 353014.681
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3425,
+              39.945
+            ],
+            [
+              116.3425,
+              39.949
+            ],
+            [
+              116.3518,
+              39.949
+            ],
+            [
+              116.3518,
+              39.945
+            ],
+            [
+              116.3425,
+              39.945
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

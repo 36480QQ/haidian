@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_geometry",
+      "statement": "总体设计范围使用仓库 provisional polygon。",
+      "impact": "所有面积、比例、廊道落位与图面需在 official polygon 到位后重算。"
+    },
+    {
+      "id": "A-KEY-AREA-001",
+      "status": "pending_official_geometry",
+      "statement": "三处重点区使用仓库 provisional polygons。",
+      "impact": "重点区设计只表达结构、组件和深化问题，不作地块级结论。"
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "容积率、高度、密度、绿地率、退线和四线等 official controls 缺失。",
+      "impact": "本方案不提交审定开发强度或建筑高度。"
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "pending_transport_study",
+      "statement": "道路红线、断面、流量、站点工程和消防条件缺失。",
+      "impact": "roads.geojson 仅为概念性慢行与接驳关系线。"
+    },
+    {
+      "id": "A-OWNERSHIP-001",
+      "status": "pending_cleared_inventory",
+      "statement": "宗地、权属和使用协议资料缺失。",
+      "impact": "更新项目与公共空间节点须经权属核验和共商。"
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "pending_building_survey",
+      "statement": "现状建筑轮廓、年代、结构、安全和使用状态缺失。",
+      "impact": "buildings.geojson 仅表达组件需求，不对应具体建筑拆改留。"
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_heritage_controls",
+      "statement": "铁路遗产、公园和相关保护控制线未入库。",
+      "impact": "文化节点与公共空间采用低扰动、可逆和可撤除原则，需文保审查。"
+    },
+    {
+      "id": "A-MUNICIPAL-001",
+      "status": "pending_capacity_study",
+      "statement": "市政、能源、排涝、消防和算力负荷底数缺失。",
+      "impact": "新型基础设施只提出分级服务接口，不作工程容量承诺。"
+    }
+  ]
+}

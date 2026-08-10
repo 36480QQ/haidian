@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "name": "railweave_bluegreen_network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "GREEN-001",
+      "properties": {
+        "id": "GREEN-001",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "京张遗产—清河—小月河蓝绿织带",
+        "program_zh": "低扰动慢行、雨水花园、创新交往、文化解说与可撤除测试界面",
+        "design_status": "conceptual_reference_pending_heritage_and_bluegreen_controls",
+        "area_sqm_declared": 3100088.12
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3535,
+              39.961
+            ],
+            [
+              116.3468,
+              39.961
+            ],
+            [
+              116.3468,
+              39.939
+            ],
+            [
+              116.3442,
+              39.939
+            ],
+            [
+              116.3442,
+              39.961
+            ],
+            [
+              116.342,
+              39.961
+            ],
+            [
+              116.342,
+              39.9665
+            ],
+            [
+              116.3442,
+              39.9665
+            ],
+            [
+              116.3442,
+              39.999
+            ],
+            [
+              116.342,
+              39.999
+            ],
+            [
+              116.342,
+              40.005
+            ],
+            [
+              116.3442,
+              40.005
+            ],
+            [
+              116.3442,
+              40.0265
+            ],
+            [
+              116.3468,
+              40.0265
+            ],
+            [
+              116.3468,
+              40.005
+            ],
+            [
+              116.353,
+              40.005
+            ],
+            [
+              116.353,
+              39.999
+            ],
+            [
+              116.3468,
+              39.999
+            ],
+            [
+              116.3468,
+              39.9665
+            ],
+            [
+              116.3535,
+              39.9665
+            ],
+            [
+              116.3535,
+              39.961
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "type": "FeatureCollection",
+  "name": "railweave_adaptive_phasing",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PHASE-001",
+      "properties": {
+        "id": "PHASE-001",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "2026-2028 concept",
+        "name_zh": "近期：轻量连接与开放验证",
+        "dependency_zh": "official polygons, controls, ownership, heritage, municipal and public review",
+        "area_sqm_declared": 5742375.119
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.35418,
+              39.979
+            ],
+            [
+              116.33995806451613,
+              39.979
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-002",
+      "properties": {
+        "id": "PHASE-002",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "2029-2032 concept",
+        "name_zh": "中期：公共界面与服务网络",
+        "dependency_zh": "official polygons, controls, ownership, heritage, municipal and public review",
+        "area_sqm_declared": 2990495.775
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.958
+            ],
+            [
+              116.34017222222222,
+              39.958
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.33995806451613,
+              39.979
+            ],
+            [
+              116.35418,
+              39.979
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.958
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-003",
+      "properties": {
+        "id": "PHASE-003",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "2033+ concept",
+        "name_zh": "远期：复算深化与制度化运营",
+        "dependency_zh": "official polygons, controls, ownership, heritage, municipal and public review",
+        "area_sqm_declared": 2679944.165
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.34017222222222,
+              39.958
+            ],
+            [
+              116.3553,
+              39.958
+            ],
+            [
+              116.3553,
+              39.939
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
