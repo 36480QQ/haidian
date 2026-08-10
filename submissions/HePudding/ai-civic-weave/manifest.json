@@ -287,10 +287,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [
-      "Refreshing after visualization correction; finalize and self-check pending."
-    ],
+    "self_checked": true,
+    "known_blockers": [],
     "data_confidence": "high"
   }
 }
