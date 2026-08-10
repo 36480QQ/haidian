@@ -1,6 +1,36 @@
 # 方案迭代记录
 
-## v3.6 - 2026-08-09
+## v3.10 - 2026-08-10
+
+- 在中英文设计依据入口前置“证据等级与决策边界”表，把任务/标准、来源登记、临时空间、包内派生数据、行政背景和合成方法逐层分开，并为每层同时列出可支持与禁用结论。
+- 明确 package registration、local runner PASS 和 `not_run` 状态不能升级为 official boundary、现场绩效、专业签章、政府审定或竞赛分数；不改变空间对象、指标、来源状态或实施边界。
+- 重新生成双语 proposal report，并刷新 manifest 哈希。
+
+## v3.9 - 2026-08-10
+
+- 为页面可见的 9 个结构化数字新增 `claim-provenance.json`：逐条绑定 `metrics.json` 原始值路径、包内来源文件、双语图件和正文/报告标记。
+- 新增无依赖离线 runner，逐条复核原始值、文件存在性、图件回链和双语标记；该审计只改善回读路径，不把临时几何、OSM 筛查、模型输出或设计目标升级为正式事实、现场绩效或审批。
+- 同步中英文正文、报告与离线视觉入口，并刷新 manifest 哈希。
+
+## v3.8 - 2026-08-10
+
+- 在中英文重点区域设计入口补充三处重点区的概念 FAR、公共界面层数、首层空间动作与首要专业证据，给现有空间定位增加可比较的体量入口。
+- 明确体量范围仅用于 provisional 条件下的城市设计比较，不修改 GeoJSON、指标、图板、地标、场景或实施边界。
+- 保留导视、公共服务台、骑行驿站、遮雨、无障碍和可移动设施优先的可逆更新路径，不新增道路红线、建筑增量、拆改或许可主张。
+
+## v3.7 - 2026-08-10
+
+- Tightened the Open Pulse negative-fixture audit so each malformed contract must fail the exact expected check IDs, not merely produce any failure.
+- Regenerated `open-pulse-scenario-audit.json`; the change remains a local structural audit and adds no field, operational, legal or deployment claim.
+- Added mirrored Chinese/English visual-index links for the S02 tabletop contract, evidence receipt and runner, so the primary offline review surface exposes the v3.6 replay without changing its `not_authorized_not_run` / `not_run` boundary.
+
+## v3.7 — 2026-08-10
+
+- Removed all concept FAR/storey ranges from the public proposal and rendered reports; the package now expresses only public-interface, reversible-service and evidence relationships.
+- Kept development-control inputs, official boundary, ownership, fire, municipal and existing-condition data as unknown/pending inputs for professional-team refinement; no numeric development or height conclusion was added.
+- Re-rendered bilingual HTML and refreshed manifest hashes. Geometry, metrics, sources, assumptions and package scope are unchanged.
+
+## v3.6 — 2026-08-09
 
 - Added four deterministic negative replays, one per S02 fixture; the runner now verifies hold/stop/withdraw/delete-temporary-state decisions as `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
 - Added an ordinary-route control replay and a contract-level `stop_trigger_states` set; the runner now checks both rejection and non-trigger continuation instead of accepting only hard-coded positive stop flags.
@@ -107,6 +137,13 @@
 
 - 跟进主线合并后的评审基线，重新渲染中英文离线报告，并刷新 manifest 与逐资产版权台账哈希。
 - 保持八类公共使用者镜头、三类产业验证窗、四类责任/荣誉节点和八项运维行动包在双语正文与视觉索引中的可回读链接。
+
+## v3.6.1 - 2026-08-10
+
+- 增加 `run-open-pulse-scenario-audit.js` 与 `open-pulse-scenario-audit.json`，对 14 条场景、8 个行动包的空间/责任/人工兜底/停止/验收/维护字段做确定性回放。
+- 加入三个故意缺字段的负例，确认审计器会拒绝缺 accountable、缺非 AI 兜底/停止条件和缺运营包停止条件的合同；结果仅是本地结构证据，不升级为现场、运营、工程或公开试点结论。
+- 中英文提案和 QA 记录增加同一复核入口，保持 provisional geometry、unknown 基线和人工回退边界。
+
 ## v2.4 - 2026-08-08
 
 - 将最新主线的政策/企业成长接口、具身智能凭证和 QA 记录与 v2.1 的三类验证窗、八类公共使用者镜头、四类责任/荣誉节点统一为一个可审阅版本。
