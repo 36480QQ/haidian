@@ -63,15 +63,15 @@
     },
     "road_length_m": {
       "status": "known",
-      "value": 0.215,
+      "value": 22643.5,
       "unit": "m",
-      "formula": "length(union(roads.geojson)) in EPSG:4548",
+      "formula": "length(union(roads.geojson)) in EPSG:4548 (4326→4548 via pyproj Transformer, CM 117E)",
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "confidence": "low",
+      "confidence": "medium",
       "assumptions": [
-        "示意性路网"
+        "示意性路网；已按 EPSG:4326→EPSG:4548 米制重算"
       ]
     },
     "ai_industry_land_ratio": {
