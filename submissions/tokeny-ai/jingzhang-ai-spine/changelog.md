@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-10
+
+响应维护者评审（PR #1297 review）的 v0.2 修订。
+
+- 修复 manifest.validation_claim.self_checked=false → true（此前 finalize 置 false 后未回写）。
+- 将 site_area_sqm 与 validation_claim.data_confidence 由 high 下调为 medium：面积复算依赖临时约束范围（provisional constraint），置信度与临时来源保持一致，官方 polygon 发布后以官方值复核（A-BOUNDARY-001）。
+- 同步 A3/A0 图纸、可视化页与 proposal 中相关表述；全部本地自检重跑 PASS。
+
 ## v0.1 - 2026-08-10
 
 首次正式投稿包（formal package）生成，基于 provisional（临时）边界与公开/清权资料。
