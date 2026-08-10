@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.45"
+iteration: "v2.46"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -376,7 +376,7 @@ Issue #1119 提供了一个可供不同方案横向比较的 Switchback Protocol
 
 ### 设计场景综合模拟（透明沙盘，现状数据尚未接入）
 
-这部分按一条证据链阅读。先看区域规模覆盖，再看网络边和换乘节点，接着看运力缺口、群体分布、相对资源压力和扰动稳健性。六张图都由同一份 `run-regional-commute-simulation.js` 聚合结果投影而来，读数不能互相相加，也不能理解为六组独立现场测量；入口、输出和替换条件集中登记在 `regional-scale-commute.json` 的 `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain]。
+这部分按一条证据链阅读。先看区域规模覆盖，再看网络边和换乘节点，接着看运力缺口、群体分布、可达性尾部、相对资源压力和扰动稳健性。七张图都由同一份 `run-regional-commute-simulation.js` 聚合结果投影而来，读数不能互相相加，也不能理解为七组独立现场测量；入口、输出和替换条件集中登记在 `regional-scale-commute.json` 的 `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain]。
 
 在现场 OD、站点容量、信号、人员动线和路缘计数到位前，先用 `visual/assets/movement-simulation.json` 做 1000 人归一化设计单位的可解释对比，并可用 `node visual/assets/run-mobility-simulation.js` 离线复核方式份额、服务供给和队列。场景包括 S0 无协同高峰、S1 多方式与路缘协同、S2 受监管闸门阻断的空中候选、S3 极端天气地面回退。S1 只是建议硬门筛查后暂选的设计候选；广义成本、换乘可靠性、人员冲突、汽车外来流入、最差群体差距和能耗都是示范输入，海淀现状数据尚未接入。图件公开了先过硬门、再做帕累托比较、最后用现场数据替换的决策链 [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION]。
 
@@ -404,6 +404,12 @@ runner 实际循环处理全部 3,122,000 个合成代理，并只保留分组�
 本版把同一份 runner 的个体合成读数再按群体做分箱回读，补上 P50/P90 通勤时间和满意度代理 P10/P50/P90。O4 的满意度代理 P10 在物流/维护组为 50/100，夜班工作者的 P90 通勤时间为 90 分钟，群体 P10 差距为 20 个代理分。这个读数让最弱群体留在筛选表里，避免总体平均值遮住分布尾部；名义候选同时须满足群体满意度均值差距不超过 12 个代理分、群体 P10 差距不超过 20 个代理分，四类压力情景分别按 18 和 30 个代理分门槛回读。研究综述建议把分组结果的分布、充分性门槛和多情景比较放在同一套交通公平分析里，本包只借用这种检查顺序，不导入外部人口属性、系数或海淀结果 [source:TRANSPORT-EQUITY-DISTRIBUTION-2023]。
 
 ![群体分布与公平屏查。六类合成代理的 P10、P50、P90 与通勤时间](assets/figures/distributional-equity-board.svg)
+
+#### 可达性尾部单独过门。先看最低一成，再看总体均值
+
+本版把可达性从群体均值旁边单独拉出来。runner 对 3,122,000 个合成代理按六类群体分箱，保留可达性代理的 P10、P50 和 P90，并让最低群体的 P10 差距进入候选硬门。名义 O4 的可达性代理 P10 差距为 5 个代理点，低于 20 个代理点门槛；强天气压力下的稳健 O2 为 20 个代理点，低于 30 个代理点压力门。它仍是合成代理的充分性屏查，不是居民无障碍走查、服务可达性审计或运营承诺。进入正式决策前，需要按分组补齐有日期的 OD、门到门走行、无障碍路径连续性、站点服务能力和现场复核 [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/regional-scale-commute-readout.json] [data:assets/figures/distributional-accessibility-board.svg]。
+
+![可达性尾部屏查。六类合成群体的 P10、P50、P90 与最低群体门槛](assets/figures/distributional-accessibility-board.svg)
 
 #### 相对资源压力。把人均公里、车辆服务和未知因素分开
 

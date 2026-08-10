@@ -166,6 +166,14 @@
       "required_zh": ["P10 差距", "合成"],
       "required_en": ["P10 spread", "synthetic"],
       "source_files": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "assets/figures/distributional-equity-board.svg"]
+    },
+    {
+      "id": "distributional_accessibility_tail",
+      "match_zh": "可达性代理 P10 差距为 5 个代理点",
+      "match_en": "accessibility-proxy P10 spread is 5 proxy points",
+      "required_zh": ["合成代理", "不是居民无障碍走查", "20 个代理点门槛"],
+      "required_en": ["synthetic sufficiency screen", "not a resident accessibility walk-through", "20-point gate"],
+      "source_files": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "assets/figures/distributional-accessibility-board.svg"]
     }
   ],
   "headline_wording_guard": {

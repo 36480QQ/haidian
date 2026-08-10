@@ -1,5 +1,5 @@
 {
-  "model_version": "2.14-regional-distributional-equity",
+  "model_version": "2.15-regional-distributional-accessibility",
   "simulation_class": "regional_population_scale_synthetic_two_peak_flow_not_local_OD",
   "regional_scope": {
     "population_reference": 3122000,
@@ -16,6 +16,7 @@
       "hard_gates",
       "mass_conservation",
       "accessibility_continuity",
+      "accessibility_distribution_tail",
       "satisfaction_proxy_max",
       "generalized_cost_min",
       "p90_time_proxy_min",
@@ -50,6 +51,7 @@
       "hard_gate_pass",
       "satisfaction_proxy_max",
       "worst_group_satisfaction_p10_proxy_max",
+      "worst_group_accessibility_p10_gap_proxy_min",
       "average_generalized_cost_proxy_min",
       "p90_travel_time_proxy_minutes_min",
       "people_flow_conflict_rate_per_1000_proxy_min",
@@ -59,6 +61,7 @@
     "hard_gate_constraints": {
       "minimum_accessibility_completion_proxy": 0.92,
       "maximum_worst_group_accessibility_gap_proxy_points": 5,
+      "maximum_worst_group_accessibility_p10_gap_proxy_points": 20,
       "require_mass_conservation": true,
       "require_all_agents_processed": true,
       "air_candidate_must_remain_blocked": true,
@@ -95,6 +98,8 @@
         "capacity_overflow_person_trips": 332639,
         "accessibility_completion_proxy": 0.9343,
         "worst_group_accessibility_gap_proxy_points": 2.62,
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
         "worst_group_satisfaction_gap_proxy_points": 10.86,
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -128,6 +133,8 @@
         "capacity_overflow_person_trips": 410139,
         "accessibility_completion_proxy": 0.9337,
         "worst_group_accessibility_gap_proxy_points": 2.93,
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
         "worst_group_satisfaction_gap_proxy_points": 10.74,
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -161,6 +168,8 @@
         "capacity_overflow_person_trips": 389565,
         "accessibility_completion_proxy": 0.9289,
         "worst_group_accessibility_gap_proxy_points": 2.81,
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
         "worst_group_satisfaction_gap_proxy_points": 11.22,
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -194,6 +203,8 @@
         "capacity_overflow_person_trips": 414711,
         "accessibility_completion_proxy": 0.9331,
         "worst_group_accessibility_gap_proxy_points": 3.23,
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
         "worst_group_satisfaction_gap_proxy_points": 10.57,
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -242,6 +253,7 @@
       "hard_gate_constraints": {
         "minimum_accessibility_completion_proxy": 0.85,
         "maximum_worst_group_accessibility_gap_proxy_points": 24,
+        "maximum_worst_group_accessibility_p10_gap_proxy_points": 30,
         "maximum_worst_group_satisfaction_gap_proxy_points": 18,
         "maximum_worst_group_satisfaction_p10_gap_proxy_points": 30,
         "maximum_stress_peak_mode_load_ratio": 1.75,
@@ -253,6 +265,7 @@
         "nominal_gate",
         "stress_gate_count",
         "worst_case_satisfaction_proxy_max",
+        "worst_group_accessibility_p10_gap_proxy_min",
         "worst_group_accessibility_gap_proxy_min",
         "worst_peak_mode_load_ratio_min",
         "mean_generalized_cost_proxy_min"
@@ -267,6 +280,8 @@
           "robust_gate_pass": true,
           "worst_case_satisfaction_proxy": 49.37,
           "worst_group_accessibility_gap_proxy_points": 4.86,
+          "worst_group_accessibility_p10_proxy": 0.7,
+          "worst_group_accessibility_p10_gap_proxy_points": 20,
           "worst_group_satisfaction_gap_proxy_points": 17.07,
           "worst_group_satisfaction_p10_proxy": 40,
           "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -287,6 +302,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.9331,
               "worst_group_accessibility_gap_proxy_points": 3.23,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 5,
               "worst_group_satisfaction_gap_proxy_points": 10.57,
               "worst_group_satisfaction_p10_proxy": 50,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -312,6 +329,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.871,
               "worst_group_accessibility_gap_proxy_points": 4.78,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 15.6,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -337,6 +356,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8705,
               "worst_group_accessibility_gap_proxy_points": 4.86,
+              "worst_group_accessibility_p10_proxy": 0.7,
+              "worst_group_accessibility_p10_gap_proxy_points": 20,
               "worst_group_satisfaction_gap_proxy_points": 13.48,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -362,6 +383,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8835,
               "worst_group_accessibility_gap_proxy_points": 2.44,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 17.07,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -384,6 +407,8 @@
           "robust_gate_pass": true,
           "worst_case_satisfaction_proxy": 49.33,
           "worst_group_accessibility_gap_proxy_points": 4.71,
+          "worst_group_accessibility_p10_proxy": 0.7,
+          "worst_group_accessibility_p10_gap_proxy_points": 20,
           "worst_group_satisfaction_gap_proxy_points": 17.68,
           "worst_group_satisfaction_p10_proxy": 40,
           "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -404,6 +429,8 @@
               "p90_travel_time_proxy_minutes": 60,
               "accessibility_completion_proxy": 0.9343,
               "worst_group_accessibility_gap_proxy_points": 2.62,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 5,
               "worst_group_satisfaction_gap_proxy_points": 10.86,
               "worst_group_satisfaction_p10_proxy": 50,
               "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -429,6 +456,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8747,
               "worst_group_accessibility_gap_proxy_points": 4.25,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 16.21,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -454,6 +483,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8671,
               "worst_group_accessibility_gap_proxy_points": 4.71,
+              "worst_group_accessibility_p10_proxy": 0.7,
+              "worst_group_accessibility_p10_gap_proxy_points": 20,
               "worst_group_satisfaction_gap_proxy_points": 13.76,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -479,6 +510,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8875,
               "worst_group_accessibility_gap_proxy_points": 2.63,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 17.68,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -501,6 +534,8 @@
           "robust_gate_pass": true,
           "worst_case_satisfaction_proxy": 48.73,
           "worst_group_accessibility_gap_proxy_points": 5.36,
+          "worst_group_accessibility_p10_proxy": 0.7,
+          "worst_group_accessibility_p10_gap_proxy_points": 20,
           "worst_group_satisfaction_gap_proxy_points": 17.33,
           "worst_group_satisfaction_p10_proxy": 40,
           "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -521,6 +556,8 @@
               "p90_travel_time_proxy_minutes": 60,
               "accessibility_completion_proxy": 0.9337,
               "worst_group_accessibility_gap_proxy_points": 2.93,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 5,
               "worst_group_satisfaction_gap_proxy_points": 10.74,
               "worst_group_satisfaction_p10_proxy": 50,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -546,6 +583,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8678,
               "worst_group_accessibility_gap_proxy_points": 5.36,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 15.55,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -571,6 +610,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8733,
               "worst_group_accessibility_gap_proxy_points": 4.37,
+              "worst_group_accessibility_p10_proxy": 0.7,
+              "worst_group_accessibility_p10_gap_proxy_points": 20,
               "worst_group_satisfaction_gap_proxy_points": 14,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -596,6 +637,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8834,
               "worst_group_accessibility_gap_proxy_points": 2.38,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 17.33,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -618,6 +661,8 @@
           "robust_gate_pass": false,
           "worst_case_satisfaction_proxy": 49.26,
           "worst_group_accessibility_gap_proxy_points": 5.88,
+          "worst_group_accessibility_p10_proxy": 0.7,
+          "worst_group_accessibility_p10_gap_proxy_points": 20,
           "worst_group_satisfaction_gap_proxy_points": 18.13,
           "worst_group_satisfaction_p10_proxy": 40,
           "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -638,6 +683,8 @@
               "p90_travel_time_proxy_minutes": 60,
               "accessibility_completion_proxy": 0.9289,
               "worst_group_accessibility_gap_proxy_points": 2.81,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 5,
               "worst_group_satisfaction_gap_proxy_points": 11.22,
               "worst_group_satisfaction_p10_proxy": 50,
               "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -663,6 +710,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8694,
               "worst_group_accessibility_gap_proxy_points": 4.97,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 16.57,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -688,6 +737,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8557,
               "worst_group_accessibility_gap_proxy_points": 5.88,
+              "worst_group_accessibility_p10_proxy": 0.7,
+              "worst_group_accessibility_p10_gap_proxy_points": 20,
               "worst_group_satisfaction_gap_proxy_points": 13.8,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -713,6 +764,8 @@
               "p90_travel_time_proxy_minutes": 90,
               "accessibility_completion_proxy": 0.8832,
               "worst_group_accessibility_gap_proxy_points": 2.22,
+              "worst_group_accessibility_p10_proxy": 0.9,
+              "worst_group_accessibility_p10_gap_proxy_points": 0,
               "worst_group_satisfaction_gap_proxy_points": 18.13,
               "worst_group_satisfaction_p10_proxy": 40,
               "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -1186,7 +1239,7 @@
       "distributional_readout": {
         "method": "synthetic_per_agent_binned_distribution_screen",
         "status": "synthetic_distribution_screen_not_local_outcome",
-        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.",
+        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.",
         "by_group": {
           "enterprise_employee": {
             "population_agents": 1092700,
@@ -1194,7 +1247,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "resident_worker": {
             "population_agents": 936600,
@@ -1202,7 +1258,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "carer_or_child": {
             "population_agents": 468300,
@@ -1210,7 +1269,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "visitor_service": {
             "population_agents": 312200,
@@ -1218,7 +1280,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 70,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "logistics_and_maintenance": {
             "population_agents": 156100,
@@ -1226,7 +1291,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 50,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           },
           "night_worker": {
             "population_agents": 156100,
@@ -1234,14 +1302,19 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           }
         },
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 20,
         "worst_group_p90_travel_time_proxy_minutes": 90,
         "group_p90_travel_time_gap_proxy_minutes": 30,
-        "interpretation": "This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome."
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
+        "interpretation": "This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit."
       },
       "average_generalized_cost_proxy": 49.44,
       "satisfaction_proxy": 66.43,
@@ -1337,7 +1410,7 @@
     "distributional_readout": {
       "method": "synthetic_per_agent_binned_distribution_screen",
       "status": "synthetic_distribution_screen_not_local_outcome",
-      "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.",
+      "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.",
       "by_group": {
         "enterprise_employee": {
           "population_agents": 1092700,
@@ -1345,7 +1418,10 @@
           "travel_time_p90_proxy_minutes": 60,
           "satisfaction_p10_proxy_points": 60,
           "satisfaction_p50_proxy_points": 70,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.9,
+          "accessibility_p50_proxy": 1,
+          "accessibility_p90_proxy": 1
         },
         "resident_worker": {
           "population_agents": 936600,
@@ -1353,7 +1429,10 @@
           "travel_time_p90_proxy_minutes": 60,
           "satisfaction_p10_proxy_points": 60,
           "satisfaction_p50_proxy_points": 70,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.9,
+          "accessibility_p50_proxy": 1,
+          "accessibility_p90_proxy": 1
         },
         "carer_or_child": {
           "population_agents": 468300,
@@ -1361,7 +1440,10 @@
           "travel_time_p90_proxy_minutes": 60,
           "satisfaction_p10_proxy_points": 60,
           "satisfaction_p50_proxy_points": 70,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.95,
+          "accessibility_p50_proxy": 1,
+          "accessibility_p90_proxy": 1
         },
         "visitor_service": {
           "population_agents": 312200,
@@ -1369,7 +1451,10 @@
           "travel_time_p90_proxy_minutes": 60,
           "satisfaction_p10_proxy_points": 70,
           "satisfaction_p50_proxy_points": 70,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.9,
+          "accessibility_p50_proxy": 1,
+          "accessibility_p90_proxy": 1
         },
         "logistics_and_maintenance": {
           "population_agents": 156100,
@@ -1377,7 +1462,10 @@
           "travel_time_p90_proxy_minutes": 60,
           "satisfaction_p10_proxy_points": 50,
           "satisfaction_p50_proxy_points": 60,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.95,
+          "accessibility_p50_proxy": 0.95,
+          "accessibility_p90_proxy": 1
         },
         "night_worker": {
           "population_agents": 156100,
@@ -1385,14 +1473,19 @@
           "travel_time_p90_proxy_minutes": 90,
           "satisfaction_p10_proxy_points": 60,
           "satisfaction_p50_proxy_points": 70,
-          "satisfaction_p90_proxy_points": 80
+          "satisfaction_p90_proxy_points": 80,
+          "accessibility_p10_proxy": 0.95,
+          "accessibility_p50_proxy": 1,
+          "accessibility_p90_proxy": 1
         }
       },
       "worst_group_satisfaction_p10_proxy": 50,
       "worst_group_satisfaction_p10_gap_proxy_points": 20,
       "worst_group_p90_travel_time_proxy_minutes": 90,
       "group_p90_travel_time_gap_proxy_minutes": 30,
-      "interpretation": "This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome."
+      "worst_group_accessibility_p10_proxy": 0.9,
+      "worst_group_accessibility_p10_gap_proxy_points": 5,
+      "interpretation": "This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit."
     },
     "people_flow_conflict_rate_per_1000_proxy": 3.13,
     "external_car_inflow_ratio": 0.0847,
@@ -5281,6 +5374,7 @@
     "hard_gate_constraints": {
       "minimum_accessibility_completion_proxy": 0.85,
       "maximum_worst_group_accessibility_gap_proxy_points": 24,
+      "maximum_worst_group_accessibility_p10_gap_proxy_points": 30,
       "maximum_worst_group_satisfaction_gap_proxy_points": 18,
       "maximum_worst_group_satisfaction_p10_gap_proxy_points": 30,
       "maximum_stress_peak_mode_load_ratio": 1.75,
@@ -5292,6 +5386,7 @@
       "nominal_gate",
       "stress_gate_count",
       "worst_case_satisfaction_proxy_max",
+      "worst_group_accessibility_p10_gap_proxy_min",
       "worst_group_accessibility_gap_proxy_min",
       "worst_peak_mode_load_ratio_min",
       "mean_generalized_cost_proxy_min"
@@ -5306,6 +5401,8 @@
         "robust_gate_pass": true,
         "worst_case_satisfaction_proxy": 49.37,
         "worst_group_accessibility_gap_proxy_points": 4.86,
+        "worst_group_accessibility_p10_proxy": 0.7,
+        "worst_group_accessibility_p10_gap_proxy_points": 20,
         "worst_group_satisfaction_gap_proxy_points": 17.07,
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5326,6 +5423,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.9331,
             "worst_group_accessibility_gap_proxy_points": 3.23,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 5,
             "worst_group_satisfaction_gap_proxy_points": 10.57,
             "worst_group_satisfaction_p10_proxy": 50,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5351,6 +5450,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.871,
             "worst_group_accessibility_gap_proxy_points": 4.78,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 15.6,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5376,6 +5477,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8705,
             "worst_group_accessibility_gap_proxy_points": 4.86,
+            "worst_group_accessibility_p10_proxy": 0.7,
+            "worst_group_accessibility_p10_gap_proxy_points": 20,
             "worst_group_satisfaction_gap_proxy_points": 13.48,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -5401,6 +5504,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8835,
             "worst_group_accessibility_gap_proxy_points": 2.44,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 17.07,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5423,6 +5528,8 @@
         "robust_gate_pass": true,
         "worst_case_satisfaction_proxy": 49.33,
         "worst_group_accessibility_gap_proxy_points": 4.71,
+        "worst_group_accessibility_p10_proxy": 0.7,
+        "worst_group_accessibility_p10_gap_proxy_points": 20,
         "worst_group_satisfaction_gap_proxy_points": 17.68,
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -5443,6 +5550,8 @@
             "p90_travel_time_proxy_minutes": 60,
             "accessibility_completion_proxy": 0.9343,
             "worst_group_accessibility_gap_proxy_points": 2.62,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 5,
             "worst_group_satisfaction_gap_proxy_points": 10.86,
             "worst_group_satisfaction_p10_proxy": 50,
             "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -5468,6 +5577,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8747,
             "worst_group_accessibility_gap_proxy_points": 4.25,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 16.21,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5493,6 +5604,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8671,
             "worst_group_accessibility_gap_proxy_points": 4.71,
+            "worst_group_accessibility_p10_proxy": 0.7,
+            "worst_group_accessibility_p10_gap_proxy_points": 20,
             "worst_group_satisfaction_gap_proxy_points": 13.76,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -5518,6 +5631,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8875,
             "worst_group_accessibility_gap_proxy_points": 2.63,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 17.68,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5540,6 +5655,8 @@
         "robust_gate_pass": true,
         "worst_case_satisfaction_proxy": 48.73,
         "worst_group_accessibility_gap_proxy_points": 5.36,
+        "worst_group_accessibility_p10_proxy": 0.7,
+        "worst_group_accessibility_p10_gap_proxy_points": 20,
         "worst_group_satisfaction_gap_proxy_points": 17.33,
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5560,6 +5677,8 @@
             "p90_travel_time_proxy_minutes": 60,
             "accessibility_completion_proxy": 0.9337,
             "worst_group_accessibility_gap_proxy_points": 2.93,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 5,
             "worst_group_satisfaction_gap_proxy_points": 10.74,
             "worst_group_satisfaction_p10_proxy": 50,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5585,6 +5704,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8678,
             "worst_group_accessibility_gap_proxy_points": 5.36,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 15.55,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5610,6 +5731,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8733,
             "worst_group_accessibility_gap_proxy_points": 4.37,
+            "worst_group_accessibility_p10_proxy": 0.7,
+            "worst_group_accessibility_p10_gap_proxy_points": 20,
             "worst_group_satisfaction_gap_proxy_points": 14,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -5635,6 +5758,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8834,
             "worst_group_accessibility_gap_proxy_points": 2.38,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 17.33,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5657,6 +5782,8 @@
         "robust_gate_pass": false,
         "worst_case_satisfaction_proxy": 49.26,
         "worst_group_accessibility_gap_proxy_points": 5.88,
+        "worst_group_accessibility_p10_proxy": 0.7,
+        "worst_group_accessibility_p10_gap_proxy_points": 20,
         "worst_group_satisfaction_gap_proxy_points": 18.13,
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -5677,6 +5804,8 @@
             "p90_travel_time_proxy_minutes": 60,
             "accessibility_completion_proxy": 0.9289,
             "worst_group_accessibility_gap_proxy_points": 2.81,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 5,
             "worst_group_satisfaction_gap_proxy_points": 11.22,
             "worst_group_satisfaction_p10_proxy": 50,
             "worst_group_satisfaction_p10_gap_proxy_points": 20,
@@ -5702,6 +5831,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8694,
             "worst_group_accessibility_gap_proxy_points": 4.97,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 16.57,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -5727,6 +5858,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8557,
             "worst_group_accessibility_gap_proxy_points": 5.88,
+            "worst_group_accessibility_p10_proxy": 0.7,
+            "worst_group_accessibility_p10_gap_proxy_points": 20,
             "worst_group_satisfaction_gap_proxy_points": 13.8,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 0,
@@ -5752,6 +5885,8 @@
             "p90_travel_time_proxy_minutes": 90,
             "accessibility_completion_proxy": 0.8832,
             "worst_group_accessibility_gap_proxy_points": 2.22,
+            "worst_group_accessibility_p10_proxy": 0.9,
+            "worst_group_accessibility_p10_gap_proxy_points": 0,
             "worst_group_satisfaction_gap_proxy_points": 18.13,
             "worst_group_satisfaction_p10_proxy": 40,
             "worst_group_satisfaction_p10_gap_proxy_points": 10,
@@ -6064,7 +6199,7 @@
       "distributional_readout": {
         "method": "synthetic_per_agent_binned_distribution_screen",
         "status": "synthetic_distribution_screen_not_local_outcome",
-        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.",
+        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.",
         "by_group": {
           "enterprise_employee": {
             "population_agents": 1092700,
@@ -6072,7 +6207,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 0.95
           },
           "resident_worker": {
             "population_agents": 936600,
@@ -6080,7 +6218,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           },
           "carer_or_child": {
             "population_agents": 468300,
@@ -6088,7 +6229,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 50,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           },
           "visitor_service": {
             "population_agents": 312200,
@@ -6096,7 +6240,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 50,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           },
           "logistics_and_maintenance": {
             "population_agents": 156100,
@@ -6104,7 +6251,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 50,
-            "satisfaction_p90_proxy_points": 60
+            "satisfaction_p90_proxy_points": 60,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 0.95
           },
           "night_worker": {
             "population_agents": 156100,
@@ -6112,14 +6262,19 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 0.95
           }
         },
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
         "worst_group_p90_travel_time_proxy_minutes": 90,
         "group_p90_travel_time_gap_proxy_minutes": 0,
-        "interpretation": "This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome."
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
+        "interpretation": "This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit."
       },
       "average_generalized_cost_proxy": 60.34,
       "satisfaction_proxy": 54.67,
@@ -6540,7 +6695,7 @@
       "distributional_readout": {
         "method": "synthetic_per_agent_binned_distribution_screen",
         "status": "synthetic_distribution_screen_not_local_outcome",
-        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.",
+        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.",
         "by_group": {
           "enterprise_employee": {
             "population_agents": 1092700,
@@ -6548,7 +6703,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "resident_worker": {
             "population_agents": 936600,
@@ -6556,7 +6714,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "carer_or_child": {
             "population_agents": 468300,
@@ -6564,7 +6725,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "visitor_service": {
             "population_agents": 312200,
@@ -6572,7 +6736,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 1,
+            "accessibility_p90_proxy": 1
           },
           "logistics_and_maintenance": {
             "population_agents": 156100,
@@ -6580,7 +6747,10 @@
             "travel_time_p90_proxy_minutes": 60,
             "satisfaction_p10_proxy_points": 50,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           },
           "night_worker": {
             "population_agents": 156100,
@@ -6588,14 +6758,19 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 60,
             "satisfaction_p50_proxy_points": 70,
-            "satisfaction_p90_proxy_points": 80
+            "satisfaction_p90_proxy_points": 80,
+            "accessibility_p10_proxy": 0.95,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 1
           }
         },
         "worst_group_satisfaction_p10_proxy": 50,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
         "worst_group_p90_travel_time_proxy_minutes": 90,
         "group_p90_travel_time_gap_proxy_minutes": 30,
-        "interpretation": "This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome."
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 5,
+        "interpretation": "This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit."
       },
       "average_generalized_cost_proxy": 50.06,
       "satisfaction_proxy": 66.23,
@@ -7016,7 +7191,7 @@
       "distributional_readout": {
         "method": "synthetic_per_agent_binned_distribution_screen",
         "status": "synthetic_distribution_screen_not_local_outcome",
-        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.",
+        "bin_interpretation": "Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.",
         "by_group": {
           "enterprise_employee": {
             "population_agents": 1092700,
@@ -7024,7 +7199,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 50,
-            "satisfaction_p90_proxy_points": 60
+            "satisfaction_p90_proxy_points": 60,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.9,
+            "accessibility_p90_proxy": 0.95
           },
           "resident_worker": {
             "population_agents": 936600,
@@ -7032,7 +7210,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.9,
+            "accessibility_p90_proxy": 1
           },
           "carer_or_child": {
             "population_agents": 468300,
@@ -7040,7 +7221,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 50,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.9,
+            "accessibility_p90_proxy": 1
           },
           "visitor_service": {
             "population_agents": 312200,
@@ -7048,7 +7232,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.9,
+            "accessibility_p90_proxy": 1
           },
           "logistics_and_maintenance": {
             "population_agents": 156100,
@@ -7056,7 +7243,10 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 40,
-            "satisfaction_p90_proxy_points": 60
+            "satisfaction_p90_proxy_points": 60,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.95,
+            "accessibility_p90_proxy": 0.95
           },
           "night_worker": {
             "population_agents": 156100,
@@ -7064,14 +7254,19 @@
             "travel_time_p90_proxy_minutes": 90,
             "satisfaction_p10_proxy_points": 40,
             "satisfaction_p50_proxy_points": 60,
-            "satisfaction_p90_proxy_points": 70
+            "satisfaction_p90_proxy_points": 70,
+            "accessibility_p10_proxy": 0.9,
+            "accessibility_p50_proxy": 0.9,
+            "accessibility_p90_proxy": 1
           }
         },
         "worst_group_satisfaction_p10_proxy": 40,
         "worst_group_satisfaction_p10_gap_proxy_points": 10,
         "worst_group_p90_travel_time_proxy_minutes": 90,
         "group_p90_travel_time_gap_proxy_minutes": 0,
-        "interpretation": "This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome."
+        "worst_group_accessibility_p10_proxy": 0.9,
+        "worst_group_accessibility_p10_gap_proxy_points": 0,
+        "interpretation": "This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit."
       },
       "average_generalized_cost_proxy": 71.11,
       "satisfaction_proxy": 48.73,
@@ -7232,6 +7427,7 @@
     "optimized_external_car_inflow_not_higher": true,
     "optimized_peak_mode_capacity_screen_pass": true,
     "optimized_worst_group_satisfaction_screen_pass": true,
+    "optimized_accessibility_tail_screen_pass": true,
     "service_unit_ledger_complete": true,
     "vehicle_km_is_service_unit_based": true,
     "return_population_agents_processed": true,
@@ -7244,6 +7440,7 @@
     "robustness_mass_conservation": true,
     "robustness_nominal_gate_has_eligible_candidate": true,
     "robustness_selected_group_satisfaction_screen": true,
+    "robustness_selected_accessibility_tail_screen": true,
     "robustness_air_candidate_fail_closed": true,
     "robustness_privacy_aggregate_only": true,
     "robustness_selection_is_separate_from_nominal_selection": true,

@@ -252,15 +252,16 @@ fs.writeFileSync(path.join(figureDir, 'mobility-spatial-plan.svg'), mapSvg('zh')
 fs.writeFileSync(path.join(figureDir, 'mobility-spatial-plan.en.svg'), mapSvg('en'));
 
 const chain = {
-  zh: ['区域覆盖', '网络边节点', '运力缺口', '群体分布', '资源敏感性', '稳健性'],
-  en: ['regional scale', 'network flow', 'capacity gap', 'group distribution', 'resource sensitivity', 'robustness'],
+  zh: ['区域覆盖', '网络边节点', '运力缺口', '群体分布', '可达性尾部', '资源敏感性', '稳健性'],
+  en: ['regional scale', 'network flow', 'capacity gap', 'group distribution', 'accessibility tail', 'resource sensitivity', 'robustness'],
 };
-const chainColors = ['#4DE1BF', '#6EA5FF', '#F7BF63', '#F07D9E', '#B8A1FF', '#5ED6D0'];
+const chainColors = ['#4DE1BF', '#6EA5FF', '#F7BF63', '#F07D9E', '#F4A261', '#B8A1FF', '#5ED6D0'];
 const boardNames = [
   ['regional-scale-commute-board.svg', 'regional-scale-commute-board.en.svg'],
   ['network-flow-board.svg', 'network-flow-board.en.svg'],
   ['capacity-closure-board.svg', 'capacity-closure-board.en.svg'],
   ['distributional-equity-board.svg', 'distributional-equity-board.en.svg'],
+  ['distributional-accessibility-board.svg', 'distributional-accessibility-board.en.svg'],
   ['resource-pressure-board.svg', 'resource-pressure-board.en.svg'],
   ['robustness-screen-board.svg', 'robustness-screen-board.en.svg'],
 ];
@@ -280,8 +281,8 @@ function addRibbon(file, lang) {
   const gap = 8;
   const labels = chain[lang];
   const boxWidth = (width - x * 2 - gap * (labels.length - 1)) / labels.length;
-  const title = lang === 'zh' ? '同一份区域 runner · 六个读出视角' : 'ONE REGIONAL RUNNER · SIX READOUT VIEWS';
-  const note = lang === 'zh' ? '同源聚合证据，不是六组独立的现场结果' : 'one aggregate evidence chain, not six independent field results';
+  const title = lang === 'zh' ? '同一份区域 runner · 七个读出视角' : 'ONE REGIONAL RUNNER · SEVEN READOUT VIEWS';
+  const note = lang === 'zh' ? '同源聚合证据，不是七组独立的现场结果' : 'one aggregate evidence chain, not seven independent field results';
   const boxes = labels.map((label, index) => {
     const bx = x + index * (boxWidth + gap);
     return `<rect x="${bx.toFixed(1)}" y="${y}" width="${boxWidth.toFixed(1)}" height="38" rx="10" fill="${chainColors[index]}22" stroke="${chainColors[index]}" stroke-width="1.5"/><text x="${(bx + 14).toFixed(1)}" y="${y + 25}" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#E8F8FA">${esc(`${index + 1}  ${label}`)}</text>`;
@@ -307,15 +308,15 @@ function updateVisualIndex(file, lang) {
   const newImage = `../assets/figures/mobility-spatial-plan${suffix}.svg" alt="${newAlt}`;
   html = html.replace(oldImage, newImage);
   const regionalMarker = `<img src="../assets/figures/regional-scale-commute-board${suffix}.svg"`;
-  const chainTitle = zh ? '同一份区域 runner，六个读出视角' : 'One regional runner, six readout views';
+  const chainTitle = zh ? '同一份区域 runner，七个读出视角' : 'One regional runner, seven readout views';
   const chainText = zh
+    ? '区域覆盖 → 网络边节点 → 运力缺口 → 群体分布 → 可达性尾部 → 资源敏感性 → 稳健性。七张图共享一份合成聚合证据，任何一张都不代表现场绩效。'
+    : 'Regional scale → network flow → capacity gap → group distribution → accessibility tail → resource sensitivity → robustness. Seven boards share one synthetic aggregate evidence chain; none is field performance.';
+  const chain = `<div class="evidence-chain"><strong>${chainTitle}</strong><span>${chainText}</span></div>`;
+  const oldChainTitle = zh ? '同一份区域 runner，六个读出视角' : 'One regional runner, six readout views';
+  const oldChainText = zh
     ? '区域覆盖 → 网络边节点 → 运力缺口 → 群体分布 → 资源敏感性 → 稳健性。六张图共享一份合成聚合证据，任何一张都不代表现场绩效。'
     : 'Regional scale → network flow → capacity gap → group distribution → resource sensitivity → robustness. Six boards share one synthetic aggregate evidence chain; none is field performance.';
-  const chain = `<div class="evidence-chain"><strong>${chainTitle}</strong><span>${chainText}</span></div>`;
-  const oldChainTitle = zh ? '同一份区域 runner，五个读出视角' : 'One regional runner, five readout views';
-  const oldChainText = zh
-    ? '区域覆盖 → 网络边节点 → 运力缺口 → 资源敏感性 → 稳健性。五张图共享一份合成聚合证据，任何一张都不代表现场绩效。'
-    : 'Regional scale → network flow → capacity gap → resource sensitivity → robustness. Five boards share one synthetic aggregate evidence chain; none is field performance.';
   html = html.replace(oldChainTitle, chainTitle).replace(oldChainText, chainText);
   if (!html.includes('class="evidence-chain"')) html = html.replace(regionalMarker, `${chain}${regionalMarker}`);
   const css = '.evidence-chain{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;background:#0B2738;color:#E6FFFA;border:1px solid #2A9D8F;border-radius:12px;padding:12px 14px;margin:10px 0 14px;font-size:12px}.evidence-chain strong{color:#66E3CA;white-space:nowrap}.evidence-chain span{color:#B6D3DC}';
@@ -355,6 +356,7 @@ function updateVisualIndex(file, lang) {
 
   const networkBoard = `../assets/figures/network-flow-board${suffix}.svg`;
   const distributionalBoard = `../assets/figures/distributional-equity-board${suffix}.svg`;
+  const accessibilityBoard = `../assets/figures/distributional-accessibility-board${suffix}.svg`;
   const networkAlt = zh
     ? '全量人员动线与网络压力屏查'
     : 'Population-scale people flow and network pressure screen';
@@ -365,15 +367,28 @@ function updateVisualIndex(file, lang) {
     ? '六类人的群体分布与公平屏查'
     : 'Distributional and equity screen for six groups';
   const distributionalImage = `<img src="${distributionalBoard}" alt="${distributionalAlt}">`;
+  const accessibilityAlt = zh
+    ? '六类合成群体的可达性尾部与最低群体门槛'
+    : 'Accessibility tail and lowest-group gate for six synthetic groups';
+  const accessibilityImage = `<img src="${accessibilityBoard}" alt="${accessibilityAlt}">`;
   if (!html.includes(networkBoard)) html = html.replace(regionalImage, `${regionalImage}${networkImage}`);
   if (!html.includes(distributionalBoard)) html = html.replace(networkImage, `${networkImage}${distributionalImage}`);
+  if (!html.includes(accessibilityBoard)) html = html.replace(distributionalImage, `${distributionalImage}${accessibilityImage}`);
   const distributionalScreen = zh
-    ? '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">22</span><h2>群体分布与公平屏查</h2><span class="tag">合成屏查</span></div><p>同一份区域 runner 按六类群体回读个体合成时间和满意度代理。O4 下物流/维护组的满意度代理 P10 为 50/100，夜班工作者的通勤时间 P90 分箱为 90 分钟，群体 P10 差距为 20 个代理分。名义屏查同时守住均值差距 12 个代理分和 P10 差距 20 个代理分，压力屏查使用 18 和 30 个代理分门槛。P10 把分布尾部留在平均值旁边；这些是合成屏查读数，不是居民体验、现场 OD 或运营绩效。</p><figure class="proposal-figure"><img src="../assets/figures/distributional-equity-board.svg" alt="六类合成群体的分布与公平屏查"><figcaption>六类合成群体的分布与公平屏查</figcaption></figure><div class="micro">distributional-equity-board.svg · regional-scale-commute-readout.json · 合成分箱，不是本地结果</div></section>'
-    : '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">22</span><h2>Distributional equity screen</h2><span class="tag">SYNTHETIC SCREEN</span></div><p>The same regional runner bins synthetic per-agent travel time and satisfaction proxies by six groups. Under O4, the logistics/maintenance group has a satisfaction-proxy P10 of 50/100, night workers have a P90 travel-time bin of 90 minutes, and the group P10 spread is 20 proxy points. The nominal screen keeps the mean-satisfaction gap at 12 proxy points and the P10 spread at 20 proxy points or below; the stress screen uses 18 and 30 proxy-point gates. P10 keeps the lower tail visible beside the overall mean; these are synthetic screen outputs, not resident experience, observed OD or operating performance.</p><figure class="proposal-figure"><img src="../assets/figures/distributional-equity-board.en.svg" alt="Distributional and equity screen for six synthetic groups"><figcaption>Distributional and equity screen for six synthetic groups</figcaption></figure><div class="micro">distributional-equity-board.en.svg · regional-scale-commute-readout.json · synthetic bins, not local outcomes</div></section>';
+    ? '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">22</span><h2>群体分布与可达性尾部</h2><span class="tag">合成屏查</span></div><p>同一份区域 runner 按六类群体回读个体合成时间、满意度与可达性代理。O4 下物流/维护组的满意度代理 P10 为 50/100，夜班工作者的通勤时间 P90 分箱为 90 分钟，群体 P10 差距为 20 个代理分；可达性代理 P10 差距为 5 个代理点。名义可达性门槛为 20 个代理点，压力门为 30 个代理点。P10 把分布尾部留在平均值旁边；这些是合成屏查读数，不是居民体验、居民无障碍走查、服务审计或运营绩效。</p><figure class="proposal-figure"><img src="../assets/figures/distributional-equity-board.svg" alt="六类合成群体的分布与公平屏查"><figcaption>六类合成群体的分布与公平屏查</figcaption></figure><figure class="proposal-figure"><img src="../assets/figures/distributional-accessibility-board.svg" alt="六类合成群体的可达性尾部与最低群体门槛"><figcaption>六类合成群体的可达性尾部与最低群体门槛</figcaption></figure><div class="micro">distributional-equity-board.svg · distributional-accessibility-board.svg · regional-scale-commute-readout.json · 合成分箱，不是本地结果</div></section>'
+    : '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">22</span><h2>Distributional equity and accessibility tail</h2><span class="tag">SYNTHETIC SCREEN</span></div><p>The same regional runner bins synthetic per-agent travel time, satisfaction and accessibility proxies by six groups. Under O4, the logistics/maintenance group has a satisfaction-proxy P10 of 50/100, night workers have a P90 travel-time bin of 90 minutes, the group P10 spread is 20 proxy points and the accessibility-proxy P10 spread is 5 proxy points. The nominal accessibility gate is 20 points and the stress gate is 30 points. P10 keeps the lower tail visible beside the overall mean; these are synthetic screen outputs, not resident experience, a resident accessibility walk-through, an accessibility audit or operating performance.</p><figure class="proposal-figure"><img src="../assets/figures/distributional-equity-board.en.svg" alt="Distributional and equity screen for six synthetic groups"><figcaption>Distributional and equity screen for six synthetic groups</figcaption></figure><figure class="proposal-figure"><img src="../assets/figures/distributional-accessibility-board.en.svg" alt="Accessibility tail and lowest-group gate for six synthetic groups"><figcaption>Accessibility tail and lowest-group gate for six synthetic groups</figcaption></figure><div class="micro">distributional-equity-board.en.svg · distributional-accessibility-board.en.svg · regional-scale-commute-readout.json · synthetic bins, not local outcomes</div></section>';
   const hasDistributionalText = zh
     ? html.includes('<span class="section-no">22</span><h2>群体分布与公平屏查</h2>')
     : html.includes('<span class="section-no">22</span><h2>Distributional equity screen</h2>');
   if (!hasDistributionalText) html = html.replace('</main>', `${distributionalScreen}</main>`);
+  const accessibilityScreen = zh
+    ? '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">23</span><h2>可达性尾部与最低群体门槛</h2><span class="tag">合成屏查</span></div><p>同一份 runner 按六类合成群体回读可达性代理 P10、P50 和 P90。O4 的可达性代理 P10 差距为 5 个代理点，名义使用 20 个代理点门槛；强天气压力下 O2 为 20 个代理点，压力门为 30 个代理点。这是合成充分性屏查，不是居民无障碍走查、服务可达性审计或运营承诺。</p><figure class="proposal-figure"><img src="../assets/figures/distributional-accessibility-board.svg" alt="六类合成群体的可达性尾部与最低群体门槛"><figcaption>六类合成群体的可达性尾部与最低群体门槛</figcaption></figure><div class="micro">distributional-accessibility-board.svg · regional-scale-commute-readout.json · 合成屏查，不是本地结果</div></section>'
+    : '<section class="evidence multimodal-board"><div class="section-head"><span class="section-no">23</span><h2>Accessibility tail and lowest-group gate</h2><span class="tag">SYNTHETIC SCREEN</span></div><p>The same runner bins accessibility proxies for six synthetic groups at P10, P50 and P90. The nominal O4 accessibility-proxy P10 spread is 5 proxy points against a 20-point gate; under severe-weather stress O2 is 20 proxy points against a 30-point stress gate. This is a synthetic sufficiency screen, not a resident accessibility walk-through, an accessibility audit or an operating promise.</p><figure class="proposal-figure"><img src="../assets/figures/distributional-accessibility-board.en.svg" alt="Accessibility tail and lowest-group gate for six synthetic groups"><figcaption>Accessibility tail and lowest-group gate for six synthetic groups</figcaption></figure><div class="micro">distributional-accessibility-board.en.svg · regional-scale-commute-readout.json · synthetic screen, not a local outcome</div></section>';
+  const hasAccessibilityText = zh
+    ? html.includes('<span class="section-no">23</span><h2>可达性尾部与最低群体门槛</h2>')
+    : html.includes('<span class="section-no">23</span><h2>Accessibility tail and lowest-group gate</h2>');
+  if (!hasAccessibilityText) html = html.replace('</main>', `${accessibilityScreen}</main>`);
+  if (zh) html = html.replace('名义门槛为 20 个代理点；强天气压力下 O2', '名义使用 20 个代理点门槛；强天气压力下 O2');
   fs.writeFileSync(target, html);
 }
 

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.45"
+iteration: "v2.46"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -342,7 +342,7 @@ If an air-mobility experiment becomes eligible, it remains a controlled add-on t
 
 ### Design-scenario simulation (transparent sandbox, not a baseline)
 
-Read this section as one evidence chain. Start with regional-scale coverage, then read network edges and transfer nodes, service-unit gaps, group distribution, relative resource pressure and robustness under disruption. All six boards are projections of one aggregate output from `run-regional-commute-simulation.js`; they are not six independent field measurements and their values must be replaced together when dated OD, capacity, accessibility and operational evidence arrives. The entry points, outputs and replacement conditions are registered in `regional-scale-commute.json` under `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain].
+Read this section as one evidence chain. Start with regional-scale coverage, then read network edges and transfer nodes, service-unit gaps, group distribution, the accessibility tail, relative resource pressure and robustness under disruption. All seven boards are projections of one aggregate output from `run-regional-commute-simulation.js`; they are not seven independent field measurements and their values must be replaced together when dated OD, capacity, accessibility and operational evidence arrives. The entry points, outputs and replacement conditions are registered in `regional-scale-commute.json` under `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain].
 
 Before field OD, station capacity, signals, people flow and curb counts exist, `visual/assets/movement-simulation.json` runs an interpretable 1,000-person normalized design unit: S0 unmanaged peak, S1 multimodal curb coordination, S2 air candidate blocked by regulatory gates, and S3 ground fallback in extreme weather. The package also includes the dependency-free deterministic runner `visual/assets/run-mobility-simulation.js`; it recomputes the declared design-unit queues and service supply without upgrading papers or synthetic values into a Haidian baseline. S1 is only a provisional design candidate after the proposed hard-gate screen; generalized cost, transfer reliability, people-flow conflicts, external-car inflow, worst-group gap and energy are illustrative inputs, not current Haidian performance. The board exposes the chain: hard gates first, Pareto comparison second, local calibration last [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION].
 
@@ -374,6 +374,12 @@ To keep group differences visible, the new group–mode–capacity board exposes
 This revision also bins the same runner’s synthetic per-agent outputs by group, adding P50/P90 travel time and satisfaction-proxy P10/P50/P90. Under O4, the logistics/maintenance group has a satisfaction-proxy P10 of 50/100, night workers have a P90 travel-time bin of 90 minutes, and the group P10 spread is 20 proxy points. The readout keeps the lower tail visible beside the overall mean. A nominal candidate must keep both the group mean-satisfaction gap at or below 12 proxy points and the group P10 spread at or below 20 proxy points; the four stress scenarios use corresponding 18-point and 30-point screens. A transport-equity review recommends comparing distributions, sufficiency thresholds and multiple scenarios together; this package adopts that reading order without importing external population attributes, coefficients or Haidian outcomes [source:TRANSPORT-EQUITY-DISTRIBUTION-2023].
 
 ![Distributional and equity screen: P10, P50, P90 and travel-time bins for six synthetic groups](assets/figures/distributional-equity-board.en.svg)
+
+#### Give the accessibility tail its own gate: read the lowest tenth before the mean
+
+This version pulls accessibility out from beside the group mean. The runner bins all 3,122,000 synthetic agents into six declared groups, retains accessibility-proxy P10, P50 and P90, and sends the lowest-group P10 spread through a candidate hard gate. The nominal O4 accessibility-proxy P10 spread is 5 proxy points, below the 20-point gate; under severe-weather stress, robust O2 is 20 proxy points, below the 30-point stress gate. This remains a synthetic sufficiency screen, not a resident accessibility walk-through, an accessibility audit or an operating promise. Formal decision work still needs dated grouped OD, door-to-door movement, continuous accessible-path checks, station service capacity and field review [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/regional-scale-commute-readout.json] [data:assets/figures/distributional-accessibility-board.svg].
+
+![Accessibility-tail screen: P10, P50, P90 and lowest-group gate for six synthetic groups](assets/figures/distributional-accessibility-board.en.svg)
 
 #### Relative resource pressure: separate passenger-km, service vehicles and unknowns
 

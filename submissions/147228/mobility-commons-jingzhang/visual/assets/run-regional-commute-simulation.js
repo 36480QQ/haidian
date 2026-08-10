@@ -19,6 +19,7 @@ const GROUPS = model.synthetic_population.groups;
 const MODES = model.modes;
 const HISTOGRAM_BINS = [30, 45, 60, 90, Infinity];
 const SATISFACTION_HISTOGRAM_BINS = [40, 50, 60, 70, 80, 90, 100];
+const ACCESSIBILITY_HISTOGRAM_BINS = [0.70, 0.80, 0.90, 0.95, 1.00];
 
 function fail(message) {
   console.error(`REGIONAL_MODEL_CHECK_FAIL: ${message}`);
@@ -569,6 +570,16 @@ function emptySatisfactionHistogram() {
   return histogram;
 }
 
+function emptyAccessibilityHistogram() {
+  return {
+    '0.00-0.70': 0,
+    '0.71-0.80': 0,
+    '0.81-0.90': 0,
+    '0.91-0.95': 0,
+    '0.96-1.00': 0
+  };
+}
+
 function addHistogram(histogram, minutes) {
   const labels = ["0-30", "30-45", "45-60", "60-90", "90+"];
   const index = HISTOGRAM_BINS.findIndex((limit) => minutes <= limit);
@@ -578,6 +589,12 @@ function addHistogram(histogram, minutes) {
 function addSatisfactionHistogram(histogram, satisfaction) {
   const labels = Object.keys(histogram);
   const index = SATISFACTION_HISTOGRAM_BINS.findIndex((limit) => satisfaction <= limit);
+  histogram[labels[index < 0 ? labels.length - 1 : index]] += 1;
+}
+
+function addAccessibilityHistogram(histogram, accessibility) {
+  const labels = Object.keys(histogram);
+  const index = ACCESSIBILITY_HISTOGRAM_BINS.findIndex((limit) => accessibility <= limit);
   histogram[labels[index < 0 ? labels.length - 1 : index]] += 1;
 }
 
@@ -596,7 +613,7 @@ function percentileFromHistogram(histogram, percentile, total) {
   return percentileFromHistogramBins(histogram, percentile, total, [30, 45, 60, 90, 120]);
 }
 
-function buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms) {
+function buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms, groupAccessibilityHistograms) {
   const byGroup = Object.fromEntries(GROUPS.map((group) => {
     const total = groupCounts[group.id];
     return [group.id, {
@@ -605,22 +622,28 @@ function buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatis
       travel_time_p90_proxy_minutes: percentileFromHistogram(groupTimeHistograms[group.id], 0.90, total),
       satisfaction_p10_proxy_points: percentileFromHistogramBins(groupSatisfactionHistograms[group.id], 0.10, total, SATISFACTION_HISTOGRAM_BINS),
       satisfaction_p50_proxy_points: percentileFromHistogramBins(groupSatisfactionHistograms[group.id], 0.50, total, SATISFACTION_HISTOGRAM_BINS),
-      satisfaction_p90_proxy_points: percentileFromHistogramBins(groupSatisfactionHistograms[group.id], 0.90, total, SATISFACTION_HISTOGRAM_BINS)
+      satisfaction_p90_proxy_points: percentileFromHistogramBins(groupSatisfactionHistograms[group.id], 0.90, total, SATISFACTION_HISTOGRAM_BINS),
+      accessibility_p10_proxy: round(percentileFromHistogramBins(groupAccessibilityHistograms[group.id], 0.10, total, ACCESSIBILITY_HISTOGRAM_BINS), 4),
+      accessibility_p50_proxy: round(percentileFromHistogramBins(groupAccessibilityHistograms[group.id], 0.50, total, ACCESSIBILITY_HISTOGRAM_BINS), 4),
+      accessibility_p90_proxy: round(percentileFromHistogramBins(groupAccessibilityHistograms[group.id], 0.90, total, ACCESSIBILITY_HISTOGRAM_BINS), 4)
     }];
   }));
   const rows = Object.values(byGroup);
   const p10Values = rows.map((row) => row.satisfaction_p10_proxy_points);
   const p90TimeValues = rows.map((row) => row.travel_time_p90_proxy_minutes);
+  const accessibilityP10Values = rows.map((row) => row.accessibility_p10_proxy);
   return {
     method: 'synthetic_per_agent_binned_distribution_screen',
     status: 'synthetic_distribution_screen_not_local_outcome',
-    bin_interpretation: 'Percentiles are upper bounds of declared bins; they are not observed person-level survey or OD percentiles.',
+    bin_interpretation: 'Percentiles are upper bounds of declared bins; they are not observed person-level survey, accessibility audit or OD percentiles.',
     by_group: byGroup,
     worst_group_satisfaction_p10_proxy: Math.min(...p10Values),
     worst_group_satisfaction_p10_gap_proxy_points: Math.max(...p10Values) - Math.min(...p10Values),
     worst_group_p90_travel_time_proxy_minutes: Math.max(...p90TimeValues),
     group_p90_travel_time_gap_proxy_minutes: Math.max(...p90TimeValues) - Math.min(...p90TimeValues),
-    interpretation: 'This distributional screen keeps group outcomes visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome.'
+    worst_group_accessibility_p10_proxy: Math.min(...accessibilityP10Values),
+    worst_group_accessibility_p10_gap_proxy_points: round((Math.max(...accessibilityP10Values) - Math.min(...accessibilityP10Values)) * 100, 2),
+    interpretation: 'This distributional screen keeps group outcomes and accessibility tails visible alongside the mean. It is a synthetic sufficiency and fairness check, not a local resident outcome or accessibility audit.'
   };
 }
 
@@ -707,6 +730,7 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
   const groupAccessibility = {};
   const groupTimeHistograms = {};
   const groupSatisfactionHistograms = {};
+  const groupAccessibilityHistograms = {};
   const routeCounts = {};
   const corridorCounts = {};
   const timeHistogram = emptyHistogram();
@@ -726,6 +750,7 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
     groupAccessibility[group.id] = 0;
     groupTimeHistograms[group.id] = emptyHistogram();
     groupSatisfactionHistograms[group.id] = emptySatisfactionHistogram();
+    groupAccessibilityHistograms[group.id] = emptyAccessibilityHistogram();
     for (let offset = 0; offset < group.count; offset += 1) {
       const index = group.start + offset;
       const origin = model.zones.origins[hash(index, 11) % model.zones.origins.length];
@@ -764,6 +789,7 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
       addHistogram(timeHistogram, time);
       addHistogram(groupTimeHistograms[group.id], time);
       addSatisfactionHistogram(groupSatisfactionHistograms[group.id], satisfaction);
+      addAccessibilityHistogram(groupAccessibilityHistograms[group.id], accessibility);
       if (external) externalAgents += 1;
       if (external && mode === 'car') externalCarAgents += 1;
       if (group.activity === 'work') workActivityAgents += 1;
@@ -814,7 +840,7 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
     p50_travel_time_proxy_minutes: percentileFromHistogram(timeHistogram, 0.50, processed),
     p90_travel_time_proxy_minutes: percentileFromHistogram(timeHistogram, 0.90, processed),
     travel_time_histogram: timeHistogram,
-    distributional_readout: buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms),
+    distributional_readout: buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms, groupAccessibilityHistograms),
     average_generalized_cost_proxy: round(totalGeneralizedCost / processed, 2),
     satisfaction_proxy: round(totalSatisfaction / processed, 2),
     satisfaction_proxy_by_group: groupSatisfactionProxy,
@@ -843,6 +869,7 @@ function simulateReturnLeg(scenarioId, weightsOverride, policyId) {
   const groupAccessibility = {};
   const groupTimeHistograms = {};
   const groupSatisfactionHistograms = {};
+  const groupAccessibilityHistograms = {};
   const routeCounts = {};
   const timeHistogram = emptyHistogram();
   let processed = 0;
@@ -860,6 +887,7 @@ function simulateReturnLeg(scenarioId, weightsOverride, policyId) {
     groupAccessibility[group.id] = 0;
     groupTimeHistograms[group.id] = emptyHistogram();
     groupSatisfactionHistograms[group.id] = emptySatisfactionHistogram();
+    groupAccessibilityHistograms[group.id] = emptyAccessibilityHistogram();
     for (let offset = 0; offset < group.count; offset += 1) {
       const index = group.start + offset;
       const origin = model.zones.destinations[hash(index, 13) % model.zones.destinations.length];
@@ -894,6 +922,7 @@ function simulateReturnLeg(scenarioId, weightsOverride, policyId) {
       addHistogram(timeHistogram, time);
       addHistogram(groupTimeHistograms[group.id], time);
       addSatisfactionHistogram(groupSatisfactionHistograms[group.id], satisfaction);
+      addAccessibilityHistogram(groupAccessibilityHistograms[group.id], accessibility);
       if (external) externalAgents += 1;
       if (external && mode === 'car') externalCarAgents += 1;
       processed += 1;
@@ -932,7 +961,7 @@ function simulateReturnLeg(scenarioId, weightsOverride, policyId) {
     p50_travel_time_proxy_minutes: percentileFromHistogram(timeHistogram, 0.50, processed),
     p90_travel_time_proxy_minutes: percentileFromHistogram(timeHistogram, 0.90, processed),
     travel_time_histogram: timeHistogram,
-    distributional_readout: buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms),
+    distributional_readout: buildDistributionalReadout(groupCounts, groupTimeHistograms, groupSatisfactionHistograms, groupAccessibilityHistograms),
     average_generalized_cost_proxy: round(totalGeneralizedCost / processed, 2),
     satisfaction_proxy: round(totalSatisfaction / processed, 2),
     satisfaction_proxy_by_group: groupSatisfactionProxy,
@@ -974,6 +1003,7 @@ function candidateEligible(result) {
     && result.mass_conservation
     && result.accessibility_completion_proxy >= gate.minimum_accessibility_completion_proxy
     && result.worst_group_accessibility_gap_proxy_points <= gate.maximum_worst_group_accessibility_gap_proxy_points
+    && result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points <= gate.maximum_worst_group_accessibility_p10_gap_proxy_points
     && result.worst_group_satisfaction_gap_proxy_points <= gate.maximum_worst_group_satisfaction_gap_proxy_points
     && result.distributional_readout.worst_group_satisfaction_p10_gap_proxy_points <= gate.maximum_worst_group_satisfaction_p10_gap_proxy_points
     && result.max_mode_load_ratio <= gate.maximum_peak_mode_load_ratio
@@ -985,6 +1015,7 @@ function compareCandidates(left, right) {
     candidateEligible(left.result) ? 1 : 0,
     left.result.satisfaction_proxy,
     left.result.distributional_readout.worst_group_satisfaction_p10_proxy,
+    -left.result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points,
     -left.result.average_generalized_cost_proxy,
     -left.result.p90_travel_time_proxy_minutes,
     -left.result.people_flow_conflict_rate_per_1000_proxy,
@@ -995,6 +1026,7 @@ function compareCandidates(left, right) {
     candidateEligible(right.result) ? 1 : 0,
     right.result.satisfaction_proxy,
     right.result.distributional_readout.worst_group_satisfaction_p10_proxy,
+    -right.result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points,
     -right.result.average_generalized_cost_proxy,
     -right.result.p90_travel_time_proxy_minutes,
     -right.result.people_flow_conflict_rate_per_1000_proxy,
@@ -1025,6 +1057,8 @@ function summarizeRobustnessResult(definition, result) {
     p90_travel_time_proxy_minutes: result.p90_travel_time_proxy_minutes,
     accessibility_completion_proxy: result.accessibility_completion_proxy,
     worst_group_accessibility_gap_proxy_points: result.worst_group_accessibility_gap_proxy_points,
+    worst_group_accessibility_p10_proxy: result.distributional_readout.worst_group_accessibility_p10_proxy,
+    worst_group_accessibility_p10_gap_proxy_points: result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points,
     worst_group_satisfaction_gap_proxy_points: result.worst_group_satisfaction_gap_proxy_points,
     worst_group_satisfaction_p10_proxy: result.distributional_readout.worst_group_satisfaction_p10_proxy,
     worst_group_satisfaction_p10_gap_proxy_points: result.distributional_readout.worst_group_satisfaction_p10_gap_proxy_points,
@@ -1044,6 +1078,7 @@ function robustnessScenarioEligible(summary) {
     && summary.mass_conservation
     && summary.accessibility_completion_proxy >= gate.minimum_accessibility_completion_proxy
     && summary.worst_group_accessibility_gap_proxy_points <= gate.maximum_worst_group_accessibility_gap_proxy_points
+    && summary.worst_group_accessibility_p10_gap_proxy_points <= gate.maximum_worst_group_accessibility_p10_gap_proxy_points
     && summary.worst_group_satisfaction_gap_proxy_points <= gate.maximum_worst_group_satisfaction_gap_proxy_points
     && summary.worst_group_satisfaction_p10_gap_proxy_points <= gate.maximum_worst_group_satisfaction_p10_gap_proxy_points
     && summary.max_mode_load_ratio <= gate.maximum_stress_peak_mode_load_ratio
@@ -1059,6 +1094,7 @@ function compareRobustnessCandidates(left, right) {
     left.worst_case_satisfaction_proxy,
     left.worst_group_satisfaction_p10_proxy,
     -left.worst_group_satisfaction_p10_gap_proxy_points,
+    -left.worst_group_accessibility_p10_gap_proxy_points,
     -left.worst_group_accessibility_gap_proxy_points,
     -left.worst_peak_mode_load_ratio,
     -left.mean_generalized_cost_proxy
@@ -1070,6 +1106,7 @@ function compareRobustnessCandidates(left, right) {
     right.worst_case_satisfaction_proxy,
     right.worst_group_satisfaction_p10_proxy,
     -right.worst_group_satisfaction_p10_gap_proxy_points,
+    -right.worst_group_accessibility_p10_gap_proxy_points,
     -right.worst_group_accessibility_gap_proxy_points,
     -right.worst_peak_mode_load_ratio,
     -right.mean_generalized_cost_proxy
@@ -1096,6 +1133,8 @@ const robustnessCandidates = searchCandidates.map((candidate) => {
     robust_gate_pass: scenarioSummaries.every(robustnessScenarioEligible),
     worst_case_satisfaction_proxy: round(Math.min(...scenarioSummaries.map((summary) => summary.satisfaction_proxy)), 2),
     worst_group_accessibility_gap_proxy_points: round(Math.max(...scenarioSummaries.map((summary) => summary.worst_group_accessibility_gap_proxy_points)), 2),
+    worst_group_accessibility_p10_proxy: round(Math.min(...scenarioSummaries.map((summary) => summary.worst_group_accessibility_p10_proxy)), 4),
+    worst_group_accessibility_p10_gap_proxy_points: round(Math.max(...scenarioSummaries.map((summary) => summary.worst_group_accessibility_p10_gap_proxy_points)), 2),
     worst_group_satisfaction_gap_proxy_points: round(Math.max(...scenarioSummaries.map((summary) => summary.worst_group_satisfaction_gap_proxy_points)), 2),
     worst_group_satisfaction_p10_proxy: round(Math.min(...scenarioSummaries.map((summary) => summary.worst_group_satisfaction_p10_proxy)), 2),
     worst_group_satisfaction_p10_gap_proxy_points: round(Math.max(...scenarioSummaries.map((summary) => summary.worst_group_satisfaction_p10_gap_proxy_points)), 2),
@@ -1138,6 +1177,8 @@ const optimizationSearch = {
     capacity_overflow_person_trips: candidate.result.capacity_overflow_person_trips,
     accessibility_completion_proxy: candidate.result.accessibility_completion_proxy,
     worst_group_accessibility_gap_proxy_points: candidate.result.worst_group_accessibility_gap_proxy_points,
+    worst_group_accessibility_p10_proxy: candidate.result.distributional_readout.worst_group_accessibility_p10_proxy,
+    worst_group_accessibility_p10_gap_proxy_points: candidate.result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points,
     worst_group_satisfaction_gap_proxy_points: candidate.result.worst_group_satisfaction_gap_proxy_points,
     worst_group_satisfaction_p10_proxy: candidate.result.distributional_readout.worst_group_satisfaction_p10_proxy,
     worst_group_satisfaction_p10_gap_proxy_points: candidate.result.distributional_readout.worst_group_satisfaction_p10_gap_proxy_points,
@@ -1173,6 +1214,7 @@ const checks = {
   optimized_external_car_inflow_not_higher: selectedPolicy.result.external_car_inflow_ratio <= baseline.external_car_inflow_ratio,
   optimized_peak_mode_capacity_screen_pass: selectedPolicy.result.max_mode_load_ratio <= model.optimization_search.hard_gate_constraints.maximum_peak_mode_load_ratio,
   optimized_worst_group_satisfaction_screen_pass: candidateEligible(selectedPolicy.result),
+  optimized_accessibility_tail_screen_pass: selectedPolicy.result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points <= model.optimization_search.hard_gate_constraints.maximum_worst_group_accessibility_p10_gap_proxy_points,
   service_unit_ledger_complete: scenarios.every((scenario) => MODES.every((mode) => scenario.service_unit_ledger[mode].person_trips === scenario.mode_counts[mode] && scenario.service_unit_ledger[mode].required_units >= 0)),
   vehicle_km_is_service_unit_based: scenarios.every((scenario) => scenario.vehicle_km_proxy === sum(Object.values(scenario.service_unit_ledger).map((item) => item.vehicle_or_service_km_proxy))),
   return_population_agents_processed: returnLegReadout.all_agents_processed,
@@ -1185,6 +1227,7 @@ const checks = {
   robustness_mass_conservation: robustnessCandidates.every((candidate) => candidate.scenario_summaries.every((summary) => summary.mass_conservation)),
   robustness_nominal_gate_has_eligible_candidate: robustnessCandidates.some((candidate) => candidate.nominal_gate_pass),
   robustness_selected_group_satisfaction_screen: robustnessSelected.scenario_summaries.every((summary) => summary.worst_group_satisfaction_p10_gap_proxy_points <= model.robustness_screen.hard_gate_constraints.maximum_worst_group_satisfaction_p10_gap_proxy_points),
+  robustness_selected_accessibility_tail_screen: robustnessSelected.scenario_summaries.every((summary) => summary.worst_group_accessibility_p10_gap_proxy_points <= model.robustness_screen.hard_gate_constraints.maximum_worst_group_accessibility_p10_gap_proxy_points),
   robustness_air_candidate_fail_closed: robustnessCandidates.every((candidate) => candidate.scenario_summaries.every((summary) => summary.air_candidate === 'blocked')),
   robustness_privacy_aggregate_only: robustnessCandidates.every((candidate) => candidate.scenario_summaries.every((summary) => summary.privacy_check === 'aggregate_only_no_personal_trace')),
   robustness_selection_is_separate_from_nominal_selection: true,

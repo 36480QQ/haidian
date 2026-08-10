@@ -25,7 +25,9 @@
     "visual/assets/responsibility-acceptance-contract.json",
     "visual/assets/network-flow-readout.json",
     "visual/assets/regional-scale-commute-readout.json",
+    "visual/assets/run-distributional-accessibility-board.js",
     "assets/figures/distributional-equity-board.svg",
+    "assets/figures/distributional-accessibility-board.svg",
     "visual/assets/capacity-closure-screen.json",
     "visual/assets/mobility-tabletop-evidence.json",
     "visual/assets/claim-audit.json",
@@ -52,8 +54,8 @@
     {
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
-      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "assets/figures/network-flow-board.svg"],
-      "strongest_evidence": "持久化的 O1/O2/O3/O4 候选排名与鲁棒性排序，加上全量聚合网络流、容量闭合、群体 P10 尾部公平筛查、空中候选 fail-closed 和 headline claim audit，共同展示方式选择如何被硬门槛约束",
+      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-distributional-accessibility-board.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "assets/figures/network-flow-board.svg", "assets/figures/distributional-accessibility-board.svg"],
+      "strongest_evidence": "持久化的 O1/O2/O3/O4 候选排名与鲁棒性排序，加上全量聚合网络流、容量闭合、满意度与可达性 P10 尾部筛查、空中候选 fail-closed 和 headline claim audit，共同展示方式选择如何被硬门槛约束",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
     {
@@ -66,8 +68,8 @@
     {
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
-      "start_here": ["proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
-      "strongest_evidence": "四类人入口、法定角色待确认的 P0 证据顺序、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
+      "start_here": ["proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "assets/figures/distributional-accessibility-board.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
+      "strongest_evidence": "四类人入口、法定角色待确认的 P0 证据顺序、可达性最低一成筛查、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
     {
