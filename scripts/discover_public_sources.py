@@ -329,12 +329,21 @@ def host_of(url: str) -> str:
 
 
 def is_probably_supported_url(url: str) -> bool:
-    if not url.startswith(("http://", "https://")):
+    value = (url or "").strip()
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        hostname = parsed.hostname
+        _ = parsed.port
+    except ValueError:
         return False
-    lower = url.lower()
+    if parsed.scheme.lower() not in {"http", "https"} or not hostname:
+        return False
+    if any(char.isspace() for char in value):
+        return False
+    lower = value.lower()
     if any(item in lower for item in EXCLUDED_HOST_KEYWORDS):
         return False
-    path = urllib.parse.urlsplit(lower).path
+    path = parsed.path.lower()
     return not any(path.endswith(ext) for ext in EXCLUDED_EXTENSIONS)
 
 
