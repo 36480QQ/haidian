@@ -1467,7 +1467,7 @@ Every item can be completed independently:
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` — independently recomputes every class-1 metric and asserts a dozen structural conclusions besides (the land-use partition tested point by point, every controlled boundary cited, every `[data:]` anchor resolving); the exit code is the verdict
+1. `node visual/assets/verify.js` — independently recomputes all 17 metrics that `metrics.json` marks `metric_class: 1`, and **asserts that coverage in both directions** (it recomputes every one, and nothing that is not one). Plus a dozen structural conclusions: the land-use partition tested point by point, every controlled boundary cited, every `[data:]` anchor resolving. The exit code is the verdict
 2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site cross-check figure from the OSM coordinates shipped beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute exactly
 3. `node visual/assets/check_cards.js` — resolves every scenario card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
 4. `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the closure mechanism as a data contract, and a ten-case tabletop against the shipped reader
@@ -1478,6 +1478,6 @@ Every item can be completed independently:
 9. `risk.json` — the eight-dimension self-assessment with mitigations and human-review requirements
 10. `changelog.md` — **including the errors this proposal found in itself and corrected**
 11. `agent.json` — full disclosure of the generation method; the `model` field is not a placeholder
-12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, verifiable with `pypdf` by checking for `FontFile3` under `DescendantFonts`
+12. A3 and A0 PDFs — 420×297 mm and 841×1189 mm, fonts subset-embedded, verifiable with `pypdf` by checking for `FontFile3` under `DescendantFonts` (that is where the CJK faces live; the Latin face DejaVuSans-Bold is a simple `/TrueType` subset-embedded under `FontFile2`, so a check for `FontFile3` alone will not see it)
 
 <!-- CHECKLIST:END -->

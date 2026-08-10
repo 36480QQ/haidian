@@ -1580,7 +1580,7 @@ node visual/assets/verify.js
 
 <!-- CHECKLIST:BEGIN -->
 
-1. `node visual/assets/verify.js` —— 独立重算全部第一类指标，并断言十余条结构性结论（用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析），退出码即结论；
+1. `node visual/assets/verify.js` —— 独立重算 `metrics.json` 里全部 17 条 `metric_class: 1` 指标，并**双向断言这一覆盖**（该文件不少算一条，也不多算一条）；另有十余条结构性结论：用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析。退出码即结论；
 2. `node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；
 3. `node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；
 4. `node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；
@@ -1591,6 +1591,6 @@ node visual/assets/verify.js
 9. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
 10. `changelog.md` —— **含本方案自查发现并修正的错误记录**；
 11. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
-12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在。
+12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在（中日韩字体走这条；拉丁面 DejaVuSans-Bold 是简单 `/TrueType`，子集嵌在 `FontFile2`，因此只查 `FontFile3` 会漏看它——它同样已子集嵌入）。
 
 <!-- CHECKLIST:END -->

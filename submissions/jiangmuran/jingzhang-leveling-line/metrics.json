@@ -21,6 +21,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -39,6 +40,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -60,6 +62,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -80,6 +83,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -99,7 +103,8 @@
         "A-BOUNDARY-001"
       ],
       "evidence_class": "official_context",
-      "confidence_is_about": "reading"
+      "confidence_is_about": "reading",
+      "metric_class": 2
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -112,7 +117,8 @@
       "reason": "本方案写了一条约束——「人才公寓与既有居住的关系须以不减少现有居住供给为前提」——而现状居住建筑面积并未公开，本包也没有测它。按本方案自己的标准，一条无法核验的规则不算规则，因此这里把它约束的那个量单列为 unknown 并写明前置条件：现状居住建筑面积或户数须由权属与现状测绘数据给出，该数据到位前这条约束只能作为深化阶段的必检项，不能声称已满足。0701 城镇住宅与 0804 教育用地不出现在 land_use.geojson 里，是因为它们落在 11 个留白街区内且其边界依赖同一批未公开数据——这是判断，不是遗漏。",
       "assumption_ids": [
         "A-CONTROLS-001"
-      ]
+      ],
+      "metric_class": 2
     },
     "key_area_count": {
       "status": "known",
@@ -129,6 +135,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -147,6 +154,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -166,6 +174,7 @@
         "A-BOUNDARY-001",
         "A-CLOSURE-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -186,6 +195,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -205,6 +215,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -223,6 +234,7 @@
       "assumptions": [
         "任务书要求不少于 10 张；本项为实际张数，由 check_cards.js 逐卡解析验证。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -241,6 +253,7 @@
       "assumptions": [
         "其余卡片的限差由 BM-1 的限差议事厅设定，本方案不代拟，故标记为未可运行。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -259,6 +272,7 @@
       "assumptions": [
         "S06 / S10 / S11，各有独立受控边界；任务书要求不少于 3 个。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -277,6 +291,7 @@
       "assumptions": [
         "任务书要求不少于 5 类。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -296,6 +311,7 @@
       "assumptions": [
         "任务书要求不少于 3 个 AI 朝圣地标。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -315,6 +331,7 @@
       "assumptions": [
         "任务书要求 5–8 个全球案例；逐案来源登记于 sources.json。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -333,6 +350,7 @@
       "assumptions": [
         "每项给出责任角色、合作机制、前置、成本级别、用地依赖、审批路径、KPI 与退出条件。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -351,6 +369,7 @@
       "assumptions": [
         "三期为互不重叠的增量，两两重叠面积由构建闸门约束为 0。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -369,6 +388,7 @@
       "assumptions": [
         "完整剖分，无重叠无缺口，由 verify.js 以 40 m 格网逐点验证。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -387,6 +407,7 @@
       "assumptions": [
         "含六个建筑地块 LU-B01–LU-B06。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -405,6 +426,7 @@
       "assumptions": [
         "含主脊、两条附合路线、十一段缝合与三条测点接入支线。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -423,6 +445,7 @@
       "assumptions": [
         "BM-1 与 BM-2；BM-0 为水准原点，不计入一等点。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -441,6 +464,7 @@
       "assumptions": [
         "月度复测，由居民与一线人员主导取读数。"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     },
@@ -459,6 +483,7 @@
       "assumptions": [
         "六项 agent 任务的 must-address 与 required output 合计。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -477,6 +502,7 @@
       "assumptions": [
         "每条指向一处构建时校验存在的证据；缺一即构建失败。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -497,6 +523,7 @@
       "assumptions": [
         "这是**被声明**的引用数；其中能被解析规则核对的那部分由 matrix_refs_qa 分别报出，两个数取自同一个定义，不再各算各的（此前二者相差 5）。每条条目的证据摘要由其自身引用生成，44 条互不相同。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -515,6 +542,7 @@
       "assumptions": [
         "verify.js / check_osm.js / check_cards.js / check_closure.js / run_s08_tabletop.js，均无依赖、不联网。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -533,6 +561,7 @@
       "assumptions": [
         "2 例接受、8 例拒绝，全部对随包读取器实跑。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -551,6 +580,7 @@
       "assumptions": [
         "本方案自身错误的登记册；每条对应一个可校验的提交。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -569,6 +599,7 @@
       "assumptions": [
         "由本方案之外的评审在公开 PR 或 Issue 中发现的缺陷数。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -587,6 +618,7 @@
       "assumptions": [
         "逐文件权利归类，由 manifest 生成；任一随包文件未归类即构建失败。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "self_measured",
       "confidence_is_about": "reading"
     },
@@ -605,6 +637,7 @@
       "assumptions": [
         "© OpenStreetMap contributors，ODbL 1.0；由 check_osm.js 复算全部十个已发布标量。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "background_only",
       "confidence_is_about": "computation"
     },
@@ -623,6 +656,7 @@
       "assumptions": [
         "权威源为 GitHub git tree，非会滞后的展示索引；语料每日增长，引用前须重跑。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "background_only",
       "confidence_is_about": "computation"
     },
@@ -641,6 +675,7 @@
       "assumptions": [
         "机器人与 AI 公共服务两条赛道；空白表由该文件生成。"
       ],
+      "metric_class": "package_self_count",
       "evidence_class": "background_only",
       "confidence_is_about": "computation"
     },
@@ -661,6 +696,7 @@
       "assumption_ids": [
         "A-BOUNDARY-001"
       ],
+      "metric_class": 1,
       "evidence_class": "provisional",
       "confidence_is_about": "computation"
     }
