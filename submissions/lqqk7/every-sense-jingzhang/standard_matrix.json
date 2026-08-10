@@ -78,6 +78,45 @@
       "assumption_ids": ["A-BUILDINGS-AND-OWNERSHIP-001", "A-CONTROLS-001", "A-ENGINEERING-AND-HERITAGE-001"], "self_check_ids": ["PROFESSIONAL_EVIDENCE", "PROFESSIONAL_REVIEW"],
       "risk_ids": ["R-02", "R-04", "R-05", "R-06"], "gate_ids": ["G0", "G3"],
       "evidence_summary_zh": "当前只完成建筑概念对象、首层公共界面与人尺度服务节点的设计响应，不声称达到施工图或正式建筑设计深度；逐栋现状、权属、结构、消防、文保和适用深度文件均列为明确数据缺口。"
+    },
+    {
+      "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "requirement_zh": "无障碍环境建设法为平等参与、无障碍信息交流、无障碍设施建设与维护提供法源方向；第39条的现场指导与人工办理要求仅针对该条列举的医疗、社会保障、金融、生活缴费等公共服务场所。",
+      "professional_dimension": "无障碍环境", "mandatory": false, "review_status": "addressed",
+      "proposal_sections": ["设计依据与资料清单", "AI 创新生态、人才画像与 AI+ 场景", "蓝绿空间、公共空间与城市风貌", "指标体系、面积复算与合规矩阵", "风险、版权与合规说明"],
+      "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/roads.geojson", "geometry/public_space.geojson", "geometry/constraints.geojson"], "geometry_feature_ids": ["ROAD-001", "PUBLIC-001", "OP-01", "OP-03", "OP-06"],
+      "metric_refs": ["independent_task_completion_rate", "multichannel_information_coverage", "forced_abandonment_rate", "human_handover_success_rate"],
+      "source_ids": ["ACCESSIBILITY-LAW-CN", "WHO-DISABILITY-HEALTH", "AGENT-TASKBOOK"],
+      "assumption_ids": ["A-ACCESS-BASELINE-001", "A-CO-DESIGN-001", "A-IMPLEMENTATION-001"], "self_check_ids": ["PROFESSIONAL_EVIDENCE", "SPATIAL_REVIEW", "PROFESSIONAL_REVIEW"],
+      "risk_ids": ["R-01", "R-03", "R-06", "R-08"], "scenario_ids": ["S01", "S03", "S04", "S06"], "work_package_ids": ["JZ-01", "JZ-03", "JZ-05"], "gate_ids": ["G0", "G2", "G3"],
+      "evidence_summary_zh": "五类用户画像、场景生命周期与合规矩阵逐项对应平等参与和无障碍信息交流方向，双通道信息、连续通行与人工求助构成可测试的设计响应。第39条的人工办理边界严格按其列举事项理解，本方案其余人工兜底与服务等价主张均为概念设计建议，不写成法定义务；正文同时声明不宣称任何现状设施或界面已达标，符合性评价须由专业团队在现场审计后作出。"
+    },
+    {
+      "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
+      "requirement_zh": "国办发〔2020〕45号提出传统服务方式与智能化服务并行、聚焦老年人高频服务场景的政策方向；文件2020—2022年阶段性目标已到期，仅作背景与场景设计参照。",
+      "professional_dimension": "适老化与包容公共服务", "mandatory": false, "review_status": "addressed",
+      "proposal_sections": ["统筹研究范围产业与未来城市研究", "AI 创新生态、人才画像与 AI+ 场景", "交通、轨道、市政与公共服务设施", "更新项目清单、实施政策与分期计划"],
+      "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/roads.geojson", "geometry/public_space.geojson", "geometry/constraints.geojson"], "geometry_feature_ids": ["ROAD-001", "PUBLIC-001", "OP-01", "OP-08", "OP-10"],
+      "metric_refs": ["ai_off_service_equivalence_gap", "multichannel_information_coverage", "independent_task_completion_rate", "human_handover_success_rate"],
+      "source_ids": ["ELDERLY-SMART-TECH-PLAN-CN", "AGENT-TASKBOOK", "SOURCE-REGISTRY"],
+      "assumption_ids": ["A-ACCESS-BASELINE-001", "A-OPERATION-NODES-001", "A-IMPLEMENTATION-001"], "self_check_ids": ["PROFESSIONAL_EVIDENCE", "PROFESSIONAL_REVIEW"],
+      "risk_ids": ["R-01", "R-03", "R-07", "R-08"], "scenario_ids": ["S06", "S08", "S10"], "work_package_ids": ["JZ-01", "JZ-04", "JZ-05"], "gate_ids": ["G0", "G2", "G3"],
+      "evidence_summary_zh": "AI 关闭后的等价求助、固定导视、现金与人工替代、无账户服务台和纸质流程构成“传统方式与智能化服务并行”的空间与运营响应，S06、S08、S10 与 OP-01、OP-08、OP-10 同序绑定并以 AI 开关服务等价差衡量。正文同时声明该文件面向全国、阶段性目标已到期，只作背景参照，不写成2026年仍在执行的法定义务，也不据此声称本地已完成落实。"
+    },
+    {
+      "standard_id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "requirement_zh": "生成式人工智能服务管理暂行办法第2条限定适用于向境内公众提供生成内容的服务，第15条要求受理投诉举报并及时处理，第17条的安全评估与备案表述仅针对具有舆论属性或社会动员能力的服务。",
+      "professional_dimension": "AI治理与数据合规", "mandatory": false, "review_status": "addressed",
+      "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景", "更新项目清单、实施政策与分期计划", "风险、版权与合规说明"],
+      "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
+      "geometry_refs": ["geometry/constraints.geojson", "geometry/public_space.geojson"], "geometry_feature_ids": ["OP-03", "OP-05", "OP-08"],
+      "metric_refs": ["human_handover_success_rate", "human_handover_response_time_seconds", "co_design_role_coverage_ratio"],
+      "source_ids": ["GENERATIVE-AI-INTERIM-MEASURES-CN", "AGENT-TASKBOOK", "SOURCE-REGISTRY"],
+      "assumption_ids": ["A-CO-DESIGN-001", "A-OPERATION-NODES-001", "A-IMPLEMENTATION-001"], "self_check_ids": ["PROFESSIONAL_EVIDENCE", "PROFESSIONAL_REVIEW"],
+      "risk_ids": ["R-01", "R-03", "R-04", "R-07"], "scenario_ids": ["S03", "S05", "S08"], "work_package_ids": ["JZ-03", "JZ-04", "JZ-06"], "gate_ids": ["G0", "G2", "G3"],
+      "evidence_summary_zh": "跨模态翻译、易读改写与自动推荐类功能一律保留可见状态、人工接管、申诉、纠错与退出路径，投诉与公开回执机制对应第15条的受理和及时处理方向；OP-03、OP-05、OP-08 承接人工解释、急停与无账户退出，并以人工接管成功率和响应耗时衡量。正文明确本方案未提供也未主张提供面向境内公众的生成式服务，不据第17条声称已完成任何安全评估或备案，相关判断待运营主体确定后由专业人员另行认定。"
     }
   ]
 }

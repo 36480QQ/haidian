@@ -24,16 +24,16 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 373402.48,
       "unit": "sqm",
       "source_files": ["geometry/buildings.geojson"],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": ["Submitted building polygons are conceptual evidence objects, not a cleared existing-building survey."],
+      "assumptions": ["Submitted building polygons are conceptual evidence objects, not a cleared existing-building survey.", "The four submitted footprints do not overlap, so the sum equals the dissolved footprint area used by the spatial recalculation.", "BLDG-002, BLDG-003 and BLDG-004 are concept massing envelopes for the three experimental courts (JZ-02, JZ-03, JZ-04); they carry no approved height, floor area, or development right."],
       "calculation_metadata": {
         "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
         "projection": "EPSG:4548",
-        "verified_on": "2026-08-10",
+        "verified_on": "2026-08-11",
         "rounding": "0.001 sqm",
         "responsible_role": "spatial-analysis professional",
         "recalculation_trigger": "replacement or revision of any submitted building polygon"
@@ -41,18 +41,18 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.213097,
       "unit": "ratio",
       "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": ["Both numerator and denominator use submitted provisional geometry."],
+      "assumptions": ["Both numerator and denominator use submitted provisional geometry.", "The six green-space polygons do not overlap each other, so their sum equals the dissolved area (2432035.047 sqm).", "The green-space and public-space envelopes deliberately overlap by 452986.656 sqm where the spine greenway also carries public interfaces; green_ratio and public_space_ratio therefore must not be added together.", "The submitted green-space envelope stays below the park and open-space land-use area declared in geometry/land_use.geojson#LU-002 (2589339.239 sqm); it is not an approved park boundary."],
       "numerator_definition": "area of submitted green-space polygons in EPSG:4548",
       "denominator_definition": "area of submitted site-boundary polygon in EPSG:4548",
       "calculation_metadata": {
         "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
         "projection": "EPSG:4548",
-        "verified_on": "2026-08-10",
+        "verified_on": "2026-08-11",
         "rounding": "0.000001 ratio",
         "responsible_role": "spatial-analysis professional",
         "recalculation_trigger": "revision of green-space or site-boundary geometry"
@@ -60,18 +60,18 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.181788,
       "unit": "ratio",
       "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": ["Both numerator and denominator use submitted provisional geometry."],
+      "assumptions": ["Both numerator and denominator use submitted provisional geometry.", "The ten public-space polygons do not overlap each other, so their sum equals the dissolved area (2074716.512 sqm).", "The public-space and green-space envelopes deliberately overlap by 452986.656 sqm; green_ratio and public_space_ratio must not be added together.", "Public-space polygons are conceptual interface envelopes, not approved plazas, operating areas, or cleared land-use decisions."],
       "numerator_definition": "area of submitted public-space polygons in EPSG:4548",
       "denominator_definition": "area of submitted site-boundary polygon in EPSG:4548",
       "calculation_metadata": {
         "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
         "projection": "EPSG:4548",
-        "verified_on": "2026-08-10",
+        "verified_on": "2026-08-11",
         "rounding": "0.000001 ratio",
         "responsible_role": "spatial-analysis professional",
         "recalculation_trigger": "revision of public-space or site-boundary geometry"
@@ -108,6 +108,170 @@
         "rounding": "integer count",
         "responsible_role": "spatial-analysis professional",
         "recalculation_trigger": "replacement of the submitted key-area feature collection"
+      }
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": ["proposal.md", "geometry/constraints.geojson"],
+      "formula": "count(distinct scenario cards S01-S10 in the proposal scenario table), cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features)",
+      "confidence": "high",
+      "assumptions": ["The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "design-evidence author and independent reviewer",
+        "recalculation_trigger": "addition, merger, or withdrawal of a scenario card"
+      }
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "count(rows in the proposal persona table)",
+      "confidence": "high",
+      "assumptions": ["Personas organise design questions and test scripts; they are not diagnostic labels, commercial segments, identity claims, or completed user research.", "Real co-design must be voluntary, accommodated, understandable, and withdrawable; the count says nothing about participation having occurred."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "co-design lead and participant representatives",
+        "recalculation_trigger": "revision of the persona structure agreed with participant representatives"
+      }
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["proposal.md", "geometry/public_space.geojson"],
+      "formula": "count(PUBLIC_SPACE features carrying a landmark_id), cross-checked against the three named cultural and accountability landmarks in the proposal",
+      "confidence": "high",
+      "assumptions": ["Landmark polygons are conceptual public-space envelopes for Common Gauge Gate, Every Sense Origin, and Hundred-Sense Forum; they are not sited installations, approved structures, or cleared heritage interventions."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "urban-design author and cultural-content reviewer",
+        "recalculation_trigger": "addition or removal of a landmark public-space feature"
+      }
+    },
+    "op_node_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": ["geometry/constraints.geojson"],
+      "formula": "count(features with layer=SCENARIO_NODE)",
+      "confidence": "high",
+      "assumptions": ["Each node is a concept test point placed inside provisional key-area geometry; it is not an official location, engineering setting-out point, or built facility."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of the scenario-node feature collection"
+      }
+    },
+    "work_package_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["proposal.md", "geometry/phasing.geojson"],
+      "formula": "count(distinct JZ-xx identifiers in the renewal-project table), cross-checked against the union of work_package_ids on PHASE features",
+      "confidence": "high",
+      "assumptions": ["Work packages are conceptual proposals with named prerequisites; none is a funded project, procurement item, or government commitment."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "design-evidence author and independent reviewer",
+        "recalculation_trigger": "addition, merger, or withdrawal of a work package"
+      }
+    },
+    "gate_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["proposal.md", "risk.json", "geometry/constraints.geojson"],
+      "formula": "count(distinct evidence gates G0-G3 defined in the first-90-day sequence), cross-checked against gate_links in risk.json and gate_id on SCENARIO_NODE features",
+      "confidence": "high",
+      "assumptions": ["Gates define the evidence and authorisation conditions this package sets for itself; they do not replace statutory approval, permitting, or professional compliance review."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "independent reviewer and future authorised operator",
+        "recalculation_trigger": "revision of the gate structure or its stop and resume conditions"
+      }
+    },
+    "risk_item_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": ["risk.json", "proposal.md"],
+      "formula": "count(entries in risk.json dimensions, each carrying a distinct R-xx identifier)",
+      "confidence": "high",
+      "assumptions": ["The register is a self-assessment by the submitting agent; it is not a conclusion by an authority, operator, or professional institution.", "Every entry binds a gate, a representative scenario, work packages, a stop condition, and a resume condition; scores only set review priority."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "risk-register author and independent reviewer",
+        "recalculation_trigger": "addition, merger, or closure of a risk entry"
+      }
+    },
+    "international_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": ["sources.json"],
+      "formula": "count(registered sources whose identifier begins with CASE-)",
+      "confidence": "high",
+      "assumptions": ["Cases are used for mechanism comparison and interpretation only; no page image, layout, long passage, logo, or unlicensed typeface is reproduced.", "Reference does not imply that the cited organisations participate in, endorse, or have reviewed this proposal."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "integer count",
+        "responsible_role": "source-registry maintainer",
+        "recalculation_trigger": "registration or withdrawal of a case source"
+      }
+    },
+    "scenario_human_review_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["geometry/constraints.geojson", "proposal.md"],
+      "formula": "scenario_nodes_with_a_declared_human_handoff / op_node_count",
+      "confidence": "high",
+      "assumptions": ["This is a document-completeness measure: it confirms that every scenario node names a human role that takes over, and says nothing about staffing, rota, response time, or verified capability.", "Actual handover performance stays unknown until human_handover_success_rate and human_handover_response_time_seconds are measured under an approved G2 protocol."],
+      "numerator_definition": "SCENARIO_NODE features whose human_handoff property names a responsible human role and the action it performs",
+      "denominator_definition": "all SCENARIO_NODE features in geometry/constraints.geojson",
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "0.000001 ratio",
+        "responsible_role": "service-design author and independent reviewer",
+        "recalculation_trigger": "addition of a scenario node or removal of a declared human handover"
+      }
+    },
+    "scenario_exit_path_coverage": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": ["geometry/constraints.geojson", "proposal.md"],
+      "formula": "scenario_nodes_with_a_declared_ai_off_path / op_node_count",
+      "confidence": "high",
+      "assumptions": ["This is a document-completeness measure: it confirms that every scenario node declares a non-AI alternative path, not that the alternative has been built, staffed, or proven equivalent.", "Service equivalence stays unknown until ai_off_service_equivalence_gap is measured through paired AI-on and AI-off task testing under an approved G2 protocol."],
+      "numerator_definition": "SCENARIO_NODE features whose ai_off_path property declares a usable alternative when AI is unavailable, refused, or switched off",
+      "denominator_definition": "all SCENARIO_NODE features in geometry/constraints.geojson",
+      "calculation_metadata": {
+        "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+        "verified_on": "2026-08-11",
+        "rounding": "0.000001 ratio",
+        "responsible_role": "accessibility lead and independent reviewer",
+        "recalculation_trigger": "addition of a scenario node or removal of a declared AI-off path"
       }
     },
     "independent_task_completion_rate": {
