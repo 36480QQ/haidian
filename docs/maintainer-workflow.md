@@ -49,7 +49,7 @@ python3 scripts/maintainer_review.py \
 把命令输出复制到 PR comment。maintainer review 的可见结果只在 PR comment 中展示，不进入 `submissions-data.js`、方案卡片或公开展示页。按建议状态处理：
 
 - `request-changes`：要求参赛者修复后再审。
-- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。
+- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。历史包在 gallery 中可能为公开连续性保留既有展示分类，但该分类不构成新的可信正式证据。
 - `formal-review-ready`：可进入正式专业评分。
 - `reject`：触发强制拒绝条件，关闭或拒绝 PR。
 
