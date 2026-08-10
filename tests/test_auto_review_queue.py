@@ -25,7 +25,7 @@ from generate_submissions_data import package_sha256  # noqa: E402
 
 
 class AutoReviewQueueTests(unittest.TestCase):
-    def test_merge_is_bound_to_reviewed_head(self) -> None:
+    def test_merge_is_bound_to_reviewed_head_for_all_merge_modes(self) -> None:
         head_sha = "a" * 40
         live = {
             "headRefOid": head_sha,
@@ -36,35 +36,37 @@ class AutoReviewQueueTests(unittest.TestCase):
                 {"name": "submission-validation", "conclusion": "SUCCESS"}
             ],
         }
-        with (
-            patch("auto_review_queue.pr_meta", return_value=live),
-            patch("auto_review_queue.run") as run_mock,
-        ):
-            apply_review(
-                "open-city-ai/haidian",
-                42,
-                head_sha,
-                Decision("accept", 90, "accepted"),
-                ROOT / "unused-comment.md",
-                ROOT,
-                admin_merge=True,
-            )
+        for admin_merge in (False, True):
+            with self.subTest(admin_merge=admin_merge):
+                with (
+                    patch("auto_review_queue.pr_meta", return_value=live),
+                    patch("auto_review_queue.run") as run_mock,
+                ):
+                    apply_review(
+                        "open-city-ai/haidian",
+                        42,
+                        head_sha,
+                        Decision("accept", 90, "accepted"),
+                        ROOT / "unused-comment.md",
+                        ROOT,
+                        admin_merge=admin_merge,
+                    )
 
-        run_mock.assert_any_call(
-            [
-                "gh",
-                "pr",
-                "merge",
-                "42",
-                "--repo",
-                "open-city-ai/haidian",
-                "--merge",
-                "--match-head-commit",
-                head_sha,
-                "--admin",
-            ],
-            cwd=ROOT,
-        )
+                    run_mock.assert_any_call(
+                        [
+                            "gh",
+                            "pr",
+                            "merge",
+                            "42",
+                            "--repo",
+                            "open-city-ai/haidian",
+                            "--merge",
+                            "--match-head-commit",
+                            head_sha,
+                            *(["--admin"] if admin_merge else []),
+                        ],
+                        cwd=ROOT,
+                    )
 
     def test_default_image_budget_matches_bilingual_packet(self) -> None:
         with patch.object(sys, "argv", ["auto_review_queue"]):
