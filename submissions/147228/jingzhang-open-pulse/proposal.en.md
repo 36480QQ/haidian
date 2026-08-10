@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.7"
+iteration: "v3.9"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v3.6; v3.3 names the retained spatial-object and drawing-export layer. v3.6 carries forward v3.5's bilingual, copyright, provisional-boundary handoff and source-boundary work, and turns the existing synthetic S02 test window into an offline stop-and-restore rehearsal; it changes no spatial objects, metrics, source classifications or implementation boundary.
+> **Package version note:** This package is iteration v3.9; v3.3 names the retained spatial-object and drawing-export layer. v3.9 brings the human-first buffer, minimum city-API fields, compute–energy gates and versioned governance to the three nodes with bilingual figures and structured contracts; it changes no spatial objects, metrics, source classifications or implementation boundary.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
@@ -40,6 +40,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Dazhongsi AI Industry Cluster | Station quadrants, enterprise exchange, commercial events and residents returning home can conflict. | Urban experience living room: station walking, four-quadrant crossings, quiet chain, short exhibitions and a capacity-reducible international route form a recoverable public interface. | Fire, crowd, noise, drainage and rail/road coordination remain prerequisites; no event capacity or delivery schedule is promised. |
 
 The three areas correspond to PROV-KEY-001, PROV-KEY-002 and PROV-KEY-003; these are provisional design constraints, not official red lines. The moves are conceptual suggestions for professional deepening after formal geometry, rights, controls, fire, heritage and municipal conditions are available.
+
+### v3.9 Human-first buffer and city API: connect the hard gates to three nodes
+
+This iteration compresses “people first, machine-callable, reversible on failure” into a reviewable spatial contract rather than another AI display layer. `human-first-buffer.json` returns indigenous/older residents, workers at risk of displacement, digitally excluded users and night workers to the three nodes: human windows, paper/telephone service, a skills-retraining and appeal corridor, and screen-free night rest must precede model service. `city-api-energy-contract.json` then defines asset state, consent, accountable role, human fallback, stop condition and release note as the minimum city-API fields.[data:visual/assets/human-first-buffer.json] [data:visual/assets/city-api-energy-contract.json]
+
+| Human/machine interface | Conceptual spatial move | Review gate and data gap |
+| --- | --- | --- |
+| Human-first buffer | At AI Origin retain a staffed registration desk, intergenerational learning and a skills-retraining corridor; at Dazhongsi reconnect night human service, quiet rest and screen-free green space to the ordinary slow route | Record, but do not claim, `resident_continuity_retention_rate`, `skills_retraining_corridor_completion_rate` and `manual_channel_availability_rate`; resident, merchant, illuminance, noise, accessibility and night-service baselines are missing [data:visual/assets/human-first-buffer.json] [metric:public_space_ratio] |
+| City API layer | At Zhongzhi provide an asset/geometry-version observation desk; across the three nodes show consent, responsible role, human fallback and stop condition. Machines call only auditable minimum fields; people and ordinary services do not depend on an account | Every window requires `asset_id`, `geometry_version`, `uncertainty`, `human_fallback` and `stop_condition`; consent, interface responsibility, network isolation and public receipt remain for professional verification [data:visual/assets/city-api-energy-contract.json] [depth:versioned_governance] |
+| Compute–energy and versioned governance | PUE tiers, renewable/heat interfaces, human–machine movement and the Xiaoyue River Wing embodied-test candidate are approval-dependent concept gates; annual review, public receipt, release note and rollback connect an AI three-month iteration to long-term urban maintenance | `PUE`, renewable power, heat-network, low-altitude or test permits remain project-level `unknown`; they are not settled policy, engineering feasibility or capacity commitments. Any failed fallback, unanswered resident appeal or missing responsibility freezes scale and restores ordinary service [data:visual/assets/city-api-energy-contract.json] [standard:BEIJING-DATACENTER-ENERGY-REVIEW-2023] |
+
+![City API and compute–energy governance](assets/figures/city-api-energy-governance.en.png)
+
+The three provisional nodes in this figure express only the review relationship “ordinary people first → minimum API fields → compute/energy and silicon-right-of-way gates → versioned governance”. They are not municipal interfaces, heat-network connections, low-altitude routes or embodied-intelligence permits. All spatial moves remain conceptual suggestions for professional deepening; without official geometry, field service baselines, energy metering, data consent and accountable operators, the state remains `unknown` and is not promoted to formal evidence.[data:assets/figures/city-api-energy-governance.en.png] [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001]
 
 ## v3.3 Shortest implementation contract: an ordinary route and an exit at every step
 

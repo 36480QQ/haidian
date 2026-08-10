@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "49ed6f945f9d2d8f37c573c8940b07df9115ecbe436c0450f4735b7f014626e3"
+      "sha256": "33ed3f596d8e7a2f6d5807042b5bdf9b331f98309220702fd430f8bf21a63652"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b02a026cd389bbdc3fe8d7ce40e7e9399ac7b22057ed21d8c72b97eec4fcee4c"
+      "sha256": "f9cdddb31913e9c41a82353ecde63fc81faeb4e5604754698e2e82ef1b03bf4b"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1e986504fa5cfeb6841e463b19662dd6ece6d45e3ed2446530f15c6df6eb9404"
+      "sha256": "4c719e2918d54a51b812015f0bac5677e44ef341bedf75f5ec5dc0bee587c0b5"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a317d5a9242d3ea1fd8ec0cbe3d685716cfb883ed311667af405be7e14b02475"
+      "sha256": "7c73eb18d19266a63917f676c613fde5129f4b803c8eabeb94d0c85f4250f148"
     },
     {
       "path": "report/narrative.md",
@@ -115,21 +115,21 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "bb51d2b9d31af600e4bde4ab562ba8ff31bd324be1e3f1f5879c8c4d6c513379"
+      "sha256": "c0d9fcafa128236402e11a232356e1dc59dce7ccb3884ad1eee930fec28b0b77"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "bb00e71cc110c43b2dc1a8c10a1a526aa2516ef21cae7e0df29fbdd0ba4a1f0a"
+      "sha256": "c04ebc75d24d2265146ad9ef1e3e7542727872f5dc6ae07c7ee30b0fd0c33874"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b2ce37dbdfea126996c0faf17bff311da58bf4af3bc01b60465c246afd23b257"
+      "sha256": "479c9bf52aab5b660e385a236bc163e6e5a65b5d80b027fa38cfcc6824cc6b00"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -137,7 +137,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6ff3c6df9656d46a4649e975fbada0f5c9cc36f183887b892a0393d3916a4df3"
+      "sha256": "8e289c80228c239dce230f5a53b0d281448202a3b49be5596a76586f18734ea3"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -145,14 +145,14 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "633f44b365acd94ec87adb160664a9c2436b52c3d48438013053c0b2520a4c08"
+      "sha256": "f09964cc591cc8fdf1e1f6a6fdea301e7ffb5529d6880792b0378739ab58bbef"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "dff24853dbb610b2e49bad5b31fb0683794d594968253cbfc7416d76f963de73"
+      "sha256": "17d6d171572682f2b45e7e3b86f62748a5094d11c4743ddaeca42f0d22d64dc1"
     },
     {
       "path": "visual/index.en.html",
@@ -160,7 +160,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "158d2aa2c28185164f1847d2d5c962e6e6523d830894baf88e72eeb11b4f97e1"
+      "sha256": "c71689e340e2f1d38c9314500c9bcdde7e0aa9a58f5afb00a409c4ba391bd3c9"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -459,7 +459,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "1077519c52fdb8c28f668bf3920b0e6133b3a41c5f2aa2526f61d464ede30bd7"
+      "sha256": "1f228490e9b418a161cff48c784a30019e779b5e6f354333afcaea7cc0309e33"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -612,6 +612,64 @@
       "language": "en",
       "translation_of": "assets/figures/sustainability-timeseries.png",
       "sha256": "7db1c05ec7817140b17fbaf0489a37dd3069c26fcb1cb94a7a5fcea6ac8cbfa7"
+    },
+    {
+      "path": "assets/figures/city-api-energy-governance.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "3360edcc96f9eb49cc5e5cce1585d1a0955334b9be87e718c5331da0ee71320a"
+    },
+    {
+      "path": "assets/figures/city-api-energy-governance.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/city-api-energy-governance.png",
+      "sha256": "31d197929e46d8b0f3c37340ae478c6fe71bfe6ca7a52671f180bd9ccb2451d3"
+    },
+    {
+      "path": "visual/assets/human-first-buffer.json",
+      "role": "human_first_buffer",
+      "required": true,
+      "language": "neutral",
+      "sha256": "9188d326980056cc5701c15f1f00f71d1f71292d6987690d1882aec62771bc4a"
+    },
+    {
+      "path": "visual/assets/city-api-energy-contract.json",
+      "role": "city_api_energy_contract",
+      "required": true,
+      "language": "neutral",
+      "sha256": "fc6dffa204d84b30d652321b45feae50b6ff546012dbdc8751997dcebafd83c8"
+    },
+    {
+      "path": "visual/assets/claim-provenance.json",
+      "role": "claim_provenance_register",
+      "required": true,
+      "language": "neutral",
+      "sha256": "dec66cd07313e7327c93e551f9713c228b9cf88186921ff25027ff2433204db2"
+    },
+    {
+      "path": "visual/assets/run-open-pulse-claim-provenance.js",
+      "role": "claim_provenance_runner",
+      "required": false,
+      "language": "neutral",
+      "sha256": "643510a0698658d2ff93dde106f0366f2b9e91bff05aa7e8e642b96afc454b10"
+    },
+    {
+      "path": "assets/figures/city-api-energy-governance.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "zh",
+      "sha256": "73b9c4e13f30275dbd3a48e33eaa1f4a192997e7ecefcbe115549b1ebd7fe86c"
+    },
+    {
+      "path": "assets/figures/city-api-energy-governance.en.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/city-api-energy-governance.svg",
+      "sha256": "ec552145d7cf6b03511f6b299892694039886e939b31a54709863b016bba8b7a"
     }
   ],
   "validation_claim": {
