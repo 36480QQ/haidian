@@ -9,7 +9,7 @@ license: "CC-BY-SA-4.0"
 summary: "The proposal makes phone-free, account-free and face-recognition-free access the baseline of AI-enabled public space. One accessible civic spine, three interface laboratories and twelve human-takeover scenarios connect the centennial Jing-Zhang heritage, full-stack AI innovation and everyday urban life."
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.1"
+iteration: "v1.2-review-response"
 ---
 
 # NO-APP JINGZHANG
@@ -23,6 +23,8 @@ The official announcement establishes the project name, three-level scope, appro
 The urban-design approach coordinates public space, heritage, building massing and urban character, while separating known facts, conceptual recommendations and pending statutory conditions. Land-use labels follow the classifications registered in the site package. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
 The No-App baseline is supported by public policy that keeps conventional services alongside smart services, the national accessibility law, and official explanations of transparency, fairness and refusal rights in automated decision-making. [source:SMART-ELDERLY-2020] [source:ACCESSIBILITY-LAW-2023] [source:PIPL-AUTOMATED-DECISION] WCAG 2.2 is used as an international digital-accessibility reference, not as a statutory planning standard for this project. [source:W3C-WCAG22]
+
+The accessibility law is now an approved formal source in the repository registry. The national older-person smart-technology plan remains background only and cannot prove local implementation. The Interim Measures for Generative AI Services apply only where generated-content services are provided to the public in mainland China; this proposal uses them as a service-governance screening reference and does not claim that any scenario has completed filing, security assessment or legal compliance. [source:ACCESSIBILITY-LAW-2023] [source:SMART-ELDERLY-2020] [source:GENERATIVE-AI-MEASURES]
 
 The repository still lacks an official Overall Design Area boundary, three official key-area polygons, road redlines, Regulatory Detailed Planning controls, verified existing buildings and ownership, heritage controls, utilities, fire and flood conditions, and a public-facility inventory. The package therefore uses maintainer-provided provisional rough polygons only for concept generation, topology checks, content review and visualisation. [source:SOURCE-REGISTRY] [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]
 
@@ -50,9 +52,34 @@ The spatial structure is **One Spine, Three Labs, Six Crossings and Twelve Stati
 
 ### Identity and the Three Zones and Two Wings
 
-The primary name is “无门槛京张”, with the English name “NO-APP JINGZHANG” and the line “AI is optional. The city remains available.” The proposed logo uses two open rail lines, one human point and an unclosed entry gap. The rails refer to Jing-Zhang heritage and the civic spine; the point marks final human judgement; the gap means entry without an account. The identity uses original geometry, common system fonts and four functional colours, with no corporate marks or uncleared assets.
+The primary name is “无门槛京张”, with the English name “NO-APP JINGZHANG” and the line “AI is optional. The city remains available.” The primary mark uses two open rail lines, one human point and an unclosed entry gap. The rails refer to Jing-Zhang heritage and the civic spine; the point marks final human judgement; the gap means entry without an account. A supporting graphic may crop the open rails but never replace the primary mark. The event lock-up is “NO-APP OPEN DAY + year”. The three labs, twelve stations and four honour nodes use name lock-ups beneath the primary mark rather than separate logos.
+
+| Application | Composition and clear space | Recommended minimum | Boundary |
+| --- | --- | --- | --- |
+| Primary mark | Open twin rails + human point + bilingual name; clear space equals one point diameter | 24 mm print / 120 px screen | Use the symbol-only version below this size; never close the gap |
+| Three-lab lock-up | Primary mark + Zhongzhiyuan / AI Origin / Dazhongsi | 32 mm print / 160 px screen | A lab name cannot imply independent endorsement |
+| Twelve-station code | Open rail + S01–S12 + L0 human-help sign | 18 mm print height | Static wayfinding remains visible before QR or screens |
+| Honour node | Primary mark + node name + contribution/failure year | 40 mm print width | No portrait or corporate mark replaces civic recognition |
+
+The palette is Jing-Zhang Navy `#102A43`, Public Interface Blue `#247BA0`, Ecology Green `#2F855A` and Notice Yellow `#F6C453`; warning red is reserved for risk and exit. System fallback fonts are used, with no third-party font files distributed in the package. Every colour pair requires contrast review; line type, number and text preserve meaning in monochrome. Full bilingual applications are recorded in `visual/assets/brand-system.json`. [source:AGENT-TASKBOOK]
+
+![NO-APP JINGZHANG brand system: primary mark, lock-ups, stations and honour nodes](assets/figures/brand-system.en.png)
 
 The three positionings become a readable Centennial Jing-Zhang Cultural Belt, a freely accessible Urban AI Life Experience Belt and a controlled AI Fusion Innovation Belt. The five functions become interoperability testing, public ecosystem interfaces, non-mandatory AI-enabled scenarios, resilient basic service and governance through informed choice and Human Review. Zhongzhiyuan tests technology, AI Origin defines problems with real users, and Dazhongsi releases mature services in high-frequency daily settings. The Zhongguancun Technology Services Wing supplies standards, legal, finance and international links; the Xiaoyue River Scenario Enablement Wing carries walking, ecological and everyday feedback. [source:AGENT-TASKBOOK]
+
+### Regional collaboration: five interfaces, not spatial expansion
+
+Regional collaboration is a set of conceptual interfaces, not a claim that any external party has committed. Beiwei Community frames resident problems and co-tests everyday services; Future Science City connects research talent, learning and compute needs; Huairou Science City connects research explanation and public science; Beijing Economic-Technological Development Area connects robotics, terminals and manufacturing validation; Beijing–Tianjin–Hebei partners discuss cross-regional talent, supply chains, test-case compatibility and an annual open event. The three Jing-Zhang labs offer a common No-App service passport rather than replacing those places. [source:AGENT-TASKBOOK]
+
+| Partner interface | Talent / technology | Compute / testing | Translation / events | Auditable output and boundary |
+| --- | --- | --- | --- | --- |
+| Beiwei Community | Residents, older people, families and frontline staff define problems | L0 route, information and human-takeover co-tests | Community problem day and return visit | Participation log, issue list and closure receipt; community consent required |
+| Future Science City | Short residency for researchers, students and founders | Tiered model/compute requests; no uncleared personal data transfer | Learning, talent relay and prototype explanation | Data dictionary, compute purpose and mentor log; no resource commitment |
+| Huairou Science City | Research explanation, public science and trustworthy communication | Explainability review before a public-setting prototype | Public science week and multilingual content | Source card, uncertainty card and withdrawal log; no substitute for research review |
+| BDA | Robotics, terminal, repair and manufacturing teams | Closed-site validation before any real-neighbourhood trial request | Prototype-to-scenario-to-maintenance translation | Test report, BOM, maintenance and retirement owner; no admission claim |
+| Beijing–Tianjin–Hebei partners | Cross-regional talent and supply-chain directory | Discussion of interoperable cases and incident classes | Annual open challenge and exchange | Versioned test cases and public summary; mutual recognition requires a separate agreement |
+
+![Regional interfaces for talent, compute, testing, translation and events](assets/figures/regional-collaboration.en.png)
 
 ### Six global cases and transferable mechanisms
 
@@ -116,6 +143,12 @@ Six persona groups define the No-App test baseline: researchers need controlled 
 
 The four starred scenarios are Testing and Validation Scenarios. Each uses a six-field service passport: test objective, boundary, failure threshold, human takeover, public summary and expiry/exit. The twelve nodes correspond to `public_space.geojson`; they are test concepts, not approved operations. [data:geometry/public_space.geojson#PUBLIC-001] [source:PIPL-AUTOMATED-DECISION]
 
+### Real-user co-testing and evidence receipts
+
+Co-testing is a four-step loop: task walkthrough, failure drill, repaired retest and public receipt. Each round covers five roles: older or low-digital-skill people; disabled and cognitively diverse users; nearby residents and families; students and young people; and frontline service, security and maintenance staff. Recruitment, reasonable accommodation, image recording and data fields require separate informed consent; refusal never affects basic service. Round one uses paper and movable prototypes, round two a controlled site, and only round three may consider a fixed-term public trial. Accessibility users and frontline maintainers can veto unresolved critical barriers. Specialists retain final judgement for accessibility, privacy/data, transport, landscape/heritage, structure, fire and engineering safety. [source:ACCESSIBILITY-LAW-2023]
+
+Each test produces five receipts: aggregated participant composition, critical-task completion, failure and takeover log, before/after repair comparison, and open issues with owners. Raw personal data is not committed to the public repository; summaries retain only de-identified counts and reproducible problems. The detailed plan is `visual/assets/user-cotest-plan.json`; equivalence evidence is `visual/assets/bilingual-equivalence-audit.json`.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Conceptual land use is partitioned from the full provisional boundary. Class 1401 park green space forms the central civic spine; research 0802, culture 0803, residential 07 and commercial-service 05 express adjacent dominant functions. [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] The plan answers which adjacencies support accessible service, not whether statutory land use should change. Areas, ratios and boundaries must be recalculated against official polygons and controls.
@@ -151,6 +184,34 @@ The cultural narrative is not a railway-shaped screen. Three readable timelines 
 | P5 Culture and honour system | Four landmarks, contribution archive, failure record and annual display | Historical, copyright, heritage and public review | Modular replacement; no single-company lock-in |
 | P6 Open-operation protocol | Service passport, scenario calls, evaluation, appeal and retirement | Professional legal, data, procurement and audit design | Term review; no automatic renewal |
 
+### P1–P6 responsibility, cost and procurement protocol
+
+The RACI chain assigns accountability for scope, budget and exit to a programme governance group (A). Urban design/engineering, accessibility, data/safety and operations teams execute their professional reviews (R). Resident representatives, site rights holders, relevant transport/heritage/fire specialists and procurement auditors are consulted by issue (C). The public is informed of scope, risks, results and retirement state (I). One technology vendor cannot simultaneously execute a test, accept its result and adjudicate disputes.
+
+| Package | Concept cost class | Procurement/funding assumption | Start evidence | Operation and exit |
+| --- | --- | --- | --- | --- |
+| P1 | C1 research/walkthrough | Planning-research and participation service; create an independent baseline first | Survey scope, sampling and privacy notice | Six-month review; baseline remains open |
+| P2 | C2 movable demonstrator | Small works/sample purchase; removable, repairable components | Multidisciplinary review, mock-up and maintenance list | Monthly inspection; remove after two unresolved cycles |
+| P3 | C2–C3 controlled test | Site owner and tester share cost; safety and insurance separate | Ethics/safety plan, script and emergency-stop drill | Review each test; major incident terminates immediately |
+| P4 | C3 service network | Operating funds precede device purchase; retain human posts | Service catalogue, roster, SLA, training and spares | Quarterly review; L1/L2 pause before L0 if funds fall short |
+| P5 | C2 content/modules | Separate content, rights and component packages; no brand monopoly | History/rights review and prototype co-test | Annual update; disputed content removed first |
+| P6 | C1 governance/audit | Legal, procurement, data and third-party audit service | RACI, log fields, appeal and retirement templates | Annual public report; no automatic renewal |
+
+C1, C2 and C3 are comparative concept classes—research, light prototype, and sustained operation or high-safety work—not budget amounts. Formal estimates require quantities, market quotations, tax, operating term and contingency. Pre-procurement review covers open interfaces, data portability, maintenance rights and exit cost. An acceptance party verifies that L0 works independently; an audit party samples logs, subcontracts, conflicts and issue closure. Funding sources, tender routes and thresholds are not determined.
+
+### Suggested acceptance thresholds for the four tests
+
+| Test | Suggested pilot threshold (calibrate after professional pre-review) | Human takeover and public summary | Reassessment / exit |
+| --- | --- | --- | --- |
+| Robot yielding | Zero major injury/collision events; physical emergency stop checked before 100% of shifts; no unresolved critical barrier on routes used by vulnerable participants | Visible safety steward; instrument target of ≤1 second for the local stop chain | Any major event stops the test; independent safety review required before restart |
+| Public AI interoperability | Suggested ≥95% pass on predefined account-free handoffs; no raw identity field crosses vendors | Human relay acknowledges within 60 seconds; publish failure type, version and repair state | Exit an interface after two sub-threshold rounds or non-exportable lock-in |
+| Offline/degraded mode | L0 lighting, wayfinding, help and movement remain 100%; offline notice within five minutes | Patrol and paper log take over immediately; publish duration and affected service | Review within 24 hours; L1/L2 cannot resume if basic service failed |
+| Accessible information | Suggested ≥90% independent completion of critical tasks and 100% human alternative; zero unresolved critical barriers | Human help responds within 60 seconds; publish de-identified failure themes | User veto for unresolved critical issues; retest the same task after repair |
+
+These are **suggested pilot gates** to make a concept testable, not statutory standards, performance guarantees or existing-condition claims. The SLA has three classes: information service acknowledges within 60 seconds; device failure is isolated and marked on site immediately; routine maintenance logs an action plan within 24 hours. Quarterly review covers scope, user burden, energy/compute, maintenance labour and vendor lock-in. The complete machine-readable contract is `visual/assets/implementation-operation-contract.json`.
+
+![Implementation protocol: RACI, cost classes, four tests and exit gates](assets/figures/implementation-protocol.en.png)
+
 Phasing divides the Provisional Boundary into three recomputable concept stages. [data:geometry/phasing.geojson#PHASE-001] [metric:phase_count] Stage 1 establishes the baseline, wayfinding and four low-risk tests; Stage 2 expands public service and light ground-floor renewal around the three labs; Stage 3 studies deeper spatial carriers and international operations only after evaluation. It is not an approved development programme and contains no investment, acquisition or approval judgement. [depth:renewal_project_list] [depth:phasing_implementation]
 
 Policy concepts include a No-App acceptance gate before procurement, a service passport and retirement list for every scenario, veto rights for accessibility users and frontline maintainers, non-personalised options beside personalised service, minimum data plus human appeal, and public recognition for documented failures and repairs. A conceptual annual cycle links spring problem calls, summer prototyping, autumn neighbourhood challenges and winter public review with developer residency, public experience routes and international exchange. [source:AGENT-TASKBOOK]
@@ -169,7 +230,11 @@ The principal risk is not too little AI but the replacement of a city entrance b
 
 Spatial risks are equally explicit: site and key areas are provisional; planning controls, roads, buildings, ownership, heritage, utilities and public facilities are incomplete; buildings and nodes are prototypes; and green, public-space and transport lines are not engineering designs. [data:geometry/constraints.geojson#DATA-GAP-001] New evidence triggers source registration, coordinate review, constraint replacement, design-layer regeneration, metric recalculation, drawing/web updates and a full self-check. [depth:risk_missing_data]
 
-The narrative, structured data, original diagrams, web pages and PDFs were generated by the declared AI agent from public or rights-cleared material. The identity uses original geometry; case studies compare mechanisms in text and link to their sources without copying site imagery, trademarks or drawings. CC-BY-SA-4.0 applies to licensable original parts of the submission, while source and official material retains its own terms. Final decisions remain with human and professional teams.
+Asset-level rights evidence is recorded in `visual/assets/rights-clearance-ledger.json`. Original Chinese/English narrative, nine conceptual GeoJSON layers, eight bilingual figure sets, four PDFs, two offline HTML sets, brand geometry and structured JSON each record creator, source basis, third-party dependency, licence scope, verification method and unresolved limit. HTML has no remote script, font, map tile or tracking. Figures contain no case-site image, corporate trademark, portrait or third-party drawing. PDFs use only package graphics and build-environment fonts; no font file is redistributed. The toolchain is OpenAI Codex, Python, Pillow and ReportLab; each tool retains its own licence. CC-BY-SA-4.0 covers only original material the contributor may license, not official texts, standards, case websites, font software or third-party tools.
+
+Source roles are corrected as well. Registry-approved formal sources support only their permitted uses. The older-person plan is `background_only`; the legislative privacy explanation, WCAG 2.2 and international cases that are not in the approved registry remain background and cannot prove local statutory controls or compliance. Rights that cannot be verified from the package are marked “citation only / not redistributed” or “rights-holder or professional confirmation pending”, never fully cleared. See `report/copyright_statement.md`. [source:SOURCE-REGISTRY]
+
+Chinese and English files were compared for sections, claims, numbers, units, evidence markers, figure positions, source roles and provisional warnings. The record truthfully identifies an AI-assisted author-side check and does not pretend to be an independent human translation certificate. The contributor or a bilingual professional should sign the final publication check. Human and professional teams retain final planning, engineering, accessibility, privacy, fire, heritage and safety judgement.
 
 ## References
 

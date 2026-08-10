@@ -91,6 +91,41 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Proposal cites standards, depth items, geometry, metrics, sources and assumptions."
+    },
+    {
+      "check_id": "RIGHTS_LEDGER",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/rights-clearance-ledger.json",
+      "message": "Narrative, translations, geometry, brand, figures, PDFs, HTML, structured data, official citations, background cases, fonts and toolchain have separate authorship, licence and limitation records."
+    },
+    {
+      "check_id": "SOURCE_ROLE_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "sources.json",
+      "message": "Registry-approved formal uses, background-only references and provisional-only geometry are explicitly separated."
+    },
+    {
+      "check_id": "BILINGUAL_EQUIVALENCE_RECORD",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/bilingual-equivalence-audit.json",
+      "message": "AI-assisted author-side comparison covers section order, claims, numbers, units, evidence markers, figures, source roles and provisional warnings; independent human publication sign-off remains truthfully pending."
+    },
+    {
+      "check_id": "IMPLEMENTATION_PROTOCOL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/implementation-operation-contract.json",
+      "message": "P1-P6 define RACI, concept cost classes, procurement assumptions, suggested test gates, SLA, reassessment and exit without presenting them as statutory standards or commitments."
+    },
+    {
+      "check_id": "USER_COTEST_PLAN",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/user-cotest-plan.json",
+      "message": "Five participant roles, staged settings, consent, privacy, receipts, veto and professional final-judgement boundaries are specified; no completed real-user evidence is claimed."
     }
   ]
 }
