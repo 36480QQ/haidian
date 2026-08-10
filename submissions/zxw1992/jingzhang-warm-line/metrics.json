@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "面积基于公告文字四至推定的临时粗略边界复算，官方 polygon 发布后必须整链重算。"
+        "面积基于公告文字四至推定的临时粗略边界复算，官方 polygon 发布后必须整链重算。",
+        "置信度与来源图层 geometry/site_boundary.geojson（confidence=medium、official_boundary=false、boundary_precision=provisional_rough）及 manifest.validation_claim.data_confidence=medium 保持一致。"
       ]
     },
     "green_space_area_sqm": {
