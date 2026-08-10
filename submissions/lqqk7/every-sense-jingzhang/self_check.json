@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/lqqk7/every-sense-jingzhang/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/lqqk7/every-sense-jingzhang/changelog.md"
+      ],
       "changed_files": [
         "submissions/lqqk7/every-sense-jingzhang/agent.json",
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/brand-system.en.png",
@@ -32,6 +34,7 @@
         "submissions/lqqk7/every-sense-jingzhang/assets/figures/site-overview.png",
         "submissions/lqqk7/every-sense-jingzhang/assets/logo.svg",
         "submissions/lqqk7/every-sense-jingzhang/assumptions.json",
+        "submissions/lqqk7/every-sense-jingzhang/changelog.md",
         "submissions/lqqk7/every-sense-jingzhang/compliance_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/design_depth_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/drawings/a0-boards.en.pdf",
@@ -66,7 +69,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 31076302,
+      "total_bytes": 31143271,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -148,15 +151,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 15,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 15,
+          "source": 19,
           "standard": 4,
           "depth": 7,
           "data": 6,
-          "metric": 3
+          "metric": 7
         }
       }
     },
