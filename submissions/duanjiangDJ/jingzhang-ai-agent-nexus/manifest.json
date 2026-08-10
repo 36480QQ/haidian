@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f15e9772e0e1829c1a821d182d03565a2b5e7cf542634325d9ac97adf96c3281"
+      "sha256": "5baf79275c3e581ad64ea36927075c79d7c1ca9a52511db80a5a88d358bb4b70"
     },
     {
       "path": "agent.json",
@@ -38,31 +38,31 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "eb2378e1eb63cf7c4ff4eff4b1b84c4020e3447e41784416850c661762847958"
+      "sha256": "f82eb2d874e2de660675d5116be04fbb9af1f7374b6127f22dd4bd37fff503cc"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "887eb8342a8509ee818e8ba0fc0c2189a83cacfecca7f04021f83aea96e932f6"
+      "sha256": "bea4938a7b19ee05118e25b34a1c88c292efd63aeb788cb99e277bf3f997b4f9"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "cdd48a96524c172dc59a760c602d0b70817c00b9f32acfb7f38a136ae380b375"
+      "sha256": "d0c90ea6c2a10325ae90a84f24d37f9cbf1a84ba803b8fe16236b1ab426abe6a"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9161d622cf19acd1bd5004adc79df706b34e9c2876fabddd1976f9663e1de295"
+      "sha256": "ef99376ccb1202a10de4ee38faf3472d5daf2a4ba6238b78bdfa2bd8332e5c0d"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "748483bb26a7b9809797689e121f5a96092b128ceb2fb314ff2d4bd60f82d5bb"
+      "sha256": "e155c958b96a99b565136badfa696ea2e1a948faa433bbcf8cf59705a493b42c"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "49513032818c9b26d19815ac98aa637c1a7c540c89651bda30f9e98457ffcd44"
+      "sha256": "c572ebb10994a33b30baa81e638f2eeeb266abf2cb471ed2c1e8e98a85759504"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "60ce6e0fdfa586da4a8f3cf5390e03c4acb69c0e7beef51109ceb53356d230c1"
+      "sha256": "dfc05fd4ec8af88bc75dd768542eb18ba5d0fe23d9fe87572a8a85f1402cf394"
     },
     {
       "path": "report/narrative.md",
@@ -116,7 +116,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a3f9ba1d6836568047ac633598c8519d00b39508951244a1ed7be0f23d2c2305"
+      "sha256": "81eda6e9cce7ce019a1503653b973468b8984e3b573e7b8bce16dca59af7af4d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -267,7 +267,7 @@
       "path": "proposal.en.md",
       "role": "bilingual",
       "required": true,
-      "sha256": "b50640802c02be7aa5f9835dd5be32cd6b2d3fa427ee8131cc32919325ad17a4",
+      "sha256": "54228672a048be283ccae775f1a66fad3da8b45643fb247ced0db67bad7a982b",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -275,7 +275,7 @@
       "path": "report/proposal.en.html",
       "role": "bilingual",
       "required": true,
-      "sha256": "8a040acb854371ac5f49c12d0ec6c351b4837d9c0ee4d01ec4925efcadb84f70",
+      "sha256": "455d7e5ef9f76b9b0dd040e685f76c5e09fd4673acc3ca188cedde22427b0b90",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -283,7 +283,7 @@
       "path": "visual/index.en.html",
       "role": "bilingual",
       "required": true,
-      "sha256": "b71e4cd53987d48fc25f76846de8f095c1f42590f92b639de0bd6461a8c9c76c",
+      "sha256": "31f81322432ac1f4319d00ea125094f50267f5a10761ec56f103b9a078f74bf9",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -292,7 +292,7 @@
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "f13078d97f7d9b71cf0ec8f5e85274174484ff57f1fb7aea7626bc24ab7fbd5c"
+      "sha256": "d35b869c6533c6923caa577f6651cf2afe0b9c8418175a1c01794ec1799ef58c"
     },
     {
       "path": "risk.json",

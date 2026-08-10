@@ -70,7 +70,7 @@
       "ai_package_stages": {
         "submissions/duanjiangDJ/jingzhang-ai-agent-nexus": "formal"
       },
-      "total_bytes": 7267409,
+      "total_bytes": 7339130,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -138,7 +138,11 @@
         "test_scenario_count": 3.0,
         "persona_count": 7.0,
         "component_count": 7.0,
-        "global_case_count": 8.0
+        "global_case_count": 8.0,
+        "signal_node_count": 12.0,
+        "no_ai_equivalent_count": 8.0,
+        "stop_rights_count": 3.0,
+        "human_operator_count": 12.0
       }
     },
     "stderr": ""
@@ -151,16 +155,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 31,
-        "known_metric_refs_required": 11,
+        "design_depth_items": 35,
+        "known_metric_refs_required": 15,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 15,
           "standard": 5,
-          "depth": 29,
+          "depth": 33,
           "data": 11,
-          "metric": 11
+          "metric": 15
         }
       }
     },
