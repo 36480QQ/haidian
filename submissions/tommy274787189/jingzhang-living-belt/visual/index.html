@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>生活体验带 · 可视化交互页</title>
+<style>
+:root{--ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--bg:#ffffff;}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
+header.hero{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:46px 40px}
+header.hero h1{margin:0 0 8px;font-size:28px}
+header.hero p{margin:4px 0;opacity:.92;font-size:14px}
+main{max-width:1080px;margin:0 auto;padding:30px 40px 60px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:18px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fafafa}
+.card h3{margin:0 0 6px;font-size:16px;color:#1e40af}
+.card p{margin:0;font-size:13px;color:var(--muted)}
+.metrics{display:flex;gap:16px;flex-wrap:wrap;margin:16px 0}
+.metric{flex:1;min-width:200px;border:1px solid #bfdbfe;background:#eff6ff;border-radius:10px;padding:14px 16px}
+.metric .v{font-size:22px;font-weight:700;color:#1d4ed8}
+.metric .k{font-size:12px;color:var(--muted)}
+figure{margin:18px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure img{display:block;width:100%;height:auto}
+figcaption{padding:8px 12px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer{padding:22px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);text-align:center}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>生活体验带 · 可视化交互页</h1>
+<p>百年京张 AI 创新带 · 生活体验带 · tommy274787189 / 机器猫</p>
+</header>
+<main>
+<section><p>以打工人爸爸的日常通勤、育儿、下班后的生活为线索，呈现京张 AI 创新带生活体验带的城市设计方案。所有图表均为本地静态资源，可离线浏览；下列导览卡片对应可视化必含内容。</p></section>
+<div class="grid"><div class="card"><h3>总览地图</h3><p>场地总览：以京张临时边界为基，串联清河滨水与三处重点片区。</p></div><div class="card"><h3>三层范围</h3><p>统筹研究范围（区域产业与未来城市）、总体设计范围（城市更新与控规深度）、重点区域详细设计三层工作框架。</p></div><div class="card"><h3>重点区域</h3><p>三处重点片区：中关村 AI 加速园、北京 AI 源头社区、大钟寺 AI 产业聚集区。</p></div><div class="card"><h3>用地分区</h3><p>用地结构以居住、商办、绿地与公共服务为主，六大垂直功能带完整覆盖场地。</p></div><div class="card"><h3>交通慢行</h3><p>以滨水绿道与社区慢行网络为核心，衔接清河站与 13 号线上地站。</p></div><div class="card"><h3>蓝绿公共空间</h3><p>设计提案绿地约 265.6 万平米（绿地率 23.3%），公共空间约 85.4 万平米（公共空间率 7.5%）。</p></div><div class="card"><h3>建筑</h3><p>建筑基底以 AI 研发与社区服务中心为主，低密度、可步行。</p></div><div class="card"><h3>更新项目</h3><p>更新项目清单分三期滚动实施，每期以可验收的公共空间交付为节点。</p></div><div class="card"><h3>AI 场景</h3><p>AI+ 场景：文化导览、健康服务导航、交通慢行、企业服务助手、机器人低速配送。</p></div><div class="card"><h3>核心指标</h3><p>核心指标见下方数据卡，面积与比值均经 EPSG:4548 投影复算。</p></div><div class="card"><h3>任务覆盖</h3><p>合规矩阵覆盖征集公告与 Agent 开放征集任务书全部 23 项必答任务。</p></div><div class="card"><h3>自检状态</h3><p>自检状态：确定性校验 PASS；临时边界以 provisional 标注，官方红线发布后复算。</p></div><div class="card"><h3>来源</h3><p>来源：征集公告、任务书、城市设计管理办法、控规技术指引、用地分类指南等公开资料，见 sources.json。</p></div><div class="card"><h3>假设</h3><p>假设：场地边界为临时 provisional 边界；设计图层为概念推演，非现状测绘，不作审批依据。</p></div></div>
+<h2>核心指标</h2>
+<div class="metrics"><div class="metric"><div class="v"><span data-metric="site_area_sqm" data-value="11412825.386">11,412,825 m²</span></div><div class="k">场地面积 site_area_sqm</div></div><div class="metric"><div class="v"><span data-metric="green_ratio" data-value="0.232703">23.27%</span></div><div class="k">绿地率 green_ratio</div></div><div class="metric"><div class="v"><span data-metric="public_space_ratio" data-value="0.074787">7.48%</span></div><div class="k">公共空间率 public_space_ratio</div></div></div>
+<h2>图集 Gallery</h2>
+<figure><img src="../assets/figures/site-overview.png" alt="总览地图 · Site Overview"><figcaption>总览地图 · Site Overview</figcaption></figure>
+<figure><img src="../assets/figures/land-use-structure.png" alt="用地分区 · Land-Use"><figcaption>用地分区 · Land-Use</figcaption></figure>
+<figure><img src="../assets/figures/key-areas.png" alt="重点区域 · Key Areas"><figcaption>重点区域 · Key Areas</figcaption></figure>
+<figure><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿 · Mobility & Blue-Green"><figcaption>交通慢行与蓝绿 · Mobility & Blue-Green</figcaption></figure>
+<figure><img src="../assets/figures/metrics-evidence.png" alt="核心指标 · Metrics"><figcaption>核心指标 · Metrics</figcaption></figure>
+<p>更多指标、合规矩阵与设计深度说明见 proposal.md 与 report/proposal.html。</p>
+</main>
+<footer>离线可读页面 · 版权与许可见 report/copyright_statement.md</footer>
+</body>
+</html>

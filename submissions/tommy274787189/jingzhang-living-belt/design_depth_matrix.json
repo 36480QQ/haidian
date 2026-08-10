@@ -1,0 +1,725 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状研判：以打工人爸爸生活动线为诊断主线",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围框架：统筹/总体/重点三层叠合",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构：六条南北向功能带",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "land_use_layout",
+      "title_zh": "用地布局：居住与公共服务优先",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度控制：轨道圈层差异化容积率",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "height_massing_character",
+      "title_zh": "高度与体量风貌：多层为主、严控面宽",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "拆改留：以留为主、站点周边适度更新",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "title_zh": "交通轨道慢行：连续慢行廊道与接驳优化",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政新型基础设施：社区级算力与无人配送",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿公共空间：滨水绿道缝合三片区",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三处重点片区详细设计：爸爸驿站",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单：可负担小切口项目",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施：三期滚动、公共空间交付节点",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标复算：EPSG:4548 面积实算",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    },
+    {
+      "item_id": "risk_missing_data",
+      "title_zh": "数据缺口风险：临时边界与公开资料推演",
+      "professional_dimension": "专业设计深度",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "已在 proposal.md 对应章节与几何/指标中完成，详见矩阵与附图。",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "SITE_BOUNDARY",
+        "KEY_AREA",
+        "LAND_USE",
+        "BUILDING_FOOTPRINT",
+        "ROAD_CENTERLINE",
+        "GREEN_SPACE",
+        "PUBLIC_SPACE",
+        "PHASE"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_space_area_sqm",
+        "green_ratio",
+        "public_space_area_sqm"
+      ],
+      "source_ids": [
+        "SRC-OFFICIAL-ANNOUNCEMENT",
+        "SRC-AGENT-OPEN-CALL-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-PROVISIONAL-BOUNDARY",
+        "ASM-AI-GENERATED-DESIGN"
+      ],
+      "self_check_ids": [
+        "SC-008",
+        "SC-004"
+      ]
+    }
+  ]
+}

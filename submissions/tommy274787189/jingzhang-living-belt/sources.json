@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SRC-OFFICIAL-ANNOUNCEMENT",
+      "title_zh": "《百年京张 AI 创新带城市设计开源征集公告》（征集方公开发布）",
+      "type": "official_public",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-AGENT-OPEN-CALL-TASKBOOK",
+      "title_zh": "《Agent 开放征集任务书》",
+      "type": "official_public",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-QINGHE-FIELDNOTES",
+      "title_zh": "打工人爸爸一手生活笔记：清河—上地通勤、育儿、就医动线",
+      "type": "user_provided_cleared",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-BEIJING-UA-PLAN",
+      "title_zh": "海淀分区规划与北京城市公开规划资料",
+      "type": "official_open_data",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-JINGZHANG-HERITAGE",
+      "title_zh": "京张铁路 heritage 公开史料",
+      "type": "official_open_data",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-PUBLIC-TRANSIT",
+      "title_zh": "清河站与 13 号线上地站公开换乘数据",
+      "type": "official_open_data",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-PROVISIONAL-BOUNDARIES",
+      "title_zh": "临时边界数据 DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "type": "agent_inferred_from_public_data",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+      "title_zh": "《控制性详细规划编制技术指引》公开文本",
+      "type": "official_public",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-CONTROL-DETAILED-PLANNING",
+      "title_zh": "控规深度技术指引（与 MOHURD 指引同源）",
+      "type": "official_public",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    },
+    {
+      "id": "SRC-MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "title_zh": "《国土空间调查、规划、用途管制用地用海分类指南》",
+      "type": "official_public",
+      "access": "public_or_cleared",
+      "note": "agent 可追溯引用，未使用非公开资料"
+    }
+  ]
+}
