@@ -7,7 +7,7 @@
       "severity": "blocking",
       "target": "manifest.json",
       "message": "validate_local_submission.py completed with exit code 0, zero errors, and one disclosed provisional-boundary warning.",
-      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
       "checked_at": "2026-08-10T14:48:57Z",
       "error_count": 0,
       "warning_ids": [
@@ -20,7 +20,7 @@
       "severity": "blocking",
       "target": "geometry/",
       "message": "Spatial review completed with exit code 0. The three reported KEY_AREA_PROVISIONAL items are disclosed minor limitations and do not block content scoring.",
-      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
       "checked_at": "2026-08-10T14:48:57Z",
       "blocking_issue_count": 0,
       "minor_issue_count": 3,
@@ -36,7 +36,7 @@
       "severity": "blocking",
       "target": "visual/index.html",
       "message": "Visual packaging review completed with exit code 0 and zero issues; the offline visual contains the required recomputable metrics.",
-      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
       "checked_at": "2026-08-10T14:48:57Z",
       "issue_count": 0
     },
@@ -46,9 +46,25 @@
       "severity": "blocking",
       "target": "proposal.md",
       "message": "Professional evidence review completed with exit code 0 and zero issues across 6 standards, 15 design-depth items, 8 required metric references, and bilingual proposal format v2.",
-      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
       "checked_at": "2026-08-10T14:48:57Z",
       "issue_count": 0
+    },
+    {
+      "check_id": "PARTICIPANT_PREFLIGHT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/278602225-lang/jingzhang-open-house",
+      "message": "Participant preflight completed with exit code 0: 40 package files, zero out-of-scope files, zero blockers, and a successful origin push dry-run.",
+      "command": "python3 scripts/participant_preflight.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --check-push --json",
+      "checked_at": "2026-08-10T15:01:29Z",
+      "package_file_count": 40,
+      "outside_scope_file_count": 0,
+      "blocker_count": 0,
+      "push_dry_run": true,
+      "warnings": [
+        "Workspace is sparse but does not currently advertise a blobless partial-clone filter; this does not affect the submission package."
+      ]
     },
     {
       "check_id": "BOUNDARY_TRUST",
