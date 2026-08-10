@@ -1,44 +1,25 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_index_open_constraints",
+  "name": "urban_version_open_constraints",
   "features": [
     {
       "type": "Feature",
-      "id": "CONSTRAINT-01",
+      "id": "CONSTRAINT-REGISTER-01",
       "properties": {
-        "id": "CONSTRAINT-01",
-        "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_inferred_from_public_data",
+        "id": "CONSTRAINT-REGISTER-01",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
         "confidence": "low",
-        "geometry_role": "provisional_constraint",
-        "name_zh": "待核验的历史风貌、退界与基础设施协调带",
-        "constraint_status": "requires_official_confirmation"
+        "geometry_role": "analysis_helper",
+        "name_zh": "遗产、轨道安全、管线、退界、权属与风貌条件登记任务",
+        "name_en": "Heritage, rail safety, utilities, setback, ownership and character constraint register",
+        "not_a_constraint_boundary": true
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              116.343,
-              40.0205
-            ],
-            [
-              116.343,
-              40.0262
-            ],
-            [
-              116.3535,
-              40.0262
-            ],
-            [
-              116.3535,
-              40.0205
-            ],
-            [
-              116.343,
-              40.0205
-            ]
-          ]
+          116.34770915575874,
+          39.98086972782049
         ]
       }
     }

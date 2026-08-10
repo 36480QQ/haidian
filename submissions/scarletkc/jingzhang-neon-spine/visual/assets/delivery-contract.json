@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "PROTOCOL-BEACON-100X100",
+  "status": "concept_proposal_pending_gate_0_and_role_appointment",
+  "pilot": {
+    "name_zh": "协议灯塔 100 米 / 首个 100 天公民 AI 验收段",
+    "name_en": "Protocol Beacon 100 m / First 100 Days Civic AI Acceptance Segment",
+    "key_area_role": "zhongzhiyuan_ai_acceleration_area",
+    "scenario_id": "T2",
+    "interface_length_m_target": 100,
+    "duration_days_max": 100,
+    "geometry_status": "concept_only_exact_alignment_selected_after_gate_0",
+    "operational_status": "not_authorized_not_run"
+  },
+  "raci": [
+    {
+      "workstream": "space_and_public_realm_admission",
+      "accountable": "pilot accountable office, to be appointed",
+      "responsible": "site survey and public-realm team, to be appointed",
+      "consulted": [
+        "planning",
+        "heritage",
+        "traffic",
+        "fire safety",
+        "accessibility representatives"
+      ],
+      "informed": [
+        "nearby residents",
+        "users",
+        "maintainers"
+      ]
+    },
+    {
+      "workstream": "model_data_and_service_admission",
+      "accountable": "named public pilot accountable officer, to be appointed",
+      "responsible": "T2 operator and on-site steward, to be appointed",
+      "consulted": [
+        "data protection",
+        "cybersecurity",
+        "legal",
+        "independent civic review seat"
+      ],
+      "informed": [
+        "participants",
+        "affected non-participants",
+        "public test registry"
+      ]
+    },
+    {
+      "workstream": "stop_rollback_and_public_notice",
+      "accountable": "named public pilot accountable officer, to be appointed",
+      "responsible": "on-site steward with immediate stop authority, to be appointed",
+      "consulted": [
+        "safety",
+        "data protection",
+        "accessibility",
+        "public representative"
+      ],
+      "informed": [
+        "all users",
+        "nearby community",
+        "maintainers",
+        "public test registry"
+      ]
+    },
+    {
+      "workstream": "day_100_continue_modify_or_sunset_decision",
+      "accountable": "joint professional and civic review panel, to be constituted",
+      "responsible": "independent evaluation team, to be appointed",
+      "consulted": [
+        "operator",
+        "maintainers",
+        "users",
+        "non-users",
+        "small organisations"
+      ],
+      "informed": [
+        "public test registry",
+        "regional interface candidates"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "G0",
+      "name_zh": "证据与空间准入",
+      "threshold": "survey, ownership, heritage, fire, accessibility and provisional-boundary limits are logged; exact 100 m alignment remains removable",
+      "fail_action": "do_not_install_or_open"
+    },
+    {
+      "id": "G1",
+      "name_zh": "责任与资源准入",
+      "threshold": "all accountable, responsible, consulted and informed roles plus six cost ledgers have an owner and funding source",
+      "fail_action": "do_not_start_contained_test"
+    },
+    {
+      "id": "G2",
+      "name_zh": "权利与数据准入",
+      "threshold": "seven public rights, minimum-data record, no-app equivalent, accessible route and deletion trigger are complete",
+      "fail_action": "return_to_contract_design"
+    },
+    {
+      "id": "G3",
+      "name_zh": "合成负向桌面演练",
+      "threshold": "4 of 4 fixtures match expectation and all 3 negative fixtures fail closed",
+      "fail_action": "block_public_test_and_repair_rule"
+    },
+    {
+      "id": "G4",
+      "name_zh": "有人值守公共试用",
+      "threshold": "zero unresolved critical accessibility barriers, 100 percent high-risk outputs human-confirmed, severe safety or privacy incidents equal zero",
+      "fail_action": "immediate_stop_and_restore_non_ai_route"
+    },
+    {
+      "id": "G5",
+      "name_zh": "审计、删除与去留",
+      "threshold": "claims, incidents, complaints, maintenance, data deletion and public feedback are published before continue, modify or sunset",
+      "fail_action": "sunset_and_remove_reversible_components"
+    }
+  ],
+  "data_lifecycle": [
+    {
+      "stage": "register",
+      "rule": "publish purpose, fields, source, accountable role, retention and human checkpoint before collection"
+    },
+    {
+      "stage": "ingest",
+      "rule": "public, cleared or synthetic model-test data only; no default biometrics or device identifiers"
+    },
+    {
+      "stage": "interact",
+      "rule": "voluntary feedback only; no-app and staffed routes remain equivalent; raw voluntary feedback default maximum is 7 days"
+    },
+    {
+      "stage": "review",
+      "rule": "role-based access log, source-integrity check, human confirmation of all high-risk outputs and incident triage"
+    },
+    {
+      "stage": "publish",
+      "rule": "only non-identifying aggregates, claim provenance, incident status and repair evidence enter the public registry"
+    },
+    {
+      "stage": "delete_or_export",
+      "rule": "withdrawal triggers deletion before the next gate and no later than 24 hours; portable audit export precedes vendor exit"
+    }
+  ],
+  "public_rights": [
+    "informed_use_and_limits",
+    "choice_without_penalty",
+    "equivalent_no_app_service",
+    "human_review_of_high_risk_output",
+    "correction_and_deletion",
+    "appeal_with_named_owner",
+    "exit_and_non_ai_restoration"
+  ],
+  "acceptance_measures": [
+    {
+      "id": "A1",
+      "measure": "visible_claims_with_source_and_limit",
+      "threshold": "100%"
+    },
+    {
+      "id": "A2",
+      "measure": "synthetic_tabletop_expectations_met",
+      "threshold": "4/4 and negative fail-closed 3/3"
+    },
+    {
+      "id": "A3",
+      "measure": "unresolved_critical_accessibility_barriers",
+      "threshold": "0"
+    },
+    {
+      "id": "A4",
+      "measure": "high_risk_outputs_human_confirmed",
+      "threshold": "100%"
+    },
+    {
+      "id": "A5",
+      "measure": "complaint_acknowledgement_and_decision",
+      "threshold": "100% acknowledged within 1 working day; at least 90% resolved or given a reasoned decision within 10 working days"
+    },
+    {
+      "id": "A6",
+      "measure": "severe_safety_or_privacy_incidents",
+      "threshold": "0; any one triggers immediate stop"
+    }
+  ],
+  "cost_ledgers": [
+    {
+      "id": "people",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    },
+    {
+      "id": "space",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    },
+    {
+      "id": "devices",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    },
+    {
+      "id": "data_licence_and_compliance",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    },
+    {
+      "id": "maintenance",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    },
+    {
+      "id": "exit_deletion_and_restoration",
+      "status": "unknown_pending_owner_funding_and_quotes"
+    }
+  ],
+  "affordability_floor": {
+    "rule": "basic passage, safety information, consultation, complaint and appeal must not require a purchased device, subscription, account or extra fee",
+    "funding_condition": "the future operator must identify funding for staffed, accessible and non-digital equivalents before G4; this is a proposed admission condition, not a current government promise"
+  },
+  "rollback": [
+    "freeze the AI function immediately while keeping the staffed or non-AI route open",
+    "preserve a minimum incident record without expanding personal-data collection",
+    "delete or quarantine affected raw records according to the published trigger",
+    "restore the prior public-space arrangement and portable service interface",
+    "publish a preliminary notice, repair evidence and a continue-modify-sunset decision"
+  ],
+  "regional_interfaces": [
+    {
+      "candidate": "北纬社区",
+      "input": "resident and accessibility test questions",
+      "minimum_output": "public-rights and no-app parity report",
+      "gate": "no personal data and no implied partnership"
+    },
+    {
+      "candidate": "未来科学城",
+      "input": "research or robotics prototype dossier",
+      "minimum_output": "assurance, energy and takeover test receipt",
+      "gate": "cleared input and named steward"
+    },
+    {
+      "candidate": "怀柔科学城",
+      "input": "cleared scientific research or public-science content",
+      "minimum_output": "provenance and public-interpretation test receipt",
+      "gate": "rights and expert review"
+    },
+    {
+      "candidate": "经开区",
+      "input": "engineering and manufacturability questions",
+      "minimum_output": "operations, maintainability and exit specification",
+      "gate": "no procurement or production commitment"
+    },
+    {
+      "candidate": "京津冀",
+      "input": "comparable public-AI scenario card",
+      "minimum_output": "portable gate log and interoperability delta",
+      "gate": "shared fields only, not a policy agreement"
+    }
+  ],
+  "claim_register": [
+    {
+      "claim": "provisional spatial boundary",
+      "authority": "geometry/site_boundary.geojson",
+      "limit": "not an official redline"
+    },
+    {
+      "claim": "spatial ratios",
+      "authority": "metrics.json plus geometry layers",
+      "limit": "recalculate with official polygons"
+    },
+    {
+      "claim": "100 m and 100 days",
+      "authority": "this delivery contract",
+      "limit": "proposer-defined pilot limits, not an approved location or schedule"
+    },
+    {
+      "claim": "tabletop result",
+      "authority": "protocol-beacon-tabletop-evidence.json",
+      "limit": "synthetic local check, not an operational test"
+    },
+    {
+      "claim": "cost readiness",
+      "authority": "six cost ledgers",
+      "limit": "all amounts remain unknown pending owners, funding and quotes"
+    }
+  ]
+}
