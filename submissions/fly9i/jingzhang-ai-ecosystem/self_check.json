@@ -13,21 +13,21 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/",
-      "message": "空间复核 PASS；仅 3 个 KEY_AREA_PROVISIONAL(info) 与 1 个 METRIC_RECALC_DRIFT(minor)，均非阻断。"
+      "message": "空间复核 PASS；指标漂移已消除（green_space/land_use 与 spatial_review 复算口径统一为 EPSG:4548 先投影再求并，delta<0.01㎡），仅剩 3 个 KEY_AREA_PROVISIONAL(info)，均非阻断。"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "major",
       "target": "visual/index.html",
-      "message": "可视化封装 PASS；离线静态、含全部必需标记与 data-metric。"
+      "message": "可视化封装 PASS；离线静态、含全部必需中文标记与 data-metric，数值与 metrics.json 一致。"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "major",
-      "target": "compliance/standard/design_depth_matrix.json",
-      "message": "专业证据复核 PASS；合规/标准/设计深度三矩阵覆盖完整。"
+      "target": "compliance/standard/design_depth_matrix + structured deliverables",
+      "message": "专业证据复核 PASS；合规/标准/设计深度三矩阵覆盖完整，并补齐 agent.1-6 结构化交付物（scenarios/case_studies/logo_system/public_space_components/implementation_matrix/governance_kpi）。"
     },
     {
       "check_id": "BOUNDARY_TRUST",
@@ -48,14 +48,35 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "用地 69 单元覆盖 site（ratio≈1.0），无 COVERAGE_GAP/OVERLAP。"
+      "message": "用地 69 单元无缝覆盖 site（外溢<0.1㎡，无 COVERAGE_GAP/OVERLAP）；绿地多边形内部自重叠已消除。"
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
       "severity": "major",
       "target": "visual/index.html",
-      "message": "离线静态 HTML，无远程资源/脚本。"
+      "message": "离线静态 HTML，无远程资源/脚本，图件 base64 内嵌。"
+    },
+    {
+      "check_id": "BILINGUAL_PARITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md / proposal.en.md / report / visual / drawings / figures",
+      "message": "双语等价复核 PASS；图件中英两版分别渲染（中文版含中文图题图例标签、英文版全英文无中文残留），A3/A0 PDF 英文版嵌英文图件，metrics-evidence 范围语义已修正（总体设计范围 11.41km² 与重点详细设计 3.684km² 分别标注）。"
+    },
+    {
+      "check_id": "MATURITY_HONESTY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md / proposal.en.md / matrices",
+      "message": "成熟度表述已降级为概念性城市设计建议（可校验的空间结构框架，非控制性详细规划/规划综合实施方案法定深度）；容积率与建筑高度因法定控规缺失标 unknown，不伪造。"
+    },
+    {
+      "check_id": "METRIC_RECALC_DRIFT",
+      "result": "pass",
+      "severity": "minor",
+      "target": "metrics.json",
+      "message": "此前 green_space 14.5㎡ 漂移与 land 19㎡ 外溢均已通过统一投影-求并算法消除；当前 metrics.json 与 spatial_review.py 复算完全一致。"
     }
   ]
 }
