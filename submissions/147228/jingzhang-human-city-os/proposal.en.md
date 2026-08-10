@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.5"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.5 connects the three key areas as a human-first mainline, adds a fixed-seed offline search of 128 candidates across four lenses, and compresses existing project families and release gates into one conceptual delivery spine. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.6"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.6 replaces the five review-visible core figures with one-source spatial evidence maps showing the three focus-area outlines, six bands, five concept corridors, and sixteen scenario nodes. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -94,6 +94,16 @@ Governance ledgers no longer occupy the first visual read on their own. Figure 1
 ![Figure 18 | Concept delivery spine: project family → release gate → evidence → stop](assets/figures/human-city-delivery-spine.en.svg)
 
 Every family remains `conceptual_governance_not_commitment`, and suggested roles are not confirmed operators. After official boundaries, rights, energy, climate, mobility, accessibility, accountability, and public inputs arrive, professional teams may selectively recompute and deepen the package.[data:visual/assets/implementation-operation-matrix.json] [data:geometry/site_boundary.geojson#SITE-001] [depth:risk_missing_data]
+
+## v1.6 spatial evidence figures | Let the reviewer see the relationships first
+
+This round replaces the five review-visible core figures with one-source spatial evidence maps. The overview overlays the provisional site boundary, six bands, three focus areas, five conceptual centerlines, green spaces, public interfaces, and sixteen scenario nodes. The focus-area figure then enlarges the three true submitted outlines in the same coordinate frame and places differentiated actions beside their local geometry: community retention and skills transition, staffed access and intergenerational learning, and the regulatory sandbox with the public-data interface.[data:visual/assets/spatial-proof-v16.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:overall_spatial_structure]
+
+Areas, shares, and lengths in the figures are recomputed from `metrics.json` and the GeoJSON in EPSG:4548. The northward rotation makes the long corridor legible from left to right; the scale note describes only the provisional display frame. `official_boundary=false`, `geometry_role=provisional_constraint`, and `operational_status=not_authorized_not_run` remain explicit in the figure labels and evidence record.[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [depth:metrics_recalculation]
+
+![Figure 19 | v1.6 spatial evidence overview: outlines, nodes, corridors, and metrics from one source](assets/figures/site-overview.en.png)
+
+These figures make the spatial relationships inspectable; they do not replace official boundaries, controls, road redlines, rights, blue lines, airspace review, existing-condition surveys, resident baselines, or operational tests. Once those inputs arrive, the five figures, matrices, metrics, HTML, and PDFs must be recomputed as one package. All spatial moves remain conceptual suggestions or reference schemes for professional teams to deepen.[data:visual/assets/spatial-proof-v16.json] [depth:risk_missing_data]
 
 ## v0.2 score repair | Read the three key areas as spatial action chains
 

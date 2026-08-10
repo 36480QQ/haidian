@@ -63,9 +63,11 @@ const v15FigureStems = [
   'assets/figures/human-city-delivery-spine'
 ];
 const v15BilingualRefs = v15DataRefs.every((ref) => proposalZh.includes(ref) && proposalEn.includes(ref)) && v15FigureStems.every((stem) => proposalZh.includes(`${stem}.svg`) && proposalEn.includes(`${stem}.en.svg`));
-check('BILINGUAL_AUDIT_ITERATION', bilingualAudit.package_iteration === 'v1.5', `audit=${bilingualAudit.package_iteration}`);
-check('BILINGUAL_AUDIT_SCOPE', ['图 16', '图 17', '图 18'].every((label) => bilingualAudit.scope.join(' ').includes(label)) && ['human-city-mainline', 'parametric-search', 'human-city-delivery-spine'].every((name) => bilingualAudit.scope.join(' ').includes(name)), 'v1.5 mainline/search/delivery are named in the audit scope');
+const v16BilingualRefs = proposalZh.includes('visual/assets/spatial-proof-v16.json') && proposalEn.includes('visual/assets/spatial-proof-v16.json') && proposalZh.includes('assets/figures/site-overview.png') && proposalEn.includes('assets/figures/site-overview.en.png');
+check('BILINGUAL_AUDIT_ITERATION', bilingualAudit.package_iteration === 'v1.6', `audit=${bilingualAudit.package_iteration}`);
+check('BILINGUAL_AUDIT_SCOPE', ['图 16', '图 17', '图 18', '图 19'].every((label) => bilingualAudit.scope.join(' ').includes(label)) && ['human-city-mainline', 'parametric-search', 'human-city-delivery-spine', 'spatial-proof-v16'].every((name) => bilingualAudit.scope.join(' ').includes(name)), 'v1.5 mainline/search/delivery and v1.6 spatial proof are named in the audit scope');
 check('BILINGUAL_V15_REFS', v15BilingualRefs, 'v1.5 data and figure references occur in both proposal languages');
+check('BILINGUAL_V16_REFS', v16BilingualRefs, 'v1.6 spatial proof record and core overview occur in both proposal languages');
 for (const rel of ['assets/figures/human-city-mainline.svg', 'assets/figures/human-city-mainline.en.svg']) {
   const overflow = svgRectOverflow(rel);
   check(`SVG_RECT_FITS_${rel}`, overflow.length === 0, overflow.length === 0 ? 'all positioned rectangles fit viewBox' : `overflow=${overflow.join(' | ')}`);
@@ -84,8 +86,8 @@ const evidence = {
   generated_by: 'visual/assets/check-human-city-v15-assets.js',
   status: ok ? 'PASS' : 'FAIL',
   checks,
-  interpretation_zh: 'PASS 只证明 v1.5 图件、候选搜索和交付主线的结构、边界与回接可读；不证明官方评分、现场绩效、批准或实施。',
-  interpretation_en: 'PASS proves only that v1.5 figures, search, and delivery spine resolve structurally with declared boundaries; it does not prove official scoring, field performance, approval, or implementation.'
+  interpretation_zh: 'PASS 只证明 v1.5 图件、候选搜索、交付主线与 v1.6 空间证据图的结构、边界与回接可读；不证明官方评分、现场绩效、批准或实施。',
+  interpretation_en: 'PASS proves only that v1.5 figures, search, delivery spine, and v1.6 spatial-proof figures resolve structurally with declared boundaries; it does not prove official scoring, field performance, approval, or implementation.'
 };
 console.log(JSON.stringify(evidence, null, 2));
 process.exit(ok ? 0 : 1);
