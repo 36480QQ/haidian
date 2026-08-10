@@ -4,7 +4,7 @@
 
 2. **资料边界 / Sources.** 仅使用公开资料、仓库登记资料与用户提供的已清权文件，逐条登记于 `sources.json`。未使用商业地图瓦片、新闻图片、他人摄影作品、非公开空间数据、人物肖像或企业标识。全球案例与政策背景为智能体整理的公开常识，标注"未离线核验"，仅作背景参考。临时边界数据仅用于生成、可视化与自检，不构成官方红线。
 
-3. **字体与工具链 / Fonts and toolchain.** 图纸与 PDF 中文字体为文泉驿正黑（WenQuanYi Zen Hei，GPLv2 含字体嵌入例外），拉丁字体为 matplotlib 内置 DejaVu Sans（Bitstream Vera 许可）；工具链为开源 Python 生态（Python 3.11、shapely 2.1.2、pyproj 3.7.2、matplotlib 3.11.1），HTML 使用系统字体栈，不加载任何远程资源。
+3. **字体与工具链 / Fonts and toolchain.** 图纸与 PDF 字体为思源黑体 Noto Sans CJK SC 与 Noto Sans（SIL Open Font License 1.1，允许嵌入与再分发）；工具链为开源 Python 生态（Python 3.11、shapely 2.1.2、pyproj 3.7.2、matplotlib 3.11.1、fontTools），HTML 使用系统字体栈，不加载任何远程资源。
 
 4. **许可 / License.** 前言声明 `COMMUNITY-DISPLAY-ONLY`：提交内容供本开源征集社区展示、评审与研究讨论；组件库与方法可在注明出处后复用。转载或改作请保留作者（sofizhang + Claude Agent）与本仓库来源。
 

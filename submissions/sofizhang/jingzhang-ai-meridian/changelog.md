@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-10
+
+- **字体与可读性 / Typography.** 全套图纸与 PDF 换用思源黑体（Noto Sans CJK SC，含真粗体）与 Noto Sans（SIL OFL 1.1），全局字号提升约 15%，标题层级更清晰；版权与来源登记同步更新。
+- Switched all drawings and PDFs to Noto Sans CJK SC (with true bold) and Noto Sans; global font sizes up ~15% for readability; rights records updated.
+
 ## v1.2 - 2026-08-10
 
 - **专业规划图版换肤 / Professional planning-board re-skin.** 全套图纸改为浅色专业制图语言：淡彩用地（鼠尾草绿系）、公园树木肌理、建筑白底落影、道路双线画法；A0 展板一主视觉改为矢量总平面图；新增原点社区轴测效果页（2.5D 概念体块+人字桥）；五张正文图同步换肤。

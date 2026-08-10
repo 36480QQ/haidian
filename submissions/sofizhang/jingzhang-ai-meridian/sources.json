@@ -368,17 +368,17 @@
    "source_type": "agent_inferred_from_public_data"
   },
   {
-   "id": "FONT-WQY-ZENHEI",
-   "title": "文泉驿正黑字体（WenQuanYi Zen Hei）",
-   "publisher": "WenQuanYi 项目",
+   "id": "FONT-NOTO-SANS-CJK",
+   "title": "思源黑体 Noto Sans CJK SC 与 Noto Sans 字体",
+   "publisher": "Google / Adobe (Noto 项目)",
    "accessed_date": "2026-08-10",
    "authority_level": "OPEN-LICENSE",
    "usable_for": [
-    "图纸与PDF中文字体（GPLv2含字体嵌入例外）"
+    "图纸与PDF字体（SIL OFL 1.1，允许嵌入与再分发）"
    ],
    "not_usable_for": [],
-   "note_zh": "用于全部图纸、PDF与HTML兜底字体。",
-   "url": "http://wenq.org/",
+   "note_zh": "用于全部图纸与 PDF；HTML 使用系统字体栈。",
+   "url": "https://github.com/notofonts/noto-cjk",
    "source_type": "official_open_data"
   },
   {
