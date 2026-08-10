@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex desktop agent, GPT-5 family, directed and reviewed by 278602225-lang"
   },
-  "generated_at": "2026-08-10T15:02:12Z",
+  "generated_at": "2026-08-10T15:42:02Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7aaa9878140bceebd7a237747b44181fc976f8abfd401d6e1d5eb138fd357eda"
+      "sha256": "73c3702f67f6f0a95df0f1a03280f14f312d3f76a5d424294297a6d9e451e2a2"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6d523581d91e6281055f2d7c932956885c0559b181cdb6724cbce7cfa1e7bdfe"
+      "sha256": "adad1fe3d09547d3222f2cf289e1a9bd4ddaef3006e9e4f5abbfecb7afb16253"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "414804fed5809205527811c4d2a9497f9e73406ffce01d8139f61560aa0d5e41"
+      "sha256": "adad1fe3d09547d3222f2cf289e1a9bd4ddaef3006e9e4f5abbfecb7afb16253"
     },
     {
       "path": "assets/figures/key-areas.en.png",

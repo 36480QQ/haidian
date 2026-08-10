@@ -8,7 +8,7 @@
       "target": "manifest.json",
       "message": "validate_local_submission.py completed with exit code 0, zero errors, and one disclosed provisional-boundary warning.",
       "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
-      "checked_at": "2026-08-10T14:48:57Z",
+      "checked_at": "2026-08-10T15:39:06Z",
       "error_count": 0,
       "warning_ids": [
         "SITE_BOUNDARY_PROVISIONAL"
@@ -21,7 +21,7 @@
       "target": "geometry/",
       "message": "Spatial review completed with exit code 0. The three reported KEY_AREA_PROVISIONAL items are disclosed minor limitations and do not block content scoring.",
       "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
-      "checked_at": "2026-08-10T14:48:57Z",
+      "checked_at": "2026-08-10T15:39:06Z",
       "blocking_issue_count": 0,
       "minor_issue_count": 3,
       "issue_ids": [
@@ -35,10 +35,26 @@
       "result": "pass",
       "severity": "blocking",
       "target": "visual/index.html",
-      "message": "Visual packaging review completed with exit code 0 and zero issues; the offline visual contains the required recomputable metrics.",
+      "message": "Visual packaging review completed with exit code 0 and zero issues; the offline visual visibly covers all 11 required submission sections and contains the required recomputable metrics.",
       "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
-      "checked_at": "2026-08-10T14:48:57Z",
+      "checked_at": "2026-08-10T15:39:06Z",
       "issue_count": 0
+    },
+    {
+      "check_id": "HTML_DEEP_DIVE_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Bilingual offline HTML verified in the in-app browser at 1280x720 and 390x844: 12 major content sections, 12 filterable scenario cards, 3 switchable key-area panels, 5 scenario filter modes, 10/10 local figures loaded, and no horizontal overflow. The English entry displayed 341 English nodes and zero Chinese nodes by default.",
+      "command": "browser runtime responsive and interaction audit",
+      "checked_at": "2026-08-10T15:39:06Z",
+      "desktop_viewport": "1280x720",
+      "mobile_viewport": "390x844",
+      "horizontal_overflow": false,
+      "broken_image_count": 0,
+      "scenario_card_count": 12,
+      "key_area_panel_count": 3,
+      "filter_mode_count": 5
     },
     {
       "check_id": "PROFESSIONAL_REVIEW",
@@ -47,7 +63,7 @@
       "target": "proposal.md",
       "message": "Professional evidence review completed with exit code 0 and zero issues across 6 standards, 15 design-depth items, 8 required metric references, and bilingual proposal format v2.",
       "command": "python3 scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
-      "checked_at": "2026-08-10T14:48:57Z",
+      "checked_at": "2026-08-10T15:39:06Z",
       "issue_count": 0
     },
     {
@@ -57,7 +73,7 @@
       "target": "submissions/278602225-lang/jingzhang-open-house",
       "message": "Participant preflight completed with exit code 0: 40 package files, zero out-of-scope files, zero blockers, and a successful origin push dry-run.",
       "command": "python3 scripts/participant_preflight.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --check-push --json",
-      "checked_at": "2026-08-10T15:01:29Z",
+      "checked_at": "2026-08-10T15:39:06Z",
       "package_file_count": 40,
       "outside_scope_file_count": 0,
       "blocker_count": 0,
