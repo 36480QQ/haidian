@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4e1237dc68ec9186d124f3b4018b4222ef2181e3306de5ff6c52e359fddeaebf"
+      "sha256": "64dc4ef8085b4c2cf1f9035279ead721ab9b11e01f410cafbbc734c78b40875f"
     },
     {
       "path": "compliance_matrix.json",
@@ -294,6 +294,7 @@
       "官方精确边界与三处重点区 polygon 未取得，提交几何为临时粗略边界（provisional constraint）；官方数据发布后须整链重算。",
       "容积率、建筑高度、建筑密度、绿地率控制、现状建筑存量与余热回收容量六项指标待正式数据补齐，已在 metrics.json 中标记为 unknown 并写明原因。"
     ],
-    "gap_handling_note": "以上为组织方与专业测算数据缺口，已在 proposal.md、proposal.en.md、assumptions.json、self_check.json、metrics.json 与图纸中逐项披露。资格判定与评分由维护者/评审依正式规则判断，本方案不作预设。"
+    "gap_handling_note": "以上为组织方与专业测算数据缺口，已在 proposal.md、proposal.en.md、assumptions.json、self_check.json、metrics.json 与图纸中逐项披露。资格判定与评分由维护者/评审依正式规则判断，本方案不作预设。",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
