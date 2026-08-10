@@ -35,6 +35,13 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    },
+    {
+      "check_id": "SELF_CHECK_SNAPSHOT",
+      "result": "pass",
+      "severity": "info",
+      "target": "manifest.json",
+      "message": "Full local self-check passed at 2026-08-10T13:20:06Z; the SHA-256 of this self_check.json is declared by manifest.json."
     }
   ]
 }
