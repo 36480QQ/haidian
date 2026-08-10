@@ -65,6 +65,26 @@ The agent layer is a digital overlay on top of physical space: it is carried by 
 
 ![Concept overview: the physical layer overlaid with the agent layer](assets/figures/concept-overview.en.png)
 
+### The Signal Lifecycle: From a Three-State Language to a Complete Governance Loop
+
+The three states are the "alphabet" of the signal regime; governance needs "sentences." Whether the Digital Citizen Compact (DCC) is verifiable depends on every agent service having a prescribed signal, responsibility, and verification method for the full lifecycle from sign-off to recall. This proposal expands the USR from a three-state language into the **Signal Lifecycle** — a five-stage loop: **Sign-off → Run → Handover → Drill → Recall**, each stage with a clear signal state, what human citizens read, agent obligations, and how it is verified [depth:urban_signal_regime] [depth:signal_lifecycle]:
+
+| Stage | Signal | What human citizens read | Agent obligations | Verification |
+| --- | --- | --- | --- | --- |
+| Sign-off | 🟢 Admission | Service admission info and named responsible person posted | Responsibility sign-off, protocol endpoint registration, no-AI-equivalent path in place | Gateway registry + public service directory |
+| Run | 🟢 Green | Agent present, continuously monitored | Run on open protocols, behavior logged | Signal ledger readable in real time [metric:signal_node_count] |
+| Handover | 🟡 Yellow | Human attention needed, handover window open | Suspend autonomous decisions, switch to joint human–machine operation | Handover record + named responsible-person sign-off [metric:human_operator_count] |
+| Drill | 🔴 Drill red (simulated stop) | Static manual equivalent activated; the whole belt demonstrates "stoppability" | Stop service, open the accountability record | Drill debrief report into the public knowledge base |
+| Recall | 🔴 Red→🟢 | Reason for the stop and failure record public | Restart requires responsibility sign-off + failure record | Recall archive + affected-community appeal record [metric:stop_rights_count] |
+
+The lifecycle turns "stoppability" from a principle into a **schedulable, drillable, auditable** institution. To ensure that DCC clause ② "stoppability" is not a paper promise, this proposal makes drills a **hard verification node**, named after the railway's signal-drill tradition [source:CULTURE-RAILWAY-SIGNAL]:
+
+- **Red-Flag Drill Day** — one full-belt "offline day" every year: all agent services are switched off and the belt runs on manual/offline equivalents alone, publicly verifying DCC clause ③ "no-AI-equivalence" and clause ⑤ "affected-community freeze right"; the drill debrief enters the public knowledge base, merged with the **Winter · Return** stage of the four-season signal annual program [depth:no_ai_equivalence] [depth:red_flag_drill_day] [depth:annual_event_seasons].
+- **Quarterly handover drills** — a yellow-flag handover-window drill every quarter, verifying that a named human responsible person can take over within the specified time [metric:human_operator_count].
+- **Monthly signal-ledger audit** — each month, check consistency between the signal ledger and logged behavior; any "signal–behavior mismatch" enters red-flag review [depth:signal_lifecycle].
+
+All of the above are **conceptual operations recommendations**: drill frequency, device form, and the responsibility sign-off process are directions for further work; the official frequency and actors are determined through public procedures in the operations/implementation phase and constitute no government arrangement or investment commitment [source:AGENT-TASKBOOK]. The signal lifecycle shares one responsibility chain with the six-stage scenario opening and the four-season signal program, adding no new institutions and no construction commitments [depth:risk_missing_data].
+
 ### Taskbook Supplementary-Dimension Mapping
 
 The proposal self-checks its alignment against every supplementary evaluation dimension of the agent taskbook (`agent_taskbook.json`), and each dimension has an explicit anchor in the body text, deliverables, and data, so reviewers and professional teams can verify item by item [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
