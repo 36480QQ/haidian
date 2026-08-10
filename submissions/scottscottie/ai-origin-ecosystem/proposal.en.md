@@ -89,10 +89,10 @@ Five user personas: university researchers, startup teams, open-source developer
 
 | # | Scenario Card | Users and Space | AI Assistance | Human Boundary |
 | --- | --- | --- | --- | --- |
-| 01 | Source Pitch Hall | Researchers, investors; Origin community | Pitch material organization and matching | Professional jury review, confidential-protection |
+| 01 | Source Pitch Hall | Researchers, investors; Origin community | Pitch material organization and matching | Professional jury review, confidentiality review |
 | 02 | Open-Source Release Courtyard ★ | Developers; Origin community | Code release and contribution visualization | License and attribution review |
 | 03 | Full-Stack Test Sandbox ★ | Startup teams; Zhongzhiyuan | Test plan and evidence checklist | Professional review release, suspendable |
-| 04 | Safety Governance Review Gallery ★ | Enterprises, developers; Zhongzhiyuan | Red-team case choreography and standard comparison | Safety officer sign-off, no live sensitive systems |
+| 04 | Safety Governance Review Gallery ★ | Enterprises, developers; Zhongzhiyuan | Red-team case choreography and standard comparison | Safety officer sign-off, no live production systems |
 | 05 | Embodied Intelligence Test Street | Robot teams, public; Zhongzhiyuan / Xiaoyuehe wing | Path conflict simulation | Accessibility consultant and on-site safety officer takeover |
 | 06 | Enterprise Service Copilot | Enterprises; both-wing service points | Aggregate public policy, compute, compliance entry points | Official channels prevail, no eligibility judgment |
 | 07 | Data-Element Salon | Enterprises, regulators; Dazhongsi | Data compliance process guidance | Authorization and compliance review, human takeover |
@@ -127,7 +127,7 @@ The urban-character grammar draws from the railway's rails, sleepers, signals an
 | Project | Type | First-Mover Approach | Scale-Up Gate |
 | --- | --- | --- | --- |
 | O01 Origin Wayfinding and Milestone System | Brand / Culture | Movable signage sample | Heritage, copyright, accessibility review |
-| O02 Source Pitch Hall | Industry Service | Temporary pitch and co-creation toolbox | Confidential protection, professional review |
+| O02 Source Pitch Hall | Industry Service | Temporary pitch and co-creation toolbox | Confidentiality review, professional review |
 | O03 Open-Source Release Courtyard | Public Learning | Temporary course and open-source co-creation | License and attribution review |
 | O04 Full-Stack Test Sandbox | Industry Validation | Isolated environment open day | Cyber-security, accountable officer, exit |
 | O05 Safety Governance Review Gallery | Industry Validation | Standard comparison workshop | Standard, compliance, human review |
