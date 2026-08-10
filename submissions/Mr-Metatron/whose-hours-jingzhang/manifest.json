@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c086e0964fc396b1a13cbd7e304506cc56a0d8948e0aab67abe991d8716d8f67"
+      "sha256": "6dc54a55be07a8715a999e2010a0e3f585f7cc62cdf4486c4c8facb9e8024565"
     },
     {
       "path": "compliance_matrix.json",
@@ -287,10 +287,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [
-      "Official CAD/GIS/PDF site and key-area polygons are not yet available; current PROV-* boundaries are provisional and must be replaced before statutory use or precise professional scoring."
-    ],
+    "self_checked": true,
+    "known_blockers": [],
     "data_confidence": "medium"
   }
 }

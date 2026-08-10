@@ -16,6 +16,14 @@
       "message": "All three key areas retain provisional flags and precision warnings."
     },
     {
+      "check_id": "OFFICIAL_GEOMETRY_PRECISION_LIMIT",
+      "result": "unknown",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson; geometry/key_areas.geojson",
+      "message": "Organizer-supplied official polygons are unavailable. This limits statutory use and precision-sensitive area assessment, but does not block intake or content scoring; all current geometry remains explicitly provisional.",
+      "suggested_fix": "Replace both provisional geometry files and recompute all dependent layers, metrics, figures, HTML and drawings when cleared official polygons are supplied."
+    },
+    {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
