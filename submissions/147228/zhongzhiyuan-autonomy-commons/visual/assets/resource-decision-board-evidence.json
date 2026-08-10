@@ -37,6 +37,11 @@
       "id": "FIGURES",
       "status": "PASS",
       "detail": "bilingual SVG figures exist"
+    },
+    {
+      "id": "FIGURE_DIMENSIONS",
+      "status": "PASS",
+      "detail": "SVG and PNG companions preserve native dimensions"
     }
   ],
   "not_a_score": true,
