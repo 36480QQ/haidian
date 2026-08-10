@@ -32,7 +32,7 @@ The coordinated research area (~43.6 km²) holds industry and future-city strate
 
 **Agent Station Network** treats public AI services as timed trains: published, boardable, transferable, auditable, and reversible. The naming system uses Hub / Platform / Service Train / Boarding Compact. The three positionings map to the heritage spine, daily-life platforms, and innovation hubs; the five functions are organized by the same station protocol [source:AGENT-TASKBOOK] [depth:overall_spatial_structure].
 
-Eight global references (Barcelona Superblocks, Singapore Smart Nation, the Sidewalk Toronto cautionary case, Kalasatama, Seoul DMC, UnternehmerTUM, X-Road, Takeshiba) are translated into station rules rather than copied forms [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+Eight global references (Barcelona Superblocks [source:CASE-BARCELONA-SUPERBLOCKS], Singapore Smart Nation, the Sidewalk Toronto cautionary case, Kalasatama, Seoul DMC, UnternehmerTUM, X-Road, Takeshiba) are translated into station rules rather than copied forms [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## Overall design area at regulatory urban-design depth
 
@@ -68,9 +68,60 @@ Near term: three-hub opening package and spine continuity. Medium term: twelve p
 
 ## Indicator system, area recomputation, and compliance matrix
 
+> Area and ratio figures below are **conceptual recomputation on a provisional boundary**, not official redlines, statutory indicators, or approvals; recompute the full package when official polygons arrive.
+
 ![Metrics evidence](assets/figures/metrics-evidence.png)
 
 Known metrics are recomputed from this package’s GeoJSON in EPSG:4548; unknowns stay explicit. Matrices cover announcement tasks and agent.1–6. Official polygons are not yet available; current geometry is only for concept generation, display, and content review, and the full package must be recomputed when formal data arrives. Eligibility, scoring, acceptance, publication, and merge are decided by maintainers through trusted validation; this proposal does not prejudge those outcomes [metric:site_area_sqm] [depth:metrics_recalculation].
+
+## Brand and logo direction (agent.1)
+
+Primary name: **Agent Station Network** (ZH: 京张站场网). Motif: rounded railway station board × multi-agent node.
+
+| Element | Direction | To be deepened professionally |
+|---------|-----------|-------------------------------|
+| Mark | Rounded board + central transfer node | Vector logo, clear space, min size |
+| Color | Amber / teal / orange service lines | Exact values, contrast, a11y checks |
+| Type | Sans display + timetable-like Latin | Open-licensed font substitution |
+| Don'ts | No confusion with city emblems; no approval implication | Don't sheet |
+| Bilingual lockups | ZH over EN or split board | Combination rules |
+
+This package states direction only; it does **not** claim a finished VI manual. [source:AGENT-TASKBOOK]
+
+## Regional synergy interfaces (conceptual, not signed deals)
+
+| Interface | Flows (concept) | Local landing |
+|-----------|-----------------|---------------|
+| Zhongguancun / Beiqing corridor | Talent, capital, IP | Service wing transfer |
+| Future Science City | Pilot demand | Verification test-track booking |
+| Huairou Science City | Large facilities / data norms | Open evaluation track interface |
+| BDA | Manufacturing scenarios | Market terminal business deck |
+| Zhangjiakou direction (narrative) | Green power / compute story | Two-way timetable metaphor only |
+| Jing-Jin-Ji innovation links | Events and talent exchange | Pilgrimage week international unit |
+
+These are an **agenda list**, not executed MOUs. [depth:three_level_scope_framework]
+
+## Implementation and exit (still conceptual)
+
+| Phase | Trigger (concept) | Actor (TBD) | Acceptance sketch | Exit |
+|-------|-------------------|-------------|-------------------|------|
+| Near | Walkable park segment permission | District parks/street + pros | Three hub info interfaces live | Sensors off; pavilions demountable |
+| Mid | Ethics filing + voluntary merchants | Ops commons + shops | At least 4 of 12 platforms host real scenarios | Scenario rollback; data deletion |
+| Long | Events without traffic harm | Host + city managers | Revisable annual timetable | Downgrade to online/campus |
+
+No government investment or approval claim is made. [depth:phasing_implementation]
+
+## Component library and honor nodes (agent.4)
+
+Components (concept): switch-off poles, open-data cabinets, accessible wayfinding, quiet co-translation seats, night safety light bands, reversible pavilions.  
+Honor nodes: Verification Clocktower, Origin Transfer Ring, Market Bell — narrative only, not approved projects. [source:AGENT-TASKBOOK]
+
+## Operations loop (agent.6)
+
+- Developers: quarterly hackathon trains + contribution credits (non-statutory).
+- Scenario opening: pilot application stating capability, data scope, rollback, human on-duty.
+- International: pilgrimage-week unit with universities/OSS communities.
+- Conversion: display/matchmaking space only; no tax or land-policy promise. [source:AGENT-TASKBOOK]
 
 ## Risk, copyright, compliance
 

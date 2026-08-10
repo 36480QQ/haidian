@@ -29,3 +29,10 @@
 - 原因：Windows 工作区 CRLF 与 GitHub Actions Linux LF 不一致（仓库已知问题）
 - data_confidence 保持 medium
 
+## v1.5 - 2026-08-10
+
+- 修复 AI 评审阻断：重新生成全部 10 个中英 PNG（此前被 CRLF 规范化破坏 PNG 签名）
+- 重建 A3/A0 中英 PDF；英文 visual 独立英文导航；嵌入本地图件
+- 矩阵 A-CONTROLS-001 改为真实 assumptions 标识；扩充 sources CASE-* 与 copyright 台账
+- 指标图增加“临时边界概念复算”警示；保持 data_confidence=medium
+
