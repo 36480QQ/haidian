@@ -113,6 +113,21 @@ The package uses four labels for numbers. Read the label before reading the valu
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
+### 1. Evidence hierarchy for mobility decisions
+
+The package separates policy direction, provisional space, synthetic proxies and field baselines so that “replayable” is not mistaken for “observed”. Every readout must be read with both its permitted and disabled use.
+
+| Evidence level | Package examples | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Task and transport policy (formal/background) | Open-call announcement, transport plan, parking-service tender | Task coverage, public-transport priority, service interfaces and accountability questions | Corridor baseline, station OD, capacity, right-of-way or implementation commitment |
+| Provisional spatial basis | `site_boundary`, `key_areas`, roads and key-area nodes | Concept relationships, ground interfaces, transfer sequence and a whole-package recomputation trigger | Statutory road redlines, cross-section dimensions, ownership, fire or accessibility compliance |
+| Known package values and derived readouts | GeoJSON, `metrics.json`, claim audit and service levels | File consistency, relative comparison, issue lists and design gates | Actual footfall, vehicle counts, parking demand, service level or resident satisfaction |
+| Synthetic proxies and tabletop replay | Regional commute proxy, M-09, tabletop and negative-fixture runners | State logic, stop/fallback, scenario comparison and fields to collect next | Field performance, public consent, staffing, P1/P2 authorization or official score |
+| Administrative/open sources and methods | Statistics, policy, public methods, OSM and TDM research | Question calibration, data-collection priorities and mechanism reference | Local causal effects, partnership facts, siting or return on investment |
+| Field and stakeholder baseline (not yet obtained) | OD, accessibility walkthrough, complaint log, enterprise/resident input | Evidence needed later to decide P1/P2 entry | It cannot currently be replaced by a model, case or one event |
+
+The review rule is: `known` means only that a value is readable from package files; `unknown` must not be guessed; `design_target` is not field performance; `blocked` stops scale-up. A local PASS proves only that a structure or state machine can be replayed; it is not a field, professional or implementation finding.
+
 Beijing’s 14th Five-Year transport plan frames one-hour door-to-door trips, integrated rail/bus/walking/cycling, public-transport priority and smart transport as policy directions [source:BEIJING-14TH-TRANSPORT-PLAN]. A current Haidian road-parking service tender combines order management, guidance, patrol, equipment inspection, exception handling, backend operations and complaint response. It demonstrates that a curb is an operated asset, not merely a line on a map [source:HAIDIAN-ROAD-PARKING-TENDER-2026]. A Haidian transport planning document requires transit-hub conditions, ground-floor public interfaces, bicycle interchange, emergency routes and traffic-impact review [source:BEIJING-HAIDIAN-TRANSIT-HUB-PDF]. None of these sources is a local baseline for this provisional study area.
 
 Evidence is separated into `known` geometry values, `unknown` local baselines, `design_target` pilot gates and `blocked` conditions. Employer travel-demand-management research supports transit benefits, multimodal subsidies, flexible hours and guaranteed rides home, but its effects are context-dependent and are not copied as Haidian outcomes [source:EMPLOYER-TDM-LONGITUDINAL] [source:EMPLOYER-TDM-GUIDE].

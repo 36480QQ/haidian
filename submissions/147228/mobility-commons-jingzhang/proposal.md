@@ -115,6 +115,21 @@ iteration: "v2.35"
 
 本包沿用公开任务书的 provisional 工作底盘，但以交通运营为主题重做路网属性、指标、来源、图件和实施门槛；`geometry/site_boundary.geojson`、`geometry/key_areas.geojson` 都明确 `official_boundary=false`、`geometry_role=provisional_constraint`，不得解释为法定红线 [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]。
 
+### 1. 交通决策的证据等级
+
+本包把政策方向、临时空间、合成代理和现场基线分层，避免把“可回放”误读成“已发生”。每个读数都必须同时回到允许用途和禁用用途。
+
+| 证据层级 | 本包实例 | 可以支持 | 不能支持 |
+| --- | --- | --- | --- |
+| 任务与交通政策（formal/background） | 征集公告、交通规划、停车服务招标 | 任务覆盖、公共交通优先、服务接口和责任问题 | 本走廊现状、站点 OD、容量、路权或实施承诺 |
+| 临时空间底盘（provisional） | `site_boundary`、`key_areas`、路网和重点区节点 | 概念关系、地面界面、换乘顺序和整体复算触发器 | 法定道路红线、断面尺寸、产权、消防或无障碍达标 |
+| 包内已知值与派生读数 | GeoJSON、`metrics.json`、claim audit 和服务等级 | 文件一致性、相对比较、问题清单和设计闸门 | 真实客流、车辆数、停车需求、服务水平或居民满意度 |
+| 合成代理与桌面回放 | 区域通勤代理、M-09、tabletop 和负例 runner | 状态逻辑、停止/回退、方案比较和待采数据字段 | 现场性能、公众同意、运营值守、P1/P2 授权或官方评分 |
+| 行政/开放资料与论文方法 | 统计、政策、公开方法、OSM 和 TDM 研究 | 校准问题、补采优先级和机制参考 | 海淀本地因果效果、合作事实、选址或投资回报 |
+| 现场与利益相关者基线（尚未取得） | OD、无障碍走查、投诉台账、企业/居民意见 | 未来决定是否进入 P1/P2 的必要证据 | 当前不能用模型、案例或一次活动替代 |
+
+审阅规则是：`known` 只说明文件可回读，`unknown` 不得猜填，`design_target` 不是现场成绩，`blocked` 必须停止扩容；本地 PASS 只证明结构或状态机可复演，不构成现场、专业或实施结论。
+
 北京“十四五”交通规划将一小时门到门、轨道和公交、步行和自行车一体化、公交优先以及智慧交通列为方向 [source:BEIJING-14TH-TRANSPORT-PLAN]。海淀区 2026至2027 年道路停车管理服务招标把停车秩序、引导巡查、设备检查、异常处置、后台和“接诉即办”放进同一项服务，说明路缘同时受责任主体和服务水平约束，不能只当作静态地图 [source:HAIDIAN-ROAD-PARKING-TENDER-2026]。
 
 海淀西北旺规划交通材料还要求轨道站点/交通枢纽、首层公共界面、换乘自行车停放、应急疏散和交通影响评价共同校核 [source:BEIJING-HAIDIAN-TRANSIT-HUB-PDF]。这些材料是政策和招标证据，不是本 provisional 范围的现状数据。
