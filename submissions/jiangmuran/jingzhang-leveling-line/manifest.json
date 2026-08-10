@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-10T03:28:15-07:00",
+  "generated_at": "2026-08-10T03:32:55-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "00eec1a17dc9689f75d6569f8fa315ce566d3f9ab2bb3fb8560f5a51a6786ad8"
+      "sha256": "fb5d89e384fe174715575f99b8170b965b9af3299e368ffd07429f180fc5cbcb"
     },
     {
       "path": "agent.json",
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0a7f1a8a83c8b8a543b56a1019f78af492be2a267b51fe2bbc3ffe9574a74ffc"
+      "sha256": "abd9e829d7aed72876b862f4e44b5279e16bf10fb474a314d3855c2f3fda6f9f"
     },
     {
       "path": "report/narrative.md",
@@ -286,7 +286,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "2218a27f8f02be17c4718aa2d0db1aedcc0da699f04c6c787edf701869e1d61d"
+      "sha256": "5d125da96ccdd45ba8c7ba6ee761c57e20952c9c28100a94a6e88dfcb7d85af7"
     },
     {
       "path": "visual/assets/agent_declarations.json",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2efbf911b29a9bbb49979f73892661d3e4c7e8070ff83ddbc4dbdd32679523ed"
+      "sha256": "a3403fb71d86ef6928d1ca3548e39ab2330b8c4b6c284455e895158bf8bb7fec"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e3922e505c2827e206305cee53cb512eb4ec751b3089d1321f10f9ad15cca5fe"
+      "sha256": "06c1f921e8d236e112b135fad974508ff81044cbb45b39c4930b241fb2f79bce"
     },
     {
       "path": "visual/index.en.html",
@@ -433,7 +433,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "b4f6d86327099617b61f7692b93cc53e667a46560a1c9c118b7269f9e82fb646"
+      "sha256": "95f2285515e6ea546566ebe3655596a55a8052ce16b1f8153982450e3605f0cb"
     },
     {
       "path": "visual/assets/score_correlates.json",
