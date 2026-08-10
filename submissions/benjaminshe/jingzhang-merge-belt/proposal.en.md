@@ -16,6 +16,8 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 > Slogan: **Advance in a zigzag; reach far through openness.** The zigzag is how the railway conquered the steepest grade with the least resources; openness is how every tributary contribution flows into the mainline and leaves its name.
 > Core judgment: the sophistication of a future city is not measured by how many sensors it deploys, but by **how many tributaries are willing and able to merge into the mainline** — merging must be a choice, not a mandate; it must be reviewable, rejectable, and rollback-able, and **complete tributary paths (manual, offline, account-free) must remain available**.
 
+**The Merge Belt system (this proposal's named concept)**: the operating discipline of the railway — single-line token block, meeting-and-yielding, tributary joining, station interchange — is translated into a protocol for urban AI governance and public-space operation: the mainline is the everyday city, public and pedestrian-first; tributaries are AI experiments that can be reviewed, rejected, and rolled back. Three layers interlock: the **spatial layer** (the three-zone/two-wing confluence loop and six confluence-node plazas), the **temporal layer** (the Merge Timeslot: morning market / study market / night market plus [metric:quiet_hours_per_day] quiet hours), and the **governance layer** (the six-step Merge Protocol, Merge Token, Return Budget, and contributor ladder). Differentiating claim in one sentence: **merging is a choice, not a mandate; tributaries are never degraded; the return is budgeted** — the city does not stuff AI into its streets; it tells AI "yes, with conditions; no, with an exit".
+
 ## Design Basis and Source Inventory
 
 This proposal takes the *Prequalification Announcement for the International Open Call for the Centennial Jing-Zhang AI Innovation Belt Urban Design*, published on 2026-05-09 by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis [source:OFFICIAL-ANNOUNCEMENT], and the maintainer-registered provisional boundaries, key areas, enums, metrics, and source inventory under `brief/site-package/` as its machine-readable basis [source:SITE-PACKAGE]. Before generation, the agent read `design_brief.json`, `allowed_design_space.json`, `agent_taskbook.json`, `sources.json`, `ranges/planning_limits.json`, `schemas/`, and `data/source_registry.json`, and used `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv` under `data/processed/` to build task, scope, source-use, and data-gap checklists. Every design judgment is decomposed into traceable sources, recomputable metrics, verifiable layers, and human-reviewable assumptions.
@@ -28,9 +30,24 @@ As of 2026-08-08 the official `SITE_BOUNDARY` and three `KEY_AREA` polygons have
 
 ![Evidence chain and submission package relationships](assets/figures/site-overview.png)
 
+## Task Response Matrix (announcement and taskbook, item by item)
+
+The table below maps the six agent tasks of the repository taskbook to this proposal's sections and evidence for quick verification [standard:PROJECT-OFFICIAL-ANNOUNCEMENT][standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Task | Response in this proposal | Evidence location |
+| --- | --- | --- |
+| agent.1 Belt-wide concept and functional coordination | "Merge Belt" naming system, Logo direction, three positions / five functions / three-zone two-wing confluence loop, overall structure diagram; no FAR/height/demolish-retain conclusions | Executive summary and Three-Level Scope sections, `assets/figures/site-overview.png`, compliance_matrix |
+| agent.2 Full-stack independent AI innovation system and world-class ecosystem | 6 global ecosystem cases (mechanism-only, no form copying), upstream open-source release → maintainer conversion → release distribution ecosystem map, eight-factor mechanisms | "AI Innovation Ecosystem, Talent Profiles, and AI-Enabled Scenarios" section, compliance_matrix |
+| agent.3 AI-enabled scenario empowerment and smart lively city | 16 scenario cards (≥10), 3 industry testing/validation scenarios, 6 persona types, scenario-space-operation mapping, privacy and human-review boundaries | Scenario card table and [data:geometry/constraints.geojson#SCENE-01], persona table |
+| agent.4 AI public space, AI-native new formats, pilgrimage landmarks | Heritage-park AI public space, east-west stitching and north-south threading, Dazhongsi AI-native consumption, 4 pilgrimage landmarks, honor display system and component library | Blue-Green/Public Space sections, landmark catalog, `assets/figures/mobility-bluegreen.png` |
+| agent.5 Jing-Zhang heritage, Zhongguancun culture, and AI new-culture narrative | Three-layer narrative (railway heritage—Zhongguancun innovation—AI new culture), signage and symbol system, international communication copy | Culture narrative and public space sections |
+| agent.6 Global AI activity system and long-term operation | Annual activity system (monthly log / quarterly actions / annual Merge Day), developer community operation, scenario-access operation, international outreach and attraction | "Renewal Project List, Implementation Policy, and Phasing" section, metrics |
+
+The table above responds item by item to the announcement and the taskbook; its source chain [source:AGENT-TASKBOOK][source:OFFICIAL-ANNOUNCEMENT] aligns with the repository taskbook originals.
+
 ## Three-Level Scope Framework
 
-The three levels follow a "**watershed — mainline — merge node**" progression rather than scaling up one master plan [depth:three_level_scope_framework]:
+The three levels follow a "**watershed — mainline — merge node**" progression rather than scaling up one master plan [depth:overall_spatial_structure][depth:three_level_scope_framework]:
 
 - **Coordinated Research Area (43.6 km², watershed layer):** answers how the AI industry chain, talent chain, public service chain, and cultural communication chain originate, diverge, and converge in Haidian; defines the three-zone/two-wing merge loop and factor mechanisms.
 - **Overall Design Area (11.4 km², mainline layer):** treats the Jing-Zhang heritage corridor as the **Mainline**, and carries the merge relationships into land use, slow mobility, blue-green, renewal, and public service frameworks; east–west tributaries join the mainline here [data:geometry/land_use.geojson#LU-001].
@@ -237,9 +254,24 @@ Every known value has source_files, formula, confidence, and assumptions; every 
 
 Recalculation order ([depth:metrics_recalculation]): verify the source roles of site and key areas → project to EPSG:4548 → check full coverage and overlaps of land use → union green, public, and building areas → length of centerlines → write results back into metrics and HTML data attributes. The boundary area is approximately 11,412,825 square meters with medium confidence, not written as an exact official statistic.
 
+**Official-data recalculation pipeline (implementation commitment)**: all area, ratio, and layer indicators are recomputed by deterministic repository scripts from GeoJSON (see source_files/formula and the recalculation basis in metrics.json). Once the official `SITE_BOUNDARY`/`KEY_AREA` polygons or regulatory conditions are published, the same script chain recomputes land use, buildings, roads, green space, public space, phasing, and all area indicators in one pass and replaces them wholesale — no manual single-file edits; the results ship with the next iteration and re-pass all four gates and review. The organizer's data gap therefore does not become an implementation loss; it becomes an executable update pipeline.
+
 The compliance chain is covered by `compliance_matrix.json` (announcement sections 1.3, 1.4, 1.5 and agent.1–agent.6), `standard_matrix.json` (six professional standards), and `design_depth_matrix.json` (fifteen professional depth items). Reviewers can trace any conclusion in the text back to geometry, metrics, sources, assumptions, self-check, the A3 booklet, the A0 boards, and the offline HTML, avoiding "images only, no verification".
 
 ![Core metric recalculation and evidence chain](assets/figures/metrics-evidence.png)
+
+## Public Interest and Inclusion
+
+The proposal states, for six groups, the benefit mechanisms and inclusive measures [source:AGENT-TASKBOOK]:
+
+- **Residents**: everyday services do not depend on digital devices (tributaries not degraded, quiet hours, human fallback); renewal projects provide public receipts and appeal channels; confluence nodes keep ordinary payment and human service desks;
+- **Young talent**: the contributor ladder (visitor → contributor → maintainer → core maintainer) and talent services (SCENE-04), open-source workshops (SCENE-14), and university-industry living rooms (SCENE-06) carry the growth path;
+- **Enterprises**: testing/validation scenarios (SCENE-02/15) provide controlled experiment space; Merge Applications and the four-type public receipt make the process predictable and outcomes appealable;
+- **Universities**: the upstream open-source release → Origin Community conversion chain (agent.2) receives source innovation; co-built open-source classrooms (SCENE-14) support curricula and training;
+- **Visitors**: the Jing-Zhang memory route (SCENE-09), 4 pilgrimage landmarks, bilingual signage, and accessible tributaries (SCENE-11) ensure accessibility;
+- **Vulnerable groups**: accessible tributaries first, human customer-service fallback, free public space; high-impact services (health/law/public safety) are never decided by models alone.
+
+Inclusion baseline: no AI service may reduce the accessibility of existing public services (the "tributaries are not degraded" principle), subject to maintainer and public review; benefit and impact data enter the annual Merge log for public audit [depth:public_space_quality].
 
 ## Risks, Copyright, and Compliance
 
