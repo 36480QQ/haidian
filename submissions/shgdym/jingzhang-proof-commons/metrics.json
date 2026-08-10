@@ -13,10 +13,15 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
-      ]
+        "The submitted site boundary is a provisional rough constraint, not an official redline.",
+        "Do not use this area as a precise statutory or scoring-area basis; recalculate after official geometry is supplied."
+      ],
+      "display_value": 11412800,
+      "display_precision": "rounded_for_provisional_review",
+      "provisional_only": true,
+      "precision_note": "Derived from provisional site boundary; rounded display only, not a precise official area."
     },
     "building_footprint_area_sqm": {
       "status": "known",
@@ -27,7 +32,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [],
+      "display_value": 310800,
+      "display_precision": "rounded_for_provisional_review"
     },
     "green_ratio": {
       "status": "known",
@@ -38,8 +45,12 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "display_value": 0.12,
+      "display_precision": "rounded_for_provisional_review",
+      "provisional_only": true,
+      "precision_note": "Derived from provisional site boundary and submitted green layer; rounded display only."
     },
     "public_space_ratio": {
       "status": "known",
@@ -50,8 +61,12 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "display_value": 0.07,
+      "display_precision": "rounded_for_provisional_review",
+      "provisional_only": true,
+      "precision_note": "Derived from provisional site boundary and submitted public-space layer; rounded display only."
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -63,7 +78,7 @@
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "reason": "Approved FAR controls, official site boundary, ownership, and building gross floor area are not present in the public site package."
     },
     "key_area_count": {
       "status": "known",
@@ -73,8 +88,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [],
+      "provisional_only": true,
+      "precision_note": "Count of provisional key-area features only."
     }
   }
 }

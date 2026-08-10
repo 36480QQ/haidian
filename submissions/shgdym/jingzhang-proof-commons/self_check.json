@@ -4,29 +4,57 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "persisted_at": "2026-08-09T04:08:49Z",
+  "persisted_at": "2026-08-10T02:35:03Z",
   "source_command": "python3.13 scripts/self_check_submission.py submissions/shgdym/jingzhang-proof-commons --pr-author shgdym --json",
   "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission package",
+      "message": "Trusted deterministic intake result persisted from full_report.deterministic_validation."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "Spatial review result persisted from full_report.spatial_review; provisional key-area notices remain non-blocking organizer-data warnings."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING_CHECK",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual, figures, and drawings",
+      "message": "Visual packaging result persisted from full_report.visual_review."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md, matrices, sources, assumptions, metrics",
+      "message": "Professional evidence result persisted from full_report.professional_review."
+    },
     {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "Provisional boundary is present and explicitly limited; replace with official redline before statutory precision or implementation use."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "Three required key areas are present as provisional constraints; replace with official polygons before statutory precision or implementation use."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "Initial land-use polygons are derived from submitted provisional boundary partitioning and are precision-limited."
     },
     {
       "check_id": "VISUAL_STATIC",
@@ -40,7 +68,7 @@
       "result": "pass",
       "severity": "major",
       "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, assumptions, and formal task appendices."
     }
   ],
   "full_report": {
@@ -106,7 +134,7 @@
         "ai_package_stages": {
           "submissions/shgdym/jingzhang-proof-commons": "formal"
         },
-        "total_bytes": 26473986,
+        "total_bytes": 27639122,
         "maintainer_bypass": false
       },
       "stderr": ""
@@ -186,7 +214,7 @@
           "proposal_format_version": "2",
           "evidence_contract": "section-anchors-plus-structured-audit",
           "proposal_reference_counts": {
-            "source": 5,
+            "source": 8,
             "standard": 5,
             "depth": 15,
             "data": 11,

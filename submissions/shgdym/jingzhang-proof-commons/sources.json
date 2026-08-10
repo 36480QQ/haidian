@@ -42,6 +42,30 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "AGENT-TASK-OUTPUTS",
+      "path": "report/narrative.md",
+      "source_type": "participant_generated_evidence",
+      "usage": "Logo/VI direction, ecosystem cases, regional coordination, landmarks, component kit, and operating system."
+    },
+    {
+      "id": "SCENARIO-OPERATION-MATRIX",
+      "path": "report/narrative.md",
+      "source_type": "participant_generated_evidence",
+      "usage": "Ten scenario cards with industry-test flags, spatial anchors, operators, data boundaries, review triggers, exit conditions, and KPI."
+    },
+    {
+      "id": "ACCESSIBILITY-INCLUSION",
+      "path": "report/narrative.md",
+      "source_type": "participant_generated_evidence",
+      "usage": "Inclusive personas, offline alternatives, accessibility checks, and fairness indicators."
+    },
+    {
+      "id": "COPYRIGHT-LEDGER",
+      "path": "report/copyright_statement.md",
+      "source_type": "participant_generated_evidence",
+      "usage": "Asset-by-asset rights and provenance ledger for text, geometry, AI renderings, diagrams, fonts, HTML, code, and PDFs."
     }
   ]
 }

@@ -31,7 +31,7 @@ At the 43.6 sq km research scale, the design links universities, research instit
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-At the 11.4 sq km overall design scale, the package expresses a complete land-use partition, building footprints, roads, green space, public space, constraints, and phasing layers [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The design emphasizes an AI research and innovation band, a Jing-Zhang blue-green public spine, mixed industry-service frontage, and life-service support areas. FAR, height, road redline, property, municipal, fire, heritage, and detailed planning controls remain pending official data and are not claimed as approved planning conclusions [metric:floor_area_ratio].
+At the approximately 11.4 sq km overall design scale, the package expresses a complete land-use partition, building footprints, roads, green space, public space, constraints, and phasing layers [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]. The design emphasizes an AI research and innovation band, a Jing-Zhang blue-green public spine, mixed industry-service frontage, and life-service support areas. FAR, height, road redline, property, municipal, fire, heritage, and detailed planning controls remain pending official data and are not claimed as approved planning conclusions [metric:floor_area_ratio].
 
 ## Detailed Design of Key Areas
 
@@ -42,6 +42,15 @@ Zhongzhiyuan is framed as a garden-like full-stack AI autonomy accelerator; Beij
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The proposal defines user groups for open-source developers, start-up teams, leading-enterprise visitors, nearby residents, and university students, then maps them to AI service spaces, public experience routes, and governance boundaries [source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]. Ten scenario cards include an open-source release hall, safety-governance sandbox, edge-compute service node, slow-mobility assistant, Dazhongsi international demo lounge, Qinghe low-carbon innovation corridor, near-campus conversion street, data-element salon, AI life-service prototype street, and global AI event route. Each scenario requires data minimization, human review, license clearance, and operational accountability.
+
+
+### Identity, Regional Coordination, AI Ecosystem, and Operations
+
+The repair package adds structured evidence for agent.1-agent.6 in `report/narrative.md` 的“Agent task output appendix”: Logo/VI direction, three-areas-two-wings coordination, interfaces with Beiwei Community, Future Science City, Huairou Science City, BDA, and Jing-Jin-Ji, six global reference cases, ecosystem mechanisms, three landmarks, honor display, public-space component kit, and annual operation system [source:AGENT-TASK-OUTPUTS]. The identity direction uses an original rail-spine plus ledger-node symbol and does not use third-party logos or enterprise marks.
+
+`report/narrative.md` 的“Scenario operation matrix” upgrades the 10 AI scenarios into auditable cards with spatial anchor, candidate operator, data boundary, human-review trigger, exit condition, and KPI. Four cards are flagged as industry test/validation scenarios: open-source release hall, safety-governance sandbox, Dazhongsi international demo lounge, and data-element salon [source:SCENARIO-OPERATION-MATRIX]. `report/narrative.md` 的“Inclusion appendix” adds older adults, children and caregivers, disabled users, night workers, and non-digital users, with offline alternatives, tactile guidance, low-glare lighting, accessible route targets, and complaint/stop channels [source:ACCESSIBILITY-INCLUSION].
+
+The operation system defines a spring open-source release week, summer safety-governance sandbox month, autumn global AI event week, and winter community review and recalculation forum. Each event remains a conceptual proposal and requires permit, privacy, safety, accessibility, copyright, and human-review checks before launch [source:AGENT-TASK-OUTPUTS].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
