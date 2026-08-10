@@ -1,0 +1,350 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11432167.638,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional boundary (maintainer EPSG:4548 calc); official redline pending"
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": [
+        "众智园/AI原点社区/大钟寺"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.1798,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm (design target)",
+      "confidence": "medium",
+      "assumptions": [
+        "按总体设计范围 land_use code 14 实算（provisional 口径）；统筹范围绿地含公园绿地另行统计"
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.1798,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_open_space_area_sqm / site_area_sqm (design target)",
+      "confidence": "medium",
+      "assumptions": [
+        "按总体设计范围 land_use code 14 实算（provisional 口径）"
+      ]
+    },
+    "key_area_zhongzhiyuan_area_sqm": {
+      "status": "known",
+      "value": 1931337.661,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-001)",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional boundary"
+      ]
+    },
+    "key_area_ai_origin_area_sqm": {
+      "status": "known",
+      "value": 1044398.346,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-002)",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional boundary"
+      ]
+    },
+    "key_area_dazhongsi_area_sqm": {
+      "status": "known",
+      "value": 720051.286,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(PROV-KEY-003)",
+      "confidence": "medium",
+      "assumptions": [
+        "provisional boundary"
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of AI scenario cards (SC1-SC10)",
+      "confidence": "high",
+      "assumptions": [
+        "含3个测试验证场景 SC4/SC6/SC9"
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of user personas (P1-P5)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count of AI pilgrimage landmarks",
+      "confidence": "high",
+      "assumptions": [
+        "清华园·AI源点/京张·荣誉之墙/大钟寺·AI时间塔"
+      ]
+    },
+    "ecosystem_case_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of global AI ecosystem case studies",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "east_west_stitching_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "proposal.md"
+      ],
+      "formula": "count of planned east-west stitching connections",
+      "confidence": "medium",
+      "assumptions": [
+        "设计目标 8 处"
+      ]
+    },
+    "data_evidence_anchor_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count of [data:geometry/...] evidence anchors in proposal.md",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_area_0802_sqm": {
+      "status": "known",
+      "value": 4124498.151,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=0802))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "land_use_area_14_sqm": {
+      "status": "known",
+      "value": 2055147.266,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=14))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "land_use_area_05_sqm": {
+      "status": "known",
+      "value": 2279880.082,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=05))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "land_use_area_07_sqm": {
+      "status": "known",
+      "value": 1519598.714,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=07))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "land_use_area_08_sqm": {
+      "status": "known",
+      "value": 1120775.175,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=08))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "land_use_area_1207_sqm": {
+      "status": "known",
+      "value": 332267.211,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use features with code=1207))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于 provisional 边界实算；official polygon 发布后复算"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2055147.266,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "land_use_area_14_sqm (绿地与开敞空间用地)",
+      "confidence": "medium",
+      "assumptions": [
+        "含京张公园+清河/小月河滨水绿带；基于 provisional 边界实算"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 2055147.266,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "land_use_area_14_sqm (公共开敞空间口径)",
+      "confidence": "medium",
+      "assumptions": [
+        "公共开敞空间以绿地与开敞空间用地 14 类计；基于 provisional 边界实算"
+      ]
+    },
+    "road_area_ratio": {
+      "status": "known",
+      "value": 0.0291,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "land_use_area_1207_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "道路与交通设施用地占比；基于 provisional 边界实算"
+      ]
+    },
+    "phasing_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(polygon_area(phasing features))",
+      "confidence": "low",
+      "assumptions": [
+        "分期为示意节点（Point/LineString）+ 1 个中期 Polygon，无法构成完整分区"
+      ],
+      "reason": "phasing 图层为示意节点；待正式控规分期范围数据补齐"
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(building_footprint_area x floors)",
+      "confidence": "low",
+      "assumptions": [
+        "buildings 为示意节点，无逐栋建筑基底/层数数据"
+      ],
+      "reason": "建筑为概念节点；待正式建筑调查与控规数据补齐"
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "total_floor_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "依赖 total_floor_area_sqm"
+      ],
+      "reason": "待正式控规指标补齐"
+    },
+    "building_density_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "building_footprint_area / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "依赖建筑基底面积数据"
+      ],
+      "reason": "待正式建筑调查数据补齐"
+    }
+  }
+}

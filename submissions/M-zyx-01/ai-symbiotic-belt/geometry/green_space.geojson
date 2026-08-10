@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "GS-001",
+      "properties": {
+        "layer": "GREEN_SPACE",
+        "type": "linear_park",
+        "name_zh": "京张铁路遗址公园 AI活力带",
+        "length_km": 6.2,
+        "sections_zh": "三段九景：北段·科创起源 / 中段·社区共融 / 南段·未来生活",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "id": "GS-001"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3445,
+            39.945
+          ],
+          [
+            116.3445,
+            39.96
+          ],
+          [
+            116.3443,
+            39.975
+          ],
+          [
+            116.3443,
+            39.99
+          ],
+          [
+            116.3442,
+            40.005
+          ],
+          [
+            116.3442,
+            40.02
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-002",
+      "properties": {
+        "layer": "GREEN_SPACE",
+        "type": "waterfront_greenway",
+        "name_zh": "清河/小月河滨水绿带",
+        "length_km": null,
+        "sections_zh": null,
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "id": "GS-002"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.342,
+            39.947
+          ],
+          [
+            116.343,
+            39.96
+          ],
+          [
+            116.344,
+            39.975
+          ],
+          [
+            116.345,
+            39.99
+          ],
+          [
+            116.346,
+            40.005
+          ],
+          [
+            116.347,
+            40.014
+          ]
+        ]
+      }
+    }
+  ]
+}
