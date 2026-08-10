@@ -15,6 +15,8 @@
 | `author-originated-with-embedded-fonts` | 4 | A3/A0 PDF，含字体子集（见下） |
 | `third-party-open-data-redistributed` | 1 | osm_reference.json 中的 OSM 提取子集，ODbL 1.0 |
 
+**有一个文件这份台账覆盖不到，写在这里而不是留作沉默的缺口：** `manifest.json` 不携带自身的 sha256——一个文件无法包含自己的哈希。因此本包「每个随包文件的 git-blob 摘要都与 manifest 相符」这一说法，结构上唯一覆盖不到的就是 manifest 本身；它的完整性由提交历史与 PR diff 承担。
+
 下面这段计数本身也是生成的。此前它是手打的，于是包增加了三个文件之后，正文写 77 而台账是 80——由 PR #1065 的评审 @147228 复读发现。**一份用来防止手工计数漂移的台账，其说明文字的计数是手工的**，这是本包记录在案的同型缺陷之一。
 <!-- LEDGER:END -->
 
