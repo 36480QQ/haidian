@@ -24,7 +24,8 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true
+      "required": true,
+      "sha256": null
     },
     {
       "path": "agent.json",
@@ -328,7 +329,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3492ef8689afcee6f9b1ab3c15c29573a0586a9dae112043c2bb5b48d83234e6"
+      "sha256": "a883f0ef5dbf3a65b14b7e59aa5b25b619de97ebe25905904169602cb80848f0"
     },
     {
       "path": "visual/assets/multimodal-network.json",
