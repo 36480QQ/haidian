@@ -15,3 +15,9 @@
 - 修复 risk.json：迁移到 version=1 + dimensions[] schema，所有维度补齐 human_review
 - 修复 geometry 文件：road_centerline→roads 重命名，删除 ai_service_zone/scenario_node，新建 constraints.geojson
 - 移除 manifest 中不存在的 proposal.en.md 引用
+
+## v1.2 - 2026-08-11
+- 验证全部 29 个 SHA-256 哈希与实际文件匹配
+- 确认 geometry 目录仅包含 ALLOWED_GEOMETRY_FILES 白名单内文件
+- 确认 risk.json 全部 8 个维度 ID 均在枚举范围内
+- 推送 no-op 更新以触发 CI 重新运行
