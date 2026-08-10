@@ -154,6 +154,7 @@
       "assumptions": [],
       "reason": "No stratified resident baseline, route audit or service survey is available.",
       "pilot_target_min": 80,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-100"
     },
     "employer_multimodal_trip_rate": {
@@ -170,6 +171,7 @@
       "assumptions": [],
       "reason": "No employer travel survey or count has been completed.",
       "pilot_target_min": 0.6,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1"
     },
     "parking_occupancy_by_window_ratio": {
@@ -199,6 +201,7 @@
       "assumptions": [],
       "reason": "No curb booking, clearing or exception log exists for this submission area.",
       "pilot_target_min": 0.9,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1"
     },
     "first_last_mile_transfer_reliability": {
@@ -215,6 +218,7 @@
       "assumptions": [],
       "reason": "No station-level arrival, departure, walking and waiting observations are available.",
       "pilot_target_min": 0.85,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1"
     },
     "accessible_route_completion_ratio": {
@@ -231,6 +235,7 @@
       "assumptions": [],
       "reason": "No field audit of slopes, crossings, tactile paving, signals or obstruction continuity is available.",
       "pilot_target_min": 0.95,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1"
     },
     "peak_curb_conflict_rate": {
@@ -246,7 +251,6 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "No human-counted curb conflict sample or incident taxonomy is available.",
-      "pilot_target_min": 5,
       "pilot_target_scale": "events per 100 events"
     },
     "mobility_service_complaint_closure_hours": {
@@ -262,7 +266,8 @@
       "confidence": "unknown",
       "assumptions": [],
       "reason": "No mobility-specific complaint log, owner or service-level agreement is available.",
-      "pilot_target_min": 24,
+      "pilot_target_max": 24,
+      "pilot_target_operator": "<=",
       "pilot_target_scale": "hours"
     },
     "workplace_ev_charge_supply_gap_ratio": {
@@ -349,6 +354,7 @@
       "assumptions": [],
       "reason": "No locally calibrated multimodal simulation or field baseline exists.",
       "pilot_target_min": 75,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-100 after hard gates"
     },
     "person_flow_conflict_rate": {
@@ -379,6 +385,7 @@
       "assumptions": [],
       "reason": "No synchronized metro, bus, bicycle, walking or car transfer observation is available.",
       "pilot_target_min": 0.85,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1"
     },
     "car_inflow_peak_ratio": {
@@ -409,6 +416,7 @@
       "assumptions": [],
       "reason": "No air operation, vertiport, route, operator or approved experiment exists for this package.",
       "pilot_target_min": 0.85,
+      "pilot_target_operator": ">=",
       "pilot_target_scale": "0-1 only if approved"
     },
     "multimodal_simulation_calibration_status": {
