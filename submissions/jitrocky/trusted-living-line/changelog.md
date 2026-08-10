@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v0.9 - 2026-08-10
+
+- Migrated the ready package to the organizer's `persisted-self-check-v1` contract after PR #1602 CI introduced the blocking readiness-evidence requirement.
+- Persisted `ok=true`, `can_enter_formal_review=true`, and pass/blocking records for deterministic validation, spatial review, visual packaging, and professional evidence; no design narrative, drawings, figures, geometry, metrics, sources, or assumptions were changed.
+
 ## v0.8 - 2026-08-10
 
 - Aligned every provisional-boundary statement with repository review policy: disclosed provisional geometry may support content scoring, while remaining prohibited as an official redline, precise-area or statutory-control basis, ownership evidence, approval basis, or engineering conclusion.
