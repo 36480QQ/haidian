@@ -6,27 +6,27 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle for making the Centennial Jing-Zhang AI Innovation Belt a city-scale testbed for accountable human–AI coexistence; V0.1 uses provisional geometry for concept development and intake checks only."
+summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle for accountable human–AI coexistence; V0.2 adds global cases, Jing-Zhang historical evidence and a seven-interface protocol while retaining provisional geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-<!-- SCAFFOLD-DRAFT: this V0.1 English counterpart is an aligned outline, not a review-ready translation or final deliverable. -->
+<!-- SCAFFOLD-DRAFT: this V0.2 English counterpart is an aligned outline, not a review-ready translation or final deliverable. -->
 
 # THE JINGZHANG PROTOCOL / 京张协议
 
 **A Civic Protocol for Human–AI Coevolution**  
 **How a city learns to live with AI**
 
-## V0.1 Core Proposition
+## V0.2 Core Proposition
 
 The proposal treats an AI city as more than a collection of devices, screens and demonstrations. It imagines the Centennial Jing-Zhang AI Innovation Belt as a visible, testable, contestable, reversible and continuously updated civic protocol: AI is built here, evaluated before entering society, used in ordinary life to create public value, and revised through evidence from operation and failure. Every institutional, spatial and operational move remains a conceptual recommendation for further planning, engineering, legal, ethical and public review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-The railway history is not reduced to a visual track metaphor. Jing-Zhang engineering once asked how a universal machine system could become locally mastered infrastructure in geography. The AI-era question is how machine intelligence can enter society while remaining accountable to human values, rights and public benefit. V0.1 therefore links “engineering capability into geography” with “accountable intelligence into society”; authoritative historical evidence must be added before this becomes a formal claim.
+The railway history is not reduced to a visual track metaphor. China’s National Railway Administration describes the 1905–1909 Jing-Zhang Railway as the first state-owned trunk railway surveyed, designed, built and managed by Chinese people. Beijing’s railway heritage park restores parts of the former alignment, preserves Qinghuayuan Station and reconnects spaces once divided by the railway [source:HIST-JINGZHANG-RAILWAY] [source:HIST-JINGZHANG-PARK]. The proposal translates that history from “engineering capability into geography” to “accountable, interoperable intelligence into society.” The latter phrase is a design thesis, not a historical quotation.
 
 The operating loop overlays the official Three Zones and Two Wings: Zhongzhiyuan emphasizes **BUILD**, the Beijing AI Origin Community emphasizes **TEST**, Dazhongsi emphasizes **LIVE**, and the whole belt closes a **LEARN / UPDATE** loop through the two wings. It does not create a new statutory zoning system [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_level_scope_framework].
 
-Two civic infrastructures organize the loop. The **AI City API / Jing-Zhang AI Civic Protocol** is a proposed interface for scenario registration, data cards, evaluation gates, human review, public status, complaints and appeals, stop/rollback mechanisms and version logs. The **Jing-Zhang AI Constitution** proposes human dignity, public benefit, transparency, data minimization, accountable human review, accessibility, non-digital fallback, reversible trials and open learning. Neither is an enacted law or a claim that a centralized platform already exists.
+Two civic infrastructures organize the loop. The **AI City API / Jing-Zhang AI Civic Protocol** is neither a single central platform nor merely a project-approval gate; it is a minimum public contract that different agencies, firms and service operators can implement. The **Jing-Zhang AI Constitution** is not a one-off declaration but a versioned civic compact revised through scenarios, participation, professional review and operational evidence. Together they define seven interfaces: identity/provenance; data purpose/retention; capability/limitations; human authority/fallback; appeal/redress; interoperability/portability; and versioning/pause/retirement/public memory. Neither is enacted law, regulatory approval or an existing platform.
 
 ## Design Basis and Source List
 
@@ -44,7 +44,20 @@ The Coordinated Research Area carries industry and future-city strategy; the Ove
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The ecosystem is organized around a versioned path from model, agent, robotics, compute and evaluation tools to bounded testing, daily use and public learning. The Three Zones and Two Wings provide the official spatial framework; the protocol adds gates, evidence and feedback between them. V0.2 must verify 5–8 global ecosystem cases from primary sources and extract a specific transferable mechanism from each rather than copying place-branding or unverified performance claims [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+The ecosystem is organized around a versioned path from model, agent, robotics, compute and evaluation tools to bounded testing, daily use and public learning. The Three Zones and Two Wings provide the official spatial framework; the protocol adds public interfaces, evidence and feedback between them [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+V0.2 uses six deliberately different case types rather than treating them as a like-for-like ranking:
+
+| Case | Transferable mechanism | Translation and limit |
+| --- | --- | --- |
+| Singapore Punggol Digital District ODP | Integrated physical/digital district backbone, API access and test environment | Federated service interface between BUILD and TEST; platform efficiency does not establish civic legitimacy [source:CASE-PUNGGOL-ODP] |
+| EU AI Testing and Experimentation Facilities | Lab-to-real integration, validation and end-user-defined scenarios, protocols and metrics | A staged testing ladder; testing is not regulatory approval [source:CASE-EU-TEF] |
+| Helsinki and Amsterdam algorithm registers | Publicly readable information about city AI/algorithms and feedback/contact routes | System cards, accountable contacts and correction routes; disclosure alone is not audit or appeal [source:CASE-HELSINKI-AI-REGISTER] [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] |
+| Montréal Declaration for Responsible AI | Scenario-based citizen and expert co-construction of principles | A method for revising the civic compact; principles still need owners, cards and version logs [source:CASE-MONTREAL-DECLARATION] |
+| NIST AI RMF | Continuous Govern—Map—Measure—Manage lifecycle, feedback and decommissioning | Continuous monitoring, review, pause and retirement; not a planning standard or legal approval [source:CASE-NIST-AI-RMF] |
+| Toronto Quayside / Sidewalk Toronto | Open standards, data-minimization and public-interest governance were explicit project concerns before the partnership ended | Define public authority, interoperability, social licence and exit before technical lock-in; no claim that governance controversy alone caused withdrawal [source:CASE-SIDEWALK-QUAYSIDE] |
+
+The resulting position is a civic constitution plus a federated interoperability layer, not another validation pipeline or common traffic-light display. BUILD publishes capability contracts; TEST produces public trial protocol cards; LIVE implements service-interface rights; LEARN/UPDATE revises and retires rules in public. Passing a test is never represented as government approval.
 
 The identity combines a railway switch, a version-control branch and a civic protocol bracket. It should remain bilingual, geometric, non-corporate and reproducible with rights-cleared typography.
 
@@ -66,7 +79,7 @@ The two wings connect services, capital, professional support, scenario access a
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-V0.1 registers twelve scenarios and at least five user groups. Every next-stage card must specify the user need, spatial precondition, permitted and prohibited data, human-review point, operator, success metric, failure condition, incident/appeal route, rollback rule, source and geometry/visual mapping.
+V0.2 registers twelve scenarios and at least five user groups. Every next-stage card must specify the user need, spatial precondition, permitted and prohibited data, human-review point, operator, success metric, failure condition, incident/appeal route, rollback rule, source and geometry/visual mapping.
 
 | ID | Scenario | Lifecycle / carrier | Primary safeguard |
 | --- | --- | --- | --- |
@@ -87,7 +100,7 @@ Initial personas include open-source developers, early-stage teams, established 
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The formal package must use a complete, non-overlapping land-use partition and distinguish retained, renovated, demolished, new-build and pending-confirmation objects. V0.1 does not assert parcel-level actions, heights or development intensity because the required controls, ownership and existing-building evidence are missing [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish].
+The formal package must use a complete, non-overlapping land-use partition and distinguish retained, renovated, demolished, new-build and pending-confirmation objects. V0.2 does not assert parcel-level actions, heights or development intensity because the required controls, ownership and existing-building evidence are missing [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -97,7 +110,7 @@ The concept prioritizes station integration, walking/cycling continuity, accessi
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The railway heritage park is the civic interface rather than a technology showroom. V0.1 proposes three linked AI landmarks: **Protocol Station Zero** in the AI Origin Community, where people can understand AI identity, data use, rights, human review and appeals; the **Civic AI Test Yard** in Zhongzhiyuan, where evaluation and stop mechanisms are publicly legible; and the **Jing-Zhang Commons Ledger** along the railway heritage public-space system, where contributors, protocol versions, incidents, corrections and lessons are recorded. Exact sites, scale, form and heritage relationships remain pending professional evidence [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
+The railway heritage park is the civic interface rather than a technology showroom. V0.2 proposes three linked AI landmarks: **Protocol Station Zero** in the AI Origin Community, where people can understand AI identity, data use, rights, human review and appeals; the **Civic AI Test Yard** in Zhongzhiyuan, where evaluation and stop mechanisms are publicly legible; and the **Jing-Zhang Commons Ledger** along the railway heritage public-space system, where contributors, protocol versions, incidents, corrections and lessons are recorded. Exact sites, scale, form and heritage relationships remain pending professional evidence [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -111,7 +124,7 @@ Known spatial metrics must be recomputed from the GeoJSON in EPSG:4548; missing 
 
 ## Risk, Copyright, and Compliance
 
-This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.1 remains a scaffold and must not be submitted as review-ready [depth:risk_missing_data] [source:SITE-PACKAGE].
+This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.2 remains a scaffold and must not be submitted as review-ready [depth:risk_missing_data] [source:SITE-PACKAGE].
 
 ## References
 
