@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d538f160944824d1bf873e1ce010ad5e697c4a0c8b01ef3f10bc3690eac73f5b"
+      "sha256": "056074feee6619a62cb9ce4e6442a7c047399648c9644a1f1a186253cf03e1df"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9d3c47c5b780c9ceec2b22fb0a87cff5a75b02d954f8f99566d05b049d071f31"
+      "sha256": "3d8611858427bcc35e934428c5bdc340daf4cdc1d7f8857dd792bc5a1e042be7"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "11a5dcf07db12c90a4fc08f6f554e3f807ab1f3413f330029de8d61a864d3b78"
     },
     {
       "path": "standard_matrix.json",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "d09eab146395e8bd414b4a37aee53e430e368b16facd94c5d5d010a236a06138"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "57e8129a21bff8a7103151f99c1df4c2d816dd8c7c73b5886382236ec54001ee"
+      "sha256": "ab37d7a0f01c97d13ba4d06c05ffab3e7782e844e89fbff8fc93927406e5c5ce"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6906e12742b49974c5cb90572ddb209da348c44e9e394bcc14aca5e9d8b0f884"
+      "sha256": "a27eab8e573565a5c973e73004bfb836a5c0588dac681fb080fe94a128ece62c"
     },
     {
       "path": "visual/index.html",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6aecf367bb3d7a82de0e8a556bdcf2c1285bff3a047126da6c8398d300fb3eaa"
+      "sha256": "c3b5cce8b48bb3584c2eeea4956e4f9a8846c59ab643601a246c0be9a4cdbfc7"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -209,7 +209,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "low"
   },
   "next_actions": [
     {
