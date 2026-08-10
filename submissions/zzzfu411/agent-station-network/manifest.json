@@ -106,7 +106,7 @@
     {
       "path": "changelog.md",
       "role": "supporting",
-      "sha256": "6591601e18392c0a86c616033f5498aef135021bac2264d16ae74c7afc31f513"
+      "sha256": "bd5ab02a19ac2aec9ee4d0f9d43b4aefeaa3550772b068b47fb16e9ca298d93f"
     },
     {
       "path": "compliance_matrix.json",
@@ -256,7 +256,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5f9e9a37046c5114b453d595a354aced3745fb2da1851ff8a9314a76228d771c"
+      "sha256": "f8cc66c7fb3251c5fc6e5f61283156b1916d5d08f43b66b547e6e9b5893301fb"
     },
     {
       "path": "sources.json",
@@ -294,6 +294,6 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   }
 }

@@ -42,6 +42,13 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Removed prejudging scoring language; provisional geometry described as concept/display/content-review only; maintainer decides eligibility and scoring."
+    },
+    {
+      "check_id": "MANIFEST_DATA_CONFIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "validation_claim.data_confidence set to medium to match provisional geometry and metrics.site_area_sqm confidence."
     }
   ]
 }

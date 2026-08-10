@@ -16,3 +16,10 @@
 - 按 PR review 修改：删除“组织方数据缺口不阻断内容评分”等预判性表述
 - 改为中性事实：官方 polygon 未提供；几何仅用于概念/展示/内容审查；正式资料到后整包复算；资格与评分由维护者决定
 - 同步双语 HTML 与 manifest 哈希
+
+## v1.3 - 2026-08-10
+
+- 按 PR review：将 manifest.validation_claim.data_confidence 从 high 调整为 medium
+- 与 provisional site_boundary / key_areas / metrics.site_area_sqm 的 medium 置信度对齐
+- 刷新 manifest 哈希；不伪造 official geometry
+
