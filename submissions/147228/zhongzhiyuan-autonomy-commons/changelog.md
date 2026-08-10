@@ -1,5 +1,24 @@
 # 方案迭代记录
 
+## v3.8 - 2026-08-10
+
+- 新增公共路线连续性契约、示例记录、无依赖 checker 和 10 个确定性 fixture；四类复核者、非 AI 等价路线、caution 限值和重开/两轮清除规则均保持为设计闸门，不升级为现场绩效或运营许可。
+- 新增 P1—P9 用户/责任角色矩阵、三项公共地标目录、四季活动与长期运营节奏、14 行场景运营合同及其 fail-closed checker；正文明确区分 12 张 AV 场景卡与 14 行运营矩阵。
+- 新增任务书 63 项逐条覆盖与五条勘误记录；修复 Autonomy 包内残留的 Open Pulse 身份文字，使身份不变量回到普通路线连续线、三座试验庭和两条人本安全弧。
+- 将未随包提供独立复算输入的历史 OSM 计数与 resilience v1.3 模型值降为 `unknown`/`not_applicable`，避免历史数字被误读为当前 Autonomy 已知事实。
+
+## v3.7 - 2026-08-10
+
+- 增加包根 `risk.json`，把八个标准风险维度、缓解动作与人工复核入口结构化；明确它不是现场风险评估、许可或运营安全结论。
+- 修复任务书成果唯一索引中的断头章节锚点、`Token Pulse` 概念漂移和风热健康验证计划的错误包身份；所有锚点现在回到本包现有正文。
+- 同步双语正文，保留自动驾驶 tabletop 的 `not_authorized_not_run`、现场基线 unknown 和 provisional 几何边界。
+
+## v3.6 - 2026-08-10
+
+- 在中英文自动驾驶设计依据入口前置六层证据等级表，把任务/监管路径、临时空间、包内读数、合成回放、论文方法和阻断责任记录分开。
+- 为每层同时列出可支持与禁用结论，明确 `known`、`design_target`、`unknown`、`blocked` 和本地 PASS 不代表现场绩效、专业批准、P1/P2 授权或官方评分。
+- 重新生成双语 proposal report，并刷新 manifest 与清权台账哈希；不改变 provisional geometry、自动驾驶指标、运行边界或实施承诺。
+
 ## v3.5 - 2026-08-10
 
 - Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.

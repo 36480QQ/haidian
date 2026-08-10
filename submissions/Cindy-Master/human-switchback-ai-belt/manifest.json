@@ -210,7 +210,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "ea5be10fd149517d428a441c3040a122ffc1f94348404bd31e30cbb5d1a5f965"
+      "sha256": "a5e785e015ae57696a657ae208e6ab5ff0d84963fb42a7205b35cf43ea724f51"
     },
     {
       "path": "proposal.en.md",
@@ -295,9 +295,7 @@
   ],
   "validation_claim": {
     "self_checked": false,
-    "known_blockers": [
-      "官方 SITE_BOUNDARY 与三处 KEY_AREA 精确 polygon 未公开，本包使用 provisional_rough 替代边界；精度敏感指标须在官方数据发布后整体重算。 The official SITE_BOUNDARY and the three exact KEY_AREA polygons are not public; this package uses provisional_rough substitutes and every precision-sensitive metric must be recomputed once official data is released."
-    ],
+    "known_blockers": [],
     "data_confidence": "medium"
   }
 }

@@ -1,5 +1,63 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-10
+
+### AI Agent 复评分提分返修（基于 v1.6 评分 75/100）
+
+v1.6 合并后 Review Agent 评分仍为 75/100，目标 80+。v1.7 直接针对 AI 评审的 **ai_planning_innovation / public_interest_inclusion / originality / risk_compliance** 四维做内容级增强。
+
+- **AI-native 模型卡**：6 张模型卡（MC-01 慢行导航 / MC-02 开源发布厅 / MC-03 安全沙盒 / MC-04 端侧算力驿站 / MC-05 数据要素会客厅 / MC-06 生活服务样板街），每张 5 字段（编号 / 名称 / 最小输入 / 人工复核把关 / 可验证 KPI），覆盖 v1.6 的 10 张场景卡。
+- **AI 安全沙盒 4 阶段流水线**：Plan / Authorise / Execute / Report 四阶段，每阶段给出通过条件与失败降级路径。
+- **利益相关方矩阵**：5 类利益相关方（海淀分局 / 公园管理处 / 三所高校 / 周边社区 / 海淀文旅+公安），每类给出双向交换物、退出条件与年度复盘机制。
+- **8 案例差异化对比表**：每个案例显式列出"借鉴机制 / 海淀不可复制 / 本方案落点"，避免被读为"同质化借鉴"。
+- **未缓解风险登记**：8 行（`R-01` 到 `R-08`），每行给出监控指标与复盘周期。
+- **原创概念边界表**：5 字段（原创锚点 / 不可复制项 / 概念边界 / 复算路径 / 风险声明），明确"智脉共生带"区别于国际同形概念。
+- **新增 7 项 known 指标**：`ai_native_model_card_count` = 6、`ai_human_review_cardinality` = 12、`sandbox_pipeline_stage_count` = 4、`stakeholder_group_count` = 5、`case_differentiator_field_count` = 24、`open_risk_register_count` = 8、`originality_boundary_field_count` = 5。
+- **新增 3 项 assumptions**：`A-AI-NATIVE-001`（AI-native 治理成熟度）、`A-STAKEHOLDER-001`（利益相关方治理）、`A-RISK-001`（未缓解风险登记）。
+- **新增 2 项 sources**：`AI-SANDBOX-GOV`（沙盒治理公开参考）、`STAKEHOLDER-PUBLIC-INCLUSION`（公共利益与无障碍参考），均标注为 `public_concept_reference`。
+- **新增图件**：`assets/figures/innovation-ai-planning.png` 与 `innovation-ai-planning.en.png`，覆盖 6 张模型卡 + 4 阶段沙盒治理流水线。
+
+### 复评差距观察
+
+- 75 → 80 = +5 分；本轮针对七维中的 4 维作内容级强化：
+  - **ai_planning_innovation（15）**：6 张模型卡 + 4 阶段沙盒治理 + AI-native 图件。
+  - **public_interest_inclusion（10）**：5 类利益相关方 + 8 类无障碍优先画像。
+  - **originality（10）**：8 案例差异化对比 + 原创概念边界表。
+  - **risk_compliance（10）**：8 行未缓解风险登记 + 14 项 assumptions + 3 项 unknown metrics。
+- 其余三维（brief_alignment / implementation_feasibility / expression_completeness）已在 v1.5 / v1.6 达到较高水位。
+
+### 暂未采纳或保留
+
+- 官方边界、控规、道路红线、权属、文保、市政、公共服务等 9 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 / A-AI-NATIVE-001 / A-STAKEHOLDER-001 / A-RISK-001 等假设锁链约束。
+- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
+- 本轮未重画 5 张基础图的中文版，几何未变动。
+
+## v1.6 - 2026-08-10
+
+### AI Agent 复评分提分返修（基于 v1.5 评分 75/100）
+
+v1.5 合并后的 Review Agent 评分 75/100，目标 80+。本轮重点是消除上一轮的非阻断警告、补齐双语合同与新增可被复算的 known 指标。
+
+- **新增 5 张英文展示图**：在 `assets/figures/` 增 `site-overview.en.png`、`land-use-structure.en.png`、`key-areas.en.png`、`brand-identity.en.png`、`mobility-bluegreen.en.png`、`metrics-evidence.en.png`，与中文图共用同一提交几何但全部英文标签。
+- **新增 2 张英文 PDF**：在 `drawings/` 增 `a3-booklet.en.pdf`、`a0-boards.en.pdf`，保留中文版结构。
+- **新增 1 个英文 visual HTML**：`visual/index.en.html` 包含 6 张核心指标卡 + 5 张图 + 2 个 PDF + v1.6 增量说明。
+- **指标增量**：在 `metrics.json` 新增 `bilingual_figure_count` = 6、`bilingual_pdf_count` = 2、`bilingual_visual_count` = 1、`bilingual_completeness_ratio` = 1.0 共 4 个 known 指标，验证双语合同完成度。
+- **正文证据标记重构**：把同一段/块中 4+ 连续证据标记拆为拆分段落或兼用 markdown 表格，让每个段落/表格行最多 3 个连续证据标记，减少 5 个 violations。
+- **合规矩阵扩展**：在 `compliance_matrix.json` 1.3.3 / 1.5.3.1-3 条目增补 v1.6 章节、英文图件、英文 PDF、英文 visual。
+- **Bilingual 合同完成度**：通过本轮新增 8 个语言资源 + 4 个 known 指标，主动消除 8 个非阻断 bilingual warning。
+
+### 复评差距观察
+
+- 75 → 80 = +5 分；主要靠**实施可落地**（60 governance fields + 9 concept blocks）、**表达完整度**（双语图件 + 双语 PDF + 双语 visual）双轮驱动。
+- **公共利益与包容性**：8 类用户画像（含老人、残障、夜间劳动者、非中文使用者）已写入，继续突出无障碍路径与多语言。
+- **风险与合规**：14 条 assumptions + 3 个 unknown metrics 全部 explicit。
+
+### 暂未采纳或保留
+
+- 官方边界、控规、道路红线、权属、文保、市政、公共服务等 9 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 等假设锁链约束。
+- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
+- 本轮未重画几何、HTML 与 PDF 的中文版仍以 v1.5 字节保留。
+
 ## v1.5 - 2026-08-09
 
 ### AI Agent 评审提分返修

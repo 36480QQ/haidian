@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以「双螺旋创新带」为总体概念：把百年京张铁路的自主创新史与面向全球的 AI 创新链编织成两条互相缠绕的城市 DNA 链，在京张遗址公园一带形成可体验、可运营、可复核的城市设计概念方案。全部空间成果基于公开与清权资料生成，官方边界补齐前以临时约束范围复算。"
+summary: "以「双螺旋创新带」为总体概念：把百年京张铁路的自主创新史与面向全球的 AI 创新链编织成两条互相缠绕的城市 DNA 链，并为每条链配上一组可复核的『电力碱基对』——AI 场景与能源供给一一配对，用电气工程视角（光储充、PUE、韧性自愈）把 AI 治理从口号落成可核验的城市基础设施。全部空间成果基于公开与清权资料生成，官方边界补齐前以临时约束范围复算。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walkability"]
 ---
@@ -17,7 +17,7 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE]。面向智能体的开源征集任务书（agent.1–agent.6）是本次方案六项任务的直接来源 [source:AGENT-TASKBOOK]。
 
-公开资料登记表区分了 formal 可用、背景、临时约束和待核查资料，方案只把 `usable_for_formal="yes"` 或另行清权的资料用于正式主张，背景与临时资料只作背景 [source:SOURCE-REGISTRY]。官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 精确红线尚未取得，本方案按场地包规则使用 `brief/site-package/geometry/provisional_boundaries.geojson` 作为临时约束范围，并在正文、图层、指标和自检中全程标注，待官方 polygon 发布后统一复算 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
+公开资料登记表区分了 formal 可用、背景、临时约束和待核查资料，方案只把 `usable_for_formal=“yes”` 或另行清权的资料用于正式主张，背景与临时资料只作背景 [source:SOURCE-REGISTRY]。官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 精确红线尚未取得，本方案按场地包规则使用 `brief/site-package/geometry/provisional_boundaries.geojson` 作为临时约束范围，并在正文、图层、指标和自检中全程标注，待官方 polygon 发布后统一复算 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
 
 ![方案总体区位与边界资料图](assets/figures/site-overview.png)
 
@@ -45,9 +45,15 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 
 对照全球 AI 创新生态，本方案研究并参考以下六类案例（概念级引用，不作投资或效果承诺）：美国硅谷的资本—人才—大学闭环、以色列特拉维夫的国防技术溢出与创业密集区、英国伦敦国王十字站的铁路遗产更新为知识街区、新加坡纬壹科技城的高密度研发社区、深圳南山的生产—研发—生活混合、杭州城西科创大走廊的走廊式创新组织 [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]。
 
+**区域协同机制（概念建议）。** 统筹研究范围不是孤立片区，创新带必须接入更大的创新网络才能兑现“世界级”定位。本方案建议建立“三区两翼 + 五向协同”的区域协同框架：三区（众智园、AI原点社区、大钟寺）与两翼（中关村科技服务翼、小月河场景赋能翼）向内形成创新回路；向外与中关村科学城（策源协同）、未来科学城（能源与基础设施实验协同）、怀柔科学城（大科学装置与基础研究协同）、北京经济技术开发区（智造与产业化协同）及京津冀协同发展（算力—能源—场景跨域联动）五向对接，具体协同机制（飞地孵化、算力共享、能源互济、活动联动）均为概念建议，待专业团队与主管部门深化 [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]。区域协同同时要求能源基础设施跨区统筹：创新带的配电网、储能与充电网络应纳入北京市新型电力系统与京津冀电力互济的总体布局，避免以街区为界的“孤岛式”能源建设 [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure]。
+
 ## 总体设计范围城市更新与控规深度城市设计
+![双螺旋空间结构图（含能源链 E链）](assets/figures/spatial-structure.png)
+
 
 总体设计范围要求达到控制性详细规划的城市设计深度。方案提出「一带双链三节点两翼」的总体结构：**一带**为京张遗址公园活力带，是历史与公共生活主轴；**双链**为文化螺旋链（西侧公园与文化用地序列）与创新螺旋链（东侧科研与产业用地序列），两条链在重点区节点互相咬合；**三节点**即三处重点区；**两翼**为中关村科技服务翼（要素全球化配置）与小月河场景赋能翼（AI 场景落地与活力城市） [source:OFFICIAL-ANNOUNCEMENT] [depth:land_use_layout]。
+
+**电力碱基对机制（本方案的独有机制点，电气工程视角）。** 京张铁路修建时，詹天佑坚持统一标准轨距（1435 毫米），使铁路能与全国路网互联互通、避免“窄轨孤岛”；这套“承认约束、把标准留在空间里让人复核”的百年承诺，为 AI 时代提供直接机制原型。本方案把这一史实精神与电气工程结合，提出**电力碱基对（Power Base-Pair）**规则：双螺旋上的每一个 AI 场景节点，都必须与一个可定位、可核验的能源供给单元配对，形成“AI 算力 × 能源供给”的碱基对；任何场景要接入创新带，须先通过四项可复核的电力校准——（1）**能效底线**：算力与设施按 PUE（电能利用效率）与单位算力能耗设阈值，不达标场景不进入开放运营；（2）**绿电优先**：优先接入分布式光伏、储能与绿电交易，绿电比例作为运营硬指标；（3）**韧性自愈**：配电网采用微电网与孤岛运行能力设计，自愈恢复时间、供电可用率可测可查；（4）**可退出**：AI 服务保留人工通道与离线/离网替代，避免“智能”挤占基本公共服务 [source:AGENT-TASKBOOK] [depth:municipal_new_infrastructure]。该机制把“AI 治理全球话语权”从口号转译为可复核的城市电力基础设施，并通过 `report/narrative.md` 深化附件一（12 张场景卡的数据字段/失败阈值/退出条件）、`risk.json` 的 technology_maturity 维度与 `metrics.json` 的能源指标共同构成证据链 [source:AGENT-TASKBOOK] [metric:ai_scenario_card_count]。
 
 用地布局采用 57 个无缝隙、无重叠的用地单元表达，科研用地（0802）、文化用地（0803）与教育用地（0804）沿双链组织，公园绿地（1401）与防护绿地（1402）构成蓝绿骨架，商业服务业用地（05）集中于大钟寺与南门户，居住与社区服务用地（0701/0702）在东西两侧形成生活圈，东北角预留留白用地（16）作为未来 AI 创新空间 [data:geometry/land_use.geojson#LU-001] [metric:land_use_area_by_code] [depth:development_intensity_controls]。
 
@@ -68,12 +74,26 @@ scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "ai-traffic-walka
 三处重点区的边界为临时约束范围，定位与空间动作为概念建议，供专业团队深化，不构成法定规划或拆改留结论 [depth:three_key_area_detailed_design]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
+![12 张 AI 场景卡](assets/figures/scenario-cards.png)
+
 
 AI 创新生态由四类空间共同承载：研发测试空间（众智园）、开源策源空间（原点社区）、展贸体验空间（大钟寺）与渗透日常的 AI 服务场景（社区、公园、交通） [source:AGENT-TASKBOOK] [depth:three_key_area_detailed_design]。
 
 方案提出五类用户画像：开源开发者、初创团队、头部企业访客、周边居民、高校师生。每类画像对应明确的空间响应与自检边界，例如不采集个人行为轨迹、算力数据服务另行授权、企业标识案例须清权、不将居民画像用于商业推荐、校园与科研成果数据需授权 [source:AGENT-TASKBOOK] [metric:persona_count]。
 
-方案形成不少于 10 张 AI 场景卡，全部映射到空间节点  [metric:scenario_node_count]：
+**民生痛点锚点（公共利益与包容性设计的驱动）。** 每个 AI 场景必须回答一个具体的公共需求，而不是为技术而技术；弱势群体保障写入空间响应与指标：
+
+| 民生痛点 | 对应场景/空间响应 | 弱势群体保障 |
+| --- | --- | --- |
+| 通勤堵（京张沿线慢行断点） | 场景 05 京张时光慢行线、JZ-01 慢行断点缝合 | 无障碍导视、盲道/坡道连续 |
+| 就医/看护难（社区与人才居住） | 场景 09 AI生活服务样板街 | 保留人工服务窗口、AI 服务可退出 |
+| 办事繁（企业与人才政务、投融资） | 场景 06 大钟寺AI路演客厅、场景 08 近校成果转化街 | 线下服务点 + 离线替代 |
+| 数字排斥（老年人、非数字用户） | 场景 09/11 的人工通道与大字导视 | 人工通道可用率、离线替代可用率 |
+| 商户更新扰动 | 城市更新过渡期安置与经营连续性保障 | 更新期商户留存率、扰动投诉数 |
+
+该锚点表与 `report/narrative.md` 深化附件四的包容性评估（儿童、老年人、残障、低收入、非数字用户、既有商户）及 `risk.json` 的 equity_inclusion 维度交叉印证 [depth:risk_missing_data]。
+
+方案形成 12 张 AI 场景卡，全部映射到空间节点 [metric:scenario_node_count] [metric:ai_scenario_card_count]：
 
 | 场景卡 | 空间载体 | 设计说明 |
 | --- | --- | --- |
@@ -86,7 +106,9 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 | 07 清河低碳创新廊 | 众智园临清河界面  | 绿色空间、雨洪、步行骑行与 AI 展示结合的园区公共客厅 |
 | 08 近校成果转化街 | 北京AI原点社区  | 组织孵化、展示、法务、知识产权与投融资服务 |
 | 09 AI生活服务样板街 | 中段社区服务带  | 将医疗、教育、法律与生活服务 AI+ 场景落到可运营的小尺度街区 |
-| 10 全球AI朝圣周路线 | 一带公共空间系统  | 从遗址文化、开源社区、产业展示到国际路演的可步行、可传播体验路线 |
+| 10 全球AI朝圣周路线 | 一带公共空间系统 | 从遗址文化、开源社区、产业展示到国际路演的可步行、可传播体验路线 |
+| 11 光储充能源驿站 | 三处重点区与站点接驳停车 | 分布式光伏 + 储能 + V2G 充电一体化，作为电力碱基对的公共能源节点，PUE 与绿电比例可视化 |
+| 12 能源数字孪生站 | 众智园能源调度中心（建议性点位） | 把发电、储能、充电与碳排放组织为可实时复核的“能源数据铁路”，支撑低碳算力与公众科普 |
 
 方案提出三个产业测试验证场景（均需另行批准后实施）：众智园自主模型安全评测沙盒、京张遗址公园慢行与低俗速接驳的 AI 交通试点、中段社区 AI 公共服务试点。所有场景遵守数据最小化、可解释与人工复核原则，不得输出未经授权的个人画像，不得把测试场景写成已批准运营 [metric:test_scenario_count] [source:AGENT-TASKBOOK]。
 
@@ -104,7 +126,22 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 
 市政与新型基础设施覆盖 AI 产业服务设施、创新服务平台、人才生活服务、分布式能源、端侧算力与传统市政融合 [depth:municipal_new_infrastructure]。清河与小月河作为蓝线约束纳入蓝绿系统；管线、能源、排水、防洪、消防等工程条件列为正式深化前置条件 [data:geometry/constraints.geojson#CONSTRAINT-002] [data:geometry/constraints.geojson#CONSTRAINT-003]。
 
+**智慧能源与新型电力基础设施（电气工程视角的概念方案）。** 本方案以“电力碱基对”机制为纲，提出创新带能源系统四类组成，均基于成熟或试点阶段技术，属概念建议，正式标定待专业深化：
+
+| 组成 | 空间落点 | 技术可行性 | 可核验指标（候选） |
+| --- | --- | --- | --- |
+| 分布式光伏 | 新建/留白地块屋顶、连廊与车棚（遗址公园本体不加装，遵守文保与风貌约束） [data:geometry/land_use.geojson#LU-001] | 成熟：分布式光伏与 BIPV 已规模化应用 | 自发电占比、单位面积发电量（kWh/m²·a） |
+| 储能与微电网 | 众智园留白地块、大钟寺能源站、南门户智算中心 [data:geometry/buildings.geojson#BLDG-001] | 成熟：电化学储能与微电网工程广泛落地 | 储能容量（MWh）、孤岛运行时长、自愈恢复时间 |
+| V2G 智能充电 | 三处重点区与轨道站点接驳停车 [data:geometry/public_space.geojson#PUBLIC-001] | 试点推进：车网互动在示范城市开展 | V2G 参与率、充放电响应时间 |
+| 能源数字孪生 | 众智园能源调度中心（建议性点位） [data:geometry/buildings.geojson#BLDG-001] | 成熟度中：数字孪生已用于园区能源管理 | 数据更新频率、预测准确率、碳排放实时可视化 |
+
+该能源系统直接支撑端侧算力与低碳算力场景：端侧算力驿站以“光储充一体 + 低 PUE 设计”减少对主网冲击，PUE、绿电比例、单位算力能耗作为开放运营的准入阈值；能源数字孪生把整条创新带的发电、储能、充电与碳排放组织为一条可实时复核的“能源数据铁路”，与京张铁路“把标准留在空间里让人复核”的历史承诺呼应 [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure]。所有能源设施布局须遵守文保、蓝线、防洪与风貌约束；涉及电网接入、电力市场与绿电交易的内容均列为正式深化前置条件，不构成工程可行性或实施承诺 [depth:risk_missing_data]。
+
 ## 蓝绿空间、公共空间与城市风貌
+![品牌识别与 Logo 方向](assets/figures/brand-identity.png)
+
+![三处 AI 朝圣地标](assets/figures/landmarks.png)
+
 
 蓝绿系统以京张遗址公园活力带为骨架，统筹清河、小月河、公园绿地与广场用地，形成南北贯通、东西连通的慢行与绿色空间体系 [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。公共空间以两处广场用地单元（南门户广场、大钟寺站东广场）与公园节点共同承载日常交往与 AI 场景体验 [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_ratio]。
 
@@ -126,6 +163,16 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 | JZ-08 | 全球AI活动周公共路线 | 运营/品牌 | 活动审批、人流安全、国际传播合规 [data:geometry/phasing.geojson#PHASE-002] |
 
 分期与征集周期区分：征集是提交成果的时间要求，实施分期是城市更新路径。方案分三期——一期（约 396 公顷）先行缝合京张公园带与三区核心，二期（约 284 公顷）推进重点区整体更新，三期（约 462 公顷）完善全域框架 [data:geometry/phasing.geojson#PHASE-001] [metric:phasing_area_sqm] [depth:phasing_implementation]。轻量设施、运营活动与服务平台可先行启动；正式控规、市政、交通与权属条件未确认前，不作出工程可行性或实施承诺。
+
+**开发强度情景假设（控规缺失下的可实施性框架）。** 官方容积率、建筑高度与建筑密度缺失，本方案不伪造精确值，而提供三档情景供专业团队与主管部门对标：低强度情景（现状容积率 1.0–1.5，以保留与轻量更新为主）、中强度情景（1.5–2.5，三区核心适度增量）、高强度情景（2.5–3.5，依托轨道站点高强度 TOD）。三档情景均保持蓝绿与公共空间比例、建筑基底图层不变，仅改变楼层层数与建筑面积口径；正式控规发布后按官方条件校准，不以任何一档作为审定结论 [depth:development_intensity_controls] [metric:floor_area_ratio]。
+
+**试点项目主体、时序与可核验指标。** 为提升可实施性，一期三个试点明确建议性实施主体与可核验指标（均为概念建议，不构成承诺）：
+
+| 试点 | 建议性实施主体 | 启动条件 | 可核验指标（候选） |
+| --- | --- | --- | --- |
+| 端侧算力与光储充驿站（JZ-05） | 区属国企 + 电网企业 + 算力运营商联合体 | 配电网接入方案、电力市场规则明确 | PUE、绿电比例、自发电占比、自愈恢复时间 |
+| 京张公园慢行断点缝合（JZ-01） | 区城管/园林部门 + 社区参与 | 道路红线、桥下空间、交通组织复核 | 慢行连通率、断点消除数、无障碍达标率 |
+| 中段 AI 生活服务样板街（JZ-07） | 街道办 + 社区商业运营方 + 科技服务商 | 首层业态、数据治理边界、商户参与协议 | 商户留存率、人工通道可用率、居民满意度 |
 
 ## 指标体系、面积复算与合规矩阵
 
