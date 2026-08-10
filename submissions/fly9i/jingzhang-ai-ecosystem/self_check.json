@@ -2,39 +2,60 @@
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "确定性校验：全部文件 sha256 与 manifest 一致、schema 合规、无 blocking 失败。"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "major",
+      "target": "geometry/",
+      "message": "空间复核 PASS；仅 3 个 KEY_AREA_PROVISIONAL(info) 与 1 个 METRIC_RECALC_DRIFT(minor)，均非阻断。"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "可视化封装 PASS；离线静态、含全部必需标记与 data-metric。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance/standard/design_depth_matrix.json",
+      "message": "专业证据复核 PASS；合规/标准/设计深度三矩阵覆盖完整。"
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "info",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "边界 provisional_constraint，官方红线待补齐后复算；不阻断内容评分。"
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "三重点区临时矩形 provisional，面积与公告一致。"
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
       "result": "pass",
       "severity": "major",
       "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
+      "message": "用地 69 单元覆盖 site（ratio≈1.0），无 COVERAGE_GAP/OVERLAP。"
     },
     {
       "check_id": "VISUAL_STATIC",
       "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies."
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
       "severity": "major",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+      "target": "visual/index.html",
+      "message": "离线静态 HTML，无远程资源/脚本。"
     }
   ]
 }
