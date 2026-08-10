@@ -44,6 +44,14 @@
       "usage": "Derivation, limits and replacement procedure for provisional geometry."
     },
     {
+      "id": "ISSUE-1029",
+      "url": "https://github.com/open-city-ai/haidian/issues/1029",
+      "source_type": "repository_public_reference",
+      "publisher": "open-city-ai/haidian community",
+      "accessed": "2026-08-11",
+      "usage": "Publicly reproducible disclosure that the provisional PROV-KEY-003 centroid is about 2.26 km from Dazhongsi station and near Beijing North Railway Station; used as a limitation, never as official geometry."
+    },
+    {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
@@ -150,6 +158,16 @@
       "publisher": "Beijing Municipal Commission of Planning and Natural Resources",
       "accessed": "2026-08-11",
       "usage": "Railway-heritage park and urban-connection background."
+    },
+    {
+      "source_id": "OSM-CONTEXT-20260811",
+      "title": "OpenStreetMap context data and Nominatim station anchors",
+      "url": "https://www.openstreetmap.org/copyright",
+      "accessed_at": "2026-08-11",
+      "source_type": "public_open_data",
+      "license": "ODbL 1.0",
+      "usage": "Small-area major-road context and five station anchors rendered as low-contrast background; not used as official project boundaries, zoning, engineering geometry or statutory evidence.",
+      "copyright_note": "© OpenStreetMap contributors; attribution appears on every map figure and in the PDF source footer."
     }
   ]
 }

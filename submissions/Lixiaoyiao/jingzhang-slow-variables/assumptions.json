@@ -14,6 +14,12 @@
       "impact": "All derived maps and area metrics must be regenerated when official polygons are released."
     },
     {
+      "id": "A-KEY003-OFFSET-001",
+      "status": "provisional",
+      "statement": "The repository provisional polygon named Dazhongsi AI Industry Cluster has a centroid near Beijing North Railway Station, about 2.26 km from Dazhongsi metro station, as documented in public Issue #1029.",
+      "impact": "The polygon is retained without an invented relocation, but all Dazhongsi spatial moves are directional concepts only; official key-area geometry must trigger recalculation of geometry, metrics, figures, evidence matrices and bilingual narrative anchors."
+    },
+    {
       "id": "A-BUILDING-001",
       "status": "pending_professional_confirmation",
       "statement": "No cleared building survey, structural condition, use, age or ownership dataset is available.",
