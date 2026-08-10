@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fdcf2b2c7fc19d5f86a4bc76dbc1f22aadd214e016885a4dd6099e6049c8b912"
+      "sha256": "30ade6f7207c26ec631f6445b922fd98ac528adbcd4bc45480e52339e4b9fb54"
     },
     {
       "path": "agent.json",
@@ -48,7 +48,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "b81b9f74424ec0ede4037fa1cb9bbe34b5db4d93bff036a91c10a77892621823"
     },
     {
       "path": "self_check.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5997ab1ec6964241540bac7f41fb9489d0e3bd895202bc8b3f309c27831523c5"
+      "sha256": "653b75b01ff9561b04ab58937fdc2c6c4505c579f6b1083a01b333bdcc88ab42"
     },
     {
       "path": "report/narrative.md",
@@ -98,21 +98,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9a47f8118d806d8d573454c824f7a334f9d3eecfc8caaa97e5e51a2c3a6ee1a5"
+      "sha256": "bd6ef580f9bf3e2c1a4de45bb3f8ad64f414cd977e59d56e5c7e3f6345482ccf"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "71bfd7b2bb5444cfa4c96bf6118859bf49f80d3f499421e47afae042723ceef4"
+      "sha256": "8fc6588c16eec12c58d82282f5e911408854873347c9382ec9a20b4716dd88d4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "28daed4bf1db5eb0a81016b96b2d07179e43a11e2aa03e058cef787d8fcd6146"
+      "sha256": "69cb79fcefbce59eb4f6ec99553d86c9fb6235cda6bfda72e667dafc564f7003"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b06969c802c86300e87e8168b82d53f3f37cf02c7f54463cf010e01451ee9fb2"
+      "sha256": "2080e4d221c514b995c6fa3ca41876d2f13331eda4d3619c16418f867c6f2bec"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,14 +217,14 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e1db69abef1a2b8436c06aec8c04ac0004ebd7b8cb7e4ee6f4da341e3e4ed03d"
+      "sha256": "fbe837a10d811198f439398e3aa0ca054a308c09da1bb8c7520d3bfc69be3b28"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "6d473be1d1d77e96751b5a374e8f809586687e591d7b4826692b1089720f57dc"
+      "sha256": "57174167a0a47674b4bd6a5af89f961ccbb3b52a231ef0e567b0fe7052589b6a"
     },
     {
       "path": "assets/figures/switchback-logo.svg",
@@ -279,7 +279,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f9507679a813b2baa0718dc248d19103b277e30006d6aa51c2e26375af606909"
+      "sha256": "d29c1aecdf02723146c92e01d58468c7fd12dc69e08f6c320ca0cdcb0cf752da"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -287,7 +287,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "761a0e7ead231d1f6ababf065a09593e8613d989b0580af6f3383335545c7426"
+      "sha256": "77680e2ef234b6ae1649af7bffbdb0d6f7aa3b815655f68fbe438efd6f55377a"
     },
     {
       "path": "visual/index.en.html",
@@ -295,7 +295,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "32344b3e2a67f4f41a350cc60d40c3c6b7da6acf0730587b2f5f84bfbe0691d4"
+      "sha256": "ccdc64f7fb64061ae4277ed7f41fe5222e6c26204f17d0ca105af7eca7cd9058"
     },
     {
       "path": "assets/figures/existing-diagnosis.png",
@@ -362,6 +362,13 @@
       "role": "risk",
       "required": false,
       "sha256": "44cf8a61bb1ad0e8aa415ade70b03bbcc7c16f9cfea6a6c2f4859a16ea3c15d2"
+    },
+    {
+      "path": "visual/assets/switchback-protocol.json",
+      "role": "visual_asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "9e7dab1262122f2b12df8af08759e735a4c2975f91e87bb559a931fce98dafac"
     }
   ],
   "validation_claim": {

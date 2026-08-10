@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-10
+
+社区协作与格式修正：
+
+- 采用同行开源的「折返协议 Switchback Protocol v1.0」（Issue #1119，CC-BY-4.0，致谢 chucky1102/人字线 RENLINE）作为 12 张场景卡的统一运营合约：三色状态、时限目标（真人接管≤5分钟等设计目标值）、90 天公开复审、量化触发与恢复、三级留痕档案；改写后的机器可读版见 visual/assets/switchback-protocol.json，sources.json 登记为 SWITCHBACK-PROTOCOL。
+- 修复 Issue #1254 同类隐患的说明：本方案用地分区全程在 EPSG:4548 投影面内切分、仅在末端转回 EPSG:4326，相邻单元共享顶点逐一相同，无纬线弦差伪重叠。
+- 参考资料章节格式修正：复核命令移出 bullet 列表（在 PR #545 修复版评分器下本包 8 pass / 0 needs-work）。
+
+
 ## v1.4 - 2026-08-08
 
 公共价值与风险强化：

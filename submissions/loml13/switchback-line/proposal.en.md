@@ -162,6 +162,18 @@ Each card lists its spatial anchor, users, data boundary, and human-review mecha
 
 Privacy and review principle: all scenarios follow the charter's "human final judgment" clause [source:AGENT-TASKBOOK]; no non-public data, no mandatory vendor, no immature technology presented as deployable.
 
+### Scenario governance: adopting the Switchback Protocol as the unified operating contract
+
+The scenario cards adopt the peer-contributed **Switchback Protocol v1.0** ([source:SWITCHBACK-PROTOCOL], CC-BY-4.0, credit: chucky1102 / RENLINE) as their unified operating contract; the adapted machine-readable version is at `visual/assets/switchback-protocol.json`. Rationale: dozens of proposals have each invented their own state machines and time limits, making mechanisms impossible to compare; adopting one minimal shared contract lets reviewers and operators read this proposal's scenario governance like a common interface. The mapping:
+
+- **Three-color states**: all twelve cards start yellow (controlled pilot); SC-12, the lowest-risk guide, is the green candidate; red is not failure but a planned switchback — reverting to the last stable state with a public explanation;
+- **Digital time limits** (design targets, not government commitments): human takeover within 5 minutes (tightened to 3 at the SC-05 test port), appeals acknowledged in 1 working day and resolved in 7, a non-smart equivalent path within a 15-minute walk;
+- **90-day public review**: renew / reduce / pause / switchback; missing two consecutive reviews auto-triggers red;
+- **Quantified triggers and recovery**: one safety-grade takeover or complaints above threshold triggers red (thresholds set after first-phase measurement, no fabricated baselines); recovery needs two consecutive clean cycles plus one yellow observation period;
+- **Three-tier ledger**: near-miss / switchback / decommission; every review-born design change is written back into its scenario card; model updates, source withdrawals, and license expiries auto-trigger review.
+
+This proposal's earlier four-step opening procedure (apply, sandbox, evaluate, publish) maps onto the protocol's ascent gates (virtual_evaluation → controlled_site → real_block), and the three demonstration packages (DP-1/2/3) map onto its roles model (accountable operator, safety officer, data steward, public redress, independent reviewer).
+
 ### One-minute experiences
 
 Making the scenarios perceptible:
