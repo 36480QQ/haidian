@@ -207,7 +207,53 @@
       "confidence": "medium",
       "assumptions": [
         "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
-        "本比例为设计建议值，不是审定公共空间率控制指标。"
+        "本比例为设计建议值，不是审定公共空间率控制指标。",
+        "分子未扣除概念体量占地：public_space 表示公共活动影响带，与 buildings 图层存在重叠。扣除后的净开放空间见 public_open_space_area_sqm / public_open_space_ratio。"
+      ]
+    },
+    "public_open_space_area_sqm": {
+      "status": "known",
+      "value": 1780942.975,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "area(difference(union(public_space), union(buildings)), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "净开放空间＝公共活动带扣除概念体量占地。概念体量为 agent 生成示意，不代表现状建筑，因此本值同样只作概念口径。"
+      ]
+    },
+    "public_open_space_ratio": {
+      "status": "known",
+      "value": 0.156048,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_open_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "设计建议值，不是审定控制指标。"
+      ]
+    },
+    "public_space_building_overlap_sqm": {
+      "status": "known",
+      "value": 10226.899,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "area(intersection(union(public_space), union(buildings)), EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "本值如实披露 public_space 与概念体量的重叠，用于说明两项比例不可相加，并说明 public_space 的本体是公共活动影响带而非纯开放空间。"
       ]
     },
     "reserve_ratio": {
@@ -326,10 +372,10 @@
       "formula": "count(features where layer='PHASE')",
       "confidence": "high",
       "assumptions": [
-        "分期即版本（v0/v1/v2），为概念建议，不构成开发时序或审批结论。"
+        "阶段 v0/v1/v2 按干预可逆性排序而非时间排序，为概念建议，不构成开发时序或审批结论。"
       ]
     },
-    "phase_v0_area_sqm": {
+    "stage_v0_reference_district_sqm": {
       "status": "known",
       "value": 720454.219,
       "unit": "sqm",
@@ -339,10 +385,10 @@
       "formula": "polygon_area(phasing#PH-001, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "分期范围为概念建议。"
+        "本值是阶段 v0 的参照片区面积（等于发行区范围），不是该阶段各项目的占地面积——R02 覆盖主轴全线、R03 分布 8 处节点、R05 分散在三区，无法用单一片区面表达。取得官方边界并确定项目边界后，应改为按项目 footprint 求并集计算。"
       ]
     },
-    "phase_v1_area_sqm": {
+    "stage_v1_reference_district_sqm": {
       "status": "known",
       "value": 1043236.909,
       "unit": "sqm",
@@ -352,10 +398,10 @@
       "formula": "polygon_area(phasing#PH-002, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "分期范围为概念建议。"
+        "本值是阶段 v1 的参照片区面积（等于编译区范围），不是该阶段各项目的占地面积——R02 覆盖主轴全线、R03 分布 8 处节点、R05 分散在三区，无法用单一片区面表达。取得官方边界并确定项目边界后，应改为按项目 footprint 求并集计算。"
       ]
     },
-    "phase_v2_area_sqm": {
+    "stage_v2_reference_district_sqm": {
       "status": "known",
       "value": 1929201.877,
       "unit": "sqm",
@@ -365,7 +411,7 @@
       "formula": "polygon_area(phasing#PH-003, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
-        "分期范围为概念建议。"
+        "本值是阶段 v2 的参照片区面积（等于源码区范围），不是该阶段各项目的占地面积——R02 覆盖主轴全线、R03 分布 8 处节点、R05 分散在三区，无法用单一片区面表达。取得官方边界并确定项目边界后，应改为按项目 footprint 求并集计算。"
       ]
     },
     "scenario_card_count": {

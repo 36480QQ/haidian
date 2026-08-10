@@ -95,7 +95,7 @@ code {
 <p>方案提出三项可被专业团队直接深化的机制：</p>
 <ul>
 <li>留白率（Reserve Ratio）：把留白用地从&quot;暂未安排&quot;的剩余项，转为主动配置的产业代际缓冲。本方案在总体设计范围内配置弹性预留空间 <span class="evidence evidence-metric">[metric:land_use_area_reserved_land_sqm]</span>，占比 <span class="evidence evidence-metric">[metric:reserve_ratio]</span>，并建议将该指标口径纳入后续控规研究讨论 <span class="evidence evidence-standard">[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</span>。这项机制的法定接口需要审慎处理，第七章专门讨论北京市 1601 战略留白与 1602 动态留白的适用条件——本方案不自行认定法定归类。</li>
-<li>城市版本化（City Versioning）：把城市更新分期按不可逆性而非时间排序：完全可逆的干预先做，高不可逆的干预必须等官方资料补齐后才允许进入下一阶段，并为每个阶段预设回滚触发条件 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span> <span class="evidence evidence-metric">[metric:phase_count]</span>。</li>
+<li>城市版本化（City Versioning）：把城市更新分期按不可逆性而非时间排序：可逆性最高的干预先做，高不可逆的干预必须等官方资料补齐后才允许进入下一阶段，并为每个阶段预设回滚触发条件 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span> <span class="evidence evidence-metric">[metric:phase_count]</span>。</li>
 <li>资料缺口即设计条件（Gap-as-Constraint）：组织方尚未发布官方红线与控规条件。本方案不把这写成免责声明，而是逐条转为&quot;当前可做什么／补齐后才能做什么／补齐后要重算什么&quot;的设计条件 <span class="evidence evidence-source">[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]</span>。</li>
 </ul>
 <p>空间上，京张遗址公园成为南北贯通的开物主轴，三条开物横缝在三处重点区域跨轴缝合东西 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-001]</span>。三区按创新链环节分工：众智园承担全栈自主创新与治理话语权、AI原点社区承担原始创新到成果转化、大钟寺承担智能原生新业态；中关村科技服务翼供给要素与资本、小月河场景赋能翼承担场景验证 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#KEY-001]</span>。这一分工与官方给三区指定的角色定位逐项对应，也与创新从原始研究到产业化的真实路径同构。</p>
@@ -117,7 +117,7 @@ code {
 <h2>三层范围工作框架</h2>
 <p>公告给出的三层范围不是同一件事的三种精度，而是三种不同性质的工作。本方案对三层分别采用不同的结论强度，这是应对资料缺口的基本纪律 <span class="evidence evidence-depth">[depth:three_level_scope_framework]</span>。</p>
 <p>统筹研究范围（约43.6平方公里） 承担战略与生态判断 <span class="evidence evidence-metric">[metric:coordinated_research_area_sqm]</span>。这一层的产出是产业生态体系、要素配置机制、区域协同关系和未来城市形态判断，不产出地块级空间结论。该范围的临时边界在本方案中作为 <code>analysis_helper</code> 记录于 <code>constraints.geojson</code>，而不放入 <code>site_boundary.geojson</code> <span class="evidence evidence-data">[data:geometry/constraints.geojson#CN-010]</span>。这个处理有一个技术理由：面积复算与用地覆盖校验以总体设计范围为分母，若把43.6平方公里并入边界图层，覆盖率与各项比例指标将全部失去意义。</p>
-<p>总体设计范围（约11.4平方公里） 承担控规深度的城市设计 <span class="evidence evidence-metric">[metric:site_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span>。这一层产出空间结构、用地布局、更新框架、交通与市政体系、蓝绿公共空间和风貌引导。本方案的用地分区在这一层完成完整平面剖分：136个用地单元完整覆盖提交边界，无缝隙、无重叠，相邻单元共享边界坐标 <span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-001]</span> <span class="evidence evidence-depth">[depth:land_use_layout]</span>。这一范围的实际形状是一条1.33公里宽、9.71公里长的窄带（长宽比约1:7.3），这个几何特征直接决定了空间策略：任何&quot;中心放射&quot;式结构在这里都不成立，只有&quot;一轴多缝&quot;的线性组织能同时解决南北贯通与东西缝合。</p>
+<p>总体设计范围（约11.4平方公里） 承担控规深度的城市设计 <span class="evidence evidence-metric">[metric:site_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span>。这一层产出空间结构、用地布局、更新框架、交通与市政体系、蓝绿公共空间和风貌引导。本方案的用地分区在这一层完成平面剖分，相邻单元共享边界坐标、单元间无重叠；覆盖精度的真实数值与容差见第十二章 <span class="evidence evidence-data">[data:geometry/land_use.geojson#LU-001]</span> <span class="evidence evidence-depth">[depth:land_use_layout]</span>。这一范围的实际形状是一条1.33公里宽、9.71公里长的窄带（长宽比约1:7.3），这个几何特征直接决定了空间策略：任何&quot;中心放射&quot;式结构在这里都不成立，只有&quot;一轴多缝&quot;的线性组织能同时解决南北贯通与东西缝合。</p>
 <p>重点区域范围（约368.4公顷） 承担规划综合实施方案深度的详细设计 <span class="evidence evidence-metric">[metric:key_area_count]</span>。三处重点区域分别为众智园AI自主创新加速区（公告约192.1公顷，临时边界复算 <span class="evidence evidence-metric">[metric:key_area_zhongzhiyuan_ai_acceleration_area_sqm]</span>）、北京AI原点社区（公告约104.3公顷，<span class="evidence evidence-metric">[metric:key_area_beijing_ai_origin_community_sqm]</span>）、大钟寺AI产业聚集区（公告约72.0公顷，<span class="evidence evidence-metric">[metric:key_area_dazhongsi_ai_industry_cluster_sqm]</span>）<span class="evidence evidence-data">[data:geometry/key_areas.geojson#KEY-002]</span>。复算值与公告值的差异来自临时边界精度，取得官方 KEY_AREA polygon 后必须整体重算。</p>
 <p>三层之间的传导关系是本方案的结构性要求：统筹层的要素判断必须能在总体层找到空间承载，总体层的空间结构必须能在重点层找到项目抓手，重点层的项目必须能反向修正总体层指标。留白率机制正是这条传导链的调节阀——当技术代际更替使某类空间需求消失时，留白用地承接变化，而不必推翻整个用地布局。</p>
 <figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="三层范围传导与用地结构：统筹层判断要素、总体层组织结构、重点层落实项目，留白用地作为传导链的调节阀"><figcaption>三层范围传导与用地结构：统筹层判断要素、总体层组织结构、重点层落实项目，留白用地作为传导链的调节阀</figcaption></figure>
@@ -145,7 +145,7 @@ code {
 <li>美国·肯戴尔广场（Kendall Square），紧邻MIT的高密度创新街区。</li>
 <p>为什么选它：与编译区的条件最接近——紧邻顶尖高校、在既有城市肌理内更新、而非新城建设。 可转化经验：近校创新的空间紧邻性确有效果，研究、转化与企业在步行尺度内共存能显著缩短反馈周期。 暴露的问题：成功带来的租金上涨会挤出早期创业者与原有居民，即创新街区的自我侵蚀。 本方案对应处理：编译区采用近校型街区把转化界面压到步行可达范围内；同时以留白用地上的可逆轻构提供低成本空间（对应画像P2），并把编译区归 v1、采取低扰动有机更新以降低对既有居民（画像P4）的挤出压力。</p>
 <li>英国·伦敦国王十字（King&#x27;s Cross），铁路遗产用地的长周期城市更新。</li>
-<p>为什么选它：本项目唯一可比的&quot;铁路遗产作为更新主线&quot;案例，且同为长周期分期开发。 可转化经验：铁路遗产可以成为公共空间主线而非障碍；分期开发的弹性使项目能容纳二十年间需求的变化。 暴露的问题：该案例是单一主体持有大片土地才得以整体统筹；本带权属分散（尤其编译区涉及校区、园区、社区三类边界），不具备同样的统筹条件。 本方案对应处理：开物主轴以遗址公园为主线，但分期不依赖统一开发主体——改为按不可逆性排序，使每个版本都能在现有权属格局下独立成立。</p>
+<p>为什么选它：与本项目最可比的&quot;铁路遗产作为更新主线&quot;案例，且同为长周期分期开发。 可转化经验：铁路遗产可以成为公共空间主线而非障碍；分期开发的弹性使项目能容纳二十年间需求的变化。 暴露的问题：该案例是单一主体持有大片土地才得以整体统筹；本带权属分散（尤其编译区涉及校区、园区、社区三类边界），不具备同样的统筹条件。 本方案对应处理：开物主轴以遗址公园为主线，但分期不依赖统一开发主体——改为按不可逆性排序，使每个版本都能在现有权属格局下独立成立。</p>
 <li>西班牙·巴塞罗那22@，工业区向知识经济转型的分区改造。</li>
 <p>为什么选它：唯一一个把产业转型直接写进用地分类的案例，与本方案的留白用地机制处理同一类问题。 可转化经验：把产业转型写进用地分类是关键一步，制度工具比规划意图更能持续约束开发。 暴露的问题：分类中锁定了具体业态门类，当产业周期变化时形成空置压力——这正是本方案要回避的失败模式。 本方案对应处理：以弹性预留空间替代业态锁定。区别在于：22@ 锁定的是&quot;必须是什么业态&quot;，弹性预留承认的是&quot;暂时不确定是什么&quot;。在技术路线更替较快的产业中，后者的稳健性更高 <span class="evidence evidence-standard">[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]</span>。</p>
 <li>新加坡·纬壹科技城（one-north），政府主导的科研与生活混合园区。</li>
@@ -155,7 +155,7 @@ code {
 <li>芬兰·阿尔托／奥塔涅米（Otaniemi），校园与创业生态深度耦合。</li>
 <p>为什么选它：开源与社区机制最成熟的案例，与本次面向智能体的开源征集机制同源。 可转化经验：开源协作与社区运营机制比硬件设施更能持续产出；社区的连续性本身构成资产。 暴露的问题：机制的养成以十年计，短期内难以用建设投入替代；若只建空间不养机制，设施会闲置。 本方案对应处理：把原点碑与开发者社区运营机制列为长期资产而非建设项目，并让 v0 版本的 R02（导视与荣誉展示系统）先于任何结构性建设启动——机制先行，空间跟上。</p>
 <li>中国·深圳西丽湖国际科教城，国内近校型科教产融合实践。</li>
-<p>为什么选它：唯一的国内制度环境案例，其面临的权属与管理主体问题与本带编译区高度相似。 可转化经验：国内制度环境下校区、园区、街区统筹实施的可行路径。 暴露的问题：权属分割与管理主体不一使统筹实施进度受制于协调效率，物理规划先行往往等待机制落地。 本方案对应处理：中缝以低扰动方式打通校区—园区日常联系，先做可逆性较高的慢行缝合，把需要多主体协调的结构性更新推到 v2 —— 使方案的第一步不必等待全部协调结果。</p>
+<p>为什么选它：国内制度环境案例，其面临的权属与管理主体问题与本带编译区高度相似。 可转化经验：国内制度环境下校区、园区、街区统筹实施的可行路径。 暴露的问题：权属分割与管理主体不一使统筹实施进度受制于协调效率，物理规划先行往往等待机制落地。 本方案对应处理：中缝以低扰动方式打通校区—园区日常联系，先做可逆性较高的慢行缝合，把需要多主体协调的结构性更新推到 v2 —— 使方案的第一步不必等待全部协调结果。</p>
 </ul>
 <h3>AI创新生态图谱与八类要素机制（agent.2）</h3>
 <p>生态图谱的组织方式是&quot;链条＋要素&quot;的二维结构。链条方向是源码→编译→发行（纵向），要素方向是八类可配置资源（横向）。八类要素机制的空间与制度建议如下 <span class="evidence evidence-metric">[metric:land_use_area_ai_research_sqm]</span> <span class="evidence evidence-metric">[metric:land_use_area_education_link_sqm]</span>：</p>
@@ -178,11 +178,11 @@ code {
 <p>本章达到控制性详细规划的城市设计深度要求，但对每一类结论都标注其强度：可由公开资料与本方案图层支撑的部分给出明确判断；受资料缺口限制的部分明确写为待确认，不伪装为审定指标 <span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span> <span class="evidence evidence-depth">[depth:development_intensity_controls]</span>。</p>
 <h3>空间结构：一轴、三缝、三区、两翼</h3>
 <p>总体设计范围是一条1.33公里宽、9.71公里长的窄带。这个几何事实排除了&quot;中心—放射&quot;型结构的可能，也解释了为什么公告把&quot;南北贯通、东西连通&quot;同时列为要求——在这种长宽比下，南北是连续性问题，东西是可达性问题，两者的解法不同。</p>
-<p>开物主轴沿京张铁路遗址公园南北贯通，全长9.59公里，是全带唯一的连续线索 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-001]</span>。主轴承担三重职能：连续慢行通道、线性公园、以及创新链的公共展示界面。主轴的核心带宽按130米组织线性公园，其中约46米宽的内带作为公共活动带，即连续慢行加停留加展示的复合界面 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PS-004]</span>。</p>
+<p>开物主轴沿京张铁路遗址公园南北贯通，全长9.59公里，是全带的主要连续线索 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-001]</span>。主轴承担三重职能：连续慢行通道、线性公园、以及创新链的公共展示界面。主轴的核心带宽按130米组织线性公园，其中约46米宽的内带作为公共活动带，即连续慢行加停留加展示的复合界面 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PS-004]</span>。</p>
 <p>三条开物横缝分别在三处重点区域跨轴缝合东西：北缝（众智园—清河，1,089米）、中缝（五道口—清华东路西口，1,102米）、南缝（大钟寺站四象限，1,296米）<span class="evidence evidence-data">[data:geometry/roads.geojson#RD-004]</span>。横缝不是新增道路，而是对既有断点的修补策略，具体线位为概念建议。</p>
 <p>三区两翼的分工已在第三章说明。空间上，三区沿主轴自北向南依次分布，形成从&quot;底层构建&quot;到&quot;市场发行&quot;的空间序列；两翼在东西两侧提供要素供给与场景验证。</p>
 <h3>产业发展目标与功能布局（1.5.2.1）</h3>
-<p>用地功能比例由136个用地单元复算得出，全部可追溯 <span class="evidence evidence-depth">[depth:land_use_layout]</span>：</p>
+<p>用地功能比例由用地分区复算得出，全部可追溯 <span class="evidence evidence-depth">[depth:land_use_layout]</span>：</p>
 <ul>
 <li>城镇住宅用地 <span class="evidence evidence-metric">[metric:land_use_area_housing_sqm]</span>，占比约25.9%——这是既有城市地区的现实，说明本带不是产业新城而是嵌入成熟社区的更新工作。</li>
 <li>公园绿地 <span class="evidence evidence-metric">[metric:land_use_area_park_green_sqm]</span>，占比约20.3%，主体是开物主轴线性公园。</li>
@@ -225,15 +225,15 @@ code {
 <p>交通慢行：本区最突出的问题是北缝断点——五环路与清河形成南北向双重阻隔，东西向联系仅靠机动车路。缝合建议：结合五环路区域一体化规划建设研究提出跨环慢行方案，滨水测试廊兼作东西通行界面。本区对外交通水平的提升须与五环路一体化研究衔接，具体方案不属本方案给出范围 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-002]</span>。</p>
 <p>公共空间：设开物台作为标准与治理展示地标，位于本区主轴节点。开物台的设计意图是把AI治理话语权做成可参观、可讨论的公共内容，而不是留在会议室里的成果。绿色空间服务人工智能发展的功能场景，建议以滨水测试廊承担——绿地同时是通行、停留与低速测试的空间 <span class="evidence evidence-data">[data:geometry/green_space.geojson#GS-002]</span>。</p>
 <p>AI场景锚点：S07（AI导览与文化叙事，清河文化与自主创新叙事的公共解说）、S08（标准与治理公开展示）、测试场景T1（滨水低速测试廊，受审批、可撤回的低速试点接口）。</p>
-<p>实施风险与版本归属：归 v2 结构更新版（36个月以后），高不可逆性。本区结论受资料缺口限制最深——跨环慢行涉及五环路管理主体，国家平台类空间需求涉及未公开的具体安排，结构性更新涉及权属与控规条件。因此本区在官方红线、控规条件与权属资料补齐后必须重新论证 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-003]</span> <span class="evidence evidence-metric">[metric:phase_v2_area_sqm]</span>。</p>
+<p>实施风险与版本归属：归 阶段 v2（可逆性最低），高不可逆性。本区结论受资料缺口限制最深——跨环慢行涉及五环路管理主体，国家平台类空间需求涉及未公开的具体安排，结构性更新涉及权属与控规条件。因此本区在官方红线、控规条件与权属资料补齐后必须重新论证 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-003]</span> <span class="evidence evidence-metric">[metric:stage_v2_reference_district_sqm]</span>。</p>
 <h3>编译区：北京AI原点社区</h3>
 <p>定位：世界级AI创新生态，原始创新到成果转化。公告要求建设&quot;更具人才吸引力、创新活力、科技成果转化能力的近校型人工智能创新街区&quot;，围绕清华、北大、中科院等高校的原始创新策源成果规划孵化区与转化区。公告面积约104.3公顷，临时边界复算 <span class="evidence evidence-metric">[metric:key_area_beijing_ai_origin_community_sqm]</span>。</p>
-<p>空间结构：本区是三区中唯一直接贴合高校的一段，空间组织的核心是界面而非园区。建议形成&quot;校区界面—转化街—社区界面&quot;的三层过渡：靠高校一侧布置成果孵化与展示，中部为转化街（可逆轻构与灵活空间为主），靠社区一侧衔接居住与生活服务 <span class="evidence evidence-metric">[metric:land_use_area_education_link_sqm]</span>。</p>
+<p>空间结构：本区是三区中直接贴合高校的一段，空间组织的核心是界面而非园区。建议形成&quot;校区界面—转化街—社区界面&quot;的三层过渡：靠高校一侧布置成果孵化与展示，中部为转化街（可逆轻构与灵活空间为主），靠社区一侧衔接居住与生活服务 <span class="evidence evidence-metric">[metric:land_use_area_education_link_sqm]</span>。</p>
 <p>建筑更新：本区权属最复杂（校区、园区、社区三类边界叠加），因此明确采取低扰动有机更新：以留改为主，可逆轻构先行，不从拆除入手。城市更新（建筑拆改留）方案的具体分类须待权属与现状建筑资料补齐后才能形成，本方案只给可逆性判断 <span class="evidence evidence-depth">[depth:retain_renovate_demolish]</span>。</p>
 <p>交通慢行：中缝断点表现为校区、园区、社区三类权属边界叠加导致的慢行绕行。缝合建议：围绕五道口、清华东路西口两处轨道交通站点开展一体化设计，以低扰动方式打通校区—园区日常联系，长度约1,102米 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-003]</span>。</p>
 <p>公共空间：设原点碑作为开源贡献荣誉墙，长期记录 agent 与人类贡献者的 GitHub 名称。这个设计直接呼应本次征集&quot;优秀贡献以碑刻长期保留&quot;的机制，也呼应1909年京张铁路的自主开物起点——一百年前的工程师姓名与今天的贡献者姓名在同一条线上 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PS-102]</span>。成果展示发布与居住生活配套功能建议同步补齐。</p>
 <p>AI场景锚点：S05（企业服务Copilot，面向初创与转化团队的公共服务导航）、S06（成果转化展示，开源贡献与论文—产品链路的公开陈列）、测试场景T2（校区—园区慢行评估，以人本尺度复核缝合效果）。</p>
-<p>实施风险与版本归属：归 v1 缝合联通版（12–36个月），中不可逆性。慢行缝合与公共空间联通可先行，建筑更新待资料补齐。本区风险主要在权属协调而非技术 <span class="evidence evidence-metric">[metric:phase_v1_area_sqm]</span>。</p>
+<p>实施风险与版本归属：归 阶段 v1（可逆性中等），中不可逆性。慢行缝合与公共空间联通可先行，建筑更新待资料补齐。本区风险主要在权属协调而非技术 <span class="evidence evidence-metric">[metric:stage_v1_reference_district_sqm]</span>。</p>
 <h3>发行区：大钟寺AI产业聚集区</h3>
 <p>定位：智能原生新业态，数据要素与智能经济。公告要求建设&quot;更具世界影响力、城市发展活力的城市型人工智能创新街区&quot;，围绕智能体、智能终端、内容消费等AI原生和AI+融合赋能新业态。公告面积约72.0公顷，临时边界复算 <span class="evidence evidence-metric">[metric:key_area_dazhongsi_ai_industry_cluster_sqm]</span>。</p>
 <p>空间结构：本区是三区中最&quot;城市&quot;的一段，紧邻大钟寺地铁站与既有商业。空间组织以站点为核心：地铁站四象限作为整合枢纽，向外衔接重点企业周边公共环境与商业服务业态 <span class="evidence evidence-metric">[metric:land_use_area_commercial_service_sqm]</span>。规划绿地建议复合利用——同时承担展示、测试与通行功能，而不是单一的隔离绿带。</p>
@@ -241,7 +241,7 @@ code {
 <p>交通慢行：南缝断点最具体也最可解——大钟寺地铁站所在路口四象限步行不连通，非机动车停放无序。缝合建议：四象限步行连通设计加非机动车静态交通组织，长度约1,296米。这是全带对官方红线依赖程度最低的重点干预（但仍须完成权属、交通组织、市政与无障碍核验并取得批准），因此本方案建议它作为首个试点 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-004]</span>。轨道交通大钟寺站一体化方案的优化与重点地块连通水平的提升，须与轨道管理主体衔接。</p>
 <p>公共空间：设发行塔作为智能原生新业态展示地标，把智能经济的产品与服务放到城市界面上被日常使用与检验，而不是放在展厅里被参观 <span class="evidence evidence-data">[data:geometry/public_space.geojson#PS-103]</span>。企业国际交往需求与人才通勤需求的满足，依托站点一体化与四象限连通。</p>
 <p>AI场景锚点：S01（机器人低速配送，四象限连通后的低速配送与装卸组织）、S02（智能终端体验，商业界面上的智能原生消费场景）、测试场景T3（四象限步行连通复核，改造前后步行连续性对比测量）。</p>
-<p>实施风险与版本归属：归 阶段 v0，可逆性最高。导视、铺装、轻构筑与场景试点的可逆性较高，但均须完成前置核验并取得主管部门批准后方可启动，且铺装类干预的复原有成本与工期，不属完全可逆。本区是全带建议的首个可回滚试点，其价值不仅在于自身改善，更在于验证城市版本化机制本身是否成立 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span> <span class="evidence evidence-metric">[metric:phase_v0_area_sqm]</span>。</p>
+<p>实施风险与版本归属：归 阶段 v0，可逆性最高。导视、铺装、轻构筑与场景试点的可逆性较高，但均须完成前置核验并取得主管部门批准后方可启动，且铺装类干预的复原有成本与工期，不属完全可逆。本区是全带建议的首个可回滚试点，其价值不仅在于自身改善，更在于验证城市版本化机制本身是否成立 <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span> <span class="evidence evidence-metric">[metric:stage_v0_reference_district_sqm]</span>。</p>
 <h3>自选区域场景设计（可选项）</h3>
 <p>在总体设计范围内、重点区域范围外，本方案沿开物主轴布置8处场景公共界面作为自选区域的场景落位 <span class="evidence evidence-metric">[metric:public_space_ratio]</span>。选择&quot;沿主轴等距&quot;而非&quot;集中成组&quot;的理由是可达性：场景若集中在重点区内，主轴中段的居民与通勤者无法接触；等距布置使AI应用场景成为日常经过的内容，也使场景效果的检验对象包含普通市民而不只是从业者。</p>
 <h2>AI 创新生态、人才画像与 AI+ 场景</h2>
@@ -423,9 +423,9 @@ code {
 <p>常规的更新分期按&quot;近期／中期／长期&quot;排序，其隐含假设是需求已知、只是资源分批投入。但本项目的实际状态是：需求本身在变，且官方资料尚未齐备。 在这个条件下按时间排序会产生一个具体风险——近期项目按2026年的判断做成不可逆的形态，中期发现判断需要修改时已无法调整 <span class="evidence evidence-depth">[depth:phasing_implementation]</span>。</p>
 <p>因此本方案把分期表达为软件版本发布：v0/v1/v2 按干预的不可逆性排序，每个版本有明确的变更内容（changelog）、验收指标和回滚触发条件 <span class="evidence evidence-metric">[metric:phase_count]</span>。</p>
 <ul>
-<li>阶段 v0（可逆性最高），空间参照发行区 <span class="evidence evidence-metric">[metric:phase_v0_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span>。内容限于可逆性较高的干预：导视、铺装、轻构筑、场景试点。对官方红线的依赖程度最低，但仍须完成权属、交通组织、市政、无障碍与文保核验并取得主管部门批准后方可启动。</li>
-<li>阶段 v1（可逆性中等），空间参照编译区 <span class="evidence evidence-metric">[metric:phase_v1_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-002]</span>。内容为慢行缝合、公共空间联通、弹性预留空间试运营。依赖道路断面与权属资料。</li>
-<li>阶段 v2（可逆性最低），空间参照源码区 <span class="evidence evidence-metric">[metric:phase_v2_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-003]</span>。内容为结构性更新与产业载体建设。必须在官方红线、控规条件与权属资料补齐后重新论证。</li>
+<li>阶段 v0（可逆性最高），空间参照发行区 <span class="evidence evidence-metric">[metric:stage_v0_reference_district_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-001]</span>。内容限于可逆性较高的干预：导视、铺装、轻构筑、场景试点。对官方红线的依赖程度最低，但仍须完成权属、交通组织、市政、无障碍与文保核验并取得主管部门批准后方可启动。</li>
+<li>阶段 v1（可逆性中等），空间参照编译区 <span class="evidence evidence-metric">[metric:stage_v1_reference_district_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-002]</span>。内容为慢行缝合、公共空间联通、弹性预留空间试运营。依赖道路断面与权属资料。</li>
+<li>阶段 v2（可逆性最低），空间参照源码区 <span class="evidence evidence-metric">[metric:stage_v2_reference_district_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-003]</span>。内容为结构性更新与产业载体建设。必须在官方红线、控规条件与权属资料补齐后重新论证。</li>
 </ul>
 <p>关于时间与&quot;立即&quot;的说明。 本方案早期稿把三个阶段标注为&quot;0–12 个月／12–36 个月／36 个月以后&quot;，并称 v0&quot;不依赖官方红线、可立即启动、完全可逆&quot;。这三个表述都已收回，理由如下：</p>
 <ul>
@@ -456,7 +456,7 @@ code {
 <li>R07 北缝跨环慢行研究与实施（源码区）。内容：跨五环慢行方案研究。前置 gate：五环路管理主体协调、区域一体化研究结论、桥隧或地道方案的工程可行性论证（本方案不提供该论证）、环境与安全评估。责任主体类型：市级道路管理部门＋区级规划部门。量级：跨线交通设施级。验收指标：跨环步行与骑行连通性、安全性评估结论。回滚动作：本项目一旦实施难以回滚，因此其准入门槛应最高。恢复标准：不适用——正因如此，本方案主张先完成 v0／v1 验证再论证本项目。</li>
 <li>R08 产业载体结构性更新（三区）。内容：产业空间载体更新。前置 gate：官方红线、控规条件、土地权属、现状建筑底数、拆改留专项方案、市政承载力评估全部补齐后重新论证。责任主体类型：区级政府统筹＋土地权利人＋实施主体。量级：结构性更新级。验收指标：须在补齐资料后另行确定。回滚动作：不可回滚。恢复标准：不适用。</li>
 </ul>
-<p>关于 phasing 图层与项目范围不一致的说明。 <code>geometry/phasing.geojson</code> 的三个面（PH-001/002/003）当前分别等于三处重点区域的范围（KEY-003/002/001），是&quot;阶段所参照的片区&quot;，不是 R01–R08 各项目的实际作用范围。例如 R02 覆盖主轴全线、R03 分布在 8 处节点、R05 分散在三区的弹性预留组团，这些都无法用一个片区面表达。因此 <span class="evidence evidence-metric">[metric:phase_v0_area_sqm]</span> 等三项指标应理解为阶段参照片区面积，而不是项目占地面积。取得官方边界并确定项目边界后，应改为按项目 footprint 建面、附 <code>project_id</code> 与 <code>reversibility</code> 字段，再按阶段求并集计算面积；在此之前，本方案不把片区面积当作项目规模使用。</p>
+<p>关于 phasing 图层与项目范围不一致的说明。 <code>geometry/phasing.geojson</code> 的三个面（PH-001/002/003）当前分别等于三处重点区域的范围（KEY-003/002/001），是&quot;阶段所参照的片区&quot;，不是 R01–R08 各项目的实际作用范围。例如 R02 覆盖主轴全线、R03 分布在 8 处节点、R05 分散在三区的弹性预留组团，这些都无法用一个片区面表达。因此 <span class="evidence evidence-metric">[metric:stage_v0_reference_district_sqm]</span> 等三项指标应理解为阶段参照片区面积，而不是项目占地面积。取得官方边界并确定项目边界后，应改为按项目 footprint 建面、附 <code>project_id</code> 与 <code>reversibility</code> 字段，再按阶段求并集计算面积；在此之前，本方案不把片区面积当作项目规模使用。</p>
 <h3>实施政策建议与公众参与</h3>
 <p>政策建议均为机制方向，不涉及任何具体资金安排、招商承诺或审批简化，也不得理解为已确定的政府安排 <span class="evidence evidence-source">[source:DATA-SRC-AGENT-TASKBOOK-20260518]</span>：</p>
 <ul>
@@ -471,7 +471,7 @@ code {
 <li>开物年会 OPENWORKS SUMMIT（年度，源码区开物台）。AI治理与标准的国际研讨。对应源码区&quot;AI治理全球话语权&quot;定位。</li>
 <li>原点开源周 ORIGIN OPEN WEEK（年度，编译区原点碑）。开源贡献者集会与荣誉墙更新。这是把&quot;贡献可记忆&quot;原则做成周期性事件。</li>
 <li>发行日 RELEASE DAY（季度，发行区发行塔）。智能原生新业态的公开发布与试用。</li>
-<li>版本公示 CHANGELOG REVIEW（每版本，三处缝合广场）。更新分期的公众参与与回滚复核。这一项是本方案独有的——它把城市更新的版本机制变成公共活动。</li>
+<li>版本公示 CHANGELOG REVIEW（每版本，三处缝合广场）。更新分期的公众参与与回滚复核。这一项把更新分期的复核过程本身变成公共活动，使公众参与发生在与空间改造同一地点、同一节奏上。</li>
 </ul>
 <p>开发者社区运营机制：建议以开源协作的方式组织本带的持续研究——公开数据目录、公开场景接口、公开评审记录。本次面向智能体的开源征集本身已经建立了这个机制的雏形，建议延续而非另起。</p>
 <p>AI场景开放运营机制：建议建立&quot;申请—审批—试点—复核—推广或回滚&quot;的标准流程，其中&quot;回滚&quot;是必备环节而非例外处理。</p>
@@ -498,11 +498,12 @@ code {
 <p>统筹研究范围 <span class="evidence evidence-metric">[metric:coordinated_research_area_sqm]</span> 采用公告文字面积，不由临时 polygon 复算——因为该范围在本方案中是分析辅助层而非设计边界，用它复算会引入无意义的精度争议 <span class="evidence evidence-data">[data:geometry/constraints.geojson#CN-001]</span>。</p>
 <p>各类用地面积及其设计含义：科研用地 <span class="evidence evidence-metric">[metric:land_use_area_ai_research_sqm]</span> 承载AI科研与全栈创新，集中在源码区与编译区；教育衔接用地 <span class="evidence evidence-metric">[metric:land_use_area_education_link_sqm]</span> 是编译区近校界面的空间基础；商业服务业用地 <span class="evidence evidence-metric">[metric:land_use_area_commercial_service_sqm]</span> 对应发行区的智能原生业态；城镇住宅用地 <span class="evidence evidence-metric">[metric:land_use_area_housing_sqm]</span> 占比最高，说明这是嵌入成熟社区的更新工作；社区服务设施用地 <span class="evidence evidence-metric">[metric:land_use_area_community_service_sqm]</span> 支撑&quot;人、城、产&quot;融合中最容易被忽略的生活维度；公园绿地 <span class="evidence evidence-metric">[metric:land_use_area_park_green_sqm]</span> 主体是主轴线性公园；广场用地 <span class="evidence evidence-metric">[metric:land_use_area_plaza_sqm]</span> 是三处缝合节点的空间载体；留白用地 <span class="evidence evidence-metric">[metric:land_use_area_reserved_land_sqm]</span> 是本方案核心机制。</p>
 <p>绿地与公共空间：绿地面积 <span class="evidence evidence-metric">[metric:green_space_area_sqm]</span>、绿地比例 <span class="evidence evidence-metric">[metric:green_ratio]</span>；公共空间面积 <span class="evidence evidence-metric">[metric:public_space_area_sqm]</span>、公共空间比例 <span class="evidence evidence-metric">[metric:public_space_ratio]</span>。两项比例均为设计建议值，不是审定绿地率或公共空间率控制指标。绿地比例的设计含义是人才生活品质的空间基础；公共空间比例的设计含义是创新交往的发生条件——创新的非正式交流需要场所，而这个场所在本带只能是主轴 <span class="evidence evidence-data">[data:geometry/green_space.geojson#GS-004]</span> <span class="evidence evidence-data">[data:geometry/public_space.geojson#PS-003]</span>。</p>
+<p>关于 <code>public_space</code> 图层的本体，需要一处更正。 经核查，该图层与概念体量图层存在 <span class="evidence evidence-metric">[metric:public_space_building_overlap_sqm]</span> 的重叠（主要在主轴公共活动带 PS-004 与三个概念体量之间）。这说明 <code>public_space</code> 的准确本体是公共活动影响带，而不是纯粹的开放空间——它包含了活动可达但可能有构筑物占地的范围。因此本方案同时给出两个口径：影响带口径 <span class="evidence evidence-metric">[metric:public_space_area_sqm]</span>（含重叠），以及扣除概念体量占地后的净开放空间 <span class="evidence evidence-metric">[metric:public_open_space_area_sqm]</span>、占比 <span class="evidence evidence-metric">[metric:public_open_space_ratio]</span>。使用时须明确采用哪一个：讨论可达性用影响带口径，讨论开放空间指标用净口径。两者都不是审定控制指标。</p>
 <p>留白率 <span class="evidence evidence-metric">[metric:reserve_ratio]</span>：分子是留白用地面积，分母是提交边界面积。设计含义已在第七章说明——以法定用地类型承接产业代际更替的空间弹性。</p>
 <p>建筑指标：研究体量基底面积 <span class="evidence evidence-metric">[metric:building_footprint_area_sqm]</span>、研究体量占地比 <span class="evidence evidence-metric">[metric:building_coverage_ratio_study]</span>。两项 confidence 均为 low，明确不代表现状或规划建筑规模，仅用于说明更新对象的空间量级 <span class="evidence evidence-data">[data:geometry/buildings.geojson#BD-010]</span>。</p>
 <p>慢行网络长度 <span class="evidence evidence-metric">[metric:slow_mobility_network_length_m]</span>：主轴9.59公里加三条横缝3.49公里。设计含义是南北连续性与东西可达性的量化表达 <span class="evidence evidence-data">[data:geometry/roads.geojson#RD-003]</span>。</p>
 <p>重点区域面积：<span class="evidence evidence-metric">[metric:key_area_count]</span> 处重点区域，分别为 <span class="evidence evidence-metric">[metric:key_area_zhongzhiyuan_ai_acceleration_area_sqm]</span>、<span class="evidence evidence-metric">[metric:key_area_beijing_ai_origin_community_sqm]</span>、<span class="evidence evidence-metric">[metric:key_area_dazhongsi_ai_industry_cluster_sqm]</span> <span class="evidence evidence-data">[data:geometry/key_areas.geojson#KEY-002]</span>。三项与公告面积的差值均来自临时边界精度。</p>
-<p>分期指标：<span class="evidence evidence-metric">[metric:phase_count]</span> 个版本，面积分别为 <span class="evidence evidence-metric">[metric:phase_v0_area_sqm]</span>、<span class="evidence evidence-metric">[metric:phase_v1_area_sqm]</span>、<span class="evidence evidence-metric">[metric:phase_v2_area_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-002]</span>。</p>
+<p>分期指标：<span class="evidence evidence-metric">[metric:phase_count]</span> 个版本，面积分别为 <span class="evidence evidence-metric">[metric:stage_v0_reference_district_sqm]</span>、<span class="evidence evidence-metric">[metric:stage_v1_reference_district_sqm]</span>、<span class="evidence evidence-metric">[metric:stage_v2_reference_district_sqm]</span> <span class="evidence evidence-data">[data:geometry/phasing.geojson#PH-002]</span>。</p>
 <p>内容计数指标：场景卡 <span class="evidence evidence-metric">[metric:scenario_card_count]</span> 张（要求不少于10）、产业测试验证场景 <span class="evidence evidence-metric">[metric:industry_test_scenario_count]</span> 个（要求不少于3）、用户画像 <span class="evidence evidence-metric">[metric:user_persona_count]</span> 类（要求不少于5）、AI朝圣地标 <span class="evidence evidence-metric">[metric:pilgrimage_landmark_count]</span> 个（要求不少于3）、全球案例 <span class="evidence evidence-metric">[metric:global_case_study_count]</span> 个（要求5–8）。这五项反映任务书数量要求的满足情况。</p>
 <h3>六项 unknown 指标：资料缺口即设计条件</h3>
 <p>本方案不把资料缺口写成免责声明，而是把每项缺口转为三段式设计条件：现在可以做什么／补齐后才能做什么／补齐后要重算什么 <span class="evidence evidence-depth">[depth:risk_missing_data]</span> <span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span>。</p>
@@ -519,7 +520,7 @@ code {
 <p>取得官方 SITE_BOUNDARY 与三处 KEY_AREA polygon 后，须按以下顺序整体重算，不得只替换单个文件：</p>
 <ul>
 <li>替换 <code>site_boundary.geojson</code> 与 <code>key_areas.geojson</code>，并将 <code>geometry_role</code> 改为 <code>official_constraint</code>、<code>official_boundary</code> 改为 <code>true</code>、移除 <code>boundary_precision</code>。</li>
-<li>以新边界重新执行平面剖分，重建 <code>land_use.geojson</code>（136个单元的数量与形态都会变化）。</li>
+<li>以新边界重新执行平面剖分，重建 <code>land_use.geojson</code>（用地单元的数量与形态都会变化）。</li>
 <li>由新的用地分区重新派生 <code>green_space.geojson</code>、<code>public_space.geojson</code>、<code>buildings.geojson</code>、<code>roads.geojson</code>、<code>phasing.geojson</code>。</li>
 <li>更新 <code>constraints.geojson</code> 中的临时边界提示项。</li>
 <li>重算 <code>metrics.json</code> 全部 32 项 known 指标，并把 confidence 由 medium 提升至与官方数据相符的等级。</li>

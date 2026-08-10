@@ -27,7 +27,7 @@ JINGZHANG OPENWORKS — A Versionable, Rollbackable, Reserve-Ready AI Innovation
 方案提出三项可被专业团队直接深化的机制：
 
 - 留白率（Reserve Ratio）：把留白用地从"暂未安排"的剩余项，转为主动配置的产业代际缓冲。本方案在总体设计范围内配置弹性预留空间 [metric:land_use_area_reserved_land_sqm]，占比 [metric:reserve_ratio]，并建议将该指标口径纳入后续控规研究讨论 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。这项机制的法定接口需要审慎处理，第七章专门讨论北京市 1601 战略留白与 1602 动态留白的适用条件——本方案不自行认定法定归类。
-- 城市版本化（City Versioning）：把城市更新分期按不可逆性而非时间排序：完全可逆的干预先做，高不可逆的干预必须等官方资料补齐后才允许进入下一阶段，并为每个阶段预设回滚触发条件 [data:geometry/phasing.geojson#PH-001] [metric:phase_count]。
+- 城市版本化（City Versioning）：把城市更新分期按不可逆性而非时间排序：可逆性最高的干预先做，高不可逆的干预必须等官方资料补齐后才允许进入下一阶段，并为每个阶段预设回滚触发条件 [data:geometry/phasing.geojson#PH-001] [metric:phase_count]。
 - 资料缺口即设计条件（Gap-as-Constraint）：组织方尚未发布官方红线与控规条件。本方案不把这写成免责声明，而是逐条转为"当前可做什么／补齐后才能做什么／补齐后要重算什么"的设计条件 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。
 
 空间上，京张遗址公园成为南北贯通的开物主轴，三条开物横缝在三处重点区域跨轴缝合东西 [data:geometry/roads.geojson#RD-001]。三区按创新链环节分工：众智园承担全栈自主创新与治理话语权、AI原点社区承担原始创新到成果转化、大钟寺承担智能原生新业态；中关村科技服务翼供给要素与资本、小月河场景赋能翼承担场景验证 [data:geometry/key_areas.geojson#KEY-001]。这一分工与官方给三区指定的角色定位逐项对应，也与创新从原始研究到产业化的真实路径同构。
@@ -61,7 +61,7 @@ JINGZHANG OPENWORKS — A Versionable, Rollbackable, Reserve-Ready AI Innovation
 
 统筹研究范围（约43.6平方公里） 承担战略与生态判断 [metric:coordinated_research_area_sqm]。这一层的产出是产业生态体系、要素配置机制、区域协同关系和未来城市形态判断，不产出地块级空间结论。该范围的临时边界在本方案中作为 `analysis_helper` 记录于 `constraints.geojson`，而不放入 `site_boundary.geojson` [data:geometry/constraints.geojson#CN-010]。这个处理有一个技术理由：面积复算与用地覆盖校验以总体设计范围为分母，若把43.6平方公里并入边界图层，覆盖率与各项比例指标将全部失去意义。
 
-总体设计范围（约11.4平方公里） 承担控规深度的城市设计 [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001]。这一层产出空间结构、用地布局、更新框架、交通与市政体系、蓝绿公共空间和风貌引导。本方案的用地分区在这一层完成完整平面剖分：136个用地单元完整覆盖提交边界，无缝隙、无重叠，相邻单元共享边界坐标 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。这一范围的实际形状是一条1.33公里宽、9.71公里长的窄带（长宽比约1:7.3），这个几何特征直接决定了空间策略：任何"中心放射"式结构在这里都不成立，只有"一轴多缝"的线性组织能同时解决南北贯通与东西缝合。
+总体设计范围（约11.4平方公里） 承担控规深度的城市设计 [metric:site_area_sqm] [data:geometry/site_boundary.geojson#SITE-001]。这一层产出空间结构、用地布局、更新框架、交通与市政体系、蓝绿公共空间和风貌引导。本方案的用地分区在这一层完成平面剖分，相邻单元共享边界坐标、单元间无重叠；覆盖精度的真实数值与容差见第十二章 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。这一范围的实际形状是一条1.33公里宽、9.71公里长的窄带（长宽比约1:7.3），这个几何特征直接决定了空间策略：任何"中心放射"式结构在这里都不成立，只有"一轴多缝"的线性组织能同时解决南北贯通与东西缝合。
 
 重点区域范围（约368.4公顷） 承担规划综合实施方案深度的详细设计 [metric:key_area_count]。三处重点区域分别为众智园AI自主创新加速区（公告约192.1公顷，临时边界复算 [metric:key_area_zhongzhiyuan_ai_acceleration_area_sqm]）、北京AI原点社区（公告约104.3公顷，[metric:key_area_beijing_ai_origin_community_sqm]）、大钟寺AI产业聚集区（公告约72.0公顷，[metric:key_area_dazhongsi_ai_industry_cluster_sqm]）[data:geometry/key_areas.geojson#KEY-002]。复算值与公告值的差异来自临时边界精度，取得官方 KEY_AREA polygon 后必须整体重算。
 
@@ -107,7 +107,7 @@ JINGZHANG OPENWORKS — A Versionable, Rollbackable, Reserve-Ready AI Innovation
   暴露的问题：成功带来的租金上涨会挤出早期创业者与原有居民，即创新街区的自我侵蚀。
   本方案对应处理：编译区采用近校型街区把转化界面压到步行可达范围内；同时以留白用地上的可逆轻构提供低成本空间（对应画像P2），并把编译区归 v1、采取低扰动有机更新以降低对既有居民（画像P4）的挤出压力。
 - 英国·伦敦国王十字（King's Cross），铁路遗产用地的长周期城市更新。
-  为什么选它：本项目唯一可比的"铁路遗产作为更新主线"案例，且同为长周期分期开发。
+  为什么选它：与本项目最可比的"铁路遗产作为更新主线"案例，且同为长周期分期开发。
   可转化经验：铁路遗产可以成为公共空间主线而非障碍；分期开发的弹性使项目能容纳二十年间需求的变化。
   暴露的问题：该案例是单一主体持有大片土地才得以整体统筹；本带权属分散（尤其编译区涉及校区、园区、社区三类边界），不具备同样的统筹条件。
   本方案对应处理：开物主轴以遗址公园为主线，但分期不依赖统一开发主体——改为按不可逆性排序，使每个版本都能在现有权属格局下独立成立。
@@ -132,7 +132,7 @@ JINGZHANG OPENWORKS — A Versionable, Rollbackable, Reserve-Ready AI Innovation
   暴露的问题：机制的养成以十年计，短期内难以用建设投入替代；若只建空间不养机制，设施会闲置。
   本方案对应处理：把原点碑与开发者社区运营机制列为长期资产而非建设项目，并让 v0 版本的 R02（导视与荣誉展示系统）先于任何结构性建设启动——机制先行，空间跟上。
 - 中国·深圳西丽湖国际科教城，国内近校型科教产融合实践。
-  为什么选它：唯一的国内制度环境案例，其面临的权属与管理主体问题与本带编译区高度相似。
+  为什么选它：国内制度环境案例，其面临的权属与管理主体问题与本带编译区高度相似。
   可转化经验：国内制度环境下校区、园区、街区统筹实施的可行路径。
   暴露的问题：权属分割与管理主体不一使统筹实施进度受制于协调效率，物理规划先行往往等待机制落地。
   本方案对应处理：中缝以低扰动方式打通校区—园区日常联系，先做可逆性较高的慢行缝合，把需要多主体协调的结构性更新推到 v2 —— 使方案的第一步不必等待全部协调结果。
@@ -168,7 +168,7 @@ AI文化、AI社会、AI城市三者在本方案中的定义是操作性的，�
 
 总体设计范围是一条1.33公里宽、9.71公里长的窄带。这个几何事实排除了"中心—放射"型结构的可能，也解释了为什么公告把"南北贯通、东西连通"同时列为要求——在这种长宽比下，南北是连续性问题，东西是可达性问题，两者的解法不同。
 
-开物主轴沿京张铁路遗址公园南北贯通，全长9.59公里，是全带唯一的连续线索 [data:geometry/roads.geojson#RD-001]。主轴承担三重职能：连续慢行通道、线性公园、以及创新链的公共展示界面。主轴的核心带宽按130米组织线性公园，其中约46米宽的内带作为公共活动带，即连续慢行加停留加展示的复合界面 [data:geometry/public_space.geojson#PS-004]。
+开物主轴沿京张铁路遗址公园南北贯通，全长9.59公里，是全带的主要连续线索 [data:geometry/roads.geojson#RD-001]。主轴承担三重职能：连续慢行通道、线性公园、以及创新链的公共展示界面。主轴的核心带宽按130米组织线性公园，其中约46米宽的内带作为公共活动带，即连续慢行加停留加展示的复合界面 [data:geometry/public_space.geojson#PS-004]。
 
 三条开物横缝分别在三处重点区域跨轴缝合东西：北缝（众智园—清河，1,089米）、中缝（五道口—清华东路西口，1,102米）、南缝（大钟寺站四象限，1,296米）[data:geometry/roads.geojson#RD-004]。横缝不是新增道路，而是对既有断点的修补策略，具体线位为概念建议。
 
@@ -176,7 +176,7 @@ AI文化、AI社会、AI城市三者在本方案中的定义是操作性的，�
 
 ### 产业发展目标与功能布局（1.5.2.1）
 
-用地功能比例由136个用地单元复算得出，全部可追溯 [depth:land_use_layout]：
+用地功能比例由用地分区复算得出，全部可追溯 [depth:land_use_layout]：
 
 - 城镇住宅用地 [metric:land_use_area_housing_sqm]，占比约25.9%——这是既有城市地区的现实，说明本带不是产业新城而是嵌入成熟社区的更新工作。
 - 公园绿地 [metric:land_use_area_park_green_sqm]，占比约20.3%，主体是开物主轴线性公园。
@@ -245,13 +245,13 @@ AI文化、AI社会、AI城市三者在本方案中的定义是操作性的，�
 
 AI场景锚点：S07（AI导览与文化叙事，清河文化与自主创新叙事的公共解说）、S08（标准与治理公开展示）、测试场景T1（滨水低速测试廊，受审批、可撤回的低速试点接口）。
 
-实施风险与版本归属：归 v2 结构更新版（36个月以后），高不可逆性。本区结论受资料缺口限制最深——跨环慢行涉及五环路管理主体，国家平台类空间需求涉及未公开的具体安排，结构性更新涉及权属与控规条件。因此本区在官方红线、控规条件与权属资料补齐后必须重新论证 [data:geometry/phasing.geojson#PH-003] [metric:phase_v2_area_sqm]。
+实施风险与版本归属：归 阶段 v2（可逆性最低），高不可逆性。本区结论受资料缺口限制最深——跨环慢行涉及五环路管理主体，国家平台类空间需求涉及未公开的具体安排，结构性更新涉及权属与控规条件。因此本区在官方红线、控规条件与权属资料补齐后必须重新论证 [data:geometry/phasing.geojson#PH-003] [metric:stage_v2_reference_district_sqm]。
 
 ### 编译区：北京AI原点社区
 
 定位：世界级AI创新生态，原始创新到成果转化。公告要求建设"更具人才吸引力、创新活力、科技成果转化能力的近校型人工智能创新街区"，围绕清华、北大、中科院等高校的原始创新策源成果规划孵化区与转化区。公告面积约104.3公顷，临时边界复算 [metric:key_area_beijing_ai_origin_community_sqm]。
 
-空间结构：本区是三区中唯一直接贴合高校的一段，空间组织的核心是界面而非园区。建议形成"校区界面—转化街—社区界面"的三层过渡：靠高校一侧布置成果孵化与展示，中部为转化街（可逆轻构与灵活空间为主），靠社区一侧衔接居住与生活服务 [metric:land_use_area_education_link_sqm]。
+空间结构：本区是三区中直接贴合高校的一段，空间组织的核心是界面而非园区。建议形成"校区界面—转化街—社区界面"的三层过渡：靠高校一侧布置成果孵化与展示，中部为转化街（可逆轻构与灵活空间为主），靠社区一侧衔接居住与生活服务 [metric:land_use_area_education_link_sqm]。
 
 建筑更新：本区权属最复杂（校区、园区、社区三类边界叠加），因此明确采取低扰动有机更新：以留改为主，可逆轻构先行，不从拆除入手。城市更新（建筑拆改留）方案的具体分类须待权属与现状建筑资料补齐后才能形成，本方案只给可逆性判断 [depth:retain_renovate_demolish]。
 
@@ -261,7 +261,7 @@ AI场景锚点：S07（AI导览与文化叙事，清河文化与自主创新叙�
 
 AI场景锚点：S05（企业服务Copilot，面向初创与转化团队的公共服务导航）、S06（成果转化展示，开源贡献与论文—产品链路的公开陈列）、测试场景T2（校区—园区慢行评估，以人本尺度复核缝合效果）。
 
-实施风险与版本归属：归 v1 缝合联通版（12–36个月），中不可逆性。慢行缝合与公共空间联通可先行，建筑更新待资料补齐。本区风险主要在权属协调而非技术 [metric:phase_v1_area_sqm]。
+实施风险与版本归属：归 阶段 v1（可逆性中等），中不可逆性。慢行缝合与公共空间联通可先行，建筑更新待资料补齐。本区风险主要在权属协调而非技术 [metric:stage_v1_reference_district_sqm]。
 
 ### 发行区：大钟寺AI产业聚集区
 
@@ -277,7 +277,7 @@ AI场景锚点：S05（企业服务Copilot，面向初创与转化团队的公�
 
 AI场景锚点：S01（机器人低速配送，四象限连通后的低速配送与装卸组织）、S02（智能终端体验，商业界面上的智能原生消费场景）、测试场景T3（四象限步行连通复核，改造前后步行连续性对比测量）。
 
-实施风险与版本归属：归 阶段 v0，可逆性最高。导视、铺装、轻构筑与场景试点的可逆性较高，但均须完成前置核验并取得主管部门批准后方可启动，且铺装类干预的复原有成本与工期，不属完全可逆。本区是全带建议的首个可回滚试点，其价值不仅在于自身改善，更在于验证城市版本化机制本身是否成立 [data:geometry/phasing.geojson#PH-001] [metric:phase_v0_area_sqm]。
+实施风险与版本归属：归 阶段 v0，可逆性最高。导视、铺装、轻构筑与场景试点的可逆性较高，但均须完成前置核验并取得主管部门批准后方可启动，且铺装类干预的复原有成本与工期，不属完全可逆。本区是全带建议的首个可回滚试点，其价值不仅在于自身改善，更在于验证城市版本化机制本身是否成立 [data:geometry/phasing.geojson#PH-001] [metric:stage_v0_reference_district_sqm]。
 
 ### 自选区域场景设计（可选项）
 
@@ -551,9 +551,9 @@ T4 是本方案三项机制中最需要实证的一项——留白率作为规�
 
 因此本方案把分期表达为软件版本发布：v0/v1/v2 按干预的不可逆性排序，每个版本有明确的变更内容（changelog）、验收指标和回滚触发条件 [metric:phase_count]。
 
-- 阶段 v0（可逆性最高），空间参照发行区 [metric:phase_v0_area_sqm] [data:geometry/phasing.geojson#PH-001]。内容限于可逆性较高的干预：导视、铺装、轻构筑、场景试点。对官方红线的依赖程度最低，但仍须完成权属、交通组织、市政、无障碍与文保核验并取得主管部门批准后方可启动。
-- 阶段 v1（可逆性中等），空间参照编译区 [metric:phase_v1_area_sqm] [data:geometry/phasing.geojson#PH-002]。内容为慢行缝合、公共空间联通、弹性预留空间试运营。依赖道路断面与权属资料。
-- 阶段 v2（可逆性最低），空间参照源码区 [metric:phase_v2_area_sqm] [data:geometry/phasing.geojson#PH-003]。内容为结构性更新与产业载体建设。必须在官方红线、控规条件与权属资料补齐后重新论证。
+- 阶段 v0（可逆性最高），空间参照发行区 [metric:stage_v0_reference_district_sqm] [data:geometry/phasing.geojson#PH-001]。内容限于可逆性较高的干预：导视、铺装、轻构筑、场景试点。对官方红线的依赖程度最低，但仍须完成权属、交通组织、市政、无障碍与文保核验并取得主管部门批准后方可启动。
+- 阶段 v1（可逆性中等），空间参照编译区 [metric:stage_v1_reference_district_sqm] [data:geometry/phasing.geojson#PH-002]。内容为慢行缝合、公共空间联通、弹性预留空间试运营。依赖道路断面与权属资料。
+- 阶段 v2（可逆性最低），空间参照源码区 [metric:stage_v2_reference_district_sqm] [data:geometry/phasing.geojson#PH-003]。内容为结构性更新与产业载体建设。必须在官方红线、控规条件与权属资料补齐后重新论证。
 
 关于时间与"立即"的说明。 本方案早期稿把三个阶段标注为"0–12 个月／12–36 个月／36 个月以后"，并称 v0"不依赖官方红线、可立即启动、完全可逆"。这三个表述都已收回，理由如下：
 
@@ -589,7 +589,7 @@ T4 是本方案三项机制中最需要实证的一项——留白率作为规�
 - R07 北缝跨环慢行研究与实施（源码区）。内容：跨五环慢行方案研究。前置 gate：五环路管理主体协调、区域一体化研究结论、桥隧或地道方案的工程可行性论证（本方案不提供该论证）、环境与安全评估。责任主体类型：市级道路管理部门＋区级规划部门。量级：跨线交通设施级。验收指标：跨环步行与骑行连通性、安全性评估结论。回滚动作：本项目一旦实施难以回滚，因此其准入门槛应最高。恢复标准：不适用——正因如此，本方案主张先完成 v0／v1 验证再论证本项目。
 - R08 产业载体结构性更新（三区）。内容：产业空间载体更新。前置 gate：官方红线、控规条件、土地权属、现状建筑底数、拆改留专项方案、市政承载力评估全部补齐后重新论证。责任主体类型：区级政府统筹＋土地权利人＋实施主体。量级：结构性更新级。验收指标：须在补齐资料后另行确定。回滚动作：不可回滚。恢复标准：不适用。
 
-关于 phasing 图层与项目范围不一致的说明。 `geometry/phasing.geojson` 的三个面（PH-001/002/003）当前分别等于三处重点区域的范围（KEY-003/002/001），是"阶段所参照的片区"，不是 R01–R08 各项目的实际作用范围。例如 R02 覆盖主轴全线、R03 分布在 8 处节点、R05 分散在三区的弹性预留组团，这些都无法用一个片区面表达。因此 [metric:phase_v0_area_sqm] 等三项指标应理解为阶段参照片区面积，而不是项目占地面积。取得官方边界并确定项目边界后，应改为按项目 footprint 建面、附 `project_id` 与 `reversibility` 字段，再按阶段求并集计算面积；在此之前，本方案不把片区面积当作项目规模使用。
+关于 phasing 图层与项目范围不一致的说明。 `geometry/phasing.geojson` 的三个面（PH-001/002/003）当前分别等于三处重点区域的范围（KEY-003/002/001），是"阶段所参照的片区"，不是 R01–R08 各项目的实际作用范围。例如 R02 覆盖主轴全线、R03 分布在 8 处节点、R05 分散在三区的弹性预留组团，这些都无法用一个片区面表达。因此 [metric:stage_v0_reference_district_sqm] 等三项指标应理解为阶段参照片区面积，而不是项目占地面积。取得官方边界并确定项目边界后，应改为按项目 footprint 建面、附 `project_id` 与 `reversibility` 字段，再按阶段求并集计算面积；在此之前，本方案不把片区面积当作项目规模使用。
 
 ### 实施政策建议与公众参与
 
@@ -607,7 +607,7 @@ T4 是本方案三项机制中最需要实证的一项——留白率作为规�
 - 开物年会 OPENWORKS SUMMIT（年度，源码区开物台）。AI治理与标准的国际研讨。对应源码区"AI治理全球话语权"定位。
 - 原点开源周 ORIGIN OPEN WEEK（年度，编译区原点碑）。开源贡献者集会与荣誉墙更新。这是把"贡献可记忆"原则做成周期性事件。
 - 发行日 RELEASE DAY（季度，发行区发行塔）。智能原生新业态的公开发布与试用。
-- 版本公示 CHANGELOG REVIEW（每版本，三处缝合广场）。更新分期的公众参与与回滚复核。这一项是本方案独有的——它把城市更新的版本机制变成公共活动。
+- 版本公示 CHANGELOG REVIEW（每版本，三处缝合广场）。更新分期的公众参与与回滚复核。这一项把更新分期的复核过程本身变成公共活动，使公众参与发生在与空间改造同一地点、同一节奏上。
 
 开发者社区运营机制：建议以开源协作的方式组织本带的持续研究——公开数据目录、公开场景接口、公开评审记录。本次面向智能体的开源征集本身已经建立了这个机制的雏形，建议延续而非另起。
 
@@ -653,6 +653,8 @@ AI场景开放运营机制：建议建立"申请—审批—试点—复核—�
 
 绿地与公共空间：绿地面积 [metric:green_space_area_sqm]、绿地比例 [metric:green_ratio]；公共空间面积 [metric:public_space_area_sqm]、公共空间比例 [metric:public_space_ratio]。两项比例均为设计建议值，不是审定绿地率或公共空间率控制指标。绿地比例的设计含义是人才生活品质的空间基础；公共空间比例的设计含义是创新交往的发生条件——创新的非正式交流需要场所，而这个场所在本带只能是主轴 [data:geometry/green_space.geojson#GS-004] [data:geometry/public_space.geojson#PS-003]。
 
+关于 `public_space` 图层的本体，需要一处更正。 经核查，该图层与概念体量图层存在 [metric:public_space_building_overlap_sqm] 的重叠（主要在主轴公共活动带 PS-004 与三个概念体量之间）。这说明 `public_space` 的准确本体是公共活动影响带，而不是纯粹的开放空间——它包含了活动可达但可能有构筑物占地的范围。因此本方案同时给出两个口径：影响带口径 [metric:public_space_area_sqm]（含重叠），以及扣除概念体量占地后的净开放空间 [metric:public_open_space_area_sqm]、占比 [metric:public_open_space_ratio]。使用时须明确采用哪一个：讨论可达性用影响带口径，讨论开放空间指标用净口径。两者都不是审定控制指标。
+
 留白率 [metric:reserve_ratio]：分子是留白用地面积，分母是提交边界面积。设计含义已在第七章说明——以法定用地类型承接产业代际更替的空间弹性。
 
 建筑指标：研究体量基底面积 [metric:building_footprint_area_sqm]、研究体量占地比 [metric:building_coverage_ratio_study]。两项 confidence 均为 low，明确不代表现状或规划建筑规模，仅用于说明更新对象的空间量级 [data:geometry/buildings.geojson#BD-010]。
@@ -661,7 +663,7 @@ AI场景开放运营机制：建议建立"申请—审批—试点—复核—�
 
 重点区域面积：[metric:key_area_count] 处重点区域，分别为 [metric:key_area_zhongzhiyuan_ai_acceleration_area_sqm]、[metric:key_area_beijing_ai_origin_community_sqm]、[metric:key_area_dazhongsi_ai_industry_cluster_sqm] [data:geometry/key_areas.geojson#KEY-002]。三项与公告面积的差值均来自临时边界精度。
 
-分期指标：[metric:phase_count] 个版本，面积分别为 [metric:phase_v0_area_sqm]、[metric:phase_v1_area_sqm]、[metric:phase_v2_area_sqm] [data:geometry/phasing.geojson#PH-002]。
+分期指标：[metric:phase_count] 个版本，面积分别为 [metric:stage_v0_reference_district_sqm]、[metric:stage_v1_reference_district_sqm]、[metric:stage_v2_reference_district_sqm] [data:geometry/phasing.geojson#PH-002]。
 
 内容计数指标：场景卡 [metric:scenario_card_count] 张（要求不少于10）、产业测试验证场景 [metric:industry_test_scenario_count] 个（要求不少于3）、用户画像 [metric:user_persona_count] 类（要求不少于5）、AI朝圣地标 [metric:pilgrimage_landmark_count] 个（要求不少于3）、全球案例 [metric:global_case_study_count] 个（要求5–8）。这五项反映任务书数量要求的满足情况。
 
@@ -683,7 +685,7 @@ AI场景开放运营机制：建议建立"申请—审批—试点—复核—�
 取得官方 SITE_BOUNDARY 与三处 KEY_AREA polygon 后，须按以下顺序整体重算，不得只替换单个文件：
 
 - 替换 `site_boundary.geojson` 与 `key_areas.geojson`，并将 `geometry_role` 改为 `official_constraint`、`official_boundary` 改为 `true`、移除 `boundary_precision`。
-- 以新边界重新执行平面剖分，重建 `land_use.geojson`（136个单元的数量与形态都会变化）。
+- 以新边界重新执行平面剖分，重建 `land_use.geojson`（用地单元的数量与形态都会变化）。
 - 由新的用地分区重新派生 `green_space.geojson`、`public_space.geojson`、`buildings.geojson`、`roads.geojson`、`phasing.geojson`。
 - 更新 `constraints.geojson` 中的临时边界提示项。
 - 重算 `metrics.json` 全部 32 项 known 指标，并把 confidence 由 medium 提升至与官方数据相符的等级。

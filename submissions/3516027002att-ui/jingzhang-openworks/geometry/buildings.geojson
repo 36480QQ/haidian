@@ -8,16 +8,18 @@
       "properties": {
         "id": "BD-001",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 1（留改为主）",
+        "name_zh": "源码区概念体量 1（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8018.985,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -109,16 +111,18 @@
       "properties": {
         "id": "BD-002",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 2（留改为主）",
+        "name_zh": "源码区概念体量 2（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 7998.611,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -206,16 +210,18 @@
       "properties": {
         "id": "BD-003",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 3（留改为主）",
+        "name_zh": "源码区概念体量 3（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -299,16 +305,18 @@
       "properties": {
         "id": "BD-004",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 4（留白用地可逆轻构）",
+        "name_zh": "源码区概念体量 4（弹性预留空间·可逆轻构方向）",
         "building_type": "incubator",
-        "reversibility": "reversible_light",
-        "renewal_action_zh": "可逆轻构（建议）",
+        "massing_treatment": "reversible_light",
+        "reversibility": "high",
+        "treatment_note_zh": "可逆轻构方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "16",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 3669.609,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -352,16 +360,18 @@
       "properties": {
         "id": "BD-005",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 5（留改为主）",
+        "name_zh": "源码区概念体量 5（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -445,16 +455,18 @@
       "properties": {
         "id": "BD-006",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 6（留白用地可逆轻构）",
+        "name_zh": "源码区概念体量 6（弹性预留空间·可逆轻构方向）",
         "building_type": "incubator",
-        "reversibility": "reversible_light",
-        "renewal_action_zh": "可逆轻构（建议）",
+        "massing_treatment": "reversible_light",
+        "reversibility": "high",
+        "treatment_note_zh": "可逆轻构方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "16",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 5814.296,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -514,16 +526,18 @@
       "properties": {
         "id": "BD-007",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 7（留改为主）",
+        "name_zh": "源码区概念体量 7（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 3955.242,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -591,16 +605,18 @@
       "properties": {
         "id": "BD-008",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "源码区更新研究体量 8（留白用地可逆轻构）",
+        "name_zh": "源码区概念体量 8（弹性预留空间·可逆轻构方向）",
         "building_type": "incubator",
-        "reversibility": "reversible_light",
-        "renewal_action_zh": "可逆轻构（建议）",
+        "massing_treatment": "reversible_light",
+        "reversibility": "high",
+        "treatment_note_zh": "可逆轻构方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "16",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 7212.778,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -684,16 +700,18 @@
       "properties": {
         "id": "BD-009",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 9（留改为主）",
+        "name_zh": "编译区概念体量 9（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0804",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -777,16 +795,18 @@
       "properties": {
         "id": "BD-010",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 10（留改为主）",
+        "name_zh": "编译区概念体量 10（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 7566.128,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -862,16 +882,18 @@
       "properties": {
         "id": "BD-011",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 11（留改为主）",
+        "name_zh": "编译区概念体量 11（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8258.568,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -963,16 +985,18 @@
       "properties": {
         "id": "BD-012",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 12（留改为主）",
+        "name_zh": "编译区概念体量 12（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0804",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1056,16 +1080,18 @@
       "properties": {
         "id": "BD-013",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 13（留改为主）",
+        "name_zh": "编译区概念体量 13（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "0802",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 7566.995,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1141,16 +1167,18 @@
       "properties": {
         "id": "BD-014",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "编译区更新研究体量 14（留白用地可逆轻构）",
+        "name_zh": "编译区概念体量 14（弹性预留空间·可逆轻构方向）",
         "building_type": "incubator",
-        "reversibility": "reversible_light",
-        "renewal_action_zh": "可逆轻构（建议）",
+        "massing_treatment": "reversible_light",
+        "reversibility": "high",
+        "treatment_note_zh": "可逆轻构方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "16",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 6769.903,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1222,16 +1250,18 @@
       "properties": {
         "id": "BD-015",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "发行区更新研究体量 15（留白用地可逆轻构）",
+        "name_zh": "发行区概念体量 15（弹性预留空间·可逆轻构方向）",
         "building_type": "incubator",
-        "reversibility": "reversible_light",
-        "renewal_action_zh": "可逆轻构（建议）",
+        "massing_treatment": "reversible_light",
+        "reversibility": "high",
+        "treatment_note_zh": "可逆轻构方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "16",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1315,16 +1345,18 @@
       "properties": {
         "id": "BD-016",
         "layer": "BUILDING_FOOTPRINT",
-        "name_zh": "发行区更新研究体量 16（留改为主）",
+        "name_zh": "发行区概念体量 16（以留改为主方向）",
         "building_type": "mixed_use",
-        "reversibility": "renewal_study",
-        "renewal_action_zh": "留改为主（建议）",
+        "massing_treatment": "retain_adapt_oriented",
+        "reversibility": "medium",
+        "treatment_note_zh": "以留改为主方向（建议）",
+        "represents_existing_building": false,
         "host_land_use_code": "05",
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8278.208,
-        "usage_note": "研究体量示意，不构成建筑高度、容积率、拆改留或工程结论；需在取得权属与现状建筑底数后重做。"
+        "usage_note": "agent 生成的概念体量示意，不对应任何现状建筑，不构成建筑高度、容积率、拆改留或工程结论；取得权属与现状建筑底数后须整体重做。"
       },
       "geometry": {
         "type": "Polygon",

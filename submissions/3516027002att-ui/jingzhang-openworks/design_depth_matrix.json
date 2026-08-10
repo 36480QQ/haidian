@@ -175,7 +175,7 @@
         "LAND_USE_TOPOLOGY",
         "LAND_USE_COVERAGE"
       ],
-      "evidence_summary_zh": "136 个用地单元由提交边界平面剖分而来，相邻单元共享边界坐标，对称差 0.000 sqm、重叠 0.000 sqm；8 类用地代码全部取自规范子集。"
+      "evidence_summary_zh": "146 个用地单元由提交边界平面剖分而来，相邻单元共享边界坐标。单元间重叠 0.000 sqm（真零）；边界内未覆盖 84.27 sqm、越界 103.03 sqm，对称差 187.30 sqm，约为场地面积的 1.6e-05，在仓库 1,141 sqm 容差内；8 类用地代码取自规范子集，但缺 1207 道路用地，比例仅为扣除道路前的概念配比。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -485,9 +485,9 @@
       ],
       "metric_refs": [
         "phase_count",
-        "phase_v0_area_sqm",
-        "phase_v1_area_sqm",
-        "phase_v2_area_sqm"
+        "stage_v0_reference_district_sqm",
+        "stage_v1_reference_district_sqm",
+        "stage_v2_reference_district_sqm"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -524,9 +524,9 @@
       ],
       "metric_refs": [
         "phase_count",
-        "phase_v0_area_sqm",
-        "phase_v1_area_sqm",
-        "phase_v2_area_sqm"
+        "stage_v0_reference_district_sqm",
+        "stage_v1_reference_district_sqm",
+        "stage_v2_reference_district_sqm"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -591,7 +591,7 @@
         "METRIC_RECOMPUTATION",
         "LAND_USE_COVERAGE"
       ],
-      "evidence_summary_zh": "32 项 known 指标全部可由 geometry/*.geojson 在 EPSG:4548 下复算，并由 scripts/spatial_review.py 独立复现；6 项 unknown 对应官方资料缺口。"
+      "evidence_summary_zh": "35 项 known 指标由本方案脚本在 EPSG:4548 下复算并可重跑，其中 6 项由仓库 spatial_review.py 交叉验证；6 项 unknown 对应官方资料缺口，并逐条转为三段式设计条件。"
     },
     {
       "item_id": "risk_missing_data",

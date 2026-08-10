@@ -86,7 +86,7 @@
         "SPATIAL_REVIEW",
         "LAND_USE_TOPOLOGY"
       ],
-      "response_summary_zh": "核心回应：以「16 留白用地」作为产业代际缓冲，以城市版本化按不可逆性组织更新，使空间供给能跟上 18–24 个月的技术代际，而不必推翻整体布局。"
+      "response_summary_zh": "核心回应：以弹性预留空间作为产业代际缓冲，以按不可逆性排序的更新分期组织实施，使空间供给能容纳尚未确定的技术需求，而不必推翻整体布局；法定归类须由控规编制单位判定（北京 1601/1602 适用条件不同）。"
     },
     {
       "requirement_id": "1.3.3",
@@ -205,7 +205,7 @@
         "LAND_USE_COVERAGE",
         "METRIC_RECOMPUTATION"
       ],
-      "response_summary_zh": "提交边界即总体设计范围；136 个用地单元完整覆盖该边界，对称差与重叠均为 0.000 sqm。"
+      "response_summary_zh": "提交边界即总体设计范围；146 个用地单元覆盖该边界。单元间重叠 0.000 sqm（真零）；边界内未覆盖 84.27 sqm、越界 103.03 sqm，对称差 187.30 sqm，约为场地面积的 1.6e-05，在仓库 1,141 sqm 容差内。"
     },
     {
       "requirement_id": "1.4.3",
@@ -603,7 +603,7 @@
       "metrics": [
         "key_area_zhongzhiyuan_ai_acceleration_area_sqm",
         "land_use_area_reserved_land_sqm",
-        "phase_v2_area_sqm"
+        "stage_v2_reference_district_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -644,7 +644,7 @@
       "metrics": [
         "key_area_beijing_ai_origin_community_sqm",
         "land_use_area_education_link_sqm",
-        "phase_v1_area_sqm"
+        "stage_v1_reference_district_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -685,7 +685,7 @@
       "metrics": [
         "key_area_dazhongsi_ai_industry_cluster_sqm",
         "land_use_area_commercial_service_sqm",
-        "phase_v0_area_sqm"
+        "stage_v0_reference_district_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -930,9 +930,9 @@
       ],
       "metrics": [
         "phase_count",
-        "phase_v0_area_sqm",
-        "phase_v1_area_sqm",
-        "phase_v2_area_sqm",
+        "stage_v0_reference_district_sqm",
+        "stage_v1_reference_district_sqm",
+        "stage_v2_reference_district_sqm",
         "pilgrimage_landmark_count"
       ],
       "drawings": [

@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "openworks_phasing_versions",
+  "name": "openworks_phasing_stages",
   "features": [
     {
       "type": "Feature",
@@ -9,15 +9,19 @@
         "id": "PH-001",
         "layer": "PHASE",
         "phase_version": "v0",
-        "name_zh": "v0 可逆启动版（0-12个月）",
+        "name_zh": "阶段 v0（可逆性最高）",
         "irreversibility": "low",
-        "rollback_trigger_zh": "指标未达阈值或official资料与假设冲突时回滚该版本增量。",
+        "reference_district_zh": "发行区",
+        "reference_district_only": true,
+        "geometry_meaning_zh": "本面为该阶段的参照片区（等于对应重点区域范围），不是该阶段各项目的实际作用范围。取得官方边界并确定项目边界后，应改为按项目 footprint 建面并附 project_id 与 reversibility。",
+        "reference_area_sqm": 720454.219,
+        "rollback_trigger_zh": "验收指标未达阈值，或官方资料与本阶段假设冲突时，回滚该阶段增量；各项目的具体阈值、观测期与恢复验收标准见 proposal.md 更新项目表，阈值须由专业团队结合实测基线填写。",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 720454.219,
-        "scope_note_zh": "导视、铺装、轻构筑、场景试点等完全可逆干预；不依赖官方红线。",
-        "usage_note": "分期为概念建议，不构成开发时序、投资或审批结论。"
+        "scope_note_zh": "导视、铺装、轻构筑、场景试点等可逆性较高的干预。对官方红线依赖最低，但仍须完成权属、交通组织、市政、无障碍与文保核验并取得主管部门批准后启动。",
+        "usage_note": "阶段划分为概念建议，按可逆性排序而非时间排序，不附时间跨度，不构成开发时序、投资测算或审批结论。"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,15 +58,19 @@
         "id": "PH-002",
         "layer": "PHASE",
         "phase_version": "v1",
-        "name_zh": "v1 缝合联通版（12-36个月）",
+        "name_zh": "阶段 v1（可逆性中等）",
         "irreversibility": "medium",
-        "rollback_trigger_zh": "指标未达阈值或official资料与假设冲突时回滚该版本增量。",
+        "reference_district_zh": "编译区",
+        "reference_district_only": true,
+        "geometry_meaning_zh": "本面为该阶段的参照片区（等于对应重点区域范围），不是该阶段各项目的实际作用范围。取得官方边界并确定项目边界后，应改为按项目 footprint 建面并附 project_id 与 reversibility。",
+        "reference_area_sqm": 1043236.909,
+        "rollback_trigger_zh": "同上；本阶段的弹性预留试运营须先完成制度桥接清单（法定归类判定、准入主体、许可路径、期限、规模是否计入双控、复原责任、退出触发、公众监督）。",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 1043236.909,
-        "scope_note_zh": "慢行缝合、公共空间联通、留白用地试运营；部分依赖道路与权属资料。",
-        "usage_note": "分期为概念建议，不构成开发时序、投资或审批结论。"
+        "scope_note_zh": "慢行缝合、公共空间联通、弹性预留空间试运营；依赖道路断面与权属资料。",
+        "usage_note": "阶段划分为概念建议，按可逆性排序而非时间排序，不附时间跨度，不构成开发时序、投资测算或审批结论。"
       },
       "geometry": {
         "type": "Polygon",
@@ -99,15 +107,19 @@
         "id": "PH-003",
         "layer": "PHASE",
         "phase_version": "v2",
-        "name_zh": "v2 结构更新版（36个月以后）",
+        "name_zh": "阶段 v2（可逆性最低）",
         "irreversibility": "high",
-        "rollback_trigger_zh": "指标未达阈值或official资料与假设冲突时回滚该版本增量。",
+        "reference_district_zh": "源码区",
+        "reference_district_only": true,
+        "geometry_meaning_zh": "本面为该阶段的参照片区（等于对应重点区域范围），不是该阶段各项目的实际作用范围。取得官方边界并确定项目边界后，应改为按项目 footprint 建面并附 project_id 与 reversibility。",
+        "reference_area_sqm": 1929201.877,
+        "rollback_trigger_zh": "本阶段干预不可回滚，因此准入门槛最高：须在资料补齐后重新论证，不得由本方案的概念结论直接进入实施。",
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 1929201.877,
         "scope_note_zh": "结构性更新与产业载体建设；必须在官方红线、控规与权属资料补齐后重新论证。",
-        "usage_note": "分期为概念建议，不构成开发时序、投资或审批结论。"
+        "usage_note": "阶段划分为概念建议，按可逆性排序而非时间排序，不附时间跨度，不构成开发时序、投资测算或审批结论。"
       },
       "geometry": {
         "type": "Polygon",
