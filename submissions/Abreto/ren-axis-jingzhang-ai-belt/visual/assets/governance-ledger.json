@@ -1,7 +1,7 @@
 {
  "schema_version": "1.0",
  "package_id": "ren-axis-jingzhang-ai-belt",
- "note_zh": "18项按《北京市城市更新项目库管理办法（试行）》口径接入市、区两级项目库（条件门齐备申报入库、未达标动态出库），并设3年评估—6年换装—不达标回退的自适应周期。台账为概念级治理模板：权属状态均为待核验、KPI基线均待试点前实测冻结、责任仅列类型不指认机构（A为依法定程序最终确认的主管或业主责任主体）；实体项目走「条件门—验收—停工复核」，AI场景走「黄/红牌—人工接管—恢复—退役」。本文件为 visual 台账面板与 A3 台账页的同源机器可读数据；human_review/no_ai_alternative/appeal_channel 三项字段完备率指标由本文件复算（公式见 metrics.json），量的是设计承诺完备性、非运行实测。",
+ "note_zh": "18项按《北京市城市更新项目库管理办法（试行）》口径接入市、区两级项目库（条件门齐备申报入库、未达标动态出库），并设3年评估—6年换装—不达标回退的自适应周期。台账为概念级治理模板：权属状态均为待核验、KPI基线均待试点前实测冻结、责任仅列类型不指认机构（A为依法定程序最终确认的主管或业主责任主体）；实体项目走「条件门—验收—停工复核」，AI场景走「黄/红牌—人工接管—恢复—退役」。本文件为 visual 台账面板与 A3 台账页的同源机器可读数据；human_review/no_ai_alternative/appeal_channel 三项字段完备率由本文件的 field_completeness 直接统计（分子为该字段非空的场景数、分母为场景总数），它们是本文件的字段统计、不是 metrics.json 的登记指标，量的是设计承诺完备性、非运行实测。",
  "language_note": "场景与项目台账字段目前仅有中文；画像核验表为中英双语。English readers: the persona table below is bilingual; the scenario and project ledgers are currently Chinese-only.",
  "executable_pilot_cards": {
   "note_zh": "三张可执行卡回应公开意见通道第 002 号意见（issue #215）。可交付的是字段结构、冻结机制与责任归属；阈值数值必须来自试点前的实测基线，本包不编造数值——SC-12 是例外，它的成功口径是包内一致性，无需等待试点即可执行。",
@@ -101,8 +101,8 @@
     "name_en": "Urban model ground",
     "loc_zh": "众智园展示枢纽",
     "loc_en": "Zhongzhiyuan exhibition hub",
-    "baseline_zh": "本包当前指标即基线：30 项已复算指标与 4 项待正式数据补齐的控制指标，口径见 metrics.json",
-    "baseline_en": "This package's current metrics are the baseline: 30 recomputed metrics and 4 control values pending official data, as declared in metrics.json",
+    "baseline_zh": "本包当前指标即基线：50 项已复算指标与 4 项待正式数据补齐的控制指标，口径见 metrics.json",
+    "baseline_en": "This package's current metrics are the baseline: 50 recomputed metrics and 4 control values pending official data, as declared in metrics.json",
     "window_zh": "随版本 K 标滚动；每次官方数据到位触发一次整包重算与展示更新",
     "window_en": "Rolls with each version K-marker; every arrival of official data triggers one whole-package recomputation and display update",
     "success_zh": "展示数值与 metrics.json 逐位一致率 100%，且待补齐指标在展示层不出现数值——这是可立即执行的硬性口径，不需等试点",
@@ -669,7 +669,7 @@
    "level": "中",
    "tenure": "公园及沿线用地（多主体待核验）",
    "pre": "与遗址公园既成工程界面衔接+绿化占掘许可",
-   "need": "既有绿廊使用观测与断点复核（公园二期已于2026-08建成开放）",
+   "need": "既有绿廊使用观测与断点复核（公园二期建成开放见政务发布，官方未给具体日期）",
    "review": "分段联合验线",
    "accept": "全线贯通里程台账",
    "stop": "断点协调未果即分段开放"
