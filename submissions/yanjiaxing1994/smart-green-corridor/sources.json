@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional)."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional)."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "PUBLIC-CASE-STUDIES",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Global AI innovation district case studies (King's Cross, Kendall Square, one-north, DMC Seoul, 22@Barcelona, West Bund Shanghai, Nanshan S&T Park) sourced from publicly available planning documents, academic literature, and official district websites. Used for comparative reference only."
+    },
+    {
+      "id": "PUBLIC-SITE-INFO-ZHONGZHIYUAN",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Zhongzhiyuan Xuebei Park publicly disclosed building specifications (GFA 238,300 sqm, 5 R&D buildings, Green Building 3-Star, sunken plaza, sky gardens, commercial area) from developer promotional materials and planning public notices."
+    },
+    {
+      "id": "PUBLIC-SITE-INFO-DAZHONGSI",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Dazhongsi Sports Park (30,694 sqm, 500m track, courts) and Shunxin Garden (300m, native trees, cast-iron bell) publicly disclosed specifications from Haidian District government park opening announcements and news reports."
+    },
+    {
+      "id": "PUBLIC-SITE-INFO-WUDAOKOU",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Wudaokou district public information: 1.4 sqkm area, Tsinghua Science Park, CAS institutes, 1.3km Jing-Zhang Heritage Park segment, planned 1.3ha new green space from planning public notices."
+    },
+    {
+      "id": "PUBLIC-SITE-INFO-JINGZHANG-CORRIDOR",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Jing-Zhang Railway Heritage Park 9km green corridor, Three Paths One Green design, Phase II service coverage (70 communities, 450,000 residents) from Beijing Municipal planning documents and news reports."
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "source_type": "official_public",
+      "usage": "National urban design measures for urban character, public space, and building layout coordination (MOHURD). Used as professional standard reference."
+    },
+    {
+      "id": "MNR-LAND-USE-CLASSIFICATION",
+      "source_type": "official_public",
+      "usage": "National land use classification guide (MNR 2023) for land use coding in geometry layers."
+    }
+  ]
+}
