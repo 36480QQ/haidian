@@ -934,6 +934,187 @@
         "A-PROTOCOL-PROTOTYPE-001",
         "A-OPERATIONS-001"
       ]
+    },
+    "flagship_pilot_count": {
+      "status": "known",
+      "value": 5.0,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(unique concept flagship records FP01 through FP05)",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ],
+      "population_filter": "pilot_id in FP01..FP05 and status=conceptual_governance"
+    },
+    "flagship_scenario_bundle_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(distinct S01-S12 assigned to exactly one FP01..FP05 concept pilot) / 12",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_implementation_plan_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(flagship records with operator consortium, 90-day test, one-year indicators, funding/space/data boundaries and five lifecycle gates) / 5",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_lifecycle_gate_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(valid technology_breakthrough, real_world_test, first_use_procurement, market_diffusion and standard_output gates across five concept pilots) / 25",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_first_use_procurement_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(dated and legally reviewed first-use procurement or equivalent order records)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "No accountable buyer, procurement route, budget or completed first-use record is confirmed.",
+      "professional_follow_up_required": true
+    },
+    "flagship_market_diffusion_adoption_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(independently verified additional operators adopting a flagship package)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "The five pilots are concept proposals and no post-first-use adoption record exists.",
+      "professional_follow_up_required": true
+    },
+    "flagship_published_standard_output_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(published standards, specifications or reference toolkits with responsible issuers)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "Standard outputs are proposed lifecycle deliverables; no authorized issuer or publication exists.",
+      "professional_follow_up_required": true
+    },
+    "flagship_verified_public_benefit_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(flagship pilots with independently verified one-year public-benefit outcomes)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "No pilot is deployed and no dated baseline or one-year outcome series exists.",
+      "professional_follow_up_required": true
+    },
+    "network_role_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(distinct primary_network_role where network_role_anchor=true and role_anchor_status in concept_anchor_not_boundary,proxy_anchor_not_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
+      ],
+      "population_filter": "primary_network_role in SOURCE,STACK,PROVE,LIVE_MARKET,ENABLE,COMMONS"
+    },
+    "network_role_anchor_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(unique feature properties.id where network_role_anchor=true and role_anchor_status in concept_anchor_not_boundary,proxy_anchor_not_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
+      ],
+      "population_filter": "network_role_anchor=true"
     }
   }
 }

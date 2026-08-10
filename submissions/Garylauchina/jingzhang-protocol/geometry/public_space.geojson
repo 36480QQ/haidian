@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_protocol_public_space_scenarios_and_civic_protocol_v06",
+  "name": "jingzhang_six_role_coupled_public_space_and_scenarios_v07",
   "features": [
     {
       "type": "Feature",
@@ -26,7 +26,24 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 101200.0
+        "area_sqm_declared": 101200.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -80,7 +97,32 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 54000.0
+        "area_sqm_declared": 54000.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": true,
+        "role_anchor_status": "concept_anchor_not_boundary",
+        "role_anchor_reference_ids": [
+          "PROV-KEY-001",
+          "LU-BUILD-03",
+          "ROAD-BUILD-001",
+          "ROAD-SPINE-001",
+          "ROAD-INTERFACE-001"
+        ]
       },
       "geometry": {
         "type": "Polygon",
@@ -134,7 +176,32 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 109200.0
+        "area_sqm_declared": 109200.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": true,
+        "role_anchor_status": "concept_anchor_not_boundary",
+        "role_anchor_reference_ids": [
+          "PROV-KEY-002",
+          "LU-TEST-03",
+          "ROAD-TEST-001",
+          "ROAD-SPINE-001",
+          "ROAD-INTERFACE-001"
+        ]
       },
       "geometry": {
         "type": "Polygon",
@@ -188,7 +255,24 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 46800.0
+        "area_sqm_declared": 46800.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -242,7 +326,24 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 72000.0
+        "area_sqm_declared": 72000.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -296,7 +397,32 @@
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
         "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
-        "area_sqm_declared": 49400.0
+        "area_sqm_declared": 49400.0,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": true,
+        "role_anchor_status": "concept_anchor_not_boundary",
+        "role_anchor_reference_ids": [
+          "PROV-KEY-003",
+          "LU-LIVE-04",
+          "ROAD-LIVE-001",
+          "ROAD-SPINE-001",
+          "ROAD-INTERFACE-001"
+        ]
       },
       "geometry": {
         "type": "Polygon",
@@ -402,7 +528,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP02",
+        "flagship_primary_network_roles": [
+          "STACK"
+        ],
+        "scenario_network_roles": [
+          "STACK"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -491,7 +642,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "PROVE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S08"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP03",
+        "flagship_primary_network_roles": [
+          "PROVE"
+        ],
+        "scenario_network_roles": [
+          "PROVE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -578,7 +754,36 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "ENABLE",
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S07",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP01",
+        "flagship_primary_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -668,7 +873,36 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "ENABLE",
+        "supporting_network_roles": [
+          "SOURCE",
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S07",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP01",
+        "flagship_primary_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -754,7 +988,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "PROVE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S08"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP03",
+        "flagship_primary_network_roles": [
+          "PROVE"
+        ],
+        "scenario_network_roles": [
+          "PROVE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -840,7 +1099,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "PROVE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S08"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP03",
+        "flagship_primary_network_roles": [
+          "PROVE"
+        ],
+        "scenario_network_roles": [
+          "PROVE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -925,7 +1209,45 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "ENABLE",
+        "supporting_network_roles": [
+          "SOURCE",
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S07",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": true,
+        "flagship_package_id": "FP01",
+        "flagship_primary_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_network_roles": [
+          "SOURCE",
+          "ENABLE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping",
+        "role_anchor_status": "proxy_anchor_not_boundary",
+        "role_anchor_proxy_for": "zhongguancun_west_wing_enable_affinity",
+        "wing_boundary_status": "official_wing_boundary_not_encoded",
+        "role_anchor_reference_ids": [
+          "LU-TEST-01",
+          "ROAD-UPDATE-001",
+          "ROAD-SPINE-001",
+          "PHASE-002"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1010,7 +1332,41 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "PROVE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "SCENARIO-S08"
+        ],
+        "network_role_anchor": true,
+        "flagship_package_id": "FP03",
+        "flagship_primary_network_roles": [
+          "PROVE"
+        ],
+        "scenario_network_roles": [
+          "PROVE"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping",
+        "role_anchor_status": "proxy_anchor_not_boundary",
+        "role_anchor_proxy_for": "xiaoyuehe_east_wing_prove_affinity",
+        "wing_boundary_status": "official_wing_boundary_not_encoded",
+        "role_anchor_reference_ids": [
+          "LU-TEST-04",
+          "ROAD-UPDATE-001",
+          "ROAD-INTERFACE-001",
+          "PHASE-003"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1096,7 +1452,44 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "COMMONS",
+        "supporting_network_roles": [],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09"
+        ],
+        "network_role_anchor": true,
+        "flagship_package_id": "FP05",
+        "flagship_primary_network_roles": [
+          "COMMONS"
+        ],
+        "scenario_network_roles": [
+          "COMMONS"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping",
+        "role_anchor_status": "concept_anchor_not_boundary",
+        "role_anchor_reference_ids": [
+          "GREEN-LIVE-001",
+          "ROAD-SPINE-001",
+          "ROAD-INTERFACE-001",
+          "ROAD-UPDATE-001",
+          "PHASE-001"
+        ],
+        "commons_feedback_layer_for_flagship_package_ids": [
+          "FP01",
+          "FP02",
+          "FP03",
+          "FP04"
+        ],
+        "feedback_function": "public_observation_evidence_feedback_and_update"
       },
       "geometry": {
         "type": "Point",
@@ -1180,7 +1573,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP02",
+        "flagship_primary_network_roles": [
+          "STACK"
+        ],
+        "scenario_network_roles": [
+          "STACK"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -1267,7 +1685,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP04",
+        "flagship_primary_network_roles": [
+          "LIVE_MARKET"
+        ],
+        "scenario_network_roles": [
+          "LIVE_MARKET"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -1355,7 +1798,32 @@
         "deployment_status": "concept_only",
         "provisional_location": true,
         "usage_note": "基于临时粗略总体范围生成的概念建议；仅供方案讨论、展示与内部复算，不得解释为官方红线、法定用地、道路红线、地块边界或审批结论。",
-        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion."
+        "usage_note_en": "Conceptual design clipped to the provisional rough boundary for discussion, visualization and internal recalculation only; not an official redline, statutory land use, road alignment, parcel boundary or approval conclusion.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false,
+        "flagship_package_id": "FP04",
+        "flagship_primary_network_roles": [
+          "LIVE_MARKET"
+        ],
+        "scenario_network_roles": [
+          "LIVE_MARKET"
+        ],
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
       },
       "geometry": {
         "type": "Point",
@@ -1436,7 +1904,24 @@
         "deployment_status": "concept_only",
         "usage_note": "基于临时粗略 SITE/KEY 范围生成的协议街室概念证据窗口；边界为设计建议，不是现状测绘、官方红线、道路或地块边界、审批或实施承诺，正式测绘与运营共创后须重算。",
         "usage_note_en": "Conceptual protocol-street-room evidence window derived from provisional rough SITE/KEY geometry; not a survey, official redline, road or parcel boundary, approval, or implementation commitment, and subject to recalculation after survey and operational co-design.",
-        "area_sqm_declared": 13273.366
+        "area_sqm_declared": 13273.366,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1544,7 +2029,24 @@
         "deployment_status": "concept_only",
         "usage_note": "基于临时粗略 SITE/KEY 范围生成的协议街室概念证据窗口；边界为设计建议，不是现状测绘、官方红线、道路或地块边界、审批或实施承诺，正式测绘与运营共创后须重算。",
         "usage_note_en": "Conceptual protocol-street-room evidence window derived from provisional rough SITE/KEY geometry; not a survey, official redline, road or parcel boundary, approval, or implementation commitment, and subject to recalculation after survey and operational co-design.",
-        "area_sqm_declared": 23899.611
+        "area_sqm_declared": 23899.611,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1648,7 +2150,24 @@
         "deployment_status": "concept_only",
         "usage_note": "基于临时粗略 SITE/KEY 范围生成的协议街室概念证据窗口；边界为设计建议，不是现状测绘、官方红线、道路或地块边界、审批或实施承诺，正式测绘与运营共创后须重算。",
         "usage_note_en": "Conceptual protocol-street-room evidence window derived from provisional rough SITE/KEY geometry; not a survey, official redline, road or parcel boundary, approval, or implementation commitment, and subject to recalculation after survey and operational co-design.",
-        "area_sqm_declared": 23913.897
+        "area_sqm_declared": 23913.897,
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1726,7 +2245,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -1784,7 +2320,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -1842,7 +2395,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -1900,7 +2470,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -1958,7 +2545,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2016,7 +2620,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2074,7 +2695,24 @@
           "PHASE-001"
         ],
         "usage_note": "临时粗略边界内的七接口原型节点建议，仅表达空间化服务职责，不代表正式选址、道路点位、建设或运营承诺。",
-        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment."
+        "usage_note_en": "Conceptual seven-interface prototype node within provisional rough geometry; it spatializes a service duty but is not an official siting, road location, construction, or operating commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2165,7 +2803,24 @@
           "PHASE-001"
         ],
         "usage_note": "人物旅程为临时粗略边界内的概念审计路径，不是经测绘确认的无障碍路线、道路通行承诺或服务可用性证明。",
-        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability."
+        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2256,7 +2911,24 @@
           "PHASE-001"
         ],
         "usage_note": "人物旅程为临时粗略边界内的概念审计路径，不是经测绘确认的无障碍路线、道路通行承诺或服务可用性证明。",
-        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability."
+        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2351,7 +3023,24 @@
           "PHASE-001"
         ],
         "usage_note": "人物旅程为临时粗略边界内的概念审计路径，不是经测绘确认的无障碍路线、道路通行承诺或服务可用性证明。",
-        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability."
+        "usage_note_en": "Human journey is a conceptual audit route within provisional rough geometry, not a surveyed accessible route, road-access commitment, or proof of current service availability.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2437,7 +3126,24 @@
           "PHASE-001"
         ],
         "usage_note": "回程票/能力返还台为临时粗略范围内的概念公共责任节点，不代表既有机构、已确认运营主体、资金或建设承诺。",
-        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment."
+        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "STACK",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-BUILD-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2533,7 +3239,24 @@
           "PHASE-001"
         ],
         "usage_note": "回程票/能力返还台为临时粗略范围内的概念公共责任节点，不代表既有机构、已确认运营主体、资金或建设承诺。",
-        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment."
+        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "SOURCE",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-TEST-001"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
@@ -2625,7 +3348,24 @@
           "PHASE-001"
         ],
         "usage_note": "回程票/能力返还台为临时粗略范围内的概念公共责任节点，不代表既有机构、已确认运营主体、资金或建设承诺。",
-        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment."
+        "usage_note_en": "Return-ticket/capacity-return desk is a conceptual public-accountability node within provisional rough geometry, not an existing institution, confirmed operator, funding, or construction commitment.",
+        "network_model": "six_role_coupled_network_v0.7",
+        "primary_network_role": "LIVE_MARKET",
+        "supporting_network_roles": [
+          "COMMONS"
+        ],
+        "role_relation": "coupled_non_sequential",
+        "role_assignment_status": "conceptual_functional_role_not_official_siting",
+        "legacy_lifecycle_stage_status": "reference_compatibility_only_not_primary_network_role",
+        "role_source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-BJ-KW-THREE-AREAS-WINGS"
+        ],
+        "network_role_anchor_ids": [
+          "SCENARIO-S09",
+          "PUBLIC-LIVE-002"
+        ],
+        "network_role_anchor": false
       },
       "geometry": {
         "type": "Point",
