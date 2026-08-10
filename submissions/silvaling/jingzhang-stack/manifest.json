@@ -68,7 +68,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "9d8e96281fc7cfe2a9fa6ea9961a83d9e428bc9247e2bb222877795a2a3cb77a"
     },
     {
       "path": "sources.json",
@@ -320,6 +320,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
-    "precision": "provisional boundary; official redlines pending — all metrics must be recomputed after official polygons are published"
+    "precision": "provisional boundary; official redlines pending — all metrics must be recomputed after official polygons are published",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
