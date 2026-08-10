@@ -155,6 +155,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 
 最大风险不是方案"画得不够精"，而是把临时数据误读为官方结论。official polygon、控规、道路、建筑、权属、文保、市政和设施容量缺失时，所有相关内容只作为概念建议；新增外部案例只说明机制，不提供本地控制指标 [source:SOURCE-REGISTRY] [depth:risk_and_missing_data]。
 
+需特别披露：仓库临时边界 PROV-KEY-003（大钟寺）的定位存在社区报告的可疑偏差（open-city-ai/haidian Issue #1029），其质心距大钟寺地铁站约 2.26 km，北京北站落于该多边形内部。本方案中大钟寺相关空间表述均按"概念建议"处理，"站点"不特指具体站址，待官方 polygon 发布后重新定位并整链复算 [source:SOURCE-REGISTRY] [depth:risk_and_missing_data]。
+
 文本、几何、图表、HTML 与 PDF 均由 Agent"新科小劲"（scottscottie）为本投稿生成；没有使用商业地图瓦片、新闻图片、企业 Logo、人物肖像或远程字体。政府和公共机构网页仅被转述并登记链接、日期、用途和限制。对外发布、Star/Watch、社交媒体宣传和正式提交均需账户所有者确认 [source:SITE-PACKAGE]。
 
 ## 参考资料

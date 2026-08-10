@@ -9,6 +9,13 @@
       "release_condition": "主办方发布 official SITE_BOUNDARY 与三处 KEY_AREA polygon 后解除"
     },
     {
+      "id": "A-BOUNDARY-002",
+      "status": "pending_official_data",
+      "statement": "仓库临时边界 PROV-KEY-003（大钟寺AI产业聚集区）的位置存在社区报告的可疑偏差：质心约 39.94692N/116.34850E，距大钟寺地铁站约 2.26 km，北京北站落于该多边形内部（见 open-city-ai/haidian Issue #1029）。",
+      "impact": "本方案中大钟寺相关空间表述（站城会客、四象限连通等）均为概念建议，须在 official polygon 发布后重新定位；文中'站点'表述不特指具体站址，避免把临时几何位置冒充已确认站址。",
+      "release_condition": "主办方发布 official 大钟寺重点区 polygon 后解除"
+    },
+    {
       "id": "A-CONTROLS-001",
       "status": "pending_professional_confirmation",
       "statement": "控规指标（容积率、建筑高度、建筑密度、退线）、道路红线、土地权属、市政工程条件均不在公开场地包中。",
