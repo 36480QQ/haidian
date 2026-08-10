@@ -230,7 +230,7 @@ code {
 <p>几何水准不因为仪器报了一个高程就相信它。它走一圈回到起点，把同一个点读两次，两次之差叫<strong>闭合差</strong>——那是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张一座城市应当为自己的系统公开这个数。</p>
 <p><strong>给本方案打分的这台仪器，已经在同一个点上被读过很多次，而这个差没有人发表过。本节把它测出来。</strong></p>
 <p><strong>控制项是一个 commit，不是一份文件清单。</strong> 最紧的重复测量就是同一个 head SHA 被评审多次：此时整棵树按定义逐字节相同，因此不需要对「评审读了哪些文件」做任何假设，关于那份清单的任何争论也动摇不了结论。本方案的早期版本恰恰去比对评审输入文件集，而且把清单读错了三处——记录为勘误 E35。</p>
-<p>在全部 <strong>853 条</strong>已发布评分中，<strong>834 个</strong>不同的 head commit 里有 <strong>12 个</strong>被评审了不止一次，涉及 <strong>31 条</strong>读数。</p>
+<p>在全部 <strong>883 条</strong>已发布评分中，<strong>864 个</strong>不同的 head commit 里有 <strong>12 个</strong>被评审了不止一次，涉及 <strong>31 条</strong>读数。</p>
 <div class="proposal-table"><table><thead><tr><th>读数</th><th>值</th></tr></thead><tbody><tr><td>池化组内标准差</td><td><strong>3.89 分</strong>（自由度 19）</td></tr><tr><td>两倍标准差带</td><td><strong>±7.8 分</strong></td></tr><tr><td>同一 commit 观测到的最大跨度</td><td><strong>13 分</strong></td></tr><tr><td>重复评审完全一致的 commit</td><td><strong>3 / 12</strong></td></tr><tr><td>跨度中位数</td><td>4.0 分</td></tr></tbody></table></div>
 <p>最极端的一个：PR #563 的 commit <code>62e0430242</code> 被评了 <strong>4 次</strong>，得分依次为 <strong>91 → 94 → 81 → 93</strong>——同一棵树，跨度 13 分。</p>
 <p><strong>于是：仪器把同一个点读了很多次，读数散布在约 8 分宽的带子里。</strong></p>
@@ -327,6 +327,12 @@ code {
 <p>三类的划分依据是「达成连通所需的审批与工程层级」，而非重要性——<strong>重要的连通点可能是 C 类，因此长期无法实现，这一点必须在方案里说出来，而不是画一条线假装它已解决。</strong> 缝合点的空间落位待官方边界与道路条件公布后核定 <span class="evidence evidence-standard">[standard:MOHURD-CONTROL-DETAILED-PLANNING]</span>。</p>
 <p><strong>本方案在本节不决定的事项</strong>：容积率、建筑高度、建筑密度、绿地率、退线、建筑控制线、道路红线、地块划分尺寸、视廊控制面、任何工程可行性结论。</p>
 <h2>重点区域详细设计</h2>
+<p>&lt;!-- KEYAREAS:BEGIN --&gt;</p>
+<div class="proposal-table"><table><thead><tr><th>重点区</th><th>范围面积</th><th>水准职能</th><th>主导用途（占本区面积）</th><th>区内用地类别数</th><th>公共测点 / 建筑基底</th></tr></thead><tbody><tr><td>大钟寺 AI 产业集聚区</td><td>72.0 ha</td><td>BM-2</td><td>产业与商业服务 99%</td><td>2</td><td>1 / 2</td></tr><tr><td>北京 AI 原点社区</td><td>104.3 ha</td><td>BM-0</td><td>社区服务与配套 94%</td><td>2</td><td>1 / 1</td></tr><tr><td>众智园 AI 自主创新加速区</td><td>192.9 ha</td><td>BM-1</td><td>AI研发与科研 100%</td><td>2</td><td>2 / 2</td></tr></tbody></table></div>
+<p>三区合计 <strong>369.3 ha</strong>，占总体设计范围 <strong>32.4%</strong>。<strong>占比的分母是本重点区自身的面积，不是设计范围</strong>——分母不写明的占比，正是本包在勘误册里记过的那型缺陷。</p>
+<p><strong>主导用途一列近乎 100%，这一点写出来而不是藏进「前三类」：本方案的用地剖分给每个重点区一个主导用途，区内不再细分。</strong> 生成这张表之前它不曾被说出口——「前三类」的写法会把它显示成 99%／1%，看上去像有层次。它是判断不是疏漏：三处重点区的名称来自公告，几何是临时替代边界，而区内细分依赖权属、控规与拆改留——同一批未公开的数据。<strong>一个 193 ha 的片区只给一个用途，作为「详细设计」是薄的，本方案承认这一点，并把它挂在一个具体的前置条件上而不是含糊过去：官方 polygon 与控规公开后，这三格是最先要被替换的三格。</strong></p>
+<p>用地边界与重点区边界均为临时替代边界，官方 polygon 发布后须整体重算；逐区平面见 FIG.04，三幅同尺度可直接比较。</p>
+<p>&lt;!-- KEYAREAS:END --&gt;</p>
 <p>三处重点区各承担一级水准职能，形成互相验算的关系 <span class="evidence evidence-depth">[depth:three_key_area_detailed_design]</span>。</p>
 <div class="proposal-table"><table><thead><tr><th>片区</th><th>水准职能</th><th>设计定位</th><th>空间动作</th><th>AI 场景与运营</th></tr></thead><tbody><tr><td>众智园AI自主创新加速区 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span></td><td><strong>BM-1 限差基准</strong></td><td>全栈自主创新与治理标准策源</td><td>设限差议事厅（公开制定与修订 F 值）；沿清河界面组织低碳交往环境；预留标准测试场地</td><td>S11 产业测试场景；面向企业的合规预检服务</td></tr><tr><td>北京AI原点社区 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-002]</span></td><td><strong>BM-0 水准原点</strong></td><td>近校创新、开源体系与人才特区</td><td>设<strong>水准原点标石</strong>与公共证据厅（本次征集全部方案的永久陈列与检索）；校区—园区慢行直连；轨道站一体化</td><td>S01 场景开放日；S07 开源协作；人才服务复测</td></tr><tr><td>大钟寺AI产业集聚区 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-003]</span></td><td><strong>BM-2 高频读数点</strong></td><td>智能原生消费与商务</td><td>路口四象限步行连通；规划绿地复合利用；大钟寺站一体化</td><td>S03 智能体商务；S05 数据要素流通；S09 生活服务样板街</td></tr></tbody></table></div>
 <figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区与水准点布设图"><figcaption>三处重点区与水准点布设图</figcaption></figure>

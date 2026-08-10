@@ -306,7 +306,7 @@ Geometric levelling does not trust a height because the instrument reported it. 
 
 **The control is a commit, not a file list.** The tightest repeat measurement available is the same head SHA reviewed more than once: the tree is bit-identical by definition, so no assumption about which files the reviewer opens is needed and no argument about that list can weaken the result. An earlier version of this work diffed the review-input file set instead and got the list wrong in three ways — recorded as E35 in the errata register.
 
-Across all **853 published scores**, **12** of **834** distinct head commits were reviewed more than once, covering **31 readings**.
+Across all **883 published scores**, **12** of **864** distinct head commits were reviewed more than once, covering **31 readings**.
 
 | Reading | Value |
 |---|---|
@@ -551,6 +551,20 @@ The classification is by the approval and engineering level a connection require
 **Not decided in this section:** floor area ratio, building height, density, green ratio, setbacks, building control lines, road redlines, parcel dimensions, view-corridor control surfaces, and any engineering feasibility conclusion.
 
 ## Detailed Design of Key Areas
+
+<!-- KEYAREAS:BEGIN -->
+
+| Key area | Extent | Survey role | Dominant use (share of that extent) | Classes present | Public points / footprints |
+|---|---|---|---|---|---|
+| Dazhongsi AI Industry Cluster | 72.0 ha | BM-2 | industry and commerce 99% | 2 | 1 / 2 |
+| Beijing AI Origin Community | 104.3 ha | BM-0 | community services 94% | 2 | 1 / 1 |
+| Zhongzhiyuan AI Acceleration Zone | 192.9 ha | BM-1 | R&D 100% | 2 | 2 / 2 |
+
+The three total **369.3 ha**, **32.4%** of the design scope. **The denominator of each share is the key area's own extent, not the design scope** — a share with an unstated denominator is a defect this package's errata register names. Land-use and key-area boundaries are provisional stand-ins and must be recomputed when official geometry is published; the per-area plans are FIG.04, drawn at one shared scale.
+
+**The dominant-use column runs at nearly 100%, and that is stated rather than hidden behind a top-three list: this partition gives each key area one dominant use and does not subdivide within it.** Generating this table is what made it sayable — a top-three framing would have shown 99% / 1% and looked layered. It is a judgement, not an oversight: the names of the three areas come from the announcement, their geometry is a provisional stand-in, and subdividing inside them depends on tenure, the regulatory plan and retain/demolish status — the same unpublished data. **A 193-hectare area with one use is thin as detailed design. This proposal says so, and attaches it to a named precondition rather than glossing it: when official geometry and controls are published, these three cells are the first three to be replaced.**
+
+<!-- KEYAREAS:END -->
 
 Each of the three key areas carries one survey role, and the three check one another [depth:three_key_area_detailed_design].
 
