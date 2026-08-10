@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v3.6 - 2026-08-10
+
+- 在中英文自动驾驶设计依据入口前置六层证据等级表，把任务/监管路径、临时空间、包内读数、合成回放、论文方法和阻断责任记录分开。
+- 为每层同时列出可支持与禁用结论，明确 `known`、`design_target`、`unknown`、`blocked` 和本地 PASS 不代表现场绩效、专业批准、P1/P2 授权或官方评分。
+- 重新生成双语 proposal report，并刷新 manifest 与清权台账哈希；不改变 provisional geometry、自动驾驶指标、运行边界或实施承诺。
+
 ## v3.5 - 2026-08-10
 
 - Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.

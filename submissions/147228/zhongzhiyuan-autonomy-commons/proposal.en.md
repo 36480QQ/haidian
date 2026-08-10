@@ -54,6 +54,21 @@ Beijing's 2025 rules for automated-vehicle road testing and demonstration applic
 
 The package distinguishes `known` geometry-derived values, `design_target` trial gates, `unknown` local performance baselines and `blocked` conditions that prohibit expansion. The three research papers on street-canyon CFD, wind/heat/PM2.5 monitoring and roof/canyon geometry are method evidence only; they do not provide Jing-Zhang boundary conditions, health causality, accident rates or transferable percentages [source:LIU-URBAN-VENTILATION-2017] [source:MENG-WIND-HEAT-PM25-2022] [source:NOSEK-STREET-CANYON-2025].
 
+### 1. Evidence hierarchy and autonomous-mobility decision boundary
+
+The autonomy proposal first asks what action a source can support, then discusses vehicles, curbs or services. Registration, replay and design targets do not automatically become field facts.
+
+| Evidence level | Package examples | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Task and regulatory pathway (formal/background) | Open-call, Beijing AV testing rules, designated-road notice and national framework | A regulated pathway, eligibility questions, authorization questions and professional review entry points | A project permit, an opened road, an operator or operating/incident performance |
+| Provisional spatial base | Site/key areas, roads, autonomy nodes and test yards | Concept relationships, ordinary routes, node sequence and a whole-package recomputation trigger | Statutory redlines, road sections, speed/capacity, ownership, fire or accessibility compliance |
+| Known and derived package readouts | GeoJSON, `metrics.json`, scenario cards, readiness and accountability matrices | File consistency, node actions, phase dependencies, issue lists and design gates | Existing footfall, takeover latency, conflict rate, vehicle performance or development intensity |
+| Synthetic replay and design targets | AV-T01—T03, tabletop, `known`/`design_target` metrics | Stop, human takeover, rollback, data minimisation and next-test contracts | Field safety, public acceptance, staffing, P1/P2 authorization or official score |
+| Papers and methods | Wind/heat/CFD, ecology, asset and embodied-intelligence methods | Future measurement variables, model inputs, uncertainty and professional review questions | Jing-Zhang wind field, health causality, accident rate, transferable percentage or permit basis |
+| Blocked and accountability records | `blocked` conditions and insurance/safety/privacy/human-route gaps | When to stop, who must supply evidence and when scale-up is prohibited | Replacing accountability, approval, insurance or implementation results with “pending” |
+
+The review rule is: `known` means only that a value is readable from package files; `design_target` is not field performance; `unknown` must not be guessed; `blocked` stops scale-up. A local PASS proves only that a structure or state machine can be replayed; it is not a field, professional or implementation finding.
+
 ## Coordinated Research Area: Industry and Future City Research
 
 The coordinated research area connects AI industry, talent, rail, community, public governance and future-city research through public value rather than a single vendor. Enterprises may provide controlled test capacity, universities and students may participate in audit, communities provide real needs and redress, and rail and staffed service desks provide non-app entry points [source:AGENT-TASKBOOK]. The design intent is to make automation usable by residents, handover-ready for maintainers and reviewable by professionals. Spatially this assigns roles to the public axis and three yards; metrically it prioritises accessible continuity, equivalent human service, rollback and complaint closure, not vehicle count or model accuracy. Liability agreements, budgets, insurance, staffing and demand distribution remain unknown, so the industry chain is a coordination hypothesis rather than a partnership or implementation claim.
