@@ -81,12 +81,16 @@ This is not a comment on the organisers' work. It is **the thing they most lack 
 
 **Reading one: the field has converged, and the brief induced the convergence.**
 
+<!-- MOTIFS:BEGIN -->
+
 | Structural motif | Proposals | Share |
 |---|---|---|
-| Three cores / three stations | 171 | 50.6% |
-| Two wings | 134 | 39.6% |
-| Evidence chain / recomputable | 105 | 31.1% |
-| One spine / one belt | 102 | 30.0% |
+| Three cores / three stations | 181 | 51.1% |
+| Two wings | 140 | 39.6% |
+| One spine / one belt | 109 | 30.8% |
+| Evidence chain / recomputable | 107 | 30.2% |
+
+<!-- MOTIFS:END -->
 
 The taskbook prescribes "three areas, two wings", so more than half the field draws the same skeleton. That is not consensus; it is the question shape. **Drawing that skeleton again adds nothing.** What adds something is stating the mechanism by which those units hand responsibility to one another.
 

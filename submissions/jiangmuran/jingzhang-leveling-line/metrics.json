@@ -17,6 +17,9 @@
       "assumptions": [
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "面积由临时边界复算，不得作为精确面积依据。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "building_footprint_area_sqm": {
@@ -30,6 +33,9 @@
       "confidence": "low",
       "assumptions": [
         "示意性基底，用于说明规模量级，不构成建筑方案或实际建设规模。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "green_ratio": {
@@ -46,6 +52,9 @@
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "分子分母均基于临时边界，比值随官方边界发布而变化。",
         "绿廊已扣除本方案六处建筑基底落在廊内的 66,925 m²；此前未扣除，该值为 0.202492，把本方案自己的建筑算作了绿地。绿地率是公开指标，其误差方向对提交方有利时尤其须自行修正。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "public_space_ratio": {
@@ -61,6 +70,9 @@
       "assumptions": [
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "公共测点面积占比，反映测点覆盖密度而非全部公共空间供给。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "floor_area_ratio": {
@@ -73,7 +85,11 @@
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package.",
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-BOUNDARY-001"
+      ]
     },
     "existing_residential_floor_area_sqm": {
       "status": "unknown",
@@ -83,7 +99,10 @@
       "formula": "sum(existing_residential_floor_area) within the design scope",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "本方案写了一条约束——「人才公寓与既有居住的关系须以不减少现有居住供给为前提」——而现状居住建筑面积并未公开，本包也没有测它。按本方案自己的标准，一条无法核验的规则不算规则，因此这里把它约束的那个量单列为 unknown 并写明前置条件：现状居住建筑面积或户数须由权属与现状测绘数据给出，该数据到位前这条约束只能作为深化阶段的必检项，不能声称已满足。0701 城镇住宅与 0804 教育用地不出现在 land_use.geojson 里，是因为它们落在 11 个留白街区内且其边界依赖同一批未公开数据——这是判断，不是遗漏。"
+      "reason": "本方案写了一条约束——「人才公寓与既有居住的关系须以不减少现有居住供给为前提」——而现状居住建筑面积并未公开，本包也没有测它。按本方案自己的标准，一条无法核验的规则不算规则，因此这里把它约束的那个量单列为 unknown 并写明前置条件：现状居住建筑面积或户数须由权属与现状测绘数据给出，该数据到位前这条约束只能作为深化阶段的必检项，不能声称已满足。0701 城镇住宅与 0804 教育用地不出现在 land_use.geojson 里，是因为它们落在 11 个留白街区内且其边界依赖同一批未公开数据——这是判断，不是遗漏。",
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ]
     },
     "key_area_count": {
       "status": "known",
@@ -96,6 +115,9 @@
       "confidence": "high",
       "assumptions": [
         "三处重点区数量来自公告，几何为临时替代边界。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "leveling_spine_length_m": {
@@ -109,6 +131,9 @@
       "confidence": "medium",
       "assumptions": [
         "主脊长度按设计中心线复算；线位为概念建议，非工程定线。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "benchmark_count": {
@@ -122,6 +147,10 @@
       "confidence": "high",
       "assumptions": [
         "含1处水准原点、2处一等点、2处二等点、3处三等点。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CLOSURE-001"
       ]
     },
     "green_ratio_in_partition": {
@@ -137,6 +166,9 @@
       "assumptions": [
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "与 green_ratio 的差别是口径而非矛盾，且两者的分子现已同源：green_ratio 取 120 m 绿廊扣除建筑基底后的全部（2,244,081.8 m²）；本项只取其中在用地剖分里仍归为 1401 的部分（1,392,297.1 m²）。差额 851,784.7 m² 全部是绿廊与三处重点区及 L1 文化地块的重叠（LU-002 内 459,609.3 m²、LU-003 内 209,080.4 m²、LU-004 内 134,913.8 m²、LU-001 内 48,181.2 m²），剖分把地块归给主导用途所致；建筑基底不在差额内，因为两个图层都已将其扣除。两值同时公布，避免评审从不同图层重算出两个数却无从判断。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "phasing_union_area_sqm": {
@@ -151,12 +183,18 @@
       "assumptions": [
         "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
         "分期图层为增量口径：三期互不重叠，累计实施范围为其并集，并集面积等于三期面积之和；分期按触发条件推进，不设固定年份。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     },
     "scenario_card_count": {
       "status": "known",
       "value": 12,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/scenario_cards.json"
       ],
@@ -170,6 +208,9 @@
       "status": "known",
       "value": 2,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/scenario_cards.json"
       ],
@@ -183,6 +224,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/constraints.geojson"
       ],
@@ -196,6 +240,9 @@
       "status": "known",
       "value": 9,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "proposal.md"
       ],
@@ -209,6 +256,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "proposal.md",
         "assets/figures/kit-of-parts.png"
@@ -223,6 +273,9 @@
       "status": "known",
       "value": 6,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "proposal.md",
         "sources.json"
@@ -237,6 +290,9 @@
       "status": "known",
       "value": 8,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "proposal.md"
       ],
@@ -250,6 +306,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/phasing.geojson"
       ],
@@ -263,6 +322,9 @@
       "status": "known",
       "value": 7,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/land_use.geojson"
       ],
@@ -276,6 +338,9 @@
       "status": "known",
       "value": 22,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/land_use.geojson"
       ],
@@ -289,6 +354,9 @@
       "status": "known",
       "value": 17,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/roads.geojson"
       ],
@@ -302,6 +370,9 @@
       "status": "known",
       "value": 2,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/public_space.geojson"
       ],
@@ -315,6 +386,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "geometry/public_space.geojson"
       ],
@@ -328,6 +402,9 @@
       "status": "known",
       "value": 63,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/taskbook_coverage.json"
       ],
@@ -341,6 +418,9 @@
       "status": "known",
       "value": 63,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/taskbook_coverage.json"
       ],
@@ -354,6 +434,9 @@
       "status": "known",
       "value": 594,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "compliance_matrix.json",
         "standard_matrix.json",
@@ -369,6 +452,9 @@
       "status": "known",
       "value": 5,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "manifest.json"
       ],
@@ -382,6 +468,9 @@
       "status": "known",
       "value": 10,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/s08-tabletop-evidence.json"
       ],
@@ -395,6 +484,9 @@
       "status": "known",
       "value": 38,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/errata.json"
       ],
@@ -408,6 +500,9 @@
       "status": "known",
       "value": 3,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/errata.json"
       ],
@@ -421,6 +516,9 @@
       "status": "known",
       "value": 83,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/rights_ledger.json"
       ],
@@ -434,6 +532,9 @@
       "status": "known",
       "value": 275,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/osm_reference.json"
       ],
@@ -447,6 +548,9 @@
       "status": "known",
       "value": 354,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/field_map.json"
       ],
@@ -460,6 +564,9 @@
       "status": "known",
       "value": 40,
       "unit": "count",
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
       "source_files": [
         "visual/assets/track_scan.json"
       ],
