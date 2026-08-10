@@ -23,6 +23,8 @@ Make urban compute connectable, portable, accountable, and retireable, while ret
 
 资料层级决定写法。官方公告和任务书用于任务回应；临时边界只用于方案组织、拓扑校核和低对比图示；国际案例只用于方法比照。我们未使用 OSM、新闻截图、文本四至或包围盒替代官方几何，也未下载或复用外部影像、地图、品牌或人物素材。源登记保留发布者、链接、日期、检索方式、覆盖范围、许可、转换和局限性，使评审能区分“引用的公开事实”“借鉴的方法”和“仍未知的项目条件”。 [source:SOURCE-REGISTRY] [source:FACT-PACK]
 
+《建筑工程设计文件编制深度规定（2016年版）》的官方文件尚未取得；仓库将其登记为 `source_status=needs_official_file`、`reference_fetch_status=missing_source_url`，且并非 formal 强制标准。因此本方案只能把它记录为建筑专业深化资料缺口和后续取证任务，不能声称已正式响应，也不以《城市设计管理办法》、其他标准、镜像或方向性图纸冒充其来源。 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:risk_missing_data]
+
 设计判断是：城市 AI 的质量不以设备规模或自动化程度衡量，而以服务是否能说明如何接入、消耗什么、给谁带来可审计回报、以及如何停止并恢复普通服务来衡量。四项合同因此成为一张完整准入单：缺少版本导出、资源账本、人工回退或退出手册的服务，不能进入公共空间或扩大部署。后续专业工作需补齐官方几何、现状调查、遗产与产权、市政机电、无障碍、数据保护和采购审查。 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
 
 ![四合同与临时边界的总览证据图](assets/figures/site-overview.png)
@@ -347,7 +349,7 @@ H1 位于北京 AI 原点，是“可打印服务铭牌—迁移演练桌—人�
 
 ## 用地、建筑规模与拆改留方案
 
-用地层是同一临时场地约束内的无缝、无重叠概念功能分区，在 EPSG:4548 复算、以 EPSG:4326 交换。它不再用七条横向色带表达，而以公共问责脊柱、节点院落、受控测试包络、服务前台、维护/逆向物流与可逆退出缓冲构成关系网络；七个分类只说明这些关系的拓扑背景，不主张法定用地、获批地块或开发容量。所有面积在官方几何到位后必须联动重算。 [data:geometry/land_use.geojson] [metric:site_area_sqm] [metric:green_ratio]
+用地层是同一临时场地约束内的无缝、无重叠概念功能分区，在 EPSG:4548 复算、以 EPSG:4326 交换。它不再用七条横向色带表达，而以公共问责脊柱、节点院落、受控测试包络、服务前台、维护/逆向物流与可逆退出缓冲构成关系网络；七个分类只说明这些关系的临时功能拓扑，不构成法定用地、控规图则、道路红线、产权判断、获批地块或开发容量。官方边界与控制条件取得后，必须连同面积和关系再次核验、联动重算。 [data:geometry/land_use.geojson] [depth:land_use_layout]
 
 建筑基底只是承载接口台、学习工坊、维护带、账本界面和退出档案的概念位置，不是现状建筑证据、批准体量或施工方案。保留的判断应由遗产、结构、产权和公共服务价值核验；适配应先满足机电、消防、无障碍和维护条件；拆除只可作为未来法定程序后的条件性选项；可逆新建模块需有独立维护、资产清册和撤除路径。因没有官方边界、FAR、总建筑面积、建筑高度、密度、绿地率和退界，所有这类控制指标均在 metrics.json 中明确为 unknown。 [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm] [depth:development_intensity_controls]
 

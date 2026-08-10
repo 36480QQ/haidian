@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2216522cbff6793a7f960f636c9f7db1db6f6067c1782975ced8c7ee842dd2b6"
+      "sha256": "bfd7a7f1263204fc512c1c63a1b950139848cddd090336e2c6ef31afe94189ed"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8c046b3bc5d9222da54319c61c23f8e4e29accb70d78e9adb087e26c5983a427"
+      "sha256": "efc6faf668336bd7cfc524680d2cdd54041fbfd9196c167a4cd5f7088f0f3066"
     },
     {
       "path": "compliance_matrix.json",
@@ -68,7 +68,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "7e2a8f8f785d80867d8f42f68a10e241de8e78b002ff838b39f99a52e3b16c46"
+      "sha256": "14e415e085d06c1dd61aff6cfce5f0b8f7253235d9cfc4f9c0620db93ffcc9eb"
     },
     {
       "path": "design_depth_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d14534cafbf3f0db2e9d2b0d78c200cff10883e497cce7955f674bb1f70e3027"
+      "sha256": "aae99a2dd9422d5608fdb47e8524efd3e551b30a80629e7c330278291a80b801"
     },
     {
       "path": "report/narrative.md",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bf4fc8ed452243a2b9440979cb1249af03f401033e66ef7dae9d0dbc3768c42f"
+      "sha256": "0c58c943613a96ed548659ca204233a33b0e99b1c816556a851d7c0ba7b658f5"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "881cc7973d5bf4d67beed937f410400c05c2e45c47e51f4d66c9c693549b66db"
+      "sha256": "bff780bf3c9d68c268621f1d441fc555cfd6940abeb8cff836ad6d54eb6eb64c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -384,6 +384,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "low"
+    "data_confidence": "low",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

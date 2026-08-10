@@ -1,96 +1,210 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/miociallo0721/jingzhang-open-compute-commons",
+  "pr_author": "miociallo0721",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/miociallo0721/jingzhang-open-compute-commons/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/miociallo0721/jingzhang-open-compute-commons/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/miociallo0721/jingzhang-open-compute-commons/agent.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/abstract-interface-base-v13.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/abstract-interface-base.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/key-areas.en.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/key-areas.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/land-use-structure.en.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/land-use-structure.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/metrics-evidence.en.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/metrics-evidence.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/mobility-bluegreen.en.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/site-overview.en.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/site-overview.png",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/key-areas.en.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/key-areas.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/land-use-structure.en.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/land-use-structure.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/metrics-evidence.en.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/metrics-evidence.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/mobility-bluegreen.en.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/mobility-bluegreen.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/site-overview.en.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assets/figures/sources/site-overview.svg",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/assumptions.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/changelog.md",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/compliance_matrix.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/design_depth_matrix.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/drawings/a0-boards.en.pdf",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/drawings/a0-boards.pdf",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/drawings/a3-booklet.en.pdf",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/drawings/a3-booklet.pdf",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/buildings.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/constraints.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/green_space.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/key_areas.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/land_use.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/phasing.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/public_space.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/roads.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/geometry/site_boundary.geojson",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/manifest.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/metrics.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/proposal.en.md",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/proposal.md",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/report/copyright_statement.md",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/report/narrative.md",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/report/proposal.en.html",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/report/proposal.html",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/self_check.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/sources.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/standard_matrix.json",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/visual/index.en.html",
+        "submissions/miociallo0721/jingzhang-open-compute-commons/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/miociallo0721/jingzhang-open-compute-commons": "formal"
+      },
+      "total_bytes": 13044374,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 387654.726,
+        "public_space_area_sqm": 221554.238,
+        "building_footprint_area_sqm": 21420.0,
+        "green_ratio": 0.033967,
+        "public_space_ratio": 0.019413
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.034,
+        "public_space_ratio": 0.019
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 27,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 20,
+          "standard": 6,
+          "depth": 15,
+          "data": 10,
+          "metric": 6
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_PROVISIONAL",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Boundary is explicitly a provisional constraint, not a statutory redline or precise-area basis; full recalculation is recorded for trusted official geometry."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_PROVISIONAL",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "minor",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three key areas retain organizer-supplied provisional geometry; no station, road, parcel, ownership, or approved-development inference is made."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "info",
-      "target": "geometry/land_use.geojson",
-      "message": "Functional polygons are recalculated in EPSG:4548, share topology from one provisional site constraint, form one gap-free/non-overlapping temporary partition, and exchange as EPSG:4326."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
-      "check_id": "FOUR_CONTRACT_GATE",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "info",
-      "target": "proposal.md",
-      "message": "共同 RACI 与普通服务连续性规则在场景卡总则定义一次；S01–S12 分别保留独特的责任、进入、拒收/退回、停止、恢复、证据与复核，联合通行证/H1-H3 在 proposal 和 Figure 01/05 可读。"
-    },
-    {
-      "check_id": "NO_UNVERIFIED_CONTROL_CLAIM",
-      "result": "pass",
-      "severity": "info",
-      "target": "metrics.json",
-      "message": "FAR, height, statutory density/green ratio, setbacks, utilities, energy/cooling, heat recovery, investment and schedule remain unknown without project evidence."
-    },
-    {
-      "check_id": "NO_MEASUREMENT_CLAIM",
-      "result": "pass",
-      "severity": "info",
-      "target": "proposal.md",
-      "message": "No site visit, measurement, simulation, deployment, vendor test, user test or human review is claimed; protocols are proposed and untested."
-    },
-    {
-      "check_id": "BILINGUAL_ALIGNMENT",
-      "result": "pass",
-      "severity": "info",
-      "target": "proposal.en.md",
-      "message": "Chinese primary proposal and complete English counterpart share chapters, four-contract logic, scenarios, geometry status, unknowns and evidence anchors."
-    },
-    {
-      "check_id": "OFFLINE_AND_COPYRIGHT",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "HTML is static/offline. v1.3 figures use local SVG/PNG technical overlays and a disclosed local non-geographic image-generation base at no more than 4.5% opacity; no remote asset/map/CDN/script/tracker/form/font is loaded."
-    },
-    {
-      "check_id": "PATH_SEPARATION_AND_MODULE_SCALE",
-      "result": "pass",
-      "severity": "info",
-      "target": "geometry/buildings.geojson; geometry/roads.geojson",
-      "message": "Twelve small conceptual reference modules replace the former megablocks. Public, controlled, maintenance/exit, and emergency/ordinary-recovery path relations are separately identified; they remain non-surveyed, non-statutory concepts."
-    },
-    {
-      "check_id": "PASSPORT_RACI_AND_CONTINUITY",
-      "result": "pass",
-      "severity": "info",
-      "target": "proposal.md",
-      "message": "The joint four-contract passport defines minimum evidence, receiving/refusal, pause, restoration acceptance, proposed RACI, procurement replacement conditions, and ordinary-service continuity."
-    },
-    {
-      "check_id": "PDF_FORMAT_AND_TEXT",
-      "result": "pass",
-      "severity": "info",
-      "target": "drawings/",
-      "message": "Local pypdf inspection on 2026-08-10 confirmed: both A3 editions have 12 readable-text pages at 420×297 mm landscape; both A0 editions have 4 readable-text boards at 1189×841 mm landscape. Page order and Chinese/English counterpart counts align."
-    },
-    {
-      "check_id": "VISUAL_VECTOR_BRAND",
-      "result": "pass",
-      "severity": "info",
-      "target": "assets/figures/metrics-evidence.png",
-      "message": "五组中英文技术图保留本地 SVG 源与 PNG 衍生，临时边界低对比虚线；中性四端口符号、组合、单色/高对比/低墨量和实体应用集中于 Figure 05 与 A3/A0。"
-    },
-    {
-      "check_id": "ARCH_DEPTH_OFFICIAL_FILE_GAP",
-      "result": "pass",
-      "severity": "minor",
-      "target": "standard_matrix.json; sources.json",
-      "message": "MOHURD-ARCH-DESIGN-DEPTH-2016 is correctly recorded as mandatory=false and review_status=data_gap, with only its repository-defined missing-official-file record cited. No urban-design standard is substituted as its source."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
