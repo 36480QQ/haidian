@@ -2,11 +2,14 @@
 title: "智脉共生：京张开放智能公地"
 author_github: "amberplay"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路记忆主脊为公共底座，把三区两翼组织为可测试、可申诉、可迭代的开放智能公地；临时边界仅用于生成与内容审查，全部空间结论待官方资料校准。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v2.0"
 ---
 
 # 智脉共生：京张开放智能公地
@@ -15,7 +18,11 @@ iteration: "v1.2"
 
 ## 设计依据与资料清单
 
-方案首先锁定资料权力边界：仓库公开任务书 `brief/public-brief.md` 与官方公告用于确认项目愿景、三层范围文字、公告面积约值和设计任务 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]；清权任务书用于三大定位、五大功能、三区两翼和六项 agent 任务 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；城市设计、控规编制和用地分类分别由 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 约束。建筑设计深度文件尚无可核验官方正文，只登记为数据缺口 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。仓库资料包、登记表与处理事实包分别作为规则、可用性判断与阅读导航 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
+方案首先锁定资料权力边界：仓库公开任务书 `brief/public-brief.md` 与官方公告用于确认项目愿景、三层范围文字、公告面积约值和设计任务 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]；清权任务书用于三大定位、五大功能、三区两翼和六项 agent 任务 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+城市设计、控规编制和用地分类分别受本地标准快照约束 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。建筑设计深度文件尚无可核验官方正文，只登记为数据缺口 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
+
+仓库资料包、登记表与处理事实包分别作为规则、可用性判断与阅读导航 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 
 当前 `SITE_BOUNDARY` 和三处 `KEY_AREA` 都来自仓库临时粗略 polygon [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。它们以 `official_boundary=false`、`geometry_role=provisional_constraint` 写入 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001]，只用于生成、自检、展示和非连续性设计讨论。公告约 11.4 平方公里是任务规模，不因本包复算为 11.41 平方公里就变成精确红线。official polygons 到位后必须重做用地、建筑、道路、绿地、公共空间、分期、图片、PDF、HTML 和全部空间指标；现状、权属、文保、交通、市政和控规缺口已在 `assumptions.json` 登记 [depth:existing_conditions_diagnosis]。
 
@@ -104,7 +111,7 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 ## 用地、建筑规模与拆改留方案
 
-用地结构采用国土空间分类子集，完整覆盖当前提交边界并共享切分坐标。科研用地承载全栈研发和开源转化，教育科研协作靠近原点社区，商业服务承载科技服务与智能原生生活，社区与居住承载人才日常，文化与公园形成京张公共底座。七类概念用地及面积见 [data:geometry/land_use.geojson#LU-006]；用地类别数量与分项面积由 [metric:land_use_category_count]、[metric:land_use_area_05_sqm]、[metric:land_use_area_0701_sqm]、[metric:land_use_area_0702_sqm]、[metric:land_use_area_0802_sqm]、[metric:land_use_area_0803_sqm]、[metric:land_use_area_0804_sqm]、[metric:land_use_area_1401_sqm] 复算。这些是概念分区，不是审定用地。
+用地结构采用国土空间分类子集，完整覆盖当前提交边界并共享切分坐标。科研用地承载全栈研发和开源转化，教育科研协作靠近原点社区，商业服务承载科技服务与智能原生生活，社区与居住承载人才日常，文化与公园形成京张公共底座。七类概念用地及面积见 [data:geometry/land_use.geojson#LU-006]，类别数量与各分项面积均在结构化指标中复算 [metric:land_use_category_count] [metric:land_use_area_0802_sqm]。这些是概念分区，不是审定用地。
 
 建筑层采用“保留适配 - 共享首层 - 可逆嵌入 - 条件成熟后更新”四级方法。由于没有现状建筑和权属底数，提交的 16 个基底只是用于校验公共空间与容量关系的概念承载单元 [data:geometry/buildings.geojson#BLDG-002]。概念基底总面积与覆盖率分别为 [metric:building_footprint_area_sqm]、[metric:concept_building_coverage_ratio]；它们不能替代建筑密度或拆改留结论。正式深化需逐栋补齐结构安全、产权、用途、年代、消防、能耗、历史价值和运营状态，再由专业团队分类。
 
@@ -140,13 +147,17 @@ S02-S04 是三类产业测试验证场景 [metric:testbed_scenario_count]，其�
 
 ## 指标体系、面积复算与合规矩阵
 
-空间指标统一把 EPSG:4326 GeoJSON 投影到 EPSG:4548 后计算 [depth:metrics_recalculation]。临时边界面积 [metric:site_area_sqm] 只用于本包内部一致性；建筑、绿地和公共空间分别由 [data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-002]、[data:geometry/public_space.geojson#PUBLIC-004] 取 union 后计算。公共空间概念面积与比例为 [metric:public_space_area_sqm]、[metric:public_space_ratio]；绿地概念面积与比例为 [metric:green_space_area_sqm]、[metric:green_ratio]。重点区数量、场景、测试场景、画像、项目和阶段均由结构化文件或正文表格计数，不以宣传文字估算。
+空间指标统一把 EPSG:4326 GeoJSON 投影到 EPSG:4548 后计算 [depth:metrics_recalculation]。临时边界面积只用于本包内部一致性 [metric:site_area_sqm]；建筑、绿地和公共空间分别从对应图层取 union 后计算 [data:geometry/buildings.geojson#BLDG-001] [data:geometry/green_space.geojson#GREEN-002] [data:geometry/public_space.geojson#PUBLIC-004]。
+
+公共空间概念面积与比例由结构化指标记录 [metric:public_space_area_sqm] [metric:public_space_ratio]，绿地概念面积与比例同样从叠加网络复算 [metric:green_space_area_sqm] [metric:green_ratio]。重点区数量、场景、测试场景、画像、项目和阶段均由结构化文件或正文表格计数，不以宣传文字估算。
 
 这里的 `green_ratio` 是跨用地叠加的概念蓝绿网络包络，并不等同于法定 1401 公园绿地比例；四个 feature 必须 union 后计算，不能相加。`public_space_ratio` 是十二个场景所需公共空间支持包络，不等同于厅、亭或设备本体面积。16 个建筑 polygon 是空间原型基底，其 0.8% 只称“原型基底占比”，不得解读为现状或规划建筑覆盖率。正式稿取得现状建筑和 official polygons 后，应把场景影响区、室内外公共空间和法定绿地拆成不同语义图层，再决定是否保留这些指标。
 
-机器可读 known 指标完整索引如下，确保 `metrics.json` 中每个 known 值都能从正文回查：[metric:site_area_sqm] [metric:building_footprint_area_sqm] [metric:concept_building_coverage_ratio] [metric:green_space_area_sqm] [metric:green_ratio] [metric:public_space_area_sqm] [metric:public_space_ratio] [metric:greenway_length_m] [metric:key_area_count] [metric:scenario_count] [metric:testbed_scenario_count] [metric:persona_count] [metric:renewal_project_count] [metric:phase_count] [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm] [metric:land_use_category_count] [metric:land_use_area_05_sqm] [metric:land_use_area_0701_sqm] [metric:land_use_area_0702_sqm] [metric:land_use_area_0802_sqm] [metric:land_use_area_0803_sqm] [metric:land_use_area_0804_sqm] [metric:land_use_area_1401_sqm]
+机器可读的完整指标索引保留在 `metrics.json`，正文只解释最影响设计判断的面积、网络、场景与实施指标。概念建筑基底和公地主脊分别由 [metric:building_footprint_area_sqm] [metric:greenway_length_m] 支撑，场景与分期数量由 [metric:scenario_count] [metric:phase_count] 支撑。
 
-`compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；`standard_matrix.json` 覆盖五条 mandatory 标准并把缺失建筑深度文件标记为 data gap；`design_depth_matrix.json` 覆盖十五项 formal 深度。专业深度索引包括 [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]。全部 PASS 仅表示包可进入内容审查，不代表方案优秀、获批或可实施。
+`compliance_matrix.json` 覆盖公告 1.3、1.4、1.5 与 agent.1-agent.6；`standard_matrix.json` 覆盖 mandatory 标准并把缺失建筑深度文件标记为资料缺口；`design_depth_matrix.json` 覆盖十五项 formal 深度。用地与交通的关键证据分别由 [depth:land_use_layout] [depth:traffic_rail_slow_parking] 管理。
+
+蓝绿空间与风险边界分别由专业证据链 [depth:blue_green_public_space] [depth:risk_missing_data] 管理。全部 PASS 仅表示包可进入内容审查，不代表方案优秀、获批或可实施。
 
 ![核心指标、证据链与终检状态](assets/figures/metrics-evidence.png)
 
