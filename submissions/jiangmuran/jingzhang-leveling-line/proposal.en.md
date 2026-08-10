@@ -270,6 +270,32 @@ Counts, per-package profiles and the classification rule ship in `visual/assets/
 
 <!-- SPATIAL:END -->
 
+#### The fifth measurable gap, and the only time this proposal turns the instrument on the scoring
+
+<!-- REPEAT:BEGIN -->
+
+Geometric levelling does not trust a height because the instrument reported it. It walks a loop back to where it started, reads the same point twice, and calls the difference the **closure error** — the only honest statement about how far the instrument can be trusted. This proposal spends its length arguing that a city should publish that number.
+
+**The scoring of this package produced such a loop by accident, so this section turns the instrument on the scoring.**
+
+PR #1122 scored **94/100**. Seventeen minutes later, PR #1125 scored **91/100**. Between the two, nothing the reviewer reads had changed.
+
+`build_review_input` in `scripts/review_submission.py` names exactly which files reach the model: `proposal.md`, eight JSON files, five fixed-name figures, pages 1–3 of each PDF, first-viewport screenshots of two pages, and the output of the `self_check_submission.py` subprocess. Compared blob by blob over that list, `proposal.md` is **byte-identical**; so are `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json`, all three matrices, all five figures, all four PDFs, both screenshotted pages and every image they pull in. The self-check output was verified byte-identical across repeated runs.
+
+**To be exact: not the whole set is byte-identical.** One reviewer-visible file differs — `manifest.json`, in **2 `sha256` strings**: the digests of `changelog.md` and `visual/assets/review_gate_survey.json`, neither of which is in the review input. Every other part of the manifest — each `path`, `role`, `required`, `language`, and all top-level fields — is identical. Making that a check rather than a shrug matters, because skipping it is the shape this package's errata register counts eight times.
+
+**So the instrument read the same object twice and returned 94 and 91. A gap of 3.**
+
+**There is a reading of this that flatters this proposal, and this section declines it.** The pair does not show the 91 was wrong. It shows two readings 3 apart, and the 94 is exactly as likely to be the generous one. **This proposal requests no rescore and no adjustment** — a package asking that the higher of its own two readings be kept would be doing the thing it spends its length objecting to.
+
+What the pair supports is narrower, and it costs this package something: **a 3-point gap between two proposals sits inside this instrument's own repeatability, and treating it as a difference in quality over-reads the instrument.** This package is currently on the favourable side of several such gaps.
+
+**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. That is this proposal's entire argument about the corridor, landing back on itself.
+
+The limits are in `limits_zh` in the shipped JSON: both readings came through the approve path, so only the weighted total is observable and which of the seven dimensions moved is unknowable from outside; n is small, so this measures one disagreement and not a distribution; and it cannot be proven from outside that both runs used the same model version and prompt. The full comparison ships in `visual/assets/review_repeatability.json`, and `report` is fully offline, so anyone can re-run it.
+
+<!-- REPEAT:END -->
+
 ## Three-Level Scope Framework
 
 The proposal is organised on the three levels the announcement sets, and each maps one-to-one onto an order of survey precision [depth:three_level_scope_framework].

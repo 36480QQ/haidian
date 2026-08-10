@@ -218,6 +218,19 @@ code {
 <p><strong>本方案在这个问题上不是中立的，和上一节一样先声明：</strong>本包 14 条全部是 provisional，任何把条目移出 <code>public</code> 的校验都会相对抬高本方案的位置。因此这里只报告分布，不提出修改建议，也不申请把自己的档位改成不发警告的那一个——<strong>本包的边界确实是临时的，<code>provisional</code> 是对它唯一诚实的写法</strong>，为了少 14 条警告去改写它，就是本方案通篇反对的那件事。</p>
 <p>全部计数、逐包画像与判别口径随包提交于 <code>visual/assets/spatial_level_survey.json</code>，<code>fetch</code> 联网取数、<code>report</code> 完全离线，任何人可以改了口径重跑。</p>
 <p>&lt;!-- SPATIAL:END --&gt;</p>
+<h4>第五个可测的机制缺口，也是本方案唯一一次把仪器对准打分本身</h4>
+<p>&lt;!-- REPEAT:BEGIN --&gt;</p>
+<p>几何水准不因为仪器报了一个高程就相信它。它走一圈回到起点，把同一个点读两次，两次之差叫<strong>闭合差</strong>——那是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张一座城市应当公开这个数。</p>
+<p><strong>本包的打分过程意外地构成了这样一个闭合环，因此本节把仪器对准打分本身。</strong></p>
+<p>PR #1122 得 <strong>94/100</strong>。十七分钟后，PR #1125 得 <strong>91/100</strong>。两次之间，评审能读到的东西没有变。</p>
+<p><code>scripts/review_submission.py</code> 的 <code>build_review_input</code> 逐条写明哪些文件进入模型：<code>proposal.md</code>、八份 JSON、五张固定文件名的图、每份 PDF 的前三页、两个页面的首屏截图，以及 <code>self_check_submission.py</code> 子进程的输出。按这份清单逐文件比对 git blob 哈希：<code>proposal.md</code> <strong>逐字节相同</strong>，<code>metrics.json</code>、<code>assumptions.json</code>、<code>sources.json</code>、<code>self_check.json</code>、三份矩阵、五张固定图、四份 PDF、两个被截屏的页面及其引用的全部图片，<strong>全部相同</strong>；<code>self_check_submission.py</code> 的输出实测多次运行逐字节相同。</p>
+<p><strong>说精确一点：不是全套逐字节相同。</strong> 唯一有差异的评审可见文件是 <code>manifest.json</code>，它差在 <strong>2 个 <code>sha256</code> 字符串</strong>上——<code>changelog.md</code> 与 <code>visual/assets/review_gate_survey.json</code> 的摘要，而这两份文件都不在评审输入里。manifest 的其余部分（每条 <code>path</code>、<code>role</code>、<code>required</code>、<code>language</code> 与全部顶层字段）逐项相同。把这一步做成检查而不是一句「差不多一样」，是因为省掉它正是本包勘误册记了八次的那个形状。</p>
+<p><strong>于是：仪器把同一个对象读了两次，返回 94 和 91。差 3 分。</strong></p>
+<p><strong>这里有一个对本方案有利的读法，本节明确不采用。</strong> 这一对不说明那个 91 判错了；它说明两次读数相差 3，而那个 94 同样可能是宽松的一次。<strong>本方案不申请重评、不申请任何调整</strong>——一份要求保留自己两次读数里较高那次的包，做的正是本方案通篇反对的事。</p>
+<p>它支持的结论比这窄，而且这句话对本方案同样不利：<strong>两份方案之间 3 分的差距落在这台仪器自身的重复性以内，把它当成质量差别是过度解读读数。</strong> 本包目前正处在若干个这样的差距的有利一侧。</p>
+<p><strong>这不是对评审的批评。</strong> 一台会重复的仪器不存在；水准仪也不存在，所以才要走闭合环。可批评的从来不是读数有偏差，而是<strong>读数的偏差没有被公开</strong>——这正是本方案对这条创新带提出的全部主张，此刻恰好落回它自己身上。</p>
+<p>限制写在随包 JSON 的 <code>limits_zh</code> 里：两次都走 approve 路径，因此只有加权总分可观测，七维中哪一维动了无从得知；n 很小，这里测的是一次不一致而不是一个分布；也无法从外部证明两次用的是同一个模型版本与同一份 prompt。全部比对随包提交于 <code>visual/assets/review_repeatability.json</code>，<code>report</code> 完全离线，任何人可以自己重跑这次比对。</p>
+<p>&lt;!-- REPEAT:END --&gt;</p>
 <h2>三层范围工作框架</h2>
 <p>方案按公告确定的三个层次组织，并与水准网的三级精度一一对应 <span class="evidence evidence-depth">[depth:three_level_scope_framework]</span>。</p>
 <div class="proposal-table"><table><thead><tr><th>公告层次</th><th>范围</th><th>水准网对应</th><th>复测周期</th><th>空间证据</th></tr></thead><tbody><tr><td>统筹研究范围</td><td>约 43.6 km²，北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路</td><td>水准网整体控制</td><td>年</td><td>仓库 <code>provisional_boundaries.geojson#PROV-RESEARCH-001</code> <span class="evidence evidence-source">[source:BOUNDARY-SOURCE]</span></td></tr><tr><td>总体设计范围</td><td>约 11.4 km²，遗址公园周边 1–2 km 城市地区</td><td>一等水准路线（主脊 + 两条附合路线）</td><td>半年</td><td><span class="evidence evidence-data">[data:geometry/site_boundary.geojson#SITE-001]</span>，复算 <span class="evidence evidence-metric">[metric:site_area_sqm]</span></td></tr><tr><td>重点区域范围</td><td>约 369.3 ha（由 <span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-002]</span>、<span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-003]</span> 三处合计复算：192.9 / 104.3 / 72.0 ha；公告文字为约 368.4 ha）</td><td>水准原点 BM-0 与一等水准点 BM-1 / BM-2</td><td>年</td><td><span class="evidence evidence-data">[data:geometry/key_areas.geojson#PROV-KEY-001]</span></td></tr></tbody></table></div>

@@ -1,0 +1,233 @@
+{
+ "schema_version": "review-repeatability-v1",
+ "question_zh": "评审这台仪器，对同一个输入读两次，两次差多少。",
+ "why_zh": "几何水准不因为仪器报了一个高程就相信它：走一圈回到起点，把同一个点读两次，两次之差就是闭合差，也是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张城市应当公开这个数。本包的评分过程恰好构成了这样一个闭合环。",
+ "method_zh": "评审收到哪些文件由 scripts/review_submission.py 的 build_review_input 决定：proposal.md、八份 JSON、五张固定文件名的图、每份 PDF 的前三页、两个页面的首屏截图，以及 self_check_submission.py 子进程的输出（实测多次运行逐字节相同）。本模块把这份清单从该脚本里读出来核对，而不是记住它——记住并信任正是本包勘误册记了八次的那个形状。然后对相邻两次评审的 head 逐文件比对 git blob 哈希。",
+ "controlled_pairs": [
+  {
+   "from_pr": 1122,
+   "to_pr": 1125,
+   "from_score": 94,
+   "to_score": 91,
+   "delta": -3,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "manifest.json"
+   ],
+   "manifest_same_document": true,
+   "manifest_digests_changed_for": [
+    "changelog.md",
+    "visual/assets/review_gate_survey.json"
+   ],
+   "review_input_identical_modulo_digests": true
+  }
+ ],
+ "all_pairs": [
+  {
+   "from_pr": 839,
+   "to_pr": 869,
+   "from_score": 82,
+   "to_score": 88,
+   "delta": 6,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/ecosystem.png",
+    "assets/figures/evidence-circuit.png",
+    "assets/figures/identity.png",
+    "assets/figures/key-areas.png",
+    "assets/figures/kit-of-parts.png",
+    "assets/figures/land-use-structure.png",
+    "assets/figures/metrics-evidence.png",
+    "assets/figures/mobility-bluegreen.png",
+    "assets/figures/site-overview.png",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.html",
+    "self_check.json",
+    "visual/index.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 869,
+   "to_pr": 906,
+   "from_score": 88,
+   "to_score": 85,
+   "delta": -3,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/evidence-circuit.png",
+    "assets/figures/metrics-evidence.png",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html",
+    "visual/index.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 906,
+   "to_pr": 921,
+   "from_score": 85,
+   "to_score": 88,
+   "delta": 3,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/evidence-circuit.png",
+    "assets/figures/metrics-evidence.png",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html",
+    "sources.json",
+    "visual/index.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 921,
+   "to_pr": 932,
+   "from_score": 88,
+   "to_score": 88,
+   "delta": 0,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/site-overview.png",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 932,
+   "to_pr": 1002,
+   "from_score": 88,
+   "to_score": 86,
+   "delta": -2,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/evidence-circuit.png",
+    "assets/figures/hero-leveling-line.png",
+    "assets/figures/metrics-evidence.png",
+    "assets/figures/site-overview.png",
+    "assets/figures/street-eye-level.png",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "metrics.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html",
+    "sources.json",
+    "visual/index.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 1002,
+   "to_pr": 1065,
+   "from_score": 86,
+   "to_score": 91,
+   "delta": 5,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "assets/figures/evidence-circuit.png",
+    "assets/figures/identity.png",
+    "assets/figures/key-areas.png",
+    "assets/figures/kit-of-parts.png",
+    "assets/figures/land-use-structure.png",
+    "assets/figures/metrics-evidence.png",
+    "assets/figures/mobility-bluegreen.png",
+    "assets/figures/region-interface.png",
+    "assets/figures/site-overview.png",
+    "assets/figures/street-eye-level.png",
+    "drawings/a0-boards.en.pdf",
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a3-booklet.pdf",
+    "manifest.json",
+    "metrics.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html",
+    "sources.json",
+    "visual/index.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 1065,
+   "to_pr": 1111,
+   "from_score": 91,
+   "to_score": 91,
+   "delta": 0,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 1111,
+   "to_pr": 1122,
+   "from_score": 91,
+   "to_score": 94,
+   "delta": 3,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "manifest.json",
+    "proposal.md",
+    "report/proposal.en.html",
+    "report/proposal.html"
+   ],
+   "review_input_identical_modulo_digests": false
+  },
+  {
+   "from_pr": 1122,
+   "to_pr": 1125,
+   "from_score": 94,
+   "to_score": 91,
+   "delta": -3,
+   "review_input_identical": false,
+   "differing_review_inputs": [
+    "manifest.json"
+   ],
+   "manifest_same_document": true,
+   "manifest_digests_changed_for": [
+    "changelog.md",
+    "visual/assets/review_gate_survey.json"
+   ],
+   "review_input_identical_modulo_digests": true
+  }
+ ],
+ "conclusion_zh": "本包被读出过 94 与 91，相差 3 分，而两次之间评审能读到的东西没有变。**说精确一点：不是逐字节相同。** proposal.md、metrics.json、assumptions.json、sources.json、self_check.json、三份矩阵、五张固定图、四份 PDF、两个被截屏的页面及其引用的全部图片，blob 哈希逐一相同；唯一有差异的评审可见文件是 manifest.json，而它差在 2 个 sha256 字符串上——changelog.md、visual/assets/review_gate_survey.json——这两份文件都不在评审输入里。manifest 的其余部分（每条 path、role、required、language 与全部顶层字段）逐项相同。",
+ "what_this_does_not_show_zh": "**它不说明那个 91 判错了。** 它说明两次读数相差 3 分，而那个 94 同样可能是宽松的一次。本方案不申请重评、不申请任何调整——一份要求保留自己两次读数里较高那次的包，做的正是本方案通篇反对的事。它支持的结论比这窄：**两份方案之间 3 分的差距落在这台仪器自身的重复性以内，把它当成质量差别是过度解读读数。** 这句话对本方案同样不利：本包目前正处在若干个这样的差距的有利一侧。",
+ "limits_zh": [
+  "两次读数都走 approve 路径，因此只有加权总分可观测，七个维度里是哪一个动了无从得知。",
+  "n 很小：这里测的是一次不一致，不是一个分布。全场层面的重复性需要对所有方案做同样的比对。",
+  "无法从外部证明两次评审使用了同一个模型版本与同一份 prompt；两者相隔十七分钟，但这不是证明。",
+  "评审模型自身的采样不确定性正是这里要测的量，不是需要排除的干扰项。"
+ ]
+}
