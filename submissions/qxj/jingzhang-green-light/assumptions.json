@@ -10,6 +10,14 @@
    "resolution_zh": "取得官方 SITE_BOUNDARY 与三处 KEY_AREA 后重跑几何与指标生成流程。"
   },
   {
+   "id": "A-CONTROLS-001",
+   "title_zh": "官方规划控制指标全部缺失",
+   "statement_zh": "容积率上限、建筑高度上限、建筑密度上限、绿地率要求与退线要求在 brief/site-package/ranges/planning_limits.json 中均记录为 missing，本方案不作推定，对应指标在 metrics.json 中如实标注为待正式数据补齐。",
+   "impact_zh": "方案不提出任何开发强度、建筑高度、退线或地块级拆改留结论。正文出现的容积率与建筑密度是概念方案自身的估算比值，不是规划控制指标。",
+   "confidence": "high",
+   "resolution_zh": "以正式规划条件下发的控制指标替换，并重算相关指标与图纸。"
+  },
+  {
    "id": "A-STOREY-001",
    "title_zh": "建筑层数为方案假设值",
    "statement_zh": "总建筑面积与容积率由建筑基底面积乘以假设层数得到。按用地性质取值：科研6层、商业服务业5层、居住8层、社区服务3层、文化3层、教育5层、医疗卫生4层。",
