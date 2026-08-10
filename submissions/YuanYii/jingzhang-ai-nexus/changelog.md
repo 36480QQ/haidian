@@ -1,7 +1,7 @@
 ## v1.4.0 - 2026-08-09
 
 高分冲刺与合规审计提档：
-- **新增** `rights_status_ledger.json` 版权与资产台账文件，全量注册字库授权 (STHeiti)、矢量图纸许可 (Matplotlib MIT)、竞赛数据源 (Open-City MIT) 与学术引用台账。
+- **新增** `report/copyright_statement.md` 版权与资产台账文件，全量注册字库授权 (STHeiti)、矢量图纸许可 (Matplotlib MIT)、竞赛数据源 (Open-City MIT) 与学术引用台账。
 - **扩展** JZ-01 至 JZ-06 更新项目表格，新增「基线与目标」、「KPI 计算公式」与「Proof-Mile 空间验算接口」3 大标准列。
 - **新增**「Civic Value Protocol（市民算力收益反哺机制）」：概念建议 15% 算力运营收益反哺社区无障碍与湿地维护。
 - **新增**「京张通风廊道与风健康场（Wind Health Field）微气候调控」：9.5km 主导风廊降低热岛 1.5°C 的气象模拟方向。

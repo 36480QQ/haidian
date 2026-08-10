@@ -3,8 +3,10 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "1.3.0"
-date: "2026-08-09"
+version: "1.4.0"
+proposal_format_version: 2
+bilingual_contract_version: 1
+date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 package_type: "professional_design_package"
@@ -28,6 +30,14 @@ As the official precise redline is not yet fully published, this formal package 
 
 The readable interpretation of the boundary and key areas corresponds to [data:geometry/site_boundary.geojson#SITE-001], [data:geometry/key_areas.geojson#PROV-KEY-001] and [metric:site_area_sqm], [metric:key_area_count].
 
+### Zero-Assumption Disclaimer
+
+This proposal follows a "verifiable, rollback-able, reviewable" expression discipline and declares two status classes for every claim:
+
+- **Boundary & spatial data**: all boundaries, key areas and area indicators are provisional conceptual delineations (`official_boundary=false`), recalculated from `provisional_boundaries.geojson` ([metric:site_area_sqm]); they are not legal redlines, approval conclusions or precise-area bases. A unified recalculation will run once official polygons are released.
+- **Simulation & pilot status**: all meteorological simulations (e.g., the Wind Health Field 1.5°C heat-island estimate), passenger-flow simulations and energy estimates are **Synthetic Tabletop** results ([source:AGENT-TASKBOOK]); no unauthorized field pilot has been run (**Field Pilot: NOT AUTHORIZED / NOT RUN**). Any AI scenario deployment requires a tabletop acceptance first, then authorized phased pilots with a 5-step rollback/deletion sequence.
+
+
 ## Three-Level Scope Framework
 
 The proposal follows the three tiers defined by the announcement:
@@ -41,6 +51,11 @@ Depth items are governed by [depth:three_level_scope_framework] and [depth:overa
 ![Three-tier scope and spatial work framework](assets/figures/land-use-structure.en.png)
 
 The core concept is named **"Jing-Zhang Smart Vein · Unbounded Green"**: using the century-old Jing-Zhang Railway Heritage Park as the historical, cultural and public-space spine, the three key districts as intelligent innovation anchors, and the universities, tech companies and transit nodes along the corridor as the living and social network, forming a future urban pattern of "one belt, three cores, ten districts in linkage, and a composite blue-green slow loop."
+
+### Governance Protocol Core: Block Token (Interval Token System)
+
+This proposal uses the century-old **block-token / staff-and-ticket system** of single-track Jing-Zhang railway as the core of its urban AI governance protocol: on a single-track line, a driver must hold the interval token to enter a section; both ends are electrically interlocked, and **no second token can be issued before the first is returned**—so two trains can never occupy the same section. The proposal applies the same system to urban AI scenario governance: **one block = one token; an AI service may operate in a block only while holding its token, and must return the token when the service leaves, expires, or a hard-stop condition triggers**. This is not a metaphor for the block-token system but the same system applied to urban scenario governance: the three key areas are the three "stations" (Zhongzhiyuan·Departure Yard / Origin Community·Zero-Kilometer Station / Dazhongsi·Marshalling Yard), the two wings are the two "switches" (Zhongguancun Tech-Service Wing / Xiaoyuehe Scenario-Enablement Wing), and the heritage park spine is the "section". Token issuance, holding and return states are all registered in the Proof-Mile verification interface (see "Renewal Projects" chapter) and are reviewable, rollback-able and auditable.
+
 
 | Tier | Core design question | Proposal answer | Data anchor |
 | --- | --- | --- | --- |
@@ -187,6 +202,26 @@ The proposal defines 6 typical personas and deploys 12 spatial scenario cards pl
 2. **Zhongzhi Open-Source Light Launch Hall**: in the Origin Community center, with a 360° digital wall showing global open-source commit pulses — a spiritual home for programmers.
 3. **Qinghuayuan AI Origin Mark Park**: an ecological park around Qinghuayuan Station Heritage Site with AI sculpture and an AR history corridor.
 
+### Scenario-Card Responsibility Clause Matrix
+
+Each scenario card is completed with six responsibility clauses under the "verifiable, rollback-able, reviewable" protocol: public purpose, minimal data, human responsibility, non-AI alternative, appeal & deletion, and evaluation & hard-stop conditions. The matrix shares the same verification-state enumeration as the Proof-Mile interface (see "Renewal Projects" chapter):
+
+| Card | Public purpose | Minimal data | Human responsibility | Non-AI alternative | Appeal & deletion | Evaluation & hard-stop |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 Open-Source Launch Hall | Global developer premieres and OSS collaboration | Aggregated commit counts only; no personal code | Human pre-review of published content | Offline salons and physical boards | Display removal on request within 30 days | Quarterly review; takedown on content violation |
+| 02 Safety Governance Sandbox | Transparent red-team and standard-setting showcase | Sanitized attack samples; no real user data | Security experts on duty throughout | Static case boards | Samples traceable and deletable | Any red-team incident pauses operation |
+| 03 Edge-Compute Station | Edge replenishment for AVs/robots | Device ID and charge level only | O&M staff patrol | Wired charging points | Devices may opt out | Throttle on energy overrun |
+| 04 AI Slow Wayfinding | Accessible navigation and crowding alerts | Anonymous trajectory aggregates; 7-day deletion | Human review of route info | Braille signs and human guidance | Location service opt-out | Degrade to static signage on accuracy failure |
+| 05 International Demo Lounge | Global AI enterprise launches | Minimal registration data | Human content & copyright review | Offline media center | Footage deleted after events | Takedown on copyright dispute |
+| 06 Qinghe Low-Carbon Waterfront | Ecological sensing and carbon-sink research | Environmental data only; no personal data | Ecologists validate conclusions | Manual water-quality monitoring | Sensors removable | Downgrade standards on flood risk |
+| 07 Campus Commercialization Street | University transfer and early incubation | Sanitized project info | Legal/IP human review | Offline service windows | Projects may exit display | Semi-annual occupancy review |
+| 08 Data-Element Lounge | Compliant data-element trading showcase | Sanitized metadata; no raw storage | Compliance officer confirms rights | Offline consultation window | Data deletion on request | Suspend on violation |
+| 09 AI Lifestyle Sample Street | Fringe AI lifestyle experiences | Anonymized in-scenario behavior | Human customer-service backstop | Traditional retail services | Opt-out of experience zone | Disable sensing on privacy complaints |
+| 10 Global AI Week Route | Pilgrimage and industry-experience linkage | Aggregated registration and traces | Human security contingency plan | Paper guides | Footage deletable | Crowd diversion over capacity |
+| 11 Multi-Species Sensing Node | Ecology protection and carbon-sink research | Environmental acoustic/water data | Ecologists validate | Manual quadrat surveys | Nodes removable | Calibration halt on data anomalies |
+| 12 Non-Digital Service Station | Digital inclusion and accessibility backstop | No data collection | Human attendants on site | The service itself is the non-digital alternative | N/A | Quarterly service-quality review |
+
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 ### Fine-grained Retain-Renovate-Demolish Principles Based on Existing Park
@@ -245,14 +280,14 @@ Concept proposal to explore a multi-species eco-sensing and resilience system at
 
 Following [depth:renewal_project_list] and [depth:phasing_implementation], the proposal sets a "visible in three years, exemplary in five, benchmark in ten" phasing plan, with responsible-department suggestions and risk-control measures for major works:
 
-| No. | Project | Existing issue & pre-survey | Suggested participants | Approval dependence & costing | O&M KPI formula & baseline | Risk & stop condition | Evidence |
+| No. | Project | Existing issue & pre-survey | Suggested participants | Approval dependence & costing | O&M KPI formula & baseline | Risk & stop condition | Evidence | Proof-Mile verification interface |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| JZ-01 | Slow-traffic gap stitching | Ring roads sever the network; on-site pedestrian survey needed | Planning/Transport Commission (suggested) | Traffic assessment; per-meter costing | Connectivity = connected gaps / total gaps | Funding break; fall back to ground guidance | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Qinghe ecological experience | Lack of waterfront access; flood assessment needed | Water/Parks Bureau (suggested) | EIA; per-green-area costing | Greening survival > 90% | Flood risk; downgrade standards | [data:geometry/green_space.geojson#GREEN-001], [data:geometry/constraints.geojson#CONSTRAINT-002] |
-| JZ-03 | Industrial-building adaptive reuse | Vacancy; structural inspection needed | DRC/University Office (suggested) | Construction approval; per-sqm costing | Occupancy baseline > 80% | Weak leasing; convert to general offices | [data:geometry/buildings.geojson#BLDG-001] |
-| JZ-04 | Link system feasibility | TOD transfer inconvenient; passenger-flow simulation needed | Transit Co./DRC (suggested) | Over-limit review; composite costing | Daily link flow > baseline | Structural limits; drop elevated links | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | Compute-center scenario | Compute gap; energy assessment and grid capacity needed | Industry/Environment Bureau (suggested) | Energy assessment; per-rack costing | PUE < 1.2 (baseline 1.5) | Energy overrun; throttled degraded operation | [data:geometry/constraints.geojson] |
-| JZ-06 | Smart component deployment | Lacks interactive wayfinding; weak-current survey needed | Urban Management/Culture Bureau (suggested) | Road-occupancy approval; per-point costing | Device uptime > 95% | Privacy dispute; disable sensing modules | [data:geometry/phasing.geojson#PHASE-001] |
+| JZ-01 | Slow-traffic gap stitching | Ring roads sever the network; on-site pedestrian survey needed | Planning/Transport Commission (suggested) | Traffic assessment; per-meter costing | Connectivity = connected gaps / total gaps | Funding break; fall back to ground guidance | [data:geometry/roads.geojson#ROAD-001] | claimed → synthetic-tested (connectivity tabletop) → field-pending; acceptance = connectivity formula + gap register |
+| JZ-02 | Qinghe ecological experience | Lack of waterfront access; flood assessment needed | Water/Parks Bureau (suggested) | EIA; per-green-area costing | Greening survival > 90% | Flood risk; downgrade standards | [data:geometry/green_space.geojson#GREEN-001], [data:geometry/constraints.geojson#CONSTRAINT-002] | claimed → synthetic-tested (greening baseline) → field-pending; acceptance = survival>90% sampling protocol |
+| JZ-03 | Industrial-building adaptive reuse | Vacancy; structural inspection needed | DRC/University Office (suggested) | Construction approval; per-sqm costing | Occupancy baseline > 80% | Weak leasing; convert to general offices | [data:geometry/buildings.geojson#BLDG-001] | claimed → synthetic-tested (occupancy scenario) → field-pending; acceptance = structural report + leasing baseline |
+| JZ-04 | Link system feasibility | TOD transfer inconvenient; passenger-flow simulation needed | Transit Co./DRC (suggested) | Over-limit review; composite costing | Daily link flow > baseline | Structural limits; drop elevated links | [data:geometry/public_space.geojson#PUBLIC-001] | claimed → synthetic-tested (flow-simulation slice) → field-pending; acceptance = measured link flow > baseline |
+| JZ-05 | Compute-center scenario | Compute gap; energy assessment and grid capacity needed | Industry/Environment Bureau (suggested) | Energy assessment; per-rack costing | PUE < 1.2 (baseline 1.5) | Energy overrun; throttled degraded operation | [data:geometry/constraints.geojson] | claimed → synthetic-tested (PUE energy slice) → field-pending; acceptance = measured PUE < 1.2 |
+| JZ-06 | Smart component deployment | Lacks interactive wayfinding; weak-current survey needed | Urban Management/Culture Bureau (suggested) | Road-occupancy approval; per-point costing | Device uptime > 95% | Privacy dispute; disable sensing modules | [data:geometry/phasing.geojson#PHASE-001] | claimed → synthetic-tested (uptime baseline) → field-pending; acceptance = uptime>95% O&M register |
 
 ### Long-term operation & governance roadmap
 - **Privacy & safety sandbox**: data minimization, "usable but invisible" processing and periodic destruction for all deployments; human-in-the-loop posts and digital-exclusion compensation services.
@@ -366,9 +401,10 @@ All known indicators exactly match GeoJSON features:
 
 ## Risk, Copyright, and Compliance
 
-1. **Provisional boundary warning**: built on `provisional_boundaries.geojson`; one-click recalculation after the official redline, without affecting content review.
+1. **Provisional boundary warning**: built on `provisional_boundaries.geojson`; all boundaries and area indicators are provisional conceptual delineations (`official_boundary=false`) and are not legal redlines or approval conclusions; one-click recalculation after the official redline, without affecting content review.
 2. **AI generation & compliance review**: generated by an AI agent from public sources and regulations under data-minimization and privacy principles; no non-public confidential data.
 3. **Copyright & legal disclaimer**: COMMUNITY-DISPLAY-ONLY license; all images, drawings and code assets are cleared under the open-call rules. All spatial moves and compute deployments are conceptual design recommendations, not formal administrative approval conclusions.
+4. **Simulation & pilot dual-status declaration**: all meteorological simulations, passenger-flow simulations and energy estimates are Synthetic Tabletop results ([source:AGENT-TASKBOOK]); no unauthorized field pilot has been run (Field Pilot: NOT AUTHORIZED / NOT RUN). Any pilot requires tabletop acceptance, authority approval and a 5-step rollback/deletion sequence before phased deployment.
 
 ## Visual Index
 
