@@ -31,6 +31,10 @@
       },
       "sample_and_window": {
         "sample_definition": "authorised team must pre-register the eligible request groups and inclusion/exclusion rules",
+        "exclusion_rules": [
+          "exclude unconsented individual traces, requests outside the declared service group or time window, and people who cannot enter through the recruited intake route",
+          "record excluded categories without identifying individuals; absence from the recruited group is not evidence of no care or accessibility need"
+        ],
         "observation_period": "to_be_frozen before the first window",
         "sampling_method": "pre-registered grouped observation; no continuous personal trajectory"
       },
@@ -58,13 +62,26 @@
         "minimum_data": ["grouped service type", "time window", "fallback offered", "outcome class", "complaint status"],
         "retention_rule": "retain only the minimum grouped record for the declared review cycle; exact period requires authorisation",
         "deletion_owner_role": "data stewardship role",
-        "deletion_proof": "not_available_before_authorization"
+        "deletion_proof": "not_available_before_authorization",
+        "deletion_receipt_contract": {
+          "required_fields": ["receipt_id", "scope", "scheduled_or_executed_at", "executor_role", "independent_verifier_role", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "declarative receipt schema only; it does not prove that deletion has occurred"
+        }
       },
       "review_and_redress": {
         "review_cycle": "before each window, after the first replay and at the declared close-out review; dates unknown",
         "appeal_entry": "staffed desk, telephone or paper complaint route",
         "appeal_owner_role": "community liaison and independent review roles",
-        "response_rule": "publish a status or reason for delay; exact service level requires authorisation"
+        "response_owner_role": "community liaison role with independent review escalation",
+        "response_sla": "freeze a response window before authorisation; current service level is unknown",
+        "receipt_lookup_location": "not_available_before_authorization",
+        "response_rule": "publish receipt ID, received time, owner, status, next review time and lookup location; exact service level requires authorisation",
+        "appeal_receipt_contract": {
+          "required_fields": ["receipt_id", "received_at", "response_owner_role", "status", "next_review_at", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "a declared receipt format does not prove that an appeal was received or answered"
+        }
       },
       "status": "not_authorized_not_run",
       "source_refs": ["visual/assets/mobility-tabletop-contract.json", "visual/assets/responsibility-acceptance-contract.json"]
@@ -81,6 +98,10 @@
       },
       "sample_and_window": {
         "sample_definition": "authorised accessibility reviewer must pre-register route segments, handover points and observation strata",
+        "exclusion_rules": [
+          "exclude route segments inaccessible to the declared audit method, users not represented by the assisted-route sample, and unconsented individual traces",
+          "record excluded route conditions and do not infer safe access from a route or user group that was not observed"
+        ],
         "observation_period": "to_be_frozen before the first walk-through",
         "sampling_method": "professional route audit plus grouped assisted-route replay; no unconsented individual tracking"
       },
@@ -108,13 +129,26 @@
         "minimum_data": ["route segment", "audit date", "obstruction class", "fallback route", "review status"],
         "retention_rule": "retain the minimum route-audit and aggregate assistance record through the declared review cycle; exact period requires authorisation",
         "deletion_owner_role": "data stewardship and accessibility review roles",
-        "deletion_proof": "not_available_before_authorization"
+        "deletion_proof": "not_available_before_authorization",
+        "deletion_receipt_contract": {
+          "required_fields": ["receipt_id", "scope", "scheduled_or_executed_at", "executor_role", "independent_verifier_role", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "declarative receipt schema only; it does not prove that deletion has occurred"
+        }
       },
       "review_and_redress": {
         "review_cycle": "before each window, after any route change or incident and at the declared close-out review; dates unknown",
         "appeal_entry": "staffed route desk, telephone or paper complaint route",
         "appeal_owner_role": "accessibility review and community liaison roles",
-        "response_rule": "record an owner, status and route remedy; exact service level requires authorisation"
+        "response_owner_role": "accessibility review role with independent safety escalation",
+        "response_sla": "freeze a response window before authorisation; current service level is unknown",
+        "receipt_lookup_location": "not_available_before_authorization",
+        "response_rule": "record receipt ID, received time, owner, status, next review time and route remedy; exact service level requires authorisation",
+        "appeal_receipt_contract": {
+          "required_fields": ["receipt_id", "received_at", "response_owner_role", "status", "next_review_at", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "a declared receipt format does not prove that an appeal was received or answered"
+        }
       },
       "status": "not_authorized_not_run",
       "source_refs": ["visual/assets/mobility-tabletop-contract.json", "visual/assets/responsibility-acceptance-contract.json"]
@@ -131,6 +165,10 @@
       },
       "sample_and_window": {
         "sample_definition": "authorised team must pre-register participating demand groups, vehicle classes, curb assets and exclusion rules",
+        "exclusion_rules": [
+          "exclude unconsented enterprise identities, vehicles or curb assets outside the declared window, and demand groups not represented in the grouped ledger",
+          "record out-of-scope demand categories rather than treating unobserved enterprise or resident demand as zero"
+        ],
         "observation_period": "to_be_frozen before any reservation test",
         "sampling_method": "grouped demand and curb observation; no enterprise identity or personal route trace"
       },
@@ -158,13 +196,26 @@
         "minimum_data": ["grouped demand", "vehicle class", "curb asset", "time window", "clearance status", "complaint status"],
         "retention_rule": "retain minimum grouped demand and curb-state records through the declared review cycle; exact period requires authorisation",
         "deletion_owner_role": "curb and data stewardship roles",
-        "deletion_proof": "not_available_before_authorization"
+        "deletion_proof": "not_available_before_authorization",
+        "deletion_receipt_contract": {
+          "required_fields": ["receipt_id", "scope", "scheduled_or_executed_at", "executor_role", "independent_verifier_role", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "declarative receipt schema only; it does not prove that deletion has occurred"
+        }
       },
       "review_and_redress": {
         "review_cycle": "before each reservation window, after any blockage or complaint and at the declared close-out review; dates unknown",
         "appeal_entry": "on-site human marshal, telephone or paper complaint route",
         "appeal_owner_role": "curb operations and community liaison roles",
-        "response_rule": "freeze the reservation and publish an owner/status record when a complaint is unresolved; exact service level requires authorisation"
+        "response_owner_role": "curb operations role with independent fire/accessibility escalation",
+        "response_sla": "freeze a response window before authorisation; current service level is unknown",
+        "receipt_lookup_location": "not_available_before_authorization",
+        "response_rule": "freeze the reservation and publish receipt ID, received time, owner, status, next review time and lookup location when a complaint is unresolved; exact service level requires authorisation",
+        "appeal_receipt_contract": {
+          "required_fields": ["receipt_id", "received_at", "response_owner_role", "status", "next_review_at", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "a declared receipt format does not prove that an appeal was received or answered"
+        }
       },
       "status": "not_authorized_not_run",
       "source_refs": ["visual/assets/mobility-tabletop-contract.json", "visual/assets/responsibility-acceptance-contract.json"]
@@ -181,6 +232,10 @@
       },
       "sample_and_window": {
         "sample_definition": "authorised team must pre-register station exits, transfer modes, time strata and protected-route checks",
+        "exclusion_rules": [
+          "exclude unconsented individual traces, station exits or transfer modes outside the declared window, and protected groups not represented by the assisted-wayfinding sample",
+          "record excluded exits and groups; an unobserved transfer is not evidence of a safe or reliable transfer"
+        ],
         "observation_period": "to_be_frozen before the first transfer replay",
         "sampling_method": "grouped transfer observation and human wayfinding replay; no continuous personal trajectory"
       },
@@ -208,13 +263,26 @@
         "minimum_data": ["station exit", "grouped request", "time window", "mode", "fallback offered", "review status"],
         "retention_rule": "retain minimum grouped transfer records through the declared review cycle; exact period requires authorisation",
         "deletion_owner_role": "rail/bus operations and data stewardship roles",
-        "deletion_proof": "not_available_before_authorization"
+        "deletion_proof": "not_available_before_authorization",
+        "deletion_receipt_contract": {
+          "required_fields": ["receipt_id", "scope", "scheduled_or_executed_at", "executor_role", "independent_verifier_role", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "declarative receipt schema only; it does not prove that deletion has occurred"
+        }
       },
       "review_and_redress": {
         "review_cycle": "before each transfer window, after any route change or incident and at the declared close-out review; dates unknown",
         "appeal_entry": "staffed station desk, telephone or paper complaint route",
         "appeal_owner_role": "rail/bus operations and community liaison roles",
-        "response_rule": "record an owner, status and alternative route; exact service level requires authorisation"
+        "response_owner_role": "rail/bus operations role with independent accessibility escalation",
+        "response_sla": "freeze a response window before authorisation; current service level is unknown",
+        "receipt_lookup_location": "not_available_before_authorization",
+        "response_rule": "record receipt ID, received time, owner, status, next review time, lookup location and alternative route; exact service level requires authorisation",
+        "appeal_receipt_contract": {
+          "required_fields": ["receipt_id", "received_at", "response_owner_role", "status", "next_review_at", "lookup_location"],
+          "current_status": "not_available_before_authorization",
+          "semantic_boundary": "a declared receipt format does not prove that an appeal was received or answered"
+        }
       },
       "status": "not_authorized_not_run",
       "source_refs": ["visual/assets/mobility-tabletop-contract.json", "visual/assets/responsibility-acceptance-contract.json"]
@@ -223,7 +291,10 @@
   "negative_samples": [
     {"id": "NEG-MISSING-OWNER", "mutates": "accountability.operating_owner_role", "expected": "reject"},
     {"id": "NEG-OBSERVED-WITHOUT-BASELINE", "mutates": "success_condition.observed_value", "expected": "reject"},
-    {"id": "NEG-MISSING-DELETION-PROOF", "mutates": "data_contract.deletion_proof", "expected": "reject"}
+    {"id": "NEG-MISSING-DELETION-PROOF", "mutates": "data_contract.deletion_proof", "expected": "reject"},
+    {"id": "NEG-MISSING-SAMPLE-EXCLUSION", "mutates": "sample_and_window.exclusion_rules", "expected": "reject"},
+    {"id": "NEG-MISSING-DELETION-SEMANTICS", "mutates": "data_contract.deletion_receipt_contract.semantic_boundary", "expected": "reject"},
+    {"id": "NEG-MISSING-APPEAL-LOOKUP", "mutates": "review_and_redress.appeal_receipt_contract.lookup_location", "expected": "reject"}
   ],
   "source_refs": [
     "visual/assets/mobility-tabletop-contract.json",

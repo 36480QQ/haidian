@@ -117,7 +117,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "130ee2429b34edeca0fb332657ea5ff5fce44d139a0825ac965f538f69dc1684"
+      "sha256": "ce434fc8dffcd810ecdbe72c4c8c44f11111eff369154811a7866dd90d113c1d"
     },
     {
       "path": "compliance_matrix.json",
@@ -227,14 +227,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0e71ecf90a02cae3b195bc599334cad2bc46159fdc2db2fae1993531bc203469"
+      "sha256": "9c384a52233f20890f774fc57e1dbb262a8d4c2b6419d3cd56a155704886767f"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d4c8c1ddee7188d1f7d63dcefd3f3e234294aac670928771f8a2295c29f55115"
+      "sha256": "cdda62754782b00e5d5f941ced09c049822207da5cc4b71688771a427b3e3547"
     },
     {
       "path": "report/copyright_statement.md",
@@ -253,14 +253,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8f742a6877b6d7a008d80d3277a0e252ee555c421dc98612ceebc8abb87e9cc5"
+      "sha256": "ed9cd4923e21cc046661e1cfbed4bd275fd464b20bd15feaec62cfd09b390502"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1b2dc841fdf7b1ebc1fb3d0171d7de3a1fe67f94f1862922a74c2996341e2844"
+      "sha256": "d126f1a5cb74aa609a7ce4f837c57c8a948ef271d376a9141adfbd0440111e45"
     },
     {
       "path": "self_check.json",
@@ -418,19 +418,19 @@
       "path": "visual/assets/mobility-pilot-readiness.json",
       "role": "data",
       "required": true,
-      "sha256": "74d057a0abd2ccff23165db789e7cf444407499f4253e34d5aea5e364fbd9a10"
+      "sha256": "4310f143ed9949441ae98add83159fff4598f1b754ced522aca0364d5d4b2bb6"
     },
     {
       "path": "visual/assets/mobility-pilot-readiness-evidence.json",
       "role": "data",
       "required": true,
-      "sha256": "c244bed9c046a1a25bd5014774062759edb126472383d38581942fddc6173290"
+      "sha256": "d082d6875ab36c6e6a5ac3cce82387682218b485f4d6e06a17f999bf5307b039"
     },
     {
       "path": "visual/assets/run-mobility-pilot-readiness.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "0fc6b6d84380679b92e5bd0843ebea15222611f84a26efd73d1b265d977c9220"
+      "sha256": "25ee28f26b270ca7dadbb3eb2a708eaad775db8da21c0953d98adb19f9099e61"
     },
     {
       "path": "visual/assets/m09-curb-spatial-prototype.json",
