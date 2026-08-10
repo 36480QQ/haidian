@@ -1,6 +1,6 @@
 {
  "method": "English words per Chinese character, tables and code fences excluded. Calibrated to the field: 0.784 words/char measured across the 41 scored packages (see score_correlates.json); the floor is 0.75 of that. This measures content parity, which string-coverage counters do not. Parity does not predict review score (r = -0.20); the gate exists for the reader.",
- "overall_ratio": 0.865,
+ "overall_ratio": 0.867,
  "floor": 0.75,
  "sections": [
   {
@@ -12,16 +12,16 @@
   },
   {
    "section": "One person's day: what the mechanism looks like on the street",
-   "zh_chars": 837,
-   "en_words": 577,
-   "ratio": 0.879,
+   "zh_chars": 846,
+   "en_words": 581,
+   "ratio": 0.876,
    "pass": true
   },
   {
    "section": "Design Basis and Source List",
-   "zh_chars": 8988,
-   "en_words": 5889,
-   "ratio": 0.836,
+   "zh_chars": 9012,
+   "en_words": 5931,
+   "ratio": 0.839,
    "pass": true
   },
   {
@@ -54,9 +54,9 @@
   },
   {
    "section": "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-   "zh_chars": 10698,
-   "en_words": 6977,
-   "ratio": 0.832,
+   "zh_chars": 10940,
+   "en_words": 7156,
+   "ratio": 0.834,
    "pass": true
   },
   {
@@ -75,7 +75,7 @@
   },
   {
    "section": "Blue-Green Network, Public Space, and Urban Character",
-   "zh_chars": 2825,
+   "zh_chars": 2826,
    "en_words": 1704,
    "ratio": 0.769,
    "pass": true
@@ -90,8 +90,8 @@
   {
    "section": "Metrics, Area Recalculation, and Compliance Matrix",
    "zh_chars": 4738,
-   "en_words": 3248,
-   "ratio": 0.874,
+   "en_words": 3281,
+   "ratio": 0.883,
    "pass": true
   },
   {
