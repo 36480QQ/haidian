@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-10T01:50:04-07:00",
+  "generated_at": "2026-08-10T02:20:45-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "27f856645ba27f2ed327133e39a5524db2f03122f74d65b6aecfb029e540b30e"
+      "sha256": "840c19991ea5903a1b4e7c16ed66ebdb224f506f21493ef0eec768d49cc9d101"
     },
     {
       "path": "agent.json",
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "38874969184475a8e9793c584d42705ed742db1d66dcdf1eddc7bf6721600857"
+      "sha256": "7baf68fe492cae118337263d8d73b04551dbd883fb2a2fdb8a424ae906f7eb00"
     },
     {
       "path": "report/narrative.md",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "960757f5b654bb1e96f45f2c067a959c2c63428163856261f93a6805d590d6b2"
+      "sha256": "66a62259ec8f9e41de4917605dfcf86d69f50ab13f64c664a05af39dbdf85388"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9a021db6cda43b195386e29a0f30d07419cdbe444d6e19fe584389797f132fd5"
+      "sha256": "b6fb7a89b4e6abca61891308b1aeb7ab04d23e4955522eeb8f5e12f3394740f6"
     },
     {
       "path": "visual/index.en.html",
@@ -433,7 +433,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "a1657db1f97815977a6ca88c01bd6709c6b6fdf32e7fa409ad905301dfe2cdd8"
+      "sha256": "6a8bbdf8aaea13b5bac537f4ab9151a3521e762a4029c81b0da3acc05473cedd"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -569,7 +569,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "34c81afc6aaaa8e81b74a8c61998e88023f383aadd8687f738b290224bc8c427"
+      "sha256": "d3634a176a54d6a05120e29cf23def3e9aa4e9d46e329b1d4be48d22ba859633"
     },
     {
       "path": "visual/assets/rights_ledger.json",

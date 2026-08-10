@@ -65,7 +65,21 @@ Mandatory professional standards are read from the local reference snapshots rat
 
 **Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the GitHub git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]; its most recent run (2026-08-09) covered **354** proposals with 354/354 fetched and zero failures; the four earlier runs covered 184, 215, 228 and 298. A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
 
-The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags. **This observation reversed under this proposal's own re-measurement, and is recorded as such:** on 8 August it listed 184, i.e. 44 fewer (19.3%) than the repository held, unchanged between two censuses, which read as a widening gap; on 9 August it measured 292 of 298, a lag of **6 (2.0%)**, and that was written up as the index having plainly been caught up. **A fifth census the same day reads 309 of 373 — the lag is back to 29 (8.6%). So "caught up" was itself a snapshot conclusion, and it is withdrawn too.** Four index readings run, in order, 31 → 44 → 6 → 45 — the first two were previously printed the wrong way round, and the order is the point: the lag did widen at first, which is why it was read as widening: the lag is neither steadily widening nor permanently closed; it rises and falls with merge bursts. No credit is claimed and no blame assigned — causation cannot be shown. It is written here because a mechanism that only re-measures when the result flatters it is not a mechanism, and **drawing a conclusion from a single snapshot twice in a row shows the habit is not somebody else's.** **What survives is the methodological part: a review instrument must read the authoritative source (the git tree), not a derived index that may lag by an amount which itself varies.**
+The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags. **This observation reversed twice under this proposal's own re-measurement, and this time the historical readings are reconstructed too:** the lag sequence the prose used to quote — 31 → 44 → 6 → 45 — **was computed by nothing in the package**, while `submissions-data.js` has sat in every historical commit all along. It was reconstructible and was asserted instead. Rebuilt by the same method as the corpus reconstruction (`git show <commit>:submissions-data.js`, counting entries), and shipped as `gallery_lag` in `census_history.json`:
+
+<!-- GALLERYLAG:BEGIN -->
+
+| Reading | git tree | Gallery index | Lag |
+|---|---|---|---|
+| First | 184 | 184 | **0** (0.0%) |
+| Second | 215 | 184 | **31** (14.4%) |
+| Third | 228 | 184 | **44** (19.3%) |
+| Fourth | 298 | 292 | **6** (2.0%) |
+| Current reading | 416 | 309 | **107** (25.7%) |
+
+<!-- GALLERYLAG:END -->
+
+**The reconstructed sequence is not the one that was written: the leading 0 had never been recorded, and the last reading is not 45.** The lag neither widens monotonically nor closes for good; it rises and falls with merge bursts, and both earlier conclusions — "the lag is widening" and "the index has plainly caught up" — were snapshot conclusions and are withdrawn. No credit is claimed and no blame assigned; causation cannot be shown. **What survives is the methodological part: a review instrument must read the authoritative source, the git tree, and not a derived index whose lag itself varies — and this section had been arguing that with a string of numbers nobody had computed.**
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
