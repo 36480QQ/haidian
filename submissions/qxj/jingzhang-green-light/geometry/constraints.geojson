@@ -5,7 +5,7 @@
    "type": "Feature",
    "properties": {
     "id": "CON-PROV-BOUNDARY",
-    "layer": "CONSTRAINT",
+    "layer": "REGULATORY_CONTROL",
     "constraint_type": "provisional_boundary",
     "name_zh": "总体设计范围临时粗略边界",
     "limitation_zh": "不可作为法定红线、审批依据或精确面积复算依据",
@@ -65,7 +65,7 @@
    "type": "Feature",
    "properties": {
     "id": "CON-CONFLICT-0301",
-    "layer": "CONSTRAINT",
+    "layer": "REGULATORY_CONTROL",
     "constraint_type": "conflict_segment",
     "name_zh": "人机冲突瓶颈段",
     "limitation_zh": "分级依据为推断宽度，待实测断面数据补齐后重算",
@@ -357,7 +357,7 @@
    "type": "Feature",
    "properties": {
     "id": "CON-HERITAGE-RAIL",
-    "layer": "CONSTRAINT",
+    "layer": "EXISTING_RAIL",
     "constraint_type": "heritage",
     "name_zh": "京张铁路遗址文化资源提示带",
     "limitation_zh": "遗址具体保护范围与等级须以文物主管部门公布的正式文件为准，本图仅为设计提示",

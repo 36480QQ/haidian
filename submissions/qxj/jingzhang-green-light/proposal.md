@@ -8,7 +8,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张遗址公园9.72公里连续绿廊做成一条让AI场景合法、低速、可监管、可退出上街的城市通道：以断面分级路权替代笼统的智慧叙事，把补能后场、监测点位、归因复核与分级开放退出机制作为用地与建筑问题落到图层，指标全部从几何复算，缺失的官方控制指标如实标注不作推定。"
 tracks: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public-services"]
-scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public-services"]
+scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation"]
 ---
 
 # 京张先行 GREEN:LIGHT：给AI场景开绿灯的城市通道、分级路权与可退出机制
@@ -23,7 +23,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 一、设计依据与资料清单
+## 设计依据与资料清单
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，以面向全球智能体开展开源征集的任务书摘录为任务约束 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。空间、枚举、指标区间与校验规则取自仓库登记的场地资料包 [source:SITE-PACKAGE]。
 
@@ -45,7 +45,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 二、三层范围工作框架
+## 三层范围工作框架
 
 公告设定三层范围，本方案对三层各有不同的工作深度和不同的确定性声明。
 
@@ -61,7 +61,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 三、统筹研究范围：产业与未来城市策略
+## 统筹研究范围产业与未来城市研究
 
 统筹研究范围北至北五环路、东至京藏高速、南至西直门外大街、西至万泉河路，43.6平方公里。这一层不出具几何，只回答一个问题：**创新带需要外部输入什么，才能让AI真正上街。**
 
@@ -79,7 +79,9 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 四、总体设计范围的城市更新：七套上街基础设施
+## 总体设计范围城市更新与控规深度城市设计
+
+**城市更新的主体是七套上街基础设施**
 
 公告要求总体设计范围达到控制性详细规划的城市设计深度。本方案的城市更新主体不是形象改造，而是**造出「上街」需要的七套设施与规则**。这也是对新型基础设施策略的正面回答 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:municipal_new_infrastructure]。
 
@@ -111,7 +113,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 五、三处重点区域详细设计
+## 重点区域详细设计
 
 三处重点区域用同一比例尺绘制，便于横向比较；共用同一套公共空间组件库，保证界面一致、可维护、可扩展 [depth:three_key_area_detailed_design]。
 
@@ -145,7 +147,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 六、AI创新生态、人才画像与AI+场景
+## AI 创新生态、人才画像与 AI+ 场景
 
 ### 6.1 全球AI创新生态案例的取材原则
 
@@ -225,7 +227,9 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 七、用地、建筑规模与保留改造逻辑
+## 用地、建筑规模与拆改留方案
+
+**本章给判断依据，不给地块级拆改留结论**
 
 ### 7.1 用地切分方法
 
@@ -251,7 +255,7 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ### 7.2 建筑规模：说明清楚这是估算
 
-建筑基底面积 259.1 公顷，建筑密度19.5%；按用地性质分别假设层数后，总建筑面积估算 1,442.5 万平方米，容积率估算 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio]。
+建筑基底面积 222.5 公顷，建筑密度19.5%；按用地性质分别假设层数后，总建筑面积估算 1,442.5 万平方米，容积率估算 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio]。
 
 **这三个数是概念方案自身的估算，不是规划控制指标。** 层数是假设值，记录在已披露假设中。官方容积率、建筑高度、建筑密度与退线控制指标待正式规划条件下发后核定，本方案不作推定 [depth:development_intensity_controls] [depth:height_massing_character]。
 
@@ -268,7 +272,9 @@ scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public
 
 ---
 
-## 八、交通、轨道、市政与公共服务：分级路权与五层防线
+## 交通、轨道、市政与公共服务设施
+
+**核心是分级路权与人机共存五层防线**
 
 这是本方案技术含量最高的一章，也是最容易被问倒的一章，因此先说结论：**分时路权不是解决人机冲突的主要手段，它是第四道防线。靠规则保证安全是最弱的做法。**
 
@@ -325,13 +331,13 @@ A级段占主线54.5%，也就是说**超过一半的主线根本不需要分时
 
 ---
 
-## 九、蓝绿公共空间与城市风貌
+## 蓝绿空间、公共空间与城市风貌
 
 ### 9.1 绿廊：从运煤干线到人货共用干线
 
-公园绿地254.8公顷，绿地率24.7% [metric:green_ratio]。主线绿廊南北贯通、不被打断，是整个方案成立的物理前提 [data:geometry/green_space.geojson#GREEN-1401-1001] [depth:blue_green_public_space]。东西向缝合街道在主线处的交叉方式属概念建议，**本方案不给桥隧、地下空间或工程可行性结论**。
+绿地系统合计 282.2 公顷，绿地率24.7% [metric:green_space_area_sqm] [metric:green_ratio]。其中公园绿地 254.8 公顷（占22.3%）为主线绿廊本体，体育活力段 27.4 公顷为主线沿线的运动与夜跑段。主线绿廊南北贯通、不被打断，是整个方案成立的物理前提 [data:geometry/green_space.geojson#GREEN-1401-1001] [depth:blue_green_public_space]。东西向缝合街道在主线处的交叉方式属概念建议，**本方案不给桥隧、地下空间或工程可行性结论**。
 
-公共空间249.3公顷之外的量级为2.2% [metric:public_space_ratio]，由三处地标、三处站前广场、三处东西缝合节点与32处先行点构成 [metric:todoor_point_count]。
+公共空间共 24.9 公顷，占设计范围2.2% [metric:public_space_area_sqm] [metric:public_space_ratio]，由三处地标、三处站前广场、三处东西缝合节点与32处先行点构成 [metric:todoor_point_count]。
 
 ### 9.2 三个AI朝圣地标：三种「看不见」
 
@@ -363,7 +369,7 @@ A级段占主线54.5%，也就是说**超过一半的主线根本不需要分时
 
 ---
 
-## 十、更新项目清单、政策与分期
+## 更新项目清单、实施政策与分期计划
 
 ### 10.1 更新项目清单
 
@@ -403,7 +409,7 @@ A级段占主线54.5%，也就是说**超过一半的主线根本不需要分时
 
 ---
 
-## 十一、指标、面积复算与合规矩阵
+## 指标体系、面积复算与合规矩阵
 
 ![指标与证据：算得出的与待补齐的](assets/figures/metrics-evidence.png)
 
@@ -421,7 +427,7 @@ A级段占主线54.5%，也就是说**超过一半的主线根本不需要分时
 
 ---
 
-## 十二、专业标准响应、设计深度与文化叙事
+## 专业标准响应、设计深度与文化叙事
 
 ### 12.1 专业标准响应
 
@@ -447,7 +453,7 @@ Logo方向是一条竖线（9.72公里走廊）加三个节点，再从节点分
 
 ---
 
-## 十三、风险、版权与法定边界
+## 风险、版权与合规说明
 
 ### 13.1 主要风险与应对
 
@@ -473,3 +479,27 @@ Logo方向是一条竖线（9.72公里走廊）加三个节点，再从节点分
 临时粗略边界不可作为法定红线、审批依据或精确面积复算依据。安全阈值均为建议值，待专业核定。测试场景为建议开展的验证工作，不是已批准运营。所有涉及企业、资金、政策的表述均为公开信息引用或机制设想，不是已确定安排。
 
 最终判断由人类与专业团队完成。
+
+---
+
+## 参考资料
+
+本方案引用的全部资料及其可用性边界记录在提交包的 `sources.json` 中，含发布者、链接、发布或获取日期、
+授权说明、允许用途与禁止用途。以下为正文直接引用的资料清单。
+
+| 编号 | 资料 | 发布者 | 正式可用性 |
+|---|---|---|---|
+| `OFFICIAL-ANNOUNCEMENT` | 百年京张AI创新带城市设计国际方案征集资格预审公告 | 北京市规划和自然资源委员会海淀分局 | 可作正式依据 |
+| `AGENT-TASKBOOK` | 面向全球智能体开展开源征集的任务书摘录 | 征集组织方（已清权摘录） | 可作正式依据 |
+| `MOHURD-URBAN-DESIGN-MEASURES` | 城市设计管理办法 | 住房和城乡建设部 | 可作正式依据 |
+| `MOHURD-CONTROL-DETAILED-PLANNING` | 城市、镇控制性详细规划编制审批办法 | 住房和城乡建设部 | 可作正式依据 |
+| `MNR-LAND-USE-CLASSIFICATION-GUIDE` | 国土空间调查、规划、用途管制用地用海分类指南 | 自然资源部 | 可作正式依据 |
+| `GENERATIVE-AI-INTERIM-MEASURES` | 生成式人工智能服务管理暂行办法 | 国家互联网信息办公室等七部门 | 可作正式依据 |
+| `BARRIER-FREE-ENVIRONMENT-LAW` | 中华人民共和国无障碍环境建设法 | 全国人民代表大会常务委员会 | 可作正式依据 |
+| `SITE-PACKAGE` | 征集场地资料包（枚举、指标区间、校验规则、标准参考快照） | 仓库登记 | 作任务与校验依据 |
+| `SOURCE-REGISTRY` | 公开资料可用性登记表 | 仓库登记 | 判定资料可用性 |
+| `BOUNDARY-SOURCE` / `KEY-AREA-SOURCE` | 临时粗略边界与重点区域临时范围 | 依公告文字四至推导 | **仅限临时用途** |
+
+其中临时边界与重点区域临时范围**不可作为法定红线、审批依据或精确面积复算依据** [source:BOUNDARY-SOURCE]。
+强制专业标准的响应证据引用仓库内的本地参考快照，而不是仅有链接 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+凡本方案引用的历史事实、公开实践与管理规定，均在 `sources.json` 记录检索日期与已知限制 [source:SOURCE-REGISTRY]。

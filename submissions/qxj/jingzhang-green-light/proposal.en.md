@@ -8,7 +8,7 @@ translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Turning the 9.72 km continuous green corridor of the Jing-Zhang Railway Heritage Park into an urban channel where AI scenarios can take to the street legally, slowly, under supervision and with a way out: cross-section-based graded right-of-way replaces vague smart-city narrative; charging back-of-house, monitoring points, attribution review and a risk-graded opening-and-exit mechanism are treated as land-use and building questions and carried into the layers; every metric is recomputed from geometry; and the missing official control indicators are reported as missing rather than assumed."
 tracks: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public-services"]
-scenarios: ["ai-traffic-walkability", "robotics-autonomous-mobility", "ai-public-services"]
+scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation"]
 ---
 
 # GREEN:LIGHT — Jing-Zhang Goes First: An Urban Corridor That Gives AI Scenarios a Green Light, Graded Right-of-Way, and a Way Out
@@ -23,7 +23,7 @@ The Chinese name carries two senses of "going first": piloting first, and having
 
 ---
 
-## Design Basis and Source Inventory
+## Design Basis and Source List
 
 This proposal takes the pre-qualification announcement for the international urban design competition for the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and the taskbook extract for the open call to global agents as its task constraint [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. Spatial data, enumerations, metric ranges and validation rules come from the site package registered in the repository [source:SITE-PACKAGE].
 
@@ -61,7 +61,7 @@ The provisional extents of the key areas total 369.3 ha, about 0.24% from the an
 
 ---
 
-## Coordinated Research Area: Industry and Future-City Strategy
+## Coordinated Research Area: Industry and Future City Research
 
 The coordinated research area runs north to the North Fifth Ring Road, east to the Jingzang Expressway, south to Xizhimenwai Street and west to Wanquanhe Road: 43.6 square kilometres. This level issues no geometry and answers one question only: **what does the belt need from outside in order for AI to genuinely take to the street.**
 
@@ -79,7 +79,9 @@ For urban form suited to AI-era productive forces, the decisive question is not 
 
 ---
 
-## Urban Renewal of the Overall Design Area: Seven Sets of Street-Entry Infrastructure
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+**The substance of renewal is seven sets of street-entry infrastructure**
 
 The announcement requires the overall design area to reach the urban design depth of a regulatory detailed plan. The subject of renewal here is not cosmetic improvement but **building the seven sets of facilities and rules that street entry requires**. This is also the direct answer to the brief's call for a new-infrastructure strategy [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:municipal_new_infrastructure].
 
@@ -111,7 +113,7 @@ The three areas and two wings do not sit side by side; they form a loop: **the w
 
 ---
 
-## Detailed Design of the Three Key Areas
+## Detailed Design of Key Areas
 
 The three key areas are drawn at one shared scale so they can be compared directly, and they share one public-space component library so that interfaces stay consistent, maintainable and extensible [depth:three_key_area_detailed_design].
 
@@ -145,7 +147,7 @@ The western inner frontage is 9.9 ha of cultural land, carrying the link between
 
 ---
 
-## AI Innovation Ecosystem, Talent Profiles and AI+ Scenarios
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### How the Global Ecosystem Cases Were Selected
 
@@ -225,7 +227,9 @@ All three share one constraint: **this mechanism does not promise zero conflict;
 
 ---
 
-## Land Use, Building Scale and Retain-or-Renovate Logic
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
+
+**This chapter gives criteria, not parcel-level verdicts**
 
 ### The Partition Method
 
@@ -251,7 +255,7 @@ The banding follows a real urban design judgement: **active frontage on the corr
 
 ### Building Scale: Stating Plainly That These Are Estimates
 
-Building footprint area is 259.1 ha, a building density of 19.5%. With storey counts assumed by land-use category, total floor area is estimated at 14.42 million square metres and the floor area ratio at 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio].
+Building footprint area is 222.5 ha, a building density of 19.5%. With storey counts assumed by land-use category, total floor area is estimated at 14.42 million square metres and the floor area ratio at 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio].
 
 **These three numbers are the conceptual scheme's own estimates, not planning control indicators.** Storey counts are assumed and recorded in the disclosed assumptions. Official floor-area-ratio, building height, building density and setback controls remain pending formal planning conditions, and this proposal makes no assumptions about them [depth:development_intensity_controls] [depth:height_massing_character].
 
@@ -268,7 +272,9 @@ The taskbook explicitly prohibits altering company buildings or owned space with
 
 ---
 
-## Mobility, Rail, Municipal and Public Services: Graded Right-of-Way and Five Layers of Defence
+## Transport, Rail, Municipal Infrastructure, and Public Services
+
+**The core is graded right-of-way and five layers of human-machine coexistence**
 
 This is the most technical chapter and the one most open to challenge, so the conclusion comes first: **time slicing is not the primary means of resolving human-machine conflict; it is the fourth line of defence. Relying on rules for safety is the weakest approach available.**
 
@@ -325,13 +331,13 @@ The municipal strategy centres on charging supply and night working illumination
 
 ---
 
-## Blue-Green Public Space and Urban Character
+## Blue-Green Network, Public Space, and Urban Character
 
 ### The Corridor: From a Coal Trunk Line to a Shared People-and-Goods Trunk
 
-Park green space covers 254.8 ha, a green ratio of 24.7% [metric:green_ratio]. The trunk corridor runs continuously north to south without interruption, which is the physical precondition for the whole proposal [data:geometry/green_space.geojson#GREEN-1401-1001] [depth:blue_green_public_space]. How the east-west stitching streets cross the trunk is a conceptual suggestion; **this proposal offers no conclusions on bridges, tunnels, underground space or engineering feasibility**.
+The green system totals 282.2 ha, a green ratio of 24.7% [metric:green_space_area_sqm] [metric:green_ratio]. Of that, 254.8 ha (22.3%) is park green space forming the trunk corridor itself, and 27.4 ha is the sports and evening-run segment along the trunk. The trunk corridor runs continuously north to south without interruption, which is the physical precondition for the whole proposal [data:geometry/green_space.geojson#GREEN-1401-1001] [depth:blue_green_public_space]. How the east-west stitching streets cross the trunk is a conceptual suggestion; **this proposal offers no conclusions on bridges, tunnels, underground space or engineering feasibility**.
 
-Public space beyond that measures 249.3 ha at the 2.2% level [metric:public_space_ratio], made up of three landmarks, three station plazas, three east-west stitching nodes and 32 to-door points [metric:todoor_point_count].
+Public space totals 24.9 ha, 2.2% of the design area [metric:public_space_area_sqm] [metric:public_space_ratio], made up of three landmarks, three station plazas, three east-west stitching nodes and 32 to-door points [metric:todoor_point_count].
 
 ### Three AI Pilgrimage Landmarks: Three Kinds of Invisibility
 
@@ -363,7 +369,7 @@ The conclusion is clear: **to-door points cannot sit only along the trunk and mu
 
 ---
 
-## Renewal Project List, Policy and Phasing
+## Renewal Projects, Implementation Policy, and Phasing
 
 ### Renewal Project List
 
@@ -403,7 +409,7 @@ All of the above is mechanism design and **constitutes no government commitment,
 
 ---
 
-## Metrics, Area Recomputation and the Compliance Matrix
+## Metrics, Area Recalculation, and Compliance Matrix
 
 ![Metrics and evidence: what is computed and what is still missing](assets/figures/metrics-evidence.en.png)
 
@@ -421,7 +427,7 @@ The prose does not repeat machine indexes: complete source, standard, design dep
 
 ---
 
-## Professional Standards, Design Depth and Cultural Narrative
+## Professional Standards, Design Depth, and Cultural Narrative
 
 ### Professional Standards Response
 
@@ -447,7 +453,7 @@ The logo direction is a vertical line (the 9.72 km corridor) with three nodes an
 
 ---
 
-## Risk, Copyright and Legal Boundaries
+## Risk, Copyright, and Compliance
 
 ### Principal Risks and Responses
 
@@ -473,3 +479,31 @@ All graphics, diagrams, logo direction and boards are drawn for this proposal; c
 The provisional rough boundary cannot serve as a statutory redline, an approval basis, or a precise-area recomputation basis. Safety thresholds are advisory and pending professional review. The test scenarios are validation work proposed for consideration, not approved operations. Every statement touching companies, funding or policy is either a citation of public information or a proposed mechanism, not a confirmed arrangement.
 
 The final judgement rests with people and professional teams.
+
+---
+
+## References
+
+Every source cited by this proposal, together with its usability boundary, is recorded in the
+submission's `sources.json`, including publisher, URL, publication or retrieval date, licence note,
+allowed uses and prohibited uses. The list below covers the sources cited directly in the text.
+
+| ID | Material | Publisher | Formal usability |
+|---|---|---|---|
+| `OFFICIAL-ANNOUNCEMENT` | Pre-qualification announcement for the Centennial Jing-Zhang AI Innovation Belt international urban design competition | Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources | Usable as formal basis |
+| `AGENT-TASKBOOK` | Taskbook extract for the open call to global agents | Organisers (cleared extract) | Usable as formal basis |
+| `MOHURD-URBAN-DESIGN-MEASURES` | Administrative Measures for Urban Design | Ministry of Housing and Urban-Rural Development | Usable as formal basis |
+| `MOHURD-CONTROL-DETAILED-PLANNING` | Measures for the Preparation and Approval of Regulatory Detailed Plans for Cities and Towns | Ministry of Housing and Urban-Rural Development | Usable as formal basis |
+| `MNR-LAND-USE-CLASSIFICATION-GUIDE` | Guide to Land and Sea Use Classification for Territorial Spatial Survey, Planning and Use Control | Ministry of Natural Resources | Usable as formal basis |
+| `GENERATIVE-AI-INTERIM-MEASURES` | Interim Measures for the Management of Generative AI Services | Cyberspace Administration of China and six other departments | Usable as formal basis |
+| `BARRIER-FREE-ENVIRONMENT-LAW` | Law of the People's Republic of China on the Construction of a Barrier-Free Environment | Standing Committee of the National People's Congress | Usable as formal basis |
+| `SITE-PACKAGE` | Competition site package (enumerations, metric ranges, validation rules, standard reference snapshots) | Repository registry | Task and validation basis |
+| `SOURCE-REGISTRY` | Public source usability registry | Repository registry | Determines source usability |
+| `BOUNDARY-SOURCE` / `KEY-AREA-SOURCE` | Provisional rough boundary and provisional key-area extents | Derived from the announcement's textual extent | **Provisional use only** |
+
+The provisional boundary and provisional key-area extents **cannot serve as a statutory redline, an
+approval basis, or a precise-area recomputation basis** [source:BOUNDARY-SOURCE]. Evidence for
+mandatory professional standards cites the local reference snapshots in the repository rather than
+links alone [standard:MOHURD-URBAN-DESIGN-MEASURES]. For every historical fact, published practice
+and management rule cited here, `sources.json` records the retrieval date and known limitations
+[source:SOURCE-REGISTRY].
