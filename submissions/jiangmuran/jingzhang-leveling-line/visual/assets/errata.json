@@ -4,10 +4,10 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 38,
+  "total": 39,
   "by_found_by": {
    "audit": 17,
-   "own-gate": 1,
+   "own-gate": 2,
    "external-reviewer": 3,
    "self": 17
   },
@@ -15,7 +15,7 @@
    "reference-does-not-resolve": 4,
    "number-outlived-the-sentence-holding-it": 4,
    "two-copies-of-one-thing-drifted": 3,
-   "check-measured-the-convenient-thing": 10,
+   "check-measured-the-convenient-thing": 11,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
@@ -416,6 +416,16 @@
    "what_zh": "名为「三处重点区与水准点布设」的图里，三处重点区是三个空的红色虚线框。它是评审每次必收的五张图之一，也是任务书 1.5.3「重点区域详细设计」的成果图，而全部内容是一条旋转成水平的细长带子加三个方框。",
    "why_zh": "与 E34 同型第八次，而这次更贵：缺的不是一个面板，是这条任务书要求的**全部答复**。内容本来就在包里——每处重点区内有 7–8 个用地要素、1–2 个公共测点、1–2 栋建筑与 3–5 段道路，从未被画出来过。**又是把评审会看到的东西渲染出来读一遍才发现的。**",
    "fix_zh": "上半幅改为三张同一尺度的 1500 m 见方窗口，各自从随包图层现绘用地剖分、主脊、道路、建筑基底与分级水准点；细长带子压成按里程线性展开的定位条。首次尝试用三处的最大范围做统一比例，结果最长的一处（2,061 m）把另两处压到槽宽的三分之一——改为等尺寸方窗；众智园超出窗口这一点写在图注里并在定位条上给出完整范围，而不是默默裁掉。"
+  },
+  {
+   "id": "E39",
+   "commit": "0e856ea0",
+   "file": "proposal.md",
+   "found_by": "own-gate",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "新加的 build_field_readings.py 读的是 visual/assets/field_map.json——**随包拷贝**，而刷新那份拷贝的步骤在 build_all 里排在它后面。于是语料从 354 涨到 371 的那次构建里，它用上周的数字重新生成了母题表，并打印成功。",
+   "why_zh": "第十一次同一形状，而这次格外难堪：**这个生成器存在的全部理由，就是不让一张手打的表漂移**，它自己却去读了一份还没刷新的拷贝——读的是过去。一张由包里并不携带的文件算出来的表，比手打的更坏，因为它看上去是生成的。",
+   "fix_zh": "改读 analysis/field_map.json（生成器自身的输出），并**断言随包拷贝与之一致**，不一致即构建失败。同一次刷新中 census_claims_qa 按设计逐行点名了 33 处过期读数，四份随包文件、每处给出新旧两个值——那是它扩大扫描范围之后的第一次真实刷新。"
   }
  ]
 }

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f16ce7a5d4bb92683505a53afba7082b473855c7fc7204c26ac83c9f42cd3426"
+      "sha256": "1a176026b3aff160406ae65f43f87b96cd8109bc8bb465533390e8faece553b5"
     },
     {
       "path": "agent.json",
@@ -45,7 +45,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "3410ca2e85cabc12ea6fcfd75015d48c1ae6580a878de80bb72b7513b0c97d48"
+      "sha256": "6f58ce86d6805ce3fb1b15313403ae91ebd60a2b83716fbf6c367a85ab9e2f50"
     },
     {
       "path": "assumptions.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0e63443022a5aee9c1d374a96fb5996ad13bad2d0f53a7c1a31cdb4f760debc7"
+      "sha256": "c778c8760b980b25fa85766d5aeb64d95997f36fb6f5c6344ee00159760cc038"
     },
     {
       "path": "report/narrative.md",
@@ -390,7 +390,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "475aca00f8b2fb4ace9a9bb3c47c9fc36c5a6cfa4d1f57c8c6f8ce02d039eec3"
+      "sha256": "7ac02de78016659644afd11c1b6130035b26b52363929f3a1839b5dc4986b30c"
     },
     {
       "path": "report/proposal.en.html",
@@ -398,7 +398,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b5ca566b32ec425b4597d0c9a3c356219df5308ad068d1bd6658b47b0d0bfcc9"
+      "sha256": "5d2860078d143d7207f1683ed967139d89fd1c6c78398d1cb6f82ba7355b8be3"
     },
     {
       "path": "visual/index.en.html",
@@ -563,7 +563,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "1bc4b80aa943d79cbc81ff77d9900313965c48dd1252fac2ce089698102373b0"
+      "sha256": "6b83a9e8047b46a5fa287cd7906431486321ddb406d77ea48f875f072b757d30"
     },
     {
       "path": "visual/assets/taskbook_coverage.json",
@@ -584,14 +584,14 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "59a6b297cd6e56ad8b67fc7d1206f9c1949fb464d2261c9105c42ad6524c1e1f"
+      "sha256": "ba75b71e61c758c18b0cae5283b626312ffdeade2fb1397dc4ae1d039093d0cf"
     },
     {
       "path": "visual/assets/review_repeatability.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "54bbadc5eb3200aee37664660b2db222efce3882f1b82293f364579933cc4c1e"
+      "sha256": "7fddab3bcd094eceb632736ee16efdf30b12e6686c3020fdae3bfc246c7318fa"
     }
   ],
   "validation_claim": {

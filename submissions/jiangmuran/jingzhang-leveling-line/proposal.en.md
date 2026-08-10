@@ -262,7 +262,7 @@ Filed on Issue #950 and PR #957.
 
 This one starts from the string of warnings this package's own PR carries and others do not. **Every submission's deterministic validation is printed on its PR, which makes the warning count one of the few numbers in this call that anyone can compare across packages.** 14 of this package's warnings come from a single field: one per `public_level: "provisional"` in `spatial.json`.
 
-By this proposal's own rule, measure before writing a sentence about it. Of **366 submissions**, **20** ship a `spatial.json`, holding **231 concept objects** split **public 56 / cleared 2 / provisional 173**. **13 packages** declare every item provisional; **6** declare at least one public. This package's 14 are all provisional, ranking **3 of 20** by warning count.
+By this proposal's own rule, measure before writing a sentence about it. Of **371 submissions**, **20** ship a `spatial.json`, holding **231 concept objects** split **public 56 / cleared 2 / provisional 173**. **13 packages** declare every item provisional; **6** declare at least one public. This package's 14 are all provisional, ranking **3 of 20** by warning count.
 
 `validate_submission.py` does two things with the field: checks membership in `{public, cleared, provisional}`, and warns once per provisional item. **It joins the value to nothing** — not `sources.json`, not the geometry, not the boundary the object rests on — and `docs/spatial.md` defines it in one line. The value is self-declared, unchecked, and exactly one of its three settings produces a warning.
 
@@ -284,7 +284,7 @@ Geometric levelling does not trust a height because the instrument reported it. 
 
 **The control is a commit, not a file list.** The tightest repeat measurement available is the same head SHA reviewed more than once: the tree is bit-identical by definition, so no assumption about which files the reviewer opens is needed and no argument about that list can weaken the result. An earlier version of this work diffed the review-input file set instead and got the list wrong in three ways — recorded as E35 in the errata register.
 
-Across all **839 published scores**, **12** of **820** distinct head commits were reviewed more than once, covering **31 readings**.
+Across all **853 published scores**, **12** of **834** distinct head commits were reviewed more than once, covering **31 readings**.
 
 | Reading | Value |
 |---|---|
@@ -1194,13 +1194,13 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-38 entries. By finder:
+39 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
 | Independent audit | 17 | The audit was run against the shipped package, not a draft |
 | The author | 17 | Found while working |
-| This package's own gate | 1 | Caught at build time — which is what a gate is for |
+| This package's own gate | 2 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **3** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950 |
 
 <!-- ERRATA:COUNT:END -->
@@ -1215,7 +1215,7 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **10** |
+| **The check measured the convenient thing** | **11** |
 | **A deliverable was not looked at before shipping** | **8** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |

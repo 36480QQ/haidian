@@ -4,7 +4,7 @@
  "why_zh": "本包 14 个概念对象全部声明 provisional，因此确定性校验在 PR 上逐条发警告，本包由此成为全场警告条数第三多的方案。在为这个数字写下任何一句话之前，先量一遍全场怎么用这个字段。",
  "method_zh": "从 open-city-ai/haidian 的 main 树枚举全部 submissions/<login>/<slug>/spatial.json，逐条读取 items[].public_level 计数。fetch 联网并落盘缓存，report 完全离线且确定性，任何人可以改判别规则后重跑。",
  "corpus": {
-  "submissions_with_proposal": 366,
+  "submissions_with_proposal": 371,
   "submissions_with_spatial_json": 20,
   "spatial_items_total": 231
  },
