@@ -58,7 +58,7 @@ The spatial structure is one Century Baseline, three Changeover Yards, two Buffe
 
 Four conceptual land-use bands are recalculable across the provisional area: research and translation; the blue-green public Baseline; replaceable AI production and service; and long-life community support. A stable layer protects green space, public space, basic walking and non-digital service. An adaptable layer accommodates mixed uses and reconfigurable ground floors. A fast layer is reserved for detachable equipment, temporary tests and events. Public-space and green-space polygons may overlap because one records public use and the other ecological/open-space character. [data:geometry/land_use.geojson#LU-001] [metric:green_ratio]
 
-Renewal follows “retain first, adapt second, demolish only after evidence.” Without surveyed buildings, structural condition, ownership or heritage controls, this package makes no demolition decision about a real building. The submitted building polygons are nine conceptual envelopes for reversible partitions, shared ground floors, equipment interfaces and maintenance routes. Height, FAR, coverage, daylight, fire access and parking stay unknown until professional review of official data. [data:geometry/buildings.geojson#BLDG-ZY-01] [depth:retain_renovate_demolish]
+Renewal follows “retain first, adapt second, demolish only after evidence.” Without surveyed buildings, structural condition, ownership or heritage controls, this package makes no demolition decision about a real building. The submitted building polygons are nine conceptual envelopes for reversible partitions, shared ground floors, equipment interfaces and maintenance routes. Height, FAR, coverage, daylight, fire access and parking remain pending official data and professional confirmation. [data:geometry/buildings.geojson#BLDG-ZY-01] [depth:retain_renovate_demolish]
 
 Urban character avoids a generic cyber aesthetic. Durable layers use repairable, low-glare materials and shade. Replaceable layers use detachable signs, legible status lights and tactile or written information that does not depend on a QR code. Technical objects may not occupy an accessible route or replace seats, shade, water, help points and other fundamentals. [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
@@ -123,7 +123,7 @@ Every AI public-service interface visibly lists the staffed counter, opening tim
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The Century Baseline is first a place to walk, rest, cool down and seek help, and only second a technology display. The submitted green-space polygon creates a continuous conceptual band. Twelve small public Time Marks connect the Yards. Their EPSG:4548 areas generate `green_ratio` and `public_space_ratio`; both are internal design readings from provisional geometry, not statutory ratios or approved controls. [metric:green_ratio] [metric:public_space_ratio]
+The Century Baseline is first a place to walk, rest, cool down and seek help, and only second a technology display. The submitted green-space polygon creates a continuous conceptual band measuring 2,589,338.29 square metres (258.93 hectares), with a conceptual green-space ratio of about 22.69%. Twelve small public Time Marks connect the Yards and measure 1,118,594.33 square metres (111.86 hectares), with a conceptual public-space ratio of about 9.80%. Both are internal design readings from provisional geometry, not statutory ratios or approved controls. [metric:green_ratio] [metric:public_space_ratio]
 
 Three pilgrimage landmarks perform ordinary public duties. The **Century Gauge** aligns verified railway, innovation and resident contributions while leaving unknown history blank. The **Changeover Clock** shows the version, owner, next review and fault state of each scenario rather than an advertising leaderboard. The **Offline Commons** provides physical guidance, staffed service, water, seating, charging and quiet space, demonstrating that the city still works without AI. Distributed Slow-Variable Archive Cabinets hold open documentation, failure records and maintenance manuals. [source:JZ-PARK-PLANNING-2021]
 
@@ -147,10 +147,10 @@ Metrics are separated into three classes. Package facts can be recalculated from
 
 | Metric | Current state | Formula | Design meaning |
 | --- | --- | --- | --- |
-| Provisional ODA area | `site_area_sqm` | EPSG:4548 polygon area | Internal denominator only |
-| Conceptual green ratio | `green_ratio` | green area / site area | Century Baseline continuity, not statutory control |
-| Conceptual public-space ratio | `public_space_ratio` | public area / site area | Supports Time Marks and free stay |
-| Conceptual building footprints | `building_footprint_area_sqm` | sum module envelopes | Adaptable modules, not surveyed or approved scale |
+| Provisional ODA area | 11,412,825.39 m² (11.413 km²) | EPSG:4548 polygon area | Internal denominator only |
+| Conceptual green space | 2,589,338.29 m² (258.93 ha) / 22.69% | green area / site area | Century Baseline continuity, not statutory control |
+| Conceptual public space | 1,118,594.33 m² (111.86 ha) / 9.80% | public area / site area | Supports Time Marks and free stay |
+| Conceptual building footprints | 219,357.87 m² (21.94 ha) | sum module envelopes | Adaptable modules, not surveyed or approved scale |
 | Key areas | 3 | count polygons | Ensures differentiated detail |
 | Scenario cards | 12 | count readable cards | At least three industry tests; all take-over and exit capable |
 | Cross-links | 6 | count concepts | Site-survey priority, not road redlines |
@@ -163,7 +163,7 @@ The concept also has a binary quality test. A scenario without an expiry, owner,
 
 ## Risk, Copyright, and Compliance
 
-The largest spatial risk is misalignment between provisional polygons and real roads, park limits or key areas. Every figure therefore labels the boundary PROVISIONAL and treats areas as package-internal calculations. Official boundaries, key areas, buildings, ownership, controls, roads, utilities, flood/fire constraints, heritage controls and facilities require a new professional review. The proposal is not an approved regulatory plan, construction permit, investment commitment or engineering basis. [depth:risk_missing_data] [data:geometry/constraints.geojson#none]
+The largest spatial risk is misalignment between provisional polygons and real roads, park limits or key areas. Every figure therefore labels the boundary PROVISIONAL and treats areas as package-internal calculations. The empty `geometry/constraints.geojson` layer deliberately avoids inventing unpublished constraints. Official boundaries, key areas, buildings, ownership, controls, roads, utilities, flood/fire constraints, heritage controls and facilities require a new professional review. The proposal is not an approved regulatory plan, construction permit, investment commitment or engineering basis. [depth:risk_missing_data] [source:SOURCE-REGISTRY]
 
 The public-data boundary permits only registered public or cleared material. Privacy protection uses purpose limitation, data minimisation and no-personal-data defaults. Copyright treatment limits external material to attributed factual reference. Implementation risk is controlled through small, reversible and exit-capable pilots. Human review retains final responsibility for medical, educational, legal, safety, spatial and public-resource decisions.
 
