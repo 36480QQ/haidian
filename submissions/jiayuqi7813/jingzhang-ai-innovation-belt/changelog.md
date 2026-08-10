@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-10
+
+- 按评审 147228 的交叉回读意见补齐「测试场景逐场景可回读记录」证据链：
+  - 新增 `visual/assets/scenario_test_records.json`，为 SC-04/SC-05/SC-06（T1/T2/T3）各建一条 `{status, value}` 记录，覆盖四组必填字段：baseline、观察对象、样本与时间窗；成功条件与停止条件；人工等价路径与责任角色；复核周期、异议入口与删除证明。
+  - 未知字段一律标注「授权前冻结 / 未采集 / 待责任主体确认 / 待确认」，不预设数值；阈值仅作参考方向。
+  - 新增离线确定性检查器 `check_scenario_records.py`：证明字段不漏项、状态枚举合法、无编造数值；结果作为 `self_check.json` 的第 7 项 `SCENARIO_RECORD_COMPLETENESS`。
+  - `proposal.md` / `proposal.en.md` 场景表旁以 `[data:...]` 标记回接该记录文件与 ID；`assumptions.json` 增补 `A-PILOT-001`（试点前提：未获授权前为提案而非已批准运营）；`metrics.json` 增补 `scenario_test_records_count`。
+- 使「可预约、可停用、可回退」从总体原则落地为逐卡可核查的合同。
+
 ## v1.0 - 2026-08-10
 
 - 建立「京张时刻（JingZhang Timetable）」总体概念：把 AI 创新带做成可查询、可换乘、可回退的公共时刻表，母题源于京张铁路时刻表遗产。
