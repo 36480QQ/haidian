@@ -37,6 +37,21 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 正式依据只来自 data/source_registry.json 中可用于 formal 的公告、任务书、标准本地快照和用地分类资料；标准判断以 standards/references 的本地快照为准，而非仅凭网页地址。[source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 国际就业研究、北京算力政策、全球案例、媒体线索被逐条标为 unregistered_background_only，它们不在当前注册表内，因此只能提示问题，不得升级为本地边界、控制、评分或实施依据。[source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#PROV-SITE-001]
 
+### 1. 证据等级与公共任务边界
+
+本包把“正式依据、概念推演和可以开始”分开。资料能回到登记记录，不代表它能支撑本地空间、工程、服务或评分结论；评审应同时阅读每层的允许与禁用用途。
+
+| 证据层级 | 本包实例 | 可以支持 | 不能支持 |
+| --- | --- | --- | --- |
+| 任务与专业标准（formal） | 公告、清权任务书、标准本地快照 | 任务覆盖、成果深度、专业原则和审阅问题 | official polygon、权属、工程条件、许可或政府承诺 |
+| 来源登记与背景分级 | `data/source_registry.json`、`sources.json`、未登记背景标签 | 来源责任、机制对照、问题提示和禁用范围 | 把国际研究、案例、媒体或政策线索升级为海淀事实 |
+| 临时空间依据（provisional） | `site_boundary`、`key_areas`、概念用地和节点 | 概念落位、相对关系、拓扑自检和全包复算触发器 | 法定红线、精确面积、道路/控规、现状设施或选址 |
+| 包内派生证据 | GeoJSON、`metrics.json`、场景卡、G0/implementation matrix | 可回读数量、任务映射、节点动作、责任字段和发布门 | 居民需求、AI 能力、设施容量、服务绩效或正式推荐 |
+| 论文/政策/案例方法 | 就业、算力、CFD、治理案例和交通方法 | 定义待测变量、风险问题和专业团队的后续研究入口 | 本地因果效果、可迁移百分比、投资回报或合作事实 |
+| 合成回放与设计目标 | G0 普通人旅程、失败夹具、人工回退和 `design_target` | 停止、申诉、撤回、人工接管和后续验证合同 | 现场无障碍、人员值守、公众同意、许可或竞赛分数 |
+
+审阅规则是：`provisional`、`unknown`、`design_target` 和 `not_authorized_not_run` 保持原状态；本地 runner PASS 只证明包内结构或状态机可回放，不升级为现场证据、专业批准、政府实施结论或官方评分。
+
 仓库目前没有可公开核验的精确官方 geometry；本投稿因此明确 official_boundary=false、geometry_role=provisional_constraint、boundary_precision=provisional_rough。EPSG:4548 下的 11,412,825.386 平方米只是一组临时图层运算分母，不能作为官方红线、权属、许可、交易或精确面积判断。sources.json、assumptions.json、GeoJSON 和离线可视化均重复披露这一限制。[metric:site_area_sqm] [depth:risk_missing_data] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
 ## 三层范围工作框架
