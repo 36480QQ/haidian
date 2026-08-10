@@ -205,7 +205,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | AV-11 | 开源安全审计日 | 众智园 | 公开测试摘要、第三方/专业复核 | 未通过不进入下一阶段 |
 | AV-12 | 乘客/居民申诉与退出 | 三处公共服务台 | 线下、电话、网页三路等价 | 申诉未闭环不得扩容 |
 
-这些场景是设计对象，不是已经存在的运营项目。其机器可读版本为 `visual/assets/autonomous-scenarios.json`，每张卡都绑定空间、责任、数据最小化和停止条件 [metric:autonomy_scenario_card_count]。
+这些场景是设计对象，不是已经存在的运营项目。其机器可读版本为 `visual/assets/autonomous-scenarios.json`。为避免场景卡、运营矩阵和测试门之间出现“看起来都有关、实际无法追责”的断点，本轮新增 `visual/assets/autonomy-readiness-register.json`：12 张卡各自有一条参与者提出的主运营行、准备度字段、人工等价服务和停止条件；S06、S07、S08、S09、S12 明确作为支撑性运营行保留。该映射仍需未来专业/运营责任人确认，不是现场责任分配 [metric:autonomy_scenario_card_count] [data:visual/assets/autonomy-readiness-register.json#autonomy-readiness-register-v1]。
+
+登记表把 baseline、观察对象/样本/时间窗、成功与停止阈值、责任角色、删除凭证、复核和申诉都列为进入授权试点前的必填项。当前所有卡仍是 `unknown`、`not_authorized_not_run`、`field_data=false` 和 `performance_results=null`；配套检查器只证明引用完整和边界没有漂移，不把设计目标升级成实测结果。
 
 这里明确区分两层数量：12 条 `AV-01—AV-12` 是自动驾驶可感知场景卡，回答“谁在什么空间遇到什么服务”；14 条 `S01—S14` 是运营矩阵行，回答“触发、责任、证据、非 AI 等价服务和失败动作如何落地”。它们不是把 12 机械改名为 14；`scenario-operation-contract.json` 对 14 行逐条给出设计闸门，缺责任、证据或人工回退时即失败 [data:visual/assets/scenario-operation-matrix.json] [data:visual/assets/scenario-operation-contract.json]。
 

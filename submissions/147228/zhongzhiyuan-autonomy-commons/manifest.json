@@ -108,7 +108,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "56d75411922ee9ff4429ab84ff1c67d9ca35f416d08e00b748a8ce3aa83f4149"
+      "sha256": "1d8894d0c4dd2178c55993a1e81bcd2b497a4b361a11f7b7036361ca16cad4da"
     },
     {
       "path": "report/copyright_statement.md",
@@ -483,6 +483,18 @@
       "role": "autonomy_scenario_register",
       "required": true,
       "sha256": "9bcac152b68189d74b48c478a74cf2d94bfe165ea5e628e96d08cc2809757095"
+    },
+    {
+      "path": "visual/assets/autonomy-readiness-register.json",
+      "role": "autonomy_readiness_register",
+      "required": true,
+      "sha256": "8f707ad72d4f3e9986fa283a7ba269a470fe24fe47a4fccd4950d056188fa75b"
+    },
+    {
+      "path": "visual/assets/check-autonomy-readiness.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "f89c5942088ca1ce566127863320860e1606067d57ab761e92a6bc33e4786f99"
     },
     {
       "path": "visual/assets/curbside-test-gates.json",
