@@ -1,0 +1,879 @@
+{
+  "schema_version": "0.1.0",
+  "requirements": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "项目名称与征集范围",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "三层范围与三处重点区",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "开放征集与AI agent成果语境",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "统筹研究范围",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "总体设计范围",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "重点区域范围",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "AI创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "未来AI城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "用地与空间结构",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "建筑规模与风貌",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "交通慢行与轨道衔接",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "公共空间与蓝绿系统",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "市政新基建与公共服务",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "三处重点区详细设计",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "众智园AI自主创新加速区",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "北京AI原点社区",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "大钟寺AI产业集聚区",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "命名、Logo方向与视觉识别系统",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "5-8个AI创新生态案例与转译机制",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "不少于10张AI场景卡，其中含产业测试验证场景",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#AI创新生态、人才画像与AI+场景"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "不少于5类用户画像",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#AI创新生态、人才画像与AI+场景"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "不少于3个AI朝圣地标或荣誉展示节点",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "文化叙事与长期全球AI活动/社区运营",
+      "mandatory": true,
+      "report_sections": [
+        "proposal.md#更新项目清单、实施政策与分期计划"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "ai_scenario_card_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "visual/index.html"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "REQUIRED_FILES",
+        "BOUNDARY_TRUST"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present and clearly labeled; replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are present as provisional constraints and disclosed."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use polygons were derived by clipping shared bands from the same site boundary to avoid gaps and overlaps."
+    },
+    {
+      "check_id": "REQUIRED_FILES",
+      "result": "pass",
+      "severity": "major",
+      "target": "submission package",
+      "message": "Required Markdown, JSON, GeoJSON, PNG, PDF and offline HTML files are generated."
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md / proposal.en.md",
+      "message": "Chinese primary proposal and English counterpart are included with aligned section structure."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static visualization is generated without external scripts, fonts, tiles, iframes, forms, tracking or CDN resources."
+    },
+    {
+      "check_id": "OFFICIAL_VALIDATOR",
+      "result": "pass",
+      "severity": "info",
+      "target": "repository scripts",
+      "message": "Official current-main self-check rerun locally after package repair."
+    }
+  ]
+}
