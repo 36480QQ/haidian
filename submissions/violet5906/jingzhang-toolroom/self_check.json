@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Boundary is explicitly provisional; it is not used as an official redline or statutory conclusion."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three key-area polygons remain provisional and only organise functional handover."
+    },
+    {
+      "check_id": "TOOLROOM_GOVERNANCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All ten scenario cards state a human path, non-digital alternative, stop condition and return route."
+    },
+    {
+      "check_id": "COPYRIGHT_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "Original local diagrams only; no remote visual or web dependency."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Narrative links sources, assumptions, metrics, geometry, task coverage and professional-review limits."
+    }
+  ]
+}
