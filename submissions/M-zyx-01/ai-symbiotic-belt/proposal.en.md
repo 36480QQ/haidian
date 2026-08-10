@@ -35,7 +35,7 @@ This proposal is grounded in the following official documents, agent taskbook, a
 
 This proposal adopts the official three-level framework [data:geometry/site_boundary.geojson]:
 
-**Level 1 — Coordinated Research Area (43.6 km²)**: From North 5th Ring Road to Xizhimen Outer Street, bounded by Jingzang Expressway (east) and Wanquanhe Road (west). Focuses on world-class AI innovation ecosystem strategy and regional connectivity [metric:site_area_sqm].
+**Level 1 — Coordinated Research Area (43.6 km²)**: From North 5th Ring Road to Xizhimen Outer Street, bounded by Jingzang Expressway (east) and Wanquanhe Road (west). Focuses on world-class AI innovation ecosystem strategy and regional connectivity [metric:coordination_scope_area_sqm].
 
 **Level 2 — Overall Design Area (~11.4 km²)**: 1–2 km on either side of the Jing-Zhang Railway Heritage Park. Achieves regulatory-plan urban design depth with land use, building scale, public space, transportation, and infrastructure strategies [depth:overall_spatial_structure].
 
@@ -133,7 +133,7 @@ Spatial structure: "One Spine · Three Cores · Two Wings"
 - **Two Belts**: Public display belt (along Jing-Zhang Park) + Ecological innovation belt (along Qinghe)
 - **Three Zones**: Basic research zone, hardware prototype zone, open-source community zone
 
-**Architecture**: 45-80m height range, modular reconfigurable labs, open ground floors for public experimentation. "Open Source Friday" weekly tech salon.
+**Architecture**: 45-80m height range (conceptual suggestion, pending official regulatory plan confirmation), modular reconfigurable labs, open ground floors for public experimentation. "Open Source Friday" weekly tech salon.
 
 ### Beijing AI Origin Community (104.3 ha) [data:geometry/key_areas.geojson#PROV-KEY-002]
 
@@ -141,7 +141,7 @@ Spatial structure: "One Spine · Three Cores · Two Wings"
 
 **Ripple Layout** around Tsinghuayuan Station:
 - **Core (≤200m)**: AI History & Future Museum in the preserved station. Three honor wall stone inscriptions reserved.
-- **Inner ring (200-500m)**: 200 flexible-stay units (10-90 days), 24h co-making workshop, prototype display street. 72-hour "idea to prototype" pipeline.
+- **Inner ring (200-500m)**: 200 flexible-stay units (10-90 days, conceptual suggestion pending survey), 24h co-making workshop, prototype display street. 72-hour "idea to prototype" pipeline (design target).
 - **Outer ring (500-1000m)**: Joint university lab cluster + AI+ scenario experience street.
 
 **User Personas**[depth:overall_spatial_structure]: (1) Global early-career AI researchers; (2) Solo/team engineer-founders; (3) Corporate innovation scouts; (4) International policy officials; (5) AI-curious citizens.
@@ -181,7 +181,7 @@ Spatial structure: "One Spine · Three Cores · Two Wings"
 | SC4 | Autonomous Micro-Transit | 11.4 km² area | All visitors | Aggregated anonymized routing |
 | SC5 | AI Legal Clinic | Beitaipingzhuang | SMEs & citizens | Local LLM, no cloud data |
 | SC6 | Industrial Robot Test Zone | Zhongzhiyuan | Enterprise R&D | Closed test field, enterprise-controlled data |
-| SC7 | AI Pathology Diagnosis | Hospitals | Doctors & patients | HIPAA-grade compliance |
+| SC7 | AI Pathology Diagnosis | Hospitals | Doctors & patients | Follows applicable medical-data and personal-information protection requirements; no diagnosis decisions; pending medical/privacy/legal review |
 | SC8 | Developer Open Source Plaza | Jing-Zhang Park | Global developers | Public open data |
 | SC9 | AI City Management Simulation | Haidian City Brain | Government | Aggregated anonymous data |
 | SC10 | AI Music & Public Art | Jing-Zhang Park | All | Public interaction, no data collection |

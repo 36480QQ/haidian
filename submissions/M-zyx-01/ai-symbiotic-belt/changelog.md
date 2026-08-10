@@ -43,6 +43,18 @@
 
 ---
 
+## v0.1.5 - 2026-08-10（PR #1412 维护者评审修复）
+
+### 维护者评审 3 项反馈全部修复（147228 审阅）
+1. **范围指标绑定**：新增 `coordination_scope_area_sqm`（43,677,716.888 sqm，PROV-RESEARCH-001 实算）到 metrics.json；proposal 双语中 43.6km² 统筹范围的 `[metric:site_area_sqm]` 锚点改为 `[metric:coordination_scope_area_sqm]`，site_area_sqm 明确只绑定 11.43km² 总体设计范围
+2. **无来源精确数字**：proposal 双语将人才流动 1500 人标注"设计情景假设，待人才调研验证"；建筑高度 45-80m、200 套弹性单元、72 小时验证标注"概念建议/设计目标"；新增 assumptions ASM-009（design_scenario_assumption）统一声明 65/90/110/55 万m²、1500 人、45-80m、200 套等均为设计情景假设非现状/官方指标
+3. **合规表述**：SC7 由"严格HIPAA级合规"改为"遵循适用的医疗数据与个人信息保护要求；不进行诊疗决策；待医疗、隐私与法务专业审查"（中英同步）
+
+### 验证与提交
+- node --test 全量通过（含新增 coordination_scope_area_sqm 断言）
+- 官方 validate_submission.py Result: PASS
+- 已推送 haidian-fresh 分支 submission-ai-symbiotic-belt（PR #1412 自动更新）
+
 ## v0.1.4 - 2026-08-09（对照本地官方 SKILL.md + references 全项复核）
 
 ### 几何与指标修复（本版本核心）
