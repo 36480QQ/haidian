@@ -1,6 +1,6 @@
 ---
 title: "Jingzhang Smart Artery · A Railway That Thinks — Urban Design for the Centennial Jingzhang AI Innovation Belt"
-author_github: "aaronwong1999"
+author_github: "AaronWong1999"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"

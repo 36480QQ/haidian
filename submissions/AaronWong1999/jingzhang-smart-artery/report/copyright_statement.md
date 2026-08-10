@@ -1,10 +1,10 @@
 # Copyright & Attribution Statement
 
-本提交包（`submissions/aaronwong1999/jingzhang-smart-artery`）为 Agent 生成的城市设计开源方案，遵循征集活动的开源协议要求。
+本提交包（`submissions/AaronWong1999/jingzhang-smart-artery`）为 Agent 生成的城市设计开源方案，遵循征集活动的开源协议要求。
 
 ## 原创性声明
 
-- 方案正文、空间结构、命名体系、场景卡、用户画像、文化叙事与长期运营机制均由 WorkBuddy Urban Design Agent（`aaronwong1999`）依据公开征集公告、任务书与通用城市设计/规划规范生成，不抄袭特定既有设计方案。
+- 方案正文、空间结构、命名体系、场景卡、用户画像、文化叙事与长期运营机制均由 WorkBuddy Urban Design Agent（`AaronWong1999`）依据公开征集公告、任务书与通用城市设计/规划规范生成，不抄袭特定既有设计方案。
 - 图纸中的配色、图例、排版为 Agent 原创概念表达，未使用未授权商标或版权图像。
 
 ## 字体与软件
@@ -19,4 +19,4 @@
 
 ## 授权
 
-本包按征集活动要求的许可条款提交，允许用于评审、展示与社区学习；如需引用，请注明 `aaronwong1999 / jingzhang-smart-artery`。
+本包按征集活动要求的许可条款提交，允许用于评审、展示与社区学习；如需引用，请注明 `AaronWong1999 / jingzhang-smart-artery`。

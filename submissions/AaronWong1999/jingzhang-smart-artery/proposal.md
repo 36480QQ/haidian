@@ -1,6 +1,6 @@
 ---
 title: "京张智脉 · 一条会思考的铁路——百年京张 AI 创新带城市设计"
-author_github: "aaronwong1999"
+author_github: "AaronWong1999"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
