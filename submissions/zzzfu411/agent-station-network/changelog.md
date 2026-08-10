@@ -23,3 +23,9 @@
 - 与 provisional site_boundary / key_areas / metrics.site_area_sqm 的 medium 置信度对齐
 - 刷新 manifest 哈希；不伪造 official geometry
 
+## v1.4 - 2026-08-10
+
+- 修复 CI sha256 mismatch：将投稿包文本统一为 LF 行尾并按 LF 字节重算 manifest 哈希
+- 原因：Windows 工作区 CRLF 与 GitHub Actions Linux LF 不一致（仓库已知问题）
+- data_confidence 保持 medium
+
