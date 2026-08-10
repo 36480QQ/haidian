@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "24476592edf1c112f7384cbd5d680312f65868ec187073bed20cbaeda4fdb3aa"
+      "sha256": "3f0a6ff63cbd0a687bf56445a03b3f02b207c59f1d9b75aae9d3125e91505030"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4f56a8eca7ef1f017cbea8468d18001d4437b779f36751e81e818c251261ebcd"
+      "sha256": "9c24fe1186b52bd3d6d05137747c28656dc5204da6f5226eb709d62348e301e3"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ac246d4abbc00dff2637a45718fdd58da3babc836888047beea33417b65bf8ac"
+      "sha256": "23f36484451273559d56216aee8f35e33ce35b26604678f03f97c64bc656b62d"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a7b814c236be6c194108e6d119e87ea7b2270ce2f37ae8b6ff1d554465acf749"
+      "sha256": "2bd8bccdf9f5348a54b3daf2a4ad1df379a99596e73dea47ce9c5aac5a37d347"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6e10f8e92acd222c8c21fc687687d93348f3512311ed7c7ae23ef9709d2ac67d"
+      "sha256": "b63894bc210dab596d92e45aee8ebff4dd4b24225254a76c9a8c4cad7db8c63b"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8136a580fa5879f77645220e39ef8c571a06e7aa09431c965da96e4904834922"
+      "sha256": "c3711cf705a9fe04505e7fe92aea32839205db94278e83025f0170e3138e12cf"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3bb18d401023edeb2f1a1a9bbbced878e79b19a670f6a678e6458fd06bb1bcd0"
+      "sha256": "94359d742591294acf36732e5ec455faca2871702b3991b1134dab417296deff"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -827,7 +827,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "b567db5e81c685278153a7987453dfcbdb1bad32609abafecfcfb62e1fa8b871"
+      "sha256": "030ac082426c006c89e9555c532c69f1afb0fa60ec2dafef6ad5169dbe494a5b"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -839,7 +839,7 @@
       "path": "visual/assets/claim-audit.json",
       "role": "data",
       "required": true,
-      "sha256": "de4d0f6ab5d19d60be3c9615d93bf76f70f06a4859155b0d53bf99bcccef4384"
+      "sha256": "c5933ca39f1e0e7b78e34c77c047c5b15bbcd306ffa043182abb6ddffd66d146"
     },
     {
       "path": "visual/assets/run-claim-audit.js",
@@ -866,7 +866,7 @@
       "path": "visual/assets/run-presentation-polish.js",
       "role": "runner",
       "required": false,
-      "sha256": "fce489534df7f1ee64a0bd6b4561ee989d8456137839967681dd0604e5de824d"
+      "sha256": "7ab312c7b6ba4b6a2b49811449c2ac1adf23be2eec32a6d0a27c921269b86e0f"
     },
     {
       "path": "visual/assets/run-distributional-equity-board.js",
@@ -1182,6 +1182,39 @@
       "language": "en",
       "translation_of": "assets/figures/public-decision-ledger.svg",
       "sha256": "7407ffc3952166a0f56c4575c2858e7291ee930e9b9c8736bd006a07e7fb74af"
+    },
+    {
+      "path": "visual/assets/activity-completion-screen.json",
+      "role": "data",
+      "required": true,
+      "sha256": "6dd9ccaa23f0b80b5ba1b74ceb4590c925cae480b7c96d988371e8edcff66027"
+    },
+    {
+      "path": "visual/assets/activity-completion-readout.json",
+      "role": "data_readout",
+      "required": true,
+      "sha256": "61015cc0ff39a2b9217e69027462307f227a32758fd89959d8854efb7846e011"
+    },
+    {
+      "path": "visual/assets/run-activity-completion-screen.js",
+      "role": "runner",
+      "required": true,
+      "sha256": "837e24d1fc5a1a8201cb40f6a8ab7261f51a33796e0964c2e4f4b94879853990"
+    },
+    {
+      "path": "assets/figures/activity-completion-board.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "763d3fe7bd493ba80ca56d2f95bd2304b2f86d146fed5b1eb3f6333b0cc9ffbb"
+    },
+    {
+      "path": "assets/figures/activity-completion-board.en.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/activity-completion-board.svg",
+      "sha256": "6bbf19d9591abd05387f66a6fc8624eddd108e674c42c7dd3b3496a61ac7ffbc"
     }
   ]
 }

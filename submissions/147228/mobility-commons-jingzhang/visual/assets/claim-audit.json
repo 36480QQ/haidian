@@ -100,6 +100,16 @@
       "required_en": ["synthetic screen outputs", "network gate"],
       "source_files": ["visual/assets/network-flow-screen.json", "visual/assets/capacity-closure-screen.json"],
       "prohibited_interpretations": ["service-level guarantee", "existing capacity", "approval"]
+    },
+    {
+      "id": "activity_chain_closure",
+      "match_zh": "名义 O4 链闭合为 91.06%",
+      "match_en": "Nominal O4 closes 91.06%",
+      "category": "synthetic",
+      "required_zh": ["合成代理", "压力门失败", "现场韧性"],
+      "required_en": ["synthetic agents", "stress", "local resilience"],
+      "source_files": ["visual/assets/activity-completion-screen.json", "visual/assets/activity-completion-readout.json", "visual/assets/run-activity-completion-screen.js", "assets/figures/activity-completion-board.svg"],
+      "prohibited_interpretations": ["resident activity diary", "employee behaviour", "local resilience", "operating result"]
     }
   ],
   "secondary_numeric_claims": [

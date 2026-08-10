@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.49"
+iteration: "v2.50"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -465,6 +465,16 @@ runner 实际循环处理全部 3,122,000 个合成代理，并只保留分组�
 本版把可达性从群体均值旁边单独拉出来。runner 对 3,122,000 个合成代理按六类群体分箱，保留可达性代理的 P10、P50 和 P90，并让最低群体的 P10 差距进入候选硬门。名义 O4 的可达性代理 P10 差距为 5 个代理点，低于 20 个代理点门槛；强天气压力下的稳健 O2 为 20 个代理点，低于 30 个代理点压力门。它仍是合成代理的充分性屏查，不是居民无障碍走查、服务可达性审计或运营承诺。进入正式决策前，需要按分组补齐有日期的 OD、门到门走行、无障碍路径连续性、站点服务能力和现场复核 [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/regional-scale-commute-readout.json] [data:assets/figures/distributional-accessibility-board.svg]。
 
 ![可达性尾部屏查。六类合成群体的 P10、P50、P90 与最低群体门槛](assets/figures/distributional-accessibility-board.svg)
+
+#### 活动链闭合。把“到单位”推进到“完成一天”
+
+单次通勤的平均时间还不能回答一个照护者能否按时接回孩子、一个企业员工能否在错峰后完成返程，或一辆企业接驳车失约后整条链是否仍能收口。本版新增 `visual/assets/activity-completion-screen.json` 与 `node visual/assets/run-activity-completion-screen.js`，沿用同一套方式选择、容量负荷、可靠性、可达性和外部通勤规则，对四个地面情景各遍历 3,122,000 名合成代理。活动链依次检查出发、首公里与换乘、主要活动到达、有限延期、返程换乘和回到起点；只保留聚合计数，不发布个人轨迹 [source:MATRAM-ACTIVITY-ADAPTATION-2026] [source:MATSIM-LARGE-SCALE-ABM] [source:MATSIM-BOOK-ACTIVITY-BASED]。
+
+状态被明确拆成五类：`on_time` 准时闭合、`delayed` 延误后闭合、`deferred` 在声明的有限窗口内延期后闭合、`inaccessible` 主要活动不可达、`return_failed` 到达主要活动但返程未闭合。名义 O4 链闭合为 91.06%（合成代理链闭合率）；地铁中断为 64.53%，强天气/骑行受限为 60.74%，多方式容量冲击为 65.90%。这是合成代理屏查，不是现场韧性结论；这些压力情景没有被抹平成“仍然成功”：它们的压力门失败会显示为 `stop_and_calibrate`，要求补齐分组活动日记、日期化 OD、班次/拒载、无障碍连续性、返程需求和中断记录。延期不是成功，返程失败也不等同于“满意度下降”，两者分别进入后续人工复核和服务设计。
+
+名义屏查的群体链闭合差距为 14.8 个代理点；压力情景的失败是模型需要继续优化的证据，而不是现场韧性结论。地面回退只允许一次、有容量和可达性条件，步行/无障碍作为来源的需求不被静默改道；空中候选仍保持 `blocked`，不能填补地面证据缺口。图板先展示全量状态构成，再展示不同情景的链闭合，帮助评审看到居民、企业、外部通勤者和服务人员在同一张综合模拟里哪里真正断链 [source:DYNAMIC-PT-CAPACITY-2024] [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/activity-completion-readout.json]。
+
+![活动链闭合、延期、不可达与返程失败。四情景 × 312.2 万合成代理](assets/figures/activity-completion-board.svg)
 
 #### 相对资源压力。把人均公里、车辆服务和未知因素分开
 

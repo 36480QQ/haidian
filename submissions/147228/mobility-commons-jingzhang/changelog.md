@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.50 - 2026-08-10
+
+- 新增 `activity-completion-screen.json` 与 population-scale activity-chain runner：四个地面情景各遍历 3,122,000 名合成代理，分开记录准时闭合、延误、有限延期、主要活动不可达和返程未闭合。
+- 新增双语活动链状态图板并接入 proposal、离线 visual index、claim audit、评审导航和 manifest；名义 O4 链闭合 91.06%，压力情景失败保留为 `stop_and_calibrate`，不写成现场韧性或居民结果。
+- 地面回退限定为一次且受容量/可达性约束，步行/无障碍来源不静默改道，空中候选继续 `blocked`；第一名项目、公开榜单文件、官方临时边界和分数保护线未改动。
+
 ## v2.49 - 2026-08-10
 
 - 新增方式参数与方式权重逐项溯源，234 条声明字段明确为 `agent_proposed` 或 `design_target`，现场观测数保持为 0，并新增双语校准债务图板。
