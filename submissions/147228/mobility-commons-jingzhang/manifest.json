@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "37558f54f77f9012ea6a95bf55fd24ce37992b8c47f7afa1e299e6a90e213719"
+      "sha256": "40cdb038509ba2f9bfabc12aaade357713eba14589be50371493313ffa6cabb0"
     },
     {
       "path": "compliance_matrix.json",
@@ -414,6 +414,24 @@
       "role": "verification_script",
       "required": false,
       "sha256": "47f6d2bf997d3376c2789d4278b24ec652fafdbab380770b1ea89d8afd6df667"
+    },
+    {
+      "path": "visual/assets/mobility-pilot-readiness.json",
+      "role": "data",
+      "required": true,
+      "sha256": "74d057a0abd2ccff23165db789e7cf444407499f4253e34d5aea5e364fbd9a10"
+    },
+    {
+      "path": "visual/assets/mobility-pilot-readiness-evidence.json",
+      "role": "data",
+      "required": true,
+      "sha256": "c244bed9c046a1a25bd5014774062759edb126472383d38581942fddc6173290"
+    },
+    {
+      "path": "visual/assets/run-mobility-pilot-readiness.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "0fc6b6d84380679b92e5bd0843ebea15222611f84a26efd73d1b265d977c9220"
     },
     {
       "path": "assets/figures/simulation-pareto.png",
