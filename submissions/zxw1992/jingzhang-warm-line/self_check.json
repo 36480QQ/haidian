@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "提交边界为临时粗略边界（official_boundary=false），已在正文、图纸、HTML 与 sources.json 中标注限制。",
+      "suggested_fix": "取得官方 polygon 后替换并整链重算。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区为临时范围，复算面积与公告值偏差均在 0.5% 以内并已披露。",
+      "suggested_fix": "取得官方重点区 polygon 后替换。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "用地为提交边界的完整划分：无重叠，缝隙小于场地面积的 0.001%。"
+    },
+    {
+      "check_id": "METRIC_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "site/green/public/building 四项面积与 EPSG:4548 空间复算一致；6 项法定控制指标标记为 unknown 并写明原因。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "离线静态页面，无远程资源、无表单、无网络请求；展示数值与 metrics.json 一致。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "13 个必需章节均给出设计判断、空间动作、证据与数据缺口，并按 v2 契约保留判断旁的关键依据。"
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "中文主稿与英文对照稿章节、图位、指标一致；图纸、报告 HTML、展示 HTML 与 A3/A0 均提供英文对照件。"
+    },
+    {
+      "check_id": "PRIVACY_HUMAN_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "12 张场景卡逐条写明数据边界与人工复核方式；不设人脸识别驱动的公共管理场景，保留人工中止与申诉路径。"
+    },
+    {
+      "check_id": "OFFICIAL_CONTROLS_MISSING",
+      "result": "unknown",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "容积率、建筑高度、建筑密度、绿地率控制、现状建筑存量与余热回收容量未取得，属组织方与专业测算数据缺口。",
+      "suggested_fix": "取得控规条件与现状数据后补齐并重算。"
+    }
+  ]
+}
