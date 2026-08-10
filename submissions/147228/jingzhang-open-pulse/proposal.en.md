@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
+> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates register recomputation and audit interfaces. The current gates remain `design_target`; only an explicitly marked `PASS` from a local runner represents a completed package-level replay.
 
 ## One-page executive brief: civic loop and one-component/one-proof-mile
 
@@ -278,11 +278,13 @@ Triggers convert future change into an executable fallback: heat warning reduces
 
 ### Stricter Monte Carlo robustness check
 
-To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment samples five design prototypes under five stakeholder-weight profiles, eight stress states and score noise. It uses 50,000 deterministic Monte Carlo draws with random seed `147228`. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
+To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment declares 50,000 deterministic Monte Carlo draws with random seed `147228` across five stakeholder-weight profiles, eight stress states and score noise. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
 
 The S4 balanced-adaptation option has an approximately 78.862% win rate, mean regret of 0.314 points, a robust mean score of 72.518 and a P05 score of 70.252. These are comparative design results, not field performance. [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_win_rate]
 
 The minimum item across the eight stresses and the gate state are recorded in [metric:resilience_v13_selected_mean_regret], [metric:resilience_v13_selected_min_stress_score] and [metric:resilience_v13_hard_gates_passed]. They still require calibration against site data.
+
+These MCDA values are declared comparative results, not metrics independently replayed inside this package. The package does not ship per-draw inputs, five stakeholder weights, eight stress increments, response functions or a runner, so the draw count and derived outputs remain pending replay until those inputs and the runner are packaged; they can be promoted to known metrics only after GATE-04 reproduces them from registered inputs.
 
 The next optimisation direction is therefore explicit: add passive shade and maintainable stormwater storage; reduce dependence on high sensor counts; improve offline operation and human takeover; decouple event capacity from quiet space; and establish asset redundancy and replacement-part standards. The Beijing public meteorological catalogue is a route for later climate calibration, but the Haidian download currently requires a platform user key, so unacquired temperature, rainfall, wind-speed and humidity values are not presented as facts. [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [assumption:A-METEOROLOGICAL-DATA-001]
 

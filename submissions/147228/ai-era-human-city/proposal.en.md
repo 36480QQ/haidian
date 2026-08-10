@@ -74,6 +74,8 @@ The previous section answers which public and reversible relationships to compar
 
 This node plan adds a reviewer-visible middle layer for how public interfaces carry an ordinary-person path and stop action; it is not a section, plan, or massing drawing. Until road, tenure, heritage, accessibility, existing-facility, and operating evidence is available, all dimensions, capacity, movement performance, and outcome metrics remain missing or `unknown`. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 
+![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.svg)
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Six personas make the ecosystem accountable: original residents and older people; workers at task-substitution risk; night-shift AI workers; small merchants and one-person teams; developers and researchers; people with access needs and carers. Every group retains human service, explanation, refusal, appeal, exit, and non-device alternatives. [source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]

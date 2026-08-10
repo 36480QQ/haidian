@@ -291,6 +291,28 @@
         "need_zh": "干燥候行、排水观察、人工接管",
         "need_en": "Dry waiting, drainage observation, human takeover"
       }
+    ],
+    "flagship_depth_v52": [
+      {
+        "id": "FLAGSHIP-01",
+        "name_zh": "清华园共享檐",
+        "purpose_zh": "让天气、等待、学习、修理和人与人求助共享同一公共门槛，而不是把AI做成展柜。",
+        "module": "概念6米结构节拍；3米服务/学习子模块；独立基础与遗产退让待专项",
+        "material": "可拆钢/工程木框架、可替换半透明耐候板、再生砖坐凳、明沟与雪水滴落控制",
+        "weather": "夏季遮阴与穿堂风；暴雨连续干行；冬季避风向阳；积雪时保留净行带",
+        "operation": "街道/园区统筹，专业运维巡检，社区机构排班，AI仅做可解释分流；人工台始终可用",
+        "failure": "热、滑、噪、树木、遗产、消防或维护失败时拆除设备并保留最小遮蔽与坐凳"
+      },
+      {
+        "id": "FLAGSHIP-02",
+        "name_zh": "大钟寺四角客厅",
+        "purpose_zh": "把站城接口当作一块连续公共地面，而非四个造型角或地下商业捷径。",
+        "module": "以300米站点一体化控制范围为审查框架；具体红线、连桥、下穿均非本方案结论",
+        "material": "高摩擦透水铺装、可拆雨棚、耐碰坐凳、盲文与高对比导向、物流防撞边界",
+        "weather": "出口风雨庇护、夏季排队阴影、冬季日照候车、雨雪天连续无障碍",
+        "operation": "轨道/公交/道路/项目/城管和无障碍代表共同值守；按到达峰与配送峰错时",
+        "failure": "把3190人/小时项目预测作为压力测试；排队侵占净行带或人工接管超时即降载"
+      }
     ]
   },
   "adversarial_design_studio": {
@@ -309,8 +331,8 @@
     "negative_test_count": 3
   },
   "overall_plan": {
-    "version": "v5.2-alpha1",
-    "planning_thesis_zh": "把京张定义为北京的AI城市中试与公共价值认证走廊，以一条公共气候脊、五条横向城市缝、三个创新街区、两翼要素回路和十个更新工作包承接海淀‘两区一带’。",
+    "version": "v5.2-depth",
+    "planning_thesis_zh": "以保留为始、以缝合为形、以可撤回AI为制度：公开证据修正总体规划，五条城市缝把11.4平方公里拆成可实施公共问题，三处重点区形成林下生产、校城共享和站城共地三种更新制度。",
     "planning_thesis_en": "Define Jingzhang as Beijing's AI urban test-and-public-value verification corridor, using one civic-climate spine, five seams, three districts, two support loops, and ten work packages to spatialise Haidian's Two Zones and One Belt.",
     "system_layers": [
       {
@@ -531,7 +553,125 @@
       "pause threshold",
       "learning receipt"
     ],
-    "boundary_note": "All planning cells, seams, interfaces, and work packages are conceptual suggestions based on provisional geometry and require official data, specialist design, public engagement, and statutory review."
+    "boundary_note": "All planning cells, seams, interfaces, and work packages are conceptual suggestions based on provisional geometry and require official data, specialist design, public engagement, and statutory review.",
+    "evidence_corrected_land_use": {
+      "source": "DATA-ESA-WORLDCOVER-2021-V200-N39E114",
+      "observation_cells": 1248,
+      "correction": "broad repeated green bands replaced by retained public-observation clusters plus narrow public-climate seams",
+      "limitations": "2021 land-cover signal; field validation required"
+    },
+    "five_seams_v52": [
+      {
+        "id": "SEAM-01",
+        "name_zh": "大钟寺站城共地缝",
+        "name_en": "Dazhongsi station-ground seam",
+        "problem_zh": "轨道、公交、自行车、步行和项目首层在高峰到达时互相挤压",
+        "evidence": [
+          "SRC-DAZHONGSI-BLUE-SCENE-TRANSPORT-2026"
+        ],
+        "move_zh": "先做地面连续、逐出口路线与错峰物流；地下连通只作为专业论证备选",
+        "gate_zh": "以项目3190人/小时预测作局部压力情景；需交通、轨道、文保和无障碍复核"
+      },
+      {
+        "id": "SEAM-02",
+        "name_zh": "北三环—四道口安全等候缝",
+        "name_en": "North Third Ring-Sidaokou safe-wait seam",
+        "problem_zh": "早期公示意见聚焦立交分类和换乘穿越，不宜把一条概念线画成已解决",
+        "evidence": [
+          "SRC-JINGZHANG-CONTROL-DRAFT-2025"
+        ],
+        "move_zh": "把遮蔽等候、过街审计、非数字导向和人工服务点作为最小公共工程",
+        "gate_zh": "道路等级、信号与立交均由交通专项决定"
+      },
+      {
+        "id": "SEAM-03",
+        "name_zh": "知春—京包遗产日常缝",
+        "name_en": "Zhichun-Jingbao heritage-everyday seam",
+        "problem_zh": "一期公园已形成底盘，但京包路—知春路立体关系仍需研究",
+        "evidence": [
+          "SRC-JINGZHANG-CONTROL-DRAFT-2025",
+          "SRC-JINGZHANG-PHASE1-OPS-2026"
+        ],
+        "move_zh": "保留既有公园运营，用可逆门厅、雨雪庇护和生活服务把跨越问题拆成可测试段",
+        "gate_zh": "不预设桥隧；先测真实绕行、排队、坡度和树木影响"
+      },
+      {
+        "id": "SEAM-04",
+        "name_zh": "清华园—五道口共享学习缝",
+        "name_en": "Qinghuayuan-Wudaokou shared-learning seam",
+        "problem_zh": "校园、社区和遗址公园邻近但公共学习、照护和夜间等候界面不足",
+        "evidence": [
+          "SRC-HAIDIAN-15TH-2026",
+          "REF-JINGZHANG-HERITAGE-PARK-2024"
+        ],
+        "move_zh": "以共享檐连接免费学习位、修理台、人工咨询、照护等候和开放课程",
+        "gate_zh": "与铁路遗产本体脱离；先核消防、结构、树木、噪声和居民时段"
+      },
+      {
+        "id": "SEAM-05",
+        "name_zh": "清河—北五环河园转换缝",
+        "name_en": "Qinghe-North Fifth Ring river-park seam",
+        "problem_zh": "北端植被信号较强，应避免以统一科技形象覆盖生态与日常使用",
+        "evidence": [
+          "DATA-ESA-WORLDCOVER-2021-V200-N39E114"
+        ],
+        "move_zh": "保留植被簇，布置基准花园、雨洪观察和维修型场景，不追求高密展示",
+        "gate_zh": "现场核树木、河道、排水、防洪、生境和夜间照明"
+      }
+    ],
+    "key_area_strategies_v52": [
+      {
+        "id": "PROV-KEY-001",
+        "name_zh": "众智园｜林下开源生产地景",
+        "name_en": "Zhongzhiyuan | open-source production landscape",
+        "worldcover": {
+          "built": 0.594429,
+          "vegetated": 0.398405,
+          "water": 0.006346
+        },
+        "thesis_zh": "三处中植被信号最高；先保林下连续与基准花园，再把研发、维修和标准工作坊嵌入既有界面。",
+        "sections": [
+          "林下研发前庭",
+          "物流与公众步行分时",
+          "基准花园—工单台"
+        ],
+        "stop": "树木存活率、热舒适或维护工时恶化即缩减设备和硬铺装"
+      },
+      {
+        "id": "PROV-KEY-002",
+        "name_zh": "AI原点｜校城共享院落群",
+        "name_en": "AI Origin | campus-city shared courts",
+        "worldcover": {
+          "built": 0.740217,
+          "vegetated": 0.25972,
+          "water": 0.0
+        },
+        "thesis_zh": "以存量首层和边界微更新为主，通过共享檐、非消费学习位和照护等候形成高校知识向城市的公共翻译。",
+        "sections": [
+          "共享檐—遗产退让",
+          "院落渗透—首层开放",
+          "夜间学习—居民安静界面"
+        ],
+        "stop": "若居民噪声、租金挤压或无障碍失败，停止活动扩容并回退时段"
+      },
+      {
+        "id": "PROV-KEY-003",
+        "name_zh": "大钟寺｜多模式到达公共底盘",
+        "name_en": "Dazhongsi | multimodal arrival commons",
+        "worldcover": {
+          "built": 0.782235,
+          "vegetated": 0.217582,
+          "water": 0.000183
+        },
+        "thesis_zh": "三处中建成面最高；不造孤立地标，先把地铁出入口、公交、自行车、步行、首层和物流组织成可审查的公共地面。",
+        "sections": [
+          "A/D口—公交30至50米到达",
+          "E口两处非机动车停车",
+          "首层灰空间—错峰物流"
+        ],
+        "stop": "高峰冲突、无障碍绕行或消防疏散不达标即暂停永久构筑物"
+      }
+    ]
   },
   "regional_strategy": {
     "version": "v5.2-alpha1",
@@ -763,5 +903,90 @@
     },
     "correction_rule": "When public or field evidence contradicts a design assumption, preserve the evidence record, revise or withdraw the spatial move, rerun metrics and GeoJSON, and publish the change in changelog.md.",
     "evidence_matrix": "report/narrative.md"
+  },
+  "agent_method_v52": {
+    "mode": "adversarial evidence-to-decision studio",
+    "artifacts": [
+      "visual/assets/agent-prompts.json",
+      "visual/assets/agent-traces.json",
+      "visual/assets/agent-runtime.json"
+    ],
+    "human_controls": [
+      "source qualification",
+      "design correction acceptance",
+      "permit gate",
+      "pause/exit decision"
+    ],
+    "not_claimed": [
+      "autonomous approval",
+      "representative consent",
+      "deterministic LLM prose",
+      "official current conditions"
+    ]
+  },
+  "implementation_v52": {
+    "ledger": "visual/assets/responsibility-ledger.json",
+    "records": [
+      {
+        "id": "WP-01",
+        "project": "公共观测与现场核实",
+        "lead": "规划组织方/测绘与公众参与团队",
+        "permit_gate": "数据许可、隐私审查、现场作业许可",
+        "cost_band": "S",
+        "om": "年度数据审计",
+        "phase": "0",
+        "stop": "无法说明来源、时点、样本或同意机制"
+      },
+      {
+        "id": "WP-02",
+        "project": "五缝最小公共工程",
+        "lead": "街道+道路/园林/交通专业部门",
+        "permit_gate": "道路、树木、排水、无障碍、消防专项",
+        "cost_band": "M",
+        "om": "街道统筹+专业设施工单",
+        "phase": "1",
+        "stop": "需要未论证桥隧或造成无替代绕行"
+      },
+      {
+        "id": "WP-03",
+        "project": "共享檐可逆样段",
+        "lead": "遗址公园运营方+属地+设计团队",
+        "permit_gate": "文保、结构、消防、树木、噪声",
+        "cost_band": "M",
+        "om": "公园运维+社区排班",
+        "phase": "1",
+        "stop": "遗产/树木/夜间安宁/维护阈值失败"
+      },
+      {
+        "id": "WP-04",
+        "project": "四角客厅地面协议",
+        "lead": "区级协调机制+轨道公交道路和项目主体",
+        "permit_gate": "交通影响、轨道保护、消防、无障碍",
+        "cost_band": "M-L",
+        "om": "联合值守与错峰物流",
+        "phase": "1-2",
+        "stop": "高峰净行带、疏散或人工接管失败"
+      },
+      {
+        "id": "WP-05",
+        "project": "三类AI城市沙盒",
+        "lead": "场景开放方+数据责任人+第三方评估",
+        "permit_gate": "数据保护、网安、伦理、设备与场地许可",
+        "cost_band": "S-M",
+        "om": "人工责任人+公开学习回执",
+        "phase": "1",
+        "stop": "不能退出、无法人工替代、能耗/投诉超限"
+      },
+      {
+        "id": "WP-06",
+        "project": "2031-2035适配",
+        "lead": "待正式规划与评估确定",
+        "permit_gate": "十五五评估及后续正式政策",
+        "cost_band": "unknown",
+        "om": "不得预先承诺",
+        "phase": "3",
+        "stop": "无正式政策、预算、主体或公众授权"
+      }
+    ]
   }
 }

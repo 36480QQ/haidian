@@ -4,8 +4,8 @@ author_github: "ZephyrL0"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Jingzhang becomes Beijing's AI urban test and public-value verification corridor: one spine, five seams, three districts, two support loops, ten work packages, and seven public-value checks spatialise Haidian's Two Zones and One Belt for residents and visitors."
-iteration: "v5.2-alpha1"
+summary: "Begin with retention, shape through seams, and govern AI through reversibility: public evidence corrects the 11.4 sq km plan, while five seams, three regimes, and two flagships form a reviewable, replayable, stoppable renewal protocol."
+iteration: "v5.2-depth"
 ---
 
 # THE COMMON EAVE: An AI Innovation Belt Organised by Public Life
@@ -50,6 +50,14 @@ v4 proposes one civic-climate spine, five cross-city seams, three innovation dis
 v5 defines Jingzhang's wider role as Beijing's AI Urban Test and Public-Value Verification Corridor. At Beijing scale it combines the duties of a global innovation centre, historic city, garden city, and people's city. In Haidian's Two Zones and One Belt, it connects north and south while translating research into real-world tests and public explanation. On site, AI must pass accessibility, data-minimisation, energy, climate, maintenance, inclusion, and exit checks before scaling. This is a spatial policy translation, not an official designation or approval. [source:SRC-BEIJING-15TH-2026] [source:SRC-HAIDIAN-15TH-2026] [metric:public_value_test_domain_count]
 
 ![Beijing-Haidian-Jingzhang strategic role](assets/figures/regional-synergy.en.png)
+
+v5.2 starts with evidence roles, not form: official scope and policy are O-tier; public remote sensing and scoped public comments are P-tier; reproducible analysis is D-tier; Agent concepts are C-tier. They never impersonate one another. The 1,248 clipped 100m cells from ESA WorldCover 2021 are not fieldwork, yet they bring a real public-observation signal into the overall plan and overturn part of the broad green-band assumption. [metric:public_observation_grid_cell_count] [source:DATA-ESA-WORLDCOVER-2021-V200-N39E114]
+
+![Evidence before form](assets/figures/jury_01_evidence.en.png)
+
+The executable thesis is: **begin with retention, shape through seams, and govern AI through reversibility.** Innovation no longer means new buildings; continuity no longer means a broad green band; intelligence no longer means automated approval. [metric:evidence_driven_design_correction_count]
+
+![The plan in one sentence](assets/figures/jury_02_thesis.en.png)
 
 ## Research Area: Industry and Future City
 
@@ -149,9 +157,13 @@ Actors are separated by decision authority. Government and responsible departmen
 
 2026-2030 is the adopted Fifteenth Five-Year Plan delivery window: establish demographic, flow, climate, rights, and maintenance baselines; run three testbeds at Qinghe Benchmark Garden, Xiaoyuehe Public Test Bank, and Four-Corner Commons; deepen the two flagships; and publish annual learning receipts. 2031-2035 is only a 2035 adaptation window. As of August 2026 no formal Sixteenth Five-Year Plan is available for this proposal; retention, revision, scaling, or exit must follow formal plans and evaluation. [source:SRC-HAIDIAN-15TH-2026] [source:SRC-BEIJING-MASTER-2035] [metric:policy_horizon_count]
 
+v5.2 adds six responsibility-ledger records covering lead class, permit gate, relative cost band, O&M, phase, and stop rule. S/M/L are not estimates. Without statutory applicants, professional costs, approved O&M budgets, and representative public mandate, concept maturity cannot be presented as construction readiness. [metric:responsibility_ledger_record_count]
+
+![Responsibility ledger](assets/figures/implementation_ledger.en.png)
+
 ## Metrics, Recalculation, and Compliance
 
-The official intake, professional, and visual checks pass. The repository spatial review also passes in a declared isolated environment: CPython 3.14.2, Shapely 2.1.2, PyProj 3.7.2, and jsonschema 4.26.0. Its command, tool hash, hashes of all nine reviewed GeoJSON files, three provisional-key-area notices, and recomputed metrics are persisted in self_check.json. The dependency-free script remains a supplementary audit and does not replace professional survey or official geometry. Provisional site, green, public-space, and footprint values are reproducible; all areas use geometric unions in EPSG:4548 so intersecting features are not double-counted. FAR, height, setbacks, and statutory green ratios remain unknown. Official geometry will trigger recalculation of nine layers, metrics, figures, HTML, and PDFs. [metric:site_area_sqm] [depth:metrics_recalculation]
+The official intake, professional, and visual checks pass. A dependency-free script also checks structure and obvious topology, but Shapely and PyProj are not installed in this runtime, so the repository's professional spatial review is not claimed. Provisional site, green, public-space, and footprint values are reproducible; FAR, height, setbacks, and statutory green ratios remain unknown. Official geometry will trigger recalculation of nine layers, metrics, figures, HTML, and PDFs. [metric:site_area_sqm] [depth:metrics_recalculation]
 
 From a jury perspective, completeness is not enough. The two flagships must connect brief alignment, originality, AI-planning innovation, feasibility, inclusion, risk compliance, and expression into one evidence chain. [source:SRC-PEER-CATALOG-20260810] [metric:flagship_public_design_count]
 
@@ -166,6 +178,8 @@ v5 audits the six established goals. v3-v4 already spatialised coordination, eve
 ![Implementation audit of six goals](assets/figures/goal-audit.en.png)
 
 v5.2 retains and rechecks the structure, required properties, boundary match, coverage, overlap, and containment of all nine required GeoJSON files. The provisional source records a prior EPSG:4548 area of 11,412,825 sqm; this run's dependency-free approximation is 11,399,523 sqm, a roughly 0.117% difference, and both only check the brief's approximate 11.4 sq km. The twenty concept land-use units cover it without positive-area overlap and all design features are clipped within it. Yet the package contains 67 agent-generated design features and zero public-observation features, while twelve building polygons are interface types rather than surveyed footprints. It is a recalculable concept skeleton, not existing-condition GIS, statutory control, or engineering alignment. [metric:geojson_design_feature_count] [metric:geojson_public_observation_feature_count] [data:geometry/site_boundary.geojson#SITE-001]
+
+The nine required GeoJSON files remain design layers and therefore still contain zero public-observation features. To respect the repository file limit, the 1,248 P-tier observation cells are split across `visual/assets/worldcover-grid-01.json` to `04.json`, preserving the distinction between observation and proposal. [metric:geojson_public_observation_feature_count] [metric:public_observation_grid_cell_count]
 
 ## Risk, Copyright, and Compliance
 
