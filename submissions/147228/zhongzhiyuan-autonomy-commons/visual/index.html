@@ -28,7 +28,7 @@
       <h1>智行京张</h1>
       <p class="hero-copy">自动驾驶普及后的城市，不以车辆数量证明先进。它先保证 <strong>人行、无障碍、路缘、生态和退出权</strong>，再允许受限服务进入公共空间。</p>
     </div>
-    <aside class="hero-aside"><div class="aside-label">CURRENT PACKAGE STATE</div><div class="aside-big">3 yards<br>12 cards</div><div class="aside-note">三座试验庭 · 十二张场景卡 · 所有自动驾驶绩效仍为 unknown / design target</div><div class="links"><a href="assets/autonomous-scenarios.json">场景 JSON</a><a href="assets/autonomy-readiness-register.json">准备度登记</a><a href="assets/curbside-test-gates.json">测试门 JSON</a></div></aside>
+    <aside class="hero-aside"><div class="aside-label">CURRENT PACKAGE STATE</div><div class="aside-big">3 yards<br>12 cards</div><div class="aside-note">三座试验庭 · 十二张 AV 场景卡 · 十四行运营矩阵 · 所有自动驾驶绩效仍为 unknown / design target</div><div class="links"><a href="assets/autonomous-scenarios.json">场景 JSON</a><a href="assets/scenario-operation-contract.json">运营合同</a><a href="assets/annual-event-system.json">四季节奏</a></div></aside>
   </header>
 
   <figure class="figure hero-visual"><img src="../assets/figures/autonomy-commons-hero.png" alt="自动驾驶普及后的京张公共带概念意向图：人行、无障碍路线与受控低速服务共存"><figcaption><strong>CONCEPT IMAGE</strong> 生图模型辅助的概念意向图，仅用于表达公共空间氛围与人本秩序；不代表现状、道路许可、车辆性能或建设成果。</figcaption></figure>
@@ -83,6 +83,13 @@
   </section>
 
   <section>
+    <div class="section-head"><h2>普通路线连续性</h2><span>03A / PUBLIC ROUTE CONTRACT</span></div>
+    <div class="grid-2"><article class="panel"><h3>四类复核者 × 三个节点</h3><p>专业复核、运营者、居民、无障碍使用者在每个 AUTO-NODE 都必须有一条读数；缺一条即重开。</p></article><article class="panel"><h3>通过不是部署</h3><p><span class="pill cyan">CONTINUOUS</span><span class="pill amber">CAUTION ≤ 0.25</span><span class="pill coral">BLOCKED → REOPEN</span> 普通路线与非 AI 等价服务始终保留；当前 field baseline 仍为 unknown。</p></article></div>
+    <figure class="figure"><img src="../assets/figures/metrics-evidence.png" alt="公共路线连续性、人工接管和回退条件的证据入口"><figcaption><strong>PUBLIC ROUTE CONTRACT</strong> 这是设计闸门和合成复演，不是无障碍现场成绩、车辆性能或许可。</figcaption></figure>
+    <div class="links"><a href="assets/public-route-continuity.schema.json">契约 schema</a><a href="assets/example-public-route-continuity.json">示例记录</a><a href="assets/check_public_route_continuity.js">无依赖 checker</a><a href="assets/persona-role-matrix.json">P1—P9 角色</a></div>
+  </section>
+
+  <section>
     <div class="section-head"><h2>数据证据账本</h2><span>04 / DATA LEDGER</span></div>
     <div class="data-dashboard" aria-label="设计底盘与自动驾驶指标状态看板">
       <article class="data-summary"><div class="data-kicker">AUTONOMY METRICS / STATUS MIX</div><div class="data-ring" role="img" aria-label="11 项自动驾驶专属指标中 4 项已知，7 项未知"><div class="ring-core"><b>4 / 11</b><span>known</span></div></div><h3>结构已知，绩效待测</h3><p>这不是质量评分，而是提交包的证据状态：能从文件回读的结构事实，与必须现场测量的性能缺口分开。</p><div class="data-state-grid"><div class="data-state known"><b>04</b><small>KNOWN / 已知</small></div><div class="data-state unknown"><b>07</b><small>UNKNOWN / 待测</small></div></div></article>
@@ -112,7 +119,7 @@
   <section>
     <div class="section-head"><h2>可核对的证据包</h2><span>07 / AUDIT TRAIL</span></div>
     <div class="grid-2"><article class="panel"><h3>已知 / known</h3><p>provisional 工作面积、三处重点区、场景卡数量、自动驾驶节点数量和提交包自检结构。源文件、公式与置信度均在 `metrics.json`。</p></article><article class="panel"><h3>未知 / unknown</h3><p>路缘冲突、无障碍连续性、接管时延、车辆性能、雨雪回退、居民体验和生态影响；这些不会被图形或论文包装成实测。</p></article></div>
-    <div class="links"><a href="../proposal.md">中文正文</a><a href="../proposal.en.md">English proposal</a><a href="../metrics.json">metrics.json</a><a href="../assumptions.json">assumptions.json</a><a href="../sources.json">sources.json</a><a href="assets/autonomy_nodes.json">autonomy_nodes.json</a><a href="assets/autonomy-readiness-register.json">准备度登记 JSON</a><a href="assets/check-autonomy-readiness.js">离线检查器</a></div>
+    <div class="links"><a href="../proposal.md">中文正文</a><a href="../proposal.en.md">English proposal</a><a href="../metrics.json">metrics.json</a><a href="../assumptions.json">assumptions.json</a><a href="../sources.json">sources.json</a><a href="assets/autonomy_nodes.json">autonomy_nodes.json</a><a href="assets/taskbook_coverage.json">taskbook coverage</a><a href="assets/errata.json">errata</a><a href="assets/annual-event-system.json">annual event system</a></div>
     <details><summary>为何没有直接写“自动驾驶将于某年普及”？</summary><p>“普及”是情景，不是已证事实。本方案用 2030/2035 作为条件扩展的规划时间窗，不预测渗透率、不假设某家企业，也不把北京其他区域的测试数据迁移到京张。新证据到位后，更新指标、图件、报告和自检，而不是只改标题。</p></details>
     <details><summary>为何保留人行与人工服务？</summary><p>自动驾驶的城市价值不应以取消线下服务来证明。连续人工路线、纸面/电话入口、现场服务和可撤回授权是公共利益的基础设施；任何试点失败都应安全地退回这些路径。</p></details>
   </section>
