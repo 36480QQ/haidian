@@ -54,6 +54,16 @@ The table extracts mechanisms from official public pages. It does not transplant
 
 The resulting ecosystem map has upstream university and open knowledge, a middle layer of compute, authorized data, safety, and industry services, and a downstream layer of public space, daily services, and global communication. The Zhongguancun service wing handles factor interfaces such as legal, IP, and enterprise support. The Xiaoyuehe scenario wing returns AI to residents, students, developers, and visitors. Every interface still needs professional confirmation of ownership, capacity, and authorization [depth:overall_spatial_structure].
 
+### 3. Site and industry facts (public sources)
+
+To ground the design in verifiable facts rather than aspirational language, this section records several official, public background items [source:OFFICIAL-PARK-PHASE1] [source:OFFICIAL-HAIDIAN-1X1].
+
+- The Jing-Zhang Railway Heritage Park extends along the former surface alignment from Xizhimen / Beijing North railway station to the North Fifth Ring Road: about 9 km long and about 70 ha in total. Phase 1 (Zhichun Road to Qinghua East Road) opened in 2023 at roughly 16.8 ha with a continuous running, walking, and cycling corridor (“three lanes, one green”). Phase 2 extends south toward Xizhimen and north toward the North Fifth Ring Road, with a planned link to the Qinghe green corridor. The park’s stated goal is to stitch the east-west city that the railway and metro had split back into continuous public ground [source:OFFICIAL-PARK-PHASE1] [source:OFFICIAL-PARK-PHASE2].
+- The Beijing AI Innovation Highland action plan (January 2026) lists the Haidian AI Origin Community among the first batch of AI innovation neighborhoods, officially described as radiating roughly 3 km² around the Wudaokou Origin Building with universities, institutes, and a developer community [source:OFFICIAL-AI-ORIGIN]. Haidian’s “1+X+1” industrial-system statement and its “super AI test field” narrative describe the Jing-Zhang heritage AI belt as a core vehicle combining urban renewal, innovation, and public life, with a “three areas, two wings” layout and open, real-scenario testing in governance and daily services. These are policy-context citations, not evidence that this proposal is approved or implemented [source:OFFICIAL-HAIDIAN-1X1] [source:OFFICIAL-SUPER-AI-TESTFIELD].
+- The Beijing-Zhangjiakou high-speed railway opened in December 2019; within the city it runs underground through the Qinghua Park Tunnel, parallel to metro Line 13 and crossing municipal roads and utilities. Any advice touching underground, rail, or under-bridge space is therefore treated in this proposal only as a direction pending specialist review, not as an engineering conclusion [source:OFFICIAL-TUNNEL-BUILD].
+
+These figures and descriptions set design context only. They are not official calibration of boundary, area, ownership, capacity, or approval; they must be re-verified with official redlines and site data.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### 1. One spine, three stations, two wings
@@ -169,6 +179,21 @@ Phasing is expressed as readiness rather than a fixed construction schedule. P0 
 
 Long-term operation uses four loops: quarterly scenario review, monthly developer co-repair, quarterly public experience routes, and an annual global AI innovation week. Each event records authorization, voluntary participation, human takeover, complaint access, exit reason, and a publishable review summary. Operators, funding, partners, and dates remain open for later professional and public negotiation.
 
+### Plain-language implementation contract: who, for whom, when, with what, and how to stop
+
+To avoid inventing names without saying who does what for whom and when, the six concept moves below are written as contracts whose every cell can be completed before a pilot. Responsible parties, baselines, timelines, and permits are pending items, not commitments [source:AGENT-TASKBOOK] [depth:phasing_implementation].
+
+| Concept move | Who (responsible party, pending) | For whom | When | Resources / permits needed | How success is measured (baseline pending) | When to stop / human fallback |
+| --- | --- | --- | --- | --- | --- | --- |
+| Safe-governance sandbox | Test operator + safety officer | Researchers, developers, regulators | Controlled pilot phase | Data authorization, privacy impact assessment, site and network boundary | Pass rate, red-team report, human-takeover success; baselines established in phase 1 | Pause and disclose on any safety takeover event above threshold |
+| Slow-mobility diagnosis | Transport/accessibility lead + volunteers | Residents, older adults, children, people with reduced mobility | Front-loading research phase | Public road data, site observation, public-participation consent | Each break with photo, distance, peak period, and alternative route | Do not publish without human review or source traceability |
+| Near-campus transfer street | University-industry liaison + legal/IP | Students, staff, startups, community | Design development phase | Campus/industry boundary, ownership, ground-floor use, fire safety | Transfer occupancy, opening hours, dispute-resolution time | No construction discussion without ownership and fire permits |
+| Intelligent-terminal experience street | Commercial/public operator | Public, children, people with disabilities | Pilot phase | Safety separation, insurance, data-minimization pledge | Visits, safety incidents, accessibility pass-through | Withdraw without human-equivalent service or sufficient safety envelope |
+| Global AI week route | Event organizer + public agencies | Public, developers, international visitors | Yearly rhythm, per-event application | Event permits, rights clearance, contingency plan | Attendance, complaint rate, appeal-response time | Do not hold without permits or safety review |
+| Public maintenance desk | Facilities maintainer + public representatives | All users | Ongoing | Anonymous feedback channel, ledger, responsibility list | Work-order closure, feedback loop, turnback count | Close the entry without human review or responsibility records |
+
+**Site and stakeholder evidence disclosure**: this proposal was generated by an AI agent from public materials; its authors did not visit the site, conduct resident interviews, or perform field measurement. The ten personas, scenario cards, and event ideas are hypotheses awaiting field verification, not validated resident needs or operational outcomes. Any phrasing about who is served, how many, or satisfaction levels remains pending evidence until authorized data and public-participation records exist; PR discussion, Issue records, and review comments serve as the ledger for objections and responses, and simulation or design targets are never written as field facts.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 The metrics are divided into three groups. First are direct geometry readings: provisional site area, green-space area, public-space area, building interface footprint, road/slow-link count, key-area count, and phase count. Second are completeness readings: twelve scenario cards, three industry-test cards, six personas, three concept landmarks, and six concept renewal projects. Third are official-data-dependent controls: FAR, height, density, setbacks, road redlines, ownership, heritage controls, and municipal capacity [metric:site_area_sqm] [metric:scenario_card_count] [metric:industry_test_scenario_count] [metric:persona_count].
@@ -195,4 +220,7 @@ The declared AI agent generated the prose, code, GeoJSON, figures, PDFs, and HTM
 - Measures for the preparation and approval of regulatory detailed plans [source:MOHURD-CONTROL-DETAILED-PLANNING]
 - Ministry of Natural Resources land-use classification guide [source:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 - Official pages for Mila, Vector Institute, AI Singapore, The Alan Turing Institute, and STATION F [source:CASE-MILA] [source:CASE-VECTOR]
+- Official coverage of Jing-Zhang Railway Heritage Park phases 1 and 2 and the overall plan [source:OFFICIAL-PARK-PHASE1] [source:OFFICIAL-PARK-PHASE2]
+- Official coverage of the Beijing AI Innovation Highland action plan, Haidian’s “1+X+1” industrial system, and the super AI test field [source:OFFICIAL-AI-ORIGIN] [source:OFFICIAL-SUPER-AI-TESTFIELD]
+- Official material on smart construction of the Qinghua Park Tunnel [source:OFFICIAL-TUNNEL-BUILD]
 - Issue #1119, “Switchback Protocol v1.0” community contribution [source:COMMUNITY-SWITCHBACK-1119]
