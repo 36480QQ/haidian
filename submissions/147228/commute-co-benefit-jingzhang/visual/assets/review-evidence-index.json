@@ -14,6 +14,9 @@
     "visual/assets/commute-co-benefit-contract.json",
     "visual/assets/run-commute-co-benefit-contract.js",
     "assets/figures/commute-co-benefit-contract-board.svg",
+    "visual/assets/commute-co-benefit-authorization.json",
+    "visual/assets/run-commute-co-benefit-authorization.js",
+    "assets/figures/commute-co-benefit-authorization-board.svg",
     "proposal.md#四类人先看什么",
     "proposal.md#试点什么时候能开始",
     "visual/assets/pilot-startup-checklist.json",
@@ -53,8 +56,8 @@
     {
       "id": "implementation_feasibility",
       "label_zh": "可实施性",
-      "start_here": ["visual/assets/pilot-startup-checklist.json", "visual/assets/responsibility-acceptance-contract.json", "visual/assets/mobility-tabletop-contract.json", "visual/assets/capacity-closure-screen.json"],
-      "strongest_evidence": "十张场景卡各自有启动条件，M-09 四条请求另有 baseline、观察对象/时间窗、成功/停止、责任、人工等价、删除边界、申诉和复核字段，并与 P0/P1/P2 合同相接",
+      "start_here": ["visual/assets/commute-co-benefit-authorization.json", "visual/assets/pilot-startup-checklist.json", "visual/assets/responsibility-acceptance-contract.json", "visual/assets/mobility-tabletop-contract.json", "visual/assets/capacity-closure-screen.json"],
+      "strongest_evidence": "证据阶梯把 P0 登记、P1 可逆小试、P2 条件扩展和空中阻断分开，并把日期化 OD、容量、无障碍、投诉、隐私和责任人接到停止动作；十张场景卡和 M-09 回退演练继续提供逐项入口",
       "boundary": "运营者、预算、采购、许可证、班次和现场容量仍需日期化证据。"
     },
     {

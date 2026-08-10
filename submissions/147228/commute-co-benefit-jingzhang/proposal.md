@@ -34,6 +34,10 @@ iteration: "v1.0"
 
 这张合同把“企业得到什么”和“谁不能被牺牲”放在同一处：企业只使用声明的错峰输入，居民、照护、夜班、物流和公共回退保留保护门；对外通勤仍等待有日期的分组 OD，任一硬门失败就冻结政策并回到 P0 [data:visual/assets/commute-co-benefit-contract.json] [data:assets/figures/commute-co-benefit-contract-board.svg]。
 
+合同还需要一张证据阶梯，防止合成分数被误读成开通许可。P0 只登记分组 OD、班次与容量、居民照护和无障碍验证、投诉回退演练以及隐私规则；P1 只做一条可逆的最小活动链；P2 才讨论时段和服务范围扩展。当前方案停在 P0，任一证据过期、保护组变差或责任人缺位，就回到 P0 或停止。空中候选单列为阻断项，不能拿来填补地面证据缺口 [data:visual/assets/commute-co-benefit-authorization.json] [data:assets/figures/commute-co-benefit-authorization-board.svg]。
+
+![从合成屏查到现场授权的证据阶梯。当前停在 P0，先补证据再谈小试](assets/figures/commute-co-benefit-authorization-board.svg)
+
 ## 一页执行摘要。先验收一条到站到家链，再谈共享接驳扩展
 
 普通人要在出门、换乘、受阻、求助和回家每一步都保有可理解的选择。第一个可逆试点只验收一条最小链。它从选择公共、无障碍或人工路径开始，经过交通服务请求，在断网、雨雪、路缘冲突或错过衔接时转由人工或轨道公交接管，遇到不安全或不可达状态就冻结预约并退出，最后由独立复核者回放证据，决定修复、扩展或撤回。这不是现实运营承诺。当前 M-09 只在本地、无网络、无个人数据的合成桌面演练中复演 4 条请求，`performance_results=null`、`operational_status=not_authorized_not_run`。

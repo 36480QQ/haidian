@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7518fd3b395a0305d0ec8fb33fe3ca60770c7c182f5bcc086b98d479735d8a2e"
+      "sha256": "334f9cb6f1420106e4beafa64599f196351773be2623e7a585ccbbf825ead8bd"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3079dd0d385bd7721016ef6f1af66f6fb792cdb76c45311b7fe1c5e89669deff"
+      "sha256": "24367f40249f2bd418d175bb697bdda780be21ef2d8e2f65af89b1bf9f1b8289"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "93c5c6b30b92bdfee55c149185fd49028f26786244df2b6590906735c7675975"
+      "sha256": "d6689841eb446a7e8d0a2babbcd32a1b2460bc8f7d81999add159af66ccb7cb2"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5cb3f03cc5eca1dafe244286ad2b1bff0b42f9fa466850b55096ed5eff1ba4dd"
+      "sha256": "05a03dd80d13f14591ff1960c17877e7cec35a02c4e15199825ef6ef95e9c181"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7ca8a08bff308dba9d0925d4ce6594bdc3732a2ea95b34af03140e312df04dad"
+      "sha256": "c8a989ab4aa0bb5b84f109c7658f24e6e8339af0180f0c74c98715782b99bfb4"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "681f302cdefe51875027d0454827a8ec692d67d020ce67b39a0d00ac3beadddd"
+      "sha256": "13f24e7f71af328d7bf1450aabea2c6866a25ae21bbd342bdd760f4da6319bb3"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a18bbc790ead962df4f7093f03ddf31d8b9c1abcf0e60c1e4a03d5e6216302f7"
+      "sha256": "0068b45887a79f5034980d7cb16ea2c6974a551bef4913c0320c454f3fdf42fc"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -797,7 +797,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "e6e0216de2080fbbba1c7499a069f039ebb6a880cc46d2fac87f220ca013bdb7"
+      "sha256": "008d78f180c66d06ca5b99cc89af2aeaf684b84af92951e8d71c468d8aa8e04e"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -836,7 +836,7 @@
       "path": "visual/assets/run-presentation-polish.js",
       "role": "runner",
       "required": false,
-      "sha256": "ab820ff07a956120c4ffabdfd96cf0951e281b45c8eb32452284f9dcc2d8ea8f"
+      "sha256": "905b3d37426bd013eb45d7d03495cf045ead200e5186c85823ff2e623d1ef280"
     },
     {
       "path": "assets/figures/scenario-cards-board.svg",
@@ -990,6 +990,33 @@
       "role": "executable_evidence",
       "required": false,
       "sha256": "e84dc4a463dafab2c3f5a9157a920c2612efa94099cdeb96dec500542b43d788"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-authorization-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4725fc23114b9be8327bb7f9433939f8eeb42ec074684156d24890bce7cb6146"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-authorization-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/commute-co-benefit-authorization-board.svg",
+      "sha256": "1eb3d850d616958475fd38e5d5891f91457ba69596a6343ea2681df617a8a6a4"
+    },
+    {
+      "path": "visual/assets/commute-co-benefit-authorization.json",
+      "role": "data",
+      "required": false,
+      "sha256": "f67bab515c2e637ffc6f433ed1147631b0e797ecd38fca5e7c571b621210efc6"
+    },
+    {
+      "path": "visual/assets/run-commute-co-benefit-authorization.js",
+      "role": "executable_evidence",
+      "required": false,
+      "sha256": "c3fc32033b07c9af90165e7961e453d3507ccb4b9ff9526ef57d589a2ddd9642"
     }
   ]
 }
