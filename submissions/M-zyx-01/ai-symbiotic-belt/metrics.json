@@ -7,28 +7,28 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11432167.638,
+      "value": 11419439.442,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary) [PROV-SITE-001 总体设计范围]",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "provisional boundary (maintainer EPSG:4548 calc); official redline pending"
       ]
     },
     "coordination_scope_area_sqm": {
       "status": "known",
-      "value": 43677716.888,
+      "value": 43629132.804,
       "unit": "sqm",
       "source_files": [
-        "geometry/site_boundary.geojson"
+        "proposal.md"
       ],
-      "formula": "polygon_area(PROV-RESEARCH-001 统筹研究范围)",
-      "confidence": "medium",
+      "formula": "provisional research-area envelope (EPSG:4548 recomputed); not part of submitted site boundary geometry",
+      "confidence": "high",
       "assumptions": [
-        "provisional boundary; official redline pending"
+        "统筹研究范围（43.6km²）为文字四至研究口径，不参与提交边界覆盖检查；正式 polygon 发布后复算"
       ]
     },
     "key_area_count": {
@@ -46,67 +46,67 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.1798,
+      "value": 0.179769,
       "unit": "ratio",
       "source_files": [
         "geometry/land_use.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm (design target)",
-      "confidence": "medium",
+      "formula": "green_space_area_sqm / site_area_sqm (EPSG:4548)",
+      "confidence": "high",
       "assumptions": [
-        "按总体设计范围 land_use code 14 实算（provisional 口径）；统筹范围绿地含公园绿地另行统计"
+        "与 land_use 14 类占比一致（口径统一）"
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.1798,
+      "value": 0.020599,
       "unit": "ratio",
       "source_files": [
         "geometry/land_use.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_open_space_area_sqm / site_area_sqm (design target)",
-      "confidence": "medium",
+      "formula": "public_space_area_sqm / site_area_sqm (EPSG:4548)",
+      "confidence": "high",
       "assumptions": [
-        "按总体设计范围 land_use code 14 实算（provisional 口径）"
+        "广场等硬质公共开敞空间占比"
       ]
     },
     "key_area_zhongzhiyuan_area_sqm": {
       "status": "known",
-      "value": 1931337.661,
+      "value": 1929201.877,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-001)",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "provisional boundary"
       ]
     },
     "key_area_ai_origin_area_sqm": {
       "status": "known",
-      "value": 1044398.346,
+      "value": 1043236.909,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-002)",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "provisional boundary"
       ]
     },
     "key_area_dazhongsi_area_sqm": {
       "status": "known",
-      "value": 720051.286,
+      "value": 719243.63,
       "unit": "sqm",
       "source_files": [
         "geometry/key_areas.geojson"
       ],
       "formula": "polygon_area(PROV-KEY-003)",
-      "confidence": "medium",
+      "confidence": "high",
       "assumptions": [
         "provisional boundary"
       ]
@@ -187,106 +187,106 @@
     },
     "land_use_area_0802_sqm": {
       "status": "known",
-      "value": 4124498.151,
+      "value": 4119927.348,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=0802))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=0802)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "land_use_area_14_sqm": {
       "status": "known",
-      "value": 2055147.266,
+      "value": 2052866.474,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=14))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=14)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "land_use_area_05_sqm": {
       "status": "known",
-      "value": 2279880.082,
+      "value": 2324763.808,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=05))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=05)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "land_use_area_07_sqm": {
       "status": "known",
-      "value": 1519598.714,
+      "value": 1413546.625,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=07))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=07)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "land_use_area_08_sqm": {
       "status": "known",
-      "value": 1120775.175,
+      "value": 1176439.348,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=08))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=08)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "land_use_area_1207_sqm": {
       "status": "known",
-      "value": 332267.211,
+      "value": 331897.907,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(polygon_area(land_use features with code=1207))",
-      "confidence": "medium",
+      "formula": "sum(polygon_area(land_use features with code=1207)) [EPSG:4548]",
+      "confidence": "high",
       "assumptions": [
-        "基于 provisional 边界实算；official polygon 发布后复算"
+        "基于 provisional 边界 shapely 投影实算；official polygon 发布后复算"
       ]
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 2055147.266,
+      "value": 2052866.474,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "land_use_area_14_sqm (绿地与开敞空间用地)",
-      "confidence": "medium",
+      "formula": "union_area(green_space.geojson) = land_use code 14 area (EPSG:4548)",
+      "confidence": "high",
       "assumptions": [
-        "含京张公园+清河/小月河滨水绿带；基于 provisional 边界实算"
+        "绿地系统图层与 land_use 14 类口径统一"
       ]
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 2055147.266,
+      "value": 235232.653,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "land_use_area_14_sqm (公共开敞空间口径)",
-      "confidence": "medium",
+      "formula": "union_area(public_space.geojson) 三处广场 (EPSG:4548)",
+      "confidence": "high",
       "assumptions": [
-        "公共开敞空间以绿地与开敞空间用地 14 类计；基于 provisional 边界实算"
+        "公共开敞空间=3 处广场；不含公园绿地（见 green_space_area_sqm）"
       ]
     },
     "road_area_ratio": {

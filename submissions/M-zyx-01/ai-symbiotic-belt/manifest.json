@@ -45,7 +45,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "d6ea95f20781d2361476027b6924810bc3e68984f765b17b9370b2caf0287f3a"
+      "sha256": "7296ecfb28c2b95d075dcf8185c126dbc8208ecf1f5809225d46c968bf2f75c9"
     },
     {
       "path": "assumptions.json",
@@ -120,7 +120,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "acdfcc3274461dfe84966abaaf1c85abcf0f431eac6a89d0616ee843c6738434",
+      "sha256": "6f6ef4f7798f36b524e7a0e893925d06b4dced194fd0381ca7267e972fc5c826",
       "language": "zh"
     },
     {
@@ -174,19 +174,19 @@
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "49ce6a6bdcca813916ecd70b8067071f94a76fe57061bbbd659b45d7044bb8d7"
+      "sha256": "d60b8a50e1700f4353dc5158f1033505c8fb0733e5588a95eda4d89facbf7a84"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "81db725459a3014738e410bbf69e362f2018df3cd633bfc715ed57b2d4924df0"
+      "sha256": "e56742538f4d47f77fae930aa518675ef10b6f6866a31df1074541cc1ef0c515"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "df6a6359f2990c3de606a95e3aa17e6f99cd696d227729ef790a050116de74d8"
+      "sha256": "f9ebe9fc139d248acf92253b4bba27caf316cb7632b052b07e8452fbd51e5e17"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -198,7 +198,7 @@
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "329897692ead8ee9fbd18e222e5055159b4c47542a4b3a681a871262eb1bdf92"
+      "sha256": "13585101532941db74ed1823c201268cdeede32124c5d3484f55237191af025e"
     },
     {
       "path": "geometry/roads.geojson",
@@ -210,7 +210,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "77e4a99ef8666cb322b9cf52319547a13ad984d91268564aacbb6f7d4512893b"
+      "sha256": "7c641efa44bd1af4c9eea7097fccfb6db29ff272f56f86212fd7f0ba57f167e7"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -280,7 +280,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": false,
-      "sha256": "b0aedbd546a80a5ac8c19d4b53bd56d64c93606497b243ef34158d254e19bfae",
+      "sha256": "5f96fceed3e8f7c086854ad22933c32c5bcd9aa0bf0976530af63e48159fa3a7",
       "language": "en",
       "translation_of": "visual/index.html"
     }
