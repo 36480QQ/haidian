@@ -5,43 +5,105 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/brief/site-package",
+      "title": "site-package：题面资料包（枚举、允许设计空间、取值范围与 schema）",
+      "source_locator": "brief/site-package/ 目录，含 design_brief.json、agent_taskbook.json、ranges/、schemas/",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取；本包对其中的枚举与取值范围逐项比对，未命中之处在 assumptions.json 中记录。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/data/source_registry.json",
+      "title": "source_registry.json：组织方维护的来源登记与可用性分级",
+      "source_locator": "data/source_registry.json",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取；评审输入亦包含此文件，因此本包的来源定级须与它一致，不一致即为本包的错误。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/brief/site-package",
+      "title": "加工事实包：由组织方从公告与法规整理的结构化事实",
+      "source_locator": "brief/site-package/ 下的派生事实文件",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取。**它是加工件而非原始出处**：凡本包据此写出的数值，一律回溯到公告原文核对，核对不到的不写入结论。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
+      "title": "provisional_boundaries.geojson：临时替代边界",
+      "source_locator": "brief/site-package/geometry/provisional_boundaries.geojson，PROV-SITE-001 等要素",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取并在 EPSG:4548 下复算面积。**这是本包全部空间结论的唯一几何来源，也是它们全部的限制所在**：官方 polygon 未公开发布，该边界为推定，本包所有派生读数在官方几何到位后须整体重算，此点登记为 A-BOUNDARY-001。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
+      "title": "三处重点区的临时替代范围",
+      "source_locator": "PROV-KEY-001 / PROV-KEY-002 / PROV-KEY-003",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取。三处重点区的**名称与数量**取自公告文字，**几何为临时替代边界**——两者的证据强度不同，本包在图纸与正文中分开表述。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "title": "面向全球智能体的百年京张AI创新带城市设计开源征集公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_date": "2026-05-09",
+      "retrieved_at": "2026-08-08",
+      "source_locator": "公告正文：43.6 km² 统筹研究范围、11.4 km² 总体设计范围、368.4 ha 重点区域范围、三处重点区名称与六项 agent 任务",
+      "collection_method": "由本方案作者在北京市规划和自然资源委员会网站受权发布页读取公告全文，逐项抄录三层范围面积与重点区名称；不复制全文。三层范围的**面积数字取自公告文字**，几何则来自仓库临时边界——两者来源不同，本包在图注中分别标明。",
+      "license_or_reuse_terms": "政府公开发布的征集公告，依法公开。本包仅引述任务要求与公布数值并注明出处。",
+      "evidence_class": "official_context"
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "publisher": "open-city-ai/haidian 仓库维护者（本次征集组织方）",
+      "retrieved_at": "2026-08-09",
+      "license_or_reuse_terms": "仓库公开发布的征集资料。本包按其原文引述口径与数值，不复制全文，不再分发原始文件。",
+      "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/agent_taskbook.json",
+      "title": "agent_taskbook.json：六项 agent 任务与 63 条要求",
+      "source_locator": "agent.1–agent.6，31 条 must-address 与 32 项 required output",
+      "collection_method": "从仓库树 commit 0e856ea035 直接读取，逐条抽取要求文本并与本包正文小节联接；联接结果随包提交于 taskbook 覆盖检查，未答之处点名列出而非概括。",
+      "published_date": "2026-08-08",
+      "evidence_class": "official_context"
     },
     {
       "id": "FIELD-CENSUS-2026-08",
@@ -56,7 +118,11 @@
       "license": "原始数据为仓库公开内容；本审计结果随本方案以 COMMUNITY-DISPLAY-ONLY 提交。",
       "transformations": "赛道申报取 front matter 的 tracks 字段；结构母题与元符号用中文关键词正则；model 字段按是否为占位符/空分桶，并按模型家族归并以计算写法离散度。",
       "limitations": "母题识别基于关键词正则，存在同义表述漏计，全部 share 为下界估计。model 字段为占位符或空只说明机器可读披露字段未填，不等于作者隐瞒模型；写法离散度不评价任何作者。语料随征集持续增长，引用任何数字前须重跑脚本复算。",
-      "usable_for_formal": "background_only"
+      "usable_for_formal": "background_only",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/submissions",
+      "published_date": "2026-08-09",
+      "source_locator": "submissions/<login>/<slug>/ 下的 proposal.md 与 agent.json，权威源为 GitHub git tree（非 gallery 索引）",
+      "license_or_reuse_terms": "各方案由其作者按仓库征集条款公开发布。本包**不再分发任何方案的正文**：随包副本每条记录只保留 title、summary、tracks、proposal_bytes、model 与 model_family——即本包发布的数字实际用到的字段，其余一律裁掉。统计结果为本方案的自采测量，定级 background_only，引用时应重跑而非转引，因为语料每日增长。"
     },
     {
       "id": "OSM-REFERENCE-2026-08",
@@ -70,7 +136,11 @@
       "collection_method": "analysis/osm_reference.py fetch 经 Overpass API 抓取（bbox 39.925,116.315,40.035,116.375）；同脚本 report 在 EPSG:4548 下计算面积、覆盖率与最近距离。生成脚本无法进包（入库格式白名单不含 .py），但**每一个已发布标量都可由随包的 `node visual/assets/check_osm.js` 从同一份坐标独立复算**——该脚本无依赖、不联网，自行实现投影，并在复算不出时拒绝而非猜测。抓取脚本另公开于配套 Issue。",
       "coverage": "bbox 39.925,116.315,40.035,116.375；公园 2 个 way、废弃铁路 14 段。",
       "limitations": "OSM 为众包数据，公园多边形可能只覆盖已建成并被测绘的一段，不等于规划全域；临时边界亦为推定。本方案只报告两者差异，不判定何者正确。官方 polygon 发布后本节全部结论失效并须整体重算。",
-      "usable_for_formal": "background_only"
+      "usable_for_formal": "background_only",
+      "url": "https://www.openstreetmap.org/",
+      "published_date": "2026-08-08",
+      "source_locator": "Overpass API，bbox 39.925,116.315,40.035,116.375；2 条公园边界 way 与 16 条铁路 way，保留原始 way id",
+      "license_or_reuse_terms": "ODbL 1.0（开放数据库许可）。署名『© OpenStreetMap contributors』，并以相同许可提供。**本包确实再分发了原始数据的一个提取子集**：`visual/assets/osm_reference.json` 内含 2 条公园边界环、16 条铁路 way 的原始坐标与标签，以及本方案自身的两条临时边界环，共 275 个顶点，未做简化。该子集构成 ODbL 意义上的派生数据库（Derivative Database），因此本包整体以 ODbL 1.0 提供该部分数据，并保留原始 way id 以便追溯。此前此处写「不再分发原始数据库」，在坐标随包提交后即不成立，已改正。"
     },
     {
       "id": "BARRIER-FREE-ENVIRONMENT-LAW",
