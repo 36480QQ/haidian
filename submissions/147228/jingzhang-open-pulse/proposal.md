@@ -316,7 +316,7 @@ S4 均衡自适应方案胜率约 78.862%、平均遗憾 0.314 分，稳健平�
 
 八类压力中的最低项和门槛状态见 [metric:resilience_v13_selected_mean_regret]、[metric:resilience_v13_selected_min_stress_score]、[metric:resilience_v13_hard_gates_passed]；它仍需用现场数据校准。
 
-这里的 MCDA 数值是已声明的方案比较结果，不是本包内已经独立复算的 `known` 指标。包内没有随附逐抽样输入、五类权重、八类压力增量、响应函数或 runner，因此 `metrics.json` 将抽样数及其派生结果保持为 `unknown`；只有 GATE-04 通过并能从登记输入复演到同一数值后，才可升级状态。
+这里的 MCDA 数值是已声明的方案比较结果，不是本包内已经独立复算的指标。包内没有随附逐抽样输入、五类权重、八类压力增量、响应函数或 runner，因此这些抽样数及其派生结果暂列为“待输入与 runner 补齐后复演”；只有 GATE-04 通过并能从登记输入复演到同一数值后，才可升级为已知指标。
 
 这次校核将下一轮优化方向锁定为：增加被动遮阴和可维修雨洪储存、降低高传感器依赖、提高离线运行和人工接管、让活动容量与安静空间脱钩、建立资产冗余与替换件标准。北京公开气象目录可作为后续气候校准入口，但 Haidian 下载文件目前需要平台用户密钥，因此没有把未取得的温度、降雨、风速或湿度写成事实。[source:BEIJING-METEOROLOGICAL-OPEN-DATA] [assumption:A-METEOROLOGICAL-DATA-001]
 
