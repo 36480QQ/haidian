@@ -304,8 +304,8 @@ function updateVisualIndex(file, lang) {
   const suffix = zh ? '' : '.en';
   if (!html.includes('<nav>')) {
     const navLinks = zh
-      ? [['22', '群体分布'], ['23', '可达性尾部'], ['28', '关键读数'], ['29', '活动链闭合'], ['24', '三条状态轴'], ['25', '普通人经历'], ['26', '参数溯源'], ['27', '公共凭证']]
-      : [['22', 'Group distribution'], ['23', 'Accessibility tail'], ['28', 'Key readouts'], ['29', 'Activity chain'], ['24', 'Status axes'], ['25', 'Ordinary journey'], ['26', 'Provenance'], ['27', 'Public ledger']];
+      ? [['22', '群体分布'], ['23', '可达性尾部'], ['28', '关键读数'], ['29', '活动链闭合'], ['30', '代理拆解'], ['24', '三条状态轴'], ['25', '普通人经历'], ['26', '参数溯源'], ['27', '公共凭证']]
+      : [['22', 'Group distribution'], ['23', 'Accessibility tail'], ['28', 'Key readouts'], ['29', 'Activity chain'], ['30', 'Utility proxy'], ['24', 'Status axes'], ['25', 'Ordinary journey'], ['26', 'Provenance'], ['27', 'Public ledger']];
     const nav = `<nav style="display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 24px;max-width:980px;padding:0 24px;font-size:12px">${navLinks.map(([id, label]) => `<a href="#${id}" style="color:#245b8f;text-decoration:none;border:1px solid #d7dee8;border-radius:999px;padding:4px 9px">${label}</a>`).join('')}</nav>`;
     html = html.replace('<main>', `${nav}<main>`);
   }
@@ -435,6 +435,18 @@ function updateVisualIndex(file, lang) {
   if (!html.includes('href="#28"')) {
     const numericNavLabel = zh ? '关键读数' : 'Key readouts';
     html = html.replace('</nav>', `<a href="#28">${numericNavLabel}</a></nav>`);
+  }
+  html = html.replace(/<section id="30" class="evidence utility-welfare">[\s\S]*?<\/section>/g, '');
+  const utilityReadout = readJson('visual/assets/utility-welfare-readout.json');
+  const utilityScore = Number(utilityReadout.selected_score || 0).toFixed(2);
+  const utilityReconstructed = Number(utilityReadout.selected_reconstructed_score || 0).toFixed(2);
+  const utilityScreen = zh
+    ? `<section id="30" class="evidence utility-welfare"><div class="section-head"><span class="section-no">30</span><h2>把满意度代理拆开。每一分都回到时间、等待与责任</h2><span class="tag">合成代理拆解</span></div><p>O4 的合成满意度代理为 ${utilityScore}，七个组成项回算为 ${utilityReconstructed}。图板把时间、等待、拥挤、路缘、无障碍、可靠性和人流冲突分开，让评审能看见哪一类代价在拉低分数。当前居民满意度调查响应数为 0。它属于合成聚合屏查，不是居民满意度调查、员工偏好、公众接受度或现场运营绩效。</p><figure class="proposal-figure"><img src="../assets/figures/utility-welfare-board.svg" alt="满意度代理七项组成与候选复核图板"><figcaption>O4 代理分 ${utilityScore} · 七项组成可回算 · 居民满意度调查尚未运行</figcaption></figure><div class="micro">utility-welfare-screen.json · utility-welfare-readout.json · run-utility-welfare-screen.js · aggregate synthetic proxy, local calibration required</div></section>`
+    : `<section id="30" class="evidence utility-welfare"><div class="section-head"><span class="section-no">30</span><h2>Decompose the utility proxy. Every point returns to time, waiting and accountability</h2><span class="tag">SYNTHETIC PROXY DECOMPOSITION</span></div><p>The O4 synthetic satisfaction proxy is ${utilityScore}, and its seven declared costs reconstruct ${utilityReconstructed}. The board separates time, waiting, crowding, curb, accessibility, reliability and people-flow conflict so a reviewer can see which costs lower the score. Observed resident satisfaction responses remain at 0. This is a synthetic aggregate screen, not resident satisfaction, employee preference, public acceptance or field operating performance.</p><figure class="proposal-figure"><img src="../assets/figures/utility-welfare-board.en.svg" alt="Seven components of the utility proxy and candidate check"><figcaption>O4 proxy ${utilityScore} · seven components reconstruct the score · resident satisfaction responses not run</figcaption></figure><div class="micro">utility-welfare-screen.json · utility-welfare-readout.json · run-utility-welfare-screen.js · aggregate synthetic proxy, local calibration required</div></section>`;
+  html = html.replace('</main>', `${utilityScreen}</main>`);
+  if (!html.includes('href="#30"')) {
+    const utilityNavLabel = zh ? '代理拆解' : 'Utility proxy';
+    html = html.replace('</nav>', `<a href="#30">${utilityNavLabel}</a></nav>`);
   }
   const ordinaryJourneyScreen = zh
     ? '<section id="25" class="evidence multimodal-board"><div class="section-head"><span class="section-no">25</span><h2>一个合成居民的完整经历。去程、受阻、返程和投诉复核</h2><span class="tag">合成回放</span></div><p>周岚是一个合成照护者。她从 AI 原点社区服务台取得纸面、电话或人工路线，经连续无障碍段到大钟寺完成换乘；断网、雨雪或路缘冲突发生时，预约冻结，服务回到人工和地面公共交通。返程和投诉复核也必须在出发前留下入口。</p><figure class="proposal-figure"><img src="../assets/figures/mobility-ordinary-journey.svg" alt="一个合成居民的完整经历与失败回退"><figcaption>一个合成居民的完整经历。六步路径、六个负例和四个现场缺口</figcaption></figure><div class="micro">mobility-ordinary-journey-contract.json · mobility-ordinary-journey-evidence.json · 6 steps / 6 adverse fixtures / 4 unknown field gaps · synthetic, not field evidence</div></section>'

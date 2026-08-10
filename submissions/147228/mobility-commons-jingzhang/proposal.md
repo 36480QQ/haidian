@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.50"
+iteration: "v2.51"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -475,6 +475,12 @@ runner 实际循环处理全部 3,122,000 个合成代理，并只保留分组�
 名义屏查的群体链闭合差距为 14.8 个代理点；压力情景的失败是模型需要继续优化的证据，而不是现场韧性结论。地面回退只允许一次、有容量和可达性条件，步行/无障碍作为来源的需求不被静默改道；空中候选仍保持 `blocked`，不能填补地面证据缺口。图板先展示全量状态构成，再展示不同情景的链闭合，帮助评审看到居民、企业、外部通勤者和服务人员在同一张综合模拟里哪里真正断链 [source:DYNAMIC-PT-CAPACITY-2024] [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/activity-completion-readout.json]。
 
 ![活动链闭合、延期、不可达与返程失败。四情景 × 312.2 万合成代理](assets/figures/activity-completion-board.svg)
+
+#### 满意度代理拆解。让每一分都能回到出行代价
+
+本版把综合出行压力代理中容易被读成满意度的部分拆开。O4 合成满意度代理为 66.44，按时间、等待、拥挤、路缘、无障碍、可靠性和人流冲突七个组成项累计代价重构仍为 66.44，重构误差不超过 0.05。图板同时保留六类群体的组成项和 O1/O2/O3/O4 候选硬门，让评审能看到分数从哪里来、哪类人承担了更多代理代价。当前居民满意度调查响应数为 0，现场满意度状态仍是 `not_authorized_not_run`；这张图是合成聚合屏查，不能写成居民满意度、员工偏好、公众接受度或现场运营绩效 [source:MATSIM-LARGE-SCALE-ABM] [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/utility-welfare-readout.json]。
+
+![满意度代理七项组成与候选复核。O4 合成代理分 66.44](assets/figures/utility-welfare-board.svg)
 
 #### 相对资源压力。把人均公里、车辆服务和未知因素分开
 

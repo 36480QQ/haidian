@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.50"
+iteration: "v2.51"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -441,6 +441,12 @@ Five states stay separate: `on_time`, `delayed`, `deferred` within a declared bo
 The nominal group chain-completion spread is 14.8 proxy points; stress failures are evidence for further model and service work, not a local-resilience claim. Ground recourse is limited to one fallback with capacity and accessibility conditions; walking/accessibility demand is never silently rerouted as a source. The air candidate remains `blocked` and cannot fill a ground-evidence gap. The board shows the full status mix first, then the scenario comparison, so residents, enterprises, external commuters and service workers remain visible in the same integrated screen [source:DYNAMIC-PT-CAPACITY-2024] [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/activity-completion-readout.json].
 
 ![Activity-chain closure, deferral, inaccessibility and return failure. Four scenarios × 3.122 million synthetic agents](assets/figures/activity-completion-board.en.svg)
+
+#### Utility-proxy decomposition: return every point to a travel cost
+
+This version separates the part of the composite mobility-pressure proxy that readers may otherwise treat as satisfaction. The O4 synthetic satisfaction proxy is 66.44, and the sum of seven declared costs, time, waiting, crowding, curb, accessibility, reliability and people-flow conflict, reconstructs 66.44 within 0.05 points. The board keeps the six group components and the O1/O2/O3/O4 hard-gate comparison visible, so reviewers can see where the score comes from and which groups carry more proxy disutility. Observed resident satisfaction responses remain at 0 and the field satisfaction status is `not_authorized_not_run`; this is a synthetic aggregate screen, not resident satisfaction, employee preference, public acceptance or field operating performance [source:MATSIM-LARGE-SCALE-ABM] [source:TRANSPORT-EQUITY-DISTRIBUTION-2023] [data:visual/assets/utility-welfare-readout.json].
+
+![Seven components of the utility proxy and candidate check. O4 synthetic proxy 66.44](assets/figures/utility-welfare-board.en.svg)
 
 #### Relative resource pressure: separate passenger-km, service vehicles and unknowns
 

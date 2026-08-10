@@ -21,6 +21,7 @@ const run = spawnSync(process.execPath, [runnerPath], {
 });
 
 const failures = [];
+const syncMode = process.argv.includes('--sync');
 if (run.status !== 0) {
   failures.push(`regional runner exited with status ${run.status}`);
 }
@@ -79,6 +80,13 @@ function compactRobustness(candidate) {
 }
 
 if (generated && readout) {
+  if (syncMode && run.status === 0) {
+    readout.optimization_search = generated.optimization_search;
+    readout.selected_policy_readout = readout.selected_policy_readout || {};
+    readout.selected_policy_readout.satisfaction_component_readout = generated.selected_policy_readout.satisfaction_component_readout;
+    readout.checks = generated.checks;
+    fs.writeFileSync(readoutPath, `${JSON.stringify(readout, null, 2)}\n`);
+  }
   const persistedSelection = readout.optimization_search || readout.candidate_selection_audit;
   if (JSON.stringify(persistedSelection) !== JSON.stringify(generated.optimization_search)) {
     failures.push('candidate_selection_audit does not match the deterministic runner');
@@ -92,7 +100,8 @@ if (generated && readout) {
     all_agents_processed: generated.selected_policy_readout.all_agents_processed,
     mass_conservation: generated.selected_policy_readout.mass_conservation,
     air_candidate: generated.selected_policy_readout.air_candidate,
-    privacy_check: generated.selected_policy_readout.privacy_check
+    privacy_check: generated.selected_policy_readout.privacy_check,
+    satisfaction_component_readout: generated.selected_policy_readout.satisfaction_component_readout
   };
   const actualSelected = Object.fromEntries(Object.keys(expectedSelected).map((key) => [key, readout.selected_policy_readout?.[key]]));
   if (JSON.stringify(actualSelected) !== JSON.stringify(expectedSelected)) {
@@ -116,7 +125,8 @@ const result = {
     'worst_group_accessibility_p10_gap_proxy_points',
     'capacity_overflow_person_trips',
     'air_candidate',
-    'privacy_check'
+    'privacy_check',
+    'satisfaction_component_readout'
   ],
   claim_scope: 'Deterministic candidate-selection and provenance readout parity only; no local performance, operational, or ranking claim.',
   failures

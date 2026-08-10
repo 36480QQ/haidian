@@ -110,6 +110,16 @@
       "required_en": ["synthetic agents", "stress", "local resilience"],
       "source_files": ["visual/assets/activity-completion-screen.json", "visual/assets/activity-completion-readout.json", "visual/assets/run-activity-completion-screen.js", "assets/figures/activity-completion-board.svg"],
       "prohibited_interpretations": ["resident activity diary", "employee behaviour", "local resilience", "operating result"]
+    },
+    {
+      "id": "utility_welfare_decomposition",
+      "match_zh": "合成满意度代理为 66.44",
+      "match_en": "O4 synthetic satisfaction proxy is 66.44",
+      "category": "synthetic",
+      "required_zh": ["七个组成项", "居民满意度调查响应数为 0", "合成聚合屏查"],
+      "required_en": ["seven declared costs", "Observed resident satisfaction responses remain at 0", "synthetic aggregate screen"],
+      "source_files": ["visual/assets/utility-welfare-screen.json", "visual/assets/utility-welfare-readout.json", "visual/assets/run-utility-welfare-screen.js", "assets/figures/utility-welfare-board.svg", "assets/figures/utility-welfare-board.en.svg"],
+      "prohibited_interpretations": ["resident satisfaction result", "employee preference", "public acceptance", "field operating performance"]
     }
   ],
   "secondary_numeric_claims": [

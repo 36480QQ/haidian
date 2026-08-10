@@ -20,6 +20,15 @@ const MODES = model.modes;
 const HISTOGRAM_BINS = [30, 45, 60, 90, Infinity];
 const SATISFACTION_HISTOGRAM_BINS = [40, 50, 60, 70, 80, 90, 100];
 const ACCESSIBILITY_HISTOGRAM_BINS = [0.70, 0.80, 0.90, 0.95, 1.00];
+const UTILITY_COMPONENTS = [
+  'time_disutility',
+  'wait_disutility',
+  'crowding_disutility',
+  'curb_disutility',
+  'accessibility_disutility',
+  'reliability_disutility',
+  'conflict_disutility'
+];
 
 function fail(message) {
   console.error(`REGIONAL_MODEL_CHECK_FAIL: ${message}`);
@@ -73,6 +82,35 @@ function groupFor(index, ranges) {
 
 function addMap(map, key, value = 1) {
   map[key] = Number(map[key] || 0) + value;
+}
+
+function emptyUtilityComponents() {
+  return Object.fromEntries(UTILITY_COMPONENTS.map((key) => [key, 0]));
+}
+
+function buildUtilityComponentReadout(totalComponents, groupComponents, groupCounts, processed) {
+  const meanComponents = Object.fromEntries(UTILITY_COMPONENTS.map((key) => [key, round(totalComponents[key] / processed, 4)]));
+  const byGroup = Object.fromEntries(GROUPS.map((group) => {
+    const means = Object.fromEntries(UTILITY_COMPONENTS.map((key) => [key, round(groupComponents[group.id][key] / groupCounts[group.id], 4)]));
+    const totalDisutility = sum(Object.values(means));
+    return [group.id, {
+      count: groupCounts[group.id],
+      mean_components: means,
+      total_disutility: round(totalDisutility, 4),
+      reconstructed_score: round(clamp(100 - totalDisutility, 0, 100), 2)
+    }];
+  }));
+  const totalDisutility = sum(Object.values(meanComponents));
+  return {
+    method: 'additive_proxy_decomposition_from_regional_agent_score',
+    formula: 'score = clamp(100 - time - wait - crowding - curb - accessibility - reliability - conflict, 0, 100)',
+    component_units: 'proxy points per synthetic agent; not money, minutes or survey responses',
+    mean_components: meanComponents,
+    total_disutility: round(totalDisutility, 4),
+    reconstructed_score: round(clamp(100 - totalDisutility, 0, 100), 2),
+    by_group: byGroup,
+    interpretation: 'This is a transparent synthetic utility decomposition. It is not resident satisfaction, employee preference, public acceptance or field service quality.'
+  };
 }
 
 function tripDistanceKm(mode, distanceFactor, zoneFactor) {
@@ -743,11 +781,14 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
   let totalConflictProbability = 0;
   let totalPersonKm = 0;
   let workActivityAgents = 0;
+  const groupUtilityComponents = {};
+  const totalUtilityComponents = emptyUtilityComponents();
 
   for (const group of ranges) {
     groupCounts[group.id] = 0;
     groupSatisfaction[group.id] = 0;
     groupAccessibility[group.id] = 0;
+    groupUtilityComponents[group.id] = emptyUtilityComponents();
     groupTimeHistograms[group.id] = emptyHistogram();
     groupSatisfactionHistograms[group.id] = emptySatisfactionHistogram();
     groupAccessibilityHistograms[group.id] = emptyAccessibilityHistogram();
@@ -771,6 +812,15 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
       const curbPenalty = Number(parameters.curbPenaltyByMode?.[mode] ?? (mode === 'car' ? (scenarioId === 'B0' ? 10 : scenarioId === 'R1' ? 12 : 3) : 0));
       const generalizedCost = time + waitPenalty + crowdPenalty + curbPenalty + (1 - accessibility) * 15;
       const satisfaction = clamp(100 - generalizedCost * 0.56 - (1 - reliability) * 10 - conflictProbability * 1600, 0, 100);
+      const utilityComponents = {
+        time_disutility: time * 0.56,
+        wait_disutility: waitPenalty * 0.56,
+        crowding_disutility: crowdPenalty * 0.56,
+        curb_disutility: curbPenalty * 0.56,
+        accessibility_disutility: (1 - accessibility) * 15 * 0.56,
+        reliability_disutility: (1 - reliability) * 10,
+        conflict_disutility: conflictProbability * 1600
+      };
 
       addMap(modeCounts, mode);
       addMap(groupModeCounts[group.id], mode);
@@ -783,6 +833,10 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
       totalSatisfaction += satisfaction;
       totalAccessibility += accessibility;
       totalConflictProbability += conflictProbability;
+      UTILITY_COMPONENTS.forEach((key) => {
+        groupUtilityComponents[group.id][key] += utilityComponents[key];
+        totalUtilityComponents[key] += utilityComponents[key];
+      });
       const personKm = tripDistanceKm(mode, distanceFactor, zoneFactor);
       totalPersonKm += personKm;
       personKmByMode[mode] += personKm;
@@ -844,6 +898,7 @@ function simulateScenario(scenarioId, weightsOverride = null, policyId = scenari
     average_generalized_cost_proxy: round(totalGeneralizedCost / processed, 2),
     satisfaction_proxy: round(totalSatisfaction / processed, 2),
     satisfaction_proxy_by_group: groupSatisfactionProxy,
+    satisfaction_component_readout: buildUtilityComponentReadout(totalUtilityComponents, groupUtilityComponents, groupCounts, processed),
     accessibility_completion_proxy: round(totalAccessibility / processed, 4),
     accessibility_completion_by_group: groupAccessibilityCompletion,
     worst_group_satisfaction_gap_proxy_points: round(Math.max(...satisfactionValues) - Math.min(...satisfactionValues), 2),
@@ -1067,6 +1122,7 @@ function summarizeRobustnessResult(definition, result) {
     people_flow_conflict_rate_per_1000_proxy: result.people_flow_conflict_rate_per_1000_proxy,
     external_car_inflow_ratio: result.external_car_inflow_ratio,
     vehicle_km_proxy: result.vehicle_km_proxy,
+    satisfaction_component_readout: result.satisfaction_component_readout,
     air_candidate: result.air_candidate,
     privacy_check: result.privacy_check
   };
@@ -1184,6 +1240,7 @@ const optimizationSearch = {
     worst_group_satisfaction_p10_gap_proxy_points: candidate.result.distributional_readout.worst_group_satisfaction_p10_gap_proxy_points,
     person_km_proxy: candidate.result.person_km_proxy,
     vehicle_km_proxy: candidate.result.vehicle_km_proxy,
+    satisfaction_component_readout: candidate.result.satisfaction_component_readout,
     air_candidate: candidate.result.air_candidate,
     privacy_check: candidate.result.privacy_check
   })),
@@ -1215,6 +1272,8 @@ const checks = {
   optimized_peak_mode_capacity_screen_pass: selectedPolicy.result.max_mode_load_ratio <= model.optimization_search.hard_gate_constraints.maximum_peak_mode_load_ratio,
   optimized_worst_group_satisfaction_screen_pass: candidateEligible(selectedPolicy.result),
   optimized_accessibility_tail_screen_pass: selectedPolicy.result.distributional_readout.worst_group_accessibility_p10_gap_proxy_points <= model.optimization_search.hard_gate_constraints.maximum_worst_group_accessibility_p10_gap_proxy_points,
+  utility_component_decomposition_present: searchCandidates.every((candidate) => candidate.result.satisfaction_component_readout && candidate.result.satisfaction_component_readout.by_group && candidate.result.satisfaction_component_readout.reconstructed_score >= 0),
+  utility_component_reconstruction_error_bounded: searchCandidates.every((candidate) => Math.abs(candidate.result.satisfaction_component_readout.reconstructed_score - candidate.result.satisfaction_proxy) <= 0.05),
   service_unit_ledger_complete: scenarios.every((scenario) => MODES.every((mode) => scenario.service_unit_ledger[mode].person_trips === scenario.mode_counts[mode] && scenario.service_unit_ledger[mode].required_units >= 0)),
   vehicle_km_is_service_unit_based: scenarios.every((scenario) => scenario.vehicle_km_proxy === sum(Object.values(scenario.service_unit_ledger).map((item) => item.vehicle_or_service_km_proxy))),
   return_population_agents_processed: returnLegReadout.all_agents_processed,
@@ -1285,6 +1344,7 @@ const output = {
     return_leg: returnLegReadout,
     satisfaction_proxy: headlineOptimized.satisfaction_proxy,
     satisfaction_proxy_by_group: headlineOptimized.satisfaction_proxy_by_group,
+    satisfaction_component_readout: headlineOptimized.satisfaction_component_readout,
     average_generalized_cost_proxy: headlineOptimized.average_generalized_cost_proxy,
     p50_travel_time_proxy_minutes: headlineOptimized.p50_travel_time_proxy_minutes,
     p90_travel_time_proxy_minutes: headlineOptimized.p90_travel_time_proxy_minutes,

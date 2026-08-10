@@ -39,6 +39,12 @@
     "visual/assets/activity-completion-readout.json",
     "visual/assets/run-activity-completion-screen.js",
     "assets/figures/activity-completion-board.svg",
+    "proposal.md#满意度代理拆解。让每一分都能回到出行代价",
+    "visual/assets/utility-welfare-screen.json",
+    "visual/assets/utility-welfare-readout.json",
+    "visual/assets/run-utility-welfare-screen.js",
+    "assets/figures/utility-welfare-board.svg",
+    "assets/figures/utility-welfare-board.en.svg",
     "visual/assets/run-distributional-accessibility-board.js",
     "assets/figures/distributional-equity-board.svg",
     "assets/figures/distributional-accessibility-board.svg",
@@ -70,8 +76,8 @@
     {
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
-      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/activity-completion-readout.json", "visual/assets/run-activity-completion-screen.js", "visual/assets/run-distributional-accessibility-board.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "assets/figures/network-flow-board.svg", "assets/figures/activity-completion-board.svg", "assets/figures/distributional-accessibility-board.svg"],
-      "strongest_evidence": "持久化的 O1/O2/O3/O4 候选排名与鲁棒性排序，加上全量聚合网络流、容量闭合、活动链闭合、满意度与可达性 P10 尾部筛查、空中候选 fail-closed 和 headline claim audit，共同展示方式选择如何被硬门槛约束",
+      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/activity-completion-readout.json", "visual/assets/run-activity-completion-screen.js", "visual/assets/utility-welfare-readout.json", "visual/assets/run-utility-welfare-screen.js", "visual/assets/run-distributional-accessibility-board.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "assets/figures/network-flow-board.svg", "assets/figures/activity-completion-board.svg", "assets/figures/utility-welfare-board.svg", "assets/figures/distributional-accessibility-board.svg"],
+      "strongest_evidence": "持久化的 O1/O2/O3/O4 候选排名与鲁棒性排序，加上全量聚合网络流、容量闭合、活动链闭合、七项满意度代理组成、可达性 P10 尾部筛查、空中候选 fail-closed 和 headline claim audit，共同展示方式选择如何被硬门槛约束",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
     {
@@ -84,8 +90,8 @@
     {
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
-      "start_here": ["proposal.md#一个合成居民的完整经历。照护路线要能去，也要能回来", "visual/assets/mobility-ordinary-journey-contract.json", "visual/assets/mobility-ordinary-journey-evidence.json", "assets/figures/mobility-ordinary-journey.svg", "proposal.md#活动链闭合。把“到单位”推进到“完成一天”", "visual/assets/activity-completion-readout.json", "assets/figures/activity-completion-board.svg", "proposal.md#企业与居民公共决策凭证。每个问题都要有回复和退出路径", "visual/assets/public-decision-ledger.json", "assets/figures/public-decision-ledger.svg", "proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "assets/figures/distributional-accessibility-board.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
-      "strongest_evidence": "一个合成照护者的六步经历、人口规模活动链和公共决策凭证把分组需求、非数字等价入口、无障碍连续、返程、投诉回退和授权边界摆在同一阅读入口",
+      "start_here": ["proposal.md#一个合成居民的完整经历。照护路线要能去，也要能回来", "visual/assets/mobility-ordinary-journey-contract.json", "visual/assets/mobility-ordinary-journey-evidence.json", "assets/figures/mobility-ordinary-journey.svg", "proposal.md#活动链闭合。把“到单位”推进到“完成一天”", "visual/assets/activity-completion-readout.json", "assets/figures/activity-completion-board.svg", "proposal.md#满意度代理拆解。让每一分都能回到出行代价", "visual/assets/utility-welfare-readout.json", "assets/figures/utility-welfare-board.svg", "proposal.md#企业与居民公共决策凭证。每个问题都要有回复和退出路径", "visual/assets/public-decision-ledger.json", "assets/figures/public-decision-ledger.svg", "proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "assets/figures/distributional-accessibility-board.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
+      "strongest_evidence": "一个合成照护者的六步经历、人口规模活动链、可回算的七项满意度代理组成和公共决策凭证把分组需求、非数字等价入口、无障碍连续、返程、投诉回退和授权边界摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
     {
@@ -98,8 +104,8 @@
     {
       "id": "expression_completeness",
       "label_zh": "表达完整度",
-      "start_here": ["proposal.md#一个合成居民的完整经历。照护路线要能去，也要能回来", "proposal.md#活动链闭合。把“到单位”推进到“完成一天”", "proposal.md#校准债务与参数溯源。先让每个数字说明自己从哪里来", "proposal.md#企业与居民公共决策凭证。每个问题都要有回复和退出路径", "proposal.md", "proposal.en.md", "report/proposal.html", "visual/index.html", "assets/figures/mobility-ordinary-journey.svg", "assets/figures/mobility-ordinary-journey.en.svg", "assets/figures/activity-completion-board.svg", "assets/figures/activity-completion-board.en.svg", "assets/figures/calibration-debt-board.svg", "assets/figures/public-decision-ledger.svg", "manifest.json"],
-      "strongest_evidence": "双语普通人经历、活动链闭合、参数溯源和公共决策凭证，加上任务书交叉图、网络流图、结构化 JSON、图纸和 hash manifest，形成同一包",
+      "start_here": ["proposal.md#一个合成居民的完整经历。照护路线要能去，也要能回来", "proposal.md#活动链闭合。把“到单位”推进到“完成一天”", "proposal.md#满意度代理拆解。让每一分都能回到出行代价", "proposal.md#校准债务与参数溯源。先让每个数字说明自己从哪里来", "proposal.md#企业与居民公共决策凭证。每个问题都要有回复和退出路径", "proposal.md", "proposal.en.md", "report/proposal.html", "visual/index.html", "assets/figures/mobility-ordinary-journey.svg", "assets/figures/mobility-ordinary-journey.en.svg", "assets/figures/activity-completion-board.svg", "assets/figures/activity-completion-board.en.svg", "assets/figures/utility-welfare-board.svg", "assets/figures/utility-welfare-board.en.svg", "assets/figures/calibration-debt-board.svg", "assets/figures/public-decision-ledger.svg", "manifest.json"],
+      "strongest_evidence": "双语普通人经历、活动链闭合、可回算的满意度代理组成、参数溯源和公共决策凭证，加上任务书交叉图、网络流图、结构化 JSON、图纸和 hash manifest，形成同一包",
       "boundary": "索引只帮助评审导航，不代表官方评分、CI 通过或现场实施。"
     },
     {
