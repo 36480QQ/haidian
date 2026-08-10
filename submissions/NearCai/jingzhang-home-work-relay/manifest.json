@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-10T20:17:05Z",
+  "generated_at": "2026-08-10T21:20:17Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "57dc555c621a263107a8b2444252dc84f87b87fb5b5f335eac72a0c3a0268e37"
+      "sha256": "9a63f17d9da3d52fd7cf7cf3dc0a935f2d0c6e2163e1b559f9eebdd66ec85f80"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,7 +107,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4692df95ef0810d76fb6e4c0e468c9220a1f1ba7da08767f1ca6aea8ba1d0847"
+      "sha256": "e18a7aaf967cca46990e3eecfbb31141d0dfaf91dfe8f1d59b251128bef2500e"
     },
     {
       "path": "visual/index.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a5d5fdb41077addef9da7dd8f20692f39459ac850ceb779a4858eb1e2c335641"
+      "sha256": "55a90eeb3ada1f3b6b9123bfc0af25ced6ead22e2f93695013bec5fee0d48f14"
     },
     {
       "path": "visual/index.en.html",
