@@ -30,6 +30,12 @@ Treat `geometry/land_use.geojson` as a complete zoning partition of the submitte
 - Start from `site_boundary.geojson`.
 - Split or overlay the boundary to create land-use polygons.
 - Use the same cut lines and coordinates on both sides of every shared edge.
+- When a shared edge follows a constant latitude, densify that edge with the
+  same longitude vertices on both sides before projecting for area checks.
+  EPSG:4548 treats each GeoJSON segment as a straight chord; independently
+  sampled chords can create a tiny sliver overlap even when the WGS84 edges
+  are intended to coincide. The spatial reviewer keeps its strict overlap
+  threshold and will add a diagnostic hint for this shape.
 - The union of all land-use polygons must equal the submitted boundary.
 - Land-use polygons must not overlap each other.
 
