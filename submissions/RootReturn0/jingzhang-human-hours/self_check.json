@@ -1,0 +1,86 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional site geometry is explicit and eligible for content review; it is not used as an official redline or statutory area.",
+      "suggested_fix": "Replace with the official polygon and recompute every derived layer and metric when released."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three required key-area types are present, non-overlapping and explicitly provisional.",
+      "suggested_fix": "Re-site candidate nodes after official key-area polygons are released."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Four concept-role polygons cover the provisional site without overlap and retain official land-use codes."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "Official spatial_review.py passes; only the expected provisional key-area minor notices remain."
+    },
+    {
+      "check_id": "METRICS_SCHEMA",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Metrics validate against schema: four recomputable geometry indicators and six unknown/null fairness exports; the unsupported minutes metric is omitted."
+    },
+    {
+      "check_id": "FORMAL_REFS",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance_matrix.json",
+      "message": "Module-08 cross-reference validation passes for 23 requirements, 5 standards, 15 depth items, sources, assumptions, metrics, checks, sections and geometry anchors."
+    },
+    {
+      "check_id": "BILINGUAL_TEXT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese primary and English equivalent drafts contain all 13 required sections, evidence references and five primary figure calls."
+    },
+    {
+      "check_id": "BUILDING_DATA_GAP",
+      "result": "unknown",
+      "severity": "major",
+      "target": "geometry/buildings.geojson",
+      "message": "Cleared existing-building, ownership, height, structure and retain/renovate/demolish inputs are unavailable; the feature collection remains intentionally empty.",
+      "suggested_fix": "Add professionally verified survey and control data before building-scale or statutory claims."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Bilingual Human Hours web master v0.5 passes visual_review.py and real-browser inspection: both languages load on desktop without page-level horizontal overflow; 390×844 frames preserve a single-column reading path, five-band protagonist views, twelve distinct scenario contracts, four mobility layers and six candidate annual operating units."
+    },
+    {
+      "check_id": "DISPLAY_TRANSLATIONS",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "Five bilingual core figures v0.5, bilingual proposal, web master v0.5, and four Chinese/English A3/A0 PDFs v0.5 are complete; all 24 PDF pages passed visual and structural QA, with site-specific issue responses, distinct scenario contracts, Fritho authorship and open-font embedding verified."
+    },
+    {
+      "check_id": "MANIFEST_HASHES",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Manifest still records scaffold state and stale hashes by design.",
+      "suggested_fix": "Run the official finalizer only after all primary and translated display files are complete."
+    }
+  ]
+}
