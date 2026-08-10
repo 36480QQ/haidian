@@ -7,12 +7,12 @@ summary: "以京张遗址公园为公共底板、三处重点区为创新节点�
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.7"
+iteration: "v3.9"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **包版本说明：** 本包迭代为 v3.6；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.6 延续 v3.5 的双语、版权、临时边界交接和来源边界，并把既有 S02 合成测试窗口压成可离线复演的停止—恢复演练；不改变空间对象、指标、来源等级或实施边界。
+> **包版本说明：** 本包迭代为 v3.9；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.9 把人本缓冲、城市 API 最小字段、算电协同闸门与版本化治理接到三处重点区，并以双语图件和结构化合同回读；不改变空间对象、指标、来源等级或实施边界。
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
 
@@ -181,6 +181,20 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 上述关系只回答先比较哪些公共性与可逆性，不回答哪里可以建设、谁拥有空间或最终空间控制参数。正式方案须在控规、测绘、产权、消防、结构、市政、交通和公众参与证据到位后由专业团队确定 [depth:height_massing_character] [depth:development_intensity_controls]。
 
 在此之前，空间更新仍优先采用导视、公共服务台、骑行驿站、遮雨座椅、无障碍坡道和可移动设施；不据此新增道路红线、建筑增量或拆改结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+
+### v3.9 人本缓冲与城市 API：把硬约束接到三个节点
+
+本轮把“人先行、机器可调用、失败可回退”压缩成一个可审阅的空间合同，而不是再添一层 AI 展示。`human-first-buffer.json` 将原住民/老人、被替代风险劳动者、数字包容与夜间工作者放回三处节点：人工窗口、纸面/电话服务、技能再造与申诉、夜间无屏幕绿地必须先于任何模型服务；`city-api-energy-contract.json` 再把资产状态、授权、责任、人工回退、停止条件和 release note 作为城市 API 的最小字段。[data:visual/assets/human-first-buffer.json] [data:visual/assets/city-api-energy-contract.json]
+
+| 人本/机器接口 | 概念空间动作 | 可复核的门槛与缺口 |
+| --- | --- | --- |
+| 人本缓冲层 | 在 AI 原点社区保留人工登记、代际共学与技能再造走廊；在大钟寺界面把夜间人工服务、静音休息和无屏幕绿地接回普通慢行链 | 只登记 `resident_continuity_retention_rate`、`skills_retraining_corridor_completion_rate`、`manual_channel_availability_rate` 等待补采指标，不宣称保留率、就业安置或健康成效；居民、商户、照度、噪声、无障碍和夜间服务基线仍缺失 [data:visual/assets/human-first-buffer.json] [metric:public_space_ratio] |
+| 城市 API 层 | 在众智园设置资产/几何版本观测台，在三处节点统一显示授权状态、责任角色、人工回退和停止条件；机器只调用可审计的最小字段，人和普通服务不依赖账号 | 每个窗口必须有 `asset_id`、`geometry_version`、`uncertainty`、`human_fallback` 和 `stop_condition`；数据授权、接口责任、网络隔离和公众回执待专业团队核验 [data:visual/assets/city-api-energy-contract.json] [depth:versioned_governance]
+| 算电协同与版本化治理 | PUE 分档、绿电/余热接口、人机混行和小月河翼具身测试只作为待审批的概念闸门；年度体检、公众回执、release note 和回滚把 AI 三个月迭代接到城市长期维护 | `PUE`、绿电、热网、低空或测试许可均为项目级 `unknown`，不构成政策已定、工程可行或容量承诺；任一人工回退失效、居民申诉无回执或责任缺失就冻结扩容并恢复普通服务 [data:visual/assets/city-api-energy-contract.json] [standard:BEIJING-DATACENTER-ENERGY-REVIEW-2023] |
+
+![城市 API 与算电协同治理图](assets/figures/city-api-energy-governance.png)
+
+图中三个 provisional 节点的横向链条只表示“普通人先行 → 最小 API 字段 → 算电/硅基通行闸门 → 版本化治理”的审阅关系，不是市政接口、热网、低空航线或具身智能许可。所有空间建议仍是概念建议/参考方案，供专业团队深化；缺少官方边界、现场服务基线、能源计量、数据授权和责任主体时，保持 `unknown`，不升级为正式依据。[data:assets/figures/city-api-energy-governance.png] [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001]
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
