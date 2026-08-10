@@ -6,11 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.3"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.3 connects a six-step city-API accountability sequence, first evidence for frozen scenarios, and replayable parametric deltas to spatial anchors. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.4"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.4 gives all 23 brief requirements differentiated evidence entrances, prioritizes missing inputs, and treats compute-energy policy only as a design baseline to be verified. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.4 Evidence crosswalk and policy boundary | Make every requirement independently replayable
+
+v2.4 adds no new spatial commitment. Instead, each of the 23 announcement / taskbook requirements now has a shortest package-local evidence chain in `compliance_matrix.json`: `evidence_items` provides a unique entrance, spatial or structural references, and a review boundary; `reviewer_evidence_map.differentiator_zh` records why that response is more than an AI showcase. A reviewer can therefore audit a requirement without treating one repeated summary table as proof of every claim.[data:compliance_matrix.json] [depth:brief_alignment]
+
+`assumptions.json` now labels every missing input with a `priority`. High priority means that the missing input would change space, metrics, or a release gate; it does not mean that the input is solved. Official boundaries, road / airspace, rights, public baselines, energy, climate, authorization, and operational outcomes remain open.[data:assumptions.json] [depth:risk_missing_data]
+
+`metrics.json` adds `proposal_baseline_not_measured` `design_target` objects to `operational_pue` and `green_electricity_share`. The first only references Beijing computing-infrastructure policy direction; the second explicitly treats 30% as a proposal baseline derived from a specified existing-data-centre target band. Neither is a project statutory control, permit conclusion, or measured performance.[source:BJ-COMPUTE-2024] [source:BJ-DATACENTER-2024]
+
+Once authorized energy design, credentials, and metering exist, drawings, HTML, PDFs, and self-check must be recalculated together.[metric:operational_pue] [metric:green_electricity_share]
+
+This increment improves evidence legibility, missing-data ordering, and policy boundaries only. It does not turn any unknown into an outcome or create an official score, government endorsement, or implementation approval.[depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## v2.3 six-step city-API sequence | Make callability replayable as accountability
 

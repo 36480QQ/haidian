@@ -6,11 +6,23 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.3"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.3 把城市 API 六步责任序列、冻结场景第一份证据与参数化差异回放接到空间锚点。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.4"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.4 为 23 条任务要求补上差异化证据入口、为假设标注补料优先级，并把算电政策仅作为待核验设计基线。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.4 证据交叉索引与政策边界｜让每一条任务都能独立回读
+
+v2.4 不增加新的空间承诺，而是把 23 条公告 / 任务书要求各自绑定到一条最短的包内证据链：`compliance_matrix.json` 的 `evidence_items` 给出唯一入口、空间或结构证据和复核边界；`reviewer_evidence_map` 的 `differentiator_zh` 说明这一条与“AI 展台”叙事的差别。这样评审者不必把同一组总表当成每条要求的证明。[data:compliance_matrix.json] [depth:brief_alignment]
+
+`assumptions.json` 现在给每个资料缺口标注 `priority`。高优先级只表示补料会改变空间、指标或发布门，不表示缺口已经解决；官方边界、道路 / 空域、权属、公众基线、能源、气候、授权和运营结果仍保持待补状态。[data:assumptions.json] [depth:risk_missing_data]
+
+`metrics.json` 对 `operational_pue` 和 `green_electricity_share` 增加了 `proposal_baseline_not_measured` 的 `design_target`。前者只引用北京智算设施政策导向，后者明确 30% 是相关存量数据中心目标区间的提案基线；两者都不是本项目法定控制值、许可结论或实测绩效。[source:BJ-COMPUTE-2024] [source:BJ-DATACENTER-2024]
+
+正式项目取得授权、能源设计、采购凭证与计量后，必须连同图件、HTML、PDF 和 self-check 一起重算。[metric:operational_pue] [metric:green_electricity_share]
+
+这轮增量只改善证据可读性、补料排序和政策边界；不把任何 unknown 升级成结果，也不产生官方评分、政府背书或实施许可结论。[depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## v2.3 城市 API 六步序列｜把可调用写成可回放的责任链
 

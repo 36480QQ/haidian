@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Read-only deterministic checks for the v1.5-v2.3 spatial, search, delivery, scorecard, brief-alignment, public-culture, and city-API assets. */
+/* Read-only deterministic checks for the v1.5-v2.4 spatial, search, delivery, scorecard, brief-alignment, public-culture, city-API, and evidence-crosswalk assets. */
 const fs = require('fs');
 const path = require('path');
 
@@ -76,7 +76,7 @@ const v19BilingualRefs = proposalZh.includes('visual/assets/brief-alignment-atla
 const v20BilingualRefs = proposalZh.includes('visual/assets/public-culture-operations-atlas-v20.json') && proposalEn.includes('visual/assets/public-culture-operations-atlas-v20.json') && proposalZh.includes('图 23') && proposalEn.includes('Figure 23') && proposalZh.includes('assets/figures/public-culture-operations-atlas.png') && proposalEn.includes('assets/figures/public-culture-operations-atlas.en.png');
 const v23BilingualRefs = proposalZh.includes('visual/assets/city-api-sequence-v23.json') && proposalEn.includes('visual/assets/city-api-sequence-v23.json') && proposalZh.includes('图 26') && proposalEn.includes('Figure 26') && proposalZh.includes('assets/figures/city-api-sequence-v23.png') && proposalEn.includes('assets/figures/city-api-sequence-v23.en.png');
 check('SPATIAL_PROOF_V17_SCHEMA', spatialProofV17.package_iteration === 'v1.7' && spatialProofV17.display_method.metric_crs === 'EPSG:4548' && spatialProofV17.display_method.display_aspect_rule.includes('pixel'), `iteration=${spatialProofV17.package_iteration}; crs=${spatialProofV17.display_method.metric_crs}`);
-check('BILINGUAL_AUDIT_ITERATION', bilingualAudit.package_iteration === 'v2.3', `audit=${bilingualAudit.package_iteration}`);
+check('BILINGUAL_AUDIT_ITERATION', bilingualAudit.package_iteration === 'v2.4', `audit=${bilingualAudit.package_iteration}`);
 check('BILINGUAL_AUDIT_SCOPE', ['图 16', '图 17', '图 18', '图 19', '图 20', '图 21', '图 22', '图 23', '图 26'].every((label) => bilingualAudit.scope.join(' ').includes(label)) && ['human-city-mainline', 'parametric-search', 'human-city-delivery-spine', 'spatial-proof-v16', 'spatial-proof-v17', 'formal-scorecard-readback-v18', 'reviewer-scorecard-map', 'brief-alignment-atlas-v19', 'public-culture-operations-atlas-v20', 'city-api-sequence-v23'].every((name) => bilingualAudit.scope.join(' ').includes(name)), 'v1.5 mainline/search/delivery, v1.6 maps, v1.7 display atlas, v1.8 scorecard readback, v1.9 brief alignment, v2.0 public-culture operation, and v2.3 city-API sequence are named in the audit scope');
 check('BILINGUAL_V15_REFS', v15BilingualRefs, 'v1.5 data and figure references occur in both proposal languages');
 check('BILINGUAL_V16_REFS', v16BilingualRefs, 'v1.6 spatial proof record and core overview occur in both proposal languages');
@@ -108,8 +108,8 @@ const evidence = {
   generated_by: 'visual/assets/check-human-city-v15-assets.js',
   status: ok ? 'PASS' : 'FAIL',
   checks,
-  interpretation_zh: 'PASS 只证明 v1.5 图件、候选搜索、交付主线、v1.6 空间证据、v1.7 放大/回读图、v1.8 七维评审回读、v1.9 任务书—空间响应、v2.0 公共空间—文化—运营与 v2.3 城市 API 六步序列的结构、边界与回接可读；不证明官方评分、现场绩效、批准或实施。',
-  interpretation_en: 'PASS proves only that v1.5 figures, search, delivery spine, v1.6 spatial evidence, v1.7 zoom/readback figures, v1.8 scorecard readback, v1.9 brief alignment, v2.0 public-space/culture/operation, and v2.3 city-API sequence resolve structurally with declared boundaries; it does not prove official scoring, field performance, approval, or implementation.'
+  interpretation_zh: 'PASS 只证明 v1.5 图件、候选搜索、交付主线、v1.6 空间证据、v1.7 放大/回读图、v1.8 七维评审回读、v1.9 任务书—空间响应、v2.0 公共空间—文化—运营、v2.3 城市 API 六步序列与 v2.4 证据交叉索引的结构、边界与回接可读；不证明官方评分、现场绩效、批准或实施。',
+  interpretation_en: 'PASS proves only that v1.5 figures, search, delivery spine, v1.6 spatial evidence, v1.7 zoom/readback figures, v1.8 scorecard readback, v1.9 brief alignment, v2.0 public-space/culture/operation, v2.3 city-API sequence, and v2.4 evidence crosswalk resolve structurally with declared boundaries; it does not prove official scoring, field performance, approval, or implementation.'
 };
 console.log(JSON.stringify(evidence, null, 2));
 process.exit(ok ? 0 : 1);

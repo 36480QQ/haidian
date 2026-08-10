@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-10
+
+- 为 23 条公告 / 任务书要求各自增加差异化、包内可回读的 `evidence_items`，并在 reviewer evidence map 中标注差异化主张与复核边界。
+- 为全部开放假设增加 `priority` 与保守的补料排序说明；优先级是排程工具，不是缺口已解决的证据。
+- 为 PUE 与绿电占比增加明确标注为未测量的政策参考基线，不改变正式 metric value / status。
+- 同步中英文 proposal 与 reviewer navigation index；不改 geometry、官方边界结论、分数或公共发布状态。
+
 ## v2.3 - 2026-08-10
 
 - 新增双语图 26“城市 API 六步可回放序列”与 `city-api-sequence-v23.json`：目录、授权、调用、日志、审计、退出逐步绑定既有空间锚点、场景、发布门、人工等效和停止/回退动作；新增离线 checker 与证据回读。
