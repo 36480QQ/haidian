@@ -44,6 +44,7 @@ for (const card of contract.cards) {
   requireText(card.baseline?.observation_unit, 'baseline.observation_unit');
   requireText(card.baseline?.time_window, 'baseline.time_window');
   requireText(card.sample_and_window?.sample_definition, 'sample_and_window.sample_definition');
+  requireList(card.sample_and_window?.exclusion_rules, 'sample_and_window.exclusion_rules');
   requireText(card.sample_and_window?.observation_period, 'sample_and_window.observation_period');
   requireText(card.sample_and_window?.sampling_method, 'sample_and_window.sampling_method');
   requireText(card.success_condition?.status, 'success_condition.status');
@@ -61,10 +62,19 @@ for (const card of contract.cards) {
   requireText(card.data_contract?.retention_rule, 'data_contract.retention_rule');
   requireText(card.data_contract?.deletion_owner_role, 'data_contract.deletion_owner_role');
   if (card.data_contract?.deletion_proof !== 'not_available_before_authorization') localErrors.push(`${prefix}.data_contract.deletion_proof boundary`);
+  requireList(card.data_contract?.deletion_receipt_contract?.required_fields, 'data_contract.deletion_receipt_contract.required_fields');
+  if (card.data_contract?.deletion_receipt_contract?.current_status !== 'not_available_before_authorization') localErrors.push(`${prefix}.data_contract.deletion_receipt_contract.current_status boundary`);
+  if (!/declarative|does not prove/i.test(card.data_contract?.deletion_receipt_contract?.semantic_boundary || '')) localErrors.push(`${prefix}.data_contract.deletion_receipt_contract.semantic_boundary`);
   requireText(card.review_and_redress?.review_cycle, 'review_and_redress.review_cycle');
   requireText(card.review_and_redress?.appeal_entry, 'review_and_redress.appeal_entry');
   requireText(card.review_and_redress?.appeal_owner_role, 'review_and_redress.appeal_owner_role');
+  requireText(card.review_and_redress?.response_owner_role, 'review_and_redress.response_owner_role');
+  requireText(card.review_and_redress?.response_sla, 'review_and_redress.response_sla');
+  if (card.review_and_redress?.receipt_lookup_location !== 'not_available_before_authorization') localErrors.push(`${prefix}.review_and_redress.receipt_lookup_location boundary`);
   requireText(card.review_and_redress?.response_rule, 'review_and_redress.response_rule');
+  requireList(card.review_and_redress?.appeal_receipt_contract?.required_fields, 'review_and_redress.appeal_receipt_contract.required_fields');
+  if (card.review_and_redress?.appeal_receipt_contract?.current_status !== 'not_available_before_authorization') localErrors.push(`${prefix}.review_and_redress.appeal_receipt_contract.current_status boundary`);
+  if (!/does not prove|declared receipt/i.test(card.review_and_redress?.appeal_receipt_contract?.semantic_boundary || '')) localErrors.push(`${prefix}.review_and_redress.appeal_receipt_contract.semantic_boundary`);
   if (card.status !== 'not_authorized_not_run') localErrors.push(`${prefix}.status boundary`);
   requireList(card.source_refs, 'source_refs');
   for (const reference of [...(card.baseline?.source_refs || []), ...(card.source_refs || [])]) {
@@ -86,11 +96,20 @@ const negativeCases = contract.negative_samples.map((sample) => {
   if (sample.mutates === 'accountability.operating_owner_role') delete broken.accountability.operating_owner_role;
   if (sample.mutates === 'success_condition.observed_value') broken.success_condition.observed_value = 0.9;
   if (sample.mutates === 'data_contract.deletion_proof') delete broken.data_contract.deletion_proof;
+  if (sample.mutates === 'sample_and_window.exclusion_rules') delete broken.sample_and_window.exclusion_rules;
+  if (sample.mutates === 'data_contract.deletion_receipt_contract.semantic_boundary') delete broken.data_contract.deletion_receipt_contract.semantic_boundary;
+  if (sample.mutates === 'review_and_redress.appeal_receipt_contract.lookup_location') delete broken.review_and_redress.appeal_receipt_contract.lookup_location;
   const rejected = sample.mutates === 'accountability.operating_owner_role'
     ? !broken.accountability.operating_owner_role
     : sample.mutates === 'success_condition.observed_value'
       ? broken.success_condition.observed_value !== null
-      : broken.data_contract.deletion_proof !== 'not_available_before_authorization';
+      : sample.mutates === 'data_contract.deletion_proof'
+        ? broken.data_contract.deletion_proof !== 'not_available_before_authorization'
+        : sample.mutates === 'sample_and_window.exclusion_rules'
+          ? !Array.isArray(broken.sample_and_window.exclusion_rules) || broken.sample_and_window.exclusion_rules.length === 0
+          : sample.mutates === 'data_contract.deletion_receipt_contract.semantic_boundary'
+            ? !/declarative|does not prove/i.test(broken.data_contract.deletion_receipt_contract.semantic_boundary || '')
+            : !broken.review_and_redress.appeal_receipt_contract.lookup_location;
   if (!rejected) fail(`${sample.id} did not reject its mutation`);
   return {id: sample.id, mutates: sample.mutates, expected: sample.expected, observed: rejected ? 'reject' : 'accept'};
 });
@@ -108,6 +127,9 @@ const result = {
     required_readiness_fields: errors.length === 0,
     unknown_baseline_and_null_observation: contract.cards.every((item) => item.baseline.status === 'unknown' && item.success_condition.observed_value === null),
     human_equivalent_and_redress: contract.cards.every((item) => Boolean(item.human_equivalent?.route && item.review_and_redress?.appeal_entry)),
+    sample_exclusion_boundary: contract.cards.every((item) => Array.isArray(item.sample_and_window?.exclusion_rules) && item.sample_and_window.exclusion_rules.length > 0),
+    deletion_receipt_is_declarative: contract.cards.every((item) => /declarative|does not prove/i.test(item.data_contract?.deletion_receipt_contract?.semantic_boundary || '')),
+    appeal_receipt_is_retrievable: contract.cards.every((item) => Array.isArray(item.review_and_redress?.appeal_receipt_contract?.required_fields) && item.review_and_redress?.appeal_receipt_contract?.required_fields.includes('lookup_location')),
     retention_deletion_boundary: contract.cards.every((item) => item.data_contract?.deletion_proof === 'not_available_before_authorization'),
     negative_samples_rejected: negativeCases.every((item) => item.observed === 'reject')
   },
