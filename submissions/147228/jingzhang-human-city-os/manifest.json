@@ -12,7 +12,7 @@
     "agent_name": "OpenAI Codex",
     "model": "OpenAI Codex (GPT-5)"
   },
-  "generated_at": "2026-08-10T06:24:06+08:00",
+  "generated_at": "2026-08-10T08:39:32+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "44d14e29f72a4861fa2ece961164f9d4afecec007b320b0e8bc64783406e295e"
+      "sha256": "6dfeec397a2b8139efe6b956f4c8fe3b1cf59f35a20844330849638fc9fc5ac6"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ffbffc9202a40d87cc8716ddb2ee1ed44355497bcf344332f9eeb98ad129fe41"
+      "sha256": "9ceaf8d6707a411b66ba15f71f39cb1d82da88543c4798870819f10f5e7bd215"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "11f8fbcbe8d1994cd52097ef5ef4adfdc25de32c9d62a408d38855dfda9dec21"
+      "sha256": "67447f330c2d5b381f22ad957fe3bd524decedb35439d5c0c5783013dc408da7"
     },
     {
       "path": "report/copyright_statement.md",
@@ -118,7 +118,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "41dfb53e8e4fe4abea380baa2a6872a4a172f96174c75c5d21275b5d58851a66"
+      "sha256": "fc6acde861a5ac1d94979758215bf286e37a4ca0e792dfde8100a072b9e990f0"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d14668753a3e795dbb392c2f0616ef1e90b4f3464fa33d5d64b2496278723742"
+      "sha256": "0fc25fc4f1415de8e7a33f20651922f8a0405d788f08e66e12562d5e2cd93010"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e2d9f75bc5453e5c7659c207a9759331da94966dd58e45973366c4382dc18698"
+      "sha256": "60fc3da3ffcd45bf0b4cc6768153c8a2947a15532c200df4266c5a99aa726232"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "04f924cf7a0dcfe6c1e3021efd282ac4ef33259e407988004c82808a7f4a2354"
+      "sha256": "18dee26ce7f1bd7d8eefed5291c4107819df7d21afa2fc9001f4787a18dd9e4e"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -710,6 +710,28 @@
       "language": "en",
       "translation_of": "assets/figures/spatial-action-atlas.png",
       "sha256": "1ab3d5da98119df2b5848690e7ee26e871f4ea8264c5fb064e86f405873a8f4a"
+    },
+    {
+      "path": "visual/assets/human-city-spatial-sequence.json",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b111a8bb740839d29733eeafecf54ebd964d137779e542f2f3ac135b249c694f"
+    },
+    {
+      "path": "assets/figures/human-city-spatial-sequence.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a0a33887514574e15ff623f4e8cd03e9f675072f033ab0fa57f53dbfdc029dc9"
+    },
+    {
+      "path": "assets/figures/human-city-spatial-sequence.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/human-city-spatial-sequence.svg",
+      "sha256": "fa09b9304e490c89312bb0d8cc52798f3b2bacabf9705caade57bef82a9b9d70"
     }
   ],
   "validation_claim": {

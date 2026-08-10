@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.3"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.3 新增三处重点区空间动作图谱、京津冀接口台账与原创识别系统，并保留 v1.2 的总体空间动作、四条价值链、三道发布门和既有审计资产。既有临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.4"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.4 将三处重点区进一步压缩为到达—人工服务—机器边界—蓝绿停留—退出的空间序列，并保留 v1.3 的空间动作图谱、京津冀接口台账、原创识别系统和既有审计资产。既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -52,6 +52,22 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[depth:phasing_implementation]
 
 **先读结论：**本包能证明空间动作、证据引用、指标公式和失败关闭路径可以离线复核；不能证明官方边界、居民结果、就业结果、PUE/绿电、热网接入、交通安全、许可、投资或现实运营绩效。所有缺口保留在 `assumptions.json`、`metrics.json` 与资料就绪度台账，待公开或授权数据到位后再重算。[depth:risk_missing_data]
+
+## v1.4 空间序列｜先把人的日常走通，再调用机器
+
+上一版已经回答三处重点区“要做什么”；本版把它压成评审者和普通人都能沿着图面走的一条空间序列：**到达与停留 → 人工解释与选择 → 受限机器接口 → 蓝绿缓冲 → 退出、申诉与回放**。这不是新增一条展示轴，也不是把制度台账换个名字，而是把每个空间节点的可见手势、机器边界和失效动作放在同一行，供专业团队深化研究。[data:visual/assets/human-city-spatial-sequence.json] [depth:overall_spatial_structure]
+
+![图 15｜人本空间序列：三处重点区的到达、人工服务、机器边界、蓝绿停留与退出](assets/figures/human-city-spatial-sequence.svg)
+
+| 临时重点区 | 人先看到的空间序列 | 机器只能做什么 | 失效时的空间动作 | 仍需补齐的资料 |
+| --- | --- | --- | --- | --- |
+| 北京 AI 原点社区 | 连续步行与人工导视 → 服务厅/代际共学 → 技能再造与小商户回迁议事 → 无屏恢复绿地 | 提供翻译、排队或岗位信息建议；不强制扫码、不以培训人次替代就业 | 改道、人工接管、保留电话/纸面路径；无可信基线不发布保留或转型比例 | 官方边界、无障碍走读、居民/商户知情基线、夜间服务能力 |
+| 众智园 AI 自主创新加速区 | 低速人行优先观察边缘 → API 授权解释台 → 受限具身测试与事故复盘 → 小月河翼海绵退避 | 在申报时段和最小权限内做模拟或受控测试；不由一次演示扩区 | 冻结调用、停机、回到上一发布门；安全、保险、责任或回放缺一不测 | 官方边界、道路/空域审查、保险事故协议、水文与排水输入 |
+| 大钟寺 AI 产业聚集区 | 城市 API 问题台 → OPC 公平申请与共享实验 → 版本/标准回放 → 多语人工服务客厅 | 交换已授权的最小问题和版本；不指定企业、不冒充国家标准 | 停止外溢、人工答复、保留普通服务；无法独立回放不进入下一门 | 官方边界、共享实验室规则、权利/IP 协议、多语和医疗服务能力 |
+
+三处节点全部使用现有 GeoJSON 锚点，功能带和界面关系不填工程尺寸；`official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run` 均保持不变。图 15 与 JSON 只证明空间阅读顺序和回退逻辑可回溯，不证明实际道路、建筑、人员值守、蓝线、空域、容量、绩效或实施授权。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002]
+
+三处重点区的第三个空间锚点、总体临时面积和资料缺口仍按同一规则登记；取得清权或官方输入后再整包重算。[data:geometry/key_areas.geojson#PROV-KEY-003] [metric:site_area_sqm] [depth:risk_missing_data]
 
 ## v0.2 评分修复｜把三个重点区读成空间动作链
 
