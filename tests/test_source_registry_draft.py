@@ -50,6 +50,16 @@ class SourceRegistryDraftTests(unittest.TestCase):
                         "url": "https://example.com：443/source",
                     },
                     {
+                        "id": "broken_003",
+                        "title": "Nonnumeric port URL",
+                        "url": "https://example.com:bad/source",
+                    },
+                    {
+                        "id": "broken_004",
+                        "title": "Out-of-range port URL",
+                        "url": "https://example.com:99999/source",
+                    },
+                    {
                         "id": "valid_001",
                         "title": "Valid source",
                         "url": "https://example.com/source",
@@ -82,7 +92,7 @@ class SourceRegistryDraftTests(unittest.TestCase):
             self.assertNotIn("Traceback", completed.stderr)
             summary = json.loads(completed.stdout)
             self.assertEqual(summary["source_count"], 1)
-            self.assertEqual(summary["skipped_invalid_urls"], 2)
+            self.assertEqual(summary["skipped_invalid_urls"], 4)
             self.assertEqual(summary["validation_errors"], [])
             draft = json.loads(out_path.read_text(encoding="utf-8"))
             self.assertEqual(["DRAFT-VALID-001"], [source["source_id"] for source in draft["sources"]])

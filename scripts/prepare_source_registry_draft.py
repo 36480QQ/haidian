@@ -82,6 +82,7 @@ def canonicalize_url(url: str) -> str | None:
     try:
         parsed = urllib.parse.urlsplit((url or "").strip())
         hostname = parsed.hostname
+        _ = parsed.port
     except ValueError:
         return None
     if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc or not hostname:
