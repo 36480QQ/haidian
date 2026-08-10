@@ -79,6 +79,23 @@ This is a reviewer navigation aid, not a formal scorecard. Each row gives the sh
 
 The table reduces reviewer search across long evidence and repeated boundary statements without adding a new fact, metric or implementation promise [data:visual/assets/review-evidence-index.json].
 
+## How the six taskbook tasks land in this package
+
+The six taskbook tasks remain belt-wide work. This mobility package is responsible only for the part it can actually deliver. The table puts the mobility contribution first and leaves unsupported work to the organiser, planners, cultural researchers, and future operators. The full machine-readable crosswalk is `visual/assets/taskbook-crosswalk.json`; the bilingual board is `assets/figures/taskbook-crosswalk-board.en.svg`.
+
+![Taskbook crosswalk board for the mobility package](assets/figures/taskbook-crosswalk-board.en.svg)
+
+| Task | Package deliverable | Read first | Not claimed |
+| --- | --- | --- | --- |
+| agent.1 overall coordination | Three scales, three nodes, rail/bus backbone, and a reversible mobility chain | `mobility-spatial-plan.svg`, overall-structure section | Belt-wide master brand, statutory redlines, regulatory metrics, engineering conclusions |
+| agent.2 AI ecosystem | Mobility-side ledgers for enterprise, residents, external commuters, vehicles, nodes, curbs, and maintenance | `demand-ledger.json`, `resource-pressure-readout.json` | Industrial attraction, funding, enterprise lists, confirmed partnerships |
+| agent.3 AI+ scenarios | Ten bilingual scenario cards, six participant groups, three industry tests, and card-level stop rules | `scenario-cards-board.svg`, startup checks, people-flow section | Resident surveys, observed OD, field operation, public acceptance |
+| agent.4 public space | Mobility interfaces at entrances, waiting areas, ramps, bicycle parking, curb desks, and maintenance points | `brand-system-board.svg`, key-area and blue-green sections | Three landmarks, heritage approval, bridge/tunnel engineering, official events |
+| agent.5 cultural narrative | A bilingual public-service narrative of arrival, transfer, waiting, maintenance, and home | Mobility Commons public-space section and bilingual boards | Belt-wide cultural system, historical verification, unauthorised copyrighted material |
+| agent.6 long-term operation | P0 registration, P1 pilot, P2 review, redress, retention, stop rules, and human fallback | Responsibility contract and M-09 readiness evidence | Annual events, developer community, attraction/conversion, operating contracts |
+
+This table lets a reader find evidence quickly and see the gaps just as quickly. The 3,122,000 synthetic agents, tabletop replay, and package self-checks show only that the model and state logic can be replayed. They do not establish resident needs, field capacity, public consent, approval, or rank. All spatial layers remain provisional constraints, and air mobility stays blocked when evidence or approval is insufficient [data:visual/assets/taskbook-crosswalk.json].
+
 ## Reading Labels and Evidence Boundaries
 
 The package uses four labels for numbers. Read the label before reading the value.

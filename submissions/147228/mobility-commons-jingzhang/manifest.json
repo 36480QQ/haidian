@@ -118,13 +118,13 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b2c739bd14f938cf662998d430af837c3277e14be1e834b393e251cf299eed6e"
+      "sha256": "3dfb25edf243a5e8e43ad762b0ca6dcc7706b1d3cd7646fbbe28643361d8be94"
     },
     {
       "path": "compliance_matrix.json",
       "role": "data",
       "required": true,
-      "sha256": "659002dd2bd0902247b49696189d9c6a864526b27b06da4a5476d8e704640d14"
+      "sha256": "3f7b97aca6db14cbba0f2fc491f1caf5006df5c09a98d285b58554a955cd528b"
     },
     {
       "path": "design_depth_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "100f01b309e285255a595d4a043374b59298e1c81308b50a0626cc4e2fe1fe58"
+      "sha256": "5d263f7671280bc370caee85229a46e5b11b560b6575cc2b2dc304a8a880ad96"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "50e4b926f62266475b0b612a8b1b9ce5d1f98869ee4b7c0f386b1bbce83bb191"
+      "sha256": "a6e5647a75d03ae39c88408777159395ff270a9c99cfeda6ffd01e9e4e9bef9d"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "706e24b86c9176f68d1339cedf3246d8fbab9f66dcc1e97daededeb00d647944"
+      "sha256": "ab888157c73a6a5e4ba76a35fd94b609cd2e5621a3b70fe254a28ed5dd77ab64"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "626acec4daa8de8f5dd589306a6119ba4f87cecead895714f84f0ebdfc4b1868"
+      "sha256": "c02e27a7c832971117bfd971b02f9459fc2c22a48474e93f75c610a5f623b69f"
     },
     {
       "path": "self_check.json",
@@ -314,7 +314,7 @@
     {
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "data",
-      "sha256": "c31d2b1fc5e1626556ab902719073fee2ee72eb6d5dfd85abc5c31501c887378"
+      "sha256": "254fe61341e3f899a200c3d324195b11fa9d14dd06a54a7baa5ebac3f469a324"
     },
     {
       "path": "visual/index.en.html",
@@ -322,7 +322,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "885a50589d6545451f62136e559dfeb93ad41ab39fab79a1f746fc3302b7769e"
+      "sha256": "ecc419e26437fac95b83d113c822702abc0666df9b8e724478089a7526d080fc"
     },
     {
       "path": "visual/index.html",
@@ -867,6 +867,21 @@
       "language": "en",
       "translation_of": "assets/figures/brand-system-board.svg",
       "sha256": "446a66a8410fe7fc21d77f84cfc31431c4e45f571450a3e4d42be4d230272816"
+    },
+    {
+      "path": "assets/figures/taskbook-crosswalk-board.svg",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "bd48ced5debce831b65f911253fc3321e5653c6521189f8f38a8abb99b8c0eb1"
+    },
+    {
+      "path": "assets/figures/taskbook-crosswalk-board.en.svg",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/taskbook-crosswalk-board.svg",
+      "sha256": "093852e94656a4de9f2196aa85b973c7b4db2113b373d54293ac9476fb044528"
     },
     {
       "path": "visual/assets/run-scenario-cards-board.js",
