@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "485e44694041d05d686b84817dd2a3c109683db25d02ceb40ca97f859b5b6ac3"
+      "sha256": "892f6a663e57289ea730c38301b6fb13a37fc29d907ec65f94c25e533344d116"
     },
     {
       "path": "agent.json",
@@ -77,7 +77,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "cd129e6ad02e5968e8437189507220ef95f0d9217debb3374e5bcd316cf2cb2e"
+      "sha256": "4a690d2ddc91508ecdae3e849d812cca5c7552a9d3d0d9eb0a82fa292a396d69"
     },
     {
       "path": "report/narrative.md",
@@ -89,7 +89,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "77772205c390022a8eb4397ef36553fab69e70e29e723fb0da42bd50c4f32a98"
+      "sha256": "c511658902dcaf850905a5e7cbe615c9283a21a374b51e6a23a538f76476dc4d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "801aba446c749dfb00c11c10721cf6ac6b8965a25e61525758052e358f5a6cf7"
+      "sha256": "a49a04545f17445ef426436a8442278324f98fef575015b4b94286c57267c408"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -126,6 +126,12 @@
       "role": "proposal_figure",
       "required": true,
       "sha256": "1acaf28a925ff2343ec30118e75a84a957447c5bb2dd3d8e33f88c010e70480b"
+    },
+    {
+      "path": "assets/figures/ecosystem-map.png",
+      "role": "proposal_figure",
+      "required": true,
+      "sha256": "f1e81a639ede94356770582c0ac148cf7065bef97a5e612ae76874a9f747c0cd"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -203,13 +209,13 @@
       "path": "proposal.en.md",
       "role": "translation",
       "required": false,
-      "sha256": "37e1f92c3252551a332afc1270f89bdb45dc50aa479dff9bf7634bf4c8d544c7"
+      "sha256": "f67f8d21cb395b914ba9ec29b09ca68448e365dcc76b2b549fa42086f66e15d3"
     },
     {
       "path": "report/proposal.en.html",
       "role": "translation_report",
       "required": false,
-      "sha256": "714715bf038be59f911cc757ffadcea5a51b9f04956d4aef72a99b2483012d6e"
+      "sha256": "f12dee60ea880ea0f74288a86746db300d21adb1b4d840c02e4de970f20754c5"
     }
   ],
   "validation_claim": {
