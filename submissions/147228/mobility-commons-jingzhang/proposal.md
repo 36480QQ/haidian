@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.44"
+iteration: "v2.45"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -376,7 +376,7 @@ Issue #1119 提供了一个可供不同方案横向比较的 Switchback Protocol
 
 ### 设计场景综合模拟（透明沙盘，现状数据尚未接入）
 
-这部分按一条证据链阅读。先看区域规模覆盖，再看网络边和换乘节点，接着看运力缺口、相对资源压力和扰动稳健性。五张图都由同一份 `run-regional-commute-simulation.js` 聚合结果投影而来，读数不能互相相加，也不能理解为五组独立现场测量；入口、输出和替换条件集中登记在 `regional-scale-commute.json` 的 `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain]。
+这部分按一条证据链阅读。先看区域规模覆盖，再看网络边和换乘节点，接着看运力缺口、群体分布、相对资源压力和扰动稳健性。六张图都由同一份 `run-regional-commute-simulation.js` 聚合结果投影而来，读数不能互相相加，也不能理解为六组独立现场测量；入口、输出和替换条件集中登记在 `regional-scale-commute.json` 的 `evidence_chain` [data:visual/assets/regional-scale-commute.json#evidence_chain]。
 
 在现场 OD、站点容量、信号、人员动线和路缘计数到位前，先用 `visual/assets/movement-simulation.json` 做 1000 人归一化设计单位的可解释对比，并可用 `node visual/assets/run-mobility-simulation.js` 离线复核方式份额、服务供给和队列。场景包括 S0 无协同高峰、S1 多方式与路缘协同、S2 受监管闸门阻断的空中候选、S3 极端天气地面回退。S1 只是建议硬门筛查后暂选的设计候选；广义成本、换乘可靠性、人员冲突、汽车外来流入、最差群体差距和能耗都是示范输入，海淀现状数据尚未接入。图件公开了先过硬门、再做帕累托比较、最后用现场数据替换的决策链 [metric:multimodal_system_efficiency_index] [metric:person_flow_conflict_rate] [standard:SUMO-MULTIMODAL-SIMULATION]。
 
@@ -400,6 +400,10 @@ runner 实际循环处理全部 3,122,000 个合成代理，并只保留分组�
 为了让群体代理分的差异不被总平均值遮住，新增群体、方式和运力证据板。O4 下居民工作者的综合出行压力代理分为 67.38，照护者和儿童为 67.24，夜班人员为 66.35，物流和维护为 57.21；无障碍完成代理按组保持在 92.87% 至 95.49% 的合成范围。右侧把地铁、公交、自行车、无障碍、汽车和企业接驳的服务单元负荷拆开，1.00× 是声明容量线，1.35× 是候选筛选闸门；O4 仍有 332,639 人次容量溢出代理，因此图板把“补班次/槽位、再谈扩展”列为下一步，容量压力保持可见。这里的 332,639 与闭合屏的 +301,925 属于两张不同的屏查。前者保留 O4 基础声明服务下的溢出，后者按敏感性扫描补足声明服务单元并把窗口末队列压到零；两者都不能当作现有运营能力。汽车方式份额从 B0 的 26.3% 降到 O4 的 9.6%，但物流和维护组仍有 75.8% 的汽车份额，居民通勤优化不能替代必要的服务车辆 [metric:resident_daily_trip_access_index] [metric:accessible_route_completion_ratio] [metric:peak_curb_conflict_rate]。
 
 ![居民、车辆与地铁。群体方式与运力压力](assets/figures/resident-vehicle-capacity-board.svg)
+
+本版把同一份 runner 的个体合成读数再按群体做分箱回读，补上 P50/P90 通勤时间和满意度代理 P10/P50/P90。O4 的满意度代理 P10 在物流/维护组为 50/100，夜班工作者的 P90 通勤时间为 90 分钟，群体 P10 差距为 20 个代理分。这个读数让最弱群体留在筛选表里，避免总体平均值遮住分布尾部；名义候选同时须满足群体满意度均值差距不超过 12 个代理分、群体 P10 差距不超过 20 个代理分，四类压力情景分别按 18 和 30 个代理分门槛回读。研究综述建议把分组结果的分布、充分性门槛和多情景比较放在同一套交通公平分析里，本包只借用这种检查顺序，不导入外部人口属性、系数或海淀结果 [source:TRANSPORT-EQUITY-DISTRIBUTION-2023]。
+
+![群体分布与公平屏查。六类合成代理的 P10、P50、P90 与通勤时间](assets/figures/distributional-equity-board.svg)
 
 #### 相对资源压力。把人均公里、车辆服务和未知因素分开
 

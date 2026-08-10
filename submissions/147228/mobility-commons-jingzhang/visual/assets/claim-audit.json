@@ -142,6 +142,30 @@
       "required_zh": ["合成屏查读数", "不是海淀道路"],
       "required_en": ["synthetic screen outputs", "not Haidian road"],
       "source_files": ["visual/assets/network-flow-readout.json", "visual/assets/run-network-flow-screen.js"]
+    },
+    {
+      "id": "distributional_tail_screen",
+      "match_zh": "50/100",
+      "match_en": "50/100",
+      "required_zh": ["满意度代理 P10", "合成"],
+      "required_en": ["satisfaction-proxy P10", "synthetic"],
+      "source_files": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "assets/figures/distributional-equity-board.svg"]
+    },
+    {
+      "id": "distributional_time_tail",
+      "match_zh": "90 分钟",
+      "match_en": "90 minutes",
+      "required_zh": ["P90", "合成"],
+      "required_en": ["P90", "synthetic"],
+      "source_files": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "assets/figures/distributional-equity-board.svg"]
+    },
+    {
+      "id": "distributional_p10_gap",
+      "match_zh": "20 个代理分",
+      "match_en": "20 proxy points",
+      "required_zh": ["P10 差距", "合成"],
+      "required_en": ["P10 spread", "synthetic"],
+      "source_files": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "assets/figures/distributional-equity-board.svg"]
     }
   ],
   "headline_wording_guard": {
