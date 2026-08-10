@@ -232,6 +232,46 @@
         "The eight rows are non-identifying design lenses; they are not measured population counts or automated eligibility categories."
       ]
     },
+    "public_interest_position_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/public-interest-position-register.json"
+      ],
+      "formula": "count(positions)",
+      "confidence": "high",
+      "assumptions": [
+        "These are explicit conceptual trade-offs authored for professional review, not measured public preferences or a survey result."
+      ]
+    },
+    "public_interest_position_scenario_link_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/public-interest-position-register.json",
+        "visual/assets/scenario-operation-matrix.json"
+      ],
+      "formula": "count(distinct linked scenario IDs)",
+      "confidence": "high",
+      "assumptions": [
+        "A link proves a review relationship only; it does not prove a field result or operating authorization."
+      ]
+    },
+    "public_interest_affected_group_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/public-interest-position-register.json"
+      ],
+      "formula": "count(distinct affected_groups)",
+      "confidence": "medium",
+      "assumptions": [
+        "Group labels are non-identifying design lenses; they are not population counts, eligibility classes or evidence of consultation."
+      ]
+    },
     "ai_landmark_count": {
       "status": "known",
       "value": 4,

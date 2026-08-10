@@ -115,7 +115,7 @@ code {
 <p class="summary">以京张遗址公园为公共底板、三处重点区为创新节点，把每个 AI 场景变成可质询、可退出、可复算的一构件一智证里程；空间建议、普通服务和实施闸门均保留专业复核边界。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
-<blockquote><p><strong>包版本说明：</strong> 本包迭代为 v3.9；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.9 把人本缓冲、城市 API 最小字段、算电协同闸门与版本化治理接到三处重点区，并以双语图件和结构化合同回读；不改变空间对象、指标、来源等级或实施边界。</p></blockquote>
+<blockquote><p><strong>包版本说明：</strong> 本包迭代为 v4.0；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.0 在 v3.9 的人本缓冲、城市 API 最小字段、算电协同和版本化治理之外，新增八项公开取舍登记，把作者立场、受影响群体、放行证据和退出边界放到同一张可复核图上；不改变空间对象、面积指标、来源等级或实施边界。</p></blockquote>
 <h1>京张开源脉冲：一条可验证的 AI 创新公共带</h1>
 <blockquote><p><strong>核心判断：</strong> 京张开源脉冲不是把 AI 装置串成展示轴，而是把京张遗址公园变成一条公共回路：三处重点区分别承担可信测试、开放转化和城市体验；每个构件都必须有普通等价服务、人工责任、正负证据、公众回执和退出决定。正文给出空间判断，GeoJSON、metrics、矩阵和 40 个闸门负责复算与审计。</p></blockquote>
 <h2>一页执行摘要：公共回路与一构件一智证里程</h2>
@@ -382,6 +382,9 @@ code {
 <h3>5. 公共利益、参与和公平：先测再承诺</h3>
 <div class="proposal-table"><table><thead><tr><th>审计项</th><th>当前状态</th><th>试点前证据</th><th>冲突处置</th></tr></thead><tbody><tr><td>无障碍连续与夜间可达</td><td>未知，不填造假基线</td><td>日/夜配对步行审计、照度/声音记录</td><td>暂停场景，给人工路线并公开修复</td></tr><tr><td>无 App 获得服务</td><td>未知，列入服务盘点</td><td>纸面、人工、语音、多语种路径测试</td><td>保留人工窗口，数字层不得成为前提</td></tr><tr><td>分组影响差异</td><td>未知，分组调查</td><td>老人、残障、照护、夜班、儿童、访客、小商户、维护人员参与</td><td>公开分歧，不以平均数掩盖差异</td></tr><tr><td>投诉与回应</td><td>未知，建立公共状态板</td><td>每案确认/修复时钟与责任人</td><td>7–14 日回应；无法修复则撤回</td></tr><tr><td>隐私与清权</td><td>仅最小数据、无个体轨迹</td><td>来源、授权、留存、哈希逐项核验</td><td>授权撤回/越权访问即熔断</td></tr></tbody></table></div>
 <p>参与原则是公开问题—给时间和渠道—返回决定及理由—记录异议—补救或退出。<code>public-interest-audit.json</code> 把这些要求变成可复核的指标和方法；它不把“待测”写成“已达标”。</p>
+<figure class="proposal-figure"><img src="../assets/figures/public-interest-positions.png" alt="八项公开取舍：公共利益先于展示效率"><figcaption>八项公开取舍：公共利益先于展示效率</figcaption></figure>
+<p>本方案不把“公共利益”写成无冲突的口号，而是明确八项不可偷偷调换的取舍：普通回家路径、技能连续、可解释服务、清凉安静、互惠参与、可维护资产、分组差异和可撤回扩散优先于展示效率、自动化增量、夜间流量、一次性装置和永久承诺。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/public-interest-position-register.json#PI-P01" title="空间数据：visual/assets/public-interest-position-register.json#PI-P01">空间数据</sup> 每一项都绑定空间锚点、场景、运维包、放行证据、非 AI 等价服务和退出条件；这表达作者的设计立场，不是居民调查、现场效果或专业批准。</p>
+<p>八项取舍覆盖当前 14 条场景、8 个运维行动包和 10 类公共使用者，但基线仍保持 <code>unknown</code>，运行状态仍为 <code>not_authorized_not_run</code>。<code>node visual/assets/run-open-pulse-public-interest-positions.js</code> 对 8 个取舍、14 个场景链接、8 个运维链接、受影响群体覆盖和证据文件存在性做确定性回读；PASS 只证明登记关系完整，不把概念取舍升级成社会共识或部署许可。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/public-interest-positions-audit.json#status" title="空间数据：visual/assets/public-interest-positions-audit.json#status">空间数据</sup></p>
 <h3>6. 迁移机制和长期运营</h3>
 <p>本方案比较六种可迁移机制，而不是无来源地宣称“全球案例”：站点公共客厅、有界城市实验室、蓝绿服务街、开发者公共库、夜间安静网络、文化作为方法。每种机制都列出可借鉴、不可照搬、京张测试接口和正式引用前的证据。四季运营为春季问题征集、夏季场景开放、秋季开发者周、冬季证据复盘；每一季的 RACI、清权、维护、投诉和退出记录必须进入公共知识库。它可被专业、运营和传播团队继续深化，但不代表活动已经获批或已获资金。</p>
 <p>v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维度均能回到一句可核验的话：目标/功能有映射，品牌有构造规则，区域有责任链，产业有测试门，场景有空间和感知路径，节点有闸门，公共性有基线计划，版权有逐路径证据，国际传播有双语入口，长期运营有 RACI/SLA 和退出。官方边界、控规、权属、市政、文保、交通、气象、雨洪和实测体验到位后，全部结果必须重算。</p>

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "33ed3f596d8e7a2f6d5807042b5bdf9b331f98309220702fd430f8bf21a63652"
+      "sha256": "a34337d52fc2a6c711079c021195fa53a5d8eea11e32f2ee4b46e562740ce874"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f9cdddb31913e9c41a82353ecde63fc81faeb4e5604754698e2e82ef1b03bf4b"
+      "sha256": "133987e6f17d9b155a1fc507db4d9ce37627c84c7c3fe26131126bf2cdccedb4"
     },
     {
       "path": "agent.json",
@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f6e61bd79148d158428cb991f4ee24d630c373552f490a4089b848e33a975bcc"
+      "sha256": "18dfbe1a49dd85823ae83250492f088fff47e5cd2221a328588ead08dea62673"
     },
     {
       "path": "assumptions.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4c719e2918d54a51b812015f0bac5677e44ef341bedf75f5ec5dc0bee587c0b5"
+      "sha256": "5628ca41a472388293bb8830ace80af098f3c625d2272560168f324896788b27"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7c73eb18d19266a63917f676c613fde5129f4b803c8eabeb94d0c85f4250f148"
+      "sha256": "6d218862462d55022a063022fbe0aa086a082ebd3594fc3115df16316963416c"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "c0d9fcafa128236402e11a232356e1dc59dce7ccb3884ad1eee930fec28b0b77"
+      "sha256": "09182b33e6879e78ab971f612d7c418c2a47cddefbd0276de68ba0440de42c20"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -152,7 +152,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "17d6d171572682f2b45e7e3b86f62748a5094d11c4743ddaeca42f0d22d64dc1"
+      "sha256": "0fb8668564335abe12bd4e94989b9fcb7b3cf1633fa1a4ac5637ca3ecbdb7b7b"
     },
     {
       "path": "visual/index.en.html",
@@ -670,6 +670,57 @@
       "language": "en",
       "translation_of": "assets/figures/city-api-energy-governance.svg",
       "sha256": "ec552145d7cf6b03511f6b299892694039886e939b31a54709863b016bba8b7a"
+    },
+    {
+      "path": "visual/assets/public-interest-position-register.json",
+      "role": "public_interest_position_register",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d6181175e89f2dbea3b0c6f28b6cb09b7b6380b126fda561d06256103eb194e7"
+    },
+    {
+      "path": "visual/assets/public-interest-positions-audit.json",
+      "role": "public_interest_positions_audit",
+      "required": true,
+      "language": "neutral",
+      "sha256": "68786825c43f33e65c204f71ee90dc333e5c01b9747d0344b8548ba5d6762f4e"
+    },
+    {
+      "path": "visual/assets/run-open-pulse-public-interest-positions.js",
+      "role": "public_interest_positions_runner",
+      "required": false,
+      "language": "neutral",
+      "sha256": "849b5123c600c5db36e71abe03e5ae3c32ee2886c371ccdd8accabccef405dcd"
+    },
+    {
+      "path": "assets/figures/public-interest-positions.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "0e49f5e24edc5261395733d3e50c9b7473da4c4963287f7fe4537c4626ca361c"
+    },
+    {
+      "path": "assets/figures/public-interest-positions.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/public-interest-positions.png",
+      "sha256": "8e748b49e47b8f8bec1b9f26296ce6b216f1278db174eaf21b68b3936092606c"
+    },
+    {
+      "path": "assets/figures/public-interest-positions.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "zh",
+      "sha256": "53b96ae5b167685e3bf84c77cab2cf8d237a62873e2a92ad26b5a61ae81430e5"
+    },
+    {
+      "path": "assets/figures/public-interest-positions.en.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/public-interest-positions.svg",
+      "sha256": "74352b80917362d2c8d18cf699f3ec589cbbb49de2566e4758bf19f27a4ad089"
     }
   ],
   "validation_claim": {
