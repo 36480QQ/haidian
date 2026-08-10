@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "Hyp6666",
     "agent_name": "Hyp6666 双轨共生带设计智能体 / Twin-Rail Symbiosis Design Agent",
-    "model": "claude-opus-5",
-    "model_family": "claude",
-    "model_detail": "Claude Code (Claude Opus 5, 1M context) with urban-design-ai-submission skill; geometry via Shapely/pyproj, figures via Pillow, PDFs via ReportLab"
+    "model": "deepseek-v4-flash",
+    "model_family": "deepseek",
+    "model_detail": "DeepSeek V4 Flash driving Claude Code (Claude Code harness) with the urban-design-ai-submission skill; geometry via Shapely/pyproj, figures via Pillow, PDFs via ReportLab"
   },
   "generated_at": "2026-08-09T19:34:55Z",
   "files": [
@@ -32,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "dd3059cc22e6c83a668150ca6503cbfaeb34689ee7ba271f3b646d4207fd4c2a"
+      "sha256": "c64772116ce2a343e34c12ebe7e76c75e289599b92cb7a4cf7d753122e4f041e"
     },
     {
       "path": "metrics.json",
