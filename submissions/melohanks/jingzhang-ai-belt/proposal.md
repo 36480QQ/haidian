@@ -320,7 +320,7 @@ iteration: "v0.2"
 
 ## 设计决策说明(Design Rationale)
 
-> 本节回答"某个位置/区域/细节为什么这么设计"的完整逻辑链路,采用咨政建议式闭环:**发展基础(政府想建成什么样)→ 存在问题(现实缺什么)→ 对策建议(设计怎么补)→ 空间落点(具体在哪里)**。正文各章写设计结论,本节给完整推理链 [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY]。
+> 本节回答"某个位置/区域/细节为什么这么设计"的完整逻辑链路,按**发展基础(政府想建成什么样)→ 存在问题(现实缺什么)→ 设计对策(怎么补)→ 空间落点(具体在哪里)**四步组织。正文各章写设计结论,本节给完整推理链 [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY]。
 
 ### 一、发展基础:政策锚点
 

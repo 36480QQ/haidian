@@ -319,7 +319,7 @@ The 36.1% green ratio and the 41.1% public-space ratio (blue-green plus plaza to
 
 ## Design Rationale
 
-> This section answers "why a location / area / detail is designed this way" with the complete reasoning chain, using an advisory-style closed loop: **development basis (what the government wants to build) → existing problems (what reality lacks) → countermeasure suggestions (how design fills the gap) → spatial placement (exactly where)**. The main text writes design conclusions; this section gives the full chain [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY].
+> This section answers "why a location / area / detail is designed this way" with the complete reasoning chain, organized in four steps: **development basis (what the government wants to build) → existing problems (what reality lacks) → design response (how to fill the gap) → spatial placement (exactly where)**. The main text writes design conclusions; this section gives the full chain [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY].
 
 ### 1. Development basis: policy anchors
 
