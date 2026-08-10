@@ -57,7 +57,7 @@
             "path": "self_check.json",
             "role": "self_check",
             "required": true,
-            "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+            "sha256": "ae5d2982e1eebc7057fa6822276d4b152713b9d94849c6d9bc9ccd47eacaf384"
         },
         {
             "path": "compliance_matrix.json",
@@ -297,9 +297,15 @@
         }
     ],
     "validation_claim": {
-        "self_checked": false,
-        "known_blockers": [],
-        "data_confidence": "high"
+        "readiness_contract": "persisted-self-check-v1",
+        "self_checked": true,
+        "checked_at": "2026-08-10T16:33:13Z",
+        "gates": {
+            "DETERMINISTIC_VALIDATION": "pass",
+            "SPATIAL_REVIEW": "pass",
+            "VISUAL_PACKAGING": "pass",
+            "PROFESSIONAL_EVIDENCE": "pass"
+        }
     },
     "sha256": "cf6194bcf4aea8c026195b70f5df1c1a4ec80fe474c2bfecc29a5254207d9131"
 }
