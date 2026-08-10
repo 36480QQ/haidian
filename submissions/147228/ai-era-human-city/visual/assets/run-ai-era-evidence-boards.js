@@ -31,6 +31,10 @@ const requiredFigures = [
 
 const errors = [];
 const expect = (condition, message) => { if (!condition) errors.push(message); };
+const pngDimensions = (buffer) => {
+  if (buffer.length < 24 || buffer.readUInt32BE(0) !== 0x89504e47 || buffer.readUInt32BE(4) !== 0x0d0a1a0a) return null;
+  return {width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20)};
+};
 expect(journey.route_bindings.length === 4, `route_bindings=${journey.route_bindings.length}, expected 4`);
 expect(journey.journey_steps.length === 5, `journey_steps=${journey.journey_steps.length}, expected 5`);
 expect(journey.rollback_steps.length === 5, `rollback_steps=${journey.rollback_steps.length}, expected 5`);
@@ -63,6 +67,14 @@ for (const [file, needles] of requiredFigures) {
   const svg = fs.readFileSync(target, "utf8");
   for (const needle of needles) expect(svg.includes(needle), `${file} is missing ${needle}`);
   expect(/not field performance|not_an_official/.test(svg), `${file} is missing its non-official-result boundary`);
+  expect(/viewBox="0 0 1600 1000"/.test(svg), `${file} must use the 1600x1000 review-board canvas`);
+  const pngFile = file.replace(/\.svg$/, ".png");
+  const pngPath = path.join(figureDir, pngFile);
+  expect(fs.existsSync(pngPath), `${pngFile} is missing`);
+  if (fs.existsSync(pngPath)) {
+    const dimensions = pngDimensions(fs.readFileSync(pngPath));
+    expect(dimensions && dimensions.width === 1600 && dimensions.height === 1000, `${pngFile} must be rasterized at 1600x1000`);
+  }
 }
 
 const result = {

@@ -98,14 +98,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "997d2e22cbd3c1afb8cce3efc583747a7c07066aca50ac507797c78e1e40ea09"
+      "sha256": "b4a91e7f0e5771750e048ebcc5a91c8fcedb325d253cf982cb0ed0394c606a26"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4109ef373ae010f10a8c72555fcff1be1afc02c40a52407e692c2b86c3886287"
+      "sha256": "b310951a62c584bd51bd876fe064115c180949b8955c17e7de7f3a6b5324a4d5"
     },
     {
       "path": "visual/index.html",
@@ -232,7 +232,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9ea56959a1fc3378aea8fc11e14c1dae1830344d01e15f58104f027d8088fc16"
+      "sha256": "2d7da4706f371242cd59a32a915e26b7c4c5f9c7947b97e05d395916bbfa6e09"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -240,7 +240,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "466cacfbc6053700bbc9536770b02c80c725ae1341f89e53fd5c835fba056fdb"
+      "sha256": "127e501da71c4728ed7467f8720d416c2fb3bd52af0033c2b880843746dc7248"
     },
     {
       "path": "visual/index.en.html",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e5635d03e47d6643b76d26aca4a98499cc9bf73c3866560634a2a3bcfcc158d3"
+      "sha256": "c4d95944ac36013ea90f7a1ac5f4ac853dbeb4230d3070bdee85094d4eaac063"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -449,7 +449,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ordinary-service-evidence-board.svg",
-      "sha256": "c819ffafc2a8178c0a0de46d5ff2e103b0b22d2b8df3782fa624261ccfad2ba8"
+      "sha256": "69d928c6410428b87573de270e6c74fefc944a406f43bcec37ea8a59d4ad34f5"
     },
     {
       "path": "assets/figures/scenario-coverage-board.svg",
@@ -464,14 +464,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scenario-coverage-board.svg",
-      "sha256": "11743cebcf0174ccde4359f074404a0d8f571d01304216d4023e141fe106e777"
+      "sha256": "39cbc440d2772d7b9397d29631112b7c5a3e571edeff26df43b764f218cbf1f4"
     },
     {
       "path": "assets/figures/implementation-gates-board.svg",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "a913efe7ffe87af0059a9b35a8f5e7a93f34fb96414da883e85e05fced9edfc3"
+      "sha256": "f70cd48c971b8f9fa6112efbeaea282f1942a9573935a3dd9990f8480681152f"
     },
     {
       "path": "assets/figures/implementation-gates-board.en.svg",
@@ -479,26 +479,26 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/implementation-gates-board.svg",
-      "sha256": "f5cce4df4ac6c58dcb5dd34a0779537687a1b108bf3d58dfdbb0e9a7ceb17b0b"
+      "sha256": "b781729add13aa290ad6716d0d4172a5c670db90c2be6dcc1356dc32617af523"
     },
     {
       "path": "visual/assets/build-ai-era-evidence-boards.js",
       "role": "generation_script",
       "required": false,
-      "sha256": "db8b0ed1ce34ce77ca943d2bbfdf21057ffeafb60be956975eddbb599e979506"
+      "sha256": "27f30d8c4a0c5b563082303cb1361ee711ca19c228fa063e18b825311f2efb75"
     },
     {
       "path": "visual/assets/run-ai-era-evidence-boards.js",
       "role": "validation_script",
       "required": false,
-      "sha256": "c0e3d8946924c181b9b8b53e04d3d401a03df7102c06985a0d6e3335f4b89d73"
+      "sha256": "a52dd2a777c41c8a4ba74adb542e506524daada8456bbec550ba22ca6b05bbc9"
     },
     {
       "path": "assets/figures/taskbook-culture-operations-board.svg",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "c3ab6027eb5c2fcc5195b79adf1fdc85f4329379f56a76c04ce7ac669a75b0a3"
+      "sha256": "2e962da827455cccfd99dbdb469504581cb94e856d2100c5695f681ffd7a2811"
     },
     {
       "path": "assets/figures/taskbook-culture-operations-board.en.svg",
@@ -506,14 +506,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/taskbook-culture-operations-board.svg",
-      "sha256": "e11aa1ae7f3bfc2932ca3f7089e1e22bf9a80e50f2e777e84e448c4fe8ac6458"
+      "sha256": "99e27e49198a3b52733e25b000a738a726b5060ecff890ce0170f8060234e325"
     },
     {
       "path": "assets/figures/taskbook-culture-operations-board.png",
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "af86d491e25167d6602c42dbea2da286ac84418a73b27234557ec62ea52acbc7"
+      "sha256": "99f0f6fbfd1cfd3215692c2c78cae7e4c3411afbb498dc96c547c8426c02a800"
     },
     {
       "path": "assets/figures/taskbook-culture-operations-board.en.png",
@@ -521,14 +521,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/taskbook-culture-operations-board.png",
-      "sha256": "b3fec75004fc8c616fb0148c55deabd0943c2bc94348fc2b8bdc10989be991dd"
+      "sha256": "2839dd7dc1ae2f513e64c5c89c0e0e997b6258261e7126480f5f4a4173b89dac"
     },
     {
       "path": "assets/figures/implementation-gates-board.png",
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "5446fc921827e3f6f38b8a006096b302e0eb624077d4e6016ff688f4f485cd59"
+      "sha256": "e4f4b8e2897a3a82d8e0928163a39fe706278c0b513c39d0a9fc6bbf991283cc"
     },
     {
       "path": "assets/figures/implementation-gates-board.en.png",
@@ -536,14 +536,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/implementation-gates-board.png",
-      "sha256": "5f25c6f47fa4948b1c2612d1aa21eaf1ec35fbee026ac9bc73c6597ed8cb39bd"
+      "sha256": "a482a83ce4b6fa3032bbe38f17f0a0a6a52462e5ade9f5db39f1c6a1d501d51d"
     },
     {
       "path": "assets/figures/ordinary-service-evidence-board.png",
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "e65319832d011a51c2d760f1d1f3057129c2c6a2a0d28cdbde01f6e22858d533"
+      "sha256": "57b314978ff5cbee02a166fe78f1d6496aa7b091e3c9425a0ffa7e4cb968a74a"
     },
     {
       "path": "assets/figures/ordinary-service-evidence-board.en.png",
@@ -551,14 +551,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ordinary-service-evidence-board.png",
-      "sha256": "7b6ae69440fbfd34ce0a7f61425aa33715cdd5efb704307db85699f657e9e662"
+      "sha256": "835b6d9dd3b8b1d2b61539f37501ef0c9d8e537844055b16fc5c69f60dc13c33"
     },
     {
       "path": "assets/figures/scenario-coverage-board.png",
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "82bf8ec5e9d3de652154d2c927ffc0aad3554ad1d187ed7f8f6d22a753891d22"
+      "sha256": "1f6c82a50990b6beab888732a03b44a57a2fec6de9fb6eb033cfd08a94f551d5"
     },
     {
       "path": "assets/figures/scenario-coverage-board.en.png",
@@ -566,7 +566,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/scenario-coverage-board.png",
-      "sha256": "f311d6bc0591653e15fa1fa3ec50f2b8d319a960f0e360c3d4fe3e8a59df6bfb"
+      "sha256": "e5a4b7d769a0b62a98f7718f55729b362d49f93be9252625f1f344eefeec49b2"
     },
     {
       "path": "assets/figures/spatial-interface-nodes.png",

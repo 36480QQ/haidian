@@ -66,6 +66,48 @@ const esc = (value) => String(value)
 
 const wrap = (value, width) => {
   const raw = String(value);
+  // Treat CJK characters as visual units instead of whitespace-delimited
+  // words.  Otherwise a mixed Chinese/ASCII sentence can remain one very
+  // long token and overflow the SVG column even when a character budget was
+  // supplied by the board layout.
+  if (/[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]/.test(raw)) {
+    const lines = [];
+    let line = "";
+    let units = 0;
+    let pendingSpace = false;
+    const isWide = (character) => /[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]/.test(character);
+    const flush = () => {
+      if (line) lines.push(line.trim());
+      line = "";
+      units = 0;
+      pendingSpace = false;
+    };
+    const tokens = raw.match(/[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]|[^\u3400-\u9fff\u3000-\u303f\uff00-\uffef\s]+|\s+/g) || [];
+    for (const token of tokens) {
+      if (/^\s+$/.test(token)) {
+        pendingSpace = Boolean(line);
+        continue;
+      }
+      const tokenUnits = [...token].reduce((total, character) => total + (isWide(character) ? 1 : 0.58), 0);
+      const prefix = pendingSpace && line ? " " : "";
+      if (line && units + prefix.length * 0.58 + tokenUnits > width) flush();
+      if (tokenUnits <= width) {
+        line += (pendingSpace && line ? " " : "") + token;
+        units += (pendingSpace && line ? 0 : 0) + tokenUnits;
+        pendingSpace = false;
+        continue;
+      }
+      for (const character of token) {
+        const cost = isWide(character) ? 1 : 0.58;
+        if (line && units + cost > width) flush();
+        line += character;
+        units += cost;
+      }
+      pendingSpace = false;
+    }
+    flush();
+    return lines.length ? lines : [""];
+  }
   if (!/\s/.test(raw) && raw.length > width) {
     const lines = [];
     for (let i = 0; i < raw.length; i += width) lines.push(raw.slice(i, i + width));
@@ -104,8 +146,8 @@ const start = (title, subtitle, lang) => [
   `<desc id="desc">${esc(subtitle)} The board is generated from local JSON contracts; it is not field performance, authorization, or an official score.</desc>`,
   `<rect width="1600" height="1000" fill="#f5f7fb"/>`,
   rect(0, 0, 1600, 124, "#152442", "none", 0),
-  text(64, 61, title, {size: 42, fill: "#ffffff", weight: 700, width: 64, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"}),
-  text(66, 99, subtitle, {size: 21, fill: "#c8d5ec", width: 112, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"})
+  text(64, 61, title, {size: lang === "zh" ? 42 : 31, fill: "#ffffff", weight: 700, width: lang === "zh" ? 64 : 96, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"}),
+  text(66, 99, subtitle, {size: lang === "zh" ? 21 : 16, lineHeight: lang === "zh" ? 28 : 20, fill: "#c8d5ec", width: lang === "zh" ? 112 : 150, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"})
 ];
 
 function ordinaryBoard(lang) {
@@ -182,23 +224,24 @@ function implementationBoard(lang) {
     lang
   );
   const heads = zh ? ["项目族", "G0 / G1 时间门", "验收焦点", "退出动作"] : ["Project family", "G0 / G1 gate", "Acceptance focus", "Exit action"];
-  const x = [70, 430, 780, 1120];
+  const x = [70, 405, 745, 1065];
+  const columnWidths = zh ? [17, 18, 17, 20] : [24, 23, 21, 25];
   out.push(rect(60, 150, 1480, 62, "#eaf2ff", "#c9d8ed", 10));
-  heads.forEach((h, i) => out.push(text(x[i] + 14, 188, h, {size: 22, weight: 700, width: i === 0 ? 24 : 28})));
+  heads.forEach((h, i) => out.push(text(x[i] + 14, 188, h, {size: 20, weight: 700, width: columnWidths[i]})));
   implementation.project_families.forEach((family, i) => {
     const y = 224 + i * 116;
     const name = (zh ? zhFamilyNames : enFamilyNames)[family.family_id];
     out.push(rect(60, y, 1480, 98, i % 2 ? "#ffffff" : "#f8fbff", "#d0d9e8", 10));
-    out.push(text(x[0] + 14, y + 30, `${family.family_id}  ${name}`, {size: 19, weight: 700, width: 27}));
-    out.push(text(x[1] + 14, y + 30, family.time_gate, {size: 18, fill: "#36506f", width: 24}));
-    out.push(text(x[2] + 14, y + 30, family.acceptance_metrics, {size: 18, fill: "#36506f", width: 24}));
-    out.push(text(x[3] + 14, y + 30, family.exit_protocol, {size: 18, fill: "#7f3f32", width: 25}));
+    out.push(text(x[0] + 14, y + 30, `${family.family_id}  ${name}`, {size: 17, weight: 700, width: columnWidths[0], lineHeight: 21}));
+    out.push(text(x[1] + 14, y + 30, family.time_gate, {size: zh ? 16 : 15, lineHeight: 20, fill: "#36506f", width: columnWidths[1]}));
+    out.push(text(x[2] + 14, y + 30, family.acceptance_metrics, {size: zh ? 16 : 15, lineHeight: 20, fill: "#36506f", width: columnWidths[2]}));
+    out.push(text(x[3] + 14, y + 30, family.exit_protocol, {size: zh ? 16 : 15, lineHeight: 20, fill: "#7f3f32", width: columnWidths[3]}));
   });
   out.push(rect(60, 850, 1480, 78, "#fff6dc", "#e4a735", 10));
   out.push(text(82, 884, zh
     ? "公共服务顺序：先公开问题与人工入口，再做授权/专业复核；任何责任、证据、权利或安全门缺失，保持 G0、冻结或退出。"
     : "Public-service order: publish the problem and human route first, then authorize and review professionally; any missing responsibility, evidence, rights or safety gate keeps G0, freezes or exits.",
-    {size: 20, fill: "#6a4b00", width: 118}));
+    {size: zh ? 18 : 16, lineHeight: zh ? 23 : 20, fill: "#6a4b00", width: zh ? 78 : 118}));
   out.push("</svg>");
   return out.join("\n");
 }
@@ -231,11 +274,11 @@ function taskbookCultureBoard(lang) {
     const x = 64 + i * 494;
     out.push(rect(x, 160, 466, 220, "#ffffff", "#cdd9e8", 16));
     out.push(rect(x, 160, 466, 12, colors[i], "none", 16));
-    out.push(text(x + 24, 210, title[i], {size: 26, weight: 700, width: 25}));
-    out.push(text(x + 24, 260, body[i], {size: 21, fill: "#36506f", width: zh ? 21 : 29, lineHeight: 30}));
-    out.push(text(x + 24, 344, refs[i], {size: 17, fill: "#6a4b00", width: 35, lineHeight: 24}));
+    out.push(text(x + 24, 210, title[i], {size: zh ? 26 : 20, weight: 700, width: zh ? 15 : 36, lineHeight: zh ? 31 : 24}));
+    out.push(text(x + 24, zh ? 260 : 252, body[i], {size: zh ? 21 : 16, fill: "#36506f", width: zh ? 18 : 34, lineHeight: zh ? 30 : 22}));
+    out.push(text(x + 24, zh ? 344 : 342, refs[i], {size: zh ? 17 : 14, fill: "#6a4b00", width: zh ? 23 : 42, lineHeight: zh ? 24 : 20}));
   }
-  out.push(text(64, 438, zh ? "四季运营节奏：把版本治理变成可见的公共时间" : "Four-season rhythm: make version governance visible in public time", {size: 25, weight: 700, width: 78}));
+  out.push(text(64, 438, zh ? "四季运营节奏：把版本治理变成可见的公共时间" : "Four-season rhythm: make version governance visible in public time", {size: zh ? 25 : 20, weight: 700, width: zh ? 78 : 110}));
   const seasonsZh = ["春｜公共问题发布周", "夏｜小月河共学走读", "秋｜开发者协议营", "冬｜城市 v0.x 体检"];
   const seasonsEn = ["Spring | Public Problem Week", "Summer | Xiaoyue River Walk", "Autumn | Developer Protocol Camp", "Winter | City v0.x Check"];
   const mechanismsZh = ["问题、资料边界、人工问答", "老人/劳动者/无障碍观察席", "授权、退出、可解释 G0 协议", "保留、暂停、修订与待补数据"];
@@ -243,22 +286,22 @@ function taskbookCultureBoard(lang) {
   for (let i = 0; i < 4; i += 1) {
     const x = 64 + i * 370;
     out.push(rect(x, 470, 342, 134, i % 2 ? "#f7fbff" : "#fdf8ec", "#d3deeb", 12));
-    out.push(text(x + 18, 510, (zh ? seasonsZh : seasonsEn)[i], {size: 20, weight: 700, width: 22}));
-    out.push(text(x + 18, 550, (zh ? mechanismsZh : mechanismsEn)[i], {size: 17, fill: "#36506f", width: 25, lineHeight: 24}));
+    out.push(text(x + 18, 510, (zh ? seasonsZh : seasonsEn)[i], {size: zh ? 20 : 16, weight: 700, width: zh ? 22 : 30, lineHeight: zh ? 24 : 19}));
+    out.push(text(x + 18, zh ? 550 : 545, (zh ? mechanismsZh : mechanismsEn)[i], {size: zh ? 17 : 14, fill: "#36506f", width: zh ? 25 : 30, lineHeight: zh ? 24 : 20}));
   }
-  out.push(text(64, 660, zh ? "五个概念项目族：空间承接 → G0 门 → 专业复核 → 可撤回 release" : "Five conceptual families: spatial carrier → G0 gate → professional review → reversible release", {size: 23, weight: 700, width: 78}));
+  out.push(text(64, 660, zh ? "五个概念项目族：空间承接 → G0 门 → 专业复核 → 可撤回 release" : "Five conceptual families: spatial carrier → G0 gate → professional review → reversible release", {size: zh ? 23 : 19, weight: 700, width: zh ? 78 : 120, lineHeight: zh ? 28 : 23}));
   implementation.project_families.forEach((family, i) => {
     const x = 64 + i * 296;
     const name = (zh ? zhFamilyNames : enFamilyNames)[family.family_id];
     out.push(rect(x, 700, 270, 112, i % 2 ? "#ffffff" : "#f8fbff", "#d3deeb", 10));
     out.push(text(x + 16, 736, family.family_id, {size: 20, weight: 700, fill: colors[i % colors.length], width: 8}));
-    out.push(text(x + 16, 770, name, {size: 17, fill: "#36506f", width: 22, lineHeight: 23}));
+    out.push(text(x + 16, zh ? 770 : 755, name, {size: zh ? 17 : 13, fill: "#36506f", width: zh ? 14 : 32, lineHeight: zh ? 23 : 17}));
   });
   out.push(rect(64, 864, 1472, 62, "#fff6dc", "#e4a735", 10));
   out.push(text(86, 902, zh
     ? "图面只回读本包 JSON 与任务书关系；不构成官方评分、活动确定、运营主体、文化许可、企业合作或现场结果。"
     : "This board resolves only package JSON and taskbook relations; it is not an official score, confirmed event, operator, heritage permit, partnership or field result.",
-    {size: 19, fill: "#6a4b00", width: 122}));
+    {size: zh ? 19 : 16, lineHeight: zh ? 26 : 20, fill: "#6a4b00", width: zh ? 122 : 120}));
   out.push("</svg>");
   return out.join("\n");
 }
