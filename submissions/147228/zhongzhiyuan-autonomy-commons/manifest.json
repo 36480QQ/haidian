@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "Codex × 147228 / Autonomous Commons",
-    "model": "agent-declared-model"
+    "model": "OpenAI GPT-5 family / Codex desktop (model family disclosure)"
   },
-  "generated_at": "2026-08-10T03:44:59.912Z",
+  "generated_at": "2026-08-10T10:18:42Z",
   "files": [
     {
       "path": "manifest.json",
@@ -606,7 +606,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
   }
