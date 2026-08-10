@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-10
+
+- 从既有 ordinary journey、traceability 与 implementation JSON 合约生成三张双语审阅图板，分别覆盖 5 步任务链、5 步回退、6 项验收、10 张场景卡和 5 个概念项目族的 G0/G1 门。
+- 新增 `build-ai-era-evidence-boards.js` 与 `run-ai-era-evidence-boards.js`；生成器和校验器均为本地、可复现、包内数据驱动，并显式保留 `not_an_official`、`result_status=not_run` 与 G0 边界。
+- 同步中英文 proposal、HTML 看板、manifest 与权利台账；图板只改善评审可读性，不新增现场绩效、许可、授权、部署或官方评分结论。
+
 ## v1.0 - 2026-08-10
 
 - 在中英文设计依据入口前置六层“证据等级与公共任务边界”表，区分 formal 任务/标准、来源分级、临时空间、包内派生证据、背景方法和合成回放。

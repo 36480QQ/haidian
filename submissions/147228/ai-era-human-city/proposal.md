@@ -113,6 +113,8 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 ![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.svg)
 
+为降低评审从概念叙事跳到结构化附件的成本，本轮新增三张由包内 JSON 合约直接生成的双语审阅图板：普通人任务链与停止回路、十张场景卡的任务书—空间—回放覆盖、五个概念项目族的 G0/G1 门与退出动作。它们只是已有字段的可视化索引，不新增现场绩效、授权、许可、部署或官方评分结论；图板中的 `result_status=not_run` 与 `not_an_official` 边界应与原始 JSON 一并阅读。[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 六类画像使抽象生态落到谁在使用、谁承担风险，原住民与老人、被替代风险劳动者、夜班 AI 从业者、小商户与一人公司、开发者与研究者、行动不便者与照护者。每类画像都有非谈判边界，人工服务、可解释、可拒绝、可申诉、可退出与不依赖设备的替代路径；居民/老人、劳动者、无障碍使用者和开发者至少各有一个可见观察席。[source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
@@ -202,7 +204,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 ## 指标体系、面积复算与合规矩阵
 
-所有已知空间值在 EPSG:4548 下由提交 GeoJSON 重新计算，且只在最终格式化时四舍五入一次，临时范围 11,412,825.386 平方米、绿地概念层 879,519.159 平方米、公共空间概念层 123,473.537 平方米；七个共享边界的用地多边形覆盖率为 1.000000。此前绿地值的 0.464 平方米不一致已通过统一当前算法、舍入规则和 metric-recalculation-audit.json 消除，主文、五图、HTML 和图册使用同一数值格式器。[data:geometry/land_use.geojson#LAND-05] [metric:land_use_coverage_ratio] [depth:metrics_recalculation]
+所有已知空间值在 EPSG:4548 下由提交 GeoJSON 重新计算，且只在最终格式化时四舍五入一次，临时范围 11,412,825.386 平方米、绿地概念层 879,519.159 平方米、公共空间概念层 123,473.537 平方米；七个共享边界的用地多边形覆盖率为 1.000000。此前绿地值的 0.464 平方米不一致已通过统一当前算法、舍入规则和 metric-recalculation-audit.json 消除，主文、五张主地图、三张审阅图板、HTML 和图册使用同一数值格式器。[data:geometry/land_use.geojson#LAND-05] [metric:land_use_coverage_ratio] [depth:metrics_recalculation]
 
 compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agent.6，且已按任务书原名映射 agent.4 AI 公共空间/地标、agent.5 文化叙事、agent.6 全球活动/长期运营；standard_matrix.json 覆盖本地快照中的全部强制标准；design_depth_matrix.json 的要求项均为 complete，但 complete 仅指概念性证据链完整，不等于现场或审批完成。每个 metric 均含 status、value、unit、source_files、formula、confidence、assumptions。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:scenario_card_count] [depth:compliance_and_standard_response]
 
@@ -210,7 +212,7 @@ compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agen
 
 第一风险是边界与基础资料缺口，故任何读者不得以本包申请许可、评估权属、认定法定面积或得出工程结论。第二风险是数据与算法权力，故每张场景卡都有最小必要、人工复核、申诉和退出；无授权就不接入。第三风险是文化、交通、气候与能源条件，故历史资源、路权、空域、水文、热网和安全资料均被写成下一步核验，不由图面替代。第四风险是来源升级，故未登记背景资料在 sources.json 明确禁止 formal 使用。[source:SOURCE-REGISTRY] [data:geometry/constraints.geojson#SCN-09] [depth:risk_missing_data]
 
-权利台账逐资产记录文字、概念 geometry、PNG/PDF、SVG、HTML、外部短引用和字体处理。本投稿不含第三方照片、地图瓦片、人物、企业标识、远程脚本、远程字体或追踪；五图与 PDF 由本地 Python/Pillow 从结构化本包生成，PDF 为栅格页而不嵌入字体文件。HTML 有语义结构、alt、焦点样式和手工对比检查；PDF 的结构化标签/阅读树仍是公开发布前应由专业排版补齐的限制，而非虚报已达标。[source:AGENT-TASKBOOK] [depth:copyright_and_accessibility]
+权利台账逐资产记录文字、概念 geometry、PNG/PDF、SVG、HTML、外部短引用和字体处理。本投稿不含第三方照片、地图瓦片、人物、企业标识、远程脚本、远程字体或追踪；五张主地图、三张审阅图板与 PDF 由本地脚本从结构化本包生成，PDF 为栅格页而不嵌入字体文件。HTML 有语义结构、alt、焦点样式和手工对比检查；PDF 的结构化标签/阅读树仍是公开发布前应由专业排版补齐的限制，而非虚报已达标。[source:AGENT-TASKBOOK] [depth:copyright_and_accessibility]
 
 ## 参考资料
 
@@ -223,3 +225,6 @@ compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agen
 ![图 03 重点区域，三处公共空间、地标、场景关系](assets/figures/key-areas.png)
 ![图 04 交通与蓝绿，人优先、小月河韧性与 G0 规则](assets/figures/mobility-bluegreen.png)
 ![图 05 指标与证据，面积复算、场景门槛和版本化治理](assets/figures/metrics-evidence.png)
+![图 07 普通人任务链与停止回路](assets/figures/ordinary-service-evidence-board.svg)
+![图 08 十张场景卡的任务书—空间—回放覆盖](assets/figures/scenario-coverage-board.svg)
+![图 09 五个概念项目族的 G0/G1 门与退出动作](assets/figures/implementation-gates-board.svg)
