@@ -76,7 +76,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/public_space.geojson",
-      "message": "Found 12 SCENARIO_NODE points; the requirement is at least 10 and the proposal declares 12."
+      "message": "Found 12 application_scenario points; the requirement is at least 10 and the proposal declares 12."
     },
     {
       "check_id": "INDUSTRY_TEST_COUNT",
@@ -104,7 +104,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/public_space.geojson",
-      "message": "Every scenario node declares protocol interfaces and the union covers I1-I7."
+      "message": "Every application scenario declares protocol interfaces and the union covers I1-I7."
     },
     {
       "check_id": "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE",
@@ -142,6 +142,48 @@
       "message": "The scenario registry contains 25 unique, non-demographic testing personas; the requirement is at least five user types."
     },
     {
+      "check_id": "APPLICATION_SCENARIO_REGISTRY_STABLE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/public_space.geojson; metrics.json",
+      "message": "Exactly 12 application_scenario features retain S01-S12 semantics; the 13 V0.6 support nodes are excluded from all existing application-scenario metrics."
+    },
+    {
+      "check_id": "V06_CONCEPT_FEATURE_STATUS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/public_space.geojson",
+      "message": "All 16 V0.6 room/interface/journey/return features are uniquely identified agent-generated conceptual designs with provisional, non-statutory and non-operational status."
+    },
+    {
+      "check_id": "PROTOCOL_STREET_ROOM_INTEGRITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/public_space.geojson; geometry/site_boundary.geojson; geometry/key_areas.geojson; metrics.json",
+      "message": "Three non-overlapping nested protocol street rooms resolve to their parent public spaces and provisional key areas; public-space union delta=0.000000 sqm, so nested rooms are not double-counted."
+    },
+    {
+      "check_id": "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/public_space.geojson; geometry/site_boundary.geojson; metrics.json",
+      "message": "Seven unique interface prototype nodes map one-to-one to I1-I7 and resolve to rooms, carriers, hosts, phases and provisional key areas."
+    },
+    {
+      "check_id": "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/public_space.geojson; metrics.json",
+      "message": "J01-J03 are reference-complete conceptual audit journeys with personas, ordered stops, application scenarios, routes, rooms and capacity-return nodes; no observed trip or service performance is claimed."
+    },
+    {
+      "check_id": "RETURN_TICKET_REFERENCE_INTEGRITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/public_space.geojson; metrics.json",
+      "message": "Three Return Ticket nodes form a reference-complete conceptual registry for all 12 application scenarios; no operational completion, remedy outcome or delivered public capacity is claimed."
+    },
+    {
       "check_id": "PHASING_TOPOLOGY",
       "result": "pass",
       "severity": "major",
@@ -160,7 +202,7 @@
       "result": "pass",
       "severity": "major",
       "target": "metrics.json; geometry/*.geojson",
-      "message": "All recomputable V0.3 spatial metrics match the current EPSG:4548 geometry."
+      "message": "All recomputable V0.6 spatial and registry metrics match the current EPSG:4548 geometry."
     },
     {
       "check_id": "CONTROL_METRICS_UNKNOWN",
@@ -216,7 +258,7 @@
       "result": "pass",
       "severity": "major",
       "target": "compliance_matrix.json; standard_matrix.json; design_depth_matrix.json",
-      "message": "Every referenced metric, assumption, source, self-check ID, geometry file, and proposal section exists at generation time."
+      "message": "Every referenced metric, assumption, source, self-check ID, GeoJSON feature ID, geometry file, and proposal section exists at generation time."
     },
     {
       "check_id": "OPEN_ASSUMPTION_COVERAGE",

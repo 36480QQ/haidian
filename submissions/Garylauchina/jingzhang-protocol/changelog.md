@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-10
+
+- Kept **The Jing-Zhang Protocol / 京张协议** as the formal backstage civic-protocol system and introduced **The Return Ticket / 京张回程票** as its public-facing concept, with the rule “No return path, no civic departure.”
+- Clarified the seven minimum interfaces and the two-layer architecture: the AI City API as a federated machine/operations interoperability contract, and the Jing-Zhang AI Constitution as a versioned civic compact for rights, evidence, appeals, amendment and public memory.
+- Spatialized the public sequence as three nested protocol-street-room polygons: `ROOM-BUILD-001` / Protocol Ticket-Issuing Room in `PUBLIC-BUILD-002`, `ROOM-TEST-001` / Protocol Ticket-Checking Room in `PUBLIC-TEST-001`, and `ROOM-LIVE-001` / Protocol Return Room in `PUBLIC-LIVE-001`.
+- Added seven resolvable interface prototypes, `INTERFACE-I1` through `INTERFACE-I7`, each with an accountable service commitment and a rule for replicating the complete seven-interface kit across the three rooms.
+- Added three concept human-journey anchors: `JOURNEY-J01` for a wheelchair user without a smartphone, `JOURNEY-J02` for small-business/creator dispute and human remedy, and `JOURNEY-J03` for maintainer pause, retest and retirement.
+- Added `RETURN-BUILD-001`, `RETURN-TEST-001` and `RETURN-LIVE-001` and a six-step civic-capability return mechanism. All twelve application scenarios now reciprocally reference a street room, journey and capacity-return node.
+- Added six reproducible protocol metrics: `protocol_street_room_count`, `human_journey_count`, `protocol_interface_entity_count`, `capacity_return_node_count`, `return_ticket_reference_coverage_ratio` and `protocol_interface_entity_coverage_ratio`.
+- Preserved the provisional V0.3 SITE/KEY shapes, 3×4 land-use topology and area denominator. Nested-room union accounting adds zero public-space area; interface, journey and return points are concept indices rather than confirmed siting.
+- Integrated the V0.6 concept across paired narrative, spatial evidence, metrics, audit matrices and bilingual exhibits as one complete review package. No remote push or formal PR is authorized without the user’s final confirmation.
+
 ## v0.5 - 2026-08-10
 
 - Fetched `upstream/main` at `2cbbe23` and confirmed that the official Skill, brief, schemas, source registry and validator inputs used by this package had not changed since the current branch base.

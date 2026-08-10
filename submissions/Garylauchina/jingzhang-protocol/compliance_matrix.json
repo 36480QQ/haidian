@@ -136,7 +136,10 @@
         "slow_mobility_length_m",
         "scenario_node_count",
         "persona_count",
-        "landmark_count"
+        "landmark_count",
+        "human_journey_count",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -154,15 +157,30 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-KEYAREA-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PERSONA_COUNT",
         "SCENARIO_NODE_COUNT",
         "BLUEGREEN_INSIDE_SITE",
-        "LANDMARK_COUNT"
+        "LANDMARK_COUNT",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "五类用户画像与可达公共空间、绿色网络、场景节点和三处地标共同回应工作—生活—社交—学习需求。"
+      "evidence_summary_zh": "五类用户画像与可达公共空间、绿色网络、场景节点和三处地标共同回应工作—生活—社交—学习需求；面向人才与居民的高品质城区目标由无手机服务、争议补救和维护退役三条概念旅程进行权利测试。",
+      "geojson_feature_ids": [
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
+      ]
     },
     {
       "requirement_id": "1.4.1",
@@ -375,7 +393,10 @@
         "green_space_area_sqm",
         "public_space_area_sqm",
         "road_centerline_length_m",
-        "scenario_node_count"
+        "scenario_node_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -395,15 +416,30 @@
         "A-LANDUSE-001",
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "LAND_USE_FULL_COVERAGE",
         "ROAD_INSIDE_SITE",
         "BLUEGREEN_INSIDE_SITE",
-        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE"
+        "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY"
       ],
-      "evidence_summary_zh": "把AI工作、生活、交通和公共服务落实为概念用地、慢行网络、公共空间与场景点位，同时声明其非审批方案属性。"
+      "evidence_summary_zh": "把AI工作、生活、交通和公共服务落实为概念用地、慢行网络、公共空间与场景点位，同时声明其非审批方案属性；未来城市形态研究新增三处公共协议街室与七类服务职责实体，均依附临时载体而非新增法定设施。",
+      "geojson_feature_ids": [
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
+      ]
     },
     {
       "requirement_id": "1.5.2.1",
@@ -675,7 +711,13 @@
         "scenario_node_count",
         "concept_building_envelope_count",
         "phase_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -695,19 +737,42 @@
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
         "BUILDING_CONCEPT_ONLY",
-        "PHASING_TOPOLOGY"
+        "PHASING_TOPOLOGY",
+        "APPLICATION_SCENARIO_REGISTRY_STABLE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化。",
+      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化；三片区详细设计各含街室、人物旅程和能力返还节点，全部保留临时边界、概念选址和非运营状态。",
       "geojson_feature_ids": [
         "PROV-KEY-001",
         "PROV-KEY-002",
-        "PROV-KEY-003"
+        "PROV-KEY-003",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
       ]
     },
     {
@@ -733,7 +798,11 @@
         "land_use_0802_area_sqm",
         "industry_validation_scenario_count",
         "green_space_area_sqm",
-        "phase_2_area_sqm"
+        "phase_2_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -752,21 +821,31 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-EXISTING-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "INDUSTRY_TEST_COUNT",
         "BUILDING_CONCEPT_ONLY",
-        "PHASING_STAGE_SEMANTICS"
+        "PHASING_STAGE_SEMANTICS",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "众智园以科研用地、三项产业测试验证、清河—京张绿脊和BUILD功能包络为主证据；点位和阶段仍是片区级概念。",
+      "evidence_summary_zh": "众智园以科研用地、三项产业测试验证、清河—京张绿脊和BUILD功能包络为主证据；点位和阶段仍是片区级概念；众智园以协议制票室、I1/I3原型、维护人员暂停退役旅程及BUILD能力返还台形成概念闭环。",
       "geojson_feature_ids": [
         "PROV-KEY-001",
         "SCENARIO-S01",
         "SCENARIO-S02",
         "BLDG-BUILD-001",
-        "BLDG-BUILD-002"
+        "BLDG-BUILD-002",
+        "INTERFACE-I1",
+        "INTERFACE-I3",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "ROOM-BUILD-001"
       ]
     },
     {
@@ -791,7 +870,11 @@
         "land_use_0804_area_sqm",
         "land_use_0702_area_sqm",
         "land_use_1403_area_sqm",
-        "phase_2_area_sqm"
+        "phase_2_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -811,21 +894,32 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-EXISTING-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "PERSONA_COUNT",
         "SCENARIO_PROTOCOL_INTERFACE_COVERAGE",
-        "PHASING_STAGE_SEMANTICS"
+        "PHASING_STAGE_SEMANTICS",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "原点社区以教育科研、社区服务、公民测试广场、协议零号站和人工复核服务包络回应近校成果转化与公众共创。",
+      "evidence_summary_zh": "原点社区以教育科研、社区服务、公民测试广场、协议零号站和人工复核服务包络回应近校成果转化与公众共创；AI原点社区以协议验票室、I2/I4/I5原型、无手机服务旅程及TEST能力返还台检验人工接管与可申诉性。",
       "geojson_feature_ids": [
         "PROV-KEY-002",
         "SCENARIO-S03",
         "SCENARIO-S04",
         "BLDG-TEST-001",
-        "BLDG-TEST-002"
+        "BLDG-TEST-002",
+        "INTERFACE-I2",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "JOURNEY-J01",
+        "RETURN-TEST-001",
+        "ROOM-TEST-001"
       ]
     },
     {
@@ -853,7 +947,11 @@
         "land_use_0803_area_sqm",
         "land_use_1401_area_sqm",
         "landmark_count",
-        "phase_3_area_sqm"
+        "phase_3_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -874,22 +972,32 @@
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-TRANSPORT-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "LANDMARK_COUNT",
         "ROAD_INSIDE_SITE",
-        "PHASING_STAGE_SEMANTICS"
+        "PHASING_STAGE_SEMANTICS",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "大钟寺以商业服务、文化展示、公共绿廊、城市客厅和LIVE场景回应智能原生消费与国际交往，站城工程仍待专业核验。",
+      "evidence_summary_zh": "大钟寺以商业服务、文化展示、公共绿廊、城市客厅和LIVE场景回应智能原生消费与国际交往，站城工程仍待专业核验；大钟寺以协议回程室、I6/I7原型、小店AI争议补救旅程及LIVE能力返还台连接商业服务与公共记忆。",
       "geojson_feature_ids": [
         "PROV-KEY-003",
         "SCENARIO-S09",
         "SCENARIO-S11",
         "SCENARIO-S12",
         "BLDG-LIVE-001",
-        "BLDG-LIVE-002"
+        "BLDG-LIVE-002",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J02",
+        "RETURN-LIVE-001",
+        "ROOM-LIVE-001"
       ]
     },
     {
@@ -912,7 +1020,10 @@
         "protocol_interface_count",
         "landmark_count",
         "phase_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -929,15 +1040,31 @@
       ],
       "assumption_ids": [
         "A-KEYAREA-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "PROTOCOL_INTERFACE_COUNT",
         "LANDMARK_COUNT",
-        "PHASING_TOPOLOGY"
+        "PHASING_TOPOLOGY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "京张协议名称、BUILD—TEST—LIVE—LEARN/UPDATE结构、七类接口与三区两翼空间索引共同构成总体概念，而非另设法定分区。"
+      "evidence_summary_zh": "京张协议名称、BUILD—TEST—LIVE—LEARN/UPDATE结构、七类接口与三区两翼空间索引共同构成总体概念，而非另设法定分区；V0.6以三间协议街室和I1-I7实体节点把总体协议概念落到可核验但非官方的空间原型。",
+      "geojson_feature_ids": [
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
+      ]
     },
     {
       "requirement_id": "agent.2",
@@ -1015,7 +1142,13 @@
         "scenario_phase_assignment_coverage_ratio",
         "protocol_interface_count",
         "public_space_ratio",
-        "green_ratio"
+        "green_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1038,7 +1171,8 @@
         "A-SCENARIO-LOCATION-001",
         "A-PHASING-001",
         "A-OPERATIONS-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "SCENARIO_NODE_COUNT",
@@ -1046,9 +1180,15 @@
         "PERSONA_COUNT",
         "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
         "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE"
+        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE",
+        "APPLICATION_SCENARIO_REGISTRY_STABLE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环。",
+      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；V0.6将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -1061,7 +1201,23 @@
         "SCENARIO-S09",
         "SCENARIO-S10",
         "SCENARIO-S11",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
       ]
     },
     {
@@ -1083,7 +1239,11 @@
         "public_space_ratio",
         "green_space_area_sqm",
         "green_ratio",
-        "landmark_count"
+        "landmark_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1101,22 +1261,40 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-HERITAGE-001",
-        "A-EXISTING-001"
+        "A-EXISTING-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "BLUEGREEN_INSIDE_SITE",
         "LANDMARK_COUNT",
         "HERITAGE_LIMIT_DISCLOSED",
-        "BUILDING_LANDUSE_COMPATIBILITY"
+        "BUILDING_LANDUSE_COMPATIBILITY",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化。",
+      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-001",
         "PUBLIC-TEST-001",
         "PUBLIC-LIVE-001",
         "SCENARIO-S02",
         "SCENARIO-S04",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "INTERFACE-I1",
+        "INTERFACE-I2",
+        "INTERFACE-I3",
+        "INTERFACE-I4",
+        "INTERFACE-I5",
+        "INTERFACE-I6",
+        "INTERFACE-I7",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "ROOM-BUILD-001",
+        "ROOM-LIVE-001",
+        "ROOM-TEST-001"
       ]
     },
     {
@@ -1190,7 +1368,10 @@
         "phase_coverage_ratio",
         "scenario_node_count",
         "protocol_interface_count",
-        "renewal_project_count"
+        "renewal_project_count",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1210,20 +1391,30 @@
       "assumption_ids": [
         "A-PHASING-001",
         "A-OPERATIONS-001",
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PHASING_TOPOLOGY",
         "PHASING_STAGE_SEMANTICS",
         "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "PROTOCOL_INTERFACE_COUNT"
+        "PROTOCOL_INTERFACE_COUNT",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制。",
+      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",
         "PHASE-003",
-        "SCENARIO-S12"
+        "SCENARIO-S12",
+        "JOURNEY-J01",
+        "JOURNEY-J02",
+        "JOURNEY-J03",
+        "RETURN-BUILD-001",
+        "RETURN-LIVE-001",
+        "RETURN-TEST-001"
       ]
     }
   ]

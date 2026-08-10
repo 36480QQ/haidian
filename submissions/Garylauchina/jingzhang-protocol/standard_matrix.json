@@ -78,7 +78,13 @@
         "industry_validation_scenario_count",
         "protocol_interface_count",
         "landmark_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -95,7 +101,8 @@
       "assumption_ids": [
         "A-KEYAREA-001",
         "A-HERITAGE-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "CASE_PORTFOLIO_COUNT",
@@ -103,9 +110,15 @@
         "SCENARIO_NODE_COUNT",
         "INDUSTRY_TEST_COUNT",
         "LANDMARK_COUNT",
-        "PROTOCOL_INTERFACE_COUNT"
+        "PROTOCOL_INTERFACE_COUNT",
+        "APPLICATION_SCENARIO_REGISTRY_STABLE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "六组案例、十二场景、三项验证、五类用户、三处地标和长期运营机制均有独立证据；所有落地表述保持概念建议属性。"
+      "evidence_summary_zh": "六组案例、十二场景、三项验证、五类用户、三处地标和长期运营机制均有独立证据；所有落地表述保持概念建议属性；V0.6以16个概念原型特征补强AI场景、公共空间和长期运营的机器证据，同时保持非官方与非运营边界。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -135,7 +148,9 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "road_centerline_length_m"
+        "road_centerline_length_m",
+        "human_journey_count",
+        "protocol_street_room_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -145,16 +160,20 @@
         "A-BOUNDARY-001",
         "A-EXISTING-001",
         "A-TRANSPORT-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "LAND_USE_FULL_COVERAGE",
         "BUILDING_CONCEPT_ONLY",
         "BUILDING_LANDUSE_COMPATIBILITY",
         "ROAD_INSIDE_SITE",
-        "BLUEGREEN_INSIDE_SITE"
+        "BLUEGREEN_INSIDE_SITE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "用地、功能包络、慢行和蓝绿公共空间被协同表达；六个概念建筑已通过建筑—绿地—广场—公共空间兼容性复核。"
+      "evidence_summary_zh": "用地、功能包络、慢行和蓝绿公共空间被协同表达；六个概念建筑已通过建筑—绿地—广场—公共空间兼容性复核；三处街室作为公共空间内部的非加总子空间，人物旅程只表达概念空间序列，不替代详细设计或实测。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -312,7 +331,10 @@
       ],
       "metric_refs": [
         "scenario_node_count",
-        "protocol_interface_count"
+        "protocol_interface_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -320,13 +342,16 @@
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "SCENARIO_PROTOCOL_INTERFACE_COVERAGE",
-        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE"
+        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "仅把该办法用于可能向公众提供生成内容的具体场景边界，不将其泛化为所有城市AI系统的许可、退出权或法定响应时限。"
+      "evidence_summary_zh": "仅把该办法用于可能向公众提供生成内容的具体场景边界，不将其泛化为所有城市AI系统的许可、退出权或法定响应时限；I1-I7实体与Return Ticket只把投诉、补救、人工责任和退出责任空间化，不将概念登记表述为法律合规结论。"
     },
     {
       "standard_id": "BARRIER-FREE-ENVIRONMENT-LAW",
@@ -350,7 +375,9 @@
       "metric_refs": [
         "scenario_node_count",
         "public_space_area_sqm",
-        "road_centerline_length_m"
+        "road_centerline_length_m",
+        "human_journey_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -359,14 +386,17 @@
       ],
       "assumption_ids": [
         "A-OPERATIONS-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PERSONA_COUNT",
         "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE",
-        "ROAD_INSIDE_SITE"
+        "ROAD_INSIDE_SITE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "公共服务导航、健康导引与包容性慢行场景保留人工/非数字路径作为设计原则；具体法律义务仍按第39条适用场所判断。"
+      "evidence_summary_zh": "公共服务导航、健康导引与包容性慢行场景保留人工/非数字路径作为设计原则；具体法律义务仍按第39条适用场所判断；J01无手机轮椅使用者旅程验证非AI、人工协助和申诉引用是否齐全，但不声称路线已测绘或达到法定无障碍验收。"
     },
     {
       "standard_id": "ELDERLY-SMART-TECH-PLAN-2020-45",
@@ -387,7 +417,9 @@
       ],
       "metric_refs": [
         "scenario_node_count",
-        "public_space_area_sqm"
+        "public_space_area_sqm",
+        "human_journey_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -395,13 +427,16 @@
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PERSONA_COUNT",
-        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE"
+        "SCENARIO_HUMAN_AUTHORITY_INTERFACE_COVERAGE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "将线上线下并行作为包容性场景参照，不把2020—2022阶段性实施方案表述为2026年本地法定义务或既成落实事实。"
+      "evidence_summary_zh": "将线上线下并行作为包容性场景参照，不把2020—2022阶段性实施方案表述为2026年本地法定义务或既成落实事实；J01与Return Ticket保留传统、人工和无手机完成路径的概念接口，不把政策目标写成现状服务绩效。"
     }
   ]
 }

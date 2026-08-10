@@ -1,34 +1,36 @@
 ---
-title: "京张协议 / THE JINGZHANG PROTOCOL"
+title: "京张协议 / THE JING-ZHANG PROTOCOL"
 author_github: "Garylauchina"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以 BUILD—TEST—LIVE—LEARN/UPDATE 城市生命周期与七类公共接口为骨架，把百年京张 AI 创新带设计为可验证、可申诉、可更新的人机共生城市协议；V0.5 已完成拓扑闭合空间底稿、12 个场景节点、依赖式实施包、双语展示与本地正式包收口，仍使用临时边界。"
+summary: "以公众前台‘京张回程票’把 BUILD—TEST—LIVE—LEARN/UPDATE、七类最低接口与城市能力返还机制变成可读、可用、可申诉的公共承诺；V0.6 已在 V0.3 临时空间底盘上登记 3 个嵌套协议街室、7 个接口实体、3 条人物旅程与 3 个能力返还节点，后台由 AI City API 与京张 AI 城市公约共同支撑。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 京张协议 / THE JINGZHANG PROTOCOL
+# 京张协议 / THE JING-ZHANG PROTOCOL
 
 **A Civic Protocol for Human–AI Coevolution**  
-**一座城市，如何学会与 AI 共存**
+**公众前台：京张回程票 / THE RETURN TICKET**
 
-## V0.5 核心命题
+**后台系统：AI City API + Jing-Zhang AI Constitution**
 
-本方案不把“AI 城市”理解为设备、屏幕和演示项目的叠加，而把百年京张 AI 创新带设想为一套可见、可测试、可申诉、可回滚、可持续修订的城市协议：AI 在这里被制造、进入真实社会前接受验证、在日常场景中创造公共价值，并把运行证据与失败经验带回规则更新。所有制度、空间与运营内容均为概念建议，仍需规划、工程、法律、伦理和公众参与等专业程序深化 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+## V0.6 核心命题
+
+本方案不把“AI 城市”理解为设备、屏幕和演示项目的叠加。正式项目名仍是 **京张协议 / THE JING-ZHANG PROTOCOL**，指后台的城市公共协议系统；公众走进街区时接触到的前台概念则是 **京张回程票 / THE RETURN TICKET**。每项 AI 能力在进入日常服务前，都应让人看懂它从哪里来、为何使用数据、能做与不能做什么、由谁接管、如何申诉、能否迁移，以及何时暂停或退出。它不是一张准入证，而是一份可带走、可追问、可触发返还的公共回执：**能力没有回程，不得进入日常城市服务。** 所有制度、空间与运营内容均为概念建议，仍需规划、工程、法律、伦理和公众参与等专业程序深化 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 京张铁路的历史价值不只是一条可借用的“轨道”意象。国家铁路局将 1905—1909 年建设的京张铁路界定为中国人自己勘测、设计、施工和管理的第一条国有干线铁路；北京市现有遗址公园则通过恢复老正线、保留清华园站房和缝合铁路两侧空间，让工程遗产继续成为开放公共生活的一部分 [source:HIST-JINGZHANG-RAILWAY] [source:HIST-JINGZHANG-PARK]。方案据此提出一种明确的当代转译：铁路时代把自主工程能力写入地理，AI 时代则要把可问责、可互操作、可修订的机器智能写入社会。后一句是设计论题，不是史料原句。
 
-空间上，方案以 **BUILD → TEST → LIVE → LEARN / UPDATE** 作为“三区两翼”之上的运行生命周期：众智园侧重 BUILD，北京 AI 原点社区侧重 TEST，大钟寺侧重 LIVE，中关村科技服务翼与小月河场景赋能翼共同支撑跨区服务、公共体验和证据回流，全带通过 LEARN / UPDATE 形成版本化的治理闭环。它不新增法定分区，也不替代官方任务书的三层范围与三区两翼结构 [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_level_scope_framework]。
+空间上，方案以 **BUILD → TEST → LIVE → LEARN / UPDATE** 作为“三区两翼”之上的运行生命周期：众智园侧重 BUILD，北京 AI 原点社区侧重 TEST，大钟寺侧重 LIVE，中关村科技服务翼与小月河场景赋能翼共同支撑跨区服务、公共体验和证据回流，全带通过 LEARN / UPDATE 形成版本化的治理闭环。“回程票”沿既有七接口城市服务链移动，把能力发布、受控试验、日常使用、暂停退出与规则修订串成同一条公众可读的责任路径；它不新增法定分区，也不替代官方任务书的三层范围与三区两翼结构 [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/roads.geojson#ROAD-INTERFACE-001] [depth:three_level_scope_framework]。
 
-V0.3 提出两项可供专业团队深化的城市公共基础设施：其一是 **AI City API / Jing-Zhang AI Civic Protocol**，它不是单一中心平台，也不只是项目准入闸门，而是不同部门、企业和公共服务运营者都可实现的最低公共接口；其二是 **Jing-Zhang AI Constitution / 京张 AI 城市公约**，它不是一次性宣言，而是由场景讨论、公众参与、专业审查和运行证据共同更新的版本化公约。二者共同规定身份与来源、数据目的与期限、能力与限制、人工权责与替代、申诉与补救、互操作与迁移、版本与退出七类接口。它们均不是已建平台、法定许可或已生效法律。
+后台采用两层架构：**AI City API / Jing-Zhang AI Civic Protocol** 是联邦式的机器与运营互操作契约，不是单一中心平台或项目准入闸门；**Jing-Zhang AI Constitution / 京张 AI 城市公约** 是由场景讨论、公众参与、专业审查和运行证据共同修订的版本化公约。前者规定系统怎样交换最低必要信息，后者规定谁有权修改规则、公众拥有哪些权利、证据与申诉如何进入公共记忆；“回程票”则把两层要求翻译成公众可见的回执。七类最低接口为：①身份与来源；②数据目的与保存期限；③能力与限制；④人工权责与非数字替代；⑤申诉与补救；⑥互操作与可迁移；⑦版本、暂停、退出与公共记忆 [metric:protocol_interface_count]。三者均不是已建平台、法定许可、已生效法律或政府审批流程。
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的任务、范围、枚举、指标和来源清单为机器可读依据。所有判断均拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度；V0.5 已把概念空间、证据结构、双语 HTML、A3 文册、A0 展板、机器清单与自检收口为本地 review-ready 正式包。由于官方精确边界、控制条件与独立专业签核尚未取得，它仍是使用临时约束的开源概念成果，不是审批成果。V0.5 正式包沿用未改写的 V0.3 几何与指标证据快照和 V0.4 图纸版式，因此内嵌的五组分析图保留 V0.3 标签。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的任务、范围、枚举、指标和来源清单为机器可读依据。所有判断均拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度；V0.6 已在 V0.3 临时底盘上把“回程票”空间化为 3 个嵌套协议街室、7 个接口实体和 3 条人物旅程 [metric:protocol_street_room_count] [metric:protocol_interface_entity_count] [metric:human_journey_count]，并配置 3 个能力返还节点；12 个既有应用场景对返还节点的引用覆盖率为 1.0，七接口实体对有效街室的解析覆盖率为 1.0 [metric:capacity_return_node_count] [metric:return_ticket_reference_coverage_ratio] [metric:protocol_interface_entity_coverage_ratio]。新增房间和节点没有改写 SITE/KEY 形状、3×4 用地拓扑或 V0.3 临时边界分母；协议街室作为父公共空间内的嵌套面按 union 计数，公共空间面积仍为 432,600 ㎡ [metric:public_space_area_sqm]。由于官方精确边界、控制条件与独立专业签核尚未取得，完整 V0.6 包仍是使用临时约束的开源概念建议，不是审批成果。
 
 方案不是独立愿景文本，而是从公告、面向智能体任务书和场地资料出发组织成果；本节只把最关键依据放在判断旁边 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。完整来源和标准覆盖分别保存在 `sources.json`、`standard_matrix.json` 与 `design_depth_matrix.json`，不在正文重复机器索引。
 
@@ -58,7 +60,7 @@ V0.3 提出两项可供专业团队深化的城市公共基础设施：其一是
 
 三层工作不是互相割裂的图纸集合。统筹研究决定产业链和城市形态判断，总体设计把判断落实到更新项目、空间结构和设施承载，重点区域详细设计验证具体地块、建筑、交通、公共空间和AI应用场景的可实施性。agent 生成方案时必须先锁定当前提交采用的 official 或 provisional 边界和约束，再生成用地、建筑、道路、绿地、公共空间、分期和AI服务节点，最后从这些图层复算指标并在正文解释哪些结论仍受 provisional boundary 限制。任何无法从结构化数据复算的面积、比例、规模或项目数量，不得写入正式结论。
 
-本方案建议的总体概念为“京张协议”：以京张遗址公园为历史与公共空间主轴，以众智园、北京 AI 原点社区、大钟寺三处重点片区为 BUILD、TEST、LIVE 的空间锚点，以高校、企业、社区和轨道站点为日常网络，以两翼承接服务与场景扩散，形成可持续 LEARN / UPDATE 的城市运行回路。这里的生命周期不是额外画出的新红线，而是把官方三层范围、三区两翼和六项 Agent 任务转译为可验证的工作方法。
+本方案以“京张协议”为后台总体系统，以“京张回程票”为公众前台：京张遗址公园构成历史与公共空间主轴，众智园、北京 AI 原点社区、大钟寺构成 BUILD、TEST、LIVE 的空间锚点，高校、企业、社区和轨道站点构成日常网络，两翼承接服务与场景扩散，持续把证据送回 LEARN / UPDATE。V0.6 沿既有七接口城市服务链增加协议实体层，用嵌套房间和概念索引点组织公众行动，但不新增第四法定分区、新红线，也不改变 SITE/KEY 形状或 3×4 用地拓扑 [data:geometry/roads.geojson#ROAD-INTERFACE-001] [data:geometry/public_space.geojson#ROOM-BUILD-001] [depth:three_level_scope_framework]。
 
 | 层级 | 设计问题 | 方案回答 | 数据落点 |
 | --- | --- | --- | --- |
@@ -85,11 +87,29 @@ V0.3 保留六组互补案例，刻意区分实体创新区、分布式测试网
 | 全生命周期框架：NIST AI RMF | 以 Govern—Map—Measure—Manage 形成持续风险循环，并纳入清退和外部反馈 | 将 LEARN/UPDATE 变成持续监测、复审、暂停和退出机制 [source:CASE-NIST-AI-RMF] | 自愿性组织框架不是城市设计标准、法律合规证明或法定审批 |
 | 治理警示：多伦多 Quayside / Sidewalk Toronto | 官方文件曾要求开放标准、数据最小化、公众参与和独立顾问，但项目合作最终终止 | 在技术和空间定型前先明确公共权责、开放接口、社会许可和退出安排 [source:CASE-SIDEWALK-QUAYSIDE] | 不把数据治理争议写成项目终止的唯一原因，也不把未落地设想当成建成绩效 |
 
-这些案例共同指向一个差异化选择：京张协议不是又一条“验证流水线”或统一交通灯，而是城市级公共宪章与多运营方互操作层。不同运营者保留各自系统，但必须向公众和彼此提供最低一致的七类接口：①身份/来源；②数据目的/保存期限；③能力/限制；④人工权责/非数字替代；⑤申诉/补救；⑥互操作/可迁移；⑦版本/暂停/退出/公共记忆。BUILD 发布能力契约，TEST 生成试验协议卡，LIVE 落实服务界面权利，LEARN/UPDATE 公开修订规则；任何测试通过都不被表述为政府批准。
+这些案例共同指向一个差异化选择：京张协议不是又一条“验证流水线”、统一交通灯或抽象“城市操作系统”，而是 **AI City API 的联邦式互操作层 + Jing-Zhang AI Constitution 的版本化公共权利层 + 京张回程票的公众可读前台**。不同运营者保留各自系统，但必须提供最低一致的七类接口 [metric:protocol_interface_count]。BUILD 发布能力契约，TEST 核对试验条件，LIVE 落实服务界面权利，LEARN/UPDATE 记录继续、修改、暂停、退出和规则修订；任何测试通过都不被表述为政府批准。
+
+### 前台“回程票”与后台双层协议
+
+“回程票”不是给技术发放的通行证，而是给公众留下的权利凭证。正面以七个字段说明当前能力，背面说明人工接管、非数字替代、申诉、数据与组件迁移、暂停和退出路径；其机器可读部分由 AI City API 交换，其公共规则与修订程序由 Jing-Zhang AI Constitution 约束。只有当返回路径与进入路径同样清楚，能力才适合从测试走向日常服务 [metric:protocol_interface_count] [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+V0.6 将七类最低接口登记为七个可解析的原型实体，每个实体都关联一个主街室，并携带向三处街室复制完整接口套件的规则；实体数为 7，解析覆盖率为 1.0 [metric:protocol_interface_entity_count] [metric:protocol_interface_entity_coverage_ratio]。
+
+| 实体 | 最低接口 | AI City API 的机器契约 | Jing-Zhang AI Constitution 的公共权利 |
+| --- | --- | --- | --- |
+| I1 身份与出处站 | 身份 / 来源 | 交换部署 ID、负责运营者和来源回执 | 看见责任主体并取得人工或非数字等价说明 [data:geometry/public_space.geojson#INTERFACE-I1] |
+| I2 数据目的与留存站 | 数据目的 / 保存期限 | 声明用途、最小数据边界、期限与删除状态 | 以通俗语言知情，并可使用删除与非数字路径 [data:geometry/public_space.geojson#INTERFACE-I2] |
+| I3 能力与边界站 | 能力 / 限制 | 交换版本、适用任务、已知失败和禁止用途 | 获得可问责的人工解释，不在声明边界外被使用 [data:geometry/public_space.geojson#INTERFACE-I3] |
+| I4 人工接管与无 AI 服务站 | 人工权责 / 非数字替代 | 交换接管人、停止状态和 fallback 可用性 | 通过可见人工点完成同等服务，不被迫使用 AI 或智能手机 [data:geometry/public_space.geojson#INTERFACE-I4] |
+| I5 申诉与补救站 | 申诉 / 补救 | 交换案件引用、处理时限、人工决定与纠正状态 | 获得可追踪投诉、人工决定和有效补救 [data:geometry/public_space.geojson#INTERFACE-I5] |
+| I6 互操作与可迁移站 | 互操作 / 可迁移 | 交换导出格式、移交状态和服务连续性字段 | 迁出必要记录、切换运营者并避免服务锁定 [data:geometry/public_space.geojson#INTERFACE-I6] |
+| I7 版本、暂停、退出与公共记忆站 | 版本 / 暂停 / 退出 / 公共记忆 | 交换当前版本、暂停、退役、变更和返还状态 | 查阅失败、修改、退役及能力返还的持久记录 [data:geometry/public_space.geojson#INTERFACE-I7] |
 
 ## 总体设计范围城市更新与控规深度城市设计
 
 V0.3 将协议转译为一个可复算的空间矩阵：南北方向依次为 **BUILD、TEST、LIVE** 三个生命周期段，东西方向依次为 **知识研发、公共绿脊、公民接口、日常服务** 四类界面带，形成 12 个共享切割线的概念用地单元。LEARN/UPDATE 不另划第四片区，而通过全带的反馈网络回到每一段。12 个 polygon 完整覆盖 SITE-001，实质 gap、outside 与 overlap 均为 0；分类是功能建议而非现状或法定用地 [data:geometry/land_use.geojson#LU-BUILD-01] [metric:land_use_coverage_ratio] [metric:land_use_overlap_area_sqm]。
+
+V0.6 不另划一张“回程票用地”，而让它在既有 **3×4 矩阵**中形成可追踪状态：能力从知识研发界面出发，经公共绿脊和公民接口被说明、试验与质询，进入日常服务后仍保留人工接管与返还路径；运行证据再沿七接口城市服务链回到 LEARN/UPDATE。这样，回程票是空间网络上的责任状态，不是新的法定用地分类或面积管控指标 [data:geometry/land_use.geojson#LU-BUILD-01] [data:geometry/roads.geojson#ROAD-INTERFACE-001] [depth:overall_spatial_structure]。
 
 矩阵上叠加两条纵向公共联系——**京张协议公共绿脊**与**七接口城市服务链**——以及 BUILD、TEST、LIVE、LEARN/UPDATE 四条横链，构成一张连通的“梯形网络”。它表达慢行、服务和场景关系，不是道路红线或工程线位 [data:geometry/roads.geojson#ROAD-SPINE-001] [data:geometry/roads.geojson#ROAD-INTERFACE-001] [metric:slow_mobility_length_m]。三个 1401 单元直接派生为连续绿脊，避免用地与绿地分别手画；六处公共界面和六个小型概念承载原型锚定重点区。所有建筑原型均位于临时边界和相应重点区内，并与 1401、1403 及公共空间保持零冲突。
 
@@ -107,6 +127,16 @@ V0.3 将协议转译为一个可复算的空间矩阵：南北方向依次为 **
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
+### 三处协议街室
+
+V0.6 已将“制票—验票—回程”登记为 3 个协议街室 polygon [metric:protocol_street_room_count]。三个房间分别嵌套在既有父公共空间内，union 计数不增加公共空间面积，面积与比例仍为 432,600 ㎡和 3.7905% [metric:public_space_area_sqm] [metric:public_space_ratio]。它们是临时粗略底盘内的概念证据窗口，不是新增地标、建筑、官方红线、经确认场所或实施承诺；边界、产权、尺度与运营主体仍待测绘和专业共创深化 [data:geometry/public_space.geojson#ROOM-BUILD-001] [data:geometry/public_space.geojson#ROOM-TEST-001] [data:geometry/public_space.geojson#ROOM-LIVE-001]。
+
+| 协议街室实体 | 嵌套父载体 / 别名 | 面向公众的动作 | 事实边界 |
+| --- | --- | --- | --- |
+| **ROOM-BUILD-001：协议制票室 / Protocol Ticket-Issuing Room**（众智园 / BUILD） | `PUBLIC-BUILD-002` / 能力契约发布庭 | 把身份来源、数据目的、能力限制、责任人和回程条件写成可读回执 | 不签发政府许可；嵌套概念面须随正式资料重算 [data:geometry/public_space.geojson#ROOM-BUILD-001] [data:geometry/public_space.geojson#PUBLIC-BUILD-002] [depth:three_key_area_detailed_design] |
+| **ROOM-TEST-001：协议验票室 / Protocol Ticket-Checking Room**（AI 原点 / TEST） | `PUBLIC-TEST-001` / 协议零号站 | 用受控试验、人工复核、非数字替代和申诉准备度核对回程票 | 不等于检测认证或监管批准；嵌套概念面须随正式资料重算 [data:geometry/public_space.geojson#ROOM-TEST-001] [data:geometry/public_space.geojson#PUBLIC-TEST-001] [depth:three_key_area_detailed_design] |
+| **ROOM-LIVE-001：协议回程室 / Protocol Return Room**（大钟寺 / LIVE—LEARN） | `PUBLIC-LIVE-001` / 京张贡献档案馆 | 记录继续、修改、暂停、退出、服务恢复与公共记忆变更 | 不代表已建机构或法定程序；嵌套概念面须随正式资料重算 [data:geometry/public_space.geojson#ROOM-LIVE-001] [data:geometry/public_space.geojson#PUBLIC-LIVE-001] [depth:three_key_area_detailed_design] |
+
 三处重点区域必须在 `geometry/key_areas.geojson` 中出现。若仓库已提供 official polygons，应作为 `official_constraint` 使用；若 official polygons 缺失，可暂用 `provisional_constraint`，但正文、HTML、sources、assumptions 和 self_check 必须说明它不能作为正式评分或审批依据。`compliance_matrix.json` 应分别覆盖公告 1.5.3.1、1.5.3.2、1.5.3.3。设计表达应包含功能业态、建筑规模、建筑形态、拆改留分类、公共空间系统、交通组织、慢行连通和实施项目。HTML 页面应能切换查看三处重点区域，A3 文册和 A0 展板应至少包含重点片区总图、局部详图和指标说明。
 
 | 重点片区 | 设计定位 | V0.3 空间抓手 | 场景与实施门槛 | 证据引用 |
@@ -119,7 +149,7 @@ V0.3 将协议转译为一个可复算的空间矩阵：南北方向依次为 **
 
 方案应建立面向AI人才和企业的空间需求画像，覆盖研发办公、开源协作、成果发布、企业服务、人才居住、社交学习、消费生活、运动休闲和国际交往。AI+场景应围绕公告提出的交通、服务、消费、医疗、教育、法律、生活服务等方向，形成产业发展场景和AI赋能城市功能场景。每个场景应说明服务对象、空间位置、数据来源、隐私边界、人工复核机制和运营主体。
 
-V0.3 已把 12 个场景写入允许的 `public_space.geojson` 容器，其中 S01—S03 为产业测试验证场景 [data:geometry/public_space.geojson#SCENARIO-S01] [metric:scenario_node_count] [metric:industry_validation_scenario_count]。每个点都包含 `carrier_space_id`、`host_feature_ids`、`key_area_id`（适用时）、实施包、用户画像、运营角色、数据边界、人工复核、非 AI 备选、申诉通道和 `deployment_status=concept_only`；12/12 完成人工复核、空间载体和实施包映射 [metric:scenario_human_review_coverage_ratio] [metric:scenario_spatial_assignment_coverage_ratio] [metric:scenario_phase_assignment_coverage_ratio]。25 个去重 persona 标签服务于多主体测试，不代表人口统计画像或对个人作出的推断 [metric:persona_count]。
+V0.6 在 `public_space.geojson` 中保留 12 个 `application_scenario`，其中 S01—S03 为产业测试验证场景 [data:geometry/public_space.geojson#SCENARIO-S01] [metric:scenario_node_count] [metric:industry_validation_scenario_count]。每个应用场景点都包含 `carrier_space_id`、`host_feature_ids`、`key_area_id`（适用时）、实施包、用户画像、运营角色、数据边界、人工复核、非 AI 备选、申诉通道和 `deployment_status=concept_only`；12/12 完成人工复核、空间载体和实施包映射 [metric:scenario_human_review_coverage_ratio] [metric:scenario_spatial_assignment_coverage_ratio] [metric:scenario_phase_assignment_coverage_ratio]。25 个去重 persona 标签服务于多主体测试，不代表人口统计画像或对个人作出的推断 [metric:persona_count]。
 
 | 用户画像 | 典型需求 | 空间响应 | 自检边界 |
 | --- | --- | --- | --- |
@@ -145,6 +175,16 @@ V0.3 已把 12 个场景写入允许的 `public_space.geojson` 容器，其中 S
 | 12 城市议事与证据观察站 | LEARN / UPDATE；贡献档案馆与公共论坛 | 汇总运行证据、投诉、事件、独立评审和版本变更，支持决定“扩大、修改、暂停或终止” |
 
 agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解释和人工复核原则。城市智能体可以辅助识别慢行断点、公共空间热力、设施维护、企业服务需求和活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺。所有AI场景节点应进入结构化图层或合规矩阵，便于评审者看到它们与产业、空间和公共利益之间的关系。
+
+### 三条代表性人物旅程
+
+V0.6 从既有 persona 集合中登记 3 个 `human_journey_anchor` 点 [metric:human_journey_count]。它们是连接场景、房间、接口和返还节点的概念审计索引，不是经测绘确认的无障碍路线、道路通行承诺或当前服务可用性证明 [depth:three_key_area_detailed_design]。
+
+| 人物 | 去程：如何使用 AI | 回程：城市必须返还什么 |
+| --- | --- | --- |
+| **P01 / JOURNEY-J01：不使用智能手机的轮椅使用者** | 在 TEST/LIVE 慢行与服务节点通过纸面、语音、现场人员或无障碍标识读取回程票，不以安装应用或建立账户为前提 | 当导引失效、路线不可达或系统暂停时，回到人工无障碍协助和可用替代路线；无需数字账户也能申诉，并由 TEST 返还节点记录修复 [data:geometry/public_space.geojson#JOURNEY-J01] [data:geometry/public_space.geojson#RETURN-TEST-001] [depth:three_key_area_detailed_design] |
+| **P02 / JOURNEY-J02：小店经营者 / 创作者** | 在 AI 原生商业或创意服务中查看内容来源、费用、能力限制、责任人和争议入口；可对生成内容、推荐或交易辅助提出异议 | 争议触发人工复核，暂停受影响的自动内容或决定，恢复人工售卖、退款或作品处理，并由 LIVE 返还节点保存补救与来源记录 [data:geometry/public_space.geojson#JOURNEY-J02] [data:geometry/public_space.geojson#RETURN-LIVE-001] [depth:three_key_area_detailed_design] |
+| **P03 / JOURNEY-J03：维护人员 / 一线运营者** | 在每次机器交接前核对权限、风险和非 AI 备选，保留拒绝交接或暂停自动功能的权力 | 触发暂停后恢复常规服务，完成记录、复测与复核；若仍不达标则退役，并由 BUILD 返还节点把操作与失败证据送入公约下一版 [data:geometry/public_space.geojson#JOURNEY-J03] [data:geometry/public_space.geojson#RETURN-BUILD-001] [depth:three_key_area_detailed_design] |
 
 ## 用地、建筑规模与拆改留方案
 
@@ -191,18 +231,35 @@ V0.3 提出三个相互关联、可供专业团队深化研究的 AI 公共地�
 
 V0.3 的三期不是“近期/中期/远期”工期承诺，而是三组可相互检验的依赖包：**P1** 先建立绿脊、七接口、人工替代与事件通道；**P2** 在权属、建筑调查、专业安全与交通条件核实后推进知识研发和验证空间；**P3** 只有在独立评估、申诉能力、互操作与退出计划得到证明后，才扩大日常服务和城市传播 [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]。三面完整覆盖临时边界且零实质重叠 [metric:phase_coverage_ratio] [metric:phase_overlap_area_sqm]。
 
+### 城市能力返还机制
+
+“返还”不是把城市数据或公共权力让渡给技术提供者，而是在期限届满、重大版本变化、证据不达标、申诉久未解决、运营方退出，或权利/数据/工程条件失效时，把服务能力安全地交还给公众与城市运营体系。V0.6 已登记 BUILD、TEST、LIVE 三个能力返还节点，数量为 3 [metric:capacity_return_node_count]；它们分别承担开放方法与失败证据、无应用服务与可达性修复、申诉补救与公共记忆返还 [data:geometry/public_space.geojson#RETURN-BUILD-001] [data:geometry/public_space.geojson#RETURN-TEST-001] [data:geometry/public_space.geojson#RETURN-LIVE-001]。12 个要求回程票的应用场景均可反向解析到相应返还节点，引用覆盖率为 1.0；这证明机器引用闭合，不证明能力已经交付 [metric:return_ticket_reference_coverage_ratio]。三个节点均为 `concept_only` 点位索引，不是既有机构、运营主体或建设承诺。
+
+概念流程跨越三个依赖包 [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]。其实施深度由 [depth:phasing_implementation] 约束：
+
+1. **触发并冻结**：停止受影响的自动功能，避免在事实不明时继续扩张。
+2. **恢复基线**：切回人工或非数字服务，保障基本服务不中断。
+3. **迁移与交接**：按事先声明导出或移交维持服务所需的记录、接口与可迁移组件。
+4. **数据与空间收口**：依照声明用途删除或归档数据；对可逆设备提出拆除、返还和公共空间恢复建议。
+5. **留下公共记忆**：记录决定、原因、影响、责任人和版本变化，允许公众查询与申诉。
+6. **进入下一版**：把运行与失败证据送回 LEARN/UPDATE，作为 Jing-Zhang AI Constitution 修订的输入。
+
+这是一项待法律、数据、运营、规划与工程团队共同深化的设计机制，不是现行政策、法律义务、已签署合同或已部署流程。
+
 长期运营的核心不是重复举办科技节，而是让协议具有更新能力。V0.3 建议形成“季度场景开放日—半年证据审查—年度京张协议大会—持续版本日志”的节奏：开发者和运营方提交测试证据，居民与用户提出问题或申诉，专业团队评估空间、技术、法律与伦理影响，再公开说明某个场景为何扩大、修改、暂停或终止。年度大会可把全球案例、开源工具、失败复盘、贡献荣誉与下一版协议草案集中展示；这是一项运营概念，不代表主办方已确定活动、预算或政策安排 [source:AGENT-TASKBOOK] [depth:phasing_implementation]。
 
 ## 指标体系、面积复算与合规矩阵
 
-V0.3 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标；来自公告的近似范围数字；以及因缺少官方条件而保持 `unknown` 的法定/工程指标。任何设计值都不能升级为审定指标，任何 unknown 都不能用 0 或“平均值”填补 [depth:metrics_recalculation]。
+V0.6 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标；来自公告的近似范围数字；以及因缺少官方条件而保持 `unknown` 的法定/工程指标。任何设计值都不能升级为审定指标，任何 unknown 都不能用 0 或“平均值”填补 [depth:metrics_recalculation]。
 
 | 证据状态 | 当前结果 | 解释边界 |
 | --- | --- | --- |
 | 公告近似值 | 统筹研究约 43.6 km²；总体设计约 11.4 km²；三重点区合计约 368.4 ha | 43.6 km² 无提交 polygon；三个范围层级不可互相替代 |
 | 临时几何实算 | SITE-001 约 11.413 km²；用地与分期 coverage 1.0、实质 overlap 0 | 仅对临时粗略边界成立 [metric:site_area_sqm] [metric:land_use_coverage_ratio] [metric:phase_coverage_ratio] |
 | 设计配置 | 绿地 22.459%；公共界面 3.7905%；概念线网约 24.15 km；6 个建筑承载原型 | 仅检验空间选择与连通逻辑 [metric:green_ratio] [metric:public_space_ratio] [metric:slow_mobility_length_m] |
-| 场景与治理 | 12 个场景、3 个产业验证、7 类协议接口、3 个地标、6 个更新项目 | 数量可核，运营主体与授权尚待确认 [metric:scenario_node_count] [metric:industry_validation_scenario_count] [metric:protocol_interface_count] |
+| 应用场景与治理 | 12 个应用场景、3 个产业验证、7 类协议、3 个地标、6 个更新项目 | 数量可核，运营主体与授权尚待确认 [metric:scenario_node_count] [metric:industry_validation_scenario_count] [metric:protocol_interface_count] |
+| 协议空间实体 | 3 个嵌套协议街室、7 个接口实体、3 条人物旅程 | 街室不重复增加公共空间面积；接口与旅程点是概念索引 [metric:protocol_street_room_count] [metric:protocol_interface_entity_count] [metric:human_journey_count] |
+| 返还与引用闭合 | 3 个能力返还节点；应用场景返还引用覆盖率 1.0；接口实体解析覆盖率 1.0 | 证明结构化引用闭合，不证明服务已交付或位置已确认 [metric:capacity_return_node_count] [metric:return_ticket_reference_coverage_ratio] [metric:protocol_interface_entity_coverage_ratio] |
 | 保持 unknown | 总建面、容积率、建筑密度、高度、退线、道路面积/比率 | 待官方控规、现状、权属、道路和工程资料 [metric:total_floor_area_sqm] [metric:floor_area_ratio] [metric:setback_m] |
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
@@ -217,7 +274,7 @@ V0.3 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标�
 
 风险和缺资料清单由风险深度项、空的约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口均进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都降级为待确认事项；完整专业核对保存在标准矩阵中。
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。V0.5 已完成本地 review-ready 正式包、双语清单映射与完整自检；官方/专业资料缺口继续作为深化前提，不被伪装成已知条件。本版本仅保存在本机，尚未推送或创建正式 PR。
+本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。V0.6 完整包已把“京张回程票”落实到双语正文、3 个嵌套协议街室、7 个接口实体、3 条人物旅程、3 个能力返还节点、六项新增指标、证据矩阵和双语展示；这些实体均为 `agent_generated_design`、`conceptual_not_statutory`、`official_siting=false` 的概念成果。嵌套房间没有增加公共空间 union 面积，接口、旅程和返还点只是空间责任索引；它们不是政府许可、经确认实体设施、法定程序或已部署服务。官方/专业资料缺口继续作为深化前提，不被伪装成已知条件；V0.6 包已完整具备复核条件，但未经用户最终确认不推送或创建正式 PR [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson]。
 
 ## 参考资料
 

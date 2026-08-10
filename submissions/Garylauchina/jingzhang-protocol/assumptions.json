@@ -61,7 +61,8 @@
         "key_area_zhongzhiyuan_geometry_sqm",
         "key_area_ai_origin_geometry_sqm",
         "key_area_dazhongsi_geometry_sqm",
-        "landmark_count"
+        "landmark_count",
+        "protocol_street_room_count"
       ],
       "resolution_trigger": "Official rights-cleared polygons for all three key areas are supplied.",
       "replacement_action": "Replace the three provisional KEY_AREA features and relocate or verify every dependent scenario, public-space, landmark and building feature."
@@ -107,7 +108,10 @@
         "scenario_node_zhongzhiyuan_count",
         "scenario_node_ai_origin_count",
         "scenario_node_dazhongsi_count",
-        "scenario_spatial_assignment_coverage_ratio"
+        "scenario_spatial_assignment_coverage_ratio",
+        "human_journey_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "resolution_trigger": "Verified carrier spaces, ownership, utilities, access and operator agreements are available for a scenario.",
       "replacement_action": "Replace that scenario point with a surveyed carrier-space geometry or approved installation record and revalidate every host reference."
@@ -264,7 +268,9 @@
       "affected_metric_ids": [
         "scenario_human_review_coverage_ratio",
         "renewal_project_count",
-        "protocol_interface_count"
+        "protocol_interface_count",
+        "capacity_return_node_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "resolution_trigger": "Accountable entities accept defined mandates, budgets, service levels and redress obligations.",
       "replacement_action": "Replace proposed roles with signed responsibility records and publish operating, audit, escalation and retirement service levels."
@@ -295,6 +301,31 @@
       ],
       "resolution_trigger": "Any source boundary, geometry, code, calculation convention or survey baseline changes.",
       "replacement_action": "Regenerate affected layers, recalculate in EPSG:4548, record the changed formula and rerun topology, semantic and matrix-reference checks."
+    },
+    {
+      "id": "A-PROTOCOL-PROTOTYPE-001",
+      "status": "conceptual_governance",
+      "statement": "The seven interface entities, three protocol street rooms, three human journeys and three capacity-return nodes are agent-generated design prototypes anchored to provisional carrier geometry; they are not official facilities, observed journeys or operating public services.",
+      "impact": "Counts and coverage ratios prove only registry completeness and resolvable references. They do not prove siting approval, staffing, service levels, accessibility performance, dispute resolution, capacity return or successful retirement.",
+      "affected_files": [
+        "geometry/public_space.geojson",
+        "metrics.json",
+        "proposal.md",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json",
+        "self_check.json"
+      ],
+      "affected_metric_ids": [
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
+      ],
+      "resolution_trigger": "Surveyed and approved carrier spaces, accountable operators, tested service specifications, participant research and auditable Return Ticket case records are available.",
+      "replacement_action": "Replace conceptual anchors with verified facilities and operating records, preserve the public-rights contract where approved, and add separately named outcome metrics only after a dated baseline and accountable measurement method exist."
     }
   ]
 }

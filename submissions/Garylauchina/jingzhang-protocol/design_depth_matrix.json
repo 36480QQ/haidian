@@ -114,7 +114,9 @@
         "green_ratio",
         "public_space_ratio",
         "scenario_node_count",
-        "phase_coverage_ratio"
+        "phase_coverage_ratio",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -126,16 +128,19 @@
         "A-SCENARIO-LOCATION-001",
         "A-PHASING-001",
         "A-TRANSPORT-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "LAND_USE_FULL_COVERAGE",
         "ROAD_INSIDE_SITE",
         "BLUEGREEN_INSIDE_SITE",
         "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
-        "PHASING_STAGE_SEMANTICS"
+        "PHASING_STAGE_SEMANTICS",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY"
       ],
-      "evidence_summary_zh": "总体结构已形成三段四带、双纵轴四横链、场景节点和西—中—东依赖包；分期明确是实施依赖而非BUILD/TEST/LIVE工期。"
+      "evidence_summary_zh": "总体结构已形成三段四带、双纵轴四横链、场景节点和西—中—东依赖包；分期明确是实施依赖而非BUILD/TEST/LIVE工期；总体结构新增三处街室和七接口实体的可解析空间关系，仍依附原梯形网络和临时范围。"
     },
     {
       "item_id": "land_use_layout",
@@ -371,7 +376,11 @@
       "metric_refs": [
         "scenario_node_count",
         "protocol_interface_count",
-        "concept_building_envelope_count"
+        "concept_building_envelope_count",
+        "capacity_return_node_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -381,14 +390,17 @@
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-OPERATIONS-001",
-        "A-EXISTING-001"
+        "A-EXISTING-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "SCENARIO_PROTOCOL_INTERFACE_COVERAGE",
         "BUILDING_CONCEPT_ONLY",
-        "CONTROL_METRICS_UNKNOWN"
+        "CONTROL_METRICS_UNKNOWN",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "AI City API、低碳算力观察站和服务节点构成新基建概念策略；能源、管线、消防和市政容量没有被推算为工程结论。"
+      "evidence_summary_zh": "AI City API、低碳算力观察站和服务节点构成新基建概念策略；能源、管线、消防和市政容量没有被推算为工程结论；七接口与能力返还台按新型公共服务基础设施原型登记，但运营主体、服务水平和工程条件仍待确认。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -416,7 +428,9 @@
         "public_space_area_sqm",
         "public_space_ratio",
         "road_centerline_length_m",
-        "landmark_count"
+        "landmark_count",
+        "human_journey_count",
+        "protocol_street_room_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -425,15 +439,18 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-HERITAGE-001",
-        "A-TRANSPORT-001"
+        "A-TRANSPORT-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "BLUEGREEN_INSIDE_SITE",
         "ROAD_INSIDE_SITE",
         "LANDMARK_COUNT",
-        "HERITAGE_LIMIT_DISCLOSED"
+        "HERITAGE_LIMIT_DISCLOSED",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY"
       ],
-      "evidence_summary_zh": "三段绿地、六处公共空间、慢行服务链和三处地标形成连续公共系统；比例是临时边界下的设计指标，不是法定绿地率。"
+      "evidence_summary_zh": "三段绿地、六处公共空间、慢行服务链和三处地标形成连续公共系统；比例是临时边界下的设计指标，不是法定绿地率；嵌套街室不重复计入公共空间面积，三条旅程仅作为公共空间权利的概念审计序列。"
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -469,7 +486,13 @@
         "scenario_node_ai_origin_count",
         "scenario_node_dazhongsi_count",
         "concept_building_envelope_count",
-        "landmark_count"
+        "landmark_count",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -480,16 +503,23 @@
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-TRANSPORT-001",
-        "A-HERITAGE-001"
+        "A-HERITAGE-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "KEY_AREAS_PROVISIONAL_VALID",
         "SCENARIO_SPATIAL_ASSIGNMENT_COVERAGE",
         "BUILDING_CONCEPT_ONLY",
         "ROAD_INSIDE_SITE",
-        "LANDMARK_COUNT"
+        "LANDMARK_COUNT",
+        "APPLICATION_SCENARIO_REGISTRY_STABLE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "众智园、原点社区和大钟寺分别形成BUILD、TEST、LIVE功能—场景—空间证据包；complete指概念深化齐套，不代表地块级综合实施方案获确认。"
+      "evidence_summary_zh": "众智园、原点社区和大钟寺分别形成BUILD、TEST、LIVE功能—场景—空间证据包；complete指概念深化齐套，不代表地块级综合实施方案获确认；三片区分别落入制票、验票、回程街室及对应旅程和返还节点，机器引用完整但选址仍为概念建议。"
     },
     {
       "item_id": "renewal_project_list",
@@ -519,7 +549,9 @@
         "phase_count",
         "phase_1_area_sqm",
         "phase_2_area_sqm",
-        "phase_3_area_sqm"
+        "phase_3_area_sqm",
+        "capacity_return_node_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -529,14 +561,17 @@
         "A-EXISTING-001",
         "A-TRANSPORT-001",
         "A-OPERATIONS-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "BUILDING_CONCEPT_ONLY",
         "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "PHASING_TOPOLOGY"
+        "PHASING_TOPOLOGY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "正文六项更新包分别挂接建筑、公共空间、慢行、绿色或场景图层；实施主体、投资和审批依赖仍由假设清单约束。"
+      "evidence_summary_zh": "正文六项更新包分别挂接建筑、公共空间、慢行、绿色或场景图层；实施主体、投资和审批依赖仍由假设清单约束；更新项目运营门槛新增三处能力返还台和Return Ticket引用，不将其写成已批准项目或已交付结果。"
     },
     {
       "item_id": "phasing_implementation",
@@ -566,7 +601,9 @@
         "phase_gap_area_sqm",
         "phase_outside_area_sqm",
         "phase_overlap_area_sqm",
-        "scenario_phase_assignment_coverage_ratio"
+        "scenario_phase_assignment_coverage_ratio",
+        "capacity_return_node_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -577,15 +614,17 @@
         "A-BOUNDARY-001",
         "A-PHASING-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "PHASING_TOPOLOGY",
         "PHASING_STAGE_SEMANTICS",
         "SCENARIO_PHASE_ASSIGNMENT_COVERAGE",
-        "METRIC_RECALC_MATCH"
+        "METRIC_RECALC_MATCH",
+        "RETURN_TICKET_REFERENCE_INTEGRITY"
       ],
-      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致。"
+      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致；Return Ticket与依赖包关系可追溯，但三期继续表达证据门槛而非政府工期或投资承诺。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -625,7 +664,13 @@
         "phase_coverage_ratio",
         "phase_gap_area_sqm",
         "phase_outside_area_sqm",
-        "phase_overlap_area_sqm"
+        "phase_overlap_area_sqm",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -633,14 +678,21 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-PROTOCOL-PROTOTYPE-001"
       ],
       "self_check_ids": [
         "METRIC_RECALC_MATCH",
         "VISUAL_METRIC_SYNC",
-        "MATRIX_REFERENCE_INTEGRITY"
+        "MATRIX_REFERENCE_INTEGRITY",
+        "APPLICATION_SCENARIO_REGISTRY_STABLE",
+        "HUMAN_JOURNEY_REFERENCE_INTEGRITY",
+        "PROTOCOL_INTERFACE_ENTITY_INTEGRITY",
+        "PROTOCOL_STREET_ROOM_INTEGRITY",
+        "RETURN_TICKET_REFERENCE_INTEGRITY",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段。"
+      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段；V0.6新增六项注册表指标均从feature_kind和双向引用复算，12个应用场景与嵌套公共空间口径保持稳定。"
     },
     {
       "item_id": "risk_missing_data",
@@ -660,7 +712,8 @@
       "geometry_refs": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
-        "geometry/constraints.geojson"
+        "geometry/constraints.geojson",
+        "geometry/public_space.geojson"
       ],
       "metric_refs": [
         "site_area_sqm",
@@ -670,7 +723,13 @@
         "building_height_m",
         "setback_m",
         "road_area_sqm",
-        "road_ratio"
+        "road_ratio",
+        "capacity_return_node_count",
+        "human_journey_count",
+        "protocol_interface_entity_count",
+        "protocol_interface_entity_coverage_ratio",
+        "protocol_street_room_count",
+        "return_ticket_reference_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -690,6 +749,7 @@
         "A-METRICS-001",
         "A-OPERATIONS-001",
         "A-PHASING-001",
+        "A-PROTOCOL-PROTOTYPE-001",
         "A-RESEARCH-SCOPE-001",
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001"
@@ -701,9 +761,10 @@
         "OPEN_ASSUMPTION_COVERAGE",
         "DRAWINGS_NONEMPTY",
         "BILINGUAL_DISPLAY_COMPLETE",
-        "SCAFFOLD_REMOVED"
+        "SCAFFOLD_REMOVED",
+        "V06_CONCEPT_FEATURE_STATUS"
       ],
-      "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检。"
+      "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检；新增协议原型假设明确区分引用完整性与真实运营成效，后者仍需测绘、运营协议、参与式测试和个案记录。"
     }
   ]
 }
