@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.1.0",
+  "status": "participant_self_audit_not_official_jury_score",
+  "target_score_100": 90,
+  "weighted_total_100": 91.6,
+  "basis": "Uses the repository formal scorecard weights. Scores are conservative participant-side quality estimates after deterministic gate, spatial review, visual packaging, professional evidence review, and PDF rendering QA all pass.",
+  "gate_evidence": {
+    "deterministic_validation": "PASS",
+    "spatial_review": "PASS",
+    "visual_packaging_check": "PASS",
+    "professional_evidence_review": "PASS",
+    "participant_preflight": "PASS",
+    "pdf_render_qa": "A0 5 pages and A3 12 pages rendered with no blank pages, black blocks, obvious clipping, or map overflow in sampled review."
+  },
+  "rubric": [
+    {
+      "dimension_id": "brief_alignment",
+      "dimension_zh": "任务书相关性",
+      "weight_percent": 20,
+      "score_0_to_5": 4.8,
+      "weighted_score_100": 19.2,
+      "evidence": [
+        "proposal.md covers all 13 required sections",
+        "one-spine-three-courts-two-wings structure responds to three-level scope and three key areas",
+        "tracks and scenarios metadata match the open-call categories"
+      ],
+      "remaining_deductions": [
+        "Official redline and final design brief attachments remain unavailable, so some spatial claims must stay provisional."
+      ]
+    },
+    {
+      "dimension_id": "originality",
+      "dimension_zh": "原创性",
+      "weight_percent": 10,
+      "score_0_to_5": 4.7,
+      "weighted_score_100": 9.4,
+      "evidence": [
+        "Public Value Passport is an original governance object attached to spatial interventions",
+        "geodesic visual language defines proprietary color, line, legend, and evidence-at-edge rules",
+        "case references are translated as mechanisms rather than copied as images or style"
+      ],
+      "remaining_deductions": [
+        "Originality would be stronger with site-survey-based micro-spatial prototypes and public workshop evidence."
+      ]
+    },
+    {
+      "dimension_id": "ai_planning_innovation",
+      "dimension_zh": "AI 与城市规划创新性",
+      "weight_percent": 15,
+      "score_0_to_5": 4.6,
+      "weighted_score_100": 13.8,
+      "evidence": [
+        "Algorithmic rules are overlaid onto lines, polygons, nodes, and phases instead of isolated flowcharts",
+        "AI+ scenarios include data contracts, human review, non-digital alternatives, event response, and retirement conditions",
+        "NIST-style govern-map-measure-manage logic is translated into civic space and operation gates"
+      ],
+      "remaining_deductions": [
+        "No live simulation, agent prototype, or measured post-occupancy feedback is available at competition stage."
+      ]
+    },
+    {
+      "dimension_id": "implementation_feasibility",
+      "dimension_zh": "可实施性",
+      "weight_percent": 20,
+      "score_0_to_5": 4.3,
+      "weighted_score_100": 17.2,
+      "evidence": [
+        "Eight delivery projects are classified by owner type, partner, prerequisite, CAPEX/OPEX band, KPI, and stop condition",
+        "Three phases use G0-G4 gates from evidence lock to reversible retain/modify/remove decision",
+        "Unknown controls are deliberately not fabricated"
+      ],
+      "remaining_deductions": [
+        "Implementation cannot score 5 without official ownership, cost, traffic, utility, fire-safety, and approval-path confirmation."
+      ]
+    },
+    {
+      "dimension_id": "public_interest_inclusion",
+      "dimension_zh": "公共利益与包容性",
+      "weight_percent": 10,
+      "score_0_to_5": 4.6,
+      "weighted_score_100": 9.2,
+      "evidence": [
+        "Personas cover researchers, developers, students, residents, older people, operators, and international visitors",
+        "Every high-impact AI scenario requires human review and a non-digital service path",
+        "The public ground, accessibility, complaint, and rollback rules are represented in both text and drawings"
+      ],
+      "remaining_deductions": [
+        "Public-benefit claims are design assumptions until resident and stakeholder participation data are collected."
+      ]
+    },
+    {
+      "dimension_id": "risk_compliance",
+      "dimension_zh": "风险与合规意识",
+      "weight_percent": 10,
+      "score_0_to_5": 4.8,
+      "weighted_score_100": 9.6,
+      "evidence": [
+        "Provisional geometry is clearly labeled and never upgraded to official status",
+        "Copyright statement identifies original assets, CC-BY-SA-4.0 sharing, OSM attribution, and no reuse of case imagery",
+        "AI governance forbids automatic material decisions and requires audit, incident logging, and rollback"
+      ],
+      "remaining_deductions": [
+        "Actual data-processing agreements and legal review are future prerequisites."
+      ]
+    },
+    {
+      "dimension_id": "expression_completeness",
+      "dimension_zh": "表达完整度",
+      "weight_percent": 15,
+      "score_0_to_5": 4.4,
+      "weighted_score_100": 13.2,
+      "evidence": [
+        "A0 begins with a dominant overall masterplan and includes three key-area deepening, algorithm overlay, and implementation gates",
+        "A3 booklet, proposal HTML, static visual page, GeoJSON, metrics, manifest, and bilingual companions are synchronized",
+        "Metrics are kept as evidence rails and do not dominate the spatial drawings"
+      ],
+      "remaining_deductions": [
+        "Some drawing details remain diagrammatic rather than survey-accurate; English companion is an executive companion rather than full line-by-line translation."
+      ]
+    }
+  ],
+  "score_formula": "sum(score_0_to_5 / 5 * weight_percent)",
+  "critical_remaining_risks_before_95_plus": [
+    "Replace provisional boundary and key-area polygons with official CAD/GIS geometry.",
+    "Add measured street, building, utility, tree, heat, flow, ownership, and fire-safety baselines.",
+    "Convert diagrammatic key-area prototypes into dimensioned survey-backed plans and sections.",
+    "Add stakeholder/public participation evidence and a real operations budget.",
+    "Provide a full professional English translation if the final judging context requires equal bilingual depth."
+  ]
+}
