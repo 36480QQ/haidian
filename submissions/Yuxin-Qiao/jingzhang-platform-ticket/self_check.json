@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "summary": "本地确定性校验、视觉复核、专业复核通过；空间复核依赖的 shapely/pyproj 因网络受限未安装，以本地等价几何QA替代，官方依赖恢复后复跑。",
+  "checks": [
+    {
+      "check_id": "CHECK-DET",
+      "name": "确定性结构校验",
+      "result": "pass",
+      "severity": "blocking",
+      "summary": "文件清单、front matter、双语契约、指标结构、矩阵覆盖、哈希一致。",
+      "tool": "validate_local_submission.py"
+    },
+    {
+      "check_id": "CHECK-SPATIAL",
+      "name": "空间复核",
+      "result": "unknown",
+      "severity": "major",
+      "summary": "本地等价QA（拓扑、覆盖、面积复算）通过；官方 spatial_review.py 需 shapely/pyproj，网络恢复后复跑确认。",
+      "tool": "local geometry QA (pending spatial_review.py)"
+    },
+    {
+      "check_id": "CHECK-VISUAL",
+      "name": "视觉包装复核",
+      "result": "pass",
+      "severity": "blocking",
+      "summary": "离线静态HTML、必需栏目、data-metric与metrics.json一致。",
+      "tool": "visual_review.py"
+    },
+    {
+      "check_id": "CHECK-PROF",
+      "name": "专业证据复核",
+      "result": "pass",
+      "severity": "blocking",
+      "summary": "标准矩阵与设计深度矩阵覆盖完整。",
+      "tool": "professional_review.py"
+    },
+    {
+      "check_id": "CHECK-BILINGUAL",
+      "name": "双语契约",
+      "result": "pass",
+      "severity": "blocking",
+      "summary": "proposal.en.md、HTML、PDF、含文字图件均提供英文副本。",
+      "tool": "validate_submission.py"
+    },
+    {
+      "check_id": "CHECK-METRICS",
+      "name": "指标复算",
+      "result": "pass",
+      "severity": "blocking",
+      "summary": "面积与比例由geometry在EPSG:4548复算，与仓库维护者面积值一致。",
+      "tool": "gen_metrics.py"
+    },
+    {
+      "check_id": "CHECK-PREFLIGHT",
+      "name": "GitHub预检",
+      "result": "unknown",
+      "severity": "major",
+      "summary": "participant_preflight.py 需 gh 认证与网络；待认证后运行。",
+      "tool": "participant_preflight.py (pending)"
+    }
+  ]
+}
