@@ -6,7 +6,8 @@
       "result": "pass",
       "severity": "info",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary used with full disclosure (official_boundary=false, geometry_role=provisional_constraint); content scoring remains eligible. Replace with official redline when available."
+      "message": "This submission uses provisional boundary data, official redline boundary is pending release. Full-package recalculation will be required after official boundary polygon is published.",
+      "message_zh": "本投稿使用临时场地边界，官方红线边界待发布；官方多边形发布后需要整包重新计算。"
     },
     {
       "check_id": "KEY_AREAS_TRUST",
