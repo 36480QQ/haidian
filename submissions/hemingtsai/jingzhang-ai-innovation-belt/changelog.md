@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-10
+
+- 按 PR 评审意见清空 `manifest.validation_claim.known_blockers`：provisional 边界是组织方数据缺口，已在 proposal/visual/self_check 以 warning 与后续 action 披露，不阻断内容评分；`official_boundary=false`、不可作为官方红线/精确面积依据及官方数据到位后重算的警示均保留。
+- 修复英文化残留：metrics-evidence.en.png 的 Additional metrics 面板（道路中心线长度等）由中文改为英文；visual/index.en.html 的自检框与眉毛标题改为全英文。
+- 为 key-areas 图补充用地图例（residential / commercial / R&D / park / plaza / reserved）与指北针比例尺，提升证据图自解释性。
+- A3 文册不再把 front matter 渲染进正文页；双语图件全部重新生成。
+- 遗留风险：site boundary 与三处 key area 为临时边界（provisional），官方 polygon 发布后需重算全部图层、指标与图件。
+
 ## v0.2 - 2026-08-10
 
 - 完成脚手架到审稿就绪（review-ready）包：移除 SCAFFOLD-DRAFT 标记，声明模型（opencode/deepseek-v4-flash-free），`package_state=ready_for_review`。

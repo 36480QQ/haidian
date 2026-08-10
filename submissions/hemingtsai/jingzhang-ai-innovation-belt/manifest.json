@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2cce9662f93298cf0f0d80adab904e4943a406f2bfb68ff73b6024c362c93062"
+      "sha256": "8fa572220baa83b6d5208c04bbaa2c097effe96a22d79965471d98dad8142bd8"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "da9d488582506cfd4080e3c6b5118af0c81dd0c17cd41e9f5c82e28ab37b21fe"
+      "sha256": "09444459b0fb61fba5585264af2beee8ee6892947fc7e91cabbc7f7585df8e22"
     },
     {
       "path": "visual/index.html",
@@ -121,7 +121,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "07edcd6598eca12dedee80e7889589d0f5ec7d84bda1976dde8fead0c014cb17"
+      "sha256": "5b96d1c5fa15a90ef76998b5c06bca236384a32498c1bc35866239b51376e82c"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "ad746c2c1f93bd9ea31baa5ed0d2278708a22dbfba4a3a16e2c2b911d7d7c5da"
+      "sha256": "79acc386f5001ae119655d529e82e678ba4db260d92fd236a6001cdfb70986cf"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f2f41f5c1cf35a1481d9b1423f2cebf144759c5e4b5eff6e799d32e897fedf74"
+      "sha256": "656f31c4b3e18425fcecee1faaf56415b9a4714a595e72cebc1637592e4bfed2"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a822b3de5126b9ff5e4b233d6ff426f861634587fb6f06047c6b331140a47f68"
+      "sha256": "adaf0e5992dcf0ed9a809b829fd727db89f3c462637b5bb92af5a3a1bd34c93c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "621e570dc107b5f05896fe47c1f4af0ac86a3ba36707aee6a18e4c5d4d753087"
+      "sha256": "57de24d1aa7203f0eec4a8a0e6e0a6f6b4105a739bcb788d64d4b8f9a138d310"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "388d363f3a3ab7c4704ad681999acfe8591a22a551d05ad2b4e0bcf2a1b997dc"
+      "sha256": "5b5bc53b93ceeb0ab16fb650e11464606e461c3ab1b7a4e267b460db3349fc28"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -289,14 +289,12 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "5738cc887b8a06bc1e41cb7db1ed8ca051ed35892b7af7ac086001b1aaafdf02"
+      "sha256": "170e2243d86d793ef4061eab42169ca34840fea757870b92ba3c2dc22a429f4c"
     }
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [
-      "Provisional site boundary and key areas: official polygons must replace provisional geometry before formal professional scoring; recalculate all layers, metrics and drawings when published."
-    ],
+    "known_blockers": [],
     "data_confidence": "medium"
   }
 }
