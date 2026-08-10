@@ -13,9 +13,11 @@
     "geometry/site_boundary.geojson"
    ],
    "formula": "polygon_area(submitted_site_boundary)",
-   "confidence": "high",
+   "confidence": "medium",
    "assumptions": [
-    "Trusted official boundary is present in the site package."
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
    ]
   },
   "building_footprint_area_sqm": {
@@ -27,7 +29,11 @@
    ],
    "formula": "sum(polygon_area(building_footprints))",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
+   ]
   },
   "green_ratio": {
    "status": "known",
@@ -85,7 +91,11 @@
    ],
    "formula": "recomputed from submitted geometry",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
+   ]
   },
   "land_use_area_sqm": {
    "status": "known",
@@ -96,7 +106,11 @@
    ],
    "formula": "recomputed from submitted geometry",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
+   ]
   },
   "green_space_area_sqm": {
    "status": "known",
@@ -107,7 +121,11 @@
    ],
    "formula": "recomputed from submitted geometry",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
+   ]
   },
   "public_space_area_sqm": {
    "status": "known",
@@ -118,7 +136,11 @@
    ],
    "formula": "recomputed from submitted geometry",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [
+    "Geometry source is provisional (brief/site-package/geometry/provisional_boundaries.geojson).",
+    "Value is for proposal generation, display and temporary recomputation only; must be recomputed after official polygons are released.",
+    "Not for statutory planning, approval, or official area judgement."
+   ]
   }
  }
 }

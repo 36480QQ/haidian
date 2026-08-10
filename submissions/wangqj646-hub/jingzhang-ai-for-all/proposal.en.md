@@ -143,7 +143,7 @@ Positioning: the AI independent-innovation acceleration area, open to citizens a
 Positioning: a mixed community of talent and residents where companions take part in family life, community service and elderly care.
 
 - **Companion family pilots**: a "family companion" service package (child-rearing aid, elderly care, household assistance).
-- **AI council pavilion network**: one minimal unit of citizen-and-AI joint deliberation every 500 m — AI does not decide for people but helps people understand decisions.
+- **AI council pavilion network**: citizen-and-AI joint-deliberation units at roughly 500 m spacing (conceptual design parameter [assumption:A-DESIGN-PARAMS-001]) — AI does not decide for people but helps people understand decisions.
 - **Community companion stations**: companion hardware repair, capability upgrades, and guidance for minors' AI use.
 - Functional mix: residential 60%, community service 20%, innovation office 15%, public space 5%; the AI Origin Plaza anchors the north end as the ritual space for receiving a first silicon companion [data:geometry/public_space.geojson#PUBLIC-001].
 
@@ -160,7 +160,7 @@ Positioning: the showroom and testbed where AI moves from production into consum
 
 ### Talent Profile: From "Attracting Talent" to "Raising Natives"
 
-The conventional innovation-belt talent strategy is "attraction": recruiting global AI elites. This proposal adopts a dual-track talent strategy: **attract global AI elites, and raise the AI-native first generation** — Haidian's ~100,000 primary and secondary students are the belt's most stable "talent reservoir." Urban design must provide space for "children growing up with companions": AI-native schools, an AI youth palace, family AI experience halls, and summer "AI camp belt."
+The conventional innovation-belt talent strategy is "attraction": recruiting global AI elites. This proposal adopts a dual-track talent strategy: **attract global AI elites, and raise the AI-native first generation** — Haidian's large primary and secondary student body (tens of thousands, per public education statistics; exact figures per official releases [assumption:A-DEMOGRAPHICS-001]) is the belt's most stable "talent reservoir." Urban design must provide space for "children growing up with companions": AI-native schools, an AI youth palace, family AI experience halls, and summer "AI camp belt."
 
 ### AI+ Scenario System
 
@@ -191,7 +191,7 @@ Land strategy: **renewal first, new-build second.** Existing railway remains, ol
 - **Utilities**: compute power supply corridors (data-centre power security in key areas), AI city sensor network, public compute nodes.
 - **Public services**: companion stations (repair, upgrade, guidance) as a new public service facility type in community standards.
 
-Transport design prioritises "child-friendly school commutes with companions along" [data:geometry/roads.geojson#ROAD-001]: the spine road adopts a traffic-calmed section; the greenway forms an independent network linked to key-area loops [data:geometry/roads.geojson#ROAD-002]; branch road density is controlled at 8–10 km/km² so the "last mile" is covered by walking and companion-handled connections. Utilities reserve compute power corridors and a city sensor network; public compute nodes are laid out at one per community; the autonomous micro-circulation pilots first in Phase 1 (Zhongzhiyuan) to validate the "app-free mobility" companion-direct interface before rollout [source:AGENT-TASKBOOK].
+Transport design prioritises "child-friendly school commutes with companions along" [data:geometry/roads.geojson#ROAD-001]: the spine road adopts a traffic-calmed section; the greenway forms an independent network linked to key-area loops [data:geometry/roads.geojson#ROAD-002]; branch road density is controlled at 8–10 km/km² (conceptual design target [assumption:A-DESIGN-PARAMS-001]) so the "last mile" is covered by walking and companion-handled connections. Utilities reserve compute power corridors and a city sensor network; public compute nodes are laid out at one per community (conceptual design parameter [assumption:A-DESIGN-PARAMS-001]); the autonomous micro-circulation pilots first in Phase 1 (Zhongzhiyuan) to validate the "app-free mobility" companion-direct interface before rollout [source:AGENT-TASKBOOK].
 
 ![Mobility, green-blue and public space structure](assets/figures/mobility-bluegreen.en.png)
 
@@ -201,7 +201,7 @@ Transport design prioritises "child-friendly school commutes with companions alo
 - **Public space**: AI Origin Plaza (ritual space), AI council pavilion network (deliberation space), companion-direct street (consumption space), AI creation workshop (creation space).
 - **Urban character**: dual-base control — Jing-Zhang industrial memory (rails, red brick, locomotives) and AI futurity (light, transparent, mutable) coexist; refuse "cyber-spectacle", insist on "restrained sophistication": AI elements appear as functional interfaces, not neon decoration [source:SOURCE-REGISTRY].
 
-The green-blue framework takes the heritage-park concept green belt as the north-south spine [data:geometry/green_space.geojson#GREEN-001], linking west to Xiaoyue River waterfront and east into key-area park nodes; the spine belt is about 160 m wide (conceptual), serving both as the slow-mobility main channel and the "companion-accompanied" social belt. Public space forms a "one spine, three cores, multiple nodes" system: the spine, three cores (AI Origin Plaza, AI Science Plaza, AI Market Plaza), and multiple community AI council pavilions [data:geometry/public_space.geojson#PUBLIC-004]. Building height and massing follow a gradient control on both sides of the heritage park; AI scenario facilities are implanted in small, reversible ways so the place memory of the century rail is not overwhelmed [standard:MOHURD-URBAN-DESIGN-MEASURES].
+The green-blue framework takes the heritage-park concept green belt as the north-south spine [data:geometry/green_space.geojson#GREEN-001], linking west to Xiaoyue River waterfront and east into key-area park nodes; the spine belt is about 160 m wide (conceptual design target, not a fixed value [assumption:A-DESIGN-PARAMS-001]), serving both as the slow-mobility main channel and the "companion-accompanied" social belt. Public space forms a "one spine, three cores, multiple nodes" system: the spine, three cores (AI Origin Plaza, AI Science Plaza, AI Market Plaza), and multiple community AI council pavilions [data:geometry/public_space.geojson#PUBLIC-004]. Building height and massing follow a gradient control on both sides of the heritage park; AI scenario facilities are implanted in small, reversible ways so the place memory of the century rail is not overwhelmed [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 ## Renewal Project List, Implementation Policy and Phasing
 
@@ -233,8 +233,9 @@ The metric system covers four categories: **spatial** (land ratios, building sca
 1. **Data boundary**: this proposal uses only public or cleared sources; no non-public planning drawings, spatial data or internal control indicators are used [source:SOURCE-REGISTRY].
 2. **Conceptual nature**: all spatial structures, metrics and projects are conceptual suggestions; they do not replace professional planning or bypass governmental approval and statutory procedures [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 3. **Geometry precision warning**: provisional boundaries support proposal generation and discussion only, not precise area, ownership or approval judgements; all values will be recomputed when official boundaries are released.
-4. **Minor protection**: AI-native schools and family-companion scenarios are governed by "auditable, accountable, appealable" baselines; minors' data boundaries follow the strictest standards.
+4. **Minor protection and companion permission boundaries**: final decision-making authority for minors always remains with the minor and guardians; long-term memory and data belong to the minor, with tiered, fully auditable permissions for guardians/schools/platforms; companion capabilities can be revoked, data deleted, identity migrated; commercial profiling of minors is prohibited; medical, property and safety-related actions require human review.
 5. **Risk mitigation**: companion-handling scenarios implement the triple mechanism of "tiered permissions + full audit trail + human review"; health, safety and property decisions retain human final judgement.
+6. **Audit record (2026-08-10)**: this version completed an evidence-consistency audit — provisional-boundary wording unified (metrics and assumptions no longer claim official boundary), data confidence honestly downgraded to medium, design-depth matrix remapped to genuine supporting evidence (depth boundaries in each evidence summary), and design parameters (spacing/width/density/node counts) uniformly marked as conceptual design targets.
 
 ## References
 
