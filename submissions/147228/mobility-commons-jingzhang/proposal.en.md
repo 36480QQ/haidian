@@ -111,7 +111,7 @@ The package uses four labels for numbers. Read the label before reading the valu
 
 ## Risk Register: Unknown Is Not a Release, and Air Mobility Stays Blocked
 
-This package turns risk from a warning scattered across files into a readable review chain: every dimension has evidence paths, triggers, a non-AI equivalent, a stop action and an accountable role. The root `risk.json` supplies eight common risk dimensions; `visual/assets/mobility-risk-register.json` links them to all 18 current `unknown` metrics; `node visual/assets/run-mobility-risk-audit.js --check` checks that paths exist, states remain bounded, unknown metrics remain attached to a risk, and air-ground transfer remains `blocked_until_evidence`.
+This package turns risk from a warning scattered across files into a readable review chain. Every dimension has evidence paths, triggers, a non-AI equivalent, a stop action and an accountable role. The root `risk.json` supplies eight common risk dimensions; `visual/assets/mobility-risk-register.json` links them to all 18 current `unknown` metrics; `node visual/assets/run-mobility-risk-audit.js --check` checks that paths exist, states remain bounded, unknown metrics remain attached to a risk, and air-ground transfer remains `blocked_until_evidence`.
 
 | Review state | Meaning in this mobility package | Permitted next step | Prohibited leap |
 | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ The package separates policy direction, provisional space, synthetic proxies and
 | Administrative/open sources and methods | Statistics, policy, public methods, OSM and TDM research | Question calibration, data-collection priorities and mechanism reference | Local causal effects, partnership facts, siting or return on investment |
 | Field and stakeholder baseline (not yet obtained) | OD, accessibility walkthrough, complaint log, enterprise/resident input | Evidence needed later to decide P1/P2 entry | It cannot currently be replaced by a model, case or one event |
 
-The review rule is: `known` means only that a value is readable from package files; `unknown` must not be guessed; `design_target` is not field performance; `blocked` stops scale-up. A local PASS proves only that a structure or state machine can be replayed; it is not a field, professional or implementation finding.
+The review rule is simple. `known` means only that a value is readable from package files; `unknown` must not be guessed; `design_target` is not field performance; `blocked` stops scale-up. A local PASS proves only that a structure or state machine can be replayed; it is not a field, professional or implementation finding.
 
 Beijing’s 14th Five-Year transport plan frames one-hour door-to-door trips, integrated rail/bus/walking/cycling, public-transport priority and smart transport as policy directions [source:BEIJING-14TH-TRANSPORT-PLAN]. A current Haidian road-parking service tender combines order management, guidance, patrol, equipment inspection, exception handling, backend operations and complaint response. It demonstrates that a curb is an operated asset, not merely a line on a map [source:HAIDIAN-ROAD-PARKING-TENDER-2026]. A Haidian transport planning document requires transit-hub conditions, ground-floor public interfaces, bicycle interchange, emergency routes and traffic-impact review [source:BEIJING-HAIDIAN-TRANSIT-HUB-PDF]. None of these sources is a local baseline for this provisional study area.
 
@@ -229,7 +229,7 @@ Until that evidence exists, the first spatial moves remain removable signs, weat
 
 ### Mobility Commons identity and three public experience nodes
 
-The working name is “Mobility Commons Loop”. Its mark places enterprise, resident and rail entrances around an open loop that keeps a human exit. It is a proposed identity, not an approved official logo or event brand. Three public experience nodes sit at the enterprise mobility desk in Zhongzhiyuan, the human access desk in AI Origin community, and the rail transfer gallery at Dazhongsi. Together they form a future learning route: observe enterprise needs, use the resident entry, and review rail and curb conditions. “AI pilgrimage” here means public learning and review, not a built attraction, tourism result or scheduled event.
+The working name is “Mobility Commons Loop”. Its mark places enterprise, resident and rail entrances around an open loop that keeps a human exit. It is a proposed identity, not an approved official logo or event brand. Three public experience nodes sit at the enterprise mobility desk in Zhongzhiyuan, the human access desk in AI Origin community, and the rail transfer gallery at Dazhongsi. Together they form a future learning route that starts with enterprise needs, moves through the resident entry and ends with a review of rail and curb conditions. “AI pilgrimage” here means public learning and review, not a built attraction, tourism result or scheduled event.
 
 ![Mobility Commons identity and public experience nodes: enterprise, resident and rail entries keep a human exit](assets/figures/brand-system-board.en.svg)
 
