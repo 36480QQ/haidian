@@ -5,6 +5,8 @@ import sys
 import unittest
 from pathlib import Path
 
+from shapely.geometry import shape
+
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parents[2]
@@ -38,6 +40,56 @@ REQUIRED_MOBILITY_CLASSES = {
     "service_logistics",
     "emergency_access",
     "rail_station_background_relationship",
+}
+
+REQUIRED_KEY_AREA_CLASSES = {
+    "ZZY": {
+        "controlled_test_yard",
+        "safety_buffer",
+        "public_observation",
+        "human_review_gate",
+        "ordinary_public_path",
+        "cycle_test_loop",
+        "service_logistics",
+        "emergency_access",
+        "ecology_rainwater",
+        "physical_emergency_stop",
+        "enterprise_testing",
+        "public_testing_boundary",
+        "concept_massing",
+        "section_logic",
+    },
+    "ORG": {
+        "research",
+        "translation",
+        "prototype",
+        "open_source_commons",
+        "startup_incubation",
+        "permeability_path",
+        "neighborhood_service",
+        "talent_service",
+        "active_ground_floor",
+        "public_private_gradient",
+        "public_space",
+        "concept_massing",
+        "section_logic",
+    },
+    "DZS": {
+        "unresolved_station_relationship",
+        "pedestrian_convergence",
+        "cycleway",
+        "procurement_adoption",
+        "enterprise_service",
+        "consent",
+        "appeal",
+        "culture",
+        "international_talent_service",
+        "non_digital_fallback",
+        "public_private_service_gradient",
+        "public_space",
+        "concept_massing",
+        "section_logic",
+    },
 }
 
 
@@ -145,6 +197,60 @@ class GateBModelTests(unittest.TestCase):
         self.assertTrue(all(item["properties"]["evidence_class"] != "DESIGN TARGET" for item in background))
         self.assertTrue(all(item["properties"]["evidence_class"] == "DESIGN TARGET" for item in proposed))
         self.assertTrue(all(item["properties"]["statutory_green_claim"] is False for item in proposed))
+
+    def test_each_key_area_has_a_complete_spatial_prototype(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+
+        for endpoint, required in REQUIRED_KEY_AREA_CLASSES.items():
+            layer_name = f"{endpoint.lower()}_plan"
+            self.assertIn(layer_name, model["layers"])
+            classes = {
+                item["properties"]["semantic_class"]
+                for item in model["layers"][layer_name]["features"]
+            }
+            self.assertTrue(required <= classes, (endpoint, sorted(required - classes)))
+
+    def test_key_area_physical_objects_stay_within_provisional_study_polygons(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        boundaries = json.loads(
+            (REPO / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson").read_text(
+                encoding="utf-8"
+            )
+        )
+        boundary_by_endpoint = {
+            "ZZY": shape(next(item["geometry"] for item in boundaries["features"] if item["id"] == "PROV-KEY-001")),
+            "ORG": shape(next(item["geometry"] for item in boundaries["features"] if item["id"] == "PROV-KEY-002")),
+            "DZS": shape(next(item["geometry"] for item in boundaries["features"] if item["id"] == "PROV-KEY-003")),
+        }
+
+        for endpoint, boundary in boundary_by_endpoint.items():
+            self.assertIn(f"{endpoint.lower()}_plan", model["layers"])
+            for item in model["layers"][f"{endpoint.lower()}_plan"]["features"]:
+                if item["geometry"] is None:
+                    continue
+                self.assertTrue(boundary.covers(shape(item["geometry"])), item["id"])
+
+    def test_zzy_cycle_is_closed_and_dzs_station_relationship_is_unresolved(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        self.assertIn("zzy_plan", model["layers"])
+        self.assertIn("dzs_plan", model["layers"])
+        zzy_loop = next(
+            item for item in model["layers"]["zzy_plan"]["features"] if item["id"] == "ZZY-CYCLE-LOOP"
+        )
+        station = next(
+            item
+            for item in model["layers"]["dzs_plan"]["features"]
+            if item["id"] == "DZS-STATION-REL-UNRESOLVED"
+        )
+
+        self.assertEqual(zzy_loop["geometry"]["coordinates"][0], zzy_loop["geometry"]["coordinates"][-1])
+        self.assertEqual(station["properties"]["evidence_class"], "DATA_GAP")
+        self.assertEqual(station["properties"]["geometry_role"], "unresolved_context")
+        self.assertFalse(station["properties"]["physical_connection_claim"])
+        self.assertIsNone(station["geometry"])
 
 
 if __name__ == "__main__":

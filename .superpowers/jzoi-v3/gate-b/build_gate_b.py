@@ -530,6 +530,279 @@ def build_massing():
     return collection("jzoi_gate_b_massing", features)
 
 
+def key_feature(endpoint, feature_id, geometry, semantic_class, **properties):
+    return feature(
+        feature_id,
+        geometry,
+        semantic_class,
+        f"KEY-AREA-SCOPE-{endpoint}",
+        endpoint=endpoint,
+        confidence="low",
+        boundary_interpretation="provisional study polygon; not parcel or road redline",
+        **properties,
+    )
+
+
+def build_zzy_plan():
+    features = [
+        key_feature(
+            "ZZY",
+            "ZZY-CONTROLLED-YARD",
+            rect(116.3468, 40.0122, 116.3505, 40.0172, 0.0003),
+            "controlled_test_yard",
+            access_state="controlled during tests; ordinary public route remains outside",
+            scenario_refs=["SC-01", "SC-02", "SC-03"],
+            project_refs=["JZOI-P02"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-SAFETY-BUFFER",
+            rect(116.3462, 40.0116, 116.3511, 40.0178, 0.00035),
+            "safety_buffer",
+            buffer_status="design envelope; test-specific distance requires safety case",
+            public_access=False,
+            project_refs=["JZOI-P02"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-PUBLIC-OBSERVATION",
+            line([[116.3463, 40.0112], [116.3510, 40.0112]]),
+            "public_observation",
+            visibility="screened direct view to controlled yard",
+            public_path=True,
+            project_refs=["JZOI-P02"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-HUMAN-REVIEW-GATE",
+            point(116.3487, 40.0112),
+            "human_review_gate",
+            staffed_service=True,
+            non_digital_access=True,
+            fallback_state="manual check-in, printed test brief, physical stop control",
+            scenario_refs=["SC-01", "SC-03", "SC-04"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-ORDINARY-PUBLIC-PATH",
+            line(
+                [
+                    [116.3435, 40.0083],
+                    [116.3458, 40.0112],
+                    [116.3487, 40.0112],
+                    [116.3512, 40.0182],
+                    [116.3535, 40.0238],
+                ]
+            ),
+            "ordinary_public_path",
+            public_path=True,
+            access_intent="step-free bypass outside controlled test boundary",
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-CYCLE-LOOP",
+            line(
+                [
+                    [116.3442, 40.0090],
+                    [116.3528, 40.0090],
+                    [116.3528, 40.0242],
+                    [116.3442, 40.0242],
+                    [116.3442, 40.0090],
+                ]
+            ),
+            "cycle_test_loop",
+            loop_claim=True,
+            operating_modes=["ordinary cycle circulation", "booked controlled test"],
+            public_path=True,
+            project_refs=["JZOI-P03"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-LOGISTICS",
+            line([[116.3533, 40.0082], [116.3533, 40.0180], [116.3512, 40.0180]]),
+            "service_logistics",
+            public_path=False,
+            separation_rule="controlled access and timed operation",
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-EMERGENCY-ACCESS",
+            line([[116.3436, 40.0082], [116.3436, 40.0180], [116.3461, 40.0180]]),
+            "emergency_access",
+            public_path=False,
+            fail_safe_priority="unobstructed emergency route",
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-QINGHE-RAIN-GARDEN",
+            rect(116.3435, 40.0204, 116.3535, 40.0220, 0.00025),
+            "ecology_rainwater",
+            source_relation="Qinghe background point; exact bank and blue-line unknown",
+            water_boundary_claim=False,
+            functions=["rainwater detention intent", "habitat edge", "public walk"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-TEST-RAIL-STOP",
+            multi_line(
+                [
+                    [[116.3468, 40.0122], [116.3505, 40.0122]],
+                    [[116.3505, 40.0122], [116.3505, 40.0172]],
+                    [[116.3505, 40.0172], [116.3468, 40.0172]],
+                    [[116.3468, 40.0172], [116.3468, 40.0122]],
+                ]
+            ),
+            "physical_emergency_stop",
+            physical_control=True,
+            operational_state="red stop rail and manual isolation points during tests",
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-ENTERPRISE-TEST-BAY",
+            rect(116.3508, 40.0083, 116.3530, 40.0110, 0.00025),
+            "enterprise_testing",
+            access_state="booked enterprise test support; no automatic public access",
+            project_refs=["JZOI-P02"],
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-PUBLIC-TEST-BOUNDARY",
+            line([[116.3462, 40.0116], [116.3511, 40.0116], [116.3511, 40.0178]]),
+            "public_testing_boundary",
+            boundary_type="operational design boundary",
+            legal_boundary_claim=False,
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-MASSING-FRAME",
+            rect(116.3441, 40.0084, 116.3460, 40.0110, 0.00025),
+            "concept_massing",
+            object_status="new_design_volume",
+            height_hierarchy="medium",
+            height_status="relative_design_envelope",
+            frontage="active public/testing interface",
+        ),
+        key_feature(
+            "ZZY",
+            "ZZY-SECTION-A",
+            line([[116.3434, 40.0146], [116.3535, 40.0146]]),
+            "section_logic",
+            sequence=["ordinary city", "public observation", "safety buffer", "controlled yard", "test support"],
+        ),
+    ]
+    return collection("jzoi_gate_b_zzy_plan", features)
+
+
+def build_org_plan():
+    features = [
+        key_feature("ORG", "ORG-RESEARCH", rect(116.3426, 39.9840, 116.3450, 39.9868, 0.00025), "research", project_refs=["JZOI-P04"]),
+        key_feature("ORG", "ORG-TRANSLATION", rect(116.3454, 39.9840, 116.3472, 39.9868, 0.00022), "translation", project_refs=["JZOI-P04"]),
+        key_feature("ORG", "ORG-PROTOTYPE", rect(116.3478, 39.9840, 116.3496, 39.9868, 0.00022), "prototype", project_refs=["JZOI-P04", "JZOI-P05"]),
+        key_feature("ORG", "ORG-OPEN-SOURCE-COMMONS", rect(116.3452, 39.9874, 116.3498, 39.9896, 0.00028), "open_source_commons", public_path=True, ground_floor_access="open public commons during operating hours"),
+        key_feature("ORG", "ORG-STARTUP-INCUBATION", rect(116.3500, 39.9840, 116.3524, 39.9868, 0.00025), "startup_incubation", project_refs=["JZOI-P05"]),
+        key_feature(
+            "ORG",
+            "ORG-FOUR-WAY-PERMEABILITY",
+            multi_line(
+                [
+                    [[116.3422, 39.9885], [116.3528, 39.9885]],
+                    [[116.3475, 39.9838], [116.3475, 39.9932]],
+                    [[116.3424, 39.9855], [116.3475, 39.9885]],
+                    [[116.3526, 39.9915], [116.3475, 39.9885]],
+                ]
+            ),
+            "permeability_path",
+            public_path=True,
+            directions=["west", "east", "south", "north"],
+            access_intent="step-free four-direction public network; grades require survey",
+        ),
+        key_feature("ORG", "ORG-NEIGHBORHOOD-SERVICE", rect(116.3426, 39.9902, 116.3450, 39.9929, 0.00025), "neighborhood_service", non_digital_access=True, project_refs=["JZOI-P05"]),
+        key_feature("ORG", "ORG-TALENT-SERVICE", rect(116.3500, 39.9902, 116.3524, 39.9929, 0.00025), "talent_service", non_digital_access=True, project_refs=["JZOI-P10"]),
+        key_feature(
+            "ORG",
+            "ORG-ACTIVE-GROUND-FLOOR",
+            multi_line(
+                [
+                    [[116.3428, 39.9872], [116.3468, 39.9872]],
+                    [[116.3482, 39.9898], [116.3522, 39.9898]],
+                ]
+            ),
+            "active_ground_floor",
+            ground_floor_programs=["commons", "translation desk", "neighborhood service", "startup showcase"],
+        ),
+        key_feature(
+            "ORG",
+            "ORG-PUBLIC-PRIVATE-GRADIENT",
+            rect(116.3450, 39.9869, 116.3500, 39.9901, 0.00025),
+            "public_private_gradient",
+            sequence=["public commons", "shared translation", "booked prototype", "controlled research"],
+        ),
+        key_feature("ORG", "ORG-COMMONS-ROOM", rect(116.3462, 39.9877, 116.3488, 39.9893, 0.0002), "public_space", public_path=True, project_refs=["JZOI-P04"]),
+        key_feature("ORG", "ORG-COURTYARD-MASSING", rect(116.3502, 39.9872, 116.3523, 39.9896, 0.0003), "concept_massing", object_status="concept_building", height_hierarchy="medium", height_status="relative_design_envelope", courtyard_logic=True),
+        key_feature("ORG", "ORG-SECTION-A", line([[116.3423, 39.9885], [116.3527, 39.9885]]), "section_logic", sequence=["campus context", "research", "commons", "startup", "neighborhood context"]),
+    ]
+    return collection("jzoi_gate_b_org_plan", features)
+
+
+def build_dzs_plan():
+    features = [
+        feature(
+            "DZS-STATION-REL-UNRESOLVED",
+            None,
+            "unresolved_station_relationship",
+            "KEY-AREA-SCOPE-DZS",
+            evidence_class="DATA_GAP",
+            design_status="background_reference",
+            geometry_role="unresolved_context",
+            endpoint="DZS",
+            source_feature_id="EX-TRANSIT-003",
+            physical_connection_claim=False,
+            station_entrance_claim=False,
+            interface_condition="background station relationship cannot be reconciled to provisional polygon",
+        ),
+        key_feature(
+            "DZS",
+            "DZS-PEDESTRIAN-CONVERGENCE",
+            multi_line(
+                [
+                    [[116.3423, 39.9470], [116.3546, 39.9470]],
+                    [[116.3485, 39.9443], [116.3485, 39.9495]],
+                    [[116.3430, 39.9446], [116.3485, 39.9470], [116.3540, 39.9492]],
+                ]
+            ),
+            "pedestrian_convergence",
+            public_path=True,
+            station_connection_claim=False,
+        ),
+        key_feature("DZS", "DZS-CYCLEWAY", line([[116.3424, 39.9480], [116.3545, 39.9480]]), "cycleway", public_path=True),
+        key_feature("DZS", "DZS-PROCUREMENT-ADOPTION", rect(116.3489, 39.9444, 116.3513, 39.9464, 0.00022), "procurement_adoption", project_refs=["JZOI-P06"]),
+        key_feature("DZS", "DZS-ENTERPRISE-SERVICE", rect(116.3517, 39.9444, 116.3543, 39.9464, 0.00022), "enterprise_service", project_refs=["JZOI-P07"]),
+        key_feature("DZS", "DZS-CONSENT-ROOM", rect(116.3454, 39.9444, 116.3472, 39.9462, 0.0002), "consent", non_digital_access=True, project_refs=["JZOI-P06"]),
+        key_feature("DZS", "DZS-APPEAL-ROOM", rect(116.3430, 39.9444, 116.3448, 39.9462, 0.0002), "appeal", non_digital_access=True, project_refs=["JZOI-P06"]),
+        key_feature("DZS", "DZS-CULTURE-ROOM", rect(116.3426, 39.9483, 116.3456, 39.9494, 0.0002), "culture", project_refs=["JZOI-P07"]),
+        key_feature("DZS", "DZS-INTERNATIONAL-TALENT", rect(116.3510, 39.9483, 116.3542, 39.9494, 0.0002), "international_talent_service", non_digital_access=True, project_refs=["JZOI-P10"]),
+        key_feature(
+            "DZS",
+            "DZS-HUMAN-DESK",
+            point(116.3477, 39.9470),
+            "non_digital_fallback",
+            staffed_service=True,
+            operational_state="printed forms, spoken support, manual queue and appeal intake",
+        ),
+        key_feature(
+            "DZS",
+            "DZS-SERVICE-GRADIENT",
+            rect(116.3458, 39.9463, 116.3510, 39.9477, 0.00018),
+            "public_private_service_gradient",
+            sequence=["public arrival", "consent and orientation", "staffed service", "enterprise review", "controlled adoption"],
+        ),
+        key_feature("DZS", "DZS-SWITCHBOARD-PLAZA", rect(116.3464, 39.9462, 116.3505, 39.9478, 0.0002), "public_space", public_path=True, project_refs=["JZOI-P06"]),
+        key_feature("DZS", "DZS-SWITCH-MASSING", rect(116.3488, 39.9482, 116.3505, 39.9494, 0.00018), "concept_massing", object_status="new_design_volume", height_hierarchy="landmark", height_status="relative_design_envelope", statutory_height_claim=False),
+        key_feature("DZS", "DZS-SECTION-A", line([[116.3424, 39.9470], [116.3545, 39.9470]]), "section_logic", sequence=["city edge", "appeal", "public switchboard", "adoption service", "city edge"], station_connection_claim=False),
+    ]
+    return collection("jzoi_gate_b_dzs_plan", features)
+
+
 def build_all(root=ROOT, write=True):
     root = Path(root)
     boundaries = read_json(REPO / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson")
@@ -543,6 +816,9 @@ def build_all(root=ROOT, write=True):
         "mobility": build_mobility(existing),
         "blue_green_heritage": build_blue_green_heritage(existing),
         "massing": build_massing(),
+        "zzy_plan": build_zzy_plan(),
+        "org_plan": build_org_plan(),
+        "dzs_plan": build_dzs_plan(),
     }
     model = {
         "model_id": "JZOI-GATE-B",
