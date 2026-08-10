@@ -35,6 +35,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![场地总览图：统筹研究范围、总体设计范围、京张遗址公园绿脉主轴与三大重点区域示意（provisional boundary）](assets/figures/site-overview.png)
 
+## 三区两翼与区域协作
+
+在三大 REPO 基础上，方案进一步明确「三区两翼」的空间-机制回路与区域协作网络（对应 agent.1 功能统筹与 1.5.1 统筹研究要求）：
+
+- **西翼·中关村科技服务翼**：依托中关村大街沿线科技服务、风险投资与专业服务资源，以协议横线·中（原点缝合带）为界面，建立「社区仓—科技服务翼」的成果转化与融资-评审回路：孵化器街区向西接入风投与专业服务，创业项目经 Open-PR 评审后进入中试与融资通道。
+- **东翼·小月河场景赋能翼**：依托小月河沿线 AI+消费、AI+文旅场景资源，以协议横线·南（大钟寺缝合带）为界面，建立「应用仓—场景赋能翼」的测试-运营回路：智能终端与数据要素场景向东接入真实消费与文旅流量，测试结果回流治理协议层。
+- **区域协作**：向北衔接北纬社区与未来科学城（基础研究-算力协同），向东呼应怀柔科学城（科学装置-大模型训练协同），向南联系经开区（智造-场景落地协同），融入京津冀 AI 创新网络；协作关系以 `report/case_studies.md` 的 AI 生态图谱与 `assets/figures/regional-collaboration.png` 表达 [assumption:A-REGIONAL-001]。
+
+![三区两翼协同结构图](assets/figures/regional-collaboration.png)
+
 ## 统筹研究范围产业与未来城市研究
 
 **总体概念：开源城市操作系统。** 百年京张铁路是中国自主创新的起点，中关村是中国开源与软件产业的起点。方案把两者合流为「京张代码 OPEN-JZ」：城市不再是一次性绘制的图纸，而是持续演进的代码库——公共空间、产业空间与治理机制都是可版本化的模块，城市更新即提交（commit）、评审（review）、合并（merge）、可回滚（revert）。公众是评审者，开发者是贡献者，政府是维护者 [source:AGENT-TASKBOOK]。
@@ -55,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 总体设计范围提出「**MAIN + REPO + PROTOCOL**」空间结构 [depth:overall_spatial_structure]：
 
-- **MAIN 主线**：京张遗址公园绿脉，南北贯通的概念公共主轴，慢行优先、历史叙事、AI 体验。在 `geometry/green_space.geojson` 中以绿脉带表达 [data:geometry/green_space.geojson#GRN-001]。
+- **MAIN 主线**：京张遗址公园绿脉，南北贯通的概念公共主轴（长约 9km，由绿脉几何在 EPSG:4548 投影下复算，见 `metrics.json` 复算日志），慢行优先、历史叙事、AI 体验。在 `geometry/green_space.geojson` 中以绿脉带表达 [data:geometry/green_space.geojson#GRN-001]。
 - **三大 REPO**：众智园（训练仓）、北京AI原点社区（社区仓）、大钟寺（应用仓），以 `geometry/key_areas.geojson` 三个重点区承载，内部以 `geometry/buildings.geojson` 表达概念更新建筑基底 [data:geometry/buildings.geojson#BLDG-001]。
 - **三层 PROTOCOL 横线**：三条东西缝合带分别承载数据流通、场景测试与伦理治理接口，以 `geometry/roads.geojson` 概念道路表达东西缝合关系 [data:geometry/roads.geojson#ROAD-001]。
 
@@ -128,9 +138,38 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **蓝绿空间**：以京张遗址公园绿脉为主干（MAIN 主线，`geometry/green_space.geojson#GRN-001`），三处节点绿地为支点，形成"一带三珠"蓝绿网络；绿脉承担慢行贯通、历史叙事、AI 体验与生态调节复合功能 [data:geometry/green_space.geojson#GRN-001]。绿地率由绿脉与节点绿地面积复算（`metrics.json` 的 `green_ratio`），属设计建议口径，非官方绿地率控制指标（官方 green_ratio 缺失）[metric:green_ratio]。
 
-**公共空间**：形成"3 朝圣地标 + 8 场景节点"体系（`geometry/public_space.geojson`，11 个节点）：朝圣地标包括京张原点站·开源纪念碑广场（社区仓）、众智算塔·训练状态观测台（训练仓）、大钟寺 AI 钟楼广场（应用仓）；场景节点沿绿脉布置，支撑场景卡 S01-S10 [data:geometry/public_space.geojson#PUB-001]。公共空间以点要素表达，面状缓冲与精细化设计留待深化。
+**公共空间**：形成「3 朝圣地标 + 8 场景节点」体系（`geometry/public_space.geojson`，11 个面状要素）：朝圣地标包括京张原点站·开源纪念碑广场（社区仓）、众智算塔·训练状态观测台（训练仓）、大钟寺 AI 钟楼广场（应用仓）；场景节点沿绿脉布置，支撑场景卡 S01-S10 [data:geometry/public_space.geojson#PUB-001]。公共空间已由点节点升级为**面状概念范围**（朝圣地标 0.8-1.2ha、场景节点约 0.5ha），`public_space_area_sqm ≈ 5.4ha`，可支持空间供给判断；面状缓冲为概念建议，非审定用地 [metric:public_space_area_sqm]。
 
 **城市风貌**：提出终端美学控制——深夜蓝底色、荧光绿主色、代码白文字；公共标识采用"信号灯·状态灯"语言（绿=正常运行、黄=试验中、红=需人工评审），与百年铁路信号文化同构，形成可识别的 AI 城市气质。风貌控制属于概念引导，不替代法定城市设计要求。
+
+## AI 场景卡（完整版）与全球案例
+
+**10 张 AI 场景卡完整版**：每张卡均含定位、用户旅程、输入数据、AI 能力、基础设施、运营主体、失败模式、隐私与人工复核八要素，见 `report/scenario_cards.md`；场景—空间—运营矩阵与隐私影响评估（PIA）要求同见该文件。
+
+**全球 AI 创新生态对标（8 例）**：新加坡榜鹅数字园区、多伦多 Sidewalk（教训案例）、赫尔辛基 Kalasatama、杭州城市大脑、丰田 Woven City、巴塞罗那 22@、上海模速空间、纽约 Hudson Yards，逐例说明对 OPEN-JZ 的启示与公开来源，见 `report/case_studies.md`；土地/资金/人才/算力/数据/场景六要素闭环见图 `assets/figures/ai-ecosystem.png`。
+
+![AI 生态六要素闭环图](assets/figures/ai-ecosystem.png)
+
+## 公共利益与包容性设计
+
+儿童、残障人士、低收入居民、非数字用户（老年群体）、夜间工作者的实际障碍与设计对策、共创方式、无障碍标准（GB 50763）、服务可负担性、隐私影响评估、人工申诉与非 AI 替代通道、利益冲突处理，见 `report/public_interest.md`；公共空间组件库（休憩/活动/智慧/绿色/无障碍/夜间六类组件）同见该文件与 `assets/figures/public-space-kit.png`。
+
+![公共空间组件库图](assets/figures/public-space-kit.png)
+
+## 实施矩阵与运营机制
+
+**实施矩阵**：一至三期 12 项概念项目，逐项给出牵头/协同主体、前置条件、审批节点、成本量级、试点验收指标与回滚触发器（安全/隐私/文保/生态/经济五类），见 `report/implementation_matrix.md`，回应可实施性深化的要求。
+
+**全球 AI 创新活动体系与长期运营（agent.6）**：JZ-CON 年度大会、季度黑客马拉松、月度 Open-PR 公众评审日、朝圣开放日、国际招引周；品牌 IP 与开源许可策略；开发者社区运营；年度《场景开放清单》与国际招引转化漏斗；运营理事会与财务三来源（公共财政+场景运营收益+社会资本），见 `report/operations.md`。
+
+## 视觉识别规范
+
+OPEN-JZ Logo（京张铁路工字钢轨截面 × 代码尖括号同构，三色状态灯）与标志网格、最小尺寸、黑白版、安全区、授权字体（思源黑体 OFL）、状态灯公共标识语言，见 `report/visual_identity.md`；Logo 图见 `assets/figures/logo.png`。
+
+## 约束来源与版权台账
+
+- 既有轨道、站点、文保保护带等约束要素的逐要素来源绑定与待核验假设，见 `report/constraint_sources.md`；不能证明的要素不写入事实性表述。
+- 逐资产版权与来源台账（字体、库、自产资产、外部引用、AI 生成声明、再分发许可），见 `report/asset_ledger.md`；本包全部字体为开源许可，无第三方图片素材。
 
 ## 更新项目清单、实施政策与分期计划
 

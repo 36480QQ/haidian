@@ -10,10 +10,9 @@
     "name_zh": "一期·首次提交（2026-2028）北京AI原点社区先行",
     "phase_type": "origin_commit",
     "provisional_constraint": true,
-    "source_type": "agent_generated_design",
+    "source_type": "agent_design_intent",
     "confidence": "medium",
-    "geometry_role": "provisional_constraint",
-    "phase_note": "分期为概念建议，对应提交-合并-交付的开源协作节奏"
+    "geometry_role": "provisional_constraint"
    },
    "geometry": {
     "type": "Polygon",
@@ -56,10 +55,9 @@
     "name_zh": "二期·合并主分支（2028-2030）众智园+绿脉贯通",
     "phase_type": "main_merge",
     "provisional_constraint": true,
-    "source_type": "agent_generated_design",
+    "source_type": "agent_design_intent",
     "confidence": "medium",
-    "geometry_role": "provisional_constraint",
-    "phase_note": "分期为概念建议，对应提交-合并-交付的开源协作节奏"
+    "geometry_role": "provisional_constraint"
    },
    "geometry": {
     "type": "Polygon",
@@ -102,10 +100,9 @@
     "name_zh": "三期·持续交付（2030-2035）大钟寺+全域运营",
     "phase_type": "continuous_delivery",
     "provisional_constraint": true,
-    "source_type": "agent_generated_design",
+    "source_type": "agent_design_intent",
     "confidence": "medium",
-    "geometry_role": "provisional_constraint",
-    "phase_note": "分期为概念建议，对应提交-合并-交付的开源协作节奏"
+    "geometry_role": "provisional_constraint"
    },
    "geometry": {
     "type": "Polygon",
