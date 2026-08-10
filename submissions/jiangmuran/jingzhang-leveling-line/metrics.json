@@ -546,7 +546,7 @@
     },
     "field_census_corpus_size": {
       "status": "known",
-      "value": 373,
+      "value": 381,
       "unit": "count",
       "assumption_ids": [
         "A-CORPUS-001"
@@ -574,6 +574,24 @@
       "confidence": "high",
       "assumptions": [
         "机器人与 AI 公共服务两条赛道；空白表由该文件生成。"
+      ]
+    },
+    "phased_share_of_design_scope": {
+      "status": "known",
+      "value": 0.25588,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(phase_increments)) / area(site_boundary), EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为 provisional_constraint，非官方 redline；官方 polygon 发布后须整体重算。",
+        "分母为总体设计范围。本包只对实际提出要建的东西分期——水准网及其试点单元；其余为留白街区，在权属与控规公开前不代为编排时序。该比例低不等于分期不完整，等于本方案提出的干预范围就是这么大。"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
       ]
     }
   }

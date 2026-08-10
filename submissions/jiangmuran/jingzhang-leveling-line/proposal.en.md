@@ -28,7 +28,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
 | What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 8/8 cases including 6 refusal branches |
-| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 21 of 373 (5.1%, thinnest of the eight), AI public services 32 | `visual/assets/field_map.json`; the census script is re-runnable |
+| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 22 of 381 (5.8%, thinnest of the eight), AI public services 32 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | Three `evidence_class: regulatory_baseline` entries in `sources.json`, with article locators and how each was verified |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
@@ -55,7 +55,7 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 At no point in that day does she need to understand the words "closure error". She needs to know two things: **that her question was written down**, and **that if the answers do not agree, what stops is the service — not her treatment.**
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 373 merged proposals at the most recent measurement, 221 declare the governance track, and evidence-chain language appears in 31.1% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **14 of 373 by label (5.1%)**, the thinnest of the eight tracks and exactly half the next (youth-friendly public space, 28); `ai-public-services` is **30 (8.9%)**, next after it. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 381 merged proposals at the most recent measurement, 246 declare the governance track, and evidence-chain language appears in 31.1% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **22 of 381 by label (5.8%)**, the thinnest of the eight tracks, with youth-friendly public space next at 35; `ai-public-services` is **36 (9.4%)**, next after it. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
 
 ## Design Basis and Source List
 
@@ -77,7 +77,7 @@ Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. T
 
 An instrument that claims to make city AI re-measurable should first be pointed at the object closest to home.
 
-This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 373 merged proposals and PR numbers past 1000, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
+This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 381 merged proposals and PR numbers past 1000, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
 
 **Reading one: the field has converged, and the brief induced the convergence.**
 
@@ -85,16 +85,33 @@ This is not a comment on the organisers' work. It is **the thing they most lack 
 
 | Structural motif | Proposals | Share |
 |---|---|---|
-| Three cores / three stations | 192 | 51.5% |
-| Two wings | 147 | 39.4% |
-| One spine / one belt | 115 | 30.8% |
-| Evidence chain / recomputable | 112 | 30.0% |
+| Three cores / three stations | 198 | 52.0% |
+| Two wings | 152 | 39.9% |
+| One spine / one belt | 117 | 30.7% |
+| Evidence chain / recomputable | 113 | 29.7% |
 
 <!-- MOTIFS:END -->
 
 The taskbook prescribes "three areas, two wings", so more than half the field draws the same skeleton. That is not consensus; it is the question shape. **Drawing that skeleton again adds nothing.** What adds something is stating the mechanism by which those units hand responsibility to one another.
 
-**Reading two: track coverage is severely uneven.** 252 proposals declare traffic and walkability (67.6%), 242 governance (65.4%), 218 enterprise services (59.1%) — against **21** for robotics and autonomous mobility (5.1%), with youth-friendly public space and AI public services tied for next-thinnest at **34** each (9.0%).
+**Reading two: track coverage is severely uneven.**
+
+<!-- TRACKS:BEGIN -->
+
+| Track | Proposals | Share |
+|---|---|---|
+| Traffic and walkability | 258 | 67.7% |
+| Civic agent governance | 246 | 64.6% |
+| Enterprise services and industry | 221 | 58.0% |
+| Jing-Zhang heritage narrative | 149 | 39.1% |
+| AI origin community | 119 | 31.2% |
+| **AI public services** | **36** | 9.4% |
+| Youth-friendly public space | 35 | 9.2% |
+| **Robotics and autonomous mobility** | **22** | 5.8% |
+
+Across 381 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are the tracks this proposal works in, and the two thinnest in the field.
+
+<!-- TRACKS:END -->
 
 **These figures changed twice in this version, and the second time because the instrument was wrong — which has to be said.** The census front-matter reader recognised only `tracks: ["a", "b"]` and could not see the YAML block form:
 
@@ -112,9 +129,9 @@ Labels are not coverage, and that distinction matters. Reading every proposal in
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
-`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 267 filled in, **106 (28.4%) still hold the scaffold placeholder or are empty**.
+`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 276 filled in, **105 (27.6%) still hold the scaffold placeholder or are empty**.
 
-And the 267 that are filled in use **117 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **55 different ways** across 168 proposals.
+And the 276 that are filled in use **119 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **55 different ways** across 174 proposals.
 
 **No one can aggregate "which models produced this call" from that field.**
 
