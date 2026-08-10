@@ -1,0 +1,1491 @@
+{
+  "type": "FeatureCollection",
+  "name": "buildings_human_zigzag",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLD-001",
+      "properties": {
+        "id": "BLD-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 9309.5,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34075047187167,
+              39.94491037816599
+            ],
+            [
+              116.34105757843209,
+              39.944912124087644
+            ],
+            [
+              116.34102693218625,
+              39.94810623482591
+            ],
+            [
+              116.34071981134541,
+              39.948104488707784
+            ],
+            [
+              116.34075047187167,
+              39.94491037816599
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-002",
+      "properties": {
+        "id": "BLD-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11928.96,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3439575001043,
+              39.9446649677524
+            ],
+            [
+              116.34435047400386,
+              39.9446671908153
+            ],
+            [
+              116.3443199389678,
+              39.94786572332623
+            ],
+            [
+              116.34392694676977,
+              39.947863500012836
+            ],
+            [
+              116.3439575001043,
+              39.9446649677524
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-003",
+      "properties": {
+        "id": "BLD-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11937.21,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34574380374625,
+              39.944668934775855
+            ],
+            [
+              116.34613677780885,
+              39.94467115178431
+            ],
+            [
+              116.34610630491714,
+              39.947871895199306
+            ],
+            [
+              116.34571331254337,
+              39.947869677940865
+            ],
+            [
+              116.34574380374625,
+              39.944668934775855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-004",
+      "properties": {
+        "id": "BLD-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11961.93,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3511027181482,
+              39.9446806707121
+            ],
+            [
+              116.35149569269677,
+              39.94468286955723
+            ],
+            [
+              116.35146540692837,
+              39.94789024567525
+            ],
+            [
+              116.35107241403064,
+              39.94788804658167
+            ],
+            [
+              116.3511027181482,
+              39.9446806707121
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-005",
+      "properties": {
+        "id": "BLD-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "医疗设施",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0806",
+        "area_sqm_declared": 11970.17,
+        "building_role": "医疗设施",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35288902409938,
+              39.94468452764607
+            ],
+            [
+              116.35328199880885,
+              39.94468672043675
+            ],
+            [
+              116.35325177564499,
+              39.94789630745267
+            ],
+            [
+              116.35285878257372,
+              39.94789411441406
+            ],
+            [
+              116.35288902409938,
+              39.94468452764607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-006",
+      "properties": {
+        "id": "BLD-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 7383.12,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35448955486405,
+              39.9448502689696
+            ],
+            [
+              116.35473184957719,
+              39.944851617782604
+            ],
+            [
+              116.35470168278113,
+              39.9480623985929
+            ],
+            [
+              116.35445937674247,
+              39.948061049627334
+            ],
+            [
+              116.35448955486405,
+              39.9448502689696
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-007",
+      "properties": {
+        "id": "BLD-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 11134.91,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34040510755068,
+              39.959414469426534
+            ],
+            [
+              116.3407706027977,
+              39.95941654847263
+            ],
+            [
+              116.34073976743684,
+              39.962627312264
+            ],
+            [
+              116.34037425509682,
+              39.96262523298276
+            ],
+            [
+              116.34040510755068,
+              39.959414469426534
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-008",
+      "properties": {
+        "id": "BLD-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11974.62,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34381829563308,
+              39.95922292624647
+            ],
+            [
+              116.34421135284086,
+              39.95922515045
+            ],
+            [
+              116.34418067862137,
+              39.962435916565724
+            ],
+            [
+              116.34378760303174,
+              39.962433692110636
+            ],
+            [
+              116.34381829563308,
+              39.95922292624647
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-009",
+      "properties": {
+        "id": "BLD-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11974.62,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34560491965645,
+              39.95923302552501
+            ],
+            [
+              116.34599797706252,
+              39.959235243671486
+            ],
+            [
+              116.34596738639704,
+              39.96244601092874
+            ],
+            [
+              116.3455743106091,
+              39.962443792531396
+            ],
+            [
+              116.34560491965645,
+              39.95923302552501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-010",
+      "properties": {
+        "id": "BLD-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11974.62,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3491781704016,
+              39.95925314148574
+            ],
+            [
+              116.34957122820256,
+              39.959255347518074
+            ],
+            [
+              116.34954080464559,
+              39.962466117049054
+            ],
+            [
+              116.34914772846264,
+              39.96246391076723
+            ],
+            [
+              116.3491781704016,
+              39.95925314148574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-011",
+      "properties": {
+        "id": "BLD-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "智能原生商业综合体",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "05",
+        "area_sqm_declared": 11974.62,
+        "building_role": "智能原生商业综合体",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35096479711841,
+              39.95926315816786
+            ],
+            [
+              116.35135785511604,
+              39.95926535814311
+            ],
+            [
+              116.35132751511355,
+              39.96247612880629
+            ],
+            [
+              116.35093443873393,
+              39.96247392858221
+            ],
+            [
+              116.35096479711841,
+              39.95926315816786
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-012",
+      "properties": {
+        "id": "BLD-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "医疗设施",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0806",
+        "area_sqm_declared": 11974.62,
+        "building_role": "医疗设施",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35275142472814,
+              39.959273147317745
+            ],
+            [
+              116.35314448292189,
+              39.9592753412359
+            ],
+            [
+              116.35311422647403,
+              39.962486113028156
+            ],
+            [
+              116.35272114989829,
+              39.962483918861885
+            ],
+            [
+              116.35275142472814,
+              39.959273147317745
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-013",
+      "properties": {
+        "id": "BLD-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 8100.83,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354378731158,
+              39.95927603639965
+            ],
+            [
+              116.3546446351156,
+              39.959277516998675
+            ],
+            [
+              116.3546144488316,
+              39.962488289739994
+            ],
+            [
+              116.35434853243852,
+              39.96248680897353
+            ],
+            [
+              116.354378731158,
+              39.95927603639965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-014",
+      "properties": {
+        "id": "BLD-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 11974.62,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34018967375835,
+              39.97344645974661
+            ],
+            [
+              116.34058281214355,
+              39.973448696909834
+            ],
+            [
+              116.34055195267598,
+              39.97665945278411
+            ],
+            [
+              116.34015879589587,
+              39.97665721536789
+            ],
+            [
+              116.34018967375835,
+              39.97344645974661
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-015",
+      "properties": {
+        "id": "BLD-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "文化记忆馆舍",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0803",
+        "area_sqm_declared": 11974.62,
+        "building_role": "文化记忆馆舍",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34367874412482,
+              39.97381730200581
+            ],
+            [
+              116.34407188491026,
+              39.97381952735297
+            ],
+            [
+              116.34404118831462,
+              39.977030285270935
+            ],
+            [
+              116.34364802913392,
+              39.97702805967211
+            ],
+            [
+              116.34367874412482,
+              39.97381730200581
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-016",
+      "properties": {
+        "id": "BLD-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "文化记忆馆舍",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0803",
+        "area_sqm_declared": 11974.62,
+        "building_role": "文化记忆馆舍",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34546574804696,
+              39.973827406477106
+            ],
+            [
+              116.34585888903085,
+              39.97382962576408
+            ],
+            [
+              116.3458282760502,
+              39.97704038482406
+            ],
+            [
+              116.345435116671,
+              39.97703816528611
+            ],
+            [
+              116.34546574804696,
+              39.973827406477106
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-017",
+      "properties": {
+        "id": "BLD-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "教育科研建筑",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0804",
+        "area_sqm_declared": 11974.62,
+        "building_role": "教育科研建筑",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34903975859189,
+              39.97384753278087
+            ],
+            [
+              116.349432899971,
+              39.97384973994749
+            ],
+            [
+              116.34940245422071,
+              39.97706050128215
+            ],
+            [
+              116.34900929444622,
+              39.97705829386594
+            ],
+            [
+              116.34903975859189,
+              39.97384753278087
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-018",
+      "properties": {
+        "id": "BLD-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3508267652097,
+              39.973857554613296
+            ],
+            [
+              116.35121990678563,
+              39.97385975571971
+            ],
+            [
+              116.35118954465077,
+              39.97707051818702
+            ],
+            [
+              116.35079638467944,
+              39.97706831683169
+            ],
+            [
+              116.3508267652097,
+              39.973857554613296
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-019",
+      "properties": {
+        "id": "BLD-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 6299.06,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3540843739191,
+              39.97129809917964
+            ],
+            [
+              116.35430080863078,
+              39.97129930500937
+            ],
+            [
+              116.35427193879785,
+              39.974367116715754
+            ],
+            [
+              116.35405549441079,
+              39.97436591075574
+            ],
+            [
+              116.3540843739191,
+              39.97129809917964
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-020",
+      "properties": {
+        "id": "BLD-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "人才住区组团",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0701",
+        "area_sqm_declared": 8150.54,
+        "building_role": "人才住区组团",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34062659533669,
+              39.986446359704246
+            ],
+            [
+              116.34089423610351,
+              39.98644788197631
+            ],
+            [
+              116.34086337701525,
+              39.98965863082944
+            ],
+            [
+              116.3405957237198,
+              39.989657108385224
+            ],
+            [
+              116.34062659533669,
+              39.986446359704246
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-021",
+      "properties": {
+        "id": "BLD-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "文化记忆馆舍",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0803",
+        "area_sqm_declared": 11974.62,
+        "building_role": "文化记忆馆舍",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34532647491166,
+              39.98842175016698
+            ],
+            [
+              116.34571969953431,
+              39.988423970594944
+            ],
+            [
+              116.34568906422028,
+              39.991634721456855
+            ],
+            [
+              116.3452958211889,
+              39.99163250077781
+            ],
+            [
+              116.34532647491166,
+              39.98842175016698
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-022",
+      "properties": {
+        "id": "BLD-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "教育科研建筑",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0804",
+        "area_sqm_declared": 11974.62,
+        "building_role": "教育科研建筑",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34890124581051,
+              39.988441886818144
+            ],
+            [
+              116.34929447082875,
+              39.98844409511951
+            ],
+            [
+              116.34926400286709,
+              39.99165484825705
+            ],
+            [
+              116.34887075944008,
+              39.99165263970598
+            ],
+            [
+              116.34890124581051,
+              39.988441886818144
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-023",
+      "properties": {
+        "id": "BLD-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35068863260643,
+              39.988451913803
+            ],
+            [
+              116.35108185782164,
+              39.988454116041055
+            ],
+            [
+              116.35105147353637,
+              39.99166487031174
+            ],
+            [
+              116.35065822991234,
+              39.99166266782467
+            ],
+            [
+              116.35068863260643,
+              39.988451913803
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-024",
+      "properties": {
+        "id": "BLD-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 111.71,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34118667257816,
+              39.997705891931645
+            ],
+            [
+              116.34121622976942,
+              39.99770605994433
+            ],
+            [
+              116.34121240005032,
+              39.998104588227825
+            ],
+            [
+              116.34118284268726,
+              39.99810442021279
+            ],
+            [
+              116.34118667257816,
+              39.997705891931645
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-025",
+      "properties": {
+        "id": "BLD-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34339933561652,
+              40.003005941727714
+            ],
+            [
+              116.34379264374024,
+              40.00300816936355
+            ],
+            [
+              116.34376190233766,
+              40.006218910883646
+            ],
+            [
+              116.34336857579184,
+              40.00621668299594
+            ],
+            [
+              116.34339933561652,
+              40.003005941727714
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-026",
+      "properties": {
+        "id": "BLD-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34518710016776,
+              40.00301605659106
+            ],
+            [
+              116.34558040849026,
+              40.00301827816048
+            ],
+            [
+              116.34554975082466,
+              40.006229020823554
+            ],
+            [
+              116.34515642408005,
+              40.00622679900294
+            ],
+            [
+              116.34518710016776,
+              40.00301605659106
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-027",
+      "properties": {
+        "id": "BLD-027",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34876263197528,
+              40.00303620359396
+            ],
+            [
+              116.34915594069363,
+              40.00303841303056
+            ],
+            [
+              116.34912545050251,
+              40.006249157970224
+            ],
+            [
+              116.34873212336193,
+              40.00624694828381
+            ],
+            [
+              116.34876263197528,
+              40.00303620359396
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-028",
+      "properties": {
+        "id": "BLD-028",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.62,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35055039922658,
+              40.00304623573344
+            ],
+            [
+              116.35094370814208,
+              40.0030484391036
+            ],
+            [
+              116.3509133016884,
+              40.006259185176894
+            ],
+            [
+              116.35051997435065,
+              40.00625698155759
+            ],
+            [
+              116.35055039922658,
+              40.00304623573344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-029",
+      "properties": {
+        "id": "BLD-029",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 5222.18,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35374991769433,
+              40.00606616774752
+            ],
+            [
+              116.35393800441976,
+              40.00606721642764
+            ],
+            [
+              116.3539103995195,
+              40.00899535193411
+            ],
+            [
+              116.35372230475886,
+              40.00899430314588
+            ],
+            [
+              116.35374991769433,
+              40.00606616774752
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-030",
+      "properties": {
+        "id": "BLD-030",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11974.25,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34325940159856,
+              40.017597516852234
+            ],
+            [
+              116.34365279346753,
+              40.01759974563327
+            ],
+            [
+              116.34362203058888,
+              40.020810379246484
+            ],
+            [
+              116.34322862028493,
+              40.02080815021348
+            ],
+            [
+              116.34325940159856,
+              40.017597516852234
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-031",
+      "properties": {
+        "id": "BLD-031",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11949.52,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34862395149933,
+              40.017616039122515
+            ],
+            [
+              116.34901734389597,
+              40.01761824969404
+            ],
+            [
+              116.34898689544418,
+              40.02082225562621
+            ],
+            [
+              116.34859348465058,
+              40.020820044805276
+            ],
+            [
+              116.34862395149933,
+              40.017616039122515
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-032",
+      "properties": {
+        "id": "BLD-032",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11941.27,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3504121361902,
+              40.01762215802944
+            ],
+            [
+              116.35080552876161,
+              40.017624362531116
+            ],
+            [
+              116.35077518488826,
+              40.02082615922689
+            ],
+            [
+              116.35038177393253,
+              40.020823954476676
+            ],
+            [
+              116.3504121361902,
+              40.01762215802944
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-033",
+      "properties": {
+        "id": "BLD-033",
+        "layer": "BUILDING_FOOTPRINT",
+        "name_zh": "AI科研与加速楼宇",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "0802",
+        "area_sqm_declared": 11924.79,
+        "building_role": "AI科研与加速楼宇",
+        "floors_estimate": "concept_unknown"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35377468408326,
+              40.01848812164308
+            ],
+            [
+              116.35416808188886,
+              40.018490314769465
+            ],
+            [
+              116.35413793593598,
+              40.021687692371145
+            ],
+            [
+              116.35374451977059,
+              40.02168549899784
+            ],
+            [
+              116.35377468408326,
+              40.01848812164308
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

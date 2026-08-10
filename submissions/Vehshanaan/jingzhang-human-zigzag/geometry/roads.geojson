@@ -1,0 +1,376 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_human_zigzag",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34176280419935,
+            39.94625690294795
+          ],
+          [
+            116.34354909016415,
+            39.946267031193116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34162321889633,
+            39.96081595030141
+          ],
+          [
+            116.34340988359324,
+            39.96082608374205
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34148319268105,
+            39.975410315607235
+          ],
+          [
+            116.34327023730634,
+            39.97542045425813
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35220551214745,
+            39.97546668818337
+          ],
+          [
+            116.353992562055,
+            39.97547666154566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34134306431565,
+            39.99000464364557
+          ],
+          [
+            116.34313048914643,
+            39.990014787508926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 148.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3520678740955,
+            39.99003892339643
+          ],
+          [
+            116.35380944817564,
+            39.990048646230846
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34121084987687,
+            40.00376495229051
+          ],
+          [
+            116.3429986334405,
+            40.00377510107046
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35192954693662,
+            40.00467339594509
+          ],
+          [
+            116.35371735801125,
+            40.00468337957085
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-009",
+      "properties": {
+        "id": "ROAD-009",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 79.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34193735584893,
+            40.017152779479744
+          ],
+          [
+            116.34287030622293,
+            40.01715807361427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-010",
+      "properties": {
+        "id": "ROAD-010",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "片区连接道路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "land_use_code": "1207",
+        "road_class": "secondary",
+        "design_role": "east_west_connection",
+        "length_m_declared": 152.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35179189437851,
+            40.01922584385717
+          ],
+          [
+            116.35358008512632,
+            40.0192358326
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-011",
+      "properties": {
+        "id": "ROAD-011",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "京张遗址公园慢行主脊（人字带一撇）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "road_class": "greenway",
+        "design_role": "north_south_spine",
+        "length_m_declared": 9723.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34763787996586,
+            39.938957140177216
+          ],
+          [
+            116.34680452307504,
+            40.02652320970816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-012",
+      "properties": {
+        "id": "ROAD-012",
+        "layer": "ROAD_CENTERLINE",
+        "name_zh": "东部创新服务干路",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "road_class": "secondary",
+        "design_role": "north_south_service",
+        "length_m_declared": 9723.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35344270253401,
+            39.93898965727983
+          ],
+          [
+            116.35261675971906,
+            40.0265558272455
+          ]
+        ]
+      }
+    }
+  ]
+}
