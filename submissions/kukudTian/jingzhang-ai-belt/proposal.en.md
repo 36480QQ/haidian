@@ -5,6 +5,7 @@ language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "2"
 translation_file: "proposal.md"
+translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Open-source city operating system: MAIN line + three core repositories + three protocol layers; urban renewal as commit-review-merge-revert. Two wings (Zhongguancun tech-services / Xiaohe River scenario-empowerment) and regional collaboration with Future Science City, Huairou Science City and E-Town. Generated on provisional boundary with precision warnings."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
