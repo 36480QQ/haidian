@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present and labeled provisional_constraint; replace with official redline before professional scoring. Recompute all layers and metrics after replacement."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas (PROV-KEY-001/002/003) are present as provisional_constraint; replace with official polygons before professional scoring."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use polygons fully partition the submitted site boundary without gaps or overlaps (verified with shapely unary_union in EPSG:4326 and area recomputation in EPSG:4548)."
+    },
+    {
+      "check_id": "BUILDING_PLACEMENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/buildings.geojson",
+      "message": "Representative building footprints lie inside the site boundary and do not overlap green-space polygons."
+    },
+    {
+      "check_id": "PHASING_PARTITION",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/phasing.geojson",
+      "message": "Phasing polygons fully partition the site boundary without gaps or overlaps; phase areas sum to the site area."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static offline HTML visualization generated without CDN, remote tiles, external scripts, fonts, iframes, forms or API calls; metric values match metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes readable narrative covering the six agent tasks, 10+ scenario cards, 3+ test scenarios, 5+ personas, 3+ pilgrimage landmarks, with claim-adjacent evidence markers referencing sources, standards, depth items, geometry and metrics."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Bilingual contract version 1 declared; proposal.en.md provided as equivalent standalone translation with aligned sections, claims, metrics, evidence references and figure positions."
+    },
+    {
+      "check_id": "DATA_GAP",
+      "result": "pass",
+      "severity": "info",
+      "target": "assumptions.json",
+      "message": "Official boundary, regulatory controls, existing buildings, ownership, municipal and transport engineering data gaps are recorded as pending items; organizer data gaps do not block content scoring."
+    }
+  ]
+}
