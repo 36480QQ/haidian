@@ -13,10 +13,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "confidence_note": "Polygon geometry derives from provisional boundary; cannot be treated as a precise official redline area until the organiser issues official SITE_BOUNDARY polygons."
     },
     "land_use_partition_area_sqm": {
       "status": "known",
@@ -26,10 +27,11 @@
         "geometry/land_use.geojson"
       ],
       "formula": "sum(polygon_area(land_use_features))",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "confidence_note": "Land-use polygons are derived from provisional boundary; figures are recomputable from geometry but cannot be cited as official land-use statistics."
     },
     "land_use_gap_ratio": {
       "status": "known",
@@ -40,10 +42,11 @@
         "geometry/land_use.geojson"
       ],
       "formula": "abs(site_area - land_use_sum) / site_area",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "confidence_note": "Gap ratio is computed against provisional site boundary; will be recomputed when official polygons are issued."
     },
     "key_detailed_design_area_sqm": {
       "status": "known",
@@ -122,10 +125,11 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "min(1, sum(phase_area_sqm) / site_area_sqm)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
-      ]
+      ],
+      "confidence_note": "Phase polygons are concept-grade and are derived from provisional boundary; coverage proves geometric inclusion only, not regulatory phasing."
     },
     "key_area_count": {
       "status": "known",
@@ -135,8 +139,11 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "A-BOUNDARY-001"
+      ],
+      "confidence_note": "Three provisional polygons exist; the official count and polygons remain pending from the organiser."
     },
     "global_case_count": {
       "status": "known",
