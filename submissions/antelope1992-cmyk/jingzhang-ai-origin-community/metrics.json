@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Site boundary is the maintainer-provided PROVISIONAL boundary (brief/site-package/geometry/provisional_boundaries.geojson#PROV-SITE-001), not an official redline; area is recomputed on the provisional polygon and must be re-run after official geometry is published."
       ]
     },
     "building_footprint_area_sqm": {

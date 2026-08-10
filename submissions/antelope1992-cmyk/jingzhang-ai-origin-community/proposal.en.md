@@ -46,6 +46,8 @@ The overall concept is a "human-machine symbiotic urban innovation cell", formin
 <!--AGENT1-->
 This proposal establishes an original **naming system "ORIGIN"**: "Beijing AI Origin Community" as root brand, with three sub-brands — "ORIGIN Lab (R&D sourcing)", "ORIGIN Court (living symbiosis)", "ORIGIN Rail (heritage activation)" [depth:concept]. The logo concept is "a rail bending into an infinity sign ∞": derived from the Jing-Zhang rail profile, its ends curve into a Möbius loop [standard:design_depth]. Colors use "rail basalt + signal orange + data cyan", all self-drawn; no third-party trademarks, fonts or images are used [source:report/copyright_statement.md].
 
+The three sub-brands' operation mechanisms are concept proposals: "ORIGIN Lab" organizes R&D collaboration as an **open-source community + compute/data interface**, suggested to be co-run by university consortia and professional institutions, with outputs returned to the community as public datasets and open tools; "ORIGIN Court" organizes renewal and governance through **community deliberation + flexible renewal**, with a suggested pilot in the near-campus mixed block serving young talent and local residents; "ORIGIN Rail" activates heritage through **cultural narrative + slow-mobility experience**, operated mainly for public benefit and public cultural activities, with commercial scenarios bounded by low-intervention and auditable operation. The specific actors, timing and inputs require professional and official review and are not finalized arrangements [depth:operation].
+
 <!--AGENT2-->
 The naming follows the red line of "no copying existing names, no unauthorized trademarks"; this proposal supports the ecosystem with **scenario openness, compute supply and data circulation**, serving enterprises, universities and startups [standard:industry_support]. The following 8 are publicly verifiable global AI-ecosystem case references used to extract mechanisms, not to promise replication [source:data/source_registry.json] [depth:background]:
 
@@ -67,6 +69,18 @@ The naming follows the red line of "no copying existing names, no unauthorized t
 **Case 8 · Eindhoven (Brainport)**: triple-helix co-investment network of firms, government, universities.
 
 These cases are mechanism references only; this proposal's local ecosystem ideas are concept proposals; recruitment, funding and policy are not finalized matters [depth:concept].
+
+**AI Innovation Ecosystem Map (factor × mechanism matrix, concept proposal)**:
+
+| Factor | Supply mechanism | Interface mechanism | Governance mechanism |
+| --- | --- | --- | --- |
+| University sourcing | joint labs, open courses | open patent/outcome catalog | academic ethics and compliance review |
+| Open-source community | code/dataset hosting, evaluation sandbox | open API, contributor incentives | open-source license and attribution rules |
+| Startups | low-cost flexible space, compute voucher (proposed) | scenario-open application channel | registration and auditable operation |
+| Capital | proof-of-concept fund (proposed, not a commitment) | roadshows and matchmaking | disclosure and conflict-of-interest management |
+| Talent | talent-zone policy (proposed) | settlement/housing/education support | fair hiring and anti-discrimination |
+| Data | de-identified public data open catalog | data sandbox and compliance interface | privacy impact assessment and minimization |
+| Scenarios | open city problem list | pilot selection and monitoring | human review and exit mechanism |
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -178,6 +192,17 @@ Landmark design respects heritage, green-space and blue-line constraints; no una
 
 <!--AGENT6-->
 The proposal forms a reviewable renewal project list with location, type, function, responsible actor, dependencies, phase, risk and evaluation metrics [depth:renewal_project_list]. `geometry/phasing.geojson` expresses phasing; this proposal splits the A2 provisional boundary by latitude into a three-phase concept (north launch, mid mix, south deepen) [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
+
+The table below is a **concept-level renewal project list (pilot suggestions)**; locations, actors, phases and indicators are for professional teams to deepen and do not constitute government decisions or implementation commitments [depth:renewal_project_list]:
+
+| ID | Project (concept) | A2 sub-area/location | Function | Responsible actor (suggested) | Suggested phase | Core indicator (suggested) | Preconditions |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| UP-01 | ORIGIN Lab Phase 1 | North · near-campus block | open-source R&D, compute sharing, evaluation sandbox | university consortium + professional operator | pilot (years 1-2) | resident teams, public datasets, test scenarios live | official boundary & control conditions, ownership coordination |
+| UP-02 | ORIGIN Court Demo | Mid · mixed block | talent housing, community services, living support | district government + community organizations + renewal actor | pilot | talent housing units, community service coverage | renewal policy & ownership conditions |
+| UP-03 | ORIGIN Rail Cultural Corridor | South · along heritage park | cultural display, memory narrative, public space | heritage authority + cultural operator | deepening study | annual visitors, wayfinding coverage | heritage approval, space handover |
+| UP-04 | AI Scenario Open Testbed | whole area · coupled with public space & rail stations | scenario validation, data sandbox, public experience | scenario operator + research team | deepening study | scenarios live, privacy-compliance pass rate | data interfaces, privacy-compliance plan |
+| UP-05 | Station-integrated Micro-center | around Wudaokou / Qinghua East Rd West stations | interchange, service, display integration | rail operator + local government | concept deepening | slow-mobility connection rate, station service coverage | rail planning, engineering feasibility study |
+| UP-06 | Open Source Innovation Season | whole area · co-creation plaza nodes | events, communication, attraction & conversion | operator + developer community | continuous | participating teams, international reach | event approval, budget arrangements |
 
 Operation is envisioned as a "open-source community + professional institution" dual wheel: an annual open-source innovation season, a maintained developer community, and a proposal-review-landing translation channel [depth:operation]. These activities are discussable ideas, not finalized arrangements; recruitment and funding are possibilities, not promises [standard:operation]. Translation path: concept proposal → professional team deepening → official review → pilot → evaluation iteration.
 

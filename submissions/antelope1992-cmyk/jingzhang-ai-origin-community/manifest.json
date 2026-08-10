@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "079f0e4f116dc9b0df531604a429f8ecddb904a00e9871d1432d4d1b38e42d16"
+      "sha256": "e561278c8c272414862a87b5050b5890d79f5439b165dac4285e5740912324b1"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "be539e870cc0e0587f76ccecd3ec6cddf35fdd1c89d6b03741b4b525a2304bdd"
     },
     {
       "path": "assumptions.json",
@@ -203,7 +203,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
+      "sha256": "d24a7a305fc673f8c307d579e9a013d4369bebc10d4d9b5a923697b810b0f27b"
     },
     {
       "path": "proposal.en.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0da8e7e26d9b198446b590539bfb0364924ce4aa5c5f405c2318f87cfec59f68"
+      "sha256": "af9d04853d8c47775d9676c30481afee950ba6149791605e9457f1d6347c266a"
     },
     {
       "path": "report/proposal.en.html",

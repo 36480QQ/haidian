@@ -9,6 +9,7 @@
         "id": "SITE-001",
         "layer": "SITE_BOUNDARY",
         "source_type": "agent_inferred_from_public_data",
+        "adopted_from_feature": "PROV-SITE-001",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "scope_id": "overall_design_area",
