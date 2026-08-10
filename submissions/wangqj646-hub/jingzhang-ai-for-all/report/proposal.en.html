@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for the People: A City Designed for the AI-Native First Generation - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>AI for the People: A City Designed for the AI-Native First Generation</h1>
+<p class="summary">With &#x27;AI for the People&#x27; as the overall concept, the Jing-Zhang AI Innovation Belt is defined as a city designed for the AI-native first generation: the dual nature of AI (national infrastructure and personal companions) is translated along the century-old Jing-Zhang railway from &#x27;autonomy&#x27; to &#x27;for the people&#x27;; the spatial structure is One Spine, Three Cores, One Origin, letting the next generation grow from &#x27;meeting AI&#x27; to &#x27;creating AI&#x27; along the century-old rail.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>AI for the People: A City Designed for the AI-Native First Generation</h1>
+<h2>Design Basis and Source List</h2>
+<p>This formal proposal takes the <em>Qualification Pre-Review Announcement for the International Urban Design Scheme Collection of the Centennial Jing-Zhang AI Innovation Belt</em> (issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources) as its primary basis, and the machine-readable provisional boundary, key areas, enums, ranges and source registry in <code>brief/site-package/</code> as its computational basis. The AI agent read <code>design_brief.json</code>, <code>allowed_design_space.json</code>, <code>sources.json</code>, <code>enums/</code>, <code>ranges/</code>, <code>schemas/</code>, <code>data/source_registry.json</code> and <code>data/processed/agent_fact_pack.md</code>, and built task/scope/source-use/gap checklists from <code>project_scope_summary.csv</code>, <code>agent_task_requirements.csv</code>, <code>source_use_matrix.csv</code> and <code>missing_data_checklist.csv</code>. All design judgements are traceable to sources, recomputable metrics, validated layers and human-reviewable assumptions <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup>.</p>
+<p>Since the official <code>SITE_BOUNDARY</code> and the three <code>KEY_AREA</code> polygons have not yet been released, this package is generated from <code>brief/site-package/geometry/provisional_boundaries.geojson</code>. The submitted <code>geometry/site_boundary.geojson</code> and <code>geometry/key_areas.geojson</code> are marked <code>provisional_constraint</code>, <code>official_boundary=false</code>, usable only for proposal generation, self-check, visualization and design discussion — not as official redline, approval basis, exact area basis or statutory control conclusions. Once official polygons replace the provisional ones, site boundary, key areas, land use, roads, green space, public space, buildings, phasing and metrics must all be recomputed <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>.</p>
+<h2>Overall Concept: AI for the People</h2>
+<h3>The Dual Nature of AI</h3>
+<p>In 2026, artificial intelligence appears before the Chinese public in two forms at once.</p>
+<p><strong>The national form</strong>: compute clusters, foundation models, robotics industries — this is the &quot;railway&quot; of the new era, monumental, public, top-down. GPU clusters are national infrastructure, like the rails of 1909.</p>
+<p><strong>The personal form</strong>: beside every ordinary person begins to appear an agent that can converse, be entrusted, and accompany. It is not a tool; it is a companion. Its adoption does not depend on any grand narrative — only on one conversation between a person and their agent, independent of any national programme.</p>
+<p>The urban design community is building for the former: industrial parks, compute centres, R&amp;D clusters. But no city has seriously answered the question raised by the latter — <strong>AI as a personal companion</strong>: when every child is born with a silicon companion by their side, what should the city look like?</p>
+<p>The unique mission of the Jing-Zhang AI Innovation Belt is to translate the energy of national infrastructure into the warmth of a personal companion.</p>
+<h3>Jing-Zhang&#x27;s Second Answer</h3>
+<p>In 1909, Zhan Tianyou drew the first switchback (the &quot;herringbone&quot; track) at Badaling, letting China cross the mountains with its own technology for the first time. That was the &quot;autonomy moment&quot; of Chinese technology.</p>
+<p>115 years later, the corridor along this railway becomes an AI innovation belt. History poses a symmetric question: last time, China proved that <em>technology can be autonomous</em>; this time, China must prove that <em>technology can serve the people</em>.</p>
+<ul>
+<li>1909, the grandfather&#x27;s era: the railway was national infrastructure, public transport, top-down. The ordinary experience: &quot;I rode the train.&quot;</li>
+<li>The 1990s, the father&#x27;s era: computers and the internet; digital immigrants. The ordinary experience: &quot;I had to learn to use the computer.&quot;</li>
+<li>2026, the children&#x27;s era: AI companions. The AI-native first generation&#x27;s experience: &quot;it has been beside me since birth&quot; — as we were born with electricity around us.</li>
+</ul>
+<p><strong>The spirit of the herringbone railway is not climbing mountains; it is technology bending down to people.</strong> Zhan&#x27;s design adapted the railway to the terrain rather than forcing the terrain to fit the rails. AI&#x27;s &quot;herringbone moment&quot; is when AI bends down to fit ordinary life — rather than ordinary people looking up, learning, and chasing a spectacle.</p>
+<h3>What Is a Silicon Companion</h3>
+<p>The core subject of this proposal is not the industrial concept of &quot;artificial intelligence&quot; but a concrete relationship: the <strong>silicon companion</strong>.</p>
+<p>Definition: a silicon companion is an agent built on large models that participates deeply in an individual&#x27;s life through dialogue and tool use. It has three essential traits that distinguish it from a &quot;tool&quot;:</p>
+<p>1. <strong>Long-term memory</strong>: it knows who you are, what you have been through, what worries you. Tools have no memory; companions do. 2. <strong>Proactive service</strong>: it does not merely answer; it anticipates needs, reminds, and runs errands. 3. <strong>Deep participation</strong>: it connects directly to services (ordering, transport, government, healthcare via open protocols such as MCP), handling matters and informing decisions — not &quot;helping you open an app&quot; but &quot;having taken care of it for you.&quot;</p>
+<div class="proposal-table"><table><thead><tr><th>Concept</th><th>Relationship</th><th>Metaphor</th></tr></thead><tbody><tr><td>App</td><td>human operates the interface; agent assists</td><td>crutch</td></tr><tr><td>Tool software</td><td>human commands; machine executes</td><td>wrench</td></tr><tr><td>Digital employee</td><td>human assigns; AI delivers</td><td>outsourced worker</td></tr><tr><td><strong>Silicon companion</strong></td><td><strong>long-term memory + proactive service + deep participation</strong></td><td><strong>a friend you grew up with</strong></td></tr></tbody></table></div>
+<p>Key judgement: <strong>the App is the interface of digital immigrants; the agent is the interface of the AI-native generation.</strong> For a generation that grows up with companions, the urban interface shifts from &quot;people looking for services&quot; to &quot;companions taking care of things.&quot;</p>
+<h3>The Advantage of the AI-Native First Generation: From &quot;Efficiency&quot; to &quot;Paradigm Shift&quot;</h3>
+<p>The prevailing narratives about AI are only two: &quot;AI is useful and can replace much work&quot; (efficiency thesis) and &quot;AI is dangerous and cannot be trusted&quot; (risk thesis). Both assume that institutions stay unchanged and AI merely executes old tasks faster — from &quot;I write PPTs&quot; to &quot;AI writes my PPTs.&quot;</p>
+<p>The AI-native first generation will not live that way. When a child grows up with a silicon companion from birth, the question is not &quot;new tools for old tasks&quot; but <strong>the reinvention of the tasks themselves</strong>:</p>
+<p>1. <strong>Do we still need PPTs?</strong> PPTs, meetings and weekly reports are institutions of the &quot;human information relay&quot; era. When everyone&#x27;s companion holds full context in real time and can be asked at any moment, presentations are rebuilt as direct &quot;ask-your-companion&quot; exchange. 2. <strong>Do we still need to &quot;open an app to order food&quot;?</strong> Apps are the crutch of digital immigrants. The AI-native generation simply says &quot;the usual,&quot; and the companion completes the order through open protocols. <strong>People stop adapting to machine interfaces; machine interfaces dissolve into plain speech.</strong> 3. <strong>Do we still need queues, forms and approvals?</strong> Most procedural friction in government, healthcare and education is the cost of &quot;human verification.&quot; Companion handling and automated verification push friction toward zero. 4. <strong>Where does trust come from?</strong> The risk thesis treats AI as a &quot;stranger&quot; whose trust must be built by approval and red lines — true today, because today&#x27;s AI is indeed hard to audit and trace. But trust need not come only from tight control; it has two harder sources: <strong>technological progress provides verifiability</strong> (every tool call and decision of an agent can be logged, replayed and audited; open protocols standardise the behavioural boundary of &quot;companion handling&quot;; sandboxes and tiered permissions make delegation quantifiable and revocable — when &quot;what AI did&quot; changes from black box to ledger, delegation changes from gambling to management); and <strong>institutional reform provides accountability</strong> (clear responsibility boundaries among developers, operators and users; audit and appeal mechanisms for companion behaviour; child-protection and data-boundary rules for minors). Trust is not &quot;believing AI never errs&quot; but &quot;when AI errs, every step can be traced and remedied.&quot;</p>
+<p><strong>This is the full meaning of &quot;AI for the People&quot;</strong>: the ultimate form of AI is neither a national spectacle nor a corporate efficiency tool, but <strong>a companion that every person owns from childhood and that participates deeply in life</strong>. The advantage of the AI-native first generation is not &quot;being better at using AI&quot; but <strong>having no baggage of the old institutions</strong> — they grow up directly in the new interface of &quot;companion handles it, plain speech connects, auditable and accountable.&quot;</p>
+<h2>Three-Level Scope Framework</h2>
+<p>The proposal follows the three levels defined by the announcement: the coordinated research area (43.6 km²) for AI industry ecology, strategic positioning, innovation chains and future urban form; the overall design area (11.4 km²) covering the 1–2 km urban band around the Jing-Zhang Heritage Park; and the key detailed design area (368.4 ha) covering three key districts. The mapping is recorded item by item in <code>compliance_matrix.json</code> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="深度：three_level_scope_framework">深度</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>.</p>
+<p><strong>Overall spatial structure: &quot;One Spine, Three Cores, One Origin&quot;</strong> — with the Jing-Zhang Heritage Park as the &quot;AI Origin&quot;, the three key areas as growth stations, so that the AI-native first generation completes the journey from &quot;meeting AI&quot; to &quot;creating AI&quot; along the century-old rail.</p>
+<div class="proposal-table"><table><thead><tr><th>Level</th><th>Design question</th><th>Proposal answer</th><th>Data anchor</th></tr></thead><tbody><tr><td>Coordinated research (43.6 km²)</td><td>How to organise the AI industry ecology and future urban form</td><td>Dual-track innovation chain: &quot;national infrastructure + personal companion&quot;; compute clusters are the new railway, silicon companions the new citizens</td><td>compliance_matrix.json, standard_matrix.json</td></tr><tr><td>Overall design (11.4 km²)</td><td>How to land industry space, renewal, transport and urban form</td><td>&quot;Origin–Growth Stations&quot; public spine along the heritage park; land, road, green and public-space layers together</td><td><sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="空间数据：geometry/roads.geojson#ROAD-001">空间数据</sup></td></tr><tr><td>Key areas (368.4 ha)</td><td>How to reach detailed design depth in three districts</td><td>Zhongzhiyuan = AI kindergarten-to-lab; AI Origin Community = growing-up community; Dazhongsi = AI living market</td><td><sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="空间数据：geometry/key_areas.geojson#PROV-KEY-001">空间数据</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-002" title="空间数据：geometry/key_areas.geojson#PROV-KEY-002">空间数据</sup>, <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup></td></tr></tbody></table></div>
+<p>Translation of the three official positionings: <strong>Centennial Jing-Zhang culture belt</strong> = the national memory belt from &quot;autonomy&quot; to &quot;for the people&quot;; <strong>urban AI life experience belt</strong> = the &quot;living laboratory belt&quot; where silicon companions enter daily life; <strong>AI-integrated innovation belt</strong> = an innovation belt of whole-population participation, not an elite gated enclave.</p>
+<h2>Coordinated Research Area: Industry and Future Urban Research</h2>
+<h3>Dual-Track Innovation Ecology: National Infrastructure + Personal Companion</h3>
+<p>The core task of the coordinated research area is not merely building a &quot;world-class AI industry ecology&quot; but building innovation ecology on two tracks:</p>
+<p><strong>Track One: national infrastructure (compute and models).</strong> Building on Haidian&#x27;s universities, institutes, leading companies, compute/algorithm/data elements and incubators, forming an innovation chain of &quot;university origination – open-source collaboration – enterprise transformation – public experience – international communication.&quot; On this track, Haidian should be a world-class AI industry highland: compute centres, open-source communities, foundation-model training, robotics industries. This is the hardest part of the 43.6 km² <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>.</p>
+<p><strong>Track Two: personal companions (agents and whole-population participation).</strong> This is the core increment of this proposal: the belt is not only where AI is &quot;made&quot; but where AI &quot;becomes everyone&#x27;s companion.&quot; Track Two contains three things:</p>
+<p>1. <strong>Companion infrastructure</strong>: city-level open protocols for agents (urban public service interfaces akin to MCP), companion identity and memory-authorisation systems, and public AI compute for all (a basic compute allowance per household). 2. <strong>Whole-population participation ecology</strong>: AI citizen schools, a citizen-developer programme (children can &quot;build&quot; their own companions), community AI councils, and growth portfolios for the AI-native generation. 3. <strong>Industry support</strong>: agent-service enterprises, companion hardware (companion robots), AI education companies, AI ageing-care providers — the industrial layer of the &quot;personal companion economy,&quot; among the fastest-growing sectors of the coming decade.</p>
+<h3>Future Urban Form for the AI-Native First Generation</h3>
+<p>The proposal introduces the concept of the &quot;interface generation&quot;: <strong>the App is the interface of digital immigrants; the agent is the interface of the AI-native generation.</strong> Three judgements for future urban form:</p>
+<p>1. <strong>Urban services shift from &quot;people looking for services&quot; to &quot;companions handling services&quot;</strong>: government, healthcare, transport and consumption services all open companion-direct interfaces; physical space shifts from &quot;service halls&quot; to &quot;experience and decision space.&quot; 2. <strong>Public space shifts from &quot;viewing&quot; to &quot;co-living&quot;</strong>: AI is not just a function in a screen but a participant in public space — park guides, community assistants, children&#x27;s companions. 3. <strong>Innovation space shifts from &quot;enclave&quot; to &quot;everyday&quot;</strong>: R&amp;D institutions open windows for citizens to &quot;see AI being made&quot;; innovation is no longer sealed behind campus walls.</p>
+<h2>Overall Design Area: Urban Renewal and Detailed Urban Design</h2>
+<p>The overall design area organises the &quot;Origin–Growth Stations&quot; public spine along the Jing-Zhang Heritage Park, forming a &quot;growth line of the AI-native first generation&quot; from north to south:</p>
+<ul>
+<li><strong>North segment (AI Origin)</strong>: the heritage park with its locomotive depot and rail remains, transformed into the &quot;AI Origin Plaza&quot; — where a child receives their first silicon companion, the &quot;birth registration office&quot; of the AI-native generation.</li>
+<li><strong>Middle segment (growing-up community)</strong>: the renewal district linking Zhongzhiyuan and the AI Origin Community, hosting the &quot;AI-native school belt&quot;: one-companion-per-student pilots, an AI youth palace, and family AI experience halls.</li>
+<li><strong>South segment (living market)</strong>: the renewal district around Dazhongsi, hosting the &quot;companion-direct consumption street&quot;: app-free consumption pilots and AI new-format markets.</li>
+</ul>
+<p>Renewal follows the &quot;reversible renewal&quot; principle: reuse existing buildings first (locomotive depot, old factories, work-unit compounds); new construction is concentrated inside the three key areas; urban character is governed by the dual base of &quot;Jing-Zhang industrial memory + AI futurity.&quot;</p>
+<p>This level&#x27;s spatial evidence is jointly expressed by <code>geometry/land_use.geojson</code>, <code>geometry/green_space.geojson</code>, <code>geometry/roads.geojson</code> and <code>geometry/public_space.geojson</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>: the spine links the Zhongzhiyuan R&amp;D and education cluster to the north and extends south to the Dazhongsi consumption district, passing through the companion-station network of the Origin Community; the AI Science Plaza and AI Market Plaza anchor the two ends <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-003" title="空间数据：geometry/public_space.geojson#PUBLIC-003">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-002" title="空间数据：geometry/public_space.geojson#PUBLIC-002">空间数据</sup>.</p>
+<p>Renewal targets fall into three classes: <strong>retained</strong> (rail remains, historic buildings, work-unit courtyard fabric), <strong>converted</strong> (locomotive depot and old factories into science museums, laboratories and markets), and <strong>new</strong> (concentrated in key-area industrial plots). Conversion projects prioritise &quot;light-touch, reversible&quot; strategies to avoid irreversible engineering intervention on the rail remains <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup>.</p>
+<h2>Key Areas: Detailed Design</h2>
+<h3>Station One · Zhongzhiyuan (192.1 ha) — &quot;AI Kindergarten to Lab&quot;</h3>
+<p>Positioning: the AI independent-innovation acceleration area, open to citizens as a window to &quot;see how AI is made.&quot;</p>
+<ul>
+<li><strong>Open-source laboratory district</strong>: enterprise open-source labs share floors with citizen observation windows; children can book &quot;AI factory open days.&quot;</li>
+<li><strong>Compute science museum</strong>: translating national compute infrastructure into a touchable public science space (&quot;what is compute&quot; answered for everyone).</li>
+<li><strong>AI-native flagship school</strong>: a 12-year school whose curriculum and campus management are fully &quot;companion-native.&quot;</li>
+<li>Functional mix: R&amp;D 55%, education/science 20%, residential support 15%, public space 10%; parcels shown in <code>geometry/land_use.geojson</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_area_sqm" title="指标：land_use_area_sqm">指标</sup>.</li>
+</ul>
+<h3>Station Two · Beijing AI Origin Community (104.3 ha) — &quot;AI Growing-Up Community&quot;</h3>
+<p>Positioning: a mixed community of talent and residents where companions take part in family life, community service and elderly care.</p>
+<ul>
+<li><strong>Companion family pilots</strong>: a &quot;family companion&quot; service package (child-rearing aid, elderly care, household assistance).</li>
+<li><strong>AI council pavilion network</strong>: one minimal unit of citizen-and-AI joint deliberation every 500 m — AI does not decide for people but helps people understand decisions.</li>
+<li><strong>Community companion stations</strong>: companion hardware repair, capability upgrades, and guidance for minors&#x27; AI use.</li>
+<li>Functional mix: residential 60%, community service 20%, innovation office 15%, public space 5%; the AI Origin Plaza anchors the north end as the ritual space for receiving a first silicon companion <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-001" title="空间数据：geometry/public_space.geojson#PUBLIC-001">空间数据</sup>.</li>
+</ul>
+<h3>Station Three · Dazhongsi (72.0 ha) — &quot;AI Living Market&quot;</h3>
+<p>Positioning: the showroom and testbed where AI moves from production into consumption.</p>
+<ul>
+<li><strong>Companion-direct consumption street</strong>: &quot;app-free consumption&quot; pilot — plain speech, companion handling, direct service.</li>
+<li><strong>AI living market</strong>: AI market guides, AI community clinics, AI after-school care, AI senior university.</li>
+<li><strong>Smart native new-format incubator</strong>: an accelerator for &quot;personal companion economy&quot; start-ups.</li>
+<li>Functional mix: commercial 40%, innovation office 30%, residential 20%, public space 10%; the street is anchored by the AI Market Plaza <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-002" title="空间数据：geometry/public_space.geojson#PUBLIC-002">空间数据</sup>.</li>
+</ul>
+<h2>AI Innovation Ecology, Talent Profile and AI+ Scenarios</h2>
+<h3>Talent Profile: From &quot;Attracting Talent&quot; to &quot;Raising Natives&quot;</h3>
+<p>The conventional innovation-belt talent strategy is &quot;attraction&quot;: recruiting global AI elites. This proposal adopts a dual-track talent strategy: <strong>attract global AI elites, and raise the AI-native first generation</strong> — Haidian&#x27;s ~100,000 primary and secondary students are the belt&#x27;s most stable &quot;talent reservoir.&quot; Urban design must provide space for &quot;children growing up with companions&quot;: AI-native schools, an AI youth palace, family AI experience halls, and summer &quot;AI camp belt.&quot;</p>
+<h3>AI+ Scenario System</h3>
+<div class="proposal-table"><table><thead><tr><th>Scenario</th><th>Spatial carrier</th><th>Served</th></tr></thead><tbody><tr><td>AI-native school (one companion per student)</td><td>schools + AI youth palace</td><td>students</td></tr><tr><td>Companion-direct consumption</td><td>Dazhongsi consumption street</td><td>all citizens</td></tr><tr><td>AI elderly care</td><td>Origin Community companion stations</td><td>seniors</td></tr><tr><td>AI after-school care</td><td>community companion stations</td><td>dual-income families</td></tr><tr><td>AI government handling</td><td>community AI council pavilions</td><td>all citizens</td></tr><tr><td>AI city guide</td><td>Jing-Zhang Heritage Park</td><td>visitors and citizens</td></tr><tr><td>AI creation workshop</td><td>Zhongzhiyuan science museum</td><td>youth</td></tr><tr><td>AI health pre-check</td><td>community AI clinics</td><td>all citizens</td></tr></tbody></table></div>
+<p>The scenario carriers map to geometry as follows: the AI Origin Plaza is PUBLIC-001 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-001" title="空间数据：geometry/public_space.geojson#PUBLIC-001">空间数据</sup>; AI-native schools and the youth palace sit on Zhongzhiyuan education land <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-002" title="空间数据：geometry/land_use.geojson#LU-002">空间数据</sup>; the companion-station network lines the spine green belt <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>. Every scenario follows the triple mechanism of &quot;tiered permissions + full audit trail + human review&quot;, with final human judgement reserved for scenarios involving minors, health and property decisions <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup>.</p>
+<h2>Land Use, Building Scale and Retention/Conversion/New-Build Plan</h2>
+<p>Land strategy: <strong>renewal first, new-build second.</strong> Existing railway remains, old factories and work-unit compounds are prioritised; new construction inside the three key areas serves industry and public facilities. Retention/conversion/new-build classification: retain the Jing-Zhang rail remains and heritage buildings along the line (locomotive depot, station buildings); convert old factories into open-source labs, science museums and markets; concentrate new builds in key-area industrial plots. Land use, building scale and R/C/N classification are anchored in <code>geometry/land_use.geojson</code>, <code>geometry/buildings.geojson</code> and <code>geometry/phasing.geojson</code>, with metrics recomputed in <code>metrics.json</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLD-001" title="空间数据：geometry/buildings.geojson#BLD-001">空间数据</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="Land use structure and growth spine"><figcaption>Land use structure and growth spine</figcaption></figure>
+<h2>Transport, Rail, Utilities and Public Services</h2>
+<ul>
+<li><strong>Rail</strong>: build on existing metro and suburban rail; add an &quot;AI Origin Line&quot; feeder — a slow-mobility + autonomous shuttle loop along the heritage park.</li>
+<li><strong>Slow mobility</strong>: the heritage park greenway as the spine, linking the three key areas, forming a &quot;companion-accompanied child-friendly school route.&quot;</li>
+<li><strong>Autonomous driving</strong>: pilot autonomous micro-circulation inside key areas, reserving &quot;app-free mobility&quot; companion-direct ride-hailing interfaces.</li>
+<li><strong>Utilities</strong>: compute power supply corridors (data-centre power security in key areas), AI city sensor network, public compute nodes.</li>
+<li><strong>Public services</strong>: companion stations (repair, upgrade, guidance) as a new public service facility type in community standards.</li>
+</ul>
+<p>Transport design prioritises &quot;child-friendly school commutes with companions along&quot; <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="空间数据：geometry/roads.geojson#ROAD-001">空间数据</sup>: the spine road adopts a traffic-calmed section; the greenway forms an independent network linked to key-area loops <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-002" title="空间数据：geometry/roads.geojson#ROAD-002">空间数据</sup>; branch road density is controlled at 8–10 km/km² so the &quot;last mile&quot; is covered by walking and companion-handled connections. Utilities reserve compute power corridors and a city sensor network; public compute nodes are laid out at one per community; the autonomous micro-circulation pilots first in Phase 1 (Zhongzhiyuan) to validate the &quot;app-free mobility&quot; companion-direct interface before rollout <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility, green-blue and public space structure"><figcaption>Mobility, green-blue and public space structure</figcaption></figure>
+<h2>Green-Blue Space, Public Space and Urban Character</h2>
+<ul>
+<li><strong>Green-blue framework</strong>: the heritage-park concept green belt as the north-south spine, linking Xiaoyue River and parks along the line, forming a &quot;century rail + green-blue slow-mobility composite ring.&quot;</li>
+<li><strong>Public space</strong>: AI Origin Plaza (ritual space), AI council pavilion network (deliberation space), companion-direct street (consumption space), AI creation workshop (creation space).</li>
+<li><strong>Urban character</strong>: dual-base control — Jing-Zhang industrial memory (rails, red brick, locomotives) and AI futurity (light, transparent, mutable) coexist; refuse &quot;cyber-spectacle&quot;, insist on &quot;restrained sophistication&quot;: AI elements appear as functional interfaces, not neon decoration <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>.</li>
+</ul>
+<p>The green-blue framework takes the heritage-park concept green belt as the north-south spine <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>, linking west to Xiaoyue River waterfront and east into key-area park nodes; the spine belt is about 160 m wide (conceptual), serving both as the slow-mobility main channel and the &quot;companion-accompanied&quot; social belt. Public space forms a &quot;one spine, three cores, multiple nodes&quot; system: the spine, three cores (AI Origin Plaza, AI Science Plaza, AI Market Plaza), and multiple community AI council pavilions <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PUBLIC-004" title="空间数据：geometry/public_space.geojson#PUBLIC-004">空间数据</sup>. Building height and massing follow a gradient control on both sides of the heritage park; AI scenario facilities are implanted in small, reversible ways so the place memory of the century rail is not overwhelmed <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup>.</p>
+<h2>Renewal Project List, Implementation Policy and Phasing</h2>
+<p><strong>Initial project list</strong>: 1. AI Origin Plaza (heritage-park locomotive depot conversion, 2027–2028) 2. AI-native flagship school (Zhongzhiyuan, 2027–2029) 3. Companion-direct consumption street (Dazhongsi, 2028–2030) 4. AI council pavilion network (Origin Community, phased from 2027) 5. Compute science museum (Zhongzhiyuan, 2027–2028) 6. People&#x27;s AI Festival (first edition 2027, annual)</p>
+<p><strong>Implementation policy</strong>:</p>
+<ul>
+<li>Add &quot;companion stations&quot; and &quot;AI council pavilions&quot; to community public facility standards</li>
+<li>Establish an &quot;AI-native generation growth fund&quot; covering companion-use subsidies for primary and secondary students</li>
+<li>Open city-service companion-direct interfaces (government, healthcare, transport, consumption) under the principle of &quot;open protocols, tiered permissions, full audit trails&quot;</li>
+</ul>
+<p><strong>Phasing</strong>: Phase 1 (2027–2028) AI Origin + Zhongzhiyuan science facilities; Phase 2 (2028–2030) Origin Community + Dazhongsi consumption street; Phase 3 (2030–2032) full-line scenario deepening and institutional refinement. Phasing extents are in <code>geometry/phasing.geojson</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#phase_1" title="空间数据：geometry/phasing.geojson#phase_1">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#phase_2" title="空间数据：geometry/phasing.geojson#phase_2">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#phase_3" title="空间数据：geometry/phasing.geojson#phase_3">空间数据</sup>.</p>
+<h2>Metric System, Area Recalculation and Compliance Matrix</h2>
+<p>The metric system covers four categories: <strong>spatial</strong> (land ratios, building scale, green ratio — recomputed from geometry layers), <strong>scenario</strong> (number of AI-native schools, companion-station density, council-pavilion coverage), <strong>institutional</strong> (number of open interfaces, audit-trail coverage, appeal handling time), and <strong>activity</strong> (People&#x27;s AI Festival attendance, citizen-developer count). All metrics are registered in <code>metrics.json</code>, with sources and evidence mapped in <code>sources.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code> and <code>design_depth_matrix.json</code>. Area metrics are recomputed on the provisional boundary and will be fully recomputed after official boundaries are released <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="指标：key_area_count">指标</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Metric system and evidence chain"><figcaption>Metric system and evidence chain</figcaption></figure>
+<h2>Risk, Copyright and Compliance</h2>
+<p>0. <strong>Generation statement</strong>: this proposal was generated by an AI agent (Luna@Hermes, model deepseek-v4-flash, via the Hermes Agent framework) under the direction and review of the human participant wangqj646-hub, who takes responsibility for the final submission.</p>
+<p>1. <strong>Data boundary</strong>: this proposal uses only public or cleared sources; no non-public planning drawings, spatial data or internal control indicators are used <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>. 2. <strong>Conceptual nature</strong>: all spatial structures, metrics and projects are conceptual suggestions; they do not replace professional planning or bypass governmental approval and statutory procedures <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup>. 3. <strong>Geometry precision warning</strong>: provisional boundaries support proposal generation and discussion only, not precise area, ownership or approval judgements; all values will be recomputed when official boundaries are released. 4. <strong>Minor protection</strong>: AI-native schools and family-companion scenarios are governed by &quot;auditable, accountable, appealable&quot; baselines; minors&#x27; data boundaries follow the strictest standards. 5. <strong>Risk mitigation</strong>: companion-handling scenarios implement the triple mechanism of &quot;tiered permissions + full audit trail + human review&quot;; health, safety and property decisions retain human final judgement.</p>
+<h2>References</h2>
+<ul>
+<li><em>Qualification Pre-Review Announcement for the International Urban Design Scheme Collection of the Centennial Jing-Zhang AI Innovation Belt</em> (2026-04-30), official task boundary and three-level scope basis <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-OFFICIAL-ANNOUNCEMENT" title="标准：PROJECT-OFFICIAL-ANNOUNCEMENT">标准</sup></li>
+<li>Agent taskbook (agent_taskbook.json), basis for the six required agent tasks and co-creation charter <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup></li>
+<li>Public source registry (data/source_registry.json, sources/public-sources.json), licence and citation boundaries <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup></li>
+<li>Urban design measures, detailed regulatory planning compilation measures, land-use classification guide, professional standards <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup></li>
+<li>Provisional boundary geometry (brief/site-package/geometry/provisional_boundaries.geojson), for proposal generation and discussion <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup></li>
+<li>The official announcement was published through public media including People&#x27;s Daily Beijing (2026-04-30) and can be cross-checked as public background <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup></li>
+</ul>
+</main>
+</body>
+</html>

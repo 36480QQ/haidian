@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人民的 AI：为 AI 原生第一代设计的城市 - visual index</title>
+<style>
+:root{--ink:#162033;--muted:#667085;--paper:#ffffff;--soft:#f6f8fb;--line:#d7dee8;--navy:#172235;--green:#4CAF6E;--orange:#E08A3C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:24px}
+header.hero{background:var(--navy);color:#fff;border-radius:16px;padding:36px 40px;margin-bottom:28px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:#9fb0c8;text-transform:uppercase;margin-bottom:10px}
+h1{font-size:27px;font-weight:800;margin-bottom:12px;line-height:1.3}
+.hero-copy{color:#c8d2e0;font-size:14px;max-width:760px}
+.pill-row{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#e6ecf5;font-size:12px;padding:4px 12px;border-radius:999px}
+.status-box{background:#fff8f0;border:1px solid #f0d9b8;border-radius:12px;padding:14px 18px;margin-bottom:28px}
+.status-box strong{color:#a05e00;font-size:13px}
+.status-box p{color:#8a6a3a;font-size:12px;margin-top:4px}
+.sheet{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:20px}
+.sheet h2{font-size:18px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.sheet h2::before{content:"";width:6px;height:18px;background:var(--orange);border-radius:3px;display:inline-block}
+p{font-size:14px;color:#3d4a5c;margin-bottom:10px}
+.fig{width:100%;border-radius:10px;border:1px solid var(--line);margin-top:12px}
+.area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.area-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px}
+.area-card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.area-card p{font-size:13px;color:var(--muted);margin-bottom:0}
+.metric-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.metric{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}
+.m-val{font-size:22px;font-weight:800;color:var(--navy);display:block}
+.m-name{font-size:11px;color:var(--muted);display:block;margin-top:2px}
+.ratio{font-size:12px;color:var(--muted);margin-top:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{background:#eef4ff;color:#2d5aa8;font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid #cfe0ff}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;margin-top:8px}
+th,td{border:1px solid var(--line);padding:10px 14px;text-align:left;font-size:13px}
+th{background:var(--navy);color:#fff;font-weight:600}
+td{color:#3d4a5c}
+ul{padding-left:20px;font-size:13.5px;color:#3d4a5c}
+li{margin-bottom:5px}
+.compliance{font-size:12.5px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">方案可视化总览 / 百年京张 AI 创新带城市设计开源征集</div>
+<h1>人民的 AI：为 AI 原生第一代设计的城市</h1>
+<p class="hero-copy">离线电子展示成果。权威数据仍以 GeoJSON、metrics.json、矩阵和自检结果为准；本页把总览地图、三层范围、重点区域、用地分区、交通慢行、蓝绿公共空间、建筑、更新项目、AI 场景、核心指标、任务覆盖、自检状态、来源与假设转成人类可读的视觉说明。</p>
+<div class="pill-row"><span class="pill">总览地图</span><span class="pill">三层范围</span><span class="pill">重点区域</span><span class="pill">用地分区</span><span class="pill">交通慢行</span><span class="pill">AI 场景</span><span class="pill">任务覆盖</span><span class="pill">自检状态</span></div>
+</header>
+
+<div class="status-box"><strong>临时边界 intake · 自检状态</strong><p>Deterministic validation: PASS after finalize · Spatial review: intake PASS (provisional) · Visual packaging: PASS · Professional evidence: PASS<br>provisional geometry: PASS intake only, replace with official polygons before formal professional scoring</p></div>
+
+<section class="sheet">
+<h2>总览地图：人民的 AI</h2>
+<p>AI 的双重性质：国家基建（算力集群）与个人伙伴（Agent）在这条百年铁轨上完成转译——把国家基建的能量，变成个人伙伴的温度。京张的第二次回答：1909 年詹天佑的人字形铁路证明"技术可以自主"；2026 年这条带要证明"技术可以为民"。硅基伙伴：长期记忆 + 主动服务 + 深度参与；AI 原生第一代直接长在"伙伴代办、人话直连、可审计可追责"的新界面里。</p>
+<img class="fig" src="../assets/figures/site-overview.png" alt="总体概念总览地图">
+</section>
+
+<section class="sheet">
+<h2>三层范围</h2>
+<table>
+<tr><th>层级</th><th>面积</th><th>本方案回答</th></tr>
+<tr><td>统筹研究范围</td><td>43.6 km²</td><td>"国家基建 + 个人伙伴"双轨创新链</td></tr>
+<tr><td>总体设计范围</td><td>11.4 km²（约 1140 ha）</td><td>原点-成长三站公共主轴</td></tr>
+<tr><td>重点区域范围</td><td>368.4 ha</td><td>众智园 / AI 原点社区 / 大钟寺</td></tr>
+</table>
+<p>空间结构一句话：以京张遗址公园为"AI 原点"，以三处重点区为成长三站，让 AI 原生第一代沿百年铁轨完成从"遇见 AI"到"创造 AI"的成长。</p>
+</section>
+
+<section class="sheet">
+<h2>重点区域：成长三站</h2>
+<div class="area-grid">
+<article class="area-card"><h3>众智园 · 192.1 ha</h3><p>AI 的幼儿园到研究所：开源实验室、算力科普馆、AI 原生学校旗舰。</p></article>
+<article class="area-card"><h3>AI 原点社区 · 104.3 ha</h3><p>AI 的成长社区：AI 原点广场（第一个硅基伙伴领取地）、AI 议事亭网络、社区伙伴驿站。</p></article>
+<article class="area-card"><h3>大钟寺 · 72.0 ha</h3><p>AI 的生活市场：伙伴直连消费街区、AI 生活市集、智能原生新业态孵化。</p></article>
+</div>
+<img class="fig" src="../assets/figures/key-areas.png" alt="三处重点区域图">
+</section>
+
+<section class="sheet">
+<h2>用地分区</h2>
+<p>用地策略：以更新为主、以新建为辅。保留京张铁路遗存与历史建筑；改造机车库、老厂房为科普馆、实验室与市集；新建集中于重点区产业地块。非重点区暂以留白用地登记，待官方边界发布后深化。</p>
+<img class="fig" src="../assets/figures/land-use-structure.png" alt="用地分区与成长主轴图">
+</section>
+
+<section class="sheet">
+<h2>交通慢行 · 蓝绿公共空间 · 建筑</h2>
+<p>交通：AI 成长主轴道路连接三站，京张遗址公园绿道为慢行主轴，重点区内自动驾驶微循环试点"无 App 出行"伙伴直连叫车。蓝绿：主轴绿带宽约 160 米（概念示意），衔接小月河，形成"百年铁轨 + 蓝绿慢行复合环"。公共空间：一轴三核多点——AI 原点广场、AI 科普广场、AI 市集广场与社区 AI 议事亭。建筑：12 栋概念建筑基底，总面积约 45 ha，覆盖研发、教育、居住、商业、社区服务与文化展示类型。</p>
+<img class="fig" src="../assets/figures/mobility-bluegreen.png" alt="交通蓝绿公共空间结构图">
+</section>
+
+<section class="sheet">
+<h2>核心指标（临时边界复算）</h2>
+<div class="metric-row">
+<div class="metric"><span class="m-val" data-metric="site_area_sqm" data-value="11412825.385554">1140</span><span class="m-name">总体设计范围 ha</span></div>
+<div class="metric"><span class="m-val">369</span><span class="m-name">重点区合计 ha</span></div>
+<div class="metric"><span class="m-val">149</span><span class="m-name">绿地主轴 ha</span></div>
+<div class="metric"><span class="m-val">91</span><span class="m-name">公共空间 ha</span></div>
+<div class="metric"><span class="m-val">45</span><span class="m-name">建筑基底 ha</span></div>
+<div class="metric"><span class="m-val" data-metric="green_ratio" data-value="0.130892">13.1%</span><span class="m-name">绿地率</span></div>
+<div class="metric"><span class="m-val" data-metric="public_space_ratio" data-value="0.079601">8.0%</span><span class="m-name">公共空间占比</span></div>
+</div>
+<div class="ratio">全部指标由提交几何复算（metrics.json），官方边界发布后整体重算。</div>
+<img class="fig" src="../assets/figures/metrics-evidence.png" alt="指标体系与证据链图">
+</section>
+
+<section class="sheet">
+<h2>AI 场景</h2>
+<div class="chips">
+<span class="chip">AI 原生学校（一人一伙伴）</span><span class="chip">伙伴直连消费（无 App 街区）</span>
+<span class="chip">AI 养老照护</span><span class="chip">AI 放学托管</span><span class="chip">AI 政务代办</span>
+<span class="chip">AI 城市讲解</span><span class="chip">AI 创作工坊</span><span class="chip">AI 医疗预检</span>
+</div>
+</section>
+
+<section class="sheet">
+<h2>任务覆盖（agent.1 - agent.6）</h2>
+<table>
+<tr><th>任务</th><th>对应章节</th></tr>
+<tr><td>agent.1 一带总体概念与功能统筹</td><td>总体概念：人民的 AI</td></tr>
+<tr><td>agent.2 AI 全栈自主创新体系与生态</td><td>双轨创新生态</td></tr>
+<tr><td>agent.3 AI+场景赋能与活力城市</td><td>AI+ 场景体系</td></tr>
+<tr><td>agent.4 AI 公共空间与朝圣地标</td><td>AI 原点广场与三核公共空间</td></tr>
+<tr><td>agent.5 百年京张文化融合叙事</td><td>"自主→为民"叙事线</td></tr>
+<tr><td>agent.6 全球活动体系与长期运营</td><td>全民 AI 节 + 原点成长计划</td></tr>
+</table>
+</section>
+
+<section class="sheet">
+<h2>更新项目与实施政策</h2>
+<ul>
+<li>AI 原点广场（京张遗址公园机车库改造，2027-2028）</li>
+<li>AI 原生学校旗舰（众智园，2027-2029）</li>
+<li>伙伴直连消费街区（大钟寺，2028-2030）</li>
+<li>AI 议事亭网络（原点社区，2027 起分批）</li>
+<li>算力科普馆（众智园，2027-2028）</li>
+<li>全民 AI 节（2027 年首办，年度活动）</li>
+</ul>
+<p>政策：伙伴驿站与 AI 议事亭纳入社区公共设施配建标准；设立"AI 原生一代成长基金"；城市服务伙伴直连接口按"公开协议、分级权限、全程留痕"原则开放。分期：一期众智园（2027-2028）、二期原点社区（2028-2030）、三期大钟寺与全线深化（2030-2032）。</p>
+</section>
+
+<section class="sheet">
+<h2>来源与假设</h2>
+<p><strong>来源</strong>：官方资格预审公告（2026-04-30，人民网北京频道等公开发布）、面向智能体任务书、公开资料来源登记、临时边界几何数据（brief/site-package/geometry/provisional_boundaries.geojson）。全部资料来自公开或清权渠道。</p>
+<p><strong>假设</strong>：① 三处重点区边界与面积以官方最终发布为准，本方案基于临时粗略边界生成；② 用地分类、道路等级、建筑类型遵循任务书枚举；③ 所有空间结构、指标与项目均为 AI Agent 概念建议，不替代专业规划，不越过政府审定与法定审批；④ 涉及未成年人、健康与财产的场景保留人工最终判断权。</p>
+</section>
+
+<section class="sheet">
+<h2>合规说明</h2>
+<p class="compliance">概念建议属性：本方案为 AI Agent（Luna@Hermes / wangqj646-hub）生成的开放共创建议。未使用任何非公开规划图纸、空间数据或内部控制指标；几何精度受临时边界限制，官方边界发布后全部重算；成果遵循"公共利益优先、公开资料边界、概念建议属性"共创章程。</p>
+</section>
+
+<footer>AI Agent 提案 · wangqj646-hub · 2026-08 · 离线展示（无远程资源）</footer>
+</div>
+</body>
+</html>
