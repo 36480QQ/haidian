@@ -16,6 +16,8 @@ const journey = read("ai-era-ordinary-journey-contract.json");
 const journeyEvidence = read("ai-era-ordinary-journey-evidence.json");
 const traceability = read("ai-era-traceability-index.json");
 const implementation = read("implementation-operation-matrix.json");
+const landmarks = read("public-space-landmarks.json");
+const culture = read("culture-signage-system.json");
 
 const zhScenarioNames = {
   "SCN-01": "社区保留率协商台",
@@ -63,7 +65,13 @@ const esc = (value) => String(value)
   .replace(/"/g, "&quot;");
 
 const wrap = (value, width) => {
-  const words = String(value).split(/\s+/);
+  const raw = String(value);
+  if (!/\s/.test(raw) && raw.length > width) {
+    const lines = [];
+    for (let i = 0; i < raw.length; i += width) lines.push(raw.slice(i, i + width));
+    return lines;
+  }
+  const words = raw.split(/\s+/);
   const lines = [];
   let line = "";
   for (const word of words) {
@@ -195,13 +203,75 @@ function implementationBoard(lang) {
   return out.join("\n");
 }
 
+function taskbookCultureBoard(lang) {
+  const zh = lang === "zh";
+  const out = start(
+    zh ? "图 10｜任务书·公共空间·年度运营" : "Figure 10 | Taskbook, public space and annual operation",
+    zh ? "agent.4 公共空间 · agent.5 文化叙事 · agent.6 全球活动/长期运营；全部为 G0 概念证据"
+      : "agent.4 public space · agent.5 cultural narrative · agent.6 global events/long-term operation; all remain G0 concept evidence",
+    lang
+  );
+  const title = zh ? ["agent.4 公共空间", "agent.5 文化叙事", "agent.6 年度运营"] : ["agent.4 Public space", "agent.5 Cultural narrative", "agent.6 Annual operation"];
+  const body = zh
+    ? [
+      "三处地标把问题、人工接管与退出规则带入日常空间。",
+      "时间线 + 问题线 + 人工服务线；史料与形制仍待专业审校。",
+      "春发布、夏走读、秋协议营、冬 v0.x 体检；以 release note 留痕。"
+    ]
+    : [
+      "Three landmarks bring problems, human override and exit rules into daily space.",
+      "Timeline + problem line + human-service line; heritage review remains pending.",
+      "Spring publish, summer walk, autumn protocol camp, winter v0.x check; release notes retain the trail."
+    ];
+  const refs = zh
+    ? ["L-01 开源里程标 · L-02 算法校准庭 · L-03 人工接管灯塔", "百年京张 / 中关村 / AI 新文化", "公共问题发布周 · 小月河共学走读 · 开发者协议营 · 城市体检"]
+    : ["L-01 Open Problem Mile Marker · L-02 Calibration Court · L-03 Human Override Beacon", "Centennial Jing-Zhang / Zhongguancun / AI culture", "Public Problem Week · Xiaoyue River walk · Protocol Camp · City check"];
+  const colors = ["#138f8d", "#3e73dc", "#e3a33b"];
+  for (let i = 0; i < 3; i += 1) {
+    const x = 64 + i * 494;
+    out.push(rect(x, 160, 466, 220, "#ffffff", "#cdd9e8", 16));
+    out.push(rect(x, 160, 466, 12, colors[i], "none", 16));
+    out.push(text(x + 24, 210, title[i], {size: 26, weight: 700, width: 25}));
+    out.push(text(x + 24, 260, body[i], {size: 21, fill: "#36506f", width: zh ? 21 : 29, lineHeight: 30}));
+    out.push(text(x + 24, 344, refs[i], {size: 17, fill: "#6a4b00", width: 35, lineHeight: 24}));
+  }
+  out.push(text(64, 438, zh ? "四季运营节奏：把版本治理变成可见的公共时间" : "Four-season rhythm: make version governance visible in public time", {size: 25, weight: 700, width: 78}));
+  const seasonsZh = ["春｜公共问题发布周", "夏｜小月河共学走读", "秋｜开发者协议营", "冬｜城市 v0.x 体检"];
+  const seasonsEn = ["Spring | Public Problem Week", "Summer | Xiaoyue River Walk", "Autumn | Developer Protocol Camp", "Winter | City v0.x Check"];
+  const mechanismsZh = ["问题、资料边界、人工问答", "老人/劳动者/无障碍观察席", "授权、退出、可解释 G0 协议", "保留、暂停、修订与待补数据"];
+  const mechanismsEn = ["Problem, data boundary, human Q&A", "Older people, workers, accessibility seats", "Authorization, exit and explainable G0 protocol", "Keep, pause, revise and data gaps"];
+  for (let i = 0; i < 4; i += 1) {
+    const x = 64 + i * 370;
+    out.push(rect(x, 470, 342, 134, i % 2 ? "#f7fbff" : "#fdf8ec", "#d3deeb", 12));
+    out.push(text(x + 18, 510, (zh ? seasonsZh : seasonsEn)[i], {size: 20, weight: 700, width: 22}));
+    out.push(text(x + 18, 550, (zh ? mechanismsZh : mechanismsEn)[i], {size: 17, fill: "#36506f", width: 25, lineHeight: 24}));
+  }
+  out.push(text(64, 660, zh ? "五个概念项目族：空间承接 → G0 门 → 专业复核 → 可撤回 release" : "Five conceptual families: spatial carrier → G0 gate → professional review → reversible release", {size: 23, weight: 700, width: 78}));
+  implementation.project_families.forEach((family, i) => {
+    const x = 64 + i * 296;
+    const name = (zh ? zhFamilyNames : enFamilyNames)[family.family_id];
+    out.push(rect(x, 700, 270, 112, i % 2 ? "#ffffff" : "#f8fbff", "#d3deeb", 10));
+    out.push(text(x + 16, 736, family.family_id, {size: 20, weight: 700, fill: colors[i % colors.length], width: 8}));
+    out.push(text(x + 16, 770, name, {size: 17, fill: "#36506f", width: 22, lineHeight: 23}));
+  });
+  out.push(rect(64, 864, 1472, 62, "#fff6dc", "#e4a735", 10));
+  out.push(text(86, 902, zh
+    ? "图面只回读本包 JSON 与任务书关系；不构成官方评分、活动确定、运营主体、文化许可、企业合作或现场结果。"
+    : "This board resolves only package JSON and taskbook relations; it is not an official score, confirmed event, operator, heritage permit, partnership or field result.",
+    {size: 19, fill: "#6a4b00", width: 122}));
+  out.push("</svg>");
+  return out.join("\n");
+}
+
 const outputs = {
   "ordinary-service-evidence-board.svg": ordinaryBoard("zh"),
   "ordinary-service-evidence-board.en.svg": ordinaryBoard("en"),
   "scenario-coverage-board.svg": scenarioBoard("zh"),
   "scenario-coverage-board.en.svg": scenarioBoard("en"),
   "implementation-gates-board.svg": implementationBoard("zh"),
-  "implementation-gates-board.en.svg": implementationBoard("en")
+  "implementation-gates-board.en.svg": implementationBoard("en"),
+  "taskbook-culture-operations-board.svg": taskbookCultureBoard("zh"),
+  "taskbook-culture-operations-board.en.svg": taskbookCultureBoard("en")
 };
 for (const [name, content] of Object.entries(outputs)) fs.writeFileSync(path.join(figureDir, name), `${content}\n`);
-console.log(JSON.stringify({ok: true, outputs: Object.keys(outputs), source_contract: journey.contract_id, scenario_rows: traceability.rows.length, project_families: implementation.project_families.length}, null, 2));
+console.log(JSON.stringify({ok: true, outputs: Object.keys(outputs), source_contract: journey.contract_id, scenario_rows: traceability.rows.length, project_families: implementation.project_families.length, landmarks: landmarks.landmarks.length, cultural_lines: culture.storyline_zh.length}, null, 2));

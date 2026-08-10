@@ -113,7 +113,21 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 ![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.svg)
 
-为降低评审从概念叙事跳到结构化附件的成本，本轮新增三张由包内 JSON 合约直接生成的双语审阅图板：普通人任务链与停止回路、十张场景卡的任务书—空间—回放覆盖、五个概念项目族的 G0/G1 门与退出动作。它们只是已有字段的可视化索引，不新增现场绩效、授权、许可、部署或官方评分结论；图板中的 `result_status=not_run` 与 `not_an_official` 边界应与原始 JSON 一并阅读。[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+为降低评审从概念叙事跳到结构化附件的成本，本轮把四张由包内 JSON 合约直接生成的双语审阅图板集中到同一套入口：普通人任务链与停止回路、十张场景卡的任务书—空间—回放覆盖、五个概念项目族的 G0/G1 门与退出动作、任务书—公共空间—年度运营三联读。它们只是已有字段的可视化索引，不新增现场绩效、授权、许可、部署或官方评分结论；图板中的 `result_status=not_run` 与 `not_an_official` 边界应与原始 JSON 一并阅读。[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
+## v1.2 任务书·空间·运营三联读｜让 agent.4、agent.5、agent.6 在同一张图上相遇
+
+本轮新增图 10，把任务书中容易被分散阅读的三项要求压到同一张概念设计图：agent.4 先问公共空间和三处地标怎样承接问题、人工接管与退出；agent.5 再问百年京张、中关村与 AI 新文化怎样形成可理解、可质询、可撤回的导视；agent.6 最后问全球活动和长期运营如何以四季节奏、公众观察和 release note 留下版本证据。三者均只使用本包现有 JSON 与 provisional 锚点，不把活动写成已确定安排。[data:visual/assets/taskbook-culture-operations-atlas-v12.json] [data:visual/assets/public-space-landmarks.json] [depth:compliance_and_standard_response]
+
+| 任务书入口 | 空间承接（概念建议） | 年度/运营回读 | 需要补的资料 |
+|---|---|---|---|
+| agent.4 公共空间与地标 | 开源里程标、算法校准庭、人工接管灯塔分别落在三个公共空间锚点；服务普通通行、人工解释和退出提示 | 活动前公开问题与资料边界，活动后保留公众异议和撤回记录 | 正式边界、公共开放条件、无障碍走测、文保与场地审校 |
+| agent.5 文化叙事 | 以“铁路时间—问题版本—人工接管”为文化语法，导视分成时间线、问题线、人工服务线 | 只展示经同意、可核验、可撤回的角色与版本，不做个人或企业排名 | 权威史料、文字与形制审校、授权作品清单 |
+| agent.6 全球活动与长期运营 | 春发布、夏走读、秋协议营、冬 v0.x 体检；空间保持 meanwhile use 和人工入口 | 每季发布保留、暂停、修订和待补数据的 release note | 活动责任角色、保险/安全/版权、公众参与与运营资料 |
+
+图 10 的五个项目族只是空间承接与 G0/G1 研究顺序：人本缓冲、技能与夜间健康、城市 API、蓝绿与人机测试、文化与全球共创。任何一项缺少授权、责任、专业资料或安全门，都保持 G0、冻结或撤回；图面只证明本包字段能够被同一张图回读，不证明官方评分、活动确定、运营主体、文化许可、企业合作或现场结果。[data:visual/assets/implementation-operation-matrix.json] [metric:project_family_count] [depth:implementation_and_phasing]
+
+![图 10｜任务书—公共空间—年度运营](assets/figures/taskbook-culture-operations-board.svg)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -204,7 +218,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 ## 指标体系、面积复算与合规矩阵
 
-所有已知空间值在 EPSG:4548 下由提交 GeoJSON 重新计算，且只在最终格式化时四舍五入一次，临时范围 11,412,825.386 平方米、绿地概念层 879,519.159 平方米、公共空间概念层 123,473.537 平方米；七个共享边界的用地多边形覆盖率为 1.000000。此前绿地值的 0.464 平方米不一致已通过统一当前算法、舍入规则和 metric-recalculation-audit.json 消除，主文、五张主地图、三张审阅图板、HTML 和图册使用同一数值格式器。[data:geometry/land_use.geojson#LAND-05] [metric:land_use_coverage_ratio] [depth:metrics_recalculation]
+所有已知空间值在 EPSG:4548 下由提交 GeoJSON 重新计算，且只在最终格式化时四舍五入一次，临时范围 11,412,825.386 平方米、绿地概念层 879,519.159 平方米、公共空间概念层 123,473.537 平方米；七个共享边界的用地多边形覆盖率为 1.000000。此前绿地值的 0.464 平方米不一致已通过统一当前算法、舍入规则和 metric-recalculation-audit.json 消除，主文、五张主地图、五张审阅图板、HTML 和图册使用同一数值格式器。[data:geometry/land_use.geojson#LAND-05] [metric:land_use_coverage_ratio] [depth:metrics_recalculation]
 
 compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agent.6，且已按任务书原名映射 agent.4 AI 公共空间/地标、agent.5 文化叙事、agent.6 全球活动/长期运营；standard_matrix.json 覆盖本地快照中的全部强制标准；design_depth_matrix.json 的要求项均为 complete，但 complete 仅指概念性证据链完整，不等于现场或审批完成。每个 metric 均含 status、value、unit、source_files、formula、confidence、assumptions。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:scenario_card_count] [depth:compliance_and_standard_response]
 
@@ -212,7 +226,7 @@ compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agen
 
 第一风险是边界与基础资料缺口，故任何读者不得以本包申请许可、评估权属、认定法定面积或得出工程结论。第二风险是数据与算法权力，故每张场景卡都有最小必要、人工复核、申诉和退出；无授权就不接入。第三风险是文化、交通、气候与能源条件，故历史资源、路权、空域、水文、热网和安全资料均被写成下一步核验，不由图面替代。第四风险是来源升级，故未登记背景资料在 sources.json 明确禁止 formal 使用。[source:SOURCE-REGISTRY] [data:geometry/constraints.geojson#SCN-09] [depth:risk_missing_data]
 
-权利台账逐资产记录文字、概念 geometry、PNG/PDF、SVG、HTML、外部短引用和字体处理。本投稿不含第三方照片、地图瓦片、人物、企业标识、远程脚本、远程字体或追踪；五张主地图、三张审阅图板与 PDF 由本地脚本从结构化本包生成，PDF 为栅格页而不嵌入字体文件。HTML 有语义结构、alt、焦点样式和手工对比检查；PDF 的结构化标签/阅读树仍是公开发布前应由专业排版补齐的限制，而非虚报已达标。[source:AGENT-TASKBOOK] [depth:copyright_and_accessibility]
+权利台账逐资产记录文字、概念 geometry、PNG/PDF、SVG、HTML、外部短引用和字体处理。本投稿不含第三方照片、地图瓦片、人物、企业标识、远程脚本、远程字体或追踪；五张主地图、五张审阅图板与 PDF 由本地脚本从结构化本包生成，PDF 为栅格页而不嵌入字体文件。HTML 有语义结构、alt、焦点样式和手工对比检查；PDF 的结构化标签/阅读树仍是公开发布前应由专业排版补齐的限制，而非虚报已达标。[source:AGENT-TASKBOOK] [depth:copyright_and_accessibility]
 
 ## 参考资料
 
@@ -228,3 +242,4 @@ compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务和 agent.1 至 agen
 ![图 07 普通人任务链与停止回路](assets/figures/ordinary-service-evidence-board.svg)
 ![图 08 十张场景卡的任务书—空间—回放覆盖](assets/figures/scenario-coverage-board.svg)
 ![图 09 五个概念项目族的 G0/G1 门与退出动作](assets/figures/implementation-gates-board.svg)
+![图 10 任务书—公共空间—年度运营](assets/figures/taskbook-culture-operations-board.svg)

@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-10
+
+- 新增 `taskbook-culture-operations-atlas-v12.json` 与双语图 10，把 agent.4 公共空间/地标、agent.5 文化叙事、agent.6 全球活动/长期运营落到三处 provisional 公共空间锚点、四季节奏和五个概念项目族。
+- 生成器与确定性 runner 增加三项任务书位置、三处地标、四季运营和非官方评分边界检查；同步中英文 proposal、离线 visual index、权利台账与双语审校范围。
+- 只补充包内字段的表达级索引，不改变 geometry、正式 metrics、来源等级、公共排序或实施边界。
+
 ## v1.1 - 2026-08-10
 
 - 从既有 ordinary journey、traceability 与 implementation JSON 合约生成三张双语审阅图板，分别覆盖 5 步任务链、5 步回退、6 项验收、10 张场景卡和 5 个概念项目族的 G0/G1 门。
