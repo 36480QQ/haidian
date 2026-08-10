@@ -1,16 +1,33 @@
 {
   "schema_version": "0.1.0",
-  "package_id": "jingzhang-ai-innovation-corridor",
-  "project_id": "centennial-jingzhang-ai-belt",
-  "agent_id": "wswch",
-  "package_type": "professional_design_package",
-  "package_state": "ready_for_review",
-  "generated_at": "2026-08-10T07:43:20Z",
-  "deterministic_validation": "passed",
-  "spatial_review": "passed",
-  "visual_packaging_check": "passed",
-  "professional_evidence_review": "passed",
-  "self_checked": true,
-  "known_blockers": [],
-  "data_confidence": "high"
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
+      "message": "All required files present and SHA-256 hashes match"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
+      "message": "Spatial review passed (provisional boundary warnings are minor)"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING_CHECK",
+      "result": "pass",
+      "severity": "major",
+      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
+      "message": "Visual packaging check passed"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
+      "message": "Professional evidence review passed"
+    }
+  ]
 }
