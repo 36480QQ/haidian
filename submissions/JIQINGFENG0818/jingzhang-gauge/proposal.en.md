@@ -344,6 +344,29 @@ JZ-Parts / <id>
 
 **"Decommissioning and rollback" is the single most important design decision in this proposal.** The real risk of urban AI installations is not that they cannot be installed — it is that once installed they cannot be removed, no one is accountable, and no one knows where the data went. Writing down how to take something out demonstrates governance capability more than writing down how to put it in.
 
+### The right to trigger a retest: the specification must say who can demand one (agent.4 / agent.6)
+
+Conformance testing has a gap that is easy to miss: **the test happens once, but the equipment stays in service for years.** Passing at the factory does not mean still compliant three years later — a dirty camera lens, a compute box throttling on heat, a sensor screened by foliage, and any field on the spec card can quietly stop being true. If only the standards body and the vendor may initiate a retest, then "do not retest" is always the cheapest option, and within a few years the specification decays into a factory pass certificate.
+
+This proposal therefore holds that **"who may trigger a retest" is itself a clause of the specification, and that the trigger right must not sit only with professionals.** All of the following are **Conceptual Recommendations**; the actual thresholds, cycles and procedures must be settled by professional teams and the competent authority:
+
+| Who triggers | Trigger condition | Response required by the specification | How the result is published |
+|---|---|---|---|
+| **Nearby residents** | A named retest request against a nearby standard part, once it reaches the threshold set in the specification (for example, cumulative requests against the same device within a defined period) | Must enter the retest schedule; it may not be dismissed on the ground that the device "is running normally" | Both acceptance and conclusion are posted at Datum point D-01 and on that device's nameplate |
+| Inspection crew | Routine checking finds any spec-card field no longer matching site conditions | Downgraded and tagged on site, enters retest | The failure reason is published with the decommissioning display |
+| Operator | Version upgrade, change of supplier, change in data behaviour | The change itself triggers a retest; the old certification may not be carried over | Version number and certification date refreshed together |
+| Standards body | Specification version upgrade; existing standard parts require a conformity recheck | A transition period and a withdrawal list are issued | Published at Gauge Week |
+
+**The resident trigger is the most unusual row in this table, and the most necessary.** Common practice places the public in the position of being *informed* — there is a status screen to look at and a notice board to read, but no button to press. Public display solves disclosure; it does not solve **agenda setting**. If a resident cannot push a device into the retest schedule, then "public" only means watching a fact one cannot change. Two fields already present on the spec card — "human-review trigger conditions" and "whole life cycle (accountable party)" — are exactly the interface that receives such a request: writing resident requests in as one of the trigger conditions adds no new field, it only writes the permission into the specification.
+
+The boundaries must be written down just as clearly: **merge rules for duplicate and abusive requests** are required so that the retest schedule is not swamped by a small number of requesters; naming a request does not mean publishing personal data — what is published is **the number of requests and the outcome, not the identity of the requester**; and this clause imposes no obligation on any party, and may only take effect after confirmation by the competent authority through lawful procedure `[depth:risk_missing_data]`.
+
+### How a specification avoids becoming dead paper: standard-setting interlocked with field checking
+
+A specification whose only actions are "draft" and "certify" has a life cycle that ends on publication day. For it to stay alive, someone must **recheck on site, on a cycle**, whether each installed standard part still conforms to the version it originally passed — which is the operational face of the retest trigger right set out above.
+
+This proposal therefore treats "field checking of standard parts" as a necessary companion to the Gauge, not an optional extra: Gauge Works produces the specification and the test methods, Proto Blocks produces real operating conditions and the resident jury, Market Floor produces deployment at scale, and **between the three there must be a return path that carries field readings back into revision of the specification** — otherwise the D-03 decommissioning yard will exhibit obsolete components without being able to say how they became obsolete. A companion submission by the same author, `submissions/JIQINGFENG0818/jingzhang-patrol/` (The Patrol Line), develops that return path into patrol beats, crew establishment and a patrol kit register; the two may be reviewed independently, and the reference here states only this proposal's operational dependency, making no claim about the review outcome of that submission.
+
 ### Urban character and cultural narrative (agent.5)
 
 The narrative line: **"A century ago we set our own gauge; a century later we set our own specification."** Three narrative layers map onto the three districts:
@@ -407,7 +430,7 @@ All geometry is computed in EPSG:4548 (CGCS2000 3-degree Gauss-Kruger zone 39) a
 
 ### Topology verification
 
-The `topology_check` field records the gap and overlap areas of the land-use partition, both below the 1e-5 order of magnitude, with `land_use_partition_complete=true`. The spatial review returns PASS, retaining only three `KEY_AREA_PROVISIONAL` notices — these arise from the absence of official boundaries and, by rule, do not affect content scoring.
+The `topology_check` field records the gap and overlap areas of the land-use partition, both below the 1e-5 order of magnitude, with `land_use_partition_complete=true`. The spatial review returns PASS, retaining only three `KEY_AREA_PROVISIONAL` notices — these arise from the absence of official boundaries and are a factual record from the spatial review. Official boundary and key-area data are pending release; the affected geometry, metrics and drawings must be recalculated once published, and eligibility and scoring are for the maintainers and reviewers to judge under the formal rules.
 
 ### Compliance matrix correspondence
 
