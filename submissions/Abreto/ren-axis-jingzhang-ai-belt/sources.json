@@ -691,6 +691,19 @@
    "official_series_note_zh": "首都之窗2026-04官方系列报道《'三区两翼'打造世界级AI集聚地——百年京张AI创新带系列报道之'全球征集'》（beijing.gov.cn/fuwu/lqfw/gggs/202604/t20260403_4574351.html）为同主题官方语境。",
    "used_for_zh": "三区两翼与区域协同叙事背景。",
    "not_usable_for_zh": "不用于边界、控制或承诺性结论。"
+  },
+  {
+   "id": "PUBLIC-ISSUE-1061",
+   "registry_source_id": null,
+   "registry_note_zh": "征集活动仓库内的公开 issue，实名个人意见，未入官方登记表；按公共议题输入登记。",
+   "title": "「城市建设不能打“表演赛”」（open-city-ai/haidian issue #1061，实名居民公开意见）",
+   "publisher": "崔浡然（实名个人意见；自述居住于规划片区内的居民，非参赛者）",
+   "published_date": "2026-08-09",
+   "url": "https://github.com/open-city-ai/haidian/issues/1061",
+   "authority_level": "background",
+   "usable_for_formal": "background_only",
+   "used_for_zh": "作为公共议题输入与写作纪律依据登记：该意见批评全场方案措辞空泛（先发明名词、再解释事情）、参与者未到现场不应替居民发言。本包据此在 v5.8 补齐台账三字段、把外部异议独立触发复核写进试点卡申诉字段、执行正文名词落地审查，并遵其作者在该 issue 内提出的回应协议（不在 issue 内回复、改进随包并在版本记录中引用）。登记与采纳明细见 governance-ledger.json 的 public_input_ledger。",
+   "not_usable_for_zh": "该意见面向征集活动全场、未点名本包：不得引作对本包的评价、居民共识、公众参与成果或背书；不构成其作者对任何设计内容的同意。个人实名意见按背景级登记，不承担任何规范性或事实性承重结论。"
   }
  ]
 }
