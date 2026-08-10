@@ -20,6 +20,7 @@ const figureRoot = path.join(packageRoot, 'assets', 'figures');
 const GROUPS = model.synthetic_population.groups;
 const MODES = model.modes;
 const TOTAL = GROUPS.reduce((sum, group) => sum + group.count, 0);
+const TIME_BUDGETS = [30, 40, 50, 60, 75];
 
 function round(value, digits = 4) {
   const factor = 10 ** digits;
@@ -83,6 +84,7 @@ function newGroupSummary(group) {
     agents: group.count,
     mode_counts: Object.fromEntries(MODES.map((mode) => [mode, 0])),
     time_histogram: { '0_30': 0, '30_45': 0, '45_60': 0, '60_75': 0, '75_90': 0, '90_plus': 0 },
+    time_budget_counts: Object.fromEntries(TIME_BUDGETS.map((budget) => [String(budget), 0])),
     edge_counts: {},
     total_time: 0,
     total_wait: 0,
@@ -103,6 +105,12 @@ function addTimeBin(histogram, minutes) {
   else if (minutes < 75) histogram['60_75'] += 1;
   else if (minutes < 90) histogram['75_90'] += 1;
   else histogram['90_plus'] += 1;
+}
+
+function timeBudgetSufficiency(summary, budget) {
+  if (!summary.time_budget_counts) throw new Error('Missing exact time budget counts');
+  if (!(String(budget) in summary.time_budget_counts)) throw new Error(`Unsupported time budget: ${budget}`);
+  return summary.time_budget_counts[String(budget)];
 }
 
 function percentileFromHistogram(histogram, percentile, total) {
@@ -166,6 +174,9 @@ function simulateBundle(bundle) {
       const load = modeLoads[mode].load_ratio;
       const congestion = Math.max(0, load - 0.72);
       const time = Number(params.base_minutes) + (unit(index, 37) * 8 - 4) + (band === 'early' ? -1.5 : 0) + congestion * 7;
+      TIME_BUDGETS.forEach((budget) => {
+        if (time < budget) summary.time_budget_counts[String(budget)] += 1;
+      });
       const wait = Number(params.wait_minutes) * (1 + congestion * 0.8) * (1 - bundle.reliability_bonus * 0.55);
       const reliability = clamp(Number(params.reliability) + bundle.reliability_bonus, 0, 0.99);
       const reliabilityPenalty = (1 - reliability) * 11;
@@ -225,6 +236,9 @@ function simulateBundle(bundle) {
       vehicle_km_proxy: round(summary.total_vehicle_km, 2),
       accessibility_completion_proxy: round(accessibility, 4),
       activity_chain_completion_proxy: round(summary.chain_complete / summary.agents, 4),
+      time_budget_sufficiency_proxy: Object.fromEntries(TIME_BUDGETS.map((budget) => [
+        String(budget), round(timeBudgetSufficiency(summary, budget) / summary.agents, 4)
+      ])),
       generalized_cost_proxy: round(meanCost, 3),
       satisfaction_proxy: round(satisfaction, 2),
       edge_counts: summary.edge_counts,
@@ -490,4 +504,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { buildReadout, simulateBundle, model, MODES, TOTAL };
+module.exports = { buildReadout, simulateBundle, model, MODES, TOTAL, TIME_BUDGETS };

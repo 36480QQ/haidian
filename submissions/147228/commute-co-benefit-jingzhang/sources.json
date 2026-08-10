@@ -353,6 +353,20 @@
       "usage": "Method-only reference for expressing passenger-mode energy intensity on a passenger-mile basis and normalizing a relative screen; national averages are not local coefficients, and shuttle factors remain unknown until local fleet evidence exists.",
       "url": "https://climatechange.transportation.org/pdf/nchrp_2024_59_final_report_031309.pdf",
       "accessed_date": "2026-08-09"
+    },
+    {
+      "id": "ACCESSIBILITY-SUFFICIENCY-2022",
+      "source_type": "academic_public",
+      "usage": "Sufficiency-based accessibility method reference; supports showing whether groups meet an explicit time budget rather than relying only on group averages. No external threshold or local result is imported.",
+      "url": "https://doi.org/10.6084/m9.figshare.20060556",
+      "accessed_date": "2026-08-10"
+    },
+    {
+      "id": "TRANSIT-ACCESS-STOCHASTICITY-2026",
+      "source_type": "academic_public_open_access",
+      "usage": "Transit accessibility method reference covering schedule uncertainty, congestion, real-time information and alternative paths. It motivates a synthetic time-budget readout and supplies no Haidian coefficient or field result.",
+      "url": "https://doi.org/10.1186/s44147-026-00887-x",
+      "accessed_date": "2026-08-10"
     }
   ]
 }

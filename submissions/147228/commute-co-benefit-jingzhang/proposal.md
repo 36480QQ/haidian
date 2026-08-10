@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把企业错峰、居民照护、对外通勤、地铁、公交、自行车、步行/无障碍、汽车和企业接驳放进同一套可复算活动链；用全区域尺度合成压力屏查比较到岗可靠性、换乘等待、路缘冲突与群体公平，未来空中出行只保留受审批、可撤回、地面接驳优先的实验接口。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.2"
 ---
 
 # 京张通勤共益调度台。企业—居民多模式活动链
@@ -41,6 +41,14 @@ iteration: "v1.0"
 为了看清分数从哪里来，模型又固定 C3 的地面方式、路缘、可靠性和无障碍参数，只把企业错峰输入从 0% 扫到 24%。在这组声明输入下，企业组读数随输入小幅变化，保护群组的最低可达和最低满意度保持不变，全体代理分只出现很小的波动。18% 是当前 C3 的声明输入，不是企业已接受的比例，也不构成现实中的最佳错峰率。企业接受度、班次容量、居民回应和现场满意度仍需有日期的证据 [data:visual/assets/commute-co-benefit-sensitivity.json] [data:assets/figures/commute-co-benefit-sensitivity-board.svg]。
 
 ![企业错峰输入敏感性与群体保护。固定地面控制，只改变一个声明输入](assets/figures/commute-co-benefit-sensitivity-board.svg)
+
+## 时间预算与群体充分性。先看谁能按时到，再看全体平均值
+
+综合代理分会把许多差异压成一个数字。为了保留这些差异，模型用同一批合成代理再读一遍 30、40、50、60 和 75 分钟时间预算。每条曲线表示一个群组在声明时间上限内完成整段合成出行的比例，右侧同时放入 C3 和 B0 的全体读数，并单独保留居民工作者、照护者/儿童和夜班工作者中的最低值 [data:visual/assets/commute-co-benefit-accessibility.json]。
+
+这张图只使用当前 runner 生成的精确时间，不把论文中的阈值、外地样本或现场班次搬进来。它能帮助评审发现一个政策包在平均代价上占优时，是否让某个群组更难赶上 40 或 50 分钟的门槛。当前曲线属于合成充分性代理，不能替代分时 OD、可靠班次、步行和无障碍走查、居民回应或本地可达性基线。时间预算也不是现实中的最佳值，正式门槛要由有权组织和专业团队在日期化证据基础上冻结 [source:ACCESSIBILITY-SUFFICIENCY-2022] [source:TRANSIT-ACCESS-STOCHASTICITY-2026] [data:visual/assets/run-commute-co-benefit-accessibility.js]。
+
+![分组时间预算充分性。C3 先看保护组最低曲线，再看全体代理读数](assets/figures/commute-co-benefit-accessibility-board.svg)
 
 ## 一页执行摘要。先验收一条到站到家链，再谈共享接驳扩展
 

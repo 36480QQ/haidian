@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An activity-chain model links employer staggering, resident care, external commuting, metro, bus, bicycle, walking/accessibility, cars and enterprise shuttles; a population-scale synthetic screen compares arrival reliability, transfer waiting, curb conflict and group equity, while future air mobility remains a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.2"
 ---
 
 # Jing-Zhang Commute Commons: An Enterprise–Resident Activity-Chain Network
@@ -41,6 +41,14 @@ The contract also needs an evidence ladder so that a synthetic score cannot be m
 To show where the proxy score comes from, the model now holds the C3 ground modes, curb, reliability and accessibility controls fixed while sweeping the declared employer shift input from 0% to 24%. Under these declared inputs, the enterprise readout changes slightly, the minimum protected-group access and satisfaction stay unchanged, and the overall proxy moves only within a narrow range. The current 18% is a declared C3 input, not accepted employer participation and not a real-world optimal stagger rate. Employer acceptance, timetable capacity, resident response and field satisfaction still need dated evidence [data:visual/assets/commute-co-benefit-sensitivity.json] [data:assets/figures/commute-co-benefit-sensitivity-board.en.svg].
 
 ![Employer staggering sensitivity and group protection: fixed ground controls, one declared input changed](assets/figures/commute-co-benefit-sensitivity-board.en.svg)
+
+## Time Budgets and Group Sufficiency: Check Who Can Arrive on Time Before the Average
+
+A composite proxy score compresses many differences into one number. To keep those differences visible, the same synthetic agents are read again at 30, 40, 50, 60 and 75 minute budgets. Each curve shows the share of a group completing the declared synthetic trip within the time limit. The right panel places the C3 and B0 all-agent readouts together and keeps the minimum among resident workers, carers/children and night workers visible [data:visual/assets/commute-co-benefit-accessibility.json].
+
+The board uses exact times from the committed runner. It does not import a paper threshold, an external sample or a local timetable. It helps a reviewer see whether a policy can lead on average generalized cost while making one group less likely to meet a 40 or 50 minute limit. These curves are synthetic sufficiency proxies, not local accessibility, and they cannot replace time-binned OD, reliable timetables, walking and accessibility audits, resident response or a local baseline. The time budgets are not claimed as real-world optima; an authorised organisation and professional team must freeze any field threshold from dated evidence [source:ACCESSIBILITY-SUFFICIENCY-2022] [source:TRANSIT-ACCESS-STOCHASTICITY-2026] [data:visual/assets/run-commute-co-benefit-accessibility.js].
+
+![Time-budget sufficiency by group: keep the protected minimum curve visible before the all-agent proxy](assets/figures/commute-co-benefit-accessibility-board.en.svg)
 
 ## One-Page Executive Brief: Accept One Door-to-Door Chain Before Expanding Shared Feeders
 

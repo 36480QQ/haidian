@@ -110,6 +110,16 @@
       "required_en": ["composite mobility-pressure proxy score", "synthetic screen output", "not resident satisfaction"],
       "source_files": ["visual/assets/commute-co-benefit-readout.json", "visual/assets/run-commute-co-benefit-optimization.js"],
       "prohibited_interpretations": ["resident satisfaction result", "field performance", "official score"]
+    },
+    {
+      "id": "time_budget_sufficiency",
+      "match_zh": "当前曲线属于合成充分性代理",
+      "match_en": "These curves are synthetic sufficiency proxies",
+      "category": "synthetic",
+      "required_zh": ["合成充分性代理", "不能替代", "本地可达性基线"],
+      "required_en": ["synthetic sufficiency proxies", "cannot replace", "local baseline"],
+      "source_files": ["visual/assets/commute-co-benefit-accessibility.json", "visual/assets/run-commute-co-benefit-accessibility.js"],
+      "prohibited_interpretations": ["observed accessibility", "service guarantee", "real-world optimal threshold"]
     }
   ],
   "headline_wording_guard": {
