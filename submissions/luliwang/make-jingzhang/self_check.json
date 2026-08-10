@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional overall boundary is present and explicitly not claimed as official."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are present and explicitly labelled provisional; Dazhongsi precision is not claimed."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use polygons are a shared-edge projected partition of the submitted site geometry."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static offline HTML uses local assets and exact structured metric values."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All required chapters contain claim-adjacent evidence anchors and depth references."
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English narrative, report, visual, figures and PDF deliverables are paired."
+    },
+    {
+      "check_id": "DEVICE_LIFECYCLE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All public AI scenarios are governed by an eight-field passport, human fallback, maintenance and retirement gates."
+    }
+  ]
+}
