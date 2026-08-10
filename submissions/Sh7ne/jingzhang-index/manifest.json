@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "06593092c77e35fa7685916b3ded5ae00c094a78959b03f83ec3502d9bc87efd"
+      "sha256": "5810f93b39f755415eb847b459da5bf85f70e94eb411ce31091aca370df009f8"
     },
     {
       "path": "compliance_matrix.json",
@@ -299,8 +299,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "mixed"
+    "data_confidence": "mixed",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
