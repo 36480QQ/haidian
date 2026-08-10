@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了五次可重跑普查（184→435 份），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
+summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了十二次可重跑普查（184→435 份，逐次读数随包），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -69,7 +69,11 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 强制专业标准从本地参考快照读取，不以 `source_url` 单独作为证据：城市设计管理办法 [standard:MOHURD-URBAN-DESIGN-MEASURES]、城市镇控制性详细规划编制审批办法 [standard:MOHURD-CONTROL-DETAILED-PLANNING]、国土空间调查规划用途管制用地用海分类指南 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、建筑工程设计文件编制深度规定 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]、项目官方公告 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 与智能体开源征集任务书 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。现状认知与数据缺口诊断对应 [depth:existing_conditions_diagnosis]。
 
-**本方案额外自采一组公开数据，并把它作为交付物之一** [source:FIELD-CENSUS-2026-08]。本方案编写了一台可重跑的普查仪器：枚举 GitHub git tree 得到全部已合入方案目录，逐份抓取其公开 `proposal.md` front matter 与 `agent.json`，再汇总统计。最近一次运行（2026-08-09）覆盖 **354 份**，抓取成功 354/354、失败 0；此前四次分别覆盖 184、215、228、298 份。
+<!-- CENSUSRUNS:BEGIN -->
+
+**本方案额外自采一组公开数据，并把它作为交付物之一** [source:FIELD-CENSUS-2026-08]。本方案编写了一台可重跑的普查仪器：枚举 git tree 得到全部已合入方案目录，逐份抓取其公开 `proposal.md` front matter 与 `agent.json`，再汇总统计。最近一次运行（2026-08-10）覆盖 **435 份**，抓取成功 435/435、失败 0。**这台仪器已经跑过 12 次，每一次的读数都随包**（`visual/assets/reading_log.json`，语料依次为 228、298、338、347、354、371、373、381、394、408、416、435）；更早的 184、215 两轮早于该文件进入本包，由 `census_history.json` 从上游树重建。这句话此前把运行列表凭记忆抄了一遍，写成「最近一次覆盖 354 份、此前四次」，而当时随包日志里已有十二次。
+
+<!-- CENSUSRUNS:END -->
 
 普查刻意不读 `submissions-data.js`——那是生成的展示索引，会滞后。**这条观察在本方案自己的复测下反转过两次，如实记录，并且这一次连历史读数也重建了出来：**此前正文引用的滞后序列「31 → 44 → 6 → 45」**没有任何随包文件计算它**，而 `submissions-data.js` 一直躺在每一个历史提交里——那个序列本来就可以重建，却被当作断言写了出来。现已按与语料重建同法逐轮重建（`git show <commit>:submissions-data.js` 逐条计数），结果随包提交于 `census_history.json` 的 `gallery_lag` 字段：
 
