@@ -1,82 +1,195 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/fly9i/jingzhang-ai-ecosystem",
+  "pr_author": "fly9i",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/fly9i/jingzhang-ai-ecosystem/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/fly9i/jingzhang-ai-ecosystem/agent.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/key-areas.en.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/key-areas.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/land-use-structure.en.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/land-use-structure.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/metrics-evidence.en.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/metrics-evidence.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/mobility-bluegreen.en.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/mobility-bluegreen.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/site-overview.en.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assets/figures/site-overview.png",
+        "submissions/fly9i/jingzhang-ai-ecosystem/assumptions.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/compliance_matrix.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/design_depth_matrix.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/drawings/a0-boards.en.pdf",
+        "submissions/fly9i/jingzhang-ai-ecosystem/drawings/a0-boards.pdf",
+        "submissions/fly9i/jingzhang-ai-ecosystem/drawings/a3-booklet.en.pdf",
+        "submissions/fly9i/jingzhang-ai-ecosystem/drawings/a3-booklet.pdf",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/buildings.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/constraints.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/green_space.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/key_areas.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/land_use.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/phasing.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/public_space.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/roads.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/geometry/site_boundary.geojson",
+        "submissions/fly9i/jingzhang-ai-ecosystem/manifest.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/metrics.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/proposal.en.md",
+        "submissions/fly9i/jingzhang-ai-ecosystem/proposal.md",
+        "submissions/fly9i/jingzhang-ai-ecosystem/report/copyright_statement.md",
+        "submissions/fly9i/jingzhang-ai-ecosystem/report/narrative.md",
+        "submissions/fly9i/jingzhang-ai-ecosystem/report/proposal.en.html",
+        "submissions/fly9i/jingzhang-ai-ecosystem/report/proposal.html",
+        "submissions/fly9i/jingzhang-ai-ecosystem/self_check.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/sources.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/standard_matrix.json",
+        "submissions/fly9i/jingzhang-ai-ecosystem/visual/index.en.html",
+        "submissions/fly9i/jingzhang-ai-ecosystem/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/fly9i/jingzhang-ai-ecosystem": "formal"
+      },
+      "total_bytes": 10520092,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412842.278,
+        "green_space_area_sqm": 2855524.993,
+        "public_space_area_sqm": 114723.725,
+        "building_footprint_area_sqm": 981804.817,
+        "green_ratio": 0.250203,
+        "public_space_ratio": 0.010052
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412842.28,
+        "green_ratio": 0.250203,
+        "public_space_ratio": 0.010052
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 17,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 6,
+          "standard": 8,
+          "depth": 10,
+          "data": 1,
+          "metric": 10
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "manifest.json",
-      "message": "确定性校验：全部文件 sha256 与 manifest 一致、schema 合规、无 blocking 失败。"
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/",
-      "message": "空间复核 PASS；指标漂移已消除（green_space/land_use 与 spatial_review 复算口径统一为 EPSG:4548 先投影再求并，delta<0.01㎡），仅剩 3 个 KEY_AREA_PROVISIONAL(info)，均非阻断。"
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "可视化封装 PASS；离线静态、含全部必需中文标记与 data-metric，数值与 metrics.json 一致。"
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "compliance/standard/design_depth_matrix + structured deliverables",
-      "message": "专业证据复核 PASS；合规/标准/设计深度三矩阵覆盖完整，并补齐 agent.1-6 结构化交付物（scenarios/case_studies/logo_system/public_space_components/implementation_matrix/governance_kpi）。"
-    },
-    {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "info",
-      "target": "geometry/site_boundary.geojson",
-      "message": "边界为 provisional_constraint，待官方红线补齐后复算面积与衍生图层。"
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "info",
-      "target": "geometry/key_areas.geojson",
-      "message": "三重点区临时矩形 provisional，面积与公告一致。"
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "用地 69 单元无缝覆盖 site（外溢<0.1㎡，无 COVERAGE_GAP/OVERLAP）；绿地多边形内部自重叠已消除。"
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "离线静态 HTML，无远程资源/脚本，图件 base64 内嵌。"
-    },
-    {
-      "check_id": "BILINGUAL_PARITY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md / proposal.en.md / report / visual / drawings / figures",
-      "message": "双语等价复核 PASS；图件中英两版分别渲染（中文版含中文图题图例标签、英文版全英文无中文残留），A3/A0 PDF 英文版嵌英文图件，metrics-evidence 范围语义已修正（总体设计范围 11.41km² 与重点详细设计 3.684km² 分别标注）。"
-    },
-    {
-      "check_id": "MATURITY_HONESTY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md / proposal.en.md / matrices",
-      "message": "成熟度表述已降级为概念性城市设计建议（可校验的空间结构框架，非控制性详细规划/规划综合实施方案法定深度）；容积率与建筑高度因法定控规缺失标 unknown，不伪造。"
-    },
-    {
-      "check_id": "METRIC_RECALC_DRIFT",
-      "result": "pass",
-      "severity": "minor",
-      "target": "metrics.json",
-      "message": "此前 green_space 14.5㎡ 漂移与 land 19㎡ 外溢均已通过统一投影-求并算法消除；当前 metrics.json 与 spatial_review.py 复算完全一致。"
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
