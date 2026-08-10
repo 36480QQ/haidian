@@ -11,6 +11,9 @@
     "visual/assets/commute-co-benefit-readout.json",
     "visual/assets/run-commute-co-benefit-optimization.js",
     "assets/figures/commute-co-benefit-board.svg",
+    "visual/assets/commute-co-benefit-contract.json",
+    "visual/assets/run-commute-co-benefit-contract.js",
+    "assets/figures/commute-co-benefit-contract-board.svg",
     "proposal.md#四类人先看什么",
     "proposal.md#试点什么时候能开始",
     "visual/assets/pilot-startup-checklist.json",
@@ -37,14 +40,14 @@
       "id": "originality",
       "label_zh": "原创性",
       "start_here": ["proposal.md#一页执行摘要", "visual/assets/responsibility-acceptance-contract.json"],
-      "strongest_evidence": "企业—居民共益的时段路缘账本、责任—验收合同和可撤回人工回退链",
+      "strongest_evidence": "企业—居民共益合同把企业收益、保护群组、对外通勤未知边界、人工回退和停止门放在同一张可回读账本上，再接时段路缘和责任—验收合同",
       "boundary": "角色和阶段是设计目标，不是已签合同或合作事实。"
     },
     {
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
       "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json"],
-      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选 fail-closed，共同展示方式选择如何被硬门槛约束",
+      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、企业—居民共益合同、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选 fail-closed，共同展示方式选择如何被硬门槛约束",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
     {
@@ -58,7 +61,7 @@
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
       "start_here": ["proposal.md#四类人先看什么", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
-      "strongest_evidence": "六类人群的全日活动链读数、四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
+      "strongest_evidence": "六类人群的全日活动链读数、企业—居民合同、四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
     {

@@ -227,6 +227,13 @@ function addCommuteCoBenefitSection(html, lang) {
       const extra = `<img src="../assets/figures/activity-chain-flow-board${suffix}.svg" alt="${lang === 'zh' ? '一整天活动链六个交接点' : 'One full-day activity chain with six handoffs'}"><img src="../assets/figures/mode-mix-equity-board${suffix}.svg" alt="${lang === 'zh' ? '入选政策方式组合与群体公平' : 'Selected policy mode mix and group equity'}">`;
       if (markerStart >= 0 && markerEnd >= markerStart) html = `${html.slice(0, markerEnd + 1)}${extra}${html.slice(markerEnd + 1)}`;
     }
+    if (!html.includes(`commute-co-benefit-contract-board${suffix}.svg`)) {
+      const marker = `../assets/figures/mode-mix-equity-board${suffix}.svg`;
+      const markerStart = html.indexOf(marker);
+      const markerEnd = html.indexOf('>', markerStart);
+      const extra = `<img src="../assets/figures/commute-co-benefit-contract-board${suffix}.svg" alt="${lang === 'zh' ? '企业—居民通勤共益合同' : 'Enterprise-resident co-benefit contract'}">`;
+      if (markerStart >= 0 && markerEnd >= markerStart) html = `${html.slice(0, markerEnd + 1)}${extra}${html.slice(markerEnd + 1)}`;
+    }
     return html;
   }
   const readout = readJson('visual/assets/commute-co-benefit-readout.json');

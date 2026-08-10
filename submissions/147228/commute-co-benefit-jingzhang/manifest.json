@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3fecf3d17cdc26dddf8bb2731b9d74cc32a4f6cde9743228e7c2f6d09712eb6a"
+      "sha256": "3079dd0d385bd7721016ef6f1af66f6fb792cdb76c45311b7fe1c5e89669deff"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4264db4a0aea716814b12fbffed7a27d2658d95ef05913c689e8201334dd16a5"
+      "sha256": "93c5c6b30b92bdfee55c149185fd49028f26786244df2b6590906735c7675975"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "74b9530e7182ae7f59d266463273274a7d9bcc8cf07c0fe8b251a319b3bc18ab"
+      "sha256": "5cb3f03cc5eca1dafe244286ad2b1bff0b42f9fa466850b55096ed5eff1ba4dd"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "03cd936049854139332c590bd149676a6d69016b52349b5c703b656bed43743c"
+      "sha256": "7ca8a08bff308dba9d0925d4ce6594bdc3732a2ea95b34af03140e312df04dad"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "afebd3a378e258728cd0a9885629c3b3f6ec9f01c214d5f5c9b37a8916c7c211"
+      "sha256": "681f302cdefe51875027d0454827a8ec692d67d020ce67b39a0d00ac3beadddd"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a883f0ef5dbf3a65b14b7e59aa5b25b619de97ebe25905904169602cb80848f0"
+      "sha256": "a18bbc790ead962df4f7093f03ddf31d8b9c1abcf0e60c1e4a03d5e6216302f7"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -797,7 +797,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "add5ea5cee711ca8c01a6ce23956f6327a64fe62f2c7d6f40cf6a8cdc659cd4a"
+      "sha256": "e6e0216de2080fbbba1c7499a069f039ebb6a880cc46d2fac87f220ca013bdb7"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -836,7 +836,7 @@
       "path": "visual/assets/run-presentation-polish.js",
       "role": "runner",
       "required": false,
-      "sha256": "21bc7196691b23031b7b476c0011c6e3b80cd53b678c76a2b49895373e6c25b5"
+      "sha256": "ab820ff07a956120c4ffabdfd96cf0951e281b45c8eb32452284f9dcc2d8ea8f"
     },
     {
       "path": "assets/figures/scenario-cards-board.svg",
@@ -963,6 +963,33 @@
       "role": "executable_evidence",
       "required": false,
       "sha256": "61d1407b105dc584580f2a6ba659ef5286013a10bb400449262e375afcf80aeb"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-contract-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "eb4afd6c9d5a4075666e7c1142d65987d23ceb42203e70bbd8874f0bbdcc2b8b"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-contract-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/commute-co-benefit-contract-board.svg",
+      "sha256": "5c3f0627dde07b7ebb8f8544ba539bd2a7b48454377fd0b816fc32e8b73c0e05"
+    },
+    {
+      "path": "visual/assets/commute-co-benefit-contract.json",
+      "role": "data",
+      "required": false,
+      "sha256": "6c4bda7bb58121434e05a81b07bee88a2ae6c3c341e6407062d4dc61db96996a"
+    },
+    {
+      "path": "visual/assets/run-commute-co-benefit-contract.js",
+      "role": "executable_evidence",
+      "required": false,
+      "sha256": "e84dc4a463dafab2c3f5a9157a920c2612efa94099cdeb96dec500542b43d788"
     }
   ]
 }

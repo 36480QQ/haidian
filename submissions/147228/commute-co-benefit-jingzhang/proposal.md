@@ -30,6 +30,10 @@ iteration: "v1.0"
 
 ![通勤共益政策包比较。先过硬门，再看全日代价与公平](assets/figures/commute-co-benefit-board.svg)
 
+![企业—居民通勤共益合同。企业收益、居民保护与停止门放在同一张账](assets/figures/commute-co-benefit-contract-board.svg)
+
+这张合同把“企业得到什么”和“谁不能被牺牲”放在同一处：企业只使用声明的错峰输入，居民、照护、夜班、物流和公共回退保留保护门；对外通勤仍等待有日期的分组 OD，任一硬门失败就冻结政策并回到 P0 [data:visual/assets/commute-co-benefit-contract.json] [data:assets/figures/commute-co-benefit-contract-board.svg]。
+
 ## 一页执行摘要。先验收一条到站到家链，再谈共享接驳扩展
 
 普通人要在出门、换乘、受阻、求助和回家每一步都保有可理解的选择。第一个可逆试点只验收一条最小链。它从选择公共、无障碍或人工路径开始，经过交通服务请求，在断网、雨雪、路缘冲突或错过衔接时转由人工或轨道公交接管，遇到不安全或不可达状态就冻结预约并退出，最后由独立复核者回放证据，决定修复、扩展或撤回。这不是现实运营承诺。当前 M-09 只在本地、无网络、无个人数据的合成桌面演练中复演 4 条请求，`performance_results=null`、`operational_status=not_authorized_not_run`。

@@ -30,6 +30,10 @@ Under the current synthetic inputs, the selected candidate combines employer sta
 
 ![Commute co-benefit policy bundles: pass hard gates before comparing cost and equity](assets/figures/commute-co-benefit-board.svg)
 
+![Enterprise–resident co-benefit contract: enterprise benefit, resident protection and stop gates](assets/figures/commute-co-benefit-contract-board.en.svg)
+
+This contract puts “what the enterprise receives” beside “who cannot be sacrificed”: only the declared employer shift input may move, while resident, care, night-work, logistics and public fallback protections remain gated. External commuting stays unknown until dated grouped OD evidence exists; any failed gate freezes the policy and returns it to P0 [data:visual/assets/commute-co-benefit-contract.json] [data:assets/figures/commute-co-benefit-contract-board.en.svg].
+
 ## One-Page Executive Brief: Accept One Door-to-Door Chain Before Expanding Shared Feeders
 
 An ordinary person is not a flow point in a model. At each step—leaving, transferring, encountering disruption, asking for help and returning home—they need an understandable choice. The first reversible pilot accepts one minimum chain: **choose a public/accessibility or human route → request one mobility service → trigger human or rail/bus takeover when a transfer is missed, the network is offline, weather turns bad or a curb conflict occurs → freeze the booking and exit when the state is unsafe or unreachable → let an independent reviewer replay the evidence and decide whether to repair, expand or withdraw**. This is not an operational claim. The current M-09 is only a local, offline, no-personal-data tabletop replay of four synthetic requests; `performance_results=null` and `operational_status=not_authorized_not_run`.
