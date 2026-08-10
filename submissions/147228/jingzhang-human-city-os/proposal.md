@@ -81,6 +81,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 标识只落在本包图件和离线展示上，不导出企业名单、招商承诺或官方背书。橙色用于人工接管和停止，青绿色用于公共接口和蓝绿空间，黄色用于版本门和资料缺口，深蓝与纸色保持专业图纸的可读底。以后若取得官方品牌、文保或公共空间视觉规范，必须先做权利核验和专业适配，再重算图件与 PDF。[source:SITE-PACKAGE] [depth:risk_missing_data]
 
+## v0.3 评分修复｜从动作图谱到节点级空间序列
+
+空间动作图谱回答“每处重点区要完成什么”；本节再把它压到节点级的连续阅读：**到达与停留 → 公共状态/人工解释 → 功能带 → 人工接管或退出 → 证据回放**。`visual/assets/spatial-action-node-plans.json` 只使用现有 provisional 锚点，功能带用于表达空间关系和状态，不填工程尺寸；节点计划不是道路横断面、建筑平面、工程量或已运营服务。[data:visual/assets/spatial-action-node-plans.json] [depth:overall_spatial_structure]
+
+| 节点 | 从哪里到哪里 | 功能带（无尺度，仅表达先后与状态） | 进入前证据 | 失效时的空间动作 |
+| --- | --- | --- | --- | --- |
+| AI 原点社区 | `PUBLIC-A-INCLUSION` → `BLDG-A-03` → `ROAD-A-SKILL` → `GREEN-A-QUIET-1` | 到达/停留前场 → 人工柜台电话纸面 → 技能再造与代际共学 → 无屏恢复绿地 | 连续进入走读、服务目录、知情基线与岗位路径 | 路径受阻或人工入口不可用时改道并停留人工服务；结果保持 `unknown` |
+| 众智园 | `ROAD-B-SILICON` → `PUBLIC-B-API` → `PUBLIC-C-SANDBOX` → `GREEN-C-SPONGE` | 人行优先观察位 → 人工停止与事故复盘 → 受限测试/API 模拟 → 海绵缓冲与安全退避 | 道路/无障碍、安全、蓝线排水、授权、保险与接管演练 | 无人接管或不能回放时冻结测试，退回上一发布门 |
+| 大钟寺 | `SC-D01` → `SC-D02` → `SC-D03` | 城市 API 公共接口厅 → OPC 共享实验室 → 标准回放工作室 → 多语人工解释客厅 | 服务目录、最小授权、冲突披露、权利边界与责任主体 | 越权、不可解释或无人工服务时冻结调用，只保留公开问题清单 |
+
+这组节点计划补的是“空间载体如何承接普通人路径和停止动作”的可见中间层，不把功能带误写成实测断面。官方道路、权属、现状设施、文保、无障碍和运营资料到位前，所有尺寸、容量、通行能力和结果指标仍为待补资料或 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
+
 # 京张人本城市操作系统
 
 > 从 AI 展台，到 AI 时代人的城。AI 不应成为城市的主角，而应成为居民、劳动者、创业者和公共机构可审计、可拒绝、可回滚的基础能力。

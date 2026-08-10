@@ -81,6 +81,18 @@ This iteration adds an author-originated concept identity so drawing headers, sc
 
 The mark is used only in this package's figures and offline display. Orange marks human takeover and stop, teal marks public interface and blue-green space, yellow marks release gates and data gaps, while navy and paper preserve drawing readability. If official branding, heritage, or public-space visual rules arrive, rights review and professional adaptation must precede any figure or PDF regeneration.[source:SITE-PACKAGE] [depth:risk_missing_data]
 
+## v0.3 score repair | From action atlas to node-level spatial sequence
+
+The action atlas answers what each key area should do. This section makes the intermediate spatial sequence visible: **arrival and dwell → public state/human explanation → functional bands → human takeover or exit → evidence replay**. `visual/assets/spatial-action-node-plans.json` uses only existing provisional anchors. The bands express spatial relationship and state without engineering dimensions; they are not a street section, building plan, bill of quantities, or operating service.[data:visual/assets/spatial-action-node-plans.json] [depth:overall_spatial_structure]
+
+| Node | Anchor sequence | Functional bands (non-scaled; order and state only) | Evidence before entry | Spatial fallback on failure |
+| --- | --- | --- | --- | --- |
+| AI Origin Community | `PUBLIC-A-INCLUSION` → `BLDG-A-03` → `ROAD-A-SKILL` → `GREEN-A-QUIET-1` | Arrival/dwell forecourt → staffed, telephone and paper entry → skills transition and intergenerational learning → screen-free restorative green | Continuous-entry walk-through, service catalogue, consented baseline and paid pathway | Reroute or remain with human service when the path or human entry fails; outcomes remain `unknown` |
+| Zhongzhiyuan | `ROAD-B-SILICON` → `PUBLIC-B-API` → `PUBLIC-C-SANDBOX` → `GREEN-C-SPONGE` | Pedestrian-first observation → human stop and incident review → bounded test/API simulation → sponge buffer and safe retreat | Road/accessibility, safety, blue-line/drainage, authorization, insurance and takeover rehearsal | Freeze testing and return to the prior release gate when takeover or replay is unavailable |
+| Dazhongsi | `SC-D01` → `SC-D02` → `SC-D03` | Urban API public-interface hall → OPC shared laboratory → standards replay studio → multilingual human-explanation lounge | Service catalogue, least-privilege authorization, conflict disclosure, rights boundary and accountable role | Freeze calls and retain only the public problem list when access is excessive, unexplained, or lacks human service |
+
+This node plan supplies the visible middle layer showing how spatial carriers hold an ordinary-person journey and stop action; it does not turn functional bands into measured sections. Until official roads, rights, existing facilities, heritage, accessibility, and operating inputs are available, all dimensions, capacities, throughput, and outcome indicators remain pending or `unknown`.[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
+
 # Jingzhang Human City OS
 
 > From an AI showcase to a city for people in the AI era. AI is not the protagonist of the city; it is an auditable, rejectable, and reversible capability serving residents, workers, founders, and public institutions.
