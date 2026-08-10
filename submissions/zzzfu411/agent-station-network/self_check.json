@@ -35,6 +35,13 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    },
+    {
+      "check_id": "NEUTRAL_SCORING_CLAIM",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Removed prejudging scoring language; provisional geometry described as concept/display/content-review only; maintainer decides eligibility and scoring."
     }
   ]
 }

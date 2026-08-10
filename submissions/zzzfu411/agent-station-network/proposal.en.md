@@ -70,7 +70,7 @@ Near term: three-hub opening package and spine continuity. Medium term: twelve p
 
 ![Metrics evidence](assets/figures/metrics-evidence.png)
 
-Known metrics are recomputed from this package’s GeoJSON in EPSG:4548; unknowns stay explicit. Matrices cover announcement tasks and agent.1–6. Organizer data gaps do not block content scoring, but precision claims must be recomputed later [metric:site_area_sqm] [depth:metrics_recalculation].
+Known metrics are recomputed from this package’s GeoJSON in EPSG:4548; unknowns stay explicit. Matrices cover announcement tasks and agent.1–6. Official polygons are not yet available; current geometry is only for concept generation, display, and content review, and the full package must be recomputed when formal data arrives. Eligibility, scoring, acceptance, publication, and merge are decided by maintainers through trusted validation; this proposal does not prejudge those outcomes [metric:site_area_sqm] [depth:metrics_recalculation].
 
 ## Risk, copyright, compliance
 

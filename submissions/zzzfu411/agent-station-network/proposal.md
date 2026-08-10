@@ -153,7 +153,7 @@ iteration: "v1.0"
 
 ![指标证据板：由 GeoJSON 在 EPSG:4548 复算的核心指标与未知项](assets/figures/metrics-evidence.png)
 
-已知指标均由本包 GeoJSON 在 EPSG:4548 复算；未知指标（如 FAR）显式 unknown。`compliance_matrix.json` 覆盖公告 1.3/1.4/1.5 与 agent.1–6；`standard_matrix.json` 与 `design_depth_matrix.json` 提供专业深度证据链。组织方数据缺口不阻断内容评分，但精度敏感结论必须在官方多边形到后重算 [metric:site_area_sqm] [depth:metrics_recalculation]。
+已知指标均由本包 GeoJSON 在 EPSG:4548 复算；未知指标（如 FAR）显式 unknown。`compliance_matrix.json` 覆盖公告 1.3/1.4/1.5 与 agent.1–6；`standard_matrix.json` 与 `design_depth_matrix.json` 提供专业深度证据链。当前官方 polygon 尚未提供；本包几何仅用于概念生成、展示与内容审查，正式资料到位后须整体复算。资格、评分、接受、发布与合并由维护者依据可信验证决定，本方案不作预判 [metric:site_area_sqm] [depth:metrics_recalculation]。
 
 ## 风险、版权与合规说明
 
