@@ -6,7 +6,7 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional street-aligned boundary used; official redline pending (organizer data gap does not block content scoring)."
+      "message": "Provisional street-aligned boundary used; official redline pending. The package must be fully recomputed when the official polygon is released; no eligibility or scoring judgment is made here."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
