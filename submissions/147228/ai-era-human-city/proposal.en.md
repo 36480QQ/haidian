@@ -91,7 +91,21 @@ This node plan adds a reviewer-visible middle layer for how public interfaces ca
 
 ![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.svg)
 
-To reduce the jump from narrative to structured attachments, this revision adds three bilingual review boards generated directly from the package JSON contracts: the ordinary-person journey and stop loop, taskbook–space–replay coverage for all ten scenario cards, and G0/G1 gates with exit actions for the five conceptual project families. They are visual indexes of existing fields, not new field performance, authorization, permit, deployment, or official-score claims; read the `result_status=not_run` and `not_an_official` boundaries with the source JSON.[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+To reduce the jump from narrative to structured attachments, this revision brings four bilingual review boards generated directly from package JSON contracts into one visible set: the ordinary-person journey and stop loop, taskbook–space–replay coverage for all ten scenario cards, G0/G1 gates with exit actions for the five conceptual project families, and the taskbook–public-space–annual-operation triad. They are visual indexes of existing fields, not new field performance, authorization, permit, deployment, or official-score claims; read the `result_status=not_run` and `not_an_official` boundaries with the source JSON.[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
+## v1.2 Taskbook–space–operation triad: make agent.4–agent.6 meet on one board
+
+Figure 10 compresses three requirements that are easy to read separately into one conceptual design board. Agent.4 asks how public space and three landmarks carry a problem, a human override, and an exit. Agent.5 asks how Centennial Jing-Zhang, Zhongguancun, and AI culture become an understandable, contestable, retractable wayfinding system. Agent.6 asks how global events and long-term operation leave version evidence through a four-season rhythm, public observation, and release notes. The board uses only existing package JSON and provisional anchors; it does not describe confirmed events. [data:visual/assets/taskbook-culture-operations-atlas-v12.json] [data:visual/assets/public-space-landmarks.json] [depth:compliance_and_standard_response]
+
+| Taskbook entry | Spatial carrier (concept reference) | Annual/operation readback | Missing evidence |
+|---|---|---|---|
+| agent.4 public space and landmarks | Open Problem Mile Marker, Algorithm Calibration Court, and Human Override Beacon sit on three public-space anchors; they support ordinary movement, human explanation, and exit prompts | Publish the problem and data boundary before an event; retain public objections and withdrawal records afterwards | Formal boundary, public-access conditions, accessibility walk-through, heritage and site review |
+| agent.5 cultural narrative | “Railway time — problem version — human override” is the cultural grammar; wayfinding has timeline, problem, and human-service lines | Show only consented, verifiable, retractable roles and versions; no individual or company ranking | Authoritative history, language/form review, and cleared-works register |
+| agent.6 global events and long-term operation | Spring publish, summer walk, autumn protocol camp, winter v0.x check; keep meanwhile use and a human entry | Each season releases what is kept, paused, revised, and still missing | Event responsibility, insurance/safety/copyright, participation, and operation evidence |
+
+The five project families in Figure 10 are only a spatial-carrier and G0/G1 research order: human buffer, reskilling and night wellbeing, city API, blue-green and human-machine test, and culture/global co-creation. If authorization, responsibility, professional material, or a safety gate is missing, the proposal stays at G0, freezes, or exits. The board proves only that package fields can be read together; it is not an official score, confirmed event, operator, heritage permit, company partnership, or field result. [data:visual/assets/implementation-operation-matrix.json] [metric:project_family_count] [depth:implementation_and_phasing]
+
+![Figure 10: Taskbook, public space and annual operation](assets/figures/taskbook-culture-operations-board.en.svg)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -178,3 +192,5 @@ The asset-level clearance ledger records author, method, third-party content, an
 ![Figure 07: ordinary-person journey and stop loop](assets/figures/ordinary-service-evidence-board.en.svg)
 ![Figure 08: taskbook–space–replay coverage for ten scenario cards](assets/figures/scenario-coverage-board.en.svg)
 ![Figure 09: G0/G1 gates and exit actions for five conceptual project families](assets/figures/implementation-gates-board.en.svg)
+![Figure 10: taskbook, public space, and annual operation concept evidence](assets/figures/taskbook-culture-operations-board.en.svg)
+![Figure 10: Taskbook, public space and annual operation](assets/figures/taskbook-culture-operations-board.en.svg)
