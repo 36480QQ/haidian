@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "临时粗略边界（provisional_rough）已标注 provisional_constraint，未伪装官方红线；官方 polygon 到位后替换并重算。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区域为 provisional 临时范围，方向性设计已注明待官方 polygon。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/land_use.geojson",
+      "message": "用地分区无缝无重叠覆盖全部提交边界（shapely 校验：gap=0，overlap=0，EPSG:4548）。"
+    },
+    {
+      "check_id": "PHASING_COVERAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/phasing.geojson",
+      "message": "三期分区无缝覆盖全部提交边界（gap=0）。"
+    },
+    {
+      "check_id": "METRICS_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "面积与比例类指标由几何图层在 EPSG:4548 下复算并写入；unknown 项均附 reason。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "静态 HTML 可视化无外部依赖（无 CDN/远程瓦片/外部脚本/字体/iframe/表单/API/追踪）。"
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "双语契约 v1：proposal.en.md、report/proposal.en.html、visual/index.en.html、A3/A0 英文版齐备；图面采用中英双语标注（neutral）。"
+    },
+    {
+      "check_id": "MODEL_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "agent.json",
+      "message": "模型家族与细节如实披露（deepseek-v4-flash），无占位符。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "正文按 v2 格式以 [source]/[standard]/[depth]/[data]/[metric] 引用证据，逐节覆盖并控制密度。"
+    },
+    {
+      "check_id": "PR_SCOPE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/qing3a/jingzhang-time-station",
+      "message": "仅修改本投稿目录，未触碰 submissions-data.js 与发布清单。"
+    }
+  ]
+}
