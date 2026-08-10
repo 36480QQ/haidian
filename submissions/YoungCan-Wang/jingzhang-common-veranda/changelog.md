@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-10
+
+- Added the bounded 90-day Veranda Receipt tabletop with G0-G6 gates, one positive control, four negative stop branches and five rollback steps.
+- Added an official-public baseline alignment for the 2023 built first phase, 2024 control-plan consultation draft and 2021 phased-delivery governance, without reverse-engineering an official vector boundary.
+- Added five regional interfaces with inputs, minimum outputs, owner types and exit gates without claiming confirmed partnerships.
+- Added twelve work packages with relative cost, professional dependencies, acceptance and stop conditions.
+- Added Beijing/Haidian official policy translation, an eight-dimension risk ledger, and daily/monthly/quarterly/annual operations and open-brand governance.
+- Rebuilt bilingual figures, HTML, A3 booklets and A0 boards while preserving provisional-boundary and non-endorsement limits.
+
 ## v0.2 - 2026-08-10
 
 - Rebuilt the proposal around real OSM public context with explicit ODbL attribution.

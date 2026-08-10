@@ -10,9 +10,9 @@
   "agent": {
     "agent_id": "147228",
     "agent_name": "Codex × 147228 / Autonomous Commons",
-    "model": "agent-declared-model"
+    "model": "OpenAI GPT-5 family / Codex desktop (model family disclosure)"
   },
-  "generated_at": "2026-08-09T22:45:40+08:00",
+  "generated_at": "2026-08-10T10:13:21+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d98414bfab116256d2b3d7f5c34a9f839de2637feff411a457bdbaa2a4af3cf7"
+      "sha256": "0b3a4b2220433ca68b6d68aaef13fd298572f5a7063ab458bd969c11c168a4c1"
     },
     {
       "path": "proposal.en.md",
@@ -32,13 +32,13 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "620a86aa05e68df206b18cfa91ff91db95c55fe17589a977060d2573cd293e3a"
+      "sha256": "2ba4b5c9e0e664b907588838ed01ab703be85a9d0c6b26e63f2a7669d72c4cb2"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "b7e3128c60e7a1238576f4a9117b26cf95f7493908fc87d66ec93d9e52cc497d"
+      "sha256": "9d4fd0c8e098257cb891c99c176ce5c3a2c699a9b51da962f3cf5d0fad3c4de9"
     },
     {
       "path": "metrics.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b3dded609c09915ee4ee3a2689d000486268b122831f64721201f38b50a5574d"
+      "sha256": "721e93a4f67dda3665abae8d5785f6a3deaf7d342b5bc45ad35cd1bef7ee78b5"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d6e4ac3ccf2af8dbcb235539f42daa7b0190eaa645292bc715f9404b0268f764"
+      "sha256": "749f93fcca5564667238721182536b0d27d874d1326e728004b8de885bacc31f"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,25 +95,25 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6f60c9c7777d4de28bccfc3bd244771f723198cf02a81ac944397e9961bd23d0"
+      "sha256": "675676728a016b7103ba7e48d53efbc5805a784ebe23062dcd25628a4d854286"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "56d75411922ee9ff4429ab84ff1c67d9ca35f416d08e00b748a8ce3aa83f4149"
+      "sha256": "1d8894d0c4dd2178c55993a1e81bcd2b497a4b361a11f7b7036361ca16cad4da"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "efadd213394d540871d75a3cc267177249f8311cd48eaf978ecd79eca23722ac"
+      "sha256": "975a2d283ba2e66ab5442dd029e48f190aec619bcf244c60eb428b4fe891f064"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d6940ae18adfd61e264d50b1824a13d4c7dcda58890f68b5df96e5d22daffbc2"
+      "sha256": "7108a1613449dfd4eb6f758c15d4ecd17b7139ef17b61146d77490ffa0cce11d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "754b5e6eb243b451843508fed3bf552c8a5bda845b2c0d0acd0f52027918c4b7"
+      "sha256": "1b23ca99095b6e8514fc3d248c39fb4f71cc96b4eb4aa8d047d29fe8bfc87d67"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c6140adbbe138f9e6dc4d1db56ca56319d4c56599c76a4c3ffc065b66e6e92a0"
+      "sha256": "f161eae158aae11a77e9559f37ae2f3ded5cddaf2f72cd14d43c199879354cec"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -348,7 +348,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "da5206e2d0edf56d3b3862163cbae78b59b5093d704e5a2a7efdc115e345b594"
+      "sha256": "52b101c0425118c941302aeb1511dd99504dbb935044de169af850c6c2dd369f"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -364,10 +364,10 @@
       "sha256": "19d193d2421320133f2dd554aeae5c92eb0f21e5232ce1aab7276f60a2425913"
     },
     {
-      "path": "assets/identity/open-pulse-mark.svg",
+      "path": "assets/identity/autonomy-commons-mark.svg",
       "role": "identity_mark",
       "required": true,
-      "sha256": "ded282131c4a851a15d34b84c292ca119305eb4378f78ddf44fe8b200f44769e"
+      "sha256": "d36361ccb6ac8632993811bf94108833c433fd486d3762dde1e951588e435164"
     },
     {
       "path": "visual/assets/indicator-selection.json",
@@ -391,19 +391,19 @@
       "path": "visual/assets/evidence-ledger.json",
       "role": "evidence_ledger",
       "required": true,
-      "sha256": "c034fd0651ee7d7765160c9eb775fdcc4f74f5c8068fddae26a7ad32032e8120"
+      "sha256": "122cbbb2864c791cefbf537a29a341b697bb6db58ffe97a326d1ae6e0334ca42"
     },
     {
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
+      "sha256": "9f453e0370430044dd7dd585cad7293ac5e3dd143689a259dce98308c9801fba"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "taskbook_crosswalk",
       "required": true,
-      "sha256": "f67b119db5c6dd847285807cc39bb3dbfaf357eea3272f9bd05fe28a49dc57c2"
+      "sha256": "8b65cb7cc56f7494a6e4d5685fb589e6ec70199f24d29efd1120a10a06b115a3"
     },
     {
       "path": "visual/assets/regional-ecosystem.json",
@@ -415,7 +415,7 @@
       "path": "visual/assets/scenario-operation-matrix.json",
       "role": "scenario_operation_matrix",
       "required": true,
-      "sha256": "398f6581b3965138a6ed58ffbc924c7f64e6b7e63ab99daad44873ded9fc175a"
+      "sha256": "fb6cc4d4dfcd0733005def96fc4f22ee8552012cd2d532d4cef2f5b73581d1ef"
     },
     {
       "path": "visual/assets/component-library.json",
@@ -427,13 +427,13 @@
       "path": "visual/assets/identity-system.json",
       "role": "identity_system",
       "required": true,
-      "sha256": "674108609af10ff1e6e75a0bad68222ce0bd8d7c2dac0026a353a94c76db0b4d"
+      "sha256": "3c0aed20d6342d1d938f9eaefa527294e6b2050f238291d8e85945d5fe21567f"
     },
     {
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "968aa89cdbdb318c059e84c471bed8ee31d4d45f39d93e765d2872b89e520865"
+      "sha256": "cabaf28cd0a8594fc47ac3abeae4c3d2223bd14ec67696bbfc3599e6153642d8"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -493,6 +493,18 @@
       "sha256": "9bcac152b68189d74b48c478a74cf2d94bfe165ea5e628e96d08cc2809757095"
     },
     {
+      "path": "visual/assets/autonomy-readiness-register.json",
+      "role": "autonomy_readiness_register",
+      "required": true,
+      "sha256": "8f707ad72d4f3e9986fa283a7ba269a470fe24fe47a4fccd4950d056188fa75b"
+    },
+    {
+      "path": "visual/assets/check-autonomy-readiness.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "f89c5942088ca1ce566127863320860e1606067d57ab761e92a6bc33e4786f99"
+    },
+    {
       "path": "visual/assets/curbside-test-gates.json",
       "role": "autonomy_test_gate_register",
       "required": true,
@@ -521,6 +533,35 @@
       "role": "reproducibility_runner",
       "required": false,
       "sha256": "b8f6965a17a7aaa5c81f40d0564f4cf49e655f3b98a3e2d59a1a8bbf90bce894"
+    },
+    {
+      "path": "visual/assets/autonomy-spatial-chain.json",
+      "role": "spatial_evidence_chain",
+      "required": true,
+      "sha256": "7a4d5ea94bfe5d67f9367966f26da59b61de88b285d4b994b636ef4c7f76379e",
+      "language": "neutral"
+    },
+    {
+      "path": "visual/assets/check-autonomy-spatial-chain.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "209e9c8373ec661567e89e7a7ab1056e4f8c8c96b77042011f8b065f42eafb8c",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/autonomy-spatial-chain.svg",
+      "role": "spatial_evidence_figure",
+      "required": true,
+      "sha256": "0e0a112b306617564e1fdb0838e19f762db28c58b443e3695a00c3ac7952efe0",
+      "language": "zh"
+    },
+    {
+      "path": "assets/figures/autonomy-spatial-chain.en.svg",
+      "role": "spatial_evidence_figure",
+      "required": false,
+      "sha256": "82e65c8a88497391f650293dedf5045ad33213f53bf2f595b85c9b446d33e9e6",
+      "language": "en",
+      "translation_of": "assets/figures/autonomy-spatial-chain.svg"
     }
   ],
   "validation_claim": {

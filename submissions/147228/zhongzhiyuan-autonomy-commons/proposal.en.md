@@ -14,7 +14,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 
 > **Core proposition:** the more automated driving spreads, the less the city should be designed around vehicles alone. The Jing-Zhang belt must protect continuous walking, wheelchair, cycling, child, care and maintenance routes before it decides where vehicles may operate.
 
-This is an independent autonomous-mobility iteration, not a renamed copy of the earlier Jing-Zhang Open Pulse package. It uses the same provisional spatial base and adds machine-readable evidence for autonomous-driving curbs, low-speed shuttles, accessible service, remote intervention, data minimisation and failure rollback. Every spatial move remains a concept proposal; the package does not claim that any road inside the site is open to autonomous driving, nor that a vehicle, vendor or permit already exists.
+This is an independent autonomous-mobility iteration, not a renamed copy of an earlier submission. It uses the same provisional spatial base and adds machine-readable evidence for autonomous-driving curbs, low-speed shuttles, accessible service, remote intervention, data minimisation and failure rollback. Every spatial move remains a concept proposal; the package does not claim that any road inside the site is open to autonomous driving, nor that a vehicle, vendor or permit already exists.
 
 ## One-page executive brief: prove one public service chain before scaling automation
 
@@ -70,6 +70,16 @@ Autonomous driving is a constrained service layer over walking, cycling, rail, t
 ![Overview of the autonomous public belt](assets/figures/site-overview.en.png)
 
 Caption: The overview places the three test yards on one public axis and reads the human, ecological/data safety nets and phase gates as one spatial relationship; it does not express statutory boundaries or an opened road.
+
+### Three-node spatial evidence chain: from markers to a replayable public route
+
+The overview answers “where the relationships sit.” This iteration makes the chain replayable: the three provisional key-area polygons in `geometry/key_areas.geojson` → three provisional point markers in `autonomy_nodes.json` → the five-stage public interface in `autonomy-node-interface-plans.json` → 12 AV scenario cards → stop gates in `curbside-test-gates.json`. Each node now resolves to a key-area feature, scenario IDs, user groups, required evidence and stop rules, so a marker cannot be mistaken for a road or deployed facility [data:visual/assets/autonomy-spatial-chain.json#AUTO-NODE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:key_area_design].
+
+The five spatial actions are fixed: ordinary human route → public status and consent → bounded service window → human handover or stop → ordinary route restored. Node 001 first tests a closable safety yard; Node 002 first tests an equivalent paper/phone/human service for older residents, wheelchair users and people who do not use an app; Node 003 first separates rail arrival, quiet walking, loading/maintenance and event-day human routes. Missing survey, fire/energy, responsibility, accessibility, resident-service or emergency evidence keeps the scheme at concept/reference status and blocks expansion [data:visual/assets/autonomy-spatial-chain.json#CHAIN-CHECK-03].
+
+![Three-node spatial evidence chain](assets/figures/autonomy-spatial-chain.en.svg)
+
+Caption: Every row carries `official_boundary=false`, `geometry_role=provisional_constraint`, `dimensions=null` and `official_road=false`; the audit line is not a vehicle route. The figure and checker prove reference integrity only, not road permission, engineering feasibility, operating performance or safety results.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -146,7 +156,9 @@ Caption: The system board shows how curb states connect to human takeover, rain/
 
 ## 5. Twelve scenario cards
 
-The cards cover accessible rides, low-speed shuttle, rail transfer, night maintenance, rain/snow service, scheduled loading, event separation, network-loss rollback, child/older-adult assistance, public-asset inspection, open safety-audit day and resident complaint/opt-out. Every card has a carrier space, responsible party, data boundary, acceptance gate and stop condition in `visual/assets/autonomous-scenarios.json` [metric:autonomy_scenario_card_count]. They are design objects, not existing services.
+The cards cover accessible rides, low-speed shuttle, rail transfer, night maintenance, rain/snow service, scheduled loading, event separation, network-loss rollback, child/older-adult assistance, public-asset inspection, open safety-audit day and resident complaint/opt-out. They are design objects, not existing services. To close the gap between scenario cards, the operation matrix and test gates, this iteration adds `visual/assets/autonomy-readiness-register.json`: each of the 12 cards has one participant-proposed primary operation row, readiness fields, a human-equivalent service and a stop condition; S06, S07, S08, S09 and S12 remain explicitly supporting operations. The mapping still requires future professional/operator confirmation and does not assign a field duty [metric:autonomy_scenario_card_count] [data:visual/assets/autonomy-readiness-register.json#autonomy-readiness-register-v1].
+
+The register makes baseline, observation population/sample/time window, success and stop thresholds, accountability, deletion evidence, review and appeal required before an authorised trial. Every card currently remains `unknown`, `not_authorized_not_run`, `field_data=false` and `performance_results=null`; the checker proves reference completeness and boundary stability only, not a field result.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 

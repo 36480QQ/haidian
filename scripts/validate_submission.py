@@ -1348,7 +1348,10 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             elif declared_digest:
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:
-                    message = f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`"
+                    message = (
+                        f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`; "
+                        f"declared={declared_digest}, actual={actual_digest}"
+                    )
                     if translation_entry and not strict_bilingual:
                         report.add_warning(message + "; legacy bilingual metadata does not block review")
                     else:

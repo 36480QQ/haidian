@@ -34,6 +34,21 @@ The package claims only a G0 conceptual evidence chain; G1/G2 still require fiel
 
 Formal evidence is limited to the locally registered announcement, cleared taskbook, local standard snapshots, and land-use guide. Sources marked unregistered_background_only are retained only to frame questions; none may become local boundary, control, score, or implementation evidence. [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#PROV-SITE-001]
 
+### 1. Evidence hierarchy and public-task boundary
+
+The package keeps formal basis, conceptual exploration and “ready to start” separate. A traceable record is not automatically evidence for a local spatial, engineering, service or scoring conclusion; reviewers should read each level's allowed and disabled use together.
+
+| Evidence level | Package examples | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Task and professional standards (formal) | Announcement, cleared taskbook, local standard snapshots | Task coverage, deliverable depth, professional principles and review questions | Official polygons, ownership, engineering conditions, permits or government commitment |
+| Source registration and background grading | `data/source_registry.json`, `sources.json`, unregistered-background labels | Provenance responsibility, mechanism comparison, question framing and disabled scope | Upgrading international research, cases, media or policy leads into Haidian facts |
+| Provisional spatial basis | `site_boundary`, `key_areas`, conceptual land use and nodes | Concept placement, relative relationships, topology checks and a whole-package recomputation trigger | Statutory redlines, precise area, road/regulatory controls, existing facilities or siting |
+| Package-derived evidence | GeoJSON, `metrics.json`, scenario cards and G0/implementation matrices | Readable counts, task mapping, node actions, accountability fields and release gates | Resident demand, AI capability, facility capacity, service performance or formal recommendation |
+| Paper/policy/case methods | Employment, compute, CFD, governance cases and transport methods | Future variables, risk questions and professional follow-up research | Local causal effects, transferable percentages, return on investment or partnership facts |
+| Synthetic replay and design targets | G0 ordinary journeys, failing fixtures, human fallback and `design_target` | Stop, redress, withdrawal, human takeover and follow-up validation contracts | Field accessibility, staffing, public consent, permission or competition score |
+
+The review rule is: `provisional`, `unknown`, `design_target` and `not_authorized_not_run` remain in those states. A local runner PASS proves only that a package structure or state machine can be replayed; it does not become field evidence, professional approval, a government implementation finding or an official score.
+
 No publicly verifiable precise official geometry is supplied. The package therefore declares official_boundary=false, geometry_role=provisional_constraint, and boundary_precision=provisional_rough. The EPSG:4548 calculation of 11,412,825.386 sqm is a temporary layer denominator only, never an official redline or legal area. [metric:site_area_sqm] [depth:risk_missing_data]
 
 ## Three-Level Scope Framework

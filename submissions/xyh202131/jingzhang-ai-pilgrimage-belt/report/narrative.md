@@ -24,6 +24,10 @@ V2.7 的四份出版物已用两个新的 Python 进程连续生成；中英文 
 
 The four V2.7 publications were generated in two fresh Python processes. Both bilingual A3 files were byte-identical across the two passes and then passed an 85-page QA together with the unchanged bilingual A0 files. The current Chinese and English A3 SHA-256 values are `981a2b8221fa35321f212f0868e742925d7d76c512e946be59e2d37eace82a4e` and `fe5dffd516ac17cc6156cdeb2d7a85144d69794fcc3e829a5fdd15a255c8ea11`; the Chinese and English A0 values remain `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` and `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384`. QA found no clipping, overflow, blank page, wrong order, or missing searchable narrative block. Publication QA proves no real service, field result, or rights clearance. This paragraph supersedes the former A3 byte identities in the historical V2.6 section below.
 
+V2.11 对整个投稿包做一致性与可移交性扫描，不新增空间项目、场景、坐标、现实审批或成绩。`implementation-handoff-matrix.json` 将 8 个既有项目、3 个既有试点和 12 个预注册场景连到 7 组移交包、9 类关闭材料和 99 个稳定材料 ID；所有材料仍未提交，11 项仍 NO-GO。`submission-use-rights-matrix.json` 把公告 8.1 与仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件分开决策，并明确公告与本次开源 Agent 征集的适用关系仍待确认。双语正文的高密度证据索引被拆成可读单项，完整索引仍保留在结构化文件中；三份矩阵此前引用但自检缺失的 `RISK_AND_SOURCE_BOUNDARIES` 也补成显式检查。
+
+V2.11 performs a package-wide consistency and transferability audit without adding a spatial project, scene, coordinate, real-world approval, or result. `implementation-handoff-matrix.json` connects the eight existing projects, three existing protocols, and twelve preregistration scenes to seven handoff packs, nine closure categories, and 99 stable artifact IDs; no artifact has been submitted and all eleven items remain NO-GO. `submission-use-rights-matrix.json` separates announcement clause 8.1 from repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, while keeping applicability to this open Agent call pending confirmation. Dense bilingual evidence indexes are split into readable units while exhaustive indexes remain in structured files, and the previously referenced but absent `RISK_AND_SOURCE_BOUNDARIES` self-check is made explicit.
+
 ## 本次增量状态 / Current increment status
 
 > 本节只记录尚未产生可信 GitHub check 的当前增量。它不得继承下方 `e71ff206…` 历史快照的任何 `[x]`；最终 PR head 的可信 `submission-validation` 才能关闭最后一项。
@@ -36,9 +40,12 @@ The four V2.7 publications were generated in two fresh Python processes. Both bi
 - [x] 中英文正文、离线报告、视觉首页、八组双语 PNG 展示对、两组双语 SVG 可编辑源对与 A3/A0 均为必交对照件；重点区平面、剖面与证据矩阵使用同一套三组差异化四态名称，并同步 provisional、G0、字段覆盖不是结果和权利未清边界。
 - [x] 三处重点区证据交叉表只表示文档映射齐全；现场审计、责任主体确认、批准、测试执行和已知结果仍为 0。
 - [x] T-02 完成 1 次 G0 合成治理回放：10/10 决策精确匹配，4/4 个不同的声明停止事件精确映射各自恢复动作，13/13 负向变异控制按预期 fail-closed；实质回答、模型/API/现实服务调用、现场测试、审批、责任主体确认、现实独立复测和 G1 结果保持 0 或 unknown。
-- [x] manifest 已从当前最终文件字节刷新为 65 个包文件、64 个非 manifest SHA-256；权利台账的 5 个兼容组与 65 条逐文件记录具有同一路径集，除 manifest 与 ledger 的显式不可自引用项外，摘要逐项一致。
+- [x] 11 个既有项目/试点均已映射到 9 类现实关闭证据，共 99 个必需证据槽；当前 0 个关闭、99 个 open、11 个 NO-GO、0 个 G1 授权。任何一类未关闭或有效停止条件均覆盖先前许可，不把文档完整性误报为可开工状态。
+- [x] 12/12 个预注册场景已回指既有项目或试点、关闭记录、当前阶段和空间对象；99 个稳定材料 ID 均唯一、现实提交材料仍为 0，文档交叉引用不构成 G1 资格。
+- [x] manifest 已从当前最终文件字节刷新为 68 个包文件、67 个非 manifest SHA-256；权利台账的 5 个兼容组与 68 条逐文件记录具有同一路径集，除 manifest 与 ledger 的显式不可自引用项外，摘要逐项一致。
 - [x] 120/120 个 OSM 要素具有 `source_id`、`osm_way_id` 与署名；固定查询和快照摘要仍未知，`RIGHTS-OPEN-03` 保持 P0 open。
 - [x] 权利总体仍为 `not_fully_cleared`，独立逐文件清权审计完成数为 0；`RIGHTS-OPEN-01/02/03` 保持 P0 open，公共或专业复用继续 blocked。
+- [x] 公告 8.1 的七个子条款与七类使用场景已逐项登记；本次开源 Agent 征集的适用关系确认、投稿人对外展示书面同意和独立组件审计完成数仍均为 0。
 - [x] strict score、deterministic、spatial、visual、professional、self-check 与 participant preflight 已在最终 manifest 与 PDF 字节就位后全量通过；仅保留临时边界的预期非阻断警告。
 - [ ] 最终 PR head 的可信 `submission-validation` 为 `SUCCESS`。
 
@@ -48,17 +55,20 @@ The four V2.7 publications were generated in two fresh Python processes. Both bi
 - [x] Chinese and English narratives, offline reports, visual homepages, eight bilingual PNG display pairs, two bilingual SVG editable-source pairs, and A3/A0 outputs are required counterparts. Key-area plans, sections, and the evidence matrix use the same three area-specific four-mode vocabularies and align on provisional, G0, coverage-is-not-result, and uncleared-rights boundaries.
 - [x] The three-key-area evidence crosswalk represents documentation mapping only; field audits, accountable-role confirmation, approvals, test executions, and known results remain 0.
 - [x] T-02 completed one G0 synthetic governance replay: 10/10 exact decision matches, exact recovery mappings for all four distinct declared stop events, and 13/13 negative mutation controls failed closed as expected. Substantive answers, model/API/real-service calls, field tests, approvals, accountable-party confirmations, real independent retests, and G1 outcomes remain 0 or unknown.
-- [x] The manifest has been refreshed from the current final file bytes to 65 package files and 64 non-manifest SHA-256 values. The rights ledger's five compatibility groups and 65 file-level records have the same path set; every digest matches except the explicit non-self-referential manifest and ledger cases.
+- [x] All 11 existing projects/pilots map to nine real-world evidence-closure categories, for 99 required evidence slots. The current state is 0 closed, 99 open, 11 NO-GO, and 0 G1 authorizations. Any open category or active stop condition overrides prior permission, so documentation completeness is not reported as readiness to proceed.
+- [x] All 12 preregistration scenes resolve to existing projects or protocols, closure records, the current phase, and spatial objects; all 99 stable artifact IDs are unique, while submitted real-world artifacts remain 0 and cross-references confer no G1 eligibility.
+- [x] The manifest has been refreshed from the current final file bytes to 68 package files and 67 non-manifest SHA-256 values. The rights ledger's five compatibility groups and 68 file-level records have the same path set; every digest matches except the explicit non-self-referential manifest and ledger cases.
 - [x] All 120 OSM elements carry `source_id`, `osm_way_id`, and attribution; the fixed query and snapshot digest remain unknown, so P0 `RIGHTS-OPEN-03` stays open.
 - [x] Overall rights remain `not_fully_cleared`, with 0 completed independent file-level clearance audits; P0 `RIGHTS-OPEN-01/02/03` remain open, and public or professional reuse remains blocked.
+- [x] Seven subclauses of announcement clause 8.1 and seven use contexts are recorded separately; applicability confirmation for this open Agent call, written consent for entrant external display, and completed independent component audits all remain 0.
 - [x] Strict score, deterministic, spatial, visual, professional, self-check, and participant preflight all pass after final manifest and PDF bytes were installed; only the expected non-blocking provisional-boundary warning remains.
 - [ ] Trusted `submission-validation` on the final PR head reports `SUCCESS`.
 
 ## 权利证据审计 / Rights-evidence audit
 
-审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 65 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
+审计以 `visual/assets/source-rights-evidence.schema.json`、`visual/assets/source-rights-evidence.json`、`visual/assets/submission-use-rights-matrix.json`、`visual/assets/rights-clearance-ledger.json`、`agent.json` 与 `manifest.json` 为一组，不把任一结构 PASS 解释为法律清权。最低语义断言为：29 条来源与证据记录一一对应；120 个 OSM way 与 element lineage 一一对应；manifest、5 个兼容组和 68 条逐文件记录路径严格等集；除 manifest 与 ledger 两个不可自引用项外，每条资产摘要与 manifest 相等；工具 ID 均能解析到 `agent.json`；`audit_records=[]`；公告 8.1 适用关系仍待确认；P0 01/02/03 仍 open；公共或专业复用仍 blocked。
 
-The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 29 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and 65 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; P0 01/02/03 stay open; and public or professional reuse stays blocked.
+The audit treats `visual/assets/source-rights-evidence.schema.json`, `visual/assets/source-rights-evidence.json`, `visual/assets/submission-use-rights-matrix.json`, `visual/assets/rights-clearance-ledger.json`, `agent.json`, and `manifest.json` as one contract. No structural PASS is interpreted as legal clearance. Minimum semantic assertions are: one evidence record per each of 29 sources; one element-lineage record per each of 120 OSM ways; strict path equality among the manifest, five compatibility groups, and 68 file-level records; digest equality for every asset except the two explicit self-reference cases (manifest and ledger); every tool ID resolves in `agent.json`; `audit_records=[]`; announcement clause 8.1 applicability remains pending confirmation; P0 01/02/03 stay open; and public or professional reuse stays blocked.
 
 ```powershell
 $pkg = 'submissions/xyh202131/jingzhang-ai-pilgrimage-belt'
@@ -80,6 +90,9 @@ sources = load("sources.json")
 constraints = load("geometry/constraints.geojson")
 agent = load("agent.json")
 metrics = load("metrics.json")
+handoff = load("visual/assets/implementation-handoff-matrix.json")
+closure = load("visual/assets/readiness-closure-contract.json")
+use_rights = load("visual/assets/submission-use-rights-matrix.json")
 
 jsonschema.Draft202012Validator.check_schema(schema)
 errors = list(jsonschema.Draft202012Validator(schema).iter_errors(evidence))
@@ -137,6 +150,24 @@ for source in {
 }:
     assert (repo / source).is_file(), source
 
+closure_records = {row["closure_record_id"]: row for row in closure["records"]}
+required_artifact_ids = [artifact for row in closure["records"] for artifact in row["required_artifact_ids"]]
+assert len(required_artifact_ids) == len(set(required_artifact_ids)) == 99
+assert all(not row["submitted_evidence_by_category"] for row in closure["records"])
+assert all(row["decision"] == "NO-GO" for row in closure["records"])
+prereg_refs = {f"G1-PREREG-{index:03d}" for index in range(1, 13)}
+assert {row["preregistration_ref"] for row in handoff["scenario_crosswalk"]} == prereg_refs
+assert len(handoff["item_handoffs"]) == 11
+assert all(not row["submitted_artifact_refs"] and row["decision"] == "NO-GO" for row in handoff["item_handoffs"])
+assert handoff["summary"]["required_item_category_slot_count"] == 99
+assert handoff["summary"]["submitted_real_world_artifact_count"] == 0
+
+assert use_rights["status"] == "not_fully_cleared"
+assert use_rights["applicability_boundary"]["status"] == "needs_maintainer_or_organizer_confirmation"
+assert len(use_rights["clause_register"]) == 7 and len(use_rights["use_decisions"]) == 7
+assert use_rights["release_gate"]["public_or_professional_reuse"] == "blocked_pending_terms_and_audit"
+assert use_rights["release_gate"]["completed_written_applicability_confirmations"] == 0
+
 assert ledger["clearance_claim"]["status"] == "not_fully_cleared"
 assert ledger["clearance_claim"]["completed_independent_file_level_clearance_audits"] == 0
 assert ledger["audit_records"] == []
@@ -157,9 +188,13 @@ git diff --check
 
 ## 当前 PDF 固定点与历史重生记录 / Current PDF fixed point and historical regeneration record
 
-V2.9 将第 3 组重点区平面图的通用四态对齐为剖面、正文与证据矩阵既有的三组差异化四态，因此四份出版物均从最终内容重新生成。两个新的 Python 进程所得四份 PDF 逐文件字节一致；85 页全量 QA 为 PASS。当前中文/英文 A3 SHA-256 为 `4ab3e3ba4765b4a70179f517d9abce1b00ba3b6038c81f5fb3c746262513041c` 与 `10cea26f7dd00981b805cbc8eb574f063efec62f583f63d6065f1a4ddc464aa6`，中文/英文 A0 为 `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` 与 `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`。中文/英文 A3 仍为 33/36 页，中英文 A0 各 8 页；444/444 个正文逻辑块可搜索，所有 live text 不小于 9pt，中文/英文栅格证据有效最小文字指标为 10.865pt/9.185pt。该固定点取代本节以下历史 PR 的旧字节身份，但不构成现场、审批或清权证据。
+V2.11 的双语正文各新增一段实施移交说明、扩展权利边界并拆分证据密集列表，因此中英文 A3 从最终内容重生；A0 的八组图件输入未变，继续保留 V2.9 字节。两个新的 Python 进程所得四份生成结果逐文件一致；仅将两份新 A3 安装进包，锁定 A0 未被重写。85 页 QA 为 PASS：中文/英文 A3 SHA-256 为 `0080af21c528ea76638773fec3c766ecbde5765fc0a7b9f6dd129ff9da89fa92` 与 `910163ee5a90db0d122b36d1996275247bb105a3b40da518715b8ffcc1be150a`，中文/英文 A0 为 `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` 与 `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`。中文/英文 A3 仍为 33/36 页，各语言 446/446 个正文逻辑块可搜索；所有 live text 不小于 9pt，栅格证据有效最小文字指标为 10.865pt/9.185pt。逐页渲染抽查未见裁切、重叠、空白页、错误分页或不可读字形；这些出版检查不构成现场、审批、G1 授权或清权证据。
 
-V2.9 aligns the generic four-mode row in the third key-area plan set with the three differentiated mode vocabularies already used by the sections, prose, and evidence matrix, so all four publications were regenerated from final content. Two fresh Python processes produced byte-identical files, and full 85-page QA returned PASS. The current Chinese and English A3 SHA-256 values are `4ab3e3ba4765b4a70179f517d9abce1b00ba3b6038c81f5fb3c746262513041c` and `10cea26f7dd00981b805cbc8eb574f063efec62f583f63d6065f1a4ddc464aa6`; the Chinese and English A0 values are `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` and `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`. The A3 booklets remain 33/36 pages and both A0 sets remain eight pages; 444/444 narrative logical blocks are searchable, all live text is at least 9pt, and the effective Chinese/English raster-evidence minimums are 10.865pt/9.185pt. This fixed point supersedes the historical PR byte identities below without proving field work, approval, or rights clearance.
+V2.11 adds one implementation-handoff paragraph to each language, expands the rights boundary, and splits dense evidence lists, so both A3 booklets were regenerated from final content. The eight A0 figure inputs did not change, and the V2.9 A0 bytes remain locked. Two fresh Python processes produced file-identical four-PDF generations; only the two new A3 files were installed, while the locked A0 files were not overwritten. Full 85-page QA returned PASS. The Chinese and English A3 SHA-256 values are `0080af21c528ea76638773fec3c766ecbde5765fc0a7b9f6dd129ff9da89fa92` and `910163ee5a90db0d122b36d1996275247bb105a3b40da518715b8ffcc1be150a`; the Chinese and English A0 values remain `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` and `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`. The A3 files remain 33/36 pages, with 446/446 searchable narrative logical blocks in each language; all live text is at least 9pt and the effective raster-evidence minimums are 10.865pt/9.185pt. Page-render inspection found no clipping, overlap, blank page, bad pagination, or unreadable glyph. These publication checks prove no field action, approval, G1 authorization, or rights clearance.
+
+V2.10 新增既有 11 个项目/试点的九类可行性证据关闭合同，并使双语正文各新增一段，因此中英文 A3 从最终内容重新生成；A0 图件输入未变，保持 V2.9 字节。两个新的 Python 进程所得四份 PDF 逐文件字节一致；85 页全量 QA 为 PASS。当前中文/英文 A3 SHA-256 为 `f07197214040f55e991c06bd7d86da4e694062cb492fb7523d165ab49aca9ab6` 与 `1fe6fdde25a154be0dc41b136255981e27a47fca31a965b765e6750d762e4bce`，中文/英文 A0 为 `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` 与 `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`。中文/英文 A3 仍为 33/36 页，中英文 A0 各 8 页；445/445 个正文逻辑块可搜索，所有 live text 不小于 9pt，中文/英文栅格证据有效最小文字指标为 10.865pt/9.185pt。该固定点取代本节以下历史 PR 的旧字节身份，但不构成现场、审批、开工、G1 授权或清权证据。
+
+V2.10 adds a nine-category feasibility evidence-closure contract for the 11 existing projects/pilots and one paragraph to each language narrative, so both A3 booklets were regenerated from final content. A0 figure inputs did not change and retain their V2.9 bytes. Two fresh Python processes produced byte-identical files, and full 85-page QA returned PASS. The current Chinese and English A3 SHA-256 values are `f07197214040f55e991c06bd7d86da4e694062cb492fb7523d165ab49aca9ab6` and `1fe6fdde25a154be0dc41b136255981e27a47fca31a965b765e6750d762e4bce`; the Chinese and English A0 values are `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` and `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3`. The A3 booklets remain 33/36 pages and both A0 sets remain eight pages; 445/445 narrative logical blocks are searchable, all live text is at least 9pt, and the effective Chinese/English raster-evidence minimums are 10.865pt/9.185pt. This fixed point supersedes the historical PR byte identities below without proving field work, approval, construction readiness, G1 authorization, or rights clearance.
 
 本次权利证据 PR 为同步最终 `62/61` 文件计数，重新生成了中英文 A3；A0 输入未变，因此两版 A0 字节保持不变。当前四份 PDF 已在两个新的 Python 进程中连续生成，逐文件 SHA-256 完全相同；随后同一 QA 脚本复核 85 页，结果为 PASS。当前中文/英文 A3 SHA-256 分别为 `dcd1b8749eedddd72ec0b57aa6fc0af44eee3e0f3c2b2ec2094850a5cfc73d24` 与 `1d7234f55c9efe312a815ba0566ea3f4224a22b601f6df410b1b3dd3f3ab6441`；中英文 A0 仍分别为 `77bcce2d7b1a17bc6db289358e63db228681eebc3ec4ea9288f4bf5af69e7d5e` 与 `53ac76d1cc51f1eb19e8c4f9fa4b96acc3046c3c0db4f4e8f7c8c4034328c384`。本 PR 仅为 120 个既有 OSM 要素增加来源 ID，constraints 坐标规范摘要仍为 `1b5c797d29e8476d2bad8200dfa8c43b84d2651723da93190166e3694d5f634b`；其他 geometry 与 `metrics.json` 不变。下两段所列 03:31/03:35 窗口是 #1090 可读性重生的历史过程证据，其旧 A3 字节身份已由本段当前固定点取代。
 
@@ -171,12 +206,12 @@ The final pass A window, including QA, was 2026-08-10 03:31:52 +08:00 to 03:32:3
 
 | PDF | Pages / format | SHA-256 |
 |---|---|---|
-| `drawings/a3-booklet.pdf` | 33 / A3 portrait | `4ab3e3ba4765b4a70179f517d9abce1b00ba3b6038c81f5fb3c746262513041c` |
-| `drawings/a3-booklet.en.pdf` | 36 / A3 portrait | `10cea26f7dd00981b805cbc8eb574f063efec62f583f63d6065f1a4ddc464aa6` |
+| `drawings/a3-booklet.pdf` | 33 / A3 portrait | `0080af21c528ea76638773fec3c766ecbde5765fc0a7b9f6dd129ff9da89fa92` |
+| `drawings/a3-booklet.en.pdf` | 36 / A3 portrait | `910163ee5a90db0d122b36d1996275247bb105a3b40da518715b8ffcc1be150a` |
 | `drawings/a0-boards.pdf` | 8 / A0 landscape | `64291f10c05b33905ff97934eb58c6a491d7bcaedb0d2189d531e352a6837cd0` |
 | `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `2866a3d8b0eed5de7f1ddb9c65eac3c133b9eb9aca764b5ce2dbd8484ef28da3` |
 
-Reproduction basis: Python 3.13.12 (Anaconda build, 2026-02-24), ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, and Pillow 12.2.0 were used; Poppler was unavailable. ReportLab emitted compressed PDFs with `invariant=1`, fixed metadata, fixed input ordering, and the exact A3 crop boxes recorded above. `fontTools.varLib.instancer.instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True)` instantiated in-memory 400/700 weights from `C:/Windows/Fonts/NotoSansSC-VF.ttf` (name-table version `2.04;241114210130;non-release`, SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`, local name-table license SIL OFL 1.1). The source font binary and temporary static fonts are not shipped. Searchable final spans use only `NotoSansSC-Regular` and `NotoSansSC-Bold`; the A3 resource dictionaries retain an unused Helvetica declaration with zero Helvetica spans and no embedded Helvetica program. PyMuPDF and Pillow verified exact crop pixels, full x coverage, 30 px overlaps, 24 A3 crops/eight figure sets per language, zero whole-board A3 images, 444/444 searchable logical blocks, rendering, extraction, geometry, ordering, content bounds, and full-package contact sheets. Geometry and `metrics.json` remain unchanged. No repository script was changed. Future source or figure changes require regeneration, manifest refresh, and full validation; this record makes no trusted-CI, human-review, rights-clearance, or field-success claim.
+Reproduction basis: Python 3.13.12 (Anaconda build, 2026-02-24), ReportLab 5.0.0, fontTools 4.63.0, PyMuPDF 1.27.2.3, and Pillow 12.2.0 were used; Poppler was unavailable. ReportLab emitted compressed PDFs with `invariant=1`, fixed metadata, fixed input ordering, and the exact A3 crop boxes recorded above. `fontTools.varLib.instancer.instantiateVariableFont(..., optimize=True, updateFontNames=True, static=True)` instantiated in-memory 400/700 weights from `C:/Windows/Fonts/NotoSansSC-VF.ttf` (name-table version `2.04;241114210130;non-release`, SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`, local name-table license SIL OFL 1.1). The source font binary and temporary static fonts are not shipped. Searchable final spans use only `NotoSansSC-Regular` and `NotoSansSC-Bold`; the A3 resource dictionaries retain an unused Helvetica declaration with zero Helvetica spans and no embedded Helvetica program. PyMuPDF and Pillow verified exact crop pixels, full x coverage, 30 px overlaps, 24 A3 crops/eight figure sets per language, zero whole-board A3 images, 446/446 searchable logical blocks, rendering, extraction, geometry, ordering, content bounds, and full-package contact sheets. Geometry and `metrics.json` remain unchanged. No repository script was changed. Future source or figure changes require regeneration, manifest refresh, and full validation; this record makes no trusted-CI, human-review, rights-clearance, G1-authorization, or field-success claim.
 
 ## 不可变验证证据 / Immutable validation evidence
 

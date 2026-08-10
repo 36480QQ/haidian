@@ -3,10 +3,12 @@
   "ledger_id": "RIGHTS-01",
   "title": "Jing-Zhang V2 file-level rights status ledger",
   "as_of": "2026-08-10",
-  "scope": "All 65 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, and the three-file T-02 synthetic replay pack; 64 entries are non-manifest content files.",
+  "scope": "All 68 files declared by this submission, including manifest.json, this ledger, the source-rights evidence schema/instance, the implementation handoff matrix, the submission-use rights matrix, and the three-file T-02 synthetic replay pack; 67 entries are non-manifest content files.",
   "evidence_contract": {
     "source_rights_schema": "source-rights-evidence.schema.json",
     "source_rights_instance": "source-rights-evidence.json",
+    "implementation_handoff_matrix": "implementation-handoff-matrix.json",
+    "submission_use_rights_matrix": "submission-use-rights-matrix.json",
     "manifest_integrity_policy": "../../manifest.json#files",
     "parent_asset_scope": "parent_asset_refs records declared direct package inputs, not a universal build graph. Completeness is machine-enforced for metrics.json package-local source_files and the documented HTML, figure, and PDF generation inputs.",
     "disclosure_effect": "audit_ready_not_cleared"
@@ -25,8 +27,8 @@
     "mixed_source_derivative_pending_independent_review": "The file combines package-authored material with repository or third-party source traces and remains pending independent review."
   },
   "file_coverage": {
-    "expected_manifest_entries": 65,
-    "expected_non_manifest_entries": 64,
+    "expected_manifest_entries": 68,
+    "expected_non_manifest_entries": 67,
     "coverage_rule": "Every manifest path appears in exactly one compatibility asset_group and exactly one asset_record. Path coverage and resolvable declared parent links do not equal an exhaustive dependency graph or legal clearance.",
     "asset_groups": [
       {
@@ -49,12 +51,15 @@
           "visual/assets/evidence-freshness-policy.json",
           "visual/assets/site-grounding-register.json",
           "visual/assets/pilot-readiness-register.json",
+          "visual/assets/readiness-closure-contract.json",
+          "visual/assets/implementation-handoff-matrix.json",
           "visual/assets/g1-preregistration-register.json",
           "visual/assets/g0-offline-enterprise-service-baseline.json",
           "visual/assets/key-area-evidence-matrix.json",
           "visual/assets/rights-clearance-ledger.json",
           "visual/assets/source-rights-evidence.schema.json",
           "visual/assets/source-rights-evidence.json",
+          "visual/assets/submission-use-rights-matrix.json",
           "visual/assets/t02-g0-g1-replay-fixtures.json",
           "visual/assets/run_t02_g0_g1_replay.js",
           "visual/assets/t02-g0-g1-replay-result.json",
@@ -214,7 +219,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "dffa7a0b08fd93c8b9fd63ae3b68b27e8a483c364a1c14e18c1b5cc19cf29374",
+        "digest": "a2662107d9ce69909de8021492698365a6ff46a3e920f5a55f7e29a5648b8caa",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -523,7 +528,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0a42b03de7914a35ec4d664d8cc46f78c5711da0aa648fc17de10c92b3aaa1a6",
+        "digest": "42e115c39210cfa5c2e0d75e96b362ea2204156a8994b288cefec8637981f368",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -570,7 +575,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "f27d9e021b43209c109e9e947e67b43090e858687245d5ed25e41f5fe29e2f27",
+        "digest": "f17b8472fa4d79da3a0f417a4c13382d2fc2734e9906ed20295cf4500517b918",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1068,7 +1073,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e9bec0cdc5b778f4ddcd702e6b7e7bbdbe8678b8cdf33a7c2af276b668650c23",
+        "digest": "599d3ae718553604084129462fee2da31b94037711b7071595389b36f8dd9947",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1393,7 +1398,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "cc4b093b4a800dfbd92f6dd34e5e149ccf48aeed30e02cfb9a76586147467d9d",
+        "digest": "36fa406fb46540187fe00eba6abdf9253297e92e17154984a3de80cbc1a019f8",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1485,7 +1490,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "66ab322361e06da4abd648581ebff7afb9c722a49c6f2b8fc1a8cf958594dc9d",
+        "digest": "8a12c6a9fdbb5c607a1e4c1db9b1a41daf834cb1eb01805b5ead8a5a1c37d2d6",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1533,7 +1538,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "3f713c0aa2ed1167c6418afe0476781270cb23bf599462ec2ad279c0147556db",
+        "digest": "935f7f6adbcf242e16ee066c36198470d4fcae8db3c75a5947fd5d3eb6b3b1be",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1543,7 +1548,8 @@
           "sources.json",
           "agent.json",
           "visual/assets/rights-clearance-ledger.json",
-          "visual/assets/source-rights-evidence.json"
+          "visual/assets/source-rights-evidence.json",
+          "visual/assets/submission-use-rights-matrix.json"
         ],
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
@@ -1583,7 +1589,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "4ab3e3ba4765b4a70179f517d9abce1b00ba3b6038c81f5fb3c746262513041c",
+        "digest": "0080af21c528ea76638773fec3c766ecbde5765fc0a7b9f6dd129ff9da89fa92",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1717,7 +1723,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "03d9cb9eafc26e90efe12e17fe20e66fa404b3f8769900b4f4f8d2069d2c0e02",
+        "digest": "9ac2ab1d1f7fba69f33e48c633fbd679d371e8e6ead563287587669afd19eb16",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -1731,6 +1737,8 @@
           "self_check.json",
           "visual/assets/rights-clearance-ledger.json",
           "visual/assets/source-rights-evidence.json",
+          "visual/assets/implementation-handoff-matrix.json",
+          "visual/assets/submission-use-rights-matrix.json",
           "assets/figures/site-overview.png",
           "assets/figures/land-use-structure.png",
           "assets/figures/key-areas.png",
@@ -2752,7 +2760,7 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e51afae2205fa198282d55cca2fb61d51eed8ac88bf55dd72e5d206de57b4203",
+        "digest": "c498a93bc4c925569f4850ad99415756f6decc19602c0f1dc8c50c7c65193c3e",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2829,7 +2837,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a54d1a60104b78032a72b56fc42fdd17c731d8615f3b34ba0f7899a7d1c87c42",
+        "digest": "c0d2af5e71a989b1e73007e6d3c3867e9236fffdbfbff72a6f42059b64e816f7",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2921,7 +2929,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "9ac68870241c05c478c2e3efdf4e3ea30243f58a09e2d4a1b9ec2108d176c729",
+        "digest": "127377f3fcf621d2f423db1bfbcc6bc9c2dd1d3778ccfed8c2224e1f220f577c",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -2935,6 +2943,8 @@
           "self_check.json",
           "visual/assets/rights-clearance-ledger.json",
           "visual/assets/source-rights-evidence.json",
+          "visual/assets/implementation-handoff-matrix.json",
+          "visual/assets/submission-use-rights-matrix.json",
           "assets/figures/site-overview.en.png",
           "assets/figures/land-use-structure.en.png",
           "assets/figures/key-areas.en.png",
@@ -2988,7 +2998,7 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "10cea26f7dd00981b805cbc8eb574f063efec62f583f63d6065f1a4ddc464aa6",
+        "digest": "910163ee5a90db0d122b36d1996275247bb105a3b40da518715b8ffcc1be150a",
         "digest_status": "matches_final_manifest",
         "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
       },
@@ -3826,6 +3836,156 @@
         "RIGHTS-OPEN-01",
         "RIGHTS-OPEN-02",
         "RIGHTS-OPEN-04"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-066",
+      "path": "visual/assets/readiness-closure-contract.json",
+      "role": "implementation_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "d4508718f534331edaf69200ee01b78b3539ed5c650cd7824c02e10916cfbc4b",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/pilot-readiness-register.json"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "Structured source is editable and validated, but authorship and rights remain pending independent review."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-067",
+      "path": "visual/assets/implementation-handoff-matrix.json",
+      "role": "implementation_handoff_evidence",
+      "language": null,
+      "asset_class": "structured_package_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "4efbcb750dab3e5c4062bbe8bffb1a17a6010afed973091e537480cbd37a00b1",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [],
+        "parent_asset_refs": [
+          "visual/assets/pilot-readiness-register.json",
+          "visual/assets/readiness-closure-contract.json",
+          "visual/assets/g1-preregistration-register.json",
+          "geometry/phasing.geojson",
+          "geometry/constraints.geojson",
+          "geometry/public_space.geojson"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "The matrix cross-references existing package records only. It proves no approval, field action, result, or rights clearance."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
+      ],
+      "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
+    },
+    {
+      "asset_id": "ASSET-068",
+      "path": "visual/assets/submission-use-rights-matrix.json",
+      "role": "rights_use_decision_evidence",
+      "language": null,
+      "asset_class": "rights_evidence_record",
+      "origin_status": "self_declared_origin_pending_independent_review",
+      "content_identity": {
+        "algorithm": "sha256",
+        "digest": "caddb321bd07a35a7430f1cdccb3bbecc1d9f1c36706d5f85b23eece5b52ae37",
+        "digest_status": "matches_final_manifest",
+        "reason": "SHA-256 is computed from the final file bytes and must equal manifest.json for this path."
+      },
+      "source_lineage": {
+        "source_ids": [
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        ],
+        "parent_asset_refs": [
+          "sources.json",
+          "visual/assets/source-rights-evidence.json",
+          "report/copyright_statement.md"
+        ],
+        "source_evidence_ref": "source-rights-evidence.json#source_records"
+      },
+      "tool_ids": [
+        "TOOL-CODEX",
+        "TOOL-PYTHON"
+      ],
+      "embedded_components": [],
+      "generation_recipe": {
+        "status": "structured_editable_source",
+        "evidence_ref": "../../report/narrative.md#reproduction-commands",
+        "limitation": "The matrix records clause text and conservative use decisions. It is not legal advice and does not establish clause applicability or permission."
+      },
+      "review_state": {
+        "independent_file_level_audit": "not_started",
+        "audit_record_ids": []
+      },
+      "rights_status": "not_fully_cleared",
+      "evidence_refs": [
+        "../../sources.json",
+        "source-rights-evidence.json",
+        "../../agent.json",
+        "../../report/copyright_statement.md"
+      ],
+      "open_item_ids": [
+        "RIGHTS-OPEN-01",
+        "RIGHTS-OPEN-02"
       ],
       "release_effect": "inherits_blocked_public_or_professional_reuse_gate"
     }
