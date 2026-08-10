@@ -75,6 +75,84 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Pilgrimage landmarks (taskbook >=3)."
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "AI scenario cards (taskbook >=10)."
+      ]
+    },
+    "test_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Industry test-verification scenarios (taskbook >=3)."
+      ]
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "User personas (taskbook >=5)."
+      ]
+    },
+    "component_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Public-space component-library components."
+      ]
+    },
+    "global_case_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Global AI-ecosystem case studies (taskbook 5-8)."
+      ]
     }
   }
 }

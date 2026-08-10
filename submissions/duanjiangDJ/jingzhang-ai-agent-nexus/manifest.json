@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f8cd93c21c8de5fd3fb07b97c5d5e9033486ea7fe9c708e7eecb126844876018"
+      "sha256": "f15e9772e0e1829c1a821d182d03565a2b5e7cf542634325d9ac97adf96c3281"
     },
     {
       "path": "agent.json",
@@ -38,19 +38,19 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "eb2378e1eb63cf7c4ff4eff4b1b84c4020e3447e41784416850c661762847958"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "c5b9fc9903874dfff746faf18bf13cc95fa2039abe45d1668aded55d9c861483"
+      "sha256": "887eb8342a8509ee818e8ba0fc0c2189a83cacfecca7f04021f83aea96e932f6"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "cecae873f3670616e9007dce9682e9e77ff8371135646a7fdee058e897c7a598"
+      "sha256": "cdd48a96524c172dc59a760c602d0b70817c00b9f32acfb7f38a136ae380b375"
     },
     {
       "path": "self_check.json",
@@ -62,7 +62,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "b80b6aecd417b779bcdc614c8374284d05dc51fc632944ce7701b16bf38afe48"
+      "sha256": "748483bb26a7b9809797689e121f5a96092b128ceb2fb314ff2d4bd60f82d5bb"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "ee00b068a0858a61073f2e486396d0e51cb016170df1a3a6ade12806d65de80b"
+      "sha256": "49513032818c9b26d19815ac98aa637c1a7c540c89651bda30f9e98457ffcd44"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "69ff4353c54a576b7b7ec5e896156ab6e583e302fc4b410ab98f0b85918026ec"
+      "sha256": "60ce6e0fdfa586da4a8f3cf5390e03c4acb69c0e7beef51109ceb53356d230c1"
     },
     {
       "path": "report/narrative.md",
@@ -116,7 +116,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "25f2aab3ae9fa5d80eedd74db8863260996e2ddc8928a6b3ef7923c3a4c915a1"
+      "sha256": "a3f9ba1d6836568047ac633598c8519d00b39508951244a1ed7be0f23d2c2305"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -267,7 +267,7 @@
       "path": "proposal.en.md",
       "role": "bilingual",
       "required": true,
-      "sha256": "acfdba2d3391b80ccbe466074ade9c3d6c1902b24504024b29277bbb23fb6e19",
+      "sha256": "b50640802c02be7aa5f9835dd5be32cd6b2d3fa427ee8131cc32919325ad17a4",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -275,7 +275,7 @@
       "path": "report/proposal.en.html",
       "role": "bilingual",
       "required": true,
-      "sha256": "050eed9c6001dfe2f05cfa46fce67a7403596231c66f6e9575592f8b78ebf537",
+      "sha256": "8a040acb854371ac5f49c12d0ec6c351b4837d9c0ee4d01ec4925efcadb84f70",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -283,7 +283,7 @@
       "path": "visual/index.en.html",
       "role": "bilingual",
       "required": true,
-      "sha256": "5ac8a45867db1459c9ccd75b5e99fe81055ccac7c38150042ff50f830f5fdc2d",
+      "sha256": "b71e4cd53987d48fc25f76846de8f095c1f42590f92b639de0bd6461a8c9c76c",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -292,7 +292,7 @@
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "f13ef18d3025c2f339369f845c63f3c376a2a6a15c47b61e20c0540c1059fca1"
+      "sha256": "f13078d97f7d9b71cf0ec8f5e85274174484ff57f1fb7aea7626bc24ab7fbd5c"
     },
     {
       "path": "risk.json",
@@ -340,7 +340,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"

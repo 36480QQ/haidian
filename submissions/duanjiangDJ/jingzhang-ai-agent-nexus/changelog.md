@@ -1,5 +1,28 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-11
+
+### 改动摘要
+
+- **回应对 PR #1445 的 64/100 评审反馈**：按 7 维评分拆解（brief_alignment/ originality/ ai_planning_innovation/ implementation_feasibility/ public_interest_inclusion/ risk_compliance/ expression_completeness）逐项补强，目标从 64 提升至 90+。
+- **统筹研究深化（brief/ai_planning）**：新增命名体系段（主名称 JZ-AAN + AG-##/S-##/JZ-##/C-## 三层语法编码）与“三大定位、五大功能与三区两翼协同回路”——五大功能逐项映射、研—发—聚—产—享闭环比、区域协同（未来科学城/怀柔/经开区/京津冀，概念方向）。
+- **世界级 AI 创新生态对标（ai_planning）**：新增五段式全栈链条、八大要素机制与 8 个全球案例对照表（Kendall Square/Mission Bay/King's Cross/one-north/首尔 DMC/Jätkäsaari/杭州/深圳），来源登记 EXT-GLOBAL-001…008。
+- **空间与风貌深化（expression）**：小月河场景赋能翼、朝圣地标目录（LM-01/02/03）、公共空间组件库（C-01..07，名称+行为+隐私）、国际传播叙事（“One Railway · One Street · One Revolution”）。
+- **实施运营深化（implementation）**：品牌 IP 三层与四季节信号（春·立题/夏·联调/秋·路演/冬·回流）、AI 场景开放六阶段（发布→申请→安全审查→沙盒许可→数据治理→日落规则）、开发者社区分级、国际转化漏斗、JZ-09 资本服务驿站 / JZ-10 小月河 AI 生活漫步线。
+- **指标与证据链**：新增 6 个 known 计数指标（landmark_count=3 / scenario_card_count=12 / test_scenario_count=3 / persona_count=7 / component_count=7 / global_case_count=8），同步注册 metrics.json、compliance_matrix、design_depth_matrix（+16 项），可视化页面新增“生态图谱与协同回路”区块。
+- **合规红线**：所有新增内容均标注“概念方向/概念建议”，不新增 FAR/高度/密度/拆除/投资承诺；几何文件字节稳定未改动。
+
+### 采纳反馈（PR #1445 评论区要点）
+
+- 采纳“强化对任务书三区两翼/五大功能的逐项响应”：新增协同回路与功能映射表。
+- 采纳“提升 AI 规划创新论证深度”：新增全球案例对标与八大要素机制。
+- 采纳“丰富表达与运营叙事”：新增组件库、品牌 IP、开放测试床与转化漏斗。
+
+### 暂未采纳或待复核事项
+
+- 与 v0.2 一致：场地边界与重点区域为 PROVISIONAL；建设强度等以正式控规为准；绿地率/公共空间率为现状复算基线。
+- 八个全球案例仅为公开资料机制借鉴，不构成对相关机构现状或本带方案的任何承诺。
+
 ## v0.2 - 2026-08-10
 
 ### 改动摘要
