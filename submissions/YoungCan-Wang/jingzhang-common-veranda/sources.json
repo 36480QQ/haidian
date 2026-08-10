@@ -119,6 +119,25 @@
       "accessed_date": "2026-08-09",
       "usage": "Case mechanism: adaptive reuse of rail heritage, shared/create/chill access zoning and startup services.",
       "limitations": "Private-campus operating model; public access must be reinterpreted for a civic corridor."
+    },
+    {
+      "id": "OSM-CONTEXT-20260810",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "agent_inferred_from_public_data",
+      "publisher": "OpenStreetMap contributors",
+      "accessed_date": "2026-08-10",
+      "license": "Open Database License (ODbL) 1.0",
+      "usage": "Context-only roads, rail, water, parks, amenities and key-area building footprints for v0.2 diagrams.",
+      "limitations": "Volunteer data with variable completeness and positional accuracy; not an official survey, redline or regulatory base."
+    },
+    {
+      "id": "GEN-V02-CONCEPT-RENDERS",
+      "path": "assets/renders/",
+      "source_type": "agent_generated_design",
+      "publisher": "YoungCan-Wang / OpenAI image generation workflow",
+      "accessed_date": "2026-08-10",
+      "usage": "Three original conceptual perspectives for spatial atmosphere and user experience.",
+      "limitations": "AI-generated visualization, not a site photograph, approved design, construction document or built condition."
     }
   ]
 }

@@ -1,5 +1,39 @@
 # 方案迭代记录
 
+## v3.5 - 2026-08-10
+
+- Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.
+- Kept the new register concept-only and functional-bands-only: dimensions, capacity, speed, right-of-way, permits, operators and performance remain null or unknown; no road section, redline, or field result was added.
+- Regenerated both bilingual reports and manifest/copyright hashes after the scoped visual and narrative addition.
+
+## v3.4 - 2026-08-10
+
+- 将三座试验庭的体量表改为公共界面与可逆服务关系，删除未有本地控规、权属、测绘或工程资料支持的 FAR、层数和高度范围；开发控制与工程尺度继续保持待专业团队确定。
+- 同步中英文 proposal 与离线 HTML，保留自动驾驶路缘、人工接管、无障碍连续、可回退和 provisional geometry 边界；不新增道路、许可、运营或性能主张。
+
+## v3.3 - 2026-08-10
+
+- 在中英文“路缘先于车道”入口增加典型路缘断面，把连续人行/无障碍带、路缘服务带、换乘求助节点和维护/应急回退带翻译成可见空间动作；不补写工程尺寸、道路红线、车辆速度或许可。
+- 为六张核心图件增加图注式设计主张，说明它们分别回答公共轴、重点区界面、回退系统、阶段门、准备度和用地分层问题；图件仍不代表现状测量或部署结果。
+- 保留 `unknown`、`design_target`、`not_authorized_not_run` 和 provisional 几何边界。
+
+## v3.2 - 2026-08-10
+
+- 在中英文重点区域入口补充三座试验庭的概念 FAR、公共界面层数、自动化服务与人本路径的空间分层，以及首要专业证据。
+- 明确这些体量范围只用于城市设计比较，不改变 `autonomy_nodes.json`、几何、指标、场景、许可和部署边界。
+- 保留可撤回设施、人工接管、provisional 几何和未知现场基线；不新增道路、建筑、拆改或社会道路运营主张。
+
+## v3.1 - 2026-08-10
+
+- Aligned the Chinese AV-T03 rollback-gate status with `visual/assets/curbside-test-gates.json`: `baseline: unknown` now renders as `UNKNOWN`, rather than visually upgrading an unmeasured weather/network outcome to a design target.
+- Refreshed matching manifest and copyright-ledger hashes for the changed visual index, figures and changelog; no gate register value, performance result, permit, deployment or official-score claim changed.
+
+## v3.0 - 2026-08-10
+
+- Corrected the bilingual autonomy-readiness data plate and its visual-index captions from four candidate nodes to three, matching `visual/assets/autonomy_nodes.json` (`AUTO-NODE-001` through `AUTO-NODE-003`).
+- Revalidated the 2400 × 1700 figures after a surgical presentation edit; the register, scenario count, gate count and metric status are unchanged.
+- This is a figure-integrity correction only; it adds no road, permit, deployment, performance or official-score claim.
+
 ## v2.9 - 2026-08-09
 
 - Added bilingual acceptance-trace quick maps so reviewers can follow each check to its gate, fixture, scenario or boundary field without searching the contract; the maps are reading aids only and the runner remains the source of structural validation.

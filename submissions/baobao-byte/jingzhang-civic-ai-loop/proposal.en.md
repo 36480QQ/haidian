@@ -7,38 +7,32 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Start with a reversible First Hundred Metres acceptance segment, then scale urban AI only through public choice, human takeover, appeal and replay."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "2.6"
-iteration: 14
+version: "2.9"
+iteration: 15
 proposal_format_version: "2"
 ---
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-v2.4 review-restructured edition. It leads with one walkable, stoppable and replayable spatial prototype before the whole-belt system. Spatial figures still use repository provisional geometry with low aggregate confidence; they are not official redlines, statutory controls or precise-area claims. Asset rights and generation lineage are in `report/copyright_statement.md`; version differences are in `changelog.md`.
+v2.9 counter-evidence gate edition. It leads with one walkable, stoppable and replayable spatial prototype before the whole-belt system. The package has just tested itself for field readiness: all six prerequisites remain unresolved, so the result is `BLOCKED_BEFORE_G2`, not “ready to deploy”. Spatial figures still use repository provisional geometry with low aggregate confidence; they are not official redlines, statutory controls or precise-area claims. Asset rights and generation lineage are in `report/copyright_statement.md`; version differences are in `changelog.md`.
 
 Motto: Every urban intelligence must withstand public scrutiny.
 
 ![Civic AI Loop concept mark](assets/figures/civic-loop-logo.en.svg)
 
-## Seven-dimension decision cockpit
-
-Version 2.6 routes every jury question to one spatial decision, one inspectable artifact and one non-negotiable boundary. Counts describe submitted low-confidence conceptual GeoJSON, not built assets; official boundaries, surveys, ownership and discipline reviews must replace them.
-
-|Dimension|Decisive answer|Inspectable evidence|Hard boundary|
-|---|---|---|---|
-|Brief alignment|Three positions, five functions, three zones and two wings form one verification–translation–experience loop.|Taskbook table; `compliance_matrix.json`|No next gate if any agent.1–agent.6 output is missing.|
-|Originality|Railway station, line, timetable and handoff become AI entry, takeover, appeal and exit rights.|First-100-metre journey; three stations and one receipt|Screens, tours and smart poles alone do not count.|
-|AI planning innovation|Agents issue replayable receipts rather than statutory decisions.|P1 offline runner, schema, 8/8 assertions|Desktop PASS is not field authorization; severe error, failed handoff or deletion stops the test.|
-|Feasibility|Start with one reversible segment, baseline and staffed fallback; scale after independent replay.|Three evidence-gated phases; eight work packages; 90-day G0–G2|No quantities, costs or dates without official data and accountable roles.|
-|Public interest|The ordinary route comes first; six user groups run the same task and worst-group failure stays visible.|15 conceptual public interfaces; accessibility QA; appeal|No forced digitization or averages that hide exclusion.|
-|Risk and compliance|Stop, removal, deletion, takeover and replay become spatial components.|`risk.json`; `assumptions.json`; negative controls|No sensitive data or claims of approval, endorsement, operation or adoption.|
-|Expression|Narrative, five figures, bilingual pages, A3/A0, GeoJSON and matrices cross-locate the same decision.|8 connections, 12 reuse-first building interfaces, 15 public spaces, 6 comfort green spaces|Provisional status remains prominent; machine quantity never substitutes for professional depth.|
-
-**Causal chain:** preserve the ability to walk, ask and leave without AI; require accountable evidence in one street segment; expand to three stations only when failures are replayable, staffed service has not degraded and the worst-served group is not sacrificed. The core product is spatial infrastructure through which a city can say no to AI. [depth:three_level_scope_framework] [metric:decision_gate_count]
-
 ## Executive brief: build the first hundred metres before promising eleven kilometres
 
 The century-old Jing-Zhang corridor does not need another AI showcase. It needs a public place where anyone can decide whether an urban AI deserves to enter the city. The Loop translates railway stations, lines, timetables and hand-offs into four civic rights: entry, human takeover, appeal and exit. Zhongzhiyuan tests safety and the stack; AI Origin Community translates prototypes into public services; Dazhongsi tests everyday and consumer rights; the two wings connect professional support and controlled urban scenarios. [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
+
+**Start with a certificate of refusal.** This proposal does not confuse a complete submission with a field-ready project. `node visual/assets/run-readiness-gate.js` reads the package itself, not an author score: geometry is provisional, the constraints layer has zero features, the accountable operator is unconfirmed, data governance is pending, no field baseline exists, and P1–P3 are unexecuted protocols. The result is 0/6 passed and 6/6 blocked, written to `readiness-gate-evidence.json`. [metric:field_readiness_blocker_count] [metric:field_readiness_pass_ratio]
+
+This refusal is an implementation interface, not self-dismissal. Each BLOCK can change only when the responsible human provides traceable evidence; even then, the script merely admits the case to human G2 review and never grants legal, engineering or field authority. By contrast, the existing P1 synthetic replay proves only that protocol branches, shutdown, deletion and rollback are repeatable. It cannot cancel a field blocker. **A protocol that runs and a city service allowed to run are different claims.**
+
+|Verified blocker in this package|Current state|Evidence required to clear it|
+|---|---|---|
+|spatial legality|provisional boundary; zero constraint features|official geometry and verified title/heritage/utilities/fire ledger|
+|responsibility and data|operator pending; governance pending|named authorised roles; approved legal basis, fields and retention|
+|outcomes and authority|field baseline pending; protocols not executed|non-AI and worst-group baseline, lawful authorisation and field sign-off|
 
 **The only launch action is the “First Hundred Metres Civic Acceptance Segment” at AI Origin Community.** It is a reversible retrofit to an existing walking chain, not a miniature technology park. The entrance gives equal visibility to ordinary and AI-assisted routes; the middle provides a safe stopping bay, paper task ticket and visible staffed desk; the end provides an independent appeal point, version-status board and Run Receipt. If every model and device is removed, continuous walking, rest, lighting, staffed service and railway interpretation still work. “First Hundred Metres” names the first continuous acceptance unit; its actual length, width, gradient, location and quantities remain subject to official geometry, field audit and professional verification. [depth:detailed_public_space_design] [assumption:A-BOUNDARY-001]
 
@@ -175,10 +169,6 @@ A comparable-service street, civic living room and evening commons support trans
 
 ## First-phase protocols: falsify before scaling
 P1 Accessible co-test route. Test whether structured reporting plus named human repair ownership closes barriers faster than the existing route. Preserve telephone and in-person controls; collect no face, identity or continuous trace. Staff a project manager, accessibility auditor, repair liaison and data-protection owner. Stop for safety misdirection, weakened human access, unresolved complaints or worse completion by disabled users.
-
-The completed evidence is not a field pilot but a reproducible synthetic desktop package. Four fixed fixtures run through `visual/assets/run-p1-replay.js` with zero network calls and zero personal records, producing `visual/assets/p1-replay-evidence.json`. All 8 assertions pass across limited continuation, severe-misdirection stop, unavailable-handoff stop, unisolated-physical-break stop and uncertainty-to-human review. Every stop preserves a paper route and staffed desk; synthetic memory records are deleted from 4 to 0; a five-step rollback ends in non-AI public service. Input and replay digests make the result reproducible, and the receipt contract now declares JSON Schema Draft 2020-12.
-
-PASS proves only deterministic protocol branching and rollback mechanics. It does not prove field safety, staff availability, public outcomes, legal authorization or deployment security. Real P1 remains **NOT AUTHORIZED / NOT RUN** until official geometry, field audit, professional checks, accountable operators and G0–G2 are complete.
 
 P2 Public evaluation of service agents. Limit scope to public policy navigation and place information—not approval, legal, medical or rights decisions. An independent team protects a blind test set co-authored by residents, SMEs and non-Chinese users. Admission requires factual accuracy, clickable sources, appropriate refusal and successful human handoff. Publish version, date, sample structure, subgroup errors and gaps; one unresolved severe error blocks expansion.
 

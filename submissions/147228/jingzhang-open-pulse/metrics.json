@@ -343,7 +343,8 @@
       "formula": "count(validated risk dimensions in risk.json)",
       "confidence": "high",
       "assumptions": [
-        "This is a design risk-register count, not a measured probability or safety certification."
+        "This is a design risk-register count, not a measured probability or safety certification.",
+        "Risk dimensions are review priorities, not probabilities, safety certification or approval."
       ]
     },
     "construction_readiness_gate_count": {
@@ -388,21 +389,22 @@
       ]
     },
     "resilience_v13_monte_carlo_draws": {
-      "status": "known",
-      "value": 50000,
+      "status": "unknown",
+      "value": null,
       "unit": "draws",
       "source_files": [
         "report/narrative.md"
       ],
       "formula": "deterministic Monte Carlo draws with seed 147228 across five stakeholder profiles, uncertain weights and score noise",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "The draw count and seed are reproducible; the response functions remain explicit design assumptions."
-      ]
+        "The draw count and seed are declared experiment parameters; the package does not ship the per-draw inputs, response functions or a runner, so this experiment is not independently reproducible here."
+      ],
+      "reason": "GATE-04 remains design_target and no package-local input data or script consumes seed 147228 to replay the 50000 draws."
     },
     "resilience_v13_selected_mean_score": {
-      "status": "known",
-      "value": 72.518,
+      "status": "unknown",
+      "value": null,
       "unit": "normalized_score_0_100",
       "source_files": [
         "report/narrative.md",
@@ -412,11 +414,12 @@
       "confidence": "low",
       "assumptions": [
         "This is a comparative decision score, not a measured climate, drainage, safety or resident outcome."
-      ]
+      ],
+      "reason": "The package does not include the stakeholder weights, criterion responses, stress increments or runner needed to independently replay the reported value."
     },
     "resilience_v13_selected_p05_score": {
-      "status": "known",
-      "value": 70.252,
+      "status": "unknown",
+      "value": null,
       "unit": "normalized_score_0_100",
       "source_files": [
         "report/narrative.md"
@@ -425,11 +428,12 @@
       "confidence": "low",
       "assumptions": [
         "The percentile represents model uncertainty only and excludes unknown site geometry, utility, soil, climate and behavioural uncertainty."
-      ]
+      ],
+      "reason": "The package does not include the per-draw robust-score vector or a runner that can calculate the fifth percentile."
     },
     "resilience_v13_selected_win_rate": {
-      "status": "known",
-      "value": 0.78862,
+      "status": "unknown",
+      "value": null,
       "unit": "ratio",
       "source_files": [
         "report/narrative.md"
@@ -438,11 +442,12 @@
       "confidence": "low",
       "assumptions": [
         "S2_ecology_intensive wins the remaining 21.138% of draws and wins the deterministic climate-first profile."
-      ]
+      ],
+      "reason": "The package does not include the per-draw candidate scores or a runner that can count S4 wins."
     },
     "resilience_v13_selected_mean_regret": {
-      "status": "known",
-      "value": 0.314,
+      "status": "unknown",
+      "value": null,
       "unit": "normalized_score_points",
       "source_files": [
         "report/narrative.md"
@@ -451,11 +456,12 @@
       "confidence": "low",
       "assumptions": [
         "Low regret supports S4 as a robust compromise; it does not imply S4 is optimal under every climate-only objective."
-      ]
+      ],
+      "reason": "The package does not include the per-draw best-candidate and S4 score vectors or a runner that can calculate mean regret."
     },
     "resilience_v13_selected_min_stress_score": {
-      "status": "known",
-      "value": 67.194,
+      "status": "unknown",
+      "value": null,
       "unit": "normalized_score_0_100",
       "source_files": [
         "report/narrative.md"
@@ -464,11 +470,12 @@
       "confidence": "low",
       "assumptions": [
         "Eight stress increments are design tests rather than site-specific forecasts."
-      ]
+      ],
+      "reason": "The package does not include the eight stress response values or a runner that can calculate their minimum."
     },
     "resilience_v13_hard_gates_passed": {
-      "status": "known",
-      "value": 5,
+      "status": "unknown",
+      "value": null,
       "unit": "count",
       "source_files": [
         "report/narrative.md"
@@ -477,7 +484,8 @@
       "confidence": "low",
       "assumptions": [
         "Gates are pre-field design-screening rules and must be replaced by approved engineering and participatory acceptance criteria."
-      ]
+      ],
+      "reason": "The package does not include the five gate input scores or a runner that can evaluate their pass count."
     },
     "civic_pulse_stage_count": {
       "status": "known",
@@ -506,20 +514,6 @@
       "confidence": "high",
       "assumptions": [
         "Station labels are conceptual and key-area polygons remain provisional."
-      ]
-    },
-    "risk_class_count": {
-      "status": "known",
-      "value": 8,
-      "unit": "count",
-      "source_files": [
-        "risk.json",
-        "proposal.md"
-      ],
-      "formula": "count(validated risk dimensions in risk.json)",
-      "confidence": "high",
-      "assumptions": [
-        "Risk dimensions are review priorities, not probabilities, safety certification or approval."
       ]
     },
     "proof_mile_component_count": {
