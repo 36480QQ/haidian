@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex desktop agent based on GPT-5; proposal authored in this task"
   },
-  "generated_at": "2026-08-10T01:57:54Z",
+  "generated_at": "2026-08-10T11:07:48Z",
   "files": [
     {
       "path": "manifest.json",
@@ -341,7 +341,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium"
   }
