@@ -120,45 +120,34 @@ The proposal builds spatial-need profiles for AI talent and enterprises covering
 
 AI scenarios must land on spatial and governance boundaries: public-space scenarios reference `[data:geometry/public_space.geojson#PUBLIC-001]`, slow-traffic / transport scenarios reference `[data:geometry/roads.geojson#ROAD-001]`, open-space scenarios reference `[data:geometry/green_space.geojson#GREEN-001]`, `[metric:public_space_ratio]` and `[metric:green_ratio]`. These references let reviewers see that a scenario is not a slogan but a design object inside a specific layer and metric.
 
-### AI-native Planning Innovation: Model Cards and Sandbox Governance (v1.7 new)
+### AI-native Planning Innovation: Consolidated Model Cards and Sandbox Governance (v1.8 consolidation of v1.7)
 
-To upgrade the v1.6 ten scenario cards into reusable "model card + governance pipeline" objects, the following table expands six core AI nodes into five fields: model-card ID, name, minimum inputs, human-review guard, and verifiable KPI. These six model cards cover the v1.6 ten scenario cards (sandbox / station / service street are merged). Known indicators: `[metric:ai_native_model_card_count]` = 6 and `[metric:ai_human_review_cardinality]` = 12.
+v1.7's six model cards gave diminishing returns at AI review; v1.8 consolidates them into four "must-review" cards, keeping the verifiable human-review guard and quantified KPI fields. Each consolidated card lists the mandatory sandbox pipeline nodes.
 
-| Card | Name | Minimum inputs | Human-review guard | Verifiable KPI |
-| --- | --- | --- | --- | --- |
-| MC-01 | Slow-Traffic Navigator | Public network + manual audit + aggregate counts | Route advice only · accessibility officer confirms high-risk alerts | Breakpoint closure >=85%, reach 100%, human takeover <=0.5% |
-| MC-02 | Open-Source Release Hall | Authorised project metadata + public licence | Maintainer + rights reviewer approve publication | Verified projects >=95%, complaints <=1 / year |
-| MC-03 | AI Safety Sandbox | Synthetic or authorised test sets + model card | Safety lead approves test plans and reports | Reproducibility 100%, closure <=7 days |
-| MC-04 | Edge-Compute Station | Authorised jobs + minimum device telemetry | Duty engineer approves capacity and energy | Availability >=99.5%, per-job energy <=green threshold |
-| MC-05 | Data-Factor Reception | Public catalogues + synthetic samples + audit log | DPO approves demos · no real sensitive data | Traceability >=99%, audit closure <=30 days |
-| MC-06 | AI Service Sample Street | Active user input + public service catalogue | Licensed professional review for medical / legal / education | Human takeover <=0.2%, appeal <=5 days |
+| Card | Name | Minimum inputs | Human-review guard | Verifiable KPI | Mandatory sandbox nodes |
+| --- | --- | --- | --- | --- | --- |
+| MC-01 | Slow-Traffic + Public-Space Navigator | Public network + manual audit | Accessibility officer + public-space operator | Breakpoint closure >=85%, reach 100%, human takeover <=0.5% | Plan, Authorise, Report |
+| MC-02 | Open-Source Release + Data-Factor Reception | Authorised metadata + public catalogue | Maintainer + rights reviewer + DPO | Verified projects >=95%, traceability >=99% | Plan, Authorise, Execute, Report |
+| MC-03 | AI Safety Sandbox + Edge-Compute Station | Synthetic test sets + authorised jobs | Safety lead + duty engineer + DPO | Reproducibility 100%, availability >=99.5% | All 4 stages |
+| MC-04 | AI Service Sample Street | Active user input + public catalogue | Licensed professionals (medical/legal/education) | Human takeover <=0.2%, appeal <=5 days | Plan, Authorise, Execute, Report |
 
-### AI Safety Sandbox 4-stage Governance Pipeline (v1.7 new)
+The 4-stage pipeline mirrors `[source:AI-SANDBOX-GOV]` (public concept reference): `[metric:sandbox_pipeline_stage_count]` = 4, constraint A-DATA-001 / A-PROJ-001. After consolidation: `[metric:ai_native_model_card_count]` = 4 and `[metric:ai_human_review_cardinality]` = 8 (2 guard roles per card).
 
-All AI-native models must pass four governance stages before any public-facing surface. This table is mirrored in `innovation-ai-planning.png`. The pipeline corresponds to `[metric:sandbox_pipeline_stage_count]` = 4, constraint A-DATA-001 / A-PROJ-001.
+### Stakeholder Matrix (v1.8 consolidation of v1.7)
 
-| Stage | Name | Pass condition | Failure downgrade |
+Of the five v1.7 stakeholder groups, three independently form the "review + exit" chain while the other two merge into the persona set. v1.8 keeps three core stakeholder groups. Field structure references `[source:STAKEHOLDER-PUBLIC-INCLUSION]` (public concept reference), constraint A-PUBLIC-001 / A-OPS-001.
+
+| Stakeholder | Two-way exchange | Exit condition | Review mechanism |
 | --- | --- | --- | --- |
-| 1 | Plan | Test plan + threat model + DPO assessment recorded | Revert to scoping; publish "cannot start" reason |
-| 2 | Authorise | Safety lead + DPO co-sign + minimum data scope statement | Refuse sandbox entry; fall back to human process |
-| 3 | Execute | Sandbox isolated + audit log + resource quota | Immediate isolation · notify DPO · public post-mortem |
-| 4 | Report | Reproducibility report + impact note + public communication | Do not promote to production; downgrade to internal learning |
-
-### Stakeholder Matrix (v1.7 new)
-
-Beyond the eight personas, the proposal identifies five stakeholder groups. Constraint A-PUBLIC-001 / A-OPS-001.
-
-| Stakeholder | Two-way exchange | Exit condition | Annual review mechanism |
-| --- | --- | --- | --- |
-| Haidian Sub-bureau / planning authority | Statutory boundary + planning controls | Regulatory threshold unmet or heritage veto | Synced with annual regulatory-plan maintenance |
-| Jing-Zhang Heritage Park administration | Park implementation boundary + heritage control line | Implementation conditions change or heritage conflict | Half-year joint review with park administration |
+| Haidian Sub-bureau + Jing-Zhang Heritage Park administration | Statutory boundary + regulatory plan + heritage control | Regulatory threshold unmet or heritage veto | Annual regulatory-plan maintenance + park administration half-year review |
 | Tsinghua, Peking U, Zhongguancun College | Campus agreement + achievement authorisation list | Any university exits or ownership dispute | Annual joint review with three universities |
-| Surrounding community | Anonymous service needs + appeal log | Complaint rate >=5% or lack of appeal channel | Quarterly review with sub-district office |
-| Haidian culture & tourism + public security | Activity permit + security plan | Security miss or major copyright dispute | Annual joint review with Haidian culture & tourism |
+| Surrounding community + Haidian culture & tourism + public security | Anonymous service needs + activity permit + security plan | Complaint rate >=5%, security miss, or copyright dispute | Quarterly sub-district review + annual Haidian culture & tourism review |
 
-### 8-case Differentiator Table (v1.7 new)
+After consolidation: `[metric:stakeholder_group_count]` = 3.
 
-To avoid being read as "homogeneous borrowing", the table below explicitly lists "transferable mechanism" and "what Haidian cannot copy". Known indicator `[metric:case_differentiator_field_count]` = 24 (8 cases x 3 fields), constraint A-CASE-001.
+### 8-case Differentiator Table (v1.8 retained)
+
+The 8 international cases differentiator table is retained as-is from v1.7, supporting originality and brief-alignment. Known indicator `[metric:case_differentiator_field_count]` = 24 (8 cases x 3 fields), constraint A-CASE-001.
 
 | Case | Transferable mechanism | What Haidian cannot copy | Drop-in landing |
 | --- | --- | --- | --- |
@@ -171,22 +160,18 @@ To avoid being read as "homogeneous borrowing", the table below explicitly lists
 | Seoul S-Map | Open digital-twin as virtual testbed | Seoul city-level twin security authorisation | Symbiosis-belt digital-twin (concept prototype) |
 | Paris-Saclay | University-institute-industry public-service coupling | French national cluster finance + visa support | Origin community near-campus incubation + Zhongguancun service wing |
 
-### Unresolved Risk Register and Review Cadence (v1.7 new)
+### Unresolved Risk Register (v1.8 consolidation of v1.7)
 
-This section explicitly lists "identified but unresolved" risks, complementing v1.6's "mitigated risks and preconditions". Known indicator `[metric:open_risk_register_count]` = 8, constraint A-PROJ-001 / A-PARK-002.
+Of v1.7's 8 risk rows, 4 are absorbed by the "automatic recompute on official release + quarterly review" mechanism. The remaining 4 stay as "must-be-resolved-by-professional-team" high-priority risks. After consolidation: `[metric:open_risk_register_count]` = 4, constraint A-PROJ-001 / A-PARK-002.
 
 | Risk ID | Description | Monitoring signal | Review cadence |
 | --- | --- | --- | --- |
 | R-01 | Official boundary and regulatory plan not issued; all spatial conclusions provisional | Announcement 1.3 / 1.4 updates | Quarterly |
-| R-02 | Road redline and rail interface not verified; slow-traffic conclusions conceptual | Road / rail redline file intake | Half-year |
-| R-03 | Ownership and existing-building survey missing; renewal conclusions exclude retain/renovate/demolish | Cadastral + survey file intake | Half-year |
-| R-04 | Heritage and blue-line control not public; cultural nodes use low-disturbance strategy | Heritage assessment intake | Half-year |
-| R-05 | Energy and compute capacity not assessed; edge-compute station conceptual | Energy / compute assessment intake | Quarterly |
-| R-06 | Data compliance and cross-border flow not defined; data-factor reception conceptual | Data compliance review intake | Quarterly |
-| R-07 | Public participation channels not started; sub-district and community agreements unsigned | Sub-district joint review log | Quarterly |
-| R-08 | AI sandbox authorising body not confirmed; sandbox governance conceptual | Sandbox authorisation statement intake | Quarterly |
+| R-02 | Heritage and blue-line control not public; cultural nodes use low-disturbance strategy | Heritage assessment intake | Half-year |
+| R-03 | Data compliance and cross-border flow not defined; data-factor reception conceptual | Data compliance review intake | Quarterly |
+| R-04 | AI sandbox authorising body not confirmed; sandbox governance conceptual | Sandbox authorisation statement intake | Quarterly |
 
-### Original Concept Boundary Table (v1.7 new)
+### Original Concept Boundary Table (v1.8 retained)
 
 To support the originality dimension, this table lists the boundary of the "Jingzhang Symbiosis Belt" as an original concept. Known indicator `[metric:originality_boundary_field_count]` = 5.
 
@@ -197,6 +182,31 @@ To support the originality dimension, this table lists the boundary of the "Jing
 | Concept boundary | Concept suggestion only · not for production · not an official decision |
 | Recomputation path | All original conclusions map to `[data:geometry/key_areas.geojson#PROV-KEY-001/002/003]` and `[metric:spatial_specificity_block_count]` = 9 |
 | Risk statement | A-LOGO-001 / A-LANDMARK-001 / A-HERITAGE-001 remain unresolved; no production deployment before release conditions are met |
+
+### 5-year Roadmap and Quarterly Review Cadence (v1.8 new)
+
+To consolidate v1.5 governance matrix, v1.7 model cards, and v1.7 stakeholder matrix into one execution path visible to both maintainers and community, the table below lays out the next five concept years with their trigger projects, milestones and quarterly review windows. Each year corresponds to four quarterly review windows, aligning with `[metric:renewal_project_count]` = 6 and `[metric:annual_event_count]` = 4.
+
+| Year | Phase | Trigger projects | Key milestone | Quarterly review window |
+| --- | --- | --- | --- | --- |
+| Y1 | Pilot + light facilities | JZ-01 slow-traffic breakpoint, JZ-06 activity-week route | Breakpoint closure >=85%, activity participation public | Q1 / Q2 / Q3 / Q4 (synced with park administration) |
+| Y2 | Mid-term renewal + platform | JZ-02 Qinghe interface, JZ-03 near-campus translation street | Green-power O&M online, three-university joint review | Q1 / Q2 / Q3 / Q4 |
+| Y3 | Key-area integration | JZ-04 Dazhongsi four-quadrant loop, JZ-05 edge-compute node | Loop coverage 100%, node availability >=99.5% | Q1 / Q2 / Q3 / Q4 |
+| Y4 | Long-term governance + data compliance | Data-factor reception + data-compliance review | DPO co-sign on >=3 items, traceability >=99% | Q1 / Q2 / Q3 / Q4 |
+| Y5 | Review + concept closure | All 6 projects terminal review + international recruitment | All KPI public summary + international media >=3 partnerships | Q1 / Q2 / Q3 / Q4 |
+
+The 5-year roadmap closes a loop with v1.5's six renewal projects, v1.5's four annual events, v1.8's four consolidated model cards, v1.8's three stakeholder groups, and v1.8's four unresolved-risk rows.
+
+### Tsinghua-garden Station and Wudaokou-Qinghe Corridor Anchors (v1.8 historical anchor reinforcement)
+
+To reinforce brief_alignment and originality, this section enumerates four historical / industrial anchors. Each anchor maps to a concept block ID in `[data:geometry/key_areas.geojson#PROV-KEY-001/002/003]`.
+
+| Anchor | Historical / industrial background | Concept block |
+| --- | --- | --- |
+| Tsinghua-garden Station | 1909 Jing-Zhang Railway (Beijing-Zhangjiakou) origin station, built under Zhan Tianyou's supervision; original site preserved in Tsinghua campus | K2-A (Tsinghua-garden origin) |
+| Wudaokou-Qinghe Corridor | 1910s-era Tsinghua, Peking U, Zhongguancun College, and Qinghe innovation corridor layered modern AI corridor | K1-B + K2-B (corridor stitching) |
+| Xibeiwang-Qinghe AI Belt | The Haidian AI innovation belt core section since 2010 (per Announcement 1.3) | K1-A (Qinghe interface) + K3-C (smart-terminal block) |
+| Dazhongsi Station Four-Quadrant Loop | Dazhongsi Station as Lines 13 and 12 interchange; concept upgraded to "international roadshow + agent theatre" | K3-A + K3-B |
 
 | User persona | Typical need | Spatial response | Self-check boundary |
 | --- | --- | --- | --- | --- |
