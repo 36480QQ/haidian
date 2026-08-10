@@ -141,6 +141,42 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "小月河场景赋能翼蓝绿体验路（概念线位）",
+        "road_class": "greenway",
+        "length_m_declared": 5719.5,
+        "note": "concept alignment only; not a road redline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3405,
+            39.975
+          ],
+          [
+            116.3408,
+            39.995
+          ],
+          [
+            116.3403,
+            40.012
+          ],
+          [
+            116.3407,
+            40.0265
+          ]
+        ]
+      }
     }
   ]
 }
