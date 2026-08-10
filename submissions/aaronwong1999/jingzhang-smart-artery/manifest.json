@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy agent orchestrating shapely/matplotlib/reportlab generation"
   },
-  "generated_at": "2026-08-10T16:44:39.310182Z",
+  "generated_at": "2026-08-10T17:09:09.265850Z",
   "files": [
     {
       "path": "agent.json",
@@ -220,7 +220,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "81e4ce99b87d80b1c9ea5b8c3af464ae6d8a1938c2f83b46ad87801298482200",
+      "sha256": "29101fecf965f86d70bdd4a08500fdb87611b75f0e553c402eed68797e8ec4ac",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -228,7 +228,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "ea90c6794df4366ca846bb72e60c967aeff31b8a02512aaa3762860a3a1ed9f2",
+      "sha256": "ff0f151a731ea27157422ebd14d3b733e4bfa172534f87e92c47736ced5e0ec4",
       "language": "zh"
     },
     {
@@ -241,7 +241,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "061e6bb44b46275de262107ee1cb55b9214cdbaca8eda8d9bf6172a2c1146d42",
+      "sha256": "cefe6c51684317d0f4daf90f3033956b7e7ac806b53c415cedd25fb41ac3879a",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -249,14 +249,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "88a2a8e667f5cee95e5a413b5e8e705a3401f4604e2c98173ddfa1ec15595848",
+      "sha256": "fccbb247467cdef801dd95ae441690828da7b9159b7bd98a76b94fe8aeb85a6a",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3dcfeb9ab419a3359dc47e9d095948062f8ef27d6d0ccd122bfb1733f478890e"
+      "sha256": "15aba6db99b1ef307ac7fcbea7183b7d36701f7355335464672ee99dde749e68"
     },
     {
       "path": "sources.json",

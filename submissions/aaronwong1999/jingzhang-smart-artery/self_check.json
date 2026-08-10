@@ -91,6 +91,36 @@
       "severity": "info",
       "target": "submission",
       "message": "已声明资料边界、版权与官方/实施承诺禁用。"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission",
+      "message": "Deterministic validator (format-v2 standard/depth anchors, manifest, sha256) passed."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission",
+      "message": "Spatial review passed: site_boundary coverage, key areas, metrics recomputed."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission",
+      "message": "Visual packaging review passed: all 14 required markers and 3 core metrics present."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission",
+      "message": "Professional evidence review passed: compliance, standards, design depth matrices complete."
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true
 }
