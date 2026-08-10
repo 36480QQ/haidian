@@ -1,13 +1,13 @@
 # Copyright, Attribution, and Clearance Statement
 
-**Submission:** Jing-Zhang Open Pulse / 京张开源脉冲
+**Submission:** Jing-Zhang Autonomous Commons / 智行京张公共带
 **Author:** 许丙南 (`147228`)
-**Iteration:** v1.7
+**Iteration:** v3.5
 **Display licence:** `COMMUNITY-DISPLAY-ONLY`
 
 ## Scope of this statement
 
-This statement covers the formal package under `submissions/147228/jingzhang-open-pulse/`: Markdown narratives and translation, JSON metadata and analytical tables, GeoJSON geometry, generated figures, A3/A0 PDFs, offline HTML, and validation metadata. The path-level inventory is `visual/assets/copyright-ledger.json`; `manifest.json` records the package hashes. The ledger must be regenerated after any asset is edited.
+This statement covers the formal package under `submissions/147228/zhongzhiyuan-autonomy-commons/`: Markdown narratives and translation, JSON metadata and analytical tables, GeoJSON geometry, generated figures, A3/A0 PDFs, offline HTML, and validation metadata. The path-level inventory is `visual/assets/copyright-ledger.json`; `manifest.json` records the package hashes. The ledger must be regenerated after any asset is edited.
 
 ## Authorship and generation
 
@@ -27,7 +27,7 @@ The quantitative layer is an explicitly labelled design experiment. Official pub
 
 Before adding any image, map, logo, font, data extract, event content or code dependency, a contributor must record: the exact path, author or provider, source URL or permission record, licence, attribution text, allowed derivative use, retrieval date, intended display, and SHA-256 hash. The contributor must then update `sources.json`, `visual/assets/copyright-ledger.json`, `manifest.json`, and the relevant narrative or figure caption. Unclear material stays out of the public package.
 
-The ledger's `clearance_status` distinguishes self-generated material from official public data with attribution. `third_party_materials` is intentionally empty for the v1.7 package. This is submission evidence, not a legal opinion; rights-holder confirmation remains necessary if the future implementation team introduces new content.
+The ledger's `clearance_status` distinguishes self-generated material from official public data with attribution. `third_party_materials` is intentionally empty for the v3.5 package. This is submission evidence, not a legal opinion; rights-holder confirmation remains necessary if the future professional team introduces new content.
 
 ## Privacy, safety, and public-interest boundary
 

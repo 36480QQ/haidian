@@ -7,16 +7,16 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.5"
+iteration: "v3.7"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v3.5; v3.3 names the retained spatial-object and drawing-export layer. v3.5 carries forward v3.4's public-metadata neutralization and repairs the bilingual A0 board layout, auxiliary-figure version labels and provisional-boundary handoff disclosure; it changes no spatial objects, metrics, source classifications or implementation boundary.
+> **Package version note:** This package is iteration v3.6; v3.3 names the retained spatial-object and drawing-export layer. v3.6 carries forward v3.5's bilingual, copyright, provisional-boundary handoff and source-boundary work, and turns the existing synthetic S02 test window into an offline stop-and-restore rehearsal; it changes no spatial objects, metrics, source classifications or implementation boundary.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
+> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates register recomputation and audit interfaces. The current gates remain `design_target`; only an explicitly marked `PASS` from a local runner represents a completed package-level replay.
 
 ## One-page executive brief: civic loop and one-component/one-proof-mile
 
@@ -62,6 +62,21 @@ The full formal dossier follows with design basis, three scopes, key areas, ecos
 This proposal follows the official open-call announcement, the repository site package and the agent taskbook. The machine-readable evidence chain is registered in `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, and `visual/assets/evidence-ledger.json`. The most important source IDs are `[source:OFFICIAL-ANNOUNCEMENT]`, `[source:AGENT-TASKBOOK]`, `[source:SITE-PACKAGE]`, `[source:SOURCE-REGISTRY]`, `[source:PROCESSED-FACT-PACK]`, `[source:BOUNDARY-SOURCE]`, and `[source:KEY-AREA-SOURCE]`.
 
 The package uses the repository's maintained provisional geometry where official boundary polygons are not available. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` therefore remain `official_boundary=false` and `provisional_constraint`. They are suitable for design discussion, visualisation and self-checking, but not for a statutory red line, approval, precise land-area claim or government commitment. When official polygons arrive, all land use, roads, buildings, green space, public space, phasing and metrics must be recalculated.
+
+### 1. Evidence hierarchy and decision boundary
+
+The package first asks what each source can support, then asks what spatial move is defensible. “Registered” means that a record can be traced; it does not mean that the record supports a formal spatial, engineering or implementation conclusion. Reviewers should read the allowed and disabled scope together.
+
+| Evidence level | Package examples | Can support | Cannot support |
+| --- | --- | --- | --- |
+| Task and professional standards (formal) | Official announcement, cleared taskbook, planning and regulatory-plan standard snapshots | Task requirements, deliverable depth, professional principles and review questions | Official polygons, ownership, engineering conditions, approval or government commitment |
+| Cleared source registration | `sources.json`, `data/source_registry.json`, public cases and registered standards | Source use, mechanism comparison, provenance responsibility and disabled scope | Upgrading case performance, background statistics or registration records into Haidian implementation facts |
+| Provisional spatial basis | `site_boundary.geojson`, `key_areas.geojson`, `constraints.geojson` | Concept generation, topology checks, relative relationships and a trigger for whole-package recomputation | Statutory red lines, parcel ownership, precise area, road red lines or regulatory controls |
+| Package-derived design data | GeoJSON, `metrics.json`, scenario/phasing/accountability matrices | Recomputable concept structure, counts, node actions, phasing dependencies and audit interfaces | Existing-condition survey, facility capacity, field performance, public acceptance or construction permission |
+| Administrative statistics and open background | Statistical bulletins, transport material, OSM/Overpass background screening | Question calibration, corridor-level data-collection priorities and explicit uncertainty | Corridor footfall, station OD, demand/capacity, formal boundary, siting or performance targets |
+| Synthetic scenarios and paper/methods | S02 synthetic tabletop replay, MCDA/robustness methods and mechanism cases | Test protocols, assumptions, negative fixtures, human takeover and follow-up validation design | Field results, engineering safety, procurement basis, predictive guarantee or official score |
+
+The review rule is: a formal conclusion must return to the corresponding formal source; `provisional`, `background_only`, `design_target` and `not_run` remain in those states. A package runner `PASS` proves only that a structural contract can be replayed; it does not become field evidence, professional sign-off, government approval or a competition score.
 
 ### Provisional boundary cross-check: preserve the discrepancy as a risk, not a red line
 
@@ -149,6 +164,20 @@ Dazhongsi is an urban, internationally legible AI service and enterprise distric
 
 Each key-area polygon is provisional and each node proposal is a concept for professional refinement. The node-level decision record is mapped to `[data:geometry/key_areas.geojson#PROV-KEY-001]`, `#PROV-KEY-002`, and `#PROV-KEY-003`.
 
+### Public Interfaces and Reversible Relationships for the Three Key Areas
+
+The three key areas already have functions and spatial actions, but ordinary routes, staffed services, and equipment back-of-house still need a professional comparison entry. The ledger below gives public-interface and reversible-service relationships only; it does not change the geometry or turn provisional areas into regulatory controls.
+
+| Key area | Public ground-floor choice | Reversible service relationship | First professional evidence to collect |
+| --- | --- | --- | --- |
+| Zhongzhiyuan AI Autonomous Innovation Acceleration Zone | Layer Qinghe public space, R&D display, cycle shelter and enclosed testing; do not expose models or personal data at the public edge | Public observer seat and staffed front desk stay adjacent; equipment, maintenance, and testing back-of-house can close without cutting the walking spine | Existing buildings, ownership, flood/blue-line, fire, energy and enterprise OD |
+| Beijing AI Origin Community | Stitch campus, enterprise and neighbourhood walking; put open publishing, talent service and human entry at an accessible ground floor | Paper, phone, and staffed entries face the ordinary route; test components remain removable and pausable, and resident service is not account-dependent | Accessibility walk, resident/student service baseline, ownership, care and night safety |
+| Dazhongsi AI Industry Cluster | Separate station, four-quadrant walking, international presentation and retail/service edges; keep data display away from quiet residential frontage | Rail arrival, quiet route, and service front desk are separated; events and data display can withdraw without occupying daily resident movement | Station flow, road/curb counts, fire, municipal, ownership and event-day organisation |
+
+These relationships only identify which public and reversible conditions to compare first. They do not answer where construction is permitted, who holds the space, or what final control parameters should be. A formal scheme must be determined by a professional team after regulatory-plan, survey, ownership, fire, structural, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
+
+Until then, renewal prioritises wayfinding, staffed service, cycle shelter, weather seats, accessible ramps and movable equipment; no road redline, building increment or demolition conclusion follows [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The city is designed for more than one “AI user”. Personas include a university researcher, an SME founder, a community service worker, an older resident or carer, a visitor, a night-shift worker, an accessibility reviewer and a maintenance crew. Every persona has a non-digital fallback, a place to rest, a right to opt out and a visible complaint path.
@@ -160,6 +189,8 @@ The package contains 14 scenario cards in `visual/assets/scenario-operation-matr
 The matrix is a design-control instrument, not a promise of service levels. Every row states: spatial carrier, trigger, minimum data, RACI, response/recovery SLA, relative cost band, data retention, non-AI equivalent, stop condition, success metric and phase. The universal gates are: no digital precondition; human review cannot be removed; an accessible route remains continuous; a public status and complaint path exists; and stop/rollback has been tested.
 
 To make a scenario card reproducible rather than merely readable, this package adds the independently designed `visual/assets/open-pulse-test-window-record.schema.json` and `visual/assets/example-s02-embodied-test-window.json`. The latter is a fully synthetic S02 low-speed-delivery sandbox test-window record: it puts the provisional road reference, no-app human alternative, minimum fields, visible stop and human spotter, public complaint route, maintenance responsibility and exit-asset plan in one record. Its result status remains `not_run`; the record is not robot performance or field acceptance. Any real pilot must create a new record and pass accessibility, safety, maintenance and public-review gates.
+
+To keep that record from remaining merely readable, this iteration adds `visual/assets/open-pulse-tabletop-contract.json`, `open-pulse-tabletop-evidence.json` and a dependency-free runner. `node visual/assets/run-open-pulse-tabletop.js --check` reads only the bundled synthetic S02 record and four branch fixtures: an unprofessionally verified provisional route, a pedestrian conflict or narrowing, a missing spotter or emergency stop, and a review close with no field result. It replays six checks and five rollback steps, preserving paper/staffed/hand-cart ordinary service, clearing the accessible route, publishing hold/withdrawal and deleting only temporary fixture state. To keep the runner from checking only aggregate strings, each of the six acceptance checks now binds to `fixture_ids`, `scenario_ids` or `boundary_fields`; each rollback step also has a unique `RB` ID with fixture and acceptance-check references. The runner requires 4/4 fixtures, 1/1 scenario, 5/5 boundary fields, 5/5 rollback steps and six unique check IDs to resolve. It also sends each fixture state through a deterministic negative replay, yielding `decision_class=reject_or_stop` for hold, stop, withdrawal, or temporary-state deletion, and adds an ordinary-route control replay to confirm that a non-trigger input remains `continue_ordinary_route` rather than being rejected. The evidence is `4/4`, `6/6`, `5/5`, `5/5`, negative replay `4/4`, and control replay `continue`, while `result_status=not_run`, `performance_results=null` and `operational_status=not_authorized_not_run` remain explicit. PASS proves only that stop, withdrawal, restoration and non-trigger discrimination are inspectable; it does not prove robot performance, accessibility, public acceptance, staffing, safety or permission [data:visual/assets/open-pulse-tabletop-contract.json] [data:visual/assets/open-pulse-tabletop-evidence.json] [data:visual/assets/run-open-pulse-tabletop.js].
 
 To address the structural-provenance and licence boundary exposed by #706, this version removes the peer-derived Relay Receipt files and replaces them with an independently designed Open Pulse bounded test-window record. The new record is organized around `window`, `place_window`, `public_interface`, `human_control`, `data_contract`, `observation`, `release_decision` and `restoration`; it does not reuse the #426 schema skeleton. It remains a concept-only review interface, not deployment permission or field evidence.
 
@@ -187,7 +218,7 @@ Land-use classification follows the published classification standard [standard:
 
 The principal land-use and building evidence is carried by [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001] and [metric:building_footprint_area_sqm].
 
-Building-scale and intensity indicators must remain consistent with `metrics.json` and the geometry layers. Total floor area, FAR, building height, building-density, green-ratio, setbacks and building-control lines are marked `unknown` or `pending_control` because official conditions are missing; no fixed number is used to manufacture precision. The submitted A3 booklet contains the renewal-project list and indicator review table, the A0 boards foreground the key spatial structure and areas, and the offline HTML provides the linked indicator and layer audit entry.
+Development-control indicators must remain consistent with `metrics.json` and the geometry layers. Total floor area, density, setbacks and building-control lines are marked `unknown` or `pending_control` because official conditions are missing; no fixed number is used to manufacture precision. The submitted A3 booklet contains the renewal-project list and indicator review table, the A0 boards foreground the key spatial structure and areas, and the offline HTML provides the linked indicator and layer audit entry.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -262,11 +293,13 @@ Triggers convert future change into an executable fallback: heat warning reduces
 
 ### Stricter Monte Carlo robustness check
 
-To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment samples five design prototypes under five stakeholder-weight profiles, eight stress states and score noise. It uses 50,000 deterministic Monte Carlo draws with random seed `147228`. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
+To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment declares 50,000 deterministic Monte Carlo draws with random seed `147228` across five stakeholder-weight profiles, eight stress states and score noise. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
 
 The S4 balanced-adaptation option has an approximately 78.862% win rate, mean regret of 0.314 points, a robust mean score of 72.518 and a P05 score of 70.252. These are comparative design results, not field performance. [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_win_rate]
 
 The minimum item across the eight stresses and the gate state are recorded in [metric:resilience_v13_selected_mean_regret], [metric:resilience_v13_selected_min_stress_score] and [metric:resilience_v13_hard_gates_passed]. They still require calibration against site data.
+
+These MCDA values are declared comparative results, not metrics independently replayed inside this package. The package does not ship per-draw inputs, five stakeholder weights, eight stress increments, response functions or a runner, so the draw count and derived outputs remain pending replay until those inputs and the runner are packaged; they can be promoted to known metrics only after GATE-04 reproduces them from registered inputs.
 
 The next optimisation direction is therefore explicit: add passive shade and maintainable stormwater storage; reduce dependence on high sensor counts; improve offline operation and human takeover; decouple event capacity from quiet space; and establish asset redundancy and replacement-part standards. The Beijing public meteorological catalogue is a route for later climate calibration, but the Haidian download currently requires a platform user key, so unacquired temperature, rainfall, wind-speed and humidity values are not presented as facts. [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [assumption:A-METEOROLOGICAL-DATA-001]
 
@@ -343,6 +376,8 @@ The current quantitative decision experiment compares baseline, adaptive, regene
 
 The preferred indicators are district income per capita, district GDP per capita and district health institutions per 10,000 people, with green coverage, physicians, wastewater treatment and water intensity as guardrails. Every number must be read with its source, year, unit, scope and limitation in `visual/assets/evidence-ledger.json`, `visual/assets/model-backtest.json`, `visual/assets/indicator-selection.json` and `metrics.json`.
 
+Nine structured numbers visible on the pages are separately registered in `visual/assets/claim-provenance.json`. Each record gives the raw-value path in `metrics.json`, source files, corresponding figures and bilingual metric markers, while `run-open-pulse-claim-provenance.js` rechecks those relationships one by one. OSM screening, provisional geometry and candidate options retain their declared status as background records, conceptual structure or design experiment. This table improves the reading path without changing evidence levels. [data:visual/assets/claim-provenance.json]
+
 Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, object counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage, constraint interfaces and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
 
 ## Risk, Copyright, and Compliance
@@ -407,6 +442,8 @@ The implementation handoff is deliberately inspectable: `operations-matrix.json`
 ### 2. Fourteen scenario–space–operations matrix
 
 Each scenario row carries a spatial carrier, trigger, minimum data, RACI, recovery rule, non-AI equivalent and exit condition.
+
+This revision adds `visual/assets/run-open-pulse-scenario-audit.js` and its persisted result `open-pulse-scenario-audit.json`. The runner reads only the bundled 14 scenarios and eight operation packages, then deterministically checks the spatial carrier, trigger, minimum data, RACI, ordinary fallback, stop/success conditions, acceptance, maintenance and provisional boundary. Three deliberately malformed fixtures—missing accountable role, missing ordinary fallback/stop rule, and missing operation stop rule—must be rejected. `node visual/assets/run-open-pulse-scenario-audit.js --check` proves only that the structural contract is reproducible; it does not prove field access, operator SLA, model safety, engineering approval or a public pilot.
 
 ### 3.1 Node-level concepts and public-interest audit
 

@@ -1,41 +1,77 @@
 # 方案迭代记录
 
-## v1.7 - 2026-08-08
+## v3.5 - 2026-08-10
 
-reviewable deliverables and bilingual review surface.
+- Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.
+- Kept the new register concept-only and functional-bands-only: dimensions, capacity, speed, right-of-way, permits, operators and performance remain null or unknown; no road section, redline, or field result was added.
+- Regenerated both bilingual reports and manifest/copyright hashes after the scoped visual and narrative addition.
 
-## v1.8 - 2026-08-08
+## v3.4 - 2026-08-10
 
-- Put the taskbook's three positions, five functions and three-area/two-wing mapping directly into `proposal.md`.
-- Added reviewer-visible tables for North Latitude Community/regional interfaces, node-level plans, 14 scenario gates, public-interest audit and transferable mechanism comparison.
-- Added explicit `language: zh` metadata for the primary proposal, report and visual index to remove deterministic intake warnings.
+- 将三座试验庭的体量表改为公共界面与可逆服务关系，删除未有本地控规、权属、测绘或工程资料支持的 FAR、层数和高度范围；开发控制与工程尺度继续保持待专业团队确定。
+- 同步中英文 proposal 与离线 HTML，保留自动驾驶路缘、人工接管、无障碍连续、可回退和 provisional geometry 边界；不新增道路、许可、运营或性能主张。
 
-- Added complete English review copy `proposal.en.md` and offline `report/proposal.en.html`.
-- Added taskbook crosswalk for agent.1–agent.6 with acceptance tests.
-- Added regional eight-mechanism ecosystem loop and conceptual partner-boundary note.
-- Added 14-row scenario–space–operation matrix with RACI, SLA, relative cost band, retention, non-AI equivalent and stop conditions.
-- Added identity system and eight-component public-space / embodied-intelligence library.
-- Added identity, regional-ecosystem and token-lifecycle figures.
-- Replaced the short copyright note with a path-level clearance protocol and ledger.
-- Added offline English visual index links and bilingual manifest metadata.
-- Preserved provisional geometry warnings, official-source attribution, quantitative-model caveats and human fallback requirements.
-- Rebuilt all five required evidence boards from the submitted GeoJSON and metrics; removed stale v1.1–v1.3 footers and unsupported percentage claims.
-- Added the explicit `building_footprint_ratio` metric and clarified that 2.72% is a provisional geometry ratio, not a statutory control.
-- Re-rendered the Chinese and English offline reports with semantic tables retained for reviewer readability; no remote runtime dependency was added.
+## v3.3 - 2026-08-10
 
-## v1.8.1 - 2026-08-08
+- 在中英文“路缘先于车道”入口增加典型路缘断面，把连续人行/无障碍带、路缘服务带、换乘求助节点和维护/应急回退带翻译成可见空间动作；不补写工程尺寸、道路红线、车辆速度或许可。
+- 为六张核心图件增加图注式设计主张，说明它们分别回答公共轴、重点区界面、回退系统、阶段门、准备度和用地分层问题；图件仍不代表现状测量或部署结果。
+- 保留 `unknown`、`design_target`、`not_authorized_not_run` 和 provisional 几何边界。
 
-- Classified “藏风聚气 / 风水” strictly as cultural landscape narrative, not a health, air-quality, hydrological or engineering causal claim.
-- Translated that narrative into six auditable but currently `unknown` baselines for pedestrian wind comfort, pollutant stagnation, mean radiant temperature, continuous shade, blue-green accessible-route overlap and water-risk exceedance routing.
-- Added three peer-reviewed method references with DOI and explicit non-transfer limits; no published case result is represented as Jing-Zhang CFD, measurement or health evidence.
+## v3.2 - 2026-08-10
 
-## v1.9 / v2.0 evidence consolidation - 2026-08-08
+- 在中英文重点区域入口补充三座试验庭的概念 FAR、公共界面层数、自动化服务与人本路径的空间分层，以及首要专业证据。
+- 明确这些体量范围只用于城市设计比较，不改变 `autonomy_nodes.json`、几何、指标、场景、许可和部署边界。
+- 保留可撤回设施、人工接管、provisional 几何和未知现场基线；不新增道路、建筑、拆改或社会道路运营主张。
 
-- Added six officially sourced public AI ecosystem cases and a policy–enterprise crosswalk that binds each mechanism to a local scenario, acceptance evidence and a do-not-copy boundary.
-- Added `visual/assets/wind-health-validation-plan.json`, a six-gate evidence contract that keeps wind comfort, pollutant stagnation, heat, shade, blue-green access and water risk `unknown` until geometry, field, calibration and professional-review evidence is complete.
-- Registered three official data-route records for the Haidian climate-normals catalogue, the district meteorological network and Qinghe Station wind monitoring; they are acquisition/context routes only and do not replace local measurements.
-- Added a bilingual, scalable Open Pulse identity-mark concept with explicit trademark, font and accessibility clearance boundaries.
-- Added English counterparts for all review figures and A3/A0 boards, while keeping the Chinese and English surfaces equivalent and offline.
+## v3.1 - 2026-08-10
+
+- Aligned the Chinese AV-T03 rollback-gate status with `visual/assets/curbside-test-gates.json`: `baseline: unknown` now renders as `UNKNOWN`, rather than visually upgrading an unmeasured weather/network outcome to a design target.
+- Refreshed matching manifest and copyright-ledger hashes for the changed visual index, figures and changelog; no gate register value, performance result, permit, deployment or official-score claim changed.
+
+## v3.0 - 2026-08-10
+
+- Corrected the bilingual autonomy-readiness data plate and its visual-index captions from four candidate nodes to three, matching `visual/assets/autonomy_nodes.json` (`AUTO-NODE-001` through `AUTO-NODE-003`).
+- Revalidated the 2400 × 1700 figures after a surgical presentation edit; the register, scenario count, gate count and metric status are unchanged.
+- This is a figure-integrity correction only; it adds no road, permit, deployment, performance or official-score claim.
+
+## v2.9 - 2026-08-09
+
+- Added bilingual acceptance-trace quick maps so reviewers can follow each check to its gate, fixture, scenario or boundary field without searching the contract; the maps are reading aids only and the runner remains the source of structural validation.
+- Added a bilingual first-screen executive brief with a five-step ordinary-person acceptance chain: choose, request, take over, rollback and independently replay/exit.
+- Bound each step to visible space/service, retained evidence and a fail-closed action; preserved the existing synthetic-only boundary and did not add field, permit, deployment or performance claims.
+- Regenerated both offline reports after the narrative addition; no geometry, public gallery artifact or official score was changed.
+
+## v2.8 - 2026-08-09
+
+- Clarified the bilingual first-screen acceptance brief as target design only: planned service interfaces and stop controls are not deployed, authorized or independently verified. No geometry, metric, permit, deployment or performance claim changed.
+
+- Added structural trace checks to the curbside tabletop runner: acceptance checks now bind to concrete fixtures, gates and scenario-matrix rows, while artifact identifiers, counts, boundary fields and rollback declarations reconcile before a local PASS is emitted. This remains an offline synthetic consistency check; it adds no field, permit, performance or deployment claim.
+- Added four deterministic synthetic negative replays, one per stop-if fixture; the runner now records and verifies `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
+
+- Added a bilingual, offline synthetic curbside tabletop bound to AV-T01—T03 and S01—S03, with four fixtures, seven acceptance checks, five rollback steps and an executable network-free runner.
+- Kept the evidence boundary explicit: `not_authorized_not_run`, no field data, `performance_results: null`, and unknown baselines; the tabletop proves control wiring only and does not claim a permit, deployment, safety assessment or performance result.
+- Regenerated the bilingual reports and manifest after adding the contract, receipt and runner; no geometry, official score or public-gallery artifact was changed.
+
+## v2.7 - 2026-08-09
+
+- Removed the stale duplicated Chinese proposal tail left after the v2 readable surface and reduced both bilingual reference sections to a pointer to `sources.json` with claim-adjacent anchors only.
+- Regenerated both offline reports after the cleanup; no geometry, metric status, permit, deployment or ranking claim changed.
+
+## v2.6 - 2026-08-09
+
+- Aligned `manifest.validation_claim.self_checked` with the package's recorded passing deterministic, spatial, visual, and professional self-checks; this is a local package claim, not an official Review Agent score or deployment approval.
+
+## v2.5 - 2026-08-09
+
+- Reworked the Chinese and English review surfaces into proposal-format v2: claim-adjacent evidence anchors remain readable while the complete source, standard, depth and metric indexes stay in the structured package files.
+- Removed dense inline evidence dumps from the narrative and regenerated both offline reports; no source registration, geometry, metric status, permit claim or deployment claim changed.
+
+## v1.7–v2.0 — 2026-08-08 · evidence and package baseline
+
+- Consolidated the formal package's bilingual review surface, official-source attribution, provisional geometry warnings and quantitative-model caveats.
+- Added climate and public-interest validation protocols as reusable method contracts; they keep local wind, heat, water, ecology and health baselines `unknown` until lawful data, field measurement, calibration and professional review exist.
+- Added the regional ecosystem crosswalk, 14 supporting cross-domain rows and a self-generated identity direction. These are package-level research aids, not Open Pulse branding, operating commitments or local performance results.
+- Added English review copies and offline figures while preserving one-to-one Chinese/English claim boundaries.
 
 ## v2.1 - 2026-08-08
 
