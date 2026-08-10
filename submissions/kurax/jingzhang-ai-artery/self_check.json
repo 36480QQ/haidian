@@ -1,0 +1,83 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/site_boundary.geojson",
+   "detail_zh": "站点边界沿用登记的 PROV-SITE-001，geometry_role=provisional_constraint、official_boundary=false、boundary_precision=provisional_rough 三项属性完整保留；限制在 proposal.md 首章、assumptions.json（A-BOUNDARY-001）、sources.json 与 visual/index.html 一致声明。"
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/key_areas.geojson",
+   "detail_zh": "三处重点区沿用 PROV-KEY-001/002/003 并保留 provisional 标注；复算合计 369.2 公顷与公告 368.4 公顷偏差 0.2%，已在正文与指标说明中披露。"
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/land_use.geojson",
+   "detail_zh": "36 个用地要素覆盖站点全边界，相邻地块共享边界坐标；覆盖缺口 45.3 平方米（0.0004%，坐标舍入量级），重叠对数 0，无未标注空白。"
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "info",
+   "target": "visual/index.html",
+   "detail_zh": "电子展示页为离线静态 HTML，无 CDN、远程瓦片、外部脚本、外部字体、iframe、表单提交、API 调用与追踪代码；指标以 data-metric/data-value 标记与 metrics.json 对应。"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "detail_zh": "13 个实质章节均含直接相关证据引用（共 149 条），无连续超 3 条、无单段超 8 条；五张必需图片以本地 Markdown 引用嵌入；六项智能体任务在正文实际展开而非仅矩阵打勾。"
+  },
+  {
+   "check_id": "BILINGUAL_PAIRING",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.en.md",
+   "detail_zh": "中文主稿声明 translation_file=proposal.en.md，英文稿声明 translation_of=proposal.md；两稿章节各 14 节一一对应、五张图片顺序一致、引用标记 149 条零差异；bilingual_contract_version=1 与 proposal_format_version=2 两稿齐备。"
+  },
+  {
+   "check_id": "METRICS_RECOMPUTED",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "detail_zh": "全部已知指标由 geometry/*.geojson 在 EPSG:4548 下复算，逐项记录 status、value、unit、source_files、formula、confidence 与 assumptions；容积率、总建筑规模、建筑高度三项因缺控规条件标记为 unknown 并写入重算触发条件。"
+  },
+  {
+   "check_id": "OFFICIAL_CLAIM_BOUNDARY",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "detail_zh": "不含官方批准、法定规划、审定指标或实施承诺表述；不给容积率、建筑高度、地块拆改留、道路线形、轨道线位、桥隧工程、市政管线、地下空间可行性、土地权属、投资测算与审批结论；空间建议统一表述为概念建议与参考方案。"
+  },
+  {
+   "check_id": "SOURCE_TIER_DISCIPLINE",
+   "result": "pass",
+   "severity": "major",
+   "target": "sources.json",
+   "detail_zh": "11 条来源逐条记录 usable_for_formal 与本次使用说明；provisional_only 的临时边界与 background_only 的适老化方案均按其等级使用，未升级为官方边界、法定管控或实施承诺。"
+  },
+  {
+   "check_id": "PRIVACY_HUMAN_REVIEW",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "detail_zh": "12 张场景卡逐张写明运行数据、隐私边界、人工复核与风险；四条统一硬边界确立不采集身份与生物特征、按场景隔离数据、人工复核结论优先、保留非智能替代路径；无隐私侵害或无法人工复核的场景。"
+  },
+  {
+   "check_id": "PACKAGE_SUMMARY",
+   "result": "pass",
+   "severity": "info",
+   "target": "manifest.json",
+   "message": "Ten self-checks passed. Known limitation: the overall design area and the three key areas use a provisional_constraint boundary, so areas and ratios are provisional recalculations; floor area ratio, total floor area and building height are marked pending official data for want of official regulatory conditions. Organizer data gaps do not block content scoring.",
+   "detail_zh": "10 项自检全部通过。已知限制：总体设计范围与三处重点区使用 provisional_constraint 临时边界，面积与比例为临时复算值；容积率、总建筑规模与建筑高度因缺官方控规条件标记为待正式数据补齐。按公告与任务书约定，组织方数据缺口不阻断内容评分。"
+  }
+ ]
+}
