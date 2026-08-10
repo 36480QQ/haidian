@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b35f18ee14d7bccea62b6fac19c190610d248b366525e63b0ab5c774ca76e8a7"
+      "sha256": "b2c739bd14f938cf662998d430af837c3277e14be1e834b393e251cf299eed6e"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9132e8ce6d10da5a25875152db79c72a6e6db6fd5907370ad64f14ce67adb920"
+      "sha256": "1cee142ade966978234c57463536cec89067b74a5828198e0abdb937d7050638"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "be37f3a375157765614ff3b47c43fad4b10aa2bd6e54c866093b4079e1857a8c"
+      "sha256": "50e4b926f62266475b0b612a8b1b9ce5d1f98869ee4b7c0f386b1bbce83bb191"
     },
     {
       "path": "report/copyright_statement.md",
@@ -246,7 +246,7 @@
     {
       "path": "report/narrative.md",
       "role": "asset",
-      "sha256": "d842fe97718f00cd88405427ae53bdd99d04685e32de21cc91292477ddeef60c"
+      "sha256": "8f583265340624e9b0d1d607849be68d341c6d6b87ebbf61b80b2b324fb9542b"
     },
     {
       "path": "report/proposal.en.html",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a48cb4ef84f385a202f1406b58599011cd905e818827f91ec367d7a0b5130d2a"
+      "sha256": "706e24b86c9176f68d1339cedf3246d8fbab9f66dcc1e97daededeb00d647944"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a401872e9bf591b443ce2a4fbac17ed593924f283d7694c24aa6d11fc269c5dd"
+      "sha256": "626acec4daa8de8f5dd589306a6119ba4f87cecead895714f84f0ebdfc4b1868"
     },
     {
       "path": "self_check.json",
@@ -322,7 +322,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5820060e2466ce2fc3e0933c04e7e6c0a1ba719733b70586bfd20fe154233da4"
+      "sha256": "885a50589d6545451f62136e559dfeb93ad41ab39fab79a1f746fc3302b7769e"
     },
     {
       "path": "visual/index.html",
@@ -414,6 +414,30 @@
       "role": "verification_script",
       "required": false,
       "sha256": "47f6d2bf997d3376c2789d4278b24ec652fafdbab380770b1ea89d8afd6df667"
+    },
+    {
+      "path": "visual/assets/mobility-pilot-readiness.json",
+      "role": "data",
+      "required": true,
+      "sha256": "74d057a0abd2ccff23165db789e7cf444407499f4253e34d5aea5e364fbd9a10"
+    },
+    {
+      "path": "visual/assets/mobility-pilot-readiness-evidence.json",
+      "role": "data",
+      "required": true,
+      "sha256": "c244bed9c046a1a25bd5014774062759edb126472383d38581942fddc6173290"
+    },
+    {
+      "path": "visual/assets/run-mobility-pilot-readiness.js",
+      "role": "verification_script",
+      "required": false,
+      "sha256": "0fc6b6d84380679b92e5bd0843ebea15222611f84a26efd73d1b265d977c9220"
+    },
+    {
+      "path": "visual/assets/m09-curb-spatial-prototype.json",
+      "role": "data",
+      "required": true,
+      "sha256": "707a80ff63190b6dc03160131b8dcbf14c9ad9bc5ccdf5cb45656f06ad565d2e"
     },
     {
       "path": "assets/figures/simulation-pareto.png",
@@ -773,7 +797,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "b90e00032879f86ab15ed22daafbadd28ea50b3617de296fcaba88b573e67d99"
+      "sha256": "f500f4d4001d91eea11e6b58c357ec05162cdd3edfdb25e3224d2cc3bdc09dbc"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",

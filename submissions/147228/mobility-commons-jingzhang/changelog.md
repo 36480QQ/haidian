@@ -1,7 +1,16 @@
 # 方案迭代记录
 
+## v2.33 - 2026-08-10
+
+- 新增 `m09-curb-spatial-prototype.json` 与中英文节点级路缘功能带表，把 M-09 从 readiness 字段接回人行连续、人工交接、可关闭服务窗口和应急退避。
+- 删除三处重点区中未被现场资料支持的 FAR、层数和高度范围，改为公共界面与可逆服务关系；正式强度、体量、容量和上部高度继续待专业资料。
+- 保留 provisional geometry、unknown、not_authorized_not_run、人工/公共交通回退和不构成实施/许可的边界。
+
 ## v2.32 - 2026-08-10
 
+- 将 M-09 四条合成请求各自补成 pilot-readiness card，逐项登记 baseline、观察对象/样本/时间窗、成功与停止条件、责任和独立停机复核、人工等价服务、保留/删除边界、复核周期与申诉入口。
+- 新增 `mobility-pilot-readiness.json`、固定回读证据和负样本 runner；故意删除 owner、填入观察值或删除凭证的样本均被拒绝。
+- 维持 `unknown`、`not_available_before_authorization` 与 `not_authorized_not_run`，不把 readiness PASS、桌面演练 PASS 或论文方法写成现场基线、P1 资格或运营结果。
 - 收敛 v2.31 的可见表达：用两句验收入口说明替代重复的四行 M-09 摘要表，保留 fixture 回读、冻结/回退/缺口/P1-P2 判据和 `performance_results=null` 边界。
 - 将三处公告约面积从体量表列收敛为一条任务尺度说明，保留 provisional、未知现状和不构成控规指标的边界；恢复简洁的空间体量表，减少审计腔和重复内容。
 - 本轮针对合并 head 63/100 的可读性回归修复，不声称官方提分、实施授权或公共 gallery 发布。
