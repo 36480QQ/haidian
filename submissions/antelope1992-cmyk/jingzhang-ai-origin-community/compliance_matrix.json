@@ -52,7 +52,42 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/scene-space-operation-matrix.png"
+        ],
+        "element_ids": [
+          "ORIGIN-LAB",
+          "ORIGIN-COURT",
+          "ORIGIN-RAIL"
+        ],
+        "metric_refs": [
+          "site_area_sqm"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "case_sources_being_logged"
+      }
     },
     {
       "requirement_id": "1.3.2",
@@ -105,7 +140,42 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "LU-001",
+          "PROV-SITE-001"
+        ],
+        "metric_refs": [
+          "green_ratio",
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_awaiting_official_controls"
+      }
     },
     {
       "requirement_id": "1.3.3",
@@ -158,7 +228,41 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌"
+        ],
+        "figure_ids": [
+          "assets/figures/mobility-bluegreen.png"
+        ],
+        "element_ids": [
+          "GREEN-001",
+          "PROV-SITE-001"
+        ],
+        "metric_refs": [
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "component_library_concept_only"
+      }
     },
     {
       "requirement_id": "1.4.1",
@@ -211,7 +315,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "三层范围工作框架"
+        ],
+        "figure_ids": [
+          "assets/figures/site-overview.png"
+        ],
+        "element_ids": [
+          "PROV-SITE-001"
+        ],
+        "metric_refs": [
+          "site_area_sqm"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "complete"
+      }
     },
     {
       "requirement_id": "1.4.2",
@@ -264,7 +401,42 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "PROV-SITE-001",
+          "LU-001"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "green_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "1.4.3",
@@ -317,7 +489,42 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "1.5.1.1",
@@ -370,7 +577,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/origin-brand-logo.png"
+        ],
+        "element_ids": [
+          "ORIGIN-LAB",
+          "ORIGIN-COURT",
+          "ORIGIN-RAIL"
+        ],
+        "metric_refs": [],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "case_sources_being_logged"
+      }
     },
     {
       "requirement_id": "1.5.1.2",
@@ -423,7 +663,45 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "三层范围工作框架",
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "PROV-SITE-001",
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "draft_two_wings_pending"
+      }
     },
     {
       "requirement_id": "1.5.2.1",
@@ -476,7 +754,41 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "LU-001"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "green_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_awaiting_official_controls"
+      }
     },
     {
       "requirement_id": "1.5.2.2",
@@ -529,7 +841,47 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计",
+          "更新项目清单、实施政策与分期计划"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "UP-01",
+          "UP-02",
+          "UP-03",
+          "UP-04",
+          "UP-05",
+          "UP-06",
+          "PHASE-001"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "phasing_priority_basis_pending"
+      }
     },
     {
       "requirement_id": "1.5.2.3",
@@ -582,7 +934,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "交通、轨道、市政与公共服务设施"
+        ],
+        "figure_ids": [
+          "assets/figures/mobility-bluegreen.png"
+        ],
+        "element_ids": [
+          "ROAD-001"
+        ],
+        "metric_refs": [
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "traffic_data_provisional"
+      }
     },
     {
       "requirement_id": "1.5.2.4",
@@ -635,7 +1020,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌"
+        ],
+        "figure_ids": [
+          "assets/figures/mobility-bluegreen.png"
+        ],
+        "element_ids": [
+          "GREEN-001"
+        ],
+        "metric_refs": [
+          "green_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_awaiting_official_controls"
+      }
     },
     {
       "requirement_id": "1.5.2.5",
@@ -688,7 +1106,41 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌"
+        ],
+        "figure_ids": [
+          "assets/figures/origin-brand-logo.png",
+          "assets/figures/site-overview.png"
+        ],
+        "element_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "metric_refs": [],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "heritage_resource_inventory_pending"
+      }
     },
     {
       "requirement_id": "1.5.3.required",
@@ -741,7 +1193,42 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "1.5.3.1",
@@ -794,7 +1281,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "PROV-KEY-001"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "1.5.3.2",
@@ -847,7 +1367,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "PROV-KEY-002"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "1.5.3.3",
@@ -900,7 +1453,40 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "provisional_polygon"
+      }
     },
     {
       "requirement_id": "agent.1",
@@ -953,7 +1539,46 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "三层范围工作框架",
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/site-overview.png",
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "PROV-SITE-001",
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "draft_two_wings_pending"
+      }
     },
     {
       "requirement_id": "agent.2",
@@ -1006,7 +1631,43 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/origin-brand-logo.png",
+          "assets/figures/scene-space-operation-matrix.png"
+        ],
+        "element_ids": [
+          "ORIGIN-LAB",
+          "ORIGIN-COURT",
+          "ORIGIN-RAIL"
+        ],
+        "metric_refs": [
+          "site_area_sqm"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "case_sources_being_logged"
+      }
     },
     {
       "requirement_id": "agent.3",
@@ -1059,7 +1720,57 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "AI 创新生态、人才画像与 AI+ 场景",
+          "交通、轨道、市政与公共服务设施"
+        ],
+        "figure_ids": [
+          "assets/figures/scene-space-operation-matrix.png",
+          "assets/figures/mobility-bluegreen.png"
+        ],
+        "element_ids": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S12",
+          "T1",
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "metric_refs": [
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "scenario_baseline_metrics_pending"
+      }
     },
     {
       "requirement_id": "agent.4",
@@ -1112,7 +1823,53 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌",
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png",
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "L1",
+          "L2",
+          "L3",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "PROV-KEY-002"
+        ],
+        "metric_refs": [
+          "public_space_ratio",
+          "green_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "component_library_concept_only"
+      }
     },
     {
       "requirement_id": "agent.5",
@@ -1165,7 +1922,43 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌",
+          "统筹研究范围产业与未来城市研究"
+        ],
+        "figure_ids": [
+          "assets/figures/origin-brand-logo.png",
+          "assets/figures/site-overview.png"
+        ],
+        "element_ids": [
+          "ORIGIN-LAB",
+          "ORIGIN-COURT",
+          "ORIGIN-RAIL",
+          "L2"
+        ],
+        "metric_refs": [],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "heritage_resource_inventory_pending"
+      }
     },
     {
       "requirement_id": "agent.6",
@@ -1218,7 +2011,47 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
-      ]
+      ],
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "更新项目清单、实施政策与分期计划",
+          "重点区域详细设计"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "UP-01",
+          "UP-02",
+          "UP-03",
+          "UP-04",
+          "UP-05",
+          "UP-06",
+          "PHASE-001"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "phasing_priority_basis_pending"
+      }
     }
   ]
 }

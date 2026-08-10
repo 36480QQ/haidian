@@ -51,7 +51,48 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "设计依据与资料清单",
+          "指标体系、面积复算与合规矩阵"
+        ],
+        "figure_ids": [
+          "assets/figures/site-overview.png",
+          "assets/figures/metrics-evidence.png"
+        ],
+        "element_ids": [
+          "PROV-SITE-001",
+          "PROV-KEY-001",
+          "PROV-KEY-002",
+          "PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "key_area_count",
+          "green_ratio",
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "addressed_with_provisional_caveat"
+      }
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -103,7 +144,50 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "统筹研究范围产业与未来城市研究",
+          "更新项目清单、实施政策与分期计划"
+        ],
+        "figure_ids": [
+          "assets/figures/origin-brand-logo.png",
+          "assets/figures/scene-space-operation-matrix.png"
+        ],
+        "element_ids": [
+          "ORIGIN-LAB",
+          "ORIGIN-COURT",
+          "ORIGIN-RAIL",
+          "UP-01",
+          "UP-02",
+          "UP-03",
+          "UP-04",
+          "UP-05",
+          "UP-06"
+        ],
+        "metric_refs": [
+          "key_area_count"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "case_sources_being_logged"
+      }
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -155,7 +239,46 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "蓝绿空间、公共空间与城市风貌",
+          "总体设计范围城市更新与控规深度城市设计"
+        ],
+        "figure_ids": [
+          "assets/figures/mobility-bluegreen.png",
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "L1",
+          "L2",
+          "L3",
+          "GREEN-001"
+        ],
+        "metric_refs": [
+          "green_ratio",
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_awaiting_official_controls"
+      }
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -207,7 +330,44 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计",
+          "用地、建筑规模与拆改留方案"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png",
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "LU-001",
+          "BLDG-001",
+          "PROV-KEY-002"
+        ],
+        "metric_refs": [
+          "building_footprint_area_sqm"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_known_controls_unavailable"
+      }
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -259,7 +419,42 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "总体设计范围城市更新与控规深度城市设计"
+        ],
+        "figure_ids": [
+          "assets/figures/land-use-structure.png"
+        ],
+        "element_ids": [
+          "LU-001"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "green_ratio",
+          "public_space_ratio"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "concept_awaiting_official_controls"
+      }
     },
     {
       "standard_id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
@@ -311,7 +506,42 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。",
+      "task_specific_evidence": {
+        "proposal_sections": [
+          "用地、建筑规模与拆改留方案",
+          "风险、版权与合规说明"
+        ],
+        "figure_ids": [
+          "assets/figures/key-areas.png"
+        ],
+        "element_ids": [
+          "BLDG-001",
+          "PROV-KEY-002"
+        ],
+        "metric_refs": [
+          "building_footprint_area_sqm"
+        ],
+        "source_refs": [
+          "SITE-PACKAGE",
+          "SOURCE-REGISTRY",
+          "PROCESSED-FACT-PACK",
+          "OFFICIAL-ANNOUNCEMENT",
+          "AGENT-TASKBOOK",
+          "BOUNDARY-SOURCE",
+          "KEY-AREA-SOURCE"
+        ],
+        "assumption_refs": [
+          "A-CONTROLS-001"
+        ],
+        "self_check_refs": [
+          "BOUNDARY_TRUST",
+          "KEY_AREAS_TRUST",
+          "LAND_USE_TOPOLOGY",
+          "VISUAL_STATIC"
+        ],
+        "incomplete_status_zh": "data_gap_pending_official_documents"
+      }
     }
   ]
 }

@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Site boundary is the maintainer-provided PROVISIONAL boundary (brief/site-package/geometry/provisional_boundaries.geojson#PROV-SITE-001), not an official redline; area is recomputed on the provisional polygon and must be re-run after official geometry is published."
+        "Site boundary is the maintainer-provided PROVISIONAL boundary (brief/site-package/geometry/provisional_boundaries.geojson#PROV-SITE-001), not an official redline; area is recomputed on the provisional polygon and must be re-run after official geometry is published.",
+        "Recompute is mandatory once the official site polygon and three key-area polygons are released; current figures carry an explicit provisional marker."
       ]
     },
     "building_footprint_area_sqm": {
@@ -26,7 +27,7 @@
         "geometry/buildings.geojson"
       ],
       "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": []
     },
     "green_ratio": {
@@ -38,7 +39,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": []
     },
     "public_space_ratio": {
@@ -50,7 +51,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": []
     },
     "floor_area_ratio": {
@@ -76,5 +77,7 @@
       "confidence": "high",
       "assumptions": []
     }
-  }
+  },
+  "provenance_note_zh": "本提交采用 provisional 临时边界与概念级建筑/绿地/公共空间表达，所有 known 指标已按公式复算，但 confidence 整体下调以反映官方控制条件缺失；待 official polygon / 控规发布后重算。",
+  "provenance_note_en": "This submission uses a provisional boundary and concept-level building/green/public-space data. All 'known' metrics are recomputed per formulas, but confidence is globally downgraded to reflect missing official controls; recompute is mandatory after official polygon / regulatory release."
 }

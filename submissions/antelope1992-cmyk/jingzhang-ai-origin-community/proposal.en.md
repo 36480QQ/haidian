@@ -48,6 +48,8 @@ This proposal establishes an original **naming system "ORIGIN"**: "Beijing AI Or
 
 The three sub-brands' operation mechanisms are concept proposals: "ORIGIN Lab" organizes R&D collaboration as an **open-source community + compute/data interface**, suggested to be co-run by university consortia and professional institutions, with outputs returned to the community as public datasets and open tools; "ORIGIN Court" organizes renewal and governance through **community deliberation + flexible renewal**, with a suggested pilot in the near-campus mixed block serving young talent and local residents; "ORIGIN Rail" activates heritage through **cultural narrative + slow-mobility experience**, operated mainly for public benefit and public cultural activities, with commercial scenarios bounded by low-intervention and auditable operation. The specific actors, timing and inputs require professional and official review and are not finalized arrangements [depth:operation].
 
+![ORIGIN brand visual concept](assets/figures/origin-brand-logo.png)
+
 <!--AGENT2-->
 The naming follows the red line of "no copying existing names, no unauthorized trademarks"; this proposal supports the ecosystem with **scenario openness, compute supply and data circulation**, serving enterprises, universities and startups [standard:industry_support]. The following 8 are publicly verifiable global AI-ecosystem case references used to extract mechanisms, not to promise replication [source:data/source_registry.json] [depth:background]:
 
@@ -140,6 +142,10 @@ The following scenario cards are concept proposals; data sources are tagged by u
 **T3 · Energy Peak Stress-test**: offline simulation of energy-saving strategies for public-building clusters.
 <!--TEST_SCENARIO-->
 **T4 · Multi-agent Coordination Drill**: sandbox of governance-service-operation agent collaboration.
+
+The following matrix maps the 12 scenarios + 4 test scenarios to six space types (near-campus / station / heritage / community / public-building / area-wide) and the operation mechanism [depth:operation]:
+
+![Scenario–Space–Operation matrix](assets/figures/scene-space-operation-matrix.png)
 
 <!--AGENT4-->
 The proposal serves **residents, young talent, enterprises, universities, tourists and vulnerable groups** for inclusive AI benefit [depth:inclusive].
