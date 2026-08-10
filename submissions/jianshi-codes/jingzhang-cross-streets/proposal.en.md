@@ -31,6 +31,26 @@ The 43.6 km² research area, 11.4 km² overall design area, and 368.4 ha key are
 
 Jingzhang Cross-Streets does not draw another north-south innovation line. Innovation assets already sit on both sides of the railway; people must cross to move from campus to estate, neighbourhood to park, station to workplace, and western services to eastern applications. Each street is named after a real road or waterfront. The longitudinal park carries walking and history; cross-streets carry everyday city life and innovation transfer. Their intersections become operable public ground floors. [data:geometry/roads.geojson#CS-01]
 
+The taskbook's three positions are not three additional slogans. Each is assigned a visible spatial carrier and an acceptance move:
+
+| Three positions | Spatial carrier | Design response |
+| --- | --- | --- |
+| Centennial Jingzhang Cultural Belt | Jingzhang Park, Beijing North Station, Qinghuayuan Station, bridges, tracks, and vertical relationships | Organise real heritage as platform-workbench-shared-table chapters without repeating railway motifs. |
+| Urban AI Life Experience Belt | Stations, neighbourhoods, campus gates, public ground floors, and river interfaces on eight cross-streets | All twelve scenarios need real rooms, human alternatives, opening hours, and stop triggers; daily services are not displaced by display. |
+| AI Convergent Innovation Belt | Campus research-Origin transfer-Zhongzhiyuan R&D-Dazhongsi content/devices-Xiaoyue civic scenarios | Join research, production, service, and civic use through walkable short chains, public-front/secure-rear sections, and controlled tests. |
+
+The five functions form a three-area/two-wing loop. The Zhongguancun service wing brings professional services and resource access; AI Origin turns research into teams and prototypes; Zhongzhiyuan hosts full-stack R&D and public standards discussion; Dazhongsi brings content, devices, repair, and consumption to the urban ground floor; and the Xiaoyue scenario wing offers bounded civic testing. Evaluated results return to teaching, standards workshops, and the next spatial repair. This loop handles specific projects and voluntary scenarios only; it is not a universal traceability system for city actions. [source:AGENT-TASKBOOK]
+
+| Five functions | Three-area/two-wing location | Spatial move | Acceptance/boundary |
+| --- | --- | --- | --- |
+| Full-stack autonomous AI innovation system | Zhongzhiyuan + CS-01/02 | Shared-equipment booking, public review, a low-rise shared hall, and an independent secure R&D rear | opening hours, booking access, and public/service separation |
+| World-class AI innovation ecosystem | AI Origin + Zhongguancun service wing + CS-04/05 | 50+50 desks, Hundred-Table Review, eight founder clinics, and daily talent services | first response, desk turnover, affordable rent, and team continuity |
+| New AI+ scenario-enablement model | Xiaoyue scenario wing + controlled forecourts in three key areas | Four industrial tests and eight daily-service scenarios open only with space, staff, insurance, and stop triggers | card-level acceptance, human takeover, exit, and complaint closure |
+| Intelligent and lively AI city | Eight cross-streets + Dazhongsi four corners + neighbourhood/campus gates | Transfer, school trips, night school, repair, childcare, water, toilets, and night staff form an everyday public ground | 8/8 continuity, rest points within 150 m, and basic services on 8/8 streets |
+| Global voice in AI governance | Zhongzhiyuan standards workshops + cross-street scenario rules | Turn privacy impact, human alternatives, test suspension, repairable design, and accessible content into public rules and examples | no universal city-action tracking; review only specific voluntary scenarios |
+
+Interfaces with North Latitude Community, Future Science City, Huairou Science City, Beijing E-Town, and the Beijing-Tianjin-Hebei region remain conceptual proposals for research briefs, standards work, prototype hand-off, scenario exchange, and talent services—not confirmed partnerships. The planning innovation is to keep three levels of precision, the industry chain, public space, ground-floor operation, and exit conditions in one auditable framework without replacing statutory planning.
+
 | ID | Real cross-street | Anchors | Required urban move |
 | --- | --- | --- | --- |
 | CS-01 | Qinghe Waterfront Cross-Street | Qinghe, the northern Jingzhang edge, and the Xiaoyue River confluence | Join the waterfront walk, research courts, Xuezhiyuan transit access, and dark habitat into one walkable research edge without inventing a new water feature. |
@@ -47,6 +67,21 @@ The public ground floor is a measurable section rule, not a second brand. Each s
 ## Coordinated Research Area: Industry and Future City Research
 
 The 43.6 km² ecosystem assigns spatial roles to the western professional-service wing, campus research, Origin transfer, Zhongzhiyuan full-stack research, Dazhongsi devices and content, and the eastern civic-scenario wing. Legal, finance, talent, international, and compute services sit at walkable ground level on streets such as Zhichun and Chengfu. Secure research and shared equipment use a public-forecourt/controlled-rear structure at Zhongzhiyuan. Content production, device trial, repair, reuse, and consumption form a surface-accessible four-quadrant network at Dazhongsi. Qinghe and Xiaoyue are real infrastructure projects, so habitat, drainage, maintenance, and access share one section. [source:BJ-WATERWAYS] [depth:overall_spatial_structure]
+
+The ecosystem map places eight enabling elements in space, operation, and safeguards at the same time. Data is not treated as an abstract resource: booking/consulting data is separated from R&D data, public space does not identify people persistently, public information is limited to human-reviewed aggregates, and each scenario can stop independently.
+
+| Element | Spatial carrier | Operating mechanism | Safeguard |
+| --- | --- | --- | --- |
+| Land | Existing estates, first street-facing rows, and conditional opportunity sites | Retain first, use short leases and ground-floor adaptation; replace the chain when official parcels and rights arrive | No acquisition, disposal, or land-price promise |
+| Space | Public forecourt-accessible ground floor-secure rear | Three dimensioned section families, four building actions, and daily/event states | Concept only before structure, fire, heritage, and utility checks |
+| Industry | Campus-Origin-Zhongzhiyuan-Dazhongsi-Xiaoyue | A walkable chain of research, review, prototyping, content/devices, repair/reuse, and civic scenarios | No invented companies, output, or investment promise |
+| Funding | Basic public service, ground-floor leases, tests, and operating fund | Public funds secure access/care; owners secure ground floor/rear; testers fund insurance/clear-down; income pays accessibility→repair→free service→public programme | Responsibility proposal, not a fiscal commitment |
+| Talent | 50+50 desks, Hundred-Table Review, housing links, and visiting desks | Move from open events into clinics, desks, equipment, prototypes, leases, or long partnerships | Guardrails are affordability, night safety, and incumbent retention |
+| Compute | Compute clinics on CS-04/05 + controlled R&D rear | Public desks explain booking, price, and human support; training/R&D data stay with responsible secure operators | Capacity, heat reuse, and energy benefit await professional study |
+| Data | Booking desks, service desks, controlled test rooms, and annual public summaries | Separate booking/consulting from R&D data; no persistent public identification; publish only opening hours, maintenance response, and human-reviewed aggregates | Purpose limitation, data minimisation, deletion, human appeal, and scenario-level stop |
+| Scenarios | Real rooms and public routes for twelve scenario cards | Put responsible body, frequency/capacity, acceptance, human takeover, insurance, and stop trigger into each opening agreement | A test is not approved operation; anomalies stop it |
+
+Zhongzhiyuan's “full stack” is organised as five spatially legible levels rather than a company list: foundational resources in the secure rear; models and tools in shared workrooms; agents and applications in team rooms; validation in a bounded test gallery; and standards/governance in the public review forecourt. No supplier, compute capacity, funding, or approval is presumed.
 
 The streets are not evenly distributed programme dots. Each receives a brief framed as existing supply, actual gap, and first accepted delivery. A 400 m walk audits daily services, 800 m audits founder and shared facilities, and 1 km tests the innovation short chain in the three key areas. These are walking assessment tools, not statutory service promises.
 
@@ -105,15 +140,50 @@ The three areas are not coloured cards. Each working window draws OSM morphology
 
 Its spatial engine is **secure research rear + accessible review forecourt + Qinghe habitat edge**. Everyday use consists of shared-equipment booking, lunchtime review, commuting, waterfront walking, and food; its event state is quarterly prototype open days and international standards workshops. The inhabitable landmark, **Qinghe Prototype Court**, combines public ground, accessible building space, and real back-of-house rather than an isolated object. First projects are accessible Xuezhiyuan station-to-park link; public ground-floor prototype facing Qinghe; separated research logistics and visitor route; dark habitat and stormwater terraces. All building and parcel moves remain conceptual until ownership, structure, fire, heritage, and planning controls are confirmed.
 
+| Detailed-design layer | Non-statutory block design |
+| --- | --- |
+| Ground-floor plan | One public line links Xuezhiyuan Station, the estate's open ground floors, and the Qinghe walk; secure R&D is served independently from an estate service road. |
+| Ground-floor programme | The river-facing row places booking, waiting, public review, and a shared hall in sequence; confidential labs, plant, and loading remain behind. |
+| Public/service flows | Public: station→booking→review→waterfront. Service: side road→loading→secure lab rear. They meet only at a staffed booking foyer. |
+| Concept section dimensions | Habitat buffer 12-20 m, accessible clear width at least 3 m, storm terrace 6-12 m, and public forecourt 8-15 m; all are study ranges pending survey. |
+| Landmark components | Qinghe terrace + covered review hall + shared-equipment booking foyer + independent secure rear |
+| Daily/event switch | Daily use keeps commuting, booking, and waterfront rest. Open days add removable displays only in the forecourt; the secure boundary does not move. |
+
 ### Beijing AI Origin Community: Near-Campus Transfer Blocks
 
 Its spatial engine is **a short chain from campus gate to workroom, public review, incubation, and daily services**. Everyday use consists of open desks, legal and compute clinics, night study, childcare, and affordable food; its event state is weekly peer review, monthly street releases, and graduation residencies. The inhabitable landmark, **Hundred-Table Review Hall**, combines public ground, accessible building space, and real back-of-house rather than an isolated object. First projects are Chengfu Road campus-gate walking repairs; continuous ground floor from Origin Building to Starlight Avenue; distributed 50+50 open desks; low-impact shared longhouse. All building and parcel moves remain conceptual until ownership, structure, fire, heritage, and planning controls are confirmed.
+
+| Detailed-design layer | Non-statutory block design |
+| --- | --- |
+| Ground-floor plan | A five-minute chain connects campus gate, small workrooms, Hundred-Table Hall, Origin Building, and Starlight Avenue ground floors, with a night route to housing and food. |
+| Ground-floor programme | Small workrooms 6-9 m deep divide by the hour; review modules of about 9×18 m combine; legal, compute, hiring, and childcare services share a street-facing waiting area. |
+| Public/service flows | Public: campus gate→workroom→review→services. Team service: side lane→storage/plant→rear workroom doors. Visible staffed points join the night route. |
+| Concept section dimensions | Walking clear width at least 3 m, one-way cycle band at least 2.5 m, ground-floor depth 6-9 m, review module about 9×18 m, and at least two public doors per 100 m; all are study targets. |
+| Landmark components | Divisible hundred-table hall + small workrooms on both sides + night-study gallery + independent storage and plant rear |
+| Daily/event switch | Daily use is desks, clinics, and study. Review days open sliding partitions into one hall, then restore small rooms without occupying the public route. |
 
 ### Dazhongsi AI Industry Cluster: Four-Quadrant Station Blocks
 
 Its spatial engine is **surface-first four-quadrant access + content production + intelligent devices + commuter life**. Everyday use consists of transfer, cycle parking, repair and returns, youth night school, and community services; its event state is small releases, public screenings, device trials, and sound-culture nights. The inhabitable landmark, **Dazhongsi Four-Corner Commons**, combines public ground, accessible building space, and real back-of-house rather than an isolated object. First projects are four-corner crossing and vertical-access audit; cycle parking in all four quadrants; film-to-Dazhongsi content-production ground floor; intelligent-device repair and circular counter. All building and parcel moves remain conceptual until ownership, structure, fire, heritage, and planning controls are confirmed.
 
+| Detailed-design layer | Non-statutory block design |
+| --- | --- |
+| Ground-floor plan | Surface crossings and accessible vertical routes first create one arrival ground across four station corners; content making, repair/returns, night school, and civic service occupy the four ground floors. |
+| Ground-floor programme | The east shared room handles trials and repair, north makes content, west supports transfers, and south hosts community and night school; every corner keeps canopy, parking, and human help. |
+| Public/service flows | Passengers: station→four-corner arrival ground→services. Logistics: perimeter road→timed loading→repair/production rear. Event queues may not block station access. |
+| Concept section dimensions | Each corner studies an arrival ground at least 12×20 m, surface crossing within two signal stages, 150-300 cycle spaces subject to demand, and an accessible vertical route on both rail sides. |
+| Landmark components | Four covered arrival platforms + distributed ground-floor services + one accessible wayfinding system + independent repair/production rear |
+| Daily/event switch | Daily use keeps transfer, repair, and night school. A release or screening occupies one managed corner only; the other three remain open for movement and civic service. |
+
 All three inhabitable landmarks pass five gates: everyday access, a public service, real back-of-house, continuous accessibility, and a useful post-event state. Qinghe Prototype Court is a waterfront research block; Hundred-Table Review Hall is a divisible low-impact longhouse; Dazhongsi Four-Corner Commons is a distributed station system. Their image comes from occupied sections, not towers or giant screens.
+
+The honor system uses three **Contribution Shelves** embedded in the landmarks rather than a separate hall. It displays only voluntarily public, human-checked contributions such as open tools, standards work, mentoring and civic service, accessibility improvements, repair/reuse, and community problem-solving. It records neither general city activity nor personal movement, has no personal leaderboard, and does not treat corporate advertising as honor. Every item states contributor, public use, display term, correction/withdrawal route, and exit into a public catalogue or removal. [source:AGENT-TASKBOOK]
+
+| Spatial node | Contribution shown | Spatial/rotation rule |
+| --- | --- | --- |
+| Qinghe Prototype Court | Public standards, open tools, accessibility improvements | 6-12 replaceable bays; quarterly rotation |
+| Hundred-Table Review Hall | Open tools, peer review, mentoring, community problem-solving | Pinned up on review days, displayed for at most six months |
+| Dazhongsi Four-Corner Commons | Repairable design, accessible content, rights compliance, material reuse | Reviewed by public-service outcomes, never sales ranking |
 
 ![Block-scale working windows, key sections, and first projects for Zhongzhiyuan, AI Origin, and Dazhongsi](assets/figures/key-areas.en.png)
 
@@ -184,6 +254,8 @@ Character comes from material, scale, and use. The railway system stays legible 
 
 The cultural sequence is **platform-workbench-shared table**, used as spatial grading rather than another brand. Real rail, station, bridge, signal, and vertical relationships form the platform chapter at CS-08 Xizhimen and CS-06 Dazhongsi. The engineering culture of solving problems by making becomes small workrooms, repair, and review on CS-04 Chengfu and CS-05 Zhichun. Qinghe, Qinghua East, Xueyuan South, and the three landmarks provide shared tables with seats, learning, collaboration, and back-of-house. Legible material joints, reversible track display, railway soundscapes, and quiet rooms replace giant bells, ticket plazas, or one repeated furniture set. [source:BJ-HERITAGE-PARK-PLANNING] [depth:height_massing_character]
 
+The international narrative is a spatially testable sentence: **“From a historic corridor of Chinese railway engineering to an open cross-street network for solving problems together.”** Xizhimen “Arrive,” Chengfu Road “Make Together,” and Qinghe “Review in Public” form a three-part civic itinerary. It uses real street names, `CS-01-08` IDs, bilingual walking times, accessibility information, and public booking points only. No company mark is borrowed; English event pages state capacity, opening status, and the concept-proposal boundary.
+
 The component library is eight coupled systems rather than furniture: entrance+ramp; shade+seat; water+toilet wayfinding; cycle parking+repair; bioswale+overflow; event power+storage; human desk+digital information; night staff+dark-habitat edge. Each section combines them and assigns maintenance responsibility.
 
 ## Renewal Projects, Implementation Policy, and Phasing
@@ -213,6 +285,18 @@ Long-term operation has four layers: district coordination secures the public fr
 Contract triggers are explicit. Opening below 60 hours/week reopens subsidy and lease terms. An accessibility or fire-route break closes the affected event. Forced displacement, rent beyond the agreed affordable band, or commercial occupation of free service pauses new leasing and requires remedy. An AI scenario stops when a safety failure has no human response. Annual reporting covers eight-street continuity, free-service hours, maintenance response, incumbent retention, affordable desks, and complaint closure. [metric:renewal_project_count]
 
 The annual system follows real rooms. Spring Cross-Street Co-Test accepts walking and accessibility. Summer Hundred-Table Review brings work to the street. Autumn Prototype Open Days use controlled forecourts. Winter Repair and Reuse Month concentrates device repair and material circulation. Conversion is explicit: desk, professional service, equipment booking, prototype, lease, or long partnership.
+
+The four seasonal programmes share the cross-street ID, street colour, date/capacity, accessibility condition, and stop symbol as a lightweight communication system. The developer community is not a mailing list; district/estate operators, the university-business-community platform, and the independent public-space team jointly staff a five-step pathway:
+
+| Stage | Space and action | Condition for the next stage |
+| --- | --- | --- |
+| Discover | Cross-Street Co-Test / Hundred-Table Review / Prototype Open Day / Repair and Reuse Month | Publish calendar, capacity, accessibility, and stop conditions together |
+| Enter | Bilingual welcome desk + eight founder clinics + target of one human follow-up within 14 days | Participants choose a desk, professional service, equipment, or civic brief |
+| Build | 50+50 open desks + shared equipment + four controlled industrial tests | Every project has an owner, insurance, human takeover, and exit |
+| Convert | Public review→prototype/content→short ground-floor lease→long lease or partnership | Record pathway and affordability without promising investment outcomes |
+| Contribute | Contribution shelves, mentor hours, civic problem briefs, and annual public KPIs | Record voluntary public contributions only; no personal scoring or universal city ledger |
+
+Scenario opening follows eight gates: open call; rights/privacy/safety screening; match to a real room and operator; bounded sandbox; human go/no-go; limited public use; post-evaluation; and stop, repeat, or conversion. International conversion begins with a bilingual brief and open day, then a staffed welcome follow-up, visiting desk, peer review, equipment booking or bounded trial, and only then a short ground-floor lease, long lease, or research partnership. People who do not convert can return as mentors, open contributors, or collaborators on civic briefs. Annual reporting publishes only human-reviewed aggregates for participation, follow-up, desk/equipment access, affordable leases, and public contribution; it promises no investment count, capital, policy benefit, or approval. [source:AGENT-TASKBOOK]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
