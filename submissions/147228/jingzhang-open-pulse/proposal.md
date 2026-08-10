@@ -7,12 +7,12 @@ summary: "以京张遗址公园为公共底板、三处重点区为创新节点�
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.0"
+iteration: "v4.2"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **包版本说明：** 本包迭代为 v4.0；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.0 在 v3.9 的人本缓冲、城市 API 最小字段、算电协同和版本化治理之外，新增八项公开取舍登记，把作者立场、受影响群体、放行证据和退出边界放到同一张可复核图上；不改变空间对象、面积指标、来源等级或实施边界。
+> **包版本说明：** 本包迭代为 v4.2；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.2 在 v4.1 的取舍登记、人的承载闸门和流程筛查基础上，补齐正文中模型输出数字的来源回读与双语边界标记；不改变空间对象、面积指标、来源等级或实施边界。模型输出仍不是现状、预测、因果估计、现场绩效或官方评分。
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
 
@@ -30,6 +30,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 风险与合规 | provisional 边界、unknown 基线、设计目标和背景论文不升级为官方红线、现状事实或审批结论；权属、消防、文保、隐私、维护、保险、网络隔离、雨洪公平或接管证据不足就停在概念层。 | sources.json、risk.json、visual/assets/operational-assurance-contract.json、v2-evidence-gate-index.json |
 | 表达完整度 | 中文主稿、英文译稿、五张固定评审图、A3/A0、离线 HTML、可复算指标和三张矩阵保持同一空间/版本口径；v3.3 在不改变既有面积指标的前提下，把建筑、绿地、公共空间、场景节点、分期和待核约束拆成可回读对象。 | manifest.json、metrics.json、geometry/*.geojson、qa-readiness.json |
 | 资料登记完整度 | 正文 68 个唯一 source ID 与包内 `sources.json` 的 68 条记录一一对应；其中 formal 可用 5 条、background_only 4 条、provisional-only 1 条，另有 4 条 package build-toolchain 记录和 1 条边界交叉核对背景记录，其余为仓库导航/案例/标准记录；每条记录均补齐标题、发布者/登记主体、URL/path、访问日期、authority、可用范围与禁用范围。`data/source_registry.json` 仍是 formal/provisional 用途边界，包内登记不会把 provisional 或 background 资料升级为 formal 证据。 | sources.json、data/source_registry.json、visual/assets/evidence-ledger.json、visual/assets/territorial-data-baseline.json |
+
+## AI 的具体介入：从约束到可定位的空间动作
+
+本包把模型作用限定为约束整理、选项比较和证据回写。模型不替代规划、交通、消防、医疗、法律或采购决定。`agent.json` 登记的模型为 OpenAI GPT-5 family via Codex；下表是本提交版的设计决策摘要，不是逐字 prompt 日志、现场测量或模型性能证明。
+
+| 输入与问题 | AI 转译动作 | 本版采用的空间/运营输出 | 可回读入口 | 返还条件 |
+| --- | --- | --- | --- | --- |
+| agent.1—agent.6 与三层范围如何落成一个空间结构 | 把任务压缩为一带、三核、多点场景和蓝绿慢行复合环，让三处重点区承担不同的城市功能 | 公共主轴、三处节点和区域能力回路 | `assets/figures/site-overview.png`、`assets/figures/key-areas.png`、`visual/assets/regional-ecosystem.json` | 官方 polygon、权属或重点区条件更新后，整体重算图层和指标；不能沿用旧线位 |
+| 最后 300—800 米的通行、接驳和空间冲突如何被看见 | 比较一条南北公共主轴与三条东西缝合支线，保留为概念网络，不把筛查线当作工程线位 | `ROAD-001`—`ROAD-004`、三核入口和慢行—蓝绿复合界面 | `geometry/roads.geojson`、`assets/figures/mobility-bluegreen.png`、`metrics.json` | 道路红线、无障碍连续性、站口、消防或权属资料不足时，回到现场调查和普通路径 |
+| AI 场景的便利是否会挤占照护、安静和无账号服务 | 将每个场景绑定普通等价服务、人工责任、负向证据、公众回执和退出决定 | 14 条场景、8 个行动包、8 项公共取舍和 S02 合成负回放 | `visual/assets/scenario-operation-matrix.json`、`visual/assets/public-interest-position-register.json`、`visual/assets/open-pulse-tabletop-evidence.json` | 缺少基线、值守、安全复核或申诉回路时保持 `hold`，不开放窗口 |
+| unknown 指标、算力能源和版本变化如何影响扩散 | 优先选择可撤回、可维修的低扰动窗口，先建立证据闸门，再讨论扩容 | 城市 API 最小字段、算电治理接口、40 个阶段/退出闸门和版本回滚 | `assets/figures/city-api-energy-governance.png`、`visual/assets/operations-matrix.json`、`visual/assets/human-capacity-gates.json` | `unknown`、`not_authorized_not_run` 或缺少人工回退时，不作容量、性能或实施承诺 |
+
+表中每个“输出”都能回到一张图、一个图层或一条结构化记录；返还条件则保留专业团队、权利主体和受影响公众的决定权。当前记录表达的是概念设计如何形成，不把模型输出升级为官方事实或现场结果。
 
 ## v3.3 三处重点区：空间动作先于技术名词
 

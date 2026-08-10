@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "536f3ad0978d624c886d7e30ebbdbc9d8a37022f60e26f08a963a2d114ede845"
+      "sha256": "c0787fd3563680b34802c8d892dea5055e7166e3cca6c6aa2f3dc7cc51dedcbc"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f70678af878749031b050e8b13f75e31b5901b3a226f9e8e0b5791a6baf27804"
+      "sha256": "abc346febdcd4f10b2bd8a08a2db34aca4dbbd645be449c8ecc90b5251dd8fac"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "42179b4053e4d8021dffdec98a3b9ed74f0756cc33c6b657c54cf85339da13a0"
+      "sha256": "71f9e50432b20897885eafee0f0432361fee448c1c893ea09df1df31c7a3a8fb"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "84e199fd78844abe5e41a133f709bf6b4c41b77e3aaddafd7d703245ff6c768a"
+      "sha256": "e43374b339cbd6164eda4de124780791a1675e9ff029e3fab2b7a3849f87a647"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e3820330c39c72b405b0623bd45bee80943c685c4ab755271a43b42e30cf8a70"
+      "sha256": "3b9087a5f8aef87a16c510f599c94c9a408326eb3938c0a42965cf5a1da46be8"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -152,7 +152,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0fb8668564335abe12bd4e94989b9fcb7b3cf1633fa1a4ac5637ca3ecbdb7b7b"
+      "sha256": "dbd1516b72c172f2cca6311b8511480cb6a6448bc01dfa36f9e0d10be401bf58"
     },
     {
       "path": "visual/index.en.html",
@@ -160,7 +160,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c71689e340e2f1d38c9314500c9bcdde7e0aa9a58f5afb00a409c4ba391bd3c9"
+      "sha256": "1e97b7b8619dad74379acf6817d06ac8eae96e1acc55674cc49fccfe57fb1e79"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -647,14 +647,14 @@
       "role": "claim_provenance_register",
       "required": true,
       "language": "neutral",
-      "sha256": "dec66cd07313e7327c93e551f9713c228b9cf88186921ff25027ff2433204db2"
+      "sha256": "6e1049122fc14e814e8051ee9b9474d8a306fb6a20268e8016cd6b163bfdd2d2"
     },
     {
       "path": "visual/assets/run-open-pulse-claim-provenance.js",
       "role": "claim_provenance_runner",
       "required": false,
       "language": "neutral",
-      "sha256": "643510a0698658d2ff93dde106f0366f2b9e91bff05aa7e8e642b96afc454b10"
+      "sha256": "d8c6cca7ed9aebbd0bdf3ce57207a81623faa403ccec9a1412847f707a51e393"
     },
     {
       "path": "assets/figures/city-api-energy-governance.svg",
@@ -745,8 +745,8 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
-    "readiness_contract": "persisted-self-check-v1",
+    "self_checked": false,
+    "readiness_contract": "formal-review-ready",
     "known_blockers": [],
     "data_confidence": "medium"
   }

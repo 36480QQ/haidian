@@ -30,7 +30,7 @@ function readJsonPointer(pointer) {
 
 if (register.schema_version !== '0.1.0') fail(`schema_version=${register.schema_version}`);
 if (register.status !== 'audit_contract') fail(`status=${register.status}`);
-if (!Array.isArray(register.records) || register.records.length !== 9) fail(`records=${register.records?.length}`);
+if (!Array.isArray(register.records) || register.records.length !== 22) fail(`records=${register.records?.length}`);
 
 for (const record of register.records || []) {
   const value = readJsonPointer(record.raw_value_path);
@@ -48,6 +48,12 @@ for (const record of register.records || []) {
   if (!proposalEn.includes(record.proposal_token)) fail(`${record.claim_id}: en proposal token missing`);
   if (!reportZh.includes(`data-evidence-value="${record.claim_id}"`)) fail(`${record.claim_id}: zh report metric marker missing`);
   if (!reportEn.includes(`data-evidence-value="${record.claim_id}"`)) fail(`${record.claim_id}: en report metric marker missing`);
+  if (record.evidence_class === 'model_output_not_field_result') {
+    if (!record.boundary_zh || !record.boundary_en) fail(`${record.claim_id}: model-output boundary missing`);
+    if (!(record.source_files || []).some((rel) => rel.endsWith('.json') || rel.endsWith('.js'))) {
+      fail(`${record.claim_id}: model-output source runner missing`);
+    }
+  }
 }
 
 if (failures.length) {
@@ -58,6 +64,7 @@ if (failures.length) {
 console.log(JSON.stringify({
   status: 'PASS',
   records_checked: register.records.length,
+  model_output_records: register.records.filter((record) => record.evidence_class === 'model_output_not_field_result').length,
   boundary: register.boundary_en,
   checked: ['raw_value_path', 'source_files', 'figure_files', 'bilingual proposal tokens', 'bilingual report metric markers']
 }, null, 2));
