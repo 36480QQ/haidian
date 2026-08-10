@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.0"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.0 adds a public-space, three-landmark, cultural-grammar, four-season version rhythm and five-project-family board linked to spatial anchors, evidence gates and exit conditions. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.1"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.1 turns each of the three provisional focus areas into a readable five-stage spatial-action room with a human equivalent, machine boundary, and stop condition. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -51,6 +51,16 @@ The cultural grammar is “rail — time — interface”: rail carries Jing-Zha
 Figure 23 expresses conceptual relationships and replayable operating boundaries only. Every anchor remains `official_boundary=false` and `geometry_role=provisional_constraint`. When formal public-space, heritage, road, accessibility, thermal, night-safety, energy, venue-authorization and resident-feedback inputs arrive, the landmarks, annual rhythm, matrices, metrics, HTML and PDFs must be recalculated together.[data:visual/assets/public-culture-operations-atlas-v20.json] [depth:risk_missing_data]
 
 ![Figure 23 | Public space + culture + annual operation atlas: three concept landmarks, four-season rhythm and five project families](assets/figures/public-culture-operations-atlas.en.png)
+
+## v2.1 spatial action rooms | Read each focus area as a walkable sequence
+
+v2.0 answered how public space and annual rhythm receive the brief. v2.1 makes each provisional focus area's first question legible through five continuous spatial rooms: arrival / staffed edge → public explanation / choice → bounded machine interface → blue-green pause / recovery → exit, appeal and replay. Each room states the human equivalent, machine limit, and stop/return action so the spatial proposal does not depend on a reviewer reconstructing the move from governance ledgers.[data:visual/assets/spatial-action-rooms-v21.json] [depth:three_key_area_detailed_design] [depth:overall_spatial_structure]
+
+Figure 24 is a presentation-level concept board, not a debug screenshot or engineering section. The left column returns to the three `official_boundary=false`, `geometry_role=provisional_constraint` GeoJSON anchors; the five color blocks represent spatial-action stages, not distance, area, storeys, capacity, or alignment. Scenario and metric references, data gaps, and the recomputation trigger are registered in the paired JSON.[data:assets/figures/spatial-action-rooms-v21.en.png] [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+![Figure 24 | Spatial action rooms for the three focus areas: one five-stage path, three human questions](assets/figures/spatial-action-rooms-v21.en.png)
+
+All three focus areas remain conceptual suggestions / reference schemes for professional teams to deepen. If official geometry, roads/airspace, rights, accessibility, energy, climate, accountability, public baselines, or authorization inputs change, this board, the five core figures, metrics, HTML, PDFs and self-check must be recomputed together; no formal geometry or metric changes in this iteration.[data:visual/assets/spatial-action-rooms-v21.json] [depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## One-page read | Spatial moves first, governance evidence second
 

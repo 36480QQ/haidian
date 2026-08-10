@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.1 - 2026-08-10
+
+- 新增双语图 24“空间动作房间”和 `visual/assets/spatial-action-rooms-v21.json`：三处临时重点区分别回答人本问题，并共同沿“到达与人工入口—公共解释与选择—受限机器接口—蓝绿停留与恢复—退出、申诉与回放”五段空间路径展开；每个节点同时登记人工等效、机器边界、停止/回退动作、GeoJSON 锚点、场景与指标引用。
+- 将图 24 作为表达级城市设计板接入中英文 proposal、离线 visual index、PDF 与 manifest；修正中文 visual index 重复出现图 22 的导航噪音。
+- 新增离线构建脚本，输出 3 个重点区 × 5 个节点的确定性结构；所有节点仅重排既有 provisional geometry 与场景证据，不新增几何、正式 metrics、工程断面、容量、运营主体、许可或政策结论。
+- 本轮继续明确 `official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run`；不修改来源等级、公共排序、`submissions-data.js` 或 `gallery-publication.json`。
+
 ## v2.0 - 2026-08-10
 
 - 新增双语图 23“公共空间—文化—运营年度图谱”和 `visual/assets/public-culture-operations-atlas-v20.json`，把三座概念地标、四季版本节奏、五个项目族和“钢轨—时间—接口”文化语法接回空间锚点、资料门与退出动作。

@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.0"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.0 在任务书空间响应之外，把公共空间、三座概念地标、文化语法、四季版本节奏与五个项目族接到空间锚点、资料门和退出条件。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.1"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.1 把三处重点区各自的问题、五段空间动作、人工等效入口、机器边界与停止条件压成可读的空间动作房间。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -51,6 +51,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 图 23 只表达概念关系与可回放的运营边界，所有锚点继续是 `official_boundary=false`、`geometry_role=provisional_constraint`。正式公共空间、文保、道路、无障碍、热环境、夜间安全、能源、场地授权与居民反馈到位后，应连同地标、年度节奏、矩阵、metrics、HTML 和 PDF 一并重算。[data:visual/assets/public-culture-operations-atlas-v20.json] [depth:risk_missing_data]
 
 ![图 23｜公共空间—文化—运营年度图谱：三座概念地标、四季节奏与五个项目族](assets/figures/public-culture-operations-atlas.png)
+
+## v2.1 空间动作房间｜把三处重点区从“节点”读成可走的空间序列
+
+v2.0 的地标与年度节奏回答了“公共空间如何承接任务书”；v2.1 进一步把三处临时重点区各自的问题压到五个连续空间房间：到达与人工入口 → 公共解释与选择 → 受限机器接口 → 蓝绿停留与恢复 → 退出、申诉与回放。每个房间同时写出人工等效、机器边界和停止/回退动作，使空间建议不依赖评审者从治理台账自行补全。[data:visual/assets/spatial-action-rooms-v21.json] [depth:three_key_area_detailed_design] [depth:overall_spatial_structure]
+
+图 24 是表达级概念板，不是调试截图或工程断面。左栏回指三处 `official_boundary=false`、`geometry_role=provisional_constraint` 的 GeoJSON 锚点，五个色块只代表空间动作阶段，不代表距离、面积、层数、容量或线位；每行的场景与指标引用、资料缺口和重算触发器登记在同名 JSON。[data:assets/figures/spatial-action-rooms-v21.png] [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+![图 24｜三处重点区空间动作房间：共同五段路径与不同人本问题](assets/figures/spatial-action-rooms-v21.png)
+
+三处重点区仍只是概念建议 / 参考方案，可供专业团队深化研究。官方边界、道路/空域、权属、无障碍、能源、气候、责任、公众基线或授权数据发生变化时，需连同该图、五张核心图、metrics、HTML、PDF 和 self-check 全量重算；本轮不改变任何正式几何或指标。[data:visual/assets/spatial-action-rooms-v21.json] [depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## 一页先读｜先看空间动作，再看治理证据
 
