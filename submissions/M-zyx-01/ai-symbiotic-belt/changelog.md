@@ -55,6 +55,28 @@
 - 官方 validate_submission.py Result: PASS
 - 已推送 haidian-fresh 分支 submission-ai-symbiotic-belt（PR #1412 自动更新）
 
+## v0.1.6 - 2026-08-10（PR #1412 维护者 AI 评审修复：空间复核 + 视觉复核）
+
+### 空间复核 Gate FAIL 修复（官方 spatial_review.py 实测）
+- **site_boundary 单 feature**：移除 PROV-RESEARCH-001（统筹研究范围不再作为提交边界几何，coordination_scope_area_sqm 改为文字口径指标）→ LAND_USE_COVERAGE_GAP 清零
+- **land_use 全顶点网格重建**：所有行共享列分割点集合，相邻块共享边顶点一致，消除 EPSG:4548 投影 4 处 sliver 重叠（7.019/4.434/1.209 m²）→ LAND_USE_OVERLAP 清零
+- **green_space/public_space 面化**：green = land_use code 14 多边形（2,052,866.474 m²，口径统一）；public = 3 处广场多边形（235,232.653 m²）→ 消除线图层面积=0 的指标复算冲突
+- **全部面积改 shapely EPSG:4548 复算**：site 11,419,439.442 / key_areas 1,929,201.877 / 1,043,236.909 / 719,243.630 写入 declared + metrics；green_ratio=0.179769、public_space_ratio=0.020599
+- 实测：spatial_review Result: PASS（仅 3 个 minor KEY_AREA_PROVISIONAL，官方明确不阻塞）
+
+### 视觉复核 Gate FAIL 修复（官方 visual_review.py 实测）
+- visual/index.html 补齐 8 个必需可见栏目标记：总览地图/三层范围/用地分区/交通慢行/蓝绿公共空间/更新项目/AI 场景/任务覆盖（en 版同步）
+- visual data-metric 与 metrics.json 精确一致（site_area_sqm 11419439.442 / green_ratio 0.179769 / public_space_ratio 0.020599）
+- 实测：visual_review Result: PASS（ok: true, issues: []）
+
+### 合规矛盾修复（评审指出）
+- proposal 风险声明"未给出任何具体的……建筑高度"与正文 45-80m 矛盾 → 改为"未给出任何**已批准**的控规调整……正文出现的建筑高度（如 45-80m）均为方向性概念建议"（中英同步）
+
+### 验证
+- node --test 28/28 通过（断言更新为 shapely 值 + site 单 feature + 边界点在边判内部）
+- 官方四件套本地实测全 PASS：validate_local_submission / spatial_review / visual_review / professional_review
+- 已推送（619355b4..f3cefd2a，PR #1412 自动更新）
+
 ## v0.1.4 - 2026-08-09（对照本地官方 SKILL.md + references 全项复核）
 
 ### 几何与指标修复（本版本核心）
