@@ -126,6 +126,18 @@ This register is a package-level risk/evidence index, not a field risk assessmen
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
 
+Three new public references are used only to make the boundary explicit. The barrier-free environment law connects accessibility work with age-friendly improvement and requires consultation of disabled and older-person representatives and relevant organisations on planning documents that concern accessibility. This package therefore places those roles and a continuous human fallback in the P0 evidence path, without claiming that consultation or a local compliance walkthrough has happened [standard:BARRIER-FREE-ENVIRONMENT-LAW] [source:BARRIER-FREE-ENVIRONMENT-LAW].
+
+The State Council General Office plan on helping older people use smart technology requires traditional service channels to run in parallel with smart services. The package therefore keeps human, telephone, paper and public-transport access alongside digital entry. The policy is national and does not prove local implementation [standard:ELDERLY-SMART-TECH-PLAN-2020-45] [source:ELDERLY-SMART-TECH-PLAN-2020-45].
+
+The Interim Measures for the Management of Generative Artificial Intelligence Services cannot replace transport operating permission, professional safety review or airspace approval. Here it is used only as background for public-service, transparency, rights and complaint boundaries, not as evidence of filing, permission or field safety [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:GENERATIVE-AI-INTERIM-MEASURES].
+
+| New reference | Use in this package | What it cannot establish |
+| --- | --- | --- |
+| Barrier-Free Environment Law | Age-friendly and accessible participation with a continuous human fallback | A completed local walkthrough or compliance finding |
+| State Council General Office Plan 2020-45 | Traditional and smart service channels kept in parallel | Local implementation of the national policy |
+| Interim Measures for Generative AI Services | Public-service, transparency and complaint boundaries | Transport permission, airspace approval or field safety |
+
 ### 1. Evidence hierarchy for mobility decisions
 
 The package separates policy direction, provisional space, synthetic proxies and field baselines so that “replayable” is not mistaken for “observed”. Every readout must be read with both its permitted and disabled use.
@@ -151,7 +163,7 @@ This package does not claim that its author has visited the site, interviewed re
 
 Affected groups include residents, enterprise employees, carers and children, wheelchair users, night workers, visitors, logistics and maintenance staff, metro and bus operators, accessibility and safety reviewers, and emergency responders. Three questions remain open: could enterprise priority displace resident, accessible or emergency access; can grouped demand be collected with consent, minimisation, retention and deletion controls; and does a disruption fallback actually preserve care and accessible routes? They are registered as open questions, not replaced by model readouts [data:visual/assets/site-and-stakeholder-evidence.json].
 
-P0 therefore starts with authorised dated grouped OD and mode counts, a professional accessibility and people-flow walkthrough, and a public comment-response ledger. Not visiting the site does not block a concept submission, but until those records exist the package makes no claim of resident validation, site knowledge, stakeholder support, operating performance or P1/P2 authorisation. It does not upload private interview transcripts or contact details.
+P0 therefore starts when an authorised organisation confirms the participation window and responsibility boundary. Proposed role owners are the transport authority, subdistrict office, disabled persons federation or qualified accessibility reviewer, and older-person representatives. They first establish a public notice and response ledger, then collect dated grouped OD and mode counts, and then complete an accessibility and people-flow walkthrough with accessibility and age-friendly participation. Each step needs a date, evidence revision, unblocked metrics and a fallback owner. Not visiting the site does not block a concept submission, but until those records exist the package makes no claim of resident validation, site knowledge, stakeholder support, operating performance or P1/P2 authorisation. It does not upload private interview transcripts or contact details.
 
 ## Three-Level Scope Framework
 

@@ -18,6 +18,9 @@
     "visual/assets/mobility-pilot-readiness.json",
     "visual/assets/mobility-pilot-readiness-evidence.json",
     "visual/assets/run-mobility-pilot-readiness.js",
+    "visual/assets/site-and-stakeholder-evidence.json",
+    "visual/assets/implementation-operation-contract.json",
+    "visual/assets/evidence-ledger.json",
     "assets/figures/failure-recourse-board.svg",
     "visual/assets/responsibility-acceptance-contract.json",
     "visual/assets/network-flow-readout.json",
@@ -63,7 +66,7 @@
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
       "start_here": ["proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
-      "strongest_evidence": "四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
+      "strongest_evidence": "四类人入口、法定角色待确认的 P0 证据顺序、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
     {
