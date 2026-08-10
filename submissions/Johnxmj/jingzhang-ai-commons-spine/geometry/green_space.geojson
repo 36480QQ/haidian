@@ -11,8 +11,8 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "green_type": "heritage_commons_or_civic_open_space",
-        "design_intent": "连续公共能力脊柱中的低干预蓝绿与开放空间概念单元。",
+        "green_type": "park_green_space",
+        "design_intent": "连续公共能力脊柱中的低干预公园绿地概念单元；公共广场另保留在用地分区中，不计入绿地率。",
         "area_sqm_declared": 609478.832
       },
       "geometry": {
@@ -52,8 +52,8 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "green_type": "heritage_commons_or_civic_open_space",
-        "design_intent": "连续公共能力脊柱中的低干预蓝绿与开放空间概念单元。",
+        "green_type": "park_green_space",
+        "design_intent": "连续公共能力脊柱中的低干预公园绿地概念单元；公共广场另保留在用地分区中，不计入绿地率。",
         "area_sqm_declared": 663829.276
       },
       "geometry": {
@@ -93,8 +93,8 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "green_type": "heritage_commons_or_civic_open_space",
-        "design_intent": "连续公共能力脊柱中的低干预蓝绿与开放空间概念单元。",
+        "green_type": "park_green_space",
+        "design_intent": "连续公共能力脊柱中的低干预公园绿地概念单元；公共广场另保留在用地分区中，不计入绿地率。",
         "area_sqm_declared": 836967.796
       },
       "geometry": {
@@ -120,88 +120,6 @@
             [
               116.34504064936428,
               39.99316153414979
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "GREEN-012",
-      "properties": {
-        "id": "GREEN-012",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "green_type": "heritage_commons_or_civic_open_space",
-        "design_intent": "连续公共能力脊柱中的低干预蓝绿与开放空间概念单元。",
-        "area_sqm_declared": 824537.994
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34482858889513,
-              39.97390390607536
-            ],
-            [
-              116.34961290311662,
-              39.97407600370922
-            ],
-            [
-              116.34978413694374,
-              39.956582163199414
-            ],
-            [
-              116.34463580665044,
-              39.95639697146225
-            ],
-            [
-              116.34482858889513,
-              39.97390390607536
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "GREEN-015",
-      "properties": {
-        "id": "GREEN-015",
-        "layer": "GREEN_SPACE",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "green_type": "heritage_commons_or_civic_open_space",
-        "design_intent": "连续公共能力脊柱中的低干预蓝绿与开放空间概念单元。",
-        "area_sqm_declared": 884631.682
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.34995623529412,
-              39.939
-            ],
-            [
-              116.34444423529412,
-              39.939
-            ],
-            [
-              116.34463580665044,
-              39.95639697146225
-            ],
-            [
-              116.34978413694374,
-              39.956582163199414
-            ],
-            [
-              116.34995623529412,
-              39.939
             ]
           ]
         ]

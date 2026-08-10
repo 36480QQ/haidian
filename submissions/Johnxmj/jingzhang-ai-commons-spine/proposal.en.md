@@ -28,7 +28,7 @@ Professional principles come from the national urban-design measures, regulatory
 
 ## Three-Level Scope Framework
 
-The approximately 43.6 km² Coordinated Research Area considers exchanges across the Three Zones and Two Wings; the approximately 11.4 km² Overall Design Area organizes renewal, public space, and service interfaces; the approximately 368.4 ha Key-Area Detailed Design Area hosts differentiated assure–translate–share prototypes. Announcement areas are task facts. The submitted 11.413 km² is only an EPSG:4548 recalculation of the provisional polygon, not an official precise boundary. [data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm] [depth:three_level_scope_framework]
+The approximately 43.6 km² Coordinated Research Area considers exchanges across the Three Zones and Two Wings; the approximately 11.4 km² Overall Design Area organizes renewal, public space, and service interfaces; the approximately 368.4 ha Key-Area Detailed Design Area hosts differentiated assure–translate–share prototypes. Announcement areas are task facts. The submitted 11.413 km² is only an EPSG:4548 recalculation of the provisional polygon, not an official precise boundary. [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [depth:three_level_scope_framework]
 
 There are three required key areas, but every polygon is provisional. Once organizer-supplied geometry is available, boundary, land use, buildings, public space, phasing, figures, and metrics must all be regenerated. [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count] [source:BOUNDARY-SOURCE]
 
@@ -119,7 +119,7 @@ Public services first close capability gaps: staffed desks, accessible continuit
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-Conceptual green space totals 381.94 ha or 33.47%; conceptual public space totals 107.37 ha or 9.41%. The first is derived from the complete land-use partition; the second is a relational buffer around the commons spine. They overlap and must not be added as a statutory indicator. [data:geometry/green_space.geojson#GREEN-002] [metric:green_ratio] [metric:green_space_area_sqm]
+Conceptual green space totals 211.03 ha or 18.49%; conceptual public space totals 107.37 ha or 9.41%. The first is derived from the complete land-use partition; the second is a relational buffer around the commons spine. They overlap and must not be added as a statutory indicator. [data:geometry/green_space.geojson#GREEN-002] [metric:green_ratio] [metric:green_space_area_sqm]
 
 The public-space ratio tests conceptual continuity and is not a statutory green-space control. Every value is affected by provisional geometry and the alignment conflict, so official polygons trigger full recalculation. [data:geometry/public_space.geojson#PS-001] [metric:public_space_ratio] [metric:public_space_area_sqm]
 
@@ -140,7 +140,7 @@ Metrics answer what the conceptual model generated, not what statutory planning 
 | Metric | Model value | Meaning |
 | --- | ---: | --- |
 | Provisional site area | 11.413 km² | Projected provisional polygon [metric:site_area_sqm] |
-| Concept green ratio | 33.47% | Design partition, not statutory control [metric:green_ratio] |
+| Concept green ratio | 18.49% | Design partition, not statutory control [metric:green_ratio] |
 | Concept public-space ratio | 9.41% | Relational model; may overlap green space [metric:public_space_ratio] |
 | Concept building coverage | 8.45% | Typological placeholders [metric:building_coverage_ratio] |
 | Walking/interface centerlines | 15.72 km | Concept relationship, not road works [metric:road_centerline_length_m] |

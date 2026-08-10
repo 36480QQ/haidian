@@ -28,7 +28,7 @@ iteration: "v1.0"
 
 ## 三层范围工作框架
 
-统筹研究范围约 43.6 平方公里，用于讨论“三区两翼”创新资源与公共能力交换；总体设计范围约 11.4 平方公里，用于组织更新、公共空间与服务接口；三处重点区约 368.4 公顷，用于形成验证—转译—普惠的差异化原型。公告面积是任务依据，提交图层中的 11.413 平方公里只是 EPSG:4548 下对临时 polygon 的复算值，不能当作官方精确范围。[data:geometry/site_boundary.geojson#PROV-SITE-001] [metric:site_area_sqm] [depth:three_level_scope_framework]
+统筹研究范围约 43.6 平方公里，用于讨论“三区两翼”创新资源与公共能力交换；总体设计范围约 11.4 平方公里，用于组织更新、公共空间与服务接口；三处重点区约 368.4 公顷，用于形成验证—转译—普惠的差异化原型。公告面积是任务依据，提交图层中的 11.413 平方公里只是 EPSG:4548 下对临时 polygon 的复算值，不能当作官方精确范围。[data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm] [depth:three_level_scope_framework]
 
 三处重点区数量为 3，但 polygon 均为临时粗略约束；获得主办方官方图件后，必须替换边界并重算用地、建筑、公共空间、分期、图件和指标。[data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count] [source:BOUNDARY-SOURCE]
 
@@ -119,7 +119,7 @@ iteration: "v1.0"
 
 ## 蓝绿空间、公共空间与城市风貌
 
-概念绿地面积为 381.94 公顷、比例为 33.47%；概念公共空间面积为 107.37 公顷、比例为 9.41%。前者来自完整用地分区中的开放空间，后者来自公共脊柱的关系缓冲，两者可叠加，不能相加为建设指标。[data:geometry/green_space.geojson#GREEN-002] [metric:green_ratio] [metric:green_space_area_sqm]
+概念绿地面积为 211.03 公顷、比例为 18.49%；概念公共空间面积为 107.37 公顷、比例为 9.41%。前者来自完整用地分区中的开放空间，后者来自公共脊柱的关系缓冲，两者可叠加，不能相加为建设指标。[data:geometry/green_space.geojson#GREEN-002] [metric:green_ratio] [metric:green_space_area_sqm]
 
 公共空间比例用于检查概念网络是否连续，不是法定绿地率。所有值受临时边界与线位冲突影响，官方 polygon 到位后整链重算。[data:geometry/public_space.geojson#PS-001] [metric:public_space_ratio] [metric:public_space_area_sqm]
 
@@ -140,7 +140,7 @@ iteration: "v1.0"
 | 指标 | 模型值 | 解释 |
 | --- | ---: | --- |
 | 临时范围面积 | 11.413 km² | 临时 polygon 投影复算 [metric:site_area_sqm] |
-| 概念绿地率 | 33.47% | 设计分区值，非法定指标 [metric:green_ratio] |
+| 概念绿地率 | 18.49% | 设计分区值，非法定指标 [metric:green_ratio] |
 | 概念公共空间率 | 9.41% | 关系模型值，可与绿地叠加 [metric:public_space_ratio] |
 | 概念建筑覆盖率 | 8.45% | 类型化占位，非现状或已批值 [metric:building_coverage_ratio] |
 | 慢行/接口中心线 | 15.72 km | 概念关系总长，非道路工程量 [metric:road_centerline_length_m] |
