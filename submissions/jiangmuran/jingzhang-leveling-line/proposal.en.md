@@ -28,7 +28,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
 | What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
-| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 25 of 416 (6.1%, thinnest of the eight), AI public services 42 | `visual/assets/field_map.json`; the census script is re-runnable |
+| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 25 of 435 (5.7%, thinnest of the eight), AI public services 43 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | Three `evidence_class: regulatory_baseline` entries in `sources.json`, with article locators and how each was verified |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
@@ -55,7 +55,11 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 At no point in that day does she need to understand the words "closure error". She needs to know two things: **that her question was written down**, and **that if the answers do not agree, what stops is the service — not her treatment.**
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 416 merged proposals at the most recent measurement, 271 declare the governance track, and evidence-chain language appears in 29.8% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **25 of 416 by label (6.0%)**, the thinnest of the eight tracks, with youth-friendly public space next at 40; `ai-public-services` is **42 (10.1%)**, next after it. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+<!-- POSITION:BEGIN -->
+
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 435 merged proposals at the most recent measurement, 284 declare the governance track, and evidence-chain language appears in 29.4% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest: `robotics-autonomous-mobility` is the **thinnest of the eight** by label (25 of 435, 5.7%), with `youth-friendly-public-space` next at 41. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+
+<!-- POSITION:END -->
 
 ## Design Basis and Source List
 
@@ -75,7 +79,7 @@ The census deliberately does not read `submissions-data.js`. That file is a gene
 | Second | 215 | 184 | **31** (14.4%) |
 | Third | 228 | 184 | **44** (19.3%) |
 | Fourth | 298 | 292 | **6** (2.0%) |
-| Current reading | 416 | 309 | **107** (25.7%) |
+| Current reading | 435 | 309 | **126** (29.0%) |
 
 <!-- GALLERYLAG:END -->
 
@@ -99,10 +103,10 @@ This is not a comment on the organisers' work. It is **the thing they most lack 
 
 | Structural motif | Proposals | Share |
 |---|---|---|
-| Three cores / three stations | 214 | 51.4% |
-| Two wings | 166 | 39.9% |
-| One spine / one belt | 126 | 30.3% |
-| Evidence chain / recomputable | 124 | 29.8% |
+| Three cores / three stations | 225 | 51.7% |
+| Two wings | 175 | 40.2% |
+| One spine / one belt | 135 | 31.0% |
+| Evidence chain / recomputable | 128 | 29.4% |
 
 <!-- MOTIFS:END -->
 
@@ -114,16 +118,16 @@ The taskbook prescribes "three areas, two wings", so more than half the field dr
 
 | Track | Proposals | Share |
 |---|---|---|
-| Traffic and walkability | 283 | 68.0% |
-| Civic agent governance | 271 | 65.1% |
-| Enterprise services and industry | 239 | 57.5% |
-| Jing-Zhang heritage narrative | 157 | 37.7% |
-| AI origin community | 128 | 30.8% |
-| **AI public services** | **42** | 10.1% |
-| Youth-friendly public space | 40 | 9.6% |
-| **Robotics and autonomous mobility** | **25** | 6.0% |
+| ai-traffic-walkability | 298 | 68.5% |
+| civic agent governance | 284 | 65.3% |
+| enterprise-services-ecosystem | 252 | 57.9% |
+| jingzhang-heritage-narrative | 162 | 37.2% |
+| ai-origin-community | 133 | 30.6% |
+| **AI public services** | **43** | 9.9% |
+| youth-friendly public space | 41 | 9.4% |
+| **robotics and autonomous mobility** | **25** | 5.7% |
 
-Across 416 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are the tracks this proposal works in, and the two thinnest in the field.
+Across 435 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are the tracks this proposal works in, and the two thinnest in the field.
 
 <!-- TRACKS:END -->
 
@@ -137,15 +141,22 @@ tracks:
 
 Four proposals write it that way, so the tracks they declare **were never seen by any count**, and six of the eight tracks were undercounted. The shipped `field_map.json` had been signalling it all along: `proposals_declaring_no_known_track` read 14 where the true value was 10, and the four extra were exactly those files — **when a reading is wrong, the data usually already holds a line that does not add up, and nobody followed it.** The reader is fixed, and the census now reads the local git tree rather than the GitHub API: the API rate-limits, and a census skipped at 403 is where stale numbers begin.
 
-Both tracks have thickened across three measurements — robotics 6 → 12 → **25**, public services 19 → 26 → **42** — while their relative position has not moved: robotics is still the thinnest of the eight, at 16 against a next-thinnest of 32. The wording moves with the data in both directions: the previous revision wrote "tied for second-thinnest" because public services (26) sat one proposal above youth-friendly (25); at 30 against 28 it is second-thinnest on its own again. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
+Both tracks have thickened across every measurement, and their **relative position has not moved**: robotics is still the thinnest of the eight and AI public services sits beside youth-friendly public space just above it. Current counts are in the track table above, not repeated here — **the specific figures in this sentence went stale repeatedly, because it copied the values out of that generated table.** The wording moves with the data in both directions: an earlier revision wrote "tied for second-thinnest" and a later measurement separated them again. **An ordering that the next measurement can change should not be written as a fixed conclusion.**
 
 Labels are not coverage, and that distinction matters. Reading every proposal in those two tracks showed both directions of error: one declares the robotics track while its "robots" are ecological sensing devices, and another substantively treats ground robots, tiered autonomous-vehicle admission and low-altitude delivery corridors while never declaring the track at all. So the precise statement is: **eighteen by label, slightly more in substance, and thinnest of the eight either way** — which is itself a useful reading for the organisers, because track labels currently cannot serve as a coverage measure.
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
-`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 309 filled in, **107 (25.7%) still hold the scaffold placeholder or are empty**.
+`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). <!-- MODELDISCLOSURE:BEGIN -->
 
-And the 309 that are filled in use **125 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **59 different ways** across 195 proposals.
+| Status | Count |
+|---|---|
+| Filled in | 326 |
+| Left at the scaffold placeholder `agent-declared-model`, or empty | **109 (25.1%)** |
+
+The 326 that are filled in use **130 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being “unclassified”). The “GPT / Codex” family alone is written **61 different ways** across 205 proposals.
+
+<!-- MODELDISCLOSURE:END -->
 
 **No one can aggregate "which models produced this call" from that field.**
 
@@ -185,13 +196,19 @@ Motif and structure detection uses Chinese keyword patterns and misses synonyms,
 | Second | 215 | 30.7% |
 | Third | 228 | 30.3% |
 | Fourth | 298 | 29.2% |
-| Current reading | **416** | **25.7%** |
+| Current reading | **435** | **25.1%** |
 
 <!-- CENSUSHISTORY:END -->
 
 **The reconstruction is worth reporting because it is not four for four.** Recomputed at the newest commit whose tree holds exactly that many proposal directories, three rounds — 215, 228 and 298 — reproduce the recorded value **exactly** (0.307 / 0.303 / 0.292). The earliest, at 184, reconstructs to **0.304** against a recorded 0.299: a difference of **one package**. It is not reconciled, and the reason is in the file's own `method` field — the reconstruction is taken at the commit where the directory count matches, which is not necessarily the moment the original reading was taken. **Three exact and one off by one** is better evidence that the reconstruction is computing than four out of four would have been.
 
-**This section used to conclude that the gap was a structural property, and this proposal's own sixth reading refuted it, so it is rewritten.** Across the four rounds reconstructed from git history the gap sat inside a 1.5-point band, 29.2–30.7%, and that stability was read as independence from who enters. The current reading falls outside it — see the last row above. (The prose also used to carry a round at 354 / 29.9% that `census_history.json` does not contain: **that round existed only in prose and was never reconstructed**, so the table now shows the four the file can substantiate plus the live reading.) **The reason is legible in the data and is more interesting than the original claim: the numerator stopped.** The placeholder count climbed 56 → 66 → 69 → 87 → 107 and has then held at **107 across four consecutive readings** (corpora of 381, 394, 408 and 416). Nearly every recently merged proposal fills `model_family` in. The share is falling because the denominator grows while the numerator does not — not because anything in the existing corpus changed. This proposal does not claim to know why; charter discussion, updated scaffolds or coincidence are not separable from this data. **What it does show is the thing this proposal argues throughout: hang a conclusion on one snapshot and the sixth reading takes it away; hang it on a method and the sixth reading is evidence for it rather than against it.**
+**This section used to conclude that the gap was a structural property, and this proposal's own sixth reading refuted it, so it is rewritten.** Across the four rounds reconstructed from git history the gap sat inside a 1.5-point band, 29.2–30.7%, and that stability was read as independence from who enters. The current reading falls outside it — see the last row above. (The prose also used to carry a round at 354 / 29.9% that `census_history.json` does not contain: **that round existed only in prose and was never reconstructed**, so the table now shows the four the file can substantiate plus the live reading.) <!-- NUMERATOR:BEGIN -->
+
+**The numerator's behaviour is legible, and more interesting than the original claim.** Every census re-run commits a fresh `field_map.json`, so every reading this package has ever taken is in this branch's git history; `visual/assets/reading_log.json` recovers all of them — **11 readings**, corpus 228 to 416, placeholder counts 69 → 87 → 102 → 104 → 106 → 106 → 106 → 105 → 107 → 107 → 107; the placeholder count **fell 1 time(s)** along the way (106→105 at 373→381), which means existing proposals **were** edited. The longest unchanged run is **107**, held across 3 readings (corpora of 394 / 408 / 416).
+
+**This paragraph used to say the count “held at 107 across four consecutive readings (381, 394, 408, 416)”, and the log says the 381 reading was 105.** Four was three, and the direction was wrong too: the same paragraph asserted the share fell “not because anything in the existing corpus changed”, and the numerator demonstrably went down. That sentence was written from memory — it restated figures printed to a terminal during past builds, not any file in the package. **This is what this proposal demands of everyone else, applied to itself**: a number with no file behind it deforms in the retelling even when you measured it yourself. With the log built, it cannot.
+
+<!-- NUMERATOR:END -->
 
 ![Evidence chain and submission package: a leveling circuit not yet closed](assets/figures/evidence-circuit.en.png)
 
@@ -730,7 +747,11 @@ The leveling network replaces that with a segment-by-segment regime whose core r
 
 This rule turns governance into a spatial design problem, which is why it belongs in an urban design proposal rather than in technical management. The area a robot may operate in equals the area benchmarks cover; to expand operation, points must be built first. Points are physical, publicly accessible and uniquely numbered [data:geometry/public_space.geojson#PUBLIC-001], and their coverage ratio is recomputable from the layer [metric:public_space_ratio].
 
-**First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that six items are now the de facto standard, each appearing in four or more: speed limits, remote and physical emergency stop, on-site safety officers, incident logs, an equivalent non-AI path, and scenario-level suspension and exit conditions. This proposal **adopts all six** and writes them into the cards above, but does **not present them as innovations** — they are the admission floor. Presenting the floor as a selling point shows the field has not been read.
+**First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
+
+These six are now de facto standard. The figures in brackets are measured counts across the 435-proposal corpus: scenario-level suspension and exit conditions (278); an on-site safety officer (193); a non-AI equivalent path (179); remote and physical e-stop (99); speed limits (53); event logs (28). The thinnest is at 28, the thickest at 278. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+
+<!-- BASELINE6:END -->
 
 The increment lies elsewhere: **in the test items that return zero or near-zero hits across the proposals in these two tracks.**
 
@@ -1085,7 +1106,11 @@ A proposal that claims to do heritage narrative without naming a single heritage
 | **Existing alignment and engineering structures** | Along the whole spine | Sleepers, ballast, signal posts and mileposts, retained and annotated in situ | Requires site survey to enumerate; no specific list is given here |
 | Qinglongqiao Station and the switchback | **Out of scope** (near Badaling, tens of kilometres away) | **Historical context for the line as a whole only**, not a site element of this belt | — |
 
-Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and **27 proposals in this call build their identity on it** [source:FIELD-CENSUS-2026-08]. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
+Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and <!-- ZIGZAG:BEGIN -->
+
+Of the 435 submissions, **20** name it in the title or summary and **100** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
+
+<!-- ZIGZAG:END -->. Citing it as a *narrative symbol* is entirely legitimate — it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² design area.** This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line — **the surveying method** — which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's own boundary of use: **a symbol can be borrowed; a site cannot.**
 
 Historical statements must be proofread and may not be altered to suit the narrative [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. Items marked as a data gap in the table above may not enter any spatial conclusion before the official layer is published — an inferred protection boundary would be the most damaging possible instance of fabricated certainty, because it would look authoritative precisely where the constraint is strictest.
 
@@ -1237,7 +1262,11 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 ### One deliverable deliberately not shipped: `simulation.json`
 
-The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. Three of 354 packages ship one. This one does not, and the reason has to be written down or the absence is just a gap.
+The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
+
+**5 of 435** submissions ship one (`YoungCan-Wang`, `ZHLins`, `ZephyrL0`, `luther-3`, `spacethroughing`). This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+
+<!-- SIMJSON:END -->
 
 **First, this proposal has no basis for the numbers that schema wants.** It is designed for an agent-dispatch simulation: per-task outcomes, energy used against an energy budget, dispatch-schema validity. No dispatch simulation was run here and there is no basis for any energy figure. Every value would be invented.
 
@@ -1249,7 +1278,15 @@ The repository's `validate_submission.py` carries `validate_simulation_consisten
 
 ### An errata register: `visual/assets/errata.json`
 
-**Across 351 merged proposals there is no errata, no retraction and no author-written postmortem.** Two bundle the maintainer's feedback about themselves. None says what it got wrong before being asked.
+<!-- SELFCORRECTION:BEGIN -->
+
+**This paragraph used to read “not one submission in the field ships an erratum.” Re-measured, that is false, so it is corrected here.**
+
+Of the current 435, **2** ship a standalone errata file — this proposal and `147228` — and **8** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
+
+It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. The errata file in `147228` carries a `found_by` field separating “my own gate found it” from “an external read found it” — a distinction this register did not draw and now does. **This proposal no longer claims nobody else does this. It claims that an errata register should be generated by the build and constrained by a gate, not maintained by hand.**
+
+<!-- SELFCORRECTION:END -->
 
 Which is the reason to ship one. A proposal arguing that a city should publish its own error cannot itself present a defect-free surface — the mechanism it proposes rests on the idea that a measurement you cannot see fail is a measurement you cannot trust, and a document is no different.
 
@@ -1257,11 +1294,11 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-41 entries. By finder:
+44 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 17 | The audit was run against the shipped package, not a draft |
+| Independent audit | 20 | The audit was run against the shipped package, not a draft |
 | The author | 18 | Found while working |
 | This package's own gate | 2 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **4** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950; [@147228](https://github.com/147228) on Issue #950 / PR #1190 |
@@ -1287,7 +1324,10 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 | Two copies of one thing drifted | 3 |
 | A measurement answering a question it cannot answer | 2 |
 | The gate reported and was ignored | 1 |
+| An index that does not index | 1 |
+| Six classes listed for a seven-class partition | 1 |
 | A term of art applied where it does not hold | 1 |
+| The table stopped being a table | 1 |
 
 <!-- ERRATA:SHAPES:END -->
 
@@ -1324,11 +1364,11 @@ An authorisation statement a reviewer cannot verify is not a statement. Each row
 
 <!-- LEDGERCOUNT:BEGIN -->
 
-**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **83 shipped files** carry a clearance class; a file without one fails the build:
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **85 shipped files** carry a clearance class; a file without one fails the build:
 
 | Clearance class | Files |
 |---|---|
-| `author-originated` | 61 |
+| `author-originated` | 63 |
 | `provisional-only-with-stated-limit` | 9 |
 | `author-originated-measurement` | 8 |
 | `author-originated-with-embedded-fonts` | 4 |

@@ -4,9 +4,9 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 41,
+  "total": 44,
   "by_found_by": {
-   "audit": 17,
+   "audit": 20,
    "own-gate": 2,
    "external-reviewer": 4,
    "self": 18
@@ -21,7 +21,10 @@
    "claim-outlived-the-package": 3,
    "deliverable-not-inspected-before-shipping": 8,
    "gate-reported-and-was-ignored": 1,
-   "measurement-answering-a-question-it-cannot-answer": 2
+   "measurement-answering-a-question-it-cannot-answer": 2,
+   "six-classes-for-a-seven-class-partition": 1,
+   "the-table-stopped-being-a-table": 1,
+   "index-that-does-not-index": 1
   }
  },
  "found_by_meaning_zh": {
@@ -438,6 +441,36 @@
    "fix_zh": "限制改写为两条互相夹住的不可观测量：缓存命中使标准差偏小，配置变化（若发生）使它偏大；结论改述为「同一份输入的两次读数」，标题所称的仪器重复性只在身份不变时成立。@147228 的 PR #1190 让 model、endpoint、effort 与 prompt/schema/policy 指纹随决定落盘并要求身份一致才复用缓存——合入后这个区分第一次可以从数据里做出来。该 PR 恰好实现了本方案在 #950 提出的「记录本次是否命中缓存」，并且比那条建议更完整。",
    "found_by_name": "@147228",
    "found_in": "Issue #950 / PR #1190"
+  },
+  {
+   "id": "E42",
+   "commit": "3b0614ae",
+   "file": "proposal.md",
+   "found_by": "audit",
+   "shape": "six-classes-for-a-seven-class-partition",
+   "what_zh": "用地表列了 05、0702、0802、0803、1401、16 六类，而 `geometry/land_use.geojson` 的剖分是七类——漏掉的是 1207，站—点合一的轨道站厅接入段。两个语种同时漏。",
+   "why_zh": "**这正是勘误册里已经记着的那一条，在描述它的那句话往后几节的正文里又犯了一次**——「FIG.01 的用地图例列六类而剖分已是七类」。一条被记录下来的缺陷形状，如果只修了它出现的那一处而没有建闸门，它会在同一份文件的别处原样重演。",
+   "fix_zh": "补上该行；`census_claims_qa` 现在从 `land_use.geojson` 读出全部代码，要求每一个都出现在两个语种的表里。这次是建闸门而不是改一处。"
+  },
+  {
+   "id": "E43",
+   "commit": "4e490109",
+   "file": "proposal.en.md",
+   "found_by": "audit",
+   "shape": "the-table-stopped-being-a-table",
+   "what_zh": "十一列的更新项目表，分隔行写成 `|---||---||---|…`——十一个 `|---|` 首尾相接，解析出 21 格对 11 列表头。任何 Markdown 渲染器都不会把它画成表格。",
+   "why_zh": "**它就在「每一列都是必填的」这句话正下方**，也就是一张表最不该停止是表格的位置；而且只在英文版，因此比对分节**内容**的 parity 闸门放它过去了。本包有十一道闸门读散文说了什么，一道也没有读它能不能被解析。",
+   "fix_zh": "修好分隔行；新增 `markdown_structure_qa`：表格分隔行与每一行的格数必须与表头一致，有序列表必须严格递增。用重新植入这两处缺陷做过自测，它会点名 `proposal.en.md:1114` 与 `:1413` 并以 1 退出。"
+  },
+  {
+   "id": "E44",
+   "commit": "4e490109",
+   "file": "proposal.en.md",
+   "found_by": "audit",
+   "shape": "index-that-does-not-index",
+   "what_zh": "图纸索引上方写「共十二张图纸，FIG.00–FIG.11 连续编号」，下方的表只有九行（FIG.01–FIG.09）。缺 FIG.00（全文开篇那张）、FIG.10（人视街道剖面）与 FIG.11（区域协同接口）——**而正文在 L531 按编号引用了 FIG.11**，把读者指向一个不含它的索引。同一处的复核清单则编号成 1…10、8、9，十二项用了十个号。",
+   "why_zh": "两个语种带着同样的九行，所以这不是翻译疏漏，是**完整性声明写在表格上方那句话里、而不是由表格本身承担**。清单的编号是看得见的那个缺陷，危险的是另一个：清单上每一项都指名一个路径，一份把评审指向不存在文件的清单，比没有清单更糟。",
+   "fix_zh": "两者都改为生成：索引由 `build_figure_index.py` 从随包 PNG 生成，句中的份数写自 `len(FIGURES)`，并断言每张随包图有编号、每个编号有文件、正文引用的每个 FIG.NN 都能解析到行；清单由 `enumerate` 编号，且十二项声明的 17 条路径必须全部在包内解析。"
   },
   {
    "id": "E41",
