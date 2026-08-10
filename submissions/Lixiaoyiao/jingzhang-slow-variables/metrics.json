@@ -18,6 +18,84 @@
         "Provisional repository boundary; not an official planning redline."
       ]
     },
+    "coordinated_research_area_sqm": {
+      "status": "known",
+      "value": 43600000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate task area; no polygon calculation",
+      "confidence": "high",
+      "assumptions": [
+        "This is an announced approximate benchmark, not a surveyed or official polygon area."
+      ]
+    },
+    "overall_design_area_sqm": {
+      "status": "known",
+      "value": 11400000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate task area; no polygon calculation",
+      "confidence": "high",
+      "assumptions": [
+        "This is the announced approximate benchmark; site_area_sqm is the separate provisional polygon recalculation."
+      ]
+    },
+    "key_detailed_design_area_sqm": {
+      "status": "known",
+      "value": 3684000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate task area; no polygon calculation",
+      "confidence": "high",
+      "assumptions": [
+        "The announced total and the three provisional polygons remain separate evidence classes."
+      ]
+    },
+    "zhongzhiyuan_ai_acceleration_area_sqm": {
+      "status": "known",
+      "value": 1921000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate key-area benchmark",
+      "confidence": "high",
+      "assumptions": [
+        "The value does not legitimise the provisional PROV-KEY-001 polygon."
+      ]
+    },
+    "beijing_ai_origin_community_area_sqm": {
+      "status": "known",
+      "value": 1043000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate key-area benchmark",
+      "confidence": "high",
+      "assumptions": [
+        "The value does not legitimise the provisional PROV-KEY-002 polygon."
+      ]
+    },
+    "dazhongsi_ai_industry_cluster_area_sqm": {
+      "status": "known",
+      "value": 720000,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official announced approximate key-area benchmark",
+      "confidence": "high",
+      "assumptions": [
+        "The value does not resolve the documented location offset in provisional PROV-KEY-003."
+      ]
+    },
     "green_space_area_sqm": {
       "status": "known",
       "value": 2589338.291229,
@@ -57,6 +135,98 @@
         "Nine reversible module envelopes, not surveyed buildings or confirmed construction scale."
       ]
     },
+    "zhongzhiyuan_module_footprint_area_sqm": {
+      "status": "known",
+      "value": 114594.604512,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum area(BLDG-ZY-01..03) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual reversible module envelopes only; not surveyed stock, approved floor area or committed development scale."
+      ]
+    },
+    "ai_origin_module_footprint_area_sqm": {
+      "status": "known",
+      "value": 61968.278926,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum area(BLDG-AO-01..03) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual reversible module envelopes only; not surveyed stock, approved floor area or committed development scale."
+      ]
+    },
+    "dazhongsi_module_footprint_area_sqm": {
+      "status": "known",
+      "value": 42794.985821,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum area(BLDG-DZ-01..03) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual reversible module envelopes only; PROV-KEY-003 has a documented location offset and is not an official Dazhongsi boundary."
+      ]
+    },
+    "building_coverage_ratio": {
+      "status": "known",
+      "value": 0.019220295,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(union(conceptual_building_envelopes)) / site_area_sqm in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual package-internal coverage only; it is not a statutory building coverage control."
+      ]
+    },
+    "phase_1_area_sqm": {
+      "status": "known",
+      "value": 4232697.316703,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-001) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual spatial implementation surface; project pilots may occur across areas and remain evidence-gated."
+      ]
+    },
+    "phase_2_area_sqm": {
+      "status": "known",
+      "value": 3853523.206788,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-002) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual spatial implementation surface; not an approved construction programme."
+      ]
+    },
+    "phase_3_area_sqm": {
+      "status": "known",
+      "value": 3326615.547068,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "area(PHASE-003) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual spatial implementation surface; expansion or retirement depends on evidence and approvals."
+      ]
+    },
     "green_ratio": {
       "status": "known",
       "value": 0.22688,
@@ -85,6 +255,114 @@
         "Package-internal conceptual ratio; public and green space may overlap by design."
       ]
     },
+    "research_translation_land_area_sqm": {
+      "status": "known",
+      "value": 2415628.520135,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(LU-001) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual functional band within a provisional boundary; not statutory zoning or a parcel programme."
+      ]
+    },
+    "research_translation_land_ratio": {
+      "status": "known",
+      "value": 0.211659115,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-001) / site_area_sqm in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Package-internal conceptual function ratio, not an approved land-use share."
+      ]
+    },
+    "century_baseline_land_area_sqm": {
+      "status": "known",
+      "value": 2589339.42919,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(LU-002) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual functional band within a provisional boundary; not statutory green-space control."
+      ]
+    },
+    "century_baseline_land_ratio": {
+      "status": "known",
+      "value": 0.22687979,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-002) / site_area_sqm in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Package-internal conceptual function ratio, not an approved land-use share."
+      ]
+    },
+    "replaceable_ai_production_land_area_sqm": {
+      "status": "known",
+      "value": 3366138.426462,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(LU-003) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual functional band within a provisional boundary; not statutory zoning or committed industry capacity."
+      ]
+    },
+    "replaceable_ai_production_land_ratio": {
+      "status": "known",
+      "value": 0.294943479,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-003) / site_area_sqm in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Package-internal conceptual function ratio, not an approved land-use share."
+      ]
+    },
+    "lasting_life_support_land_area_sqm": {
+      "status": "known",
+      "value": 3041726.416458,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(LU-004) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual functional band within a provisional boundary; no housing or service quota is promised."
+      ]
+    },
+    "lasting_life_support_land_ratio": {
+      "status": "known",
+      "value": 0.266518265,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(LU-004) / site_area_sqm in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Package-internal conceptual function ratio, not an approved land-use share."
+      ]
+    },
     "key_area_count": {
       "status": "known",
       "value": 3,
@@ -111,14 +389,38 @@
     },
     "industry_test_scenario_count": {
       "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(cards explicitly marked industry testing: S01-S03)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "operations_test_scenario_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(cards explicitly marked operations testing: S12)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "test_verification_scenario_count": {
+      "status": "known",
       "value": 4,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(cards explicitly marked industry/operations testing)",
+      "formula": "industry_test_scenario_count + operations_test_scenario_count",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "This combined count preserves the distinction between three industry tests and one operations-resilience test."
+      ]
     },
     "persona_count": {
       "status": "known",
@@ -133,14 +435,67 @@
     },
     "pilgrimage_landmark_count": {
       "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(three explicitly named pilgrimage landmark concepts)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_landmark_concept_count": {
+      "status": "known",
       "value": 4,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(public landmark concepts including distributed archive)",
+      "formula": "three pilgrimage landmark concepts + one distributed archive node type",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "The archive cabinets are a distributed node type, not a fourth pilgrimage landmark."
+      ]
+    },
+    "case_study_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "sources.json"
+      ],
+      "formula": "count(case-transfer rows with distinct registered source IDs)",
+      "confidence": "high",
+      "assumptions": [
+        "Cases transfer mechanisms only; no benchmark ratio, budget or partnership is imported."
+      ]
+    },
+    "ecosystem_element_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "eight taskbook ecosystem elements + one cross-cutting governance layer",
+      "confidence": "high",
+      "assumptions": [
+        "The taskbook requires eight named elements; governance is this proposal's additional cross-cutting layer, not a ninth taskbook element."
+      ]
+    },
+    "regional_synergy_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(proposed regional exchange-interface rows)",
+      "confidence": "high",
+      "assumptions": [
+        "Interfaces are proposals, not confirmed intergovernmental or institutional partnerships."
+      ]
     },
     "mobility_crosslink_count": {
       "status": "known",
@@ -155,6 +510,19 @@
         "Need corridors, not road redlines or engineering alignments."
       ]
     },
+    "conceptual_mobility_network_length_m": {
+      "status": "known",
+      "value": 16767.521739,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum length(ROAD-SPINE-001, CROSS-01..06) in EPSG:4548",
+      "confidence": "low",
+      "assumptions": [
+        "Conceptual centreline length only; not an official road, greenway or construction quantity."
+      ]
+    },
     "renewal_project_count": {
       "status": "known",
       "value": 9,
@@ -165,6 +533,130 @@
       "formula": "count(unique project package IDs P01-P09 in proposal.md)",
       "confidence": "high",
       "assumptions": []
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(surveyed_or_approved_floor_area_by_building)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No cleared building survey, floor count, approved development programme or statutory capacity is available."
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "approved_or_surveyed_building_height",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official height controls and surveyed building heights are unavailable."
+    },
+    "road_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "area(official_road_redlines_or_verified_centreline_width_buffers)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The package contains conceptual centreline needs only; official road redlines and verified widths are unavailable."
+    },
+    "road_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "road_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Road area cannot be calculated from conceptual centrelines without official redlines or verified widths."
+    },
+    "ai_talent_density_index": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "display_unit": "baseline-normalised index",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "verified resident_and_worker_talent_baseline / agreed_reference_area",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No project-area talent baseline, agreed denominator or privacy-safe measurement protocol is available."
+    },
+    "ai_industry_output_index": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "display_unit": "baseline-normalised index",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "verified_project_area_output_baseline / agreed_reference_value",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No project-area enterprise roster, output baseline or agreed attribution method is available."
+    },
+    "cross_area_handoff_completion_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "accepted_handoff_records / eligible_handoffs",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "The proposed handoff protocol has not been piloted and has no operating baseline."
+    },
+    "scenario_review_on_time_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "scenario_reviews_completed_by_expiry / scenarios_due_for_review",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "No scenarios are operating under the proposed Clock Contract, so no review baseline exists."
+    },
+    "human_takeover_drill_pass_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "takeover_drills_meeting_agreed_criteria / takeover_drills_run",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Professional pass criteria and operating drill records do not yet exist."
+    },
+    "non_digital_equivalent_service_coverage_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "services_with_complete_staffed_or_physical_equivalent / reviewed_ai_enabled_services",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "A verified project-area public-service inventory and field accessibility audit are unavailable."
     },
     "floor_area_ratio": {
       "status": "unknown",

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A Century Baseline, three Changeover Yards, two Buffer Wings and twelve Time Marks protect heritage, blue-green space, walkability, public rights and long-term life as slow variables, while AI systems remain replaceable, review-dated, human-operated and retireable fast variables."
 tracks: ["youth-friendly-public-space", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # JING-ZHANG SLOW VARIABLES
@@ -48,9 +48,52 @@ The principal name is JING-ZHANG SLOW VARIABLES and the line is “Fast technolo
 
 The three official positionings remain intact. The Centennial Jing-Zhang Cultural Belt protects continuity of memory; the Urban AI Life Experience Belt protects continuity of everyday service; and the AI Integrated Innovation Belt protects continuity of responsibility from research through testing, adoption, maintenance and retirement. The five official functions become daily full-stack testing, annual ecosystem collaboration, time-limited AI scenarios, shared day-and-night urban life and public lifecycle governance. The Technology Services Wing supplies talent, finance, legal and IP services; the Xiaoyue River Scenario Enablement Wing supplies real needs and feedback. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
-Eight cases contribute mechanisms rather than visual forms. Barcelona 22@ links innovation to housing, services and green axes. King's Cross combines railway heritage, universities and long-term stewardship. West Chelsea shows why access, light and adjacent-development rules matter to a linear park. Paris Rive Gauche and Urban Lab combine district delivery with real-world pilots. Helsinki's Smart Kalasatama demonstrates small, short-cycle co-created trials. Singapore's Punggol Digital District integrates university, industry and district systems. Amsterdam treats registration, accountability, objections and audit as a lifecycle. Montréal's Mila shows how a neutral research institution can connect open science, transfer and responsible AI. [source:CASE-BCN-22AT] [source:CASE-AMS-ALGO]
+### Transfer Evidence from Eight Cases
 
-The resulting ecosystem moves from controlled technical changeover at Zhongzhiyuan, to social adaptation at AI Origin, to market adoption and maintenance at Dazhongsi. Each transfer requires a Clock Contract recording public-value baseline, permitted data, owner, review date, human takeover, non-AI route and asset afterlife. Haidian's district-wide AI strength is useful background, but district figures are not downscaled into invented project-area outputs or investment promises. [source:HAIDIAN-GOV-REPORT-2026]
+Global references transfer only mechanisms supported by their registered sources. The proposal does not copy imagery, ratios, budgets, governance bodies or partnerships. Each row states what is learned, where it lands and what is explicitly not imported.
+
+| Case | Transferable mechanism | Application in Slow Variables | Explicit non-transfer |
+| --- | --- | --- | --- |
+| Barcelona 22@ | Innovation-led renewal also addresses mixed uses, public services and green public space | `LU-002`/`LU-004` and P01 continuity audit | No imported land-use ratio, housing quantity or finance tool [source:CASE-BCN-22AT] |
+| London King’s Cross | Railway heritage, university links and long-term place stewardship can work together | P04 Lasting-Life Commons and P08 public ledger | No assumed campus partnership, ownership arrangement or single operator [source:CASE-LON-KX] |
+| New York High Line / West Chelsea | A linear park needs coordinated access, daylight and adjoining interfaces | P01 Baseline audit and P02 cross-link surveys | No transferred zoning uplift, development rights or landscape form [source:CASE-NYC-HIGHLINE] |
+| Paris Urban Lab | Real-world trials need selection, bounded settings, evaluation and exit | P03 controlled loop and P05 adoption/repair review | No claim of a Paris-style partnership or copied procurement system [source:CASE-PARIS-URBAN-LAB] |
+| Helsinki Kalasatama | Small, short-cycle pilots can be co-defined by users and implementers | S01-S12 scenario cards and P08 renewal process | No imported grant size, institutional role or performance result [source:CASE-HEL-KALASATAMA] |
+| Singapore Punggol Digital District | University–industry links can pair with a separable digital layer | S03 city-model bay and disconnectable municipal interfaces | A twin is not an approval basis; district capacity is not copied [source:CASE-SG-PDD] |
+| Amsterdam algorithm governance | Registration, accountability, objection and audit span the lifecycle | P08 Clock Contract, ledger and staffed appeal | Overseas practice is not stated as a local statutory duty [source:CASE-AMS-ALGO] |
+| Montréal Mila | A neutral research hub can link open science, translation and responsible AI | Independent-review role and cross-yard handover records | No invented tenancy, partnership or investment commitment [source:CASE-MTL-MILA] |
+
+### Eight Required Elements + One Cross-Cutting Governance Layer (8+1)
+
+The taskbook names eight ecosystem elements: land, space, industry, capital, talent, computing, data and scenarios. This proposal adds governance as a cross-cutting layer; it does not misstate governance as a ninth taskbook element. Every row has an entry and exit gate. [source:AGENT-TASKBOOK]
+
+| Element | Spatial/mechanism carrier | Suggested accountable role | Entry gate | Exit or review evidence |
+| --- | --- | --- | --- | --- |
+| Land | Four conceptual functional bands `LU-001..004` | Qualified planning/GIS team | Official boundaries, parcels and statutory uses available | Recalculate if the public Baseline is weakened or land procedure fails |
+| Space | Century Baseline, three Yards and twelve Time Marks | Planning, landscape, accessibility and operations professionals | Survey, heritage and public-passage evidence | Stop if free stay, continuity or a non-digital route is incomplete |
+| Industry | Technical gate → social gate → adoption/maintenance gate | Site operator and independent safety reviewer | Test scope, owner, fault and retirement plan complete | No progression when safety, maintenance or handover evidence fails |
+| Capital | Proposed maintenance/retirement reserve and lifecycle account | Finance, procurement and operations roles | Auditable method and visible exit cost | No launch without maintenance responsibility or retirement provision; no amount is promised |
+| Talent | AI Origin Lasting-Life Commons and community-service interface | Suggested community/site, service and housing professionals | Living/service baseline and public co-review | Pause on digital exclusion, loss of free space or unremedied displacement |
+| Computing | Disconnectable edge computing and changeover bays | Energy, fire, cyber and facility professionals | Energy, fire, network and human fallback verified | Remove if it cannot separate from the safe city base or lacks an afterlife |
+| Data | Clock Contract and minimum-data schedule | Data-compliance role, scenario owner and human reviewer | Purpose, lawful source, retention and export/deletion paths complete | Stop on purpose drift, no appeal or no exit |
+| Scenarios | S01-S12 expiring scenario cards | Scenario operator, professional reviewers and user representatives | Owner, review, takeover, non-AI route and retirement complete | Expiry without review, or any missing element, means automatic exit |
+| Governance (proposal layer) | Proposed Slow Variables Council and public ledger | Multi-disciplinary, resident and accessibility representatives | Duties, records, conflicts and disclosure rules defined | No renewal when final human responsibility or auditable records are absent |
+
+The resulting ecosystem moves from controlled technical changeover at Zhongzhiyuan, to social adaptation at AI Origin, to adoption, maintenance and retirement at Dazhongsi. Each transfer requires a Clock Contract. District AI information remains background and is not downscaled into invented project-area talent or output figures. [source:HAIDIAN-GOV-REPORT-2026] [metric:ecosystem_element_count]
+
+### Proposed Regional-Synergy Interfaces
+
+The five interfaces below answer the taskbook review dimension through exchangeable deliverables only. They do not imply that any place, institution or government has agreed to cooperate; no interface starts without authority, responsibility and lawful data. [source:AGENT-TASKBOOK]
+
+| Counterpart | Proposed exchange deliverable | Entry condition | Pause/exit condition |
+| --- | --- | --- | --- |
+| Beiwei Community | Resident problem list, non-AI service routes and co-review records | Voluntary participation, public question and minimum data | Inadequate representation, privacy risk or unanswered feedback |
+| Future Science City | Reproducible test protocols, failure records and review templates | Both sides define permission, responsibility and scope | Results are irreproducible or misrepresented as universal certification |
+| Huairou Science City | Safety and maintenance checklist for scientific devices in public space | Professional review and public risk boundary | No maintenance, retirement or public-explanation mechanism |
+| Beijing E-Town | Product-adoption, repair-training and asset-take-back templates | Replaceable vendors, exportable data and traceable responsibility | Vendor lock-in or invisible exit cost |
+| Beijing–Tianjin–Hebei | A shared format for public problems, evaluation results and retirement archives | Each jurisdiction separately meets its procedure and data permissions | Any party presents a conceptual trial as approval or political commitment |
+
+These five proposed interfaces exchange auditable outputs only; they do not pre-assign industry, finance or policy. [metric:regional_synergy_interface_count]
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -64,15 +107,49 @@ Urban character avoids a generic cyber aesthetic. Durable layers use repairable,
 
 ## Detailed Design of Key Areas
 
-**Zhongzhiyuan - Daily Changeover Yard.** This is the full-stack innovation and reliability gateway. It combines a controlled low-speed test loop, model and edge-device changeover bays, a public benchmark gallery and a staffed takeover room. Only systems that pass the safety gate reach the public edge; deep testing remains isolatable. Existing structures are to be retained or adapted where evidence permits, while new insertions remain demountable and serviceable. Testing, logistics and public walking are separated by time as well as space. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
+### Zhongzhiyuan AI Independent Innovation Acceleration Area | Daily Changeover Yard
 
-**Beijing AI Origin Community - Annual Living Commons.** This is the near-campus translation and talent-staying core, not merely a startup showroom. Shared ground floors, bookable classrooms, a family-friendly commons, quiet work rooms and staffed non-digital counters connect campuses, communities and the park. Students, residents, carers and frontline operators review services before launch; the annual review decides renewal, reduction or exit. Housing mix, ownership and campus links remain conceptual pending statutory and stakeholder evidence. [data:geometry/key_areas.geojson#PROV-KEY-002] [source:CASE-LON-KX]
+This is the full-stack innovation and reliability gateway. Its spatial prototype grades control from inside to outside: isolated test loop → staffed takeover/maintenance band → public benchmark gallery → Century Baseline. A system reaches the public edge only after it passes the safety gate. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
 
-**Dazhongsi - Decennial Reuse Yard.** This is the adoption and long-term maintenance gateway for AI-native businesses. The priorities are walking continuity across the four station quadrants, active and inclusive ground floors, night safety and kerb/parking management. A product take-back desk, Public Adoption Hall and maintenance workshop convert purchase into a supported service relationship. Commercial activity must retain free places to stay, account-free access and staffed help. [data:geometry/key_areas.geojson#PROV-KEY-003] [source:CASE-NYC-HIGHLINE]
+| Detail item | Conceptual design decision | Auditable evidence and data gate |
+| --- | --- | --- |
+| Programme | Model/edge-device changeover, low-speed embodied testing, public benchmarks and independent review | S01-S03; no public interface without permit and owner |
+| Building modules | `BLDG-ZY-01..03` total 114,594.60 m² of conceptual footprints, with demountable partitions, visible maintenance and common connections | Envelope only, not floor area, FAR or approved scale [metric:zhongzhiyuan_module_footprint_area_sqm] |
+| Retain/adapt/demolish | Survey structure, ownership and heritage first; then repair, adapt and insert reversibly; no demolition object is named | `A-BUILDING-001` and professional review |
+| Public space | `TIME-MARK-10..12` form a benchmark gallery, staffed help and visible fault state without personal tracking | Confirm public status and accessibility before siting |
+| Movement | `CROSS-06` is an east-west need only; test, logistics and public walking are separated and stoppable | No fixed alignment without redlines, flows, fire and river evidence |
+| Section prototype | Public spine → display threshold → takeover/maintenance → isolated test bay; intensity reduces towards the public edge | Qinghe, Fifth Ring, energy, fire and heritage conditions are stop lines |
+| Project package | P03 controlled loop, linked to P02 surveys, P06 Time Marks and P08 Clock Contract | Closed/indoor proof first; expansion only after the gates |
 
-**Location-offset disclosure.** The current `PROV-KEY-003` directly retains the repository's provisional source geometry. Its centroid is approximately 39.94692° N, 116.34850° E: about 2.26 km from Dazhongsi metro station and 0.23 km from Beijing North Railway Station, so the polygon does not align with its Dazhongsi name anchor. This proposal neither shifts the polygon independently nor invents precision. The moves in this section are therefore functional directions for the Dazhongsi task, not site or engineering conclusions from the submitted polygon. Official key-area geometry must trigger recalculation of geometry, metrics, figures, evidence matrices and bilingual narrative anchors. [source:ISSUE-1029] [data:geometry/key_areas.geojson#PROV-KEY-003]
+### Beijing AI Origin Community | Annual Living Commons
 
-All three Yards use one handover sheet. Zhongzhiyuan transfers technical boundaries and failure records. AI Origin transfers user feedback and equity review. Dazhongsi transfers operating cost, adoption conditions and retirement routes. Failure at one gate never implies automatic progression. Every key-area polygon is provisional, so detailed placements express relationships and priorities only and must be recalculated when official geometry arrives. [source:PROVISIONAL-BOUNDARY]
+This is the near-campus translation and long-life core. The prototype is a campus–park–community stitch: a continuous walk enters a public ground floor, then shared learning, quiet work, family/care services and a staffed non-digital counter. Innovation display may not displace ordinary life. [data:geometry/key_areas.geojson#PROV-KEY-002] [source:CASE-LON-KX]
+
+| Detail item | Conceptual design decision | Auditable evidence and data gate |
+| --- | --- | --- |
+| Programme | Learning, translation, family service, short-stay support, community culture and quiet work are mixed | Service-needs baseline and co-review by residents, students and frontline staff |
+| Building modules | `BLDG-AO-01..03` total 61,968.28 m² of conceptual footprints; shared ground floors may change annually | Not a housing quantity or approved development scale [metric:ai_origin_module_footprint_area_sqm] |
+| Retain/adapt/demolish | Existing use and community value enter the retention gate; no demolition for short-lived technology imagery | No decision without ownership, structure, fire and current-use evidence |
+| Public space | `TIME-MARK-07..08` support a learning commons, staffed service, quiet hours and an account-free route | No renewal if free stay or non-digital equivalent service is incomplete |
+| Movement | `CROSS-04` is a campus–site–community connection need, not a gate, parcel or road project | Confirm entrances, fire access, commute flows and ownership |
+| Section prototype | Park walk → open ground floor → learning/work → quiet/care buffer; public access extends inward | Daylight, fire, noise, housing and service baselines remain pending |
+| Project package | P04 Lasting-Life Commons linked to P02, P06 and P08 | Annual public review decides renewal, reduction or exit |
+
+### Dazhongsi AI Industry Cluster | Decennial Reuse Yard (Location Pending Correction)
+
+**The location offset precedes every design claim.** `PROV-KEY-003` has a centroid near 39.94692° N, 116.34850° E: about 2.26 km from Dazhongsi metro and 0.23 km from Beijing North. It does not align with the task name. The proposal does not shift or fabricate it. The table is a directional prototype for the Dazhongsi task, not a station, bridge, parking or engineering conclusion at the current polygon. [source:ISSUE-1029] [data:geometry/key_areas.geojson#PROV-KEY-003]
+
+| Detail item | Directional conceptual decision | Auditable evidence and data gate |
+| --- | --- | --- |
+| Programme | Product-adoption review, repair training, take-back, staffed appeal and account-free service are co-located | Re-site after the correct official KEY_AREA arrives |
+| Building modules | `BLDG-DZ-01..03` total 42,794.99 m² of conceptual footprints, expressing only relationships among adoption, public and repair interfaces | Constrained by the offset; not development scale [metric:dazhongsi_module_footprint_area_sqm] |
+| Retain/adapt/demolish | Public ground-floor value and long-term maintainability come first; no real building is classified | Survey ownership, buildings, structure and shop impacts before judgement |
+| Public space | `TIME-MARK-01` is a directional node for free stay, staffed help and take-back | Recalculate the whole package after official geometry and public-space evidence |
+| Movement | `CROSS-01` expresses a need only; at-grade four-quadrant walking precedes any bridge/tunnel idea | No fixed move without station exits, road lines, flow, fire and parking evidence |
+| Section prototype | At-grade station walk → free public edge → adoption/appeal hall → repair/take-back back-of-house | Functional sequence only, not a current coordinate or engineering section |
+| Project package | P05 Adoption and Repair Hall linked to P02, P06, P08 and P09 | Stop when the offset remains unresolved or maintenance/retirement ownership is missing |
+
+All three Yards use one handover sheet. Zhongzhiyuan transfers technical boundaries and failure records; AI Origin transfers user feedback and equity review; Dazhongsi transfers maintenance cost, adoption conditions and retirement routes. Failure at one gate never implies progression. Official geometry triggers full regeneration of buildings, roads, public space, metrics, figures, matrices and bilingual anchors. [source:PROVISIONAL-BOUNDARY] [metric:cross_area_handoff_completion_rate]
 
 ![Detailed index of the three Changeover Yards](assets/figures/key-areas.en.png)
 
@@ -133,9 +210,21 @@ Character is divided between durable and changeable layers. Durable elements are
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Nine project packages make the concept grabbable: P01 Century Baseline continuity audit; P02 six cross-link site surveys; P03 Zhongzhiyuan controlled changeover loop; P04 AI Origin Lasting-Life Commons; P05 Dazhongsi Adoption and Repair Hall; P06 twelve Time Mark components; P07 three pilgrimage landmarks; P08 Clock Contract and public ledger; and P09 official-data replacement with whole-package recalculation. Each carries prerequisites, suggested owners, public-review points and exit conditions. [depth:renewal_project_list] [data:geometry/phasing.geojson#PHASE-001]
+The nine packages are auditable responsibility sheets, not project approvals or funding commitments. Every “lead” is a suggested role; competent authorities must separately determine accountability, procurement and permission. [depth:renewal_project_list]
 
-Phase 1, years 0-2, is low-disruption and reversible: baseline surveys, accessibility and walking audits, a staffed commons, three industrial tests, Clock Contracts and Time Mark prototypes. Phase 2, years 3-5, may adapt the three Yards, station interfaces and blue-green continuity only after official boundaries, controls, ownership and professional studies exist. Phase 3, years 6-10, expands, reconstructs or retires according to public evaluation and may transfer proven mechanisms into the Wings. [depth:phasing_implementation]
+| ID / package | Verifiable deliverable | Suggested lead and collaborators | Prerequisite evidence | Public review point | Stop/exit condition | Timing |
+| --- | --- | --- | --- | --- | --- | --- |
+| P01 Century Baseline continuity audit | Register of breaks, heritage/accessibility issues and repeat checks | Qualified planning/heritage team; park operator and accessibility professional | Official redline, heritage and walking survey | Walk audit with residents and disabled users | Record only, no works, while ownership, heritage or safety is unclear | 0–2 year baseline |
+| P02 Six east-west link surveys | Obstacles, flows, alternatives and professional action list for every need corridor | Transport professional; local public-space operator | Road lines, flows, ownership and fire access | Commuter, cyclist and accessibility review | No fixed bridge/crossing alignment without feasibility | 0–2 year survey |
+| P03 Zhongzhiyuan controlled loop | Permit pack, isolation boundary, takeover drill and fault record | Site operator and independent safety reviewer; R&D, fire, cyber and accessibility roles | Test scope, permits, energy/fire and owner | Safety demonstration and appeal route before public exposure | Failed physical safety or takeover means shutdown and removal | Closed test first; adaptation after gates |
+| P04 AI Origin Lasting-Life Commons | Ground-floor service schedule, staffed counter, account-free route and co-review record | Suggested community/site operator; service and fire professionals | Ownership, fire and service-needs evidence | Students, residents, carers and frontline workers | Exit if free stay is displaced or no non-digital equivalent remains | Reversible 0–2 year pilot |
+| P05 Dazhongsi Adoption and Repair Hall | Adoption review, repair training, take-back and station-walk issue register | Suggested area operator and transport professional; shops/operators collaborate | Correct official KEY003, station/road lines and owner consent | Commuters, shops and maintenance workers | No engineering conclusion while location or maintenance/retirement responsibility is unresolved | Triggered development |
+| P06 Twelve Time Mark components | Twelve siting/component schedules, physical signs, staffed service and maintenance cycles | Landscape/park operator; accessibility and facility professionals | Survey, utilities and heritage | Point-by-point accessibility and free-use audit | Remove if tactile routes, green/heritage assets or maintenance are compromised | 0–2 year prototype; annual review |
+| P07 Three pilgrimage landmarks | History/copyright register, reversible prototypes, structural and heritage checks | Cultural/heritage professional; park operator | Verified history, rights, structure and heritage controls | Community history review and public explanation | No permanent object when facts, rights or professional checks fail | Early prototype; permanent form triggered |
+| P08 Clock Contract and public ledger | Purpose, data, owner, expiry, takeover, non-AI route and retirement for every scenario | Proposed council-secretariat role; data-compliance and operations roles | Duties, disclosure, conflict and archive rules | Pre-launch notice, expiry hearing and appeal | Any missing element blocks launch/renewal; organisation and budget are uncommitted | Establish in 0–2 years; continue |
+| P09 Official-data replacement and whole-package recalculation | Source hashes, CRS log, difference report and bilingual regeneration checklist for GeoJSON, metrics, figures and matrices | Qualified GIS/planning team and data-custodian role | Official CAD/GIS/PDF, licence and CRS verified | Publish the difference report for professional review | If source, licence or CRS is unclear, retain the old version and mark a blocker | **Triggered by data, not a fixed year** |
+
+The three polygons in `phasing.geojson` are conceptual spatial implementation surfaces, not a south-to-north construction sequence for the three key areas. Years 0–2 permit only cross-area, low-disruption surveys, staffed services and reversible prototypes. Years 3–5 allow adaptation only after official boundaries, controls, ownership and professional studies. Years 6–10 expand, reconstruct or retire through public evaluation. P09 is always data-triggered. [data:geometry/phasing.geojson#PHASE-001] [metric:phase_1_area_sqm] [depth:phasing_implementation]
 
 The annual programme follows four clocks: daily operating/fault status, quarterly scenario open days, annual renewal hearings and Changeover Week, and a decennial spatial/public-commitment review. International activity includes an Urban AI Durability Challenge, public-service degradation drills, developer-resident repair sessions, residencies and an open yearbook. These are programme concepts rather than funded or confirmed government events. [source:CASE-PARIS-URBAN-LAB]
 
@@ -143,19 +232,31 @@ A proposed Slow Variables Council would include planning, landscape, transport, 
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Metrics are separated into three classes. Package facts can be recalculated from submitted geometry: provisional site, green-space and public-space areas, conceptual building footprints, key-area count and cross-link count. Task baselines are announced values such as 43.6 and 11.4 square kilometres and 368.4 hectares. Performance measures - walking continuity, equivalent non-AI coverage, on-time review, recovery time, talent stayability and equitable public-space use - remain unset until field baselines exist. [source:PROCESSED-FACT-PACK]
+Metrics belong to three evidence classes: approximate announced task benchmarks; low-confidence package design quantities recalculated from submitted geometry; and performance metrics that must wait for a field baseline. The classes are never conflated. A precise calculation does not turn a provisional polygon into an official boundary, and an unknown measure is not filled with an aspirational target. [source:PROCESSED-FACT-PACK]
 
-| Metric | Current state | Formula | Design meaning |
-| --- | --- | --- | --- |
-| Provisional ODA area | 11,412,825.39 m² (11.413 km²) | EPSG:4548 polygon area | Internal denominator only |
-| Conceptual green space | 2,589,338.29 m² (258.93 ha) / 22.69% | green area / site area | Century Baseline continuity, not statutory control |
-| Conceptual public space | 1,118,594.33 m² (111.86 ha) / 9.80% | public area / site area | Supports Time Marks and free stay |
-| Conceptual building footprints | 219,357.87 m² (21.94 ha) | sum module envelopes | Adaptable modules, not surveyed or approved scale |
-| Key areas | 3 | count polygons | Ensures differentiated detail |
-| Scenario cards | 12 | count readable cards | At least three industry tests; all take-over and exit capable |
-| Cross-links | 6 | count concepts | Site-survey priority, not road redlines |
+| Metric family | Current value/status | Formula/source | Permitted interpretation |
+| --- | ---: | --- | --- |
+| Announced task benchmarks | 43.6 km² / approx. 11.4 km² / 368.4 ha | official planning limits | Task scale, not usable polygons |
+| Three announced key-area benchmarks | 192.1 / 104.3 / 72.0 ha | official announcement | Names and approximate areas only |
+| Provisional Overall Design Area | 11,412,825.39 m² (11.413 km²) | EPSG:4548 `SITE-001` | Package denominator, not official redline |
+| Research and translation band | 2,415,628.52 m² / 21.17% | `LU-001 / site` | Conceptual balance, not statutory zoning share |
+| Century Baseline public/green band | 2,589,339.43 m² / 22.69% | `LU-002 / site` | Long-term civic/ecological capacity, not statutory green ratio |
+| Replaceable AI production/service band | 3,366,138.43 m² / 29.49% | `LU-003 / site` | Replaceable capacity direction, not industry commitment |
+| Lasting-life community-support band | 3,041,726.42 m² / 26.65% | `LU-004 / site` | Mixed living/service direction, not housing quota |
+| Conceptual green space | 2,589,338.29 m² / 22.69% | union green / site | Baseline continuity, not statutory control |
+| Conceptual public space | 1,118,594.33 m² / 9.80% | union public / site | Time Marks and free stay; may overlap green space |
+| Conceptual footprints / coverage | 219,357.87 m² / 1.92% | union module envelopes / site | Nine reversible envelopes, not statutory coverage |
+| Three Yard modules | 114,594.60 / 61,968.28 / 42,794.99 m² | ZY / AO / DZ footprints | Compare drawn conceptual quantity, not floor area or investment |
+| Three spatial implementation surfaces | 4,232,697.32 / 3,853,523.21 / 3,326,615.55 m² | `PHASE-001..003` | Conceptual spatial phases, not the pilot calendar |
+| Conceptual mobility centrelines | 16,767.52 m; six cross-links | sum EPSG:4548 line length | Survey needs; road area/ratio remain unknown |
+| Total floor area, FAR and height | **unknown** | No building survey, floors, controls or official boundary | No intensity or capacity conclusion |
+| Road area and road ratio | **unknown** | Centrelines only; no redline, section or verified width | No engineering quantity or network-share conclusion |
+| Content-coverage counts | 8 cases; 8 required elements + 1 governance layer; 5 regional interfaces; 12 scenarios | readable rows | Coverage, not implementation performance |
+| Test and landmark counts | 3 industry tests + 1 operations test; 3 pilgrimage landmarks + 1 archive node type | readable cards/concepts | Preserves category meaning rather than merging unlike items |
 
-GeoJSON is stored in EPSG:4326 and measured in EPSG:4548. The land-use partition must remain gap-free and overlap-free within project tolerance, and green, public-space and building metrics are recomputed from their files. The compliance matrix covers seventeen official tasks and six agent tasks; the standard matrix distinguishes addressed rules from data gaps; the depth matrix connects fifteen professional items to prose, geometry, drawings and assumptions. [depth:metrics_recalculation] [data:geometry/green_space.geojson#GREEN-001]
+Field-performance metrics remain `unknown`: AI talent-density index, AI industry-output index, cross-area handover completion, on-time scenario review, human-takeover drill pass rate and equivalent non-digital service coverage. Values begin only after an accountable operator, sample, denominator, privacy protocol and baseline period are jointly defined. [metric:ai_talent_density_index] [metric:non_digital_equivalent_service_coverage_rate]
+
+GeoJSON is stored in EPSG:4326 and measured in EPSG:4548. The land-use partition must remain within project gap/overlap tolerance; green space, public space, buildings, centrelines and phasing are recomputed from their authoritative files. All three matrices are now narrowed row by row to directly relevant sections, layers, metrics, sources and assumptions instead of reusing one evidence bundle for every requirement. [depth:metrics_recalculation] [data:geometry/green_space.geojson#GREEN-001]
 
 The concept also has a binary quality test. A scenario without an expiry, owner, takeover, non-AI route or retirement destination is incomplete. A spatial project that weakens heritage, blue-green continuity, walking, public access or the choices of vulnerable users cannot offset that loss with an efficiency score. Metrics support comparison and deliberation; they do not automate public decisions. [source:CASE-AMS-ALGO]
 
@@ -177,15 +278,15 @@ All prose, design geometry, diagrams, HTML and PDFs were originally generated fo
 
 1. Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch, official open-call announcement, 9 May 2026. [source:OFFICIAL-ANNOUNCEMENT]
 2. Centennial Jing-Zhang AI Innovation Belt repository, agent open-call taskbook extract, 18 May 2026. [source:AGENT-TASKBOOK]
-3. Ministry of Housing and Urban-Rural Development, Measures for Urban Design Administration and regulatory detailed planning procedures. [standard:MOHURD-URBAN-DESIGN-MEASURES]
+3. Ministry of Housing and Urban-Rural Development, Measures for Urban Design Administration and regulatory detailed planning procedures. [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 4. Ministry of Natural Resources, land and sea-use classification guidance, 2023. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 5. Barcelona City Council, 22@ implementation materials and Barcelona Impulsa 2025. [source:CASE-BCN-22AT]
-6. Greater London Authority and Knowledge Quarter, King's Cross Opportunity Area materials. [source:CASE-LON-KX]
+6. Greater London Authority, King’s Cross Opportunity Area materials. [source:CASE-LON-KX]
 7. New York City Planning, Special West Chelsea District zoning text. [source:CASE-NYC-HIGHLINE]
-8. City of Paris, Paris Rive Gauche and Urban Lab innovation districts. [source:CASE-PARIS-URBAN-LAB]
+8. City of Paris, Paris Urban Lab urban innovation programme. [source:CASE-PARIS-URBAN-LAB]
 9. Forum Virium Helsinki, Smart Kalasatama agile-piloting tools. [source:CASE-HEL-KALASATAMA]
 10. JTC Singapore, Punggol Digital District and Open Digital Platform. [source:CASE-SG-PDD]
 11. City of Amsterdam, algorithm policy and *Grip on Algorithms*. [source:CASE-AMS-ALGO]
-12. Mila and the Government of Québec, Montréal's AI ecosystem and trustworthy-AI programme. [source:CASE-MTL-MILA]
+12. Mila, Montréal AI ecosystem, open-science and responsible-AI materials. [source:CASE-MTL-MILA]
 
 References support only their adjacent claims. Dynamic institution sizes, planning capacities and historical project figures have not been converted into Jing-Zhang performance promises. External pages were checked on 11 August 2026 and should be rechecked for version, availability and reuse terms at every iteration. [source:SOURCE-REGISTRY]

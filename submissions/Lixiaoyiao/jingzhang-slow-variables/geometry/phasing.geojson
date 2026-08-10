@@ -1,6 +1,11 @@
 {
   "type": "FeatureCollection",
   "name": "evidence_gated_phasing",
+  "project_timing_note_zh": "本图层表达概念空间实施面，不等于项目试验时序；低扰动试验可跨片区发生，完整改造仍受官方资料、许可和专业复核触发。",
+  "project_timing_note_en": "This layer shows conceptual spatial implementation surfaces, not pilot timing. Low-disruption tests may occur across areas; full adaptation remains triggered by official data, approvals and professional review.",
+  "trigger_based_project_ids": [
+    "P09"
+  ],
   "features": [
     {
       "type": "Feature",
@@ -15,7 +20,15 @@
         "name_zh": "近期低扰动与基线项目",
         "name_en": "Near-term low-disruption and baseline projects",
         "trigger": "evidence_gate_and_professional_review",
-        "area_sqm_declared": 4232697.16
+        "spatial_phase_role": "conceptual_spatial_implementation_surface",
+        "project_interface_ids": [
+          "P01",
+          "P02",
+          "P04",
+          "P06",
+          "P08"
+        ],
+        "area_sqm_declared": 4232697.317
       },
       "geometry": {
         "type": "Polygon",
@@ -62,7 +75,16 @@
         "name_zh": "中期适应性改造与换代场",
         "name_en": "Mid-term adaptation and Changeover Yards",
         "trigger": "evidence_gate_and_professional_review",
-        "area_sqm_declared": 3853523.42
+        "spatial_phase_role": "conceptual_spatial_implementation_surface",
+        "project_interface_ids": [
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08"
+        ],
+        "area_sqm_declared": 3853523.207
       },
       "geometry": {
         "type": "Polygon",
@@ -113,7 +135,14 @@
         "name_zh": "长期评估扩展或退役",
         "name_en": "Long-term evaluated expansion or retirement",
         "trigger": "evidence_gate_and_professional_review",
-        "area_sqm_declared": 3326616.036
+        "spatial_phase_role": "conceptual_spatial_implementation_surface",
+        "project_interface_ids": [
+          "P03",
+          "P05",
+          "P07",
+          "P08"
+        ],
+        "area_sqm_declared": 3326615.547
       },
       "geometry": {
         "type": "Polygon",
