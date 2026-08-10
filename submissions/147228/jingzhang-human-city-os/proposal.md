@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.2"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.2 先把总体空间动作、三处重点区、四条价值链和三道发布门放到首屏，再回接 v1.0 的授权前启动程序、AI 取舍回放、合成人本交接凭证与场景准备度台账。既有临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.3"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.3 新增三处重点区空间动作图谱、京津冀接口台账与原创识别系统，并保留 v1.2 的总体空间动作、四条价值链、三道发布门和既有审计资产。既有临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -52,6 +52,46 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 每道门都保留人工等价服务、责任待确认、资料缺口和停止动作；当前全部属于概念建议，未宣称已经授权、运营、获批或实施。[depth:phasing_implementation]
 
 **先读结论：**本包能证明空间动作、证据引用、指标公式和失败关闭路径可以离线复核；不能证明官方边界、居民结果、就业结果、PUE/绿电、热网接入、交通安全、许可、投资或现实运营绩效。所有缺口保留在 `assumptions.json`、`metrics.json` 与资料就绪度台账，待公开或授权数据到位后再重算。[depth:risk_missing_data]
+
+## v0.2 评分修复｜把三个重点区读成空间动作链
+
+本轮不再增加抽象口号，而是把三个临时重点区各自拆成四步动作。每一步都回答空间载体、责任角色、进入前证据和停止条件，评审者可以从图面回到 GeoJSON、场景卡与指标，而不必把一张“AI 展台”当作城市设计结论。完整字段见 `visual/assets/spatial-action-atlas.json`，以下仍是概念建议，供专业团队深化研究。[data:visual/assets/spatial-action-atlas.json] [data:geometry/key_areas.geojson#PROV-KEY-001] 三处重点区的其余边界 ID 同列在台账中，均保持临时约束。
+
+![图 12｜三处重点区空间动作图谱：从入口、受控测试到人工接管与退出](assets/figures/spatial-action-atlas.png)
+
+众智园先把人行优先边缘、受控具身测试、算电核验和事故复盘排成一条可关闭的测试链。它引用 `SC-B02`、`SC-C01` 与硅基通行权几何，仍不能推出真实空域、交通安全、PUE、绿电或余热结果。[data:geometry/constraints.geojson#SC-B02] [data:geometry/constraints.geojson#SC-C01] [metric:operational_pue] 其余能耗与长度指标在指标台账中保持 unknown 或概念状态。
+
+北京 AI 原点社区把社区保留议事、人工与代际共学、技能再造接力和无屏恢复花园连成普通人的路径。空间支撑分区和技能走廊可以复算，但居民保留率、商户回迁、持续就业和人工服务等效可用率仍为 `unknown`，不能用面积、培训人次或网页可访问性替代。[data:geometry/constraints.geojson#SC-A01] [data:geometry/roads.geojson#ROAD-A-SKILL] [metric:resident_retention_rate] 其他社会结果指标仍在 `metrics.json` 中保持 unknown。
+
+大钟寺把城市 API 公共接口、OPC 共享实验室、标准外溢工作室和国际服务客厅排成“问题—授权—回放—退出”的接口链。区域协同只交换可复核问题、证据与版本，不声称已有伙伴、企业、行政协议、算力券或国际机构。[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [metric:version_release_count] 国际服务场景的空间锚点仍以场景台账为准。
+
+## 区域协同接口｜先交换问题，不替协作关系背书
+
+本方案把任务书点名的京津冀制造应用、技术标准、知识传播、OPC 小团队和国际服务写成五条接口。接口只规定交换什么、由哪一处概念空间承接、缺什么资料后才可继续，不能被阅读为已签约伙伴或招商计划。`visual/assets/regional-interface-ledger.json` 登记了每条接口的来源边界、空间锚点、缺口和停止规则。[data:visual/assets/regional-interface-ledger.json] [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
+
+![图 13｜区域协同接口台账：技术、标准、知识、生态与国际软配套](assets/figures/regional-interface-ledger.png)
+
+技术接口从海淀研发问题转向京津冀制造与应用讨论，标准接口只输出待专业复核的协议草案，知识接口通过问题清单、事件复盘和年度 release note 学习，生态接口给一人公司和小团队留下公平申请与冲突披露，国际接口只表达多语、医疗导航、知识产权和生活服务的待核验目录。任何接口遇到授权、责任、权属、版权或服务能力缺口都回到资料门，不升级为空间实施结论。[data:geometry/constraints.geojson#SC-D01] [data:geometry/constraints.geojson#SC-D02] [depth:risk_missing_data] 国际服务场景另由 SC-D03 台账登记。
+
+## 标识与空间卡｜让“人本”成为可辨认的设计语言
+
+本轮补一套作者原创的概念识别规则，使图签、场景卡、人工停止提示和版本 release note 有同一视觉语法。开放括号、轨道和人工确认点分别提示可调用、历史连续和人的最终决定权；色彩只服务于阅读，不冒充主办方、政府、企业或项目官方标识。字段与版权边界见 `visual/assets/brand-identity.json`。[data:visual/assets/brand-identity.json] [data:report/copyright_statement.md] [depth:risk_missing_data]
+
+![图 14｜京张人本城市操作系统概念识别：轨道、接口与人工确认点](assets/figures/brand-identity.png)
+
+标识只落在本包图件和离线展示上，不导出企业名单、招商承诺或官方背书。橙色用于人工接管和停止，青绿色用于公共接口和蓝绿空间，黄色用于版本门和资料缺口，深蓝与纸色保持专业图纸的可读底。以后若取得官方品牌、文保或公共空间视觉规范，必须先做权利核验和专业适配，再重算图件与 PDF。[source:SITE-PACKAGE] [depth:risk_missing_data]
+
+## v0.3 评分修复｜从动作图谱到节点级空间序列
+
+空间动作图谱回答“每处重点区要完成什么”；本节再把它压到节点级的连续阅读：**到达与停留 → 公共状态/人工解释 → 功能带 → 人工接管或退出 → 证据回放**。`visual/assets/spatial-action-node-plans.json` 只使用现有 provisional 锚点，功能带用于表达空间关系和状态，不填工程尺寸；节点计划不是道路横断面、建筑平面、工程量或已运营服务。[data:visual/assets/spatial-action-node-plans.json] [depth:overall_spatial_structure]
+
+| 节点 | 从哪里到哪里 | 功能带（无尺度，仅表达先后与状态） | 进入前证据 | 失效时的空间动作 |
+| --- | --- | --- | --- | --- |
+| AI 原点社区 | `PUBLIC-A-INCLUSION` → `BLDG-A-03` → `ROAD-A-SKILL` → `GREEN-A-QUIET-1` | 到达/停留前场 → 人工柜台电话纸面 → 技能再造与代际共学 → 无屏恢复绿地 | 连续进入走读、服务目录、知情基线与岗位路径 | 路径受阻或人工入口不可用时改道并停留人工服务；结果保持 `unknown` |
+| 众智园 | `ROAD-B-SILICON` → `PUBLIC-B-API` → `PUBLIC-C-SANDBOX` → `GREEN-C-SPONGE` | 人行优先观察位 → 人工停止与事故复盘 → 受限测试/API 模拟 → 海绵缓冲与安全退避 | 道路/无障碍、安全、蓝线排水、授权、保险与接管演练 | 无人接管或不能回放时冻结测试，退回上一发布门 |
+| 大钟寺 | `SC-D01` → `SC-D02` → `SC-D03` | 城市 API 公共接口厅 → OPC 共享实验室 → 标准回放工作室 → 多语人工解释客厅 | 服务目录、最小授权、冲突披露、权利边界与责任主体 | 越权、不可解释或无人工服务时冻结调用，只保留公开问题清单 |
+
+这组节点计划补的是“空间载体如何承接普通人路径和停止动作”的可见中间层，不把功能带误写成实测断面。官方道路、权属、现状设施、文保、无障碍和运营资料到位前，所有尺寸、容量、通行能力和结果指标仍为待补资料或 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 
 # 京张人本城市操作系统
 
@@ -241,13 +281,13 @@ A 组“人的尊严”包括社区保留、就业转型、数字包容和身心
 | AI 原点社区 | 创新密度能否同时保护人的转型与日常生活 | 技能再造接力站、城市 API 交换站、代际共学、城市版本发布室 | 就业转化、人工服务保留、隐私最小化、居民表决 |
 | 大钟寺 | 数据与国际服务能否形成可信城市接口 | 公共数据授权样板间、国际服务客厅、OPC 共享服务 | 数据授权、退出机制、无障碍、语言与合规服务审计 |
 
-三处重点区继续使用临时粗略范围，但每处增加一组可比较的概念体量与首层界面。FAR 和层数只用于比较公共服务、普通路径与上部功能的关系，不代表法定控制、现状调查或建设许可；正式高度、强度、拆改留和工程容量在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:visual/assets/parametric-tradeoff-study.json] [depth:risk_missing_data]
+三处重点区继续使用临时粗略范围，但每处增加一组可比较的公共界面与可逆服务关系。比较只回答普通路径、人工服务、设备后场与上部功能如何错开，不定义开发强度、体量、拆改清单或工程容量；这些资料在 G1 前保持 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:visual/assets/parametric-tradeoff-study.json] [depth:risk_missing_data]
 
-| 重点区 | 概念空间取舍 | 概念体量范围 | 先补的专业证据 |
+| 重点区 | 概念空间取舍 | 公共界面与可逆关系 | 先补的专业证据 |
 | --- | --- | --- | --- |
-| 众智园 | 把具身测试、算电余热审计和标准外溢工作室放在人工优先的公共界面后方，保留可撤回测试边界和事故复盘庭 | 概念 FAR 1.2–1.8；公共界面 2–4 层；上部高度 unknown | 现状建筑、能源负荷、消防、保险、行人走测和责任主体 |
-| AI 原点社区 | 把技能再造接力站、代际共学和城市 API 交换站连成日常步行路径，普通居民入口与 AI 入口并列 | 概念 FAR 1.0–1.5；公共界面 2–3 层；上部高度 unknown | 居民与服务基线、无障碍走测、就业转化口径、权属与租约 |
-| 大钟寺 | 把公共数据授权、国际服务和 OPC 共享服务压到低尺度城市客厅，夜间服务与文化解释共用人工前台 | 概念 FAR 0.8–1.3；公共界面 1–3 层；上部高度 unknown | 文化遗产、交通与夜间服务、语言可达性、数据授权与退出条件 |
+| 众智园 | 把具身测试、算电余热审计和标准外溢工作室放在人工优先的公共界面后方，保留可撤回测试边界和事故复盘庭 | 人工前台与公众观察席相邻；设备、维护和测试后场可关闭；不切断慢行主链 | 现状建筑、能源负荷、消防、保险、行人走测和责任主体 |
+| AI 原点社区 | 把技能再造接力站、代际共学和城市 API 交换站连成日常步行路径，普通居民入口与 AI 入口并列 | 人工柜台、纸面入口和代际共学朝向普通路径；测试组件可拆、可暂停 | 居民与服务基线、无障碍走测、就业转化口径、权属与租约 |
+| 大钟寺 | 把公共数据授权、国际服务和 OPC 共享服务压到低尺度城市客厅，夜间服务与文化解释共用人工前台 | 轨道到达、安静链和服务前台分流；活动与数据展示可撤回，不占用居民日常通行 | 文化遗产、交通与夜间服务、语言可达性、数据授权与退出条件 |
 
 这些范围只回答先比较的空间关系，不能回答哪里可以建设、谁拥有空间或最终建多少。临时 `PROV-KEY-001` 至 `PROV-KEY-003` 仍不是红线；专业团队取得正式边界和清权资料后，才可重算图纸、指标和发布门。
 
