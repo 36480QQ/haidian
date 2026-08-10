@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.47"
+iteration: "v2.49"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -33,6 +33,21 @@ iteration: "v2.47"
 | 5. 复核 | 独立复核者回放一条到站到家链，比较是否继续、修复或撤回 | 原始最小日志、分组结果、投诉关闭证据、版本和复核意见 | 证据缺失或最慢群体变差时回到 P0 调查与人工服务 |
 
 这张表把设计图、路缘账本、M-09 回退桌演和 P0/P1/P2 分期接成一条验收流程。4 条合成请求的 PASS 只证明状态机和回滚逻辑可重放，不证明真实客流、无障碍绩效、人员值守、公众接受或安全结果。
+
+## 一个合成居民的完整经历。照护路线要能去，也要能回来
+
+下面写的是一个合成角色，不是居民访谈。周岚陪同家人去医院，手机和账号都不作为通行前提。她先在 AI 原点社区服务台取得纸面、电话或人工路线，再沿连续无障碍段前往大钟寺，站口保留人工交接和轨道、公交选择。雨雪、断网或路缘冲突发生时，预约冻结，服务回到人工和地面公共交通。返程安排、照护交接和投诉入口要在出发前登记 [data:visual/assets/mobility-ordinary-journey-contract.json] [data:visual/assets/mobility-ordinary-journey-evidence.json]。
+
+| 合成日程 | 周岚要完成的事 | 空间与场景 | 证据缺失时的动作 |
+| --- | --- | --- | --- |
+| 出发前 | 取得不依赖 App 的去程和返程选择 | AI 原点社区服务台，`M-05` | 没有人工入口或返程安排，只登记需求 |
+| 社区到站口 | 确认连续无障碍段和天气回退 | `MOB-NODE-002`，`M-06` | 走查没有日期就停在 `P0`，不写成可达结果 |
+| 站口换乘 | 由人工完成交接，保留轨道和公交 | 大钟寺 `MOB-NODE-003`，`M-07` | 电梯、过街或责任不清时不开放数字推荐 |
+| 途中受阻 | 让预约冻结，改走人工和地面公共交通 | `M-09` 雨雪、断网或路缘冲突 | 没有人接管就冻结并回到普通公共交通 |
+| 返回社区 | 确认照护交接和回家路径 | AI 原点社区，`M-05` | 没有返程计划就不预约、不扩容 |
+| 投诉复核 | 记录问题，等待责任人和独立回放 | 大钟寺服务界面，`M-10` | 缺责任人、时间戳或回放时不关闭案件 |
+
+这条经历主动测出四个现场缺口。当前没有日期化无障碍走查，站口人工交接角色也未由有权组织确认；M-09 的回退契约还需要单独登记返程，投诉回放不能代替真实回应时长。四项缺口都保持 `unknown`，不由合成读数填平。六个负例会冻结、停止或回到 P0，三个正常样本只保留人工等价路径。图件见 `assets/figures/mobility-ordinary-journey.svg`。这条回放只证明路径和停止动作可以检查，不证明居民体验、现场可达性、值守、投诉绩效或专业批准。
 
 ## 为什么这是京张的公共空间方案。把历史、产业和日常交通放回一条线
 
@@ -121,6 +136,22 @@ iteration: "v2.47"
 
 文中的“综合出行压力代理分”对应模型字段 `satisfaction_proxy`。它只把时间、可靠性、可达性和冲突合成到一个比较刻度里，居民满意度、公众接受和现场绩效仍待正式数据补齐。claim-audit 会逐条检查 headline 数字有没有这层说明，也会检查中英文正文是否指向同一份 runner [data:visual/assets/claim-audit.json]。
 
+## 校准债务与参数溯源。先让每个数字说明自己从哪里来
+
+区域 runner 的方式容量、基准分钟数、可靠性代理、冲突代理、服务单元字段和方式权重现在逐项登记在 `visual/assets/mode-parameter-provenance.json`。234 条声明字段全部标为 `agent_proposed` 或 `design_target`，`observed_count=0`，`field_status=not_authorized_not_run`。这项登记不会把数字升级为现场数据。它把数字的暂定性质、方法参考和下一项校准任务摆到同一个入口。
+
+| 参数族 | 当前登记 | 需要替换的证据 | 当前能支持什么 |
+| --- | ---: | --- | --- |
+| 方式参数与服务单元 | 48 条 | 有日期的班次、容量、路线、可靠性和冲突观察 | 在声明输入下比较模式和暴露待查位置 |
+| 方式权重 | 180 条 | 分组 OD、方式计数、企业与居民授权输入 | 复演候选分配，不代表个人选择 |
+| 合成人口分组 | 6 条 | 人口、工作者、照护、访客和服务使用者证据 | 维持区域压力屏查的守恒和覆盖 |
+
+`source_ids` 只指向方法或政策背景，不把外部系数转移到海淀。`run-mode-parameter-provenance.js` 会在发现 `observed` 状态或非零现场观测时失败，并生成双语校准债务图板 [data:visual/assets/mode-parameter-provenance.json] [data:visual/assets/run-mode-parameter-provenance.js]。
+
+只有有权组织提供有日期的 OD、班次、容量、无障碍走查和行为证据后，才允许替换输入并重新跑全套区域读出 [source:MATSIM-LARGE-SCALE-ABM] [source:MOBILITY-DATA-METHOD]。
+
+![校准债务与参数溯源图板](assets/figures/calibration-debt-board.svg)
+
 ## 风险登记。未知不是放行，空中出行保持阻断
 
 本包把风险从“某个文件里有一句提醒”提升为一条可回读的审查链。每个维度都要能找到证据路径、触发条件、人工等价入口、停止动作和责任角色。根目录 `risk.json` 提供八个通用风险维度；`visual/assets/mobility-risk-register.json` 把它们与 18 个当前 `unknown` 指标逐项相连；`node visual/assets/run-mobility-risk-audit.js --check` 会检查路径存在、风险状态受限、未知指标没有脱离责任链，并确认空中地面接驳仍为 `blocked_until_evidence`。
@@ -182,6 +213,18 @@ iteration: "v2.47"
 本包没有声称作者已经到场，也没有居民、企业、轨道公交运营者或无障碍专业人员的访谈和现场走查。`visual/assets/site-and-stakeholder-evidence.json` 把这条边界写成可回读记录。当前只有公开政策、招标、方法和开放地图资料；没有经授权的居民或企业聚合台账，没有个人数据，也没有利益相关者背书。居民上学、照护、就医、购物、夜间回家，企业到岗、班车、装卸和充电，无障碍连续路线以及对外通勤，当前都只是待核对的情景假设，不是已经验证的需求 [data:visual/assets/site-and-stakeholder-evidence.json] [data:assumptions.json]。
 
 受影响的人包括居民、企业员工、照护者和儿童、轮椅使用者、夜班人员、访客、物流维护人员、轨道公交运营者、无障碍与安全复核人员以及应急响应者。当前仍有三类未解决问题。企业优先的时窗会不会挤占居民、无障碍或消防通道；分组需求能否在同意、最小化、保留和删除规则下采集；中断时的回退是否真的保住照护和无障碍路线。它们已登记为开放问题，不用模型读数代替回答 [data:visual/assets/site-and-stakeholder-evidence.json]。
+
+## 企业与居民公共决策凭证。每个问题都要有回复和退出路径
+
+Issue #1061 提醒我们，人物画像和情景卡只能说明研究入口，不能代替现场居民、通勤者、运营者或企业证据。本包新增 `public-decision-ledger.json`，把八个问题入口接成公开问题、合成筛查、授权输入、责任人、决定状态、回复凭证和回退动作。它保留现场、同意和公众意见的未知状态，不把模型读数写成居民支持、公众共识或已完成协商 [source:ISSUE-1061-PUBLIC-INPUT]。
+
+每个入口都同时保留现场人工台、电话、纸面和去标识化公开日志。问题可以停在 `design_only`，只有有权组织明确公示窗口、同意、最小化、删除和申诉规则后，才可进入 `open_for_authorized_input`。回复凭证缺失、消防或无障碍路线中断、责任人消失时，系统转入 `pause` 或 `withdrawn`，普通公共交通与人工入口继续保留。双语图板把这条链放在一张图上 [data:visual/assets/public-decision-ledger.json] [data:visual/assets/run-public-decision-ledger.js]。
+
+完整字段和失败护栏见 [source:CITIZEN-TRANSPORT-PEER-RESEARCH-2026] [source:CURBSPACE-MANAGEMENT-2021]。
+
+![企业与居民公共决策凭证](assets/figures/public-decision-ledger.svg)
+
+这条凭证链只回答未来如何提问、记录和回退。它没有产生居民样本、企业名单、现场满意度或运营许可，当前八个入口仍为 `not_authorized_not_run`。
 
 P0 先由有权组织确认参与窗口和责任边界。拟由交通主管部门、街道办事处、残联或无障碍专业复核机构、老年人代表共同推进公示与意见回应台账，再采集有日期的分时聚合 OD 和方式计数，随后完成含无障碍与适老化参与的连续路线和人员动线走查。每一步都要留下日期、版本、解锁指标和回退责任。未到现场不阻止概念投稿，但在这些证据出现前，方案不声称居民验证、现场知识、利益相关者支持、运行绩效或 P1/P2 授权；也不上传私人访谈原文和联系方式。
 

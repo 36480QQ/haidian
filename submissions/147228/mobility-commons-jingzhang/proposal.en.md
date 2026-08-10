@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.47"
+iteration: "v2.49"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -33,6 +33,21 @@ To make the tabletop replay a readable spatial acceptance entry point, the four 
 | 5. Replay | An independent reviewer replays one door-to-door chain and compares continue, repair or withdraw | Minimal log, grouped result, complaint-closure evidence, version and review decision | Return to P0 investigation and human service when evidence is missing or the slowest group worsens |
 
 This table connects the design boards, curb ledger, M-09 fallback tabletop and P0/P1/P2 phasing to one acceptance entry point. PASS for four synthetic requests proves only that the state machine and rollback logic can be replayed; it does not prove real demand, accessibility performance, staffing, public acceptance or safety.
+
+## One Synthetic Resident's Complete Journey: A Care Trip Needs a Return Route
+
+The following is a synthetic persona, not a resident interview. Zhou Lan accompanies a family member to a hospital, and a phone or account is not a condition of access. She first obtains a paper, telephone or staffed route at the AI Origin Community desk, follows a continuous accessible segment toward Dazhongsi, and keeps a staffed handoff with rail and bus choices at the station. When snow, an outage or a curb conflict occurs, the booking freezes and service returns to human support and ground public transport. The return plan, care handoff and complaint entry must be registered before departure [data:visual/assets/mobility-ordinary-journey-contract.json] [data:visual/assets/mobility-ordinary-journey-evidence.json].
+
+| Synthetic day | What Zhou must complete | Space and scenario | Action when evidence is missing |
+| --- | --- | --- | --- |
+| Before departure | Obtain an app-independent outbound and return choice | AI Origin Community desk, `M-05` | Record the need without booking when a human entry or return plan is missing |
+| Community to station | Check the continuous accessible segment and weather fallback | `MOB-NODE-002`, `M-06` | Keep the case at `P0` when the walk-through is undated; do not write an accessibility result |
+| Station transfer | Complete a staffed handoff while keeping rail and bus choices | Dazhongsi `MOB-NODE-003`, `M-07` | Keep the digital recommendation closed when lift, crossing or ownership evidence is missing |
+| Disruption | Freeze the booking and use human and ground public transport | `M-09` snow, outage or curb conflict | Freeze and return to ordinary public transport when no person can take over |
+| Return to community | Confirm the care handoff and route home | AI Origin Community, `M-05` | Do not book or expand without a return plan |
+| Complaint replay | Record the problem and wait for an owner and independent replay | Dazhongsi service interface, `M-10` | Do not close the case without an owner, timestamp or replay |
+
+This journey exposes four field gaps. No dated accessibility walk-through is available, and an authorised organisation has not confirmed the staffed station-handoff role. The M-09 fallback contract still needs a separate return register, and complaint replay cannot stand in for a real response time. All four gaps remain `unknown`; synthetic readouts do not fill them. Six adverse fixtures freeze, stop or return to P0, while three control fixtures preserve an ordinary human equivalent. The figure is `assets/figures/mobility-ordinary-journey.en.svg`. This replay shows only that the path and stop actions can be checked. It does not prove resident experience, field accessibility, staffing, complaint performance or professional approval.
 
 ## Why This Is a Jing-Zhang Public-Space Proposal: History, Industry and Daily Mobility on One Line
 
@@ -121,6 +136,20 @@ The package uses four labels for numbers. Read the label before reading the valu
 
 “Composite mobility-pressure proxy score” is the readable name for the model field `satisfaction_proxy`. It combines time, reliability, accessibility and conflict on one comparison scale. Resident satisfaction, public acceptance and field performance remain pending formal evidence. The claim audit checks that headline numbers carry this wording and point to the same runner in both languages [data:visual/assets/claim-audit.json].
 
+## Calibration debt and parameter provenance. Let every number state its origin
+
+The regional runner now records its mode capacities, base minutes, reliability proxies, conflict proxies, service-unit fields and mode weights in `visual/assets/mode-parameter-provenance.json`. All 234 declared fields are marked `agent_proposed` or `design_target`, with `observed_count=0` and `field_status=not_authorized_not_run`. This does not turn the numbers into field data. It makes their provisional status, method references and next calibration task visible at one entry point.
+
+| Parameter family | Current register | Evidence to replace it | What it supports now |
+| --- | ---: | --- | --- |
+| Mode and service-unit parameters | 48 fields | Dated service, capacity, route, reliability and conflict observations | Compare modes under declared inputs and expose places to check |
+| Mode weights | 180 fields | Grouped OD, mode counts and authorised enterprise and resident input | Replay candidate assignment, not individual choice |
+| Synthetic population groups | 6 fields | Population, workforce, care, visitor and service-user evidence | Preserve conservation and coverage in the regional stress screen |
+
+`source_ids` point to method or policy context and do not transfer external coefficients to Haidian. `run-mode-parameter-provenance.js` fails if an `observed` status or non-zero field observation appears and generates the bilingual calibration-debt board. Only an authorised organisation can replace the inputs after dated OD, service, capacity, accessibility and behaviour evidence exists [data:visual/assets/mode-parameter-provenance.json] [data:visual/assets/run-mode-parameter-provenance.js] [source:MATSIM-LARGE-SCALE-ABM] [source:MOBILITY-DATA-METHOD].
+
+![Calibration debt and parameter provenance board](assets/figures/calibration-debt-board.en.svg)
+
 ## Risk Register: Unknown Is Not a Release, and Air Mobility Stays Blocked
 
 This package turns risk from a warning scattered across files into a readable review chain. Every dimension has evidence paths, triggers, a non-AI equivalent, a stop action and an accountable role. The root `risk.json` supplies eight common risk dimensions; `visual/assets/mobility-risk-register.json` links them to all 18 current `unknown` metrics; `node visual/assets/run-mobility-risk-audit.js --check` checks that paths exist, states remain bounded, unknown metrics remain attached to a risk, and air-ground transfer remains `blocked_until_evidence`.
@@ -178,6 +207,16 @@ Evidence is separated into `known` geometry values, `unknown` local baselines, `
 This package does not claim that its author has visited the site, interviewed residents, consulted enterprises or transit operators, or completed an accessibility walkthrough. `visual/assets/site-and-stakeholder-evidence.json` makes the boundary reviewable: the package currently uses public policy, tender, method and open-map context only; it has no authorised resident or enterprise aggregate register, personal data or stakeholder endorsement. Resident school, care, health, shopping and night-return needs, enterprise arrival, shuttle, loading and charging needs, accessible-route continuity and external commuting are scenario assumptions awaiting validation, not validated demand [data:visual/assets/site-and-stakeholder-evidence.json] [data:assumptions.json].
 
 Affected groups include residents, enterprise employees, carers and children, wheelchair users, night workers, visitors, logistics and maintenance staff, metro and bus operators, accessibility and safety reviewers, and emergency responders. Three questions remain open: could enterprise priority displace resident, accessible or emergency access; can grouped demand be collected with consent, minimisation, retention and deletion controls; and does a disruption fallback actually preserve care and accessible routes? They are registered as open questions, not replaced by model readouts [data:visual/assets/site-and-stakeholder-evidence.json].
+
+## Enterprise–resident public decision ledger. Every question needs a receipt and an exit
+
+Issue #1061 reminds us that personas and scenario cards describe research entrances, not evidence from residents, commuters, operators or enterprises. The package now adds `public-decision-ledger.json`, connecting eight question entrances to a public question, synthetic screen, authorised input, accountable owner, decision state, response receipt and fallback. It keeps field, consent and public-input status unknown and does not turn model readouts into resident support, public consensus or completed consultation [source:ISSUE-1061-PUBLIC-INPUT].
+
+Every entrance retains a staffed desk, phone, paper and de-identified public aggregate log. A question can remain `design_only`. It enters `open_for_authorized_input` only after an authorised organisation defines the public window, consent, minimisation, deletion and appeal rules. Missing receipts, broken fire or accessibility routes, or a missing owner moves it to `pause` or `withdrawn` while ordinary public transport and human access remain. The bilingual board shows the chain on one page; complete fields and fail-closed checks are in [data:visual/assets/public-decision-ledger.json] [data:visual/assets/run-public-decision-ledger.js] [source:CITIZEN-TRANSPORT-PEER-RESEARCH-2026] [source:CURBSPACE-MANAGEMENT-2021].
+
+![Enterprise–resident public decision ledger](assets/figures/public-decision-ledger.en.svg)
+
+This ledger answers how future questions, records and fallbacks should work. It does not create a resident sample, enterprise list, field satisfaction result or operating permission. All eight entrances remain `not_authorized_not_run`.
 
 P0 therefore starts when an authorised organisation confirms the participation window and responsibility boundary. Proposed role owners are the transport authority, subdistrict office, disabled persons federation or qualified accessibility reviewer, and older-person representatives. They first establish a public notice and response ledger, then collect dated grouped OD and mode counts, and then complete an accessibility and people-flow walkthrough with accessibility and age-friendly participation. Each step needs a date, evidence revision, unblocked metrics and a fallback owner. Not visiting the site does not block a concept submission, but until those records exist the package makes no claim of resident validation, site knowledge, stakeholder support, operating performance or P1/P2 authorisation. It does not upload private interview transcripts or contact details.
 

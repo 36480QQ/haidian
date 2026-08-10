@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_provisional_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Working area only; not an official scoring area."
+        "Working area only; not an official scoring area.",
+        "Cross-check against the public announcement is approximately 0.11 percent relative difference; the announcement is an approximate context value, not an official polygon."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +28,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Working footprint subset from provisional buildings.geojson; not a complete building inventory or planning floor-area measure."
+      ]
     },
     "building_footprint_ratio": {
       "status": "known",
@@ -39,7 +42,9 @@
       ],
       "formula": "building_footprint_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from the provisional working-footprint subset and working area; not a regulatory floor-area or coverage ratio."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -51,7 +56,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional green-space screening; not a statutory green ratio or completed landscape survey."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -63,7 +70,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional public-space screening; not a statutory public-space ratio or completed public-realm inventory."
+      ]
     },
     "key_area_count": {
       "status": "known",
@@ -74,7 +83,9 @@
       ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Count of three provisional key-area features in the package; not a complete official key-area register."
+      ]
     },
     "design_north_south_spine_length_m": {
       "status": "known",
@@ -98,7 +109,9 @@
       ],
       "formula": "count(features where network_role is an east_west or area connector)",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Conceptual relationship line count from provisional roads.geojson; not a built connector count or engineering network inventory."
+      ]
     },
     "design_slow_mobility_network_length_m": {
       "status": "known",
@@ -276,7 +289,9 @@
       ],
       "formula": "count(allowed curb state taxonomy)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Count of the package's design taxonomy; not a count of observed curb states or an operating inventory."
+      ]
     },
     "mobility_scenario_card_count": {
       "status": "known",
@@ -288,7 +303,9 @@
       ],
       "formula": "count(reversible enterprise-resident scenario cards)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Count of package scenario cards; not a count of authorised pilots, partners or field events."
+      ]
     },
     "external_commute_od_baseline": {
       "status": "unknown",
