@@ -1,0 +1,138 @@
+{
+ "schema_version": "0.1.0",
+ "sources": [
+  {
+   "id": "SITE-PACKAGE",
+   "path": "brief/site-package/",
+   "source_type": "official_public",
+   "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+  },
+  {
+   "id": "SOURCE-REGISTRY",
+   "path": "data/source_registry.json",
+   "source_type": "repository_public_registry",
+   "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+  },
+  {
+   "id": "PROCESSED-FACT-PACK",
+   "path": "data/processed/agent_fact_pack.md",
+   "source_type": "repository_processed_reference",
+   "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+  },
+  {
+   "id": "BOUNDARY-SOURCE",
+   "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+   "source_type": "agent_inferred_from_public_data",
+   "usage": "Submitted site boundary geometry source (provisional)."
+  },
+  {
+   "id": "KEY-AREA-SOURCE",
+   "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+   "source_type": "agent_inferred_from_public_data",
+   "usage": "Three required detailed-design key area boundaries (provisional)."
+  },
+  {
+   "id": "OFFICIAL-ANNOUNCEMENT",
+   "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+   "source_type": "official_public",
+   "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+  },
+  {
+   "id": "AGENT-TASKBOOK",
+   "path": "brief/site-package/agent_taskbook.json",
+   "source_type": "user_provided_cleared",
+   "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+  },
+  {
+   "id": "CASE-ONE-NORTH",
+   "title": "新加坡裕廊集团 one-north 公开介绍",
+   "source_type": "public_web",
+   "usage": "机制借鉴：研究-产业-生活一体化园区城市；不移植形象、不声称案例方认可本方案",
+   "url": "https://www.jtc.gov.sg/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-KENDALL",
+   "title": "Kendall Square 官方/公开资料",
+   "source_type": "public_web",
+   "usage": "机制借鉴：高校-产业转化走廊与近校孵化",
+   "url": "https://www.kendallsquare.org/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-KX",
+   "title": "King's Cross 公共空间运营公开资料",
+   "source_type": "public_web",
+   "usage": "机制借鉴：站城一体公共空间与活动运营",
+   "url": "https://www.kingscross.co.uk/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-TSUKUBA",
+   "title": "筑波科学城公开资料",
+   "source_type": "public_web",
+   "usage": "机制借鉴：国家科研集群与生活配套平衡",
+   "url": "https://www.tsukuba-sciencecity.jp/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-HANGZHOU",
+   "title": "杭州城市大脑公开报道",
+   "source_type": "public_web",
+   "usage": "机制借鉴：城市数字平台与人工复核结合；仅借鉴机制，引用公开报道层面",
+   "url": "https://www.hangzhou.gov.cn/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-EU-TEF",
+   "title": "欧盟 Testing and Experimentation Facilities 公开项目页",
+   "source_type": "public_web",
+   "usage": "机制借鉴：虚拟、受控、真实环境逐级测试",
+   "url": "https://www.european-tef.eu/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  },
+  {
+   "id": "CASE-HETAO",
+   "title": "河套深港科技创新合作区公开资料",
+   "source_type": "public_web",
+   "usage": "机制借鉴：制度创新与跨境要素协同",
+   "url": "https://www.hetacc.org/",
+   "retrieved_date": "2026-08-10",
+   "license_note": "公开网页信息，仅作机制借鉴；不复制内容、不声称案例方认可",
+   "limitations": [
+    "二手/官方介绍材料，机制借鉴级别",
+    "未逐条核验案例内部数据"
+   ]
+  }
+ ]
+}

@@ -65,6 +65,28 @@ The agent layer is a digital overlay on top of physical space: it is carried by 
 
 ![Concept overview: the physical layer overlaid with the agent layer](assets/figures/concept-overview.en.png)
 
+### Taskbook Supplementary-Dimension Mapping
+
+The proposal self-checks its alignment against every supplementary evaluation dimension of the agent taskbook (`agent_taskbook.json`), and each dimension has an explicit anchor in the body text, deliverables, and data, so reviewers and professional teams can verify item by item [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]:
+
+| Supplementary dimension | This proposal's response | Chapter/deliverable anchor | Evidence |
+| --- | --- | --- | --- |
+| Goal fit | Serving the global-AI-industry-hub and pilgrimage-site goals with the Jingzhang AI Innovation Belt | Core thesis / Coordinated research / Landmark catalog | [metric:landmark_count] [metric:scenario_card_count] |
+| Function match | Three positionings, five functions, three zones and two wings each landed on spatial carriers | Coordinated research · feedback loop | compliance_matrix.json 1.3.x |
+| Brand recognition | Jingzhang AI Agent Nexus + rail-×-neural-network Logo + three-tier brand system | Coordinated research · naming system / Brand-IP system | assets/logo.png |
+| Regional collaboration | North to Future Science City / Huairou Science City, southeast to E-Town, Jingzhang radiating Beijing-Tianjin-Hebei | Coordinated research · feedback loop | [depth:regional_synergy] |
+| Planning innovation | Agent-First digital citizens + Digital Citizen Compact (DCC) + Urban Signal Regime (USR) | Core thesis / memory–governance spine | [depth:urban_signal_regime] [depth:no_ai_equivalence] |
+| Industry support | Full-stack chain, eight factors, 12 scenarios, 3 TEST scenarios, six-stage scenario opening | Coordinated research / AI ecosystem and scenario network | [metric:test_scenario_count] |
+| Perceptible scenarios | 12 experiential scenario cards + signal-status matrix + public-experience routes | AI ecosystem and scenario network | [metric:scenario_card_count] |
+| Spatial specificity | Scenarios/projects/components each anchored to layer nodes, "one belt, three cores, multiple scenarios" | Renewal project list / component library | [data:geometry/key_areas.geojson#PROV-KEY-001] |
+| Transformability | 11 renewal projects bound to implementation phases and responsible entities, handoff-ready for professional teams | Renewal projects · implementation phasing and pilot launch | [depth:renewal_project_list] [depth:phasing_implementation] |
+| Expression completeness | Text, tables, scenario cards, figures, PDFs, HTML, and Logo complete in both Chinese and English | Full file list in manifest.json | [source:AGENT-GENERATED-ARTIFACTS] |
+| Public compliance | All sources registered, rights cleared, boundaries marked, no remote resources or infringing content | Risk, copyright, and compliance | sources.json / report/copyright_statement.md |
+| International communication | "One Railway · One Street · One Revolution" multilingual tagline and three-tier audience copy | Coordinated research / Blue-green · international communication narrative | [depth:international_communication_copy] |
+| Long-term operation value | Four-season signal annual event system + contribute–recognize–reinvest loop + public knowledge base | Brand-IP system and annual event signals | [depth:annual_event_seasons] |
+
+This mapping complements the item-by-item coverage of mandatory tasks 1.3/1.4/1.5 and agent.1–agent.6 in `compliance_matrix.json`: mandatory tasks are tracked in the compliance matrix, while this table tracks the supplementary dimensions [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
 ## Design Basis and Source List
 
 This formal proposal takes the "Centennial Jingzhang AI Innovation Belt Urban Design International Competition — Pre-qualification Announcement" issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its first basis [source:OFFICIAL-ANNOUNCEMENT], and the machine-readable provisional boundary, key areas, enums, indicators, and source list registered by maintainers in `brief/site-package/` as its structured basis [source:SITE-PACKAGE]. The agent fully read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, and `data/processed/agent_fact_pack.md`, and built four inventories from `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv` — covering tasks, scope, source usage, and data gaps [source:PROCESSED-FACT-PACK]. Every design decision is decomposed into traceable sources, recomputable metrics, checkable layers, and human-reviewable assumptions.
@@ -220,6 +242,28 @@ AI scenarios must land within spatial and governance boundaries: public-space sc
 
 Agent governance follows the principles of data minimization, open sources, explainability, and human review [depth:risk_missing_data]. City agents may assist in identifying slow-mobility gaps, public-space heat, facility maintenance, enterprise-service demand, and event-safety risks, but they do not replace planning approval, do not output unauthorized personal profiles, and do not claim official implementation commitments. All AI scenario nodes enter structured layers and the compliance matrix, so reviewers can see their relationship to industry, space, and the public interest. The plaza in front of the Origin Community open-source release hall is designed as the "Digital Citizen Public Living Room," where humans and agents publish, witness, and are recorded together — the first physical embodiment of the Agent-First thesis in public space [data:geometry/key_areas.geojson#PROV-KEY-002].
 
+### Public Interest and Inclusive Safeguards: Six Beneficiary Paths and Four Non-Exclusion Principles
+
+Public interest is the primary yardstick of this proposal, not an appendix to the AI scenarios. The proposal covers six beneficiary groups with three checklines — "**who benefits, who can stop it, and who is not harmed by agents**" — each with verifiable spatial and metric evidence:
+
+| Beneficiary group | Benefit path | Inclusive safeguard | Spatial and evidence anchor |
+| --- | --- | --- | --- |
+| Haidian community residents (P-05) | Slow-mobility suture, embedded community services, AI life sample street | No resident profiling for commercial recommendation; graded night lighting | [data:geometry/green_space.geojson#GREEN-001] |
+| Young talent and independent developers (P-02) | Low-cost participation, open-source release hall, contribute–recognize loop | Core public functions free/low-threshold; activity data aggregated only | [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| AI startups (P-03) | Test field, computing entry, standard-governance consultation | Computing and data services separately authorized, never bundled or forced | [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| University faculty, students, and researchers (P-04) | Research translation, cross-campus collaboration, daily slow mobility | Campus data and research output require authorization | [data:geometry/roads.geojson#ROAD-001] |
+| Public and visitors (S-12 et al.) | Readable and experiential AI scenario network, public event route | Human guides, paper maps, and offline-tour equivalents | [data:geometry/public_space.geojson#PUBLIC-001] |
+| Vulnerable and digitally excluded groups | Agent service is never a prerequisite | No-AI-equivalence paths, human counters, tactile signal feedback | [metric:no_ai_equivalent_count] |
+
+The proposal sets out **four non-exclusion principles** to ensure public interest is not eroded by agent operations:
+
+1. **No-AI Equivalence**: every public-service node provides a human/offline equivalent; agent service is a stoppable add-on rather than a prerequisite, and no one loses service for being unfamiliar with or unable to use agents [depth:no_ai_equivalence] [metric:no_ai_equivalent_count].
+2. **Stop and Freeze Rights**: affected humans may request the suspension of related agent activity; each of the three key areas operates one "affected-party freeze-right" mechanism, and every stop decision keeps a named human responsible [depth:urban_signal_regime] [metric:stop_rights_count].
+3. **Free and Low-Threshold Access**: the Origin Community open-source release hall, the public knowledge base, public event routes, and core public scenarios are free or low-threshold for the public; access rules and cost strategy are stated explicitly, so participation cost excludes no one [depth:scenario_open_operation].
+4. **Accessibility and Intergenerational Inclusion**: signal posts offer both visual and tactile feedback; tours provide large-print, voice, and paper equivalents; public-space accessibility covers the elderly, children, people with disabilities, and the digitally excluded, with operations considering intergenerational differences [depth:component_library].
+
+Public-participation mechanisms — an affected-party appeal channel, resident feedback embedded in annual operational review, and developer contributions flowing back into the public knowledge base — are written into the four-season annual event system and the compliance matrix, so the public interest is continuously stewarded rather than a one-off slogan [depth:annual_event_seasons] [source:AGENT-TASKBOOK]. The safeguards above are conceptual operational and mechanism designs and constitute no confirmed public-service commitment, government arrangement, or specific institution's responsibility.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land use is expressed in accordance with public standards for territorial-space survey, planning, and use classification, forming a complete, closed, seamless land-use partition [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. `geometry/land_use.geojson` divides four parcels: LU-001 is public administration and public-service land (code 08), hosting science-and-technology services and public facilities; LU-002 is parkland (code 14), hosting the Jingzhang Heritage Park spine; LU-003 is commercial and services land (code 05), hosting the intelligent economy and consumption scenarios; LU-004 is residential land (code 07), hosting community life [data:geometry/land_use.geojson#LU-001].
@@ -280,23 +324,48 @@ The cultural narrative unfolds along "**one railway → one street → one revol
 
 The implementation plan forms a reviewable renewal project list, stating each project's location, type, function, responsible entity, dependencies, implementation phase, risks, and evaluation indicators [data:geometry/phasing.geojson#PHASE-001]. Policy suggestions cover coordinated urban-renewal implementation, spatial supply, operating mechanisms, industry services, public participation, data governance, and property coordination.
 
-| ID | Project | Type | Key dependencies | Evidence |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Jingzhang Heritage Park slow-mobility gap suture | Public space/Transport | Road redlines, under-bridge space, traffic-organization review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Agent Contribution Honor Wall (Tsinghuayuan anchor) | Public art/Culture | Heritage-protection conditions, public-space permits, rights clearance | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | Dazhongsi Agent Gateway interchange | Rail integration/New infrastructure | Rail station, intersection, municipal utilities | [data:geometry/key_areas.geojson#PROV-KEY-003] |
-| JZ-04 | Origin Community Digital Citizen Public Living Room | Renewal/Operations | Campus boundary, ownership, ground-floor uses | [data:geometry/key_areas.geojson#PROV-KEY-002] |
-| JZ-05 | Zhongzhi Park Qinghe innovation waterfront | Blue-green/Industry showcase | River blue line, ecology, flood control | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-06 | Dazhongsi four-quadrant pedestrian connectivity | Rail integration/Slow mobility | Rail station, intersections, municipal utilities | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-07 | AI public services and on-device computing nodes | New infrastructure/Public services | Energy, computing, safety, operating entity | [data:geometry/constraints.geojson] |
-| JZ-08 | Global AI Week public route | Operations/Brand | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#PHASE-001] |
-| JZ-09 | Zhongguancun technology-service wing · capital-service station | Industry services/Operations | Zhongguancun IP, tiered capital, and global factor-allocation mechanisms | [data:geometry/key_areas.geojson#PROV-KEY-003] |
-| JZ-10 | Xiaoyue River AI life stroll line | Blue-green/Public experience | Blue-line/green-line plans, waterfront safety, operating entity | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-11 | Urban Signal System demonstration line | Public space/Governance facility | Public-space permits, signal protocol and responsibility sign-off mechanism | [depth:urban_signal_regime] |
+| ID | Project | Type | Phase | Responsible entity | Key dependencies | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-01 | Jingzhang Heritage Park slow-mobility gap suture | Public space/Transport | Mid-term renewal | Renewal coordination/Transport | Road redlines, under-bridge space, traffic-organization review | [data:geometry/roads.geojson#ROAD-001] |
+| JZ-02 | Agent Contribution Honor Wall (Tsinghuayuan anchor) | Public art/Culture | Mid-term renewal | Public-culture operator | Heritage-protection conditions, public-space permits, rights clearance | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-03 | Dazhongsi Agent Gateway interchange | Rail integration/New infrastructure | Near-term pilot (conceptual demo) | Rail-integration operator | Rail station, intersection, municipal utilities | [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| JZ-04 | Origin Community Digital Citizen Public Living Room | Renewal/Operations | Mid-term renewal | Community operator | Campus boundary, ownership, ground-floor uses | [data:geometry/key_areas.geojson#PROV-KEY-002] |
+| JZ-05 | Zhongzhi Park Qinghe innovation waterfront | Blue-green/Industry showcase | Mid-term renewal | Blue-green authority | River blue line, ecology, flood control | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-06 | Dazhongsi four-quadrant pedestrian connectivity | Rail integration/Slow mobility | Near-term pilot | Rail-integration operator | Rail station, intersections, municipal utilities | [data:geometry/public_space.geojson#PUBLIC-001] |
+| JZ-07 | AI public services and on-device computing nodes | New infrastructure/Public services | Long-term governance | New-infrastructure/operator | Energy, computing, safety, operating entity | [data:geometry/constraints.geojson] |
+| JZ-08 | Global AI Week public route | Operations/Brand | Near-term pilot | Event operator | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#PHASE-001] |
+| JZ-09 | Zhongguancun technology-service wing · capital-service station | Industry services/Operations | Long-term governance | Industry-service operator | Zhongguancun IP, tiered capital, and global factor-allocation mechanisms | [data:geometry/key_areas.geojson#PROV-KEY-003] |
+| JZ-10 | Xiaoyue River AI life stroll line | Blue-green/Public experience | Long-term governance | Blue-green authority | Blue-line/green-line plans, waterfront safety, operating entity | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-11 | Urban Signal System demonstration line | Public space/Governance facility | Near-term pilot (conceptual demo) | Governance sandbox/public-space manager | Public-space permits, signal protocol and responsibility sign-off mechanism | [depth:urban_signal_regime] |
 
 The JZ-11 Urban Signal System demonstration line is a **conceptual project**: along the Jingzhang Heritage Park cultural spine and the Dazhongsi–Origin Community link, readable signal posts pilot green/yellow/red three-state signal publication, human handover, and red-card withdrawal drills, giving the Digital Citizen Compact (DCC) a spatial carrier [depth:urban_signal_regime] [metric:signal_node_count] [metric:stop_rights_count]. Its mechanisms are stated as conceptual design suggestions, without commitments about specific devices, frequencies, or investment.
 
 Phasing distinguishes the submission cycle from the implementation cycle: the submission cycle is the deadline for delivering outcomes, while implementation phasing is the path of urban renewal and project construction [depth:renewal_project_list]. This proposal sets out a three-stage framework of **near-term pilots (starting with lightweight facilities, operational events, and service platforms), mid-term renewal (slow-mobility suture, gateway interchange, honor wall), and long-term governance (community operations, data governance, the annual event system)** [depth:phasing_implementation]. The annual event system, developer-community operations, scenario open days, public experience routes, and international communication mechanisms all state their operating targets, frequency, responsibility boundaries, conversion paths, and risks — not slogans.
+
+### Implementation Phasing and Pilot Launch
+
+The three-stage framework is resolved into six dimensions — **timing, pilot location, launching projects, participating entities, deliverables, and evaluation/exit indicators** — and each of the 11 renewal projects is bound to a stage. Implementation follows the principle of **lightweight, reversible, removable**: pilots always begin with operational events, service platforms, and removable installations, never forming irreversible urban-renewal commitments [depth:phasing_implementation] [depth:renewal_project_list]:
+
+| Stage | Indicative timing | Pilot location | Launching projects | Deliverables | Evaluation and exit indicators |
+| --- | --- | --- | --- | --- | --- |
+| Near-term pilot | Submission period–2027 | Dazhongsi four quadrants; Tsinghuayuan–Origin Community segment; Zhongzhi Park governance sandbox | JZ-03 Gateway interchange (conceptual demo), JZ-06 four-quadrant connectivity, JZ-11 signal demo line (removable installation), JZ-08 Global AI Week public route | Readable signal posts, open protocol endpoints, event public route, sandbox rulebook | Scenario trial run for a full season; yellow/red-card drills ≥2; 100% response to affected-party appeals; installations reversible and removed on shutdown |
+| Mid-term renewal | 2027–2030 | Jingzhang Heritage Park slow-mobility gaps; Origin Community Public Living Room; Zhongzhi Park Qinghe waterfront | JZ-01 gap suture, JZ-02 Honor Wall (Tsinghuayuan anchor), JZ-04 Public Living Room, JZ-05 Qinghe waterfront | Suture segments, dual-track honor-wall display, living-room operations plan, waterfront retrofit recommendations | Slow-mobility connectivity improved, annual living-room visitor count, honor-wall contribution registrations; underperforming items may step back to near-term pilot mode |
+| Long-term governance | 2030 and beyond | All 12 scenario nodes; the four-season signal system | JZ-07 computing and public-service nodes, JZ-09 capital-service station, JZ-10 Xiaoyue River stroll line, annual operation system | Annual event system, data-governance charter, community contribution-reflow mechanism | Annual event count, public-knowledge-base accumulation, enforcement rate of digital-citizen appeals and freezes, exit mechanism implemented |
+
+Pilot locations are **conceptual selections**; final alignments and siting are to be confirmed by professional teams and authorities once official regulatory plans, ownership, and engineering conditions are settled. The indicative timing is a rhythm suggestion and constitutes no government implementation arrangement or investment commitment [depth:phasing_implementation].
+
+### Participant and Responsibility Matrix
+
+| Project/mechanism | Responsible entity | Co-builders | Responsibility boundary | Handover/exit mechanism |
+| --- | --- | --- | --- | --- |
+| Gateway interchange (JZ-03) | Rail-integration operator | Design team, open-protocol community, university labs | Protocol interfaces, identity authentication, data-permission governance | Assessed at end of conceptual-demo period; demo installations removed if not meeting standards |
+| Signal demo line (JZ-11) | Governance sandbox/public-space manager | Park operator, developer community | Signal publication, human handover, red-card withdrawal | Red-card withdrawal drills normalized; installations are removable facilities |
+| Honor Wall (JZ-02) | Public-culture operator | Universities, developer community, street office | Content rights clearance, contribution registration, four-state grading | Annual review; content removed immediately on copyright issues |
+| Public Living Room (JZ-04) | Community operator | Origin Community, universities, governance sandbox | Ground-floor uses, opening hours, sharing agreement | Operating agreement reviewed annually |
+| Governance sandbox (S-06) | Governance-sandbox manager | University labs, testing teams, regulatory observers | Test admission, data isolation, red-team evaluation | Closes when test resources are exhausted; data isolation reclaimed |
+| Four-season annual events | Event operator | Developer community, international-communication team | Event safety, public-space permits, rights clearance | Annual review; discontinued after consecutive underperformance |
+
+Responsible entities are **responsible-entity types** for mechanism design; the actual bearers are to be determined through open procedures during the operation and implementation stages. This proposal names no specific institution and constitutes no contract, appointment, or commitment [source:AGENT-TASKBOOK].
 
 ### Brand-IP System and Annual Event Signals
 
