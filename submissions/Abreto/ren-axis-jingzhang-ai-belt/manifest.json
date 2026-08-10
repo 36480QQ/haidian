@@ -23,7 +23,7 @@
    "path": "proposal.md",
    "role": "narrative",
    "required": true,
-   "sha256": "e971b38779f3a6fc1b1ed7ddbcc2d57a91aa6c1d253bd369d7fc7809f3d4fef5",
+   "sha256": "889d44973f9d184db38cbfddcf99fcbd5ef90ae80b364c35388d35877f804908",
    "language": "zh"
   },
   {
@@ -36,19 +36,19 @@
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "1ac52127327a0798353e743a90ede5ceae8db8d4ac1023b4e903bbf15cc1374e"
+   "sha256": "24d4f6fd43434c757555bc07125073068ef653f1fe6c4f98fed3d03d7acbd3ab"
   },
   {
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "12dfe4195a5d44d36d537cbb50860dcf2adfc7948a18eabeff048c3cbabb2a67"
+   "sha256": "cd39caaf479fcdae17589d4f639e2020b4e01cd86cab8c8df086d3319a14edc7"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "265b7b22572e49108eb535f81248fd8ab107a546d4779e9cd84a10c66aa9eef3"
+   "sha256": "eae55ac8b5a89ce717cd12a99dd671073d74892a4acd8fae0a701b95ee5971ac"
   },
   {
    "path": "self_check.json",
@@ -78,7 +78,7 @@
    "path": "report/proposal.html",
    "role": "rendered_proposal_html",
    "required": true,
-   "sha256": "cdb7b80084355d1e6b7ae6ab5caed9c50ade3934195db0736a32d99e87350506",
+   "sha256": "8965eb319f6acdd4f7ccf197df11787a97a776363235046752d85e72f96384e0",
    "language": "zh"
   },
   {
@@ -97,14 +97,14 @@
    "path": "drawings/a3-booklet.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "6b3df6c5818cf2ae1d2a146df3896b855fae5a2e54c2cdb6484f164b1a7cac14",
+   "sha256": "a980ca06c793bb82a5cff688ddc04596d4a1023714d464d67033e1399cd82087",
    "language": "zh"
   },
   {
    "path": "drawings/a0-boards.pdf",
    "role": "drawing",
    "required": true,
-   "sha256": "46ae2696cb08d1cbc48ceefd0534e23dfb77a57a4cae320198db7b637a98feee",
+   "sha256": "6ffb89c16025b06d277aa319e4746598d66832228e2743cea83fe2978dad9a3d",
    "language": "zh"
   },
   {
@@ -207,7 +207,7 @@
    "path": "changelog.md",
    "role": "changelog",
    "required": false,
-   "sha256": "aa538219510f0bda371bda97657bc9548c0d46a236c47b1783be791ecccde04e"
+   "sha256": "d1f87db02a5c327a53e86e26af707e925e6c3de172f0a1e2bf7ec259de566aae"
   },
   {
    "path": "risk.json",
@@ -245,7 +245,7 @@
    "required": false,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "58d2dc1a5d4957edaf3c6daa2325194b4b47a479d9684cca569b11aae44e989f"
+   "sha256": "659e7fa936234e0d47a2a9748ee3f2fe049cc4edc62ee9578cdf3168bd5ffdb6"
   },
   {
    "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
    "required": false,
    "language": "en",
    "translation_of": "drawings/a3-booklet.pdf",
-   "sha256": "20f45bcd6054f09b0728bb2d307b62ccf4318a46f68117e3e2af66e6dad59cba"
+   "sha256": "01b674cc870c91a7b12fe04f1131347d0ae3c2febb78c2ef7ea58d6578ff3938"
   },
   {
    "path": "drawings/a0-boards.en.pdf",
@@ -269,7 +269,7 @@
    "required": false,
    "language": "en",
    "translation_of": "drawings/a0-boards.pdf",
-   "sha256": "07f6e0dacaecd4efbc964b883a8a22b6d30c8b2a8ce6977f8c20bd69f0630122"
+   "sha256": "44b1ba9bff7323f78847b21cf93cef1195b4cae3ca733ca0c3d279417c8c34b9"
   },
   {
    "path": "assets/figures/site-overview.en.png",
@@ -317,13 +317,25 @@
    "required": false,
    "language": "en",
    "translation_of": "report/proposal.html",
-   "sha256": "a32719823ddc324079916d82522222c2e6bc7e30398deb0e2a48edfbf7615739"
+   "sha256": "d49ee55111e8f193533a99cc7ec3285d9bee429a1470ca17bd8a1471d9517923"
   },
   {
    "path": "visual/assets/osm-buildings.json",
    "role": "osm_existing_buildings_archive",
    "required": false,
    "sha256": "b2e30f91f6fca072a9b92cbbea8cf09641a6764c0772c491e5ea09b4086372c1"
+  },
+  {
+   "path": "visual/assets/plot-conditions.json",
+   "role": "official_plot_conditions_archive",
+   "required": false,
+   "sha256": "527eba6387c17ad9244fb882189db8dd971c79f5ebea068ad14ab184ec997c5a"
+  },
+  {
+   "path": "visual/assets/control-plan-draft.json",
+   "role": "control_plan_draft_guide_transcription",
+   "required": false,
+   "sha256": "3a3132ddff7a9bbf726b0f3d42189a8dff242754a667864f9245c35d0c7c15bd"
   }
  ],
  "validation_claim": {

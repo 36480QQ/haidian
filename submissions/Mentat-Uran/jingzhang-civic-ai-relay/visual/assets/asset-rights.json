@@ -53,10 +53,10 @@
     },
     {
       "id": "AR-08",
-      "asset_class": "Relay Receipt 0.3 schema and synthetic example",
-      "source": "original concept data model",
-      "redistributed": "ten-stage JSON Schema, four-ticket synthetic fixture, six candidate acceptance criteria, four hard stops and five rollback actions",
-      "excluded_or_restricted": "not a government schema, deployed system, real service record, completed test or performance evidence"
+      "asset_class": "Relay Receipt 0.3 schema, synthetic example and tabletop harness",
+      "source": "original concept data model and deterministic local test code",
+      "redistributed": "ten-stage JSON Schema, four-ticket synthetic fixture, six acceptance checks, four fail-closed stop branches, five rollback actions, a reproducible script and its bounded evidence JSON",
+      "excluded_or_restricted": "not a government schema, deployed system, real service record, authorized sandbox, field test, public participation result or operational performance evidence"
     },
     {
       "id": "AR-09",

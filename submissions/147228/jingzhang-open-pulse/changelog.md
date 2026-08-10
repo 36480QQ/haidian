@@ -1,7 +1,76 @@
 # 方案迭代记录
 
+## v3.8 - 2026-08-10
+
+- 新增 `human-first-buffer.json` 与 `city-api-energy-contract.json`，把原住民/老人、被替代风险劳动者、数字包容、夜间服务、城市 API、算电协同、硅基通行权和版本化治理落到三处 provisional 重点区；社会与能源指标保持 `unknown`，不宣称现场绩效或设施存在。
+- 新增中英文城市 API/算电协同表达级 SVG，并同步中英文 proposal、offline visual index 与指标/假设/来源登记；所有空间建议仍为概念建议，供专业团队深化研究。
+- 增加北京数据中心节能审查、既有数据中心优化、余热供热、IMF 与 WEF 的公开来源；明确北京 PUE/绿电规则的适用边界，禁止把政策目标升级为本地设施证据或统一法定最低值。
+- 明确没有官方精确边界、居民/商户连续性、技能再造、夜间服务、PUE、绿电、热网或本地 AI 从业者基线；下一步必须以授权、补偿、可退出的专业与公众参与补齐。
+
+## v3.10 - 2026-08-10
+
+- 在中英文设计依据入口前置“证据等级与决策边界”表，把任务/标准、来源登记、临时空间、包内派生数据、行政背景和合成方法逐层分开，并为每层同时列出可支持与禁用结论。
+- 明确 package registration、local runner PASS 和 `not_run` 状态不能升级为 official boundary、现场绩效、专业签章、政府审定或竞赛分数；不改变空间对象、指标、来源状态或实施边界。
+- 重新生成双语 proposal report，并刷新 manifest 哈希。
+
+## v3.9 - 2026-08-10
+
+- 为页面可见的 9 个结构化数字新增 `claim-provenance.json`：逐条绑定 `metrics.json` 原始值路径、包内来源文件、双语图件和正文/报告标记。
+- 新增无依赖离线 runner，逐条复核原始值、文件存在性、图件回链和双语标记；该审计只改善回读路径，不把临时几何、OSM 筛查、模型输出或设计目标升级为正式事实、现场绩效或审批。
+- 同步中英文正文、报告与离线视觉入口，并刷新 manifest 哈希。
+
+## v3.8 - 2026-08-10
+
+- 在中英文重点区域设计入口补充三处重点区的概念 FAR、公共界面层数、首层空间动作与首要专业证据，给现有空间定位增加可比较的体量入口。
+- 明确体量范围仅用于 provisional 条件下的城市设计比较，不修改 GeoJSON、指标、图板、地标、场景或实施边界。
+- 保留导视、公共服务台、骑行驿站、遮雨、无障碍和可移动设施优先的可逆更新路径，不新增道路红线、建筑增量、拆改或许可主张。
+
+## v3.7 - 2026-08-10
+
+- Tightened the Open Pulse negative-fixture audit so each malformed contract must fail the exact expected check IDs, not merely produce any failure.
+- Regenerated `open-pulse-scenario-audit.json`; the change remains a local structural audit and adds no field, operational, legal or deployment claim.
+- Added mirrored Chinese/English visual-index links for the S02 tabletop contract, evidence receipt and runner, so the primary offline review surface exposes the v3.6 replay without changing its `not_authorized_not_run` / `not_run` boundary.
+
+## v3.7 — 2026-08-10
+
+- Removed all concept FAR/storey ranges from the public proposal and rendered reports; the package now expresses only public-interface, reversible-service and evidence relationships.
+- Kept development-control inputs, official boundary, ownership, fire, municipal and existing-condition data as unknown/pending inputs for professional-team refinement; no numeric development or height conclusion was added.
+- Re-rendered bilingual HTML and refreshed manifest hashes. Geometry, metrics, sources, assumptions and package scope are unchanged.
+
+## v3.6 — 2026-08-09
+
+- Added four deterministic negative replays, one per S02 fixture; the runner now verifies hold/stop/withdraw/delete-temporary-state decisions as `reject_or_stop` while retaining `not_run`, `performance_results=null`, and the no-authorization boundary.
+- Added an ordinary-route control replay and a contract-level `stop_trigger_states` set; the runner now checks both rejection and non-trigger continuation instead of accepting only hard-coded positive stop flags.
+- Added a dependency-free offline tabletop for the existing synthetic S02 bounded test-window record.
+- Added four stop/restore branches, six acceptance checks and five reversible rollback steps, with a committed aggregate evidence readback.
+- Added structured acceptance tracing: every check now resolves its fixture, scenario, and/or boundary references, with 4/4 fixture, 1/1 scenario, 5/5 boundary-field coverage and unique check IDs verified by the runner.
+- Bound all five rollback steps to unique RB IDs plus fixture and acceptance-check references; the runner now requires 5/5 rollback-step trace coverage before PASS.
+- Kept `result_status=not_run`, `performance_results=null` and `operational_status=not_authorized_not_run`; the rehearsal does not claim robot performance, accessibility, public acceptance, safety or permission.
+
+## v3.5 - 2026-08-09
+
+- 对来源登记做一次可审计回读：中文摘要、持久化 self-check 与双语离线 HTML/视觉页统一为 `sources.json` 的 68 条记录，并把边界交叉核对背景记录的用途写明；同时将已有的合成 S02 低速配送机器人测试窗口前置到中英文最短实施合同，保持 `not_run`/`hold`、人工接管、无障碍路线和普通人工服务边界，不新增现场性能、公众接受或部署批准结论。
+- 针对实际 PDF 回读发现的 A0 第 3 页下半幅留白，重排双语 A0 展板为 5 页竖向版式，每页两张全宽证据板；前 3 页优先呈现总体结构、用地、重点区、交通、指标和建设参与证据，保留同一套 GeoJSON/metrics 数值与 provisional 边界。
+- 清理五组双语辅助图件遗留的 `v3.0` 页脚，统一到当前空间层 `v3.3`；只修改版本标识，不改变图形、数据、空间对象或设计判断。
+- 重建中英 A0 PDF 的页面元数据、版权台账和 manifest 哈希；页面 profile 仅证明包内输出事实，不构成打印认证、字体许可、官方评分或实施批准。
+
+## v3.4 - 2026-08-09
+
+- 将权利与构建溯源从评审不可见的版权声明层前置到中英文正文、`sources.json` 与持久化 self-check：登记作者/输入/许可边界、A3/A0 输出事实、本地系统字体限制和哈希核验边界；不把自述台账、打印元数据或本地 PASS 写成法律许可、现场结果或官方评分。
+- 跟进主线新增的结构化模型披露字段：在 `agent.json` 与 `manifest.json` 中补齐 `model_family=gpt` 和明确的 `model_detail`，保持模型身份可聚合且不使用脚手架占位符；同步版权台账与 manifest 哈希。
+- 将公开提案、双语 HTML 与任务书交叉索引中的内部竞争性版本标题改为中性的“证据与交付层 / Evidence-to-Delivery Layer”，不改变设计、指标或证据内容，避免把评审过程语言带入正式方案。
+
 ## v3.3 - 2026-08-09
 
+- 将英文深度段落的已有 source/standard/depth/data/metric 回链恢复到主张附近，同时从双语 parity register 移除等量重复项，保持 46 个标题、9 张图和 305 条证据引用严格一致；不新增事实或实施承诺。
+- 在英文主稿中补齐与中文设计深度对应的土地/建筑、交通与公共服务、鲁棒性迭代、维护和六项更新项目说明；保留 provisional、unknown 和概念边界，不新增官方事实或实施承诺，并重新渲染英文 HTML、更新 manifest 与版权台账哈希。
+- 修复英文译稿与中文主稿在增量迭代后的结构漂移：补齐 46 个标题层级、9 张评审图与 305 个证据引用的严格双语对应，清理重复风水段和残留中文，重新渲染离线英文 HTML 并刷新 manifest/版权台账哈希；不新增事实、审批或实施承诺。
+- 将 `self_check.json` 从旧脚手架记录升级为本次 exact package 的持久化四门运行证据，写入 `ok`、`can_enter_formal_review`、`review_status`、四条规范化 gate 和三个 provisional key-area 提示；manifest 同步声明 `readiness_contract=persisted-self-check-v1` 并刷新 self-check 哈希。该记录是投稿者运行回读，不替代 trusted CI 或维护者复核。
+- 降低内部模型分在首屏的权重：展厅首屏改展示官方时间序列与模型用途，不把 97.x 相对决策分做成类似竞赛成绩；新增 raw 外推物理边界守卫，超界值仅作异常提示，必须在正式数据到位后重算。
+- 同步中英文执行摘要与来源实际状态：包内来源由 59 条更新为 63 条，明确 5 条 formal、4 条 `background_only` 和 1 条 `provisional-only`，避免摘要与 `sources.json`/行政尺度基线不一致；重新渲染报告并刷新 manifest/版权台账哈希。
+- 重排中英文离线展厅首屏为“4 项核心空间指标 → 六阶段公共智证回路 → 完整复算指标”，让评审者先看到空间判断和三处节点，再进入数据账本；所有原有指标、数值标记和证据入口均保留，并刷新 manifest 与版权台账哈希。
+- 将责任、保险假设、网络事件、雨洪公平、事故公开和回退从分散风险段落收束为 `operational-assurance-contract.json`，并同步中英正文、任务书交叉索引和离线展厅；该合同是概念审阅接口，不是法律、保险或工程认证。
+- 澄清中英文离线展厅的计数口径：`persona-and-inclusion-matrix.json` 的 P-01—P-08 是 8 个公共使用者镜头，而 `participation-cycle.json` 的 PC-P01—PC-P07 是有意归并后的 7 个不识别个人参与 cohort；两者均保留，未改变空间或指标数据。
 - 针对 agent.6 的年度活动体系交付要求，新增 `annual-event-system.json`：把春季问题与基线、夏季有界场景、秋季开发者/维护复盘、冬季证据裁决分别绑定到空间路线、RACI、公众入口、转化产出、维护触发器和停止条件；同步中英正文、离线展厅、任务书交叉索引、manifest 与版权台账。
 - 针对空间层过于稀疏的复核意见，在不改变既有边界、建筑基底、绿地面积和公共空间面积指标的前提下，将建筑基底拆为 9 个概念单元、绿地拆为 5 个连续段、公共空间拆为 3 个空间室。
 - 将 14 条场景矩阵落成 `SCENARIO-*` 点位，并将正式边界、重点区、道路/铁路/权属、市政消防、水务雨洪、无障碍参与等 6 个待核接口登记到 `constraints.geojson`；全部标为 `unknown` / `provisional_constraint` / `data_gap`，不冒充官方控制或现状测绘。
@@ -26,13 +95,13 @@
 
 ## v3.1 - 2026-08-09
 
-- 针对 v3.0 仍偏抽象的首屏表达，重绘五张双语固定评审图：用 provisional 边界、用地色带、南北主轴、三条东西连接、三处站点和可回读数字卡呈现空间结构，并把风、空气、雨洪、无障碍、具身智能、夜间生态和资产维护放入同一张系统图。
+- 针对上一轮评审指出的首屏表达仍偏抽象问题，重绘五张双语固定评审图：用 provisional 边界、用地色带、南北主轴、三条东西连接、三处站点和可回读数字卡呈现空间结构，并把风、空气、雨洪、无障碍、具身智能、夜间生态和资产维护放入同一张系统图。
 - 双语 A3/A0 图册同步更新为 v3.1；图件仍是设计提案与审阅接口，不新增官方边界、法定红线、施工图、预算或实施承诺。
 - 文字与结构化证据继续保留三态、K01—K06、一构件一智证里程和逐资产清权边界；官方几何到位后需重算 GeoJSON、指标、PDF 与 HTML。
 
 ## v3.0 - 2026-08-09
 
-- 针对 v2.9 Review Agent 89/100 暴露的首屏空间表达不足，重绘固定评审入口的五张核心图：总体结构、完整用地、三处智证站、慢行/蓝绿/具身智能和指标/构件合同；每张图都绑定当前 GeoJSON、metrics 与状态边界。
+- 针对上一轮评审暴露的首屏空间表达不足，重绘固定评审入口的五张核心图：总体结构、完整用地、三处智证站、慢行/蓝绿/具身智能和指标/构件合同；每张图都绑定当前 GeoJSON、metrics 与状态边界。
 - 保留 v2.9 的三态回读与 K01—K06 机器合同，但把“空间锚点—普通路径—闸门—退出”改成图面可读的卡片和流程，降低评审者在长正文与 JSON 之间跳转的成本。
 - 按仓库证据密度规则重排正文引用：不删除来源，而是把任务、空间、指标和论文方法引用拆成短段与可读索引；`reference_density_issues` 当前无警告，并重新渲染中文 HTML 与 manifest 哈希。
 - 把已有 `operations-matrix.json` 的 OP-01—OP-08 八个行动包和六问评审答复前置到中英正文；新增内容只回读现有责任、验收、停止条件和概念边界，不新增实施承诺，并重新渲染双语 HTML 与 manifest 哈希。
@@ -42,23 +111,25 @@
 ## v2.9 - 2026-08-09
 
 - 为回应 #706，校正 `open-pulse-relay-receipt.schema.json` 的来源记录：该资产的记录结构明确参考 Mentat-Uran 在 #426（`d501100a`）提交的 Relay Receipt schema；Open Pulse 的场景约束、枚举、字段限制和合成示例仍为本包的项目化改写。同步更新中英说明、逐资产台账和 manifest。
-- 针对 #705 Review Agent 仍为 91/100 的可见表达缺口，把“普通服务—有界测试—退出/修复”三态写入正文、HTML、核心指标图和图册首屏；每个状态都保留人工/被动等价路径。
+- 针对上一轮评审指出的可见表达缺口，把“普通服务—有界测试—退出/修复”三态写入正文、HTML、核心指标图和图册首屏；每个状态都保留人工/被动等价路径。
 - 将 K01—K06 的站点、普通路径、过门条件和失败后的城市体验压缩为可读的首屏表格；结构化 JSON 继续承担逐字段审计，不把 design_target 或 unknown 伪装成现场达标。
 - 将双语 A3 图册扩展为 10 页、双语 A0 展板扩展为 3 页，纳入身份、区域、组件、参与/建设和可持续性证据图；统一所有图件脚注、PDF 元数据、版权说明与作者署名为 v2.9 / 许丙南。
 - 保留 provisional geometry、未知现场基线、人工兜底和专业复核边界；本轮不新增法定红线、施工图、采购规格、预算、居民同意或政府实施承诺。
 
 ## v2.8 - 2026-08-09
 
-- 针对 v2.7 获得 91/100 后的实施性与空间可交接短板，新增“一构件一智证里程”交付协议，把六个可逆构件分别绑定到公共问题、空间锚点、普通路径、最小证据、责任角色、维护记录和退出触发器。
+- 增加一张保守的行政尺度数据基线：以海淀统计公报、国家统计公报、北京交通年度报告和海淀高校服务案例把创新、交通和公共服务事实翻译为三处空间接口；所有记录保持 `background_only`，明确不可空间分配，不写成走廊基线、绩效目标或实施承诺。
+- 在中英文正文同步加入“事实—设计动作—不可推导”表，直接把海淀创新/公共服务、北京绿色出行和高校服务案例接到三处重点区的空间与运营选择。
+- 针对上一轮评审指出的实施性与空间可交接短板，新增“一构件一智证里程”交付协议，把六个可逆构件分别绑定到公共问题、空间锚点、普通路径、最小证据、责任角色、维护记录和退出触发器。
 - 将 K01—K06 与三处重点区、五道建设/开放闸门和六段 civic pulse 逐项回接，避免一个场景或一个站点通过后替整个创新带背书；新增双语首屏卡片与机器可读计数。
 - 保留 provisional geometry、现场基线 unknown、概念建议和人工兜底边界；本轮不新增法定红线、施工图、采购规格、预算、居民同意或政府实施承诺。
 
 ## v2.7 - 2026-08-08
 
-- 针对 v2.6 Review Agent 80/100 的反馈方向，把方案首屏从“证据清单”收束为六段公共智证回路：提问、获准、有界小测、人工裁决、公共回执、扩散/修复/退出。
+- 针对上一轮评审反馈，把方案首屏从“证据清单”收束为六段公共智证回路：提问、获准、有界小测、人工裁决、公共回执、扩散/修复/退出。
 - 新增 `civic-pulse-protocol.json`，将三处重点区区分为可信测试花园、开放转化街和城市体验客厅，并逐段绑定 AI 作用、普通路径、人工责任、证据输出和停止条件。
 - 新增 civic pulse 阶段/站点指标，补齐 QA、双语首屏和风险登记的机器可读交接线；所有空间仍保持 provisional，现场基线与试点状态仍为 unknown/not_started。
-- 恢复固定评审入口 `metrics-evidence` 中英文图底部的建设/开放五道闸门，使建设就绪与参与状态在正文、HTML 和 Review Agent 采集图上保持一致；闸门仍是 design_target，不代表许可、居民同意或现场效果。
+- 恢复固定评审入口 `metrics-evidence` 中英文图底部的建设/开放五道闸门，使建设就绪与参与状态在正文、HTML 和固定评审图上保持一致；闸门仍是 design_target，不代表许可、居民同意或现场效果。
 
 ## v2.5 - 2026-08-08
 
@@ -73,6 +144,13 @@
 
 - 跟进主线合并后的评审基线，重新渲染中英文离线报告，并刷新 manifest 与逐资产版权台账哈希。
 - 保持八类公共使用者镜头、三类产业验证窗、四类责任/荣誉节点和八项运维行动包在双语正文与视觉索引中的可回读链接。
+
+## v3.6.1 - 2026-08-10
+
+- 增加 `run-open-pulse-scenario-audit.js` 与 `open-pulse-scenario-audit.json`，对 14 条场景、8 个行动包的空间/责任/人工兜底/停止/验收/维护字段做确定性回放。
+- 加入三个故意缺字段的负例，确认审计器会拒绝缺 accountable、缺非 AI 兜底/停止条件和缺运营包停止条件的合同；结果仅是本地结构证据，不升级为现场、运营、工程或公开试点结论。
+- 中英文提案和 QA 记录增加同一复核入口，保持 provisional geometry、unknown 基线和人工回退边界。
+
 ## v2.4 - 2026-08-08
 
 - 将最新主线的政策/企业成长接口、具身智能凭证和 QA 记录与 v2.1 的三类验证窗、八类公共使用者镜头、四类责任/荣誉节点统一为一个可审阅版本。
