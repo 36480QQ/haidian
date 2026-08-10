@@ -15,7 +15,7 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Provisional/submitted boundary is used for calculation as official polygon is pending."
       ]
     },
     "building_footprint_area_sqm": {
