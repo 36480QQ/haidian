@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "507add5e325548cff4a694ce9e26085c9b34857ac095fd079de0fe113fd4c701"
+      "sha256": "0b3a4b2220433ca68b6d68aaef13fd298572f5a7063ab458bd969c11c168a4c1"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a090bd96be3654996445edc82bd12df2a7289e113ae89e937ecae6df13dbb160"
+      "sha256": "2ba4b5c9e0e664b907588838ed01ab703be85a9d0c6b26e63f2a7669d72c4cb2"
     },
     {
       "path": "agent.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3ec9220b11284181d0553e24f2bf41fdb837b0e958cb226435699ae6f93f6851"
+      "sha256": "749f93fcca5564667238721182536b0d27d874d1326e728004b8de885bacc31f"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,13 +95,13 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c7c62fd7ffd2c2b5df4f63a016869d972018a564bfee5c76b286f4293f803562"
+      "sha256": "675676728a016b7103ba7e48d53efbc5805a784ebe23062dcd25628a4d854286"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "56d75411922ee9ff4429ab84ff1c67d9ca35f416d08e00b748a8ce3aa83f4149"
+      "sha256": "1d8894d0c4dd2178c55993a1e81bcd2b497a4b361a11f7b7036361ca16cad4da"
     },
     {
       "path": "report/copyright_statement.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "00ecb7d4c58747b0f1c81a337c6381dcb22eebca14f3fc8390e1284249e45f58"
+      "sha256": "7108a1613449dfd4eb6f758c15d4ecd17b7139ef17b61146d77490ffa0cce11d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -150,7 +150,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9591fb3aa9286769b6dcd5fdb8b77abbd80df25aeaa1eed33601aa330ff0b1f7"
+      "sha256": "1b23ca99095b6e8514fc3d248c39fb4f71cc96b4eb4aa8d047d29fe8bfc87d67"
     },
     {
       "path": "visual/index.en.html",
@@ -158,7 +158,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d5735e7f3d19696b17479521bec4ab02613d0520191dc9c8b6ae53e2712079e1"
+      "sha256": "f161eae158aae11a77e9559f37ae2f3ded5cddaf2f72cd14d43c199879354cec"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -491,6 +491,18 @@
       "role": "autonomy_scenario_register",
       "required": true,
       "sha256": "9bcac152b68189d74b48c478a74cf2d94bfe165ea5e628e96d08cc2809757095"
+    },
+    {
+      "path": "visual/assets/autonomy-readiness-register.json",
+      "role": "autonomy_readiness_register",
+      "required": true,
+      "sha256": "8f707ad72d4f3e9986fa283a7ba269a470fe24fe47a4fccd4950d056188fa75b"
+    },
+    {
+      "path": "visual/assets/check-autonomy-readiness.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "f89c5942088ca1ce566127863320860e1606067d57ab761e92a6bc33e4786f99"
     },
     {
       "path": "visual/assets/curbside-test-gates.json",
