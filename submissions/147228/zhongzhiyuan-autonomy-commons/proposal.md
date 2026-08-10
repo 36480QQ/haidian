@@ -112,6 +112,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 在证据到位前，空间动作只包括可撤回的导向、候车遮雨、人工服务台、无障碍坡道、路缘状态牌和可移动隔离；不据此提出道路拓宽、建筑增量、拆除或自动驾驶社会道路开放 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
+### 三处节点的自动驾驶功能带（概念层）
+
+为避免“节点”被误读成一处车辆停靠点，本包把三处节点拆成普通人路径、公开状态与同意、受限服务窗口、人工接管/停止和恢复普通路径五个连续界面。众智园先验收可关闭的安全评测庭，AI 原点先保留纸面/电话/人工等价服务，大钟寺先把轨道到达、安静通行和物流维护窗口分开；尺寸、容量、速度、路权、许可和性能仍为空，节点计划只表达 functional bands，不是道路断面或红线 [data:visual/assets/autonomy-node-interface-plans.json#AV-INTERFACE-001]。
+
+![三处自动驾驶节点的公共界面与功能带](assets/figures/autonomy-node-interface.svg)
+
+图注：三行节点计划把“普通路径先行、受限服务可关、证据不足即人工回退”放到同一张图上；颜色表示界面关系，不表示现状测量、工程尺寸或车辆性能。
+
 ![核心区域公共性分工与停止条件](assets/figures/key-areas.png)
 
 图注：重点区图不是点位清单，而是把企业服务、社区等价服务和轨道换乘分别落到首层界面，并显示何时回退到人工、无障碍和应急通道。

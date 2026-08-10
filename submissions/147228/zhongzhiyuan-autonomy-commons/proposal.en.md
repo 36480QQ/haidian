@@ -105,6 +105,14 @@ These relationships answer which public and reversible conditions to compare fir
 
 Until that evidence exists, spatial actions remain removable wayfinding, weather shelter, staffed service, accessible ramps, curb-state boards and movable separation. Nothing here authorises road widening, building increment, demolition or autonomous operation on a social road [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
+### Autonomous-Mobility Functional Bands at the Three Nodes (Concept Only)
+
+To prevent a “node” from being read as a vehicle stopping point, this package separates five continuous interfaces: ordinary human route, public status and consent, bounded service window, human handover/stop, and restoration of the ordinary route. Zhongzhiyuan first tests a closable safety-evaluation yard; AI Origin preserves paper, telephone and equivalent human service; Dazhongsi separates rail arrival, quiet movement, and loading/maintenance windows. Dimensions, capacity, speed, right-of-way, permits and performance remain null; the plan expresses functional bands only, not a road section or redline [data:visual/assets/autonomy-node-interface-plans.json#AV-INTERFACE-001].
+
+![Public interface and functional bands for three autonomous-mobility nodes](assets/figures/autonomy-node-interface.en.svg)
+
+Caption: The three-row plan makes “ordinary route first, closable service, human fallback when evidence is missing” visible in one view. Colors express interface relationships, not existing-condition measurements, engineering dimensions, or vehicle performance.
+
 ![Key-area public roles and stop conditions](assets/figures/key-areas.en.png)
 
 Caption: The key-area board is not a point list: it places enterprise service, equivalent community service and rail interchange at ground interfaces, and shows when the system returns to human, accessible and emergency routes.
