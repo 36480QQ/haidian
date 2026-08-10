@@ -1,6 +1,0 @@
-# Force LF for submission package files so manifest hashes match committed bytes
-submissions/**/*.md text eol=lf
-submissions/**/*.json text eol=lf
-submissions/**/*.geojson text eol=lf
-submissions/**/*.html text eol=lf
-submissions/**/*.csv text eol=lf
