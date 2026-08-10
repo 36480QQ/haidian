@@ -62,6 +62,18 @@ Zhongzhiyuan is a problem–protocol–shared-lab concept: an open problem regis
 
 Three low-scale pilgrimage landmarks are the Open Problem Mile Marker, Algorithm Calibration Court, and Human Override Beacon. They display question versions, human revisions, and withdrawal rights, with no role for celebrity, ranking, or monumentality. The Jingzhang heritage-park public-space sequence, east–west stitching, and north–south link are conceptual wayfinding, walking, and blue-green research strategies. They do not establish bridge, tunnel, underground, or construction conclusions. [data:geometry/public_space.geojson#PUBLIC-05] [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:landmark_count]
 
+## v0.8 scoring repair: bring public interfaces down to node scale
+
+The previous section answers which public and reversible relationships to compare in the three key areas. This section lowers the reading scale again to one node sequence: **ordinary arrival → human explanation/service → bounded state → freeze/replay or exit**. `visual/assets/ai-era-spatial-interface-plans.json` registers existing provisional-geometry anchors, functional bands, entry evidence, and stop conditions for each area. It adds no dimensions, changes no geometry, and does not upgrade a concept interface into an existing facility or engineering proposal. [data:visual/assets/ai-era-spatial-interface-plans.json] [depth:overall_spatial_structure]
+
+| Node | Existing anchor sequence | Functional bands (no scale; state and order only) | Spatial action on failure |
+|---|---|---|---|
+| Zhongzhiyuan | `MOBILITY-05` → `PUBLIC-01` → `SCN-06` → `GREEN-02` | Ordinary arrival/observation → human explanation/takeover → bounded API simulation → freeze/replay/safe retreat | Freeze the interface when authorization, responsibility, logs, or takeover is missing; retain the ordinary route and paper rule |
+| AI Origin Community | `MOBILITY-04` → `PUBLIC-02` → `SCN-02` → `GREEN-03` | Daily arrival/dwell → paper, phone, staffed service → reskilling/intergenerational learning → screen-free recovery/exit | Return to human service when the human entry is unavailable or the ordinary route is cut; keep outcomes `unknown` |
+| Dazhongsi | `PUBLIC-05` → `SCN-05` → `SERVICE-ZONE-02` → `PUBLIC-04` | Cultural arrival/movement → multilingual explanation/consent desk → withdrawable display/bounded service → redress/freeze/night fallback | Close the display on overreach, unexplained behavior, or uncleared rights; retain ordinary movement and human fallback |
+
+This node plan adds a reviewer-visible middle layer for how public interfaces carry an ordinary-person path and stop action; it is not a section, plan, or massing drawing. Until road, tenure, heritage, accessibility, existing-facility, and operating evidence is available, all dimensions, capacity, movement performance, and outcome metrics remain missing or `unknown`. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Six personas make the ecosystem accountable: original residents and older people; workers at task-substitution risk; night-shift AI workers; small merchants and one-person teams; developers and researchers; people with access needs and carers. Every group retains human service, explanation, refusal, appeal, exit, and non-device alternatives. [source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
