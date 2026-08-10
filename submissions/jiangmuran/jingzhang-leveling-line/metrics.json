@@ -75,6 +75,16 @@
       "assumptions": [],
       "reason": "Approved FAR controls and official site boundary are not present in the public site package."
     },
+    "existing_residential_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [],
+      "formula": "sum(existing_residential_floor_area) within the design scope",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "本方案写了一条约束——「人才公寓与既有居住的关系须以不减少现有居住供给为前提」——而现状居住建筑面积并未公开，本包也没有测它。按本方案自己的标准，一条无法核验的规则不算规则，因此这里把它约束的那个量单列为 unknown 并写明前置条件：现状居住建筑面积或户数须由权属与现状测绘数据给出，该数据到位前这条约束只能作为深化阶段的必检项，不能声称已满足。0701 城镇住宅与 0804 教育用地不出现在 land_use.geojson 里，是因为它们落在 11 个留白街区内且其边界依赖同一批未公开数据——这是判断，不是遗漏。"
+    },
     "key_area_count": {
       "status": "known",
       "value": 3,
@@ -383,7 +393,7 @@
     },
     "errata_entry_count": {
       "status": "known",
-      "value": 37,
+      "value": 38,
       "unit": "count",
       "source_files": [
         "visual/assets/errata.json"

@@ -4,9 +4,9 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 37,
+  "total": 38,
   "by_found_by": {
-   "audit": 16,
+   "audit": 17,
    "own-gate": 1,
    "external-reviewer": 3,
    "self": 17
@@ -19,7 +19,7 @@
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
-   "deliverable-not-inspected-before-shipping": 7,
+   "deliverable-not-inspected-before-shipping": 8,
    "gate-reported-and-was-ignored": 1,
    "measurement-answering-a-question-it-cannot-answer": 1
   }
@@ -406,6 +406,16 @@
    "what_zh": "report/narrative.md 开篇写「228 份 … 69 份（30.3%）… 84 种 … 9 个模型家族」，assumptions.json#A-CORPUS-001 也写 228，而语料早已是 354 / 106（29.9%）/ 113 / 8；proposal.md 写权利台账枚举 77 个文件，实际 83。三处都在 census_claims_qa 报「14/14 全部当前」时随包发出。",
    "why_zh": "这道闸门本身就是为防止此类漂移而建的，它的**扫描范围**却只有两份 proposal——而本包在五份文件里陈述同一批读数。**范围是方便测的那一个，不是要判的那一个。**",
    "fix_zh": "上下文模式改为扫描全部随包 markdown 加 assumptions.json，共 16 条模式覆盖 5 份文件。changelog.md 明确排除，且排除本身是要点：变更记录写的是某个版本**当时**的数，把 v0.6 条目里的「215 份已合入」改成 354 会让它说谎。"
+  },
+  {
+   "id": "E38",
+   "commit": "a26e495390",
+   "file": "assets/figures/key-areas.png",
+   "found_by": "audit",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "名为「三处重点区与水准点布设」的图里，三处重点区是三个空的红色虚线框。它是评审每次必收的五张图之一，也是任务书 1.5.3「重点区域详细设计」的成果图，而全部内容是一条旋转成水平的细长带子加三个方框。",
+   "why_zh": "与 E34 同型第八次，而这次更贵：缺的不是一个面板，是这条任务书要求的**全部答复**。内容本来就在包里——每处重点区内有 7–8 个用地要素、1–2 个公共测点、1–2 栋建筑与 3–5 段道路，从未被画出来过。**又是把评审会看到的东西渲染出来读一遍才发现的。**",
+   "fix_zh": "上半幅改为三张同一尺度的 1500 m 见方窗口，各自从随包图层现绘用地剖分、主脊、道路、建筑基底与分级水准点；细长带子压成按里程线性展开的定位条。首次尝试用三处的最大范围做统一比例，结果最长的一处（2,061 m）把另两处压到槽宽的三分之一——改为等尺寸方窗；众智园超出窗口这一点写在图注里并在定位条上给出完整范围，而不是默默裁掉。"
   }
  ]
 }
