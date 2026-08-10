@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c61262cbac1795dfed48c232345a65e617bf5965bb7def24e8e073ee276e6f49"
+      "sha256": "de5a138ff18349cd873fae2ec2b79400b3ccc9d7ec35e80c0510abc3781c10b4"
     },
     {
       "path": "assumptions.json",
@@ -289,7 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium"
   },
   "design_concept": "Jing-Zhang Civic Rhythm: a time-sharing civic infrastructure linking heritage, AI innovation and daily life."
 }
