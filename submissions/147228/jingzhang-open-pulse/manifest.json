@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a38d7d1ca41a893f14598d376c31be3008be6e04d686c2f0a6609afed24d4e7c"
+      "sha256": "39788b00313b9e35b296341eafee75ed40dfb15d0e7ab3691e76919a5b4a4466"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f36f6082d6c3dfdf96538b216b106632a22d1c018012c5d12fe1405960223004"
+      "sha256": "f50b2bf7301607a6bc112d3579154047d5000136e41681dc26db91f9eb64f3b5"
     },
     {
       "path": "agent.json",
@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "f6e61bd79148d158428cb991f4ee24d630c373552f490a4089b848e33a975bcc"
+      "sha256": "8d3a9cb4b7f6da94bab41d160afb57160f24cc005735d96816e8df3d4ce01ed3"
     },
     {
       "path": "assumptions.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7f3a9db42cb7e36aaf935f2984792540d28d7e019aad97890586455792cc7002"
+      "sha256": "445d50a2c60b554749f1738e32d09c561224095a3464a0d12ae977f5d044946f"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bfa71248d2a1c9f4cdb8d993baf5d76154087548f311b2ce5b2dc691467fe8aa"
+      "sha256": "788f8f13ec6151705c1f2b342b6cd51d9afa7afafeddba1689ab9a925294f311"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,13 +97,13 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e7419c5cffceeb613087496e842b227cfd733e1d995b3c7f3e0c861893f4bd25"
+      "sha256": "bd1e5e652f5c361fd0091444bd2a8030aaeb67d8d7a8e53e73fd5e4c168e1158"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9e1daee792763c072b93a2a6f15524ec636249a239efdd7a0034b5da82b1391a"
+      "sha256": "efad10f613ec3cc1c9c59db7aa9172cffd5c49d2bb50a977ee938b5d66645d71"
     },
     {
       "path": "report/copyright_statement.md",
@@ -152,7 +152,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "dff24853dbb610b2e49bad5b31fb0683794d594968253cbfc7416d76f963de73"
+      "sha256": "da5f89e3fcbef3a81e2efc6577c567dbe6f5a7475cdc5fd021dcf6e9759fad6c"
     },
     {
       "path": "visual/index.en.html",
@@ -386,7 +386,7 @@
       "path": "visual/assets/evidence-ledger.json",
       "role": "evidence_ledger",
       "required": true,
-      "sha256": "c034fd0651ee7d7765160c9eb775fdcc4f74f5c8068fddae26a7ad32032e8120"
+      "sha256": "843208802ee2ba4ea89519eb544824aee287c1af2feaf3941501d867a620ffdd"
     },
     {
       "path": "visual/assets/wind-health-validation-plan.json",
@@ -435,6 +435,13 @@
       "role": "validation_runner",
       "required": true,
       "sha256": "fed872a8d3c095c636bc5410b940b1e7066e85ab9d9e5beed47ab4b2492cd972"
+    },
+    {
+      "path": "visual/assets/run-open-pulse-resilience-boundary-audit.js",
+      "role": "verification_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "46fe8a9382aa7c39995671d7b4ce0f9ef39caac8ccf6120ebe36a595e786f6ff"
     },
     {
       "path": "visual/assets/open-pulse-scenario-audit.json",
