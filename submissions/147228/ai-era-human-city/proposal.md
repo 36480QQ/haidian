@@ -96,6 +96,8 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 这组节点计划补的是“公共界面如何承接普通人路径和停止动作”的可见中间层，而不是横断面、平面或体量。道路、权属、文保、无障碍、现状设施和运营资料到位前，所有尺寸、容量、通行能力与结果指标仍为待补资料或 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 
+![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.svg)
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 六类画像使抽象生态落到谁在使用、谁承担风险，原住民与老人、被替代风险劳动者、夜班 AI 从业者、小商户与一人公司、开发者与研究者、行动不便者与照护者。每类画像都有非谈判边界，人工服务、可解释、可拒绝、可申诉、可退出与不依赖设备的替代路径；居民/老人、劳动者、无障碍使用者和开发者至少各有一个可见观察席。[source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
