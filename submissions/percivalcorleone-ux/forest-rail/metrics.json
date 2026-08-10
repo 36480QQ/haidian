@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Provisional geometry only; not an official redline; recalculate when official polygons arrive."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +27,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional_constraint geometry; values are discussion-grade only."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +41,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional_constraint geometry; values are discussion-grade only."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +55,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional_constraint geometry; values are discussion-grade only."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +79,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "Derived from provisional_constraint geometry; values are discussion-grade only."
+      ]
     }
   }
 }

@@ -44,10 +44,52 @@
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
     },
     {
-      "id": "CONCEPT-RENDERS-FOREST-RAIL",
-      "path": "assets/concepts/",
-      "source_type": "agent_generated",
-      "usage": "Supplementary park-character concept views (shared glass workstation precinct, guiding rails, conceptual short-haul, station-to-park). Not formal evidence diagrams; do not replace GeoJSON/metrics/five required figures."
+      "id": "CASE-CENTRAL-PARK",
+      "url": "https://www.centralparknyc.org/",
+      "source_type": "public_background",
+      "usage": "background_only urban park case: Central Park public-right and layered circulation."
+    },
+    {
+      "id": "CASE-HIGH-LINE",
+      "url": "https://www.thehighline.org/",
+      "source_type": "public_background",
+      "usage": "background_only linear park case: elevated freight rail reuse; learn narrative not climbable rails."
+    },
+    {
+      "id": "CASE-RAIL-PARK",
+      "url": "https://www.therailpark.org/",
+      "source_type": "public_background",
+      "usage": "background_only linear park case: incremental rail corridor park."
+    },
+    {
+      "id": "CASE-MADRID-RIO",
+      "url": "https://use.metropolis.org/case-studies/the-madrid-rio-project",
+      "source_type": "public_background",
+      "usage": "background_only: Madrid Río infrastructure-to-river park stitching."
+    },
+    {
+      "id": "CASE-CHEONGGYECHEON",
+      "url": "https://www.archdaily.com/1020945/re-naturalization-of-urban-waterways-the-case-study-of-cheonggye-stream-in-seoul-south-korea",
+      "source_type": "public_background",
+      "usage": "background_only: Cheonggyecheon daylighting linear civic space."
+    },
+    {
+      "id": "CASE-XUHUI-RUNWAY",
+      "url": "https://www.sasaki.com/projects/xuhui-runway-park",
+      "source_type": "public_background",
+      "usage": "background_only: Shanghai Xuhui Runway Park transport relic to linear park."
+    },
+    {
+      "id": "CASE-OLYMPIC-FOREST",
+      "url": "https://www.landscapeperformance.org/case-study-briefs/beijing-olympic-forest-park",
+      "source_type": "public_background",
+      "usage": "background_only: Beijing Olympic Forest Park urban forest scale."
+    },
+    {
+      "id": "CASE-JZ-HERITAGE-PARK",
+      "url": "https://www.chinaqw.com/qx/2026/08-07/409867.shtml",
+      "source_type": "public_background",
+      "usage": "background_only: Jingzhang Railway Heritage Park as built incremental baseline, not claimed as this proposal."
     }
   ]
 }
