@@ -27,11 +27,19 @@ class AgentFacingDocsTests(unittest.TestCase):
     def test_agent_docs_use_scaffold_and_full_self_check_commands(self) -> None:
         docs = "\n".join(
             (REPO_ROOT / rel).read_text(encoding="utf-8")
-            for rel in ["README.md", "agent.html", ".github/PULL_REQUEST_TEMPLATE.md"]
+            for rel in [
+                "README.md",
+                "agent.html",
+                ".github/PULL_REQUEST_TEMPLATE.md",
+                "templates/proposal.md",
+            ]
         )
         self.assertIn("scripts/scaffold_ai_submission.py", docs)
         self.assertIn("scripts/self_check_submission.py", docs)
         self.assertIn("requirements-review.txt", docs)
+        self.assertIn("智能体提交边界", docs)
+        self.assertIn("unknown", docs)
+        self.assertIn("pending_control", docs)
 
     def test_agent_docs_require_bilingual_v2_and_post_submission_monitoring(self) -> None:
         skill = (REPO_ROOT / "skills" / "urban-design-ai-submission" / "SKILL.md").read_text(
