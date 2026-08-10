@@ -109,6 +109,21 @@ Scenario nodes still return to the provisional anchors in `constraints.geojson`;
 
 The four bands are not four engineering phases. They are a public-interface order that can be discussed: ordinary arrival, staffed explanation/service, bounded simulation or voluntary learning, and freeze/replay/exit. Paper, phone, staffed, and screen-free alternatives remain visible in every band; `not_authorized_not_run`, `performance_results=null`, and stop conditions remain inside the plate's evidence boundary. The three key areas, ten scenario nodes, and nine personas can therefore be read from image to JSON, then to metrics and missing evidence. If formal boundaries, roads, tenure, accessibility, climate, energy, or service baselines arrive, geometry, metrics, figures, HTML, PDFs, and self-check must be recalculated together.[metric:key_area_count] [metric:scenario_card_count] [metric:manual_fallback_coverage_ratio]
 
+### One comparable spatial decision delta: Zhongzhiyuan
+
+The four functional bands show how people enter, who takes over, and when the interface freezes. The AI-planning innovation also needs one direct comparison with a spatial choice. This section selects one focus area and does not present the single machine-showcase entrance as an existing condition; it is a counterfactual design option for comparison. The package instead places a staffed explanation desk, public observer seat, visible retreat, and withdrawable test edge within one public interface, protecting ordinary arrival before bounded simulation. This is a `design_target`, not a built space or AI-performance result. [data:visual/assets/ai-era-spatial-delta-readout.json#AI-ERA-SPATIAL-DELTA-001] [data:geometry/roads.geojson#MOBILITY-05] [data:geometry/public_space.geojson#PUBLIC-01]
+
+This spatial delta addresses the AI-planning-innovation dimension without replacing professional measurement. [depth:ai_planning_innovation]
+
+| Stage | Spatial role that changes | Concrete AI-planning constraint | Status and anchor |
+|---|---|---|---|
+| Ordinary arrival | Ordinary walking, observation, and accessible questions come first | Machine testing cannot own the only public entrance | `design_target`; `MOBILITY-05` |
+| Staffed takeover | The explanation and takeover desk faces the ordinary path | The first move is to ask, refuse, or switch to a person, not invoke an automated call | `design_target`; `PUBLIC-01` |
+| Bounded simulation | API simulation sits inside a visible, stoppable test edge | Without authorization, responsibility, logs, and replay, it remains at G0 | `design_target`; `SCN-06` |
+| Freeze/replay or exit | Maintenance retreat, ordinary movement, and staffed service stay visible | Withdraw the machine interface, not ordinary public movement or staffed service | `design_target`; `GREEN-02` |
+
+The table expresses how spatial roles change under AI constraints; it is not a dimensional change. No new geometry is added, and `design_target` is not upgraded into a professional measurement. Once official boundary, rights, accessibility, and field baselines exist, this delta must be recomputed with the metrics, plates, HTML, PDF, and self-check. [data:visual/assets/ai-era-spatial-interface-plans.json#AI-NODE-ZHONGZHIYUAN] [data:visual/assets/scenario-space-operation-matrix.json#SCN-06] [metric:api_governance_gate_count]
+
 The full-chain recalculation after formal evidence arrives is a metrics-recalculation depth item; before that trigger, the plates support conceptual suggestions and relational questions only.[depth:metrics_recalculation]
 
 ## v1.2 Taskbook–space–operation triad: make agent.4–agent.6 meet on one board

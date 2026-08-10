@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "13b82c4931d872057da85eb4c56e80471831cc3cf0c7cb9b9423070f19806262"
+      "sha256": "33ce3c0da877f73d53e57c0f18cb080acd3c99ca6156e533f9872547435844c7"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e57ea44bd274c4c31d3769b5d4b2e3c438948f7cb3e63beb364305061c52f9f1"
+      "sha256": "8c825efc0d1420c04c0525e048b29e4f32af7ada93c6826b0f7086f0362f418f"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "055334de3d2e79be19672acf5d6def6f67fc52d59a57418ec43f408cc5806f51"
+      "sha256": "19e9e699e0a84b0755966e2edfe1460ebf05a4354bea92917f0168cc97c4f0c4"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8d3cd9c49192cd9455bf5aa4b2d8e45509b3d4b1e3d8a6cc8ea80e29614abe6b"
+      "sha256": "8839978661618bcee6ef20d80f5b8ad8ead8c373c533a5a35db0eae361345ffa"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "fe622e405caa7fbb785295c7cdf1e97c3e8e27a2e6b129dbb7c5dacbe8fdd705"
+      "sha256": "7a4f2543fd1fa57030aee194fd217d863e6ece6bda16520d22113d917eec0482"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -363,6 +363,12 @@
       "role": "narrative",
       "required": false,
       "sha256": "e8c4b35f83938064982452b3b5e18dee652b19981afcfd5ac90f0c519b1f3658"
+    },
+    {
+      "path": "visual/assets/ai-era-spatial-delta-readout.json",
+      "role": "evidence_contract",
+      "required": false,
+      "sha256": "a0c36d581129244149be159200a4b6fa153712c3e62bf345835e4b042dcc2873"
     },
     {
       "path": "visual/assets/ai-era-provisional-spatial-readout.json",

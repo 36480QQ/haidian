@@ -131,6 +131,21 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 图上的四段不是四个工程阶段，而是公共接口的可讨论顺序：普通到达、人工解释/服务、受限模拟或自愿学习、冻结复盘/退出。每段都保留纸面、电话、人工和无屏替代，并把 `not_authorized_not_run`、`performance_results=null` 与停止条件放在图面边界内。三处重点区、十个场景节点和九类画像因此可以从图回到 JSON，再回到指标和缺口；若正式边界、道路、权属、无障碍、气候、能源或服务基线到位，必须联动重算几何、指标、图件、HTML、PDF 与自检。[metric:key_area_count] [metric:scenario_card_count] [metric:manual_fallback_coverage_ratio]
 
+### 一条可比较的空间决策差分：众智园
+
+四段功能带已经说明“怎么进、谁接管、何时冻结”，但还需要把 AI 规划创新与空间选择直接并置。本节只选众智园一处，不把假设的单一机器展示入口写成现状；它是一个用于比较的反事实设计选项。相较之下，本包把人工解释台、公众观察席、可见退避和可撤回测试边界放在同一组公共界面里，先保障普通到达，再允许受限模拟。这个差异是 `design_target`，不是已建成空间或 AI 绩效结果。[data:visual/assets/ai-era-spatial-delta-readout.json#AI-ERA-SPATIAL-DELTA-001] [data:geometry/roads.geojson#MOBILITY-05] [data:geometry/public_space.geojson#PUBLIC-01]
+
+这条空间差分回应 AI 规划创新维度，但不替代专业测量。[depth:ai_planning_innovation]
+
+| 阶段 | 变化的空间角色 | AI 规划带来的具体约束 | 状态与锚点 |
+|---|---|---|---|
+| 普通到达 | 普通步行、观察和无障碍询问先成立 | 不让机器测试占据唯一公共入口 | `design_target`；`MOBILITY-05` |
+| 人工接管 | 人工解释与接管台朝向普通路径 | 第一动作是可问、可拒绝、可转人工，而不是自动调用 | `design_target`；`PUBLIC-01` |
+| 受限模拟 | API 模拟进入可见、可停用的测试边界 | 授权、责任、日志、回放不齐全就停在 G0 | `design_target`；`SCN-06` |
+| 冻结复盘/退出 | 维护退避、普通路径和人工服务继续可见 | 撤回机器接口，不撤回公众的普通通行和人工服务 | `design_target`；`GREEN-02` |
+
+这张表表达的是空间角色如何随 AI 约束变化，不是尺寸变化；当前不新增 geometry，也不把 `design_target` 升级为专业测量。正式边界、权属、无障碍和现场基线到位后，必须把这条差分与指标、图件、HTML、PDF 和自检一起重算。[data:visual/assets/ai-era-spatial-interface-plans.json#AI-NODE-ZHONGZHIYUAN] [data:visual/assets/scenario-space-operation-matrix.json#SCN-06] [metric:api_governance_gate_count]
+
 正式资料到位后的全链条重算属于指标复核深度项；在触发前，图件只用于概念建议与关系核问。[depth:metrics_recalculation]
 
 ## v1.2 任务书·空间·运营三联读｜让 agent.4、agent.5、agent.6 在同一张图上相遇
