@@ -7,7 +7,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 translation_file: "proposal.en.md"
-iteration: "v1.1"
+iteration: "v1.2"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Transform the century-old Jing-Zhang railway heritage into a civic protocol that makes each AI system's purpose, data, steward, human checkpoint and exit rule visible in public space. All spatial work is conceptual and based on provisional geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -236,7 +236,7 @@ No unsupported currency total is invented. Six ledgers—people, space, devices,
 
 Any severe safety or privacy incident, absent on-site steward, corrupted source, critical accessible-route failure, or undeleted record after withdrawal triggers immediate stop. Keep the staffed or non-AI route open, preserve only a minimum incident record, delete or quarantine affected data, restore the prior public-space and portable service interface, then publish a preliminary notice, repair evidence and continue/modify/sunset decision.[metric:negative_fixture_count]
 
-The Day-100 handover pack always contains G0-G5 logs; source and claim register; role-appointment record; accessible/no-app acceptance; incident and complaint ledger; deletion and portable-export proof; maintenance status; and an AI-OFF spatial restoration drawing. One missing item permits only sunset or evidence repair, never scaling.[source:PASSPORT-EVIDENCE]
+The Day-100 handover pack always contains G0-G5 logs; source and claim register; role-appointment record; accessible/no-app acceptance; incident and complaint ledger; deletion and portable-export proof; maintenance status; and an AI-OFF spatial restoration drawing. These items form the machine-readable `g5_completion_receipt`; its current result is null, and one missing item permits only sunset or evidence repair, never scaling.[source:PASSPORT-EVIDENCE]
 
 Phase 1, Verify and Light Up, suggests 0-12 months focused on northern Zhongzhiyuan: evidence baseline, Civic AI Charter, two ledgers, independent review and the Protocol Beacon 100-day contract. JZ-01 begins as belt-wide gap verification and does not claim full construction. Phase 2 suggests 1-3 years focused on Station Zero and the Xiaoyuehe spur. Phase 3 suggests 3-5 years focused on Dazhongsi's human-first link, Agent Bazaar and Contribution Ledger, scaling only publicly evaluated scenarios. phasing.geojson lists project_ids for each phase. These are concept sequences, not a government schedule or construction commitment.[data:geometry/phasing.geojson#PHASE-001]
 

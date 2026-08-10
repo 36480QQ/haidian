@@ -6,7 +6,7 @@ language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v1.1"
+iteration: "v1.2"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从交通遗产转化为一条城市公共协议，让每项 AI 的用途、数据、责任人、人工复核和退出机制在公共空间中可见。所有空间为基于 provisional geometry 的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -235,7 +235,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 严重安全或隐私事件、现场责任人缺岗、来源失真、关键无障碍路径中断、撤回后数据未删，任一项都触发即时停机：保留人工或非 AI 路径、最小化保存事件记录、删除/隔离受影响数据、恢复原公共空间和可迁移接口，再公开初步通知、修复证据与继续/修改/日落决定。[metric:negative_fixture_count]
 
-第 100 天交接包固定包含：G0-G5 日志、来源与主张登记、角色任命记录、无障碍/无 App 验收、事件与投诉台账、数据删除/可迁移导出证明、维护状态和 AI-OFF 空间恢复图。缺任一项只能日落或补证，不能带缺口扩展。[source:PASSPORT-EVIDENCE]
+第 100 天交接包固定包含：G0-G5 日志、来源与主张登记、角色任命记录、无障碍/无 App 验收、事件与投诉台账、数据删除/可迁移导出证明、维护状态和 AI-OFF 空间恢复图。这些项目汇成机器可读的 `g5_completion_receipt`；当前结果为 null，缺任一项只能日落或补证，不能带缺口扩展。[source:PASSPORT-EVIDENCE]
 
 一期核验并点亮建议 0-12 个月聚焦北部众智园，建立资料基线、公民 AI 公约、双账本、独立评议机制和协议灯塔 100 天合同；JZ-01 作为全带断点核验先行，不据此宣称全线施工。二期连接并转化建议 1-3 年聚焦原点社区和小月河支线。三期扩展并共治建议 3-5 年聚焦大钟寺人本接驳、智能体市集与贡献轨，只扩展通过公开评价的场景。phasing.geojson 为每期明列 project_ids；这些时段仍是概念顺序，不是政府计划或建设承诺。[data:geometry/phasing.geojson#PHASE-001]
 
