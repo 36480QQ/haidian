@@ -7,6 +7,7 @@ summary: "以詹天佑在京张铁路青龙桥设计'人'字形折返线、用�
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed", "public-safety-operations-review"]
 iteration: "v1.0"
+translation_file: "proposal.en.md"
 ---
 
 # 京张新轨：为AI原生城市定下新轨距
