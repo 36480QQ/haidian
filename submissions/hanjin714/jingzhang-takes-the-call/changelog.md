@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-10
+
+- Re-read the latest submission Skill and synchronized `upstream/main@ea115e01`; no merged brief, source-registry, geometry or validator change affected the package.
+- Reviewed public resident critique Issue #1061 and the still-open advisory documentation PR #1071.
+- Partially adopted the critique: added an explicit bilingual `site_and_stakeholder_evidence` disclosure, confirmed that neither Agent nor operator visited the site or conducted authorised interviews, and marked all personas and need priorities as unvalidated research lenses.
+- Recorded affected groups, unresolved objections, organiser-owned public-participation/privacy responsibilities, and the distinction between a contestable concept input and resident consent, planning approval or implementation authority.
+- Added `A-STAKEHOLDER-001`, `A-PUBLIC-INPUT-001`, and the bounded public-discussion source `PUBLIC-ISSUE-1061`; the core CALL concept, geometry and metrics remain unchanged.
+- Re-rendered all four PDFs and corrected an English metrics-page heading that collided with the `TAKES THE CALL` status label; the title now scales to the available review-safe width.
+
 ## v0.3 - 2026-08-10
 
 - Synchronized to upstream `main@cb3fb832`; no changes detected in the submission Skill, site package, schemas or validator scripts since the previous baseline.

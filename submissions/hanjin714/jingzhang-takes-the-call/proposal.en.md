@@ -134,6 +134,20 @@ No key area begins with a new landmark building. Phase one uses desktop rehearsa
 
 These roles are not inferred from personal behaviour. Scenarios collect only task-necessary fields and default against facial recognition, continuous trajectories, identity graphs and commercial preferences. Health, education, legal or vulnerable-person services require a qualified professional to make the final decision. [assumption:A-PRIVACY-001]
 
+### Site and stakeholder evidence: state what has not been done
+
+This iteration was produced by the Agent and operator from the repository brief, public sources and provisional geometry. **Neither conducted a site visit or an authorised interview with residents, commuters, operators or enterprises.** The six roles above are provisional lenses for service rights and risks, not validated resident needs, sample distributions or field findings. [assumption:A-STAKEHOLDER-001]
+
+| Evidence question | Current answer | Constraint on the proposal |
+| --- | --- | --- |
+| Was the site visited? | No | Crossings, gradients, night safety, facility condition, local “small corners” and real use conflicts are unverified |
+| Were authorised interviews or surveys completed? | No | The six roles, twelve scenarios and three initial validations cannot be presented as resident consensus or ranked needs |
+| What stakeholder evidence was used? | Organiser tasks, government/institutional public material and public repository Issues; no personal data | Supports a conceptual framework, evidence gaps and a verification design—not delivery decisions |
+| Who may benefit or bear risk? | Residents/caregivers, disabled users, commuters, students/researchers, front-line operators, enterprises/services, plus planning, transport, heritage, fire and data-governance actors | Every pilot must separately involve affected people and accountable professionals; personas cannot replace participation |
+| Which objections remain unresolved? | Issue #1061 challenges Agent substitution, empty language, absent field experience and social legitimacy | This proposal adopts a plain-language contract and no-visit disclosure; it does not treat one response as public consent or closure |
+
+The response to public Issue [#1061](https://github.com/open-city-ai/haidian/issues/1061) is **partially adopted**. It adopts the questions “who acts, for whom, when, with which resources, how measured, when stopped, and who remains accountable,” plus explicit field-evidence status. It does not adopt the inference that all conceptual research is invalid solely because the Agent did not visit. A non-visiting Agent may organise a contestable research input, but cannot replace fieldwork, planning professionals, resident participation, statutory consultation or approval. Formal public participation must be organised by an authorised body with informed consent, minimisation/anonymisation, retention rules and an auditable comment–response ledger; contributors must not privately collect or upload interview transcripts or contact details. [source:PUBLIC-ISSUE-1061] [assumption:A-PUBLIC-INPUT-001]
+
 ### Twelve scene orders
 
 | ID | Scenario and place | Existing fallback/baseline | Bounded AI or digital role | Human gate, acceptance and exit |
@@ -240,6 +254,7 @@ Metrics are separated into three classes so design coverage cannot be misread as
 4. **Operations.** No real owner, budget, staffing, field authorization or performance exists. Phases are proposals and performance remains unknown. [assumption:A-OPERATIONS-001]
 5. **Rights.** Text, icons, figures, PDFs and offline HTML are original to this package; public facts and cases are registered. Any future OSM context layer must retain ODbL attribution and remain existing-condition context only. [assumption:A-RIGHTS-001]
 6. **Bilingual and offline.** Chinese is primary and this file is its complete English companion. HTML, A3/A0 and all text-bearing figures receive English counterparts. No remote scripts, fonts, map tiles, iframe, form or analytics are loaded.
+7. **Site and public participation.** No site visit or authorised interview has occurred; personas and need priorities are unvalidated. A merged PR, automated score, gallery display or selection is not resident consent, planning approval or implementation authority. [assumption:A-STAKEHOLDER-001] [assumption:A-PUBLIC-INPUT-001]
 
 The minimum promise is not that AI will solve every problem. It is that **every problem has a visible state, every accepted order has an owner, every closure has a reason, and every failure leaves evidence that prevents the city from paying for the same mistake again.**
 

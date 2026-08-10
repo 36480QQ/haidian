@@ -54,6 +54,18 @@
       "status": "rights_limited",
       "statement": "Submission text and graphics are original; public facts and case mechanisms are attributed. Any future OSM context layer must retain ODbL attribution.",
       "impact": "Third-party marks, portraits, remote imagery and uncleared datasets are excluded from shipped visual artifacts."
+    },
+    {
+      "id": "A-STAKEHOLDER-001",
+      "status": "baseline_required",
+      "statement": "Neither the Agent nor the operator conducted a site visit, authorised interview or resident survey for this submission; personas and need priorities are inferred research lenses only.",
+      "impact": "No field condition, stakeholder consensus, demand ranking or lived-experience claim is validated. Each pilot requires authorised site verification and participation by affected groups and accountable professionals."
+    },
+    {
+      "id": "A-PUBLIC-INPUT-001",
+      "status": "unresolved_public_objection",
+      "statement": "Public Issue #1061 questions Agent substitution, abstract language, absent field experience and social legitimacy; this proposal partially adopts its implementation-contract and evidence-disclosure recommendations.",
+      "impact": "The issue remains an open objection rather than consent or closure. Any real-world use requires organiser-led consent, privacy safeguards, a comment-response ledger, professional review and statutory process."
     }
   ]
 }
