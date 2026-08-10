@@ -272,7 +272,7 @@ This proposal replaced that estimate with an observation, because **the summary 
 | Repair counts of the three verdicts scoring ≥85 | 17 / 20 / 21 |
 | Verdicts with all seven dimensions at 5/5 | **0** |
 | Most dimensions at 5/5 in any single verdict | **4 of 7** |
-| Correlation between weighted score and repair count | r = −0.352 |
+| Correlation between weighted score and repair count | r = −0.240 |
 
 The gate needs `required_next_actions_zh` empty, which needs `repair_count == 0`. **The closest the corpus has ever come is 17.** The verdict scoring 89 carried 17 repairs and one scoring 57 carried 17 as well — **this gate does not measure quality tier, it measures whether the reviewer has anything to say, and a reviewer always does.**
 
@@ -313,7 +313,7 @@ Geometric levelling does not trust a height because the instrument reported it. 
 
 **The control is a commit, not a file list.** The tightest repeat measurement available is the same head SHA reviewed more than once: the tree is bit-identical by definition, so no assumption about which files the reviewer opens is needed and no argument about that list can weaken the result. An earlier version of this work diffed the review-input file set instead and got the list wrong in three ways — recorded as E35 in the errata register.
 
-Across all **883 published scores**, **12** of **864** distinct head commits were reviewed more than once, covering **31 readings**.
+Across all **949 published scores**, **12** of **930** distinct head commits were reviewed more than once, covering **31 readings**.
 
 | Reading | Value |
 |---|---|
