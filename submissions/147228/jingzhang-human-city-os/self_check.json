@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-10T03:53:03.322502Z",
+  "generated_at": "2026-08-10T04:30:59.345157+00:00",
   "generator": "scripts/self_check_submission.py@4e373fd2cfb1f42a2474ad614eb52d2109d5a7a3",
   "ok": true,
   "can_enter_formal_review": true,
@@ -75,6 +75,13 @@
       "severity": "major",
       "target": "visual/assets/spatial-proof-v16.json",
       "message": "Five bilingual core figures are present at review size and derive from package-local geometry and metrics; provisional boundary and not-authorized/not-run limits remain explicit."
+    },
+    {
+      "check_id": "SPATIAL_PROOF_V17",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/spatial-proof-v17.json",
+      "message": "Five bilingual core figures add focus-area zooms, corridor-crossing rules and geometry-to-metric-to-gap readback without using pixels as measurements; provisional and unknown limits remain explicit."
     }
   ],
   "next_actions": []

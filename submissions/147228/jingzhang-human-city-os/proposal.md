@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.6"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.6 把五张评审核心图改为同源真实空间证据图，显式呈现三处重点区轮廓、六块分区、五条概念廊道和十六个场景节点。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v1.7"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.7 在同源真实空间证据上增加三处重点区放大、廊道交叉规则和几何到指标到缺口的回读链，让场景动作在评审窗口中可辨认。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -16,7 +16,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 方案判断
 
-“从 AI 展台，到 AI 时代人的城”不是把传统总图换成科技词汇，而是把 AI 的快速迭代翻译成一套**可进入、可拒绝、可暂停、可回滚**的城市接口。[source:AGENT-TASKBOOK] [depth:three_level_scope_framework] 三层范围收敛为同一条证据链：三处临时重点区、六层空间操作系统、四条价值链、16 个空间场景节点与三道发布门。[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
+“从 AI 展台，到 AI 时代人的城”不是把传统总图换成科技词汇，而是把 AI 的快速迭代翻译成一套**可进入、可拒绝、可暂停、可回滚**的城市接口。[source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
+
+三层范围收敛为同一条证据链：三处临时重点区、六层空间操作系统、四条价值链、16 个空间场景节点与三道发布门。[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
 
 ### 四条价值链落到空间
 
@@ -104,6 +106,20 @@ v1.4 的三张重点区卡回答“每区怎么停下来”；本轮把三处临
 ![图 19｜v1.6 真实空间证据总览：轮廓、节点、廊道与指标同源](assets/figures/site-overview.png)
 
 这组图补足的是“空间关系能否被一眼核对”，不替代官方边界、控规、道路红线、权属、蓝线、空域、现状调查、居民基线或运营测试。取得这些资料后，五张图、四类矩阵、指标、HTML 与 PDF 需整包重算；当前所有空间动作均为概念建议 / 参考方案，供专业团队深化研究。[data:visual/assets/spatial-proof-v16.json] [depth:risk_missing_data]
+
+## v1.7 空间表达升级｜让节点动作在评审窗口中可辨认
+
+v1.6 已经把抽象长条换成了真实提交几何，v1.7 继续处理阅读尺度问题。总体图下方增加三处重点区放大框，分别回指 `PROV-KEY-001`、`PROV-KEY-002`、`PROV-KEY-003`；重点区图把每个轮廓与差异化动作链并置；人机共行图把技能再造、硅基通行权、低空概念分层和小月河海绵韧性放在同一组交叉规则旁；指标图明确“几何 → 指标 → 待补资料”的回读顺序。[data:visual/assets/spatial-proof-v17.json] [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+这组表达重点支撑重点区详细设计和总体空间结构的阅读，`ROAD-B-SILICON` 及其余动作仍需回到台账核对。[data:geometry/roads.geojson#ROAD-B-SILICON] [depth:three_key_area_detailed_design] [depth:overall_spatial_structure]
+
+![图 20｜v1.7 重点区放大、廊道交叉与指标回读](assets/figures/key-areas.png)
+
+放大框可以帮助评审核对节点关系，却不能把临时几何变成测绘或工程详图。图面短轴为阅读而展开，像素不参与面积、比例或长度计算。[data:visual/assets/spatial-proof-v17.json]
+
+数字仍由 `metrics.json` 与 EPSG:4548 下的 GeoJSON 重算，当前包内可复核的是场地面积和社区保留支撑分区面积代理。[metric:site_area_sqm] [metric:community_retention_support_area_ratio] [depth:metrics_recalculation]
+
+每个 unknown 继续保留为下一道资料门，社区保留率、就业转型、人工服务等效性、PUE、绿电和余热均不因图面更完整而升级为结果。[depth:risk_missing_data]
 
 ## v0.2 评分修复｜把三个重点区读成空间动作链
 
@@ -258,7 +274,9 @@ v1.4 的三张重点区卡回答“每区怎么停下来”；本轮把三处临
 
 ## 设计依据与资料清单
 
-本方案首先服从征集公告确定的三层范围、三处重点区域与设计任务，并以面向智能体任务书的六项任务作为成果覆盖清单。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] 仓库 `source_registry` 中五项正式可用资料只支撑其允许用途；临时边界只用于生成、展示与 intake 自检，不能被提升为官方红线、精确面积或法定控制。[source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001]
+本方案首先服从征集公告确定的三层范围、三处重点区域与设计任务，并以面向智能体任务书的六项任务作为成果覆盖清单。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+
+仓库 `source_registry` 中五项正式可用资料只支撑其允许用途；临时边界只用于生成、展示与 intake 自检，不能被提升为官方红线、精确面积或法定控制。[source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001]
 
 ### 1. 证据等级与人本决策边界
 
@@ -330,7 +348,9 @@ A 组“人的尊严”包括社区保留、就业转型、数字包容和身心
 
 ### 参数化推演：把空间取舍放到可复算候选集
 
-`visual/assets/parametric-tradeoff-study.json` 以当前六层概念功能带的 geometry 面积为基线，设置人本优先、平衡、机器协同三组透明参数。每组都按“share × 临时边界面积”计算讨论面积；离线 runner 同时检查 share 求和、面积回算和 `LU-H01`、`LU-B01` 基线回接，证据写入 `parametric-tradeoff-study-evidence.json`。这组研究把社区保留、技能学习、可逆留白、城市 API 和无屏韧性空间放在同一张比较图上，供专业团队在正式资料补齐后替换输入。[data:geometry/land_use.geojson#LU-H01] [metric:community_retention_support_area_ratio] [metric:reversible_space_ratio]。参数化研究的深度复核见 [depth:metrics_recalculation]
+`visual/assets/parametric-tradeoff-study.json` 以当前六层概念功能带的 geometry 面积为基线，设置人本优先、平衡、机器协同三组透明参数。每组都按“share × 临时边界面积”计算讨论面积；离线 runner 同时检查 share 求和、面积回算和 `LU-H01`、`LU-B01` 基线回接，证据写入 `parametric-tradeoff-study-evidence.json`。[data:geometry/land_use.geojson#LU-H01] [metric:community_retention_support_area_ratio]
+
+这组研究把社区保留、技能学习、可逆留白、城市 API 和无屏韧性空间放在同一张比较图上，供专业团队在正式资料补齐后替换输入。[metric:reversible_space_ratio] [depth:metrics_recalculation]
 
 三组参数保持低置信度和概念状态。它们不改写本包正式面积、比例、图纸或 `scenario_node_count=16` 的几何事实，17 张场景卡中的 `SC-D04` 也继续以既有空间锚点表达；任何进入下一轮的取舍都要重新核对官方边界、权属、控规、建筑、交通、市政、能源、气候和公众基线。[data:geometry/site_boundary.geojson#SITE-001] [metric:scenario_node_count] [depth:risk_missing_data]
 

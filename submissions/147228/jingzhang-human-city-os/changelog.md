@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-10
+
+- 在五张评审核心图中增加三处重点区放大框、场景节点族、廊道交叉规则和几何到指标到缺口的回读链；放大框读取同一批 GeoJSON，不产生新的边界、线位或指标。
+- 新增 `visual/assets/spatial-proof-v17.json`，记录短轴展开仅为阅读、像素不参与度量、重点区放大只作临时锚点的显示规则；同步双语 proposal、visual HTML、制图方法和双语审计。
+- 以 v1.7 图件重建五页双语 A3 图册与 A0 展板；保留 `official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run` 与所有 unknown。
+- 这轮改进只针对场景可感知度、空间明确性和表达完整度，不改正式 geometry、metrics、来源等级、公共排序或 `submissions-data.js` / `gallery-publication.json`。
+
 ## v1.6 - 2026-08-10
 
 - 将评审窗口中的五张中英核心图改为同源真实空间证据图：临时总体边界、六块分区、三处重点区真实轮廓、五条概念中心线、绿地、公共接口和十六个场景节点均从包内 GeoJSON 读取；新增 `visual/assets/spatial-proof-v16.json` 记录输入、EPSG:4548 显示变换和精度边界。
