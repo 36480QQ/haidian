@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "211f3dbbd844f761199506fb449dbeba628a99bff0ff03305deab563e5311161"
+      "sha256": "6b42920ee960040ad52542f14ee9b9bcad87e06c545746f69de59590513d912e"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "182389087c96e216ef6b7aa57a8d90feb5d7d65e79200da1e3cbd6b10173fb28"
+      "sha256": "c99eb4bc932f53784b5464924206e8ae3312488b5273d169afe7f3860c5b6832"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e8c1b58cec756d14d8be82ba40d9a740a9e2efc72d2bf088c81d12efd19f6678"
+      "sha256": "50a6f3566fe6e0415b0c980c9d44b48b2cdd89535bc1eff37a3d72eb4d7b79c1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4880deb3b55b6a808ac00f6265a64e582602b453c3a424e17b8dcf12aa2af7f4"
+      "sha256": "4ea26e057d534f2c50c2c76cbe0798d680ae25f731bd055cc34c285f24fb5ee9"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f3656e19af793caf7ed4a34b38070677b79a2e64dbf063dc5d6c1b4ced25291d"
+      "sha256": "7b7fed4f687eb19a058712be418c70672b4804b3f159f530bcf0507b6a50c4c8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b98b4da448521028b2729c3106fddfcb9f639be4c98eff3b2f7607697f1f7157"
+      "sha256": "86eb58ff8f9d50e45223024319d4418c565a14f06eb83e72240dad5cf89fcc97"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,12 +284,19 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "37b6b8f554e19d2eaac15fa67f3b04d07a7faf81d5d8205520097f44fa505af3"
+    },
+    {
+      "path": "assets/figures/logo-direction.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7adfff73f17e388e40defc2cc947e893c416b2490e525c34fb65a4f53e86de03"
     }
   ],
   "validation_claim": {
     "self_checked": false,
     "known_blockers": [
-      "Re-finalizing round 3."
+      "Re-finalizing with logo asset."
     ]
   }
 }

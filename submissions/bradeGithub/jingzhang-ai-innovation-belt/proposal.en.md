@@ -56,6 +56,8 @@ The Centennial Jing-Zhang Railway is the first trunk railway designed and built 
 - **Naming system**: the belt is "Origin Engine"; the three areas and two wings use the "Origin-X" series — Zhongzhiyuan "Origin-Stack" (full-stack), AI Origin Community "Origin-Core" (kernel), Dazhongsi "Origin-City" (city-level new business), Zhongguancun service wing "Origin-Finance" (factors), Xiaoyuehe scenario wing "Origin-Lab" (scenario lab) [depth:brand_identity].
 - **Logo direction**: evolve the "herringbone" switchback alignment of the Jing-Zhang rails into two parallel rail lines connected by a circuit waveform, forming a "rail × waveform" identity; use a steel-grey × electric-blue dual-color system, extendable into wayfinding, paving and public furniture modules [depth:signage_system_direction].
 
+![Logo direction concept (AI-generated concept draft)](assets/figures/logo-direction.png)
+
 ### Three Positionings and Five Functions
 
 Three positionings: **Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI Convergence Innovation Belt**. Five functions: **AI Full-Stack Independent Innovation System, World-Class AI Innovation Ecosystem, AI+ Scenario Empowerment Paradigm, Intelligent AI Vital City, Global Discourse on AI Governance**. Each function has spatial carriers and operation mechanisms across the three areas and two wings (see key-area and operation chapters) [source:AGENT-TASKBOOK].

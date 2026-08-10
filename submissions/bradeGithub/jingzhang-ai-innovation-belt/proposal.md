@@ -56,6 +56,8 @@ iteration: "v1.0"
 - **命名体系**：一带一名 "Origin Engine"，三区两翼采用 "Origin-X" 序列——众智园"Origin-Stack"（全栈）、AI原点社区"Origin-Core"（内核）、大钟寺"Origin-City"（城市级新业态）、中关村科技服务翼"Origin-Finance"（要素）、小月河场景赋能翼"Origin-Lab"（场景试验） [depth:brand_identity]。
 - **Logo方向**：以京张铁路钢轨的"人"字形展线演化为两条平行轨线，中间以电路信号波形连接，形成"轨道×波形"组合标识；颜色采用铁路钢青灰与AI电光蓝的双色系统，延展为导视、地面铺装与公共家具模数 [depth:signage_system_direction]。
 
+![Logo方向概念图（AI生成概念稿）](assets/figures/logo-direction.png)
+
 ### 三大定位与五大功能
 
 三大定位：**百年京张文化带、都市AI生活体验带、AI融合创新带**；五大功能：**AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权**。五功能在三区两翼上分别有空间载体与运营机制（见重点区与运营章节） [source:AGENT-TASKBOOK]。
