@@ -1446,7 +1446,7 @@ There are 12 sheets, numbered FIG.00 to FIG.11. All are drawn directly from para
 
 | Sheet | Content | What to read on it |
 |---|---|---|
-| FIG.00 | The leveling line: departs, rises, returns — and does not land back on the datum | The whole proposal as one line: that red height difference is the closure error, and it is the only thing this proposal asks to be trusted on |
+| FIG.00 | The leveling line: a city that publishes its own error | The whole proposal as one line: that red height difference is the closure error, and it is the only thing this proposal asks to be trusted on |
 | FIG.01 | Overall concept and site cross-check | **The red line** — 412.5 m between the inferred boundary and the surveyed park; the spine, core nodes, seven-class land-use partition and official/provisional status all on one sheet |
 | FIG.02 | Evidence chain and package: a leveling circuit not yet closed | The red gap at the left of the circuit is the closure error; the three reading cards below are the measurement of this call itself |
 | FIG.03 | Three scope levels and network orders | The nesting of the three levels, and the right-hand column of values this proposal deliberately does not give |
@@ -1457,7 +1457,7 @@ There are 12 sheets, numbered FIG.00 to FIG.11. All are drawn directly from para
 | FIG.08 | Innovation ecosystem and element mechanisms | The chain of custody for each element; the red box where the funding row is deliberately left blank; the gap all six cases point at |
 | FIG.09 | Landmarks, kit of parts, signage syntax and operating cycle | The actual form of the five standard components; the numbering grammar; a calendar organised by re-survey cycle rather than by festival |
 | FIG.10 | The benchmark at eye level, and kerb allocation | A third-order benchmark drawn at human eye height: the stone flush with the ground, the current `f ≤ F` on the reading plate, the appeal route given as both a QR code and a phone number; the four figures standing there are the people who take the readings, not staffage. The kerb section below **draws the order and not the widths** |
-| FIG.11 | Regional coordination interface | Every row states not only what is exchanged but **what is explicitly not exchanged** and what must hold before the interface opens; the output of coordination is a number (cross-network closure error), not a statement of intent |
+| FIG.11 | Regional coordination interface: extending the network across jurisdictions | Every row states not only what is exchanged but **what is explicitly not exchanged** and what must hold before the interface opens; the output of coordination is a number (cross-network closure error), not a statement of intent |
 
 <!-- FIGINDEX:END -->
 

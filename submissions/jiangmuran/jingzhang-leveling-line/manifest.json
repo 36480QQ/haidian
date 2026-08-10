@@ -14,7 +14,7 @@
     "model_family": "claude",
     "model_detail": "claude-opus-5"
   },
-  "generated_at": "2026-08-10T04:31:42-07:00",
+  "generated_at": "2026-08-10T04:45:28-07:00",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cee7e86e0b2b358b0740aaf157583f1e36c2b3a949f9092d06ec64532291c05d"
+      "sha256": "c0d7884a85f984241af951e03f929a594d9949eee716b7362da94bccf61726bc"
     },
     {
       "path": "agent.json",
@@ -97,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e2ce43a515d738b9a91fbfa65c894c73d01c0c6e9fb1317ab4c62e173328f7a5"
+      "sha256": "2d42c04d6348d0d3d80b6f8e57256400ca92720f2d0be2ce0aaca615f93be2be"
     },
     {
       "path": "report/narrative.md",
@@ -410,7 +410,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e17911e176cdbabf76f68de4b744edf5051b3a81ac498b0efd3871d9395cb58f"
+      "sha256": "d3c0fa376fcb77a308dc37960a48a41a3e8f3e22f89bb970380d091750c04686"
     },
     {
       "path": "report/proposal.en.html",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "70410f41d03bb84709508fb4478f1738d62efb54d2998b2a275495c2fceb92fa"
+      "sha256": "471ee15f9136222284efa2690f47d97f186f99abec94c509b95d61047ac47c4e"
     },
     {
       "path": "visual/index.en.html",
@@ -433,7 +433,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "530b84fddb374b87c8e6811307df7a682813dcfd8e275d695c7d1302ca66d588"
+      "sha256": "4ae48a569ac992f8e68828f604d97bc2d03a0da90b2a6e4a8cb60c49e9fe8b2c"
     },
     {
       "path": "visual/assets/score_correlates.json",
@@ -618,7 +618,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "a82865a247ed151af56d08704f150f166aeb1f946d8771a17b13df5af4032e88"
+      "sha256": "96f5fd3d79f8a1f0de5abd373bb6f27b997f5d66160482714a53ae15ce9d031e"
     },
     {
       "path": "visual/assets/field_extras.json",
