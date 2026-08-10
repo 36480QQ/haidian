@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v3.6 - 2026-08-10
+
+- 新增 `visual/assets/autonomy-readiness-register.json` 和对应离线检查器，把 12 张 AV 场景卡各自回接到一条参与者提出的主运营行，并把 S06、S07、S08、S09、S12 明确标为支撑性运营行，避免把 14 行矩阵误读成 14 张自动驾驶卡。
+- 为每张卡登记 baseline、观察对象/样本/时间窗、成功与停止阈值、责任、人工等价服务、删除凭证、复核和申诉字段；当前全部保持 `unknown`、`not_authorized_not_run`、`field_data=false` 和 `performance_results=null`。
+- 更新中英文正文与离线看板入口；检查器只验证引用和边界完整，不新增现场、许可、部署、性能或官方评分主张。
+
 ## v3.5 - 2026-08-10
 
 - Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.

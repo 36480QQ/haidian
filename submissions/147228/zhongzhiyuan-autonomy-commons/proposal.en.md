@@ -156,7 +156,9 @@ Caption: The system board shows how curb states connect to human takeover, rain/
 
 ## 5. Twelve scenario cards
 
-The cards cover accessible rides, low-speed shuttle, rail transfer, night maintenance, rain/snow service, scheduled loading, event separation, network-loss rollback, child/older-adult assistance, public-asset inspection, open safety-audit day and resident complaint/opt-out. Every card has a carrier space, responsible party, data boundary, acceptance gate and stop condition in `visual/assets/autonomous-scenarios.json` [metric:autonomy_scenario_card_count]. They are design objects, not existing services.
+The cards cover accessible rides, low-speed shuttle, rail transfer, night maintenance, rain/snow service, scheduled loading, event separation, network-loss rollback, child/older-adult assistance, public-asset inspection, open safety-audit day and resident complaint/opt-out. They are design objects, not existing services. To close the gap between scenario cards, the operation matrix and test gates, this iteration adds `visual/assets/autonomy-readiness-register.json`: each of the 12 cards has one participant-proposed primary operation row, readiness fields, a human-equivalent service and a stop condition; S06, S07, S08, S09 and S12 remain explicitly supporting operations. The mapping still requires future professional/operator confirmation and does not assign a field duty [metric:autonomy_scenario_card_count] [data:visual/assets/autonomy-readiness-register.json#autonomy-readiness-register-v1].
+
+The register makes baseline, observation population/sample/time window, success and stop thresholds, accountability, deletion evidence, review and appeal required before an authorised trial. Every card currently remains `unknown`, `not_authorized_not_run`, `field_data=false` and `performance_results=null`; the checker proves reference completeness and boundary stability only, not a field result.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
