@@ -132,6 +132,22 @@ On building scale: 64 conceptual massings in the three key areas, about 11.5 ha 
 
 **Cultural narrative and wayfinding (Agent Task 5).** The spatial storyline is the "double-track narrative": the heritage track threads, south to north, K0 kilometre zero, the ancient bell of Dazhongsi, the Jimen landscape memory, the Tsinghuayuan Station site and the Qinghe culture belt; the intelligence track threads Wudaokou's youth-innovation memory, Zhongguancun's innovation culture and Zhongzhiyuan's future agenda. Wayfinding proposes "double-track station boards": bilingual station-board type, milestone numbers (K0-K9), ochre and cyan-blue colour bands, and a symbol system translated from railway signal vocabulary. The one-line international narrative: "From the Kilometre-Zero of China's first self-built railway to the origin of open AI urbanism — AI begins from the human origin." All wayfinding and communication material commits to open-source typefaces and self-made graphics only [depth:height_massing_character].
 
+
+**The K0-K9 station system.** Wayfinding, landmarks and scenarios ultimately land on ten stations, numbered south to north in the railway milestone tradition; each station is at once a renewal-project catalyst and the anchor of a scenario group (see the route-map page of the A3 booklet and Board 1) [data:geometry/public_space.geojson#SN-12].
+
+| Mile | Station | Role | Systems served |
+| --- | --- | --- | --- |
+| K0 | Kilometre-Zero Plaza | pilgrimage landmark, honors | contributors wall, S12 |
+| K1 | South Gateway | gateway business interface | Xizhimen / Beijing North links |
+| K2 | Dazhongsi Bell Sta. | hub, AI-native formats | loop L6, the Bell, S11 |
+| K3 | Zhichun Stop | testing & validation node | loop L4, S03/S06 |
+| K4 | Xueyuan Bridge | talent community services | talent apartments, intl community |
+| K5 | Origin Source Sta. | hub, sourcing & transfer | loop L3, Herringbone Gate, S02/S09 |
+| K6 | Qinghe Culture Stop | cultural display | loop L2, Qinghe culture belt |
+| K7 | Zhongzhiyuan Acc. Sta. | hub, full-stack innovation | loop L1, acceleration clusters |
+| K8 | Ring of Minds | governance forum landmark | S10 micro-grid pilot |
+| K9 | Fifth Ring Gate | international launch interface | launch stage, Fifth Ring green belt |
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 **Renewal project list (18 items, conceptual).** Projects are organized as "hub start-up — corridor suturing — organic community renewal"; implementing bodies and dependencies are suggestions [metric:renewal_project_count] [depth:renewal_project_list]:

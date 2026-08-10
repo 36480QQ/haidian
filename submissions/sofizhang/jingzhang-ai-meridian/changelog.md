@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.1 - 2026-08-10
+
+- **视觉系统重构 / Visual system rebuilt.** A3 图册重做为 12 页"夜间线路图"设计系统：地铁风格全方案线路图、三段城市设计断面（众智园/原点/大钟寺）、人字桥专页、12张场景票卡墙、6张乘客卡与一日旅程带、18项目时刻表与指标仪表盘；A0 展板全矢量重绘（线路图版+枢纽证据版）。
+- Added the K0-K9 station-system table to both proposals; drawings and narrative now share one milestone vocabulary. Rebuilt A3 (12-page night transit-map system with sections, ticket wall, personas, timetable, dashboard) and fully vectorized A0 boards.
+
 ## v1.0 - 2026-08-10
 
 - **京张智脉 · The Jing-Zhang AI Meridian 首版正式包 / First formal package.**
