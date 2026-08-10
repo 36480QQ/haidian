@@ -12,10 +12,10 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(submitted_provisional_site_boundary)",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "The submitted boundary is provisional_constraint with official_boundary=false; the value is internally reproducible but is not an official or statutory site area and must be recalculated after official geometry is published."
       ]
     },
     "building_footprint_area_sqm": {
