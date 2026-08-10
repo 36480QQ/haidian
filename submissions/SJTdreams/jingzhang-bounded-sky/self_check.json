@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional geometry is visibly disclosed and tied to a full recalculation trigger."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three key areas remain provisional constraints and are not described as official polygons."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Base land-use topology remains recomputable from the submitted site geometry."
+    },
+    {
+      "check_id": "AIRSPACE_AUTHORIZATION_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "No route, altitude, operator, device, or flight is claimed as authorized or running."
+    },
+    {
+      "check_id": "BUDGET_REPLAY",
+      "result": "pass",
+      "severity": "major",
+      "target": "simulation.json",
+      "message": "Twelve synthetic tasks reproduce accept, hold, reject, and ground-transfer branches with complete audit fields."
+    },
+    {
+      "check_id": "HUMAN_VETO_AND_APPEAL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/agent-governance.json",
+      "message": "Authorization, operation, emergency command, privacy, public budget changes, and final veto remain human responsibilities."
+    },
+    {
+      "check_id": "BILINGUAL_EXPRESSION",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English proposals, figures, HTML exhibits, and drawings are paired."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static offline HTML uses only embedded data, local assets, and local interaction."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Human-readable claims connect to source, standard, depth, geometry, metric, risk, and simulation evidence."
+    }
+  ]
+}
