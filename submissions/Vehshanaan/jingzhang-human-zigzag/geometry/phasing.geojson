@@ -4,51 +4,6 @@
   "features": [
     {
       "type": "Feature",
-      "id": "PH-P3",
-      "properties": {
-        "id": "PH-P3",
-        "layer": "PHASE",
-        "name_zh": "远期（大钟寺及南段）",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "official_boundary": false,
-        "design_phase": "concept_proposal",
-        "area_sqm_declared": 2044226.84,
-        "phase_code": "P3",
-        "phase_key": "phase_3_long",
-        "phase_order": 3
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.35530001628042,
-              39.95359522222922
-            ],
-            [
-              116.3553,
-              39.939
-            ],
-            [
-              116.34070000000001,
-              39.93899999999999
-            ],
-            [
-              116.34029707989795,
-              39.953510817352914
-            ],
-            [
-              116.35530001628042,
-              39.95359522222922
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "PH-P1",
       "properties": {
         "id": "PH-P1",
@@ -59,10 +14,11 @@
         "geometry_role": "design_proposal",
         "official_boundary": false,
         "design_phase": "concept_proposal",
-        "area_sqm_declared": 2019272.63,
+        "area_sqm_declared": 3801720.76,
         "phase_code": "P1",
         "phase_key": "phase_1_immediate",
-        "phase_order": 1
+        "phase_order": 1,
+        "phase_coverage_note": "phase bands partition the full submitted boundary into three sequential phases"
       },
       "geometry": {
         "type": "Polygon",
@@ -77,12 +33,16 @@
               39.975
             ],
             [
-              116.34019665870896,
-              39.98270056586796
+              116.34113861172393,
+              39.99730103000567
             ],
             [
-              116.35387795243325,
-              39.9827776388478
+              116.35370378140554,
+              39.99737177997888
+            ],
+            [
+              116.3533,
+              39.989999999999995
             ],
             [
               116.3550449694261,
@@ -108,10 +68,11 @@
         "geometry_role": "design_proposal",
         "official_boundary": false,
         "design_phase": "concept_proposal",
-        "area_sqm_declared": 1731608.23,
+        "area_sqm_declared": 3465133.9,
         "phase_code": "P2",
         "phase_key": "phase_2_medium",
-        "phase_order": 2
+        "phase_order": 2,
+        "phase_coverage_note": "phase bands partition the full submitted boundary into three sequential phases"
       },
       "geometry": {
         "type": "Polygon",
@@ -126,12 +87,12 @@
               40.00600000000001
             ],
             [
-              116.34198779683791,
-              40.011900924349305
+              116.34270000000001,
+              40.0265
             ],
             [
-              116.35450368194167,
-              40.011971313968374
+              116.3553,
+              40.0265
             ],
             [
               116.35370378140554,
@@ -140,6 +101,56 @@
             [
               116.34113861172393,
               39.99730103000567
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PH-P3",
+      "properties": {
+        "id": "PH-P3",
+        "layer": "PHASE",
+        "name_zh": "远期（大钟寺及南段）",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "official_boundary": false,
+        "design_phase": "concept_proposal",
+        "area_sqm_declared": 4145970.73,
+        "phase_code": "P3",
+        "phase_key": "phase_3_long",
+        "phase_order": 3,
+        "phase_coverage_note": "phase bands partition the full submitted boundary into three sequential phases"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3550449694261,
+              39.968188989207874
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.34070000000001,
+              39.93899999999999
+            ],
+            [
+              116.33989166606412,
+              39.968103687635235
+            ],
+            [
+              116.3550449694261,
+              39.968188989207874
             ]
           ]
         ]

@@ -4,9 +4,9 @@
   "features": [
     {
       "type": "Feature",
-      "id": "PS-00-05",
+      "id": "PS-02-01",
       "properties": {
-        "id": "PS-00-05",
+        "id": "PS-02-01",
         "layer": "PUBLIC_SPACE",
         "name_zh": "钟声广场（大钟寺）",
         "source_type": "agent_generated_design",
@@ -15,33 +15,34 @@
         "official_boundary": false,
         "design_phase": "concept_proposal",
         "land_use_code": "1403",
-        "area_sqm_declared": 246891.9,
+        "area_sqm_declared": 62500.0,
         "sub_zone": "dazhongsi",
-        "plaza_role": "human_zigzag_junction"
+        "plaza_role": "human_zigzag_junction",
+        "plaza_scale_note": "plaza core ~6.25 ha at real-world scale"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34883909847807,
-              39.9535591118603
+              116.3465121109633,
+              39.950501731134025
             ],
             [
-              116.35062557691188,
-              39.95356913259025
+              116.34943742124399,
+              39.950518183856616
             ],
             [
-              116.35076331138868,
-              39.93900019689528
+              116.34945874938731,
+              39.94826675985346
             ],
             [
-              116.34897711662167,
-              39.93900022570943
+              116.34653353499387,
+              39.94825030843562
             ],
             [
-              116.34883909847807,
-              39.9535591118603
+              116.3465121109633,
+              39.950501731134025
             ]
           ]
         ]
@@ -49,9 +50,9 @@
     },
     {
       "type": "Feature",
-      "id": "PS-03-02",
+      "id": "PS-11-01",
       "properties": {
-        "id": "PS-03-02",
+        "id": "PS-11-01",
         "layer": "PUBLIC_SPACE",
         "name_zh": "原点广场（AI原点社区）",
         "source_type": "agent_generated_design",
@@ -60,33 +61,34 @@
         "official_boundary": false,
         "design_phase": "concept_proposal",
         "land_use_code": "1403",
-        "area_sqm_declared": 247409.52,
+        "area_sqm_declared": 62500.0,
         "sub_zone": "origin",
-        "plaza_role": "human_zigzag_junction"
+        "plaza_role": "human_zigzag_junction",
+        "plaza_scale_note": "plaza core ~6.25 ha at real-world scale"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34306057683817,
-              39.997311940158724
+              116.34615464284929,
+              39.98803012751143
             ],
             [
-              116.34484819278087,
-              39.997322059060124
+              116.34908155304458,
+              39.988046601995485
             ],
             [
-              116.34498761156352,
-              39.98272773924392
+              116.34910292121818,
+              39.98579519277128
             ],
             [
-              116.34320037596571,
-              39.982717625541916
+              116.34617610709005,
+              39.9857787195934
             ],
             [
-              116.34306057683817,
-              39.997311940158724
+              116.34615464284929,
+              39.98803012751143
             ]
           ]
         ]
@@ -94,9 +96,9 @@
     },
     {
       "type": "Feature",
-      "id": "PS-05-03",
+      "id": "PS-18-01",
       "properties": {
-        "id": "PS-05-03",
+        "id": "PS-18-01",
         "layer": "PUBLIC_SPACE",
         "name_zh": "智汇广场（众智园）",
         "source_type": "agent_generated_design",
@@ -105,33 +107,34 @@
         "official_boundary": false,
         "design_phase": "concept_proposal",
         "land_use_code": "1403",
-        "area_sqm_declared": 247146.35,
+        "area_sqm_declared": 62500.0,
         "sub_zone": "zhongzhiyuan",
-        "plaza_role": "human_zigzag_junction"
+        "plaza_role": "human_zigzag_junction",
+        "plaza_scale_note": "plaza core ~6.25 ha at real-world scale"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34649666974666,
-              40.011926438127624
+              116.34587614826455,
+              40.017218709899666
             ],
             [
-              116.34470867227814,
-              40.01191634160787
+              116.34880430491354,
+              40.01723520132553
             ],
             [
-              116.34456915046535,
-              40.0265000865494
+              116.34882570427979,
+              40.01498380359859
             ],
             [
-              116.34635762445338,
-              40.02650014113597
+              116.34589764383816,
+              40.01496731347999
             ],
             [
-              116.34649666974666,
-              40.011926438127624
+              116.34587614826455,
+              40.017218709899666
             ]
           ]
         ]

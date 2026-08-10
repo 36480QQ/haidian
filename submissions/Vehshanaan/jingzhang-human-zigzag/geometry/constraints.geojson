@@ -63,6 +63,61 @@
     },
     {
       "type": "Feature",
+      "id": "CON-PROV-RESEARCH-001",
+      "properties": {
+        "id": "CON-PROV-RESEARCH-001",
+        "layer": "REGULATORY_CONTROL",
+        "name_zh": "统筹研究范围临时约束（provisional，研究层）",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "design_phase": "concept_proposal",
+        "area_sqm_declared": 43609232.56
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.31885,
+              39.938
+            ],
+            [
+              116.36615,
+              39.938
+            ],
+            [
+              116.37215,
+              39.965
+            ],
+            [
+              116.37215,
+              40.027
+            ],
+            [
+              116.33285,
+              40.027
+            ],
+            [
+              116.32085,
+              40.0
+            ],
+            [
+              116.31285,
+              39.965
+            ],
+            [
+              116.31885,
+              39.938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "CON-KEY-001",
       "properties": {
         "id": "CON-KEY-001",

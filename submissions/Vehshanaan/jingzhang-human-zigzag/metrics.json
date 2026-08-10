@@ -89,7 +89,7 @@
       ],
       "formula": "count(land_use_features)",
       "confidence": "high",
-      "value": 52,
+      "value": 75,
       "assumptions": [
         "Exact partition of the submitted boundary: no gaps, no overlaps."
       ]
@@ -102,7 +102,7 @@
       ],
       "formula": "sum(polygon_area(code=0701))",
       "confidence": "medium",
-      "value": 1068096.942,
+      "value": 437267.216,
       "assumptions": []
     },
     "land_use_research_area_sqm": {
@@ -113,7 +113,7 @@
       ],
       "formula": "sum(polygon_area(code=0802))",
       "confidence": "medium",
-      "value": 2462375.021,
+      "value": 1564808.605,
       "assumptions": []
     },
     "land_use_culture_area_sqm": {
@@ -124,7 +124,7 @@
       ],
       "formula": "sum(polygon_area(code=0803))",
       "confidence": "medium",
-      "value": 742228.553,
+      "value": 1130404.46,
       "assumptions": []
     },
     "land_use_commercial_area_sqm": {
@@ -135,7 +135,7 @@
       ],
       "formula": "sum(polygon_area(code=05))",
       "confidence": "medium",
-      "value": 1729632.679,
+      "value": 2717212.937,
       "assumptions": []
     },
     "land_use_education_area_sqm": {
@@ -146,7 +146,7 @@
       ],
       "formula": "sum(polygon_area(code=0804))",
       "confidence": "medium",
-      "value": 494819.036,
+      "value": 373530.572,
       "assumptions": []
     },
     "land_use_medical_area_sqm": {
@@ -157,7 +157,7 @@
       ],
       "formula": "sum(polygon_area(code=0806))",
       "confidence": "medium",
-      "value": 494641.973,
+      "value": 374037.164,
       "assumptions": []
     },
     "land_use_road_area_sqm": {
@@ -168,7 +168,7 @@
       ],
       "formula": "sum(polygon_area(code=1207))",
       "confidence": "medium",
-      "value": 2196247.69,
+      "value": 2084581.302,
       "assumptions": []
     },
     "land_use_green_area_sqm": {
@@ -179,7 +179,7 @@
       ],
       "formula": "sum(polygon_area(code=1401))",
       "confidence": "medium",
-      "value": 1483335.723,
+      "value": 2543483.129,
       "assumptions": []
     },
     "land_use_plaza_area_sqm": {
@@ -190,7 +190,7 @@
       ],
       "formula": "sum(polygon_area(code=1403))",
       "confidence": "medium",
-      "value": 741447.769,
+      "value": 187500.0,
       "assumptions": []
     },
     "green_ratio": {
@@ -202,7 +202,7 @@
       ],
       "formula": "green_area / site_area",
       "confidence": "medium",
-      "value": 0.13,
+      "value": 0.223,
       "assumptions": [
         "Calculated on provisional boundary; not a statutory green ratio."
       ]
@@ -216,7 +216,7 @@
       ],
       "formula": "plaza_area / site_area",
       "confidence": "medium",
-      "value": 0.065,
+      "value": 0.016,
       "assumptions": [
         "Public space expressed as plaza land (1403); park green is in green_ratio."
       ]
@@ -230,7 +230,7 @@
       ],
       "formula": "road_area / site_area",
       "confidence": "medium",
-      "value": 0.192,
+      "value": 0.183,
       "assumptions": [
         "Road land-use cells are concept-level; not road redlines."
       ]
@@ -243,7 +243,7 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "value": 354868.499,
+      "value": 303601.34,
       "assumptions": []
     },
     "building_footprint_ratio": {
@@ -255,7 +255,7 @@
       ],
       "formula": "building_footprint_area / site_area",
       "confidence": "medium",
-      "value": 0.031,
+      "value": 0.027,
       "assumptions": [
         "Concept-level footprints only; not a statutory building coverage ratio."
       ]
@@ -268,7 +268,7 @@
       ],
       "formula": "count(building_features)",
       "confidence": "medium",
-      "value": 33,
+      "value": 36,
       "assumptions": []
     },
     "green_space_feature_count": {
@@ -279,7 +279,7 @@
       ],
       "formula": "count(green_space_features)",
       "confidence": "medium",
-      "value": 6,
+      "value": 12,
       "assumptions": []
     },
     "public_space_feature_count": {
@@ -301,7 +301,7 @@
       ],
       "formula": "projected_length(road_centerlines, EPSG:4548)",
       "confidence": "medium",
-      "value": 20896.683,
+      "value": 24042.014,
       "assumptions": [
         "Centerlines are concept-level design lines, not road redlines."
       ]
@@ -312,11 +312,11 @@
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "projected_length(design_spine_lines, EPSG:4548)",
+      "formula": "projected_length(design_role=north_south_spine, EPSG:4548)",
       "confidence": "medium",
-      "value": 20896.683,
+      "value": 9723.47,
       "assumptions": [
-        "Includes the heritage park greenway spine and east service arterial."
+        "Spine metric counts only the heritage park greenway spine (single north-south line), distinct from the full conceptual road network."
       ]
     },
     "phase_p1_area_sqm": {
@@ -327,7 +327,7 @@
       ],
       "formula": "polygon_area(phase P1)",
       "confidence": "medium",
-      "value": 2019272.632,
+      "value": 3801720.759,
       "assumptions": []
     },
     "phase_p2_area_sqm": {
@@ -338,7 +338,7 @@
       ],
       "formula": "polygon_area(phase P2)",
       "confidence": "medium",
-      "value": 1731608.234,
+      "value": 3465133.902,
       "assumptions": []
     },
     "phase_p3_area_sqm": {
@@ -349,7 +349,7 @@
       ],
       "formula": "polygon_area(phase P3)",
       "confidence": "medium",
-      "value": 2044226.84,
+      "value": 4145970.725,
       "assumptions": []
     },
     "total_floor_area_sqm": {
