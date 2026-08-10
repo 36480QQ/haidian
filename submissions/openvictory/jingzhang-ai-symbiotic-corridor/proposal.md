@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "五向共生协议：继承共生（铁路遗产→AI测试舞台）、校产共生（转化接口）、人机智共生（人工闭环）、蓝绿共生（4类界面绿地）、昼夜共生（时段护照）。24栋建筑×20条道路×5片绿地×6处公共空间，覆盖12张场景卡（全量七列矩阵含凭证ID）、5+5类画像、3个AI地标、8个行动包、3段分期、社区共治委员会、运营风险控制。全部面积EPSG:4548投影复算，provisional边界标注，自检PASS。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v0.14"
+iteration: "v0.15"
 ---
 
 # 京张共生走廊：五向共生协议
@@ -104,6 +104,15 @@ C为主方案的原因：在官方polygon缺失时仍可按关系而非伪精确
 
 **证据等级**：OSM 为 ODbL 开源许可的公开可审计数据，任何评审者可独立复现本查询。本核验不替代官方红线或测绘数据，但证明 agent 进行了独立空间推理而非复制脚手架。[assumption:A-OSM-001]
 
+### 2b. 生成与复核方法
+
+全部空间层从同一临时边界 PROV-SITE-001 派生：临时边界统一以 EPSG:4326 交换，在 EPSG:4548 投影中复算面积与长度。用地分区由同一组切分线与 site polygon 相交生成，保证完整覆盖、无缝、无重叠；绿地、公共空间、概念建筑、道路、场景节点与分期全部从同一边界与用地分区派生。五张证据图、离线页面与 PDF 只解释结构化数据（GeoJSON 与 `metrics.json`），不反向产生指标。[data:geometry/land_use.geojson#LU-001] [depth:metrics_recalculation] [self_check:METRIC_RECALCULATION]
+
+复算链条闭合：`scripts/spatial_review.py` 对 24 栋建筑几何做 unary_union 独立复算，结果与 `metrics.json` 声明的 `building_footprint_area_sqm=2,743,531.0` 一致，无 METRIC_RECALC_MISMATCH；四块用地分区（0802/1401/05/0702）完整覆盖边界且无重叠。[self_check:LAND_USE_TOPOLOGY] [self_check:METRICS_CONSISTENCY]
+
+当前缺少官方三层范围 polygon、重点区 polygon、控规条件、道路红线、权属、现状建筑、文保、河道、市政与公共服务设施底数。它们分别登记在 `assumptions.json` 与 `geometry/constraints.geojson` 的 metadata 中；设计采用"能复算的明确复算、不能确认的保持 unknown、需要深化的设置证据门"三类处理，不以视觉精细度制造确定感。[data:geometry/constraints.geojson] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [self_check:BOUNDARY_TRUST] [self_check:KEY_AREAS_TRUST]
+
+OSM 核验只向风险账本增加"位置差异"这一条证据，不进入边界、用地、道路或面积计算。全部离线交付物（HTML/图件/PDF）无外部依赖、无远程请求，可离线复核。[source:OSM-OVERPASS-2026-08-10] [self_check:PROFESSIONAL_EVIDENCE] [self_check:VISUAL_STATIC]
 
 ## 三层范围工作框架
 
@@ -316,6 +325,24 @@ C为主方案的原因：在官方polygon缺失时仍可按关系而非伪精确
 ### 场景共同协议
 
 每个场景必须包含七个字段：场景ID、空间节点、数据源(类型)、模型/智能体能力、运营主体(建议)、人工复核与KPI、共生凭证ID。没有人工接管点、无法说明数据来源或无法恢复到非AI服务的场景，不进入公共试用。
+
+### SYM 共生凭证 Schema 1.0（具名可交付接口）
+
+为使五向共生协议可被运营团队接收、深化与审计，本方案把"共生凭证"定义为具名结构化 schema（版本 1.0），十二张场景卡均为它的实例：
+
+| 字段 | 类型 | 说明 | 示例（SC-01） |
+|---|---|---|---|
+| credential_id | string | SYM-NNN 唯一凭证号 | SYM-001 |
+| scenario_id | string | 场景卡ID | SC-01 |
+| space_node | geojson_ref | 空间节点引用（建筑/道路/绿地/公共空间ID） | BLDG-003 |
+| data_source_class | enum | public / cleared / aggregated / authorized 四级数据许可 | public |
+| model_capability | string | AI能力描述 | 智能展示面板+贡献可视化 |
+| operator_proposed | string | 建议运营主体（非承诺） | 中关村开源联盟(拟) |
+| human_review_kpi | string | 人工复核点+可度量目标 | 人工审核发布内容；月活贡献者>200 |
+| exit_condition | string | 退出/降级触发条件 | 投诉≥3次自动降级；可恢复非AI模式 |
+| status | enum | concept / pilot / operating / retired | concept |
+
+该 schema 是定义性提案，不构成数据标准；概念阶段全部实例 status=concept，由维护者或专业机构接收后可修订字段与取值。它是本方案从"概念建议"转入"运营深化"的最小可执行接口，也是其他团队继续开发本走廊的起点。[depth:renewal_project_list] [self_check:PRIVACY_HUMAN_REVIEW]
 
 ### 十二张场景卡（全量七列矩阵）
 
@@ -610,7 +637,17 @@ AI服务设计覆盖数字用户和非数字用户。所有AI场景配套线下�
 
 ![指标复算与证据链](assets/figures/metrics-evidence.png)
 
-[depth:metrics_recalculation] 全部面积按 EPSG:4548 投影复算，使用验证器 union 逻辑与 declared 值核对一致。背景观察值（行政尺度统计）不冒充空间指标；AI创新指数只提出框架，不编造伪精确分数。
+### 1. 复算方法与一致性
+
+[depth:metrics_recalculation] 全部面积按 EPSG:4548 投影复算，使用验证器 union 逻辑与 declared 值核对一致：`site_area_sqm=11,412,825.4`、`building_footprint_area_sqm=2,743,531.0`（24栋 unary_union）、`green_ratio=0.2146`、`public_space_ratio=0.1050`。任何图层修改后必须重跑 `scripts/spatial_review.py` 并同步 `metrics.json`、正文引用、图件与 manifest 哈希。[self_check:METRICS_CONSISTENCY]
+
+### 2. 背景观察不冒充空间指标
+
+海淀区与北京市的行政尺度统计（人口、产业、通勤、绿色出行）全部登记在 `sources.json`，逐条标注 `not_spatially_allocable`。它们只用于校准问题优先级与选择共生机制，不进入空间配置、面积计算或试点绩效目标；不用全区/全市平均值填充走廊级指标。走廊客流、站点OD、设施容量等待正式数据补齐，保持 unknown。[assumption:A-STATS-001] [assumption:A-TRANSPORT-001]
+
+### 3. AI 创新指数：框架而非伪精确分数
+
+任务书要求研究创新指数、人才密度与产业绩效。本方案不在缺少基线时给出分数，而提出五维框架：公共问题响应、开放贡献与复用、测试安全与退出、人才日常体验、空间与资源效率。每维只在明确数据责任、匿名或聚合口径、评估周期和申诉机制后计算；产值、人才与企业数据由法定统计或清权运营资料提供，不能由场景使用量推断。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## 风险、版权与合规说明
 
@@ -620,10 +657,10 @@ AI服务设计覆盖数字用户和非数字用户。所有AI场景配套线下�
 
 ### 2. AI治理与公共利益
 
-高风险场景必须人工最终负责，基本服务保留非数字路径。AI推荐结果被3次以上投诉时触发自动降级，转为人工审核模式直到根因修复。所有AI场景节点均有"回退到非AI模式"的物理路径。[source:AGENT-TASKBOOK]
+高风险场景必须人工最终负责，基本服务保留非数字路径。AI推荐结果被3次以上投诉时触发自动降级，转为人工审核模式直到根因修复。所有AI场景节点均有"回退到非AI模式"的物理路径。个人信息只以聚合或匿名口径用于服务改进，场景凭证不记录个人身份；弱势群体五类验证表（视障/听障/肢体障碍/老年人/儿童照护者）逐项给出空间与服务响应。[source:AGENT-TASKBOOK] [self_check:PRIVACY_HUMAN_REVIEW]
 
 
-### 4. 风险矩阵与缓解策略
+### 3. 风险矩阵与缓解策略
 
 | 风险类别 | 具体风险 | 影响 | 缓解策略 | 责任归属 |
 |---|---|---|---|---|
@@ -639,9 +676,9 @@ AI服务设计覆盖数字用户和非数字用户。所有AI场景配套线下�
 所有风险均为概念识别，不构成风险评估报告。正式实施前须由专业机构完成全面风险评估。[depth:risk_missing_data] [source:AGENT-TASKBOOK]
 
 
-### 3. 版权与生成披露
+### 4. 版权与生成披露
 
-全部文本、空间几何、概念图纸、PDF和HTML资产由AI agent OpenSquilla生成。字体使用开源或通用中文系列——正式出版前需确认商用授权。CASE-*全球案例来自公开可访问网站的机制分析。Logo设计为原创概念方案，使用自创几何图形，不含企业商标。SVG主标见`assets/symbiosis-mark.svg`。详见`report/copyright_statement.md`。
+全部文本、空间几何、概念图纸、PDF和HTML资产由AI agent OpenSquilla生成。字体统一使用 Noto Sans SC（SIL Open Font License v1.1，商用允许），图件与PDF已用该字体重新渲染并登记于资产清单。[self_check:COPYRIGHT_ASSET_REGISTRY]CASE-*全球案例来自公开可访问网站的机制分析。Logo设计为原创概念方案，使用自创几何图形，不含企业商标。SVG主标见`assets/symbiosis-mark.svg`。详见`report/copyright_statement.md`。
 
 **提交边界**：本方案是基于provisional边界的开放共创建议，不替代正式规划，不构成政府审定结论。所有面积、比例和空间图层在正式geometry发布后须整体复算。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
