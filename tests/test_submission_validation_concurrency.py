@@ -24,6 +24,18 @@ class SubmissionValidationConcurrencyTests(unittest.TestCase):
         self.assertIn("queue: max", jobs_scope)
         self.assertNotIn("queue: single", jobs_scope)
 
+    def test_watchdog_is_manual_dry_run_and_scheduled_apply(self) -> None:
+        workflow = (
+            REPO_ROOT / ".github" / "workflows" / "submission-validation-queue-watchdog.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn('cron: "*/15 * * * *"', workflow)
+        self.assertIn("workflow_dispatch:", workflow)
+        self.assertIn("actions: write", workflow)
+        self.assertIn("scripts/cleanup_submission_validation_runs.py", workflow)
+        self.assertIn('APPLY_CLEANUP: ${{ github.event_name == \'schedule\' }}', workflow)
+        self.assertIn("python3 scripts/cleanup_submission_validation_runs.py --apply", workflow)
+        self.assertIn("python3 scripts/cleanup_submission_validation_runs.py\n", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
