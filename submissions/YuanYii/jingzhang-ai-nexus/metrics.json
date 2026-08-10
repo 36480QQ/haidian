@@ -13,7 +13,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "provisional_only"
       ]
@@ -31,7 +31,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.311110,
+      "value": 0.31111,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,8 +73,24 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": []
+    },
+    "interval_sharing_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "note": "concept-only: 区间共享窗口时间占比（路签归还后社区预约时段/总运营时间）",
+      "confidence": "concept",
+      "status": "unknown",
+      "reason": "concept-only indicator, value pending operational plan definition"
+    },
+    "community_participation_rate": {
+      "value": null,
+      "unit": "percent",
+      "note": "concept-only: 社区参与率基线（第13号场景卡），待试点后采集",
+      "confidence": "concept",
+      "status": "unknown",
+      "reason": "concept-only indicator, baseline to be established after pilot deployment"
     }
   }
 }
