@@ -22,6 +22,7 @@
       "ELDERLY-SMART-TECH-PLAN-2020-45",
       "GENERATIVE-AI-INTERIM-MEASURES",
       "ISSUE-1029-KEY3-ANCHOR",
+      "ISSUE-951-SOURCE-BOUNDARY",
       "OSM-TRANSPORT-CONTEXT"
     ],
     "authorized_aggregate_sources": [],
@@ -31,7 +32,7 @@
     "accessibility_walkthrough": "not_conducted",
     "personal_data_collected": false,
     "consent_records": [],
-    "source_use_rule": "Policy, tender, method and open-map sources define context or a calibration request; none is treated as a resident, enterprise, operator or field-performance baseline."
+    "source_use_rule": "Policy, tender, method and open-map sources define context or a calibration request; package-local community references are judged by their own metadata and stated use; none is treated as a resident, enterprise, operator or field-performance baseline."
   },
   "inferred_needs": [
     {

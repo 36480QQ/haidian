@@ -52,6 +52,13 @@
       "accessed_date": "2026-08-10"
     },
     {
+      "id": "ISSUE-951-SOURCE-BOUNDARY",
+      "source_type": "community_contribution_reference",
+      "usage": "Community and maintainer discussion of the package-local source boundary: participant sources.json is the complete source record for a submission, while absence from the maintainer-owned central registry is not by itself approval, prohibition or a reason for risk deduction. This reference documents the boundary and does not support a mobility fact.",
+      "url": "https://github.com/open-city-ai/haidian/issues/951",
+      "accessed_date": "2026-08-10"
+    },
+    {
       "id": "OSM-TRANSPORT-CONTEXT",
       "source_type": "osm",
       "usage": "Background-only mapped transport screening; not capacity, right-of-way or accessibility proof.",

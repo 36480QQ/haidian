@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.41"
+iteration: "v2.42"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -125,6 +125,10 @@ iteration: "v2.41"
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。
+
+### 参赛者来源的登记边界
+
+本包的 `sources.json` 是本方案的完整来源记录。维护者维护的 `data/source_registry.json` 是共享资料目录，不是参赛者来源或社区贡献引用的强制镜像。因此 `ISSUE-1029-KEY3-ANCHOR` 和 `SWITCHBACK-PROTOCOL-1119` 只在本包的来源表与证据索引中登记；它们不因没有出现在中央 registry 就自动变成已批准或被禁止的材料，也不能支撑官方位置、政策、现场绩效或授权结论。评审应按来源类型、用途、链接、访问日期和包内引用位置判断 [source:SOURCE-REGISTRY] [source:ISSUE-951-SOURCE-BOUNDARY] [assumption:A-SOURCE-BOUNDARY-001]。
 
 本包沿用公开任务书的 provisional 工作底盘，但以交通运营为主题重做路网属性、指标、来源、图件和实施门槛；`geometry/site_boundary.geojson`、`geometry/key_areas.geojson` 都明确 `official_boundary=false`、`geometry_role=provisional_constraint`，不得解释为法定红线 [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]。
 

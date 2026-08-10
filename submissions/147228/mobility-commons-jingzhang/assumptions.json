@@ -55,6 +55,12 @@
       "impact": "Dazhongsi station, transfer and curb ideas remain relational concepts only. Do not move the central polygon locally; an official anchor revision must trigger one coordinated geometry, metric, figure, narrative and manifest recalculation."
     },
     {
+      "id": "A-SOURCE-BOUNDARY-001",
+      "status": "controlled_package_source_boundary",
+      "statement": "This package's sources.json is its complete source record. The maintainer-owned data/source_registry.json is a shared catalogue, not a required mirror for participant-collected or community-contribution references.",
+      "impact": "Absence from the central registry is neither approval nor prohibition. ISSUE-1029-KEY3-ANCHOR and SWITCHBACK-PROTOCOL-1119 must be judged by their package metadata and stated use, and cannot support official location, policy, field-performance or authorization claims."
+    },
+    {
       "id": "A-DEMAND-001",
       "status": "requires_aggregated_baseline",
       "statement": "Enterprise commute, freight, shuttle, charging and visitor demand is not available as a consented grouped register.",

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.41"
+iteration: "v2.42"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -125,6 +125,10 @@ This register is a package-level risk/evidence index, not a field risk assessmen
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
+
+### Participant-source registration boundary
+
+This package's `sources.json` is the complete source record for this proposal. The maintainer-owned `data/source_registry.json` is a shared catalogue, not a mandatory mirror for participant sources or community-contribution references. Accordingly, `ISSUE-1029-KEY3-ANCHOR` and `SWITCHBACK-PROTOCOL-1119` are registered in this package's source table and evidence index only; their absence from the central registry is neither automatic approval nor prohibition, and they cannot support official location, policy, field-performance or authorization claims. Review should use each source's type, stated use, link, access date and package citation [source:SOURCE-REGISTRY] [source:ISSUE-951-SOURCE-BOUNDARY] [assumption:A-SOURCE-BOUNDARY-001].
 
 Three new public references are used only to make the boundary explicit. The barrier-free environment law connects accessibility work with age-friendly improvement and requires consultation of disabled and older-person representatives and relevant organisations on planning documents that concern accessibility. This package therefore places those roles and a continuous human fallback in the P0 evidence path, without claiming that consultation or a local compliance walkthrough has happened [standard:BARRIER-FREE-ENVIRONMENT-LAW] [source:BARRIER-FREE-ENVIRONMENT-LAW].
 
