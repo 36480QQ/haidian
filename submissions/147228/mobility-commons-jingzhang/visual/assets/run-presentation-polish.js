@@ -302,6 +302,10 @@ function updateVisualIndex(file, lang) {
   let html = fs.readFileSync(target, 'utf8');
   const zh = lang === 'zh';
   const suffix = zh ? '' : '.en';
+  // Keep the generated status board idempotent across repeated local checks.
+  // English uses a distinct `.en.svg` asset, so checking only for the Chinese
+  // filename would append the same section on every run.
+  html = html.replace(/<section id="24" class="evidence multimodal-board">[\s\S]*?<\/section>/g, '');
   const statusBoard = `../assets/figures/review-status-contract${suffix}.svg`;
   const oldAlt = zh ? '三处重点区，一条共行环' : 'Three areas, one operating loop';
   const newAlt = zh ? '交通共行环空间关系图' : 'Mobility commons spatial relationship map';
