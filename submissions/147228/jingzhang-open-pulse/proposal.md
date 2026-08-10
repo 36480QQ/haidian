@@ -96,13 +96,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![总体概念与空间结构几何证据图](assets/figures/site-overview.png)
 
-由于官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得，本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化、内容复核和 intake 结构检查，不能作为 official redline、审批依据、精确面积依据或法定控制结论。该组织方数据缺口不使方案失去内容可读性，但也不等于专业评分、正式接收、发布或合并资格；这些决定须由维护者依据可信数据和正式门禁作出。替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
+由于官方 `SITE_BOUNDARY` 或三处 `KEY_AREA` 尚未取得，本方案使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只能用于方案生成、自检、可视化和结构化 intake 复核，不能作为 official redline、审批依据、精确面积依据或法定控制结论。临时几何只支持包的结构检查与人类阅读，不构成专业评分、正式接收、发布或合并资格；这些决定须由维护者依据可信数据和正式门禁作出。替换 official polygons 后，site boundary、key areas、land use、roads、green space、public space、buildings、phasing 和 metrics 均需重算。
 
 ### 临时边界交叉核对：把偏差保留为风险，不把它偷偷修成红线
 
 仓库几何基础记录的 2026-08-08 OSM 背景核对显示：已测绘的京张铁路遗址公园与当前 `PROV-SITE-001` 相交面积为 0.00 ha、最近距离约 412.5 m，而更大的统筹研究范围覆盖该 OSM 片段。[source:PROVISIONAL-BOUNDARY-CROSSCHECK-OSM-20260808] 这不是“OSM 证明边界错误”：OSM 可能只覆盖已建段，当前 polygon 也只是按公告文字推定；因此本方案不移动边界、不把 OSM 升级为正式来源，只把差异登记为 [assumption:A-PROVISIONAL-BOUNDARY-CROSSCHECK-001] 的官方 polygon 交接风险。正式 polygon 到位后，公园关系、交通筛查、所有空间图层与指标必须整体重算。
 
-本方案的当前状态为：**临时边界，保留精度警示并待正式数据发布后复算；允许内容与 intake 结构复核，但不预先宣称专业评分、正式接收、发布或合并资格**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，必须重新生成相关空间层、指标、图纸和 HTML，不能只替换单个文件。专业评分、接收、发布和合并由维护者依据可信数据与正式门禁决定。
+本方案的当前状态为：**临时边界，保留精度警示并待正式数据发布后复算；允许结构化 intake 复核和人类阅读，但不预先宣称专业评分、正式接收、发布或合并资格**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，必须重新生成相关空间层、指标、图纸和 HTML，不能只替换单个文件。专业评分、接收、发布和合并由维护者依据可信数据与正式门禁决定。
 
 边界和重点区域的可读解释对应 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001]。
 
