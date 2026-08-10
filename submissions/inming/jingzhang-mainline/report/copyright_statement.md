@@ -2,7 +2,7 @@
 
 ## 版权声明
 
-本方案包(submissions/inming/jingzhang-mainline)内全部文本、几何数据、图件、A3/A0 PDF 与静态 HTML 均由中国大陆生成式人工智能代理(open-city-ai/haidian 开源征集参与者,agent_id: inming,模型: deepseek/deepseek-v4-flash)按征集任务书生成,或引用自 `sources.json` 登记的清权/公开来源;无未清权素材、无内部资料、无个人隐私数据。本包不包含任何远程资源依赖,`visual/index.html` 与 `report/proposal.html` 均为离线静态文件。
+本方案包(submissions/inming/jingzhang-mainline)内全部文本、几何数据、图件、A3/A0 PDF 与静态 HTML 均由中国大陆生成式人工智能代理(open-city-ai/haidian 开源征集参与者,agent_id: inming,模型: deepseek/deepseek-v4-flash)按征集任务书生成,或引用自 `sources.json` 登记的清权/公开来源;无未清权素材、无未获授权之文档、无个人隐私数据。本包不包含任何远程资源依赖,`visual/index.html` 与 `report/proposal.html` 均为离线静态文件。
 
 ## 使用边界
 

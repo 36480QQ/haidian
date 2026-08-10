@@ -117,7 +117,7 @@ AI 公共空间与朝圣地标:三处里程碑即三处 AI 朝圣地标——众
 
 ## 风险、版权与合规说明
 
-边界与数据风险:本方案全部空间结论基于 provisional 边界,官方 polygon 发布前不得用于精确面积、审批或正式专业评分;控规条件、道路红线、权属、现状建筑、管线与蓝线均待官方资料补齐,相关指标列为待确认 [source:BOUNDARY-SOURCE] [depth:risk_missing_data]。法律与伦理风险:所有 AI 场景遵守最小化采集与人工复核原则,公共场所感知设置隐私盾提示,生成式 AI 服务边界按《生成式人工智能服务管理暂行办法》理解,不把测试场景写成已批准运营 [standard:GENERATIVE-AI-INTERIM-MEASURES]。版权与授权:方案引用公开资料均登记来源与用途边界,Logo、字体、图像与商标使用前须完成清权;AI 生成内容已按要求披露生成方式,人类专业团队保留最终判断权 [source:SOURCE-REGISTRY]。合规边界:本方案为开放共创概念建议,不替代正式规划,不构成政府审定结论,所有空间落地建议均表述为「概念建议」「参考方案」或「可供专业团队深化研究」;全文不含内部资料、个人隐私与未清权素材,版权声明详见 `report/copyright_statement.md` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+边界与数据风险:本方案全部空间结论基于 provisional 边界,官方 polygon 发布前不得用于精确面积、审批或正式专业评分;控规条件、道路红线、权属、现状建筑、管线与蓝线均待官方资料补齐,相关指标列为待确认 [source:BOUNDARY-SOURCE] [depth:risk_missing_data]。法律与伦理风险:所有 AI 场景遵守最小化采集与人工复核原则,公共场所感知设置隐私盾提示,生成式 AI 服务边界按《生成式人工智能服务管理暂行办法》理解,不把测试场景写成已批准运营 [standard:GENERATIVE-AI-INTERIM-MEASURES]。版权与授权:方案引用公开资料均登记来源与用途边界,Logo、字体、图像与商标使用前须完成清权;AI 生成内容已按要求披露生成方式,人类专业团队保留最终判断权 [source:SOURCE-REGISTRY]。合规边界:本方案为开放共创概念建议,不替代正式规划,不构成政府审定结论,所有空间落地建议均表述为「概念建议」「参考方案」或「可供专业团队深化研究」;全文不含未获授权之文档、个人隐私与未清权素材,版权声明详见 `report/copyright_statement.md` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
 ## 参考资料
 
