@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-version: "v0.4"
-summary: "以临时边界生成的一带三核两翼正式城市设计提案（v0.4）：京张遗址公园活力带为轴，众智园、AI原点社区、大钟寺三处重点区为核，中关村科技服务翼与小月河场景赋能翼协同，含结构化几何、指标、矩阵、A3/A0 图纸与离线可视化。"
+version: "v0.5"
+summary: "以临时边界生成的一带三核两翼正式城市设计提案（v0.5）：京张遗址公园活力带为轴，众智园、AI原点社区、大钟寺三处重点区为核，中关村科技服务翼与小月河场景赋能翼协同，含结构化几何、指标、矩阵、A3/A0 图纸与离线可视化。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -34,9 +34,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
-统筹研究范围的核心任务是构建世界级 AI 创新生态 [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。方案提出"京张智脉共生带"总体概念：以京张遗址公园为历史与公共空间主轴，把众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区三处片区作为创新锚点，以中关村科技服务翼、小月河场景赋能翼作为要素配置与场景开放两翼，形成"一带三核、两翼多点、蓝绿慢行复合环"的空间组织 [depth:overall_spatial_structure]。命名体系围绕"百年京张文化带、都市AI生活体验带、AI融合创新带"三项定位展开：中文主名"京张智脉共生带"，英文建议名 "Jingzhang AI Smart-Vein Belt"；Logo 方向以京张铁路人字形展线与神经网络节点同构的"Z"形符号，配以铁路灰、中关村红与 AI 靛蓝三色体系 [source:AGENT-TASKBOOK]。
+统筹研究范围的核心任务是构建世界级 AI 创新生态 [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。方案提出"京张智脉共生带"总体概念：以京张遗址公园为历史与公共空间主轴，把众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区三处片区作为创新锚点，以中关村科技服务翼、小月河场景赋能翼作为要素配置与场景开放两翼，形成"一带三核、两翼多点、蓝绿慢行复合环"的空间组织 [depth:overall_spatial_structure]。对应 agent.1（一带总体概念与功能统筹方案设计），命名体系围绕"百年京张文化带、都市AI生活体验带、AI融合创新带"三项定位展开：中文主名"京张智脉共生带"，英文建议名 "Jingzhang AI Smart-Vein Belt"；Logo 方向以京张铁路人字形展线与神经网络节点同构的"Z"形符号，配以铁路灰、中关村红与 AI 靛蓝三色体系 [source:AGENT-TASKBOOK]。
 
-对标全球 AI 创新生态案例，方案提炼五条可转化机制 [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK]：一是"校区—园区—街区"三区叠加（参考斯坦福研究园与波士顿肯德尔广场）；二是"开源社区—标准治理—安全评测"三位一体（参考 Linux 基金会与伦敦国王十字知识区）；三是"场景开放—数据合规—产业测试"闭环（参考新加坡纬壹科技城与深圳南山区）；四是"人才特区—成果转化—投融资服务"配套（参考杭州未来科技城与首尔 DMC）；五是"国际路演—开发者社区—品牌资产"长期运营（参考特拉维夫与全球开发者生态）。以上均为参考机制表述，不构成实施承诺 [source:AGENT-TASKBOOK]。
+对应 agent.2（AI全栈自主创新体系与世界级AI创新生态设计），对标全球 AI 创新生态案例，方案提炼五条可转化机制 [source:AGENT-TASKBOOK] [source:PROCESSED-FACT-PACK]：一是"校区—园区—街区"三区叠加（参考斯坦福研究园与波士顿肯德尔广场）；二是"开源社区—标准治理—安全评测"三位一体（参考 Linux 基金会与伦敦国王十字知识区）；三是"场景开放—数据合规—产业测试"闭环（参考新加坡纬壹科技城与深圳南山区）；四是"人才特区—成果转化—投融资服务"配套（参考杭州未来科技城与首尔 DMC）；五是"国际路演—开发者社区—品牌资产"长期运营（参考特拉维夫与全球开发者生态）。以上均为参考机制表述，不构成实施承诺 [source:AGENT-TASKBOOK]。
 
 未来城市形态研究围绕人工智能如何改变工作、生活、社交、学习、交通与公共服务展开，把 AI 交通系统、连续绿色空间、创新服务设施与国际化生活工作氛围落实为可定位的功能区、节点、廊道与场景，产业战略类指标列入 `metrics.json` 并标注数据校准状态 [depth:metrics_recalculation]。
 
@@ -60,7 +60,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 方案面向 AI 人才与企业建立五类用户画像 [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]：开源开发者（发布、协作、测试与社区声誉需求，对应原点社区开源发布厅）、初创团队（低成本办公、算力入口与产品试验场需求，对应众智园共享测试场）、头部企业访客（展示、商务、国际接待与招聘需求，对应大钟寺国际路演客厅）、周边居民（通勤、休闲、社区服务与低扰动更新需求，对应京张遗址公园慢行环与社区服务嵌入）、高校师生（成果转化、跨校协作与日常慢行需求，对应校区—园区慢行缝合与转化驿站）。每类画像的空间响应、隐私边界与人工复核机制在 `compliance_matrix.json` 中登记，不采集个人行为轨迹，活动数据仅做聚合统计 [source:AGENT-TASKBOOK]。
 
-方案形成 10 张 AI 场景卡 [metric:scenario_node_count]：01 开源发布厅、02 安全治理沙盒、03 端侧算力驿站、04 AI 慢行导航、05 大钟寺国际路演客厅、06 清河低碳创新廊、07 近校成果转化街、08 数据要素会客厅、09 AI 生活服务样板街、10 全球AI活动周路线；每张场景卡说明服务对象、空间载体、数据来源、隐私边界、人工复核与运营主体 [source:AGENT-TASKBOOK]。产业测试验证场景不少于 3 个：自主模型安全评测场（众智园，面向标准制定与红队测试）、端侧算力与低碳能源测试点（总体设计范围节点）、智能体城市服务沙盒（公共空间可控测试），全部表述为概念建议与测试原型，不构成已批准运营 [source:AGENT-TASKBOOK]。AI 治理遵守数据最小化、公开来源、可解释与人工复核原则，城市智能体仅辅助识别慢行断点、公共空间热力、设施维护与企业服务需求，不替代规划审批，不输出未经授权的个人画像 [source:AGENT-TASKBOOK]。
+对应 agent.3（AI+场景赋能新范式与智能化AI活力城市设计），方案形成 10 张 AI 场景卡 [metric:scenario_node_count]：01 开源发布厅、02 安全治理沙盒、03 端侧算力驿站、04 AI 慢行导航、05 大钟寺国际路演客厅、06 清河低碳创新廊、07 近校成果转化街、08 数据要素会客厅、09 AI 生活服务样板街、10 全球AI活动周路线；每张场景卡说明服务对象、空间载体、数据来源、隐私边界、人工复核与运营主体 [source:AGENT-TASKBOOK]。产业测试验证场景不少于 3 个：自主模型安全评测场（众智园，面向标准制定与红队测试）、端侧算力与低碳能源测试点（总体设计范围节点）、智能体城市服务沙盒（公共空间可控测试），全部表述为概念建议与测试原型，不构成已批准运营 [source:AGENT-TASKBOOK]。AI 治理遵守数据最小化、公开来源、可解释与人工复核原则，城市智能体仅辅助识别慢行断点、公共空间热力、设施维护与企业服务需求，不替代规划审批，不输出未经授权的个人画像 [source:AGENT-TASKBOOK]。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
 
@@ -74,11 +74,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、高校与企业社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space]：京张遗址公园活力绿带居中贯通 [data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]，清河滨水防护绿地承载生态与低碳创新交往 [data:geometry/green_space.geojson#GREEN-002]，一带三核公共活动界面与大钟寺站四象限广场组织日常交往与活动 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-002] [metric:public_space_ratio]。城市风貌融合京张铁路历史文化、中关村创新文化与 AI 新文化，利用清华园火车站等文化资源提出城市基调、屋顶形态、体量与公共艺术引导；方案提出不少于 3 个 AI 朝圣地标（京张记忆灯塔、众智园治理方舟、大钟寺智音广场）与贡献墙、荣誉展示体系、公共空间组件库方向，品牌、字体、图像与企业标识均需清权来源，风貌控制分清官方管控、设计建议与待确认条件 [source:AGENT-TASKBOOK]。
+蓝绿空间以京张遗址公园活力带为骨架，统筹清河、小月河、高校与企业社区出行需求，提出南北贯通、东西连通的步道、骑行道与绿色空间体系 [depth:blue_green_public_space]：京张遗址公园活力绿带居中贯通 [data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]，清河滨水防护绿地承载生态与低碳创新交往 [data:geometry/green_space.geojson#GREEN-002]，一带三核公共活动界面与大钟寺站四象限广场组织日常交往与活动 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/public_space.geojson#PUBLIC-002] [metric:public_space_ratio]。对应 agent.5（百年京张文化、中关村文化与AI新文化融合叙事设计），城市风貌融合京张铁路历史文化、中关村创新文化与 AI 新文化，利用清华园火车站等文化资源提出城市基调、屋顶形态、体量与公共艺术引导；对应 agent.4（AI公共空间、智能原生新业态与朝圣地标设计），方案提出不少于 3 个 AI 朝圣地标（京张记忆灯塔、众智园治理方舟、大钟寺智音广场）与贡献墙、荣誉展示体系、公共空间组件库方向，品牌、字体、图像与企业标识均需清权来源，风貌控制分清官方管控、设计建议与待确认条件 [source:AGENT-TASKBOOK]。
 
 ## 更新项目清单、实施政策与分期计划
 
-方案形成 6 项更新项目清单 [metric:renewal_project_count]：JZ-01 京张遗址公园慢行断点缝合、JZ-02 众智园清河创新界面、JZ-03 原点社区近校成果转化街、JZ-04 大钟寺站四象限步行连通、JZ-05 AI 公共服务与端侧算力节点、JZ-06 全球AI活动周公共路线；每项说明位置、类型、功能、依赖条件、实施阶段与评估指标 [source:OFFICIAL-ANNOUNCEMENT] [depth:renewal_project_list]。分期与征集周期区分：一期以近校创新试点区启动轻量设施、运营活动与服务平台 [data:geometry/phasing.geojson#PHASE-001] [metric:phase_count]，二期推进站城一体更新 [data:geometry/phasing.geojson#PHASE-002]，三期进入全域治理与品牌运营框架 [data:geometry/phasing.geojson#PHASE-003] [depth:phasing_implementation]。政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理与产权协同；年度活动体系、开发者社区运营、场景开放日、公共体验路线与国际传播机制均说明运营对象、频率、责任边界、转化路径与风险，不写成宣传口号或已确定安排。
+方案形成 6 项更新项目清单 [metric:renewal_project_count]：JZ-01 京张遗址公园慢行断点缝合、JZ-02 众智园清河创新界面、JZ-03 原点社区近校成果转化街、JZ-04 大钟寺站四象限步行连通、JZ-05 AI 公共服务与端侧算力节点、JZ-06 全球AI活动周公共路线；每项说明位置、类型、功能、依赖条件、实施阶段与评估指标 [source:OFFICIAL-ANNOUNCEMENT] [depth:renewal_project_list]。分期与征集周期区分：一期以近校创新试点区启动轻量设施、运营活动与服务平台 [data:geometry/phasing.geojson#PHASE-001] [metric:phase_count]，二期推进站城一体更新 [data:geometry/phasing.geojson#PHASE-002]，三期进入全域治理与品牌运营框架 [data:geometry/phasing.geojson#PHASE-003] [depth:phasing_implementation]。政策建议覆盖城市更新统筹实施、空间供给、运营机制、产业服务、公共参与、数据治理与产权协同；对应 agent.6（一带全球AI创新活动体系与长期运营设计），年度活动体系、开发者社区运营、场景开放日、公共体验路线与国际传播机制均说明运营对象、频率、责任边界、转化路径与风险，不写成宣传口号或已确定安排。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
