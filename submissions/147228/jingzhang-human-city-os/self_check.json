@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-10T13:12:01.642012+08:00",
-  "generator": "scripts/self_check_submission.py@4e373fd2cfb1f42a2474ad614eb52d2109d5a7a3",
+  "generated_at": "2026-08-10T19:29:34+08:00",
+  "generator": "scripts/self_check_submission.py@4340982e3825845756d7d8beb1b3daf113408e93",
   "ok": true,
   "can_enter_formal_review": true,
   "review_status": "formal-review-ready",
@@ -89,6 +89,27 @@
       "severity": "major",
       "target": "visual/assets/formal-scorecard-readback-v18.json",
       "message": "Seven repository workflow questions are connected to template-only weights, shortest evidence paths, known boundaries and next authorized verification; the record explicitly creates no score or official review conclusion."
+    },
+    {
+      "check_id": "CITY_API_V23",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/city-api-sequence-v23-evidence.json",
+      "message": "Six-step city-API accountability sequence, bilingual fields, provisional anchors, stop boundary and not-a-score status replay locally."
+    },
+    {
+      "check_id": "PILOT_READINESS_V23",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/pilot-readiness-register.json",
+      "message": "Six test-oriented records carry first-evidence-needed and owner-class fields without inventing authorization, operators or field results."
+    },
+    {
+      "check_id": "DECISION_DIFF_V23",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/parametric-tradeoff-study-evidence.json",
+      "message": "Decision deltas derive only from existing shares, areas and formulas; comparison remains conceptual and does not alter formal geometry or metrics."
     }
   ],
   "next_actions": []

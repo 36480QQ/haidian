@@ -6,11 +6,29 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.2"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.2 puts the shared display-transformed geometry, three focus areas, and five spatial-action stages on the reviewer first screen, with human equivalents, machine limits, stop/replay actions, and data gaps visible together. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.3"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.3 connects a six-step city-API accountability sequence, first evidence for frozen scenarios, and replayable parametric deltas to spatial anchors. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.3 six-step city-API sequence | Make callability replayable as accountability
+
+v2.2 put “where the spatial relationship sits” and “how a person enters, refuses, pauses and exits” on one first-screen board. v2.3 turns the city API from a sentence into a six-step replayable sequence: **catalogue → authorize → call → log → audit → exit**. Each step provides a spatial anchor, an accountability role, a human equivalent, a stop/return trigger and an in-package evidence entry, so a reviewer can follow who may call, why, and when the call must stop.[data:visual/assets/city-api-sequence-v23.json] [depth:municipal_new_infrastructure] [depth:phasing_implementation]
+
+Figure 26 is a presentation-level urban-design diagram, not an API deployment architecture, engineering section or operating result. The six steps use only existing provisional anchors—`PUBLIC-B-API`, `SC-B01`, `SC-B04`, `SC-C04` and `PHASE-V02`—and retain `official_boundary=false`, `geometry_role=provisional_constraint`, `operational_status=not_authorized_not_run` and `performance_results=null`. Staffed, telephone, paper and offline explanation/withdrawal routes remain alongside AI; failure to replay or unclear accountability returns to the prior release gate.[data:geometry/public_space.geojson#PUBLIC-B-API] [data:geometry/constraints.geojson#SC-B01] [data:geometry/phasing.geojson#PHASE-V02]
+
+The offline check for the six-step sequence is recorded at [data:visual/assets/city-api-sequence-v23-evidence.json]; it proves only that fields, references, stop boundaries and bilingual figures replay locally, not interface capability, permits, operation or any score.
+
+![Figure 26 | Six-step replayable city-API sequence: catalogue, authorize, call, log, audit and exit](assets/figures/city-api-sequence-v23.en.png)
+
+The six test-oriented records now also state `first_evidence_needed_zh/en` and `first_evidence_owner_zh/en`. These fields say what the first evidence would be and which class of to-be-authorized role would review it; they do not turn a suggested role into a confirmed operator.[data:visual/assets/pilot-readiness-register.json] [depth:risk_missing_data]
+
+Parametric trade-offs no longer show only that candidates exist: `parametric-tradeoff-study-evidence.json` adds `decision_diff`, recalculating the deltas for community retention, reversible meanwhile space, and the API/embodied band from existing baseline shares, variant shares and derived areas. `status=conceptual_comparison_only`; no formal geometry, metrics, drawings or release state changes.[data:visual/assets/parametric-tradeoff-study-evidence.json]
+
+The deltas reconnect to the existing community-retention support area, reversible-space ratio and metric-recalculation rules.[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [depth:metrics_recalculation]
+
+v2.3 improves accountability readability, implementation reviewability and expression completeness only. It adds no official boundary, FAR, building height, engineering alignment, capacity, investment, permit, settled policy or operating-performance claim. When official geometry, rights, road/airspace, safety, energy, climate, authorization and public-baseline inputs arrive, recompute the sequence board, readiness register, parametric replay, metrics, HTML, PDFs and self-check together.[depth:risk_missing_data]
 
 ## v1.9 One-page execution brief | from taskbook to spatial response
 

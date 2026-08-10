@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.3 - 2026-08-10
+
+- 新增双语图 26“城市 API 六步可回放序列”与 `city-api-sequence-v23.json`：目录、授权、调用、日志、审计、退出逐步绑定既有空间锚点、场景、发布门、人工等效和停止/回退动作；新增离线 checker 与证据回读。
+- 为 6 个测试类场景补充 `first_evidence_needed_zh/en` 与 `first_evidence_owner_zh/en`，明确授权前第一份资料和待授权复核角色，不把建议角色升级为运营主体。
+- `parametric-tradeoff-study-evidence.json` 新增由既有 baseline/variant shares 和派生面积回算的 `decision_diff`，只表达概念取舍，不改变正式 geometry、metrics、图纸或发布状态。
+- 同步中英文 proposal、离线 visual index、PDF/HTML、双语图件和 manifest；修复中文 visual index 重复图 24。保持 `official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run` 与所有 unknown；不修改 `submissions-data.js` / `gallery-publication.json`。
+
 ## v2.2 - 2026-08-10
 
 - 将 `site-overview.png` / `.en.png` 改为评审首屏空间证据复合板：左侧从七个包内 GeoJSON 读取同源显示变换底图，右侧把三处重点区 × 五段空间动作、人工等效与停止/回退压成可读卡片，底部显式列出 EPSG:4548 指标输入和未补齐资料。

@@ -6,11 +6,29 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.2"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.2 把同源显示变换几何、三处重点区与五段空间动作压到评审首屏，人工等效、机器边界、停止回放和数据缺口同图可读。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.3"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.3 把城市 API 六步责任序列、冻结场景第一份证据与参数化差异回放接到空间锚点。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.3 城市 API 六步序列｜把可调用写成可回放的责任链
+
+v2.2 已将“哪里发生空间关系”和“人怎样进入、拒绝、暂停、退出”放在同一首屏；v2.3 再把城市 API 从一句协议压成六步可回放序列：**目录 → 授权 → 调用 → 日志 → 审计 → 退出**。每一步同时给出空间锚点、责任角色、人工等效、停止/回退触发器和包内证据入口，评审者可沿同一条线核对“谁能调用、凭什么调用、何时必须停”。[data:visual/assets/city-api-sequence-v23.json] [depth:municipal_new_infrastructure] [depth:phasing_implementation]
+
+图 26 是表达级城市设计图，不是 API 架构部署图、工程断面或运行结果。六步只引用既有 `PUBLIC-B-API`、`SC-B01`、`SC-B04`、`SC-C04` 与 `PHASE-V02` 等临时锚点；`official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run` 和 `performance_results=null` 继续保持。人工、电话、纸面、线下解释与撤销路径并列保留，不能独立回放或责任不清就退回上一发布门。[data:geometry/public_space.geojson#PUBLIC-B-API] [data:geometry/constraints.geojson#SC-B01] [data:geometry/phasing.geojson#PHASE-V02]
+
+六步序列的离线检查证据见 [data:visual/assets/city-api-sequence-v23-evidence.json]；它只证明字段、引用、停止边界与双语图件可回放，不产生接口能力、许可、运营或评分结论。
+
+![图 26｜城市 API 六步可回放序列：目录、授权、调用、日志、审计与退出](assets/figures/city-api-sequence-v23.png)
+
+本轮同时在六个测试类场景登记 `first_evidence_needed_zh/en` 与 `first_evidence_owner_zh/en`：它们只说明若有一天获得授权，第一份应收集什么、由哪类待授权角色复核，不把建议角色写成已确认运营者。[data:visual/assets/pilot-readiness-register.json] [depth:risk_missing_data]
+
+参数化取舍不再只显示“候选存在”：`parametric-tradeoff-study-evidence.json` 新增 `decision_diff`，从既有 baseline share、候选 share 和派生面积回算社区保留、可逆留白与 API/具身带的差异；`status=conceptual_comparison_only`，不改写正式 geometry、metrics、图纸或发布状态。[data:visual/assets/parametric-tradeoff-study-evidence.json]
+
+这组差异回接既有的社区保留支撑面积、可逆留白占比与指标复算规则。[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [depth:metrics_recalculation]
+
+v2.3 仍只改善责任链、实施可审查性与表达完整度；不新增官方边界、容积率、建筑高度、工程线位、容量、投资、许可、政策确定性或现实运营绩效。官方几何、权属、道路/空域、安全、能源、气候、授权和公众基线到位后，应连同序列图、准备度台账、参数化回放、metrics、HTML、PDF 和 self-check 全量重算。[depth:risk_missing_data]
 
 ## v1.9 一页执行摘要｜任务书到空间响应
 
