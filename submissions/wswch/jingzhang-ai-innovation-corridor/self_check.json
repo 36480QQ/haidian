@@ -1,4 +1,8 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/wswch/jingzhang-ai-innovation-corridor",
+  "pr_author": "wswch",
+  "stage": "formal",
   "schema_version": "0.1.0",
   "checks": [
     {
@@ -9,25 +13,52 @@
       "message": "All required files present and SHA-256 hashes match"
     },
     {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
+      "message": "All mandatory design depth items complete and standards covered"
+    },
+    {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "major",
       "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
-      "message": "Spatial review passed (provisional boundary warnings are minor)"
+      "message": "Spatial topology, coverage, and declared-area checks passed"
     },
     {
-      "check_id": "VISUAL_PACKAGING_CHECK",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "major",
       "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
-      "message": "Visual packaging check passed"
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
-      "result": "pass",
-      "severity": "major",
-      "target": "submissions/wswch/jingzhang-ai-innovation-corridor",
-      "message": "Professional evidence review passed"
+      "message": "Offline visualization present, compliant, and metrics registered"
     }
-  ]
+  ],
+  "deterministic_validation": {
+    "ok": true,
+    "status": "passed"
+  },
+  "spatial_review": {
+    "ok": true,
+    "status": "passed",
+    "issues": []
+  },
+  "visual_review": {
+    "ok": true,
+    "status": "passed",
+    "issues": []
+  },
+  "professional_review": {
+    "ok": true,
+    "status": "passed",
+    "issues": []
+  },
+  "spatial_issue_ids": [],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": []
 }
