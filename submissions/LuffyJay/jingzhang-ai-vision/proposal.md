@@ -28,6 +28,8 @@ iteration: "v1.0"
 
 ---
 
+![Site Overview](assets/figures/site-overview.png)
+
 ## 三层范围工作框架
 
 ### 统筹研究范围（约43.6平方公里）
@@ -183,7 +185,7 @@ iteration: "v1.0"
 
 **建筑设计概念**：算力中心采用"散热塔+实验室+共享中庭"的三明治剖面——底部为液冷基础设施层（对城市展示的"技术景观"），中部为可灵活分割的实验室模块，顶部为国际学术交流和展示空间。
 
-**公共空间**：沿清河设置"算力公园"——以信息可视化为主题的公共景观，地面铺设LED矩阵实时展示区域算力使用热力图（脱敏数据），将技术基础设施转化为公共艺术 [depth:key_area_detail]。
+**公共空间**：沿清河设置"算力公园"——以信息可视化为主题的公共景观，地面铺设LED矩阵实时展示区域算力使用热力图（脱敏数据），将技术基础设施转化为公共艺术 [depth:three_key_area_detailed_design]。
 
 **实施策略**：近期优先启动算力中心一期和清河绿廊，中期引入国家重点实验室和国际AI机构，远期形成完整的自主技术生态集群。所有建筑规模、高度和投资为概念建议，需待控规确认 [metric:key_area_building_footprint]。
 
@@ -216,6 +218,8 @@ iteration: "v1.0"
 ---
 
 ## AI 创新生态、人才画像与 AI+ 场景
+
+本节的完整场景卡和用户画像基于 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，指标见 [metric:ai_scenario_nodes]，空间映射见 [data:geometry/public_space.geojson]。
 
 ### 五类用户画像
 
@@ -325,6 +329,8 @@ iteration: "v1.0"
 ---
 
 ## 交通、轨道、市政与公共服务设施
+
+![Mobility and Blue-Green System](assets/figures/mobility-bluegreen.png)
 
 **交通组织策略**：
 
@@ -481,6 +487,8 @@ iteration: "v1.0"
 ---
 
 ## 风险、版权与合规说明
+
+[source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [assumption:A-BOUNDARIES-001]
 
 本方案所有数据和设计判断的数据来源和合规依据见[source:PROJECT-OFFICIAL-ANNOUNCEMENT]和[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
