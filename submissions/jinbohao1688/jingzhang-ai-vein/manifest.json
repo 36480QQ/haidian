@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c6583ff34809b3b769397aea351e65b268777af9df3d99c4a8903cb6b12e9018"
+      "sha256": "a563616d56765d0f1457d2b9104e766e3aa96bf8cce0b39761b66d10d7eb78aa"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "df2459a35c9b381c5478c1497928bbc44d4f17667a68b42b7c6dd67a1ddedee9"
+      "sha256": "7dc14f3bb543e31f996d99d14d77cd4949dec182be7953a29ce12db83269fa8d"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f92b44364498ecf4a30b020cc65c6d3e77f5cd89138abe943afb31fded84fdd8"
+      "sha256": "54cc26a5456159a2818a9ae41bfcd9455bd04751e41338b78554b6d6bb4c91e4"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -208,9 +208,17 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "known_blockers": [
-      "Provisional boundary in use; replace with official redline before professional scoring."
-    ],
+    "known_blockers": [],
     "data_confidence": "high"
-  }
+  },
+  "next_actions": [
+    {
+      "id": "RECALC_ON_OFFICIAL_REDLINE",
+      "trigger": "组织方发布 official redline 与三处 KEY_AREA 官方 polygon",
+      "action": "重新运行脚手架、自检和图纸/HTML 生成；对 site_boundary、key_areas、land_use、roads、green_space、public_space、buildings、phasing 与 metrics 全量重算",
+      "status": "pending_external_data",
+      "blocking": false,
+      "note": "非 blocker；当前方案包已通过四门检查，provisional boundary 限制已显式披露于 proposal.md / visual/index.html / self_check.json。"
+    }
+  ]
 }

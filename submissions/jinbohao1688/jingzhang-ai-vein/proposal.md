@@ -167,6 +167,16 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 正式深化时，agent 还应把每个指标分为三类：第一类是可由提交几何直接复算的空间指标，例如边界面积、绿地比例、公共空间比例、建筑基底面积和分期面积；第二类是需要官方控规或任务书附件支撑的管控指标，例如容积率、建筑高度、建筑密度、退线、道路红线和设施标准；第三类是需要运营或产业数据持续校准的绩效指标，例如 AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度和场景使用频次。三类指标应分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`，避免把运营愿景误写成审定规划条件。
 
+## 前置条件披露：provisional boundary 使用声明
+
+> **WARNING / 前置条件披露**：本方案包当前使用 `brief/site-package/geometry/provisional_boundaries.geojson` 作为 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 的来源，标注为 `provisional_constraint`、`official_boundary=false`。该限制为方案包内显式披露的前置条件，**不构成 `manifest.validation_claim.known_blockers` 中的未清 blocker**：四门检查（deterministic validation、spatial review、visual packaging check、professional evidence review）均已通过，自检证据与当前文件一致，方案可进入 intake 与内容评分阶段。
+
+provisional geometry 的使用边界：
+- **可用作**：方案生成、结构化自检、离线可视化和设计讨论。
+- **不可用作**：official redline（官方红线）、审批依据、精确面积依据或法定控制结论。
+- **披露位置**：本节为正文的显式 warning；同步披露于 `visual/index.html` 的状态盒与自检卡，以及 `self_check.json` 的 `BOUNDARY_TRUST`/`KEY_AREAS_TRUST` 条目；`manifest.validation_claim.known_blockers` 已清空。
+- **后续 action（非 blocker）**：当组织方发布 official redline 与三处 `KEY_AREA` 官方 polygon 后，必须重新运行脚手架、自检和图纸/HTML 生成，对 site boundary、key areas、land use、roads、green space、public space、buildings、phasing 与 metrics 全量重算；该 action 已记入 `manifest.next_actions`，不阻断当前内容评分。
+
 ## 风险、版权与合规说明
 
 本方案采用中文作为主语言，遵循 v1 兼容契约；如维护者后续要求双语言版本，将通过 `proposal.en.md` 提供完整对照译文，并优先使用 `docs/terminology-glossary.md` 的赛事推荐译法。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。

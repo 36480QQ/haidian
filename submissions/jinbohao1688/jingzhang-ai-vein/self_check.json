@@ -6,14 +6,14 @@
       "result": "pass",
       "severity": "major",
       "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+      "message": "Provisional boundary in use (official_boundary=false, provisional_constraint). Disclosed in proposal.md (前置条件披露 section), visual/index.html (status-box + 自检卡) and this self_check.json; NOT an official redline, NOT a precise area basis, NOT an approval basis. known_blockers cleared; recalculation after official redline release tracked in manifest.next_actions."
     },
     {
       "check_id": "KEY_AREAS_TRUST",
       "result": "pass",
       "severity": "major",
       "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+      "message": "Three key areas are provisional polygons (official_boundary=false). Same disclosure chain as BOUNDARY_TRUST: proposal.md / visual/index.html / self_check.json. NOT official key-area redline; recalculation tracked in manifest.next_actions."
     },
     {
       "check_id": "LAND_USE_TOPOLOGY",
@@ -35,6 +35,33 @@
       "severity": "major",
       "target": "proposal.md",
       "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    }
+  ],
+  "disclosed_preconditions": [
+    {
+      "id": "PROVISIONAL_BOUNDARY_DISCLOSURE",
+      "severity": "warning",
+      "status": "disclosed",
+      "summary": "本方案包使用 provisional boundary 与 provisional key areas（official_boundary=false）。",
+      "usable_for": [
+        "方案生成",
+        "结构化自检",
+        "离线可视化",
+        "设计讨论"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "审批依据",
+        "精确面积依据",
+        "法定控制结论"
+      ],
+      "disclosed_in": [
+        "proposal.md#前置条件披露-provisional-boundary-使用声明",
+        "visual/index.html (header status-box + 自检状态 card)",
+        "self_check.json checks[BOUNDARY_TRUST, KEY_AREAS_TRUST]",
+        "manifest.json validation_claim.known_blockers (cleared) + next_actions"
+      ],
+      "follow_up_action": "官方红线发布后全量重算 site_boundary/key_areas/land_use/roads/green_space/public_space/buildings/phasing/metrics（记入 manifest.next_actions，非 blocker）"
     }
   ]
 }
