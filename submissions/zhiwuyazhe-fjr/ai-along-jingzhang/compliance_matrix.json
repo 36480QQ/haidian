@@ -136,7 +136,7 @@
       "metrics": ["site_area_sqm", "building_footprint_area_sqm", "phasing_total_area_sqm"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
       "visual_sections": ["更新框架", "十项行动", "三阶段实施"],
-      "source_ids": ["OFFICIAL-ANNOUNCEMENT", "MOHURD-CONTROL-DETAILED-PLANNING"],
+      "source_ids": ["OFFICIAL-ANNOUNCEMENT", "SITE-PACKAGE"],
       "assumption_ids": ["A-CONTROLS-001", "A-BOUNDARY-001"],
       "self_check_ids": ["LAND_USE_TOPOLOGY", "PROFESSIONAL_EVIDENCE"],
       "evidence_summary_zh": "以先调查和治理协议、再可撤回试点、后专业深化的顺序推进，不形成拆迁或投资承诺。"
@@ -178,7 +178,7 @@
       "metrics": ["landmark_count", "building_footprint_area_sqm"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
       "visual_sections": ["品牌识别", "遗产界面", "可撤回装置"],
-      "source_ids": ["TSINGHUA-STATION-HISTORY", "TSINGHUA-STATION-CONSERVATION", "MOHURD-URBAN-DESIGN-MEASURES"],
+      "source_ids": ["TSINGHUA-STATION-HISTORY", "TSINGHUA-STATION-CONSERVATION", "SITE-PACKAGE"],
       "assumption_ids": ["A-HERITAGE-001", "A-CONTROLS-001"],
       "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
       "evidence_summary_zh": "以材料、尺度、行走顺序和可读运行状态塑造风貌，不复制蒸汽符号，也不以数字屏幕覆盖历史界面。"
@@ -192,7 +192,7 @@
       "metrics": ["key_area_count", "key_area_geometry_total_sqm", "landmark_count"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
       "visual_sections": ["重点区比较", "项目抓手", "深化条件"],
-      "source_ids": ["OFFICIAL-ANNOUNCEMENT", "BOUNDARY-SOURCE", "KEY-AREA-SOURCE"],
+      "source_ids": ["OFFICIAL-ANNOUNCEMENT", "BOUNDARY-SOURCE"],
       "assumption_ids": ["A-BOUNDARY-001", "A-SPATIAL-MISMATCH-001", "A-CONTROLS-001"],
       "self_check_ids": ["KEY_AREAS_TRUST", "PROFESSIONAL_EVIDENCE"],
       "evidence_summary_zh": "三处重点区均给出定位、空间接口、项目抓手、运营机制、风险边界和下一步资料清单。"
