@@ -18,7 +18,7 @@ iteration: "v0.1.1"
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]，以仓库维护者登记的任务书摘录 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]、临时粗略边界 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]、标准快照与来源清单为机器可读依据。三层范围与面积（统筹研究范围约 43.6 平方公里、总体设计范围约 11.4 平方公里、重点区域范围约 368.4 公顷）、三处重点区域及设计任务 1.3/1.4/1.5 均按公告文字与官方页面引用 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。
 
-边界透明度声明：截至本稿检索日（2026-08-10），公开渠道未发布官方 polygon 级红线，本方案全部空间边界为维护者登记的临时粗略范围（provisional_rough），仅用于概念生成、展示与自检 [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。凡面积、比例、长度类指标均在 EPSG:4548 下由几何图层复算并标注 provisional 口径 [metric:site_area_sqm]；官方 polygon 到位后必须整体替换并重算，不得以本稿数值作为审批或精确面积依据。任务覆盖、标准响应与设计深度的完整机器索引见 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`，正文不重复堆叠 [depth:three_level_scope_framework]。
+边界透明度声明：截至本稿检索日（2026-08-10），公开渠道未发布官方 polygon 级红线，本方案全部空间边界为维护者登记的临时粗略范围（provisional_rough），仅用于概念生成、展示与自检 [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。凡面积、比例、长度类指标均在 EPSG:4548 下由几何图层复算并标注 provisional 口径 [metric:site_area_sqm]；官方 polygon 到位后必须整体替换并重算，不得以本稿数值作为审批或精确面积依据。现状条件研判基于公开公告、公开史料与仓库事实包完成，9 项数据缺口登记于 `assumptions.json` [depth:existing_conditions_diagnosis]。任务覆盖、标准响应与设计深度的完整机器索引见 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`，正文不重复堆叠 [depth:three_level_scope_framework]。
 
 本稿为 v0.1.1（2026-08-11）：已同步上游校验契约（persisted-self-check-v1）并完成四关自检持久化，详见 changelog.md。
 
@@ -54,7 +54,7 @@ iteration: "v0.1.1"
 
 ## 重点区域详细设计
 
-三处重点区对应三座时代站台 [data:geometry/key_areas.geojson]；因边界为临时近似，全部结论为方向性设计，待官方 polygon 后深化 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。
+三处重点区对应三座时代站台 [data:geometry/key_areas.geojson] [depth:three_key_area_detailed_design]；因边界为临时近似，全部结论为方向性设计，待官方 polygon 后深化 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。
 
 **众智园·原点站（约 192.1 公顷 [metric:zhongzhiyuan_area_sqm]）。** 定位：AI 全栈自主创新加速区，国家人工智能平台与标准治理的承载地 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。空间结构：「花园型创新街区」——围绕站台广场组织研发、中试、展示与花园绿地 [data:geometry/public_space.geojson#PS-004]；建筑更新以改造低效产业楼宇为主、新建为辅 [depth:retain_renovate_demolish]；交通上优化五环方向对外联系并预留清河站方向接驳 [data:geometry/roads.geojson#RD-TR-004]；公共空间设「原点钟」地标与全栈测试中试场 [metric:landmark_count]；AI 场景含全栈创新测试验证与 AI 治理公众听证 [data:geometry/public_space.geojson#SC-10]；实施风险：涉及跨权属更新与测试安全，需专业团队与主管部门把关。
 
@@ -68,7 +68,7 @@ iteration: "v0.1.1"
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-**五类用户画像 [metric:persona_count]。** P1 AI 研发工程师（众智园/原点社区，需求：中试设施、开源协作、通勤效率）；P2 高校师生与科研人员（学院路-原点社区，需求：近校转化、学术交流、低成本创业空间）；P3 创业团队与开发者（全带，需求：孵化加速、算力数据、场景开放）；P4 社区居民与长者（全带，需求：日常生活服务、数字包容、人工帮办 [standard:BARRIER-FREE-ENVIRONMENT-LAW]）；P5 游客与全球开发者访客（时间脊沿线，需求：文化导览、地标打卡、国际活动参与）。画像支撑场景卡与空间配置的对应关系 [depth:traffic_rail_slow_parking]。
+**五类用户画像 [metric:persona_count]。** P1 AI 研发工程师（众智园/原点社区，需求：中试设施、开源协作、通勤效率）；P2 高校师生与科研人员（学院路-原点社区，需求：近校转化、学术交流、低成本创业空间）；P3 创业团队与开发者（全带，需求：孵化加速、算力数据、场景开放）；P4 社区居民与长者（全带，需求：日常生活服务、数字包容、人工帮办 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]）；P5 游客与全球开发者访客（时间脊沿线，需求：文化导览、地标打卡、国际活动参与）。画像支撑场景卡与空间配置的对应关系 [depth:traffic_rail_slow_parking]。
 
 **十二张 AI 场景卡 [metric:scenario_card_count]**（编号 SC-01…SC-12，节点见 `geometry/public_space.geojson` [data:geometry/public_space.geojson#SC-01]）：
 
@@ -97,7 +97,7 @@ iteration: "v0.1.1"
 
 公园绿地 1401 约 109.1 公顷、道路用地 1207 约 85.4 公顷 [metric:park_area_sqm] [metric:road_area_sqm]；教育 0804 与文化 0803 用地分别约 40.4、21.3 公顷 [metric:education_area_sqm] [metric:cultural_area_sqm]。留白用地（更新潜力）约 60.4 公顷、社区服务 0702 约 13.0 公顷 [metric:reserved_area_sqm] [metric:community_service_area_sqm]。
 
-建筑基底为概念示意（棋盘式布局、70 栋 [metric:building_count]、基底约 250.5 公顷 [metric:building_footprint_area_sqm]），不含高度与层数 [depth:height_massing_character]。拆改留以原则策略表达：文保与公园资源保留、低效产业空间改造、更新潜力地块留白待定 [depth:retain_renovate_demolish]；因现状建筑与权属底数缺失（GAP-BUILDING-001、GAP-PARCEL-001），不针对具体建筑或地块下结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+建筑基底为概念示意（棋盘式布局、70 栋 [metric:building_count]、基底约 250.5 公顷 [metric:building_footprint_area_sqm]），不含高度与层数 [depth:height_massing_character]；建筑表达深度参照建筑专业深度规定，因官方文件缺失登记为数据缺口 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。拆改留以原则策略表达：文保与公园资源保留、低效产业空间改造、更新潜力地块留白待定 [depth:retain_renovate_demolish]；因现状建筑与权属底数缺失（GAP-BUILDING-001、GAP-PARCEL-001），不针对具体建筑或地块下结论 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ## 交通、轨道、市政与公共服务设施
 

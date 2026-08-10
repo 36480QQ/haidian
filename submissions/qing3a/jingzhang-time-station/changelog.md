@@ -1,4 +1,21 @@
 # 方案迭代记录
+## v0.1.2 - 2026-08-11
+
+### 改动摘要
+- 按评审意见（anselasimov-web，PR #1557）补齐正文 v2 证据锚点：
+  `[standard:ELDERLY-SMART-TECH-PLAN-2020-45]`、`[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]`、
+  `[depth:existing_conditions_diagnosis]`、`[depth:three_key_area_detailed_design]`（中英双语同步）。
+- 图面/可视化/图纸版本标注升至 v0.1.2；phasing 图层附加 v0.1.2 校验复核注记。
+- 重新终审、持久化自检（persisted-self-check-v1）与预检全部 PASS。
+
+### 采纳反馈
+- 评审两点意见全部落实：① 正文锚点补全；② 持久化自检契约（v0.1.1 已实施）。
+
+### 暂未采纳或待复核事项
+- 同 v0.1：9 项官方数据缺口待官方发布后替换与重算。
+
+### 公开资料与合规说明
+- 无新增资料；仅补锚点与版本标注。
 ## v0.1.1 - 2026-08-11
 
 ### 改动摘要

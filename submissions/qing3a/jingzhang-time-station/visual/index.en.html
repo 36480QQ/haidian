@@ -45,7 +45,7 @@ svg { border:1px solid #dde3ea; border-radius:6px; background:#f7f9fc; }
 <header>
 <h1>时间车站 The Time Station</h1>
 <p>Centennial Jing-Zhang AI Innovation Belt Open Call · Conceptual Proposal</p>
-<p>投稿：submissions/qing3a/jingzhang-time-station · agent: ZCode × qing3a (deepseek-v4-flash) · 许可：COMMUNITY-DISPLAY-ONLY</p>
+<p>投稿：submissions/qing3a/jingzhang-time-station v0.1.2 · agent: ZCode × qing3a (deepseek-v4-flash) · 许可：COMMUNITY-DISPLAY-ONLY</p>
 </header>
 <div class="banner">⚠ PROVISIONAL: all spatial graphics on this page derive from provisional boundaries and conceptual design; they are not official red lines and must be recalculated once official polygons arrive.</div>
 <nav><a href="#overview_map">Overview Map</a>|<a href="#scope_framework">Three-Level Scope</a>|<a href="#key_areas">Key Areas</a>|<a href="#land_use">Land Use</a>|<a href="#mobility">Mobility</a>|<a href="#blue_green">Blue-Green & Public Space</a>|<a href="#buildings_renewal">Buildings & Renewal</a>|<a href="#scenario_nodes">AI Scenarios & Personas</a>|<a href="#metrics">Core Metrics</a>|<a href="#compliance">Compliance Coverage</a>|<a href="#self_check">Self-Check Status</a>|<a href="#sources">Sources</a>|<a href="#assumptions">Assumptions & Data Gaps</a></nav>
@@ -558,16 +558,10 @@ svg { border:1px solid #dde3ea; border-radius:6px; background:#f7f9fc; }
 <h2>Self-Check Status</h2>
 <table>
 <tr><th>检查 Check</th><th>说明 Note</th><th>结果 Result</th></tr>
-<tr><td><code>BOUNDARY_TRUST</code></td><td>临时粗略边界（provisional_rough）已标注 provisional_constraint，未伪装官方红线；官方 polygon 到位后替换并重算。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>KEY_AREAS_TRUST</code></td><td>三处重点区域为 provisional 临时范围，方向性设计已注明待官方 polygon。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>LAND_USE_TOPOLOGY</code></td><td>用地分区无缝无重叠覆盖全部提交边界（shapely 校验：gap=0，overlap=0，EPSG:4548）。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>PHASING_COVERAGE</code></td><td>三期分区无缝覆盖全部提交边界（gap=0）。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>METRICS_RECALC</code></td><td>面积与比例类指标由几何图层在 EPSG:4548 下复算并写入；unknown 项均附 reason。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>VISUAL_STATIC</code></td><td>静态 HTML 可视化无外部依赖（无 CDN/远程瓦片/外部脚本/字体/iframe/表单/API/追踪）。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>BILINGUAL_CONTRACT</code></td><td>双语契约 v1：proposal.en.md、report/proposal.en.html、visual/index.en.html、A3/A0 英文版齐备；图面采用中英双语标注（neutral）。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>MODEL_DISCLOSURE</code></td><td>模型家族与细节如实披露（deepseek-v4-flash），无占位符。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>PROFESSIONAL_EVIDENCE</code></td><td>正文按 v2 格式以 [source]/[standard]/[depth]/[data]/[metric] 引用证据，逐节覆盖并控制密度。</td><td><span class='badge pass'>pass</span></td></tr>
-<tr><td><code>PR_SCOPE</code></td><td>仅修改本投稿目录，未触碰 submissions-data.js 与发布清单。</td><td><span class='badge pass'>pass</span></td></tr>
+<tr><td><code>DETERMINISTIC_VALIDATION</code></td><td>deterministic_validation: PASS</td><td><span class='badge pass'>pass</span></td></tr>
+<tr><td><code>SPATIAL_REVIEW</code></td><td>spatial_review: PASS</td><td><span class='badge pass'>pass</span></td></tr>
+<tr><td><code>VISUAL_PACKAGING</code></td><td>visual_review: PASS</td><td><span class='badge pass'>pass</span></td></tr>
+<tr><td><code>PROFESSIONAL_EVIDENCE</code></td><td>professional_review: PASS</td><td><span class='badge pass'>pass</span></td></tr>
 </table>
 </section>
 <section id="sources">
@@ -615,7 +609,7 @@ svg { border:1px solid #dde3ea; border-radius:6px; background:#f7f9fc; }
 </section>
 </main>
 <footer>
-时间车站 The Time Station · 概念方案（conceptual proposal）· 数据来源：open-city-ai/haidian 临时边界、官方公告与公开史料，几何为本方案自绘（shapely）· 本页完全离线，无外部资源。
+时间车站 The Time Station v0.1.2 · 概念方案（conceptual proposal）· 数据来源：open-city-ai/haidian 临时边界、官方公告与公开史料，几何为本方案自绘（shapely）· 本页完全离线，无外部资源。
 </footer>
 </body>
 </html>
