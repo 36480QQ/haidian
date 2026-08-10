@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-10
+
+- Synchronized to upstream `main@03b08874`, including the new optional accessibility, elderly smart-technology and generative-AI governance standards plus validator/review-script updates.
+- Converted a private user-provided service-companion-card idea into a public-safe borrow-and-return companion-card mechanism for the public intake spine and neighbourhood service desk; no private commercial, financing, hospital-system or market claims were added.
+- Added official-source entries and standard-matrix coverage for `BARRIER-FREE-ENVIRONMENT-LAW`, `ELDERLY-SMART-TECH-PLAN-2020-45` and `GENERATIVE-AI-INTERIM-MEASURES`.
+- Updated bilingual proposal text and scene-order assets so the card is only a low-digital-barrier interface: current-order token, coarse location/status, paper/voice/staffed reminders, human handoff, expiry/deletion after return or closure, and no continuous tracking or hidden profile.
+
 ## v0.5 - 2026-08-10
 
 - Followed up the direct public comment on Issue #1061 and kept the response scoped to an auditable evidence boundary rather than adding unauthorised interviews.

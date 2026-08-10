@@ -43,7 +43,7 @@ One common `Scene Order` links all three levels. The coordinated level defines w
 
 The spatial structure is **one spine, three stations, two wings and a hundred orders**:
 
-- One spine: the Jing-Zhang public intake spine. Along the heritage-park direction and related public space, it supports walk-through reviews, paper/telephone/in-person access, visible status and closure display. It is a conceptual service relationship, not a new road redline. [source:JINGZHANG-PARK-COCREATION] [data:geometry/roads.geojson#ROAD-001]
+- One spine: the Jing-Zhang public intake spine. Along the heritage-park direction and related public space, it supports walk-through reviews, paper/telephone/in-person access, borrow-and-return companion cards, visible status and closure display. It is a conceptual service relationship, not a new road redline. [source:JINGZHANG-PARK-COCREATION] [standard:ELDERLY-SMART-TECH-PLAN-2020-45] [data:geometry/roads.geojson#ROAD-001]
 - Three stations: AI Origin frames, Zhongzhiyuan answers, and Dazhongsi closes. “Station” describes an operating role and does not assert that the current rough polygons are transit-station anchors.
 - Two wings: Xiaoyue River is the problem-finding wing for neighbourhood, campus, park, mobility and public-service needs; Zhongguancun is the follow-on wing for legal, IP, standards, procurement, finance, talent and international services.
 - A hundred orders: a dynamic annual scene catalogue, not a promise to install 100 devices. Every order records location confidence, problem owner, assigned owner, first-response commitment, next action and closure reason.
@@ -97,7 +97,7 @@ The building layer shows nine **reversible interface prototypes**: intake kiosk,
 
 ### Mobility and public service
 
-One public intake spine and six east-west service seams express walking review, staffed service and problem movement; they are not engineering alignments. Priority actions are to identify existing route breaks, provide equal digital/telephone/paper/in-person access, retain fixed high-contrast guidance near crossings and transit, and let disabled users obtain human confirmation. Bridges, tunnels, right-of-way, parking, Transit-Station Integration and utilities require official road, traffic, pipeline, fire and passenger-flow evidence before professional design. [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [data:geometry/roads.geojson#ROAD-002]
+One public intake spine and six east-west service seams express walking review, staffed service and problem movement; they are not engineering alignments. Priority actions are to identify existing route breaks, provide equal digital/telephone/paper/in-person access, retain fixed high-contrast guidance near crossings and transit, and let disabled users obtain human confirmation. For people who cannot or do not want to use smartphones, public-service points may test a borrow-and-return companion card: it holds only the current order token, coarse location and next-step status, supports large text, voice, paper receipt or staffed-window reminders, and expires with identifiable data deleted after closure or return; it is not continuous tracking, commercial recommendation or cross-service profiling. [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45] Bridges, tunnels, right-of-way, parking, Transit-Station Integration and utilities require official road, traffic, pipeline, fire and passenger-flow evidence before professional design. [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [data:geometry/roads.geojson#ROAD-002]
 
 ### Blue-Green Space and Urban Character
 
@@ -158,11 +158,11 @@ The response to public Issue [#1061](https://github.com/open-city-ai/haidian/iss
 | SC-03 | Multilingual talent-service referral｜AI Origin | Human consultation and printed guide | Translation, routing and checklist | Human desk confirms; no automated high-risk advice; multilingual human route remains |
 | SC-04 | Research-to-scene framing clinic｜AI Origin | Supervisor, transfer and venture advice | Draft a bounded, testable order | Case manager signs IP, ethics, data and next step; refer if no owner |
 | SC-05 | First-city-user day for open source｜AI Origin | Demo day/hackathon | Match public problem with open-source capability | Problem owner decides test/referral/rejection; contribution and refusal are equally recorded |
-| SC-06 | Neighbourhood service intake table｜Xiaoyue River wing | 12345, community, property desk | Aggregate public entries and remind status only | Community/service owner assigns; no commercial recommendation or hidden resident profile |
+| SC-06 | Neighbourhood service intake table｜Xiaoyue River wing | 12345, community desk, property desk and borrow-and-return companion card | Aggregate public entries, remind next-step status and transfer to staffed windows only | Community/service owner assigns; no commercial recommendation, continuous tracking or hidden resident profile |
 | SC-07 ★ | Reproducible model-service validation｜Zhongzhiyuan | Human test and report | Run approved fixtures and compare versions | Test owner signs limitations; stop on irreproducibility or authority breach; no safety certificate |
 | SC-08 ★ | Embodied-AI takeover drill｜Zhongzhiyuan | Human operation in controlled area | Low-speed task, stop, yield and event log | Safety officer may stop at once; no public-road entry before passing; device is removable |
 | SC-09 ★ | Edge-AI offline-continuity test｜Zhongzhiyuan | Paper SOP/staffed service | Test outage, cache, recovery and minimum data | Operator completes recovery drill; no pilot if fallback fails |
-| SC-10 | AI health/education/legal boundary desk｜Origin/community | Qualified professional and official channel | Explain scope, prepare materials and refer | Professionals make diagnosis, admission and legal decisions; remove any automated decision flow |
+| SC-10 | AI health/education/legal boundary desk｜Origin/community | Qualified professional and official channel | Explain scope, prepare materials and refer; companion cards only remind window arrival and required materials | Professionals make diagnosis, admission and legal decisions; remove any automated decision flow or substitute for legal/professional procedure |
 | SC-11 | Traceable Jing-Zhang heritage guide｜public spine | Fixed labels and human guide | Multilingual help, source links and accessible version | Heritage/accessibility review; withdraw disputed content, retain verified physical information |
 | SC-12 | “Why it did not proceed” closure exhibition｜Dazhongsi | Internal review | Summarise redacted closure and reuse conditions | Problem owner and operator sign; do not expose people or confidential business data |
 
@@ -173,9 +173,9 @@ The response to public Issue [#1061](https://github.com/open-city-ai/haidian/iss
 - Agent: draft a scene order, suggest candidate matches and summarise review; never accept, approve, procure or close a real case.
 - Workflow: run stable repeated completeness checks, reminders, version comparisons, overdue recovery and closure archiving.
 - Codex: maintain the auditable structured package, rules, geometry, metrics, bilingual artifacts and checks.
-- Human: own the problem, professional judgment, site safety, adoption/rejection, appeal and exit.
+- Human: own the problem, professional judgment, site safety, adoption/rejection, appeal, complaint/reporting and exit.
 
-The manual process must work first. Only high-frequency, stable and bounded steps are automated. Automation cannot repair a process that has no owner. [assumption:A-GOVERNANCE-001]
+The manual process must work first. Only high-frequency, stable and bounded steps are automated. If a public-facing generative-AI service is used, it only goes online after scope, complaint/reporting entry, handling process, feedback timeline and content-handling boundary are clear. Automation cannot repair a process that has no owner. [standard:GENERATIVE-AI-INTERIM-MEASURES] [assumption:A-GOVERNANCE-001]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -251,7 +251,7 @@ Metrics are separated into three classes so design coverage cannot be misread as
 
 1. **Boundary and location.** Core geometry preserves or derives within the repository provisional extent. Key areas are not official polygons; Dazhongsi anchoring is specifically unresolved. Official data triggers a full rebuild, not a figure-only edit. [assumption:A-BOUNDARY-001] [assumption:A-KEY-AREA-001]
 2. **Planning and engineering.** The proposal claims no government approval, adopted Regulatory Detailed Planning, ownership, construction quantum, finance, delivery entity or engineering feasibility. Spatial actions are Conceptual Recommendations for planning, architecture, landscape, transport, utilities, heritage, fire and operations teams to deepen. [depth:risk_missing_data]
-3. **AI and data.** AI does not accept, approve, procure, diagnose or automatically close high-risk cases. It defaults to minimum and aggregated data, explainability, human transfer, appeal and deletion. Real personal data, public-service tests and field trials require separate authority and impact assessment. [assumption:A-PRIVACY-001]
+3. **AI and data.** AI does not accept, approve, procure, diagnose or automatically close high-risk cases. It defaults to minimum and aggregated data, explainability, human transfer, appeal, complaint/reporting and deletion. Real personal data, public-service tests, public-facing generative-AI services and field trials require separate authority, scope disclosure and impact assessment. [standard:GENERATIVE-AI-INTERIM-MEASURES] [assumption:A-PRIVACY-001]
 4. **Operations.** No real owner, budget, staffing, field authorization or performance exists. Phases are proposals and performance remains unknown. [assumption:A-OPERATIONS-001]
 5. **Rights.** Text, icons, figures, PDFs and offline HTML are original to this package; public facts and cases are registered. Any future OSM context layer must retain ODbL attribution and remain existing-condition context only. [assumption:A-RIGHTS-001]
 6. **Bilingual and offline.** Chinese is primary and this file is its complete English companion. HTML, A3/A0 and all text-bearing figures receive English counterparts. No remote scripts, fonts, map tiles, iframe, form or analytics are loaded.
