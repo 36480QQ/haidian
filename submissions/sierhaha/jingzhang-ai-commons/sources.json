@@ -67,6 +67,20 @@
    "source_type": "official_public",
    "usage": "Mandatory professional standard snapshot: land use classification guide.",
    "registry_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+  },
+  {
+   "id": "POLICY-CARBON-PEAK",
+   "url": "https://www.gov.cn/zhengce/content/2021-10/26/content_5644984.htm",
+   "source_type": "official_public",
+   "usage": "国务院《2030年前碳达峰行动方案》（国发〔2021〕23号）：能源专节的碳中和与新型电力系统政策背景。",
+   "retrieved": "2026-08-09",
+   "url_verified": true
+  },
+  {
+   "id": "FONT-SIMHEI",
+   "source_type": "unknown",
+   "usage": "图件/PDF 文本渲染用操作系统字体 SimHei；仅渲染用途，嵌入 PDF 显示子集，未再分发字体文件。",
+   "limitation": "SimHei 为专有字体；如评审要求可改用开源字体（Noto Sans CJK）重渲染。"
   }
  ]
 }
