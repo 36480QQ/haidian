@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "4898188df2fb46b0ee71f60fbca9e546ad4f5348b0d7efcbb2a65389491b7ace"
+      "sha256": "b1ffba27231e3f08e3f1c08936ab917770be9efc23c7755a5fd7de455baf7df2"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "486b1b1c4985277b43417c08ab010a60cf7f1b299559e00ee9c7b42ae689e530"
+      "sha256": "6ed296f0b64e69f3d8a3ab027948876ba302a65a2c85fe9b43120425246eb477"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dfd847204576d293d0462f5abd8703263baae0cf6ee7eab4f4dedfd4438eaaac"
+      "sha256": "19fc5fd072e56567b4d7243d836c4dbb2a255cb8c0f7baa16e7af4526929d1b3"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7047111c9b417bf7c877dbfe084b154461ac414e7b5565d48c5bf9164ab9c99f"
+      "sha256": "3f70127e62f0de61e0ef4ffc58df49249a7cdd0e8b2b7320012e3f7d7df131b9"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "53e3c95850165a72de6bdac5fcd7b1b8350a57501fcbb91f69952ed621b97d6a"
+      "sha256": "3628744ef9198f526007eb010c46304137dbbbeca8b36f1a70c29b0c7e341797"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "08dd21c0bcfc85bc80a79b56ada725f22b3f92745ee25d3846dfc675caa4441b"
+      "sha256": "2fb95ea20e595d948bb9191bada699fd79ef3d41bddaad5f5972654ac03f667e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5a3728d5e0f878a1f8d02ffec8bb8cc3bccd290046ac42b085236a0860c3b1ee"
+      "sha256": "02ff1cdda08ee5bcc11be7d1ff2e3ec577d2bdadf865d15a3a48e1c65bf6dc1a"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -419,7 +419,7 @@
       "path": "visual/assets/mobility-pilot-readiness.json",
       "role": "data",
       "required": true,
-      "sha256": "74d057a0abd2ccff23165db789e7cf444407499f4253e34d5aea5e364fbd9a10"
+      "sha256": "896139d93ae7bc1fc747ef67d8b8692c51d87469eb85dd81de98da7d3c540fbc"
     },
     {
       "path": "visual/assets/mobility-pilot-readiness-evidence.json",
@@ -437,7 +437,7 @@
       "path": "visual/assets/m09-curb-spatial-prototype.json",
       "role": "data",
       "required": true,
-      "sha256": "707a80ff63190b6dc03160131b8dcbf14c9ad9bc5ccdf5cb45656f06ad565d2e"
+      "sha256": "eef8f2627ed2ff63388e5afda81c8fde35c284ce6003c5ec432badae3b5ea0bb"
     },
     {
       "path": "assets/figures/simulation-pareto.png",
@@ -809,13 +809,13 @@
       "path": "visual/assets/claim-audit.json",
       "role": "data",
       "required": true,
-      "sha256": "15714522286f6b912467ac22df1d186360990c1a945ef9d65a0ec2b6d02787eb"
+      "sha256": "d3bddf872549b90e2e18f125aa9249af508692d0d86b97918565653946718664"
     },
     {
       "path": "visual/assets/run-claim-audit.js",
       "role": "script",
       "required": true,
-      "sha256": "4e0f6eb5a1c9c0a30d80a3207226b60aa73f6aa19b5d5f6a60b656881ec56269"
+      "sha256": "f3c7088cb64f5f86db16c6da2f671183b11f2873c0b3889ad15bdbc713502bbe"
     },
     {
       "path": "assets/figures/mobility-spatial-plan.svg",
