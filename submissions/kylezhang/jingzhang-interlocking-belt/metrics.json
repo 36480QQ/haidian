@@ -13,7 +13,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "Provisional site boundary from provisional_boundaries.geojson (PROV-SITE-001); official boundary pending."
       ]
@@ -79,7 +79,7 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": []
     },
     "land_use_cover_ratio": {
@@ -91,7 +91,7 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "land_use_union_area / site_area_sqm",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
         "Land-use polygons fully cover the submitted site boundary (topology-safe partition)."
       ]

@@ -19,7 +19,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 资料使用边界以 `data/source_registry.json` 为准 [source:SOURCE-REGISTRY]：formal 可用资料 7 条、背景资料 1 条、provisional-only 资料 1 条；agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。`data/processed/agent_fact_pack.md` 是阅读导航层，不是新权威来源 [source:PROCESSED-FACT-PACK]。
 
-组织方尚未发布 official `SITE_BOUNDARY` 与三处 `KEY_AREA` 多边形，本包暂用 `provisional_boundaries.geojson` 生成临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。提交包中 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只用于方案生成、自检、可视化与设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论；official polygons 发布后，边界、用地、建筑、道路、绿地、公共空间、分期与指标均需重算。该组织方数据缺口不阻断内容评分。
+组织方尚未发布 official `SITE_BOUNDARY` 与三处 `KEY_AREA` 多边形，本包暂用 `provisional_boundaries.geojson` 生成临时边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。提交包中 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，只用于方案生成、自检、可视化与设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论；official polygons 发布后，边界、用地、建筑、道路、绿地、公共空间、分期与指标均需重算。临时边界仅用于方案生成、展示与概念审查；official polygon 发布后，本包将整包复算。资格、评分与接受条件由维护者/评审按正式规则判断。
 
 本方案总体概念为**「京张联锁带 · THE INTERLOCKING BELT」**：把 1909 年京张铁路的**联锁（Interlocking）**安全机制——道岔与信号互锁、冲突组合即阻断、闭塞区间保持安全间隔、调度中心统一指挥——转译为 AI 城市的**开放治理协议**：数据接入有道岔、场景状态有信号、冲突检测有联锁表、公共数据与个人数据有闭塞间隔、一切异常由人类调度复核。这一概念同时回应三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）与五大功能（AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权），使"安全"从铁路工程遗产变成 AI 城市治理的公共产品 [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
