@@ -123,7 +123,7 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <div class="metric"><span>公共空间占比</span><strong data-metric="public_space_ratio" data-value="0.06144">0.06144</strong><em>public_space_ratio</em></div>
 </div>
 <div class="card warn" style="margin-top:14px"><h3>自检状态 / Self-check state</h3>
-<p class="mini">自检共 21 项，阻塞级失败 0 项；两项结论为 unknown，分别是约束几何数据缺口与官方数据发布后的整体重算承诺。</p></div>
+<p class="mini">自检共 25 项，阻塞级失败 0 项，按 formal-review-ready 门槛（无 fail 且 blocking 的自检项）本包可进入正式评审；两项结论为 unknown，分别是约束几何数据缺口与官方数据发布后的整体重算承诺。包级数据置信度按下限口径申报为 medium。</p></div>
 </aside></div></section>
 <section class="sheet">
 <div class="sheet-head"><div><h2>三层范围 / Three-level scope framework</h2><p class="desc">三层范围逐层收紧：统筹研究范围回答产业与未来城市形态，总体设计范围做控规深度城市设计，重点区域做详细设计。每层的可做与不可做都写明。</p></div><span class="tag">project_scope_summary</span></div>
@@ -354,13 +354,17 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <span class="chip">risk_missing_data · complete</span>
 </div></div></div></section>
 <section class="sheet">
-<div class="sheet-head"><div><h2>自检状态 / Self-check state</h2><p class="desc">自检共 21 项，阻塞级失败 0 项。两项结论为 unknown 而非 pass：约束几何数据缺口，以及官方数据发布后的整体重算承诺。把它们写成 unknown 比写成 pass 更有价值，因为它们标出了这份提交真正的边界。</p></div><span class="tag">self_check.json</span></div>
+<div class="sheet-head"><div><h2>自检状态 / Self-check state</h2><p class="desc">formal-review-ready 的门槛是：阶段为 formal、参赛者可控的四项复核无 error、且没有 result 为 fail 且 severity 为 blocking 的自检项。自检共 25 项，阻塞级失败 0 项，按此门槛本包状态为 formal-review-ready。两项结论仍为 unknown 而非 pass：约束几何数据缺口，以及官方数据发布后的整体重算承诺。unknown 不等于 fail，它表示所依赖的外部条件尚未公布因而无法核验；把它们写成 unknown 比写成 pass 更有价值，因为它们标出了这份提交真正的边界。</p></div><span class="tag">self_check.json</span></div>
 <div class="body"><table><thead><tr>
 <th>自检编号 / Check</th>
 <th>结论 / Result</th>
 <th>等级 / Severity</th>
 <th>对象 / Target</th>
 </tr></thead><tbody>
+<tr><td><span class="chip">SELF_CHECK_POLICY</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">self_check.json</td></tr>
+<tr><td><span class="chip">FORMAL_READINESS_THRESHOLD</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">manifest.json</td></tr>
+<tr><td><span class="chip">DATA_CONFIDENCE_ALIGNMENT</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">manifest.json</td></tr>
+<tr><td><span class="chip">METRIC_CRS_PROTOCOL</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">metrics.json</td></tr>
 <tr><td><span class="chip">BOUNDARY_TRUST</span></td><td>pass</td><td><span class="chip sev-major">major</span></td><td class="mini">geometry/site_boundary.geojson</td></tr>
 <tr><td><span class="chip">KEY_AREAS_TRUST</span></td><td>pass</td><td><span class="chip sev-major">major</span></td><td class="mini">geometry/key_areas.geojson</td></tr>
 <tr><td><span class="chip">LAND_USE_TOPOLOGY</span></td><td>pass</td><td><span class="chip sev-blocking">blocking</span></td><td class="mini">geometry/land_use.geojson</td></tr>
@@ -386,6 +390,7 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <div class="grid4" style="padding:14px 0 0">
 <div class="metric"><span>阻塞级失败项</span><strong data-metric="self_check_blocking_failures" data-value="0">0</strong><em>self_check_blocking_failures</em></div>
 <div class="metric"><span>自检等级分布</span><strong>9</strong><em>blocking</em></div>
+<div class="metric"><span>自检等级分布</span><strong>4</strong><em>info</em></div>
 <div class="metric"><span>自检等级分布</span><strong>11</strong><em>major</em></div>
 <div class="metric"><span>自检等级分布</span><strong>1</strong><em>minor</em></div>
 </div></div></section>

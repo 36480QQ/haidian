@@ -123,7 +123,7 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <div class="metric"><span>Public space share</span><strong data-metric="public_space_ratio" data-value="0.06144">0.06144</strong><em>public_space_ratio</em></div>
 </div>
 <div class="card warn" style="margin-top:14px"><h3>Self-check state / 自检状态</h3>
-<p class="mini">21 self-checks, zero blocking failures; two conclude unknown — the constraints geometry gap and the commitment to full recomputation once official data arrives.</p></div>
+<p class="mini">25 self-checks, zero blocking failures, so the package meets the formal-review-ready threshold (no fail at blocking severity); two conclude unknown — the constraints geometry gap and the commitment to full recomputation once official data arrives. Package-level data confidence is declared at its floor, medium.</p></div>
 </aside></div></section>
 <section class="sheet">
 <div class="sheet-head"><div><h2>Three-level scope framework / 三层范围</h2><p class="desc">The three levels narrow step by step: the coordinated research area answers industry and future urban form, the overall design area carries regulatory-plan-level urban design, and the key areas carry detailed design. What each level can and cannot conclude is stated.</p></div><span class="tag">project_scope_summary</span></div>
@@ -354,13 +354,17 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <span class="chip">risk_missing_data · complete</span>
 </div></div></div></section>
 <section class="sheet">
-<div class="sheet-head"><div><h2>Self-check state / 自检状态</h2><p class="desc">There are 21 self-checks with zero blocking failures. Two conclude unknown rather than pass: the constraints geometry gap, and the commitment to full recomputation once official data is released. Writing them as unknown is more valuable than writing them as pass, because they mark where the real boundary of this submission lies.</p></div><span class="tag">self_check.json</span></div>
+<div class="sheet-head"><div><h2>Self-check state / 自检状态</h2><p class="desc">The formal-review-ready threshold is: stage formal, no errors in the four participant-controlled reviews, and no self-check with result fail at blocking severity. There are 25 self-checks with zero blocking failures, so the package is formal-review-ready under that threshold. Two still conclude unknown rather than pass: the constraints geometry gap, and the commitment to full recomputation once official data is released. unknown is not fail — it means the external condition depended on has not been published and cannot be verified; writing them as unknown is more valuable than writing them as pass, because they mark where the real boundary of this submission lies.</p></div><span class="tag">self_check.json</span></div>
 <div class="body"><table><thead><tr>
 <th>Check / 自检编号</th>
 <th>Result / 结论</th>
 <th>Severity / 等级</th>
 <th>Target / 对象</th>
 </tr></thead><tbody>
+<tr><td><span class="chip">SELF_CHECK_POLICY</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">self_check.json</td></tr>
+<tr><td><span class="chip">FORMAL_READINESS_THRESHOLD</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">manifest.json</td></tr>
+<tr><td><span class="chip">DATA_CONFIDENCE_ALIGNMENT</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">manifest.json</td></tr>
+<tr><td><span class="chip">METRIC_CRS_PROTOCOL</span></td><td>pass</td><td><span class="chip sev-info">info</span></td><td class="mini">metrics.json</td></tr>
 <tr><td><span class="chip">BOUNDARY_TRUST</span></td><td>pass</td><td><span class="chip sev-major">major</span></td><td class="mini">geometry/site_boundary.geojson</td></tr>
 <tr><td><span class="chip">KEY_AREAS_TRUST</span></td><td>pass</td><td><span class="chip sev-major">major</span></td><td class="mini">geometry/key_areas.geojson</td></tr>
 <tr><td><span class="chip">LAND_USE_TOPOLOGY</span></td><td>pass</td><td><span class="chip sev-blocking">blocking</span></td><td class="mini">geometry/land_use.geojson</td></tr>
@@ -386,6 +390,7 @@ h1{font-size:26px}.legend{grid-template-columns:1fr 1fr}}
 <div class="grid4" style="padding:14px 0 0">
 <div class="metric"><span>Blocking failures</span><strong data-metric="self_check_blocking_failures" data-value="0">0</strong><em>self_check_blocking_failures</em></div>
 <div class="metric"><span>Severity distribution</span><strong>9</strong><em>blocking</em></div>
+<div class="metric"><span>Severity distribution</span><strong>4</strong><em>info</em></div>
 <div class="metric"><span>Severity distribution</span><strong>11</strong><em>major</em></div>
 <div class="metric"><span>Severity distribution</span><strong>1</strong><em>minor</em></div>
 </div></div></section>

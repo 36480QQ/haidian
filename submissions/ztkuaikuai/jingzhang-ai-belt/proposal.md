@@ -240,7 +240,9 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 合规声明有四条，逐条对应可核验的事实。其一，本方案未声称获得政府批准、审定控规、最终权属或任何实施承诺，全部空间建议表述为概念建议、参考方案、可供专业团队深化研究。其二，提交遵循双语要求：中文为主文件，proposal.en.md 提供完整英文对照，报告 HTML、电子展示、A3 文册、A0 展板与含文字图件均提供英文副本，并在 manifest 中声明语言与对照关系。其三，电子展示页面完全离线，无远程脚本、远程瓦片、远程字体、iframe、表单与外部接口调用，不跟踪评审者行为。其四，全部 AI 场景遵循数据最小化，不采集个人轨迹、不输出个人画像、不将居民数据用于商业推荐，涉及医疗、社会保障、金融与生活缴费事项的场景保留现场指导与人工办理通道 [source:BARRIER-FREE-ENVIRONMENT-LAW]。
 
-自检记录共 21 项，其中 blocking 级失败为 0 项 [metric:self_check_blocking_failures]。两项自检结论为 unknown 而非 pass：约束几何数据缺口，以及官方数据发布后的整体重算承诺——后者只有在取得官方 polygon 并完成重算后才能转为 pass [depth:risk_missing_data]。本方案认为把这两项写成 unknown 比写成 pass 更有价值，因为它们标出了这份提交真正的边界所在。
+自检记录共 25 项，其中 blocking 级失败为 0 项 [metric:self_check_blocking_failures]。这里先把 formal-review-ready 的门槛写清楚：门槛是 submission_stage 为 formal，参赛者可控的四项复核（确定性校验、空间复核、视觉打包、专业证据链）均无 error，且不存在 result 为 fail 且 severity 为 blocking 的自检项；unknown 不等于 fail，unknown 表示结论所依赖的外部条件尚未公布因而无法核验，fail 表示已核验且不合格。按这一门槛，本包的状态是 formal-review-ready，同时仍有两项自检结论为 unknown 而非 pass：约束几何数据缺口，以及官方数据发布后的整体重算承诺——后者只有在取得官方 polygon 并完成重算后才能转为 pass [depth:risk_missing_data]。本方案认为把这两项写成 unknown 比写成 pass 更有价值，因为它们标出了这份提交真正的边界所在，因此不会为了呈现"全项 pass"而改写结论。
+
+与此对应，包级数据置信度按下限口径申报：manifest 的 validation_claim.data_confidence 为 medium，而不是 high，因为 57 项指标中 31 项为 medium、6 项为 low、10 项为 unknown，且 site_area_sqm、green_ratio、public_space_ratio 等 8 项 known 指标明示依赖临时粗略边界这一假设 [metric:site_area_sqm]。字段级置信度仍以 metrics.json 每项的 confidence 为准，其中 10 项 high 均为不依赖临时边界的计数与公告口径值。validation_claim.self_checked 为 true，对应上述四项复核已实际运行并全部通过，而不是一句未经运行的声明。
 
 ## 参考资料
 
