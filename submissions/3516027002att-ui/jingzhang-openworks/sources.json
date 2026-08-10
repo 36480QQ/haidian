@@ -1,0 +1,263 @@
+{
+  "schema_version": "0.1.0",
+  "registry_reference": "data/source_registry.json",
+  "registry_updated_date": "2026-06-07",
+  "source_use_policy_zh": "本方案严格遵守 data/source_registry.json 的可用性分级：usable_for_formal=yes 的资料可支撑 formal 任务响应，但不能支撑空间控制结论；provisional_only 的资料只能支撑临时生成、可视化与入口自检；needs_official_file 的资料只作缺口披露。本方案不把背景资料或临时资料升级为法定依据。",
+  "formal_ready_count": 5,
+  "provisional_only_count": 1,
+  "pending_official_file_count": 1,
+  "sources": [
+    {
+      "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "source_kind": "official_announcement",
+      "source_type": "official_public",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "published_date": "2026-05-09",
+      "accessed_date": "2026-06-03",
+      "authority_level": "A0",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public announcement snapshot retained for reference and citation.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [
+        "brief/site-package/standards/references/project-official-announcement.md",
+        "brief/site-package/design_brief.json",
+        "data/processed/agent_fact_pack.md",
+        "data/processed/project_scope_summary.csv",
+        "data/processed/agent_task_requirements.csv",
+        "data/processed/source_use_matrix.csv",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "allowed_uses": [
+        "official project name, organizers, scope descriptions, area values, design tasks, submission depth"
+      ],
+      "prohibited_uses": [
+        "precise official polygon boundary",
+        "road redline",
+        "statutory planning control",
+        "confirmed implementation commitment beyond the announcement text"
+      ],
+      "usage_zh": "本方案第一依据。用于三层范围与面积口径、三处重点区角色定位、公告1.3征集目的、1.4项目规模、1.5设计任务，以及「控制性详细规划的城市设计深度」与「规划综合实施方案的城市设计深度」两项深度要求。",
+      "limit_zh": "公告的文字四至与面积值不能替代官方 GIS/CAD polygon；不得据此推定道路红线、控规指标或实施承诺。",
+      "used_in_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计",
+        "重点区域详细设计"
+      ],
+      "registry_notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+    },
+    {
+      "id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "title": "面向全球智能体开展“百年京张AI创新带城市设计开源征集”的任务书摘录",
+      "publisher": "User-provided cleared document",
+      "source_kind": "cleared_user_document",
+      "source_type": "user_provided_cleared",
+      "url": "brief/site-package/agent_taskbook.json",
+      "published_date": "2026-05-18",
+      "accessed_date": "2026-06-05",
+      "authority_level": "CLEARED_USER_DOCUMENT",
+      "public_access_status": "cleared_for_repo",
+      "license_summary": "User provided this document for repository use and public agent-facing task alignment.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [
+        "brief/site-package/agent_taskbook.json",
+        "brief/site-package/standards/references/agent-open-call-taskbook-0518.md",
+        "data/processed/agent_fact_pack.md",
+        "data/processed/agent_task_requirements.csv",
+        "data/processed/source_use_matrix.csv",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "allowed_uses": [
+        "AI agent task coverage",
+        "scenario card requirements",
+        "branding and operation requirements",
+        "public compliance language"
+      ],
+      "prohibited_uses": [
+        "official redline",
+        "statutory planning control",
+        "engineering feasibility conclusion",
+        "government approval or implementation commitment"
+      ],
+      "usage_zh": "用于 agent.1–agent.6 六项必答任务的响应依据，含三大定位、五大功能、三区两翼、场景卡与人才画像数量要求、朝圣地标与荣誉展示要求、文化叙事与长期运营要求，以及统一边界条款。",
+      "limit_zh": "属用户提供的清权摘录，不是官方空间红线或控规条件；其任务要求不得被表述为法定规划义务。",
+      "used_in_sections": [
+        "设计依据与资料清单",
+        "统筹研究范围产业与未来城市研究",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "registry_notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。"
+    },
+    {
+      "id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+      "title": "城市设计管理办法",
+      "publisher": "中华人民共和国住房和城乡建设部",
+      "source_kind": "official_standard",
+      "source_type": "official_public",
+      "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2023/art_17339_775476.html",
+      "published_date": "2017-03-14",
+      "accessed_date": "2026-06-03",
+      "authority_level": "A0",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public standard/policy page snapshot retained for reference and citation.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [
+        "brief/site-package/standards/references/mohurd-urban-design-measures.md"
+      ],
+      "allowed_uses": [
+        "urban design purpose and scope",
+        "public space and city character requirements",
+        "building height, volume, style, color, skyline and interface control references"
+      ],
+      "prohibited_uses": [
+        "project-specific planning approval",
+        "site-specific quantitative control without official attachments"
+      ],
+      "usage_zh": "用于公共空间、城市风貌、建筑布局与界面统筹的标准依据，支撑蓝绿公共空间与风貌引导章节的判断口径。",
+      "limit_zh": "不得据此给出本项目地块级定量控制结论；缺官方附件时相关控制条件仍为待确认。",
+      "used_in_sections": [
+        "蓝绿空间、公共空间与城市风貌",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "registry_notes_zh": "可作为专业标准响应依据。"
+    },
+    {
+      "id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+      "title": "城市、镇控制性详细规划编制审批办法",
+      "publisher": "中华人民共和国住房和城乡建设部",
+      "source_kind": "official_standard",
+      "source_type": "official_public",
+      "url": "https://www.gov.cn/zhengce/2022-01/25/content_5711967.htm",
+      "published_date": null,
+      "accessed_date": "2026-06-03",
+      "authority_level": "A0",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public government page snapshot retained for reference and citation.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [
+        "brief/site-package/standards/references/mohurd-control-detailed-planning.md"
+      ],
+      "allowed_uses": [
+        "regulatory detailed planning depth reference",
+        "planning permission and implementation-management boundary language"
+      ],
+      "prohibited_uses": [
+        "claiming this project has approved regulatory controls",
+        "inventing FAR, height, road redline, ownership, municipal or fire-control conclusions"
+      ],
+      "usage_zh": "用于界定控规深度与实施管理边界，支撑本方案区分「已知可做」与「待官方条件补齐后才可做」的分期纪律。",
+      "limit_zh": "不得声称本项目已有获批控规条件；不得推定容积率、建筑高度、道路红线、权属或市政结论。",
+      "used_in_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "用地、建筑规模与拆改留方案",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "registry_notes_zh": "可要求 agent 区分已知控制与待补控制。"
+    },
+    {
+      "id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+      "title": "自然资源部关于印发《国土空间调查、规划、用途管制用地用海分类指南》的通知",
+      "publisher": "自然资源部",
+      "source_kind": "official_standard",
+      "source_type": "official_public",
+      "url": "https://www.gov.cn/zhengce/zhengceku/202311/content_6917279.htm",
+      "published_date": "2023-11-22",
+      "accessed_date": "2026-06-03",
+      "authority_level": "A0",
+      "public_access_status": "public_local_snapshot",
+      "license_summary": "Official public government page snapshot retained for reference and citation.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "local_paths": [
+        "brief/site-package/standards/references/mnr-land-use-classification-guide.md"
+      ],
+      "allowed_uses": [
+        "land-use classification terminology",
+        "land-use code reference for structured GeoJSON and metrics"
+      ],
+      "prohibited_uses": [
+        "site-specific land-use approval",
+        "replacement for official regulatory plan conditions"
+      ],
+      "usage_zh": "用于统一 land_use_code 语义，特别是本方案核心机制所依托的「16 留白用地」法定类型。",
+      "limit_zh": "用地分类语义可用，但不构成本项目地块用地审定结论。",
+      "used_in_sections": [
+        "用地、建筑规模与拆改留方案",
+        "三层范围工作框架",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "registry_notes_zh": "可用于统一 land_use_code 语义。"
+    },
+    {
+      "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
+      "publisher": "Repository maintainers",
+      "source_kind": "provisional_repository_data",
+      "source_type": "agent_inferred_from_public_data",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "published_date": "2026-06-05",
+      "accessed_date": "2026-06-07",
+      "authority_level": "PROVISIONAL_REPOSITORY",
+      "public_access_status": "provisional_repository",
+      "license_summary": "Repository-maintained provisional geometry for intake testing and visualization only.",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "local_paths": [
+        "brief/site-package/geometry/provisional_boundaries.geojson",
+        "data/processed/agent_fact_pack.md",
+        "data/processed/project_scope_summary.csv",
+        "data/processed/source_use_matrix.csv",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "allowed_uses": [
+        "temporary AI generation boundary",
+        "offline visualization",
+        "intake self-check",
+        "design discussion with clear provisional labeling"
+      ],
+      "prohibited_uses": [
+        "official redline",
+        "statutory planning control",
+        "precise area calculation",
+        "formal professional scoring",
+        "approval or implementation basis"
+      ],
+      "usage_zh": "用于生成全部设计图层的临时空间基底、可视化与入口自检。本方案 site_boundary、key_areas 与全部派生图层均由该 provisional geometry 导出。",
+      "limit_zh": "provisional_only。不得作为 official redline、审批依据、精确面积依据或正式专业评分依据；取得官方红线后须整体重算。",
+      "used_in_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架",
+        "指标体系、面积复算与合规矩阵",
+        "风险、版权与合规说明"
+      ],
+      "registry_notes_zh": "该 geometry 提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。"
+    },
+    {
+      "id": "DATA-SRC-MOHURD-ARCH-DESIGN-DEPTH-PENDING",
+      "title": "建筑工程设计文件编制深度规定（2016年版）",
+      "publisher": "中华人民共和国住房和城乡建设部",
+      "source_type": "needs_official_file",
+      "usable_for_formal": "no",
+      "review_status": "needs_official_file",
+      "local_paths": [
+        "brief/site-package/standards/references/mohurd-arch-design-depth-2016.md"
+      ],
+      "usage_zh": "仅登记为建筑专业深度的待补参照项，用于说明本方案未达建筑施工图深度的原因。",
+      "limit_zh": "仓库登记为 missing_source_url，本方案不把它写成已满足的权威依据。",
+      "used_in_sections": [
+        "风险、版权与合规说明",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "notes_zh": "取得官方文本后才可作为建筑深度依据；当前仅作缺口披露。"
+    }
+  ]
+}

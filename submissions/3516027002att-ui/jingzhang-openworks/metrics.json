@@ -1,0 +1,528 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "area_calculation_crs": "EPSG:4548",
+  "recomputation_note_zh": "全部 known 指标均由 geometry/*.geojson 在 EPSG:4548 下复算得到，可由 scripts/spatial_review.py 复现；unknown 指标对应官方资料缺口，不由 agent 推定。",
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "公告总体设计范围约11,400,000平方米，本值为临时边界复算值。"
+      ],
+      "note_zh": "公告值约11,400,000 sqm；差值来自 provisional 边界精度。"
+    },
+    "coordinated_research_area_sqm": {
+      "status": "known",
+      "value": 43600000.0,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_announced_value(coordinated_research_area)",
+      "confidence": "high",
+      "assumptions": [
+        "统筹研究范围采用公告文字面积，不由 provisional polygon 复算。"
+      ],
+      "note_zh": "来源为公告1.4（1）约43.6平方公里。"
+    },
+    "land_use_partition_area_sqm": {
+      "status": "known",
+      "value": 11412844.146,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(union(land_use_polygons))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ],
+      "note_zh": "与 site_area_sqm 一致即证明用地分区完整覆盖且无重叠。"
+    },
+    "land_use_area_ai_research_sqm": {
+      "status": "known",
+      "value": 1471198.903,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0802'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_education_link_sqm": {
+      "status": "known",
+      "value": 213938.95,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0804'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_commercial_service_sqm": {
+      "status": "known",
+      "value": 1038584.317,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='05'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_housing_sqm": {
+      "status": "known",
+      "value": 2959490.968,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0701'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_community_service_sqm": {
+      "status": "known",
+      "value": 2083154.591,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='0702'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_park_green_sqm": {
+      "status": "known",
+      "value": 2311498.639,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='1401'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_plaza_sqm": {
+      "status": "known",
+      "value": 866871.247,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='1403'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "land_use_area_reserved_land_sqm": {
+      "status": "known",
+      "value": 468106.531,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area(land_use where land_use_code='16'))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2684126.104,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "area(union(green_space))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.235185,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "本比例为设计建议值，不是审定绿地率控制指标。"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 1791172.051,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(union(public_space))",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。"
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.156944,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "本比例为设计建议值，不是审定公共空间率控制指标。"
+      ]
+    },
+    "reserve_ratio": {
+      "status": "known",
+      "value": 0.041016,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "land_use_area_reserved_land_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "边界为仓库 provisional_rough polygon，取得 official redline 后必须整体重算。",
+        "留白率是本方案提出的建议指标口径，供专业团队与控规编制单位讨论，不是现行法定指标。"
+      ],
+      "note_zh": "本方案核心建议指标：以留白用地承接AI产业代际更替的空间弹性。"
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 116500.364,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "area(union(building_footprints))",
+      "confidence": "low",
+      "assumptions": [
+        "现状建筑底数缺失（GAP-BUILDING-001），本值仅为研究体量示意面积，不代表现状或规划建筑规模。"
+      ]
+    },
+    "building_coverage_ratio_study": {
+      "status": "known",
+      "value": 0.010208,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "仅为研究体量占地比，不是建筑密度控制指标（GAP-CONTROL-001）。"
+      ]
+    },
+    "slow_mobility_network_length_m": {
+      "status": "known",
+      "value": 13072.205,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(road_centerline, EPSG:4548))",
+      "confidence": "medium",
+      "assumptions": [
+        "概念线位长度，不构成道路红线或工程线形结论（GAP-ROAD-001）。"
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(features where layer='KEY_AREA')",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_zhongzhiyuan_ai_acceleration_area_sqm": {
+      "status": "known",
+      "value": 1929201.877,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_areas#KEY-001, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "公告面积约1,921,000平方米；当前为 provisional polygon 复算值，取得 official KEY_AREA polygon 后必须重算（GAP-BOUNDARY-002）。"
+      ]
+    },
+    "key_area_beijing_ai_origin_community_sqm": {
+      "status": "known",
+      "value": 1043236.909,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_areas#KEY-002, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "公告面积约1,043,000平方米；当前为 provisional polygon 复算值，取得 official KEY_AREA polygon 后必须重算（GAP-BOUNDARY-002）。"
+      ]
+    },
+    "key_area_dazhongsi_ai_industry_cluster_sqm": {
+      "status": "known",
+      "value": 720454.219,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_areas#KEY-003, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "公告面积约720,000平方米；当前为 provisional polygon 复算值，取得 official KEY_AREA polygon 后必须重算（GAP-BOUNDARY-002）。"
+      ]
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(features where layer='PHASE')",
+      "confidence": "high",
+      "assumptions": [
+        "分期即版本（v0/v1/v2），为概念建议，不构成开发时序或审批结论。"
+      ]
+    },
+    "phase_v0_area_sqm": {
+      "status": "known",
+      "value": 720454.219,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(phasing#PH-001, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "分期范围为概念建议。"
+      ]
+    },
+    "phase_v1_area_sqm": {
+      "status": "known",
+      "value": 1043236.909,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(phasing#PH-002, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "分期范围为概念建议。"
+      ]
+    },
+    "phase_v2_area_sqm": {
+      "status": "known",
+      "value": 1929201.877,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(phasing#PH-003, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "分期范围为概念建议。"
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario_cards in proposal.md)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于10张，本方案提交12张。"
+      ]
+    },
+    "industry_test_scenario_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(industry_test_validation_scenarios in proposal.md)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于3个，本方案提交4个。"
+      ]
+    },
+    "user_persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(user_personas in proposal.md)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于5类，本方案提交6类。"
+      ]
+    },
+    "pilgrimage_landmark_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(landmark_forecourt in public_space) + narrative landmarks",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求不少于3个，本方案提交4个。"
+      ]
+    },
+    "global_case_study_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(global_ai_ecosystem_cases in proposal.md)",
+      "confidence": "high",
+      "assumptions": [
+        "任务书要求5-8个，本方案提交7个。"
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-CONTROL-001：已批准控规容积率条件未公开，不得由 agent 推定。"
+      ],
+      "reason": "已批准控规容积率条件未公开，不得由 agent 推定。"
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-CONTROL-001：已批准建筑高度控制（含文保、景观、航空限高）未公开。"
+      ],
+      "reason": "已批准建筑高度控制（含文保、景观、航空限高）未公开。"
+    },
+    "building_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-CONTROL-001：已批准建筑密度控制条件未公开。"
+      ],
+      "reason": "已批准建筑密度控制条件未公开。"
+    },
+    "official_green_ratio_control": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-CONTROL-001：已批准绿地率控制指标未公开；本方案 green_ratio 为设计建议值。"
+      ],
+      "reason": "已批准绿地率控制指标未公开；本方案 green_ratio 为设计建议值。"
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-BUILDING-001：缺现状建筑底数与控规强度条件，不得推定总建筑规模。"
+      ],
+      "reason": "缺现状建筑底数与控规强度条件，不得推定总建筑规模。"
+    },
+    "road_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json",
+        "data/processed/missing_data_checklist.csv"
+      ],
+      "formula": "requires_official_control_data",
+      "confidence": "unknown",
+      "assumptions": [
+        "资料缺口 GAP-ROAD-001：缺道路红线与断面资料，不得复算道路用地比例。"
+      ],
+      "reason": "缺道路红线与断面资料，不得复算道路用地比例。"
+    }
+  }
+}

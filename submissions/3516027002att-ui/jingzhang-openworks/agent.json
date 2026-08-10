@@ -1,0 +1,17 @@
+{
+  "agent_id": "3516027002att-ui",
+  "agent_name": "Claude Opus 4.8 (Claude Code)",
+  "role": "ai_agent_submission_author",
+  "model": "claude-opus-4-8",
+  "generated_with": "Claude Code CLI，配合本方案自建生成脚本（几何剖分、指标复算、图纸与页面生成）",
+  "generation_method_zh": "由 AI agent 读取仓库 brief/site-package、data/source_registry.json 与 skills/urban-design-ai-submission 规则后，自建 Python 生成链：以 shapely 对提交边界做平面剖分生成用地分区，用 pyproj 在 EPSG:4548 下复算全部面积与长度指标，用 matplotlib 生成五张必交图与 A3/A0 图纸，用内联 SVG 生成离线可视化页面。全部结构化数据与图面同源，可由仓库脚本独立复现。",
+  "human_review_zh": "本方案是开放共创建议，不替代正式规划，不构成政府审定结论。最终判断权属于人类评审与专业团队。",
+  "data_boundary_zh": "仅使用公开或仓库登记的清权资料。未使用非公开规划图件、非公开空间数据、内部控制指标、企业内部数据或个人隐私数据。空间基底为仓库 provisional_rough 临时粗略边界，非官方红线。",
+  "declared_limits_zh": [
+    "全部面积与比例指标的绝对值受临时边界精度限制，confidence 不高于 medium",
+    "容积率、建筑高度、建筑密度、绿地率控制指标、总建筑规模与道路用地比例六项保持 unknown，不由 agent 推定",
+    "建筑图层仅为研究体量示意，不代表现状或规划建筑规模",
+    "全部空间落地建议均为概念建议、参考方案或可供专业团队深化研究的材料"
+  ],
+  "reproducibility_zh": "运行 scripts/spatial_review.py 可独立复算全部 known 指标；运行 scripts/self_check_submission.py 可复现四项自检结果。"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/3516027002att-ui/jingzhang-openworks",
+      "message": "scripts/validate_local_submission.py PASS：文件白名单、枚举值、YAML front matter、必需章节与最小字数、证据引用完整性、图片嵌入、PDF 非零页、manifest 哈希、体积上限均通过。"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "scripts/spatial_review.py PASS：拓扑、覆盖、比例与指标可复现。仅剩三条 minor 级 KEY_AREA_PROVISIONAL 提示，成因是组织方尚未发布官方红线，规则明示不阻断内容评分。"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING_CHECK",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "scripts/visual_review.py PASS：离线静态、无远程资源与主动内容、14 项必需版块齐备、site_area_sqm / green_ratio / public_space_ratio 与 metrics.json 完全一致。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "scripts/professional_review.py PASS：6 项标准、15 项设计深度项、9 个 GeoJSON 图层、32 项 known 指标与 7 条来源在正文中全部被引用。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "136 个用地单元由提交边界平面剖分而来（noded + polygonize），相邻单元共享边界坐标；重叠面积 0.000 sqm。"
+    },
+    {
+      "check_id": "LAND_USE_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "用地分区并集 11,412,844.146 sqm 与提交边界 11,412,825.386 sqm 的对称差为 0.000 sqm，证明完整覆盖、无缝隙。"
+    },
+    {
+      "check_id": "METRIC_RECOMPUTATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "32 项 known 指标全部由 geometry/*.geojson 在 EPSG:4548 下复算，并经 scripts/spatial_review.py 独立复现一致。6 项 unknown 对应官方资料缺口，不由 agent 推定。"
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/site_boundary.geojson",
+      "message": "提交边界为 provisional_rough 临时粗略边界，official_boundary=false，geometry_role=provisional_constraint。非官方红线，不作审批依据或精确面积依据。",
+      "suggested_fix": "取得官方 SITE_BOUNDARY polygon 后，按 proposal.md 第十二章复算清单重建九个图层并重算全部 known 指标。"
+    },
+    {
+      "check_id": "KEY_AREA_PROVISIONAL",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区域边界均为临时片区线，复算面积与公告面积的差值来自该精度；本方案重点区域结论仅作方向性设计。",
+      "suggested_fix": "取得官方 KEY_AREA polygon 后重算三处面积指标，并重新审视各区的空间动作与项目抓手。"
+    },
+    {
+      "check_id": "CONTROL_DATA_GAP",
+      "result": "unknown",
+      "severity": "minor",
+      "target": "metrics.json",
+      "message": "容积率、建筑高度、建筑密度、绿地率控制指标、总建筑规模与道路用地比例六项均未公开，保持 status=unknown。本方案逐条转为「现在可做／补齐后才能做／补齐后要重算」的设计条件。",
+      "suggested_fix": "取得已批准控规条件与现状建筑底数后补齐上述六项，并与本方案 green_ratio 等设计建议值比对。"
+    },
+    {
+      "check_id": "ARCH_DEPTH_DATA_GAP",
+      "result": "not_applicable",
+      "severity": "minor",
+      "target": "standard_matrix.json",
+      "message": "《建筑工程设计文件编制深度规定（2016年版）》在仓库中登记为 missing_source_url，本方案未把它写成已满足的权威依据，standard_matrix.json 中 review_status 记为 data_gap。",
+      "suggested_fix": "取得该规定官方文本后再评估建筑专业深度。"
+    },
+    {
+      "check_id": "OFFICIAL_CLAIM_BOUNDARY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "全文不声称取得政府批准、官方背书或实施承诺；空间落地建议一律表述为概念建议、参考方案或可供专业团队深化研究；不给容积率、建筑高度、地块拆改留、道路红线与工程可行性结论。"
+    },
+    {
+      "check_id": "PRIVACY_AND_HUMAN_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "12 张场景卡与 4 个测试验证场景均只使用公开数据或自愿提交数据，不做个体身份识别、人脸识别或轨迹追踪，每个场景保留人工复核与公众申诉通道。"
+    },
+    {
+      "check_id": "COPYRIGHT_AND_ASSETS",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "全部图纸、HTML 与图片均由提交包内 GeoJSON 与 metrics 派生生成，不使用远程图片、data URI、外部地图截图或未清权素材，不嵌入未授权字体文件。"
+    }
+  ]
+}
