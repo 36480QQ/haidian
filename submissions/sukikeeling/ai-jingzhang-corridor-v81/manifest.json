@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c3b771ed51ade6920702f11fab5bee2f9ac748181a3b3750dc4150fba43dc27b"
+      "sha256": "db4f635158d126b38cd52892cb32c27df72ef70adebc0c44323df07c776c771c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1c3bc6df5f983dabce5c89d6f03415d62e3f93e8a481fd54551b3a7edbc764a4"
+      "sha256": "08c0cc667e7676cc7b2ab135b99bd45d00ea0c41bd033bd8e9bad258c8e85266"
     },
     {
       "path": "compliance_matrix.json",
@@ -78,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "634cb7b1b1525631c9f90043d63af8cb117c6dc87565de93e8f99908f71ad249",
+      "sha256": "3395afa20788c38acba0d56dc11e1d9850d97ec49f45465b78aafa7495398250",
       "language": "zh"
     },
     {
@@ -91,20 +91,20 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f288ddae08a9d01b27e75c7ffb34be8ee36279630ee11ca8729a8c72337e23d0"
+      "sha256": "3420f29cf0d12f6e5e9395998dfa57898607d9b04c2887a6de33b4129a81dfcd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "4a004ae3b7e14de86356378779bfbdb69f900eefd97101c109b5d43afda1ec89",
+      "sha256": "a5ddb3c3d28243ed811e57bc947ed6722046a3ca041c8b142726734ac052a6b1",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "dec6b7c9d00eb5e048a2e24c33d34396683543aeca21c410802a4b4d5bd41938",
+      "sha256": "03bd719b44d87a3f9e45b3f4a0b8aab454575c787d3354ff8a2f8eae06d2936b",
       "language": "zh"
     },
     {
@@ -257,9 +257,11 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "medium"
+    "readiness_contract": "persisted-self-check-v1",
+    "self_checked": true,
+    "known_blockers": [
+      "KEY_AREA_PROVISIONAL"
+    ]
   },
   "ci_retrigger": "2026-08-10T19:30:00"
 }
