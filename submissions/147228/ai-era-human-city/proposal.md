@@ -99,7 +99,7 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 京张遗址公园 AI 公共空间被表达为问题站、静养无屏带、人工服务、可撤回展示的序列。东西缝合是连续导视、可步行问题站与无障碍替代路径的概念策略；南北贯通是技能慢行绿链、公共服务节点和小月河生态缓冲的研究框架；两者都不是桥隧、道路、地下空间或工程可行性结论。[standard:MOHURD-URBAN-DESIGN-MEASURES] [data:geometry/roads.geojson#MOBILITY-03] [depth:key_area_detailed_design]
 
-## v0.8 评分修复｜把公共界面压到节点级
+## v1.3 空间关系读数｜让节点级接口可复核但不冒充路线
 
 上一节回答三处重点区要比较哪些公共性与可逆关系；本节继续压低表达尺度，只读成一条节点序列：**普通到达 → 人工解释/服务 → 受控状态 → 冻结复盘或退出**。`visual/assets/ai-era-spatial-interface-plans.json` 为每处重点区登记现有 provisional geometry 锚点、功能带、进入前证据和停止条件；它不填写尺寸，不改变 geometry，也不把概念界面升级为现状设施或工程方案。[data:visual/assets/ai-era-spatial-interface-plans.json] [depth:overall_spatial_structure]
 
@@ -108,6 +108,14 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 | 众智园 | `MOBILITY-05` → `PUBLIC-01` → `SCN-06` → `GREEN-02` | 普通到达/观察 → 人工解释/接管 → 受限 API 模拟 → 冻结复盘/安全退避 | 缺少授权、责任、日志或接管时冻结接口，保留普通路径和纸面规则 |
 | AI 原点社区 | `MOBILITY-04` → `PUBLIC-02` → `SCN-02` → `GREEN-03` | 日常到达/停留 → 纸面电话人工服务 → 技能再造/代际共学 → 无屏恢复/退出 | 人工入口不可用或普通路径被切断时改回人工服务；结果保持 `unknown` |
 | 大钟寺 | `PUBLIC-05` → `SCN-05` → `SERVICE-ZONE-02` → `PUBLIC-04` | 文化到达/通行 → 多语解释/授权前台 → 可撤回展示/受控服务 → 申诉冻结/夜间回退 | 越权、不可解释或未清权时关闭展示，保留普通通行和人工回退 |
+
+为避免“有锚点”仍停留在口号，本轮增加一份从同一组 GeoJSON 复算的临时关系读数。它取相邻锚点要素顶点之间的最小地理间距，四舍五入到 10 m，供评审复核顺序、近邻和明显断裂；它不是路线长度、服务半径、无障碍结论或工程尺寸，三段数值也不能相加为通行距离。正式边界、道路和现场走测到位后，读数、图件、指标、HTML、PDF 与自检必须一起重算。[data:visual/assets/ai-era-provisional-spatial-readout.json] [metric:provisional_spatial_readout_segment_count]
+
+| 重点区 | 相邻锚点最小顶点间距（km，顺序同上） | 读数的设计用途 |
+|---|---:|---|
+| 众智园 | 1.97 / 2.54 / 2.33 | 检查普通到达—人工接管—受控模拟—安全退避是否存在可追问的空间关系 |
+| AI 原点社区 | 3.24 / 0.09 / 3.42 | 把日常入口、人工服务、技能再造节点和无屏恢复分开核问，不把相邻节点写成已连通设施 |
+| 大钟寺 | 0.12 / 1.62 / 0.33 | 检查文化通行、授权前台、受控展示和夜间回退的关系是否需要现场复核 |
 
 这组节点计划补的是“公共界面如何承接普通人路径和停止动作”的可见中间层，而不是横断面、平面或体量。道路、权属、文保、无障碍、现状设施和运营资料到位前，所有尺寸、容量、通行能力与结果指标仍为待补资料或 `unknown`。[data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 

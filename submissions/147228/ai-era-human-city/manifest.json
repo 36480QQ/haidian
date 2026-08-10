@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a0031fc5ac815b6b8e32ff3b74fba4c2082b5baf7b5b1d244071cfd3f1ec5308"
+      "sha256": "4aec5b744addc08d82ca7f7de06dbe8d1b1cf04579e8fb244089ed09c0ad93cc"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4ae5f33be7a10150d78b7e6b9fad0daadb74f90b07fb0912e92ac6add1c13f0a"
+      "sha256": "6a9394d78e94b85180968ad50a47f66f0b74b51df1ddd4f66a4b2fe18332f626"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8cea4f0b3b83e279da3f25d3ade4b5e557c27f05b881be7a937fd23a1b723ab8"
+      "sha256": "46c3685d94515def4aee1bb7d09f7e94558f66165add14c543b1c2f7b63c22e5"
     },
     {
       "path": "report/narrative.md",
@@ -154,7 +154,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "85bf1144c2de586649b266fd7867d4c9e1396c4fcbf0d2fb3571d5a1155e4921"
+      "sha256": "5037cd764a03b0509be5103058c16321a5722695a9e4d17b127c5154d223a131"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f34f3e46ed013f1b20b48fb985634aea92438afd5a538995b2e56277c2be37cb"
+      "sha256": "4d83320cdf635e9250698f4a68b24a0ab371be0a6fd2b782865d74749fc15f66"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8c22a55c1f75381e251a0327e77ec30b9cf320732b47534e4f7aa194ece8b27a"
+      "sha256": "741e740561937aa84811667a75970bbc75112a3510f31442da09c949b81cc39c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -296,13 +296,13 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/spatial-interface-nodes.svg",
-      "sha256": "61cc44dddc15a8b3970a90c051082f8b50487ca79585f8192f82d66208b9d8ae"
+      "sha256": "8526ebdfdb2d06a17d5b13810d214b99939091d630fb4fa34bafb0b4990a2da2"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "d1489bdafe24a5a3f6d1c83094165486720541336966f0887ca67592e389cf6e"
+      "sha256": "ed0d5ad7a6ca90e391a156d66a1db1a597e2af5028d7a7d2b02d641a5a3dac36"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -350,7 +350,19 @@
       "path": "visual/assets/ai-era-spatial-interface-plans.json",
       "role": "narrative",
       "required": false,
-      "sha256": "20aa4a5e728952ef91d197ddfe34aa52d85517ab480024794e83d0e98c56e364"
+      "sha256": "e8c4b35f83938064982452b3b5e18dee652b19981afcfd5ac90f0c519b1f3658"
+    },
+    {
+      "path": "visual/assets/ai-era-provisional-spatial-readout.json",
+      "role": "evidence_contract",
+      "required": false,
+      "sha256": "1bcfc6bd2308a3d21e9eb1808953f48321d06a5f6f1041ceb0a564351e124273"
+    },
+    {
+      "path": "visual/assets/run-ai-era-spatial-readout.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "ab1c867779a5409b47301925f146584c4be17f33c57b2283c05d79a9a0fc88ac"
     },
     {
       "path": "visual/assets/run-ai-era-traceability-audit.js",
@@ -549,7 +561,7 @@
       "role": "figure",
       "required": false,
       "language": "zh",
-      "sha256": "74496912425b94aa14ebe5cfcec59e94791727d8eac65b3b7337d6e71f27713e"
+      "sha256": "4342e762672ea687fc0e779750c5aa935879c564f9c3a72f0989be8b9c0a1e6c"
     },
     {
       "path": "assets/figures/spatial-interface-nodes.en.png",
@@ -557,11 +569,11 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/spatial-interface-nodes.png",
-      "sha256": "80641d91bc6b01903ccb1cb4c72998ef8469c1590e59aca377f458bc60383b20"
+      "sha256": "01055932d78d03e567e656c8e703d9aeeaf50964b9c947e57c00ff8450de464e"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium"
   }

@@ -135,6 +135,24 @@
         "A-KEY-AREAS-001"
       ]
     },
+    "provisional_spatial_readout_segment_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/ai-era-provisional-spatial-readout.json",
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "formula": "count(segment_readouts); each value is the rounded minimum geodesic separation between adjacent provisional-anchor feature vertices",
+      "confidence": "high",
+      "assumptions": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREAS-001"
+      ]
+    },
     "scenario_node_count": {
       "status": "known",
       "value": 10,

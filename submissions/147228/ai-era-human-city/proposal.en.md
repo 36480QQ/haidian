@@ -77,7 +77,7 @@ Zhongzhiyuan is a problem–protocol–shared-lab concept: an open problem regis
 
 Three low-scale pilgrimage landmarks are the Open Problem Mile Marker, Algorithm Calibration Court, and Human Override Beacon. They display question versions, human revisions, and withdrawal rights, with no role for celebrity, ranking, or monumentality. The Jingzhang heritage-park public-space sequence, east–west stitching, and north–south link are conceptual wayfinding, walking, and blue-green research strategies. They do not establish bridge, tunnel, underground, or construction conclusions. [data:geometry/public_space.geojson#PUBLIC-05] [standard:MOHURD-URBAN-DESIGN-MEASURES] [metric:landmark_count]
 
-## v0.8 scoring repair: bring public interfaces down to node scale
+## v1.3 spatial relation readout: make node interfaces reviewable without pretending they are routes
 
 The previous section answers which public and reversible relationships to compare in the three key areas. This section lowers the reading scale again to one node sequence: **ordinary arrival → human explanation/service → bounded state → freeze/replay or exit**. `visual/assets/ai-era-spatial-interface-plans.json` registers existing provisional-geometry anchors, functional bands, entry evidence, and stop conditions for each area. It adds no dimensions, changes no geometry, and does not upgrade a concept interface into an existing facility or engineering proposal. [data:visual/assets/ai-era-spatial-interface-plans.json] [depth:overall_spatial_structure]
 
@@ -86,6 +86,14 @@ The previous section answers which public and reversible relationships to compar
 | Zhongzhiyuan | `MOBILITY-05` → `PUBLIC-01` → `SCN-06` → `GREEN-02` | Ordinary arrival/observation → human explanation/takeover → bounded API simulation → freeze/replay/safe retreat | Freeze the interface when authorization, responsibility, logs, or takeover is missing; retain the ordinary route and paper rule |
 | AI Origin Community | `MOBILITY-04` → `PUBLIC-02` → `SCN-02` → `GREEN-03` | Daily arrival/dwell → paper, phone, staffed service → reskilling/intergenerational learning → screen-free recovery/exit | Return to human service when the human entry is unavailable or the ordinary route is cut; keep outcomes `unknown` |
 | Dazhongsi | `PUBLIC-05` → `SCN-05` → `SERVICE-ZONE-02` → `PUBLIC-04` | Cultural arrival/movement → multilingual explanation/consent desk → withdrawable display/bounded service → redress/freeze/night fallback | Close the display on overreach, unexplained behavior, or uncleared rights; retain ordinary movement and human fallback |
+
+To keep “having anchors” from becoming a slogan, this revision adds a provisional relation readout recomputed from the same GeoJSON. For each adjacent pair it reports the minimum geodesic separation between feature vertices, rounded to 10 m, so a reviewer can question order, near-neighbors, and obvious gaps. It is not a route length, service radius, accessibility conclusion, or engineering dimension; the three values must not be added into an access distance. Once formal boundaries, roads, and field walk-through evidence arrive, the readout, figures, metrics, HTML, PDFs, and self-check must be recomputed together. [data:visual/assets/ai-era-provisional-spatial-readout.json] [metric:provisional_spatial_readout_segment_count]
+
+| Key area | Minimum vertex separation between adjacent anchors (km, same order) | Design use of the readout |
+|---|---:|---|
+| Zhongzhiyuan | 1.97 / 2.54 / 2.33 | Question whether ordinary arrival, human takeover, bounded simulation, and safe retreat have an inspectable spatial relationship |
+| AI Origin Community | 3.24 / 0.09 / 3.42 | Separate the daily entry, human service, reskilling node, and screen-free recovery for field review; do not call them connected facilities |
+| Dazhongsi | 0.12 / 1.62 / 0.33 | Check whether cultural movement, consent desk, bounded display, and night fallback need field verification |
 
 This node plan adds a reviewer-visible middle layer for how public interfaces carry an ordinary-person path and stop action; it is not a section, plan, or massing drawing. Until road, tenure, heritage, accessibility, existing-facility, and operating evidence is available, all dimensions, capacity, movement performance, and outcome metrics remain missing or `unknown`. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 

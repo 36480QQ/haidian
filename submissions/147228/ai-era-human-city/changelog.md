@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-10
+
+- 新增 `ai-era-provisional-spatial-readout.json` 与确定性 runner，从同一组 provisional GeoJSON 复算 3 个重点区、9 段相邻锚点的最小顶点间距，并明确它不是路线、服务半径、无障碍结论或工程尺寸。
+- 在图 06 的中英文图板中增加关系读数和统一的非官方边界说明，缩短英文标签并修复节点名称与色块的遮挡，重新生成 PNG。
+- 同步双语 proposal 与 `metrics.json`；不改变 geometry、正式面积、现场绩效、许可、运营主体、公共排序或官方评分边界。
+
 ## v1.2 - 2026-08-10
 
 - 新增 `taskbook-culture-operations-atlas-v12.json` 与双语图 10，把 agent.4 公共空间/地标、agent.5 文化叙事、agent.6 全球活动/长期运营落到三处 provisional 公共空间锚点、四季节奏和五个概念项目族。
