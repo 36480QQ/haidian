@@ -45,7 +45,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "db76e2b4076a969bdd3781730a336032b370f96edaa21a4e68878df5bd116568"
+      "sha256": "a04af0e91416e35a9f53e46372db0fd5f7ffd00610ac0b7ba0e23893d1593518"
     },
     {
       "path": "assumptions.json",
@@ -63,13 +63,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "15373ab0bde9423739f180859b5460c6b29971c0b9b0b41ad7e633ce6879b53d"
+      "sha256": "c81078a125e41d7c6845e5e5f6176882116129f57ee0f5b4993213fcaab6f390"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "54a207cc0147be2a12ecf7d21d78c0df93784f81a95f81d7414fde1506c89d91"
+      "sha256": "3bc68c7abd56d62f8fa9d4f0fcf2197e7d145381651f1bceb494770b87c76543"
     },
     {
       "path": "standard_matrix.json",
@@ -81,7 +81,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "541a8c54a94668f537145dc791e775053f26a9ca9e2230ffa6bf66710584d8d8"
+      "sha256": "d2f95c8d6ffa886fe7fd36fd6c20ffdf971919ac0065e943c631d4ea21a4480f"
     },
     {
       "path": "report/proposal.html",

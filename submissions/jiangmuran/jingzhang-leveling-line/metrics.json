@@ -432,7 +432,7 @@
     },
     "matrix_reference_count": {
       "status": "known",
-      "value": 479,
+      "value": 523,
       "unit": "count",
       "assumption_ids": [
         "A-SELF-COUNT-001"
@@ -442,10 +442,10 @@
         "standard_matrix.json",
         "design_depth_matrix.json"
       ],
-      "formula": "count(section/layer/metric/drawing/source references across the three matrices)",
+      "formula": "count(references declared in the 11 reference fields of the three matrices); shares one definition with matrix_refs_qa.count_references",
       "confidence": "high",
       "assumptions": [
-        "全部解析到实际章节或随包文件，由构建闸门 matrix_refs_qa 校验；每条条目的证据摘要由其自身引用生成，44 条互不相同。"
+        "这是**被声明**的引用数；其中能被解析规则核对的那部分由 matrix_refs_qa 分别报出，两个数取自同一个定义，不再各算各的（此前二者相差 5）。每条条目的证据摘要由其自身引用生成，44 条互不相同。"
       ]
     },
     "shipped_verification_script_count": {
