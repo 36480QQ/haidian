@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路 1909—2026 百年时间轴为叙事主轴，将遗址公园化作「时间脊」、三处重点区化为三座时代站台，形成可步行、可体验、可运营的 AI 朝圣之路与两翼场景带；全部空间结论为基于临时边界的概念建议。"
 tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.1.1"
 ---
 
 # 时间车站：百年京张的AI朝圣之路
@@ -19,6 +19,8 @@ iteration: "v0.1"
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]，以仓库维护者登记的任务书摘录 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]、临时粗略边界 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]、标准快照与来源清单为机器可读依据。三层范围与面积（统筹研究范围约 43.6 平方公里、总体设计范围约 11.4 平方公里、重点区域范围约 368.4 公顷）、三处重点区域及设计任务 1.3/1.4/1.5 均按公告文字与官方页面引用 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。
 
 边界透明度声明：截至本稿检索日（2026-08-10），公开渠道未发布官方 polygon 级红线，本方案全部空间边界为维护者登记的临时粗略范围（provisional_rough），仅用于概念生成、展示与自检 [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。凡面积、比例、长度类指标均在 EPSG:4548 下由几何图层复算并标注 provisional 口径 [metric:site_area_sqm]；官方 polygon 到位后必须整体替换并重算，不得以本稿数值作为审批或精确面积依据。任务覆盖、标准响应与设计深度的完整机器索引见 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`，正文不重复堆叠 [depth:three_level_scope_framework]。
+
+本稿为 v0.1.1（2026-08-11）：已同步上游校验契约（persisted-self-check-v1）并完成四关自检持久化，详见 changelog.md。
 
 ![资料证据链与总体概念图](assets/figures/site-overview.png)
 

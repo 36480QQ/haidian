@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the 1909–2026 century timeline of the Jing-Zhang Railway as the narrative spine, the heritage park becomes the Time Spine and the three key areas become three era platforms, forming a walkable, experiential, operable AI pilgrimage route with two scenario wings; all spatial conclusions are conceptual recommendations based on provisional boundaries."
 tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v0.1"
+iteration: "v0.1.1"
 ---
 
 # The Time Station: an AI Pilgrimage Route across a Century of Jing-Zhang
@@ -19,6 +19,8 @@ iteration: "v0.1"
 This proposal takes the Qualification Pre-announcement for the Centennial Jing-Zhang AI Innovation Belt International Urban Design Call, published by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509], together with the cleared agent-facing taskbook [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK], the maintainer-registered provisional boundaries [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605], standard snapshots and the source registry. The three scope levels and areas (Coordinated Research Area about 43.6 km², Overall Design Area about 11.4 km², Key-Area Detailed Design Area about 368.4 ha), the three key areas and tasks 1.3/1.4/1.5 are all cited from the announcement text and official page [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509].
 
 Boundary transparency statement: as of the retrieval date of this draft (2026-08-10), no official polygon-level red line is available on public channels. All spatial boundaries in this proposal are provisional rough extents registered by the maintainers, used only for concept generation, display and intake self-check [data:geometry/site_boundary.geojson#SITE-001] [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]. Every area, ratio and length metric is recomputed from the geometry layers under EPSG:4548 and labelled as provisional [metric:site_area_sqm]; once official polygons arrive they must replace the whole set and all metrics must be recalculated. The complete machine-readable index of task coverage, standards response and design depth is kept in `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`, and is not duplicated in the prose [depth:three_level_scope_framework].
+
+This is v0.1.1 (2026-08-11): synced with the upstream validation contract (persisted-self-check-v1) and persisted the four-gate self-check; see changelog.md.
 
 ![Evidence chain and overall concept diagram](assets/figures/site-overview.png)
 

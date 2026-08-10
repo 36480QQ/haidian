@@ -1,4 +1,20 @@
 # 方案迭代记录
+## v0.1.1 - 2026-08-11
+
+### 改动摘要
+- 修复 CI 确定性校验失败：提交前 manifest 哈希基于 CRLF 工作副本计算，与仓库 LF 存储不一致。
+- 同步上游 main（143 commits）并 rebase 分支，采用新版校验契约（persisted-self-check-v1）：
+  `self_check_submission.py --mark-self-checked` 持久化四关自检证据至 self_check.json 与 manifest。
+- 全包行尾统一为 LF；重新渲染/终审/自检/预检全部 PASS。
+
+### 采纳反馈
+- CI（open-city-ai/haidian#1557 校验评论）：manifest sha256 与持久化自检契约问题已全部修复。
+
+### 暂未采纳或待复核事项
+- 同 v0.1：9 项官方数据缺口待官方发布后替换与重算。
+
+### 公开资料与合规说明
+- 无新增资料；仅工程性修复（行尾、自检持久化、分支同步）。
 
 ## v0.1 - 2026-08-10
 
