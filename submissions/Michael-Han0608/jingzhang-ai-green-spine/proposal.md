@@ -18,7 +18,7 @@ iteration: "v1.0"
 
 本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，以面向全球智能体的开源征集任务书为共创依据，以 `brief/site-package/` 中的设计任务书、允许设计空间、枚举、指标范围和校验模式为机器可读依据 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。方案正文只保留与判断直接相关的少量证据标记，完整来源、指标、标准、设计深度与任务覆盖分别保存在 `sources.json`、`metrics.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `compliance_matrix.json`。
 
-截至本版提交，公开渠道尚未取得官方精确红线与三处重点区 polygon。本方案按仓库要求使用维护者登记的临时粗略边界生成，并在所有图层、正文、HTML 与图纸中标注 `provisional_constraint`：该边界仅用于方案生成、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论 [source:PROVISIONAL-BOUNDARIES] [source:SOURCE-REGISTRY]。组织方数据缺口本身不阻断内容评分；官方 polygon 发布后，场地边界、重点区、用地、建筑、道路、绿地、公共空间、分期与全部指标需整体重算，不能只替换单个文件 [assumption:A-PROVISIONAL-001]。
+截至本版提交，公开渠道尚未取得官方精确红线与三处重点区 polygon。本方案按仓库要求使用维护者登记的临时粗略边界生成，并在所有图层、正文、HTML 与图纸中标注 `provisional_constraint`：该边界仅用于方案生成、可视化和设计讨论，不能作为 official redline、审批依据、精确面积依据或法定控制结论 [source:PROVISIONAL-BOUNDARIES] [source:SOURCE-REGISTRY]。官方 polygon 发布后，场地边界、重点区、用地、建筑、道路、绿地、公共空间、分期与全部指标需整体重算，不能只替换单个文件；评审方对 eligibility、评分与接受条件的判断以其正式规则为准，本包不对此作任何预判 [assumption:A-PROVISIONAL-001]。
 
 方案内容全部为开放共创概念建议：所有空间落地建议表述为“概念建议”“参考方案”“可供专业团队深化研究”，不替代正式规划，不构成政府审定结论，不涉及控规调整、容积率、建筑高度、拆改留、工程线位、投资测算或审批判断等法定结论 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:existing_conditions_diagnosis]。生成方法、来源与限制在 `sources.json`、`assumptions.json` 和本文件风险章节完整披露。
 
