@@ -6,40 +6,40 @@
   "documents": [
     {
       "document": "proposal.md",
-      "total": 317,
-      "unique": 119
+      "total": 347,
+      "unique": 126
     },
     {
       "document": "proposal.en.md",
-      "total": 326,
-      "unique": 122
+      "total": 356,
+      "unique": 129
     }
   ],
-  "references_total": 643,
-  "references_unique": 127,
+  "references_total": 703,
+  "references_unique": 134,
   "by_kind": {
     "metric": {
-      "total": 148,
+      "total": 152,
       "unique": 23,
       "resolved": 23,
       "unresolved": []
     },
     "source": {
-      "total": 70,
+      "total": 76,
       "unique": 18,
       "resolved": 18,
       "unresolved": []
     },
     "data": {
-      "total": 223,
-      "unique": 66,
-      "resolved": 66,
+      "total": 251,
+      "unique": 72,
+      "resolved": 72,
       "unresolved": []
     },
     "depth": {
-      "total": 184,
-      "unique": 15,
-      "resolved": 15,
+      "total": 206,
+      "unique": 16,
+      "resolved": 16,
       "unresolved": []
     },
     "standard": {
@@ -60,7 +60,12 @@
       "id": "unknown-spatial-feature",
       "reference": "data:geometry/site_boundary.geojson#NOT-IN-GEOJSON",
       "pass": true
+    },
+    {
+      "id": "unknown-depth",
+      "reference": "depth:NOT-IN-REGISTERED-DEPTH",
+      "pass": true
     }
   ],
-  "scope_note": "Resolves only package-local metric/source/data/depth/standard markers. It does not verify the truth of a claim, the authority of a source, or field/operational performance."
+  "scope_note": "Resolves only package-local metric/source/data/depth/standard markers; depth accepts design-depth item IDs and explicitly registered reviewer-dimension IDs. It does not verify the truth of a claim, the authority of a source, or field/operational performance."
 }

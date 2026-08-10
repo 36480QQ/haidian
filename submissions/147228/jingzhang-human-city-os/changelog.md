@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-10
+
+- 修复离线引用审计对 `depth:brief_alignment` 的错误阻断：该标识是 reviewer navigation 中明确登记的 formal 维度，不是设计深度矩阵中的行；审计现在只接受设计深度项或已登记 reviewer 维度，并新增未知 depth 负样本，避免放宽为任意字符串。
+- 刷新 `human-city-reference-audit.json` 与 manifest 哈希；当前中英文提案共 703 条包内引用、134 个唯一引用全部解析，仍不产生官方评分或现场绩效结论。
+
 ## v2.5 - 2026-08-10
 
 - 新增双语图 27“公共空间连接、组件与社群转化”和两个结构化台账：`public-space-connector-atlas-v25.json` 以南北贯通、东西缝合和五类人本组件把 agent.4 落到既有空间锚点；`developer-community-conversion-v25.json` 以“公开问题—共学复核—受控场景—版本发布”四阶段把 agent.6 的开发者社群、场景开放和标准/知识外溢写成可停止、可回放的概念链。
