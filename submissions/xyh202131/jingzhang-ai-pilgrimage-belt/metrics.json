@@ -1091,6 +1091,34 @@
         "Field coverage describes matrix completeness only, not field or partner coverage."
       ]
     },
+    "key_area_reversible_mode_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json"
+      ],
+      "formula": "sum(count(reversible_operating_section.modes) for each key-area record)",
+      "confidence": "high",
+      "assumptions": [
+        "This counts twelve documented G0 concept states across three areas; it does not count approved, tested, or operating modes."
+      ]
+    },
+    "key_area_differentiated_section_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/key-area-evidence-matrix.json",
+        "assets/figures/key-area-sections.svg",
+        "assets/figures/key-area-sections.en.svg"
+      ],
+      "formula": "count(key-area records with a distinct spatial sequence and four-state operating section)",
+      "confidence": "high",
+      "assumptions": [
+        "These are relationship diagrams for provisional extents, not measured or engineering sections."
+      ]
+    },
     "key_area_records_with_provisional_geometry": {
       "status": "known",
       "value": 3,

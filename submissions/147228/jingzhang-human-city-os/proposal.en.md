@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.3"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.3 adds a spatial-action atlas for three key areas, a Jing-Jin-Ji interface ledger, and an original identity system while retaining v1.2's overall spatial moves, four value chains, three release gates, and audit assets. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v1.4"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v1.4 compresses the three key areas into an arrival–staffed service–machine boundary–blue-green pause–exit sequence while retaining v1.3's spatial-action atlas, Jing-Jin-Ji interface ledger, original identity system, and audit assets. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -52,6 +52,22 @@ These are recomputable conceptual quantities, not statutory indicators, engineer
 Every gate retains an equivalent human service, unconfirmed accountability, data gaps and stop actions. These remain conceptual suggestions; no authorization, operation, approval or implementation is claimed.[depth:phasing_implementation]
 
 **First-read boundary:** the package can prove that spatial moves, evidence references, metric formulas and fail-closed paths are replayable offline. It cannot prove official boundaries, resident or employment outcomes, PUE/green-power, heat-network connection, traffic safety, permits, investment or real operations. Gaps remain in `assumptions.json`, `metrics.json` and the readiness register for later recalculation when public or authorized data arrives.[depth:risk_missing_data]
+
+## v1.4 spatial sequence | Walk the human path before calling the machine
+
+The previous revision answered what each key area should do. This revision compresses that work into a sequence that a reviewer and an ordinary person can follow across the drawing: **arrival and dwell → staffed explanation and choice → bounded machine interface → blue-green pause → exit, appeal, and replay**. It is not another showcase axis or a renamed governance ledger; it places the visible spatial cue, machine boundary, and failure action in one row for professional deepening.[data:visual/assets/human-city-spatial-sequence.json] [depth:overall_spatial_structure]
+
+![Figure 15 | Human-first spatial sequence: arrival, staffed service, machine boundary, blue-green pause, and exit across three provisional key areas](assets/figures/human-city-spatial-sequence.en.svg)
+
+| Provisional key area | Human-visible spatial sequence | What the machine may do | Spatial action on failure | Evidence still required |
+| --- | --- | --- | --- | --- |
+| Beijing AI Origin Community | Continuous walk and staffed wayfinding → service hall/intergenerational learning → skills transition and small-business return forum → screen-free recovery green | Suggest translation, queuing, or job information; no forced scan and no training-count proxy for employment | Reroute, staffed takeover, telephone/paper path retained; no retention or transition ratio without a credible baseline | Official boundary, accessibility walk-through, consented resident/shopkeeper baseline, night-service capacity |
+| Zhongzhiyuan AI autonomy accelerator | Slow pedestrian-priority observation edge → API authorization desk → bounded embodied test and incident replay → Xiaoyue River sponge retreat | Simulate or test only in declared windows and least privilege; no demo-to-expansion inference | Freeze calls, stop, return to the prior release gate; no test without safety, insurance, accountability, and replay | Official boundary, road/airspace review, insurance/incident protocol, hydrology and drainage inputs |
+| Dazhongsi AI industry cluster | Public urban-API problem desk → fair OPC application/shared lab → version/standards replay → multilingual staffed service lounge | Exchange the least authorized problem and version; no vendor selection and no national-standard claim | Stop diffusion, answer by a person, ordinary service retained; no next gate without independent replay | Official boundary, shared-lab access rules, rights/IP protocol, multilingual and health-service capacity |
+
+All three sequences reuse existing GeoJSON anchors; functional bands and interface relationships carry no engineering dimensions. `official_boundary=false`, `geometry_role=provisional_constraint`, and `operational_status=not_authorized_not_run` remain unchanged. Figure 15 and its JSON prove only that the spatial reading order and fallback logic are traceable; they do not prove actual roads, buildings, staff, blue lines, airspace, capacity, performance, or implementation authorization.[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002]
+
+The third key-area anchor, the overall provisional area, and data gaps remain registered under the same rule; once cleared or official inputs arrive, the package must be recomputed as a whole.[data:geometry/key_areas.geojson#PROV-KEY-003] [metric:site_area_sqm] [depth:risk_missing_data]
 
 ## v0.2 score repair | Read the three key areas as spatial action chains
 

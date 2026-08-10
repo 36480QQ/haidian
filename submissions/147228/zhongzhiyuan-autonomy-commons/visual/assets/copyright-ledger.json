@@ -93,6 +93,57 @@
       "hash_sha256": "6c2fe60ecbd041200bb52902175211a3d549d26699af14e78b24e9a2a5ca1787"
     },
     {
+      "path": "visual/assets/autonomy-node-interface-plans.json",
+      "asset_class": "metadata_or_matrix",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as a concept-only functional-band register",
+      "source_inputs": [
+        "visual/assets/autonomy_nodes.json",
+        "proposal.md",
+        "registered accessibility and autonomous-mobility boundaries"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Concept interface register only; it does not represent a road, permit, operator, capacity, or field result.",
+      "font_note": "Not applicable.",
+      "hash_sha256": "d423ee46489efc6c13e18470c20662a4bec8b5c72bf8d5d6c892ac06673f96e1"
+    },
+    {
+      "path": "assets/figures/autonomy-node-interface.svg",
+      "asset_class": "original_bilingual_schematic",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as an original vector schematic from the package node-interface register",
+      "source_inputs": [
+        "visual/assets/autonomy-node-interface-plans.json",
+        "visual/assets/autonomy_nodes.json",
+        "proposal.md"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Original concept schematic; it is not a survey, road section, redline, construction drawing, or vehicle-performance result.",
+      "font_note": "Uses local system sans-serif text; no font file is redistributed.",
+      "hash_sha256": "06729172fa55bbabc2e69bb609b476bf80f28642ea82cc7fa8972c7fcb7dc9d4"
+    },
+    {
+      "path": "assets/figures/autonomy-node-interface.en.svg",
+      "asset_class": "original_bilingual_schematic",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree as an original vector schematic from the package node-interface register",
+      "source_inputs": [
+        "visual/assets/autonomy-node-interface-plans.json",
+        "visual/assets/autonomy_nodes.json",
+        "proposal.en.md"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Original concept schematic; it is not a survey, road section, redline, construction drawing, or vehicle-performance result.",
+      "font_note": "Uses local system sans-serif text; no font file is redistributed.",
+      "hash_sha256": "f1cfea9ee1b06f6a31df12f955a47fd62556c467d069507080e57c2ffea34ebf"
+    },
+    {
       "path": "visual/assets/curbside-test-gates.json",
       "asset_class": "metadata_or_matrix",
       "author": "许丙南 / Codex",

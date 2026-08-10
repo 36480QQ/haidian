@@ -91,19 +91,27 @@ The three detailed points are stored in `visual/assets/autonomy_nodes.json`; the
 
 Zhongzhiyuan hosts managed-window safety evaluation, the AI Origin Community hosts equivalent automated and human service, and Dazhongsi hosts rail interchange, curb logistics and event-day separation. Each node must connect to a scenario card, curb state, responsible party, data boundary and stop condition; the node file is a low-confidence design register, not a permit or construction location. Survey, signal timing, station accessibility, fire routes, logistics windows and stratified resident baselines are still missing, so any first test must be closable, human-handover-ready and publicly replayable [data:visual/assets/autonomy_nodes.json#AUTO-NODE-001].
 
-### Conceptual Massing and Human-First Interfaces for the Three Test Yards
+### Public Interfaces and Reversible Relationships for the Three Test Yards
 
-An autonomous node cannot be reduced to a vehicle stopping point. The ledger below translates each test yard’s automation relationship into a ground-floor interface and a conceptual intensity range for later urban-design comparison; it does not change the node file or create a new redline.
+An autonomous node cannot be reduced to a vehicle stopping point. The ledger below translates each test yard’s automation relationship into public interfaces, ordinary routes and reversible service relationships for later urban-design comparison; it does not change the node file or create a new redline. Official controls, tenure, utilities, fire review and a demolition schedule are absent, so no development control, storey count or engineering scale is filled in.
 
-| Test yard | Ground-floor choice | Conceptual intensity | Public-facing height | First professional evidence to collect |
-| --- | --- | --- | --- | --- |
-| Zhongzhiyuan | Separate enterprise arrival, low-speed service, maintenance/charging and fire-clearance layers; keep automation within a closable managed interface | FAR 1.2–1.8 for design comparison only | 2–4 storeys; upper height unknown | Existing buildings, ownership, fire/energy review, managed-site boundary and enterprise OD |
-| AI Origin Community | Put staffed service, continuous accessibility and equivalent paper/phone entry before the pick-up bay; automation cannot cut the daily route | FAR 1.0–1.5 for design comparison only | 2–3 storeys; upper height unknown | Accessibility walk, resident-service baseline, care/night needs, ownership and safety |
-| Dazhongsi | Separate rail transfer, walking-priority curb, loading clearance and public explanation; return the whole interface to human-only during events or network loss | FAR 0.8–1.3 for design comparison only | 1–3 storeys; upper height unknown | Station flow, curb counts, traffic organisation, fire, municipal and event-emergency evidence |
+| Test yard | Ground-floor choice | Public interface and reversible relationship | First professional evidence to collect |
+| --- | --- | --- | --- |
+| Zhongzhiyuan | Separate enterprise arrival, low-speed service, maintenance/charging and fire-clearance layers; keep automation within a closable managed interface | Public observation, human takeover and safety replay face the ordinary route; testing and maintenance back-of-house can close without cutting the accessible spine | Existing buildings, ownership, fire/energy review, managed-site boundary and enterprise OD |
+| AI Origin Community | Put staffed service, continuous accessibility and equivalent paper/phone entry before the pick-up bay; automation cannot cut the daily route | Paper, phone and staffed entries face the ordinary route; service is not app-dependent, and automation components can pause and return to human service | Accessibility walk, resident-service baseline, care/night needs, ownership and safety |
+| Dazhongsi | Separate rail transfer, walking-priority curb, loading clearance and public explanation; return the whole interface to human-only during events or network loss | Arrival, quiet movement, staffed service and bounded loading are separated; display and booking can withdraw without occupying fire, access or emergency routes | Station flow, curb counts, traffic organisation, fire, municipal and event-emergency evidence |
 
-FAR and storeys are conceptual research ranges, not regulatory-plan conditions, vehicle-testing permissions, building permits or construction commitments. A formal scheme must recalculate them after official planning, survey, ownership, structural, fire, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
+These relationships answer which public and reversible conditions to compare first; they do not answer where construction is permitted, how much can be built, or whether a vehicle may operate. A formal scheme must determine development controls and engineering scale after official planning, survey, ownership, structural, fire, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
 
 Until that evidence exists, spatial actions remain removable wayfinding, weather shelter, staffed service, accessible ramps, curb-state boards and movable separation. Nothing here authorises road widening, building increment, demolition or autonomous operation on a social road [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
+### Autonomous-Mobility Functional Bands at the Three Nodes (Concept Only)
+
+To prevent a “node” from being read as a vehicle stopping point, this package separates five continuous interfaces: ordinary human route, public status and consent, bounded service window, human handover/stop, and restoration of the ordinary route. Zhongzhiyuan first tests a closable safety-evaluation yard; AI Origin preserves paper, telephone and equivalent human service; Dazhongsi separates rail arrival, quiet movement, and loading/maintenance windows. Dimensions, capacity, speed, right-of-way, permits and performance remain null; the plan expresses functional bands only, not a road section or redline [data:visual/assets/autonomy-node-interface-plans.json#AV-INTERFACE-001].
+
+![Public interface and functional bands for three autonomous-mobility nodes](assets/figures/autonomy-node-interface.en.svg)
+
+Caption: The three-row plan makes “ordinary route first, closable service, human fallback when evidence is missing” visible in one view. Colors express interface relationships, not existing-condition measurements, engineering dimensions, or vehicle performance.
 
 ![Key-area public roles and stop conditions](assets/figures/key-areas.en.png)
 
@@ -112,6 +120,8 @@ Caption: The key-area board is not a point list: it places enterprise service, e
 ## 4. Design rules for an automated future
 
 **Curb before vehicle.** Draw the continuous human route and the exit-capable service zone before drawing a vehicle route. Curb states are `open`, `booked`, `service`, `restricted` and `human-only`; every change needs an owner, time window, sign and restoration condition.
+
+The “status board plus removable functional bands” is a methodological transfer, not a local finding: curb research prompts fields for enforcement, public communication, data management and interagency coordination; citizen research on driverless streets treats greenery, seating, shelter and micromobility as questions for public preference in flexible zones; place-based eHMI research suggests that autonomous interfaces should be integrated with the context of a place. These studies only define what should be asked, measured and professionally reviewed next; their samples and outcomes are not transferred into Jing-Zhang preferences, dimensions or safety effects [source:DIEHL-CURBSPACE-MANAGEMENT-2021] [source:FAYYAZ-DRIVERLESS-STREETS-2025] [source:WANG-PLACE-BASED-EHMI-2025].
 
 ### A typical curb cross-section: continuity before the service window
 

@@ -13,3 +13,5 @@ v4 planning diagrams, concept cells, cross-city seams, ecosystem mapping, and wo
 v5 policy translations, people-flow hypotheses, planning-horizon diagram, and goal audit are deterministic original diagrams based on linked official aggregate sources. No government graphics or personal data are embedded.
 
 v5.2 cites and paraphrases thirteen academic sources for existing-condition correction, design-variable selection, governance, and falsification rules. Six user-provided files were reviewed locally but are not redistributed. No source article figures, tables, or long passages are embedded. Eleven sources have full-text, manuscript, full-HTML, or page-by-page visual review; two remain explicitly abstract-screened pending full text.
+
+v5.2-depth includes a derived 100m display grid from ESA WorldCover 2021 under CC BY 4.0 with required attribution. The public Dazhongsi PDF is cited and paraphrased but not redistributed. Agent runtime artifacts contain prompts and concise audit outcomes, not hidden chain-of-thought.

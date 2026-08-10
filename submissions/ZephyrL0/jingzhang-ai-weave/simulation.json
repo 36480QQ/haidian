@@ -269,5 +269,12 @@
       "dispatch_schema_valid": true,
       "audit_complete": true
     }
-  ]
+  ],
+  "replay_artifacts": [
+    "visual/assets/agent-prompts.json",
+    "visual/assets/agent-traces.json",
+    "visual/assets/agent-runtime.json",
+    "visual/assets/replay.js"
+  ],
+  "human_decision_rule": "Every scaling, permit, pause, or exit decision remains with a named human/agency record; the Agent may expose contradictions but cannot approve implementation."
 }

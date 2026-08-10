@@ -161,6 +161,27 @@
       "statement_zh": "九个GeoJSON当前包含67个Agent概念设计要素、0个公共观测要素。",
       "impact_zh": "通过格式和拓扑检查不等于完成现状GIS、法定控规或工程设计。",
       "trigger": "取得正式边界、现状道路建筑、树木、水系、市政、客流和公众调查数据后逐层替换并整包重算。"
+    },
+    {
+      "id": "A-WORLDCOVER-001",
+      "status": "public_observation_limited",
+      "statement_zh": "2021 ESA WorldCover只作为100米聚合地表覆盖信号。",
+      "impact_zh": "可用于优先核实和概念保留，不可替代现状绿地、树木、宗地或法定用地。",
+      "trigger": "取得2026现场树木、土地和建筑资料后逐单元复核。"
+    },
+    {
+      "id": "A-DAZHONGSI-STRESS-001",
+      "status": "scoped_external_project",
+      "statement_zh": "3190人/小时是蓝景丽家大钟寺项目预测高峰，不是创新带现状客流。",
+      "impact_zh": "仅用于四角客厅局部压力测试。",
+      "trigger": "取得逐出口、15分钟粒度、工作日/周末/活动日匿名实测后替换。"
+    },
+    {
+      "id": "A-COST-BAND-001",
+      "status": "concept_only",
+      "statement_zh": "实施账本S/M/L只表达相对复杂度，不是投资估算。",
+      "impact_zh": "不得据此预算、招标或承诺建设。",
+      "trigger": "明确主体、工程范围、单价和运维标准后编制专业估算。"
     }
   ]
 }
