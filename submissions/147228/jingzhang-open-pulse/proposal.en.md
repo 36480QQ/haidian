@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v4.0"
+iteration: "v4.2"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v4.0; v3.3 names the retained spatial-object and drawing-export layer. v4.0 keeps v3.9's human-first buffer, minimum city-API fields, compute–energy gates and versioned governance, and adds an eight-position public-interest trade-off register that places stance, affected groups, release evidence and exit boundaries on one review surface; it changes no spatial objects, area metrics, source classifications or implementation boundary.
+> **Package version note:** This package is iteration v4.2; v3.3 names the retained spatial-object and drawing-export layer. v4.2 keeps the v4.1 trade-off register, human-capacity gates and process screening, then closes the provenance readback for model-output numbers visible in the bilingual proposal; it changes no spatial objects, area metrics, source classifications or implementation boundary. Model outputs remain neither current conditions, forecasts, causal estimates, field performance nor official scores.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
@@ -30,6 +30,19 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | Risk and compliance | Provisional boundaries, unknown baselines, design targets and paper methods are not upgraded into official red lines, existing facts or approvals. Missing rights, fire, heritage, privacy, maintenance, insurance, cyber isolation, flood-equity or takeover proof stops the concept. | sources.json, risk.json, operational-assurance-contract.json, v2-evidence-gate-index.json |
 | Expression completeness | Chinese and English proposals, five fixed review figures, A3/A0, offline HTML, recomputable metrics and three matrices share one spatial/version ledger; v3.3 subdivides buildings, green space, public rooms, scenario anchors, phases and pending constraints without changing the prior area metrics. | manifest.json, metrics.json, geometry/*.geojson, qa-readiness.json |
 | Source-register completeness | The 68 unique source IDs in the Chinese proposal match the 68 records in package `sources.json` one-to-one; five are formal-usable, four are `background_only`, one is `provisional-only`, four are package build-toolchain records, one is a boundary cross-check background record, and the rest are repository navigation, case or standard records. Every record provides a title, publisher or registering body, URL/path, access date, authority level, usable scope and disabled scope. `data/source_registry.json` remains authoritative for formal/provisional use boundaries; package registration does not upgrade provisional or background material into formal evidence. | sources.json, data/source_registry.json, visual/assets/evidence-ledger.json, visual/assets/territorial-data-baseline.json |
+
+## What the AI changes: from constraints to locatable spatial moves
+
+This package limits the model role to organising constraints, comparing options and returning evidence to the design record. The model does not replace planning, transport, fire, medical, legal or procurement decisions. `agent.json` records OpenAI GPT-5 family via Codex; the table below is a design-decision summary for this submission, not a verbatim prompt log, field measurement or model-performance proof.
+
+| Input and question | AI translation | Adopted spatial/operational output | Reviewable entry | Return condition |
+| --- | --- | --- | --- | --- |
+| How do agent.1–agent.6 and the three scopes become one spatial structure? | Compress the task into one belt, three nodes, multiple scenarios and a blue-green slow-mobility loop, with distinct roles for the three key areas. | Public spine, three nodes and a regional capability loop. | `assets/figures/site-overview.png`, `assets/figures/key-areas.png`, `visual/assets/regional-ecosystem.json` | If official polygons, ownership or key-area conditions change, recompute the layers and metrics; do not carry the old alignment forward. |
+| How can last-mile movement, transfers and spatial conflicts be seen? | Compare one north–south public spine with three east–west connectors, keeping the network conceptual rather than treating a screening line as an engineering alignment. | `ROAD-001`–`ROAD-004`, three node entries and the slow-mobility/blue-green interface. | `geometry/roads.geojson`, `assets/figures/mobility-bluegreen.png`, `metrics.json` | Missing road controls, accessible continuity, station interfaces, fire review or ownership returns the work to field survey and ordinary routes. |
+| How can AI scenarios avoid displacing care, quiet use and account-free service? | Bind every scenario to an ordinary equivalent, human responsibility, negative evidence, public receipt and retirement decision. | 14 scenarios, 8 action packages, 8 public trade-offs and the S02 synthetic negative replay. | `visual/assets/scenario-operation-matrix.json`, `visual/assets/public-interest-position-register.json`, `visual/assets/open-pulse-tabletop-evidence.json` | Missing baseline, staffing, safety review or redress keeps the window on `hold`; it does not open. |
+| How should unknown metrics, compute/energy and version changes affect scale? | Prefer reversible, maintainable low-disturbance windows; establish evidence gates before discussing expansion. | Minimum city-API fields, compute–energy interfaces, 40 phase/exit gates and version rollback. | `assets/figures/city-api-energy-governance.png`, `visual/assets/operations-matrix.json`, `visual/assets/human-capacity-gates.json` | `unknown`, `not_authorized_not_run` or a missing human fallback rules out capacity, performance or implementation claims. |
+
+Each output in the table returns to a figure, a geometry layer or a structured record. The return conditions retain decision power for professionals, rights holders and affected publics. The record describes how a conceptual design was formed; it does not promote model output into official fact or field result.
 
 ## v3.3 Three key areas: spatial moves before technology labels
 
