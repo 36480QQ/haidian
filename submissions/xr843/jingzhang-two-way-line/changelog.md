@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-10
+
+- **Logo 落地为可缩放矢量图**：§3.2 此前只有文字描述的「双箭同轨」方向，现绘制为 `assets/two-way-line-logo.svg`（彩色）与 `assets/two-way-line-logo-mono.svg`（单色，`currentColor`）。两版几何一致，无文字、无外链、无未授权字体商标；离线展示页双语页首各引入一次。
+- **对开协议从散文变为可复算契约**：新增 `visual/assets/twoway-protocol.schema.json`（班次凭证机读契约）、`twoway-runbook.json`（十二张真实班次卡 + 六个必须被拒的变异班次）、`run_twoway_tabletop.js`（Node 18+，无外部依赖的桌面推演）与 `twoway-tabletop-evidence.json`（本包记录的运行结果）。
+- **闸门做了变异测试，不是摆设**：推演除检验十二张卡是否满足协议六条规则外，另要求六个变异班次各自被其对应规则拦下，否则同样判失败；实测把真实班次的运营主体清空、或把隐私红线翻转，脚本立即判红并以非零码退出。本包记录结果为 12/12 可排图、6/6 变异被拦下。
+- **补全协议第三要素**：§6.2 的班次表原本只公布节点与上下行清单，而协议要求「节点、运营主体、上下行清单」三要素齐全方可排图。§6.3 新增十二张卡的运营主体与叫停主体指派表，依本方案自设的运行图管委会、三站乘务组、两台协调人架构编制，并明示全部为概念性运营建议、非既有机构或已批准的行政安排。
+- 中英正文等义同步，`report/proposal.html` 与 `report/proposal.en.html` 已用 `scripts/render_proposal_html.py` 重新渲染。
+- 未改动几何、指标数值、图纸与许可声明；未触碰其它投稿包、`submissions-data.js` 与 `gallery-publication.json`。
+
 ## v1.1 - 2026-08-10
 
 - 持久化本包在当前 main 提交上的真实四门自检结果（deterministic validation / spatial review / visual packaging / professional evidence 均为 PASS），并写入 `review_status=formal-review-ready` 与 `manifest.validation_claim.readiness_contract=persisted-self-check-v1`。响应 #883 测得的存量缺口与 #807 的 readiness 契约。

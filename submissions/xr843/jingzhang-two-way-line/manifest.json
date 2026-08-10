@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "823c73a32661253d72a700cc3b3a606e10a9849bf337858041e480e8952dd3b7"
+      "sha256": "ed140514d0f2c81f35812f056d9f32922777a983fb47f2d8982b466b5d0e643f"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "119e5bf5cb1d726d847c3b28bc07e1da6fed3e6a1283a47481330836e0fa9ab8"
+      "sha256": "5fa5574d99836e4618e68cf3ad3ee7fdcdfddc8539b851bb8bdaf62d59c010ba"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c2bbfe388e73b8b89c4dc288d589f5c2f34ae9e851b3759e9906ce462f8bdc9a"
+      "sha256": "4d86f53f1e2a4396b17b6c8a1bc6defd16170449eeb54b0f11fe54a1eda7137e"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "edf5cdffec41bf273a8e1092d9f4a0ee20e4847d70fe3587cf214e5c056e4818"
+      "sha256": "3f5e1a8b538b7dee62597ec50c7adfb1dfc4d356ae32eeaecf7c9619e7d3048e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b6b7b68d25bceb5fa43bd4578bd9e15933816222ef58cd3836f4d595c75e3e72"
+      "sha256": "d4e85294f191dc29c2bd4dfeb641f2e2fa8c6d6ed1c59b0f091adef9f6213d74"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "95ad29c32eba9e34951b277e826b4edc864f76d125f0831e26f9620dc84565f4"
+      "sha256": "df16838d5f31791e0dc8e8b50fa3055753eb39aff16e254722b3423995f1739c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c93bc6719285a34ed6f52fc7662dd8d3f20c9cc3cc34fd3981e9ccc448d21100"
+      "sha256": "d888ecfbefc6c7641c522bd165bda8ca7174bb2217ab72db4558d9689f4a20a8"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "86cb9ea4a67147626310cfd03d53ffca8624f2fe6e20891f17b045af3c7d56a1"
+      "sha256": "89f849a9bfa5fc731a0c82651a535d0c19177197131845fa7a2c2a2e4722763c"
     },
     {
       "path": "risk.json",
@@ -300,6 +300,42 @@
       "role": "spatial_concepts",
       "required": false,
       "sha256": "7a6f0d70f19f6b4e7d3ef90aa2e411c687da15657fc4606ae0d6171fd51fc756"
+    },
+    {
+      "path": "assets/two-way-line-logo.svg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "c3f28a78f253b6784a0f4ee7226a8cdbcdf85d784a9105a1b7712b2db0cf7a96"
+    },
+    {
+      "path": "assets/two-way-line-logo-mono.svg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "18e359c820733433f4b4f8c2f3c5458848805630bbcd75ebbee03c678178f6c5"
+    },
+    {
+      "path": "visual/assets/twoway-protocol.schema.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "10187a25d5a0d912a420afe0cb01cca63c7f1c91fc28df319cfe0032513deb20"
+    },
+    {
+      "path": "visual/assets/twoway-runbook.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "034411a13352deca49248669cf87b83a93e8f6f246651b70ac7d0843b49f02e9"
+    },
+    {
+      "path": "visual/assets/run_twoway_tabletop.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "ed92d352631677fd4aae3019b87347b082c27b94ec0140a5a0249a8e3ea0ae91"
+    },
+    {
+      "path": "visual/assets/twoway-tabletop-evidence.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "67f5bd0fafc76e47766854bb9038ca24f667ee324205d841ee128ad1acabbb35"
     }
   ],
   "validation_claim": {
