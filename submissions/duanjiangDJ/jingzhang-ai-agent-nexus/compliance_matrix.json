@@ -1077,7 +1077,9 @@
     "EXT-GLOBAL-005",
     "EXT-GLOBAL-006",
     "EXT-GLOBAL-007",
-    "EXT-GLOBAL-008"
+    "EXT-GLOBAL-008",
+    "POLICY-AI-PLUS-2025",
+    "POLICY-BEIJING-DIGITAL-2021"
    ],
    "assumption_ids": [
     "A-CONTROLS-001",
@@ -1087,7 +1089,9 @@
     "A-SIGNAL-001",
     "A-ACCESS-001",
     "A-LEDGER-001",
-    "A-PILOTDEMO-001"
+    "A-PILOTDEMO-001",
+    "A-POLICY-001",
+    "A-DAZHONGSI-001"
    ],
    "self_check_ids": [
     "BOUNDARY_TRUST",
@@ -1438,7 +1442,10 @@
     "EXT-GLOBAL-005",
     "EXT-GLOBAL-006",
     "EXT-GLOBAL-007",
-    "EXT-GLOBAL-008"
+    "EXT-GLOBAL-008",
+    "POLICY-GLOBAL-AI-2025",
+    "POLICY-AI-SAFETY-2025",
+    "POLICY-BEIJING-AIPLUS-2024"
    ],
    "assumption_ids": [
     "A-CONTROLS-001",
@@ -1448,7 +1455,8 @@
     "A-SIGNAL-001",
     "A-ACCESS-001",
     "A-LEDGER-001",
-    "A-PILOTDEMO-001"
+    "A-PILOTDEMO-001",
+    "A-POLICY-001"
    ],
    "self_check_ids": [
     "BOUNDARY_TRUST",
