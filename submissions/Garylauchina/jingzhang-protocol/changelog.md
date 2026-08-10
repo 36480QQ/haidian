@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-10
+
+- Replaced the two zero-page drawing placeholders and added their required English counterparts.
+- Generated matched twelve-page Chinese/English A3 landscape booklets and matched three-board Chinese/English A0 landscape sets from the local proposal, figures and metrics.
+- Kept the embedded analytical figures explicitly labelled as the unchanged V0.3 evidence snapshot while marking the surrounding publication system as the V0.4 layout.
+- Rendered and visually inspected all 30 PDF pages; verified page counts, exact A3/A0 MediaBoxes, selectable text, embedded font subsets, non-empty pages and sub-10 MiB file sizes.
+- Updated proposal status and copyright/build-dependency disclosures to reflect the new drawing outputs.
+- Kept `package_state=scaffold`; final manifest refresh, scaffold removal, official/professional inputs and push/PR authorization remain open. No remote push or formal PR has been created.
+
 ## v0.3 - 2026-08-10
 
 - Replaced generic scaffold layers with a topology-closed 3×4 spatial framework: BUILD / TEST / LIVE crossed by knowledge, green-spine, civic-interface and everyday-service bands.

@@ -192,19 +192,17 @@
     },
     {
       "check_id": "DRAWINGS_NONEMPTY",
-      "result": "fail",
+      "result": "pass",
       "severity": "blocking",
-      "target": "drawings/a3-booklet.pdf; drawings/a0-boards.pdf",
-      "message": "Zero-page drawing PDFs remain: drawings/a3-booklet.pdf, drawings/a0-boards.pdf",
-      "suggested_fix": "Generate the actual A3 booklet and A0 boards, then rerun this script."
+      "target": "drawings/a3-booklet.pdf; drawings/a3-booklet.en.pdf; drawings/a0-boards.pdf; drawings/a0-boards.en.pdf",
+      "message": "All four required bilingual drawing PDFs contain at least one page."
     },
     {
       "check_id": "BILINGUAL_DISPLAY_COMPLETE",
-      "result": "fail",
+      "result": "pass",
       "severity": "blocking",
       "target": "bilingual display package",
-      "message": "Missing bilingual counterparts: drawings/a3-booklet.en.pdf, drawings/a0-boards.en.pdf",
-      "suggested_fix": "Generate the missing English visual, drawing, and figure counterparts, then rerun this script."
+      "message": "All required English display counterparts are present."
     },
     {
       "check_id": "SCAFFOLD_REMOVED",

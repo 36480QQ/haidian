@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle and seven-interface protocol for accountable human–AI coexistence; V0.3 adds a topology-closed spatial framework, twelve governed scenario nodes and evidence-gated implementation packages while retaining provisional geometry."
+summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle and seven-interface protocol for accountable human–AI coexistence; V0.4 adds a topology-closed spatial framework, twelve governed scenario nodes, evidence-gated implementation packages and bilingual A3/A0 drawings while retaining provisional geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **A Civic Protocol for Human–AI Coevolution**  
 **How a city learns to live with AI**
 
-## V0.3 Core Proposition
+## V0.4 Core Proposition
 
 The proposal treats an AI city as more than a collection of devices, screens and demonstrations. It imagines the Centennial Jing-Zhang AI Innovation Belt as a visible, testable, contestable, reversible and continuously updated civic protocol: AI is built here, evaluated before entering society, used in ordinary life to create public value, and revised through evidence from operation and failure. Every institutional, spatial and operational move remains a conceptual recommendation for further planning, engineering, legal, ethical and public review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -28,7 +28,7 @@ Two civic infrastructures organize the loop. The **AI City API / Jing-Zhang AI C
 
 ## Design Basis and Source List
 
-The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]. V0.3 has a reproducible concept geometry and evidence structure, but A3/A0 outputs, final HTML, official controls and professional sign-off remain prerequisites for a formal submission.
+The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]. V0.4 has reproducible concept geometry, an evidence structure, bilingual HTML, an A3 booklet and A0 boards; official controls, professional sign-off, final manifest refresh and scaffold removal remain open. The V0.4 drawings use the unchanged V0.3 geometry-and-metric evidence snapshot, so the five embedded analytical-figure pairs retain their V0.3 labels.
 
 Exact official polygons, regulatory controls, road redlines, ownership/cadastral data, existing-building surveys, heritage controls, utilities and facility baselines remain pending official or rights-cleared data. SITE-001 and the three KEY_AREA polygons are explicitly provisional and must trigger whole-package regeneration when official geometry arrives [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. Complete evidence remains in `sources.json`, `metrics.json`, the GeoJSON layers and the three matrices.
 
@@ -128,7 +128,7 @@ The evidence chain is `source → judgment → geometry/metric → figure/drawin
 
 ## Risk, Copyright, and Compliance
 
-This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.3 is a locally verified working package, not yet ready for PR: A3/A0 outputs, final HTML, manifest refresh and official/professional inputs remain open [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson].
+This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.4 has completed bilingual A3/A0 and HTML presentation assets but remains a local draft: manifest refresh, scaffold removal and official/professional inputs remain open, and no push or formal PR will occur without final user confirmation [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson].
 
 ## References
 
