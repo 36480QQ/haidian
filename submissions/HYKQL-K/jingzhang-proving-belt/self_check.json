@@ -1,0 +1,82 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/site_boundary.geojson",
+   "message": "范围线为临时粗略 polygon，已标注 official_boundary=false 与 provisional_constraint；官方红线公开后须整体复算。"
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/key_areas.geojson",
+   "message": "三处重点区齐备且互不重叠，均标注为临时范围；面积与公告约数一致。"
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/land_use.geojson",
+   "message": "45 个用地单元对范围线构成无缝无叠剖分，残差 83.741 sqm，远小于容差 1141.3 sqm。"
+  },
+  {
+   "check_id": "LAYER_CONTAINMENT",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/",
+   "message": "绿地、公共空间与建筑基底均嵌套于范围线内，超出量在容差内；公共空间与建筑、绿地无重叠。"
+  },
+  {
+   "check_id": "METRIC_RECALC",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "message": "范围面积、绿地率、公共空间占比、建筑基底面积均由 EPSG:4548 独立复算并与图层一致。"
+  },
+  {
+   "check_id": "MISSING_CONTROLS_DECLARED",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "message": "五项官方规划控制指标缺失已作为显式指标声明，未以假定值替代控规结论。"
+  },
+  {
+   "check_id": "INCLUSION_FALLBACK",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/constraints.geojson",
+   "message": "12 个场景节点均声明人工兜底路径与数据边界，人工路径不得更慢更贵。"
+  },
+  {
+   "check_id": "PRIVACY_BOUNDARY",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "各场景均写明数据采集范围与退出机制；未使用个人隐私数据或未公开发布的受限材料。"
+  },
+  {
+   "check_id": "NO_FABRICATED_CLAIMS",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "未虚构企业名单、投资额、产值或财政承诺，未声称取得政府批准或法定控规结论。"
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "info",
+   "target": "visual/index.html",
+   "message": "电子展示成果为离线静态页面，不加载任何外部脚本、字体或地图瓦片。"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "各必需章节均含证据锚点，完整覆盖索引保存在三张矩阵表中。"
+  }
+ ]
+}
