@@ -18,6 +18,10 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/silvaling/jingzhang-stack/agent.json",
+        "submissions/silvaling/jingzhang-stack/assets/figures/coordination-diagram.en.png",
+        "submissions/silvaling/jingzhang-stack/assets/figures/coordination-diagram.png",
+        "submissions/silvaling/jingzhang-stack/assets/figures/ecology-map.en.png",
+        "submissions/silvaling/jingzhang-stack/assets/figures/ecology-map.png",
         "submissions/silvaling/jingzhang-stack/assets/figures/key-areas.en.png",
         "submissions/silvaling/jingzhang-stack/assets/figures/key-areas.png",
         "submissions/silvaling/jingzhang-stack/assets/figures/land-use-structure.en.png",
@@ -28,6 +32,8 @@
         "submissions/silvaling/jingzhang-stack/assets/figures/mobility-bluegreen.png",
         "submissions/silvaling/jingzhang-stack/assets/figures/site-overview.en.png",
         "submissions/silvaling/jingzhang-stack/assets/figures/site-overview.png",
+        "submissions/silvaling/jingzhang-stack/assets/figures/visual-identity.en.png",
+        "submissions/silvaling/jingzhang-stack/assets/figures/visual-identity.png",
         "submissions/silvaling/jingzhang-stack/assumptions.json",
         "submissions/silvaling/jingzhang-stack/compliance_matrix.json",
         "submissions/silvaling/jingzhang-stack/design_depth_matrix.json",
@@ -61,7 +67,7 @@
       "ai_package_stages": {
         "submissions/silvaling/jingzhang-stack": "formal"
       },
-      "total_bytes": 3833459,
+      "total_bytes": 4285353,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,10 +145,10 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 14,
           "standard": 5,
           "depth": 15,
-          "data": 11,
+          "data": 24,
           "metric": 6
         }
       }
