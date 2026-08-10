@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/scarletkc/jingzhang-neon-spine/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/scarletkc/jingzhang-neon-spine/changelog.md"
+      ],
       "changed_files": [
         "submissions/scarletkc/jingzhang-neon-spine/agent.json",
         "submissions/scarletkc/jingzhang-neon-spine/assets/figures/key-areas.en.png",
@@ -30,6 +32,7 @@
         "submissions/scarletkc/jingzhang-neon-spine/assets/figures/site-overview.png",
         "submissions/scarletkc/jingzhang-neon-spine/assets/visible-stack-hero.png",
         "submissions/scarletkc/jingzhang-neon-spine/assumptions.json",
+        "submissions/scarletkc/jingzhang-neon-spine/changelog.md",
         "submissions/scarletkc/jingzhang-neon-spine/compliance_matrix.json",
         "submissions/scarletkc/jingzhang-neon-spine/design_depth_matrix.json",
         "submissions/scarletkc/jingzhang-neon-spine/drawings/a0-boards.en.pdf",
@@ -53,16 +56,23 @@
         "submissions/scarletkc/jingzhang-neon-spine/report/narrative.md",
         "submissions/scarletkc/jingzhang-neon-spine/report/proposal.en.html",
         "submissions/scarletkc/jingzhang-neon-spine/report/proposal.html",
+        "submissions/scarletkc/jingzhang-neon-spine/risk.json",
         "submissions/scarletkc/jingzhang-neon-spine/self_check.json",
         "submissions/scarletkc/jingzhang-neon-spine/sources.json",
+        "submissions/scarletkc/jingzhang-neon-spine/spatial.json",
         "submissions/scarletkc/jingzhang-neon-spine/standard_matrix.json",
+        "submissions/scarletkc/jingzhang-neon-spine/visual/assets/civic-ai-passport.schema.json",
+        "submissions/scarletkc/jingzhang-neon-spine/visual/assets/delivery-contract.json",
+        "submissions/scarletkc/jingzhang-neon-spine/visual/assets/protocol-beacon-passport.fixture.json",
+        "submissions/scarletkc/jingzhang-neon-spine/visual/assets/protocol-beacon-tabletop-evidence.json",
+        "submissions/scarletkc/jingzhang-neon-spine/visual/assets/run-protocol-beacon-tabletop.js",
         "submissions/scarletkc/jingzhang-neon-spine/visual/index.en.html",
         "submissions/scarletkc/jingzhang-neon-spine/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/scarletkc/jingzhang-neon-spine": "formal"
       },
-      "total_bytes": 6487512,
+      "total_bytes": 6881084,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -120,6 +130,11 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
+        "pilot_interface_length_m": 100.0,
+        "pilot_duration_days": 100.0,
+        "delivery_gate_count": 6.0,
+        "tabletop_fixture_count": 4.0,
+        "regional_interface_count": 5.0,
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.150259,
         "public_space_ratio": 0.029929
@@ -136,15 +151,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 20,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 12,
+          "source": 14,
           "standard": 4,
           "depth": 8,
           "data": 8,
-          "metric": 7
+          "metric": 14
         }
       }
     },

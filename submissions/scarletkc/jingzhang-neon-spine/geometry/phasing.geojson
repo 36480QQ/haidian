@@ -15,39 +15,42 @@
         "name_zh": "核验并点亮",
         "name_en": "Verify and Light Up",
         "implementation_horizon": "0-12 months",
-        "area_sqm_declared": 5259538.333
+        "project_ids": [
+          "JZ-01",
+          "JZ-02",
+          "JZ-03"
+        ],
+        "delivery_contract_id": "PROTOCOL-BEACON-100X100",
+        "delivery_contract_note": "Phase 1 includes a removable 100-metre, 100-day public acceptance pilot at a Gate-0-selected Protocol Beacon interface; it does not authorise permanent construction.",
+        "area_sqm_declared": 3029407.326
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3553,
-              39.965
+              116.3417,
+              40.006
+            ],
+            [
+              116.3427,
+              40.0265
             ],
             [
               116.3553,
-              39.939
+              40.0265
             ],
             [
-              116.3407,
-              39.939
+              116.35390273972602,
+              40.001
             ],
             [
-              116.3397,
-              39.975
+              116.34137741935484,
+              40.001
             ],
             [
-              116.33976451612902,
-              39.976
-            ],
-            [
-              116.35442,
-              39.976
-            ],
-            [
-              116.3553,
-              39.965
+              116.3417,
+              40.006
             ]
           ]
         ]
@@ -66,6 +69,12 @@
         "name_zh": "连接并转化",
         "name_en": "Connect and Convert",
         "implementation_horizon": "1-3 years",
+        "project_ids": [
+          "JZ-04",
+          "JZ-05"
+        ],
+        "delivery_contract_id": null,
+        "delivery_contract_note": null,
         "area_sqm_declared": 3123871.974
       },
       "geometry": {
@@ -113,35 +122,46 @@
         "name_zh": "扩展并共治",
         "name_en": "Scale and Steward",
         "implementation_horizon": "3-5 years",
-        "area_sqm_declared": 3029407.326
+        "project_ids": [
+          "JZ-06",
+          "JZ-07",
+          "JZ-08"
+        ],
+        "delivery_contract_id": null,
+        "delivery_contract_note": null,
+        "area_sqm_declared": 5259538.333
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3417,
-              40.006
-            ],
-            [
-              116.3427,
-              40.0265
+              116.3553,
+              39.965
             ],
             [
               116.3553,
-              40.0265
+              39.939
             ],
             [
-              116.35390273972602,
-              40.001
+              116.3407,
+              39.939
             ],
             [
-              116.34137741935484,
-              40.001
+              116.3397,
+              39.975
             ],
             [
-              116.3417,
-              40.006
+              116.33976451612902,
+              39.976
+            ],
+            [
+              116.35442,
+              39.976
+            ],
+            [
+              116.3553,
+              39.965
             ]
           ]
         ]
