@@ -277,6 +277,30 @@
       ],
       "reason": "No cleared household baseline, eligibility rule, or follow-up register is available; the proposal defines the protocol only."
     },
+    "sustained_employment_transition_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "consented eligible participants in an agreed paid transition role at the predeclared follow-up point / consented eligible participants with a documented baseline",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-JOBS-001"
+      ],
+      "reason": "No locally authorized participant baseline, paid-pathway definition, follow-up window, or outcome register is available; the skills-transition corridor is not an employment result."
+    },
+    "manual_service_equivalence_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [],
+      "formula": "applicable service interactions with an independently verified equal-status human, phone, or paper fallback / applicable service interactions in the declared service catalogue",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-ACCESS-001"
+      ],
+      "reason": "No operating service catalogue, accessibility walk-through, or observed availability record exists for this conceptual proposal."
+    },
     "operational_pue": {
       "status": "unknown",
       "value": null,

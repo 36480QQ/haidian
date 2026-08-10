@@ -54,11 +54,25 @@
       "message": "Known geometry, unknown transport baselines and pilot targets are separated."
     },
     {
+      "check_id": "IMPLEMENTATION_OPERATION_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/implementation-operation-contract.json",
+      "message": "P0/P1/P2 roles, acceptance metrics, human fallback and stop/withdrawal rules are registered; roles remain conceptual."
+    },
+    {
+      "check_id": "MOBILITY_TABLETOP_REHEARSAL",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/run-mobility-tabletop.js",
+      "message": "The M-09 synthetic fallback contract replays 4/4 fallback requests, 6/6 checks and 5/5 rollback steps; operational status remains not_authorized_not_run."
+    },
+    {
       "check_id": "NO_FIRST_PROJECT_EDIT",
       "result": "pass",
       "severity": "blocking",
-      "target": "submissions/147228/zhongzhiyuan-autonomy-commons",
-      "message": "The existing first-place package is outside this independent submission path."
+      "target": "participant_scope",
+      "message": "This independent submission package is limited to its own directory; sibling packages are outside its scope."
     },
     {
       "check_id": "VISUAL_STATIC",
@@ -94,6 +108,13 @@
       "severity": "major",
       "target": "visual/assets/air-mobility-gate.json",
       "message": "No air route or permit is claimed; any future experiment remains blocked until regulatory, safety and public-interest gates pass."
+    },
+    {
+      "check_id": "MOBILITY_RISK_REGISTER",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/run-mobility-risk-audit.js",
+      "message": "Eight bounded risk dimensions cover all 18 unknown metrics; evidence paths exist and air-ground transfer remains blocked_until_evidence. This is package-level linkage, not a field risk assessment."
     }
   ]
 }

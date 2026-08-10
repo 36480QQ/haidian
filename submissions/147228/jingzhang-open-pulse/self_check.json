@@ -60,10 +60,7 @@
       "design_slow_mobility_network_length_m": 13013.9,
       "osm_mapped_station_names_within_800m_count": 16,
       "osm_mapped_crossing_count": 189,
-      "resilience_v13_candidate_count": 5,
-      "resilience_v13_monte_carlo_draws": 50000,
-      "resilience_v13_selected_win_rate": 0.78862,
-      "resilience_v13_selected_p05_score": 70.252
+      "resilience_v13_candidate_count": 5
     }
   },
   "professional_review": {
@@ -153,6 +150,13 @@
       "severity": "info",
       "target": "sources.json + visual/assets/copyright-ledger.json",
       "message": "COMMUNITY-DISPLAY-ONLY is disclosed as a repository enum rather than a standard licence, and package-local provenance is not upgraded into third-party clearance."
+    },
+    {
+      "check_id": "OPEN_PULSE_TABLETOP_REHEARSAL",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/assets/run-open-pulse-tabletop.js",
+      "message": "The S02 offline fixture replays 4/4 branches, 6/6 checks and 5/5 rollback steps; result_status remains not_run and operational_status remains not_authorized_not_run."
     }
   ]
 }
