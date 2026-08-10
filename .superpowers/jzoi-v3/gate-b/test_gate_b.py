@@ -92,6 +92,31 @@ REQUIRED_KEY_AREA_CLASSES = {
     },
 }
 
+REQUIRED_LANDMARK_FIELDS = {
+    "location_ref",
+    "role",
+    "form",
+    "scale_concept",
+    "interaction",
+    "accessibility",
+    "non_digital_state",
+    "daytime_state",
+    "nighttime_state",
+    "maintenance",
+    "vi_relationship",
+    "endpoint_identity",
+}
+
+REQUIRED_COMPONENT_FIELDS = {
+    "where_used",
+    "dimensions_concept",
+    "clearance_accessibility",
+    "operational_state",
+    "information_hierarchy",
+    "public_path_relationship",
+    "scenario_refs",
+}
+
 
 def load_builder():
     spec = importlib.util.find_spec("build_gate_b")
@@ -251,6 +276,56 @@ class GateBModelTests(unittest.TestCase):
         self.assertEqual(station["properties"]["geometry_role"], "unresolved_context")
         self.assertFalse(station["properties"]["physical_connection_claim"])
         self.assertIsNone(station["geometry"])
+
+    def test_three_landmarks_define_physical_and_operational_states(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        self.assertIn("landmarks", model["layers"])
+        landmarks = model["layers"]["landmarks"]["features"]
+
+        self.assertEqual(len(landmarks), 3)
+        self.assertEqual({item["properties"]["endpoint"] for item in landmarks}, {"ZZY", "ORG", "DZS"})
+        for item in landmarks:
+            self.assertTrue(REQUIRED_LANDMARK_FIELDS <= set(item["properties"]), item["id"])
+            self.assertEqual(item["properties"]["evidence_class"], "DESIGN TARGET")
+
+    def test_all_component_families_have_spatial_and_operational_contracts(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        self.assertIn("components", model["layers"])
+        components = model["layers"]["components"]["features"]
+
+        self.assertEqual(
+            {item["properties"]["component_family"] for item in components},
+            {"IF-MARK", "CONSENT-POST", "HUMAN-DESK", "TEST-RAIL", "QUIET-BEACON"},
+        )
+        for item in components:
+            self.assertTrue(REQUIRED_COMPONENT_FIELDS <= set(item["properties"]), item["id"])
+
+    def test_all_twelve_projects_have_resolvable_specific_spatial_basis(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        self.assertIn("project_spatial_basis", model["layers"])
+        projects = model["layers"]["project_spatial_basis"]["features"]
+        all_feature_ids = {
+            item["id"]
+            for layer_name, layer in model["layers"].items()
+            if layer_name != "project_spatial_basis"
+            for item in layer["features"]
+        }
+
+        self.assertEqual(
+            {item["properties"]["project_id"] for item in projects},
+            {f"JZOI-P{index:02d}" for index in range(1, 13)},
+        )
+        self.assertEqual(len(projects), 12)
+        for item in projects:
+            props = item["properties"]
+            self.assertTrue(props["host_refs"], item["id"])
+            self.assertTrue(props["feature_refs"], item["id"])
+            self.assertTrue(set(props["feature_refs"]) <= all_feature_ids, item["id"])
+            self.assertTrue(props["dependencies"], item["id"])
+            self.assertTrue(props["scenario_refs"], item["id"])
 
 
 if __name__ == "__main__":

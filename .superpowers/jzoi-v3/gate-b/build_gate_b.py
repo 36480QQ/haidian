@@ -59,6 +59,10 @@ def multi_line(coordinates):
     return {"type": "MultiLineString", "coordinates": coordinates}
 
 
+def multi_point(coordinates):
+    return {"type": "MultiPoint", "coordinates": coordinates}
+
+
 def collection(name, features):
     return {"type": "FeatureCollection", "name": name, "features": features}
 
@@ -803,6 +807,236 @@ def build_dzs_plan():
     return collection("jzoi_gate_b_dzs_plan", features)
 
 
+def build_landmarks():
+    specs = [
+        (
+            "LANDMARK-ZZY-SAFETY-GANTRY",
+            "ZZY",
+            [116.3492, 40.0112],
+            "ZZY-HUMAN-REVIEW-GATE",
+            "marks the transition between ordinary city movement and controlled testing",
+            "open steel gantry with visible manual stop bar",
+            "district gateway; relative scale below surrounding landmark massing",
+            "walk-through threshold with staffed test-status panel",
+            "wide step-free passage, tactile edge, high-contrast stop state",
+            "fixed sign, manual stop bar, and staffed explanation remain available",
+            "open frame and test-status board",
+            "low-glare white frame with red physical stop state; no dynamic advertising",
+            "quarterly stop drill and replaceable rail/panel inspection",
+            "black frame, cyan access line, yellow bounded-test field, orange review point",
+            "Controlled Test Yard",
+        ),
+        (
+            "LANDMARK-ORG-OPEN-BRACKET",
+            "ORG",
+            [116.3475, 39.9888],
+            "ORG-COMMONS-ROOM",
+            "makes the public commons and four-way permeability legible",
+            "two offset enterable brackets framing the commons crossing",
+            "civic room marker; lower than adjacent medium massing",
+            "seating, notice rail, open-source display, and four-way passage",
+            "step-free central opening, tactile route, quiet seating edge",
+            "printed dependency board and staffed commons desk",
+            "open frame, shade, and public work surface",
+            "soft white task light and fixed green commons marker",
+            "monthly fastener, surface, tactile-route, and notice-board check",
+            "black brackets, green commons plane, cyan path, orange help point",
+            "Porous Commons",
+        ),
+        (
+            "LANDMARK-DZS-CIVIC-SWITCH",
+            "DZS",
+            [116.3507, 39.9470],
+            "DZS-SWITCHBOARD-PLAZA",
+            "marks consent, appeal, enterprise service, and culture as one civic interface",
+            "four-faced vertical switch with a low public canopy",
+            "endpoint marker using a relative landmark envelope, not a statutory height",
+            "four directional faces point to consent, appeal, adoption, and culture",
+            "step-free canopy, tactile orientation strip, quiet waiting bay",
+            "paper directory, staffed HUMAN-DESK, and fixed arrows remain operational",
+            "fixed civic directory and shaded waiting point",
+            "low-glare face lighting; service-open state shown without tracking",
+            "weekly directory update and quarterly lighting/manual-mode inspection",
+            "black switch frame, cyan movement, orange human service, white civic text",
+            "Urban Switchboard",
+        ),
+    ]
+    features = []
+    fields = [
+        "location_ref",
+        "role",
+        "form",
+        "scale_concept",
+        "interaction",
+        "accessibility",
+        "non_digital_state",
+        "daytime_state",
+        "nighttime_state",
+        "maintenance",
+        "vi_relationship",
+        "endpoint_identity",
+    ]
+    for item in specs:
+        feature_id, endpoint, coordinates, *values = item
+        features.append(
+            key_feature(
+                endpoint,
+                feature_id,
+                point(*coordinates),
+                "endpoint_landmark",
+                **dict(zip(fields, values)),
+            )
+        )
+    return collection("jzoi_gate_b_landmarks", features)
+
+
+def build_components():
+    specs = [
+        (
+            "COMP-IF-MARK",
+            "IF-MARK",
+            multi_point([[116.3485, 39.9470], [116.3475, 39.9885], [116.3485, 40.0165]]),
+            ["DZS", "ORG", "ZZY"],
+            "900 mm wide x 2200 mm high marker; concept dimension",
+            "1800 mm clear path beside marker; tactile base kept outside through-route",
+            "fixed endpoint and route identity; digital panel optional and independently switchable",
+            ["endpoint", "next public room", "human route", "operator/contact"],
+            "placed at gateways beside, never within, the clear public path",
+            ["SC-02", "SC-05", "SC-09"],
+        ),
+        (
+            "COMP-CONSENT-POST",
+            "CONSENT-POST",
+            multi_point([[116.3487, 40.0110], [116.3472, 39.9882], [116.3462, 39.9458]]),
+            ["ZZY", "ORG", "DZS"],
+            "450 mm wide x 1100 mm high post; concept dimension",
+            "1500 mm turning space and approach from both sides",
+            "notice, refusal, withdrawal, and human-contact states remain legible without power",
+            ["purpose", "minimum data", "refuse/withdraw", "human review", "complaint"],
+            "aligned with service threshold but set back from walking desire line",
+            ["SC-01", "SC-05", "SC-09"],
+        ),
+        (
+            "COMP-HUMAN-DESK",
+            "HUMAN-DESK",
+            multi_point(
+                [
+                    [116.3477, 39.9470],
+                    [116.3452, 39.9885],
+                    [116.3487, 40.0112],
+                    [116.3434, 39.9720],
+                    [116.3450, 40.0020],
+                    [116.3460, 40.0165],
+                ]
+            ),
+            ["DZS", "ORG", "ZZY", "OVERALL"],
+            "1800 mm desk module with 760 mm and 900 mm work surfaces; concept dimension",
+            "1500 mm turning circle, knee clearance, quiet-side waiting space",
+            "staffed, paper, telephone, and spoken-service modes; screen never mandatory",
+            ["service name", "queue", "documents", "appeal", "operator"],
+            "visible from PARALLEL-HUMAN with no controlled threshold before help",
+            [f"SC-{index:02d}" for index in range(1, 13)],
+        ),
+        (
+            "COMP-TEST-RAIL",
+            "TEST-RAIL",
+            point(116.3468, 40.0147),
+            ["ZZY"],
+            "1000 mm high modular rail; bay length set by test safety case",
+            "rail never reduces ordinary public bypass below concept clear width",
+            "manual red stop, lockable isolation, and staffed release; power not required",
+            ["test state", "stop", "responsible reviewer", "safe bypass"],
+            "defines controlled yard edge while preserving the separate ordinary path",
+            ["SC-01", "SC-02"],
+        ),
+        (
+            "COMP-QUIET-BEACON",
+            "QUIET-BEACON",
+            multi_point([[116.3445, 39.9487], [116.3458, 39.9908], [116.3518, 40.0190]]),
+            ["DZS", "ORG", "ZZY"],
+            "300 mm wide x 1400 mm high non-audio marker; concept dimension",
+            "located beyond tactile route with 1500 mm turning space nearby",
+            "fixed quiet-route symbol, tactile arrow, and low-glare status light",
+            ["quiet route", "distance band", "staffed help", "night state"],
+            "marks quiet waiting/route branches without narrowing the main path",
+            ["SC-04", "SC-07", "SC-12"],
+        ),
+    ]
+    features = []
+    for index, spec in enumerate(specs, start=1):
+        (
+            feature_id,
+            family,
+            geometry,
+            where_used,
+            dimensions,
+            clearance,
+            state,
+            hierarchy,
+            path_relation,
+            scenarios,
+        ) = spec
+        features.append(
+            feature(
+                feature_id,
+                geometry,
+                "spatial_component",
+                "OVERALL-DESIGN-001",
+                component_family=family,
+                where_used=where_used,
+                dimensions_concept=dimensions,
+                clearance_accessibility=clearance,
+                operational_state=state,
+                information_hierarchy=hierarchy,
+                public_path_relationship=path_relation,
+                scenario_refs=scenarios,
+                component_status="concept family and indicative instances",
+                detail_sequence=index,
+            )
+        )
+    return collection("jzoi_gate_b_components", features)
+
+
+def build_project_spatial_basis():
+    main_route = [
+        [[116.3460, 39.9452], [116.3485, 39.9470], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]],
+        [[116.3438, 39.9452], [116.3462, 39.9472], [116.3434, 39.9720], [116.3452, 39.9885], [116.3460, 40.0165]],
+    ]
+    specs = [
+        ("JZOI-P01", "Continuous public interface", multi_line(main_route), ["OVERALL-DESIGN-001"], "connect MAIN-IF, PARALLEL-HUMAN, gateways, and endpoint public rooms", ["official redlines", "accessibility survey", "fire access"], ["SC-02", "SC-04", "SC-08", "SC-12"], ["MAIN-IF-01", "MAIN-IF-02", "MAIN-IF-03", "MAIN-IF-04", "PARALLEL-HUMAN-01", "PARALLEL-HUMAN-02", "PARALLEL-HUMAN-03", "PARALLEL-HUMAN-04"]),
+        ("JZOI-P02", "Controlled Yard", point(116.3487, 40.0147), ["KEY-AREA-SCOPE-ZZY"], "controlled test yard, human review, observation, and physical stop", ["test safety case", "responsibility insurance", "professional review"], ["SC-01", "SC-02"], ["ZZY-CONTROLLED-YARD", "ZZY-HUMAN-REVIEW-GATE", "ZZY-TEST-RAIL-STOP"]),
+        ("JZOI-P03", "Qinghe human and ecology interface", line([[116.3435, 40.0212], [116.3535, 40.0212]]), ["KEY-AREA-SCOPE-ZZY"], "rainwater ecology edge, manual operation, and public bypass", ["Qinghe blue-line", "flood data", "maintenance agreement"], ["SC-03", "SC-04"], ["ZZY-QINGHE-RAIN-GARDEN", "ZZY-ORDINARY-PUBLIC-PATH", "COMP-QUIET-BEACON"]),
+        ("JZOI-P04", "Origin open-source commons", point(116.3475, 39.9885), ["KEY-AREA-SCOPE-ORG"], "four-way commons linking research, translation, and prototype", ["campus-city agreement", "open-source licensing review", "operating hours"], ["SC-05", "SC-06"], ["ORG-OPEN-SOURCE-COMMONS", "ORG-FOUR-WAY-PERMEABILITY", "ORG-TRANSLATION"]),
+        ("JZOI-P05", "Origin neighborhood service edge", line([[116.3426, 39.9915], [116.3524, 39.9915]]), ["KEY-AREA-SCOPE-ORG"], "staffed neighborhood and talent service edge", ["ownership survey", "ground-floor access agreement", "operating budget"], ["SC-07", "SC-08"], ["ORG-NEIGHBORHOOD-SERVICE", "ORG-TALENT-SERVICE", "COMP-HUMAN-DESK"]),
+        ("JZOI-P06", "Dazhongsi switchboard", point(116.3485, 39.9470), ["KEY-AREA-SCOPE-DZS"], "pedestrian convergence, consent, appeal, and procurement interface", ["station entrance evidence", "traffic survey", "municipal capacity"], ["SC-09", "SC-10", "SC-12"], ["DZS-PEDESTRIAN-CONVERGENCE", "DZS-CONSENT-ROOM", "DZS-APPEAL-ROOM", "DZS-PROCUREMENT-ADOPTION"]),
+        ("JZOI-P07", "Dazhongsi cultural forecourt", point(116.3507, 39.9470), ["KEY-AREA-SCOPE-DZS"], "culture, quiet navigation, and civic landmark interface", ["content rights", "noise review", "event safety"], ["SC-11", "SC-12"], ["DZS-CULTURE-ROOM", "LANDMARK-DZS-CIVIC-SWITCH", "COMP-QUIET-BEACON"]),
+        ("JZOI-P08", "Open research frontage", multi_line([[[116.3428, 39.9872], [116.3468, 39.9872]], [[116.3482, 39.9898], [116.3522, 39.9898]]]), ["KEY-AREA-SCOPE-ORG", "OVERALL-DESIGN-001"], "bookable public research and evaluation frontages", ["building survey", "fire review", "owner agreement"], ["SC-05", "SC-06"], ["ORG-ACTIVE-GROUND-FLOOR", "MASS-ORG-A", "MASS-ORG-B"]),
+        ("JZOI-P09", "Mixed service edge", multi_line([[[116.3464, 39.9462], [116.3505, 39.9462]], [[116.3452, 39.9874], [116.3498, 39.9874]], [[116.3463, 40.0112], [116.3510, 40.0112]]]), ["OVERALL-DESIGN-001"], "alternate civic and enterprise service frontage at three endpoints", ["tenancy review", "fire review", "public-service operating covenant"], ["SC-04", "SC-07", "SC-09"], ["DZS-SWITCHBOARD-PLAZA", "ORG-OPEN-SOURCE-COMMONS", "ZZY-PUBLIC-OBSERVATION"]),
+        ("JZOI-P10", "No-device service network", multi_point([[116.3477, 39.9470], [116.3452, 39.9885], [116.3487, 40.0112], [116.3434, 39.9720], [116.3450, 40.0020], [116.3460, 40.0165]]), ["OVERALL-DESIGN-001", "KEY-AREA-SCOPE-DZS", "KEY-AREA-SCOPE-ORG", "KEY-AREA-SCOPE-ZZY"], "distributed staffed, paper, telephone, and spoken-service network", ["staffing plan", "long-term operating budget", "service-distance survey"], [f"SC-{index:02d}" for index in range(1, 13)], ["COMP-HUMAN-DESK", "HUMAN-NODE-DZS-HRG", "HUMAN-NODE-ORG-HRG", "HUMAN-NODE-ZZY-HRG"]),
+        ("JZOI-P11", "Contribution and evidence ledger", multi_point([[116.3492, 40.0112], [116.3475, 39.9888], [116.3507, 39.9470]]), ["OVERALL-DESIGN-001"], "physical public ledger points at all three endpoint landmarks", ["consent procedure", "content rights", "independent audit"], ["SC-01", "SC-05", "SC-09", "SC-11"], ["LANDMARK-ZZY-SAFETY-GANTRY", "LANDMARK-ORG-OPEN-BRACKET", "LANDMARK-DZS-CIVIC-SWITCH"]),
+        ("JZOI-P12", "Annual public operations", multi_point([[116.3485, 39.9470], [116.3475, 39.9885], [116.3485, 40.0165]]), ["OVERALL-DESIGN-001"], "seasonal program distributed across the three endpoint public rooms", ["venue permissions", "annual budget", "event safety"], ["SC-02", "SC-05", "SC-07", "SC-10", "SC-11"], ["PUBLIC-ROOM-DZS", "PUBLIC-ROOM-ORG", "PUBLIC-ROOM-ZZY"]),
+    ]
+    features = []
+    for project_id, name, geometry, hosts, intervention, dependencies, scenarios, refs in specs:
+        features.append(
+            feature(
+                f"PROJECT-BASIS-{project_id}",
+                geometry,
+                "project_spatial_basis",
+                "OVERALL-DESIGN-001",
+                project_id=project_id,
+                project_name=name,
+                host_refs=hosts,
+                key_spatial_intervention=intervention,
+                dependencies=dependencies,
+                scenario_refs=scenarios,
+                feature_refs=refs,
+                spatial_status="Gate B basis only; project registry not finalized",
+            )
+        )
+    return collection("jzoi_gate_b_project_spatial_basis", features)
+
+
 def build_all(root=ROOT, write=True):
     root = Path(root)
     boundaries = read_json(REPO / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson")
@@ -819,6 +1053,9 @@ def build_all(root=ROOT, write=True):
         "zzy_plan": build_zzy_plan(),
         "org_plan": build_org_plan(),
         "dzs_plan": build_dzs_plan(),
+        "landmarks": build_landmarks(),
+        "components": build_components(),
+        "project_spatial_basis": build_project_spatial_basis(),
     }
     model = {
         "model_id": "JZOI-GATE-B",

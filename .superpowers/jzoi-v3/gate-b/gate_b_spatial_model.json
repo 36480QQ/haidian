@@ -60,6 +60,18 @@
     "dzs_plan": {
       "path": "spatial/dzs_plan.geojson",
       "feature_count": 14
+    },
+    "landmarks": {
+      "path": "spatial/landmarks.geojson",
+      "feature_count": 3
+    },
+    "components": {
+      "path": "spatial/components.geojson",
+      "feature_count": 5
+    },
+    "project_spatial_basis": {
+      "path": "spatial/project_spatial_basis.geojson",
+      "feature_count": 12
     }
   }
 }
