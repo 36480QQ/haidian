@@ -1,5 +1,5 @@
 # 方案摘要 / Proposal Summary
 
-京张霓光脊把百年轨道遗产转化为一条可见、可质询、可停用的公民 AI 公共协议。v1.1 以一脊、三引擎、两翼、十二端口、双账本组织空间、产业、场景与治理，并加入协议灯塔 100 米 / 100 天交付合同、角色型 RACI、一正三负合成桌面演练、七项公众权利和五个区域候选接口。核心图件均由 provisional GeoJSON 和可复算指标生成，不把赛博朋克封面当作空间证据。
+京张霓光脊把百年轨道遗产转化为一条可见、可质询、可停用的公民 AI 公共协议。v1.2 不扩场景、媒体或坐标，而把三片区平面/剖面/首证据接力、十二份操作合同、一正三负人工判定、预期回执与 G5 结案直接画入核心图和 PDF 首屏。核心图件均由 provisional GeoJSON、包内合同和可复算指标生成，不把赛博朋克封面当作空间证据。
 
-Jingzhang Neon Spine turns railway heritage into a visible, contestable and reversible civic AI protocol. v1.1 adds the Protocol Beacon 100 m / 100 days delivery contract, role-based RACI, one-positive/three-negative synthetic tabletop, seven public rights and five candidate regional interfaces. Core figures derive from provisional GeoJSON and reproducible metrics; the cyberpunk cover is illustrative only.
+Jingzhang Neon Spine turns railway heritage into a visible, contestable and reversible civic AI protocol. v1.2 adds no scenario, medium or coordinate; it makes the three-area plan/section/first-evidence relay, twelve operating contracts, one-positive/three-negative human decision, expected receipts and G5 closeout visible in the core figures and PDF first pages. Core figures derive from provisional GeoJSON, package contracts and reproducible metrics; the cyberpunk cover is illustrative only.

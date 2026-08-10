@@ -1,0 +1,87 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "PUBLIC-001",
+   "properties": {
+    "id": "PUBLIC-001",
+    "layer": "PUBLIC_SPACE",
+    "land_use_code": "1403",
+    "name_zh": "AI站前公共广场",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "area_sqm_declared": 332517.448
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.344,
+       39.94984
+      ],
+      [
+       116.35,
+       39.94984
+      ],
+      [
+       116.35,
+       39.944
+      ],
+      [
+       116.344,
+       39.944
+      ],
+      [
+       116.344,
+       39.94984
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "PUBLIC-002",
+   "properties": {
+    "id": "PUBLIC-002",
+    "layer": "PUBLIC_SPACE",
+    "land_use_code": "1403",
+    "name_zh": "AI站前公共广场",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "area_sqm_declared": 569038.38
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.344,
+       39.9935
+      ],
+      [
+       116.35,
+       39.9935
+      ],
+      [
+       116.35,
+       39.9835
+      ],
+      [
+       116.344,
+       39.9835
+      ],
+      [
+       116.344,
+       39.9935
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

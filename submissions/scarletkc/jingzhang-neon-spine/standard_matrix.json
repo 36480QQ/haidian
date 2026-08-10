@@ -134,7 +134,8 @@
         "building_height_m"
       ],
       "source_ids": [
-        "SITE-PACKAGE"
+        "SITE-PACKAGE",
+        "HD-URBAN-RENEWAL-GUIDELINE-2025"
       ],
       "assumption_ids": [
         "A-BUILDING-001",
@@ -183,7 +184,10 @@
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "BOUNDARY-SOURCE"
+        "BOUNDARY-SOURCE",
+        "HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208",
+        "HD-LANJINGLIJIA-SCHEME-ADOPTION-20250606",
+        "HD-URBAN-RENEWAL-GUIDELINE-2025"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -194,7 +198,7 @@
         "SPATIAL_REVIEW",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "矩阵明确分开可复算设计值、概念建议和 unknown 控规条件；不把临时面积、FAR、高度或道路中心线写成审定值。"
+      "evidence_summary_zh": "矩阵明确分开可复算设计值、概念建议和 unknown 控规条件；官方公开检索已登记，蓝景丽家相邻地块数值明确不可外推，不把临时面积、FAR、高度或道路中心线写成审定值。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",

@@ -2,6 +2,70 @@
   "version": 1,
   "disclaimer": "concept-only",
   "summary": "仅表达一脊、三引擎、两翼与首发验收段的概念关系，不包含坐标、红线、权属、审定道路或获批建设位置。",
+  "key_area_evidence_relay": [
+    {
+      "id": "relay-trust-assurance",
+      "spatial_item_id": "node-trust-foundry",
+      "contract_ref": "visual/assets/delivery-contract.json#key_area_evidence_relay",
+      "plan_sequence": [
+        "public approach",
+        "staffed gate",
+        "observable buffer",
+        "controlled test yard",
+        "edge-compute and maintenance back-of-house"
+      ],
+      "section_sequence": [
+        "public explanation layer",
+        "controlled assurance layer",
+        "electrical maintenance layer"
+      ],
+      "first_evidence": "signed safety and takeover evidence pack",
+      "data_transfer": "signed non-personal evidence objects only",
+      "next_relay_id": "relay-open-release",
+      "status": "concept_only_not_authorized_not_run"
+    },
+    {
+      "id": "relay-open-release",
+      "spatial_item_id": "node-station-zero",
+      "contract_ref": "visual/assets/delivery-contract.json#key_area_evidence_relay",
+      "plan_sequence": [
+        "open ground floor",
+        "staffed clinic and workshop",
+        "controlled reproducibility and release room",
+        "quiet neighbourhood buffer"
+      ],
+      "section_sequence": [
+        "everyday public layer",
+        "open-source reproducibility layer",
+        "maintenance and licensing layer"
+      ],
+      "first_evidence": "signed reproducibility and maintenance pack",
+      "data_transfer": "signed non-personal evidence objects only",
+      "next_relay_id": "relay-public-use",
+      "status": "concept_only_not_authorized_not_run"
+    },
+    {
+      "id": "relay-public-use",
+      "spatial_item_id": "node-agent-bazaar",
+      "contract_ref": "visual/assets/delivery-contract.json#key_area_evidence_relay",
+      "plan_sequence": [
+        "station arrival",
+        "no-app desk",
+        "ordinary market",
+        "human-confirmed provenance interface",
+        "controlled back end"
+      ],
+      "section_sequence": [
+        "ordinary transaction layer",
+        "contestable agent layer",
+        "permission and takedown back-of-house"
+      ],
+      "first_evidence": "signed adoption or refusal evidence pack",
+      "data_transfer": "signed non-personal evidence objects only",
+      "next_relay_id": "relay-trust-assurance",
+      "status": "concept_only_not_authorized_not_run"
+    }
+  ],
   "items": [
     {
       "id": "corridor-neon-spine",
