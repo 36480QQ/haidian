@@ -4,6 +4,7 @@
 
 - Migrated the ready package to the organizer's `persisted-self-check-v1` contract after PR #1602 CI introduced the blocking readiness-evidence requirement.
 - Persisted `ok=true`, `can_enter_formal_review=true`, and pass/blocking records for deterministic validation, spatial review, visual packaging, and professional evidence; no design narrative, drawings, figures, geometry, metrics, sources, or assumptions were changed.
+- Renamed the pre-existing major evidence-traceability record so it cannot shadow the unique blocking `PROFESSIONAL_EVIDENCE` gate during deterministic parsing.
 
 ## v0.8 - 2026-08-10
 
