@@ -252,6 +252,24 @@ The gate needs `required_next_actions_zh` empty, which needs `repair_count == 0`
 
 Filed on Issue #950 and PR #957.
 
+#### The fourth measurable gap: a field that decides the warning count and joins to nothing
+
+<!-- SPATIAL:BEGIN -->
+
+This one starts from the string of warnings this package's own PR carries and others do not. **Every submission's deterministic validation is printed on its PR, which makes the warning count one of the few numbers in this call that anyone can compare across packages.** 14 of this package's warnings come from a single field: one per `public_level: "provisional"` in `spatial.json`.
+
+By this proposal's own rule, measure before writing a sentence about it. Of **366 submissions**, **20** ship a `spatial.json`, holding **231 concept objects** split **public 56 / cleared 2 / provisional 173**. **13 packages** declare every item provisional; **6** declare at least one public. This package's 14 are all provisional, ranking **3 of 20** by warning count.
+
+`validate_submission.py` does two things with the field: checks membership in `{public, cleared, provisional}`, and warns once per provisional item. **It joins the value to nothing** — not `sources.json`, not the geometry, not the boundary the object rests on — and `docs/spatial.md` defines it in one line. The value is self-declared, unchecked, and exactly one of its three settings produces a warning.
+
+**What the measurement supports is much narrower than it first looks.** With a one-line definition and `geometry.mode` fixed at `concept`, the same node can honestly carry different levels in two packages that describe it identically. **The only conclusion available is that warning counts are not comparable across packages.** What is *not* available is that any package chose wrongly — this proposal did not measure that, so it does not say it, and names no package.
+
+**This proposal is not neutral here, and says so as it did in the previous section:** all 14 of its items are provisional, so any check that moved items out of `public` would relatively advantage it. So this reports the distribution, proposes no change, and does not ask for its own items to be reclassified into the setting that emits no warning. **The boundaries genuinely are provisional, and `provisional` is the only honest word for them**; rewriting that to shed 14 warnings is the thing this proposal spends its length arguing against.
+
+Counts, per-package profiles and the classification rule ship in `visual/assets/spatial_level_survey.json`. `fetch` reaches the network; `report` is fully offline, so anyone can change the rule and re-run.
+
+<!-- SPATIAL:END -->
+
 ## Three-Level Scope Framework
 
 The proposal is organised on the three levels the announcement sets, and each maps one-to-one onto an order of survey precision [depth:three_level_scope_framework].
