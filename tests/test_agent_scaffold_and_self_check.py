@@ -22,6 +22,8 @@ if HAS_REVIEW_DEPS:
     from shapely.geometry import shape  # noqa: E402
     from shapely.ops import transform  # noqa: E402
 
+from self_check_submission import run_json_command  # noqa: E402
+
 
 class AgentFacingDocsTests(unittest.TestCase):
     def test_agent_docs_use_scaffold_and_full_self_check_commands(self) -> None:
@@ -41,6 +43,36 @@ class AgentFacingDocsTests(unittest.TestCase):
         self.assertIn("Post-Submission Monitoring", skill)
         self.assertIn("gh pr checks", skill)
         self.assertIn("Uploading is not completion", skill)
+
+
+class SelfCheckEncodingTests(unittest.TestCase):
+    def test_run_json_command_decodes_utf8_diagnostics_independent_of_locale(self) -> None:
+        result = run_json_command(
+            [
+                sys.executable,
+                "-c",
+                "import sys; sys.stdout.buffer.write(('{' + chr(34) + 'message' + chr(34) + ': ' + chr(34) + '中文全角括号（），²' + chr(34) + '}\\n').encode('utf-8'))",
+            ]
+        )
+
+        self.assertEqual(0, result["returncode"])
+        self.assertTrue(result["ok"])
+        self.assertEqual("中文全角括号（），²", result["stdout"]["message"])
+
+    def test_run_json_command_handles_missing_streams_without_secondary_crash(self) -> None:
+        completed = subprocess.CompletedProcess(["fixture"], 1, stdout=None, stderr=None)
+        with mock.patch("self_check_submission.subprocess.run", return_value=completed) as run:
+            result = run_json_command(["fixture"])
+
+        run.assert_called_once_with(
+            ["fixture"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+        )
+        self.assertEqual({"returncode": 1, "ok": False, "stdout": {}, "stderr": ""}, result)
 
 
 def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT) -> subprocess.CompletedProcess:

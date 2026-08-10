@@ -24,18 +24,31 @@ def script_path(repo_root: Path, name: str) -> Path:
 
 
 def run_json_command(command: list[str]) -> dict[str, Any]:
-    completed = subprocess.run(command, capture_output=True, text=True, check=False)
+    # Validator subprocesses emit UTF-8 JSON and often include Chinese
+    # diagnostics.  Do not let the contributor's Windows code page decide how
+    # those bytes are decoded (GBK/cp936 otherwise crashes before a report is
+    # produced).
+    completed = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
     parsed: Any = {}
-    if completed.stdout.strip():
+    stdout = completed.stdout or ""
+    stderr = completed.stderr or ""
+    if stdout.strip():
         try:
-            parsed = json.loads(completed.stdout)
+            parsed = json.loads(stdout)
         except json.JSONDecodeError:
-            parsed = {"raw_stdout": completed.stdout}
+            parsed = {"raw_stdout": stdout}
     return {
         "returncode": completed.returncode,
         "ok": completed.returncode == 0,
         "stdout": parsed,
-        "stderr": completed.stderr.strip(),
+        "stderr": stderr.strip(),
     }
 
 
