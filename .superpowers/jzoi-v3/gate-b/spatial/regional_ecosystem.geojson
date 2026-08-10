@@ -463,7 +463,8 @@
         "service_or_resource": "IP",
         "stage": "research_translation",
         "output": "cleared IP route",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 1
       },
       "geometry": {
         "type": "LineString",
@@ -471,6 +472,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33282316036056,
+            39.98491796451749
           ],
           [
             116.3475,
@@ -493,7 +498,8 @@
         "service_or_resource": "law",
         "stage": "research_translation",
         "output": "legal review route",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 2
       },
       "geometry": {
         "type": "LineString",
@@ -501,6 +507,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33274569644938,
+            39.98526953149897
           ],
           [
             116.3475,
@@ -523,7 +533,8 @@
         "service_or_resource": "standards",
         "stage": "controlled_testing",
         "output": "test standard package",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 3
       },
       "geometry": {
         "type": "LineString",
@@ -531,6 +542,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.3329653025657,
+            39.99950168903612
           ],
           [
             116.3485,
@@ -553,7 +568,8 @@
         "service_or_resource": "capital",
         "stage": "startup_formation",
         "output": "capital referral record",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 4
       },
       "geometry": {
         "type": "LineString",
@@ -561,6 +577,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33259076862704,
+            39.98597266546193
           ],
           [
             116.3475,
@@ -583,7 +603,8 @@
         "service_or_resource": "startup support",
         "stage": "startup_formation",
         "output": "incubation support",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 5
       },
       "geometry": {
         "type": "LineString",
@@ -591,6 +612,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33288986539517,
+            39.984615226283445
           ],
           [
             116.3475,
@@ -613,7 +638,8 @@
         "service_or_resource": "international resources",
         "stage": "scaling",
         "output": "international connection",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 6
       },
       "geometry": {
         "type": "LineString",
@@ -621,6 +647,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.3330313662442,
+            39.96430947629852
           ],
           [
             116.3485,
@@ -643,7 +673,8 @@
         "service_or_resource": "technical services",
         "stage": "prototype",
         "output": "technical test support",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 7
       },
       "geometry": {
         "type": "LineString",
@@ -651,6 +682,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33319755573578,
+            39.999296363769815
           ],
           [
             116.3485,
@@ -673,7 +708,8 @@
         "service_or_resource": "compute",
         "stage": "controlled_testing",
         "output": "lawful compute access request",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 8
       },
       "geometry": {
         "type": "LineString",
@@ -681,6 +717,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33292784237698,
+            39.99953480601456
           ],
           [
             116.3485,
@@ -703,7 +743,8 @@
         "service_or_resource": "talent",
         "stage": "prototype",
         "output": "mentor and talent service",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 9
       },
       "geometry": {
         "type": "LineString",
@@ -711,6 +752,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33258000975049,
+            39.98602149420935
           ],
           [
             116.3475,
@@ -733,7 +778,8 @@
         "service_or_resource": "enterprise growth",
         "stage": "adoption",
         "output": "enterprise adoption service",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 10
       },
       "geometry": {
         "type": "LineString",
@@ -741,6 +787,10 @@
           [
             116.318,
             39.982
+          ],
+          [
+            116.33279765429835,
+            39.96410581303142
           ],
           [
             116.3485,
@@ -763,7 +813,8 @@
         "service_or_resource": "public-life",
         "stage": "scenario_definition",
         "output": "public-life context",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 11
       },
       "geometry": {
         "type": "LineString",
@@ -771,6 +822,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35338110426733,
+            39.98495102654325
           ],
           [
             116.3475,
@@ -793,7 +848,8 @@
         "service_or_resource": "ecology",
         "stage": "controlled_testing",
         "output": "ecology test context",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 12
       },
       "geometry": {
         "type": "LineString",
@@ -801,6 +857,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35363492788929,
+            39.99871596458698
           ],
           [
             116.3485,
@@ -823,7 +883,8 @@
         "service_or_resource": "community",
         "stage": "scenario_definition",
         "output": "community problem definition",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 13
       },
       "geometry": {
         "type": "LineString",
@@ -831,6 +892,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35298779146534,
+            39.98434794691352
           ],
           [
             116.3475,
@@ -853,7 +918,8 @@
         "service_or_resource": "mobility",
         "stage": "adoption",
         "output": "mobility adoption context",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 14
       },
       "geometry": {
         "type": "LineString",
@@ -861,6 +927,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35455259874058,
+            39.96375213862423
           ],
           [
             116.3485,
@@ -883,7 +953,8 @@
         "service_or_resource": "robotics",
         "stage": "controlled_testing",
         "output": "robotics test context",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 15
       },
       "geometry": {
         "type": "LineString",
@@ -891,6 +962,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35427741384069,
+            39.99890599564302
           ],
           [
             116.3485,
@@ -913,7 +988,8 @@
         "service_or_resource": "AI public-service",
         "stage": "human_review",
         "output": "public-service review and appeal",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 16
       },
       "geometry": {
         "type": "LineString",
@@ -921,6 +997,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35356845980867,
+            39.964056063882616
           ],
           [
             116.3485,
@@ -943,7 +1023,8 @@
         "service_or_resource": "testing-to-adoption",
         "stage": "adoption",
         "output": "scenario evidence to adoption gate",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 17
       },
       "geometry": {
         "type": "LineString",
@@ -951,6 +1032,10 @@
           [
             116.359,
             39.981
+          ],
+          [
+            116.35391243069749,
+            39.96394983757871
           ],
           [
             116.3485,
@@ -973,7 +1058,8 @@
         "service_or_resource": "research translation",
         "stage": "research_translation",
         "output": "problem and research brief",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 18
       },
       "geometry": {
         "type": "LineString",
@@ -981,6 +1067,10 @@
           [
             116.326,
             40.003
+          ],
+          [
+            116.33704634508418,
+            39.996189408228275
           ],
           [
             116.3475,
@@ -1003,7 +1093,8 @@
         "service_or_resource": "prototype",
         "stage": "controlled_testing",
         "output": "testable prototype",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 19
       },
       "geometry": {
         "type": "LineString",
@@ -1011,6 +1102,10 @@
           [
             116.3475,
             39.9885
+          ],
+          [
+            116.34711056705963,
+            40.00253176546215
           ],
           [
             116.3485,
@@ -1033,7 +1128,8 @@
         "service_or_resource": "reviewed evidence",
         "stage": "adoption",
         "output": "review record",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 20
       },
       "geometry": {
         "type": "LineString",
@@ -1041,6 +1137,10 @@
           [
             116.3485,
             40.0165
+          ],
+          [
+            116.348,
+            39.981750000000005
           ],
           [
             116.3485,
@@ -1063,7 +1163,8 @@
         "service_or_resource": "exit and appeal feedback",
         "stage": "exit_feedback",
         "output": "corrective record",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 21
       },
       "geometry": {
         "type": "LineString",
@@ -1071,6 +1172,10 @@
           [
             116.3485,
             39.947
+          ],
+          [
+            116.3358054527556,
+            39.9526285495698
           ],
           [
             116.323,
@@ -1093,7 +1198,8 @@
         "service_or_resource": "feedback",
         "stage": "research",
         "output": "revised problem brief",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 22
       },
       "geometry": {
         "type": "LineString",
@@ -1101,6 +1207,10 @@
           [
             116.323,
             39.958
+          ],
+          [
+            116.32428048726527,
+            39.98051463418231
           ],
           [
             116.326,
@@ -1123,7 +1233,8 @@
         "service_or_resource": "lawful / consented data access",
         "stage": "research_prototype",
         "output": "purpose-bound access request with source, license/legal basis, and minimum-data rule",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 23
       },
       "geometry": {
         "type": "LineString",
@@ -1131,6 +1242,10 @@
           [
             116.321,
             39.982
+          ],
+          [
+            116.33411183151388,
+            39.98581330228958
           ],
           [
             116.3475,
@@ -1153,7 +1268,8 @@
         "service_or_resource": "lawful / consented data access",
         "stage": "controlled_testing",
         "output": "minimum-data test package with provenance, retention, and withdrawal conditions",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 24
       },
       "geometry": {
         "type": "LineString",
@@ -1161,6 +1277,10 @@
           [
             116.3475,
             39.9885
+          ],
+          [
+            116.34706059891691,
+            40.00253355003868
           ],
           [
             116.3485,
@@ -1183,7 +1303,8 @@
         "service_or_resource": "lawful / consented data access",
         "stage": "review_adoption",
         "output": "human-reviewed data-use record for adoption, rejection, or exit",
-        "physical_corridor_claim": false
+        "physical_corridor_claim": false,
+        "schematic_offset_sequence": 25
       },
       "geometry": {
         "type": "LineString",
@@ -1191,6 +1312,10 @@
           [
             116.3485,
             40.0165
+          ],
+          [
+            116.34805,
+            39.981750000000005
           ],
           [
             116.3485,

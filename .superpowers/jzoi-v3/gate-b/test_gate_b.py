@@ -1,3 +1,4 @@
+import copy
 import importlib
 import importlib.util
 import json
@@ -123,6 +124,13 @@ def load_builder():
     if spec is None:
         return None
     return importlib.import_module("build_gate_b")
+
+
+def load_qa():
+    spec = importlib.util.find_spec("jzoi_semantic_qa")
+    if spec is None:
+        return None
+    return importlib.import_module("jzoi_semantic_qa")
 
 
 class GateBModelTests(unittest.TestCase):
@@ -326,6 +334,79 @@ class GateBModelTests(unittest.TestCase):
             self.assertTrue(set(props["feature_refs"]) <= all_feature_ids, item["id"])
             self.assertTrue(props["dependencies"], item["id"])
             self.assertTrue(props["scenario_refs"], item["id"])
+
+
+class GateBSemanticQATests(unittest.TestCase):
+    def setUp(self):
+        self.builder = load_builder()
+        self.model = self.builder.build_all(ROOT, write=True)
+
+    def test_qa_detects_duplicate_feature_ids(self):
+        qa = load_qa()
+        self.assertIsNotNone(qa, "Gate B semantic QA module must exist")
+        layers = copy.deepcopy(self.model["layers"])
+        layers["mobility"]["features"].append(copy.deepcopy(layers["mobility"]["features"][0]))
+
+        report = qa.audit_layers(layers, self.model, ROOT)
+
+        self.assertIn("duplicate_feature_id", {item["code"] for item in report["blockers"]})
+
+    def test_qa_detects_open_geometry_claimed_as_loop(self):
+        qa = load_qa()
+        self.assertIsNotNone(qa, "Gate B semantic QA module must exist")
+        layers = copy.deepcopy(self.model["layers"])
+        loop = next(item for item in layers["zzy_plan"]["features"] if item["id"] == "ZZY-CYCLE-LOOP")
+        loop["geometry"]["coordinates"][-1] = [116.3450, 40.0100]
+
+        report = qa.audit_layers(layers, self.model, ROOT)
+
+        self.assertIn("named_loop_not_closed", {item["code"] for item in report["blockers"]})
+
+    def test_qa_detects_proposed_road_crossing_concept_massing(self):
+        qa = load_qa()
+        self.assertIsNotNone(qa, "Gate B semantic QA module must exist")
+        layers = copy.deepcopy(self.model["layers"])
+        street = next(
+            item
+            for item in layers["mobility"]["features"]
+            if item["properties"]["mobility_class"] == "proposed_street"
+        )
+        street["geometry"] = {
+            "type": "LineString",
+            "coordinates": [[116.3430, 39.9450], [116.3540, 39.9450]],
+        }
+
+        report = qa.audit_layers(layers, self.model, ROOT)
+
+        self.assertIn("road_building_collision", {item["code"] for item in report["blockers"]})
+
+    def test_generated_gate_b_model_has_zero_semantic_blockers(self):
+        qa = load_qa()
+        self.assertIsNotNone(qa, "Gate B semantic QA module must exist")
+
+        report = qa.run_qa(ROOT)
+
+        required_checks = {
+            "geometry_validity",
+            "scope_containment",
+            "feature_id_uniqueness",
+            "host_reference_existence",
+            "project_geometry_consistency",
+            "scenario_host_consistency",
+            "road_building_collision",
+            "public_path_continuity",
+            "main_if_continuity",
+            "parallel_human_continuity",
+            "land_use_building_compatibility",
+            "green_space_semantic_class",
+            "key_area_object_containment",
+            "duplicate_contradictory_geometry",
+            "loop_cycle_naming_semantics",
+            "provisional_background_design_separation",
+        }
+        self.assertEqual(required_checks, set(report["checks"]))
+        self.assertTrue(report["ok"], report["blockers"])
+        self.assertEqual(report["blocker_count"], 0)
 
 
 if __name__ == "__main__":

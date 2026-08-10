@@ -1,10 +1,25 @@
 import json
+import math
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parents[2]
 GATE_A = ROOT.parent
+MAIN_VERTICES = [
+    [116.3485, 39.9443],
+    [116.3485, 39.9470],
+    [116.3475, 39.9805],
+    [116.3475, 39.9885],
+    [116.3485, 40.0165],
+]
+HUMAN_VERTICES = [
+    [116.3423, 39.9468],
+    [116.3462, 39.9472],
+    [116.3445, 39.9805],
+    [116.3452, 39.9885],
+    [116.3460, 40.0165],
+]
 
 
 def read_json(path):
@@ -67,6 +82,18 @@ def collection(name, features):
     return {"type": "FeatureCollection", "name": name, "features": features}
 
 
+def schematic_link(start, end, sequence):
+    dx = end[0] - start[0]
+    dy = end[1] - start[1]
+    length = math.hypot(dx, dy) or 1.0
+    offset = ((sequence % 5) - 2) * 0.00035 + sequence * 0.00001
+    midpoint = [
+        (start[0] + end[0]) / 2 - (dy / length) * offset,
+        (start[1] + end[1]) / 2 + (dx / length) * offset,
+    ]
+    return line([start, midpoint, end])
+
+
 def feature_by_id(collection_value, feature_id):
     return next(item for item in collection_value["features"] if item.get("id") == feature_id)
 
@@ -126,7 +153,7 @@ def build_regional(existing, ecosystem_edges):
                 spatial_claim="schematic node for relationship mapping",
             )
         )
-    for edge in ecosystem_edges["edges"]:
+    for sequence, edge in enumerate(ecosystem_edges["edges"], start=1):
         semantic_class = "service_resource_relationship"
         if edge["edge_id"].startswith("ECO-"):
             semantic_class = "schematic_ecosystem_edge"
@@ -137,7 +164,7 @@ def build_regional(existing, ecosystem_edges):
         features.append(
             feature(
                 f"REG-{edge['edge_id']}",
-                line([start, end]),
+                schematic_link(start, end, sequence),
                 semantic_class,
                 "RESEARCH-SCOPE-001",
                 ecosystem_edge_id=edge["edge_id"],
@@ -145,33 +172,20 @@ def build_regional(existing, ecosystem_edges):
                 stage=edge["stage"],
                 output=edge["output"],
                 physical_corridor_claim=False,
+                schematic_offset_sequence=sequence,
             )
         )
     return collection("jzoi_gate_b_regional_ecosystem", features)
 
 
 def build_overall():
-    main_vertices = [
-        [116.3460, 39.9452],
-        [116.3485, 39.9470],
-        [116.3450, 39.9720],
-        [116.3475, 39.9885],
-        [116.3485, 40.0165],
-    ]
-    human_vertices = [
-        [116.3438, 39.9452],
-        [116.3462, 39.9472],
-        [116.3434, 39.9720],
-        [116.3452, 39.9885],
-        [116.3460, 40.0165],
-    ]
     features = []
     segment_names = ["DZS switch", "South civic link", "ORG commons link", "North test link"]
     for index, name in enumerate(segment_names, start=1):
         features.append(
             feature(
                 f"MAIN-IF-{index:02d}",
-                line([main_vertices[index - 1], main_vertices[index]]),
+                line([MAIN_VERTICES[index - 1], MAIN_VERTICES[index]]),
                 "main_if_segment",
                 "OVERALL-DESIGN-001",
                 network_id="MAIN-IF",
@@ -185,7 +199,7 @@ def build_overall():
         features.append(
             feature(
                 f"PARALLEL-HUMAN-{index:02d}",
-                line([human_vertices[index - 1], human_vertices[index]]),
+                line([HUMAN_VERTICES[index - 1], HUMAN_VERTICES[index]]),
                 "parallel_human_segment",
                 "OVERALL-DESIGN-001",
                 network_id="PARALLEL-HUMAN",
@@ -197,9 +211,9 @@ def build_overall():
             )
         )
     service_nodes = [
-        ("DZS-SOUTH", 116.3438, 39.9452, "DZS"),
+        ("DZS-SOUTH", 116.3423, 39.9468, "DZS"),
         ("DZS-HRG", 116.3462, 39.9472, "DZS"),
-        ("SOUTH-RELAY", 116.3434, 39.9720, "OVERALL"),
+        ("SOUTH-RELAY", 116.3445, 39.9805, "OVERALL"),
         ("ORG-HRG", 116.3452, 39.9885, "ORG"),
         ("NORTH-RELAY", 116.3450, 40.0020, "OVERALL"),
         ("ZZY-HRG", 116.3460, 40.0165, "ZZY"),
@@ -292,7 +306,7 @@ def build_land_use_program():
     specs = [
         ("DZS-01", "mobility_interface", 116.3424, 39.9444, 116.3450, 39.9460, ["JZOI-P06"], ["DZS"]),
         ("DZS-02", "mixed_public_commercial", 116.3452, 39.9444, 116.3480, 39.9460, ["JZOI-P06"], ["DZS"]),
-        ("DZS-03", "enterprise_service", 116.3482, 39.9444, 116.3512, 39.9460, ["JZOI-P07"], ["DZS"]),
+        ("DZS-03", "enterprise_service", 116.3482, 39.9444, 116.3545, 39.9460, ["JZOI-P07"], ["DZS"]),
         ("DZS-04", "cultural_heritage", 116.3424, 39.9473, 116.3460, 39.9493, ["JZOI-P07"], ["DZS"]),
         ("DZS-05", "community_life_service", 116.3500, 39.9473, 116.3545, 39.9493, ["JZOI-P10"], ["DZS"]),
         ("ORG-01", "research_r_and_d", 116.3424, 39.9840, 116.3450, 39.9870, ["JZOI-P04"], ["ORG", "ECO-RESEARCH"]),
@@ -307,7 +321,7 @@ def build_land_use_program():
         ("ZZY-04", "enterprise_service", 116.3500, 40.0185, 116.3536, 40.0220, ["JZOI-P03"], ["ZZY"]),
         ("ZZY-05", "mobility_interface", 116.3434, 40.0130, 116.3456, 40.0180, ["JZOI-P01"], ["ZZY"]),
         ("ZZY-06", "community_life_service", 116.3514, 40.0130, 116.3536, 40.0180, ["JZOI-P10"], ["ZZY"]),
-        ("ZZY-07", "cultural_heritage", 116.3470, 40.0222, 116.3500, 40.0255, ["JZOI-P11"], ["ZZY"]),
+        ("ZZY-07", "cultural_heritage", 116.3470, 40.0222, 116.3536, 40.0255, ["JZOI-P11"], ["ZZY"]),
     ]
     activities = {
         "research_r_and_d": ["research", "translation", "shared labs"],
@@ -374,7 +388,7 @@ def build_mobility(existing):
             "MOB-PEDESTRIAN-NETWORK",
             multi_line(
                 [
-                    [[116.3460, 39.9452], [116.3485, 39.9470], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]],
+                    MAIN_VERTICES,
                     [[116.3418, 39.9885], [116.3530, 39.9885]],
                     [[116.3432, 40.0165], [116.3538, 40.0165]],
                 ]
@@ -389,9 +403,9 @@ def build_mobility(existing):
             "MOB-CYCLE-NETWORK",
             multi_line(
                 [
-                    [[116.3430, 39.9482], [116.3537, 39.9482]],
-                    [[116.3426, 39.9927], [116.3524, 39.9927]],
-                    [[116.3435, 40.0238], [116.3534, 40.0238]],
+                    [[116.3430, 39.9478], [116.3537, 39.9478]],
+                    [[116.3426, 39.9931], [116.3524, 39.9931]],
+                    [[116.3435, 40.0200], [116.3534, 40.0200]],
                 ]
             ),
             "mobility_design",
@@ -468,7 +482,7 @@ def build_blue_green_heritage(existing):
     proposals = [
         ("QINGHE-RAIN-EDGE", "rainwater_ecology", rect(116.3433, 40.0208, 116.3537, 40.0220), ["ZZY"]),
         ("XIAOYUEHE-SCENARIO-SPINE", "ecology_scenario", line([[116.3530, 39.9760], [116.3520, 39.9885], [116.3530, 40.0020]]), ["ORG", "ZZY"]),
-        ("JINGZHANG-PUBLIC-SEQUENCE", "heritage_public_sequence", line([[116.3460, 39.9452], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]]), ["DZS", "ORG", "ZZY"]),
+        ("JINGZHANG-PUBLIC-SEQUENCE", "heritage_public_sequence", line([MAIN_VERTICES[0], MAIN_VERTICES[2], MAIN_VERTICES[3], MAIN_VERTICES[4]]), ["DZS", "ORG", "ZZY"]),
         ("DZS-CIVIC-RAIN-ROOM", "rainwater_public_room", rect(116.3464, 39.9462, 116.3496, 39.9477), ["DZS"]),
         ("ORG-COMMONS-GARDEN", "commons_garden", rect(116.3455, 39.9875, 116.3495, 39.9895), ["ORG"]),
         ("ZZY-OBSERVATION-WETLAND", "safety_ecology_buffer", rect(116.3462, 40.0182, 116.3508, 40.0195), ["ZZY"]),
@@ -509,8 +523,8 @@ def build_massing():
         ("ORG-F", 116.3500, 39.9905, 116.3520, 39.9926, "tall", "talent_service"),
         ("ZZY-A", 116.3440, 40.0083, 116.3460, 40.0112, "medium", "enterprise_test"),
         ("ZZY-B", 116.3508, 40.0083, 116.3530, 40.0112, "medium", "human_review"),
-        ("ZZY-C", 116.3440, 40.0130, 116.3455, 40.0174, "low", "public_observation"),
-        ("ZZY-D", 116.3515, 40.0130, 116.3530, 40.0174, "medium", "test_support"),
+        ("ZZY-C", 116.3440, 40.0130, 116.3455, 40.0158, "low", "public_observation"),
+        ("ZZY-D", 116.3515, 40.0130, 116.3530, 40.0158, "medium", "test_support"),
         ("ZZY-E", 116.3440, 40.0225, 116.3465, 40.0248, "low", "ecology_workshop"),
         ("ZZY-F", 116.3505, 40.0225, 116.3530, 40.0248, "tall", "landmark_support"),
     ]
@@ -607,11 +621,11 @@ def build_zzy_plan():
             "ZZY-CYCLE-LOOP",
             line(
                 [
-                    [116.3442, 40.0090],
-                    [116.3528, 40.0090],
-                    [116.3528, 40.0242],
-                    [116.3442, 40.0242],
-                    [116.3442, 40.0090],
+                    [116.3437, 40.0079],
+                    [116.3533, 40.0079],
+                    [116.3533, 40.0252],
+                    [116.3437, 40.0252],
+                    [116.3437, 40.0079],
                 ]
             ),
             "cycle_test_loop",
@@ -999,8 +1013,8 @@ def build_components():
 
 def build_project_spatial_basis():
     main_route = [
-        [[116.3460, 39.9452], [116.3485, 39.9470], [116.3450, 39.9720], [116.3475, 39.9885], [116.3485, 40.0165]],
-        [[116.3438, 39.9452], [116.3462, 39.9472], [116.3434, 39.9720], [116.3452, 39.9885], [116.3460, 40.0165]],
+        MAIN_VERTICES,
+        HUMAN_VERTICES,
     ]
     specs = [
         ("JZOI-P01", "Continuous public interface", multi_line(main_route), ["OVERALL-DESIGN-001"], "connect MAIN-IF, PARALLEL-HUMAN, gateways, and endpoint public rooms", ["official redlines", "accessibility survey", "fire access"], ["SC-02", "SC-04", "SC-08", "SC-12"], ["MAIN-IF-01", "MAIN-IF-02", "MAIN-IF-03", "MAIN-IF-04", "PARALLEL-HUMAN-01", "PARALLEL-HUMAN-02", "PARALLEL-HUMAN-03", "PARALLEL-HUMAN-04"]),
