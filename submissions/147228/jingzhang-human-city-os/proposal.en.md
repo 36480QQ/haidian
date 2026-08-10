@@ -40,6 +40,18 @@ Parametric trade-offs no longer show only that candidates exist: `parametric-tra
 
 The deltas reconnect to the existing community-retention support area, reversible-space ratio and metric-recalculation rules.[metric:community_retention_support_area_ratio] [metric:reversible_space_ratio] [depth:metrics_recalculation]
 
+### One reviewer-readable AI spatial delta | Callability is not the only objective
+
+The table below expands only the existing `people_first` versus `baseline_reproduction` calculation so a reviewer can see what the spatial trade-off changes before opening the JSON. It is not a recommendation, an existing condition, a settled plan, or a formal area metric. All three rows use the same provisional site-area input; `derived_area_sqm_delta` is for conceptual comparison only.[data:visual/assets/parametric-tradeoff-study.json] [data:visual/assets/parametric-tradeoff-study-evidence.json] [data:visual/assets/spatial-action-rooms-v21.json]
+
+| Existing spatial band | baseline → people-first | share delta | derived area delta (sqm) | Linked spatial-action room |
+| --- | ---: | ---: | ---: | --- |
+| Community retention and services (LU-H01) | 18.2759% → 24.0000% | +5.7241 pp | +653,284.939 | Beijing AI Origin Community: retention ledger, staffed access, screen-free recovery |
+| Reversible meanwhile use (LU-B01) | 15.0936% → 18.0000% | +2.9064 pp | +331,703.646 | Blue-green stay, meanwhile use, and exit/replay path |
+| City API and embodied-AI research (LU-B02) | 15.4835% → 11.0000% | −4.4835 pp | −511,691.664 | Zhongzhiyuan: bounded test, staffed takeover, stop/exit |
+
+This table improves delta visibility only. Formal geometry, areas, metrics, permits, and operating results still require a full recalculation after official inputs arrive.[depth:metrics_recalculation] [depth:risk_missing_data]
+
 v2.3 improves accountability readability, implementation reviewability and expression completeness only. It adds no official boundary, FAR, building height, engineering alignment, capacity, investment, permit, settled policy or operating-performance claim. When official geometry, rights, road/airspace, safety, energy, climate, authorization and public-baseline inputs arrive, recompute the sequence board, readiness register, parametric replay, metrics, HTML, PDFs and self-check together.[depth:risk_missing_data]
 
 ## v1.9 One-page execution brief | from taskbook to spatial response
