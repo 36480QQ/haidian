@@ -21,8 +21,6 @@ This proposal turns it into an urban corridor where AI scenarios can take to the
 
 The Chinese name carries two senses of "going first": piloting first, and having priority of passage. The English name splits the same way: GREEN is this green corridor itself, LIGHT is the low-speed **light** vehicle; together they are the green light.
 
----
-
 ## Design Basis and Source List
 
 This proposal takes the pre-qualification announcement for the international urban design competition for the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, and the taskbook extract for the open call to global agents as its task constraint [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. Spatial data, enumerations, metric ranges and validation rules come from the site package registered in the repository [source:SITE-PACKAGE].
@@ -43,8 +41,6 @@ Six assumptions are recorded in the structured files and can be traced one by on
 
 ![Overall spatial structure: one line, three stations, two wings](assets/figures/site-overview.en.png)
 
----
-
 ## Three-Level Scope Framework
 
 The announcement sets three levels of scope. This proposal works each level to a different depth and states a different level of certainty for each.
@@ -58,8 +54,6 @@ The announcement sets three levels of scope. This proposal works each level to a
 The three levels are not concentric circles but a sequence of **input, carrying, and verification**: the coordinated research area supplies factors, the overall design area carries and organises space, and the key areas prove things out before anything expands outward [depth:three_level_scope_framework].
 
 The provisional extents of the key areas total 369.3 ha, about 0.24% from the announced 368.4 ha [metric:key_area_total_sqm] [data:geometry/key_areas.geojson#PROV-KEY-001]. That gap is itself evidence of the provisional boundary's precision, and it is reported without adjustment.
-
----
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -76,8 +70,6 @@ The coordinated research area runs north to the North Fifth Ring Road, east to t
 ### A Judgement About Future Urban Form
 
 For urban form suited to AI-era productive forces, the decisive question is not how many new buildings get built but **whether new urban behaviour can occur inside existing space**. The judgement here is that this corridor is already built out, with no room for large-scale new construction, and that what is genuinely scarce is public space where things can be tried and safely withdrawn. The form strategy therefore has three parts: keep the continuous green corridor free to act as a trunk, make both of its edges active frontage, and place back-of-house facilities explicitly into land use rather than squeezing them into leftovers [depth:overall_spatial_structure].
-
----
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -111,8 +103,6 @@ The trunk line runs 9.72 km continuously along the corridor spine [data:geometry
 
 The three areas and two wings do not sit side by side; they form a loop: **the wings supply factors, the three areas divide the load, the trunk connects them and delivers results to the door, and operating data flows back to improve the rules**.
 
----
-
 ## Detailed Design of Key Areas
 
 The three key areas are drawn at one shared scale so they can be compared directly, and they share one public-space component library so that interfaces stay consistent, maintainable and extensible [depth:three_key_area_detailed_design].
@@ -144,8 +134,6 @@ The design move is to **bring the rules to the front**. The Right-of-Way Clock s
 One point needs to be explicit: right-of-way display is not confined to this location. The Clock is the flagship landmark at Dazhongsi, but **every station and every to-door point carries a standardised right-of-way display module**, or the rules would be invisible precisely where pedestrian flow is densest. The component library treats this as a standard module.
 
 The western inner frontage is 9.9 ha of cultural land, carrying the link between historic bell culture and new AI culture [metric:land_use_area_0803_sqm]. This segment falls within the third, open phase.
-
----
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -225,8 +213,6 @@ All three are written as experiments: control group, indicators, human review po
 
 All three share one constraint: **this mechanism does not promise zero conflict; it promises that conflicts can be detected, attributed, and exited from when gates are not met**. Engineering feasibility is for professional teams to develop; this proposal offers no feasibility conclusion.
 
----
-
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 **This chapter gives criteria, not parcel-level verdicts**
@@ -269,8 +255,6 @@ This corridor is already built out, so the practical premise of renewal is that 
 - **No demolition verdicts**: this proposal proposes no parcel-level demolition. Any work touching space under third-party ownership requires the owner's agreement, and the detailed approach is for professional teams to develop after ownership and structural checks.
 
 The taskbook explicitly prohibits altering company buildings or owned space without authorisation, and prohibits parcel-level retain/renovate/demolish conclusions. This chapter observes that boundary strictly.
-
----
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -329,8 +313,6 @@ The three station plazas also carry boarding, alighting and dispersal for rail s
 
 The municipal strategy centres on charging supply and night working illumination, the two items that decide whether vehicles can run at night. The public service strategy centres on connecting medical, education and community service anchors to the to-door points, so that one network carries parcels by day and medicines and teaching aids as well.
 
----
-
 ## Blue-Green Network, Public Space, and Urban Character
 
 ### The Corridor: From a Coal Trunk Line to a Shared People-and-Goods Trunk
@@ -366,8 +348,6 @@ To-door points within a 300 metre walk cover only 56.0% of residential land; at 
 **That number exposes a real shortcoming in the current placement**: to-door points sit along both sides of the trunk while residential blocks sit further out, so a four-to-five-minute walk fails to reach nearly half of residents. The 81.7% at 500 metres looks better, but the corridor is only about 1.3 km wide east to west, so a 500 metre radius approaches saturation by construction and discriminates poorly; it should not be the headline measure.
 
 The conclusion is clear: **to-door points cannot sit only along the trunk and must be densified outward into the blocks**, with locations chosen from the 300 metre coverage gap. This proposal keeps the shortcoming and states the basis for it, rather than covering it with a more flattering measure.
-
----
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -407,8 +387,6 @@ Phase One sits in the Xiaoyuehe pilot segment rather than the Origin Community b
 
 All of the above is mechanism design and **constitutes no government commitment, fiscal arrangement or confirmed programme of events**.
 
----
-
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ![Metrics and evidence: what is computed and what is still missing](assets/figures/metrics-evidence.en.png)
@@ -424,8 +402,6 @@ Land-use category areas total 1,141.3 ha, exactly matching the site area. This i
 The announcement's tasks and the six mandatory agent tasks (`agent.1` through `agent.6`) map item by item onto chapters and evidence files here, with the full correspondence kept in the compliance matrix [source:AGENT-TASKBOOK]. Naming and visual identity, ecosystem and cases, scenario cards and personas, public space and landmarks, cultural narrative, and events and operations correspond to chapters one, six, six, nine, twelve and ten respectively.
 
 The prose does not repeat machine indexes: complete source, standard, design depth and task coverage records live in the structured files and are expanded on demand by the proposal viewer.
-
----
 
 ## Professional Standards, Design Depth, and Cultural Narrative
 
@@ -450,8 +426,6 @@ Cultural expression works through signage and wayfinding, a spatial storyline, a
 The Chinese name is 京张先行; the English name is GREEN:LIGHT. The naming system borrows the line-and-station logic of a railway so the structure is audible immediately: trunk line, stations, to-door points, with the two wings as the compute-and-capital interface and the pilot segment.
 
 The logo direction is a vertical line (the 9.72 km corridor) with three nodes and fine branches leaving those nodes. It can be read at once as the two parallel rails of a track, as a delivery route with stops, and as the opening of a doorway. **Everything is drawn from scratch; no third-party fonts, images, trademarks or likenesses are used.**
-
----
 
 ## Risk, Copyright, and Compliance
 
@@ -479,8 +453,6 @@ All graphics, diagrams, logo direction and boards are drawn for this proposal; c
 The provisional rough boundary cannot serve as a statutory redline, an approval basis, or a precise-area recomputation basis. Safety thresholds are advisory and pending professional review. The test scenarios are validation work proposed for consideration, not approved operations. Every statement touching companies, funding or policy is either a citation of public information or a proposed mechanism, not a confirmed arrangement.
 
 The final judgement rests with people and professional teams.
-
----
 
 ## References
 
