@@ -206,6 +206,22 @@
       "generated_date": "2026-08-10",
       "usage": "Locally generated bilingual maps, concept study modules, sections, quantities, evidence diagrams, identity system and implementation ledger built from the submission's structured geometry, metrics, assumptions and schedules.",
       "limitations": "Design communication only; figures do not create statutory geometry, measured existing conditions, quotations, approvals or implementation commitments."
+    },
+    {
+      "id": "FIRST-MILE-PASSPORT-SAMPLE",
+      "source_type": "agent_generated_design",
+      "path": "visual/assets/first-mile-passport.example.json",
+      "generated_date": "2026-08-10",
+      "usage": "Machine-readable synthetic example defining the minimum evidence fields and G0-G4 state transitions for a future First-Mile Passport.",
+      "limitations": "Non-operational example only. All identity, organization, service, order, result and evidence fields remain null or PENDING; it contains no real participant or outcome data."
+    },
+    {
+      "id": "FIRST-MILE-PILOT-BOM",
+      "source_type": "agent_generated_design",
+      "path": "visual/assets/pilot-bom.json",
+      "generated_date": "2026-08-10",
+      "usage": "Machine-readable concept quantity basis for six reversible pilot work packages, reconciled to the published 90-day control envelope.",
+      "limitations": "Not a bill for procurement, supplier quote, approved budget or fiscal commitment; quantities and rates require site verification and market quotations."
     }
   ]
 }

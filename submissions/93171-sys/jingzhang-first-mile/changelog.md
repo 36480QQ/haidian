@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v4.0 - 2026-08-10
+
+- Added a one-page selection brief that turns the proposal into five reviewable judgments: originality, site specificity, public value, executability and auditability.
+- Added a six-step, four-lane first-user task journey linking user action, front-line service, AI behavior and required evidence, with human handoff and no-loss exit at every failure point.
+- Added a machine-readable synthetic First-Mile Passport example with all real-world fields empty and all G0-G4 gates pending, preventing a design template from being mistaken for pilot evidence.
+- Added a six-work-package pilot quantity basis that reconciles to the CNY 0.98-1.84 million concept envelope while explicitly requiring site verification and supplier quotations before procurement.
+- Extended the bilingual visual index and formal drawing package so the new adoption proof layer can be reviewed without relying on proposal prose alone.
+
 ## v3.0 - 2026-08-10
 
 - Added reviewable concept-study modules for Zhongzhiyuan, AI Origin and Dazhongsi with dimensions, plan/section relationships, program quantities, ordinary public routes and explicit stop conditions.

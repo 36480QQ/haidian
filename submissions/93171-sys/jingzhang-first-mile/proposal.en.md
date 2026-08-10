@@ -13,6 +13,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # JING-ZHANG FIRST MILE
 
+![One-page executive brief: from technology launch to first user, operable scenario, verifiable order and verified reuse](assets/figures/selection-brief.en.png)
+
+This proposal addresses one problem that many AI showcase districts leave unresolved: **after technology leaves the laboratory, who helps it gain its first real user and turn one use into an operable, procurable and reusable city service?** Zhongzhiyuan, AI Origin and Dazhongsi form a continuous product-ready–first-use–first-order handoff. The minimum public promise is that the ordinary route, staffed service and commons still work when AI is removed. Reviewers can inspect the task journey, First-Mile Passport, quantity basis, G0–G4 gates and failure archive rather than trusting a future-looking image.
+
 ## Design Basis and Source List
 
 This formal proposal takes the *Prequalification Announcement for the Centennial Jing-Zhang AI Innovation Belt International Urban Design Call* issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources as its primary basis. The maintainer-registered provisional boundary, key areas, enumerations, metrics and source registry in `brief/site-package/` form the machine-readable basis. Before generating the proposal, the AI agent read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json` and `data/processed/agent_fact_pack.md`, then used the four processed CSV files to map scope, task coverage, source use and missing data. Each design claim is separated into a traceable source, a recomputable metric, a checkable geometry layer and a human-reviewable assumption [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis].
@@ -223,9 +227,21 @@ The first phase buys no robots, builds no heavy exhibition hall, collects no fac
 
 Before G0, the field team uses `visual/assets/field-validation-protocol.json`: walk the ordinary route, accessibility breaks and distance to human service; interview recruits with the same 12 questions; record human-baseline time, error, escalation and exit for three tasks; obtain consent and store de-identified results. Five to eight founders and two to three service staff are **recruitment targets**, not completed samples. Synthetic tests, internal reviews and the concept visualization are not user evidence.
 
+![Six-step first-user journey across user, front-line staff, AI assistance and evidence-gate swimlanes](assets/figures/first-user-journey.en.png)
+
+A first user is not an event check-in. It is a person who completes a real decision. The six-step journey starts with a visible ordinary route and genuine choice, then freezes the real task, human baseline, limited AI first use, correction and human takeover, and ends in no-loss exit, conditional reuse or legitimate stop. Success cannot be reduced to satisfaction: record completion, source traceability, correction time, unfamiliar-operator takeover, unit service cost, no-loss exit and conditioned repeat use together.
+
+![Synthetic empty First-Mile Passport example: reproducible structure with organization, participant, performance and order fields left null](assets/figures/first-mile-passport.en.png)
+
+Each pilot produces a **First-Mile Passport** following `visual/assets/first-mile-passport.example.json`. It records the problem owner, first user, real task, human baseline, data boundary, human handoff, unit cost, exit/deletion, human-decision delta and reuse condition. G0–G4 are expiring and revocable states, not permanent badges. The current example is explicitly `synthetic_non_operational`; every real organization, participant, performance, reuse and procurement field is null. It proves only that the record and handoff structure are reproducible, not that a pilot occurred [source:FIRST-MILE-PASSPORT-SAMPLE].
+
 ![90-day implementation ledger linking accountability, output, cost, release guidance and stop conditions](assets/figures/implementation-ledger.en.png)
 
 The first-pilot design-control envelope is **RMB 0.98–1.84 million**: research/co-design RMB 150–250k; staffed service and training RMB 180–300k; reversible structures/furniture RMB 250–500k; accessibility/wayfinding RMB 150–300k; testing/data security RMB 120–250k; plus about RMB 130–240k contingency at 15%. This is an **order-of-magnitude concept assumption**, not a quote, fiscal budget or investment commitment. Decision requires official scope, quantities, a site survey, procurement route and at least two quotations per item [assumption:A-COST-ENVELOPE-001]. A 10% / 25% / 25% / 25% / 15% evidence-linked resource-release sequence is recommended for G0–G4; the implementing entity must determine lawful contractual payment terms.
+
+![Pilot quantity basis for research, staffed service, reversible kit, accessibility, testing/security and contingency](assets/figures/pilot-bom.en.png)
+
+The range is derived from `visual/assets/pilot-bom.json`: one human-baseline package, 12 fixed interviews, 80 two-person service shifts, six training/takeover drills, a 36 m² demountable service kit, one First User Table and sign kit, one full-route accessibility audit, 12 field information signs, and one package each for rights clearance, evaluation, and privacy/security. Quantities and unit rates remain option-comparison assumptions. Permanent works, land, utility relocation and bulk device procurement are outside this pilot and must not be inferred. Update after site survey, verified quantities, procurement route and at least two quotations per item [source:FIRST-MILE-PILOT-BOM].
 
 Phasing follows a small, reversible and operations-first discipline. Phase 1 funds problem research, staffed service, accessibility, safety and the evidence system. Phase 2 introduces equipment and spatial retrofit only after the first gates. Phase 3 expands only services that have been genuinely reused. Budgets must record category, quantity basis, price source, range and approval state. The RMB 0.98–1.84 million range supports first-pilot option comparison only; it is not extrapolated to a whole-belt investment or a fiscal commitment [depth:phasing_implementation].
 
