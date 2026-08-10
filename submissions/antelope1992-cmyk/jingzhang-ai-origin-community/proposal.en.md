@@ -43,6 +43,9 @@ The overall concept is a "human-machine symbiotic urban innovation cell", formin
 
 ## Coordinated Research Area: Industry and Future City Research
 
+**Three zones, two wings synergy loop (concept)**: using the Jing-Zhang heritage park spine as the vertical main axis, A1 (Zhongzhiyuan), A2 (Origin Community) and A3 (Dazhongsi) form a "R&D - translation - agglomeration" relay chain. The Zhongguancun Service Wing connects westwards along the north segment to universities and the Zhongguancun core, providing compute, standards, capital and scenario interfaces; the Xiaoyue River Enablement Wing links eastwards along the south segment to riverside residential and green scenarios, forming a "west supply, east enablement, north-south relay" space-industry-operation loop. At the Jing-Jin-Ji level, the proposal names four interface types - Beizhou Community, Future Science City, Huairou Science City and ETDZ - as concept-level coordination directions (R&D spillover, compute complementarity, science-city synergy, industry reception), subject to official taskbook and special plans [depth:overall_spatial_structure].
+
+
 <!--AGENT1-->
 This proposal establishes an original **naming system "ORIGIN"**: "Beijing AI Origin Community" as root brand, with three sub-brands — "ORIGIN Lab (R&D sourcing)", "ORIGIN Court (living symbiosis)", "ORIGIN Rail (heritage activation)" [depth:concept]. The logo concept is "a rail bending into an infinity sign ∞": derived from the Jing-Zhang rail profile, its ends curve into a Möbius loop [standard:design_depth]. Colors use "rail basalt + signal orange + data cyan", all self-drawn; no third-party trademarks, fonts or images are used [source:report/copyright_statement.md].
 
@@ -163,6 +166,16 @@ The proposal serves **residents, young talent, enterprises, universities, touris
 <!--PERSONA-->
 **P6 · International Visitor/Scholar**: needs multilingual info and legible cultural-heritage experience.
 
+<!--PERSONA-->
+**P7 · Children & Youth**: need safe, friendly play/learning space; AI interfaces must be age-appropriate and supervised.
+<!--PERSONA-->
+**P8 · Low-income & affordable-housing tenants**: value low-cost daily services and jobs; digital services must keep offline alternatives.
+<!--PERSONA-->
+**P9 · Elder-caregivers & nursing aides**: need convenient care support and training info; minimal data collection.
+<!--PERSONA-->
+**P10 · Non-digital users**: essential public services keep human counters and phone channels; AI augments, never replaces.
+
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land use follows public standards for territorial survey, planning and use regulation, forming a complete, seamless partition [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Buildings distinguish retained, renovated, renewed, new or pending, stating footprint, function, scale and character [depth:retain_renovate_demolish]. Where current buildings, ownership, regulatory plan and engineering conditions are missing, the proposal gives method and a pending-calibration list, not fabricated retain-renovate-demolish conclusions [data:geometry/buildings.geojson#BLDG-001].
@@ -176,6 +189,9 @@ Transport answers the call's requirements for rail-station integration, road mic
 Municipal and public services cover AI industry services, innovation platforms, talent living services, new infrastructure, distributed energy, edge compute and traditional municipal fusion [depth:municipal_new_infrastructure]. Where pipelines, energy, drainage, flood and fire data are missing, they are listed as formal deepening preconditions.
 
 ![Mobility and blue-green system](assets/figures/mobility-bluegreen.png)
+
+**Xiaoyue River Enablement Wing experience path (concept)**: along the Xiaoyue River blue-green corridor, the path organizes four-level experience nodes west-to-east: "Intelligent Valley Gateway -> Scenario Block -> Community Garden -> Station Micro-center", chaining scenarios S2 wayfinding, S3 accessibility companion, S5 green stewardship, S11 multilingual service and S12 community memory archive into a walkable/cyclable public experience route of about 3 km; each node carries a scenario QR code and localized narration, published only after heritage and privacy review; alignment is conceptual, not engineered [depth:operation].
+
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -191,6 +207,12 @@ Urban character fuses Jing-Zhang railway history, Zhongguancun innovation cultur
 **L2 · Memory Rail**: a cultural narrative promenade using the rail motif, linking Jing-Zhang heritage and the AI era.
 <!--LANDMARK-->
 **L3 · Co-Creation Plaza**: flexible public space for open-source markets and community events.
+
+**Honor showcase & public-space component library (concept)**: an "open-source honor wall / digital award screen" at the Co-Creation Plaza and station micro-centers showcases developer contributions, community co-creators and open-source innovation season outcomes; a public-space component library (seating, lighting, signage, accessibility handrails, scenario terminals, etc.) is drafted on modular, reusable, low-intervention principles as a reference basis for later professional deepening - not a construction drawing or procurement list [standard:design_depth].
+
+
+**Heritage resource inventory & spatial story line (concept)**: the proposal systematically lists Jing-Zhang railway heritage elements (rails, stations, bridges, industrial structures), Zhongguancun innovation-culture nodes (Xueyuan Road university belt, startup landmarks) and AI new-culture elements (open-source community, compute landmarks) into a verifiable resource inventory (name, location, protection grade, activation mode, flagged "pending heritage authority confirmation"); a spatial story line - "rail memory -> Zhongguancun exploration -> AI origin" - links landmarks L1/L2/L3 with bilingual international-communication copy; all imagery and symbols require rights clearance before use [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
 
 Landmark design respects heritage, green-space and blue-line constraints; no unauthorized change of owned space, no vulgarized internet-celebrity expression [standard:design_depth].
 
@@ -211,6 +233,9 @@ The table below is a **concept-level renewal project list (pilot suggestions)**;
 | UP-06 | Open Source Innovation Season | whole area · co-creation plaza nodes | events, communication, attraction & conversion | operator + developer community | continuous | participating teams, international reach | event approval, budget arrangements |
 
 Operation is envisioned as a "open-source community + professional institution" dual wheel: an annual open-source innovation season, a maintained developer community, and a proposal-review-landing translation channel [depth:operation]. These activities are discussable ideas, not finalized arrangements; recruitment and funding are possibilities, not promises [standard:operation]. Translation path: concept proposal → professional team deepening → official review → pilot → evaluation iteration.
+
+**Annual activities & long-term operation (concept)**: with the "Open Source Innovation Season" as the annual anchor, a four-season recurring activity framework is proposed - Spring: scenario-open recruitment; Summer: open-source innovation season & developer conference; Autumn: outcome release & honor awards; Winter: community memory & year-end review. Operation is driven by the "open-source community + professional institution" dual wheel with an annual proposal-review-pilot-evaluation loop and human-review/exit mechanisms; all activities are discussable ideas, not finalized arrangements [standard:operation].
+
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
