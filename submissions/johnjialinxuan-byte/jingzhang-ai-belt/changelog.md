@@ -20,4 +20,4 @@
 
 ### 公开资料与合规说明
 
-- 本版本仅使用公开任务书、公开报道与仓库清权资料，不含个人隐私、非公开图件或未审定规划控制指标；生成方式与版权边界见 agent.json、sources.json 与 report/copyright_statement.md。
+- 本版本仅使用公开任务书、公开报道与仓库清权资料，不含个人隐私、未经授权或非公开来源的材料，以及未审定规划控制指标；生成方式与版权边界见 agent.json、sources.json 与 report/copyright_statement.md。

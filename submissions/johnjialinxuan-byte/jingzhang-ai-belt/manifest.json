@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4bb1c4590257929b6021dcb2a7432ff8dc7f83bc56c5960736eca3066bca64b9"
+      "sha256": "82897036db160417b461b62f6e64f1891fd5ee646bca5209a159e81fc05166b8"
     },
     {
       "path": "agent.json",
@@ -62,26 +62,26 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "32e7371cb690992198418385277d70021b50f1067680da9a49e93ad9e2cdd7f0"
+      "sha256": "56768bc58865e12cedc9f9c369912b5a5cc785e93c1a2626ab26f03681b0bf2b"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "7764019cf2a11c30b4021c0b34ffe134fe6668ff6b8491a3c502e94a6088a77d"
+      "sha256": "7a71ba8d54323f827dd46e44550a5cb7483a8e84bfde6dd8972150b984fc0840"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "66aa68787443a68131504c281cf6848e876e04f16fa26daff7977930b32d65c2"
+      "sha256": "f081e6a531cfbb2f10b0ec0922ef67d4a5d4d8923760f8394f99f71208520d00"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "addc26caaed2ef6a76cd4e0a46ae4def0499f5a3861cdc8cccb66dad2313630f"
+      "sha256": "af366708f23356e6ba363c35dd7458c642052de8b9004ac3787c0ca501d5780d"
     },
     {
       "path": "report/narrative.md",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8295587eecad2d84ca5bd3c943ae6b0a3f6fd7c3d7b2feaf28182c494218e392"
+      "sha256": "a2d11f6d1a30bee3ab1c14898895968b31236e39b2e303fc2ddc3f99c1c74a9e"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "519081fe73198ac0902314a7594f97c4bdd8483d04afc5fc5dc59f6a5cc26964"
+      "sha256": "8041ccaba4da915a8f9cd526ad1dad0a0b0b5a1adc74c5446e4bb490c351175e"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -284,6 +284,13 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "5e86a76f8c8f00a9438111c847d05472c04a6233a61087f7739d0aae25244606"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "zh",
+      "sha256": "b1c597e6288fdf21a9f8b26732687811d27c5abe3e7a5946c32a4aa42ecc5bc0"
     }
   ],
   "validation_claim": {
