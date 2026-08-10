@@ -180,7 +180,7 @@ code {
 <h3>月相运营机制</h3>
 <p>每个朔日进行维护、回滚和数据归档；每个上弦月进行社区共创和成果转化；每个望日进行开源发布、公共讲解和夜间体验；每个下弦月进行第三方复盘、问题公开和退出判断。年度活动可形成“月相历”，但具体活动名称、频率、预算、场地和参与者均须由后续运营主体确认。</p>
 <h2>指标体系、面积复算与合规矩阵</h2>
-<p>本包可由几何直接复核的指标包括：总体设计范围面积约11,412,825平方米、重点区域3处、用地8块、建筑8组、道路6条、绿地3片、公共空间5处、分期3期。面积采用提交 GeoJSON 计算值，仅用于临时设计讨论；公告面积和官方边界发布后应在 EPSG:4548 中重新计算 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>。</p>
+<p>本包可由几何直接复核的指标包括：总体设计范围面积约11,412,800平方米（取整）、重点区域3处、用地8块、建筑8组、道路6条、绿地3片、公共空间5处、分期3期。面积采用提交 GeoJSON 计算值并按临时边界精度取整，仅用于临时设计讨论；公告面积和官方边界发布后应在 EPSG:4548 中重新计算 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>。</p>
 <p>不能由现有公开资料确定的指标包括容积率、建筑高度、建筑密度、退线、权属、市政容量、交通断面、文保控制和实施投资。它们在 <code>metrics.json</code> 中标记为 unknown 或 pending_control，在 <code>assumptions.json</code> 中列出前置条件。场景参与度、活动频次、开发者转化率和满意度属于运营绩效指标，不能冒充规划控制。</p>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="指标与证据链"><figcaption>指标与证据链</figcaption></figure>
 <p>六项智能体任务的响应关系如下：agent.1由命名、Logo、总体结构和三层范围响应；agent.2由六类生态案例、三区两翼机制和要素链响应；agent.3由十二张场景卡、五类画像和三类测试沙盒响应；agent.4由三个月相节点、三处地标和公共组件响应；agent.5由“从月宫到月轨”文化叙事、导视和国际传播响应；agent.6由月相历、社区运营、场景开放和转化路径响应。完整映射见 <code>compliance_matrix.json</code>、<code>standard_matrix.json</code> 和 <code>design_depth_matrix.json</code>。</p>

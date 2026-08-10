@@ -143,7 +143,7 @@ Each New Moon supports maintenance, rollback, and archiving; each First Quarter 
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Directly reviewable package metrics include an overall design area of approximately 11,412,825 square metres, three key areas, eight land-use polygons, eight building groups, six road features, three green-space features, five public nodes, and three phases. Areas come from submitted GeoJSON and support temporary design discussion only; they must be recalculated in EPSG:4548 when official boundaries and announced areas are available [metric:site_area_sqm].
+Directly reviewable package metrics include an overall design area of approximately 11,412,800 square metres (rounded), three key areas, eight land-use polygons, eight building groups, six road features, three green-space features, five public nodes, and three phases. Areas come from submitted GeoJSON, rounded to provisional-boundary precision, and support temporary design discussion only; they must be recalculated in EPSG:4548 when official boundaries and announced areas are available [metric:site_area_sqm].
 
 FAR, building height, density, setback, ownership, municipal capacity, traffic sections, heritage controls, and implementation investment cannot be established from the current public package. They are marked unknown or pending in `metrics.json` and recorded as prerequisites in `assumptions.json`. Participation, event frequency, developer conversion, and satisfaction are operational indicators, not planning controls.
 

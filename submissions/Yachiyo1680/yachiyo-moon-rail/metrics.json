@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11412800,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -15,12 +15,13 @@
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
       "assumptions": [
-        "Provisional rough boundary; not official area basis."
+        "Provisional rough boundary; not official area basis.",
+        "Rounded to provisional-boundary precision."
       ]
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1401236.198,
+      "value": 1401200,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -28,12 +29,13 @@
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
       "assumptions": [
-        "Concept footprints; area recalculation required with official base data."
+        "Concept footprints; area recalculation required with official base data.",
+        "Rounded to provisional-boundary precision."
       ]
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.241163,
+      "value": 0.24,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -42,12 +44,13 @@
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
-        "Concept green-space polygons overlap by design narrative and are not an official green-line calculation."
+        "Concept green-space polygons overlap by design narrative and are not an official green-line calculation.",
+        "Rounded to provisional-boundary precision."
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.007446,
+      "value": 0.007,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -56,7 +59,8 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
       "assumptions": [
-        "Concept public nodes; not a statutory public-space ratio."
+        "Concept public nodes; not a statutory public-space ratio.",
+        "Rounded to provisional-boundary precision."
       ]
     },
     "floor_area_ratio": {
