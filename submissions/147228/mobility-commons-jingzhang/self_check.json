@@ -71,8 +71,8 @@
       "check_id": "NO_FIRST_PROJECT_EDIT",
       "result": "pass",
       "severity": "blocking",
-      "target": "submissions/147228/zhongzhiyuan-autonomy-commons",
-      "message": "The existing first-place package is outside this independent submission path."
+      "target": "participant_scope",
+      "message": "This independent submission package is limited to its own directory; sibling packages are outside its scope."
     },
     {
       "check_id": "VISUAL_STATIC",

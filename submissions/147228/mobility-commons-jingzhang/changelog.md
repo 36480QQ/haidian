@@ -37,6 +37,12 @@
 - 同步中英文 claim-audit 与视觉页的数字措辞，修正 `BLDG-001` 回接并让合成读数补充可由同源 runner 回读；这些数字仍不代表现场绩效。
 - 统一 proposal、proposal.en 与 changelog 的迭代版本；保留 provisional 几何、unknown 基线、空中候选 blocked 和第一名项目不变。
 - 将 6 张中英地面界面图纳入 `run-presentation-polish.js` 的可重跑检查，核对文件、viewBox、矩形边界、双语关键语义和文本对照；脚本 PASS 仍只代表图面结构可读，不代表现场无障碍、值守或运营结果。
+## v2.40 - 2026-08-10
+
+- 新增三节点普通路线连续性合同、四类读者检查和 10 个正负 fixture；阻断、交接不可见、无纸面/电话入口或 baseline 越界时均 fail-closed。
+- 新增 M-01 至 M-10 逐行场景—节点—运营合同，补上触发、通过、责任、证据、失败动作和非 AI 等价服务，并以 4 个负例回放验证。
+- 新增独立 `verify.js`，检查 provisional 节点锚点、关系道路、分析图网络、十张场景卡与运营合同；5 个 self-test 覆盖边界升级、节点丢失、未知节点和现场状态冒充。
+- 清理当前交通包中的旧身份/跨包引用，保持本包独立 scope、`unknown` 基线、`not_authorized_not_run` 和不构成实施/许可的边界。
 
 ## v2.34 - 2026-08-10
 
