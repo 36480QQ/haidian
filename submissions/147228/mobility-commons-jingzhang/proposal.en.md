@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.33"
+iteration: "v2.35"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -184,6 +184,14 @@ Mobility operations do not replace urban design. The following ledger translates
 | Zhongzhiyuan AI Autonomous Innovation Acceleration Zone | Separate enterprise arrival, shuttle waiting, loading and fire-clearance layers; keep the ground interface service-oriented | Human desk and public observation remain adjacent; equipment, maintenance and test back-of-house can close; the walking spine stays open | Formal evidence pending | Existing buildings, energy/fire review, ownership, enterprise OD and curb survey |
 | Beijing AI Origin Community | Place community services, continuous walking/accessibility, weather shelter and daily needs on one human-first interface | Staffed desk, paper entry and intergenerational learning face the ordinary route; test components remain removable and pausable | Formal evidence pending | Accessibility walk, resident-service baseline, ownership, care and night-safety evidence |
 | Dazhongsi AI Industry Cluster | Distinguish rail transfer, bicycle parking, public ground-floor frontage and timed loading | Rail arrival, quiet route and service front are separated; events and data display can withdraw without taking the everyday route | Formal evidence pending | Station flow, curb counts, traffic organisation, fire and municipal interfaces |
+
+Read the three ground-interface drawings before the simulation. They show only the places an ordinary person meets first: entry, waiting, parking, transfer and help. They deliberately add no unsupported massing, height, flow or capacity. Each drawing keeps the question of who takes over when something fails inside the picture. Facilities can be removed, windows can close and the public route must remain.
+
+![Zhongzhiyuan enterprise-arrival ground interface concept](assets/figures/key-area-zhongzhiyuan-ground-interface.en.svg)
+
+![AI Origin Community resident daily ground interface concept](assets/figures/key-area-ai-origin-community-ground-interface.en.svg)
+
+![Dazhongsi rail-transfer and curb interface concept section](assets/figures/key-area-dazhongsi-transfer-interface.en.svg)
 
 These relations compare how ordinary paths, human service, equipment back-of-house and upper functions are separated; they do not define development intensity, massing, demolition or engineering capacity. A formal scheme must recalculate them after survey, regulatory-plan review, ownership, fire, structural, municipal and public-participation evidence is complete [depth:height_massing_character] [depth:development_intensity_controls].
 

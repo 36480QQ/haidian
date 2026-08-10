@@ -7,6 +7,12 @@
   "reading_order": [
     "proposal.md#一页执行摘要",
     "proposal.md#四类人先看什么",
+    "proposal.md#任务书六项任务如何在本包里落地",
+    "assets/figures/taskbook-crosswalk-board.svg",
+    "proposal.md#重点区域详细设计",
+    "assets/figures/key-area-zhongzhiyuan-ground-interface.svg",
+    "assets/figures/key-area-ai-origin-community-ground-interface.svg",
+    "assets/figures/key-area-dazhongsi-transfer-interface.svg",
     "proposal.md#试点什么时候能开始",
     "visual/assets/pilot-startup-checklist.json",
     "visual/assets/mobility-pilot-readiness.json",
@@ -24,7 +30,7 @@
     {
       "id": "brief_alignment",
       "label_zh": "任务书相关性",
-      "start_here": ["proposal.md#三层范围工作框架", "compliance_matrix.json"],
+      "start_here": ["proposal.md#三层范围工作框架", "proposal.md#任务书六项任务如何在本包里落地", "assets/figures/taskbook-crosswalk-board.svg", "proposal.md#重点区域详细设计", "assets/figures/key-area-zhongzhiyuan-ground-interface.svg", "compliance_matrix.json"],
       "strongest_evidence": "三层范围、三处重点区、AI+交通场景与任务书交叉覆盖",
       "boundary": "空间几何仍为 provisional_constraint，不能读作法定红线。"
     },
@@ -38,7 +44,7 @@
     {
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
-      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json"],
+      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "assets/figures/network-flow-board.svg"],
       "strongest_evidence": "持久化的 O1/O2/O3/O4 候选排名与鲁棒性排序，加上全量聚合网络流、容量闭合、空中候选 fail-closed 和 headline claim audit，共同展示方式选择如何被硬门槛约束",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
@@ -52,7 +58,7 @@
     {
       "id": "public_interest_inclusion",
       "label_zh": "公共利益与包容性",
-      "start_here": ["proposal.md#四类人先看什么", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
+      "start_here": ["proposal.md#四类人先看什么", "proposal.md#重点区域详细设计", "assets/figures/key-area-ai-origin-community-ground-interface.svg", "proposal.md#试点什么时候能开始", "visual/assets/pilot-startup-checklist.json", "assets/figures/failure-recourse-board.svg", "visual/assets/mobility-tabletop-evidence.json", "visual/assets/service-levels.json"],
       "strongest_evidence": "四类人入口、十张场景启动清单和失败回退板把分组需求、非数字等价入口、公共路线连续、投诉回退与停止条件摆在同一阅读入口",
       "boundary": "尚无居民样本、同意记录或现场可达性绩效；分组结果仍待实测。"
     },
@@ -67,7 +73,7 @@
       "id": "expression_completeness",
       "label_zh": "表达完整度",
       "start_here": ["proposal.md", "proposal.en.md", "report/proposal.html", "visual/index.html", "manifest.json"],
-      "strongest_evidence": "双语人读层、离线图板、结构化 JSON、图纸和 hash manifest 形成同一包",
+      "strongest_evidence": "双语人读层、任务书交叉图、三处地面界面图、网络流图、离线图板、结构化 JSON、图纸和 hash manifest 形成同一包",
       "boundary": "索引只帮助评审导航，不代表官方评分、CI 通过或现场实施。"
     }
   ]

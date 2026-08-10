@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.33"
+iteration: "v2.35"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -200,6 +200,14 @@ P0 先由获得授权的组织安排有日期的分时聚合 OD 和方式计数�
 | 众智园 AI 自主创新加速区 | 企业入口、班车候车、装卸与消防净空分层，首层优先服务到岗和物流 | 人工前台与公众观察席相邻；设备、维护和测试后场可关闭；不切断慢行主链 | 正式资料待补 | 现状建筑、能源与消防、产权、企业 OD 和路缘测绘 |
 | 北京 AI 原点社区 | 社区服务台、连续步行/无障碍路线、遮雨候车与日常服务相邻 | 人工柜台、纸面入口和代际共学朝向普通路径；测试组件可拆、可暂停 | 正式资料待补 | 无障碍走查、居民服务基线、权属、照护与夜间安全证据 |
 | 大钟寺 AI 产业聚集区 | 轨道换乘、骑行停放、公共首层和路缘装卸形成清晰分界 | 轨道到达、安静链和服务前台分流；活动与数据展示可撤回、不占日常通行 | 正式资料待补 | 站口客流、路缘计数、交通组织、消防与市政接口 |
+
+先看下面三张地面界面图，再看后面的模拟。它们只画普通人会遇到的入口、等待、停放、换乘和求助位置，刻意不画未经资料支持的体量、层数、客流或容量。每张图都把“出了问题谁接手”放在图里，设施可以拆、窗口可以关，公共路线要留下。
+
+![众智园企业到岗地面界面概念图](assets/figures/key-area-zhongzhiyuan-ground-interface.svg)
+
+![AI 原点社区居民日常地面界面概念图](assets/figures/key-area-ai-origin-community-ground-interface.svg)
+
+![大钟寺轨道换乘与路缘界面概念剖面](assets/figures/key-area-dazhongsi-transfer-interface.svg)
 
 这些关系只用于比较普通路径、人工服务、设备后场与上部功能如何错开，不定义开发强度、体量、拆改清单或工程容量；正式方案必须在现状测绘、控规核验、产权、消防、结构、市政和公众参与完成后再计算 [depth:height_massing_character] [depth:development_intensity_controls]。
 

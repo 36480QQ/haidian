@@ -236,6 +236,47 @@ function updateVisualIndex(file, lang) {
   if (!html.includes('class="evidence-chain"')) html = html.replace(regionalMarker, `${chain}${regionalMarker}`);
   const css = '.evidence-chain{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;background:#0B2738;color:#E6FFFA;border:1px solid #2A9D8F;border-radius:12px;padding:12px 14px;margin:10px 0 14px;font-size:12px}.evidence-chain strong{color:#66E3CA;white-space:nowrap}.evidence-chain span{color:#B6D3DC}';
   if (!html.includes('.evidence-chain{')) html = html.replace('</style></head>', `${css}</style></head>`);
+
+  const taskSectionStart = html.indexOf('<section id="10" class="evidence">');
+  const taskSectionEnd = taskSectionStart >= 0 ? html.indexOf('</section>', taskSectionStart) : -1;
+  const taskbookBoard = `assets/figures/taskbook-crosswalk-board${suffix}.svg`;
+  if (taskSectionStart >= 0 && taskSectionEnd >= 0 && !html.includes(taskbookBoard)) {
+    const taskbookTitle = zh ? '六项任务与本包交通交付的对照' : 'Six taskbook items and this package contribution';
+    const taskbookNote = zh
+      ? '把本包负责的交通交付、评审入口和未声称事项放在同一张图里；不把交通包读成整带总包。'
+      : 'The board separates this package contribution, review entry points and non-claims; it is not a whole-corridor package.';
+    const taskbookBlock = `<div class="evidence-chain"><strong>${taskbookTitle}</strong><span>${taskbookNote}</span></div><img src="../${taskbookBoard}" alt="${taskbookTitle}">`;
+    html = `${html.slice(0, taskSectionEnd)}${taskbookBlock}${html.slice(taskSectionEnd)}`;
+  }
+
+  const areaSectionStart = html.indexOf('<section id="2" class="evidence">');
+  const areaSectionEnd = areaSectionStart >= 0 ? html.indexOf('</section>', areaSectionStart) : -1;
+  const areaPrefix = 'assets/figures/key-area-';
+  if (zh && areaSectionStart >= 0 && areaSectionEnd >= 0 && !html.includes(`${areaPrefix}zhongzhiyuan-ground-interface.svg`)) {
+    const areaBlock = '<div class="evidence-chain"><strong>三处重点区的地面界面</strong><span>入口、等待、停放、换乘和求助先画清楚；图面无尺度，不新增容量或现状主张。</span></div><img src="../assets/figures/key-area-zhongzhiyuan-ground-interface.svg" alt="众智园企业到岗地面界面概念图"><img src="../assets/figures/key-area-ai-origin-community-ground-interface.svg" alt="AI 原点社区居民日常地面界面概念图"><img src="../assets/figures/key-area-dazhongsi-transfer-interface.svg" alt="大钟寺轨道换乘与路缘界面概念剖面">';
+    html = `${html.slice(0, areaSectionEnd)}${areaBlock}${html.slice(areaSectionEnd)}`;
+  }
+
+  if (!zh && !html.includes('taskbook-crosswalk-board.en.svg')) {
+    const enTaskbookMarker = '<h2>Reading Labels and Evidence Boundaries</h2>';
+    const enTaskbookBlock = '<h2>Taskbook Crosswalk for This Mobility Package</h2><p>The six taskbook items remain belt-wide work. This package shows only the transport contribution it can deliver, the shortest review entry and the claims it deliberately leaves open.</p><figure class="proposal-figure"><img src="../assets/figures/taskbook-crosswalk-board.en.svg" alt="Taskbook crosswalk board for the mobility package"><figcaption>Taskbook crosswalk: mobility contribution, review entry points and non-claims</figcaption></figure>';
+    if (html.includes(enTaskbookMarker)) html = html.replace(enTaskbookMarker, `${enTaskbookBlock}${enTaskbookMarker}`);
+  }
+
+  if (!zh && !html.includes('key-area-zhongzhiyuan-ground-interface.en.svg')) {
+    const enAreaMarker = '<h2>Detailed Design of Key Areas</h2>';
+    const enAreaBlock = '<div class="evidence-chain"><strong>Three key-area ground interfaces</strong><span>Entry, waiting, parking, transfer and help are shown first; drawings are scale-free and add no capacity or existing-condition claim.</span></div><figure class="proposal-figure"><img src="../assets/figures/key-area-zhongzhiyuan-ground-interface.en.svg" alt="Zhongzhiyuan enterprise-arrival ground interface concept"><figcaption>Zhongzhiyuan enterprise-arrival ground interface</figcaption></figure><figure class="proposal-figure"><img src="../assets/figures/key-area-ai-origin-community-ground-interface.en.svg" alt="AI Origin Community resident daily ground interface concept"><figcaption>AI Origin Community resident daily ground interface</figcaption></figure><figure class="proposal-figure"><img src="../assets/figures/key-area-dazhongsi-transfer-interface.en.svg" alt="Dazhongsi rail-transfer and curb interface concept section"><figcaption>Dazhongsi rail-transfer and curb interface</figcaption></figure>';
+    if (html.includes(enAreaMarker)) html = html.replace(enAreaMarker, `${enAreaMarker}${enAreaBlock}`);
+  }
+
+  const networkBoard = `../assets/figures/network-flow-board${suffix}.svg`;
+  const networkAlt = zh
+    ? '全量人员动线与网络压力屏查'
+    : 'Population-scale people flow and network pressure screen';
+  const regionalAlt = zh ? '区域人口规模通勤综合模拟' : 'Regional population-scale commute simulation';
+  const regionalImage = `<img src="../assets/figures/regional-scale-commute-board${suffix}.svg" alt="${regionalAlt}">`;
+  const networkImage = `<img src="${networkBoard}" alt="${networkAlt}">`;
+  if (!html.includes(networkBoard)) html = html.replace(regionalImage, `${regionalImage}${networkImage}`);
   fs.writeFileSync(target, html);
 }
 
