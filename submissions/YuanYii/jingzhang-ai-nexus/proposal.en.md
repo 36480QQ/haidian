@@ -3,7 +3,7 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "5.2"
+version: "1.4.0"
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"

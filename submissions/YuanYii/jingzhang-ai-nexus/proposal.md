@@ -3,7 +3,7 @@ title: "百年京张AI创新带城市设计方案:京张智脉·绿意无界(智
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "zh"
-version: "5.2"
+version: "5.7"
 date: "2026-08-10"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
