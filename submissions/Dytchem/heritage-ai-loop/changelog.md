@@ -1,3 +1,29 @@
+
+## v0.4 - 2026-08-10（巡检深化）
+
+- 同步 upstream 新增三份官方标准快照（`brief/site-package/standards/references/`）：
+  - `GENERATIVE-AI-INTERIM-MEASURES`：生成式人工智能服务管理暂行办法，A0级正式标准，
+    usable_for_formal=yes，用于 AI 治理与数据最小化边界的背景引用
+  - `BARRIER-FREE-ENVIRONMENT-LAW`：无障碍环境建设法，A0级正式标准，
+    usable_for_formal=yes，用于无障碍与人工等价服务边界的背景引用
+  - `ELDERLY-SMART-TECH-PLAN-2020-45`：国办发〔2020〕45号，A0级政策背景，
+    usable_for_formal=background_only，用于适老化政策语境参照
+- 在 `sources.json` 中登记上述三份标准（id 与 brief 端 source_id 一致）
+  及 Issue #1029 社区讨论（community_discussion，不替代官方几何）
+- 在 `standard_matrix.json` 中新增对应三条标准矩阵，review_status 分别为
+  addressed / addressed / data_gap，均附 proposal_sections / source_ids / assumption_ids 引用
+- 在 `compliance_matrix.json` 各 requirements 的 source_ids 中补充 ISSUE-1029，
+  使 PROV-KEY-003 位置疑点在所有相关需求中可追溯
+- 刷新 `manifest.json` 中 sources.json / compliance_matrix.json / standard_matrix.json
+  的 sha256 哈希
+- 本地校验：validate PASS / self_check PASS / preflight 3 文件变更
+
+学习笔记（借鉴来源：upstream brief/site-package/standards/ 新增快照）：
+- 官方标准快照现均附带 allowed_uses / prohibited_uses / license_summary / limitations
+  四段式字段；本包此前未完整覆盖该结构，本轮补全以对齐 upstream 标准引用规范
+- upstream review_submission.py 新增 is_organizer_owned_action() 检测（`组织方：`/`主办方：`前缀），
+  本包 compliance_matrix 中所有修复项均为 participant 可控范围，无需修改
+
 # 方案迭代记录
 
 ## v0.3 - 2026-08-10
