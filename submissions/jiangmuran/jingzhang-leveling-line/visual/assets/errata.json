@@ -4,22 +4,22 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 34,
+  "total": 37,
   "by_found_by": {
-   "audit": 14,
+   "audit": 16,
    "own-gate": 1,
    "external-reviewer": 3,
-   "self": 16
+   "self": 17
   },
   "by_shape": {
    "reference-does-not-resolve": 4,
    "number-outlived-the-sentence-holding-it": 4,
    "two-copies-of-one-thing-drifted": 3,
-   "check-measured-the-convenient-thing": 8,
+   "check-measured-the-convenient-thing": 10,
    "geometry-does-not-mean-what-it-says": 4,
    "term-of-art-misapplied": 1,
    "claim-outlived-the-package": 2,
-   "deliverable-not-inspected-before-shipping": 6,
+   "deliverable-not-inspected-before-shipping": 7,
    "gate-reported-and-was-ignored": 1,
    "measurement-answering-a-question-it-cannot-answer": 1
   }
@@ -376,6 +376,36 @@
    "what_zh": "名为 land-use-structure.png 的图里没有用地结构。它画的是三层范围与水准点分级，而 geometry/land_use.geojson 里 22 个要素、7 个类别、逐点验证过无重叠无缺口，在评审每次必收的五张图中一张也没出现过。",
    "why_zh": "这五张图的文件名是 build_review_input.py 定死的，不是本方案取的——于是文件名承诺的读法与图的内容脱钩，而没有人打开过这张图去对照它的名字。第六次同型：把成品渲染出来读一遍就能发现，而没有读。",
    "fix_zh": "右栏加入由该 GeoJSON 现算的剖分构成面板（按申报面积排序、逐类块数、要素与类别计数写在副标题里）。留白占比一度被写成字面量 55.4%——一个手打进句子、而句子紧挨着算它的图表的数字，即本册记录四次的第五形状——已改为从画条形图的同一个字典里取回。"
+  },
+  {
+   "id": "E35",
+   "commit": "43a598d930",
+   "file": "proposal.md",
+   "found_by": "self",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "为测评审的重复性，本方案先去比对「评审可见输入文件集」，而那份清单读错了三处：图像由 ai_review_submission.py 组装而非 build_review_input；PDF 是两个写死的文件名而不是 drawings/ 下的每一份（两份 .en.pdf 从不被送出）；build_review_input 还会送出递归文件清单与三份仓库根目录文件。同一版还把整个 visual/ 目录当成评审输入来 diff，于是一份评审根本不打开的 JSON 变动被算作输入变动，对照组报 0 对。",
+   "why_zh": "第十一次同一形状：拿一份**记住的**清单去代替**要判的那件事**。而这次尤其没道理——同一个 head SHA 被评审多次时整棵树按定义逐字节相同，根本不需要任何清单。**为了测一台仪器的重复性，先给自己引入了一个不必要的假设。**",
+   "fix_zh": "控制项改为 commit：按 head SHA 归组，池化组内标准差 3.89 分（自由度 19），同一 commit 观测到最大 13 分跨度。文件集比对降级为附注并改正。另有一处在同一版被自己抓出：分数正则只认 approve 路径的 `score 91/100`，漏掉 request-changes 路径的 `七维加权分：**91.0/100**`，一次少收 132 条——而漏掉的恰是带七维分项的那一类。"
+  },
+  {
+   "id": "E36",
+   "commit": "43a598d930",
+   "file": "proposal.md",
+   "found_by": "audit",
+   "shape": "deliverable-not-inspected-before-shipping",
+   "what_zh": "compliance_matrix.json 里 1.5.3.1 众智园AI自主创新加速区指向「指标体系、面积复算与合规矩阵」，1.5.3.2 北京AI原点社区指向「风险、版权与合规说明」，1.4.1 与 1.4.2 各自指向下一条要求的章节。四条引用全部解析成功，因为那些标题确实存在。",
+   "why_zh": "本包正文写着「三张矩阵的每一条引用都被校验过」，而校验的是**章节存在**，不是**章节对不对**。任务书里权重最高的两条要求，指着与它们无关的小节。",
+   "fix_zh": "matrix_refs_qa 增加第二条规则：某条要求的标题若命名了正文中确实存在的一个标题，该标题必须出现在这条要求的引用里；匹配须强（归一化标题整体落在归一化小节名内，且至少六字）。打开当场多抓出 1.4.1 与 1.4.2 两条错位，合计五处。"
+  },
+  {
+   "id": "E37",
+   "commit": "43a598d930",
+   "file": "report/narrative.md",
+   "found_by": "audit",
+   "shape": "check-measured-the-convenient-thing",
+   "what_zh": "report/narrative.md 开篇写「228 份 … 69 份（30.3%）… 84 种 … 9 个模型家族」，assumptions.json#A-CORPUS-001 也写 228，而语料早已是 354 / 106（29.9%）/ 113 / 8；proposal.md 写权利台账枚举 77 个文件，实际 83。三处都在 census_claims_qa 报「14/14 全部当前」时随包发出。",
+   "why_zh": "这道闸门本身就是为防止此类漂移而建的，它的**扫描范围**却只有两份 proposal——而本包在五份文件里陈述同一批读数。**范围是方便测的那一个，不是要判的那一个。**",
+   "fix_zh": "上下文模式改为扫描全部随包 markdown 加 assumptions.json，共 16 条模式覆盖 5 份文件。changelog.md 明确排除，且排除本身是要点：变更记录写的是某个版本**当时**的数，把 v0.6 条目里的「215 份已合入」改成 354 会让它说谎。"
   }
  ]
 }

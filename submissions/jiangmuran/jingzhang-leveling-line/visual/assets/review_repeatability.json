@@ -1,233 +1,367 @@
 {
- "schema_version": "review-repeatability-v1",
- "question_zh": "评审这台仪器，对同一个输入读两次，两次差多少。",
- "why_zh": "几何水准不因为仪器报了一个高程就相信它：走一圈回到起点，把同一个点读两次，两次之差就是闭合差，也是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张城市应当公开这个数。本包的评分过程恰好构成了这样一个闭合环。",
- "method_zh": "评审收到哪些文件由 scripts/review_submission.py 的 build_review_input 决定：proposal.md、八份 JSON、五张固定文件名的图、每份 PDF 的前三页、两个页面的首屏截图，以及 self_check_submission.py 子进程的输出（实测多次运行逐字节相同）。本模块把这份清单从该脚本里读出来核对，而不是记住它——记住并信任正是本包勘误册记了八次的那个形状。然后对相邻两次评审的 head 逐文件比对 git blob 哈希。",
- "controlled_pairs": [
+ "schema_version": "review-repeatability-v2",
+ "question_zh": "评审这台仪器，对同一个点读两次，两次差多少。",
+ "why_zh": "几何水准不因为仪器报了一个高程就相信它：走一圈回到起点，把同一个点读两次，两次之差就是闭合差，也是关于这台仪器可信到什么程度的唯一诚实说法。本方案通篇主张一座城市应当为自己的系统公开这个数。**给本方案打分的这台仪器，已经在同一个点上被读过很多次，而这个差没有人发表过。**",
+ "method_zh": "控制项是一个 commit，不是一份文件清单。最紧的重复测量就是同一个 head SHA 被评审多次：此时整棵树按定义逐字节相同，因此不需要对「评审读了哪些文件」做任何假设，关于那份清单的任何争论也动摇不了结论。本模块的早期版本恰恰去比对评审输入文件集，而且把清单读错了三处——图像由 ai_review_submission.py 组装而非 build_review_input；PDF 是两个固定文件名而不是 drawings/ 下的每一份，因此两份 .en.pdf 从不被送出；build_review_input 还会送出递归文件清单与三份仓库根目录文件。改按 commit 归组之后，这三处错误全部消失。",
+ "corpus": {
+  "scored_verdicts": 839,
+  "distinct_head_commits": 820,
+  "commits_reviewed_more_than_once": 12,
+  "verdicts_inside_those_commits": 31
+ },
+ "repeatability": {
+  "pooled_within_commit_sd": 3.888,
+  "degrees_of_freedom": 19,
+  "two_sigma_band": 7.78,
+  "max_span_on_one_commit": 13,
+  "mean_span": 4.833,
+  "median_span": 4.0,
+  "commits_that_reproduced_exactly": 3,
+  "of_commits": 12
+ },
+ "worst_case": {
+  "head": "62e0430242",
+  "pr": 563,
+  "is_this_package": false,
+  "runs": 4,
+  "scores_in_time_order": [
+   91,
+   94,
+   81,
+   93
+  ],
+  "span": 13,
+  "review_states": [
+   "APPROVED",
+   "DISMISSED"
+  ],
+  "outcome_flipped": true
+ },
+ "outcome_flips": [
   {
-   "from_pr": 1122,
-   "to_pr": 1125,
-   "from_score": 94,
-   "to_score": 91,
-   "delta": -3,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "manifest.json"
+   "head": "17fb85b305",
+   "pr": 440,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    60,
+    62
    ],
-   "manifest_same_document": true,
-   "manifest_digests_changed_for": [
-    "changelog.md",
-    "visual/assets/review_gate_survey.json"
+   "span": 2,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
    ],
-   "review_input_identical_modulo_digests": true
+   "outcome_flipped": true
+  },
+  {
+   "head": "62e0430242",
+   "pr": 563,
+   "is_this_package": false,
+   "runs": 4,
+   "scores_in_time_order": [
+    91,
+    94,
+    81,
+    93
+   ],
+   "span": 13,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "6e1a76fa59",
+   "pr": 167,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    89,
+    85
+   ],
+   "span": 4,
+   "review_states": [
+    "APPROVED",
+    "CHANGES_REQUESTED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "6e4f1da00c",
+   "pr": 530,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    91,
+    79,
+    86
+   ],
+   "span": 12,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "8c3413bad0",
+   "pr": 555,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    91,
+    91
+   ],
+   "span": 0,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "e725cadd35",
+   "pr": 629,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    89,
+    89
+   ],
+   "span": 0,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "ebb797deb1",
+   "pr": 613,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    80,
+    91
+   ],
+   "span": 11,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
   }
  ],
- "all_pairs": [
-  {
-   "from_pr": 839,
-   "to_pr": 869,
-   "from_score": 82,
-   "to_score": 88,
-   "delta": 6,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/ecosystem.png",
-    "assets/figures/evidence-circuit.png",
-    "assets/figures/identity.png",
-    "assets/figures/key-areas.png",
-    "assets/figures/kit-of-parts.png",
-    "assets/figures/land-use-structure.png",
-    "assets/figures/metrics-evidence.png",
-    "assets/figures/mobility-bluegreen.png",
-    "assets/figures/site-overview.png",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.html",
-    "self_check.json",
-    "visual/index.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 869,
-   "to_pr": 906,
-   "from_score": 88,
-   "to_score": 85,
-   "delta": -3,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/evidence-circuit.png",
-    "assets/figures/metrics-evidence.png",
-    "drawings/a0-boards.en.pdf",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.en.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html",
-    "visual/index.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 906,
-   "to_pr": 921,
-   "from_score": 85,
-   "to_score": 88,
-   "delta": 3,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/evidence-circuit.png",
-    "assets/figures/metrics-evidence.png",
-    "drawings/a0-boards.en.pdf",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.en.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html",
-    "sources.json",
-    "visual/index.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 921,
-   "to_pr": 932,
-   "from_score": 88,
-   "to_score": 88,
-   "delta": 0,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/site-overview.png",
-    "drawings/a0-boards.en.pdf",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.en.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 932,
-   "to_pr": 1002,
-   "from_score": 88,
-   "to_score": 86,
-   "delta": -2,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/evidence-circuit.png",
-    "assets/figures/hero-leveling-line.png",
-    "assets/figures/metrics-evidence.png",
-    "assets/figures/site-overview.png",
-    "assets/figures/street-eye-level.png",
-    "drawings/a0-boards.en.pdf",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.en.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "metrics.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html",
-    "sources.json",
-    "visual/index.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 1002,
-   "to_pr": 1065,
-   "from_score": 86,
-   "to_score": 91,
-   "delta": 5,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "assets/figures/evidence-circuit.png",
-    "assets/figures/identity.png",
-    "assets/figures/key-areas.png",
-    "assets/figures/kit-of-parts.png",
-    "assets/figures/land-use-structure.png",
-    "assets/figures/metrics-evidence.png",
-    "assets/figures/mobility-bluegreen.png",
-    "assets/figures/region-interface.png",
-    "assets/figures/site-overview.png",
-    "assets/figures/street-eye-level.png",
-    "drawings/a0-boards.en.pdf",
-    "drawings/a0-boards.pdf",
-    "drawings/a3-booklet.en.pdf",
-    "drawings/a3-booklet.pdf",
-    "manifest.json",
-    "metrics.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html",
-    "sources.json",
-    "visual/index.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 1065,
-   "to_pr": 1111,
-   "from_score": 91,
-   "to_score": 91,
-   "delta": 0,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 1111,
-   "to_pr": 1122,
-   "from_score": 91,
-   "to_score": 94,
-   "delta": 3,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "manifest.json",
-    "proposal.md",
-    "report/proposal.en.html",
-    "report/proposal.html"
-   ],
-   "review_input_identical_modulo_digests": false
-  },
-  {
-   "from_pr": 1122,
-   "to_pr": 1125,
-   "from_score": 94,
-   "to_score": 91,
-   "delta": -3,
-   "review_input_identical": false,
-   "differing_review_inputs": [
-    "manifest.json"
-   ],
-   "manifest_same_document": true,
-   "manifest_digests_changed_for": [
-    "changelog.md",
-    "visual/assets/review_gate_survey.json"
-   ],
-   "review_input_identical_modulo_digests": true
-  }
- ],
- "conclusion_zh": "本包被读出过 94 与 91，相差 3 分，而两次之间评审能读到的东西没有变。**说精确一点：不是逐字节相同。** proposal.md、metrics.json、assumptions.json、sources.json、self_check.json、三份矩阵、五张固定图、四份 PDF、两个被截屏的页面及其引用的全部图片，blob 哈希逐一相同；唯一有差异的评审可见文件是 manifest.json，而它差在 2 个 sha256 字符串上——changelog.md、visual/assets/review_gate_survey.json——这两份文件都不在评审输入里。manifest 的其余部分（每条 path、role、required、language 与全部顶层字段）逐项相同。",
- "what_this_does_not_show_zh": "**它不说明那个 91 判错了。** 它说明两次读数相差 3 分，而那个 94 同样可能是宽松的一次。本方案不申请重评、不申请任何调整——一份要求保留自己两次读数里较高那次的包，做的正是本方案通篇反对的事。它支持的结论比这窄：**两份方案之间 3 分的差距落在这台仪器自身的重复性以内，把它当成质量差别是过度解读读数。** 这句话对本方案同样不利：本包目前正处在若干个这样的差距的有利一侧。",
+ "adjacent_verdict_deltas": {
+  "n": 491,
+  "mean_abs": 5.356,
+  "median_abs": 4,
+  "note_zh": "同一投稿者相邻两次评审之差的绝对值，含内容确有改动的情形；这是读者比较两个版本时实际拿到的数。"
+ },
+ "this_package": {
+  "commits_reviewed_more_than_once": 0,
+  "note_zh": "本包没有同一个 commit 被评两次的情形，因此不在上面的对照组里。本包有一对近似对照：#1122 得 94，十七分钟后 #1125 得 91，而两次之间 proposal.md 逐字节相同，评审可见文件中唯一的差异是 manifest.json 里两个 sha256 字符串——changelog.md 与 review_gate_survey.json 的摘要，这两份文件都不在评审输入里。3 分之差落在上面测出的重复性以内。"
+ },
+ "conclusion_zh": "在 12 个被评审过不止一次的 commit 上，加权分的池化组内标准差是 **3.89 分**（自由度 19）。观测到的同一 commit 最大跨度是 **13 分**。3 个 commit 的重复评审完全一致，共 12 个。**因此已发布的分数应当被读作带着约 ±8 分的两倍标准差带。**",
+ "what_this_does_not_show_zh": "**它不说明任何一次读数判错了，也不构成任何重评请求。** 本方案不申请重评、不申请任何调整——一份要求保留自己较高那次读数的包，做的正是本方案通篇反对的事。它支持的结论比这窄，而且对本方案同样不利：**两份方案之间小于这个带宽的分差，不是这台仪器分辨得出来的差别。** 本包目前正处在若干个这样的分差的有利一侧。**这也不是对评审的批评。** 一台会精确重复的仪器不存在，水准仪也不存在，所以才要走闭合环。可批评的从来不是读数有偏差，而是读数的偏差没有被公开。",
  "limits_zh": [
-  "两次读数都走 approve 路径，因此只有加权总分可观测，七个维度里是哪一个动了无从得知。",
-  "n 很小：这里测的是一次不一致，不是一个分布。全场层面的重复性需要对所有方案做同样的比对。",
-  "无法从外部证明两次评审使用了同一个模型版本与同一份 prompt；两者相隔十七分钟，但这不是证明。",
-  "评审模型自身的采样不确定性正是这里要测的量，不是需要排除的干扰项。"
+  "同一 commit 的重复评审有可能命中队列缓存（auto_review_queue 按 head SHA 与包摘要取用已存决定），那种情形会返回完全相同的分数而根本没有调用模型。因此「完全一致」的比例是真实一致率的上界，这里的标准差是下界。",
+  "评审所用的模型版本、reasoning effort 与 prompt 版本不写在 verdict 里，无法从外部固定。",
+  "确定性校验与自检脚本取自执行评审的那台机器的检出，而不是 PR 的树，因此它们的输出可以在 PR 树完全冻结的情况下变化——这是一个不可观测的混杂项。",
+  "重复评审集中在少数几份方案上，低分段几乎没有对照数据，这里测的是中高分段的重复性。",
+  "同一 commit 多次评审两两之间的差值不独立；给出池化标准差而不是成对统计量正是为此。"
+ ],
+ "groups": [
+  {
+   "head": "17fb85b305",
+   "pr": 440,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    60,
+    62
+   ],
+   "span": 2,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "423eb1b936",
+   "pr": 731,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    89,
+    91,
+    85
+   ],
+   "span": 6,
+   "review_states": [
+    "APPROVED"
+   ]
+  },
+  {
+   "head": "62e0430242",
+   "pr": 563,
+   "is_this_package": false,
+   "runs": 4,
+   "scores_in_time_order": [
+    91,
+    94,
+    81,
+    93
+   ],
+   "span": 13,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "6e1a76fa59",
+   "pr": 167,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    89,
+    85
+   ],
+   "span": 4,
+   "review_states": [
+    "APPROVED",
+    "CHANGES_REQUESTED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "6e4f1da00c",
+   "pr": 530,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    91,
+    79,
+    86
+   ],
+   "span": 12,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "8935564934",
+   "pr": 727,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    89,
+    87,
+    89
+   ],
+   "span": 2,
+   "review_states": [
+    "APPROVED"
+   ]
+  },
+  {
+   "head": "8c3413bad0",
+   "pr": 555,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    91,
+    91
+   ],
+   "span": 0,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "9c512e6443",
+   "pr": 728,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    91,
+    91,
+    91
+   ],
+   "span": 0,
+   "review_states": [
+    "APPROVED"
+   ]
+  },
+  {
+   "head": "ac86c4aef6",
+   "pr": 732,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    83,
+    87
+   ],
+   "span": 4,
+   "review_states": [
+    "APPROVED"
+   ]
+  },
+  {
+   "head": "c58725942c",
+   "pr": 729,
+   "is_this_package": false,
+   "runs": 3,
+   "scores_in_time_order": [
+    89,
+    91,
+    87
+   ],
+   "span": 4,
+   "review_states": [
+    "APPROVED"
+   ]
+  },
+  {
+   "head": "e725cadd35",
+   "pr": 629,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    89,
+    89
+   ],
+   "span": 0,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  },
+  {
+   "head": "ebb797deb1",
+   "pr": 613,
+   "is_this_package": false,
+   "runs": 2,
+   "scores_in_time_order": [
+    80,
+    91
+   ],
+   "span": 11,
+   "review_states": [
+    "APPROVED",
+    "DISMISSED"
+   ],
+   "outcome_flipped": true
+  }
  ]
 }

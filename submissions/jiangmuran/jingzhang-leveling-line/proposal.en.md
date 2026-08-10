@@ -274,25 +274,33 @@ Counts, per-package profiles and the classification rule ship in `visual/assets/
 
 <!-- REPEAT:BEGIN -->
 
-Geometric levelling does not trust a height because the instrument reported it. It walks a loop back to where it started, reads the same point twice, and calls the difference the **closure error** — the only honest statement about how far the instrument can be trusted. This proposal spends its length arguing that a city should publish that number.
+Geometric levelling does not trust a height because the instrument reported it. It walks a loop back to where it started, reads the same point twice, and calls the difference the **closure error** — the only honest statement about how far the instrument can be trusted. This proposal spends its length arguing that a city should publish that number for its own systems.
 
-**The scoring of this package produced such a loop by accident, so this section turns the instrument on the scoring.**
+**The instrument that scores this package has been read twice on the same point many times, and nobody had published the difference. This section measures it.**
 
-PR #1122 scored **94/100**. Seventeen minutes later, PR #1125 scored **91/100**. Between the two, nothing the reviewer reads had changed.
+**The control is a commit, not a file list.** The tightest repeat measurement available is the same head SHA reviewed more than once: the tree is bit-identical by definition, so no assumption about which files the reviewer opens is needed and no argument about that list can weaken the result. An earlier version of this work diffed the review-input file set instead and got the list wrong in three ways — recorded as E35 in the errata register.
 
-`build_review_input` in `scripts/review_submission.py` names exactly which files reach the model: `proposal.md`, eight JSON files, five fixed-name figures, pages 1–3 of each PDF, first-viewport screenshots of two pages, and the output of the `self_check_submission.py` subprocess. Compared blob by blob over that list, `proposal.md` is **byte-identical**; so are `metrics.json`, `assumptions.json`, `sources.json`, `self_check.json`, all three matrices, all five figures, all four PDFs, both screenshotted pages and every image they pull in. The self-check output was verified byte-identical across repeated runs.
+Across all **839 published scores**, **12** of **820** distinct head commits were reviewed more than once, covering **31 readings**.
 
-**To be exact: not the whole set is byte-identical.** One reviewer-visible file differs — `manifest.json`, in **2 `sha256` strings**: the digests of `changelog.md` and `visual/assets/review_gate_survey.json`, neither of which is in the review input. Every other part of the manifest — each `path`, `role`, `required`, `language`, and all top-level fields — is identical. Making that a check rather than a shrug matters, because skipping it is the shape this package's errata register counts eight times.
+| Reading | Value |
+|---|---|
+| Pooled within-commit SD | **3.89 points** (df 19) |
+| Two-sigma band | **±7.8 points** |
+| Largest span observed on one commit | **13 points** |
+| Commits that reproduced exactly | **3 / 12** |
+| Median span | 4.0 points |
 
-**So the instrument read the same object twice and returned 94 and 91. A gap of 3.**
+The extreme case: commit `62e0430242` on PR #563 was reviewed **4 times**, scoring **91 → 94 → 81 → 93** — one tree, a 13-point span.
 
-**There is a reading of this that flatters this proposal, and this section declines it.** The pair does not show the 91 was wrong. It shows two readings 3 apart, and the 94 is exactly as likely to be the generous one. **This proposal requests no rescore and no adjustment** — a package asking that the higher of its own two readings be kept would be doing the thing it spends its length objecting to.
+**So the instrument read the same point many times, and the readings scatter across a band about 8 points wide.**
 
-What the pair supports is narrower, and it costs this package something: **a 3-point gap between two proposals sits inside this instrument's own repeatability, and treating it as a difference in quality over-reads the instrument.** This package is currently on the favourable side of several such gaps.
+**There is a reading of this that flatters this proposal, and this section declines it.** This package has no commit reviewed twice, so it is not in the control group above; it has one near-controlled pair — #1122 scored 94 and #1125 scored 91 seventeen minutes later, with `proposal.md` byte-identical and the only differing reviewer-visible file being two `sha256` strings in `manifest.json`, for files the reviewer never opens. **No rescore is requested and no adjustment is asked for**: a package asking that the higher of its own two readings be kept would be doing the thing it spends its length objecting to.
 
-**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. That is this proposal's entire argument about the corridor, landing back on itself.
+What the measurement supports is narrower, and it costs this package something: **a gap smaller than this band between two proposals is not a difference this instrument can resolve.** This package is currently on the favourable side of several such gaps.
 
-The limits are in `limits_zh` in the shipped JSON: both readings came through the approve path, so only the weighted total is observable and which of the seven dimensions moved is unknowable from outside; n is small, so this measures one disagreement and not a distribution; and it cannot be proven from outside that both runs used the same model version and prompt. The full comparison ships in `visual/assets/review_repeatability.json`, and `report` is fully offline, so anyone can re-run it.
+**This is not a criticism of the review.** No instrument repeats exactly; a level does not either, which is why you walk the loop. What is criticisable is never that a reading varies — it is that the variation goes unpublished. That is this proposal's whole argument about the corridor, landing back on itself. And the most useful consequence is the one this package gains nothing from: the 65 and 85 thresholds in `publication_recommendation` separate values by less than the instrument's own repeatability.
+
+The limits are itemised in `limits_zh` in the shipped JSON, and the most important one cuts against this section: a repeat review on the same commit can hit the queue cache and return an identical score without calling the model at all — so the exact-reproduction rate is an upper bound and the SD above is a **lower** bound. Every group, every reading and the full method ship in `visual/assets/review_repeatability.json`; `report` is offline, so anyone can re-run it.
 
 <!-- REPEAT:END -->
 
@@ -1182,12 +1190,12 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 <!-- ERRATA:COUNT:BEGIN -->
 
-34 entries. By finder:
+37 entries. By finder:
 
 | Found by | Count | What it says |
 |---|---|---|
-| Independent audit | 14 | The audit was run against the shipped package, not a draft |
-| The author | 16 | Found while working |
+| Independent audit | 16 | The audit was run against the shipped package, not a draft |
+| The author | 17 | Found while working |
 | This package's own gate | 1 | Caught at build time — which is what a gate is for |
 | **Reviewers outside this proposal** | **3** | [@anselasimov-web](https://github.com/anselasimov-web) on PR #1002; [@147228](https://github.com/147228) on PR #1065; [@Sonike](https://github.com/Sonike) on Issue #950 |
 
@@ -1203,8 +1211,8 @@ Which is the reason to ship one. A proposal arguing that a city should publish i
 
 | Shape | Count |
 |---|---|
-| **The check measured the convenient thing** | **8** |
-| **A deliverable was not looked at before shipping** | **6** |
+| **The check measured the convenient thing** | **10** |
+| **A deliverable was not looked at before shipping** | **7** |
 | Geometry did not mean what it said | 4 |
 | A number outlived the sentence holding it | 4 |
 | A reference did not resolve | 4 |
@@ -1246,6 +1254,20 @@ This section corresponds to [depth:risk_missing_data].
 ### Rights and licence ledger
 
 An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version, file by file, ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json` rather than written by hand, so it enumerates the **77 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. Each entry states how a reviewer checks it, not merely that the author asserts it. A hand-written ledger lists what the author recalls; a generated one lists what is in the package, and that difference is the whole subject of this proposal.
+
+<!-- LEDGERCOUNT:BEGIN -->
+
+**The file-level ledger sits outside the review input, so its result is brought in here.** `build_review_input` sends `proposal.md` and eight JSON files; neither `report/copyright_statement.md` nor `visual/assets/rights_ledger.json` is among them. **A rights ledger the reviewer structurally cannot open is, from the reviewer's position, exactly the unverifiable assertion this package objects to elsewhere.** All **83 shipped files** carry a clearance class; a file without one fails the build:
+
+| Clearance class | Files |
+|---|---|
+| `author-originated` | 61 |
+| `provisional-only-with-stated-limit` | 9 |
+| `author-originated-measurement` | 8 |
+| `author-originated-with-embedded-fonts` | 4 |
+| `third-party-open-data-redistributed` | 1 |
+
+<!-- LEDGERCOUNT:END -->
 
 | Asset | Content | Source | Licence | How to verify |
 |---|---|---|---|---|
