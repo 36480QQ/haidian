@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把「京张」读完整：地上是9公里遗址公园慢行明线，地下是清华园隧道里飞驰的高铁暗线，北端是张家口的绿电与算力，南端是海淀的模型与人才。方案以「京张对开」为总体概念——绿电与算力上行进京，模型、人才与场景下行出塞——用「明线+暗线、三站一门、两台八口、双河冷环」组织11.4平方公里总体设计与三处重点区详细设计，并以「对开协议」把每一次AI部署都变成上行数据与下行公共回报成对出现的双向班次。全部空间建议基于自行推导并按公告面积校准的街道贴合临时边界，属概念建议，官方红线发布后整包重算。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # 京张对开 THE TWO-WAY LINE：让百年走廊双向运行的AI创新带城市设计

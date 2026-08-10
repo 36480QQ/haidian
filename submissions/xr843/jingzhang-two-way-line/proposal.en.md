@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Read 'Jing-Zhang' in full: above ground, a 9-km heritage-park slow line; underground, the high-speed rail racing through Qinghuayuan Tunnel; at the northern end, Zhangjiakou's green power and compute; at the southern end, Haidian's models and talent. The proposal's master concept is THE TWO-WAY LINE — green electricity and compute run up-line into Beijing while models, talent, and scenarios run down-line out — organizing the 11.4 km² overall design and three key detailed-design areas through 'Surface Line + Under Line, Three Stations One Gate, Two Platforms Eight Crossings, Twin-River Cooling Loop', and binding every AI deployment to a Two-Way Protocol: every up-line data run must be paired with a down-line public return. All spatial content is a concept proposal on a self-derived, street-aligned provisional boundary calibrated to announced areas; the whole package will be recalculated when official redlines are published."
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # THE TWO-WAY LINE: Running the Centennial Jing-Zhang Corridor in Both Directions
