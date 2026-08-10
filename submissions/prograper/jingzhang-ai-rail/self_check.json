@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "FILE_INVENTORY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submission/",
+      "message": "all 30 required files present"
+    },
+    {
+      "check_id": "JSON_PARSE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "**/*.json",
+      "message": "all JSON files parse"
+    },
+    {
+      "check_id": "FEATURE_FIELDS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/*.geojson",
+      "message": "every feature carries id/layer/source_type/confidence/geometry_role"
+    },
+    {
+      "check_id": "LAND_USE_TILING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/land_use.geojson",
+      "message": "coverage overshoot 0 m2, gaps 0 m2, overlaps 0 m2 (EPSG:4548, tolerance 0.5 m)"
+    },
+    {
+      "check_id": "METRIC_FIELDS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "39 metrics, all carry status/value/unit/source_files/formula/confidence"
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md + proposal.en.md",
+      "message": "v2 format, bilingual contract v1, translation pair correctly mapped zh<->en"
+    },
+    {
+      "check_id": "SECTION_FIGURE_ALIGNMENT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal pair",
+      "message": "zh 13 vs en 13 top-level sections; figures 5/5 (need 5 each)"
+    },
+    {
+      "check_id": "EVIDENCE_MARKERS",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md/en",
+      "message": "every chapter cites >=1 evidence; no >3 adjacent markers"
+    },
+    {
+      "check_id": "OFFLINE_VISUAL",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "34 KB, zero external http(s) references"
+    },
+    {
+      "check_id": "FIGURE_QUALITY_GATE",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "5 figures present, each >50KB"
+    },
+    {
+      "check_id": "DRAWING_PDFS",
+      "result": "pass",
+      "severity": "major",
+      "target": "drawings/",
+      "message": "A3 booklet + A0 boards non-empty, well-formed EOF"
+    },
+    {
+      "check_id": "PROVISIONAL_LABELING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "site_boundary/key_areas",
+      "message": "site & key-area geometry labeled official_boundary=false / provisional_constraint"
+    },
+    {
+      "check_id": "FORBIDDEN_CLAIMS_SCAN",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal pair",
+      "message": "no affirmative approved/guaranteed phrasing detected"
+    },
+    {
+      "check_id": "INTERNAL_REF_INTEGRITY",
+      "result": "pass",
+      "severity": "minor",
+      "target": "proposal pair",
+      "message": "backticked file refs resolve inside the package (source_registry.json cited as repo context)"
+    }
+  ]
+}
