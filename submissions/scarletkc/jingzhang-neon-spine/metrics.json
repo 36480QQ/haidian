@@ -153,6 +153,87 @@
       "confidence": "medium",
       "assumptions": []
     },
+    "pilot_interface_length_m": {
+      "status": "known",
+      "value": 100,
+      "unit": "m",
+      "source_files": [
+        "visual/assets/delivery-contract.json"
+      ],
+      "formula": "declared_concept_interface_length_target",
+      "confidence": "medium",
+      "assumptions": [
+        "Concept target only; exact alignment requires Gate 0 survey and professional review."
+      ]
+    },
+    "pilot_duration_days": {
+      "status": "known",
+      "value": 100,
+      "unit": "day",
+      "source_files": [
+        "visual/assets/delivery-contract.json"
+      ],
+      "formula": "declared_maximum_pilot_duration",
+      "confidence": "medium",
+      "assumptions": [
+        "Concept limit only; not an approved public schedule."
+      ]
+    },
+    "delivery_gate_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-contract.json"
+      ],
+      "formula": "count(delivery_contract.gates)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "tabletop_fixture_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/protocol-beacon-tabletop-evidence.json"
+      ],
+      "formula": "count(tabletop_evidence.results)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "negative_fixture_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/protocol-beacon-tabletop-evidence.json"
+      ],
+      "formula": "count(results where expected_decision=stop)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "public_right_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-contract.json"
+      ],
+      "formula": "count(delivery_contract.public_rights)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "regional_interface_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-contract.json"
+      ],
+      "formula": "count(delivery_contract.regional_interfaces)",
+      "confidence": "medium",
+      "assumptions": []
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

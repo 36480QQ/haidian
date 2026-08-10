@@ -6,6 +6,7 @@ language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
+iteration: "v1.1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从交通遗产转化为一条城市公共协议，让每项 AI 的用途、数据、责任人、人工复核和退出机制在公共空间中可见。所有空间为基于 provisional geometry 的概念建议。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -20,7 +21,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案以官方征集公告、面向智能体任务书和仓库场地包为任务依据。官方文本给出统筹研究、总体设计与三处重点区域的工作要求，但公开包尚未提供 official site boundary、official key-area polygons、控规、道路红线、权属、市政、文保与建筑普查。本包因此原样继承仓库的 provisional geometry，并把它标成 medium confidence、official_boundary=false 和 provisional_constraint。按 EPSG:4548 复算的当前提交边界约为 11.413 平方公里，只服务于可重复的方案比较，不构成红线、审批或精确地籍结论。[source:OFFICIAL-ANNOUNCEMENT]
 
+本轮把愿景压缩成一个可拒绝开工的首发合同：众智园“协议灯塔 100 米 / 首个 100 天公民 AI 验收段”。100 米是可撤回界面的概念长度目标，100 天是最长试用窗口；准确位置、角色与资源要过 G0-G2 才能进入合成测试，4/4 fixture 与 3/3 负向 fail closed 后才可能进入有人值守的公共 Gate。它当前的 operational_status 是 not_authorized_not_run，不是已获许可或已经运行的项目。[metric:pilot_interface_length_m] [metric:pilot_duration_days] [source:PASSPORT-EVIDENCE]
+
 证据链分成五层：来源登记定义资料用途，GeoJSON 保存空间主张，metrics.json 复算可量化结果，assumptions.json 暴露缺口，self_check.json 保存四门自检。读者可以从图进入数据，而不必相信一张气氛图。正式深化时，官方 polygon 到位后必须同步重算用地、道路、蓝绿、公共空间、建筑、分期与全部图件，不能只替换面积数字。[source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001]
+
+可见主张使用五行溯源登记：provisional 范围回到 site_boundary.geojson；空间比例回到 metrics.json 与对应图层；100 米/100 天回到 delivery-contract.json 且标明是自设限制；桌面演练回到 evidence JSON 且标明 synthetic；六类成本金额全部保持 unknown。任何一行缺来源、限制或复算入口，不能进入下一道 Gate。[source:PASSPORT-EVIDENCE]
 
 ![总体范围、三处重点区域与霓光脊关系](assets/figures/site-overview.png)
 
@@ -32,9 +37,32 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 统筹研究层面以公告约 43.6 平方公里为产业与未来城市讨论范围，不生成伪精确 polygon；总体设计层面使用仓库约 11.4 平方公里 provisional boundary 组织用地与更新框架；重点区域层面使用三处 provisional polygons 表达详细设计问题。双账本贯穿三层：证据账本记录来源、几何、指标和假设；公民 AI 护照为每个场景公开用途、最少数据、运营者、人工复核、申诉方式、非数字替代与日落条款。[source:AGENT-TASKBOOK]
 
+任务书的三大定位和五大功能不再只藏在矩阵中，而是逐项绑定空间载体与验收含义：
+
+| 定位 / 功能 | 霓光脊载体 | 可验收含义 |
+| --- | --- | --- |
+| 百年京张文化带 | 贡献轨、记忆代理、轨道公地 | 遗产不是布景；清权、贡献和维护过程可见 |
+| 都市 AI 生活体验带 | 十二端口、七项首用权、免费基本通道 | 体验可拒绝、可申诉、可退回人工或非 AI |
+| AI 融合创新带 | 三引擎、两翼、区域候选接口 | 研究、验证、采用、评议、传播形成闭环 |
+| AI 全栈自主创新体系 | 众智园可信铸造花园 | 安全、标准、物理 AI、边缘算力与接管测试 |
+| 世界级 AI 创新生态 | 零号站 + 七个机制案例 | 开源研究、转化、人才日常和独立评议 |
+| AI+ 场景赋能新范式 | T1-T4 + S5-S12 | 场景卡、最少数据、人工复核和日落 |
+| 智能化 AI 活力城市 | 轨道公地 + 小月河场景翼 | 无 App、无障碍、低扰动的日常公共体验 |
+| AI 治理全球话语权 | 公民 AI 护照 + 公开测试登记簿 | 公开失败、修复、责任与退出证据 |
+
+区域协同只写成候选接口，每个接口必须有输入、最小输出和退出 Gate；没有来文、清权、责任人与对方确认，就不把它写成合作关系。[metric:regional_interface_count]
+
+| 候选接口 | 输入 | 最小输出 | Gate / 边界 |
+| --- | --- | --- | --- |
+| 北纬社区 | 居民与无障碍试题 | 首用权与无 App 等价报告 | 无个人数据；不暗示已合作 |
+| 未来科学城 | 科研或机器人原型说明 | 安全、能耗、接管测试回执 | 清权输入 + 可见责任人 |
+| 怀柔科学城 | 清权科研或科普内容 | 溯源与公众解释测试回执 | 版权与专业复核 |
+| 经开区 | 工程化与可制造性问题 | 运维、可维护与退出规格 | 不构成采购或生产承诺 |
+| 京津冀 | 可比公共 AI 场景卡 | 可迁移 Gate 日志与互操作差异 | 仅共享字段，不构成政策协议 |
+
 ![一脊、五类用地与三层工作框架](assets/figures/land-use-structure.png)
 
-霓光在这里是公共可见性的状态码，实体广告照明不属于设计目标。青色标识开放路径与数据来源，洋红标识需要公众确认的场景，酸绿标识通过验证的蓝绿或安全状态。任何实体灯光仍需低眩光、分时、能耗、生态与文保复核。这个视觉系统让赛博朋克气质承担可读性，不遮蔽空间证据。[assumption:A-LIGHT-001]
+霓光在这里是公共可见性的状态码，实体广告照明不属于设计目标。青色标识开放路径与数据来源，洋红标识需要公众确认的场景，酸绿标识通过验证的蓝绿或安全状态。任何实体灯光仍需低眩光、分时、能耗、生态与文保复核。这个视觉系统让赛博朋克气质承担可读性，不遮蔽空间证据。（假设登记：A-LIGHT-001）
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -72,7 +100,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 三片区共同执行公民 AI 护照，但验证重点不同：众智园看安全、接管、能效和标准；原点社区看复现、许可证、人才服务与邻里影响；大钟寺看消费者选择、支付确认、版权、申诉和小微参与。每个区域至少有一个不依赖 App 的入口和一个由人负责的停止点，避免把城市公共服务等同于智能手机界面。[depth:three_key_area_detailed_design]
 
-当前重点区矩形只来自仓库 provisional source，不代表地块、道路或产权边界。地标、建筑载体、连接线与功能表都是概念建议；准确选址、拆改留、开发强度、轨道接口、文保关系和实施主体要在 official polygon、测绘、权属与专业条件到位后联合校准。[assumption:A-BOUNDARY-001]
+当前重点区矩形只来自仓库 provisional source，不代表地块、道路或产权边界。地标、建筑载体、连接线与功能表都是概念建议；准确选址、拆改留、开发强度、轨道接口、文保关系和实施主体要在 official polygon、测绘、权属与专业条件到位后联合校准。（假设登记：A-BOUNDARY-001）
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -104,7 +132,16 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | S11 | 创作者溯源舞台 | 大钟寺 | 展示许可、作者、AI 生成方式与编辑责任；提供申诉和下架路径 |
 | S12 | 夜光信号公园 | 霓光脊公共空间 | 低眩光、分时运行、非身份化客流；人工巡护优先 |
 
-四项测试必须先发布方法、事件记录、修复状态和停止条件，再讨论扩展。技术指标只回答系统是否工作，公众评价还要回答无障碍、投诉、接管、数字排斥、能源与维护成本。公民 AI 护照由场景运营者维护，独立评议席审查高风险变更，现场责任人拥有即时停用权；行政、医疗、法律、支付等高风险结果始终由具备权限的人确认。[assumption:A-AI-001]
+协议灯塔先用完全合成、无网络、无真实系统、无个人数据的一正三负 fixture 检查护照规则。runner 只读本地 JSON；`--check` 必须与已提交 evidence 一致。这里的 PASS 只证明规则能按预期放行或 fail closed，不证明 T2 已获许可、已部署或在真实环境有效。[metric:tabletop_fixture_count]
+
+| ID | 合成条件 | 验收逻辑 | 预期 |
+| --- | --- | --- | --- |
+| F0 | 无 App 正常路径 | 责任、来源、无障碍、人工解释和纸质证据齐备 | ADMIT |
+| F1 | 无障碍主链阻断 | 即使模型可用也不得开放 | STOP；恢复非 AI 可达路径后重测 |
+| F2 | 同意撤回但仍有 4 条原始反馈 | 下个 Gate 前且 24 小时内删除 | STOP；4→0 后留存删除证据 |
+| F3 | 来源被篡改且问责角色缺岗 | 不能用技术性能掩盖溯源与责任缺口 | STOP；恢复来源并任命角色 |
+
+四项测试必须先发布方法、事件记录、修复状态和停止条件，再讨论扩展。技术指标只回答系统是否工作，公众评价还要回答无障碍、投诉、接管、数字排斥、能源与维护成本。公民 AI 护照由场景运营者维护，独立评议席审查高风险变更，现场责任人拥有即时停用权；行政、医疗、法律、支付等高风险结果始终由具备权限的人确认。（假设登记：A-AI-001）
 
 ## 用地、建筑规模与拆改留方案
 
@@ -114,7 +151,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 拆改留核验顺序为：测绘与结构安全、产权和租赁、文保与工业遗产价值、消防和无障碍、运营需求、全生命周期碳，再讨论保留、修缮、改造或新建。所有概念载体优先允许小尺度、可逆和共享使用；若专业核验发现文保、消防、市政或权属冲突，方案功能应迁移而不是强行保留图面位置。[depth:retain_renovate_demolish]
 
-建筑风貌采用深色金属、再利用砖混、透明工坊界面与可更换状态条的组合，但物理霓虹不是强制材料。屋顶、体量和夜景照明以低眩光、可维护、分时和邻里低扰动为原则。准确材质、构造、荷载、节能和高度控制须由专业团队在后续阶段深化。[assumption:A-BUILDING-001]
+建筑风貌采用深色金属、再利用砖混、透明工坊界面与可更换状态条的组合，但物理霓虹不是强制材料。屋顶、体量和夜景照明以低眩光、可维护、分时和邻里低扰动为原则。准确材质、构造、荷载、节能和高度控制须由专业团队在后续阶段深化。（假设登记：A-BUILDING-001）
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -147,31 +184,65 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | JZ-03 | 众智园四级测试庭院 | 产业验证 | 一期 | 专业安全、能源与数据审查 |
 | JZ-04 | 零号站开放首层网络 | 微更新/开源 | 二期 | 权属、文保和消防核验 |
 | JZ-05 | 小月河气候舒适支线 | 蓝绿/慢行 | 二期 | 河道、防洪与生态条件 |
-| JZ-06 | 大钟寺四象限人本接驳 | 轨道一体化 | 二期 | 站点、道路和市政条件 |
+| JZ-06 | 大钟寺四象限人本接驳 | 轨道一体化 | 三期 | 站点、道路和市政条件 |
 | JZ-07 | 智能体市集与溯源舞台 | 产业/文化 | 三期 | 商业运营、版权与无障碍 |
 | JZ-08 | 百年贡献轨与可见智能周 | 文化/长期运营 | 三期 | 姓名授权、活动许可与维护资金 |
 
-一期核验并点亮建议 0-12 个月建立资料基线、公民 AI 公约、双账本、独立评议机制与四项可撤除测试。二期连接并转化建议 1-3 年，在专业核验和审批前提下连接慢行/公共空间网络，更新三区首层与服务。三期扩展并共治建议 3-5 年，只把通过公开评价的场景扩展为长期服务，并深化四个公共地标。这些时段是概念性实施顺序，不是政府计划或建设承诺。[data:geometry/phasing.geojson#PHASE-001]
+### 协议灯塔 100 米 / 首个 100 天交付合同
+
+首发段只深化 T2 模型可信公开测场与 JZ-02/JZ-03 的可撤回公共界面，不增加永久建筑。准确 100 米界面由 G0 在众智园内核验后选择；100 天到期必须作继续、修改或日落决定，不能默认为续期。角色型 RACI 在任命前保持“待任命”，避免把机构建议冒充已确定主体。（假设登记：A-DELIVERY-001）
+
+| 工作流 | A 问责 | R 执行 | C 征询 | I 告知 |
+| --- | --- | --- | --- | --- |
+| 空间与公共界面准入 | 待任命试点问责单位 | 待任命测绘/公共空间团队 | 规划、文保、交通、消防、无障碍 | 居民、使用者、维护者 |
+| 模型、数据与服务准入 | 待任命公开试点问责人 | T2 运营者 + 现场责任人 | 数据保护、网安、法务、独立评议席 | 参与者、非参与者、公开登记簿 |
+| 停机、回滚与公告 | 同一问责人 | 拥有即时停机权的现场责任人 | 安全、数据保护、无障碍、公众代表 | 全部使用者与附近社区 |
+| 第 100 天去留 | 待组建专业 + 公众联合评议席 | 独立评估团队 | 运营、维护、使用者、非使用者、小微组织 | 公开登记簿与区域候选接口 |
+
+| Gate | 主题 | 通过条件 | 不通过动作 |
+| --- | --- | --- | --- |
+| G0 | 证据与空间 | 测绘、权属、文保、消防、无障碍和边界限制登记完成 | 不安装、不开放 |
+| G1 | 责任与资源 | RACI 和人员/空间/设备/数据/维护/退出六本成本账有所有者与资金来源 | 不进入封闭测试 |
+| G2 | 权利与数据 | 七项权利、最少数据、无 App 等价、删除触发器齐备 | 退回合同设计 |
+| G3 | 合成桌面演练 | 4/4 符合预期，3/3 负向 fail closed | 阻断公共试用并修规则 |
+| G4 | 有人值守公共试用 | 关键无障碍障碍为 0；高风险输出 100% 人工确认；严重安全/隐私事件为 0 | 即时停机并恢复非 AI 路径 |
+| G5 | 审计、删除与去留 | 主张、事件、投诉、维护、删除和反馈公开后决定继续/修改/日落 | 日落并撤除可逆构件 |
+
+六道 Gate 不是流程装饰；每道都有阻断动作，任何一次越过都必须在公开登记簿留下责任人、依据、事件和修复状态。[metric:delivery_gate_count]
+
+数据生命周期为登记、摄入、互动、复核、公开、删除/导出六步。T2 默认只用公开、清权或合成数据，不默认采集生物识别或设备标识；自愿反馈的原始记录默认最长 7 天，撤回后在下个 Gate 前且不晚于 24 小时删除；公开层只保留非身份化聚合、主张溯源、事件状态和修复证据。退出供应商前先导出可迁移审计记录，再删除或隔离受影响原始数据。[source:PASSPORT-EVIDENCE]
+
+七项公众首用权是知情、无惩罚选择、无 App 等价、人工复核、更正/删除、具名申诉、退出与非 AI 恢复。基本通行、安全信息、咨询、投诉和申诉不得要求购买设备、订阅、账户或额外付费；未来运营方必须在 G4 前落实人工、无障碍与非数字等价的资金来源，这是一项自设准入条件，不是现行政府承诺。[metric:public_right_count]
+
+成本不编人民币总额，人员、空间、设备、数据/许可/合规、维护、退出/删除/恢复六本账全部保持 unknown。G1 前每本账必须有所有者、资金来源、报价或工时基础、维护与退出准备，任何一本空缺都不得进入公共 Gate。（假设登记：A-COST-001）
+
+严重安全或隐私事件、现场责任人缺岗、来源失真、关键无障碍路径中断、撤回后数据未删，任一项都触发即时停机：保留人工或非 AI 路径、最小化保存事件记录、删除/隔离受影响数据、恢复原公共空间和可迁移接口，再公开初步通知、修复证据与继续/修改/日落决定。[metric:negative_fixture_count]
+
+第 100 天交接包固定包含：G0-G5 日志、来源与主张登记、角色任命记录、无障碍/无 App 验收、事件与投诉台账、数据删除/可迁移导出证明、维护状态和 AI-OFF 空间恢复图。缺任一项只能日落或补证，不能带缺口扩展。[source:PASSPORT-EVIDENCE]
+
+一期核验并点亮建议 0-12 个月聚焦北部众智园，建立资料基线、公民 AI 公约、双账本、独立评议机制和协议灯塔 100 天合同；JZ-01 作为全带断点核验先行，不据此宣称全线施工。二期连接并转化建议 1-3 年聚焦原点社区和小月河支线。三期扩展并共治建议 3-5 年聚焦大钟寺人本接驳、智能体市集与贡献轨，只扩展通过公开评价的场景。phasing.geojson 为每期明列 project_ids；这些时段仍是概念顺序，不是政府计划或建设承诺。[data:geometry/phasing.geojson#PHASE-001]
 
 政策工具包括开放场景登记、试点日落条款、非数字服务等价、公共投诉与事故公开、开放接口和可迁移数据格式、轻量空间租用、跨机构测试许可、维护预算先行。运营节奏为年度可见智能周、季度霓光夜班开放测试、月度城市补丁日和常设登记簿。每次活动必须记录责任人、参与门槛、事件、维修与下一次是否继续。[depth:phasing_implementation]
 
 ## 指标体系、面积复算与合规矩阵
 
-指标分为三类。第一类可由提交几何直接复算，包括 site_area_sqm、building_footprint_area_sqm、green_ratio、public_space_ratio 和 road_network_length_m。第二类是内容计数，包括 12 场景、4 项产业测试、6 类人物、4 个地标、8 个项目和 3 个阶段。第三类必须保持 unknown，包括 FAR、建筑高度、建筑密度、退线、市政容量、就业和产值，因为公开包没有相应权威数据。[depth:metrics_recalculation]
+指标分为三类。第一类可由提交几何直接复算，包括 site_area_sqm、building_footprint_area_sqm、green_ratio、public_space_ratio 和 road_network_length_m。第二类是可由包内合同复核的设计计数，包括 12 场景、4 项产业测试、6 类人物、4 个地标、8 个项目、3 个阶段，以及 100 米/100 天、6 道 Gate、4 个 fixture、3 个负向 fail-closed、7 项权利和 5 个区域接口。第三类必须保持 unknown，包括 FAR、建筑高度、建筑密度、退线、市政容量、就业、产值和六类成本金额，因为公开包没有相应权威数据。[depth:metrics_recalculation]
 
 ![核心指标、双账本与四门自检证据链](assets/figures/metrics-evidence.png)
 
 当前几何复算结果为：总体提交边界 11.413 平方公里，概念建筑基底 16.59 公顷，绿地比例 15.03%，公共空间比例 2.99%，设计中心线 23.12 公里。所有数字来自 EPSG:4548，并在 metrics.json 中保存公式、来源文件、置信度和假设；官方边界到位后必须整包重算。[metric:site_area_sqm]
 
-合规矩阵逐条覆盖官方 1.3、1.4、1.5 和 agent.1-agent.6，标准矩阵说明强制、指导和项目特定依据，设计深度矩阵连接现状、空间、用地、建筑、交通、市政、蓝绿、重点区、项目、分期、指标与风险。四门自检依次核对 deterministic local validation、spatial review、visual packaging 和 professional evidence；任何文件变更都要刷新 manifest hash 并重跑。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+合规矩阵的 23 条任务、设计深度矩阵的 15 项和标准矩阵的 6 条不再共用同一模板 bundle；每条分别定位相关章节、feature、图层、指标、来源、假设、图纸、展示模块和自检，并在 evidence_summary_zh 写明“证明什么、不能证明什么”。四门自检依次核对 deterministic local validation、spatial review、visual packaging 和 professional evidence；任何文件变更都要刷新 manifest hash 并重跑。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ## 风险、版权与合规说明
 
-首要风险是智能系统滑向默认监控。控制措施为禁止默认生物识别、数据最小化、边缘处理优先、公开责任人、人工停机、申诉和日落。第二类风险是技术永久化，控制措施是四门验证与未评价不续期。第三类是数字排斥，控制措施是无 App、纸质、人工和无障碍等价通道。第四类是供应商锁定，控制措施是开放接口、可迁移格式和不指定必要供应商。[assumption:A-AI-001]
+首要风险是智能系统滑向默认监控。控制措施为禁止默认生物识别、数据最小化、边缘处理优先、公开责任人、人工停机、申诉和日落。第二类风险是技术永久化，控制措施是四门验证与未评价不续期。第三类风险是数字排斥，控制措施是无 App、纸质、人工和无障碍等价通道。第四类是供应商锁定，控制措施是开放接口、可迁移格式和不指定必要供应商。（假设登记：A-AI-001）
+
+risk.json 按仓库八个维度公开 1-5 分、触发原因、缓解和人工复核。政策不确定性为 5；数据隐私、实施复杂、公众接受、运维、空间争议和公平包容为 4；技术成熟度为 3。高分不是质量评分，也不因愿景叙事而降低；它表示在指定角色完成复核前不得越过对应 Gate。（假设登记：A-DELIVERY-001）
 
 空间风险包括 provisional boundary、缺控规、缺建筑普查、缺道路和市政资料、文保与光环境冲突。所有几何均为概念建议；FAR、高度、密度、拆改留、道路红线、设施容量与准确地标位置不作审定结论。若官方资料与当前图面冲突，应以官方资料和专业核验为准，并重新生成全部衍生指标和图件。[data:geometry/constraints.geojson#CONSTRAINTS]
 
-五张核心图由本包 GeoJSON 与 JSON 使用 Pillow 本地生成，四份 PDF 使用 ReportLab 生成，HTML 不加载远程脚本、瓦片、字体、iframe、表单或 API，也不跟踪评审者。赛博朋克封面由 OpenAI 内置图像生成工具创建，未使用外部参考图，明确标记为 illustrative only，不参与面积、边界或空间证据。字体仅在本地渲染阶段使用，不以独立字体文件再发布。[source:IMGGEN-HERO]
+五张核心图由本包 GeoJSON 与 JSON 使用 Pillow 本地生成，四份 PDF 使用 ReportLab 生成，HTML 不加载远程脚本、瓦片、字体、iframe、表单或 API，也不跟踪评审者。赛博朋克封面由 OpenAI 内置图像生成工具创建，未使用外部参考图，明确标记为 illustrative only，不参与面积、边界或空间证据。PDF 使用本地 Noto Sans SC 变量字体经 fontTools 生成的 400/700 静态实例，并按 SIL Open Font License 1.1 嵌入子集；嵌字属于 PDF 分发，独立字体文件不进入投稿包。[source:IMGGEN-HERO] [source:FONT-NOTO-SANS-SC]
 
 本包提供完整中英文 Markdown、报告 HTML、可视化 HTML、A3 文册、A0 展板和五组文字图件。方案不声称官方批准、确定实施主体、确定资金、最终土地权属、法定控规或保证建设；所有公共 AI 场景都必须接受法律、伦理、安全、无障碍、专业与公众复核。[source:SITE-PACKAGE]
 
@@ -181,4 +252,4 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 全球机制参考包括 JTC Punggol Digital District、Forum Virium Helsinki、King's Cross、STATION F、Mila、Waterfront Toronto Digital Strategy Advisory Panel 和 Marineterrein Living Lab。每条记录在 sources.json 中包含发布者、URL、检索日期、用途和限制；方案只借鉴共址、敏捷试点、遗产再利用、开放科学、独立评议与有边界实测等机制，不移植其数值、形态或行政权限。[source:CASE-PUNGGOL]
 
-机器可读完整索引位于 sources.json、metrics.json、assumptions.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 和 self_check.json。空间主张位于 geometry 目录，五张核心图位于 assets/figures，A3/A0 位于 drawings，离线审阅入口位于 visual/index.html。版权、生成工具和可选封面提示位于 report/copyright_statement.md。[source:SOURCE-REGISTRY]
+机器可读完整索引位于 sources.json、metrics.json、assumptions.json、risk.json、spatial.json、三个矩阵和 self_check.json。交付合同、护照 schema、合成 fixture、evidence 与无副作用 runner 位于 visual/assets；运行 `node visual/assets/run-protocol-beacon-tabletop.js --check` 可复核一正三负结果。空间主张位于 geometry，五张核心图位于 assets/figures，A3/A0 位于 drawings，离线入口位于 visual/index.html；版权、OFL 字体嵌字、生成工具和封面提示位于 report/copyright_statement.md。[source:SOURCE-REGISTRY] [source:PASSPORT-EVIDENCE]

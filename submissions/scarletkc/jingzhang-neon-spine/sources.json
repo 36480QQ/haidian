@@ -5,31 +5,81 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, allowed design space, ranges, enums and schemas; official geometry attachments remain absent."
+      "usage": "Project brief, allowed design space, ranges, enums and schemas; official geometry attachments remain absent.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Centennial Jing-Zhang AI Innovation Belt repository site package",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Project brief, allowed design space, ranges, enums and schemas; official geometry attachments remain absent."
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Defines whether each repository source is formal-ready, background-only, provisional-only or needs review."
+      "usage": "Defines whether each repository source is formal-ready, background-only, provisional-only or needs review.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Repository public source registry",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Defines whether each repository source is formal-ready, background-only, provisional-only or needs review."
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Navigation aid only; factual claims return to registered source material."
+      "usage": "Navigation aid only; factual claims return to registered source material.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Agent fact pack",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Navigation aid only; factual claims return to registered source material."
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Provisional overall design boundary; not an official redline."
+      "usage": "Provisional overall design boundary; not an official redline.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Repository provisional overall and key-area boundaries",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Provisional overall design boundary; not an official redline."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Provisional three key-area polygons; not official detailed-design boundaries."
+      "usage": "Provisional three key-area polygons; not official detailed-design boundaries.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Repository provisional key-area boundaries",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Provisional three key-area polygons; not official detailed-design boundaries."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -37,13 +87,31 @@
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Competition tasks, three scope levels, key areas and submission context."
+      "usage": "Competition tasks, three scope levels, key areas and submission context.",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "publication_date": "2026-05-09",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Haidian / textual competition scope",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Competition tasks, three scope levels, key areas and submission context."
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing task requirements for identity, cases, scenarios, personas, landmarks, culture and long-term operation."
+      "usage": "Agent-facing task requirements for identity, cases, scenarios, personas, landmarks, culture and long-term operation.",
+      "publisher": "open-city-ai/haidian repository",
+      "retrieved_at": "2026-08-11",
+      "title": "Agent-facing Jing-Zhang AI Innovation Belt taskbook",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Agent-facing task requirements for identity, cases, scenarios, personas, landmarks, culture and long-term operation."
     },
     {
       "id": "CASE-PUNGGOL",
@@ -51,7 +119,15 @@
       "publisher": "JTC, Government of Singapore",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: co-location of education, industry and community with a district digital platform; no geometry or quantitative target copied."
+      "usage": "Mechanism reference: co-location of education, industry and community with a district digital platform; no geometry or quantitative target copied.",
+      "title": "Punggol Digital District",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Singapore / innovation district",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: co-location of education, industry and community with a district digital platform; no geometry or quantitative target copied."
     },
     {
       "id": "CASE-HELSINKI",
@@ -59,7 +135,15 @@
       "publisher": "Forum Virium Helsinki",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: agile pilots, real urban testing and resident co-creation; no claimed local implementation."
+      "usage": "Mechanism reference: agile pilots, real urban testing and resident co-creation; no claimed local implementation.",
+      "title": "Smart City – Forum Virium Helsinki",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Helsinki / city innovation",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: agile pilots, real urban testing and resident co-creation; no claimed local implementation."
     },
     {
       "id": "CASE-KINGS-CROSS",
@@ -67,7 +151,15 @@
       "publisher": "King's Cross Central Limited Partnership",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: rail-industrial heritage, university anchor and public realm regeneration; not an AI governance precedent."
+      "usage": "Mechanism reference: rail-industrial heritage, university anchor and public realm regeneration; not an AI governance precedent.",
+      "title": "About the King's Cross development",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "London / rail-industrial regeneration district",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: rail-industrial heritage, university anchor and public realm regeneration; not an AI governance precedent."
     },
     {
       "id": "CASE-STATION-F",
@@ -75,7 +167,15 @@
       "publisher": "STATION F",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: multiple startup programs and shared support inside adapted industrial heritage."
+      "usage": "Mechanism reference: multiple startup programs and shared support inside adapted industrial heritage.",
+      "title": "About STATION F",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Paris / adapted startup campus",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: multiple startup programs and shared support inside adapted industrial heritage."
     },
     {
       "id": "CASE-MILA",
@@ -83,7 +183,15 @@
       "publisher": "Mila",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: open science, talent, research, industry transfer and responsible AI in one ecosystem."
+      "usage": "Mechanism reference: open science, talent, research, industry transfer and responsible AI in one ecosystem.",
+      "title": "About Mila",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Montreal / AI research ecosystem",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: open science, talent, research, industry transfer and responsible AI in one ecosystem."
     },
     {
       "id": "CASE-WATERFRONT",
@@ -91,7 +199,15 @@
       "publisher": "Waterfront Toronto",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Governance lesson: independent digital review, privacy and democratic accountability; cited as a critical precedent, not a design model."
+      "usage": "Governance lesson: independent digital review, privacy and democratic accountability; cited as a critical precedent, not a design model.",
+      "title": "Waterfront Toronto Digital Strategy Advisory Panel closeout",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Toronto waterfront / digital governance",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Governance lesson: independent digital review, privacy and democratic accountability; cited as a critical precedent, not a design model."
     },
     {
       "id": "CASE-MARINETERREIN",
@@ -99,13 +215,64 @@
       "publisher": "Bureau Marineterrein Amsterdam",
       "retrieved_at": "2026-08-11",
       "source_type": "official_public",
-      "usage": "Mechanism reference: publicly accessible, professionally managed outdoor living lab with bounded real-world tests."
+      "usage": "Mechanism reference: publicly accessible, professionally managed outdoor living lab with bounded real-world tests.",
+      "title": "Marineterrein Living Lab",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "Amsterdam / managed urban living lab",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "citation and mechanism paraphrase only; no external media redistributed",
+      "transformation": "mechanism-only paraphrase; no geometry, numeric target or administrative authority imported",
+      "limitations": "Mechanism reference: publicly accessible, professionally managed outdoor living lab with bounded real-world tests."
     },
     {
       "id": "IMGGEN-HERO",
       "path": "assets/visible-stack-hero.png",
       "source_type": "agent_generated_design",
-      "usage": "Illustrative cyberpunk-futurist cover image created with OpenAI built-in image generation; not a site map, evidence figure or geographic claim."
+      "usage": "Illustrative cyberpunk-futurist cover image created with OpenAI built-in image generation; not a site map, evidence figure or geographic claim.",
+      "publisher": "scarletkc / OpenAI Codex",
+      "retrieved_at": "2026-08-11",
+      "title": "Jingzhang Neon Spine illustrative hero",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "COMMUNITY-DISPLAY-ONLY original submission asset",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Illustrative cyberpunk-futurist cover image created with OpenAI built-in image generation; not a site map, evidence figure or geographic claim."
+    },
+    {
+      "id": "PASSPORT-EVIDENCE",
+      "path": "visual/assets/protocol-beacon-tabletop-evidence.json",
+      "source_type": "agent_generated_design",
+      "usage": "Deterministic local synthetic tabletop evidence; operational_status remains not_authorized_not_run and it is not evidence of a live service.",
+      "publisher": "scarletkc / OpenAI Codex",
+      "retrieved_at": "2026-08-11",
+      "title": "Protocol Beacon synthetic tabletop evidence",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "package-local file review",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "COMMUNITY-DISPLAY-ONLY original submission asset",
+      "transformation": "no transformation beyond package-local reading or deterministic local generation",
+      "limitations": "Deterministic local synthetic tabletop evidence; operational_status remains not_authorized_not_run and it is not evidence of a live service."
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "url": "https://github.com/notofonts/noto-cjk/tree/main/Sans",
+      "license_url": "https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE",
+      "publisher": "Google Noto and Adobe",
+      "retrieved_at": "2026-08-11",
+      "source_type": "official_public",
+      "usage": "Locally installed Noto Sans SC was instantiated at weights 400 and 700; the PDFs embed font subsets under SIL Open Font License 1.1. Standalone font files are not included.",
+      "title": "Noto Sans CJK / Noto Sans SC",
+      "publication_date": "not_stated_or_repository_versioned",
+      "retrieval_method": "manual review of publisher-controlled public webpage",
+      "spatial_scope": "project package or non-spatial supporting asset",
+      "temporal_scope": "retrieved_or_generated_2026-08-11",
+      "license_or_reuse": "SIL Open Font License 1.1; embedded subsets permitted",
+      "transformation": "400 and 700 static instances created locally from the installed variable font; ReportLab embeds subsets",
+      "limitations": "Locally installed Noto Sans SC was instantiated at weights 400 and 700; the PDFs embed font subsets under SIL Open Font License 1.1. Standalone font files are not included."
     }
   ]
 }
