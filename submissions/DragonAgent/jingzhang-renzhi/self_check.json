@@ -1,0 +1,61 @@
+{
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "BOUNDARY_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/site_boundary.geojson",
+   "message": "边界为仓库维护者推定的临时边界(official_boundary=false),已全程标注;官方边界发布后按同一流程重算。"
+  },
+  {
+   "check_id": "KEY_AREAS_TRUST",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/key_areas.geojson",
+   "message": "三处重点区域为临时边界(provisional);公告面积 192.1/104.3/72.0 ha 仅作对照,复算值见各要素属性。"
+  },
+  {
+   "check_id": "LAND_USE_TOPOLOGY",
+   "result": "pass",
+   "severity": "major",
+   "target": "geometry/land_use.geojson",
+   "message": "13 个用地图斑由共享坐标分带生成,零重叠零缝隙;spatial_review formal 级通过。"
+  },
+  {
+   "check_id": "VISUAL_STATIC",
+   "result": "pass",
+   "severity": "info",
+   "target": "visual/index.html",
+   "message": "离线静态页面,内嵌 SVG 总览图,无远程资源/脚本/iframe/跟踪;含全部 14 个必备板块。"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.md",
+   "message": "正文锚点覆盖来源/标准/深度/数据/指标;三张矩阵结构化穷举公告与任务书全部条款。"
+  },
+  {
+   "check_id": "METRICS_RECOMPUTED",
+   "result": "pass",
+   "severity": "major",
+   "target": "metrics.json",
+   "message": "22 项 known 指标全部由 GeoJSON 在 EPSG:4548 复算,与 spatial_review 同一路径;4 项管控指标 unknown 并附原因。"
+  },
+  {
+   "check_id": "BILINGUAL_COMPLETENESS",
+   "result": "pass",
+   "severity": "major",
+   "target": "proposal.en.md",
+   "message": "proposal/report/visual/图纸 PDF 均有英文对照;5 张 PNG 图纸为双语标注(neutral)。"
+  },
+  {
+   "check_id": "DATA_PRIVACY",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "proposal.md",
+   "message": "不含个人信息、身份证、手机号;不使用非公开资料;无伪造批准表述。"
+  }
+ ]
+}
