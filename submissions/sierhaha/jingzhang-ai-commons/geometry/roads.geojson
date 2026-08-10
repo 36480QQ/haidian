@@ -322,6 +322,60 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-012",
+   "properties": {
+    "id": "ROAD-012",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "local_access",
+    "name_zh": "大钟寺站前接驳支路",
+    "length_m_declared": 256.39
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.347,
+      39.9466
+     ],
+     [
+      116.35,
+      39.9466
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ROAD-013",
+   "properties": {
+    "id": "ROAD-013",
+    "layer": "ROAD_CENTERLINE",
+    "source_type": "agent_generated_design",
+    "confidence": "medium",
+    "geometry_role": "design_proposal",
+    "road_class": "branch",
+    "name_zh": "原点社区北联络路",
+    "length_m_declared": 597.85
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.3456,
+      39.9925
+     ],
+     [
+      116.3526,
+      39.9925
+     ]
+    ]
+   }
   }
  ]
 }

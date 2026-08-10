@@ -7,3 +7,16 @@ The bilingual narrative, GeoJSON design layers, metrics, matrices, five bilingua
 构建工具链为本地 Python 3.13、Pillow 12.3.0、Shapely 2.1.2、pyproj 3.7.2 与 pypdf 6.15.0；依赖代码不随投稿再分发。图件与 PDF 的中文字形由 macOS 系统字体 `/System/Library/Fonts/Hiragino Sans GB.ttc` 栅格化生成，字体文件未作为独立资产提交。依赖版本、许可证和用途也登记在 `sources.json`。
 
 The local build used Python 3.13, Pillow 12.3.0, Shapely 2.1.2, pyproj 3.7.2, and pypdf 6.15.0; dependency code is not redistributed. Chinese glyphs in PNG/PDF outputs were rasterized with the macOS system font `/System/Library/Fonts/Hiragino Sans GB.ttc`; the font file is not committed as a standalone asset. Versions, licenses, and uses are also recorded in `sources.json`.
+
+
+## AI 概念愿景图 / AI Concept Visualizations
+
+15 张概念愿景图由 OpenAI 内置 ImageGen 于 2026-08-10 生成，仅使用本方案叙述与提示词，无第三方参考图输入。文件现为 `assets/figures/concept-*.jpg`，许可与正文一致为 COMMUNITY-DISPLAY-ONLY。它们只表达氛围与构件关系，不得被当作红线、面积、法定条件、排水/消防/无障碍/机器人安全工程证据或实施承诺。生成工具、限制与文件清单见 `sources.json` 中的 `AI-CONCEPT-VISUALIZATIONS`。
+
+Fifteen concept visualizations were generated with OpenAI built-in ImageGen on 2026-08-10 from this proposal narrative and prompts only, with no third-party reference images. Files are stored as `assets/figures/concept-*.jpg` under COMMUNITY-DISPLAY-ONLY. They describe atmosphere and component relationships only and must not be treated as redlines, areas, regulatory conditions, drainage/fire/accessibility/robot-safety engineering evidence, or implementation commitments. Tool, limits and file list are recorded as `AI-CONCEPT-VISUALIZATIONS` in `sources.json`.
+
+## 历史风险来源 / Historical Risk Sources
+
+中国气象局公共气象服务中心 7·21 专题页，以及新华社经央视网、人民网转载的 2025 年 7 月极端降雨报道，仅引用公开文字事实作为风险教育与设计触发器；不复制其图片或版式，也不把伤亡、雨量或道路损毁数字迁移为本场地工程指标。
+
+The CMA 7·21 feature page and Xinhua reports republished by CCTV News / People's Daily Online are cited only as public textual background for risk education and design triggers. Their images and layouts are not copied, and casualties, rainfall or road-damage figures are not transferred as site engineering metrics.
