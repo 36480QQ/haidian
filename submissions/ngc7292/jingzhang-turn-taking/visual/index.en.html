@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR TURN JING-ZHANG - visual index</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--paper:#F4F1E8;--red:#D34A43;--blue:#316B8C;--line:#C8C3B8}
+*{box-sizing:border-box}body{margin:0;background:#EAE6DC;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.65}
+header{background:var(--ink);color:white;padding:48px max(5vw,28px);border-bottom:8px solid var(--red)}header p{max-width:980px;color:#D8DEE6;font-size:18px}.markers{font-size:12px;letter-spacing:.04em;color:#AFC4D3}
+main{max-width:1320px;margin:auto;padding:28px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:22px}.metric{background:white;border:1px solid var(--line);padding:18px;border-radius:10px}.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{display:block;font-size:28px;margin-top:5px}
+article{background:white;border:1px solid var(--line);margin:0 0 24px;border-radius:12px;overflow:hidden}article h2{padding:18px 22px;margin:0;border-bottom:1px solid var(--line)}article img{width:100%;display:block}.details{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 24px}.panel{background:white;border:1px solid var(--line);padding:20px;border-radius:10px}.panel h2{margin:0 0 12px;font-size:20px}.panel p{margin:8px 0}.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.detail-card{background:var(--paper);border-left:4px solid var(--blue);padding:12px}.detail-card strong,.detail-card span{display:block}.detail-card span,.muted{color:var(--muted);font-size:14px}.flow{border-left:4px solid var(--red);padding:12px;background:#FBF1EC}.evidence{display:grid;grid-template-columns:1fr 1fr;gap:16px}.evidence section{background:white;border:1px solid var(--line);padding:20px;border-radius:10px}.warn{border-left:6px solid var(--red)!important}
+@media(max-width:760px){.metrics,.evidence,.details{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}@media(max-width:480px){.metrics,.evidence,.details{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="markers">Overview map Three-level scope Key areas Land use Mobility Blue-green public space Buildings Renewal projects AI scenarios Core metrics Task coverage Self-check Sources Assumptions</div><h1>YOUR TURN JING-ZHANG</h1><p>One spine, three rounds, two wings, six yield points, and twelve turns. All displayed values derive from the same machine-readable package.</p></header>
+<main>
+<section class="metrics">
+<div class="metric"><span>site_area_sqm</span><strong data-metric="site_area_sqm" data-value="11412825.386">11,412,825</strong></div>
+<div class="metric"><span>green_ratio</span><strong data-metric="green_ratio" data-value="0.152818">0.153</strong></div>
+<div class="metric"><span>public_space_ratio</span><strong data-metric="public_space_ratio" data-value="0.008516">0.009</strong></div>
+<div class="metric"><span>scenario_card_count</span><strong data-metric="scenario_card_count" data-value="12">12</strong></div>
+</section>
+<article><h2>Overview map</h2><img src="../assets/figures/site-overview.en.png" alt="Overview map"></article><article><h2>Land use and three-level scope</h2><img src="../assets/figures/land-use-structure.en.png" alt="Land use and three-level scope"></article><article><h2>Key areas and capacity-test blocks</h2><img src="../assets/figures/key-areas.en.png" alt="Key areas and capacity-test blocks"></article><article><h2>Mobility and blue-green public space</h2><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility and blue-green public space"></article><article><h2>Core metrics and evidence chain</h2><img src="../assets/figures/metrics-evidence.en.png" alt="Core metrics and evidence chain"></article>
+
+<section class="details">
+<section class="panel"><h2>Three key-area rounds</h2><div class="detail-grid">
+<div class="detail-card"><strong>Zhongzhiyuan / Round 1</strong><span>Human-machine yielding validation: learn to yield</span></div>
+<div class="detail-card"><strong>AI Origin Community / Round 2</strong><span>Urban co-creation round table: let everyone speak</span></div>
+<div class="detail-card"><strong>Dazhongsi / Round 3</strong><span>Urban exchange and adoption: hand the stage to the city</span></div>
+</div></section>
+<section class="panel"><h2>Twelve scenario cards</h2><p>Human-Machine Yield Crossing, Shared Curb Turns, Multimodal Public Service Round Table, Walking and Cycling Break Co-survey, Community Health Navigation, Education and Learning Assistant, Legal and IP Document Assistant, Urban Maintenance Work-Order Dialogue, Event and Everyday Commuting, International AI Round Table, Jing-Zhang Oral-History Station, One-Second City Pause</p><p class="muted">The first three are industry-test scenarios; every high-impact scenario retains on-site stop authority, human takeover, opt-out, and review.</p></section>
+<section class="panel"><h2>Nine renewal work packages</h2><p>Civic conversation spine wayfinding; Six yield courts; Zhongzhiyuan test yard; AI Origin round table; Dazhongsi curb timetable; Multimodal public-service test; Three pilgrimage landmarks; Public scenario ledger; Annual Your Turn Assembly</p><p class="muted">Near, medium, and long-term phases require official boundaries, regulatory plans, ownership, transport, utilities, fire, and heritage data before implementation.</p></section>
+<section class="panel"><h2>Governance round</h2><p class="flow">Issue → public rule → controlled test → on-site stop / human takeover → complaint and opt-out → review and next turn</p><p>Sources: sources.json records publisher, access date, use, transformation, and limitations; assumptions.json records boundary, regulatory, building, mobility, operation, and case limitations.</p></section>
+</section>
+
+<div class="evidence">
+<section><h2>Task coverage and self-check</h2><p>compliance_matrix.json maps announcement tasks and agent.1-agent.6 to narrative, geometry, metrics, drawings, and web views. Deterministic, spatial, visual, and professional checks must all pass.</p></section>
+<section><h2>Sources and assumptions</h2><p>See sources.json and assumptions.json. This page loads no remote scripts, map tiles, fonts, APIs, forms, or trackers.</p></section>
+<section class="warn"><h2>Boundary note</h2><p>Provisional geometry supports concept comparison and internal consistency only; it is not a statutory redline.</p></section>
+<section><h2>Renewal projects and long-term operation</h2><p>Nine work packages advance through near, medium, and long terms; high-impact AI retains on-site stop authority, human takeover, opt-out, and review.</p></section>
+</div>
+</main>
+</body></html>
