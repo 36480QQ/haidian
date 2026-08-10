@@ -45,7 +45,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-本方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以 `brief/site-package/` 中登记的临时边界、重点区域和指标范围为机器可读依据 [source:SITE-PACKAGE]。
+本方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]，以 `brief/site-package/` 中登记的临时边界、重点区域和指标范围为机器可读依据 [source:SITE-PACKAGE] [depth:existing_conditions_diagnosis]。
 
 当前采用 provisional boundary（`geometry/site_boundary.geojson`、`geometry/key_areas.geojson`），标注 `provisional_constraint`、`official_boundary=false`。正式边界发布后，所有空间数据、指标和图纸需要重新计算。这个限制不阻断内容评分，但正文中涉及面积、比例和空间位置的结论只能作为可讨论、可替换的设计参考。
 
@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 三层范围工作框架
 
-方案按公告三个层次组织 [source:SITE-PACKAGE]：
+方案按公告三个层次组织 [source:SITE-PACKAGE] [depth:three_level_scope_framework] [depth:overall_spatial_structure]：
 
 | 层级 | 面积 | 林轨在这层做什么 |
 |------|------|------------------|
@@ -79,7 +79,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 统筹研究范围产业与未来城市研究
 
-京张铁路是这片区域里已有的叙事线，不需要再发明一条。1909 年通车，2019 年地下化后地面段成为遗址公园走廊。公告要求融合百年京张文化、中关村创新文化与 AI 创新文化 [source:AGENT-TASKBOOK]。
+京张铁路是这片区域里已有的叙事线，不需要再发明一条。1909 年通车，2019 年地下化后地面段成为遗址公园走廊。公告要求融合百年京张文化、中关村创新文化与 AI 创新文化 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 林轨的判断很窄：**不另造叙事，用铁轨本身；不另造绿廊，把遗址公园接入三站日常。** 轨条留在地上，生锈；人走在轨间软铺上。这条线串起三处重点区——众智园临清河，原点社区近高校，大钟寺临地铁。轨导动线是脊柱，不是装饰。
 
@@ -195,6 +195,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
+总体层按城市设计与控规深度组织空间主张 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:overall_spatial_structure]。建筑方案深度待正式条件补齐前保持概念级，并以 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 标明待深化边界（当前为 data_gap，不伪造审定深度）。
+
 ### 动线结构与普通人完整路径
 
 轨导动线沿京张遗址公园走廊布置，串联三站。动线不是新画的红线，是对既有铁路线位的复用。
@@ -307,13 +309,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - **改造**：首层业态和外立面需要调整的建筑——去掉 LED 屏、增加林下通透性
 - **更新**：低效空间识别后的新建机会——新建建筑高度控制在树冠以下
 
-用地方案依据国土空间分类标准表达 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，覆盖设计边界且无重叠 [data:geometry/land_use.geojson#LU-001]。建筑基底和保留/改造/更新分类记录在 [data:geometry/buildings.geojson#BLDG-001]。
+用地方案依据国土空间分类标准表达 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout] [depth:development_intensity_controls]，覆盖设计边界且无重叠 [data:geometry/land_use.geojson#LU-001]。建筑基底和保留/改造/更新分类记录在 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish] [depth:height_massing_character]。
 
 凡涉及容积率、建筑高度、道路红线等控制条件，当前无官方数据的标注 unknown，不编数字。
 
 ## 交通、轨道、市政与公共服务设施
 
-交通方案回应公告对轨道站点一体化、道路微循环、慢行断点和绿色交通的要求 [depth:traffic_rail_slow_parking]。
+交通方案回应公告对轨道站点一体化、道路微循环、慢行断点和绿色交通的要求 [depth:traffic_rail_slow_parking]。市政与新基建接口（端侧节点、供电、网络）按 [depth:municipal_new_infrastructure] 列为深化前置，缺资料不编工程参数。
 
 重点处理：
 
@@ -329,7 +331,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址走廊为骨架，统筹清河、小月河和周边社区出行 [depth:blue_green_public_space]。
+蓝绿空间以京张遗址走廊为骨架，统筹清河、小月河和周边社区出行 [depth:blue_green_public_space] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 **树冠层是风貌控制的核心手段**：选冠幅 ≥8m 的本土乔木（国槐、白蜡、银杏、栾树），覆盖率目标 ≥70% 建筑屋面。树不修剪成几何造型。建筑高度低于树冠——这是城市森林的基本判据。
 
@@ -344,7 +346,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 重点区域详细设计
 
-三站使用同一结构块（位置 / 公园层角色 / 林轨终端 / 智驾物流 / 五组件 / 不许做什么 / 测试卡），深度对齐，避免只做大钟寺「样板端」。当前三处 polygon 均为 provisional [data:geometry/key_areas.geojson#PROV-KEY-001]。
+三站使用同一结构块（位置 / 公园层角色 / 林轨终端 / 智驾物流 / 五组件 / 不许做什么 / 测试卡），深度对齐，避免只做大钟寺「样板端」 [depth:three_key_area_detailed_design]。当前三处 polygon 均为 provisional [data:geometry/key_areas.geojson#PROV-KEY-001]。
 
 ### 众智园 AI 自主创新加速区
 
@@ -430,7 +432,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-场景卡与画像对齐公告 agent.3 要求 [source:AGENT-TASKBOOK]，深度矩阵见 [depth:design_depth_matrix.json#scenario-cards]。
+场景卡与画像对齐公告 agent.3 要求 [source:AGENT-TASKBOOK]，深度矩阵见 [depth:three_key_area_detailed_design]。
 
 | 画像 | 谁 | 在林轨上做什么 | 数据边界 |
 |------|----|---------------|---------|
@@ -495,6 +497,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 更新项目清单、实施政策与分期计划
 
+项目清单与分期分别由 [depth:renewal_project_list] 与 [depth:phasing_implementation] 约束；无主体/资金/审批时只写风险，不承诺落地。
+
 | 编号 | 项目 | 类型 | 主要依赖 | 分期 |
 |------|------|------|---------|------|
 | FR-01 | 大钟寺站四象限轨径连通 | 慢行/轨道一体化 | 轨道站点、路口交通组织 | 近期试点 |
@@ -523,7 +527,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 需要官方控规支撑的管控指标 | 容积率、建筑高度、建筑密度、退线 | 待正式控规 | 当前标注 unknown |
 | 需要运营数据持续校准的绩效指标 | 轨径日均人流、林下工位使用率、节点开闭频次 | 运营后采集 | 当前为设计建议值 |
 
-三类指标分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`。完整复算保存在 `metrics.json`，正文只解释设计含义。
+三类指标分别进入 `metrics.json`、`assumptions.json` 和 `compliance_matrix.json`。完整复算保存在 `metrics.json`，正文只解释设计含义 [depth:metrics_recalculation]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -549,7 +553,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 风险、版权与合规说明
 
-缺资料与 provisional 边界处理见 [source:SOURCE-REGISTRY] 与 [data:geometry/site_boundary.geojson#SITE-001]。
+缺资料与 provisional 边界处理见 [source:SOURCE-REGISTRY] 与 [data:geometry/site_boundary.geojson#SITE-001] [depth:risk_missing_data]。
 
 所有空间结论受 provisional boundary 限制。正式边界发布后需要：重新运行脚手架、自检、图纸和 HTML。不能只替换单个文件。
 

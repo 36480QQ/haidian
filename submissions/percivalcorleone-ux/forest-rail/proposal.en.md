@@ -43,7 +43,7 @@ Only one rail-guided corridor is added. **If AI fails, the park body (soft pavin
 
 ## Design Basis and Source List
 
-This proposal follows the Pre-qualification Announcement [source:OFFICIAL-ANNOUNCEMENT] and machine-readable site package materials [source:SITE-PACKAGE].
+This proposal follows the Pre-qualification Announcement [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] and machine-readable site package materials [source:SITE-PACKAGE] [depth:existing_conditions_diagnosis].
 
 Current data uses provisional boundaries (`geometry/site_boundary.geojson`, `geometry/key_areas.geojson`) with `official_boundary=false`. Recalculate everything when official polygons arrive. This does not block content scoring; spatial conclusions remain discussion-grade.
 
@@ -63,6 +63,8 @@ Authority order: GeoJSON → metrics → matrices → sources/assumptions/self_c
 
 ## Three-Level Scope Framework
 
+The three-tier frame is constrained by [depth:three_level_scope_framework] and [depth:overall_spatial_structure].
+
 | Tier | Area | What Forest Rail does |
 |------|------|------------------------|
 | Coordinated research (43.6 km²) | AI ecology + urban form | Jingzhang spine; three stations + wings; AI ecosystem + eight factors |
@@ -73,7 +75,7 @@ Authority order: GeoJSON → metrics → matrices → sources/assumptions/self_c
 
 ## Coordinated Research: Industry and Future City
 
-Jingzhang is the existing narrative line—no new myth needed. 1909 opening; 2019 undergrounding left a surface heritage-park corridor [source:AGENT-TASKBOOK].
+Jingzhang is the existing narrative line—no new myth needed. 1909 opening; 2019 undergrounding left a surface heritage-park corridor [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 Narrow judgment: **do not invent a parallel greenway; connect the heritage park into three-station daily life.** Rust stays; people walk soft paving between rails. Zhongzhiyuan meets Qinghe; Origin meets campuses; Dazhongsi meets metro.
 
@@ -165,6 +167,8 @@ The urban agent **does not replace planning approval** and does not output perso
 
 ## Overall Design: Corridor Renewal and Park-Layer Systems
 
+Overall design follows urban-design and control-plan depth expectations [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:overall_spatial_structure]. Architectural depth remains conceptual until official conditions arrive and is bounded by [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] as a disclosed data_gap.
+
 ### Corridor structure and ordinary complete path
 
 ```
@@ -228,13 +232,13 @@ Renewal within the overall design scope falls into three categories:
 - **Renovate**: Buildings needing ground-floor program and facade adjustment — remove LED screens, increase under-canopy transparency
 - **Renew**: New construction on identified low-efficiency sites — building height controlled below tree canopy
 
-Land use classification follows national standards [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering the design boundary without overlap [data:geometry/land_use.geojson#LU-001]. Building footprints and retain/renovate/renew classification are recorded in [data:geometry/buildings.geojson#BLDG-001].
+Land use classification follows national standards [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout] [depth:development_intensity_controls], covering the design boundary without overlap [data:geometry/land_use.geojson#LU-001]. Building keep/alter/demolish and massing follow [depth:retain_renovate_demolish] and [depth:height_massing_character]. Building footprints and retain/renovate/renew classification are recorded in [data:geometry/buildings.geojson#BLDG-001].
 
 Where FAR, building height, or road setbacks lack official data, they are marked as unknown. No numbers are fabricated.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-Transport responds to the announcement's requirements for rail station integration, road micro-circulation, walking network gaps, and green transport [depth:traffic_rail_slow_parking].
+Transport responds to the announcement's requirements for rail station integration, road micro-circulation, walking network gaps, and green transport [depth:traffic_rail_slow_parking]. Municipal / new-infrastructure interfaces follow [depth:municipal_new_infrastructure].
 
 Key interventions:
 
@@ -250,7 +254,7 @@ Municipal infrastructure covers edge-computing nodes, distributed energy, and tr
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-Blue-green space follows the Jingzhang heritage corridor as its spine, coordinating Qinghe River, Xiaoyue River, and surrounding community movement [depth:blue_green_public_space].
+Blue-green space follows the Jingzhang heritage corridor as its spine, coordinating Qinghe River, Xiaoyue River, and surrounding community movement [depth:blue_green_public_space] [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 **The tree canopy layer is the primary character control mechanism**: native trees with crown spread ≥8m (Chinese Scholar Tree, ash, ginkgo, goldenrain tree), targeting ≥70% coverage of building rooftops. Trees are not pruned into geometric shapes. Building height below the canopy — this is the basic criterion for the urban forest.
 
@@ -264,6 +268,8 @@ Character principles:
 Which elements are design recommendations versus those pending official confirmation is itemized in `standard_matrix.json`.
 
 ## Key Area Detailed Design
+
+Equal-depth three-station blocks are required by [depth:three_key_area_detailed_design].
 
 All three stations use the same structural block (location / park-layer role / Forest Rail terminal / AV/logistics / five components / must not / test-card binding), at equal depth—avoiding a Dazhongsi-only "showcase end". Current polygons are provisional [data:geometry/key_areas.geojson#PROV-KEY-001].
 
@@ -420,6 +426,8 @@ International outreach uses walkable visit routes and public evidence packs only
 
 ## Renewal Project List and Phasing
 
+Constrained by [depth:renewal_project_list] and [depth:phasing_implementation].
+
 | ID | Project | Type | Key dependencies | Phase |
 |----|---------|------|-----------------|-------|
 | FR-01 | Dazhongsi Station four-quadrant rail path connection | Walking / rail integration | Rail station, intersection traffic organization | Near-term pilot |
@@ -439,6 +447,8 @@ Near-term pilots can start with lightweight interventions (spread crushed stone,
 Phasing spatial evidence [data:geometry/phasing.geojson#PHASE-001].
 
 ## Metrics Framework
+
+Recalculation discipline follows [depth:metrics_recalculation].
 
 Metrics are divided into three categories:
 
@@ -473,6 +483,8 @@ Key spatial metrics can be verified against [metric:site_area_sqm] and [data:geo
 | agent.6 Global activities and long-term operations | Annual activities table + prerequisites | agent.6 table; report/narrative.md |
 
 ## Risk, Copyright, and Compliance
+
+Missing-data and provisional-boundary handling is checked under [depth:risk_missing_data].
 
 ### Provisional Boundary
 
