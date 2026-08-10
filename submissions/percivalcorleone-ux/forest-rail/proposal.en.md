@@ -6,27 +6,27 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Connect the Jingzhang heritage park to everyday Dazhongsi: decorative guiding rails vs AI operating rails (separated); shared under-canopy desks; carry forward Jingzhang daring without tech-show spectacle."
+summary: "Connect Jingzhang heritage park to everyday Dazhongsi: dual rails, safety-first autonomous shuttles, Forest Rail terminal regulating seats and light strips; unbranded daily-essentials trial points AI-tuned and sited; rails as urban clue, park as a place to quiet down."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Forest Rail
 
-The Jingzhang Railway Heritage Park already left the rails in the city: people run, push strollers, walk along the tracks. This proposal does not reinvent that park, and does not turn it into a tech showcase. It asks something narrower — **how the Dazhongsi end connects into the park, where people go after exiting the metro, where they can stop, and whether they can sit down and work quietly** [source:AGENT-TASKBOOK].
+The Jingzhang Railway Heritage Park already left the rails in the city: people run, push strollers, walk along the tracks. This proposal does not reinvent that park, and does not turn it into a tech showcase. It asks something narrower — **how the Dazhongsi end connects into the park, where people go after exiting the metro, where they can stop, whether they can sit down and work quietly, how seats and light strips can be safely AI-regulated, and how daily essentials can enter public space without a brand-store matrix** [source:AGENT-TASKBOOK].
 
 The answer is Forest Rail:
 
-- **Forest**: Treat the Dazhongsi section as a park — manicured lawn, spaced trees, canopy above rooftops. Look out and see trees, not the glass wall opposite.
-- **Rail (two tracks, separated)**:
-  - **Decorative guiding rails**: rusted / replica rails / ground painting for direction only; people walk soft paving (timber, crushed stone). **Children do not run or climb on the rails.**
-  - **AI operating rails (concept)**: passenger short-haul + automatic cargo configuration; physically separated from walking and decorative rails; subject to professional feasibility.
+- **Forest**: Treat the Dazhongsi section as a park — manicured lawn, spaced trees, canopy above rooftops. Look out and see trees, not the glass wall opposite. The park is where people quiet down; human–nature relationship comes first.
+- **Rail (two tracks, separated)**: Jingzhang heritage rails are the urban clue. Decorative guiding rails give direction; AI operating rails run autonomous shuttles for passengers + automatic cargo configuration, **safety first**; physically separated from walking and decorative rails.
+- **Forest Rail terminal**: intelligently regulates **all public open seats / shared workstations**, **public ground light strips / low-illuminance edge lights**, and **daily-essentials supply at unbranded points** (open/close, restock, rebalance). No face recognition, no brand ads.
+- **Unbranded daily-essentials trial points**: do not start with each brand opening its own storefront in every direction. Instead, like old food shops — unified fronts, **no brand logos**; trial many sites; AI algorithms find where fit is highest and where one person's daily essentials can be met; high-fit nodes later open formal stalls; elsewhere use community quick-turnover shops, with AI inventory and autonomous cargo delivery.
 
-> One line: buildings under trees, people in a park, rusted rails pointing the way, operating rails elsewhere — look out and see nature.
+> One line: rails are the city's clue; the park lets people quiet down; rusted rails point the way; autonomous shuttles put safety first; seats, light strips, and daily essentials can be smart-regulated — look out and see nature.
 
 This proposal carries forward the Jingzhang Railway spirit of daring breakthrough — turning heritage rails into walkable, sittable, shared public infrastructure — without empty empowerment slogans or viral landmarks.
 
-**What this proposal refuses**: district-wide building control, viral landmarks, light shows, planting strips posing as parks, private pods disguised as shared desks, decorative rails treated as climbing gear.
+**What this proposal refuses**: district-wide building control, viral landmarks, light shows, planting strips posing as parks, private pods disguised as shared desks, decorative rails treated as climbing gear, “smart” traded for surveillance, brand-store matrices flooding the park.
 
 Only one rail-guided corridor is added (guiding rails primary; operating rails only on isolated conceptual segments). Outside it, the existing street network stays.
 
@@ -78,15 +78,15 @@ At the strategic tier, Forest Rail does not invent a new green-corridor story. I
 
 | Case | Transferable mechanism | Boundary for this proposal (learn / do not learn) |
 |------|------------------------|---------------------------------------------------|
-| New York Central Park | Open lawns, all-ages public realm, urban-forest scale | **Learn**: treat Dazhongsi as a real park (lawn / spaced trees / seating), not a planting strip; **Do not**: copy a full mega-park facility inventory |
-| New York High Line | Abandoned elevated rail reused as a linear walking park | **Learn**: railway heritage → walkable public space; **Do not**: elevated tourist consumption; contrast — our decorative rails ≠ climbing equipment; people walk soft paving |
-| Philadelphia Rail Park | Rail corridor opened in phases for everyday community use | **Learn**: phased pilots; lightweight near-term starts; **Do not**: market unfinished segments as finished experience |
-| London King's Cross public realm | Station-adjacent squares, walking, mixed-use stitching | **Learn**: exit station into public space (Dazhongsi four quadrants); **Do not**: mall-led plaza logic |
-| Madrid Río | Continuous riverside park beside / over infrastructure | **Learn**: blue-green continuity and walking priority over display; **Do not**: mega covering-structure civil works |
-| Seoul Cheonggyecheon / Seoullo | Linear urban public space recovery; elevated rail segment as park | **Learn**: linear publicness and everyday civic use; **Do not**: massive channel-excavation narratives |
-| Shanghai Xuhui Runway Park | Former airport runway → linear park with walking / cycling layers | **Learn**: transport remnant translated into everyday linear park; **Do not**: aviation-theme photo-booth stacking |
-| Beijing Olympic Forest Park / Chaoyang Park | City-scale parks, all-ages programs, lawn and canopy | **Learn**: urban-forest character and all-ages inclusion; **Do not**: claim a new mega-park land take |
-| Jingzhang Railway Heritage Park (existing) | Rails already in the city; everyday walking already happens | **Learn**: connect into Dazhongsi daily life as incremental link; **Do not**: redo the existing park or invent a parallel green corridor |
+| New York Central Park | Multi-entry + layered walking; park as a public right | **Learn**: treat Dazhongsi as a real park (open lawn / spaced trees / seating); **Do not**: mega single-greenfield or closed heritage management |
+| New York High Line | Abandoned rail → linear walk; keep rail artifacts as memory | **Learn**: rail-reuse narrative; **Do not**: elevated tourist consumption or climbable rails; our decorative rails ≠ climbing — soft paving for feet |
+| Philadelphia Rail Park | Phased opening; 10–15 minute community reach | **Learn**: one-block-at-a-time lightweight pilots; **Do not**: sell unfinished segments as finished, or copy heavy elevated steel |
+| London King's Cross public realm | Station squares stitching walking and mixed uses | **Learn**: exit into public space (Dazhongsi four quadrants); **Do not**: mall-led plaza logic |
+| Madrid Río | Infrastructure gives way to continuous riverside green | **Learn**: stitch blocks split by infrastructure; **Do not**: tunnel-scale cost and schedule |
+| Seoul Cheonggyecheon | Uncover water/green; everyday linear civic use | **Learn**: linear publicness; **Do not**: pumped faux-ecology or massive excavation narratives |
+| Shanghai Xuhui Runway Park | Transport relic → park beside street | **Learn**: clear remnant-to-park narrative; **Do not**: wide hard runway feel or photo-booth stacking |
+| Beijing Olympic Forest Park | Urban green heart; all-ages lawn and canopy | **Learn**: urban-forest character and inclusion; **Do not**: national-axis scale or a new mega-park land take |
+| Jingzhang Railway Heritage Park (existing) | Rails already in the city; “three paths + green” walking | **Learn**: connect into Dazhongsi as incremental link; **Do not**: redo the park or invent a parallel corridor |
 
 Stance: carry forward Jingzhang daring — move heritage rails from “to be seen” toward “to guide, to share work, to host conceptual short-haul” — with the breakthrough landing on safety separation and everyday publicness, not empowerment slogans or viral gear.
 
@@ -109,10 +109,22 @@ Tracks along the corridor serve two purposes and are **physically separated** [s
 
 | Purpose | Material | Function | Boundary |
 |---------|----------|----------|----------|
-| **Decorative guiding rails** | Rusted / replica rails / ground painting + soft paving | Direction: eyes follow rust; feet on timber or crushed stone; sittable, slow | No running or climbing on rails; no light strips; signage minimal (Mode A) |
-| **AI operating rails (concept)** | Isolated operable segments | Low-speed passenger short-haul + automatic cargo/materials configuration | Separated from walking and decorative rails; not commercially mature; subject to professional study |
+| **Decorative guiding rails** | Rusted / replica rails / ground painting + soft paving | Direction: eyes follow rust; feet on timber or crushed stone; sittable, slow | No running or climbing on rails; no light strips on decorative rails; signage minimal (Mode A) |
+| **AI operating rails (concept)** | Autonomous shuttles on isolated operable segments | Low-speed passenger carriage + automatic cargo/materials configuration; **safety first** (E-stop, speed limit, yield to walking, fail-safe stop) | Separated from walking and decorative rails; not commercially mature; subject to professional study |
 
-Most stretches are decorative guiding rails only. A few isolated stretches conceptually retain AI operating capacity. Pedestrians have priority at crossings; operating rails yield. If operating rails fail or are never deepened, guiding rails and the park still stand on their own.
+### Forest Rail Terminal: Environment Regulation (Seats · Light Strips · Daily Essentials · Access)
+
+The Forest Rail terminal is an **environment and daily-essentials regulation system** — not building-wide control, not ad screens:
+
+| Target | What AI does | Safety & privacy boundary |
+|--------|--------------|---------------------------|
+| **Public open seats / shared desks** | Open/close and power by time, noise, temperature/humidity, rain, anonymous crowd density | No identity logging; prefer close/lower power when crowded or weather is bad |
+| **Public ground light strips / low-illuminance lights** | Brightness and zone on/off by daylight, time of day, foot traffic; edges and seating only | No light shows, projections, or colored chasing lights; fault defaults to off or ultra-dim |
+| **Node access** | Quiet workstations, rain-shelter seats, appointment safety nodes by schedule | Offline fallback to human/paper rules; human override always available |
+| **Autonomous shuttles (concept)** | Dispatch, auto cargo config (including restock for daily points), path yielding | **Safety first**: any collision risk, boundary breach, or E-stop failure → stop and restore walking priority |
+| **Unbranded daily-essentials trial points** | Open/close, restock, and rebalance daily necessities by anonymous footfall, time of day, stockouts, and turnover; after multi-site trials, output fit scores | No brand logos, no face recognition, no ads; formal stalls only after human review; failed sites can be withdrawn |
+
+Most stretches are decorative guiding rails only. A few isolated stretches conceptually retain AI operating capacity. Pedestrians have priority at crossings; operating rails yield. If operating rails fail or are never deepened, guiding rails, seat regulation, light-strip regulation, and daily-essentials regulation still stand on their own.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -201,9 +213,9 @@ Five components:
 
 **Dazhongsi Station integration**: From exits A/B/C/D, a rail path enters each quadrant. Emerging underground, the first view should be park and rusted rail — not ad screens.
 
-**Commercial services**: Spread along the rail path, not concentrated in a mall. Showrooms face the path; data-element services require compliance, authorization, and auditability.
+**Commercial services (unbranded daily essentials → formal stalls by fit)**: Do not start with each brand opening its own storefront in every direction. Instead, set **unified, unbranded** daily-essentials trial points (water, simple meals, basic daily goods — what one person needs in a day), like old food shops — unified fronts, no logos, no marquees. After multi-site trials, AI algorithms (anonymous footfall, time-of-day demand, turnover, stockouts) judge where fit is highest and where daily essentials can be met; **high-fit nodes** later open formal commercial stalls (open admission, not AI anointing a brand); elsewhere use community quick-turnover shops, with Forest Rail terminal AI managing inventory and autonomous shuttles delivering restocks. Company showrooms may face the rail path but must not overpower the park's quiet character; data-element services require compliance, authorization, and auditability.
 
-**Park integration**: The rail path sits in a park — manicured lawn, spaced trees, soft paving. Shared desks are a dedicated precinct inside the park, not an office lobby moved outdoors.
+**Park integration**: The rail path sits in a park — manicured lawn, spaced trees, soft paving. Shared desks and daily points both serve the park: rails are the urban clue; the park is where people quiet down and human–nature relationship comes first — not an office lobby or brand street moved outdoors.
 
 Concept views (not formal evidence figures; spatial claims remain in GeoJSON / metrics / the five evidence diagrams):
 
@@ -237,16 +249,18 @@ All three key areas appear in `geometry/key_areas.geojson`. Current data is prov
 |---|----------|----------------|--------------|-------------|
 | 01 | Exit station, enter park | Dazhongsi Station exits | Decorative guiding rails point to park entries; canopy provides auxiliary shade; rain relies on shelters/arcades as backup — not light shows | All arrivals |
 | 02 | Rail path walking | Entire Dazhongsi rail path | Eyes follow rusted rails; feet on timber or crushed stone. Speed naturally slows. No destination signs urging you forward | Commuters, walkers |
-| 03 | Shared under-canopy workstations | Dedicated park precinct with glass-partitioned multi-desk bays | Shared hot-desks: sit if free. Opens when quiet (noise <55dB, no extreme heat, no heavy rain). AI manages open/close by time and environment | Freelancers, lunch-breakers, passersby working briefly |
-| 04 | Rusted rail curve bench | Rail path turning points | Benches on the outside of curves; sit and watch the rusted rail and trees. No signage; you discover it naturally by sitting down | Elderly, parents with children |
+| 03 | Shared under-canopy workstations | Dedicated park precinct with glass-partitioned multi-desk bays | Shared hot-desks: sit if free. Forest Rail terminal opens/closes seats and power by noise / climate / rain / crowd | Freelancers, lunch-breakers, passersby working briefly |
+| 04 | Rusted rail curve bench | Rail path turning points | Benches on the outside of curves; sit and watch the rusted rail and trees. No signage; discover by sitting; terminal may schedule that seat group | Elderly, parents with children |
 | 05 | Company showroom along the rail | Dazhongsi ground-floor retail | AI agent and terminal company display spaces open toward the rail path; visible as you walk past | Visitors, passersby |
 | 06 | Rainy day under-canopy shelter | Dense canopy segments + node shelters | Canopy as auxiliary shade; heavy rain backed up by artificial shelters / semi-open arcades; AI prompts open seating and shelter nodes | Everyone |
 | 07 | Open-source launch hall | Origin Community | Code contribution display and small presentations for universities and open-source communities. Physical screen scrolling real-time commits | Developers, university faculty and students |
-| 08 | Inter-node AI operating rail (concept) | Isolated operable segments | Conceptual low-speed passenger short-haul + automatic cargo pods linking Zhongzhiyuan, Origin Community, and Dazhongsi; separated from walking and decorative guiding rails | Concept verification stage, not mixed daily use |
-| 09 | Night walking | Entire rail path | Night lighting is minimal: ground-embedded low-illuminance lights mark soft paving edges only. No light shows, no projections | Night runners, late returners |
+| 08 | Inter-node autonomous shuttle (concept) | Isolated operable segments | Safety-first autonomous vehicles for passengers + automatic cargo; E-stop / speed limit / yield; separated from walking and decorative rails | Concept verification stage, not mixed daily use |
+| 09 | Night light-strip regulation | Soft paving edges along the rail path | Terminal regulates public ground light strips / low-illuminance lights: edges and seating only. No light shows, no projections | Night runners, late returners |
 | 10 | Qinghe innovation corridor | Zhongzhiyuan along Qinghe | Waterfront walkway connects to the rail path, stormwater grass slopes double as resting lawns. AI safety testing nodes open by appointment | Visitors, walkers |
 | 11 | Data element salon | Dazhongsi district | Under compliance, authorization, and auditability, displays data element and digital asset circulation as an urban service interface | Enterprise clients, regulators |
 | 12 | University tech transfer street | Origin Community | Incubation, display, legal, IP, and investment services organized along the rail path for university technology transfer | Startup teams, investors |
+| 13 | Unbranded daily-essentials trial points | Multi-site fronts along the rail path | Unified food-shop-style fronts, no brand logos; AI regulates open/close, restock, and rebalance of daily necessities; multi-site trials output fit scores | Commuters, residents, passersby working briefly |
+| 14 | High-fit nodes → formal stalls | Nodes with high fit after AI trials | Open formal commercial stalls (admission-based); elsewhere switch to community quick-turnover shops with AI inventory + autonomous cargo delivery | Community vendors, residents |
 
 All AI governance follows data minimization, open sourcing, explainability, and human review. Urban intelligent agents assist in identifying walking network gaps, public space activity, and facility maintenance needs but do not replace planning approvals or output unauthorized personal profiles.
 
@@ -304,7 +318,7 @@ Key spatial metrics can be verified against [metric:site_area_sqm] and [data:geo
 | 1.5.3.3 Dazhongsi | Key areas: Dazhongsi | key_areas PROV-KEY-003 |
 | agent.1 Overall concept | Overall design: Corridor structure | Rail-guided corridor + three key area linkage |
 | agent.2 AI full-stack innovation | Strategic research + Zhongzhiyuan | Innovation chain, safety governance nodes |
-| agent.3 AI+ scenarios | Personas and scenarios | 12 scenario cards |
+| agent.3 AI+ scenarios | Personas and scenarios | 14 scenario cards |
 | agent.4 Public space and landmarks | Dazhongsi urban forest + quiet landmarks | Five components + three quiet landmarks (not attractions) |
 | agent.5 Cultural narrative integration | Strategic research: Why rails | Jingzhang Railway to rusted rail to Forest Rail |
 | agent.6 Global activities and long-term operations | Renewal projects: Phasing | Near-term lightweight to medium-term renewal to long-term connection |
@@ -315,9 +329,12 @@ Key spatial metrics can be verified against [metric:site_area_sqm] and [data:geo
 
 All spatial conclusions are limited by provisional boundary status. When official boundaries are released: re-run scaffold, self-check, drawings, and HTML. Single-file replacement is not sufficient.
 
-### AI Operating Rail Concept (Passenger Short-Haul + Automatic Cargo)
+### AI Operating Rail & Forest Rail Terminal (Concept)
 
-AI operating rails are a conceptual suggestion, not an engineering feasibility conclusion: low-speed passenger short-haul plus automatic cargo/materials pods. Rail operations on the Jingzhang heritage / dense urban road network cannot be described as commercially mature. Proposal language: conceptual suggestion, subject to professional study; physically separated from heritage preservation, decorative guiding rails, and pedestrian space; decorative rails forbid climbing and running.
+- **Autonomous shuttles**: **safety first** — speed limit, E-stop, yield to walking and decorative-rail zones; stop on collision risk, boundary breach, or E-stop failure. May carry passengers and auto-configure cargo/materials pods (including restock for daily points). Conceptual suggestion, not a mature commercial claim.
+- **Forest Rail terminal**: intelligently regulates public seats/shared desks, ground light strips / low-illuminance lights, and daily-essentials open/close/restock/rebalance at unbranded points; no face recognition, no brand ads; human override when offline.
+- **Unbranded daily-essentials trial points**: start with no brand logos; AI outputs fit scores and supply suggestions only; upgrading to formal stalls requires human review and open admission; failed sites can be withdrawn. No brand-store matrix flooding the park.
+- **Decorative guiding rails**: no climbing or running; physically separated from operating rails. Rails are the urban clue; the park prioritizes quiet and human–nature relationship.
 
 ### Missing Data
 
