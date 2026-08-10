@@ -21,7 +21,7 @@ This proposal takes as its primary basis the *Prequalification Announcement for 
 
 The second basis is the co-creation taskbook addressed to AI agents [source:AGENT-TASKBOOK]; its ten co-creation principles, five functions, three-areas-two-wings structure, and six agent tasks (agent.1–agent.6) form the task skeleton of this proposal [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. All agent spatial suggestions are conceptual suggestions, reference schemes, or research materials for professional teams to deepen; they do not replace formal planning and do not constitute government-approved conclusions [source:AGENT-TASKBOOK].
 
-The third basis is the **development goals and current realities reflected in government work plans and public reporting**, from which this proposal answers "what the government wants to build and what the reality still lacks":
+The third basis is the **development goals and current conditions reflected in government work plans and public reporting**, forming the realistic starting point of this proposal's spatial judgements:
 
 - **Haidian District Government 2026 Economic and Social Development Plan Report** (issued 2026-02-06) explicitly proposes "building an efficient and coordinated north-south dual AI core ecosystem and **creating the Jing-Zhang Heritage Park Innovation Exchange Belt**", requiring "planning 'AI+' benchmark spaces and prioritizing a batch of **perceptible, exemplary innovation scenarios**", and deploys "supporting BAAI in building the unified open-source system software stack Zhongzhi platform" and "promoting human-resource service industry parks to deeply participate in the construction of the Haidian AI Origin Community" [source:HAIDIAN-2026-GOV-PLAN]. These three points are the policy anchors of this proposal's three design threads: "innovation exchange belt space", "perceptible scenarios", and "open source and the Origin Community".
 - **Phase II of the Jing-Zhang Railway Heritage Park opened on 2026-08-06**: a 9-km cultural belt green corridor linking Xizhimen to the Fifth Ring Road, with approx. 53 ha of land, directly serving 70 communities and 450,000 residents along the line; it has built a "three paths plus one green belt" seamless slow-mobility system, the southern section restoring original rails and the welding-factory industrial heritage, the northern section with the "Jing-Zhang Loop" theme plaza, and **reserved space for a youth sci-tech innovation market** [source:JZ-PARK-PHASE2-2026]. The park's current state is the realistic base for this proposal's public-space design; this proposal does not duplicate what is built but fills its "innovation exchange" functional gap.
@@ -197,7 +197,7 @@ All scenarios follow the principles of data minimization, public sources, explai
 
 ## Blue-Green Space, Public Space, and Urban Character
 
-### Problem diagnosis: the park is built — what is missing
+### Current-state analysis and functional chain-filling: the innovation-exchange gap in the park's public space
 
 Phase II of the Jing-Zhang Heritage Park has built a 9-km green corridor and the "three paths plus one green belt" slow-mobility system [source:JZ-PARK-PHASE2-2026]; this proposal does not duplicate construction but does "chain-filling" for three functional gaps: first, **innovation exchange space is absent** — the corridor is mainly ecological leisure, lacking places where developers and founders stay and exchange; second, **open-source outcomes have nowhere to be displayed** — national-level open-source outcomes lack a public-facing display interface [source:ZGC-FORUM-OPENSOURCE-2026]; third, **contributors lack honor space** — developer contributions have no recording carrier at the urban scale. Three landmark components are thus designed:
 
@@ -319,7 +319,7 @@ The 36.1% green ratio and the 41.1% public-space ratio (blue-green plus plaza to
 
 ## Design Rationale
 
-> This section answers "why a location / area / detail is designed this way" with the complete reasoning chain, organized in four steps: **development basis (what the government wants to build) → existing problems (what reality lacks) → design response (how to fill the gap) → spatial placement (exactly where)**. The main text writes design conclusions; this section gives the full chain [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY].
+> This section explains the basis chain of key design decisions (locations, areas, details), organized in four steps: **development basis → current-state problems → design response → spatial placement**. The main text writes design conclusions; this section gives the full chain [source:HAIDIAN-2026-GOV-PLAN] [source:JZ-PARK-PHASE2-2026] [source:AI-ORIGIN-COMMUNITY].
 
 ### 1. Development basis: policy anchors
 
@@ -337,7 +337,7 @@ The government's three main threads: **industry** (north-south dual AI core ecos
 
 ### 2. Existing problems: four gaps
 
-| Gap | Asset | Why underused | Consequence |
+| Gap | Current basis | Key constraint | Impact |
 | --- | --- | --- | --- |
 | D1 Park space vs AI narrative | 9-km corridor built [source:JZ-PARK-PHASE2-2026] | Oriented to heritage/leisure; lacks "third places" | Exchange belt cannot land on space |
 | D2 No spatial chain across three areas | Origin Community active internally [source:AI-ORIGIN-COMMUNITY] | Links remain at industrial-logic level | Switchback points work separately |
