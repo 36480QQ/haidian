@@ -447,7 +447,7 @@ Index of all visual assets, drawings and digital exhibits:
 | Proposal HTML | report/proposal.html | Offline rendered proposal |
 | Interactive Dashboard | visual/index.html | Overview, land use, mobility & scenarios |
 | A3 Booklet | drawings/a3-booklet.pdf | Full design booklet |
-| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (note: PDF internal version tag pending regeneration sync to v1.4.0) |
+| A0 Boards | drawings/a0-boards.pdf | Key exhibit boards (note: PDF internal version tag pending regeneration sync to v6.0) |
 | A3 Booklet (EN mirror) | drawings/a3-booklet.en.pdf | English edition of A3 booklet |
 | A0 Boards (EN mirror) | drawings/a0-boards.en.pdf | English edition of A0 boards |
 

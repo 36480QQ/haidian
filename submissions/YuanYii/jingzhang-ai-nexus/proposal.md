@@ -486,7 +486,7 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 | 主稿渲染阅读版 | report/proposal.html | proposal.md 离线渲染版 |
 | 交互展示页 | visual/index.html | 总览/三层范围/用地/交通/AI 场景等 14 项内容（含 13 张场景卡） |
 | A3 文册 | drawings/a3-booklet.pdf | 设计全过程说明 |
-| A0 展板 | drawings/a0-boards.pdf | 关键成果展板（注：PDF 内版本号待重渲染同步至 v1.4.0） |
+| A0 展板 | drawings/a0-boards.pdf | 关键成果展板（注：PDF 内版本号待重渲染同步至 v6.0） |
 | A3 文册（英） | drawings/a3-booklet.en.pdf | A3 booklet — English mirror |
 | A0 展板（英） | drawings/a0-boards.en.pdf | A0 boards — English mirror |
 
