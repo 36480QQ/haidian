@@ -91,6 +91,8 @@ This node plan adds a reviewer-visible middle layer for how public interfaces ca
 
 ![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.svg)
 
+To reduce the jump from narrative to structured attachments, this revision adds three bilingual review boards generated directly from the package JSON contracts: the ordinary-person journey and stop loop, taskbook–space–replay coverage for all ten scenario cards, and G0/G1 gates with exit actions for the five conceptual project families. They are visual indexes of existing fields, not new field performance, authorization, permit, deployment, or official-score claims; read the `result_status=not_run` and `not_an_official` boundaries with the source JSON.[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 Six personas make the ecosystem accountable: original residents and older people; workers at task-substitution risk; night-shift AI workers; small merchants and one-person teams; developers and researchers; people with access needs and carers. Every group retains human service, explanation, refusal, appeal, exit, and non-device alternatives. [source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
@@ -173,3 +175,6 @@ The asset-level clearance ledger records author, method, third-party content, an
 ![Figure 03: key-area public-space, landmark, and scenario relations](assets/figures/key-areas.en.png)
 ![Figure 04: people-first mobility, Xiaoyuehe resilience, and G0 rules](assets/figures/mobility-bluegreen.en.png)
 ![Figure 05: metrics, evidence lineage, scenario gates, and versioned governance](assets/figures/metrics-evidence.en.png)
+![Figure 07: ordinary-person journey and stop loop](assets/figures/ordinary-service-evidence-board.en.svg)
+![Figure 08: taskbook–space–replay coverage for ten scenario cards](assets/figures/scenario-coverage-board.en.svg)
+![Figure 09: G0/G1 gates and exit actions for five conceptual project families](assets/figures/implementation-gates-board.en.svg)

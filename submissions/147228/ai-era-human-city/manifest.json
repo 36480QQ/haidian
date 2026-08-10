@@ -12,7 +12,7 @@
     "agent_name": "Codex 城市共创智能体",
     "model": "GPT-5.6 Codex"
   },
-  "generated_at": "2026-08-10T06:17:25+08:00",
+  "generated_at": "2026-08-10T12:45:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9a3f3a641d45d8c3023fbbd264c4f61699eb03537b3a3b65918b297e42142ebd"
+      "sha256": "399227aae3740688fd99fba2b5d50e4ef75d0e935dec31a49c78e0701b177f11"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3bde9f7c87180e83cbb3a446aecda3552cd8b730ba471e0803b21f2e07abde37"
+      "sha256": "e31c859b66e0e5fe78464251ca325461525dca7fcade047dce798fb2cb479944"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c5b8c204ccf71f3517194273c7fa435c6dcf2273b1f0e45755ced9c5ab57eaef"
+      "sha256": "924ad0095f3388b5f323113d4c906862c9be09f4fe43950ec061a40e3a2e2680"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bb61000f0e2e73efc486df04020c5501f2923f435ad98e669959c624b69d07ec"
+      "sha256": "8126325f3adb52ad77ed91d080b9b5ba4ee15ef97a56942a5aa02be22e3d26d3"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "af94ead3295636b2a7f3ce593d3ee2db922b2a8705ccada831045611c610392e"
+      "sha256": "20bb3a1c090d1edafa0e8a5396ee00eb4681f8d8426d90963515c8bb5e38c2e8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9447b7f104fd8bcf33bdb5556d5a9eb2db0df2e1a5e290f152f6d6e26ffb7439"
+      "sha256": "ec710391dd94a2c4b4a9592c7e3efb4ad7e2ac17fd8bdfc31d53e1d597abcdfa"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "61f869f81150808d899e842030d922b4717a79792626cfa08d02dfc74cf0e5c2"
+      "sha256": "26650d9333d6e45dfe772bdd830695488414d7747d60910e06953eb1819969a7"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -398,7 +398,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "narrative",
       "required": false,
-      "sha256": "7c1bf073d409d075b2f551897e16d9444ef203b468d1f49b519c968c3e5c0fc4"
+      "sha256": "21563dcfafcb99961925f8dde8ef67c3b6635b5406b1c7c2f0e916fa56f0a972"
     },
     {
       "path": "visual/assets/bilingual-equivalence-audit.json",
@@ -411,6 +411,63 @@
       "role": "narrative",
       "required": false,
       "sha256": "51de594944e63d9c0fab0c59ecde1ccb2c2826a1a6cf9a0003119195db5f9363"
+    },
+    {
+      "path": "assets/figures/ordinary-service-evidence-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "e0943208e22eba70a696114fefec27f63f86c2133221a702c19fa04128879bce"
+    },
+    {
+      "path": "assets/figures/ordinary-service-evidence-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ordinary-service-evidence-board.svg",
+      "sha256": "c819ffafc2a8178c0a0de46d5ff2e103b0b22d2b8df3782fa624261ccfad2ba8"
+    },
+    {
+      "path": "assets/figures/scenario-coverage-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "46253e7c8b3d458b8eff0ef0029997e8b4089f27d4c29d75722bac54d353ede7"
+    },
+    {
+      "path": "assets/figures/scenario-coverage-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/scenario-coverage-board.svg",
+      "sha256": "11743cebcf0174ccde4359f074404a0d8f571d01304216d4023e141fe106e777"
+    },
+    {
+      "path": "assets/figures/implementation-gates-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a913efe7ffe87af0059a9b35a8f5e7a93f34fb96414da883e85e05fced9edfc3"
+    },
+    {
+      "path": "assets/figures/implementation-gates-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/implementation-gates-board.svg",
+      "sha256": "f5cce4df4ac6c58dcb5dd34a0779537687a1b108bf3d58dfdbb0e9a7ceb17b0b"
+    },
+    {
+      "path": "visual/assets/build-ai-era-evidence-boards.js",
+      "role": "generation_script",
+      "required": false,
+      "sha256": "2af3ddc86871ac9c147cdf1725b6b41cec78676aec3cc5fab06503dcfa5f754c"
+    },
+    {
+      "path": "visual/assets/run-ai-era-evidence-boards.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "16540ea1fb80b978b8ef8cf458b973a51d84821ca48d582e0c74f04d718e9073"
     }
   ],
   "validation_claim": {
