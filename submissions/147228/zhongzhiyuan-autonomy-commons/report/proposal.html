@@ -117,7 +117,7 @@ code {
 </section>
 <h1>智行京张：自动驾驶普及后的公共带</h1>
 <blockquote><p><strong>一句话判断</strong>：未来自动驾驶越普及，城市越不能只为车设计。京张带要先把“人、轮椅、儿童、骑行者和维护人员的连续通行权”写进路缘、节点、运营和回退，再讨论车辆进入哪里。</p></blockquote>
-<p>本方案是一个独立的自动驾驶公共性迭代，不是对“京张开源脉冲”原方案的换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。</p>
+<p>本方案是一个独立的自动驾驶公共性迭代，不是把既有投稿直接换名复制。它沿用同一份 provisional 空间底盘，新增自动驾驶路缘、低速接驳、无障碍服务、远程接管、数据最小化和故障回退的机器可读证据层。所有空间仍是概念建议；不声称海淀已经开放某条自动驾驶道路，也不声称任何企业、车辆或监管许可已经落地。</p>
 <h2>一页执行摘要：先验收一条公共服务链，再谈自动化扩展</h2>
 <p>首个可逆验收单元不是“让车跑起来”，而是让普通人能够选择、使用、叫停、申诉并回到人工服务。它只作为概念级审查界面，不预设长度、道路、车辆或运营主体；具体点位和工程尺度待正式边界、现场走测与专业核查后确定。</p>
 <p><strong>状态标签：目标设计 · 未部署 · 未授权 · 未运行</strong></p>
@@ -143,6 +143,11 @@ code {
 <p>自动驾驶不是独立道路系统，而是叠加在步行、骑行、轨道、公交、消防、绿地和维护系统上的“受限服务层”。任何车辆或机器人都必须让位于连续人工路线；路缘空间首先登记谁可以停、何时停、停多久、谁负责清场 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BEIJING-ACCESSIBILITY-REGULATION" title="标准：BEIJING-ACCESSIBILITY-REGULATION">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ISO-TR-4448-PUBLIC-MOBILE-ROBOTS" title="标准：ISO-TR-4448-PUBLIC-MOBILE-ROBOTS">标准</sup>。</p>
 <figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="自动驾驶公共带总览：三座试验庭、两条安全网和阶段门槛"><figcaption>自动驾驶公共带总览：三座试验庭、两条安全网和阶段门槛</figcaption></figure>
 <p>图注：总览图把三座试验庭放在一条公共轴上，并把人本安全网、生态与数据安全网和分期门槛作为同一套空间关系阅读；它不表达法定边界或已开放道路。</p>
+<h3>三节点空间证据链：从点位到可回放的公共路径</h3>
+<p>总览图只回答“哪里形成关系”，因此本轮把三处节点继续拆成可回放的空间证据链：<code>geometry/key_areas.geojson</code> 的三个 provisional 重点区 → <code>autonomy_nodes.json</code> 的三个 provisional 点位 → <code>autonomy-node-interface-plans.json</code> 的五阶段公共界面 → <code>autonomous-scenarios.json</code> 的 12 张场景卡 → <code>curbside-test-gates.json</code> 的停止闸门。这样，图上的每个节点都有重点区 feature ID、场景 ID、用户群、首要证据和停止规则，不会把概念点位误读为道路或已部署设施 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/autonomy-spatial-chain.json#AUTO-NODE-001" title="空间数据：visual/assets/autonomy-spatial-chain.json#AUTO-NODE-001">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="空间数据：geometry/key_areas.geojson#PROV-KEY-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="key_area_design" title="深度：key_area_design">深度</sup>。</p>
+<p>五个空间动作固定为：普通人路径 → 公开状态与同意 → 受限服务窗口 → 人工接管或停止 → 恢复普通路径。第一处优先验证可关闭的安全评测庭，第二处优先验证老人、轮椅使用者和不会使用 App 的居民仍能通过纸面/电话/人工完成同一服务，第三处优先验证轨道到达、安静通行、物流维护和活动日人工路线分离。只要缺少现场测绘、消防/能源、责任主体、无障碍走查、居民服务基线或应急证据，就停在“概念建议/参考方案”状态，不得扩容 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/autonomy-spatial-chain.json#CHAIN-CHECK-03" title="空间数据：visual/assets/autonomy-spatial-chain.json#CHAIN-CHECK-03">空间数据</sup>。</p>
+<figure class="proposal-figure"><img src="../assets/figures/autonomy-spatial-chain.svg" alt="三节点空间证据链：节点、重点区、场景与停止规则"><figcaption>三节点空间证据链：节点、重点区、场景与停止规则</figcaption></figure>
+<p>图注：三行节点均标注 <code>official_boundary=false</code>、<code>geometry_role=provisional_constraint</code>、<code>dimensions=null</code> 和 <code>official_road=false</code>；审计关系线也不是车辆路线。该图与 JSON 检查器只证明引用关系可回放，不证明道路许可、工程可行性、运营绩效或安全结果。</p>
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <p>总体设计把 provisional 的用地、建筑、道路、绿地、公共空间和分期图层作为同一套空间底盘；自动驾驶节点只表达测试关系，不生成法定红线。设计意图是先守住人行主链、消防净空、维护通道、安静界面和可逆改造，再讨论路缘服务窗口 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>。几何影响由 <code>land_use.geojson</code>、<code>buildings.geojson</code>、<code>constraints.geojson</code> 和 <code>phasing.geojson</code> 共同回读，指标影响由面积、建筑底盘、绿地和公共空间比例复算。当前没有官方控规、权属、地下管线、消防审查和拆改清单，因此不提出容积率、建筑高度、拆除数量或投资金额；后续应由规划、建筑、市政、消防和交通专业人员统一深化。</p>
 <h2>三层范围工作框架</h2>
