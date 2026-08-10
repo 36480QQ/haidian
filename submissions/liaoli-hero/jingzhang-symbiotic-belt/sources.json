@@ -29,7 +29,15 @@
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional_constraint).",
+      "limitation": "Dazhongsi provisional range (PROV-KEY-003) may deviate from the actual site; its centroid sits near Beijing North Station, about 2.26 km from Dazhongsi station (see Issue #1029)."
+    },
+    {
+      "id": "ISSUE-1029",
+      "source_type": "repository_public_registry",
+      "url": "https://github.com/open-city-ai/haidian/issues/1029",
+      "usage": "Community verification discussion on the Dazhongsi provisional-boundary position deviation; disclosed in assumptions A-KEY003-OFFSET-001.",
+      "retrieved_date": "2026-08-10"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",

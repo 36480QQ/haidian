@@ -131,6 +131,8 @@ All three key-area boundaries are provisional rough polygons; the following conc
 
 ### Dazhongsi AI Industry Cluster (announced 72.0 ha)
 
+> **Position accuracy notice**: This area uses the repository's provisional polygon PROV-KEY-003, whose community-verified centroid sits near Beijing North Station, about 2.26 km from Dazhongsi station ([Issue #1029](https://github.com/open-city-ai/haidian/issues/1029)). This proposal does not shift the provisional coordinates; all conclusions are directional concepts only. Once official key-area polygons and station anchoring arrive, all geometry, metrics and figures will be recalculated (see assumption A-KEY003-OFFSET-001).
+
 - **Positioning**: AI-native businesses and consumption/business scenarios;
 - **Structure**: "Bell Plaza + smart commerce blocks" — a TOD concept core around the rail station extending to smart consumption, smart business and showcase blocks;
 - **Buildings**: station–city integrated development (concept), renewal of existing commercial carriers;
