@@ -6,6 +6,7 @@ import unittest
 
 import sys
 from pathlib import Path
+from unittest.mock import patch
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -39,7 +40,10 @@ class DiscoverPublicSourcesTests(unittest.TestCase):
             output_dir = root / "output"
 
             stdout = io.StringIO()
-            with contextlib.redirect_stdout(stdout):
+            with (
+                contextlib.redirect_stdout(stdout),
+                patch("discover_public_sources.fetch_url") as fetch_mock,
+            ):
                 result = discover_main(
                     [
                         "--seed-csv",
@@ -47,7 +51,6 @@ class DiscoverPublicSourcesTests(unittest.TestCase):
                         "--output-dir",
                         str(output_dir),
                         "--no-search",
-                        "--no-seed-links",
                         "--no-default-queries",
                         "--pause",
                         "0",
@@ -55,6 +58,7 @@ class DiscoverPublicSourcesTests(unittest.TestCase):
                 )
 
             self.assertEqual(0, result)
+            fetch_mock.assert_not_called()
             self.assertIn("wrote 0 candidates", stdout.getvalue())
             summary = json.loads((output_dir / "run-summary.json").read_text(encoding="utf-8"))
             self.assertEqual(0, summary["candidate_count"])
@@ -72,6 +76,13 @@ class DiscoverPublicSourcesTests(unittest.TestCase):
         ]:
             with self.subTest(url=url):
                 self.assertFalse(is_probably_supported_url(url))
+
+    def test_malformed_page_link_does_not_hide_valid_links(self) -> None:
+        links = extract_links_from_html(
+            '<a href="https://[">Broken</a><a href="/valid.html">Valid</a>',
+            "https://example.com/root/index.html",
+        )
+        self.assertEqual([("https://example.com/valid.html", "Valid")], links)
 
     def test_parse_html_metadata_extracts_title_meta_and_links(self) -> None:
         metadata = parse_html_metadata(
