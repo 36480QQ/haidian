@@ -232,46 +232,6 @@
         "The eight rows are non-identifying design lenses; they are not measured population counts or automated eligibility categories."
       ]
     },
-    "public_interest_position_count": {
-      "status": "known",
-      "value": 8,
-      "unit": "count",
-      "source_files": [
-        "visual/assets/public-interest-position-register.json"
-      ],
-      "formula": "count(positions)",
-      "confidence": "high",
-      "assumptions": [
-        "These are explicit conceptual trade-offs authored for professional review, not measured public preferences or a survey result."
-      ]
-    },
-    "public_interest_position_scenario_link_count": {
-      "status": "known",
-      "value": 14,
-      "unit": "count",
-      "source_files": [
-        "visual/assets/public-interest-position-register.json",
-        "visual/assets/scenario-operation-matrix.json"
-      ],
-      "formula": "count(distinct linked scenario IDs)",
-      "confidence": "high",
-      "assumptions": [
-        "A link proves a review relationship only; it does not prove a field result or operating authorization."
-      ]
-    },
-    "public_interest_affected_group_count": {
-      "status": "known",
-      "value": 10,
-      "unit": "count",
-      "source_files": [
-        "visual/assets/public-interest-position-register.json"
-      ],
-      "formula": "count(distinct affected_groups)",
-      "confidence": "medium",
-      "assumptions": [
-        "Group labels are non-identifying design lenses; they are not population counts, eligibility classes or evidence of consultation."
-      ]
-    },
     "ai_landmark_count": {
       "status": "known",
       "value": 4,
@@ -577,82 +537,6 @@
       "assumptions": [
         "Station geometry and responsibilities remain provisional until official polygons, rights and professional review are available."
       ]
-    },
-    "innovation_latency_s0_median_days": {
-      "status": "known",
-      "value": 63.313,
-      "unit": "none",
-      "display_unit": "calendar_days",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "median(sum(six triangular stage draws)) for S0_fragmented_corridor across 50000 draws",
-      "confidence": "low",
-      "assumptions": ["Screening simulation only; stage ranges are explicit design assumptions, not measured project durations."]
-    },
-    "innovation_latency_s1_median_days": {
-      "status": "known",
-      "value": 35.558,
-      "unit": "none",
-      "display_unit": "calendar_days",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "median(sum(six triangular stage draws)) for S1_generic_tech_park across 50000 draws",
-      "confidence": "low",
-      "assumptions": ["Screening simulation only; co-location does not imply public-data access or social validation."]
-    },
-    "innovation_latency_s2_median_days": {
-      "status": "known",
-      "value": 35.096,
-      "unit": "none",
-      "display_unit": "calendar_days",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "median(sum(six triangular stage draws)) for S2_open_pulse across 50000 draws",
-      "confidence": "low",
-      "assumptions": ["Screening simulation only; the Open Pulse candidate must not claim this as an observed reduction before field logging."]
-    },
-    "innovation_latency_reduction_s2_vs_s0_ratio": {
-      "status": "known",
-      "value": 0.44567,
-      "unit": "ratio",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "1 - innovation_latency_s2_median_days / innovation_latency_s0_median_days",
-      "confidence": "low",
-      "assumptions": ["Comparative design output, not a forecast or a causal estimate."]
-    },
-    "innovation_cross_domain_match_rate_s2": {
-      "status": "known",
-      "value": 0.54826,
-      "unit": "ratio",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "successful cross-domain match draws / 50000 for S2_open_pulse",
-      "confidence": "low",
-      "assumptions": ["Probability is an explicit operating assumption for testing the serendipity/weak-connection mechanism, not a survey result."]
-    },
-    "innovation_social_validation_rate_s2": {
-      "status": "known",
-      "value": 0.3537,
-      "unit": "ratio",
-      "source_files": ["visual/assets/innovation-friction-simulation.json", "visual/assets/innovation-friction-simulation.js"],
-      "formula": "ideas reaching a social validation gate / 50000 for S2_open_pulse",
-      "confidence": "low",
-      "assumptions": ["This is a screening parameter for the social multiplier loop, not evidence that any deployed project has reached a resident outcome."]
-    },
-    "human_capacity_gate_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": ["visual/assets/human-capacity-gates.json", "proposal.md"],
-      "formula": "count(human capacity gates HC-01 through HC-06)",
-      "confidence": "high",
-      "assumptions": ["The six gates are a design protocol, not a measured population or service inventory."]
-    },
-    "human_capacity_gate_passed_count": {
-      "status": "unknown",
-      "value": null,
-      "unit": "count",
-      "source_files": ["visual/assets/human-capacity-gates.json", "proposal.md"],
-      "formula": "count(gates with verified field evidence and participatory acceptance)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "No project-specific housing, care, accessibility, night-work or cross-generational participation baseline has been completed. Unknown is not treated as pass."
     }
   }
 }
