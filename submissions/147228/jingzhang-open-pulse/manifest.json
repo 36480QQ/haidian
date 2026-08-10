@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a34337d52fc2a6c711079c021195fa53a5d8eea11e32f2ee4b46e562740ce874"
+      "sha256": "6cd61f0bc1bc3a208d112ea8541971a3411f7b5546ee925022df3887993147d1"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "133987e6f17d9b155a1fc507db4d9ce37627c84c7c3fe26131126bf2cdccedb4"
+      "sha256": "5b85ea122a6e79e67895bb4799d29a8c5537140f65c4d9a5ceb22ddca4380b28"
     },
     {
       "path": "agent.json",
@@ -46,7 +46,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "18dfbe1a49dd85823ae83250492f088fff47e5cd2221a328588ead08dea62673"
+      "sha256": "03b28e3c582b7342ca04da7742460883b1a1804ffa9a88ba44ab52121d5f388f"
     },
     {
       "path": "assumptions.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5628ca41a472388293bb8830ace80af098f3c625d2272560168f324896788b27"
+      "sha256": "94ac498afa166980f94647b9cb925b8fa4d8ca4599b590015cf49cc6fb6c683b"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6d218862462d55022a063022fbe0aa086a082ebd3594fc3115df16316963416c"
+      "sha256": "998a22b131d90875dbfda84a732619c23572ab2fc1207812e755f9e0aa0efe61"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "09182b33e6879e78ab971f612d7c418c2a47cddefbd0276de68ba0440de42c20"
+      "sha256": "34765d0537549c5a9b5db2cbda5345664fbe698f0891581874629577aedc6854"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -459,7 +459,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "1f228490e9b418a161cff48c784a30019e779b5e6f354333afcaea7cc0309e33"
+      "sha256": "98929df47ff59d1a1d89c15bee490daf108e6273282a39dc040abcf9c54659a3"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -721,6 +721,27 @@
       "language": "en",
       "translation_of": "assets/figures/public-interest-positions.svg",
       "sha256": "74352b80917362d2c8d18cf699f3ec589cbbb49de2566e4758bf19f27a4ad089"
+    },
+    {
+      "path": "visual/assets/human-capacity-gates.json",
+      "role": "human_capacity_gates",
+      "required": false,
+      "language": "neutral",
+      "sha256": "93e7152996de872cf2a7f3af14f5f918359778a5f9c7d09d217da14023872a1b"
+    },
+    {
+      "path": "visual/assets/innovation-friction-simulation.js",
+      "role": "reproducible_simulation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e820cbaae24ba4fc30c5e4a2f80ca0844fe240c077b2cc2da5949cb907d09fb2"
+    },
+    {
+      "path": "visual/assets/innovation-friction-simulation.json",
+      "role": "innovation_friction_simulation",
+      "required": false,
+      "language": "neutral",
+      "sha256": "88d37dba4ce45a1f306a9284cad37807314ea063c6c3da3173a3cbe6b8bc6d97"
     }
   ],
   "validation_claim": {

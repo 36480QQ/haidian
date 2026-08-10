@@ -1568,6 +1568,45 @@
       "attribution": "Local deterministic provenance runner authored by 许丙南 / Codex; PASS does not mean official scoring.",
       "font_note": "JavaScript evidence runner; no font file is redistributed.",
       "hash_sha256": "643510a0698658d2ff93dde106f0366f2b9e91bff05aa7e8e642b96afc454b10"
+    },
+    {
+      "path": "visual/assets/human-capacity-gates.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored as a conceptual human-capacity gate protocol; no personal data or remote asset fetch",
+      "source_inputs": ["proposal.md and proposal.en.md", "repository brief and package geometry", "sources.json"],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Conceptual participation and care-gate protocol authored by 许丙南 / Codex; unknown gates are not observed outcomes.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "93e7152996de872cf2a7f3af14f5f918359778a5f9c7d09d217da14023872a1b"
+    },
+    {
+      "path": "visual/assets/innovation-friction-simulation.js",
+      "asset_class": "validation_runner",
+      "author": "许丙南 / Codex",
+      "generation_method": "dependency-free Node.js deterministic screening simulation with explicit triangular assumptions; no network access",
+      "source_inputs": ["proposal.md and proposal.en.md", "visual/assets/innovation-friction-simulation.json", "metrics.json"],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Screening runner authored by 许丙南 / Codex; output is not field performance, a forecast or an official score.",
+      "font_note": "JavaScript evidence runner; no font file is redistributed.",
+      "hash_sha256": "e820cbaae24ba4fc30c5e4a2f80ca0844fe240c077b2cc2da5949cb907d09fb2"
+    },
+    {
+      "path": "visual/assets/innovation-friction-simulation.json",
+      "asset_class": "analysis_or_evidence_json",
+      "author": "许丙南 / Codex",
+      "generation_method": "persisted output of the bundled deterministic screening runner; no network access or resident data",
+      "source_inputs": ["visual/assets/innovation-friction-simulation.js", "proposal.md and proposal.en.md", "metrics.json"],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated",
+      "attribution": "Modeled design-screening output authored by 许丙南 / Codex; all probabilities and durations remain explicit assumptions until replaced by audited logs.",
+      "font_note": "JSON evidence asset; no font file is redistributed.",
+      "hash_sha256": "88d37dba4ce45a1f306a9284cad37807314ea063c6c3da3173a3cbe6b8bc6d97"
     }
   ],
   "review_protocol": [
