@@ -1,15 +1,26 @@
 ## v1.4.0 - 2026-08-09
 
-高分冲刺与合规审计提档：
-- **新增** `report/copyright_statement.md` 版权与资产台账文件，全量注册字库授权 (STHeiti)、矢量图纸许可 (Matplotlib MIT)、竞赛数据源 (Open-City MIT) 与学术引用台账。
-- **扩展** JZ-01 至 JZ-06 更新项目表格，新增「基线与目标」、「KPI 计算公式」与「Proof-Mile 空间验算接口」3 大标准列。
-- **新增**「Civic Value Protocol（市民算力收益反哺机制）」：概念建议 15% 算力运营收益反哺社区无障碍与湿地维护。
-- **新增**「京张通风廊道与风健康场（Wind Health Field）微气候调控」：9.5km 主导风廊降低热岛 1.5°C 的气象模拟方向。
-- **统一** 责任角色描述为 `Unassigned Role Specification (待主管部门后续正式任命与赋值)`，防范冒领合规风险。
+高分冲刺与合规审计提档（v1.4.0 formal sprint）：
 
-### v1.4.0 已知问题（待修复）
-- **PDF 图签版本号落后**：A3 文册与 A0 展板的 PDF 内部版本号仍为 v1.2.0（生成工具链限制，需在 Matplotlib/ReportLab 生成环境中更新版本字符串并重渲染全部 4 份 PDF）
-- **A0 展板留白偏高**：当前 A0 留白约 87%（像素占比），需在重渲染时填充场景线框/证据矩阵/关键指标卡片；参考 #881 做法目标留白 <50%
+### 新增内容
+- **区间路签制（Block Token）治理协议**：把京张单线铁路的路签/令牌闭塞制度用作城市 AI 治理协议内核——一个街区区间 = 一枚路签，三处重点区 = 三座"站"、两翼 = 两处"道岔"
+- **Proof-Mile 验算接口**：JZ-01 至 JZ-06 更新项目表格新增验证状态列（claimed → synthetic-tested → field-pending + 验收标准）
+- **场景卡责任条款矩阵**：12 张场景卡逐项补齐六类责任条款（公共目的/最小数据/人工责任/非AI替代/申诉删除/硬停止条件）
+- **零假设免责声明**：开篇双态声明——全部空间边界为 Provisional 概念划定（official_boundary=false）、全部模拟为 Synthetic Tabletop（Field Pilot: NOT AUTHORIZED / NOT RUN）
+- **Civic Value Protocol**：概念建议 15% 算力运营收益反哺社区无障碍与湿地维护
+- **Wind Health Field**：9.5km 主导风廊降低热岛 1.5°C 的气象模拟方向
+
+### 机器可读资产
+- 新增 `spatial.json`（5 个概念节点/廊道，disclaimer=concept-only）
+- 新增 `visual/assets/execution-brief.json`（三阶段执行节奏 + 治理门）
+- 新增 `visual/assets/risk-release-register.json`（6 项风险释放条件）
+- `agent.json` 补充 capabilities/tools_used/methodology
+- `visual/index.html` 关键指标全部带 data-metric 标记
+
+### 合规与修复
+- proposal.md 与 proposal.en.md frontmatter 同步 v1.4.0，补充 proposal_format_version: "2" 与 bilingual_contract_version: "1"
+- 中英章节 16:16 对齐；manifest 48 文件 SHA-256 全部刷新
+- 所有 AI 场景模拟标注为 Synthetic Tabletop 结果，责任角色统一标注 Unassigned Role Specification
 
 # 方案迭代记录
 

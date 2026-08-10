@@ -9,6 +9,8 @@ bilingual_contract_version: 1
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 package_type: "professional_design_package"
 package_state: "ready_for_review"
 summary: "Formal urban design proposal for Centennial Jing-Zhang AI Nexus, centered on Smart Rail Axis & Boundless Green Belt, covering three-level scope, three key areas, AI ecosystem and implementation."
@@ -278,7 +280,7 @@ Concept proposal to explore a multi-species eco-sensing and resilience system at
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Following [depth:renewal_project_list] and [depth:phasing_implementation], the proposal sets a "visible in three years, exemplary in five, benchmark in ten" phasing plan, with responsible-department suggestions and risk-control measures for major works:
+Following [depth:renewal_project_list] and [depth:phasing_implementation], the proposal embeds all six action projects (JZ-01 through JZ-06) into the Block Token Proof-Mile verification loop: each project requires a synthetic tabletop acceptance (synthetic-tested) before implementation, continuously produces Proof-Mile verification records during execution, and automatically returns its token (releasing the block from AI service occupation) when any hard-stop condition triggers, with the event archived in the risk release registerFollowing [depth:renewal_project_list] and [depth:phasing_implementation], the proposal sets a "visible in three years, exemplary in five, benchmark in ten" phasing plan, with responsible-department suggestions and risk-control measures for major works:
 
 | No. | Project | Existing issue & pre-survey | Suggested participants | Approval dependence & costing | O&M KPI formula & baseline | Risk & stop condition | Evidence | Proof-Mile verification interface |
 | --- | --- | --- | --- | --- | --- | --- | --- |

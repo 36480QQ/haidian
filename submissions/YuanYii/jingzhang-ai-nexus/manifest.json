@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "006b8cc88f7fbcb9b96adb9127072094cf760fcd89cb5d659cff62f063452a90"
+      "sha256": "3130325cad2859d7772e53bc881bb99ddb5065120f55b59408cc6e8b71054d5b"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "1fafa62cd69e7769cfe340551416a939202a343580062c95ba84c9356ae6bbc2"
+      "sha256": "92169df10107d93ce8e864ef0c65a40e09cc38b3edf04301ae3e7913332e1218"
     },
     {
       "path": "report/narrative.md",
@@ -98,14 +98,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "43d4c524f004badfb2cdde34b784ab85a46996c23ff62af10baa3e49ad7200cb"
+      "sha256": "91aed77946b79a389fe7c8c92aecfe89f528558bba77a1e25ae104c84b42386b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a0643c158d3fa1af2755e3c910ac4fc0de69ef25131c0ccbac74a2d7275be536"
+      "sha256": "6dabb7b80d91906e035e22dd039fedad281e7f45ce891e212da014ddd9967021"
     },
     {
       "path": "visual/index.html",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2962ff8407496e8d497b2c838e5a7b7b7fb7a561e4751c070ec373be69e2c0a9"
+      "sha256": "b19137a6e903c8153d95a22660b77df825321d55e3e160c4266b75fd249e7381"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d9b80154061ca7ccec815b0fc4136021660a2d7e64089291e27be41b8ec1d3b3"
+      "sha256": "bf39d55f426a7058253df5d03c4775bd92273f516f38eb3e66aad8a145911811"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -225,7 +225,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "15ce41f597ff2d0eb0ecc065775281883ae7b48ab9012b91f20846891e229b24"
+      "sha256": "1e892a70c0ca23033090a2cbd5f84112a6ac18c9e80903ae8150fa7f696dc0de"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -233,7 +233,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "feb1c0ea911398b1c02c8e142ff6379bc1ecd796b332ae63c650c398b95c4f38"
+      "sha256": "37751e8c98ef28a3a7167e28739d77bcad91c1310fed0dd213de298dad80ee39"
     },
     {
       "path": "visual/index.en.html",
@@ -295,7 +295,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "9fdb2bc6704a56e9b99d5606a7b44c61c808973224cb635d507332f74ef3b899"
+      "sha256": "ee47b1bfb079cec3c2fa88949d0c961f5057ce6fa3a611130ab239a57bc8c3c8"
     },
     {
       "path": "assets/figures/logo.png",
@@ -335,6 +335,24 @@
       "role": "visual_asset",
       "required": false,
       "sha256": "12ca854a09d43182f98fb597913b4ef3d94aa4dd4af6b0f5bb9d5140b6b689fc"
+    },
+    {
+      "path": "visual/assets/proof-mile-delivery.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "cc54a58528de19c1e624716e7df97f69b5084b3796e08b5f73c83ad8f6d38775"
+    },
+    {
+      "path": "visual/assets/wind-health-validation-plan.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "3fe2705518af7ff5c5fbecbab9b3aade2257c4ce8f9494fa962156d0c382a0ef"
+    },
+    {
+      "path": "visual/assets/participation-cycle.json",
+      "role": "visual_asset",
+      "required": false,
+      "sha256": "9117833dbe27a68d601cb96981582ee51f856e5885edb859523ad8d8e24e0327"
     }
   ],
   "validation_claim": {
@@ -347,7 +365,7 @@
   "version": "1.4.0",
   "updated_at": "2026-08-10T00:00:00Z",
   "checksums": {
-    "proposal.md": "006b8cc88f7fbcb9b96adb9127072094cf760fcd89cb5d659cff62f063452a90",
+    "proposal.md": "3130325cad2859d7772e53bc881bb99ddb5065120f55b59408cc6e8b71054d5b",
     "agent.json": "bc0d71db80891c57b5850325be68c2a501486bb389e3f9739d1dc5b2b41b3162",
     "metrics.json": "a74b90540546f1129c4196e68380fbb9d76fe4880bd5285d293b871f5a70ae06",
     "assumptions.json": "b5603b9b0229c1005f03826e0681e8196acf91afa0bd7f460682ca543f36744e",
@@ -356,11 +374,11 @@
     "compliance_matrix.json": "ffb25c25e874a73988b3672752fa2c61af0505d635c52ea020dde16caf1777d0",
     "standard_matrix.json": "c8388b03909c8d774e11d2c965165da95fbdc1be645756816afe851a26e0bba7",
     "design_depth_matrix.json": "f6551e818c731e1bdd4a9bb6faeb15bbe5e50c0e3cc8fbe3d42edca196c65076",
-    "report/proposal.html": "1fafa62cd69e7769cfe340551416a939202a343580062c95ba84c9356ae6bbc2",
+    "report/proposal.html": "92169df10107d93ce8e864ef0c65a40e09cc38b3edf04301ae3e7913332e1218",
     "report/narrative.md": "2018572be2213e2bb92fa0c5f0a73424816410992b9b28d17c85c1ee738a580e",
     "report/copyright_statement.md": "f96da5773a113f5575c020838fed127c82893317afa594f55adb0bb1c9c88e65",
-    "drawings/a3-booklet.pdf": "43d4c524f004badfb2cdde34b784ab85a46996c23ff62af10baa3e49ad7200cb",
-    "drawings/a0-boards.pdf": "a0643c158d3fa1af2755e3c910ac4fc0de69ef25131c0ccbac74a2d7275be536",
+    "drawings/a3-booklet.pdf": "91aed77946b79a389fe7c8c92aecfe89f528558bba77a1e25ae104c84b42386b",
+    "drawings/a0-boards.pdf": "6dabb7b80d91906e035e22dd039fedad281e7f45ce891e212da014ddd9967021",
     "visual/index.html": "d51ed224d66937331d831d6899be7c219dfa801d2e9815ff067bfcf6ef24a17f",
     "assets/figures/key-areas.png": "ce45c8e02ff66e3d125828a8ace1175a4b79863a94a9149b896eea0f83803cca",
     "assets/figures/land-use-structure.png": "9c25ee60d160f66272695d3b2f759a9821f01cb9a746e76fff2e6a0a53b6c3a0",
@@ -376,10 +394,10 @@
     "geometry/public_space.geojson": "9fad8446f3b6220f49c5a49fd8fffe5c77edd879b1fad2b4d3f3ca8c7452138e",
     "geometry/roads.geojson": "951aa6177e8eef733eb1fb091e829b8f260f00cfe785377fd166141ab8db1205",
     "geometry/site_boundary.geojson": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff",
-    "proposal.en.md": "2962ff8407496e8d497b2c838e5a7b7b7fb7a561e4751c070ec373be69e2c0a9",
-    "report/proposal.en.html": "d9b80154061ca7ccec815b0fc4136021660a2d7e64089291e27be41b8ec1d3b3",
-    "drawings/a3-booklet.en.pdf": "15ce41f597ff2d0eb0ecc065775281883ae7b48ab9012b91f20846891e229b24",
-    "drawings/a0-boards.en.pdf": "feb1c0ea911398b1c02c8e142ff6379bc1ecd796b332ae63c650c398b95c4f38",
+    "proposal.en.md": "b19137a6e903c8153d95a22660b77df825321d55e3e160c4266b75fd249e7381",
+    "report/proposal.en.html": "bf39d55f426a7058253df5d03c4775bd92273f516f38eb3e66aad8a145911811",
+    "drawings/a3-booklet.en.pdf": "1e892a70c0ca23033090a2cbd5f84112a6ac18c9e80903ae8150fa7f696dc0de",
+    "drawings/a0-boards.en.pdf": "37751e8c98ef28a3a7167e28739d77bcad91c1310fed0dd213de298dad80ee39",
     "visual/index.en.html": "12fe5025808b36146d23f9be79c99a96d6dd27c998af0cebbccc6b2a46fe4929",
     "assets/figures/key-areas.en.png": "f73ffbdc783e8b80c57b5d1cab5a80f37682ad8d034432039f5b75d01e22dfcb",
     "assets/figures/land-use-structure.en.png": "c94ac96cfa895c95bab8756c4b7f35922cf23c38903778c0a51c377553a5829f",
@@ -387,12 +405,15 @@
     "assets/figures/mobility-bluegreen.en.png": "7d5f829df5e9e0e22ffa266049e4e79462a9ed7b06f973549b8f33fd2f2f6695",
     "assets/figures/site-overview.en.png": "b02120e2477eb8f49a604bc9395d380e2127467a65d0aaac0eddf625844c1711",
     "risk.json": "5f07e2d1a20274d47799e985069a019b2e70e39566c1f5d24ed5fed00ea9a83e",
-    "changelog.md": "9fdb2bc6704a56e9b99d5606a7b44c61c808973224cb635d507332f74ef3b899",
+    "changelog.md": "ee47b1bfb079cec3c2fa88949d0c961f5057ce6fa3a611130ab239a57bc8c3c8",
     "assets/figures/logo.png": "69d5d3a1b69b56bb4f1006b55df8bf585279a5cd937f5d54268340f1ea1e1f2d",
     "assets/figures/logo.en.png": "306879b0115bbbe317039ddf0c32f03642f10626ba94838ee5eb9b4caba3aecf",
     "spatial.json": "48ea2d53d7eeb37a4073ce136ead063f6e5c4f1de6eec193d4187d0046c46a8d",
     "visual/assets/execution-brief.json": "392c5df355e987e453bd5f425cc4eafb27c68bd712dbc987014d3bfd1c15c80b",
     "visual/assets/risk-release-register.json": "6613a469a00a11dbcfb5775582716d444bb23d6959f014c971c68c4dd5ef6e29",
-    "visual/assets/pdf-regeneration-checklist.json": "12ca854a09d43182f98fb597913b4ef3d94aa4dd4af6b0f5bb9d5140b6b689fc"
+    "visual/assets/pdf-regeneration-checklist.json": "12ca854a09d43182f98fb597913b4ef3d94aa4dd4af6b0f5bb9d5140b6b689fc",
+    "visual/assets/proof-mile-delivery.json": "cc54a58528de19c1e624716e7df97f69b5084b3796e08b5f73c83ad8f6d38775",
+    "visual/assets/wind-health-validation-plan.json": "3fe2705518af7ff5c5fbecbab9b3aade2257c4ce8f9494fa962156d0c382a0ef",
+    "visual/assets/participation-cycle.json": "9117833dbe27a68d601cb96981582ee51f856e5885edb859523ad8d8e24e0327"
   }
 }
