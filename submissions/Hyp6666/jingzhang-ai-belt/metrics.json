@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(provisional_site_boundary, EPSG:4548)",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
-        "临时粗略边界复算值；公告约11.4平方公里仅作数量级校核，官方边界发布后必须重算。"
+        "临时粗略边界复算值；公告约11.4平方公里仅作数量级校核，官方边界发布后必须重算。",
+        "本指标自 provisional geometry(official_boundary=false)复算得出，按评审要求登记为保守可信度 low。"
       ]
     },
     "land_use_area_05_sqm": {
@@ -269,8 +270,10 @@
         "geometry/green_space.geojson"
       ],
       "formula": "sum(polygon_area(green_space), EPSG:4548)",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "本指标自 provisional geometry(official_boundary=false)复算得出，按评审要求登记为保守可信度 low。"
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -281,9 +284,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
+      "confidence": "low",
       "assumptions": [
-        "设计方案绿地率复算值；法定绿地率控制指标缺失。"
+        "设计方案绿地率复算值；法定绿地率控制指标缺失。",
+        "本指标自 provisional geometry(official_boundary=false)复算得出，按评审要求登记为保守可信度 low。"
       ]
     },
     "public_space_area_sqm": {
@@ -294,8 +298,10 @@
         "geometry/public_space.geojson"
       ],
       "formula": "sum(polygon_area(public_space), EPSG:4548)",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "本指标自 provisional geometry(official_boundary=false)复算得出，按评审要求登记为保守可信度 low。"
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -306,8 +312,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
-      "confidence": "medium",
-      "assumptions": []
+      "confidence": "low",
+      "assumptions": [
+        "本指标自 provisional geometry(official_boundary=false)复算得出，按评审要求登记为保守可信度 low。"
+      ]
     },
     "total_floor_area_sqm": {
       "status": "known",

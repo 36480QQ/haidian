@@ -61,9 +61,9 @@ T1-1 把事实优先级落成可执行规则：正式结论只锚定官方公告
 
 ### 1.3 数据缺口声明
 
-#### 1.3.1 官方精确红线未取得：provisional_boundaries.geojson 定位与"四不得"（非官方红线/非审批依据/非精确面积依据/非正式评分依据；缺口不阻断内容评分）
+#### 1.3.1 官方精确红线未取得：provisional_boundaries.geojson 定位与"四不得"（非官方红线/非审批依据/非精确面积依据/非正式评分依据；缺口仅说明可进行投稿受理与结构审阅，不预断专业评分与接收决定）
 
-截至成稿，三层范围与三重点区官方精确 polygon 未取得，投稿总体设计边界以公告文字四至与约面积拟合临时粗略边界（`provisional_constraint`、`official_boundary=false`），仅用于 AI 生成、可视化与提交自检，执行"四不得"：非官方红线、非审批依据、非精确面积依据、非正式评分依据，该缺口不阻断内容评分[data:geometry/site_boundary.geojson#SITE-001]。临时边界在 EPSG:4548 下复算约 11,412,825 sqm，仅与公告约 11.4 km² 数量级校核，属拟合而非验证；官方边界发布后整体替换重算[metric:site_area_sqm]。
+截至成稿，三层范围与三重点区官方精确 polygon 未取得，投稿总体设计边界以公告文字四至与约面积拟合临时粗略边界（`provisional_constraint`、`official_boundary=false`），仅用于 AI 生成、可视化与提交自检，执行"四不得"：非官方红线、非审批依据、非精确面积依据、非正式评分依据，该缺口仅说明投稿可进入受理与结构审阅，不预断专业评分与接收决定[data:geometry/site_boundary.geojson#SITE-001]。临时边界在 EPSG:4548 下复算约 11,412,825 sqm，仅与公告约 11.4 km² 数量级校核，属拟合而非验证；官方边界发布后整体替换重算[metric:site_area_sqm]。
 
 #### 1.3.2 资格预审文件包获取机制与窗口关闭声明（"登记表→kjysanbu@163.com→回发密码"，2026-05-12 窗口已过期；不得声称已读文件包）
 
@@ -1337,7 +1337,7 @@ AI 场景开放运营机制与第 6 章场景卡组一一衔接，落到"**申�
 | A-DEPTH-2016-013 | 《建筑工程设计文件编制深度规定（2016 年版）》清权原文未取得 | data_gap | 建筑专业深度论证 | 取得官方文件后启用 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] |
 | A-AREA-RECALC-014 | known 面积类指标由临时几何按 EPSG:4548 复算，绝对值随边界替换变化 | pending_official_replacement | 全部面积类指标 | 官方边界补齐后同公式重算并更新哈希 |
 
-**表格分析**：T12-2 的 14 条假设构成完整的"不确定性地图"，结构意义大于清单意义。六类状态的分布说明缺口来源不同：pending_official_replacement 与 data_gap 类四条指向**组织方数据供给缺口**，按评审 rubric 此类缺口不阻断内容评分；pending_professional_confirmation 类五条指向**法定专业判断的权限边界**——智能体不替代注册规划师确认控规、权属、文保与市政条件；unresolved_official_discrepancy 类两条证明对官方口径冲突采取"并列而非调和"的策略；declared_boundary 类两条是主动设限的永久条款，不随数据补齐失效；pending_human_review 类一条（A-TRANSLATION-012）标记双语等义性待核。每条触发条件都可执行：要么"替换＋复算＋更新哈希"，要么"官方确认后启用"。
+**表格分析**：T12-2 的 14 条假设构成完整的"不确定性地图"，结构意义大于清单意义。六类状态的分布说明缺口来源不同：pending_official_replacement 与 data_gap 类四条指向**组织方数据供给缺口**，按评审流程此类缺口仅说明可进行投稿受理与结构审阅，不预断专业评分与接收决定；pending_professional_confirmation 类五条指向**法定专业判断的权限边界**——智能体不替代注册规划师确认控规、权属、文保与市政条件；unresolved_official_discrepancy 类两条证明对官方口径冲突采取"并列而非调和"的策略；declared_boundary 类两条是主动设限的永久条款，不随数据补齐失效；pending_human_review 类一条（A-TRANSLATION-012）标记双语等义性待核。每条触发条件都可执行：要么"替换＋复算＋更新哈希"，要么"官方确认后启用"。
 
 ### 12.6 公共利益、包容性与持续参与承诺
 
