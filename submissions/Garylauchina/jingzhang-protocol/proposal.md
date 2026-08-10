@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以 BUILD—TEST—LIVE—LEARN/UPDATE 城市生命周期与七类公共接口为骨架，把百年京张 AI 创新带设计为可验证、可申诉、可更新的人机共生城市协议；V0.4 已形成拓扑闭合的空间底稿、12 个场景节点、依赖式实施包和双语 A3/A0 图纸，仍使用临时边界。"
+summary: "以 BUILD—TEST—LIVE—LEARN/UPDATE 城市生命周期与七类公共接口为骨架，把百年京张 AI 创新带设计为可验证、可申诉、可更新的人机共生城市协议；V0.5 已完成拓扑闭合空间底稿、12 个场景节点、依赖式实施包、双语展示与本地正式包收口，仍使用临时边界。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **A Civic Protocol for Human–AI Coevolution**  
 **一座城市，如何学会与 AI 共存**
 
-## V0.4 核心命题
+## V0.5 核心命题
 
 本方案不把“AI 城市”理解为设备、屏幕和演示项目的叠加，而把百年京张 AI 创新带设想为一套可见、可测试、可申诉、可回滚、可持续修订的城市协议：AI 在这里被制造、进入真实社会前接受验证、在日常场景中创造公共价值，并把运行证据与失败经验带回规则更新。所有制度、空间与运营内容均为概念建议，仍需规划、工程、法律、伦理和公众参与等专业程序深化 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
@@ -28,7 +28,7 @@ V0.3 提出两项可供专业团队深化的城市公共基础设施：其一是
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的任务、范围、枚举、指标和来源清单为机器可读依据。所有判断均拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度；V0.4 已完成概念空间、证据结构、双语 HTML、A3 文册与 A0 展板，仍须补充官方控制条件、专业签核并在最终确认后刷新 manifest、移除 scaffold 状态。V0.4 图纸沿用未改写的 V0.3 几何与指标证据快照，因此内嵌的五组分析图保留 V0.3 标签。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的任务、范围、枚举、指标和来源清单为机器可读依据。所有判断均拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度；V0.5 已把概念空间、证据结构、双语 HTML、A3 文册、A0 展板、机器清单与自检收口为本地 review-ready 正式包。由于官方精确边界、控制条件与独立专业签核尚未取得，它仍是使用临时约束的开源概念成果，不是审批成果。V0.5 正式包沿用未改写的 V0.3 几何与指标证据快照和 V0.4 图纸版式，因此内嵌的五组分析图保留 V0.3 标签。
 
 方案不是独立愿景文本，而是从公告、面向智能体任务书和场地资料出发组织成果；本节只把最关键依据放在判断旁边 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。完整来源和标准覆盖分别保存在 `sources.json`、`standard_matrix.json` 与 `design_depth_matrix.json`，不在正文重复机器索引。
 
@@ -217,7 +217,7 @@ V0.3 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标�
 
 风险和缺资料清单由风险深度项、空的约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口均进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都降级为待确认事项；完整专业核对保存在标准矩阵中。
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。V0.4 已完成双语 A3/A0 与 HTML 展示，但仍是本机草稿：manifest 刷新、scaffold 移除及官方/专业资料仍待最终收口；未经用户最终确认不会推送或创建正式 PR。
+本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。V0.5 已完成本地 review-ready 正式包、双语清单映射与完整自检；官方/专业资料缺口继续作为深化前提，不被伪装成已知条件。本版本仅保存在本机，尚未推送或创建正式 PR。
 
 ## 参考资料
 

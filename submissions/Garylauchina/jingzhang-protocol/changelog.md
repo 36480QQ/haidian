@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-10
+
+- Fetched `upstream/main` at `2cbbe23` and confirmed that the official Skill, brief, schemas, source registry and validator inputs used by this package had not changed since the current branch base.
+- Replaced the remaining runtime-model placeholder and renamed the empty constraints layer to disclose pending official inputs without scaffold wording.
+- Updated the paired proposal and offline exhibit to distinguish the V0.5 local formal package from the unchanged V0.3 evidence snapshot and V0.4 drawing layout.
+- Finalized the bilingual manifest inventory and SHA-256 chain, removed the scaffold state, and promoted the package to `ready_for_review` with no known blockers.
+- Re-ran deterministic, spatial, visual, professional, semantic and bilingual-PDF checks; all participant-controlled gates pass, while provisional-boundary notices remain explicit.
+- Kept the work local. No remote push or formal PR has been created.
+
 ## v0.4 - 2026-08-10
 
 - Replaced the two zero-page drawing placeholders and added their required English counterparts.

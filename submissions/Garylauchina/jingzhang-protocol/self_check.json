@@ -206,11 +206,10 @@
     },
     {
       "check_id": "SCAFFOLD_REMOVED",
-      "result": "fail",
+      "result": "pass",
       "severity": "blocking",
       "target": "proposal.md; manifest.json",
-      "message": "The proposal or manifest still declares scaffold state.",
-      "suggested_fix": "Remove the scaffold marker only after final content replaces every placeholder, then run finalize_submission.py."
+      "message": "The scaffold marker is removed and package_state is no longer scaffold."
     },
     {
       "check_id": "MATRIX_REFERENCE_INTEGRITY",

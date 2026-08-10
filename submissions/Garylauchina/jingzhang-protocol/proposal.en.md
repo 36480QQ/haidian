@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle and seven-interface protocol for accountable human–AI coexistence; V0.4 adds a topology-closed spatial framework, twelve governed scenario nodes, evidence-gated implementation packages and bilingual A3/A0 drawings while retaining provisional geometry."
+summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle and seven-interface protocol for accountable human–AI coexistence; V0.5 completes the topology-closed framework, twelve governed scenario nodes, evidence-gated packages, bilingual presentation and local formal-package closeout while retaining provisional geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 **A Civic Protocol for Human–AI Coevolution**  
 **How a city learns to live with AI**
 
-## V0.4 Core Proposition
+## V0.5 Core Proposition
 
 The proposal treats an AI city as more than a collection of devices, screens and demonstrations. It imagines the Centennial Jing-Zhang AI Innovation Belt as a visible, testable, contestable, reversible and continuously updated civic protocol: AI is built here, evaluated before entering society, used in ordinary life to create public value, and revised through evidence from operation and failure. Every institutional, spatial and operational move remains a conceptual recommendation for further planning, engineering, legal, ethical and public review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -28,17 +28,17 @@ Two civic infrastructures organize the loop. The **AI City API / Jing-Zhang AI C
 
 ## Design Basis and Source List
 
-The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]. V0.4 has reproducible concept geometry, an evidence structure, bilingual HTML, an A3 booklet and A0 boards; official controls, professional sign-off, final manifest refresh and scaffold removal remain open. The V0.4 drawings use the unchanged V0.3 geometry-and-metric evidence snapshot, so the five embedded analytical-figure pairs retain their V0.3 labels.
+The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]. V0.5 closes the concept geometry, evidence structure, bilingual HTML, A3 booklet, A0 boards, machine inventory and self-check as a local review-ready formal package. Because exact official boundaries, controls and independent professional sign-off are unavailable, it remains an open-source concept using provisional constraints, not an approval deliverable. The V0.5 package retains the unchanged V0.3 geometry-and-metric evidence snapshot and V0.4 drawing layout, so the five embedded analytical-figure pairs retain their V0.3 labels.
 
 Exact official polygons, regulatory controls, road redlines, ownership/cadastral data, existing-building surveys, heritage controls, utilities and facility baselines remain pending official or rights-cleared data. SITE-001 and the three KEY_AREA polygons are explicitly provisional and must trigger whole-package regeneration when official geometry arrives [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. Complete evidence remains in `sources.json`, `metrics.json`, the GeoJSON layers and the three matrices.
 
-![Evidence chain and package relationship](assets/figures/site-overview.png)
+![Evidence chain and package relationship](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
 The Coordinated Research Area uses the official approximate **43.6 km²** figure but currently has no submitted polygon. The Overall Design Area uses the official approximate **11.4 km²** figure and provisional SITE-001, calculated at about 11.413 km² in EPSG:4548. The Key-Area Detailed Design Area uses the official approximate **368.4 ha** total and three rough provisional polygons [metric:announced_coordinated_research_area_sqm] [metric:announced_overall_design_area_sqm] [metric:announced_key_detailed_design_area_sqm]. These three levels cannot substitute for one another [depth:three_level_scope_framework].
 
-![Three-level scope and operating framework](assets/figures/land-use-structure.png)
+![Three-level scope and operating framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -75,7 +75,7 @@ Against the provisional denominator, design green space is about **2.563 million
 
 The two wings connect services, capital, professional support, scenario access and public experience. Exact locations and physical interventions remain pending official polygons, ownership, transport, heritage and engineering evidence [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-![Key-area index and lifecycle roles](assets/figures/key-areas.png)
+![Key-area index and lifecycle roles](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -106,7 +106,7 @@ The twelve land-use faces are a complete conceptual function partition, not exis
 
 The concept prioritizes station integration, walking/cycling continuity, accessibility, low-intrusion sensing, public-service fallback and the relationship between new and conventional infrastructure [data:geometry/roads.geojson#ROAD-SPINE-001] [data:geometry/public_space.geojson#SCENARIO-S06] [depth:traffic_rail_slow_parking]. `geometry/constraints.geojson` is intentionally empty because no verified, rights-cleared rail alignment, river/flood condition, road redline, station exit, ownership, utility/fire, heritage or tree dataset is available [data:geometry/constraints.geojson]. Station-city and river-interface language therefore remains a relationship to verify, not a confirmed alignment.
 
-![Mobility and blue-green public-space system](assets/figures/mobility-bluegreen.png)
+![Mobility and blue-green public-space system](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -124,11 +124,11 @@ V0.3 separates official approximate scope figures, reproducible design geometry 
 
 The evidence chain is `source → judgment → geometry/metric → figure/drawing → matrix → self-check`. Regulatory total floor area, FAR, building density, height, setbacks, road area and road ratio remain explicitly unknown until official controls, surveys and rights-cleared professional data are available [metric:total_floor_area_sqm] [metric:floor_area_ratio] [metric:setback_m].
 
-![Metrics and evidence chain](assets/figures/metrics-evidence.png)
+![Metrics and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
-This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.4 has completed bilingual A3/A0 and HTML presentation assets but remains a local draft: manifest refresh, scaffold removal and official/professional inputs remain open, and no push or formal PR will occur without final user confirmation [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson].
+This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.5 completes the local review-ready formal package, bilingual inventory mapping and full self-check; missing official and professional inputs remain declared deepening prerequisites rather than invented facts. This version remains local and has not been pushed or opened as a formal PR [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson].
 
 ## References
 
