@@ -89,9 +89,90 @@ footer{text-align:center;color:var(--mut);font-size:12px;padding:20px 0}
 </section>
 
 <section>
-  <h2>核心指标（EPSG:4548 复算）</h2>
+  <h2>命名体系与 Logo 方向（agent.1）</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+    <div style="text-align:center">
+      <svg viewBox="0 0 460 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:460px;height:auto">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- circular track -->
+    <circle cx="230" cy="90" r="72" fill="none" stroke="#2e6f4e" stroke-width="10" opacity="0.35"/>
+    <circle cx="230" cy="90" r="52" fill="none" stroke="#b23b2e" stroke-width="6"/>
+    <!-- train head silhouette (front-facing) -->
+    <path d="M205 60 L255 60 L268 78 L268 118 L192 118 L192 78 Z" fill="#1a252f"/>
+    <path d="M198 118 L192 138 L268 138 L262 118 Z" fill="#b23b2e"/>
+    <circle cx="212" cy="100" r="10" fill="#f5f5f5"/>
+    <circle cx="248" cy="100" r="10" fill="#f5f5f5"/>
+    <!-- data-stream tail -->
+    <path d="M192 78 C170 62 150 70 138 84" fill="none" stroke="#7d3c98" stroke-width="6"/>
+    <circle cx="132" cy="92" r="5" fill="#7d3c98"/>
+    <circle cx="118" cy="100" r="4" fill="#7d3c98"/>
+    <circle cx="106" cy="108" r="3" fill="#7d3c98"/>
+  </g>
+  <text x="230" y="158" text-anchor="middle" font-size="22" font-weight="800" fill="#1a252f">京张·首班车</text>
+  <text x="230" y="176" text-anchor="middle" font-size="13" fill="#5d6d7e" letter-spacing="2">JZ FIRST TRAIN</text>
+</svg>
+      <p style="font-size:12px;color:#566573">Logo方向：车头剪影＋环形轨道＋数据流光带（概念草图，非最终定稿，需专业设计深化与清权）</p>
+    </div>
+    <div>
+      <p style="font-size:13px;color:#34495e"><b>命名体系</b>：主名「京张·首班车 / JZ First Train」；站点采用铁路语汇——始发站、发车台、换乘站、机务段、调度信号所；节点——发车台广场、时刻表广场、信号所广场、开源成果展示廊、智能体贡献荣誉墙；路径——开发者荣誉漫步道、开源之路。</p>
+      <p style="font-size:13px;color:#34495e;margin-top:8px"><b>色彩体系</b>：京张铁锈红（历史）+ 遗址公园墨绿（遗产）+ AI 流光紫（智能）三色；中英双语字标，可延展为导视、网页与活动视觉。</p>
+      <p style="font-size:12px;color:#c0392b;margin-top:8px">Logo 与命名均为概念方向，未授权使用任何商标、字体、图像；定稿需专业团队深化并完成版权清权。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>三区两翼协同回路与全球 AI 生态案例（agent.2）</h2>
+  <p style="font-size:13px;color:#34495e;margin-bottom:10px">三区两翼通过「要素交换接口」形成协同回路：中关村科技服务翼提供资本、IP、算力与人才要素，小月河场景赋能翼提供场景与宜居活力，三站承接要素转化为创新生态、品牌与体验。</p>
+  <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <rect x="20" y="20" width="660" height="300" rx="12" fill="#fbfcfe" stroke="#bdc3c7"/>
+  <!-- line (track) -->
+  <line x1="350" y1="30" x2="350" y2="310" stroke="#2e6f4e" stroke-width="12" opacity="0.3"/>
+  <text x="360" y="45" font-size="13" fill="#2e6f4e" font-weight="700">一线·公园轨道（遗址公园活力带）</text>
+  <!-- three stations -->
+  <g font-size="12">
+    <rect x="80" y="40" width="220" height="66" rx="8" fill="#aed6f1" opacity="0.85"/>
+    <text x="190" y="62" text-anchor="middle" font-weight="700" fill="#1a252f">① 众智园·始发站</text>
+    <text x="190" y="80" text-anchor="middle" fill="#2c3e50">AI全栈自主创新 · 机务段 · 中试验证</text>
+    <text x="190" y="96" text-anchor="middle" fill="#566573">研发→中试→产业化「出车」</text>
+    <rect x="80" y="150" width="220" height="66" rx="8" fill="#f9e79f" opacity="0.9"/>
+    <text x="190" y="172" text-anchor="middle" font-weight="700" fill="#1a252f">② AI原点·发车台</text>
+    <text x="190" y="190" text-anchor="middle" fill="#2c3e50">世界级AI创新生态 · 清华园站纪念</text>
+    <text x="190" y="206" text-anchor="middle" fill="#566573">发车纪念碑 · 开发者社区</text>
+    <rect x="80" y="260" width="220" height="66" rx="8" fill="#f5b7b1" opacity="0.9"/>
+    <text x="190" y="282" text-anchor="middle" font-weight="700" fill="#1a252f">③ 大钟寺·换乘站</text>
+    <text x="190" y="300" text-anchor="middle" fill="#2c3e50">智能原生新业态 · 时刻表广场</text>
+    <text x="190" y="316" text-anchor="middle" fill="#566573">站城一体南部门户</text>
+    <!-- two wings -->
+    <rect x="420" y="80" width="240" height="66" rx="8" fill="#d7bde2" opacity="0.85"/>
+    <text x="540" y="102" text-anchor="middle" font-weight="700" fill="#1a252f">中关村科技服务翼 · 调度信号所</text>
+    <text x="540" y="122" text-anchor="middle" fill="#2c3e50">要素全球化 · 资本 · IP · 算力</text>
+    <text x="540" y="138" text-anchor="middle" fill="#566573">要素交换接口</text>
+    <rect x="420" y="210" width="240" height="66" rx="8" fill="#a9dfbf" opacity="0.9"/>
+    <text x="540" y="232" text-anchor="middle" font-weight="700" fill="#1a252f">小月河场景赋能翼 · 沿线风景线</text>
+    <text x="540" y="252" text-anchor="middle" fill="#2c3e50">场景赋能 · 宜居活力 · 蓝绿生态</text>
+    <text x="540" y="268" text-anchor="middle" fill="#566573">场景-空间-运营映射</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="#7f8c8d" stroke-width="2" marker-end="url(#a)">
+    <line x1="300" y1="73" x2="415" y2="100"/>
+    <line x1="300" y1="183" x2="415" y2="183"/>
+    <line x1="300" y1="293" x2="415" y2="243"/>
+  </g>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7f8c8d"/></marker></defs>
+  <text x="350" y="330" text-anchor="middle" font-size="11" fill="#7f8c8d">三区两翼协同回路 · 概念示意（非官方红线）</text>
+</svg>
+  <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:12px">
+    <tr style="background:#eaf2fb"><th style="padding:6px;text-align:left">案例</th><th style="padding:6px;text-align:left">地区</th><th style="padding:6px;text-align:left">创新模式</th><th style="padding:6px;text-align:left">海淀可转化机制</th></tr>
+    <tr><td>伦敦国王十字</td><td>英国伦敦</td><td>铁路遗产更新为科创社区</td><td>站城一体+公共空间活化（最可类比）</td></tr><tr><td>硅谷</td><td>美国加州</td><td>研究—孵化—资本完整链路</td><td>斯坦福研究园+风投网络</td></tr><tr><td>深圳南山</td><td>中国深圳</td><td>AI产业化与场景开放</td><td>硬件生态+场景落地</td></tr><tr><td>杭州未来科技城</td><td>中国杭州</td><td>平台型创新生态与人才引力</td><td>平台企业+人才政策</td></tr><tr><td>新加坡榜鹅</td><td>新加坡</td><td>AI+城市生活场景</td><td>数字园区+公共服务</td></tr><tr><td>合肥</td><td>中国合肥</td><td>科教资源向原创策源转化</td><td>科学装置+成果转化</td></tr><tr><td>波士顿肯德尔广场</td><td>美国波士顿</td><td>科研密集区向AI集聚区转型</td><td>MIT+生命科学/AI集群</td></tr><tr><td>大田大德研发特区</td><td>韩国大田</td><td>研发特区与人才聚集</td><td>国家级研发特区</td></tr>
+  </table>
+  <p style="font-size:11px;color:#7f8c8d;margin-top:8px">案例均为公开资料背景参考（background only），非正式证据；逐案例一手来源待补充。</p>
+</section>
+
+<section>
+  <h2>核心指标（EPSG:4548 复算 · 概念估算）</h2>
   <div class="grid"><div class="tile"><div class="tile-val" data-metric="site_area_sqm" data-value="11412825.386">11.41</div><div class="tile-unit">km²</div><div class="tile-label">总体设计范围</div></div><div class="tile"><div class="tile-val" data-metric="green_ratio" data-value="0.208">20.8</div><div class="tile-unit">%</div><div class="tile-label">绿地率</div></div><div class="tile"><div class="tile-val" data-metric="public_space_ratio" data-value="0.016">1.6</div><div class="tile-unit">%</div><div class="tile-label">公共空间率</div></div><div class="tile"><div class="tile-val" data-metric="floor_area_ratio_estimated" data-value="1.65">1.65</div><div class="tile-unit">—</div><div class="tile-label">估算容积率</div></div><div class="tile"><div class="tile-val" data-metric="building_density" data-value="0.151">15.1</div><div class="tile-unit">%</div><div class="tile-label">建筑密度</div></div><div class="tile"><div class="tile-val" data-metric="road_length_m" data-value="36952.578">37.0</div><div class="tile-unit">km</div><div class="tile-label">道路里程</div></div><div class="tile"><div class="tile-val" data-metric="key_area_count" data-value="3.0">3.0</div><div class="tile-unit">处</div><div class="tile-label">重点区域</div></div><div class="tile"><div class="tile-val" data-metric="total_floor_area_sqm_estimated" data-value="18827157.898">18.8</div><div class="tile-unit">万m²</div><div class="tile-label">估算总建面</div></div></div>
-  <p style="font-size:12px;color:var(--mut);margin-top:10px">容积率与建筑密度为设计估算（概念建议），法定控规指标待官方条件确认；临时边界下复算结果与公告面积一致。</p>
+  <p style="font-size:12px;color:#c0392b;margin-top:10px">⚠ 以上数字均为<strong>临时边界下的概念估算</strong>，非官方红线、非法定指标；官方几何与控规条件到位后须整体重算。容积率/建筑密度为设计估算。</p>
 </section>
 
 <section>
@@ -112,8 +193,27 @@ footer{text-align:center;color:var(--mut);font-size:12px;padding:20px 0}
 <section>
   <h2>AI 场景卡（10 张）与用户画像（5 类）</h2>
   <div class="scn-grid"><div class="scn"><div class="scn-id">S1</div><div class="scn-name">轨道智行</div><div class="scn-desc">AI交通接驳·无障碍·慢行信号</div><div class="scn-where">📍 公园轨道/站区</div></div><div class="scn"><div class="scn-id">S2</div><div class="scn-name">首班车文化导览</div><div class="scn-desc">百年铁路+中关村+AI导览</div><div class="scn-where">📍 遗址公园轨道</div></div><div class="scn"><div class="scn-id">S3</div><div class="scn-name">健康随行</div><div class="scn-desc">AI健康服务导航与预约</div><div class="scn-where">📍 站区/社区</div></div><div class="scn"><div class="scn-id">S4</div><div class="scn-name">企业服务Copilot</div><div class="scn-desc">政务与专业服务智能助手</div><div class="scn-where">📍 中关村服务翼</div></div><div class="scn"><div class="scn-id">S5</div><div class="scn-name">公共安全运营复核</div><div class="scn-desc">AI辅助+人工复核(测试)</div><div class="scn-where">📍 受控空间</div></div><div class="scn"><div class="scn-id">S6</div><div class="scn-name">低速无人配送</div><div class="scn-desc">机器人物流测试(测试)</div><div class="scn-where">📍 站区/园区</div></div><div class="scn"><div class="scn-id">S7</div><div class="scn-name">AI+教育</div><div class="scn-desc">高校实训·开源教学(测试)</div><div class="scn-where">📍 教育带</div></div><div class="scn"><div class="scn-id">S8</div><div class="scn-name">AI+法律</div><div class="scn-desc">中关村法治服务·规则测试</div><div class="scn-where">📍 中关村服务翼</div></div><div class="scn"><div class="scn-id">S9</div><div class="scn-name">智能建筑能源</div><div class="scn-desc">分布式能源·端侧算力</div><div class="scn-where">📍 站区/社区</div></div><div class="scn"><div class="scn-id">S10</div><div class="scn-name">开发者共创实验室</div><div class="scn-desc">场景开放·数据沙箱·共创</div><div class="scn-where">📍 AI原点社区</div></div></div>
-  <h2 style="margin-top:18px">用户画像</h2>
+  <h2 style="margin-top:18px">用户画像（5 类）</h2>
   <div><span class="chip">青年开发者与创业者</span><span class="chip">AI企业高管与投资人</span><span class="chip">高校师生（北航/北邮）</span><span class="chip">原住民与通勤者</span><span class="chip">全球AI访客与朝圣者</span></div>
+  <table style="width:100%;border-collapse:collapse;margin-top:10px;font-size:12px">
+    <tr style="background:#eaf2fb"><th style="padding:6px;text-align:left">画像</th><th style="padding:6px;text-align:left">核心需求</th><th style="padding:6px;text-align:left">关联场景</th><th style="padding:6px;text-align:left">主要空间落点</th></tr>
+    <tr><td>青年开发者与创业者</td><td>共创实验室、开源社区、低成本空间</td><td>S1 S2 S10</td><td>AI原点社区/众智园</td></tr><tr><td>AI企业高管与投资人</td><td>展示、路演、洽谈、资本服务</td><td>S4 S8</td><td>中关村服务翼</td></tr><tr><td>高校师生（北航/北邮）</td><td>科研协作、实训、成果转化</td><td>S2 S7</td><td>教育带</td></tr><tr><td>原住民与通勤者</td><td>慢行、配套、日常AI服务</td><td>S1 S3 S9</td><td>沿线社区</td></tr><tr><td>全球AI访客与朝圣者</td><td>导览、体验、荣誉展示</td><td>S2 S5</td><td>三站/轨道</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>AI 公共空间组件库与年度活动体系（agent.4 / agent.6）</h2>
+  <p style="font-size:13px;color:#34495e;margin-bottom:8px">六类公共空间组件库可复制组合，支撑三站与轨道沿线的公共空间与荣誉展示体系：</p>
+  <table style="width:100%;border-collapse:collapse;font-size:12px">
+    <tr style="background:#eaf2fb"><th style="padding:6px;text-align:left">组件</th><th style="padding:6px;text-align:left">类型</th><th style="padding:6px;text-align:left">用途</th><th style="padding:6px;text-align:left">布局</th></tr>
+    <tr><td>站前广场</td><td><span class="chip">station-plaza</span></td><td>三站入口集会与展示空间</td><td>每站1处</td></tr><tr><td>展示廊</td><td><span class="chip">gallery</span></td><td>开源成果/创新成果展示</td><td>轨道沿线</td></tr><tr><td>荣誉墙</td><td><span class="chip">honor-wall</span></td><td>智能体贡献/开发者荣誉展示</td><td>发车台/轨道</td></tr><tr><td>漫步道</td><td><span class="chip">walkway</span></td><td>慢行脊柱与体验路径</td><td>轨道全线</td></tr><tr><td>生态核</td><td><span class="chip">eco-core</span></td><td>站区生态绿心</td><td>每站1处</td></tr><tr><td>口袋公园</td><td><span class="chip">pocket-park</span></td><td>社区级绿地与停留</td><td>沿线社区</td></tr>
+  </table>
+  <p style="font-size:13px;color:#34495e;margin:12px 0 8px">全球 AI 活动体系（概念建议，不构成已确定安排）：</p>
+  <table style="width:100%;border-collapse:collapse;font-size:12px">
+    <tr style="background:#eaf2fb"><th style="padding:6px;text-align:left">活动</th><th style="padding:6px;text-align:left">频次</th><th style="padding:6px;text-align:left">内容</th></tr>
+    <tr><td>年度·首班车日</td><td>10月2日</td><td>京张全线通车纪念日，全球AI开发者嘉年华、朝圣仪式、开源成果展</td></tr><tr><td>季度·时刻表发布</td><td>每季度</td><td>场景开放日、测试验证周、开发者共创主题发布</td></tr><tr><td>月度·开发者社区</td><td>每月</td><td>共创实验室开放、贡献荣誉更新、开源协作</td></tr><tr><td>持续·荣誉展示</td><td>全年</td><td>智能体贡献荣誉墙、开源成果展示廊、碑刻延续机制</td></tr>
+  </table>
+  <p style="font-size:11px;color:#7f8c8d;margin-top:8px">活动与运营均为概念方向；责任主体、成本等级、KPI 与退出机制待专业运营团队深化。</p>
 </section>
 
 <section>
