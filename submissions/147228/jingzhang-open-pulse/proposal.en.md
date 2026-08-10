@@ -7,12 +7,12 @@ summary: "With Jing-Zhang Heritage Park as the public base and three key areas a
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.9"
+iteration: "v4.0"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **Package version note:** This package is iteration v3.9; v3.3 names the retained spatial-object and drawing-export layer. v3.9 brings the human-first buffer, minimum city-API fields, compute–energy gates and versioned governance to the three nodes with bilingual figures and structured contracts; it changes no spatial objects, metrics, source classifications or implementation boundary.
+> **Package version note:** This package is iteration v4.0; v3.3 names the retained spatial-object and drawing-export layer. v4.0 keeps v3.9's human-first buffer, minimum city-API fields, compute–energy gates and versioned governance, and adds an eight-position public-interest trade-off register that places stance, affected groups, release evidence and exit boundaries on one review surface; it changes no spatial objects, area metrics, source classifications or implementation boundary.
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
@@ -208,6 +208,12 @@ The cultural narrative uses engineering proof, open collaboration and public rec
 `visual/assets/key-area-node-plans.json` makes the three key areas reviewable as sequences rather than slogans: arrival → status board → component → bounded operation → return to ordinary public use. Each node has components, an acceptance test and a professional gate for official parcels, ownership, roads, fire, ecology, heritage, drainage and municipal systems. It is a provisional concept for professional refinement, not an official parcel or construction drawing.
 
 `visual/assets/public-interest-audit.json` deliberately leaves the baseline unknown until a survey is run. Older residents, disabled people, carers, night workers, children and guardians, visitors, small businesses and maintenance crews are named as participants. The audit tests step-free continuity, service without an app, complaint response, group differences and night light/noise. Participation has paper, staffed and multilingual channels; conflict resolution pauses the scenario, shows the disputed evidence, offers a non-AI equivalent and publishes remedy or withdrawal.
+
+![Eight public-interest positions: people before showcase efficiency](assets/figures/public-interest-positions.en.png)
+
+This proposal does not present “public interest” as a conflict-free slogan. It states eight positions that cannot be quietly traded away: ordinary return, skill continuity, explainable service, cool and quiet routes, reciprocal participation, maintainable assets, group differences and reversible scale-up come before showcase efficiency, automation gains, night-time footfall, one-off devices and permanent commitments.[data:visual/assets/public-interest-position-register.json#PI-P01] Each position binds a spatial anchor, scenarios, operations, release evidence, a non-AI equivalent and an exit condition. This is the author's design stance, not a resident survey, field result or professional approval.
+
+The eight positions cover the 14 scenarios, 8 operations packages and 10 public-interest groups in the current package, while the baseline remains `unknown` and the operating state remains `not_authorized_not_run`. `node visual/assets/run-open-pulse-public-interest-positions.js` deterministically checks the eight positions, 14 scenario links, 8 operation links, affected-group coverage and evidence-file existence. PASS proves a complete register, not social consensus or a deployment permit.[data:visual/assets/public-interest-positions-audit.json#status]
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 

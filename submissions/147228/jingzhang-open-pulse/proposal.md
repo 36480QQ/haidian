@@ -7,12 +7,12 @@ summary: "以京张遗址公园为公共底板、三处重点区为创新节点�
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v3.9"
+iteration: "v4.0"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-> **包版本说明：** 本包迭代为 v3.9；v3.3 仅指本包沿用的空间对象与图纸导出层。v3.9 把人本缓冲、城市 API 最小字段、算电协同闸门与版本化治理接到三处重点区，并以双语图件和结构化合同回读；不改变空间对象、指标、来源等级或实施边界。
+> **包版本说明：** 本包迭代为 v4.0；v3.3 仅指本包沿用的空间对象与图纸导出层。v4.0 在 v3.9 的人本缓冲、城市 API 最小字段、算电协同和版本化治理之外，新增八项公开取舍登记，把作者立场、受影响群体、放行证据和退出边界放到同一张可复核图上；不改变空间对象、面积指标、来源等级或实施边界。
 
 # 京张开源脉冲：一条可验证的 AI 创新公共带
 
@@ -659,6 +659,12 @@ v1.7 的机器可读资产保留不变；v1.8 把最影响内容评分的证据�
 | 隐私与清权 | 仅最小数据、无个体轨迹 | 来源、授权、留存、哈希逐项核验 | 授权撤回/越权访问即熔断 |
 
 参与原则是公开问题—给时间和渠道—返回决定及理由—记录异议—补救或退出。`public-interest-audit.json` 把这些要求变成可复核的指标和方法；它不把“待测”写成“已达标”。
+
+![八项公开取舍：公共利益先于展示效率](assets/figures/public-interest-positions.png)
+
+本方案不把“公共利益”写成无冲突的口号，而是明确八项不可偷偷调换的取舍：普通回家路径、技能连续、可解释服务、清凉安静、互惠参与、可维护资产、分组差异和可撤回扩散优先于展示效率、自动化增量、夜间流量、一次性装置和永久承诺。[data:visual/assets/public-interest-position-register.json#PI-P01] 每一项都绑定空间锚点、场景、运维包、放行证据、非 AI 等价服务和退出条件；这表达作者的设计立场，不是居民调查、现场效果或专业批准。
+
+八项取舍覆盖当前 14 条场景、8 个运维行动包和 10 类公共使用者，但基线仍保持 `unknown`，运行状态仍为 `not_authorized_not_run`。`node visual/assets/run-open-pulse-public-interest-positions.js` 对 8 个取舍、14 个场景链接、8 个运维链接、受影响群体覆盖和证据文件存在性做确定性回读；PASS 只证明登记关系完整，不把概念取舍升级成社会共识或部署许可。[data:visual/assets/public-interest-positions-audit.json#status]
 
 ### 6. 迁移机制和长期运营
 

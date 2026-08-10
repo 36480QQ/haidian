@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v4.0 - 2026-08-10
+
+- 新增 `public-interest-position-register.json`，将普通公共服务、技能连续、可解释 API、清凉安静、互惠参与、可维护资产、分组差异和可撤回扩散登记为八项明确作者立场；每项绑定受影响群体、空间锚点、场景、运维包、放行证据、普通等价服务和退出条件。
+- 新增 `run-open-pulse-public-interest-positions.js` 与 `public-interest-positions-audit.json`，确定性回读 8 项取舍、14 个场景链接、8 个运维链接、10 类群体覆盖及证据文件存在性；保持 `baseline=unknown` 与 `not_authorized_not_run`，不把登记升级为调查结果、社会共识、现场绩效或部署许可。
+- 新增中英文 `public-interest-positions` 评审图，并将图、结构化登记和 runner 链入双语 proposal 与离线 visual index；不改变 GeoJSON、面积指标、来源分类、官方边界或实施承诺。
+
 ## v3.9 - 2026-08-10
 
 - 把人本缓冲、城市 API 最小字段、算电协同与版本化治理前置为三处重点区的可审阅空间合同；补齐原住民/老人、被替代风险劳动者、数字包容和夜间工作者的普通服务与回退路径。
