@@ -1491,10 +1491,13 @@ node visual/assets/verify.js
 
 ### 图纸索引与阅读方式
 
-本方案共十二张图纸，其中 FIG.00–FIG.11 连续编号；均由参数与提交的结构化数据直接绘制，非示意性配图：
+<!-- FIGINDEX:BEGIN -->
+
+本方案共十二张图纸，FIG.00–FIG.11 连续编号；均由参数与提交的结构化数据直接绘制，非示意性配图：
 
 | 图号 | 内容 | 该图要读什么 |
 |---|---|---|
+| FIG.00 | 京张水准线：出发、抬升、回落，却没有落回基准 | 全案压缩成一条线：那道红色高差就是闭合差，也是本方案唯一要求被信任的东西 |
 | FIG.01 | 总体概念与场地复核 | **那条红线**——推定边界与实测公园相距 412.5 m；主轴、核心节点、七类用地剖分与 official/provisional 状态同图呈现 |
 | FIG.02 | 证据链与提交包：一条尚未闭合的水准回路 | 回路左侧的红色缺口即闭合差；下方三张读数卡是对本次征集自身的实测 |
 | FIG.03 | 三层范围与水准网层级 | 三层嵌套关系，以及右栏「本方案刻意不给出的数值」 |
@@ -1504,6 +1507,10 @@ node visual/assets/verify.js
 | FIG.07 | 视觉识别：标志、构造与应用 | 标志本身画的是方法：基准线出发、抬升、回落，而没有落回基准 |
 | FIG.08 | AI创新生态图谱与要素机制 | 要素的保管链；「资金」一栏刻意留空的红框；六案例共同指向的空缺 |
 | FIG.09 | 地标、组件库、导视编号与运营周期 | 五类标准件的实际形态；编号语法；以复测周期而非节庆组织的日历 |
+| FIG.10 | 街道上的水准点与路缘分配 | 三等水准点画到人眼高度：标石与地面齐平、读数牌上是当期 `f ≤ F`、申诉入口给出扫码与电话两条路径；站着的四位是取读数的人，不是配景。下半幅的路缘剖面**只画顺序不画宽度** |
+| FIG.11 | 区域协同接口 | 每一行除了「交换什么」，还写明**「明确不交换什么」**与「接口开启的前置」；协同的产出是一个数（跨网闭合差），不是一份意向 |
+
+<!-- FIGINDEX:END -->
 
 ![慢行、蓝绿与附合路线图](assets/figures/mobility-bluegreen.png)
 
@@ -1513,13 +1520,19 @@ node visual/assets/verify.js
 
 供评审逐项核对，每项都可在不联系作者的情况下独立完成：
 
+<!-- CHECKLIST:BEGIN -->
+
 1. `node visual/assets/verify.js` —— 独立重算全部第一类指标，并断言十余条结构性结论（用地剖分按点归属逐点验证、每条受控边界均被正文引用、每个 `[data:]` 锚点均可解析），退出码即结论；
 2. `node visual/assets/check_osm.js` —— 从随包的 OSM 原始坐标重算 412.5 m 闭合差等全部场地复核数值，无依赖、不联网，算不出时拒绝而非猜测；
 3. `node visual/assets/check_cards.js` —— 逐张场景卡把水准点、空间锚点、退出量与执行角色解析到实际对象；`--selftest` 用八份人为改坏的卡片证明这些检查会拒绝；
 4. `node visual/assets/check_closure.js` 与 `run_s08_tabletop.js` —— 闭合差机制的数据契约与十例桌面演练；
 5. `visual/assets/census.json` / `field_map.json` —— 全场普查原始数据与统计结果；
 6. `geometry/*.geojson` —— 九个图层，每个要素带 `source_type`、`geometry_role`、`official_boundary` 属性；
-7. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
-8. `changelog.md` —— 含本方案自查发现并修正的错误记录；
-9. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
-10. A3/A0 PDF —— 字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在。
+7. `visual/assets/osm_reference.json` —— 场地复核的原始读数及其明确声明的限度；
+8. `visual/assets/accessibility_qa.json` 与 `parity_qa.json` —— 实算对比度、A0 最小字高、HTML 结构检查与双语逐节内容对等；
+9. `risk.json` —— 八维风险自评，含缓解措施与人工复核要求；
+10. `changelog.md` —— **含本方案自查发现并修正的错误记录**；
+11. `agent.json` —— 生成方法完整披露，`model` 字段非占位符；
+12. A3 与 A0 PDF —— 420×297 mm 与 841×1189 mm，字体已子集嵌入，可用 `pypdf` 核验 `DescendantFonts` 下 `FontFile3` 存在。
+
+<!-- CHECKLIST:END -->
