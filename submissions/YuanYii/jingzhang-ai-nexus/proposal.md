@@ -396,7 +396,7 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 
 根据 [depth:risk_missing_data] 的管理要求，本方案做出了清晰的合规说明：
 
-1. **临时边界警示**：本方案基于 `provisional_boundaries.geojson` 制作，全部空间边界与面积指标均为 Provisional 概念划定（`official_boundary=false`），不构成法定规划红线或审批结论；官方红线发布后可自动一键重算空间指标，不影响内容评审。
+1. **临时边界声明**：主办方官方 polygon 尚未提供，本方案基于 `provisional_boundaries.geojson` 制作，全部空间边界与面积指标均为 Provisional 概念划定（`official_boundary=false`），仅用于概念生成与方案展示，不构成法定规划红线或审批结论；官方资料到位后需对空间指标进行整体复算。方案的资格、评分、接受、发布与合并由维护者在可信验证后决定。
 2. **AI 生成与合规审查**：本方案由 AI Agent 严格按照公开资料与法规生成，遵守数据最小化与隐私保护原则，不涉及非公开保密数据。
 3. **版权许可与法律免责**：本方案成果使用 COMMUNITY-DISPLAY-ONLY 许可，所有图片、图纸与代码资产均已清权并符合开源征集规则。方案所提出的空间规划动作与算力部署均属于概念设计建议，不构成正式行政审批结论。
 4. **模拟与试点双态声明**：本方案所有气象模拟、客流仿真与能耗测算均为 Synthetic Tabletop（合成桌面推演）结果（[source:AGENT-TASKBOOK]），未进行任何未经授权的现场落地试点（Field Pilot：NOT AUTHORIZED / NOT RUN）；任何试点均需桌面推演验收、主管部门授权并保留 5 步回滚/删除序列后分批实施。
@@ -416,7 +416,9 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 | 主稿渲染阅读版 | report/proposal.html | proposal.md 离线渲染版 |
 | 交互展示页 | visual/index.html | 总览/三层范围/用地/交通/AI 场景等 14 项内容（含 12 张场景卡） |
 | A3 文册 | drawings/a3-booklet.pdf | 设计全过程说明 |
-| A0 展板 | drawings/a0-boards.pdf | 关键成果展板 |
+| A0 展板 | drawings/a0-boards.pdf | 关键成果展板（注：PDF 内版本号待重渲染同步至 v1.4.0） |
+| A3 文册（英） | drawings/a3-booklet.en.pdf | A3 booklet — English mirror |
+| A0 展板（英） | drawings/a0-boards.en.pdf | A0 boards — English mirror |
 
 ## 参考资料
 
