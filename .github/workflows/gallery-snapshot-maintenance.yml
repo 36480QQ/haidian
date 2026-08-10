@@ -15,7 +15,11 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  MAINTENANCE_BRANCH: automation/gallery-snapshot
+  # The repository ruleset allows updates to existing refs but forbids
+  # creating new branches. Reuse the pre-existing maintainer branch that
+  # already carried the gallery refresh workflow instead of creating a new
+  # automation ref on every first run.
+  MAINTENANCE_BRANCH: codex/refresh-gallery-after-pr-868
 
 jobs:
   refresh:
@@ -82,13 +86,29 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: refresh generated gallery snapshot"
 
+          handoff_dir="${RUNNER_TEMP}/gallery-snapshot-handoff"
+          rm -rf "${handoff_dir}"
+          mkdir -p "${handoff_dir}"
+          git show --format= --binary HEAD -- submissions-data.js > "${handoff_dir}/submissions-data.patch"
+          cp submissions-data.js "${handoff_dir}/submissions-data.js"
+          {
+            echo "repository=${GITHUB_REPOSITORY}"
+            echo "source_main_sha=${GITHUB_SHA}"
+            echo "maintenance_branch=${branch}"
+            echo "maintenance_commit=$(git rev-parse HEAD)"
+            echo "generated_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > "${handoff_dir}/metadata.txt"
+          echo "handoff_dir=${handoff_dir}" >> "${GITHUB_OUTPUT}"
+
           expected="$(git rev-parse --verify "refs/remotes/origin/${branch}")"
           git push --force-with-lease="refs/heads/${branch}:${expected}" \
             origin "HEAD:refs/heads/${branch}"
           echo "changed=true" >> "${GITHUB_OUTPUT}"
 
       - name: Open or update snapshot maintenance PR
+        id: pr
         if: steps.snapshot.outputs.changed == 'true'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -112,3 +132,20 @@ jobs:
             gh pr create --repo "${GITHUB_REPOSITORY}" --base main --head "${branch}" \
               --draft --title "${title}" --body "${body}"
           fi
+
+      - name: Upload maintainer handoff when PR creation is unavailable
+        if: steps.snapshot.outputs.changed == 'true' && steps.pr.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: gallery-snapshot-maintainer-handoff-${{ github.sha }}
+          path: ${{ steps.snapshot.outputs.handoff_dir }}
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Fail closed when snapshot PR creation is unavailable
+        if: steps.snapshot.outputs.changed == 'true' && steps.pr.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "Fail closed: the gallery snapshot branch was updated, but GitHub Actions could not open or update its Draft PR."
+          echo "The maintainer handoff artifact contains the exact snapshot commit and patch."
+          exit 1

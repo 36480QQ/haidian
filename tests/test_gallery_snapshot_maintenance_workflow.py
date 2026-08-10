@@ -34,8 +34,11 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
         self.assertIn("tests.test_prelaunch_check", self.workflow)
 
     def test_uses_stable_branch_and_safe_force_lease(self) -> None:
-        self.assertIn("MAINTENANCE_BRANCH: automation/gallery-snapshot", self.workflow)
+        self.assertIn(
+            "MAINTENANCE_BRANCH: codex/refresh-gallery-after-pr-868", self.workflow
+        )
         self.assertIn('git ls-remote --exit-code origin "refs/heads/${branch}"', self.workflow)
+        self.assertIn("forbids", self.workflow)
         self.assertIn("git push --force-with-lease=", self.workflow)
         self.assertNotIn("0000000000000000000000000000000000000000", self.workflow)
         self.assertNotIn("HEAD:refs/heads/main", self.workflow)
@@ -53,6 +56,14 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
         self.assertIn("if: steps.snapshot.outputs.changed == 'true'", self.workflow)
         self.assertIn("gh pr create", self.workflow)
         self.assertIn("--draft", self.workflow)
+
+    def test_pr_creation_failure_uploads_auditable_handoff_and_stays_red(self) -> None:
+        self.assertIn("id: pr", self.workflow)
+        self.assertIn("continue-on-error: true", self.workflow)
+        self.assertIn("handoff_dir", self.workflow)
+        self.assertIn("actions/upload-artifact@v4", self.workflow)
+        self.assertIn("steps.pr.outcome == 'failure'", self.workflow)
+        self.assertIn("Fail closed", self.workflow)
 
 
 if __name__ == "__main__":
