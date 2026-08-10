@@ -7,7 +7,7 @@
       "id": "CONSTRAINT-PROVISIONAL-SITE",
       "properties": {
         "id": "CONSTRAINT-PROVISIONAL-SITE",
-        "layer": "CONSTRAINT",
+        "layer": "REGULATORY_CONTROL",
         "name_zh": "临时总体范围精度约束",
         "name_en": "Provisional overall-boundary precision constraint",
         "source_type": "agent_inferred_from_public_data",
@@ -68,7 +68,7 @@
       "id": "CONSTRAINT-KEY003-ANCHOR",
       "properties": {
         "id": "CONSTRAINT-KEY003-ANCHOR",
-        "layer": "CONSTRAINT",
+        "layer": "REGULATORY_CONTROL",
         "name_zh": "大钟寺临时几何锚点偏移风险",
         "name_en": "Dazhongsi provisional-geometry anchor-offset risk",
         "source_type": "agent_inferred_from_public_data",
