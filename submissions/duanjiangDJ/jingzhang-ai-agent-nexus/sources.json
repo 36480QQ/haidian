@@ -42,6 +42,17 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CULTURE-JINGZHANG",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "京张铁路百年文化叙事（“一条铁路→一座城市→一场智能革命”）及清华园车站等朝圣地标信息，基于公告背景与公开历史文化资料整理，用于 agent.5 文化融合叙事。"
+    },
+    {
+      "id": "AGENT-GENERATED-ARTIFACTS",
+      "source_type": "agent_generated_design",
+      "usage": "Logo、概念总图、品牌图件、PDF 与可视化页面均由 AI 智能体自主生成，作为自生成交付物说明；生成方法与版权边界详见 risk.json、changelog.md 与 copyright_statement.md。"
     }
   ]
 }

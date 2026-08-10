@@ -28,12 +28,15 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
         "总览地图",
+        "AI 场景",
         "任务覆盖",
-        "核心指标"
+        "核心指标",
+        "来源"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -42,10 +45,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "AGENT-GENERATED-ARTIFACTS"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-GATEWAY-001",
+        "A-LOGO-001",
+        "A-PDFGEN-001",
+        "A-BLUEGREEN-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -81,12 +89,15 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
         "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "交通慢行",
+        "蓝绿公共空间",
+        "核心指标",
+        "用地分区"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -134,11 +145,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
         "总览地图",
-        "任务覆盖",
+        "重点区域",
+        "AI 场景",
         "核心指标"
       ],
       "source_ids": [
@@ -187,12 +200,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
+        "三层范围",
         "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "任务覆盖"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -240,12 +254,14 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "总览地图"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -293,12 +309,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域",
+        "总览地图"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -346,10 +362,11 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
+        "AI 场景",
         "任务覆盖",
         "核心指标"
       ],
@@ -399,11 +416,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
+        "交通慢行",
+        "蓝绿公共空间",
         "总览地图",
-        "任务覆盖",
         "核心指标"
       ],
       "source_ids": [
@@ -452,11 +471,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
+        "用地分区",
         "总览地图",
-        "任务覆盖",
         "核心指标"
       ],
       "source_ids": [
@@ -505,12 +525,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "更新项目",
+        "建筑",
+        "总览地图"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -558,12 +579,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "交通慢行",
+        "蓝绿公共空间"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -611,12 +632,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
+        "蓝绿公共空间",
         "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "AI 场景"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -628,7 +650,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-HONORWALL-001",
+        "A-BLUEGREEN-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -664,12 +688,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "建筑",
+        "蓝绿公共空间",
+        "总览地图"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -681,7 +706,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-BLUEGREEN-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -717,12 +743,11 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -770,12 +795,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域",
+        "AI 场景"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -823,12 +848,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域",
+        "AI 场景"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -876,12 +901,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域",
+        "AI 场景",
+        "交通慢行"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -893,7 +919,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-GATEWAY-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -929,7 +956,8 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
         "总览地图",
@@ -943,10 +971,13 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "AGENT-GENERATED-ARTIFACTS"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-LOGO-001",
+        "A-PDFGEN-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -982,10 +1013,11 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
+        "AI 场景",
         "任务覆盖",
         "核心指标"
       ],
@@ -999,7 +1031,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-SCEN-001",
+        "A-PERSONA-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1035,11 +1069,11 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
+        "AI 场景",
         "核心指标"
       ],
       "source_ids": [
@@ -1052,7 +1086,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-SCEN-001",
+        "A-PERSONA-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1088,12 +1124,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "重点区域",
+        "蓝绿公共空间",
+        "AI 场景"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1105,7 +1142,9 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-GATEWAY-001",
+        "A-HONORWALL-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1141,12 +1180,13 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
         "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "蓝绿公共空间",
+        "AI 场景"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1155,10 +1195,13 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CULTURE-JINGZHANG"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-HONORWALL-001",
+        "A-BLUEGREEN-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1194,11 +1237,12 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "drawings/concept-intro.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "AI 场景",
         "核心指标"
       ],
       "source_ids": [
@@ -1208,10 +1252,13 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "AGENT-GENERATED-ARTIFACTS"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-GATEWAY-001",
+        "A-HONORWALL-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
