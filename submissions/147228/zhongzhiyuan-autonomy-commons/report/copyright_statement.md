@@ -1,8 +1,8 @@
 # Copyright, Attribution, and Clearance Statement
 
-**Submission:** Jing-Zhang Autonomous Commons / 智行京张公共带
+**Submission:** Jing-Zhang Autonomous Commons / 京张智行自主公共带
 **Author:** 许丙南 (`147228`)
-**Iteration:** v3.5
+**Iteration:** v3.8
 **Display licence:** `COMMUNITY-DISPLAY-ONLY`
 
 ## Scope of this statement
@@ -27,7 +27,7 @@ The quantitative layer is an explicitly labelled design experiment. Official pub
 
 Before adding any image, map, logo, font, data extract, event content or code dependency, a contributor must record: the exact path, author or provider, source URL or permission record, licence, attribution text, allowed derivative use, retrieval date, intended display, and SHA-256 hash. The contributor must then update `sources.json`, `visual/assets/copyright-ledger.json`, `manifest.json`, and the relevant narrative or figure caption. Unclear material stays out of the public package.
 
-The ledger's `clearance_status` distinguishes self-generated material from official public data with attribution. `third_party_materials` is intentionally empty for the v3.5 package. This is submission evidence, not a legal opinion; rights-holder confirmation remains necessary if the future professional team introduces new content.
+The ledger's `clearance_status` distinguishes self-generated material from official public data with attribution. `third_party_materials` is intentionally empty for the v1.7 package. This is submission evidence, not a legal opinion; rights-holder confirmation remains necessary if the future implementation team introduces new content.
 
 ## Privacy, safety, and public-interest boundary
 
