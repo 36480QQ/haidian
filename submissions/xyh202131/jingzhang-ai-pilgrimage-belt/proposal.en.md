@@ -79,8 +79,11 @@ V2 closes another remaining gap: the proposal already introduces a proof line, a
 The evidence is organized into four tiers, each limited to a role consistent with its authority:
 
 - Tier 1 comprises the open-call announcement, agent taskbook, and project site package, which define the task and submission boundary [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE].
+
 - Tier 2 comprises the repository source registry, standards index, and processing guide, which locate evidence and its use limits [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK].
+
 - Tier 3 comprises public Beijing materials concerning the AI Origin Community, real-world testing along the century-old Jing-Zhang corridor, and the “one core, multiple points” innovation-district pattern. These materials assess possible coordination directions only; they do not mean that the project has been approved or that an organization has committed to participating [source:BEIJING-AI-ORIGIN-2026] [source:BEIJING-AI-DISTRICTS-2026].
+
 - Tier 4 combines national policies on data, AI-content labeling, and “AI+” with six global cases for mechanism inspiration and governance boundaries only [source:NATIONAL-DATA-INFRA-2025] [source:AI-CONTENT-LABEL-2025] [source:AI-PLUS-2025].
 
 ### Evidence Is Not a One-Time Snapshot: Expiry Must Propagate Downstream
@@ -307,6 +310,8 @@ Eight projects form a renewal package that maps space, protocols, and operations
 
 To make those existing requirements handoff-ready, `readiness-closure-contract.json` reduces each item to nine mandatory evidence closures: role acceptance; approval scope; site, window, and daily baseline; prohibited-data control; stop authority; recovery rehearsal; community co-test; independent retest; and the final go/no-go minute. Every category must close before G1 can be considered, any missing category means NO-GO, and an active stop condition overrides prior authorization. All 99 slots across the 11 items are currently open, 0 are closed, and all 11 decisions remain NO-GO. These counts disclose missing real-world evidence rather than treating template completeness as feasibility performance [data:visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1].
 
+`implementation-handoff-matrix.json` then crosswalks those 11 items to all 12 existing preregistration scenes. Each item resolves to the current `PHASE-1`, spatial objects, a closure record, and seven handoff packs that collectively cover all nine closure categories; every scene resolves to at least one existing project or protocol. Documentation destinations are now mapped for 12/12 scenes, but all 99 stable real-world evidence IDs still have no submitted artifacts, while approved items, operating items, field tests, known real-world results, and GO decisions remain at 0. This strengthens professional transfer without upgrading implementation maturity [data:visual/assets/implementation-handoff-matrix.json#JZ-IMPLEMENTATION-HANDOFF-V1].
+
 Phasing uses “year window + evidence gate”; a date never automatically grants eligibility to enter the next phase [data:geometry/phasing.geojson#PHASE-1] [metric:phase_count] [depth:phasing_implementation]:
 
 | Window | Status | Admission gate | Graduation gate | Rollback |
@@ -324,29 +329,45 @@ Operations propose a “Jing-Zhang Open Collaboration Desk.” Public bodies def
 The seven indicator categories are presented as readable review questions:
 
 - Site and key-area scale: provisional site area, key-area count, and total key-area area [metric:site_area_sqm] [metric:key_area_count] [metric:key_area_total_sqm].
+
 - Land-use structure: land-use unit and category counts [metric:land_use_unit_count] [metric:land_use_category_count].
+
 - Building representation: massing-prototype count, footprint, and overall representation ratio [metric:building_count] [metric:building_footprint_area_sqm] [metric:building_representation_ratio].
+
 - Key-area massing: key-area prototype count and footprint coverage [metric:key_area_building_count] [metric:key_area_building_footprint_ratio].
+
 - Blue-green system: green-space area, count, and ratio [metric:green_space_area_sqm] [metric:green_space_count] [metric:green_ratio].
+
 - Public space: public-space area, node count, and ratio [metric:public_space_area_sqm] [metric:public_space_node_count] [metric:public_space_ratio].
+
 - Transport: design-route count and length [metric:design_road_count] [metric:design_road_length_m].
 
 The required area families now go beyond unit counts and are complete by recomputable object while retaining the conceptual-design boundary:
 
 - The commercial-service, residential, and community-service envelopes are recalculated from the land-use layer; they are not statutory parcels or land-supply quantities [metric:land_use_area_05_sqm] [metric:land_use_area_0701_sqm] [metric:land_use_area_0702_sqm].
+
 - Research and development, culture, and education/research envelopes likewise describe only the current design geometry; they create no floor-area ratio or construction quantum [metric:land_use_area_0802_sqm] [metric:land_use_area_0803_sqm] [metric:land_use_area_0804_sqm].
+
 - Green-space, plaza/public-interface, and flexible-reserve envelope areas are recalculated separately; the 1403 functional envelope is not the same as the nine direct `PUBLIC_SPACE` intervention footprints [metric:land_use_area_1401_sqm] [metric:land_use_area_1403_sqm] [metric:land_use_area_16_sqm].
+
 - Areas for the three year windows come from `geometry/phasing.geojson`. They show evidence-gate coverage only, not approved construction boundaries or an automatic delivery sequence [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm].
+
 - Each key area retains a low-confidence area recalculated from its provisional polygon. Published approximate areas and provisional-geometry areas remain separate fields, while official polygon areas remain unavailable [metric:key_area_zhongzhiyuan_sqm] [metric:key_area_origin_community_sqm] [metric:key_area_dazhongsi_sqm].
 
 AI and public-value indicators are separated in the same way:
 
 - Scenario scale: service-scenario, mapped-node, and service-zone counts [metric:scenario_count] [metric:mapped_scenario_node_count] [metric:ai_service_zone_count].
+
 - Operating interfaces: spatial interfaces I01—I06, passport-field coverage, and manual-fallback-field coverage [metric:gateway_count] [metric:scenario_passport_coverage_ratio] [metric:manual_fallback_coverage_ratio].
+
 - Public access: non-AI access and screen-free-default coverage [metric:non_ai_access_coverage_ratio] [metric:screen_free_public_node_ratio].
+
 - Implementation: three phase gates [metric:phase_count].
+
 - Field grounding and handoff readiness: site-grounding observations, responsibility-field coverage for eight projects and three pilots, and the post-opening field-audit count that remains 0 [metric:site_grounding_observation_count] [metric:pilot_readiness_project_coverage_ratio] [metric:completed_post_opening_field_audit_count].
+
 - First-test documentation: all 12 scenes have preregistration records with 100% required-field coverage [metric:g1_preregistration_record_count] [metric:g1_preregistration_required_field_coverage_ratio].
+
 - First-test real-world evidence: completed preregistrations and approved windows both remain 0 [metric:completed_g1_preregistration_count] [metric:approved_g1_test_window_count]; field executions and known independently retested results also remain 0 [metric:g1_field_execution_count] [metric:known_g1_result_count].
 
 These indicators prove only “what has been designed” in the submission package; they do not prove real-world operating performance.
@@ -365,7 +386,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - AI and data risk: Bias, hallucination, privacy leakage, unauthorized automation, and vendor lock-in are controlled through data minimization, retention at source, logging, human responsibility, retesting, expiry, and retirement. Automated enforcement, diagnosis, and substitution for formal approval are prohibited.
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
-- Copyright and branding risk: The final file set contains 65 manifest paths, including 64 non-manifest content files; its 65 file-level asset records and 29 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. The complete `COMMUNITY-DISPLAY-ONLY` terms, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; both bilingual SVG source sets for the key-area figures are editable, but source files for the remaining outputs are incomplete, and the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/rights-clearance-ledger.json#RIGHTS-GATE-02].
+- Copyright and branding risk: The final file set contains 68 manifest paths, including 67 non-manifest content files; its 68 file-level asset records and 29 source-evidence records prove disclosure and link closure only. Coverage completeness becomes valid only after the manifest and rights ledger are refreshed from the final Git blobs and pass validation. Completed independent file-level clearance audits remain at 0 and the overall status is `not_fully_cleared`. `submission-use-rights-matrix.json` now records the current decision for announcement clause 8.1, repository review, organizer project use, entrant external display, cross-project reuse, and third-party components, but the package does not prove that the formal announcement terms apply identically to this GitHub open Agent call. The complete `COMMUNITY-DISPLAY-ONLY` terms, written consent, OSM ODbL obligations, PDF fonts, Node.js runtime and generation-tool terms, and logo/landmark trademark status still require review; the package must not claim full clearance [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1].
 - External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
