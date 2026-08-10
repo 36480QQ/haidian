@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forest Rail - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>Forest Rail</h1>
+<p class="summary">An urban forest corridor along the Jingzhang heritage railway in the Dazhongsi district: rusted rails as wayfinding, tree canopy over buildings, AI-managed node access and conceptual short-haul transit. Not a tech showcase — a place to walk, sit, and work quietly under trees.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>Forest Rail</h1>
+<blockquote><p>Dazhongsi is not a tech showcase. It is an urban forest where AI makes its nest — buildings under trees, people among woods, rusted rails threading through the canopy. Look out the window and see nature.</p></blockquote>
+<p>This proposal is called Forest Rail. Each word carries a distinct responsibility:</p>
+<ul>
+<li><strong>Forest</strong>: Plant enough large-canopy trees in the Dazhongsi district so that building rooftops sit below the tree canopy. From inside, you look out and see trunks and leaves, not the glass curtain wall across the street.</li>
+<li><strong>Rail</strong>: Continue the narrative of the Jingzhang Railway heritage corridor by retaining or re-laying rail tracks as ground-level wayfinding lines. The rails rust. People walk on timber boardwalks and crushed stone paths between them. Between key nodes, low-speed short-haul transit is retained as a concept.</li>
+</ul>
+<p>Together, these form a single corridor running through a forest. Outside this corridor, the existing street network remains unchanged.</p>
+<h2>Design Basis and Source List</h2>
+<p>This proposal follows the Pre-qualification Announcement for the Centennial Jingzhang AI Innovation Belt Urban Design International Open Call <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup>, with machine-readable references from <code>brief/site-package/</code> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>.</p>
+<p>Current spatial data uses provisional boundaries (<code>geometry/site_boundary.geojson</code>, <code>geometry/key_areas.geojson</code>), labeled <code>provisional_constraint</code>, <code>official_boundary=false</code>. All metrics and drawings must be recalculated when official boundaries are released. This limitation does not block content scoring, but spatial conclusions in this text are for design discussion only.</p>
+<p>The source registry (<code>data/source_registry.json</code>) lists 7 formal sources, 1 background source, and 1 provisional-only source. Background and provisional sources are not elevated to statutory authority <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Source evidence chain and submission package diagram"><figcaption>Source evidence chain and submission package diagram</figcaption></figure>
+<h2>Three-Level Scope Framework</h2>
+<p>The proposal follows the three tiers specified in the announcement:</p>
+<div class="proposal-table"><table><thead><tr><th>Tier</th><th>Area</th><th>What Forest Rail does here</th></tr></thead><tbody><tr><td>Strategic research (43.6 km²)</td><td>AI industry ecosystem and urban morphology</td><td>Confirms the Jingzhang corridor as the organizing spine; explores northward extension from Dazhongsi</td></tr><tr><td>Overall design (11.4 km²)</td><td>Urban renewal framework around heritage park</td><td>Rail-guided corridor connects three key areas; tree canopy as character control; soft paving replaces hardscape</td></tr><tr><td>Key area design (368.4 ha)</td><td>Three detailed design zones</td><td>Dazhongsi implements the full urban forest component set: canopy layer, rail path, soft paving, under-canopy workspace, rust</td></tr></tbody></table></div>
+<p>The three tiers are not independent deliverables. Strategic research determines the corridor&#x27;s logic, overall design translates it into land use and road layers, and key area design verifies whether the components fit on actual parcels.</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="Three-level scope and rail-guided corridor"><figcaption>Three-level scope and rail-guided corridor</figcaption></figure>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<p>The Jingzhang Railway is the narrative already embedded in this territory. It opened in 1909 and went underground in 2019, leaving the surface alignment as a heritage park. The announcement requires integrating centennial Jingzhang culture, Zhongguancun innovation culture, and AI innovation culture <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>.</p>
+<p>Forest Rail&#x27;s answer: do not invent a new narrative. Use the rails themselves. The tracks remain on the ground, rusting, with grass growing between them. People walk along them. This line connects three key areas — Zhongzhiyuan at the north end near Qinghe River, AI Origin Community in the middle near universities, and Dazhongsi at the south end near the metro station. The rail-guided corridor is the spatial spine, not decoration.</p>
+<p>AI industry ecosystem spatial framework:</p>
+<ul>
+<li><strong>University sourcing</strong>: AI research from Tsinghua, Peking, Beihang flows southward along the heritage corridor</li>
+<li><strong>Open-source collaboration</strong>: Origin Community provides code contribution display and collaboration spaces</li>
+<li><strong>Enterprise translation</strong>: Dazhongsi hosts AI agent, smart terminal, and data element companies</li>
+<li><strong>Public services</strong>: AI service nodes along the rail path (medical triage, legal consultation, educational aid)</li>
+<li><strong>International outreach</strong>: Walkable international exchange events organized along the rail path</li>
+</ul>
+<p>Naming and identity: &quot;Forest Rail&quot; is both the proposal name and the spatial description. No logo needed — the rail track is the identifier. The visual identity uses rust and canopy green. No additional symbols.</p>
+<h2>Overall Design: Rail-Guided Corridor and Urban Renewal</h2>
+<h3>Corridor Structure</h3>
+<p>The rail-guided corridor follows the Jingzhang heritage park alignment, with the Dazhongsi section as its southern gateway. The corridor is not a newly drawn boundary — it reuses the existing railway alignment.</p>
+<pre><code>Zhongzhiyuan (N) ──rail── AI Origin Community (M) ──rail── Dazhongsi (S)
+                    │                           │
+               Qinghe interface         Campus-district walking link</code></pre>
+<p>Tracks along the corridor serve two purposes <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>:</p>
+<div class="proposal-table"><table><thead><tr><th>Purpose</th><th>Material</th><th>Function</th><th>Boundary</th></tr></thead><tbody><tr><td><strong>Wayfinding</strong></td><td>Rusted/replica rails + soft paving</td><td>Direction for eyes and feet: walk on timber or crushed stone, follow the rusted rail</td><td>Walkable, sittable, slow; no light strips; signage minimal (Mode A)</td></tr><tr><td><strong>Transit (concept)</strong></td><td>Operable rail segments</td><td>Low-speed short-haul between nodes (goods, materials)</td><td>Separated from walking; not described as commercially mature; subject to professional feasibility study</td></tr></tbody></table></div>
+<p>Segments are mixed: some stretches are wayfinding-only with rusted rails; others conceptually retain short-haul capacity; pedestrians have priority at crossings.</p>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<p>Renewal within the overall design scope falls into three categories:</p>
+<ul>
+<li><strong>Retain</strong>: Existing quality buildings along the heritage corridor — unchanged</li>
+<li><strong>Renovate</strong>: Buildings needing ground-floor program and facade adjustment — remove LED screens, increase under-canopy transparency</li>
+<li><strong>Renew</strong>: New construction on identified low-efficiency sites — building height controlled below tree canopy</li>
+</ul>
+<p>Land use classification follows national standards <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup>, covering the design boundary without overlap <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup>. Building footprints and retain/renovate/renew classification are recorded in <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup>.</p>
+<p>Where FAR, building height, or road setbacks lack official data, they are marked as unknown. No numbers are fabricated.</p>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<p>Transport responds to the announcement&#x27;s requirements for rail station integration, road micro-circulation, walking network gaps, and green transport <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="深度：traffic_rail_slow_parking">深度</sup>.</p>
+<p>Key interventions:</p>
+<p>1. <strong>Dazhongsi Station four-quadrant pedestrian connection</strong>: Metro Line 13 Dazhongsi Station — establish walking connections across all four quadrants of the intersection, with rail paths extending from station exits into the district 2. <strong>North Fifth Ring crossing node</strong>: Pedestrian linkage where the heritage corridor crosses the North Fifth Ring Road (underpass or overhead facility) to maintain north-south continuity 3. <strong>Rail path / municipal road intersections</strong>: Pedestrians have priority at crossings; rail tracks embedded in road surface indicate direction; no traffic signals govern the rail path</p>
+<p>Road and walking network layers remain within the submission boundary <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="空间数据：geometry/roads.geojson#ROAD-001">空间数据</sup>, cross-checked with public space and green space. With a provisional boundary, transport conclusions serve as design discussion only.</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Transport, walking, and blue-green public space composite system"><figcaption>Transport, walking, and blue-green public space composite system</figcaption></figure>
+<p>Municipal infrastructure covers edge-computing nodes, distributed energy, and traditional utility integration. Missing utility, energy, and drainage data are listed as prerequisites for detailed design, not fabricated.</p>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<p>Blue-green space follows the Jingzhang heritage corridor as its spine, coordinating Qinghe River, Xiaoyue River, and surrounding community movement <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="blue_green_public_space" title="深度：blue_green_public_space">深度</sup>.</p>
+<p><strong>The tree canopy layer is the primary character control mechanism</strong>: native trees with crown spread ≥8m (Chinese Scholar Tree, ash, ginkgo, goldenrain tree), targeting ≥70% coverage of building rooftops. Trees are not pruned into geometric shapes. Building height below the canopy — this is the basic criterion for the urban forest.</p>
+<p>Character principles:</p>
+<ul>
+<li>Building facades use materials that age: brick, concrete, wood. No smooth glass curtain walls</li>
+<li>Rust and grey-green are the base colors, derived from oxidized rail and tree canopy</li>
+<li>Rooftops are for greening or equipment, not sculptural form</li>
+<li>Public art accepts only site-history-related, aging-compatible works — iron, stone, wood. No stainless steel or lighting installations</li>
+</ul>
+<p>Which elements are design recommendations versus those pending official confirmation is itemized in <code>standard_matrix.json</code>.</p>
+<h2>Key Area Detailed Design</h2>
+<h3>Zhongzhiyuan AI Autonomous Innovation Accelerator</h3>
+<p><strong>Location</strong>: Northern end, along Qinghe River <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="空间数据：geometry/key_areas.geojson#PROV-KEY-001">空间数据</sup>.</p>
+<p><strong>Position</strong>: Garden-type full-stack autonomous innovation district. The Qinghe interface is its public living room — combining green space, stormwater management, walking and cycling, and AI safety testing display.</p>
+<p><strong>Spatial actions</strong>:</p>
+<ul>
+<li>Qinghe interface: Set back buildings, create under-canopy walkways and waterfront grass slopes</li>
+<li>Industry display: Standards development, safety evaluation, model red-team testing translated into visitable collaboration nodes — by appointment, not as open attractions</li>
+<li>External transport: Strengthen walking connections to areas north of the Fifth Ring</li>
+<li>Low-carbon energy: Distributed PV combined with edge computing, as an infrastructure prototype for further development</li>
+</ul>
+<h3>Beijing AI Origin Community</h3>
+<p><strong>Location</strong>: Middle section, near Tsinghua, Beihang and other universities <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-002" title="空间数据：geometry/key_areas.geojson#PROV-KEY-002">空间数据</sup>.</p>
+<p><strong>Position</strong>: University-adjacent technology transfer and talent community.</p>
+<p><strong>Spatial actions</strong>:</p>
+<ul>
+<li>Campus-park-district walking integration: Break through walls and gaps, connect campus gates to park entrances via rail paths</li>
+<li>Launch space: Open-source release hall, public code wall (physical screen displaying real-time open-source contributions), small presentations</li>
+<li>Talent services: Housing, dining, sports embedded in the streetscape, not concentrated in a &quot;talent apartment complex&quot;</li>
+<li>Open-source collaboration: 24-hour open collaboration spaces, divided into quiet zones and discussion zones by usage intensity</li>
+</ul>
+<h3>Dazhongsi AI Industry Cluster — Urban Forest</h3>
+<p><strong>Location</strong>: Southern end, adjacent to Metro Line 13 Dazhongsi Station <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup>.</p>
+<p><strong>Position</strong>: Urban intelligent economy district, and the most complete implementation of the Forest Rail concept.</p>
+<p>The design here is built from five spatial components:</p>
+<div class="proposal-table"><table><thead><tr><th>Component</th><th>How it is used in Dazhongsi</th><th>What is not allowed</th></tr></thead><tbody><tr><td><strong>Canopy layer</strong></td><td>Chinese Scholar Tree and ash as primary species, crown spread ≥8m, covering existing building roofs and new low-rise structures</td><td>No geometric pruning; no ornamental small trees as substitutes</td></tr><tr><td><strong>Rail path</strong></td><td>Rusted rails embedded in the ground from Dazhongsi Station exits guide people into the district</td><td>No elevated landscape bridges; no polishing; no painting; no light strips</td></tr><tr><td><strong>Soft paving</strong></td><td>Between-rail walkways use timber boardwalk, permeable brick, or crushed stone; comfortable underfoot</td><td>No large-area asphalt; no polished stone (slippery in rain)</td></tr><tr><td><strong>Under-canopy workspace</strong></td><td>Building ground floors / podiums shaded by tree canopy, with tree trunks visible from windows</td><td>No glass curtain walls; no LED exterior facades</td></tr><tr><td><strong>Rust</strong></td><td>Rail tracks and steel elements maintain natural oxidation as time markers</td><td>No Cor-Ten imitation rust panels; no artificial aging with clear coat</td></tr></tbody></table></div>
+<p><strong>Dazhongsi Station integration</strong>: From each of the station&#x27;s A/B/C/D exits, a rail path extends into one quadrant of the district. Exit the metro and enter the forest — trees are planted above station entrances so that the first thing you see emerging from underground is canopy.</p>
+<p><strong>Commercial services</strong>: Distributed along the rail path, not concentrated in a commercial complex. AI agent and smart terminal company showrooms on ground floors, open toward the rail path, no separate entrances needed. Data element and digital asset services operate under compliance, authorization, and auditability.</p>
+<p><strong>Planned green space integration</strong>: Planned green space is combined with the rail path corridor — green space is not ornamental lawn but woodland that people can walk into and sit down in.</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Three key areas index and design tasks"><figcaption>Three key areas index and design tasks</figcaption></figure>
+<p>All three key areas appear in <code>geometry/key_areas.geojson</code>. Current data is provisional constraint; the proposal, HTML, and self_check state that it cannot serve as approval or scoring basis.</p>
+<h2>A Day Here: Personas and Scenarios</h2>
+<h3>Five User Personas</h3>
+<div class="proposal-table"><table><thead><tr><th>Persona</th><th>Who</th><th>What they do on Forest Rail</th><th>Data boundary</th></tr></thead><tbody><tr><td><strong>Walking commuter programmer</strong></td><td>AI engineer living nearby, walks to work daily</td><td>Exits Dazhongsi Station, walks 800m along the rail path to the office; eats lunch under the canopy; walks back along the rail path after work</td><td>No personal commute tracking; rail path foot traffic is anonymous counting only</td></tr><tr><td><strong>Parent walking with child</strong></td><td>Resident of surrounding neighborhoods</td><td>Pushes a stroller along the soft paving in the evening; child runs on the rusted rails; sits on under-canopy benches chatting</td><td>No family profiling; no commercial push notifications</td></tr><tr><td><strong>Corporate visitor</strong></td><td>Business guest of a major company</td><td>Arrives at Dazhongsi Station, rail path guides to company showroom; walks along rail path to next node after the meeting</td><td>Company logos and cases require rights clearance</td></tr><tr><td><strong>Solo freelancer</strong></td><td>Person without a fixed office</td><td>Arrives in the morning and finds an open under-canopy workstation; workstation opens automatically when quiet, closes when crowded</td><td>No recording of workstation user identity</td></tr><tr><td><strong>Retired daily walker</strong></td><td>70-80 years old, lives nearby</td><td>Walks along the rail path every morning, sits on the bench at the curve watching trees; pavement must be non-slip</td><td>No health data collection</td></tr></tbody></table></div>
+<h3>Scenario Cards (≥10)</h3>
+<div class="proposal-table"><table><thead><tr><th>#</th><th>Scenario</th><th>Spatial carrier</th><th>What happens</th><th>Who uses it</th></tr></thead><tbody><tr><td>01</td><td>Exit station, enter forest</td><td>Dazhongsi Station exits</td><td>After exiting the metro, rusted rails guide you under the canopy. Trees shade the station entrance from sun and rain</td><td>All arrivals</td></tr><tr><td>02</td><td>Rail path walking</td><td>Entire Dazhongsi rail path</td><td>Walk on timber or crushed stone along rusted rails. Speed naturally slows. No destination signs urging you forward</td><td>Commuters, walkers</td></tr><tr><td>03</td><td>Under-canopy quiet workstation</td><td>Open nodes along rail path</td><td>Tables, chairs, and power outlets that open automatically when conditions are quiet (noise &lt;55dB, no extreme heat, no heavy rain). AI manages access by time and environmental data</td><td>Freelancers, lunch-breakers</td></tr><tr><td>04</td><td>Rusted rail curve bench</td><td>Rail path turning points</td><td>Benches on the outside of curves; sit and watch the rusted rail and trees. No signage; you discover it naturally by sitting down</td><td>Elderly, parents with children</td></tr><tr><td>05</td><td>Company showroom along the rail</td><td>Dazhongsi ground-floor retail</td><td>AI agent and terminal company display spaces open toward the rail path; visible as you walk past</td><td>Visitors, passersby</td></tr><tr><td>06</td><td>Rainy day under-canopy shelter</td><td>Dense canopy segments</td><td>When it rains, canopy-covered areas become natural rain corridors. AI opens more under-canopy seating during these periods</td><td>Everyone</td></tr><tr><td>07</td><td>Open-source launch hall</td><td>Origin Community</td><td>Code contribution display and small presentations for universities and open-source communities. Physical screen scrolling real-time commits</td><td>Developers, university faculty and students</td></tr><tr><td>08</td><td>Inter-node short-haul (concept)</td><td>Operable rail segments</td><td>On top of wayfinding rails, conceptual low-speed unmanned short-haul transit — connecting Zhongzhiyuan, Origin Community, and Dazhongsi for goods and materials. Separated from walking space</td><td>Concept verification stage, not daily use</td></tr><tr><td>09</td><td>Night walking</td><td>Entire rail path</td><td>Night lighting is minimal: ground-embedded low-illuminance lights mark soft paving edges only. No light shows, no projections</td><td>Night runners, late returners</td></tr><tr><td>10</td><td>Qinghe innovation corridor</td><td>Zhongzhiyuan along Qinghe</td><td>Waterfront walkway connects to the rail path, stormwater grass slopes double as resting lawns. AI safety testing nodes open by appointment</td><td>Visitors, walkers</td></tr><tr><td>11</td><td>Data element salon</td><td>Dazhongsi district</td><td>Under compliance, authorization, and auditability, displays data element and digital asset circulation as an urban service interface</td><td>Enterprise clients, regulators</td></tr><tr><td>12</td><td>University tech transfer street</td><td>Origin Community</td><td>Incubation, display, legal, IP, and investment services organized along the rail path for university technology transfer</td><td>Startup teams, investors</td></tr></tbody></table></div>
+<p>All AI governance follows data minimization, open sourcing, explainability, and human review. Urban intelligent agents assist in identifying walking network gaps, public space activity, and facility maintenance needs but do not replace planning approvals or output unauthorized personal profiles.</p>
+<h3>Three Quiet Landmarks (Not Attractions)</h3>
+<p>No &quot;check-in points&quot; are designated here. The following are places you notice while walking — no signage, no wayfinding, no photo-taking recommendations:</p>
+<p>1. <strong>Rusted rail curve with an old Scholar Tree</strong>: At a bend in the rail path, an existing large Scholar Tree. The curve makes you turn your head and see the tree. Unnamed, unmarked. 2. <strong>Rail path–Xiaoyue River junction, crushed stone square</strong>: Where the rail path crosses Xiaoyue River, a crushed stone surface forms a small square. Water, rusted rail, and canopy meet here. No sculpture. 3. <strong>Old platform retaining wall</strong>: If Jingzhang Railway-era platform remnants exist in the district (retaining walls, steps), they are kept as found. The wall surface is not cleaned; moss grows. A bench is placed beside it.</p>
+<h2>Renewal Project List and Phasing</h2>
+<div class="proposal-table"><table><thead><tr><th>ID</th><th>Project</th><th>Type</th><th>Key dependencies</th><th>Phase</th></tr></thead><tbody><tr><td>FR-01</td><td>Dazhongsi Station four-quadrant rail path connection</td><td>Walking / rail integration</td><td>Rail station, intersection traffic organization</td><td>Near-term pilot</td></tr><tr><td>FR-02</td><td>Rail path wayfinding segment installation (Dazhongsi)</td><td>Public space</td><td>Rusted rail sourcing, soft paving materials, drainage</td><td>Near-term pilot</td></tr><tr><td>FR-03</td><td>Canopy layer planting (Dazhongsi)</td><td>Greening</td><td>Tree specification, soil improvement, utility avoidance</td><td>Near-term start, 3-5 year canopy maturity</td></tr><tr><td>FR-04</td><td>Under-canopy workspace ground floor renovation</td><td>Building renovation</td><td>Ownership, ground-floor program adjustment</td><td>Medium-term</td></tr><tr><td>FR-05</td><td>Zhongzhiyuan Qinghe innovation interface</td><td>Blue-green / industry</td><td>River blue line, ecology and flood control conditions</td><td>Medium-term</td></tr><tr><td>FR-06</td><td>Origin Community campus walking integration</td><td>Walking</td><td>Campus boundary, wall removal negotiation</td><td>Medium-term</td></tr><tr><td>FR-07</td><td>Inter-node short-haul concept verification segment</td><td>New infrastructure (concept)</td><td>Engineering feasibility study, safety assessment</td><td>Long-term / pending</td></tr><tr><td>FR-08</td><td>Full rail path connection (three key areas linked)</td><td>Public space / walking</td><td>North Fifth Ring crossing, corridor ownership</td><td>Long-term</td></tr></tbody></table></div>
+<p>Near-term pilots can start with lightweight interventions (spread crushed stone, place benches, plant saplings) without waiting for all engineering conditions. Medium and long-term projects require confirmed regulatory plans, municipal engineering, and property rights.</p>
+<p>Phasing spatial evidence <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-001" title="空间数据：geometry/phasing.geojson#PHASE-001">空间数据</sup>.</p>
+<h2>Metrics Framework</h2>
+<p>Metrics are divided into three categories:</p>
+<div class="proposal-table"><table><thead><tr><th>Type</th><th>Examples</th><th>Data source</th><th>Precision</th></tr></thead><tbody><tr><td>Spatial metrics calculable from submitted geometry</td><td>Boundary area, green ratio, public space ratio, building footprint</td><td>GeoJSON layers</td><td>Limited by provisional boundary</td></tr><tr><td>Control metrics requiring official regulatory plans</td><td>FAR, building height, building density, setbacks</td><td>Pending official plans</td><td>Currently marked unknown</td></tr><tr><td>Performance metrics requiring ongoing operational data</td><td>Rail path daily foot traffic, under-canopy workstation utilization, node access frequency</td><td>Post-operation collection</td><td>Currently design reference values</td></tr></tbody></table></div>
+<p>Three categories enter <code>metrics.json</code>, <code>assumptions.json</code>, and <code>compliance_matrix.json</code> respectively. Full calculations are in <code>metrics.json</code>; this text explains design intent only.</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Core metrics recalculation and evidence chain"><figcaption>Core metrics recalculation and evidence chain</figcaption></figure>
+<p>Key spatial metrics can be verified against <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> and <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>.</p>
+<h3>Compliance Matrix Coverage</h3>
+<p><code>compliance_matrix.json</code> maps each requirement from Announcement 1.3-1.5 and agent.1-agent.6:</p>
+<div class="proposal-table"><table><thead><tr><th>Requirement</th><th>Proposal section</th><th>Core evidence</th></tr></thead><tbody><tr><td>1.3 World-class AI innovation ecosystem</td><td>Strategic research + Key areas</td><td>Innovation chain spatial layout, scenario cards</td></tr><tr><td>1.4 Three-tier scope</td><td>Three-tier scope</td><td>Task table per tier</td></tr><tr><td>1.5.3.1 Zhongzhiyuan</td><td>Key areas: Zhongzhiyuan</td><td>key_areas PROV-KEY-001</td></tr><tr><td>1.5.3.2 Origin Community</td><td>Key areas: Origin Community</td><td>key_areas PROV-KEY-002</td></tr><tr><td>1.5.3.3 Dazhongsi</td><td>Key areas: Dazhongsi</td><td>key_areas PROV-KEY-003</td></tr><tr><td>agent.1 Overall concept</td><td>Overall design: Corridor structure</td><td>Rail-guided corridor + three key area linkage</td></tr><tr><td>agent.2 AI full-stack innovation</td><td>Strategic research + Zhongzhiyuan</td><td>Innovation chain, safety governance nodes</td></tr><tr><td>agent.3 AI+ scenarios</td><td>Personas and scenarios</td><td>12 scenario cards</td></tr><tr><td>agent.4 Public space and landmarks</td><td>Dazhongsi urban forest + quiet landmarks</td><td>Five components + three quiet landmarks (not attractions)</td></tr><tr><td>agent.5 Cultural narrative integration</td><td>Strategic research: Why rails</td><td>Jingzhang Railway to rusted rail to Forest Rail</td></tr><tr><td>agent.6 Global activities and long-term operations</td><td>Renewal projects: Phasing</td><td>Near-term lightweight to medium-term renewal to long-term connection</td></tr></tbody></table></div>
+<h2>Risk, Copyright, and Compliance</h2>
+<h3>Provisional Boundary</h3>
+<p>All spatial conclusions are limited by provisional boundary status. When official boundaries are released: re-run scaffold, self-check, drawings, and HTML. Single-file replacement is not sufficient.</p>
+<h3>Transit Concept</h3>
+<p>Short-haul transit on the rail-guided corridor is a conceptual suggestion, not an engineering feasibility conclusion. Rail-based logistics in the Jingzhang heritage / dense urban road network cannot be described as commercially mature. Proposal language: conceptual suggestion, subject to professional feasibility study, separated from heritage preservation and pedestrian safety zones.</p>
+<h3>Missing Data</h3>
+<p>Gaps listed in <code>missing_data_checklist.csv</code> — official boundaries, regulatory plans, roads, municipal engineering, heritage protection — enter <code>assumptions.json</code> and self-check. Conclusions lacking official conditions are downgraded to pending confirmation.</p>
+<h3>Copyright</h3>
+<p>The proposal provides bilingual versions (this file and <code>proposal.md</code>). Images, data, and code assets are documented in <code>sources.json</code> and <code>report/copyright_statement.md</code>. HTML pages do not load remote scripts, map tiles, fonts, iframes, or external APIs.</p>
+<h3>Disclaimer</h3>
+<p>This proposal does not claim official approval, regulatory plan status, final property rights, final construction scale, or implementation guarantee.</p>
+<h2>References</h2>
+<p>See <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>, <code>sources.json</code>, <code>metrics.json</code>, <code>compliance_matrix.json</code>.</p>
+<ul>
+<li>brief/public-brief.md</li>
+<li>brief/site-package/design_brief.json</li>
+<li>brief/site-package/allowed_design_space.json</li>
+<li>data/processed/agent_fact_pack.md</li>
+<li>data/processed/project_scope_summary.csv</li>
+<li>data/processed/agent_task_requirements.csv</li>
+<li>data/processed/missing_data_checklist.csv</li>
+<li>Full source index: <code>sources.json</code>, <code>metrics.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code>, <code>design_depth_matrix.json</code></li>
+</ul>
+</main>
+</body>
+</html>
