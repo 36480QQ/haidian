@@ -156,6 +156,8 @@ Each scenario card maps space, served personas, operation data, privacy boundary
 
 The three industry test scenarios open progressively: T1 the agent safety sandbox (Zhongzhiyuan joint test line), T2 the model evaluation recalc station (Zhongzhiyuan model workshop), and T3 edge-computing and low-carbon integration validation (new-infrastructure nodes along the ridge).
 
+The per-scenario admission and rollback records for T1/T2/T3 are registered in `visual/assets/scenario_test_records.json` (one record each for SC-04/SC-05/SC-06); every record uses `{status, value}` pairs covering the four field groups: baseline, observation object, sample and time window; success condition and stop condition; human-equivalent path and responsible roles; review cycle, objection entry and deletion proof [data:visual/assets/scenario_test_records.json#SC-04] [data:visual/assets/scenario_test_records.json#SC-05] [data:visual/assets/scenario_test_records.json#SC-06]. Unknown fields are explicitly marked as frozen before authorization / not collected / pending responsible-entity confirmation, with no fabricated values; the offline checker `check_scenario_records.py` verifies that no field is omitted, statuses are valid, and no invented number is present (matching the `SCENARIO_RECORD_COMPLETENESS` entry in `self_check.json`), turning bookable / stoppable / reversible into a per-card contract that reviewers can verify rather than a single general principle.
+
 ![Slow-mobility and blue-green public-space composite system](assets/figures/mobility-bluegreen.en.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
