@@ -6,19 +6,17 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle for accountable human–AI coexistence; V0.2 adds global cases, Jing-Zhang historical evidence and a seven-interface protocol while retaining provisional geometry."
+summary: "A BUILD—TEST—LIVE—LEARN/UPDATE civic lifecycle and seven-interface protocol for accountable human–AI coexistence; V0.3 adds a topology-closed spatial framework, twelve governed scenario nodes and evidence-gated implementation packages while retaining provisional geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
-
-<!-- SCAFFOLD-DRAFT: this V0.2 English counterpart is an aligned outline, not a review-ready translation or final deliverable. -->
 
 # THE JINGZHANG PROTOCOL / 京张协议
 
 **A Civic Protocol for Human–AI Coevolution**  
 **How a city learns to live with AI**
 
-## V0.2 Core Proposition
+## V0.3 Core Proposition
 
 The proposal treats an AI city as more than a collection of devices, screens and demonstrations. It imagines the Centennial Jing-Zhang AI Innovation Belt as a visible, testable, contestable, reversible and continuously updated civic protocol: AI is built here, evaluated before entering society, used in ordinary life to create public value, and revised through evidence from operation and failure. Every institutional, spatial and operational move remains a conceptual recommendation for further planning, engineering, legal, ethical and public review [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -30,15 +28,15 @@ Two civic infrastructures organize the loop. The **AI City API / Jing-Zhang AI C
 
 ## Design Basis and Source List
 
-The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY].
+The official announcement supports the project name, textual scopes, approximate areas and task requirements. The cleared Agent taskbook supports the six Agent-facing tasks and public-compliance boundaries. Local professional-reference snapshots support urban-design, regulatory-planning and land-use-classification language. Repository provisional geometry supports generation, visualization and intake checks only; it must not be represented as an official boundary, statutory control or precise-area basis [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]. V0.3 has a reproducible concept geometry and evidence structure, but A3/A0 outputs, final HTML, official controls and professional sign-off remain prerequisites for a formal submission.
 
-Exact official polygons, regulatory controls, road redlines, ownership/cadastral data, existing-building surveys, heritage controls, utilities and facility baselines remain pending official or rights-cleared data. Complete evidence will remain in `sources.json`, `metrics.json`, the GeoJSON layers and the three matrices.
+Exact official polygons, regulatory controls, road redlines, ownership/cadastral data, existing-building surveys, heritage controls, utilities and facility baselines remain pending official or rights-cleared data. SITE-001 and the three KEY_AREA polygons are explicitly provisional and must trigger whole-package regeneration when official geometry arrives [data:geometry/site_boundary.geojson#SITE-001] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]. Complete evidence remains in `sources.json`, `metrics.json`, the GeoJSON layers and the three matrices.
 
 ![Evidence chain and package relationship](assets/figures/site-overview.png)
 
 ## Three-Level Scope Framework
 
-The Coordinated Research Area carries industry and future-city strategy; the Overall Design Area carries urban renewal and regulatory-plan-level urban design; the Key-Area Detailed Design Area tests the concept in Zhongzhiyuan, the Beijing AI Origin Community and Dazhongsi. The BUILD—TEST—LIVE—LEARN/UPDATE lifecycle translates decisions across these levels without replacing their official definitions [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
+The Coordinated Research Area uses the official approximate **43.6 km²** figure but currently has no submitted polygon. The Overall Design Area uses the official approximate **11.4 km²** figure and provisional SITE-001, calculated at about 11.413 km² in EPSG:4548. The Key-Area Detailed Design Area uses the official approximate **368.4 ha** total and three rough provisional polygons [metric:announced_coordinated_research_area_sqm] [metric:announced_overall_design_area_sqm] [metric:announced_key_detailed_design_area_sqm]. These three levels cannot substitute for one another [depth:three_level_scope_framework].
 
 ![Three-level scope and operating framework](assets/figures/land-use-structure.png)
 
@@ -46,7 +44,7 @@ The Coordinated Research Area carries industry and future-city strategy; the Ove
 
 The ecosystem is organized around a versioned path from model, agent, robotics, compute and evaluation tools to bounded testing, daily use and public learning. The Three Zones and Two Wings provide the official spatial framework; the protocol adds public interfaces, evidence and feedback between them [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-V0.2 uses six deliberately different case types rather than treating them as a like-for-like ranking:
+V0.3 retains six deliberately different case types rather than treating them as a like-for-like ranking [metric:global_case_group_count]:
 
 | Case | Transferable mechanism | Translation and limit |
 | --- | --- | --- |
@@ -63,15 +61,17 @@ The identity combines a railway switch, a version-control branch and a civic pro
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-The spatial concept uses the railway heritage public-space spine as the shared civic interface, the three key areas as lifecycle anchors, and stations, universities, enterprises and communities as an everyday network. Future versions must replace generic scaffold layers with a topology-safe land-use partition, renewal logic, mobility/public-space network, municipal/new-infrastructure strategy and phased project set derived from the same boundary and metrics [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:land_use_layout].
+V0.3 translates the protocol into a reproducible spatial matrix. North-to-south **BUILD, TEST and LIVE** lifecycle segments cross west-to-east **knowledge/R&D, public green spine, civic interface and everyday service** bands, producing twelve cells from shared cut lines. LEARN/UPDATE is a feedback network across all three segments, not a fourth statutory zone. The twelve polygons cover SITE-001 completely with no material gap, outside area or overlap; they are concept functions, not existing or statutory land use [data:geometry/land_use.geojson#LU-BUILD-01] [metric:land_use_coverage_ratio].
 
-FAR, height, building coverage, setbacks, specific demolition/retention, road alignments, utilities, investment and phasing cannot be asserted as approved conclusions while official controls and surveys are missing.
+Two longitudinal links—the **Jing-Zhang Protocol Public Green Spine** and **Seven-Interface Civic Service Link**—are crossed by BUILD, TEST, LIVE and LEARN/UPDATE links to make one connected ladder network. These are conceptual walking, cycling and service relationships, not road redlines or engineering alignments [data:geometry/roads.geojson#ROAD-SPINE-001] [data:geometry/roads.geojson#ROAD-INTERFACE-001] [metric:slow_mobility_length_m]. Three 1401 cells directly generate the green-space layer. Six public interfaces and six small program envelopes anchor the key areas; every envelope lies within its provisional key area and has zero conflict with 1401, 1403 or public-space polygons.
+
+Against the provisional denominator, design green space is about **2.563 million m² / 22.459%**, six public interfaces about **432,600 m² / 3.7905%**, concept envelopes **27,775 m² / 0.2434%**, and the conceptual network about **24.15 km** [metric:green_ratio] [metric:public_space_ratio] [metric:concept_building_coverage_ratio]. These test design choices only. Total floor area, FAR, statutory building density, height, setbacks, road area and road ratio remain `unknown`; the completed deliverable is a control-status table, not a set of approved values [metric:floor_area_ratio] [metric:setback_m] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ## Detailed Design of Key Areas
 
-- **Zhongzhiyuan / BUILD:** a garden-like full-stack innovation area where model, agent, robotics, compute, standards and safety tools can be made and visibly evaluated.
-- **Beijing AI Origin Community / TEST:** a near-university civic testing environment where residents, students, institutions and service professionals can participate in bounded trials before wider use.
-- **Dazhongsi / LIVE:** an urban AI-native work, commerce, culture and public-service environment that tests whether systems create ordinary public value.
+- **Zhongzhiyuan / BUILD:** Civic AI Test Yard, Capability Contract Court, Safety Evaluation Lab and Standards Hub support S01, S02 and S10. Public observation and controlled-test routes remain distinct; public trials require human stop authority, incident logging and declared capability limits [data:geometry/public_space.geojson#SCENARIO-S01] [metric:scenario_node_zhongzhiyuan_count].
+- **Beijing AI Origin Community / TEST:** Protocol Station Zero, Community Service Interface Court, Learning Studio and Human Review/Appeal Point support S03, S04, S05 and S07 and provide professional referral for S08. A public trial card precedes service activation [data:geometry/public_space.geojson#SCENARIO-S04] [metric:scenario_node_ai_origin_count].
+- **Dazhongsi / LIVE:** Jing-Zhang Commons Ledger, Dazhongsi Urban Living Room, Living Heritage Studio and AI-native commerce space support S11 and S12 and connect to S09. Wider service diffusion requires independent evaluation, consumer notice, appeals and retirement arrangements [data:geometry/public_space.geojson#SCENARIO-S12] [metric:scenario_node_dazhongsi_count].
 
 The two wings connect services, capital, professional support, scenario access and public experience. Exact locations and physical interventions remain pending official polygons, ownership, transport, heritage and engineering evidence [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
 
@@ -79,7 +79,7 @@ The two wings connect services, capital, professional support, scenario access a
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-V0.2 registers twelve scenarios and at least five user groups. Every next-stage card must specify the user need, spatial precondition, permitted and prohibited data, human-review point, operator, success metric, failure condition, incident/appeal route, rollback rule, source and geometry/visual mapping.
+V0.3 registers twelve `SCENARIO_NODE` features; S01–S03 are industry validation cases [data:geometry/public_space.geojson#SCENARIO-S01] [metric:scenario_node_count] [metric:industry_validation_scenario_count]. Each point now carries a spatial carrier, host features, applicable key area, dependency package, personas, operator role, data boundary, human-review requirement, non-AI fallback, appeal route and `deployment_status=concept_only`. All 12/12 have human review, spatial assignment and phase assignment [metric:scenario_human_review_coverage_ratio] [metric:scenario_spatial_assignment_coverage_ratio] [metric:scenario_phase_assignment_coverage_ratio]. The 25 unique persona labels are testing roles, not demographic profiling or personal inference [metric:persona_count].
 
 | ID | Scenario | Lifecycle / carrier | Primary safeguard |
 | --- | --- | --- | --- |
@@ -100,31 +100,35 @@ Initial personas include open-source developers, early-stage teams, established 
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The formal package must use a complete, non-overlapping land-use partition and distinguish retained, renovated, demolished, new-build and pending-confirmation objects. V0.2 does not assert parcel-level actions, heights or development intensity because the required controls, ownership and existing-building evidence are missing [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish].
+The twelve land-use faces are a complete conceptual function partition, not existing or statutory land use. Six building polygons are explicitly `conceptual_envelope=true` and `adaptive_reuse_or_lightweight_infill_subject_to_survey`. They demonstrate carrier logic and land-use compatibility, not an existing-building record or a retain, renovate, demolish or new-build decision; all six remain pending survey-based classification [data:geometry/buildings.geojson#BLDG-BUILD-001] [metric:building_action_pending_count] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-The concept prioritizes station integration, walking/cycling continuity, accessibility, low-intrusion sensing, public-service fallback and the relationship between new infrastructure and conventional municipal systems. Engineering routes, bridge/tunnel feasibility, utility capacity and fire/flood conditions remain for professional verification [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking].
+The concept prioritizes station integration, walking/cycling continuity, accessibility, low-intrusion sensing, public-service fallback and the relationship between new and conventional infrastructure [data:geometry/roads.geojson#ROAD-SPINE-001] [data:geometry/public_space.geojson#SCENARIO-S06] [depth:traffic_rail_slow_parking]. `geometry/constraints.geojson` is intentionally empty because no verified, rights-cleared rail alignment, river/flood condition, road redline, station exit, ownership, utility/fire, heritage or tree dataset is available [data:geometry/constraints.geojson]. Station-city and river-interface language therefore remains a relationship to verify, not a confirmed alignment.
 
 ![Mobility and blue-green public-space system](assets/figures/mobility-bluegreen.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The railway heritage park is the civic interface rather than a technology showroom. V0.2 proposes three linked AI landmarks: **Protocol Station Zero** in the AI Origin Community, where people can understand AI identity, data use, rights, human review and appeals; the **Civic AI Test Yard** in Zhongzhiyuan, where evaluation and stop mechanisms are publicly legible; and the **Jing-Zhang Commons Ledger** along the railway heritage public-space system, where contributors, protocol versions, incidents, corrections and lessons are recorded. Exact sites, scale, form and heritage relationships remain pending professional evidence [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
+The railway heritage park is the civic interface rather than a technology showroom. The green-space layer is derived directly from the three 1401 cells, with zero geometry difference. V0.3 proposes three linked AI landmarks: **Protocol Station Zero** in the AI Origin Community, where people can understand AI identity, data use, rights, human review and appeals; the **Civic AI Test Yard** in Zhongzhiyuan, where evaluation and stop mechanisms are publicly legible; and the **Jing-Zhang Commons Ledger** at a concept interface in Dazhongsi, where contributors, protocol versions, incidents, corrections and lessons are recorded [metric:landmark_count]. Exact sites, scale, form and heritage relationships remain pending official and professional evidence [source:AGENT-TASKBOOK] [depth:blue_green_public_space].
 
 ## Renewal Projects, Implementation Policy, and Phasing
+
+Six concept renewal projects are mapped to three evidence-gated packages rather than near/mid/long-term promises. **P1** establishes the public green spine, seven interfaces, human fallback and incident routes. **P2** advances western knowledge/R&D and professional validation only after ownership, building survey, safety and transport conditions are verified. **P3** expands eastern everyday services only after independent evaluation, appeal capacity, interoperability and retirement plans are demonstrated [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]. The three polygons cover the provisional site with no material overlap [metric:phase_coverage_ratio].
 
 The operating rhythm is proposed as quarterly scenario-open days, semiannual evidence review, an annual Jing-Zhang Protocol Assembly and a continuous public version log. Developers/operators submit evidence; residents and users raise questions or appeals; professional teams assess spatial, technical, legal and ethical impacts; and the public record explains why a scenario scales, changes, pauses or ends. This is an operational concept, not a confirmed organizer event, budget or policy commitment [source:AGENT-TASKBOOK] [depth:phasing_implementation].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known spatial metrics must be recomputed from the GeoJSON in EPSG:4548; missing regulatory controls must remain unknown/pending. Scenario targets and lifecycle gates must not be presented as current site conditions. The final evidence chain is `source → judgment → geometry/metric → figure/drawing → matrix → self-check` [depth:metrics_recalculation] [metric:site_area_sqm].
+V0.3 separates official approximate scope figures, reproducible design geometry and missing statutory/engineering controls. Known spatial metrics are recalculated from GeoJSON in EPSG:4548; missing controls remain `unknown`, never zero or average. SITE-001 is about 11.413 km²; land-use and phase coverage are 1.0 with no material overlap [depth:metrics_recalculation] [metric:site_area_sqm] [metric:land_use_coverage_ratio]. The package contains twelve scenarios, three industry validations, seven protocol interfaces, three landmarks and six renewal projects [metric:scenario_node_count] [metric:protocol_interface_count] [metric:renewal_project_count].
+
+The evidence chain is `source → judgment → geometry/metric → figure/drawing → matrix → self-check`. Regulatory total floor area, FAR, building density, height, setbacks, road area and road ratio remain explicitly unknown until official controls, surveys and rights-cleared professional data are available [metric:total_floor_area_sqm] [metric:floor_area_ratio] [metric:setback_m].
 
 ![Metrics and evidence chain](assets/figures/metrics-evidence.png)
 
 ## Risk, Copyright, and Compliance
 
-This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.2 remains a scaffold and must not be submitted as review-ready [depth:risk_missing_data] [source:SITE-PACKAGE].
+This proposal does not claim official approval, enacted regulation, final ownership, confirmed construction scale, engineering feasibility, funding or guaranteed implementation. It excludes non-public spatial data and personal information; every external case, image, font, icon and toolchain dependency must be attributable and rights-cleared before formal use. V0.3 is a locally verified working package, not yet ready for PR: A3/A0 outputs, final HTML, manifest refresh and official/professional inputs remain open [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson].
 
 ## References
 

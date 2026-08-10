@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-10
+
+- Replaced generic scaffold layers with a topology-closed 3×4 spatial framework: BUILD / TEST / LIVE crossed by knowledge, green-spine, civic-interface and everyday-service bands.
+- Added a connected dual-axis/four-crosslink concept network, six public interfaces, six conflict-free concept building envelopes, twelve governed scenario nodes, and three evidence-gated implementation packages.
+- Recalculated design metrics in EPSG:4548 and added explicit range, key-area, land-use, scenario, persona, phasing, project and unknown-control metrics.
+- Expanded the assumption ledger to cover research scope, provisional boundaries, concept land use, scenario siting, dependency phasing, controls, existing buildings, transport, heritage, industry data, architecture standards, operations and recalculation.
+- Rebuilt all three evidence matrices with requirement-specific references and generated a truthful 33-check self-check.
+- Added five original bilingual analytical-figure pairs and rebuilt the bilingual offline visual index from current geometry and metrics.
+- Kept `package_state=scaffold`; zero-page A3/A0 placeholders, manifest refresh and final professional inputs remain open. No remote push or formal PR has been created.
+
 ## v0.2 - 2026-08-10
 
 - Verified six complementary global cases from primary institutional sources and recorded their transfer limits.
