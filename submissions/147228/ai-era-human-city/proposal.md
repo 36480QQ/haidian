@@ -10,7 +10,7 @@ summary: "以人本缓冲、机器可调用的公共规则和可撤回的版本�
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v1.6"
+iteration: "v1.7"
 tracks: "ai-traffic-walkability,civic-agent-governance,youth-friendly-public-space"
 scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-navigation,ai-cultural-guide,enterprise-service-copilot,public-safety-operations-review"
 ---
@@ -122,6 +122,16 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 ![图 06｜节点级公共接口：三处重点区的状态与回退序列](assets/figures/spatial-interface-nodes.png)
 
 为降低评审从概念叙事跳到结构化附件的成本，本轮把四张由包内 JSON 合约直接生成的双语审阅图板集中到同一套入口：普通人任务链与停止回路、十张场景卡的任务书—空间—回放覆盖、五个概念项目族的 G0/G1 门与退出动作、任务书—公共空间—年度运营三联读。它们只是已有字段的可视化索引，不新增现场绩效、授权、许可、部署或官方评分结论；图板中的 `result_status=not_run` 与 `not_an_official` 边界应与原始 JSON 一并阅读。[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
+## v1.7 空间证据图谱｜把“有接口”落回同一张临时底图
+
+本轮把上一节的节点状态再落回两张表达级图：总览图同时显示临时范围、三处重点区、绿蓝缓冲、人优先线和十个场景节点；重点区图再以同源 polygon 做三处缩放，并把每处问题、四段功能带和人工兜底放在同一阅读面。它们是从 `site_boundary`、`key_areas`、`roads`、`green_space`、`public_space`、`constraints` 与 `ai-era-spatial-interface-plans.json` 生成的空间证据，不新增边界、路线、断面、容量、设施、许可或现场结果。[data:visual/assets/ai-era-spatial-atlas-v17.json] [data:visual/assets/build-ai-era-spatial-atlas-v17.js] [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+场景节点的临时锚点仍回到 `constraints.geojson`，不被图面升级为许可、运行或正式空间控制。[data:geometry/constraints.geojson#SCN-06]
+
+图上的四段不是四个工程阶段，而是公共接口的可讨论顺序：普通到达、人工解释/服务、受限模拟或自愿学习、冻结复盘/退出。每段都保留纸面、电话、人工和无屏替代，并把 `not_authorized_not_run`、`performance_results=null` 与停止条件放在图面边界内。三处重点区、十个场景节点和九类画像因此可以从图回到 JSON，再回到指标和缺口；若正式边界、道路、权属、无障碍、气候、能源或服务基线到位，必须联动重算几何、指标、图件、HTML、PDF 与自检。[metric:key_area_count] [metric:scenario_card_count] [metric:manual_fallback_coverage_ratio]
+
+正式资料到位后的全链条重算属于指标复核深度项；在触发前，图件只用于概念建议与关系核问。[depth:metrics_recalculation]
 
 ## v1.2 任务书·空间·运营三联读｜让 agent.4、agent.5、agent.6 在同一张图上相遇
 

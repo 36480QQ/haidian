@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # From an AI Showcase to a City for People in the AI Era
@@ -100,6 +100,16 @@ This node plan adds a reviewer-visible middle layer for how public interfaces ca
 ![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.png)
 
 To reduce the jump from narrative to structured attachments, this revision brings four bilingual review boards generated directly from package JSON contracts into one visible set: the ordinary-person journey and stop loop, taskbook–space–replay coverage for all ten scenario cards, G0/G1 gates with exit actions for the five conceptual project families, and the taskbook–public-space–annual-operation triad. They are visual indexes of existing fields, not new field performance, authorization, permit, deployment, or official-score claims; read the `result_status=not_run` and `not_an_official` boundaries with the source JSON.[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
+
+## v1.7 spatial evidence atlas: return “having an interface” to one provisional base
+
+This revision returns the node states to two presentation-grade plates. The overview reads the provisional extent, three key areas, green-blue buffers, human-priority lines, and ten scenario nodes together. The key-area plate then zooms the same polygons and places each area's question, four functional bands, and human fallback on one reading surface. The plates are generated from `site_boundary`, `key_areas`, `roads`, `green_space`, `public_space`, `constraints`, and `ai-era-spatial-interface-plans.json`; they add no boundary, route, section, capacity, facility, permit, or field-result claim.[data:visual/assets/ai-era-spatial-atlas-v17.json] [data:visual/assets/build-ai-era-spatial-atlas-v17.js] [data:geometry/key_areas.geojson#PROV-KEY-001]
+
+Scenario nodes still return to the provisional anchors in `constraints.geojson`; the plates do not upgrade them into permits, operations, or formal spatial controls.[data:geometry/constraints.geojson#SCN-06]
+
+The four bands are not four engineering phases. They are a public-interface order that can be discussed: ordinary arrival, staffed explanation/service, bounded simulation or voluntary learning, and freeze/replay/exit. Paper, phone, staffed, and screen-free alternatives remain visible in every band; `not_authorized_not_run`, `performance_results=null`, and stop conditions remain inside the plate's evidence boundary. The three key areas, ten scenario nodes, and nine personas can therefore be read from image to JSON, then to metrics and missing evidence. If formal boundaries, roads, tenure, accessibility, climate, energy, or service baselines arrive, geometry, metrics, figures, HTML, PDFs, and self-check must be recalculated together.[metric:key_area_count] [metric:scenario_card_count] [metric:manual_fallback_coverage_ratio]
+
+The full-chain recalculation after formal evidence arrives is a metrics-recalculation depth item; before that trigger, the plates support conceptual suggestions and relational questions only.[depth:metrics_recalculation]
 
 ## v1.2 Taskbook–space–operation triad: make agent.4–agent.6 meet on one board
 
