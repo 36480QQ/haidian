@@ -65,3 +65,9 @@ python3 scripts/validate_manifest_schema.py --all --json
 
 Use `--strict` for a deliberate blocking audit. The default corpus audit is
 advisory because historical packages are not rewritten by this change.
+
+The JSON audit also reports `legacy_role_findings`. It separates a
+path-specific `author_typo_candidate` from a semantic
+`schema_gap_or_extension`, and records malformed role tokens separately. These
+are suggestions for human migration review only. The audit never rewrites a
+manifest or silently changes the meaning of a contributor-owned artifact.

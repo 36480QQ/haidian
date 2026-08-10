@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from manifest_schema import schema_errors  # noqa: E402
+from manifest_schema import legacy_role_findings, schema_errors  # noqa: E402
 from validate_submission import ValidationReport, validate_manifest_file  # noqa: E402
 
 
@@ -109,6 +109,34 @@ class ManifestSchemaTests(unittest.TestCase):
         payload["files"][0]["role"] = "Figure-1"
         errors = schema_errors(payload)
         self.assertTrue(any("role" in error for error in errors))
+
+    def test_legacy_role_audit_distinguishes_typo_from_schema_gap(self):
+        payload = manifest()
+        payload["files"] = [
+            {"path": "report/proposal.en.html", "role": "report"},
+            {"path": "risk.json", "role": "risk"},
+        ]
+
+        findings = legacy_role_findings(payload)
+
+        self.assertEqual(
+            findings,
+            [
+                {
+                    "classification": "author_typo_candidate",
+                    "path": "report/proposal.en.html",
+                    "role": "report",
+                    "suggested_role": "rendered_proposal_html",
+                },
+                {
+                    "classification": "schema_gap_or_extension",
+                    "path": "risk.json",
+                    "role": "risk",
+                    "suggested_role": "other",
+                    "suggested_role_detail": "risk",
+                },
+            ],
+        )
 
     def test_v02_schema_failure_is_blocking_in_submission_validator(self):
         with tempfile.TemporaryDirectory() as tmp:

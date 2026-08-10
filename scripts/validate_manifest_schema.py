@@ -12,7 +12,7 @@ import argparse
 import json
 from pathlib import Path
 
-from manifest_schema import manifest_paths, schema_errors
+from manifest_schema import legacy_role_findings, manifest_paths, schema_errors
 
 
 def main() -> int:
@@ -32,6 +32,7 @@ def main() -> int:
 
     results = []
     for path in paths:
+        manifest = None
         try:
             manifest = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
@@ -48,6 +49,9 @@ def main() -> int:
                 else str(path),
                 "valid": not errors,
                 "errors": errors,
+                "legacy_role_findings": legacy_role_findings(manifest)
+                if isinstance(manifest, dict)
+                else [],
             }
         )
 
@@ -58,6 +62,22 @@ def main() -> int:
         "invalid": len(invalid),
         "strict": args.strict,
         "results": results,
+    }
+    legacy_findings = [
+        finding
+        for item in results
+        for finding in item["legacy_role_findings"]
+    ]
+    payload["legacy_role_summary"] = {
+        "total": len(legacy_findings),
+        "by_classification": {
+            classification: sum(
+                1 for finding in legacy_findings if finding["classification"] == classification
+            )
+            for classification in sorted(
+                {finding["classification"] for finding in legacy_findings}
+            )
+        },
     }
     if args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
@@ -70,6 +90,15 @@ def main() -> int:
                 print(f"  - {error}")
             if len(item["errors"]) > 5:
                 print(f"  - ... {len(item['errors']) - 5} more")
+        for item in results:
+            for finding in item["legacy_role_findings"]:
+                detail = finding["classification"]
+                if "suggested_role" in finding:
+                    detail += f" -> {finding['suggested_role']}"
+                print(
+                    f"- {item['path']}: legacy role advisory "
+                    f"{finding['path']} ({finding['role']}): {detail}"
+                )
     return 1 if args.strict and invalid else 0
 
 
