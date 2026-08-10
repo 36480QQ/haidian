@@ -20,25 +20,25 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 3159036.712,
+      "value": 3159125.179,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "area(union(concept green-space polygons), EPSG:4548)",
+      "formula": "sum(non-overlapping concept green-space polygons)",
       "confidence": "medium",
       "assumptions": [
-        "概念蓝绿网络，不等同法定绿地；并集面积消除要素之间约13.219平方米的小重叠。"
+        "概念蓝绿网络，不等同法定绿地。"
       ]
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 879132.939,
+      "value": 879157.451,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "area(union(concept public-space seams), EPSG:4548)",
+      "formula": "sum(non-overlapping concept public-space seams)",
       "confidence": "medium",
       "assumptions": [
         "概念公共空间，不等同已批准项目边界。"
@@ -46,12 +46,12 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1672787.92,
+      "value": 1672759.049,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "area(union(concept building-interface footprints), EPSG:4548)",
+      "formula": "sum(concept building-interface footprints)",
       "confidence": "medium",
       "assumptions": [
         "方法性建筑界面，不代表现状或建设规模。"
@@ -59,7 +59,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.276797,
+      "value": 0.276805,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.07703,
+      "value": 0.077032,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -609,13 +609,101 @@
       "value": 0,
       "unit": "count",
       "source_files": [
-        "geometry/*.geojson",
-        "report/narrative.md"
+        "geometry/site_boundary.geojson",
+        "visual/assets/worldcover-grid-01.json",
+        "visual/assets/worldcover-grid-02.json",
+        "visual/assets/worldcover-grid-03.json",
+        "visual/assets/worldcover-grid-04.json"
       ],
-      "formula": "count(public observation or surveyed-existing-condition features)",
+      "formula": "required geometry package public-observation features; observation grid is a four-part supporting visual asset",
       "confidence": "high",
       "assumptions": [
-        "当前空间包是概念骨架，不是现状GIS。"
+        "The 1248 observation cells remain outside required design GeoJSON to preserve role separation."
+      ]
+    },
+    "public_observation_grid_cell_count": {
+      "status": "known",
+      "value": 1248,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/worldcover-grid-01.json",
+        "visual/assets/worldcover-grid-02.json",
+        "visual/assets/worldcover-grid-03.json",
+        "visual/assets/worldcover-grid-04.json"
+      ],
+      "formula": "sum(count(features where source_type=public_remote_sensing) across four size-safe parts)",
+      "confidence": "medium",
+      "assumptions": [
+        "2021 observation aggregated to clipped 100m display cells; not a field survey or current-condition certification."
+      ]
+    },
+    "public_observation_source_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/evidence-register.json"
+      ],
+      "formula": "count(tier P source families used: public remote sensing + scoped public-comment record)",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "evidence_driven_design_correction_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/evidence-register.json"
+      ],
+      "formula": "count(design_corrections where status begins implemented)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "agent_replay_trace_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/agent-traces.json"
+      ],
+      "formula": "count(runs)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "human_decision_record_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/agent-traces.json"
+      ],
+      "formula": "count(runs with human_decision)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "responsibility_ledger_record_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/responsibility-ledger.json"
+      ],
+      "formula": "count(records)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_observed_vegetated_share_range": {
+      "status": "known",
+      "value": 0.180823,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/worldcover-evidence.json",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "max(key-area vegetated share)-min(key-area vegetated share)",
+      "confidence": "medium",
+      "assumptions": [
+        "2021 ESA WorldCover signal on provisional key-area polygons."
       ]
     }
   }
