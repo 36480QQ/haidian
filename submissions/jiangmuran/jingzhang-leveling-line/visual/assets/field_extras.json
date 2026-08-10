@@ -1,7 +1,7 @@
 {
  "generated_from": "upstream/main",
- "corpus_size": 435,
- "proposals_with_readable_body": 435,
+ "corpus_size": 440,
+ "proposals_with_readable_body": 440,
  "method_note_zh": "全部读数从 upstream/main 的提案正文直接统计，可用本脚本重跑。只保存计数与目录键，不保存正文。关键词匹配是**下界**：一份用了别的说法的方案不会被计入，因此每个数字应读作「至少」。这一点写在这里而不是留给读者推断。",
  "method_note_en": "Every reading is counted from proposal bodies in upstream/main and is reproducible by re-running this script. Only counts and directory keys are stored, never bodies. Keyword matching is a LOWER BOUND: a proposal that words a provision differently is not counted, so read every figure as 'at least'.",
  "simulation_json": {
@@ -38,7 +38,7 @@
  },
  "zigzag": {
   "named_in_title_or_summary": 20,
-  "mentioned_anywhere": 100,
+  "mentioned_anywhere": 101,
   "census_records_not_matched": 0,
   "method_zh": "命名口径 = census 的 title + summary；提及口径 = 正文全文。"
  },
@@ -89,7 +89,7 @@
    ]
   },
   "remote_and_physical_estop": {
-   "count": 99,
+   "count": 100,
    "keys": [
     "submissions/147228/jingzhang-open-pulse",
     "submissions/147228/zhongzhiyuan-autonomy-commons",
@@ -109,6 +109,7 @@
     "submissions/Empress7211/open-jingzhang",
     "submissions/FA555/jingzhang-chrono-commons",
     "submissions/Fisfzy/jingzhang-ai-track",
+    "submissions/Hyp6666/jingzhang-world-station",
     "submissions/JAVA-LW/jingzhang-reassembly-yard",
     "submissions/JacksonHe04/jingzhang-present",
     "submissions/JamisonDong/jingzhang-capability-line",
@@ -129,12 +130,11 @@
     "submissions/Sonike/jingzhang-handover-line",
     "submissions/Warma10032/civic-apprentice-line",
     "submissions/XuejiFang/jingzhang-ground-truth",
-    "submissions/Zahn-bot/jingzhang-openrail-commons",
-    "submissions/benjaminshe/jingzhang-merge-belt"
+    "submissions/Zahn-bot/jingzhang-openrail-commons"
    ]
   },
   "on_site_safety_officer": {
-   "count": 193,
+   "count": 196,
    "keys": [
     "submissions/147228/ai-era-human-city",
     "submissions/147228/jingzhang-human-city-os",
@@ -166,16 +166,16 @@
     "submissions/GES233/jingzhang-spine",
     "submissions/GHOST-AKU/open-yard-civic-ai-belt",
     "submissions/Grayker007/jingzhang-ai-line",
+    "submissions/HUAN2022A/ai-origin-commons",
     "submissions/HXJ192/jingzhang-ai-symbiosis-belt",
     "submissions/HongmingWang-Rabbit/chevron-line",
+    "submissions/Hyp6666/jingzhang-world-station",
     "submissions/JAVA-LW/jingzhang-reassembly-yard",
     "submissions/JIQINGFENG0818/jingzhang-gauge",
     "submissions/JacksonHe04/jingzhang-present",
     "submissions/JamisonDong/jingzhang-capability-line",
     "submissions/JinGuYuan/jingzhang-proofyard",
-    "submissions/JinGuYuan/jingzhang-proofyard-highline",
-    "submissions/Jun-Howie/jingzhang-open-spine",
-    "submissions/KaiKai306/jingzhang-new-neighbors"
+    "submissions/JinGuYuan/jingzhang-proofyard-highline"
    ]
   },
   "event_log": {
@@ -212,7 +212,7 @@
    ]
   },
   "non_ai_equivalent_path": {
-   "count": 179,
+   "count": 180,
    "keys": [
     "submissions/147228/ai-era-human-city",
     "submissions/147228/jingzhang-human-city-os",
@@ -257,7 +257,7 @@
    ]
   },
   "scenario_level_suspension": {
-   "count": 278,
+   "count": 280,
    "keys": [
     "submissions/0x-focus/jingzhang-ai-link-belt",
     "submissions/147228/ai-era-human-city",

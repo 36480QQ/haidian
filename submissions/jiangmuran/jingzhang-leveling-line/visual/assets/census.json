@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-10",
- "tree_count": 435,
+ "tree_count": 440,
  "gallery_index_count": 309,
  "missing_from_gallery_index": [
   "147228/ai-era-human-city",
@@ -22,7 +22,9 @@
   "Europeowz/jingzhang-civic-ai-spine",
   "FallingSkyQwQ/co-line",
   "GES233/jingzhang-spine",
+  "HUAN2022A/ai-origin-commons",
   "HePudding/ai-civic-weave",
+  "Hyp6666/jingzhang-world-station",
   "JIQINGFENG0818/jingzhang-gauge",
   "Jackychen-12/century-switch-ai-belt",
   "JasonZhangZijun/jingzhang-variations",
@@ -72,12 +74,14 @@
   "gysycg/renzihao-ai-growth-belt",
   "gzhzk/jingzhang-next-stop",
   "hanjin714/jingzhang-takes-the-call",
+  "hemingtsai/jingzhang-ai-innovation-belt",
   "hiing/jingzhang-ai-living-corridor",
   "hiing/jingzhang-handover-commons",
   "hlwhl/weave-jingzhang",
   "inming/jingzhang-mainline",
   "jadenjin/jingzhang-people-first",
   "jiayuqi7813/jingzhang-ai-innovation-belt",
+  "jinbohao1688/jingzhang-ai-vein",
   "jzb1006/jingzhang-ai-civic-loop",
   "kevin7lou/jingzhang-commonweave",
   "kn0where-crypto/decoder-belt",
@@ -117,6 +121,7 @@
   "wenkang-xie/city-as-interface",
   "wnz27/passing-loop-jingzhang",
   "wocaonimaworinixi-collab/jingzhang-ai-native-belt",
+  "xchaor/kongtian-jingzhang-ai-belt",
   "xiaozzzy/jingzhang-commons-loop",
   "xielinde234/jingzhang-ai-vein",
   "yg2224/jingzhang-headroom",
@@ -174,9 +179,9 @@
   "147228/jingzhang-human-city-os": {
    "key": "147228/jingzhang-human-city-os",
    "title": "京张人本城市操作系统：从 AI 展台到 AI 时代人的城",
-   "summary": "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v1.5 把三处重点区串成一条人本主轴，新增固定种子、四镜头、128 组候选的离线空间取舍搜索，并把既有项目族与发布门压成一张概念交付主线。临时几何、已知指标与 unknown 均保持原值。",
+   "summary": "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.2 把同源显示变换几何、三处重点区与五段空间动作压到评审首屏，人工等效、机器边界、停止回放和数据缺口同图可读。临时几何、已知指标与 unknown 均保持原值。",
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
-   "proposal_bytes": 77576,
+   "proposal_bytes": 91559,
    "model": "OpenAI Codex (GPT-5)",
    "model_family": "gpt"
   },
@@ -666,6 +671,15 @@
    "model": "claude-fable-5",
    "model_family": ""
   },
+  "HUAN2022A/ai-origin-commons": {
+   "key": "HUAN2022A/ai-origin-commons",
+   "title": "五校环 · 原点学园带 FIVE-UNIVERSITY ORIGIN RING",
+   "summary": "把京张铁路遗址公园读作一条可学习的城市学园线：以五道口—清华东路一带五校环抱的中段为原点学园总站，北端众智园为全栈试炼场，南端大钟寺为成果市集，用课程链接、代际共学、测试验证与公共展示把AI创新带组织成一条人人都能走进、学到、接上的开放学园。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 29304,
+   "model": "claude-haiku-4-5",
+   "model_family": "claude"
+  },
   "HXJ192/jingzhang-ai-symbiosis-belt": {
    "key": "HXJ192/jingzhang-ai-symbiosis-belt",
    "title": "京张AI共生带 — 从人字轨到智慧脉",
@@ -710,6 +724,15 @@
    "proposal_bytes": 38672,
    "model": "agent-declared-model",
    "model_family": ""
+  },
+  "Hyp6666/jingzhang-world-station": {
+   "key": "Hyp6666/jingzhang-world-station",
+   "title": "京张世界站：世界 AI 城市公议·中试·发布带",
+   "summary": "以世界城市问题为牵引，把百年京张从AI展示廊道升级为可公议、可中试、可复测、可发布的全球城市证据基础设施。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 37153,
+   "model": "OpenAI GPT-5.6 Sol",
+   "model_family": "gpt"
   },
   "ID-VerNe/ai-innovation-belt": {
    "key": "ID-VerNe/ai-innovation-belt",
@@ -2187,6 +2210,15 @@
    "model": "OpenAI Codex multi-agent collaboration",
    "model_family": ""
   },
+  "hemingtsai/jingzhang-ai-innovation-belt": {
+   "key": "hemingtsai/jingzhang-ai-innovation-belt",
+   "title": "智脉京张·轨道上的AI文化都市——百年京张AI创新带城市设计开源方案",
+   "summary": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 30992,
+   "model": "opencode/deepseek-v4-flash-free",
+   "model_family": "deepseek"
+  },
   "heyuxuan0209/y-line": {
    "key": "heyuxuan0209/y-line",
    "title": "人字纪 · 京张AI创新带 The Y-Line",
@@ -2447,6 +2479,15 @@
    "proposal_bytes": 25578,
    "model": "deepseek-v4-flash-0731[1m]",
    "model_family": "other"
+  },
+  "jinbohao1688/jingzhang-ai-vein": {
+   "key": "jinbohao1688/jingzhang-ai-vein",
+   "title": "京张智脉——百年铁轨的AI新生",
+   "summary": "京张智脉共生带（Jingzhang AI Vein）：以京张铁路遗址公园为历史主轴，以众智园、北京AI原点社区、大钟寺三处重点片区为创新锚点，构建一带三核、三区两翼、蓝绿慢行复合环的AI原生城市设计方案。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 37614,
+   "model": "GLM-5.2",
+   "model_family": "glm"
   },
   "jingxun998/jingzhang-proof-city": {
    "key": "jingxun998/jingzhang-proof-city",
@@ -3056,7 +3097,7 @@
    "title": "京张共生走廊 — 五向共生协议：让城市基础设施变成可进化的AI生命体",
    "summary": "五向共生协议：继承共生（铁路遗产→AI测试舞台）、校产共生（转化接口）、人机智共生（人工闭环）、蓝绿共生（4类界面绿地）、昼夜共生（时段护照）。24栋建筑×20条道路×5片绿地×6处公共空间，覆盖12张场景卡（全量七列矩阵含凭证ID）、5+5类画像、3个AI地标、8个行动包、3段分期、社区共治委员会、运营风险控制。全部面积EPSG:4548投影复算，provisional边界标注，自检PASS。",
    "tracks": "[\"jingzhang-heritage-narrative\", \"ai-origin-community\", \"civic-agent-governance\"]",
-   "proposal_bytes": 44302,
+   "proposal_bytes": 66426,
    "model": "OpenSquilla",
    "model_family": ""
   },
@@ -3734,6 +3775,15 @@
    "proposal_bytes": 33471,
    "model": "deepseek-v4-flash",
    "model_family": ""
+  },
+  "xchaor/kongtian-jingzhang-ai-belt": {
+   "key": "xchaor/kongtian-jingzhang-ai-belt",
+   "title": "天枢智带 —— 百年京张·天枢AI创新带城市设计方案（空天智能·双轨百年）",
+   "summary": "以「空天智能·双轨百年」为总体概念，把卫星遥感、GIS空间智能与多智能体调度融入百年京张AI创新带：一廊（京张遗址活力廊道）三区（众智园/AI原点社区/大钟寺）两翼多节点的概念性空间结构，含无缝用地区划、12张AI场景卡、3+朝圣地标与长期运营机制。全部空间建议为概念建议，边界为临时约束范围。",
+   "tracks": "[\"jingzhang-heritage-narrative\", \"civic-agent-governance\", \"ai-public-services\"]",
+   "proposal_bytes": 59867,
+   "model": "hermes-agent-multi-model-pipeline",
+   "model_family": "other"
   },
   "xdlrt/jingzhang-ai-commons": {
    "key": "xdlrt/jingzhang-ai-commons",
