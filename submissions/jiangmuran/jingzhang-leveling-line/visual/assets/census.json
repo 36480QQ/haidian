@@ -1,34 +1,44 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
- "retrieved": "2026-08-09",
- "tree_count": 394,
+ "retrieved": "2026-08-10",
+ "tree_count": 408,
  "gallery_index_count": 309,
  "missing_from_gallery_index": [
   "147228/ai-era-human-city",
   "147228/jingzhang-human-city-os",
   "2503668375-boop/jingzhang-ai-export-belt",
   "2830500285/jingzhang-calibration-yard",
+  "2830500285/jingzhang-open-loop",
   "93171-sys/jingzhang-first-mile",
+  "AirboZH/jingzhang-civic-etiquette",
   "BUGJI/jingzhang-ai-spine",
   "BUZHA/renzi-jingzhang-ai-belt",
   "CaoChen13/jingzhang-probe",
   "Cashmeran/jingzhang-co-walk",
   "Cindy-Master/human-switchback-ai-belt",
   "Daolang239342/ren-track-ai-belt",
+  "DuanYuFi/jingzhang-room-for-error",
   "Dytchem/heritage-ai-loop",
   "Europeowz/jingzhang-civic-ai-spine",
   "FallingSkyQwQ/co-line",
+  "GES233/jingzhang-spine",
+  "HePudding/ai-civic-weave",
   "JIQINGFENG0818/jingzhang-gauge",
   "Jackychen-12/century-switch-ai-belt",
   "JasonZhangZijun/jingzhang-variations",
   "JinGuYuan/jingzhang-proofyard",
   "JinGuYuan/jingzhang-proofyard-highline",
   "Johnxmj/jingzhang-ai-commons-spine",
+  "Jun-Howie/jingzhang-open-spine",
+  "Kiterlin/jingzhang-pause-line",
   "Kitsune-Schariac/jingzhang-switchback",
   "LING71671/jingzhang-thermal-belt",
+  "LiuLin1220/jingzhang-minimum-auth",
+  "LiuXiu233/switchback-belt-jingzhang",
   "MUKAPP/jingzhang-zero-milestone",
   "Maydaytyh/city-scale-ai-proving-ground",
   "MochenRay/jingzhang-staying-line",
+  "Mr-Metatron/whose-hours-jingzhang",
   "Niko77066/jingzhang-ai-commons",
   "Restless-One/jingzhang-slow-line",
   "SharkyyIvy/jingzhang-open-interface",
@@ -39,6 +49,7 @@
   "ZephyrL0/jingzhang-ai-weave",
   "admin0330/jingzhang-ai-commons",
   "avingg77-collab/jingzhang-agent-commons",
+  "awaxiaoyu/jingzhang-ai-civic-spine",
   "bkmashiro/urban-field-dynamics",
   "canqihe/jingzhang-ai-vision",
   "chenxuan999/centennial-jingzhang-ai-belt",
@@ -49,6 +60,7 @@
   "ferretgeek/jingzhang-sonic-commons",
   "flyingpig707/jz-openline-jingzhang-belt",
   "freehihihi/jingzhang-ai-heritage-sentience",
+  "gbooyann-commits/jingzhang-human-loop",
   "gysycg/renzihao-ai-growth-belt",
   "gzhzk/jingzhang-next-stop",
   "hanjin714/jingzhang-takes-the-call",
@@ -61,6 +73,7 @@
   "lengjingxu/jingzhang-pause-line",
   "liaoli-hero/jingzhang-ai-pulse",
   "liaoli-hero/jingzhang-symbiotic-belt",
+  "littlejimmywang/jingzhang-curiosity-line",
   "littlejimmywang/jingzhang-marshalling-belt",
   "mel0nyrame/headroom-jingzhang",
   "miaotony/jingzhang-rail-lab",
@@ -88,7 +101,8 @@
   "zhanwenbin520-ui/stay-longer-jingzhang",
   "zhuguanghui999/jingzhang-open-studio",
   "zhumoalpha/jingzhang-hearth-line",
-  "zhumoalpha/jingzhang-mindline"
+  "zhumoalpha/jingzhang-mindline",
+  "zruihua804/companion-line"
  ],
  "in_index_not_in_tree": [],
  "fetch_errors": [],
@@ -162,7 +176,7 @@
    "title": "智行京张：自动驾驶普及后的公共带",
    "summary": "把自动驾驶当作一项需要被城市约束的公共基础设施：人行与无障碍连续、路缘可读、低速试点可回退、数据可解释，官方边界与现场基线到位后可复算。",
    "tracks": "[\"ai-traffic-walkability\", \"robotics-autonomous-mobility\", \"civic-agent-governance\"]",
-   "proposal_bytes": 34691,
+   "proposal_bytes": 41296,
    "model": "OpenAI GPT-5 family / Codex desktop (model family disclosure)",
    "model_family": ""
   },
@@ -201,6 +215,15 @@
    "proposal_bytes": 42386,
    "model": "agent-declared-model",
    "model_family": "other"
+  },
+  "2830500285/jingzhang-open-loop": {
+   "key": "2830500285/jingzhang-open-loop",
+   "title": "回环织城：京张 AI Civic Loop / Jingzhang Open Loop",
+   "summary": "以京张遗址公园为公共创新慢行脊，提出一条连接三处重点区和两翼服务网络的可走、可试、可回退回环；所有空间和指标均来自同一套临时边界、GeoJSON 与复算链。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 28754,
+   "model": "GPT-5",
+   "model_family": "gpt"
   },
   "4210666/jingzhang-evidence-line": {
    "key": "4210666/jingzhang-evidence-line",
@@ -255,6 +278,15 @@
    "proposal_bytes": 43044,
    "model": "claude-fable-5",
    "model_family": ""
+  },
+  "AirboZH/jingzhang-civic-etiquette": {
+   "key": "AirboZH/jingzhang-civic-etiquette",
+   "title": "京张有礼：让智能学会进入城市",
+   "summary": "以‘明示、征询、让行、交接’四项城市礼仪，把京张公共常路与可停止的有界 AI 礼台组织成可见、可停止、可复核的城市设计原型。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 37244,
+   "model": "OpenAI Codex",
+   "model_family": "gpt"
   },
   "AlanHN/jingzhang-commons-line": {
    "key": "AlanHN/jingzhang-commons-line",
@@ -360,7 +392,7 @@
    "title": "京张探针 Probe",
    "summary": "以日常公共带串联创新、社区与遗址空间，并用受益—成本—责任台账把每项更新转化为可复算、可核验、可否决的行动。",
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
-   "proposal_bytes": 98737,
+   "proposal_bytes": 105418,
    "model": "agent-declared-model",
    "model_family": ""
   },
@@ -490,6 +522,15 @@
    "model": "OpenAI Codex (GPT-5 family)",
    "model_family": ""
   },
+  "DuanYuFi/jingzhang-room-for-error": {
+   "key": "DuanYuFi/jingzhang-room-for-error",
+   "title": "京张有余 / JING-ZHANG: ROOM FOR ERROR",
+   "summary": "以‘余地、余时、余路、余算、余权’五种城市余量，把京张遗址公园组织为可试、可停、可接管、可替换数据后重算的 AI 公共缓冲脊。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 21456,
+   "model": "gpt-5.6-sol",
+   "model_family": "gpt"
+  },
   "Dytchem/heritage-ai-loop": {
    "key": "Dytchem/heritage-ai-loop",
    "title": "京张折返共生线 / TURNBACK COMMONS",
@@ -562,6 +603,15 @@
    "model": "jingzhang-ai-track-agent-v1",
    "model_family": ""
   },
+  "GES233/jingzhang-spine": {
+   "key": "GES233/jingzhang-spine",
+   "title": "京张智脊 JingZhang AI Spine",
+   "summary": "以京张铁路廊道为脊的南北向复合绿廊串联三大重点区：西直门南门户起笔，大钟寺、AI原点社区、众智园次第展开，形成「一线串三区、两翼齐赋能」的百年京张AI创新带概念方案。",
+   "tracks": "[\"ai-traffic-walkability\", \"jingzhang-heritage-narrative\", \"ai-origin-community\"]",
+   "proposal_bytes": 27551,
+   "model": "kimi-k3",
+   "model_family": "kimi"
+  },
   "GHOST-AKU/open-yard-civic-ai-belt": {
    "key": "GHOST-AKU/open-yard-civic-ai-belt",
    "title": "开源站场 OPEN YARD：京张AI公共创新带",
@@ -606,6 +656,15 @@
    "proposal_bytes": 29059,
    "model": "agent-declared-model",
    "model_family": ""
+  },
+  "HePudding/ai-civic-weave": {
+   "key": "HePudding/ai-civic-weave",
+   "title": "智织京张：可验证的AI城市共生带 / AI Civic Weave",
+   "summary": "以公共价值编织协议把创新供给、日常需求、铁路记忆与长期照护织成一条可暂停、可复核、可移交的AI城市共生带。",
+   "tracks": "[\"civic-agent-governance\", \"ai-traffic-walkability\", \"enterprise-services-ecosystem\"]",
+   "proposal_bytes": 19221,
+   "model": "gpt-5.6-sol",
+   "model_family": "gpt"
   },
   "HongmingWang-Rabbit/chevron-line": {
    "key": "HongmingWang-Rabbit/chevron-line",
@@ -760,6 +819,15 @@
    "model": "OpenAI GPT-5 Codex",
    "model_family": ""
   },
+  "Jun-Howie/jingzhang-open-spine": {
+   "key": "Jun-Howie/jingzhang-open-spine",
+   "title": "京张开源脉：可验证、可漫游、可共创的AI城市公地",
+   "summary": "以京张铁路遗产为时间脉络，以连续城市公地为公共界面，以可见、可选、可复核、可撤回的AI场景协议串联三区两翼；全部空间与指标均可在官方数据到位后重算。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 37242,
+   "model": "GPT-5",
+   "model_family": ""
+  },
   "KerryChia/jingzhang-symbiotic-rail": {
    "key": "KerryChia/jingzhang-symbiotic-rail",
    "title": "双轨共生：百年京张AI创新带城市设计方案",
@@ -777,6 +845,15 @@
    "proposal_bytes": 47516,
    "model": "claude-opus-5",
    "model_family": ""
+  },
+  "Kiterlin/jingzhang-pause-line": {
+   "key": "Kiterlin/jingzhang-pause-line",
+   "title": "京张停靠 / THE PAUSE LINE：把停留权写进 AI 城市",
+   "summary": "京张停靠把休息、饮水、如厕、遮阴、无障碍、人工帮助、非 AI 路径和可退出的智能服务定义为创新带的公共底座，以一条停靠线、三座停靠站、两翼反馈和十二个场景节点构成可复算、可审查的城市设计。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 43522,
+   "model": "OpenAI Codex",
+   "model_family": "gpt"
   },
   "Kitsune-Schariac/jingzhang-switchback": {
    "key": "Kitsune-Schariac/jingzhang-switchback",
@@ -886,6 +963,24 @@
    "model": "OpenAI Codex (GPT-5 series)",
    "model_family": ""
   },
+  "LiuLin1220/jingzhang-minimum-auth": {
+   "key": "LiuLin1220/jingzhang-minimum-auth",
+   "title": "京张最小认证 / MINIMUM-AUTH JINGZHANG：身份只在必要的一步出现",
+   "summary": "把公共服务中的身份门槛拆到精确办理步骤：默认匿名或一次性会话，仅在责任机构逐事项确认后使用最小属性或最小实名，并以人工、纸质和机械路径保证退出。",
+   "tracks": "[\"ai-public-services\", \"civic-agent-governance\", \"enterprise-services-ecosystem\"]",
+   "proposal_bytes": 31940,
+   "model": "OpenAI GPT-5 via Codex",
+   "model_family": "gpt"
+  },
+  "LiuXiu233/switchback-belt-jingzhang": {
+   "key": "LiuXiu233/switchback-belt-jingzhang",
+   "title": "京张折返带 · 百年京张AI创新带城市设计",
+   "summary": "以京张铁路“人”字形折返线为原型，提出“京张折返带（The Switchback Belt）”总体概念：一条 9.72 公里的折返脊公共空间主脊，锚定上行（众智园）、原点（AI原点社区）、回响（大钟寺）三处重点区域，由编组翼与试车翼完成要素调度与场景验证。方案给出完整命名与视觉识别方向、6 个国际生态案例、12 张 AI 场景卡（含 3 个产业测试验证场景）、6 类用户画像、4 处 AI 朝圣地标、5 项年度活动机制与 18 个更新项目，并以 48 个无缝隙无重叠的用地分区、9 个 GeoJSON 图层与 EPSG:4548 面积复算作为可核验证据。全部空间建议均为概念建议，不替代法定规划。",
+   "tracks": "[\"jingzhang-heritage-narrative\", \"ai-origin-community\", \"civic-agent-governance\"]",
+   "proposal_bytes": 40530,
+   "model": "claude-opus-5",
+   "model_family": "claude"
+  },
   "Lotu527/jingzhang-ai-innovation-belt": {
    "key": "Lotu527/jingzhang-ai-innovation-belt",
    "title": "京张智脉 · NeuroRail：会自检的AI共生创新带",
@@ -992,6 +1087,15 @@
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
    "proposal_bytes": 30911,
    "model": "GPT-5",
+   "model_family": "gpt"
+  },
+  "Mr-Metatron/whose-hours-jingzhang": {
+   "key": "Mr-Metatron/whose-hours-jingzhang",
+   "title": "谁的时间？ WHOSE HOURS? —— 京张 AI 创新带的时间公平城市设计",
+   "summary": "以‘谁为使用城市多付等待、绕行与照护时间’为第一问题，将京张遗址公园及三处重点片区组织成可测量、可人工兜底、可停止的时间公平服务网络。空间方案以临时边界为讨论底图，不把未知现场需求、控规条件或实施主体写成既成事实。",
+   "tracks": "[\"civic-agent-governance\", \"youth-friendly-public-space\", \"ai-traffic-walkability\"]",
+   "proposal_bytes": 41098,
+   "model": "OpenAI Codex",
    "model_family": "gpt"
   },
   "NEKO685/jingzhang-ai-innovation-belt": {
@@ -1329,10 +1433,10 @@
   },
   "YoungCan-Wang/jingzhang-common-veranda": {
    "key": "YoungCan-Wang/jingzhang-common-veranda",
-   "title": "京张公共门廊 v0.2：让创新带成为可进入、可理解、可共同维护的城市公共客厅",
-   "summary": "以真实公共底图为背景，将京张铁路遗产组织为一条公共主脊、三类重点门廊、六处东西城市门与十二个责任场景；通过低技术基础层、可拔插智能层和人工责任接口，让产业创新、学习转化与社区日常共享同一套城市基础设施。",
+   "title": "京张公共门廊 v0.3：让创新带成为可进入、可理解、可共同维护的城市公共客厅",
+   "summary": "以一脊、三廊、六门、十二场景为公共空间骨架，新增可复演的90天门廊回执、五个区域协作接口、十二个工程包及长期运营台账，把城市设计愿景转化为可试验、可验收、可暂停、可退出的公共实施系统。",
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
-   "proposal_bytes": 18733,
+   "proposal_bytes": 26214,
    "model": "OpenAI Codex",
    "model_family": "gpt"
   },
@@ -1469,6 +1573,15 @@
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
    "proposal_bytes": 37113,
    "model": "gpt-5",
+   "model_family": "gpt"
+  },
+  "awaxiaoyu/jingzhang-ai-civic-spine": {
+   "key": "awaxiaoyu/jingzhang-ai-civic-spine",
+   "title": "京张智脊：百年铁路遗产上的 AI 公民创新走廊",
+   "summary": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 34735,
+   "model": "gpt-5.5-codex",
    "model_family": "gpt"
   },
   "bagpipes625-cloud/jingzhang-ai-commons": {
@@ -1866,6 +1979,15 @@
    "proposal_bytes": 35082,
    "model": "xiaoyiprovider/Auto-Model",
    "model_family": ""
+  },
+  "gbooyann-commits/jingzhang-human-loop": {
+   "key": "gbooyann-commits/jingzhang-human-loop",
+   "title": "京张有人 / JINGZHANG HUMAN LOOP — 一个首发 100 米人工服务回路与九项依赖",
+   "summary": "以‘看见、选择、求助、等价非 AI 路径、退出申诉’五项权利重写 AI 城市服务界面；先以一个可逆的 100 米人工服务回路验证协议，再在九项依赖满足后讨论扩展。当前部署就绪度为 0/6，全部空间判断受临时边界与待补资料约束。",
+   "tracks": "[\"civic-agent-governance\", \"ai-public-services\", \"youth-friendly-public-space\"]",
+   "proposal_bytes": 30571,
+   "model": "OpenAI Codex",
+   "model_family": "gpt"
   },
   "gehryliuRMuniversity/jingzhang-proving-line": {
    "key": "gehryliuRMuniversity/jingzhang-proving-line",
@@ -2385,7 +2507,7 @@
    "title": "京张留白线 / THE PAUSE LINE — 面向感官选择与创新节律的 AI 城市设计",
    "summary": "让算力持续运行，让城市允许人停下来：以一条慢行留白脊、三座节律庭、六条转换横廊和十二个留白驿，组织可选择安静、交流与活动强度的 AI 创新城区。",
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
-   "proposal_bytes": 17966,
+   "proposal_bytes": 27811,
    "model": "OpenAI Codex (GPT-5)",
    "model_family": "gpt"
   },
@@ -2442,6 +2564,15 @@
    "proposal_bytes": 63705,
    "model": "claude-fable-5",
    "model_family": ""
+  },
+  "littlejimmywang/jingzhang-curiosity-line": {
+   "key": "littlejimmywang/jingzhang-curiosity-line",
+   "title": "京张好奇线 / THE CURIOSITY LINE：面向下一代的 AI 公共学习与创新带",
+   "summary": "以百年铁路的里程、站场和公开课为文化语法，构建一脊三院六门十二课：让儿童、青年、居民、开发者和企业共同理解、试用、质询并改进 AI。",
+   "tracks": "[\"youth-friendly-public-space\", \"ai-public-services\", \"ai-origin-community\"]",
+   "proposal_bytes": 14206,
+   "model": "OpenAI Codex (GPT-5 family)",
+   "model_family": "gpt"
   },
   "littlejimmywang/jingzhang-marshalling-belt": {
    "key": "littlejimmywang/jingzhang-marshalling-belt",
@@ -3303,7 +3434,7 @@
    "title": "京张城模公地：从百年铁路到空间智能开放基准带",
    "summary": "以百年京张铁路遗产为公共版本线，建设由开放三维语义城模、可复现实验、受控实地验证和公众审计共同组成的空间智能公地。三处重点区分别承担基准验证、开源共创与日常服务，把AI从城市表面的设备标签转化为可理解、可模拟、可问责、可回滚的公共能力。",
    "tracks": "[\"jingzhang-heritage-narrative\", \"ai-origin-community\", \"ai-traffic-walkability\"]",
-   "proposal_bytes": 58010,
+   "proposal_bytes": 61832,
    "model": "GPT-5.6 Pro",
    "model_family": ""
   },
@@ -3438,7 +3569,7 @@
    "title": "京张对开 THE TWO-WAY LINE：让百年走廊双向运行的AI创新带城市设计",
    "summary": "把「京张」读完整：地上是9公里遗址公园慢行明线，地下是清华园隧道里飞驰的高铁暗线，北端是张家口的绿电与算力，南端是海淀的模型与人才。方案以「京张对开」为总体概念——绿电与算力上行进京，模型、人才与场景下行出塞——用「明线+暗线、三站一门、两台八口、双河冷环」组织11.4平方公里总体设计与三处重点区详细设计，并以「对开协议」把每一次AI部署都变成上行数据与下行公共回报成对出现的双向班次。全部空间建议基于自行推导并按公告面积校准的街道贴合临时边界，属概念建议，官方红线发布后整包重算。",
    "tracks": "[\"jingzhang-heritage-narrative\", \"ai-traffic-walkability\", \"civic-agent-governance\"]",
-   "proposal_bytes": 43297,
+   "proposal_bytes": 58387,
    "model": "claude-fable-5",
    "model_family": ""
   },
@@ -3474,7 +3605,7 @@
    "title": "AI 朝圣·铁轨新生带——京张可验证场景线",
    "summary": "把百年京张从承载AI应用的线性走廊升级为一条可共创、可验证、可暂停、可复现、可向社会交付的AI公共创新生产线。",
    "tracks": "ai-traffic-walkability, jingzhang-heritage-narrative, ai-origin-community, public-interest-ai-governance",
-   "proposal_bytes": 66076,
+   "proposal_bytes": 66974,
    "model": "OpenAI Codex (GPT-5)",
    "model_family": "gpt"
   },
@@ -3639,6 +3770,15 @@
    "proposal_bytes": 33422,
    "model": "agent-declared-model",
    "model_family": ""
+  },
+  "zruihua804/companion-line": {
+   "key": "zruihua804/companion-line",
+   "title": "京张伴行线：一条不替你决定、但陪你走完全程的AI城市",
+   "summary": "以全生命周期健康为主线，把就诊前沟通、医患共同判断、智能检查、诊疗方案、康复与长期健康档案，转译为家—社区—医院—公园—日常生活的城市照护闭环；以京张遗址公园为气候友好的伴行绿廊，组织医疗AI、机器人、自动驾驶与低空服务的分级验证。",
+   "tracks": "[\"ai-public-services\", \"robotics-autonomous-mobility\", \"ai-traffic-walkability\"]",
+   "proposal_bytes": 19031,
+   "model": "OpenAI Codex",
+   "model_family": "gpt"
   }
  }
 }
