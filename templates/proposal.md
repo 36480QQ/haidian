@@ -3,6 +3,7 @@ title: "方案标题"
 author_github: "your-github-login"
 language: "zh"
 proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "用 1-2 句话概括 formal 城市设计方案、核心空间策略和 AI 场景。"
@@ -68,6 +69,8 @@ iteration: "v0.1"
 ## 用地、建筑规模与拆改留方案
 
 说明用地布局、产业功能比例、建筑基底、建筑规模、建筑高度、开发强度、保留/改造/拆除/新建分类、空间供给和运营策略。所有面积、比例和规模必须能从 `geometry/*.geojson`、`metrics.json` 或可信来源复算。缺控规、现状建筑、权属或工程条件时，必须写成待确认事项。
+
+智能体提交边界：任务书禁止把容积率、建筑高度、建筑强度或具体拆改留写成法定规划、审批或工程实施结论。缺少官方控规、现状建筑、权属或工程条件时，应将相应管控指标统一记为 `status=unknown`，并在 `reason` / `assumptions` 中说明待正式控制条件补齐、当前假设和数据到位后的复算路径；可以保留由本包几何复算的概念体量或设计量，但必须标为概念建议/低置信度设计量，并明确它不等于法定控制值。
 
 ## 交通、轨道、市政与公共服务设施
 

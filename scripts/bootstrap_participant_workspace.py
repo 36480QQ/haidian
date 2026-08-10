@@ -15,15 +15,18 @@ from typing import Any
 
 CANONICAL_REPO = "https://github.com/open-city-ai/haidian.git"
 DEFAULT_SPARSE_PATHS = (
-    ".github",
-    "brief",
-    "data",
-    "docs",
-    "schema",
-    "scripts",
-    "skills",
-    "sources",
-    "templates",
+    "/.github",
+    "/brief",
+    "/data",
+    "/docs",
+    "/schema",
+    "/scripts",
+    "/skills",
+    "/scenarios",
+    "/sources",
+    "/templates",
+    "/requirements-review.txt",
+    "/requirements-translation.txt",
 )
 REQUIRED_FILES = (
     "skills/urban-design-ai-submission/SKILL.md",
@@ -34,6 +37,7 @@ REQUIRED_FILES = (
     "scripts/self_check_submission.py",
     "requirements-review.txt",
 )
+REQUIRED_DIRECTORIES = ("scenarios",)
 GITHUB_LOGIN_RE = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,62}[a-z0-9]$")
 
@@ -114,7 +118,7 @@ def command_plan(args: argparse.Namespace, target: Path) -> list[list[str]]:
         origin,
         str(target),
     ]
-    commands = [clone, ["git", "sparse-checkout", "set", *DEFAULT_SPARSE_PATHS]]
+    commands = [clone, ["git", "sparse-checkout", "set", "--no-cone", *DEFAULT_SPARSE_PATHS]]
     if origin.rstrip("/") != args.upstream_url.rstrip("/"):
         commands.extend(
             [
@@ -160,10 +164,14 @@ def build_report(args: argparse.Namespace, target: Path, commands: list[list[str
     if args.dry_run:
         return report
 
-    missing = [rel for rel in REQUIRED_FILES if not (target / rel).is_file()]
-    if missing:
+    missing_files = [rel for rel in REQUIRED_FILES if not (target / rel).is_file()]
+    missing_directories = [rel for rel in REQUIRED_DIRECTORIES if not (target / rel).is_dir()]
+    if missing_files:
         report["ok"] = False
-        report["missing_required_files"] = missing
+        report["missing_required_files"] = missing_files
+    if missing_directories:
+        report["ok"] = False
+        report["missing_required_directories"] = missing_directories
     report["worktree_size_bytes"] = directory_size(target)
     report["worktree_size_human"] = human_size(report["worktree_size_bytes"])
     report["is_sparse_checkout"] = run(
@@ -205,6 +213,20 @@ def render_text(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def render_failure(report: dict[str, Any]) -> str:
+    """Render execution and post-bootstrap validation failures without losing detail."""
+    details: list[str] = []
+    if report.get("error"):
+        details.append(str(report["error"]))
+    for field in ("missing_required_files", "missing_required_directories"):
+        values = report.get(field)
+        if values:
+            details.append(f"{field}: {', '.join(str(value) for value in values)}")
+    if not details:
+        details.append("no additional details were reported")
+    return "Bootstrap failed:\n" + "\n".join(f"  {detail}" for detail in details)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--target", default="haidian", help="New workspace directory")
@@ -240,7 +262,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
-        print(render_text(report) if report.get("ok") else f"Bootstrap failed: {report['error']}")
+        print(render_text(report) if report.get("ok") else render_failure(report))
     return 0 if report.get("ok") else 1
 
 

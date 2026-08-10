@@ -7,13 +7,13 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为公共价值主轴，建立城市AI上线前评测、上线中监督、上线后复盘的开放创新带。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "1.9"
-iteration: 9
+version: "2.0"
+iteration: 10
 ---
 
 # 京张共智环：可验证城市智能体开放带
 
-v1.9 证据路由版｜状态口径：四项包级自检已通过；空间数值与图形仍基于仓库 provisional geometry，聚合数据置信度为 low。可用于概念内容复审，不是官方红线、法定控制或精确面积依据。逐资产权利与生成链见 `report/copyright_statement.md`，整改差异见 `changelog.md`。
+v2.1 原型叙事版｜状态口径：四项包级自检已通过；空间数值与图形仍基于仓库 provisional geometry，聚合数据置信度为 low。可用于概念内容复审，不是官方红线、法定控制或精确面积依据。逐资产权利与生成链见 `report/copyright_statement.md`，整改差异见 `changelog.md`。
 
 英文名：Jing-Zhang Civic AI Loop；口号：让每一次城市智能，都经得起公众检验。
 
@@ -29,21 +29,13 @@ v1.9 证据路由版｜状态口径：四项包级自检已通过；空间数值
 
 四个可审计成果让方案可以被别人接手。 `visual/assets/delivery-matrix.json` 记录8个行动包的依赖、责任位、成果、验收和硬停止；`visual/assets/pilot-protocols.json` 锁定三项试验的问题、基线、对照、指标、兜底与停止线；`visual/assets/civic-agent-receipt.schema.json` 要求每次公共运行留下版本、证据、人工责任、申诉、期限和处置；`visual/assets/asset-rights.json` 逐资产记录作者、外部媒体、许可与哈希。示例收据明确为 synthetic，不证明项目已运行。[metric:machine_readable_contract_count] [metric:receipt_required_field_count]
 
-### 七维评审证据路由：结论必须能回到文件、空间与停止线
+### 一线、三站、一张收据：共智环的最小空间原型
 
-本表不新增未经核实的事实，而把评审所需的七类判断直接路由到本包内可复核证据；同一缺口不跨维重复包装，法定数据未取得时继续保持 unknown/pending。
+- 一线：把百年京张铁路遗址公园作为连续公共验收线。AI 不是沿线展品，而是在普通通行、人工服务和非数字兜底都成立后，才可进入的小规模公共试验。
+- 三站：众智园验证全栈与安全，AI原点社区验证开放转化，大钟寺验证日常体验与消费权益；两翼分别提供专业要素和受控真实场景。每站都同时设置进入、接管、申诉和退出界面。
+- 一张收据：每次城市智能运行都留下版本、证据、人工责任、最差组结果、申诉、期限与处置；独立复核据此决定扩展、返修或退出。硬停止优先于平均指标和传播效果。[source:AGENT-TASKBOOK] [depth:overall_spatial_structure] [metric:machine_readable_contract_count] [metric:receipt_required_field_count]
 
-|评审维度|本案可核对的核心证据|边界与反证条件|
-|---|---|---|
-|任务书相关性|三定位、五功能、三区两翼与 agent.1—agent.6 逐项落到场景、空间和行动包 [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]|任一任务仅有口号、无交付物，即视为未闭环|
-|原创性|“公共验收线—故障剧场—城市智能体收据”把铁路站线语法转为可质疑、可退出、可复测的公共基础设施 [metric:receipt_required_field_count]|若普通路径、人工服务或退出后公共价值不成立，不以技术新颖性补分|
-|AI与规划创新|AI只在慢行、首层、蓝绿、公共服务和三类受控测试中按数据门、人工接管与空间降级运行 [data:geometry/public_space.geojson#PUBLIC-001] [depth:overall_spatial_structure]|不把屏幕、机器人数量或概念几何当作城市智能成立的证据|
-|可实施性|AP0—AP7、G0—G4、90天低后悔准备、P1—P3协议及责任/预算闸门 [depth:phasing_implementation] [metric:action_package_count] [metric:decision_gate_count]|权属、预算、采购价、真实主体与工程量未核，保持 pending [assumption:A-OPERATIONS-001]|
-|公共利益与包容|六类用户、最差组结果、非数字通道、无障碍任务链、人工申诉和少数意见 [depth:overall_spatial_structure]|任何试验削弱真人服务、基本通行或行动不便者完成率即停止|
-|风险与合规|最小数据、合成/清权数据、用途隔离、删除证明、独立评测与逐资产权利登记 [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [assumption:A-DATA-001]|隐私、文保、消防、权益或来源证明缺失时不得进入下一门槛|
-|表达完整度|中英文正文、五图、A3/A0、HTML、GeoJSON、指标/标准/深度矩阵与机器合同相互索引 [depth:risk_missing_data]|图文冲突时以带来源和置信度的机器可读记录为准，并触发联动重算|
-
-一条贯穿式验收链。 公众问题卡进入 G0 后，先核来源与空间条件，再建立非AI基线和最差组口径；原型只在合成或清权数据中预演，通过 G2 才进入限域、限时、有人值守的真实任务；每次运行生成收据，由独立复核决定扩展、返修或退出。任何硬停止都优先于平均指标和传播效果。这条链同时连接 agent.1 的品牌协作、agent.2—3 的空间深化、agent.4 的场景协议、agent.5 的公共叙事与 agent.6 的实施运营。[source:AGENT-TASKBOOK] [metric:pilot_protocol_count] [metric:machine_readable_contract_count]
+这套“铁路站线语法—公共验收空间—运行收据”是本案的原创闭环：空间不是技术容器，而是公众能够质疑、拒绝并复测城市 AI 的制度界面。法定条件未取得时，责任、预算和数据继续保持 pending [assumption:A-OPERATIONS-001] [assumption:A-DATA-001]。
 
 |评审问题|本方案的可核验回答|不得被误读为|
 |---|---|---|
@@ -211,6 +203,10 @@ A“模型上街前”评测场：偏见、幻觉、鲁棒、隐私和无障碍�
 ## 从概念到空间：一条可验证的城市剖面
 
 共智环以“慢行公共层—可逆试验层—城市服务层”三层叠合，而不是用单一地标替代城市设计。慢行公共层保证连续、免费、无障碍的日常通行；可逆试验层只在标识清楚的时间和边界内运行原型；城市服务层把算力、法务、评测、申诉和维护嵌入既有建筑。三层共享一条不可让渡原则：测试不得挤占基本通行、绿地和非数字服务。
+
+### 公共道岔原则：AI只能进支线，日常生活永远走得通
+
+借用京张铁路最基本的空间动作，每个验证站把连续慢行与人工服务设为不依赖算法的“正线”，把传感器、机器人和智能体体验放进可物理隔离、可拆除的“试验支线”。入口处只设一个可读的公共道岔：公众可直行绕过、主动进入或请求人工接管；一旦触发停止条件，关闭的是试验支线，正线、盲道、座椅、饮水和人工求助继续开放。这个道岔不是未经核实的工程点位，而是所有后续1:200断面必须验证的空间规则：支线不得穿越基本通行，关闭后不得留下数据依赖、设备障碍或不可恢复地面。[depth:overall_spatial_structure] [metric:spatial_interface_type_count]
 
 ### 五类空间界面控制
 |界面|设计动作|AI介入边界|人工验收|
@@ -463,7 +459,7 @@ A“模型上街前”评测场：偏见、幻觉、鲁棒、隐私和无障碍�
 
 ## 百米故障剧场：把“可退出”画成一段真实街道
 
-v1.9 保留并收敛首期空间证据：将其收敛为每个重点区可复核的首个100米，不是新增工程范围或精确尺寸承诺。其剖面固定叠加五层：铁路记忆线、雨洪树荫带、连续步行骑行、可逆试验口袋、既有建筑首层；尺寸均标注“现场待实测”，法定控制与权属未核前不得用于施工。[depth:overall_spatial_structure] [data:geometry/public_space.geojson#PUBLIC-001]
+v2.1 保留并收敛首期空间证据：将其收敛为每个重点区可复核的首个100米，不是新增工程范围或精确尺寸承诺。其剖面固定叠加五层：铁路记忆线、雨洪树荫带、连续步行骑行、可逆试验口袋、既有建筑首层；尺寸均标注“现场待实测”，法定控制与权属未核前不得用于施工。[depth:overall_spatial_structure] [data:geometry/public_space.geojson#PUBLIC-001]
 
 这100米同时是面向普通人的“故障剧场”：A日常态保持普通路径与人工服务；B争议态允许解释、拒绝和人工接管；C故障态停机、物理绕行并开放现场求助；D复盘态发布运行收据、修复证明和少数意见。AI设备撤除后，连续通行、遮荫雨洪、座椅饮水、历史导视和人工窗口仍成立，因而数字采购失败不等于公共空间投资归零。[metric:spatial_interface_type_count] [metric:receipt_required_field_count]
 

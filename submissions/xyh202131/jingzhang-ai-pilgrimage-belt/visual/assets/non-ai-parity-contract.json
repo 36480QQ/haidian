@@ -4,6 +4,7 @@
   "status": "conceptual",
   "purpose": "把“提供非 AI 选项”升级为“证明基本服务等价”，防止人工或离线通道只存在于文字中却无法完成同一基本任务。",
   "scope": "所有申请进入 G2 或 G3 的公共服务场景",
+  "pre_g1_synthetic_rehearsal_rule": "T-02 may exercise expected non-AI routing, stop, and recovery decisions with synthetic cases at G0, but this does not observe availability, equal rights, completion, cost, appeal, accessibility, or any other operating-parity result.",
   "review_rule": {
     "presence_only_pass_allowed": false,
     "same_interface_required": false,
@@ -43,6 +44,7 @@
     "journeys_with_ai_and_non_ai_paths": 4,
     "journeys_with_equal_rights_rule": 4,
     "journeys_with_exit_action": 4,
+    "completed_synthetic_pre_g1_t02_rehearsals": 1,
     "current_operating_results_known": 0
   },
   "test_journeys": [
@@ -66,7 +68,7 @@
       ],
       "exit_action": "暂停 AI 路线推荐并恢复现场人工核查，直到非 AI 路径和障碍信息同时可用。",
       "evidence_refs": [
-        "proposal.md#全民可达路径协议",
+        "proposal.md#交通轨道市政与公共服务设施",
         "geometry/constraints.geojson#SCENE-009",
         "geometry/public_space.geojson#PUBLIC-004"
       ],
@@ -92,9 +94,21 @@
       ],
       "exit_action": "下线智能导航并保留人工与公开来源入口，完成来源同步和申诉复测后再申请恢复。",
       "evidence_refs": [
-        "proposal.md#十类服务场景与两个公共治理节点",
-        "geometry/constraints.geojson#SCENE-011"
+        "proposal.md#四门制与场景护照",
+        "geometry/constraints.geojson#SCENE-011",
+        "visual/assets/g0-offline-enterprise-service-baseline.json#T02-G0-G1-REPLAY-1.0.0",
+        "visual/assets/t02-g0-g1-replay-result.json#T02-G0-G1-SYNTHETIC-REPLAY-RESULT-V1"
       ],
+      "synthetic_pre_g1_rehearsal": {
+        "status": "pass",
+        "fixture_count": 10,
+        "exact_expected_decision_match_count": 10,
+        "decision_mismatch_count": 0,
+        "non_ai_path_decisions_exercised": true,
+        "observed_non_ai_availability": false,
+        "observed_equal_rights_cost_or_outcome": false,
+        "real_parity_result_known": false
+      },
       "result_status": "unknown"
     },
     {
@@ -117,7 +131,7 @@
       ],
       "exit_action": "停止 AI 输出并切换至人工和权威机构信息；边界与入口复核通过前不得恢复。",
       "evidence_refs": [
-        "proposal.md#十类服务场景与两个公共治理节点",
+        "proposal.md#四门制与场景护照",
         "geometry/constraints.geojson#SCENE-012"
       ],
       "result_status": "unknown"
@@ -142,7 +156,7 @@
       ],
       "exit_action": "暂停数字渠道自动分流，统一改由人工登记和分派，直至跨渠道队列审计通过。",
       "evidence_refs": [
-        "proposal.md#运营框架",
+        "proposal.md#更新项目清单实施政策与分期计划",
         "self_check.json#SCENARIO_PROTOCOL",
         "self_check.json#PUBLIC_INTEREST_FALLBACK"
       ],

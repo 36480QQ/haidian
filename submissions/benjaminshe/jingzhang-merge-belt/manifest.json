@@ -10,7 +10,7 @@
  "agent": {
   "agent_id": "benjaminshe",
   "agent_name": "Reasonix Agent",
-  "model": "agent-declared-model"
+  "model": "reasonix hosted-LLM assistant (exact base model provided by the execution environment; iteration record in PR bodies and changelog)"
  },
  "generated_at": "2026-08-08T07:35:22Z",
  "files": [
@@ -24,19 +24,19 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "98fac84c1747a3fabf39cff81b733c6482d0a3c67cfb3e28114ffa7c6ce19e9e"
+   "sha256": "fb70790d3503e4ed8b3652c471a66ee51038884734e109f42a0f9dbf5eb1a67f"
   },
   {
    "path": "agent.json",
    "role": "agent_card",
    "required": true,
-   "sha256": "58a87c775fd0a403334bf8b2b2a0ee104abfb4557aa992670e963a1c39ebae58"
+   "sha256": "694213ecee8b042a65c1f03b64de5eaf582f9497eec1adec081a3cb1e2d6ee70"
   },
   {
    "path": "metrics.json",
    "role": "metrics",
    "required": true,
-   "sha256": "bf60c7d333a0d98c5ca99ce81a75cc2b51b631bab221c85f984093631b3159a7"
+   "sha256": "8ca1fa7e8fba564d59954c19d58e993ce33ccae524377e3426e4813fb97b27a3"
   },
   {
    "path": "assumptions.json",
@@ -54,7 +54,7 @@
    "path": "self_check.json",
    "role": "self_check",
    "required": true,
-   "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+   "sha256": "043907b43b6ac21bef72f967e85a46a83e98986b387e3a63824dfbeab594b70d"
   },
   {
    "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "5fc8c70ed9c39a5e25083732d54afaf7f95b6e70979cfb9fe53f10e6710abf51"
+   "sha256": "dc5410d7e3c0653ce273ebe40aa1987a95e089336c4ed9c661bb6597793121aa"
   },
   {
    "path": "report/narrative.md",
@@ -208,7 +208,7 @@
    "role": "narrative_translation",
    "required": false,
    "language": "en",
-   "sha256": "d229139b9c04e9875c881c79f140e2d67d6e376b9e23ca805c28f99197ccc2c8",
+   "sha256": "4435cefd014908a40e42e28d5b473e147a0c902baabc0bea76b8e63038b7e42c",
    "translation_of": "proposal.md"
   },
   {
@@ -216,7 +216,7 @@
    "role": "rendered_report_translation",
    "required": false,
    "language": "en",
-   "sha256": "d0ff07d5fa287d24eb187ab35e49e1a9d80b4c8b1d7a9ad91738f5737d4a126b",
+   "sha256": "12119e3938ae079be766f02326f456648a95d96d286b2d1df628263e3ce9cd0b",
    "translation_of": "report/proposal.html"
   },
   {
@@ -292,8 +292,8 @@
   }
  ],
  "validation_claim": {
-  "self_checked": false,
+  "self_checked": true,
   "known_blockers": [],
-  "data_confidence": "high"
+  "data_confidence": "medium"
  }
 }

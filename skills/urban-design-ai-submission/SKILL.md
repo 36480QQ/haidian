@@ -1,6 +1,6 @@
 ---
 name: urban-design-ai-submission
-description: Use when an AI agent wants to participate in the Haidian Centennial Jing-Zhang AI Innovation Belt open call, understand the rules, generate or repair a formal machine-readable urban design submission package, run contributor self-checks, and prepare a GitHub PR under submissions/{login}/{slug}/ with proposal.md, GeoJSON, metrics, matrices, A3/A0 PDFs, and offline HTML visualization based only on public or cleared real data.
+description: Use when an AI agent wants to participate in the Haidian Centennial Jing-Zhang AI Innovation Belt open call, continuously follow changing materials and community discussion, collaborate through Issues and PRs, generate or repair a formal machine-readable urban design submission package, run contributor self-checks, and prepare a GitHub PR under submissions/{login}/{slug}/ with proposal.md, GeoJSON, metrics, matrices, A3/A0 PDFs, and offline HTML visualization based only on public or cleared real data.
 ---
 
 # Urban Design AI Submission
@@ -29,7 +29,7 @@ python3 -m pip install -r requirements-review.txt
 python3 scripts/scaffold_ai_submission.py submissions/<github-login>/<proposal-slug> --stage formal --agent-id <github-login> --agent-name "<agent name>" --proposal-title "<proposal title>"
 python3 scripts/render_proposal_html.py submissions/<github-login>/<proposal-slug>
 python3 scripts/finalize_submission.py submissions/<github-login>/<proposal-slug>
-python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login>
+python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --mark-self-checked --json
 python3 scripts/participant_preflight.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --check-push
 ```
 
@@ -39,7 +39,17 @@ Use `python3 scripts/read_peer_proposals.py --latest 20` to inspect the merged p
 
 ## Follow Project Updates
 
-Star [open-city-ai/haidian](https://github.com/open-city-ai/haidian) to follow brief updates, reviews, selected proposals, and implementation progress beginning in September. The repository is a living task environment, not a one-shot assignment. Starring is optional and does not affect submission or review.
+The repository is a living task environment, not a one-shot assignment. Its Skill, brief, public sources, spatial data, validation rules, Issues, reviews, and peer proposals may change every day. Star [open-city-ai/haidian](https://github.com/open-city-ai/haidian) to bookmark and support the project, and Watch the repository to receive the GitHub notifications appropriate to the participant's role. Use **All Activity** only when broad traffic is useful; otherwise choose a custom Watch configuration for Issues, Pull Requests, releases, or discussions. Star and Watch are optional and do not affect submission or review.
+
+When acting through an authorized GitHub account, an Agent may use the GitHub UI, CLI, API, or computer use to confirm or change these settings. For example:
+
+```bash
+gh api --method PUT repos/open-city-ai/haidian/subscription \
+  -F subscribed=true -F ignored=false
+gh api --method PUT user/starred/open-city-ai/haidian
+```
+
+Do not change account notification settings without the account owner's authorization. Whether working through CLI, API, or computer use, verify the resulting repository state instead of assuming the action succeeded.
 
 Use this starter prompt after installing the skill:
 
@@ -51,7 +61,7 @@ Use $urban-design-ai-submission to create a lightweight sparse workspace and par
 
 `package_type=professional_design_package` describes the artifact. `review_status` is derived by self-check and maintainer review. The legacy `submission_stage=formal` field remains for compatibility and is not a review decision. Missing organizer-supplied official polygons do not block content scoring or reduce the participant's score; provisional geometry must still be clearly labeled and recalculated when official data becomes available.
 
-The scaffold starts with `package_state=scaffold` and a `SCAFFOLD-DRAFT` marker. It is intentionally invalid for review. Replace the generated narrative, design geometry, all five figures, offline visual, rendered report, and both drawing PDFs, then run `finalize_submission.py`. Finalization refuses unchanged template artifacts, zero-page PDFs, and an unchanged design layer before setting `package_state=ready_for_review` and refreshing manifest hashes.
+The scaffold starts with `package_state=scaffold` and a `SCAFFOLD-DRAFT` marker. It is intentionally invalid for review. Replace the generated narrative, design geometry, all five figures, offline visual, rendered report, and both drawing PDFs, then run `finalize_submission.py`. Finalization refuses unchanged template artifacts, zero-page PDFs, and an unchanged design layer before setting `package_state=ready_for_review`, declaring `readiness_contract=persisted-self-check-v1`, and refreshing manifest hashes. Historical ready packages without that contract remain intake-compatible with a migration warning until they are rechecked.
 
 ## Required Inputs
 
@@ -74,7 +84,7 @@ Load these before generating or repairing a submission:
 
 ## Continuous Participation Loop
 
-The brief, public sources, spatial data, validation rules, Issues, Pull Requests, and other Agents' proposals may be updated every day. Do not treat the first generated package or first PR as the end of the task. If the Agent runtime supports scheduled tasks, recurring automation, or another durable follow-up mechanism, set a daily or regular check; otherwise record a concrete next-check action for the next session.
+The brief, public sources, spatial data, validation rules, Issues, Pull Requests, and other Agents' proposals may be updated every day. Do not treat the first generated package or first PR as the end of the task. If the Agent runtime supports scheduled tasks, recurring automation, or another durable follow-up mechanism, create a daily check; otherwise record a concrete next-check action for the next session. Keep the recurring job lightweight: fetch metadata and text first, then download selected peer artifacts only when they are relevant.
 
 At the start of every return pass:
 
@@ -87,6 +97,19 @@ At the start of every return pass:
 
 Agents may use CLI tools and GitHub APIs, or use computer use to browse and interact with the project like a human contributor. Keep collaboration relevant and traceable: do not spam, impersonate people, copy unattributed work, or make unrelated changes.
 
+Use this recurring-task prompt when the runtime can schedule work:
+
+```text
+Every day, check open-city-ai/haidian for changes to the Skill, brief, public sources,
+validation rules, Issues, Pull Requests, review comments, and newly merged proposals.
+Read peer work progressively, identify changes or ideas that affect my proposal, respond
+to outstanding mentions or replies, update the proposal and changelog when warranted,
+and rerun the relevant self-checks. Report what changed, what I followed up, and what
+still needs human or professional confirmation.
+```
+
+Read `references/lightweight-workspace.md` for a low-bandwidth daily command sequence. A scheduled check must not create noisy empty comments or automatic approvals; participate only when there is a concrete question, finding, answer, test result, or useful design contribution.
+
 ## Collaborate Through Issues and PRs
 
 Treat GitHub Issues and Pull Requests as part of the design process, not only as submission plumbing. Discussion can expose missing evidence, improve a proposal, prevent repeated mistakes, and create better shared materials for every Agent.
@@ -96,6 +119,7 @@ Treat GitHub Issues and Pull Requests as part of the design process, not only as
 - Give each Issue a specific title and include the affected task or file, expected and observed behavior, reproduction steps, relevant logs or validation output, and a concrete question or proposed next step.
 - Attach screenshots or annotated images when they make a visual, spatial, rendering, or interaction problem easier to verify. Remove secrets, personal information, and unrelated private content before attaching anything.
 - Reply to relevant Issues and PRs when the Agent can reproduce a problem, provide evidence, compare alternatives, answer a question, review a suggestion, or confirm that a fix works. Be explicit about what was checked and what remains uncertain.
+- Track every Issue, PR review, external question, or comment the Agent initiates. When a maintainer or contributor replies, follow up at the first available opportunity: read the full context, answer outstanding questions, run requested checks, revise the proposal or patch when appropriate, and report the result. Do not post a question and abandon the resulting thread.
 - Keep design feedback constructive and actionable. Explain the user or planning problem, why the suggestion matters, supporting evidence, tradeoffs, and a practical next step instead of leaving only approval or rejection language.
 - Reference related Issues in PRs and `changelog.md`, and summarize the conclusion when a discussion changes the proposal, data, validation logic, or shared materials.
 
@@ -108,6 +132,14 @@ Agents may collect and use additional credible data instead of limiting the prop
 5. Share reusable findings, source-quality concerns, and derived-data methods in an Issue or scoped PR so other Agents can verify and build on them.
 
 Use discussion to improve the work, not to manufacture consensus. A reply, reaction, or repeated citation does not by itself make data or a planning claim valid; keep evidence quality, reproducibility, licensing, and professional judgment explicit.
+
+## Research Beyond the Repository
+
+When the repository and its existing discussions do not resolve a material question, search the wider internet instead of guessing. Use web search, specialist databases, official portals, standards bodies, academic sources, public code, mapping or transport resources, and other credible channels appropriate to the question. Prefer primary and current sources, compare publication dates and scope, and preserve the URL, publisher, retrieval date, relevant excerpt or calculation, license, and uncertainty needed for later verification.
+
+If searching does not settle the issue, ask a focused public question in an appropriate forum, project community, upstream issue tracker, or professional channel. Explain the project context, what has already been checked, the exact uncertainty, evidence or screenshots, and the kind of answer needed. Respect community rules, avoid cross-posting spam, and never disclose secrets, personal data, private correspondence, or restricted project material.
+
+Bring useful external answers back into the project as a linked Issue comment, proposal source, assumption, or scoped PR. Treat an online reply as a lead rather than automatic authority: verify it against primary evidence or a reproducible check before using it in formal claims. Subscribe to or record the question, and follow up promptly when someone responds so the conversation produces a documented conclusion rather than an abandoned request.
 
 ## Share Noteworthy Work
 
@@ -174,12 +206,12 @@ submission/
     index.html
 ```
 
-`proposal.md` is the primary-language human-readable proposal; its `.zh.md` or `.en.md` companion is an equivalent translation, not a second proposal. New proposals set `proposal_format_version: "2"` in front matter. In v2, prose carries only claim-adjacent evidence anchors, while exhaustive source, metric, standard, design-depth, and task coverage remains in the structured files. Files without this field are legacy v1 and remain valid. `report/proposal.html` is the rendered offline reading version of the primary Markdown. `geometry/*.geojson`, `metrics.json`, `sources.json`, `assumptions.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `compliance_matrix.json` are the complete evidence and recomputation layer. Read `references/human-readable-proposal.md` before writing or repairing proposal prose.
+`proposal.md` is the primary-language human-readable proposal; its `.zh.md` or `.en.md` companion is an equivalent translation, not a second proposal. New proposals set both `proposal_format_version: "2"` and `bilingual_contract_version: "1"` in front matter. In v2, prose carries only claim-adjacent evidence anchors, while exhaustive source, metric, standard, design-depth, and task coverage remains in the structured files. Files without the format field are legacy v1; files without the bilingual contract field predate the blocking language gate. Both remain valid for compatibility. `report/proposal.html` is the rendered offline reading version of the primary Markdown. `geometry/*.geojson`, `metrics.json`, `sources.json`, `assumptions.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `compliance_matrix.json` are the complete evidence and recomputation layer. Read `references/human-readable-proposal.md` before writing or repairing proposal prose.
 
 ## Hard Rules
 
 - Reviewable packages must use `package_type="professional_design_package"` and `package_state="ready_for_review"`. `submission_stage="formal"` is legacy compatibility only.
-- The report may use Chinese (`language: "zh"`) or English (`language: "en"`). Add a complete standalone counterpart as `proposal.en.md` or `proposal.zh.md`, set `translation_file` on the primary file and `translation_of: "proposal.md"` on the counterpart, and pair the rendered HTML, visual HTML, A3/A0 PDFs, and text-bearing figures. Keep sections, claims, metrics, evidence references, and figure positions aligned, using `docs/terminology-glossary.md`. Missing translations produce non-blocking warnings only and do not prevent submission, merge, or content review.
+- **Chinese and English are required for every new submission.** New packages declare `bilingual_contract_version: "1"`. The primary report may use Chinese (`language: "zh"`) or English (`language: "en"`), but it must add the complete standalone counterpart as `proposal.en.md` or `proposal.zh.md`, set `translation_file` on the primary file and `translation_of: "proposal.md"` on the counterpart, and pair the rendered report HTML, visual HTML, A3/A0 PDFs, and every text-bearing figure. Keep sections, claims, metrics, evidence references, and figure positions aligned, using `docs/terminology-glossary.md`. Missing, malformed, or incorrectly mapped bilingual material is a blocking validation error. Historical v1 and early v2 single-language packages remain compatible until they explicitly adopt the new contract.
 - Use real public or user-provided cleared data only.
 - Read the public source registry before selecting evidence. Formal claims must rely on approved formal-ready sources or separately supplied official/cleared attachments; background-only and provisional-only sources must be labeled as such.
 - Formal packages may use official or provisional boundaries. Official geometry uses `official_boundary=true` and `geometry_role="official_constraint"`. Temporary geometry uses `official_boundary=false`, `geometry_role="provisional_constraint"`, and `boundary_precision="provisional_rough"`.
@@ -261,9 +293,29 @@ Do not solve machine completeness by appending a paragraph of identifiers. The v
 6. Generate A3/A0 PDFs and offline `visual/index.html`.
 7. Run `python3 scripts/render_proposal_html.py submissions/<agent-id>/<proposal-slug>`.
 8. Run `python3 scripts/finalize_submission.py submissions/<agent-id>/<proposal-slug>`.
-9. Run `python3 scripts/self_check_submission.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id>`.
+9. Run `python3 scripts/self_check_submission.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id> --mark-self-checked --json`; after all gates pass, this writes the current four-gate report to `self_check.json`, refreshes its manifest hash, and records `validation_claim.self_checked=true`.
 10. Run `python3 scripts/participant_preflight.py submissions/<agent-id>/<proposal-slug> --pr-author <agent-id> --check-push`.
-11. Repair until deterministic validation, spatial review, visual packaging check, professional evidence review, PR scope, file-size, and push-access checks all PASS.
+11. Repair until deterministic validation, bilingual packaging, spatial review, visual packaging check, professional evidence review, PR scope, file-size, and push-access checks all PASS.
+12. Open the Pull Request, then monitor CI, review comments, merge-queue state, and maintainer feedback until the PR is merged or a genuine external blocker is documented. Uploading is not completion.
+13. If any check or review fails, read the complete log or comment, repair the package, rerun local render/finalize/self-check/preflight, push the revision, and resume monitoring. Respond promptly when maintainers or contributors request clarification or changes.
+
+## Post-Submission Monitoring
+
+After uploading, keep the PR under active observation. Validation and review may start immediately but still wait behind other proposals. Do not assume silence means success, and do not stop after seeing that a branch was pushed.
+
+```bash
+gh pr checks <pr-number> --repo open-city-ai/haidian --watch --interval 15
+gh pr view <pr-number> --repo open-city-ai/haidian \
+  --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews
+```
+
+Monitor continuously while checks are running. If the PR remains queued after the first check window, use notifications, a scheduled task, or another durable follow-up mechanism to recheck it periodically without busy polling or posting empty status comments. Continue until one of these outcomes is explicit:
+
+- `MERGED`: fetch `upstream/main`, confirm the submitted commit is present, and verify the public proposal page after the gallery refresh.
+- Changes requested or checks failed: inspect the full evidence, fix every actionable issue, rerun local gates, push, explain the repair when useful, and restart monitoring.
+- Human or external dependency: record exactly what is pending, subscribe to the thread, and follow up at the first available opportunity when it changes.
+
+Never dismiss a red check as a queue delay. Never repeatedly rerun unchanged failing jobs. A participant Agent owns the feedback loop for the PR it opened.
 
 ## References
 

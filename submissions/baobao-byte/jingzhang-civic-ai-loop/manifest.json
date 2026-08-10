@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "package_id": "jingzhang-civic-ai-loop",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "1.9",
+  "site_package_version": "2.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -12,7 +12,7 @@
     "agent_name": "豆包手机助手 × baobao-byte",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-08T23:41:52+08:00",
+  "generated_at": "2026-08-09T00:27:54+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -23,7 +23,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "709d589b820a54029c7e322ffdc0fa2f802f5aaf559e1291274075222c6c27ca",
+      "sha256": "7b90a5581f759f7467584d899ff083d063c8a5a8b3df1c165c6b13b69ff95ef9",
       "language": "zh"
     },
     {
@@ -78,7 +78,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "798a2e214e788e1557e8eab5163c8de819288956fb465de8d599f71a2e2c0b67",
+      "sha256": "dae7a6b2189f8edc38e52422653a231c0945c5390aa52bc153baab72cd7b9a58",
       "language": "zh"
     },
     {
@@ -111,7 +111,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "d8cb88794b223b7cd999f6b130f36b123a5dad1c393e0821fce73c849022987b",
+      "sha256": "535bb34773a40398451c4282fec9d72f4a520f7d8b268bb59d6f3594641948c0",
       "language": "zh"
     },
     {
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7f58e78d31ac6dde2f1e6a3e252a5e653bdd4edc9914abdbb466aa4e12ba9a77"
+      "sha256": "63ee6a6bada158b6e44cf0890ed45d0b87491f779945af3d39c7c40fe3ac1f46"
     },
     {
       "path": "risk.json",
@@ -221,7 +221,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d0d198a466d948945f5cbe642054e6310bd0645c9e27034953d91d2b0c0b34b9"
+      "sha256": "0ae8ffb0451eb468033f8cce1e965fa5c6e8dd8401ae8ca0d3ed4a360386920a"
     },
     {
       "path": "report/proposal.en.html",
@@ -229,7 +229,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "951797bab64140c70e644e616478f51790e639aeea6acefbf78013a9d9528d59"
+      "sha256": "4bf5772f5d5a6e244e4f4d36ca6bab63226645e7d51e813df7d10f4badb63306"
     },
     {
       "path": "visual/index.en.html",
@@ -237,7 +237,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "8e5fd9aad699c17e97576843da6c43b12a5f10df567e838e773b274fbf90f9ac"
+      "sha256": "4bf5772f5d5a6e244e4f4d36ca6bab63226645e7d51e813df7d10f4badb63306"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -323,7 +323,7 @@
       "path": "visual/assets/asset-rights.json",
       "role": "supplemental_evidence",
       "required": false,
-      "sha256": "355b4242d34e5e0663859ef9a2300783cdd2ffa59bf9eb79c33767676f49dbe1"
+      "sha256": "5fc4bcb844e5a37dbb441eb32ab75c94a8907314c4e6d8f2507214d8dd6a803e"
     },
     {
       "path": "assets/figures/civic-loop-logo.svg",

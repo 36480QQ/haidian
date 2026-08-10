@@ -49,7 +49,7 @@ python3 scripts/maintainer_review.py \
 把命令输出复制到 PR comment。maintainer review 的可见结果只在 PR comment 中展示，不进入 `submissions-data.js`、方案卡片或公开展示页。按建议状态处理：
 
 - `request-changes`：要求参赛者修复后再审。
-- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。
+- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。历史包在 gallery 中可能为公开连续性保留既有展示分类，但该分类不构成新的可信正式证据。
 - `formal-review-ready`：可进入正式专业评分。
 - `reject`：触发强制拒绝条件，关闭或拒绝 PR。
 
@@ -72,7 +72,27 @@ Review Agent 采用 100 分制，**低于 60 分不得合并**；达到 60 分�
 通过最低线但仍有改进空间的稿件，可以作为 intake 合并并把建议写入维护者专属
 `FEEDBACK.md`；intake 仍不代表公开展示或正式评分。
 
-维护者还应人工打开 `proposal.md` 与其 `.zh.md` / `.en.md` 副本，并抽查 HTML、A3/A0 和含文字图件是否保持章节、主张、指标、证据引用与图件位置一致。双语文件缺失、不完整、术语偏差或 manifest 哈希过期只能作为 PR warning 和改进建议，不能单独把建议状态降为 `request-changes`、`reject` 或阻止内容审稿；但译稿中出现远程加载、主动网络请求、隐私、涉密、违法或其他独立安全问题时，仍按原安全规则处理。
+维护者还应人工打开 `proposal.md` 与其 `.zh.md` / `.en.md` 副本，并抽查 HTML、A3/A0 和含文字图件是否保持章节、主张、指标、证据引用与图件位置一致。声明 `bilingual_contract_version: "1"` 的新方案若双语文件缺失、不完整、语言映射错误、HTML/PDF 无效或 manifest 哈希过期，属于阻断问题，应要求修改后重新跑完整门禁；历史 v1 及早期 v2 单语方案继续兼容。自动校验不能判断译文是否等义，术语、数字、来源或图件错配仍须人工提出 `request-changes`。译稿中的远程加载、主动网络请求、隐私、涉密、违法或其他安全问题继续按原安全规则处理。
+
+### 历史投稿双语补齐
+
+维护者批量补齐已合并投稿时，先安装 `requirements-translation.txt`，并确保本机有
+Tesseract 的 `chi_sim` 与 `eng` 语言包。主稿翻译使用本地模型和可恢复缓存；任何代码、
+证据引用、图件路径或必答章节发生缺失时工具会停止，而不会提交不完整译稿：
+
+```bash
+python3 scripts/backfill_bilingual_submissions.py
+python3 scripts/backfill_bilingual_artifacts.py figures
+python3 scripts/backfill_bilingual_artifacts.py html
+python3 scripts/backfill_bilingual_artifacts.py pdfs
+python3 scripts/backfill_bilingual_artifacts.py manifests
+python3 scripts/audit_bilingual_backfill.py
+```
+
+图件译版完整保留原始图形，并追加 OCR 校正后的目标语言文字层。A3/A0 从译稿和译版图件
+重新生成。审计命令会检查双语元数据、章节层级、图件顺序、证据引用、代码块及英文残留
+中文正文。每批提交前必须抽查渲染后的图件和 PDF，并运行全量确定性校验；模型译文仍需
+维护者按术语表和原稿进行人工抽样，不得把批处理成功等同于语义审核完成。
 
 ## 4A. 上线前模拟 PR 审核
 
@@ -117,8 +137,21 @@ python3 scripts/generate_submissions_data.py --check
 ```
 
 确认 `submissions-data.js` 已更新后，再提交展示索引变更。该提交应由维护者完成，不要求参赛者在 PR 中提供。
+生成器输出的展示项 `id` 使用 `github-login/proposal-slug` 路径键，另保留短 `slug` 供显示和排序；不要把方案 slug 当作跨作者全局唯一键。
 
 提交展示索引时，只提交 `submissions-data.js` 等展示页必要变更，不提交 `.maintainer-review/`、`docs/reviews/` 或任何 review packet。
+
+### Gallery snapshot maintenance 分支首次引导
+
+`.github/workflows/gallery-snapshot-maintenance.yml` 只在可信 `main` 或手动触发时生成 `submissions-data.js`，然后把变更推到 `automation/gallery-snapshot`，由维护者 PR 审查后合并。仓库的 `admin-only branch creation` ruleset 不允许 `GITHUB_TOKEN` 创建这个分支，因此首次启用前需要管理员一次性从可信 `main` 建立维护分支：
+
+```bash
+git fetch origin main
+git push origin origin/main:refs/heads/automation/gallery-snapshot
+git ls-remote --heads origin automation/gallery-snapshot
+```
+
+如果分支不存在，workflow 会在生成前 fail-closed，并把上述引导写入 Actions step summary；它不会尝试创建分支、借用参赛者分支，也不会直接写入 `main`。分支建立后用 `workflow_dispatch` 重新运行，后续更新继续使用带预期 SHA 的 `--force-with-lease`，并只打开或更新维护者草稿 PR。
 
 ### 策展 portal 展示卡片
 

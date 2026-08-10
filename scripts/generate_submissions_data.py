@@ -217,6 +217,10 @@ def package_complete(submission_dir: Path) -> bool:
 
 
 def classify_submission(submission_dir: Path, manifest: Any) -> str:
+    # This is a display classification, not an independent attestation. A
+    # historical package may retain formal_review_ready for gallery continuity
+    # even when it predates the persisted-self-check contract; that label must
+    # not be presented as newly trusted formal evidence.
     rel = submission_dir.as_posix()
     stage = manifest.get("submission_stage") if isinstance(manifest, dict) else None
     if "formal-blocked" in rel or "blocked-draft" in rel:
@@ -307,7 +311,10 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
         visual_urls[translation_language] = url
         thumbnail_urls.setdefault(translation_language, url)
     item: dict[str, Any] = {
-        "id": slug,
+        # Slugs are participant-scoped and frequently repeat across authors.
+        # Use the repository-relative owner/slug pair as the public stable key.
+        "id": f"{owner}/{slug}",
+        "slug": slug,
         "title": title_zh,
         "titleEn": title_en,
         "summary": summary_zh,
@@ -453,7 +460,7 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
                     "repair and re-run the full maintainer review first"
                 )
         items.append(build_item(repo_root, path, publication))
-    return sorted(items, key=lambda item: (item.get("date") or "", item.get("id") or ""), reverse=True)
+    return sorted(items, key=lambda item: (item.get("date") or "", item.get("slug") or ""), reverse=True)
 
 
 def render_js(items: list[dict[str, Any]]) -> str:
