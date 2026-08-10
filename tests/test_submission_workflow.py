@@ -2287,6 +2287,29 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertTrue(report.ok, report.errors)
             self.assertIn("sha256 mismatch for `proposal.en.md`", "\n".join(report.warnings))
 
+    def test_manifest_hash_mismatch_reports_declared_and_actual_digest(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            proposal = root / base / "proposal.md"
+            proposal.write_text(proposal.read_text(encoding="utf-8") + "\nRevised.\n", encoding="utf-8")
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": "proposal.md", "role": "narrative", "required": True, "sha256": "0" * 64}
+            )
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertFalse(report.ok)
+            mismatch = next(error for error in report.errors if "sha256 mismatch for `proposal.md`" in error)
+            declared = "0" * 64
+            actual = hashlib.sha256(proposal.read_bytes()).hexdigest()
+            self.assertIn(f"declared={declared}", mismatch)
+            self.assertIn(f"actual={actual}", mismatch)
+
     def test_removed_translation_file_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
