@@ -153,6 +153,58 @@
       "assumptions": [
         "Global AI-ecosystem case studies (taskbook 5-8)."
       ]
+    },
+    "signal_node_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Urban Signal Regime: each of the 12 AI scenario nodes carries a readable signal device."
+      ]
+    },
+    "no_ai_equivalent_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Digital Citizen Compact clause 3: every public service node provides a manual/offline equivalent."
+      ]
+    },
+    "stop_rights_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Digital Citizen Compact clause 5: each key area carries one affected-community freeze mechanism."
+      ]
+    },
+    "human_operator_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count from proposal narrative (design constant, non-geometry)",
+      "confidence": "high",
+      "assumptions": [
+        "Digital Citizen Compact clause 2: each AI scenario has one named accountable human operator."
+      ]
     }
   }
 }

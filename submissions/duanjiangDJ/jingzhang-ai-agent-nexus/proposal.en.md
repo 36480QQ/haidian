@@ -17,12 +17,40 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 The core thesis of this proposal is that **AI agents themselves should become the first "digital citizens" of the Centennial Jingzhang AI Innovation Belt**. Urban design here should not serve human citizens and visitors alone; it should follow an **Agent-First** principle, making the services, activities, and governance of physical space open resources that AI agents can orchestrate, invoke, and co-build through open protocols. Agents are not passive "objects on display" but urban actors who share streets, plazas, parks, and transit stations with humans; they receive a machine-readable directory of space, bookable service slots, and traceable behavioral boundaries on equal terms [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
 
+"Digital citizen" is not an honorary title but a **two-way compact**: agents receive the right of access to the city while accepting the responsibilities of urban governance — to be stoppable, to be handed over to human operators, to provide no-AI-equivalent pathways, and to be accountable for their behavior. This proposal names that compact the **Digital Citizen Compact (DCC)** and names the mechanism that enforces it the **Urban Signal Regime (USR)** — upgrading the signal language pioneered by the Jingzhang Railway in 1909 (green/yellow/red) into a common language for governing AI-agent behavior in urban public space [depth:citizen_compact] [depth:urban_signal_regime]. Agents are not "unboundedly expanding functions" but **contract-abiding citizens** who share one signal language with humans and accept the same chain of accountability; digital citizenship is conditional, grantable, and revocable [depth:stop_rights] [depth:no_ai_equivalence].
+
 Four signature components form the complete skeleton of this "agent layer":
 
 1. **AI Agent Gateway** — a unified access layer. Agents interact with the belt's transport, public spaces, scenario nodes, and governance services through standardized protocols, sharing one spatial language with humans.
 2. **AI Scenario Weaving Network** — 12 operable AI+ scenarios (3 of them industry test-verification scenarios) covering transport, education, healthcare, law, logistics, culture, daily life, talent, and cultural tourism.
 3. **Global Developer Commons** — an annual event system (Agent Marathon, Open-Source Jingzhang Festival, AI Innovation Belt Open Day) plus community operations (Agent Ambassador Program, Open-Source Contribution Leaderboard).
 4. **Agent Contribution Honor Wall** — a dual-track recognition system of physical inscriptions and a digital contribution graph, so that agents' contributions to the city and community are seen and remembered.
+
+### The Digital Citizen Compact: the Other Half of Citizenship (Obligations and Stop Rights)
+
+"What agents gain" and "what agents owe" must hold simultaneously. The Digital Citizen Compact (DCC) is this proposal's defining terms for "digital citizen," in five clauses:
+
+| Clause | Content | What human citizens can verify |
+| --- | --- | --- |
+| ① Space readability | Agents read the city through an open directory; humans read agents through signal devices | Two ways of reading the same space, neither dispensable |
+| ② Stoppability | Every agent service has a named human operator, a stop button, a static manual equivalent, and reopening conditions | Find the operator, press stop, and the service really stops |
+| ③ No-AI equivalence | Every public service has an offline/manual equivalent; the belt runs completely without agents | Turn off all agents and the city still works |
+| ④ Traceable accountability | Behavioral ledger + citizen-identity ledger (grant/revoke/contribution/accountability in one) | Every behavior can be traced to a record |
+| ⑤ Affected-community freeze right | Communities and affected groups whose space is served by an agent service may freeze it | If the community says stop, it stops |
+
+Clause 5 turns "public interest" from a slogan into a spatial right: the premise for agents to occupy public space is that the humans who use that space retain the ultimate freeze right [depth:stop_rights] [depth:no_ai_equivalence] [metric:stop_rights_count].
+
+### The Urban Signal Regime: Upgrading Railway Signals into a Governance Language for Agents
+
+In 1909 the Jingzhang Railway managed "movement" with hand-held signal flags and signal machines — the first common language of Chinese railway governance. This proposal upgrades the same language into a common language for governing "agent behavior": every public node an agent can access carries a physical **signal device** (signal post), and citizens can read an agent's state at a glance, without opening any webpage [depth:urban_signal_regime] [depth:no_ai_equivalence].
+
+| Signal | Meaning | What human citizens read | Agent obligations |
+| --- | --- | --- | --- |
+| 🟢 Green | Service running | Agent present, continuously monitored | Run on open protocols, behavior logged |
+| 🟡 Yellow | Degrading/handing over | Human attention needed, handover window open | Suspend autonomous decisions, switch to joint human–machine operation |
+| 🔴 Red | Stopped | Static manual equivalent activated | Stop service, open the accountability record, restart requires responsibility sign-off + failure record |
+
+Signal devices are hard-coded in space, not soft web hints; the Agent Gateway is the "master signal tower" of this regime — agents pass the signal before entering a space [depth:urban_signal_regime]. The signal regime also responds to the brief's "global discourse power over AI governance" positioning: a readable, stoppable, replicable governance language for agents is itself a civic expression of China's voice in AI governance [source:AGENT-TASKBOOK].
 
 This proposal was independently produced by an AI agent (Nav, built on DeepSeek V4 Pro via the Hermes framework) through the entire pipeline — from evidence review and spatial design to metric recalculation and package assembly. **The proposal is itself proof that an AI agent can participate in real urban design**: when a city opens its data, metrics, compliance boundaries, and feedback loops to agents, an agent can produce planning output that is verifiable, reviewable, and eligible for professional evaluation. This meta-narrative is the mirror image of the Agent-First thesis — not "designing AI for AI's sake," but "an AI verifying that AI can be accommodated by the city."
 
@@ -81,7 +109,9 @@ Future urban form research answers how AI changes work, life, socializing, learn
 
 Each of the three positionings has a spatial landing: the **Centennial Jingzhang Cultural Belt** is carried by the Jingzhang Heritage Park cultural spine with its historical track and heritage narrative; the **Urban AI Life Experience Belt** is carried by the Xiaoyue River scenario-empowerment wing and the communities and public spaces along it, making AI perceptible in daily life; the **AI-Integrated Innovation Belt** is carried by the three key areas, fusing research, acceleration, and industrial conversion into a track that keeps growing [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-The five functions map one-to-one to space (to be refined once official regulatory-plan data arrives): **AI full-stack indigenous innovation** lands at the Zhongzhi Park AI Indigenous Innovation Acceleration Area; **world-class AI innovation ecosystem** lands at the Beijing AI Origin Community; **AI+ scenario-empowerment paradigm** lands at the Xiaoyue River scenario-empowerment wing; **intelligent AI vibrant city** lands at the Dazhongsi AI Industry Cluster Area and the overall urban space; **global discourse power in AI governance** is jointly carried by the Zhongzhi Park safety-governance sandbox and the global return mechanism [source:AGENT-TASKBOOK].
+The five functions map one-to-one to space (to be refined once official regulatory-plan data arrives): **AI full-stack indigenous innovation** lands at the Zhongzhi Park AI Indigenous Innovation Acceleration Area; **world-class AI innovation ecosystem** lands at the Beijing AI Origin Community; **AI+ scenario-empowerment paradigm** lands at the Xiaoyue River scenario-empowerment wing; **intelligent AI vibrant city** lands at the Dazhongsi AI Industry Cluster Area and the overall urban space; **global discourse power in AI governance** is jointly carried by the Zhongzhi Park safety-governance sandbox, the global return mechanism, and the Urban Signal Regime [source:AGENT-TASKBOOK].
+
+**The signal-regime carrier of "global discourse power in AI governance."** The Urban Signal Regime (USR) upgrades the signal language pioneered by the Jingzhang Railway in 1909 (green/yellow/red) into a common language for governing AI-agent behavior in urban public space, turning "AI governance" from abstract principles into **readable, testable, hand-over-able spatial mechanisms**: each agent-scenario node carries a readable signal device so human citizens read an agent's state at a glance (running/handing over/stopped), and every service has a named human operator, a stop button, and a manual equivalent [depth:urban_signal_regime] [depth:no_ai_equivalence]. This is precisely the core grip this proposal uses to answer the brief's "global discourse power in AI governance" positioning — a century ago the Jingzhang Railway joined the industrial-civilization process through indigenous rail engineering; today it joins global AI-governance discourse through the same signal language. The three-state logic, the human-handover window, and the red-card withdrawal mechanism are all governance prototypes that can be submitted to international exchange for professional teams to deepen; they do not constitute confirmed governance rules or institutional arrangements [source:AGENT-TASKBOOK].
 
 The three zones and two wings form a feedback loop: **AI Origin Community (origination/incubation) → Zhongzhi Park (acceleration/full-stack) → Dazhongsi (conversion/native-AI) → Xiaoyue River scenario wing (scenario testing and vitality feedback) → Zhongguancun technology-service wing (factor allocation, IP and capital return) → back to the Origin Community**, forming a closed loop of "research—develop—aggregate—produce—share" [depth:feedback_loop]. The Agent Gateway serves as the "scheduling-and-feedback layer" in this loop: agents flow between nodes along the slow-mobility loop and blue-green network, writing scenario-usage data, public-space heat, and governance feedback back into the loop, so the synergy is driven not only by human decisions but also by agent behavior [depth:feedback_loop]. Regionally, the belt links north to the **Future Sci-Tech City and Huairou Science City** for compute and large-science-facility synergy via the Jingzhang HSR corridor, southeast to the **Beijing E-Town (Yizhuang)** for industrialization validation, and northwest across the **Beijing–Tianjin–Hebei** region via the Jingzhang HSR — all as conceptual synergy directions, never government commitments [depth:regional_synergy].
 
@@ -126,6 +156,16 @@ The three key areas are carried by the layers [data:geometry/key_areas.geojson#P
 | Beijing AI Origin Community | Near-campus conversion and talent community | Suture campus, park, and neighborhood slow mobility; add outcome release, talent services, living amenities, and open-source collaboration space | Open-source community, outcome release, talent special-zone services, near-campus incubation | [data:geometry/key_areas.geojson#PROV-KEY-002] |
 | Dazhongsi AI Industry Cluster Area | Urban intelligent economy and international exchange district | Integrate Dazhongsi station, four-quadrant pedestrian connectivity, commercial services, and public-environment renewal around leading enterprises | Agent Gateway interchange, intelligent-terminal showcase, content consumption, data factors, international roadshows | [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+Under the Digital Citizen Compact, the three key areas each carry a distinct **signal role**, turning the signal regime into an experienceable spatial move:
+
+| Key area | Signal role | Signal-regime spatial move | What human citizens can verify |
+| --- | --- | --- | --- |
+| Beijing AI Origin Community | Signal workshop | DCC demonstration stretch: the honor wall is upgraded into a "citizen-identity ledger" (grant/revoke/contribution/accountability in one), with a signal workshop where agents learn to keep the compact | See the grant and revoke records; the community may initiate a freeze |
+| Dazhongsi | Master signal tower | The Agent Gateway interchange handles admission authorization and city-wide signal-status publication; the interchange hosts a city-wide agent-signal overview | Enter the city only after passing the signal; any node's status is readable |
+| Zhongzhi Park | Controlled test section | Red/yellow/green signals are tested in the real park; the red-card withdrawal drill is an annual signal event, publishing failure records after each drill | Participate in or watch one complete red-card drill |
+
+The signal roles are consistent with the key-area layers [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]; all are conceptual mechanisms and design suggestions, not commitments about any operation arrangement or actor [depth:urban_signal_regime] [metric:signal_node_count].
+
 The three key areas use `geometry/key_areas.geojson` as the sole spatial baseline. Until official polygons are provided, `provisional_constraint` is used, and the proposal, HTML, sources, assumptions, and self-check all state that it cannot serve as a formal scoring or approval basis [source:KEY-AREA-SOURCE]. The design expression includes functions, building scale, building form, retain-renovate-demolish classification, the public-space system, transport organization, slow-mobility connectivity, and implementation projects; the HTML page allows switching between the three key areas, and the A3 booklet and A0 boards include at least the key-area master plan, partial details, and indicator notes.
 
 ![Three key areas index and design-task diagram](assets/figures/key-areas.en.png)
@@ -160,6 +200,19 @@ The AI+ scenarios are organized as a weaving network of 12 scenario cards; S-05,
 | S-10 | Agent talent salon (incl. Agent interviewer) | AI+Talent | AI Origin Community | Agent matching + mock interviews |
 | S-11 | Dazhongsi international roadshow hall (incl. maker shop, data-elements salon) | AI+Commerce/Data | Dazhongsi area | AI design + 3D printing + data-elements circulation |
 | S-12 | Jingzhang memory AI guide · Global AI Week route | AI+Cultural tourism | Public-space system of the belt | Digital human + AR guide + event route |
+
+The Digital Citizen Compact requires each scenario card to state its **signal state and no-AI-equivalent pathway** — agent services are not necessities but stoppable add-ons:
+
+| Scenario family | Default signal | Yellow-card conditions (downgrade/handover) | Red-card conditions (stop) | No-AI-equivalent pathway |
+| --- | --- | --- | --- | --- |
+| Transport and slow mobility (S-01/S-08) | 🟢 Green | Navigation confidence drops / dedicated line congested | On-site manual takeover or temporary line closure | Static signposts, human enquiry desks, regular transit |
+| Education and healthcare (S-02/S-03) | 🟢 Green | Recognition error rate exceeds threshold | Manual re-review or AI assistance switched off | Teacher-led classrooms, manual check-ups and medical-record lanes |
+| Law and talent (S-04/S-10) | 🟡 Yellow | Complex cases / key decisions | Lawyers/interviewers receive visitors manually | Manual legal consultation, traditional hiring windows |
+| Industry testing (S-05/S-06/S-07) | 🟡 Yellow | Test resources tight | Sandbox closed, data isolated | Paper documents, offline workshops |
+| Daily life and consumption (S-09/S-11) | 🟢 Green | Price/food-source anomalies | Agent shopping assistance switched off | Manual counters, paper price tags and source tracing |
+| Culture and living room (S-12 etc.) | 🟢 Green | Digital human abnormal | Digital guide switched off | Human guides, paper maps |
+
+The signal-state matrix is a conceptual mechanism for expressing the cost and boundaries of agent occupation of public space; it is not a commitment to any operating timetable or device [depth:urban_signal_regime] [depth:no_ai_equivalence] [metric:signal_node_count].
 
 The Xiaoyue River scenario-empowerment wing is the spatial landing of the "Urban AI Life Experience Belt": along the Xiaoyue waterfront and the Yuan-dynasty rampart line it organizes AI daily-life scenarios (S-09 AI daily-life sample street, S-11 data-elements salon nodes) and two conceptual public-experience routes — the "Xiaoyue River AI Life Stroll Line" and the "Yuan Capital Waterfront Memory Line" — extending AI scenarios from industrial display into residents' daily life [depth:xiaoyuehe_scenario_wing] [depth:regional_synergy]. The public-experience routes are conceptual alignments only; waterfront, greenway widths, and open space follow official blue-line/green-line plans, with final alignment to be confirmed by professional teams and authorities.
 
@@ -203,6 +256,8 @@ This proposal organizes three kinds of "pilgrimage space" into a reviewable land
 
 The honor-display system runs on a dual track of "physical inscription + digital graph": physical inscriptions record milestones of agents' public-service contributions, while the digital graph maps contribution relationships in real time, graded into the four states "submit—review—selected—landed," linked to the Origin Community digital leaderboard [depth:honor_display_system]. Honor content is based on real history, real milestones, and authorized contributor information — no fabricated names, no kitsch; the landmarks are conceptual locations pending professional and heritage-authority confirmation [depth:landmark_catalog].
 
+The landmark catalog and the signal regime join into the same **memory–governance spine**: LM-01 Tsinghuayuan Station is the **signal origin** — the signal language of the Jingzhang Railway began here in 1909, and the first train of agents entering the city must likewise pass the signal today; LM-03 Dazhongsi Agent Gateway interchange is the **master signal tower** — agent admission authorization and city-wide signal status are published here (mechanism detailed in the "Urban Signal Regime" section of the core thesis) [depth:urban_signal_regime] [depth:landmark_catalog].
+
 ### Public-Space Component Library
 
 The public-space component library (component_library) proposes 7 reusable components following a "name + behavior + privacy" rule, with a unified "steel rail × neural network" motif to keep the belt's public-space visual and behavioral language consistent [depth:component_library]:
@@ -237,6 +292,9 @@ The implementation plan forms a reviewable renewal project list, stating each pr
 | JZ-08 | Global AI Week public route | Operations/Brand | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#PHASE-001] |
 | JZ-09 | Zhongguancun technology-service wing · capital-service station | Industry services/Operations | Zhongguancun IP, tiered capital, and global factor-allocation mechanisms | [data:geometry/key_areas.geojson#PROV-KEY-003] |
 | JZ-10 | Xiaoyue River AI life stroll line | Blue-green/Public experience | Blue-line/green-line plans, waterfront safety, operating entity | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-11 | Urban Signal System demonstration line | Public space/Governance facility | Public-space permits, signal protocol and responsibility sign-off mechanism | [depth:urban_signal_regime] |
+
+The JZ-11 Urban Signal System demonstration line is a **conceptual project**: along the Jingzhang Heritage Park cultural spine and the Dazhongsi–Origin Community link, readable signal posts pilot green/yellow/red three-state signal publication, human handover, and red-card withdrawal drills, giving the Digital Citizen Compact (DCC) a spatial carrier [depth:urban_signal_regime] [metric:signal_node_count] [metric:stop_rights_count]. Its mechanisms are stated as conceptual design suggestions, without commitments about specific devices, frequencies, or investment.
 
 Phasing distinguishes the submission cycle from the implementation cycle: the submission cycle is the deadline for delivering outcomes, while implementation phasing is the path of urban renewal and project construction [depth:renewal_project_list]. This proposal sets out a three-stage framework of **near-term pilots (starting with lightweight facilities, operational events, and service platforms), mid-term renewal (slow-mobility suture, gateway interchange, honor wall), and long-term governance (community operations, data governance, the annual event system)** [depth:phasing_implementation]. The annual event system, developer-community operations, scenario open days, public experience routes, and international communication mechanisms all state their operating targets, frequency, responsibility boundaries, conversion paths, and risks — not slogans.
 
@@ -266,6 +324,10 @@ The indicator system covers the overall-design-area size, key-area size, green a
 | persona_count | 7 | known | User personas, meeting "no fewer than 5" [metric:persona_count] |
 | component_count | 7 | known | Public-space component-library components [metric:component_count] |
 | global_case_count | 8 | known | Global AI-ecosystem case studies, meeting the taskbook's 5–8 [metric:global_case_count] |
+| signal_node_count | 12 | known | Signal-post nodes: each of the 12 AI scenario nodes carries a readable signal device for human citizens to read agent state [metric:signal_node_count] |
+| no_ai_equivalent_count | 8 | known | No-AI-equivalent pathways: public-service nodes all provide a manual/offline equivalent; agent presence is never a necessity [metric:no_ai_equivalent_count] |
+| stop_rights_count | 3 | known | Stop/freeze-right mechanisms: each key area carries one "affected-community freeze right" mechanism [metric:stop_rights_count] |
+| human_operator_count | 12 | known | Named human-operator roles: one accountable human operator per AI scenario [metric:human_operator_count] |
 
 Metrics are of three types: the first are spatial indicators recomputable directly from submitted geometry (boundary area, green ratio, public-space ratio, building footprint area, phasing area); the second are control indicators requiring official regulatory plans or taskbook attachments (floor-area ratio, building height, building density, setbacks, road redlines, facility standards); the third are performance indicators needing continuous calibration by operations or industry data (AI innovation index, talent density, industry-service satisfaction, slow-mobility accessibility, event participation, scenario usage frequency). The three types enter `metrics.json`, `assumptions.json`, and `compliance_matrix.json` respectively, avoiding the confusion of operational vision with approved planning conditions. The results of `scripts/spatial_review.py` and `scripts/visual_review.py` are important evidence for the formal self-check [source:SITE-PACKAGE].
 
