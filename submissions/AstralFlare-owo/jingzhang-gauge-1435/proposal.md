@@ -86,7 +86,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-总体设计范围按控规深度组织，核心是回答「更新什么、为什么、落在哪个图层、缺什么条件」。总体空间结构「一轨三站两翼」：一轨为京张遗址公园绿廊主轴（长 9405.3 米）[metric:corridor_length_m]，三站为三处重点区，两翼为西侧服务轨与东侧生活轨接口带。用地结构由 44 个概念分区表达，科研用地（0802，32.64%）与商业用地（05，3.97%）构成产业空间主体 [data:geometry/land_use.geojson#LU-009] [data:geometry/land_use.geojson#LU-002]，居住（0701，28.14%）与教育（0804，20.42%）支撑职住与近校转化，公园绿地（1401）、防护绿地（1402）与广场（1403）合计约 14.8% 构成蓝绿与公共空间基底，比例由指标复核 [metric:land_use_industry_ratio] [metric:land_use_residential_ratio]。低效空间识别、拆改留对象与更新项目清单以第 7、10 章展开。
+总体设计范围按控规深度组织，核心是回答「更新什么、为什么、落在哪个图层、缺什么条件」。总体空间结构「一轨三站两翼」：一轨为京张遗址公园绿廊主轴（长 9405.3 米）[metric:corridor_length_m]，三站为三处重点区，两翼为西侧服务轨与东侧生活轨接口带。用地结构依据国土空间用地用海分类指南由 44 个概念分区表达 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，科研用地（0802，32.64%）与商业用地（05，3.97%）构成产业空间主体 [data:geometry/land_use.geojson#LU-009] [data:geometry/land_use.geojson#LU-002]，居住（0701，28.14%）与教育（0804，20.42%）支撑职住与近校转化，公园绿地（1401）、防护绿地（1402）与广场（1403）合计约 14.8% 构成蓝绿与公共空间基底，比例由指标复核 [metric:land_use_industry_ratio] [metric:land_use_residential_ratio]。低效空间识别、拆改留对象与更新项目清单以第 7、10 章展开。
 
 建筑总规模以 430 栋概念建筑基底表达，复算建筑基底面积 2649208.0 平方米，仅代表概念体量，不构成现状调查或拆改结论 [metric:building_footprint_area_sqm] [data:geometry/buildings.geojson#BLDG-001]。道路与慢行由 9 条概念道路（合计 27901.9 米）与绿廊绿道表达 [metric:road_network_length_m] [data:geometry/roads.geojson#ROAD-001]。涉及容积率、建筑高度、建筑密度、退线、道路红线与设施标准的内容，因缺少官方控规条件，一律表述为「待正式控规条件确认」，不以设计假设冒充审定指标 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]。控规深度内容的可审查组织方式见图 2 与第 11 章指标体系；各重要结论均说明对应图层、指标、来源、标准与待确认控规条件，确保城市更新框架、功能比例、公共空间、交通组织、市政承载与风貌控制相互支撑而非口号式罗列 [depth:land_use_layout] [depth:height_massing_character]。
 
@@ -98,13 +98,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 
-> 图 3 三处重点区域索引与设计任务图。来源：依据 `geometry/key_areas.geojson`（PROV-KEY-001/002/003）与 `geometry/scenario_nodes.geojson`（SN-001…SN-012）绘制；重点区为 provisional 粗略范围（非官方红线），仅以淡色表达，官方 polygon 发布后需重算。
+> 图 3 三处重点区域索引与设计任务图。来源：依据 `geometry/key_areas.geojson`（PROV-KEY-001/002/003）与第 6 章 AI 场景卡表（SN-001…SN-012）绘制；重点区为 provisional 粗略范围（非官方红线），仅以淡色表达，官方 polygon 发布后需重算。
 
-**众智园 AI 自主创新加速区（加速站/加速轨，192.1 公顷）。** 定位为花园型全栈自主创新加速区，承接模型训练、评测、标准制定与安全治理 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_zhongzhiyuan_sqm]。空间结构上以科研用地（ZZY，0802）产业园区块化布局为主体，临清河界面打开（QH 蓝绿带）并引入绿廊北段穿区；建筑形态为中高层研发楼组团与实验厂房的概念体量（高度 12–60 米为概念示意，待正式控规确认）。交通上组织北五环入口（RD-EX-001 概念示意）、绿廊绿道贯通与横向联络路接驳。AI 场景为 SN-004 加速轨测试场（[TEST]，大模型评测/红队测试展示）、SN-005 安全治理沙盒（[TEST]，标准工作坊与安全评测）与 SN-012 全球 AI 活动周北端节点 [data:geometry/scenario_nodes.geojson#SN-004]。实施风险：清河蓝线与防洪条件待确认、控规强度未定、权属未明。
+**众智园 AI 自主创新加速区（加速站/加速轨，192.1 公顷）。** 定位为花园型全栈自主创新加速区，承接模型训练、评测、标准制定与安全治理 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_zhongzhiyuan_sqm]。空间结构上以科研用地（ZZY，0802）产业园区块化布局为主体，临清河界面打开（QH 蓝绿带）并引入绿廊北段穿区；建筑形态为中高层研发楼组团与实验厂房的概念体量（高度 12–60 米为概念示意，待正式控规确认）。交通上组织北五环入口（RD-EX-001 概念示意）、绿廊绿道贯通与横向联络路接驳。AI 场景为 SN-004 加速轨测试场（[TEST]，大模型评测/红队测试展示）、SN-005 安全治理沙盒（[TEST]，标准工作坊与安全评测）与 SN-012 全球 AI 活动周北端节点。实施风险：清河蓝线与防洪条件待确认、控规强度未定、权属未明。
 
-**北京 AI 原点社区（原点站/原点轨，104.3 公顷）。** 定位为近校型成果转化与开源人才社区，是「从代码到产品」的原点 [data:geometry/key_areas.geojson#PROV-KEY-002] [metric:key_area_origin_sqm]。空间结构以校区-园区-街区慢行缝合为动作，科研（ORIGIN-RD，0802）、商业服务（ORIGIN-COM，05）与教育（EDU-ORIGIN，0804）混合，绿廊中段穿区设原点站广场（PLZ-02，1403）；建筑形态为中低层街区式混合（办公+人才公寓+商业），首层开放，成果发布与人才服务空间嵌入 [data:geometry/land_use.geojson#LU-005]。交通上衔接地铁 13 号线概念示意线（RAIL-001）的站点接驳并组织绿道慢行 [data:geometry/constraints.geojson#RAIL-001]。AI 场景为 SN-002 轨距原点碑 AR 导览、SN-003 开源发布站台与 SN-008 换轨人才市集 [data:geometry/scenario_nodes.geojson#SN-002]。实施风险：校区边界与权属待确认，清华园站旧址相关文保要求待官方图层。
+**北京 AI 原点社区（原点站/原点轨，104.3 公顷）。** 定位为近校型成果转化与开源人才社区，是「从代码到产品」的原点 [data:geometry/key_areas.geojson#PROV-KEY-002] [metric:key_area_origin_sqm]。空间结构以校区-园区-街区慢行缝合为动作，科研（ORIGIN-RD，0802）、商业服务（ORIGIN-COM，05）与教育（EDU-ORIGIN，0804）混合，绿廊中段穿区设原点站广场（PLZ-02，1403）；建筑形态为中低层街区式混合（办公+人才公寓+商业），首层开放，成果发布与人才服务空间嵌入 [data:geometry/land_use.geojson#LU-005]。交通上衔接地铁 13 号线概念示意线（RAIL-001）的站点接驳并组织绿道慢行 [data:geometry/constraints.geojson#RAIL-001]。AI 场景为 SN-002 轨距原点碑 AR 导览、SN-003 开源发布站台与 SN-008 换轨人才市集。实施风险：校区边界与权属待确认，清华园站旧址相关文保要求待官方图层。
 
-**大钟寺 AI 产业集聚区（场景站/场景轨，72.0 公顷）。** 定位为智能原生新业态与数据要素的城市级场景场——「AI 被看见、被消费、被讨论」的地方 [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_dazhongsi_sqm]。空间结构以大钟寺站四象限步行连通（PLZ-01 站前广场，1403）、商业核心（DZS-COM，05）与产业环（DZS-IND，0802）构成，绿廊南段穿区 [data:geometry/land_use.geojson#LU-042]；建筑形态为中高层商业综合体与智能终端旗舰店街区。交通上以轨道站点一体化为前提组织步行与接驳。AI 场景为 SN-006 场景轨智能终端体验街、SN-011 数据要素会客厅与 SN-001 1435 无障碍慢行基准道南端 [data:geometry/scenario_nodes.geojson#SN-006]。实施风险：轨道站点一体化条件、商业更新权属、文保与风貌控制待确认。
+**大钟寺 AI 产业集聚区（场景站/场景轨，72.0 公顷）。** 定位为智能原生新业态与数据要素的城市级场景场——「AI 被看见、被消费、被讨论」的地方 [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_dazhongsi_sqm]。空间结构以大钟寺站四象限步行连通（PLZ-01 站前广场，1403）、商业核心（DZS-COM，05）与产业环（DZS-IND，0802）构成，绿廊南段穿区 [data:geometry/land_use.geojson#LU-042]；建筑形态为中高层商业综合体与智能终端旗舰店街区。交通上以轨道站点一体化为前提组织步行与接驳。AI 场景为 SN-006 场景轨智能终端体验街、SN-011 数据要素会客厅与 SN-001 1435 无障碍慢行基准道南端。实施风险：轨道站点一体化条件、商业更新权属、文保与风貌控制待确认。
 
 三处重点区的产业功能、建筑形态、拆改留分类、公共空间连通与实施项目分别对应第 6、7、10 章相关内容，其设计深度由 [depth:three_key_area_detailed_design] 检查。
 
@@ -122,7 +122,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 周边居民 | 通勤、休闲、社区服务、低扰动更新 | 绿廊慢行环、社区服务、小月河生活轨（SN-010） | 不将居民画像用于商业推荐；保留传统服务并行通道 |
 | 高校师生 | 成果转化、跨校协作、日常慢行 | 校区-园区缝合、接轨实验室、AI 教育体验点（SN-007） | 校园数据与科研成果须授权 |
 
-**12 张 AI 场景卡。** 每张卡说明服务对象、空间载体、数据来源与隐私边界、人工复核机制、运营主体与主要风险，见表 5 [metric:scenario_node_count] [data:geometry/scenario_nodes.geojson#SN-001]。其中 SN-004、SN-005、SN-007 为 AI 产业测试验证场景，标注 **[TEST]**，均为「概念测试场景，未获批准运营」。
+**12 张 AI 场景卡。** 每张卡说明服务对象、空间载体、数据来源与隐私边界、人工复核机制、运营主体与主要风险，见表 5 [metric:scenario_node_count]。其中 SN-004、SN-005、SN-007 为 AI 产业测试验证场景，标注 **[TEST]**，均为「概念测试场景，未获批准运营」。
 
 表 5 AI 场景卡（12 张）
 
@@ -141,7 +141,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | SN-011 | 数据要素会客厅 | 数据持有方、合规机构 | 大钟寺数据要素流通节点 | 合规沙盒内脱敏数据，授权与审计可追溯 | 流通规则由法律与治理专家复核 | 合规运营主体（概念） | 数据安全与授权边界 |
 | SN-012 | 全球 AI 活动周路线 | 参与者、国际访客 | 绿廊北段至大钟寺公共路线 | 活动报名与导览数据最小化，不追踪个体轨迹 | 活动安全与人流由主办方人工管控 | 活动主办方与公共空间管理方（概念） | 活动安全、公共空间许可、版权 |
 
-AI 治理建议遵循数据最小化、公开来源、可解释与人工复核原则：城市智能体可辅助识别慢行断点、公共空间热力、设施维护与活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺 [source:AGENT-TASKBOOK]。生成式 AI 服务的合规边界参照《生成式人工智能服务管理暂行办法》第 2、14、15、17 条适用范围理解，不泛化为所有公共空间或数字界面的普遍结论；无障碍人工服务要求严格限定在《无障碍环境建设法》第 39 条列举的公共服务事项场景内；老年人高频服务场景参照国办发〔2020〕45 号作政策背景，强调传统方式与智能服务并行，不写成现行法律义务 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
+AI 治理建议遵循数据最小化、公开来源、可解释与人工复核原则：城市智能体可辅助识别慢行断点、公共空间热力、设施维护与活动安全风险，但不能替代规划审批、不能输出未经授权的个人画像、不能声称获得官方实施承诺 [source:AGENT-TASKBOOK]。生成式 AI 服务的合规边界参照《生成式人工智能服务管理暂行办法》的适用范围与合规要求理解 [standard:GENERATIVE-AI-INTERIM-MEASURES]，不泛化为所有公共空间或数字界面的普遍结论；无障碍人工服务要求严格限定在《无障碍环境建设法》明确的公共服务事项场景内；老年人高频服务场景参照国办发〔2020〕45 号作政策背景，强调传统方式与智能服务并行，不写成现行法律义务 [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -167,7 +167,7 @@ AI 治理建议遵循数据最小化、公开来源、可解释与人工复核�
 
 蓝绿方案以京张遗址公园活力带（绿廊主轴 9405.3 米）为骨架，统筹清河（QH）、小月河（XYH-WING）与周边高校、社区出行需求，提出南北贯通（复轨）、东西连通（并轨）的步道、骑行道与绿色空间体系 [metric:corridor_length_m] [data:geometry/green_space.geojson#GREEN-001] [depth:blue_green_public_space]。绿地复算 1649297.2 平方米、绿地率 14.45%，绿地指标复核见 [metric:green_space_area_sqm] [metric:green_ratio]；公共空间复算 43000.0 平方米、占总体范围 0.38%，公共空间指标复核见 [metric:public_space_area_sqm] [metric:public_space_ratio]。9 个广场面由 1403 广场用地按 PLZ-01/02/03 组群拆分，见公共空间图层 [data:geometry/public_space.geojson#PUBLIC-001]。绿地比例支撑人才生活的日常交往与生态体验，公共空间比例虽小但承担发布、市集、体验与治理展示等创新交往功能，两者共同构成「让轨」的空间基底。
 
-公共空间以 1435 模数组件库（座椅、铺装、导视、无障碍基准道）为统一语言，试点列入 JZ-05；SN-001 无障碍慢行基准道作为人本轨道的示范段，呼应无障碍法规要求 [data:geometry/scenario_nodes.geojson#SN-001]。**AI 朝圣地标（≥3 处，agent.4）**：① 轨距原点碑（AI 原点社区绿廊节点 SN-002）——实体 1435mm 刻度基准与「标准谱系」AR 导览，属荣誉展示体系之一；② 发车站台（原点社区绿廊 SN-003）——AI 模型/成果「发车时刻表」发布装置，物理化开源社区的 release 仪式；③ 轨枕刻度带（京张遗址公园全线，每 1435 米一组「标准里程碑」轨枕，记录从达特茅斯会议到开源许可证、治理规则的 AI 标准史）；④ 荣誉展示体系——贡献者荣誉墙、企业标准贡献榜与社区「换轨者」名录，在原点站发布厅与遗址公园节点展示 [source:AGENT-TASKBOOK] [source:GAUGE-1435-DESIGN]。所有地标、导视、Logo、字体、图像、人物与企业标识均为概念方向，须清权，不写成已批准建设 [source:SOURCE-REGISTRY]。
+公共空间以 1435 模数组件库（座椅、铺装、导视、无障碍基准道）为统一语言，试点列入 JZ-05；SN-001 无障碍慢行基准道作为人本轨道的示范段，呼应无障碍法规要求 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。**AI 朝圣地标（≥3 处，agent.4）**：① 轨距原点碑（AI 原点社区绿廊节点 SN-002）——实体 1435mm 刻度基准与「标准谱系」AR 导览，属荣誉展示体系之一；② 发车站台（原点社区绿廊 SN-003）——AI 模型/成果「发车时刻表」发布装置，物理化开源社区的 release 仪式；③ 轨枕刻度带（京张遗址公园全线，每 1435 米一组「标准里程碑」轨枕，记录从达特茅斯会议到开源许可证、治理规则的 AI 标准史）；④ 荣誉展示体系——贡献者荣誉墙、企业标准贡献榜与社区「换轨者」名录，在原点站发布厅与遗址公园节点展示 [source:AGENT-TASKBOOK] [source:GAUGE-1435-DESIGN]。所有地标、导视、Logo、字体、图像、人物与企业标识均为概念方向，须清权，不写成已批准建设 [source:SOURCE-REGISTRY]。
 
 城市风貌以「钢轨灰蓝+信号绿+琥珀+白」的色彩系统与工字截面、刻度线辅助图形统一基调，建筑屋顶形态、体量与界面控制提出设计建议但待正式控规确认；清华园站旧址等历史文化资源作为风貌叙事资源，其文保范围与保护要求待官方图层，本方案不给出伪精确控制线 [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:height_massing_character]。
 
@@ -233,7 +233,7 @@ known 指标可直接从 GeoJSON 复算，如总体范围与绿地数据复核 [
 
 > 图 5 核心指标复算与证据链图。来源：依据 `geometry/*.geojson` 在 EPSG:4548 下复算并对照 `metrics.json` 绘制；所有面积与比例基于 provisional 边界，官方 polygon 发布后需整包重算，图内同时标注 known/unknown 状态。
 
-合规矩阵（`compliance_matrix.json`）把公告任务与 agent.1–agent.6 逐条映射到章节、图层、指标、图纸、来源、假设与自检项；标准矩阵（`standard_matrix.json`）登记各标准的适用范围与边界（如生成式 AI 暂行办法、无障碍法第 39 条、老年人政策背景化使用）；设计深度矩阵（`design_depth_matrix.json`）的 15 个 required 深度项全部完成并由本正文、图纸与自检结果共同支撑。三条矩阵互为主控文件，任一必选任务未覆盖即不得进入正式专业评审。
+合规矩阵（`compliance_matrix.json`）把公告任务与 agent.1–agent.6 逐条映射到章节、图层、指标、图纸、来源、假设与自检项；标准矩阵（`standard_matrix.json`）登记各标准的适用范围与边界（如生成式 AI 暂行办法、无障碍环境建设法、老年人政策背景化使用）；设计深度矩阵（`design_depth_matrix.json`）的 15 个 required 深度项全部完成并由本正文、图纸与自检结果共同支撑。三条矩阵互为主控文件，任一必选任务未覆盖即不得进入正式专业评审。
 
 ## 风险、版权与合规说明
 
