@@ -24,7 +24,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-c
 
 资料登记表使用边界：`data/source_registry.json` 中 `usable_for_formal="yes"` 的资料可用于正式证据；`provisional_only` 资料仅用于生成、可视化与 intake 自检。本方案**未使用**任何非公开规划图件、非公开空间数据或个人隐私信息。
 
-官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon 截至 2026-08-08 仍未发布（资格预审文件需密码下载，公开渠道无可验证坐标系的精确红线 [source:SOURCE-REGISTRY]），本方案采用 `brief/site-package/geometry/provisional_boundaries.geojson` 的临时边界：`geometry/site_boundary.geojson#SITE-001` 为 `official_boundary=false`、`geometry_role="provisional_constraint"`、`boundary_precision="provisional_rough"`；三处重点区同源标注。该临时边界仅用于方案生成、自检、可视化与设计讨论，**不是**官方红线、审批依据或精确面积依据；官方 polygon 发布后，land use、buildings、roads、green space、public space、phasing 与全部面积指标必须按同一脚本重算，而非只替换单个文件。组织方数据缺口不阻断内容评分。
+官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon 截至 2026-08-08 仍未发布（资格预审文件需密码下载，公开渠道无可验证坐标系的精确红线 [source:SOURCE-REGISTRY]），本方案采用 `brief/site-package/geometry/provisional_boundaries.geojson` 的临时边界：`geometry/site_boundary.geojson#SITE-001` 为 `official_boundary=false`、`geometry_role="provisional_constraint"`、`boundary_precision="provisional_rough"`；三处重点区同源标注。该临时边界仅用于方案生成、自检、可视化与设计讨论，**不是**官方红线、审批依据或精确面积依据；官方 polygon 发布后，land use、buildings、roads、green space、public space、phasing 与全部面积指标必须按同一脚本重算，而非只替换单个文件。组织方数据缺口不影响本包进入 intake/结构审阅；正式专业评分与接收由维护者依据完整数据决定。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
