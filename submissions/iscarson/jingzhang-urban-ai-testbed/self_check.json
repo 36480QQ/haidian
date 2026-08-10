@@ -1,82 +1,213 @@
 {
+  "ok": true,
+  "submission_dir": "submissions/iscarson/jingzhang-urban-ai-testbed",
+  "pr_author": "iscarson",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/iscarson/jingzhang-urban-ai-testbed/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/iscarson/jingzhang-urban-ai-testbed/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/iscarson/jingzhang-urban-ai-testbed/agent.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/key-areas.en.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/key-areas.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/land-use-structure.en.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/land-use-structure.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/metrics-evidence.en.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/metrics-evidence.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/mobility-bluegreen.en.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/mobility-bluegreen.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/site-overview.en.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assets/figures/site-overview.png",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/assumptions.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/changelog.md",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/compliance_matrix.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/design_depth_matrix.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/drawings/a0-boards.en.pdf",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/drawings/a0-boards.pdf",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/drawings/a3-booklet.en.pdf",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/drawings/a3-booklet.pdf",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/buildings.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/constraints.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/green_space.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/key_areas.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/land_use.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/phasing.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/public_space.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/roads.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/geometry/site_boundary.geojson",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/manifest.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/metrics.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/proposal.en.md",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/proposal.md",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/report/copyright_statement.md",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/report/narrative.md",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/report/proposal.en.html",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/report/proposal.html",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/self_check.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/sources.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/standard_matrix.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/brand_identity.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/global-ai-ecosystem-cases.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/operations.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/personas.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/pilot_contracts.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/scenario_cards.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/scenario_nodes.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/assets/site_and_stakeholder_evidence.json",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/index.en.html",
+        "submissions/iscarson/jingzhang-urban-ai-testbed/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/iscarson/jingzhang-urban-ai-testbed": "formal"
+      },
+      "total_bytes": 41332045,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 874189.284,
+        "public_space_area_sqm": 277584.374,
+        "building_footprint_area_sqm": 46617.879,
+        "green_ratio": 0.076597,
+        "public_space_ratio": 0.024322
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.076597,
+        "public_space_ratio": 0.024322,
+        "scenario_node_count": 12.0,
+        "persona_count": 6.0,
+        "test_scenario_count": 3.0,
+        "public_landmark_count": 3.0,
+        "renewal_project_count": 8.0,
+        "key_area_count": 3.0,
+        "road_length_m": 15237.796
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 15,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 12,
+          "standard": 5,
+          "depth": 15,
+          "data": 9,
+          "metric": 10
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
-      "check_id": "BOUNDARY_TRUST",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "SITE-001 is preserved as provisional_constraint with official_boundary=false and visible whole-package recalculation warnings."
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "KEY_AREAS_TRUST",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "All three key areas remain provisional; the public PROV-KEY-003 displacement warning is disclosed and no independent correction is claimed."
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
-      "check_id": "LAND_USE_TOPOLOGY",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Six conceptual land-use polygons completely cover the provisional site without gaps or overlaps in EPSG:4548."
-    },
-    {
-      "check_id": "DESIGN_GEOMETRY_INSIDE",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/",
-      "message": "Buildings, green space and public space are contained by the provisional site in the spatial review."
-    },
-    {
-      "check_id": "METRIC_RECALCULATION",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json",
-      "message": "Spatial values are recalculated from the submitted geometry; structured counts match local JSON assets; FAR, height and density remain unknown."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/index.html",
-      "message": "The exhibit is offline, contains all required visible sections and declares exact known metric values through data attributes."
-    },
-    {
-      "check_id": "BILINGUAL_DELIVERABLES",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.en.md",
-      "message": "Chinese and English proposals, five figure pairs, offline HTML, fourteen-page A3 booklets and four-board A0 sets are present and mapped in the manifest."
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "All required standards and design-depth items have claim-adjacent references; audit matrices provide exhaustive task coverage and keep unavailable controls unknown."
-    },
-    {
-      "check_id": "FIELD_EVIDENCE_DISCLOSURE",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/assets/site_and_stakeholder_evidence.json",
-      "message": "No site visit and no stakeholder interviews are explicitly disclosed; personas and user needs remain inferred pending field validation."
-    },
-    {
-      "check_id": "PILOT_STOP_RULES",
-      "result": "pass",
-      "severity": "major",
-      "target": "visual/assets/pilot_contracts.json",
-      "message": "All three pilots include permission, baseline, test window, success, stop and accountable-human fields."
-    },
-    {
-      "check_id": "RAIL_VERTICALITY",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.md",
-      "message": "The proposal distinguishes former non-operating surface heritage, the operating high-speed railway in the Qinghuayuan Tunnel and returning to grade in the north, and operating Line 13 surface/embankment/viaduct segments; no crossing or subsurface feasibility is inferred."
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
