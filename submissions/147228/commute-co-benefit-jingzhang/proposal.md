@@ -38,6 +38,10 @@ iteration: "v1.0"
 
 ![从合成屏查到现场授权的证据阶梯。当前停在 P0，先补证据再谈小试](assets/figures/commute-co-benefit-authorization-board.svg)
 
+为了看清分数从哪里来，模型又固定 C3 的地面方式、路缘、可靠性和无障碍参数，只把企业错峰输入从 0% 扫到 24%。在这组声明输入下，企业组读数随输入小幅变化，保护群组的最低可达和最低满意度保持不变，全体代理分只出现很小的波动。18% 是当前 C3 的声明输入，不是企业已接受的比例，也不构成现实中的最佳错峰率。企业接受度、班次容量、居民回应和现场满意度仍需有日期的证据 [data:visual/assets/commute-co-benefit-sensitivity.json] [data:assets/figures/commute-co-benefit-sensitivity-board.svg]。
+
+![企业错峰输入敏感性与群体保护。固定地面控制，只改变一个声明输入](assets/figures/commute-co-benefit-sensitivity-board.svg)
+
 ## 一页执行摘要。先验收一条到站到家链，再谈共享接驳扩展
 
 普通人要在出门、换乘、受阻、求助和回家每一步都保有可理解的选择。第一个可逆试点只验收一条最小链。它从选择公共、无障碍或人工路径开始，经过交通服务请求，在断网、雨雪、路缘冲突或错过衔接时转由人工或轨道公交接管，遇到不安全或不可达状态就冻结预约并退出，最后由独立复核者回放证据，决定修复、扩展或撤回。这不是现实运营承诺。当前 M-09 只在本地、无网络、无个人数据的合成桌面演练中复演 4 条请求，`performance_results=null`、`operational_status=not_authorized_not_run`。

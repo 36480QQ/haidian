@@ -17,6 +17,9 @@
     "visual/assets/commute-co-benefit-authorization.json",
     "visual/assets/run-commute-co-benefit-authorization.js",
     "assets/figures/commute-co-benefit-authorization-board.svg",
+    "visual/assets/commute-co-benefit-sensitivity.json",
+    "visual/assets/run-commute-co-benefit-sensitivity.js",
+    "assets/figures/commute-co-benefit-sensitivity-board.svg",
     "proposal.md#四类人先看什么",
     "proposal.md#试点什么时候能开始",
     "visual/assets/pilot-startup-checklist.json",
@@ -49,8 +52,8 @@
     {
       "id": "ai_planning_innovation",
       "label_zh": "AI 与城市规划创新性",
-      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json"],
-      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、企业—居民共益合同、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选 fail-closed，共同展示方式选择如何被硬门槛约束",
+      "start_here": ["visual/assets/regional-scale-commute-readout.json", "visual/assets/run-regional-commute-simulation.js", "visual/assets/run-capacity-closure-screen.js", "visual/assets/network-flow-readout.json", "visual/assets/commute-co-benefit-sensitivity.json"],
+      "strongest_evidence": "全日活动链的 C1/C2/C3 候选排名、群组读数、企业—居民共益合同、声明错峰输入敏感性、路边节点流量和容量硬门，叠加原有区域回放、资源压力、稳健性和空中候选阻断，共同展示方式选择如何被硬门约束，以及哪些结果仍依赖现场输入",
       "boundary": "输入是合成反事实；满意度、容量和网络压力不是本地绩效。"
     },
     {

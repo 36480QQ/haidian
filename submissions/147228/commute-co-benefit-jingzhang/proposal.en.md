@@ -38,6 +38,10 @@ The contract also needs an evidence ladder so that a synthetic score cannot be m
 
 ![Evidence ladder from synthetic screen to field authorisation: current hold at P0](assets/figures/commute-co-benefit-authorization-board.en.svg)
 
+To show where the proxy score comes from, the model now holds the C3 ground modes, curb, reliability and accessibility controls fixed while sweeping the declared employer shift input from 0% to 24%. Under these declared inputs, the enterprise readout changes slightly, the minimum protected-group access and satisfaction stay unchanged, and the overall proxy moves only within a narrow range. The current 18% is a declared C3 input, not accepted employer participation and not a real-world optimal stagger rate. Employer acceptance, timetable capacity, resident response and field satisfaction still need dated evidence [data:visual/assets/commute-co-benefit-sensitivity.json] [data:assets/figures/commute-co-benefit-sensitivity-board.en.svg].
+
+![Employer staggering sensitivity and group protection: fixed ground controls, one declared input changed](assets/figures/commute-co-benefit-sensitivity-board.en.svg)
+
 ## One-Page Executive Brief: Accept One Door-to-Door Chain Before Expanding Shared Feeders
 
 An ordinary person is not a flow point in a model. At each step—leaving, transferring, encountering disruption, asking for help and returning home—they need an understandable choice. The first reversible pilot accepts one minimum chain: **choose a public/accessibility or human route → request one mobility service → trigger human or rail/bus takeover when a transfer is missed, the network is offline, weather turns bad or a curb conflict occurs → freeze the booking and exit when the state is unsafe or unreachable → let an independent reviewer replay the evidence and decide whether to repair, expand or withdraw**. This is not an operational claim. The current M-09 is only a local, offline, no-personal-data tabletop replay of four synthetic requests; `performance_results=null` and `operational_status=not_authorized_not_run`.

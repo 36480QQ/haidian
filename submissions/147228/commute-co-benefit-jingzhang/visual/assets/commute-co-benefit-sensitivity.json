@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.1.0",
+  "register_id": "COMMUTE-CO-BENEFIT-SENSITIVITY-1000",
+  "status": "synthetic_input_sensitivity_not_operational",
+  "population_reference": 3122000,
+  "input_under_test": "enterprise_shift_share",
+  "input_definition": "Declared share of enterprise employees eligible for an early window. It is not observed employer acceptance, a resident response, or a recommended operating rate.",
+  "fixed_controls": {
+    "policy_bundle": "C3_commute_co_benefit",
+    "weight_profile": "C3",
+    "curb_factor": 0.76,
+    "reliability_bonus": 0.08,
+    "accessibility_protection": 0.07,
+    "modes": [
+      "metro",
+      "bus",
+      "bicycle",
+      "walking_wheelchair",
+      "car",
+      "enterprise_shuttle"
+    ],
+    "air_candidate": false
+  },
+  "scenarios": [
+    {
+      "declared_shift_share_input": 0,
+      "selected_policy_controls": {
+        "weight_profile": "C3",
+        "curb_factor": 0.76,
+        "reliability_bonus": 0.08,
+        "accessibility_protection": 0.07,
+        "air_candidate": false
+      },
+      "hard_gate_pass": true,
+      "agents_processed_first_pass": 3122000,
+      "agents_processed_second_pass": 3122000,
+      "overall": {
+        "satisfaction_proxy": 91.87,
+        "mean_generalized_cost_proxy": 8.133,
+        "p90_travel_minutes_proxy": 60,
+        "vehicle_km_proxy": 3479337.62
+      },
+      "enterprise": {
+        "agents": 1092700,
+        "satisfaction_proxy": 91.88,
+        "mean_travel_minutes": 44.41,
+        "activity_chain_completion_proxy": 1,
+        "vehicle_km_proxy": 994510.48
+      },
+      "protected_groups": {
+        "minimum_satisfaction_proxy": 91.42,
+        "minimum_accessibility_proxy": 0.963,
+        "maximum_p90_travel_minutes_proxy": 60,
+        "declared_shift_share_input": 0
+      }
+    },
+    {
+      "declared_shift_share_input": 0.06,
+      "selected_policy_controls": {
+        "weight_profile": "C3",
+        "curb_factor": 0.76,
+        "reliability_bonus": 0.08,
+        "accessibility_protection": 0.07,
+        "air_candidate": false
+      },
+      "hard_gate_pass": true,
+      "agents_processed_first_pass": 3122000,
+      "agents_processed_second_pass": 3122000,
+      "overall": {
+        "satisfaction_proxy": 91.87,
+        "mean_generalized_cost_proxy": 8.128,
+        "p90_travel_minutes_proxy": 60,
+        "vehicle_km_proxy": 3479337.62
+      },
+      "enterprise": {
+        "agents": 1092700,
+        "satisfaction_proxy": 91.89,
+        "mean_travel_minutes": 44.32,
+        "activity_chain_completion_proxy": 1,
+        "vehicle_km_proxy": 994510.48
+      },
+      "protected_groups": {
+        "minimum_satisfaction_proxy": 91.42,
+        "minimum_accessibility_proxy": 0.963,
+        "maximum_p90_travel_minutes_proxy": 60,
+        "declared_shift_share_input": 0
+      }
+    },
+    {
+      "declared_shift_share_input": 0.12,
+      "selected_policy_controls": {
+        "weight_profile": "C3",
+        "curb_factor": 0.76,
+        "reliability_bonus": 0.08,
+        "accessibility_protection": 0.07,
+        "air_candidate": false
+      },
+      "hard_gate_pass": true,
+      "agents_processed_first_pass": 3122000,
+      "agents_processed_second_pass": 3122000,
+      "overall": {
+        "satisfaction_proxy": 91.88,
+        "mean_generalized_cost_proxy": 8.124,
+        "p90_travel_minutes_proxy": 60,
+        "vehicle_km_proxy": 3479337.62
+      },
+      "enterprise": {
+        "agents": 1092700,
+        "satisfaction_proxy": 91.9,
+        "mean_travel_minutes": 44.23,
+        "activity_chain_completion_proxy": 1,
+        "vehicle_km_proxy": 994510.48
+      },
+      "protected_groups": {
+        "minimum_satisfaction_proxy": 91.42,
+        "minimum_accessibility_proxy": 0.963,
+        "maximum_p90_travel_minutes_proxy": 60,
+        "declared_shift_share_input": 0
+      }
+    },
+    {
+      "declared_shift_share_input": 0.18,
+      "selected_policy_controls": {
+        "weight_profile": "C3",
+        "curb_factor": 0.76,
+        "reliability_bonus": 0.08,
+        "accessibility_protection": 0.07,
+        "air_candidate": false
+      },
+      "hard_gate_pass": true,
+      "agents_processed_first_pass": 3122000,
+      "agents_processed_second_pass": 3122000,
+      "overall": {
+        "satisfaction_proxy": 91.88,
+        "mean_generalized_cost_proxy": 8.119,
+        "p90_travel_minutes_proxy": 60,
+        "vehicle_km_proxy": 3479337.62
+      },
+      "enterprise": {
+        "agents": 1092700,
+        "satisfaction_proxy": 91.92,
+        "mean_travel_minutes": 44.14,
+        "activity_chain_completion_proxy": 1,
+        "vehicle_km_proxy": 994510.48
+      },
+      "protected_groups": {
+        "minimum_satisfaction_proxy": 91.42,
+        "minimum_accessibility_proxy": 0.963,
+        "maximum_p90_travel_minutes_proxy": 60,
+        "declared_shift_share_input": 0
+      }
+    },
+    {
+      "declared_shift_share_input": 0.24,
+      "selected_policy_controls": {
+        "weight_profile": "C3",
+        "curb_factor": 0.76,
+        "reliability_bonus": 0.08,
+        "accessibility_protection": 0.07,
+        "air_candidate": false
+      },
+      "hard_gate_pass": true,
+      "agents_processed_first_pass": 3122000,
+      "agents_processed_second_pass": 3122000,
+      "overall": {
+        "satisfaction_proxy": 91.89,
+        "mean_generalized_cost_proxy": 8.114,
+        "p90_travel_minutes_proxy": 60,
+        "vehicle_km_proxy": 3479337.62
+      },
+      "enterprise": {
+        "agents": 1092700,
+        "satisfaction_proxy": 91.93,
+        "mean_travel_minutes": 44.05,
+        "activity_chain_completion_proxy": 1,
+        "vehicle_km_proxy": 994510.48
+      },
+      "protected_groups": {
+        "minimum_satisfaction_proxy": 91.42,
+        "minimum_accessibility_proxy": 0.963,
+        "maximum_p90_travel_minutes_proxy": 60,
+        "declared_shift_share_input": 0
+      }
+    }
+  ],
+  "reference_scenario": 0.18,
+  "interpretation": "The sweep shows how the synthetic readout changes when one declared input moves. It does not identify an optimal stagger rate or prove adoption, demand, capacity, resident satisfaction or field performance.",
+  "checks": {
+    "scenario_count_complete": true,
+    "all_agents_processed": true,
+    "all_ground_hard_gates_pass": true,
+    "reference_scenario_present": true,
+    "protected_groups_do_not_receive_shift_input": true,
+    "protected_readout_invariant_under_input_sweep": true,
+    "air_candidate_blocked_by_fixed_controls": true,
+    "aggregate_only": true,
+    "no_optimal_rate_claim": true
+  }
+}

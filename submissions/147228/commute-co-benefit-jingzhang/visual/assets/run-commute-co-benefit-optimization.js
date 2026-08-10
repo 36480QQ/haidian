@@ -469,21 +469,25 @@ function checkReadout(readout) {
   return false;
 }
 
-if (process.argv.includes('--check')) {
-  if (!fs.existsSync(outputPath)) {
-    console.error(`COMMUTE_CO_BENEFIT_CHECK_FAIL: missing ${outputPath}`);
-    process.exitCode = 1;
+if (require.main === module) {
+  if (process.argv.includes('--check')) {
+    if (!fs.existsSync(outputPath)) {
+      console.error(`COMMUTE_CO_BENEFIT_CHECK_FAIL: missing ${outputPath}`);
+      process.exitCode = 1;
+    } else {
+      checkReadout(JSON.parse(fs.readFileSync(outputPath, 'utf8')));
+    }
   } else {
-    checkReadout(JSON.parse(fs.readFileSync(outputPath, 'utf8')));
+    const readout = buildReadout();
+    writeArtifacts(readout);
+    console.log(JSON.stringify({
+      ok: true,
+      output: path.relative(packageRoot, outputPath),
+      selected_policy_id: readout.selected_policy_id,
+      selected_policy_score: readout.candidates.find((candidate) => candidate.policy_id === readout.selected_policy_id)?.satisfaction_proxy,
+      candidates: readout.ranking
+    }, null, 2));
   }
-} else {
-  const readout = buildReadout();
-  writeArtifacts(readout);
-  console.log(JSON.stringify({
-    ok: true,
-    output: path.relative(packageRoot, outputPath),
-    selected_policy_id: readout.selected_policy_id,
-    selected_policy_score: readout.candidates.find((candidate) => candidate.policy_id === readout.selected_policy_id)?.satisfaction_proxy,
-    candidates: readout.ranking
-  }, null, 2));
 }
+
+module.exports = { buildReadout, simulateBundle, model, MODES, TOTAL };

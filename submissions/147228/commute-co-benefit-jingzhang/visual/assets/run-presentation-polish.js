@@ -241,6 +241,13 @@ function addCommuteCoBenefitSection(html, lang) {
       const extra = `<img src="../assets/figures/commute-co-benefit-authorization-board${suffix}.svg" alt="${lang === 'zh' ? '从合成屏查到现场授权的通勤共益证据阶梯' : 'Commute co-benefit evidence ladder from synthetic screen to field authorisation'}">`;
       if (markerStart >= 0 && markerEnd >= markerStart) html = `${html.slice(0, markerEnd + 1)}${extra}${html.slice(markerEnd + 1)}`;
     }
+    if (!html.includes(`commute-co-benefit-sensitivity-board${suffix}.svg`)) {
+      const marker = `../assets/figures/commute-co-benefit-authorization-board${suffix}.svg`;
+      const markerStart = html.indexOf(marker);
+      const markerEnd = html.indexOf('>', markerStart);
+      const extra = `<img src="../assets/figures/commute-co-benefit-sensitivity-board${suffix}.svg" alt="${lang === 'zh' ? '企业错峰输入敏感性与群体保护' : 'Employer staggering sensitivity and group protection'}">`;
+      if (markerStart >= 0 && markerEnd >= markerStart) html = `${html.slice(0, markerEnd + 1)}${extra}${html.slice(markerEnd + 1)}`;
+    }
     return html;
   }
   const readout = readJson('visual/assets/commute-co-benefit-readout.json');

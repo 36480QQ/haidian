@@ -118,7 +118,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "334f9cb6f1420106e4beafa64599f196351773be2623e7a585ccbbf825ead8bd"
+      "sha256": "bf9aebcefbf666e1baba19d82e1c81ce1aad82928a43fc2f1377ab5495681647"
     },
     {
       "path": "compliance_matrix.json",
@@ -228,14 +228,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "24367f40249f2bd418d175bb697bdda780be21ef2d8e2f65af89b1bf9f1b8289"
+      "sha256": "124160363416d6375686b526cd7cfd4872c659ad122ce7f441e2e8c7a12bf22f"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d6689841eb446a7e8d0a2babbcd32a1b2460bc8f7d81999add159af66ccb7cb2"
+      "sha256": "e1b187ebd74112b17cf761f7d17505715c61cd507dce9c3d3a262657704e1881"
     },
     {
       "path": "report/copyright_statement.md",
@@ -254,14 +254,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "05a03dd80d13f14591ff1960c17877e7cec35a02c4e15199825ef6ef95e9c181"
+      "sha256": "06638afc96ef264b4acc769f46fcb923643046dcb80a4f3c6270c48d76bccbaf"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c8a989ab4aa0bb5b84f109c7658f24e6e8339af0180f0c74c98715782b99bfb4"
+      "sha256": "adfae7a81c78cc09e4fd04d063b3b00a2bfcddd2701837560a79596b508bd37b"
     },
     {
       "path": "self_check.json",
@@ -322,14 +322,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "13f24e7f71af328d7bf1450aabea2c6866a25ae21bbd342bdd760f4da6319bb3"
+      "sha256": "77dad91251946e6be6e4617934377d98afaa808788bec336c20d1382066c1dfa"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0068b45887a79f5034980d7cb16ea2c6974a551bef4913c0320c454f3fdf42fc"
+      "sha256": "be7673a3d6c53bb7a872e47af572f87b59a651e01f1dc29e197977ccb0bb5e79"
     },
     {
       "path": "visual/assets/multimodal-network.json",
@@ -797,7 +797,7 @@
       "path": "visual/assets/review-evidence-index.json",
       "role": "review_navigation",
       "required": false,
-      "sha256": "008d78f180c66d06ca5b99cc89af2aeaf684b84af92951e8d71c468d8aa8e04e"
+      "sha256": "2724c50f5e75331280c3a06db041b1e52e75f7f7db69a3df193fd8a91295f056"
     },
     {
       "path": "visual/assets/site-and-stakeholder-evidence.json",
@@ -836,7 +836,7 @@
       "path": "visual/assets/run-presentation-polish.js",
       "role": "runner",
       "required": false,
-      "sha256": "905b3d37426bd013eb45d7d03495cf045ead200e5186c85823ff2e623d1ef280"
+      "sha256": "3e26a29567e5af64d5a86d97f64ebb1b32eb0f9232e5f0a04fe82943844490e2"
     },
     {
       "path": "assets/figures/scenario-cards-board.svg",
@@ -962,7 +962,7 @@
       "path": "visual/assets/run-commute-co-benefit-optimization.js",
       "role": "executable_evidence",
       "required": false,
-      "sha256": "61d1407b105dc584580f2a6ba659ef5286013a10bb400449262e375afcf80aeb"
+      "sha256": "bc25d84775115e8d6d8e7af58c9b7ee47589ff2d41994936d6bd1cb42f0c2767"
     },
     {
       "path": "assets/figures/commute-co-benefit-contract-board.svg",
@@ -1017,6 +1017,33 @@
       "role": "executable_evidence",
       "required": false,
       "sha256": "c3fc32033b07c9af90165e7961e453d3507ccb4b9ff9526ef57d589a2ddd9642"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-sensitivity-board.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "7951c441f81ccdc04c40c61fa186c96c6fedd6547d22daf76b77548a82fd25b8"
+    },
+    {
+      "path": "assets/figures/commute-co-benefit-sensitivity-board.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/commute-co-benefit-sensitivity-board.svg",
+      "sha256": "48d24b32a70b3b4777c31f7fbebabf416c1295e7d7a1fc6e1e78bc02dc844628"
+    },
+    {
+      "path": "visual/assets/commute-co-benefit-sensitivity.json",
+      "role": "data",
+      "required": false,
+      "sha256": "6a3f477dd7eb1215299873cd4415f3fb09ea942a770f0e133a8be9e865a512e2"
+    },
+    {
+      "path": "visual/assets/run-commute-co-benefit-sensitivity.js",
+      "role": "executable_evidence",
+      "required": false,
+      "sha256": "2cb23b658a61b14ae55921888cee78a4b2fcd70193fccfe5438a8045677ad843"
     }
   ]
 }
