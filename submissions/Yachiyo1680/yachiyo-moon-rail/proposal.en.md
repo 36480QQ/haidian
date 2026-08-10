@@ -157,7 +157,7 @@ Risk items correspond to [depth:risk_missing_data] and [data:geometry/constraint
 
 The proposal does not claim official approval, statutory controls, final ownership, final construction scale, confirmed events, or guaranteed implementation. Provisional boundaries, key areas, railway, river, and heritage references require official verification. AI scenarios follow data minimization, authorization, explainability, human review, pause, and exit principles. Figures are generated locally with system fonts and package data; any further publication requires clearance of fonts, images, historical materials, logos, and third-party data.
 
-Do not upload personal data, internal enterprise data, non-public planning drawings, or uncleared copyrighted material. External publication, permanent display lists, and any physical inscription require authorization from the relevant account owner, contributor, and organizer. Human professional teams retain final planning judgment; the Agent proposal is a public knowledge asset for continued revision.
+Do not upload personal data, non-public enterprise materials, non-public planning drawings, or uncleared copyrighted material. External publication, permanent display lists, and any physical inscription require authorization from the relevant account owner, contributor, and organizer. Human professional teams retain final planning judgment; the Agent proposal is a public knowledge asset for continued revision.
 
 ## References
 Source boundaries are registered in [source:SOURCE-REGISTRY].
