@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JINGZHANG STACK: One Spine · Three Stacks · Two Wings — Centennial Jing-Zhang AI Innovation Belt Urban Design Concept - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>JINGZHANG STACK: One Spine · Three Stacks · Two Wings — Centennial Jing-Zhang AI Innovation Belt Urban Design Concept</h1>
+<p class="summary">English display counterpart of the Chinese formal proposal. Spatial conclusions are evidence-linked to GeoJSON layers and recomputed metrics; boundary precision remains provisional until official redlines are published.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<p>&lt;!-- ENGLISH DISPLAY COUNTERPART. The authoritative content is proposal.md (zh). --&gt;</p>
+<h1>JINGZHANG STACK: One Spine · Three Stacks · Two Wings</h1>
+<p>This is the English display counterpart of the formal Chinese proposal. All spatial conclusions are evidence-linked to <code>geometry/</code> layers and recomputed metrics; this document summarizes the structure and key deliverables rather than duplicating every machine-readable reference.</p>
+<h2>Submission Status</h2>
+<ul>
+<li><strong>package_state</strong>: ready_for_review</li>
+<li><strong>Boundary precision</strong>: provisional — official redlines are pending; the whole package must be recomputed once official polygons are published.</li>
+<li><strong>Scoring note</strong>: structural data gaps do not block content scoring; precision warnings are preserved.</li>
+</ul>
+<h2>Three-Level Scope Framework</h2>
+<div class="proposal-table"><table><thead><tr><th>Level</th><th>Design Question</th><th>Proposal Answer</th><th>Data Anchors</th></tr></thead><tbody><tr><td>Coordinated research scope (43.6 km²)</td><td>How to organize the AI industry ecology and future urban form</td><td>Innovation chain: university strategy → open-source collaboration → enterprise incubation → public experience → international outreach</td><td>compliance_matrix.json, standard_matrix.json</td></tr><tr><td>Overall design scope (11.4 km²)</td><td>How to implement land use, urban renewal, mobility and image</td><td>Land use / buildings / roads / green space / public space / phasing layers</td><td>land_use.geojson, roads.geojson</td></tr><tr><td>Key detailed design areas (368.4 ha)</td><td>How to reach detailed design depth in three areas</td><td>L0 Zhongzhiyuan (computing &amp; root tech), L1 AI Origin community (models &amp; open source), L2 Dazhongsi (scenarios &amp; applications)</td><td>key_areas.geojson</td></tr></tbody></table></div>
+<h2>Overall Concept</h2>
+<p><strong>JINGZHANG STACK — One Spine · Three Stacks · Two Wings.</strong></p>
+<ul>
+<li><strong>One Spine</strong>: the Jing-Zhang heritage railway park green corridor (conceptual, ~19.8 km perimeter) connecting the three stacks.</li>
+<li><strong>Three Stacks</strong>: L0 众智园 (192.9 ha), L1 AI 原点社区 (104.3 ha), L2 大钟寺 (72.0 ha).</li>
+<li><strong>Two Wings</strong>: 中关村科技服务翼 (west, capital/IP/talent services) and 小月河场景赋能翼 (east, AI+life scenarios).</li>
+<li><strong>Seam connectors</strong>: three east-west public seam interfaces that stitch the railway corridor with surrounding districts.</li>
+</ul>
+<h2>Key Metrics (all recomputed from submitted geometry)</h2>
+<div class="proposal-table"><table><thead><tr><th>Metric</th><th>Value</th><th>Basis</th></tr></thead><tbody><tr><td>Site area</td><td>11,412,825 m²</td><td>polygon_area(site_boundary, provisional)</td></tr><tr><td>Green ratio</td><td>26.2%</td><td>green_space_area / site_area</td></tr><tr><td>Public space ratio</td><td>8.2%</td><td>public_space_area / site_area</td></tr><tr><td>Industrial land ratio</td><td>48.2%</td><td>(research + commercial + test) / site_area</td></tr><tr><td>Heritage spine length</td><td>19.8 km</td><td>perimeter of green spine corridor</td></tr><tr><td>Road centerline</td><td>25.9 km</td><td>sum(linestring_length(roads))</td></tr><tr><td>Conceptual buildings</td><td>20</td><td>building footprints in three key areas</td></tr></tbody></table></div>
+<h2>AI Scenario Cards (12) &amp; Personas (6)</h2>
+<p>12 scenario cards cover open-source publishing, governance sandbox, edge-compute stations, AI slow-mobility navigation, international roadshow living room, low-carbon innovation corridor, university commercialization street, data-elements lounge, AI life-service street, global AI week route, intelligent operations &amp; public-safety coordination, and accessible care network. Six personas: open-source developers, startups, enterprise visitors, residents, university staff/students, and international talents.</p>
+<h2>AI Pilgrimage Landmarks (4)</h2>
+<p>Origin Open-Source Honor Wall (PUBLIC-005), Zhongzhiyuan Computing-Light Installation (PUBLIC-004), Dazhongsi Scenario-Experience Window (PUBLIC-006), and the Centennial Jing-Zhang Cultural Stitch Belt (GREEN-001). All are design suggestions requiring rights clearance before implementation.</p>
+<h2>Standards &amp; Compliance</h2>
+<p>Requirements are mapped in <code>compliance_matrix.json</code> (announcement tasks), <code>standard_matrix.json</code> (professional standards), and <code>design_depth_matrix.json</code> (design depth items). AI governance follows data minimization, open sources, explainability, and human review; AI nodes never replace statutory approval and never claim official implementation commitments.</p>
+<h2>References</h2>
+<p>See <code>sources.json</code> for the full registry; key sources include the official announcement, the agent task book, MNR land-use classification, MOHURD urban design measures, and the processed fact pack (<code>data/processed/agent_fact_pack.md</code>).</p>
+</main>
+</body>
+</html>

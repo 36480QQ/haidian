@@ -1,0 +1,103 @@
+{
+ "schema_version": "0.1.0",
+ "sources": [
+  {
+   "id": "SRC-OFFICIAL-ANNOUNCEMENT",
+   "registry_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+   "path": "brief/site-package/standards/references/project-official-announcement.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Project name, organizers, scope levels, area values, design tasks, submission depth."
+  },
+  {
+   "id": "SRC-AGENT-TASKBOOK",
+   "registry_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+   "path": "brief/site-package/agent_taskbook.json",
+   "source_type": "user_provided_cleared",
+   "usable_for_formal": "yes",
+   "usage": "Six required agent tasks, co-creation charter, review dimensions, boundary clause."
+  },
+  {
+   "id": "SRC-URBAN-DESIGN-MEASURES",
+   "registry_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+   "path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Urban design method and deliverable depth."
+  },
+  {
+   "id": "SRC-CONTROL-DETAILED-PLANNING",
+   "registry_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+   "path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Control-detailed-planning urban design depth framework."
+  },
+  {
+   "id": "SRC-MNR-LAND-USE",
+   "registry_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+   "path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Land use classification codes used in geometry/land_use.geojson."
+  },
+  {
+   "id": "SRC-PROVISIONAL-BOUNDARIES",
+   "registry_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+   "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+   "source_type": "agent_inferred_from_public_data",
+   "usable_for_formal": "no",
+   "usage": "Provisional rough boundaries for intake, concept design and local self-check only; official redline pending.",
+   "prohibited_uses": [
+    "official redline",
+    "precise area",
+    "statutory control"
+   ]
+  },
+  {
+   "id": "SRC-GENERATIVE-AI-MEASURES",
+   "registry_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+   "path": "brief/site-package/standards/references/generative-ai-interim-measures.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Generative AI service compliance for scenario design and operation mechanisms."
+  },
+  {
+   "id": "SRC-BARRIER-FREE-LAW",
+   "registry_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+   "path": "brief/site-package/standards/references/barrier-free-environment-law.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Barrier-free environment requirements for public space and mobility."
+  },
+  {
+   "id": "SRC-ELDERLY-SMART-TECH",
+   "registry_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+   "path": "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md",
+   "source_type": "official_public",
+   "usable_for_formal": "yes",
+   "usage": "Elderly-friendly smart city services in scenario design."
+  },
+  {
+   "id": "SRC-SITE-PACKAGE",
+   "path": "brief/site-package/",
+   "source_type": "repository_public",
+   "usable_for_formal": "yes",
+   "usage": "Enums, allowed design space, ranges, schemas, visual style recommendations."
+  },
+  {
+   "id": "SRC-SOURCE-REGISTRY",
+   "path": "data/source_registry.json",
+   "source_type": "repository_public",
+   "usable_for_formal": "yes",
+   "usage": "Usability registry distinguishing formal-ready, background-only and provisional-only materials."
+  },
+  {
+   "id": "SRC-PEER-PROPOSALS",
+   "path": "submissions-data.js",
+   "source_type": "repository_public",
+   "usable_for_formal": "no",
+   "usage": "Peer catalog review for differentiation; no content copied without attribution."
+  }
+ ]
+}
