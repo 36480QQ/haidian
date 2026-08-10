@@ -171,6 +171,27 @@ class SpatialReviewTests(unittest.TestCase):
         self.assertIn("threshold remains unchanged", overlap_issues[0].message)
         self.assertAlmostEqual(float(overlap_issues[0].actual), 7.961, places=3)
 
+    def test_projected_first_shared_cut_has_no_overlap_or_gap(self) -> None:
+        transformer = Transformer.from_crs("EPSG:4326", "EPSG:4548", always_xy=True)
+        wgs84_site = box(116.3407, 39.946, 116.3553, 39.948)
+        projected_site = transform(transformer.transform, wgs84_site)
+        min_x, min_y, max_x, max_y = projected_site.bounds
+        cut_x = (min_x + max_x) / 2
+        cut_window = box(min_x - 1, min_y - 1, cut_x, max_y + 1)
+        projected_left = projected_site.intersection(cut_window)
+        projected_right = projected_site.difference(projected_left)
+
+        report = SpatialReport()
+        check_land_use_coverage(
+            report,
+            projected_site,
+            [("LU-LEFT", projected_left, {}), ("LU-RIGHT", projected_right, {})],
+        )
+
+        self.assertTrue(report.ok, [issue.__dict__ for issue in report.issues])
+        self.assertNotIn("LAND_USE_OVERLAP", {issue.check_id for issue in report.issues})
+        self.assertNotIn("LAND_USE_COVERAGE_GAP", {issue.check_id for issue in report.issues})
+
     def test_building_outside_site_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
