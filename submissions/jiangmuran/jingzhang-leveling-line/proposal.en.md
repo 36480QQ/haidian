@@ -28,7 +28,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
 | What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 8/8 cases including 6 refusal branches |
-| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 18 of 354 (5.1%, thinnest of the eight), AI public services 32 | `visual/assets/field_map.json`; the census script is re-runnable |
+| Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 21 of 371 (5.1%, thinnest of the eight), AI public services 32 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | Three `evidence_class: regulatory_baseline` entries in `sources.json`, with article locators and how each was verified |
 | Who carries the public value | Personas P4–P7 are **the people who take the readings**, not a list of beneficiaries; a resident may initiate a re-survey of a judgement affecting them, at the third-order point nearest home | Human review points and exit conditions on all twelve scenario cards; all eight points in `geometry/public_space.geojson` cross jurisdictions |
@@ -55,7 +55,7 @@ Rules are easy to write. You find out whether they work by writing somebody's mo
 
 At no point in that day does she need to understand the words "closure error". She needs to know two things: **that her question was written down**, and **that if the answers do not agree, what stops is the service — not her treatment.**
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 354 merged proposals at the most recent measurement, 221 declare the governance track, and evidence-chain language appears in 31.1% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **14 of 354 by label (5.1%)**, the thinnest of the eight tracks and exactly half the next (youth-friendly public space, 28); `ai-public-services` is **30 (8.9%)**, next after it. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 371 merged proposals at the most recent measurement, 221 declare the governance track, and evidence-chain language appears in 31.1% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest — `robotics-autonomous-mobility` is **14 of 371 by label (5.1%)**, the thinnest of the eight tracks and exactly half the next (youth-friendly public space, 28); `ai-public-services` is **30 (8.9%)**, next after it. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
 
 ## Design Basis and Source List
 
@@ -65,7 +65,7 @@ Mandatory professional standards are read from the local reference snapshots rat
 
 **Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the GitHub git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]; its most recent run (2026-08-09) covered **354** proposals with 354/354 fetched and zero failures; the four earlier runs covered 184, 215, 228 and 298. A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
 
-The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags. **This observation reversed under this proposal's own re-measurement, and is recorded as such:** on 8 August it listed 184, i.e. 44 fewer (19.3%) than the repository held, unchanged between two censuses, which read as a widening gap; on 9 August it measured 292 of 298, a lag of **6 (2.0%)**, and that was written up as the index having plainly been caught up. **A fifth census the same day reads 309 of 354 — the lag is back to 29 (8.6%). So "caught up" was itself a snapshot conclusion, and it is withdrawn too.** Four index readings run, in order, 31 → 44 → 6 → 45 — the first two were previously printed the wrong way round, and the order is the point: the lag did widen at first, which is why it was read as widening: the lag is neither steadily widening nor permanently closed; it rises and falls with merge bursts. No credit is claimed and no blame assigned — causation cannot be shown. It is written here because a mechanism that only re-measures when the result flatters it is not a mechanism, and **drawing a conclusion from a single snapshot twice in a row shows the habit is not somebody else's.** **What survives is the methodological part: a review instrument must read the authoritative source (the git tree), not a derived index that may lag by an amount which itself varies.**
+The census deliberately does not read `submissions-data.js`. That file is a generated gallery index and it lags. **This observation reversed under this proposal's own re-measurement, and is recorded as such:** on 8 August it listed 184, i.e. 44 fewer (19.3%) than the repository held, unchanged between two censuses, which read as a widening gap; on 9 August it measured 292 of 298, a lag of **6 (2.0%)**, and that was written up as the index having plainly been caught up. **A fifth census the same day reads 309 of 371 — the lag is back to 29 (8.6%). So "caught up" was itself a snapshot conclusion, and it is withdrawn too.** Four index readings run, in order, 31 → 44 → 6 → 45 — the first two were previously printed the wrong way round, and the order is the point: the lag did widen at first, which is why it was read as widening: the lag is neither steadily widening nor permanently closed; it rises and falls with merge bursts. No credit is claimed and no blame assigned — causation cannot be shown. It is written here because a mechanism that only re-measures when the result flatters it is not a mechanism, and **drawing a conclusion from a single snapshot twice in a row shows the habit is not somebody else's.** **What survives is the methodological part: a review instrument must read the authoritative source (the git tree), not a derived index that may lag by an amount which itself varies.**
 
 Data products ship in `visual/assets/` and the numbers can be checked directly. The generation scripts cannot ship: the submission format's allow-list accepts no `.py` anywhere (`assets/*` takes images only, `report/*` five fixed names, `geometry/*` nine named files). They are published in the accompanying issue instead. Both self-collected sources are graded `background_only` in `sources.json`: they are the empirical basis of the argument, **not** evidence for any spatial or statutory conclusion.
 
@@ -77,7 +77,7 @@ Official `SITE_BOUNDARY` and the three `KEY_AREA` polygons remain unpublished. T
 
 An instrument that claims to make city AI re-measurable should first be pointed at the object closest to home.
 
-This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 354 merged proposals and PR numbers past 1000, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
+This is not a comment on the organisers' work. It is **the thing they most lack right now**: with 371 merged proposals and PR numbers past 1000, the hard problem is no longer intake but *reading across*. Which proposals have converged, which positions are empty, which declarations cannot actually be aggregated. A gallery page cannot answer that. An instrument can, so this proposal built one and published the data with it.
 
 **Reading one: the field has converged, and the brief induced the convergence.**
 
@@ -85,16 +85,16 @@ This is not a comment on the organisers' work. It is **the thing they most lack 
 
 | Structural motif | Proposals | Share |
 |---|---|---|
-| Three cores / three stations | 181 | 51.1% |
-| Two wings | 140 | 39.6% |
-| One spine / one belt | 109 | 30.8% |
-| Evidence chain / recomputable | 107 | 30.2% |
+| Three cores / three stations | 191 | 51.5% |
+| Two wings | 145 | 39.1% |
+| One spine / one belt | 114 | 30.7% |
+| Evidence chain / recomputable | 112 | 30.2% |
 
 <!-- MOTIFS:END -->
 
 The taskbook prescribes "three areas, two wings", so more than half the field draws the same skeleton. That is not consensus; it is the question shape. **Drawing that skeleton again adds nothing.** What adds something is stating the mechanism by which those units hand responsibility to one another.
 
-**Reading two: track coverage is severely uneven.** 237 proposals declare traffic and walkability (66.9%), 230 governance (65.4%), 207 enterprise services (59.1%) — against **18** for robotics and autonomous mobility (5.1%), with youth-friendly public space and AI public services tied for next-thinnest at **32** each (9.0%).
+**Reading two: track coverage is severely uneven.** 251 proposals declare traffic and walkability (67.7%), 241 governance (65.4%), 217 enterprise services (59.1%) — against **21** for robotics and autonomous mobility (5.1%), with youth-friendly public space and AI public services tied for next-thinnest at **34** each (9.0%).
 
 **These figures changed twice in this version, and the second time because the instrument was wrong — which has to be said.** The census front-matter reader recognised only `tracks: ["a", "b"]` and could not see the YAML block form:
 
@@ -112,9 +112,9 @@ Labels are not coverage, and that distinction matters. Reading every proposal in
 
 **Reading three: the "machine-readable" disclosure field is not machine-readable.**
 
-`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 248 filled in, **106 (29.9%) still hold the scaffold placeholder or are empty**.
+`agent.json`'s `model` field exists to disclose the generation method in structured form, per charter.6 (disclose generation method) and charter.5 (structured, agent-readable). Measured: 265 filled in, **106 (28.6%) still hold the scaffold placeholder or are empty**.
 
-And the 236 that are filled in use **113 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **53 different ways** across 156 proposals.
+And the 265 that are filled in use **117 distinct strings that collapse to 8 buckets** under the mapping rule published with the script (one bucket being "unclassified"). The GPT/Codex family alone is written **55 different ways** across 166 proposals.
 
 **No one can aggregate "which models produced this call" from that field.**
 
@@ -373,7 +373,7 @@ The mark, its construction, four variants and three applications (benchmark plaq
 
 ### Three positionings, five functions, and a circuit that closes (agent.1)
 
-The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. The measurement shows 50.6% of 354 proposals using a three-core structure, 39.6% two wings, and 30.0% a single spine [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
+The taskbook gives three positionings and five functions [source:AGENT-TASKBOOK]. Rather than restate them, this proposal connects them into a **circuit that can close** — which is precisely the blind spot the field converges into. The measurement shows 50.6% of 371 proposals using a three-core structure, 39.6% two wings, and 30.0% a single spine [source:FIELD-CENSUS-2026-08]. That convergence is not consensus; it is what the taskbook's "three areas, two wings" induces. Drawing the same structure again adds nothing. What adds something is stating **by what mechanism these units hand responsibility to one another.**
 
 The leveling network's answer is elevation transfer: each station's reading depends on the one before it, and the run returns to the origin to be computed.
 
@@ -765,7 +765,7 @@ The core claim for public services is therefore: **do not measure the average; m
 
 **Residents' right to initiate re-survey.** Any resident may require one re-survey of a judgement that affects them, and the result is published alongside the original reading, anonymised. That right sits at the third-order point nearest home: **putting the right of review in a specialist institution fifteen minutes' walk away is the same as not granting it.** Persona P4 is therefore not a line in a list of beneficiaries but the mechanism's trigger.
 
-**Why these two tracks need this instrument most.** The measurement of 354 proposals shows them at 18 and 32 respectively [source:FIELD-CENSUS-2026-08]. That is not because they are unimportant but because they are **hard to write** — treated seriously, they force safety, licensing, privacy, accessibility and appeal into the open, and cannot stop at the concept layer. This proposal takes them head on and writes the result in a form a professional team can refute item by item.
+**Why these two tracks need this instrument most.** The measurement of 371 proposals shows them at 18 and 32 respectively [source:FIELD-CENSUS-2026-08]. That is not because they are unimportant but because they are **hard to write** — treated seriously, they force safety, licensing, privacy, accessibility and appeal into the open, and cannot stop at the concept layer. This proposal takes them head on and writes the result in a form a professional team can refute item by item.
 
 ### Three controlled industry validation scenarios (agent.3)
 
