@@ -256,6 +256,11 @@ The gate needs `required_next_actions_zh` empty, which needs `repair_count == 0`
 
 Filed on Issue #950 and PR #957.
 
+**Postscript: #957 merged on 2026-08-10, so this section can now be restated against merged code rather than against a proposal.** The organizer split is live: an action carrying either of the two organizer-owned prefixes moves into `data_gaps_zh` and no longer counts toward `required_next_actions_zh`. **The summary item is untouched** — the sentence `ai_review_submission.py` appends unconditionally whenever `repair_count > 0` carries no prefix, so it still lands in participant actions and still makes the list non-empty.
+
+The conclusion therefore survives the merge, on stronger evidence than before: **it no longer rests on inferring how a proposed change would behave, but on reading the code that landed.** The minimum `repair_count` ever observed is still 17.
+
+
 #### The fourth measurable gap: a field that decides the warning count and joins to nothing
 
 <!-- SPATIAL:BEGIN -->

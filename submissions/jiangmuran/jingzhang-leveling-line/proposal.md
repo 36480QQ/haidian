@@ -6,7 +6,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了五次可重跑普查（184→354 份），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
+summary: "水准测量的方法论不是「测得准」，是「测得回来」：绕一周回到原点，闭合差超限则整段重测。本方案把这条规矩用在读数错了会伤到人的地方——低速机器人、自动驾驶接驳与AI医疗教育法律生活服务。全线布设分级水准点与两条附合路线，F1类场景必须先在受控测试场取得闭合合格才能进入公共服务，且永远保留无AI等价路径。同一台仪器转向本次征集自身，对全部已合入方案做了五次可重跑普查（184→373 份），数据与结论作为评审助手一并公开。所有空间建议均为概念建议，基于临时边界，不替代法定规划。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot", "ai-cultural-guide"]
 ---
@@ -282,6 +282,11 @@ OSM 原始坐标与全部口径随包提交于 `visual/assets/osm_reference.json
 **本方案不就此建议放宽，理由与他相同且更明显**：本包上一版得分 91，是这份数据里 ≥85 的三份之一，在这件事上没有中立立场。只摆机制和数字，不建议修改，不申请任何档位调整。是否放宽取决于组织方希望 `featured-candidate` 表达什么——那是策划判断，不是技术缺陷。
 
 已发于 Issue #950 与 PR #957。
+
+**后记：#957 已于 2026-08-10 合入，因此上面这段可以对着已合入的代码重说一遍，而不再是对着一份提案。** 组织方项分流已生效：带 `组织方：`／`主办方：` 前缀的 action 现在被移入 `data_gaps_zh`，不再计入 `required_next_actions_zh`。**而汇总项不受影响**——`ai_review_submission.py` 里那段在 `repair_count > 0` 时无条件追加的句子，不带任何前缀，因此仍然进入 participant actions，仍然使列表非空。
+
+所以本节的结论在合入后原样成立，且现在的依据比原来强：**它不再依赖对一份提案会如何生效的推断，而是读已合入的代码得到的。** 历史 `repair_count` 的观测最小值仍是 17。
+
 
 #### 第四个可测的机制缺口：一个决定警告条数、却不与任何东西联接的字段
 
