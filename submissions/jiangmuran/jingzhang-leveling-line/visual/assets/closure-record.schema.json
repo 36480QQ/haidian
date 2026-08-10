@@ -159,7 +159,8 @@
       "required": [
         "f",
         "passed",
-        "action"
+        "action",
+        "non_ai_path_available"
       ],
       "additionalProperties": false,
       "properties": {
@@ -182,7 +183,8 @@
         },
         "non_ai_path_available": {
           "type": "boolean",
-          "description": "Whether the equivalent non-AI service path is in place. Must be true; a scenario without one cannot be returned, because returning it would interrupt public service."
+          "const": true,
+          "description": "必填，且只能为 true。此前该字段可选、检查器只拒绝显式 false，因此省略它即可通过——对本方案声称不可豁免的一条规则而言，这是 fail-open。由 PR #1002 的评审 @anselasimov-web 指出。"
         }
       }
     },

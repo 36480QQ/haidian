@@ -15,7 +15,7 @@ HAS_SPATIAL_DEPS = all(
 )
 
 if HAS_SPATIAL_DEPS:
-    from spatial_review import review_submission  # noqa: E402
+    from spatial_review import AREA_TOLERANCE_SQM, review_submission  # noqa: E402
     from pyproj import Transformer  # noqa: E402
     from shapely.geometry import shape  # noqa: E402
     from shapely.ops import transform  # noqa: E402
@@ -171,6 +171,58 @@ class SpatialReviewTests(unittest.TestCase):
             report = review_submission(root / base, REPO_ROOT, "formal")
             self.assertFalse(report.ok)
             self.assertIn("KEY_AREA_AREA_MISMATCH", {issue.check_id for issue in report.issues})
+
+    def test_absolute_metric_drift_is_reported_without_blocking_legacy_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/spatial-absolute-metric-drift"
+            write_valid_spatial_package(root, base)
+            green = projected_area(polygon(116.305, 39.905, 116.307, 39.907))
+            metrics = {
+                "schema_version": "0.1.0",
+                "units": {"length": "m", "area": "sqm"},
+                "metrics": {
+                    "green_space_area_sqm": {
+                        "status": "known",
+                        "value": round(green + AREA_TOLERANCE_SQM * 2, 3),
+                        "unit": "sqm",
+                        "source_files": ["geometry/green_space.geojson"],
+                        "formula": "sum(non-overlapping concept green-space polygons)",
+                    }
+                },
+            }
+            write_json(root, f"{base}/metrics.json", metrics)
+
+            report = review_submission(root / base, REPO_ROOT, "formal")
+
+            self.assertTrue(report.ok, [issue.__dict__ for issue in report.issues])
+            self.assertIn("METRIC_RECALC_DRIFT", {issue.check_id for issue in report.issues})
+
+    def test_absolute_metric_mismatch_remains_blocking(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/spatial-absolute-metric-mismatch"
+            write_valid_spatial_package(root, base)
+            green = projected_area(polygon(116.305, 39.905, 116.307, 39.907))
+            metrics = {
+                "schema_version": "0.1.0",
+                "units": {"length": "m", "area": "sqm"},
+                "metrics": {
+                    "green_space_area_sqm": {
+                        "status": "known",
+                        "value": round(green * 1.02, 3),
+                        "unit": "sqm",
+                        "source_files": ["geometry/green_space.geojson"],
+                        "formula": "sum(non-overlapping concept green-space polygons)",
+                    }
+                },
+            }
+            write_json(root, f"{base}/metrics.json", metrics)
+
+            report = review_submission(root / base, REPO_ROOT, "formal")
+
+            self.assertFalse(report.ok)
+            self.assertIn("METRIC_RECALC_MISMATCH", {issue.check_id for issue in report.issues})
 
 
 if __name__ == "__main__":

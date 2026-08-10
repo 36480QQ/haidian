@@ -5,22 +5,26 @@
   "robotics-autonomous-mobility",
   "ai-public-services"
  ],
- "proposals_in_tracks": 36,
+ "proposals_in_tracks": 40,
  "proposals": [
   "147228",
   "2503668375-boop",
   "4210666",
   "7annnnnnn",
   "BE-hop",
+  "Cashmeran",
   "CatNebulaaaa",
   "Clay-HHK",
   "Currrrrrry",
   "DENGDixin",
+  "FallingSkyQwQ",
   "HXJ192",
   "ItsVeyra",
   "Komeiji-Shiki",
   "LaoFang114514",
   "Margin-del",
+  "Maydaytyh",
+  "Restless-One",
   "Sijie-Yang",
   "Warma10032",
   "XuejiFang",
@@ -51,7 +55,7 @@
   "ice_and_low_temperature": {
    "pattern": "冰雪|结冰|积雪|除雪|低温|严寒|冬季.{0,6}(运行|通行|停运)",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.025,
    "matched": [
     "jiangmuran"
    ]
@@ -59,7 +63,7 @@
   "noise_as_a_number": {
    "pattern": "分贝|dB|噪声.{0,8}(限值|标准|上限|阈值)|声环境质量标准",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.025,
    "matched": [
     "jiangmuran"
    ]
@@ -67,7 +71,7 @@
   "jurisdictional_seams": {
    "pattern": "管辖|权属交界|交界处|跨界.{0,6}(通行|责任)|公园管理.{0,6}(边界|权)",
    "proposals_matching": 2,
-   "share": 0.0556,
+   "share": 0.05,
    "matched": [
     "7annnnnnn",
     "jiangmuran"
@@ -76,7 +80,7 @@
   "fleet_density_ceiling": {
    "pattern": "(承载|通行).{0,6}上限|每米.{0,6}小时|车队.{0,4}(规模|上限|密度)|投放.{0,4}上限",
    "proposals_matching": 1,
-   "share": 0.0278,
+   "share": 0.025,
    "matched": [
     "jiangmuran"
    ]
@@ -84,7 +88,7 @@
   "emergency_access_yielding": {
    "pattern": "消防(通道|车道)|救护车|应急车道|急救.{0,4}让行|生命通道",
    "proposals_matching": 3,
-   "share": 0.0833,
+   "share": 0.075,
    "matched": [
     "147228",
     "DENGDixin",
@@ -94,7 +98,7 @@
   "wheelchair_passing": {
    "pattern": "轮椅.{0,10}(通过|会车|错车|并行|回转)",
    "proposals_matching": 3,
-   "share": 0.0833,
+   "share": 0.075,
    "matched": [
     "ItsVeyra",
     "jiangmuran",
@@ -103,10 +107,11 @@
   },
   "appeal_time_limit": {
    "pattern": "(答复|反馈|处理).{0,6}(时限|期限)|\\d+\\s*个?工作日",
-   "proposals_matching": 5,
-   "share": 0.1389,
+   "proposals_matching": 6,
+   "share": 0.15,
    "matched": [
     "CatNebulaaaa",
+    "Restless-One",
     "Warma10032",
     "chucky1102",
     "jiangmuran",
@@ -115,12 +120,14 @@
   },
   "removal_bond_or_insurance": {
    "pattern": "保证金|押金|保险|风险转移|理赔",
-   "proposals_matching": 9,
-   "share": 0.25,
+   "proposals_matching": 11,
+   "share": 0.275,
    "matched": [
     "147228",
     "BE-hop",
+    "Cashmeran",
     "Currrrrrry",
+    "Restless-One",
     "Warma10032",
     "chucky1102",
     "creeperCN",
@@ -131,13 +138,58 @@
   },
   "control_segment": {
    "pattern": "对照(街段|组|段)|准实验|对照评估",
-   "proposals_matching": 4,
-   "share": 0.1111,
+   "proposals_matching": 5,
+   "share": 0.125,
    "matched": [
     "Komeiji-Shiki",
+    "Maydaytyh",
     "chucky1102",
     "dakfjalka",
     "jiangmuran"
+   ]
+  },
+  "charging_or_parking": {
+   "pattern": "充电|换电|停放|驻车|泊位|停靠",
+   "proposals_matching": 27,
+   "share": 0.675,
+   "matched": [
+    "147228",
+    "2503668375-boop",
+    "7annnnnnn",
+    "Cashmeran",
+    "CatNebulaaaa",
+    "Clay-HHK",
+    "Currrrrrry",
+    "DENGDixin",
+    "FallingSkyQwQ",
+    "HXJ192",
+    "ItsVeyra",
+    "Komeiji-Shiki",
+    "LaoFang114514",
+    "Restless-One",
+    "Sijie-Yang",
+    "XuejiFang",
+    "chucky1102",
+    "creeperCN",
+    "dakfjalka",
+    "hxd0818",
+    "jiChen528",
+    "jiangmuran",
+    "liulingfei-1",
+    "seanSaxcy3",
+    "shawnshi",
+    "xiao555",
+    "xiaofenggan01"
+   ]
+  },
+  "charging_siting": {
+   "pattern": "(充电|换电|停放|驻车|停靠).{0,12}(选址|布点|设于|设在|位置|地块|节点|场站|驿站)|(选址|布点|场站|驿站).{0,12}(充电|换电|停放)",
+   "proposals_matching": 3,
+   "share": 0.075,
+   "matched": [
+    "LaoFang114514",
+    "jiangmuran",
+    "xiaofenggan01"
    ]
   }
  }

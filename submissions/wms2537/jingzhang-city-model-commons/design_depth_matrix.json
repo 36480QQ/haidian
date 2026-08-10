@@ -23,7 +23,9 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-DAZHONGSI-TRANSACTION-20251231",
+        "DATA-SRC-DAZHONGSI-SURVEY-20250806"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -32,7 +34,7 @@
         "CLAIM_BOUNDARY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "临时边界、公开任务和明确缺口被分级登记；官方 polygon、现状、控规、权属、文保、市政和停车数据保持缺失。"
+      "evidence_summary_zh": "临时边界、公开任务和明确缺口被分级登记；大钟寺局部交易/测量证据已纳入，但全域 official polygon、现状、控规、权属、文保、市政和停车数据仍保持缺失。"
     },
     {
       "item_id": "three_level_scope_framework",
@@ -162,11 +164,17 @@
         "floor_area_ratio",
         "building_height_m",
         "official_building_density",
-        "proposed_building_coverage_ratio"
+        "proposed_building_coverage_ratio",
+        "dazhongsi_local_b4_height_control_m",
+        "dazhongsi_local_b4_far_control",
+        "dazhongsi_local_b4_green_ratio_min",
+        "dazhongsi_north_third_ring_setback_m"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218",
+        "DATA-SRC-DAZHONGSI-SURVEY-20250806"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -175,7 +183,7 @@
         "CLAIM_BOUNDARY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "概念载体和覆盖率可复算，但 FAR、高度和法定密度保持 unknown，不作审批或强度结论。"
+      "evidence_summary_zh": "概念载体和覆盖率可复算；全域 FAR、高度和法定密度保持 unknown，仅在大钟寺 HD00-1603-01/03A 标注有范围限定的官方局部控制，不作全域审批或强度结论。"
     },
     {
       "item_id": "height_massing_character",
@@ -262,11 +270,13 @@
       "metric_refs": [
         "slow_mobility_network_length_m",
         "rail_station_integration_index",
-        "parking_supply_sqm"
+        "parking_supply_sqm",
+        "dazhongsi_station_integration_radius_m"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -275,7 +285,7 @@
         "CLAIM_BOUNDARY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "慢行、验证环和八处缝合表达概念关系；站点、停车和工程线位数据缺失并保持 unknown。"
+      "evidence_summary_zh": "慢行、验证环和八处缝合表达概念关系；大钟寺局部报审方案补充站点/市政接口证据，但全域站点、停车和工程线位数据仍缺失并保持 unknown。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -295,11 +305,14 @@
       ],
       "metric_refs": [
         "municipal_capacity_index",
-        "rail_station_integration_index"
+        "rail_station_integration_index",
+        "dazhongsi_runoff_coefficient_max"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025",
+        "DATA-SRC-DAZHONGSI-WATER-20250819"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -308,7 +321,7 @@
         "CLAIM_BOUNDARY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "公共节点预留责任卡和故障兜底；供电、网络、排水、消防、垃圾和容量不作工程测算。"
+      "evidence_summary_zh": "公共节点预留责任卡和故障兜底；大钟寺局部交通/水影响审查补充接口与径流 guardrail，但供电、网络、排水、消防、垃圾和全域容量不作工程测算。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -369,7 +382,10 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-DAZHONGSI-TRANSACTION-20251231",
+        "DATA-SRC-DAZHONGSI-SURVEY-20250806",
+        "DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -378,7 +394,7 @@
         "CLAIM_BOUNDARY",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "三处重点区分别给出空间角色、载体、场景、运营和治理边界；精确建筑线位、权属与实施条件待深化。"
+      "evidence_summary_zh": "三处重点区分别给出空间角色、载体、场景、运营和治理边界；大钟寺已有局部官方资料证据，但三处精确建筑线位、权属与实施条件仍待深化。"
     },
     {
       "item_id": "renewal_project_list",
