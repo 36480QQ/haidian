@@ -6,11 +6,27 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.4"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.4 gives all 23 brief requirements differentiated evidence entrances, prioritizes missing inputs, and treats compute-energy policy only as a design baseline to be verified. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.5"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.5 makes the east–west / north–south connector logic, public-space component library, contribution display, and developer–scenario–release conversion chain replayable. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.5 Public-space connectors and community conversion | Make agent.4 and agent.6 more than an event list
+
+v2.5 closes two places where an “AI showcase” can hide the real urban question. **North–south continuity / east–west stitching** is not a new road or engineering alignment: it is a reading rule that connects the three focus areas as ordinary arrival → staffed choice → bounded machine → blue-green recovery → exit replay, while public problem desks, community service, OPC learning and Xiaoyuehe screen-free recovery stitch innovation back to daily life.[data:visual/assets/public-space-connector-atlas-v25.json] [data:geometry/phasing.geojson#PHASE-V01] [depth:overall_spatial_structure]
+
+The component library makes five human-first public-space actions reusable: staffed access desk, intergenerational learning table, screen-free recovery node, contribution/honour replay wall, and pause/rollback marker. Each component points to an existing `public_space` or `green_space` anchor, keeps `dimensions=null`, and makes no venue, rights, heritage, operator or construction claim.[data:visual/assets/public-space-connector-atlas-v25.json] [data:geometry/public_space.geojson#PUBLIC-A-INCLUSION] [data:geometry/green_space.geojson#GREEN-A-QUIET-1]
+
+The “three-panel public contribution display” shows only authorized, traceable and withdrawable problem, care and replay contributions. Honour refers to public contribution, not an official honour, award, enterprise list,招商 commitment or public-credit score. Rights, attribution, withdrawal and independent review must be available before a professional team deepens the concept.[data:visual/assets/public-space-connector-atlas-v25.json] [depth:risk_missing_data]
+
+Developer-community and long-term operation are now a stoppable four-gate conversion chain: **open problem → learn / review → bounded scenario → replay / release**. Each gate declares a spatial anchor, human equivalent, first evidence and stop condition. It connects paid transition for workers at displacement risk, developer protocol review, public-service questions and city release notes without naming an operator, budget, schedule,招商 arrangement or settled policy.[data:visual/assets/developer-community-conversion-v25.json] [source:HD-OPC-2026] [depth:phasing_implementation]
+
+Figure 27 places the connector strategy, five components and the conversion chain on one presentation-level urban-design board; it is not a debug screenshot, engineering drawing or scorecard.[data:visual/assets/check-public-space-operations-v25.js]
+
+![Figure 27 | Public-space connectors, components and developer/community conversion: north–south continuity, east–west stitching, contribution replay and release](assets/figures/public-space-operations-v25.en.png)
+
+This increment changes evidence legibility and transferability only. It does not change `geometry`, `metrics`, the five core figures or publication ordering. All anchors remain `official_boundary=false` and `geometry_role=provisional_constraint`; activities, components and conversion remain conceptual suggestions / reference schemes for professional teams to deepen. When official boundary, rights, heritage, accessibility, climate, data-authorization and operation inputs arrive, recompute the figures, HTML, PDFs, manifest and self-check together.[data:visual/assets/check-public-space-operations-v25.js] [depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## v2.4 Evidence crosswalk and policy boundary | Make every requirement independently replayable
 

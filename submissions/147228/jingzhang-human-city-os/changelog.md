@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v2.5 - 2026-08-10
+
+- 新增双语图 27“公共空间连接、组件与社群转化”和两个结构化台账：`public-space-connector-atlas-v25.json` 以南北贯通、东西缝合和五类人本组件把 agent.4 落到既有空间锚点；`developer-community-conversion-v25.json` 以“公开问题—共学复核—受控场景—版本发布”四阶段把 agent.6 的开发者社群、场景开放和标准/知识外溢写成可停止、可回放的概念链。
+- 公共贡献三联展明确为概念展示，不是官方荣誉/奖励系统；所有新增空间和运营表达继续保持 `official_boundary=false`、`geometry_role=provisional_constraint`、`operational_status=not_authorized_not_run`、`performance_results=null` 与 `not_a_score=true`，不新增几何、指标、运营方、许可、资金或绩效结论。
+- 同步中英文 proposal、离线 visual index、双语审计、确定性 checker、HTML、PDF/图册与 manifest；不修改正式 metrics、来源等级、`submissions-data.js`、`gallery-publication.json` 或公开排序。
+
 ## v2.4 - 2026-08-10
 
 - 为 23 条公告 / 任务书要求各自增加差异化、包内可回读的 `evidence_items`，并在 reviewer evidence map 中标注差异化主张与复核边界。

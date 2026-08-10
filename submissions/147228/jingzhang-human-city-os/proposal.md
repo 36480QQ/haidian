@@ -6,11 +6,27 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.4"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.4 为 23 条任务要求补上差异化证据入口、为假设标注补料优先级，并把算电政策仅作为待核验设计基线。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.5"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.5 把东西缝合/南北贯通、公共空间组件与公共贡献展示，以及开发者社群—场景开放—版本外溢转化链做成可回读证据。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
+
+## v2.5 公共空间连接与社群转化｜让 agent.4、agent.6 不停在活动清单
+
+v2.5 补的是任务书里最容易被“AI 展台”掩盖的两处：**东西缝合 / 南北贯通**不是新增道路或工程线位，而是把三处重点区读成一条“普通到达 → 人工选择 → 受控机器 → 蓝绿恢复 → 退出回放”的南北公共脊，并用公共问题台、社区服务、OPC 共学和小月河无屏恢复把东西两侧缝合回日常。[data:visual/assets/public-space-connector-atlas-v25.json] [data:geometry/phasing.geojson#PHASE-V01] [depth:overall_spatial_structure]
+
+组件库把公共空间的动作写成可复用的五种“人先看到的构件”：人工入口桌、代际共学桌、无屏恢复节点、贡献与荣誉回放墙、暂停与回退标识。它们均绑定既有 `public_space` / `green_space` 锚点，尺寸保持 `null`，不主张场地、权属、文保、运营或建设结果。[data:visual/assets/public-space-connector-atlas-v25.json] [data:geometry/public_space.geojson#PUBLIC-A-INCLUSION] [data:geometry/green_space.geojson#GREEN-A-QUIET-1]
+
+“公共贡献三联展”只展示经授权、可追溯、可撤回的问题贡献、照料贡献和回放贡献；“荣誉”指向公共贡献，不是官方荣誉、评奖、企业名单、招商或公共信用评价。取得权利、署名、撤回和独立复核资料后，才可由专业团队深化研究。[data:visual/assets/public-space-connector-atlas-v25.json] [depth:risk_missing_data]
+
+开发者社群与长期运营不再只写四季活动，而是压成四个可停止的转化门：**公开问题 → 共学 / 复核 → 受控场景 → 回放 / 发布**。每一门都给出空间锚点、人工等效、第一份证据和停止条件；它可以把被替代风险劳动者的带薪转型、开发者协议复核、公共服务问题和城市 release note 放到同一条知识外溢链，但不指定主体、经费、日程、招商或政策。[data:visual/assets/developer-community-conversion-v25.json] [source:HD-OPC-2026] [depth:phasing_implementation]
+
+图 27 把连接策略、五类组件和转化链放进同一张表达级城市设计图；它不是调试截图、工程图或评分卡。[data:visual/assets/check-public-space-operations-v25.js]
+
+![图 27｜公共空间连接、组件与开发者／社区转化链：南北贯通、东西缝合、贡献回放与版本发布](assets/figures/public-space-operations-v25.png)
+
+本轮只增加任务可读性和可转化证据，不改变 `geometry`、`metrics`、核心五图或发布排序。所有锚点仍是 `official_boundary=false`、`geometry_role=provisional_constraint`，活动 / 组件 / 转化仍是概念建议、参考方案，可供专业团队深化研究；取得正式边界、权属、文保、无障碍、气候、数据授权和运营资料后，应连同图件、HTML、PDF、manifest 与 self-check 全量复算。[data:visual/assets/check-public-space-operations-v25.js] [depth:metrics_recalculation] [depth:risk_missing_data]
 
 ## v2.4 证据交叉索引与政策边界｜让每一条任务都能独立回读
 

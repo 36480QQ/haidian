@@ -1244,7 +1244,8 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "v2.5 公共空间连接与社群转化"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -1290,11 +1291,14 @@
       "evidence_items": [
         {
           "id": "EV-agent-4-01",
-          "claim_zh": "公共空间优先保障人工入口、无屏恢复和低数字能力者的可见选择权。",
+      "claim_zh": "公共空间以南北贯通、东西缝合和五类人本组件保障人工入口、无屏恢复、公共贡献与低数字能力者的可见选择权。",
           "evidence_refs": [
             "geometry/public_space.geojson",
             "visual/assets/human-city-ordinary-journey.json",
-            "visual/assets/accessibility-audit.json"
+            "visual/assets/accessibility-audit.json",
+            "visual/assets/public-space-connector-atlas-v25.json",
+            "visual/assets/check-public-space-operations-v25.js",
+            "assets/figures/public-space-operations-v25.svg"
           ],
           "review_boundary_zh": "这些入口只证明包内概念、结构和离线可回读性；不替代官方边界、法定控制、专业审批、公众基线或现实绩效。"
         }
@@ -1414,11 +1418,14 @@
       "evidence_items": [
         {
           "id": "EV-agent-6-01",
-          "claim_zh": "长期运营以年度体检、公众 issue、release note 和事故复盘保持可逆治理。",
+      "claim_zh": "长期运营以公开问题、共学复核、受控场景、年度体检、release note 和事故复盘形成可停止的转化链。",
           "evidence_refs": [
             "visual/assets/release-gate-ledger.json",
             "visual/assets/governance-startup-protocol.json",
-            "visual/assets/reviewer-navigation-audit.json"
+        "visual/assets/reviewer-navigation-audit.json",
+        "visual/assets/developer-community-conversion-v25.json",
+        "visual/assets/check-public-space-operations-v25.js",
+        "assets/figures/public-space-operations-v25.svg"
           ],
           "review_boundary_zh": "这些入口只证明包内概念、结构和离线可回读性；不替代官方边界、法定控制、专业审批、公众基线或现实绩效。"
         }
@@ -1916,10 +1923,11 @@
       "evidence_status": "package_local_replayable"
     },
     "agent.4": {
-      "focus_zh": "公共空间与地标用无屏绿地、人工入口和城市 API 公共接口承接人本体验。",
+      "focus_zh": "公共空间与地标用南北贯通、东西缝合、无屏绿地、人工入口、公共贡献展示和城市 API 公共接口承接人本体验。",
       "proposal_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "蓝绿空间、公共空间与城市风貌"
+        "蓝绿空间、公共空间与城市风貌",
+        "v2.5 公共空间连接与社群转化"
       ],
       "geometry_refs": [
         "geometry/public_space.geojson#PUBLIC-A-INCLUSION",
@@ -1935,6 +1943,11 @@
         "SC-B04"
       ],
       "differentiator_zh": "公共空间优先保障人工入口、无屏恢复和低数字能力者的可见选择权。",
+      "evidence_paths": [
+        "visual/assets/public-space-connector-atlas-v25.json",
+            "visual/assets/check-public-space-operations-v25.js",
+        "assets/figures/public-space-operations-v25.svg"
+      ],
       "evidence_status": "package_local_replayable"
     },
     "agent.5": {
@@ -1957,11 +1970,12 @@
       "evidence_status": "package_local_replayable"
     },
     "agent.6": {
-      "focus_zh": "长期运营以年度体检、公众 issue、release note、事故复盘和标准外溢构成版本化治理。",
+      "focus_zh": "长期运营以公开问题、开发者与劳动者共学、受控场景、年度体检、release note、事故复盘和标准外溢构成版本化治理。",
       "proposal_sections": [
         "v0.2：把城市版本做成可否决的发布门",
         "核心概念与四项运行机制",
-        "v1.5 概念交付主线"
+        "v1.5 概念交付主线",
+        "v2.5 公共空间连接与社群转化"
       ],
       "geometry_refs": [
         "geometry/phasing.geojson#PHASE-V02",
@@ -1979,9 +1993,12 @@
       "evidence_paths": [
         "visual/assets/human-city-delivery-spine.json",
         "assets/figures/human-city-delivery-spine.svg",
-        "visual/assets/implementation-operation-matrix.json"
+        "visual/assets/implementation-operation-matrix.json",
+        "visual/assets/developer-community-conversion-v25.json",
+        "visual/assets/check-public-space-operations-v25.js",
+        "assets/figures/public-space-operations-v25.svg"
       ],
-      "differentiator_zh": "长期运营以年度体检、公众 issue、release note 和事故复盘保持可逆治理。",
+      "differentiator_zh": "把年度活动从时间表改成公开问题—共学复核—受控场景—回放发布的可停止转化链，长期运营仍以版本化治理保持可逆。",
       "evidence_status": "package_local_replayable"
     }
   }
