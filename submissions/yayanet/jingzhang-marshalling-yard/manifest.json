@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9d8cd61a99791f3808c9c81efaa95d442766fdddad3ba20dd64307e5e29dbffa"
+      "sha256": "94e2ad8c0fbed41d3f5c19d2b0090f6be65b4635f80db1d67142110be82fc96e"
     },
     {
       "path": "compliance_matrix.json",
@@ -256,6 +256,7 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "data_confidence_note": "边界与三处重点区为 provisional 几何（official_boundary=false），置信度按保守口径登记为 medium；官方 polygon 发布并整链重算后应复核。"
+    "data_confidence_note": "边界与三处重点区为 provisional 几何（official_boundary=false），置信度按保守口径登记为 medium；官方 polygon 发布并整链重算后应复核。",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
