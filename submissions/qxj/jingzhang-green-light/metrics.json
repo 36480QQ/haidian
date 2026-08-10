@@ -43,7 +43,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 2590599.607,
+   "value": 2225187.692,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -84,7 +84,7 @@
   },
   "land_use_area_05_sqm": {
    "status": "known",
-   "value": 2170109.731,
+   "value": 1072205.781,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -98,7 +98,7 @@
   },
   "land_use_ratio_05": {
    "status": "known",
-   "value": 0.190147,
+   "value": 0.093947,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -112,7 +112,7 @@
   },
   "land_use_area_0701_sqm": {
    "status": "known",
-   "value": 1228194.618,
+   "value": 3233899.163,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -126,7 +126,7 @@
   },
   "land_use_ratio_0701": {
    "status": "known",
-   "value": 0.107615,
+   "value": 0.283357,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -140,7 +140,7 @@
   },
   "land_use_area_0702_sqm": {
    "status": "known",
-   "value": 1713960.213,
+   "value": 614670.23,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -154,7 +154,7 @@
   },
   "land_use_ratio_0702": {
    "status": "known",
-   "value": 0.150178,
+   "value": 0.053858,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -168,7 +168,7 @@
   },
   "land_use_area_0802_sqm": {
    "status": "known",
-   "value": 1167997.391,
+   "value": 1554341.827,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -182,7 +182,7 @@
   },
   "land_use_ratio_0802": {
    "status": "known",
-   "value": 0.102341,
+   "value": 0.136193,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -196,7 +196,7 @@
   },
   "land_use_area_0803_sqm": {
    "status": "known",
-   "value": 248750.372,
+   "value": 99072.076,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -210,7 +210,7 @@
   },
   "land_use_ratio_0803": {
    "status": "known",
-   "value": 0.021796,
+   "value": 0.008681,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -224,7 +224,7 @@
   },
   "land_use_area_0804_sqm": {
    "status": "known",
-   "value": 199189.963,
+   "value": 499407.088,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -238,7 +238,7 @@
   },
   "land_use_ratio_0804": {
    "status": "known",
-   "value": 0.017453,
+   "value": 0.043758,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -280,7 +280,7 @@
   },
   "land_use_area_0806_sqm": {
    "status": "known",
-   "value": 432465.937,
+   "value": 87072.403,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -294,7 +294,7 @@
   },
   "land_use_ratio_0806": {
    "status": "known",
-   "value": 0.037893,
+   "value": 0.007629,
    "unit": "ratio",
    "source_files": [
     "geometry/land_use.geojson",
@@ -308,7 +308,7 @@
   },
   "land_use_area_1207_sqm": {
    "status": "known",
-   "value": 1430460.304,
+   "value": 1430460.317,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -364,7 +364,7 @@
   },
   "land_use_partition_area_sqm": {
    "status": "known",
-   "value": 11412843.666,
+   "value": 11412844.02,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -375,7 +375,7 @@
   },
   "road_area_sqm": {
    "status": "known",
-   "value": 1430460.304,
+   "value": 1430460.317,
    "unit": "sqm",
    "source_files": [
     "geometry/land_use.geojson"
@@ -398,7 +398,7 @@
   },
   "total_floor_area_sqm": {
    "status": "known",
-   "value": 13154184.075,
+   "value": 14424643.356,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -412,7 +412,7 @@
   },
   "floor_area_ratio": {
    "status": "known",
-   "value": 1.152579,
+   "value": 1.263898,
    "unit": "index",
    "source_files": [
     "geometry/buildings.geojson",
@@ -428,7 +428,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.22699,
+   "value": 0.194973,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -511,7 +511,7 @@
   },
   "trunk_length_m": {
    "status": "known",
-   "value": 9715.873,
+   "value": 9715.875,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -523,7 +523,7 @@
   },
   "row_grade_a_length_m": {
    "status": "known",
-   "value": 5296.533,
+   "value": 5296.534,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -537,7 +537,7 @@
   },
   "row_grade_b_length_m": {
    "status": "known",
-   "value": 3308.953,
+   "value": 3308.954,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -590,7 +590,7 @@
   },
   "todoor_point_coverage_ratio": {
    "status": "known",
-   "value": 0.994118,
+   "value": 0.817023,
    "unit": "ratio",
    "source_files": [
     "geometry/public_space.geojson",
@@ -605,7 +605,7 @@
   },
   "todoor_point_coverage_300m_ratio": {
    "status": "known",
-   "value": 0.725361,
+   "value": 0.559916,
    "unit": "ratio",
    "source_files": [
     "geometry/public_space.geojson",
