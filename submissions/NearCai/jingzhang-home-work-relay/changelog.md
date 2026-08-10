@@ -7,3 +7,4 @@
 - 形成 v2 双语 formal 投稿包的来源、标准、设计深度、任务覆盖和版权证据链；署名为 `NearCai × OpenAI Codex`，许可为 `COMMUNITY-DISPLAY-ONLY`。
 - 登记本地官方来源、六个国际背景案例并复核 Issue #846/#1029/#1368；明确 provisional geometry、未知控规、内容审稿与正式专业评分资格的不同状态，以及第三方版权边界。
 - 建立 `Measured Passage` 视觉哲学，供图件、文册、展板与离线页面采用统一的空间、色彩、节奏和层级语言。
+- 完成双语 A0 展板身份栏复核：每张板均可见完整题名、副题、`NearCai × OpenAI Codex` 署名、许可和板号，并同步修正 PDF metadata 署名。
