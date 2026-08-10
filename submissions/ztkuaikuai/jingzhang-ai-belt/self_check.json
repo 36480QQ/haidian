@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.1.0",
+  "self_check_policy": {
+    "note_zh": "本文件记录本包在提交前完成的自检。每项给出检查对象、结论与复核方式。凡涉及临时几何、缺失控制条件或无法核验数据的内容，均以 unknown 或 pass 附说明的方式如实记录，不以 pass 掩盖缺口。",
+    "note_en": "This file records the self-checks completed before submission. Each entry names its target, conclusion, and verification method. Provisional geometry, missing controls, and unverifiable data are recorded honestly as unknown, or as pass with an explicit caveat, never masked."
+  },
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "提交边界为仓库临时粗略 polygon，已在正文、报告 HTML、sources.json 与 assumptions.json 四处同步标注其临时性；复算面积 11412825.386 平方米与公告 11.4 平方公里偏差约 0.11%，仅用于量级讨论，不作为红线。",
+      "verification": "spatial_review.py 复算 site_area_sqm；人工核对四处标注文本。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区为临时矩形，未改动原始几何；合计 3692893.005 平方米与公告 368.4 公顷偏差约 0.24%，正文明确其形状不可作为片区红线。",
+      "verification": "spatial_review.py 输出三条 KEY_AREA_PROVISIONAL 提示（minor）。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/land_use.geojson",
+      "message": "21 个用地单元由提交边界与共享切线求交生成，两两重叠面积为 0.0 平方米。",
+      "verification": "spatial_review.py 拓扑检查通过；生成脚本自检打印最大重叠 0.0。"
+    },
+    {
+      "check_id": "LAND_USE_COVERAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/land_use.geojson",
+      "message": "用地划分对提交边界的覆盖缺口 75.82 平方米，允许容差 1141.283 平方米；缺口来自坐标取整而非未标注空白。",
+      "verification": "spatial_review.py 覆盖检查通过。"
+    },
+    {
+      "check_id": "GEOMETRY_INSIDE_SITE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "绿地与建筑基底全部位于提交边界内；公共空间越界面积低于容差。",
+      "verification": "spatial_review.py 内含性检查通过。"
+    },
+    {
+      "check_id": "METRIC_RECALCULATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "site_area_sqm、green_space_area_sqm、green_ratio、public_space_area_sqm、public_space_ratio、building_footprint_area_sqm 六项均由 EPSG:4548 复算写入，与空间复核结果一致。",
+      "verification": "spatial_review.py 六项复算比对全部通过，无 METRIC_RECALC_MISMATCH。"
+    },
+    {
+      "check_id": "UNKNOWN_METRIC_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "容积率、总建筑规模、建筑密度、建筑高度、退线、审定绿地率、道路用地面积与占比均标注 status=unknown 并给出缺资料原因，未以推测值填充。",
+      "verification": "人工逐项核对 unknown 指标 reason 字段与 planning_limits.json 的 missing 登记。"
+    },
+    {
+      "check_id": "CONSTRAINTS_DATA_GAP",
+      "result": "unknown",
+      "severity": "major",
+      "target": "geometry/constraints.geojson",
+      "message": "文保范围、控规控制线、道路红线、河道蓝线与市政管线均无可引用官方几何，本图层刻意保持为空要素集合，而不是绘制推测控制线。该缺口限制所有临界设计动作的深化。",
+      "verification": "人工确认图层为空且携带缺失图层说明；assumptions.json 登记 ASSUMPTION-NO-CONSTRAINT-GEOMETRY。"
+    },
+    {
+      "check_id": "LOCKED_LAYER_RESPECT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "site_boundary 与 key_areas 未作任何修改；道路等级仅使用允许编辑项，未改动快速路与主干路。",
+      "verification": "人工比对 allowed_design_space.json 锁定清单与 road_classes.json 的可编辑标记。"
+    },
+    {
+      "check_id": "BUILDING_SAMPLE_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/buildings.geojson",
+      "message": "20 个建筑基底均标注为概念示意对象，高度与强度待正式控规确认；未把示意基底表述为现状普查或总建筑规模。",
+      "verification": "人工核对要素属性与 metrics.json 中相应低置信度标注。"
+    },
+    {
+      "check_id": "PHASING_COVERAGE",
+      "result": "pass",
+      "severity": "minor",
+      "target": "geometry/phasing.geojson",
+      "message": "三期分区合计 11412844.268 平方米，与边界面积差 18.882 平方米，来自分段裁切取整。",
+      "verification": "复算三期面积并与 site_area_sqm 比对。"
+    },
+    {
+      "check_id": "UNQUANTIFIED_HEAT_CLAIMS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "方案主题涉及余热回收与热力接口，但在无公开机房负荷与热网数据前提下，未给出任何回收比例、可回收热量、供暖户数或减排量数值；相关指标状态为 unknown，全部表述为设计命题与待验证前置条件。",
+      "verification": "全文检索能源类数值表述；metrics.json 两项能源绩效指标均为 unknown。"
+    },
+    {
+      "check_id": "NO_GOVERNMENT_COMMITMENT_CLAIM",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "全文未声称获得政府批准、审定控规、最终权属或实施承诺；空间建议统一表述为概念建议、参考方案、可供专业团队深化研究。",
+      "verification": "validate_submission.py 硬风险正则未命中；人工复核表述口径。"
+    },
+    {
+      "check_id": "PERSONAL_DATA_MINIMIZATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "全部 AI 场景遵循数据最小化：不采集个人轨迹、不输出个人画像、不将居民数据用于商业推荐；场景卡逐条写明数据边界与人工复核机制。",
+      "verification": "人工核对场景卡数据边界字段；全文无个人信息出现。"
+    },
+    {
+      "check_id": "HUMAN_FALLBACK_DESIGN",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "涉及医疗、社会保障、金融、生活缴费等服务事项的公共服务场景，均保留现场指导与人工办理通道，并说明其依据的适用范围，未把该要求泛化到全部数字界面。",
+      "verification": "人工核对场景卡与依据条款的对应关系。"
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "电子展示页面完全离线：无远程脚本、远程瓦片、远程字体、iframe、表单与外部接口调用，不跟踪评审者行为。",
+      "verification": "visual_review.py 与 validate_submission.py 离线检查通过。"
+    },
+    {
+      "check_id": "VISUAL_METRIC_CONSISTENCY",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "页面核心指标使用 data-metric 与 data-value 标记，取值与 metrics.json 完全一致。",
+      "verification": "visual_review.py 指标比对通过。"
+    },
+    {
+      "check_id": "BILINGUAL_PAIRING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "中文为主文件，proposal.en.md 提供完整对照；报告 HTML、电子展示、A3 文册、A0 展板与含文字图件均提供英文副本，并在 manifest 中声明语言与对照关系。",
+      "verification": "validate_submission.py 双语检查通过。"
+    },
+    {
+      "check_id": "COPYRIGHT_CLEARANCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "report/copyright_statement.md",
+      "message": "所有图件、图层与文本均由本 agent 原创生成；未引入第三方地图瓦片、商业底图、企业标识、字体文件或人物肖像；官方文本按引用方式使用。",
+      "verification": "人工核对 assets 目录与 sources.json 许可摘要。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "13 个必需章节均携带可机读证据锚点，覆盖来源、标准、设计深度、图层与指标；完整索引保存在三份矩阵文件中。",
+      "verification": "professional_review.py 与 validate_submission.py 证据锚点与密度检查通过。"
+    },
+    {
+      "check_id": "OFFICIAL_DATA_RECOMPUTE_PLEDGE",
+      "result": "unknown",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "官方边界与三处重点区 polygon 发布后，本包承诺整体重跑几何生成、指标复算、图纸与 HTML 生成，并重跑全部校验；在此之前所有空间结论均为可讨论、可替换、可重算的概念建议。",
+      "verification": "该项在取得官方数据并完成重算后才能转为 pass。"
+    }
+  ]
+}
