@@ -1,172 +1,130 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_index_public_interfaces",
+  "name": "urban_version_public_anchors",
   "features": [
     {
       "type": "Feature",
-      "id": "PUBLIC-01",
+      "id": "PUBLIC-PILOT-01",
       "properties": {
-        "id": "PUBLIC-01",
-        "layer": "PUBLIC_SPACE",
+        "id": "PUBLIC-PILOT-01",
+        "layer": "SCENARIO_NODE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "land_use_code": "1403",
-        "name_zh": "百年索引台",
-        "area_sqm_declared": 29201.47,
-        "access_rule": "公共、可观察、可退出；不以自动化替代人工服务。"
+        "name_zh": "研发公共接口试点",
+        "name_en": "R&D public-interface pilot",
+        "access_rule": "Concept anchor only; human decision, analogue access and stop rule required."
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              116.3446,
-              40.0092
-            ],
-            [
-              116.3446,
-              40.0114
-            ],
-            [
-              116.346,
-              40.0114
-            ],
-            [
-              116.346,
-              40.0092
-            ],
-            [
-              116.3446,
-              40.0092
-            ]
-          ]
+          116.3485,
+          40.01675
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-02",
+      "id": "PUBLIC-KNOWLEDGE-01",
       "properties": {
-        "id": "PUBLIC-02",
-        "layer": "PUBLIC_SPACE",
+        "id": "PUBLIC-KNOWLEDGE-01",
+        "layer": "SCENARIO_NODE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "land_use_code": "1403",
-        "name_zh": "问城剧场",
-        "area_sqm_declared": 28452.376,
-        "access_rule": "公共、可观察、可退出；不以自动化替代人工服务。"
+        "name_zh": "工程证据台",
+        "name_en": "Engineering Evidence Desk",
+        "siting_status": "concept_only_requires_public_interface_survey"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              116.3454,
-              39.9864
-            ],
-            [
-              116.3454,
-              39.9884
-            ],
-            [
-              116.3469,
-              39.9884
-            ],
-            [
-              116.3469,
-              39.9864
-            ],
-            [
-              116.3454,
-              39.9864
-            ]
-          ]
+          116.3497,
+          40.01675
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-03",
+      "id": "PUBLIC-PILOT-02",
       "properties": {
-        "id": "PUBLIC-03",
-        "layer": "PUBLIC_SPACE",
+        "id": "PUBLIC-PILOT-02",
+        "layer": "SCENARIO_NODE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "land_use_code": "1403",
-        "name_zh": "回馈广场",
-        "area_sqm_declared": 33867.647,
-        "access_rule": "公共、可观察、可退出；不以自动化替代人工服务。"
+        "name_zh": "建成公园运行试点",
+        "name_en": "Built-park operation pilot",
+        "access_rule": "Concept anchor only; human decision, analogue access and stop rule required."
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              116.348,
-              39.9672
-            ],
-            [
-              116.348,
-              39.9693
-            ],
-            [
-              116.3497,
-              39.9693
-            ],
-            [
-              116.3497,
-              39.9672
-            ],
-            [
-              116.348,
-              39.9672
-            ]
-          ]
+          116.3475,
+          39.9885
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-04",
+      "id": "PUBLIC-KNOWLEDGE-02",
       "properties": {
-        "id": "PUBLIC-04",
-        "layer": "PUBLIC_SPACE",
+        "id": "PUBLIC-KNOWLEDGE-02",
+        "layer": "SCENARIO_NODE",
         "source_type": "agent_generated_design",
-        "confidence": "medium",
+        "confidence": "low",
         "geometry_role": "design_proposal",
-        "land_use_code": "1403",
-        "name_zh": "开发者工作台",
-        "area_sqm_declared": 31302.853,
-        "access_rule": "公共、可观察、可退出；不以自动化替代人工服务。"
+        "name_zh": "开放模型基准站",
+        "name_en": "Open Model Benchmark",
+        "siting_status": "concept_only_requires_public_interface_survey"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              116.347,
-              39.975
-            ],
-            [
-              116.347,
-              39.9765
-            ],
-            [
-              116.3492,
-              39.9765
-            ],
-            [
-              116.3492,
-              39.975
-            ],
-            [
-              116.347,
-              39.975
-            ]
-          ]
+          116.3487,
+          39.9885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-PILOT-03",
+      "properties": {
+        "id": "PUBLIC-PILOT-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "站城服务试点",
+        "name_en": "Station-to-street service pilot",
+        "access_rule": "Concept anchor only; human decision, analogue access and stop rule required."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3485,
+          39.946920000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-KNOWLEDGE-03",
+      "properties": {
+        "id": "PUBLIC-KNOWLEDGE-03",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "name_zh": "城市版本议事台",
+        "name_en": "City Version Forum",
+        "siting_status": "concept_only_requires_public_interface_survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3497,
+          39.946920000000006
         ]
       }
     }

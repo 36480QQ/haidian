@@ -5,31 +5,38 @@
     "area": "sqm"
   },
   "metrics": {
-    "site_area_sqm": {
+    "brief_coordinated_area_km2": {
       "status": "known",
-      "value": 11412825.385554,
-      "unit": "sqm",
+      "value": 43.6,
+      "unit": "sqkm",
       "source_files": [
-        "geometry/site_boundary.geojson"
+        "sources.json#OFFICIAL-ANNOUNCEMENT"
       ],
-      "formula": "area(provisional_overall_design_boundary)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
+      "formula": "published coordinated research area",
+      "confidence": "high",
+      "assumptions": []
     },
-    "announced_key_area_total_sqm": {
+    "brief_overall_area_km2": {
       "status": "known",
-      "value": 3684000,
-      "unit": "sqm",
+      "value": 11.4,
+      "unit": "sqkm",
       "source_files": [
-        "geometry/key_areas.geojson"
+        "sources.json#OFFICIAL-ANNOUNCEMENT"
       ],
-      "formula": "192.1ha + 104.3ha + 72.0ha from public announcement",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
+      "formula": "published approximate overall design area",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "brief_key_area_total_ha": {
+      "status": "known",
+      "value": 368.4,
+      "unit": "ha",
+      "source_files": [
+        "sources.json#OFFICIAL-ANNOUNCEMENT"
+      ],
+      "formula": "192.1 + 104.3 + 72.0",
+      "confidence": "high",
+      "assumptions": []
     },
     "key_area_count": {
       "status": "known",
@@ -38,90 +45,171 @@
       "source_files": [
         "geometry/key_areas.geojson"
       ],
-      "formula": "count(key_detailed_design_areas)",
-      "confidence": "medium",
+      "formula": "count(required key-area task anchors)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "built_phase1_garden_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "sources.json#PHASE1-NORTH-2025"
+      ],
+      "formula": "count(theme gardens reported in the 2025 project article)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ai_planning_loop_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(priority planning decision loops)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(readable scenario-card rows)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(readable persona rows)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "global_case_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "sources.json"
+      ],
+      "formula": "count(comparative mechanism cases)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "decision_stage_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/phasing.geojson"
+      ],
+      "formula": "baseline + options + comparison + decision + pilot + measurement + scale_or_stop",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "knowledge_node_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(public knowledge infrastructure concepts)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.385553982,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "projected area of the repository provisional working polygon; not an official site area",
+      "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001"
       ]
     },
     "building_footprint_area_sqm": {
-      "status": "known",
-      "value": 305453.764043,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(concept_building_footprints)",
-      "confidence": "medium",
+      "formula": "sum(verified existing or proposed building footprints)",
+      "confidence": "unknown",
       "assumptions": [
-        "A-BOUNDARY-001"
-      ]
+        "A-BUILDING-001"
+      ],
+      "reason": "正式建筑台账和设计基底均缺失；当前点要素只是普查任务锚点。"
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1620477.344847,
+      "value": 0,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "sum(concept_green_space)",
-      "confidence": "medium",
+      "formula": "polygon area encoded in this proposal layer; point review anchors contribute zero area and do not represent existing green space",
+      "confidence": "high",
       "assumptions": [
-        "A-BOUNDARY-001"
+        "A-BLUEGREEN-001"
       ]
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.141987,
+      "value": 0,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area / site_area",
-      "confidence": "medium",
+      "formula": "encoded proposal green polygon area / provisional working polygon area; a packaging value, not the current green ratio",
+      "confidence": "high",
       "assumptions": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-BLUEGREEN-001"
       ]
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 122824.345294,
+      "value": 0,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "sum(concept_public_space)",
-      "confidence": "medium",
+      "formula": "polygon area encoded in this proposal layer; point pilot anchors contribute zero area and do not represent existing public space",
+      "confidence": "high",
       "assumptions": [
-        "A-BOUNDARY-001"
+        "A-PUBLICSPACE-001"
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.010762,
+      "value": 0,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area / site_area",
-      "confidence": "medium",
+      "formula": "encoded proposal public-space polygon area / provisional working polygon area; a packaging value, not the current public-space ratio",
+      "confidence": "high",
       "assumptions": [
-        "A-BOUNDARY-001"
-      ]
-    },
-    "concept_phase_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": [
-        "geometry/phasing.geojson"
-      ],
-      "formula": "count(concept_phases)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-PUBLICSPACE-001"
       ]
     },
     "floor_area_ratio": {
@@ -129,28 +217,29 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
+        "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "total_floor_area / official_site_area",
+      "formula": "verified total_floor_area / official parcel_area",
       "confidence": "unknown",
       "assumptions": [
         "A-CONTROLS-001"
       ],
-      "reason": "正式控规指标、建筑现状和可计容口径未公开，不能以概念图替代。"
+      "reason": "正式地块、现状建筑和可计容口径未公开。"
     },
     "regulatory_building_density": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "geometry/site_boundary.geojson"
+        "geometry/buildings.geojson"
       ],
-      "formula": "building_footprint / official_controlled_parcel",
+      "formula": "verified building_footprint / official controlled parcel",
       "confidence": "unknown",
       "assumptions": [
         "A-CONTROLS-001"
       ],
-      "reason": "法定地块及控规控制条件待组织方补充。"
+      "reason": "法定地块及控规条件待补。"
     },
     "regulatory_height_control": {
       "status": "unknown",
@@ -159,64 +248,12 @@
       "source_files": [
         "geometry/constraints.geojson"
       ],
-      "formula": "official_height_control",
+      "formula": "official height control",
       "confidence": "unknown",
       "assumptions": [
         "A-CONTROLS-001"
       ],
-      "reason": "高度、风貌及航线等专业条件待正式资料核验。"
-    },
-    "concept_land_use_0802_sqm": {
-      "status": "known",
-      "value": 2493640.681186,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "area(land_use_code=0802; conceptual partition)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
-    },
-    "concept_land_use_1401_sqm": {
-      "status": "known",
-      "value": 2738724.27783,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "area(land_use_code=1401; conceptual partition)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
-    },
-    "concept_land_use_05_sqm": {
-      "status": "known",
-      "value": 2821713.706604,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "area(land_use_code=05; conceptual partition)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
-    },
-    "concept_land_use_0702_sqm": {
-      "status": "known",
-      "value": 3358754.110431,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
-      ],
-      "formula": "area(land_use_code=0702; conceptual partition)",
-      "confidence": "medium",
-      "assumptions": [
-        "A-BOUNDARY-001"
-      ]
+      "reason": "高度、风貌、日照、消防和净空条件待正式资料核验。"
     }
   }
 }
