@@ -1,47 +1,786 @@
 {
-  "type": "FeatureCollection",
-  "name": "building_footprints_scaffold",
-  "features": [
-    {
-      "type": "Feature",
-      "id": "BLDG-001",
-      "properties": {
-        "id": "BLDG-001",
-        "layer": "BUILDING_FOOTPRINT",
-        "source_type": "agent_generated_design",
-        "confidence": "medium",
-        "geometry_role": "design_proposal",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发示范建筑基底",
-        "area_sqm_declared": 310807.184
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.341572,
-              39.95475
-            ],
-            [
-              116.341572,
-              39.97225
-            ],
-            [
-              116.34344399999999,
-              39.97225
-            ],
-            [
-              116.34344399999999,
-              39.95475
-            ],
-            [
-              116.341572,
-              39.95475
-            ]
-          ]
-        ]
-      }
-    }
-  ]
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-001",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "mixed_use",
+    "name_zh": "智能原生消费与商务混合功能",
+    "on_land_use": "LU-05-0101",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 66288.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34155490372068,
+       39.940081
+      ],
+      [
+       116.34155490372068,
+       39.94291900000001
+      ],
+      [
+       116.34401606461749,
+       39.94291900000001
+      ],
+      [
+       116.34401606461749,
+       39.940081
+      ],
+      [
+       116.34155490372068,
+       39.940081
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-001"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-002",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "mixed_use",
+    "name_zh": "智能原生消费与商务混合功能",
+    "on_land_use": "LU-05-0102",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 385989.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35113199999999,
+       39.942800999999996
+      ],
+      [
+       116.35113199999999,
+       39.956199000000005
+      ],
+      [
+       116.354168,
+       39.956199000000005
+      ],
+      [
+       116.354168,
+       39.942800999999996
+      ],
+      [
+       116.35113199999999,
+       39.942800999999996
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-002"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-003",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "mixed_use",
+    "name_zh": "智能原生消费与商务混合功能",
+    "on_land_use": "LU-05-0103",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 163874.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34118601483178,
+       39.951765
+      ],
+      [
+       116.34118601483178,
+       39.958035
+      ],
+      [
+       116.34394050906192,
+       39.958035
+      ],
+      [
+       116.34394050906192,
+       39.951765
+      ],
+      [
+       116.34118601483178,
+       39.951765
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-003"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-004",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "mixed_use",
+    "name_zh": "智能原生消费与商务混合功能",
+    "on_land_use": "LU-05-0104",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 69505.7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34107073705401,
+       39.96141299999999
+      ],
+      [
+       116.34107073705401,
+       39.963987
+      ],
+      [
+       116.34391689795082,
+       39.963987
+      ],
+      [
+       116.34391689795082,
+       39.96141299999999
+      ],
+      [
+       116.34107073705401,
+       39.96141299999999
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-004"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-005",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "mixed_use",
+    "name_zh": "智能原生消费与商务混合功能",
+    "on_land_use": "LU-05-0105",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 74141.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35113199999999,
+       39.96141299999999
+      ],
+      [
+       116.35113199999999,
+       39.963987
+      ],
+      [
+       116.354168,
+       39.963987
+      ],
+      [
+       116.354168,
+       39.96141299999999
+      ],
+      [
+       116.35113199999999,
+       39.96141299999999
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-005"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-006",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "residential",
+    "name_zh": "既有居住与人才公寓",
+    "on_land_use": "LU-0701-0201",
+    "storeys_assumed": 8,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 290914.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3439651882169,
+       39.99862400000001
+      ],
+      [
+       116.3439651882169,
+       39.986875999999995
+      ],
+      [
+       116.34130650717655,
+       39.986875999999995
+      ],
+      [
+       116.34130650717655,
+       39.994464582638166
+      ],
+      [
+       116.34157485668376,
+       39.99862400000001
+      ],
+      [
+       116.3439651882169,
+       39.99862400000001
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-006"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-007",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "residential",
+    "name_zh": "既有居住与人才公寓",
+    "on_land_use": "LU-0701-0202",
+    "storeys_assumed": 8,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 104320.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35090043129232,
+       39.995175999999994
+      ],
+      [
+       116.35090043129232,
+       40.000324
+      ],
+      [
+       116.35303739983895,
+       40.000324
+      ],
+      [
+       116.35303739983895,
+       39.995175999999994
+      ],
+      [
+       116.35090043129232,
+       39.995175999999994
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-007"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-008",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "residential",
+    "name_zh": "既有居住与人才公寓",
+    "on_land_use": "LU-0701-0203",
+    "storeys_assumed": 8,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 51047.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3423185716927,
+       40.003498
+      ],
+      [
+       116.3423185716927,
+       40.006402
+      ],
+      [
+       116.34417247853948,
+       40.006402
+      ],
+      [
+       116.34417247853948,
+       40.003498
+      ],
+      [
+       116.3423185716927,
+       40.003498
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-008"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-009",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "community_service",
+    "name_zh": "社区服务与载具后场服务",
+    "on_land_use": "LU-0702-0301",
+    "storeys_assumed": 3,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 233785.9
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3408322601006,
+       39.96744100000001
+      ],
+      [
+       116.3408322601006,
+       39.975559000000004
+      ],
+      [
+       116.34386805327361,
+       39.975559000000004
+      ],
+      [
+       116.34386805327361,
+       39.96744100000001
+      ],
+      [
+       116.3408322601006,
+       39.96744100000001
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-009"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-010",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "community_service",
+    "name_zh": "社区服务与载具后场服务",
+    "on_land_use": "LU-0702-0302",
+    "storeys_assumed": 3,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 232228.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35414383188261,
+       39.96744100000001
+      ],
+      [
+       116.35112704990367,
+       39.96744100000001
+      ],
+      [
+       116.35112704990367,
+       39.975559000000004
+      ],
+      [
+       116.35410416178628,
+       39.975559000000004
+      ],
+      [
+       116.35414383188261,
+       39.975063123795955
+      ],
+      [
+       116.35414383188261,
+       39.96744100000001
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-010"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-011",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "community_service",
+    "name_zh": "社区服务与载具后场服务",
+    "on_land_use": "LU-0702-0303",
+    "storeys_assumed": 3,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 176047.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34422341221256,
+       40.02262400000001
+      ],
+      [
+       116.34422341221256,
+       40.010875999999996
+      ],
+      [
+       116.34256724786127,
+       40.010875999999996
+      ],
+      [
+       116.34256724786127,
+       40.01659504964308
+      ],
+      [
+       116.34286134300062,
+       40.02262400000001
+      ],
+      [
+       116.34422341221256,
+       40.02262400000001
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-011"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-012",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "ai_r_and_d",
+    "name_zh": "AI研发与实验室",
+    "on_land_use": "LU-0802-0401",
+    "storeys_assumed": 6,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 118752.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35087544990367,
+       39.985431
+      ],
+      [
+       116.35087544990367,
+       39.991569000000005
+      ],
+      [
+       116.35291543188262,
+       39.991569000000005
+      ],
+      [
+       116.35291543188262,
+       39.985431
+      ],
+      [
+       116.35087544990367,
+       39.985431
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-012"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-013",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "ai_r_and_d",
+    "name_zh": "AI研发与实验室",
+    "on_land_use": "LU-0802-0402",
+    "storeys_assumed": 6,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 334554.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35112399293615,
+       40.010875999999996
+      ],
+      [
+       116.35112399293615,
+       40.02262400000001
+      ],
+      [
+       116.35412890668829,
+       40.02262400000001
+      ],
+      [
+       116.35412890668829,
+       40.01152462891549
+      ],
+      [
+       116.35409336537785,
+       40.010875999999996
+      ],
+      [
+       116.35112399293615,
+       40.010875999999996
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-013"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-014",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "cultural",
+    "name_zh": "文化展示",
+    "on_land_use": "LU-0803-0501",
+    "storeys_assumed": 3,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 82011.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34142118149846,
+       39.945217
+      ],
+      [
+       116.34142118149846,
+       39.948583
+      ],
+      [
+       116.3439886757286,
+       39.948583
+      ],
+      [
+       116.3439886757286,
+       39.945217
+      ],
+      [
+       116.34142118149846,
+       39.945217
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-014"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-015",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "education",
+    "name_zh": "教育科研配套",
+    "on_land_use": "LU-0804-0601",
+    "storeys_assumed": 5,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 64318.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35095166416902,
+       40.003498
+      ],
+      [
+       116.35095166416902,
+       40.006402
+      ],
+      [
+       116.35328753682525,
+       40.006402
+      ],
+      [
+       116.35328753682525,
+       40.003498
+      ],
+      [
+       116.35095166416902,
+       40.003498
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-015"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-016",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "community_service",
+    "name_zh": "医疗与检测样本锚点设施",
+    "on_land_use": "LU-0806-0801",
+    "storeys_assumed": 4,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 79213.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.34103341040235,
+       39.979498
+      ],
+      [
+       116.34103341040235,
+       39.982402
+      ],
+      [
+       116.34390925273301,
+       39.982402
+      ],
+      [
+       116.34390925273301,
+       39.979498
+      ],
+      [
+       116.34103341040235,
+       39.979498
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-016"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BLDG-017",
+    "layer": "BUILDING_FOOTPRINT",
+    "building_type": "community_service",
+    "name_zh": "医疗与检测样本锚点设施",
+    "on_land_use": "LU-0806-0802",
+    "storeys_assumed": 4,
+    "storeys_basis_zh": "层数为方案假设值，见 assumptions.json A-STOREY-001；正式控制指标待规划条件下发后核定",
+    "source_type": "agent_generated_design",
+    "confidence": "low",
+    "geometry_role": "design_proposal",
+    "official_boundary": false,
+    "area_sqm_declared": 63607.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.35094480990367,
+       39.979498
+      ],
+      [
+       116.35094480990367,
+       39.982402
+      ],
+      [
+       116.35325407188262,
+       39.982402
+      ],
+      [
+       116.35325407188262,
+       39.979498
+      ],
+      [
+       116.35094480990367,
+       39.979498
+      ]
+     ]
+    ]
+   },
+   "id": "BLDG-017"
+  }
+ ]
 }
