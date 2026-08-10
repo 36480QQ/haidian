@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京张智脉 - 可视化仪表板</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "Segoe UI", "Noto Sans SC", sans-serif; background:#f5f6f8; color:#1a1a2e; line-height:1.6; }
+.container { max-width:1200px; margin:0 auto; padding:20px; }
+header { background:linear-gradient(135deg,#1a3a5c,#2d6a9f); color:#fff; padding:30px; border-radius:12px; margin-bottom:20px; }
+header h1 { font-size:24px; margin-bottom:8px; }
+header .subtitle { font-size:14px; opacity:0.85; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-bottom:20px; }
+.card { background:#fff; border-radius:10px; padding:20px; box-shadow:0 1px 4px rgba(0,0,0,0.08); }
+.card h2 { font-size:16px; margin-bottom:12px; color:#1a3a5c; border-bottom:2px solid #e8ecf0; padding-bottom:8px; }
+.metric-row { display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid #f0f0f0; }
+.metric-row:last-child { border-bottom:none; }
+.metric-label { font-size:13px; color:#555; }
+.metric-value { font-size:15px; font-weight:600; color:#1a3a5c; }
+.badge { display:inline-block; padding:2px 10px; border-radius:12px; font-size:11px; font-weight:600; }
+.badge-known { background:#d4edda; color:#155724; }
+.badge-unknown { background:#fff3cd; color:#856404; }
+.badge-complete { background:#d4edda; color:#155724; }
+.scope-item { padding:10px 0; border-bottom:1px solid #f0f0f0; }
+.scope-item:last-child { border-bottom:none; }
+.scope-name { font-weight:600; font-size:14px; }
+.scope-detail { font-size:12px; color:#666; margin-top:4px; }
+.scenario-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:8px; }
+.scenario-card { background:#f8f9fa; border:1px solid #e0e4e8; border-radius:6px; padding:10px; font-size:12px; }
+.scenario-card .sc-id { font-weight:700; color:#2d6a9f; }
+.persona-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:13px; }
+.persona-item:last-child { border-bottom:none; }
+.map-placeholder { width:100%; height:200px; background:linear-gradient(135deg,#e8ecf0,#d4dde6); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#666; font-size:14px; }
+.legend { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; font-size:11px; }
+.legend-item { display:flex; align-items:center; gap:4px; }
+.legend-color { width:12px; height:12px; border-radius:2px; }
+.status-bar { display:flex; gap:8px; flex-wrap:wrap; }
+footer { text-align:center; padding:20px; font-size:12px; color:#888; }
+.note { font-size:12px; color:#888; margin-top:8px; font-style:italic; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>京张智脉 · 百年京张AI创新带城市设计</h1>
+<div class="subtitle">可视化仪表板 | Codex AI Agent | 临时边界，待正式数据补齐后复算</div>
+</header>
+
+<div class="grid">
+<div class="card">
+<h2>核心指标</h2>
+<div class="metric-row"><span class="metric-label">场地总面积</span><span class="metric-value" data-metric="site_area_sqm" data-value="11412825.386">11,412,825.386 m²</span></div>
+<div class="metric-row"><span class="metric-label">建筑基底面积</span><span class="metric-value" data-metric="building_footprint_area_sqm" data-value="79426.618">79,426.618 m²</span></div>
+<div class="metric-row"><span class="metric-label">绿地面积</span><span class="metric-value" data-metric="green_space_area_sqm" data-value="3210551.597">3,210,551.597 m²</span></div>
+<div class="metric-row"><span class="metric-label">绿地率</span><span class="metric-value" data-metric="green_ratio" data-value="0.281311">0.281</span></div>
+<div class="metric-row"><span class="metric-label">公共空间面积</span><span class="metric-value" data-metric="public_space_area_sqm" data-value="29467.166">29,467.166 m²</span></div>
+<div class="metric-row"><span class="metric-label">公共空间率</span><span class="metric-value" data-metric="public_space_ratio" data-value="0.002582">0.002582</span></div>
+<div class="metric-row"><span class="metric-label">道路总长度</span><span class="metric-value" data-metric="road_total_length_m" data-value="42637.064">42,637.064 m</span></div>
+<div class="metric-row"><span class="metric-label">容积率 (FAR)</span><span class="metric-value" data-metric="floor_area_ratio"><span class="badge badge-unknown">待补齐</span></span></div>
+<div class="metric-row"><span class="metric-label">建筑数量</span><span class="metric-value" data-metric="building_count" data-value="15">15</span></div>
+<div class="metric-row"><span class="metric-label">重点区域数量</span><span class="metric-value" data-metric="key_area_count" data-value="3">3</span></div>
+<div class="metric-row"><span class="metric-label">道路数量</span><span class="metric-value" data-metric="road_count" data-value="10">10</span></div>
+<div class="metric-row"><span class="metric-label">绿地数量</span><span class="metric-value" data-metric="green_space_count" data-value="6">6</span></div>
+<div class="metric-row"><span class="metric-label">公共空间数量</span><span class="metric-value" data-metric="public_space_count" data-value="6">6</span></div>
+<div class="metric-row"><span class="metric-label">总建筑规模(估算)</span><span class="metric-value" data-metric="total_floor_area_sqm" data-value="254165.178">254,165.178 m²</span></div>
+<div class="metric-row"><span class="metric-label">建筑密度</span><span class="metric-value" data-metric="building_density" data-value="0.006959">0.007</span></div>
+<div class="note">指标基于临时边界在EPSG:4548投影下计算，官方数据发布后需复算。</div>
+</div>
+
+<div class="card">
+<h2>三层范围</h2>
+<div class="scope-item">
+<div class="scope-name">统筹研究范围</div>
+<div class="scope-detail">43.6 km² · AI产业生态、战略定位、创新链</div>
+</div>
+<div class="scope-item">
+<div class="scope-name">总体设计范围</div>
+<div class="scope-detail">11.4 km² · 城市更新、产业空间、交通市政</div>
+</div>
+<div class="scope-item">
+<div class="scope-name">重点区域范围</div>
+<div class="scope-detail">368.4 ha · 三处重点区域详细设计</div>
+</div>
+<div class="note">边界均为临时约束范围（provisional constraint）。</div>
+</div>
+
+<div class="card">
+<h2>三处重点区域</h2>
+<div class="metric-row"><span class="metric-label">众智园AI加速区</span><span class="metric-value" data-metric="key_area_areas_sqm.zhongzhiyuan">1,929,201.877 m²</span></div>
+<div class="metric-row"><span class="metric-label">北京AI原点社区</span><span class="metric-value" data-metric="key_area_areas_sqm.origin">1,043,236.909 m²</span></div>
+<div class="metric-row"><span class="metric-label">大钟寺AI产业聚集区</span><span class="metric-value" data-metric="key_area_areas_sqm.dazhongsi">720,454.219 m²</span></div>
+</div>
+
+<div class="card">
+<h2>用地分区</h2>
+<div class="metric-row"><span class="metric-label">0702 社区居住与服务</span><span class="metric-value" data-metric="land_use_area_by_code.0702">1,788,211.476 m²</span></div>
+<div class="metric-row"><span class="metric-label">0802 AI研发创新</span><span class="metric-value" data-metric="land_use_area_by_code.0802">2,904,708.080 m²</span></div>
+<div class="metric-row"><span class="metric-label">1401 遗址公园绿地</span><span class="metric-value" data-metric="land_use_area_by_code.1401">2,489,747.883 m²</span></div>
+<div class="metric-row"><span class="metric-label">05 产业服务与商业</span><span class="metric-value" data-metric="land_use_area_by_code.05">2,489,746.138 m²</span></div>
+<div class="metric-row"><span class="metric-label">0803 混合用地与交通枢纽</span><span class="metric-value" data-metric="land_use_area_by_code.0803">1,740,419.319 m²</span></div>
+</div>
+
+<div class="card">
+<h2>更新项目与分期</h2>
+<div class="metric-row"><span class="metric-label">一期 · 南启动（大钟寺）</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_1">2,250,518.970 m²</span></div>
+<div class="metric-row"><span class="metric-label">二期 · 中深化（原点社区）</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_2">5,992,136.953 m²</span></div>
+<div class="metric-row"><span class="metric-label">三期 · 北提升（众智园）</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_3">3,148,220.482 m²</span></div>
+</div>
+
+<div class="card">
+<h2>AI 场景</h2>
+<div class="scenario-grid">
+<div class="scenario-card"><span class="sc-id">SC-01</span><br>AI通勤优化</div>
+<div class="scenario-card"><span class="sc-id">SC-02</span><br>智慧停车</div>
+<div class="scenario-card"><span class="sc-id">SC-03</span><br>社区健康站</div>
+<div class="scenario-card"><span class="sc-id">SC-04</span><br>智能政务</div>
+<div class="scenario-card"><span class="sc-id">SC-05</span><br>创新展厅</div>
+<div class="scenario-card"><span class="sc-id">SC-06</span><br>智慧能源</div>
+<div class="scenario-card"><span class="sc-id">SC-07</span><br>安全巡逻</div>
+<div class="scenario-card"><span class="sc-id">SC-08</span><br>智慧环卫</div>
+<div class="scenario-card"><span class="sc-id">SC-09</span><br>AI教育</div>
+<div class="scenario-card"><span class="sc-id">SC-10</span><br>智能零售</div>
+<div class="scenario-card"><span class="sc-id">SC-11</span><br>AI文化导览</div>
+<div class="scenario-card"><span class="sc-id">SC-12</span><br>智慧应急</div>
+</div>
+</div>
+
+<div class="card">
+<h2>用户画像</h2>
+<div class="persona-item">AI创业者 · 孵化空间、投资对接、原型验证</div>
+<div class="persona-item">研究人员 · 实验室、学术交流、安静工作</div>
+<div class="persona-item">社区居民 · 生活服务、健康管理、文化休闲</div>
+<div class="persona-item">国际访客 · 多语种导览、国际化配套、文化体验</div>
+<div class="persona-item">开发者 · 开源协作、算力接入、场景测试</div>
+</div>
+
+<div class="card">
+<h2>任务覆盖矩阵</h2>
+<div class="metric-row"><span class="metric-label">公告任务覆盖</span><span class="metric-value"><span class="badge badge-complete">23/23 已覆盖</span></span></div>
+<div class="metric-row"><span class="metric-label">agent.1 - agent.6</span><span class="metric-value"><span class="badge badge-complete">6/6 已回应</span></span></div>
+<div class="metric-row"><span class="metric-label">专业标准覆盖</span><span class="metric-value"><span class="badge badge-complete">6/6 已回应</span></span></div>
+<div class="metric-row"><span class="metric-label">设计深度覆盖</span><span class="metric-value"><span class="badge badge-complete">15/15 已完成</span></span></div>
+</div>
+
+<div class="card">
+<h2>自检状态</h2>
+<div class="metric-row"><span class="metric-label">几何图层</span><span class="metric-value"><span class="badge badge-known">9 个图层</span></span></div>
+<div class="metric-row"><span class="metric-label">图纸</span><span class="metric-value"><span class="badge badge-known">A3 + A0 PDF</span></span></div>
+<div class="metric-row"><span class="metric-label">可视化</span><span class="metric-value"><span class="badge badge-known">离线HTML</span></span></div>
+<div class="metric-row"><span class="metric-label">双语</span><span class="metric-value"><span class="badge badge-known">zh + en</span></span></div>
+</div>
+
+<div class="card">
+<h2>来源与假设</h2>
+<div class="metric-row"><span class="metric-label">已登记来源</span><span class="metric-value">6</span></div>
+<div class="metric-row"><span class="metric-label">活跃假设</span><span class="metric-value">6</span></div>
+<div class="note">完整记录见 sources.json 和 assumptions.json。</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+<h2>总览地图</h2>
+<div class="map-placeholder">
+<img src="../assets/figures/site-overview.png" alt="场地总览" style="width:100%;height:200px;object-fit:cover;border-radius:8px;">
+</div>
+<div class="legend">
+<div class="legend-item"><div class="legend-color" style="background:#4a90d9;"></div>总体设计范围</div>
+<div class="legend-item"><div class="legend-color" style="background:#5cb85c;"></div>绿地</div>
+<div class="legend-item"><div class="legend-color" style="background:#f0ad4e;"></div>公共空间</div>
+<div class="legend-item"><div class="legend-color" style="background:#d9534f;"></div>建筑</div>
+<div class="legend-item"><div class="legend-color" style="background:#999;border:2px dashed #666;"></div>临时边界</div>
+</div>
+</div>
+
+<footer>
+京张智脉 · Codex AI Agent · COMMUNITY-DISPLAY-ONLY · 临时边界，待正式数据补齐后复算
+交通慢行 蓝绿公共空间 </footer>
+</div>
+</body>
+</html>

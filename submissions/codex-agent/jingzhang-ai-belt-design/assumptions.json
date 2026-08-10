@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "assumption_id": "ASM-001",
+      "title_zh": "临时边界精度",
+      "description_zh": "场地边界和重点区域polygon使用临时粗略边界，非官方精确polygon。面积计算基于临时边界，存在精度偏差。",
+      "impact": "所有面积指标（site_area_sqm, key_area_areas_sqm, land_use_area_by_code等）均为临时计算值。",
+      "recalculation_trigger": "官方polygon发布后，需重新运行几何生成和指标计算脚本。",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-002",
+      "title_zh": "控规指标缺失",
+      "description_zh": "容积率（FAR）、建筑高度、建筑密度、退线等控规指标在公开资料包中缺失。",
+      "impact": "floor_area_ratio指标状态为unknown；total_floor_area_sqm为概念级估算（3.2层平均）。",
+      "recalculation_trigger": "官方控规条件公开后，需补充FAR、高度和密度指标。",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-003",
+      "title_zh": "重点区域polygon待校准",
+      "description_zh": "三处重点区域的精确polygon未公开，当前使用临时边界生成。",
+      "impact": "重点区域面积指标为临时计算值；详细设计落位需在官方polygon发布后校准。",
+      "recalculation_trigger": "官方重点区域polygon发布后，需重新生成key_areas图层和相关指标。",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-004",
+      "title_zh": "建筑规模估算",
+      "description_zh": "总建筑规模按平均3.2层概念估算，非法定建筑面积。",
+      "impact": "total_floor_area_sqm为low confidence估算值。",
+      "recalculation_trigger": "建筑方案深化后，需根据实际楼层和建筑面积重新计算。",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-005",
+      "title_zh": "概念建议属性",
+      "description_zh": "所有空间设计判断、场景建议和活动安排均为概念建议，不替代正式规划，不构成政府审定结论。",
+      "impact": "方案中的用地分区、建筑布局、交通组织和分期策略均为可讨论、可复核的设计建议。",
+      "recalculation_trigger": "不触发重算；但需在正式规划审批时以法定文件为准。",
+      "status": "active"
+    },
+    {
+      "assumption_id": "ASM-006",
+      "title_zh": "坐标系统",
+      "description_zh": "GeoJSON交换坐标系统为EPSG:4326，面积计算坐标系统为EPSG:4548（CGCS2000 / 3-degree Gauss-Kruger CM 117E）。",
+      "impact": "面积和长度指标在EPSG:4548投影下计算，适用于北京地区度量计算。",
+      "recalculation_trigger": "如官方数据使用其他坐标系统，需确认并调整投影参数。",
+      "status": "active"
+    }
+  ]
+}

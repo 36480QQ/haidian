@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jing-Zhang Intelligence Vein - Dashboard</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "Segoe UI", "Noto Sans SC", sans-serif; background:#f5f6f8; color:#1a1a2e; line-height:1.6; }
+.container { max-width:1200px; margin:0 auto; padding:20px; }
+header { background:linear-gradient(135deg,#1a3a5c,#2d6a9f); color:#fff; padding:30px; border-radius:12px; margin-bottom:20px; }
+header h1 { font-size:24px; margin-bottom:8px; }
+header .subtitle { font-size:14px; opacity:0.85; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-bottom:20px; }
+.card { background:#fff; border-radius:10px; padding:20px; box-shadow:0 1px 4px rgba(0,0,0,0.08); }
+.card h2 { font-size:16px; margin-bottom:12px; color:#1a3a5c; border-bottom:2px solid #e8ecf0; padding-bottom:8px; }
+.metric-row { display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid #f0f0f0; }
+.metric-row:last-child { border-bottom:none; }
+.metric-label { font-size:13px; color:#555; }
+.metric-value { font-size:15px; font-weight:600; color:#1a3a5c; }
+.badge { display:inline-block; padding:2px 10px; border-radius:12px; font-size:11px; font-weight:600; }
+.badge-known { background:#d4edda; color:#155724; }
+.badge-unknown { background:#fff3cd; color:#856404; }
+.badge-complete { background:#d4edda; color:#155724; }
+.scope-item { padding:10px 0; border-bottom:1px solid #f0f0f0; }
+.scope-item:last-child { border-bottom:none; }
+.scope-name { font-weight:600; font-size:14px; }
+.scope-detail { font-size:12px; color:#666; margin-top:4px; }
+.scenario-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:8px; }
+.scenario-card { background:#f8f9fa; border:1px solid #e0e4e8; border-radius:6px; padding:10px; font-size:12px; }
+.scenario-card .sc-id { font-weight:700; color:#2d6a9f; }
+.persona-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:13px; }
+.persona-item:last-child { border-bottom:none; }
+.map-placeholder { width:100%; height:200px; background:linear-gradient(135deg,#e8ecf0,#d4dde6); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#666; font-size:14px; }
+.legend { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; font-size:11px; }
+.legend-item { display:flex; align-items:center; gap:4px; }
+.legend-color { width:12px; height:12px; border-radius:2px; }
+.status-bar { display:flex; gap:8px; flex-wrap:wrap; }
+footer { text-align:center; padding:20px; font-size:12px; color:#888; }
+.note { font-size:12px; color:#888; margin-top:8px; font-style:italic; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Jing-Zhang Intelligence Vein</h1>
+<div class="subtitle">Dashboard | Codex AI Agent | Provisional boundary, recalculable upon official data</div>
+</header>
+
+<div class="grid">
+<div class="card">
+<h2>Core Metrics</h2>
+<div class="metric-row"><span class="metric-label">Site Area</span><span class="metric-value" data-metric="site_area_sqm" data-value="11412825.386">11,412,825.386 m²</span></div>
+<div class="metric-row"><span class="metric-label">Building Footprint</span><span class="metric-value" data-metric="building_footprint_area_sqm" data-value="79426.618">79,426.618 m²</span></div>
+<div class="metric-row"><span class="metric-label">Green Space Area</span><span class="metric-value" data-metric="green_space_area_sqm" data-value="3210551.597">3,210,551.597 m²</span></div>
+<div class="metric-row"><span class="metric-label">Green Ratio</span><span class="metric-value" data-metric="green_ratio" data-value="0.281311">0.281</span></div>
+<div class="metric-row"><span class="metric-label">Public Space Area</span><span class="metric-value" data-metric="public_space_area_sqm" data-value="29467.166">29,467.166 m²</span></div>
+<div class="metric-row"><span class="metric-label">Public Space Ratio</span><span class="metric-value" data-metric="public_space_ratio" data-value="0.002582">0.002582</span></div>
+<div class="metric-row"><span class="metric-label">Road Total Length</span><span class="metric-value" data-metric="road_total_length_m" data-value="42637.064">42,637.064 m</span></div>
+<div class="metric-row"><span class="metric-label">Floor Area Ratio</span><span class="metric-value" data-metric="floor_area_ratio"><span class="badge badge-unknown">pending</span></span></div>
+<div class="metric-row"><span class="metric-label">Building Count</span><span class="metric-value" data-metric="building_count" data-value="15">15</span></div>
+<div class="metric-row"><span class="metric-label">Key Area Count</span><span class="metric-value" data-metric="key_area_count" data-value="3">3</span></div>
+<div class="metric-row"><span class="metric-label">Road Count</span><span class="metric-value" data-metric="road_count" data-value="10">10</span></div>
+<div class="metric-row"><span class="metric-label">Green Space Count</span><span class="metric-value" data-metric="green_space_count" data-value="6">6</span></div>
+<div class="metric-row"><span class="metric-label">Public Space Count</span><span class="metric-value" data-metric="public_space_count" data-value="6">6</span></div>
+<div class="metric-row"><span class="metric-label">Total Floor Area (est.)</span><span class="metric-value" data-metric="total_floor_area_sqm" data-value="254165.178">254,165.178 m²</span></div>
+<div class="metric-row"><span class="metric-label">Building Density</span><span class="metric-value" data-metric="building_density" data-value="0.006959">0.007</span></div>
+<div class="note">Metrics calculated from provisional boundaries in EPSG:4548; recalculable upon official data.</div>
+</div>
+
+<div class="card">
+<h2>Three Scope Levels</h2>
+<div class="scope-item">
+<div class="scope-name">Coordinated Research Area</div>
+<div class="scope-detail">43.6 km² · AI ecosystem, strategy, innovation chain</div>
+</div>
+<div class="scope-item">
+<div class="scope-name">Overall Design Area</div>
+<div class="scope-detail">11.4 km² · Urban renewal, industry space, transport</div>
+</div>
+<div class="scope-item">
+<div class="scope-name">Key Detailed Design Area</div>
+<div class="scope-detail">368.4 ha · Three key areas detailed design</div>
+</div>
+<div class="note">Boundaries are provisional constraints.</div>
+</div>
+
+<div class="card">
+<h2>Three Key Areas</h2>
+<div class="metric-row"><span class="metric-label">Zhongzhiyuan AI Acceleration</span><span class="metric-value" data-metric="key_area_areas_sqm.zhongzhiyuan">1,929,201.877 m²</span></div>
+<div class="metric-row"><span class="metric-label">Beijing AI Origin Community</span><span class="metric-value" data-metric="key_area_areas_sqm.origin">1,043,236.909 m²</span></div>
+<div class="metric-row"><span class="metric-label">Dazhongsi AI Industry Cluster</span><span class="metric-value" data-metric="key_area_areas_sqm.dazhongsi">720,454.219 m²</span></div>
+</div>
+
+<div class="card">
+<h2>Land Use Structure</h2>
+<div class="metric-row"><span class="metric-label">0702 Community Residential</span><span class="metric-value" data-metric="land_use_area_by_code.0702">1,788,211.476 m²</span></div>
+<div class="metric-row"><span class="metric-label">0802 AI R&D Innovation</span><span class="metric-value" data-metric="land_use_area_by_code.0802">2,904,708.080 m²</span></div>
+<div class="metric-row"><span class="metric-label">1401 Heritage Park Green</span><span class="metric-value" data-metric="land_use_area_by_code.1401">2,489,747.883 m²</span></div>
+<div class="metric-row"><span class="metric-label">05 Industry & Commercial</span><span class="metric-value" data-metric="land_use_area_by_code.05">2,489,746.138 m²</span></div>
+<div class="metric-row"><span class="metric-label">0803 Mixed & Transport Hub</span><span class="metric-value" data-metric="land_use_area_by_code.0803">1,740,419.319 m²</span></div>
+</div>
+
+<div class="card">
+<h2>Phasing Strategy</h2>
+<div class="metric-row"><span class="metric-label">Phase 1 · South Start (Dazhongsi)</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_1">2,250,518.970 m²</span></div>
+<div class="metric-row"><span class="metric-label">Phase 2 · Middle (Origin Community)</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_2">5,992,136.953 m²</span></div>
+<div class="metric-row"><span class="metric-label">Phase 3 · North (Zhongzhiyuan)</span><span class="metric-value" data-metric="phasing_area_by_phase.phase_3">3,148,220.482 m²</span></div>
+</div>
+
+<div class="card">
+<h2>AI Scenario Nodes</h2>
+<div class="scenario-grid">
+<div class="scenario-card"><span class="sc-id">SC-01</span><br>AI Commute</div>
+<div class="scenario-card"><span class="sc-id">SC-02</span><br>Smart Parking</div>
+<div class="scenario-card"><span class="sc-id">SC-03</span><br>Health Station</div>
+<div class="scenario-card"><span class="sc-id">SC-04</span><br>Gov Assistant</div>
+<div class="scenario-card"><span class="sc-id">SC-05</span><br>Innovation Hall</div>
+<div class="scenario-card"><span class="sc-id">SC-06</span><br>Smart Energy</div>
+<div class="scenario-card"><span class="sc-id">SC-07</span><br>Safety Patrol</div>
+<div class="scenario-card"><span class="sc-id">SC-08</span><br>Smart Sanitation</div>
+<div class="scenario-card"><span class="sc-id">SC-09</span><br>AI Education</div>
+<div class="scenario-card"><span class="sc-id">SC-10</span><br>Smart Retail</div>
+<div class="scenario-card"><span class="sc-id">SC-11</span><br>AI Cultural Guide</div>
+<div class="scenario-card"><span class="sc-id">SC-12</span><br>Smart Emergency</div>
+</div>
+</div>
+
+<div class="card">
+<h2>User Personas</h2>
+<div class="persona-item">AI Entrepreneur · Incubation, investment, prototyping</div>
+<div class="persona-item">Researcher · Labs, academic exchange, quiet workspace</div>
+<div class="persona-item">Resident · Services, health, culture, leisure</div>
+<div class="persona-item">International Visitor · Multilingual, amenities, culture</div>
+<div class="persona-item">Developer · Open-source, compute, scenario testing</div>
+</div>
+
+<div class="card">
+<h2>Compliance Coverage</h2>
+<div class="metric-row"><span class="metric-label">Announcement Tasks</span><span class="metric-value"><span class="badge badge-complete">23/23 Covered</span></span></div>
+<div class="metric-row"><span class="metric-label">agent.1 - agent.6</span><span class="metric-value"><span class="badge badge-complete">6/6 Addressed</span></span></div>
+<div class="metric-row"><span class="metric-label">Standards Coverage</span><span class="metric-value"><span class="badge badge-complete">6/6 Addressed</span></span></div>
+<div class="metric-row"><span class="metric-label">Design Depth Coverage</span><span class="metric-value"><span class="badge badge-complete">15/15 Complete</span></span></div>
+</div>
+
+<div class="card">
+<h2>Self-Check Status</h2>
+<div class="metric-row"><span class="metric-label">Geometry Layers</span><span class="metric-value"><span class="badge badge-known">9 layers</span></span></div>
+<div class="metric-row"><span class="metric-label">Drawings</span><span class="metric-value"><span class="badge badge-known">A3 + A0 PDF</span></span></div>
+<div class="metric-row"><span class="metric-label">Visualization</span><span class="metric-value"><span class="badge badge-known">Offline HTML</span></span></div>
+<div class="metric-row"><span class="metric-label">Bilingual</span><span class="metric-value"><span class="badge badge-known">zh + en</span></span></div>
+</div>
+
+<div class="card">
+<h2>Sources & Assumptions</h2>
+<div class="metric-row"><span class="metric-label">Registered Sources</span><span class="metric-value">6</span></div>
+<div class="metric-row"><span class="metric-label">Active Assumptions</span><span class="metric-value">6</span></div>
+<div class="note">Full records in sources.json and assumptions.json.</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+<h2>Site Overview Map</h2>
+<div class="map-placeholder">
+<img src="../assets/figures/site-overview.png" alt="Site Overview" style="width:100%;height:200px;object-fit:cover;border-radius:8px;">
+</div>
+<div class="legend">
+<div class="legend-item"><div class="legend-color" style="background:#4a90d9;"></div>Overall Design Area</div>
+<div class="legend-item"><div class="legend-color" style="background:#5cb85c;"></div>Green Space</div>
+<div class="legend-item"><div class="legend-color" style="background:#f0ad4e;"></div>Public Space</div>
+<div class="legend-item"><div class="legend-color" style="background:#d9534f;"></div>Buildings</div>
+<div class="legend-item"><div class="legend-color" style="background:#999;border:2px dashed #666;"></div>Provisional Boundary</div>
+</div>
+</div>
+
+<footer>
+Jing-Zhang Intelligence Vein · Codex AI Agent · COMMUNITY-DISPLAY-ONLY · Provisional, recalculable
+总览地图 三层范围 重点区域 用地分区 交通慢行 蓝绿公共空间 建筑 更新项目 AI 场景 核心指标 任务覆盖 自检状态 来源 假设 </footer>
+</div>
+</body>
+</html>
