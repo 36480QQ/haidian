@@ -11,9 +11,12 @@ tracks:
   - enterprise-services-ecosystem
   - civic-agent-governance
 scenarios:
-  - "通勤智络：营业厅接驳巴士动态编组"
-  - "街坊照护：社区照护舱普惠档服务"
-  - "小店智账：商户智能记账选品"
+  - ai-traffic-walkability
+  - ai-health-service-navigation
+  - enterprise-service-copilot
+  - ai-cultural-guide
+  - robot-delivery-low-speed
+  - public-safety-operations-review
 summary: "A century ago, cities became modern by turning water, electricity, gas, and heat into utilities delivered to every door; today every industry is racing to adopt AI, yet access still works like electricity in 1900 — every user generating its own power, duplicating investment, settling with no one. What is missing is one unified network to every door. JINGZHANG UTILITY builds, along the 9-km Jingzhang Railway Relics Park, the world's first urban belt organized by the logic of an 'intelligence utility': the underground iDUCT (intelligent utility tunnel) carries distributed energy, edge compute, and data trunk lines; the Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi districts take on the roles of Source Plant, Transformer, and Metering District respectively; the Dazhongsi, Wudaokou, and Qinghua East Road West Entrance rail stations upgrade into Service Halls of the intelligence utility. The city's Three Ledgers (Space Ledger, Watt-Token Ledger, Data Ledger) make the utility meterable and settleable, and the universal service obligation ensures that intelligence, like tap water, is available to everyone."
 ---
 

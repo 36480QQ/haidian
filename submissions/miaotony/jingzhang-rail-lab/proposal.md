@@ -11,9 +11,12 @@ tracks:
   - enterprise-services-ecosystem
   - civic-agent-governance
 scenarios:
-  - "通勤智络：营业厅接驳巴士动态编组"
-  - "街坊照护：社区照护舱普惠档服务"
-  - "小店智账：商户智能记账选品"
+  - ai-traffic-walkability
+  - ai-health-service-navigation
+  - enterprise-service-copilot
+  - ai-cultural-guide
+  - robot-delivery-low-speed
+  - public-safety-operations-review
 summary: "一百年前，城市因为把水、电、气、暖变成入户的公用事业而现代化；今天各行各业都在全面拥抱AI，但接入方式仍像1900年的电力——各自发电、重复建设、互不结算，缺的是一张统一入户的网。京张通智沿9公里京张遗址公园建设全球第一条以'智能公用事业'为组织逻辑的城市带：地下智能共同沟iDUCT承载分布式能源、端侧算力与数据干线；众智园、AI原点社区、大钟寺三大片区分别承担源厂、变电站、营业区职能；大钟寺、五道口、清华东路西口三个轨道站升级为智能公用事业营业厅。城市三本账（空间账、算力-能量账、数据账）让公用事业可计量、可结算，普遍服务义务确保智能像自来水一样人人可用。"
 ---
 
