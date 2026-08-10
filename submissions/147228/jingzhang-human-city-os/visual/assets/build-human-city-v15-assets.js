@@ -252,8 +252,8 @@ function mainlineSvg(english = false) {
   const note = english ? 'Concept recommendation only · provisional geometry · no section, capacity, permit, or operating claim' : '仅为概念建议 · 临时几何 · 不产生断面、容量、许可或运营结论';
   const colors = ['#3d76ea', '#ed5b78', '#16a38e'];
   const lines = [];
-  lines.push('<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980">');
-  lines.push('<rect width="1800" height="980" fill="#f7f9fc"/>');
+  lines.push('<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="980" viewBox="0 0 1960 980">');
+  lines.push('<rect width="1960" height="980" fill="#f7f9fc"/>');
   lines.push('<style>.title{font:700 42px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#142b4a}.sub{font:22px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#60748d}.zone{font:700 26px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#fff}.label{font:700 19px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#183654}.small{font:17px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#60748d}.tiny{font:15px -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#71849b}</style>');
   lines.push(`<text x="70" y="72" class="title">${esc(title)}</text>`);
   lines.push(`<text x="70" y="110" class="sub">${esc(sub)}</text>`);
