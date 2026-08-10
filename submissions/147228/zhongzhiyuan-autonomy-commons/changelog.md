@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v3.5 - 2026-08-10
+
+- Added a bilingual node-interface plan and schematic that make the three autonomy nodes spatially legible as ordinary route → public status/consent → bounded service → human handover/stop → ordinary route.
+- Kept the new register concept-only and functional-bands-only: dimensions, capacity, speed, right-of-way, permits, operators and performance remain null or unknown; no road section, redline, or field result was added.
+- Regenerated both bilingual reports and manifest/copyright hashes after the scoped visual and narrative addition.
+
 ## v3.4 - 2026-08-10
 
 - 将三座试验庭的体量表改为公共界面与可逆服务关系，删除未有本地控规、权属、测绘或工程资料支持的 FAR、层数和高度范围；开发控制与工程尺度继续保持待专业团队确定。

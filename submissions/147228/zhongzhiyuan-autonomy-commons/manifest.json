@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "778def892ff74111eff9c49b08b57986528b17cda791ae3da69018a31bb0c4b3"
+      "sha256": "d98414bfab116256d2b3d7f5c34a9f839de2637feff411a457bdbaa2a4af3cf7"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "63186cb7f6f4668aa76340cc91b3b4cd5c452d933ca6ff4fdc313d98e0236902"
+      "sha256": "620a86aa05e68df206b18cfa91ff91db95c55fe17589a977060d2573cd293e3a"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "08268b25c22a244f324a799360b28ee7647a68d8547e7b8adc410857445b886d"
+      "sha256": "9ca06e5950ea1d4d1b84128f9711232189cb58f5a22e019d559cd1fe13e12479"
     },
     {
       "path": "self_check.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0eb8be76690c7d774dc034a3287e606275f894992b2566257bb928ec2e44ce95"
+      "sha256": "d6e4ac3ccf2af8dbcb235539f42daa7b0190eaa645292bc715f9404b0268f764"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +95,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e2ce4695a6c48c29a919718cce84f7451f27a6ac4b5585a739699cfad9c3e563"
+      "sha256": "6f60c9c7777d4de28bccfc3bd244771f723198cf02a81ac944397e9961bd23d0"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "72d06306ebac4b70d5b1f401337f8f46878eb544270651f71ae1d24b8b8131c7"
+      "sha256": "d6940ae18adfd61e264d50b1824a13d4c7dcda58890f68b5df96e5d22daffbc2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -433,7 +433,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "4cf894a15fd06d501a24686f1b82e1a62017da0decc080147032bbcccccdbbaa"
+      "sha256": "968aa89cdbdb318c059e84c471bed8ee31d4d45f39d93e765d2872b89e520865"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",
@@ -452,6 +452,27 @@
       "role": "key_area_node_plans",
       "required": true,
       "sha256": "d7c0779ca0c5c182b76ee137e8fa9f2f38a9eda969ab72d16dfa587d57237a1d"
+    },
+    {
+      "path": "visual/assets/autonomy-node-interface-plans.json",
+      "role": "autonomy_node_interface_plan_register",
+      "required": true,
+      "sha256": "d423ee46489efc6c13e18470c20662a4bec8b5c72bf8d5d6c892ac06673f96e1"
+    },
+    {
+      "path": "assets/figures/autonomy-node-interface.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "06729172fa55bbabc2e69bb609b476bf80f28642ea82cc7fa8972c7fcb7dc9d4"
+    },
+    {
+      "path": "assets/figures/autonomy-node-interface.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/autonomy-node-interface.svg",
+      "sha256": "f1cfea9ee1b06f6a31df12f955a47fd62556c467d069507080e57c2ffea34ebf"
     },
     {
       "path": "visual/assets/public-interest-audit.json",

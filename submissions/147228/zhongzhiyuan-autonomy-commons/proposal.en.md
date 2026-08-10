@@ -105,6 +105,14 @@ These relationships answer which public and reversible conditions to compare fir
 
 Until that evidence exists, spatial actions remain removable wayfinding, weather shelter, staffed service, accessible ramps, curb-state boards and movable separation. Nothing here authorises road widening, building increment, demolition or autonomous operation on a social road [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
+### Autonomous-Mobility Functional Bands at the Three Nodes (Concept Only)
+
+To prevent a “node” from being read as a vehicle stopping point, this package separates five continuous interfaces: ordinary human route, public status and consent, bounded service window, human handover/stop, and restoration of the ordinary route. Zhongzhiyuan first tests a closable safety-evaluation yard; AI Origin preserves paper, telephone and equivalent human service; Dazhongsi separates rail arrival, quiet movement, and loading/maintenance windows. Dimensions, capacity, speed, right-of-way, permits and performance remain null; the plan expresses functional bands only, not a road section or redline [data:visual/assets/autonomy-node-interface-plans.json#AV-INTERFACE-001].
+
+![Public interface and functional bands for three autonomous-mobility nodes](assets/figures/autonomy-node-interface.en.svg)
+
+Caption: The three-row plan makes “ordinary route first, closable service, human fallback when evidence is missing” visible in one view. Colors express interface relationships, not existing-condition measurements, engineering dimensions, or vehicle performance.
+
 ![Key-area public roles and stop conditions](assets/figures/key-areas.en.png)
 
 Caption: The key-area board is not a point list: it places enterprise service, equivalent community service and rail interchange at ground interfaces, and shows when the system returns to human, accessible and emergency routes.
@@ -112,6 +120,8 @@ Caption: The key-area board is not a point list: it places enterprise service, e
 ## 4. Design rules for an automated future
 
 **Curb before vehicle.** Draw the continuous human route and the exit-capable service zone before drawing a vehicle route. Curb states are `open`, `booked`, `service`, `restricted` and `human-only`; every change needs an owner, time window, sign and restoration condition.
+
+The “status board plus removable functional bands” is a methodological transfer, not a local finding: curb research prompts fields for enforcement, public communication, data management and interagency coordination; citizen research on driverless streets treats greenery, seating, shelter and micromobility as questions for public preference in flexible zones; place-based eHMI research suggests that autonomous interfaces should be integrated with the context of a place. These studies only define what should be asked, measured and professionally reviewed next; their samples and outcomes are not transferred into Jing-Zhang preferences, dimensions or safety effects [source:DIEHL-CURBSPACE-MANAGEMENT-2021] [source:FAYYAZ-DRIVERLESS-STREETS-2025] [source:WANG-PLACE-BASED-EHMI-2025].
 
 ### A typical curb cross-section: continuity before the service window
 

@@ -112,6 +112,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 在证据到位前，空间动作只包括可撤回的导向、候车遮雨、人工服务台、无障碍坡道、路缘状态牌和可移动隔离；不据此提出道路拓宽、建筑增量、拆除或自动驾驶社会道路开放 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
+### 三处节点的自动驾驶功能带（概念层）
+
+为避免“节点”被误读成一处车辆停靠点，本包把三处节点拆成普通人路径、公开状态与同意、受限服务窗口、人工接管/停止和恢复普通路径五个连续界面。众智园先验收可关闭的安全评测庭，AI 原点先保留纸面/电话/人工等价服务，大钟寺先把轨道到达、安静通行和物流维护窗口分开；尺寸、容量、速度、路权、许可和性能仍为空，节点计划只表达 functional bands，不是道路断面或红线 [data:visual/assets/autonomy-node-interface-plans.json#AV-INTERFACE-001]。
+
+![三处自动驾驶节点的公共界面与功能带](assets/figures/autonomy-node-interface.svg)
+
+图注：三行节点计划把“普通路径先行、受限服务可关、证据不足即人工回退”放到同一张图上；颜色表示界面关系，不表示现状测量、工程尺寸或车辆性能。
+
 ![核心区域公共性分工与停止条件](assets/figures/key-areas.png)
 
 图注：重点区图不是点位清单，而是把企业服务、社区等价服务和轨道换乘分别落到首层界面，并显示何时回退到人工、无障碍和应急通道。
@@ -121,6 +129,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ### 4.1 路缘先于车道
 
 所有自动驾驶场景先绘制“人行连续带”和“可退出服务带”，再决定车辆路径。路缘登记采用五种状态：`open`（公共通行）、`booked`（短时装卸/接送）、`service`（维护窗口）、`restricted`（风险天气或活动管制）、`human-only`（人工与无障碍优先）。状态变更必须有责任人、起止时间、现场标识和恢复条件，不能由模型自动永久锁定。
+
+这里的“状态牌 + 可撤回功能带”是方法性借鉴而非本地结论：路缘研究提醒设计同时记录执法、公众沟通、数据管理和跨部门协同；驾驶人本位街道研究把绿化、座椅、遮蔽和微出行设施作为公众参与时的弹性空间问题；place-based eHMI 研究则提示自动驾驶界面需要嵌入场所语境。三项研究只决定后续要问什么、测什么和由谁复核，不把外地样本或参与者结果转移成京张偏好、尺寸或安全效果 [source:DIEHL-CURBSPACE-MANAGEMENT-2021] [source:FAYYAZ-DRIVERLESS-STREETS-2025] [source:WANG-PLACE-BASED-EHMI-2025]。
 
 #### 典型路缘断面：先保连续通行，再放服务窗口
 
