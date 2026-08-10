@@ -158,17 +158,17 @@ Zhongzhiyuan tests enterprise arrival, shuttle consolidation and loading. The AI
 
 The first pilot is a small morning and evening window in Zhongzhiyuan, an accessible daily-route comparison in the Origin Community, and a rail/curb separation rehearsal at Dazhongsi. Enterprise bookings cannot become permanent community bans. Shared vehicles cannot occupy a fire route, accessible path or emergency corridor.
 
-### Conceptual Massing and Public Interfaces for the Three Key Areas
+### Public Interfaces and Reversible Service Relations for the Three Key Areas
 
-Mobility operations do not replace urban design. The following massing ledger translates each area’s mobility role into a provisional interface and intensity range; it does not change the geometry or present a regulatory-plan control. The announcement-scale areas are approximately 192.1, 104.3 and 72.0 ha for task scale only; they are not existing building area, parcel boundaries or regulatory-plan indicators [data:geometry/key_areas.geojson#PROV-KEY-001] [source:OFFICIAL-ANNOUNCEMENT].
+Mobility operations do not replace urban design. The following ledger translates each area’s mobility role into a provisional public interface and reversible-service relation; it does not change the geometry or present a regulatory-plan control. The announcement-scale areas are approximately 192.1, 104.3 and 72.0 ha for task scale only; they are not existing building area, parcel boundaries or regulatory-plan indicators [data:geometry/key_areas.geojson#PROV-KEY-001] [source:OFFICIAL-ANNOUNCEMENT].
 
-| Key area | Spatial relationship | Conceptual intensity | Public-facing height | First professional evidence to collect |
+| Key area | Spatial relationship | Public interface and reversible relation | Upper-height evidence | First professional evidence to collect |
 | --- | --- | --- | --- | --- |
-| Zhongzhiyuan AI Autonomous Innovation Acceleration Zone | Separate enterprise arrival, shuttle waiting, loading and fire-clearance layers; keep the ground interface service-oriented | FAR 1.2–1.8 for design comparison only | 2–4 storeys; upper height unknown | Existing buildings, energy/fire review, ownership, enterprise OD and curb survey |
-| Beijing AI Origin Community | Place community services, continuous walking/accessibility, weather shelter and daily needs on one human-first interface | FAR 1.0–1.5 for design comparison only | 2–3 storeys; upper height unknown | Accessibility walk, resident-service baseline, ownership, care and night-safety evidence |
-| Dazhongsi AI Industry Cluster | Distinguish rail transfer, bicycle parking, public ground-floor frontage and timed loading | FAR 0.8–1.3 for design comparison only | 1–3 storeys; upper height unknown | Station flow, curb counts, traffic organisation, fire and municipal interfaces |
+| Zhongzhiyuan AI Autonomous Innovation Acceleration Zone | Separate enterprise arrival, shuttle waiting, loading and fire-clearance layers; keep the ground interface service-oriented | Human desk and public observation remain adjacent; equipment, maintenance and test back-of-house can close; the walking spine stays open | Formal evidence pending | Existing buildings, energy/fire review, ownership, enterprise OD and curb survey |
+| Beijing AI Origin Community | Place community services, continuous walking/accessibility, weather shelter and daily needs on one human-first interface | Staffed desk, paper entry and intergenerational learning face the ordinary route; test components remain removable and pausable | Formal evidence pending | Accessibility walk, resident-service baseline, ownership, care and night-safety evidence |
+| Dazhongsi AI Industry Cluster | Distinguish rail transfer, bicycle parking, public ground-floor frontage and timed loading | Rail arrival, quiet route and service front are separated; events and data display can withdraw without taking the everyday route | Formal evidence pending | Station flow, curb counts, traffic organisation, fire and municipal interfaces |
 
-FAR and storeys are conceptual design ranges, not official planning conditions, building permits or construction commitments. A formal scheme must recalculate them after survey, regulatory-plan review, ownership, fire, structural, municipal and public-participation evidence is complete [depth:height_massing_character] [depth:development_intensity_controls].
+These relations compare how ordinary paths, human service, equipment back-of-house and upper functions are separated; they do not define development intensity, massing, demolition or engineering capacity. A formal scheme must recalculate them after survey, regulatory-plan review, ownership, fire, structural, municipal and public-participation evidence is complete [depth:height_massing_character] [depth:development_intensity_controls].
 
 Until that evidence exists, the first spatial moves remain removable signs, weather shelters, bicycle parking, accessible ramps and curb-state boards. No road widening, building increment or demolition conclusion follows from this ledger [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
@@ -224,6 +224,19 @@ The conceptual network includes one north–south relationship line of about 9.6
 ### A time-window curb ledger
 
 The curb ledger uses `open`, `booked`, `service`, `human-only` and `emergency` states. Every state change has a responsible person, start and end time, service purpose, clearing action, alternative route and complaint entry. Enterprise data is grouped; resident data is service-based. The four operational metrics are accessible-route completion, first/last-mile reliability, curb-window compliance and complaint-closure hours [source:CURBSPACE-MANAGEMENT-2021] [source:NIST-HUMAN-CENTERED-AI]. All local demand, occupancy, delay, passenger, charging and complaint values remain unknown until measured.
+
+### M-09 node-level curb functional section (non-scaled)
+
+To keep M-09 from reading as readiness fields alone, this package uses Dazhongsi `PROV-KEY-003` and `ROAD-002` as a **candidate review node** and orders waiting, human handoff, a closable service window and emergency retreat as one functional sequence. `visual/assets/m09-curb-spatial-prototype.json` expresses bands and state transitions only; it does not claim a real station entrance, road section, dimension, capacity or operating service. A professional walk-through and accountable role must confirm the actual entrance and clearing window.[data:visual/assets/m09-curb-spatial-prototype.json] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:traffic_rail_slow_parking]
+
+| Functional band | Visible state | Evidence before entry | Spatial action on failure |
+| --- | --- | --- | --- |
+| Walking and accessibility continuity | `open / human-only` | Segment walk-through, crossing/slope/lighting/obstruction record, human reroute | Reroute or guide people by hand; pause `booked/service` |
+| Waiting and human handoff | `booked / human-only` | Waiting/station observation, accountable human role, public-transport alternative | Move to human and rail/bus service after a disconnect or missed transfer |
+| Closable curb-service window | `booked / service` | Curb asset, grouped users, start/end, clearing, fire and accessibility conditions | Do not reserve or occupy public curb space if any condition is missing |
+| Maintenance and emergency retreat | `service / emergency` | Maintenance owner, abnormal clearing, weather/disruption trigger and replay entry | Freeze reservations, restore open/human priority and return to P0 |
+
+This is not an engineering section. It makes the intermediate design layer visible: who receives passage priority, who can stop the state, and when clearing occurs; dimensions, capacity, station flow and field-service outcomes remain `unknown`.[data:visual/assets/mobility-pilot-readiness.json]
 
 ### Two-sided demand registers and four service levels
 
