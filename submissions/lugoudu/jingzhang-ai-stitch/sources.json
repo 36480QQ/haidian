@@ -92,15 +92,82 @@
       "limitations": "临时粗略边界，official_boundary=false，boundary_precision=provisional_rough；不得作为官方红线、审批依据或精确面积复算依据；官方数据取得后必须统一复算。组织方数据缺口不阻断内容评分。"
     },
     {
-      "id": "GLOBAL-CASES",
-      "title": "全球 AI 创新生态公开案例（多来源汇编）",
-      "publisher": "各案例公开报道与官方站点",
-      "url": "见 proposal.md 第 3 章逐条登记",
+      "id": "GLOBAL-CASE-C1-SANDHILL",
+      "title": "Sand Hill Road (硅谷沙丘路) 风险资本集聚",
+      "publisher": "Stanford University / 多家公开财经报道",
+      "url": "https://en.wikipedia.org/wiki/Sand_Hill_Road",
       "source_type": "agent_inferred_from_public_data",
       "authority_level": "A2",
       "usable_for_formal": "background_only",
-      "usage": "仅作为创新生态机制参考与启发，每个案例均附非照搬边界声明，不声称合作、资金、法律等价或本地绩效。",
-      "limitations": "案例为机制参考，非本地数据；不可作为本地指标、招商承诺或规划依据。"
+      "retrieval_date": "2026-08-09",
+      "license": "公开百科（CC-BY-SA）",
+      "usage": "C1 案例机制参考：资本与高校地理邻近 + 校友网络。仅作机制启发。",
+      "limitations": "不声称与硅谷机构合作或资金等价；具体财税政策不可迁移。"
+    },
+    {
+      "id": "GLOBAL-CASE-C2-KINGSCROSS",
+      "title": "King's Cross Central Knowledge Quarter (伦敦国王十字知识街区)",
+      "publisher": "King's Cross Central Limited Partnership / Camden Council",
+      "url": "https://www.kingscross.co.uk/",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "retrieval_date": "2026-08-09",
+      "license": "公开项目网站",
+      "usage": "C2 案例机制参考：铁路枢纽更新 + 高校/企业混合。仅作 TOD 思路启发。",
+      "limitations": "北京语境、产权与法规不同；具体工程方案不可照搬。"
+    },
+    {
+      "id": "GLOBAL-CASE-C3-ONENORTH",
+      "title": "one-north (新加坡纬壹科技城)",
+      "publisher": "JTC Corporation (新加坡裕廊集团)",
+      "url": "https://www.onenorth.gov.sg/",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "retrieval_date": "2026-08-09",
+      "license": "公开政府项目网站",
+      "usage": "C3 案例机制参考：园区与生活区融合 + 测试场。仅作可体验场景启发。",
+      "limitations": "不照搬其治理与气候适应性方案；本地化须独立设计。"
+    },
+    {
+      "id": "GLOBAL-CASE-C4-SHIBUYA",
+      "title": "Shibuya Station City (东京涩谷站城一体开发)",
+      "publisher": "Tokyu Corporation / 东京都",
+      "url": "https://www.shibuya-station-city.jp/",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "retrieval_date": "2026-08-09",
+      "license": "公开项目网站",
+      "usage": "C4 案例机制参考：轨道与城市开发协同。仅作大钟寺 TOD 概念研究。",
+      "limitations": "涉及具体工程须专业团队深化；日本轨交体制不可直接迁移。"
+    },
+    {
+      "id": "GLOBAL-CASE-C5-NANSHAN",
+      "title": "深圳南山科技园产业链集聚",
+      "publisher": "深圳市政府公开资料 / 公开报道",
+      "url": "https://www.sz.gov.cn/",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "retrieval_date": "2026-08-09",
+      "license": "公开政府资料",
+      "usage": "C5 案例机制参考：产业链集聚 + 政策工具。仅作众智园产业链机制参考。",
+      "limitations": "不等价其财政或土地政策；海淀政策须独立设计。"
+    },
+    {
+      "id": "GLOBAL-CASE-C6-AMSTERDAM",
+      "title": "Amsterdam AI Initiative (阿姆斯特丹人工智能倡议)",
+      "publisher": "Amsterdam Economic Board / 公开学术资料",
+      "url": "https://amsterdameconomicboard.com/",
+      "source_type": "agent_inferred_from_public_data",
+      "authority_level": "A2",
+      "usable_for_formal": "background_only",
+      "retrieval_date": "2026-08-09",
+      "license": "公开机构资料",
+      "usage": "C6 案例机制参考：开放数据与伦理治理。仅作开放数据治理机制启发。",
+      "limitations": "伦理与数据法规本地化须独立设计；欧盟 GDPR 语境不同。"
     }
   ]
 }
