@@ -65,6 +65,26 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![概念总图：物理层与智能体层的叠加](assets/figures/concept-overview.png)
 
+### 信号生命周期：从三态语言到完整治理循环
+
+三态是信号制度的“字母表”，治理还需要“句子”。数字市民公约（DCC）可不可核验，取决于每一个智能体服务从立牌到撤回的完整生命周期都有规定的信号、责任与验证方式。本方案把 USR 从三态语言扩展为**信号生命周期（Signal Lifecycle）**——五阶段闭环：**立牌 → 运行 → 交接 → 演练 → 撤回**，每一阶段都有明确的信号状态、人类可读信号、智能体义务与验证方式 [depth:urban_signal_regime] [depth:signal_lifecycle]：
+
+| 阶段 | 信号 | 人类市民可读到什么 | 智能体义务 | 验证方式 |
+| --- | --- | --- | --- | --- |
+| 立牌 | 🟢 准入 | 服务准入信息与具名负责人公示 | 责任签认、协议端点注册、无 AI 等价路径就位 | 网关登记表 + 公开服务目录 |
+| 运行 | 🟢 绿 | 智能体在场，持续监测 | 按开放协议运行，行为入账 | 信号台账实时可读 [metric:signal_node_count] |
+| 交接 | 🟡 黄 | 需人工关注，进入交接窗口 | 暂停自主决策，交给人机共同操作 | 交接记录 + 具名负责人签认 [metric:human_operator_count] |
+| 演练 | 🔴 演练红（模拟停止） | 静态人工等价物激活，全带演示“可停止” | 停止服务、打开问责记录 | 演练复盘报告入公共知识库 |
+| 撤回 | 🔴 红→🟢 | 停止原因与失败记录公开 | 重开需责任签认 + 失败记录 | 撤回档案 + 受影响者申诉记录 [metric:stop_rights_count] |
+
+生命周期把“可停止”从一条原则变成一套**可排期、可演练、可审计**的制度。为让 DCC 第二条“可停止”不是纸面承诺，本方案把演练列为**硬核验节点**，并以铁路“信号演练”的传统为名 [source:CULTURE-RAILWAY-SIGNAL]：
+
+- **红牌演练日（Red-Flag Drill Day）**——每年 1 个全带“离线日”：关闭全部智能体服务，仅靠人工/离线等价路径运转，公开验证 DCC 第三条“无 AI 等价”与第五条“受影响者冻结权”；演练复盘进入公共知识库，与年度“四季节信号”的**冬·回流**合并 [depth:no_ai_equivalence] [depth:red_flag_drill_day] [depth:annual_event_seasons]。
+- **季度交接演练**——每季 1 次黄牌交接窗口演练，验证具名人类负责人能在指定时间内接管服务 [metric:human_operator_count]。
+- **月度信号台账审计**——每月核对信号台账与行为入账的一致性，任何“信号与行为不符”即进入红牌审查 [depth:signal_lifecycle]。
+
+以上均为**概念性运营机制建议**：演练频次、设备形态与责任签认流程为推进方向，正式频率与主体由运营实施阶段以公开程序确定，不构成政府安排或投资承诺 [source:AGENT-TASKBOOK]。信号生命周期与“场景开放六阶段”“四季节信号”共享同一套责任链，不新增机构、不新增建设承诺 [depth:risk_missing_data]。
+
 ### 任务书补充维度映射
 
 本方案按智能体任务书（`agent_taskbook.json`）的补充评审维度逐项自检对齐，每项维度均在正文、成果与数据中有明确落点，供评审与专业团队逐项核对 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]：

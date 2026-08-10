@@ -26,6 +26,7 @@ main{padding:22px 0 40px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .g4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.g5{grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
 .card{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
 .card h3{margin:0 0 6px;font-size:15px;color:var(--navy)}
 .card p{margin:0;font-size:13px;color:var(--grey)}
@@ -397,6 +398,59 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
           <div class="card">
             <span class="num" style="font-size:22px;color:#245B8F">12</span>
             <p>named human operators · <span style="color:var(--muted)">human_operator_count</span></p>
+          </div>
+          
+        </div>
+        <h3 style="margin:20px 0 8px;color:var(--navy);font-size:15px">Signal lifecycle · five stages</h3>
+        <div class="grid g5">
+          
+          <div class="card" style="border-top:3px solid #4A8C5C">
+            <span class="num">🟢</span>
+            <p style="font-weight:600;margin:0 0 4px;color:var(--ink)">Sign-off</p>
+            <p style="margin:0">sign-off · no-AI equivalent in place</p>
+          </div>
+          
+          <div class="card" style="border-top:3px solid #4A8C5C">
+            <span class="num">🟢</span>
+            <p style="font-weight:600;margin:0 0 4px;color:var(--ink)">Run</p>
+            <p style="margin:0">run on protocol · behaviour logged</p>
+          </div>
+          
+          <div class="card" style="border-top:3px solid #D9A441">
+            <span class="num">🟡</span>
+            <p style="font-weight:600;margin:0 0 4px;color:var(--ink)">Handover</p>
+            <p style="margin:0">pause autonomy · joint control</p>
+          </div>
+          
+          <div class="card" style="border-top:3px solid #C0392B">
+            <span class="num">🔴</span>
+            <p style="font-weight:600;margin:0 0 4px;color:var(--ink)">Drill</p>
+            <p style="margin:0">simulated stop · proves stoppability</p>
+          </div>
+          
+          <div class="card" style="border-top:3px solid #C0392B">
+            <span class="num">🔴</span>
+            <p style="font-weight:600;margin:0 0 4px;color:var(--ink)">Recall</p>
+            <p style="margin:0">red→reopen needs sign-off + failure record</p>
+          </div>
+          
+        </div>
+        <h3 style="margin:20px 0 8px;color:var(--navy);font-size:15px">Red-Flag Drill Day · hard verification nodes</h3>
+        <div class="grid g3">
+          
+          <div class="card">
+            <span class="num" style="font-size:20px;color:#C0392B">🔴</span>
+            <p>Annual offline day — all agents off; belt runs on offline equivalents, publicly verifying no-AI-equivalence & freeze rights</p>
+          </div>
+          
+          <div class="card">
+            <span class="num" style="font-size:20px;color:#D9A441">🟡</span>
+            <p>Quarterly handover drill — named human operators take over within the allotted time</p>
+          </div>
+          
+          <div class="card">
+            <span class="num" style="font-size:20px;color:#245B8F">🟢</span>
+            <p>Monthly ledger audit — signal ledger vs logged behaviour; any mismatch enters red-flag review</p>
           </div>
           
         </div>
