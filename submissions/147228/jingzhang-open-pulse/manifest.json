@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d02fe8d6fd41c072e45b6febc4964e6ea75cab45ef03a2a5ee90ab425512aa30"
+      "sha256": "821eb31cce5e692ea2fe387a27c4f609f6006b5b10f3c476d2d05e8e50257ff6"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b9a9993dcf96bf0932525b97e869e7faab2bef3ba3a26f57df6072043ef654ed"
+      "sha256": "6c87a99630a644942567ed80d7bb2e7256f0f64913fbb816693a366964201bbe"
     },
     {
       "path": "agent.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "333d84e8efb648f23d3a633b413ab0529ae0fa85a9f3cd85061bf7968c96e1de"
+      "sha256": "ccc4c54befa8a4c2d94fe95c9fd9c9f1889a319022c2b8ef5cdbf1fa5e921461"
     },
     {
       "path": "report/proposal.en.html",
@@ -97,7 +97,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a12e7d2a4656e69b632414a0516fe940db63378d3a481008b2d64f7978cdff1a"
+      "sha256": "4ca2c1123611ce3ebe677d4352cca27015947d768115ed1f0ff0550aa934be29"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "bb51d2b9d31af600e4bde4ab562ba8ff31bd324be1e3f1f5879c8c4d6c513379"
+      "sha256": "6ab4088bf36c3d810963e8ed97528fd4e5bf95c0d83fb9a3d1fe87298379d8b2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -152,7 +152,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "da5f89e3fcbef3a81e2efc6577c567dbe6f5a7475cdc5fd021dcf6e9759fad6c"
+      "sha256": "5e02a703ffc5d186211d07e987597bb1a5ef4068b6809f214668426747937ed2"
     },
     {
       "path": "visual/index.en.html",
@@ -160,7 +160,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "158d2aa2c28185164f1847d2d5c962e6e6523d830894baf88e72eeb11b4f97e1"
+      "sha256": "63d72f88dd2c07902f336652235f6c99101e3c85eb67b39ec0d9d8fdc40fb3bc"
     },
     {
       "path": "assets/figures/construction-participation.png",
@@ -389,6 +389,13 @@
       "sha256": "843208802ee2ba4ea89519eb544824aee287c1af2feaf3941501d867a620ffdd"
     },
     {
+      "path": "visual/assets/claim-provenance.json",
+      "role": "verification_register",
+      "required": true,
+      "language": "neutral",
+      "sha256": "dec66cd07313e7327c93e551f9713c228b9cf88186921ff25027ff2433204db2"
+    },
+    {
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
@@ -437,6 +444,13 @@
       "sha256": "fed872a8d3c095c636bc5410b940b1e7066e85ab9d9e5beed47ab4b2492cd972"
     },
     {
+      "path": "visual/assets/run-open-pulse-claim-provenance.js",
+      "role": "validation_runner",
+      "required": true,
+      "language": "neutral",
+      "sha256": "643510a0698658d2ff93dde106f0366f2b9e91bff05aa7e8e642b96afc454b10"
+    },
+    {
       "path": "visual/assets/run-open-pulse-resilience-boundary-audit.js",
       "role": "verification_script",
       "required": false,
@@ -466,7 +480,7 @@
       "path": "visual/assets/copyright-ledger.json",
       "role": "copyright_ledger",
       "required": true,
-      "sha256": "1077519c52fdb8c28f668bf3920b0e6133b3a41c5f2aa2526f61d464ede30bd7"
+      "sha256": "94222f62696e6cb090fba6df757bd17aeadab57a2b4cbd39934365292f176880"
     },
     {
       "path": "visual/assets/case-mechanism-matrix.json",

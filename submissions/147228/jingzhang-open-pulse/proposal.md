@@ -67,6 +67,21 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 任务与成果深度由 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] 和 [standard:MOHURD-URBAN-DESIGN-MEASURES] 共同约束；控规内容回到 [standard:MOHURD-CONTROL-DETAILED-PLANNING]，用地与建筑深度回到 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]。这些入口共同把文字、GeoJSON、指标、图册和 HTML 组织成一套可继续深化的空间交付。
 
+### 1. 证据等级与决策边界
+
+本包先判断“资料能支持什么”，再判断“空间可以怎么设计”。“已登记”只表示能够回到来源记录，不等于该资料可以支撑 formal 空间、工程或实施结论；每一层都必须同时读“可以支持”和“不能支持”。
+
+| 证据层级 | 本包实例 | 可以支持 | 不能支持 |
+| --- | --- | --- | --- |
+| 任务与专业标准（formal） | 官方公告、清权任务书、规划与控规标准快照 | 任务要求、成果深度、专业原则和审阅问题 | official polygon、权属、工程条件、审批或政府承诺 |
+| 已清权的来源登记 | `sources.json`、`data/source_registry.json`、公开案例与标准登记 | 来源用途、机制对照、资料责任和禁用范围 | 把案例绩效、背景统计或登记记录升级为海淀实施事实 |
+| 临时空间依据（provisional） | `site_boundary.geojson`、`key_areas.geojson`、`constraints.geojson` | 概念生成、拓扑自检、相对关系和替换后的整体复算触发器 | 法定红线、地块权属、精确面积、道路红线或控规指标 |
+| 包内派生设计数据 | GeoJSON、`metrics.json`、场景/分期/责任矩阵 | 可复算的概念结构、数量关系、节点动作、分期依赖和审计接口 | 现状测绘、设施容量、现场性能、居民接受度或建设许可 |
+| 行政统计与开放背景 | 统计公报、交通资料、OSM/Overpass 背景筛查 | 校准问题、确定走廊级补采优先级和说明不确定性 | 走廊客流、站点 OD、需求容量、正式边界、选址或绩效目标 |
+| 合成场景与论文/方法 | S02 合成桌面回放、MCDA/鲁棒性方法、行业案例机制 | 测试协议、假设、负例、人工接管和后续验证设计 | 已运行现场结果、工程安全、采购依据、预测保证或官方评分 |
+
+审阅判定规则是：formal 结论必须回到相应的 formal 来源；provisional、background_only、design_target 和 `not_run` 只能保留原状态。包内 runner 的 `PASS` 只证明结构合同可回放，不把本地自检变成现场证据、专业签章、政府审定或竞赛分数。
+
 资料登记表的使用边界如下：
 
 - data/source_registry.json 登记公开、清权与临时资料的用途边界。
@@ -384,6 +399,8 @@ v1.5 在上一轮“低后悔”压力测试上扩展为 97 条原子证据记�
 指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count] 和 [metric:building_footprint_area_sqm]。建筑单元与绿地段的结构回读见 [metric:building_unit_count] 和 [metric:green_segment_count]。
 
 空间对象计数另回到 [metric:public_space_polygon_count] 和 [metric:public_scenario_node_count]。分期带与数据缺口接口回到 [metric:phase_count] 和 [metric:constraint_gate_count]；这些计数描述提交包的可回读结构，不代表现状设施或审批数量。
+
+页面上可见的 9 个结构化数字另登记在 `visual/assets/claim-provenance.json`。每条记录同时给出 `metrics.json` 的原始值路径、来源文件、对应图件和中英文指标标记，`run-open-pulse-claim-provenance.js` 会逐条复核这些关系。OSM 筛查、临时几何和候选方案仍按各自状态保留为背景记录、概念结构或设计实验；这张表只改善回读路径，不改变证据等级。[data:visual/assets/claim-provenance.json]
 
 [metric:building_footprint_ratio]、[metric:green_ratio] 和 [metric:public_space_ratio] 来自结构化空间层；其边界证据是 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 和 [data:geometry/buildings.geojson#BLDG-001]。
 
