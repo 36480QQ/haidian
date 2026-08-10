@@ -2,6 +2,55 @@
   "schema_version": "0.1.0",
   "checks": [
     {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "validate_local_submission.py completed with exit code 0, zero errors, and one disclosed provisional-boundary warning.",
+      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "checked_at": "2026-08-10T14:48:57Z",
+      "error_count": 0,
+      "warning_ids": [
+        "SITE_BOUNDARY_PROVISIONAL"
+      ]
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "Spatial review completed with exit code 0. The three reported KEY_AREA_PROVISIONAL items are disclosed minor limitations and do not block content scoring.",
+      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "checked_at": "2026-08-10T14:48:57Z",
+      "blocking_issue_count": 0,
+      "minor_issue_count": 3,
+      "issue_ids": [
+        "KEY_AREA_PROVISIONAL",
+        "KEY_AREA_PROVISIONAL",
+        "KEY_AREA_PROVISIONAL"
+      ]
+    },
+    {
+      "check_id": "VISUAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Visual packaging review completed with exit code 0 and zero issues; the offline visual contains the required recomputable metrics.",
+      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "checked_at": "2026-08-10T14:48:57Z",
+      "issue_count": 0
+    },
+    {
+      "check_id": "PROFESSIONAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Professional evidence review completed with exit code 0 and zero issues across 6 standards, 15 design-depth items, 8 required metric references, and bilingual proposal format v2.",
+      "command": "workbench/review-venv/bin/python scripts/self_check_submission.py submissions/278602225-lang/jingzhang-open-house --pr-author 278602225-lang --json",
+      "checked_at": "2026-08-10T14:48:57Z",
+      "issue_count": 0
+    },
+    {
       "check_id": "BOUNDARY_TRUST",
       "result": "pass",
       "severity": "major",
