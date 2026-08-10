@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
+> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates register recomputation and audit interfaces. The current gates remain `design_target`; only an explicitly marked `PASS` from a local runner represents a completed package-level replay.
 
 ## One-page executive brief: civic loop and one-component/one-proof-mile
 
