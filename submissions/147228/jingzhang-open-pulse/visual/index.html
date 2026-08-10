@@ -42,15 +42,15 @@
 <div><small>过街点筛查</small><b data-metric="osm_mapped_crossing_count" data-value="189">189</b></div>
 <div><small>居民体验门槛</small><b>≥80/100</b></div>
 <div><small>候选方案</small><b data-metric="resilience_v13_candidate_count" data-value="5">5</b></div>
-<div><small>蒙特卡洛抽样</small><b data-metric="resilience_v13_monte_carlo_draws" data-value="50000">50,000</b></div>
-<div><small>S4 最优概率</small><b data-metric="resilience_v13_selected_win_rate" data-value="0.78862">78.862%</b></div>
-<div><small>S4 P05</small><b data-metric="resilience_v13_selected_p05_score" data-value="70.252">70.252</b></div>
+<div><small>蒙特卡洛抽样（声明值）</small><b>50,000</b></div>
+<div><small>S4 最优概率（声明值）</small><b>78.862%</b></div>
+<div><small>S4 P05（声明值）</small><b>70.252</b></div>
 <div><small>官方时间序列</small><b>2014—2023</b></div>
 <div><small>模型用途</small><b>情景比较*</b></div>
-</div><p class="note">这些数值是提交几何、可复算记录或相对决策实验的接口；带 * 的序列不是官方评分或现场绩效。所有官方边界、气象/管网、居民调查、机器人测试和资产台账到位后必须重算。</p></section>
+</div><p class="note">这些数值是提交几何、可复算记录或相对决策实验的接口；MCDA 数值目前只是已声明的设计实验结果，GATE-04 尚未通过，不能当作包内已独立复算的 known metric。带 * 的序列不是官方评分或现场绩效。所有官方边界、气象/管网、居民调查、机器人测试和资产台账到位后必须重算。</p></section>
 <section class="score"><h2>五方案 × 五权重画像 × 八压力情景 × 50,000 次抽样</h2><div class="score-grid"><div><span>S0 最小改变</span><b>42.56 · 0%</b></div><div><span>S1 技术密集</span><b>54.09 · 0%</b></div><div><span>S2 生态密集</span><b>70.24 · 21.14%</b></div><div><span>S3 活动容量</span><b>46.58 · 0%</b></div><div><span>S4 均衡自适应</span><b>72.52 · 78.86%</b></div></div></section>
 <section class="score"><h2>v1.5 全状态证据账本</h2><div class="score-grid"><div><span>已知 known</span><b>以数据复算</b></div><div><span>目标 design_target</span><b>未来审查门</b></div><div><span>未知 unknown</span><b>明示缺口</b></div><div><span>阻断 blocked</span><b>停止扩容</b></div><div><span>短片镜头</span><b>5 段 · 可回退</b></div></div><p class="note">设计目标是未来复核接口，不是现状成绩、现场绩效或竞赛评分；达到条件前保持 unknown，触发阻断时回到普通公共服务。</p></section>
-<section class="note"><strong>选择逻辑 · 不是最高单项，而是最低后悔</strong><br>S4 平均遗憾 0.314，八压力最低综合分 67.194，五项硬闸门全部通过；S2 在“气候优先”画像下胜出，提示下一阶段仍须强化被动生态基础设施。热浪、云暴、干旱、断网、机器人增量、活动人流、维护缩减和冻融均设明确回退。</section>
+<section class="note"><strong>选择逻辑 · 不是最高单项，而是最低后悔</strong><br>S4 的声明结果为平均遗憾 0.314、八压力最低综合分 67.194，五项硬闸门的声明结果为通过；这些数值待 MCDA 输入和 runner 随包提供后复算。S2 在“气候优先”画像下胜出，提示下一阶段仍须强化被动生态基础设施。热浪、云暴、干旱、断网、机器人增量、活动人流、维护缩减和冻融均设明确回退。</section>
 <section class="note"><strong>提交包覆盖：</strong>总览地图 · 三层范围 · 用地分区 · 交通慢行 · 蓝绿公共空间 · 建筑与更新项目 · AI 场景 · 核心指标 · 任务覆盖 · 自检状态 · 来源 · 假设。</section>
 <section class="score"><h2>v1.6 官方时间序列与方案优化</h2><div class="score-grid"><div><span>样本窗口</span><b>2014—2023</b></div><div><span>维度</span><b>4 个等权</b></div><div><span>主观测</span><b>12 项</b></div><div><span>趋势模型</span><b>Theil–Sen</b></div><div><span>推荐方案</span><b>adaptive</b></div></div><figure><img src="../assets/figures/sustainability-timeseries.png" alt="官方年鉴时间序列量化观测"><figcaption>06 / 官方年鉴时间序列：经济、人口、空气与能耗（2014—2023）</figcaption></figure><p class="sources"><a href="assets/sustainability-timeseries.json">原始与派生序列 JSON</a> · <a href="assets/indicator-selection.json">指标筛选与回测 JSON</a> · <a href="assets/model-backtest.json">情景优化 JSON</a></p></section>
 <section class="score"><h2>v1.8 任务 → 证据 → 运营 → 回退</h2><div class="score-grid"><div><span>任务书映射</span><b>3/5/3+2</b></div><div><span>agent 任务</span><b>1–6</b></div><div><span>场景矩阵</span><b>14 行</b></div><div><span>产业测试</span><b>4 个验证窗</b></div><div><span>政策案例</span><b>6 一手来源</b></div><div><span>企业接口</span><b>6 条</b></div><div><span>政策成长卡</span><b>42 张</b></div><div><span>责任/荣誉节点</span><b>4 个</b></div><div><span>建设闸门</span><b>5 道</b></div><div><span>公共使用者镜头</span><b>8 个</b></div><div><span>清权台账</span><b>逐路径</b></div></div><figure><img src="../assets/figures/identity-system.png" alt="身份系统与公共组件"><figcaption>07 / 两条铁路、三个节点、两个切换：身份系统与离线公共组件</figcaption></figure>
