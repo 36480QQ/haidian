@@ -1,0 +1,146 @@
+{
+  "design_depth_matrix": [
+    {
+      "depth_item": "site_analysis",
+      "title_zh": "场地分析",
+      "required_level": "regional",
+      "achieved_level": "regional",
+      "evidence_sections": [
+        "2.1 区位分析",
+        "2.2 交通条件",
+        "2.3 现状土地利用"
+      ],
+      "evidence_layers": [
+        "geojson/boundary.geojson",
+        "geojson/transport_network.geojson"
+      ],
+      "notes": "涵盖区位、交通、土地利用、历史文化四个维度。"
+    },
+    {
+      "depth_item": "concept_design",
+      "title_zh": "概念设计",
+      "required_level": "conceptual",
+      "achieved_level": "conceptual",
+      "evidence_sections": [
+        "3.1 设计理念",
+        "3.2 总体概念",
+        "3.3 AI创新带主题"
+      ],
+      "evidence_layers": [],
+      "notes": "提出'京张智脉'核心概念，融合铁路遗产与AI创新。"
+    },
+    {
+      "depth_item": "land_use_layout",
+      "title_zh": "用地布局",
+      "required_level": "block_group",
+      "achieved_level": "block_group",
+      "evidence_sections": [
+        "4.1 用地布局",
+        "4.2 功能分区"
+      ],
+      "evidence_layers": [
+        "geojson/landuse.geojson"
+      ],
+      "notes": "达到街区-组团级精度，受 ASM-005 限制未达地块级。"
+    },
+    {
+      "depth_item": "building_massing",
+      "title_zh": "建筑体量",
+      "required_level": "massing",
+      "achieved_level": "massing",
+      "evidence_sections": [
+        "5.4 建筑形态",
+        "5.5 风貌控制"
+      ],
+      "evidence_layers": [],
+      "notes": "提供建筑体量与天际线建议方案，限高依据 ASM-004 推定。"
+    },
+    {
+      "depth_item": "transport_network",
+      "title_zh": "交通网络",
+      "required_level": "network",
+      "achieved_level": "network",
+      "evidence_sections": [
+        "5.1 交通系统"
+      ],
+      "evidence_layers": [
+        "geojson/transport_network.geojson"
+      ],
+      "notes": "包含轨道交通、公交、慢行系统三级网络。"
+    },
+    {
+      "depth_item": "green_blue_system",
+      "title_zh": "绿蓝系统",
+      "required_level": "network",
+      "achieved_level": "network",
+      "evidence_sections": [
+        "5.2 绿蓝系统"
+      ],
+      "evidence_layers": [
+        "geojson/green_blue_system.geojson"
+      ],
+      "notes": "绿地率约25%，构建连续生态廊道。"
+    },
+    {
+      "depth_item": "public_space",
+      "title_zh": "公共空间",
+      "required_level": "system",
+      "achieved_level": "system",
+      "evidence_sections": [
+        "5.3 公共空间体系"
+      ],
+      "evidence_layers": [
+        "geojson/public_space.geojson"
+      ],
+      "notes": "公共空间率约15%，覆盖广场、公园、街道三类。"
+    },
+    {
+      "depth_item": "phasing_plan",
+      "title_zh": "分期计划",
+      "required_level": "phased",
+      "achieved_level": "phased",
+      "evidence_sections": [
+        "6.1 分期策略",
+        "6.2 实施时序"
+      ],
+      "evidence_layers": [],
+      "notes": "划分近期、中期、远期三阶段。"
+    },
+    {
+      "depth_item": "ai_scenario",
+      "title_zh": "AI场景",
+      "required_level": "scenario",
+      "achieved_level": "scenario",
+      "evidence_sections": [
+        "5.6 AI场景设计"
+      ],
+      "evidence_layers": [],
+      "notes": "设计12个AI场景，覆盖6类用户画像。"
+    },
+    {
+      "depth_item": "cultural_narrative",
+      "title_zh": "文化叙事",
+      "required_level": "narrative",
+      "achieved_level": "narrative",
+      "evidence_sections": [
+        "2.5 京张铁路遗产",
+        "2.6 文化脉络",
+        "3.3 AI创新带主题"
+      ],
+      "evidence_layers": [],
+      "notes": "以京张铁路百年历史为叙事主线，串联AI创新场景。"
+    },
+    {
+      "depth_item": "operations_plan",
+      "title_zh": "运营计划",
+      "required_level": "operational",
+      "achieved_level": "operational",
+      "evidence_sections": [
+        "6.3 运营策略",
+        "6.4 治理机制"
+      ],
+      "evidence_layers": [],
+      "notes": "提出智慧运营平台与多方协同治理框架。"
+    }
+  ]
+}

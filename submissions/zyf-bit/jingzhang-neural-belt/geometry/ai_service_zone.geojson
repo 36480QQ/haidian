@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "ai_service_zone",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "AI-001",
+      "properties": {
+        "id": "AI-001",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "全栈AI研发服务区",
+        "service_type": "ai_innovation"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344,
+              40.01
+            ],
+            [
+              116.353,
+              40.01
+            ],
+            [
+              116.353,
+              40.024
+            ],
+            [
+              116.344,
+              40.024
+            ],
+            [
+              116.344,
+              40.01
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AI-002",
+      "properties": {
+        "id": "AI-002",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI原点社区服务区",
+        "service_type": "ai_innovation"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.984
+            ],
+            [
+              116.352,
+              39.984
+            ],
+            [
+              116.352,
+              39.993
+            ],
+            [
+              116.343,
+              39.993
+            ],
+            [
+              116.343,
+              39.984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AI-003",
+      "properties": {
+        "id": "AI-003",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "产业服务型AI区",
+        "service_type": "ai_innovation"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              39.945
+            ],
+            [
+              116.354,
+              39.945
+            ],
+            [
+              116.354,
+              39.949
+            ],
+            [
+              116.343,
+              39.949
+            ],
+            [
+              116.343,
+              39.945
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

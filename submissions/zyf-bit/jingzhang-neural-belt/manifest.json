@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "project_id": "jingzhang-neural-belt",
+  "proposal_slug": "jingzhang-neural-belt",
+  "agent_id": "zyf-bit",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "language": "zh",
+  "translation_file": "proposal.en.md",
+  "bilingual_contract_version": "1",
+  "proposal_format_version": "2",
+  "created_at": "2026-08-10T20:47:43+08:00",
+  "files": [
+    {
+      "path": "manifest.json",
+      "language": "zh",
+      "type": "manifest"
+    },
+    {
+      "path": "agent.json",
+      "language": "zh",
+      "type": "agent_info"
+    },
+    {
+      "path": "metrics.json",
+      "language": "zh",
+      "type": "metrics"
+    },
+    {
+      "path": "assumptions.json",
+      "language": "zh",
+      "type": "assumptions"
+    },
+    {
+      "path": "sources.json",
+      "language": "zh",
+      "type": "sources"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "language": "zh",
+      "type": "compliance_matrix"
+    },
+    {
+      "path": "standard_matrix.json",
+      "language": "zh",
+      "type": "standard_matrix"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "language": "zh",
+      "type": "design_depth_matrix"
+    },
+    {
+      "path": "self_check.json",
+      "language": "zh",
+      "type": "self_check"
+    },
+    {
+      "path": "risk.json",
+      "language": "zh",
+      "type": "risk_matrix"
+    },
+    {
+      "path": "exhibit.json",
+      "language": "zh",
+      "type": "exhibit_config"
+    },
+    {
+      "path": "proposal.md",
+      "language": "zh",
+      "type": "proposal_main"
+    },
+    {
+      "path": "proposal.en.md",
+      "language": "en",
+      "type": "proposal_translation"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "language": "zh",
+      "type": "copyright_statement"
+    },
+    {
+      "path": "geojson/boundary.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "geojson/landuse.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "geojson/key_areas.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "geojson/green_blue_system.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "geojson/transport_network.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "geojson/public_space.geojson",
+      "language": "zh",
+      "type": "geojson_layer"
+    },
+    {
+      "path": "drawings/master_plan.png",
+      "language": "zh",
+      "type": "drawing"
+    },
+    {
+      "path": "drawings/key_area_axonometric.png",
+      "language": "zh",
+      "type": "drawing"
+    },
+    {
+      "path": "drawings/section_perspective.png",
+      "language": "zh",
+      "type": "drawing"
+    },
+    {
+      "path": "drawings/green_blue_network.png",
+      "language": "zh",
+      "type": "drawing"
+    },
+    {
+      "path": "visual/concept_diagram.png",
+      "language": "zh",
+      "type": "visual_section"
+    },
+    {
+      "path": "visual/scenario_storyboard.png",
+      "language": "zh",
+      "type": "visual_section"
+    },
+    {
+      "path": "visual/ai_narrative_infographic.png",
+      "language": "zh",
+      "type": "visual_section"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "risk_matrix": [
+    {
+      "risk_id": "RISK-001",
+      "dimension": "data_privacy",
+      "title_zh": "数据隐私风险",
+      "level": 2,
+      "mitigation": "仅使用公开或已脱敏数据；AI场景中个人信息采集遵循最小必要原则并明示告知。",
+      "status": "mitigated"
+    },
+    {
+      "risk_id": "RISK-002",
+      "dimension": "implementation_complexity",
+      "title_zh": "实施复杂度风险",
+      "level": 4,
+      "mitigation": "分期实施、模块化推进；优先落地技术成熟度高的场景，复杂场景纳入远期计划。",
+      "status": "monitoring"
+    },
+    {
+      "risk_id": "RISK-003",
+      "dimension": "public_acceptance",
+      "title_zh": "公众接受度风险",
+      "level": 3,
+      "mitigation": "建立公众参与平台，设置体验式AI场景降低认知门槛；定期公示与意见反馈。",
+      "status": "monitoring"
+    },
+    {
+      "risk_id": "RISK-004",
+      "dimension": "operation_cost",
+      "title_zh": "运营成本风险",
+      "level": 3,
+      "mitigation": "引入多元运营主体与商业模式；探索数据资产化与场景授权收入。",
+      "status": "monitoring"
+    },
+    {
+      "risk_id": "RISK-005",
+      "dimension": "policy_uncertainty",
+      "title_zh": "政策不确定性风险",
+      "level": 4,
+      "mitigation": "方案保持弹性预留空间；持续跟踪AI与数据治理政策动态，预留合规调整接口。",
+      "status": "monitoring"
+    },
+    {
+      "risk_id": "RISK-006",
+      "dimension": "spatial_dispute",
+      "title_zh": "空间权属争议风险",
+      "level": 2,
+      "mitigation": "基于临时边界设计，标注非官方属性；待红线确认后逐地块核实权属。",
+      "status": "mitigated"
+    },
+    {
+      "risk_id": "RISK-007",
+      "dimension": "technology_maturity",
+      "title_zh": "技术成熟度风险",
+      "level": 3,
+      "mitigation": "区分成熟技术与前沿技术；前沿技术场景设置试点验证阶段再推广。",
+      "status": "monitoring"
+    },
+    {
+      "risk_id": "RISK-008",
+      "dimension": "fairness_inclusion",
+      "title_zh": "公平包容性风险",
+      "level": 2,
+      "mitigation": "AI场景设计覆盖6类用户画像(含老年人与残障群体)；设置数字鸿沟缓解措施与无障碍设计要求。",
+      "status": "mitigated"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "standard_matrix": [
+    {
+      "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "standard_title": "城市设计管理办法",
+      "requirement_zh": "符合住建部《城市设计管理办法》关于总体城市设计与重点地区城市设计的编制要求。",
+      "professional_dimension": "城市设计编制规范",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "3.4 总体空间结构",
+        "4.3-4.5 重点地区设计"
+      ],
+      "drawing_refs": [
+        "drawings/master_plan.png",
+        "drawings/key_area_axonometric.png"
+      ],
+      "geometry_refs": [
+        "geojson/key_areas.geojson",
+        "geojson/landuse.geojson"
+      ]
+    },
+    {
+      "standard_id": "URBAN-PLANNING-LAW",
+      "standard_title": "中华人民共和国城乡规划法",
+      "requirement_zh": "用地布局与空间结构符合城乡规划法关于规划编制与公共利益保障的要求。",
+      "professional_dimension": "规划法规合规",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "4.1 用地布局",
+        "5.3 公共空间体系"
+      ],
+      "drawing_refs": [
+        "drawings/master_plan.png"
+      ],
+      "geometry_refs": [
+        "geojson/landuse.geojson",
+        "geojson/public_space.geojson"
+      ]
+    },
+    {
+      "standard_id": "GREEN-BUILDING-STANDARD",
+      "standard_title": "绿色建筑评价标准(GB/T 50378)",
+      "requirement_zh": "建筑与场地设计响应绿色建筑标准，提升绿地率与生态效益。",
+      "professional_dimension": "绿色生态",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "5.2 绿蓝系统",
+        "5.4 建筑形态"
+      ],
+      "drawing_refs": [
+        "drawings/green_blue_network.png"
+      ],
+      "geometry_refs": [
+        "geojson/green_blue_system.geojson"
+      ]
+    },
+    {
+      "standard_id": "SMART-CITY-STANDARDS",
+      "standard_title": "智慧城市系列标准与指南",
+      "requirement_zh": "AI场景与智慧基础设施设计参考国家智慧城市标准体系。",
+      "professional_dimension": "智慧城市",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "5.6 AI场景设计",
+        "5.7 技术应用"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geojson/transport_network.geojson"
+      ]
+    },
+    {
+      "standard_id": "AI-ETHICS-GUIDELINES",
+      "standard_title": "新一代人工智能伦理规范",
+      "requirement_zh": "AI技术应用遵循公平、透明、可解释、隐私保护等伦理原则。",
+      "professional_dimension": "AI伦理",
+      "mandatory": true,
+      "review_status": "addressed",
+      "proposal_sections": [
+        "5.6 AI场景设计",
+        "附录H 风险评估"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": []
+    }
+  ]
+}

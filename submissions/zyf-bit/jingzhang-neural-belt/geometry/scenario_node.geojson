@@ -1,0 +1,206 @@
+{
+  "type": "FeatureCollection",
+  "name": "scenario_node",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SN-001",
+      "properties": {
+        "id": "SN-001",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI+交通信号优化试点",
+        "scenario_id": "ai_traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          40.012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-002",
+      "properties": {
+        "id": "SN-002",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "无人配送测试走廊",
+        "scenario_id": "robot_delivery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          40.015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-003",
+      "properties": {
+        "id": "SN-003",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI+医疗诊断辅助点",
+        "scenario_id": "ai_healthcare"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          39.987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-004",
+      "properties": {
+        "id": "SN-004",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI+教育个性化试点",
+        "scenario_id": "ai_education"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-005",
+      "properties": {
+        "id": "SN-005",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "智能导览服务点",
+        "scenario_id": "ai_guide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.344,
+          39.946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-006",
+      "properties": {
+        "id": "SN-006",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI+环境监测点",
+        "scenario_id": "ai_env"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35,
+          39.948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-007",
+      "properties": {
+        "id": "SN-007",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "智能安防试点",
+        "scenario_id": "ai_security"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.347,
+          40.02
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-008",
+      "properties": {
+        "id": "SN-008",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "AI+能源管理点",
+        "scenario_id": "ai_energy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.351,
+          40.018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-009",
+      "properties": {
+        "id": "SN-009",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "公共空间交互点",
+        "scenario_id": "ai_public"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          39.986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SN-010",
+      "properties": {
+        "id": "SN-010",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "企业服务共创点",
+        "scenario_id": "enterprise_service"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.346,
+          39.947
+        ]
+      }
+    }
+  ]
+}

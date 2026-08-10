@@ -1,0 +1,617 @@
+{
+  "compliance_matrix": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "区位与交通条件分析",
+      "mandatory": true,
+      "report_sections": [
+        "2.1 区位分析",
+        "2.2 交通条件"
+      ],
+      "geojson_layers": [
+        "geojson/boundary.geojson",
+        "geojson/transport_network.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm"
+      ],
+      "drawings": [
+        "drawings/master_plan.png"
+      ],
+      "visual_sections": [
+        "visual/concept_diagram.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-OSM",
+        "SRC-BJ-THREE-AREAS-WINGS"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "现状土地利用与空间特征",
+      "mandatory": true,
+      "report_sections": [
+        "2.3 现状土地利用",
+        "2.4 空间特征"
+      ],
+      "geojson_layers": [
+        "geojson/landuse.geojson",
+        "geojson/boundary.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "building_footprint_area_sqm"
+      ],
+      "drawings": [
+        "drawings/master_plan.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-HAIDIAN-1X1",
+        "SRC-OSM"
+      ],
+      "assumption_ids": [
+        "ASM-005",
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "历史文化与京张铁路遗产脉络",
+      "mandatory": true,
+      "report_sections": [
+        "2.5 京张铁路遗产",
+        "2.6 文化脉络"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [
+        "drawings/section_perspective.png"
+      ],
+      "visual_sections": [
+        "visual/ai_narrative_infographic.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-BJ-THREE-AREAS-WINGS"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "FIGURE_COMPLETENESS"
+      ]
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "设计理念与总体概念",
+      "mandatory": true,
+      "report_sections": [
+        "3.1 设计理念",
+        "3.2 总体概念"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [
+        "visual/concept_diagram.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "FIGURE_COMPLETENESS"
+      ]
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "AI创新带主题诠释",
+      "mandatory": true,
+      "report_sections": [
+        "3.3 AI创新带主题"
+      ],
+      "geojson_layers": [],
+      "metrics": [
+        "ai_scenario_count",
+        "ai_landmark_count"
+      ],
+      "drawings": [],
+      "visual_sections": [
+        "visual/ai_narrative_infographic.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "COMPLIANCE_COVERAGE"
+      ]
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "总体空间结构",
+      "mandatory": true,
+      "report_sections": [
+        "3.4 总体空间结构"
+      ],
+      "geojson_layers": [
+        "geojson/landuse.geojson",
+        "geojson/key_areas.geojson"
+      ],
+      "metrics": [
+        "key_area_count"
+      ],
+      "drawings": [
+        "drawings/master_plan.png"
+      ],
+      "visual_sections": [
+        "visual/concept_diagram.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "ASM-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREA_COUNT",
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "用地布局与功能分区",
+      "mandatory": true,
+      "report_sections": [
+        "4.1 用地布局",
+        "4.2 功能分区"
+      ],
+      "geojson_layers": [
+        "geojson/landuse.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "building_footprint_area_sqm"
+      ],
+      "drawings": [
+        "drawings/master_plan.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-HAIDIAN-1X1"
+      ],
+      "assumption_ids": [
+        "ASM-005",
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "三大重点地区设计",
+      "mandatory": true,
+      "report_sections": [
+        "4.3 重点地区一",
+        "4.4 重点地区二",
+        "4.5 重点地区三"
+      ],
+      "geojson_layers": [
+        "geojson/key_areas.geojson"
+      ],
+      "metrics": [
+        "key_area_count",
+        "ai_landmark_count"
+      ],
+      "drawings": [
+        "drawings/key_area_axonometric.png",
+        "drawings/section_perspective.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "KEY_AREA_COUNT",
+        "FIGURE_COMPLETENESS"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "交通系统设计",
+      "mandatory": true,
+      "report_sections": [
+        "5.1 交通系统"
+      ],
+      "geojson_layers": [
+        "geojson/transport_network.geojson"
+      ],
+      "metrics": [],
+      "drawings": [
+        "drawings/master_plan.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-OSM",
+        "SRC-HAIDIAN-1X1"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "绿蓝系统与生态网络",
+      "mandatory": true,
+      "report_sections": [
+        "5.2 绿蓝系统"
+      ],
+      "geojson_layers": [
+        "geojson/green_blue_system.geojson"
+      ],
+      "metrics": [
+        "green_ratio"
+      ],
+      "drawings": [
+        "drawings/green_blue_network.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-HAIDIAN-1X1"
+      ],
+      "assumption_ids": [
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "公共空间体系",
+      "mandatory": true,
+      "report_sections": [
+        "5.3 公共空间体系"
+      ],
+      "geojson_layers": [
+        "geojson/public_space.geojson"
+      ],
+      "metrics": [
+        "public_space_ratio"
+      ],
+      "drawings": [
+        "drawings/section_perspective.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-HAIDIAN-1X1"
+      ],
+      "assumption_ids": [
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "FIGURE_COMPLETENESS"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "建筑形态与风貌控制",
+      "mandatory": true,
+      "report_sections": [
+        "5.4 建筑形态",
+        "5.5 风貌控制"
+      ],
+      "geojson_layers": [],
+      "metrics": [
+        "building_footprint_area_sqm",
+        "floor_area_ratio"
+      ],
+      "drawings": [
+        "drawings/key_area_axonometric.png"
+      ],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-HAIDIAN-1X1"
+      ],
+      "assumption_ids": [
+        "ASM-003",
+        "ASM-004"
+      ],
+      "self_check_ids": [
+        "FIGURE_COMPLETENESS"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "AI场景与技术应用",
+      "mandatory": true,
+      "report_sections": [
+        "5.6 AI场景设计",
+        "5.7 技术应用"
+      ],
+      "geojson_layers": [],
+      "metrics": [
+        "ai_scenario_count",
+        "user_persona_count",
+        "ai_landmark_count"
+      ],
+      "drawings": [],
+      "visual_sections": [
+        "visual/scenario_storyboard.png"
+      ],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "COMPLIANCE_COVERAGE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "成果文件完整性",
+      "mandatory": true,
+      "report_sections": [
+        "附录A 成果清单"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "PACKAGE_STATE",
+        "FIGURE_COMPLETENESS",
+        "HTML_OFFLINE",
+        "PDF_NON_ZERO"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "设计说明文本",
+      "mandatory": true,
+      "report_sections": [
+        "全文"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "PACKAGE_STATE",
+        "BILINGUAL_CONTRACT"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "图纸成果",
+      "mandatory": true,
+      "report_sections": [
+        "附录B 图纸目录"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [
+        "drawings/master_plan.png",
+        "drawings/key_area_axonometric.png",
+        "drawings/section_perspective.png",
+        "drawings/green_blue_network.png"
+      ],
+      "visual_sections": [
+        "visual/concept_diagram.png",
+        "visual/scenario_storyboard.png",
+        "visual/ai_narrative_infographic.png"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "FIGURE_COMPLETENESS",
+        "HTML_OFFLINE",
+        "PDF_NON_ZERO"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "地理信息数据",
+      "mandatory": true,
+      "report_sections": [
+        "附录C 地理信息数据"
+      ],
+      "geojson_layers": [
+        "geojson/boundary.geojson",
+        "geojson/landuse.geojson",
+        "geojson/key_areas.geojson",
+        "geojson/green_blue_system.geojson",
+        "geojson/transport_network.geojson",
+        "geojson/public_space.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count"
+      ],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-PROVISIONAL-BOUNDARY",
+        "SRC-HAIDIAN-1X1",
+        "SRC-OSM"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY",
+        "SOURCE_TRACING"
+      ]
+    },
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "智能体身份与能力说明",
+      "mandatory": true,
+      "report_sections": [
+        "附录D 智能体信息"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "PACKAGE_STATE"
+      ]
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "数据来源与溯源",
+      "mandatory": true,
+      "report_sections": [
+        "附录E 数据来源"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-AGENT-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARY",
+        "SRC-HAIDIAN-1X1",
+        "SRC-BJ-THREE-AREAS-WINGS",
+        "SRC-NBS-STATS",
+        "SRC-OSM"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "SOURCE_TRACING"
+      ]
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "假设与限制声明",
+      "mandatory": true,
+      "report_sections": [
+        "附录F 假设与限制"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "ASM-001",
+        "ASM-002",
+        "ASM-003",
+        "ASM-004",
+        "ASM-005",
+        "ASM-006"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST"
+      ]
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "自检报告",
+      "mandatory": true,
+      "report_sections": [
+        "附录G 自检报告"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "LAND_USE_TOPOLOGY",
+        "KEY_AREA_COUNT",
+        "FIGURE_COMPLETENESS",
+        "HTML_OFFLINE",
+        "PDF_NON_ZERO",
+        "COMPLIANCE_COVERAGE",
+        "SOURCE_TRACING",
+        "BILINGUAL_CONTRACT",
+        "PACKAGE_STATE"
+      ]
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "风险评估",
+      "mandatory": true,
+      "report_sections": [
+        "附录H 风险评估"
+      ],
+      "geojson_layers": [],
+      "metrics": [],
+      "drawings": [],
+      "visual_sections": [],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "COMPLIANCE_COVERAGE"
+      ]
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "展览配置",
+      "mandatory": true,
+      "report_sections": [
+        "附录I 展览配置"
+      ],
+      "geojson_layers": [],
+      "metrics": [
+        "ai_scenario_count"
+      ],
+      "drawings": [],
+      "visual_sections": [
+        "visual/scenario_storyboard.png"
+      ],
+      "source_ids": [
+        "SRC-AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": [
+        "PACKAGE_STATE"
+      ]
+    }
+  ]
+}

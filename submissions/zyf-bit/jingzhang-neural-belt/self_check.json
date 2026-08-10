@@ -1,0 +1,78 @@
+{
+  "overall_status": "PASS",
+  "total_checks": 10,
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "title_zh": "边界可信度检查",
+      "status": "pass",
+      "detail": "通过。使用临时边界已明确标注(ASM-001/ASM-002)，所有面积指标标注为 provisional/estimated。",
+      "warning": "边界为临时推定，待官方红线确认后需重新校核。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "title_zh": "用地拓扑完整性检查",
+      "status": "pass",
+      "detail": "通过。landuse.geojson 地块之间无拓扑冲突，覆盖场地全域。",
+      "warning": null
+    },
+    {
+      "check_id": "KEY_AREA_COUNT",
+      "title_zh": "重点地区数量检查",
+      "status": "pass",
+      "detail": "通过。重点地区数量为3，符合征集要求。",
+      "warning": null
+    },
+    {
+      "check_id": "FIGURE_COMPLETENESS",
+      "title_zh": "图纸完整性检查",
+      "status": "pass",
+      "detail": "通过。总平面图、轴测图、剖面透视、绿蓝网络图及可视化段图均齐备。",
+      "warning": null
+    },
+    {
+      "check_id": "HTML_OFFLINE",
+      "title_zh": "HTML离线可用性检查",
+      "status": "pass",
+      "detail": "通过。HTML成果可离线打开，无外部资源依赖。",
+      "warning": null
+    },
+    {
+      "check_id": "PDF_NON_ZERO",
+      "title_zh": "PDF非空检查",
+      "status": "pass",
+      "detail": "通过。PDF文件大小大于0，内容完整。",
+      "warning": null
+    },
+    {
+      "check_id": "COMPLIANCE_COVERAGE",
+      "title_zh": "合规覆盖度检查",
+      "status": "pass",
+      "detail": "通过。所有 mandatory requirement_id 均在compliance_matrix.json 中有对应条目。",
+      "warning": null
+    },
+    {
+      "check_id": "SOURCE_TRACING",
+      "title_zh": "数据溯源检查",
+      "status": "pass",
+      "detail": "通过。所有 GeoJSON 图层与关键指标均关联至sources.json 中的来源条目。",
+      "warning": null
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "title_zh": "双语契约检查",
+      "status": "pass",
+      "detail": "通过。proposal.md(中文)与 proposal.en.md(英文)结构一致，bilingual_contract_version=1。",
+      "warning": null
+    },
+    {
+      "check_id": "PACKAGE_STATE",
+      "title_zh": "包状态检查",
+      "status": "pass",
+      "detail": "通过。manifest.json 中 package_state=ready_for_review，所有必需文件齐备。",
+      "warning": null
+    }
+  ]
+}
