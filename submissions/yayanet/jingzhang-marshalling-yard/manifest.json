@@ -253,8 +253,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "data_confidence_note": "边界与三处重点区为 provisional 几何（official_boundary=false），置信度按保守口径登记为 medium；官方 polygon 发布并整链重算后应复核。"
   }
 }
