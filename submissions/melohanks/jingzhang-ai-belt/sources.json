@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Site package version 0.1.0; missing official boundary polygons and statutory controls."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Formal claims rely only on formal-ready sources; background/provisional material is labelled as such."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Derived navigation material; facts must return to registered originals."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Inferred from announcement textual extents and approximate areas; not an official redline; provisional_rough precision.",
+      "geometry_role": "provisional_constraint",
+      "official_boundary": false
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Rectangular placeholders by announcement order and approximate area; no official extents; must be replaced with official polygons.",
+      "geometry_role": "provisional_constraint",
+      "official_boundary": false
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "retrieval_date": "2026-06-05",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_date": "2026-05-09",
+      "limitations": "Announcement provides textual extents and approximate areas only; no downloadable GIS polygons."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "All agent spatial suggestions are conceptual suggestions; not statutory planning or government conclusions."
+    },
+    {
+      "id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+      "path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
+      "source_type": "official_public",
+      "usage": "Land-use classification codes used in land_use.geojson (0802, 0804, 05, 0701, 0702, 1401, 1402, 1403, 16).",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Project subset; full official code table must be imported before final statutory use."
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
+      "source_type": "official_public",
+      "usage": "Urban design coordination of character, public space, and building layout.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Local reference snapshot; official current text prevails."
+    },
+    {
+      "id": "MOHURD-CONTROL-DETAILED-PLANNING",
+      "path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
+      "source_type": "official_public",
+      "usage": "Regulatory-planning-depth distinction between known conditions, design suggestions, and pending confirmation.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Local reference snapshot; statutory controls pending official data."
+    },
+    {
+      "id": "MOHURD-ARCH-DESIGN-DEPTH-2016",
+      "path": "brief/site-package/standards/references/mohurd-arch-design-depth-2016.md",
+      "source_type": "official_public",
+      "usage": "Architectural design depth requirements; applied as deepening reminder pending official attachments.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "To be activated after official files are obtained."
+    },
+    {
+      "id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "path": "brief/site-package/standards/references/generative-ai-interim-measures.md",
+      "source_type": "official_public",
+      "usage": "Data minimization, explainability, and human review boundaries for AI-assisted scenarios.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Local reference snapshot."
+    },
+    {
+      "id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "path": "brief/site-package/standards/references/barrier-free-environment-law.md",
+      "source_type": "official_public",
+      "usage": "Accessibility requirements informing slow-mobility and public-space design.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Local reference snapshot."
+    },
+    {
+      "id": "ELDERLY-SMART-TECH-PLAN",
+      "path": "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md",
+      "source_type": "official_public",
+      "usage": "Age-friendly smart-city service considerations in scenario design.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Local reference snapshot."
+    },
+    {
+      "id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+      "path": "brief/site-package/standards/references/agent-open-call-taskbook-0518.md",
+      "source_type": "user_provided_cleared",
+      "usage": "Standard snapshot of the agent open-call taskbook referenced in standard_matrix.",
+      "retrieval_date": "2026-08-10",
+      "limitations": "Agent taskbook requirements are conceptual suggestions."
+    }
+  ]
+}
