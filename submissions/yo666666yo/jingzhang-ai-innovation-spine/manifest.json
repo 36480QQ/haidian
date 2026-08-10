@@ -207,7 +207,7 @@
     },
     {
       "path": "proposal.en.md",
-      "role": "supporting_text",
+      "role": "narrative",
       "required": true,
       "sha256": "84a90a2d36f27d2b843abda0739ed9e35b48990a7317489075c90adb1560c76e",
       "language": "en",
@@ -222,13 +222,13 @@
     },
     {
       "path": "report/copyright_statement.md",
-      "role": "supporting_text",
+      "role": "copyright_statement",
       "required": true,
       "sha256": "d41e80cedaaa8e1c7ace489321a813e458f4fbfdaa54bee09993b16b07aa7002"
     },
     {
       "path": "report/narrative.md",
-      "role": "supporting_text",
+      "role": "narrative",
       "required": false,
       "sha256": "d18b88027e7f31fd38f985ac7e7ac42c2c9255af67849538a368d69352ad9316"
     },
@@ -251,7 +251,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "41e057fab6abded114ecc1b313ccc46bc13aae2cbbb49b8dfce48fd4c78d7867"
+      "sha256": "5e45b90928b2db7a6ee5e73c1a9f933711367d878caa015e2b4f05ff01ce9983"
     },
     {
       "path": "sources.json",
@@ -287,8 +287,10 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
-    "known_blockers": [],
-    "data_confidence": "medium: provisional site and key-area geometry; official controls remain unknown"
+    "self_checked": true,
+    "known_blockers": [
+      "OFFICIAL_CONTROLS=unknown (major): official boundary, ownership, regulatory controls, municipal, traffic, fire, and heritage data remain pending. The package is limited to intake and structural review; formal scoring and acceptance require a maintainer data-gate decision."
+    ],
+    "data_confidence": "medium"
   }
 }

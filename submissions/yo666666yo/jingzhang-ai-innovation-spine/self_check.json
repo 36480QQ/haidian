@@ -48,7 +48,13 @@
       "result": "unknown",
       "severity": "major",
       "target": "geometry/constraints.geojson",
-      "message": "Official boundary, ownership, regulatory controls, municipal capacity, traffic, fire, and heritage attachments remain pending professional confirmation."
+      "message": "Official boundary, ownership, regulatory controls, municipal capacity, traffic, fire, and heritage attachments remain pending professional confirmation. Structural self-checks pass, but the package is limited to intake and structural review; formal scoring and acceptance require a maintainer data-gate decision.",
+      "suggested_fix": "Obtain and register the official attachments, replace provisional inputs, recalculate dependent geometry and metrics, regenerate all artifacts, and rerun the full review suite.",
+      "readiness_boundary": {
+        "current_scope": "intake_and_structural_review_only",
+        "formal_scoring": "maintainer_data_gate_decision_required",
+        "acceptance": "maintainer_data_gate_decision_required"
+      }
     }
   ]
 }
