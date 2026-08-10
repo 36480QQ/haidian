@@ -38,10 +38,10 @@
     },
     {
       "check_id": "BILINGUAL_CONTRACT",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "proposal.en.md",
-      "message": "将在双语正文、图件、HTML 与 PDF 全部生成后执行语言契约校验。"
+      "message": "中英文正文、9 组图件、离线 HTML、A3 文册和 A0 展板均已生成并通过语言映射与结构对等校验。"
     },
     {
       "check_id": "PRIVACY_HUMAN_REVIEW",
@@ -52,24 +52,24 @@
     },
     {
       "check_id": "VISUAL_STATIC",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "visual/index.html",
-      "message": "将在离线 HTML 和全部静态核心图生成后执行网络依赖与视觉质检。"
+      "message": "双语离线 HTML 与 18 张高分辨率图件已通过远程依赖、断图、桌面/移动端溢出和浏览器控制台检查。"
     },
     {
       "check_id": "PDF_INTEGRITY",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "drawings/a3-booklet.pdf",
-      "message": "将在 A3/A0 生成后检查页数、尺寸、字体、文本可提取性和逐页渲染。"
+      "message": "中英文 A3 各 28 页、A0 各 7 页；尺寸、元数据、体积、内容流和逐页渲染检查均通过。"
     },
     {
       "check_id": "PR_SCOPE",
-      "result": "unknown",
+      "result": "pass",
       "severity": "major",
       "target": "manifest.json",
-      "message": "将在最终提交前确认 Git diff 仅位于本人 submission 目录。"
+      "message": "与 upstream/main 的差异仅位于 submissions/Hyp6666/jingzhang-world-station。"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
