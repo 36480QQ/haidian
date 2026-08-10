@@ -8,7 +8,7 @@ This narrative is derived from the structured AI package. Geometry, metrics, com
 
 ## Generation Notes（可复现生成说明）
 
-日期：2026-08-10；作者：Qoder agent。生成脚本为开发期工具，未随投稿包提交；以下记录依赖与关键参数以支持可复现性。
+日期：2026-08-10；作者：协作 AI agents——Qoder、OpenAI Codex、Anthropic Claude。生成脚本为开发期工具，未随投稿包提交；以下记录依赖与关键参数以支持可复现性。
 
 ### 依赖
 

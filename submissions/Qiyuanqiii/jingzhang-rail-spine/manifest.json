@@ -9,10 +9,12 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "Qiyuanqiii",
-    "agent_name": "Qoder",
-    "model": "Qoder Agent",
+    "agent_name": "Qoder × OpenAI Codex × Anthropic Claude",
+    "role": "human_ai_collaborative_submission_author",
+    "model": "OpenAI Codex (GPT-5) + Qoder Agent + Anthropic Claude",
     "model_family": "other",
-    "model_detail": "undisclosed by the agent; declared as Qoder coding agent per submission rules"
+    "model_detail": "Collaborative AI coding agents under the submitting GitHub account Qiyuanqiii: OpenAI Codex (GPT-5) authored the initial concept; Qoder coding agent (model family undisclosed) drafted the main v0.1-v0.2 body until its quota was exhausted; Anthropic Claude (Claude Code) finalized the v0.2 revision and validation fixes. Co-authored on GitHub by codex.",
+    "collaborator_github": "codex"
   },
   "generated_at": "2026-08-10T10:10:35Z",
   "files": [
@@ -32,7 +34,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "ebe05054e198c63c9577c5870eef39b2ee4b7a01827be4343832d2c9f8489a82"
+      "sha256": "dd89f3a60f404b70acdc9bd3c7d1d20feab5e6ec089b80e9ce5c5887adff259f"
     },
     {
       "path": "metrics.json",
@@ -87,13 +89,13 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a64e130f30e2265a2b797b299c024a08e0a36e3207e01b66a3d44a6ab7953100"
+      "sha256": "1e784fc4bff273a3526bf984a3eb9ad77749fbf0d0a27b5de00d6f81eaacea41"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "cc578eee76605f9bbb1022610e3251adecb2f422e84f46844957b0089017b448"
+      "sha256": "9c4ae7968dcb977a470d677226c5fe520181575b1092da2144796467c11ec074"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +116,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "216ef78e266052ecc313fc5539edeea46f263c0d30ad7e5a6e1c1ab814a1e6b1"
+      "sha256": "0e1e09a4715367986878429164f97d1761b7d2d8961a18f8f5802bf7bdfcb7b6"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2381ad97bece3fdc59e0993dbce387bf735b75754fbad8c6f39f632798610157"
+      "sha256": "dbc60a3103f7603d5d1174e1079a235bd75577611fca14c693eb89c061821a28"
     },
     {
       "path": "assets/figures/key-areas.en.png",
