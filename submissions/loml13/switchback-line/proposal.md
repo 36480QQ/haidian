@@ -123,7 +123,7 @@ AI 全栈自主创新体系需要把"土地、空间、资金、人才、算力�
 
 ### 大钟寺AI产业集聚区——始发客厅（约 72.0 ha，临时 polygon 复算 [metric:key_area_dazhongsi_sqm]）
 
-定位：智能原生新业态的展示与交易客厅，是公众进入"人字线"的始发站。空间结构：南门户广场 [data:geometry/public_space.geojson#PS-001] 与折返剧场 [data:geometry/public_space.geojson#PS-002] 组成到达序列；商业服务业用地（05，[metric:land_use_area_05_sqm]）承载智算消费实验室与 AI 原生零售；文化用地（0803，[metric:land_use_area_0803_sqm]）联动大钟寺古钟博物馆，形成"古钟—智算"的时间对话。交通慢行：大钟寺站接驳动线（概念）[data:geometry/roads.geojson#RD-010] 与缝合廊道 01、02 号。AI 场景：智算消费实验室（SC-07）、轨道接驳 MaaS（SC-10）。实施风险：大钟寺现状商业权属复杂，更新以协商式微更新为概念方向，不给出地块级拆改结论。
+定位：智能原生新业态的展示与交易客厅，是公众进入"人字线"的始发站。空间结构：南门户广场 [data:geometry/public_space.geojson#PS-001] 与折返剧场 [data:geometry/public_space.geojson#PS-002] 组成到达序列；商业服务业用地（05，[metric:land_use_area_05_sqm]）承载智算消费实验室与 AI 原生零售；文化用地（0803，[metric:land_use_area_0803_sqm]）联动大钟寺古钟博物馆，形成"古钟—智算"的时间对话。交通慢行：大钟寺站接驳动线（概念）[data:geometry/roads.geojson#RD-010] 与缝合廊道 01、02 号。AI 场景：智算消费实验室（SC-07）、轨道接驳 MaaS（SC-10）。实施风险：大钟寺现状商业权属复杂，更新以协商式微更新为概念方向，不给出地块级拆改结论。**位置披露**：本节所依托的临时 polygon（PROV-KEY-003）经社区复核质心位于北京北站一带、距大钟寺地铁站约 2.26 km，尚未完成站点锚定（[source:ISSUE-1029]；维护者已在 PR #1036 澄清其占位语义），因此本节全部空间结论为方向性概念，官方边界或锚定关系发布后需统一重算。
 
 ![三处重点区域索引与设计任务图](assets/figures/key-areas.png)
 

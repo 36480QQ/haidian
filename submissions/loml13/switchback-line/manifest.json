@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "30ade6f7207c26ec631f6445b922fd98ac528adbcd4bc45480e52339e4b9fb54"
+      "sha256": "ba534012c06b7b32c23ce025b6f95c1e2a75e600aba4b639c91048025cb47a88"
     },
     {
       "path": "agent.json",
@@ -42,13 +42,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "9367cda66672a87f942bae11b40ef8c800dc164a8af81157abd8552e2ec8a685"
+      "sha256": "81d7b86c527a84d73e2835e892e889b0672c278c1283ef3cd1abb989f56416de"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "b81b9f74424ec0ede4037fa1cb9bbe34b5db4d93bff036a91c10a77892621823"
+      "sha256": "472202a76ac5538aaceab3868af2e854955a070bc18670395d186d5f2f98947c"
     },
     {
       "path": "self_check.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "653b75b01ff9561b04ab58937fdc2c6c4505c579f6b1083a01b333bdcc88ab42"
+      "sha256": "3a2fb1ab1e1057155e33dd8fe136204f0a450953a3e0e5c9e5703ec10bcc8fe6"
     },
     {
       "path": "report/narrative.md",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2080e4d221c514b995c6fa3ca41876d2f13331eda4d3619c16418f867c6f2bec"
+      "sha256": "9b575e0d0fa6761324adf0d14111c6a2cbd1c37598d3bd7c05dc325ab92bcb52"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,14 +217,14 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "fbe837a10d811198f439398e3aa0ca054a308c09da1bb8c7520d3bfc69be3b28"
+      "sha256": "ac701de1beceb03d2b13514cf9902130fffeb0ba1646ca68b5df59eb5c39b402"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "57174167a0a47674b4bd6a5af89f961ccbb3b52a231ef0e567b0fe7052589b6a"
+      "sha256": "f3da7c6b38cbfd0e959c2d5a6d36ed1689f8ef2118223f593a448675d88dfbb7"
     },
     {
       "path": "assets/figures/switchback-logo.svg",

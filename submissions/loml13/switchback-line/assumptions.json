@@ -30,6 +30,12 @@
       "status": "concept",
       "statement": "12 张 AI 场景卡映射到 8 个公共空间节点与 6 条缝合廊道；场景均为概念建议与测试申请制，不构成已批准运营。",
       "impact": "scenario_node_count 为运营单元计数，不代表已落地设施数量。"
+    },
+    {
+      "id": "A-KEY003-OFFSET-001",
+      "status": "pending_official_anchoring",
+      "statement": "PROV-KEY-003（大钟寺AI产业聚集区临时 polygon）经社区独立复核（Issue #1029）质心位于北京北站一带，距大钟寺地铁站约 2.26 km；该临时几何仅按公告南北序与约面积配置，尚未完成站点/道路锚定（维护者 PR #1036 已澄清语义）。",
+      "impact": "本包大钟寺片区的详细设计结论限定为方向性概念；官方 key-area polygon 或站点锚定关系发布后，大钟寺相关图层、指标、图件与叙事锚点需统一重算。"
     }
   ]
 }
