@@ -112,48 +112,51 @@ code {
 <main>
 <section class="hero">
 <h1>林轨 / Forest Rail</h1>
-<p class="summary">京张遗址走廊大钟寺段的林下动线方案：保留锈轨做引导，树冠覆盖建筑，AI 调度节点开闭与概念短驳。不做科技秀场，做能走、能坐、能安静工作的城市森林。</p>
+<p class="summary">把京张遗址公园接到大钟寺的日常：锈轨引导慢行，公园里设共用林下工位；短驳只作概念。不另造绿廊，不办科技秀场。</p>
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
 <h1>林轨 / Forest Rail</h1>
-<blockquote><p>大钟寺不做科技秀场，做 AI 老巢的城市森林——楼在树下，人在林中，铁轨穿林而生锈，望出去是自然。</p></blockquote>
-<p>本方案的名字叫「林轨」。两个字各管一件事：</p>
+<p>京张铁路遗址公园已经把铁轨留在了城里：有人跑步，有人推童车，有人沿轨散步。本方案不重新发明这条公园，也不把它做成科技秀场。问的是另一件事——<strong>大钟寺这一端怎么接进公园，人出站之后往哪走、在哪停、能不能坐下来安静做事</strong> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
+<p>回答叫「林轨」：</p>
 <ul>
-<li><strong>林</strong>：在大钟寺片区种足够多、冠幅够大的乔木，让建筑屋顶低于树冠。人在室内望出去看到的是树干和树叶，不是对面的玻璃幕墙。</li>
-<li><strong>轨</strong>：接续京张铁路遗址走廊的叙事，在片区内保留或重置铁轨作为地面引导线。轨条生锈，人走在轨间的木栈道和石粉路面上。重要节点之间，概念上保留低速短驳通行的可能。</li>
+<li><strong>林</strong>：大钟寺段按公园做——修剪草坪、疏林、树冠压住楼顶；望出去是树，不是对面幕墙。</li>
+<li><strong>轨</strong>：锈轨只做引导（眼睛跟着走），轨间铺木栈或石粉；重要节点之间，概念上保留低速短驳，与步行分区。</li>
 </ul>
-<p>这两件事合在一起，构成一条穿过树林的动线。动线以外的地方，人怎么走还怎么走，路网不动。</p>
+<blockquote><p>一句话：楼在树下，人在公园里，铁轨生锈给人看方向——望出去是自然。</p></blockquote>
+<p><strong>本方案不做的事</strong>：全区楼宇总控、网红打卡装置、灯光秀、把绿化条当成公园、把共用工位做成私人舱。</p>
+<p>动线只加一条轨导走廊。走廊以外，路网怎么走还怎么走。</p>
 <h2>设计依据与资料清单</h2>
 <p>本方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup>，以 <code>brief/site-package/</code> 中登记的临时边界、重点区域和指标范围为机器可读依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>。</p>
 <p>当前采用 provisional boundary（<code>geometry/site_boundary.geojson</code>、<code>geometry/key_areas.geojson</code>），标注 <code>provisional_constraint</code>、<code>official_boundary=false</code>。正式边界发布后，所有空间数据、指标和图纸需要重新计算。这个限制不阻断内容评分，但正文中涉及面积、比例和空间位置的结论只能作为可讨论、可替换的设计参考。</p>
 <p>资料登记表（<code>data/source_registry.json</code>）登记 formal 可用资料 7 条、背景资料 1 条、provisional-only 资料 1 条。背景和 provisional 资料不升级为法定依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup>。</p>
+<p>包内权威顺序：GeoJSON → metrics → 三矩阵 → sources/assumptions/self_check → proposal.md → 图 → HTML → PDF。概念示意不能替代证据图。</p>
 <figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="资料证据链与提交包关系图"><figcaption>资料证据链与提交包关系图</figcaption></figure>
 <h2>三层范围工作框架</h2>
 <p>方案按公告三个层次组织 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup>：</p>
-<div class="proposal-table"><table><thead><tr><th>层级</th><th>面积</th><th>林轨在这层做什么</th></tr></thead><tbody><tr><td>统筹研究（43.6 km²）</td><td>AI 产业生态与城市形态判断</td><td>确认京张走廊是组织主轴，林轨概念从遗址公园南端（大钟寺）向北延伸的可能性</td></tr><tr><td>总体设计（11.4 km²）</td><td>遗址公园周边城市更新框架</td><td>轨导动线串联三处重点区，树冠覆盖作为风貌控制手段，软铺慢行替代硬质铺装</td></tr><tr><td>重点区域（368.4 ha）</td><td>三处详细设计</td><td>大钟寺片区落实城市森林组件：树冠层、轨径、软铺、林下办公、锈</td></tr></tbody></table></div>
-<p>三层不割裂。统筹研究决定轨导动线的走向逻辑，总体设计把动线落到用地和道路图层，重点区域验证组件在地块上能不能放下。</p>
+<div class="proposal-table"><table><thead><tr><th>层级</th><th>面积</th><th>林轨在这层做什么</th></tr></thead><tbody><tr><td>统筹研究（43.6 km²）</td><td>AI 产业生态与城市形态判断</td><td>确认京张走廊是组织主轴；林轨从遗址公园南端（大钟寺）向北延伸的可能</td></tr><tr><td>总体设计（11.4 km²）</td><td>遗址公园周边城市更新框架</td><td>轨导动线串联三处重点区；公园慢行与软铺代替硬质铺装；树冠作风貌控制</td></tr><tr><td>重点区域（368.4 ha）</td><td>三处详细设计</td><td>大钟寺把公园组件落全：树冠、轨径、软铺、共用林下工位、锈</td></tr></tbody></table></div>
+<p>三层不割裂：统筹定走向，总体落图层，重点区验证组件能不能在地块上放下。</p>
 <figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="三层范围与轨导动线结构图"><figcaption>三层范围与轨导动线结构图</figcaption></figure>
 <h2>统筹研究范围产业与未来城市研究</h2>
-<p>京张铁路是这片区域里已有的、不需要发明的叙事线。1909 年通车，2019 年地下化后地面段变成遗址公园。公告要求融合百年京张文化、中关村创新文化与 AI 创新文化 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
-<p>林轨的回答：不另造叙事，用铁轨本身。轨条留在地上，生锈，长草，人沿着它走。这条线把三处重点区域串起来——众智园在北端临清河，AI 原点社区在中段近高校，大钟寺在南端临地铁。轨导动线是空间组织的脊柱，不是装饰。</p>
-<p>AI 产业生态的空间协同框架：</p>
+<p>京张铁路是这片区域里已有的叙事线，不需要再发明一条。1909 年通车，2019 年地下化后地面段成为遗址公园走廊。公告要求融合百年京张文化、中关村创新文化与 AI 创新文化 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
+<p>林轨的判断很窄：<strong>不另造叙事，用铁轨本身；不另造绿廊，把公园接到大钟寺日常。</strong> 轨条留在地上，生锈；人走在轨间软铺上。这条线串起三处重点区——众智园临清河，原点社区近高校，大钟寺临地铁。轨导动线是脊柱，不是装饰。</p>
+<p>产业协同按人真会走的路径写：</p>
 <ul>
-<li><strong>高校策源</strong>：清华、北大、北航等高校的 AI 研究成果沿遗址走廊向南流动</li>
-<li><strong>开源协作</strong>：原点社区提供成果发布和代码协作空间</li>
-<li><strong>企业转化</strong>：大钟寺片区承接智能体、智能终端、数据要素企业</li>
-<li><strong>公共服务</strong>：沿轨径分布的 AI 服务节点（医疗分诊、法律咨询、教育辅助）</li>
-<li><strong>国际传播</strong>：依托轨径步行路线组织可步行的国际交流活动</li>
+<li><strong>高校策源</strong>：成果沿遗址走廊向南走，不悬空画圆</li>
+<li><strong>开源协作</strong>：原点社区接发布与代码协作</li>
+<li><strong>企业转化</strong>：大钟寺接智能体、终端与数据要素企业</li>
+<li><strong>公共服务</strong>：沿轨径放可问人的服务节点，不堆无人屏幕</li>
+<li><strong>国际交流</strong>：用可步行的轨径组织访问路线，不做巡游舞台</li>
 </ul>
-<p>命名系统服务于辨识度：「林轨」二字既是方案名也是空间描述。不需要 logo——轨道本身就是标识。视觉识别用锈色和树冠绿，不加多余符号。</p>
+<p>命名：「林轨」既是方案名也是空间描述。不需要 logo——轨道本身就是标识。锈色与树冠绿够了。</p>
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <h3>动线结构</h3>
-<p>轨导动线沿京张遗址公园走廊布置，大钟寺段为南端门户。动线不是新画的红线，是对既有铁路线位的复用。</p>
+<p>轨导动线沿京张遗址公园走廊布置，大钟寺段是南端门户。动线不是新画的红线，是对既有铁路线位的复用——<strong>公园已经在走，本案只把大钟寺站口接到这条公园上</strong>。</p>
 <pre><code>众智园（北）──轨── AI 原点社区（中）──轨── 大钟寺（南）
                 │                    │
               清河界面              近校慢行缝合</code></pre>
 <p>动线上的铁轨分两种作用 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>：</p>
 <div class="proposal-table"><table><thead><tr><th>作用</th><th>用什么</th><th>干什么</th><th>边界</th></tr></thead><tbody><tr><td><strong>引导</strong></td><td>锈轨/假轨 + 软铺</td><td>人的方向：脚下走木栈或石粉，眼睛跟着锈轨走</td><td>可走、可坐、可慢；不加灯带，标志极弱（模式 A）</td></tr><tr><td><strong>运输（概念）</strong></td><td>可运行轨段</td><td>节点间低速短驳（货、物料）</td><td>与步行分区；不写已成熟商用；待专业团队深化</td></tr></tbody></table></div>
-<p>同一条走廊分段处理：有的路段只做引导锈轨，有的路段概念上保留短驳通行能力，交叉处慢行优先。</p>
+<p>同一条走廊分段处理：多数路段只做引导锈轨；少数路段概念上保留短驳能力；交叉处慢行优先。短驳失败或未获深化，引导轨与公园仍可独立成立。</p>
 <h2>用地、建筑规模与拆改留方案</h2>
 <p>总体设计范围内的更新按三类处理：</p>
 <ul>
@@ -204,12 +207,12 @@ code {
 </ul>
 <h3>大钟寺 AI 产业聚集区——城市森林</h3>
 <p><strong>位置</strong>：最南段，临地铁 13 号线大钟寺站 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup>。</p>
-<p><strong>定位</strong>：城市型智能经济街区，也是林轨概念最完整落地的地方。</p>
-<p>这里的设计用五个空间组件搭建：</p>
-<div class="proposal-table"><table><thead><tr><th>组件</th><th>在大钟寺怎么用</th><th>不许做什么</th></tr></thead><tbody><tr><td><strong>树冠层</strong></td><td>国槐、白蜡为主，冠幅 ≥8m，覆盖既有建筑屋面和新建低层</td><td>不修剪成球形或方形；不用观赏小乔木充数</td></tr><tr><td><strong>轨径</strong></td><td>从大钟寺站出站后，锈轨嵌入地面引导人进入片区</td><td>不架高做景观桥；不抛光；不喷漆；不加灯带</td></tr><tr><td><strong>软铺</strong></td><td>轨间走道用木栈道、透水砖、石粉路面，脚感舒适</td><td>不铺大面积沥青；不用光滑石材（雨天滑）</td></tr><tr><td><strong>林下办公</strong></td><td>公园内设专用共用工位区：多工位、玻璃隔断、谁来谁坐；另有建筑首层林冠遮蔽</td><td>不设私人专属舱；不装 LED 外立面；不做网红打卡舱</td></tr><tr><td><strong>锈</strong></td><td>轨条和钢构件保持自然氧化，作为时间标记</td><td>不用 Cor-Ten 仿锈面板；不人工做旧后喷透明漆</td></tr></tbody></table></div>
-<p><strong>大钟寺站一体化</strong>：从地铁站 A/B/C/D 四个出口各引一条轨径进入片区四个象限。出站即入公园——锈轨引导进入京张叙事下的公园廊道，不是楼旁绿化带。</p>
-<p><strong>商业服务</strong>：沿轨径分布，不集中做商业综合体。智能体和智能终端企业的展厅在首层，面向轨径开放，不需要单独入口。数据要素和数字资产服务以合规、授权、可审计为前提运营。</p>
-<p><strong>公园复合利用</strong>：轨径落在公园里——修剪草坪、疏林、软铺慢行；林下共用工位是公园里的专用区，不是写字楼大厅搬家。</p>
+<p><strong>定位</strong>：城市型智能经济街区，也是林轨落得最完整的一端——<strong>出站即入公园，公园里能共用一张桌子</strong>。</p>
+<p>五个组件：</p>
+<div class="proposal-table"><table><thead><tr><th>组件</th><th>在大钟寺怎么用</th><th>不许做什么</th></tr></thead><tbody><tr><td><strong>树冠层</strong></td><td>国槐、白蜡为主，冠幅 ≥8m，覆盖既有建筑屋面和新建低层</td><td>不修剪成球形或方形；不用观赏小乔木充数</td></tr><tr><td><strong>轨径</strong></td><td>从大钟寺站出站后，锈轨嵌入地面引导人进入公园</td><td>不架高做景观桥；不抛光；不喷漆；不加灯带</td></tr><tr><td><strong>软铺</strong></td><td>轨间走道用木栈道、透水砖、石粉路面，脚感舒适</td><td>不铺大面积沥青；不用光滑石材（雨天滑）</td></tr><tr><td><strong>林下办公</strong></td><td>公园内专用共用工位区：多工位、玻璃隔断、谁来谁坐；另有建筑首层林冠遮蔽</td><td>不设私人专属舱；不装 LED 外立面；不做网红打卡舱</td></tr><tr><td><strong>锈</strong></td><td>轨条和钢构件保持自然氧化，作为时间标记</td><td>不用 Cor-Ten 仿锈面板；不人工做旧后喷透明漆</td></tr></tbody></table></div>
+<p><strong>大钟寺站一体化</strong>：A/B/C/D 四个出口各引一条轨径进四个象限。人从地下出来，第一眼应是公园与锈轨，不是广告屏。</p>
+<p><strong>商业服务</strong>：沿轨径分散布置，不集中做综合体。展厅朝向轨径；数据要素服务须合规、授权、可审计。</p>
+<p><strong>公园复合利用</strong>：轨径落在公园里——修剪草坪、疏林、软铺慢行。共用工位是公园里的专用区，不是把写字楼大厅搬到户外。</p>
 <p>概念示意（非正式证据图；正式空间主张仍以 GeoJSON / metrics / 五张证据图为准）：</p>
 <figure class="proposal-figure"><img src="../assets/concepts/shared-workstations.png" alt="共用林下工位区（公园专用区 · 玻璃隔断）"><figcaption>共用林下工位区（公园专用区 · 玻璃隔断）</figcaption></figure>
 <figure class="proposal-figure"><img src="../assets/concepts/guiding-rails.png" alt="引导锈轨穿过公园"><figcaption>引导锈轨穿过公园</figcaption></figure>
@@ -221,7 +224,7 @@ code {
 <p>场景卡与画像对齐公告 agent.3 要求 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>，深度矩阵见 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="design_depth_matrix.json#scenario-cards" title="深度：design_depth_matrix.json#scenario-cards">深度</sup>。</p>
 <div class="proposal-table"><table><thead><tr><th>画像</th><th>谁</th><th>在林轨上做什么</th><th>数据边界</th></tr></thead><tbody><tr><td><strong>走路通勤的程序员</strong></td><td>住在附近、每天步行上班的 AI 工程师</td><td>从大钟寺站出来，沿轨径走 800m 进办公楼；中午在林下吃饭；下班沿轨径散步回家</td><td>不采集个人通勤轨迹；轨径人流只做匿名计数</td></tr><tr><td><strong>带孩子散步的居民</strong></td><td>片区周边小区住户</td><td>傍晚推婴儿车沿软铺走，孩子在锈轨上跑；在林下座椅坐着聊天</td><td>不采集家庭画像；不推送商业信息</td></tr><tr><td><strong>来开会的企业访客</strong></td><td>头部企业的商务客人</td><td>大钟寺站出来，轨径引导到企业展厅；开完会沿轨径走到下一个节点</td><td>企业标识和案例需清权</td></tr><tr><td><strong>独自工作的自由职业者</strong></td><td>不在固定公司上班的人</td><td>早上来公园共用工位区找空位坐下；环境安静时开放，人多时关闭；工位可共用、不占座</td><td>不记录工位使用者身份</td></tr><tr><td><strong>退休后每天散步的老人</strong></td><td>70-80 岁，住附近</td><td>每天早上沿轨径走一圈，在弯道处的长椅坐一会儿看树；路面必须防滑</td><td>不采集健康数据</td></tr></tbody></table></div>
 <h3>场景卡（≥10）</h3>
-<div class="proposal-table"><table><thead><tr><th>#</th><th>场景</th><th>空间载体</th><th>做什么</th><th>谁用</th></tr></thead><tbody><tr><td>01</td><td>出站入林</td><td>大钟寺站各出口</td><td>地铁出站后，锈轨引导进入林下。树冠遮蔽站口上方阳光和雨水</td><td>所有到达者</td></tr><tr><td>02</td><td>轨径慢行</td><td>大钟寺轨径全段</td><td>沿锈轨走在木栈或石粉上，速度自然放慢。没有目的地标识催人前进</td><td>通勤者、散步者</td></tr><tr><td>03</td><td>林下共用工位</td><td>公园内专用工位区（玻璃隔断多工位）</td><td>共用热桌：谁来谁坐。环境安静（噪声 &lt;55dB、非高温、非暴雨）时开放桌椅和电源。AI 按时刻和环境数据管理开闭</td><td>自由职业者、午休者、路过办公者</td></tr><tr><td>04</td><td>锈轨弯道长椅</td><td>轨径转弯处</td><td>弯道外侧放长椅，人坐着看弯道上的锈轨和树。不设标识，坐下来自然发现</td><td>老人、带孩子的人</td></tr><tr><td>05</td><td>企业沿轨展厅</td><td>大钟寺片区首层商铺</td><td>智能体和终端企业的展示空间面向轨径开放，走过路过可以看到</td><td>访客、路人</td></tr><tr><td>06</td><td>雨天林下避让</td><td>树冠密集段</td><td>下雨时，树冠覆盖区成为天然避雨走廊。AI 在这些时段开放更多林下座椅</td><td>所有人</td></tr><tr><td>07</td><td>开源发布厅</td><td>原点社区</td><td>面向高校和开源社区，提供代码贡献展示和小型路演。物理屏幕滚动显示实时 commit</td><td>开发者、高校师生</td></tr><tr><td>08</td><td>节点间短驳（概念）</td><td>轨径中可运行段</td><td>在引导轨的基础上，概念上保留低速无人短驳——串联众智园、原点社区和大钟寺的货物和物料。与步行空间分区</td><td>概念验证阶段，非日常使用</td></tr><tr><td>09</td><td>夜间慢行</td><td>轨径全段</td><td>夜间照明极弱：地面嵌入式低照度灯，只照亮软铺边缘。不做灯光秀、不做投影</td><td>夜跑者、晚归者</td></tr><tr><td>10</td><td>清河创新廊</td><td>众智园临清河段</td><td>滨水步道与轨径衔接，雨洪草坡兼做休息草地。AI 安全测试节点以预约制开放参观</td><td>参观者、散步者</td></tr><tr><td>11</td><td>数据要素会客厅</td><td>大钟寺片区</td><td>合规、授权、可审计前提下，展示数据要素和数字资产流通的城市服务界面</td><td>企业客户、监管方</td></tr><tr><td>12</td><td>近校成果转化街</td><td>原点社区</td><td>沿轨径组织孵化、展示、法务、知识产权和投融资服务，面向高校成果转化</td><td>初创团队、投资人</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>#</th><th>场景</th><th>空间载体</th><th>做什么</th><th>谁用</th></tr></thead><tbody><tr><td>01</td><td>出站入园</td><td>大钟寺站各出口</td><td>出站后锈轨引导进入公园。树荫遮阳避雨，不靠灯光秀</td><td>所有到达者</td></tr><tr><td>02</td><td>轨径慢行</td><td>大钟寺轨径全段</td><td>沿锈轨走在木栈或石粉上，速度自然放慢。没有目的地标识催人前进</td><td>通勤者、散步者</td></tr><tr><td>03</td><td>林下共用工位</td><td>公园内专用工位区（玻璃隔断多工位）</td><td>共用热桌：谁来谁坐。环境安静（噪声 &lt;55dB、非高温、非暴雨）时开放桌椅和电源。AI 按时刻和环境数据管理开闭</td><td>自由职业者、午休者、路过办公者</td></tr><tr><td>04</td><td>锈轨弯道长椅</td><td>轨径转弯处</td><td>弯道外侧放长椅，人坐着看弯道上的锈轨和树。不设标识，坐下来自然发现</td><td>老人、带孩子的人</td></tr><tr><td>05</td><td>企业沿轨展厅</td><td>大钟寺片区首层商铺</td><td>智能体和终端企业的展示空间面向轨径开放，走过路过可以看到</td><td>访客、路人</td></tr><tr><td>06</td><td>雨天林下避让</td><td>树冠密集段</td><td>下雨时，树冠覆盖区成为天然避雨走廊。AI 在这些时段开放更多林下座椅</td><td>所有人</td></tr><tr><td>07</td><td>开源发布厅</td><td>原点社区</td><td>面向高校和开源社区，提供代码贡献展示和小型路演。物理屏幕滚动显示实时 commit</td><td>开发者、高校师生</td></tr><tr><td>08</td><td>节点间短驳（概念）</td><td>轨径中可运行段</td><td>在引导轨的基础上，概念上保留低速无人短驳——串联众智园、原点社区和大钟寺的货物和物料。与步行空间分区</td><td>概念验证阶段，非日常使用</td></tr><tr><td>09</td><td>夜间慢行</td><td>轨径全段</td><td>夜间照明极弱：地面嵌入式低照度灯，只照亮软铺边缘。不做灯光秀、不做投影</td><td>夜跑者、晚归者</td></tr><tr><td>10</td><td>清河创新廊</td><td>众智园临清河段</td><td>滨水步道与轨径衔接，雨洪草坡兼做休息草地。AI 安全测试节点以预约制开放参观</td><td>参观者、散步者</td></tr><tr><td>11</td><td>数据要素会客厅</td><td>大钟寺片区</td><td>合规、授权、可审计前提下，展示数据要素和数字资产流通的城市服务界面</td><td>企业客户、监管方</td></tr><tr><td>12</td><td>近校成果转化街</td><td>原点社区</td><td>沿轨径组织孵化、展示、法务、知识产权和投融资服务，面向高校成果转化</td><td>初创团队、投资人</td></tr></tbody></table></div>
 <p>每个场景的 AI 治理遵守数据最小化、公开来源、可解释和人工复核原则。城市智能体辅助识别慢行断点、公共空间热力和设施维护需求，不替代规划审批，不输出未经授权的个人画像。</p>
 <h3>三处弱地标（非网红）</h3>
 <p>这里不设&quot;打卡点&quot;。以下三处只是走在路上会注意到的地方，不做标识、不做导视、不推荐拍照：</p>

@@ -6,21 +6,25 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "An urban forest corridor along the Jingzhang heritage railway in the Dazhongsi district: rusted rails as wayfinding, tree canopy over buildings, AI-managed node access and conceptual short-haul transit. Not a tech showcase — a place to walk, sit, and work quietly under trees."
+summary: "Connect the Jingzhang heritage park to everyday Dazhongsi life: rusted rails for wayfinding, shared under-canopy desks in the park, short-haul only as concept. No invented green corridor, no tech showcase."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # Forest Rail
 
-> Dazhongsi is not a tech showcase. It is an urban forest where AI makes its nest — buildings under trees, people among woods, rusted rails threading through the canopy. Look out the window and see nature.
+The Jingzhang Railway Heritage Park already left the rails in the city: people run, push strollers, walk along the tracks. This proposal does not reinvent that park, and does not turn it into a tech showcase. It asks something narrower — **how the Dazhongsi end connects into the park, where people go after exiting the metro, where they can stop, and whether they can sit down and work quietly** [source:AGENT-TASKBOOK].
 
-This proposal is called Forest Rail. Each word carries a distinct responsibility:
+The answer is Forest Rail:
 
-- **Forest**: Plant enough large-canopy trees in the Dazhongsi district so that building rooftops sit below the tree canopy. From inside, you look out and see trunks and leaves, not the glass curtain wall across the street.
-- **Rail**: Continue the narrative of the Jingzhang Railway heritage corridor by retaining or re-laying rail tracks as ground-level wayfinding lines. The rails rust. People walk on timber boardwalks and crushed stone paths between them. Between key nodes, low-speed short-haul transit is retained as a concept.
+- **Forest**: Treat the Dazhongsi section as a park — manicured lawn, spaced trees, canopy above rooftops. Look out and see trees, not the glass wall opposite.
+- **Rail**: Rusted rails guide the eye; soft timber or crushed stone between them. Between key nodes, low-speed short-haul stays conceptual and separated from walking.
 
-Together, these form a single corridor running through a forest. Outside this corridor, the existing street network remains unchanged.
+> One line: buildings under trees, people in a park, rusted rails pointing the way — look out and see nature.
+
+**What this proposal refuses**: district-wide building control, viral landmarks, light shows, planting strips posing as parks, private pods disguised as shared desks.
+
+Only one rail-guided corridor is added. Outside it, the existing street network stays.
 
 ## Design Basis and Source List
 
@@ -30,43 +34,45 @@ Current spatial data uses provisional boundaries (`geometry/site_boundary.geojso
 
 The source registry (`data/source_registry.json`) lists 7 formal sources, 1 background source, and 1 provisional-only source. Background and provisional sources are not elevated to statutory authority [source:SOURCE-REGISTRY].
 
+Authority order in this package: GeoJSON → metrics → matrices → sources/assumptions/self_check → proposal.md → figures → HTML → PDF. Concept renders do not replace evidence diagrams.
+
 ![Source evidence chain and submission package diagram](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
-The proposal follows the three tiers specified in the announcement:
+The proposal follows the three tiers specified in the announcement [source:SITE-PACKAGE]:
 
 | Tier | Area | What Forest Rail does here |
 |------|------|---------------------------|
-| Strategic research (43.6 km²) | AI industry ecosystem and urban morphology | Confirms the Jingzhang corridor as the organizing spine; explores northward extension from Dazhongsi |
-| Overall design (11.4 km²) | Urban renewal framework around heritage park | Rail-guided corridor connects three key areas; tree canopy as character control; soft paving replaces hardscape |
-| Key area design (368.4 ha) | Three detailed design zones | Dazhongsi implements the full urban forest component set: canopy layer, rail path, soft paving, under-canopy workspace, rust |
+| Strategic research (43.6 km²) | AI industry ecosystem and urban morphology | Confirms the Jingzhang corridor as spine; Forest Rail can extend north from Dazhongsi |
+| Overall design (11.4 km²) | Urban renewal around the heritage park | Rail corridor links three key areas; park walking and soft paving; canopy as character control |
+| Key area design (368.4 ha) | Three detailed design zones | Dazhongsi completes the park set: canopy, rail path, soft paving, shared desks, rust |
 
-The three tiers are not independent deliverables. Strategic research determines the corridor's logic, overall design translates it into land use and road layers, and key area design verifies whether the components fit on actual parcels.
+Tiers are linked: strategy sets direction, overall design lands layers, key areas test whether components fit parcels.
 
 ![Three-level scope and rail-guided corridor](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The Jingzhang Railway is the narrative already embedded in this territory. It opened in 1909 and went underground in 2019, leaving the surface alignment as a heritage park. The announcement requires integrating centennial Jingzhang culture, Zhongguancun innovation culture, and AI innovation culture [source:AGENT-TASKBOOK].
+The Jingzhang Railway is the narrative already embedded here. It opened in 1909; after going underground in 2019, the surface alignment became a heritage park corridor. The announcement requires integrating centennial Jingzhang culture, Zhongguancun innovation culture, and AI innovation culture [source:AGENT-TASKBOOK].
 
-Forest Rail's answer: do not invent a new narrative. Use the rails themselves. The tracks remain on the ground, rusting, with grass growing between them. People walk along them. This line connects three key areas — Zhongzhiyuan at the north end near Qinghe River, AI Origin Community in the middle near universities, and Dazhongsi at the south end near the metro station. The rail-guided corridor is the spatial spine, not decoration.
+Forest Rail's judgment is narrow: **do not invent a new story — use the rails; do not invent a new green corridor — connect the park to everyday Dazhongsi.** Rails stay on the ground and rust; people walk soft paving between them. The line connects three key areas — Zhongzhiyuan by Qinghe, Origin Community near universities, Dazhongsi by the metro. The rail-guided corridor is the spine, not decoration.
 
-AI industry ecosystem spatial framework:
+Industry links follow routes people actually walk:
 
-- **University sourcing**: AI research from Tsinghua, Peking, Beihang flows southward along the heritage corridor
-- **Open-source collaboration**: Origin Community provides code contribution display and collaboration spaces
-- **Enterprise translation**: Dazhongsi hosts AI agent, smart terminal, and data element companies
-- **Public services**: AI service nodes along the rail path (medical triage, legal consultation, educational aid)
-- **International outreach**: Walkable international exchange events organized along the rail path
+- **University sourcing**: work moves south along the heritage corridor, not floating circles
+- **Open-source collaboration**: Origin Community hosts release and code work
+- **Enterprise translation**: Dazhongsi hosts agents, terminals, and data-element firms
+- **Public services**: ask-a-person nodes along the rail path, not unmanned screen walls
+- **International visits**: walkable rail-path itineraries, not parade stages
 
-Naming and identity: "Forest Rail" is both the proposal name and the spatial description. No logo needed — the rail track is the identifier. The visual identity uses rust and canopy green. No additional symbols.
+Naming: Forest Rail is both title and spatial description. No logo needed — the track is the mark. Rust and canopy green are enough.
 
 ## Overall Design: Rail-Guided Corridor and Urban Renewal
 
 ### Corridor Structure
 
-The rail-guided corridor follows the Jingzhang heritage park alignment, with the Dazhongsi section as its southern gateway. The corridor is not a newly drawn boundary — it reuses the existing railway alignment.
+The rail-guided corridor follows the Jingzhang heritage park alignment, with Dazhongsi as the southern gateway. It is not a newly drawn boundary — it reuses the railway alignment. **The park is already walked; this proposal mainly connects Dazhongsi Station into that park.**
 
 ```
 Zhongzhiyuan (N) ──rail── AI Origin Community (M) ──rail── Dazhongsi (S)
@@ -81,7 +87,7 @@ Tracks along the corridor serve two purposes [source:AGENT-TASKBOOK]:
 | **Wayfinding** | Rusted/replica rails + soft paving | Direction for eyes and feet: walk on timber or crushed stone, follow the rusted rail | Walkable, sittable, slow; no light strips; signage minimal (Mode A) |
 | **Transit (concept)** | Operable rail segments | Low-speed short-haul between nodes (goods, materials) | Separated from walking; not described as commercially mature; subject to professional feasibility study |
 
-Segments are mixed: some stretches are wayfinding-only with rusted rails; others conceptually retain short-haul capacity; pedestrians have priority at crossings.
+Most stretches are wayfinding-only. A few conceptually retain short-haul capacity. Pedestrians have priority at crossings. If short-haul fails or is never deepened, wayfinding rails and the park still stand on their own.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -156,23 +162,23 @@ Which elements are design recommendations versus those pending official confirma
 
 **Location**: Southern end, adjacent to Metro Line 13 Dazhongsi Station [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-**Position**: Urban intelligent economy district, and the most complete implementation of the Forest Rail concept.
+**Position**: Urban intelligent economy district, and the fullest end of Forest Rail — **exit the station into a park, and find a shared desk in that park**.
 
-The design here is built from five spatial components:
+Five components:
 
 | Component | How it is used in Dazhongsi | What is not allowed |
 |-----------|-----------------------------|---------------------|
 | **Canopy layer** | Chinese Scholar Tree and ash as primary species, crown spread ≥8m, covering existing building roofs and new low-rise structures | No geometric pruning; no ornamental small trees as substitutes |
-| **Rail path** | Rusted rails embedded in the ground from Dazhongsi Station exits guide people into the district | No elevated landscape bridges; no polishing; no painting; no light strips |
+| **Rail path** | Rusted rails embedded from Dazhongsi Station exits guide people into the park | No elevated landscape bridges; no polishing; no painting; no light strips |
 | **Soft paving** | Between-rail walkways use timber boardwalk, permeable brick, or crushed stone; comfortable underfoot | No large-area asphalt; no polished stone (slippery in rain) |
 | **Under-canopy workspace** | Dedicated shared workstation precinct in the park: many desks, glass partitions, hot-desks anyone can use; building ground floors also shaded by canopy | No private assigned pods; no LED facades; no viral photo-booth cabins |
 | **Rust** | Rail tracks and steel elements maintain natural oxidation as time markers | No Cor-Ten imitation rust panels; no artificial aging with clear coat |
 
-**Dazhongsi Station integration**: From each of the station's A/B/C/D exits, a rail path extends into one quadrant of the district. Exit the metro and enter the park — rusted rails guide into a Jingzhang-narrative park corridor, not a planting strip beside buildings.
+**Dazhongsi Station integration**: From exits A/B/C/D, a rail path enters each quadrant. Emerging underground, the first view should be park and rusted rail — not ad screens.
 
-**Commercial services**: Distributed along the rail path, not concentrated in a commercial complex. AI agent and smart terminal company showrooms on ground floors, open toward the rail path, no separate entrances needed. Data element and digital asset services operate under compliance, authorization, and auditability.
+**Commercial services**: Spread along the rail path, not concentrated in a mall. Showrooms face the path; data-element services require compliance, authorization, and auditability.
 
-**Park integration**: The rail path sits in a park — manicured lawn, spaced trees, soft paving. Shared under-canopy workstations are a dedicated precinct inside the park, not an office lobby relocated outdoors.
+**Park integration**: The rail path sits in a park — manicured lawn, spaced trees, soft paving. Shared desks are a dedicated precinct inside the park, not an office lobby moved outdoors.
 
 Concept views (not formal evidence figures; spatial claims remain in GeoJSON / metrics / the five evidence diagrams):
 
@@ -204,7 +210,7 @@ All three key areas appear in `geometry/key_areas.geojson`. Current data is prov
 
 | # | Scenario | Spatial carrier | What happens | Who uses it |
 |---|----------|----------------|--------------|-------------|
-| 01 | Exit station, enter forest | Dazhongsi Station exits | After exiting the metro, rusted rails guide you under the canopy. Trees shade the station entrance from sun and rain | All arrivals |
+| 01 | Exit station, enter park | Dazhongsi Station exits | Rusted rails guide into the park. Shade from trees, not light shows | All arrivals |
 | 02 | Rail path walking | Entire Dazhongsi rail path | Walk on timber or crushed stone along rusted rails. Speed naturally slows. No destination signs urging you forward | Commuters, walkers |
 | 03 | Shared under-canopy workstations | Dedicated park precinct with glass-partitioned multi-desk bays | Shared hot-desks: sit if free. Opens when quiet (noise <55dB, no extreme heat, no heavy rain). AI manages open/close by time and environment | Freelancers, lunch-breakers, passersby working briefly |
 | 04 | Rusted rail curve bench | Rail path turning points | Benches on the outside of curves; sit and watch the rusted rail and trees. No signage; you discover it naturally by sitting down | Elderly, parents with children |
