@@ -4,6 +4,7 @@ import importlib.util
 import json
 import sys
 import unittest
+from xml.etree import ElementTree
 from pathlib import Path
 
 from shapely.geometry import shape
@@ -118,6 +119,20 @@ REQUIRED_COMPONENT_FIELDS = {
     "scenario_refs",
 }
 
+REQUIRED_REVIEW_STEMS = {
+    "overall_structure",
+    "overall_masterplan",
+    "mobility",
+    "blue_green_heritage",
+    "zzy_plan",
+    "org_plan",
+    "dzs_plan",
+    "sections",
+    "massing",
+    "landmarks",
+    "components",
+}
+
 
 def load_builder():
     spec = importlib.util.find_spec("build_gate_b")
@@ -131,6 +146,20 @@ def load_qa():
     if spec is None:
         return None
     return importlib.import_module("jzoi_semantic_qa")
+
+
+def load_renderer():
+    spec = importlib.util.find_spec("render_gate_b")
+    if spec is None:
+        return None
+    return importlib.import_module("render_gate_b")
+
+
+def load_package_builder():
+    spec = importlib.util.find_spec("build_review_package")
+    if spec is None:
+        return None
+    return importlib.import_module("build_review_package")
 
 
 class GateBModelTests(unittest.TestCase):
@@ -163,6 +192,27 @@ class GateBModelTests(unittest.TestCase):
         self.assertGreaterEqual(len(human_nodes), 6)
         self.assertTrue(all(f["properties"]["evidence_class"] == "DESIGN TARGET" for f in main_if))
         self.assertTrue(all(f["properties"]["design_status"] == "concept" for f in main_if))
+
+    def test_main_if_and_parallel_human_reach_south_and_north_scope_edges(self):
+        builder = load_builder()
+        model = builder.build_all(ROOT, write=False)
+        boundaries = json.loads(
+            (REPO / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson").read_text(
+                encoding="utf-8"
+            )
+        )
+        site = shape(next(item["geometry"] for item in boundaries["features"] if item["id"] == "PROV-SITE-001"))
+        overall = model["layers"]["overall_structure"]["features"]
+
+        for semantic_class in ["main_if_segment", "parallel_human_segment"]:
+            segments = sorted(
+                [item for item in overall if item["properties"]["semantic_class"] == semantic_class],
+                key=lambda item: item["properties"]["sequence"],
+            )
+            south = shape({"type": "Point", "coordinates": segments[0]["geometry"]["coordinates"][0]})
+            north = shape({"type": "Point", "coordinates": segments[-1]["geometry"]["coordinates"][-1]})
+            self.assertLess(site.boundary.distance(south), 0.001, semantic_class)
+            self.assertLess(site.boundary.distance(north), 0.001, semantic_class)
 
     def test_written_model_and_layers_are_valid_json(self):
         builder = load_builder()
@@ -407,6 +457,69 @@ class GateBSemanticQATests(unittest.TestCase):
         self.assertEqual(required_checks, set(report["checks"]))
         self.assertTrue(report["ok"], report["blockers"])
         self.assertEqual(report["blocker_count"], 0)
+
+
+class GateBReviewRenderingTests(unittest.TestCase):
+    def test_all_required_internal_review_svgs_exist_and_parse(self):
+        renderer = load_renderer()
+        self.assertIsNotNone(renderer, "Gate B SVG renderer must exist")
+
+        paths = renderer.render_all(ROOT)
+
+        self.assertEqual({path.stem for path in paths}, REQUIRED_REVIEW_STEMS)
+        for path in paths:
+            svg_root = ElementTree.parse(path).getroot()
+            self.assertTrue(svg_root.tag.endswith("svg"), path.name)
+            self.assertGreater(path.stat().st_size, 3000, path.name)
+            text = path.read_text(encoding="utf-8")
+            self.assertIn("INTERNAL GATE B REVIEW", text, path.name)
+            self.assertNotIn("9438.429", text, path.name)
+
+
+class GateBReviewPackageTests(unittest.TestCase):
+    def test_review_package_records_all_stop_conditions_and_report_topics(self):
+        package_builder = load_package_builder()
+        self.assertIsNotNone(package_builder, "Gate B review package builder must exist")
+
+        package = package_builder.build_package(ROOT, write=True)
+
+        self.assertEqual(package["semantic_qa"]["blocker_count"], 0)
+        self.assertTrue(all(package["stop_condition"].values()), package["stop_condition"])
+        self.assertEqual(len(package["project_spatial_closure"]), 12)
+        self.assertEqual(len(package["review_artifacts"]), 11)
+        self.assertEqual(
+            set(package["report"]),
+            {
+                "files_changed",
+                "new_spatial_layers",
+                "overall_spatial_concept",
+                "main_if_design",
+                "parallel_human_design",
+                "zzy_design",
+                "org_design",
+                "dzs_design",
+                "mobility_system",
+                "blue_green_heritage_system",
+                "massing_strategy",
+                "landmarks_components",
+                "project_spatial_closure_status",
+                "semantic_qa_result",
+                "remaining_evidence_dependent_limitations",
+            },
+        )
+        self.assertEqual(
+            set(package["evidence_dependent_limitations"]),
+            {
+                "official_scope_boundaries",
+                "existing_buildings_and_ownership",
+                "road_redlines_and_station_entrances",
+                "statutory_height_far",
+                "utilities_and_flood",
+                "parking",
+            },
+        )
+        self.assertTrue((ROOT / "gate_b_review_package.json").is_file())
+        self.assertTrue((ROOT / "gate_b_review_package.md").is_file())
 
 
 if __name__ == "__main__":

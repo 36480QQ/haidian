@@ -7,18 +7,18 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parents[2]
 GATE_A = ROOT.parent
 MAIN_VERTICES = [
-    [116.3485, 39.9443],
+    [116.3480, 39.9395],
     [116.3485, 39.9470],
-    [116.3475, 39.9805],
     [116.3475, 39.9885],
     [116.3485, 40.0165],
+    [116.3488, 40.0260],
 ]
 HUMAN_VERTICES = [
-    [116.3423, 39.9468],
-    [116.3462, 39.9472],
-    [116.3445, 39.9805],
+    [116.3418, 39.9395],
+    [116.3418, 39.9472],
     [116.3452, 39.9885],
     [116.3460, 40.0165],
+    [116.3462, 40.0260],
 ]
 
 
@@ -211,11 +211,11 @@ def build_overall():
             )
         )
     service_nodes = [
-        ("DZS-SOUTH", 116.3423, 39.9468, "DZS"),
-        ("DZS-HRG", 116.3462, 39.9472, "DZS"),
-        ("SOUTH-RELAY", 116.3445, 39.9805, "OVERALL"),
+        ("DZS-SOUTH", 116.3418, 39.9415, "DZS"),
+        ("DZS-HRG", 116.3418, 39.9472, "DZS"),
+        ("SOUTH-RELAY", 116.3435, 39.96785, "OVERALL"),
         ("ORG-HRG", 116.3452, 39.9885, "ORG"),
-        ("NORTH-RELAY", 116.3450, 40.0020, "OVERALL"),
+        ("NORTH-RELAY", 116.3456, 40.0025, "OVERALL"),
         ("ZZY-HRG", 116.3460, 40.0165, "ZZY"),
     ]
     for node_id, x, y, endpoint in service_nodes:
@@ -230,6 +230,24 @@ def build_overall():
                 staffed_service=True,
                 non_digital_access=True,
                 coverage_status="DESIGN INTENT",
+            )
+        )
+    for network_id, side, coordinates in [
+        ("MAIN-IF", "south", MAIN_VERTICES[0]),
+        ("MAIN-IF", "north", MAIN_VERTICES[-1]),
+        ("PARALLEL-HUMAN", "south", HUMAN_VERTICES[0]),
+        ("PARALLEL-HUMAN", "north", HUMAN_VERTICES[-1]),
+    ]:
+        features.append(
+            feature(
+                f"{network_id}-GATEWAY-{side.upper()}",
+                point(*coordinates),
+                "interface_gateway",
+                "OVERALL-DESIGN-001",
+                network_id=network_id,
+                gateway_side=side,
+                public_path=True,
+                boundary_relation="near provisional overall-scope edge; detailed tie-in requires survey",
             )
         )
     stitches = [
@@ -482,7 +500,7 @@ def build_blue_green_heritage(existing):
     proposals = [
         ("QINGHE-RAIN-EDGE", "rainwater_ecology", rect(116.3433, 40.0208, 116.3537, 40.0220), ["ZZY"]),
         ("XIAOYUEHE-SCENARIO-SPINE", "ecology_scenario", line([[116.3530, 39.9760], [116.3520, 39.9885], [116.3530, 40.0020]]), ["ORG", "ZZY"]),
-        ("JINGZHANG-PUBLIC-SEQUENCE", "heritage_public_sequence", line([MAIN_VERTICES[0], MAIN_VERTICES[2], MAIN_VERTICES[3], MAIN_VERTICES[4]]), ["DZS", "ORG", "ZZY"]),
+        ("JINGZHANG-PUBLIC-SEQUENCE", "heritage_public_sequence", line(MAIN_VERTICES), ["DZS", "ORG", "ZZY"]),
         ("DZS-CIVIC-RAIN-ROOM", "rainwater_public_room", rect(116.3464, 39.9462, 116.3496, 39.9477), ["DZS"]),
         ("ORG-COMMONS-GARDEN", "commons_garden", rect(116.3455, 39.9875, 116.3495, 39.9895), ["ORG"]),
         ("ZZY-OBSERVATION-WETLAND", "safety_ecology_buffer", rect(116.3462, 40.0182, 116.3508, 40.0195), ["ZZY"]),

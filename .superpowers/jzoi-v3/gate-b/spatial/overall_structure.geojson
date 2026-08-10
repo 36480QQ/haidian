@@ -23,8 +23,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3485,
-            39.9443
+            116.348,
+            39.9395
           ],
           [
             116.3485,
@@ -54,11 +54,11 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3423,
-            39.9468
+            116.3418,
+            39.9395
           ],
           [
-            116.3462,
+            116.3418,
             39.9472
           ]
         ]
@@ -90,7 +90,7 @@
           ],
           [
             116.3475,
-            39.9805
+            39.9885
           ]
         ]
       }
@@ -116,12 +116,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3462,
+            116.3418,
             39.9472
           ],
           [
-            116.3445,
-            39.9805
+            116.3452,
+            39.9885
           ]
         ]
       }
@@ -148,11 +148,11 @@
         "coordinates": [
           [
             116.3475,
-            39.9805
+            39.9885
           ],
           [
-            116.3475,
-            39.9885
+            116.3485,
+            40.0165
           ]
         ]
       }
@@ -178,12 +178,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3445,
-            39.9805
-          ],
-          [
             116.3452,
             39.9885
+          ],
+          [
+            116.346,
+            40.0165
           ]
         ]
       }
@@ -209,12 +209,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3475,
-            39.9885
-          ],
-          [
             116.3485,
             40.0165
+          ],
+          [
+            116.3488,
+            40.026
           ]
         ]
       }
@@ -240,12 +240,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            116.3452,
-            39.9885
-          ],
-          [
             116.346,
             40.0165
+          ],
+          [
+            116.3462,
+            40.026
           ]
         ]
       }
@@ -269,8 +269,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3423,
-          39.9468
+          116.3418,
+          39.9415
         ]
       }
     },
@@ -293,7 +293,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3462,
+          116.3418,
           39.9472
         ]
       }
@@ -317,8 +317,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.3445,
-          39.9805
+          116.3435,
+          39.96785
         ]
       }
     },
@@ -365,8 +365,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.345,
-          40.002
+          116.3456,
+          40.0025
         ]
       }
     },
@@ -391,6 +391,98 @@
         "coordinates": [
           116.346,
           40.0165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MAIN-IF-GATEWAY-SOUTH",
+      "properties": {
+        "id": "MAIN-IF-GATEWAY-SOUTH",
+        "semantic_class": "interface_gateway",
+        "evidence_class": "DESIGN TARGET",
+        "design_status": "concept",
+        "geometry_role": "design_proposal",
+        "host_scope": "OVERALL-DESIGN-001",
+        "network_id": "MAIN-IF",
+        "gateway_side": "south",
+        "public_path": true,
+        "boundary_relation": "near provisional overall-scope edge; detailed tie-in requires survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          39.9395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MAIN-IF-GATEWAY-NORTH",
+      "properties": {
+        "id": "MAIN-IF-GATEWAY-NORTH",
+        "semantic_class": "interface_gateway",
+        "evidence_class": "DESIGN TARGET",
+        "design_status": "concept",
+        "geometry_role": "design_proposal",
+        "host_scope": "OVERALL-DESIGN-001",
+        "network_id": "MAIN-IF",
+        "gateway_side": "north",
+        "public_path": true,
+        "boundary_relation": "near provisional overall-scope edge; detailed tie-in requires survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3488,
+          40.026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PARALLEL-HUMAN-GATEWAY-SOUTH",
+      "properties": {
+        "id": "PARALLEL-HUMAN-GATEWAY-SOUTH",
+        "semantic_class": "interface_gateway",
+        "evidence_class": "DESIGN TARGET",
+        "design_status": "concept",
+        "geometry_role": "design_proposal",
+        "host_scope": "OVERALL-DESIGN-001",
+        "network_id": "PARALLEL-HUMAN",
+        "gateway_side": "south",
+        "public_path": true,
+        "boundary_relation": "near provisional overall-scope edge; detailed tie-in requires survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3418,
+          39.9395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PARALLEL-HUMAN-GATEWAY-NORTH",
+      "properties": {
+        "id": "PARALLEL-HUMAN-GATEWAY-NORTH",
+        "semantic_class": "interface_gateway",
+        "evidence_class": "DESIGN TARGET",
+        "design_status": "concept",
+        "geometry_role": "design_proposal",
+        "host_scope": "OVERALL-DESIGN-001",
+        "network_id": "PARALLEL-HUMAN",
+        "gateway_side": "north",
+        "public_path": true,
+        "boundary_relation": "near provisional overall-scope edge; detailed tie-in requires survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3462,
+          40.026
         ]
       }
     },
