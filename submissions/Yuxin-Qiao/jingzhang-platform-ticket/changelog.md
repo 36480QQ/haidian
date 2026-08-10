@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.2 - 2026-08-10
+
+- 修复 PR #1251 评审阻断项：metrics.json 原按要素逐个求和，重叠要素被重复计入；现改用 shapely unary_union（EPSG:4548），与仓库 origin/main 权威 spatial_review.py 算法完全一致。
+- 重算并同步全部派生指标：公共空间面积 954502.688㎡（占比 8.4%）、建筑基底面积 375638.940㎡（基底密度 3.3%）；正文、图件、双语 HTML、A3/A0 图纸与自检卡片中的旧值（9.2%、3.7% 等）全部替换。
+- 使用 origin/main 版 spatial_review.py 实跑确认 PASS（仅存三条 provisional 重点区 minor 提示，属组织方数据缺口）。
+- 官方红线与重点区 polygon 到位后整包复算的承诺不变。
+
 ## v0.1 - 2026-08-10
 
 - 首次生成：概念“京张站台票 / JINGZHANG PLATFORM TICKET”，一站三站台两翼空间结构，四类站台票参与机制。

@@ -98,7 +98,7 @@ AI创新生态由"站台票参与机制"承载：普通票对应公共开放日�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园活力带为骨架，衔接清河与小月河两条参考水系，形成"一脊两带多节点"的开放空间系统 [source:SRC-JZ-RAILWAY-HERITAGE-PARK] [data:geometry/green_space.geojson#GREEN-001]。概念绿地率约35.2%，公共空间占比约9.2%，两者均作为设计讨论值，官方绿线与蓝线补齐后复算 [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]。
+蓝绿空间以京张遗址公园活力带为骨架，衔接清河与小月河两条参考水系，形成"一脊两带多节点"的开放空间系统 [source:SRC-JZ-RAILWAY-HERITAGE-PARK] [data:geometry/green_space.geojson#GREEN-001]。概念绿地率约35.2%，公共空间占比约8.4%，两者均作为设计讨论值，官方绿线与蓝线补齐后复算 [metric:green_ratio] [metric:public_space_ratio] [depth:blue_green_public_space]。
 
 公共空间系统包括三处站前广场、遗址公园长月台与各类公共活动场：站前广场承担开放日、路演与日常停留，长月台承担慢行、展览与节庆活动，社区广场承担日常交往 [data:geometry/public_space.geojson#PUBLIC-004]。公共空间分级运营：全时开放、定时开放与预约开放三档，避免扰民与过度商业化。
 
