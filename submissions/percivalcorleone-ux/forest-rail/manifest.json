@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fd921c669d67f1925c71a425e58d832c5df697d2fc5449248a0c5baf3075646a"
+      "sha256": "9513fab929c7c8f37eb90062187f7e5e79111478dd7bbecdea0b0e3be6fd7449"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "051f863fee7a3d212fc0a6832b9da6867d3a09616a35a3e2e8f6d550525028d4"
     },
     {
       "path": "self_check.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4b422d270962d5c1db1046212742691d3c2c1cf6eefde63e99c77ffee526a871"
+      "sha256": "1544e345909d4f4acfce7e0c27d17cd0b1619c79d2a2bef51ba7fe21921d6a67"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "8b1ce7f99b3dbb3c46f220dd4353c549b0b64a2a6ef0b39795d74f4297225708"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ca7f4cc0cf627da53335f08ff1e7be8df4262dd9dab9eb5e0a38f227d721dc7c"
+      "sha256": "9f31d571ef92bf0542a46d670857a19a683d158cd7b89791847341390b2e0f5e"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3faff42043ca32558a9d6cc9bdb11018eafba5ef24c24bc1cf8b6852030eeb04"
+      "sha256": "a74c1236a8f9bcd3d6da33f953d09bfcd3b2cff7c67d55859ddb9fb2da3a0e02"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "03cc3a7f8dad2ad3ef13d5d7aa84bfb6c84b657f3d5d144fd0c2d204d2c0993c"
+      "sha256": "f403bf8aafd3ff027e5374498e83aaf8303456c3fc9556d8a030bfa0d7579aa5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cfacb7d19a0f9ea93a03f661715b9fbf1d0093462ae53925e8ea43da3f21f498"
+      "sha256": "9ad7605c3daeb2c3c48f3eee7ff17b65e3850234d833a93b2b199a0fc2116bc1"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2848fd4a0f04ac70d5b36b64989ce8a8ab39bf25a45ba23588bd1bd1a29a2951"
+      "sha256": "f28442f55c280123ccf540dfb7fa89c76cc9e2ae343f65767296b7a5e8c82ba9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "ea39208cf88a2bd3d40057740b6df04a9a562f4ffa861c048a6be7ed6045b9d9"
+      "sha256": "07e1bd253edc25320a5b345d1b8e144c98076db6d3f91a803f7462885d63c29e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "933cc31c79345fba21eeed41494ef9665631d38f156a55335c0ef93de9a7950a"
+      "sha256": "85a2225dabe97ff26b9366181a3eed8aa615b5c4e5cd89d1961beebdfa4154fb"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "03cc3a7f8dad2ad3ef13d5d7aa84bfb6c84b657f3d5d144fd0c2d204d2c0993c"
+      "sha256": "0c6b2589a47c1581de6d0a8558c734818cf005efc31246e9ac0ac6370cf0e5de"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,34 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "2579cba0481cbad273151059a57a58f1f8c78f60bf9f0581d0d05f1ed1c7ac88"
+    },
+    {
+      "path": "assets/concepts/ai-rail-transport.png",
+      "role": "supporting_visual",
+      "required": false,
+      "language": "zh",
+      "sha256": "96cf5e21ce8d60cb574a5c3c647fe5380ae150300e63d87d5e789b44cf0a4f0a"
+    },
+    {
+      "path": "assets/concepts/guiding-rails.png",
+      "role": "supporting_visual",
+      "required": false,
+      "language": "zh",
+      "sha256": "09f942af4f664cff3a9226379b9e36be7a43c592b4ec886f60d75fa7104b2667"
+    },
+    {
+      "path": "assets/concepts/shared-workstations.png",
+      "role": "supporting_visual",
+      "required": false,
+      "language": "zh",
+      "sha256": "8d499baebe00f6d3451ca4b0c07d7438fba28ae0f01d9bb6c7c233a4f874c7ce"
+    },
+    {
+      "path": "assets/concepts/station-into-park.png",
+      "role": "supporting_visual",
+      "required": false,
+      "language": "zh",
+      "sha256": "e786c74a137194607d63b8b0bc8183d87e8aeb067ca424ac0e807c1a1957d5ef"
     }
   ],
   "validation_claim": {

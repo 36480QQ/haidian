@@ -165,14 +165,24 @@ The design here is built from five spatial components:
 | **Canopy layer** | Chinese Scholar Tree and ash as primary species, crown spread ≥8m, covering existing building roofs and new low-rise structures | No geometric pruning; no ornamental small trees as substitutes |
 | **Rail path** | Rusted rails embedded in the ground from Dazhongsi Station exits guide people into the district | No elevated landscape bridges; no polishing; no painting; no light strips |
 | **Soft paving** | Between-rail walkways use timber boardwalk, permeable brick, or crushed stone; comfortable underfoot | No large-area asphalt; no polished stone (slippery in rain) |
-| **Under-canopy workspace** | Building ground floors / podiums shaded by tree canopy, with tree trunks visible from windows | No glass curtain walls; no LED exterior facades |
+| **Under-canopy workspace** | Dedicated shared workstation precinct in the park: many desks, glass partitions, hot-desks anyone can use; building ground floors also shaded by canopy | No private assigned pods; no LED facades; no viral photo-booth cabins |
 | **Rust** | Rail tracks and steel elements maintain natural oxidation as time markers | No Cor-Ten imitation rust panels; no artificial aging with clear coat |
 
-**Dazhongsi Station integration**: From each of the station's A/B/C/D exits, a rail path extends into one quadrant of the district. Exit the metro and enter the forest — trees are planted above station entrances so that the first thing you see emerging from underground is canopy.
+**Dazhongsi Station integration**: From each of the station's A/B/C/D exits, a rail path extends into one quadrant of the district. Exit the metro and enter the park — rusted rails guide into a Jingzhang-narrative park corridor, not a planting strip beside buildings.
 
 **Commercial services**: Distributed along the rail path, not concentrated in a commercial complex. AI agent and smart terminal company showrooms on ground floors, open toward the rail path, no separate entrances needed. Data element and digital asset services operate under compliance, authorization, and auditability.
 
-**Planned green space integration**: Planned green space is combined with the rail path corridor — green space is not ornamental lawn but woodland that people can walk into and sit down in.
+**Park integration**: The rail path sits in a park — manicured lawn, spaced trees, soft paving. Shared under-canopy workstations are a dedicated precinct inside the park, not an office lobby relocated outdoors.
+
+Concept views (not formal evidence figures; spatial claims remain in GeoJSON / metrics / the five evidence diagrams):
+
+![Shared under-canopy workstation precinct](assets/concepts/shared-workstations.png)
+
+![Guiding rusted rails through the park](assets/concepts/guiding-rails.png)
+
+![Conceptual short-haul rail separated from walking](assets/concepts/ai-rail-transport.png)
+
+![From Dazhongsi Station into the park rail path](assets/concepts/station-into-park.png)
 
 ![Three key areas index and design tasks](assets/figures/key-areas.en.png)
 
@@ -187,7 +197,7 @@ All three key areas appear in `geometry/key_areas.geojson`. Current data is prov
 | **Walking commuter programmer** | AI engineer living nearby, walks to work daily | Exits Dazhongsi Station, walks 800m along the rail path to the office; eats lunch under the canopy; walks back along the rail path after work | No personal commute tracking; rail path foot traffic is anonymous counting only |
 | **Parent walking with child** | Resident of surrounding neighborhoods | Pushes a stroller along the soft paving in the evening; child runs on the rusted rails; sits on under-canopy benches chatting | No family profiling; no commercial push notifications |
 | **Corporate visitor** | Business guest of a major company | Arrives at Dazhongsi Station, rail path guides to company showroom; walks along rail path to next node after the meeting | Company logos and cases require rights clearance |
-| **Solo freelancer** | Person without a fixed office | Arrives in the morning and finds an open under-canopy workstation; workstation opens automatically when quiet, closes when crowded | No recording of workstation user identity |
+| **Solo freelancer** | Person without a fixed office | Finds an open shared desk in the park workstation precinct; opens when quiet, closes when crowded; hot-desk, no reserved seats | No recording of workstation user identity |
 | **Retired daily walker** | 70-80 years old, lives nearby | Walks along the rail path every morning, sits on the bench at the curve watching trees; pavement must be non-slip | No health data collection |
 
 ### Scenario Cards (≥10)
@@ -196,7 +206,7 @@ All three key areas appear in `geometry/key_areas.geojson`. Current data is prov
 |---|----------|----------------|--------------|-------------|
 | 01 | Exit station, enter forest | Dazhongsi Station exits | After exiting the metro, rusted rails guide you under the canopy. Trees shade the station entrance from sun and rain | All arrivals |
 | 02 | Rail path walking | Entire Dazhongsi rail path | Walk on timber or crushed stone along rusted rails. Speed naturally slows. No destination signs urging you forward | Commuters, walkers |
-| 03 | Under-canopy quiet workstation | Open nodes along rail path | Tables, chairs, and power outlets that open automatically when conditions are quiet (noise <55dB, no extreme heat, no heavy rain). AI manages access by time and environmental data | Freelancers, lunch-breakers |
+| 03 | Shared under-canopy workstations | Dedicated park precinct with glass-partitioned multi-desk bays | Shared hot-desks: sit if free. Opens when quiet (noise <55dB, no extreme heat, no heavy rain). AI manages open/close by time and environment | Freelancers, lunch-breakers, passersby working briefly |
 | 04 | Rusted rail curve bench | Rail path turning points | Benches on the outside of curves; sit and watch the rusted rail and trees. No signage; you discover it naturally by sitting down | Elderly, parents with children |
 | 05 | Company showroom along the rail | Dazhongsi ground-floor retail | AI agent and terminal company display spaces open toward the rail path; visible as you walk past | Visitors, passersby |
 | 06 | Rainy day under-canopy shelter | Dense canopy segments | When it rains, canopy-covered areas become natural rain corridors. AI opens more under-canopy seating during these periods | Everyone |
