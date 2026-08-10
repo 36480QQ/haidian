@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.1.0",
+  "governance": {
+    "principle_zh": "城市在环：受影响使用者与运营者决定试验能否进入下一版本。",
+    "principle_en": "City-in-the-Loop: affected users and operators determine whether a trial advances.",
+    "release_gates": [
+      {
+        "id": "V0.1",
+        "zh": "观察",
+        "en": "Observe",
+        "gate": "problem, baseline, permission, accountable people"
+      },
+      {
+        "id": "V0.5",
+        "zh": "原型",
+        "en": "Prototype",
+        "gate": "paper, offline, or enclosed failure"
+      },
+      {
+        "id": "V1.0",
+        "zh": "部署",
+        "en": "Deploy",
+        "gate": "bounded, informed, staffed, recoverable"
+      },
+      {
+        "id": "V2.0",
+        "zh": "扩展",
+        "en": "Scale",
+        "gate": "cross-season evidence, maintenance, independent review, exit cost"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "P01",
+      "zh": "轨道与公共空间现场底图",
+      "en": "Rail and public-space field base",
+      "phase": "V0.1"
+    },
+    {
+      "id": "P02",
+      "zh": "八接口连续性与无障碍审计",
+      "en": "Eight-interface continuity and accessibility audit",
+      "phase": "V0.1"
+    },
+    {
+      "id": "P03",
+      "zh": "普通服务基线修补",
+      "en": "Ordinary-service baseline repairs",
+      "phase": "V0.5"
+    },
+    {
+      "id": "P04",
+      "zh": "AI 学习廊无屏原型",
+      "en": "AI Learning Corridor no-screen prototype",
+      "phase": "V0.5"
+    },
+    {
+      "id": "P05",
+      "zh": "具身智能封闭演练",
+      "en": "Enclosed embodied-system drill",
+      "phase": "V0.5"
+    },
+    {
+      "id": "P06",
+      "zh": "健康老龄无手机旅程",
+      "en": "Health and aging no-phone journey",
+      "phase": "V0.5"
+    },
+    {
+      "id": "P07",
+      "zh": "失败与修订档案",
+      "en": "Failure and revision archive",
+      "phase": "V1.0"
+    },
+    {
+      "id": "P08",
+      "zh": "年度 City Release 公开复盘",
+      "en": "Annual City Release public review",
+      "phase": "V1.0"
+    }
+  ],
+  "annual_cycle": [
+    {
+      "season_zh": "春",
+      "action_zh": "重做路径、设施与责任基线",
+      "action_en": "Repeat route, facility, and accountability baselines"
+    },
+    {
+      "season_zh": "夏",
+      "action_zh": "核热环境、夜间服务与设备包络",
+      "action_en": "Review heat, night service, and operating envelopes"
+    },
+    {
+      "season_zh": "秋",
+      "action_zh": "开放 City Release Review",
+      "action_en": "Hold an open City Release Review"
+    },
+    {
+      "season_zh": "冬",
+      "action_zh": "发布维护、失败、停止与删除记录",
+      "action_en": "Publish maintenance, failure, stop, and deletion records"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "SITE-001 is preserved as provisional_constraint with official_boundary=false and visible whole-package recalculation warnings."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three key areas remain provisional; the public PROV-KEY-003 displacement warning is disclosed and no independent correction is claimed."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Six conceptual land-use polygons completely cover the provisional site without gaps or overlaps in EPSG:4548."
+    },
+    {
+      "check_id": "DESIGN_GEOMETRY_INSIDE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "Buildings, green space and public space are contained by the provisional site in the spatial review."
+    },
+    {
+      "check_id": "METRIC_RECALCULATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Spatial values are recalculated from the submitted geometry; structured counts match local JSON assets; FAR, height and density remain unknown."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "The exhibit is offline, contains all required visible sections and declares exact known metric values through data attributes."
+    },
+    {
+      "check_id": "BILINGUAL_DELIVERABLES",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "Chinese and English proposals, five figure pairs, offline HTML, fourteen-page A3 booklets and four-board A0 sets are present and mapped in the manifest."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All required standards and design-depth items have claim-adjacent references; audit matrices provide exhaustive task coverage and keep unavailable controls unknown."
+    },
+    {
+      "check_id": "FIELD_EVIDENCE_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/site_and_stakeholder_evidence.json",
+      "message": "No site visit and no stakeholder interviews are explicitly disclosed; personas and user needs remain inferred pending field validation."
+    },
+    {
+      "check_id": "PILOT_STOP_RULES",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/assets/pilot_contracts.json",
+      "message": "All three pilots include permission, baseline, test window, success, stop and accountable-human fields."
+    },
+    {
+      "check_id": "RAIL_VERTICALITY",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "The proposal distinguishes former non-operating surface heritage, the operating high-speed railway in the Qinghuayuan Tunnel and returning to grade in the north, and operating Line 13 surface/embankment/viaduct segments; no crossing or subsurface feasibility is inferred."
+    }
+  ]
+}
