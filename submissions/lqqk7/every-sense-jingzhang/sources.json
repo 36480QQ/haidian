@@ -55,6 +55,13 @@
       "not_usable_for": "Not an external or primary source; it only indexes evidence maintained elsewhere in this package."
     },
     {
+      "id": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+      "path": "scripts/spatial_review.py",
+      "source_type": "repository_method",
+      "usage": "Repository calculation method used to project submitted geometry to EPSG:4548 and reproduce area, ratio, topology, and count checks recorded in metrics.json.",
+      "not_usable_for": "Not a source of official geometry, statutory controls, surveyed existing conditions, participant outcomes, or approval conclusions."
+    },
+    {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",

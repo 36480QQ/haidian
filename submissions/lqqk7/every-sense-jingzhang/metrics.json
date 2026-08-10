@@ -9,92 +9,144 @@
       "status": "known",
       "value": 11412825.386,
       "unit": "sqm",
-      "source_files": [
-        "geometry/site_boundary.geojson"
-      ],
+      "source_files": ["geometry/site_boundary.geojson"],
       "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "medium",
-      "assumptions": [
-        "Repository provisional boundary is used for intake visualization and topology checks only; it is not an official redline or precise-area basis."
-      ]
+      "assumptions": ["Repository provisional boundary is used for intake visualization and topology checks only; it is not an official redline or precise-area basis."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-10",
+        "rounding": "0.001 sqm",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "replacement or revision of the submitted site-boundary feature"
+      }
     },
     "building_footprint_area_sqm": {
       "status": "known",
       "value": 310807.184,
       "unit": "sqm",
-      "source_files": [
-        "geometry/buildings.geojson"
-      ],
+      "source_files": ["geometry/buildings.geojson"],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": ["Submitted building polygons are conceptual evidence objects, not a cleared existing-building survey."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-10",
+        "rounding": "0.001 sqm",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "replacement or revision of any submitted building polygon"
+      }
     },
     "green_ratio": {
       "status": "known",
       "value": 0.123423,
       "unit": "ratio",
-      "source_files": [
-        "geometry/green_space.geojson",
-        "geometry/site_boundary.geojson"
-      ],
+      "source_files": ["geometry/green_space.geojson", "geometry/site_boundary.geojson"],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": ["Both numerator and denominator use submitted provisional geometry."],
+      "numerator_definition": "area of submitted green-space polygons in EPSG:4548",
+      "denominator_definition": "area of submitted site-boundary polygon in EPSG:4548",
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-10",
+        "rounding": "0.000001 ratio",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of green-space or site-boundary geometry"
+      }
     },
     "public_space_ratio": {
       "status": "known",
       "value": 0.073281,
       "unit": "ratio",
-      "source_files": [
-        "geometry/public_space.geojson",
-        "geometry/site_boundary.geojson"
-      ],
+      "source_files": ["geometry/public_space.geojson", "geometry/site_boundary.geojson"],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": ["Both numerator and denominator use submitted provisional geometry."],
+      "numerator_definition": "area of submitted public-space polygons in EPSG:4548",
+      "denominator_definition": "area of submitted site-boundary polygon in EPSG:4548",
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-10",
+        "rounding": "0.000001 ratio",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "revision of public-space or site-boundary geometry"
+      }
     },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
-      "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
-      ],
+      "source_files": ["brief/site-package/ranges/planning_limits.json"],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "assumptions": ["No cleared total-floor-area inventory or official site boundary is available."],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package.",
+      "numerator_definition": "cleared total floor area within the official calculation boundary",
+      "denominator_definition": "official site area under the applicable planning rule",
+      "responsible_role": "planning-control and building-survey professionals",
+      "collection_gate": "G0",
+      "recalculation_trigger": "receipt of cleared official controls, boundary, and floor-area inventory",
+      "risk_ids": ["R-05", "R-06"]
     },
     "key_area_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": [
-        "geometry/key_areas.geojson"
-      ],
+      "source_files": ["geometry/key_areas.geojson"],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": ["The count represents the three required conceptual key-area objects, not cleared official polygons."],
+      "calculation_metadata": {
+        "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+        "projection": "EPSG:4548",
+        "verified_on": "2026-08-10",
+        "rounding": "integer count",
+        "responsible_role": "spatial-analysis professional",
+        "recalculation_trigger": "replacement of the submitted key-area feature collection"
+      }
     },
     "independent_task_completion_rate": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": ["assumptions.json"],
-      "formula": "independently_completed_tasks / observed_tasks",
+      "formula": "independently_completed_valid_tasks / valid_observed_tasks",
       "confidence": "unknown",
       "assumptions": ["Requires voluntary task testing with accessible participation and professional review."],
-      "reason": "No cleared field baseline or real participant study is available."
+      "reason": "No cleared field baseline or real participant study is available.",
+      "numerator_definition": "valid tasks completed from fixed start to fixed end without unplanned personal assistance, with protocol-defined reasonable accommodation allowed",
+      "denominator_definition": "all valid observed tasks; withdrawals and technical failures are reported separately and never silently removed",
+      "exclusions": "only protocol-defined invalid observations, with count and reason disclosed",
+      "responsible_role": "accessibility research lead and participant advisory group",
+      "collection_gate": "G2",
+      "recalculation_trigger": "each closed paired-test round or protocol revision",
+      "risk_ids": ["R-03", "R-08"],
+      "scenario_ids": ["S01", "S06", "S08"],
+      "work_package_ids": ["JZ-01", "JZ-03", "JZ-04"]
     },
     "multichannel_information_coverage": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": ["assumptions.json"],
-      "formula": "service_points_with_two_or_more_equivalent_information_channels / audited_service_points",
+      "formula": "audited_service_points_with_two_or_more_equivalent_information_channels / valid_audited_service_points",
       "confidence": "unknown",
       "assumptions": ["Channel equivalence requires user testing, not a file-count proxy."],
-      "reason": "Service-point inventory and multimodal accessibility audit are missing."
+      "reason": "Service-point inventory and multimodal accessibility audit are missing.",
+      "numerator_definition": "valid audited points where the same critical state or instruction is available through at least two participant-verified channels",
+      "denominator_definition": "all valid audited service and decision points in the agreed route or service inventory",
+      "exclusions": "points outside the agreed inventory, reported separately",
+      "responsible_role": "information-accessibility and wayfinding professionals",
+      "collection_gate": "G1",
+      "recalculation_trigger": "interface, route, content, or channel change",
+      "risk_ids": ["R-03", "R-07", "R-08"],
+      "scenario_ids": ["S01", "S03", "S10"],
+      "work_package_ids": ["JZ-01", "JZ-05"]
     },
     "ai_off_service_equivalence_gap": {
       "status": "unknown",
@@ -103,18 +155,113 @@
       "source_files": ["assumptions.json"],
       "formula": "abs(completion_rate_ai_on - completion_rate_ai_off)",
       "confidence": "unknown",
-      "assumptions": ["The same public task must be tested with AI enabled and disabled."],
-      "reason": "No operational services or paired task-test results exist."
+      "assumptions": ["The same public task must be tested with AI enabled and disabled under equivalent reasonable accommodation."],
+      "reason": "No operational services or paired task-test results exist.",
+      "numerator_definition": "absolute difference between valid AI-on and AI-off completion rates for the same task protocol",
+      "denominator_definition": "valid paired tasks in each mode, with order, withdrawal, and technical-failure counts reported",
+      "exclusions": "unpaired observations are retained in the log but excluded from the paired estimate",
+      "responsible_role": "service-design and accessibility test leads",
+      "collection_gate": "G2",
+      "recalculation_trigger": "AI model, fixed-information route, service procedure, or accommodation change",
+      "risk_ids": ["R-04", "R-07", "R-08"],
+      "scenario_ids": ["S08", "S10"],
+      "work_package_ids": ["JZ-01", "JZ-04"]
+    },
+    "forced_abandonment_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["assumptions.json"],
+      "formula": "valid_attempts_ended_because_of_recorded_barrier / valid_task_attempts",
+      "confidence": "unknown",
+      "assumptions": ["Exit reasons must be participant-described or protocol-observed without inferring diagnosis."],
+      "reason": "No cleared participant task log or exit-reason record exists.",
+      "numerator_definition": "valid attempts ended after a recorded environmental, information, interaction, or service barrier",
+      "denominator_definition": "all valid task attempts, including completed and barrier-ended attempts",
+      "exclusions": "voluntary withdrawal unrelated to the task and technical failures are reported as separate denominator classes",
+      "responsible_role": "accessibility research lead and participant representatives",
+      "collection_gate": "G2",
+      "recalculation_trigger": "task-script, route, interface, or reasonable-accommodation change",
+      "risk_ids": ["R-03", "R-08"],
+      "scenario_ids": ["S01", "S02", "S06", "S08"],
+      "work_package_ids": ["JZ-01", "JZ-03", "JZ-04"]
     },
     "human_handover_success_rate": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": ["assumptions.json"],
-      "formula": "successful_human_handovers / attempted_human_handovers",
+      "formula": "successful_human_handovers / valid_handover_triggers",
       "confidence": "unknown",
       "assumptions": ["Handover must be timed and evaluated with informed participants in a controlled trial."],
-      "reason": "No approved trial or operator baseline is available."
+      "reason": "No approved trial, operator rota, or response baseline is available.",
+      "numerator_definition": "valid triggers acknowledged by an identified responsible person who provides the protocol-defined next action",
+      "denominator_definition": "all valid handover triggers, including unanswered, misrouted, and late triggers",
+      "exclusions": "test cancellations before a trigger and protocol-invalid triggers, with counts disclosed",
+      "responsible_role": "service operator and accessibility test lead",
+      "collection_gate": "G2",
+      "recalculation_trigger": "operator, rota, interface, escalation, or service-hours change",
+      "risk_ids": ["R-02", "R-04", "R-07"],
+      "scenario_ids": ["S03", "S05", "S08", "S10"],
+      "work_package_ids": ["JZ-02", "JZ-04"]
+    },
+    "human_handover_response_time_seconds": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "measurement_unit": "seconds",
+      "source_files": ["assumptions.json"],
+      "formula": "median(human_acknowledgement_timestamp - valid_handover_trigger_timestamp)",
+      "confidence": "unknown",
+      "assumptions": ["The trigger and acknowledgement events must be defined before timing; no target threshold is asserted."],
+      "reason": "No approved exercise, timestamp log, or accountable operator baseline is available.",
+      "numerator_definition": "elapsed seconds from each valid trigger to first acknowledgement by the responsible human role",
+      "denominator_definition": "count of valid handover triggers; unanswered triggers are reported separately and never assigned an invented duration",
+      "exclusions": "protocol-invalid triggers only, with count and reason disclosed",
+      "responsible_role": "service operator and operations evaluator",
+      "collection_gate": "G2",
+      "recalculation_trigger": "operator, rota, interface, escalation, or service-hours change",
+      "risk_ids": ["R-02", "R-04", "R-07"],
+      "scenario_ids": ["S05", "S08", "S10"],
+      "work_package_ids": ["JZ-02", "JZ-04"]
+    },
+    "sensory_load_exceedance_point_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": ["assumptions.json"],
+      "formula": "count(distinct_participatory_audit_points_confirmed_as_exceedance_or_without_recovery_option)",
+      "confidence": "unknown",
+      "assumptions": ["Exceedance criteria and recovery needs must be co-designed; file geometry alone cannot establish sensory load."],
+      "reason": "No cleared sound, light, crowding, or participatory sensory baseline exists.",
+      "numerator_definition": "distinct audited points confirmed under the agreed protocol as exceeding a defined sensory condition or lacking a usable recovery option",
+      "denominator_definition": "not applicable to a count; the audited route length and total audited points are reported as context",
+      "exclusions": "unvisited or protocol-incomplete points, listed separately",
+      "responsible_role": "environmental assessment lead and participant advisory group",
+      "collection_gate": "G1",
+      "recalculation_trigger": "route, event programme, lighting, sound, crowd management, or recovery-space change",
+      "risk_ids": ["R-03", "R-06", "R-08"],
+      "scenario_ids": ["S02", "S09"],
+      "work_package_ids": ["JZ-01", "JZ-03", "JZ-05", "JZ-06"]
+    },
+    "co_design_role_coverage_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["assumptions.json"],
+      "formula": "required_role_groups_with_voluntary_participation / role_groups_required_by_approved_protocol",
+      "confidence": "unknown",
+      "assumptions": ["Role-group coverage does not measure personal ability, diagnosis, identity, or representativeness by headcount."],
+      "reason": "No approved ethics protocol, recruitment record, or participant-role structure exists.",
+      "numerator_definition": "protocol-required participant, caregiver where relevant, operator, maintainer, and professional role groups with at least one voluntary contribution recorded",
+      "denominator_definition": "all role groups required by the approved co-design protocol for that task",
+      "exclusions": "observers without a recorded contribution; withdrawals remain reported",
+      "responsible_role": "co-design lead, ethics reviewer, and participant representatives",
+      "collection_gate": "G0",
+      "recalculation_trigger": "task scope, participant group, operating model, or protocol change",
+      "risk_ids": ["R-01", "R-03", "R-08"],
+      "scenario_ids": ["S01", "S05", "S08"],
+      "work_package_ids": ["JZ-03", "JZ-06"]
     }
   }
 }
