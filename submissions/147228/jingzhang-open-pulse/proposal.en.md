@@ -16,7 +16,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jing-Zhang Open Pulse: A Verifiable AI Innovation Public Belt
 
-> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates register recomputation and audit interfaces. The current gates remain `design_target`; only an explicitly marked `PASS` from a local runner represents a completed package-level replay.
+> **Core proposition:** Jing-Zhang Open Pulse does not string AI devices into a showcase axis. It turns the heritage-park corridor into a civic loop: the three key areas respectively host trusted testing, open conversion and city experience; every component carries an ordinary equivalent service, a human owner, positive and negative evidence, a public receipt and a retirement decision. The proposal carries spatial judgment; GeoJSON, metrics, matrices and 40 gates carry recomputation and audit evidence.
 
 ## One-page executive brief: civic loop and one-component/one-proof-mile
 
@@ -62,21 +62,6 @@ The full formal dossier follows with design basis, three scopes, key areas, ecos
 This proposal follows the official open-call announcement, the repository site package and the agent taskbook. The machine-readable evidence chain is registered in `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `compliance_matrix.json`, and `visual/assets/evidence-ledger.json`. The most important source IDs are `[source:OFFICIAL-ANNOUNCEMENT]`, `[source:AGENT-TASKBOOK]`, `[source:SITE-PACKAGE]`, `[source:SOURCE-REGISTRY]`, `[source:PROCESSED-FACT-PACK]`, `[source:BOUNDARY-SOURCE]`, and `[source:KEY-AREA-SOURCE]`.
 
 The package uses the repository's maintained provisional geometry where official boundary polygons are not available. `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` therefore remain `official_boundary=false` and `provisional_constraint`. They are suitable for design discussion, visualisation and self-checking, but not for a statutory red line, approval, precise land-area claim or government commitment. When official polygons arrive, all land use, roads, buildings, green space, public space, phasing and metrics must be recalculated.
-
-### 1. Evidence hierarchy and decision boundary
-
-The package first asks what each source can support, then asks what spatial move is defensible. “Registered” means that a record can be traced; it does not mean that the record supports a formal spatial, engineering or implementation conclusion. Reviewers should read the allowed and disabled scope together.
-
-| Evidence level | Package examples | Can support | Cannot support |
-| --- | --- | --- | --- |
-| Task and professional standards (formal) | Official announcement, cleared taskbook, planning and regulatory-plan standard snapshots | Task requirements, deliverable depth, professional principles and review questions | Official polygons, ownership, engineering conditions, approval or government commitment |
-| Cleared source registration | `sources.json`, `data/source_registry.json`, public cases and registered standards | Source use, mechanism comparison, provenance responsibility and disabled scope | Upgrading case performance, background statistics or registration records into Haidian implementation facts |
-| Provisional spatial basis | `site_boundary.geojson`, `key_areas.geojson`, `constraints.geojson` | Concept generation, topology checks, relative relationships and a trigger for whole-package recomputation | Statutory red lines, parcel ownership, precise area, road red lines or regulatory controls |
-| Package-derived design data | GeoJSON, `metrics.json`, scenario/phasing/accountability matrices | Recomputable concept structure, counts, node actions, phasing dependencies and audit interfaces | Existing-condition survey, facility capacity, field performance, public acceptance or construction permission |
-| Administrative statistics and open background | Statistical bulletins, transport material, OSM/Overpass background screening | Question calibration, corridor-level data-collection priorities and explicit uncertainty | Corridor footfall, station OD, demand/capacity, formal boundary, siting or performance targets |
-| Synthetic scenarios and paper/methods | S02 synthetic tabletop replay, MCDA/robustness methods and mechanism cases | Test protocols, assumptions, negative fixtures, human takeover and follow-up validation design | Field results, engineering safety, procurement basis, predictive guarantee or official score |
-
-The review rule is: a formal conclusion must return to the corresponding formal source; `provisional`, `background_only`, `design_target` and `not_run` remain in those states. A package runner `PASS` proves only that a structural contract can be replayed; it does not become field evidence, professional sign-off, government approval or a competition score.
 
 ### Provisional boundary cross-check: preserve the discrepancy as a risk, not a red line
 
@@ -177,20 +162,6 @@ The three key areas already have functions and spatial actions, but ordinary rou
 These relationships only identify which public and reversible conditions to compare first. They do not answer where construction is permitted, who holds the space, or what final control parameters should be. A formal scheme must be determined by a professional team after regulatory-plan, survey, ownership, fire, structural, municipal, traffic and public-participation evidence is available [depth:height_massing_character] [depth:development_intensity_controls].
 
 Until then, renewal prioritises wayfinding, staffed service, cycle shelter, weather seats, accessible ramps and movable equipment; no road redline, building increment or demolition conclusion follows [standard:MOHURD-CONTROL-DETAILED-PLANNING].
-
-### From civic pulse to city API: a human buffer and compute-energy contract
-
-This iteration does not add another AI showcase. It makes “people first, machines callable, failure reversible” a shared conceptual interface for the three key areas. `human-first-buffer.json` treats native/older residents, workers at risk of displacement, digitally excluded users and night-time AI workers as four non-identifying design lenses; they are not population statistics, and all four social indicators remain `unknown`. [data:visual/assets/human-first-buffer.json] [metric:resident_continuity_retention_rate] [metric:skills_retraining_corridor_completion_rate]
-
-**Spatial moves for the human buffer.** The AI Origin Community gets a staffed resident-continuity and small-merchant-return desk, plus a skills-retraining corridor that reads “displaced risk → retraining → robot maintenance / data labelling / scenario operations.” Dazhongsi puts staffed channels, intergenerational learning, night interchange and screen-free green space on the public edge; Zhongzhi Garden keeps tests visible while data stays protected. IMF estimates almost 40% of global employment, and about 60% in advanced economies, is exposed to AI; a WEF employer survey reports 41% expect workforce downsizing as AI replicates roles. These figures justify a retraining interface, not a Haidian job-loss, layoff or placement claim. [source:IMF-GENAI-WORK-2024] [source:WEF-FUTURE-OF-JOBS-2025] [data:geometry/key_areas.geojson#PROV-KEY-002]
-
-**A city API for machines to use.** `city-api-energy-contract.json` sets eight minimum fields: `asset_id`, `geometry_version`, `current_state`, `uncertainty`, `responsible_role`, `human_fallback`, `stop_condition`, and `release_note`. Node 001 is the API observatory and compute-energy evidence handoff; node 002 is public-data authorisation and reskilling; node 003 is mixed human-machine movement and international public service. A missing field blocks release; an API contract is not a built municipal interface. [data:visual/assets/city-api-energy-contract.json] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design]
-
-**Compute-energy is a hard gate, not facility backing.** Beijing’s official energy-review rule supplies PUE bands for new/expanded data centres, renewable-energy planning, monitoring and waste-heat coupling. The PUE>1.35 differentiated-electricity rule for existing centres and banded green-electricity goals are policy context/targets; they must not be rewritten as a universal 30% statutory minimum for every new intelligent-compute centre. Waste heat to district heating is only a conceptual handoff until source, network, responsibility, safety and metering are verified. No local data centre, energy contract or heat-network evidence is claimed; `compute_energy_evidence_completeness` and `recovered_heat_handoff_status` remain unknown. [source:BEIJING-DATACENTER-ENERGY-REVIEW-2023] [source:BEIJING-STOCK-DATACENTER-OPTIMIZATION-2024-2027] [source:BEIJING-NEW-ENERGY-HEATING-2023]
-
-**Silicon right-of-way and versioned governance.** Xiaoyuehe Wing is only a candidate conceptual area for an embodied-intelligence public test. Walking and accessible routes come first; robots must be slow, visible, observed, emergency-stoppable and human-overridable. Low-altitude logistics is a pending, ground-first interface, not a height, route or permit conclusion. An annual check, public receipt and release note record geometry version, evidence state, objections, responsibility and keep/repair/retire decisions; unknown, unanswered appeals or failed human fallback freezes expansion and restores ordinary service. [data:visual/assets/city-api-energy-contract.json] [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:versioned_governance_release_note_rate]
-
-All spatial, skills, API, compute-energy and silicon-right-of-way moves are conceptual suggestions for professional refinement. They require official geometry, rights, energy, transport, fire, privacy, insurance and public-participation evidence; they do not establish existing conditions, settled policy, engineering feasibility or implementation commitments.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -307,13 +278,11 @@ Triggers convert future change into an executable fallback: heat warning reduces
 
 ### Stricter Monte Carlo robustness check
 
-To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment declares 50,000 deterministic Monte Carlo draws with random seed `147228` across five stakeholder-weight profiles, eight stress states and score noise. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
+To avoid making the proposal look artificially strong under fixed weights, a separate S0–S4 experiment samples five design prototypes under five stakeholder-weight profiles, eight stress states and score noise. It uses 50,000 deterministic Monte Carlo draws with random seed `147228`. [metric:resilience_v13_candidate_count] [metric:resilience_v13_monte_carlo_draws]
 
 The S4 balanced-adaptation option has an approximately 78.862% win rate, mean regret of 0.314 points, a robust mean score of 72.518 and a P05 score of 70.252. These are comparative design results, not field performance. [metric:resilience_v13_selected_mean_score] [metric:resilience_v13_selected_p05_score] [metric:resilience_v13_selected_win_rate]
 
 The minimum item across the eight stresses and the gate state are recorded in [metric:resilience_v13_selected_mean_regret], [metric:resilience_v13_selected_min_stress_score] and [metric:resilience_v13_hard_gates_passed]. They still require calibration against site data.
-
-These MCDA values are declared comparative results, not metrics independently replayed inside this package. The package does not ship per-draw inputs, five stakeholder weights, eight stress increments, response functions or a runner, so the draw count and derived outputs remain pending replay until those inputs and the runner are packaged; they can be promoted to known metrics only after GATE-04 reproduces them from registered inputs.
 
 The next optimisation direction is therefore explicit: add passive shade and maintainable stormwater storage; reduce dependence on high sensor counts; improve offline operation and human takeover; decouple event capacity from quiet space; and establish asset redundancy and replacement-part standards. The Beijing public meteorological catalogue is a route for later climate calibration, but the Haidian download currently requires a platform user key, so unacquired temperature, rainfall, wind-speed and humidity values are not presented as facts. [source:BEIJING-METEOROLOGICAL-OPEN-DATA] [assumption:A-METEOROLOGICAL-DATA-001]
 
@@ -389,8 +358,6 @@ The `scenario-operation-matrix.json` uses relative `low`, `medium` and `high` co
 The current quantitative decision experiment compares baseline, adaptive, regenerative and stress states. `adaptive` is the preferred candidate within this internal low-regret comparison; relative model scores are not competition scores, causal benefits, engineering costs or government commitments. The historical and 2030 raw extrapolations are diagnostic only: rate-like values outside 0–100 or intensity-like values below 0 are flagged model outputs, not public targets, existing facts or scoring inputs. The complete raw series, targets, backtest and fallback actions remain in `visual/assets/model-backtest.json`.
 
 The preferred indicators are district income per capita, district GDP per capita and district health institutions per 10,000 people, with green coverage, physicians, wastewater treatment and water intensity as guardrails. Every number must be read with its source, year, unit, scope and limitation in `visual/assets/evidence-ledger.json`, `visual/assets/model-backtest.json`, `visual/assets/indicator-selection.json` and `metrics.json`.
-
-Nine structured numbers visible on the pages are separately registered in `visual/assets/claim-provenance.json`. Each record gives the raw-value path in `metrics.json`, source files, corresponding figures and bilingual metric markers, while `run-open-pulse-claim-provenance.js` rechecks those relationships one by one. OSM screening, provisional geometry and candidate options retain their declared status as background records, conceptual structure or design experiment. This table improves the reading path without changing evidence levels. [data:visual/assets/claim-provenance.json]
 
 Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, object counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage, constraint interfaces and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
 

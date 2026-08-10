@@ -60,7 +60,10 @@
       "design_slow_mobility_network_length_m": 13013.9,
       "osm_mapped_station_names_within_800m_count": 16,
       "osm_mapped_crossing_count": 189,
-      "resilience_v13_candidate_count": 5
+      "resilience_v13_candidate_count": 5,
+      "resilience_v13_monte_carlo_draws": 50000,
+      "resilience_v13_selected_win_rate": 0.78862,
+      "resilience_v13_selected_p05_score": 70.252
     }
   },
   "professional_review": {
