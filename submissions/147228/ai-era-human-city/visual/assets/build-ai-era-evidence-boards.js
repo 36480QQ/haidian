@@ -57,6 +57,33 @@ const enFamilyNames = {
   "PF-04": "Xiaoyue River blue-green and human-machine test",
   "PF-05": "Culture, landmarks and global co-creation loop"
 };
+const enFamilyDetails = {
+  "PF-01": {
+    time_gate: "G0: publish rules and co-create samples; G1: professional review",
+    acceptance_metrics: "Human service access, exit protocol, community seat",
+    exit_protocol: "Pause and publicly revise on complaint or inequality risk"
+  },
+  "PF-02": {
+    time_gate: "G0: navigation prototype; G1: accessibility and night-safety review",
+    acceptance_metrics: "Human consultation, explainable path, night feedback",
+    exit_protocol: "Exit if no human fallback or risk cannot be explained"
+  },
+  "PF-03": {
+    time_gate: "G0: paper protocol; G1: authorization and safety review",
+    acceptance_metrics: "Purpose limitation, revoke button, audit log",
+    exit_protocol: "Freeze on authorization lapse or bias complaint"
+  },
+  "PF-04": {
+    time_gate: "G0: map rule; G1: special safety review",
+    acceptance_metrics: "People first, stop control, incident record, ecological boundary",
+    exit_protocol: "Do not enter field work without permit, safety threshold, hydrology data"
+  },
+  "PF-05": {
+    time_gate: "G0: narrative and event prototype; G1: rights and venue review",
+    acceptance_metrics: "Traceable sources, cultural review, post-event release note",
+    exit_protocol: "Withdraw or revise if source unproven or misleading risk appears"
+  }
+};
 
 const esc = (value) => String(value)
   .replace(/&/g, "&amp;")
@@ -104,8 +131,8 @@ const start = (title, subtitle, lang) => [
   `<desc id="desc">${esc(subtitle)} The board is generated from local JSON contracts; it is not field performance, authorization, or an official score.</desc>`,
   `<rect width="1600" height="1000" fill="#f5f7fb"/>`,
   rect(0, 0, 1600, 124, "#152442", "none", 0),
-  text(64, 61, title, {size: 42, fill: "#ffffff", weight: 700, width: 64, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"}),
-  text(66, 99, subtitle, {size: 21, fill: "#c8d5ec", width: 112, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"})
+  text(64, 61, title, {size: lang === "zh" ? 42 : 38, fill: "#ffffff", weight: 700, width: lang === "zh" ? 64 : 88, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"}),
+  text(66, 99, subtitle, {size: lang === "zh" ? 21 : 18, lineHeight: lang === "zh" ? 28 : 21, fill: "#c8d5ec", width: lang === "zh" ? 112 : 150, family: lang === "zh" ? "Arial Unicode MS,Arial,sans-serif" : "Arial,sans-serif"})
 ];
 
 function ordinaryBoard(lang) {
@@ -183,16 +210,21 @@ function implementationBoard(lang) {
   );
   const heads = zh ? ["项目族", "G0 / G1 时间门", "验收焦点", "退出动作"] : ["Project family", "G0 / G1 gate", "Acceptance focus", "Exit action"];
   const x = [70, 430, 780, 1120];
+  // SVG text does not clip to a column. Keep the character budgets below the
+  // actual pixel width of each column, especially for CJK strings where one
+  // character is close to one font-size wide.
+  const columnWidths = zh ? [18, 17, 17, 21] : [27, 22, 21, 25];
   out.push(rect(60, 150, 1480, 62, "#eaf2ff", "#c9d8ed", 10));
-  heads.forEach((h, i) => out.push(text(x[i] + 14, 188, h, {size: 22, weight: 700, width: i === 0 ? 24 : 28})));
+  heads.forEach((h, i) => out.push(text(x[i] + 14, 188, h, {size: 22, weight: 700, width: columnWidths[i]})));
   implementation.project_families.forEach((family, i) => {
     const y = 224 + i * 116;
     const name = (zh ? zhFamilyNames : enFamilyNames)[family.family_id];
+    const details = zh ? family : enFamilyDetails[family.family_id];
     out.push(rect(60, y, 1480, 98, i % 2 ? "#ffffff" : "#f8fbff", "#d0d9e8", 10));
-    out.push(text(x[0] + 14, y + 30, `${family.family_id}  ${name}`, {size: 19, weight: 700, width: 27}));
-    out.push(text(x[1] + 14, y + 30, family.time_gate, {size: 18, fill: "#36506f", width: 24}));
-    out.push(text(x[2] + 14, y + 30, family.acceptance_metrics, {size: 18, fill: "#36506f", width: 24}));
-    out.push(text(x[3] + 14, y + 30, family.exit_protocol, {size: 18, fill: "#7f3f32", width: 25}));
+    out.push(text(x[0] + 14, y + 30, `${family.family_id}  ${name}`, {size: 19, weight: 700, width: columnWidths[0]}));
+    out.push(text(x[1] + 14, y + 30, details.time_gate, {size: zh ? 17 : 16, lineHeight: zh ? 22 : 21, fill: "#36506f", width: columnWidths[1]}));
+    out.push(text(x[2] + 14, y + 30, details.acceptance_metrics, {size: zh ? 17 : 16, lineHeight: zh ? 22 : 21, fill: "#36506f", width: columnWidths[2]}));
+    out.push(text(x[3] + 14, y + 30, details.exit_protocol, {size: zh ? 17 : 16, lineHeight: zh ? 22 : 21, fill: "#7f3f32", width: columnWidths[3]}));
   });
   out.push(rect(60, 850, 1480, 78, "#fff6dc", "#e4a735", 10));
   out.push(text(82, 884, zh
@@ -231,9 +263,9 @@ function taskbookCultureBoard(lang) {
     const x = 64 + i * 494;
     out.push(rect(x, 160, 466, 220, "#ffffff", "#cdd9e8", 16));
     out.push(rect(x, 160, 466, 12, colors[i], "none", 16));
-    out.push(text(x + 24, 210, title[i], {size: 26, weight: 700, width: 25}));
-    out.push(text(x + 24, 260, body[i], {size: 21, fill: "#36506f", width: zh ? 21 : 29, lineHeight: 30}));
-    out.push(text(x + 24, 344, refs[i], {size: 17, fill: "#6a4b00", width: 35, lineHeight: 24}));
+    out.push(text(x + 24, 210, title[i], {size: 26, weight: 700, width: zh ? 15 : 30}));
+    out.push(text(x + 24, 260, body[i], {size: 21, fill: "#36506f", width: zh ? 18 : 38, lineHeight: 30}));
+    out.push(text(x + 24, 344, refs[i], {size: 17, fill: "#6a4b00", width: zh ? 23 : 35, lineHeight: 24}));
   }
   out.push(text(64, 438, zh ? "四季运营节奏：把版本治理变成可见的公共时间" : "Four-season rhythm: make version governance visible in public time", {size: 25, weight: 700, width: 78}));
   const seasonsZh = ["春｜公共问题发布周", "夏｜小月河共学走读", "秋｜开发者协议营", "冬｜城市 v0.x 体检"];
@@ -243,22 +275,22 @@ function taskbookCultureBoard(lang) {
   for (let i = 0; i < 4; i += 1) {
     const x = 64 + i * 370;
     out.push(rect(x, 470, 342, 134, i % 2 ? "#f7fbff" : "#fdf8ec", "#d3deeb", 12));
-    out.push(text(x + 18, 510, (zh ? seasonsZh : seasonsEn)[i], {size: 20, weight: 700, width: 22}));
-    out.push(text(x + 18, 550, (zh ? mechanismsZh : mechanismsEn)[i], {size: 17, fill: "#36506f", width: 25, lineHeight: 24}));
+    out.push(text(x + 18, 510, (zh ? seasonsZh : seasonsEn)[i], {size: 20, weight: 700, width: zh ? 15 : 32}));
+    out.push(text(x + 18, 550, (zh ? mechanismsZh : mechanismsEn)[i], {size: 17, fill: "#36506f", width: zh ? 16 : 27, lineHeight: 24}));
   }
-  out.push(text(64, 660, zh ? "五个概念项目族：空间承接 → G0 门 → 专业复核 → 可撤回 release" : "Five conceptual families: spatial carrier → G0 gate → professional review → reversible release", {size: 23, weight: 700, width: 78}));
+  out.push(text(64, 660, zh ? "五个概念项目族：空间承接 → G0 门 → 专业复核 → 可撤回 release" : "Five conceptual families: spatial carrier → G0 gate → professional review → reversible release", {size: zh ? 23 : 20, weight: 700, width: zh ? 78 : 112}));
   implementation.project_families.forEach((family, i) => {
     const x = 64 + i * 296;
     const name = (zh ? zhFamilyNames : enFamilyNames)[family.family_id];
     out.push(rect(x, 700, 270, 112, i % 2 ? "#ffffff" : "#f8fbff", "#d3deeb", 10));
     out.push(text(x + 16, 736, family.family_id, {size: 20, weight: 700, fill: colors[i % colors.length], width: 8}));
-    out.push(text(x + 16, 770, name, {size: 17, fill: "#36506f", width: 22, lineHeight: 23}));
+    out.push(text(x + 16, zh ? 770 : 760, name, {size: zh ? 17 : 15, fill: "#36506f", width: zh ? 14 : 29, lineHeight: zh ? 23 : 20}));
   });
   out.push(rect(64, 864, 1472, 62, "#fff6dc", "#e4a735", 10));
-  out.push(text(86, 902, zh
+  out.push(text(86, zh ? 902 : 892, zh
     ? "图面只回读本包 JSON 与任务书关系；不构成官方评分、活动确定、运营主体、文化许可、企业合作或现场结果。"
     : "This board resolves only package JSON and taskbook relations; it is not an official score, confirmed event, operator, heritage permit, partnership or field result.",
-    {size: 19, fill: "#6a4b00", width: 122}));
+    {size: zh ? 19 : 18, lineHeight: zh ? 26 : 23, fill: "#6a4b00", width: zh ? 122 : 130}));
   out.push("</svg>");
   return out.join("\n");
 }
