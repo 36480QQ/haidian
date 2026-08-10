@@ -287,6 +287,26 @@
       "sha256": "5c5d8fc4911172182086bdbc0f162cba99af92da9a0afc2d923fff3f6a18ff23",
       "language": "en",
       "translation_of": "visual/index.html"
+    },
+    {
+      "path": "report/narrative.en.md",
+      "mode": "100644",
+      "type": "blob",
+      "role": "bilingual",
+      "language": "en",
+      "translation_of": "report/narrative.md",
+      "sha256": "d3ae74e272cf8b6a3092040776e0c5038144b70c4e39a304a363253de21c66d2",
+      "required": false
+    },
+    {
+      "path": "report/copyright_statement.en.md",
+      "mode": "100644",
+      "type": "blob",
+      "role": "bilingual",
+      "language": "en",
+      "translation_of": "report/copyright_statement.md",
+      "sha256": "9610262243ac5a83e4c050f652d90611bec8786b121c8801abef1e935e26c1e1",
+      "required": false
     }
   ],
   "validation_claim": {
