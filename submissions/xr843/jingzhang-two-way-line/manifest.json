@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "af54429d1f28ea6209a7c32396bef03c64732691339815fd4226a6e5cd2b8ff1"
+      "sha256": "119e5bf5cb1d726d847c3b28bc07e1da6fed3e6a1283a47481330836e0fa9ab8"
     },
     {
       "path": "compliance_matrix.json",
@@ -287,7 +287,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "212758e4bff834603d105eb604d5bcb2837c392f9bbef5a4d1ad4c1b8d4cd75d"
+      "sha256": "86cb9ea4a67147626310cfd03d53ffca8624f2fe6e20891f17b045af3c7d56a1"
     },
     {
       "path": "risk.json",
@@ -305,6 +305,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
