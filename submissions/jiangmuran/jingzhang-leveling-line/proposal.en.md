@@ -27,7 +27,7 @@ scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traf
 
 | What a reviewer will ask | This proposal's answer | What can be checked |
 |---|---|---|
-| What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 8/8 cases including 6 refusal branches |
+| What is the core claim | Trust does not come from one accurate reading. It comes from **measuring back**: run the circuit, return, and if the closure error exceeds tolerance the whole route is re-measured — no single station may be patched | `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the mechanism executes independently, 10/10 cases including 8 refusal branches |
 | Why these two tracks | Because a wrong reading here injures someone. **Measured**: robotics 25 of 416 (6.1%, thinnest of the eight), AI public services 42 | `visual/assets/field_map.json`; the census script is re-runnable |
 | What is done spatially | One spine of 9,443 m, eight tiered benchmarks, three key areas, a complete seven-class land-use partition with no overlaps and no gaps | Nine GeoJSON layers plus `node visual/assets/verify.js`, which independently recomputes every class-1 metric |
 | Why the three red lines are enforceable | Not on a designer's goodwill but on **current law**: Barrier-free Environment Construction Law Art. 39; Interim Measures for Generative AI Services Arts. 14 and 15; Guobanfa [2020] No. 45 | Three `evidence_class: regulatory_baseline` entries in `sources.json`, with article locators and how each was verified |
@@ -202,13 +202,20 @@ The method is identical to closure: **one object, two independent routes, compar
 
 Route A is the announcement's textual bounds, from which the repository inferred `provisional_boundaries.geojson`. Route B is OpenStreetMap's surveyed polygon for the Jing-Zhang Railway Heritage Park and the disused railway alignment. Neither route uses official polygons; both can be re-run by anyone.
 
+<!-- OSMTABLE:BEGIN -->
+
 | Measurement | Result |
 |---|---|
 | Surveyed park area (built section, OSM) | **17.49 ha** |
-| Intersection with the provisional **overall design area** | **0.00 ha (0% coverage)** |
+| Intersection with the provisional **overall design area** | **0.0 ha (0.0% coverage)** |
 | Nearest distance to that boundary | **412.5 m** |
 | Relationship to the provisional **coordinated research area** | 100% contained ✓ |
 | Disused railway | 14 segments, 3,028 m; 683.7 m inside the provisional overall design area |
+| Submitted spine to the surveyed park | 1,116.7 m |
+
+Every reading is recomputed from the shipped coordinates by `node visual/assets/check_osm.js` in EPSG:4548. OSM is crowd-sourced; its limits are registered as `A-OSM-001`.
+
+<!-- OSMTABLE:END -->
 
 **That is a closure error, and it is in the site data rather than on paper.** The 43.6 km² research area agrees completely with OSM, so the announcement's textual bounds and the actual geography do not conflict; but the 11.4 km² provisional overall design area does not intersect the surveyed park at all.
 
@@ -842,7 +849,7 @@ The point is the third one **refusing to accept a record's own conclusions**. It
 
 A reader alone is still not enough. **It shows that a valid record passes; it does not show that an invalid one is refused** — and everything this proposal claims lives in the second. Rule 5 says local repair is unavailable; rule 7 says resumption takes two consecutive cycles. Claims like that are worth something only when the refusal can be demonstrated.
 
-So the mechanism was run. Eight cases, one per rule, each put through **the shipped reader itself** — `check_closure.js` spawned as a subprocess rather than a reimplementation — comparing the expected outcome with the actual one:
+So the mechanism was run. Ten cases, each put through **the shipped reader itself** — `check_closure.js` spawned as a subprocess rather than a reimplementation — comparing the expected outcome with the actual one:
 
 | Case | Rule under test | Result |
 |---|---|---|
@@ -855,7 +862,7 @@ So the mechanism was run. Eight cases, one per rule, each put through **the ship
 | C7 resumption after one pass | rule 7: two consecutive cycles, once may be luck | **refused** |
 | C8 F1 resumption by majority | rule 7: unanimity across four parties, no majority rule | **refused** |
 
-**8/8 behaved as specified: 2 accepted, 6 refused.** The evidence ships as `visual/assets/s08-tabletop-evidence.json` and is re-runnable.
+**10/10 behaved as specified: 2 accepted, 8 refused.** The evidence ships as `visual/assets/s08-tabletop-evidence.json` and is re-runnable.
 
 **What it proves and what it does not have to be written separately.** It proves the decision logic is reproducible and that the refusal branches fire. It does **not** prove any field reading, any real review party, any service performance, or even that anyone would take a reading at all — the numbers are worked values chosen to exercise branches. Treating a tabletop as operational evidence is precisely the substitution this proposal argues against.
 
@@ -1190,7 +1197,7 @@ These four share their source with the core rule: **over tolerance, re-measure t
 
 `compliance_matrix.json` maps announcement tasks and agent.1–agent.6 to sections, layers, metrics and figures. **The matrix is an index, not content** — the taskbook's required outputs must exist as checkable sections, layers and drawings, and copying the matrix into the body would only turn the document into a compliance form.
 
-**Every reference the three matrices make is checked: 114 of them, all resolving.** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 114 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
+**Every reference the three matrices make is checked: 523 declared, 523 resolving.** Between them `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json` assert 523 times that a given requirement is answered in a named section, carried by named layers, evidenced by a named file — and **nothing previously confirmed that any of those sections or files exists**. They are resolved at build time: section references matched against the proposal's headings, file references matched exactly, and any that fails stops the build. Tested by pointing one entry at a section that does not exist. A matrix is the artefact least likely to be re-read when a heading is renamed or a file is added, and this package has already shipped four dead machine-readable anchors, a legend missing a class, and a rights count three files behind, each for that reason.
 
 ### Taskbook coverage, requirement by requirement: `visual/assets/taskbook_coverage.json`
 
@@ -1293,7 +1300,7 @@ This section corresponds to [depth:risk_missing_data].
 
 ### Rights and licence ledger
 
-An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version, file by file, ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json` rather than written by hand, so it enumerates the **77 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. Each entry states how a reviewer checks it, not merely that the author asserts it. A hand-written ledger lists what the author recalls; a generated one lists what is in the package, and that difference is the whole subject of this proposal.
+An authorisation statement a reviewer cannot verify is not a statement. Each row below gives the source, licence **and how to check it**. **The machine-readable version, file by file, ships as `visual/assets/rights_ledger.json`** — generated from `manifest.json` rather than written by hand, so it enumerates the **83 files that actually ship** rather than the asset groups an author remembers, and the build fails if any file has no rights class. Each entry states how a reviewer checks it, not merely that the author asserts it. A hand-written ledger lists what the author recalls; a generated one lists what is in the package, and that difference is the whole subject of this proposal.
 
 <!-- LEDGERCOUNT:BEGIN -->
 
@@ -1373,7 +1380,7 @@ Every item can be completed independently:
 1. `node visual/assets/verify.js` — independently recomputes every class-1 metric and asserts a dozen structural conclusions besides (the land-use partition tested point by point, every controlled boundary cited, every `[data:]` anchor resolving); the exit code is the verdict
 2. `node visual/assets/check_osm.js` — recomputes the 412.5 m closure and every other site cross-check figure from the OSM coordinates shipped beside it; no dependencies, no network, and it refuses rather than guesses where it cannot compute exactly
 3. `node visual/assets/check_cards.js` — resolves every scenario card's benchmark, spatial anchor, exit quantity and executing role against something that exists; `--selftest` proves the checks refuse eight broken card sets
-4. `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the closure mechanism as a data contract, and an eight-case tabletop against the shipped reader
+4. `node visual/assets/check_closure.js` and `run_s08_tabletop.js` — the closure mechanism as a data contract, and a ten-case tabletop against the shipped reader
 5. `visual/assets/census.json` and `field_map.json` — the raw field census and its summary
 6. `geometry/*.geojson` — nine layers, every feature carrying `source_type`, `geometry_role` and `official_boundary` attributes
 7. `visual/assets/osm_reference.json` — the site cross-check and its stated limits
