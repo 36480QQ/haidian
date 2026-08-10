@@ -2,6 +2,13 @@
 
 Change log / 变更记录
 
+## v1.4 - 2026-08-10
+
+- Replaced the early A0 protocol-card sequence with a wall-readable spatial-system board that foregrounds the three scales, One Spine, Three Commons, Two Wings, and Six Seams.
+- Reframed route release as a four-party joint walkthrough by an authorised venue operator, a local resident/community representative, an accessibility participant, and a safety/transport professional.
+- Persisted the joint-walk roles, outputs, privacy boundary, and fail-closed rule in the site-baseline audit; no field participation or authorisation is claimed.
+- Made the public-data, privacy, copyright, human-review, and compliance floor explicit in both language versions.
+
 ## v1.3 - 2026-08-09
 
 - Rebuilt the bilingual A3/A0 publication system in XeLaTeX/TikZ with print-scale type floors, embedded fonts, stronger distant-reading hierarchy, and repeat-until-stable compilation of each job (at least two passes).

@@ -90,10 +90,55 @@
       "noise_and_neighbour_interface",
       "emergency_exit_and_human_stop_authority"
     ],
+    "joint_walkthrough_release": {
+      "status": "pending_not_authorised",
+      "required_named_roles": [
+        {
+          "role": "authorised_venue_operator",
+          "checks": [
+            "ownership_or_operating_authority",
+            "opening_hours_and_capacity",
+            "entry_exit_and_on_site_stop_authority"
+          ]
+        },
+        {
+          "role": "local_resident_or_community_representative",
+          "checks": [
+            "daily_access_conflict",
+            "noise_and_quiet_hours",
+            "complaint_and_response_route"
+          ]
+        },
+        {
+          "role": "accessibility_participant_or_reviewer",
+          "checks": [
+            "account_free_arrival_to_exit_journey",
+            "step_free_and_sensory_continuity",
+            "offline_and_human_assistance"
+          ]
+        },
+        {
+          "role": "safety_or_transport_professional",
+          "checks": [
+            "crossing_and_waiting_safety",
+            "fire_and_emergency_egress",
+            "lighting_and_event_operations"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "dated_walkthrough_record",
+        "anonymised_issue_and_stop_list",
+        "repair_owner_and_recheck_date",
+        "publish_or_withdraw_decision"
+      ],
+      "privacy_boundary": "Do not publish participant identity, precise trajectory, or accessibility and complaint details beyond the minimum voluntarily authorised record."
+    },
     "fail_closed_rules": [
       "Do not publish a route when any safety-critical segment is unverified.",
       "Do not describe a planned entrance as open without current operator evidence.",
       "Do not start a pilot without a named venue operator and duty holder.",
+      "Do not release a route until all four joint-walkthrough role slots have been accepted by named authorised participants.",
       "Provide a human, account-free, non-AI equivalent or do not launch."
     ]
   },

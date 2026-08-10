@@ -55,6 +55,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 | 2024 方案描述 9 条计划城市支路与“三道一绿” | 六条“缝”只抽取代表性到达—过街—进入—停留—退出核验剖面 | 核验路口控制、净宽/坡度、冲突点、夜间照明和安全替代路径；未核验路线不得发布 |
 | 2024 方案描述 8 处计划社区活动场地；2026 报告记载二期可实施区域主体建设完成 | 三座相遇场只是在候选载体上叠加可逆运营原型 | 核验权属、运营者、容量、消防、噪声、文保和数据条件；未获授权不得上线 |
 
+任何候选“缝”只有在四类角色完成同一条到达—退出联合走查后，才能从 `pending/not_authorized` 升级为可发布路线：获授权场地运营方核验权属或运营权限、开放时段、容量与现场停止权；周边居民或社区代表核验日常通行、噪声与投诉响应；无障碍同行者以无本地账号、手机不可用和行动/感官辅助情境核验全程；安全或交通专业人员核验过街、照明、消防与疏散。四类槽位必须由真实具名主体接受，但公开输出只保留日期、匿名问题/停止清单、修复责任、复查日期和发布或撤回结论，不公开个人身份、精确轨迹或无障碍/投诉细节。[assumption:A-SITE-VERIFY-001] [depth:traffic_rail_slow_parking]
+
 当前仓库没有官方精确总体范围和三处重点区 polygon。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 沿用组织方提供的 provisional rough geometry，属性均明确 `official_boundary=false`；图中虚线只用于构图、自检和可讨论的面积复算，不是官方红线、道路红线、权属线或审批依据。公开的 43.6 平方公里、约 11.4 平方公里和 368.4 公顷是公告标称规模；11,412,825.386 平方米是临时 polygon 在 EPSG:4548 下的计算结果，两者不能混作精确法定面积。官方 geometry 到位后，所有图层、比例和图纸必须整体复算。[source:BOUNDARY-SOURCE] [assumption:A-BOUNDARY-001]
 
 所有空间动作均为“概念建议、参考方案、可供专业团队深化研究”。方案不作容积率、建筑高度、具体拆改留、道路或轨道线位、市政容量、投资、权属、审批与开发时序的最终判断；不把活动设想写成政府承诺，也不使用个人隐私、未获授权的企业资料或未向公众开放的规划资料。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:risk_missing_data]
@@ -252,6 +254,8 @@ scenarios: ["enterprise-service-copilot", "ai-cultural-guide", "ai-health-servic
 五张主图、九个 GeoJSON、A3 文册、A0 展板、双语离线 HTML、正文以及三张合规/标准/深度矩阵共享同一指标命名。`metrics.json` 给出公式、来源文件、置信度和假设；`self_check.json` 保存确定性、空间、视觉与专业证据检查。若图面数字与 JSON 不一致，以重新计算并重新出图为修复方式，而不是手工改一个展示数字。[data:geometry/site_boundary.geojson#SITE-001] [metric:green_ratio]
 
 ## 风险、版权与合规说明
+
+本方案的合规底线是：只使用可公开资料；不处理未经同意的隐私；图片、字体与文本先做版权核验；关键判断由人工签署并保留复核记录；任何数据、空间或运营合规检查未通过即停止发布。
 
 最高伦理风险是把“相遇”误做成人际画像、约会匹配或监控。本方案明确禁止基于人脸、通讯录、精确轨迹、情绪、健康、民族、宗教、性取向或社交关系进行推荐；只处理用户主动提交的公共任务、语言、无障碍需求、时段与资源偏好。默认短期令牌、到期删除、人工主持、可解释建议和无账号等价入口；任何未来数据处理都须另行合法性与安全评估。[assumption:A-DATA-001] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
