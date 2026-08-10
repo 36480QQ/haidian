@@ -239,24 +239,34 @@
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
+        "brief/site-package/ranges/planning_limits.json",
+        "sources.json#HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208",
+        "sources.json#HD-LANJINGLIJIA-SCHEME-ADOPTION-20250606",
+        "sources.json#HD-URBAN-RENEWAL-GUIDELINE-2025"
       ],
       "formula": "total_floor_area_sqm / official_site_area_sqm",
       "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Official site boundary, approved FAR controls, building survey and ownership data are not present in the public package."
+      "assumptions": [
+        "The reviewed official public notices and urban-renewal consultation draft do not publish an applicable FAR for the submission boundary; adjacent-parcel controls must not be transferred."
+      ],
+      "reason": "Public-source verification is complete for the registered official references, but the applicable adopted plan sheets, official polygon, parcel FAR controls, building survey and ownership data remain unavailable. The appointed planning lead must recalculate at G0 when those records are received."
     },
     "building_height_m": {
       "status": "unknown",
       "value": null,
       "unit": "m",
       "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
+        "brief/site-package/ranges/planning_limits.json",
+        "sources.json#HD-JINGZHANG-CONTROL-PLAN-ADOPTION-20250208",
+        "sources.json#HD-LANJINGLIJIA-SCHEME-ADOPTION-20250606",
+        "sources.json#HD-URBAN-RENEWAL-GUIDELINE-2025"
       ],
       "formula": "official_or_surveyed_building_height",
       "confidence": "unknown",
-      "assumptions": [],
-      "reason": "No official height controls or verified building survey are present."
+      "assumptions": [
+        "The 60 m and 36 m discussion in the adjacent Lanjinglijia notice is parcel-specific evidence of process, not a transferable height control."
+      ],
+      "reason": "The registered official public references were checked, but no applicable height schedule, official site polygon or verified building survey for this submission was found. The appointed planning and architectural leads must recalculate at G0 when parcel-specific controls and survey arrive."
     }
   }
 }
