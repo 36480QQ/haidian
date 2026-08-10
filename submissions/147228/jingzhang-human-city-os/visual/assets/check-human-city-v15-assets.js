@@ -14,6 +14,18 @@ function check(id, pass, detail) {
 function read(name) { return JSON.parse(fs.readFileSync(path.join(here, name), 'utf8')); }
 function exists(rel) { return fs.existsSync(path.join(root, rel)); }
 function round(value) { return Math.round(value * 1e6) / 1e6; }
+function svgRectOverflow(rel) {
+  const content = fs.readFileSync(path.join(root, rel), 'utf8');
+  const viewBox = content.match(/viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/);
+  if (!viewBox) return ['missing viewBox'];
+  const [, viewWidth, viewHeight] = viewBox.map(Number);
+  const overflow = [];
+  for (const match of content.matchAll(/<rect x="(-?\d+(?:\.\d+)?)" y="(-?\d+(?:\.\d+)?)" width="(\d+(?:\.\d+)?)" height="(\d+(?:\.\d+)?)"/g)) {
+    const [, x, y, width, height] = match.map(Number);
+    if (x < 0 || y < 0 || x + width > viewWidth || y + height > viewHeight) overflow.push(match[0]);
+  }
+  return overflow;
+}
 
 const search = read('parametric-search.json');
 const mainline = read('human-city-mainline.json');
@@ -36,6 +48,10 @@ check('OBJECTIVES_REPLAY', samples.every((candidate) => Object.entries(objective
 check('PARETO_IDS_RESOLVE', (search.pareto_front_ids || []).every((id) => [...(search.named_candidates || []), ...samples].some((candidate) => candidate.candidate_id === id)), `pareto=${(search.pareto_front_ids || []).length}`);
 check('MAINLINE_SHAPE', mainline.official_boundary === false && mainline.geometry_role === 'provisional_constraint' && mainline.stages.length === 5 && mainline.areas.length === 3, `stages=${mainline.stages.length}; areas=${mainline.areas.length}`);
 check('DELIVERY_SHAPE', delivery.status === 'conceptual_governance_not_commitment' && delivery.project_families.length === 5 && delivery.gates.length === 3, `families=${delivery.project_families.length}; gates=${delivery.gates.length}`);
+for (const rel of ['assets/figures/human-city-mainline.svg', 'assets/figures/human-city-mainline.en.svg']) {
+  const overflow = svgRectOverflow(rel);
+  check(`SVG_RECT_FITS_${rel}`, overflow.length === 0, overflow.length === 0 ? 'all positioned rectangles fit viewBox' : `overflow=${overflow.join(' | ')}`);
+}
 for (const rel of [
   'assets/figures/human-city-mainline.svg',
   'assets/figures/human-city-mainline.en.svg',
