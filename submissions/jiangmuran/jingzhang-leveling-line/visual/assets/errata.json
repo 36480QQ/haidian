@@ -4,11 +4,11 @@
  "note_en": "A register of this package's own errors. Not a changelog: a changelog says what changed, this says what was wrong, what shape the error had, who found it, and which commit fixed it. Every entry names a commit, and the build verifies that commit exists and touched the file blamed. An errata register that cannot be joined to the repository is the defect it records.",
  "why_zh": "全场 351 份方案中没有一份勘误、撤回或作者自述的复盘。一个主张城市应当公开自身误差的方案，不能自己呈现一个无瑕的表面：它提出的整套机制都建立在「看不见失败的测量不值得信任」之上，文档同理。",
  "counts": {
-  "total": 39,
+  "total": 40,
   "by_found_by": {
    "audit": 17,
    "own-gate": 2,
-   "external-reviewer": 3,
+   "external-reviewer": 4,
    "self": 17
   },
   "by_shape": {
@@ -21,7 +21,7 @@
    "claim-outlived-the-package": 2,
    "deliverable-not-inspected-before-shipping": 8,
    "gate-reported-and-was-ignored": 1,
-   "measurement-answering-a-question-it-cannot-answer": 1
+   "measurement-answering-a-question-it-cannot-answer": 2
   }
  },
  "found_by_meaning_zh": {
@@ -426,6 +426,18 @@
    "what_zh": "新加的 build_field_readings.py 读的是 visual/assets/field_map.json——**随包拷贝**，而刷新那份拷贝的步骤在 build_all 里排在它后面。于是语料从 354 涨到 371 的那次构建里，它用上周的数字重新生成了母题表，并打印成功。",
    "why_zh": "第十一次同一形状，而这次格外难堪：**这个生成器存在的全部理由，就是不让一张手打的表漂移**，它自己却去读了一份还没刷新的拷贝——读的是过去。一张由包里并不携带的文件算出来的表，比手打的更坏，因为它看上去是生成的。",
    "fix_zh": "改读 analysis/field_map.json（生成器自身的输出），并**断言随包拷贝与之一致**，不一致即构建失败。同一次刷新中 census_claims_qa 按设计逐行点名了 33 处过期读数，四份随包文件、每处给出新旧两个值——那是它扩大扫描范围之后的第一次真实刷新。"
+  },
+  {
+   "id": "E40",
+   "commit": "d1ff2be8",
+   "file": "proposal.md",
+   "found_by": "external-reviewer",
+   "shape": "measurement-answering-a-question-it-cannot-answer",
+   "what_zh": "本方案把「同一个 head SHA 被评审多次」当作对**这台仪器**的重复性测量，并写道「不需要对评审读了哪些文件做任何假设」。而 auto_review_queue 的缓存命中此前只比对 submission_dir 与包摘要，不校验 model、endpoint、reasoning effort、prompt/schema 或评审策略代码——因此同一个 head 上的两次读数，可能来自两套不同配置。",
+   "why_zh": "**控制住输入，不等于控制住仪器。** 本方案测出的是「同一份输入的两次读数差多少」，而不是「这台仪器有多可重复」：两者只有在评审身份不变时才相等，而那一点当前不可观测。这与本方案在 #957 上犯过的是同一个形状——拿一个测量去回答它回答不了的问题。**而且这一次本方案在同一篇文字里既写了「无须任何假设」，又在限制里承认模型版本不可固定，两句话互相矛盾而没被自己发现。**",
+   "fix_zh": "限制改写为两条互相夹住的不可观测量：缓存命中使标准差偏小，配置变化（若发生）使它偏大；结论改述为「同一份输入的两次读数」，标题所称的仪器重复性只在身份不变时成立。@147228 的 PR #1190 让 model、endpoint、effort 与 prompt/schema/policy 指纹随决定落盘并要求身份一致才复用缓存——合入后这个区分第一次可以从数据里做出来。该 PR 恰好实现了本方案在 #950 提出的「记录本次是否命中缓存」，并且比那条建议更完整。",
+   "found_by_name": "@147228",
+   "found_in": "Issue #950 / PR #1190"
   }
  ]
 }

@@ -1,13 +1,13 @@
 {
  "retrieved": "2026-08-09",
- "corpus_size": 371,
+ "corpus_size": 373,
  "authoritative_source": "git tree",
  "gallery_index_count": 309,
- "missing_from_gallery_index": 62,
+ "missing_from_gallery_index": 64,
  "track_declarations": {
-  "ai-traffic-walkability": 251,
-  "civic-agent-governance": 241,
-  "enterprise-services-ecosystem": 217,
+  "ai-traffic-walkability": 252,
+  "civic-agent-governance": 242,
+  "enterprise-services-ecosystem": 218,
   "jingzhang-heritage-narrative": 147,
   "ai-origin-community": 116,
   "ai-public-services": 34,
@@ -15,81 +15,81 @@
   "robotics-autonomous-mobility": 21
  },
  "tracks_with_no_declared_proposal": [],
- "proposals_declaring_no_known_track": 12,
+ "proposals_declaring_no_known_track": 13,
  "structural_convergence": {
   "three_cores": {
-   "count": 191,
-   "share": 0.5148
+   "count": 192,
+   "share": 0.5147
   },
   "two_wings": {
-   "count": 145,
-   "share": 0.3908
+   "count": 147,
+   "share": 0.3941
   },
   "one_spine": {
-   "count": 114,
-   "share": 0.3073
+   "count": 115,
+   "share": 0.3083
   },
   "evidence_chain": {
    "count": 112,
-   "share": 0.3019
+   "share": 0.3003
   },
   "scenario_cards": {
-   "count": 61,
-   "share": 0.1644
+   "count": 62,
+   "share": 0.1662
   },
   "reversible": {
-   "count": 59,
-   "share": 0.159
+   "count": 60,
+   "share": 0.1609
   },
   "landmark": {
-   "count": 59,
-   "share": 0.159
+   "count": 60,
+   "share": 0.1609
   },
   "personas": {
    "count": 28,
-   "share": 0.0755
+   "share": 0.0751
   }
  },
  "meta_symbol_saturation": {
   "证明/验证": {
    "count": 103,
-   "share": 0.2776
+   "share": 0.2761
   },
   "脉/血脉": {
-   "count": 97,
-   "share": 0.2615
+   "count": 98,
+   "share": 0.2627
   },
   "铁轨/线路/轨道": {
-   "count": 42,
-   "share": 0.1132
+   "count": 43,
+   "share": 0.1153
   },
   "人字形/折返": {
    "count": 32,
-   "share": 0.0863
+   "share": 0.0858
   },
   "公地/commons": {
    "count": 25,
-   "share": 0.0674
+   "share": 0.067
   },
   "契约/协议": {
    "count": 24,
-   "share": 0.0647
+   "share": 0.0643
   },
   "缝合/织补": {
    "count": 22,
-   "share": 0.0593
+   "share": 0.059
   },
   "交接/接力": {
    "count": 10,
-   "share": 0.027
+   "share": 0.0268
   },
   "校准/基准": {
    "count": 9,
-   "share": 0.0243
+   "share": 0.0241
   },
   "测量/水准": {
    "count": 3,
-   "share": 0.0081
+   "share": 0.008
   },
   "闭塞/令牌": {
    "count": 0,
@@ -98,7 +98,7 @@
  },
  "model_declarations": {
   "未披露（占位符或空）": 106,
-  "GPT-5": 24,
+  "GPT-5": 25,
   "OpenAI Codex (GPT-5)": 23,
   "GPT-5 Codex": 17,
   "claude-fable-5": 14,
@@ -114,12 +114,12 @@
   "GPT-5.6 Codex": 3,
   "OpenAI GPT-5 family via Codex": 3,
   "OpenAI Codex / GPT-5": 3,
+  "gpt-5": 3,
   "Codex GPT-5": 2,
   "gpt-5.3-codex": 2,
   "glm-5.2": 2,
   "GPT-5.6": 2,
   "OpenAI Codex GPT-5": 2,
-  "gpt-5": 2,
   "Kimi-K3": 2,
   "GPT-5.6 Pro": 2,
   "opencode/deepseek-v4-flash-free": 2,
@@ -219,7 +219,7 @@
  "model_declaration_writings": 117,
  "model_family_count": 8,
  "model_families": {
-  "GPT / Codex": 166,
+  "GPT / Codex": 168,
   "Claude": 44,
   "DeepSeek": 24,
   "其他 / 无法归类": 16,
@@ -229,10 +229,10 @@
   "Qwen": 2
  },
  "undisclosed_model_count": 106,
- "undisclosed_model_share": 0.2857,
+ "undisclosed_model_share": 0.2842,
  "proposal_bytes": {
   "min": 15911,
-  "median": 36779,
+  "median": 36700,
   "max": 195890
  },
  "caveats": [

@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-09",
- "tree_count": 371,
+ "tree_count": 373,
  "gallery_index_count": 309,
  "missing_from_gallery_index": [
   "147228/ai-era-human-city",
@@ -14,6 +14,7 @@
   "Cashmeran/jingzhang-co-walk",
   "Daolang239342/ren-track-ai-belt",
   "Dytchem/heritage-ai-loop",
+  "Europeowz/jingzhang-civic-ai-spine",
   "FallingSkyQwQ/co-line",
   "JIQINGFENG0818/jingzhang-gauge",
   "JasonZhangZijun/jingzhang-variations",
@@ -45,6 +46,7 @@
   "hlwhl/weave-jingzhang",
   "jiayuqi7813/jingzhang-ai-innovation-belt",
   "lengjingxu/jingzhang-pause-line",
+  "liaoli-hero/jingzhang-ai-pulse",
   "mel0nyrame/headroom-jingzhang",
   "miaotony/jingzhang-rail-lab",
   "muzililiang/jingzhang-mileposts",
@@ -484,6 +486,15 @@
    "proposal_bytes": 58058,
    "model": "GPT-5.6 Sol Pro",
    "model_family": ""
+  },
+  "Europeowz/jingzhang-civic-ai-spine": {
+   "key": "Europeowz/jingzhang-civic-ai-spine",
+   "title": "京张保修线：为城市AI建立公开售后",
+   "summary": "把铁路百年养护逻辑转译为城市AI的公共保修制度：一线三厂双翼十二站，让每个场景都有责任人、服务期限、故障入口、人工接管、复盘与退役路径。",
+   "tracks": "",
+   "proposal_bytes": 21401,
+   "model": "GPT-5",
+   "model_family": "gpt"
   },
   "FA555/jingzhang-chrono-commons": {
    "key": "FA555/jingzhang-chrono-commons",
@@ -2249,6 +2260,15 @@
    "model": "agent-declared-model",
    "model_family": ""
   },
+  "liaoli-hero/jingzhang-ai-pulse": {
+   "key": "liaoli-hero/jingzhang-ai-pulse",
+   "title": "京张智脉——百年铁轨之上的AI创新带总体城市设计",
+   "summary": "以“一轨三站两翼一环”组织京张铁路遗址沿线AI创新带：把百年铁路遗产转译为面向全球开发者的开放创新基础设施，提出命名体系、AI生态案例、场景卡、朝圣地标与长期运营机制。",
+   "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
+   "proposal_bytes": 27487,
+   "model": "gpt-5",
+   "model_family": "gpt"
+  },
   "liberty-z/jingzhang-ai-loop": {
    "key": "liberty-z/jingzhang-ai-loop",
    "title": "京张智环｜Jing-Zhang AI Loop",
@@ -2587,7 +2607,7 @@
    "title": "未来胡同：把时间还给普通人的 AI 创新带",
    "summary": "以未来胡同为社会空间原型，让AI退到后台，用可验证的交通时间红利、无门槛公共服务和街坊共同生活回应百年京张创新带。",
    "tracks": "[\"ai-traffic-walkability\", \"enterprise-services-ecosystem\", \"civic-agent-governance\"]",
-   "proposal_bytes": 28415,
+   "proposal_bytes": 31499,
    "model": "OpenAI Codex (GPT-5)",
    "model_family": ""
   },
