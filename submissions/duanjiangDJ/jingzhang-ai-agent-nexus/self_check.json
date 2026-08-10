@@ -70,7 +70,7 @@
       "ai_package_stages": {
         "submissions/duanjiangDJ/jingzhang-ai-agent-nexus": "formal"
       },
-      "total_bytes": 7140972,
+      "total_bytes": 7267409,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -132,7 +132,13 @@
         "building_footprint_area_sqm": 310807.184,
         "green_ratio": 0.123423,
         "public_space_ratio": 0.073281,
-        "key_area_count": 3.0
+        "key_area_count": 3.0,
+        "landmark_count": 3.0,
+        "scenario_card_count": 12.0,
+        "test_scenario_count": 3.0,
+        "persona_count": 7.0,
+        "component_count": 7.0,
+        "global_case_count": 8.0
       }
     },
     "stderr": ""
@@ -145,16 +151,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 15,
-        "known_metric_refs_required": 5,
+        "design_depth_items": 31,
+        "known_metric_refs_required": 11,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 15,
           "standard": 5,
-          "depth": 14,
+          "depth": 29,
           "data": 11,
-          "metric": 5
+          "metric": 11
         }
       }
     },

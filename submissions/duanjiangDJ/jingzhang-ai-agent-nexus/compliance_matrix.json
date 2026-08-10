@@ -952,7 +952,11 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "landmark_count",
+        "scenario_card_count",
+        "persona_count",
+        "component_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -972,7 +976,15 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "AGENT-GENERATED-ARTIFACTS"
+        "AGENT-GENERATED-ARTIFACTS",
+        "EXT-GLOBAL-001",
+        "EXT-GLOBAL-002",
+        "EXT-GLOBAL-003",
+        "EXT-GLOBAL-004",
+        "EXT-GLOBAL-005",
+        "EXT-GLOBAL-006",
+        "EXT-GLOBAL-007",
+        "EXT-GLOBAL-008"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1009,7 +1021,8 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "global_case_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1028,7 +1041,15 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "EXT-GLOBAL-001",
+        "EXT-GLOBAL-002",
+        "EXT-GLOBAL-003",
+        "EXT-GLOBAL-004",
+        "EXT-GLOBAL-005",
+        "EXT-GLOBAL-006",
+        "EXT-GLOBAL-007",
+        "EXT-GLOBAL-008"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1065,7 +1086,10 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "scenario_card_count",
+        "test_scenario_count",
+        "persona_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1120,7 +1144,9 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "landmark_count",
+        "component_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1139,7 +1165,8 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CULTURE-JINGZHANG"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1176,7 +1203,8 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "landmark_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1253,7 +1281,15 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "AGENT-GENERATED-ARTIFACTS"
+        "AGENT-GENERATED-ARTIFACTS",
+        "EXT-GLOBAL-001",
+        "EXT-GLOBAL-002",
+        "EXT-GLOBAL-003",
+        "EXT-GLOBAL-004",
+        "EXT-GLOBAL-005",
+        "EXT-GLOBAL-006",
+        "EXT-GLOBAL-007",
+        "EXT-GLOBAL-008"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
