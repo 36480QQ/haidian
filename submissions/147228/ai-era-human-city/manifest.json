@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e255a5f8a866afb2c095353ae3019bedc21010d5f80241d093fb9cde5f4e5164"
+      "sha256": "ef1cdd815ab86c4862be9fc8947fc83ad5339a8e3f54bef328a1123beb803395"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3e77ebbd862d0b6da0426b52f2b847c28134027933cfc0e286ac23f451bb1053"
+      "sha256": "5c0d565ba767ca1bdc3c787c76d4eed80bffff57886f6bbd04c75accc2351349"
     },
     {
       "path": "report/narrative.md",
@@ -150,6 +150,13 @@
       "sha256": "462896d40f62a3897a9883cc7210669c9ac2c7ba62a65dd085f8916f2470eb5b"
     },
     {
+      "path": "assets/figures/spatial-interface-nodes.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "85bf1144c2de586649b266fd7867d4c9e1396c4fcbf0d2fb3571d5a1155e4921"
+    },
+    {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
@@ -209,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2c848f8a50b415dc78ae5847d5b5075987f352787ed7815623c9075f1ad090d9"
+      "sha256": "b589d3307219606600983e55fab1a9d929f13cb4b36dfa81296031a808614f00"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e5189b27a758016f19c21ee9cdbc6d1849abe8034da903a77eade45e01e40dea"
+      "sha256": "09d383077f944969cdb8a710a1b47a0eea9ad0624ac4f1f974d548d1de1150b9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -284,10 +291,18 @@
       "sha256": "e7374a8e9560b32c10abe2b9aba40a0a6f9bf184aa8d026f8088f58fc5d68a47"
     },
     {
+      "path": "assets/figures/spatial-interface-nodes.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/spatial-interface-nodes.svg",
+      "sha256": "61cc44dddc15a8b3970a90c051082f8b50487ca79585f8192f82d66208b9d8ae"
+    },
+    {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "23542888f3f2cbbb94900f7f45d01756559bdb4e216f00bf9ceb0e1ff6d66641"
+      "sha256": "e595b620f7fa7c3da24863a4b746d6fb18e0ea902923a0c038a9c8202d91adf9"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -383,7 +398,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "narrative",
       "required": false,
-      "sha256": "87754b5e278733b1c22e5bf650e0c01b4a5c2bc1bef5d221e5386d75965600d2"
+      "sha256": "7c1bf073d409d075b2f551897e16d9444ef203b468d1f49b519c968c3e5c0fc4"
     },
     {
       "path": "visual/assets/bilingual-equivalence-audit.json",
