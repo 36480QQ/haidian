@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use polygons fully cover site boundary with no gaps or overlaps."
+    },
+    {
+      "check_id": "LAND_USE_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "125 land-use parcels cover the full site area (gap < 100 sqm, well within 1141 sqm tolerance)."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "VISUAL_METRICS",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "All required data-metric elements (site_area_sqm, green_ratio, public_space_ratio) have matching data-value attributes consistent with metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "major",
+      "target": "manifest.json",
+      "message": "All deterministic validation checks pass. Bilingual warnings are non-blocking (legacy v1 compatible)."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "Spatial review passes. Only minor KEY_AREA_PROVISIONAL findings (expected with provisional boundaries)."
+    },
+    {
+      "check_id": "VISUAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "Visual packaging check passes with zero issues."
+    },
+    {
+      "check_id": "PROFESSIONAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Professional evidence review passes with zero issues."
+    }
+  ]
+}
