@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "56b1c4133b1739830ab4439c7e0af0f8c28622e3e1bf17b984230e1adca83030"
+      "sha256": "57673a5f23e904c4b8c8bbb62e4301ce0b52a5539579a32e73e4ef8dfa577efb"
     },
     {
       "path": "proposal.en.md",
@@ -32,7 +32,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "18ead4c06b95a3d83502c18ed176514d991400200b83bda3b0aa087ee6cba303"
+      "sha256": "49b917a7040359df027de42748ac279c1aacb9c33f2d5e393411d7f4a947696b"
     },
     {
       "path": "agent.json",
@@ -65,6 +65,12 @@
       "sha256": "b3dded609c09915ee4ee3a2689d000486268b122831f64721201f38b50a5574d"
     },
     {
+      "path": "risk.json",
+      "role": "risk_matrix",
+      "required": true,
+      "sha256": "f8d5247d2510fc90c57316b6b6ed55dc8a7c0f7bfdcdcd2cab31ca3bf793f2c4"
+    },
+    {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
@@ -87,7 +93,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9a9ad0db3ec6d750846a14ad2ab890ae216afcd8068263eab0198369f63d1601"
+      "sha256": "845c22ec5e87904f38dc44951d096277bdf3d9ce89e65edbdba6c9b9d72b78c5"
     },
     {
       "path": "report/proposal.en.html",
@@ -95,7 +101,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b8612c0c6a56b093bdaba2914aeb9ea2f4e0efca1f88c7fee4e1de23cd8bbaf6"
+      "sha256": "d7fd5935d7a132e8c4a86a6113b23f9c2a573414a4f72d51446442a7bd619b63"
     },
     {
       "path": "report/narrative.md",
@@ -113,7 +119,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1e09ac3f5cdf71add4c7e09fdd47b8a352a769781c02c685f9f923f57d7778eb"
+      "sha256": "ae91a9a71ebe3e4b1c1ad1aeded8196193e74f4e9d1d5e40a8b4b23b75355b7e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -397,13 +403,13 @@
       "path": "visual/assets/wind-health-validation-plan.json",
       "role": "wind_health_validation_plan",
       "required": true,
-      "sha256": "65782d0cb7892ba105ebe51502c0e0f47e97b090ac67858bbe6b986152514420"
+      "sha256": "9f453e0370430044dd7dd585cad7293ac5e3dd143689a259dce98308c9801fba"
     },
     {
       "path": "visual/assets/taskbook-crosswalk.json",
       "role": "taskbook_crosswalk",
       "required": true,
-      "sha256": "f67b119db5c6dd847285807cc39bb3dbfaf357eea3272f9bd05fe28a49dc57c2"
+      "sha256": "b40e83626b64043bf7b7699f143e360593b5c1480f9766c702e7602cbef67f17"
     },
     {
       "path": "visual/assets/regional-ecosystem.json",

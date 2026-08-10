@@ -227,6 +227,8 @@ Caption: The readiness board connects scenario cards, test yards, gates and evid
 
 The package does not replace road-testing permission, vehicle certification, traffic organisation, fire review, insurance, privacy impact assessment, ecological review or construction documents. Rights and reuse boundaries remain in the package copyright statement and source records; future figures must be regenerated from the same structured data and must not turn a target into a known fact. Official polygons, road/utility/ownership, traffic, weather, drainage and ecology baselines, plus professional review, remain prerequisites for any operational or implementation conclusion.
 
+The package-root `risk.json` records eight standard dimensions—policy and data uncertainty, spatial dispute, equity and inclusion, implementation complexity, technology maturity, public acceptance, privacy and operations cost—with bounded mitigations and human-review routes. It is a package-level boundary record, not a field risk assessment, permit or operational-safety conclusion.
+
 Once official polygons, road/utility/ownership, traffic, weather, drainage and ecology baselines arrive, all layers, metrics, drawings, reports and self-check outputs must be regenerated. A single image must never be changed to turn a future target into a known fact.
 
 ## References
