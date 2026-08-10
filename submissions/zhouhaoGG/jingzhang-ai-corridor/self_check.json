@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present with official_boundary=false; replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas (zhongzhiyuan_ai_acceleration_area, beijing_ai_origin_community, dazhongsi_ai_industry_cluster) are provisional_constraint polygons; replace with official polygons before professional scoring."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use polygons are derived from site boundary intersection cells; spatial_review reports no overlap and only a sub-tolerance gap."
+    },
+    {
+      "check_id": "METRICS_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "site_area_sqm, green_space_area_sqm, public_space_area_sqm, building_footprint_area_sqm, green_ratio and public_space_ratio match EPSG:4548 spatial recomputation."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without remote scripts, remote assets, iframes, forms, or tracking; data-metric values match metrics.json."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions with readable narrative."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "proposal.en.md declares language=en, translation_of=proposal.md; figures, HTML, and drawings have en counterparts per the v2 bilingual contract."
+    }
+  ]
+}
