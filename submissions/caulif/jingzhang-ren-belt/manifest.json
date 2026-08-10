@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a0c31f5a94517646bfd90d646a1a0a053b1d417ddd7897a24d95379d84f56fc1"
+      "sha256": "0db13c765f7cef57091b8e46fc7c8b74da11673e22fe790e2a91132b726e9b2e"
     },
     {
       "path": "agent.json",
@@ -48,13 +48,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "fef9ff741ec1ff298b500e6b5d0504d077f8e28fccefa0e85d1f328d2382181d"
+      "sha256": "e97fda70ddf0ed71697a813d5f0dd0197a133d22b406a74294046d8a55e5dd0b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "5afb8f51447a87d8e874abdd76796628a1d72d401f4b6b002529409d471d9d27"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "598fb95ecbb3275e2123632d28f19dfdaa93f8f8c6dc7399bc881e4625120565"
+      "sha256": "a2253ed6c6a0d58d7ad579399d17b306a7b5f88d4717dad66eac141ea1f9e815"
     },
     {
       "path": "report/narrative.md",
@@ -91,28 +91,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "78cb20687173664a2938e985aeb04afe0a631928efb360264ab4e7dfe082c6a5"
+      "sha256": "eb44c1811786fa5d1c2c6a016ba2f5033095a4ae90ee9219e84b06655e23d7d3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d7ab1e7d76dc5f15097d6c45c2859296207fe18c24c165edb734a4ffc82b8903"
+      "sha256": "ef3e15cf7b50ea2884ea624e5257767248b723f2bbc2bf2ddd11c18d5eb4d29a"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a821c726c42f56b6b7a54cb91fdec2572cbce2545e6489e99cbaa9d3a903df8f"
+      "sha256": "0c4c4096cde9a22a46e51ec5b66b3c75ab60874a691d0d9ffbc4401023c1cd4b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "db0fdea25c67294391db55300a43c93fb8fd1e31e0a715d6b93bc56390e4f4e7"
+      "sha256": "8a9c907fafecc8cb223f3dbb72fb2da6a6dc897c5f7b3ab3e8e43e900ef2e5df"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -195,7 +195,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "1192cebd2d945bf87655dc4e4465816165e75ee07c44c4f873bbc37b482149f2"
+      "sha256": "50c454ce6230bdc4dc69814c8d90ddeff471718c9a061e1af28b2e8114fd9f66"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6ed0724194b3a1c52c6d93384f94e00a5a672ec8faa85495f1f1d0e47a6f0ad6"
+      "sha256": "a5f4e9f23ff610487cdb3218e6109b796ea3654eeca157ccbf0f1e193794eb2e"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5acbc03cb9fe5dca0be5d87c8f1878d0dd9cd22b4630dc2fcaca1dcbe1c96b91"
+      "sha256": "4d6bcec4a40359e770b139bd2d2945107587d1b2b944b315db9cd2bf1315ba7f"
     },
     {
       "path": "visual/index.en.html",
@@ -273,7 +273,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fd251d8c884e9cf4508df003976ba70d33b8395b8723dd336cf939bf1dc8465a"
+      "sha256": "9b7814fc31a1cbbc314779731febe7c684326ba07569ffb3591397a9ed2dc312"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -281,7 +281,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "95d4a98cd15dc4b9702975258608c53e4a9f901a87652069494f562e510bf187"
+      "sha256": "70e13d06f247ef5105a9fb45e8e73c29a46b65947aa27ebb49634d126054e991"
     },
     {
       "path": "assets/brand/ren-belt-logo.svg",
@@ -305,7 +305,7 @@
       "path": "visual/assets/evidence/asset-credits.json",
       "role": "asset_credits",
       "required": false,
-      "sha256": "6a12f62dd2399f8a4e3f13f4946754e52213cee9a46b91b6a3b366a931c6d065"
+      "sha256": "30eb23a79ad9f5ee470064bfbfa57cc38ad4a5c75c48b9217faa2749cb00ad8c"
     },
     {
       "path": "assets/context/jingzhang-park-locomotive.jpg",
@@ -329,37 +329,37 @@
       "path": "visual/assets/evidence/case-study-table.json",
       "role": "evidence",
       "required": false,
-      "sha256": "8ce54cb4d0f931b38733fb24edacc5bf88c056a7729979dc43efc6115e6d7da2"
+      "sha256": "86d9bdd7ec2ebaf7fe82978c3bac0352c97b4f20cc3ae1543c85e8945c561ad5"
     },
     {
       "path": "visual/assets/evidence/scenario-operations-matrix.json",
       "role": "evidence",
       "required": false,
-      "sha256": "f3dbb0d66d9a56bca7f4eb2c79ded89cb07c681927f7323f8f64a365f857a93b"
+      "sha256": "ba638bc78c180102fa178db7d0a3b0ad86feb2eb78a1310ff16429540bc460d4"
     },
     {
       "path": "visual/assets/evidence/renewal-implementation-cards.json",
       "role": "evidence",
       "required": false,
-      "sha256": "becf0aecaf96a9adcf2e9818ece24beffb4cd5ff487edbc14d529e88e264edcd"
+      "sha256": "57fbcecc39e7c7a84b8113c597cc2b0c6a868ecda8afd4fefb475ee9f9a10450"
     },
     {
       "path": "visual/assets/evidence/inclusion-framework.json",
       "role": "evidence",
       "required": false,
-      "sha256": "15c125bf778fc77a33ab434a58067cbf937dc73d8342c0237ab8e935981b3c31"
+      "sha256": "e16159d87ea9e40762a79dcd96cd2edd528e7dfeb77ca8a76c574d69d90e41e3"
     },
     {
       "path": "visual/assets/evidence/landmark-system.json",
       "role": "evidence",
       "required": false,
-      "sha256": "45d96d9c9152200e79cd773b422dab9021bb21cdabfc16bb7779bcdf9e74ccf1"
+      "sha256": "9b32d2ecde2b8027a7218c4091e25837e5ed6fffd868c45b84e90908e64ad577"
     },
     {
       "path": "visual/assets/evidence/annual-operations.json",
       "role": "evidence",
       "required": false,
-      "sha256": "d34852e6faf4a481e7b11b4f77a3c82219fe22ef2aa703bbc8a3ef73b951c94c"
+      "sha256": "558570f694bb969ee50bff1b3dc6f15ef34b402e05f32511be2d27c2b8b27fd8"
     }
   ],
   "validation_claim": {
