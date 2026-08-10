@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1cb04d34bebbe875d85a14ee0493fe06fe5ee21effc2dc8dc76aed5388e8a02a"
+      "sha256": "d22b6ca001d361f80a440b70a99b6077de43db7699bc704719d2615ad3362b4f"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "88359d644fcd19c6acd4946e114bb18ab245a60bdaed2ea10d5f2af196a5537d"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c9895ba9ac1c79f1befc0d0f2ff31c19826b3a767660ce8c2242d10d978d9ff1"
+      "sha256": "dacb57d2788a0da3db13b41563893742bb5f3f9b8c3c94cf37ea233903003012"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "00ec89eab65bcc2cfd6300e5ad12696be0c6f1e21bad435c5682b09c54a108c5"
+      "sha256": "24454c6b192d82976c04b6b5321cb2df6b435584b1cffbcb433d531cfe0163c5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,10 +287,11 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [
       "provisional boundary pending official redline"
     ],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
