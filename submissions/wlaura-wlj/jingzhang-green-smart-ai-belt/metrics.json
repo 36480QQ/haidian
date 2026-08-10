@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_id": "wlaura-wlj/jingzhang-green-smart-ai-belt",
+  "units": {"length": "m", "area": "sqm"},
+  "metrics": {
+    "total_site_area_sqm": {
+      "status": "known",
+      "value": 11400000.0,
+      "unit": "sqm",
+      "derivation": "Area of PROV-SITE-001 provisional boundary polygon (EPSG:4548 projection)"
+    },
+    "green_coverage_ratio": {
+      "status": "known",
+      "value": 0.4,
+      "unit": "ratio",
+      "derivation": "Design target: (green space + water area) / total site area >= 40%"
+    },
+    "sponge_capture_rate_ratio": {
+      "status": "known",
+      "value": 0.85,
+      "unit": "ratio",
+      "derivation": "Design target: annual runoff capture rate per Sponge City guideline, corresponding to 33.6mm design rainfall"
+    },
+    "renewable_energy_share_ratio": {
+      "status": "known",
+      "value": 0.2,
+      "unit": "ratio",
+      "derivation": "Design target: renewable energy / total energy consumption >= 20%"
+    },
+    "green_mode_share_ratio": {
+      "status": "known",
+      "value": 0.6,
+      "unit": "ratio",
+      "derivation": "Design target: (slow traffic + public transit) / total trips >= 60%"
+    },
+    "public_space_500m_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "derivation": "Design target: 100% of site within 500m walking distance of public space"
+    },
+    "total_gfa_sqm": {
+      "status": "known",
+      "value": 13000000.0,
+      "unit": "sqm",
+      "derivation": "Conceptual estimate based on land use allocation, pending official regulatory plan data"
+    },
+    "ai_scenario_nodes_count": {
+      "status": "unknown",
+      "value": null,
+      "reason": "Conceptual target of 50+ nodes; exact count depends on implementation detail beyond concept design scope"
+    },
+    "talent_apartment_ratio": {
+      "status": "known",
+      "value": 0.15,
+      "unit": "ratio",
+      "derivation": "Concept recommendation: 15% of residential GFA as talent apartments"
+    },
+    "annual_ai_events_count": {
+      "status": "unknown",
+      "value": null,
+      "reason": "Operational vision of 100+ events/year; not a government commitment, depends on future operational planning"
+    },
+    "phased_projects_count": {
+      "status": "known",
+      "value": 15.0,
+      "unit": "count",
+      "derivation": "Count of named projects in phasing.geojson and proposal chapter 9"
+    },
+    "sponge_facilities_count": {
+      "status": "known",
+      "value": 50.0,
+      "unit": "count",
+      "derivation": "32 rain gardens + 6 detention water bodies + 12 sunken green spaces"
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11400000.0,
+      "unit": "sqm",
+      "derivation": "Alias for total_site_area_sqm; provisional SITE_BOUNDARY area (EPSG:4548)"
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.35345,
+      "unit": "ratio",
+      "derivation": "Computed from green_space.geojson polygon area / site_boundary area (EPSG:4548); design target >= 40%"
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.174632,
+      "unit": "ratio",
+      "derivation": "Computed from public_space.geojson polygon area / site_boundary area (EPSG:4548); represents direct polygon coverage, not 500m service radius"
+    }
+  }
+}
