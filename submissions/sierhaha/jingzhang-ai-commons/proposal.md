@@ -116,7 +116,7 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 
 用地方案依据《国土空间调查、规划、用途管制用地用海分类指南》的项目子集表达，57 个用地单元完整覆盖提交边界、无缝隙无重叠 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]。双链用地结构在指标上表现为：科研用地约 255.1 公顷、教育用地约 97.3 公顷、文化用地约 49.5 公顷沿双链分布；公园与防护绿地约 175.1 公顷构成蓝绿骨架；商业服务业用地约 132.2 公顷集中于南部门户与大钟寺 [metric:land_use_area_by_code] [metric:green_ratio]。
 
-建筑方案区分保留、改造、更新、新建与预留五类，给出 12 栋示意建筑基底，含清华园车站文化馆（保留）与人才公寓（新建）等 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。拆改留结论依赖权属、工程条件与审批，本方案只提出方法与待校准清单，不编造具体拆改留结论 [depth:development_intensity_controls]。建筑面积、容积率与高度控制在正式控规条件补齐前列为待确认 [metric:total_floor_area_sqm] [metric:floor_area_ratio]。
+建筑方案区分保留、改造、更新、新建与预留五类，给出 14 栋示意建筑基底，含清华园车站文化馆（保留）、人才公寓（新建）与两处能源站（众智园光储充能源站 BLDG-015、大钟寺区域能源站 BLDG-016）等 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。拆改留结论依赖权属、工程条件与审批，本方案只提出方法与待校准清单，不编造具体拆改留结论 [depth:development_intensity_controls]。建筑面积、容积率与高度控制在正式控规条件补齐前列为待确认 [metric:total_floor_area_sqm] [metric:floor_area_ratio]。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -131,11 +131,26 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 | 组成 | 空间落点 | 技术可行性 | 可核验指标（候选） |
 | --- | --- | --- | --- |
 | 分布式光伏 | 新建/留白地块屋顶、连廊与车棚（遗址公园本体不加装，遵守文保与风貌约束） [data:geometry/land_use.geojson#LU-001] | 成熟：分布式光伏与 BIPV 已规模化应用 | 自发电占比、单位面积发电量（kWh/m²·a） |
-| 储能与微电网 | 众智园留白地块、大钟寺能源站、南门户智算中心 [data:geometry/buildings.geojson#BLDG-001] | 成熟：电化学储能与微电网工程广泛落地 | 储能容量（MWh）、孤岛运行时长、自愈恢复时间 |
+| 储能与微电网 | 众智园光储充能源站、大钟寺区域能源站、南门户智算中心 [data:geometry/buildings.geojson#BLDG-015] [data:geometry/buildings.geojson#BLDG-016] | 成熟：电化学储能与微电网工程广泛落地 | 储能容量（MWh）、孤岛运行时长、自愈恢复时间 |
 | V2G 智能充电 | 三处重点区与轨道站点接驳停车 [data:geometry/public_space.geojson#PUBLIC-001] | 试点推进：车网互动在示范城市开展 | V2G 参与率、充放电响应时间 |
-| 能源数字孪生 | 众智园能源调度中心（建议性点位） [data:geometry/buildings.geojson#BLDG-001] | 成熟度中：数字孪生已用于园区能源管理 | 数据更新频率、预测准确率、碳排放实时可视化 |
+| 能源数字孪生 | 众智园能源调度中心（BLDG-015 建议性点位） [data:geometry/buildings.geojson#BLDG-015] | 成熟度中：数字孪生已用于园区能源管理 | 数据更新频率、预测准确率、碳排放实时可视化 |
 
 该能源系统直接支撑端侧算力与低碳算力场景：端侧算力驿站以“光储充一体 + 低 PUE 设计”减少对主网冲击，PUE、绿电比例、单位算力能耗作为开放运营的准入阈值；能源数字孪生把整条创新带的发电、储能、充电与碳排放组织为一条可实时复核的“能源数据铁路”，与京张铁路“把标准留在空间里让人复核”的历史承诺呼应 [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure]。所有能源设施布局须遵守文保、蓝线、防洪与风貌约束；涉及电网接入、电力市场与绿电交易的内容均列为正式深化前置条件，不构成工程可行性或实施承诺 [depth:risk_missing_data]。
+
+**量化候选目标值清单（试点校准前为候选口径，不作为审定承诺）。** 为避免“高”“优”“绿色”等模糊表述，本方案给出可核验的候选目标值，均需试点数据与主管部门标定：
+
+| 维度 | 候选目标值 | 证据与标定路径 |
+| --- | --- | --- |
+| 端侧算力能效 | PUE ≤ 1.25；单位算力能耗按算力台账复核 | 试点台账 + 第三方抽检（narrative 附件二） |
+| 绿电优先 | 绿电比例 ≥ 80%；自发电占比 ≥ 15% | 电力交易记录 + 电网结算单 |
+| 韧性自愈 | 自愈恢复时间 ≤ 5 分钟；供电可用率 ≥ 99.9% | 配电网运行台账 |
+| 可退出 | 人工通道可用率 100%；离线替代可用率 ≥ 99% | 运营结项记录 + 暗访抽检 |
+| 慢行 | 慢行连通率 ≥ 90%；断点消除数 ≥ 12 处 | 现场实测（JZ-01 试点） |
+| 无障碍 | 无障碍达标率 100% | 无障碍专项验收 |
+| 商户保障 | 更新期商户留存率 ≥ 85% | 更新期台账（JZ-07 试点） |
+| V2G | 试点期参与率 ≥ 30% | 充电网络运行数据 |
+
+该清单与 `report/narrative.md` 附件七交叉印证；任何一项候选值在试点未达标时按电力碱基对校准降级或退出 [depth:risk_missing_data] [source:AGENT-TASKBOOK]。
 
 ## 蓝绿空间、公共空间与城市风貌
 ![品牌识别与 Logo 方向](assets/figures/brand-identity.png)

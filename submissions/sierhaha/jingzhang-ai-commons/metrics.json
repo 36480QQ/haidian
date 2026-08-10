@@ -56,7 +56,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.0565,
+   "value": 0.0581,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -70,7 +70,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 644681.36,
+   "value": 663460.44,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -83,7 +83,7 @@
   },
   "building_count": {
    "status": "known",
-   "value": 12,
+   "value": 14,
    "unit": "count",
    "source_files": [
     "geometry/buildings.geojson"

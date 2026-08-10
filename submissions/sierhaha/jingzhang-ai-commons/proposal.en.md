@@ -116,7 +116,7 @@ The proposal proposes three industry test/validation scenarios (each requiring s
 
 The land plan follows the project subset of the Land Use Classification Guide for Territorial Spatial Survey, Planning, and Use Control; 57 land units fully cover the submitted boundary without gaps or overlaps [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. In metrics, the dual-strand land structure shows: research land of about 255.1 ha, education land of about 97.3 ha, and cultural land of about 49.5 ha along the two strands; park and buffer green of about 175.1 ha as the blue-green skeleton; and commercial land of about 132.2 ha concentrated at the south gateway and Dazhongsi [metric:land_use_area_by_code] [metric:green_ratio].
 
-The building plan distinguishes retain, renovate, renew, new-build, and reserved categories, and provides 12 indicative building footprints, including the Qinghuayuan Station Cultural Hall (retained) and talent apartments (new) [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]. Demolition/renovation conclusions depend on ownership, engineering conditions, and approval; this proposal offers methods and a calibration checklist only, without fabricating specific retain/renovate/demolish conclusions [depth:development_intensity_controls]. Floor area, FAR, and height controls are listed as pending until official regulatory conditions are confirmed [metric:total_floor_area_sqm] [metric:floor_area_ratio].
+The building plan distinguishes retain, renovate, renew, new-build, and reserved categories, and provides 14 indicative building footprints, including the Qinghuayuan Station Cultural Hall (retained), talent apartments (new), and two energy stations (Zhongzhiyuan PV-Storage-Charging Energy Station BLDG-015, Dazhongsi District Energy Station BLDG-016) [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]. Demolition/renovation conclusions depend on ownership, engineering conditions, and approval; this proposal offers methods and a calibration checklist only, without fabricating specific retain/renovate/demolish conclusions [depth:development_intensity_controls]. Floor area, FAR, and height controls are listed as pending until official regulatory conditions are confirmed [metric:total_floor_area_sqm] [metric:floor_area_ratio].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -131,11 +131,26 @@ Municipal and new infrastructure covers AI industry services, innovation platfor
 | Component | Spatial anchor | Technical feasibility | Verifiable indicators (candidate) |
 | --- | --- | --- | --- |
 | Distributed PV | Roofs of new/reserved parcels, canopies and carports (no installations on the heritage park itself, respecting heritage and character constraints) [data:geometry/land_use.geojson#LU-001] | Mature: distributed PV and BIPV are widely deployed | Self-generation share, generation per unit area (kWh/m²·yr) |
-| Storage and microgrids | Zhongzhiyuan reserved parcel, Dazhongsi energy station, South Gateway compute center [data:geometry/buildings.geojson#BLDG-001] | Mature: electrochemical storage and microgrid projects are widely delivered | Storage capacity (MWh), island-operation duration, self-healing recovery time |
+| Storage and microgrids | Zhongzhiyuan PV-Storage-Charging Energy Station, Dazhongsi District Energy Station, South Gateway compute center [data:geometry/buildings.geojson#BLDG-015] [data:geometry/buildings.geojson#BLDG-016] | Mature: electrochemical storage and microgrid projects are widely delivered | Storage capacity (MWh), island-operation duration, self-healing recovery time |
 | V2G smart charging | Parking at the three key areas and rail-station interchanges [data:geometry/public_space.geojson#PUBLIC-001] | Pilot-stage: vehicle-grid interaction is being piloted in demonstration cities | V2G participation rate, charge/discharge response time |
-| Energy digital twin | Zhongzhiyuan energy dispatch center (suggested point) [data:geometry/buildings.geojson#BLDG-001] | Medium maturity: digital twins are used in campus energy management | Data update frequency, forecast accuracy, real-time carbon visualization |
+| Energy digital twin | Zhongzhiyuan energy dispatch center (suggested point at BLDG-015) [data:geometry/buildings.geojson#BLDG-015] | Medium maturity: digital twins are used in campus energy management | Data update frequency, forecast accuracy, real-time carbon visualization |
 
 This energy system directly supports edge compute and low-carbon compute scenarios: edge-compute stations use "PV-storage-charging integrated + low-PUE design" to reduce impact on the main grid, with PUE, green-power share, and energy per unit of compute as entry thresholds for open operation; the energy digital twin organizes the belt's generation, storage, charging, and carbon emissions into a real-time auditable "energy data railway", echoing the Jing-Zhang Railway's promise of "leaving standards in space for later verification" [source:POLICY-CARBON-PEAK] [depth:municipal_new_infrastructure]. All energy facility layouts must respect heritage protection, blue-line, flood, and character constraints; grid connection, power-market, and green-power-trading matters are listed as prerequisites for formal deepening, without constituting engineering feasibility or implementation commitments [depth:risk_missing_data].
+
+**Quantified candidate target list (candidate baselines pending pilot calibration; not approval commitments).** To avoid vague wording such as "high", "excellent", or "green", the proposal gives verifiable candidate targets, all requiring pilot data and authority calibration:
+
+| Dimension | Candidate target | Evidence and calibration path |
+| --- | --- | --- |
+| Edge-compute efficiency | PUE ≤ 1.25; energy per unit of compute audited from compute ledger | Pilot ledger + third-party sampling (narrative attachment 2) |
+| Green-power priority | Green-power share ≥ 80%; self-generation share ≥ 15% | Power-trading records + grid settlement statements |
+| Resilience and self-healing | Self-healing recovery time ≤ 5 min; supply availability ≥ 99.9% | Distribution-grid operation ledger |
+| Opt-out | Human-channel availability 100%; offline-alternative availability ≥ 99% | Operation closure records + unannounced checks |
+| Slow mobility | Slow-mobility connectivity ≥ 90%; ≥ 12 gaps eliminated | On-site survey (JZ-01 pilot) |
+| Accessibility | Accessibility compliance 100% | Dedicated accessibility acceptance |
+| Merchant protection | Merchant retention ≥ 85% during renewal | Renewal ledger (JZ-07 pilot) |
+| V2G | Pilot participation ≥ 30% | Charging-network operation data |
+
+This list is cross-referenced with narrative attachment 7; any candidate not met during a pilot is downgraded or exited under Power Base-Pair calibration [depth:risk_missing_data] [source:AGENT-TASKBOOK].
 
 ## Blue-Green Network, Public Space, and Urban Character
 ![Brand identity and logo direction](assets/figures/brand-identity.en.png)
