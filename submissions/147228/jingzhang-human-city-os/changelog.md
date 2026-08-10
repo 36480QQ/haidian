@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.2 - 2026-08-10
+
+- 将 `site-overview.png` / `.en.png` 改为评审首屏空间证据复合板：左侧从七个包内 GeoJSON 读取同源显示变换底图，右侧把三处重点区 × 五段空间动作、人工等效与停止/回退压成可读卡片，底部显式列出 EPSG:4548 指标输入和未补齐资料。
+- 新增 `visual/assets/reviewer-facing-atlas-v22.json`、确定性构建器和离线 checker；checker 约束 3 区、5 阶段、每区 5 节点、7 个几何图层、`official_boundary=false`、`geometry_role=provisional_constraint` 与 `not_authorized_not_run` 边界。
+- 中英文 proposal 增加图 25 及首屏阅读说明，修正正文“16 个空间场景节点”的过期表述为当前包内 17 个；HTML、PDF、manifest 在本轮随后重渲染和刷新。
+- 本轮只改善评审首屏的空间清晰度与场景可感知度，不改变正式 geometry、metrics、来源等级、运营授权或公共排序，不修改 `submissions-data.js` / `gallery-publication.json`。
+
 ## v2.1 - 2026-08-10
 
 - 新增双语图 24“空间动作房间”和 `visual/assets/spatial-action-rooms-v21.json`：三处临时重点区分别回答人本问题，并共同沿“到达与人工入口—公共解释与选择—受限机器接口—蓝绿停留与恢复—退出、申诉与回放”五段空间路径展开；每个节点同时登记人工等效、机器边界、停止/回退动作、GeoJSON 锚点、场景与指标引用。

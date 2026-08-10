@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.1"
-summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.1 turns each of the three provisional focus areas into a readable five-stage spatial-action room with a human equivalent, machine boundary, and stop condition. Provisional geometry, known metrics, and unknowns remain unchanged."
+iteration: "v2.2"
+summary: "A reversible urban release that treats human dignity as the foundation, machine-callable infrastructure as an added capability, and compute-energy, climate, and governance as hard constraints. v2.2 puts the shared display-transformed geometry, three focus areas, and five spatial-action stages on the reviewer first screen, with human equivalents, machine limits, stop/replay actions, and data gaps visible together. Provisional geometry, known metrics, and unknowns remain unchanged."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -62,13 +62,25 @@ Figure 24 is a presentation-level concept board, not a debug screenshot or engin
 
 All three focus areas remain conceptual suggestions / reference schemes for professional teams to deepen. If official geometry, roads/airspace, rights, accessibility, energy, climate, accountability, public baselines, or authorization inputs change, this board, the five core figures, metrics, HTML, PDFs and self-check must be recomputed together; no formal geometry or metric changes in this iteration.[data:visual/assets/spatial-action-rooms-v21.json] [depth:metrics_recalculation] [depth:risk_missing_data]
 
+## v2.2 reviewer first screen | Put spatial evidence and human action on one board
+
+The five-stage rooms in v2.1 are replayable node by node. v2.2 puts them back into the first `site-overview.png` a reviewer sees: the left panel is the same GeoJSON in a display transform, the right panel is a compact three-area × five-stage action sequence, and the bottom records the retained human path, the EPSG:4548 metric source, and the missing official boundary/rights/safety/energy/field-baseline inputs. “Where does the spatial relationship sit?” and “How does a person enter, refuse, pause, and exit?” can now be read together instead of reconstructed across two figures.[data:visual/assets/reviewer-facing-atlas-v22.json] [data:assets/figures/site-overview.en.png]
+
+This first screen responds to the taskbook dimensions of scenario perceptibility and spatial clarity. Three-key-area detailed design carries the first formal depth evidence [depth:three_key_area_detailed_design], while overall spatial structure carries the second [depth:overall_spatial_structure].
+
+![Figure 25 | Reviewer-facing spatial evidence atlas: shared geometry, three areas × five actions, and human/stop contract](assets/figures/site-overview.en.png)
+
+Figure 25 improves expression-level urban-design readability only. The belt is a display transform for legibility; pixel distance is not used as metric evidence. The provisional boundary remains `official_boundary=false` and `geometry_role=provisional_constraint`, and every action card remains a conceptual suggestion / reference scheme for professional teams to deepen. If official polygons, road/airspace sections, rights, accessibility, energy, climate, accountability or public baselines change, recompute the five core figures, Figure 24, metrics, HTML, PDFs and self-check together.[data:visual/assets/reviewer-facing-atlas-v22.json] [data:geometry/site_boundary.geojson#SITE-001] [depth:metrics_recalculation]
+
+Risk and data-gap fallback continues under [depth:risk_missing_data]; the board does not upgrade a provisional display transform into official measurement or an implementation conclusion.
+
 ## One-page read | Spatial moves first, governance evidence second
 
 ### Design judgment
 
 “From an AI showcase to a city for people in the AI era” does not paste technology language onto a conventional plan. It translates rapid AI iteration into urban interfaces that are **enterable, rejectable, pausable, and reversible**.[source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
 
-Three provisional key areas, a six-layer spatial operating system, four value chains, 16 spatial scenario nodes and three release gates resolve to one evidence chain.[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
+Three provisional key areas, a six-layer spatial operating system, four value chains, 17 spatial scenario nodes and three release gates resolve to one evidence chain.[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
 
 ### Four value chains become spatial moves
 

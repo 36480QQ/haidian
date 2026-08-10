@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1bf03db1d87b521a2d1434a4a3e3548fbd4d0f7f7cc7da2bfd475f7c8941d0d5"
+      "sha256": "825e396ec0f18e0021400b645c2d90071ef3a1cff72d1df8480e9d881d501e24"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "df55f8d397bc0c7177ffbede73f8c6b01650d22458af1b0a15fc2c48d2edb132"
+      "sha256": "3619d8bb91c1dcd25c02e58fad72e3e0f58ceabb66a3ae043e6ae00afffb03c5"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +91,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "06abfaf53396bf820528151c955e296e25ae9e738999bce2a493bc9c15a997dc"
+      "sha256": "983210defa45f9061db5498306dbe71a81cdc393ccee8d21277f4c347f53dc9f"
     },
     {
       "path": "report/copyright_statement.md",
@@ -104,21 +104,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2bdfc1fbb4cd7d67760597c85cfdf0ad9de735e4684d9ae11dd7942c35657acd"
+      "sha256": "06f4e371776e83eaec8c8a74940c2186ec7e3edc851d9657dcca234cabb6ebf6"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4fb8409c8e19eaee6b41578e5eb3d41437db1bc1c805afaedf915b592e8b96b7"
+      "sha256": "9025493206aae01e289a83d2e859868d8fba6a4f4d0f5882f8b31df2da404b91"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4aabbaa134f6c5cc54a83eebe5046a268d30900c4af215e4214c4a19168da670"
+      "sha256": "60e47e0c9f6ea0e1c1ac2068f10b86d4db05d7af0796a3d7a1f238d4d66b9ddf"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -153,7 +153,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "9a53d6987fefe65a425d22065d9f83f41853e5749bcfe8b469a99bffdd0dbae1"
+      "sha256": "90dbeadb5ace00a3f04c09541a1cfdfaadbe54f0f898a3c1cec400e600d95448"
     },
     {
       "path": "assets/figures/release-gates.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9835616cad8540e352cc04e67e8c1ca33bf076c272cd13ebc01eff26c3785cb2"
+      "sha256": "a8af6762a62d2246ed5dc9ca2ea0a2d97e1af4e57a3cadd2354aa8f64952da7f"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "99449497a07858d56cca4c723c633cd7ad7bfbb6c48bd1ad5447c26d1c6f1632"
+      "sha256": "9701667b7b066b634d91cb006a38da634945f1c96a020244dee30a2a5509a891"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "cf7bd476f2fa719bd511fab07af6df0f93767df0617fec1f41acf2da09826fa0"
+      "sha256": "890996abef887b2ddec6ce23e4630311a92df7d52c97d34caaccafecef66fb9a"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "725ed7bff8212d8ba56051214821d3417c7d244d2a12a17ef3e67c99d300cd36"
+      "sha256": "cae45e0c3b8a6df862e9b7c7026bcbabafe948100cd7e2145518699657c055db"
     },
     {
       "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4c9e39a7fd77ed1af4a6f511d22df53c81c96292e783c62e3e8757d522a1167a"
+      "sha256": "d4d48193b0782f1486ffa06146a96e57491cd78d9b03735fa57325a1b1ce2096"
     },
     {
       "path": "visual/assets/accessibility-audit.json",
@@ -324,7 +324,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "e9753718ff44cb85171d99ce8c8bbeab95f8849d447bf4eb7d50f6c93fed2c46"
+      "sha256": "6dd75653003ece836e2ffe2837c1d634123868c919f36974bfb9ea923b24a7eb"
     },
     {
       "path": "visual/assets/run-human-city-reference-audit.js",
@@ -406,7 +406,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "c9482d1c19a5202f74af317c8bc22a5c47e7e06de7f99fec5dcb24cc0aeeb62d"
+      "sha256": "84fed71a6ce6f3571f894f454d923d68cbbf0ca261f0dd86a174eae610e36384"
     },
     {
       "path": "assets/figures/release-gates.en.png",
@@ -913,6 +913,42 @@
       "language": "en",
       "translation_of": "assets/figures/spatial-action-rooms-v21.png",
       "sha256": "90af10b55ff6745fe0c9060fa8c4fb584cc5114df472a08fff405e3d6c1a6275"
+    },
+    {
+      "path": "assets/figures/site-overview-v22.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "zh",
+      "sha256": "1a6c3ed8e426977b6ad4b59fea0cbd42c3339ac05337de2f024defa4042022ba"
+    },
+    {
+      "path": "assets/figures/site-overview-v22.en.svg",
+      "role": "figure_source",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/site-overview-v22.svg",
+      "sha256": "143fced1f06778cda091e84f84b844cbb29038af6f77619a9e883915bacb30ec"
+    },
+    {
+      "path": "visual/assets/build-reviewer-facing-atlas-v22.js",
+      "role": "validation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "553486a8d12c7047b530110353354e31115f353e96cf67782bd94567be258cda"
+    },
+    {
+      "path": "visual/assets/check-reviewer-facing-atlas-v22.js",
+      "role": "validation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0badb8a1fa1833808afa7be2388fed92ccaf518f965aad43b68b8a359b5bec6b"
+    },
+    {
+      "path": "visual/assets/reviewer-facing-atlas-v22.json",
+      "role": "structured_evidence",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e61ee07ca62ec0a04e655a505c2f2e814bc710f67219e04ac3545df5c230b467"
     }
   ],
   "validation_claim": {

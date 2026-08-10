@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v2.1"
-summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.1 把三处重点区各自的问题、五段空间动作、人工等效入口、机器边界与停止条件压成可读的空间动作房间。临时几何、已知指标与 unknown 均保持原值。"
+iteration: "v2.2"
+summary: "以人的尊严为底座、以机器可调用为增量、以能源气候和治理为硬约束的可回滚城市版本；v2.2 把同源显示变换几何、三处重点区与五段空间动作压到评审首屏，人工等效、机器边界、停止回放和数据缺口同图可读。临时几何、已知指标与 unknown 均保持原值。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -62,13 +62,25 @@ v2.0 的地标与年度节奏回答了“公共空间如何承接任务书”；
 
 三处重点区仍只是概念建议 / 参考方案，可供专业团队深化研究。官方边界、道路/空域、权属、无障碍、能源、气候、责任、公众基线或授权数据发生变化时，需连同该图、五张核心图、metrics、HTML、PDF 和 self-check 全量重算；本轮不改变任何正式几何或指标。[data:visual/assets/spatial-action-rooms-v21.json] [depth:metrics_recalculation] [depth:risk_missing_data]
 
+## v2.2 评审首屏｜让空间证据与人本动作在同一张图上相遇
+
+v2.1 的五段空间动作房间已能逐节点回放；v2.2 进一步把它们放回评审者最先看到的 `site-overview.png`：左侧是同一批 GeoJSON 的显示变换底图，右侧是三区 × 五段动作的紧凑卡片，底部同时标出人工路径、EPSG:4548 指标来源和仍未补齐的官方边界/权属/安全/能源/现场基线。这样“哪里发生空间关系”与“人怎样进入、拒绝、暂停、退出”不再分散到两张图。[data:visual/assets/reviewer-facing-atlas-v22.json] [data:assets/figures/site-overview.png]
+
+这张首屏对应任务书的场景可感知性与空间清晰度问题；重点区详细设计承接首个 formal 深度证据 [depth:three_key_area_detailed_design]，总体空间结构承接第二个 [depth:overall_spatial_structure]。
+
+![图 25｜评审首屏空间证据图谱：同源几何底图、三区五段动作与人工/停止契约](assets/figures/site-overview.png)
+
+图 25 只改善表达级城市设计图的首屏可读性。底图采用为长廊阅读的显示变换，像素距离不参与度量；临时边界仍是 `official_boundary=false`、`geometry_role=provisional_constraint`，动作卡仍是概念建议 / 参考方案，可供专业团队深化研究。官方 polygon、道路/空域断面、权属、无障碍、能源、气候、责任或公众基线变化时，必须连同五张核心图、图 24、metrics、HTML、PDF 和 self-check 全量重算。[data:visual/assets/reviewer-facing-atlas-v22.json] [data:geometry/site_boundary.geojson#SITE-001] [depth:metrics_recalculation]
+
+其中，风险与资料缺口的回退动作沿用 [depth:risk_missing_data]；该图不把临时显示变换升级为官方测量或实施结论。
+
 ## 一页先读｜先看空间动作，再看治理证据
 
 ### 方案判断
 
 “从 AI 展台，到 AI 时代人的城”不是把传统总图换成科技词汇，而是把 AI 的快速迭代翻译成一套**可进入、可拒绝、可暂停、可回滚**的城市接口。[source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
 
-三层范围收敛为同一条证据链：三处临时重点区、六层空间操作系统、四条价值链、16 个空间场景节点与三道发布门。[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
+三层范围收敛为同一条证据链：三处临时重点区、六层空间操作系统、四条价值链、17 个空间场景节点与三道发布门。[metric:key_area_count] [metric:scenario_node_count] [metric:version_release_count]
 
 ### 四条价值链落到空间
 
