@@ -104,6 +104,13 @@ SPATIAL_ITEM_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,63}$")
 ITERATION_RE = re.compile(r"^v?\d+(?:\.\d+){0,2}(?:[-+][A-Za-z0-9.-]+)?$")
 CHANGELOG_VERSION_HEADING_RE = re.compile(r"^##\s+v?\d+(?:\.\d+){0,2}\s+-\s+\d{4}-\d{2}-\d{2}\s*$")
 ALLOWED_ASSET_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}
+ALLOWED_VIDEO_EXTENSIONS = {".mp4", ".webm"}
+ALLOWED_AUDIO_EXTENSIONS = {".mp3", ".m4a", ".ogg"}
+ALLOWED_MEDIA_SIDECAR_EXTENSIONS = {".vtt", ".md"}
+ALLOWED_MEDIA_EXTENSIONS = (
+    ALLOWED_VIDEO_EXTENSIONS | ALLOWED_AUDIO_EXTENSIONS | ALLOWED_MEDIA_SIDECAR_EXTENSIONS
+)
+ALLOWED_MEDIA_FILE_EXTENSIONS = ALLOWED_MEDIA_EXTENSIONS | ALLOWED_ASSET_EXTENSIONS
 ALLOWED_DRAWING_EXTENSIONS = {".pdf"}
 PACKAGE_ROOT_JSON_FILES = {
     "manifest.json",
@@ -254,6 +261,8 @@ MAX_MARKDOWN_BYTES = 256 * 1024
 MAX_JSON_BYTES = 512 * 1024
 MAX_GEOJSON_BYTES = 10 * 1024 * 1024
 MAX_ASSET_BYTES = 5 * 1024 * 1024
+MAX_VIDEO_BYTES = 20 * 1024 * 1024
+MAX_AUDIO_BYTES = 8 * 1024 * 1024
 MAX_DRAWING_BYTES = 10 * 1024 * 1024
 MAX_HTML_BYTES = 2 * 1024 * 1024
 MAX_VISUAL_ASSET_BYTES = 5 * 1024 * 1024
@@ -311,6 +320,7 @@ FORBIDDEN_VISUAL_HTML_PATTERNS = [
     (re.compile(r"<script\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote scripts"),
     (re.compile(r"<link\b[^>]*\bhref\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote linked resources"),
     (re.compile(r"<(?:img|source|video|audio)\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote media"),
+    (re.compile(r"<(?:video|audio)\b[^>]*\bautoplay\b", re.I), "visual HTML must not autoplay media"),
 ]
 
 
@@ -662,6 +672,131 @@ def reference_density_issues(body: str) -> list[str]:
 
 def is_under_assets(parts: list[str]) -> bool:
     return len(parts) >= 5 and parts[3] == "assets"
+
+
+def is_under_media(parts: list[str]) -> bool:
+    return len(parts) == 6 and parts[3] == "assets" and parts[4] == "media"
+
+
+def media_signature_is_valid(path: Path) -> bool:
+    extension = path.suffix.lower()
+    data = path.read_bytes()[:16]
+    if extension in {".mp4", ".m4a"}:
+        return len(data) >= 8 and data[4:8] == b"ftyp"
+    if extension == ".webm":
+        return data.startswith(b"\x1a\x45\xdf\xa3")
+    if extension == ".mp3":
+        return data.startswith(b"ID3") or (
+            len(data) >= 2 and data[0] == 0xFF and data[1] & 0xE0 == 0xE0
+        )
+    if extension == ".ogg":
+        return data.startswith(b"OggS")
+    return True
+
+
+def validate_media_manifest_entries(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    files: list[object],
+    listed_paths: set[str],
+) -> None:
+    entries: dict[str, dict] = {}
+    for item in files:
+        if not isinstance(item, dict) or not isinstance(item.get("path"), str):
+            continue
+        try:
+            safe_path = normalize_changed_path(item["path"])
+        except ValueError:
+            # The main manifest loop reports the unsafe path. Never inspect it here.
+            continue
+        entries[safe_path] = item
+    media_roles = {"video", "audio", "media_poster", "caption_track", "transcript"}
+    for rel_path, item in entries.items():
+        role = item.get("role")
+        extension = Path(rel_path).suffix.lower()
+        if role not in media_roles and not rel_path.startswith("assets/media/"):
+            continue
+        if not rel_path.startswith("assets/media/") or extension not in ALLOWED_MEDIA_FILE_EXTENSIONS:
+            report.add_error(
+                f"{proposal_dir}/manifest.json: media `{rel_path}` must stay under assets/media/ with a supported extension"
+            )
+            continue
+        expected_role = (
+            "video"
+            if extension in ALLOWED_VIDEO_EXTENSIONS
+            else "audio"
+            if extension in ALLOWED_AUDIO_EXTENSIONS
+            else "caption_track"
+            if extension == ".vtt"
+            else "transcript"
+            if extension == ".md"
+            else "media_poster"
+        )
+        if role != expected_role:
+            report.add_error(
+                f"{proposal_dir}/manifest.json: `{rel_path}` must use role={expected_role}"
+            )
+            continue
+        repository_path = f"{proposal_dir}/{rel_path}"
+        linked_path = first_symbolic_link(repo_root, repository_path)
+        if linked_path is not None:
+            report_symbolic_link(report, repo_root, linked_path)
+            continue
+        full_path = repo_root / repository_path
+        if not full_path.is_file():
+            continue
+        if extension in ALLOWED_VIDEO_EXTENSIONS | ALLOWED_AUDIO_EXTENSIONS:
+            if not media_signature_is_valid(full_path):
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: `{rel_path}` does not match its declared media container"
+                )
+            for field in ("title_zh", "title_en", "description_zh", "description_en"):
+                value = item.get(field)
+                if not isinstance(value, str) or len(value.strip()) < 2:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` needs {field}"
+                    )
+            required_refs = ["transcript"]
+            if role == "video":
+                required_refs.extend(["poster", "caption"])
+            for field in required_refs:
+                reference = item.get(field)
+                if not isinstance(reference, str) or reference not in listed_paths:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` needs a manifest-listed {field}"
+                    )
+                    continue
+                referenced_role = entries.get(reference, {}).get("role")
+                expected_ref_role = {
+                    "poster": "media_poster",
+                    "caption": "caption_track",
+                    "transcript": "transcript",
+                }[field]
+                if referenced_role != expected_ref_role:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` {field} must reference role={expected_ref_role}"
+                    )
+        elif role == "caption_track":
+            try:
+                if not full_path.read_text(encoding="utf-8").lstrip().startswith("WEBVTT"):
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: caption `{rel_path}` must be UTF-8 WebVTT"
+                    )
+            except UnicodeDecodeError:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: caption `{rel_path}` must be UTF-8 WebVTT"
+                )
+        elif role == "transcript":
+            try:
+                if len(full_path.read_text(encoding="utf-8").strip()) < 20:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: transcript `{rel_path}` must describe the media content"
+                    )
+            except UnicodeDecodeError:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: transcript `{rel_path}` must be UTF-8 Markdown"
+                )
 
 
 def is_under_geometry(parts: list[str]) -> bool:
@@ -1362,6 +1497,34 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                 report.add_error(
                     f"{proposal_dir}/manifest.json: required file `{required}` must be listed in files"
                 )
+        validate_media_manifest_entries(report, repo_root, proposal_dir, files, listed_paths)
+        cover_image = data.get("cover_image")
+        if cover_image not in (None, ""):
+            if not isinstance(cover_image, str) or not cover_image.startswith("assets/media/"):
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image must be empty or a local assets/media/ image"
+                )
+            elif cover_image not in listed_paths:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image `{cover_image}` must be listed in files"
+                )
+            elif Path(cover_image).suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image must use PNG, JPEG, or WebP"
+                )
+            else:
+                cover_entry = next(
+                    (
+                        item
+                        for item in files
+                        if isinstance(item, dict) and item.get("path") == cover_image
+                    ),
+                    {},
+                )
+                if cover_entry.get("role") != "media_poster":
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: cover_image must reference role=media_poster"
+                    )
     validation_claim = data.get("validation_claim")
     if isinstance(validation_claim, dict):
         known_blockers = validation_claim.get("known_blockers")
@@ -2599,6 +2762,12 @@ def validate_submission(
             ai_package_dirs.add(proposal_dir)
         elif len(parts) == 4 and parts[3] in PACKAGE_ROOT_JSON_FILES:
             ai_package_dirs.add(proposal_dir)
+        elif is_under_media(parts):
+            ai_package_dirs.add(proposal_dir)
+            extension = Path(path).suffix.lower()
+            if extension not in ALLOWED_MEDIA_FILE_EXTENSIONS:
+                allowed = ", ".join(sorted(ALLOWED_MEDIA_FILE_EXTENSIONS))
+                report.add_error(f"{path}: media assets must use one of {allowed}")
         elif is_under_assets(parts):
             extension = Path(path).suffix.lower()
             if extension not in ALLOWED_ASSET_EXTENSIONS:
@@ -2654,7 +2823,23 @@ def validate_submission(
             report.add_error(f"{path}: JSON files must be <= {MAX_JSON_BYTES} bytes")
         if path.endswith(".geojson") and size > MAX_GEOJSON_BYTES:
             report.add_error(f"{path}: GeoJSON files must be <= {MAX_GEOJSON_BYTES} bytes")
-        if is_under_assets(parts) and size > MAX_ASSET_BYTES:
+        if (
+            is_under_media(parts)
+            and Path(path).suffix.lower() in ALLOWED_VIDEO_EXTENSIONS
+            and size > MAX_VIDEO_BYTES
+        ):
+            report.add_error(f"{path}: video files must be <= {MAX_VIDEO_BYTES} bytes")
+        elif (
+            is_under_media(parts)
+            and Path(path).suffix.lower() in ALLOWED_AUDIO_EXTENSIONS
+            and size > MAX_AUDIO_BYTES
+        ):
+            report.add_error(f"{path}: audio files must be <= {MAX_AUDIO_BYTES} bytes")
+        elif is_under_media(parts) and size > MAX_ASSET_BYTES:
+            report.add_error(
+                f"{path}: media sidecars and posters must be <= {MAX_ASSET_BYTES} bytes"
+            )
+        elif is_under_assets(parts) and size > MAX_ASSET_BYTES:
             report.add_error(f"{path}: assets must be <= {MAX_ASSET_BYTES} bytes")
         if is_under_drawings(parts) and size > MAX_DRAWING_BYTES:
             report.add_error(f"{path}: drawings must be <= {MAX_DRAWING_BYTES} bytes")

@@ -340,6 +340,14 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
         "selectionReason": str(publication.get("selection_reason_zh", "")),
         "selectionReasonEn": str(publication.get("selection_reason_en", "")),
     }
+    cover_image = manifest.get("cover_image") if isinstance(manifest, dict) else None
+    if isinstance(cover_image, str) and cover_image.startswith("assets/media/"):
+        normalized_cover = cover_image.strip().replace("\\", "/")
+        pure_cover = Path(normalized_cover)
+        if not pure_cover.is_absolute() and ".." not in pure_cover.parts:
+            cover_path = submission_dir / normalized_cover
+            if cover_path.is_file() and cover_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}:
+                item["coverUrl"] = f"{rel_dir}/{normalized_cover}"
     if proposal_html.exists():
         item["thumbnailUrl"] = f"{rel_dir}/report/proposal.html"
     elif visual_html.exists():

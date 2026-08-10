@@ -166,7 +166,7 @@ Use $urban-design-ai-submission to create a lightweight sparse workspace and par
 4. 优先使用 `brief/site-package/geometry/` 中可信的官方边界；没有官方 polygon 时，可使用 `provisional_boundaries.geojson`。临时几何不得冒充官方红线、审批或精确面积依据，但组织方的数据缺口不再阻断内容评分，也不得因此扣分。
 5. 按 `docs/formal-submission-guide.md` 准备边界、三处重点区域、合规矩阵、专业标准矩阵、设计深度矩阵、A3/A0 图纸和 `visual/index.html`。使用 provisional 边界时，必须在正文、HTML、sources、assumptions 和自检结果中醒目标注。
    - 必须同时读取 `brief/site-package/agent_taskbook.json`，并在方案中回应 `agent.1` 至 `agent.6`：命名/Logo、生态案例、场景卡、朝圣地标、文化叙事和长期运营。
-   - 需要视觉生成辅助时，可参考 `docs/visual-style-recommendations.md`。推荐优先使用 `baoyu-markdown-to-html`、`baoyu-infographic`、`baoyu-diagram`、`baoyu-slide-deck` 中偏技术图解、仪表盘、蓝图、企业/专业简报的风格；不要把漫画、社交媒体卡片或氛围插画作为 formal 核心成果。核心图应表达设计意图、空间层级和重点区域，不应只是 raw GeoJSON/GIS 截图、矩形色块拼图或无主次的图层堆叠。
+   - 方案最终是给人看的。只要 Agent 具备相关能力，就应主动使用高质量图像与示意图、短视频、声音或音乐、动画、三维场景和交互网页增强表达；本地打包的 Three.js、WebGL、Canvas 体验都受到欢迎。不要把密集文字、机械 SVG、raw GeoJSON/GIS 截图或无主次图层堆叠当作默认终点。没有多模态能力的 Agent 不失格，可继续使用数据驱动图件、清晰文字和仓库默认封面生成器。详细契约见 `skills/urban-design-ai-submission/references/multimodal-presentation.md`。
 6. 使用 formal 脚手架生成结构化 package：
 
 ```text
@@ -197,6 +197,8 @@ submissions/octocat/ai-urban-loop/visual/index.html
 ## 方案应包含
 
 本仓库只接受 `formal` AI agent 方案。Markdown-only 投稿会失败；正式方案必须同时提交专业报告、结构化数据、图纸、HTML 可视化和自检结果。
+
+**强烈鼓励多模态呈现。** 可选视频、音频/音乐、海报、字幕和文字稿放入 `assets/media/` 并登记 manifest；网站会把自定义封面、视频、音频和 `visual/index.html` 交互入口直接呈现在方案工作台，而不是只列出下载链接。`manifest.cover_image` 可以指向 Agent 自己生成或清权的 PNG/JPEG/WebP；为空、`null` 或省略时，保持现有确定性默认封面。视频和音频不得自动播放，必须提供可访问的字幕/文字稿；生成媒体必须记录工具/模型、来源和权利边界，且不得替代五张必交图、A3/A0、离线 HTML 或结构化证据。
 
 **要求双语言。** 新方案设置 `bilingual_contract_version: "1"`，并让 `translation_file` 指向独立的完整译稿：中文主稿配 `proposal.en.md`，英文主稿配 `proposal.zh.md`；译稿设置 `translation_of: "proposal.md"`。`report/proposal.html`、`visual/index.html`、A3/A0 和含文字图件也必须按同一命名规则提供另一语言版本。两版须保持章节、主张、指标、证据引用和图件位置一致，并优先使用[赛事中英术语表](docs/terminology-glossary.md)。缺少或损坏任一必需译稿、语言映射或 manifest 哈希会阻断新契约投稿合并；历史 v1 及早期 v2 单语方案继续兼容展示。
 
