@@ -183,7 +183,7 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 9,
       "unit": "count",
       "source_files": [
         "visual/assets/personas-and-fairness.json"
@@ -192,6 +192,36 @@
       "confidence": "high",
       "assumptions": [
         "A-WORKFORCE-001"
+      ]
+    },
+    "persona_scenario_coverage_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/personas-and-fairness.json",
+        "visual/assets/scenario-cards.json"
+      ],
+      "formula": "count(unique(persona.scenario_ids))",
+      "confidence": "high",
+      "assumptions": [
+        "A-DATA-GOVERNANCE-001"
+      ]
+    },
+    "persona_spatial_feature_coverage_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/personas-and-fairness.json",
+        "geometry/key_areas.geojson",
+        "geometry/public_space.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "formula": "count(unique(persona.spatial_refs))",
+      "confidence": "medium",
+      "assumptions": [
+        "A-CONTROLS-001"
       ]
     },
     "landmark_count": {

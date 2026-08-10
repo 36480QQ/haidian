@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v0.7"
+iteration: "v1.4"
 ---
 
 # From an AI Showcase to a City for People in the AI Era
@@ -117,7 +117,9 @@ The five project families in Figure 10 are only a spatial-carrier and G0/G1 rese
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Six personas make the ecosystem accountable: original residents and older people; workers at task-substitution risk; night-shift AI workers; small merchants and one-person teams; developers and researchers; people with access needs and carers. Every group retains human service, explanation, refusal, appeal, exit, and non-device alternatives. [source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
+Nine personas make the ecosystem accountable: original residents and older people; workers at task-substitution risk; night-shift AI workers; small merchants and one-person teams; developers and researchers; people with access needs and carers; youth, students and people entering the workforce; first-time and international visitors; and public-service and frontline maintenance workers. Each group has a non-negotiable boundary, linked scenarios and provisional spatial anchors, plus human service, explanation, refusal, appeal, exit, and non-device alternatives. [source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
+
+P-07, P-08 and P-09 are not name-only additions: they replay youth learning/work transition, unfamiliar entry and multilingual explanation, and public maintenance/event handling, with an ordinary fallback and stop condition for each. This remains a conceptual design lens, not a demographic survey, accessibility certification, or field fairness result. [metric:persona_scenario_coverage_count] [metric:persona_spatial_feature_coverage_count] [data:visual/assets/ai-era-people-fairness-audit.json]
 
 Ten scenario cards are all G0 concept protocols. Each records users, spatial reference, operational responsibility, data minimization, human fallback, metric, and exit. Three validation contexts—low-speed robots, low-altitude logistics rules, and flood-simulation explanation—do not claim permission, deployment, or real-data access. The civic API similarly begins with catalogue, authorization, logging, appeal, and revocation. [data:geometry/constraints.geojson#SCN-07] [data:geometry/constraints.geojson#SCN-08] [metric:scenario_card_count]
 

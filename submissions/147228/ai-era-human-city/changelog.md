@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-10
+
+- 将画像与公平协议从 6 类扩为 9 类，单独补入青年学生与初入行者、首次到访者与国际访客、公共服务与一线维护人员；每类均绑定场景、临时空间锚点、普通替代路径和停止条件。
+- 新增 `ai-era-people-fairness-audit.json` 与确定性 runner，复核 9 类必需群体、10 张场景卡、10 个空间要素覆盖，并保持 `official_boundary=false`、`operational_status=not_authorized_not_run`。
+- 同步中英文 proposal、metrics、离线 visual index 与双语审校范围；新增内容仍是概念设计视角，不升级为人口调查、无障碍认证、现场公平结果或官方评分。
+
 ## v1.3 - 2026-08-10
 
 - 新增 `ai-era-provisional-spatial-readout.json` 与确定性 runner，从同一组 provisional GeoJSON 复算 3 个重点区、9 段相邻锚点的最小顶点间距，并明确它不是路线、服务半径、无障碍结论或工程尺寸。

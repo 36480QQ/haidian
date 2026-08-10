@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4aec5b744addc08d82ca7f7de06dbe8d1b1cf04579e8fb244089ed09c0ad93cc"
+      "sha256": "1916ba904d83157ef3f3a199f2bf803f42dc4ac04922af1ed79374cff56a7ee2"
     },
     {
       "path": "agent.json",
@@ -36,7 +36,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6a9394d78e94b85180968ad50a47f66f0b74b51df1ddd4f66a4b2fe18332f626"
+      "sha256": "dcfbf439b5f1dcfc21840f43f784b28a59877bdad25ec245c329605e598d1ab3"
     },
     {
       "path": "assumptions.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "46c3685d94515def4aee1bb7d09f7e94558f66165add14c543b1c2f7b63c22e5"
+      "sha256": "4af6c9fcbb26f876f0c70dccf459e32da738c855c4963298870f66b757dfbe88"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "5f249344747a315a801f1b51e7d5eb9fb8dbd92b109ce85cb37670ce7e4e2838"
+      "sha256": "422e4d5b438379e8e611c7dd519b67a762a6fc8b3a69724394f18864e910f9c9"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4d83320cdf635e9250698f4a68b24a0ab371be0a6fd2b782865d74749fc15f66"
+      "sha256": "6e1f31af543bf83025223cede9a4b990996c134353a72cc6dec2a7d491a81c7c"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "741e740561937aa84811667a75970bbc75112a3510f31442da09c949b81cc39c"
+      "sha256": "154663f52bd62aa79cf82fc9aae17733bdc074b8cf6202557e006dc12ecf9427"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2ab3443039486da2f3caa7bf901185b8f329bcf9a573ca1afc3ec6dac588738e"
+      "sha256": "50cbdc467e8c617bfeaa07641f0a0922be786c64568bdbf3b50fee6a7efaec49"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ed0d5ad7a6ca90e391a156d66a1db1a597e2af5028d7a7d2b02d641a5a3dac36"
+      "sha256": "e5635d03e47d6643b76d26aca4a98499cc9bf73c3866560634a2a3bcfcc158d3"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -332,7 +332,19 @@
       "path": "visual/assets/personas-and-fairness.json",
       "role": "narrative",
       "required": false,
-      "sha256": "63e0c60628a86bb5a8ddc3d43d07643a51fccf485518ac286b43bbf80efe2e5a"
+      "sha256": "e43e48a3804692ba7e056e26ef5c3025414741e8f75a03d126c0734a740c843c"
+    },
+    {
+      "path": "visual/assets/ai-era-people-fairness-audit.json",
+      "role": "evidence_contract",
+      "required": false,
+      "sha256": "dc4f7aee988b4f3a0b821754a08a6825683dbb7e5b35454689fe140dea6dd9ca"
+    },
+    {
+      "path": "visual/assets/run-ai-era-people-fairness.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "51de8007ff6f312d364454abe22310700aa7de0394d3224cb23a70115468e0bc"
     },
     {
       "path": "visual/assets/scenario-space-operation-matrix.json",
@@ -416,7 +428,7 @@
       "path": "visual/assets/bilingual-equivalence-audit.json",
       "role": "narrative",
       "required": false,
-      "sha256": "4052e0837f85b5be45c4153ec23525b60c5d0b11f046040f846879e02a82b64c"
+      "sha256": "6685041dd01a140b5a86df069388846f4069f3067443155794cd22e7837436e2"
     },
     {
       "path": "visual/assets/accessibility-audit.json",

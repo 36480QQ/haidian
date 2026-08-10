@@ -10,7 +10,7 @@ summary: "以人本缓冲、机器可调用的公共规则和可撤回的版本�
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v0.7"
+iteration: "v1.4"
 tracks: "ai-traffic-walkability,civic-agent-governance,youth-friendly-public-space"
 scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-navigation,ai-cultural-guide,enterprise-service-copilot,public-safety-operations-review"
 ---
@@ -139,7 +139,9 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-六类画像使抽象生态落到谁在使用、谁承担风险，原住民与老人、被替代风险劳动者、夜班 AI 从业者、小商户与一人公司、开发者与研究者、行动不便者与照护者。每类画像都有非谈判边界，人工服务、可解释、可拒绝、可申诉、可退出与不依赖设备的替代路径；居民/老人、劳动者、无障碍使用者和开发者至少各有一个可见观察席。[source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
+九类画像使抽象生态落到谁在使用、谁承担风险：原住民与老人、被替代风险劳动者、夜班 AI 从业者、小商户与一人公司、开发者与研究者、行动不便者与照护者、青年学生与初入行者、首次到访者与国际访客、公共服务与一线维护人员。每类画像都有非谈判边界、对应场景与临时空间锚点，并保留人工服务、可解释、可拒绝、可申诉、可退出与不依赖设备的替代路径。[source:AGENT-TASKBOOK] [metric:persona_count] [depth:persona_and_public_interest]
+
+P-07、P-08、P-09 不只是名单扩展：它们分别回放青年就业/学习、陌生人进入与多语解释、以及公共维护与事件处置场景，各自登记 ordinary fallback 和 stop condition；当前仍是概念设计视角，不是人口调查、无障碍认证或现场公平结果。[metric:persona_scenario_coverage_count] [metric:persona_spatial_feature_coverage_count] [data:visual/assets/ai-era-people-fairness-audit.json]
 
 十张场景卡均为 G0 概念协议，且逐卡说明用户、空间、行动理由、数据最小化、责任角色、人工复核、验收指标与退出协议。三类测试验证情境为低速机器人公共观察、低空物流规则沙盒、内涝模拟观察；它们不声称获得路权、空域、数据或运营许可。城市 API 与数据要素城区实验同样只提出目录、授权、日志、申诉、撤销样板间，不接入真实个人或市政数据。[data:geometry/constraints.geojson#SCN-07] [data:geometry/constraints.geojson#SCN-08] [metric:scenario_card_count]
 
