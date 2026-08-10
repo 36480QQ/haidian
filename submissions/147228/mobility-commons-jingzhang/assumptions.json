@@ -49,6 +49,12 @@
       "impact": "All geometry and spatial metrics remain provisional design evidence and must be recalculated after an official revision."
     },
     {
+      "id": "A-KEY003-ANCHOR-001",
+      "status": "unresolved_provisional_anchor",
+      "statement": "Community Issue #1029 reports that the provisional PROV-KEY-003 polygon has no confirmed spatial anchor to Dazhongsi station; the source geometry remains an ordered, area-fitted placeholder.",
+      "impact": "Dazhongsi station, transfer and curb ideas remain relational concepts only. Do not move the central polygon locally; an official anchor revision must trigger one coordinated geometry, metric, figure, narrative and manifest recalculation."
+    },
+    {
       "id": "A-DEMAND-001",
       "status": "requires_aggregated_baseline",
       "statement": "Enterprise commute, freight, shuttle, charging and visitor demand is not available as a consented grouped register.",

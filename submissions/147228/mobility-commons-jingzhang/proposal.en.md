@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A time-windowed curb ledger brings metro, bus, bicycle, walking/accessibility, cars, parking and loading into one auditable system, while external commuting, people flow and multimodal simulation remain explicit; future air mobility is only a conditional, reversible, ground-first experiment."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.40"
+iteration: "v2.41"
 ---
 
 # Jing-Zhang Mobility Commons: An Enterprise–Resident Mobility Operating System
@@ -212,6 +212,8 @@ The package does not claim a new bridge, road widening, parking supply, building
 ## Detailed Design of Key Areas
 
 Zhongzhiyuan tests enterprise arrival, shuttle consolidation and loading. The AI Origin Community tests daily resident access, care and a genuinely equivalent human route. Dazhongsi tests rail transfer, bicycle parking, loading and event-day public-space management. Each area has an accountable enterprise or community operator, a transport reviewer and a maintenance owner; no partner, permit or existing operation is claimed [metric:key_area_count] [depth:three_key_area_detailed_design] [source:HAIDIAN-ROAD-PARKING-TENDER-2026].
+
+Dazhongsi needs one additional location boundary in the reader layer. Issue #1029 reports that the current provisional `PROV-KEY-003` has no officially confirmed spatial anchor to Dazhongsi station. This package keeps the source geometry and does not move it locally; station, transfer and curb ideas remain relational interfaces pending an official polygon or anchor relation. When that source is released, nodes, metrics, figures, narrative and manifest must be recalculated together [source:ISSUE-1029-KEY3-ANCHOR] [data:geometry/key_areas.geojson#PROV-KEY-003].
 
 The first pilot is a small morning and evening window in Zhongzhiyuan, an accessible daily-route comparison in the Origin Community, and a rail/curb separation rehearsal at Dazhongsi. Enterprise bookings cannot become permanent community bans. Shared vehicles cannot occupy a fire route, accessible path or emergency corridor.
 

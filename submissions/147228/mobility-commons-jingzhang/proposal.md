@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.40"
+iteration: "v2.41"
 ---
 
 # 京张共行环。企业与居民交通共益系统
@@ -231,6 +231,8 @@ P0 先由有权组织确认参与窗口和责任边界。拟由交通主管部�
 
 每个重点区都要有企业责任人、社区/公共服务责任人、交通专业复核人和维护责任人，记录目标、输入、停止条件和回读证据；现阶段不声称已有合作方或运营许可 [depth:three_key_area_detailed_design] [source:HAIDIAN-ROAD-PARKING-TENDER-2026]。
 
+大钟寺这一处还要单独保留位置疑问。Issue #1029 的复核指出，当前临时 `PROV-KEY-003` 与大钟寺站之间没有得到官方确认的空间锚点。这里沿用源几何，不自行平移；站口、换乘和路缘只表达关系顺序与待核接口，等官方 polygon 或 anchor relation 发布后，再一起重算节点、指标、图件、正文和 manifest [source:ISSUE-1029-KEY3-ANCHOR] [data:geometry/key_areas.geojson#PROV-KEY-003]。
+
 ### 三处重点区的公共界面与可逆服务关系
 
 交通动作不能替代城市设计。下面的台账只把三处重点区的交通角色翻译成公共界面和可逆服务关系，不改变现有几何，也不把范围写成控规指标。公告约面积约为 192.1、104.3、72.0 公顷，仅作任务尺度，不是现状建筑面积、地块边界或控规指标 [data:geometry/key_areas.geojson#PROV-KEY-001] [source:OFFICIAL-ANNOUNCEMENT]。
@@ -281,7 +283,7 @@ P0 先由有权组织确认参与窗口和责任边界。拟由交通主管部�
 
 ### 普通路线连续性与节点交接
 
-三处重点区不是只在图上并列。`visual/assets/mobility-route-continuity.schema.json` 把 `MOB-NODE-001` 众智园、`MOB-NODE-002` AI 原点社区和 `MOB-NODE-003` 大钟寺写成一条可回读的公共交通—步行—无障碍关系链；每个节点都必须同时接受居民、无障碍使用者、企业员工和运营者四类读者的检查。合成 fixture 的设计上限是相邻节点缺口不超过 25%；一旦出现阻断、人工交接不可见、无纸面/电话入口或回退路线丢失，就重新开放服务窗口并回到人工/公共交通。`run-mobility-route-continuity.js` 提供 10 个正负样本，`verify.js` 再独立检查节点、道路、图网络和十张场景卡的交接关系。它们只证明设计合同可被拒绝和复演；baseline 仍为 `unknown`，现场结果、授权和专业无障碍审查仍为空。
+三处重点区不是只在图上并列。`visual/assets/mobility-route-continuity.schema.json` 把 `MOB-NODE-001` 众智园、`MOB-NODE-002` AI 原点社区和 `MOB-NODE-003` 大钟寺写成一条可回读的公共交通、步行与无障碍关系链；每个节点都必须同时接受居民、无障碍使用者、企业员工和运营者四类读者的检查。合成 fixture 的设计上限是相邻节点缺口不超过 25%；一旦出现阻断、人工交接不可见、无纸面/电话入口或回退路线丢失，就重新开放服务窗口并回到人工/公共交通。`run-mobility-route-continuity.js` 提供 10 个正负样本，`verify.js` 再独立检查节点、道路、图网络和十张场景卡的交接关系。它们只证明设计合同可被拒绝和复演；baseline 仍为 `unknown`，现场结果、授权和专业无障碍审查仍为空。
 
 ### 试点什么时候能开始。十张卡各自过一遍启动检查
 
