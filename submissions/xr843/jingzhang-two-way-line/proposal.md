@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把「京张」读完整：地上是9公里遗址公园慢行明线，地下是清华园隧道里飞驰的高铁暗线，北端是张家口的绿电与算力，南端是海淀的模型与人才。方案以「京张对开」为总体概念——绿电与算力上行进京，模型、人才与场景下行出塞——用「明线+暗线、三站一门、两台八口、双河冷环」组织11.4平方公里总体设计与三处重点区详细设计，并以「对开协议」把每一次AI部署都变成上行数据与下行公共回报成对出现的双向班次。全部空间建议基于自行推导并按公告面积校准的街道贴合临时边界，属概念建议，官方红线发布后整包重算。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v1.3"
+iteration: "v1.5"
 ---
 
 # 京张对开 THE TWO-WAY LINE：让百年走廊双向运行的AI创新带城市设计
@@ -32,6 +32,8 @@ iteration: "v1.3"
 本 formal 方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:OFFICIAL-ANNOUNCEMENT]，以面向全球智能体的开源征集任务书为第二依据 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]，并以 `brief/site-package/` 登记的允许设计空间、枚举、限值、标准快照与 schema 为机器可读依据 [source:SITE-PACKAGE]。公开来源登记表用于区分 formal-ready、background-only 与 provisional-only 资料 [source:SOURCE-REGISTRY]；处理资料包只作为阅读导航层，不构成新的权威来源 [source:PROCESSED-FACT-PACK]。
 
 在仓库资料之外，本方案补充了七组经核实的公开背景资料，全部登记于 `sources.json` 并标注 background-only 限制：现状道路、水系、轨道与遗产点位取自 OpenStreetMap 并遵循 ODbL 署名要求 [source:OSM-CONTEXT]；京张高铁清华园隧道全长6020米、下穿多条地铁与城市道路的公开事实来自国务院国资委页面 [source:JZ-HSR-QINGHUAYUAN]；京张高铁2019年12月30日开通、北京至张家口最快47分钟的事实来自北京市文旅局页面 [source:JZ-HSR-OPENING]；「东数西算」京津冀枢纽在张家口设数据中心集群（起步区怀来、张北、宣化）的政策依据为发改高技〔2022〕212号复函 [source:NDRC-EDWC-JJJ]；国务院2015年批复设立张家口可再生能源示范区 [source:ZJK-RENEWABLE-DEMO]；清华园车站1910年建站、詹天佑题写站名、2023年列为北京市文物保护单位并开放的事实来自清华校友总会 [source:QHY-STATION-HERITAGE]；京张铁路遗址公园一期约2.5公里于2023年开放的事实来自新京报 [source:JZ-PARK-PHASE1]。这些资料只支撑叙事与机制设计，不升级为边界、控规或评分证据。
+
+本包引用的每一项标准都对应仓库内一份可逐句回读的快照文件，全部登记于 `sources.json`：公告正文快照 [source:STD-REF-PROJECT-ANNOUNCEMENT] 是三层范围、三处重点区名称面积与公告四至街道的唯一依据；智能体任务书快照 [source:STD-REF-AGENT-TASKBOOK-0518] 界定 agent.1–agent.6 的必答项与禁止表述。用地编码方面，本包 189 块全覆盖分区所用的 0802、0701、05、0804 等编码全部取自用地用海分类指南快照 [source:STD-REF-MNR-LAND-USE]；交付边界与「交通市政容量须专业测算」的口径取自控规深度要求快照 [source:STD-REF-MOHURD-CONTROL-PLANNING]；风貌与夜景照明的表述边界取自城市设计管理办法快照 [source:STD-REF-MOHURD-URBAN-DESIGN]。建筑深度方面须特别说明：仓库只登记了条目而未入库官方正文 [source:STD-REF-MOHURD-ARCH-DEPTH]，因此本包的概念体量**不等同于建筑设计深度**，该缺口如实登记为待补。
 
 本包的权威顺序为：GeoJSON → metrics → 三矩阵 → manifest/sources/assumptions/self_check → proposal.md → 图片 → HTML → PDF。正文每个空间判断都可回到图层与指标：范围看 [data:geometry/site_boundary.geojson#SITE-001]，重点区看 [data:geometry/key_areas.geojson#PROV-KEY-001]，现状约束看 [data:geometry/constraints.geojson#EX-RAIL-HSR-TUNNEL]，现状诊断与资料缺口详见假设登记 [depth:existing_conditions_diagnosis]。控规深度与用地分类分别遵循住建部与自然资源部规范 [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；《建筑工程设计文件编制深度规定》官方正文未入库，仅登记为建筑深度待补参照 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。
 
@@ -61,7 +63,7 @@ iteration: "v1.3"
 
 ### 3.2 总体概念、命名体系与Logo方向（agent.1）
 
-**主名称：京张对开；英文名：THE TWO-WAY LINE**；标识语「一条线，两座城，双向开行 / One line, two cities, both directions」。命名体系全部取自铁路运营语汇：地上遗址公园慢行绿脊称**明线**，清华园隧道及高铁称**暗线** [source:JZ-HSR-QINGHUAYUAN]；三处重点区对应**众智站、原点站、大钟站**三座「站」；北京北站门户称**对开门**；八处东西缝合节点称**道口**（K1–K8）；中关村科技服务翼与小月河场景赋能翼化作**西台、东台**两座站台——要素与场景在两侧「上车」；AI场景部署称**班次**，其发布排期称**运行图**；治理契约称**对开协议**。Logo方向建议「双箭同轨」：两条平行轨线，上端北向箭头、下端南向箭头，中部以轨枕横杠连接，负空间隐含「开」字骨架；配色取绿电绿、站房砖红、隧道深蓝三色；字体建议站牌黑体方向的开源字库，不使用任何未授权字体、商标或企业标识。命名与图形均为方向性建议，最终视觉系统待专业设计深化 [depth:overall_spatial_structure]。上述 Logo 方向已绘制为可缩放矢量图，彩色版见 `assets/two-way-line-logo.svg`、单色版见 `assets/two-way-line-logo-mono.svg`：绿电绿轨线上端为北向箭头、隧道深蓝轨线下端为南向箭头，两道站房砖红轨枕横杠把两条轨线连成一副轨道，轨线与横杠围出的负空间即「开」字骨架；单色版填色为 `currentColor`，供单色印刷、刻印与深底反白使用。两版几何完全一致，未使用任何未授权字体、商标或企业标识。
+**主名称：京张对开；英文名：THE TWO-WAY LINE**；标识语「一条线，两座城，双向开行 / One line, two cities, both directions」。命名体系全部取自铁路运营语汇：地上遗址公园慢行绿脊称**明线**，清华园隧道及高铁称**暗线** [source:JZ-HSR-QINGHUAYUAN]；三处重点区对应**众智站、原点站、大钟站**三座「站」；北京北站门户称**对开门**；八处东西缝合节点称**道口**（K1–K8）；中关村科技服务翼与小月河场景赋能翼化作**西台、东台**两座站台——要素与场景在两侧「上车」；AI场景部署称**班次**，其发布排期称**运行图**；治理契约称**对开协议**。Logo方向建议「双箭同轨」：两条平行轨线，上端北向箭头、下端南向箭头，中部以轨枕横杠连接，负空间隐含「开」字骨架；配色取绿电绿、站房砖红、隧道深蓝三色；字体建议站牌黑体方向的开源字库，不使用任何未授权字体、商标或企业标识。命名与图形均为方向性建议，最终视觉系统待专业设计深化 [depth:overall_spatial_structure]。上述 Logo 方向已绘制为可缩放矢量图，彩色版见 `assets/two-way-line-logo.svg`、单色版见 `assets/two-way-line-logo-mono.svg`：绿电绿轨线上端为北向箭头、隧道深蓝轨线下端为南向箭头，两道站房砖红轨枕横杠把两条轨线连成一副轨道，轨线与横杠围出的负空间即「开」字骨架；单色版填色为 `currentColor`，供单色印刷、刻印与深底反白使用。两版几何完全一致，未使用任何未授权字体、商标或企业标识 [source:PKG-IDENTITY-MARK]。
 
 ### 3.3 三大定位、五大功能与三区两翼协同回路
 
@@ -82,6 +84,8 @@ iteration: "v1.3"
 | 上海张江科学城 | 大科学装置带动的综合性科学城 | 重大设施作为「重锚」；居住配套与产业同步补课 |
 
 对海淀的启示浓缩为三条：把遗产场站当门面（对开门与清华园车站）、把校门口当转化区（原点站）、把可回退当准入（对开协议）。案例均为公开知识的定性概括，不引用未核实的投资与产值数字 [depth:existing_conditions_diagnosis]。
+
+七例中有三例可直接回到其官方站点核对上表的机制描述：肯德尔广场见 Kendall Square Association 站点 [source:CASE-KENDALL-SQUARE]，Station F 见其官方站点 [source:CASE-STATION-F]，one-north 见开发主体 JTC 的官方页面 [source:CASE-ONE-NORTH]。其余四例（国王十字、南山粤海街道、多伦多滨水智慧城、张江科学城）本轮**未登记可核验来源**——国王十字官网对本包的抓取返回 403，多伦多项目的原运营方站点现已重定向至其它产品，张江站点未能确认发布主体。按本包「无法核实即不声称已清权」的原则，这四例只作为公开知识的定性概括保留，不升级为可引用来源，后续如取得稳定出处将补登记。
 
 ### 3.5 适配人工智能的未来城市形态
 
@@ -111,11 +115,19 @@ iteration: "v1.3"
 
 ### 4.4 京张遗址公园活力带
 
-活力带的核心动作是「**八口缝合、全线贯通**」：现状公园断点集中在与东西向城市道路的交叉处，本方案在学院南路、北三环、知春路、北四环、成府路、清华东路、月泉路、清河湾设八处道口 [metric:crossing_node_count]，每处道口等于慢行贯通设施加一块公园内活动场地加一个AI场景端口 [data:geometry/public_space.geojson#PB-X01]。公园南端接对开门与北京北站到达序列，北端以清河湾道口衔接清河水岸，上跨北四环、北三环两处以景观连桥形成标志性节点（桥隧工程可行性待专业论证，此处仅为概念建议）。停车、体育与创新交往设施沿明线两侧组团布置；科技测试与应用展示功能由道口场景端口承载，测试班次全部纳入运行图管理 [depth:blue_green_public_space]。
+活力带的核心动作是「**八口缝合、全线贯通**」：现状公园断点集中在与东西向城市道路的交叉处，本方案在学院南路、北三环、知春路、北四环、成府路、清华东路、月泉路、清河湾设八处道口 [metric:crossing_node_count]，每处道口等于慢行贯通设施加一块公园内活动场地加一个AI场景端口 [data:geometry/public_space.geojson#PB-X01]。公园南端接对开门与北京北站到达序列，北端以清河湾道口衔接清河水岸，上跨北四环、北三环两处以景观连桥形成标志性节点（桥隧工程可行性待专业论证，此处仅为概念建议）。
+
+须如实说明八处道口的一处范围事实：**清河湾道口经复算位于总体设计范围北缘之外约 85 米**，八处中其余七处均在范围内。这不是失误而是这处道口的功能使然——它的任务正是把明线北端接出边界、缝到清河水岸上去，缝合动作本身必然跨过边界线。相应地，该处的实施依据落在统筹研究范围层面，其用地与工程条件不计入总体设计范围的用地与指标复算；官方红线发布后此处需要重新判断归属 [depth:risk_missing_data]。停车、体育与创新交往设施沿明线两侧组团布置；科技测试与应用展示功能由道口场景端口承载，测试班次全部纳入运行图管理 [depth:blue_green_public_space]。
 
 ### 4.5 彰显人工智能时代特色的城市风貌
 
-城市基调概括为「**站房砖红、绿电青绿、隧道深蓝**」的京张三色：遗产界面（清华园车站视廊、觉生寺周边）保持低层砖木肌理与文保退让 [source:QHY-STATION-HERITAGE]；明线两侧建筑以退台形成「站台断面」，中高层向学院路、西土城路一侧递升；概念高度分区为遗产界面12至24米、明线界面24至45米、东侧干道界面45至80米，全部为待控规确认的引导方向 [depth:height_massing_character]。屋顶形态鼓励第五立面光伏化，与绿电叙事一致；夜景照明以「运行图」为脚本——城市灯光的节律本身成为AI运行状态的公共表达 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+城市基调概括为「**站房砖红、绿电青绿、隧道深蓝**」的京张三色。三色不是装饰配色，而是三种空间身份的编码：砖红属于遗产与站房，青绿属于上行的能源与水岸，深蓝属于地下飞驰的暗线。同一套三色贯穿标识、导视、铺装与夜景，使人在任何一个节点都能读出自己站在哪一层走廊上 [source:PKG-IDENTITY-MARK]。
+
+**高度秩序以包内 244 栋概念体量的实际分布为准，不做无据的分区宣称**：全域概念高度 21.0 至 67.2 米，中位 37.8 米；其中 24 米以下 10 栋（4%）、24 至 45 米 173 栋（71%）、45 至 60 米 47 栋（19%）、60 米以上 14 栋（6%）[metric:building_height_max_m]。也就是说走廊主体是一个**以七成体量落在 24 至 45 米区间的中层城市**，高点是少数而非常态。按功能看，教育设施最低（21.0 米）、孵化器与住宅次之（25.2 米）、人才公寓 29.4 米、零售与研发 33.6 至 50.4 米、办公 42.0 米、实验室 50.4 米，最高的是大钟站一侧的混合功能组团（50.4 至 67.2 米）。高度由功能与区位共同决定，与前述院区型→街区型→城市型的密度梯度同向 [depth:height_massing_character]。
+
+**遗产界面须说明一处范围事实**：清华园车站旧址（1910年建站，2023年列为北京市文物保护单位）经复算位于本方案总体设计范围**以西约 389 米**，在统筹研究范围之内、总体设计范围之外 [data:geometry/constraints.geojson#EX-RAIL-HSR-TUNNEL]。因此本章对该处「低层砖木肌理与文保退让」的引导属**统筹研究范围层面的建议**，不构成总体设计范围内的管控条款；范围内真正受文保直接约束的是觉生寺（大钟寺古钟博物馆，全国重点文物保护单位）周边界面 [source:QHY-STATION-HERITAGE]。明线两侧建筑以退台形成「站台断面」，中高层向学院路、西土城路一侧递升，全部为待控规确认的引导方向。
+
+屋顶形态鼓励第五立面光伏化，与绿电叙事一致；夜景照明以「运行图」为脚本——城市灯光的节律本身成为AI运行状态的公共表达，而这套节律的数据源与绿电报时（班次S12）共用同一个可审计口径，不是任意的灯光秀 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 ## 5. 重点区域详细设计
 
@@ -205,7 +217,7 @@ iteration: "v1.3"
 | S11 | 街区微气候感知 | 明线全线 | 温湿风光传感 | 高温预警与遮荫导航 | 传感点位公示可关停 |
 | S12 | 绿电报时 | 绿电大钟广场 | 走廊绿电占比数据 | 每日整点声光报时 | 数据源公示可审计 |
 
-场景卡的空间落位见节点图层 [data:geometry/public_space.geojson#ST-ORIGIN] [metric:ai_scenario_node_count]。所有场景遵守隐私与人工复核边界：不做人脸识别布控、不采集可识别个体轨迹、每个班次必须有非AI等价服务路径，测试场景不得表述为已批准运营 [source:AGENT-TASKBOOK]。
+场景卡的空间落位见节点图层 [data:geometry/public_space.geojson#ST-ORIGIN] [metric:ai_scenario_node_count]。其中班次 S8 的场所「清华园车站发车厅」依托的清华园车站旧址位于总体设计范围以西约 389 米、统筹研究范围之内，属跨范围的仪式性场所；其余十一张班次卡的节点均落在总体设计范围内。所有场景遵守隐私与人工复核边界：不做人脸识别布控、不采集可识别个体轨迹、每个班次必须有非AI等价服务路径，测试场景不得表述为已批准运营 [source:AGENT-TASKBOOK]。
 
 ### 6.3 场景、空间与运营映射及小月河场景赋能翼
 
@@ -228,7 +240,7 @@ iteration: "v1.3"
 | S11 街区微气候感知 | 明线运维组 | 点位属地、运行图管委会 |
 | S12 绿电报时 | 大钟站乘务组 | 数据源审计方、运行图管委会 |
 
-**对开协议是可复算的，不只是一段承诺**：上述六条规则（三要素齐全、禁止只取不还、叫停主体确定、隐私红线、非AI等价路径、测试班次不得写成已批准运营）已写成机读契约与桌面推演，评审者可自行复算而不必采信本文的结论。契约见 `visual/assets/twoway-protocol.schema.json`，运行图数据见 `visual/assets/twoway-runbook.json`，推演脚本见 `visual/assets/run_twoway_tabletop.js`（Node 18+，无外部依赖，`node run_twoway_tabletop.js` 即可运行），本包记录的运行结果见 `visual/assets/twoway-tabletop-evidence.json`。
+**对开协议是可复算的，不只是一段承诺**：上述六条规则（三要素齐全、禁止只取不还、叫停主体确定、隐私红线、非AI等价路径、测试班次不得写成已批准运营）已写成机读契约与桌面推演，评审者可自行复算而不必采信本文的结论。契约见 `visual/assets/twoway-protocol.schema.json`，运行图数据见 `visual/assets/twoway-runbook.json`，推演脚本见 `visual/assets/run_twoway_tabletop.js`（Node 18+，无外部依赖，`node run_twoway_tabletop.js` 即可运行），本包记录的运行结果见 `visual/assets/twoway-tabletop-evidence.json` [source:PKG-TWOWAY-PROTOCOL]。
 
 推演不只检验十二张卡是否合规，还反过来检验这六道闸门本身是不是摆设：运行图里另附六个**必须被拒**的变异班次，每个只违反一条规则（无运营主体、只取不还、无人可叫停、越隐私红线、无非AI兜底、测试班次自称已排图），脚本要求每个都被其对应规则拦下，否则同样判定失败。本包记录的结果是十二张卡全部可排图、六个变异班次全部被对应规则拦下；把任一真实班次的运营主体清空或把隐私红线翻转，脚本会立即判红并以非零码退出 [depth:blue_green_public_space]。
 
