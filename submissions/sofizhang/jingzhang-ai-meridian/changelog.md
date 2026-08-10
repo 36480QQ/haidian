@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-10
+
+- **专业规划图版换肤 / Professional planning-board re-skin.** 全套图纸改为浅色专业制图语言：淡彩用地（鼠尾草绿系）、公园树木肌理、建筑白底落影、道路双线画法；A0 展板一主视觉改为矢量总平面图；新增原点社区轴测效果页（2.5D 概念体块+人字桥）；五张正文图同步换肤。
+- Re-skinned all drawings to a light professional palette (sage greens, dusty pastels), masterplan textures (tree stipple, building shadows, road casings); Board 1 hero is now a vector masterplan; added an axonometric concept view of the Origin Community with the Herringbone Gate.
+
 ## v1.1 - 2026-08-10
 
 - **视觉系统重构 / Visual system rebuilt.** A3 图册重做为 12 页"夜间线路图"设计系统：地铁风格全方案线路图、三段城市设计断面（众智园/原点/大钟寺）、人字桥专页、12张场景票卡墙、6张乘客卡与一日旅程带、18项目时刻表与指标仪表盘；A0 展板全矢量重绘（线路图版+枢纽证据版）。
