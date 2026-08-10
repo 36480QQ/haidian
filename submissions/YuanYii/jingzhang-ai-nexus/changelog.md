@@ -16,6 +16,7 @@
 
 ## v5.7 - 2026-08-10
 
+- **升级**：更新  与  重点区域图为 16:9 (2560x1440) 深藏青 QHD 品牌展板。
 维护者反馈修复：
 - metrics.json 中 `site_area_sqm` 与 `key_area_count` 置信度 high → medium（与 manifest data_confidence=medium 对齐）
 

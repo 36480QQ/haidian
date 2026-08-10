@@ -2,6 +2,13 @@
   "schema_version": "0.1.0",
   "sources": [
     {
+      "id": "PUBLIC-BRIEF",
+      "path": "brief/public-brief.md",
+      "source_type": "official_public",
+      "usage": "Official public design brief.",
+      "evidence_anchor": "repo://open-city-ai/haidian/brief/public-brief.md"
+    },
+    {
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",

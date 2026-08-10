@@ -24,9 +24,9 @@ keywords: ["百年京张", "AI创新带", "城市设计", "中关村", "智轨�
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前完整读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并建立了任务、范围、资料用途和缺口清单。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述紧密结合 GeoJSON 图层、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
 
-本方案证据链引用包括：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:PUBLIC-THINKTANK-REGISTRY]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
+本方案证据链引用包括：[source:PUBLIC-BRIEF]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:PUBLIC-THINKTANK-REGISTRY]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
 
-![资料证据链与提交包关系图](assets/figures/site-overview.png)
+![总体设计范围与三处重点区域图](assets/figures/site-overview.png)
 
 本方案在官方精确红线尚未完全发布前，基于 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`，用于方案生成、自检、可视化和设计讨论。当官方边界更新后，所有空间指标与图层均可无缝重算并更新。
 
@@ -277,7 +277,7 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 
 ### 基于公园已建成区域的精细化拆改留原则
 
-鉴于京张铁路遗址公园一期已建成开放、二期已推进（[source:OFFICIAL-ANNOUNCEMENT]，公告提及"结合公园已实施区域"），本方案严格恪守实事求是原则，不盲目重画或改动已建成的公园绿化景观，而是将其作为静态"底座"予以完整保留，在其基础上叠加 AI 场景与智慧设施。方案的所有空间动作均精准聚焦于"缝合公园两侧的慢行系统断点"（如清华东路西口、五道口交叉口）、"植入端侧算力补给节点"以及"激活沿线存量厂房为近校成果转化空间"，实现历史文化线、都市生活线与未来创新线的三线无缝织锦。
+鉴于京张铁路遗址公园一期已建成开放、二期已推进（[source:PUBLIC-BRIEF]、[source:OFFICIAL-ANNOUNCEMENT]，公告提及"结合公园已实施区域"），本方案严格恪守实事求是原则，不盲目重画或改动已建成的公园绿化景观，而是将其作为静态"底座"予以完整保留，在其基础上叠加 AI 场景与智慧设施。方案的所有空间动作均精准聚焦于"缝合公园两侧的慢行系统断点"（如清华东路西口、五道口交叉口）、"植入端侧算力补给节点"以及"激活沿线存量厂房为近校成果转化空间"，实现历史文化线、都市生活线与未来创新线的三线无缝织锦。
 
 用地方案依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 国土空间调查分类标准进行编排。建筑方案按照 [depth:retain_renovate_demolish] 与 [depth:height_massing_character] 的要求实施拆改留：
 
@@ -477,7 +477,7 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 
 | 图件 | 路径 | 内容说明 |
 | --- | --- | --- |
-| 总览与证据链图 | assets/figures/site-overview.png | 资料证据链、三层范围与提交包关系 |
+| 总体设计范围与重点区域总览图 | assets/figures/site-overview.png | 总体设计范围、三处重点区域与三层空间控制体系 |
 | 三层范围与空间结构图 | assets/figures/land-use-structure.png | 三层范围工作框架与总体空间结构 |
 | 三处重点区域图 | assets/figures/key-areas.png | 重点区域索引与设计任务 |
 | 交通慢行与蓝绿系统图 | assets/figures/mobility-bluegreen.png | 交通慢行与蓝绿公共空间复合系统 |
@@ -506,7 +506,7 @@ Logo 概念方案由“双轨 + 节点网络”构成：两条钢轨象征百年
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+- 机器可读引用索引：[source:PUBLIC-BRIEF]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
 
 
 ### Civic Value Protocol（市民算力与公共收益反哺机制）
