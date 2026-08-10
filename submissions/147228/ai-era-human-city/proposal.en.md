@@ -89,7 +89,7 @@ The previous section answers which public and reversible relationships to compar
 
 This node plan adds a reviewer-visible middle layer for how public interfaces carry an ordinary-person path and stop action; it is not a section, plan, or massing drawing. Until road, tenure, heritage, accessibility, existing-facility, and operating evidence is available, all dimensions, capacity, movement performance, and outcome metrics remain missing or `unknown`. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:risk_missing_data]
 
-![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.svg)
+![Figure 06: node-level public interface states and rollback sequence for three key areas](assets/figures/spatial-interface-nodes.en.png)
 
 To reduce the jump from narrative to structured attachments, this revision brings four bilingual review boards generated directly from package JSON contracts into one visible set: the ordinary-person journey and stop loop, taskbook–space–replay coverage for all ten scenario cards, G0/G1 gates with exit actions for the five conceptual project families, and the taskbook–public-space–annual-operation triad. They are visual indexes of existing fields, not new field performance, authorization, permit, deployment, or official-score claims; read the `result_status=not_run` and `not_an_official` boundaries with the source JSON.[data:visual/assets/run-ai-era-evidence-boards.js] [data:visual/assets/ai-era-traceability-index.json]
 
@@ -105,7 +105,7 @@ Figure 10 compresses three requirements that are easy to read separately into on
 
 The five project families in Figure 10 are only a spatial-carrier and G0/G1 research order: human buffer, reskilling and night wellbeing, city API, blue-green and human-machine test, and culture/global co-creation. If authorization, responsibility, professional material, or a safety gate is missing, the proposal stays at G0, freezes, or exits. The board proves only that package fields can be read together; it is not an official score, confirmed event, operator, heritage permit, company partnership, or field result. [data:visual/assets/implementation-operation-matrix.json] [metric:project_family_count] [depth:implementation_and_phasing]
 
-![Figure 10: Taskbook, public space and annual operation](assets/figures/taskbook-culture-operations-board.en.svg)
+![Figure 10: Taskbook, public space and annual operation](assets/figures/taskbook-culture-operations-board.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -189,8 +189,6 @@ The asset-level clearance ledger records author, method, third-party content, an
 ![Figure 03: key-area public-space, landmark, and scenario relations](assets/figures/key-areas.en.png)
 ![Figure 04: people-first mobility, Xiaoyuehe resilience, and G0 rules](assets/figures/mobility-bluegreen.en.png)
 ![Figure 05: metrics, evidence lineage, scenario gates, and versioned governance](assets/figures/metrics-evidence.en.png)
-![Figure 07: ordinary-person journey and stop loop](assets/figures/ordinary-service-evidence-board.en.svg)
-![Figure 08: taskbook–space–replay coverage for ten scenario cards](assets/figures/scenario-coverage-board.en.svg)
-![Figure 09: G0/G1 gates and exit actions for five conceptual project families](assets/figures/implementation-gates-board.en.svg)
-![Figure 10: taskbook, public space, and annual operation concept evidence](assets/figures/taskbook-culture-operations-board.en.svg)
-![Figure 10: Taskbook, public space and annual operation](assets/figures/taskbook-culture-operations-board.en.svg)
+![Figure 07: ordinary-person journey and stop loop](assets/figures/ordinary-service-evidence-board.en.png)
+![Figure 08: taskbook–space–replay coverage for ten scenario cards](assets/figures/scenario-coverage-board.en.png)
+![Figure 09: G0/G1 gates and exit actions for five conceptual project families](assets/figures/implementation-gates-board.en.png)
