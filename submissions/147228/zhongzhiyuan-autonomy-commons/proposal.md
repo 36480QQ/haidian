@@ -130,6 +130,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 所有自动驾驶场景先绘制“人行连续带”和“可退出服务带”，再决定车辆路径。路缘登记采用五种状态：`open`（公共通行）、`booked`（短时装卸/接送）、`service`（维护窗口）、`restricted`（风险天气或活动管制）、`human-only`（人工与无障碍优先）。状态变更必须有责任人、起止时间、现场标识和恢复条件，不能由模型自动永久锁定。
 
+这里的“状态牌 + 可撤回功能带”是方法性借鉴而非本地结论：路缘研究提醒设计同时记录执法、公众沟通、数据管理和跨部门协同；驾驶人本位街道研究把绿化、座椅、遮蔽和微出行设施作为公众参与时的弹性空间问题；place-based eHMI 研究则提示自动驾驶界面需要嵌入场所语境。三项研究只决定后续要问什么、测什么和由谁复核，不把外地样本或参与者结果转移成京张偏好、尺寸或安全效果 [source:DIEHL-CURBSPACE-MANAGEMENT-2021] [source:FAYYAZ-DRIVERLESS-STREETS-2025] [source:WANG-PLACE-BASED-EHMI-2025]。
+
 #### 典型路缘断面：先保连续通行，再放服务窗口
 
 | 断面带 | 空间动作 | 可见状态与接管 | 不能先行假定的事实 |
