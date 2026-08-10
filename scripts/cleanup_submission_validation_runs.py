@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Release a genuinely stuck submission-validation concurrency slot.
+"""Release stale pre-job submission-validation runs.
 
-GitHub Actions can report a run as ``in_progress`` while it has never created
+GitHub Actions can keep a ``pending`` or ``in_progress`` run without creating
 a job.  A stale run in that state can occupy the workflow's concurrency group
 indefinitely.  This helper is deliberately conservative: it only considers
-old ``pull_request_target`` runs for this workflow that are still
-``in_progress``, have no ``run_started_at`` value, and have zero jobs.
+old ``pull_request_target`` runs for this workflow that have zero jobs and no
+longer point at the current head of an open, non-draft PR.
 
 The default mode is a dry run.  The scheduled maintainer workflow passes
 ``--apply`` after the age and no-job guards have been checked.
@@ -44,16 +44,22 @@ def is_stuck_run(
     job_count: int,
     now: datetime_module.datetime,
     min_age_minutes: int,
+    head_is_current: bool = False,
 ) -> bool:
-    """Return whether a run is safe to classify as a pre-job zombie."""
+    """Return whether a stale pre-job run is safe to cancel."""
 
     if run.get("event") != "pull_request_target":
         return False
-    if run.get("status") != "in_progress":
+    status = run.get("status")
+    if status not in {"pending", "in_progress"}:
         return False
-    if run.get("run_started_at") is not None:
+    if status == "in_progress" and run.get("run_started_at") is not None:
+        return False
+    if head_is_current:
         return False
     if job_count != 0:
+        return False
+    if not isinstance(run.get("head_sha"), str) or not run.get("head_sha"):
         return False
     created_at = parse_timestamp(run.get("created_at"))
     if created_at is None:
@@ -69,7 +75,7 @@ class ActionsClient:
         self.token = token
         self.repository = repository
 
-    def request(self, path: str, *, method: str = "GET") -> dict[str, Any]:
+    def request(self, path: str, *, method: str = "GET", timeout_seconds: int = 10) -> Any:
         request = Request(
             API_ROOT + path,
             data=b"" if method != "GET" else None,
@@ -82,30 +88,63 @@ class ActionsClient:
             },
         )
         try:
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=timeout_seconds) as response:
                 payload = response.read().decode("utf-8")
-        except (HTTPError, URLError) as exc:
+        except (HTTPError, URLError, TimeoutError) as exc:
             raise RuntimeError(f"GitHub Actions API request failed: {exc}") from exc
         if not payload:
             return {}
         parsed = json.loads(payload)
-        if not isinstance(parsed, dict):
-            raise RuntimeError("GitHub Actions API returned a non-object response")
         return parsed
 
-    def list_in_progress_runs(self, workflow: str) -> list[dict[str, Any]]:
-        query = urlencode({"status": "in_progress", "per_page": "100"})
+    def list_runs(self, workflow: str, status: str) -> list[dict[str, Any]]:
+        if status not in {"pending", "in_progress"}:
+            raise ValueError("status must be pending or in_progress")
         workflow_ref = quote(workflow, safe="")
-        path = f"/repos/{self.repository}/actions/workflows/{workflow_ref}/runs?{query}"
-        payload = self.request(path)
-        runs = payload.get("workflow_runs", [])
-        if not isinstance(runs, list):
-            raise RuntimeError("GitHub Actions API returned invalid workflow_runs")
-        return [item for item in runs if isinstance(item, dict)]
+        runs: list[dict[str, Any]] = []
+        for page in range(1, 11):
+            query = urlencode({"status": status, "per_page": "100", "page": str(page)})
+            path = f"/repos/{self.repository}/actions/workflows/{workflow_ref}/runs?{query}"
+            payload = self.request(path)
+            if not isinstance(payload, dict):
+                raise RuntimeError("GitHub Actions API returned a non-object workflow response")
+            page_runs = payload.get("workflow_runs", [])
+            if not isinstance(page_runs, list):
+                raise RuntimeError("GitHub Actions API returned invalid workflow_runs")
+            runs.extend(item for item in page_runs if isinstance(item, dict))
+            if len(page_runs) < 100:
+                break
+        return runs
+
+    def list_in_progress_runs(self, workflow: str) -> list[dict[str, Any]]:
+        return self.list_runs(workflow, "in_progress")
+
+    def list_pending_runs(self, workflow: str) -> list[dict[str, Any]]:
+        return self.list_runs(workflow, "pending")
+
+    def list_open_pull_request_head_shas(self) -> set[str]:
+        """Return heads that must not be canceled as stale."""
+        heads: set[str] = set()
+        for page in range(1, 11):
+            query = urlencode({"state": "open", "per_page": "100", "page": str(page)})
+            payload = self.request(f"/repos/{self.repository}/pulls?{query}")
+            if not isinstance(payload, list):
+                raise RuntimeError("GitHub API returned invalid pull request data")
+            for pull_request in payload:
+                if not isinstance(pull_request, dict) or pull_request.get("draft") is True:
+                    continue
+                head = pull_request.get("head")
+                sha = head.get("sha") if isinstance(head, dict) else None
+                if isinstance(sha, str) and sha:
+                    heads.add(sha)
+            if len(payload) < 100:
+                break
+        return heads
 
     def job_count(self, run_id: int) -> int:
         payload = self.request(
-            f"/repos/{self.repository}/actions/runs/{run_id}/jobs?per_page=1"
+            f"/repos/{self.repository}/actions/runs/{run_id}/jobs?per_page=1",
+            timeout_seconds=10,
         )
         count = payload.get("total_count")
         if not isinstance(count, int):
@@ -127,18 +166,33 @@ def run_watchdog(
     if min_age_minutes < 1:
         raise ValueError("min_age_minutes must be at least 1")
     now = now or datetime_module.datetime.now(datetime_module.timezone.utc)
-    runs = client.list_in_progress_runs(workflow)
+    runs = client.list_in_progress_runs(workflow) + client.list_pending_runs(workflow)
+    current_heads = client.list_open_pull_request_head_shas()
     candidates: list[dict[str, Any]] = []
     for run in runs:
         run_id = run.get("id")
         if not isinstance(run_id, int):
             continue
-        jobs = client.job_count(run_id)
+        head_is_current = run.get("head_sha") in current_heads
+        if head_is_current:
+            continue
+        # A run reported as pending is still waiting at the workflow
+        # concurrency boundary, so it has no started job to preserve.  Runs
+        # reported as in_progress still need the explicit zero-job check.
+        if run.get("status") == "pending":
+            jobs = 0
+        else:
+            try:
+                jobs = client.job_count(run_id)
+            except RuntimeError as exc:
+                print(f"skip run {run_id}: could not verify job count: {exc}")
+                continue
         if is_stuck_run(
             run,
             job_count=jobs,
             now=now,
             min_age_minutes=min_age_minutes,
+            head_is_current=head_is_current,
         ):
             candidates.append(run)
 
@@ -157,8 +211,9 @@ def run_watchdog(
         json.dumps(
             {
                 "workflow": workflow,
-                "inspected_in_progress_runs": len(runs),
+                "inspected_pre_job_runs": len(runs),
                 "stuck_pre_job_runs": len(candidates),
+                "current_open_non_draft_heads": len(current_heads),
                 "applied": apply,
             },
             ensure_ascii=False,
