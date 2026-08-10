@@ -361,6 +361,8 @@ The current quantitative decision experiment compares baseline, adaptive, regene
 
 The preferred indicators are district income per capita, district GDP per capita and district health institutions per 10,000 people, with green coverage, physicians, wastewater treatment and water intensity as guardrails. Every number must be read with its source, year, unit, scope and limitation in `visual/assets/evidence-ledger.json`, `visual/assets/model-backtest.json`, `visual/assets/indicator-selection.json` and `metrics.json`.
 
+Nine structured numbers visible on the pages are separately registered in `visual/assets/claim-provenance.json`. Each record gives the raw-value path in `metrics.json`, source files, corresponding figures and bilingual metric markers, while `run-open-pulse-claim-provenance.js` rechecks those relationships one by one. OSM screening, provisional geometry and candidate options retain their declared status as background records, conceptual structure or design experiment. This table improves the reading path without changing evidence levels. [data:visual/assets/claim-provenance.json]
+
 Once official polygons replace the provisional geometry, the package must rerun area, ratios, key-area counts, object counts, accessible-route checks, blue-green continuity, drainage interfaces, land-use coverage, constraint interfaces and phasing. A passing self-check is evidence of package integrity, not evidence that a provisional concept is legally approved.
 
 ## Risk, Copyright, and Compliance
