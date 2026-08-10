@@ -910,7 +910,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "百年京张文化与 AI 新文化：从工程自主到城市采用"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -945,7 +946,11 @@
         "交通慢行",
         "蓝绿公共空间",
         "建筑",
-        "更新项目"
+        "更新项目",
+        "百年文化",
+        "真实图谱",
+        "三站交接",
+        "三处场地"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -955,12 +960,14 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-GEOMETRY-001",
-        "A-BUILDING-CARRIERS-001"
+        "A-BUILDING-CARRIERS-001",
+        "A-CONTEXT-MAP-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1006,7 +1013,9 @@
         "总览地图",
         "任务覆盖",
         "核心指标",
-        "AI 场景"
+        "AI 场景",
+        "真实图谱",
+        "三站交接"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1016,7 +1025,8 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1069,7 +1079,8 @@
         "任务覆盖",
         "核心指标",
         "重点区域",
-        "AI 场景"
+        "AI 场景",
+        "三处场地"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1079,7 +1090,8 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1101,7 +1113,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "三个朝圣地标：纪念“完成交接”而非崇拜技术"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1131,7 +1144,9 @@
         "重点区域",
         "蓝绿公共空间",
         "建筑",
-        "AI 场景"
+        "AI 场景",
+        "三处场地",
+        "旗舰体验"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1141,12 +1156,15 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER",
+        "FIRST-MILE-THREE-SCENES-IMAGEGEN-2026"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-DESIGN-NODES-001",
-        "A-BUILDING-CARRIERS-001"
+        "A-BUILDING-CARRIERS-001",
+        "A-TRIPTYCH-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1163,7 +1181,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "百年京张文化与 AI 新文化：从工程自主到城市采用",
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1192,7 +1212,10 @@
         "核心指标",
         "交通慢行",
         "蓝绿公共空间",
-        "AI 场景"
+        "AI 场景",
+        "百年文化",
+        "真实图谱",
+        "品牌系统"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1202,12 +1225,14 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-DESIGN-NODES-001",
-        "A-BUILDING-CARRIERS-001"
+        "A-BUILDING-CARRIERS-001",
+        "A-CONTEXT-MAP-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1224,7 +1249,9 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划",
+        "长期运营与全球公共品牌资产"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1256,7 +1283,9 @@
         "核心指标",
         "更新项目",
         "AI 场景",
-        "自检状态"
+        "自检状态",
+        "长期运营",
+        "实施数量"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1266,7 +1295,8 @@
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
         "KEY-AREA-SOURCE",
-        "FIRST-MILE-ASSET-BUILDER"
+        "FIRST-MILE-ASSET-BUILDER",
+        "FIRST-MILE-V5-FIGURE-BUILDER"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",

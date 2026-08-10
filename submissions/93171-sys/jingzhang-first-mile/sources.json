@@ -222,6 +222,24 @@
       "generated_date": "2026-08-10",
       "usage": "Machine-readable concept quantity basis for six reversible pilot work packages, reconciled to the published 90-day control envelope.",
       "limitations": "Not a bill for procurement, supplier quote, approved budget or fiscal commitment; quantities and rates require site verification and market quotations."
+    },
+    {
+      "id": "FIRST-MILE-V5-FIGURE-BUILDER",
+      "source_type": "agent_generated_design",
+      "path": "assets/figures/",
+      "generated_date": "2026-08-10",
+      "usage": "Bilingual centennial-culture line, real-place atlas, three place-specific design sheets and long-term operating model generated from the registered OSM orientation layer, proposal GeoJSON, assumptions and operating logic.",
+      "limitations": "Design communication only. The figures do not create statutory geometry, measured conditions, heritage controls, partnership commitments, verified operations or approved implementation."
+    },
+    {
+      "id": "FIRST-MILE-THREE-SCENES-IMAGEGEN-2026",
+      "source_type": "agent_generated_design",
+      "path": "assets/figures/three-flagship-scenes.png",
+      "tool": "OpenAI built-in image generation",
+      "generated_date": "2026-08-10",
+      "reference_images": "none",
+      "usage": "Text-free triptych communicating the intended human-scale experience at Zhongzhiyuan, AI Origin and Dazhongsi: visible safety handoff, inclusive first use with staffed help, and an everyday procurement/reuse conversation.",
+      "limitations": "Non-built concept visualization only. It is not a photograph, survey, approved design, evidence of user research, named partnership, procurement activity or implementation result."
     }
   ]
 }

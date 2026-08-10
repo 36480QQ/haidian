@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v5.0 - 2026-08-10
+
+- Turned centennial Jing-Zhang culture from a visual motif into an operating thesis: line, sleepers, platform, formation and timetable now map to the adoption chain, evidence gates, equal first-use interface, responsibility handoff and annual rhythm.
+- Added a registered OSM-based real-place atlas and three site-specific review sheets connecting Zhongzhiyuan, AI Origin and Dazhongsi to actual roads, rivers, rail, campuses, stations and heritage anchors while retaining provisional-boundary warnings.
+- Added a human-scale three-scene concept triptych for product readiness, inclusive first use and verifiable first order, with explicit non-evidence and no-reference-image declarations.
+- Added a long-term operating model covering six-party accountability, public-value and operating-economics ledgers, a four-season public rhythm and a three-year reuse roadmap.
+- Reordered the bilingual visual index and formal PDF narrative around the faster selection path: cultural thesis → real place → differentiated spatial action → first-user proof → delivery → long-term operation.
+
 ## v4.0 - 2026-08-10
 
 - Added a one-page selection brief that turns the proposal into five reviewable judgments: originality, site specificity, public value, executability and auditability.
