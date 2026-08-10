@@ -377,7 +377,7 @@ function updateVisualIndex(file, lang) {
   const networkAlt = zh
     ? '全量人员动线与网络压力屏查'
     : 'Population-scale people flow and network pressure screen';
-  const regionalAlt = zh ? '区域人口规模通勤综合模拟' : 'Regional population-scale commute simulation';
+  const regionalAlt = zh ? '人口规模参考的合成通勤压力回放' : 'Population-reference synthetic commute stress replay';
   const regionalImage = `<img src="../assets/figures/regional-scale-commute-board${suffix}.svg" alt="${regionalAlt}">`;
   const networkImage = `<img src="${networkBoard}" alt="${networkAlt}">`;
   const distributionalAlt = zh
