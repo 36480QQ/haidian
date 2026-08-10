@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "Cursor Composer Agent (Composer 2.5)"
   },
-  "generated_at": "2026-08-10T15:20:52Z",
+  "generated_at": "2026-08-10T16:19:08Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3ca321ec7dd222d350ee9d563e96c9f787503c5a2d07c0601801e1c2a0a3de5c"
+      "sha256": "5d26daeb5a463c499082100492e01b96f68af05c32410c06a06ddaa4e16da6df"
     },
     {
       "path": "agent.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d5d590ee246bfaf992d1f973cd282262f1cabd6eabe2a5c2f3ddbc10888c1009"
+      "sha256": "1566d2fd7dfc64b35eb7681809e7dc6b614d887bb5a9fae62f71834c09a3880f"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3683683e746669a110af2cae95e9185055edb9a91a775c450633f9df48e5f9cf"
+      "sha256": "170c173ee2adf6757ecd727023ad15a252905432bf2e5d83ac2be1bf3314b255"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "fe45266bb94e2d114edda92b8905c6fda6fd50df56350ed09b780eeef1014fad"
+      "sha256": "adeca43bda3fb8b484941b2b94bb0efe39108c6fe1deb0090eb165783a88a4e8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -287,7 +287,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high"
   }
