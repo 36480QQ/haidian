@@ -79,13 +79,13 @@ This repair expands agent.1 from a name into a reviewable identity system. The C
 
 ## Global Cases, AI Ecosystem Map, and Regional Coordination
 
-This repair completes agent.2 with six transferable case mechanisms: Kendall Square for campus-enterprise proximity, Station F for integrated start-up services, Barcelona 22@ for urban renewal, Toronto Waterfront for data-governance limits, Seoul DDP for cultural landmark operation, and Shenzhen Bay for cluster-public-space integration. For Haidian, the resource chain is university research, open-source community, safety governance, enterprise conversion, public experience, and global events. External nodes are coordination partners, not new boundaries. [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
+This repair completes agent.2 with six transferable case mechanisms: Kendall Square for campus-enterprise proximity, Station F for integrated start-up services, Barcelona 22@ for urban renewal, Toronto Waterfront for data-governance limits, Seoul DDP for cultural landmark operation, and Shenzhen Bay for cluster-public-space integration. For Haidian, the resource chain is university research, open-source community, safety governance, enterprise conversion, public experience, and global events. External nodes are coordination partners, not new boundaries. `visual/assets/regional-coordination.json` records the three positionings, five functions, two wings, external reference nodes, resource flow, and case mechanisms as individual review fields. [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
 
 ![Global Cases, AI Ecosystem Map, and Regional Coordination](assets/figures/ecosystem-collaboration.en.png)
 
 ## Ten AI Scenario Cards and Three Test-Validation Scenarios
 
-The ten AI scenario cards now name users, locations, data boundaries, human review, and operator types. The three test-validation tracks are model-safety governance sandbox, accessible walkability navigation, and enterprise-service Copilot. Each test uses minimal data, human review, and pause/exit conditions; no test is described as approved operation. [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
+The ten AI scenario cards now name users, locations, data boundaries, model-or-rule boundaries, human review, operator types, and exit conditions. `visual/assets/scenario-cards.json` makes every field auditable. The three test-validation tracks are safety-governance sandbox, accessible walkability navigation, and near-campus conversion street. Each test uses minimal data, human review, and pause/exit conditions; no test is described as approved operation. [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
 
 ![Ten AI Scenario Cards and Three Test-Validation Scenarios](assets/figures/scenario-cards.en.png)
 
@@ -95,7 +95,7 @@ The AI pilgrimage landmarks are the Qinghe low-carbon innovation loop, the AI Or
 
 ## Key-Area Implementation Matrix, KPIs, and Exit Conditions
 
-JZ-01 through JZ-06 are converted into an implementation matrix with scope, actor type, dependencies, phase, cost band, KPI, risk, and exit conditions. All items are concept recommendations, not approvals, investment promises, or government implementation commitments. [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
+JZ-01 through JZ-06 are converted into an implementation matrix with scope, actor type, approval or prerequisite, phase, cost band, KPI, risk, and exit conditions. `visual/assets/implementation-matrix.json` holds the full six-item record. All items are concept recommendations, not approvals, investment promises, or government implementation commitments. [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
 
 ![Key-Area Implementation Matrix, KPIs, and Exit Conditions](assets/figures/implementation-operations.en.png)
 
@@ -105,7 +105,7 @@ The annual operating system includes a January open-scenario list, March univers
 
 ## Inclusion, Accessibility, and Public Participation
 
-The repair adds children, older adults, people with disabilities, low-digital-literacy users, night workers, and visitors as explicit groups. Universal-design measures include offline alternatives, accessible-route checks, low-stimulation wayfinding, night safety lighting, non-smartphone access, complaint/withdrawal channels, risk disclosure, and third-party human review. [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+The repair adds children, older adults, people with disabilities, low-digital-literacy users, night workers, and visitors as explicit groups. Universal-design measures include offline alternatives, accessible-route checks, low-stimulation wayfinding, night safety lighting, non-smartphone access, complaint/withdrawal channels, risk disclosure, and third-party human review. `visual/assets/public-interest-charter.json` fixes these groups, commitments, equity checks, and data limits as pilot prerequisites. [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
 
 ## Asset-Level Rights and Bilingual Equivalence Check
 

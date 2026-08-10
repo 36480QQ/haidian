@@ -191,13 +191,13 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ## 全球案例、AI生态图谱与区域协同
 
-本轮修复补齐 agent.2：六个案例原型不是照搬项目，而是作为可迁移机制参照。Kendall Square 参照高校-企业近距离创新，Station F 参照创业服务集成，Barcelona 22@ 参照旧城产业更新，Toronto Waterfront 参照数据治理争议的负面边界，Seoul DDP 参照公共文化地标运营，Shenzhen Bay 参照产业集群和滨水公共空间联动。对应到海淀，资源流为“高校策源-开源社区-安全治理-企业转化-公共体验-国际活动”，并外接北纬社区、未来科学城、怀柔科学城、经开区和京津冀创新节点；这些外部节点作为合作机制和活动网络，不作为本包空间红线。 [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
+本轮修复补齐 agent.2：六个案例原型不是照搬项目，而是作为可迁移机制参照。Kendall Square 参照高校-企业近距离创新，Station F 参照创业服务集成，Barcelona 22@ 参照旧城产业更新，Toronto Waterfront 参照数据治理争议的负面边界，Seoul DDP 参照公共文化地标运营，Shenzhen Bay 参照产业集群和滨水公共空间联动。对应到海淀，资源流为“高校策源-开源社区-安全治理-企业转化-公共体验-国际活动”，并外接北纬社区、未来科学城、怀柔科学城、经开区和京津冀创新节点；这些外部节点作为合作机制和活动网络，不作为本包空间红线。`visual/assets/regional-coordination.json` 逐项登记三大定位、五大功能、两翼、外部节点、资源流和案例机制，避免把协同表述停留为口号。 [source:AGENT-TASKBOOK] [data:geometry/site_boundary.geojson#SITE-001] [depth:three_level_scope_framework]
 
 ![全球案例、AI生态图谱与区域协同](assets/figures/ecosystem-collaboration.png)
 
 ## 十张AI场景卡与三项测试验证场景
 
-十张 AI 场景卡均补齐用户、空间、数据、人工复核和运营主体类型：开源发布厅、安全治理沙盒、端侧算力驿站、AI慢行导航、国际路演客厅、清河低碳创新廊、近校成果转化街、数据要素会客厅、AI生活服务样板街、全球AI活动周路线。三项产业测试验证场景明确为：模型安全治理沙盒、慢行无障碍导航、企业服务 Copilot。每项测试均采用最小数据、人工复核、可暂停/退出条件，不把实验写成已批准运营。 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
+十张 AI 场景卡均补齐用户、空间、数据、模型或规则边界、人工复核、运营主体类型和退出条件：开源发布厅、安全治理沙盒、端侧算力驿站、AI慢行导航、国际路演客厅、清河低碳创新廊、近校成果转化街、数据要素会客厅、AI生活服务样板街、全球AI活动周路线。逐卡审查字段见 `visual/assets/scenario-cards.json`；三项测试验证场景为安全治理沙盒、无障碍慢行导航和近校成果转化街，均采用最小数据、人工复核、可暂停/退出条件，不把实验写成已批准运营。 [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/roads.geojson#ROAD-001] [metric:public_space_ratio]
 
 ![十张AI场景卡与三项测试验证场景](assets/figures/scenario-cards.png)
 
@@ -213,7 +213,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ## 重点区实施矩阵、KPI与退出条件
 
-JZ-01 至 JZ-06 已转化为可审查实施矩阵。每个项目均记录空间范围、责任主体类型、依赖条件、阶段、成本等级、KPI、风险和退出条件；它们均为概念建议，不代表审批、投资或政府实施承诺。近期 0-18 个月优先做低扰动试点，中期 1-3 年处理站城一体化和重点区更新，长期通过年度活动、社区运营和官方底数复算维持方案迭代。 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
+JZ-01 至 JZ-06 已转化为可审查实施矩阵。每个项目均记录空间范围、责任主体类型、依赖条件、审批或前置条件、阶段、成本等级、KPI、风险和退出条件；字段和六个项目的完整记录见 `visual/assets/implementation-matrix.json`。它们均为概念建议，不代表审批、投资或政府实施承诺。近期 0-18 个月优先做低扰动试点，中期 1-3 年处理站城一体化和重点区更新，长期通过年度活动、社区运营和官方底数复算维持方案迭代。 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_implementation]
 
 ![重点区实施矩阵、KPI与退出条件](assets/figures/implementation-operations.png)
 
@@ -223,7 +223,7 @@ JZ-01 至 JZ-06 已转化为可审查实施矩阵。每个项目均记录空间�
 
 ## 包容性、无障碍与公众参与机制
 
-公共利益修复新增儿童、老年人、残障人士、低数字素养者、夜间劳动者和游客六类补充人群。通用设计要求包括线下替代服务、无障碍路线复核、低刺激导视、夜间安全照明、非智能手机访问路径、申诉/撤回机制、场景风险公开说明和第三方人工复核。公平性指标包括无障碍断点修复数、线下替代服务可达率、公众反馈闭环率、低数字素养培训次数和夜间安全事件复盘率；这些指标在缺少正式运营数据前保持为运营 KPI 建议。 [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+公共利益修复新增儿童、老年人、残障人士、低数字素养者、夜间劳动者和游客六类补充人群。通用设计要求包括线下替代服务、无障碍路线复核、低刺激导视、夜间安全照明、非智能手机访问路径、申诉/撤回机制、场景风险公开说明和第三方人工复核。公平性指标包括无障碍断点修复数、线下替代服务可达率、公众反馈闭环率、低数字素养培训次数和夜间安全事件复盘率；`visual/assets/public-interest-charter.json` 将人群、设计要求、公平性检查和数据限制逐项固定为试点前置条件。这些指标在缺少正式运营数据前保持为运营 KPI 建议。 [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
 
 ## 逐资产版权许可与双语等价核对
 
