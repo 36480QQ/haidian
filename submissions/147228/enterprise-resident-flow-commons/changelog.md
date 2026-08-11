@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.14 - 2026-08-12
+
+- Added a bilingual and machine-readable disclosure for repository Issue #1029. The package now distinguishes the inherited PROV-KEY-003 area/order check from its unresolved station position.
+- Kept the upstream provisional geometry unchanged and added a coordinated recalculation checklist for any official anchor or polygon revision. No participant-side shift, official boundary claim or station-performance claim was added.
+
 ## v1.13 - 2026-08-12
 
 - Added an asset closeout-receipt ledger for eight mobility interfaces: metro, bus, protected cycling, accessibility, curb service, enterprise shuttle, logistics maintenance and the gated air experiment.

@@ -85,6 +85,10 @@ The land-use layout and development-intensity limits remain design-depth questio
 
 Zhongzhiyuan tests enterprise arrival, shuttle consolidation and loading. The AI Origin Community tests daily resident access, care and a genuinely equivalent human route. Dazhongsi tests rail transfer, bicycle parking, loading and event-day public-space management. The three key areas remain provisional and are read from the package geometry, not treated as official parcels [metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design].
 
+The Dazhongsi key area needs a separate positional disclosure. Public repository Issue #1029 reports that the inherited provisional PROV-KEY-003 polygon matches the declared area and north-to-south ordering, but its centroid is around Beijing North Railway Station and about 2.26 km from Dazhongsi metro station. This package does not shift the source polygon or treat it as a station buffer. The four-quadrant walking connection is an announcement-led task anchor and must not be read as proof that the provisional polygon locates the station [source:ISSUE-1029] [data:geometry/key_areas.geojson#PROV-KEY-003] [assumption:A-KEY003-POSITION-001].
+
+Only an official anchor relation or polygon revision from the maintainer should trigger a coordinated recalculation of key areas, land-use and road relationships, metrics, figures, A3/A0 drawings, bilingual HTML, source and assumption records, manifest and self-check. This keeps the spatial version comparable across submissions and avoids independent participant-side shifts.
+
 The first pilot is a small morning and evening window in Zhongzhiyuan, an accessible daily-route comparison in the Origin Community, and a rail/curb separation rehearsal at Dazhongsi. Enterprise bookings cannot become permanent community bans. Shared vehicles cannot occupy a fire route, accessible path or emergency corridor. The detailed-design register keeps the three roles separate and records the stop conditions [source:HAIDIAN-ROAD-PARKING-TENDER-2026].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios

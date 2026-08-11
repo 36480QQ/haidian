@@ -8,6 +8,12 @@
       "impact": "All geometry and spatial metrics remain provisional design evidence and must be recalculated after an official revision."
     },
     {
+      "id": "A-KEY003-POSITION-001",
+      "status": "upstream_provisional_position_unresolved",
+      "statement": "Repository Issue #1029 reports that the inherited PROV-KEY-003 polygon has the declared area and north-to-south ordering, but its provisional centroid is about 2.26 km from Dazhongsi metro station and sits near Beijing North Railway Station.",
+      "impact": "This package does not shift the source geometry or treat it as a station buffer. Dazhongsi station four-quadrant work remains an announcement-led concept, and an official anchor or polygon revision must trigger a coordinated geometry, metric, figure, drawing, bilingual narrative, manifest and self-check recalculation."
+    },
+    {
       "id": "A-DEMAND-001",
       "status": "requires_aggregated_baseline",
       "statement": "Enterprise commute, freight, shuttle, charging and visitor demand is not available as a consented grouped register.",

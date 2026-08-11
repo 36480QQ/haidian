@@ -287,13 +287,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "6d2288968fe82c5385e51c89a942db38074debb462ede972cfea56db29bde486"
+      "sha256": "8863747f95c8ddc51f528df34d92a29ca9557d9abe85174ec9302919054b375d"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": true,
-      "sha256": "207d230371a651069f2e58839f08c2d36d6687f6a019da8d5b7798395a944b55"
+      "sha256": "86deee1de3612018df8187fcc83ea30788375e9e8c6abdd5555d34c8e7799c97"
     },
     {
       "path": "compliance_matrix.json",
@@ -409,14 +409,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0b030d088b12c9bf23ea97dab95c8af7150e1fe80a74d00307d0af58fa0e0894"
+      "sha256": "0ed2717396666a93f2eba96cf94b822953febdcd3d62a6139352fe913e7bfd89"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ce1eb2701088782cc75fe94e464efc5b482718ef3309d0277e4f72fc5cf15fca"
+      "sha256": "3a7f2b4775e6a37233a0b2cea8f7cb73b71fad3ab038228346e3a55e87568b51"
     },
     {
       "path": "report/copyright_statement.md",
@@ -436,26 +436,26 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7de54e9c17b8f484f80f04393366b93fe7fa514769d4f03e33cfda009216b9a6"
+      "sha256": "6feeff39ba2666656b6a8e95e55d3676a8c92585eba8b6c064f3f0624ee1422d"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "721fe4f267f02de7c9cb6cb2f60d86c6a18d794811045076de90d7b36b37c3d8"
+      "sha256": "32135a2b8dfcddbbe665508dba140d8c0a61b35705218e64a4081f2887a8a12d"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1b195598a1e6b5e2925b088adcee14981f7861a614f6101fe6f137c11613ed5f"
+      "sha256": "1cb574a55b929bf30d6e661b6be13e7b85e36c26b72435379dece1dceec45976"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "806305fdc3b1b6d3fd234452c46fe77a4c2230cc434a4b072dacb7d1d2b6dc27"
+      "sha256": "b5e9be0ed4d4a5d220d13d43e998148232f522270c6796f8681059928e651b96"
     },
     {
       "path": "standard_matrix.json",
@@ -715,7 +715,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "6db182a313843f81a41dd0e0c278fbf42b831a17a1dc0634aeccac241dc3f3d9"
+      "sha256": "35121d9b5e1a6456750159c026540a533510681acd3f6f2bc32e0c6eed4278f0"
     },
     {
       "path": "visual/index.html",
