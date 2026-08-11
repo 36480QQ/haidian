@@ -318,6 +318,66 @@ Risk and missing-data lists are jointly verified by the risk depth item, constra
 
 This proposal does not claim official approval, approved regulatory plan, final land ownership, final construction scale, or guaranteed implementation. The AI agent is responsible for the facts, sources, copyright, spatial data, metrics, and expression; the maintainers and professional reviewers may request revision or rejection based on self-check results, spatial review, and compliance matrix requirements.
 
+### Copyright Statement (Per-Asset)
+
+| Asset | Path | Source | License | Notes |
+| --- | --- | --- | --- | --- |
+| Spatial Geometry | `geometry/*.geojson` | AI-generated from public satellite imagery & OSM | CC BY-NC 4.0 | Provisional, subject to official replacement |
+| Figures (PNG) | `assets/figures/*.png` | Self-generated | CC BY-NC 4.0 | Bilingual versions independently generated |
+| Boards (PDF) | `drawings/a0-boards*.pdf` | Self-generated | CC BY-NC 4.0 | Chinese & English |
+| Booklet (PDF) | `drawings/a3-booklet*.pdf` | Self-generated | CC BY-NC 4.0 | Chinese & English |
+| Brand Logo | `assets/logo.*` | Self-designed | CC BY-NC 4.0 | Free for non-commercial reference |
+| Proposal Text | `proposal.md` / `proposal.en.md` | Self-written | CC BY-NC 4.0 | External data sources in sources.json |
+| Metrics Data | `metrics.json` | Geometry recomputation + brief | No independent copyright | Original data from SITE-PACKAGE |
+| Visualization | `visual/*` | Self-generated | Self-owned | Static HTML, no external deps |
+| Source Registry | `sources.json` | Collected from public sources | Per-entry license | See individual license fields |
+
+### Accessibility & Inclusive Design
+
+The proposal follows universal design principles to ensure accessibility for all ages and abilities:
+
+**Pedestrian Accessibility:**
+- Jing-Zhang Heritage Park trail maintains barrier-free slope (<=1:20), with tactile guide strips at key nodes
+- All transit station entrances provide barrier-free connections to bus stops and bike-sharing points
+- Signal-assisted crossing devices at intersections and key crossing points
+- Bilingual + icon + braille composite signage for wayfinding
+
+**Spatial Inclusivity:**
+- Public seating, shading, and drinking fountains meet wheelchair accessibility requirements (>=900mm clearance)
+- Accessible restrooms and nursing rooms at each key area
+- Anti-glare lighting with high-contrast ground markings for visually impaired users
+- Activity spaces for elderly (fitness, board games, shaded seating)
+
+**Digital Inclusivity:**
+- Free Wi-Fi at public spaces and pedestrian corridors
+- Information kiosks support voice interaction and large-font display
+- Multi-language and voice-assist options on civic agent interfaces
+- Bridge digital divide: equal public services for residents unfamiliar with smart devices
+
+### Operations & Conversion Path
+
+Multi-phase operation strategy for the three key areas:
+
+| Dimension | Zhongzhi Park AI Accelerator | AI Origin Community | Dazhongsi AI Cluster |
+| --- | --- | --- | --- |
+| Suggested Operator | Government-guided + market platform | University collaboration + community | Flagship enterprise-led + ecosystem alliance |
+| Startup Funding | Government industry fund + policy loans | Tech transfer fund + social capital | Enterprise investment + industry fund |
+| HR Requirement | Professional operations team 50-80 | Community operations team 20-30 | Enterprise services team 30-50 |
+| Key KPIs | Enterprise count, tech transfer rate, patents | Open-source activity, partner universities, talent density | Revenue growth, innovation events, global influence |
+| Risk Management | Tech iteration risk, policy compliance | Talent churn, community engagement | Industry cycle, market competition |
+| Conversion Path | Incubation--acceleration--industrialization | Lab--prototype--market validation | Product--platform--ecosystem |
+
+**Phasing:**
+- Near-term (1-3 years): Infrastructure upgrade, pedestrian system connection, 1-2 flagship projects
+- Mid-term (3-7 years): Three key areas substantially formed, AI innovation ecosystem initial scale
+- Long-term (7-15 years): Complete AI industry chain, global AI innovation pilgrimage destination
+
+**Governance:**
+- "Jing-Zhang AI Innovation Belt" Joint Governance Committee (government + enterprise + community + academia)
+- Community participation mechanism with regular public hearings and plan updates
+- AI Ethics & Safety Oversight Committee for ethical AI application
+- Digital twin operations management platform for real-time monitoring of space efficiency and service quality
+
 ## References
 
 - brief/public-brief.md

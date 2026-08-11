@@ -1,54 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="800" height="240">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1a5276;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#e07a5f;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a5276;stop-opacity:1" />
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#2980b9"/>
     </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82c4;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#e07a5f;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82c4;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-
-  <!-- Background circle -->
-  <circle cx="80" cy="80" r="68" fill="none" stroke="#e8e8e8" stroke-width="1" opacity="0.5"/>
-
-  <!-- Infinity/Twin-Track symbol -->
-  <path d="M 20,80 
-           C 20,40 60,40 80,60 
-           C 100,80 120,100 140,80 
-           C 160,60 180,40 200,80 
-           C 220,120 260,120 260,80"
-        fill="none" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
-
-  <!-- Second track (offset) -->
-  <path d="M 20,88 
-           C 20,48 60,48 80,68 
-           C 100,88 120,108 140,88 
-           C 160,68 180,48 200,88 
-           C 220,128 260,128 260,88"
-        fill="none" stroke="url(#grad2)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
-
-  <!-- Three halo nodes -->
-  <circle cx="80" cy="60" r="10" fill="none" stroke="#e07a5f" stroke-width="2.5" filter="url(#glow)"/>
-  <circle cx="80" cy="60" r="4" fill="#e07a5f"/>
-  
-  <circle cx="140" cy="80" r="10" fill="none" stroke="#3b82c4" stroke-width="2.5" filter="url(#glow)"/>
-  <circle cx="140" cy="80" r="4" fill="#3b82c4"/>
-
-  <circle cx="200" cy="80" r="10" fill="none" stroke="#5fae6f" stroke-width="2.5" filter="url(#glow)"/>
-  <circle cx="200" cy="80" r="4" fill="#5fae6f"/>
-
-  <!-- Text -->
-  <text x="80" y="132" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1a5276" text-anchor="middle" letter-spacing="2">京张智脉·光晕</text>
-  <text x="80" y="152" font-family="sans-serif" font-size="10" fill="#666666" text-anchor="middle" letter-spacing="1">Jing-Zhang AI Heritage Halo</text>
+  <path d="M 20 60 L 380 60" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 20 75 L 380 75" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 120 67 C 120 40 260 30 200 67 C 140 104 280 94 280 67" fill="none" stroke="#27ae60" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="60" cy="67" r="10" fill="#e74c3c"/>
+  <circle cx="200" cy="67" r="12" fill="#27ae60"/>
+  <circle cx="340" cy="67" r="10" fill="#2980b9"/>
+  <text x="200" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2d3436">Jing-Zhang AI Heritage Halo</text>
+  <text x="200" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#636e72">AI Pulse / Heritage Halo / Twin-Track</text>
 </svg>
