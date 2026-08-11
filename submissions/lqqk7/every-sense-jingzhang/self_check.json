@@ -82,7 +82,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 37915909,
+      "total_bytes": 37995230,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -144,11 +144,11 @@
         "building_footprint_area_sqm": 373402.48,
         "green_ratio": 0.213097,
         "public_space_ratio": 0.181788,
-        "key_area_count": 3.0,
+        "scenario_card_count": 12.0,
         "op_node_count": 10.0,
-        "scenario_card_count": 10.0,
+        "key_area_count": 3.0,
         "work_package_count": 6.0,
-        "persona_count": 5.0,
+        "persona_count": 6.0,
         "landmark_count": 3.0,
         "international_case_count": 6.0
       }
@@ -168,11 +168,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 19,
-          "standard": 4,
-          "depth": 7,
-          "data": 6,
-          "metric": 7
+          "source": 32,
+          "standard": 9,
+          "depth": 15,
+          "data": 21,
+          "metric": 28
         }
       }
     },
