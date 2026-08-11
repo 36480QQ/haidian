@@ -8,12 +8,13 @@
   "features": [
     {
       "type": "Feature",
+      "id": "PS-001",
       "properties": {
         "id": "PS-001",
         "layer": "PUBLIC_SPACE",
         "name_zh": "京张智门广场",
         "space_type": "entrance_plaza",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 6000
@@ -31,12 +32,13 @@
     },
     {
       "type": "Feature",
+      "id": "PS-002",
       "properties": {
         "id": "PS-002",
         "layer": "PUBLIC_SPACE",
         "name_zh": "原点广场",
         "space_type": "central_plaza",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 12000
@@ -54,12 +56,13 @@
     },
     {
       "type": "Feature",
+      "id": "PS-003",
       "properties": {
         "id": "PS-003",
         "layer": "PUBLIC_SPACE",
         "name_zh": "百年智廊",
         "space_type": "exhibition_corridor",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8500
@@ -81,12 +84,13 @@
     },
     {
       "type": "Feature",
+      "id": "PS-004",
       "properties": {
         "id": "PS-004",
         "layer": "PUBLIC_SPACE",
         "name_zh": "众智穹顶广场",
         "space_type": "dome_plaza",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 8000
@@ -104,12 +108,13 @@
     },
     {
       "type": "Feature",
+      "id": "PS-005",
       "properties": {
         "id": "PS-005",
         "layer": "PUBLIC_SPACE",
         "name_zh": "大钟寺AI活力广场",
         "space_type": "activity_plaza",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "area_sqm_declared": 10000
