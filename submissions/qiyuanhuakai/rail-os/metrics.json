@@ -107,22 +107,22 @@
         "The classification code is used for a closed concept partition; it does not establish an approved parcel use."
       ]
     },
-    "land_use_area_sqm_05": {
+    "land_use_area_sqm_16": {
       "status": "known",
       "value": 3366138.181,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(properties.area_sqm_declared where land_use_code == '05')",
+      "formula": "sum(properties.area_sqm_declared where land_use_code == '16')",
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-002"
       ],
-      "land_use_code": "05",
+      "land_use_code": "16",
       "data_class": "conceptual_design_geometry",
       "limitations": [
-        "The classification code is used for a closed concept partition; it does not establish an approved parcel use."
+        "Code 16 records land whose formal use remains undetermined; industry and commercial services are programme directions only, not an approved parcel use."
       ]
     },
     "land_use_area_sqm_0702": {
