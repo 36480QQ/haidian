@@ -22,14 +22,15 @@
 
 ## 3. GPT Image 2 概念体验图
 
-以下四张无文字图于 2026-08-09 通过 OpenAI 内置图像通道的 `GPT Image 2` 生成，并经人工检查；它们均标记为 `presentation only`，不能支撑边界、面积、现状、建筑、道路、轨道、市政、容量、安全、审批或实施结论：
+以下三张分站点、无文字图于 2026-08-11 通过 OpenAI 内置图像通道的 `GPT Image 2` 生成，并经原分辨率人工检查；它们均标记为 `presentation only`，不能支撑边界、面积、现状、建筑、道路、轨道、市政、容量、安全、审批、现场绩效或实施结论：
 
-- `assets/figures/concept-experience-v2.png`
-- `assets/figures/concept-validation-garden-v2.png`
-- `assets/figures/concept-knowledge-hub-v2.png`
-- `assets/figures/concept-civic-living-room-v2.png`
+- `assets/figures/concept-validation-yard-v3.png`（众智验证园）
+- `assets/figures/concept-open-transfer-hall-v3.png`（AI原点开放换乘厅）
+- `assets/figures/concept-civic-terminal-v3.png`（大钟寺城市公共终点站）
 
-每张图的模型、日期、参考关系、最终提示记录、用途、人工检查与禁止用途逐项登记于 `visual/assets/rights-ledger.json`。生成时未请求或嵌入真实人物肖像、第三方标志、商标、新闻图片、商业底图、官方图章或可识别真实建筑；知识换乘站图曾由同一图像通道进行定点编辑，移除了中央板上的伪文字。概念图与确定性证据发生冲突时，概念图不具有证据效力。
+大钟寺图的初稿在停放设备上出现了字母状伪文字；随后通过同一图像通道做定点编辑，仅移除这类标记，并再次人工复核。三张最终图均未保留可读文字、伪文字、数字、标志、商标、水印或真实人物肖像。带中英标题与限制说明的 `concept-triptych-v3(.en).png` 是本地确定性排版，并非 GPT Image 2 生成的文字。
+
+每张图的模型、日期、原始输出标识、完整提示记录、参考关系、人工检查、用途与禁止用途逐项登记于 `visual/assets/rights-ledger.json`。生成时未请求或嵌入第三方摄影、商业底图、官方图章或可识别受保护建筑；概念图与确定性证据发生冲突时，概念图不具有证据效力。
 
 ## 4. 外部资料与同行方案
 
@@ -41,4 +42,4 @@
 
 ---
 
-**English summary.** Text and structured evidence were prepared with OpenAI Codex assistance. Four named, text-free concept images were generated with GPT Image 2 on 2026-08-09 and are presentation-only. All core maps, labels, numbers, bilingual figures and technical PDF content are deterministic views of local package data. No commercial basemap, external tile, third-party logo, portrait or official endorsement is used. Licence: `COMMUNITY-DISPLAY-ONLY`.
+**English summary.** Text and structured evidence were prepared with OpenAI Codex assistance. Three named, site-specific and text-free concept images were generated with GPT Image 2 on 2026-08-11 and are presentation-only; the first Dazhongsi draft was precisely edited to remove pseudo-text before final human review. Their bilingual captioned triptychs, all core maps, labels, numbers and technical PDF content are deterministic layouts or views of local package data. No commercial basemap, external tile, third-party logo, portrait or official endorsement is used. Licence: `COMMUNITY-DISPLAY-ONLY`.

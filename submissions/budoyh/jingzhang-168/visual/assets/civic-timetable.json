@@ -1,0 +1,731 @@
+{
+  "schema_version": "1.0.0",
+  "proposal_version": "v3.0",
+  "title": "京张168城市公共时刻表 / Jingzhang 168 Civic Timetable",
+  "operating_principle": "The existing public base stays open. Scheduled AI services may stop; they may never close the baseline public path.",
+  "evidence_status": "synthetic_tabletop_only_not_authorized_not_run",
+  "real_personal_data_used": false,
+  "external_io": false,
+  "performance_results": null,
+  "services": [
+    {
+      "locator_id": "SCN-01",
+      "name_zh": "智能体互操作诊所",
+      "name_en": "Agent Interoperability Clinic",
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose_zh": "用固定合成任务验证不同智能体的权限边界、工具调用和交接失败，不连接生产系统。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "人工工程师使用公开接口清单和纸面测试表逐项复核。",
+      "data_minimum": {
+        "allowed": [
+          "合成任务",
+          "版本号",
+          "工具许可表",
+          "固定预期输出"
+        ],
+        "forbidden": [
+          "生产凭据",
+          "真实用户会话",
+          "未授权外部调用",
+          "商业秘密"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "DS",
+        "DHL",
+        "SASP"
+      ],
+      "non_ai_equivalent_zh": "人工工程师使用公开接口清单和纸面测试表逐项复核。",
+      "stop_triggers": [
+        "出现生产凭据",
+        "工具越权",
+        "责任人缺席",
+        "隔离失效"
+      ],
+      "reset_actions": [
+        "断开外部调用",
+        "回滚固定镜像",
+        "隔离并删除会话副本",
+        "签署复原回执"
+      ],
+      "expected_receipts": [
+        "准入单",
+        "调用轨迹摘要",
+        "越权测试单",
+        "复原回执"
+      ],
+      "affected_people": [
+        "模型与工具工程师",
+        "开源维护者",
+        "未来服务使用者"
+      ],
+      "nonparticipant_impact": [
+        "旁观者不得被采集",
+        "失败不得外溢到生产服务"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-02",
+      "name_zh": "红队工棚与失败档案",
+      "name_en": "Red-Team Shed and Failure Archive",
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose_zh": "在离线样本上演练提示注入、权限逃逸、错误交接和人工停机，并公开失败类型而非敏感载荷。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "人工红队按固定测试集和纸面事件分级表执行。",
+      "data_minimum": {
+        "allowed": [
+          "隔离样本",
+          "模型版本",
+          "测试类别",
+          "脱敏事件摘要"
+        ],
+        "forbidden": [
+          "可复用攻击载荷",
+          "生产端点",
+          "个人数据",
+          "安全凭据"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "DHL",
+        "SASP",
+        "IE"
+      ],
+      "non_ai_equivalent_zh": "人工红队按固定测试集和纸面事件分级表执行。",
+      "stop_triggers": [
+        "越界调用",
+        "隔离失效",
+        "无法人工停机",
+        "事件等级不明"
+      ],
+      "reset_actions": [
+        "物理断网",
+        "回滚镜像",
+        "封存证据",
+        "公开非敏感复盘"
+      ],
+      "expected_receipts": [
+        "运行单",
+        "事件单",
+        "停机时间戳",
+        "复盘卡"
+      ],
+      "affected_people": [
+        "测试人员",
+        "未来生产用户",
+        "独立评估者"
+      ],
+      "nonparticipant_impact": [
+        "不向公共网络传播载荷",
+        "失败记录不得识别个人"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-03",
+      "name_zh": "四象限步行与低速机器人边界审计",
+      "name_en": "Four-Quadrant Walking and Robot-Boundary Audit",
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "mobility_safety_test",
+      "purpose_zh": "先用人工走查记录站点四象限的过街、骑行停放、排队和轮椅连续性，再以空载低速设备演练让行和物理停机；不预设桥隧工程或永久机器人路权。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面路线图、现场引导员和既有公共通道持续可用。",
+      "data_minimum": {
+        "allowed": [
+          "匿名阻断点",
+          "时段",
+          "设施状态",
+          "天气"
+        ],
+        "forbidden": [
+          "人脸",
+          "连续轨迹",
+          "车牌",
+          "个人评分"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "AO",
+        "OPS",
+        "DHL"
+      ],
+      "non_ai_equivalent_zh": "纸面路线图、现场引导员和既有公共通道持续可用。",
+      "stop_triggers": [
+        "公共净宽受阻",
+        "轮椅无法通过",
+        "导视误导",
+        "近失事件"
+      ],
+      "reset_actions": [
+        "撤除临时设施",
+        "恢复原通道",
+        "人工引导",
+        "复核前后照片"
+      ],
+      "expected_receipts": [
+        "走查单",
+        "阻断清单",
+        "撤场照片",
+        "复核签字"
+      ],
+      "affected_people": [
+        "行人",
+        "骑行者",
+        "轮椅使用者",
+        "照护者"
+      ],
+      "nonparticipant_impact": [
+        "不参与者仍可沿原路径通过",
+        "不以感知设备换取路权"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-04",
+      "name_zh": "端侧能耗与算力票据台",
+      "name_en": "Edge Energy and Compute Receipt Bench",
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose_zh": "比较离线固定任务在不同端侧配置下的能耗、热、噪声和完成状态，输出版本化算力票据。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "人工读表和本地固定测试脚本可在无云服务条件下完成。",
+      "data_minimum": {
+        "allowed": [
+          "任务版本",
+          "设备配置",
+          "聚合功耗",
+          "温度",
+          "噪声"
+        ],
+        "forbidden": [
+          "个人行为",
+          "未授权设备标识",
+          "生产工作负载",
+          "供应商宣传值"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "OPS",
+        "DHL",
+        "IE"
+      ],
+      "non_ai_equivalent_zh": "人工读表和本地固定测试脚本可在无云服务条件下完成。",
+      "stop_triggers": [
+        "热阈值越界",
+        "噪声扰民",
+        "测量链断裂",
+        "散热或消防条件不明"
+      ],
+      "reset_actions": [
+        "断电冷却",
+        "移除设备",
+        "恢复静音界面",
+        "签署测量异常单"
+      ],
+      "expected_receipts": [
+        "任务版本卡",
+        "能耗票据",
+        "异常单",
+        "复原回执"
+      ],
+      "affected_people": [
+        "设备工程师",
+        "维护劳动者",
+        "邻近使用者"
+      ],
+      "nonparticipant_impact": [
+        "居民界面不承受热噪外溢",
+        "不将实验值包装为全生命周期绩效"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-05",
+      "name_zh": "开源与知识产权转接台",
+      "name_en": "Open-Source and IP Transfer Desk",
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose_zh": "把模型、数据、代码和许可证问题转成可追踪问题单，由具备职责的人完成专业判断。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面许可清单、公开资料目录和人工预约柜台。",
+      "data_minimum": {
+        "allowed": [
+          "公开项目链接",
+          "许可证标识",
+          "问题摘要",
+          "授权状态"
+        ],
+        "forbidden": [
+          "未公开代码",
+          "商业秘密",
+          "个人身份材料",
+          "自动法律结论"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "PA",
+        "OPS",
+        "DHL"
+      ],
+      "non_ai_equivalent_zh": "纸面许可清单、公开资料目录和人工预约柜台。",
+      "stop_triggers": [
+        "来源不明",
+        "许可冲突",
+        "系统输出被误作法律意见",
+        "人工转接缺席"
+      ],
+      "reset_actions": [
+        "暂停自动答复",
+        "转人工专业渠道",
+        "下架不明材料",
+        "记录更正"
+      ],
+      "expected_receipts": [
+        "问题单",
+        "来源卡",
+        "人工转接回执",
+        "更正记录"
+      ],
+      "affected_people": [
+        "科研团队",
+        "初创企业",
+        "开源维护者"
+      ],
+      "nonparticipant_impact": [
+        "不把机构规模或支付能力作为排队优先级"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-06",
+      "name_zh": "公共服务材料导航",
+      "name_en": "Public-Service Document Navigator",
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "everyday_service",
+      "purpose_zh": "只解释公开办事材料和入口，不能判断资格、替代审批或代替专业人员。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面办事目录、电话和现场人工柜台。",
+      "data_minimum": {
+        "allowed": [
+          "公开办事指南",
+          "用户主动选择的事项类别",
+          "临时排队号"
+        ],
+        "forbidden": [
+          "身份证影像",
+          "健康档案",
+          "自动资格评分",
+          "代办账号"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "OPS",
+        "DHL",
+        "PA"
+      ],
+      "non_ai_equivalent_zh": "纸面办事目录、电话和现场人工柜台。",
+      "stop_triggers": [
+        "指南版本不明",
+        "系统试图判断资格",
+        "无法转人工",
+        "无手机路径失效"
+      ],
+      "reset_actions": [
+        "切换静态目录",
+        "转人工柜台",
+        "删除临时会话",
+        "发布更正"
+      ],
+      "expected_receipts": [
+        "资料版本卡",
+        "转人工票",
+        "更正单",
+        "删除回执"
+      ],
+      "affected_people": [
+        "老年访客",
+        "非中文使用者",
+        "无智能设备者",
+        "普通办事人"
+      ],
+      "nonparticipant_impact": [
+        "不参与数字服务者仍可完成信息查询"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-07",
+      "name_zh": "无障碍路径共审",
+      "name_en": "Accessible Route Co-Audit",
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "public_space_audit",
+      "purpose_zh": "由残障使用者、照护者与无障碍负责人共同核验连续路线和停止点，AI仅整理匿名问题。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "触觉/大字纸图、人工陪行和现场求助点。",
+      "data_minimum": {
+        "allowed": [
+          "匿名障碍类型",
+          "位置编号",
+          "时段",
+          "处理状态"
+        ],
+        "forbidden": [
+          "残障身份档案",
+          "医疗信息",
+          "连续轨迹",
+          "未经同意影像"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "AO",
+        "NL",
+        "DHL"
+      ],
+      "non_ai_equivalent_zh": "触觉/大字纸图、人工陪行和现场求助点。",
+      "stop_triggers": [
+        "连续路线中断",
+        "求助点无人",
+        "替代路线不可达",
+        "投诉未受理"
+      ],
+      "reset_actions": [
+        "恢复原通道",
+        "设置人工引导",
+        "撤除障碍",
+        "复走确认"
+      ],
+      "expected_receipts": [
+        "路线卡",
+        "障碍工单",
+        "复走记录",
+        "申诉回执"
+      ],
+      "affected_people": [
+        "轮椅使用者",
+        "视听障碍者",
+        "照护者",
+        "儿童家庭"
+      ],
+      "nonparticipant_impact": [
+        "共审不是给人贴标签；未参与者的通行同样优先"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-08",
+      "name_zh": "开源维护者夜校",
+      "name_en": "Open-Source Maintainer Night School",
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose_zh": "以公开问题单、可复现示例和维护劳动署名连接高校、企业与社区，不建立人才评分。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面课程表、现场主持人和无需账号的旁听席。",
+      "data_minimum": {
+        "allowed": [
+          "公开议题",
+          "课程材料",
+          "自愿署名",
+          "问题状态"
+        ],
+        "forbidden": [
+          "学生画像",
+          "招聘筛选",
+          "未公开仓库",
+          "强制实名"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "OPS",
+        "PTC",
+        "NL"
+      ],
+      "non_ai_equivalent_zh": "纸面课程表、现场主持人和无需账号的旁听席。",
+      "stop_triggers": [
+        "主持人缺席",
+        "材料权利不清",
+        "超出安静时段",
+        "无账号席位被取消"
+      ],
+      "reset_actions": [
+        "停止直播",
+        "恢复普通公共使用",
+        "下架争议材料",
+        "补充版权记录"
+      ],
+      "expected_receipts": [
+        "课程单",
+        "材料权利卡",
+        "清场单",
+        "维护贡献记录"
+      ],
+      "affected_people": [
+        "学生",
+        "维护者",
+        "初创团队",
+        "周边居民"
+      ],
+      "nonparticipant_impact": [
+        "居民安宁和维护劳动不能为活动热度让位"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-09",
+      "name_zh": "科研到公共服务翻译台",
+      "name_en": "Research-to-Civic-Service Translation Desk",
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose_zh": "把科研能力翻译成具体公共问题、数据边界和最小试验，不把论文指标直接当城市绩效。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "人工问题访谈、纸面需求单和公开能力目录。",
+      "data_minimum": {
+        "allowed": [
+          "公开成果摘要",
+          "问题单",
+          "适用边界",
+          "联系人角色"
+        ],
+        "forbidden": [
+          "未公开论文数据",
+          "个人需求画像",
+          "自动采购建议",
+          "夸大成熟度"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "PA",
+        "IE",
+        "PTC"
+      ],
+      "non_ai_equivalent_zh": "人工问题访谈、纸面需求单和公开能力目录。",
+      "stop_triggers": [
+        "能力与问题不匹配",
+        "适用边界缺失",
+        "责任主体不明",
+        "公众影响未评估"
+      ],
+      "reset_actions": [
+        "退回问题定义",
+        "标记unknown",
+        "停止排程",
+        "保留退回理由"
+      ],
+      "expected_receipts": [
+        "问题单",
+        "能力边界卡",
+        "退回单",
+        "复核记录"
+      ],
+      "affected_people": [
+        "科研人员",
+        "公共服务人员",
+        "社区代表"
+      ],
+      "nonparticipant_impact": [
+        "不得因技术可用就制造公共需求"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-10",
+      "name_zh": "京张记忆共读站",
+      "name_en": "Jingzhang Memory Co-Reading Station",
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "heritage_public_culture",
+      "purpose_zh": "用清权的时间线、工程测量与口述材料共同阅读京张历史，拒绝伪造声音和人物。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面时间线、静态展签和现场讲解。",
+      "data_minimum": {
+        "allowed": [
+          "清权史料",
+          "公开文物资料",
+          "自愿纠错",
+          "版本记录"
+        ],
+        "forbidden": [
+          "未授权肖像或声音",
+          "合成人物证言",
+          "来源不明旧照",
+          "官方背书暗示"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "OPS",
+        "NL",
+        "PA"
+      ],
+      "non_ai_equivalent_zh": "纸面时间线、静态展签和现场讲解。",
+      "stop_triggers": [
+        "来源不明",
+        "文保边界冲突",
+        "合成内容被误作史实",
+        "静音模式缺失"
+      ],
+      "reset_actions": [
+        "下架争议材料",
+        "恢复静态展签",
+        "登记纠错",
+        "重新清权"
+      ],
+      "expected_receipts": [
+        "来源卡",
+        "授权账",
+        "纠错单",
+        "版本牌"
+      ],
+      "affected_people": [
+        "沿线居民",
+        "学生",
+        "铁路史研究者",
+        "访客"
+      ],
+      "nonparticipant_impact": [
+        "历史不是技术营销背景；非参与者可安静通过"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-11",
+      "name_zh": "夜间安静与公共路径观察站",
+      "name_en": "Night Quiet and Public-Path Observatory",
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "public_space_audit",
+      "purpose_zh": "用人工巡查核验灯光、噪声、排队和临时设施是否侵占全天公共路径。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "人工巡查、纸面投诉单和不依赖传感器的静态边界。",
+      "data_minimum": {
+        "allowed": [
+          "聚合时段",
+          "匿名事件类型",
+          "设施状态",
+          "处理结果"
+        ],
+        "forbidden": [
+          "家庭画像",
+          "室内声音",
+          "连续设备标识",
+          "自动处罚"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "NL",
+        "OPS",
+        "DHL"
+      ],
+      "non_ai_equivalent_zh": "人工巡查、纸面投诉单和不依赖传感器的静态边界。",
+      "stop_triggers": [
+        "公共路径受阻",
+        "投诉无人处理",
+        "噪声或灯光越界",
+        "维护人员不足"
+      ],
+      "reset_actions": [
+        "停止活动",
+        "撤除设备",
+        "恢复低照度和普通通行",
+        "人工回访"
+      ],
+      "expected_receipts": [
+        "巡查单",
+        "投诉回执",
+        "撤场单",
+        "回访记录"
+      ],
+      "affected_people": [
+        "居民",
+        "夜班劳动者",
+        "普通通行者",
+        "活动参与者"
+      ],
+      "nonparticipant_impact": [
+        "未参加活动的人拥有同等安静和通行权"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    },
+    {
+      "locator_id": "SCN-12",
+      "name_zh": "消费智能体权限沙盒",
+      "name_en": "Consumer-Agent Permission Sandbox",
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "everyday_service",
+      "purpose_zh": "在模拟交易中展示智能体何时读取、推荐、请求确认和停止；不连接真实支付或账户。",
+      "status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true,
+      "public_baseline_zh": "纸面选择比较表、人工消费者咨询和静态价格来源。",
+      "data_minimum": {
+        "allowed": [
+          "合成商品",
+          "模拟预算",
+          "权限选项",
+          "撤回记录"
+        ],
+        "forbidden": [
+          "真实支付",
+          "账号密码",
+          "精准画像",
+          "未经确认下单"
+        ]
+      },
+      "human_conductor_role_ids": [
+        "DHL",
+        "DS",
+        "PTC"
+      ],
+      "non_ai_equivalent_zh": "纸面选择比较表、人工消费者咨询和静态价格来源。",
+      "stop_triggers": [
+        "请求真实凭据",
+        "绕过明确确认",
+        "无法撤回",
+        "来源或价格日期不明"
+      ],
+      "reset_actions": [
+        "终止模拟会话",
+        "清空合成状态",
+        "恢复纸面比较",
+        "出具撤回回执"
+      ],
+      "expected_receipts": [
+        "权限票",
+        "确认轨迹",
+        "撤回回执",
+        "来源版本卡"
+      ],
+      "affected_people": [
+        "消费者",
+        "老年访客",
+        "低数字素养者",
+        "小商户"
+      ],
+      "nonparticipant_impact": [
+        "不参与沙盒者不被采集；不得影响真实交易或商户排序"
+      ],
+      "field_gate": "named operator, lawful basis, professional sign-off, accessible public notice and physical stop channel are all pending"
+    }
+  ]
+}

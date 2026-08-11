@@ -21,9 +21,9 @@
     },
     {
       "id": "A-TIME-001",
-      "status": "design_hypothesis",
-      "statement": "每日06:00–22:00、每周112小时为公共开放协议的设计目标，不是现状客流统计。",
-      "impact": "需通过运营主体、居民共议和小规模试点校准，且保留静默时段。"
+      "status": "official_fact_with_limited_extent",
+      "statement": "北京市公园名录将京张铁路遗址公园列为24小时、免费、免预约开放；该事实不外推为整个临时总体范围的运营承诺。",
+      "impact": "v3把全天公共路径作为不可被AI试验关闭的设计底线；各AI服务仍须按表、有人、可停止。"
     },
     {
       "id": "A-AI-001",
@@ -70,8 +70,26 @@
     {
       "id": "A-IMAGEGEN-001",
       "status": "presentation_only",
-      "statement": "GPT Image 2仅生成四张无文字概念体验图；五张核心证据图、数字、地图、图例和PDF技术内容由本包GeoJSON与JSON确定性派生。",
+      "statement": "GPT Image 2仅生成三张2026-08-11无文字、分站点的概念体验图；其双语说明版、五张核心证据图、数字、地图、图例和PDF技术内容由本包GeoJSON与JSON确定性派生。",
       "impact": "概念图不得支撑边界、面积、建筑、交通或实施结论；如与机器证据冲突，以机器证据和专业复核为准。"
+    },
+    {
+      "id": "A-OSM-DISCREPANCY-001",
+      "status": "background_spatial_discrepancy_not_boundary_evidence",
+      "statement": "仓库资料记录公开OSM遗址公园对象与PROV-SITE-001最近约412.5m且不相交；OSM和临时边界都不能替代official polygon。",
+      "impact": "图文必须暴露差异但不得据此平移或重画边界；官方数据到位后重算。"
+    },
+    {
+      "id": "A-TABLETOP-001",
+      "status": "synthetic_tabletop_only",
+      "statement": "v3时刻表验证器只读取本包合成合同并演练逻辑分支，不连接真实人员、场地、账户、设备或生产数据。",
+      "impact": "桌面PASS只证明合同字段和失败路径闭合；现场绩效、授权、容量和安全结果保持unknown/null。"
+    },
+    {
+      "id": "A-EXISTING-PARK-001",
+      "status": "official_current_context",
+      "statement": "京张铁路遗址公园已有分期建成开放段，本方案是对现状与在建更新的协议叠加，不把整条走廊描述为空白场地。",
+      "impact": "永久建设退居后位；先保护日常通行、生态、安静与已有公共投入。"
     }
   ]
 }

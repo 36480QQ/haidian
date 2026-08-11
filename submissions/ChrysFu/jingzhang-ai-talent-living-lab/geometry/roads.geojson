@@ -14,7 +14,13 @@
         "road_class": "greenway",
         "name_zh": "京张公共创新轴",
         "name_en": "Jing-Zhang Public Innovation Axis",
-        "network_role": "three_circle_connector"
+        "network_role": "three_circle_connector",
+        "representative_interface": "three_area_street_protocol",
+        "implementation_cards": [
+          "IC-ZZY-01",
+          "IC-ORI-01",
+          "IC-DZS-01"
+        ]
       },
       "geometry": {
         "type": "LineString",

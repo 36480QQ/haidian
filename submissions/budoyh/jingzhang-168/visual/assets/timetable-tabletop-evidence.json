@@ -1,0 +1,790 @@
+{
+  "schema_version": "1.0.0",
+  "runner": "visual/assets/tabletop-runner.js",
+  "run_type": "deterministic_synthetic_tabletop",
+  "external_io": false,
+  "real_personal_data_used": false,
+  "field_authorization": false,
+  "field_performance": null,
+  "service_count": 12,
+  "case_count": 72,
+  "stop_branch_count": 24,
+  "reset_branch_count": 12,
+  "status": "pass",
+  "errors": [],
+  "results": [
+    {
+      "service_id": "SCN-01",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "准入单",
+        "调用轨迹摘要",
+        "越权测试单",
+        "复原回执"
+      ]
+    },
+    {
+      "service_id": "SCN-01",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-01",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-01",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-01",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-01",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "准入单",
+        "调用轨迹摘要",
+        "越权测试单",
+        "复原回执"
+      ]
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "运行单",
+        "事件单",
+        "停机时间戳",
+        "复盘卡"
+      ]
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-02",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "运行单",
+        "事件单",
+        "停机时间戳",
+        "复盘卡"
+      ]
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "走查单",
+        "阻断清单",
+        "撤场照片",
+        "复核签字"
+      ]
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-03",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "走查单",
+        "阻断清单",
+        "撤场照片",
+        "复核签字"
+      ]
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "任务版本卡",
+        "能耗票据",
+        "异常单",
+        "复原回执"
+      ]
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-04",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "任务版本卡",
+        "能耗票据",
+        "异常单",
+        "复原回执"
+      ]
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "问题单",
+        "来源卡",
+        "人工转接回执",
+        "更正记录"
+      ]
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-05",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "问题单",
+        "来源卡",
+        "人工转接回执",
+        "更正记录"
+      ]
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "资料版本卡",
+        "转人工票",
+        "更正单",
+        "删除回执"
+      ]
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-06",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "资料版本卡",
+        "转人工票",
+        "更正单",
+        "删除回执"
+      ]
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "路线卡",
+        "障碍工单",
+        "复走记录",
+        "申诉回执"
+      ]
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-07",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "路线卡",
+        "障碍工单",
+        "复走记录",
+        "申诉回执"
+      ]
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "课程单",
+        "材料权利卡",
+        "清场单",
+        "维护贡献记录"
+      ]
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-08",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "课程单",
+        "材料权利卡",
+        "清场单",
+        "维护贡献记录"
+      ]
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "问题单",
+        "能力边界卡",
+        "退回单",
+        "复核记录"
+      ]
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-09",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "问题单",
+        "能力边界卡",
+        "退回单",
+        "复核记录"
+      ]
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "来源卡",
+        "授权账",
+        "纠错单",
+        "版本牌"
+      ]
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-10",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "来源卡",
+        "授权账",
+        "纠错单",
+        "版本牌"
+      ]
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "巡查单",
+        "投诉回执",
+        "撤场单",
+        "回访记录"
+      ]
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-11",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "巡查单",
+        "投诉回执",
+        "撤场单",
+        "回访记录"
+      ]
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "nominal",
+      "decision": "admit_to_schedule",
+      "reason": "human, non-AI baseline, data minimum and public path checks present",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "权限票",
+        "确认轨迹",
+        "撤回回执",
+        "来源版本卡"
+      ]
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "missing_human",
+      "decision": "block",
+      "reason": "no named human conductor",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "missing_non_ai",
+      "decision": "block",
+      "reason": "non-AI equivalent unavailable",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "prohibited_data",
+      "decision": "stop_and_isolate",
+      "reason": "prohibited data presented",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "public_path_blocked",
+      "decision": "stop_and_restore",
+      "reason": "always-open public base obstructed",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": []
+    },
+    {
+      "service_id": "SCN-12",
+      "case": "reset_after_stop",
+      "decision": "audit_before_restart",
+      "reason": "reset actions and receipts required; automatic restart forbidden",
+      "synthetic_only": true,
+      "field_performance": null,
+      "receipt_types": [
+        "权限票",
+        "确认轨迹",
+        "撤回回执",
+        "来源版本卡"
+      ]
+    }
+  ],
+  "limitations": [
+    "PASS proves contract completeness and branch behavior only.",
+    "No field, operator, device, account, personal data or production system was contacted.",
+    "Real performance, authorization, capacity, budget and safety remain unknown/null."
+  ]
+}
