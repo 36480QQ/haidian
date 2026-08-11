@@ -1,16 +1,16 @@
 ---
-title: "Jing-Zhang Tiangong: Star-Atlas Scroll for a Future AI City"
+title: "Haidian Beijing: Jing-Zhang Tiangong Star Atlas"
 author_github: "lixb123"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Traditional Chinese wisdom of reading the stars, weaving networks, and living with water links three innovation cores through legible AI guidance, participatory civic collaboration, and climate-aware infrastructure."
+summary: "Rooted in Beijing Haidian's culture of innovation and research, traditional Chinese wisdom of reading the stars, weaving networks, and living with water links three innovation cores through legible AI guidance, participatory civic collaboration, and climate-aware infrastructure."
 iteration: "v1.0"
 ---
 
-# Jing-Zhang Tiangong: Star-Atlas Scroll for a Future AI City
+# Haidian Beijing: Jing-Zhang Tiangong Star Atlas
 
 ## Design Basis and Evidence
 
@@ -26,7 +26,7 @@ The 43.6 km2 research scope frames regional innovation; the approximately 11.4 k
 
 ## Innovation and Future City Strategy
 
-“Jing-Zhang Tiangong: Star-Atlas Scroll” translates familiar Chinese spatial wisdom into a future AI civic living room that is easy to read and join. Reading the stars becomes the Tianwen Knowledge Corridor, where explainable wayfinding, Jing-Zhang memory, and open research help people orient themselves. Weaving warp and weft becomes the Nuwa Weaving Corridor, where civic tables, trustworthy data, and human review connect residents, researchers, and service staff. Living with water becomes the Yinglong Water-Vein Corridor, where rain gardens, microclimate notices, and slow mobility respond to daily weather. Together they connect the Zhongzhiyuan acceleration, AI Origin collaboration, and Dazhongsi industry-experience cores. These names are contemporary cultural metaphors, not religious claims, historical reconstruction, or approved projects. [source:AGENT-TASKBOOK]
+“Haidian Beijing: Jing-Zhang Tiangong Star Atlas” draws on Haidian's culture of innovation, research, and everyday urban life to translate familiar Chinese spatial wisdom into a future AI civic living room that is easy to read and join. Reading the stars becomes the Tianwen Knowledge Corridor, where explainable wayfinding, Jing-Zhang memory, and open research help people orient themselves. Weaving warp and weft becomes the Nuwa Weaving Corridor, where civic tables, trustworthy data, and human review connect residents, researchers, and service staff. Living with water becomes the Yinglong Water-Vein Corridor, where rain gardens, microclimate notices, and slow mobility respond to daily weather. Together they connect the Zhongzhiyuan acceleration, AI Origin collaboration, and Dazhongsi industry-experience cores. These names are contemporary cultural metaphors, not religious claims, historical reconstruction, or approved projects. [source:AGENT-TASKBOOK]
 
 ## Overall Urban Design
 
