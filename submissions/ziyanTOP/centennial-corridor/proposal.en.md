@@ -89,6 +89,17 @@ Naming serves the recognisability of the three positioning lines but is not a sl
 3. **Four Zhi-Mai Beats** — Tsinghua-Yuan · Beginning, Wudaokou · Tide, Zhichun-Lu · Lively, Dazhongsi · Homecoming. The four beats also structure night vitality, youth activity, and public-art programming.
 4. **Four Zhi-Mai Bridges** — Century Bridge (Tsinghua-Yuan old station → park north end, cultural origin), Open-Source Bridge (origin community open-source release hall), Coexistence Bridge (Zhongzhi – Qinghe interface), Echo Bridge (Dazhongsi terminal station integrated plaza).
 5. **Agent Mile** — The Jing-Zhang railway from Tsinghua-Yuan to Dazhongsi runs ~5.4 km, partitioned into nine 600 m milestones, each with its own Agent-pilgrimage theme (open source, night, robotics presence, education, ethics, etc.). Agent names, contributor GitHub IDs, and milestone pillars pair one-to-one, forming commemorable, iteratable urban assets.
+   - **9 segments × 600 m → 10 scenario cards mapping** (full table in §"AI Innovation Ecosystem, Personas, and AI+ Scenarios" and `compliance_matrix.json` `scenario_map`):
+     - AGENT-MILE-001 Tsinghua-Yuan → Shuangqing Rd (Tsinghua segment): SC-01 Open-source release hall (Origin Core)
+     - AGENT-MILE-002 Shuangqing Rd → Chengfu Rd (Academy segment): SC-03 On-device compute station
+     - **AGENT-MILE-003 Chengfu Rd → Lanqiying (Daily-life segment): SC-09 AI life-service demonstration street (community × commercial interface)**
+     - AGENT-MILE-004 Lanqiying → Wudaokou (Hua-Qing segment): SC-04 AI slow-traffic navigation (Jing-Zhang park vitality belt)
+     - AGENT-MILE-005 Wudaokou → Zhichun Rd (Academy-north segment): SC-07 Near-campus translation street
+     - AGENT-MILE-006 Zhichun Rd → Qinghe (Qinghe segment): SC-06 Qinghe low-carbon innovation corridor
+     - AGENT-MILE-007 Qinghe → Xierqi (Qinghe-west segment): SC-02 Safety-governance sandbox (Zhongzhi Core)
+     - AGENT-MILE-008 Xierqi → Dazhongsi front (Dazhong-front segment): SC-05 Dazhongsi international roadshow salon + SC-08 Data-factor reception hall
+     - AGENT-MILE-009 Dazhongsi terminal (Dazhongsi segment): SC-10 Global AI activity-week route
+   - All 9 segments bind to at least one scenario card; 8 segments correspond to a single card, and AGENT-MILE-008 (Dazhong-front) corresponds to two (SC-05, SC-08). The remaining 8 segments do not repeat — **the narrative (9 segments) and the scenario-map (10 cards) numbers are explicitly aligned**.
 
 ### Logo direction (text draft)
 

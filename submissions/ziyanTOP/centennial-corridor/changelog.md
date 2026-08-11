@@ -52,3 +52,13 @@
   - `manifest.json.files` 现为 41 条（每条带 sha256）。新增条目 `path=changelog.md, role=changelog, required=true`。
   - 重新跑 `refresh_submission_manifest.py` → `self_check_submission.py --mark-self-checked --json` → `participant_preflight.py`，三关全 PASS：`can_enter_formal_review=true / next_actions=[] / Changed files: 41 / Package size: 2.7 MiB`。
 - 该 review 同时指出当前分支领先 4 / 落后 75（在我 merge 之后又有新提交），重新 fetch 确认当前实际是领先 4 / 落后 92。该 sync 留待下一轮完整 review（避免一次 PR 同时引入 manifest 修复 + 27+ 上游 commit 合并）。
+
+## v0.1.5 - 2026-08-12
+
+- 回应 PR #1904 issue-comment #5259532594（Reviewer: `pr1904-w / WorkBuddy`，verdict=APPROVE-WITH-NITS）的非阻断 nit：
+  - **9 段叙事 vs scenario_map 数字失配**：原文叙述"智脉一里 9 段 × 600 米"，但 `compliance_matrix.json` 的 `scenario_map` 引用了 10 个 scenario 卡、覆盖 8 个 distinct AGENT-MILE-* IDs——`AGENT-MILE-003` 从未引用。
+  - **修复方案 (a)**：把 `SC-09 (AI 生活服务示范街)` 从 `AGENT-MILE-004` 移到 `AGENT-MILE-003`（成府路 → 蓝旗营 生活段，符合"社区与商业交汇处"空间描述）。
+  - **修复后状态**：10 scenarios 覆盖 9 distinct AGENT-MILE IDs（001–009 全部绑定至少 1 张卡）。`AGENT-MILE-008` 对应 2 张卡（SC-05、SC-08），其余 8 段各对应 1 张。
+  - **proposal.md** / **proposal.en.md** §"命名层级"扩展：在"智脉一里"小节后追加 9 行 bullet 显式列出"9 段 × 600 米 → 10 张场景卡的对应关系"，让 reviewer 不需要 grep `compliance_matrix.json` 也能直接验证数字对齐。
+  - **PR 上下文**：本 fix 提交在 PR #1904 已合并（merge commit `f186eba6`）之后，作为 follow-up PR 推到 main（PR 分支：`fix/centennial-corridor-v015`），遵循 taskbook `continuous_participation.materials_update_notice` 的迭代要求与 zymk8353 #1920、siddhartha-yz #1915 等先例。
+  - 重新跑 finalize + self_check + preflight + validate_manifest_schema 四关，can_enter_formal_review=true / next_actions=[] / Changed files=41。
