@@ -1,20 +1,20 @@
 ---
-title: "JINGZHANG TOOLROOM: A Borrowable, Understandable, Returnable Public AI Toolkit"
+title: "JINGZHANG TOOLROOM: A Public AI City Route from Engineering Ruler to Echo Court"
 author_github: "violet5906"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A public AI-tool system that can be borrowed, understood, returned and paused, organised as three conceptual hubs for testing, learning and feedback."
+summary: "A conceptual public-capability line of Engineering Ruler, Learning Platform and Echo Court: test AI first, translate it for people, then return public feedback to the next test."
 tracks: ["civic-agent-governance", "enterprise-services-ecosystem", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v5.0"
 ---
 
-# JINGZHANG TOOLROOM: A Borrowable, Understandable, Returnable Public AI Toolkit
+# JINGZHANG TOOLROOM: A Public AI City Route from Engineering Ruler to Echo Court
 
-> **One sentence:** instead of treating AI as a row of black-box exhibits, make it a city tool that people can borrow, question, return—and stop using.
+> **One sentence:** first test AI on an Engineering Ruler, then translate it for people on a Learning Platform, and finally return public feedback through an Echo Court to the next test.
 
 ## Evidence, boundary and data status
 
@@ -24,13 +24,13 @@ Accordingly, north / centre / south describe only a **functional handover** amon
 
 ![Toolroom overview](assets/figures/site-overview.en.png)
 
-## Core idea: a public borrowing-and-returning system
+## Core idea: a public-capability line from test to return
 
-**JINGZHANG TOOLROOM** is neither a proposed new building nor a named operator. It is a borrow–understand–return protocol that may be explored through existing public interfaces, ground floors, open spaces and event sites:
+**JINGZHANG TOOLROOM** is neither a proposed new building nor a named operator. It is a test–translate–return protocol that may be explored through existing public interfaces, ground floors, open spaces and event sites:
 
-1. **Borrow:** a resident, student, start-up or visitor receives a tool or method with a stated purpose, data boundary and human support.
-2. **Understand:** every tool supplies plain-language explanation, live demonstration and a non-AI alternative.
-3. **Return:** a trial returns actionable feedback or a repair record to the operator, rather than retaining personal behavioural data by default.
+1. **Test:** at Zhongzhiyuan’s Engineering Ruler, state purpose, data boundary, human support and what a tool cannot do.
+2. **Translate:** at the AI Origin Community’s Learning Platform, turn capability into plain language, reusable steps and a non-AI alternative.
+3. **Return:** at Dazhongsi’s Echo Court, turn a trial into actionable feedback, a repair record or a public issue rather than retaining behavioural data by default.
 4. **Pause:** misleading output, discrimination, mission creep, accessibility failure or operational breakdown can pause, review, revise or retire a scenario.
 
 The proposal turns AI innovation from one-way display into reciprocal public capacity: research receives bounded and explainable feedback; users retain the right to refuse, ask questions, hand over to people and leave. The visual direction is an open square tool frame: orange for testing, teal for learning, ochre for return. The opening means a human must always have a way in and out. No corporate logo, real interface, portrait or uncleared material is used.
@@ -41,19 +41,19 @@ The proposal turns AI innovation from one-way display into reciprocal public cap
 | --- | --- | --- | --- |
 | Coordination study | A research–translation–trial–feedback ecology | A shared protocol for researchers, standard-setters, developers, organisations and residents | Uses only announced scope/tasks; no inferred enterprise roster or spatial allocation |
 | Overall design | A walkable network of public interfaces, shade and service fronts | Lending/return points should attach to reachable existing interfaces, not promise new infrastructure | Redlines, stations, utilities and traffic require official data |
-| Key areas | Three different prototypes test the public tool lifecycle | North tests; centre lends methods; south returns feedback | Key-area polygons are rough provisional constraints only |
+| Key areas | Three different prototypes test the public tool lifecycle | North tests; centre translates methods; south returns feedback | Key-area polygons are rough provisional constraints only |
 
 ![Conceptual land-use roles](assets/figures/land-use-structure.en.png)
 
-### Zhongzhiyuan: Tool Test Bench
+### Zhongzhiyuan: Engineering Ruler / Tool Test Bench
 
 Zhongzhiyuan stands for **test before lending**. A conceptual public-facing interface brings standards, safety, device trials, repair and public explanation to one table. Teams may submit constrained trial versions; users can see what a tool can and cannot do; staff can log non-identifying fault categories and human response. The spatial vocabulary is reversible: movable worktables, display racks, shaded stopping places and paper explanation cards—not presupposed permanent construction.
 
-### Beijing AI Origin Community: Method Library
+### Beijing AI Origin Community: Learning Platform / Method Street
 
 The AI Origin Community stands for **translating capability into method**. For students, developers, start-ups and neighbours, it offers brief face-to-face task decomposition, accessible-interface trials, paper/offline alternatives and open teaching. What is borrowed is not an account or personal data, but a stated working method: how to check an AI summary, maintain an auditable collaboration record, and recognise when a human service is necessary.
 
-### Dazhongsi: Return and Feedback Desk
+### Dazhongsi: Echo Court / Return and Feedback Desk
 
 Dazhongsi stands for **a destination after trial**. Product experience, intelligent-device display and service consultation should not end as one-off traffic. A conceptual feedback desk, repair-referral board, accessibility support point and public issue wall let people describe a problem, decline contact retention and find a human channel. Operators must show issue categories, pause conditions and revision results. This is not a claim of enterprise recruitment, commercial change or station reconstruction.
 
@@ -104,7 +104,7 @@ The annual rhythm—spring test, summer learn, autumn return, winter revise—is
 
 ## Metrics, recalculation and compliance
 
-The package separates: (a) recalculable provisional spatial metrics—site area, green/public-space ratios, footprint and key-area count; (b) internal proposal counts—3 hubs, 10 cards, 3 tests, 5 personas, 3 landmarks and zero default permanent personal-data retention; and (c) prohibited pseudo-precision—FAR, height, density, road redlines, utility capacity, investment, recruitment and delivery programme. Matrices connect announcement and agent tasks to narrative, layers, metrics, drawings, sources, assumptions and checks.
+The package separates: (a) recalculable provisional spatial metrics—site area, green/public-space ratios, footprint and key-area count; (b) internal proposal counts—3 hubs, 10 cards, 3 tests, 5 personas, 3 landmarks and zero default permanent personal-data retention; and (c) prohibited pseudo-precision—FAR, height, density, road redlines, utility capacity, investment, recruitment and delivery programme. The displayed 11,412,825.386 sqm is a medium-confidence recomputation of the package's `official_boundary=false` provisional constraint only; it is not an official site area or statutory basis. Matrices connect announcement and agent tasks to narrative, layers, metrics, drawings, sources, assumptions and checks.
 
 ![Metrics and evidence](assets/figures/metrics-evidence.en.png)
 

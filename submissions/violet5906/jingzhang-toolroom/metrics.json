@@ -12,10 +12,11 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "polygon_area(provisional_submitted_site_boundary)",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Recomputed only from geometry/site_boundary.geojson, whose feature is a provisional_constraint with official_boundary=false.",
+        "This is an internal package-consistency value, not an official site area, statutory boundary or planning-control basis."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +28,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived only from provisional package geometry; suitable for internal consistency checking, not for statutory, engineering, ownership or approval use."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +42,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived only from provisional package geometry; suitable for internal consistency checking, not for statutory, engineering, ownership or approval use."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +56,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived only from provisional package geometry; suitable for internal consistency checking, not for statutory, engineering, ownership or approval use."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +80,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Counts three provisional functional study areas; it does not establish formal key-area boundaries."
+      ]
     },
     "toolroom_hub_count": {
       "status": "known",
