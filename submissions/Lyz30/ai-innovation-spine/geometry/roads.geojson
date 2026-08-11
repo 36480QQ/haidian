@@ -8,12 +8,13 @@
   "features": [
     {
       "type": "Feature",
+      "id": "RD-001",
       "properties": {
         "id": "RD-001",
         "layer": "ROAD_CENTERLINE",
         "road_class": "arterial",
         "name_zh": "京张遗址公园主轴路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -32,12 +33,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-002",
       "properties": {
         "id": "RD-002",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "collector",
+        "road_class": "secondary",
         "name_zh": "大钟寺东西向主干道",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -54,12 +56,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-003",
       "properties": {
         "id": "RD-003",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "collector",
+        "road_class": "secondary",
         "name_zh": "原点社区东西向连接路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -76,12 +79,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-004",
       "properties": {
         "id": "RD-004",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "collector",
+        "road_class": "secondary",
         "name_zh": "众智园东西向连接路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -98,12 +102,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-005",
       "properties": {
         "id": "RD-005",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "collector",
+        "road_class": "secondary",
         "name_zh": "南北区过渡连接路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -120,12 +125,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-006",
       "properties": {
         "id": "RD-006",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "local",
+        "road_class": "branch",
         "name_zh": "原点社区内部环路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -145,12 +151,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-007",
       "properties": {
         "id": "RD-007",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "local",
+        "road_class": "branch",
         "name_zh": "众智园内部道路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -167,12 +174,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-008",
       "properties": {
         "id": "RD-008",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "local",
+        "road_class": "branch",
         "name_zh": "大钟寺内部道路",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -189,12 +197,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-009",
       "properties": {
         "id": "RD-009",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "path",
+        "road_class": "pedestrian",
         "name_zh": "遗址公园步行道",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
@@ -213,12 +222,13 @@
     },
     {
       "type": "Feature",
+      "id": "RD-010",
       "properties": {
         "id": "RD-010",
         "layer": "ROAD_CENTERLINE",
-        "road_class": "path",
+        "road_class": "greenway",
         "name_zh": "东西向慢行绿道",
-        "source_type": "agent_generated",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal"
       },
