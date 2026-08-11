@@ -12,43 +12,42 @@
   "features": [
     {
       "type": "Feature",
-      "id": "PUBLIC-001",
+      "id": "PS-001",
       "properties": {
-        "id": "PUBLIC-001",
+        "id": "PS-001",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "space_type": "service_plaza",
         "name_zh": "市民服务公共客厅广场",
-        "area_sqm_declared": 85352.672,
-        "area_sqm_calculated": 85352.672
+        "space_type": "service_plaza",
+        "area_sqm_calculated": 636515.33,
+        "official_boundary": false,
+        "area_sqm_declared": 636515.33
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.346,
-              39.9895
+              116.342,
+              39.94984
             ],
             [
-              116.34899999999999,
-              39.9895
+              116.355,
+              39.94984
             ],
             [
-              116.34899999999999,
-              39.9925
+              116.355,
+              39.955
             ],
             [
-              116.346,
-              39.9925
+              116.342,
+              39.955
             ],
             [
-              116.346,
-              39.9895
+              116.342,
+              39.94984
             ]
           ]
         ]
@@ -56,43 +55,43 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-002",
+      "id": "PS-002",
       "properties": {
-        "id": "PUBLIC-002",
+        "id": "PS-002",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "space_type": "landmark_plaza",
         "name_zh": "共创之环展示广场",
-        "area_sqm_declared": 59276.96,
-        "area_sqm_calculated": 59276.96
+        "space_type": "landmark_plaza",
+        "area_sqm_calculated": 75842.8,
+        "official_boundary": false,
+        "area_sqm_declared": 75842.8,
+        "pilgrimage_landmark": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34625,
-              39.98475
+              116.345,
+              40.014
             ],
             [
-              116.34875,
-              39.98475
+              116.349,
+              40.014
             ],
             [
-              116.34875,
-              39.987249999999996
+              116.349,
+              40.016
             ],
             [
-              116.34625,
-              39.987249999999996
+              116.345,
+              40.016
             ],
             [
-              116.34625,
-              39.98475
+              116.345,
+              40.014
             ]
           ]
         ]
@@ -100,87 +99,43 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-003",
+      "id": "PS-003",
       "properties": {
-        "id": "PUBLIC-003",
+        "id": "PS-003",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "space_type": "landmark_plaza",
         "name_zh": "市民AI广场",
-        "area_sqm_declared": 74397.699,
-        "area_sqm_calculated": 74397.699
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              116.3471,
-              39.946600000000004
-            ],
-            [
-              116.3499,
-              39.946600000000004
-            ],
-            [
-              116.3499,
-              39.9494
-            ],
-            [
-              116.3471,
-              39.9494
-            ],
-            [
-              116.3471,
-              39.946600000000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "PUBLIC-004",
-      "properties": {
-        "id": "PUBLIC-004",
-        "layer": "PUBLIC_SPACE",
-        "source_type": "agent_inferred_from_public_data",
-        "confidence": "medium",
-        "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
         "space_type": "landmark_plaza",
-        "name_zh": "数据灯塔广场",
-        "area_sqm_declared": 59247.04,
-        "area_sqm_calculated": 59247.04
+        "area_sqm_calculated": 56936.83,
+        "official_boundary": false,
+        "area_sqm_declared": 56936.83,
+        "pilgrimage_landmark": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34725,
-              40.01975
+              116.345,
+              39.9475
             ],
             [
-              116.34975,
-              40.01975
+              116.349,
+              39.9475
             ],
             [
-              116.34975,
-              40.02225
+              116.349,
+              39.949
             ],
             [
-              116.34725,
-              40.02225
+              116.345,
+              39.949
             ],
             [
-              116.34725,
-              40.01975
+              116.345,
+              39.9475
             ]
           ]
         ]
@@ -188,43 +143,86 @@
     },
     {
       "type": "Feature",
-      "id": "PUBLIC-005",
+      "id": "PS-004",
       "properties": {
-        "id": "PUBLIC-005",
+        "id": "PS-004",
         "layer": "PUBLIC_SPACE",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
+        "name_zh": "数据灯塔广场",
+        "space_type": "landmark_plaza",
+        "area_sqm_calculated": 1659831.34,
         "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "space_type": "station_plaza",
-        "name_zh": "大钟寺站前共享广场",
-        "area_sqm_declared": 71173.82,
-        "area_sqm_calculated": 71173.82
+        "area_sqm_declared": 1659831.34,
+        "pilgrimage_landmark": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34750000000001,
-              39.944250000000004
+              116.3485,
+              39.939
             ],
             [
               116.3505,
-              39.944250000000004
+              39.939
             ],
             [
               116.3505,
-              39.94675
+              40.0265
             ],
             [
-              116.34750000000001,
-              39.94675
+              116.3485,
+              40.0265
             ],
             [
-              116.34750000000001,
-              39.944250000000004
+              116.3485,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PS-005",
+      "properties": {
+        "id": "PS-005",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "name_zh": "大钟寺站前共享广场",
+        "space_type": "station_plaza",
+        "area_sqm_calculated": 85388.87,
+        "official_boundary": false,
+        "area_sqm_declared": 85388.87
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35,
+              39.96
+            ],
+            [
+              116.353,
+              39.96
+            ],
+            [
+              116.353,
+              39.963
+            ],
+            [
+              116.35,
+              39.963
+            ],
+            [
+              116.35,
+              39.96
             ]
           ]
         ]

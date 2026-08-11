@@ -12,59 +12,42 @@
   "features": [
     {
       "type": "Feature",
-      "id": "CONSTRAINTS",
+      "id": "CON-001",
       "properties": {
-        "id": "CONSTRAINTS",
-        "layer": "REGULATORY_CONTROL",
+        "id": "CON-001",
+        "layer": "HERITAGE_PROTECTION",
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
+        "name_zh": "临时边界约束包络",
+        "constraint_type": "heritage_protection",
+        "area_sqm_calculated": 1659831.34,
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "constraint_type": "provisional_boundary_envelope",
-        "name_zh": "临时边界约束包络",
-        "area_sqm_declared": 11412825.386,
-        "area_sqm_calculated": 11412825.386,
-        "usage_note": "约束图层为临时边界包络，不得作为正式控制线。"
+        "area_sqm_declared": 1659831.34
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3407,
+              116.3485,
               39.939
             ],
             [
-              116.3553,
+              116.3505,
               39.939
             ],
             [
-              116.3553,
-              39.965
-            ],
-            [
-              116.3533,
-              39.99
-            ],
-            [
-              116.3553,
+              116.3505,
               40.0265
             ],
             [
-              116.3427,
+              116.3485,
               40.0265
             ],
             [
-              116.3417,
-              40.006
-            ],
-            [
-              116.3397,
-              39.975
-            ],
-            [
-              116.3407,
+              116.3485,
               39.939
             ]
           ]

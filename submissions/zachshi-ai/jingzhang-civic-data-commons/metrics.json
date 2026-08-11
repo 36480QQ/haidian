@@ -7,7 +7,7 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.4,
+      "value": 11412825.386,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -20,7 +20,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1849247.7,
+      "value": 3049402.455,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson",
@@ -32,7 +32,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.162,
+      "value": 0.267191,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -44,7 +44,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 349448.2,
+      "value": 2514515.173,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson",
@@ -56,7 +56,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.0306,
+      "value": 0.220324,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -68,7 +68,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 232180.5,
+      "value": 550110.924,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -79,7 +79,7 @@
     },
     "building_density": {
       "status": "known",
-      "value": 0.0203,
+      "value": 0.048201,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
@@ -183,7 +183,7 @@
     },
     "civic_service_pod_count": {
       "status": "known",
-      "value": 13,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "geometry/buildings.geojson",
@@ -197,7 +197,7 @@
     },
     "co_creation_spaces_count": {
       "status": "known",
-      "value": 6,
+      "value": 3,
       "unit": "count",
       "source_files": [
         "geometry/buildings.geojson"
@@ -208,7 +208,7 @@
     },
     "data_commons_area_sqm": {
       "status": "known",
-      "value": 48500,
+      "value": 550110.9,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"

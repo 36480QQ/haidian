@@ -75,11 +75,11 @@ iteration: "v1.0"
 
 ### 空间结构
 
-总体设计范围构建"一脊三心多点"的空间结构。"一脊"沿京张遗址公园绿带自北向南贯通约8公里，叠加开放数据光纤、慢行主轴和公共体验路线；"三心"在三个重点区域内各设一个数据服务核心；"多点"在8个轨道站点和5个社区节点布局AI服务舱，形成500米步行可达的服务网络 [data:geometry/roads.geojson#DATA-SPINE-001] [data:geometry/public_space.geojson#PUBLIC-001]。
+总体设计范围构建"一脊三心多点"的空间结构。"一脊"沿京张遗址公园绿带自北向南贯通约8公里，叠加开放数据光纤、慢行主轴和公共体验路线；"三心"在三个重点区域内各设一个数据服务核心；"多点"在8个轨道站点和5个社区节点布局AI服务舱，首批建成6个站点群，形成500米步行可达的服务网络 [data:geometry/roads.geojson#DATA-SPINE-001] [data:geometry/public_space.geojson#PUBLIC-001]。
 
 ### 用地布局
 
-用地布局在公告和现状用地分类基础上，新增"AI服务区"（AI_SERVICE_ZONE）用地类型，用于承载数据共用心、服务舱和共创中心。总体设计范围内用地共18个分区，其中AI服务区6个、绿地与广场用地5个、居住用地3个、产业用地2个、公共服务设施用地2个 [data:geometry/land_use.geojson#LU-001]。绿地率约16.2%，公共空间率约3.1%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
+用地布局在公告和现状用地分类基础上，把承载数据共用心、服务舱和共创中心的地块标注为"AI服务功能"用地（设计建议，须以正式控规确认为前提）。总体设计范围内用地共18个分区，其中AI研发创新与商业服务类6个、绿地与广场用地5个、居住用地1个、公共服务设施用地2个、留白及其他4个 [data:geometry/land_use.geojson#LU-001]。绿地率约26.7%，公共空间率约22.0%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
 
 ### 城市更新策略
 
@@ -138,7 +138,7 @@ iteration: "v1.0"
 
 ## 用地、建筑规模与拆改留方案
 
-用地分类依据国土空间调查、规划、用途管制分类等公开标准表达，新增AI服务区用地类型为设计建议，须以正式控规确认为前提 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。本方案在三个重点区域和沿线节点布局15栋概念建筑，包括3个数据服务核心建筑、6个共创中心/发布厅、6个AI服务舱站点群，建筑基底总面积约23.2万平方米 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。
+用地分类依据国土空间调查、规划、用途管制分类等公开标准表达，新增AI服务区用地类型为设计建议，须以正式控规确认为前提 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。本方案在三个重点区域和沿线节点布局15栋概念建筑，包括3个数据服务核心建筑、3个共创中心/发布厅、6个AI服务舱站点群和3个配套服务建筑，建筑基底总面积约55.0万平方米 [data:geometry/buildings.geojson#BLDG-DATA-FACTORY] [metric:building_footprint_area_sqm]。
 
 **控规条件声明：** 容积率和建筑高度因官方控规条件缺失而标注为 unknown，不得以推测值冒充审定指标 [assumption:A-CONTROLS-001]。建筑高度、体量、界面和风貌控制由设计深度项管理，所有数值为概念建议层级 [depth:height_massing_character]。当官方控规发布后，须重新复算所有规模和强度指标。
 
@@ -219,14 +219,14 @@ iteration: "v1.0"
 | 指标 | 数值 | 单位 | 说明 |
 | --- | --- | --- | --- |
 | 总体设计范围面积 | 11,412,825 | sqm | 临时边界复算，待官方边界重算 [metric:site_area_sqm] |
-| 绿地率 | 16.2% | ratio | 绿地面积/场地面积 [metric:green_ratio] |
-| 公共空间率 | 3.1% | ratio | 公共空间面积/场地面积 [metric:public_space_ratio] |
-| 建筑基底面积 | 232,181 | sqm | 15栋概念建筑基底之和 [metric:building_footprint_area_sqm] |
+| 绿地率 | 26.7% | ratio | 绿地面积/场地面积 [metric:green_ratio] |
+| 公共空间率 | 22.0% | ratio | 公共空间面积/场地面积 [metric:public_space_ratio] |
+| 建筑基底面积 | 550,111 | sqm | 15栋概念建筑基底之和 [metric:building_footprint_area_sqm] |
 | 重点区域数 | 3 | count | 三处重点区域 [metric:key_area_count] |
 | 开放数据集数 | 12 | count | 概念建议的开放数据目录规模 [metric:data_open_datasets_count] |
-| AI服务舱数 | 13 | count | 沿带分布的服务舱节点 [metric:civic_service_pod_count] |
-| 市民共创空间数 | 6 | count | 三心+站点的共创空间 [metric:co_creation_spaces_count] |
-| 数据公共功能面积 | 48,500 | sqm | 数据服务核心+驿站+服务舱建筑面积 [metric:data_commons_area_sqm] |
+| AI服务舱数 | 6 | count | 沿带分布的服务舱节点 [metric:civic_service_pod_count] |
+| 市民共创空间数 | 3 | count | 三心的共创中心/发布厅 [metric:co_creation_spaces_count] |
+| 数据公共功能面积 | 550,111 | sqm | 数据服务核心+驿站+服务舱建筑面积 [metric:data_commons_area_sqm] |
 | 数据驿站500m可达覆盖率 | 0.82 | ratio | 概念建议的步行可达性评估 [metric:public_data_access_ratio] |
 
 面积复算在EPSG:4548坐标系下进行，所有临时边界数值在官方边界发布后须重算 [assumption:A-CONTROLS-001]。容积率和建筑高度因控规缺失为 unknown [metric:floor_area_ratio]。

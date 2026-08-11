@@ -21,35 +21,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-众智园数据工厂",
-        "name_zh": "AI服务区-众智园数据工厂",
-        "area_sqm_declared": 455023.831,
-        "area_sqm_calculated": 455023.831
+        "land_use_code": "07",
+        "land_use_label_zh": "AI研发创新-数据工厂",
+        "name_zh": "AI研发创新-数据工厂",
+        "area_sqm_declared": 1038126.04,
+        "data_commons_function": "ai-service: data factory & open-data platform",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3455,
-              40.016000000000005
+              116.348,
+              40.0075
             ],
             [
-              116.3515,
-              40.016000000000005
+              116.34177317073171,
+              40.0075
             ],
             [
-              116.3515,
-              40.024
+              116.3427,
+              40.0265
             ],
             [
-              116.3455,
-              40.024
+              116.348,
+              40.0265
             ],
             [
-              116.3455,
-              40.016000000000005
+              116.348,
+              40.0075
             ]
           ]
         ]
@@ -66,35 +67,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-众智园共创中心",
-        "name_zh": "AI服务区-众智园共创中心",
-        "area_sqm_declared": 341307.257,
-        "area_sqm_calculated": 341307.257
+        "land_use_code": "1401",
+        "land_use_label_zh": "公园绿地-数据驿站带",
+        "name_zh": "公园绿地-数据驿站带",
+        "area_sqm_declared": 540364.05,
+        "data_commons_function": "green data stations along heritage park",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3455,
-              40.009
+              116.351,
+              40.0075
             ],
             [
-              116.3515,
-              40.009
+              116.348,
+              40.0075
             ],
             [
-              116.3515,
-              40.015
+              116.348,
+              40.0265
             ],
             [
-              116.3455,
-              40.015
+              116.351,
+              40.0265
             ],
             [
-              116.3455,
-              40.009
+              116.351,
+              40.0075
             ]
           ]
         ]
@@ -111,35 +113,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1401",
-        "land_use_label_zh": "京张遗址公园活力带-北段",
-        "name_zh": "京张遗址公园活力带-北段",
-        "area_sqm_declared": 606716.439,
-        "area_sqm_calculated": 606716.439
+        "land_use_code": "0802",
+        "land_use_label_zh": "AI研发创新-开发者共创",
+        "name_zh": "AI研发创新-开发者共创",
+        "area_sqm_declared": 680746.77,
+        "data_commons_function": "developer co-creation / hackathon",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.343,
-              40.01
+              116.351,
+              40.0075
             ],
             [
-              116.347,
-              40.01
+              116.351,
+              40.0265
             ],
             [
-              116.347,
-              40.026
+              116.3553,
+              40.0265
             ],
             [
-              116.343,
-              40.026
+              116.35425890410959,
+              40.0075
             ],
             [
-              116.343,
-              40.01
+              116.351,
+              40.0075
             ]
           ]
         ]
@@ -156,35 +159,40 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-原点社区服务客厅",
-        "name_zh": "AI服务区-原点社区服务客厅",
-        "area_sqm_declared": 341415.609,
-        "area_sqm_calculated": 341415.609
+        "land_use_code": "0804",
+        "land_use_label_zh": "居住用地-沿线社区",
+        "name_zh": "居住用地-沿线社区",
+        "area_sqm_declared": 883620.13,
+        "data_commons_function": "residential",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3445,
-              39.987
+              116.348,
+              40.0075
             ],
             [
-              116.3505,
-              39.987
+              116.348,
+              39.9935
             ],
             [
-              116.3505,
-              39.993
+              116.3408935483871,
+              39.9935
             ],
             [
-              116.3445,
-              39.993
+              116.3417,
+              40.006
             ],
             [
-              116.3445,
-              39.987
+              116.34177317073171,
+              40.0075
+            ],
+            [
+              116.348,
+              40.0075
             ]
           ]
         ]
@@ -201,35 +209,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "0702",
-        "land_use_label_zh": "社区服务与配套-原点社区",
-        "name_zh": "社区服务与配套-原点社区",
-        "area_sqm_declared": 379372.765,
-        "area_sqm_calculated": 379372.765
+        "land_use_code": "1401",
+        "land_use_label_zh": "教育用地-近校成果转化",
+        "name_zh": "教育用地-近校成果转化",
+        "area_sqm_declared": 398257.74,
+        "data_commons_function": "near-campus tech transfer",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3425,
-              39.982
+              116.348,
+              40.0075
             ],
             [
-              116.3475,
-              39.982
+              116.351,
+              40.0075
             ],
             [
-              116.3475,
-              39.989999999999995
+              116.351,
+              39.9935
             ],
             [
-              116.3425,
-              39.989999999999995
+              116.348,
+              39.9935
             ],
             [
-              116.3425,
-              39.982
+              116.348,
+              40.0075
             ]
           ]
         ]
@@ -246,35 +255,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1401",
-        "land_use_label_zh": "京张遗址公园活力带-中段",
-        "name_zh": "京张遗址公园活力带-中段",
-        "area_sqm_declared": 455240.65,
-        "area_sqm_calculated": 455240.65
+        "land_use_code": "0802",
+        "land_use_label_zh": "文化用地-京张记忆长廊",
+        "name_zh": "文化用地-京张记忆长廊",
+        "area_sqm_declared": 381703.8,
+        "data_commons_function": "railway memory gallery",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.34400000000001,
-              39.981
+              116.351,
+              39.9935
             ],
             [
-              116.348,
-              39.981
+              116.351,
+              40.0075
             ],
             [
-              116.348,
-              39.993
+              116.35425890410959,
+              40.0075
             ],
             [
-              116.34400000000001,
-              39.993
+              116.35349178082193,
+              39.9935
             ],
             [
-              116.34400000000001,
-              39.981
+              116.351,
+              39.9935
             ]
           ]
         ]
@@ -291,35 +301,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "0802",
-        "land_use_label_zh": "AI研发创新-近校成果转化街",
-        "name_zh": "AI研发创新-近校成果转化街",
-        "area_sqm_declared": 227610.167,
-        "area_sqm_calculated": 227610.167
+        "land_use_code": "0803",
+        "land_use_label_zh": "广场用地-市民AI广场",
+        "name_zh": "广场用地-市民AI广场",
+        "area_sqm_declared": 704569.37,
+        "data_commons_function": "citizen AI plaza",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35050000000001,
-              39.986000000000004
+              116.348,
+              39.9935
             ],
             [
-              116.3535,
-              39.986000000000004
+              116.348,
+              39.9835
             ],
             [
-              116.3535,
-              39.994
+              116.34024838709676,
+              39.9835
             ],
             [
-              116.35050000000001,
-              39.994
+              116.3408935483871,
+              39.9935
             ],
             [
-              116.35050000000001,
-              39.986000000000004
+              116.348,
+              39.9935
             ]
           ]
         ]
@@ -336,35 +347,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-大钟寺企业数据港",
-        "name_zh": "AI服务区-大钟寺企业数据港",
-        "area_sqm_declared": 227751.335,
-        "area_sqm_calculated": 227751.335
+        "land_use_code": "1401",
+        "land_use_label_zh": "防护绿地-清河生态界面",
+        "name_zh": "防护绿地-清河生态界面",
+        "area_sqm_declared": 284519.02,
+        "data_commons_function": "Qinghe ecological buffer",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3455,
-              39.945
+              116.348,
+              39.9935
             ],
             [
-              116.3515,
-              39.945
+              116.351,
+              39.9935
             ],
             [
-              116.3515,
-              39.949000000000005
+              116.351,
+              39.9835
             ],
             [
-              116.3455,
-              39.949000000000005
+              116.348,
+              39.9835
             ],
             [
-              116.3455,
-              39.945
+              116.348,
+              39.9935
             ]
           ]
         ]
@@ -381,35 +393,40 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "05",
-        "land_use_label_zh": "产业服务与商业服务-大钟寺",
-        "name_zh": "产业服务与商业服务-大钟寺",
-        "area_sqm_declared": 151834.099,
-        "area_sqm_calculated": 151834.099
+        "land_use_code": "0802",
+        "land_use_label_zh": "留白用地-未来服务预留",
+        "name_zh": "留白用地-未来服务预留",
+        "area_sqm_declared": 237342.76,
+        "data_commons_function": "reserved for future services",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35000000000001,
-              39.945
+              116.351,
+              39.9835
             ],
             [
-              116.354,
-              39.945
+              116.351,
+              39.9935
             ],
             [
-              116.354,
-              39.949000000000005
+              116.35349178082193,
+              39.9935
             ],
             [
-              116.35000000000001,
-              39.949000000000005
+              116.3533,
+              39.99
             ],
             [
-              116.35000000000001,
-              39.945
+              116.35382,
+              39.9835
+            ],
+            [
+              116.351,
+              39.9835
             ]
           ]
         ]
@@ -426,35 +443,40 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1401",
-        "land_use_label_zh": "京张遗址公园活力带-南段",
-        "name_zh": "京张遗址公园活力带-南段",
-        "area_sqm_declared": 170813.521,
-        "area_sqm_calculated": 170813.521
+        "land_use_code": "1403",
+        "land_use_label_zh": "公园绿地-活力带中段",
+        "name_zh": "公园绿地-活力带中段",
+        "area_sqm_declared": 2544916.75,
+        "data_commons_function": "vitality belt mid",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3465,
-              39.944
+              116.348,
+              39.9835
             ],
             [
-              116.34949999999999,
-              39.944
+              116.348,
+              39.94984
             ],
             [
-              116.34949999999999,
-              39.95
+              116.34039888888888,
+              39.94984
             ],
             [
-              116.3465,
-              39.95
+              116.3397,
+              39.975
             ],
             [
-              116.3465,
-              39.944
+              116.34024838709676,
+              39.9835
+            ],
+            [
+              116.348,
+              39.9835
             ]
           ]
         ]
@@ -471,35 +493,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "0701",
-        "land_use_label_zh": "居住用地-清河沿线",
-        "name_zh": "居住用地-清河沿线",
-        "area_sqm_declared": 151709.776,
-        "area_sqm_calculated": 151709.776
+        "land_use_code": "1401",
+        "land_use_label_zh": "公园绿地-活力带南段",
+        "name_zh": "公园绿地-活力带南段",
+        "area_sqm_declared": 957992.2,
+        "data_commons_function": "vitality belt south",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.342,
-              40.001999999999995
+              116.348,
+              39.9835
             ],
             [
-              116.34599999999999,
-              40.001999999999995
+              116.351,
+              39.9835
             ],
             [
-              116.34599999999999,
-              40.006
+              116.351,
+              39.94984
             ],
             [
-              116.342,
-              40.006
+              116.348,
+              39.94984
             ],
             [
-              116.342,
-              40.001999999999995
+              116.348,
+              39.9835
             ]
           ]
         ]
@@ -516,35 +539,40 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "0701",
-        "land_use_label_zh": "居住用地-知春路沿线",
-        "name_zh": "居住用地-知春路沿线",
-        "area_sqm_declared": 379460.304,
-        "area_sqm_calculated": 379460.304
+        "land_use_code": "05",
+        "land_use_label_zh": "公园绿地-滨水绿带",
+        "name_zh": "公园绿地-滨水绿带",
+        "area_sqm_declared": 1243271.74,
+        "data_commons_function": "riverside green",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3415,
-              39.966
+              116.351,
+              39.94984
             ],
             [
-              116.34649999999999,
-              39.966
+              116.351,
+              39.9835
             ],
             [
-              116.34649999999999,
-              39.974
+              116.35382,
+              39.9835
             ],
             [
-              116.3415,
-              39.974
+              116.3553,
+              39.965
             ],
             [
-              116.3415,
-              39.966
+              116.3553,
+              39.94984
+            ],
+            [
+              116.351,
+              39.94984
             ]
           ]
         ]
@@ -561,35 +589,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "0701",
-        "land_use_label_zh": "居住用地-西直门沿线",
-        "name_zh": "居住用地-西直门沿线",
-        "area_sqm_declared": 189806.589,
-        "area_sqm_calculated": 189806.589
+        "land_use_code": "05",
+        "land_use_label_zh": "公园绿地-滨水绿带二",
+        "name_zh": "公园绿地-滨水绿带二",
+        "area_sqm_declared": 416755.47,
+        "data_commons_function": "riverside green 2",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.3425,
-              39.94
+              116.348,
+              39.94984
             ],
             [
-              116.3475,
-              39.94
-            ],
-            [
-              116.3475,
+              116.348,
               39.944
             ],
             [
-              116.3425,
+              116.34056111111111,
               39.944
             ],
             [
-              116.3425,
-              39.94
+              116.34039888888888,
+              39.94984
+            ],
+            [
+              116.348,
+              39.94984
             ]
           ]
         ]
@@ -606,35 +635,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1301",
-        "land_use_label_zh": "公共服务设施-医疗教育北",
-        "name_zh": "公共服务设施-医疗教育北",
-        "area_sqm_declared": 227577.468,
-        "area_sqm_calculated": 227577.468
+        "land_use_code": "1401",
+        "land_use_label_zh": "公园绿地-清河创新绿带",
+        "name_zh": "公园绿地-清河创新绿带",
+        "area_sqm_declared": 166258.63,
+        "data_commons_function": "Qinghe innovation green",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347,
-              39.998
+              116.348,
+              39.94984
             ],
             [
-              116.353,
-              39.998
+              116.351,
+              39.94984
             ],
             [
-              116.353,
-              40.002
+              116.351,
+              39.944
             ],
             [
-              116.347,
-              40.002
+              116.348,
+              39.944
             ],
             [
-              116.347,
-              39.998
+              116.348,
+              39.94984
             ]
           ]
         ]
@@ -651,35 +681,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1301",
-        "land_use_label_zh": "公共服务设施-医疗教育南",
-        "name_zh": "公共服务设施-医疗教育南",
-        "area_sqm_declared": 227692.255,
-        "area_sqm_calculated": 227692.255
+        "land_use_code": "05",
+        "land_use_label_zh": "商业服务-大钟寺数据港",
+        "name_zh": "商业服务-大钟寺数据港",
+        "area_sqm_declared": 238303.83,
+        "data_commons_function": "enterprise data port / commercial",
+        "carries_ai_service": true
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.347,
-              39.963
+              116.351,
+              39.944
             ],
             [
-              116.353,
-              39.963
+              116.351,
+              39.94984
             ],
             [
-              116.353,
-              39.967000000000006
+              116.3553,
+              39.94984
             ],
             [
-              116.347,
-              39.967000000000006
+              116.3553,
+              39.944
             ],
             [
-              116.347,
-              39.963
+              116.351,
+              39.944
             ]
           ]
         ]
@@ -696,35 +727,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-服务舱站点群北",
-        "name_zh": "AI服务区-服务舱站点群北",
-        "area_sqm_declared": 75861.396,
-        "area_sqm_calculated": 75861.396
+        "land_use_code": "1402",
+        "land_use_label_zh": "商业服务-国际路演",
+        "name_zh": "商业服务-国际路演",
+        "area_sqm_declared": 349694.88,
+        "data_commons_function": "international roadshow",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.345,
-              39.997
+              116.3407,
+              39.939
             ],
             [
-              116.34899999999999,
-              39.997
+              116.34056111111111,
+              39.944
             ],
             [
-              116.34899999999999,
-              39.998999999999995
+              116.348,
+              39.944
             ],
             [
-              116.345,
-              39.998999999999995
+              116.348,
+              39.939
             ],
             [
-              116.345,
-              39.997
+              116.3407,
+              39.939
             ]
           ]
         ]
@@ -741,35 +773,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "AI_SERVICE_ZONE",
-        "land_use_label_zh": "AI服务区-服务舱站点群中",
-        "name_zh": "AI服务区-服务舱站点群中",
-        "area_sqm_declared": 75886.542,
-        "area_sqm_calculated": 75886.542
+        "land_use_code": "1401",
+        "land_use_label_zh": "商业服务-智能消费",
+        "name_zh": "商业服务-智能消费",
+        "area_sqm_declared": 142355.82,
+        "data_commons_function": "smart consumption",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.345,
-              39.974000000000004
+              116.348,
+              39.939
             ],
             [
-              116.34899999999999,
-              39.974000000000004
+              116.348,
+              39.944
             ],
             [
-              116.34899999999999,
-              39.976
+              116.351,
+              39.944
             ],
             [
-              116.345,
-              39.976
+              116.351,
+              39.939
             ],
             [
-              116.345,
-              39.974000000000004
+              116.348,
+              39.939
             ]
           ]
         ]
@@ -786,35 +819,36 @@
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
-        "land_use_code": "1401",
-        "land_use_label_zh": "小月河场景赋能翼滨水绿带",
-        "name_zh": "小月河场景赋能翼滨水绿带",
-        "area_sqm_declared": 474290.274,
-        "area_sqm_calculated": 474290.274
+        "land_use_code": "16",
+        "land_use_label_zh": "AI研发创新-服务客厅",
+        "name_zh": "AI研发创新-服务客厅",
+        "area_sqm_declared": 204043.16,
+        "data_commons_function": "citizen service living room",
+        "carries_ai_service": false
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              116.35125000000001,
-              39.965
+              116.351,
+              39.939
             ],
             [
-              116.35375,
-              39.965
+              116.351,
+              39.944
             ],
             [
-              116.35375,
-              39.985
+              116.3553,
+              39.944
             ],
             [
-              116.35125000000001,
-              39.985
+              116.3553,
+              39.939
             ],
             [
-              116.35125000000001,
-              39.965
+              116.351,
+              39.939
             ]
           ]
         ]

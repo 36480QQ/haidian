@@ -19,26 +19,22 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "secondary",
         "name_zh": "京张数据公共主轴",
-        "length_m_calculated": 8329.1
+        "road_class": "greenway",
+        "length_m_calculated": 9715.87,
+        "official_boundary": false,
+        "data_commons_role": "civic-data spine: open-data fiber + slow-mobility axis"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.347,
-            39.943
+            116.3495,
+            39.939
           ],
           [
-            116.347,
-            39.99
-          ],
-          [
-            116.348,
-            40.018
+            116.3495,
+            40.0265
           ]
         ]
       }
@@ -52,22 +48,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
         "name_zh": "北五环跨环路慢行联络线",
-        "length_m_calculated": 1195.2
+        "road_class": "cycleway",
+        "length_m_calculated": 939.01,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34,
-            40.02
+            116.343,
+            40.026
           ],
           [
             116.354,
-            40.02
+            40.026
           ]
         ]
       }
@@ -81,22 +76,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
         "name_zh": "学院路慢行联络线",
-        "length_m_calculated": 1195.7
+        "road_class": "secondary",
+        "length_m_calculated": 939.46,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34,
-            39.99
+            116.342,
+            39.9935
           ],
           [
-            116.354,
-            39.99
+            116.353,
+            39.9935
           ]
         ]
       }
@@ -110,22 +104,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
         "name_zh": "知春路慢行联络线",
-        "length_m_calculated": 1196.1
+        "road_class": "secondary",
+        "length_m_calculated": 939.59,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.34,
-            39.968
+            116.342,
+            39.9835
           ],
           [
-            116.354,
-            39.968
+            116.353,
+            39.9835
           ]
         ]
       }
@@ -139,22 +132,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
-        "name_zh": "大钟寺站一体化联络线",
-        "length_m_calculated": 854.6
+        "name_zh": "大钟寺站一体化接驳线",
+        "road_class": "transit_connection",
+        "length_m_calculated": 1111.07,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.344,
-            39.947
+            116.342,
+            39.944
           ],
           [
-            116.354,
-            39.947
+            116.355,
+            39.944
           ]
         ]
       }
@@ -168,22 +160,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "path",
         "name_zh": "小月河滨水慢行线",
-        "length_m_calculated": 2220.8
+        "road_class": "greenway",
+        "length_m_calculated": 1110.97,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.3525,
-            39.965
+            116.342,
+            39.94984
           ],
           [
-            116.3525,
-            39.985
+            116.355,
+            39.94984
           ]
         ]
       }
@@ -197,22 +188,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
         "name_zh": "西直门外大街接驳线",
-        "length_m_calculated": 1111.1
+        "road_class": "secondary",
+        "length_m_calculated": 939.53,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.341,
-            39.942
+            116.342,
+            39.9885
           ],
           [
-            116.354,
-            39.942
+            116.353,
+            39.9885
           ]
         ]
       }
@@ -226,22 +216,21 @@
         "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
-        "official_boundary": false,
-        "boundary_precision": "provisional_rough",
-        "road_class": "tertiary",
         "name_zh": "清华东路接驳线",
-        "length_m_calculated": 1110.2
+        "road_class": "pedestrian",
+        "length_m_calculated": 939.14,
+        "official_boundary": false
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            116.341,
-            40.0
+            116.343,
+            40.0165
           ],
           [
             116.354,
-            40.0
+            40.0165
           ]
         ]
       }
