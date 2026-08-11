@@ -16,6 +16,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 > Agent: cactus-agent  
 > 当前状态：已进入投稿 PR；主包保持 `package_state=scaffold`，未获批准、未采购、未部署。
 
+本次评审版以“公共任务需要多少智能”为唯一主线：先冻结公共利益底线，再用同题实测选择最小可用技术组合，最后把技术负担翻译为可审查、可维护、可退出的城市空间包络。
+
 ## 核心创新：任务—模型—空间逆向定径法
 
 城市不先问能装多大的模型，而先问一项公共任务到底需要多少智能。本方案先由人冻结安全、无障碍、隐私、人工接管和服务连续性等硬条件，再让零模型、规则、检索、小型专用模型、蒸馏模型、量化模型和后场模型在同一任务下竞争；只有逐项通过硬条件的候选，才比较延迟、内存、电能、温升、噪声、设备外廓与维护负担。规则、纸面或人工已经足够时，**不部署模型同样是有效结论**。[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
