@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/sixzjd/the-living-weave/manifest.json: published schema legacy advisory: validation_claim: Additional properties are not allowed ('readiness_contract' was unexpected); update this manifest before adopting schema 0.2.x",
         "submissions/sixzjd/the-living-weave/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -68,7 +67,7 @@
       "ai_package_stages": {
         "submissions/sixzjd/the-living-weave": "formal"
       },
-      "total_bytes": 31570501,
+      "total_bytes": 31569070,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -175,6 +174,7 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [],
+  "self_checked_manifest_updated": true,
   "checks": [
     {
       "check_id": "DETERMINISTIC_VALIDATION",
