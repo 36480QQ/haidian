@@ -9,6 +9,7 @@ A/B 档内容升级 + 官方新 readiness contract 适配（保留双螺旋创�
 - **试点投融资与运营模式表**：三个试点明确投融资建议、运营主体分工与成本责任（"公共投入+市场运营"混合模式）。
 - **全球案例可转化空间动作表**：六个案例 → 落地空间动作（对应 BLDG/场景编号）。
 - **道路网络补 2 条慢行缝合支路**（ROAD-014/015，对应 JZ-01 断点缝合，共 15 条）。
+- **修复建筑重叠（CI spatial gate）**：BLDG-016 大钟寺区域能源站原位置与 BLDG-007/008 重叠 7082m² 导致 building_footprint_area_sqm 与空间复算不符（SPATIAL_REVIEW major），已移至 (116.3415, 39.9432) 无重叠位置；几何、指标、图件同步重生成。
 - **适配官方 readiness contract**：finalize 写入 validation_claim.readiness_contract；self_check.json 按新版 --mark-self-checked 持久化四门禁 ok=true 与 blocking PASS 记录（PROFESSIONAL_EVIDENCE / SPATIAL_REVIEW / VISUAL_PACKAGING）。
 - 全部图件/图纸版本图签更新为 v0.4 · 2026-08-11。
 

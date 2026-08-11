@@ -126,7 +126,7 @@ AI 创新生态由四类空间共同承载：研发测试空间（众智园）�
 
 用地方案依据《国土空间调查、规划、用途管制用地用海分类指南》的项目子集表达，57 个用地单元完整覆盖提交边界、无缝隙无重叠 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]。双链用地结构在指标上表现为：科研用地约 255.1 公顷、教育用地约 97.3 公顷、文化用地约 49.5 公顷沿双链分布；公园与防护绿地约 175.1 公顷构成蓝绿骨架；商业服务业用地约 132.2 公顷集中于南部门户与大钟寺 [metric:land_use_area_by_code] [metric:green_ratio]。
 
-建筑方案区分保留、改造、更新、新建与预留五类，给出 14 栋示意建筑基底，含清华园车站文化馆（保留）、人才公寓（新建）与两处能源站（众智园光储充能源站 BLDG-015、大钟寺区域能源站 BLDG-016）等 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。拆改留结论依赖权属、工程条件与审批，本方案只提出方法与待校准清单，不编造具体拆改留结论 [depth:development_intensity_controls]。建筑面积、容积率与高度控制在正式控规条件补齐前列为待确认 [metric:total_floor_area_sqm] [metric:floor_area_ratio]。
+建筑方案区分保留、改造、更新、新建与预留五类，给出 14 栋示意建筑基底，含清华园车站文化馆（保留）、人才公寓（新建）与两处能源站（众智园光储充能源站 BLDG-015、大钟寺区域能源站 BLDG-016，位于大钟寺站西南侧）等 [data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]。拆改留结论依赖权属、工程条件与审批，本方案只提出方法与待校准清单，不编造具体拆改留结论 [depth:development_intensity_controls]。建筑面积、容积率与高度控制在正式控规条件补齐前列为待确认 [metric:total_floor_area_sqm] [metric:floor_area_ratio]。
 
 ## 交通、轨道、市政与公共服务设施
 
