@@ -67,6 +67,18 @@ iteration: "v2.0-population-scale-screen"
 
 图上的 `DRAFT → REVIEW → STOP → RECOVERY → RETIRED` 是记录和发布的状态链，不是现实运营流程的承诺。真正进入试点前，需要有日期的事件、责任角色、群体影响观察、人工决定、替代服务和公众告知；缺一项就停在未知或停止。
 
+## 共享接驳模式竞争护栏
+
+共享接驳不是天然的公共交通补丁。近期共享自动驾驶车辆研究提醒，车辆共享如果和公共交通脱节，可能把出行从轨道公交吸走，并增加车辆行驶量 [source:SAV-VKT-TRANSIT-COMPETITION-2024]。因此本包新增四个合成反事实情景：轨道公交优先基线、封顶式接驳、无封顶接驳扩张，以及地面优先的空中候选。五个群组都保留：企业到岗、居民与照护、无障碍出行、夜班人员和对外通勤。
+
+这张屏是本包的补充审查屏，不是阻塞核心自检的验证门。运行器锁定 `O0`、`O1`、`O2`、`O3` 四个且仅四个情景；重复、缺失或未知情景 ID 会闭锁。它必须和正式 `self_check`、可信内容审查一起阅读，不能单独提升投稿、赋分或更新公开图库。
+
+护栏只看可解释的相对指标：公共交通客流指数不得低于 0.95，接驳份额不得超过 8%，车公里比不得超过 1.10，最差群体可达性差值不得低于 −0.03。O1 封顶式接驳通过合成护栏，仍只进入条件复核；O2 因公共交通被挤出、接驳过量、车公里上升和最差群体变差而闭锁；O3 即使地面指标暂时通过，也因没有空中运行授权而保持 `BLOCKED`，空中 agents 为 0，地面公共交通回退先行 [data:visual/assets/mode-competition-guard.json] [data:visual/assets/mode-competition-guard-readout.json] [data:visual/assets/run-mode-competition-guard.js]。
+
+这张屏没有导入论文系数，也没有声称海淀客流、车公里、满意度或服务绩效。3,122,000 只是既有合成规模回放的参考分母；正式判断仍要补齐轨道/公交客流、发车间隔、车辆容量、接驳占比、路网长度、分组可达性和跨边界 OD 的日期化数据。
+
+![共享接驳模式竞争护栏](assets/figures/mode-competition-guard-board.svg)
+
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。
@@ -146,6 +158,18 @@ iteration: "v2.0-population-scale-screen"
 | 大钟寺 AI 产业聚集区 | 轨道换乘、企业访客、停车装卸、活动日人流 | 站口—骑行停放—步行穿越—企业入口统一导向；路缘按分钟级窗口清场 | 在工作日高峰与活动日做轨道接驳、装卸和居民归家分流演练 | 不占消防/无障碍通道；共享自动驾驶不替代轨道，不承诺社会道路许可 |
 
 每个重点区都要有企业责任人、社区/公共服务责任人、交通专业复核人和维护责任人，记录目标、输入、停止条件和回读证据；现阶段不声称已有合作方或运营许可 [depth:three_key_area_detailed_design] [source:HAIDIAN-ROAD-PARKING-TENDER-2026]。
+
+### 模型输出如何进入空间决定
+
+结构完整不等于专业判断已经完成。为让审阅者看到“模型发现了什么、现场的人要决定什么”，本包新增一张空间交通决策图谱。它把三处临时重点区和四个时段拆成 12 个决定单元，逐格写明骨干方式、支撑方式、合成护栏、空间动作、责任角色、补证要求和停止条件。它借用大规模活动/主体模型与交通公平研究的分组审查思路，也参考共享微出行与公共交通的公平性权衡；论文只约束方法问题，不迁移当地参数或结果 [source:EQUITY-ABM-DC-2024] [source:MICROMOBILITY-TRANSIT-EQUITY-2024] [source:MULTIMODAL-SAMS-NETWORK-2024]。
+
+图谱把每一格的边界写在数据里。3,122,000 仍只是合成回放的规模参照，接驳占比和最差群体可达性差值是合成护栏，不是居民调查。`conditional_review` 只表示可以准备现场复核；`hold` 表示锚点、权属、责任人、容量、无障碍或夜间安全证据尚未齐全。合成护栏通过也不能直接施工、运营、评分或上榜。空中出行保持 0 个合成代理并继续闭锁 [data:visual/assets/spatial-mobility-atlas.json] [data:visual/assets/spatial-mobility-atlas-readout.json]。
+
+每格都保留一个人的问题。例如众智园早到岗要回答班车窗口是否切断公共路线；AI 原点社区夜间要回答谁能接手照明、人工服务和地面回退；大钟寺要先回答维护者是否发布正式锚定关系。责任角色是待确认的工作接口，不是已存在的合作方。现场交通计数、分组 OD、无障碍走查、路缘清场回执、末班车回退记录和公众意见仍是释放条件。
+
+![空间交通决策图谱：三处重点区、四个时段与 12 个模型到人工决定单元](assets/figures/spatial-mobility-atlas-board.svg)
+
+评审者可运行 `node visual/assets/run-spatial-mobility-atlas.js --check`，复核 13/13 个结构检查、12 个决定单元、5 个条件复核单元和 7 个保持单元。这个 PASS 只说明图谱可读和护栏可重放，不代表专业审查、现场调查、许可或公开评分已经完成 [data:visual/assets/run-spatial-mobility-atlas-readout.json] [data:visual/assets/run-spatial-mobility-atlas.js]。
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -264,6 +288,18 @@ iteration: "v2.0-population-scale-screen"
 ![方式参数校准债务与来源溯源](assets/figures/calibration-debt-board.svg)
 
 空中交通从 headline 方式集合中剔除，eligible agents=0、状态为 `blocked`。在空域/场地许可、具名运营方、安全论证、噪声与疏散、无障碍地面兜底、公众参与和可回滚事故审计都具备前，不画批准航线、不报飞行人数，也不把未来实验写成现状能力。这样做的价值是把真正可执行的地面系统优先级留给地铁、公交、自行车、步行/无障碍、汽车、接驳和物流，而不是用一个漂亮的飞行比例掩盖地面断点 [data:visual/assets/air-mobility-gate.json] [assumption:A-AIR-EXPERIMENT-001]。
+
+### 动态偏好与满意度复核：把“最高”拆成可解释的选择
+
+现有全人口回放先回答网络能否承受；新增屏再回答不同群体在早到岗、日间服务、晚高峰回程和夜班回家时，哪些偏好变化会改变选择。它将八类群体、四个时段、四个政策候选展开成 32 个合成决定单元，使用时间、等待、可靠性、无障碍、舒适度和成本六项声明式权重。这个结构参考滚动时域多方式规划、按需多方式交通公平和多方式服务质量研究；论文用于方法边界，不提供海淀参数或居民满意度 [source:DYNAMIC-PREFERENCE-MULTIMODAL-2025] [source:ODMTS-TRANSIT-EQUITY-2024] [source:MULTIMODAL-SERVICE-QUALITY-2024]。
+
+屏查把“未经筛选的满意度最高”和“硬门后可选的满意度最高”分开。区域回放原始代理分数最高的是 O3 慢行优先，数值为 66.78，但方式负荷和接驳护栏未过。O4 容量平衡的动态偏好代理为 71.13，最弱群体 P10 为 70.06，且通过公共交通、容量、无障碍、外来汽车流入和空中闭锁硬门，因此成为当前合成筛查中的最高可选候选。这两个数值都不是居民问卷；它们只说明硬门先于满意度排序，物流与人员服务仍然可以放在同一张复核表上 [data:visual/assets/dynamic-preference-readout.json] [data:visual/assets/run-dynamic-preference-screen.js]。
+
+图中右侧把每类群体在四个时段的可选政策并排展开。地铁和公交继续是骨干；自行车、步行/无障碍、汽车、企业接驳和物流作为地面候选进入相同选择表；空中候选保持 0 个代理。O3 的较高原始代理分数不能掩盖容量失败，O4 也不能绕过分组调查、15 分钟 OD、可靠性记录、无障碍走查或居民和企业复核 [data:visual/assets/dynamic-preference-screen.json] [source:PEOPLE-PARCELS-ABM-2026]。
+
+![动态偏好与满意度复核：八类群体、四个时段和硬门后候选](assets/figures/dynamic-preference-board.svg)
+
+评审者可运行 `node visual/assets/run-dynamic-preference-screen.js --check`，复核 13/13 项结构检查、8 类群体、4 个时段、32 个决定单元和 0 个空中代理。这个 PASS 只证明声明式偏好、持久回放字段、硬门顺序和图件可以离线重放，不代表满意度、公众接受、运营许可或 Review Agent 分数。
 
 ### AI 交通服务资源护照：把扩容前的负担逐项摊开
 

@@ -67,6 +67,18 @@ There are currently no field incidents, real appeals, corrections, retired relea
 
 The `DRAFT → REVIEW → STOP → RECOVERY → RETIRED` chain is a record and release boundary, not a promise about real operations. Before a pilot, dated events, accountable roles, group-impact observation, human decisions, fallback service and public notice are required; missing evidence keeps the state at unknown or stopped.
 
+## Mode competition guard for shared feeders
+
+A shared feeder is not automatically a public-transport complement. A recent shared automated-vehicle study warns that, when operations are separated from transit, shared vehicles can pull trips away from public transport and increase vehicle travel [source:SAV-VKT-TRANSIT-COMPETITION-2024]. This package therefore adds four synthetic counterfactuals: a rail-bus-first reference, a capped feeder, unmanaged feeder expansion and a ground-first air candidate. Five groups remain visible: enterprise arrivals, residents and carers, accessible travellers, night-shift workers and external commuters.
+
+This is a supplemental package screen, not a blocking gate in the core validator. The runner locks the scenario set to exactly `O0`, `O1`, `O2` and `O3`; duplicate, missing or unknown scenario IDs fail closed. It must be read alongside the formal `self_check` and trusted content review, and cannot by itself promote a submission, assign a score or update the public gallery.
+
+The guard uses interpretable relative metrics: the transit ridership index must stay at or above 0.95, feeder share at or below 8%, vehicle-kilometre ratio at or below 1.10, and worst-group access delta at or above −0.03. O1 passes the synthetic guard but remains conditional review; O2 is closed for transit displacement, excess feeder share, increased vehicle-kilometres and worse worst-group access; O3 remains `BLOCKED` even with ground metrics inside the guard because no air operation is authorized, air agents are 0 and the ground public-transport fallback comes first [data:visual/assets/mode-competition-guard.json] [data:visual/assets/mode-competition-guard-readout.json] [data:visual/assets/run-mode-competition-guard.js].
+
+The screen imports no paper coefficients and claims no Haidian ridership, vehicle-kilometre, satisfaction or service-performance result. The 3,122,000 figure is only the reference denominator for the existing synthetic population-scale replay; a formal decision still needs dated transit ridership, headways, capacity, feeder share, network length, grouped access and cross-boundary OD evidence.
+
+![Mode competition guard for shared feeders](assets/figures/mode-competition-guard-board.en.svg)
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
@@ -126,6 +138,18 @@ The Dazhongsi key area needs a separate positional disclosure. Public repository
 Only an official anchor relation or polygon revision from the maintainer should trigger a coordinated recalculation of key areas, land-use and road relationships, metrics, figures, A3/A0 drawings, bilingual HTML, source and assumption records, manifest and self-check. This keeps the spatial version comparable across submissions and avoids independent participant-side shifts.
 
 The first pilot is a small morning and evening window in Zhongzhiyuan, an accessible daily-route comparison in the Origin Community, and a rail/curb separation rehearsal at Dazhongsi. Enterprise bookings cannot become permanent community bans. Shared vehicles cannot occupy a fire route, accessible path or emergency corridor. The detailed-design register keeps the three roles separate and records the stop conditions [source:HAIDIAN-ROAD-PARKING-TENDER-2026].
+
+### How a model output enters a spatial decision
+
+Structural completeness is not the same as professional judgment. To show what the model finds and what a person must decide, the package adds a spatial mobility decision atlas. It divides the three provisional key areas and four time windows into 12 decision cells. Each cell states its backbone and support modes, synthetic guard values, spatial action, proposed owner, evidence request and stop condition. The atlas follows grouped review ideas from large-scale activity and agent-based transport-equity work, and it keeps the equity trade-off between shared micromobility and fixed transit visible. These papers constrain method questions only; no local parameter or result is imported [source:EQUITY-ABM-DC-2024] [source:MICROMOBILITY-TRANSIT-EQUITY-2024] [source:MULTIMODAL-SAMS-NETWORK-2024].
+
+The boundary is written into the data. The 3,122,000 figure remains a synthetic replay scale reference. Feeder share and worst-group accessibility delta are synthetic guards, not resident surveys. `conditional_review` means that a field review may be prepared; `hold` means that anchor, ownership, responsibility, capacity, accessibility or night-safety evidence is incomplete. Passing a synthetic guard does not authorize construction, operation, scoring or gallery promotion. Air mobility remains at zero synthetic agents and fail-closed [data:visual/assets/spatial-mobility-atlas.json] [data:visual/assets/spatial-mobility-atlas-readout.json].
+
+Every cell keeps one human question visible. Zhongzhiyuan AM arrival asks whether a feeder window cuts the public route. The Origin Community night window asks who can take over lighting, human service and ground fallback. Dazhongsi first asks whether the maintainer has published an official anchor relation. Proposed owners are work interfaces to be confirmed, not existing partners. Field traffic counts, grouped OD, accessibility walk-throughs, curb-clearance receipts, last-service fallback records and public input remain release conditions.
+
+![Spatial mobility decision atlas: three key areas, four windows and 12 model-to-human decision cells](assets/figures/spatial-mobility-atlas-board.en.svg)
+
+Reviewers can run `node visual/assets/run-spatial-mobility-atlas.js --check` to reproduce 13/13 structural checks, 12 decision cells, five conditional-review cells and seven hold cells. This PASS shows that the atlas is readable and its guards are replayable. It does not establish professional review, field measurement, permission or a public score [data:visual/assets/spatial-mobility-atlas-readout.json] [data:visual/assets/run-spatial-mobility-atlas.js].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -232,6 +256,18 @@ Reviewers can run `node visual/assets/run-regional-commute-simulation.js`, `node
 ![Mode-parameter calibration debt and provenance](assets/figures/calibration-debt-board.en.svg)
 
 The scale readout is explicitly two-part: synthetic agents and hypothetical trip legs are separate audit outputs [metric:synthetic_agent_count] [metric:synthetic_trip_legs_screened].
+
+### Dynamic preference and satisfaction review
+
+The full-population replay asks whether the declared network can carry the pressure. The new screen asks how preferences change for eight groups across AM arrival, midday service, PM return and night return. It expands four policies into 32 synthetic decision cells using declared weights for time, waiting, reliability, accessibility, comfort and cost. The structure draws on rolling-horizon multimodal planning, on-demand transit equity and multimodal service-quality research. Those papers set method boundaries only and provide no Haidian parameters or resident satisfaction [source:DYNAMIC-PREFERENCE-MULTIMODAL-2025] [source:ODMTS-TRANSIT-EQUITY-2024] [source:MULTIMODAL-SERVICE-QUALITY-2024].
+
+The screen separates the regional replay's highest unfiltered satisfaction proxy from the highest eligible candidate after hard gates. O3 active-first has the highest raw regional proxy at 66.78 but fails the load and feeder guards. O4 capacity-balanced has a dynamic preference proxy of 71.13, a worst-group P10 of 70.06 and passes the transit, capacity, accessibility, external-car and air-lock guards. Neither value is a resident survey. The screen shows that gates precede satisfaction ranking, while logistics and passenger services remain in the same review surface [data:visual/assets/dynamic-preference-readout.json] [data:visual/assets/run-dynamic-preference-screen.js].
+
+The board places each group and horizon beside its eligible policy. Metro and bus remain the backbone; bicycle, walking/wheelchair, cars, enterprise feeders and logistics enter the same ground choice set; the air candidate remains at zero agents. O3's higher raw proxy cannot hide its capacity failure, and O4 still requires grouped responses, 15-minute OD, reliability records, accessibility walk-throughs and resident/enterprise review [data:visual/assets/dynamic-preference-screen.json] [source:PEOPLE-PARCELS-ABM-2026].
+
+![Dynamic preference and satisfaction review: eight groups, four windows and post-gate candidate](assets/figures/dynamic-preference-board.en.svg)
+
+Reviewers can run `node visual/assets/run-dynamic-preference-screen.js --check` to reproduce 13/13 structural checks, eight groups, four windows, 32 decision cells and zero air agents. This PASS proves only that declared preferences, persisted replay fields, gate order and the board are replayable offline. It does not establish satisfaction, public acceptance, operating permission or a Review Agent score.
 
 ### AI mobility-service resource passport: account for burden before scale
 
