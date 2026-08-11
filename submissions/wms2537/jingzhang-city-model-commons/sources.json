@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "generated_at": "2026-08-09T13:05:00Z",
+  "generated_at": "2026-08-10T04:00:53Z",
   "sources": [
     {
       "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -624,6 +624,161 @@
       "original_format": "text/html",
       "sha256": "48831f91eacafec2fb0804d7224b94bf01eaf2a62ac379a41aa3844b81012224",
       "hash_scope": "remote_response_digest_at_obtained_date"
+    },
+    {
+      "source_id": "DATA-SRC-DAZHONGSI-TRANSACTION-20251231",
+      "title": "蓝景丽家收储项目 HD00-1603-01、HD00-1603-03A 交易及附件索引",
+      "publisher": "北京市公共资源交易服务平台",
+      "kind": "official_land_transaction",
+      "authority_level": "A0",
+      "url": "https://ggzyfw.beijing.gov.cn/zpgcrgg/20251231/5391270.html",
+      "use": "大钟寺重点区局部地块的官方编号、用途、面积和附件索引；不外推 72 ha 重点区",
+      "formal_use": "yes",
+      "accessed_date": "2026-08-10",
+      "publication_date": "2025-12-31",
+      "collection_method": "Official Beijing public-resource transaction page fetched on 2026-08-10; attachment index and transaction identifiers were retained without inferring the wider key-area boundary.",
+      "coverage": "HD00-1603-01 and HD00-1603-03A in Zhongguancun Subdistrict, plus the listed survey, traffic, water, and multi-plan-review attachments.",
+      "license_summary": "Public citation/reference only; government attachments are linked rather than redistributed.",
+      "transformations": "Used as a local evidence anchor for Dazhongsi design guardrails; no parcel geometry was replaced until CRS and authorization are confirmed.",
+      "limitations": "A land transaction unit is not the complete Dazhongsi AI industry cluster, the 11.4 km² overall design area, or an approval of this proposal.",
+      "usable_for_formal": "yes",
+      "usable_for": [
+        "official local parcel identifiers and stated transaction controls",
+        "provenance index for the local official-source evidence set"
+      ],
+      "not_usable_for": [
+        "full key-area polygon or competition redline",
+        "government endorsement, funding, or implementation approval"
+      ],
+      "published_date": "2025-12-31",
+      "obtained_date": "2026-08-10",
+      "original_format": "text/html",
+      "sha256": "04f926ba199bc3efb8296655129585208500ea709c115bcd9dd974d7880a1490",
+      "hash_scope": "downloaded_official_page_sha256"
+    },
+    {
+      "source_id": "DATA-SRC-DAZHONGSI-SURVEY-20250806",
+      "title": "建设工程规划用地测量成果报告书（2025 规自〔海〕测字 0074 号）",
+      "publisher": "北京市测绘设计研究院测绘和调查二部",
+      "kind": "official_survey_report",
+      "authority_level": "A0",
+      "url": "https://ggzyfw.beijing.gov.cn/cmsbj/u/cms/cn.gov.bjggzyfw.www/202601/8132045391270.pdf",
+      "use": "HD00-1603 局部用地性质、面积和桩点坐标的原始证据；坐标不在 CRS 核验前转成 GeoJSON",
+      "formal_use": "yes",
+      "accessed_date": "2026-08-10",
+      "publication_date": "2025-08-06",
+      "collection_method": "Official PDF downloaded from the public-resource attachment URL; 29-page report text and coordinate tables were checked locally.",
+      "coverage": "HD00-1603-01, 02, 03A, 04, 05, 06A and related road land in the Blue Jing Lijia storage project.",
+      "license_summary": "Public citation/reference only; original survey PDF is not copied into the submission package.",
+      "transformations": "Recorded parcel areas and coordinate-table availability; no coordinate transformation or boundary publication was performed.",
+      "limitations": "The visible report does not state a complete GIS CRS, axis order, units, or authoritative exchange metadata; survey-unit confirmation is required before geometry use.",
+      "usable_for_formal": "yes",
+      "usable_for": [
+        "local parcel-area evidence",
+        "a controlled request for CRS-confirmed boundary reconstruction"
+      ],
+      "not_usable_for": [
+        "unverified WGS84/EPSG:4548 polygon generation",
+        "complete existing-building, ownership, or heritage survey"
+      ],
+      "published_date": "2025-08-06",
+      "obtained_date": "2026-08-10",
+      "original_format": "pdf",
+      "sha256": "bbb1b37b20ad529b2264a0049ffcf38c354e9d5f34820958e6daa91a8083aa86",
+      "hash_scope": "downloaded_remote_attachment_sha256"
+    },
+    {
+      "source_id": "DATA-SRC-DAZHONGSI-SUPPLY-REVIEW-20251218",
+      "title": "供地项目“多规合一”协同平台审核意见的函（京规自〔海〕供审函〔2025〕0006 号）",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "kind": "official_planning_review",
+      "authority_level": "A0",
+      "url": "https://ggzyfw.beijing.gov.cn/cmsbj/u/cms/cn.gov.bjggzyfw.www/202601/2394495391270.pdf",
+      "use": "仅作为 HD00-1603-01/03A 局部供地单元的高度、容积率、绿地率、退线、道路、轨道和市政 guardrails",
+      "formal_use": "yes",
+      "accessed_date": "2026-08-10",
+      "publication_date": "2025-12-18",
+      "collection_method": "Official planning-review PDF downloaded from the transaction attachment index and text-checked locally.",
+      "coverage": "HD00-1603-01 and HD00-1603-03A planning conditions and coordination requirements.",
+      "license_summary": "Public citation/reference only; original review letter is not redistributed.",
+      "transformations": "Local controls are surfaced as bounded evidence and explicitly excluded from the wider key-area polygon and global metrics.",
+      "limitations": "These are supply-review/planning-condition values for one local evidence unit, not a statutory control set for the whole competition area or a design approval.",
+      "usable_for_formal": "yes",
+      "usable_for": [
+        "bounded local control evidence",
+        "implementation sequencing and evidence-gate design"
+      ],
+      "not_usable_for": [
+        "global FAR, height, green ratio, or setback values",
+        "automatic approval or implementation commitment"
+      ],
+      "published_date": "2025-12-18",
+      "obtained_date": "2026-08-10",
+      "original_format": "pdf",
+      "sha256": "7c296b791f2e547a23361dc2a24a88fdd284f56de267efb208038e47a6977f99",
+      "hash_scope": "downloaded_remote_attachment_sha256"
+    },
+    {
+      "source_id": "DATA-SRC-DAZHONGSI-MUNICIPAL-TRAFFIC-2025",
+      "title": "HD00-1603-01 等地块市政交通规划综合方案",
+      "publisher": "北京海开城市更新建设发展有限责任公司项目报审资料",
+      "kind": "official_project_review_attachment",
+      "authority_level": "A0",
+      "url": "https://ggzyfw.beijing.gov.cn/cmsbj/u/cms/cn.gov.bjggzyfw.www/202601/8651375391270.pdf",
+      "use": "局部道路、轨道、公交、停车、雨污水、供水、再生水和能源接口的报审级现状/方案证据",
+      "formal_use": "yes",
+      "accessed_date": "2026-08-10",
+      "publication_date": "2025",
+      "collection_method": "Official transaction attachment downloaded and text-checked locally; the document is retained as a planning/report draft rather than an approved engineering drawing.",
+      "coverage": "Blue Jing Lijia project unit and immediate Dazhongsi station/road interfaces; includes a 300 m station-integration control discussion and local traffic model.",
+      "license_summary": "Public citation/reference only; original project attachment is not redistributed.",
+      "transformations": "Used to make the proposed service market and station handoff testable, while retaining approval-pending language.",
+      "limitations": "Report/plan status remains subject to competent approval; local traffic forecasts and utility descriptions are not a full-belt baseline or capacity certification.",
+      "usable_for_formal": "yes",
+      "usable_for": [
+        "local mobility and municipal evidence gates",
+        "bounded station-to-public-space interface design"
+      ],
+      "not_usable_for": [
+        "approved road or pipe redlines",
+        "whole-belt demand forecast or engineering capacity conclusion"
+      ],
+      "published_date": "2025",
+      "obtained_date": "2026-08-10",
+      "original_format": "pdf",
+      "sha256": "ad5632e34272d2a4b655f28c8bd69733e96fcd0a56191840b78097caf2a187a3",
+      "hash_scope": "downloaded_remote_attachment_sha256"
+    },
+    {
+      "source_id": "DATA-SRC-DAZHONGSI-WATER-20250819",
+      "title": "蓝景丽家收储项目水影响评价审查意见（京水务函〔2025〕153 号）",
+      "publisher": "北京市水务局",
+      "kind": "official_water_review",
+      "authority_level": "A0",
+      "url": "https://ggzyfw.beijing.gov.cn/cmsbj/u/cms/cn.gov.bjggzyfw.www/202601/9284535391270.pdf",
+      "use": "局部项目水资源、雨污分流、再生水和径流控制的证据门；不外推为全带水系统模型",
+      "formal_use": "yes",
+      "accessed_date": "2026-08-10",
+      "publication_date": "2025-08-19",
+      "collection_method": "Official Beijing Water Bureau review PDF downloaded from the transaction attachment index and text-checked locally.",
+      "coverage": "Blue Jing Lijia project parcels and associated 2027 planning-year water/runoff conditions.",
+      "license_summary": "Public citation/reference only; original review PDF is not redistributed.",
+      "transformations": "Translated into a local stormwater and operating-responsibility gate; no full-belt water capacity is inferred.",
+      "limitations": "The review is a project/land-development opinion and does not replace detailed design, later approvals, or a full competition-area water model.",
+      "usable_for_formal": "yes",
+      "usable_for": [
+        "local water and sponge-city evidence gate",
+        "operating-cost and maintenance questions for the Dazhongsi pilot"
+      ],
+      "not_usable_for": [
+        "whole-belt water capacity or flood-safety certification",
+        "construction approval or delivery commitment"
+      ],
+      "published_date": "2025-08-19",
+      "obtained_date": "2026-08-10",
+      "original_format": "pdf",
+      "sha256": "3fda989526245cb044e3d2bf6c6dc243f1571e664c19e3cc0ad69c64b3c06660",
+      "hash_scope": "downloaded_remote_attachment_sha256"
     }
   ]
 }
