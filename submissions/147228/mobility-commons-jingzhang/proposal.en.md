@@ -36,6 +36,14 @@ The relationship chain does only five things: **choose a public/accessibility or
 
 This table connects the design boards, curb ledger, M-09 fallback tabletop and P0/P1/P2 phasing to one acceptance entry point. **The package proves** that 4/4 synthetic requests retain a human/public-transport fallback, 6/6 deterministic checks pass and 5/5 rollback steps can be replayed. **The field remains on HOLD** for entrance and route continuity, gradients and crossings, real demand, staffing, public acceptance, safety and service performance. If any item lacks a dated field record and a responsible person, the proposal stays at P0; tabletop PASS is not permission to open.
 
+### Responsibility transfer and public coverage contract | Make the burden visible
+
+A mobility service can enter pilot discussion only when its responsibility, resources and refusal conditions are readable together. The new `visual/assets/mobility-responsibility-transfer.json` defines seven resource units covering route and curb space, rail and bus capacity, enterprise booking, resident daily access, field maintenance, data and privacy, and public equity. Each unit names a recipient role, a non-AI equivalent, at least three denominators, required evidence, a refusal condition and a writeback action. The denominators are survey tasks rather than local measurements; real transfers, real authorization and the field baseline remain 0 or `unknown`.
+
+The eight coverage groups are enterprise employees, residents, carers or children, wheelchair and assistive-device users, night-shift workers, visitors, logistics and maintenance workers, and emergency responders. Evidence for `MRT-01` through `MRT-07` must retain acceptance or refusal, the human fallback, the responsible role, the evidence version and the next decision. An overall average, a success-only log or treating an AI recommendation as public service cannot pass the coverage review. The offline checker `node visual/assets/run-mobility-responsibility-transfer.js --json` checks contract completeness and fail-closed logic only; it creates no field result.
+
+![Mobility responsibility transfer: seven resource units, eight groups and refusal writeback](assets/figures/responsibility-transfer-board.en.svg)
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
