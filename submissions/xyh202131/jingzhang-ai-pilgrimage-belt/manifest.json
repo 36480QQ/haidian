@@ -76,7 +76,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f763843ec77f9631379304d3d175501955b407bea448c48f5b7cfa353290155f"
+      "sha256": "052c2fcbf6286aeaaeef1a79eaa6c45e5e52ade1b9fa54ce48be6ae8feaee192"
     },
     {
       "path": "changelog.md",
@@ -510,7 +510,8 @@
     "review_status": "formal-review-ready",
     "self_check_file": "self_check.json",
     "known_blockers": [],
-    "data_confidence": "low"
+    "data_confidence": "low",
+    "readiness_contract": "persisted-self-check-v1"
   },
   "rights_claim": {
     "status": "not_fully_cleared",
