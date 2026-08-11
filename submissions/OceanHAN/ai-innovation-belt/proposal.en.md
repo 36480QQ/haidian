@@ -56,11 +56,26 @@ The three levels are not separate drawing sets; they implement one "mainline log
 
 ### Three Positionings, Five Functions, and the Three-Areas-Two-Wings Loop
 
-The three positionings (Century Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI Convergence Innovation Belt) map respectively to the heritage narrative layer of the mainline greenway, the life-experience layer of public spaces and scenario nodes, and the industry-convergence layer of the three nodes and two wings. The five functions map to five spatial roles: CI Yard (full-stack self-reliant innovation and governance display), Kernel (ecosystem incubation), Release (scenario monetization), Registry wing (professional services), and Staging wing (scenario testing) [source:AGENT-TASKBOOK].
+The structured mapping of the three positionings, five functions, and spatial roles (conceptual framework):
+
+| Taskbook frame | Mainline answer | Readable space/mechanism |
+| --- | --- | --- |
+| Century Jing-Zhang Culture Belt | "Self-built trunk line" re-read as a publicly mergeable mainline | Mainline greenway, Origin Plaza, three-act cultural tour |
+| Urban AI Life Experience Belt | Scenarios go live publicly as proposals; residents can review and roll back | Staging wing, Commit Corridor, Merge Review months |
+| AI Convergence Innovation Belt | Train-build-release pipeline linking three areas and two wings | CI Yard / Kernel / Release + two wings |
+| AI full-stack self-reliant innovation | Training, evaluation, standards, safety governance closed in one field | CI Yard training and evaluation grounds |
+| World-class AI ecosystem | Upstream incubation, service registration, scenario distribution loop | Kernel upstream center + Registry wing |
+| AI+ scenario empowerment paradigm | Every scenario passes the mainline merge acceptance protocol before launch | Twelve scenario cards + five-rule protocol |
+| Intelligent AI vibrant city | AI recedes to the background; mainline and nodes run independently | Slow-traffic priority, public-space component kit |
+| AI governance global voice | An executable "five-rule merge" protocol as governance method | Annual public review, rollback records, version archive |
 
 **Coordination loop**: upstream (Kernel: universities and open-source communities) produces outcomes → CI (Zhongzhiyuan) trains, evaluates, and forms standards → Release (Dazhongsi) publishes, distributes, and recycles data → Registry (Zhongguancun) provides capital and professional services → Staging (Xiaoyue River) gray-box tests in real urban scenarios → feedback returns to Kernel. The mainline greenway is the physical carrier of this loop, forming a "T-shaped" coordination of a north-south innovation chain and an east-west services chain.
 
 **Mapping the open-source loop to urban governance (conceptual)**: translate the open-source workflow into a renewal-governance workflow—**issue** (public problem/need proposals) → **PR** (renewal project plans submitted publicly) → **review** (public review: disclosure, comment collection, Merge Review months) → **merge** (approved plans join the implementation pipeline) → **release** (project activation and outcome publication) → **maintain** (long-term operation and iteration). This mapping makes "urban renewal delivered as Pull Requests" an operational public-participation and decision-traceability mechanism rather than a slogan; statutory procedures (disclosure, approval, filing) follow current planning and renewal regulations [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+### Regional Innovation Coordination (signable interfaces, conceptual)
+
+The proposal does not fabricate existing cooperation; it proposes five types of **signable interface** (conceptual, becoming projects only after the relevant parties confirm): exchange resident co-design methods and youth-talent service mechanisms with Beiwai community; exchange long-term basic research and compute-validation questions with Future Science City; exchange scientific instruments, measurement, and standards methods with Huairou Science City; exchange embodied intelligence, robotics, and safety-testing questions with Beijing E-Town; and discuss green power, compute, and cross-regional scenario coordination with Zhangjiakou and Beijing-Tianjin-Hebei partners. Each interface registers only four elements—input, public return, data boundary, and exit condition—without presupposing administrative relations or investment arrangements [source:AGENT-TASKBOOK].
 
 ### Six Global AI Ecosystem Cases
 
@@ -144,6 +159,10 @@ The three key areas are the three Merge nodes of the mainline, themed as trainin
 | PR-12 | International roadshow hall | Release Plaza | **Industry test/validation/release** | Annual release venue; interpretation and media assets cleared |
 
 Each card's location, users, operating data, privacy boundary, human review, operator, and risk are recorded in the agent.3 entry of `compliance_matrix.json`. All scenarios are **conceptual suggestions or reference schemes for professional teams to deepen**—not confirmed government arrangements [source:AGENT-TASKBOOK]. AI scenarios follow data minimization, explainability, and human review, referencing generative-AI requirements [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### Mainline Merge Acceptance Protocol (conceptual)
+
+Before any AI scenario or renewal project enters the city, it is suggested to pass the **five-rule mainline merge** acceptance: ①**Open proposal**—purpose, scope, data sources, and exit conditions submitted publicly; ②**Public review**—comments from residents, merchants, and universities collected via Merge Review months or disclosure periods, with adoption decisions traceable; ③**Minimal rollback**—a rollback mechanism is mandatory (time-limited, segment-limited, cohort-limited, or one-click suspension), with the first pilot kept minimal; ④**Explainable records**—operation logs, decision bases, and human-takeover records auditable and reproducible; ⑤**Archive on release**—version, responsible party, and contact channels archived at activation, forming the basis for public retrospectives. The five rules are implemented item by item in the "operation essentials" column of the scenario cards, giving professional, operational, and public teams a directly deepenable acceptance structure; statutory safety, approval, and data-compliance procedures still follow current regulations [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:AGENT-TASKBOOK].
 
 ### Public Interest and Public-Participation Mechanisms (conceptual)
 
