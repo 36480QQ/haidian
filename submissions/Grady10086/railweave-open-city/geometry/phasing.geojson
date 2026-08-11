@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "name": "railweave_v2_evidence_maturity_phasing",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PHASE-V2-001",
+      "properties": {
+        "id": "PHASE-V2-001",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "0-6 months",
+        "name_zh": "建章立制与基础准备",
+        "dependency_zh": "落实一处共享首层，建立室内复现流程和线上需求清单",
+        "area_sqm_declared": 1043236.909,
+        "phase_logic": "evidence_maturity_not_rendering_maturity"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.353,
+              39.9935
+            ],
+            [
+              116.353,
+              39.9835
+            ],
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.342,
+              39.9935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-V2-002",
+      "properties": {
+        "id": "PHASE-V2-002",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "6-18 months",
+        "name_zh": "首批项目试点验证",
+        "dependency_zh": "开展低风险验证，形成公开测试报告、独立复核和事故退出机制",
+        "area_sqm_declared": 1929201.877,
+        "phase_logic": "evidence_maturity_not_rendering_maturity"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              40.026
+            ],
+            [
+              116.354,
+              40.026
+            ],
+            [
+              116.354,
+              40.0075
+            ],
+            [
+              116.343,
+              40.0075
+            ],
+            [
+              116.343,
+              40.026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-V2-003",
+      "properties": {
+        "id": "PHASE-V2-003",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "18-36 months",
+        "name_zh": "应用评估与有序推广",
+        "dependency_zh": "依据应用单位需求、运维预算和现场评估结果研究结构性投入",
+        "area_sqm_declared": 720454.219,
+        "phase_logic": "evidence_maturity_not_rendering_maturity"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.355,
+              39.94984
+            ],
+            [
+              116.355,
+              39.944
+            ],
+            [
+              116.342,
+              39.944
+            ],
+            [
+              116.342,
+              39.94984
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
