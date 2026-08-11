@@ -340,7 +340,7 @@
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "sum(polygon_area(public_space))",
+      "formula": "area(union(PUBLIC_SPACE polygons)); nested protocol_street_room polygons counted once",
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001",
@@ -355,7 +355,7 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
+      "formula": "area(union(PUBLIC_SPACE polygons)) / site_area_sqm; nested rooms counted once",
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001",
@@ -455,7 +455,8 @@
       "confidence": "high",
       "assumptions": [
         "A-SCENARIO-LOCATION-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "industry_validation_scenario_count": {
       "status": "known",
@@ -466,7 +467,8 @@
       ],
       "formula": "count(SCENARIO_NODE where industry_test_validation=true)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_node_zhongzhiyuan_count": {
       "status": "known",
@@ -481,7 +483,8 @@
       "assumptions": [
         "A-KEYAREA-001",
         "A-SCENARIO-LOCATION-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_node_ai_origin_count": {
       "status": "known",
@@ -496,7 +499,8 @@
       "assumptions": [
         "A-KEYAREA-001",
         "A-SCENARIO-LOCATION-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_node_dazhongsi_count": {
       "status": "known",
@@ -511,7 +515,8 @@
       "assumptions": [
         "A-KEYAREA-001",
         "A-SCENARIO-LOCATION-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_human_review_coverage_ratio": {
       "status": "known",
@@ -524,7 +529,8 @@
       "confidence": "high",
       "assumptions": [
         "A-OPERATIONS-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_spatial_assignment_coverage_ratio": {
       "status": "known",
@@ -537,7 +543,8 @@
       "confidence": "high",
       "assumptions": [
         "A-SCENARIO-LOCATION-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "scenario_phase_assignment_coverage_ratio": {
       "status": "known",
@@ -551,7 +558,8 @@
       "confidence": "high",
       "assumptions": [
         "A-PHASING-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "persona_count": {
       "status": "known",
@@ -562,7 +570,8 @@
       ],
       "formula": "count(unique persona_ids across SCENARIO_NODE)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "population_filter": "feature_kind=application_scenario"
     },
     "global_case_group_count": {
       "status": "known",
@@ -586,7 +595,8 @@
       ],
       "formula": "count(unique(protocol_interface_ids))",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [],
+      "population_filter": "feature_kind=application_scenario"
     },
     "landmark_count": {
       "status": "known",
@@ -599,7 +609,8 @@
       "confidence": "high",
       "assumptions": [
         "A-KEYAREA-001"
-      ]
+      ],
+      "population_filter": "feature_kind=application_scenario"
     },
     "phase_1_area_sqm": {
       "status": "known",
@@ -839,6 +850,271 @@
       "reason": "Official road redlines and an official site boundary are not available.",
       "professional_follow_up_required": true,
       "required_for_statutory_deepening": true
+    },
+    "protocol_interface_entity_count": {
+      "status": "known",
+      "value": 7.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE where feature_kind=protocol_interface_node and interface_id is a unique member of I1-I7)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001"
+      ]
+    },
+    "protocol_interface_entity_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(distinct valid interface_id with a resolving street_room_id) / 7",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-SCENARIO-LOCATION-001"
+      ]
+    },
+    "protocol_street_room_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(PUBLIC_SPACE where feature_kind=protocol_street_room)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-KEYAREA-001",
+        "A-SCENARIO-LOCATION-001"
+      ]
+    },
+    "human_journey_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE where feature_kind=human_journey_anchor and journey_id is a unique member of J01-J03)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-SCENARIO-LOCATION-001"
+      ]
+    },
+    "capacity_return_node_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(SCENARIO_NODE where feature_kind=capacity_return_node)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-OPERATIONS-001"
+      ]
+    },
+    "return_ticket_reference_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(application_scenario where return_ticket_required=true and capacity_return_node_id resolves to a capacity_return_node whose required_scenario_ids contains that scenario_id) / count(application_scenario where return_ticket_required=true)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-OPERATIONS-001"
+      ]
+    },
+    "flagship_pilot_count": {
+      "status": "known",
+      "value": 5.0,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(unique concept flagship records FP01 through FP05)",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ],
+      "population_filter": "pilot_id in FP01..FP05 and status=conceptual_governance"
+    },
+    "flagship_scenario_bundle_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(distinct S01-S12 assigned to exactly one FP01..FP05 concept pilot) / 12",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_implementation_plan_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(flagship records with operator consortium, 90-day test, one-year indicators, funding/space/data boundaries and five lifecycle gates) / 5",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_lifecycle_gate_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(valid technology_breakthrough, real_world_test, first_use_procurement, market_diffusion and standard_output gates across five concept pilots) / 25",
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05"
+      ]
+    },
+    "flagship_first_use_procurement_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(dated and legally reviewed first-use procurement or equivalent order records)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "No accountable buyer, procurement route, budget or completed first-use record is confirmed.",
+      "professional_follow_up_required": true
+    },
+    "flagship_market_diffusion_adoption_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(independently verified additional operators adopting a flagship package)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "The five pilots are concept proposals and no post-first-use adoption record exists.",
+      "professional_follow_up_required": true
+    },
+    "flagship_published_standard_output_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(published standards, specifications or reference toolkits with responsible issuers)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "Standard outputs are proposed lifecycle deliverables; no authorized issuer or publication exists.",
+      "professional_follow_up_required": true
+    },
+    "flagship_verified_public_benefit_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(flagship pilots with independently verified one-year public-benefit outcomes)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FLAGSHIP-FP02",
+        "A-FLAGSHIP-FP03",
+        "A-FLAGSHIP-FP04",
+        "A-FLAGSHIP-FP05",
+        "A-OPERATIONS-001"
+      ],
+      "reason": "No pilot is deployed and no dated baseline or one-year outcome series exists.",
+      "professional_follow_up_required": true
+    },
+    "network_role_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(distinct primary_network_role where network_role_anchor=true and role_anchor_status in concept_anchor_not_boundary,proxy_anchor_not_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
+      ],
+      "population_filter": "primary_network_role in SOURCE,STACK,PROVE,LIVE_MARKET,ENABLE,COMMONS"
+    },
+    "network_role_anchor_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(unique feature properties.id where network_role_anchor=true and role_anchor_status in concept_anchor_not_boundary,proxy_anchor_not_boundary)",
+      "confidence": "high",
+      "assumptions": [
+        "A-METRICS-001",
+        "A-SCENARIO-LOCATION-001"
+      ],
+      "population_filter": "network_role_anchor=true"
     }
   }
 }
