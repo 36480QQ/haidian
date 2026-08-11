@@ -37,7 +37,7 @@ This proposal adopts a three-level working framework: "Coordinated Research Area
 
 - **Coordinated Research Area (43.6 km²)**: North to North 5th Ring Road, east to Jingzang Expressway, south to Xizhimen Outer Street, west to Wanquanhe Road. Industrial research, AI ecosystem analysis, and urban strategy are conducted here.
 - **Overall Design Area (11.4 km²)**: The urban and industrial area within 1–2 km around the Jing-Zhang heritage park. Regulatory-plan-depth urban renewal design, including land use, mobility, blue-green space, public space, building character, and development intensity.
-- **Key Detailed-Design Area (368.4 ha)**: Three key areas from north to south — Zhongzhiyuan AI Autonomous Innovation Acceleration Area (192.1 ha), Beijing AI Origin Community (104.3 ha), and Dazhongsi AI Industry Cluster (72.0 ha) — for fine-grained urban design.
+- **Key Detailed-Design Area (369.3 ha)**: Three key areas from north to south — Zhongzhiyuan AI Autonomous Innovation Acceleration Area (192.1 ha), Beijing AI Origin Community (104.3 ha), and Dazhongsi AI Industry Cluster (72.0 ha) — for fine-grained urban design.
 
 ## Coordinated Research Area: Industry and Future-City Study
 
@@ -79,7 +79,7 @@ The proposal divides the overall design area (11.4 km²) into 6 functional land-
 | AI Industry & Mixed | 91.3 | 8.0% | Industry-city integration |
 | Residential | 36.5 | 3.2% | Talent apartments/communities |
 
-The rest comprises roads, transport, and municipal land. Green ratio ~12%, public space share ~8% (conceptual estimates; to be recomputed after official boundary confirmation).
+The rest comprises roads, transport, and municipal land. Green space ratio ~12%, public space share ~8% (conceptual estimates; to be recomputed after official boundary confirmation).
 
 ### Development Intensity and Building Control
 
@@ -252,10 +252,10 @@ Key indicators are in `metrics.json`; detailed compliance coverage in `complianc
 | Indicator | Value | Note |
 |------|----|------|
 | Overall design area | 11.4 km² | provisional boundary |
-| Three key areas total | 368.4 ha | provisional boundary |
-| Green ratio | ~9.8% | conceptual estimate |
+| Three key areas total | 369.3 ha | provisional boundary |
+| Green space ratio | ~12.1% | conceptual estimate |
 | Building coverage | conceptual | pending official indicators |
-| FAR (estimate) | 1.8 | conceptual estimate |
+| FAR (estimate) | 0.9 | conceptual estimate |
 | Estimated population | 120,000 | residential + employment |
 
 ## Risk, Copyright, and Compliance Statements

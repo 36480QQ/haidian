@@ -140,7 +140,8 @@
    "formula": "sum(footprint_area * floor_count) / total_site_area",
    "confidence": "medium",
    "assumptions": [
-    "GFA estimated from illustrative 32 buildings × floor counts; not statutory FAR."
+    "Whole-district FAR (GFA over total site 1141 ha, not buildable-land FAR).",
+    "Buildable-land FAR (where zoning permits) is estimated at 1.5-2.5, key areas 2.5-3.5."
    ]
   },
   "population_estimate": {
@@ -207,9 +208,22 @@
     "provisional boundary"
    ]
   },
+  "building_count": {
+   "status": "known",
+   "value": 32,
+   "unit": "count",
+   "source_files": [
+    "geometry/buildings.geojson"
+   ],
+   "formula": "count(features in buildings.geojson)",
+   "confidence": "high",
+   "assumptions": [
+    "Illustrative footprints, not exhaustive."
+   ]
+  },
   "green_ratio": {
    "status": "known",
-   "value": 0.121079,
+   "value": 0.1211,
    "unit": "ratio",
    "source_files": [
     "geometry/green_space.geojson",
@@ -217,7 +231,8 @@
    ],
    "formula": "green_area/site_area",
    "confidence": "medium",
-   "assumptions": []
+   "assumptions": [],
+   "note": "Alias for green_space_ratio. Used by visual/index.html."
   }
  }
 }

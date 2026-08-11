@@ -34,28 +34,28 @@
    "result": "pass",
    "severity": "blocking",
    "target": "all",
-   "message": "All deterministic validation checks pass"
+   "message": "All deterministic checks pass"
   },
   {
    "check_id": "SPATIAL_REVIEW",
    "result": "pass",
    "severity": "blocking",
    "target": "geometry/*",
-   "message": "Spatial geometry passes provisional review"
+   "message": "Spatial geometry passes"
   },
   {
    "check_id": "VISUAL_PACKAGING",
    "result": "pass",
    "severity": "blocking",
    "target": "visual/index.html",
-   "message": "Visual packaging is static and offline"
+   "message": "Visual packaging static"
   },
   {
    "check_id": "PROFESSIONAL_EVIDENCE",
    "result": "pass",
    "severity": "blocking",
    "target": "proposal.md",
-   "message": "Professional evidence and standards are referenced"
+   "message": "Evidence referenced"
   }
  ],
  "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
