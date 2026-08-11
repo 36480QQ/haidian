@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "status": "submission_asset_ledger",
+  "assets": [
+    {"asset":"proposal text and translations","origin":"agent-authored for this submission","right":"original submission text","limits":"policy and standard summaries remain attributed"},
+    {"asset":"technical figures and diagrams","origin":"generated locally from submission data by the package build script","right":"agent-authored graphics","limits":"provisional geometry is labelled and cannot be treated as statutory mapping"},
+    {"asset":"OpenStreetMap context","origin":"OpenStreetMap contributors","right":"ODbL 1.0 attribution","limits":"background context only; no ownership or statutory inference"},
+    {"asset":"NASA POWER climate baseline","origin":"NASA POWER daily API documentation and retrieved values","right":"public scientific data with attribution","limits":"concept-stage point-grid baseline; engineering design requires local data"},
+    {"asset":"Blender corridor rendering","origin":"agent-generated from conceptual massing","right":"agent-authored rendering","limits":"not an as-built or surveyed model"},
+    {"asset":"five concept scenes","origin":"OpenAI image generation directed for this submission","right":"submission concept imagery","limits":"design intent only; no identifiable real people or official endorsement"},
+    {"asset":"Three.js offline viewer","origin":"Three.js 0.185.1 bundled locally","right":"MIT license","limits":"license notice retained in source package"},
+    {"asset":"system fonts","origin":"Microsoft YaHei or available CJK system font","right":"render-only local font use","limits":"font files are not redistributed"}
+  ],
+  "review_rules": ["每个新增外部资产必须登记来源、许可和用途", "无法确认的权利状态标记为 unknown 并停止公开发布", "机构名称和政府文件不得被改造为背书性表述"]
+}
