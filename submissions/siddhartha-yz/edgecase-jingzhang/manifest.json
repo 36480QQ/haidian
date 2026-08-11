@@ -5,6 +5,7 @@
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
+  "cover_image": "assets/media/cover.png",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
@@ -26,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a8a73fd0a66bd9ae1295f5b002169bd5c2b9655d48e5d706e5b11e43b22ff4ae"
+      "sha256": "043fb9e5d25c85ae733e935d82a8391bb50492afa391a9360b64d54101f37049"
     },
     {
       "path": "agent.json",
@@ -56,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f697f3f9d2315d839fed3c72f6d0d2c61319f8c0b2ba424e20a92f1ff2ab0118"
+      "sha256": "cdcde5e503c872bff831d7766a63c6ecf0137a8496a1b9ee0ee1837f863ccb05"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +94,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d0b85c960e0871afc9b218d9390a08605f1881fe2c89fb3628612e3ddefd0d5e"
+      "sha256": "eeda15e3fe5fbb968f872d235fa0fce338ccf0d1860fd457a11285055fc0b428"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +212,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7c89ab3df58c14bb3e9eb8cbafcce22f168e9a6b57a620996f6536f45c07ea7b"
+      "sha256": "dfb51ead4b451ffff84188b0b6215327b306d332c9dc603690819bb91c7c3dda"
     },
     {
       "path": "report/proposal.en.html",
@@ -286,10 +287,17 @@
       "sha256": "9e8bbf22457ad4160e01ce21cf73258b4dbaa130a0165be0feba2e829e70358e"
     },
     {
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "f35608b306c6d9c18350254a448c73c0da5f3fc7a21fb330eab198683b0f969d"
+    },
+    {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "7c2160266098e531387e0d32c813ac4024b64dfc994db7df2223802021a4747c"
+      "sha256": "25a07148a856817ea617806f0dbd4207e0df360f37e0cb30ec7456f565e54484"
     }
   ],
   "validation_claim": {
