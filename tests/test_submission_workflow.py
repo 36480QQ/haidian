@@ -3285,7 +3285,13 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 root,
                 f"{base}/geometry/land_use.geojson",
                 lambda data: data["features"][0]["properties"].update(
-                    {"land_use_code": "BAD"}
+                    {
+                        "layer": "BAD_LAYER",
+                        "source_type": "bad-source",
+                        "confidence": "bad-confidence",
+                        "geometry_role": "bad-role",
+                        "land_use_code": "BAD",
+                    }
                 ),
             )
             self.update_json(
@@ -3305,9 +3311,24 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             errors = "\n".join(report.errors)
-            self.assertIn("unknown land_use_code", errors)
-            self.assertIn("unknown road_class", errors)
-            self.assertIn("unknown building_type", errors)
+            for field in [
+                "layer",
+                "source_type",
+                "confidence",
+                "geometry_role",
+                "land_use_code",
+                "road_class",
+                "building_type",
+            ]:
+                self.assertIn(f"unknown {field}", errors)
+            self.assertEqual(7, errors.count("; allowed: "))
+            self.assertIn("allowed: AI_SERVICE_ZONE", errors)
+            self.assertIn("allowed: agent_generated_design", errors)
+            self.assertIn("allowed: high, low, medium, unknown", errors)
+            self.assertIn("allowed: analysis_helper", errors)
+            self.assertIn("allowed: 05, 07, 0701", errors)
+            self.assertIn("allowed: arterial, branch, cycleway", errors)
+            self.assertIn("allowed: ai_r_and_d", errors)
 
     def test_formal_empty_core_geometry_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

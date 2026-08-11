@@ -4,6 +4,19 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v5.0 - 2026-08-12
+
+**Whole-system AI urban metabolism / 完整系统 AI 城市代谢**
+
+- 为既有 `SCENE-001`—`012` 建立十二本 G0 资源护照，在同一账本内覆盖算力、能源、设备材料、数据、人工复核、供应商依赖、失败与退出成本；核算边界从云/服务器扩展到边缘、网络、终端、传感/显示/固定件、人工和非 AI 基线、无障碍/安静与场所恢复。
+- Added twelve G0 resource passports for the existing `SCENE-001`—`012`, covering compute, energy, equipment/material, data, human review, vendor dependency, and failure/exit cost in one ledger. The boundary extends from cloud/server to edge, network, end devices, sensing/display/fixings, staffed and non-AI baselines, accessibility/quiet, and place restoration.
+- 新增双语城市代谢系统图与 visual 入口，按众智园设备/电池/接管、原点社区同意/共享设备/保障/清场、大钟寺来源/终端/人工台/通勤，分别显示不可复制的资源负担和退出焦点；三处只复用七类字段，不套用同一退出动作。
+- Added a bilingual metabolism-system figure and visual entry. Zhongzhiyuan shows equipment/battery/takeover burdens; Origin shows consent/shared-kit/safeguarding/clearance burdens; Dazhongsi shows source/terminal/staffed-desk/commute burdens. The places share seven fields but not one copied exit action.
+- 固定五类显式未知状态、七类组件退出去向和公共 NO-GO 门；任务分母、完整边界、来源、责任、非 AI 同任务基线、供应商导出维修退出、组件去向与独立复核必须全部关闭，未来 `PASS` 也不等于部署、场地、采购、成熟度、清权或环境收益授权。
+- Fixed five typed unknown states, seven component-exit destinations, and a public NO-GO gate. Task denominator, whole boundary, sources, responsibility, same-task non-AI baseline, vendor export/repair/exit, component destinations, and independent retest must all close; even a future `PASS` is not deployment, site, procurement, maturity, rights, or environmental authorization.
+- 12/12 与 7/7 仅为设计字段覆盖。有效任务分母、实测能源场景、实测算力场景、确认设备生命周期场景、实测人工分钟场景、确认供应商、现实批准与运行均为 0；总能源、总算力和总人工分钟保持 unknown。未改 geometry、既有 SCENE/JZ/T 编号、G0、后续失败治理或气候任务线，权利仍为 `not_fully_cleared`。
+- 12/12 and 7/7 are design-field coverage only. Valid task denominators, measured-energy scenes, measured-compute scenes, confirmed equipment-lifecycle scenes, measured-human-minute scenes, confirmed vendors, real approvals, and real operations are all 0; total energy, compute, and human minutes remain unknown. Geometry, existing SCENE/JZ/T IDs, G0, later failure-governance and climate task lines are unchanged, and rights remain `not_fully_cleared`.
+
 ## v4.0 - 2026-08-11
 
 **Non-AI-first public city / 非 AI 优先公共城市**
