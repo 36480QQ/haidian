@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "72fdf3f97a00226caca29638f510f942d9348e646a3c81580bcbaee087e3cfd7"
+      "sha256": "928b8538023e817473de1763026fb467e845f5c42647ed5a48acfba37e428845"
     },
     {
       "path": "compliance_matrix.json",
@@ -284,6 +284,12 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "16e336582e6c5d106c66ba3bacb6b068b0d00e0c6815373400872dea385b189a"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": true,
+      "sha256": "240a7e3a46b57b3720ef8cbf0c558185e839d45aa5136a33984df5472774ef2c"
     }
   ],
   "validation_claim": {

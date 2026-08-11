@@ -45,3 +45,10 @@
 - `proposal.md` / `proposal.en.md` 新增 **Provisional geometry caveat (sync with upstream #1029)**：明确指出 `PROV-KEY-003` 临时多边形质心位于北京北站一带，距大钟寺站约 2.26 km。本方案在 `geometry/key_areas.geojson` 中沿用 PROV-KEY-003 ID，仅引用面积与命名（与公告 1.5(3)3) 对齐），空间叙述明确指向"大钟寺地铁站所在路口四象限"，不依赖临时多边形几何坐标。official polygon 发布后必须重新跑 scaffold / self_check / 复算。
 - `geometry/land_use.geojson` `_synced_by` 更新到 v0.1.3。
 - 重新跑 finalize + self_check + preflight 三关，can_enter_formal_review=true / next_actions=[]。
+
+## v0.1.4 - 2026-08-12
+
+- 回应 PR #1904 review by `anselasimov-web` (PRR_kwDOSz8NQs8AAAABJKZV6Q, state=CHANGES_REQUESTED)。该 review 指出 `manifest.json.files` 列了 40 个文件，但 PR 实际改了 41 个 —— 缺的正是 `changelog.md`。本版本补登 changelog.md 条目并刷新 self_check。
+  - `manifest.json.files` 现为 41 条（每条带 sha256）。新增条目 `path=changelog.md, role=changelog, required=true`。
+  - 重新跑 `refresh_submission_manifest.py` → `self_check_submission.py --mark-self-checked --json` → `participant_preflight.py`，三关全 PASS：`can_enter_formal_review=true / next_actions=[] / Changed files: 41 / Package size: 2.7 MiB`。
+- 该 review 同时指出当前分支领先 4 / 落后 75（在我 merge 之后又有新提交），重新 fetch 确认当前实际是领先 4 / 落后 92。该 sync 留待下一轮完整 review（避免一次 PR 同时引入 manifest 修复 + 27+ 上游 commit 合并）。
