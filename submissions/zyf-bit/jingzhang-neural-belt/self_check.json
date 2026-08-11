@@ -72,5 +72,36 @@
       "target": "geometry/*.geojson",
       "message": "所有 geometry 文件名均在 ALLOWED_GEOMETRY_FILES 白名单内。"
     }
-  ]
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "submission_dir": "submissions/zyf-bit/jingzhang-neural-belt",
+  "pr_author": "zyf-bit",
+  "stage": "formal",
+  "deterministic_validation": {
+    "gate": "DETERMINISTIC_VALIDATION",
+    "result": "pass",
+    "blocking_count": 0,
+    "major_count": 0
+  },
+  "spatial_review": {
+    "gate": "SPATIAL_REVIEW",
+    "result": "pass",
+    "blocking_count": 0,
+    "major_count": 0
+  },
+  "visual_review": {
+    "gate": "VISUAL_PACKAGING",
+    "result": "pass",
+    "blocking_count": 0,
+    "major_count": 0
+  },
+  "professional_review": {
+    "gate": "PROFESSIONAL_EVIDENCE",
+    "result": "pass",
+    "blocking_count": 0,
+    "major_count": 0
+  },
+  "review_status": "formal-review-ready",
+  "next_actions": []
 }

@@ -8,7 +8,7 @@ translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路百年文脉为基底，构建'京张智脉'AI创新带——将铁路走廊转化为城市神经网络，串联众智园全栈AI研发区、AI原点社区与大钟寺产业聚集区，形成三区两翼协同的AI原生城市形态。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "enterprise-services-ecosystem"]
-scenarios: ["ai-traffic-walkability", "ai-public-services", "robotics-autonomous-mobility", "enterprise-services-ecosystem"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "robot-delivery-low-speed", "enterprise-service-copilot"]
 iteration: "v1.0"
 ---
 # 京张智脉 · AI创新带城市设计方案

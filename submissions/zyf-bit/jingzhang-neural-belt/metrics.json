@@ -1,151 +1,145 @@
 {
-  "metrics": [
-    {
-      "metric_id": "site_area_sqm",
-      "label": "场地总面积",
-      "status": "provisional",
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
       "value": 11400000,
       "unit": "sqm",
       "source_files": [
         "proposal.md",
-        "geojson/boundary.geojson"
+        "geometry/site_boundary.geojson"
       ],
       "formula": "SUM(polygon_area) of provisional boundary polygons",
-      "confidence": 0.7,
+      "confidence": "medium",
       "assumptions": [
         "ASM-001",
         "ASM-006"
-      ]
+      ],
+      "label": "场地总面积"
     },
-    {
-      "metric_id": "green_ratio",
-      "label": "绿地率",
-      "status": "estimated",
+    "green_ratio": {
+      "status": "known",
       "value": 0.25,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
-        "geojson/green_blue_system.geojson"
+        "geometry/green_space.geojson"
       ],
       "formula": "green_area / site_area",
-      "confidence": 0.6,
+      "confidence": "medium",
       "assumptions": [
         "ASM-006"
-      ]
+      ],
+      "label": "绿地率"
     },
-    {
-      "metric_id": "public_space_ratio",
-      "label": "公共空间率",
-      "status": "estimated",
+    "public_space_ratio": {
+      "status": "known",
       "value": 0.15,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
-        "geojson/public_space.geojson"
+        "geometry/public_space.geojson"
       ],
       "formula": "public_space_area / site_area",
-      "confidence": 0.6,
+      "confidence": "medium",
       "assumptions": [
         "ASM-006"
-      ]
+      ],
+      "label": "公共空间率"
     },
-    {
-      "metric_id": "building_footprint_area_sqm",
-      "label": "建筑基底总面积",
-      "status": "estimated",
+    "building_footprint_area_sqm": {
+      "status": "known",
       "value": 2280000,
       "unit": "sqm",
       "source_files": [
         "proposal.md",
-        "geojson/landuse.geojson"
+        "geometry/land_use.geojson"
       ],
       "formula": "site_area * estimated_footprint_ratio(0.20)",
-      "confidence": 0.5,
+      "confidence": "medium",
       "assumptions": [
         "ASM-006",
         "ASM-003"
-      ]
+      ],
+      "label": "建筑基底总面积"
     },
-    {
-      "metric_id": "floor_area_ratio",
-      "label": "容积率",
+    "floor_area_ratio": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": [],
       "formula": "total_floor_area / site_area",
-      "confidence": 0.0,
+      "confidence": "unknown",
       "assumptions": [
         "ASM-003"
       ],
+      "label": "容积率",
       "reason": "官方征集文件未提供容积率控制指标，本方案未设定假设值，待正式控规发布后补充。"
     },
-    {
-      "metric_id": "key_area_count",
-      "label": "重点地区数量",
-      "status": "confirmed",
+    "key_area_count": {
+      "status": "known",
       "value": 3,
       "unit": "count",
       "source_files": [
         "proposal.md",
-        "geojson/key_areas.geojson"
+        "geometry/key_areas.geojson"
       ],
       "formula": "COUNT(key_area_features)",
-      "confidence": 1.0,
-      "assumptions": []
+      "confidence": "high",
+      "assumptions": [],
+      "label": "重点地区数量"
     },
-    {
-      "metric_id": "ai_scenario_count",
-      "label": "AI场景数量",
-      "status": "confirmed",
+    "ai_scenario_count": {
+      "status": "known",
       "value": 12,
       "unit": "count",
       "source_files": [
-        "proposal.md",
-        "exhibit.json"
+        "proposal.md"
       ],
       "formula": "COUNT(scenario entries)",
-      "confidence": 1.0,
-      "assumptions": []
+      "confidence": "high",
+      "assumptions": [],
+      "label": "AI场景数量"
     },
-    {
-      "metric_id": "user_persona_count",
-      "label": "用户画像数量",
-      "status": "confirmed",
+    "user_persona_count": {
+      "status": "known",
       "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
       "formula": "COUNT(persona definitions)",
-      "confidence": 1.0,
-      "assumptions": []
+      "confidence": "high",
+      "assumptions": [],
+      "label": "用户画像数量"
     },
-    {
-      "metric_id": "ai_landmark_count",
-      "label": "AI地标数量",
-      "status": "confirmed",
+    "ai_landmark_count": {
+      "status": "known",
       "value": 3,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
       "formula": "COUNT(AI landmark features)",
-      "confidence": 1.0,
-      "assumptions": []
+      "confidence": "high",
+      "assumptions": [],
+      "label": "AI地标数量"
     },
-    {
-      "metric_id": "global_case_count",
-      "label": "全球案例参考数量",
-      "status": "confirmed",
+    "global_case_count": {
+      "status": "known",
       "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
       "formula": "COUNT(global reference cases)",
-      "confidence": 1.0,
-      "assumptions": []
+      "confidence": "high",
+      "assumptions": [],
+      "label": "全球案例参考数量"
     }
-  ]
+  }
 }
