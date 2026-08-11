@@ -1,218 +1,140 @@
 {
   "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
   "metrics": {
-    "site_area_coordinated_research": {
+    "site_area_sqm": {
       "status": "known",
-      "value": 43600000,
+      "value": 11412825.386,
       "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md"],
-      "formula": "Directly stated in the qualification preannouncement",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "site_area_overall_design": {
+    "building_footprint_area_sqm": {
       "status": "known",
-      "value": 11400000,
+      "value": 58245.632,
       "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md"],
-      "formula": "Directly stated in the qualification preannouncement",
-      "confidence": "high",
-      "assumptions": []
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(polygon_area(building_footprints))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "site_area_key_detailed_design": {
+    "green_space_area_sqm": {
       "status": "known",
-      "value": 3684000,
+      "value": 1778616.443,
       "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md"],
-      "formula": "Directly stated in the qualification preannouncement",
-      "confidence": "high",
-      "assumptions": []
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(polygon_area(green_space_features))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "key_area_zhongzhiyuan": {
+    "public_space_area_sqm": {
       "status": "known",
-      "value": 1921000,
+      "value": 628073.744,
       "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md", "geometry/key_areas.geojson"],
-      "formula": "Directly stated in the qualification preannouncement; mapped to KEY-001 in key_areas.geojson",
-      "confidence": "high",
-      "assumptions": []
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "area(union(public_space_features))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "key_area_ai_origin": {
+    "green_ratio": {
       "status": "known",
-      "value": 1043000,
-      "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md", "geometry/key_areas.geojson"],
-      "formula": "Directly stated in the qualification preannouncement; mapped to KEY-002 in key_areas.geojson",
-      "confidence": "high",
-      "assumptions": []
+      "value": 0.155844,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "key_area_dazhongsi": {
+    "public_space_ratio": {
       "status": "known",
-      "value": 720000,
-      "unit": "sqm",
-      "source_files": ["brief/qualification_preannouncement.md", "geometry/key_areas.geojson"],
-      "formula": "Directly stated in the qualification preannouncement; mapped to KEY-003 in key_areas.geojson",
-      "confidence": "high",
-      "assumptions": []
+      "value": 0.055032,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
-    "green_space_ratio": {
-      "status": "unknown",
-      "value": null,
-      "unit": "%",
-      "source_files": [],
-      "formula": "Green space area / total site area * 100",
-      "confidence": "low",
-      "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
+    "road_network_length_m": {
+      "status": "known",
+      "value": 32397.411,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(road_centerlines))",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
-      "unit": "-",
-      "source_files": [],
-      "formula": "Total floor area / site area",
-      "confidence": "low",
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
       "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
-    },
-    "building_density": {
-      "status": "unknown",
-      "value": null,
-      "unit": "%",
-      "source_files": [],
-      "formula": "Building footprint area / site area * 100",
-      "confidence": "low",
-      "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
-    },
-    "road_area_ratio": {
-      "status": "unknown",
-      "value": null,
-      "unit": "%",
-      "source_files": [],
-      "formula": "Road area / total site area * 100",
-      "confidence": "low",
-      "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
-    },
-    "public_space_area": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [],
-      "formula": "Sum of all designated public open spaces within the site",
-      "confidence": "low",
-      "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
-    },
-    "total_floor_area": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [],
-      "formula": "Sum of all building floor areas (above ground + underground)",
-      "confidence": "low",
-      "assumptions": [],
-      "reason": "Exact official detailed planning condition was not included in the cleared site package."
-    },
-    "scenario_card_count": {
-      "status": "known",
-      "value": 12,
-      "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "Count of scenario cards defined in the proposal",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "test_scenario_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "Count of test scenarios defined in the proposal",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "user_persona_count": {
-      "status": "known",
-      "value": 5,
-      "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "Count of user personas defined in the proposal",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "landmark_count": {
-      "status": "known",
-      "value": 4,
-      "unit": "count",
-      "source_files": ["proposal.md", "geometry/landmarks.geojson"],
-      "formula": "Count of designated landmark nodes in the spatial structure",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "event_annual_count": {
-      "status": "known",
-      "value": 5,
-      "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "Count of proposed annual signature events",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "phase_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": ["proposal.md", "geometry/phasing.geojson"],
-      "formula": "Count of implementation phases defined in the proposal",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "land_use_type_count": {
-      "status": "known",
-      "value": 9,
-      "unit": "count",
-      "source_files": ["proposal.md", "geometry/land_use.geojson"],
-      "formula": "Count of distinct land use categories in the land use plan",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "ecosystem_factor_count": {
-      "status": "known",
-      "value": 8,
-      "unit": "count",
-      "source_files": ["proposal.md"],
-      "formula": "Count of ecosystem design factors identified in the proposal",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "global_case_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": ["proposal.md", "brief/case_studies.md"],
-      "formula": "Count of international case studies referenced",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "belt_length_km": {
-      "status": "known",
-      "value": 9,
-      "unit": "km",
-      "source_files": ["proposal.md", "geometry/site_boundary.geojson"],
-      "formula": "Total length of the AI innovation belt along the former Jingzhang railway corridor",
-      "confidence": "high",
-      "assumptions": []
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
     },
     "key_area_count": {
       "status": "known",
       "value": 3,
       "unit": "count",
-      "source_files": ["geometry/key_areas.geojson"],
-      "formula": "Count of key detailed design areas (种植园、AI原点、大钟寺)",
-      "confidence": "high",
-      "assumptions": []
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
+    },
+    "phase_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count(phasing features)",
+      "confidence": "medium",
+      "assumptions": [
+        "基于临时粗略边界推算，官方红线发布后需重算"
+      ]
     }
   }
 }
