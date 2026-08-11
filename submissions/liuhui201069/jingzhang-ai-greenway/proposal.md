@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
-version: "v1.0"
-summary: "以京张遗址公园为中央绿轴，用『一脉三核两带三期』组织百年京张AI创新带：45 个用地单元完整剖分总体设计范围，三处AI朝圣地标锚定三大重点区，10 张AI场景卡沿绿轴布点；全部指标由 EPSG:4548 复算，临时边界保留精度警示，待官方数据补齐后整体重算。"
+version: "v1.1"
+summary: "以京张遗址公园为中央绿轴，用『一脉三核两带三期』组织百年京张AI创新带：45 个用地单元完整剖分总体设计范围，三处AI朝圣地标锚定三大重点区，10 张AI场景卡沿绿轴布点；全部指标由 EPSG:4548 复算，临时边界保留精度警示，待官方数据补齐后整体重算；v1.1 参照新加坡 URA 白色用地、LUSH 景观置换、PCN 连接网络与 ABC Waters 水敏设计完成自评审修订。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -49,13 +49,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 要素保障机制建议：土地上以留白用地为众智园预留战略弹性 [data:geometry/land_use.geojson#LU-040]；空间上以两带的中小尺度单元降低初创企业门槛；算力、数据与场景机制建议由运营主体以"场景开放清单+统一接口"方式组织。具体政策与资金安排属政府事权，本方案仅提出机制框架，不构成任何已确定的招商或财政承诺 [source:AGENT-TASKBOOK]。
 
+新加坡经验的机制转译（v1.1 自评审增补）：URA 总体规划以五年一轮滚动检讨维持"法定图则+容积率（GPR）"的确定性，同时用白色用地（White Site）在确定框架内保留用途弹性——开发者可在批准的用途组合与总量内自由调整办公、科研、商业、配套的比例，无需逐次修改规划 [source:SG-URA-MASTER-PLAN]。本方案建议把众智园东侧留白用地按白色用地机制运营：预设用途组合与总量上限，比例交给产业演化决定，使"留白"从消极等待升级为制度化弹性；该机制同时与 one-north、裕廊湖区的分期滚动出让经验衔接，避免一次性定型。此为机制建议，具体规则由政府与专业团队确定。
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计范围的城市设计以"缝合"为更新主题。用地布局沿绿轴对称展开：西带自南向北为商务、居住、研发、教育职能，东带为文化、商业、社区服务、场景验证与留白职能，全部 45 个单元的分类采用国家用地分类指南的项目子集 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]。复算的用地平衡为：科研用地约 291 万平方米、居住及社区服务合计约 237 万平方米、商业服务业约 152 万平方米、公园绿地约 157 万平方米、道路用地约 47 万平方米、广场用地约 18 万平方米，其余为文化、教育与留白 [metric:land_use_area_0802_sqm] [metric:green_ratio]。
 
 开发强度方面必须说明：批准的容积率、建筑密度、绿地率、退线等法定控制指标均未随公开资料发布，属"待正式数据补齐"事项 [depth:development_intensity_controls]。本方案不给出任何法定强度结论；建筑体量仅以 14 处概念示意组团表达空间意象（详见用地与建筑章节），其规模数据置信度标记为低 [metric:concept_total_floor_area_sqm]。建筑高度与风貌控制的概念性建议为：绿轴两侧第一界面以中低层为主、保持遗址公园的开敞天际线，地标建筑作为例外的垂直标志，具体高度须待航空、文保与景观约束确认后由专业团队确定 [depth:height_massing_character] [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
-风貌分区为南段"古钟新声"（文化商务）、中段"原点共生"（社区研发）、北段"众智开源"（园区加速）三段，以绿轴公共空间系统与"人字形"视觉母题统一。控规深度的衔接说明：本方案的用地剖分、指标口径与图则式表达按照控制性详细规划编制审批办法的深度要求组织，但因法定控制指标缺失，成果属于控规深度的城市设计研究，不构成控规调整建议 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+风貌分区为南段"古钟新声"（文化商务）、中段"原点共生"（社区研发）、北段"众智开源"（园区加速）三段，以绿轴公共空间系统与"人字形"视觉母题统一。
+
+高强度组团的绿量补偿参照新加坡 LUSH（高层建筑景观置换）计划（v1.1 增补）：14 处概念组团与地标建议按"景观置换面积不低于基地面积"的原则配置屋顶花园、空中平台与垂直绿化，使 13.8% 的地面绿地率在高强度段获得立体补偿，绿量随强度同步增长而非此消彼长 [source:SG-URA-LUSH]。两条智慧服务街两侧首层同时执行活力界面（active frontage）控制：连续骑楼或檐廊、透明店面与积极业态优先，禁止大面积实墙、机房与后勤界面朝街，确保从绿轴进入两带的步行体验不断裂。控规深度的衔接说明：本方案的用地剖分、指标口径与图则式表达按照控制性详细规划编制审批办法的深度要求组织，但因法定控制指标缺失，成果属于控规深度的城市设计研究，不构成控规调整建议 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ## 重点区域详细设计
 
@@ -108,11 +112,13 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 轨道衔接方面，走廊南端邻近西直门枢纽、沿线有既有轨道站点，SC-04 站城无感通行场景即布置于缝合段站点；具体线位与站点改造属工程事项，本方案仅提出接驳概念 [depth:traffic_rail_slow_parking]。停车策略建议：两带集中车库+服务街路内智慧泊位+绿轴禁机动车，比例与规模待控规条件确定后测算。
 
+慢行网络的全天候性与成网性参照新加坡经验（v1.1 增补）：一是风雨连廊——东西缝合街道与三处广场节点配置有盖步行连廊，与"人字形"遮荫廊架组件一体化设计，应对北京冬季寒风与夏季暴雨，保证绿轴到轨道站点的步行链路全天候可用；二是公园连接道（PCN）思路——六条缝合街道按公园连接道标准建设线性绿廊断面，使绿轴从"一条公园"升级为"连接网络"，向东衔接小月河滨水环线、向西衔接高校绿地 [source:SG-NPARKS-PCN]；三是 car-lite 取向——建议以停车配建上限（parking maximum）替代下限管理，泊位规模随轨道接驳与共享出行成熟逐步退坡，属机制建议、非法定标准。
+
 市政与新型基础设施采取"街道即管廊"策略：两条服务街预留综合管廊与算力网络通道，场景节点按统一接口标准预留供电与通信条件，避免每个场景各拉一套线 [depth:municipal_new_infrastructure]。公共服务设施依托社区服务用地与全龄服务中心布置，覆盖三个居住段的步行圈 [data:geometry/land_use.geojson#LU-024] [data:geometry/buildings.geojson#BLDG-009]。市政容量、能源负荷等专业测算不在本方案范围内，属待正式数据补齐事项。
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统以遗址公园绿轴为骨架：公园绿地约 157.4 万平方米，绿地占比约 13.8%，全部为可进入的线性公园而非隔离绿化 [metric:green_space_area_sqm] [metric:green_ratio] [depth:blue_green_public_space]。东侧小月河水系作为场景赋能翼的蓝色界面，建议以生态驳岸与滨水步道与绿轴形成环线；水系治理属专业工程，此处为概念衔接。
+蓝绿系统以遗址公园绿轴为骨架：公园绿地约 157.4 万平方米，绿地占比约 13.8%，全部为可进入的线性公园而非隔离绿化 [metric:green_space_area_sqm] [metric:green_ratio] [depth:blue_green_public_space]。东侧小月河水系作为场景赋能翼的蓝色界面，建议以生态驳岸与滨水步道与绿轴形成环线；水系治理属专业工程，此处为概念衔接。参照新加坡 ABC Waters（活力、美丽、洁净水计划）的水敏设计（v1.1 增补）：以生态驳岸替代硬质渠壁，绿轴与东带布置雨水花园、植草沟与滞留绿地，使公园绿地兼作雨洪调蓄通道，水质净化、生物栖息与亲水活动叠加在同一断面上，与海绵城市要求同向 [source:SG-PUB-ABC-WATERS]；具体水文水利参数属专业测算，此处为概念转译。
 
 公共空间系统由"三广场+两长廊"构成：三个广场节点合计约 17.5 万平方米，两段全龄慢行长廊示范段合计约 57.7 万平方米，公共空间占比约 6.6% [data:geometry/public_space.geojson#PUBLIC-004] [metric:public_space_ratio]。广场的公共空间组件库建议包含：人字形遮荫廊架、古钟声景装置、开源荣誉墙（滚动展示贡献者与开源项目，即任务书要求的荣誉展示体系）、可预约的露天路演台、AI伴行服务桩。组件均为标准化可复制单元，供三个广场与后续节点复用 [source:AGENT-TASKBOOK]。
 
@@ -158,5 +164,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 2. 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录，2026-05-18 [source:AGENT-TASKBOOK]
 3. 场地资料包（枚举、指标口径、schema、临时边界及其推定依据）[source:SITE-PACKAGE] [source:BOUNDARY-SOURCE]
 4. 《城市设计管理办法》《城市、镇控制性详细规划编制审批办法》《国土空间调查、规划、用途管制用地用海分类指南》等专业标准 [standard:MOHURD-URBAN-DESIGN-MEASURES]
+
+5. 新加坡规划机制参照（v1.1）：URA 总体规划与白色用地机制、LUSH 景观置换通告、NParks 公园连接道网络、PUB ABC Waters 计划，均为公开官方资料，仅作案例与机制参照，不构成本地法定依据 [source:SG-NPARKS-PCN] [source:SG-PUB-ABC-WATERS]
 
 国际案例（Station F、High Line、肯德尔广场、one-north、南山科技园、涩谷站城一体）仅作公开可查的机制参照，未使用其受版权保护的图文材料。
