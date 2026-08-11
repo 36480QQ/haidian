@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Generate the static proposal gallery data file.
 
-Participants should not edit `submissions-data.js` directly. Maintainers run
+Participants should not edit `submissions-data.js` directly. Every proposal
+directory merged into the main branch is included by default. Maintainers run
 this script after merging or updating submission packages so the static site can
-display all proposals from a single generated data source.
+display them from a single generated data source. `gallery-publication.json`
+remains an optional curation layer for homepage features or an explicit hold.
 """
 
 from __future__ import annotations
@@ -16,6 +18,7 @@ import re
 import sys
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 
 PUBLICATION_FILE = "gallery-publication.json"
@@ -214,6 +217,10 @@ def package_complete(submission_dir: Path) -> bool:
 
 
 def classify_submission(submission_dir: Path, manifest: Any) -> str:
+    # This is a display classification, not an independent attestation. A
+    # historical package may retain formal_review_ready for gallery continuity
+    # even when it predates the persisted-self-check contract; that label must
+    # not be presented as newly trusted formal evidence.
     rel = submission_dir.as_posix()
     stage = manifest.get("submission_stage") if isinstance(manifest, dict) else None
     if "formal-blocked" in rel or "blocked-draft" in rel:
@@ -261,23 +268,53 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
     proposal_html = submission_dir / "report" / "proposal.html"
     visual_html = submission_dir / "visual" / "index.html"
     proposal_url = (
-        f"{rel_dir}/report/proposal.html"
+        f"proposal-view.html?proposal={quote(rel_dir, safe='/')}"
         if proposal_html.exists()
         else f"{rel_dir}/proposal.md"
     )
     primary_language = front.get("language", "zh")
+    translation_language = "en" if primary_language == "zh" else "zh"
+    translation_md = submission_dir / f"proposal.{translation_language}.md"
+    translation_front = load_front_matter(translation_md) if translation_md.exists() else {}
     if primary_language == "en":
-        title_zh = front.get("title_zh") or front.get("title") or slug
+        title_zh = translation_front.get("title") or front.get("title_zh") or front.get("title") or slug
         title_en = front.get("title") or slug
-        summary_zh = front.get("summary_zh") or front.get("summary") or ""
+        summary_zh = translation_front.get("summary") or front.get("summary_zh") or front.get("summary") or ""
         summary_en = front.get("summary") or ""
     else:
         title_zh = front.get("title") or slug
-        title_en = front.get("title_en") or title_zh
+        title_en = translation_front.get("title") or front.get("title_en") or title_zh
         summary_zh = front.get("summary") or ""
-        summary_en = front.get("summary_en") or summary_zh
+        summary_en = translation_front.get("summary") or front.get("summary_en") or summary_zh
+
+    source_urls = {primary_language: f"{rel_dir}/proposal.md"}
+    proposal_urls = {primary_language: proposal_url}
+    visual_urls: dict[str, str] = {}
+    thumbnail_urls: dict[str, str] = {}
+    if proposal_html.exists():
+        thumbnail_urls[primary_language] = f"{rel_dir}/report/proposal.html"
+    elif visual_html.exists():
+        thumbnail_urls[primary_language] = f"{rel_dir}/visual/index.html"
+    if visual_html.exists():
+        visual_urls[primary_language] = f"{rel_dir}/visual/index.html"
+    if translation_md.exists():
+        source_urls[translation_language] = f"{rel_dir}/proposal.{translation_language}.md"
+        proposal_urls[translation_language] = source_urls[translation_language]
+    translated_report = submission_dir / "report" / f"proposal.{translation_language}.html"
+    if translated_report.exists():
+        url = f"{rel_dir}/report/proposal.{translation_language}.html"
+        proposal_urls[translation_language] = url
+        thumbnail_urls[translation_language] = url
+    translated_visual = submission_dir / "visual" / f"index.{translation_language}.html"
+    if translated_visual.exists():
+        url = f"{rel_dir}/visual/index.{translation_language}.html"
+        visual_urls[translation_language] = url
+        thumbnail_urls.setdefault(translation_language, url)
     item: dict[str, Any] = {
-        "id": slug,
+        # Slugs are participant-scoped and frequently repeat across authors.
+        # Use the repository-relative owner/slug pair as the public stable key.
+        "id": f"{owner}/{slug}",
+        "slug": slug,
         "title": title_zh,
         "titleEn": title_en,
         "summary": summary_zh,
@@ -285,6 +322,8 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
         "author": owner,
         "authorName": agent.get("agent_name") if isinstance(agent, dict) and agent.get("agent_name") else owner,
         "authorInitial": author_initial(owner),
+        "githubUrl": f"https://github.com/{quote(owner, safe='')}",
+        "avatarUrl": f"https://github.com/{quote(owner, safe='')}.png?size=96",
         "date": iso_date(manifest.get("generated_at") if isinstance(manifest, dict) else ""),
         "type": "ai",
         "status": status["status"],
@@ -293,16 +332,32 @@ def build_item(repo_root: Path, submission_dir: Path, publication: dict[str, Any
         "tags": status["tags"],
         "proposalUrl": proposal_url,
         "sourceUrl": f"{rel_dir}/proposal.md",
+        "proposalUrlZh": proposal_urls.get("zh", proposal_url),
+        "proposalUrlEn": proposal_urls.get("en", proposal_url),
+        "sourceUrlZh": source_urls.get("zh", f"{rel_dir}/proposal.md"),
+        "sourceUrlEn": source_urls.get("en", f"{rel_dir}/proposal.md"),
         "featured": bool(publication.get("featured", False)),
         "selectionReason": str(publication.get("selection_reason_zh", "")),
         "selectionReasonEn": str(publication.get("selection_reason_en", "")),
     }
+    cover_image = manifest.get("cover_image") if isinstance(manifest, dict) else None
+    if isinstance(cover_image, str) and cover_image.startswith("assets/media/"):
+        normalized_cover = cover_image.strip().replace("\\", "/")
+        pure_cover = Path(normalized_cover)
+        if not pure_cover.is_absolute() and ".." not in pure_cover.parts:
+            cover_path = submission_dir / normalized_cover
+            if cover_path.is_file() and cover_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}:
+                item["coverUrl"] = f"{rel_dir}/{normalized_cover}"
     if proposal_html.exists():
         item["thumbnailUrl"] = f"{rel_dir}/report/proposal.html"
     elif visual_html.exists():
         item["thumbnailUrl"] = f"{rel_dir}/visual/index.html"
     if visual_html.exists():
         item["visualUrl"] = f"{rel_dir}/visual/index.html"
+    item["thumbnailUrlZh"] = thumbnail_urls.get("zh", item.get("thumbnailUrl", ""))
+    item["thumbnailUrlEn"] = thumbnail_urls.get("en", item.get("thumbnailUrl", ""))
+    item["visualUrlZh"] = visual_urls.get("zh", item.get("visualUrl", ""))
+    item["visualUrlEn"] = visual_urls.get("en", item.get("visualUrl", ""))
     return item
 
 
@@ -397,8 +452,14 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
     items = []
     for path in discover_submissions(repo_root):
         rel = path.relative_to(repo_root).as_posix()
-        publication = registry.get(rel)
-        if publication and publication.get("published") is True:
+        publication = registry.get(rel, {})
+        # A merged proposal is public by default. A full registry entry with
+        # published=false is an explicit maintainer hold; published=true keeps
+        # the stricter package/version checks and may opt the item into the
+        # homepage feature set.
+        if publication and publication.get("published") is False:
+            continue
+        if publication.get("published") is True:
             manifest = read_json(path / "manifest.json")
             status_key = classify_submission(path, manifest)
             if status_key != "formal_review_ready":
@@ -406,8 +467,8 @@ def build_data(repo_root: Path) -> list[dict[str, Any]]:
                     f"{PUBLICATION_FILE}: cannot publish {rel} with generated status {status_key}; "
                     "repair and re-run the full maintainer review first"
                 )
-            items.append(build_item(repo_root, path, publication))
-    return sorted(items, key=lambda item: (item.get("date") or "", item.get("id") or ""), reverse=True)
+        items.append(build_item(repo_root, path, publication))
+    return sorted(items, key=lambda item: (item.get("date") or "", item.get("slug") or ""), reverse=True)
 
 
 def render_js(items: list[dict[str, Any]]) -> str:

@@ -391,6 +391,9 @@ def make_proposal(
 title: "{title}"
 author_github: "{author}"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "{summary_phrase}"
 tracks: {json.dumps(DEFAULT_TRACKS, ensure_ascii=False)}
@@ -405,13 +408,13 @@ scenarios: {json.dumps(DEFAULT_SCENARIOS, ensure_ascii=False)}
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据，并以 `brief/site-package/` 中{basis_phrase}为机器可读依据。AI agent 在生成方案前必须读取 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`，并用 `project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 建立任务、范围、资料用途和缺口清单。所有设计判断都要拆分为可追溯来源、可复算指标、可校验图层和可人工复核假设。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度，因此文本叙述不能替代 GeoJSON、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
 
-本节证据链引用 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis]，用于说明方案不是独立愿景文本，而是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织成果。
+方案不是独立愿景文本，而是从公告、面向智能体任务书和场地资料出发组织成果；本节只把最关键依据放在判断旁边 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]。完整来源和标准覆盖分别保存在 `sources.json`、`standard_matrix.json` 与 `design_depth_matrix.json`，不在正文重复机器索引。
 
-资料登记表的使用边界如下：
+资料登记表的使用边界如下 [source:SOURCE-REGISTRY]：
 
 {registry_lines}
 
-`data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源。[source:PROCESSED-FACT-PACK] 只帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；所有事实判断仍回到 [source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SOURCE-REGISTRY]、[source:BOUNDARY-SOURCE] 与 [source:KEY-AREA-SOURCE]。
+`data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。它帮助 agent 把三层范围、三处重点区、公告任务、agent.1-agent.6、资料可用性和缺资料事项组织成可读方案；事实判断仍需回到已登记的原始材料 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]，完整来源关系由 `sources.json` 保存。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 
@@ -419,7 +422,7 @@ scenarios: {json.dumps(DEFAULT_SCENARIOS, ensure_ascii=False)}
 
 本次脚手架生成的可评分状态为：**{boundary_readiness_zh}**。因此，正文中的空间结构、场景、项目和指标均按“可讨论、可复核、可替换官方边界后重算”的原则写入；当官方边界和重点区 polygon 更新后，agent 必须重新运行脚手架、自检和图纸/HTML生成，不能只替换单个文件。
 
-边界和重点区域的可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#{key_ref_1}] 和 [metric:site_area_sqm]、[metric:key_area_count]。这意味着读者可以从正文回到 GeoJSON 查看边界来源、从 metrics 查看面积复算结果、从 sources 查看资料来源，而不是只相信一段文字判断。
+边界解释可回到总体范围图层和面积复算 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#{key_ref_1}] [metric:key_area_count]。这意味着读者可以从正文进入证据，但不必先读一串机器编号。
 
 ## 三层范围工作框架
 
@@ -485,7 +488,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 用地分类依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]，建筑高度、体量、界面和风貌控制由 [depth:height_massing_character] 管理，拆改留方法由 [depth:retain_renovate_demolish] 管理。用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。
 
-建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应在指标体系中列为 unknown 或 pending_control，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
+建筑规模和强度指标必须与 `metrics.json` 和图层一致。若总建筑规模、容积率、建筑高度、建筑密度、绿地率、退线和建筑控制线缺少官方条件，应统一使用 `status=unknown`，并在 `reason` / `assumptions` 中说明待补条件、当前假设和正式数据到位后的复算路径，不得用固定数值制造精确感。A3 文册应给出更新项目清单和指标复核表，A0 展板应把关键空间结构和重点片区表达清楚，HTML 页面应提供指标和图层联动查看。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -501,7 +504,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 蓝绿空间方案应以京张遗址公园活力带为骨架，统筹清河、小月河、周边高校、企业、社区出行需求，提出南北贯通、东西连通的步道、骑行道和绿色空间体系。方案应识别慢行断点、上跨环路节点、公园南端和北端景观节点，提出停车、体育、创新交往、科技测试、应用展示和公共服务复合利用策略。
 
-蓝绿公共空间由 [depth:blue_green_public_space] 校核，核心证据为 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/public_space.geojson#PUBLIC-001]、[metric:green_ratio] 和 [metric:public_space_ratio]。城市设计管理办法要求统筹景观风貌、公共空间和建筑控制，因此本节同时引用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+蓝绿公共空间由设计深度项和绿地、公共空间图层共同校核 [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]。绿地与公共空间比例在正文解释设计意义，完整复算保存在 `metrics.json`；城市风貌、公共空间和建筑控制的统筹则回到专业标准矩阵 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 城市风貌方案应融合京张铁路历史文化、中关村创新文化和AI创新文化，利用清华园火车站、北影等文化资源，提出城市基调、建筑风貌、屋顶形态、体量、界面和公共艺术引导。agent 还应提出导视标识、文化符号、国际传播叙事、AI朝圣地标、贡献墙或荣誉展示体系，但所有品牌、字体、图像、肖像和企业标识都必须有清权来源。风貌控制应分清官方管控、设计建议和待确认条件，严禁在没有文保或控规依据时给出伪精确控制线。
 
@@ -519,7 +522,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
 
-指标复算深度由 [depth:metrics_recalculation] 管理。本方案正文显式引用 [metric:site_area_sqm]、[metric:key_area_count]、[metric:building_footprint_area_sqm]、[metric:green_ratio]、[metric:public_space_ratio]，并说明这些值来自 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#{key_ref_1}]、[data:geometry/buildings.geojson#BLDG-001]、[data:geometry/green_space.geojson#GREEN-001] 和 [data:geometry/public_space.geojson#PUBLIC-001]。
+指标复算遵循统一的设计深度要求 [depth:metrics_recalculation]。正文重点解释指标的设计含义，例如总体范围如何约束空间分配、蓝绿和公共空间比例如何支撑日常交往；完整数值、公式、来源文件和置信度保存在 `metrics.json`。示例关键指标可由总体范围和绿地数据复核 [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001]。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
@@ -529,9 +532,9 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ## 风险、版权与合规说明
 
-方案文件可使用中文或英文；英文为主语言时，必须在同一 `proposal.md` 中附完整中文正式译文，并设置双语元数据。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
+**要求双语言。** 方案主文件可使用中文或英文，但必须通过 `proposal.en.md` 或 `proposal.zh.md` 提供完整对照译文；A3/A0、HTML 和含文字图件也必须提供对应语言副本，并优先使用 `docs/terminology-glossary.md` 的赛事推荐译法。v2 包缺少任一必需译稿、语言映射或有效文件时，finalize 与 CI 会阻断提交。所有图片、图纸、图标、数据和代码资产必须在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不得加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不得跟踪评审者行为。
 
-风险和缺资料清单由 [depth:risk_missing_data] 管理，并与 [data:geometry/constraints.geojson#CONSTRAINTS]、[source:SITE-PACKAGE]、[source:PROCESSED-FACT-PACK] 和 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 相互校核。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项。
+风险和缺资料清单由风险深度项、约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口，必须进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都必须降级为待确认事项；完整专业核对保存在标准矩阵中。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。AI agent 对事实、来源、版权、空间数据、指标和表达负责；维护者和专业评审可依据自检结果、空间复核和合规矩阵要求返修或拒绝。
 
@@ -547,7 +550,8 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 - data/processed/agent_task_requirements.csv
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
+- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
+- 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
 """
 
 
@@ -902,6 +906,37 @@ def make_proposal_figures(metrics: dict[str, Any], boundary_mode: str, key_area_
 
 MINIMAL_PDF = b"%PDF-1.4\n1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n2 0 obj<</Type/Pages/Count 0>>endobj\ntrailer<</Root 1 0 R>>\n%%EOF\n"
 
+# Machine-readable declaration written into the generated (empty) constraints layer.
+# An empty constraint set stays a valid, accepted state; this member only records *why*
+# it is empty, so a deliberately empty layer is distinguishable from an unreviewed one.
+# It must never be used to justify inventing constraint geometry.
+CONSTRAINTS_SCAFFOLD_DATA_GAP = {
+    "status": "official_constraint_geometry_unavailable",
+    "declared_by": "scripts/scaffold_ai_submission.py",
+    "assumption_ids": ["A-CONTROLS-001"],
+    "missing_layers": [
+        "REGULATORY_CONTROL",
+        "HERITAGE_PROTECTION",
+        "PARCEL",
+        "EXISTING_PRIMARY_ROAD",
+        "EXISTING_RAIL",
+        "EXISTING_WATER",
+    ],
+    "note_zh": (
+        "本图层刻意保持空集合。控规控制线、文物保护范围与建设控制地带、道路红线、权属地块、"
+        "轨道与蓝线均属锁定图层，公开场地包中目前没有可引用的官方几何来源。"
+        "缺口按 assumption A-CONTROLS-001 登记；取得官方或已清权几何前，"
+        "不得以推定线条冒充 official_constraint，空集合优于编造。"
+    ),
+    "note_en": (
+        "This layer is intentionally an empty set. Regulatory control lines, heritage protection and "
+        "construction-control zones, road redlines, cadastral parcels, rail and blue lines are locked "
+        "layers with no citable official geometry in the public site package. The gap is registered as "
+        "assumption A-CONTROLS-001; until official or cleared geometry is available, inferred lines must "
+        "not be presented as an official_constraint - an empty set is preferred over fabrication."
+    ),
+}
+
 
 def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: str, agent_name: str, title: str) -> None:
     if stage not in STAGES:
@@ -958,7 +993,10 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
             "public_space_scaffold",
             [feature("PUBLIC-001", "PUBLIC_SPACE", public_geom, name_zh="公共活动界面")],
         ),
-        "constraints.geojson": collection("constraints_scaffold", []),
+        "constraints.geojson": {
+            **collection("constraints_scaffold", []),
+            "data_gap": dict(CONSTRAINTS_SCAFFOLD_DATA_GAP),
+        },
         "phasing.geojson": collection(
             "phasing_scaffold",
             [feature("PHASE-001", "PHASE", phase_geom, phase="phase_1", name_zh="一期可讨论范围")],
@@ -977,6 +1015,8 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
             "agent_name": agent_name,
             "role": "ai_agent_submission_author",
             "model": "agent-declared-model",
+            "model_family": "other",
+            "model_detail": "replace-with-declared-model",
             "generated_with": "scripts/scaffold_ai_submission.py",
         },
     )
@@ -1145,6 +1185,14 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
     manifest_files = []
     for rel_path, role, required in files:
         item = {"path": rel_path, "role": role, "required": required}
+        if rel_path in {
+            "proposal.md",
+            "report/proposal.html",
+            "drawings/a3-booklet.pdf",
+            "drawings/a0-boards.pdf",
+            "visual/index.html",
+        } or rel_path in proposal_figures:
+            item["language"] = "zh"
         if rel_path != "manifest.json":
             item["sha256"] = sha256(submission_dir / rel_path)
         manifest_files.append(item)
@@ -1163,6 +1211,8 @@ def make_package(submission_dir: Path, repo_root: Path, stage: str, agent_id: st
                 "agent_id": agent_id,
                 "agent_name": agent_name,
                 "model": "agent-declared-model",
+                "model_family": "other",
+                "model_detail": "replace-with-declared-model",
             },
             "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
             "files": manifest_files,

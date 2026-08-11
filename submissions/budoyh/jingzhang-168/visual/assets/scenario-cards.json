@@ -1,0 +1,1944 @@
+{
+  "protocol_version": "3.0.0",
+  "canonical_contract": {
+    "zh": "proposal.md",
+    "en": "proposal.en.md"
+  },
+  "disclosure": "All twelve services are tabletop-only and not authorized or run. Existing public paths stay open; performance_results are null.",
+  "defaults": {
+    "authority_status": "conceptual_role_not_authorized",
+    "geometry_status": "provisional_design_locator"
+  },
+  "scenario_locator_map": {
+    "SCN-01": "SCN-01-SYNTHETIC-DATA-CLINIC",
+    "SCN-02": "SCN-02-MODEL-RED-TEAM",
+    "SCN-03": "SCN-03-ROBOT-WINDOW",
+    "SCN-04": "SCN-04-EDGE-ENERGY-SANDBOX",
+    "SCN-05": "SCN-05-ENTERPRISE-COPILOT",
+    "SCN-06": "SCN-06-HEALTH-NAVIGATION",
+    "SCN-07": "SCN-07-ACCESSIBLE-WAYFINDING",
+    "SCN-08": "SCN-08-NIGHT-SCHOOL",
+    "SCN-09": "SCN-09-LAB-TIME-BANK",
+    "SCN-10": "SCN-10-HERITAGE-VOICE",
+    "SCN-11": "SCN-11-QUIET-STREET",
+    "SCN-12": "SCN-12-CITY-MODEL-ROOM"
+  },
+  "scenarios": [
+    {
+      "canonical_id": "SCN-01-SYNTHETIC-DATA-CLINIC",
+      "locator_id": "SCN-01",
+      "name_zh": "智能体互操作诊所",
+      "name_en": "Agent Interoperability Clinic",
+      "test_scenario": true,
+      "zone_id": "TZ-03-MODEL-VALIDATION",
+      "booking_segment_id": "BK-06-TEST-YARD",
+      "time_component_ids": [
+        "TC-02-HUMAN-GATE",
+        "TC-07-EVIDENCE-CLOCK"
+      ],
+      "proposer": "数据团队（提议角色；主体待确认）",
+      "affected_people": [
+        "模型与工具工程师",
+        "开源维护者",
+        "未来服务使用者"
+      ],
+      "nonparticipant_impact": [
+        "旁观者不得被采集",
+        "失败不得外溢到生产服务"
+      ],
+      "allowed": [
+        "合成任务",
+        "版本号",
+        "工具许可表",
+        "固定预期输出"
+      ],
+      "forbidden": [
+        "生产凭据",
+        "真实用户会话",
+        "未授权外部调用",
+        "商业秘密"
+      ],
+      "baseline": "人工工程师使用公开接口清单和纸面测试表逐项复核。",
+      "human": "DS / DHL / SASP registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "许可记录覆盖率100%；答复目标2工作日"
+      },
+      "stops": [
+        "出现生产凭据",
+        "工具越权",
+        "责任人缺席",
+        "隔离失效"
+      ],
+      "restore": "断开外部调用；回滚固定镜像；隔离并删除会话副本；签署复原回执",
+      "receipts": [
+        "准入单",
+        "调用轨迹摘要",
+        "越权测试单",
+        "复原回执"
+      ],
+      "review": "每两周及每次停止后",
+      "operator_role": "数据官签字；持有人与授权状态待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "合成任务",
+          "版本号",
+          "工具许可表",
+          "固定预期输出"
+        ],
+        "forbidden": [
+          "生产凭据",
+          "真实用户会话",
+          "未授权外部调用",
+          "商业秘密"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "人工工程师使用公开接口清单和纸面测试表逐项复核。"
+      },
+      "human_gate": {
+        "owner": "DS / DHL / SASP conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "DS",
+          "DHL",
+          "SASP"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "出现生产凭据",
+          "工具越权",
+          "责任人缺席",
+          "隔离失效"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "人工工程师使用公开接口清单和纸面测试表逐项复核。",
+        "restore_actions": [
+          "断开外部调用",
+          "回滚固定镜像",
+          "隔离并删除会话副本",
+          "签署复原回执"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "DS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "准入单",
+        "调用轨迹摘要",
+        "越权测试单",
+        "复原回执"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每两周及每次停止后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-001",
+      "operator_role_ids": [
+        "DS",
+        "DHL",
+        "SASP"
+      ],
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose": "用固定合成任务验证不同智能体的权限边界、工具调用和交接失败，不连接生产系统。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-02-MODEL-RED-TEAM",
+      "locator_id": "SCN-02",
+      "name_zh": "红队工棚与失败档案",
+      "name_en": "Red-Team Shed and Failure Archive",
+      "test_scenario": true,
+      "zone_id": "TZ-03-MODEL-VALIDATION",
+      "booking_segment_id": "BK-06-TEST-YARD",
+      "time_component_ids": [
+        "TC-05-RESET-MARK",
+        "TC-07-EVIDENCE-CLOCK"
+      ],
+      "proposer": "模型团队（提议角色；主体待确认）",
+      "affected_people": [
+        "测试人员",
+        "未来生产用户",
+        "独立评估者"
+      ],
+      "nonparticipant_impact": [
+        "不向公共网络传播载荷",
+        "失败记录不得识别个人"
+      ],
+      "allowed": [
+        "隔离样本",
+        "模型版本",
+        "测试类别",
+        "脱敏事件摘要"
+      ],
+      "forbidden": [
+        "可复用攻击载荷",
+        "生产端点",
+        "个人数据",
+        "安全凭据"
+      ],
+      "baseline": "人工红队按固定测试集和纸面事件分级表执行。",
+      "human": "DHL / SASP / IE registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "越界调用0；人工接管目标15分钟"
+      },
+      "stops": [
+        "越界调用",
+        "隔离失效",
+        "无法人工停机",
+        "事件等级不明"
+      ],
+      "restore": "物理断网；回滚镜像；封存证据；公开非敏感复盘",
+      "receipts": [
+        "运行单",
+        "事件单",
+        "停机时间戳",
+        "复盘卡"
+      ],
+      "review": "每次运行后",
+      "operator_role": "值班安全负责人停机；持有人待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "隔离样本",
+          "模型版本",
+          "测试类别",
+          "脱敏事件摘要"
+        ],
+        "forbidden": [
+          "可复用攻击载荷",
+          "生产端点",
+          "个人数据",
+          "安全凭据"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "人工红队按固定测试集和纸面事件分级表执行。"
+      },
+      "human_gate": {
+        "owner": "DHL / SASP / IE conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "DHL",
+          "SASP",
+          "IE"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "越界调用",
+          "隔离失效",
+          "无法人工停机",
+          "事件等级不明"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "人工红队按固定测试集和纸面事件分级表执行。",
+        "restore_actions": [
+          "物理断网",
+          "回滚镜像",
+          "封存证据",
+          "公开非敏感复盘"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "运行单",
+        "事件单",
+        "停机时间戳",
+        "复盘卡"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每次运行后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-001",
+      "operator_role_ids": [
+        "DHL",
+        "SASP",
+        "IE"
+      ],
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose": "在离线样本上演练提示注入、权限逃逸、错误交接和人工停机，并公开失败类型而非敏感载荷。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-03-ROBOT-WINDOW",
+      "locator_id": "SCN-03",
+      "name_zh": "四象限步行与低速机器人边界审计",
+      "name_en": "Four-Quadrant Walking and Robot-Boundary Audit",
+      "test_scenario": true,
+      "zone_id": "TZ-01-CITY-LOUNGE",
+      "booking_segment_id": "BK-02-CIVIC-SEAM",
+      "time_component_ids": [
+        "TC-05-RESET-MARK",
+        "TC-06-ACCESS-STOP"
+      ],
+      "proposer": "物流团队（提议角色；主体待确认）",
+      "affected_people": [
+        "行人",
+        "骑行者",
+        "轮椅使用者",
+        "照护者"
+      ],
+      "nonparticipant_impact": [
+        "不参与者仍可沿原路径通过",
+        "不以感知设备换取路权"
+      ],
+      "allowed": [
+        "匿名阻断点",
+        "时段",
+        "设施状态",
+        "天气"
+      ],
+      "forbidden": [
+        "人脸",
+        "连续轨迹",
+        "车牌",
+        "个人评分"
+      ],
+      "baseline": "纸面路线图、现场引导员和既有公共通道持续可用。",
+      "human": "AO / OPS / DHL registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "让行100%；停机目标60秒"
+      },
+      "stops": [
+        "公共净宽受阻",
+        "轮椅无法通过",
+        "导视误导",
+        "近失事件"
+      ],
+      "restore": "撤除临时设施；恢复原通道；人工引导；复核前后照片",
+      "receipts": [
+        "走查单",
+        "阻断清单",
+        "撤场照片",
+        "复核签字"
+      ],
+      "review": "每日及每次事件后",
+      "operator_role": "现场安全员拥有物理停机权；排班待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "匿名阻断点",
+          "时段",
+          "设施状态",
+          "天气"
+        ],
+        "forbidden": [
+          "人脸",
+          "连续轨迹",
+          "车牌",
+          "个人评分"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面路线图、现场引导员和既有公共通道持续可用。"
+      },
+      "human_gate": {
+        "owner": "AO / OPS / DHL conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "AO",
+          "OPS",
+          "DHL"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "公共净宽受阻",
+          "轮椅无法通过",
+          "导视误导",
+          "近失事件"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面路线图、现场引导员和既有公共通道持续可用。",
+        "restore_actions": [
+          "撤除临时设施",
+          "恢复原通道",
+          "人工引导",
+          "复核前后照片"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "走查单",
+        "阻断清单",
+        "撤场照片",
+        "复核签字"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每日及每次事件后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-003",
+      "operator_role_ids": [
+        "AO",
+        "OPS",
+        "DHL"
+      ],
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "mobility_safety_test",
+      "purpose": "先用人工走查记录站点四象限的过街、骑行停放、排队和轮椅连续性，再以空载低速设备演练让行和物理停机；不预设桥隧工程或永久机器人路权。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-04-EDGE-ENERGY-SANDBOX",
+      "locator_id": "SCN-04",
+      "name_zh": "端侧能耗与算力票据台",
+      "name_en": "Edge Energy and Compute Receipt Bench",
+      "test_scenario": true,
+      "zone_id": "TZ-03-MODEL-VALIDATION",
+      "booking_segment_id": "BK-05-TRANSFER-NORTH",
+      "time_component_ids": [
+        "TC-04-QUIET-EDGE",
+        "TC-05-RESET-MARK"
+      ],
+      "proposer": "设备团队（提议角色；主体待确认）",
+      "affected_people": [
+        "设备工程师",
+        "维护劳动者",
+        "邻近使用者"
+      ],
+      "nonparticipant_impact": [
+        "居民界面不承受热噪外溢",
+        "不将实验值包装为全生命周期绩效"
+      ],
+      "allowed": [
+        "任务版本",
+        "设备配置",
+        "聚合功耗",
+        "温度",
+        "噪声"
+      ],
+      "forbidden": [
+        "个人行为",
+        "未授权设备标识",
+        "生产工作负载",
+        "供应商宣传值"
+      ],
+      "baseline": "人工读表和本地固定测试脚本可在无云服务条件下完成。",
+      "human": "OPS / DHL / IE registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "热噪不越界；降载目标30分钟"
+      },
+      "stops": [
+        "热阈值越界",
+        "噪声扰民",
+        "测量链断裂",
+        "散热或消防条件不明"
+      ],
+      "restore": "断电冷却；移除设备；恢复静音界面；签署测量异常单",
+      "receipts": [
+        "任务版本卡",
+        "能耗票据",
+        "异常单",
+        "复原回执"
+      ],
+      "review": "每周及每次投诉后",
+      "operator_role": "设施工程师签发运行/降载/关机决定；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "任务版本",
+          "设备配置",
+          "聚合功耗",
+          "温度",
+          "噪声"
+        ],
+        "forbidden": [
+          "个人行为",
+          "未授权设备标识",
+          "生产工作负载",
+          "供应商宣传值"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "人工读表和本地固定测试脚本可在无云服务条件下完成。"
+      },
+      "human_gate": {
+        "owner": "OPS / DHL / IE conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "OPS",
+          "DHL",
+          "IE"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "热阈值越界",
+          "噪声扰民",
+          "测量链断裂",
+          "散热或消防条件不明"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "人工读表和本地固定测试脚本可在无云服务条件下完成。",
+        "restore_actions": [
+          "断电冷却",
+          "移除设备",
+          "恢复静音界面",
+          "签署测量异常单"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS",
+          "PA"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "任务版本卡",
+        "能耗票据",
+        "异常单",
+        "复原回执"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每周及每次投诉后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-03-MODEL-VALIDATION",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-001",
+      "operator_role_ids": [
+        "OPS",
+        "DHL",
+        "IE"
+      ],
+      "station_prototype_id": "STN-NORTH-VALIDATION-YARD",
+      "service_class": "industry_validation",
+      "purpose": "比较离线固定任务在不同端侧配置下的能耗、热、噪声和完成状态，输出版本化算力票据。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-05-ENTERPRISE-COPILOT",
+      "locator_id": "SCN-05",
+      "name_zh": "开源与知识产权转接台",
+      "name_en": "Open-Source and IP Transfer Desk",
+      "test_scenario": false,
+      "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "booking_segment_id": "BK-04-ORIGIN-HUB",
+      "time_component_ids": [
+        "TC-02-HUMAN-GATE",
+        "TC-07-EVIDENCE-CLOCK"
+      ],
+      "proposer": "创业者（用户角色）",
+      "affected_people": [
+        "科研团队",
+        "初创企业",
+        "开源维护者"
+      ],
+      "nonparticipant_impact": [
+        "不把机构规模或支付能力作为排队优先级"
+      ],
+      "allowed": [
+        "公开项目链接",
+        "许可证标识",
+        "问题摘要",
+        "授权状态"
+      ],
+      "forbidden": [
+        "未公开代码",
+        "商业秘密",
+        "个人身份材料",
+        "自动法律结论"
+      ],
+      "baseline": "纸面许可清单、公开资料目录和人工预约柜台。",
+      "human": "PA / OPS / DHL registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "引用可追溯100%；转人工目标10分钟"
+      },
+      "stops": [
+        "来源不明",
+        "许可冲突",
+        "系统输出被误作法律意见",
+        "人工转接缺席"
+      ],
+      "restore": "暂停自动答复；转人工专业渠道；下架不明材料；记录更正",
+      "receipts": [
+        "问题单",
+        "来源卡",
+        "人工转接回执",
+        "更正记录"
+      ],
+      "review": "每月及每次错误后",
+      "operator_role": "柜员逐条复核来源与答案；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "公开项目链接",
+          "许可证标识",
+          "问题摘要",
+          "授权状态"
+        ],
+        "forbidden": [
+          "未公开代码",
+          "商业秘密",
+          "个人身份材料",
+          "自动法律结论"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面许可清单、公开资料目录和人工预约柜台。"
+      },
+      "human_gate": {
+        "owner": "PA / OPS / DHL conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "PA",
+          "OPS",
+          "DHL"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "来源不明",
+          "许可冲突",
+          "系统输出被误作法律意见",
+          "人工转接缺席"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面许可清单、公开资料目录和人工预约柜台。",
+        "restore_actions": [
+          "暂停自动答复",
+          "转人工专业渠道",
+          "下架不明材料",
+          "记录更正"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "问题单",
+        "来源卡",
+        "人工转接回执",
+        "更正记录"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每月及每次错误后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-002",
+      "operator_role_ids": [
+        "PA",
+        "OPS",
+        "DHL"
+      ],
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose": "把模型、数据、代码和许可证问题转成可追踪问题单，由具备职责的人完成专业判断。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-06-HEALTH-NAVIGATION",
+      "locator_id": "SCN-06",
+      "name_zh": "公共服务材料导航",
+      "name_en": "Public-Service Document Navigator",
+      "test_scenario": false,
+      "zone_id": "TZ-01-CITY-LOUNGE",
+      "booking_segment_id": "BK-01-SOUTH-GATE",
+      "time_component_ids": [
+        "TC-02-HUMAN-GATE",
+        "TC-06-ACCESS-STOP"
+      ],
+      "proposer": "居民（用户角色）",
+      "affected_people": [
+        "老年访客",
+        "非中文使用者",
+        "无智能设备者",
+        "普通办事人"
+      ],
+      "nonparticipant_impact": [
+        "不参与数字服务者仍可完成信息查询"
+      ],
+      "allowed": [
+        "公开办事指南",
+        "用户主动选择的事项类别",
+        "临时排队号"
+      ],
+      "forbidden": [
+        "身份证影像",
+        "健康档案",
+        "自动资格评分",
+        "代办账号"
+      ],
+      "baseline": "纸面办事目录、电话和现场人工柜台。",
+      "human": "OPS / DHL / PA registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "诊断输出0；转人工目标5分钟"
+      },
+      "stops": [
+        "指南版本不明",
+        "系统试图判断资格",
+        "无法转人工",
+        "无手机路径失效"
+      ],
+      "restore": "切换静态目录；转人工柜台；删除临时会话；发布更正",
+      "receipts": [
+        "资料版本卡",
+        "转人工票",
+        "更正单",
+        "删除回执"
+      ],
+      "review": "每月及每次中止后",
+      "operator_role": "医务导航员负责解释和转接；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "公开办事指南",
+          "用户主动选择的事项类别",
+          "临时排队号"
+        ],
+        "forbidden": [
+          "身份证影像",
+          "健康档案",
+          "自动资格评分",
+          "代办账号"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面办事目录、电话和现场人工柜台。"
+      },
+      "human_gate": {
+        "owner": "OPS / DHL / PA conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "OPS",
+          "DHL",
+          "PA"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "指南版本不明",
+          "系统试图判断资格",
+          "无法转人工",
+          "无手机路径失效"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面办事目录、电话和现场人工柜台。",
+        "restore_actions": [
+          "切换静态目录",
+          "转人工柜台",
+          "删除临时会话",
+          "发布更正"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "资料版本卡",
+        "转人工票",
+        "更正单",
+        "删除回执"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每月及每次中止后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-003",
+      "operator_role_ids": [
+        "OPS",
+        "DHL",
+        "PA"
+      ],
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "everyday_service",
+      "purpose": "只解释公开办事材料和入口，不能判断资格、替代审批或代替专业人员。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-07-ACCESSIBLE-WAYFINDING",
+      "locator_id": "SCN-07",
+      "name_zh": "无障碍路径共审",
+      "name_en": "Accessible Route Co-Audit",
+      "test_scenario": false,
+      "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "booking_segment_id": "BK-03-TRANSFER-SOUTH",
+      "time_component_ids": [
+        "TC-02-HUMAN-GATE",
+        "TC-06-ACCESS-STOP"
+      ],
+      "proposer": "残障访客（用户角色）",
+      "affected_people": [
+        "轮椅使用者",
+        "视听障碍者",
+        "照护者",
+        "儿童家庭"
+      ],
+      "nonparticipant_impact": [
+        "共审不是给人贴标签；未参与者的通行同样优先"
+      ],
+      "allowed": [
+        "匿名障碍类型",
+        "位置编号",
+        "时段",
+        "处理状态"
+      ],
+      "forbidden": [
+        "残障身份档案",
+        "医疗信息",
+        "连续轨迹",
+        "未经同意影像"
+      ],
+      "baseline": "触觉/大字纸图、人工陪行和现场求助点。",
+      "human": "AO / NL / DHL registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "阻断上报核实目标30分钟"
+      },
+      "stops": [
+        "连续路线中断",
+        "求助点无人",
+        "替代路线不可达",
+        "投诉未受理"
+      ],
+      "restore": "恢复原通道；设置人工引导；撤除障碍；复走确认",
+      "receipts": [
+        "路线卡",
+        "障碍工单",
+        "复走记录",
+        "申诉回执"
+      ],
+      "review": "每周及每次障碍上报后",
+      "operator_role": "无障碍专员核实路线并可下线服务；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "匿名障碍类型",
+          "位置编号",
+          "时段",
+          "处理状态"
+        ],
+        "forbidden": [
+          "残障身份档案",
+          "医疗信息",
+          "连续轨迹",
+          "未经同意影像"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "触觉/大字纸图、人工陪行和现场求助点。"
+      },
+      "human_gate": {
+        "owner": "AO / NL / DHL conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "AO",
+          "NL",
+          "DHL"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "连续路线中断",
+          "求助点无人",
+          "替代路线不可达",
+          "投诉未受理"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "触觉/大字纸图、人工陪行和现场求助点。",
+        "restore_actions": [
+          "恢复原通道",
+          "设置人工引导",
+          "撤除障碍",
+          "复走确认"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "AO"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "路线卡",
+        "障碍工单",
+        "复走记录",
+        "申诉回执"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每周及每次障碍上报后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-002",
+      "operator_role_ids": [
+        "AO",
+        "NL",
+        "DHL"
+      ],
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "public_space_audit",
+      "purpose": "由残障使用者、照护者与无障碍负责人共同核验连续路线和停止点，AI仅整理匿名问题。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-08-NIGHT-SCHOOL",
+      "locator_id": "SCN-08",
+      "name_zh": "开源维护者夜校",
+      "name_en": "Open-Source Maintainer Night School",
+      "test_scenario": false,
+      "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "booking_segment_id": "BK-04-ORIGIN-HUB",
+      "time_component_ids": [
+        "TC-01-WEEK-BOARD",
+        "TC-03-TIME-BAY"
+      ],
+      "proposer": "学生与居民（用户角色）",
+      "affected_people": [
+        "学生",
+        "维护者",
+        "初创团队",
+        "周边居民"
+      ],
+      "nonparticipant_impact": [
+        "居民安宁和维护劳动不能为活动热度让位"
+      ],
+      "allowed": [
+        "公开议题",
+        "课程材料",
+        "自愿署名",
+        "问题状态"
+      ],
+      "forbidden": [
+        "学生画像",
+        "招聘筛选",
+        "未公开仓库",
+        "强制实名"
+      ],
+      "baseline": "纸面课程表、现场主持人和无需账号的旁听席。",
+      "human": "OPS / PTC / NL registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "无手机可报名；21:00完成清场"
+      },
+      "stops": [
+        "主持人缺席",
+        "材料权利不清",
+        "超出安静时段",
+        "无账号席位被取消"
+      ],
+      "restore": "停止直播；恢复普通公共使用；下架争议材料；补充版权记录",
+      "receipts": [
+        "课程单",
+        "材料权利卡",
+        "清场单",
+        "维护贡献记录"
+      ],
+      "review": "每期及每次暂停后",
+      "operator_role": "课程主持人控制容量与21:00清场；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "公开议题",
+          "课程材料",
+          "自愿署名",
+          "问题状态"
+        ],
+        "forbidden": [
+          "学生画像",
+          "招聘筛选",
+          "未公开仓库",
+          "强制实名"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面课程表、现场主持人和无需账号的旁听席。"
+      },
+      "human_gate": {
+        "owner": "OPS / PTC / NL conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "OPS",
+          "PTC",
+          "NL"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "主持人缺席",
+          "材料权利不清",
+          "超出安静时段",
+          "无账号席位被取消"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面课程表、现场主持人和无需账号的旁听席。",
+        "restore_actions": [
+          "停止直播",
+          "恢复普通公共使用",
+          "下架争议材料",
+          "补充版权记录"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "课程单",
+        "材料权利卡",
+        "清场单",
+        "维护贡献记录"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每期及每次暂停后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-002",
+      "operator_role_ids": [
+        "OPS",
+        "PTC",
+        "NL"
+      ],
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose": "以公开问题单、可复现示例和维护劳动署名连接高校、企业与社区，不建立人才评分。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-09-LAB-TIME-BANK",
+      "locator_id": "SCN-09",
+      "name_zh": "科研到公共服务翻译台",
+      "name_en": "Research-to-Civic-Service Translation Desk",
+      "test_scenario": false,
+      "zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "booking_segment_id": "BK-03-TRANSFER-SOUTH",
+      "time_component_ids": [
+        "TC-01-WEEK-BOARD",
+        "TC-02-HUMAN-GATE"
+      ],
+      "proposer": "研究者（用户角色）",
+      "affected_people": [
+        "科研人员",
+        "公共服务人员",
+        "社区代表"
+      ],
+      "nonparticipant_impact": [
+        "不得因技术可用就制造公共需求"
+      ],
+      "allowed": [
+        "公开成果摘要",
+        "问题单",
+        "适用边界",
+        "联系人角色"
+      ],
+      "forbidden": [
+        "未公开论文数据",
+        "个人需求画像",
+        "自动采购建议",
+        "夸大成熟度"
+      ],
+      "baseline": "人工问题访谈、纸面需求单和公开能力目录。",
+      "human": "PA / IE / PTC registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "预约冲突率目标<2%；确认目标1工作日"
+      },
+      "stops": [
+        "能力与问题不匹配",
+        "适用边界缺失",
+        "责任主体不明",
+        "公众影响未评估"
+      ],
+      "restore": "退回问题定义；标记unknown；停止排程；保留退回理由",
+      "receipts": [
+        "问题单",
+        "能力边界卡",
+        "退回单",
+        "复核记录"
+      ],
+      "review": "每周及每次冲突后",
+      "operator_role": "设备管理员核验资格、培训与维护签字；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "公开成果摘要",
+          "问题单",
+          "适用边界",
+          "联系人角色"
+        ],
+        "forbidden": [
+          "未公开论文数据",
+          "个人需求画像",
+          "自动采购建议",
+          "夸大成熟度"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "人工问题访谈、纸面需求单和公开能力目录。"
+      },
+      "human_gate": {
+        "owner": "PA / IE / PTC conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "PA",
+          "IE",
+          "PTC"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "能力与问题不匹配",
+          "适用边界缺失",
+          "责任主体不明",
+          "公众影响未评估"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "人工问题访谈、纸面需求单和公开能力目录。",
+        "restore_actions": [
+          "退回问题定义",
+          "标记unknown",
+          "停止排程",
+          "保留退回理由"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "问题单",
+        "能力边界卡",
+        "退回单",
+        "复核记录"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每周及每次冲突后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-02-KNOWLEDGE-TRANSFER",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-002",
+      "operator_role_ids": [
+        "PA",
+        "IE",
+        "PTC"
+      ],
+      "station_prototype_id": "STN-MIDDLE-OPEN-TRANSFER-HALL",
+      "service_class": "knowledge_transfer",
+      "purpose": "把科研能力翻译成具体公共问题、数据边界和最小试验，不把论文指标直接当城市绩效。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-10-HERITAGE-VOICE",
+      "locator_id": "SCN-10",
+      "name_zh": "京张记忆共读站",
+      "name_en": "Jingzhang Memory Co-Reading Station",
+      "test_scenario": false,
+      "zone_id": "TZ-01-CITY-LOUNGE",
+      "booking_segment_id": "BK-02-CIVIC-SEAM",
+      "time_component_ids": [
+        "TC-01-WEEK-BOARD",
+        "TC-07-EVIDENCE-CLOCK"
+      ],
+      "proposer": "公众（用户角色）",
+      "affected_people": [
+        "沿线居民",
+        "学生",
+        "铁路史研究者",
+        "访客"
+      ],
+      "nonparticipant_impact": [
+        "历史不是技术营销背景；非参与者可安静通过"
+      ],
+      "allowed": [
+        "清权史料",
+        "公开文物资料",
+        "自愿纠错",
+        "版本记录"
+      ],
+      "forbidden": [
+        "未授权肖像或声音",
+        "合成人物证言",
+        "来源不明旧照",
+        "官方背书暗示"
+      ],
+      "baseline": "纸面时间线、静态展签和现场讲解。",
+      "human": "OPS / NL / PA registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "授权记录100%；字幕覆盖100%"
+      },
+      "stops": [
+        "来源不明",
+        "文保边界冲突",
+        "合成内容被误作史实",
+        "静音模式缺失"
+      ],
+      "restore": "下架争议材料；恢复静态展签；登记纠错；重新清权",
+      "receipts": [
+        "来源卡",
+        "授权账",
+        "纠错单",
+        "版本牌"
+      ],
+      "review": "每季度及每次争议后",
+      "operator_role": "策展人核验授权并执行静音/撤件；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "清权史料",
+          "公开文物资料",
+          "自愿纠错",
+          "版本记录"
+        ],
+        "forbidden": [
+          "未授权肖像或声音",
+          "合成人物证言",
+          "来源不明旧照",
+          "官方背书暗示"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面时间线、静态展签和现场讲解。"
+      },
+      "human_gate": {
+        "owner": "OPS / NL / PA conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "OPS",
+          "NL",
+          "PA"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "来源不明",
+          "文保边界冲突",
+          "合成内容被误作史实",
+          "静音模式缺失"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面时间线、静态展签和现场讲解。",
+        "restore_actions": [
+          "下架争议材料",
+          "恢复静态展签",
+          "登记纠错",
+          "重新清权"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS",
+          "PA"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "来源卡",
+        "授权账",
+        "纠错单",
+        "版本牌"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每季度及每次争议后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-003",
+      "operator_role_ids": [
+        "OPS",
+        "NL",
+        "PA"
+      ],
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "heritage_public_culture",
+      "purpose": "用清权的时间线、工程测量与口述材料共同阅读京张历史，拒绝伪造声音和人物。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-11-QUIET-STREET",
+      "locator_id": "SCN-11",
+      "name_zh": "夜间安静与公共路径观察站",
+      "name_en": "Night Quiet and Public-Path Observatory",
+      "test_scenario": false,
+      "zone_id": "TZ-01-CITY-LOUNGE",
+      "booking_segment_id": "BK-02-CIVIC-SEAM",
+      "time_component_ids": [
+        "TC-04-QUIET-EDGE",
+        "TC-06-ACCESS-STOP"
+      ],
+      "proposer": "居民（用户角色）",
+      "affected_people": [
+        "居民",
+        "夜班劳动者",
+        "普通通行者",
+        "活动参与者"
+      ],
+      "nonparticipant_impact": [
+        "未参加活动的人拥有同等安静和通行权"
+      ],
+      "allowed": [
+        "聚合时段",
+        "匿名事件类型",
+        "设施状态",
+        "处理结果"
+      ],
+      "forbidden": [
+        "家庭画像",
+        "室内声音",
+        "连续设备标识",
+        "自动处罚"
+      ],
+      "baseline": "人工巡查、纸面投诉单和不依赖传感器的静态边界。",
+      "human": "NL / OPS / DHL registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "响应目标20分钟；自动处罚0"
+      },
+      "stops": [
+        "公共路径受阻",
+        "投诉无人处理",
+        "噪声或灯光越界",
+        "维护人员不足"
+      ],
+      "restore": "停止活动；撤除设备；恢复低照度和普通通行；人工回访",
+      "receipts": [
+        "巡查单",
+        "投诉回执",
+        "撤场单",
+        "回访记录"
+      ],
+      "review": "每周及每次冲突后",
+      "operator_role": "社区协调员决定调解与处置；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "聚合时段",
+          "匿名事件类型",
+          "设施状态",
+          "处理结果"
+        ],
+        "forbidden": [
+          "家庭画像",
+          "室内声音",
+          "连续设备标识",
+          "自动处罚"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "人工巡查、纸面投诉单和不依赖传感器的静态边界。"
+      },
+      "human_gate": {
+        "owner": "NL / OPS / DHL conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "NL",
+          "OPS",
+          "DHL"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "公共路径受阻",
+          "投诉无人处理",
+          "噪声或灯光越界",
+          "维护人员不足"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "人工巡查、纸面投诉单和不依赖传感器的静态边界。",
+        "restore_actions": [
+          "停止活动",
+          "撤除设备",
+          "恢复低照度和普通通行",
+          "人工回访"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "NL"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "巡查单",
+        "投诉回执",
+        "撤场单",
+        "回访记录"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每周及每次冲突后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-003",
+      "operator_role_ids": [
+        "NL",
+        "OPS",
+        "DHL"
+      ],
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "public_space_audit",
+      "purpose": "用人工巡查核验灯光、噪声、排队和临时设施是否侵占全天公共路径。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    },
+    {
+      "canonical_id": "SCN-12-CITY-MODEL-ROOM",
+      "locator_id": "SCN-12",
+      "name_zh": "消费智能体权限沙盒",
+      "name_en": "Consumer-Agent Permission Sandbox",
+      "test_scenario": false,
+      "zone_id": "TZ-01-CITY-LOUNGE",
+      "booking_segment_id": "BK-01-SOUTH-GATE",
+      "time_component_ids": [
+        "TC-01-WEEK-BOARD",
+        "TC-02-HUMAN-GATE",
+        "TC-07-EVIDENCE-CLOCK"
+      ],
+      "proposer": "公众（用户角色）",
+      "affected_people": [
+        "消费者",
+        "老年访客",
+        "低数字素养者",
+        "小商户"
+      ],
+      "nonparticipant_impact": [
+        "不参与沙盒者不被采集；不得影响真实交易或商户排序"
+      ],
+      "allowed": [
+        "合成商品",
+        "模拟预算",
+        "权限选项",
+        "撤回记录"
+      ],
+      "forbidden": [
+        "真实支付",
+        "账号密码",
+        "精准画像",
+        "未经确认下单"
+      ],
+      "baseline": "纸面选择比较表、人工消费者咨询和静态价格来源。",
+      "human": "DHL / DS / PTC registered conceptual roles; named persons pending",
+      "slo": {
+        "status": "proposed_target",
+        "target": "版本牌覆盖100%；申诉受理目标2工作日"
+      },
+      "stops": [
+        "请求真实凭据",
+        "绕过明确确认",
+        "无法撤回",
+        "来源或价格日期不明"
+      ],
+      "restore": "终止模拟会话；清空合成状态；恢复纸面比较；出具撤回回执",
+      "receipts": [
+        "权限票",
+        "确认轨迹",
+        "撤回回执",
+        "来源版本卡"
+      ],
+      "review": "每月及每次撤版后",
+      "operator_role": "模型馆员解释版本并受理申诉；主体待确认（概念职责，不声称已授权组织）",
+      "state": "proposed",
+      "state_guard": [
+        "C0-C7全部通过",
+        "具名值班人工负责人和资源已确认",
+        "非AI等价与物理停止通道已演练"
+      ],
+      "data_minimum": {
+        "allowed": [
+          "合成商品",
+          "模拟预算",
+          "权限选项",
+          "撤回记录"
+        ],
+        "forbidden": [
+          "真实支付",
+          "账号密码",
+          "精准画像",
+          "未经确认下单"
+        ],
+        "retention": "pending lawful-basis and operator confirmation",
+        "deletion_proof_required": true
+      },
+      "non_ai_baseline": {
+        "available": true,
+        "delivery": "纸面选择比较表、人工消费者咨询和静态价格来源。"
+      },
+      "human_gate": {
+        "owner": "DHL / DS / PTC conceptual roles; named persons pending",
+        "decision": "pending",
+        "record_required": true,
+        "appeal_channels": [
+          "onsite_human_counter",
+          "telephone",
+          "paper_form",
+          "accessible_web"
+        ],
+        "owner_role_ids": [
+          "DHL",
+          "DS",
+          "PTC"
+        ]
+      },
+      "capacity": null,
+      "budget_cny": null,
+      "stop_restore": {
+        "stop_triggers": [
+          "请求真实凭据",
+          "绕过明确确认",
+          "无法撤回",
+          "来源或价格日期不明"
+        ],
+        "stop_authority": [
+          "DHL",
+          "SASP",
+          "relevant human owner"
+        ],
+        "safe_state": "纸面选择比较表、人工消费者咨询和静态价格来源。",
+        "restore_actions": [
+          "终止模拟会话",
+          "清空合成状态",
+          "恢复纸面比较",
+          "出具撤回回执"
+        ],
+        "restart_authority": "SASP plus named duty safety lead after evidence review",
+        "stop_authority_role_ids": [
+          "DHL",
+          "SASP",
+          "OPS"
+        ],
+        "authority_channel": "accessible_public_stop_channel",
+        "restart_authority_role_ids": [
+          "SASP",
+          "DHL"
+        ]
+      },
+      "evidence_receipts": [
+        "权限票",
+        "确认轨迹",
+        "撤回回执",
+        "来源版本卡"
+      ],
+      "review_date": "pending",
+      "review_triggers": [
+        "每月及每次撤版后",
+        "any complaint",
+        "any stop"
+      ],
+      "booking_segment_parent_zone_id": "TZ-01-CITY-LOUNGE",
+      "zone_segment_relation": "within_primary_zone",
+      "key_area_id": "PROV-KEY-003",
+      "operator_role_ids": [
+        "DHL",
+        "DS",
+        "PTC"
+      ],
+      "station_prototype_id": "STN-SOUTH-CIVIC-TERMINAL",
+      "service_class": "everyday_service",
+      "purpose": "在模拟交易中展示智能体何时读取、推荐、请求确认和停止；不连接真实支付或账户。",
+      "service_status": "tabletop_only_not_authorized_not_run",
+      "performance_results": null,
+      "public_base_must_remain_open": true
+    }
+  ],
+  "spatial_contract": {
+    "booking_segment_key_area_map": {
+      "BK-01-SOUTH-GATE": "PROV-KEY-003",
+      "BK-02-CIVIC-SEAM": "PROV-KEY-003",
+      "BK-03-TRANSFER-SOUTH": "PROV-KEY-002",
+      "BK-04-ORIGIN-HUB": "PROV-KEY-002",
+      "BK-05-TRANSFER-NORTH": "PROV-KEY-001",
+      "BK-06-TEST-YARD": "PROV-KEY-001"
+    },
+    "key_area_scenario_distribution": {
+      "PROV-KEY-001": [
+        "SCN-01-SYNTHETIC-DATA-CLINIC",
+        "SCN-02-MODEL-RED-TEAM",
+        "SCN-04-EDGE-ENERGY-SANDBOX"
+      ],
+      "PROV-KEY-002": [
+        "SCN-05-ENTERPRISE-COPILOT",
+        "SCN-07-ACCESSIBLE-WAYFINDING",
+        "SCN-08-NIGHT-SCHOOL",
+        "SCN-09-LAB-TIME-BANK"
+      ],
+      "PROV-KEY-003": [
+        "SCN-03-ROBOT-WINDOW",
+        "SCN-06-HEALTH-NAVIGATION",
+        "SCN-10-HERITAGE-VOICE",
+        "SCN-11-QUIET-STREET",
+        "SCN-12-CITY-MODEL-ROOM"
+      ]
+    }
+  },
+  "role_registry_file": "governance-raci.json"
+}

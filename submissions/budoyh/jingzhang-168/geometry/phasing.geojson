@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "name": "jingzhang_168_phasing",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PHASE-01",
+      "properties": {
+        "id": "PHASE-01",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "phase-01",
+        "name_zh": "公共底盘与大钟寺首个168小时",
+        "name_en": "Civic Base and Dazhongsi First 168 Hours",
+        "horizon": "T0–T+12周；仅在G0–G4和对应C门通过后",
+        "gate": "official boundary, title, public-path baseline, accessibility, heritage, fire, named operator, staffed stop channel and restoration budget",
+        "protocol_ref": "visual/assets/civic-timetable.json",
+        "performance_results": null,
+        "permanent_construction_authorized": false,
+        "area_sqm_declared": 4229811.537
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34070000000001,
+              39.93899999999999
+            ],
+            [
+              116.3398754450381,
+              39.96868740162649
+            ],
+            [
+              116.35499829907123,
+              39.96877253619742
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.34070000000001,
+              39.93899999999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-02",
+      "properties": {
+        "id": "PHASE-02",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "phase-02",
+        "name_zh": "AI原点开放换乘厅与知识转接",
+        "name_en": "AI Origin Open Transfer Hall and Knowledge Transfer",
+        "horizon": "T+3–18月；以首周审计和专业交接结果为前提",
+        "gate": "official boundary, title, building survey, IP/data protocol, accessibility, fire, named operator, staffing and restoration budget",
+        "protocol_ref": "visual/assets/station-prototypes.json#STN-MIDDLE-OPEN-TRANSFER-HALL",
+        "performance_results": null,
+        "permanent_construction_authorized": false,
+        "area_sqm_declared": 3856939.077
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3533,
+              39.989999999999995
+            ],
+            [
+              116.35499829907123,
+              39.96877253619742
+            ],
+            [
+              116.3398754450381,
+              39.96868740162649
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3412139834596,
+              39.99846906536329
+            ],
+            [
+              116.35376776244367,
+              39.99853974415051
+            ],
+            [
+              116.3533,
+              39.989999999999995
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PHASE-03",
+      "properties": {
+        "id": "PHASE-03",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "phase": "phase-03",
+        "name_zh": "众智验证园与跨站联运",
+        "name_en": "Zhongzhi Validation Yard and Cross-Station Operation",
+        "horizon": "T+18月以后；仅在前两阶段形成公开复原与风险证据后",
+        "gate": "official boundary, title, ecology and flood review, utilities, fire, AI safety, insurance, named operator, independent evaluation and exit funding",
+        "protocol_ref": "visual/assets/station-prototypes.json#STN-NORTH-VALIDATION-YARD",
+        "performance_results": null,
+        "permanent_construction_authorized": false,
+        "area_sqm_declared": 3326074.771
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.35376776244367,
+              39.99853974415051
+            ],
+            [
+              116.3412139834596,
+              39.99846906536329
+            ],
+            [
+              116.34169999999999,
+              40.00600000000001
+            ],
+            [
+              116.34270000000001,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "accessed_date": "2026-06-03",
+  "accessed_date": "2026-08-07",
   "sources": [
     {
       "id": "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
@@ -37,6 +37,10 @@
       "publisher": "Repository maintainers",
       "published_date": "2026-06-05",
       "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "basis_note": "brief/site-package/geometry/provisional_boundaries_basis.md",
+      "derived_from": [
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+      ],
       "authority_level": "provisional",
       "topics": [
         "provisional_geometry",

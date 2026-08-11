@@ -1,0 +1,794 @@
+{
+  "schema_version": "0.1.0",
+  "provenance_note": "每条来源同时登记权威等级、采集方法、时空覆盖、许可状态、可用与不可用边界；凡涉及单位换算的均在 transformations 中写明原文表述、换算方法与入库值，凡属行政尺度背景事实的均在 observations 中标记 not_spatially_allocable=true，不进入 metrics.json，不改变任何几何、面积、线位或分期。",
+  "evidence_class_definitions": {
+    "task_authority": "界定任务、范围与成果深度的正式依据。",
+    "regulatory_baseline": "现行法律法规与规范性文件，用于校验本方案红线是否与法定义务一致；本方案只作合规对照，不作法律意见。",
+    "provisional_geometry": "临时几何，只支持生成、自检与比较，不得作为法定红线或精确面积依据。",
+    "background_only": "行政或城市尺度的公开统计事实，只用于校准设计问题与服务口径，不可空间分配、不可作为走廊绩效目标。",
+    "mechanism_reference": "境外机构公开材料，只提取组织机制，不移植绩效、土地制度或治理安排。",
+    "build_toolchain": "生成本包成果所使用的软件与字体本身。登记它们是为了让权利与可复现性可被独立核验，而不是把它们当作设计依据。"
+  },
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "evidence_class": "task_authority",
+      "authority_level": "A0",
+      "title": "百年京张AI创新带公开场地资料包",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "直接读取仓库内已清权的场地资料包目录，逐个文件解析 JSON/GeoJSON schema 与枚举。",
+      "spatial_coverage": "统筹研究范围、总体设计范围与三处重点区域",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "仓库内公开发布，供本次开源征集使用。",
+      "usage": "任务边界、允许设计空间、枚举、指标范围与模式校验。",
+      "usable_for": [
+        "确定允许的几何文件集合、用地枚举与指标口径",
+        "校验成果结构是否满足 formal 级要求"
+      ],
+      "not_usable_for": [
+        "替代官方红线、控规、权属或工程底图",
+        "推断现状建筑、市政容量或交通量"
+      ],
+      "limitations": "资料包明确缺少多项法定与工程底图。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "user_provided_cleared",
+      "evidence_class": "task_authority",
+      "authority_level": "A1",
+      "title": "公开资料使用登记",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取仓库登记表，按 source_type 分类核对本包引用的每一条资料。",
+      "spatial_coverage": "不适用（元数据）",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "仓库内公开发布。",
+      "usage": "区分正式可用、背景、临时与待审核资料。",
+      "usable_for": [
+        "判断某项资料能否进入正式依据",
+        "核对本包 sources.json 与仓库登记是否一致"
+      ],
+      "not_usable_for": [
+        "赋予被登记内容以法定效力",
+        "替代原始发布机构的授权条款"
+      ],
+      "limitations": "登记不等同于内容的法定效力。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "user_provided_cleared",
+      "evidence_class": "task_authority",
+      "authority_level": "A2",
+      "title": "智能体事实导航包",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "作为阅读导航使用；凡需引用的事实一律回到公告或资料包原文复核，不以导航层为最终依据。",
+      "spatial_coverage": "不适用（导航层）",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "仓库内公开发布。",
+      "usage": "任务、范围、资料缺口的机器可读导航。",
+      "usable_for": [
+        "快速定位任务条目与资料缺口"
+      ],
+      "not_usable_for": [
+        "作为新增权威事实的出处",
+        "替代公告或标准原文"
+      ],
+      "limitations": "处理层不是新增权威来源。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "evidence_class": "provisional_geometry",
+      "authority_level": "B0",
+      "title": "临时范围几何",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取仓库 provisional_boundaries.geojson，在 EPSG:4548 中复算面积并与公告文字量级交叉核对。",
+      "spatial_coverage": "总体设计范围（临时）",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "仓库内公开发布；标记 official_boundary=false。",
+      "usage": "总体设计范围的临时计算基底。",
+      "transformations": [
+        {
+          "field": "site_area_sqm",
+          "source_value": "公告文字表述“约11.4平方公里”",
+          "method": "以临时多边形在 EPSG:4548 中计算面积，仅用于量级交叉核对，不反推公告数值",
+          "stored_value": 11412825.386,
+          "stored_unit": "square_meter"
+        }
+      ],
+      "usable_for": [
+        "方案生成、拓扑自检、相对关系比较与离线展示"
+      ],
+      "not_usable_for": [
+        "官方红线、精确面积、地块权属或审批依据"
+      ],
+      "limitations": "official_boundary=false；不得作为法定红线。",
+      "registry_source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "registry_authority_level": "PROVISIONAL_REPOSITORY",
+      "registry_review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "evidence_class": "provisional_geometry",
+      "authority_level": "B0",
+      "title": "三处重点区域临时几何",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取仓库临时重点区多边形，逐个在 EPSG:4548 复算面积并检查是否落在总体范围内。",
+      "spatial_coverage": "众智园、AI原点社区、大钟寺（临时）",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "仓库内公开发布；标记 official_boundary=false。",
+      "usage": "重点区域设计的临时定位与面积检查。",
+      "usable_for": [
+        "重点区域的相对位置、面积量级与详细设计工作底图"
+      ],
+      "not_usable_for": [
+        "重点区域的法定边界、拆改留结论或权属判断"
+      ],
+      "limitations": "official_boundary=false；须由正式边界替换。",
+      "registry_source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "registry_authority_level": "PROVISIONAL_REPOSITORY",
+      "registry_review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "evidence_class": "task_authority",
+      "authority_level": "A0",
+      "title": "百年京张AI创新带城市设计开源征集公告",
+      "publisher": "北京市规划和自然资源委员会",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "按公告章节逐条对照 1.3、1.4、1.5 的任务要求，逐项落入 compliance_matrix.json。",
+      "spatial_coverage": "统筹研究范围 43.6 平方公里、总体设计范围约 11.4 平方公里",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "政府网站公开发布的征集公告。",
+      "usage": "项目目标、三层范围、重点区域与成果要求。",
+      "usable_for": [
+        "任务条目、范围文字、约面积、成果深度与图纸要求"
+      ],
+      "not_usable_for": [
+        "精确 polygon、控规指标、工程条件或审批结论"
+      ],
+      "limitations": "网页公告不包含完整法定附件几何。",
+      "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "registry_authority_level": "A0",
+      "registry_review_status": "approved",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "evidence_class": "task_authority",
+      "authority_level": "A1",
+      "title": "面向全球智能体任务书摘录",
+      "publisher": "open-city-ai/haidian",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "逐条读取 required_agent_tasks 的 required_outputs 与共创宪章条款，与本包成果做缺项审计。",
+      "spatial_coverage": "全带",
+      "temporal_coverage": "2026 年征集周期",
+      "license_or_reuse_terms": "用户提供且已清权的任务摘录。",
+      "usage": "六项智能体任务、场景、品牌、文化与运营要求。",
+      "usable_for": [
+        "智能体任务清单、场景数量、品牌与运营要求"
+      ],
+      "not_usable_for": [
+        "法定规划、政府行动或投资承诺"
+      ],
+      "limitations": "是清权任务摘录，正式审定仍归人类专业团队。",
+      "registry_source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "registry_authority_level": "CLEARED_USER_DOCUMENT",
+      "registry_review_status": "approved",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "FONT-NOTO-SERIF-SC",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "Noto Serif SC（四套 PDF 实际嵌入的中文字体）",
+      "publisher": "Google / Adobe，noto-cjk 项目",
+      "source_locator": "https://github.com/notofonts/noto-cjk/raw/main/Serif/Variable/TTF/Subset/NotoSerifSC-VF.ttf",
+      "retrieved_at": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "collection_method": "从 noto-cjk 官方仓库取可变字重 TTF（sha256 5326cfb097e3ab26fcb39329752b5c0a439bf8d5c4649520e4b492939c352a09，25,125,232 字节，Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0），用 fontTools 4.60.1 的 varLib.instancer 固定 wght=400→300 得到静态实例 Noto Serif SC Light（sha256 f1fa5614fbf9f9508b181cdc193ed153b350de012a7442e8b6c5b7428643aae5），再由 Ghostscript 10.07.0 经 cidfmap 指定为 GB1 字符集的字体程序、以子集方式嵌入四套 PDF。许可字段直接读自字体 name 表 nameID 13/14，不引用二手说法。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "SIL Open Font License 1.1（字体 name 表 nameID 13 自述，nameID 14 指向 http://scripts.sil.org/OFL）。OFL 明确允许在文档中嵌入字体子集并随文档再分发，因此本包可承载该字体的嵌入与传播。",
+      "usage": "四套图纸 PDF 中全部中文字形的字体程序。",
+      "usable_for": [
+        "证明四套 PDF 的中文字形来自一款许可可核验、允许嵌入与再分发的开源字体",
+        "支持用 `pdffonts` 复核嵌入状态（应为 <子集前缀>+NotoSerifSC、CID TrueType、emb=yes）"
+      ],
+      "not_usable_for": [
+        "主张对该字体的任何权利",
+        "证明拉丁字形的来源（拉丁字形见 FONT-PDF-BASE14）",
+        "证明图件 PNG 的字形来源（PNG 字形见 FONT-STHEITI-RASTER）"
+      ],
+      "limitations": "PDF 内容流沿用原有排版，仅替换字体程序；字体名对象已同步由 STSong-Light 改为 NotoSerifSC，使文件自述与实际嵌入字形一致。字体文件本身不随包提交（投稿目录不接受 .ttf 扩展名），凭上述 URL 与 sha256 可独立取得并复核。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "FONT-PDF-BASE14",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "PDF 内置基础字体（Helvetica 家族与 ZapfDingbats）",
+      "publisher": "PDF 规范内置基础十四款字体",
+      "retrieved_at": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "collection_method": "由 reportlab 以标准字体名引用；用 `pdffonts` 对四套 PDF 逐一核验，结果为 type=Type 1、encoding=WinAnsi（ZapfDingbats 为 ZapfDingbats 编码）、emb=no。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "PDF 规范规定的基础十四款字体，按字体名引用，不在文件中嵌入或再分发任何字体文件，因此本包不承载这部分字体的授权义务。",
+      "usage": "图纸中全部拉丁文字（页眉编号、页脚、英文标签）。",
+      "usable_for": [
+        "证明拉丁文字与符号的排版不依赖任何需授权的第三方字体文件",
+        "说明四套 PDF 中剩余 emb=no 条目的性质"
+      ],
+      "not_usable_for": [
+        "证明 CJK 字形的来源",
+        "证明打印效果或字距在任意阅读器中一致"
+      ],
+      "limitations": "emb=no 意味着字形由阅读器提供。与中文字体不同，基础十四款字体是 PDF 规范要求符合规范的阅读器自行提供的，因此不构成显示风险；本包选择不嵌入其替代实现，以免在文件中以 Helvetica 之名承载另一铸字厂的字形。不同阅读器的度量差异可能造成拉丁文字的轻微字距差别。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "FONT-ADOBE-CID",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "Adobe CMap 资源 UniGB-UCS2-H 与 Adobe-GB1 字符集（仅作编码，不再引用字体程序）",
+      "publisher": "Adobe CMap 资源与字符集定义",
+      "retrieved_at": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "collection_method": "四套 PDF 的 Type0 字体沿用 Adobe 预定义 CMap `UniGB-UCS2-H` 与 `/CIDSystemInfo /Registry (Adobe) /Ordering (GB1)` 作为编码与字符集；字体程序已改为嵌入的 Noto Serif SC（见 FONT-NOTO-SERIF-SC）。用 `pdffonts` 逐套核验，结果为 CID TrueType、encoding=UniGB-UCS2-H、emb=yes。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "仅使用 CMap 的编码映射与字符集编号，不嵌入、不再分发 Adobe 字体文件；v1.10 及更早版本按名引用 STSong-Light 且不嵌入，自本版起不再依赖该引用。",
+      "usage": "四套图纸 PDF 中文文字的字符编码与字符集声明。",
+      "usable_for": [
+        "说明中文文字采用哪一套 CMap 编码与字符集"
+      ],
+      "not_usable_for": [
+        "证明中文字形的来源（字形来源见 FONT-NOTO-SERIF-SC）",
+        "主张对 Adobe CMap 资源的任何权利"
+      ],
+      "limitations": "本条自 v1.11 起由「字体来源」降为「编码声明」。v1.10 及更早版本此处记录的是「以标准 CID 字体名引用、emb=no」的状态，该状态已被本版的嵌入方案取代。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "FONT-STHEITI-RASTER",
+      "source_type": "standard_resource",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "macOS 系统字体 STHeiti Medium.ttc（仅用于栅格图件）",
+      "publisher": "随 macOS 分发的系统字体",
+      "retrieved_at": "2026-08-09",
+      "accessed_date": "2026-08-09",
+      "collection_method": "Pillow 在本机以系统字体路径加载并直接栅格化为 PNG 像素；生成物为字形图像，包内不含 .ttc/.ttf 文件。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "仅在本机渲染阶段使用，输出为栅格像素；未复制、未嵌入、未再分发字体文件本身。",
+      "usage": "assets/figures/ 下全部 PNG 图件的文字。",
+      "usable_for": [
+        "说明图件文字的渲染来源"
+      ],
+      "not_usable_for": [
+        "主张对该字体的任何权利",
+        "在其他机器上复现完全一致的字形"
+      ],
+      "limitations": "在未安装该字体的机器上重跑生成脚本会得到不同字形；图件因此按当前栅格产物归档，而非按运行时重绘。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "TOOLCHAIN-BUILD",
+      "source_type": "agent_generated",
+      "evidence_class": "build_toolchain",
+      "authority_level": "T0",
+      "title": "本包成果的生成工具链与依赖许可",
+      "publisher": "本投稿自制",
+      "retrieved_at": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "collection_method": "Python 依赖逐个读取其自身分发元数据（importlib.metadata）取版本与许可；命令行工具取 `--version` 自述，均不引用二手说法。",
+      "spatial_coverage": "不适用",
+      "temporal_coverage": "不适用",
+      "license_or_reuse_terms": "Python 3.12.13（PSF）；reportlab 4.4.3（BSD）；Pillow 12.3.0（MIT-CMU）；shapely 2.1.2（BSD 3-Clause）；pyproj 3.7.2（MIT）；fontTools 4.60.1（MIT）；qpdf 12.3.2（Apache-2.0）；PyMuPDF 1.27.2.3（AGPL-3.0 或 Artifex 商业许可，二选一）；Ghostscript 10.07.0（AGPL-3.0）。",
+      "usage": "几何复算、指标复算、图件栅格渲染、PDF 排版与页脚重刷，以及本版新增的中文字体嵌入（Ghostscript 按 cidfmap 替换字体程序）与字体名订正（qpdf）。",
+      "usable_for": [
+        "核验成果由哪些工具生成及各自许可",
+        "判断是否存在需随成果传播的许可义务"
+      ],
+      "not_usable_for": [
+        "证明生成脚本本身已随包提交",
+        "证明在他机可逐字节复现"
+      ],
+      "limitations": "PyMuPDF 与 Ghostscript 均为 AGPL（PyMuPDF 另有商业许可可选）。二者在本包中**仅作为构建工具在本机运行**：未分发其源码或二进制，未将其代码链接进任何交付物，生成的 PDF 是工具的输出而非其衍生作品，因此不随成果传播 AGPL 义务。嵌入 PDF 的字体子集来自 OFL-1.1 的 Noto Serif SC，不来自任何 AGPL 组件。生成脚本目前不在包内，因此本包不主张逐字节可复现，只主张几何与指标可由 metrics.json 的公式与源文件独立复算。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "not_a_factual_source",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "HAIDIAN-2025-STATISTICAL-BULLETIN",
+      "url": "https://zyk.bjhd.gov.cn/sjkf/tjgb/202604/t20260410_4811526.shtml",
+      "source_type": "official_public",
+      "evidence_class": "background_only",
+      "authority_level": "A0",
+      "title": "海淀区2025年国民经济和社会发展统计公报",
+      "publisher": "海淀统计局队",
+      "published_date": "2026-04-10",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "2026-08-08 打开区政府数据开放栏目公开 HTML，按正文“科技”“人口”“卫生”“综合”段逐项人工转录，数值与原文表述逐字核对。",
+      "source_locator": "正文“综合”“科技”“人口”“卫生”段",
+      "statistical_scope": "北京市海淀区 2025 年度行政统计",
+      "spatial_coverage": "北京市海淀区行政区（远大于本方案 43.6 平方公里统筹研究范围）",
+      "temporal_coverage": "2025-01-01/2025-12-31",
+      "public_access_status": "official_public_html",
+      "license_or_reuse_terms": "页面公开可访问，未见明确开放数据许可；本包仅摘录事实数值并保留发布者、标题与原始链接，不复制页面全文、不再分发附件。",
+      "usage": "校准本方案的产业接口、公共服务接口与指标口径讨论；不进入 metrics.json。",
+      "transformations": [
+        {
+          "field": "haidian_technology_contracts_2025",
+          "source_value": "全年登记技术合同5.79万项",
+          "method": "5.79 × 10000",
+          "stored_value": 57900,
+          "stored_unit": "count"
+        },
+        {
+          "field": "haidian_technology_contract_value_2025",
+          "source_value": "技术合同成交总额4053.1亿元",
+          "method": "保留原文“亿元”计量单位，不折算为元，避免无痕换算",
+          "stored_value": 4053.1,
+          "stored_unit": "100_million_cny"
+        },
+        {
+          "field": "haidian_permanent_population_2025",
+          "source_value": "年末全区常住人口311.1万人",
+          "method": "311.1 × 10000",
+          "stored_value": 3111000,
+          "stored_unit": "person"
+        }
+      ],
+      "observations": [
+        {
+          "id": "haidian_registered_large_models_2025",
+          "value": 123,
+          "unit": "count",
+          "scope": "海淀区",
+          "source_text": "备案上线大模型123款，占北京全市60%",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_national_key_labs_2025",
+          "value": 92,
+          "unit": "count",
+          "scope": "海淀区",
+          "source_text": "截至年末，在区全国重点实验室92家，占全市的63.4%、全国的17.9%",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_high_value_invention_patents_per_10000_2025",
+          "value": 599,
+          "unit": "count_per_10000_people",
+          "scope": "海淀区",
+          "source_text": "每万人口高价值发明专利拥有量599件，较上年增加约59件",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_technology_contracts_2025",
+          "value": 57900,
+          "unit": "count",
+          "scope": "海淀区",
+          "source_text": "全年登记技术合同5.79万项",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_technology_contract_value_2025",
+          "value": 4053.1,
+          "unit": "100_million_cny",
+          "scope": "海淀区",
+          "source_text": "技术合同成交总额4053.1亿元",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_permanent_population_2025",
+          "value": 3111000,
+          "unit": "person",
+          "scope": "海淀区",
+          "source_text": "年末全区常住人口311.1万人，比上年末减少1.1万人",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_health_institutions_2025",
+          "value": 1456,
+          "unit": "count",
+          "scope": "海淀区",
+          "source_text": "全区共有医疗卫生机构1456个",
+          "not_spatially_allocable": true
+        },
+        {
+          "id": "haidian_community_health_centers_stations_2025",
+          "value": 239,
+          "unit": "count",
+          "scope": "海淀区",
+          "source_text": "其中，医院110个，社区卫生服务中心（站）239个",
+          "not_spatially_allocable": true
+        }
+      ],
+      "cross_check_note": "“备案上线大模型123款”与《生成式人工智能服务管理暂行办法》的备案制度互为印证，说明本带面对的是已进入备案与安全评估流程的真实服务，而不是抽象的模型概念；但公报未给出这些模型的责任主体位置、服务落点或运行状态，因此不能据此推断走廊内的企业分布或算力需求。",
+      "usable_for": [
+        "说明本带所处的区级创新资源与公共服务量级",
+        "把“泛AI园区”的目标收敛为验证、备案、转化与公共服务接口",
+        "论证“无AI等价服务”必须覆盖既有社区卫生服务网络"
+      ],
+      "not_usable_for": [
+        "推断京张走廊内的企业、人才、客流、设施容量或绩效",
+        "作为本方案任何空间指标、分期目标或试点绩效值",
+        "与其他行政区作排名或因果比较"
+      ],
+      "limitations": "统计口径为海淀全区，远大于本方案范围；公报未提供空间分布，也未提供人工智能企业数或独角兽企业数。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "GENERATIVE-AI-INTERIM-MEASURES",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "source_type": "official_public",
+      "evidence_class": "regulatory_baseline",
+      "authority_level": "A0",
+      "title": "生成式人工智能服务管理暂行办法",
+      "publisher": "国家互联网信息办公室等七部门",
+      "published_date": "2023-07-13",
+      "effective_date": "2023-08-15",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "在国家互联网信息办公室官网读取规章全文，逐条摘取三条条款各自的适用对象与实际效果，用于区分法定底线与本方案自设标准。",
+      "source_locator": "第十四条、第十五条、第十七条",
+      "spatial_coverage": "中华人民共和国境内",
+      "temporal_coverage": "2023-08-15 起施行",
+      "license_or_reuse_terms": "国家机关公开发布的规章，依法公开；本包只引用条款要义并注明条号，不复制全文。",
+      "usage": "记录第十四、十五、十七条各自的适用对象与实际效果，用于在合规基线表中把法定底线与本方案自设标准逐行分列。本方案的“可停用、可投诉、可退出”并非整体由该办法要求。",
+      "observations": [
+        {
+          "id": "genai_measures_effective_date",
+          "value": "2023-08-15",
+          "unit": "date",
+          "scope": "全国",
+          "source_text": "本办法自2023年8月15日起施行",
+          "not_spatially_allocable": true
+        }
+      ],
+      "cross_check_note": "三条条款的实际效果各不相同，不可合并成一条通则：第十四条是**发现违法内容时**的处置义务（停止生成、停止传输、消除等），不构成面向一般用户的停用权；第十五条要求建立投诉举报机制、设置便捷入口并**公布**处理流程和反馈时限，未规定具体数值时限；第十七条只适用于**具有舆论属性或社会动员能力的**服务。因此，本方案的接管亭物理停用入口、非违法情形下的常设停用入口、具体空间载体与任何数值时限，均为本方案自设的公共服务标准，不是上述条款的要求；合规基线表已按此逐行分列。",
+      "usable_for": [
+        "引用第十四条“发现违法内容时应及时停止生成、停止传输、消除”的处置义务本身",
+        "引用第十五条“应建立投诉举报机制、设置便捷入口并公布处理流程和反馈时限”的义务本身",
+        "引用第十七条对具有舆论属性或社会动员能力的服务的安全评估要求本身",
+        "作为合规基线表中“法定依据与其实际效果”一列的出处"
+      ],
+      "not_usable_for": [
+        "作为法律意见或合规结论",
+        "推断具体服务是否已完成备案或安全评估",
+        "替代主管部门对个案的认定",
+        "由第十四条推出面向一般用户的停用权或退出权",
+        "由第十五条推出任何具体数值的响应时限",
+        "把第十七条的安全评估要求适用于不具备舆论属性或社会动员能力的服务",
+        "把该办法推广到全部AI应用、城市设计项目或非生成式系统",
+        "论证接管亭的物理停用入口、常设停用入口或其空间载体具有法定依据"
+      ],
+      "limitations": "本包为城市设计投稿，只作合规对照，不作法律解释；条款适用范围与个案判断由主管部门和法律专业人员负责。",
+      "registry_source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "registry_authority_level": "A0",
+      "registry_review_status": "approved",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "BARRIER-FREE-ENVIRONMENT-LAW",
+      "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
+      "source_type": "official_public",
+      "evidence_class": "regulatory_baseline",
+      "authority_level": "A0",
+      "title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "published_date": "2023-06-28",
+      "effective_date": "2023-09-01",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取中国政府网受权发布全文，定位第三十九条并与最高人民检察院门户网、新华社受权发布版本逐字交叉核对。",
+      "source_locator": "第三十九条；全法共 8 章 72 条",
+      "spatial_coverage": "中华人民共和国境内",
+      "temporal_coverage": "2023-09-01 起施行",
+      "license_or_reuse_terms": "国家法律，依法公开；本包只引用条款要义并注明条号。",
+      "usage": "记录第三十九条的适用范围与人工办理要求，用于界定本方案人工兜底中哪一部分属法定下限。该条只覆盖列举的服务事项，本方案把人工兜底推广到全部十二个场景与组件库属自设标准。",
+      "observations": [
+        {
+          "id": "barrier_free_law_effective_date",
+          "value": "2023-09-01",
+          "unit": "date",
+          "scope": "全国",
+          "source_text": "自2023年9月1日起施行",
+          "not_spatially_allocable": true
+        }
+      ],
+      "cross_check_note": "第三十九条的适用对象是**涉及医疗健康、社会保障、金融业务、生活缴费等事项的**公共服务场所，要求其保留现场指导、人工办理等传统服务方式；**不适用于全部公共空间或数字界面**。国办发〔2020〕45号提出“传统服务方式与智能化服务创新并行”，方向一致，但属政策要求而非法律义务，二者不可合并表述为“法定依据”。本方案把人工兜底推广到全部十二个场景与组件库，超出该条适用范围，属自设的公共服务标准；合规基线表已按此分列。",
+      "usable_for": [
+        "引用第三十九条对列举服务事项（医疗健康、社会保障、金融业务、生活缴费等）公共服务场所保留现场指导与人工办理的法定要求本身",
+        "仅在上述列举情形内，作为无障碍与人工兜底下限的法定出处"
+      ],
+      "not_usable_for": [
+        "作为法律意见或对具体场所的合规认定",
+        "推断既有设施的无障碍达标情况",
+        "把第三十九条的人工办理要求推广到全部公共空间、全部十二个场景或数字界面",
+        "论证组件库、接管亭与城市交接厅的人工兜底配置整体具有法定依据"
+      ],
+      "limitations": "本包只作合规对照；具体项目的无障碍设计与验收须由具备资质的专业团队按现行标准执行。",
+      "registry_source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "registry_authority_level": "A0",
+      "registry_review_status": "approved",
+      "usable_for_formal": "yes",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "ELDERLY-SMART-TECH-PLAN",
+      "url": "https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm",
+      "source_type": "official_public",
+      "evidence_class": "background_only",
+      "authority_level": "A1",
+      "title": "国务院办公厅关于印发《关于切实解决老年人运用智能技术困难实施方案》的通知（国办发〔2020〕45号）",
+      "publisher": "国务院办公厅",
+      "published_date": "2020-11-24",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取中国政府网政策全文，摘取总体要求中的并行原则与七类高频服务场景。",
+      "source_locator": "总体要求；出行、就医、消费、文娱、办事等高频事项",
+      "spatial_coverage": "全国",
+      "temporal_coverage": "2020-11-24 印发",
+      "license_or_reuse_terms": "国务院办公厅公开发布的政策文件，依法公开。",
+      "usage": "作为“传统服务方式与智能化服务创新并行”的政策背景与高频场景清单对照。该文件是政策通知而非法律义务，也未对具体项目设定法定控制；“十二个场景一律配置无AI等价服务”的覆盖范围与强制程度属本方案自设。",
+      "observations": [
+        {
+          "id": "elderly_plan_document_number",
+          "value": "国办发〔2020〕45号",
+          "unit": "document_number",
+          "scope": "全国",
+          "source_text": "国办发〔2020〕45号",
+          "not_spatially_allocable": true
+        }
+      ],
+      "cross_check_note": "文件提出“坚持传统服务方式与智能化服务创新并行”，并列举出行、就医、消费、文娱、办事等高频事项。**该表述是并行原则，不等于“不得取消传统渠道”的禁止性规定**；文件为国务院办公厅政策通知，不是法律义务，中央来源登记亦标为 background_only。本方案十二个场景的无AI兜底逐一对应到这些高频事项类别，而不是笼统声明“照顾老年人”；一律配置的强制程度由本方案自设。",
+      "usable_for": [
+        "引用“坚持传统服务方式与智能化服务创新并行”这一政策原则本身",
+        "引用出行、就医、消费、文娱、办事等高频服务场景清单",
+        "把场景卡的“无AI等价服务”一栏对应到具体高频事项类别"
+      ],
+      "not_usable_for": [
+        "作为对具体服务机构的合规评价",
+        "推断海淀区或走廊内老年人的实际使用情况与需求量",
+        "把该政策通知当作具体项目的法定控制要求或法律义务",
+        "由“并行”原则推出“不得取消传统渠道”的禁止性规定",
+        "推断某地或某服务已落实该政策"
+      ],
+      "limitations": "政策文件面向全国，未给出空间落位或本地实施细则；本地做法须由主管部门确定。",
+      "registry_source_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "registry_authority_level": "A0",
+      "registry_review_status": "approved",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "central_registry_verbatim"
+    },
+    {
+      "id": "CASE-ONE-NORTH",
+      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/launchpad/",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "JTC LaunchPad @ one-north",
+      "publisher": "JTC Corporation, Singapore",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取机构官网公开页面，只记录组织机制描述，不下载图片、地图或品牌资产。",
+      "spatial_coverage": "新加坡 one-north",
+      "temporal_coverage": "检索日状态",
+      "license_or_reuse_terms": "机构官网公开页面；本包仅作文字转述。",
+      "usage": "提取测试床、孵化器、首层展示和社群运营的空间机制。",
+      "usable_for": [
+        "机制对照与空间组织启发"
+      ],
+      "not_usable_for": [
+        "绩效因果推断、土地制度移植或指标类比"
+      ],
+      "limitations": "仅转述公开网页；未复用图片或品牌资产，不进行绩效因果推断。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "CASE-KALASATAMA",
+      "url": "https://forumvirium.fi/en/about/smartcity/",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "Smart Kalasatama / Forum Virium Helsinki",
+      "publisher": "Forum Virium Helsinki",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取机构官网公开页面，只记录敏捷试点与共创的组织方法。",
+      "spatial_coverage": "赫尔辛基 Kalasatama",
+      "temporal_coverage": "检索日状态",
+      "license_or_reuse_terms": "机构官网公开页面；本包仅作文字转述。",
+      "usage": "提取敏捷试点、生活实验室与居民共创机制。",
+      "usable_for": [
+        "试点如何设定周期、评估与退出的机制对照"
+      ],
+      "not_usable_for": [
+        "移植其数据治理环境、福利制度或居民参与基础"
+      ],
+      "limitations": "仅转述公开网页；制度与数据治理环境不可直接移植。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "CASE-STATION-F",
+      "url": "https://stationf.co/",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "STATION F",
+      "publisher": "STATION F",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取机构官网公开页面，只记录平台型空间的组织方式。",
+      "spatial_coverage": "巴黎",
+      "temporal_coverage": "检索日状态",
+      "license_or_reuse_terms": "机构官网公开页面；本包仅作文字转述。",
+      "usage": "提取多项目共享平台、创业服务和社群密度机制。",
+      "usable_for": [
+        "单一大跨空间容纳多主体的组织机制对照"
+      ],
+      "not_usable_for": [
+        "企业绩效、融资结果或运营收益的类比"
+      ],
+      "limitations": "仅转述公开网页；未验证企业绩效，未复用视觉资产。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "CASE-22BARCELONA",
+      "url": "https://bcnroc.ajuntament.barcelona.cat/items/1689ebe1-80ef-4377-a404-87bb62204beb/full",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "22@ Barcelona institutional material",
+      "publisher": "Ajuntament de Barcelona",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取市政府公开档案库条目，只记录更新与产业协同的制度框架。",
+      "spatial_coverage": "巴塞罗那 22@",
+      "temporal_coverage": "检索日状态",
+      "license_or_reuse_terms": "市政公开档案；本包仅作文字转述。",
+      "usable_for": [
+        "旧工业区更新与产业政策协同的制度框架对照"
+      ],
+      "not_usable_for": [
+        "土地制度、容积奖励或财政工具的直接移植"
+      ],
+      "usage": "提取创新地区的经济、社会与城市更新协同框架。",
+      "limitations": "仅作机制对照；土地制度、历史阶段与治理结构不同。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "CASE-KENDALL",
+      "url": "https://www.cambridgema.gov/-/media/Files/CDD/Planning/Studies/K2C2/finalreports/k2c2_kendall_final_report.pdf",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "Kendall Square K2C2 Final Report",
+      "publisher": "City of Cambridge, Massachusetts",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取城市官方规划研究报告，只记录其把用地、城市设计、交通与实施行动合并研究的组织做法。",
+      "spatial_coverage": "美国剑桥市 Kendall Square",
+      "temporal_coverage": "报告发布时状态",
+      "license_or_reuse_terms": "城市政府公开报告；本包仅作文字转述，不复制图表。",
+      "usable_for": [
+        "把用地、城市设计、交通与实施行动放入同一研究的方法对照"
+      ],
+      "not_usable_for": [
+        "直接套用其数值、分区管制或开发条件"
+      ],
+      "usage": "提取把用地、城市设计、交通与实施行动放入同一规划研究的做法。",
+      "limitations": "仅转述城市官方报告；不直接套用数值和管制。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    },
+    {
+      "id": "CASE-KNOWLEDGE-QUARTER",
+      "url": "https://www.knowledgequarter.london/",
+      "source_type": "official_public",
+      "evidence_class": "mechanism_reference",
+      "authority_level": "C0",
+      "title": "Knowledge Quarter London",
+      "publisher": "Knowledge Quarter London",
+      "retrieved_at": "2026-08-08",
+      "accessed_date": "2026-08-08",
+      "collection_method": "读取联盟官网公开页面，只记录成员协作与公共可达的组织机制。",
+      "spatial_coverage": "伦敦 King's Cross 周边",
+      "temporal_coverage": "检索日状态",
+      "license_or_reuse_terms": "机构官网公开页面；本包仅作文字转述。",
+      "usable_for": [
+        "机构联盟式知识交换与公共可达的机制对照"
+      ],
+      "not_usable_for": [
+        "成员构成、成效或经济影响的直接引用"
+      ],
+      "usage": "提取联盟式知识交换、公共可达和场所运营机制。",
+      "limitations": "仅转述公开网页；组织成员与成效需持续核验。",
+      "registry_source_id": null,
+      "registry_review_status": "not_in_central_registry",
+      "usable_for_formal": "background_only",
+      "usable_for_formal_basis": "participant_self_assessed"
+    }
+  ],
+  "registry_alignment_note": "本表的 usable_for_formal 采用中央登记表 data/source_registry.json 的同一套取值词汇，以便机器逐项对照。凡 usable_for_formal_basis = central_registry_verbatim 的条目，其 registry_source_id / registry_authority_level / registry_review_status / usable_for_formal 四项均由脚本从中央表逐字复制，未经改写；本包对该来源的用法另受中央表 allowed_uses / prohibited_uses 约束，逐条已在 usable_for / not_usable_for 中收窄。凡 basis = participant_self_assessed 的条目**不在中央表内**，registry_review_status 一律标 not_in_central_registry —— 维护者已裁定参赛者自采源不必重复登记中央表，投稿包的 sources.json 才是该来源的完整记录；但自评状态不等于中央批准，本包不据此主张任何中央审定结论。not_a_factual_source 用于字体与构建工具链条目：它们是资产与软件许可记录，不是事实来源，不作为任何设计结论的证据。"
+}

@@ -1,0 +1,798 @@
+{
+  "schema_version": "0.1.0",
+  "requirements": [
+    {
+      "requirement_id": "1.3.1",
+      "title_zh": "构建世界级AI创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "land_use_class_count",
+        "land_use_feature_count",
+        "case_study_count"
+      ],
+      "drawings": [
+        "assets/figures/land-use-structure.png",
+        "assets/figures/ecosystem.png"
+      ],
+      "visual_sections": [
+        "三层范围",
+        "AI 场景"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson、key_areas.geojson；指标 land_use_class_count、land_use_feature_count、case_study_count（由 visual/assets/verify.js 独立重算）；图纸 land-use-structure.png、ecosystem.png；来源 OFFICIAL-ANNOUNCEMENT、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.3.2",
+      "title_zh": "建设适配AI新质生产力的新型城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "geojson_layers": [
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "public_space_ratio",
+        "benchmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "assets/figures/street-eye-level.png",
+        "assets/figures/kit-of-parts.png"
+      ],
+      "visual_sections": [
+        "AI 场景",
+        "核心指标"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "ELDERLY-SMART-TECH-PLAN"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「AI 创新生态、人才画像与 AI+ 场景」；图层 public_space.geojson；指标 public_space_ratio、benchmark_count、persona_count（由 visual/assets/verify.js 独立重算）；图纸 street-eye-level.png、kit-of-parts.png；来源 OFFICIAL-ANNOUNCEMENT、ELDERLY-SMART-TECH-PLAN（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.3.3",
+      "title_zh": "打造全球AI创新人才向往的高品质城区",
+      "mandatory": true,
+      "report_sections": [
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "persona_count"
+      ],
+      "drawings": [
+        "assets/figures/site-overview.png"
+      ],
+      "visual_sections": [
+        "三层范围"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「三层范围工作框架」；图层 site_boundary.geojson；指标 site_area_sqm、green_ratio、persona_count（由 visual/assets/verify.js 独立重算）；图纸 site-overview.png；来源 OFFICIAL-ANNOUNCEMENT、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "title_zh": "统筹研究范围",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究",
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "land_use_feature_count"
+      ],
+      "drawings": [
+        "assets/figures/land-use-structure.png"
+      ],
+      "visual_sections": [
+        "用地分区",
+        "建筑"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST",
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」「三层范围工作框架」；图层 land_use.geojson、buildings.geojson；指标 site_area_sqm、land_use_feature_count（由 visual/assets/verify.js 独立重算）；图纸 land-use-structure.png；来源 OFFICIAL-ANNOUNCEMENT、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.4.2",
+      "title_zh": "总体设计范围",
+      "mandatory": true,
+      "report_sections": [
+        "总体设计范围城市更新与控规深度城市设计",
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "phased_share_of_design_scope"
+      ],
+      "drawings": [
+        "assets/figures/site-overview.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "visual_sections": [
+        "交通慢行"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "BOUNDARY_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「总体设计范围城市更新与控规深度城市设计」「三层范围工作框架」；图层 site_boundary.geojson、key_areas.geojson；指标 site_area_sqm、phased_share_of_design_scope（由 visual/assets/verify.js 独立重算）；图纸 site-overview.png、land-use-structure.png；来源 OFFICIAL-ANNOUNCEMENT、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.4.3",
+      "title_zh": "重点区域范围",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计",
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "geometry/key_areas.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "key_area_count",
+        "benchmark_first_order_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「三层范围工作框架」；图层 key_areas.geojson、public_space.geojson；指标 key_area_count、benchmark_first_order_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 OFFICIAL-ANNOUNCEMENT、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "title_zh": "统筹研究范围：AI创新生态体系",
+      "mandatory": true,
+      "report_sections": [
+        "AI创新生态图谱与要素机制",
+        "全球AI创新生态案例研究"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "case_study_count",
+        "industry_test_scenario_count"
+      ],
+      "drawings": [
+        "assets/figures/ecosystem.png"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "CASE-C1-ALGORITHM-REGISTER",
+        "CASE-C3-AI-VERIFY"
+      ],
+      "assumption_ids": [
+        "A-HERITAGE-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "本条由正文小节「AI创新生态图谱与要素机制」「全球AI创新生态案例研究」；图层 land_use.geojson；指标 case_study_count、industry_test_scenario_count（由 visual/assets/verify.js 独立重算）；图纸 ecosystem.png；来源 AGENT-TASKBOOK、CASE-C1-ALGORITHM-REGISTER、CASE-C3-AI-VERIFY（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "title_zh": "统筹研究范围：适配人工智能的未来城市形态",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "geojson_layers": [
+        "geometry/buildings.geojson"
+      ],
+      "metrics": [
+        "building_footprint_area_sqm",
+        "floor_area_ratio"
+      ],
+      "drawings": [
+        "assets/figures/street-eye-level.png"
+      ],
+      "visual_sections": [
+        "建筑"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「用地、建筑规模与拆改留方案」；图层 buildings.geojson；指标 building_footprint_area_sqm、floor_area_ratio（由 visual/assets/verify.js 独立重算）；图纸 street-eye-level.png；来源 AGENT-TASKBOOK、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "title_zh": "总体设计范围：产业目标与功能布局",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "geometry/key_areas.geojson"
+      ],
+      "metrics": [
+        "key_area_count",
+        "land_use_class_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png",
+        "assets/figures/ecosystem.png"
+      ],
+      "visual_sections": [
+        "重点区域"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 key_areas.geojson；指标 key_area_count、land_use_class_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png、ecosystem.png；来源 AGENT-TASKBOOK、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "title_zh": "总体设计范围：城市更新总体框架",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "renewal_project_count",
+        "phase_count",
+        "phasing_union_area_sqm"
+      ],
+      "drawings": [
+        "assets/figures/land-use-structure.png"
+      ],
+      "visual_sections": [
+        "用地分区"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」；图层 land_use.geojson；指标 renewal_project_count、phase_count、phasing_union_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 land-use-structure.png；来源 AGENT-TASKBOOK、MOHURD-CONTROL-DETAILED-PLANNING（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "title_zh": "总体设计范围：交通轨道市政配套设施",
+      "mandatory": true,
+      "report_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "geojson_layers": [
+        "geometry/roads.geojson"
+      ],
+      "metrics": [
+        "road_feature_count",
+        "leveling_spine_length_m"
+      ],
+      "drawings": [
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "visual_sections": [
+        "交通慢行"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "本条由正文小节「交通、轨道、市政与公共服务设施」；图层 roads.geojson；指标 road_feature_count、leveling_spine_length_m（由 visual/assets/verify.js 独立重算）；图纸 mobility-bluegreen.png；来源 AGENT-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "title_zh": "总体设计范围：京张遗址公园活力带",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/green_space.geojson"
+      ],
+      "metrics": [
+        "green_ratio",
+        "green_ratio_in_partition",
+        "osm_vertices_shipped"
+      ],
+      "drawings": [
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/site-overview.png"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间"
+      ],
+      "source_ids": [
+        "OSM-REFERENCE-2026-08",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson；指标 green_ratio、green_ratio_in_partition、osm_vertices_shipped（由 visual/assets/verify.js 独立重算）；图纸 mobility-bluegreen.png、site-overview.png；来源 OSM-REFERENCE-2026-08、OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "title_zh": "总体设计范围：城市风貌",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "landmark_count",
+        "public_space_ratio"
+      ],
+      "drawings": [
+        "assets/figures/kit-of-parts.png",
+        "assets/figures/identity.png"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 green_space.geojson、public_space.geojson；指标 landmark_count、public_space_ratio（由 visual/assets/verify.js 独立重算）；图纸 kit-of-parts.png、identity.png；来源 AGENT-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "title_zh": "重点区域范围详细设计必选项",
+      "mandatory": true,
+      "report_sections": [
+        "重点区域详细设计",
+        "三片区共同的拆改留原则"
+      ],
+      "geojson_layers": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metrics": [
+        "key_area_count",
+        "benchmark_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png"
+      ],
+      "visual_sections": [
+        "核心指标",
+        "自检状态"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CLOSURE-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「重点区域详细设计」「三片区共同的拆改留原则」；图层 site_boundary.geojson；指标 key_area_count、benchmark_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 OFFICIAL-ANNOUNCEMENT、KEY-AREA-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "title_zh": "众智园AI自主创新加速区",
+      "mandatory": true,
+      "report_sections": [
+        "众智园 AI 自主创新加速区",
+        "三片区共同的拆改留原则"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "land_use_class_count",
+        "benchmark_first_order_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png"
+      ],
+      "visual_sections": [
+        "核心指标"
+      ],
+      "source_ids": [
+        "KEY-AREA-SOURCE",
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREAS_TRUST",
+        "LAND_USE_TOPOLOGY"
+      ],
+      "evidence_summary_zh": "本条由正文小节「众智园 AI 自主创新加速区」「三片区共同的拆改留原则」；图层 land_use.geojson；指标 land_use_class_count、benchmark_first_order_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE、MNR-LAND-USE-CLASSIFICATION-GUIDE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "title_zh": "北京AI原点社区",
+      "mandatory": true,
+      "report_sections": [
+        "北京 AI 原点社区",
+        "三片区共同的拆改留原则"
+      ],
+      "geojson_layers": [
+        "geometry/constraints.geojson"
+      ],
+      "metrics": [
+        "benchmark_count",
+        "tabletop_case_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png",
+        "assets/figures/evidence-circuit.png"
+      ],
+      "visual_sections": [
+        "假设",
+        "来源"
+      ],
+      "source_ids": [
+        "KEY-AREA-SOURCE",
+        "BARRIER-FREE-ENVIRONMENT-LAW"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-002"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "本条由正文小节「北京 AI 原点社区」「三片区共同的拆改留原则」；图层 constraints.geojson；指标 benchmark_count、tabletop_case_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png、evidence-circuit.png；来源 KEY-AREA-SOURCE、BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "title_zh": "大钟寺AI产业聚集区",
+      "mandatory": true,
+      "report_sections": [
+        "大钟寺 AI 产业集聚区"
+      ],
+      "geojson_layers": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metrics": [
+        "building_footprint_area_sqm",
+        "key_area_count"
+      ],
+      "drawings": [
+        "assets/figures/key-areas.png"
+      ],
+      "visual_sections": [
+        "更新项目"
+      ],
+      "source_ids": [
+        "KEY-AREA-SOURCE",
+        "MOHURD-ARCH-DESIGN-DEPTH-2016"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-001"
+      ],
+      "self_check_ids": [
+        "KEY_AREAS_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「大钟寺 AI 产业集聚区」；图层 key_areas.geojson、buildings.geojson；指标 building_footprint_area_sqm、key_area_count（由 visual/assets/verify.js 独立重算）；图纸 key-areas.png；来源 KEY-AREA-SOURCE、MOHURD-ARCH-DESIGN-DEPTH-2016（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.1",
+      "title_zh": "一带总体概念与功能统筹方案设计",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metrics": [
+        "leveling_spine_length_m",
+        "benchmark_count",
+        "key_area_count"
+      ],
+      "drawings": [
+        "assets/figures/site-overview.png",
+        "assets/figures/hero-leveling-line.png"
+      ],
+      "visual_sections": [
+        "总览地图"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW",
+        "BOUNDARY_TRUST"
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 public_space.geojson、roads.geojson；指标 leveling_spine_length_m、benchmark_count、key_area_count（由 visual/assets/verify.js 独立重算）；图纸 site-overview.png、hero-leveling-line.png；来源 AGENT-TASKBOOK、BOUNDARY-SOURCE（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.2",
+      "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
+      "mandatory": true,
+      "report_sections": [
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "geojson_layers": [
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "case_study_count",
+        "industry_test_scenario_count",
+        "field_census_corpus_size"
+      ],
+      "drawings": [
+        "assets/figures/ecosystem.png"
+      ],
+      "visual_sections": [
+        "用地分区"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "CASE-C5-CIVIC-DATA-AGENDA",
+        "FIELD-CENSUS-2026-08"
+      ],
+      "assumption_ids": [
+        "A-CORPUS-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "本条由正文小节「统筹研究范围产业与未来城市研究」；图层 land_use.geojson；指标 case_study_count、industry_test_scenario_count、field_census_corpus_size（由 visual/assets/verify.js 独立重算）；图纸 ecosystem.png；来源 AGENT-TASKBOOK、CASE-C5-CIVIC-DATA-AGENDA、FIELD-CENSUS-2026-08（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.3",
+      "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
+      "mandatory": true,
+      "report_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景"
+      ],
+      "geojson_layers": [
+        "geometry/constraints.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "scenario_card_count",
+        "scenario_cards_operational_count",
+        "persona_count",
+        "tabletop_case_count"
+      ],
+      "drawings": [
+        "assets/figures/evidence-circuit.png"
+      ],
+      "visual_sections": [
+        "AI 场景"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "GENERATIVE-AI-INTERIM-MEASURES",
+        "BARRIER-FREE-ENVIRONMENT-LAW"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-001",
+        "A-CLOSURE-002"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "本条由正文小节「AI 创新生态、人才画像与 AI+ 场景」；图层 constraints.geojson、public_space.geojson；指标 scenario_card_count、scenario_cards_operational_count、persona_count、tabletop_case_count（由 visual/assets/verify.js 独立重算）；图纸 evidence-circuit.png；来源 AGENT-TASKBOOK、GENERATIVE-AI-INTERIM-MEASURES、BARRIER-FREE-ENVIRONMENT-LAW（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.4",
+      "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "landmark_count",
+        "public_space_ratio",
+        "building_footprint_area_sqm"
+      ],
+      "drawings": [
+        "assets/figures/kit-of-parts.png",
+        "assets/figures/street-eye-level.png"
+      ],
+      "visual_sections": [
+        "蓝绿公共空间",
+        "建筑"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "ELDERLY-SMART-TECH-PLAN"
+      ],
+      "assumption_ids": [
+        "A-HERITAGE-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 buildings.geojson、public_space.geojson；指标 landmark_count、public_space_ratio、building_footprint_area_sqm（由 visual/assets/verify.js 独立重算）；图纸 kit-of-parts.png、street-eye-level.png；来源 AGENT-TASKBOOK、ELDERLY-SMART-TECH-PLAN（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.5",
+      "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
+      "mandatory": true,
+      "report_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "geojson_layers": [
+        "geometry/roads.geojson"
+      ],
+      "metrics": [
+        "landmark_count",
+        "road_feature_count"
+      ],
+      "drawings": [
+        "assets/figures/identity.png",
+        "assets/figures/region-interface.png"
+      ],
+      "visual_sections": [
+        "总览地图"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-HERITAGE-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "本条由正文小节「蓝绿空间、公共空间与城市风貌」；图层 roads.geojson；指标 landmark_count、road_feature_count（由 visual/assets/verify.js 独立重算）；图纸 identity.png、region-interface.png；来源 AGENT-TASKBOOK、OFFICIAL-ANNOUNCEMENT（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    },
+    {
+      "requirement_id": "agent.6",
+      "title_zh": "一带全球AI创新活动体系与长期运营设计",
+      "mandatory": true,
+      "report_sections": [
+        "荣誉展示体系与公共空间组件库"
+      ],
+      "geojson_layers": [
+        "geometry/public_space.geojson"
+      ],
+      "metrics": [
+        "renewal_project_count",
+        "phase_count",
+        "errata_entry_count",
+        "shipped_verification_script_count"
+      ],
+      "drawings": [
+        "assets/figures/metrics-evidence.png",
+        "assets/figures/evidence-circuit.png"
+      ],
+      "visual_sections": [
+        "更新项目",
+        "任务覆盖"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "CASE-C6-ARTIFACT-EVALUATION"
+      ],
+      "assumption_ids": [
+        "A-CLOSURE-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_PACKAGING",
+        "DETERMINISTIC_VALIDATION"
+      ],
+      "evidence_summary_zh": "本条由正文小节「荣誉展示体系与公共空间组件库」；图层 public_space.geojson；指标 renewal_project_count、phase_count、errata_entry_count、shipped_verification_script_count（由 visual/assets/verify.js 独立重算）；图纸 metrics-evidence.png、evidence-circuit.png；来源 AGENT-TASKBOOK、CASE-C6-ARTIFACT-EVALUATION（登记于 sources.json） 共同支撑，每一项均可独立打开核对。"
+    }
+  ]
+}

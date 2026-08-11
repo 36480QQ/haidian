@@ -2,21 +2,47 @@
 
 本指南说明 AI agent 如何准备不会被基础校验直接拦截的 `formal` 城市设计方案。拦截规则不是为了让提交者猜答案，而是要求每个方案把边界、图层、指标、图纸、HTML 展示和任务响应都做成可追溯、可复算、可复核的成果。
 
-独立社区公开征集已于北京时间 **2026年8月7日**正式开放公共 intake。投稿通过本仓库 Pull Request 流程进行；本平台不是政府或征集主办方的官方报名或应征通道。
+百年京张 AI 创新带城市设计开源征集由海淀主导，已于北京时间 **2026年8月7日**开放，**8月31日截止，9月开始落地**。投稿通过本仓库 Pull Request 流程进行。
 
-`proposal.md` 可以中文或英文书写。英文投稿的英文正文和中文译文都必须达到完整方案深度；中文版本放在同一文件的 `# 中文正式译文` 下，并设置 `language: "en"`、`chinese_translation: "included"`、`title_zh` 和 `summary_zh`。中文译文必须覆盖全部必答章节、图表和证据引用，并作为正式解释依据。
+默认使用 [轻量参与工作区](../skills/urban-design-ai-submission/references/lightweight-workspace.md)：blobless partial clone 与 sparse checkout 只下载任务资料、校验工具和自己的方案，其他方案先读轻量索引，再按需获取正文或图纸。发起 PR 前必须运行 `scripts/participant_preflight.py`，把目录归属、变更范围、GitHub 大文件限制、自检和推送权限问题提前在本地解决。
+
+新方案在 `proposal.md` front matter 中设置 `proposal_format_version: "2"`。v2 把成果分成两层：正文是无需打开 JSON 也能读懂的设计论证，只在具体判断后保留 1-3 条关键引用；`sources.json`、`metrics.json`、GeoJSON 与三个矩阵保存完整机器核验索引。每个必需章节仍至少引用一条直接相关证据，但不得把全部 ID、文件名和状态码堆进正文。旧方案未设置该字段时按 v1 兼容，继续有效，展示页会自动把连续编号折叠为“多条依据”。详细规则见 [可读方案格式](../skills/urban-design-ai-submission/references/human-readable-proposal.md)。
+
+**要求双语言。** 新方案同时设置 `bilingual_contract_version: "1"`。`proposal.md` 可以中文或英文书写，但必须通过独立文件提供完整对照译文：中文主稿使用 `proposal.en.md`，英文主稿使用 `proposal.zh.md`。主稿设置 `translation_file`，译稿设置 `translation_of: "proposal.md"`；HTML、A3/A0 和含文字图件也使用 `.zh` / `.en` 语言副本。两版必须保持章节、主张、指标、证据引用和图件位置一致，并优先使用[赛事中英术语表](terminology-glossary.md)。自动校验会把缺少文件、错误语言映射、无效译稿 HTML/PDF 或过期 manifest 哈希视作阻断错误；翻译等义性仍由维护者人工核对。历史 v1 及早期 v2 单语方案继续兼容展示，不要求为了保留既有成果而补写；它们下一次完整升级时可显式加入新契约。
+
+无后缀文件是 `proposal.md` 所声明的主语言版本；译稿在扩展名前插入语言码，例如 `report/proposal.en.html`、`visual/index.en.html`、`drawings/a3-booklet.en.pdf` 和 `assets/figures/site-overview.en.png`。manifest 中主文件项声明 `language: "zh"` 或 `language: "en"`，译稿项声明另一语言并通过 `translation_of` 指回主文件；无文字资产可声明 `language: "neutral"` 并由两版共用。
+
+英文主稿必须使用以下正式章节标题；中文译稿保持对应顺序。这样英文正文可独立通过结构校验，不依赖同一文件中的中文章节。
+
+| 中文章节 | 英文正式章节 |
+| --- | --- |
+| 设计依据与资料清单 | Design Basis and Source List |
+| 三层范围工作框架 | Three-Level Scope Framework |
+| 统筹研究范围产业与未来城市研究 | Coordinated Research Area: Industry and Future City Research |
+| 总体设计范围城市更新与控规深度城市设计 | Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design |
+| 重点区域详细设计 | Detailed Design of Key Areas |
+| AI 创新生态、人才画像与 AI+ 场景 | AI Innovation Ecosystem, Personas, and AI+ Scenarios |
+| 用地、建筑规模与拆改留方案 | Land Use, Building Scale, and Retain-Renovate-Demolish Strategy |
+| 交通、轨道、市政与公共服务设施 | Transport, Rail, Municipal Infrastructure, and Public Services |
+| 蓝绿空间、公共空间与城市风貌 | Blue-Green Network, Public Space, and Urban Character |
+| 更新项目清单、实施政策与分期计划 | Renewal Projects, Implementation Policy, and Phasing |
+| 指标体系、面积复算与合规矩阵 | Metrics, Area Recalculation, and Compliance Matrix |
+| 风险、版权与合规说明 | Risk, Copyright, and Compliance |
+| 参考资料 | References |
 
 ## 1. 先确认资料是否足够
 
 `formal` 方案优先使用可信官方边界和三处重点区域边界。当前仓库仍未取得官方精确红线，因此提供 `brief/site-package/geometry/provisional_boundaries.geojson` 作为临时粗略边界。它可以用于 AI agent 生成、可视化和提交入口自检，但不能作为官方红线、审批依据、精确面积复算依据或正式专业评分依据。
 
-面向智能体的开源征集任务书已整理为 `brief/site-package/agent_taskbook.json`，本地参考摘录见 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`。它补充了十条智能体共创原则、三大定位、五大功能、三区两翼、六项智能体任务、统一评审维度和统一边界条款。agent 必须把这些要求写入 `proposal.md`、`compliance_matrix.json`、`standard_matrix.json`、HTML 和图纸，不得只在 JSON 中形式覆盖。
+面向智能体的开源征集任务书已整理为 `brief/site-package/agent_taskbook.json`，本地参考摘录见 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`。它补充了十条智能体共创原则、持续参与与协作循环、三大定位、五大功能、三区两翼、六项智能体任务、统一评审维度和统一边界条款。agent 必须把这些要求写入 `proposal.md`、`compliance_matrix.json`、`standard_matrix.json`、HTML 和图纸，不得只在 JSON 中形式覆盖；任务书、资料或社区反馈更新后，应重新同步、复核并迭代方案。
 
-公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自已批准的 formal 可用资料；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。
+公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。它是维护者维护的共享资料目录，不要求参赛者把所有自采源重复登记到中央表；参赛者实际使用的每项来源仍必须完整记录在投稿包自己的 `sources.json` 中。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自中央表中已批准的 formal 可用资料，或另有明确的官方/清权附件；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。未进入中央表的自采源不能据此声称已获中央批准，也不能据此被自动判定为禁止使用。
 
-为了避免 agent 直接面对零散资料后写成空泛报告，仓库提供了第一批处理资料：`data/processed/agent_fact_pack.md`、`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv` 和 `missing_data_checklist.csv`。参赛者应先用这些文件建立任务清单、范围结构、资料用途和缺口清单，再在 `proposal.md` 中把它们翻译成可读的设计论证。处理资料不能替代原始来源；正文仍必须回引 `source_registry.json` 中的 `source_id`。
+为了避免 agent 直接面对零散资料后写成空泛报告，仓库提供了第一批处理资料：`data/processed/agent_fact_pack.md`、`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv` 和 `missing_data_checklist.csv`。参赛者应先用这些文件建立任务清单、范围结构、资料用途和缺口清单，再在 `proposal.md` 中把它们翻译成可读的设计论证。处理资料不能替代原始来源；正文只回引直接支撑当前判断的 `source_id`，完整来源覆盖由 `sources.json` 负责。
 
-视觉生成辅助工具不是 mandatory，但 agent 可以读取 `brief/site-package/visual_style_recommendations.json` 和 `docs/visual-style-recommendations.md`，选择适合 formal 城市设计的 HTML、信息图、diagram 或展板风格。任何外部 skill 生成的图片和 HTML 都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
+参赛者自采的公开数据、案例、图像、字体和工具链依赖，不应混用同一套中央状态：公开事实资料按来源、用途和限制写入包内 `sources.json`；字体、PDF 内置字体、Python/Node 依赖和构建工具链则补充版本、许可证、是否再分发及本地资产/构建路径，必要时同步写入 `report/copyright_statement.md`。中央 source registry 只在维护者决定将某项资料作为仓库共享或 formal 依据统一复核时登记。若需申请中央登记，按 `docs/data-workflow.md` 的 `[source-registry]` Issue 通道提交材料，不能直接修改 `data/`。
+
+方案是给人看的。视觉和多模态能力不是所有 Agent 的 mandatory 资格门槛，但只要运行环境具备能力，Agent 就应主动使用高质量图像、示意图、短视频、声音或音乐、动画、三维场景和交互式网页增强人类理解；本地离线 Three.js、WebGL、Canvas 受到欢迎。详细文件、封面、无障碍和权利契约见 `skills/urban-design-ai-submission/references/multimodal-presentation.md`。任何生成媒体都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
 
 ### 可接受的官方边界来源
 
@@ -56,7 +82,7 @@
 2. 提取或转换边界：SHP/GPKG/GeoJSON 可直接转换；DWG/DXF/PDF 需说明提取方法；扫描图或截图不得作为 formal 红线。
 3. 统一输出为 EPSG:4326 GeoJSON；面积复算使用 `brief/site-package/design_brief.json` 中指定的 EPSG:4548。
 4. 将转换误差、坐标系不确定、图纸版本差异写入 `assumptions.json`。
-5. 替换全部 scaffold 内容和占位图纸后运行 `scripts/finalize_submission.py`，再运行 `scripts/self_check_submission.py`。provisional boundary 必须保留精度与复算提示，但组织方数据缺口不阻断内容评分。
+5. 替换全部 scaffold 内容和占位图纸后运行 `scripts/finalize_submission.py`，再运行 `scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --mark-self-checked --json`。只有全部检查通过后，工具才会把本次四门报告写入 `self_check.json`、刷新其 manifest 哈希、写入 `validation_claim.self_checked=true` 并再次验证；provisional boundary 必须保留精度与复算提示，但组织方数据缺口不阻断内容评分。
 
 ### 专业标准本地参考库
 
@@ -260,7 +286,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 
 ## 6. `proposal.md` 的可读证据引用
 
-`proposal.md` 是唯一主体方案文本。JSON/GeoJSON 证明 agent 真的生成了可复算数据，但人类评审需要在正文中读懂这些数据如何支撑设计判断。
+`proposal.md` 是主语言主体方案文本，`.zh.md` / `.en.md` 是与其等义的语言副本。JSON/GeoJSON 证明 agent 真的生成了可复算数据，但人类评审需要在正文中读懂这些数据如何支撑设计判断。
 
 正文必须使用这些引用格式：
 
@@ -280,6 +306,8 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 - `design_depth_matrix.json` 中的深度项应在正文中被引用。
 - 核心 GeoJSON 图层应在正文中解释其设计含义。
 - `metrics.json` 中 `status=known` 的指标应在正文中说明公式、来源或空间含义。
+- proposal v2 或由当前流程写入 `readiness_contract=persisted-self-check-v1` 的包，`manifest.json.validation_claim.self_checked` 必须为 `true`；它表示作者确实运行并回读了 `self_check.json`，不能用 ready 状态反向替代自检证据。没有该 contract 的历史 ready 包只保留 intake 兼容性警告，并应使用 `self_check_submission.py --mark-self-checked` 迁移。CI 从 trusted base 的 manifest 判断包是历史包、新包还是已经进入 contract 的包；不能通过在 PR head 删除 contract 字段把新包降级为 legacy warning。公开 gallery 为连续性而保留的历史状态只描述展示分类，不构成新的可信正式证据。
+- `self_check.json` 是可回读的 contributor-owned 运行记录，结构完整不等于独立可信证明；真正的 provenance 以 `pull_request_target` 的 exact trusted run 或维护者在 trusted checkout 上的重跑为准。
 
 这类引用不是装饰。它要求 agent 在正文中说明：“这个用地分区为什么这样做，来自哪个图层；这个比例怎么复算；这个风貌控制依据哪个标准；这个结论有什么资料缺口。”
 
@@ -293,9 +321,13 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 
 这些图应由 GeoJSON、metrics、compliance/standard/depth 矩阵和自检结果派生；不得使用远程图片、data URI、未清权地图截图或把图片当作权威面积/边界来源。图是解释层，权威数据仍是 GeoJSON/JSON。
 
+如果提交包包含 `simulation.json`，仿真结果也必须能够从任务台账复算：`task_count` 要等于 `tasks.length`；使用 `simulation_task_count`、`simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations` 或 `audit_completeness` 这些保留指标名时，指标的 `source_files` 应包含 `simulation.json`，并与任务记录逐项一致。成功任务使用 `outcome=success` 或以 `_success` 结尾的结果；能耗违规按 `energy_used_kwh > energy_budget_kwh` 计数。若同时提供 `baselines.urban_llm_harness` 或 `visual/assets/evaluation-baseline.json`，同名聚合值必须一致：`urban_llm_harness` 被定义为任务台账的镜像，不能用一个 scope 字段绕过冲突。其他评测范围须放在不同、说明用途的基线名下，不能在同一个保留指标名下并列两个结果。`ready_for_review` / 双语 v2 包中的冲突会阻断校验，legacy v1 仅给出迁移警告。
+
 ### 图面表达质量要求
 
 本项目要求的图面不是 raw data 截图，也不是把 GeoJSON polygon 直接填色后的 debug map。GeoJSON、metrics 和矩阵是证据层；`assets/figures/*.png`、A3/A0 和 `visual/index.html` 是解释层，必须让非技术评审者一眼看懂设计判断、空间主次和资料边界。
+
+图面也不必停留在 SVG 或静态信息板。可把清楚标注为概念表达的体验图、生成图、视频、声音、音乐、动画和三维交互放入 `assets/media/`，并让 `visual/index.html` 通过本地资源提供叙事入口。网站会在方案工作台中直接展示这些媒体；视频必须有 poster、VTT 字幕和 Markdown 文字稿，音频必须有文字稿，所有播放器禁止 autoplay。自定义封面由 `manifest.cover_image` 指向 `assets/media/` 中已登记的图片；空值继续使用默认封面。
 
 每张核心图必须有一个明确主叙事：
 
@@ -419,6 +451,8 @@ HTML 是必交电子展示页面，用于让评审者快速看懂方案。它不
 
 核心指标必须用 `data-metric` 和 `data-value` 标记，便于 `scripts/visual_review.py` 与 `metrics.json` 对比：
 
+每一个带数值的 `data-metric` 都必须对应 `metrics.json` 中 `status="known"` 且具有数值 `value` 的指标，并且数值必须一致。`unknown`、`not_applicable` 或尚未登记的指标不得在 HTML 中用 `data-value` 渲染成数字；应显示明确的 unknown/pending 文本、原因和复算前置条件。视觉审查会把这类数值声明判为阻断问题，防止单独截屏或摘录后被误读为正式控规或已知事实。
+
 ```html
 <span data-metric="site_area_sqm" data-value="11400000">1140 公顷</span>
 <span data-metric="green_ratio" data-value="0.23">23%</span>
@@ -441,7 +475,7 @@ HTML 展示值与 `metrics.json` 不一致会失败。
 python3 -m pip install -r requirements-review.txt
 python3 scripts/render_proposal_html.py submissions/<github-login>/<proposal-slug>
 python3 scripts/finalize_submission.py submissions/<github-login>/<proposal-slug>
-python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login>
+python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --mark-self-checked --json
 ```
 
 这个命令会依次运行：
@@ -453,7 +487,7 @@ python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-sl
 
 全部 PASS 只说明 package 具备进入机器检查和内容评审的基础条件。provisional boundary 会保留精度警示和复算要求，但不会因组织方数据缺口阻断评分。PASS 不代表方案优秀或获得官方批准。
 
-维护者审核 PR 时会运行 `scripts/maintainer_review.py --comment`，并在本地忽略目录 `.maintainer-review/<proposal-slug>/` 生成 `maintainer-comment.md`、`review-summary.json`、`review-input.json`、`review-prompt.md` 和 `advisory-review.md`。维护者只把命令输出复制到 PR comment；maintainer review 结果不提交到仓库，也不进入公开展示页。合并不自动公开：维护者通过 `gallery-publication.json` 的 `published` 决定全部方案页，通过 `featured` 决定首页精选，再运行 `scripts/generate_submissions_data.py`。参赛者只提交自己的投稿目录，不修改发布清单或 `submissions-data.js`。
+维护者审核 PR 时会运行 `scripts/maintainer_review.py --comment`，并在本地忽略目录 `.maintainer-review/<proposal-slug>/` 生成 `maintainer-comment.md`、`review-summary.json`、`review-input.json`、`review-prompt.md` 和 `advisory-review.md`。维护者只把命令输出复制到 PR comment；maintainer review 结果不提交到仓库，也不进入公开展示页。方案合并到 `main` 后自动进入全部方案页；维护者通过 `gallery-publication.json` 明确暂停展示或决定首页精选，再运行 `scripts/generate_submissions_data.py`。参赛者只提交自己的投稿目录，不修改发布清单或 `submissions-data.js`。
 
 ## 11. 缺资料时怎么办
 

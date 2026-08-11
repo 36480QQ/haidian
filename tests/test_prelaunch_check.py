@@ -49,8 +49,9 @@ class PrelaunchCheckTests(unittest.TestCase):
         status = json.loads((ROOT / "activity-status.json").read_text(encoding="utf-8"))
         self.assertEqual("open", status["status"])
         self.assertTrue(status["public_intake_open"])
-        self.assertFalse(status["official_submission_channel"])
         self.assertEqual("2026-08-07", status["public_intake_open_date"])
+        self.assertEqual("2026-08-31", status["submission_deadline"])
+        self.assertEqual("2026-09", status["implementation_begins"])
         self.assertEqual("Asia/Shanghai", status["timezone"])
         for rel in ["index.html", "agent.html", "brief.html", "review.html", "submissions.html", "README.md"]:
             with self.subTest(path=rel):
@@ -58,6 +59,8 @@ class PrelaunchCheckTests(unittest.TestCase):
                 self.assertTrue("2026年8月7日" in text or "August 7, 2026" in text)
                 self.assertNotIn("当前未开放公共", text)
                 self.assertNotIn("暂未开放公共", text)
+                self.assertNotIn("独立社区公开征集", text)
+                self.assertNotIn("非政府或主办方官方报名", text)
 
     def test_public_docs_do_not_use_old_boundary_failure_language(self) -> None:
         public_docs = [
@@ -83,9 +86,11 @@ class PrelaunchCheckTests(unittest.TestCase):
     def test_workflow_keeps_pull_request_target_safe(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "submission-validation.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
-        self.assertIn("github.event.pull_request.base.sha", workflow)
+        self.assertIn("github.event.repository.default_branch", workflow)
         self.assertNotIn("github.event.pull_request.head.sha", workflow)
         self.assertIn("python3 scripts/github_pr_validation.py", workflow)
+        self.assertIn("pip install", workflow)
+        self.assertIn("requirements-review.txt", workflow)
 
     def test_pr_template_and_gallery_keep_review_results_out_of_public_index(self) -> None:
         template = (ROOT / ".github" / "PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")
@@ -93,7 +98,7 @@ class PrelaunchCheckTests(unittest.TestCase):
         index_page = (ROOT / "index.html").read_text(encoding="utf-8")
 
         self.assertIn("本 PR 不修改 `gallery-publication.json` 或 `submissions-data.js`", template)
-        self.assertIn("公开展示和首页精选由维护者决定", template)
+        self.assertIn("已合并方案自动进入展示页，首页精选由维护者决定", template)
         self.assertIn("PR comment", submissions_page)
         self.assertIn("不展示维护者审核正文", submissions_page)
 

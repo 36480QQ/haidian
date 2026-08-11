@@ -74,12 +74,47 @@
         "model": {
           "type": "string",
           "minLength": 2
+        },
+        "model_family": {
+          "type": "string",
+          "enum": [
+            "gpt",
+            "claude",
+            "deepseek",
+            "qwen",
+            "glm",
+            "kimi",
+            "grok",
+            "other"
+          ],
+          "description": "Normalized family for aggregation; optional for legacy submissions."
+        },
+        "model_detail": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Participant-declared model or model collaboration detail."
         }
       }
     },
     "generated_at": {
       "type": "string",
       "format": "date-time"
+    },
+    "cover_image": {
+      "description": "Optional participant-authored gallery cover under assets/media/. Omit, null, or use an empty string to keep the generated default cover.",
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^assets/media/[A-Za-z0-9_-]+\\.(png|jpg|jpeg|webp)$"
+        },
+        {
+          "type": "string",
+          "maxLength": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "files": {
       "type": "array",
@@ -115,7 +150,12 @@
               "copyright_statement",
               "visualization",
               "proposal_figure",
-              "rendered_proposal_html"
+              "rendered_proposal_html",
+              "video",
+              "audio",
+              "media_poster",
+              "caption_track",
+              "transcript"
             ]
           },
           "required": {
@@ -124,6 +164,44 @@
           "sha256": {
             "type": "string",
             "pattern": "^[a-f0-9]{64}$"
+          },
+          "language": {
+            "type": "string",
+            "enum": ["zh", "en", "neutral"],
+            "description": "Language of a human-facing display artifact. Language-neutral assets may be shared by both versions."
+          },
+          "translation_of": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_./-]+$",
+            "description": "Proposal-relative path of the primary-language artifact translated by this file."
+          },
+          "title_zh": {
+            "type": "string",
+            "minLength": 2
+          },
+          "title_en": {
+            "type": "string",
+            "minLength": 2
+          },
+          "description_zh": {
+            "type": "string",
+            "minLength": 2
+          },
+          "description_en": {
+            "type": "string",
+            "minLength": 2
+          },
+          "poster": {
+            "type": "string",
+            "pattern": "^assets/media/[A-Za-z0-9_-]+\\.(png|jpg|jpeg|webp)$"
+          },
+          "caption": {
+            "type": "string",
+            "pattern": "^assets/media/[A-Za-z0-9_-]+\\.vtt$"
+          },
+          "transcript": {
+            "type": "string",
+            "pattern": "^assets/media/[A-Za-z0-9_-]+\\.md$"
           }
         }
       }
@@ -138,6 +216,10 @@
       "properties": {
         "self_checked": {
           "type": "boolean"
+        },
+        "readiness_contract": {
+          "const": "persisted-self-check-v1",
+          "description": "Trusted producer contract for newly finalized ready packages; omitted for historical packages during migration."
         },
         "known_blockers": {
           "type": "array",

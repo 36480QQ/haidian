@@ -19,6 +19,7 @@ from typing import Iterable
 
 
 POLICY_ROOT = Path(__file__).resolve().parents[1]
+PERSISTED_READINESS_CONTRACT = "persisted-self-check-v1"
 
 REQUIRED_SECTIONS = [
     "设计依据与资料清单",
@@ -34,6 +35,21 @@ REQUIRED_SECTIONS = [
     "指标体系、面积复算与合规矩阵",
     "风险、版权与合规说明",
     "参考资料",
+]
+REQUIRED_SECTIONS_EN = [
+    "Design Basis and Source List",
+    "Three-Level Scope Framework",
+    "Coordinated Research Area: Industry and Future City Research",
+    "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
+    "Detailed Design of Key Areas",
+    "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
+    "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
+    "Transport, Rail, Municipal Infrastructure, and Public Services",
+    "Blue-Green Network, Public Space, and Urban Character",
+    "Renewal Projects, Implementation Policy, and Phasing",
+    "Metrics, Area Recalculation, and Compliance Matrix",
+    "Risk, Copyright, and Compliance",
+    "References",
 ]
 
 OFFICIAL_REQUIRED_TASK_IDS = {
@@ -69,10 +85,32 @@ GITHUB_LOGIN_RE = re.compile(r"^[A-Za-z0-9-]{1,39}$")
 PROPOSAL_SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,63}$")
 TRACK_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,63}$")
 SCENARIO_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,63}$")
+MODEL_FAMILY_VALUES = {
+    "gpt",
+    "claude",
+    "deepseek",
+    "qwen",
+    "glm",
+    "kimi",
+    "grok",
+    "other",
+}
+MODEL_DISCLOSURE_PLACEHOLDERS = {
+    "agent-declared-model",
+    "replace-with-declared-model",
+    "replace-with-your-model",
+}
 SPATIAL_ITEM_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,63}$")
 ITERATION_RE = re.compile(r"^v?\d+(?:\.\d+){0,2}(?:[-+][A-Za-z0-9.-]+)?$")
 CHANGELOG_VERSION_HEADING_RE = re.compile(r"^##\s+v?\d+(?:\.\d+){0,2}\s+-\s+\d{4}-\d{2}-\d{2}\s*$")
 ALLOWED_ASSET_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}
+ALLOWED_VIDEO_EXTENSIONS = {".mp4", ".webm"}
+ALLOWED_AUDIO_EXTENSIONS = {".mp3", ".m4a", ".ogg"}
+ALLOWED_MEDIA_SIDECAR_EXTENSIONS = {".vtt", ".md"}
+ALLOWED_MEDIA_EXTENSIONS = (
+    ALLOWED_VIDEO_EXTENSIONS | ALLOWED_AUDIO_EXTENSIONS | ALLOWED_MEDIA_SIDECAR_EXTENSIONS
+)
+ALLOWED_MEDIA_FILE_EXTENSIONS = ALLOWED_MEDIA_EXTENSIONS | ALLOWED_ASSET_EXTENSIONS
 ALLOWED_DRAWING_EXTENSIONS = {".pdf"}
 PACKAGE_ROOT_JSON_FILES = {
     "manifest.json",
@@ -131,11 +169,20 @@ ALLOWED_GEOMETRY_FILES = {
     "constraints.geojson",
     "phasing.geojson",
 }
-ALLOWED_REPORT_FILES = {"proposal.html", "narrative.md", "copyright_statement.md"}
+ALLOWED_REPORT_FILES = {
+    "proposal.html",
+    "proposal.zh.html",
+    "proposal.en.html",
+    "narrative.md",
+    "copyright_statement.md",
+}
 ALLOWED_VISUAL_ASSET_EXTENSIONS = {".css", ".js", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp"}
 PARTICIPANT_PROTECTED_GLOBAL_FILES = {
     "submissions-data.js",
     "gallery-publication.json",
+}
+MAINTAINER_CONTROLLED_SUBMISSIONS_ROOT_FILES = {
+    "submissions/README.md",
 }
 PROTECTED_REVIEW_ARTIFACT_PREFIXES = (
     ".maintainer-review/",
@@ -151,6 +198,34 @@ FORMAL_NONEMPTY_GEOMETRY_FILES = {
     "public_space.geojson",
     "phasing.geojson",
 }
+# constraints.geojson is deliberately absent from FORMAL_NONEMPTY_GEOMETRY_FILES: with no official
+# regulatory-control geometry published for this site, an empty constraint layer is a legitimate and
+# accepted outcome. The advisory below never changes that; it only asks that the gap be recorded
+# somewhere machine-readable, so "deliberately empty" is distinguishable from "never looked at".
+CONSTRAINTS_DATA_GAP_DECLARATION_KEYS = (
+    "data_gap",
+    "data_gaps",
+    "missing_official_layers",
+    "constraint_status",
+)
+CONSTRAINTS_GAP_ASSUMPTION_ID_PATTERN = re.compile(r"control|constraint|regulat", re.IGNORECASE)
+CONSTRAINTS_GAP_ASSUMPTION_TERMS = (
+    "regulatory control",
+    "regulatory plan",
+    "control plan",
+    "statutory control",
+    "road redline",
+    "road red line",
+    "redline",
+    "red line",
+    "constraint",
+    "控规",
+    "管控",
+    "红线",
+    "约束",
+    "控制线",
+    "文保",
+)
 TRUSTED_BOUNDARY_SOURCE_TYPES = {
     "official_public",
     "official_open_data",
@@ -205,15 +280,21 @@ REQUIRED_DESIGN_DEPTH_IDS = {
     "risk_missing_data",
 }
 REFERENCE_RE = re.compile(r"\[(source|standard|depth|data|metric):([^\]\s]+)\]")
+PROPOSAL_FORMAT_VERSION = "2"
+BILINGUAL_CONTRACT_VERSION = "1"
+MAX_INLINE_REFERENCES_PER_BLOCK = 8
+MAX_CONSECUTIVE_REFERENCES = 3
 MARKDOWN_IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 MAX_MARKDOWN_BYTES = 256 * 1024
 MAX_JSON_BYTES = 512 * 1024
 MAX_GEOJSON_BYTES = 10 * 1024 * 1024
 MAX_ASSET_BYTES = 5 * 1024 * 1024
+MAX_VIDEO_BYTES = 20 * 1024 * 1024
+MAX_AUDIO_BYTES = 8 * 1024 * 1024
 MAX_DRAWING_BYTES = 10 * 1024 * 1024
 MAX_HTML_BYTES = 2 * 1024 * 1024
 MAX_VISUAL_ASSET_BYTES = 5 * 1024 * 1024
-MAX_TOTAL_BYTES = 20 * 1024 * 1024
+MAX_TOTAL_BYTES = 40 * 1024 * 1024
 MIN_FORMAL_PROPOSAL_COMPACT_CHARS = 5000
 MIN_REQUIRED_SECTION_COMPACT_CHARS = 280
 MIN_ENGLISH_PROPOSAL_LETTERS = 2000
@@ -253,6 +334,21 @@ FORBIDDEN_HTML_PATTERNS = [
     (re.compile(r"\bsendBeacon\s*\(", re.I), "HTML report must not send beacon requests"),
     (re.compile(r"(?:src|href)\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML report must not load remote resources"),
     (re.compile(r"url\s*\(\s*['\"]?(?:https?:)?//", re.I), "HTML report CSS must not load remote assets"),
+]
+FORBIDDEN_VISUAL_HTML_PATTERNS = [
+    (re.compile(r"<iframe\b", re.I), "visual HTML must not contain iframe embeds"),
+    (re.compile(r"<form\b", re.I), "visual HTML must not contain form submission UI"),
+    (re.compile(r"\bfetch\s*\(", re.I), "visual HTML must not call fetch()"),
+    (re.compile(r"\bXMLHttpRequest\b", re.I), "visual HTML must not use XMLHttpRequest"),
+    (re.compile(r"\bWebSocket\b", re.I), "visual HTML must not open WebSocket connections"),
+    (re.compile(r"\bEventSource\b", re.I), "visual HTML must not open EventSource connections"),
+    (re.compile(r"\bsendBeacon\s*\(", re.I), "visual HTML must not send beacon requests"),
+    (re.compile(r"@import\s+url\s*\(\s*['\"]?(?:https?:)?//", re.I), "visual HTML/CSS must not import remote styles"),
+    (re.compile(r"url\s*\(\s*['\"]?(?:https?:)?//", re.I), "visual HTML CSS must not load remote assets"),
+    (re.compile(r"<script\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote scripts"),
+    (re.compile(r"<link\b[^>]*\bhref\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote linked resources"),
+    (re.compile(r"<(?:img|source|video|audio)\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "visual HTML must not load remote media"),
+    (re.compile(r"<(?:video|audio)\b[^>]*\bautoplay\b", re.I), "visual HTML must not autoplay media"),
 ]
 
 
@@ -299,6 +395,42 @@ def normalize_changed_path(raw_path: str) -> str:
     return path.as_posix()
 
 
+def first_symbolic_link(repo_root: Path, relative_path: str) -> Path | None:
+    """Return the first symlink traversed by a repository-relative path."""
+    candidate = repo_root
+    for part in PurePosixPath(relative_path).parts:
+        candidate /= part
+        if candidate.is_symlink():
+            return candidate
+    return None
+
+
+def report_symbolic_link(report: ValidationReport, repo_root: Path, path: Path) -> None:
+    relative = path.relative_to(repo_root).as_posix()
+    report.add_error(f"{relative}: symbolic links are not allowed in submission packages")
+
+
+def submission_directory_is_safe(
+    report: ValidationReport, repo_root: Path, proposal_dir: str
+) -> bool:
+    """Reject symlinks before a package validator reads package-controlled files."""
+    linked_path = first_symbolic_link(repo_root, proposal_dir)
+    if linked_path is not None:
+        report_symbolic_link(report, repo_root, linked_path)
+        return False
+
+    base = repo_root / proposal_dir
+    if not base.exists():
+        return True
+    for directory, names, files in os.walk(base, followlinks=False):
+        for name in [*names, *files]:
+            candidate = Path(directory) / name
+            if candidate.is_symlink():
+                report_symbolic_link(report, repo_root, candidate)
+                return False
+    return True
+
+
 def load_changed_files(args: argparse.Namespace) -> list[str]:
     files: list[str] = []
     files.extend(args.changed_file or [])
@@ -331,6 +463,23 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
         value = value.strip().strip('"').strip("'")
         metadata[key.strip()] = value
     return metadata, body
+
+
+def requires_bilingual_display(repo_root: Path, proposal_dir: str) -> bool:
+    """Return whether the proposal explicitly opts into the blocking contract.
+
+    Historical v1 and early v2 packages remain valid without being rewritten.
+    New scaffolds declare the independent bilingual contract version so future
+    format revisions do not accidentally redefine the migration boundary.
+    """
+    proposal_path = repo_root / proposal_dir / "proposal.md"
+    if not proposal_path.is_file():
+        return False
+    try:
+        metadata, _ = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
+    except UnicodeDecodeError:
+        return False
+    return requires_bilingual_contract(metadata)
 
 
 def parse_track_metadata(raw_value: object) -> list[str]:
@@ -493,8 +642,189 @@ def has_readability_reference(text: str) -> bool:
     return bool(REFERENCE_RE.search(text))
 
 
+def proposal_format_version(metadata: dict[str, str]) -> str:
+    """Return the explicit proposal contract version, preserving legacy files as v1."""
+    return metadata.get("proposal_format_version", "1").strip() or "1"
+
+
+def requires_bilingual_contract(metadata: dict[str, str]) -> bool:
+    """Return whether a v2 proposal explicitly accepts the bilingual gate."""
+    return (
+        proposal_format_version(metadata) == PROPOSAL_FORMAT_VERSION
+        and metadata.get("bilingual_contract_version") == BILINGUAL_CONTRACT_VERSION
+    )
+
+
+def reference_density_issues(body: str) -> list[str]:
+    """Find evidence dumps that interrupt the human reading layer."""
+    issues: list[str] = []
+    for block in re.split(r"\n\s*\n", body):
+        lines = [line for line in block.splitlines() if line.strip()]
+        structured_lines = sum(
+            1
+            for line in lines
+            if line.lstrip().startswith(("|", "- ", "* ", "+ "))
+            or re.match(r"^\s*\d+[.)]\s+", line)
+        )
+        # A table or reference list may legitimately contain many rows. Apply
+        # density limits per row/item instead of treating the whole structure
+        # as one prose paragraph.
+        units = lines if len(lines) >= 2 and structured_lines >= 2 else [block]
+        for unit in units:
+            refs = list(REFERENCE_RE.finditer(unit))
+            if len(refs) > MAX_INLINE_REFERENCES_PER_BLOCK:
+                issues.append(
+                    f"a paragraph/block contains {len(refs)} evidence markers; keep the full index in structured files"
+                )
+                continue
+            longest = 0
+            run = 0
+            previous: re.Match[str] | None = None
+            for match in refs:
+                if previous is None:
+                    run = 1
+                else:
+                    separator = unit[previous.end() : match.start()]
+                    if len(separator) <= 12 and re.fullmatch(r"[\s、,，;；:/和与&+]*", separator):
+                        run += 1
+                    else:
+                        run = 1
+                longest = max(longest, run)
+                previous = match
+            if longest > MAX_CONSECUTIVE_REFERENCES:
+                issues.append(
+                    f"a paragraph/block contains {longest} consecutive evidence markers; attach no more than {MAX_CONSECUTIVE_REFERENCES} to one claim"
+                )
+    return list(dict.fromkeys(issues))
+
+
 def is_under_assets(parts: list[str]) -> bool:
     return len(parts) >= 5 and parts[3] == "assets"
+
+
+def is_under_media(parts: list[str]) -> bool:
+    return len(parts) == 6 and parts[3] == "assets" and parts[4] == "media"
+
+
+def media_signature_is_valid(path: Path) -> bool:
+    extension = path.suffix.lower()
+    data = path.read_bytes()[:16]
+    if extension in {".mp4", ".m4a"}:
+        return len(data) >= 8 and data[4:8] == b"ftyp"
+    if extension == ".webm":
+        return data.startswith(b"\x1a\x45\xdf\xa3")
+    if extension == ".mp3":
+        return data.startswith(b"ID3") or (
+            len(data) >= 2 and data[0] == 0xFF and data[1] & 0xE0 == 0xE0
+        )
+    if extension == ".ogg":
+        return data.startswith(b"OggS")
+    return True
+
+
+def validate_media_manifest_entries(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    files: list[object],
+    listed_paths: set[str],
+) -> None:
+    entries: dict[str, dict] = {}
+    for item in files:
+        if not isinstance(item, dict) or not isinstance(item.get("path"), str):
+            continue
+        try:
+            safe_path = normalize_changed_path(item["path"])
+        except ValueError:
+            # The main manifest loop reports the unsafe path. Never inspect it here.
+            continue
+        entries[safe_path] = item
+    media_roles = {"video", "audio", "media_poster", "caption_track", "transcript"}
+    for rel_path, item in entries.items():
+        role = item.get("role")
+        extension = Path(rel_path).suffix.lower()
+        if role not in media_roles and not rel_path.startswith("assets/media/"):
+            continue
+        if not rel_path.startswith("assets/media/") or extension not in ALLOWED_MEDIA_FILE_EXTENSIONS:
+            report.add_error(
+                f"{proposal_dir}/manifest.json: media `{rel_path}` must stay under assets/media/ with a supported extension"
+            )
+            continue
+        expected_role = (
+            "video"
+            if extension in ALLOWED_VIDEO_EXTENSIONS
+            else "audio"
+            if extension in ALLOWED_AUDIO_EXTENSIONS
+            else "caption_track"
+            if extension == ".vtt"
+            else "transcript"
+            if extension == ".md"
+            else "media_poster"
+        )
+        if role != expected_role:
+            report.add_error(
+                f"{proposal_dir}/manifest.json: `{rel_path}` must use role={expected_role}"
+            )
+            continue
+        repository_path = f"{proposal_dir}/{rel_path}"
+        linked_path = first_symbolic_link(repo_root, repository_path)
+        if linked_path is not None:
+            report_symbolic_link(report, repo_root, linked_path)
+            continue
+        full_path = repo_root / repository_path
+        if not full_path.is_file():
+            continue
+        if extension in ALLOWED_VIDEO_EXTENSIONS | ALLOWED_AUDIO_EXTENSIONS:
+            if not media_signature_is_valid(full_path):
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: `{rel_path}` does not match its declared media container"
+                )
+            for field in ("title_zh", "title_en", "description_zh", "description_en"):
+                value = item.get(field)
+                if not isinstance(value, str) or len(value.strip()) < 2:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` needs {field}"
+                    )
+            required_refs = ["transcript"]
+            if role == "video":
+                required_refs.extend(["poster", "caption"])
+            for field in required_refs:
+                reference = item.get(field)
+                if not isinstance(reference, str) or reference not in listed_paths:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` needs a manifest-listed {field}"
+                    )
+                    continue
+                referenced_role = entries.get(reference, {}).get("role")
+                expected_ref_role = {
+                    "poster": "media_poster",
+                    "caption": "caption_track",
+                    "transcript": "transcript",
+                }[field]
+                if referenced_role != expected_ref_role:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: media `{rel_path}` {field} must reference role={expected_ref_role}"
+                    )
+        elif role == "caption_track":
+            try:
+                if not full_path.read_text(encoding="utf-8").lstrip().startswith("WEBVTT"):
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: caption `{rel_path}` must be UTF-8 WebVTT"
+                    )
+            except UnicodeDecodeError:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: caption `{rel_path}` must be UTF-8 WebVTT"
+                )
+        elif role == "transcript":
+            try:
+                if len(full_path.read_text(encoding="utf-8").strip()) < 20:
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: transcript `{rel_path}` must describe the media content"
+                    )
+            except UnicodeDecodeError:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: transcript `{rel_path}` must be UTF-8 Markdown"
+                )
 
 
 def is_under_geometry(parts: list[str]) -> bool:
@@ -526,7 +856,11 @@ def is_under_report(parts: list[str]) -> bool:
 
 
 def is_visual_index(parts: list[str]) -> bool:
-    return len(parts) == 5 and parts[3] == "visual" and parts[4] == "index.html"
+    return (
+        len(parts) == 5
+        and parts[3] == "visual"
+        and parts[4] in {"index.html", "index.zh.html", "index.en.html"}
+    )
 
 
 def is_under_visual_assets(parts: list[str]) -> bool:
@@ -540,6 +874,45 @@ def proposal_dir_from_submission_path(path: str) -> str | None:
     return None
 
 
+DISPLAY_BASE_FILES = {
+    "proposal.md",
+    "report/proposal.html",
+    "visual/index.html",
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf",
+}
+
+
+def localized_path(path: str, language: str) -> str:
+    pure = PurePosixPath(path)
+    suffix = pure.suffix
+    return pure.with_name(f"{pure.stem}.{language}{suffix}").as_posix()
+
+
+def is_localized_display_path(path: str) -> bool:
+    return bool(re.search(r"\.(?:zh|en)\.(?:md|html|pdf|png|jpe?g|webp|gif|svg)$", path, re.I))
+
+
+def primary_path_from_localized(path: str) -> tuple[str, str] | None:
+    pure = PurePosixPath(path)
+    match = re.match(r"^(.+)\.(zh|en)(\.[^.]+)$", pure.name, re.I)
+    if not match:
+        return None
+    primary_name = match.group(1) + match.group(3)
+    return pure.with_name(primary_name).as_posix(), match.group(2).lower()
+
+
+def is_display_material(path: str) -> bool:
+    if path in DISPLAY_BASE_FILES or is_localized_display_path(path):
+        return True
+    return path.startswith("assets/figures/") and Path(path).suffix.lower() in ALLOWED_ASSET_EXTENSIONS
+
+
+def relative_to_proposal(path: str, proposal_dir: str) -> str:
+    prefix = proposal_dir.rstrip("/") + "/"
+    return path[len(prefix) :] if path.startswith(prefix) else path
+
+
 def load_json_file(report: ValidationReport, path: Path, display_path: str) -> object | None:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -548,6 +921,31 @@ def load_json_file(report: ValidationReport, path: Path, display_path: str) -> o
     except json.JSONDecodeError as exc:
         report.add_error(f"{display_path}: invalid JSON: {exc.msg} at line {exc.lineno}")
     return None
+
+
+def validate_agent_disclosure(
+    report: ValidationReport, data: object, display_path: str
+) -> None:
+    """Validate optional machine-readable model disclosure without breaking legacy packages."""
+    if not isinstance(data, dict):
+        return
+    family = data.get("model_family")
+    detail = data.get("model_detail")
+    if family is None and detail is None:
+        return
+    if family is None:
+        report.add_error(f"{display_path}: model_detail requires model_family")
+    elif not isinstance(family, str) or family not in MODEL_FAMILY_VALUES:
+        allowed = ", ".join(sorted(MODEL_FAMILY_VALUES))
+        report.add_error(f"{display_path}: model_family must be one of: {allowed}")
+    if detail is None:
+        report.add_error(f"{display_path}: model_family requires model_detail")
+    elif not isinstance(detail, str) or len(detail.strip()) < 2:
+        report.add_error(f"{display_path}: model_detail must be a non-empty string")
+    elif detail.strip().casefold() in MODEL_DISCLOSURE_PLACEHOLDERS:
+        report.add_error(
+            f"{display_path}: model_detail must replace the scaffold placeholder with a declared model"
+        )
 
 
 def policy_file(repo_root: Path, relative_path: str) -> Path:
@@ -662,6 +1060,80 @@ def geometry_coordinates_are_valid(geometry: dict) -> bool:
     return False
 
 
+def _collect_strings(value: object, sink: list[str]) -> None:
+    """Flatten every string (including object keys) reachable from ``value``."""
+    if isinstance(value, str):
+        sink.append(value)
+    elif isinstance(value, dict):
+        for key, item in value.items():
+            sink.append(str(key))
+            _collect_strings(item, sink)
+    elif isinstance(value, list):
+        for item in value:
+            _collect_strings(item, sink)
+
+
+def constraints_file_declares_data_gap(data: object) -> bool:
+    """True when constraints.geojson itself records why its feature set is empty."""
+    if not isinstance(data, dict):
+        return False
+    return any(bool(data.get(key)) for key in CONSTRAINTS_DATA_GAP_DECLARATION_KEYS)
+
+
+def assumptions_declare_constraints_gap(data: object) -> bool:
+    """True when assumptions.json registers the missing regulatory-control inputs.
+
+    Both the scaffold default (`A-CONTROLS-001`) and the many hand-written variants in
+    existing packages are accepted: an entry qualifies when its identifier names controls,
+    constraints or regulation, or when any of its text mentions the missing control inputs.
+    """
+    if not isinstance(data, dict):
+        return False
+    entries = data.get("assumptions")
+    if not isinstance(entries, list):
+        return False
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        for key in ("id", "assumption_id"):
+            value = entry.get(key)
+            if isinstance(value, str) and CONSTRAINTS_GAP_ASSUMPTION_ID_PATTERN.search(value):
+                return True
+        strings: list[str] = []
+        _collect_strings(entry, strings)
+        blob = " ".join(strings).lower()
+        if any(term in blob for term in CONSTRAINTS_GAP_ASSUMPTION_TERMS):
+            return True
+    return False
+
+
+def validate_empty_constraints_declaration(
+    report: ValidationReport, path: Path, data: object, display_path: str
+) -> None:
+    """Advise (never block) when an empty constraint layer leaves the gap unrecorded.
+
+    An empty constraints.geojson stays valid: no official regulatory-control geometry is
+    published for this site, and inventing one is worse than leaving the set empty. This
+    only asks for the gap to be stated once, either in the file or in assumptions.json.
+    """
+    if constraints_file_declares_data_gap(data):
+        return
+    assumptions_path = path.parent.parent / "assumptions.json"
+    try:
+        assumptions = json.loads(assumptions_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        assumptions = None
+    if assumptions_declare_constraints_gap(assumptions):
+        return
+    report.add_warning(
+        f"{display_path}: empty constraint layer is accepted and is not a blocking issue, but the "
+        "missing official control data is not recorded anywhere; add a top-level `data_gap` object to "
+        "this file, or an assumptions.json entry covering the missing regulatory controls. Keep the "
+        "feature list empty unless you have citable official or cleared geometry - never fabricate "
+        "constraint geometry, and never label an inferred surface `official_constraint`."
+    )
+
+
 def validate_geojson_file(
     report: ValidationReport,
     repo_root: Path,
@@ -683,6 +1155,8 @@ def validate_geojson_file(
         return 0
     if require_features and not features:
         report.add_error(f"{display_path}: this geometry file needs at least one feature")
+    if geometry_name == "constraints.geojson" and not features:
+        validate_empty_constraints_declaration(report, path, data, display_path)
 
     allowed_layers = load_allowed_layers(repo_root)
     source_enums = load_string_enums(repo_root, "brief/site-package/enums/source_types.json")
@@ -815,11 +1289,223 @@ def validate_metrics_file(report: ValidationReport, path: Path, display_path: st
                 report.add_error(f"{label}: ratio value must be between 0 and 1")
 
 
+def _simulation_source_declared(metric: object) -> bool:
+    if not isinstance(metric, dict):
+        return False
+    source_files = metric.get("source_files")
+    if not isinstance(source_files, list):
+        return False
+    for source in source_files:
+        if not isinstance(source, str):
+            continue
+        normalized = source.split("#", 1)[0].strip().lstrip("./")
+        if normalized == "simulation.json":
+            return True
+    return False
+
+
+def _simulation_scalar_equal(left: object, right: object) -> bool:
+    if isinstance(left, bool) or isinstance(right, bool):
+        return left == right
+    if not isinstance(left, (int, float)) or not isinstance(right, (int, float)):
+        return left == right
+    scale = max(1.0, abs(float(left)), abs(float(right)))
+    return abs(float(left) - float(right)) <= 1e-9 * scale
+
+
+def _simulation_issue(report: ValidationReport, strict: bool, message: str) -> None:
+    if strict:
+        report.add_error(message)
+    else:
+        report.add_warning(message + "; legacy simulation remains compatible")
+
+
+def validate_simulation_consistency(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    metrics_path: Path,
+    simulation_path: Path,
+    *,
+    strict: bool,
+) -> None:
+    """Check that claimed simulation aggregates are reproducible from task records."""
+    simulation_display = f"{proposal_dir}/simulation.json"
+    simulation = load_json_file(report, simulation_path, simulation_display)
+    if not isinstance(simulation, dict):
+        return
+
+    tasks = simulation.get("tasks")
+    if not isinstance(tasks, list) or not tasks or not all(isinstance(task, dict) for task in tasks):
+        _simulation_issue(
+            report,
+            strict,
+            f"{simulation_display}: tasks must be a non-empty array of objects for reproducible aggregates",
+        )
+        return
+
+    task_count = simulation.get("task_count")
+    if isinstance(task_count, bool) or not isinstance(task_count, int):
+        _simulation_issue(
+            report,
+            strict,
+            f"{simulation_display}: task_count must be an integer matching tasks.length",
+        )
+    elif task_count != len(tasks):
+        _simulation_issue(
+            report,
+            strict,
+            f"{simulation_display}: task_count={task_count} does not match tasks.length={len(tasks)}",
+        )
+
+    derived: dict[str, int | float] = {"simulation_task_count": len(tasks)}
+    derivation_problems: dict[str, str] = {}
+
+    outcomes = [task.get("outcome") for task in tasks]
+    if all(isinstance(outcome, str) and outcome.strip() for outcome in outcomes):
+        successful = sum(
+            1
+            for outcome in outcomes
+            if outcome == "success" or outcome.endswith("_success")
+        )
+        derived["simulation_success_rate"] = successful / len(tasks)
+    else:
+        derivation_problems["simulation_success_rate"] = (
+            "each task needs a non-empty outcome; use `success` or an outcome ending in `_success` for successful tasks"
+        )
+
+    schema_values = [task.get("dispatch_schema_valid") for task in tasks]
+    if all(isinstance(value, bool) for value in schema_values):
+        derived["tool_schema_pass_rate"] = sum(schema_values) / len(tasks)
+    else:
+        derivation_problems["tool_schema_pass_rate"] = "each task needs boolean dispatch_schema_valid"
+
+    energy_values = [
+        (task.get("energy_used_kwh"), task.get("energy_budget_kwh"))
+        for task in tasks
+    ]
+    if all(
+        isinstance(used, (int, float))
+        and not isinstance(used, bool)
+        and isinstance(budget, (int, float))
+        and not isinstance(budget, bool)
+        for used, budget in energy_values
+    ):
+        derived["energy_budget_violations"] = sum(
+            1 for used, budget in energy_values if used > budget
+        )
+    else:
+        derivation_problems["energy_budget_violations"] = (
+            "each task needs numeric energy_used_kwh and energy_budget_kwh"
+        )
+
+    audit_values = [task.get("audit_complete") for task in tasks]
+    if all(isinstance(value, bool) for value in audit_values):
+        derived["audit_completeness"] = sum(audit_values) / len(tasks)
+    else:
+        derivation_problems["audit_completeness"] = "each task needs boolean audit_complete"
+
+    metrics_data = load_json_file(report, metrics_path, f"{proposal_dir}/metrics.json")
+    metric_items = metrics_data.get("metrics") if isinstance(metrics_data, dict) else None
+    if not isinstance(metric_items, dict):
+        return
+
+    for name, problem in derivation_problems.items():
+        metric = metric_items.get(name)
+        if isinstance(metric, dict) and metric.get("status") == "known" and _simulation_source_declared(metric):
+            _simulation_issue(
+                report,
+                strict,
+                f"{simulation_display}: metrics.{name} cannot be recomputed; {problem}",
+            )
+
+    for name, expected in derived.items():
+        metric = metric_items.get(name)
+        if not isinstance(metric, dict) or metric.get("status") != "known":
+            continue
+        if not _simulation_source_declared(metric):
+            continue
+        actual = metric.get("value")
+        if not isinstance(actual, (int, float)) or isinstance(actual, bool):
+            continue
+        if not _simulation_scalar_equal(actual, expected):
+            _simulation_issue(
+                report,
+                strict,
+                f"{simulation_display}: metrics.{name}={actual} does not match the task-derived value {expected}",
+            )
+
+    baseline = simulation.get("baselines")
+    if not isinstance(baseline, dict):
+        return
+
+    metric_to_baseline = {
+        "simulation_success_rate": "success_rate",
+        "tool_schema_pass_rate": "tool_schema_pass_rate",
+        "high_risk_intercept_rate": "high_risk_intercept_rate",
+        "energy_budget_violations": "energy_budget_violations",
+        "replan_p95_seconds": "replan_p95_seconds",
+        "audit_completeness": "audit_completeness",
+    }
+    harness_baseline = baseline.get("urban_llm_harness")
+    if isinstance(harness_baseline, dict):
+        for metric_name, baseline_name in metric_to_baseline.items():
+            metric = metric_items.get(metric_name)
+            baseline_value = harness_baseline.get(baseline_name)
+            if (
+                isinstance(metric, dict)
+                and metric.get("status") == "known"
+                and _simulation_source_declared(metric)
+                and isinstance(metric.get("value"), (int, float))
+                and not isinstance(metric.get("value"), bool)
+                and isinstance(baseline_value, (int, float))
+                and not isinstance(baseline_value, bool)
+                and not _simulation_scalar_equal(metric["value"], baseline_value)
+            ):
+                _simulation_issue(
+                    report,
+                    strict,
+                    f"{simulation_display}: metrics.{metric_name}={metric['value']} conflicts with baselines.urban_llm_harness.{baseline_name}={baseline_value}; urban_llm_harness must mirror the task-derived aggregate, so record any distinct evaluation under a different documented baseline",
+                )
+
+    evaluation_path = repo_root / proposal_dir / "visual" / "assets" / "evaluation-baseline.json"
+    if not evaluation_path.is_file():
+        return
+    evaluation_display = f"{proposal_dir}/visual/assets/evaluation-baseline.json"
+    evaluation = load_json_file(report, evaluation_path, evaluation_display)
+    if not isinstance(evaluation, dict):
+        return
+    evaluation_metrics = evaluation.get("metrics")
+    if not isinstance(evaluation_metrics, dict):
+        return
+    for baseline_name, values in baseline.items():
+        evaluation_values = evaluation_metrics.get(baseline_name)
+        if not isinstance(values, dict) or not isinstance(evaluation_values, dict):
+            continue
+        for key, value in values.items():
+            other = evaluation_values.get(key)
+            if (
+                isinstance(value, (int, float))
+                and not isinstance(value, bool)
+                and isinstance(other, (int, float))
+                and not isinstance(other, bool)
+                and not _simulation_scalar_equal(value, other)
+            ):
+                _simulation_issue(
+                    report,
+                    strict,
+                    f"{evaluation_display}: metrics.{baseline_name}.{key}={other} conflicts with simulation.json baselines.{baseline_name}.{key}={value}",
+                )
+
+
 def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_dir: str) -> tuple[dict | None, str]:
     manifest_path = repo_root / proposal_dir / "manifest.json"
     data = load_json_file(report, manifest_path, f"{proposal_dir}/manifest.json")
     if not isinstance(data, dict):
         return None, "unknown"
+    validate_agent_disclosure(
+        report, data.get("agent"), f"{proposal_dir}/manifest.json: agent"
+    )
     stage = data.get("submission_stage")
     if stage not in SUBMISSION_STAGES:
         report.add_error(
@@ -857,6 +1543,7 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
         report.add_error(
             f"{proposal_dir}/manifest.json: project_id must be centennial-jingzhang-ai-belt"
         )
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
     files = data.get("files")
     listed_paths: set[str] = set()
     if not isinstance(files, list) or not files:
@@ -872,36 +1559,76 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
             except ValueError as exc:
                 report.add_error(f"{proposal_dir}/manifest.json: files[{index}] {exc}")
                 continue
+            translation_entry = is_localized_display_path(safe_path)
             if safe_path in listed_paths:
-                report.add_error(
-                    f"{proposal_dir}/manifest.json: duplicate file path `{safe_path}`"
-                )
+                message = f"{proposal_dir}/manifest.json: duplicate file path `{safe_path}`"
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual metadata does not block review")
+                else:
+                    report.add_error(message)
                 continue
             listed_paths.add(safe_path)
             listed_file = repo_root / proposal_dir / safe_path
             if not listed_file.is_file():
-                report.add_error(
-                    f"{proposal_dir}/manifest.json: listed file `{safe_path}` is missing"
-                )
+                message = f"{proposal_dir}/manifest.json: listed file `{safe_path}` is missing"
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual display remains non-blocking")
+                else:
+                    report.add_error(message)
                 continue
             declared_digest = item.get("sha256")
             if safe_path != "manifest.json" and not declared_digest:
                 message = f"{proposal_dir}/manifest.json: listed file `{safe_path}` needs sha256"
-                if package_type == "professional_design_package":
+                if translation_entry and not strict_bilingual:
+                    report.add_warning(message + "; legacy bilingual metadata does not block review")
+                elif package_type == "professional_design_package":
                     report.add_error(message)
                 else:
                     report.add_warning(message + " (legacy package compatibility)")
             elif declared_digest:
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:
-                    report.add_error(
-                        f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`"
+                    message = (
+                        f"{proposal_dir}/manifest.json: sha256 mismatch for `{safe_path}`; "
+                        f"declared={declared_digest}, actual={actual_digest}"
                     )
+                    if translation_entry and not strict_bilingual:
+                        report.add_warning(message + "; legacy bilingual metadata does not block review")
+                    else:
+                        report.add_error(message)
         for required in sorted(REQUIRED_AI_PACKAGE_FILES):
             if required not in listed_paths:
                 report.add_error(
                     f"{proposal_dir}/manifest.json: required file `{required}` must be listed in files"
                 )
+        validate_media_manifest_entries(report, repo_root, proposal_dir, files, listed_paths)
+        cover_image = data.get("cover_image")
+        if cover_image not in (None, ""):
+            if not isinstance(cover_image, str) or not cover_image.startswith("assets/media/"):
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image must be empty or a local assets/media/ image"
+                )
+            elif cover_image not in listed_paths:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image `{cover_image}` must be listed in files"
+                )
+            elif Path(cover_image).suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: cover_image must use PNG, JPEG, or WebP"
+                )
+            else:
+                cover_entry = next(
+                    (
+                        item
+                        for item in files
+                        if isinstance(item, dict) and item.get("path") == cover_image
+                    ),
+                    {},
+                )
+                if cover_entry.get("role") != "media_poster":
+                    report.add_error(
+                        f"{proposal_dir}/manifest.json: cover_image must reference role=media_poster"
+                    )
     validation_claim = data.get("validation_claim")
     if isinstance(validation_claim, dict):
         known_blockers = validation_claim.get("known_blockers")
@@ -910,6 +1637,99 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                 f"{proposal_dir}/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
             )
     return data, stage
+
+
+def validate_readiness_claim(
+    report: ValidationReport,
+    proposal_dir: str,
+    manifest: dict | None,
+    self_check: dict | None,
+    *,
+    allow_pending_self_check: bool = False,
+    readiness_contract_required: bool = False,
+) -> None:
+    """Keep new ready packages strict without invalidating pre-contract history."""
+    if not isinstance(manifest, dict):
+        return
+    if manifest.get("package_state") != "ready_for_review":
+        return
+    claim = manifest.get("validation_claim")
+    readiness_contract = (
+        claim.get("readiness_contract") if isinstance(claim, dict) else None
+    )
+    enforce_persisted_evidence = readiness_contract == PERSISTED_READINESS_CONTRACT
+    if readiness_contract is not None and not enforce_persisted_evidence:
+        report.add_error(
+            f"{proposal_dir}/manifest.json: unsupported readiness_contract "
+            f"{readiness_contract!r}"
+        )
+    if readiness_contract_required and readiness_contract != PERSISTED_READINESS_CONTRACT:
+        report.add_error(
+            f"{proposal_dir}/manifest.json: trusted base requires "
+            f"validation_claim.readiness_contract={PERSISTED_READINESS_CONTRACT!r} "
+            "for this new or previously contracted ready package"
+        )
+        enforce_persisted_evidence = True
+
+    def report_pending_or_error(message: str) -> None:
+        if allow_pending_self_check:
+            report.add_warning(message + "; pending self-check completion")
+        elif enforce_persisted_evidence:
+            report.add_error(message)
+        else:
+            report.add_warning(
+                message
+                + "; legacy package accepted for intake; run "
+                "self_check_submission.py --mark-self-checked to migrate"
+            )
+
+    if not isinstance(claim, dict) or claim.get("self_checked") is not True:
+        report_pending_or_error(
+            f"{proposal_dir}/manifest.json: packages marked ready_for_review "
+            "must set validation_claim.self_checked=true after running self_check"
+        )
+
+    if not isinstance(self_check, dict):
+        report_pending_or_error(
+            f"{proposal_dir}/self_check.json: packages marked ready_for_review "
+            "must persist a four-gate self-check report"
+        )
+        return
+    if self_check.get("ok") is not True:
+        report_pending_or_error(
+            f"{proposal_dir}/self_check.json: packages marked ready_for_review "
+            "must persist ok=true"
+        )
+    if self_check.get("can_enter_formal_review") is not True:
+        report_pending_or_error(
+            f"{proposal_dir}/self_check.json: packages marked ready_for_review "
+            "must persist can_enter_formal_review=true"
+        )
+
+    required_gates = {
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE",
+    }
+    checks = self_check.get("checks")
+    persisted_gates = {
+        check.get("check_id"): check
+        for check in checks
+        if isinstance(check, dict) and isinstance(check.get("check_id"), str)
+    } if isinstance(checks, list) else {}
+    incomplete_gates = sorted(
+        gate
+        for gate in required_gates
+        if not isinstance(persisted_gates.get(gate), dict)
+        or persisted_gates[gate].get("result") != "pass"
+        or persisted_gates[gate].get("severity") != "blocking"
+    )
+    if incomplete_gates:
+        report_pending_or_error(
+            f"{proposal_dir}/self_check.json: packages marked ready_for_review "
+            "must persist pass/blocking gates for " + ", ".join(incomplete_gates)
+        )
 
 
 def validate_compliance_matrix_file(report: ValidationReport, path: Path, display_path: str) -> None:
@@ -1084,14 +1904,16 @@ def validate_self_check_file(
     path: Path,
     display_path: str,
     stage: str,
-) -> None:
+    *,
+    allow_pending_self_check: bool = False,
+) -> dict | None:
     data = load_json_file(report, path, display_path)
     if not isinstance(data, dict):
-        return
+        return None
     checks = data.get("checks")
     if not isinstance(checks, list):
         report.add_error(f"{display_path}: checks must be an array")
-        return
+        return data
     for index, check in enumerate(checks):
         label = f"{display_path}: checks[{index}]"
         if not isinstance(check, dict):
@@ -1105,9 +1927,12 @@ def validate_self_check_file(
             report.add_error(f"{label}: severity must be blocking, major, minor, or info")
         if result == "fail" and severity == "blocking":
             check_id = check.get("check_id", f"index-{index}")
-            report.add_error(
-                f"{display_path}: formal submission has blocking failed self-check `{check_id}`"
-            )
+            message = f"{display_path}: formal submission has blocking failed self-check `{check_id}`"
+            if allow_pending_self_check:
+                report.add_warning(message + "; pending self-check replacement")
+            else:
+                report.add_error(message)
+    return data
 
 
 def collect_json_ids(data: object, list_key: str, id_key: str) -> set[str]:
@@ -1189,21 +2014,62 @@ def validate_proposal_embedded_images(
             )
 
 
-def validate_proposal_html_file(report: ValidationReport, path: Path, display_path: str) -> None:
+def validate_proposal_html_file(
+    report: ValidationReport,
+    path: Path,
+    display_path: str,
+    require_primary_figures: bool = True,
+    translation_advisory: bool = False,
+) -> None:
     try:
         text = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
-        report.add_error(f"{display_path}: proposal HTML report must be UTF-8 text")
+        message = f"{display_path}: proposal HTML report must be UTF-8 text"
+        if translation_advisory:
+            report.add_warning(message + "; bilingual completeness does not block review")
+        else:
+            report.add_error(message)
         return
     for pattern, reason in FORBIDDEN_HTML_PATTERNS:
         if pattern.search(text):
             report.add_error(f"{display_path}: {reason}")
-    for required in sorted(REQUIRED_PROPOSAL_IMAGE_PATHS):
-        expected_src = "../" + required
-        if expected_src not in text:
-            report.add_error(f"{display_path}: missing rendered figure reference `{expected_src}`")
+    if require_primary_figures:
+        for required in sorted(REQUIRED_PROPOSAL_IMAGE_PATHS):
+            expected_src = "../" + required
+            if expected_src not in text:
+                report.add_error(f"{display_path}: missing rendered figure reference `{expected_src}`")
     if "<main" not in text or "</html>" not in text:
-        report.add_error(f"{display_path}: proposal HTML report must be a complete HTML document")
+        message = f"{display_path}: proposal HTML report must be a complete HTML document"
+        if translation_advisory:
+            report.add_warning(message + "; bilingual completeness does not block review")
+        else:
+            report.add_error(message)
+
+
+def validate_visual_html_safety(
+    report: ValidationReport,
+    path: Path,
+    display_path: str,
+    translation_advisory: bool = False,
+) -> None:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        message = f"{display_path}: visual HTML must be UTF-8 text"
+        if translation_advisory:
+            report.add_warning(message + "; bilingual completeness does not block review")
+        else:
+            report.add_error(message)
+        return
+    for pattern, reason in FORBIDDEN_VISUAL_HTML_PATTERNS:
+        if pattern.search(text):
+            report.add_error(f"{display_path}: {reason}")
+    if "<html" not in text.lower() or "</html>" not in text.lower():
+        message = f"{display_path}: visual HTML must be a complete HTML document"
+        if translation_advisory:
+            report.add_warning(message + "; bilingual completeness does not block review")
+        else:
+            report.add_error(message)
 
 
 def validate_proposal_evidence_references(
@@ -1220,9 +2086,11 @@ def validate_proposal_evidence_references(
         text = proposal_path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         return
-    _metadata, body = parse_front_matter(text)
+    metadata, body = parse_front_matter(text)
+    format_version = proposal_format_version(metadata)
+    required_sections = REQUIRED_SECTIONS_EN if metadata.get("language") == "en" else REQUIRED_SECTIONS
     section_bodies = extract_section_bodies(body)
-    for required in REQUIRED_SECTIONS:
+    for required in required_sections:
         matching_bodies = [
             content for heading, content in section_bodies.items() if required in heading
         ]
@@ -1231,6 +2099,21 @@ def validate_proposal_evidence_references(
                 f"{proposal_dir}/proposal.md: section `{required}` must include at least one "
                 "machine-readable evidence reference such as [source:...], [standard:...], [depth:...], [data:...], or [metric:...]"
             )
+
+    density_issues = reference_density_issues(body)
+    for issue in density_issues:
+        message = f"{proposal_dir}/proposal.md: {issue}"
+        if format_version == PROPOSAL_FORMAT_VERSION:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; legacy proposal remains compatible and the viewer will condense it")
+
+    # Version 2 keeps exhaustive coverage in the structured package. The prose
+    # only needs claim-adjacent anchors above. Version 1 retains the original
+    # exhaustive checks so existing submissions continue to validate exactly as
+    # they did before this contract was introduced.
+    if format_version == PROPOSAL_FORMAT_VERSION:
+        return
 
     refs = extract_reference_values(body)
 
@@ -1261,7 +2144,164 @@ def validate_proposal_evidence_references(
                 report.add_error(f"{proposal_dir}/proposal.md: missing design depth reference [depth:{item_id}]")
 
 
-def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_dir: str) -> None:
+def validate_bilingual_display(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    manifest: dict | None,
+) -> None:
+    changed_rel = {
+        relative_to_proposal(path, proposal_dir)
+        for path in report.changed_files
+        if path.startswith(proposal_dir.rstrip("/") + "/")
+    }
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
+    if not strict_bilingual and not any(is_display_material(path) for path in changed_rel):
+        return
+
+    base = repo_root / proposal_dir
+    proposal_path = base / "proposal.md"
+    if not proposal_path.is_file():
+        return
+    try:
+        metadata, body = parse_front_matter(proposal_path.read_text(encoding="utf-8"))
+    except UnicodeDecodeError:
+        return
+    primary_language = metadata.get("language")
+    if primary_language not in {"zh", "en"}:
+        return
+    translation_language = "en" if primary_language == "zh" else "zh"
+    translation_file = localized_path("proposal.md", translation_language)
+    def report_bilingual_problem(message: str) -> None:
+        if strict_bilingual:
+            report.add_error(message)
+        else:
+            report.add_warning(message + "; legacy v1 package remains compatible")
+
+    if metadata.get("translation_file") != translation_file:
+        report_bilingual_problem(
+            f"{proposal_dir}/proposal.md: bilingual contract requires "
+            f"translation_file={translation_file}"
+        )
+
+    manifest_items: dict[str, dict] = {}
+    if isinstance(manifest, dict) and isinstance(manifest.get("files"), list):
+        manifest_items = {
+            str(item.get("path")): item
+            for item in manifest["files"]
+            if isinstance(item, dict) and item.get("path")
+        }
+
+    display_files = {path for path in DISPLAY_BASE_FILES if (base / path).is_file()}
+    if strict_bilingual:
+        # The manifest is the package inventory. Some text-bearing figures are
+        # used only by the rendered report or visual page and are not linked
+        # directly from proposal.md, so they must not bypass the language gate.
+        for path, item in manifest_items.items():
+            if (
+                path.startswith("assets/figures/")
+                and primary_path_from_localized(path) is None
+                and item.get("language") != "neutral"
+                and (base / path).is_file()
+            ):
+                display_files.add(path)
+    for match in MARKDOWN_IMAGE_RE.finditer(body):
+        raw = match.group(2).split("#", 1)[0].split("?", 1)[0]
+        image_path = PurePosixPath(raw)
+        if (
+            not image_path.is_absolute()
+            and ".." not in image_path.parts
+            and image_path.as_posix().startswith("assets/figures/")
+        ):
+            display_files.add(image_path.as_posix())
+
+    for changed_path in sorted(changed_rel):
+        localized = primary_path_from_localized(changed_path)
+        if localized is None:
+            continue
+        primary_path, localized_language = localized
+        if (base / primary_path).is_file():
+            continue
+        report_bilingual_problem(
+            f"{proposal_dir}/{changed_path}: bilingual counterpart has no primary display file "
+            f"`{primary_path}`"
+        )
+        companion_item = manifest_items.get(changed_path)
+        if not companion_item:
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual counterpart `{changed_path}`")
+        else:
+            if companion_item.get("language") != localized_language:
+                report_bilingual_problem(
+                    f"{proposal_dir}/manifest.json: `{changed_path}` should declare "
+                    f"language={localized_language}"
+                )
+            if companion_item.get("translation_of") != primary_path:
+                report_bilingual_problem(
+                    f"{proposal_dir}/manifest.json: `{changed_path}` should declare "
+                    f"translation_of={primary_path}"
+                )
+
+    for display_path in sorted(display_files):
+        primary_item = manifest_items.get(display_path)
+        if (
+            display_path.startswith("assets/figures/")
+            and primary_item
+            and primary_item.get("language") == "neutral"
+        ):
+            continue
+        companion_path = localized_path(display_path, translation_language)
+        companion = base / companion_path
+        if not companion.is_file():
+            report_bilingual_problem(
+                f"{proposal_dir}/{display_path}: bilingual contract requires "
+                f"{translation_language} display counterpart `{companion_path}`"
+            )
+            continue
+
+        if not primary_item:
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual primary file `{display_path}`")
+        elif primary_item.get("language") != primary_language:
+            report_bilingual_problem(
+                f"{proposal_dir}/manifest.json: `{display_path}` should declare language={primary_language}"
+            )
+        companion_item = manifest_items.get(companion_path)
+        if not companion_item:
+            report_bilingual_problem(f"{proposal_dir}/manifest.json: list bilingual counterpart `{companion_path}`")
+        else:
+            if companion_item.get("language") != translation_language:
+                report_bilingual_problem(
+                    f"{proposal_dir}/manifest.json: `{companion_path}` should declare language={translation_language}"
+                )
+            if companion_item.get("translation_of") != display_path:
+                report_bilingual_problem(
+                    f"{proposal_dir}/manifest.json: `{companion_path}` should declare translation_of={display_path}"
+                )
+
+    translated_proposal = base / translation_file
+    if translated_proposal.is_file():
+        try:
+            translated_metadata, _ = parse_front_matter(translated_proposal.read_text(encoding="utf-8"))
+        except UnicodeDecodeError:
+            report_bilingual_problem(f"{proposal_dir}/{translation_file}: translation must be UTF-8 text")
+        else:
+            if translated_metadata.get("language") != translation_language:
+                report_bilingual_problem(
+                    f"{proposal_dir}/{translation_file}: front matter should set language={translation_language}"
+                )
+            if translated_metadata.get("translation_of") != "proposal.md":
+                report_bilingual_problem(
+                    f"{proposal_dir}/{translation_file}: front matter should set translation_of=proposal.md"
+                )
+
+
+def validate_ai_package_dir(
+    report: ValidationReport,
+    repo_root: Path,
+    proposal_dir: str,
+    *,
+    allow_pending_self_check: bool = False,
+    readiness_contract_required: bool = False,
+) -> None:
     base = repo_root / proposal_dir
     for required in sorted(REQUIRED_AI_PACKAGE_FILES):
         if not (base / required).exists():
@@ -1269,21 +2309,51 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
 
     if not (base / "manifest.json").exists():
         return
-    _manifest, stage = validate_manifest_file(report, repo_root, proposal_dir)
+    manifest, stage = validate_manifest_file(report, repo_root, proposal_dir)
+    strict_bilingual = requires_bilingual_display(repo_root, proposal_dir)
+    strict_simulation = strict_bilingual or (
+        isinstance(manifest, dict) and manifest.get("package_state") == "ready_for_review"
+    )
 
     for name in ["agent.json", "assumptions.json", "sources.json"]:
         path = base / name
         if path.exists():
-            load_json_file(report, path, f"{proposal_dir}/{name}")
+            data = load_json_file(report, path, f"{proposal_dir}/{name}")
+            if name == "agent.json":
+                validate_agent_disclosure(report, data, f"{proposal_dir}/{name}")
     self_check_path = base / "self_check.json"
+    self_check: dict | None = None
     if self_check_path.exists():
-        validate_self_check_file(
-            report, self_check_path, f"{proposal_dir}/self_check.json", stage
+        self_check = validate_self_check_file(
+            report,
+            self_check_path,
+            f"{proposal_dir}/self_check.json",
+            stage,
+            allow_pending_self_check=allow_pending_self_check,
         )
+    validate_readiness_claim(
+        report,
+        proposal_dir,
+        manifest,
+        self_check,
+        allow_pending_self_check=allow_pending_self_check,
+        readiness_contract_required=readiness_contract_required,
+    )
 
     metrics_path = base / "metrics.json"
     if metrics_path.exists():
         validate_metrics_file(report, metrics_path, f"{proposal_dir}/metrics.json")
+
+    simulation_path = base / "simulation.json"
+    if simulation_path.exists() and metrics_path.exists():
+        validate_simulation_consistency(
+            report,
+            repo_root,
+            proposal_dir,
+            metrics_path,
+            simulation_path,
+            strict=strict_simulation,
+        )
 
     compliance_path = base / "compliance_matrix.json"
     if compliance_path.exists():
@@ -1308,6 +2378,26 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
     proposal_html_path = base / "report" / "proposal.html"
     if proposal_html_path.exists():
         validate_proposal_html_file(report, proposal_html_path, f"{proposal_dir}/report/proposal.html")
+    for language in ["zh", "en"]:
+        translated_html = base / "report" / f"proposal.{language}.html"
+        if translated_html.exists():
+            validate_proposal_html_file(
+                report,
+                translated_html,
+                f"{proposal_dir}/report/proposal.{language}.html",
+                require_primary_figures=False,
+                translation_advisory=not strict_bilingual,
+            )
+
+    for visual_name in ["index.html", "index.zh.html", "index.en.html"]:
+        visual_path = base / "visual" / visual_name
+        if visual_path.exists():
+            validate_visual_html_safety(
+                report,
+                visual_path,
+                f"{proposal_dir}/visual/{visual_name}",
+                translation_advisory=visual_name != "index.html" and not strict_bilingual,
+            )
 
     for geometry_name in sorted(ALLOWED_GEOMETRY_FILES):
         geometry_path = base / "geometry" / geometry_name
@@ -1330,6 +2420,7 @@ def validate_ai_package_dir(report: ValidationReport, repo_root: Path, proposal_
     validate_proposal_evidence_references(
         report, repo_root, proposal_dir, standard_matrix, design_depth_matrix
     )
+    validate_bilingual_display(report, repo_root, proposal_dir, manifest)
 
 
 def validate_proposal_file(
@@ -1357,7 +2448,7 @@ def validate_proposal_file(
             report.add_error(f"{proposal_path}: missing front matter field `{key}`")
 
     author = metadata.get("author_github", "")
-    if author and author.lower() != pr_author.lower():
+    if author and author.lower() != pr_author.lower() and not report.maintainer_bypass:
         report.add_error(
             f"{proposal_path}: author_github `{author}` must match PR author `{pr_author}`"
         )
@@ -1369,64 +2460,34 @@ def validate_proposal_file(
     language = metadata.get("language")
     if language and language not in {"zh", "en"}:
         report.add_error(f"{proposal_path}: language must be zh or en")
-    if language == "en" and metadata.get("chinese_translation") != "included":
+    format_version = metadata.get("proposal_format_version")
+    if format_version and format_version not in {"1", PROPOSAL_FORMAT_VERSION}:
         report.add_error(
-            f"{proposal_path}: English submissions must set chinese_translation=included and include the complete Chinese translation in proposal.md"
+            f"{proposal_path}: proposal_format_version must be 1 or {PROPOSAL_FORMAT_VERSION}"
         )
+    bilingual_contract_version = metadata.get("bilingual_contract_version")
+    if bilingual_contract_version and bilingual_contract_version != BILINGUAL_CONTRACT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version must be {BILINGUAL_CONTRACT_VERSION}"
+        )
+    if bilingual_contract_version and format_version != PROPOSAL_FORMAT_VERSION:
+        report.add_error(
+            f"{proposal_path}: bilingual_contract_version requires proposal_format_version={PROPOSAL_FORMAT_VERSION}"
+        )
+    validation_body = body
     if language == "en":
-        for key in ["title_zh", "summary_zh"]:
-            if not metadata.get(key):
-                report.add_error(f"{proposal_path}: English submissions require front matter field `{key}`")
+        # Legacy English submissions may still contain an inline Chinese
+        # translation. New v2 submissions use the required proposal.zh.md
+        # companion, while v1 packages retain compatibility warnings.
         translation_match = re.search(r"(?m)^# 中文正式译文\s*$", body)
-        if translation_match is None:
+        if translation_match is not None:
+            validation_body = body[: translation_match.start()]
+        english_letters = len(re.findall(r"[A-Za-z]", validation_body))
+        if english_letters < MIN_ENGLISH_PROPOSAL_LETTERS:
             report.add_error(
-                f"{proposal_path}: English submissions require a top-level `# 中文正式译文` section"
+                f"{proposal_path}: English primary text is too short; need at least "
+                f"{MIN_ENGLISH_PROPOSAL_LETTERS} English letters"
             )
-        else:
-            english_body = body[: translation_match.start()]
-            translation_body = body[translation_match.end() :]
-            english_compact = len(re.sub(r"\s+", "", english_body))
-            if english_compact < MIN_FORMAL_PROPOSAL_COMPACT_CHARS:
-                report.add_error(
-                    f"{proposal_path}: English primary text is too short; need at least "
-                    f"{MIN_FORMAL_PROPOSAL_COMPACT_CHARS} non-whitespace characters before `# 中文正式译文`"
-                )
-            english_letters = len(re.findall(r"[A-Za-z]", english_body))
-            if english_letters < MIN_ENGLISH_PROPOSAL_LETTERS:
-                report.add_error(
-                    f"{proposal_path}: English primary text is too short; need at least "
-                    f"{MIN_ENGLISH_PROPOSAL_LETTERS} English letters before `# 中文正式译文`"
-                )
-            translation_compact = len(re.sub(r"\s+", "", translation_body))
-            if translation_compact < MIN_FORMAL_PROPOSAL_COMPACT_CHARS:
-                report.add_error(
-                    f"{proposal_path}: Chinese formal translation is too short; need at least "
-                    f"{MIN_FORMAL_PROPOSAL_COMPACT_CHARS} non-whitespace characters"
-                )
-            translation_sections = extract_section_bodies(translation_body)
-            for required in REQUIRED_SECTIONS:
-                matching = [content for heading, content in translation_sections.items() if required in heading]
-                if not matching:
-                    report.add_error(
-                        f"{proposal_path}: Chinese formal translation is missing required section `## {required}`"
-                    )
-                    continue
-                if max(len(re.sub(r"\s+", "", content)) for content in matching) < MIN_REQUIRED_SECTION_COMPACT_CHARS:
-                    report.add_error(
-                        f"{proposal_path}: Chinese translation section `{required}` is too thin"
-                    )
-                if not any(has_readability_reference(content) for content in matching):
-                    report.add_error(
-                        f"{proposal_path}: Chinese translation section `{required}` needs a machine-readable evidence reference"
-                    )
-            translated_images = {
-                PurePosixPath(match.group(2).split("#", 1)[0].split("?", 1)[0]).as_posix()
-                for match in MARKDOWN_IMAGE_RE.finditer(translation_body)
-            }
-            for required in sorted(REQUIRED_PROPOSAL_IMAGE_PATHS - translated_images):
-                report.add_error(
-                    f"{proposal_path}: Chinese formal translation must embed `![]({required})`"
-                )
 
     license_value = metadata.get("license")
     if license_value and license_value not in {"COMMUNITY-DISPLAY-ONLY", "CC-BY-4.0", "CC-BY-SA-4.0"}:
@@ -1442,9 +2503,10 @@ def validate_proposal_file(
     validate_track_metadata(report, repo_root, proposal_path, metadata.get("tracks"))
     validate_scenario_metadata(report, repo_root, proposal_path, metadata.get("scenarios"))
 
-    headings = extract_headings(body)
-    section_bodies = extract_section_bodies(body)
-    for required in REQUIRED_SECTIONS:
+    required_sections = REQUIRED_SECTIONS_EN if language == "en" else REQUIRED_SECTIONS
+    headings = extract_headings(validation_body)
+    section_bodies = extract_section_bodies(validation_body)
+    for required in required_sections:
         if not any(required in heading for heading in headings):
             report.add_error(f"{proposal_path}: missing required section `## {required}`")
             continue
@@ -1464,14 +2526,14 @@ def validate_proposal_file(
         if placeholder in text:
             report.add_error(f"{proposal_path}: remove template placeholder `{placeholder}`")
 
-    compact_len = len(re.sub(r"\s+", "", body))
+    compact_len = len(re.sub(r"\s+", "", validation_body))
     if compact_len < MIN_FORMAL_PROPOSAL_COMPACT_CHARS:
         report.add_error(
             f"{proposal_path}: formal proposal body is too short; need at least {MIN_FORMAL_PROPOSAL_COMPACT_CHARS} non-whitespace characters"
         )
 
     proposal_dir = str(PurePosixPath(proposal_path).parent)
-    validate_proposal_embedded_images(report, repo_root, proposal_dir, body)
+    validate_proposal_embedded_images(report, repo_root, proposal_dir, validation_body)
 
     for pattern, reason in HARD_RISK_PATTERNS:
         if pattern.search(text):
@@ -1685,12 +2747,20 @@ def validate_submission(
     pr_author: str,
     changed_files: Iterable[str],
     maintainer_bypass_logins: Iterable[str] = (),
+    *,
+    allow_pending_self_check: bool = False,
+    required_readiness_contract_dirs: Iterable[str] = (),
 ) -> ValidationReport:
     report = ValidationReport()
     repo_root = repo_root.resolve()
     pr_author = pr_author.strip()
     bypass_logins = {login.strip().lower() for login in maintainer_bypass_logins if login.strip()}
     report.maintainer_bypass = pr_author.lower() in bypass_logins
+    required_readiness_contracts = {
+        str(proposal_dir).strip().rstrip("/")
+        for proposal_dir in required_readiness_contract_dirs
+        if str(proposal_dir).strip()
+    }
 
     if not pr_author or not GITHUB_LOGIN_RE.match(pr_author):
         report.add_error(f"invalid PR author `{pr_author}`")
@@ -1720,10 +2790,22 @@ def validate_submission(
         parts = path.split("/")
         full_path = repo_root / path
 
+        linked_path = first_symbolic_link(repo_root, path)
+        if linked_path is not None:
+            report_symbolic_link(report, repo_root, linked_path)
+            continue
+
         if path.startswith(PROTECTED_REVIEW_ARTIFACT_PREFIXES):
             report.add_error(
                 f"{path}: maintainer review artifacts must stay local and only be shared through PR comments"
             )
+            continue
+
+        if path in MAINTAINER_CONTROLLED_SUBMISSIONS_ROOT_FILES:
+            if not report.maintainer_bypass:
+                report.add_error(
+                    f"{path}: only maintainers may edit submissions root documentation"
+                )
             continue
 
         if not report.maintainer_bypass:
@@ -1737,9 +2819,10 @@ def validate_submission(
                     f"{path}: participant PRs may only change submissions/{pr_author}/"
                 )
                 continue
-            if parts[1].lower() != pr_author.lower():
+            if parts[1] != pr_author:
                 report.add_error(
-                    f"{path}: PR author `{pr_author}` may not change submissions/{parts[1]}/"
+                    f"{path}: submission directory `{parts[1]}` must exactly match "
+                    f"GitHub PR author `{pr_author}`, including letter case"
                 )
                 continue
 
@@ -1766,8 +2849,15 @@ def validate_submission(
 
         if len(parts) == 4 and parts[3] == "proposal.md":
             proposal_files.add(path)
+        elif len(parts) == 4 and parts[3] in {"proposal.zh.md", "proposal.en.md"}:
+            ai_package_dirs.add(proposal_dir)
         elif len(parts) == 4 and parts[3] == "changelog.md":
             changelog_files.add(path)
+        elif len(parts) == 4 and parts[3] == "FEEDBACK.md":
+            if not report.maintainer_bypass:
+                report.add_error(
+                    f"{path}: only maintainers may add or edit FEEDBACK.md"
+                )
         elif len(parts) == 4 and parts[3] == "risk.json":
             risk_files.add(path)
         elif len(parts) == 4 and parts[3] == "spatial.json":
@@ -1776,6 +2866,12 @@ def validate_submission(
             ai_package_dirs.add(proposal_dir)
         elif len(parts) == 4 and parts[3] in PACKAGE_ROOT_JSON_FILES:
             ai_package_dirs.add(proposal_dir)
+        elif is_under_media(parts):
+            ai_package_dirs.add(proposal_dir)
+            extension = Path(path).suffix.lower()
+            if extension not in ALLOWED_MEDIA_FILE_EXTENSIONS:
+                allowed = ", ".join(sorted(ALLOWED_MEDIA_FILE_EXTENSIONS))
+                report.add_error(f"{path}: media assets must use one of {allowed}")
         elif is_under_assets(parts):
             extension = Path(path).suffix.lower()
             if extension not in ALLOWED_ASSET_EXTENSIONS:
@@ -1806,11 +2902,18 @@ def validate_submission(
                 report.add_error(f"{path}: visual assets must use one of {allowed}")
         else:
             report.add_error(
-                f"{path}: each proposal directory may contain proposal.md, changelog.md, risk.json, spatial.json, simulation.json, AI package files, assets/*, geometry/*, drawings/*, report/*, and visual/index.html plus visual/assets/* only"
+                f"{path}: each proposal directory may contain proposal.md, proposal.zh.md, proposal.en.md, changelog.md, maintainer-only FEEDBACK.md, risk.json, spatial.json, simulation.json, AI package files, assets/*, geometry/*, drawings/*, report/*, and localized visual/index HTML plus visual/assets/* only"
             )
 
         if not full_path.exists():
-            report.add_error(f"{path}: changed file is missing in the PR checkout")
+            rel_path = relative_to_proposal(path, proposal_dir)
+            if is_localized_display_path(rel_path) and not requires_bilingual_display(repo_root, proposal_dir):
+                report.add_warning(
+                    f"{path}: bilingual display file was removed or is missing; "
+                    "legacy v1 package remains compatible"
+                )
+            else:
+                report.add_error(f"{path}: changed file is missing in the PR checkout")
             continue
         if full_path.is_dir():
             report.add_error(f"{path}: directories are not valid changed files")
@@ -1824,14 +2927,39 @@ def validate_submission(
             report.add_error(f"{path}: JSON files must be <= {MAX_JSON_BYTES} bytes")
         if path.endswith(".geojson") and size > MAX_GEOJSON_BYTES:
             report.add_error(f"{path}: GeoJSON files must be <= {MAX_GEOJSON_BYTES} bytes")
-        if is_under_assets(parts) and size > MAX_ASSET_BYTES:
+        if (
+            is_under_media(parts)
+            and Path(path).suffix.lower() in ALLOWED_VIDEO_EXTENSIONS
+            and size > MAX_VIDEO_BYTES
+        ):
+            report.add_error(f"{path}: video files must be <= {MAX_VIDEO_BYTES} bytes")
+        elif (
+            is_under_media(parts)
+            and Path(path).suffix.lower() in ALLOWED_AUDIO_EXTENSIONS
+            and size > MAX_AUDIO_BYTES
+        ):
+            report.add_error(f"{path}: audio files must be <= {MAX_AUDIO_BYTES} bytes")
+        elif is_under_media(parts) and size > MAX_ASSET_BYTES:
+            report.add_error(
+                f"{path}: media sidecars and posters must be <= {MAX_ASSET_BYTES} bytes"
+            )
+        elif is_under_assets(parts) and size > MAX_ASSET_BYTES:
             report.add_error(f"{path}: assets must be <= {MAX_ASSET_BYTES} bytes")
         if is_under_drawings(parts) and size > MAX_DRAWING_BYTES:
             report.add_error(f"{path}: drawings must be <= {MAX_DRAWING_BYTES} bytes")
         if is_under_drawings(parts) and Path(path).suffix.lower() == ".pdf" and is_empty_pdf(full_path.read_bytes()):
-            report.add_error(
-                f"{path}: drawing PDF has no pages; zero-page or placeholder drawings cannot enter review"
-            )
+            if (
+                is_localized_display_path(relative_to_proposal(path, proposal_dir))
+                and not requires_bilingual_display(repo_root, proposal_dir)
+            ):
+                report.add_warning(
+                    f"{path}: bilingual drawing PDF has no pages; replace the placeholder, "
+                    "but legacy v1 compatibility remains"
+                )
+            else:
+                report.add_error(
+                    f"{path}: drawing PDF has no pages; zero-page or placeholder drawings cannot enter review"
+                )
         if is_visual_index(parts) and size > MAX_HTML_BYTES:
             report.add_error(f"{path}: visual/index.html must be <= {MAX_HTML_BYTES} bytes")
         if is_under_report(parts) and parts[4].endswith(".html") and size > MAX_HTML_BYTES:
@@ -1842,8 +2970,16 @@ def validate_submission(
     if report.total_bytes > MAX_TOTAL_BYTES:
         report.add_error(f"changed files total {report.total_bytes} bytes exceeds {MAX_TOTAL_BYTES}")
 
+    unsafe_submission_dirs = {
+        proposal_dir
+        for proposal_dir in proposal_dirs
+        if not submission_directory_is_safe(report, repo_root, proposal_dir)
+    }
+
     for proposal_dir in sorted(proposal_dirs):
         ai_package_dirs.add(proposal_dir)
+        if proposal_dir in unsafe_submission_dirs:
+            continue
         proposal_path = f"{proposal_dir}/proposal.md"
         if not (repo_root / proposal_path).exists():
             report.add_error(f"{proposal_path}: every touched proposal directory needs proposal.md")
@@ -1857,25 +2993,41 @@ def validate_submission(
             spatial_files.add(spatial_path)
 
     for proposal_path in sorted(proposal_files):
+        if str(PurePosixPath(proposal_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / proposal_path).exists():
             continue
         path_author = proposal_path.split("/")[1]
         validate_proposal_file(report, repo_root, proposal_path, pr_author, path_author)
 
     for proposal_dir in sorted(ai_package_dirs):
-        validate_ai_package_dir(report, repo_root, proposal_dir)
+        if proposal_dir in unsafe_submission_dirs:
+            continue
+        validate_ai_package_dir(
+            report,
+            repo_root,
+            proposal_dir,
+            allow_pending_self_check=allow_pending_self_check,
+            readiness_contract_required=proposal_dir in required_readiness_contracts,
+        )
 
     for changelog_path in sorted(changelog_files):
+        if str(PurePosixPath(changelog_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / changelog_path).exists():
             continue
         validate_changelog_file(report, repo_root, changelog_path)
 
     for risk_path in sorted(risk_files):
+        if str(PurePosixPath(risk_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / risk_path).exists():
             continue
         validate_risk_file(report, repo_root, risk_path)
 
     for spatial_path in sorted(spatial_files):
+        if str(PurePosixPath(spatial_path).parent) in unsafe_submission_dirs:
+            continue
         if not (repo_root / spatial_path).exists():
             continue
         validate_spatial_file(report, repo_root, spatial_path)
