@@ -1,18 +1,18 @@
 ---
-title: "京张智脊·开源协议脊（v2.1）"
+title: "京张智脊·开源协议脊（v2.2）"
 author_github: "MikuFuwa"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.1 以开源协议脊（Open Protocol Spine）把京张公共主脊做成可版本化城市 API：接口/权限/回退/审计；结构化几何、三区 detail 资产、真地图五图、真 A0/A3 与离线投影总图，全部基于 provisional 边界的概念建议。"
+summary: "v2.2 超高标准：院落/界面肌理建筑簇群、慢行断点诊断与缝合修复、三区放大 detail、A0 八板信息设计、A3 十六页文册、试点 footprint 与许可门依赖、英文等义加深；provisional + FAR unknown + medium。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.1"
+iteration: "v2.2"
 ---
 
-# 京张智脊·开源协议脊（v2.1）
+# 京张智脊·开源协议脊（v2.2）
 
 ## 设计依据与资料清单
 
@@ -22,18 +22,20 @@ iteration: "v2.1"
 
 ### 现状诊断与问题地图
 
-基于公开叙事与 provisional 约束，提出 10 条可辩护问题（均标临时性）[depth:existing_conditions_diagnosis] [data:geometry/constraints.geojson#CON-001]：
+基于公开叙事与 provisional 约束，提出 10 条可辩护问题（均标临时性）。每条闭环为 **空间现象 → 人群 → 策略 ID → 假设 ID** [depth:existing_conditions_diagnosis] [data:geometry/constraints.geojson#CON-001]：
 
-1. P01 绿廊被快速路/封闭界面切断 → 慢行不连续 → OS-01  
-2. P02 大钟寺站城四象限步行弱 → OS-05  
-3. P03 近校转化界面“看得见进不去” → OS-04  
-4. P04 众智园测试干扰日常 → OS-02/SCN-02 回退规则  
-5. P05 产业服务与中关村翼接驳不足 → 区域接口动作  
-6. P06 小月河翼生活化不足 → SCN-08  
-7. P07 算力设施邻避与能耗未知 → A-ENERGY-001  
-8. P08 文保/遗产与强度未知 → A-HERITAGE-001  
-9. P09 机器人与人行冲突 → OS-14  
-10. P10 活动周与日常时段冲突 → OS-10  
+1. P01 绿廊被快速路/封闭界面切断 → 通勤/通学人群慢行断裂 → OS-01 接口缝合 → A-BOUNDARY-001  
+2. P02 大钟寺站城四象限步行弱 → 到访/转化人群绕行 → OS-05 四象限连通 → A-STATION-001  
+3. P03 近校转化界面“看得见进不去” → 师生与创业者 → OS-04 转化街 → A-CAMPUS-001  
+4. P04 众智园测试干扰日常 → 居民与儿童 → OS-02/SCN-02 回退规则 → A-NOISE-001  
+5. P05 产业服务与中关村翼接驳不足 → 研发员工与访客 → 区域北纬预约接口 → A-REGIONAL-001  
+6. P06 生活翼服务密度不足 → 职住平衡人群 → SCN-08 生活样板街 → A-LIFE-001  
+7. P07 算力设施邻避与能耗未知 → 邻里社区 → OS-06 可回退驿站 → A-ENERGY-001  
+8. P08 文保/遗产与强度未知 → 公众与遗产管理 → 缓冲叠加不消费化 → A-HERITAGE-001  
+9. P09 机器人与人行/无障碍冲突 → 儿童、轮椅使用者 → OS-14 让行试验段 → A-ROBOT-001  
+10. P10 活动周与日常时段冲突 → 居民夜间休息 → OS-10 时段分区 → A-EVENT-001  
+
+问题地图在 A0-02 与 [figure:assets/figures/mobility-bluegreen.png] 以约束底 + 断点诊断/缝合修复对照表达（概念，pending）。
 
 ![概念总图与证据链](assets/figures/site-overview.png)
 
@@ -53,11 +55,11 @@ iteration: "v2.1"
 
 ### 区域协同接口（各 1 个动作）
 
-1. **中关村科学城北区/北纬方向**：验证核输出标准与测评接口，供北侧研发集群预约沙盒。  
-2. **未来科学城**：体验核国际路演周预留联合路演档期接口（概念）。  
-3. **怀柔科学城**：基础研究—模型评测结果回传通道，经科技服务翼。  
-4. **北京经济技术开发区**：智能终端与智能体产品中试反馈回路。  
-5. **京津冀廊道**：大钟寺站城作为南向门户的到访与转化接口。  
+1. **中关村科学城北区/北纬方向**：空间落点=**预约界面**（验证核沙盒庭）— 输出标准与测评接口，供北侧研发集群预约。  
+2. **未来科学城**：空间落点=**门户档期界面**（体验核路演厅）— 联合路演档期接口（概念）。  
+3. **怀柔科学城**：空间落点=**通道型回传节点**（科技服务翼）— 基础研究—模型评测结果回传。  
+4. **北京经济技术开发区**：空间落点=**中试反馈界面**（产业服务广场）— 智能终端与智能体产品回路。  
+5. **京津冀廊道**：空间落点=**南向门户**（大钟寺站城口袋）— 到访与转化接口。  
 
 以上均为协调建议，不构成跨区行政安排。
 
@@ -65,7 +67,9 @@ iteration: "v2.1"
 
 ### 尖刀机制：开源协议脊
 
-四字段强制贯穿结构、场景、治理与运营：
+四字段强制贯穿结构、场景、治理与运营。接口生命周期（概念）：**发布 Publish → 验证 Verify → 回退 Rollback → 审计 Audit**。
+
+四字段：
 
 - **接口 Interface**：12 场景节点 = API endpoints  
 - **权限 Permission**：公开 / 聚合 / 授权 / 禁止 四级数据  
@@ -95,7 +99,7 @@ iteration: "v2.1"
 
 用地已加密为 **30** 个街坊/功能单元，覆盖提交边界 [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]。绿脊单元居中，两侧依次为科研、产业服务、教育转化、生活配套，并穿插文化/广场单元。
 
-建筑概念基底 **87** 个，采用 L / U / 矩形混合与轻微旋转，分类型布置于可建设单元，避免纯网格小矩形刷数 [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **28** 条 [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
+建筑概念基底 **156** 个，采用 **院落/L/U/条形界面簇群** 混合与轻微旋转，分类型布置于可建设单元，避免纯网格小矩形刷数 [metric:building_count]=156 [data:geometry/buildings.geojson#BLDG-001]。道路分级段 **54** 条（含断点诊断与缝合修复叙事段） [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]。更新策略“先接口后体量”：先缝合慢行与协议节点，再进入需权属条件的深层更新。
 
 ## 重点区域详细设计
 
@@ -104,6 +108,8 @@ iteration: "v2.1"
 ![三重点区差异](assets/figures/key-areas.png)
 
 ### 众智园 · 验证核
+
+> 图号互指：A0-06 / A3 对应页 / [figure:assets/figures/key-areas.png] / `visual/assets/detail_zhongzhiyuan.json`；几何父级 [data:geometry/key_areas.geojson]。
 
 - **定位**：全栈自主、标准治理、安全测评主机。  
 - **问题链**：展示/测试可能干扰日常（P04）；北端对外交通割裂（P01/P05）。  
@@ -117,6 +123,8 @@ iteration: "v2.1"
 
 ### 北京 AI 原点社区 · 开源核
 
+> 图号互指：A0-06 / A3 对应页 / [figure:assets/figures/key-areas.png] / `visual/assets/detail_beijing_ai_origin.json`；几何父级 [data:geometry/key_areas.geojson]。
+
 - **定位**：近校转化、开源发布、人才服务主机。  
 - **问题链**：看得见进不去（P03）；活动与日常冲突（P10）。  
 - **结构**：发布厅—转化街—荣誉墙串联。  
@@ -128,6 +136,8 @@ iteration: "v2.1"
 - **风险**：校园数据授权、扰民；依赖校区边界与许可。
 
 ### 大钟寺 · 体验核
+
+> 图号互指：A0-06 / A3 对应页 / [figure:assets/figures/key-areas.png] / `visual/assets/detail_dazhongsi.json`；几何父级 [data:geometry/key_areas.geojson]。
 
 - **定位**：智能经济、国际交往、站城一体主机。  
 - **问题链**：四象限步行弱（P02）；数据与商业伦理（P07）。  
@@ -208,6 +218,8 @@ iteration: "v2.1"
 文化叙事：百年京张“自主建造” × 中关村“开放协作” × AI“可解释共治”，沿脊步行可体验。
 
 ## 更新项目清单、实施政策与分期计划
+
+OS 表在原有主体/依赖/空间 id/KPI/回退基础上，补齐 **enablers（使能条件）** 与 **概念许可门**（权属确认→安全评测→活动许可→可回退下线），并与 `visual/assets/renewal_projects.json` 近期试点 footprint 及依赖链对位（概念示意，非法定地块）。试点失败默认路径：下线活动 / 停测 / 撤离可移动装置，不锁定街道家具。
 
 | ID | 名称 | 类型 | 分期 | 概念主体 | 依赖 | 空间 | KPI | 回退 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

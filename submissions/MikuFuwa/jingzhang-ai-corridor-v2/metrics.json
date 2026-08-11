@@ -20,7 +20,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 125571.357,
+      "value": 162829.229,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -33,7 +33,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 2550859.082,
+      "value": 2565531.784,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -46,7 +46,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 1326256.8,
+      "value": 1065343.771,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -59,7 +59,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.223508,
+      "value": 0.224794,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.116208,
+      "value": 0.093346,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -87,7 +87,7 @@
     },
     "building_density": {
       "status": "known",
-      "value": 0.011003,
+      "value": 0.014267,
       "unit": "ratio",
       "source_files": [
         "geometry/buildings.geojson",
@@ -113,7 +113,7 @@
     },
     "building_count": {
       "status": "known",
-      "value": 87,
+      "value": 156,
       "unit": "count",
       "source_files": [
         "geometry/buildings.geojson"
@@ -124,7 +124,7 @@
     },
     "road_segment_count": {
       "status": "known",
-      "value": 28,
+      "value": 54,
       "unit": "count",
       "source_files": [
         "geometry/roads.geojson"

@@ -6,6 +6,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": "DET-zhongzhiyuan_ai_acceleration_area-COURT",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-COURT",
         "layer": "AI_SERVICE_ZONE",
@@ -132,6 +133,7 @@
     },
     {
       "type": "Feature",
+      "id": "DET-zhongzhiyuan_ai_acceleration_area-ENTRY",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-ENTRY",
         "layer": "AI_SERVICE_ZONE",
@@ -178,6 +180,7 @@
     },
     {
       "type": "Feature",
+      "id": "DET-zhongzhiyuan_ai_acceleration_area-SEAM",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-SEAM",
         "layer": "AI_SERVICE_ZONE",
@@ -224,6 +227,7 @@
     },
     {
       "type": "Feature",
+      "id": "DET-zhongzhiyuan_ai_acceleration_area-SPINE",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-SPINE",
         "layer": "AI_SERVICE_ZONE",
@@ -270,6 +274,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-001",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-01",
         "layer": "AI_SERVICE_ZONE",
@@ -280,13 +285,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "教育转化-35",
-        "name_en": "education-35",
-        "parent_land_use": "LU-017",
-        "form_logic": "U",
+        "building_type": "lab",
+        "name_zh": "院落核-1",
+        "name_en": "lab-1",
+        "parent_land_use": null,
+        "form_logic": "courtyard",
+        "cluster_id": "CL-zhongzhi-1",
+        "interface_setback": "front",
         "concept_only": true,
-        "area_sqm_declared": 716.893,
+        "area_sqm_declared": 2002.237,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -296,50 +303,46 @@
         "coordinates": [
           [
             [
-              116.34878469628312,
-              40.00830666389027
+              116.34697794823751,
+              40.016165594682
             ],
             [
-              116.34839795416998,
-              40.008227174762
+              116.3476220517625,
+              40.016165594682
             ],
             [
-              116.34833377969396,
-              40.008410889371845
+              116.3476220517625,
+              40.01573440531801
             ],
             [
-              116.34851836075792,
-              40.00844882728285
+              116.34697794823751,
+              40.01573440531801
             ],
             [
-              116.3487205218071,
-              40.00849037850011
-            ],
-            [
-              116.34878469628312,
-              40.00830666389027
+              116.34697794823751,
+              40.016165594682
             ]
           ],
           [
             [
-              116.34852836634407,
-              40.008420183926944
+              116.34748152008433,
+              40.01587454186131
             ],
             [
-              116.3485459463293,
-              40.00842379723321
+              116.34748152008433,
+              40.016057797341006
             ],
             [
-              116.34853594074313,
-              40.00845244058911
+              116.34711847991568,
+              40.016057797341006
             ],
             [
-              116.34851836075792,
-              40.00844882728285
+              116.34711847991568,
+              40.01587454186131
             ],
             [
-              116.34852836634407,
-              40.008420183926944
+              116.34748152008433,
+              40.01587454186131
             ]
           ]
         ]
@@ -347,6 +350,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-002",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-02",
         "layer": "AI_SERVICE_ZONE",
@@ -357,13 +361,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "配套商业-36",
-        "name_en": "retail-36",
-        "parent_land_use": "LU-017",
-        "form_logic": "R",
+        "building_type": "incubator",
+        "name_zh": "院落翼L-2",
+        "name_en": "incubator-2",
+        "parent_land_use": null,
+        "form_logic": "L",
+        "cluster_id": "CL-zhongzhi-1",
+        "interface_setback": "side",
         "concept_only": true,
-        "area_sqm_declared": 1461.668,
+        "area_sqm_declared": 718.074,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -373,24 +379,32 @@
         "coordinates": [
           [
             [
-              116.34749244261839,
-              40.008549740679165
+              116.34749867080455,
+              40.01605000000001
             ],
             [
-              116.348044055846,
-              40.00866311662948
+              116.34749867080455,
+              40.01615779734101
             ],
             [
-              116.34813514258967,
-              40.00840235929086
+              116.34770946832182,
+              40.01615779734101
             ],
             [
-              116.34758352936205,
-              40.00828898334055
+              116.34770946832182,
+              40.0164272906935
             ],
             [
-              116.34749244261839,
-              40.008549740679165
+              116.34785000000001,
+              40.0164272906935
+            ],
+            [
+              116.34785000000001,
+              40.01605000000001
+            ],
+            [
+              116.34749867080455,
+              40.01605000000001
             ]
           ]
         ]
@@ -398,6 +412,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-003",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-03",
         "layer": "AI_SERVICE_ZONE",
@@ -408,13 +423,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "community_service",
-        "name_zh": "社区服务-37",
-        "name_en": "community_service-37",
-        "parent_land_use": "LU-017",
-        "form_logic": "R",
+        "building_type": "mixed_use",
+        "name_zh": "界面条-3",
+        "name_en": "mixed_use-3",
+        "parent_land_use": null,
+        "form_logic": "bar",
+        "cluster_id": "CL-zhongzhi-1",
+        "interface_setback": "street",
         "concept_only": true,
-        "area_sqm_declared": 1800.483,
+        "area_sqm_declared": 1116.999,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -424,24 +441,24 @@
         "coordinates": [
           [
             [
-              116.34585042946729,
-              40.00841731434228
+              116.34689011593863,
+              40.016571864894
             ],
             [
-              116.34628173739914,
-              40.00846381121985
+              116.34770988406137,
+              40.016571864894
             ],
             [
-              116.34636084330701,
-              40.00803205340557
+              116.34770988406137,
+              40.016428135106004
             ],
             [
-              116.34592953537516,
-              40.007985556528006
+              116.34689011593863,
+              40.016428135106004
             ],
             [
-              116.34585042946729,
-              40.00841731434228
+              116.34689011593863,
+              40.016571864894
             ]
           ]
         ]
@@ -449,6 +466,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-004",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-04",
         "layer": "AI_SERVICE_ZONE",
@@ -459,13 +477,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "talent_apartment",
-        "name_zh": "人才公寓-39",
-        "name_en": "talent_apartment-39",
-        "parent_land_use": "LU-018",
-        "form_logic": "L",
+        "building_type": "retail",
+        "name_zh": "底商垫-4",
+        "name_en": "retail-4",
+        "parent_land_use": null,
+        "form_logic": "R",
+        "cluster_id": "CL-zhongzhi-1",
+        "interface_setback": "pocket",
         "concept_only": true,
-        "area_sqm_declared": 1341.184,
+        "area_sqm_declared": 614.359,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -475,32 +495,24 @@
         "coordinates": [
           [
             [
-              116.34824801740126,
-              40.01670739007139
+              116.34746971358388,
+              40.015530349670705
             ],
             [
-              116.34828867531826,
-              40.01659099717157
+              116.34779442966216,
+              40.01556535548122
             ],
             [
-              116.34785856464781,
-              40.016502594277
+              116.34783028641613,
+              40.0153696503293
             ],
             [
-              116.34800652811404,
-              40.01607901387315
+              116.34750557033784,
+              40.01533464451878
             ],
             [
-              116.34785479070207,
-              40.01604782648964
-            ],
-            [
-              116.34766616931884,
-              40.016587799793314
-            ],
-            [
-              116.34824801740126,
-              40.01670739007139
+              116.34746971358388,
+              40.015530349670705
             ]
           ]
         ]
@@ -508,6 +520,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-005",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-05",
         "layer": "AI_SERVICE_ZONE",
@@ -518,13 +531,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "ai_r_and_d",
-        "name_zh": "AI研发楼-40",
-        "name_en": "ai_r_and_d-40",
-        "parent_land_use": "LU-018",
-        "form_logic": "U",
+        "building_type": "lab",
+        "name_zh": "院落核-5",
+        "name_en": "lab-5",
+        "parent_land_use": null,
+        "form_logic": "courtyard",
+        "cluster_id": "CL-zhongzhi-2",
+        "interface_setback": "front",
         "concept_only": true,
-        "area_sqm_declared": 941.521,
+        "area_sqm_declared": 2002.23,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -534,40 +549,46 @@
         "coordinates": [
           [
             [
-              116.34636923058008,
-              40.014483932564175
+              116.34912654948356,
+              40.01630952183723
             ],
             [
-              116.34653554191135,
-              40.01446600347677
+              116.34975657780116,
+              40.01641224500463
             ],
             [
-              116.34650691385917,
-              40.01430975237535
+              116.34987345051645,
+              40.01599047816278
             ],
             [
-              116.3465302914857,
-              40.01430723216517
+              116.34924342219885,
+              40.015887754995376
             ],
             [
-              116.34655891953788,
-              40.014463483266596
+              116.34912654948356,
+              40.01630952183723
+            ]
+          ],
+          [
+            [
+              116.34969800616014,
+              40.01610514005895
             ],
             [
-              116.34672523086914,
-              40.01444555417919
+              116.34964833525615,
+              40.01628439096673
             ],
             [
-              116.34667322928365,
-              40.01416173099209
+              116.34929322838622,
+              40.0162264924542
             ],
             [
-              116.3463172289946,
-              40.01420010937708
+              116.34934289929022,
+              40.01604724154641
             ],
             [
-              116.34636923058008,
-              40.014483932564175
+              116.34969800616014,
+              40.01610514005895
             ]
           ]
         ]
@@ -575,6 +596,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-006",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-06",
         "layer": "AI_SERVICE_ZONE",
@@ -585,13 +607,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "lab",
-        "name_zh": "实验室组团-41",
-        "name_en": "lab-41",
-        "parent_land_use": "LU-018",
+        "building_type": "incubator",
+        "name_zh": "院落翼L-6",
+        "name_en": "incubator-6",
+        "parent_land_use": null,
         "form_logic": "L",
+        "cluster_id": "CL-zhongzhi-2",
+        "interface_setback": "side",
         "concept_only": true,
-        "area_sqm_declared": 681.895,
+        "area_sqm_declared": 718.072,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -601,32 +625,32 @@
         "coordinates": [
           [
             [
-              116.34726248334017,
-              40.015202764008485
+              116.34970634819041,
+              40.01619396918142
             ],
             [
-              116.34741254857524,
-              40.015202764008485
+              116.34967713001159,
+              40.01629941089189
             ],
             [
-              116.34741254857524,
-              40.01511849792569
+              116.34988332109735,
+              40.016333029383034
             ],
             [
-              116.34777748513447,
-              40.01511849792569
+              116.34981027565028,
+              40.0165966336592
             ],
             [
-              116.34777748513447,
-              40.015003387699124
+              116.34994773637412,
+              40.01661904598663
             ],
             [
-              116.34726248334017,
-              40.015003387699124
+              116.35005000000001,
+              40.01625000000001
             ],
             [
-              116.34726248334017,
-              40.015202764008485
+              116.34970634819041,
+              40.01619396918142
             ]
           ]
         ]
@@ -634,6 +658,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-007",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-07",
         "layer": "AI_SERVICE_ZONE",
@@ -644,13 +669,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "incubator",
-        "name_zh": "孵化器-42",
-        "name_en": "incubator-42",
-        "parent_land_use": "LU-018",
-        "form_logic": "L",
+        "building_type": "mixed_use",
+        "name_zh": "界面条-7",
+        "name_en": "mixed_use-7",
+        "parent_land_use": null,
+        "form_logic": "bar",
+        "cluster_id": "CL-zhongzhi-2",
+        "interface_setback": "street",
         "concept_only": true,
-        "area_sqm_declared": 1250.656,
+        "area_sqm_declared": 1116.995,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -660,32 +687,24 @@
         "coordinates": [
           [
             [
-              116.3477620695896,
-              40.02437101200708
+              116.34907959410292,
+              40.016704925185294
             ],
             [
-              116.34780700759784,
-              40.02449965767997
+              116.34988144832532,
+              40.01683566376199
             ],
             [
-              116.34809202693097,
-              40.024441076166454
+              116.3499204058971,
+              40.016695074814706
             ],
             [
-              116.34822711852236,
-              40.02482780778538
+              116.34911855167469,
+              40.01656433623801
             ],
             [
-              116.34839482945227,
-              40.02479333728122
-            ],
-            [
-              116.34821479985266,
-              40.0242779599894
-            ],
-            [
-              116.3477620695896,
-              40.02437101200708
+              116.34907959410292,
+              40.016704925185294
             ]
           ]
         ]
@@ -693,6 +712,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-008",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-08",
         "layer": "AI_SERVICE_ZONE",
@@ -703,13 +723,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "office",
-        "name_zh": "科创办公-63",
-        "name_en": "office-63",
-        "parent_land_use": "LU-024",
-        "form_logic": "U",
+        "building_type": "retail",
+        "name_zh": "底商垫-8",
+        "name_en": "retail-8",
+        "parent_land_use": null,
+        "form_logic": "R",
+        "cluster_id": "CL-zhongzhi-2",
+        "interface_setback": "pocket",
         "concept_only": true,
-        "area_sqm_declared": 1858.598,
+        "area_sqm_declared": 614.357,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -719,40 +741,24 @@
         "coordinates": [
           [
             [
-              116.3495801634956,
-              40.020354881624634
+              116.34965187471288,
+              40.0156998413297
             ],
             [
-              116.34973894482371,
-              40.02037199894483
+              116.34996000673516,
+              40.015785868674406
             ],
             [
-              116.34979309248966,
-              40.020076462511206
+              116.35004812528713,
+              40.0156001586703
             ],
             [
-              116.35028354868216,
-              40.02012933582944
+              116.34973999326485,
+              40.015514131325595
             ],
             [
-              116.35022940101622,
-              40.020424872263064
-            ],
-            [
-              116.35038818234433,
-              40.02044198958326
-            ],
-            [
-              116.35046464527065,
-              40.02002465708777
-            ],
-            [
-              116.34965662642193,
-              40.01993754912914
-            ],
-            [
-              116.3495801634956,
-              40.020354881624634
+              116.34965187471288,
+              40.0156998413297
             ]
           ]
         ]
@@ -760,6 +766,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-009",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-09",
         "layer": "AI_SERVICE_ZONE",
@@ -770,13 +777,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "mixed_use",
-        "name_zh": "混合底商-64",
-        "name_en": "mixed_use-64",
-        "parent_land_use": "LU-024",
-        "form_logic": "L",
+        "building_type": "lab",
+        "name_zh": "院落核-9",
+        "name_en": "lab-9",
+        "parent_land_use": null,
+        "form_logic": "courtyard",
+        "cluster_id": "CL-zhongzhi-3",
+        "interface_setback": "front",
         "concept_only": true,
-        "area_sqm_declared": 1098.499,
+        "area_sqm_declared": 2002.184,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -786,32 +795,46 @@
         "coordinates": [
           [
             [
-              116.34962820584724,
-              40.024286166521044
+              116.34743164706707,
+              40.01800521659143
             ],
             [
-              116.34978697294451,
-              40.02426028028918
+              116.34806596521223,
+              40.017919422037245
             ],
             [
-              116.349733768626,
-              40.0240682780983
+              116.34796835293294,
+              40.017494783408566
             ],
             [
-              116.35023512559408,
-              40.023986534192
+              116.34733403478778,
+              40.017580577962754
             ],
             [
-              116.35020137860579,
-              40.023864749046155
+              116.34743164706707,
+              40.01800521659143
+            ]
+          ],
+          [
+            [
+              116.3478616802375,
+              40.01765150977471
             ],
             [
-              116.34954125454043,
-              40.023972379184315
+              116.34790316545619,
+              40.0178319811919
             ],
             [
-              116.34962820584724,
-              40.024286166521044
+              116.34754564068346,
+              40.01788033812244
+            ],
+            [
+              116.34750415546476,
+              40.01769986670525
+            ],
+            [
+              116.3478616802375,
+              40.01765150977471
             ]
           ]
         ]
@@ -819,6 +842,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-010",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-10",
         "layer": "AI_SERVICE_ZONE",
@@ -829,13 +853,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "教育转化-65",
-        "name_en": "education-65",
-        "parent_land_use": "LU-024",
+        "building_type": "incubator",
+        "name_zh": "院落翼L-10",
+        "name_en": "incubator-10",
+        "parent_land_use": null,
         "form_logic": "L",
+        "cluster_id": "CL-zhongzhi-3",
+        "interface_setback": "side",
         "concept_only": true,
-        "area_sqm_declared": 987.673,
+        "area_sqm_declared": 718.055,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -845,32 +871,32 @@
         "coordinates": [
           [
             [
-              116.34980334321088,
-              40.018280732820344
+              116.34790400828446,
+              40.01789679702956
             ],
             [
-              116.34995780994642,
-              40.01826408063206
+              116.34792841135429,
+              40.01800295668673
             ],
             [
-              116.34990117149044,
-              40.01795494953667
+              116.34813600638361,
+              40.017974878469
             ],
             [
-              116.35020597379312,
-              40.01792209051808
+              116.34819701405816,
+              40.018240277611916
             ],
             [
-              116.35018426490917,
-              40.01780360404174
+              116.34833541074438,
+              40.0182215588001
             ],
             [
-              116.34972499587097,
-              40.01785311524861
+              116.34825000000001,
+              40.01785
             ],
             [
-              116.34980334321088,
-              40.018280732820344
+              116.34790400828446,
+              40.01789679702956
             ]
           ]
         ]
@@ -878,6 +904,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-011",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-11",
         "layer": "AI_SERVICE_ZONE",
@@ -888,13 +915,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "配套商业-66",
-        "name_en": "retail-66",
-        "parent_land_use": "LU-024",
-        "form_logic": "R",
+        "building_type": "mixed_use",
+        "name_zh": "界面条-11",
+        "name_en": "mixed_use-11",
+        "parent_land_use": null,
+        "form_logic": "bar",
+        "cluster_id": "CL-zhongzhi-3",
+        "interface_setback": "street",
         "concept_only": true,
-        "area_sqm_declared": 2591.746,
+        "area_sqm_declared": 1116.97,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -904,24 +933,24 @@
         "coordinates": [
           [
             [
-              116.35153283129443,
-              40.01955906220119
+              116.34731261171174,
+              40.01842536963925
             ],
             [
-              116.35225649314623,
-              40.01944107252443
+              116.34811992571468,
+              40.018316176570295
             ],
             [
-              116.35215632964594,
-              40.019079605409694
+              116.34808738828826,
+              40.01817463036074
             ],
             [
-              116.35143266779414,
-              40.01919759508645
+              116.34728007428532,
+              40.0182838234297
             ],
             [
-              116.35153283129443,
-              40.01955906220119
+              116.34731261171174,
+              40.01842536963925
             ]
           ]
         ]
@@ -929,6 +958,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-012",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-12",
         "layer": "AI_SERVICE_ZONE",
@@ -939,13 +969,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "office",
-        "name_zh": "科创办公-83",
-        "name_en": "office-83",
-        "parent_land_use": "LU-029",
-        "form_logic": "L",
+        "building_type": "retail",
+        "name_zh": "底商垫-12",
+        "name_en": "retail-12",
+        "parent_land_use": null,
+        "form_logic": "R",
+        "cluster_id": "CL-zhongzhi-3",
+        "interface_setback": "pocket",
         "concept_only": true,
-        "area_sqm_declared": 1241.518,
+        "area_sqm_declared": 614.343,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -955,32 +987,24 @@
         "coordinates": [
           [
             [
-              116.35337593555481,
-              40.01144106329705
+              116.34789064202934,
+              40.017353143119394
             ],
             [
-              116.35342072548836,
-              40.0113128415229
+              116.34821834952619,
+              40.01734436494918
             ],
             [
-              116.35309947704515,
-              40.01124681365099
+              116.34820935797066,
+              40.0171468568806
             ],
             [
-              116.35322392817592,
-              40.01089054286624
+              116.34788165047381,
+              40.01715563505081
             ],
             [
-              116.35305676986818,
-              40.01085618594541
-            ],
-            [
-              116.35288752880385,
-              40.011340678504304
-            ],
-            [
-              116.35337593555481,
-              40.01144106329705
+              116.34789064202934,
+              40.017353143119394
             ]
           ]
         ]
@@ -988,6 +1012,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-013",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-13",
         "layer": "AI_SERVICE_ZONE",
@@ -998,13 +1023,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "education",
-        "name_zh": "教育转化-85",
-        "name_en": "education-85",
-        "parent_land_use": "LU-030",
-        "form_logic": "U",
+        "building_type": "lab",
+        "name_zh": "院落核-13",
+        "name_en": "lab-13",
+        "parent_land_use": null,
+        "form_logic": "courtyard",
+        "cluster_id": "CL-zhongzhi-4",
+        "interface_setback": "front",
         "concept_only": true,
-        "area_sqm_declared": 1084.402,
+        "area_sqm_declared": 2002.186,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -1014,40 +1041,46 @@
         "coordinates": [
           [
             [
-              116.35303684483478,
-              40.014928196826304
+              116.34931893664363,
+              40.01740296442688
             ],
             [
-              116.35317624585186,
-              40.014928196826304
+              116.34931893664363,
+              40.01789703557313
             ],
             [
-              116.35317624585186,
-              40.01464649460138
+              116.34988106335636,
+              40.01789703557313
             ],
             [
-              116.35323266028031,
-              40.01464649460138
+              116.34988106335636,
+              40.01740296442688
             ],
             [
-              116.35323266028031,
-              40.014928196826304
+              116.34931893664363,
+              40.01740296442688
+            ]
+          ],
+          [
+            [
+              116.34969837217473,
+              40.017789238232126
             ],
             [
-              116.3533720612974,
-              40.014928196826304
+              116.34945946832181,
+              40.017789238232126
             ],
             [
-              116.3533720612974,
-              40.01453956455423
+              116.34945946832181,
+              40.01751076176788
             ],
             [
-              116.35303684483478,
-              40.01453956455423
+              116.34969837217473,
+              40.01751076176788
             ],
             [
-              116.35303684483478,
-              40.014928196826304
+              116.34969837217473,
+              40.017789238232126
             ]
           ]
         ]
@@ -1055,6 +1088,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-014",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-14",
         "layer": "AI_SERVICE_ZONE",
@@ -1065,13 +1099,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "retail",
-        "name_zh": "配套商业-86",
-        "name_en": "retail-86",
-        "parent_land_use": "LU-030",
-        "form_logic": "L",
+        "building_type": "ai_r_and_d",
+        "name_zh": "院落翼U-14",
+        "name_en": "ai_r_and_d-14",
+        "parent_land_use": null,
+        "form_logic": "U",
+        "cluster_id": "CL-zhongzhi-4",
+        "interface_setback": "side",
         "concept_only": true,
-        "area_sqm_declared": 1025.726,
+        "area_sqm_declared": 877.627,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -1081,32 +1117,40 @@
         "coordinates": [
           [
             [
-              116.35320592609685,
-              40.02096699473503
+              116.34872524885817,
+              40.017500000000005
             ],
             [
-              116.35339750324009,
-              40.021006370586775
+              116.34872524885817,
+              40.01759881422925
             ],
             [
-              116.35349119410859,
-              40.02073815832514
+              116.34897117929499,
+              40.01759881422925
             ],
             [
-              116.35363695382351,
-              40.02076811708133
+              116.34897117929499,
+              40.01774254401725
             ],
             [
-              116.35368828676434,
-              40.02062116440202
+              116.34872524885817,
+              40.01774254401725
             ],
             [
-              116.35335094990617,
-              40.02055182979409
+              116.34872524885817,
+              40.0178413582465
             ],
             [
-              116.35320592609685,
-              40.02096699473503
+              116.34909999999999,
+              40.0178413582465
+            ],
+            [
+              116.34909999999999,
+              40.017500000000005
+            ],
+            [
+              116.34872524885817,
+              40.017500000000005
             ]
           ]
         ]
@@ -1114,6 +1158,7 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-015",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-15",
         "layer": "AI_SERVICE_ZONE",
@@ -1124,13 +1169,15 @@
         "equal_area_projection": "EPSG:4548",
         "official_boundary": false,
         "boundary_precision": "provisional_concept",
-        "building_type": "community_service",
-        "name_zh": "社区服务-87",
-        "name_en": "community_service-87",
-        "parent_land_use": "LU-030",
-        "form_logic": "R",
+        "building_type": "mixed_use",
+        "name_zh": "界面条-15",
+        "name_en": "mixed_use-15",
+        "parent_land_use": null,
+        "form_logic": "bar",
+        "cluster_id": "CL-zhongzhi-4",
+        "interface_setback": "street",
         "concept_only": true,
-        "area_sqm_declared": 1756.35,
+        "area_sqm_declared": 1116.971,
         "detail_type": "building_pad",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -1140,24 +1187,24 @@
         "coordinates": [
           [
             [
-              116.3534281623001,
-              40.01844454422924
+              116.34950631221454,
+              40.017885591088756
             ],
             [
-              116.3534281623001,
-              40.01876853838516
+              116.34950631221454,
+              40.018514408911244
             ],
             [
-              116.354,
-              40.01876853838516
+              116.34969368778545,
+              40.018514408911244
             ],
             [
-              116.354,
-              40.01844454422924
+              116.34969368778545,
+              40.017885591088756
             ],
             [
-              116.3534281623001,
-              40.01844454422924
+              116.34950631221454,
+              40.017885591088756
             ]
           ]
         ]
@@ -1165,6 +1212,61 @@
     },
     {
       "type": "Feature",
+      "id": "BLDG-016",
+      "properties": {
+        "id": "DET-zhongzhiyuan_ai_acceleration_area-BLDG-16",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "building_type": "retail",
+        "name_zh": "底商垫-16",
+        "name_en": "retail-16",
+        "parent_land_use": null,
+        "form_logic": "R",
+        "cluster_id": "CL-zhongzhi-4",
+        "interface_setback": "pocket",
+        "concept_only": true,
+        "area_sqm_declared": 614.343,
+        "detail_type": "building_pad",
+        "parent_key_area": "PROV-KEY-001",
+        "area_id": "zhongzhiyuan_ai_acceleration_area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34984525090358,
+              40.01701170807517
+            ],
+            [
+              116.3497996150349,
+              40.01726078735943
+            ],
+            [
+              116.3500547490964,
+              40.017288291924835
+            ],
+            [
+              116.35010038496509,
+              40.01703921264057
+            ],
+            [
+              116.34984525090358,
+              40.01701170807517
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PUBLIC-012",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-PUB-01",
         "layer": "AI_SERVICE_ZONE",
@@ -1177,7 +1279,7 @@
         "boundary_precision": "provisional_concept",
         "name_zh": "站点口袋-北",
         "public_space_type": "station_pocket",
-        "area_sqm_declared": 12463.425,
+        "area_sqm_declared": 37285.594,
         "detail_type": "public_prototype",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -1187,24 +1289,136 @@
         "coordinates": [
           [
             [
-              116.34936499999999,
-              40.017
+              116.34999343134551,
+              40.01615558491087
             ],
             [
-              116.34939999999999,
-              40.01605
+              116.34986405745721,
+              40.015999986790284
             ],
             [
-              116.348,
-              40.016
+              116.34968994949365,
+              40.01586360389693
             ],
             [
-              116.34796499999999,
-              40.016925
+              116.34947779832622,
+              40.01575167734893
             ],
             [
-              116.34936499999999,
-              40.017
+              116.3492357568053,
+              40.01566850842074
+            ],
+            [
+              116.34897312645082,
+              40.01561729324764
+            ],
+            [
+              116.3487,
+              40.0156
+            ],
+            [
+              116.34842687354917,
+              40.01561729324764
+            ],
+            [
+              116.34816424319469,
+              40.01566850842074
+            ],
+            [
+              116.34792220167377,
+              40.01575167734893
+            ],
+            [
+              116.34771005050634,
+              40.01586360389693
+            ],
+            [
+              116.34753594254278,
+              40.015999986790284
+            ],
+            [
+              116.34740656865448,
+              40.01615558491087
+            ],
+            [
+              116.34732690060743,
+              40.016324418710184
+            ],
+            [
+              116.34729999999999,
+              40.0165
+            ],
+            [
+              116.34732690060743,
+              40.01667558128982
+            ],
+            [
+              116.34740656865448,
+              40.01684441508913
+            ],
+            [
+              116.34753594254278,
+              40.01700001320972
+            ],
+            [
+              116.34771005050634,
+              40.01713639610307
+            ],
+            [
+              116.34792220167377,
+              40.01724832265107
+            ],
+            [
+              116.34816424319469,
+              40.01733149157926
+            ],
+            [
+              116.34842687354917,
+              40.017382706752365
+            ],
+            [
+              116.3487,
+              40.0174
+            ],
+            [
+              116.34897312645082,
+              40.017382706752365
+            ],
+            [
+              116.3492357568053,
+              40.01733149157926
+            ],
+            [
+              116.34947779832622,
+              40.01724832265107
+            ],
+            [
+              116.34968994949365,
+              40.01713639610307
+            ],
+            [
+              116.34986405745721,
+              40.01700001320972
+            ],
+            [
+              116.34999343134551,
+              40.01684441508913
+            ],
+            [
+              116.35007309939256,
+              40.01667558128982
+            ],
+            [
+              116.3501,
+              40.0165
+            ],
+            [
+              116.35007309939256,
+              40.016324418710184
+            ],
+            [
+              116.34999343134551,
+              40.01615558491087
             ]
           ]
         ]
@@ -1212,6 +1426,167 @@
     },
     {
       "type": "Feature",
+      "id": "PUBLIC-019",
+      "properties": {
+        "id": "DET-zhongzhiyuan_ai_acceleration_area-PUB-02",
+        "layer": "AI_SERVICE_ZONE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "crs_note": "EPSG:4326 storage",
+        "equal_area_projection": "EPSG:4548",
+        "official_boundary": false,
+        "boundary_precision": "provisional_concept",
+        "name_zh": "北段协议庭",
+        "public_space_type": "north_protocol_court",
+        "area_sqm_declared": 53270.911,
+        "detail_type": "public_prototype",
+        "parent_key_area": "PROV-KEY-001",
+        "area_id": "zhongzhiyuan_ai_acceleration_area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34916298315852,
+              40.00861731656764
+            ],
+            [
+              116.34899664530214,
+              40.00844442976698
+            ],
+            [
+              116.34877279220613,
+              40.008292893218815
+            ],
+            [
+              116.34850002641943,
+              40.0081685303877
+            ],
+            [
+              116.34818883017826,
+              40.008076120467486
+            ],
+            [
+              116.34785116257963,
+              40.008019214719596
+            ],
+            [
+              116.3475,
+              40.008
+            ],
+            [
+              116.34714883742036,
+              40.008019214719596
+            ],
+            [
+              116.34681116982173,
+              40.008076120467486
+            ],
+            [
+              116.34649997358056,
+              40.0081685303877
+            ],
+            [
+              116.34622720779386,
+              40.008292893218815
+            ],
+            [
+              116.34600335469786,
+              40.00844442976698
+            ],
+            [
+              116.34583701684147,
+              40.00861731656764
+            ],
+            [
+              116.34573458649527,
+              40.008804909677984
+            ],
+            [
+              116.3457,
+              40.009
+            ],
+            [
+              116.34573458649527,
+              40.00919509032202
+            ],
+            [
+              116.34583701684147,
+              40.009382683432364
+            ],
+            [
+              116.34600335469786,
+              40.00955557023302
+            ],
+            [
+              116.34622720779386,
+              40.009707106781185
+            ],
+            [
+              116.34649997358056,
+              40.0098314696123
+            ],
+            [
+              116.34681116982173,
+              40.009923879532515
+            ],
+            [
+              116.34714883742036,
+              40.009980785280405
+            ],
+            [
+              116.3475,
+              40.01
+            ],
+            [
+              116.34785116257963,
+              40.009980785280405
+            ],
+            [
+              116.34818883017826,
+              40.009923879532515
+            ],
+            [
+              116.34850002641943,
+              40.0098314696123
+            ],
+            [
+              116.34877279220613,
+              40.009707106781185
+            ],
+            [
+              116.34899664530214,
+              40.00955557023302
+            ],
+            [
+              116.34916298315852,
+              40.009382683432364
+            ],
+            [
+              116.34926541350472,
+              40.00919509032202
+            ],
+            [
+              116.3493,
+              40.009
+            ],
+            [
+              116.34926541350472,
+              40.008804909677984
+            ],
+            [
+              116.34916298315852,
+              40.00861731656764
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SCN-12",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-SCN-12",
         "layer": "SCENARIO_NODE",
@@ -1227,7 +1602,7 @@
         "scenario_type": "governance_forum",
         "host_structure": "zhongzhiyuan_ai_acceleration_area",
         "place_geometry_id": "SCN-12",
-        "area_sqm_declared": 2370.036,
+        "area_sqm_declared": 2370.035,
         "detail_type": "scenario_anchor",
         "parent_key_area": "PROV-KEY-001",
         "area_id": "zhongzhiyuan_ai_acceleration_area"
@@ -1237,24 +1612,24 @@
         "coordinates": [
           [
             [
-              116.34843560399335,
-              40.016743940654464
+              116.34845,
+              40.01675
             ],
             [
-              116.34893560399334,
-              40.016743940654464
+              116.34894999999999,
+              40.01675
             ],
             [
-              116.34893560399334,
-              40.01624394065446
+              116.34894999999999,
+              40.01625
             ],
             [
-              116.34843560399335,
-              40.01624394065446
+              116.34845,
+              40.01625
             ],
             [
-              116.34843560399335,
-              40.016743940654464
+              116.34845,
+              40.01675
             ]
           ]
         ]
@@ -1262,6 +1637,7 @@
     },
     {
       "type": "Feature",
+      "id": "DET-zhongzhiyuan_ai_acceleration_area-RISK",
       "properties": {
         "id": "DET-zhongzhiyuan_ai_acceleration_area-RISK",
         "layer": "AI_SERVICE_ZONE",

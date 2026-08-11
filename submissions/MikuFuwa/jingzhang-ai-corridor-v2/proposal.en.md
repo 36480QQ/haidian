@@ -1,18 +1,18 @@
 ---
-title: "JingZhang Open Spine · Protocol Edition (v2.1)"
+title: "JingZhang Open Spine · Protocol Edition (v2.2)"
 author_github: "MikuFuwa"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "v2.1 upgrades JingZhang Open Spine into an Open Protocol Spine City API (interface/permission/rollback/audit) with structured geometry, key-area detail assets, true map figures, real A0/A3 boards and offline projected maps on provisional boundaries."
+summary: "v2.2 ultra standard: courtyard/interface building clusters, break-diagnosis vs repair seams, key-area detail packs, A0 8 boards, A3 16-page booklet, pilot footprints and permit gates, EN parity; provisional + FAR unknown + medium."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.1"
+iteration: "v2.2"
 ---
 
-# JingZhang Open Spine · Protocol Edition (v2.1)
+# JingZhang Open Spine · Protocol Edition (v2.2)
 
 ## Design Basis and Source List
 
@@ -67,7 +67,7 @@ Light cases: Nanshan density, Toranomon vertical courts, Zhangjiang platform clu
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-Regulatory-plan **method** without fake FAR/height/redlines [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]. Land-use densified to **30** block/function units covering the site [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]. Buildings **87** with L/U/rect mixed logic (not a pure grid of tiny rectangles) [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]; road segments **28** [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]. Renewal priority: public interfaces first, deep rebuild later.
+Regulatory-plan **method** without fake FAR/height/redlines [standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:development_intensity_controls]. Land-use densified to **30** block/function units covering the site [data:geometry/land_use.geojson#LU-001] [metric:land_use_unit_count] [depth:land_use_layout]. Buildings **87** with courtyard/L/U/bar interface clusters mixed logic (not a pure grid of tiny rectangles) [metric:building_count] [data:geometry/buildings.geojson#BLDG-001]; road segments **28** [metric:road_segment_count] [data:geometry/roads.geojson#ROAD-001]. Renewal priority: public interfaces first, deep rebuild later.
 
 ## Detailed Design of Key Areas
 
@@ -116,6 +116,54 @@ Known metrics recomputed via EPSG:4548 at medium confidence under provisional ge
 ![Core metrics recomputation evidence](assets/figures/metrics-evidence.en.png)
 
 Boards: `drawings/a0-boards.en.pdf` (≥7 true figure boards) and `drawings/a3-booklet.en.pdf`; offline map `visual/index.en.html` embeds SVG projected from this package’s GeoJSON.
+
+
+
+### Diagnosis loop (equivalent to ZH)
+
+Each issue is framed as **spatial phenomenon → people → strategy ID → assumption ID** (all provisional):
+
+1. P01 spine severance by expressway/closed fronts → commuters/students → OS-01 → A-BOUNDARY-001
+2. P02 weak station-city four-quadrant walks → visitors/conversion → OS-05 → A-STATION-001
+3. P03 campus edge visible-but-inaccessible → students/founders → OS-04 → A-CAMPUS-001
+4. P04 test nuisance to daily life → residents/children → OS-02/SCN-02 rollback → A-NOISE-001
+5. P05 weak industry wing links → R&D workers/visitors → regional north interface → A-REGIONAL-001
+6. P06 under-served life wing → balanced live-work users → SCN-08 → A-LIFE-001
+7. P07 compute NIMBY/energy unknown → neighbors → OS-06 reversible station → A-ENERGY-001
+8. P08 heritage/intensity unknown → public/heritage managers → buffer without consumption → A-HERITAGE-001
+9. P09 robot vs pedestrian/accessibility → children/wheelchair users → OS-14 yield pilots → A-ROBOT-001
+10. P10 festival vs daily time conflict → night rest residents → OS-10 time zoning → A-EVENT-001
+
+Problem map: A0-02 + mobility figure with constraint base and break/repair pairs. Metrics: site=11412825.386, green_ratio=0.224794, public_ratio=0.093346, buildings=156, roads=54.
+
+### Open Protocol Spine lifecycle (EN parity)
+
+**Publish → Verify → Rollback → Audit.** Four fields: Interface / Permission / Rollback / Audit. Minimum pilot at SCN-01 or SCN-02 with offline path.
+
+### Regional interface spatial types
+
+1. North/Beike direction — **booking interface** at verify sandbox court  
+2. Future Science City — **portal schedule interface** at experience pitch hall  
+3. Huairou — **channel return node** on tech-service wing  
+4. BDA — **pilot feedback interface** at industry service plaza  
+5. Jing-Jin-Ji corridor — **southern gateway** at Dazhongsi station-city pockets  
+
+### Key-area deepen template (EN)
+
+Each key area carries: main entry · spine segment · cross seam · public court · ≥3 public prototypes · building pads · ≥2 scenario anchors · 1 risk overlay (`visual/assets/detail_*.json`). Section principles are schematic (no fake levels).
+
+- **Zhongzhiyuan Verify**: Qinghe waterfront + sandbox + forum; SCN-02/04/12; garden low-nuisance night signals.  
+- **Origin Open-source**: release–transfer–honor; SCN-01/06/11; ground-floor visible/accessible.  
+- **Dazhongsi Experience**: four-quadrant pockets + pitch + data parlor; SCN-05/07/10; level boarding priority.
+
+### Delivery gates & pilots
+
+OS-01…OS-14 include enablers and concept permit gates (ownership → safety eval → event permit → rollback offline). Near-term pilot footprints and dependency chain: `visual/assets/renewal_projects.json` (conceptual, not statutory parcels).
+
+### Scenario cards (EN field parity)
+
+All 12 cards keep: id, place_geometry_id, personas, data minimization, human review, rollback, KPI, non_goal. Validation tests: SCN-02 safety sandbox, SCN-04 edge station, SCN-07 data parlor — sandbox boundaries disclosed; no approval substitution.
+
 
 ## Risk, Copyright, and Compliance
 

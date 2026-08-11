@@ -6,10 +6,11 @@
   "features": [
     {
       "type": "Feature",
+      "id": "CON-001",
       "properties": {
         "id": "CON-001",
         "layer": "EXISTING_WATER",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -48,15 +49,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-001"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-002",
       "properties": {
         "id": "CON-002",
         "layer": "EXISTING_RAIL",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -95,15 +96,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-002"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-003",
       "properties": {
         "id": "CON-003",
         "layer": "EXISTING_PRIMARY_ROAD",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -142,15 +143,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-003"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-004",
       "properties": {
         "id": "CON-004",
         "layer": "EXISTING_PRIMARY_ROAD",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -189,15 +190,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-004"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-005",
       "properties": {
         "id": "CON-005",
         "layer": "HERITAGE_PROTECTION",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -288,15 +289,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-005"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-006",
       "properties": {
         "id": "CON-006",
         "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -399,15 +400,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-006"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-007",
       "properties": {
         "id": "CON-007",
         "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -446,15 +447,15 @@
             ]
           ]
         ]
-      },
-      "id": "CON-007"
+      }
     },
     {
       "type": "Feature",
+      "id": "CON-008",
       "properties": {
         "id": "CON-008",
         "layer": "REGULATORY_CONTROL",
-        "source_type": "agent_generated_design",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "crs_note": "EPSG:4326 storage",
@@ -557,8 +558,7 @@
             ]
           ]
         ]
-      },
-      "id": "CON-008"
+      }
     }
   ]
 }

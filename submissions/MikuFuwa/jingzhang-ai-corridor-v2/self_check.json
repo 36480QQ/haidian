@@ -63,6 +63,7 @@
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/detail_dazhongsi.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/detail_zhongzhiyuan.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/overview.svg",
+        "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/renewal_projects.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/scenario_nodes.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/assets/topology_check.json",
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2/visual/index.en.html",
@@ -71,7 +72,7 @@
       "ai_package_stages": {
         "submissions/MikuFuwa/jingzhang-ai-corridor-v2": "formal"
       },
-      "total_bytes": 5887453,
+      "total_bytes": 6823355,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -113,11 +114,11 @@
       ],
       "metrics": {
         "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 2550859.082,
-        "public_space_area_sqm": 1326256.8,
-        "building_footprint_area_sqm": 125571.357,
-        "green_ratio": 0.223508,
-        "public_space_ratio": 0.116208
+        "green_space_area_sqm": 2565531.784,
+        "public_space_area_sqm": 1065343.771,
+        "building_footprint_area_sqm": 162829.229,
+        "green_ratio": 0.224794,
+        "public_space_ratio": 0.093346
       }
     },
     "stderr": ""
@@ -130,11 +131,11 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.223508,
-        "public_space_ratio": 0.116208,
-        "building_count": 87.0,
-        "road_segment_count": 28.0,
-        "building_density": 0.011003,
+        "green_ratio": 0.224794,
+        "public_space_ratio": 0.093346,
+        "building_count": 156.0,
+        "road_segment_count": 54.0,
+        "building_density": 0.014267,
         "key_area_count": 3.0
       }
     },
@@ -156,7 +157,7 @@
           "source": 6,
           "standard": 3,
           "depth": 15,
-          "data": 10,
+          "data": 11,
           "metric": 18
         }
       }

@@ -6,6 +6,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": "PHASE-001",
       "properties": {
         "id": "PHASE-001",
         "layer": "PHASE",
@@ -50,11 +51,11 @@
             ]
           ]
         ]
-      },
-      "id": "PHASE-001"
+      }
     },
     {
       "type": "Feature",
+      "id": "PHASE-002",
       "properties": {
         "id": "PHASE-002",
         "layer": "PHASE",
@@ -103,11 +104,11 @@
             ]
           ]
         ]
-      },
-      "id": "PHASE-002"
+      }
     },
     {
       "type": "Feature",
+      "id": "PHASE-003",
       "properties": {
         "id": "PHASE-003",
         "layer": "PHASE",
@@ -152,8 +153,7 @@
             ]
           ]
         ]
-      },
-      "id": "PHASE-003"
+      }
     }
   ]
 }
