@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_scaffold",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "慢行与创新服务廊道",
+        "design_update": "walk-first robotic mobility belt; route and node interfaces are conceptual",
+        "network_role": "robotic_service_loop_with_five_nodes",
+        "service_node_ids": [
+          "NODE-AI-ORIGIN",
+          "NODE-ZHONGZHIYUAN",
+          "NODE-DAZHONGSI",
+          "NODE-ZHONGGUANCUN",
+          "NODE-XIAOYUEHE"
+        ],
+        "official_boundary": false,
+        "usage_note": "Conceptual centreline and node interface; not a statutory road or approved robot route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340948,
+            39.9845
+          ],
+          [
+            116.35374,
+            39.9845
+          ]
+        ]
+      }
+    }
+  ]
+}
