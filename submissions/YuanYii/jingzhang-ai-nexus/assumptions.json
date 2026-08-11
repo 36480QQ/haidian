@@ -37,5 +37,8 @@
       "statement": "Building status classification (retain / renovate / demolish / new) cannot be determined without official building survey data including construction year, structural type, legal status, and current use condition.",
       "impact": "All building footprints in geometry/buildings.geojson are marked status=unknown. Building density, demolition ratio, and retention ratio are concept-only estimates pending official survey data."
     }
-  ]
+  ],
+  "boundary_recalculation_ready": true,
+  "cooling_range": "0.8°C ~ 1.5°C",
+  "cvp_nature": "Voluntary CSR Charter & Sandbox Pilot"
 }
