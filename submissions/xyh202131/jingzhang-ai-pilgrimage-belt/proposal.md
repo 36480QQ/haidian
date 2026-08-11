@@ -70,8 +70,6 @@ scenarios:
 | T-02 / SCENE-011 企业服务 | 同一冻结问题集的人工窗口或可追溯静态指南 | 有来源且边界正确的回答数 / 冻结问题数 | 输出无来源结论、泄露禁采数据或人工接管不可用即停止 | 合成决策回放 10/10 精确匹配；现实阈值、责任主体、场地与服务均未执行；G0 |
 | T-01 / SCENE-001 低速配送 | 相同任务的人工配送或静态路线 | 无碰撞、无越界且可急停的任务数 / 获批受控任务数 | 任一碰撞、越界、实体急停失败或接管链断裂即停止 | 安全红线固定；效率阈值待预注册；未执行 |
 
-![G1 首测：预注册、停止、恢复与独立复测](assets/figures/implementation-roadmap.png)
-
 ### 创新不是口号：可证伪登记表
 
 V2 进一步补上一个仍然存在的缺口：方案已经提出验证线、四门制、可逆公共空间和失败公开，但“看起来新”仍不能证明“创新成立”。`visual/assets/innovation-register.json` 把六项核心创新逐一绑定到基线不足、新颖性主张、可证伪假设、最小证据、通过标准、失败信号和退出动作，其中 INNOV-006 专门检验方案对已开放公园是否产生可证明、可恢复的净增量；缺少失败信号或退出动作的主张不得登记为正式创新，尚未发生的运营结果继续保持 `unknown` [data:visual/assets/innovation-register.json#INNOV-001] [data:visual/assets/innovation-register.json#INNOV-006]。这使评审者不仅能问“新在哪里”，还可以直接判断“什么证据会证明它没有成立”。
@@ -344,6 +342,24 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 ## 更新项目清单、实施政策与分期计划
 
 本节把阶段、试点、参与主体和可衡量指标放在同一实施框架中：每个项目先写前置条件，再写责任组合和验收指标；任何阶段都必须根据监测、居民反馈和专业评估决定继续、修正或退出。
+
+### 维护型城市：从日常问题到普通基线 / Maintenance urbanism: from everyday issue to ordinary baseline
+
+本轮不新增场景、项目或空间对象，而把既有 12 个 `SCENE-001`—`012` 与八个 `JZ-01`—`08` 放入五类**维护任务族**：无障碍修复（`accessibility_repair`）、气候舒适维护（`climate_comfort_upkeep`）、公共服务连续性（`public_service_continuity`）、遗产真实性纠错（`heritage_authenticity_correction`）与小微企业服务支持（`small_business_service_support`）。这些是面向用户目标的维护分类，不是新场景、项目编号或已承诺服务 [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract]。
+
+| 维护任务族 | 既有场景 → 既有项目 | 维护焦点 |
+|---|---|---|
+| 无障碍修复 | `SCENE-009` → `JZ-01`/`JZ-05`；`SCENE-010` → `JZ-01`/`JZ-02` | 日常问题、无障碍共同测试、断点修复与非 AI 路径 |
+| 气候舒适维护 | `SCENE-002` → `JZ-02`/`JZ-03`；`SCENE-008` → `JZ-01`/`JZ-02` | 舒适、能耗与环境条件的维护，不把传感或设备当效果 |
+| 公共服务连续性 | `SCENE-003` → `JZ-03`/`JZ-07`；`SCENE-004` → `JZ-07`/`JZ-08`；`SCENE-007` → `JZ-04`；`SCENE-012` → `JZ-05` | 失败公开、人工交接、服务恢复与独立复核 |
+| 遗产真实性纠错 | `SCENE-005` → `JZ-04`/`JZ-06` | 来源、叙事和更正记录的策展复核 |
+| 小微企业服务支持 | `SCENE-001` → `JZ-03`；`SCENE-006` → `JZ-04`；`SCENE-011` → `JZ-05` | 问题门诊、人工服务和小微经营者可理解的支持 |
+
+闭环从“问题进入”开始，但不得把它写成已收集的现实投诉：每一条仅是 `pending` 的问题记录壳，随后依次为工单壳、责任接受、计划/实际人工工时、既有设施检查、清洁/调整、修复、可维修组件替换、独立复核，以及继续/纠正/停止。采购只能在既有设施已检查、清洁或调整、修复和组件替换均不足后才被讨论；全寿命成本、可维修性、部件可得性、退役和恢复普通基线字段必须保留，但预算、采购、人员、工时、修复与效果均不被虚构 [metric:maintenance_real_complaint_count] [metric:maintenance_actual_human_hours]。
+
+维护旅程必须让维修人员、保洁人员、有人值守服务人员、策展人员和无障碍共同测试者可见：他们可接收、拒绝或转交问题；责任未接受时不生成现实工单；独立复核失败、重复失败、无安全人工路径或无法恢复日常时进入停止，撤除临时层并回到普通基线。季度维护地图只是一张待填模板，用来按任务族、既有场景/项目、失败类型和退役决定复盘，不能显示现实投诉、预算或绩效。`maintenance_urbanism_contract` 以机器可审计形式保存上述字段、12 场景→既有项目映射与现实零/未知计数 [data:visual/assets/key-area-evidence-matrix.json#maintenance_urbanism_contract] [assumption:A-MAINTENANCE-URBANISM-012]。
+
+![维护型城市：问题壳、可见人工、既有设施优先、复核分流、重复故障侧线与普通基线恢复（概念合同；真实工单为 0）](assets/figures/implementation-roadmap.png)
 
 八个项目形成空间、协议和运营一一对应的更新包 [depth:renewal_project_list]：
 

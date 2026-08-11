@@ -19,7 +19,8 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "pattern": "^0\\.1\\.\\d+$"
+      "pattern": "^0\\.(?:1|2)\\.\\d+$",
+      "description": "Manifest schema 0.1.x is legacy-compatible; 0.2.x is the strict forward contract."
     },
     "package_id": {
       "type": "string",
@@ -123,8 +124,7 @@
         "type": "object",
         "required": [
           "path",
-          "role",
-          "required"
+          "role"
         ],
         "additionalProperties": false,
         "properties": {
@@ -134,35 +134,19 @@
           },
           "role": {
             "type": "string",
-            "enum": [
-              "manifest",
-              "agent_card",
-              "metrics",
-              "assumptions",
-              "sources",
-              "self_check",
-              "compliance_matrix",
-              "standard_matrix",
-              "design_depth_matrix",
-              "geometry",
-              "drawing",
-              "narrative",
-              "copyright_statement",
-              "visualization",
-              "proposal_figure",
-              "rendered_proposal_html",
-              "video",
-              "audio",
-              "media_poster",
-              "caption_track",
-              "transcript"
-            ]
+            "pattern": "^[a-z][a-z0-9_]{1,63}$",
+            "description": "Stable extensible snake_case role token. The 0.2.x contract uses the canonical role set below or role=other with a declared role_detail. Canonical roles include manifest, agent_card, metrics, assumptions, sources, self_check, compliance_matrix, standard_matrix, design_depth_matrix, geometry, drawing, narrative, copyright_statement, visualization, proposal_figure, rendered_proposal_html, video, audio, media_poster, caption_track, transcript, changelog, asset, figure, evidence_data, and verification_script."
+          },
+          "role_detail": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{1,63}$",
+            "description": "Required only for schema 0.2.x when role is other."
           },
           "required": {
             "type": "boolean"
           },
           "sha256": {
-            "type": "string",
+            "type": ["string", "null"],
             "pattern": "^[a-f0-9]{64}$"
           },
           "language": {
@@ -212,7 +196,7 @@
         "self_checked",
         "known_blockers"
       ],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "self_checked": {
           "type": "boolean"
@@ -233,10 +217,146 @@
             "high",
             "medium",
             "low",
-            "unknown"
+            "unknown",
+            "mixed_provisional_and_conceptual"
           ]
+        },
+        "readiness_contract": {
+          "type": "string",
+          "enum": [
+            "persisted-self-check-v1"
+          ]
+        },
+        "extensions": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^x-[a-z][a-z0-9_-]{1,63}$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "schema_version",
+              "data"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "schema_version": {
+                "type": "string",
+                "pattern": "^[0-9]+\\.[0-9]+$"
+              },
+              "data": {}
+            }
+          }
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["schema_version"],
+        "properties": {
+          "schema_version": {
+            "pattern": "^0\\.2\\."
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "files": {
+            "items": {
+              "required": ["path", "role", "required"],
+              "properties": {
+                "role": {
+                  "enum": [
+                    "manifest",
+                    "agent_card",
+                    "metrics",
+                    "assumptions",
+                    "sources",
+                    "self_check",
+                    "compliance_matrix",
+                    "standard_matrix",
+                    "design_depth_matrix",
+                    "geometry",
+                    "drawing",
+                    "narrative",
+                    "copyright_statement",
+                    "visualization",
+                    "proposal_figure",
+                    "rendered_proposal_html",
+                    "video",
+                    "audio",
+                    "media_poster",
+                    "caption_track",
+                    "transcript",
+                    "changelog",
+                    "asset",
+                    "figure",
+                    "evidence_data",
+                    "verification_script",
+                    "other"
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "required": ["role"],
+                    "properties": {
+                      "role": {
+                        "const": "other"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": ["role_detail"]
+                  },
+                  "else": {
+                    "not": {
+                      "required": ["role_detail"]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["schema_version"],
+        "properties": {
+          "schema_version": {
+            "pattern": "^0\\.2\\."
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "validation_claim": {
+            "properties": {
+              "self_checked": {
+                "$ref": "#/properties/validation_claim/properties/self_checked"
+              },
+              "known_blockers": {
+                "$ref": "#/properties/validation_claim/properties/known_blockers"
+              },
+              "data_confidence": {
+                "$ref": "#/properties/validation_claim/properties/data_confidence"
+              },
+              "readiness_contract": {
+                "$ref": "#/properties/validation_claim/properties/readiness_contract"
+              },
+              "extensions": {
+                "$ref": "#/properties/validation_claim/properties/extensions"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
 }
