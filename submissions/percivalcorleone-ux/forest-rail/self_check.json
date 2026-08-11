@@ -72,7 +72,7 @@
       "ai_package_stages": {
         "submissions/percivalcorleone-ux/forest-rail": "formal"
       },
-      "total_bytes": 7171508,
+      "total_bytes": 7207730,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -146,15 +146,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 16,
+          "source": 12,
           "standard": 6,
           "depth": 15,
           "data": 15,
-          "metric": 12
+          "metric": 13
         }
       }
     },

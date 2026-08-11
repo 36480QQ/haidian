@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Xiaoyuehe blue-green water system as the scenario-enabling spine, this proposal turns AI scenarios from showcase exhibits into everyday civic infrastructure: a one-water one-ridge three-fields two-wings spatial framework, 12 operable scenario cards, 4 test/validation scenarios, 6 user personas and 3 AI pilgrimage landmarks, all generated on the provisional boundary with recalculation interfaces retained."
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+tracks: ["youth-friendly-public-space", "ai-public-services", "ai-traffic-walkability"]
+scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "public-safety-operations-review"]
 iteration: "v0.1"
 ---
 

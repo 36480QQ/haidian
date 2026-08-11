@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.7.1 - 2026-08-11
+
+manifest 迁移 0.2.x（Issue #1058 / PR #1063 已合并）：
+
+- `schema_version` 0.1.0 → 0.2.0，进入 strict gate；`visual_asset` ×5 → canonical `asset`，`risk` ×1 → `other` + `role_detail: "risk"`，`changelog` 已为 canonical 不变。迁移后全包 role 均为 canonical 或显式 `other`，无遗留 advisory 违规。
+
+
 ## v1.7 - 2026-08-11
 
 文保约束落地（响应 Issue #1774 数据源索引）：

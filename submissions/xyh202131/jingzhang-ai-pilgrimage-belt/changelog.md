@@ -4,6 +4,21 @@
 >
 > This log records traceable changes to this submission package only. It is not evidence of approval, implementation, field testing, rights clearance, or trusted CI. After any content change, regenerate the manifest from the final Git blobs and rely on repository validation attached to the final PR head.
 
+## v4.0 - 2026-08-11
+
+**Non-AI-first public city / 非 AI 优先公共城市**
+
+- 选择六个内聚工作包，把无需账户/扫码、完整非 AI、连续无障碍意图、人工交接、同意撤回、申诉纠正、无屏安静固化为七项未来服务窗口不得删除的公共设计权利；“永久”不表示当前已有服务点、窗口、人员或批准。
+- Selected six cohesive work packages and fixed seven public design rights that cannot be removed from any future offered service window: no account/QR, complete non-AI path, continuous accessibility intent, staffed handoff, consent withdrawal, appeal/correction, and screen-free quiet. “Permanent” does not mean that a current service point, window, staff assignment, or approval exists.
+- 将 `non-ai-parity-contract.json` 升级为 V2，以“纸面/口头任务—无屏等候—双入口人工台—同一基本任务—投诉/撤回/纠正—无技术离开”为主路径；AI 仅在易懂披露和单独自愿同意后作为可选支线，并汇入同一结果、费用规则、责任队列与恢复链。
+- Upgraded `non-ai-parity-contract.json` to V2. The primary route is paper/oral task–screen-free waiting–dual-entry staffed desk–same basic task–complaint/withdrawal/correction–technology-free exit. AI is an optional branch only after plain-language disclosure and separate voluntary consent, and rejoins the same outcome, cost rule, accountable queue, and recovery chain.
+- 新增双语服务蓝图和 `non_ai_first_public_city_contract`，分别空间化众智园设备隔离/接管恢复、原点社区无屏共学/口头纸面撤回、以及大钟寺四向通勤/来源纠错/双入口人工台；三处不套用同一构图或恢复动作。
+- Added a bilingual service blueprint and `non_ai_first_public_city_contract`, spatialising Zhongzhiyuan equipment isolation/takeover recovery, Origin screen-free learning/oral-paper withdrawal, and Dazhongsi four-way commuting/source correction/dual-entry staffed service. The three places do not share one copied composition or recovery action.
+- 老年人、残障与行动不便者、低数字素养者、无账户或无智能设备者分别建立分母、记录字段和未知阈值；总体平均不得掩盖排斥。投诉、撤回、纠正、停止、人工接管、临时叠层退出、独立复测与还场进入同一可审计闭环。
+- Added separate denominators, record fields, and unknown thresholds for older people, disabled and reduced-mobility users, low-digital-literacy users, and people without an account or smart device; overall averages may not hide exclusion. Complaint, withdrawal, correction, stop, staffed takeover, overlay removal, independent retest, and place restoration form one auditable loop.
+- 已确认运营主体 0、人员 0、现实服务交互 0、已知群体结果 0、现实批准与运营 0；全部场景仍为 G0，临时 geometry、既有 SCENE/JZ/T 编号、后续维护合同和 `not_fully_cleared` 权利状态不变。本轮不声称固定值班、满意度、完成率、现场测试或法律上普遍适用的服务义务。
+- Confirmed operators, staff, real service interactions, known group results, and real approvals/operations all remain 0. Every scene remains G0; provisional geometry, existing SCENE/JZ/T IDs, the later maintenance contract, and `not_fully_cleared` rights status are unchanged. This round claims no fixed staffing, satisfaction, completion rate, field test, or generally applicable statutory service duty.
+
 ## v3.0 - 2026-08-11
 
 **Maintenance-urbanism publication fixed point / 维护型城市发布固定点**

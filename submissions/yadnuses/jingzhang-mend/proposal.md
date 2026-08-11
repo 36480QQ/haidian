@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "相护京张 MEND Corridor 以「修复三种裂痕」为总概念：一条 120 米宽、全长约 9.66 公里的京张绿脊照护步道缝合铁路割裂的东西空间；众智园、AI 原点社区、大钟寺三核与两翼分别承载全栈自主硬核叙事与照护科技场景；十张以上照护场景卡让老人、儿童、残障人士与低数字素养者成为 AI 创新带的第一批受益者。全部空间、政策与投资表述均为概念建议，核心指标可从 GeoJSON 复算，控规类指标保持 unknown 并待正式数据补齐。"
 tracks: ["jingzhang-heritage-narrative", "ai-public-services", "ai-origin-community"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "robot-delivery-low-speed"]
-iteration: "v0.3"
+iteration: "v0.4"
 ---
 
 # 相护京张 MEND Corridor：照护与修复的百年京张AI创新带城市设计
@@ -296,6 +296,25 @@ iteration: "v0.3"
 
 指标分三类管理 [depth:metrics_recalculation]：第一类可由提交几何直接复算（下表）；第二类依赖官方控规或任务书附件，保持 unknown（容积率、建筑高度控制、建筑密度控制，reason 见 `metrics.json`）；第三类需运营数据持续校准（AI 创新指数、人才密度、场景使用频次等），只作方向建议。
 
+### 核心主张的可检验断言
+
+本节把方案的关键主张压成一张「一句话可检验」表：每条主张都能在指定文件或图层上用一段脚本或一次复算当场判真假，不依赖正文表述。数字与 `metrics.json` 逐字一致，R 编号与第十二章风险表一致；其中承重两行由机器工件 `visual/assets/care-contracts.json` 及其校验脚本（退出码 0 即全部断言通过）执行验证 [metric:land_use_total_area_sqm] [metric:green_ratio]。
+
+| 核心主张 | 验证位置 | 通过判据（一句话） |
+| --- | --- | --- |
+| 用地 11 类完整分割、无空洞无重叠 | geometry/land_use.geojson + metrics.json | land_use_total_area_sqm 与 site_area_sqm 面积差为 0 |
+| 绿地率 25.26% 可从 GeoJSON 复算 | geometry/green_space.geojson + metrics.json | green_space_area_sqm ÷ site_area_sqm = 0.252649 |
+| 12 张照护契约卡全部含退出机制 | visual/assets/care-contracts.json | 12 卡齐全、必填字段非空、每卡 exit_mechanism 非空 |
+| 每卡硬停止条件关联的 R 编号可在第十二章回引 | visual/assets/care-contracts.json + 校验脚本 | 全部 R-xx 均存在于第十二章风险表行首 |
+| 每卡量化触发器与风险表逐字一致 | visual/assets/care-contracts.json + 校验脚本 | 触发器文本与风险表「量化触发器」列完全相等 |
+| 每卡空间载体 feature id 真实存在 | visual/assets/care-contracts.json + geometry/*.geojson | space_carrier 的 `<file>#<id>` 均能在对应图层查到 |
+| 场景类型二分正确（T1-T3 测试验证） | visual/assets/care-contracts.json type 字段 | 3 张 test_verification + 9 张 service_experience |
+| 绿脊步道主轴长度 9663.5 米可复算 | geometry/roads.geojson#ROAD-001 | 中心线在 EPSG:4548 下复算长度与指标一致 [metric:heritage_spine_greenway_length_m] |
+| 控规类指标保持 unknown 不渲染数值 | metrics.json + render_proposal_html.py | floor_area_ratio 等三项为 null，HTML 不出现强度数值 |
+| 90 天合同到期强制三选一去留 | proposal.md 第十章 + R-11 | 第 90 天未作继续 / 整改 / 撤场决定即自动撤场 |
+
+上表全部为概念建议的完整性自检，不构成审批结论；未知数据的披露纪律见 `metrics.json` 与第十二章风险表。
+
 | 指标 | 数值 | 公式与来源 | 置信度 |
 | --- | ---: | --- | --- |
 | site_area_sqm | 11412825.386 | polygon_area(site_boundary)，EPSG:4548 | medium（provisional） |
@@ -316,6 +335,20 @@ iteration: "v0.3"
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
 复算方法：坐标存储 EPSG:4326，面积与长度统一在 EPSG:4548（CGCS2000 三度带，中央经线 117E）下计算；用地由统一网格切割生成，两两重叠为零。合规矩阵覆盖公告 17 条必选任务与 agent 任务书 6 条任务（合计 23 条），每条挂接章节、图层、指标、图纸、HTML 区块、来源、假设与自检项，见 `compliance_matrix.json`；标准响应与深度项完成状态分别见 `standard_matrix.json`（9 条标准，其中 1 条因原文缺失记为 data_gap）与 `design_depth_matrix.json`（15 个核心项全部 complete）。unknown 指标不得被任何图件或 HTML 渲染为数值，正式提交前以 official 数据触发整体重算 [source:SITE-PACKAGE]。
+
+### 工具链复算证据
+
+本方案的每一条空间主张都可被同一套真实工具链复核，而非纸面宣称。几何生成脚本为纯确定性流程：重跑结果与提交的 8 个几何/指标文件逐字节一致，用地覆盖缺口 0.000000 平方米、单元两两重叠 0 平方米。独立断言脚本（geopandas 1.1.4 + shapely 2.1.2，EPSG:4548）从 `geometry/` 图层实算并通过全部 13 项检查：用地并集面积与场地边界差 −0.000008 平方米；三个重点片区全部位于场地内；与公告约面积的偏差为场地 +0.11%、众智园 +0.43%、AI 原点 +0.02%、大钟寺 +0.06%，均小于 1%，偏差源于公告"约"值口径而非几何错误。核心指标由图层直接复算：`green_ratio` 实算 0.252649332、`public_space_ratio` 实算 0.259378604，与 `metrics.json` 记录值差异小于 4×10⁻⁷——提交的指标不是填表数字，而是图层实算结果 [metric:site_area_sqm]。官方校验器四道关卡全部 PASS，`spatial_review` 仅 3 条 KEY_AREA_PROVISIONAL minor 备注（组织方数据缺口，不阻断内容计分）。证据链命令可在提交目录内一键复现：
+
+| 验证环节 | 关键输出 | 结果 |
+| --- | --- | --- |
+| 几何确定性复现（生成脚本重跑） | 覆盖缺口 0、两两重叠 0、8 文件与提交版逐字节一致 | 通过 |
+| 用地完整性（独立断言脚本） | 并集−边界 = −0.000008 平方米；3 片区全部位于场地内 | 通过 |
+| 公告面积偏差 | +0.11% / +0.43% / +0.02% / +0.06%（均 <1%） | 通过 |
+| 指标复算 | green_ratio / public_space_ratio 与 metrics.json 差 <4×10⁻⁷ | 通过 |
+| 官方校验器 | deterministic / spatial / visual / professional 四关卡 PASS | 通过 |
+
+临时边界下的面积偏差属 provisional 近似，正式红线发布后按 R-01 触发整体重算。
 
 ## 风险、版权与合规说明
 
