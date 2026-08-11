@@ -2,6 +2,9 @@
 title: "轨迹织城：百年京张 AI 创新带城市更新与协同转化方案"
 author_github: "Grady10086"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
 license: "CC-BY-4.0"
 summary: "依托京张铁路历史文化资源和沿线创新资源，构建一轴三廊三核的空间结构，贯通需求组织、测试验证和应用转化三类实施链条，推动科技创新、城市更新与公共服务协同发展。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -13,7 +16,11 @@ iteration: "v2.0"
 
 “轨迹织城 / RailWeave Open City”以京张铁路历史脉络为基础，统筹科技创新、城市更新和公共治理三类工作逻辑。方案坚持存量提质、创新协同、审慎实施，提出“一轴三廊三核、三链协同”的总体思路，推动创新需求提出、技术测试验证、场景应用转化全过程衔接，建设开放共享、责任清晰、安全可控的百年京张 AI 创新带。
 
-根据现有公开资料，京张公共空间已具备分段建设和持续推进基础，众智园、大钟寺已纳入城市更新工作，AI 原点已形成分布式创新载体和服务网络。现阶段尚缺官方 GIS、宗地权属、统一时点建筑调查、完整道路红线以及河道、轨道安全条件等基础资料。本方案据此严格区分已确认事实、规划研判和设计建议，围绕空间布局、运营机制、数据治理、责任主体、资金安排和退出恢复建立可衔接后续专业深化的项目框架。[source:PARK-PHASE1] [source:PARK-PHASE2] [source:ZHONGZHIYUAN-RENEWAL] [source:DAZHONGSI-RENEWAL] [source:AI-ORIGIN-2026] [depth:existing_conditions_diagnosis]
+根据现有公开资料，京张公共空间已具备分段建设和持续推进基础。[source:PARK-PHASE1] [source:PARK-PHASE2]
+
+众智园、大钟寺已纳入城市更新工作，AI 原点已形成分布式创新载体和服务网络。[source:ZHONGZHIYUAN-RENEWAL] [source:DAZHONGSI-RENEWAL] [source:AI-ORIGIN-2026]
+
+现阶段尚缺官方 GIS、宗地权属、统一时点建筑调查、完整道路红线以及河道、轨道安全条件等基础资料。本方案据此严格区分已确认事实、规划研判和设计建议，围绕空间布局、运营机制、数据治理、责任主体、资金安排和退出恢复建立可衔接后续专业深化的项目框架。[depth:existing_conditions_diagnosis]
 
 本方案现阶段定位为开放共创的城市设计研究成果。约 11.4 平方公里临时工作边界仅用于方案组织和技术校核；功能组件符号仅表达空间接口，不代表现状或拟建建筑；结构化自检结果不替代法定规划、现场调查和工程可行性论证。参与者原创设计内容按 CC BY 4.0 开放，第三方资料按照许可条件和适用范围引用。[source:SOURCE-REGISTRY]
 
@@ -37,7 +44,8 @@ iteration: "v2.0"
 
 ### 现状基础与待补充资料
 
-- **已掌握资料**：征集公告明确三层研究尺度和三处重点区域任务；`HD00-1601` 等街区控规及部分采信事项已公开；京张公园一期已实施，二期配套项目已完成，连续开放状态尚需现场核实。[source:OFFICIAL-ANNOUNCEMENT] [source:JINGZHANG-CONTROL-NOTICE] [source:PARK-PHASE1] [source:PARK-PHASE2]
+- **已掌握资料**：征集公告明确三层研究尺度和三处重点区域任务，`HD00-1601` 等街区控规及部分采信事项已公开。[source:OFFICIAL-ANNOUNCEMENT] [source:JINGZHANG-CONTROL-NOTICE]
+- **已掌握资料**：京张公园一期已实施，二期配套项目已完成，连续开放状态尚需现场核实。[source:PARK-PHASE1] [source:PARK-PHASE2]
 - **已掌握资料**：众智园、大钟寺更新片区已有官方文字四至，大钟寺实施单元统筹主体已有公示；AI 原点为以五道口为核心、向周边辐射的约 3 km² 分布式创新网络。[source:ZHONGZHIYUAN-RENEWAL] [source:DAZHONGSI-RENEWAL] [source:AI-ORIGIN-2026]
 - **待补充资料**：官方矢量边界、宗地及产权、建筑现状、完整控规图纸、道路红线、河道蓝线、防洪水位、轨道及铁路安全保护区、市政容量、应用单位预算和五年运营收支。相关指标现阶段暂不赋值，不以方案示意替代基础调查。[depth:risk_missing_data]
 
@@ -51,7 +59,11 @@ iteration: "v2.0"
 | 总体设计范围 | 约 11.4 km² | 评估京张公共空间建设和开放状况，依托清河、小月河与高校、转河三条联动廊道完善网络衔接 | 形成现状关系、功能布局、连续性提升任务和更新项目接口 | `SITE-001` 不作为法定红线，概念分区不替代控规成果 |
 | 重点区域范围 | 三处合计约 368.4 ha | 结合资料基础和实施条件提出差异化重点项目 | 众智园形成片区级验证接口；AI 原点形成网络化创新服务接口；大钟寺形成更新片区场景转化接口 | 临时工作边界不用于计算法定面积、开发强度和拆改留 |
 
-当前 `SITE-001` 仅用于提交包拓扑校核、自检和概念复算，`KEY-V2-001/002/003` 仅作为三处重点区域工作索引。[data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#KEY-V2-001] [data:geometry/key_areas.geojson#KEY-V2-002] [data:geometry/key_areas.geojson#KEY-V2-003] [metric:key_area_count] 取得官方发布的矢量边界数据后，应按照 site boundary → key areas → existing layers → proposal layers → metrics → 五张主图 → HTML/PDF 的顺序整体重算，确保各类成果采用同一版本边界。[depth:three_level_scope_framework] [depth:metrics_recalculation]
+当前 `SITE-001` 仅用于提交包拓扑校核、自检和概念复算。[data:geometry/site_boundary.geojson#SITE-001]
+
+`KEY-V2-001/002/003` 仅作为三处重点区域工作索引，三处重点区域数量按任务要求进行内部校核。[data:geometry/key_areas.geojson#KEY-V2-001] [data:geometry/key_areas.geojson#KEY-V2-002] [metric:key_area_count] 第三处索引与前两处采用同一临时边界规则。[data:geometry/key_areas.geojson#KEY-V2-003]
+
+取得官方发布的矢量边界数据后，应按照 site boundary → key areas → existing layers → proposal layers → metrics → 五张主图 → HTML/PDF 的顺序整体重算，确保各类成果采用同一版本边界。[depth:three_level_scope_framework] [depth:metrics_recalculation]
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
@@ -106,7 +118,9 @@ iteration: "v2.0"
 
 ### 城市更新与功能倾向
 
-总体范围按照“现状依据、开放数据辅助研判、设计建议、深化事项”四类信息组织。北部重点布局开放验证与研发协作功能，中部重点完善近校协同创新与人才服务，南部重点发展场景应用与复合服务，京张轴线及三条横向廊道承担公共空间开放和网络衔接功能。`LU-V2-001` 至 `LU-V2-004` 为 L5 概念性功能分区，仅用于表达总体功能组织，不构成法定用地调整或用地平衡方案。[data:geometry/land_use.geojson#LU-V2-001] [data:geometry/land_use.geojson#LU-V2-004] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+总体范围按照“现状依据、开放数据辅助研判、设计建议、深化事项”四类信息组织。北部重点布局开放验证与研发协作功能，中部重点完善近校协同创新与人才服务，南部重点发展场景应用与复合服务，京张轴线及三条横向廊道承担公共空间开放和网络衔接功能。[data:geometry/land_use.geojson#LU-V2-001] [data:geometry/land_use.geojson#LU-V2-004]
+
+`LU-V2-001` 至 `LU-V2-004` 为 L5 概念性功能分区，仅用于表达总体功能组织，不构成法定用地调整或用地平衡方案。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
 
 现有官方资料可确认相关街区控规及部分交叉关系，但完整道路红线、用地性质、容积率、建筑高度、密度、退线和市政容量等指标仍待补充。[source:JINGZHANG-CONTROL-NOTICE] [standard:MOHURD-CONTROL-DETAILED-PLANNING] 城市风貌提出细分体量、首层步行友好、庭院共享、材料低反射、屋顶可维护、历史本体优先以及控制夜间媒体设施规模和动态光环境等原则。建筑体量、拆改留和永久构筑物方案应在取得测绘、权属、结构消防、文保和控规条件后进一步深化。[depth:height_massing_character]
 
@@ -212,7 +226,9 @@ S01 至 S04 为产业测试验证模块，满足不少于三项产业验证场�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统分三层表达：L2 反映京张公园已建及工程状态，L4 辅助识别清河、小月河、转河和开放路网，L5 提出纵轴与三条横向廊道的衔接完善建议。[source:PARK-PHASE1] [source:PARK-PHASE2] [source:OSM-WORKING-DATA] [data:geometry/green_space.geojson#GREEN-V2-001] 河道蓝线、管理范围、洪水位、生态岸线和运维通道尚未取得，临水活动、照明和装置均采用可逆方式，并应通过水务、防洪和养护专项核验。[depth:blue_green_public_space]
+蓝绿系统分三层表达：L2 反映京张公园已建及工程状态，L4 辅助识别清河、小月河、转河和开放路网。[source:PARK-PHASE1] [source:PARK-PHASE2] [source:OSM-WORKING-DATA]
+
+L5 提出纵轴与三条横向廊道的衔接完善建议。[data:geometry/green_space.geojson#GREEN-V2-001] 河道蓝线、管理范围、洪水位、生态岸线和运维通道尚未取得，临水活动、照明和装置均采用可逆方式，并应通过水务、防洪和养护专项核验。[depth:blue_green_public_space]
 
 公共空间通过全过程信息公示体现人工智能应用治理要求。各项目应公示需求提出主体、数据使用范围、复核主体、测试结论、维护责任、评估周期以及申诉和退出方式。夜间环境应控制眩光、媒体设施规模和动态光源强度，材料以可维修、可替换和低反射为原则，并与铁路遗产环境相协调。
 
@@ -261,7 +277,7 @@ S01 至 S04 为产业测试验证模块，满足不少于三项产业验证场�
 |---|---|---|---|
 | 官方基线 | 重点区域数量、场景模块数量 | 三处重点区域和十二类场景模块为已知计数 [metric:key_area_count] [metric:scenario_card_count] | 用于核验任务覆盖情况，不作为边界确认或项目批准依据 |
 | 开放诊断 | 连续开放无障碍长度 | `field-verified step-free open network length`，当前待核实 [metric:continuous_open_greenway_length_m] | 评价慢行网络实际连续开放水平 |
-| L5情景 | site、绿地、公共空间和概念线 | 均由 provisional geometry 复算，名称与图注必须标 conceptual [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:road_length_m] | 只校验方案内部一致性，不能与法定面积/绿地率/工程量并列 |
+| L5情景 | site、绿地、公共空间和概念线 | site 与绿地由临时几何复算 [metric:site_area_sqm] [metric:green_ratio]；公共空间与概念线同步标注为概念值 [metric:public_space_ratio] [metric:road_length_m] | 只校验方案内部一致性，不能与法定面积/绿地率/工程量并列 |
 | L5项目 | 重点项目与横向廊道数量 | 三项重点项目、三条横向廊道为方案计数 [metric:flagship_project_count] [metric:crosslink_count] | 校核三个核心功能节点和总体结构的完整性 |
 | 实施绩效 | 有效需求率 | 通过需求核验项目数÷提交总数；完成基线调查后确定目标 | 避免设置缺少明确服务对象和实际需求的应用场景 |
 | 实施绩效 | PoC可复现率 | 第三方复现成功数÷送测数 | 检验原点到众智园的证据质量 |
@@ -315,7 +331,10 @@ S01 至 S04 为产业测试验证模块，满足不少于三项产业验证场�
 ### L5 任务书、设计包与专业标准
 
 - `brief/site-package/`、面向智能体任务书与来源注册表。[source:SITE-PACKAGE] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
-- 项目公告、城市设计、控规、国土空间用地分类和建筑设计深度标准。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
-- 七个运营案例仅用于机制比较。[source:CASE-VECTOR-TORONTO] [source:CASE-MILA-MONTREAL] [source:CASE-STATION-F] [source:CASE-MARIA-01] [source:CASE-MARS-TORONTO] [source:CASE-22BARCELONA] [source:CASE-BLOXHUB]
+- 项目公告、面向智能体任务书和城市设计管理要求构成任务及城市设计依据。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+- 控规、国土空间用地分类和建筑设计深度标准用于限定方案表达深度。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+- Vector Institute、Mila 与 Station F 案例仅用于创新生态组织机制比较。[source:CASE-VECTOR-TORONTO] [source:CASE-MILA-MONTREAL] [source:CASE-STATION-F]
+- Maria 01 与 MaRS 案例仅用于空间运营和转化服务机制比较。[source:CASE-MARIA-01] [source:CASE-MARS-TORONTO]
+- 22@Barcelona 与 BLOXHUB 案例仅用于创新城区和公共价值机制比较。[source:CASE-22BARCELONA] [source:CASE-BLOXHUB]
 
 本方案成果的审查重点是明确区分正式依据、官方文字范围、开放数据、设计建议和待补充资料，并建立相应的更新复算机制。全部空间建议均属于 L5 设计建议，仅供方案研究和后续深化使用（非施工依据 / NOT FOR CONSTRUCTION），不替代法定规划、政府审定、工程可行性论证、采购结果或投资承诺。[depth:risk_missing_data]
