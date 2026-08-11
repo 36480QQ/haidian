@@ -33,7 +33,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.179021,
+      "value": 0.175282,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -47,7 +47,7 @@
     },
     "green_ratio_proposed": {
       "status": "known",
-      "value": 0.179021,
+      "value": 0.175282,
       "unit": "ratio",
       "source_files": [
         "proposal.md",
@@ -89,7 +89,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 2271449.904,
+      "value": 2257215.116,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -115,7 +115,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 2043133.986,
+      "value": 2000458.797,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -128,7 +128,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 313003.8,
+      "value": 313003.803,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
