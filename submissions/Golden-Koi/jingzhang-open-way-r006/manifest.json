@@ -4,8 +4,8 @@
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
-  "package_state": "concept_research_candidate",
-  "submission_stage": "concept_review",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "Golden-Koi",
@@ -270,7 +270,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "f867f32a15ffe78c187624cd906ec78a9806172f085c0c324502b506748f6c0a"
+      "sha256": "8f30ef34c553608a4dd53d264704efbf8fc25be13746857b08fff7876f870410"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -421,7 +421,7 @@
       "path": "report/review_response.md",
       "role": "review_response",
       "required": true,
-      "sha256": "b146449c77ce3fa2d9de615fb620128bbce106b0035d374e7be50e5203c378fb"
+      "sha256": "12a01f51f06238e1718a6969bc16789fcbd60249e31d858ea5da5c48a619676a"
     },
     {
       "path": "report/rights_ledger.json",
@@ -433,7 +433,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80d666dc0ed4823163f6a9e0147d706bfc8718a3b6754699d26d6cb11e8b2052"
+      "sha256": "96a1bf39a5407acf1dc8649a6cfb2dc7557eeec0cd7ee0cc319e4dceb86c591a"
     },
     {
       "path": "sources.json",
@@ -445,7 +445,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "3a933c60d057ebacd735ef0aba71d246f63b6a5354026d43fb71314f336fd7f1"
+      "sha256": "6c5a571869ba67feb07a12557766a51226e8d0e8f473b0853ab7c25797a8725b"
     },
     {
       "path": "visual/index.en.html",
@@ -475,6 +475,6 @@
       "X5 remains BLOCKED; see assumptions.json and report/assurance_register.md.",
       "X6 remains BLOCKED; see assumptions.json and report/assurance_register.md."
     ],
-    "readiness_contract": "concept-research-candidate-r006.1"
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

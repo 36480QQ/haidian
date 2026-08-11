@@ -4,6 +4,13 @@ Date: 2026-08-12
 Package status: `CONCEPT_RESEARCH_CANDIDATE`  
 Formal professional scoring: `false`
 
+Manifest compatibility note: the repository schema currently permits only
+`package_state=ready_for_review`, `submission_stage=formal`, and
+`readiness_contract=persisted-self-check-v1`. Those machine-facing enum values
+mean that the package can enter repository review; they do not override the
+human-facing concept-research status, the `formal_professional_scoring=false`
+claim, or any X1-X6 blocker below.
+
 ## P0 repairs
 
 1. **Bilingual package rebuilt**: Chinese and English proposals, five thematic figures, nine option maps, HTML reports, visual pages, A0 boards and A3 booklets are independently rendered. Every paired artifact has a different SHA-256 value. The repository bilingual audit passes.

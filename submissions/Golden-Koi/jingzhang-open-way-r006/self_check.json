@@ -1,47 +1,51 @@
 {
-  "schema_version": "1.0.0",
-  "submission_dir": "/home/ops/.openclaw/workspace/artifacts/codex_collab/jingzhang_pr1822_review_repairs_20260812T083308_AEST/repo/submissions/Golden-Koi/jingzhang-open-way-r006",
+  "schema_version": "0.1.0",
+  "submission_dir": "submissions/Golden-Koi/jingzhang-open-way-r006",
   "package_type": "professional_design_package",
-  "stage": "concept_review",
-  "review_status": "concept-research-candidate",
+  "stage": "concept_research_candidate",
+  "review_status": "ready_for_repository_review_with_external_gates_blocked",
   "can_enter_formal_review": false,
   "ok": true,
   "pr_author": "Golden-Koi",
   "checks": [
     {
-      "id": "current_status",
-      "status": "PASS",
-      "detail": "Current status is limited to concept research candidate."
+      "check_id": "CURRENT_STATUS",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json and report/review_response.md",
+      "message": "Repository enum compatibility is separated from the human-facing concept-research status."
     },
     {
-      "id": "bilingual_artifacts",
-      "status": "PASS",
-      "detail": "Chinese/English figures, HTML and PDFs are independently rendered."
+      "check_id": "BILINGUAL_ARTIFACTS",
+      "result": "pass",
+      "severity": "major",
+      "target": "Chinese and English figures, maps, HTML and PDFs",
+      "message": "Paired artifacts are independently rendered and byte-distinct."
     },
     {
-      "id": "agent_deliverables",
-      "status": "PASS_CONCEPT",
-      "detail": "Six workstreams, ten scenarios, three industry tests and five personas are present."
+      "check_id": "AGENT_DELIVERABLES",
+      "result": "pass",
+      "severity": "major",
+      "target": "deliverables/agent-deliverables.zh.md and .en.md",
+      "message": "Six workstreams, ten scenarios, three industry tests and five personas are present."
     },
     {
-      "id": "rights_inventory",
-      "status": "PASS_INVENTORY",
-      "detail": "Itemized rights ledger present; independent legal review remains blocked."
+      "check_id": "RIGHTS_INVENTORY",
+      "result": "pass",
+      "severity": "major",
+      "target": "report/rights_ledger.json",
+      "message": "Itemized rights inventory is present; independent legal review remains blocked."
     },
     {
-      "id": "external_evidence",
-      "status": "BLOCKED",
-      "detail": "X1-X6 remain blocked and are not promoted."
+      "check_id": "EXTERNAL_EVIDENCE",
+      "result": "unknown",
+      "severity": "blocking",
+      "target": "X1-X6 in assumptions.json and report/assurance_register.md",
+      "message": "External evidence gates remain blocked and are not promoted.",
+      "suggested_fix": "Obtain authoritative inputs and named independent reviews before formal professional scoring."
     }
   ],
-  "missing_review_dependencies": [
-    "X1",
-    "X2",
-    "X3",
-    "X4",
-    "X5",
-    "X6"
-  ],
+  "missing_review_dependencies": ["X1", "X2", "X3", "X4", "X5", "X6"],
   "next_actions": [
     "Project party opens evidence channels.",
     "Named independent reviewers execute assurance register.",
