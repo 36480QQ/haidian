@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.16 - 2026-08-12
+
+- Added a bilingual resource-denominator contract screen for metro, bus, severe weather, curb service and cross-boundary return.
+- Locked eight pre-publication fields per stress case: service unit, non-AI baseline, whole-system boundary, time window, completion rule, group split, dated evidence and accountable role.
+- Kept all five contracts at `denominator_not_locked`, local measurements and operating authorizations at zero, and the air candidate outside every denominator or intensity comparison.
+
 ## v1.15 - 2026-08-12
 
 - Added a bilingual service-continuity screen with two clocks: passenger notice/handoff/arrival and asset owner/repair/accessibility/public-route restoration.

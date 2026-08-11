@@ -205,6 +205,16 @@ Five NO-GO gates run before efficiency comparison: no equivalent human or public
 
 ![AI mobility-service resource passport: seven resource classes, ten scenario cards and five NO-GO gates](assets/figures/resource-passport-board.en.svg)
 
+### Mobility resource denominator contract, no unit lock means no intensity claim
+
+The resource passport already lists compute, energy, equipment, data, human work, supplier dependency and exit burden. The new screen asks what each transport case is actually counting. It fixes a service unit, a non-AI comparison, a whole-system boundary, a time window, a completion rule, a group split and an accountable role across five stress contracts. The contracts cover metro disruption, bus disruption, severe weather, curb-service failure and cross-boundary return [data:visual/assets/resource-denominator-screen.json] [data:visual/assets/resource-denominator-readout.json].
+
+All five contracts remain `denominator_not_locked`. The 3,122,000 figure is a synthetic stress-replay reference, not a Haidian population measurement; local measurement, operating authorization and published intensity claims are all 0. Without dated local evidence, a staffed or public-transport comparison and responsibility acceptance, the package publishes no intensity per service, passenger-kilometre, vehicle-kilometre, human-review minute or exit cost [data:visual/assets/run-resource-denominator-screen.js].
+
+This screen places the choice model and the resource ledger on the same review line. Metro, bus, bicycle, walking/accessibility, cars, enterprise shuttles and logistics first state their service unit and alternative path. Air mobility stays outside every denominator and intensity comparison. Complete fields show that the preparation record is explicit; they do not show measurement, approval or operation.
+
+![Mobility resource denominator contract: five stress cases and eight pre-publication conditions](assets/figures/resource-denominator-board.en.svg)
+
 ### Mobility asset closeout receipts: make complaint-to-maintenance closure operable
 
 The resource passport asks what burden an expansion carries; the closeout ledger asks who restores a public route after something goes wrong. It creates eight empty receipt templates for the metro interface, bus waiting interface, protected cycle link, continuous accessible route, managed curb, enterprise shuttle, logistics gate and air-experiment ground gate. Each receipt fixes the asset, service window, trigger, proposed responsibility role, dated evidence, repair or clearing action, accessible fallback, verification, public-route restoration and close/withdrawal state. Field receipts and closed receipts are both 0 [data:visual/assets/asset-closeout-receipts.json] [data:visual/assets/asset-closeout-readout.json].

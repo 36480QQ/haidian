@@ -237,6 +237,16 @@ iteration: "v2.0-population-scale-screen"
 
 ![AI 交通服务资源护照：七类资源、十张场景卡与五道 NO-GO 门](assets/figures/resource-passport-board.svg)
 
+### 交通资源分母合同，不锁单位就不发布强度值
+
+资源护照已经列出算力、能源、设备、数据、人工、供应商和退出七类负担。新屏继续追问每个交通场景到底在算哪一件事，把服务单位、非 AI 对照、完整系统边界、时间窗口、完成规则、分组拆分和责任角色逐项写进五条压力合同。五条合同分别覆盖地铁中断、公交中断、雨雪天气、路缘服务失效和跨边界返程 [data:visual/assets/resource-denominator-screen.json] [data:visual/assets/resource-denominator-readout.json]。
+
+当前五条合同都停在 `denominator_not_locked`。3,122,000 只是合成压力回放的人口参考，不是海淀人口计量；本地计量、运行授权和强度发布数均为 0。没有有日期的本地证据、人工或公共交通对照和责任确认，系统不发布每次服务、每客公里、每车公里、人工复核分钟或退出成本的强度值 [data:visual/assets/run-resource-denominator-screen.js]。
+
+这张屏把选择模型和资源账本接到同一条审查线上。地铁、公交、自行车、步行/无障碍、汽车、企业接驳和物流都先回答服务单位与替代路径，空中出行继续留在所有分母和强度比较之外。字段齐全只说明准备记录写清了，不说明已经测量、获批或运行。
+
+![交通资源分母合同：五个压力场景与八道发布前条件](assets/figures/resource-denominator-board.svg)
+
 ### 交通资产闭合回执：让投诉—维修—复核可以关单
 
 资源护照回答“扩容需要承担什么负担”，资产闭合回执回答“出了问题谁把公共路线恢复回来”。账本为地铁站口、公交候车、受保护骑行链、连续无障碍路线、时段路缘、企业接驳、物流维护关口和空中实验地面闸门建立 8 条空回执模板。每条回执固定资产、服务窗口、触发条件、拟议责任角色、日期证据、维修/清场动作、无障碍回退、复核结果、公共路线恢复和关闭/撤回状态；当前现场回执数和关闭回执数均为 0 [data:visual/assets/asset-closeout-receipts.json] [data:visual/assets/asset-closeout-readout.json]。

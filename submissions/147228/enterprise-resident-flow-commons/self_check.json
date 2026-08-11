@@ -46,6 +46,8 @@
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/network-flow-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/regional-scale-commute-board.en.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/regional-scale-commute-board.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-denominator-board.en.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-denominator-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-passport-board.en.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-passport-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/resource-pressure-board.en.svg",
@@ -111,6 +113,8 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/population-scale-screen.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/regional-scale-commute-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/regional-scale-commute.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-denominator-readout.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-denominator-screen.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-passport-readout.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-passport.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/resource-pressure-readout.json",
@@ -127,6 +131,7 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-network-flow-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-regional-commute-simulation.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-regional-readout-audit.js",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-resource-denominator-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-resource-passport.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-resource-pressure-screen.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-service-continuity-screen.js",
@@ -144,7 +149,7 @@
       "ai_package_stages": {
         "submissions/147228/enterprise-resident-flow-commons": "formal"
       },
-      "total_bytes": 11562149,
+      "total_bytes": 11635950,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -225,7 +230,7 @@
           "source": 44,
           "standard": 15,
           "depth": 15,
-          "data": 27,
+          "data": 30,
           "metric": 19
         }
       }
