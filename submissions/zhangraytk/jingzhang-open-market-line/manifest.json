@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c0c9a15b4226944db8e2323e3141651b9a41bac7eca163cff024fed12c56573c"
+      "sha256": "49bdcc612b6f1b3869e966d02cca2fcc158c3596aa121b7530a6398d82865c8b"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "41d90cff391093cd7f44387b26fb22fd19b9abfa1e3ac316ad449165ee843fd1"
+      "sha256": "587fc411adef937c66eaee8bfc23d9f017099ecf14f68e1a64909d954c4cda31"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0a8db3bf597ecba678f3f1985ebbfb737246fffcb1440e7d3c265638d6740ed7"
+      "sha256": "cf148ac45ae2f311ab654c0af3938305d9867064652f5b8ba831a6aa188b129c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -289,6 +289,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
