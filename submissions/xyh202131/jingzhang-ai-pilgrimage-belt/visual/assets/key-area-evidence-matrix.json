@@ -674,6 +674,99 @@
       "existing_g0_guard": "visual/assets/implementation-handoff-matrix.json#authority_boundary"
     }
   },
+  "non_ai_first_public_city_contract": {
+    "contract_id": "JZ-NON-AI-FIRST-04",
+    "status": "concept_only_g0",
+    "purpose_zh": "把七项永久公共权利、纸面/口头/人工入口、同任务双路径、三处空间化服务旅程、群体分层验收和停止恢复统一为一套前台空间服务合同。",
+    "purpose_en": "Unify seven permanent public rights, paper/oral/staffed entry, two paths to the same task, three place-specific service journeys, group-specific acceptance, and stop/recovery in one front-stage spatial-service contract.",
+    "selected_work_packages": [
+      "seven_rights_legend",
+      "continuous_non_ai_line_and_dual_entry_staffed_desk",
+      "screen_free_waiting_and_paper_or_oral_service",
+      "same_basic_task_two_path_parity",
+      "complaint_withdrawal_correction_stop_and_recovery",
+      "typed_group_acceptance_and_unknowns"
+    ],
+    "authoritative_service_contract_ref": "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2",
+    "permanent_right_refs": ["R-NONAI-01", "R-NONAI-02", "R-NONAI-03", "R-NONAI-04", "R-NONAI-05", "R-NONAI-06", "R-NONAI-07"],
+    "spatial_service_crosswalk": [
+      {
+        "key_area_feature_id": "PROV-KEY-001",
+        "prototype": "VERIFY",
+        "ordinary_path": "continuous bypass and observation",
+        "non_ai_entry": "physical state sign, staffed takeover point, paper stop or appeal",
+        "optional_ai_overlay": "bounded offline proof after future gates only",
+        "stop": "physically isolate equipment while the ordinary path remains",
+        "recovery": "remove equipment, cables, enclosure, sound, light, and queue; independently recheck path and place",
+        "reality_status": "unknown_not_executed"
+      },
+      {
+        "key_area_feature_id": "PROV-KEY-002",
+        "prototype": "CO-CREATE",
+        "ordinary_path": "continuous daily street",
+        "non_ai_entry": "screen-free waiting, paper or oral issue, staffed explanation and withdrawal",
+        "optional_ai_overlay": "voluntary co-learning separate from passage and basic service",
+        "stop": "stop collection and matching while paper and staffed service remain",
+        "recovery": "remove screen, sound, event kit, collection state, and temporary marks; restore resident daily use",
+        "reality_status": "unknown_not_executed"
+      },
+      {
+        "key_area_feature_id": "PROV-KEY-003",
+        "prototype": "PUBLISH",
+        "ordinary_path": "continuous four-way walking",
+        "non_ai_entry": "physical source status, dual-entry staffed desk, paper correction or appeal",
+        "optional_ai_overlay": "source-bounded navigation beside rather than over staffed service",
+        "stop": "take automated output offline while staffed and source-list service remain",
+        "recovery": "correct source and queue, clear event kit, and retest all four movement arms",
+        "reality_status": "unknown_not_executed"
+      }
+    ],
+    "required_role_types": [
+      {"role": "staffed_service_receiver", "purpose": "receive paper, oral, telephone, or in-person requests", "confirmation_status": "unconfirmed"},
+      {"role": "accountable_queue_owner", "purpose": "own status, evidence supplement, correction, suspension, and review", "confirmation_status": "unconfirmed"},
+      {"role": "accessibility_co_tester", "purpose": "test route and service sequence with required support", "confirmation_status": "unconfirmed"},
+      {"role": "independent_retester", "purpose": "verify parity and place recovery before restart", "confirmation_status": "unconfirmed"}
+    ],
+    "typed_unknowns": {
+      "exact_service_points": "unknown_pending_site_and_owner_confirmation",
+      "service_windows": "unknown_pending_operator_confirmation",
+      "staffing_and_handoff_capacity": "unknown_no_confirmed_personnel",
+      "accessible_route_compliance": "unknown_pending_qualified_survey_and_co_test",
+      "group_denominators_and_thresholds": "unknown_pending_consent_baseline_and_preregistration",
+      "complaint_withdrawal_and_correction_performance": "unknown_not_measured",
+      "place_recovery_result": "unknown_not_executed"
+    },
+    "drawing_refs": [
+      "assets/figures/non-ai-service-blueprint.svg",
+      "assets/figures/non-ai-service-blueprint.en.svg",
+      "assets/figures/non-ai-service-blueprint.png",
+      "assets/figures/non-ai-service-blueprint.en.png"
+    ],
+    "human_refs": [
+      "proposal.md#非-ai-优先公共城市七项权利与同任务双路径",
+      "proposal.en.md#non-ai-first-public-city-seven-rights-and-two-paths-to-the-same-task",
+      "visual/index.html#non-ai-first",
+      "visual/index.en.html#non-ai-first"
+    ],
+    "global_guards": {
+      "geometry_changed": false,
+      "new_scene_or_project_ids_added": false,
+      "all_scenes_remain": "G0",
+      "public_entry_requires_account_qr_smartphone_or_ai": false,
+      "activity_may_displace_ordinary_path": false,
+      "volunteers_are_stable_duty_bearers": false,
+      "field_pass_or_service_operation_claimed": false,
+      "approved_site_or_staffed_window_claimed": false,
+      "rights_status": "not_fully_cleared"
+    },
+    "counterexample_audit": [
+      {"test": "A person without an account can enter, complete the basic task, receive a durable status reference, appeal or withdraw, and leave.", "design_result": "pass", "field_result": "unknown_not_measured"},
+      {"test": "A screen-free user can discover the non-AI path before encountering the optional AI path.", "design_result": "pass", "field_result": "unknown_not_measured"},
+      {"test": "A hard stop removes automated privilege but does not remove ordinary passage or the accountable human route.", "design_result": "pass", "field_result": "unknown_not_executed"},
+      {"test": "Older, disabled, low-digital-literacy, and no-account results cannot be hidden inside an overall average.", "design_result": "pass", "field_result": "unknown_no_sample"},
+      {"test": "Documentation completeness cannot issue a field PASS or maturity upgrade.", "design_result": "pass", "field_result": "no_go_g0"}
+    ]
+  },
   "review_protocol": {
     "required_sequence": [
       "read the referenced provisional GeoJSON and source register",
