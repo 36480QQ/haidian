@@ -13,9 +13,9 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Provisional site boundary provided in site-package is used for intake and spatial design exploration; precision survey boundary is pending release and will require full recalculation."
       ]
     },
     "building_footprint_area_sqm": {
@@ -27,7 +27,9 @@
       ],
       "formula": "sum(polygon_area(building_footprints))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional site boundary and participant design layers; values subject to recalculation upon official dataset release."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -39,7 +41,9 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional site boundary and participant design layers; values subject to recalculation upon official dataset release."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
@@ -51,7 +55,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Derived from provisional site boundary and participant design layers; values subject to recalculation upon official dataset release."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -73,8 +79,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "count(key_detailed_design_areas)",
-      "confidence": "high",
-      "assumptions": []
+      "confidence": "medium",
+      "assumptions": [
+        "Key detailed-design area boundaries are provisional geometry; subject to official confirmation and recalculation."
+      ]
     }
   }
 }
