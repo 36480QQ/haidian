@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.18 - 2026-08-12
+
+- Added a bilingual mobility responsibility-transfer screen for eight existing interfaces covering rail, bus, cycling, accessibility, curb service, enterprise shuttle, logistics and the ground gate for future air mobility.
+- Added seven burden classes, receiver acceptance, non-AI equivalent service, affected-group observation, failed and withdrawn denominators, stop evidence and restoration evidence.
+- Added deterministic negative fixtures for missing receiver, fallback, denominator, stop, recovery or affected-group fields. All transfers remain unaccepted, all field receipts remain zero, and air stays outside the denominator.
+
 ## v1.17 - 2026-08-12
 
 - Added a bilingual accessible-service state contract for three synthetic routes covering rail-to-enterprise access, a human-equivalent community route and a night-return fallback.

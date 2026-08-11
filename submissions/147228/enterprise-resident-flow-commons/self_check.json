@@ -42,6 +42,8 @@
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/metrics-evidence.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/mobility-bluegreen.en.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/mobility-responsibility-transfer-board.en.svg",
+        "submissions/147228/enterprise-resident-flow-commons/assets/figures/mobility-responsibility-transfer-board.svg",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/model-objects.en.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/model-objects.png",
         "submissions/147228/enterprise-resident-flow-commons/assets/figures/network-flow-board.en.svg",
@@ -107,6 +109,8 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/implementation-operation-contract.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/metrics-schema-audit.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/mobility-nodes.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/mobility-responsibility-transfer-readout.json",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/mobility-responsibility-transfer.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/mobility-tabletop-contract.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/mobility-tabletop-evidence.json",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/mode-parameter-provenance.json",
@@ -130,6 +134,7 @@
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-distributional-accessibility-board.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-distributional-equity-board.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-metrics-schema-audit.js",
+        "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mobility-responsibility-transfer.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mobility-simulation.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mobility-tabletop.js",
         "submissions/147228/enterprise-resident-flow-commons/visual/assets/run-mode-parameter-provenance.js",
@@ -154,7 +159,7 @@
       "ai_package_stages": {
         "submissions/147228/enterprise-resident-flow-commons": "formal"
       },
-      "total_bytes": 11667284,
+      "total_bytes": 11718832,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -235,7 +240,7 @@
           "source": 44,
           "standard": 15,
           "depth": 15,
-          "data": 33,
+          "data": 36,
           "metric": 19
         }
       }

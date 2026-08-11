@@ -43,6 +43,18 @@ iteration: "v2.0-population-scale-screen"
 
 图件只发布状态、闸门和停止动作；现场须补齐路线分段、有效期、责任、替代、人工交接与复验凭证，才能把任何 `READY` 状态写入公开服务目录。
 
+## 交通责任移交屏
+
+交通服务常见的风险还在于服务发起后没有人愿意接住空间、设备、维护、申诉和退出。现有八类交通接口现在共用一张移交屏，覆盖地铁站口、公交候车、骑行链、无障碍路线、时段路缘、企业接驳、物流维护和空中实验地面闸门。
+
+每个接口都要同时写出七类资源负担中的适用项、发起角色、接收角色、非 AI 等价服务、受影响群体、失败分母、停止证据和恢复证据。失败请求和撤回请求继续进入分母，不让成功率把被拒绝、未完成或退出的人抹掉。接收角色没有日期化确认时，责任仍留在发起方，拟议服务冻结，公共路线和人工/公共交通回退保持可用。
+
+当前八类接口没有现场回执，没有已接受移交，也没有运行授权。空中候选只作为地面安全审查对象，不进入责任移交分母。该屏是协议结构的离线回放，不证明角色任命、预算落实、合同、现场服务或居民结果 [data:visual/assets/mobility-responsibility-transfer.json] [data:visual/assets/mobility-responsibility-transfer-readout.json] [data:visual/assets/run-mobility-responsibility-transfer.js]。
+
+![交通责任移交屏](assets/figures/mobility-responsibility-transfer-board.svg)
+
+这张图把“谁来负责”拆成可检查的字段，也保留拒收时的退出动作。它和资源护照、资产关单、服务连续性屏共用 `UNKNOWN`、`not_authorized_not_run` 与现场证据边界，不把协议 PASS 写成运营成绩。
+
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。

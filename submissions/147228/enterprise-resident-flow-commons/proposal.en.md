@@ -43,6 +43,18 @@ This is an offline structural replay. It does not establish elevator or ramp ava
 
 The board publishes states, gates and stop actions only. Field work must add segment-level route evidence, validity, owner, alternative, human handoff and recheck receipts before any `READY` state enters a public service directory.
 
+## Mobility responsibility transfer screen
+
+Mobility risk is not limited to an algorithm. A service can be proposed and still leave nobody willing to carry the space, equipment, maintenance, appeals and exit burden. The eight existing mobility interfaces now share one transfer screen covering the rail-stop interface, bus waiting, protected cycling, accessible route, managed curb, enterprise shuttle, logistics maintenance and the ground gate for a future air experiment.
+
+Each interface declares the applicable classes among seven resource burdens, its originator, receiver, non-AI equivalent service, affected groups, failure denominator, stop evidence and recovery evidence. Failed and withdrawn requests remain in the denominator, so a success rate cannot erase refusal, incompletion or exit. When the receiving role has no dated acceptance, accountability stays with the originator, the proposed service is frozen, and the public route plus staffed or public-transport fallback remains available.
+
+All eight interfaces currently have zero field receipts, zero accepted transfers and zero operating authorizations. The air candidate remains a ground-safety review object outside the transfer denominator. This is an offline protocol replay, not evidence of appointed roles, funded budgets, contracts, field service or resident outcomes [data:visual/assets/mobility-responsibility-transfer.json] [data:visual/assets/mobility-responsibility-transfer-readout.json] [data:visual/assets/run-mobility-responsibility-transfer.js].
+
+![Mobility responsibility transfer screen](assets/figures/mobility-responsibility-transfer-board.en.svg)
+
+The board turns “who carries the burden” into inspectable fields and preserves the refusal action. It shares `UNKNOWN`, `not_authorized_not_run` and field-evidence boundaries with the resource passport, asset closeout and service-continuity screens; a protocol PASS is not an operating result.
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
