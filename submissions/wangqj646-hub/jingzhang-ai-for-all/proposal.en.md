@@ -21,6 +21,8 @@ Since the official `SITE_BOUNDARY` and the three `KEY_AREA` polygons have not ye
 
 ## Overall Concept: AI for the People
 
+![Jing-Zhang AI Innovation Belt overview](assets/figures/site-overview.en.png)
+
 ### The Dual Nature of AI
 
 In 2026, artificial intelligence appears before the Chinese public in two forms at once.
@@ -38,6 +40,8 @@ The unique mission of the Jing-Zhang AI Innovation Belt is to translate the ener
 ![Rénzì Rail brand symbol](assets/figures/brand-symbol.png)
 
 The brand symbol "Rénzì Rail" is drawn from the switchback (人-shaped) alignment at Qinglongqiao on the Jing-Zhang Railway — the landmark engineering innovation of China's first self-built trunk railway. Its two visual meanings: **technology bends toward people** (the rails turn back at the Origin for people) and **two tracks** (national infrastructure × personal companion — parallel, never hijacking each other, converging only at the Origin). Full Logo/VI/signage direction in `report/narrative.md`.
+
+**Reality anchor (official, 2026-08-06)**: Phase II of the Jing-Zhang Railway Heritage Park opened to the public on 6 August 2026 — a ~9 km linear public space from Beijing North Station to the North 5th Ring Road (≈53 ha, serving ≈70 communities and ≈450,000 residents), created on the ground space released by the ~6 km underground section of the Beijing–Zhangjiakou HSR through Haidian, with rail heritage preserved and slow-traffic systems built in [source:CASE-JZ-PARK-1] [source:CASE-JZ-PARK-2] [source:CASE-JZ-PARK-3]. This proposal's "One Spine" structure takes this just-completed real green corridor as its physical chassis — culture belt, life-experience belt and innovation belt in one — proposed exactly in the year the park opened end to end.
 
 In 1909, Zhan Tianyou drew the first switchback (the "herringbone" track) at Badaling, letting China cross the mountains with its own technology for the first time. That was the "autonomy moment" of Chinese technology.
 
@@ -113,7 +117,9 @@ The core task of the coordinated research area is not merely building a "world-c
 2. **Whole-population participation ecology**: AI citizen schools, a citizen-developer programme (children can "build" their own companions), community AI councils, and growth portfolios for the AI-native generation.
 3. **Industry support**: agent-service enterprises, companion hardware (companion robots), AI education companies, AI ageing-care providers — the industrial layer of the "personal companion economy," among the fastest-growing sectors of the coming decade.
 
-### Future Urban Form for the AI-Native First Generation
+### Three Positions × Five Functions × Belt-Wings Collaboration Matrix
+
+Three positions (Centennial Jing-Zhang culture belt / Urban AI lifestyle belt / AI convergence innovation belt) × five functions (technology incubation / scenario testing / open-source co-creation / talent growth / public experience) × three areas & two wings (Zhongzhiyuan / AI Origin community / Dazhongsi + Zhongguancun tech-service wing / Xiaoyue River scenario-empowerment wing). Each cell answers "output / input / connector / mechanism"; external-area collaboration (Beiwei community, Future Science City, Huairou Science City, E-Town, Jing-Jin-Ji) is marked `proposed collaboration mechanism` / `design hypothesis` only — no fabricated cooperation. Full matrix: `report/narrative.md`.
 
 The proposal introduces the concept of the "interface generation": **the App is the interface of digital immigrants; the agent is the interface of the AI-native generation.** Three judgements for future urban form:
 
@@ -136,6 +142,8 @@ This level's spatial evidence is jointly expressed by `geometry/land_use.geojson
 Renewal targets fall into three classes: **retained** (rail remains, historic buildings, work-unit courtyard fabric), **converted** (locomotive depot and old factories into science museums, laboratories and markets), and **new** (concentrated in key-area industrial plots). Conversion projects prioritise "light-touch, reversible" strategies to avoid irreversible engineering intervention on the rail remains [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 ## Key Areas: Detailed Design
+
+![Three key areas and the growth stations](assets/figures/key-areas.en.png)
 
 ### Station One · Zhongzhiyuan (192.1 ha) — "AI Kindergarten to Lab"
 
@@ -221,20 +229,20 @@ The green-blue framework takes the heritage-park concept green belt as the north
 
 ## Renewal Project List, Implementation Policy and Phasing
 
-**Initial project list**:
-1. AI Origin Plaza (heritage-park locomotive depot conversion, 2027–2028)
-2. AI-native flagship school (Zhongzhiyuan, 2027–2029)
-3. Companion-direct consumption street (Dazhongsi, 2028–2030)
-4. AI council pavilion network (Origin Community, phased from 2027)
-5. Compute science museum (Zhongzhiyuan, 2027–2028)
-6. People's AI Festival (first edition 2027, annual)
+**Initial project list (conceptual implementation window · subject to approval)**:
+1. AI Origin Plaza (heritage-park locomotive depot conversion, conceptual window 2027–2028, subject to approval)
+2. AI-native flagship school (Zhongzhiyuan, conceptual window 2027–2029)
+3. Companion-direct consumption street (Dazhongsi, conceptual window 2028–2030)
+4. AI council pavilion network (Origin Community, conceptual window phased from 2027)
+5. Compute science museum (Zhongzhiyuan, conceptual window 2027–2028)
+6. People's AI Festival (conceptual window first edition 2027, annual)
 
 **Implementation policy**:
-- Add "companion stations" and "AI council pavilions" to community public facility standards
-- Establish an "AI-native generation growth fund" covering companion-use subsidies for primary and secondary students
+- Propose adding "companion stations" and "AI council pavilions" to community public facility standards (subject to approval)
+- Propose an "AI-native generation growth fund" (funding category proposed, amount to be assessed) covering companion-use subsidies
 - Open city-service companion-direct interfaces (government, healthcare, transport, consumption) under the principle of "open protocols, tiered permissions, full audit trails"
 
-**Phasing**: Phase 1 (2027–2028) AI Origin + Zhongzhiyuan science facilities; Phase 2 (2028–2030) Origin Community + Dazhongsi consumption street; Phase 3 (2030–2032) full-line scenario deepening and institutional refinement. Phasing extents are in `geometry/phasing.geojson` [data:geometry/phasing.geojson#phase_1] [data:geometry/phasing.geojson#phase_2] [data:geometry/phasing.geojson#phase_3].
+**Phasing (conceptual, subject to approval)**: Phase 1 (conceptual window 2027–2028) AI Origin + Zhongzhiyuan science facilities; Phase 2 (conceptual window 2028–2030) Origin Community + Dazhongsi consumption street; Phase 3 (conceptual window 2030–2032) full-line deepening. Phasing extents are in `geometry/phasing.geojson` [data:geometry/phasing.geojson#phase_1] [data:geometry/phasing.geojson#phase_2] [data:geometry/phasing.geojson#phase_3].
 
 ## Metric System, Area Recalculation and Compliance Matrix
 

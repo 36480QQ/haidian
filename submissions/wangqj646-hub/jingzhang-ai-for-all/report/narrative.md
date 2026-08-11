@@ -935,3 +935,119 @@ M2 社区提出 → M4 测试场验证（sandbox）→ 达标转 S2/S8/S10 试�
 - 无人工对译记录（双语等价性）——待补
 - 无无障碍检查记录——待补
 - Logo 最终图形文件（正式矢量稿）——概念级说明，待专业品牌团队产出
+
+
+---
+
+## 真实空间语境数据登记表（Contextual Data Registry）
+
+> 本登记表记录图件升级（site-overview / key-areas / mobility-bluegreen / land-use-structure）使用的公开语境数据。所有数据仅作 **context（现状语境）** 使用，不构成任何官方规划结论；组织方几何数据未发布前，方案几何一律为 provisional。
+
+| data_id | 数据类别 | 来源 | license / use condition | 获取日期 | 处理方式 | confidence | allowed use | 性质 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| CTX-OSM-ROAD | 道路中心线（primary/secondary/tertiary） | OpenStreetMap（Overpass API，bbox 39.92-40.06N / 116.30-116.40E） | ODbL 1.0；署名 OpenStreetMap contributors | 2026-08-11 | API 查询 → 坐标过滤 → matplotlib 绘制 | high（OSM 城市路网成熟度高） | 仅 context 底图灰显；不用于权属/红线推导 | context only |
+| CTX-OSM-RAIL | 铁路/高铁线位（railway=rail, disused） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | API 查询 → 绘制；disused 线位用于示意京张旧线遗迹 | medium（旧线位为历史轨迹，部分段可能被改造） | 仅 context；示意「京张旧线」空间意象 | context only |
+| CTX-OSM-STATION | 轨道站点节点（railway=station） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | 节点坐标 + name 标签绘制 | high | 仅 context；站点名与线位关系示意 | context only |
+| CTX-OSM-WATER | 水系线（waterway=river/canal/stream） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | API 查询 → 绘制 | medium | 仅 context 蓝显 | context only |
+| CTX-OSM-PARK | 公园绿地（leisure=park） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | API 查询 → 面要素浅绿显示 | medium（OSM 绿地覆盖不完全） | 仅 context 浅绿显示 | context only |
+| CTX-JZ-PARK | 京张铁路遗址公园全线贯通事实（9 km / 53 ha / 45 万居民） | 北京市园林绿化局官网；科技日报 2026-08-06；北京市规自委规划解读 | 政府公开信息；媒体公开报道 | 2026-08-11 | 三源交叉核验后引用 | high（政府官网 + 主流媒体一致） | 方案「一带」现实锚点陈述；不据此声称任何红线 | factual anchor |
+| CTX-TASKBOOK-AREAS | 三处重点区域名称与官方定位 | brief/site-package/agent_taskbook.json（组织方提供） | 任务书许可 | 2026-08-11 | 直接引用 | high（组织方一手） | 方案核心结构依据 | organizer source |
+
+**图层语法（C3）**：所有空间图统一三层——
+1. **Existing / Context**：灰阶或弱化表达（OSM 数据，上述登记）；
+2. **Organizer Provisional**：蓝色虚线 + `official_boundary=false` 标注（组织方临时几何）；
+3. **Proposal**：高饱和色块/加粗线（Luna 设计内容，`agent_generated_design`）。
+
+观者无法误认 proposal geometry 为现状或官方数据：每张图均带图例 + 数据状态行 + provisional warning。
+
+**不可支持结论**：OSM context 数据不用于推导道路红线、地块权属、控规指标、工程可行性；KEY_AREA 落位为 conceptual placement，官方几何发布后整体重算。
+
+
+---
+
+## 三大定位 × 五大功能 × 三区两翼协同矩阵（proposed collaboration mechanism）
+
+> 本矩阵为**方案提出的协同机制设计（design hypothesis）**，不构成任何已达成合作承诺。所有外部区域协同均为概念建议，需官方/多方协商后落地。
+
+| 单元 | 输出什么 | 输入什么 | 谁连接 | 通过什么机制连接 |
+| --- | --- | --- | --- | --- |
+| **众智园**（东翼节点） | AI 科研/开源成果/测试验证报告 | 高校原始创新、开源社区贡献、公共算力 | 园区运营方 + 开源社区委员会 | 测试场准入（S2）、M2 社区、M4 公开测试 |
+| **AI 原点社区**（中部节点） | 成长契约试点数据（匿名化）、社区治理经验 | 家庭/学校/儿保组织的场景需求 | 社区运营方 + 教育局 + 儿保组织 | M5 儿童 AI 原生计划、Stage-Gate 阶段门 |
+| **大钟寺**（西翼节点） | 消费/政务/公地共创服务原型 | 市民需求、开发者共创、政务接口 | 公地运营委员会（市民+开发者+政府代表） | M3 API Challenge、S12 公地孵化、M9 审计 |
+| **中关村科技服务翼**（西翼） | 技术策源、企业转化通道、资本与人才服务 | 中关村企业/高校/资本的创新资源 | 海淀区科技服务部门（proposed） | 联合孵化协议、成果转化清单、公共 API 对接（proposed collaboration mechanism） |
+| **小月河场景赋能翼**（东翼） | 蓝绿生活场景、养老/托育/慢行赋能试点 | 小月河滨水空间、沿线社区场景需求 | 街道 + 社区运营方（proposed） | 场景申报机制、驿站网络（S9）、无障碍改造清单（proposed collaboration mechanism） |
+| **北纬社区**（协同） | 测试场景共建、人才居住协作 | 社区空间与居民场景 | 园区 + 社区（proposed） | design hypothesis：驿站试点延伸 |
+| **未来科学城 / 怀柔科学城 / 经开区**（协同） | 研发—中试—制造接力、算力协同 | 大科学装置/制造能力/算力资源 | 市级统筹（proposed） | design hypothesis：创新走廊对接、算力调度协议（概念建议，非已达成安排） |
+| **京津冀**（协同） | 应用场景外溢、产业梯度 | 京津冀市场需求 | 区域协同机制（proposed） | design hypothesis：场景复制清单、数据要素流通试点（概念建议，非已达成安排） |
+
+**矩阵读取规则**：每一单元回答「输出/输入/谁连接/机制」四问；无可靠资料支持的关系一律标 `design hypothesis`；任何外部协作不得写成已有官方合作。
+
+
+---
+
+## 旗舰试点 RACI 与实施要件（role-based · concept-level）
+
+> 不编造具体政府部门承诺；责任角色均为 proposed 占位，供专业团队与主管部门确认。资金为概念级 cost class（Low/Medium/High/To be assessed），不给虚假金额。
+
+| 试点 | Responsible / Accountable / Consulted / Informed（要点） | 前置·监管·数据依赖 | 资金·采购·运维 | 准入·成功·失败 | 人工接管·停止·回滚·退出·评估 |
+| --- | --- | --- | --- | --- | --- |
+| S4 儿童领取仪式 | Policy Owner: 区民政局/教育局（proposed）<br>Public Service Owner: 原点社区运营方<br>Platform Operator: 契约平台运维商（持证） | Service Provider: 认证 AI 服务商 | Independent Auditor: 第三方审计 | Community Rep: 家长代表 |
+| S1 一人一伙伴学校 | Policy Owner: 区教育局（proposed）<br>Public Service Owner: 试点学校<br>Platform Operator: 教育平台运维商 | Service Provider: 持证 AI 学习服务商 | Independent Auditor: 第三方 | Community Rep: 家长委员会 |
+| S2 开源测试场 | Policy Owner: 园区运营方（proposed）<br>Public Service Owner: 测试场管理委员会<br>Platform Operator: 沙盒环境运维商 | Service Provider: 入驻团队 | Independent Auditor: 安全审计方 | Community Rep: 开源社区委员会 |
+| S8 医疗预检 | Policy Owner: 区卫健委（proposed）<br>Public Service Owner: 社区卫生中心<br>Platform Operator: 预检平台运维商 | Service Provider: 认证医疗服务商 | Independent Auditor: 第三方 | Community Rep: 居民代表 |
+| S10 伙伴直连消费 | Policy Owner: 区商务局（proposed）<br>Public Service Owner: 大钟寺街区运营方<br>Platform Operator: 消费接口平台商 | Service Provider: 商户/服务商 | Independent Auditor: 消协/第三方 | Community Rep: 消费者代表 |
+| S12 人机公地 | Policy Owner: 区科委（proposed）<br>Public Service Owner: 公地运营委员会<br>Platform Operator: 共创平台运维商 | Service Provider: 孵化团队 | Independent Auditor: 第三方 | Community Rep: 市民代表 |
+
+> RACI 角色词表：Policy Owner（政策负责方，proposed）/ Public Service Owner（公共服务责任方）/ Platform Operator（平台运营方）/ Service Provider（服务提供方）/ Independent Auditor（独立审计方）/ Community Representative（社区代表）/ Safeguarding Role（儿童/弱势保护角色）/ Human Case Worker（人工个案员）/ Data Controller（数据控制者）。
+
+---
+
+## 7 个全球案例的 evidence status（Phase G）
+
+> 结论：7 案例全部登记为 **background / reference（外部参考）**，不作为 formal evidence。原因：评审环境 source_registry_summary 的 approved_formal_sources 来自组织方 registry，participant 登记的 sources.json 案例源不在其中。本案不将其包装为正式证据，仅在方案中作机制对照（background 用途），并保留完整来源链供人工核验。
+
+| 案例 | 来源（官方/一手） | 获取日期 | evidence status | 方案中的用途 | 不可支持的结论 |
+| --- | --- | --- | --- | --- | --- |
+| 新加坡 Smart Nation | smartnation.gov.sg / NAIS | 2026-08-11 | background（外部参考） | 双轨生态「转译机制」对照 | 不构成对新加坡政策的官方解读 |
+| 伦敦 King's Cross + Here East | kingscross.co.uk / hereEast | 2026-08-11 | background | 铁路遗产改造路径对照 | 不构成 UK 规划审批结论 |
+| 多伦多 Sidewalk Labs | waterfrontoronto.ca / 学术论文 | 2026-08-11 | background | 治理红线反证 | 不构成法律结论 |
+| 赫尔辛基 AI Register | ai.hel.fi（官方页） | 2026-08-11 | background | 城市 Agent 协议参考 | 不构成芬兰数据规则解读 |
+| 杭州城市大脑 | 政府公开报道 | 2026-08-11 | background | 场景渐进路径 | 不构成工程可行性结论 |
+| 爱沙尼亚 e-Estonia / X-Road | e-estonia.com | 2026-08-11 | background | 授权式数据架构参考 | 不构成架构采购建议 |
+| 深圳 AI 产业行动计划 | 深圳市政府公开文件 | 2026-08-11 | background | 公共算力普惠支柱 | 不构成补贴承诺 |
+
+
+---
+
+## 7 案例 evidence status（登记于上方 Phase G 表）
+
+
+---
+
+## 儿童与高风险 Agent 场景治理证据图（Phase K）
+
+![Agent 治理证据链（儿童/医疗/老年/政务/财产风险分级）](../assets/figures/governance-chain.png)
+
+治理证据链：**个人数据 → 同意 → 最小必要数据 → Agent 处理 → 调用城市服务 → 审计留痕 → 人工复核 → 删除/迁移/申诉/停止**。风险分级（concept-level）：儿童（契约+监护联署+儿保独立监督）/ 医疗（诊断仅人工+临床路径）/ 老年（高风险人工复核+家人同步）/ 政务（结果人工核验+申诉通道）/ 财产（权限分级+可撤回+审计留痕）。**拒绝 AI 用户始终保留等效人工服务。** 英文版见 `assets/figures/governance-chain.en.png`。
+
+---
+
+## Accessibility Checklist（Phase N · 无障碍设计检查）
+
+> 基于已登记的无障碍来源（任务书 + 公开无障碍标准），逐项落实进设计检查，不是正文口号。
+
+| # | 检查项 | 设计落点 | 状态 |
+| --- | --- | --- | --- |
+| A1 | 颜色对比度 | 展板/图件文字白描边+深色底（mobility 图修复）、状态色非唯一编码（图件同时有符号+文字） | 已执行 |
+| A2 | 可读字号 | A0/A3 最小 6mm 级、HTML 12px+、图例 8pt+ | 已执行 |
+| A3 | 非纯色编码 | 用地色块均带图例文字；provisional 边界=虚线+蓝色双编码 | 已执行 |
+| A4 | alt text | 全部 HTML 图片含描述性 alt（proposal/visual） | 已执行 |
+| A5 | 键盘/读屏（HTML） | 页面为静态文档流，无键盘陷阱；读屏可顺序阅读 | 已执行 |
+| A6 | 无设备路径 | Agent kiosk 公共终端（组件库第 1 项）+ 人工服务点（第 6 项） | 设计内建 |
+| A7 | 物理人工服务点 | Accessible human-service point 沿带布置；S6 讲解人工排班 | 设计内建 |
+| A8 | 行动无障碍 | 驿站 500m 间隔+无障碍通道（S4 仪式区、S5 托管） | 设计内建 |
+| A9 | 视听替代交互 | 讲解双路径（S6 双语语音+文字）；老人照护语音优先（S7） | 设计内建 |
+| A10 | 平实语言服务 | 契约每条款可人工解释（S4）；政务代办结果人工核验（S11） | 设计内建 |
+| A11 | AI 拒绝路径 | P6 画像 + 三平行路径第 3 条 + 人工柜台并行（S10） | 设计内建 |
+
+> 设计检查结论：视觉层（A1-A5）随本版图件/HTML 已落实；服务层（A6-A11）为方案机制内建项，属概念设计，需专业无障碍顾问在深化阶段复核。

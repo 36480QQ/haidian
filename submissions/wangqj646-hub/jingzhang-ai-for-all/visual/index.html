@@ -42,6 +42,15 @@ ul{padding-left:20px;font-size:13.5px;color:#3d4a5c}
 li{margin-bottom:5px}
 .compliance{font-size:12.5px;color:var(--muted)}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
+.scen-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.sc-card { border: 1.5px solid #e2571b; border-radius: 8px; padding: 8px 10px; font-size: 12px; line-height: 1.55; background: #fff; }
+.sc-card b { color: #e2571b; }
+.sc-card i { color: #666; font-style: normal; background: #eef2f7; border-radius: 4px; padding: 1px 6px; font-size: 11px; }
+.persona-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.persona { border: 1.5px solid #245b8f; border-radius: 8px; padding: 8px 10px; font-size: 12px; line-height: 1.55; background: #fff; }
+.persona b { color: #245b8f; }
+.chain-note { background: #172033; color: #fff; border-radius: 8px; padding: 10px 14px; font-size: 12.5px; line-height: 1.8; }
+.small-note { font-size: 11.5px; color: #667085; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -167,7 +176,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
 <li>算力科普馆（众智园，2027-2028）</li>
 <li>全民 AI 节（2027 年首办，年度活动）</li>
 </ul>
-<p>政策：伙伴驿站与 AI 议事亭纳入社区公共设施配建标准；设立"AI 原生一代成长基金"；城市服务伙伴直连接口按"公开协议、分级权限、全程留痕"原则开放。分期：一期众智园（2027-2028）、二期原点社区（2028-2030）、三期大钟寺与全线深化（2030-2032）。</p>
+<p>政策建议（proposed，subject to approval）：拟将伙伴驿站与 AI 议事亭纳入社区公共设施配建标准；拟设立"AI 原生一代成长基金"（金额待评估）；城市服务伙伴直连接口拟按"公开协议、分级权限、全程留痕"原则开放。分期（conceptual window）：一期众智园（2027-2028）、二期原点社区（2028-2030）、三期大钟寺与全线深化（2030-2032），以官方审批为准。</p>
 </section>
 
 <section class="sheet">
@@ -179,6 +188,48 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 0 30px}
 <section class="sheet">
 <h2>合规说明</h2>
 <p class="compliance">概念建议属性：本方案为 AI Agent（Luna@Hermes / wangqj646-hub）生成的开放共创建议。未使用任何非公开规划图纸、空间数据或内部控制指标；几何精度受临时边界限制，官方边界发布后全部重算；成果遵循"公共利益优先、公开资料边界、概念建议属性"共创章程。</p>
+</section>
+
+<section class="sheet">
+<h2>证据画廊 · 场景卡 · 用户画像 · 地标 · 组件 · 运营（12 场景卡全部展开）</h2>
+<p class="hero-copy">以下为评审可见证据：12 张场景卡、6 类用户画像、3 个朝圣地标、公共空间组件库与年度运营闭环。全部为概念设计（Concept Visualization）；几何为组织方临时边界（official_boundary=false）。</p>
+<h3>12 张场景卡（★ = 测试验证型）</h3>
+<div class="scen-grid">
+<div class="sc-card"><b>S1 AI 原生学校·一人一伙伴</b>【众智园/原点社区】学生+教师 · 学习伙伴 · 教师可随时接管 · 成绩仅人工 · <i>pilot</i></div>
+<div class="sc-card"><b>S2 开源成果测试场 ★</b>【众智园】开发者 · 沙盒城市验证 · 逃逸事件&gt;0 即停止 · 季度评估 · <i>sandbox</i></div>
+<div class="sc-card"><b>S3 AI 创作工坊</b>【众智园】青少年/创作者 · 共创伙伴 · 导师指导 · 作品人工审核 · <i>concept</i></div>
+<div class="sc-card"><b>S4 硅基伙伴第一课·领取仪式 ★</b>【原点社区】儿童+家庭 · 成长契约签署 · 全程人工在场 · 零成本退出 · <i>sandbox</i></div>
+<div class="sc-card"><b>S5 AI 放学托管</b>【原点社区】双职工家庭 · 托管协管 · 老师全程在场 · 异常 5 分钟人工介入 · <i>pilot</i></div>
+<div class="sc-card"><b>S6 AI 城市讲解</b>【京张遗址公园】游客/无设备者 · 双语讲解 · 公共终端+人工讲解双路径 · <i>concept</i></div>
+<div class="sc-card"><b>S7 AI 养老照护</b>【原点社区】老年人 · 照护协管 · 高风险人工复核 · <i>pilot</i></div>
+<div class="sc-card"><b>S8 AI 医疗预检 ★</b>【大钟寺/社区】居民 · 预检辅助 · 诊断仅人工 · 数据最小集 · <i>sandbox</i></div>
+<div class="sc-card"><b>S9 伙伴驿站·社区服务台</b>【全域】全人群 · 服务台协办 · 低数字技能者人工引导 · <i>pilot</i></div>
+<div class="sc-card"><b>S10 伙伴直连消费 ★</b>【大钟寺】AI 原生一代 · 无 App 消费 · 拒绝 AI 者柜台并行 · <i>sandbox</i></div>
+<div class="sc-card"><b>S11 AI 政务代办</b>【全域】市民 · 流程代办 · 结果人工核验 · 申诉通道 · <i>pilot</i></div>
+<div class="sc-card"><b>S12 人机公地·公共空间共创 ★</b>【大钟寺/遗址公园】市民/开发者 · 共创孵化 · 半年轮换 · 停用公示 · <i>sandbox</i></div>
+</div>
+<p class="small-note">每张卡完整字段（用户/痛点/Agent 角色/可调用/不允许/数据最小集/人工接管点/退出机制/成功指标/运营主体/空间需求/阶段）见 report/narrative.md 场景卡集。</p>
+<h3>6 类用户画像</h3>
+<div class="persona-grid">
+<div class="persona"><b>P1 儿童</b> AI 原生第一代 · 契约保护 · 监护联署</div>
+<div class="persona"><b>P2 普通家庭</b> 托管/教育/消费 · 可退出可删除</div>
+<div class="persona"><b>P3 老年人</b> 照护协管 · 人工服务并行</div>
+<div class="persona"><b>P4 开发者/研究者</b> 测试场/开源社区 · 贡献荣誉</div>
+<div class="persona"><b>P5 游客/低数字技能</b> 公共终端 · 人工引导</div>
+<div class="persona"><b>P6 拒绝 AI 用户</b> 等效人工服务 · 永不强制</div>
+</div>
+<h3>3 个 AI 朝圣地标</h3>
+<div class="persona-grid">
+<div class="persona"><b>L1 AI 原点</b>「第一次建立伙伴关系」仪式空间 · 原点光点 · 原点社区 PUBLIC-001</div>
+<div class="persona"><b>L2 开源智能荣誉墙</b> 贡献可核验才入墙 · 年度开源智能奖 · 众智园测试场入口</div>
+<div class="persona"><b>L3 人机公地</b> 人/Agent/机器人/公共 API 共创孵化 · 服务运行舱可见 · 大钟寺</div>
+</div>
+<h3>公共空间组件库（7 组件）</h3>
+<p class="small-note">Agent kiosk（公共终端）· Audit/consent terminal（授权管理）· AI discussion pavilion（议事亭）· Open-source showcase（开源展示）· Companion station（伙伴驿站）· Accessible human-service point（人工服务点）· Origin Dot marker（地面标识）——每建一个 Agent 组件，必配一个人工/无障碍组件（Agent First, Never Agent Only）。</p>
+<h3>Agent 治理证据链（高风险场景）</h3>
+<p class="chain-note">Personal Data → Consent → Minimum Required Data → Agent Processing → City Service Call → Audit Log → Human Review → Delete / Migrate / Appeal / Stop</p>
+<h3>Stage-Gate 与年度运营闭环</h3>
+<p class="chain-note">Idea → Sandbox（假设+准入+安全基线）→ Pilot（限额+人工接管）→ Evaluation（独立评估）→ Deploy / Stop（公开停用公示）→ Open Source（M8 沉淀）→ Next Cycle。九大机制：M1 原点日+开源智能奖 · M2 开发者/Agent 社区 · M3 公共 API Challenge · M4 城市场景公开测试 · M5 儿童 AI 原生计划 · M6 国际开发者驻留 · M7 企业测试场开放 · M8 开源成果发布 · M9 市民治理参与+安全/权利审计。</p>
 </section>
 
 <footer>AI Agent 提案 · wangqj646-hub · 2026-08 · v5 · 离线展示（无远程资源）</footer>
