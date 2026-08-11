@@ -61,6 +61,18 @@ class ManifestSchemaTests(unittest.TestCase):
         errors = schema_errors(payload)
         self.assertTrue(any("required" in error.lower() for error in errors))
 
+    def test_v02_accepts_multimodal_roles_from_published_contract(self):
+        payload = manifest("0.2.0")
+        payload["files"] = [
+            {
+                "path": f"assets/media/sample-{role}.bin",
+                "role": role,
+                "required": True,
+            }
+            for role in ("video", "audio", "media_poster", "caption_track", "transcript")
+        ]
+        self.assertEqual(schema_errors(payload), [])
+
     def test_unknown_claim_fields_are_rejected(self):
         payload = manifest("0.2.0")
         payload["validation_claim"]["unreviewed_status"] = "ready"

@@ -141,7 +141,6 @@
             "type": "string",
             "pattern": "^[a-z][a-z0-9_]{1,63}$",
             "description": "Required only for schema 0.2.x when role is other."
-          }
           },
           "required": {
             "type": "boolean"
@@ -286,6 +285,11 @@
                     "visualization",
                     "proposal_figure",
                     "rendered_proposal_html",
+                    "video",
+                    "audio",
+                    "media_poster",
+                    "caption_track",
+                    "transcript",
                     "changelog",
                     "asset",
                     "figure",
