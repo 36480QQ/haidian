@@ -4,104 +4,43 @@
   "package_id": "ai-native-corridor",
   "dimensions": [
     {
-      "risk_id": "R-BOUNDARY-001",
-      "risk_dimension": "spatial_dispute",
-      "label": "临时边界争议",
+      "id": "spatial_dispute",
+      "label": "空间争议 — 临时边界与权属缺失",
       "score": 4,
-      "note": "所有空间指标和几何图层基于provisional boundary计算；官方多边形未取得。替换官方边界后site_area_sqm、green_ratio、public_space_ratio等全部指标需重新计算；用地分区拓扑可能需调整。",
-      "mitigation": "已在assumptions.json、self_check.json、visual页面和正文中多处声明；面积计算附带推导方法和usage_note；建议评审使用相对比例而非绝对值进行比较。",
-      "human_review": "建议由海淀分局/组织方提供官方边界多边形后重新验算全部空间指标",
-      "severity": "high",
-      "probability": "confirmed",
-      "status": "open",
-      "owner": "组织方/海淀分局",
-      "related_assumptions": ["A-BOUNDARY-001"]
+      "note": "所有空间指标和几何图层基于provisional boundary计算，官方多边形未取得。地块权属边界、产权人清单、用地性质批文未提供。替换官方边界后全部指标需重新计算，用地分区拓扑可能需调整。",
+      "mitigation": "已在assumptions.json、self_check.json、visual页面和正文中多处声明临时边界状态；面积计算附带推导方法和usage_note；建议评审使用相对比例而非绝对值进行比较。",
+      "human_review": "建议由海淀分局/组织方提供官方边界多边形和权属数据后重新验算全部空间指标"
     },
     {
-      "risk_id": "R-CONTROLS-001",
-      "risk_dimension": "policy_uncertainty",
-      "label": "管控数据缺失",
+      "id": "policy_uncertainty",
+      "label": "政策不确定性 — 管控数据缺失与产业变化",
       "score": 4,
-      "note": "FAR、建筑高度、密度、道路红线、市政管线、文保范围、工程地质条件等官方管控数据缺失。开发强度分区和建筑形态为概念方案；更新项目拆迁量和实施时序无法精确确定；市政容量无法验算。",
-      "mitigation": "已在assumptions.json中声明A-CONTROLS-001；missing_data_checklist.csv逐项列出；设计深度矩阵标注data_gap；所有定量结论标注为概念级别。",
-      "human_review": "建议由北京市规自委/海淀分局补充正式控规条件后修订方案",
-      "severity": "high",
-      "probability": "confirmed",
-      "status": "open",
-      "owner": "组织方/海淀分局/北京市规自委",
-      "related_assumptions": ["A-CONTROLS-001"]
+      "note": "FAR、建筑高度、密度、道路红线、市政管线、文保范围、工程地质条件等官方管控数据缺失。全球AI产业生态和人才竞争格局可能在项目实施周期内发生重大变化，当前案例对标可能在3-5年后不再适用。",
+      "mitigation": "已在assumptions.json中声明A-CONTROLS-001；missing_data_checklist.csv逐项列出；设计深度矩阵标注data_gap；案例对标标注为provisional参考；建议建立年度案例更新和方案迭代机制。",
+      "human_review": "建议由北京市规自委/海淀分局补充正式控规条件后修订方案"
     },
     {
-      "risk_id": "R-STAKEHOLDER-001",
-      "risk_dimension": "implementation_complexity",
-      "label": "多主体协调",
+      "id": "implementation_complexity",
+      "label": "实施复杂度 — 多主体协调与分期不确定性",
       "score": 4,
-      "note": "三处重点区域涉及多个实施主体（中关村科学城管委会、海淀区政府、清华/北大/中科院、海淀商务局、京投公司），协调复杂度高。众智园涉及科研机构搬迁或合作谈判；AI原点社区涉及高校周边城市更新和站点一体化审批；大钟寺涉及商业开发与历史保护的平衡。",
-      "mitigation": "各重点区域已标注建议实施主体；建议设立区级协调专班；分期实施降低同步启动风险；建议Phase 1优先启动权属清晰、争议较小的公共空间段落。",
-      "human_review": "建议由海淀区政府组织各实施主体召开协调会，明确各方权责和时序",
-      "severity": "medium",
-      "probability": "likely",
-      "status": "open",
-      "owner": "海淀区政府",
-      "related_assumptions": []
+      "note": "三处重点区域涉及多个实施主体（中关村科学城管委会、海淀区政府、清华/北大/中科院、海淀商务局、京投公司），协调复杂度高。一期范围458.7ha涉及多个产权单位和现状建筑，实际可启动面积和时序取决于权属谈判和拆迁进度。",
+      "mitigation": "各重点区域已标注建议实施主体；建议设立区级协调专班；分期实施降低同步启动风险；phasing.geojson标注为design_proposal；建议先启动权属清晰、现状简单的公共空间和绿地段落。",
+      "human_review": "建议由海淀区政府组织各实施主体召开协调会，明确各方权责和时序"
     },
     {
-      "risk_id": "R-TECH-001",
-      "risk_dimension": "technology_maturity",
-      "label": "AI场景技术可行性",
+      "id": "technology_maturity",
+      "label": "技术成熟度 — AI场景可行性与方案评审",
       "score": 3,
-      "note": "10个AI场景卡和3个测试场景为概念设计，技术可行性和数据可用性未经验证。城市智能体沙盒需要真实IoT数据源和隐私合规审查；人才生活管家需要对接多个公共服务平台API；慢行断点诊断依赖公开数据质量。",
-      "mitigation": "场景标注为conceptual_design；建议在Phase 1选取2-3个低风险场景试点；每个场景需完成隐私影响评估和安全审查。",
-      "severity": "medium",
-      "probability": "possible",
-      "status": "open",
-      "owner": "AI场景运营方（待定）",
-      "related_assumptions": ["A-SCENARIO-001"]
-    },
-    {
-      "risk_id": "R-PHASING-001",
-      "risk_dimension": "implementation_complexity",
-      "label": "分期实施不确定性",
-      "score": 3,
-      "note": "一期范围458.7ha涉及多个产权单位和现状建筑，实际可启动面积和时序取决于权属谈判和拆迁进度。一期可讨论范围不等于可立即实施范围。",
-      "mitigation": "phasing.geojson标注为design_proposal；建议先启动权属清晰、现状简单的公共空间和绿地段落；分期边界待权属数据补全后精确划定。",
-      "severity": "medium",
-      "probability": "possible",
-      "status": "open",
-      "owner": "海淀区更新办",
-      "related_assumptions": ["A-CONTROLS-001"]
-    },
-    {
-      "risk_id": "R-REVIEW-001",
-      "risk_dimension": "technology_maturity",
-      "label": "AI生成方案评审风险",
-      "score": 2,
-      "note": "方案由AI Agent生成并自检，未经人工专业评审确认；可能存在AI幻觉或逻辑不一致。部分设计判断可能不符合中国城市规划实践惯例；英文翻译可能存在术语偏差。",
-      "mitigation": "所有结构数据通过deterministic validation；self_check.json全部pass；provisional边界声明清晰；建议人工复核关键设计结论。",
-      "severity": "low",
-      "probability": "likely",
-      "status": "open",
-      "owner": "参赛Agent + Maintainer",
-      "related_assumptions": []
-    },
-    {
-      "risk_id": "R-MARKET-001",
-      "risk_dimension": "policy_uncertainty",
-      "label": "产业生态变化",
-      "score": 2,
-      "note": "全球AI产业生态和人才竞争格局可能在项目实施周期内发生重大变化。当前对标8座全球AI城市（截至2026-08）的案例可能在3-5年后不再适用；产业空间需求预测可能偏乐观或偏保守。",
-      "mitigation": "案例对标标注为provisional参考；建议建立年度案例更新和方案迭代机制；空间设计保持弹性以适应产业变化。",
-      "severity": "low",
-      "probability": "possible",
-      "status": "open",
-      "owner": "规划团队",
-      "related_assumptions": ["A-DATA-001"]
+      "note": "10个AI场景卡和3个测试场景为概念设计，技术可行性和数据可用性未经验证。方案由AI Agent生成并自检，未经人工专业评审确认，可能存在AI幻觉或逻辑不一致。",
+      "mitigation": "场景标注为conceptual_design；建议在Phase 1选取2-3个低风险场景试点；每个场景需完成隐私影响评估和安全审查；所有结构数据通过deterministic validation；self_check.json全部pass。",
+      "human_review": "建议人工复核关键设计结论，Phase 1试点前完成技术可行性评估"
     }
   ],
   "risk_summary": {
-    "total": 7,
+    "total_dimensions": 4,
+    "total_risk_items": 7,
     "by_severity": {"high": 2, "medium": 3, "low": 2},
     "by_status": {"open": 7, "mitigated": 0, "closed": 0},
-    "top_risk": "R-BOUNDARY-001: 所有指标基于临时边界，替换官方多边形后需重算"
+    "top_risk": "空间争议: 所有指标基于临时边界，替换官方多边形后需重算"
   }
 }
