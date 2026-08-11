@@ -1,0 +1,3 @@
+零公里以北（NORTH OF ZERO）——京张铁路的零公里标立在走廊南端，方案把零公里以北的 9.7 公里读作一条从原点向北生长的创新主动脉：三处重点区作为枢纽，六条东西缝合慢行环重新连接被铁路走廊分隔的城市街区，「人字形双轨」叙事把百年京张工程文化与开源 AI 文化拧成一条可体验的空间故事线。方案在临时边界下完成可复算的用地分区、指标体系与分期计划，并以 12 张场景卡、6 类画像、4 处朝圣地标与年度活动体系回应全部智能体任务；所有空间内容均为概念建议，供专业团队深化研究。
+
+NORTH OF ZERO — the kilometre-zero marker of the Jing-Zhang Railway stands at the corridor's south end; this proposal reads the 9.7 km north of it as one innovation artery growing from the origin: three key areas as hubs, six east-west suture loops re-stitching the divided fabric, and the herringbone double-track narrative binding railway heritage and open-source AI culture — all as conceptual recommendations for professional deepening.
