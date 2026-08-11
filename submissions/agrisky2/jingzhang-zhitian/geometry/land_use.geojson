@@ -8,13 +8,16 @@
       "properties": {
         "id": "LU-001",
         "layer": "LAND_USE",
-        "land_use_code": "08H2",
+        "land_use_code": "0802",
         "land_use_zh": "科研用地(农业AI与智慧育种)",
         "area_category": "AI_agritech_rd",
         "key_area": "zhongzhiyuan",
         "area_sqm_approx": 480000,
         "far_max_concept": 2.5,
-        "height_max_concept_m": 60
+        "height_max_concept_m": 60,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -54,7 +57,10 @@
         "land_use_zh": "绿地与开敞空间(都市农业试验田)",
         "area_category": "urban_farming_demo",
         "key_area": "zhongzhiyuan",
-        "area_sqm_approx": 240000
+        "area_sqm_approx": 240000,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -90,13 +96,16 @@
       "properties": {
         "id": "LU-003",
         "layer": "LAND_USE",
-        "land_use_code": "09",
+        "land_use_code": "05",
         "land_use_zh": "商业服务业用地(FoodTech孵化与转化中心)",
         "area_category": "foodtech_commercial",
         "key_area": "ai_origin",
         "area_sqm_approx": 350000,
         "far_max_concept": 3.0,
-        "height_max_concept_m": 80
+        "height_max_concept_m": 80,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -138,7 +147,10 @@
         "key_area": "ai_origin",
         "area_sqm_approx": 250000,
         "far_max_concept": 2.0,
-        "height_max_concept_m": 45
+        "height_max_concept_m": 45,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -174,13 +186,16 @@
       "properties": {
         "id": "LU-005",
         "layer": "LAND_USE",
-        "land_use_code": "09",
+        "land_use_code": "05",
         "land_use_zh": "商业服务业用地(未来食品体验中心/全球粮食安全论坛)",
         "area_category": "food_experience",
         "key_area": "dazhongsi",
         "area_sqm_approx": 420000,
         "far_max_concept": 3.5,
-        "height_max_concept_m": 100
+        "height_max_concept_m": 100,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -220,7 +235,10 @@
         "land_use_zh": "绿地与开敞空间(京张铁路遗址公园活力带)",
         "area_category": "heritage_park",
         "key_area": null,
-        "area_sqm_approx": 1800000
+        "area_sqm_approx": 1800000,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -272,12 +290,15 @@
       "properties": {
         "id": "LU-007",
         "layer": "LAND_USE",
-        "land_use_code": "09",
+        "land_use_code": "05",
         "land_use_zh": "商业服务业用地(AI+农业科技服务与知识产权运营)",
         "area_category": "tech_service",
         "key_area": null,
         "area_sqm_approx": 2000000,
-        "far_max_concept": 2.5
+        "far_max_concept": 2.5,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
@@ -321,12 +342,15 @@
       "properties": {
         "id": "LU-008",
         "layer": "LAND_USE",
-        "land_use_code": "09",
+        "land_use_code": "05",
         "land_use_zh": "混合用地(AI+农业场景测试与展示)",
         "area_category": "scenario_mixed",
         "key_area": null,
         "area_sqm_approx": 1500000,
-        "far_max_concept": 2.0
+        "far_max_concept": 2.0,
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal"
       },
       "geometry": {
         "type": "Polygon",
