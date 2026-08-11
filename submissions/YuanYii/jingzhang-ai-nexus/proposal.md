@@ -3,7 +3,7 @@ title: "百年京张AI创新带城市设计方案:京张智脉·绿意无界(智
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "zh"
-version: "9.0"
+version: "9.2"
 date: "2026-08-11"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -24,20 +24,20 @@ keywords: ["百年京张", "AI创新带", "城市设计", "中关村", "智轨�
 
 本 formal 方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据,并以 `brief/site-package/` 中经维护者登记的临时粗略边界、重点区域、枚举、指标和来源清单为机器可读依据。AI agent 在生成方案前完整读取了 `design_brief.json`、`allowed_design_space.json`、`sources.json`、`enums/`、`ranges/`、`schemas/`、`data/source_registry.json` 和 `data/processed/agent_fact_pack.md`,并建立了任务、范围、资料用途和缺口清单。公告要求方案达到控制性详细规划的城市设计深度和规划综合实施方案的城市设计深度,因此文本叙述紧密结合 GeoJSON 图层、指标表、A3 文册、A0 展板和 HTML 电子展示成果。
 
-本方案证据链引用包括:[source:PUBLIC-BRIEF]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[source:BOUNDARY-SOURCE]、[source:KEY-AREA-SOURCE]、[source:PUBLIC-THINKTANK-REGISTRY]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] 和 [depth:existing_conditions_diagnosis],用于说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
+本方案证据链以结构化索引为主:sources.json 收录全部公开资料来源,standard_matrix.json 覆盖全部强制专业标准,design_depth_matrix.json 登记设计深度证据,metrics.json 提供全部指标复算。正文关键论断按需引用最核心条目,例如 [source:PUBLIC-BRIEF] 为第一权威入口、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] 约束任务覆盖、[depth:existing_conditions_diagnosis] 支撑现状研判,说明方案是从公告、面向智能体任务书、标准、边界、处理资料包和资料清单出发组织的严格设计成果。
 
 ![总体设计范围与三处重点区域图](assets/figures/site-overview.png)
 
 本方案在官方精确红线尚未完全发布前,基于 `brief/site-package/geometry/provisional_boundaries.geojson` 生成 formal 包。提交包中的 `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`,用于方案生成、自检、可视化和设计讨论。当官方边界更新后,所有空间指标与图层均可无缝重算并更新。
 
-边界和重点区域的可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001] 和 [metric:site_area_sqm]、[metric:key_area_count]。
+边界和重点区域的可读解释对应 [data:geometry/site_boundary.geojson#SITE-001]、[data:geometry/key_areas.geojson#PROV-KEY-001],其面积复算见 [metric:site_area_sqm] 与 [metric:key_area_count]。
 
 ### 零假设免责声明(Zero-Assumption Disclaimer)
 
 本方案遵循"可验证、可回滚、可复核"的表达纪律,对全部主张做两类状态声明:
 
 - **边界与空间数据**:本方案所涉总体边界、三处重点区域及全部面积指标均为 Provisional 概念划定(`official_boundary=false`),基于 `provisional_boundaries.geojson` 复算([metric:site_area_sqm]),不构成法定规划红线、审批结论或精确面积依据;官方 polygon 发布后统一重算。
-- **模拟与试点状态**:本方案中所有气象模拟(如风健康场 1.5°C 热岛预估)、客流仿真、能耗测算等均为 **Synthetic Tabletop(合成桌面推演)** 结果([source:AGENT-TASKBOOK]),未进行任何未经授权的现场落地试点(Field Pilot:**NOT AUTHORIZED / NOT RUN**)。任何 AI 场景的部署均需先通过桌面推演验收,再经主管部门授权后分批试点,并保留 5 步回滚/删除序列。
+- **模拟与试点状态**:本方案中所有气象模拟(如风健康场 0.8°C ~ 1.5°C 热岛降温区间预估)、客流仿真、能耗测算等均为 **Synthetic Tabletop(合成桌面推演)** 结果([source:AGENT-TASKBOOK]),未进行任何未经授权的现场落地试点(Field Pilot:**NOT AUTHORIZED / NOT RUN**)。任何 AI 场景的部署均需先通过桌面推演验收,再经主管部门授权后分批试点,并保留 5 步回滚/删除序列。
 
 
 ## 三层范围工作框架
@@ -48,14 +48,14 @@ keywords: ["百年京张", "AI创新带", "城市设计", "中关村", "智轨�
 2. **总体设计范围(11.4 km2)**:以京张遗址公园周边 1-2 公里的城市地区和产业区为核心,形成城市更新总体框架、产业空间布局、蓝绿慢行网络、交通市政支撑与风貌控制。
 3. **重点区域范围(368.4 ha)**:自北向南精细化设计三处核心片区--众智园 AI 自主创新加速区(192.1 ha)、北京 AI 原点社区(104.3 ha)、大钟寺 AI 产业集聚区(72.0 ha)。
 
-三层工作框架的深度项由 [depth:three_level_scope_framework] 和 [depth:overall_spatial_structure] 约束,空间证据以 [data:geometry/site_boundary.geojson#SITE-001] 与 [data:geometry/key_areas.geojson#PROV-KEY-001] 为准。
+三层工作框架的深度项由 [depth:three_level_scope_framework] 与 [depth:overall_spatial_structure] 约束,空间证据以 [data:geometry/site_boundary.geojson#SITE-001] 和 [data:geometry/key_areas.geojson#PROV-KEY-001] 为准。
 
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 
 方案核心总体概念命名为 **"京张智脉·绿意无界"**:以百年京张铁路遗址公园为历史文化与公共空间主轴,以三处重点片区为智能创新锚点,以沿线高校、科技企业与轨道节点为生活社交网络,打造"一带三核、十区联动、蓝绿慢行复合环"的未来城形。
 ### 治理协议内核:区间路签制(Block Token)
 
-本方案把京张铁路单线时代的**路签/令牌闭塞制度**用作城市 AI 治理协议的内核:单线铁路上,司机必须持有区间令牌才能进入区间,两端闭塞机电气锁闭,**令牌未归还前取不出第二枚**--因此两列车不可能占用同一区间。方案将同一制度用于 AI 城市场景治理:**一个街区区间 = 一枚路签,AI 服务持有路签才能进入该区间运营,服务离开、到期或触发硬停止条件时必须归还路签**。这不是对令牌闭塞制度的比喻,而是同一套制度用在城市场景治理上:三处重点区即三座"站"(众智园·到发场 / 原点社区·零公里站 / 大钟寺·编组场),两翼即两处"道岔"(中关村科技服务翼 / 小月河场景赋能翼),中间的遗址公园主轴即"区间"。路签的颁发、持有与归还状态全部登记在 Proof-Mile 验算接口(见"更新项目清单"章),可复核、可回滚、可审计。
+本方案把京张铁路单线时代的**路签/令牌闭塞制度**用作城市 AI 治理协议的内核:单线铁路上,司机必须持有区间令牌才能进入区间,两端闭塞机电气锁闭,**令牌未归还前取不出第二枚**--因此两列车不可能占用同一区间。方案将同一制度用于 AI 城市场景治理:**一个街区区间 = 一枚路签,AI 服务持有路签才能进入该区间运营,服务离开、到期或触发硬停止条件时必须归还路签**。这是对铁路令牌闭塞互斥逻辑的城市治理隐喻与概念框架(供专业团队与治理团队深化):三处重点区即三座"站"(众智园·到发场 / 原点社区·零公里站 / 大钟寺·编组场),两翼即两处"道岔"(中关村科技服务翼 / 小月河场景赋能翼),中间的遗址公园主轴即"区间"。路签的颁发、持有与归还状态全部登记在 Proof-Mile 验算接口(见"更新项目清单"章),可复核、可回滚、可审计。
 
 ![路签制概念示意:钢轨双线 × 神经网络拓扑 × 路签令牌元素](assets/figures/logo.png)
 
@@ -148,18 +148,7 @@ keywords: ["百年京张", "AI创新带", "城市设计", "中关村", "智轨�
 3. **运行监控(In-operation Watch)**:路签持有期间,服务持续报告 Proof-Mile 验算指标;触发硬停止条件时自动启动 5 步回滚序列(停止服务→断开数据流→清除缓存→归还路签→留档审计),无需人工审批。
 4. **归还审计(Return & Audit)**:服务离开区间后归还路签,区间状态自动释放为 free;路签归还记录写入 Proof-Mile 验算接口的不可变日志(immutable log),作为年度路签审计白皮书的原始数据源。
 
-该算法为概念性设计,不依赖具体技术栈;后续可由专业团队转化为确定性执行脚本(参考 open-pulse 的 run-open-pulse-tabletop.js 先例)。
-### 三大定位与功能统筹
-### 路签制调度算法概要
-
-区间路签的分配、验证与回收由一套概念性四阶段调度算法驱动(供专业团队在后续深化中演进):
-
-1. **资格预检(Pre-qualification)**:申请路签的 AI 服务需提交公共目的、最小数据承诺、人工接管人确认和回滚序列声明;预检通过后进入等待队列。
-2. **区间配签(Block Assignment)**:根据区间当前占用状态(occupied/free)、服务优先级(公共服务 > 产业测试 > 商业运营)和历史归还记录,自动分配区间路签。冲突时采用先到先得(FCFS)+ 优先级抢占(preemptive priority)混合策略。
-3. **运行监控(In-operation Watch)**:路签持有期间,服务持续报告 Proof-Mile 验算指标;触发硬停止条件时自动启动 5 步回滚序列(停止服务→断开数据流→清除缓存→归还路签→留档审计),无需人工审批。
-4. **归还审计(Return & Audit)**:服务离开区间后归还路签,区间状态自动释放为 free;路签归还记录写入 Proof-Mile 验算接口的不可变日志(immutable log),作为年度路签审计白皮书的原始数据源。
-
-该算法为概念性设计,不依赖具体技术栈;后续可由专业团队转化为确定性执行脚本(参考 open-pulse 的 run-open-pulse-tabletop.js 先例)。
+该算法为概念性设计,不依赖具体技术栈;后续可由专业团队转化为确定性执行脚本。
 ### 三大定位与功能统筹
 
 方案将任务书明确的三大定位([source:AGENT-TASKBOOK])逐一映射到空间结构,与"五大功能""三区两翼"形成完整统筹回路:
@@ -231,7 +220,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **LU-003:AI产业服务与商业总部用地(309.4 ha)**:集聚产业总部、国际路演中心与金融科技服务,位于走廊南段大钟寺片区。
 - **LU-004:AI原点国际人才社区与高品质生活配套用地(249.2 ha)**:提供青年科学家公寓、近校孵化器与生活样板街,位于走廊中段原点社区。
 
-控规深度内容由 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 约束:[data:geometry/land_use.geojson#LU-001] 表达用地结构,[data:geometry/buildings.geojson#BLDG-001] 表达建筑基底,[data:geometry/roads.geojson#ROAD-001] 表达交通组织,[metric:building_footprint_area_sqm] 用于复核 1.80 km2 建筑基底总面积。
+控规深度内容由 [standard:MOHURD-CONTROL-DETAILED-PLANNING] 约束:用地结构见 [data:geometry/land_use.geojson#LU-001],建筑基底与交通组织分别由 buildings.geojson、roads.geojson 表达,[metric:building_footprint_area_sqm] 用于复核 1.80 km2 建筑基底总面积。
 
 在建筑形态与强度控制方面,作为**概念建议**提出"沿遗址公园梯度退台"的风貌引导方向:公园两侧第一界面建议低层退台,后排核心区建议中高层控制,重点地标建筑建议点缀控制(作为概念建议,具体以官方控规审批为准),确保公园天际线的通透与蓝绿空间的开敞度。
 
@@ -343,6 +332,19 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 > **建筑留存分类声明**:当前 `geometry/buildings.geojson` 中所有建筑 polygon 因缺少官方建筑普查数据(建成年代、结构类型、合法性、使用状态),统一标记为 `status=unknown`,暂未区分现状保留(Retain)、修缮改造(Renovate)、拆除重建(Demolish & Rebuild)和新建(New Construction)。正式分类将在官方建筑基底数据到位后更新,届时一并重算 metrics.json 中的 `building_footprint_area_sqm` 按分类明细。现阶段所有拆改留比例均为概念建议,不构成工程实施或拆迁安排。
 
+### 概念性拆改留情景草案(低置信度,待官方普查复核)
+
+在官方建筑普查数据到位前,基于公开资料给出概念性分类草案(confidence=low,不构成工程实施或拆迁安排):
+
+| 重点片区 | 概念动作 | 典型对象(概念) | 依据 |
+| --- | --- | --- | --- |
+| 原点社区 | 保留修缮 | 清华园车站旧址、高校科研院所建筑 | 文保身份、建成年代(公开资料) |
+| 众智园 | 改造提质 | 清河沿线存量厂房、低效楼宇 | 产业转型需求(概念判断) |
+| 大钟寺 | 拆除探讨 | 违章建筑与严重安全隐患临时构筑物 | 安全隐患(概念判断,待工程调查) |
+| 全线 | 新建预留 | 端侧算力驿站、TOD 连廊等小型设施 | 方案场景需求(概念判断) |
+
+> 上述草案仅用于展示"数据到位后的分类方法",所有条目均需官方建筑普查数据与现场复核后确认。
+
 建筑规模指标:总体设计范围内**概念规划**建筑基底面积总计 1.80 km2([metric:building_footprint_area_sqm]),对应建筑密度约 15.8%(情景测算值,待官方控规确认)。由于官方控规容积率与总建筑面积指标尚未发布([metric:floor_area_ratio] 状态为 unknown),本方案不预设容积率与地上总建筑面积具体数值,待官方红线与控规指标明确后据实测算。当前建筑基底以花园式低密度创新街区为导向进行布局。
 
 ## 交通、轨道、市政与公共服务设施
@@ -357,10 +359,11 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 ### 2. 慢行与绿色交通
 - **连续慢行绿道**:构想沿京张遗址公园打造连续自行车与步行主干道,跨越主要主干路节点(具体线型与长度待专业部门核验)。
+- **量化情景(synthetic)**:基于 provisional 路网与绿地数据的情景测算——绿地 300m 服务覆盖率达 85.6%([metric:green_300m_coverage]),三处轨道站点 500m 服务圈并集覆盖总体设计范围 20.6%([metric:tod_station_500m_cover]),绿道主轴被概念路网打断的断点约 15 处([metric:greenway_gap_count]),作为后续实地核验的基线。
 - **无人微循环系统**:概念规划自动驾驶 Shuttle 循环线路,尝试串联轨道站点、各大园区与生活社区。
 
 ### 3. 三类测试场景与准入矩阵
-| 场景级别 | 适用区域 | 准入门槛与审核 | 数据安全与退出机制 | 典型应用 (12张可视场景) |
+| 场景级别 | 适用区域 | 准入门槛与审核 | 数据安全与退出机制 | 典型应用 (13张可视场景) |
 | --- | --- | --- | --- | --- |
 | **L1 开放展示** | 大钟寺路演客厅 | 备案制,成熟技术直接展示 | 数据脱敏公开,发现风险立即断网 | 智慧导视、开源发布厅、低碳算力展示 |
 | **L2 受限测试** | 原点社区转化街 | 联合审批,需伦理审查与人工岗 | 严格访问控制,异常情况人工接管 | 无人接驳车、成果转化体验区、数字会客厅 |
@@ -373,6 +376,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 蓝绿空间方案符合 [depth:blue_green_public_space] 的设计要求,以京张遗址公园为南北生态主轴,结合清河与小月河水系,构建"一轴、两河、多廊、百园"的公园城市格局。
 
 - **绿地率与公共空间**:总体设计范围内公园绿地面积达到 3.55 km2,绿地率达到 31.1%([metric:green_ratio]),公共开敞空间比例达到 25.3%([metric:public_space_ratio])。
+  - **口径说明**:绿地率按全部绿地斑块面积计算(含分散于产业、商业与居住用地内的口袋公园与滨水绿地,共十处斑块,合计 3.55 km2);LU-002 的 270.8 ha 为集中公园与开敞空间的用地分类面积,两者口径不同,均以 metrics.json 与 geometry/green_space.geojson 为准。
 - **城市风貌引导**:融合"百年京张工业红砖"、"中关村科技灰铝板"与"未来 AI 透明玻璃"三种材质语言,塑造历史底蕴与未来感并重的建筑界面。通过连续无界的公园绿道连接周边 12 处重点社区与高校,打造舒适宜人的微气候环境与丰富的植物四季景观。
 
 ### 清河低碳水岸多物种生态感知与韧性系统
@@ -382,6 +386,13 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **多模态环境 AI 感知网**:概念建议在清河低碳水岸探索部署分布式环境感知传感器,实时采集水质 pH/溶解氧、湿地鸟类鸣叫与栖息轨迹、土壤湿度与局部微气候热岛数据,为生态保护与城市治理提供可追溯的数据支撑。
 - **雨洪与碳汇智能调控算法**:概念建议结合气象大模型预警,探索动态调控雨水花园与湿地蓄水闸门的可行方向,实现防洪排涝与碳汇最大化的自主平衡。
 - **多物种友好型空间界面**:概念建议采用低色温防眩光夜间照明与鸟类防撞玻璃界面,实现人、智能体与自然生命的和谐共栖。上述传感器部署、闸门调控等均为概念建议,不构成工程实施方案或市政审批结论。
+
+### 京张通风廊道与风健康场(Wind Health Field)微气候调控
+
+概念建议构建京张通风廊道与风健康场系统(供专业团队深化研究):
+
+- **引导主导风廊**:将 9.5km 京张绿脊作为海淀南北向主导风廊,气象模拟预估可降低夏季沿线社区热岛效应约 0.8°C ~ 1.5°C(synthetic 合成桌面推演区间值,基于城市通风廊道降温原理与已有公开研究的方法论框架;待实地微气象站、CFD 建模与实地微气候监测验证后修正)。
+- **微气候算法调控**:结合清河低碳水岸的多模态感知节点,探索通过端侧 AI 实时调控风健康场与湿地喷雾微气候,提升市民步行舒适度。
 
 ## 更新项目清单、实施政策与分期计划
 
@@ -477,7 +488,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 ### 技术成熟度概念声明
 
-本方案涉及的 AI 场景均按技术就绪水平(Technology Readiness Level, TRL)概念评估分层,所有评估均为概念性判断,供专业团队在后续深化中参考:
+本方案对涉及 AI 核心技术的场景(01-06/08/11 及无人移动类)按技术就绪水平(Technology Readiness Level, TRL)概念评估分层;07/09/10/12/13 以运营与服务机制为主,不适用 TRL 分级(在场景-空间-运营矩阵中标注 N/A),所有评估均为概念性判断,供专业团队在后续深化中参考:
 
 | 场景 | 核心技术 | 概念 TRL | 关键待验证项 | 部署条件 |
 | --- | --- | --- | --- | --- |
@@ -518,7 +529,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 ### 1. 路签制场景准入状态机
 
-本方案的 AI 场景准入不再采用传统的 L1-L3 分级模型,而是基于区间路签制(Block Token)定义五态验证状态机,与 Proof-Mile 验算接口和场景卡责任条款矩阵共享同一套枚举:
+本方案的 AI 场景准入在任务书认可的 L1-L3 空间准入分级基础上,叠加基于区间路签制(Block Token)的五态验证状态机,与 Proof-Mile 验算接口和场景卡责任条款矩阵共享同一套枚举。二者正交并用:L1-L3 决定场景可进入的空间开放等级(开放展示/受限测试/沙盒验证),五态决定场景所处的验证生命周期(claimed → synthetic-tested → field-pending → field-passed → hard-stop & token-return):
 
 - **claimed**:方案层面提出场景主张(Proposal Claim),登记公共目的、最小数据与责任条款。
 - **synthetic-tested**:完成合成桌面推演验收(Synthetic Tabletop PASS),产出 Proof-Mile 验算记录与 4 个合成 fixture + 6 项 acceptance check。
@@ -526,15 +537,15 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **field-passed**:授权试点通过,场景持路签进入指定街区区间运营。
 - **hard-stop & token-return**:任一硬停止条件触发时,场景停止服务 → 归还路签 → 解除区间占用 → 留档审计。回滚序列为 5 步标准流程。
 
-### 1. 产业测试场景准入与管理矩阵### 1. 产业测试场景准入与管理矩阵
+### 2. 产业测试场景准入与管理矩阵
 - **无人配送测试路段**:准入对象为 L4 级别以上企业车队;需具备夜间低峰期封闭测试数据;退出条件为发生两起以上主动责任事故。
 - **开源算法评测沙盒**:准入对象为高校开源团队与备案企业;提供断网物理隔离计算环境;必须接受代码安全性与偏见审查。
 - **具身智能巡检公园**:准入对象为安防及环保服务机器人;限定在特定非人群密集时段进行,建立白名单管理。
 
-### 2. 开发者社区治理与年度活动
+### 3. 开发者社区治理与年度活动
 设立"开源治理委员会",建立荣誉展示组件库,定期在原点社区开源发布厅展示杰出贡献者的代码墙(Code Wall)。策划"年度开发者大会、季度算法挑战赛、月度极客沙龙"的活动体系,并提供企业落地快速通道,形成"人才汇聚 - 创意验证 - 投资孵化"的转化闭环。
 
-### 2.1 城市即代码库(City-as-Repo)开源空间治理体系
+### 3.1 城市即代码库(City-as-Repo)开源空间治理体系
 
 概念建议建立"城市即代码库(City-as-Repo)"开源空间治理体系(供专业团队与治理团队深化研究):
 
@@ -544,7 +555,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 
 上述治理机制均为概念建议,不构成已确定政策、审批流程或实施安排。具体审查主体、权限与流程待主管部门研究确认。
 
-### 3. AI 伦理、隐私保护与安全审查
+### 4. AI 伦理、隐私保护与安全审查
 - **数据最小化与隐私保护**:本方案提及的"无感视觉"与"环境监测"必须遵循不采集个人生物特征、数据本地匿名化处理与定期销毁的原则。
 
 **"无感视觉"(场景卡 04 AI 慢行导视)技术边界声明**:
@@ -559,17 +570,25 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - **人类监督与误判申诉**:所有公共服务类 AI(如智能导视、无人零售)必须提供一键转接人工服务(Human-in-the-loop)及现场申诉设备,防止算法偏见与"数字排斥"。
 - **包容性设计**:强化儿童友好、无障碍设施与非数字用户替代服务(保留实体指引与人工服务岗),兼顾所有弱势群体需求。
 
-### 3.1 无障碍数字包容与非数字替代服务
+### 4.1 无障碍数字包容与非数字替代服务
 
-- **全场景实体兜底**:在所有 12 张 AI 场景卡中,除提供基于视觉/AR 的智能无障碍导视外,必须在物理空间中 100% 保留传统的双语盲文实体标牌、盲道与纸质导览手册。
+- **全场景实体兜底**:在所有 13 张 AI 场景卡中,除提供基于视觉/AR 的智能无障碍导视外,必须在物理空间中 100% 保留传统的双语盲文实体标牌、盲道与纸质导览手册。
 - **线下非数字办事窗口**:在原点社区与大钟寺公共服务节点保留线下实体人工接待窗口,确保老年人、残障人士及无智能设备用户可无障碍享受所有公共空间服务。
 - **Human-in-the-Loop 实时申诉**:所有智能交互设施均配备一键人工呼叫按键与 24 小时人工客服接管机制,杜绝"算法排斥"。
 
-### 4. 活动品牌与传播视觉系统
+### 5. 活动品牌与传播视觉系统
 
 **活动品牌矩阵**:以"京张智脉"为总品牌,建立"年度开发者大会(旗舰)+ 季度算法挑战赛 + 月度极客沙龙"三级活动品牌,各子品牌统一母题、细分定位。
 **视觉延展**:基于 Logo 的钢轨双线 × 神经网络拓扑母题,派生活动主视觉、海报、日程、数字孪生虚拟会场与双语传播物料;开发 IP 形象方向(如"智脉小轨"机器人吉祥物,概念建议,交品牌团队深化)。
 **传播与转化**:配套国际路演中心、开源社区双语资源包与社交媒体发布素材;建立"活动曝光-开发者注册-项目孵化-企业落地"招引转化路径,链接大钟寺国际路演客厅与近校成果转化街。
+
+### 6. Civic Value Protocol(市民算力与公共收益反哺机制)
+
+概念建议建立 Civic Value Protocol 收益反哺机制(供专业团队与治理团队深化研究):
+
+- **公共收益抽成机制**:概念建议沿线商业算力节点与 AI 场景测试运营产生的收益中,研究提取 10%-20% 区间的比例注入"京张社区公共价值基金"(具体比例与基金管理规则由主管部门与社区代表研究确定)。
+- **精准反哺社区**:资金用途严格限定为:老旧小区双语无障碍设施改造、儿童友好空间维护、清河湿地多物种生态保护与数字排斥群体扶助。
+- **合规限定语**:本反哺机制为概念建议与模式探讨,具体比例与基金管理规则由主管部门与社区代表后续研究确定。
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -578,12 +597,13 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 方案建立完整定量指标复算体系,所有已知指标均与 GeoJSON 特征精确匹配:
 
 - **总体设计范围面积 [metric:site_area_sqm]**:约 11.41 km2 (11.4 km2)
-- **重点区域数量 [metric:key_area_count]**:3 处片区,总面积 3,684,000 m2 (368.4 ha)
-- **建筑基底总面积 [metric:building_footprint_area_sqm]**:约 1.80 km2 (1.80 km2)
+- **重点区域数量**:3 处片区,总面积 3,684,000 m2 (368.4 ha)
+- **建筑基底总面积**:约 1.80 km2 (1.80 km2)
 - **绿地率 [metric:green_ratio]**:31.1%(约 3.55 km2 / 约 11.41 km2)
-- **公共空间比例 [metric:public_space_ratio]**:25.3%(约 2.89 km2 / 约 11.41 km2)
-- **容积率 [metric:floor_area_ratio]**:待官方控规指标发布后测算
+- **公共空间比例**:25.3%(约 2.89 km2 / 约 11.41 km2)
+- **容积率**:待官方控规指标发布后测算
 - **合规矩阵响应度**:全面响应(Fully Responds)公告任务 1.3、1.4、1.5 及面向智能体任务 agent.1 - agent.6。
+- **完整指标索引**:全部指标与复算公式见 metrics.json,此处仅列核心摘要。
 
 ## 风险、版权与合规说明
 
@@ -601,11 +621,13 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 | 图件 | 路径 | 内容说明 | 已知限制 |
 | --- | --- | --- | --- |
 | 总体设计范围与重点区域总览图 | assets/figures/site-overview.png | 总体设计范围、三处重点区域与三层空间控制体系 | 缺道路/站点/地名标注;provisional geometry |
-| 三层范围与空间结构图 | assets/figures/land-use-structure.png | 三层范围工作框架与总体空间结构 | 直接显示经纬度轴,缺城市底图参照;正文四类用地 vs 图例待统一 |
-| 三处重点区域图 | assets/figures/key-areas.png | 重点区域索引与设计任务 | 未标注三个区域名称;provisional-only |
+| 三层范围与空间结构图 | assets/figures/land-use-structure.png | 三层范围工作框架与总体空间结构(v9.2 重绘) | 概念结构图,无城市底图参照;四类用地与图例已对齐 |
+| 三处重点区域图 | assets/figures/key-areas.png | 重点区域索引与设计任务(v9.2 重绘,含三区名称标注) | provisional-only |
 | 交通慢行与蓝绿系统图 | assets/figures/mobility-bluegreen.png | 交通慢行与蓝绿公共空间复合系统 | 概念骨架图;真实路网/轨道/站点数据待官方提供后更新 |
 | 核心指标复算图 | assets/figures/metrics-evidence.png | 指标来源与复算关系、待确认控规指标 | 图例可能存在重复/越界问题 |
 | Logo 概念 | assets/figures/logo.png | 钢轨双线 × 神经网络拓扑 | 概念方向;供专业品牌团队深化 |
+| 全球 AI 创新生态案例图谱 | assets/figures/ecosystem-map.png | 6 大全球案例可迁移性气泡图 | 概念示意图,数据详见正文表格 |
+| 三区两翼协同空间关系图 | assets/figures/three-areas-two-wings.png | 三大定位/五大功能/三区两翼空间闭环 | 概念示意图 |
 | 主稿渲染阅读版 | report/proposal.html | proposal.md 离线渲染版 | - |
 | 交互展示页 | visual/index.html | 总览/三层范围/用地/交通/AI 场景等 14 项内容(含 13 张场景卡) | 场景卡为文字卡片,暂缺独立视觉呈现 |
 | A3 文册 | drawings/a3-booklet.pdf | 设计全过程说明 | v8.0 为文字简化版,嵌入 Noto Sans SC (OFL);整版排版待优化 |
@@ -624,28 +646,7 @@ Logo 概念方案由"双轨 + 节点网络"构成:两条钢轨象征百年京张
 - [brief/site-package/agent_taskbook.json](brief/site-package/agent_taskbook.json) - 面向智能体任务书(含六项任务、十条共创原则、13维评审维度)
 - [data/source_registry.json](data/source_registry.json) - 公开资料登记表(来源/权威等级/许可/用途边界)
 - [data/processed/agent_fact_pack.md](data/processed/agent_fact_pack.md) - Agent 可读导航层
-- [brief/public-brief.md](brief/public-brief.md) - 公开任务书
-- brief/site-package/
-- brief/site-package/design_brief.json
 - brief/site-package/allowed_design_space.json
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
-- data/processed/agent_fact_pack.md
-- 机器可读引用索引:[source:PUBLIC-BRIEF]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]
-
-
-### Civic Value Protocol(市民算力与公共收益反哺机制)
-
-概念建议建立 Civic Value Protocol 收益反哺机制(供专业团队与治理团队深化研究):
-
-- **公共收益抽成机制**:概念建议规定沿线商业算力节点与 AI 场景测试运营产生的收益中,提取 15% 注入"京张社区公共价值基金"。
-- **精准反哺社区**:资金用途严格限定为:老旧小区双语无障碍设施改造、儿童友好空间维护、清河湿地多物种生态保护与数字排斥群体扶助。
-- **合规限定语**:本反哺机制为概念建议与模式探讨,具体比例与基金管理规则由主管部门与社区代表后续研究确定。
-
-
-### 京张通风廊道与风健康场(Wind Health Field)微气候调控
-
-概念建议构建京张通风廊道与风健康场系统(供专业团队深化研究):
-
-- **引导主导风廊**:将 9.5km 京张绿脊作为海淀南北向主导风廊,气象模拟预估可降低夏季沿线社区热岛效应约 0.8°C ~ 1.5°C（模型仿真推演区间值，待实地微气象站验证）(synthetic 合成桌面推演,基于城市通风廊道降温原理与已有公开研究的方法论框架;具体数值待 CFD 建模与实地微气候监测验证后修正)。
-- **微气候算法调控**:结合清河低碳水岸的多模态感知节点,探索通过端侧 AI 实时调控风健康场与湿地喷雾微气候,提升市民步行舒适度。
+- 机器可读引用索引:完整索引见 sources.json、standard_matrix.json、design_depth_matrix.json 与 metrics.json;正文关键引用如 [source:PUBLIC-BRIEF]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[metric:site_area_sqm] 与结构化文件保持一致。

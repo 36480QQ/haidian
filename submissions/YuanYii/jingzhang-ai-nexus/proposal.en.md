@@ -3,7 +3,7 @@ title: "Centennial Jing-Zhang AI Nexus Urban Design Proposal: Jing-Zhang Smart V
 proposal_slug: "jingzhang-ai-nexus"
 author_github: "YuanYii"
 language: "en"
-version: "6.0"
+version: "9.2"
 date: "2026-08-10"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
@@ -35,7 +35,7 @@ The readable interpretation of the boundary and key areas corresponds to [data:g
 This proposal follows a "verifiable, rollback-able, reviewable" expression discipline and declares two status classes for every claim:
 
 - **Boundary & spatial data**: all boundaries, key areas and area indicators are provisional conceptual delineations (`official_boundary=false`), recalculated from `provisional_boundaries.geojson` ([metric:site_area_sqm]); they are not legal redlines, approval conclusions or precise-area bases. A unified recalculation will run once official polygons are released.
-- **Simulation & pilot status**: all meteorological simulations (e.g., the Wind Health Field 1.5°C heat-island estimate), passenger-flow simulations and energy estimates are **Synthetic Tabletop** results ([source:AGENT-TASKBOOK]); no unauthorized field pilot has been run (**Field Pilot: NOT AUTHORIZED / NOT RUN**). Any AI scenario deployment requires a tabletop acceptance first, then authorized phased pilots with a 5-step rollback/deletion sequence.
+- **Simulation & pilot status**: all meteorological simulations (e.g., the Wind Health Field 0.8°C ~ 1.5°C heat-island cooling range), passenger-flow simulations and energy estimates are **Synthetic Tabletop** results ([source:AGENT-TASKBOOK]); no unauthorized field pilot has been run (**Field Pilot: NOT AUTHORIZED / NOT RUN**). Any AI scenario deployment requires a tabletop acceptance first, then authorized phased pilots with a 5-step rollback/deletion sequence.
 
 
 ## Three-Level Scope Framework
@@ -54,7 +54,7 @@ The core concept is named **"Jing-Zhang Smart Vein · Unbounded Green"**: using 
 
 ### Governance Protocol Core: Block Token (Interval Token System)
 
-This proposal uses the century-old **block-token / staff-and-ticket system** of single-track Jing-Zhang railway as the core of its urban AI governance protocol: on a single-track line, a driver must hold the interval token to enter a section; both ends are electrically interlocked, and **no second token can be issued before the first is returned**—so two trains can never occupy the same section. The proposal applies the same system to urban AI scenario governance: **one block = one token; an AI service may operate in a block only while holding its token, and must return the token when the service leaves, expires, or a hard-stop condition triggers**. This is not a metaphor for the block-token system but the same system applied to urban scenario governance: the three key areas are the three "stations" (Zhongzhiyuan·Departure Yard / Origin Community·Zero-Kilometer Station / Dazhongsi·Marshalling Yard), the two wings are the two "switches" (Zhongguancun Tech-Service Wing / Xiaoyuehe Scenario-Enablement Wing), and the heritage park spine is the "section". Token issuance, holding and return states are all registered in the Proof-Mile verification interface (see "Renewal Projects" chapter) and are reviewable, rollback-able and auditable.
+This proposal uses the century-old **block-token / staff-and-ticket system** of single-track Jing-Zhang railway as the core of its urban AI governance protocol: on a single-track line, a driver must hold the interval token to enter a section; both ends are electrically interlocked, and **no second token can be issued before the first is returned**—so two trains can never occupy the same section. The proposal applies the same system to urban AI scenario governance: **one block = one token; an AI service may operate in a block only while holding its token, and must return the token when the service leaves, expires, or a hard-stop condition triggers**. This is a city-governance metaphor and conceptual framework built on the mutual-exclusion logic of railway token interlocking (for professional and governance teams to deepen): the three key areas are the three "stations" (Zhongzhiyuan·Departure Yard / Origin Community·Zero-Kilometer Station / Dazhongsi·Marshalling Yard), the two wings are the two "switches" (Zhongguancun Tech-Service Wing / Xiaoyuehe Scenario-Enablement Wing), and the heritage park spine is the "section". Token issuance, holding and return states are all registered in the Proof-Mile verification interface (see "Renewal Projects" chapter) and are reviewable, rollback-able and auditable.
 
 ![Block Token concept: rail dual-line × neural network topology × token element](assets/figures/logo.png)
 
@@ -72,7 +72,7 @@ The allocation, verification, and return of block tokens are driven by a concept
 3. **In-operation Watch**: During token holding, the service continuously reports Proof-Mile verification metrics. When a hard-stop condition triggers, the 5-step rollback sequence (stop service → disconnect data flows → clear cache → return token → archive audit) is automatically activated without manual approval.
 4. **Return & Audit**: After the service departs the block, the token is returned and the block state is automatically released to free. Token return records are written to the immutable log on the Proof-Mile verification interface, serving as the primary data source for the annual token audit whitepaper.
 
-This algorithm is a conceptual design independent of any specific technology stack. Subsequent professional teams may convert it into deterministic execution scripts (referencing the open-pulse run-open-pulse-tabletop.js precedent).
+This algorithm is a conceptual design independent of any specific technology stack. Subsequent professional teams may convert it into deterministic execution scripts.
 
 
 | Tier | Core design question | Proposal answer | Data anchor |
@@ -268,6 +268,19 @@ Land use follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The building appr
 - **Conceptual recommendation — Renovate**: structural reinforcement, facade modernization and smart micro-circulation upgrades for aging industrial buildings and inefficient towers.
 - **Conceptual recommendation — Demolish & Rebuild**: explore localized renewal of illegal structures and unsafe temporary buildings to release land for greenery and innovation (proportions pending engineering surveys).
 
+### Conceptual Retain/Renovate/Demolish Scenario Draft (low confidence, pending official survey)
+
+Pending official building survey data, the following conceptual classification draft is offered based on public sources (confidence=low; not an engineering or demolition arrangement):
+
+| Key area | Conceptual action | Typical targets (conceptual) | Basis |
+| --- | --- | --- | --- |
+| Origin Community | Retain & restore | Qinghuayuan Station heritage site, university & research buildings | Heritage status, construction era (public sources) |
+| Zhongzhiyuan | Renovate & upgrade | Existing factories and inefficient buildings along Qinghe | Industrial transformation needs (conceptual) |
+| Dazhongsi | Demolition discussion | Illegal structures and unsafe temporary buildings | Safety hazards (conceptual, pending survey) |
+| Corridor-wide | New-build reserve | Edge-compute stations, TOD links and other small facilities | Scenario needs (conceptual) |
+
+> The draft above only illustrates the classification method to be applied once data arrives; every row requires official survey data and on-site verification.
+
 Building-scale indicators: the **conceptual** total building footprint in the overall scope is 1.80 km² ([metric:building_footprint_area_sqm]), corresponding to a building density of about 15.8% (scenario estimate, pending official regulatory confirmation). As official FAR and total floor-area controls are not yet published ([metric:floor_area_ratio] = unknown), the proposal sets no FAR or total floor-area values, to be calculated when the official redline and controls are released.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
@@ -282,6 +295,7 @@ Mobility and municipal planning follow [depth:traffic_rail_slow_parking] and [de
 
 ### 2. Slow traffic & green mobility
 - **Continuous slow greenway**: a continuous cycling and walking trunk along the Heritage Park crossing major intersections (alignment and length pending professional verification).
+- **Quantified scenarios (synthetic)**: scenario estimates based on provisional road network and green data — green-space 300m service coverage reaches 85.6% ([metric:green_300m_coverage]); the union of 500m service circles around the three rail stations covers 20.6% of the overall design area ([metric:tod_station_500m_cover]); the green spine is crossed by about 15 conceptual road features ([metric:greenway_gap_count]), serving as baselines for later field verification.
 - **Autonomous micro-circulation**: concept-planning autonomous shuttle loops connecting stations, parks and communities.
 
 ### 3. Three test-scenario tiers and admission matrix
@@ -300,6 +314,7 @@ Mobility and municipal planning follow [depth:traffic_rail_slow_parking] and [de
 The blue-green plan follows [depth:blue_green_public_space], using the Heritage Park as the north-south ecological spine with the Qinghe and Xiaoyuehe rivers, forming a "one axis, two rivers, multiple corridors, a hundred parks" pattern.
 
 - **Green ratio & public space**: 3.55 km² of park green space, a 31.1% green ratio ([metric:green_ratio]), and a 25.3% public open-space ratio ([metric:public_space_ratio]).
+  - **Scope note**: the green ratio is computed over all green patches (including pocket parks and riparian green space distributed within industrial, commercial and residential land, ten patches totalling 3.55 km²); LU-002's 270.8 ha is the land-use classification area of concentrated parks and open space. The two scopes differ and both follow metrics.json and geometry/green_space.geojson.
 - **Urban character**: three material languages — centennial Jing-Zhang industrial red brick, Zhongguancun tech gray aluminum, and future AI clear glass — shaping interfaces that balance heritage and futurity; continuous park greenways connect 12 communities and universities.
 
 ### Qinghe Low-Carbon Waterfront Multi-Species Eco-Sensing and Resilience System
@@ -483,7 +498,7 @@ The following public sources form the authoritative basis of this proposal (each
 
 Conceptual proposal to establish the Civic Value Protocol:
 
-- **Public Reinvestment Mechanism**: Conceptually suggests reinvesting 15% of operational revenues from commercial AI compute nodes into the Jing-Zhang Civic Value Fund.
+- **Public Reinvestment Mechanism**: Conceptually suggests studying a 10%-20% reinvestment range of operational revenues from commercial AI compute nodes into the Jing-Zhang Civic Value Fund (the exact ratio and fund governance rules to be determined by authorities and community representatives).
 - **Targeted Community Support**: Funds reserved for accessibility retrofits in older residential quarters, child-friendly spaces, and Qinghe wetland multi-species conservation.
 - **Compliance Disclaimer**: Concept-only mechanism; exact percentages and governance rules subject to official study.
 
@@ -492,5 +507,5 @@ Conceptual proposal to establish the Civic Value Protocol:
 
 Conceptual proposal to establish the Wind Health Field system:
 
-- **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 1.5°C reduction in summer urban heat island intensity (synthetic tabletop estimate based on urban ventilation corridor cooling principles and published methodological frameworks; specific values subject to revision after CFD modeling and on-site microclimate monitoring).
+- **Ventilation Corridor**: Utilizing the 9.5km green spine as a main N-S ventilation corridor, microclimate simulation estimates a 0.8°C ~ 1.5°C reduction in summer urban heat island intensity (synthetic tabletop estimate range based on urban ventilation corridor cooling principles and published methodological frameworks; subject to revision after on-site micro-meteorological stations, CFD modeling, and microclimate monitoring).
 - **Algorithmic Regulation**: Integrating multi-modal sensors to dynamically regulate wetland misting and microclimate comfort.

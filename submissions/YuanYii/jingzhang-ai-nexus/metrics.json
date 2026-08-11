@@ -92,6 +92,51 @@
       "confidence": "concept",
       "status": "unknown",
       "reason": "concept-only indicator, baseline to be established after pilot deployment"
+    },
+    "green_300m_coverage": {
+      "status": "known",
+      "value": 0.856,
+      "unit": "ratio",
+      "formula": "area(unary_union(buffer(green_space_patches,300m)) ∩ site_boundary) / site_area_sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "confidence": "medium",
+      "assumption_ids": [
+        "A-DATA-001"
+      ],
+      "assumptions": "synthetic estimate based on provisional geometry; recalculate when official data released"
+    },
+    "tod_station_500m_cover": {
+      "status": "known",
+      "value": 0.2061,
+      "unit": "ratio",
+      "formula": "area(unary_union(buffer(key_area_centroids,500m)) ∩ site_boundary) / site_area_sqm",
+      "source_files": [
+        "geometry/key_areas.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "confidence": "medium",
+      "assumption_ids": [
+        "A-DATA-001"
+      ],
+      "assumptions": "synthetic estimate based on provisional geometry; recalculate when official data released"
+    },
+    "greenway_gap_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "formula": "count(roads features intersecting the largest green-space patch)",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "confidence": "low",
+      "assumption_ids": [
+        "A-DATA-001"
+      ],
+      "assumptions": "synthetic estimate based on provisional geometry; recalculate when official data released"
     }
   }
 }
