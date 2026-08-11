@@ -81,6 +81,18 @@ Case conclusions (all conceptual translations, not replication promises): ① in
 
 Eight factor types are organized in running-diagram logic: **land and space** — innovation space supply is prioritized along the main line; **industry** — differentiated division among the three stations (Engine = full-stack autonomy, Origin = ecosystem incubation, Hub = new-format translation); **capital** — an open-source community fund and scenario-open revenue feed back into public-space operation (conceptual); **talent** — talent apartments and Origin-Station settlement services around hub stations; **compute** — edge-compute and public compute-pool interfaces reserved at Zhongzhiyuan; **data** — public data opened through "scenario sandboxes" with privacy and human-review boundaries labeled; **scenarios** — ten service-call cards form the annual open scenario list [source:AGENT-TASKBOOK] [source:OFFICIAL-ANNOUNCEMENT] [depth:municipal_new_infrastructure]. All mechanisms are conceptual and do not constitute fiscal commitments, investment-attraction arrangements or policy promises [source:AGENT-TASKBOOK].
 
+### Regional synergy: open interfaces with citywide innovation clusters (agent.2 supplement)
+
+This belt is not self-enclosed: following the taskbook "regional synergy" dimension, an **open-interface framework** with citywide innovation clusters is proposed (conceptual; collaboration facts must be stated only after source verification, no fabricated cooperation) [source:AGENT-TASKBOOK]:
+
+- **Beiwei community (Zhongguancun Science City North)**: interface = compute/model synergy — Zhongzhiyuan edge-compute pilots form an "edge—cloud" test link with the northern cluster of large models (suggested).
+- **Future Science City**: interface = achievement translation — the Zhongzhiyuan test/validation cluster hosts piloting and scenario validation of basic-research results (suggested).
+- **Huairou Science City**: interface = instruments and data sandbox — desensitized public data from large research facilities opens in sandbox mode at Zhongzhiyuan (suggested, subject to data compliance).
+- **Yizhuang (Beijing Economic-Technological Development Area)**: interface = intelligent-connected-vehicle scenario mutual recognition — the Dazhongsi low-speed delivery pilot and the Yizhuang demonstration zone mutually recognize test rules and safety standards (suggested).
+- **Beijing-Tianjin-Hebei**: interface = Jing-Zhang corridor extension — scenario lists, the open Running Diagram and talent-mobility mechanisms replicate along the existing Jing-Zhang corridor toward Zhangjiakou and Xiong'an (suggested).
+
+All of the above are open-interface suggestions pending verification and do not constitute confirmed cooperation arrangements; collaboration facts must be registered one by one after official or authoritative confirmation [depth:risk_missing_data] [source:AGENT-TASKBOOK].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### Spatial structure: one belt, three stations, two wings
@@ -185,6 +197,13 @@ The **admission-level and technology-readiness overview** of the ten cards is pr
 
 All scenarios and personas follow privacy and human-review boundaries: no "smartness" through excessive surveillance; personal-data use must be publicly disclosed, withdrawable and human-reviewable [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
+**Inclusivity design supplement (v1.1, conceptual)**: to move public interest from "persona coverage" to "verifiable design" [depth:risk_missing_data]:
+- **Accessibility**: the three hub-station forecourts and main-line slow paths follow barrier-free design (continuous tactile paving, level access, dual voice/text information boards); B04 AI Health Station keeps a manned counter and phone channel parallel to the digital interface;
+- **Parallel traditional services**: every AI service keeps an equivalent human-service entry (B04 manned station, B06 offline counter, B08 human-review desk); digital services do not replace offline services;
+- **Vulnerable-group impact**: the low-rent industrial-space replacement includes first-refusal re-entry and rent-cap clauses for incumbent tenants (conceptual); the public-space co-governance fund prioritizes senior and children usage windows;
+- **Resident participation**: the B10 Civic Forum rotates quarterly among the three stations; major renewal projects require a prior consultative procedure via the street co-governance committee and resident forums (conceptual mechanism);
+- **Public-interest KPIs (suggested)**: barrier-free slow-path coverage rate, parallel-traditional-service rate, population within 500 m of community public space, and resident-forum participation count enter the annual Running Diagram review metrics (conceptual scope, not statutory).
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 ### Land-use layout
@@ -274,6 +293,8 @@ All responsible bodies, funding sources and milestones above are conceptual sugg
 
 Core indicators and their design meaning are as follows [depth:metrics_recalculation] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]:
 
+**Scope note**: green parcels in `land_use.geojson` (e.g. LU-GREEN-BELT park/green land) follow the **land-use classification statistics scope** (per the National Land-Use Classification Guide codes), while `green_space.geojson` follows the **blue-green spatial-element scope** (the green elements themselves); the two describe different levels of the same green areas, so area differences are expected. Each metric's formula and source files are registered entry by entry in `metrics.json`; percentages, areas and lengths are never placed on the same unlabeled comparison axis [depth:metrics_recalculation] [metric:green_belt_land_sqm] [metric:green_ratio].
+
 - **site_area_sqm (11,412,825 m²)**: submitted boundary area, consistent with the announced 11.4 km² [metric:site_area_sqm].
 - **green_ratio (31.8%)**: the green ratio supports the "slow life" supply for talent; the main running line green belt is the core carrier [metric:green_ratio].
 - **public_space_ratio (3.5%)**: the public-space network of platform walkways, station forecourts and community plazas supports innovation exchange [metric:public_space_ratio].
@@ -297,7 +318,7 @@ All fifteen design-depth items (existing-conditions diagnosis, three-level frame
 
 - **Data and geometry risks**: official exact boundaries, regulatory conditions, existing buildings, ownership and engineering data are missing; this package uses the provisional boundary and registers the recalculation path — the whole chain must be recalculated when official data is released [depth:risk_missing_data] [source:BOUNDARY-SOURCE].
 - **Implementation risks**: the industrial ecosystem depends on the external environment and test scenarios depend on regulatory licensing; all mechanisms are conceptual [source:AGENT-TASKBOOK].
-- **Copyright and rights clearing**: this proposal is generated by an AI agent and uses no uncleared fonts, images, trademarks, personas or corporate logos; the logo and signage are original conceptual directions; maps and geometry derive from public repository materials and the provisional boundary; rights notes for generated media are in `report/copyright_statement.md`.
+- **Copyright and rights clearing**: this proposal is generated by an AI agent and uses no private, classified or internal non-public data; the logo and signage are original conceptual directions; maps and geometry derive from public repository materials and the provisional boundary. An **asset-by-asset copyright/source ledger** (fonts, generation tools and models, figures, logo, code dependencies, map and data transformations — author, license, permitted uses and limits) is provided in `report/copyright_statement.md`; the cultural-material clearance item (A-CULTURE-CLEARANCE) is registered as `pending_clearance` and will not be expanded before rights-holder confirmation; this narrative does not absolutely claim that all materials are cleared [source:AGENT-TASKBOOK] [depth:risk_missing_data].
 - **Legal boundary**: this proposal is not formal planning, an approval basis, an engineering-feasibility conclusion or a government implementation commitment; names such as "running diagram", "service-call card" and "hub station" are conceptual and do not allude to existing trademarks or institutions [source:AGENT-TASKBOOK].
 - **Privacy and human review**: all AI scenarios (especially B04/B08/B10) follow minimal data collection, public disclosure, withdrawal, human review and one-key rollback [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 
