@@ -198,6 +198,34 @@ FORMAL_NONEMPTY_GEOMETRY_FILES = {
     "public_space.geojson",
     "phasing.geojson",
 }
+# constraints.geojson is deliberately absent from FORMAL_NONEMPTY_GEOMETRY_FILES: with no official
+# regulatory-control geometry published for this site, an empty constraint layer is a legitimate and
+# accepted outcome. The advisory below never changes that; it only asks that the gap be recorded
+# somewhere machine-readable, so "deliberately empty" is distinguishable from "never looked at".
+CONSTRAINTS_DATA_GAP_DECLARATION_KEYS = (
+    "data_gap",
+    "data_gaps",
+    "missing_official_layers",
+    "constraint_status",
+)
+CONSTRAINTS_GAP_ASSUMPTION_ID_PATTERN = re.compile(r"control|constraint|regulat", re.IGNORECASE)
+CONSTRAINTS_GAP_ASSUMPTION_TERMS = (
+    "regulatory control",
+    "regulatory plan",
+    "control plan",
+    "statutory control",
+    "road redline",
+    "road red line",
+    "redline",
+    "red line",
+    "constraint",
+    "控规",
+    "管控",
+    "红线",
+    "约束",
+    "控制线",
+    "文保",
+)
 TRUSTED_BOUNDARY_SOURCE_TYPES = {
     "official_public",
     "official_open_data",
@@ -1032,6 +1060,80 @@ def geometry_coordinates_are_valid(geometry: dict) -> bool:
     return False
 
 
+def _collect_strings(value: object, sink: list[str]) -> None:
+    """Flatten every string (including object keys) reachable from ``value``."""
+    if isinstance(value, str):
+        sink.append(value)
+    elif isinstance(value, dict):
+        for key, item in value.items():
+            sink.append(str(key))
+            _collect_strings(item, sink)
+    elif isinstance(value, list):
+        for item in value:
+            _collect_strings(item, sink)
+
+
+def constraints_file_declares_data_gap(data: object) -> bool:
+    """True when constraints.geojson itself records why its feature set is empty."""
+    if not isinstance(data, dict):
+        return False
+    return any(bool(data.get(key)) for key in CONSTRAINTS_DATA_GAP_DECLARATION_KEYS)
+
+
+def assumptions_declare_constraints_gap(data: object) -> bool:
+    """True when assumptions.json registers the missing regulatory-control inputs.
+
+    Both the scaffold default (`A-CONTROLS-001`) and the many hand-written variants in
+    existing packages are accepted: an entry qualifies when its identifier names controls,
+    constraints or regulation, or when any of its text mentions the missing control inputs.
+    """
+    if not isinstance(data, dict):
+        return False
+    entries = data.get("assumptions")
+    if not isinstance(entries, list):
+        return False
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        for key in ("id", "assumption_id"):
+            value = entry.get(key)
+            if isinstance(value, str) and CONSTRAINTS_GAP_ASSUMPTION_ID_PATTERN.search(value):
+                return True
+        strings: list[str] = []
+        _collect_strings(entry, strings)
+        blob = " ".join(strings).lower()
+        if any(term in blob for term in CONSTRAINTS_GAP_ASSUMPTION_TERMS):
+            return True
+    return False
+
+
+def validate_empty_constraints_declaration(
+    report: ValidationReport, path: Path, data: object, display_path: str
+) -> None:
+    """Advise (never block) when an empty constraint layer leaves the gap unrecorded.
+
+    An empty constraints.geojson stays valid: no official regulatory-control geometry is
+    published for this site, and inventing one is worse than leaving the set empty. This
+    only asks for the gap to be stated once, either in the file or in assumptions.json.
+    """
+    if constraints_file_declares_data_gap(data):
+        return
+    assumptions_path = path.parent.parent / "assumptions.json"
+    try:
+        assumptions = json.loads(assumptions_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        assumptions = None
+    if assumptions_declare_constraints_gap(assumptions):
+        return
+    report.add_warning(
+        f"{display_path}: empty constraint layer is accepted and is not a blocking issue, but the "
+        "missing official control data is not recorded anywhere; add a top-level `data_gap` object to "
+        "this file, or an assumptions.json entry covering the missing regulatory controls. Keep the "
+        "feature list empty unless you have citable official or cleared geometry - never fabricate "
+        "constraint geometry, and never label an inferred surface `official_constraint`."
+    )
+
+
 def validate_geojson_file(
     report: ValidationReport,
     repo_root: Path,
@@ -1053,6 +1155,8 @@ def validate_geojson_file(
         return 0
     if require_features and not features:
         report.add_error(f"{display_path}: this geometry file needs at least one feature")
+    if geometry_name == "constraints.geojson" and not features:
+        validate_empty_constraints_declaration(report, path, data, display_path)
 
     allowed_layers = load_allowed_layers(repo_root)
     source_enums = load_string_enums(repo_root, "brief/site-package/enums/source_types.json")
