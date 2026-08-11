@@ -50,7 +50,7 @@ As of the submission date (11 August 2026), the repository has not yet obtained 
 
 The main body (`proposal.md`) is written primarily for human reading—each chapter explains the design judgment, spatial layers, metric meaning, and data gaps. The complete source index, metric formulas, layer verifications, and professional-standard responses are kept in `sources.json`, `metrics.json`, the GeoJSON layers, and the three matrix files (`compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`). Under format v2, each required chapter keeps 1-3 evidence citations after key judgments, and sentences remain naturally readable after the citation markers are removed [standard:PROPOSAL-FORMAT-V2].
 
-![Evidence chain and submission-package relationship](assets/figures/site-overview.png)
+![Evidence chain and submission-package relationship](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
@@ -68,7 +68,7 @@ The three-level scope is translated into a working framework with distinct desig
 | Overall Design Area | How should industrial space, urban renewal, transport and municipal works, and urban character be mapped | Land use, buildings, roads, green space, public space, and phasing layers jointly express the scheme | [data:geometry/land_use.geojson#LU-001], [data:geometry/roads.geojson#ROAD-001] |
 | Key-Area Detailed Design Area | How should the three key areas reach detailed-design depth | A positioning, spatial moves, AI scenarios, and implementation dependencies for each key area | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
-![Three-level scope and spatial working framework](assets/figures/land-use-structure.png)
+![Three-level scope and spatial working framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -264,7 +264,7 @@ All building heights, massing, and character controls are marked `status=unknown
 
 **Implementation dependencies:** ownership and engineering conditions of the Dazhongsi station redevelopment, the West 3rd Ring Road right-of-way, and ownership of buildings along the corridor—to be confirmed against formal conditions [depth:three_key_area_detailed_design].
 
-![Key areas index and design tasks](assets/figures/key-areas.png)
+![Key areas index and design tasks](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -519,7 +519,7 @@ Each conceptual building records: land-use code, affiliated area, conceptual hei
 **Talent living services:** talent apartments (50% OPC-policy rent discount), international schools (existing resources + conceptual additions), community health centers, and AI-enabled living experience districts.
 **Public-service gaps:** the specific locations and scales of the 298 public-service facilities, 37 transport facilities, 62 municipal facilities, and 36 urban-safety facilities in the planning institute's regulatory-plan public-notice are not covered by this proposal for now—to be supplemented uniformly when official data is published [depth:public_service_facilities].
 
-![Composite transport, slow-mobility, and blue-green public-space system](assets/figures/mobility-bluegreen.png)
+![Composite transport, slow-mobility, and blue-green public-space system](assets/figures/mobility-bluegreen.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -697,7 +697,7 @@ All known metrics originate from the official announcement or can be recalculate
 
 In `design_depth_matrix.json`, all required formal depth items are marked `complete` (conceptually complete, pending calibration against official data).
 
-![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.png)
+![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
@@ -723,7 +723,7 @@ In `design_depth_matrix.json`, all required formal depth items are marked `compl
 - The AI Agent is responsible for facts, sources, copyright, spatial data, metrics, and expression.
 - The proposal involves no non-public planning drawings, unauthorized data, personal privacy, or fabricated official endorsement.
 
-![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.png)
+![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## References
 
