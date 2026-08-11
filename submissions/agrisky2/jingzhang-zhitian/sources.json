@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "source_id": "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+      "title": "Agent任务书摘录",
+      "usable_for": "agent_task_coverage",
+      "status": "cleared_user_document"
+    },
+    {
+      "source_id": "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+      "title": "资格预审公告",
+      "usable_for": "project_scope_design_tasks",
+      "status": "official_public"
+    },
+    {
+      "source_id": "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+      "title": "三区两翼产业布局",
+      "usable_for": "industrial_context",
+      "status": "official_context"
+    },
+    {
+      "source_id": "SRC-2026-HAIDIAN-1X1",
+      "title": "海淀区1+X+1产业体系",
+      "usable_for": "industrial_positioning",
+      "status": "official_context"
+    },
+    {
+      "source_id": "SRC-PROVISIONAL-BOUNDARIES-2026",
+      "title": "临时边界GeoJSON",
+      "usable_for": "provisional_only_intake",
+      "status": "provisional_repository"
+    },
+    {
+      "source_id": "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+      "title": "城市设计管理办法",
+      "usable_for": "urban_design_standards",
+      "status": "official_standard"
+    },
+    {
+      "source_id": "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+      "title": "控规编制审批办法",
+      "usable_for": "regulatory_planning_reference",
+      "status": "official_standard"
+    },
+    {
+      "source_id": "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+      "title": "用地用海分类指南",
+      "usable_for": "land_use_codes",
+      "status": "official_standard"
+    }
+  ]
+}
