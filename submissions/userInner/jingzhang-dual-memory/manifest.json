@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5"
   },
-  "generated_at": "2026-08-10T01:58:40Z",
+  "generated_at": "2026-08-11T01:54:57Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "3ed930dff2f3407bf704ab844790d1f9444271e1cfc75dd2b164c5ce745d8944"
     },
     {
       "path": "compliance_matrix.json",
@@ -157,6 +157,62 @@
       "required": true,
       "language": "zh",
       "sha256": "b10b55dc34bc511fa751718646d907a544a0fe069c6b43588b64f39f2bbd2097"
+    },
+    {
+      "path": "assets/reference/1909-jingzhang-freight-car-public-domain.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "1a33ae4edbb9bedd3ee08c6909892cf607c39441e93cc08efdc32c76ff295f4a"
+    },
+    {
+      "path": "assets/reference/2016-qinghuayuan-platform-cc-by-sa-4.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "ac18be8a4af722aca0bc3d3285f7886a12d8e1938deb95b7a5a3fb79427bdbcc"
+    },
+    {
+      "path": "assets/reference/2024-qinghuayuan-renovated-cc-by-sa-4.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "92f6b7d8b21a903b24d1f6c9add16c10a3ced783304284300a481f3900048d7a"
+    },
+    {
+      "path": "assets/renders/00-belt-aerial.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "1338cd37b798571781eb445182daa62cb5e76a6d00a559326e898b0936045ff6"
+    },
+    {
+      "path": "assets/renders/01-qinghuayuan-memory-platform.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "bd1d573ee2c48a08a311fde94230dbf8535a3a3a3d6a58f3f70c3f585e39ccd9"
+    },
+    {
+      "path": "assets/renders/02-zhongzhiyuan-red-light-court.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "106e15baca5a6c5829671221c50365659b67e8250dcf22ee3777c9f906832123"
+    },
+    {
+      "path": "assets/renders/03-ai-origin-provenance-clinic.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "53d45f651178a021bcfa256356fb3c0691624582137a130adbb648a94a8f76f7"
+    },
+    {
+      "path": "assets/renders/04-dazhongsi-inclusive-plaza.jpg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "f4ec611eb6d6cc7c0b6624295df4d3255167f1409bb12d16170166747745d348"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -302,8 +358,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
