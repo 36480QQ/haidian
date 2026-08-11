@@ -14,7 +14,9 @@
 
 - **`self_check.json` 迁移到 `persisted-self-check-v1` 契约。** 按 PR #1521 的复核意见执行 `self_check_submission.py --mark-self-checked`：持久化顶层 `ok=true`、`can_enter_formal_review=true`、`review_status=formal-review-ready` 与四条规范化阻塞门（`DETERMINISTIC_VALIDATION` / `SPATIAL_REVIEW` / `VISUAL_PACKAGING` / `PROFESSIONAL_EVIDENCE`），`manifest.validation_claim` 增 `readiness_contract: persisted-self-check-v1`。
 
-  **代价与处理**：该工具按设计只保留 `schema_version`、把 `checks` 整体替换为四条门禁，本包原有 29 条自撰证据条目会全部消失。逐条比对后确认其中 **27 条的内容在 `proposal.md` 中已有对应表述**，另 **2 条为正文未覆盖**，已先补进正文再迁移：① 26 张图件全部由 PIL/reportlab 程序化绘制、无生成式图像素材（v1.6.4 起该路径承载的是程序化绘制的《交接断面》F/13）；② 三处重点区卡片按 `key_areas.geojson` 真实轮廓与同一比例尺绘制，附主轴、定位条、指北针、比例尺与复算面积。**没有把 29 条手工并回工具产物**——那等于篡改机器实跑证据。
+  **两类记录并存，且不可混淆。** 该工具按设计只保留 `schema_version`、把 `checks` 整体替换为四条门禁，本包原有 29 条自撰证据条目会全部消失。`self_check.schema.json` 顶层是 `additionalProperties: false`，无法另开字段存放，但 `checks.items` 允许附加属性，因此改为：**四条工具实跑记录在前并标 `record_type: trusted_gate_run`，28 条自撰断言在后并标 `record_type: participant_assertion`**（原第 29 条 `PROFESSIONAL_EVIDENCE` 与机器门同名，以实跑记录为准不予恢复，其原内容为概括句、正文已覆盖）。这样既不丢证据，也不会把自撰断言伪装成机器实跑结果——**四条门禁的内容一字未改，全部由工具写入**。
+
+  另有 **2 条自撰条目的内容此前只存在于 `self_check.json`**，已一并补进正文（中英对称），避免只依赖单一载体：① 26 张图件全部由 PIL/reportlab 程序化绘制、无生成式图像素材（v1.6.4 起该路径承载的是程序化绘制的《交接断面》F/13）；② 三处重点区卡片按 `key_areas.geojson` 真实轮廓与同一比例尺绘制，附主轴、定位条、指北针、比例尺与复算面积。
 
 - **版本印记整体重刷 v1.11 → v1.12。** 24 张 PNG 声明矩形外**逐像素零变化**；2 张 JPEG 沿用原量化表，矩形外最大通道偏差 14/15、均值 0.07；四套 PDF 的 38 处页脚与 20 张内嵌图件等长替换，`PACKAGE v1.12` 命中数与页数逐套相等（13/13、13/13、6/6、6/6），无旧版本号残留。
 
