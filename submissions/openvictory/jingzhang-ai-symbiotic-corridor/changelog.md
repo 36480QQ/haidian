@@ -1,3 +1,11 @@
+## v0.15.1 - 2026-08-11
+
+闭合双语合同完整性缺口（复审要求，单提交）：
+
+- `proposal.en.md` 补齐 Copyright and Generation Disclosure + References 全量双语段落（与中文 §4 + 参考资料逐条等义，含 `[self_check:COPYRIGHT_ASSET_REGISTRY]` 证据标记）
+- `self_check.json` PROFESSIONAL_EVIDENCE 版本描述更新为 v0.15 实际证据清单（消除陈旧 v0.6 引用），COPYRIGHT_ASSET_REGISTRY 消息同步 Noto Sans SC 字体登记事实
+- 重渲染 report/proposal.en.html 并同步 manifest SHA-256
+
 ## v0.15 - 2026-08-10
 
 对标 96 分方案的证据绑定与认识论差距闭合（单提交一次推送）：
