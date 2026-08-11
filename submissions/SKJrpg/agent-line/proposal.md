@@ -31,7 +31,7 @@ version: "v1.0"
 
 当前仓库没有官方总体设计红线和三处重点区精确 polygon。提交包沿用维护者登记的临时粗略边界，geometry_role 为 provisional_constraint，official_boundary 为 false。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]
 
-临时边界只用于方案生成、自检、可视化与设计讨论，不得冒充官方红线、审批依据或精确面积依据。官方 polygon 到位后，全部成果须整体复算重出。[depth:existing_conditions_diagnosis]
+临时边界只用于方案生成、自检、可视化与设计讨论，不得冒充官方红线、审批依据或精确面积依据。社区已就 PROV-KEY-003（大钟寺区域）临时多边形的定位偏差提出核验（其质心落在北京北站一带，距大钟寺站约 2.26 公里）[source:ISSUE-1029]；本包不自行平移该几何，维持维护者登记版本，待官方 polygon 发布或维护者修订源几何后整体复算重出。[depth:existing_conditions_diagnosis]
 
 现状事实来自公开发布与新闻报道。京张铁路遗址公园二期于 2026 年 8 月 6 日建成开放，串联西直门至北五环，全长九公里，总用地约 53 公顷，服务 70 个社区约 45 万居民。[source:NEWS-JINGZHANG-PARK-PHASE2] 北京 AI 原点社区三平方公里内集聚 400 余家企业，AI 企业占比超过七成。[source:NEWS-AI-ORIGIN-COMMUNITY] 京张沿线街区控规已通过市级部门联审。[source:HAIDIAN-2026Q1-PROGRESS]
 
