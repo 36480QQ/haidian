@@ -31,7 +31,7 @@ Source usability boundaries follow the public source registry strictly: seven fo
 
 **First, the exact official redline was not provided.** The announcement gives a textual extent and an area, not a coordinate boundary. All geometry in this proposal is derived from the provisional rough boundary registered in the site package [source:BOUNDARY-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]. In the EPSG:4548 projection that boundary measures 11,412,825 square metres, about 0.11% from the announced figure of roughly 11.4 square kilometres [metric:site_area_sqm]. **The area is usable; the shape is rough.** It cannot serve as a statutory redline, an approval basis, a precise-area recomputation basis, an ownership boundary or an engineering boundary. Once the official boundary is released, land use, roads, green space, public space, buildings, phasing and every metric must be recomputed — not patched file by file.
 
-**Second, the official control indicators are entirely absent.** Floor-area-ratio caps, building height limits, building density limits, green ratio requirements and setback requirements are all recorded as missing in the site package's planning limits file [metric:official_far_limit] [metric:official_building_height_limit_m]. This proposal makes no assumptions about them. The floor area ratio and building density that appear in this text are the conceptual scheme's own estimated ratios, not planning control indicators, and imply no conclusions about building heights or parcel-level retain, renovate or demolish decisions.
+**Second, the official control indicators are entirely absent.** Floor-area-ratio caps, building height limits, building coverage ratio limits, green ratio requirements and setback requirements are all recorded as missing in the site package's planning limits file [metric:official_far_limit] [metric:official_building_height_limit_m]. This proposal makes no assumptions about them. The floor area ratio and building coverage ratio that appear in this text are the conceptual scheme's own estimated ratios, not planning control indicators, and imply no conclusions about building heights or parcel-level retain, renovate or demolish decisions.
 
 **Third, there are no measured cross-section widths for the corridor.** This matters most, because graded right-of-way is the core move of the proposal. The repository provides no survey, and public sources yielded none. The A/B/C grading rests on inferred widths and judgements about pedestrian density along the line. **What this proposal asserts is the grading method itself; it does not claim a specific measured width for any segment.** Once survey data arrives, the grades are recomputed and the method is unaffected. This limitation is stated consistently in three places: the geometry attributes, the metric notes, and the disclosed assumptions.
 
@@ -49,7 +49,7 @@ The announcement sets three levels of scope. This proposal works each level to a
 |---|---|---|---|
 | Coordinated research area | 43.6 sq km | Strategy: industrial coordination, factor input paths, interfaces with the belt | Written strategy, no geometry issued |
 | Overall design area | 11.4 sq km | Regulatory-plan urban design depth: land-use partition, right-of-way grading, public space, phasing | All layers and metrics issued, labelled as derived from a provisional boundary |
-| Key detailed design areas | 368.4 ha | Detailed design depth: role, frontage, landmark and opening phase for each of the three | Geometry issued, announced area shown alongside the provisional extent |
+| Key-Area Detailed Design Areas | 368.4 ha | Detailed design depth: role, frontage, landmark and opening phase for each of the three | Geometry issued, announced area shown alongside the provisional extent |
 
 The three levels are not concentric circles but a sequence of **input, carrying, and verification**: the coordinated research area supplies factors, the overall design area carries and organises space, and the key areas prove things out before anything expands outward [depth:three_level_scope_framework].
 
@@ -61,7 +61,7 @@ The coordinated research area runs north to the North Fifth Ring Road, east to t
 
 ### Three Things That Must Come From Outside
 
-**Compute and capital.** The Zhongguancun Technology Service Wing acts as the factor-allocation interface: compute access, capital matching, and the Zhongguancun brand and market channels. It is not a parcel awaiting development but a set of existing institutions and services whose output flows into the belt.
+**Compute and capital.** The Zhongguancun Technology Services Wing acts as the factor-allocation interface: compute access, capital matching, and the Zhongguancun brand and market channels. It is not a parcel awaiting development but a set of existing institutions and services whose output flows into the belt.
 
 **Demand for the scenarios.** AI scenarios on the street need real people to serve; demand cannot be manufactured with subsidies. Existing residential blocks along both sides of the corridor cover 323.4 ha, 28.3% of the design area, and are the principal population served by the to-door interfaces [metric:land_use_area_0701_sqm] [metric:land_use_ratio_0701]. The education and research frontage of 49.9 ha supplies genuine demand for mobile classrooms, teaching-aid circulation and open-air lessons [metric:land_use_area_0804_sqm].
 
@@ -93,15 +93,15 @@ Item six is where this proposal differs most at the level of geometry: **phasing
 
 ### Spatial Structure: One Line, Three Stations, Two Wings
 
-The trunk line runs 9.72 km continuously along the corridor spine [data:geometry/roads.geojson#ROAD-TRUNK-0101]. Each key area carries one station, with a mean spacing of 3.89 km [metric:station_spacing_avg_m]. The two wings are the Zhongguancun Technology Service Wing (compute and capital interface) and the Xiaoyuehe Scenario Empowerment Wing (pilot segment).
+The trunk line runs 9.72 km continuously along the corridor spine [data:geometry/roads.geojson#ROAD-TRUNK-0101]. Each key area carries one station, with a mean spacing of 3.89 km [metric:station_spacing_avg_m]. The two wings are the Zhongguancun Technology Services Wing (compute and capital interface) and the Xiaoyue River Scenario Enablement Wing (pilot segment).
 
 | Station | Key area | Positioning role | Street-entry role |
 |---|---|---|---|
-| North Station | Zhongzhiyuan AI Acceleration Area | Full-stack AI innovation, global governance voice | Regional depot, vehicle servicing and maintenance, compute access |
+| North Station | Zhongzhiyuan AI Independent Innovation Acceleration Area | Full-stack AI innovation, global governance voice | Regional depot, vehicle servicing and maintenance, compute access |
 | Origin Station | Beijing AI Origin Community | World-class AI innovation ecosystem | Human-machine demonstration segment, public experience and display hub |
 | South Station | Dazhongsi AI Industry Cluster | AI-native business formats | Instant fulfilment for retail and consumption, night restocking |
 
-The three areas and two wings do not sit side by side; they form a loop: **the wings supply factors, the three areas divide the load, the trunk connects them and delivers results to the door, and operating data flows back to improve the rules**.
+The Three Zones and Two Wings do not sit side by side; they form a loop: **the wings supply factors, the three areas divide the load, the trunk connects them and delivers results to the door, and operating data flows back to improve the rules**.
 
 ## Detailed Design of Key Areas
 
@@ -109,7 +109,7 @@ The three key areas are drawn at one shared scale so they can be compared direct
 
 ![Detailed design of the three key areas](assets/figures/key-areas.en.png)
 
-### Zhongzhiyuan AI Acceleration Area (announced 192.1 ha)
+### Zhongzhiyuan AI Independent Innovation Acceleration Area (announced 192.1 ha)
 
 Its positioning role is full-stack AI innovation and governance voice. Its street-entry role is regional depot, vehicle servicing and maintenance, and compute access. The trunk here is a Grade B segment: normally separated physically, with light vehicles demoted to the edge at peak hours.
 
@@ -150,7 +150,7 @@ Full records, source links, retrieval dates, licence terms and known limitations
 | Land | Land-use partition and inner frontage | Active frontage on the corridor, existing housing behind; no new land needed |
 | Space | Stations, to-door points, component library | Standardised modules reused to lower the cost of each intervention |
 | Industry | Division among three areas, input from two wings | Zhongzhiyuan research, Origin Community ecosystem, Dazhongsi formats |
-| Capital | Zhongguancun Technology Service Wing | Factor-allocation interface; no fiscal commitment implied |
+| Capital | Zhongguancun Technology Services Wing | Factor-allocation interface; no fiscal commitment implied |
 | Talent | Seven user personas | From frontline maintenance staff to international researchers |
 | Compute | Access at North Station | Co-located with back-of-house facilities for easier operation |
 | Data | Attribution and review facilities | Right-of-way, cross-section and event data open for reproduction |
@@ -193,7 +193,7 @@ Card 12 needs an extra boundary statement: **it reads house numbers and delivery
 
 All three are written as experiments: control group, indicators, human review point, exit mechanism. **Exiting when the gates are not met is part of the design, not a failure of it.**
 
-**Test one: time-sliced right-of-way pilot** (Xiaoyuehe Scenario Empowerment Wing, Phase 1 closed, 257.3 ha) [metric:phase_p1_area_sqm]
+**Test one: time-sliced right-of-way pilot** (Xiaoyue River Scenario Enablement Wing, Phase 1 closed, 257.3 ha) [metric:phase_p1_area_sqm]
 - Control: the same segment before and after the rules take effect, plus a parallel control on the adjacent Grade A segment
 - Indicators: human-machine encounters per kilometre-hour, yield success rate, mean yielding distance, emergency-stop rate
 - Human review: every emergency stop and every complaint reviewed individually, with a named responsible party
@@ -241,9 +241,9 @@ The banding follows a real urban design judgement: **active frontage on the corr
 
 ### Building Scale: Stating Plainly That These Are Estimates
 
-Building footprint area is 222.5 ha, a building density of 19.5%. With storey counts assumed by land-use category, total floor area is estimated at 14.42 million square metres and the floor area ratio at 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio].
+Building footprint area is 222.5 ha, a building coverage ratio (BCR) of 19.5%. With storey counts assumed by land-use category, total floor area is estimated at 14.42 million square metres and the floor area ratio at 1.26 [metric:building_footprint_area_sqm] [metric:floor_area_ratio].
 
-**These three numbers are the conceptual scheme's own estimates, not planning control indicators.** Storey counts are assumed and recorded in the disclosed assumptions. Official floor-area-ratio, building height, building density and setback controls remain pending formal planning conditions, and this proposal makes no assumptions about them [depth:development_intensity_controls] [depth:height_massing_character].
+**These three numbers are the conceptual scheme's own estimates, not planning control indicators.** Storey counts are assumed and recorded in the disclosed assumptions. Official floor-area-ratio, building height, building coverage ratio and setback controls remain pending formal planning conditions, and this proposal makes no assumptions about them [depth:development_intensity_controls] [depth:height_massing_character].
 
 ### Retain-or-Renovate Logic: Criteria, Not Parcel Verdicts
 
@@ -370,13 +370,13 @@ This is the proposal's most distinctive feature at the level of geometry: **phas
 
 | Phase | Extent | Area | Openness | Gate indicators | Rollback condition |
 |---|---|---|---|---|---|
-| One | Xiaoyuehe Scenario Empowerment Wing pilot segment | 257.3 ha | Closed | Encounters per km-hour, yield success rate, emergency-stop rate | Roll back to closed testing and suspend opening if gates fail |
+| One | Xiaoyue River Scenario Enablement Wing pilot segment | 257.3 ha | Closed | Encounters per km-hour, yield success rate, emergency-stop rate | Roll back to closed testing and suspend opening if gates fail |
 | Two | Origin Station segment | 271.3 ha | Guided, with marshals | Complaint rate, remote takeover rate, comfort survey | Return to Phase One if gates fail |
 | Three | North and south segments, full line | 612.8 ha | Open | Bottleneck share, to-door coverage | Any single segment failing returns to Phase Two on its own |
 
 The three phase areas sum to the design area: the phasing layer is a complete partition of the boundary [data:geometry/phasing.geojson#PHASE-P1] [metric:phase_p3_area_sqm].
 
-Phase One sits in the Xiaoyuehe pilot segment rather than the Origin Community because it is right to **prove things where pedestrian flow is not at its densest before entering the hardest segment**. The Origin Community is the Grade C bottleneck, so it comes second and must have marshals.
+Phase One sits in the Xiaoyue River pilot segment rather than the Origin Community because it is right to **prove things where pedestrian flow is not at its densest before entering the hardest segment**. The Origin Community is the Grade C bottleneck, so it comes second and must have marshals.
 
 ### Policy and Operating Mechanism
 
@@ -407,13 +407,13 @@ The prose does not repeat machine indexes: complete source, standard, design dep
 
 ### Professional Standards Response
 
-Mandatory professional standards are answered item by item, with evidence citing the local reference snapshots in the repository rather than links alone [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Land-use classification follows the project subset of the national guide for land and sea use classification strictly [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Where a standard requires an official document not yet obtained in the repository, it is reported as a data gap, and a link is never substituted for evidence.
+Mandatory professional standards are answered item by item, with evidence citing the local reference snapshots in the repository rather than links alone [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]. Land-use classification follows the project subset of the national guide for land and sea use classification strictly [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. English terminology follows `docs/terminology-glossary.md`; where the competition validator mandates a specific section heading that differs from the glossary (Blue-Green Network, Retain-Renovate-Demolish), the mandated heading is used and the glossary term appears in the body text. Where a standard requires an official document not yet obtained in the repository, it is reported as a data gap, and a link is never substituted for evidence.
 
 All 15 mandatory design depth items are complete, with the corresponding deliverable paths recorded in the design depth matrix.
 
 ### Cultural Narrative: The Road We Built Ourselves
 
-The Jing-Zhang Railway was the first trunk line surveyed, designed and built by Chinese engineers, opened in 1909; Qinglongqiao station solved the gradient problem of the Guangou section with a zigzag switchback. Zhongguancun made its own chips and software. Full-stack AI innovation is a compute road built the same way. **The three episodes are one thing happening three times: a road we built ourselves.**
+The Jing-Zhang Railway was the first trunk line surveyed, designed and built by Chinese engineers, opened in 1909; Qinglongqiao station solved the gradient problem of the Guangou section with a zigzag switchback. Zhongguancun made its own chips and software. The Full-Stack Independent AI Innovation System is a compute road built the same way. **The three episodes are one thing happening three times: a road we built ourselves.**
 
 "Going first" continues that line: a century ago it was the railway going first, today it is the rules for letting AI onto the street. The switchback carries one further echo — it is a classic problem in route planning, and it is written with the character for "person".
 
