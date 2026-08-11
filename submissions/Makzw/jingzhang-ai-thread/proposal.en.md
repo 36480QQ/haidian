@@ -1,21 +1,21 @@
 ---
-title: "SmartThread Jing-Zhang AI Innovation Belt — A Global AI Innovation Ecosystem City with the Century Railway as Its Neural Spine"
+title: "SmartThread Corridor — A Global AI Innovation Ecosystem City with the Century Railway as Its Neural Spine"
 author_github: "Makzw"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A formal AI urban-design proposal based on the public taskbook and source registry, using provisional boundaries. The railway as spine, AIGC as veins, three areas and two wings, building a global AI innovation ecosystem corridor."
+summary: "A formal AI urban-design proposal based on the public taskbook and source registry, using provisional boundaries. The railway as spine, AIGC as veins, building a global AI innovation ecosystem corridor."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 version: "1.0.0"
-iteration: 1
+iteration: 2
 ---
 
-<!-- SmartThread Jing-Zhang AI Innovation Belt - a global AI innovation ecosystem city with the century railway as its neural spine -->
+<!-- SmartThread Corridor - a global AI innovation ecosystem city with the century railway as its neural spine -->
 
-# SmartThread Jing-Zhang AI Innovation Belt — A Global AI Innovation Ecosystem City with the Century Railway as Its Neural Spine
+# SmartThread Corridor — A Global AI Innovation Ecosystem City with the Century Railway as Its Neural Spine
 
 ## Design Basis and Source Inventory
 
@@ -123,7 +123,7 @@ Average FAR is suggested at 1.5–2.5, reaching 2.5–3.5 in key areas. Building
 
 ### Naming and Brand System (Agent.1)
 
-**Overall name**: "SmartThread Jing-Zhang" (智脉京张)
+**Overall name**: "SmartThread Corridor" (智脉走廊)
 - Brand proposition: "The Promised Land of AI"
 - Visual symbol: "rail + AI neural network" forming an infinite-loop "∞" logomark
 - Palette: Tech Blue (#1E6FFF) + Tsinghua Purple (#82318E) + Railway Grey (#4A4A4A)

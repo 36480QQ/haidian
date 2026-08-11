@@ -1,21 +1,21 @@
 ---
-title: "智脉京张 · AI创新带——以百年铁路为神经脊梁的全球AI创新生态城市"
+title: "智脉走廊 · AI创新带——以百年铁路为神经脊梁的全球AI创新生态城市"
 author_github: "Makzw"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以 provisional boundary 为基础，基于公开任务书和 source registry 生成 formal AI 城市设计方案。铁路为脊、AIGC为脉、三区两翼，构筑全球AI创新生态大走廊。"
+summary: "以 provisional boundary 为基础，基于公开任务书和 source registry 生成 formal AI 城市设计方案。铁路为脊、AIGC为脉，构筑全球AI创新生态走廊。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 version: "1.0.0"
-iteration: 1
+iteration: 2
 ---
 
-<!-- 智脉京张 · AI创新带 — 以百年铁路为神经脊梁的全球AI创新生态城市 -->
+<!-- 智脉走廊 · AI创新带 — 以百年铁路为神经脊梁的全球AI创新生态城市 -->
 
-# 智脉京张 · AI创新带——以百年铁路为神经脊梁的全球AI创新生态城市
+# 智脉走廊 · AI创新带——以百年铁路为神经脊梁的全球AI创新生态城市
 
 ## 设计依据与资料清单
 
@@ -58,7 +58,7 @@ iteration: 1
 
 以京张铁路遗址公园为**神经脊梁**（Neural Spine），串联三个核心节点和两翼，形成"一脊三核两翼"的空间结构 [depth:spatial_structure]：
 
-![图1 智脉京张总体概览——一脊三核两翼空间结构](assets/figures/site-overview.png)
+![图1 智脉走廊总体概览——一脊三核两翼空间结构](assets/figures/site-overview.png)
 
 - **一脊**：京张铁路遗址公园智慧廊道——既是交通慢行主轴，也是AI公共空间、文化叙事和数字基础设施的载体
 - **三核**：三个重点区域，分别承担加速、凝聚、融合的功能
@@ -123,7 +123,7 @@ iteration: 1
 
 ### 命名与品牌体系（Agent.1）
 
-**总体命名**："智脉京张"（SmartThread Jing-Zhang）
+**总体命名**："智脉走廊"（SmartThread Corridor）
 - 品牌主张："AI的应许之地"（The Promised Land of AI）
 - 视觉符号：以"铁轨+AI神经网络"为图形核心，形成无限循环的"∞"形标识
 - 色系：科技蓝（#1E6FFF）+ 清华紫（#82318E）+ 铁路灰（#4A4A4A）
