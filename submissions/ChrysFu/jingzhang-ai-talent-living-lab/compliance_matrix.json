@@ -710,19 +710,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
+        "implementation_card_count",
+        "key_area_count",
         "public_space_ratio",
-        "key_area_count"
+        "rights_safeguard_dimension_count",
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
-        "核心指标"
+        "四层协议",
+        "总览地图",
+        "核心指标",
+        "空间实施卡"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -734,7 +738,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -763,19 +768,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
+        "implementation_card_count",
+        "key_area_count",
         "public_space_ratio",
-        "key_area_count"
+        "rights_safeguard_dimension_count",
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
-        "核心指标"
+        "四层协议",
+        "总览地图",
+        "核心指标",
+        "空间实施卡"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -787,7 +796,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -816,19 +826,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
+        "implementation_card_count",
+        "key_area_count",
         "public_space_ratio",
-        "key_area_count"
+        "rights_safeguard_dimension_count",
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
-        "核心指标"
+        "四层协议",
+        "总览地图",
+        "核心指标",
+        "空间实施卡"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -840,7 +854,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -869,19 +884,23 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
         "green_ratio",
+        "implementation_card_count",
+        "key_area_count",
         "public_space_ratio",
-        "key_area_count"
+        "rights_safeguard_dimension_count",
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
-        "核心指标"
+        "四层协议",
+        "总览地图",
+        "核心指标",
+        "空间实施卡"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -893,7 +912,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -922,21 +942,25 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "site_area_sqm",
+        "implementation_card_count",
         "key_area_count",
+        "pilot_stage_count",
+        "rights_safeguard_dimension_count",
         "service_acceptance_gate_count",
-        "pilot_stage_count"
+        "site_area_sqm"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -948,7 +972,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -979,20 +1004,24 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
+        "accountable_role_coverage_ratio",
+        "implementation_card_count",
         "industry_validation_scenario_count",
-        "service_acceptance_gate_count",
-        "accountable_role_coverage_ratio"
+        "rights_safeguard_dimension_count",
+        "service_acceptance_gate_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1004,7 +1033,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1035,22 +1065,26 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "scenario_node_count",
+        "equity_safeguard_count",
+        "implementation_card_count",
         "industry_validation_scenario_count",
-        "persona_count",
         "non_ai_equivalent_coverage_ratio",
-        "equity_safeguard_count"
+        "persona_count",
+        "rights_safeguard_dimension_count",
+        "scenario_node_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1062,7 +1096,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1093,20 +1128,24 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "public_space_ratio",
         "green_ratio",
-        "pilgrimage_honor_node_count"
+        "implementation_card_count",
+        "pilgrimage_honor_node_count",
+        "public_space_ratio",
+        "rights_safeguard_dimension_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1118,7 +1157,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1149,7 +1189,9 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
+        "implementation_card_count",
         "pilgrimage_honor_node_count",
+        "rights_safeguard_dimension_count",
         "service_acceptance_gate_count"
       ],
       "drawings": [
@@ -1157,11 +1199,13 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1173,7 +1217,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -1204,21 +1249,25 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "service_loop_stage_count",
-        "scenario_node_count",
+        "accountable_role_coverage_ratio",
+        "implementation_card_count",
         "pilot_stage_count",
-        "accountable_role_coverage_ratio"
+        "rights_safeguard_dimension_count",
+        "scenario_node_count",
+        "service_loop_stage_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
         "任务覆盖",
+        "四层协议",
+        "总览地图",
+        "最小试点",
         "核心指标",
-        "验收门",
-        "最小试点"
+        "空间实施卡",
+        "验收门"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1230,7 +1279,8 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-IMPLEMENTATION-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
