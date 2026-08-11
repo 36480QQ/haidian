@@ -247,7 +247,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2e3347a1a872b964f942f878ebb269e288a9e5ea574cb5e23f8a7960214848e5",
+      "sha256": "2f34980b761d66852d45bccb5a3dfd43df2b18ef7a39d939d874e4ae96545ee4",
       "language": "zh"
     },
     {
@@ -371,7 +371,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "78527d0773494841f78d6c9a3df7750300048441f589f49a4aab5eb38b1c6105",
+      "sha256": "f41369aefa5ded24e385fe466ca91a4017d2eadee3cd5d1dcbf6e27e30911462",
       "language": "zh"
     },
     {
@@ -393,14 +393,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "3f19bd4ebf47fd9a622cbfc52ed8f7d6d4091f66b65022455c7d26c3eb527b0e",
+      "sha256": "d9e6e7df1316bb5c16fc13c5545feede85299a3c2aeecc06066fcb402e50f15e",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e7b52ed5f25f4a1957f8e04df0a687db4e969606ab7d6d2bdc1a10aa751c3fce"
+      "sha256": "f395ff3289a3913bb589bd5894055acbc23f1fb7fbbc27c6286e4572ad6bc9c9"
     },
     {
       "path": "sources.json",
@@ -418,7 +418,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "23d0aedbd2f13ea2b715d1cfa9f69659c135724bc7c76fe513a85d2894e6dd5e",
+      "sha256": "376e8fd8f2ec80f35f5a2c0a3fa391dfb4e0cc82439cd8053b331c4c6dc971b7",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -426,12 +426,12 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "a262d7901a98c254189ca139b67931c0969ee0dd6277c9f7c1ad361a488dfd9d",
+      "sha256": "f3a1d82076cb686f2ef1c30d2df08acd4050fb0611c288b0b4a47043e2b1b66c",
       "language": "zh"
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [
       "X1 official spatial authority is blocked.",
       "X2 field journey and interface evidence is blocked.",
@@ -441,6 +441,7 @@
       "X6 independent professional and accessibility validation is blocked.",
       "Current official persisted self-check must run for authenticated GitHub author Golden-Koi."
     ],
-    "data_confidence": "low"
+    "data_confidence": "low",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

@@ -84,7 +84,9 @@ AI 场景在本轮仅是服务与治理假设，不是已部署系统。可讨�
 
 ## 指标体系、面积复算与合规矩阵
 
-本轮只把三个已知状态指标纳入可重复检查：暂定场地面积复算值、绿色比例和公共空间比例。它们均明确标注为非官方、暂定和 QA 用途，单位与来源在 `metrics.json` 中登记；公告约数与几何复算值并列时必须说明口径差异。其余缺少输入的指标不得以零代替未知，也不得由图形美观反推数值。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [depth:metrics_recalculation]
+本轮只把三个已知状态指标纳入可重复检查：暂定场地面积复算值、绿色比例和公共空间比例。它们均明确标注为非官方、暂定和 QA 用途，单位与来源在 `metrics.json` 中登记；公告约数与几何复算值并列时必须说明口径差异。其余缺少输入的指标不得以零代替未知，也不得由图形美观反推数值。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+
+面积复算方法、口径差异和未知项处理另由指标深度条目约束。[depth:metrics_recalculation]
 
 合规矩阵是“已作回应／仍有资料缺口”的索引，不是符合性证书。强制标准条目即使具有文本回应，也不能替代官方、工程或专业判断；设计深度条目的 `complete` 只表示必需章节、图纸与引用已在参与者可控制的提交响应中齐备；每项同时写明 `completion_scope=evidence_bounded_submission_response_only`、`independent_verification=false` 与外部证据状态。强制标准的 `addressed` 只表示已有可追踪文本响应，不表示合规、批准或专业核验；X1–X6 继续 BLOCKED。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:risk_missing_data]
 
@@ -98,6 +100,26 @@ AI 场景在本轮仅是服务与治理假设，不是已部署系统。可讨�
 
 ## 参考资料
 
-机器审查交叉索引如下。它只保证文件内可追踪，不保证事实已经被外部主体确认：官方公告与任务书 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]；城市设计、控规、用地与设计深度参考 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。来源标题、发布者、日期、许可、快照和禁止用途以 `sources.json` 为准。[depth:risk_missing_data]
+机器审查交叉索引如下。它只保证文件内可追踪，不保证事实已经被外部主体确认。官方公告与任务书：[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
-九份可读几何均在本投影中保留：[data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#PROV-RESEARCH-001] [data:geometry/phasing.geojson#PHASE-001]。设计深度索引包括 [depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]。
+城市设计、控规与用地参考：[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+
+设计深度与风险边界：[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:risk_missing_data]
+
+来源标题、发布者、日期、许可、快照和禁止用途以 `sources.json` 为准。
+
+九份可读几何分组保留在本投影中。范围与用地组：[data:geometry/site_boundary.geojson#PROV-SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/land_use.geojson#LU-001]
+
+建成环境与交通组：[data:geometry/buildings.geojson#BLDG-001] [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001]
+
+公共空间、约束与分期组：[data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/constraints.geojson#PROV-RESEARCH-001] [data:geometry/phasing.geojson#PHASE-001]
+
+设计深度索引按主题分组。现状、尺度与总体结构：[depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure]
+
+用地、强度与形态：[depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character]
+
+更新、交通与市政：[depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+
+蓝绿、重点区域与项目清单：[depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list]
+
+分期、指标与风险边界：[depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]

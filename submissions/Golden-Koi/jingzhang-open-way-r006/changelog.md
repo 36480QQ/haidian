@@ -1,4 +1,8 @@
-# R006 CHANGELOG
+# 方案迭代记录
+
+## v1.1.0 - 2026-08-11
+
+### Gated design-volume submission upgrade
 
 All changes are generated from the single R006 authoritative model. External evidence is never promoted to PASS.
 
