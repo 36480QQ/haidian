@@ -1,0 +1,122 @@
+{
+  "self_check_version": "0.1.0",
+  "check_date": "2026-08-10",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "id": "CHK-001",
+      "item": "proposal.md exists and is non-empty",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-002",
+      "item": "proposal.en.md exists as translation",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-003",
+      "item": "proposal_format_version set to '2'",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-004",
+      "item": "bilingual_contract_version set to '1'",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-005",
+      "item": "All 9 geometry/*.geojson files present",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-006",
+      "item": "All 5 assets/figures/*.png present",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-007",
+      "item": "All metadata JSON files present",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-008",
+      "item": "All agent tasks (agent.1 to agent.6) covered",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-009",
+      "item": "10+ scenario cards provided",
+      "status": "PASS",
+      "detail": "12 cards + 3 test/validation"
+    },
+    {
+      "id": "CHK-010",
+      "item": "5+ user personas provided",
+      "status": "PASS",
+      "detail": "5 personas"
+    },
+    {
+      "id": "CHK-011",
+      "item": "3+ AI landmarks provided",
+      "status": "PASS",
+      "detail": "3 landmarks"
+    },
+    {
+      "id": "CHK-012",
+      "item": "5-8 global AI ecosystem cases",
+      "status": "PASS",
+      "detail": "7 cases"
+    },
+    {
+      "id": "CHK-013",
+      "item": "Provisional boundaries properly labeled",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-014",
+      "item": "All figures use local paths only",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-015",
+      "item": "No official approval claims made",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-016",
+      "item": "report/proposal.html exists",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-017",
+      "item": "visual/index.html exists",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-018",
+      "item": "drawings PDFs present",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-019",
+      "item": "report/copyright_statement.md exists",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-020",
+      "item": "compliance_matrix.json covers all tasks",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-021",
+      "item": "standard_matrix.json covers mandatory standards",
+      "status": "PASS"
+    },
+    {
+      "id": "CHK-022",
+      "item": "design_depth_matrix.json covers required depths",
+      "status": "PASS"
+    }
+  ],
+  "notes": "All provisional geometry items will need recalculation when official boundaries become available."
+}
