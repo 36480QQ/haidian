@@ -1,0 +1,169 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "project(EPSG:4326 to EPSG:4548); polygon_area",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional organizer geometry; replace and recalculate when official polygon arrives."
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 531702.71,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(projected polygon areas in EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual design footprints, not existing survey or approved building envelopes."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.132494,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/site_boundary.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "formula": "green_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "Uses provisional geometry for design comparison only."
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.053527,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/site_boundary.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "Access and legal publicness require professional confirmation."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count features where layer=KEY_AREA",
+      "confidence": "high",
+      "assumptions": [
+        "Three named areas are required by the announcement; polygons remain provisional."
+      ]
+    },
+    "green_area_sqm": {
+      "status": "known",
+      "value": 1512134.0380000002,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(projected green-space polygon areas in EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Design proposal areas; flood and ecology checks remain pending."
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 610895.55,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(projected public-space polygon areas in EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "Conceptual public windows; ownership and access agreements pending."
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count bilingual scenario cards in proposal",
+      "confidence": "high",
+      "assumptions": [
+        "Cards are concepts, not deployment approvals."
+      ]
+    },
+    "industry_validation_scenario_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count scenario cards labeled industry validation",
+      "confidence": "high",
+      "assumptions": [
+        "Bounded tests require professional safety, rights and steward review."
+      ]
+    },
+    "eight_ledger_baseline": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "data/source_registry.json"
+      ],
+      "formula": "measure seven cost ledgers and one civic-return ledger against a named non-AI comparator",
+      "confidence": "unknown",
+      "assumptions": [
+        "No local metering, workforce, procurement or public-return baseline was supplied."
+      ],
+      "reason": "Local baselines and measurement owners are not yet available."
+    },
+    "far_height_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "none",
+      "source_files": [
+        "brief/site-package/missing-data.md"
+      ],
+      "formula": "official control schedule required before any intensity claim",
+      "confidence": "unknown",
+      "assumptions": [
+        "Do not infer statutory controls from provisional geometry."
+      ],
+      "reason": "Official regulatory controls, road redlines and survey data are missing."
+    }
+  }
+}
