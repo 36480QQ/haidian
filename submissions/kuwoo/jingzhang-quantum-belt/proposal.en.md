@@ -42,7 +42,11 @@ The three levels transmit downward: the coordinated research level proposes the 
 
 Core judgment: the Haidian AI Innovation Belt should not merely stack classical compute; it should position **quantum information as the strategic anchor of next-generation compute**, forming a "quantum–classical hybrid" two-layer innovation system together with classical AI compute, responding to the "full-stack AI self-reliance system" and "global voice in AI governance" functions [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-**Naming and visual identity (agent.1).** Primary name: "JINGZHANG QUANTUM BELT" (京张量带). The Chinese character "量" carries a double meaning — surveying (Jeme Tien Yow's surveying spirit for the railway) and quantum; the English name retains the JINGZHANG brand with QUANTUM BELT expressing the quantum innovation belt. The naming system follows the "three areas and two wings": Zhongzhiyuan becomes **Superposition Yard 叠加场** (full-stack self-reliance and quantum compute experiments superimposed in one space); Beijing AI Origin Community becomes **Entangled Community 纠缠社区** (universities, enterprises, and talents physically separated yet logically entangled); Dazhongsi becomes **Tunneling Quarter 隧穿坊** (AI-native new businesses tunneling through the traditional commercial barrier); the Zhongguancun technology service wing is the **Coherence Wing 相干翼** (coherent allocation of factors), and the Xiaoyuehe scenario-empowerment wing is the **Observation Wing 观测翼** (scenario as measurement, public as observer). Logo direction: a fusion of the herringbone rail and the qubit superposition dot; steel gray, quantum blue-violet, and Zhongguancun gold; the wayfinding system uses a "dot-connection" qubit language [depth:brand_identity_system].
+**Naming and visual identity (agent.1).** Primary name: "JINGZHANG QUANTUM BELT" (京张量带). The Chinese character "量" carries a double meaning — surveying (Jeme Tien Yow's surveying spirit for the railway) and quantum; the English name retains the JINGZHANG brand with QUANTUM BELT expressing the quantum innovation belt. The naming system follows the "three areas and two wings": Zhongzhiyuan becomes **Superposition Yard 叠加场** (full-stack self-reliance and quantum compute experiments superimposed in one space); Beijing AI Origin Community becomes **Entangled Community 纠缠社区** (universities, enterprises, and talents physically separated yet logically entangled); Dazhongsi becomes **Tunneling Quarter 隧穿坊** (AI-native new businesses tunneling through the traditional commercial barrier); the Zhongguancun technology service wing is the **Coherence Wing 相干翼** (coherent allocation of factors), and the Xiaoyuehe scenario-empowerment wing is the **Observation Wing 观测翼** (scenario as measurement, public as observer).
+
+The logo concept (below) uses Jeme Tien Yow's herringbone alignment as its skeleton (gold steel-rail strokes) overlaid with a qubit superposition-dot orbit (quantum blue-violet/cyan), forming the "from steel rail to qubit" visual symbol; sans-serif geometric typography with the standard steel gray, quantum blue-violet, and Zhongguancun gold palette. The wayfinding system uses a "dot-connection" qubit language, with station and node markers as superposition-state symbols [depth:brand_identity_system].
+
+![JINGZHANG QUANTUM BELT logo concept](assets/figures/logo.png)
 
 **Quantum × AI industrial ecosystem (agent.2).** Three-layer judgment: the foundation layer comprises universities and new R&D institutes (public resources such as Tsinghua quantum research and BAQIS); the platform layer comprises quantum cloud compute, open-source communities, and public testbeds; the application layer focuses on AI×quantum fusion scenarios (quantum secure communication, quantum random numbers, quantum algorithms combined with AI). Mechanism distillation from 8 global innovation ecosystem cases [source:BAQIS-2026] [source:AGENT-TASKBOOK]:
 
@@ -101,22 +105,22 @@ Positioning: **AI-native consumption and data-factor international exchange dist
 
 **AI scenario cards (12, including 3 industry test/validation scenarios)** [source:AGENT-TASKBOOK] [data:geometry/public_space.geojson#PUBLIC-001]:
 
-| No. | Scenario card | Type | Spatial carrier | Design note | Human-review boundary |
-| --- | --- | --- | --- | --- | --- |
-| 01 | Quantum Hardware Testbed | **Test/validation T1** | Superposition Yard | Open quantum hardware/cloud test venue for research and industry, aligned with the Quafu Cup mechanism | Test qualification review; traceable, reviewable results |
-| 02 | Quantum Secure Public Channel | **Test/validation T2** | Observation Wing/government node | Prototype pilot of quantum direct communication for sensitive public services | Pilot scope and data grading require authority confirmation |
-| 03 | QRNG Public Benchmark Station | **Test/validation T3** | Observation Plaza | City-level quantum random number generator as public benchmark for lotteries and draws | Open audit process; no personal data |
-| 04 | Superposition Platform | Public space | North end of Coherence Timeline | Mixed space superposing rail heritage, AI experience, public life | Heritage constraints first |
-| 05 | Entangled Lab | Industry collaboration | Entangled Community | University–enterprise joint lab open days and matchmaking | Research confidentiality |
-| 06 | Tunneling Commercial Street | AI-native consumption | Tunneling Quarter | Smart terminals, content consumption, unmanned retail | Privacy and minor protection |
-| 07 | Observation Plaza | Participatory governance | Entangled Community | Public agenda display, voting, feedback "measurement" node | Transparent voting rules; anti-rigging |
-| 08 | Quantum Science Museum | Science education | Entangled Community | Public education on quantum computing, communication, measurement | Scientific content review |
-| 09 | Coherence Timeline Trail | Cultural experience | Jing-Zhang Heritage Park | Cultural trail with 1909/2013/2026 three-line coherent narrative | Historical fact review |
-| 10 | Open Source Hall | Developer community | Entangled Community | Release, contribution display, mini roadshows | Copyright and license review |
-| 11 | AI Wayfinding | AI+transport | Whole slow-traffic network | Explainable signage and low-intrusion sensing for gaps and accessibility | No personal trajectory collection |
-| 12 | Data Factor Lounge | Data factor | Tunneling Quarter | Compliant, authorized, auditable data-factor circulation interface | Compliance review and audit |
+| No. | Scenario card | Type | Spatial carrier | Target users | Suggested operator | Human-review boundary |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 | Quantum Hardware Testbed | **Test/validation T1** | Superposition Yard | Research institutes, quantum companies, university teams | Quantum institute/industry platform joint operation | Test qualification review; traceable, reviewable results |
+| 02 | Quantum Secure Public Channel | **Test/validation T2** | Observation Wing/government node | Government agencies, public service bodies | Authority-piloted delegation | Pilot scope and data grading require authority confirmation |
+| 03 | QRNG Public Benchmark Station | **Test/validation T3** | Observation Plaza | Public, notarization bodies, social organizations | Public utility operator | Open audit process; no personal data |
+| 04 | Superposition Platform | Public space | North end of Coherence Timeline | All citizens and visitors | Park management body | Heritage constraints first |
+| 05 | Entangled Lab | Industry collaboration | Entangled Community | University-enterprise joint teams | University-enterprise co-building | Research confidentiality |
+| 06 | Tunneling Commercial Street | AI-native consumption | Tunneling Quarter | Consumers, startup teams | Commercial operator | Privacy and minor protection |
+| 07 | Observation Plaza | Participatory governance | Entangled Community | Citizens, community organizations | Sub-district/community operation | Transparent voting rules; anti-rigging |
+| 08 | Quantum Science Museum | Science education | Entangled Community | Youth, citizens, study groups | Science venue operator | Scientific content review |
+| 09 | Coherence Timeline Trail | Cultural experience | Jing-Zhang Heritage Park | Citizens, visitors, developers | Park management body | Historical fact review |
+| 10 | Open Source Hall | Developer community | Entangled Community | Developers, open-source community | Community foundation/platform | Copyright and license review |
+| 11 | AI Wayfinding | AI+transport | Whole slow-traffic network | Pedestrians, cyclists, accessibility users | Transport authority | No personal trajectory collection |
+| 12 | Data Factor Lounge | Data factor | Tunneling Quarter | Data-service enterprises, compliance bodies | Professional operator | Compliance review and audit |
 
-Scenario–space–operation mapping, privacy boundaries, human-review mechanisms, and operating entities are fully registered in `compliance_matrix.json`; the in-text tables are readable summaries [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:ai_scenario_operation].
+Scenario–space–operation mapping, data sources, privacy boundaries, and visualization layers are fully registered in `compliance_matrix.json`; the in-text table is a readable summary [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:ai_scenario_operation].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
