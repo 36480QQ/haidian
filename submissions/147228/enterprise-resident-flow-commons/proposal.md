@@ -55,6 +55,18 @@ iteration: "v2.0-population-scale-screen"
 
 这张图把“谁来负责”拆成可检查的字段，也保留拒收时的退出动作。它和资源护照、资产关单、服务连续性屏共用 `UNKNOWN`、`not_authorized_not_run` 与现场证据边界，不把协议 PASS 写成运营成绩。
 
+## 交通失败治理与申诉回写屏
+
+责任有人接住，还不等于一次故障就能被“关掉”。这轮把轨道/公交中断、无障碍断裂、路缘与骑行冲突、企业接驳失约、物流维护失效和空中实验地面闸门拒绝拆成六类失败。每类都要写清受影响群体、观察角色、替代路线和停止条件；不能拿总平均覆盖某一组人的断点。
+
+治理屏再把记录拆成五条轴：服务状态、群体影响、证据置信度、人工决定和发布状态。首版记录可以是 `UNKNOWN`，后续纠错必须追加新版本并保留 `prior_record_id`；受影响群体可以提交聚合申诉，申诉先暂停发布，不能删除原记录；退役还必须留下理由、人工决定和继任服务或地面回退。这里借鉴了近期仓库讨论里对失败治理、三类回写和可撤回版本的要求，但做了交通接口的具体化。
+
+当前没有现场事故、真实申诉、纠错、退役发布、现场回执或运营授权。空中候选继续被挡在运营与事故分母之外，个人轨迹也不进入记录。该屏证明字段、追加规则和负例能离线复核，不证明服务发生、居民申诉完成、事故处置时间或公众满意度 [data:visual/assets/mobility-failure-governance.json] [data:visual/assets/mobility-failure-governance-readout.json] [data:visual/assets/run-mobility-failure-governance.js]。
+
+![交通失败治理与申诉回写屏](assets/figures/mobility-failure-governance-board.svg)
+
+图上的 `DRAFT → REVIEW → STOP → RECOVERY → RETIRED` 是记录和发布的状态链，不是现实运营流程的承诺。真正进入试点前，需要有日期的事件、责任角色、群体影响观察、人工决定、替代服务和公众告知；缺一项就停在未知或停止。
+
 ## 设计依据与资料清单
 
 征集任务要求覆盖三层空间研究、三处重点区、AI+交通与产业生态，并交付可检查的图层、指标、图纸和视觉页 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。

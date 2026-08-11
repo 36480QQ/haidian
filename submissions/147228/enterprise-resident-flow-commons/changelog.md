@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.19 - 2026-08-12
+
+- Added a bilingual mobility failure-governance and appeal-writeback screen for six transport failure classes across the existing eight interfaces.
+- Added five governance axes, four append-only writeback carriers, prior-version/correction rules, aggregate appeal pause, retirement successor-or-ground-fallback rule and deterministic negative fixtures.
+- Kept field incidents, appeals, corrections, retired releases, field receipts and operating authorizations at zero; personal traces and air operations remain excluded.
+
 ## v1.18 - 2026-08-12
 
 - Added a bilingual mobility responsibility-transfer screen for eight existing interfaces covering rail, bus, cycling, accessibility, curb service, enterprise shuttle, logistics and the ground gate for future air mobility.

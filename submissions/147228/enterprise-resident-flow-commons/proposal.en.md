@@ -55,6 +55,18 @@ All eight interfaces currently have zero field receipts, zero accepted transfers
 
 The board turns “who carries the burden” into inspectable fields and preserves the refusal action. It shares `UNKNOWN`, `not_authorized_not_run` and field-evidence boundaries with the resource passport, asset closeout and service-continuity screens; a protocol PASS is not an operating result.
 
+## Mobility failure governance and appeal writeback
+
+Having a receiver does not mean that a failure can be closed by saying “fixed.” This increment separates six transport failures: metro or bus interruption, accessible-route discontinuity, curb and cycle conflict, enterprise shuttle no-show, logistics and maintenance gate failure, and refusal at the ground gate for an air experiment. Each class names affected groups, an observer role, a fallback and a stop condition; an overall average cannot hide one group’s broken route.
+
+The governance board uses five axes: service state, group impact, evidence confidence, human decision and release state. A first record may be `UNKNOWN`; every correction appends a new version and keeps `prior_record_id`. Affected groups may submit an aggregate appeal; an appeal pauses release rather than deleting the old record. Retirement keeps a reason, human decision and a successor service or ground fallback. The structure responds to the repository discussion about failure governance, multi-carrier writeback and reversible versions, while making the carriers specific to mobility interfaces.
+
+There are currently no field incidents, real appeals, corrections, retired releases, field receipts or operating authorizations. The air candidate remains outside operational and incident denominators, and personal traces are not part of the record. The screen proves that fields, append-only rules and negative fixtures can be reviewed offline; it does not prove service delivery, completed resident appeals, incident response time or public satisfaction [data:visual/assets/mobility-failure-governance.json] [data:visual/assets/mobility-failure-governance-readout.json] [data:visual/assets/run-mobility-failure-governance.js].
+
+![Mobility failure governance and appeal writeback](assets/figures/mobility-failure-governance-board.en.svg)
+
+The `DRAFT → REVIEW → STOP → RECOVERY → RETIRED` chain is a record and release boundary, not a promise about real operations. Before a pilot, dated events, accountable roles, group-impact observation, human decisions, fallback service and public notice are required; missing evidence keeps the state at unknown or stopped.
+
 ## Design Basis and Source List
 
 The open-call requirements cover three spatial scales, three key areas, AI and mobility scenarios, an innovation ecosystem and reviewable drawings and data layers [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The package uses the public provisional site package but replaces the narrative, road attributes, metrics, evidence register and visual boards with an enterprise–resident mobility focus. Both the site and key-area polygons declare `official_boundary=false` and `geometry_role=provisional_constraint` [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001].
