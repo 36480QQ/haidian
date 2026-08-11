@@ -13,11 +13,13 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 # Three Times, One Line — Jing-Zhang Civic AI Commons
 
+![Concept identity mark for Three Times, One Line: switchback chevron, closed rail loop, and three time sleepers](assets/identity/logo-mark.png)
+
 > Use the century-old Jing-Zhang corridor as a civic framework in which research, industry, communities, and culture define problems, test technology, review outcomes, and share value, turning AI from a closed-campus supply into a common urban capability.
 
 ## Design Basis and Source List
 
-The proposal is grounded in the official prequalification announcement, the agent taskbook, the public site package, and local snapshots of mandatory professional standards. Confirmed public scope figures are a 43.6 km² Coordinated Research Area, an approximately 11.4 km² Overall Design Area, and 368.4 ha across three key areas: Zhongzhiyuan 192.1 ha, Beijing AI Origin Community 104.3 ha, and Dazhongsi 72.0 ha. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+The proposal is grounded in the official prequalification announcement, the agent taskbook, the public site package, and local snapshots of mandatory professional standards. Confirmed public scope figures are **official announced approximate references**: a 43.6 km² Coordinated Research Area, an approximately 11.4 km² Overall Design Area, and 368.4 ha across three key areas—Zhongzhiyuan 192.1 ha, Beijing AI Origin Community 104.3 ha, and Dazhongsi 72.0 ha. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 Exact official polygons, road redlines, parcels, buildings, ownership, municipal systems, and regulatory controls are not fully public. This package uses the repository's registered provisional geometry only for conceptual structure, visualisation, and review discussion. Routes, nodes, land-use partitions, and phasing are not statutory plans or implementation commitments and must be recalculated when official data becomes available. [source:BOUNDARY-SOURCE] [source:SOURCE-REGISTRY] [depth:risk_missing_data]
 
@@ -30,7 +32,7 @@ Six external cases are drawn only from official institutional or government page
 The **43.6 km² Coordinated Research Area** frames the innovation ecosystem and regional coordination; the **11.4 km² Overall Design Area** frames spatial structure, renewal, mobility, infrastructure, blue-green systems, and character; the **368.4 ha Key-Area Detailed Design Area** frames function, space, scenarios, and implementation in the three districts. All levels share one system: One Line, Three Commons, six types of Commons Stations, and a two-way loop. [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework] [metric:overall_design_area_sqm]
 
 - **One Line**: a conceptual Civic Intelligence Spine composed of Jing-Zhang heritage, the heritage park, walking and cycling links, open ground floors, wayfinding, and operation. Continuity does not mean continuous construction.
-- **Three Commons**: the AI Origin Community is the Origin, Zhongzhiyuan is the Prototype Commons, and Dazhongsi is the Civic Review interface. These are leading roles rather than exclusive land-use zones.
+- **Three Commons**: the AI Origin Community is the Origin, Zhongzhiyuan is the Prototype Commons, and Dazhongsi is the Share / Review interface. These are leading roles rather than exclusive land-use zones.
 - **Six Commons Stations**: learning, mobility, care, climate, production, and culture/deliberation. A station combines space, service, and operation and can occupy an existing building, courtyard, street corner, or green space.
 - **Two-way loop**: technology moves from research to prototype, bounded trial, independent review, and adoption or exit; needs move from civic problems to open calls, co-definition, research response, and use feedback.
 
@@ -52,7 +54,7 @@ The proposal treats a **validated urban scenario**, rather than a company or tow
 
 Station F and 22@ show how heritage can become innovation infrastructure while warning against displacement. Kendall Square and one-north show how research anchors, affordable modular space, and innovation-space quotas can protect early-stage teams. Takanawa and Smart Kalasatama show that urban testbeds require data governance, a long-lived intermediary, and an explicit path from pilot to operation. [source:CASE-STATION-F] [source:CASE-22BARCELONA] [source:CASE-KENDALL]
 
-Five functions are proposed: research and open-source collaboration; testing, validation, and safety governance; technology transfer and enterprise services; talent life and public services; and cultural communication and international events. Fig.01 maps land, space, industry, funding, talent, compute, data, and scenarios as auditable inputs passing through Origin, Prototype, and Civic Review before results return to public life as adopt, iterate, or exit decisions; it does not claim secured funding, projects, or institutions. [source:CASE-ONE-NORTH] [source:CASE-TAKANAWA] [depth:overall_spatial_structure]
+Five functions are proposed: research and open-source collaboration; testing, validation, and safety governance; technology transfer and enterprise services; talent life and public services; and cultural communication and international events. Fig.01 maps land, space, industry, funding, talent, compute, data, and scenarios as auditable inputs passing through Origin, Prototype, and Share / Review before results return to public life as adopt, iterate, or exit decisions; it does not claim secured funding, projects, or institutions. [source:CASE-ONE-NORTH] [source:CASE-TAKANAWA] [depth:overall_spatial_structure]
 
 **Coordination with the official “Two Zones and One Belt” framework uses an interface ledger rather than invented boundaries.** Until its exact boundaries, authorities, and project list are supplied, the proposal defines only four auditable interfaces: university and research outputs entering Origin through open-source and evaluation; enterprise needs entering Zhongzhiyuan through validation; mature scenarios entering Dazhongsi and Xiaoyue River through civic review; and railway heritage, park, and cultural resources entering bilingual publication through content review. Each interface records inputs, accountable actor type, evidence, adoption or rejection reasons, and exit conditions. It does not imply an established inter-district authority or investment commitment. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:three_level_scope_framework]
 
@@ -74,13 +76,13 @@ The facility system has four levels: belt-wide shared evaluation and data govern
 
 Facilities use a three-level standard: **public base, shared industry services, and scenario-specific controls**. The public base includes continuous accessibility, shade, lighting, wayfinding, emergency support, and staffed service. Shared services include compute interfaces, model evaluation, compliance advice, releases, and talent support. Scenario controls include bounded test areas, emergency stops, separation, data expiry, and exit facilities. Public-base functions cluster at transit and civic anchors; the Origin Community hosts open-source and evaluation; Zhongzhiyuan hosts observable testing; and Dazhongsi hosts demonstration, review, and transfer. Capacity and engineering locations remain subject to official data and specialist studies. [source:OFFICIAL-ANNOUNCEMENT] [depth:municipal_new_infrastructure]
 
-The Heritage Park first receives a **break ledger** covering its south end, north end, ring-road crossings, station quadrants, and the east-west Xiaoyue River connection. A conceptual link may become a walking or cycling project only after survey, ownership, traffic, and accessibility review. Fig.04 therefore shows breaks, stitching links, the A—A′ Heritage Park section, and the B—B′ Xiaoyue River section as a review sequence; its three civic anchors do not claim approved landscape-project locations. [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/roads.geojson#ROAD-002] [depth:traffic_rail_slow_parking]
+The Beijing Municipal Forestry and Parks Bureau announced completion of the Heritage Park Phase II supporting works in July 2026, including a north–south connected and east–west linked fishbone walking network. The proposal therefore treats corridor continuity as an existing-condition baseline rather than an unbuilt vision. Its **condition-review ledger** checks the south and north ends, ring-road interfaces, station quadrants, and the Xiaoyue River connection for local safety, accessibility, ownership, and survey conditions before any supplemental link is proposed. Fig.04 uses the A—A′ and B—B′ sections and review points as a verification sequence, not approved landscape-project locations. [source:JINGZHANG-PARK-PHASE2] [data:geometry/roads.geojson#ROAD-003] [depth:traffic_rail_slow_parking]
 
 ## Detailed Design of Key Areas
 
 The three key areas use one comparable anatomy: a civic anchor, a portfolio of scenarios, blue-green walking links, and operating gates. [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_key_area_detailed_design] [metric:key_area_count]
 
-Fig.03 makes the correspondence explicit through one provisional corridor locator and three enlarged conceptual studies: **01 Zhongzhiyuan=Prototype, 02 Origin Community=Origin, 03 Dazhongsi=Civic Review**. Each study distinguishes a civic anchor, primary walking link, blue-green edge, existing-space-first area, and bounded test or review zone. These are spatial-organisation diagrams, not official parcel renewal, building-scale, demolish-retain, or road-redline plans. [data:geometry/key_areas.geojson#PROV-KEY-001] [source:SITE-PACKAGE]
+Fig.03 makes the correspondence explicit through one provisional corridor locator and three enlarged conceptual studies: **01 Zhongzhiyuan=Prototype, 02 Origin Community=Origin, 03 Dazhongsi=Share / Review**. Each study distinguishes a civic anchor, primary walking link, blue-green edge, existing-space-first area, and bounded test or review zone. These are spatial-organisation diagrams, not official parcel renewal, building-scale, demolish-retain, or road-redline plans. [data:geometry/key_areas.geojson#PROV-KEY-001] [source:SITE-PACKAGE]
 
 ### Zhongzhiyuan AI Independent Innovation Acceleration Area: Prototype
 
@@ -94,7 +96,7 @@ Open Source Court is proposed as an interface among university research, open-so
 
 Its concept plan links campus interfaces, Open Source Court, a transfer promenade, and a daily-service loop. Walking connections toward Wudaokou and Qinghuadongluxikou come first; open ground floors connect display, evaluation, mentors, and talent services, while controlled data environments sit inside. Before ownership, fire, and traffic evidence is supplied, interventions remain low-disturbance and reversible. [depth:three_key_area_detailed_design]
 
-### Dazhongsi AI Industry Cluster: Civic Review
+### Dazhongsi AI Industry Cluster: Share / Review
 
 Three Times Forum is proposed for civic review, cultural exhibitions, international demonstrations, and scenario transfer. Around the station and its four quadrants, priority is given to walking, wayfinding, public commercial interfaces, and event operations. Heritage-sensitive locations use existing-space activation or reversible intervention. [data:geometry/key_areas.geojson#PROV-KEY-003] [source:CASE-22BARCELONA]
 
@@ -106,6 +108,8 @@ Its concept plan combines a four-quadrant pedestrian cross, Three Times Forum, p
 
 Nine key personas are an older person living alone; a blind or wheelchair commuter; a small merchant; a school-age learner; a startup engineer; a frontline maintenance or property worker; an emergency responder; a data-governance officer; and an everyday visitor or runner. Every scenario specifies place, beneficiary, spatial requirements, operator type, data boundary, success signal, and rollback. [source:AGENT-TASKBOOK] [depth:risk_missing_data]
 
+The six `scenarios` slugs in the front matter are taxonomy entries **defined by this submission**; the twelve rows below are place-, user-, and operation-specific scenario instances, four of which are industrial-validation scenarios. The two levels answer different questions—task category versus where, for whom, and under what operating boundary—and their counts are not interchangeable. [source:AGENT-TASKBOOK] [depth:risk_missing_data]
+
 | # | Scenario and place | Type | Space and operation | Data boundary, success, and rollback |
 | --- | --- | --- | --- | --- |
 | 01 | Edge eldercare alert; neighbourhood | Public value | Voluntary enrolment, edge devices, community terminal | Raw media stays local; track response and false alerts; one-step opt-out and human follow-up |
@@ -114,7 +118,7 @@ Nine key personas are an older person living alone; a blind or wheelchair commut
 | 04 | Heritage interpretation and inspection; heritage park | Public value | Traceable archive, AR triggers, approved inspection routes | No facial recognition; track early fault discovery and learning; peak-hour flight ban and expert review |
 | 05 | Water quality and flood sensing; Xiaoyue River | Public value | Water and level sensors with graded alerts | Environmental data only; track warning lead time; paired calibration and human inspection |
 | 06 | Embodied-robot open test commons; Zhongzhiyuan | **Industrial validation** | Bounded floors and hours, mixed-traffic signs, emergency stop, insurance | On-site retention and deletion; track safety tests and conflicts; immediate stop authority |
-| 07 | Drone inspection sandbox; park and river | **Industrial validation** | Isolated flight corridor, observation points, temporary procedure | Target-limited and masked imagery; track hazardous-work substitution; revert to simulation if contested |
+| 07 | Drone inspection sandbox; desktop simulation or approved closed test site | **Industrial validation** | Desktop simulation by default; temporary isolated flights and ground observation only after airspace, public-security/civil-aviation, heritage, and park-management approvals | Target-limited and masked imagery; track hazardous-work substitution; stop without every permit or when contested; no routine operation over the heritage park or waterfront |
 | 08 | Domestic edge-device validation bed; Origin | **Industrial validation** | Open lab, anonymised mirrored loads, interoperability benchmark | Vendor isolation; track test cycle and report use; graded disclosure and appeal |
 | 09 | Model safety and compliance evaluation; Origin | **Industrial validation** | Enclosed compute, red-team tools, compliance knowledge base | No model-weight retention, expiry deletion; track remediation closure; quarterly benchmark update |
 | 10 | Transit crowd forecast and tidal guidance; Dazhongsi | Public value | Anonymous counts, variable signs, staffed guidance | No identity links, short raw retention; revert to staffed response if prediction fails |
@@ -125,7 +129,7 @@ The four industrial-validation scenarios gate entry into public-value pilots. Te
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The conceptual land-use structure includes AI research and innovation, parks and open space, industry and commerce, and community support. The topology closes within the provisional submitted boundary. Its purpose is to test coexistence, not to establish statutory land use. [data:geometry/land_use.geojson#LU-001] [metric:site_area_sqm] [depth:land_use_layout]
+The conceptual land-use structure includes AI research and innovation, parks and open space, use-undetermined reserve land, and community support. LU-003 uses code 16 because its formal use is not yet established; industry and commercial services remain programme directions for later control-plan and needs review. The topology closes within the provisional boundary to test coexistence, not to establish statutory land use. [data:geometry/land_use.geojson#LU-001] [metric:site_area_sqm] [depth:land_use_layout]
 
 Retain-renovate-demolish decisions require three steps: confirm ownership, structure, heritage, and fire conditions; compare retention, adaptation, and renewal by public value, carbon, and fit; then establish parcel conclusions. The building layer is a conceptual demonstration footprint only. Total floor area, intensity, and height await official data. [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [depth:retain_renovate_demolish]
 
@@ -135,7 +139,7 @@ Station F, Kendall Square, and one-north support reusing large-span heritage spa
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-Mobility follows "walk first, connect second, digitise third": repair walking and cycling breaks along the heritage park and Xiaoyue River; improve four-quadrant station access; establish accessible routes and cycle parking; then add anonymous counts, explainable navigation, and event guidance. Alignments remain subject to road redlines, traffic studies, and surveys. [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]
+Mobility follows "walk first, connect second, digitise third": use the Phase II north–south and east–west walking network as the baseline; review the Heritage Park–Xiaoyue River interface and four-quadrant station access; then supplement accessible routes and cycle parking before adding anonymous counts, explainable navigation, and event guidance. Supplemental alignments remain subject to road redlines, traffic studies, and surveys. [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-003] [depth:traffic_rail_slow_parking]
 
 New Infrastructure adopts a distributed "telegraph-pole rhythm": edge compute, data interfaces, energy, and environmental sensing appear only behind a defined use case and accountable operator. Every facility registers purpose, data boundary, responsibility, human intervention, and expiry. No lawful data, operator, or exit means no start. [source:CASE-TAKANAWA] [depth:municipal_new_infrastructure]
 
@@ -149,7 +153,7 @@ Public services prioritise ageing and children, accessibility, talent life, smal
 
 The heritage park and Xiaoyue River form a public blue-green base connecting the three key areas through walking loops, cycling links, shade, rain gardens, cooling stations, and civic anchors. A break must be documented before a stitching proposal is made. Sections are conceptual diagrams, not approved engineering dimensions. [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_public_space]
 
-Spatial review identifies three break types for field survey: continuity at the north and south ends of the heritage park, safe crossings around ring-road structures, and east–west access from universities, campuses, and communities to the park and Xiaoyue River. The landmark sequence is Visible Failure Deck in the north, Open Contribution Wall in the middle, and Three Times Civic Bell in the south. Fig.01 uses schematic “field location to verify” markers for Qinghuayuan Station, Qinghe, Xiaoyue River, and the Beijing Film Academy cultural interface so each enters a verified-history–spatial-marker–bilingual-content–public-correction workflow; generated graphics never replace heritage survey. [source:OFFICIAL-ANNOUNCEMENT] [depth:traffic_rail_slow_parking]
+Spatial review identifies three interface types for field verification on the existing connected network: actual continuity quality at the north and south ends, safe and accessible conditions around ring-road structures, and east–west access from universities, campuses, and communities to the park and Xiaoyue River. The landmark sequence is Visible Failure Deck in the north, Open Contribution Wall in the middle, and Three Times Civic Bell in the south. Fig.01 uses schematic “field location to verify” markers for Qinghuayuan Station, Qinghe, Xiaoyue River, and the Beijing Film Academy cultural interface so each enters a verified-history–spatial-marker–bilingual-content–public-correction workflow; generated graphics never replace heritage survey. [source:JINGZHANG-PARK-PHASE2] [depth:traffic_rail_slow_parking]
 
 Landmarks are three civic anchors plus distributed "Centennial Marks", not isolated megastructures. Seating, wayfinding, shade, and information record verified history, the problem under test, data boundaries, accountability, feedback, and project stage. The landmark becomes readable civic governance. [source:AGENT-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
@@ -213,7 +217,7 @@ Conceptual performance directions include at least twelve initial scenarios; a n
 
 ## Risk, Copyright, and Compliance
 
-Primary controls are: do not locate precisely without exact geometry; use only verified heritage evidence; do not place AI infrastructure ahead of basic public improvements; minimise data and avoid identity by default; share tools and evaluation to prevent duplication; do not deploy without operating funds; retain non-digital access; and assess rent, displacement, and local-business impacts. [source:SOURCE-REGISTRY] [depth:risk_missing_data]
+Primary controls are: do not locate precisely without exact geometry; use only verified heritage evidence; do not place AI infrastructure ahead of basic public improvements; minimise data and avoid identity by default; share tools and evaluation to prevent duplication; do not deploy without operating funds; retain non-digital access; assess rent, displacement, and local-business impacts; and assess map-review or approval-number obligations before publishing map-like graphics. [source:SOURCE-REGISTRY] [depth:risk_missing_data]
 
 Immediate suspension triggers include a major safety, privacy, or rights event; unlawful or undeletable data; two consecutive review cycles below core goals; construction without an operator or maintenance funds; or a material partner conflict or compliance failure. Exit closes accounts and interfaces, deletes or returns data, disposes of assets, migrates users, and archives learning. [source:CASE-KALASATAMA] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
