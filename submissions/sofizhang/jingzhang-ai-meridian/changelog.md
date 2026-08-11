@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-11
+
+- **主名称更名 / Renamed.** 「京张智脉 · The Jing-Zhang AI Meridian」→「**零公里以北 · NORTH OF ZERO**」：命名锚定京张铁路历史零公里标（西直门·北京北）——本带正是零公里以北的 9.7 公里；『零』兼指里程原点、从零到一的自主创新原点与"AI以人为原点"的价值原点。改名同步贯通正文（中英）、几何要素命名（零北绿轴/零北绿道）、五张图、A3/A0、离线看板与品牌章；K0-K9 站点系统、人字形双轨 Logo 方向不变，目录 slug 保持 jingzhang-ai-meridian 以维持提交历史连续。避免与其他参赛方案的名称元素重合。
+- Renamed to NORTH OF ZERO, anchored on the railway's historic kilometre-zero marker at the corridor's south end; all bilingual artifacts regenerated; K0-K9 stations and the herringbone logo direction unchanged; directory slug intentionally retained.
+
 ## v1.3 - 2026-08-10
 
 - **字体与可读性 / Typography.** 全套图纸与 PDF 换用思源黑体（Noto Sans CJK SC，含真粗体）与 Noto Sans（SIL OFL 1.1），全局字号提升约 15%，标题层级更清晰；版权与来源登记同步更新。
