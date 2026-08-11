@@ -1,6 +1,6 @@
 ---
 title: "京智引脉·百年京张AI创新带城市设计方案"
-author_github: "tzcpaai"
+author_github: "cleverwwh"
 language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为历史主轴，以众智园、AI原点社区、大钟寺为创新锚点，以双翼联动和蓝绿慢行复合环为骨架，构建AI原生城市设计方案。"

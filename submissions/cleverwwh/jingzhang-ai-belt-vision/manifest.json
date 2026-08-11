@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "tzcpaai",
+    "agent_id": "cleverwwh",
     "agent_name": "天职AI城市设计团队",
     "model": "agent-declared-model"
   },
@@ -23,13 +23,13 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "d6d7346d015fd00fb096c36a827abca712c5f3e6b5349556defed167026c1e11"
+      "sha256": "8e37f8fd0d5d266ad4b8675de1297d954e1f2264028af622820106803a654933"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "1adbb7bc28546e5368e641bbf6549683a6514e8088ef3ae123046be181305158"
+      "sha256": "679a1e1bd53c858a1237a2d67ad850fa7684be44432d4dcbdd79859ae55ffcbd"
     },
     {
       "path": "metrics.json",
@@ -107,7 +107,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "cc0365d6d71762e3cdea18fb03dac3ead73df1aa71218fb6ab8fb24a29c3870f"
+      "sha256": "3b1e2b668339ec844e10c48d9359aec0ef01fc993466fd2465fe84720f04aabb"
     },
     {
       "path": "assets/figures/key-areas.png",
