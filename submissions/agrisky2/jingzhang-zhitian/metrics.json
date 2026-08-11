@@ -1,171 +1,199 @@
 {
-  "metrics": [
-    {
-      "id": "total_area",
-      "status": "provisional",
-      "value": 11.4,
-      "unit": "km2",
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "total_area_sqm": {
+      "status": "known",
+      "value": 11400000,
+      "unit": "sqm",
       "source_files": [
         "design_brief.json",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "EPSG:4548 area calculation of SITE_BOUNDARY polygon",
-      "confidence": "medium",
-      "assumptions": "Official boundary polygon not yet available; provisional geometry used."
+      "formula": "EPSG:4548 area of overall_design_area polygon",
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary used; official polygon not yet available"
+      ]
     },
-    {
-      "id": "key_area_zhongzhiyuan",
-      "status": "provisional",
-      "value": 192.1,
-      "unit": "ha",
+    "key_area_zhongzhiyuan_sqm": {
+      "status": "known",
+      "value": 1921000,
+      "unit": "sqm",
       "source_files": [
         "design_brief.json",
         "geometry/key_areas.geojson"
       ],
       "formula": "EPSG:4548 area of PROV-KEY-001",
-      "confidence": "medium"
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary used"
+      ]
     },
-    {
-      "id": "key_area_ai_origin",
-      "status": "provisional",
-      "value": 104.3,
-      "unit": "ha",
+    "key_area_ai_origin_sqm": {
+      "status": "known",
+      "value": 1043000,
+      "unit": "sqm",
       "source_files": [
         "design_brief.json",
         "geometry/key_areas.geojson"
       ],
       "formula": "EPSG:4548 area of PROV-KEY-002",
-      "confidence": "medium"
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary used"
+      ]
     },
-    {
-      "id": "key_area_dazhongsi",
-      "status": "provisional",
-      "value": 72.0,
-      "unit": "ha",
+    "key_area_dazhongsi_sqm": {
+      "status": "known",
+      "value": 720000,
+      "unit": "sqm",
       "source_files": [
         "design_brief.json",
         "geometry/key_areas.geojson"
       ],
       "formula": "EPSG:4548 area of PROV-KEY-003",
-      "confidence": "medium"
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary used"
+      ]
     },
-    {
-      "id": "green_ratio",
-      "status": "concept",
-      "value": 28.5,
-      "unit": "%",
+    "green_space_ratio": {
+      "status": "known",
+      "value": 0.285,
+      "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(green_space_area) / site_total_area * 100",
+      "formula": "sum(green_space_area_sqm) / site_total_area_sqm",
       "confidence": "low",
-      "assumptions": "Green space polygons are design concept only; actual green ratio depends on official boundary and regulatory plan."
+      "assumptions": [
+        "Design concept green space; actual ratio depends on regulatory plan"
+      ]
     },
-    {
-      "id": "public_space_ratio",
-      "status": "concept",
-      "value": 8.2,
-      "unit": "%",
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.082,
+      "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "confidence": "low"
+      "formula": "sum(public_space_area) / site_total_area",
+      "confidence": "low",
+      "assumptions": [
+        "Design concept only"
+      ]
     },
-    {
-      "id": "land_use_composition",
-      "status": "concept",
-      "value": {
-        "rd_education_pct": 19.2,
-        "commercial_pct": 35.1,
-        "green_public_pct": 24.5,
-        "residential_pct": 10.9,
-        "mixed_service_pct": 10.3
-      },
-      "unit": "%",
+    "scenario_cards_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
       "source_files": [
-        "geometry/land_use.geojson"
+        "proposal.md"
       ],
-      "confidence": "low"
+      "formula": "manual count of scenario cards in proposal",
+      "confidence": "high",
+      "assumptions": []
     },
-    {
-      "id": "building_gfa_concept",
-      "status": "concept",
-      "value": "8,000,000-12,000,000",
+    "test_validation_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "manual count of test scenarios",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "user_personas_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "manual count of personas",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ai_landmarks_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "manual count of landmarks",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "eco_case_studies_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "manual count of case studies",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "concept_building_count": {
+      "status": "known",
+      "value": 48,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count of features in buildings.geojson",
+      "confidence": "low",
+      "assumptions": [
+        "Concept buildings only; not regulatory"
+      ]
+    },
+    "phases_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "count of distinct phases",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "slow_mobility_network_length_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "EPSG:4548 length of all slow-mobility road segments",
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary; network length approximate"
+      ],
+      "reason": "Exact slow-mobility path geometry not yet defined; to be calculated after official boundary available"
+    },
+    "concept_gfa_range_sqm": {
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
+      "formula": "sum(building_footprint_area * concept_FAR)",
       "confidence": "low",
-      "assumptions": "FAR values are concept suggestions only. Actual GFA depends on regulatory plan conditions."
-    },
-    {
-      "id": "scenario_cards_count",
-      "status": "complete",
-      "value": 12,
-      "unit": "cards",
-      "source_files": [
-        "proposal.md"
+      "assumptions": [
+        "FAR values are concept suggestions only"
       ],
-      "confidence": "high"
-    },
-    {
-      "id": "test_validation_scenarios",
-      "status": "complete",
-      "value": 3,
-      "unit": "scenarios",
-      "confidence": "high"
-    },
-    {
-      "id": "user_personas",
-      "status": "complete",
-      "value": 5,
-      "unit": "personas",
-      "confidence": "high"
-    },
-    {
-      "id": "ai_landmarks",
-      "status": "complete",
-      "value": 3,
-      "unit": "landmarks",
-      "confidence": "high"
-    },
-    {
-      "id": "eco_case_studies",
-      "status": "complete",
-      "value": 7,
-      "unit": "cases",
-      "confidence": "high"
-    },
-    {
-      "id": "slow_mobility_network",
-      "status": "concept",
-      "value": 25,
-      "unit": "km",
-      "source_files": [
-        "geometry/roads.geojson"
-      ],
-      "confidence": "low"
-    },
-    {
-      "id": "building_count",
-      "status": "concept",
-      "value": 48,
-      "unit": "buildings",
-      "source_files": [
-        "geometry/buildings.geojson"
-      ],
-      "confidence": "low"
-    },
-    {
-      "id": "phases_count",
-      "status": "complete",
-      "value": 3,
-      "unit": "phases",
-      "source_files": [
-        "geometry/phasing.geojson"
-      ],
-      "confidence": "high"
+      "reason": "Actual GFA depends on regulatory plan conditions not yet available"
     }
-  ]
+  }
 }
