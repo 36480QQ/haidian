@@ -8,9 +8,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -33,27 +41,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "以公开工程状态、更新片区文字四至、原点运营网络和公开底图建立现状/未知双清单。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "official-fact plus L4 open-data diagnosis; field baseline pending",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "three_level_scope_framework",
@@ -62,9 +89,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -87,27 +122,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "在约43.6平方公里统筹研究范围和约11.4平方公里总体设计范围内，提出三处重点区域的差异化行动方案。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "official approximate scales plus L5 provisional working envelopes",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "overall_spatial_structure",
@@ -116,9 +170,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -141,27 +203,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "构建“一轴三廊三核”总体结构，强化京张沿线与清河、小月河及高校、转河方向的空间联系和功能协同。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "L5 concept structure with L4 working-basemap calibration",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "land_use_layout",
@@ -170,9 +251,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -195,27 +284,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "概念性功能分区满足投稿包内部拓扑校核要求，不等同于现状用地或法定规划用地。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "complete programmatic partition for package topology; not statutory/current land use",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "development_intensity_controls",
@@ -224,9 +332,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -249,27 +365,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "全域容积率（FAR）与高度暂不具备确定条件；蓝景丽家局部数据不得超出适用范围使用。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "data-gap register only; FAR/height/density/setbacks unknown",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "height_massing_character",
@@ -278,9 +413,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -303,27 +446,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "提出低扰动、可逆利用、首层开放和材料可维护等原则；具体高度应依据法定规划和专项论证确定。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "qualitative low-impact and maintainability principles only",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -332,9 +494,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -357,27 +527,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "建立逐栋调查和分类评估流程；现阶段不对具体建筑作出保留、改造或拆除结论。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "decision tree and survey protocol only; no building decisions",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -386,9 +575,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -411,27 +608,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "开展公共轴连续性核查，重点研究站点衔接、过街、步行与骑行、停车及无障碍条件。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "continuity-audit tasks and conceptual links; redlines/capacity pending",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -440,9 +656,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -465,27 +689,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "按端侧、街区、区域三级提出设施接口要求，并将容量、消防和断网安全纳入实施条件。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "three-tier interface requirements; capacity and routing pending",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "blue_green_public_space",
@@ -494,9 +737,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -519,27 +770,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "京张创新协同轴与清河、小月河、转河三条横向廊道协同组织；临水项目应符合防汛和河道管理要求。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "conceptual spine/crosslink envelope; blue lines/flood/access pending",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -548,9 +818,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -573,27 +851,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "三处重点区域分别提出空间组织和运营建议，并明确项目准入、阶段转换和退出条件。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "program, operating gates and siting conditions; no approved footprints",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "renewal_project_list",
@@ -602,9 +899,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -627,27 +932,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "三项重点行动项目分别明确需求、空间、数据、实施主体、成本、维护和退出等内容。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "operational project cards with ownership/cost fields pending validation",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -656,9 +980,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -681,27 +1013,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "依据资料和项目条件，分0-6个月、6-18个月、18-36个月三个阶段有序推进。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "evidence-maturity phases; not government construction schedule",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "metrics_recalculation",
@@ -710,9 +1061,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -735,27 +1094,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "空间指标采用EPSG:4548进行复核；运营指标经基线调查后启用；暂不确定指标不以零值替代。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "package-internal EPSG:4548 recalculation; statutory metrics unknown",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     },
     {
       "item_id": "risk_missing_data",
@@ -764,9 +1142,17 @@
       "required": true,
       "status": "complete",
       "proposal_sections": [
+        "设计依据与资料清单",
         "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "用地、建筑规模与拆改留方案",
+        "交通、轨道、市政与公共服务设施",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划",
+        "指标体系、面积复算与合规矩阵",
         "风险、版权与合规说明"
       ],
       "drawing_refs": [
@@ -789,27 +1175,46 @@
         "building_footprint_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "road_length_m",
+        "key_area_count",
+        "flagship_project_count",
+        "crosslink_count",
+        "scenario_card_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
-        "PROCESSED-FACT-PACK",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "JINGZHANG-CONTROL-NOTICE",
+        "ZHONGZHIYUAN-RENEWAL",
+        "DAZHONGSI-RENEWAL",
+        "PARK-PHASE2",
+        "AI-ORIGIN-2026",
+        "BEIJING-URBAN-RENEWAL"
       ],
       "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-KEY-AREA-001",
         "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
+        "EVIDENCE_LEVELS",
+        "VISUAL_STATIC",
+        "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "登记正式边界、产权、建筑、交通、铁路、文物保护、水务、市政和采购九类优先补充资料（P0）。",
+      "status_semantics_zh": "complete仅表示投稿包已就该项形成可供审阅的阶段性响应，不表示已经完成法定规划、专项审查、行政审批或工程设计。",
+      "evidence_ceiling": "L1-L5 mixed; conclusions cannot exceed the strongest applicable source",
+      "current_depth": "complete acquisition register and stop rules for current evidence ceiling",
+      "blocking_inputs": [
+        "official geometry/controls as applicable",
+        "field and professional survey as applicable",
+        "competent-authority and stakeholder review"
+      ]
     }
   ]
 }

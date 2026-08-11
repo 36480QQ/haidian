@@ -12,49 +12,51 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(provisional submitted site boundary, EPSG:4548)",
+      "formula": "polygon_area(provisional SITE_BOUNDARY, EPSG:4548)",
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001"
       ]
     },
     "building_footprint_area_sqm": {
-      "status": "known",
-      "value": 213393.124,
+      "status": "unknown",
+      "value": null,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(conceptual component footprint areas, EPSG:4548)",
-      "confidence": "low",
+      "formula": "sum(verified existing and proposed building footprints, EPSG:4548)",
+      "confidence": "unknown",
       "assumptions": [
-        "A-BUILDING-001"
-      ]
+        "A-BUILDING-001",
+        "A-OWNERSHIP-001"
+      ],
+      "reason": "没有同一时点测绘、用途、权属、结构和消防资料；v1概念footprint已删除。"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.271632,
+      "value": 0.27789,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "conceptual_green_network_area / provisional_site_area",
+      "formula": "conceptual audit-and-crosslink envelope area / provisional site area",
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001",
-        "A-HERITAGE-001"
+        "A-BLUEGREEN-001"
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.090504,
+      "value": 0.005396,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "conceptual_public_space_area / provisional_site_area",
+      "formula": "three flagship action envelopes / provisional site area",
       "confidence": "low",
       "assumptions": [
         "A-BOUNDARY-001",
@@ -63,15 +65,16 @@
     },
     "road_length_m": {
       "status": "known",
-      "value": 29537.246,
+      "value": 12864.922,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(conceptual slow-mobility alignment lengths, EPSG:4548)",
+      "formula": "sum(conceptual continuity-audit and crosslink alignments, EPSG:4548)",
       "confidence": "low",
       "assumptions": [
-        "A-ROAD-001"
+        "A-ROAD-001",
+        "A-PARK-OPEN-001"
       ]
     },
     "key_area_count": {
@@ -81,10 +84,35 @@
       "source_files": [
         "geometry/key_areas.geojson"
       ],
-      "formula": "count(required provisional key area polygons)",
-      "confidence": "medium",
+      "formula": "count(required key-area working envelopes)",
+      "confidence": "high",
       "assumptions": [
         "A-KEY-AREA-001"
+      ]
+    },
+    "flagship_project_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "proposal.md"
+      ],
+      "formula": "count(evidence-backed flagship programs)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "crosslink_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(Qinghe, Xiaoyuehe/knowledge, Zhuanhe crosslinks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-ROAD-001"
       ]
     },
     "scenario_card_count": {
@@ -94,7 +122,7 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(numbered scenario cards in proposal section)",
+      "formula": "count(numbered scenario cards)",
       "confidence": "high",
       "assumptions": []
     },
@@ -105,12 +133,12 @@
       "source_files": [
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "formula": "approved total floor area / official parcel area",
       "confidence": "unknown",
       "assumptions": [
         "A-CONTROLS-001"
       ],
-      "reason": "Approved FAR controls, official parcel boundaries and verified building inventory are not present."
+      "reason": "完整控规图纸、official parcels和建筑普查未公开；蓝景丽家局部指标不得外推。"
     },
     "building_height_m": {
       "status": "unknown",
@@ -119,19 +147,28 @@
       "source_files": [
         "brief/site-package/ranges/planning_limits.json"
       ],
-      "formula": "official height control by parcel",
+      "formula": "official parcel height control",
       "confidence": "unknown",
       "assumptions": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-LOCAL-EXTRAPOLATION-001"
       ],
-      "reason": "Official height, aviation, heritage and skyline controls are missing."
+      "reason": "只找到局部实施单元高度讨论，不能形成全域控制。"
+    },
+    "continuous_open_greenway_length_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "sources.json",
+        "geometry/roads.geojson"
+      ],
+      "formula": "field-verified step-free open network length",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-PARK-OPEN-001"
+      ],
+      "reason": "二期配套完工不等于9公里全线连续开放，须逐段现场审计。"
     }
-  },
-  "land_use_area_sqm_by_code": {
-    "0802": 2674562.492,
-    "1401": 2589339.239,
-    "05": 3366138.181,
-    "0702": 2782792.823
-  },
-  "precision_note_zh": "所有由 provisional geometry 派生的面积与比例均为 intake 复算值，不得与公告约面积或官方精确红线混同。"
+  }
 }

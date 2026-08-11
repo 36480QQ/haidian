@@ -6,98 +6,205 @@
       "path": "brief/site-package/",
       "source_type": "official_public_and_cleared_package",
       "formal_use": "yes_with_limits",
-      "usage": "项目任务、枚举、范围层级、标准索引和 schema。"
+      "usage": "任务、枚举、标准、schema与临时边界。"
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
       "formal_use": "yes",
-      "usage": "判定资料 formal/background/provisional 使用边界。"
+      "usage": "判定资料用途边界。"
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
       "formal_use": "navigation_only",
-      "usage": "任务、范围、资料用途和缺口导航，不是新增权威来源。"
+      "usage": "用于资料索引，不作为新增权威依据。"
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
       "formal_use": "provisional_only",
-      "usage": "临时生成、拓扑自检与可视化；不得作为 official redline。"
+      "usage": "临时生成、展示与自检。"
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
       "formal_use": "provisional_only",
-      "usage": "三处重点区临时设计表达；不得作精确面积或审批依据。"
+      "usage": "三处重点区临时工作包络。"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
       "formal_use": "yes",
-      "usage": "项目名称、三层范围文字和约面积、设计任务与成果语境。"
+      "usage": "项目名称、三层文字范围、约面积和设计任务。"
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "formal_use": "yes",
-      "usage": "六项智能体任务、共创原则、场景与运营要求、边界条款。"
+      "usage": "六项智能体任务、场景与边界条款。"
     },
     {
-      "id": "CASE-KENDALL-SQUARE",
-      "url": "https://kendallsquare.mit.edu/",
-      "source_type": "official_institutional_public",
+      "id": "JINGZHANG-CONTROL-NOTICE",
+      "url": "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202502/t20250207_4005553.html",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于核实HD00-1601等街区控规的编制和采信事项；尚未取得完整图纸。"
+    },
+    {
+      "id": "ZHONGZHIYUAN-RENEWAL",
+      "url": "https://www.beijing.gov.cn/fuwu/lqfw/ztzl/bjchshgx/xmgsh/202607/t20260714_4762585.html",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于核实众智园更新片区文字四至、所属街镇、空间锚点和实施背景；尚未取得可量测GIS数据。"
+    },
+    {
+      "id": "DAZHONGSI-RENEWAL",
+      "url": "https://www.beijing.gov.cn/fuwu/lqfw/ztzl/bjchshgx/xmgsh/202607/t20260714_4762615.html",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于核实大钟寺更新片区文字四至、统筹主体、更新和资金平衡要求；尚未取得可量测GIS数据。"
+    },
+    {
+      "id": "LANJING-IMPLEMENTATION",
+      "url": "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202506/t20250606_4107444.html",
+      "source_type": "official_public",
+      "formal_use": "yes_local_only",
+      "usage": "蓝景丽家局部地块、配套、高度讨论和交通措施；禁止外推。"
+    },
+    {
+      "id": "LANJING-TRAFFIC",
+      "url": "https://ggzyfw.beijing.gov.cn/cmsbj/u/cms/cn.gov.bjggzyfw.www/202601/8651375391270.pdf",
+      "source_type": "official_public",
+      "formal_use": "yes_local_only",
+      "usage": "对应实施单元约5.03公顷、9.65万平方米和交通预测；禁止外推。"
+    },
+    {
+      "id": "PARK-PHASE1",
+      "url": "https://yllhj.beijing.gov.cn/zwgk/zwxx/202306/t20230626_3145467.shtml",
+      "source_type": "official_public",
+      "formal_use": "yes",
+      "usage": "京张公园一期建成范围、面积和遗存。"
+    },
+    {
+      "id": "PARK-PHASE2",
+      "url": "https://yllhj.beijing.gov.cn/zwgk/zwxx/202607/t20260714_4761226.shtml",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于核实二期配套工程完工、北段约30.01公顷及鱼骨慢行网络；不得据此认定全线连续开放。"
+    },
+    {
+      "id": "QINGHUAYUAN-HERITAGE",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/743928533/743928745/index.html",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于核实清华园车站保护对象和文字管控要求；正式坐标资料尚需向主管部门申请获取。"
+    },
+    {
+      "id": "AI-ORIGIN-2026",
+      "url": "https://www.bjhd.gov.cn/ztzx/2025/aifuture/jq/aiyd/202603/t20260326_4809740.shtml",
+      "source_type": "official_public",
+      "formal_use": "background_and_operational",
+      "usage": "AI原点约3平方公里分布式载体网络和运营定位。"
+    },
+    {
+      "id": "AI-ORIGIN-TALENT-STATION",
+      "url": "https://zyk.bjhd.gov.cn/jbdt/auto4496_51791/auto4496_52699/auto4496/auto4496/202607/t20260722_4822818_hd.shtml",
+      "source_type": "official_public",
+      "formal_use": "background_and_operational",
+      "usage": "17项人才服务、智能问答与三级专员人机协同原型。"
+    },
+    {
+      "id": "HAIDIAN-STATS-2025",
+      "url": "https://zyk.bjhd.gov.cn/sjkf/tjgb/202604/t20260410_4811526.shtml",
+      "source_type": "official_public",
       "formal_use": "background_only",
-      "usage": "混合功能、开放空间与创新协作机制案例。"
+      "usage": "区级人口、实验室、大模型和技术合同基线；不得外推到廊道。"
+    },
+    {
+      "id": "BEIJING-SCENARIO-DEMAND",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202607/t20260701_4742201.html",
+      "source_type": "official_public",
+      "formal_use": "yes_with_limits",
+      "usage": "用于研究场景需求发布、社会参与和供需对接机制；不构成本项目预算或数据授权。"
+    },
+    {
+      "id": "BEIJING-URBAN-RENEWAL",
+      "url": "https://www.beijing.gov.cn/zhengce/dfxfg/202212/t20221206_2871600.html",
+      "source_type": "official_public",
+      "formal_use": "yes",
+      "usage": "实施单元、主体、权利人协商、评估和运营要求。"
+    },
+    {
+      "id": "HAIDIAN-RENEWAL-GUIDE",
+      "url": "https://www.bjhd.gov.cn/ztzx/2025/csgxsszy/",
+      "source_type": "official_public",
+      "formal_use": "yes",
+      "usage": "规划条件、土地、建筑、资金测算和运营管理要求。"
     },
     {
       "id": "CASE-VECTOR-TORONTO",
       "url": "https://vectorinstitute.ai/about/",
       "source_type": "official_institutional_public",
       "formal_use": "background_only",
-      "usage": "研究—人才—产业采纳—负责任 AI 机制案例。"
-    },
-    {
-      "id": "CASE-STATION-F",
-      "url": "https://stationf.co/",
-      "source_type": "official_institutional_public",
-      "formal_use": "background_only",
-      "usage": "多项目共享校园与规模化创业支持案例。"
-    },
-    {
-      "id": "CASE-ONE-NORTH",
-      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north?estate=one-north",
-      "source_type": "official_public",
-      "formal_use": "background_only",
-      "usage": "分片区创新园、研究机构与创业平台共址案例。"
+      "usage": "独立非营利验证与产业采用机制。"
     },
     {
       "id": "CASE-MILA-MONTREAL",
       "url": "https://mila.quebec/en/about/about-mila",
       "source_type": "official_institutional_public",
       "formal_use": "background_only",
-      "usage": "高校协作、开放科学、伦理治理与产业采用案例。"
+      "usage": "开放科学、概念验证（PoC）、创新创业与公共利益治理。"
     },
     {
-      "id": "CASE-KNOWLEDGE-QUARTER",
-      "url": "https://www.knowledgequarter.london/",
+      "id": "CASE-STATION-F",
+      "url": "https://stationf.co/",
       "source_type": "official_institutional_public",
       "formal_use": "background_only",
-      "usage": "步行可达知识集群与跨机构网络案例。"
+      "usage": "多项目共享校园与分阶段孵化。"
     },
     {
       "id": "CASE-MARIA-01",
       "url": "https://maria.io/campus/",
       "source_type": "official_institutional_public",
       "formal_use": "background_only",
-      "usage": "既有建筑再利用、共同体校园和事件运营案例。"
+      "usage": "存量建筑小规模试运营与会员共同体。"
+    },
+    {
+      "id": "CASE-MARS-TORONTO",
+      "url": "https://www.marsdd.com/about/",
+      "source_type": "official_institutional_public",
+      "formal_use": "background_only",
+      "usage": "公益任务、空间运营、投资支持与成果应用服务分类核算。"
+    },
+    {
+      "id": "CASE-22BARCELONA",
+      "url": "https://www.22network.net/qui-som/?lang=en",
+      "source_type": "official_institutional_public",
+      "formal_use": "background_only",
+      "usage": "创新、居住、基础设施与社会融合并重。"
+    },
+    {
+      "id": "CASE-BLOXHUB",
+      "url": "https://bloxhub.org/",
+      "source_type": "official_institutional_public",
+      "formal_use": "background_only",
+      "usage": "问题议程、会员、应用研究与年度透明度。"
+    },
+    {
+      "id": "OSM-WORKING-DATA",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "osm",
+      "formal_use": "working_basemap_only",
+      "retrieved_at": "2026-08-11",
+      "license": "ODbL-1.0",
+      "usage": "经筛选的道路、步行与骑行、运营铁路、具名轨道站和水系五类数据仅用于两张L4工作底图；建筑与POI候选数据不加载、不纳入正式空间数据或指标，不作为法定边界、测绘、权属或建筑更新分类依据。"
     }
   ]
 }
