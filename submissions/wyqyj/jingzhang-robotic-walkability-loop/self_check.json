@@ -43,6 +43,8 @@
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/phasing.geojson",
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/public_space.geojson",
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/roads.geojson",
+        "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/robot_nodes.geojson",
+        "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/robotic_network.geojson",
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/geometry/site_boundary.geojson",
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/manifest.json",
         "submissions/wyqyj/jingzhang-robotic-walkability-loop/metrics.json",
@@ -61,7 +63,7 @@
       "ai_package_stages": {
         "submissions/wyqyj/jingzhang-robotic-walkability-loop": "formal"
       },
-      "total_bytes": 7828311,
+      "total_bytes": 7836179,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,8 +144,8 @@
           "source": 6,
           "standard": 4,
           "depth": 10,
-          "data": 10,
-          "metric": 4
+          "data": 12,
+          "metric": 5
         }
       }
     },

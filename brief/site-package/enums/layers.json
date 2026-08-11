@@ -155,6 +155,25 @@
       "required": false
     },
     {
+      "code": "ROBOT_SERVICE_NODE",
+      "label_zh": "智能移动服务节点",
+      "geometry_types": [
+        "Point"
+      ],
+      "editable_by_agent": true,
+      "required": false
+    },
+    {
+      "code": "ROBOT_SERVICE_CENTERLINE",
+      "label_zh": "智能移动服务中心线",
+      "geometry_types": [
+        "LineString",
+        "MultiLineString"
+      ],
+      "editable_by_agent": true,
+      "required": false
+    },
+    {
       "code": "EXISTING_PRIMARY_ROAD",
       "label_zh": "现状主干路/快速路",
       "geometry_types": [

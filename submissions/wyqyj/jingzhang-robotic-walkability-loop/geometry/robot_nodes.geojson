@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "robot_service_nodes",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "NODE-AI-ORIGIN",
+      "properties": {
+        "id": "NODE-AI-ORIGIN",
+        "layer": "ROBOT_SERVICE_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "?? AI ??????",
+        "name_en": "Beijing AI Origin service node",
+        "network_role": "service_node",
+        "sequence": 3,
+        "official_boundary": false,
+        "usage_note": "Conceptual low-speed robot service node; requires accessibility, traffic and operator review before deployment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          40.019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NODE-ZHONGZHIYUAN",
+      "properties": {
+        "id": "NODE-ZHONGZHIYUAN",
+        "layer": "ROBOT_SERVICE_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "???????",
+        "name_en": "Zhongzhiyuan service node",
+        "network_role": "service_node",
+        "sequence": 4,
+        "official_boundary": false,
+        "usage_note": "Conceptual low-speed robot service node; requires accessibility, traffic and operator review before deployment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.351,
+          40.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NODE-DAZHONGSI",
+      "properties": {
+        "id": "NODE-DAZHONGSI",
+        "layer": "ROBOT_SERVICE_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "???????",
+        "name_en": "Dazhongsi service node",
+        "network_role": "service_node",
+        "sequence": 1,
+        "official_boundary": false,
+        "usage_note": "Conceptual low-speed robot service node; requires accessibility, traffic and operator review before deployment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.35,
+          39.947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NODE-ZHONGGUANCUN",
+      "properties": {
+        "id": "NODE-ZHONGGUANCUN",
+        "layer": "ROBOT_SERVICE_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "???????",
+        "name_en": "Zhongguancun service node",
+        "network_role": "service_node",
+        "sequence": 2,
+        "official_boundary": false,
+        "usage_note": "Conceptual low-speed robot service node; requires accessibility, traffic and operator review before deployment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.349,
+          39.994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NODE-XIAOYUEHE",
+      "properties": {
+        "id": "NODE-XIAOYUEHE",
+        "layer": "ROBOT_SERVICE_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "???????",
+        "name_en": "Xiaoyuehe service node",
+        "network_role": "service_node",
+        "sequence": 5,
+        "official_boundary": false,
+        "usage_note": "Conceptual low-speed robot service node; requires accessibility, traffic and operator review before deployment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3425,
+          39.976
+        ]
+      }
+    }
+  ]
+}

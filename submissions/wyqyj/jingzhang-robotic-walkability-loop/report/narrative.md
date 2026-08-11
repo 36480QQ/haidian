@@ -33,7 +33,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **第三层｜城市智能体治理层。** 设立任务派发、轨迹审计、异常上报、远程急停、人工接管、公众申诉和数据最小化机制。每一次任务均生成可读的任务单、责任人和处理记录；模型只提供建议，不拥有不可解释的公共空间决策权。[source:AGENT-TASKBOOK] [depth:robotic_governance]
 
-三层叠合为“人行连续面—机器人服务线—治理可视面”。方案通过新增 `geometry/robot_nodes.geojson` 与 `geometry/robotic_network.geojson` 表达节点和网络，它们与既有用地、建筑、道路、绿地和公共空间图层分开，避免把概念运营线误读为法定交通设施。[data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-001]
+三层叠合为“人行连续面—机器人服务线—治理可视面”。方案通过新增 `geometry/robot_nodes.geojson` 与 `geometry/robotic_network.geojson` 表达节点和网络，它们与既有用地、建筑、道路、绿地和公共空间图层分开，避免把概念运营线误读为法定交通设施。[data:geometry/roads.geojson#ROAD-001] [data:geometry/robot_nodes.geojson#NODE-ZHONGZHIYUAN] [data:geometry/robotic_network.geojson#ROBOT-NETWORK-001]
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -96,7 +96,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 交通、轨道、市政与公共服务设施
 
-智行环的交通原则是“人行不断、服务可退、异常可接管”。概念网络不改变既有道路功能；交叉口、消防通道、无障碍坡道和地铁出入口均视为不可侵占空间。建议设置四级运行状态：绿色（步行优先、机器人低速）、黄色（人群增多、调度限流）、红色（活动/事故、机器人退出）、黑色（系统故障、人工接管与人工巡检）。运行边界以 `roads.geojson` 的概念中心线和节点接口表达，空间上不得覆盖消防、无障碍和公共交通优先通道；机器人服务线长度与节点数量仅作为可复算的概念指标，须在现场交通组织、轨道站点客流和市政条件核验后校准。[data:geometry/roads.geojson#ROAD-001] [metric:robot_loop_length_m]
+智行环的交通原则是“人行不断、服务可退、异常可接管”。概念网络不改变既有道路功能；交叉口、消防通道、无障碍坡道和地铁出入口均视为不可侵占空间。建议设置四级运行状态：绿色（步行优先、机器人低速）、黄色（人群增多、调度限流）、红色（活动/事故、机器人退出）、黑色（系统故障、人工接管与人工巡检）。运行边界以 `robotic_network.geojson` 的概念中心线和节点接口表达，空间上不得覆盖消防、无障碍和公共交通优先通道；机器人服务线长度与节点数量仅作为可复算的概念指标，须在现场交通组织、轨道站点客流和市政条件核验后校准。[data:geometry/robotic_network.geojson#ROBOT-NETWORK-001] [metric:robot_service_node_count] [metric:robot_loop_length_m]
 
 节点设施包括可撤除停靠位、低功耗充电、任务显示牌和人工服务箱，均须经市政、电力、消防、交通和公园管理条件核验。网络运行只保存完成任务所需的最小事件日志；原始视频或声学数据不进入本投稿包。
 

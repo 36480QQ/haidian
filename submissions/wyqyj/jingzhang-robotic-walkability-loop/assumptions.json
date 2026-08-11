@@ -20,6 +20,7 @@
       "statement": "Robots yield to pedestrians, operate at low speed and can be stopped or taken over by a human.",
       "impact": "Requires operator, safety case, accessibility review and field trial before any deployment.",
       "references": [
+        "geometry/robot_nodes.geojson",
         "geometry/robotic_network.geojson",
         "proposal.md"
       ]

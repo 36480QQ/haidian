@@ -168,6 +168,8 @@ ALLOWED_GEOMETRY_FILES = {
     "public_space.geojson",
     "constraints.geojson",
     "phasing.geojson",
+    "robot_nodes.geojson",
+    "robotic_network.geojson",
 }
 ALLOWED_REPORT_FILES = {
     "proposal.html",
@@ -247,6 +249,8 @@ PROPOSAL_READABLE_DATA_REFS = {
     "geometry/public_space.geojson",
     "geometry/constraints.geojson",
     "geometry/phasing.geojson",
+    "geometry/robot_nodes.geojson",
+    "geometry/robotic_network.geojson",
 }
 REQUIRED_PROPOSAL_IMAGE_PATHS = {
     "assets/figures/site-overview.png",

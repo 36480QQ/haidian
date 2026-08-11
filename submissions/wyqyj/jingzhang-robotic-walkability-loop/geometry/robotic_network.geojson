@@ -1,0 +1,64 @@
+{
+  "type": "FeatureCollection",
+  "name": "robotic_service_loop",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROBOT-NETWORK-001",
+      "properties": {
+        "id": "ROBOT-NETWORK-001",
+        "layer": "ROBOT_SERVICE_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "name_zh": "????????????",
+        "name_en": "Jingzhang intelligent mobility loop conceptual service centreline",
+        "network_role": "closed_low_speed_service_loop",
+        "service_node_ids": [
+          "NODE-DAZHONGSI",
+          "NODE-ZHONGGUANCUN",
+          "NODE-AI-ORIGIN",
+          "NODE-ZHONGZHIYUAN",
+          "NODE-XIAOYUEHE"
+        ],
+        "length_m": 16181.2,
+        "length_method": "EPSG:4548 projected line length, rounded to 0.1 m",
+        "official_boundary": false,
+        "usage_note": "Conceptual centreline only. It does not alter statutory road functions and excludes fire access, accessible paths and station entrances pending field verification."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.35,
+            39.947
+          ],
+          [
+            116.349,
+            39.994
+          ],
+          [
+            116.348,
+            40.019
+          ],
+          [
+            116.35088002571746,
+            40.0145
+          ],
+          [
+            116.351,
+            40.01
+          ],
+          [
+            116.3425,
+            39.976
+          ],
+          [
+            116.35,
+            39.947
+          ]
+        ]
+      }
+    }
+  ]
+}
