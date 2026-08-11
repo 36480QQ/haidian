@@ -20,15 +20,15 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "bytes": 15486
+      "bytes": 15016
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "039d3e12e30948deda35779f039e44309db47a90cccabd4c742a313ace79ab3b",
-      "bytes": 47528
+      "sha256": "7872ee7a9e69e89c656891146c5fb385dfcd756981e28ed24057305f63e11dc9",
+      "bytes": 47260
     },
     {
       "path": "agent.json",
@@ -55,14 +55,14 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c0bc565567e7e402460360c2a7bfce611b0778f80205c339593179cdcf8f46b5",
-      "bytes": 5105
+      "sha256": "93df910416ead66ada369e3c2c69878930f4db6ca52e562d278506e8dcd50605",
+      "bytes": 4999
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1694ac8097d65f06d398c4bdf45694e5fa98f45774064207d7461f775993a42f",
+      "sha256": "40892c3f92f39d9b2642e18667e3b88ba3c18c0e7788713346a712c5e75d9752",
       "bytes": 9996
     },
     {
@@ -91,8 +91,8 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8cd33a8e64f638ac7bf6cfeb916bb210fd62f2a0ce8fcd32617942d5ec1ae507",
-      "bytes": 67046
+      "sha256": "eb72202ec0ac5a7a1bd550b40d74dc429b9e2e637de1ba41293686fff596d256",
+      "bytes": 66806
     },
     {
       "path": "report/narrative.md",
@@ -129,8 +129,8 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b08a36e904653f9ab01517aa80b5ecce15fff3274c43153edb9c83707de67196",
-      "bytes": 7132
+      "sha256": "3907c241b9d9e090c42bd3ee5b905e1bd44a705d3bc6d8c9162de1e3e5d9238c",
+      "bytes": 7110
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -241,8 +241,8 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "40c9a826d8fbf9b57e46ee9afda77f066230104a30c3b40b05cdcc9c0988e408",
-      "bytes": 28282
+      "sha256": "0cde18b14afd69589eebad4dd7055a35d702c9b224147ceb82a070cd6ced3784",
+      "bytes": 28112
     },
     {
       "path": "report/proposal.en.html",
@@ -250,8 +250,8 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "96c81750b772521bdd27acde37cd6af782abc1e84b1fcd5fb1ce14b691f4c329",
-      "bytes": 33697
+      "sha256": "40e32312fe04570a1d99a3c76827d1b8c3bef7326ecb47186c2f3358e1d68e78",
+      "bytes": 33496
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -277,8 +277,8 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1eea2ae8399a8d8078cb423fe740e5c208967256fa26461617535bcfab8e301b",
-      "bytes": 7172
+      "sha256": "cfce4ad0f4ccf178278cc7a5abce56044cfe533da610b608d81c62eb769f06a1",
+      "bytes": 7149
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -329,8 +329,8 @@
       "path": "changelog.md",
       "role": "review_response_evidence",
       "required": false,
-      "sha256": "53f2105f6d55c3d0220e011a5ef5097e518e722b014971dbdec92382171c6ab3",
-      "bytes": 1762
+      "sha256": "8a057b3f737e6f3e0df56c4a91ddfe5bb19f1b2f5bd1269bcb72f68a9d9de274",
+      "bytes": 1736
     },
     {
       "path": "visual/assets/scenario-governance-matrix.json",
@@ -371,50 +371,50 @@
       "path": "visual/assets/project-implementation-register.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "5c32f8d7c6631ffd1a0a154959dec27236a326e08a027311af99c30339cb77f1",
-      "bytes": 9415
+      "sha256": "1f340d0e3e7865beafd182cb89f461d2145767c62efd37a18803c53c86b71e17",
+      "bytes": 9265
     },
     {
       "path": "visual/assets/global-case-transfer-table.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "bba688b0b66da8e431981eed047d8c4a8a9d3bec37210a88daf8cea1482d9274",
-      "bytes": 1605
+      "sha256": "7efd978da880051f1f9c391f0a12e3e6992387ece867efa4a0d4f845f7c551f3",
+      "bytes": 1559
     },
     {
       "path": "visual/assets/ecosystem-mechanism-map.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "b672b73bd7a3ad717965103df7cb2a9fd6b44f4e450ac44d90d2d0bdc77f1698",
-      "bytes": 689
+      "sha256": "3b29df2629e726bae37e24f64045b6144df0b0a8b18cbd02eaf1382cfb597901",
+      "bytes": 669
     },
     {
       "path": "visual/assets/inclusion-governance-matrix.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "d36306ee2d0a9b6c01fa033f840b865003f573081ba8e606eaf12f7c30e1e15e",
-      "bytes": 1281
+      "sha256": "15c45a449dedfb9dbf08b22f4aaa76daafd04958d951db9199fb91ffc286d815",
+      "bytes": 1222
     },
     {
       "path": "visual/assets/culture-communication-kit.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "48061f6ab3e476ba167e8539e839a049ddd8760af073b77a52e06237c8c57629",
-      "bytes": 628
+      "sha256": "3a5be441ff47a63b468fbe276654417ddeccca084a2ec83b2b4d51f59d795c07",
+      "bytes": 606
     },
     {
       "path": "visual/assets/key-area-operating-sections.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "ab869335daea11f38cc2122e91387c7ff7cedda6da042bdb9a6902fe53eaa453",
-      "bytes": 1034
+      "sha256": "2936079b531fa1cb0138a19950dd11fa91116f206b19005ad26cd95f3d4c2245",
+      "bytes": 1008
     },
     {
       "path": "visual/assets/score-repair-map.json",
       "role": "score_repair_evidence",
       "required": false,
-      "sha256": "c061e7265547bdd4b0626efd808db08e216a5600c5303f3927ecff12ea18499e",
-      "bytes": 995
+      "sha256": "4a577f0427905cb5b8466199f10e609d374af4071a60e2c48111a8f474436ba2",
+      "bytes": 956
     },
     {
       "path": "visual/assets/civic-spine-claim-provenance.json",
