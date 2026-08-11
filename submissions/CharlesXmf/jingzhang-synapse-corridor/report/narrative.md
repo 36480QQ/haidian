@@ -1,3 +1,3 @@
 # Formal Narrative
 
-Jing-Zhang Synapse Corridor proposes a multi-agent co-governance spatial concept for the Centennial Jing-Zhang AI Innovation Belt. Geometry, metrics, matrices, drawings, and visual/index.html are cross-checked deliverables. All implementation claims are conceptual.
+Jing-Zhang Synapse Corridor v0.2 repairs metrics consistency, bilingual visuals, A3/A0 paper mapping, copyright ledger, scenario/governance/pilot readability, and HTML screenshot readiness. All implementation claims remain conceptual.
