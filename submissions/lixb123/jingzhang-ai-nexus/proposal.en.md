@@ -1,5 +1,5 @@
 ---
-title: "Haidian Beijing: Jing-Zhang Tiangong Star Atlas"
+title: "Haidian Minds Converge · Jing-Zhang Stars Aglow: Tiangong Star Atlas AI Civic Living Room"
 author_github: "lixb123"
 language: "en"
 proposal_format_version: "2"
@@ -10,7 +10,7 @@ summary: "Rooted in Beijing Haidian's culture of innovation and research, tradit
 iteration: "v1.0"
 ---
 
-# Haidian Beijing: Jing-Zhang Tiangong Star Atlas
+# Haidian Minds Converge · Jing-Zhang Stars Aglow: Tiangong Star Atlas AI Civic Living Room
 
 ## Design Basis and Evidence
 
@@ -26,7 +26,7 @@ The 43.6 km2 research scope frames regional innovation; the approximately 11.4 k
 
 ## Innovation and Future City Strategy
 
-“Haidian Beijing: Jing-Zhang Tiangong Star Atlas” draws on Haidian's culture of innovation, research, and everyday urban life to translate familiar Chinese spatial wisdom into a future AI civic living room that is easy to read and join. Reading the stars becomes the Tianwen Knowledge Corridor, where explainable wayfinding, Jing-Zhang memory, and open research help people orient themselves. Weaving warp and weft becomes the Nuwa Weaving Corridor, where civic tables, trustworthy data, and human review connect residents, researchers, and service staff. Living with water becomes the Yinglong Water-Vein Corridor, where rain gardens, microclimate notices, and slow mobility respond to daily weather. Together they connect the Zhongzhiyuan acceleration, AI Origin collaboration, and Dazhongsi industry-experience cores. These names are contemporary cultural metaphors, not religious claims, historical reconstruction, or approved projects. [source:AGENT-TASKBOOK]
+“Haidian Minds Converge · Jing-Zhang Stars Aglow: Tiangong Star Atlas AI Civic Living Room” draws on Haidian's culture of innovation, research, and everyday urban life to translate familiar Chinese spatial wisdom into a future AI civic living room that is easy to read and join. Reading the stars becomes the Tianwen Knowledge Corridor, where explainable wayfinding, Jing-Zhang memory, and open research help people orient themselves. Weaving warp and weft becomes the Nuwa Weaving Corridor, where civic tables, trustworthy data, and human review connect residents, researchers, and service staff. Living with water becomes the Yinglong Water-Vein Corridor, where rain gardens, microclimate notices, and slow mobility respond to daily weather. Together they connect the Zhongzhiyuan acceleration, AI Origin collaboration, and Dazhongsi industry-experience cores. These names are contemporary cultural metaphors, not religious claims, historical reconstruction, or approved projects. [source:AGENT-TASKBOOK]
 
 ## Overall Urban Design
 
