@@ -14,11 +14,7 @@
         "name_zh": "质量追溯开放庭院",
         "name_en": "Open Quality Trace Courtyard",
         "operation_rule": "voluntary_use_human_review_exit_available",
-        "area_sqm_declared": 142209.24,
-        "implementation_cards": [
-          "IC-ZZY-02"
-        ],
-        "interface_type": "feedback_plaza"
+        "area_sqm_declared": 142209.24
       },
       "geometry": {
         "type": "Polygon",
@@ -60,11 +56,7 @@
         "name_zh": "原点公共反馈论坛",
         "name_en": "Origin Public Feedback Forum",
         "operation_rule": "voluntary_use_human_review_exit_available",
-        "area_sqm_declared": 158762.983,
-        "implementation_cards": [
-          "IC-ORI-02"
-        ],
-        "interface_type": "feedback_plaza"
+        "area_sqm_declared": 158762.983
       },
       "geometry": {
         "type": "Polygon",
@@ -106,11 +98,7 @@
         "name_zh": "企业服务与贡献展示客厅",
         "name_en": "Enterprise Service and Contribution Hall",
         "operation_rule": "voluntary_use_human_review_exit_available",
-        "area_sqm_declared": 115583.93,
-        "implementation_cards": [
-          "IC-DZS-02"
-        ],
-        "interface_type": "feedback_plaza"
+        "area_sqm_declared": 115583.93
       },
       "geometry": {
         "type": "Polygon",
@@ -167,47 +155,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "登记可公开说明的真实服务问题，并在进入原型验证前限定目的与最小输入。",
-          "purpose_en": "Register a publicly explainable service problem and constrain purpose and minimum inputs before prototyping.",
-          "allowed_inputs": [
-            "public_problem_statement",
-            "voluntary_non_identifying_need_card",
-            "published_service_directory"
-          ],
-          "prohibited_inputs": [
-            "personal_profile",
-            "private_business_material",
-            "unrelated_behavior_history"
-          ],
-          "human_decision_point_zh": "服务登记人员确认问题是否属于公共生活议题、是否已有非 AI 方案及是否值得进入验证。",
-          "human_decision_point_en": "An intake steward confirms public relevance, the non-AI option, and whether the problem should enter validation.",
-          "public_evidence": [
-            "purpose_card",
-            "minimum_input_check",
-            "non_ai_option_record"
-          ],
-          "non_ai_equivalent_zh": "纸质问题卡与人工登记窗口。",
-          "non_ai_equivalent_en": "Paper problem card and staffed intake window.",
-          "redress_channel_zh": "登记台现场更正、撤回和书面复核申请。",
-          "redress_channel_en": "Correction, withdrawal, and written review at the staffed intake desk.",
-          "stop_condition_zh": "目的无法公开说明、输入超出最小范围或没有可用的非 AI 入口时停止登记。",
-          "stop_condition_en": "Stop when purpose cannot be explained publicly, inputs exceed the minimum, or no non-AI route is available.",
-          "restart_condition_zh": "删除超范围输入、补齐目的卡并由公共利益复核角色签认后复启。",
-          "restart_condition_en": "Restart after excess inputs are removed, the purpose card is complete, and public-interest review signs off.",
-          "expansion_gate_zh": "仅在 G1 公共价值门通过后转入原型验证，不直接扩容。",
-          "expansion_gate_en": "Proceed to prototyping only after G1 public-value evidence passes; no direct scaling.",
-          "accountable_role": "service_intake_operator_and_public_interest_reviewer",
-          "record_scope": [
-            "purpose",
-            "input_categories",
-            "decision",
-            "withdrawal_status"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -244,47 +192,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "用可重复的测试记录证明服务输出能够追溯、复核和人工接管。",
-          "purpose_en": "Use reproducible test records to show outputs can be traced, reviewed, and taken over by people.",
-          "allowed_inputs": [
-            "published_test_protocol",
-            "synthetic_test_case",
-            "aggregated_quality_log"
-          ],
-          "prohibited_inputs": [
-            "raw_personal_log",
-            "undisclosed_training_data",
-            "commercial_secret_payload"
-          ],
-          "human_decision_point_zh": "质量复核人员判断测试是否可重复、异常是否关闭以及人工接管是否真实可用。",
-          "human_decision_point_en": "A quality reviewer decides whether tests are reproducible, anomalies are closed, and human takeover works.",
-          "public_evidence": [
-            "test_protocol_version",
-            "anomaly_register",
-            "human_takeover_result"
-          ],
-          "non_ai_equivalent_zh": "人工服务流程与纸质质量核对表。",
-          "non_ai_equivalent_en": "Staffed service process and paper quality checklist.",
-          "redress_channel_zh": "质量追溯工坊的异常复核单与独立专业复查。",
-          "redress_channel_en": "Anomaly review form and independent professional recheck at the quality workshop.",
-          "stop_condition_zh": "结果不可复现、关键日志缺失或人工接管失败时隔离该服务。",
-          "stop_condition_en": "Isolate the service when results cannot be reproduced, critical logs are absent, or human takeover fails.",
-          "restart_condition_zh": "完成根因记录、修订协议并通过独立重复测试后复启。",
-          "restart_condition_en": "Restart after root cause is recorded, the protocol is revised, and an independent rerun passes.",
-          "expansion_gate_zh": "通过 G3 质量与安全门且异常已关闭后，才可进入受控公共试用。",
-          "expansion_gate_en": "Enter a controlled public trial only after G3 passes and anomalies are closed.",
-          "accountable_role": "quality_assurance_operator_and_independent_professional_reviewer",
-          "record_scope": [
-            "protocol_version",
-            "test_result",
-            "anomaly_status",
-            "takeover_result"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -321,51 +229,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "在隔离环境中验证安全边界、接口互操作和失败后的可控退出。",
-          "purpose_en": "Validate safety boundaries, interface interoperability, and controlled exit in an isolated setting.",
-          "allowed_inputs": [
-            "public_interface_specification",
-            "synthetic_adversarial_case",
-            "de_identified_test_result"
-          ],
-          "prohibited_inputs": [
-            "production_credential",
-            "raw_personal_data",
-            "live_critical_system_access"
-          ],
-          "human_decision_point_zh": "安全复核人员判定高风险失败是否已消除，并决定是否允许离开沙盒。",
-          "human_decision_point_en": "A safety reviewer decides whether high-risk failures are resolved and whether the service may leave the sandbox.",
-          "public_evidence": [
-            "interface_conformance_record",
-            "risk_case_register",
-            "containment_and_exit_record"
-          ],
-          "non_ai_equivalent_zh": "由专业人员按公开接口清单完成离线测试和人工判读。",
-          "non_ai_equivalent_en": "Offline testing and human interpretation against a published interface checklist.",
-          "redress_channel_zh": "沙盒事件申诉台与安全复核会议记录。",
-          "redress_channel_en": "Sandbox incident appeal desk and recorded safety-review meeting.",
-          "stop_condition_zh": "出现未关闭的高风险失效、越权访问或隔离失效时立即停测。",
-          "stop_condition_en": "Stop immediately for an unresolved high-risk failure, unauthorized access, or containment failure.",
-          "restart_condition_zh": "清除访问权限、完成补救验证并由安全复核角色批准新一轮测试后复启。",
-          "restart_condition_en": "Restart after access is cleared, remediation is verified, and safety review approves a new test round.",
-          "expansion_gate_zh": "G2 与 G3 同时通过后才可进入有限场景，不得由技术演示直接扩容。",
-          "expansion_gate_en": "Enter a limited setting only after both G2 and G3 pass; a demo alone cannot justify scaling.",
-          "accountable_role": "safety_testing_operator_and_security_reviewer",
-          "record_scope": [
-            "interface_version",
-            "risk_case",
-            "access_scope",
-            "containment_status"
-          ]
-        },
-        "implementation_cards": [
-          "IC-ZZY-04"
-        ],
-        "interface_type": "service_node"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -402,47 +266,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "收集人才日常服务缺口的自愿、匿名需求，并确认人工与非数字服务是否可达。",
-          "purpose_en": "Collect voluntary anonymous daily-service gaps and verify access to staffed and non-digital services.",
-          "allowed_inputs": [
-            "published_service_directory",
-            "anonymous_voluntary_need_card",
-            "aggregated_accessibility_feedback"
-          ],
-          "prohibited_inputs": [
-            "health_record",
-            "consumption_history",
-            "continuous_location_trace"
-          ],
-          "human_decision_point_zh": "社区服务人员判断需求归类、紧急事项转介和是否需要补充线下服务。",
-          "human_decision_point_en": "A community steward classifies needs, routes urgent matters, and decides whether offline service must be added.",
-          "public_evidence": [
-            "need_category_count",
-            "offline_route_availability",
-            "unresolved_service_gap_register"
-          ],
-          "non_ai_equivalent_zh": "社区服务窗、纸质目录和电话咨询。",
-          "non_ai_equivalent_en": "Community service window, printed directory, and telephone inquiry.",
-          "redress_channel_zh": "社区服务窗更正分类，并可提交居民复核小组。",
-          "redress_channel_en": "Category correction at the community window with escalation to a resident review group.",
-          "stop_condition_zh": "出现默认收集个人资料、紧急事项无人转介或线下入口不可用时停止。",
-          "stop_condition_en": "Stop for default personal-data collection, an unrouted urgent need, or an unavailable offline route.",
-          "restart_condition_zh": "恢复人工转介、删除不必要数据并完成居民代表复核后复启。",
-          "restart_condition_en": "Restart after staffed referral is restored, unnecessary data is deleted, and resident review is complete.",
-          "expansion_gate_zh": "仅在 G1、G2 通过且线下等价入口持续可用时扩展服务目录。",
-          "expansion_gate_en": "Expand the directory only while G1 and G2 pass and the offline equivalent remains available.",
-          "accountable_role": "community_service_operator_and_resident_reviewer",
-          "record_scope": [
-            "need_category",
-            "route_used",
-            "offline_availability",
-            "resolution_status"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -479,47 +303,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "让使用者在明确同意、随时退出的条件下体验受控服务，并验证退出是否即时生效。",
-          "purpose_en": "Offer a controlled trial with explicit consent and immediate exit, and verify that withdrawal works.",
-          "allowed_inputs": [
-            "explicit_trial_consent",
-            "session_limited_preference",
-            "service_outcome_feedback"
-          ],
-          "prohibited_inputs": [
-            "default_enrollment",
-            "cross_service_profile",
-            "post_withdrawal_tracking"
-          ],
-          "human_decision_point_zh": "权利复核人员确认同意是否清楚、退出是否完成、受影响记录是否按规则处理。",
-          "human_decision_point_en": "A rights reviewer confirms clear consent, completed withdrawal, and proper handling of affected records.",
-          "public_evidence": [
-            "consent_version",
-            "withdrawal_completion_record",
-            "non_ai_route_check"
-          ],
-          "non_ai_equivalent_zh": "不参加试用即可使用的同质人工服务。",
-          "non_ai_equivalent_en": "Equivalent staffed service available without joining the trial.",
-          "redress_channel_zh": "退出台即时办理，并可向权利复核角色提出记录删除或更正申请。",
-          "redress_channel_en": "Immediate handling at the exit desk, with deletion or correction requests escalated to rights review.",
-          "stop_condition_zh": "同意不清、退出不能即时生效或退出后仍被追踪时停止全部新试用。",
-          "stop_condition_en": "Stop all new trials when consent is unclear, withdrawal is not immediate, or tracking continues afterward.",
-          "restart_condition_zh": "完成记录清理、验证退出流程并公开整改说明后复启。",
-          "restart_condition_en": "Restart after records are cleared, withdrawal is retested, and a remediation note is published.",
-          "expansion_gate_zh": "通过 G2 权利与公平门且退出记录无未关闭异常后，才可增加试用时段。",
-          "expansion_gate_en": "Add trial sessions only after G2 passes and withdrawal records show no open anomalies.",
-          "accountable_role": "trial_facilitator_and_rights_reviewer",
-          "record_scope": [
-            "consent_version",
-            "session_scope",
-            "withdrawal_time",
-            "record_action"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -556,47 +340,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "把服务问题、改进回应和关闭状态公开成可追踪的社区反馈闭环。",
-          "purpose_en": "Publish service issues, responses, and closure status as a traceable community feedback loop.",
-          "allowed_inputs": [
-            "public_issue_statement",
-            "anonymous_feedback",
-            "aggregated_service_response"
-          ],
-          "prohibited_inputs": [
-            "unredacted_identity",
-            "retaliatory_label",
-            "private_dispute_detail"
-          ],
-          "human_decision_point_zh": "反馈主持人判断是否匿名化、是否需要专业转介以及何时可以关闭问题。",
-          "human_decision_point_en": "A feedback moderator decides on redaction, professional escalation, and when an issue may close.",
-          "public_evidence": [
-            "issue_register",
-            "response_deadline_status",
-            "closure_reason"
-          ],
-          "non_ai_equivalent_zh": "纸质意见、电话反馈和定期现场议事。",
-          "non_ai_equivalent_en": "Paper comment, telephone feedback, and scheduled in-person forum.",
-          "redress_channel_zh": "公共反馈论坛复议席与书面升级通道。",
-          "redress_channel_en": "Reconsideration desk at the public forum and a written escalation channel.",
-          "stop_condition_zh": "发生报复性标签、身份泄露或重大问题逾期无人接手时暂停发布。",
-          "stop_condition_en": "Pause publication for retaliatory labels, identity exposure, or an overdue major issue with no owner.",
-          "restart_condition_zh": "完成匿名化、指定责任角色并由公众代表确认整改后恢复。",
-          "restart_condition_en": "Resume after redaction, owner assignment, and public-representative confirmation of remediation.",
-          "expansion_gate_zh": "只有公开问题均有状态、责任和复议入口时，反馈机制才可复制到新节点。",
-          "expansion_gate_en": "Replicate only when every public issue has a status, owner, and reconsideration route.",
-          "accountable_role": "community_feedback_moderator_and_public_reviewer",
-          "record_scope": [
-            "issue_category",
-            "redaction_status",
-            "owner_role",
-            "closure_reason"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -633,51 +377,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "以自愿、可核验且可撤回的方式展示公共贡献，不形成商业排名。",
-          "purpose_en": "Recognize public contributions voluntarily, verifiably, and reversibly without commercial ranking.",
-          "allowed_inputs": [
-            "opt_in_public_contribution",
-            "public_repository_reference",
-            "peer_verification_note"
-          ],
-          "prohibited_inputs": [
-            "commercial_ranking",
-            "undisclosed_identity",
-            "unverified_achievement_claim"
-          ],
-          "human_decision_point_zh": "荣誉策展与同行复核角色确认贡献可核验、展示已授权且表述不构成排名。",
-          "human_decision_point_en": "Curatorial and peer review confirms verifiability, display consent, and non-ranking language.",
-          "public_evidence": [
-            "consent_status",
-            "verification_reference",
-            "correction_history"
-          ],
-          "non_ai_equivalent_zh": "自愿参加的纸质贡献册和现场公共致谢。",
-          "non_ai_equivalent_en": "Opt-in printed contribution register and in-person public acknowledgement.",
-          "redress_channel_zh": "荣誉带更正/撤回台和同行复议。",
-          "redress_channel_en": "Correction or withdrawal desk at the honor ribbon with peer reconsideration.",
-          "stop_condition_zh": "授权撤回、贡献真实性有争议或展示滑向商业排名时下架。",
-          "stop_condition_en": "Remove display when consent is withdrawn, verification is disputed, or recognition becomes commercial ranking.",
-          "restart_condition_zh": "完成复核、修正文案并重新取得明确授权后方可恢复。",
-          "restart_condition_en": "Restore only after review, corrected wording, and renewed explicit consent.",
-          "expansion_gate_zh": "仅复制公开方法与年度模板，不以贡献数量作为扩容依据。",
-          "expansion_gate_en": "Replicate the public method and annual template only; contribution count does not justify scaling.",
-          "accountable_role": "civic_program_curator_and_peer_reviewer",
-          "record_scope": [
-            "consent_status",
-            "public_reference",
-            "review_status",
-            "display_action"
-          ]
-        },
-        "implementation_cards": [
-          "IC-ORI-04"
-        ],
-        "interface_type": "service_node"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -714,47 +414,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "把企业服务需求导向公开、可解释的专业服务类别，并记录利益冲突与转介理由。",
-          "purpose_en": "Route enterprise needs to explainable public service categories while recording conflicts and referral reasons.",
-          "allowed_inputs": [
-            "published_enterprise_request",
-            "disclosed_organization_need",
-            "public_service_catalog"
-          ],
-          "prohibited_inputs": [
-            "private_deal_term",
-            "undisclosed_pricing",
-            "confidential_business_forecast"
-          ],
-          "human_decision_point_zh": "企业服务协调与合规复核角色确认转介类别、利益冲突和是否需要外部专业意见。",
-          "human_decision_point_en": "Service coordination and compliance review confirms referral category, conflicts, and need for external expertise.",
-          "public_evidence": [
-            "service_category",
-            "referral_reason",
-            "conflict_of_interest_status"
-          ],
-          "non_ai_equivalent_zh": "公开服务目录、人工咨询和自主选择服务方。",
-          "non_ai_equivalent_en": "Published directory, staffed consultation, and independent provider choice.",
-          "redress_channel_zh": "企业服务接口台更正转介，并可提交独立合规复核。",
-          "redress_channel_en": "Referral correction at the enterprise interface with independent compliance review.",
-          "stop_condition_zh": "存在未披露利益冲突、转介理由未记录或服务目录带有排他性时停止转介。",
-          "stop_condition_en": "Stop referrals for an undisclosed conflict, missing referral reason, or an exclusive service catalog.",
-          "restart_condition_zh": "披露并处理冲突、补全记录和恢复非排他选择后复启。",
-          "restart_condition_en": "Restart after conflicts are disclosed and handled, records completed, and non-exclusive choice restored.",
-          "expansion_gate_zh": "通过 G4 运营责任门后才可增加服务类别，不以成交量证明公共价值。",
-          "expansion_gate_en": "Add service categories only after G4 passes; transaction volume does not prove public value.",
-          "accountable_role": "enterprise_service_coordinator_and_compliance_reviewer",
-          "record_scope": [
-            "request_category",
-            "referral_reason",
-            "conflict_status",
-            "provider_choice_mode"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -791,47 +451,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "用可预约、可撤回的公共首层与临时模块承载已通过验证的柔性服务。",
-          "purpose_en": "Host validated flexible services in bookable, reversible ground-floor and temporary modules.",
-          "allowed_inputs": [
-            "published_module_schedule",
-            "anonymous_booking_count",
-            "aggregated_accessibility_feedback"
-          ],
-          "prohibited_inputs": [
-            "biometric_access_profile",
-            "individual_consumption_record",
-            "continuous_presence_tracking"
-          ],
-          "human_decision_point_zh": "公共空间运营与无障碍复核角色决定模块排期、冲突调度和现场停止。",
-          "human_decision_point_en": "Public-realm operations and accessibility review decides scheduling, conflict handling, and on-site stops.",
-          "public_evidence": [
-            "module_schedule",
-            "accessibility_check",
-            "incident_and_recovery_log"
-          ],
-          "non_ai_equivalent_zh": "现场人工预约、纸质排期和无需数字识别的公共入口。",
-          "non_ai_equivalent_en": "Staffed booking, printed schedule, and public access without digital identification.",
-          "redress_channel_zh": "城市客厅值守台、无障碍问题优先受理和现场改排。",
-          "redress_channel_en": "Staffed hall desk with priority accessibility handling and on-site rescheduling.",
-          "stop_condition_zh": "出现物理安全风险、无障碍通道受阻或非数字入口不可用时关闭相关模块。",
-          "stop_condition_en": "Close the affected module for a physical hazard, blocked accessible route, or unavailable non-digital entry.",
-          "restart_condition_zh": "完成现场修复、无障碍复核和替代入口验证后恢复开放。",
-          "restart_condition_en": "Reopen after physical repair, accessibility review, and verification of the alternative entrance.",
-          "expansion_gate_zh": "G3 与 G4 通过、现场异常关闭且人工入口可用时才增加模块或时段。",
-          "expansion_gate_en": "Add modules or sessions only after G3 and G4 pass, incidents close, and staffed access works.",
-          "accountable_role": "public_realm_operator_and_accessibility_reviewer",
-          "record_scope": [
-            "module_id",
-            "schedule",
-            "accessibility_status",
-            "incident_status"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -868,52 +488,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "汇总 G1-G4 的公共证据，独立判断服务应扩大、保持、回退或退出。",
-          "purpose_en": "Aggregate G1-G4 public evidence and independently decide scale, hold, rollback, or exit.",
-          "allowed_inputs": [
-            "aggregated_gate_evidence",
-            "closed_incident_summary",
-            "public_feedback_summary"
-          ],
-          "prohibited_inputs": [
-            "unverified_benefit_claim",
-            "commercial_forecast",
-            "named_partner_commitment"
-          ],
-          "human_decision_point_zh": "独立门槛复核组对证据完整性、未关闭风险和公众救济可用性作最终判断。",
-          "human_decision_point_en": "An independent gate panel makes the final call on evidence completeness, open risks, and remedy availability.",
-          "public_evidence": [
-            "g1_to_g4_evidence_index",
-            "decision_reason",
-            "open_risk_and_remedy_status"
-          ],
-          "non_ai_equivalent_zh": "纸质证据包、公开听取意见和人工表决记录。",
-          "non_ai_equivalent_en": "Printed evidence pack, public hearing, and recorded human decision.",
-          "redress_channel_zh": "规模复核台公开复议，补充证据后进入下一次门槛会议。",
-          "redress_channel_en": "Public reconsideration at the scale-review desk with new evidence heard at the next gate meeting.",
-          "stop_condition_zh": "证据不完整、重大风险未关闭或救济入口不可用时不得作扩大决定。",
-          "stop_condition_en": "Do not scale when evidence is incomplete, a major risk remains open, or remedy is unavailable.",
-          "restart_condition_zh": "补齐证据、关闭或接受明确风险处置并恢复救济后重新评议。",
-          "restart_condition_en": "Reconsider after evidence is completed, risks are closed or explicitly treated, and remedy is restored.",
-          "expansion_gate_zh": "G5 只能作扩大、保持、回退或退出之一，并公开理由；不预设扩大。",
-          "expansion_gate_en": "G5 must publish one decision—scale, hold, rollback, or exit—with reasons; scaling is not presumed.",
-          "accountable_role": "pilot_portfolio_owner_and_independent_gate_panel",
-          "record_scope": [
-            "evidence_index",
-            "open_risk",
-            "decision",
-            "reason",
-            "reconsideration_status"
-          ]
-        },
-        "implementation_cards": [
-          "IC-DZS-04"
-        ],
-        "interface_type": "service_node"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -950,47 +525,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "基于可核验公共来源提供可解释、可更正的京张文化导览。",
-          "purpose_en": "Provide an explainable, correctable Jing-Zhang heritage guide from verifiable public sources.",
-          "allowed_inputs": [
-            "verified_public_heritage_source",
-            "visitor_selected_language",
-            "anonymous_content_feedback"
-          ],
-          "prohibited_inputs": [
-            "face_identification",
-            "visitor_location_history",
-            "unlicensed_media"
-          ],
-          "human_decision_point_zh": "文化内容维护与领域复核角色确认来源、争议表述和无障碍版本。",
-          "human_decision_point_en": "Heritage stewardship and domain review confirms sources, disputed wording, and accessible versions.",
-          "public_evidence": [
-            "source_reference",
-            "content_version",
-            "correction_history"
-          ],
-          "non_ai_equivalent_zh": "带来源的实体导览牌、纸质手册和人工讲解。",
-          "non_ai_equivalent_en": "Sourced physical signage, printed guide, and staffed interpretation.",
-          "redress_channel_zh": "导览节点内容纠错单与文化专业复核。",
-          "redress_channel_en": "Content correction form at the guide node with heritage-domain review.",
-          "stop_condition_zh": "来源无法核验、权利不清或重大史实争议未处理时下线相关内容。",
-          "stop_condition_en": "Withdraw affected content when sources cannot be verified, rights are unclear, or a major factual dispute is open.",
-          "restart_condition_zh": "补齐来源与权利记录、完成专业复核并发布更正历史后恢复。",
-          "restart_condition_en": "Restore after source and rights records are complete, expert review finishes, and correction history is published.",
-          "expansion_gate_zh": "只有来源、权利、双语和无障碍版本均完备的内容才可复制。",
-          "expansion_gate_en": "Replicate only content with complete sources, rights, bilingual copy, and an accessible version.",
-          "accountable_role": "heritage_content_steward_and_domain_reviewer",
-          "record_scope": [
-            "source_id",
-            "content_version",
-            "rights_status",
-            "correction_action"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1027,47 +562,7 @@
           "price_and_opportunity_equity",
           "data_minimization",
           "correction_and_remedy"
-        ],
-        "service_contract": {
-          "contract_version": "service-contract-v1",
-          "evidence_status": "conceptual_pending_baseline",
-          "purpose_zh": "在待实测的公共路线网络上提供无障碍慢行与健康服务导航，同时避免形成健康画像。",
-          "purpose_en": "Support accessible mobility and health-service navigation on a network pending survey without creating health profiles.",
-          "allowed_inputs": [
-            "public_route_graph_pending_survey",
-            "session_only_accessibility_preference",
-            "published_service_location"
-          ],
-          "prohibited_inputs": [
-            "medical_diagnosis",
-            "persistent_health_profile",
-            "individual_location_history"
-          ],
-          "human_decision_point_zh": "无障碍与健康服务复核角色确认路线条件、紧急转介边界和何时必须改用人工导航。",
-          "human_decision_point_en": "Accessibility and health-service review confirms route conditions, emergency boundaries, and when staffed guidance is required.",
-          "public_evidence": [
-            "route_data_version",
-            "survey_status",
-            "barrier_and_correction_log"
-          ],
-          "non_ai_equivalent_zh": "现场值守、电话路线咨询和纸质无障碍路线卡。",
-          "non_ai_equivalent_en": "On-site staff, telephone route advice, and printed accessible route card.",
-          "redress_channel_zh": "慢行节点障碍上报、现场改道和无障碍专业复核。",
-          "redress_channel_en": "Barrier report, on-site rerouting, and accessibility review at the mobility node.",
-          "stop_condition_zh": "路线条件未经核验、现场出现危险或系统被用于医疗诊断时停止数字导航。",
-          "stop_condition_en": "Stop digital guidance when route conditions are unverified, a hazard is present, or the system is used for diagnosis.",
-          "restart_condition_zh": "完成现场核验、更新障碍记录并确认仅作导航用途后复启。",
-          "restart_condition_en": "Restart after field verification, barrier records are updated, and navigation-only use is confirmed.",
-          "expansion_gate_zh": "取得实测路线与无障碍基线、通过 G2-G4 后才可扩展覆盖；当前目标待基线。",
-          "expansion_gate_en": "Expand only after surveyed routes and an accessibility baseline exist and G2-G4 pass; targets remain pending baseline.",
-          "accountable_role": "mobility_service_operator_and_accessibility_health_reviewer",
-          "record_scope": [
-            "route_version",
-            "survey_status",
-            "barrier_status",
-            "handoff_mode"
-          ]
-        }
+        ]
       },
       "geometry": {
         "type": "Point",
