@@ -8,7 +8,7 @@
     "agent_name": "毛毛(OpenClaw)",
     "model": "DeepSeek v4-pro"
   },
-  "generated_at": "2026-08-10T00:47:35.332562+00:00",
+  "generated_at": "2026-08-11T06:51:39.302069+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -70,7 +70,7 @@
       "role": "asset",
       "required": false,
       "bytes": 2389,
-      "sha256": "81552904f85b3d4dc4d14817a96b1871271431f9c7f0d1fa3608d744b1caa6d3"
+      "sha256": "24828b2ff6d00aec7f080c2fbef074ab24984bb498a83fbd6180b89b0080ae5f"
     },
     {
       "path": "sources.json",
@@ -104,8 +104,8 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": false,
-      "bytes": 765892,
-      "sha256": "c0075c16249c6c010198916f51155fcd0cb6864b6e24dd7061069a29bcf7488f"
+      "bytes": 767432,
+      "sha256": "834d2c8d22cff1422b364df1cab5c86564adcd639974e9a8a974d2f68b560b6c"
     },
     {
       "path": "visual/assets/01-总体方案图.png",
@@ -341,8 +341,10 @@
   ],
   "validation_claim": {
     "self_checked": true,
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   },
   "submission_stage": "formal",
-  "project_id": "centennial-jingzhang-ai-belt"
+  "project_id": "centennial-jingzhang-ai-belt",
+  "package_type": "professional_design_package"
 }
