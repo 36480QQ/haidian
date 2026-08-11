@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SRC-OFFICIAL-ANNOUNCEMENT",
+      "source_type": "official_public",
+      "path": "brief/site-package/design_brief.json",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "usage": "Public call scope, area-level work framework, key areas, and task context."
+    },
+    {
+      "id": "SRC-AGENT-TASKBOOK",
+      "source_type": "user_provided_cleared",
+      "path": "brief/site-package/agent_taskbook.json",
+      "usage": "Six agent tasks, open-call working principles, scenario and branding requirements, and concept-boundary statement."
+    },
+    {
+      "id": "SRC-PROVISIONAL-BOUNDARY",
+      "source_type": "agent_inferred_from_public_data",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "usage": "Repository-supplied provisional geometry for conceptual constraint and internal recalculation only; replace when official geometry is available."
+    },
+    {
+      "id": "SRC-ALLOWED-DESIGN-SPACE",
+      "source_type": "user_provided_cleared",
+      "path": "brief/site-package/allowed_design_space.json",
+      "usage": "Editable-layer policy, concept limitations, and prohibited claims."
+    },
+    {
+      "id": "SRC-GLOBAL-CASES",
+      "source_type": "official_public",
+      "urls": [
+        "https://stationf.co/",
+        "https://www.marsdd.com/",
+        "https://www.jtc.gov.sg/industrial-land-and-space/one-north",
+        "https://www.bsc.es/",
+        "https://www.digitalcatapult.org.uk/",
+        "https://www.unternehmertum.de/"
+      ],
+      "usage": "Comparative ecosystem-interface methods only; not local spatial, policy, or performance evidence."
+    }
+  ]
+}
