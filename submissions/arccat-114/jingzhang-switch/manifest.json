@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d79673b0c364703467c30699417a2c4b23ce0d592619407457e28bf5387c843b"
+      "sha256": "954ccd75b71484257d866c0aea5f5b7a05905a064c8de09810542ac701fed6a6"
     },
     {
       "path": "compliance_matrix.json",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1fef6f08bbbf9899e27abb5b7e602ce86e4cf4d722676878103d29b9fce22c72"
+      "sha256": "bc81d9130e4a026b7d6d2861b8763a30e01e411a60ab961da7d7f694c854f251"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,10 +287,11 @@
     },
     {
       "path": "visual/assets/switch-protocol.json",
-      "role": "switch_protocol",
+      "role": "other",
       "required": false,
       "language": "neutral",
-      "sha256": "66bf846dc5d2619f377d05c1c77e9818e6266509d92ae21ac1ccff1c3082929d"
+      "sha256": "66bf846dc5d2619f377d05c1c77e9818e6266509d92ae21ac1ccff1c3082929d",
+      "role_detail": "switch_protocol"
     },
     {
       "path": "assets/figures/greenway-section.png",
@@ -346,6 +347,13 @@
       "description_zh": "概念封面：场地走廊+道岔符号+一岔三场两翼品牌区；PIL 确定性渲染，非现场照片。",
       "description_en": "Conceptual cover: site corridor, switch symbol, one-switch-three-yards-two-sidings brand zone; deterministic PIL rendering, not site photography.",
       "sha256": "d244126fbd5514e4883e6b2d00dde3f5f3f018e957bb52711993acd61a60281e"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "zh",
+      "sha256": "89d567828949a4775a4c1c0ee87791aa5b0b7a106620ae932bf2b5792c4fe973"
     }
   ],
   "validation_claim": {

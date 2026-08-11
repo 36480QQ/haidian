@@ -1611,6 +1611,10 @@ def validate_manifest_file(report: ValidationReport, repo_root: Path, proposal_d
                     report.add_error(message)
                 else:
                     report.add_warning(message + " (legacy package compatibility)")
+            elif declared_digest and safe_path == "manifest.json":
+                report.add_error(
+                    f"{proposal_dir}/manifest.json: manifest.json must not declare sha256; remove the field"
+                )
             elif declared_digest:
                 actual_digest = hashlib.sha256(listed_file.read_bytes()).hexdigest()
                 if declared_digest != actual_digest:

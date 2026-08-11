@@ -401,6 +401,46 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 ![京张 AI 城市代谢账本：完整系统边界、三地十二场景、七类资源、退出去向与显式未知（G0；实测能源/算力/人工分钟均为 0 个场景）](assets/figures/urban-metabolism-ledger.png)
 
+### 反脆弱失败治理：停止要能回写，恢复不能冒充授权
+
+现有方案已经有失败侧线、普通—验证—故障—恢复四态、公共时刻表、场景护照和 T-02 合成回放；本轮不重复画另一条侧线，也不另造治理品牌，而是在既有 JZ-AIOS 内补上最关键的闭环：同一次暂停、复核、恢复、撤回或退役，必须同时准备**场景护照—公共时刻表—证据矩阵**三份原子回写。任一载体缺失、版本不一致或状态相互矛盾时，公众界面显示更保守的组合，普通/非 AI 路径优先，禁止重启；运行态、成熟度、授权态和服务态始终分开，恢复普通使用不会自动把 G0 升级，也不会产生部署授权 [data:visual/assets/failure-governance-register.json#three_carrier_writeback_contract] [data:visual/assets/key-area-evidence-matrix.json#antifragile_failure_governance_contract] [assumption:A-ANTIFRAGILE-GOVERNANCE-015]。
+
+失败先按六类进入同一语法：安全与无障碍、权利/同意与禁采、来源/版本与可复现、服务与人工交接、证据与决策、场所恢复与退出。前两类立即硬停；来源和版本冻结输出并保留旧证据；人工路径缺失时停止自动化、保留同任务人工/非 AI 服务或给出安全拒绝；分母、证据或申诉未进入决策时暂停 go/no-go；构件、数据、服务或场所没有可负责的去向时维持停止或主动退役。公共记录只公开受影响任务、失败类、当前状态、纠正、证据版本、普通绕行和角色类型，不公开申诉人身份、敏感叙述或原始个人数据，也不做失败羞辱榜 [metric:failure_governance_failure_class_count] [metric:failure_governance_real_failure_event_count]。
+
+| 载体 | 暂停时必须写什么 | 恢复或退役时必须写什么 | 缺失时的公众状态 |
+|---|---|---|---|
+| 场景护照 | 四轴状态、失败类、停止权限角色、前一版本、证据/申诉引用 | 新版本、独立复测、到期/撤回/退役、未解决责任 | `failure_stop / G0 / not_authorized` |
+| 公共时刻表 | 公众运行态、普通/非 AI 路径、人工联系、开始时间、下次更新 | 普通使用恢复、可用服务、来源版本、绕行/退出 | 自动化不可用；普通路径或安全拒绝先行 |
+| 证据矩阵 | 哪一条主张被暂停或缩小、证据锚点、范围与限制 | 追加纠正、保留旧证据、复测结果、go/no-go 及“不授权什么” | 主张保持暂停，禁止用旧 PASS 重启 |
+
+可读使用旅程以 T-02 的 `STOP-STALE-SOURCE` 为合成示例：① 合成请求命中过期来源，不生成实质回答；② 冻结输出，保留纸面来源页与人工路径；③ 交给“来源包保管角色”，但角色目前仍待确认；④ 为同一事件准备三载体回写；⑤ 追加纠正版本并保留旧版本；⑥ 由独立复测角色按锁定条件完整重放，现实复测完成数仍为 0；⑦ 证据未闭合则继续停止或退役，闭合也只恢复普通使用。T-02 仍是 deterministic、无个人信息、无模型/API/现实服务调用、fail-closed 的合成治理回放，不是现实事故、服务成绩或现场恢复 [data:visual/assets/t02-g0-g1-replay-result.json#STOP-STALE-SOURCE] [metric:failure_governance_completed_real_independent_retest_count]。
+
+公众可口头、纸面或经未来真实存在的人工窗口提出停止或申诉，无需账户、扫码或 AI；决策回执必须说明暂停、缩小范围、更正、复测、撤回、退役或“有理由不改变”中的一种影响。新证据采用追加式版本：新记录通过 `supersedes / superseded_by` 链接旧记录，旧证据仍可寻址，不能被版本更新覆盖。重复硬失败、没有责任明确的停止权限、普通/非 AI 路径无法恢复、权利事件无法闭合、独立复测不能复现主张或退出没有去向时，主动退役成为合法的 NO-GO 结果；退役回执逐项关闭服务与授权、组件去向、数据/日志、同任务服务、场所恢复、未解决责任和独立验收 [metric:failure_governance_appeal_decision_change_count] [metric:failure_governance_completed_real_retirement_count]。
+
+**常驻授权边界：文件检查、合成回放、机器 PASS、独立复测或恢复验收，只对明确对象、判断主体、证据、有效范围和限制成立；均不授权试用、采购、建设、部署、成熟度升级、场地批准、专业批准、权利清除或现实成效主张。** 当前现实失败事件、确认停止权限、公开纠正、现实独立复测、主动退役和批准重启均为 0；停止到人工交接时间、普通使用恢复时间为 unknown，而不是空白或虚构数字 [metric:failure_governance_confirmed_stop_authority_count] [metric:failure_governance_stop_to_staffed_handoff_time] [metric:failure_governance_ordinary_use_recovery_time]。
+
+![反脆弱失败治理：六类失败、停止恢复故事板、三载体原子回写、四轴分离、申诉和主动退役（G0 概念合同；现实事件为 0）](assets/figures/failure-governance-writeback.png)
+
+### 气候韧性验证走廊：普通蓝绿基线先成立，提示增量必须可退出
+
+本轮不另建气候治理品牌，也不重做维护工单、资源账本、失败侧线或权利系统；它把这些既有后台约束应用到一条可读的气候空间关系：**连续普通蓝绿路径—遮阴与可达休息意图—静态非 AI 提示—人工巡检交接—雨洪/生态维护净空**先构成完整日常基线；只有在未来获批、限域、有责任人的条件下，AI 辅助提示与小月河气候观察翼概念边才作为间歇、可拒绝、可停止、可拆除的叠层出现。图中观察翼是关系原型，不是河岸精确位置、现状建筑、退界、已建设施或工程结论 [data:visual/assets/climate-resilience-contract.json#cohesive_work_packages] [data:visual/assets/key-area-evidence-matrix.json#climate_resilience_corridor_contract] [assumption:A-CLIMATE-RESILIENCE-016]。
+
+典型剖面把三个不能互相挤占的带画在一起：普通路径与遮阴休息保持连续；雨洪渗透、溢流、园林水务检修和生态过程形成设备不得进入的净空；可拆挂点、电源、网络、数据、标识和排队仅能位于服务边。任一叠层缩窄普通路径、妨碍休息、遮挡可读线索、阻断雨洪或生态维护、缺少人工确认，或在极端天气仍继续活动，就立即 fail-closed：停止可选层，撤除构件和固定件，隔离电源/网络，按获批规则关闭数据与服务，清除标识和排队，修复表面，并由未来独立角色验收普通场所恢复。传感器不能替代园林、水务、场地、应急、无障碍或社区判断；设备退出后，场所和同任务服务仍必须完整 [metric:climate_installed_sensor_or_interface_count] [metric:climate_completed_place_restoration_receipt_count]。
+
+| 同一任务 | 静态非 AI 主路径 | 可选 AI 辅助支线 | 共同停止条件 |
+|---|---|---|---|
+| 获得可理解、经人工确认的气候安全行动，并选择继续普通通行、休息、寻求人工或离开 | 高对比实体提示使用获批公共来源与人工观察，写明来源/日期、行动、人工或纸面联系和退出；无需账户、扫码、屏幕、传感器、模型或网络 | 单独披露和自愿选择，只用未来获批的最小数据；同一人工责任人确认，输出同一行动词汇、普通路径、人工交接、申诉和退出 | 来源过期、两支线不一致、无人确认、输出不可达、能源/网络不可用、权利事件、普通路径或维护净空受损 |
+
+两条路径比较的是**同一任务与同一群体结果**，不能把更快的数字提示建立在更弱的静态服务上。未来比较至少分别记录老年人、残障/行动不便者、低数字素养者和无设备/无账户者的完成、放弃、断点、等待、人工交接与权利实现；当前现实提示事件、误报漏报、响应时间、群体结果与确认运营主体均为 0 或 unknown。图件、模板完整或合成 PASS 均不能证明预警准确 [metric:climate_real_warning_event_count] [metric:climate_known_warning_performance_count]。
+
+脆弱群体旅程保持四态而不改任务：① 普通态沿实体导视到遮阴/休息意图点，可口头或纸面求助并直接离开；② 可选辅助态先读静态提示，再选择或拒绝辅助支线，仍获得同一人工、申诉和退出；③ 极端天气停止态中活动和可选设备全部停止，以实体安全拒绝引向普通出口或人工交接；④ 恢复态先验收危险清除、雨洪/维护净空、普通路径、休息意图、实体提示、表面与人工巡检，可选层继续关闭。恢复普通使用不会自动升级 G0 或产生重启授权 [data:visual/assets/climate-resilience-contract.json#vulnerable_group_journey]。
+
+未来实测采用“类型化锚点 + 分母 + 证明上限”，而不是用渲染精度补数据：连续遮阴待测长度需要测绘路径段与有日期的日照/观察记录；可达休息节点需要测绘节点与无障碍共测；人工巡检覆盖需要版本化路线日志与责任签署；预警误报漏报需要预注册同任务事件、参考来源和独立复测；雨洪维护完成需要官方设施清单、维护记录和验收；停止时间需要获批事件日志与核验时间戳；设备退出需要全组件登记及场所恢复回执。以上七项当前均为 `unknown`，现实现场测量为 0；绿地率只表达概念几何比例，现实测量计数只表达证据状态 [metric:green_ratio] [metric:climate_real_field_measurement_count]。连续遮阴与可达休息值仍待正式测绘和共测，临时边界、概念节点或传感器数量不能替代微气候、热舒适、雨洪能力、海绵绩效或无障碍结果 [metric:climate_continuous_shade_length] [metric:climate_reachable_rest_node_count]。
+
+季节运营只写触发条件，不伪造年度班次：高温/日照关注时先检查普通遮阴与休息意图并发布人工确认的静态提示；降雨/雨洪关注时先保持流路、溢流、巡检和维护净空；生态维护窗口中维护优先，设备与公众活动退出工作区。极端天气、未知水文影响、维护冲突、无责任人员或普通场所无法恢复均要求停止。正式边界、现状测绘、微气候、雨洪/市政/生态条件、权属、开放时段、责任与停机权限、专业结论、阈值、设备和权利均列为外部待核，不把缺失资料包装成气候成绩。
+
+![气候韧性验证走廊：普通蓝绿路径、遮阴休息、雨洪与生态维护净空、人工巡检、同任务提示对照、可拆服务边和脆弱群体四态旅程（G0；实测、设备与责任确认均为 0）](assets/figures/climate-resilience-corridor.png)
+
 八个项目形成空间、协议和运营一一对应的更新包 [depth:renewal_project_list]：
 
 | 项目 | 主要内容与 Feature | 前置条件 | 建议责任组合 | 概念验收 |
@@ -506,7 +546,7 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 74 个路径（其中 73 个为非 manifest 内容文件）；74 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
+- 版权与品牌风险：本次提交的最终文件集合为 manifest 中 89 个路径（其中 88 个为非 manifest 内容文件）；89 条逐文件资产记录与 29 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。

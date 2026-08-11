@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以北京2026年无人机管制规则为底线，把京张从航路想象改造为城市低空公共服务的验证基础设施：城内做数字治理与公众审议，场外做合规实飞验证，获批任务才按窗口进入。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v2.2"
+iteration: "v2.1"
 ---
 
 # 天空有边 / BOUNDED SKY：百年京张低空公共协议带
@@ -40,12 +40,6 @@ iteration: "v2.2"
 
 当前总体边界和三处重点区均来自仓库临时粗略几何，不能用于审批、确权、精确面积或真实飞行规划 [data:geometry/site_boundary.geojson#SITE-001]。取得官方 polygon、建筑与人口敏感点、气象、噪声、通信覆盖和许可资料后，Agent 必须重裁所有图层，重新计算地面与空中预算，重跑 12 项压力测试，并更新五张图、双语网页和 PDF；不能只替换一张底图。
 
-### 地图阅读方法：图上三种线不能混为一谈
-
-本版把仓库提供的城市信息真正落到图上，但不制造仓库并不存在的精确底图。灰色范围表达公告所述 43.6 平方公里统筹研究范围，黑色虚线表达 11.4 平方公里总体设计范围，三个色块表达自北向南的众智园、AI 原点社区和大钟寺；这些 polygon 均为仓库维护者根据公告文字四至、南北顺序和公告面积形成的临时粗略几何。北五环路、京藏高速、西直门外大街、万泉河路，以及五环路/清河、五道口/清华东路西口、大钟寺站等名称来自公告，只用于帮助读者理解城市关系，不表示精确道路红线、站点边界或地块位置 [source:OFFICIAL-ANNOUNCEMENT] [source:BOUNDARY-SOURCE]。
-
-黄色南北线和三条东西线都是设计建议：前者表示沿京张遗址公园组织步行、骑行、人工公共服务和应急回退的地面联系，后者表示三区分别需要继续踏勘的东西过街与慢行联系。它们不是现状道路，不是道路红线，更不是飞行航线。仓库目前没有正式道路、建筑、地块、文保控制和公共设施 GIS，因此本版宁可降低图面精度，也不以装饰性底图制造确定性；正式资料到位后，应按“边界替换—现状调查—约束叠合—方案重裁—指标复算—公众核对”的顺序整套更新 [data:geometry/roads.geojson#ROAD-001] [depth:mobility_municipal_public_service]。
-
 ![总体概念、证据边界与低空公共协议](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
@@ -65,7 +59,7 @@ iteration: "v2.2"
 
 ![从公共必要性到人工指挥的六道硬门](assets/figures/governance-gates.png)
 
-![总体范围内四类概念空间分工](assets/figures/land-use-structure.png)
+![三层范围、三舱与五维空域预算](assets/figures/land-use-structure.png)
 
 ## 统筹研究范围产业与未来城市研究
 
