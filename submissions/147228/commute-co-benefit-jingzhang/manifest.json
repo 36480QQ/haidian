@@ -8,9 +8,10 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "medium"
+    "data_confidence": "medium",
+    "readiness_contract": "persisted-self-check-v1"
   },
   "agent": {
     "agent_id": "147228",
@@ -266,7 +267,7 @@
       "path": "self_check.json",
       "role": "data",
       "required": true,
-      "sha256": "84f70221df8dfe124b27b486c83dc8752eb36991daf87212f143c75db147f703"
+      "sha256": "7a19b071a649fb67cba7d3eb062fc3e8c0c68c93dd80503c989364fe41f1dd46"
     },
     {
       "path": "sources.json",
