@@ -96,6 +96,20 @@ The northern engine focuses on full-stack independence, standards validation and
 
 Perforated metal and frosted glass filter laboratory light into the walkway, where equipment warmth meets the damp smell of a rain-wet drain. Wheel tracks, chalk marks and bent cable sleeves record each retest.
 
+### One Person's 24 Hours
+
+A young AI researcher returning from the Bay Area walks into Jingzhang Open House for the first time.
+
+In the morning, he scans his passport to register at the Arrival Exchange. Palms have polished the copper handrail; his suitcase wheels make a soft click over the joints between stone slabs.
+
+Later that morning, AI Origin matches him to a mission table. The oak top holds cup rings and pencil dents; he writes his name on a note and sticks it in front of his seat.
+
+In the afternoon, he enters Zhongzhiyuan's Open Test Yard. The equipment's low hum overlaps with discussion in the courtyard as the test moves from the table into the field.
+
+At dusk, he returns to Dazhongsi's Receipt Wall. A new sheet overlaps old paper edges; his fingertip brushes a staple and raises a sandy rustle.
+
+At night, he walks out of Dazhongsi. The steps keep shallow marks from suitcase wheels and shoe soles; turning back, he sees his freshly posted name in the Contribution Gate's low light.
+
 All three rooms share a mission ID, entry gate and receipt format. A technology may pass safety and performance tests in Zhongzhiyuan, co-design with residents and operators at AI Origin, and enter public experience at Dazhongsi. A failed gate sends the project back or exits it; publicity cannot substitute for evidence.
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
