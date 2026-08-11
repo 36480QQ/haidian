@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v0.2"
+iteration: "v0.3"
 summary: "京张城市 AI 验证场不是科技展带，而是一套把实验室能力送入真实城市、再由真实使用者决定其修订、扩展或退出的空间制度。方案以一条普通城市公共轴、三区两翼、三类验证场、八个横向接口和十二张场景卡为骨架，重点设计 AI 学习廊、具身智能城市实验室、AI 健康与老龄实验室，并以 City Release V0.1—V2.0 管理证据、许可、安全、人工接管和公共回报。"
 tracks: ["enterprise-services-ecosystem", "civic-agent-governance", "ai-traffic-walkability"]
 scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai-traffic-walkability"]
@@ -18,6 +18,19 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 **实施原则：城市在环 / City-in-the-Loop**
 
 这不是在京张沿线陈列更多 AI 产品，而是回答一个更难的问题：实验室里的能力进入真实街道、公园、社区和交通界面后，谁来定义问题，谁能说“不”，出了错谁接管，停止以后城市还留下什么。百年京张曾把自主工程交给真实地形与长期运行检验；今天，这条走廊可以把 AI 交给真实城市检验。这里的“第一公里”是从研究能力到首个受约束城市场景的制度与空间距离，不是“世界第一”或落地承诺。
+
+## 一页交付摘要
+
+| 议题 | 本案回答 | 可核验交付 |
+| --- | --- | --- |
+| 城市定位 | 以百年京张文化带、都市 AI 生活体验带、AI 融合创新带承接“全球 AI 产业高地、科技文化朝圣地”愿景 | 一轴、三区、两翼与三层范围框架 |
+| 空间策略 | 普通公共生活轴先行，八个横向接口逐点确认合法穿越，三类验证场只在有界单元内运行 | 五张双语分析图、三组重点区研究窗、轨道竖向关系 |
+| 创新机制 | `City-in-the-Loop` 把城市问题提出者、普通使用者和运营者置于模型之前；`City Release` 管理观察、原型、短期部署和复制 | 12 张场景卡、3 份测试契约、V0.1—V2.0 四级门 |
+| 实施组织 | 每项试验均设置 A/R/C/I 责任、普通服务基线、候选验收门槛、运行回执、申诉、停止、恢复与公共回报 | 8 个更新项目、5 类资源台账、年度运营闭环 |
+| 公共利益 | 六类待验证画像用于发现排除；无手机、无账户、AI 关闭时仍有清楚路径和人工服务 | 两线旅程、Human Handoff Desk、普通服务修补清单 |
+| 证据边界 | 运行铁路按地面、地下、高架分别核对；临时 geometry 只作复算，合作、效果和法定指标不作虚构 | 来源登记、假设登记、合规/标准/深度矩阵与停止规则 |
+
+这六项不是六套平行概念，而是一条交付链：**任务定位 → 空间接口 → 有界试验 → 运行回执 → 公共判断 → 修订、退出或有限复制**。任何环节缺少责任人、证据或恢复办法，项目都停留在纸面版本。
 
 ## 设计依据与资料清单
 
@@ -37,6 +50,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 总体结构保持组织方的“一轴、三区、两翼”。一轴被定义为“京张遗产—公共生活轴”，首先承担步行、无障碍、骑行衔接、休息、遮阴、卫生间信息、遗产阅读和人工服务；AI 关闭后，这条轴仍应有用。三区分别对齐 Technology Testbed、Innovation Testbed 与 Urban Life Testbed；两翼不是新划地块，而是输入能力与真实场景的关系网络。中关村科技服务翼提供研究、评价、开源、法务、资本与人才服务，小月河场景赋能翼提供生态、交通、社区生活和公共服务问题。[depth:overall_spatial_structure]
 
+三条定位在空间和运营上逐项落位，而不是停在口号层：**百年京张文化带**以铁路遗产、公共证据和 AI 治理教育连接科技文化朝圣功能；**都市 AI 生活体验带**以普通服务基线、可感知但可退出的 AI+ 场景连接品质生活与智能活力城市功能；**AI 融合创新带**以“研究—受控测试—公开回执—转化”连接全栈产业、创新生态与国际交流功能。五项功能由同一条公共轴串联，但分别有场所、运营人与进入下一版本的门槛。[source:AGENT-TASKBOOK]
+
 ![一轴、三区、两翼与三类验证场](assets/figures/land-use-structure.png)
 
 八个横向接口 JZ-01—JZ-08 是下一轮走查和截面设计的工作单元，不是八个已确定项目。每个接口都先标合法过线点、普通服务基线、开放状态和责任主体，再判断是否适合试验。概念连线遇到现役铁路围界必须中断，只有既有或正式批准的桥、涵、道路、站区通道才能作为东西联系。[data:geometry/roads.geojson#ROAD-001]
@@ -54,6 +69,10 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 案例研究只借机制，不搬数字。one-north 提示研发、生活与公共空间应并置；STATION F 提示成长服务需要被编排；Mila 提示责任反思应嵌入研究周期；Knowledge Quarter 提示创新是跨机构网络；Kendall Square 提示生态形成需要长期演化。另以城市 living lab 与具身系统受控测试的公开方法补足“真实世界验证”维度。外部面积、投资、企业数量和绩效均不转移为本地结论。[source:CASE-ONE-NORTH] [source:CASE-MILA]
 
 产业—空间映射采用“能力到接口”，而不是“企业到地块”。众智园聚焦全栈研发、安全评估、设备维护和封闭试验；AI 原点社区聚焦问题定义、成果解释、开源协作、法务与转化；大钟寺聚焦产品进入商业与日常生活后的可用性、人工服务和运营成本。中关村科技服务翼横向支持三处验证场，小月河场景赋能翼用公共生活检验技术是否真的减少负担。[data:geometry/key_areas.geojson#PROV-KEY-001]
+
+区域协同采用“候选接口、双向任务、不过度承诺”的方式组织。北纬社区可作为人才—高校—孵化服务的公开问题接口；未来科学城可交换科研成果与产业问题的受控验证方法。[source:REGION-NORTH-LATITUDE] [source:REGION-FUTURE-SCIENCE-CITY]
+
+怀柔科学城可连接大科学装置成果解释、科学传播与城市场景转译；北京经开区可连接机器人制造验证、运维和供应链问题；京津冀协同只讨论经本地验证后仍可复用的测试协议与公共回执。以上均依据公开职能识别合作方向，不代表已建立合作、获得场地、资源、订单或预算；每一项都须由双方确认问题 owner、数据权限、费用、知识产权与退出条件后才可进入项目库。[source:REGION-HUAIROU-SCIENCE-CITY] [source:REGION-BTH-ROBOTICS]
 
 品牌视觉不另造“科技符号”。标志方向由一段 1909 的轨距线、一段当代城市界面线和一个开放校验框构成；框内永远保留缺口，表示城市可以拒绝、修订与退出。公众主文案使用“从实验室到真实城市的第一公里”，英文使用 “The First Mile from Lab to City”；`Jing-Zhang Urban AI Testbed` 作为工作制度名，不宣称商标或官方命名。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
@@ -89,6 +108,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 十二张场景卡分属三旗舰，每张都写同样的 17 个字段：User、Problem、Ordinary Baseline、AI Capability、Physical Space、Data、Data Authority、Operator、Human Review、Privacy、Safety、Baseline Measure、KPI、Stop Condition、Exit Condition、Evidence、Public Return。场景卡不把“能做什么”放在第一位，而先证明没有 AI 时任务如何完成。[data:visual/assets/scenario_nodes.json#SC01] [metric:scenario_node_count]
 
+三旗舰分别把 AI 接入城市规划的不同对象：学习廊处理文化遗产、公共教育和城市治理中的解释与反馈；具身实验室处理交通、公共空间和产业测试中的路权、急停与维护；健康老龄实验室处理社区公共服务、包容性出行和人工转接。AI 在这里不是单独的一层“智慧设施”，而是被土地使用、空间边界、运营班次、公共权利和退出成本共同约束的城市系统。[depth:ai_ecosystem_industry_space]
+
 | 旗舰 | 场景卡 | 主要验证问题 |
 | --- | --- | --- |
 | AI 学习廊 | 城市问题台、无屏解释步道、反向实验室、失败与修订档案 | 普通人能否理解、质疑、改写并追踪一个 AI 项目 |
@@ -96,6 +117,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 | AI 健康与老龄实验室 | 无手机服务查找、休息到服务路线、照护者转接、服务目录审校 | 不采敏感健康信息时，服务旅程能否更可靠且保留人工替代 |
 
 三个重点测试契约分别覆盖学习、具身和健康老龄旗舰。契约必须写清问题 owner、数据 owner、现场 operator、独立 reviewer 与最终 accountable person；成功看端到端完成、最弱使用者负担、接管与公共回报，不以平均模型准确率掩盖伤害。任何伤害、身份泄露、急停失败、高风险错误指引或人工责任链中断，立即回到 V0.1。[metric:test_scenario_count] [metric:pilot_contract_count]
+
+候选验收门槛在测试前登记，不冒充现有成绩：PC01 要求每个样本都有具名人工 owner、问题提出者确认技术转译没有歪曲原意，且高风险误分类为零；PC02 要求每次急停演练成功、设备不侵入普通通道、弱势使用者不增加绕行；PC03 要求每个样本保留无手机路径和具名人工转接，且不产生诊断或风险评分。当前三项 `field_status` 均为 `not_authorized_not_run`，实测结果保持空值。回执记录版本、场地、时段、责任班次、基线、例外、投诉、停止、删除与恢复；公众可以申诉，独立复核者可以要求降级，最终责任人不能把判断外包给模型。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -127,6 +150,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 三类公共空间组件形成统一而克制的风貌：`Evidence Frame` 显示事实、假设、负责人和更新时间；`Human Handoff Desk` 提供不登录的人工入口；`Recovery Bay` 让设备故障时退回、不占通行。它们使用深墨、氧化红、矿物绿和校验橙四种功能色，不以霓虹屏幕制造“AI 感”。文化标识与总体 Logo 分开，遗产解释注明来源和年代。
 
+文化叙事遵循“铁路工程的实证—中关村创新的求证—City Release 的公共验证”三段链条：1909 不是复古布景，而是长期运行对工程的检验；今天的 AI 也必须接受真实城市、普通人和维护周期的检验。国际交流采用可翻译的工作句 **“From railway proof to public AI proof: useful when offline, accountable when active.”**，用于解释制度，不宣称官方口号；双语材料保留相同事实、限制和责任，不以英文版本放大愿景。
+
 三个公共地标不是雕塑，而是可用制度：原点问题台、城市接管门、百年失败档案。它们分别让城市提出问题、让人随时接管、让失败可以被记住和复用；是否设置及具体位置仍需运营与场地许可。[metric:public_landmark_count] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## 更新项目清单、实施政策与分期计划
@@ -137,11 +162,17 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 
 政策工具不是补贴清单，而是四份标准文件：场景一页纸、场地与数据许可单、故障与人工接管记录、公共回报与退出清单。采购或合作评价把恢复原状、人工工时、能耗、无手机完成率和最弱使用者负担纳入总成本；供应方不得单方面决定失败是否公开。
 
-长期运营形成年度闭环：春季重做路径与设施基线，夏季测试热环境与夜间服务，秋季举行开放的 City Release Review，冬季发布维护、失败、停止和删除记录。活动是设计建议；日期、主办方、资金和合作方均未确定。[source:AGENT-TASKBOOK]
+三份测试契约按候选 RACI 落责。城市问题 owner 或受托公共运营者承担最终责任（A）；现场运营、设施维护与人工接管班组执行（R）；铁路、规划、无障碍、安全、隐私及相关专业人员按场景会签（C）；周边使用者、场地管理者和公开档案接收者获得可理解通知（I）。正式主体尚未确认前只登记角色，不虚构机构承诺。每次进入 V1.0 前必须同时出具场地许可、数据许可、普通基线、值守表、候选验收门槛和恢复押项；结束后形成一份可追踪的 City Release 回执。
+
+实施资源分成五本台账：人员台账记录责任与班次；空间台账记录开放边界、合法通行和恢复状态；设备台账记录供电、消防、维护、急停和退场；数据台账记录控制者、最小字段、保留期、删除与申诉；公共价值台账记录普通服务修补、人工工时、投诉、失败和留下的设施。项目转化依次经过 **公开问题征集 → 公益与专业复核 → 纸面/离线/封闭原型 → 有界短期试验 → 公开回执 → 采用、修订或停止 → 有限复制**，不得从展示直接跳到规模化部署。
+
+长期运营形成年度闭环：春季重做路径与设施基线，夏季测试热环境与夜间服务，秋季举行开放的 City Release Review，冬季发布维护、失败、停止和删除记录。年度固定运营单元包括问题台值守、无障碍同行走查、设备急停演练、服务目录审校和失败档案整理；活动是设计建议，日期、主办方、资金和合作方均未确定。[source:AGENT-TASKBOOK]
 
 ## 指标体系、面积复算与合规矩阵
 
 本案区分三类指标。A 类是从当前 GeoJSON 复算的面积与长度；B 类是结构化资产计数，如 12 场景、6 画像、3 测试契约、3 地标；C 类是正式规划或现场绩效，当前保持 unknown。A、B 类可核查但不自动成为“好”的证据；C 类不能由 AI 补值。[metric:scenario_node_count] [depth:metrics_recalculation]
+
+测试契约中的数值只分为“候选验收门槛”和“实测结果”两列。前者用于试验前的可否决设计，后者只有在授权、基线和独立复核成立后才可填写；本轮全部实测结果为 `null`。这一区分避免把设计目标写成运行绩效，也让停止决定可以由单项硬门槛触发，而不被综合平均值掩盖。
 
 ![指标、来源、未知项与 City Release 门槛](assets/figures/metrics-evidence.png)
 
@@ -170,7 +201,8 @@ scenarios: ["enterprise-service-copilot", "public-safety-operations-review", "ai
 2. 国家铁路局、北京市交通与海淀区公开的京张高铁、清华园隧道、遗址公园及轨道关系资料。[source:NRA-JINGZHANG-HSR]
 3. 仓库 site package、source registry、processed fact pack 与 provisional geometry。[source:SITE-PACKAGE]
 4. one-north、STATION F、Mila、Knowledge Quarter、Kendall Square 等案例的官方或机构公开页面。[source:CASE-KENDALL-SQUARE]
-5. WHO 年龄友好城市与 UN-Habitat 儿童公共空间指南，只作通用设计镜头。[source:UNHABITAT-CHILD-PUBLIC-SPACE]
-6. OpenStreetMap contributors，ODbL 1.0；仅作定位和制图方向性证据。[source:OSM-CONTEXT]
+5. 北纬社区、未来科学城、怀柔科学城、北京经开区及京津冀相关官方公开资料，仅用于识别候选协同接口。[source:REGION-BTH-ROBOTICS]
+6. WHO 年龄友好城市与 UN-Habitat 儿童公共空间指南，只作通用设计镜头。[source:UNHABITAT-CHILD-PUBLIC-SPACE]
+7. OpenStreetMap contributors，ODbL 1.0；仅作定位和制图方向性证据。[source:OSM-CONTEXT]
 
 完整 URL、访问日期、用途、许可和限制见 `sources.json`。结构化引用是审计入口，不改变来源等级；正式设计仍需由规划、建筑、交通、铁路、市政、景观、文保、无障碍、安全、隐私与运营团队共同深化。

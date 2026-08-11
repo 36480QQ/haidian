@@ -80,6 +80,102 @@
       "phase": "V1.0"
     }
   ],
+  "candidate_raci": {
+    "accountable": "urban problem owner or delegated public operator; final judgement cannot be delegated to a model",
+    "responsible": "site operation, human handoff, facility maintenance, and restoration shifts",
+    "consulted": "planning, railway, transport, accessibility, safety, privacy, heritage, and other scenario-specific professionals",
+    "informed": "affected users, site managers, nearby operators, and recipients of the public record",
+    "status": "role_design_only_organisations_not_confirmed"
+  },
+  "regional_interfaces": [
+    {
+      "id": "RI01",
+      "zh": "北纬社区：人才—高校—孵化服务与公开问题接口",
+      "en": "North Latitude Community: talent-university-incubation services and public-problem interface",
+      "entry_gate": "two_way_problem_owner_data_cost_ip_and_exit_confirmed",
+      "claim_limit": "candidate_direction_no_partnership_or_resource_commitment"
+    },
+    {
+      "id": "RI02",
+      "zh": "未来科学城：科研成果—产业问题—有界城市验证方法接口",
+      "en": "Future Science City: research outcome-industry problem-bounded urban validation interface",
+      "entry_gate": "two_way_problem_owner_data_cost_ip_and_exit_confirmed",
+      "claim_limit": "candidate_direction_no_partnership_or_resource_commitment"
+    },
+    {
+      "id": "RI03",
+      "zh": "怀柔科学城：大科学成果解释、科学传播与城市场景转译接口",
+      "en": "Huairou Science City: major-science interpretation, public communication, and urban translation interface",
+      "entry_gate": "two_way_problem_owner_data_cost_ip_and_exit_confirmed",
+      "claim_limit": "candidate_direction_no_facility_or_research_access"
+    },
+    {
+      "id": "RI04",
+      "zh": "北京经开区：机器人制造验证、运维与供应链问题接口",
+      "en": "Beijing E-Town: robotics manufacturing validation, maintenance, and supply-chain interface",
+      "entry_gate": "two_way_problem_owner_data_cost_ip_and_exit_confirmed",
+      "claim_limit": "candidate_direction_no_supplier_order_or_budget"
+    },
+    {
+      "id": "RI05",
+      "zh": "京津冀：经本地验证后可复用的测试协议与公共回执",
+      "en": "Beijing-Tianjin-Hebei: locally validated reusable test protocols and public receipts",
+      "entry_gate": "local_receipt_independent_review_and_receiving_context_check",
+      "claim_limit": "candidate_direction_no_cross_regional_agreement"
+    }
+  ],
+  "resource_ledgers": [
+    {
+      "id": "people",
+      "fields": ["accountable_person", "responsible_shift", "human_handoff", "independent_reviewer", "training_status"]
+    },
+    {
+      "id": "space",
+      "fields": ["lawful_access", "ordinary_route", "trial_boundary", "opening_period", "restoration_status"]
+    },
+    {
+      "id": "equipment",
+      "fields": ["power", "fire_safety", "maintenance", "emergency_stop", "removal"]
+    },
+    {
+      "id": "data",
+      "fields": ["controller", "minimum_fields", "retention", "deletion", "appeal"]
+    },
+    {
+      "id": "public_value",
+      "fields": ["ordinary_repairs", "human_hours", "complaints", "failures", "public_return"]
+    }
+  ],
+  "conversion_pathway": [
+    "public_problem_intake",
+    "public_interest_and_professional_review",
+    "paper_offline_or_enclosed_prototype",
+    "bounded_temporary_trial",
+    "public_city_release_receipt",
+    "adopt_revise_or_stop",
+    "limited_replication_after_context_check"
+  ],
+  "city_release_receipt_fields": [
+    "contract_id",
+    "version",
+    "site_and_period",
+    "permissions",
+    "accountable_and_responsible_shift",
+    "ordinary_baseline",
+    "candidate_acceptance_gates",
+    "measured_results",
+    "exceptions_and_complaints",
+    "stop_or_release_decision",
+    "deletion_and_restoration",
+    "public_return"
+  ],
+  "recurring_operating_units": [
+    "staffed_problem_desk",
+    "accompanied_accessibility_walk",
+    "equipment_emergency_stop_drill",
+    "service_directory_audit",
+    "failure_archive_maintenance"
+  ],
   "annual_cycle": [
     {
       "season_zh": "春",

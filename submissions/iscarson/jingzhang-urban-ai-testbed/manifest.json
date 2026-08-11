@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "Codex desktop agent based on GPT-5; proposal authored in this task"
   },
-  "generated_at": "2026-08-10T11:07:48Z",
+  "generated_at": "2026-08-10T23:45:46Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4fe70e49825e37b6b107a319c7869c539c03670a0cdc82dcf4898cfbb9747d7a"
+      "sha256": "1c861c3efc05b55428dc94e80ed411573b2b362f697409447336fcfd86eee6d5"
     },
     {
       "path": "agent.json",
@@ -50,19 +50,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "cb81e7ca5811ff63365ebfa9324799d95d03c332c0695a66cf193190b33c36de"
+      "sha256": "d0bbbd40b815e8baa5b34e5e1dd008c3b6833dc82bd06eaf9aa51a7efe13256b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5fd737233d005310975da5723a2cd8b91bb761840b7eac52b984442fabf9260f"
+      "sha256": "ee30e2fbfc8b9a965ce2099f465727d2460f2aaafb4d066893e2b3ddaaf07979"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "f0fe361781d07b1c02c5de9be06e6d917e67cca0c08326a0294ebeec381bebbb"
+      "sha256": "b3af2e5ee7187b7a6eadf371e6041c4505ee0f2a2b9f88bbb3221aed439f1256"
     },
     {
       "path": "standard_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7bc88a55ca67bc9683fff599dba64725853ae2da4e3e3d820f8bc473b949ec63"
+      "sha256": "09592fabf7efbd56ce334fa87ee601e15500f7d49aa50f662334556731c07bfe"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bf821b03b94f5c81ced2585a96e524beb83c7c47305972929551cf6573aa5fb4"
+      "sha256": "6fb5d21d2f1b88f8ecf9f6d87e51be11147f5388156d7d7810452c6c23c8e5f0"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -227,7 +227,7 @@
       "path": "visual/assets/pilot_contracts.json",
       "role": "visualization",
       "required": true,
-      "sha256": "804c297c9f56fc4233cf19adf25857bb3c573864ae78bc6fe7596ed2c649ea9f"
+      "sha256": "ad195abe9e2123d0194347faac1bb692b2081c3791c152ac2890a17712e11d53"
     },
     {
       "path": "visual/assets/global-ai-ecosystem-cases.json",
@@ -239,7 +239,7 @@
       "path": "visual/assets/operations.json",
       "role": "visualization",
       "required": true,
-      "sha256": "f9747fc527c8f13d520cdc93a1e2ac77cebfbfc6b77f6e66d5ba7b8208a91a3e"
+      "sha256": "2ba11645e013437ffc99afaf151d215c27a5830499e83075f5ae0ffeaa3971c6"
     },
     {
       "path": "visual/assets/site_and_stakeholder_evidence.json",
@@ -251,7 +251,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "58ebbfe0996babd5c09944fc6ea3572dadae344b2563ed3ab247912802ae629b"
+      "sha256": "0415526e812d2183760d7c510f5a5366fd30c3322845b9cfd42711d5ce7e5b5d"
     },
     {
       "path": "proposal.en.md",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "38adef35ce971872ebc6aaa36a2ca645bc835c10d999493dd3d0a083d05cb4e1"
+      "sha256": "1d7ab937babec9f5747cc435bb9e7ecc69b2c577a6f7ec9e5397d74c437250a9"
     },
     {
       "path": "report/proposal.en.html",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "264df03418bde7e291f8896cf10e67d69b27de68f9a9a3a76bf26c20869cbe6a"
+      "sha256": "b349d2319ac91df8d7c2610c17b963a98aa6ce65bb90d6a66a98c608403a5952"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -291,7 +291,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "675000f99211766451dbf4ec2d5eff4e7ada980d9bc687ae9d92465e3ec18ee2"
+      "sha256": "236a5613eaa903a006a93b189e5e7faa02f5a4c99bbda3f2d66bb20de25e0cec"
     },
     {
       "path": "assets/figures/key-areas.en.png",
