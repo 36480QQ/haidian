@@ -28,7 +28,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 规划控制指标（控规条件） | 明确标注为待补数据 | 不得编造容积率、建筑高度、密度、绿地率等审定结论 |
 | 背景资料 | 概念启发 | 不得升级为官方事实或数据结论 |
 
-三层范围与三处重点区的面积、四至、几何状态全部来自公告与临时边界登记 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。本方案不引入任何非公开图件、非公开空间数据、内部控制指标或个人隐私信息；所有引用均可在 `sources.json` 溯源 [source:SOURCE-REGISTRY] [depth:risk_missing_data]。
+三层范围与三处重点区的面积、四至、几何状态全部来自公告与临时边界登记 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。本方案不引入任何未授权图件、受保护的空间数据、内部控制指标或个人隐私信息；所有引用均可在 `sources.json` 溯源 [source:SOURCE-REGISTRY] [depth:risk_missing_data]。
 
 ![总体结构示意图](assets/figures/site-overview.png)
 
