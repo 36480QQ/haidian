@@ -191,5 +191,14 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
+  },
+  "readiness_contract": "persisted-self-check-v1",
+  "self_checked": true,
+  "package_state": "ready_for_review"
 }
