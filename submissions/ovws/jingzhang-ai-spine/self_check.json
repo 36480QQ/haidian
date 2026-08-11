@@ -7,6 +7,14 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "warnings": [
+    "Three key-area geometries remain provisional and require maintainer review before public-facing use."
+  ],
   "next_actions": [],
   "checks": [
     {
@@ -21,7 +29,7 @@
       "result": "pass",
       "severity": "blocking",
       "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
+      "message": "spatial_review: PASS; three expected minor KEY_AREA_PROVISIONAL warnings are disclosed"
     },
     {
       "check_id": "VISUAL_PACKAGING",
