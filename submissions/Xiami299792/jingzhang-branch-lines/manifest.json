@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "596f6808420f4d4fdab3bfd4184cd255e19d8d47733866a86a89e9a6a884870c"
+      "sha256": "c86d61b8e1d8980eb7d464f6b648807253cd2b5b26444e73c4ce0aaedb11f8a9"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,13 +87,13 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "197570958e8f9f315c94669bc2f30c2d04fb05ae937fb6c20508ba97a5dd20ca"
+      "sha256": "7244b0dbaa01b1346a9e80b33bdf63418c139128f9571ee0b93152faba714252"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "00299cf16b548a9e3b90d539145c3b2bb251594bdcee52aeb347c27306602280"
+      "sha256": "cf4ef08aefe62de1610c97dff022cd433a63f7b868964e948bc8965a01dd8d7e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
