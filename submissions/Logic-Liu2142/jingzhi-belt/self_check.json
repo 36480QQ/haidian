@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary used; precision caveats disclosed in proposal, sources, assumptions, and visual. Replace with official redline before professional scoring.",
+      "caveat": "Provisional boundary used; precision caveats disclosed in proposal, sources, assumptions, and visual. Replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are provisional; disclosed as unsuitable for official redline or precise-area claims.",
+      "caveat": "Three required key areas are provisional; disclosed as unsuitable for official redline or precise-area claims."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Land-use partition covers the full submitted boundary with zero gap and zero overlap; adjacent polygons share boundary coordinates."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization generated without external dependencies; bilingual zh/en versions present."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions; bilingual contract v1 and format v2 declared."
+    },
+    {
+      "check_id": "METRIC_RECOMPUTE",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "Known spatial metrics recomputed from submitted geometry in EPSG:4548; control metrics marked unknown (待正式数据补齐) with reasons."
+    },
+    {
+      "check_id": "AGENT_TASK_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "agent.1-agent.6 required outputs covered: naming/identity, ecosystem cases, scenario cards, personas, test scenarios, landmarks, culture narrative, event operations."
+    }
+  ]
+}
